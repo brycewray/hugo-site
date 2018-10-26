@@ -1,6 +1,6 @@
 ---
 
-title: "First-column text for home page"
+title: BryceWray.com
 
 description: This is the home page for brycewray.com.
 
