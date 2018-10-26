@@ -12,7 +12,7 @@ date: 2018-10-25T07:40:00-05:00
 
 final_date: 2018-10-25T07:40:00-05:00
 
-# lastmod: [date to come]
+lastmod: 2018-10-26T07:00:00-05:00
 
 draft: false # note!
 
@@ -106,7 +106,7 @@ The easiest way[^3] to implement this “system fonts stack” throughout your s
 
 The first three entries take care of current Apple devices and also, in the case of `system-ui`, the latest Chrome browsers. The rest are simply calls to the typefaces in question.
 
-**Important note**: Be sure you use `font-family` rather than the full-fledged`font` if you have the `-apple-system` first, as I showed above, or [weird things can happen](https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f).
+**Important note**: Be sure you use `font-family` rather than the full-fledged `font` if you have the `-apple-system` first, as I showed above, or [weird things can happen](https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f).
 
 ## How it all stacks up in the end
 
