@@ -1,0 +1,37 @@
+baseURL = "https://brycewray.com/"
+languageCode = "en-us"
+title = "BryceWray.com"
+theme = "ofotiboot"
+googleAnalytics = "UA-126570650-1"
+
+summaryLength = 30
+FootnoteReturnLinkContents = "&#8593;"
+enableRobotsTXT = true
+
+[params]
+    Author = "Bryce Wray"
+
+[blackfriday]
+    hrefTargetBlank = true
+
+[menu]
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        title = "About"
+        url = "/about/"
+        weight = 100
+    
+    [[menu.main]]
+        identifier = "portfolio"
+        name = "Portfolio"
+        title = "Portfolio"
+        url = "/portfolio/"
+        weight = 110
+    
+    [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        title = "Posts"
+        url = "/posts/"
+        weight = 120

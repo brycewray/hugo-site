@@ -1,0 +1,63 @@
+
+<head>
+    <title>{{ .Title }}</title>
+        
+    {{ template "_internal/google_analytics.html" . }}
+    
+    <link href="https://micro.blog/BryceWrayTX" rel="me" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> from earlier-->
+
+    {{- if eq .URL "/" }}
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta property="og:description" content="{{ .Site.Params.Description }}" />
+    {{- else if isset .Params "description" }}
+    <meta name="description" content="{{ index .Params "description" }}">
+    {{- end }}
+
+    {{- if isset .Params "final_url" }}
+    <meta property="og:url" content="{{ .Site.BaseURL }}{{ index .Params "final_url" }}" />        
+    {{- end }}
+
+    {{- if isset .Params "featured_image" }}
+    <meta property="og:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
+    {{- end }}
+
+
+    {{- if eq .URL "/" }}
+    <title>{{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    {{- else }}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    {{- end }}
+
+  
+    <!-- Bootstrap as of 2018-10-26 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- CSS/SCSS -->
+    {{ $sass := resources.Get "scss/ofotiboot.scss" }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL}}images/apple-touch-icon.png">
+
+    <!-- RSS -->
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  
+  </head>
+  

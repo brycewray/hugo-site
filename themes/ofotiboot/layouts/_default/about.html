@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="mt-5 text-center"><strong>{{ .Title | markdownify}}</strong></h1>
+
+  {{- if .Params.Subtitle }}
+    <h2 class="mb-3 text-center h4">{{ .Params.Subtitle | markdownify }}</h2>
+  {{- end }}
+
+    <p class="text-muted mt-3 text-center">
+      Published: {{ .Date.Format "January 2, 2006"  }}<br /><span style="font-size: 85%;">
+      {{- if ne .Date .Lastmod }}
+        Last modified: {{ .Lastmod.Format "January 2, 2006" }}
+      {{- else }}
+        &nbsp;
+      {{- end }}
+      </span>
+    </p>
+
+		{{- if isset .Params "featured_image" }}
+			<img src="{{ index .Params "featured_image" }}" class="img-fluid">
+			{{- if isset .Params "featured_image_caption" }}
+				<p class="featured-image-caption">{{ index .Params "featured_image_caption" }}</p>
+			{{- end }}
+		{{- end }}
+
+    <article class="article mt-5">
+      {{ .Content }}
+    </article>
+  </div>
+
+  <div class="container">
+      <p>&nbsp;</p>
+      <!-- Comments code -->
+      <script data-isso="https://comments.comment.sh/brycewray-com" src="https://comments.comment.sh/brycewray-com/js/embed.min.js"></script>
+      <section id="isso-thread"></section>
+      <!-- end, Comments code -->
+    </div>
+
+{{ end }}

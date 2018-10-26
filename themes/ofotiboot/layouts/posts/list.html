@@ -1,0 +1,41 @@
+{{ define "main" }}
+    <div class="container">
+        <h1 class="mt-5 text-center"><strong>{{ .Title | markdownify }}</strong></h1>
+        <div class="post-line"></div>
+
+    {{ range first 2 (where .Pages "Section" "posts") }}				
+        <div class="row" style="margin-bottom: 1rem;">
+            <div class="col-md-7">
+                <h2 style="margin-bottom: 0;">{{ .Title | markdownify }}</strong></h2>
+                <time class="pokeytxt text-muted" style="margin-top: 0;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                <p>
+                    {{ .Summary }}
+                    {{ if .Truncated }}
+                        <br />
+                        <a href="{{ .Permalink }}"><strong>Read&nbsp;more&nbsp;.&nbsp;.&nbsp;</strong>.</a>
+                    {{ end }}
+                </p>
+            </div>
+            <div class="col-md-5">
+                    {{- if isset .Params "featured_image" }}
+                        <img src="{{ index .Params "featured_image" }}" class="img-fluid">
+                    {{- end }}
+                </div>
+            </div>
+    {{ end }}
+    {{ range after 2 (where .Pages "Section" "posts") }}
+        <div>
+            <p class="pokeytxt"><span style="color: #000088; font-size: 125%;"><strong>{{ .Title | markdownify }}</strong></span><br /><time datetime="{{ .PublishDate }}" class="text-muted" style="margin-top: 0;">{{ .PublishDate.Format "January 2, 2006" }}</time><br />
+                {{ .Summary }}
+                {{ if .Truncated }}
+                <a href="{{ .RelPermalink }}"><strong>Read&nbsp;more&nbsp;.&nbsp;.&nbsp;.</strong></a>
+                {{ end }}
+            </p>
+        </div>
+    {{- end}}
+    <div class="teenytxt ctr" style="margin-top: 3rem;">
+        <p style="margin-top: 0; margin-bottom: 0;">For media credits (where applicable), see the original posts linked&nbsp;herein.</p>
+    </div>
+</div>
+
+{{ end }}

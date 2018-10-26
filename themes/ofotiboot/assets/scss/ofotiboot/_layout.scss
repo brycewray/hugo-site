@@ -1,0 +1,133 @@
+body {
+  padding-top: 2rem; /* accounting for fixed "sticky-nav" nav */
+}
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  background-color: $darkblue !important;
+  div, p {
+    color: #fff;
+  }
+  a, a.hover, a.focus {
+    color: #aaddff !important;
+  }
+}
+
+footer {
+  margin: 2rem auto 0 auto;
+  padding-bottom: 1rem;
+  width: 85%;
+  @media (max-width: 468px) {
+    width: 95%;
+    padding-bottom: 0.5rem;
+  }
+}
+
+figure, .figure {
+  display: table; // overrides Bootstrap's left-alignment of figures (the default way of showing images in Hugo)
+  margin-right: auto;
+  margin-left: auto;
+}
+
+figure.figurebox {
+  border: 1px solid $grey-2;
+  padding: 0.5rem;
+}
+
+figcaption p {
+  font-size: $legal;
+  color: $grey-1;
+  padding-top: 1rem;
+  text-align: center !important;
+}
+
+h3.twitter-border {
+  margin: 1rem 0;
+  padding: 0.5rem 0 0 0;
+  border-top: 2px solid $blue;
+}
+
+a.twitter-timeline {
+  font-family: $sans-serif;
+}
+
+img.featured-image {
+  width: 75%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  @media (max-width: 414px) {
+    width: 100%;
+  }
+}
+
+.featured-image-caption {
+  margin-top: 0;
+  padding-bottom: 1.5rem;
+  text-align: center !important;
+  font-size: $legal;
+  color: $grey-1;
+}
+
+table.noborders {
+  width: 90%;
+  @media (max-width: 400px){
+    width: 100%;
+  }
+  margin: 1.5rem auto 1rem auto;
+  border: 0;
+  border-collapse: collapse;
+
+  td {
+    text-align: left !important;
+    vertical-align: middle;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: #dfefff;
+  }
+
+  thead {
+    background-color: $darkblue;
+  }
+  
+  thead td {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  
+  td.td70 {
+    width: 70%;
+  }
+  
+  td.td30 {
+    width: 30%;
+  }
+}
+
+.wht {
+  color: #fff;
+}
+
+img.postsFeatImg {
+  float: right;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  width: 50%;
+  height: auto;
+  @media (max-width: 768px) {
+    float: inherit;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+  }
+}

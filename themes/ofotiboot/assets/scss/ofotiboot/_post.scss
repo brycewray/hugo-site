@@ -1,0 +1,76 @@
+.post {
+  padding: 0;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.5rem;
+  }
+
+  &-info {
+    color: $default-tint;
+    font-family: $sans-serif;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  &-title {
+    color: $darkblue;
+    font-family: $sans-serif;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  &-subtitle {
+    color: $darkblue;
+    font-family: $sans-serif;
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    text-align: center !important; // without the "!important," .post p overrides with left align
+  }
+
+  &-line {
+    border-top: 0.2rem solid $blue;
+    display: block;
+    margin: 0 auto 3rem;
+    width: 6rem; // was 4rem
+  }
+
+  p {
+    margin: 0 0 1rem;
+    text-align: $bodyalign;
+  }
+
+  
+  img {
+    margin: 0 auto 0.5rem;
+  }
+
+  img + em {
+    color: $default-tint;
+    display: block;
+    font-family: $sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: center;
+  }
+
+  // CSS for making emoji inline
+  img.emoji {
+    display: inline-block;
+    left: 0;
+    transform: none;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0;
+  }
+}
