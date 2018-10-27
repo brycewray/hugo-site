@@ -17,8 +17,8 @@ h6, .h6 {
   letter-spacing: -0.05rem; }
 
 a, a:focus, a:hover {
-  color: #0088ff !important;
-  text-decoration: none !important; }
+  color: #0088ff;
+  text-decoration: none; }
 
 nav a, nav a:focus, nav a:hover {
   color: #fff !important; }
@@ -455,6 +455,12 @@ body {
   .bg-dark a, .bg-dark a.hover, .bg-dark a.focus {
     color: #aaddff !important; }
 
+.text-link {
+  color: #0088ff; }
+
+.text-body {
+  color: #333 !important; }
+
 footer {
   margin: 2rem auto 0 auto;
   padding-bottom: 1rem;
@@ -517,7 +523,8 @@ table.noborders {
     padding: 0.25rem 0 0.25rem 0.5rem; }
     table.noborders td img {
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin: 0; }
   table.noborders tr:nth-child(even) {
     background-color: #dfefff; }
   table.noborders thead {

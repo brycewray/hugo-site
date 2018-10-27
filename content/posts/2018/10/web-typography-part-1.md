@@ -10,7 +10,7 @@ author: Bryce Wray
 
 date: 2018-10-17T14:40:00-05:00
 
-lastmod: 2018-10-25T07:40:00-05:00
+lastmod: 2018-10-27T12:45:00-05:00
 
 draft: false # note!
 
@@ -41,7 +41,7 @@ By “easily readable,” I mean:
 	So, no, having a substantial part of your page’s body text appear as light-to-medium gray on white (or, worse, dark gray on black) isn’t a good idea. By the way, the same is true for link text, particularly if you don’t underline links—as I don’t, feeling that’s a bit too 1990s-ish (although, to be sure, [there are other opinions](https://www.justinmind.com/blog/underline-uxdesign-usability/)). Link text should be a **different** color from your body text and **not** some color that melts into the background. Don’t make me come over there and lecture you about [“mystery meat” navigation](http://www.webpagesthatsuck.com/mysterymeatnavigation.html); that, too, is too 1990s-ish.     
 	However, there’s more to this.
 
-- **It should have sufficient width**.—With the ready availability of Web fonts (a separate subject which I’ll address in Part 2), many Web site designers want to use some of the slick, ultra-thin type they’ve seen, or implemented, in video or print. And, again, that’s fine in sufficiently large **headline** text. But I draw the line on body text for a Web page; that’s no place for super-thin type. Indeed, it’s yet another barrier to sufficient contrast.
+- **It should have sufficient width**.—With the ready availability of Web “fonts” (a separate subject which I’ll address in Part 2), many Web site designers want to use some of the slick, ultra-thin type they’ve seen, or implemented, in video or print. And, again, that’s fine in sufficiently large **headline** text. But I draw the line on body text for a Web page; that’s no place for super-thin type. Indeed, it’s yet another barrier to sufficient contrast.
 
 ## Now that’s (not) what I’m talkin’ about
 

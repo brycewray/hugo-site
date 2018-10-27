@@ -2,9 +2,13 @@
   <div class="container">
     <h1 class="mt-5 text-center"><strong>{{ .Title | markdownify}}</strong></h1>
 
-    {{- if .Params.Subtitle }}
-      <h2 class="mb-3 text-center h4">{{ .Params.Subtitle | markdownify }}</h2>
-    {{- end }}
+    <h2 class="mb-3 text-center h4">
+      {{- if .Params.Subtitle }}
+        {{ .Params.Subtitle | markdownify }}
+      {{- else }}
+        &nbsp;
+      {{- end }}
+    </h2>
 
     <p class="text-muted mt-3 text-center">
       Published: {{ .Date.Format "January 2, 2006"  }}<br /><span style="font-size: 85%;">
@@ -15,6 +19,8 @@
       {{- end }}
       </span>
     </p>
+
+    <div class="post-line"></div> 
 
 		{{- if isset .Params "featured_image" }}
 			<img src="{{ index .Params "featured_image" }}" class="img-fluid featured-image">
@@ -39,7 +45,7 @@
   {{ if or .Next .Prev }}
     <div class="bg-dark py-5">
       <div class="container">
-        <h3 class="text-center wht">Other posts</h3>
+        <h3 class="text-center wht"><a href="/posts/">Other posts</a></h3>
 
         <div class="row">
           <div class="col-md-6 text-center pokeytxt">

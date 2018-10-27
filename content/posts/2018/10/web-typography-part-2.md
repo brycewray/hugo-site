@@ -12,7 +12,7 @@ date: 2018-10-25T07:40:00-05:00
 
 final_date: 2018-10-25T07:40:00-05:00
 
-lastmod: 2018-10-26T07:00:00-05:00
+lastmod: 2018-10-27T12:48:00-05:00
 
 draft: false # note!
 
@@ -36,7 +36,7 @@ So, with that understood, let’s get on with it.
 
 ## A simpler—and duller—time
 
-The early years of the Web involved considerable limitations where Web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the Web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple Web site as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
+The early years of the Web involved considerable limitations where Web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system “fonts”](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the Web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple Web site as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
 {{< figure src="/images/Early-Web-font-grfx-1-2018-10-16_72dpi_60pct.jpg" class="figurebox" width="609px" >}}
 
@@ -44,9 +44,9 @@ The only “real” text in this view was the timestamp, on the right side under
 
 In that era, the graphics-as-text approach was a technological necessity for two reasons:
 
-1. There was no standard way to deliver Web fonts automatically, nor was it always easy to detect which computer platform and which browser were displaying the text; so it was necessary to use only those fonts you could be sure would be on any computer capable of running a Web browser. (At least back then, you could assume they _were_ computers, since this was well before Web-capable phones and tablets appeared.) So, yes, people saw a lot of Times New Roman, Arial, Tahoma, Verdana, and the like.
+1. There was no standard way to deliver Web “fonts” automatically, nor was it always easy to detect which computer platform and which browser were displaying the text; so it was necessary to use only those “fonts” you could be sure would be on any computer capable of running a Web browser. (At least back then, you could assume they _were_ computers, since this was well before Web-capable phones and tablets appeared.) So, yes, people saw a lot of Times New Roman, Arial, Tahoma, Verdana, and the like.
 
-2. If there _had_ been the means to deliver such fonts, the slow Internet connections of that era would’ve made their use unpopular. Even today, there can be some delivery issues with Web fonts that require [effective mitigation](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#optimizing_loading_and_rendering).
+2. If there _had_ been the means to deliver such “fonts,” the slow Internet connections of that era would’ve made their use unpopular. Even today, there can be some delivery issues with Web “fonts” that require [effective mitigation](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#optimizing_loading_and_rendering).
 
 .&nbsp;.&nbsp;.&nbsp;And that, conveniently enough, brings me to my next point.
 
@@ -56,7 +56,7 @@ As I write this in late 2018, it’s long been common to go from one site to ano
 
 So what possibly could be wrong with that?
 
-Well, there’s this thing called speed. Google giveth with Google Fonts, and Google taketh away with the added lag downloadable fonts can induce. The same is true for paid font platforms like [Adobe Fonts](https://fonts.adobe.com) (branded until recently as TypeKit). It gets even worse if people go really crazy with not only different typefaces but also numerous _weights_ and _styles_ thereof. _Each_ downloaded typographical variation adds a certain amount of delay to the rendering of the Web page involved. As a result, the more variety you add through downloadable fonts, the more slowly your page will load.
+Well, there’s this thing called speed. Google giveth with Google Fonts, and Google taketh away with the added lag downloadable “fonts” can induce. The same is true for paid “font” platforms like [Adobe Fonts](https://fonts.adobe.com) (branded until recently as TypeKit). It gets even worse if people go really crazy with not only different typefaces but also numerous _weights_ and _styles_ thereof. _Each_ downloaded typographical variation adds a certain amount of delay to the rendering of the Web page involved. As a result, the more variety you add through downloadable “fonts,” the more slowly your page will load.
 
 And, guess who dings a page’s search results downward if the page is comparatively slower than another page with roughly equal “search juice”? Yep, Google.
 

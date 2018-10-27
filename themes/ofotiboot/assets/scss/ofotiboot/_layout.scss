@@ -16,6 +16,14 @@ body {
   }
 }
 
+.text-link {
+  color: $blue;
+}
+
+.text-body {
+  color: $default-color !important;
+}
+
 footer {
   margin: 2rem auto 0 auto;
   padding-bottom: 1rem;
@@ -88,6 +96,7 @@ table.noborders {
     img {
       display: inline-block;
       vertical-align: middle;
+      margin: 0;  
     }
   }
 
