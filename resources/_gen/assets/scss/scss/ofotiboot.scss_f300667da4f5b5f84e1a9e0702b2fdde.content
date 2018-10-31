@@ -73,13 +73,13 @@ a.footnote-return {
 .ctr {
   text-align: center !important; }
 
-.teenytxt {
+.teenytxt, .teeny {
   font-size: 0.6rem !important; }
 
-.legaltxt {
+.legaltxt, .legal {
   font-size: 0.75rem !important; }
 
-.pokeytxt {
+.pokeytxt, .pokey {
   font-size: 0.85rem !important; }
 
 .nobrk {
@@ -553,6 +553,16 @@ img.postsFeatImg {
       margin-right: auto;
       margin-left: auto;
       padding-left: 0; } }
+
+.fab {
+  /* Font Awesome */
+  color: #0088ff; }
+
+.sortabig {
+  font-size: 1.5rem; }
+
+.bigger {
+  font-size: 2rem; }
 
 .pagination {
   border-top: 0.5px solid #c8c8c8;

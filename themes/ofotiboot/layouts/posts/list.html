@@ -8,7 +8,7 @@
                 <div class="col-md-7">
                     <a href="{{ .Permalink }}">
                         <h2 style="margin-bottom: 0;">{{ .Title | markdownify }}</strong></h2>
-                        <time class="pokeytxt text-muted" style="margin-top: 0;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                        <time class="pokey text-muted" style="margin-top: 0;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
                         <p class="text-body">
                             {{ .Summary }}
                             {{ if .Truncated }}
@@ -31,8 +31,8 @@
         <div>          
         <a href="{{ .RelPermalink }}">
             <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
-            <time datetime="{{ .PublishDate }}" class="pokeytxt text-muted">{{ .PublishDate.Format "January 2, 2006" }}</time>
-            <p class="pokeytxt text-body">
+            <time datetime="{{ .PublishDate }}" class="pokey text-muted">{{ .PublishDate.Format "January 2, 2006" }}</time>
+            <p class="pokey text-body">
             {{ .Summary }}
             {{ if .Truncated }}
                 <strong class="text-link text-nowrap">Read more&nbsp;.&nbsp;.&nbsp;.</strong>
@@ -41,7 +41,7 @@
         </a>
         </div>
         {{ end }}
-        <div class="teenytxt ctr" style="margin-top: 3rem;">
+        <div class="teeny ctr" style="margin-top: 3rem;">
             <p style="margin-top: 0; margin-bottom: 0;">For media credits (where applicable), see the original posts linked&nbsp;herein.</p>
         </div>
     </div>
