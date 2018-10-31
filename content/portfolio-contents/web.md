@@ -20,7 +20,7 @@ Links from prior to 2015 point to the archive.org versions.
 I originally hand-coded the 2016 redesign in JSP, producing a responsive site based on Bootstrap; I later recreated it in WordPress, in which I maintained it for the remainder of my time there.    
 [Current&nbsp;site](https://www.openconnect.com)
   
-<p class="legaltxt" style="margin-top: 0;"><strong>Note</strong>: Due in part to domain-related changes during my time at OpenConnect, it currently isn’t possible to use archive.org to view the versions of the Web site from when I was maintaining the site; as a result, depending on when you’re seeing it, the current OpenConnect site may not necessarily be an accurate reflection of the work I&nbsp;did.</p>
+<p class="legal" style="margin-top: 0;"><strong>Note</strong>: Due in part to domain-related changes during my time at OpenConnect, it currently isn’t possible to use archive.org to view the versions of the Web site from when I was maintaining the site; as a result—depending on far past early October, 2018, that you’re seeing it—the current OpenConnect site may not necessarily be an accurate reflection of the work I&nbsp;did.</p>
 
 ### ESI
 I hand-coded this site, first in HTML and then in PHP, for the first fourteen years of my tenure at this company. The site went on an agency’s proprietary CMS in 2013, although I continued to maintain it. In the examples below (except for the one from 2013), I typically coded width and pagination for a “lowest common denominator” to accommodate computer configurations most of our visitors had at the time, according to analytics&nbsp;data.    
