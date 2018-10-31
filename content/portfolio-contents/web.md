@@ -17,7 +17,7 @@ draft: false
 Links from prior to 2015 point to the archive.org versions.
 
 ### OpenConnect
-I originally hand-coded the 2016 redesign in JSP, producing a responsive site based on BootStrap; I later recreated it in WordPress, in which I maintained it for the remainder of my time there.    
+I originally hand-coded the 2016 redesign in JSP, producing a responsive site based on Bootstrap; I later recreated it in WordPress, in which I maintained it for the remainder of my time there.    
 [Current&nbsp;site](https://www.openconnect.com)
   
 <p class="legaltxt" style="margin-top: 0;"><strong>Note</strong>: Due in part to domain-related changes during my time at OpenConnect, it currently isn’t possible to use archive.org to view the versions of the Web site from when I was maintaining the site; as a result, depending on when you’re seeing it, the current OpenConnect site may not necessarily be an accurate reflection of the work I&nbsp;did.</p>
