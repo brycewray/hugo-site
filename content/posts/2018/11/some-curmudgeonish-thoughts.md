@@ -8,9 +8,9 @@ description: “Didja ever notice...?” Yes, I did. And here’s the result.
 
 author: Bryce Wray
 
-date: 2018-11-01T09:30:00-05:00
+date: 2018-11-02T09:30:00-05:00
 
-final_date: 2018-11-01T09:30:00-05:00
+final_date: 2018-11-02T09:30:00-05:00
 
 draft: false # note!
 
