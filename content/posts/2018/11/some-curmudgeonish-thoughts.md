@@ -20,6 +20,8 @@ final_url: posts/2018/11/some-curmudgeonish-thoughts/
 
 featured_image: /images/brain-1300479_1280_60pct.jpg
 
+featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+
 ---
 Here are a few odds and ends—some a tad acerbic, some not so much. And I swear I’m not trying to sound like the late [Andy Rooney](https://www.biography.com/people/andy-rooney-9542557), or even a parody&nbsp;thereof.&nbsp;.&nbsp;.&nbsp;
 
