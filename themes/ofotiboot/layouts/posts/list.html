@@ -31,7 +31,7 @@
         </div>
 
         {{ range after 2 (where .Pages "Section" "posts") }}				
-        <div>          
+        <div class="container container-narrower">          
         <a href="{{ .RelPermalink }}">
             <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
             <time datetime="{{ .PublishDate }}" class="pokey text-muted">{{ .PublishDate.Format "January 2, 2006" }}</time>
