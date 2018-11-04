@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: $sans-serif !important; /* more system fonts than in the Bootstrap stack*/
+  font-family: $sans-serif !important; /* more system fonts than in the Bootstrap stack */
   color: $default-color;
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.015rem;
@@ -17,9 +17,16 @@ h6, .h6 {
   letter-spacing: -0.05rem;
 }
 
-a, a:focus, a:hover {
-  color: $blue;
+a, a:focus, a:hover, a:active {
   text-decoration: none;
+}
+
+a {
+  color: $blue;
+}
+
+a:focus, a:hover, a:active {
+  color: $darkblue;
 }
 
 nav a, nav a:focus, nav a:hover {

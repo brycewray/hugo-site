@@ -2,22 +2,12 @@ body {
   padding-top: 2rem; /* accounting for fixed "sticky-nav" nav */
 }
 
-.bg-primary {
-  background-color: $blue !important;
-}
-
-.bg-dark {
-  background-color: $darkblue !important;
-  div, p {
-    color: #fff;
-  }
-  a, a.hover, a.focus {
-    color: #aaddff !important;
-  }
-}
-
 .text-link {
   color: $blue;
+}
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: $darkblue;
 }
 
 .text-body {
@@ -141,14 +131,21 @@ img.postsFeatImg {
   }
 }
 
-.fab { /* Font Awesome */
-  color: $blue;
-}
-
 .sortabig {
   font-size: $sortabig;
 }
 
 .bigger {
   font-size: $bigger;
+}
+
+.column2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  @media (max-width: 1024px) {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -column-count: 1;
+  }
 }

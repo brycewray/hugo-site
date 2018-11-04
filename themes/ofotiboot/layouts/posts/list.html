@@ -3,30 +3,33 @@
         <h1 class="mt-5 text-center"><strong>{{ .Title | markdownify }}</strong></h1>
         <div class="post-line"></div>
 
-        {{ range first 2 (where .Pages "Section" "posts") }}				
+        <div class="container-fluid content-row">
             <div class="row" style="margin-bottom: 1rem;">
-                <div class="col-md-7">
-                    <a href="{{ .Permalink }}">
-                        <h2 style="margin-bottom: 0;">{{ .Title | markdownify }}</strong></h2>
-                        <time class="pokey text-muted" style="margin-top: 0;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
-                        <p class="text-body">
-                            {{ .Summary }}
-                            {{ if .Truncated }}
+            {{ range first 2 (where .Pages "Section" "posts") }}
+                <div class="col-sm-12 col-lg-6 text-center" style="margin-bottom: 0.5rem;">
+                    <a href="{{ .RelPermalink }}">
+                    <div class="card h-100">
+                        {{- if isset .Params "featured_image" }}
+                            <img class="card-img-top card-img-crop"  src="{{ index .Params "featured_image" }}" alt="{{ .Title }}">
+                        {{- end }}
+                        <div class="card-body">
+                            <h2 class="card-title h3" style="margin-bottom: 0;">{{ .Title }}</h2>
+                            <time datetime="{{ .PublishDate }}" class="pokey text-muted">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                            <p class="card-text pokey text-body">{{ .Summary }}
+                                {{ if .Truncated }}
                                 <br />
-                                <strong class="text-link">Read&nbsp;more&nbsp;.&nbsp;.&nbsp;</strong>.
-                            {{ end }}
-                        </p>
+                                &nbsp;<br />
+                                <button type="button" class="btn btn-primary pokey">Read more</button>
+                                {{ end }}
+                            </p>
+                        </div>
+                    </div>
                     </a>
                 </div>
-                <div class="col-md-5">
-                    {{- if isset .Params "featured_image" }}
-                        <a href="{{ .Permalink }}">
-                            <img src="{{ index .Params "featured_image" }}" class="img-fluid">
-                        </a>
-                    {{- end }}
-                    </div>
-                </div>
-        {{ end }}
+            {{ end }}
+            </div>
+        </div>
+
         {{ range after 2 (where .Pages "Section" "posts") }}				
         <div>          
         <a href="{{ .RelPermalink }}">

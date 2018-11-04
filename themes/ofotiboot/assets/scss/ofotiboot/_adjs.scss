@@ -1,0 +1,79 @@
+/* Adjustments to Bootstrap, Font Awesome, etc. */
+
+/* Bootstrap 4 */
+
+.jumbotron-hero { /* specifically for home page, at least to begin with */
+  background-color: #0088ff;
+  background-image: url("/images/West_Texas_1990_from_FB.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 1rem;
+  height: 40vh;
+  @media (max-width: 1024px) {
+    background-attachment: scroll; /* avoids mobile device issues */  
+  }
+}
+
+.card {
+  background-color: $grey-3;
+}
+
+.card-img-crop { /* based on https://stackoverflow.com/questions/28460844/html-bootstrap-how-to-crop-the-center-part-of-an-image */
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-height: 250px;
+  @media (max-width: 1024px) {
+    max-height: 200px;
+  }
+}
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  background-color: $darkblue !important;
+  div, p {
+    color: #fff;
+  }
+  a, a.hover, a.focus {
+    color: #aaddff !important;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+.container-narrower {
+  max-width: 50%;
+  @media (max-width: 1024px) {
+    max-width: 75%;
+  }
+  @media (max-width: 834px) {
+    max-width: 85%;
+  }
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
+  @media (max-width: 600px) {
+    max-width: 95%;
+    h1 {
+      font-size: 2rem;
+    }
+    h2.h4 {
+      font-size: 1.25rem;
+    }
+    article h2 {
+      font-size: 1.5rem;}
+  }
+}
