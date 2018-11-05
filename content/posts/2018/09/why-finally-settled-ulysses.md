@@ -8,7 +8,7 @@ author: Bryce Wray
 
 date: 2018-09-22T11:04:36-05:00
 
-lastmod: 2018-10-27T12:40:00-05:00
+lastmod: 2018-11-05T12:30:00-06:00
 
 draft: false
 
@@ -16,7 +16,7 @@ actual_path: /content/posts/2018/09/why-finally-settled-ulysses.md
 
 final_url: posts/2018/09/why-finally-settled-ulysses/
 
-featured_image: /images/Ulysses-Preferences-General-screen-shot.png
+featured_image: /images/Ulysses-Preferences-General-screen-shot_60pct.jpg
 
 ---
 

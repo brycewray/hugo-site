@@ -10,7 +10,7 @@ author: Bryce Wray
 
 date: 2018-10-06T08:30:00-05:00
 
-lastmod: 2018-10-12T08:35:00-05:00
+lastmod: 2018-11-05T12:30:00-06:00
 
 draft: false # note!!
 
@@ -18,7 +18,7 @@ actual_path: /content/posts/2018/10/version-control-follies.md
 
 final_url: posts/2018/10/version-control-follies/
 
-featured_image: /images/Sourcetree-screen-shot.png
+featured_image: /images/Sourcetree-screen-shot_1512px_60pct.jpg
 
 ---
 
