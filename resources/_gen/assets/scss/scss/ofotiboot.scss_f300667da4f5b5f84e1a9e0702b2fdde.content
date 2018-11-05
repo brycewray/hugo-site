@@ -39,11 +39,13 @@ blockquote {
     blockquote {
       padding: 0 5rem 0 1.25rem; } }
 
+/*
 img {
   display: block;
   margin: 0 0 1rem;
-  max-width: 100%; }
-
+  max-width: 100%;
+}
+*/
 td {
   vertical-align: top; }
 
@@ -492,6 +494,7 @@ a.twitter-timeline {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif; }
 
 img.featured-image {
+  display: block;
   width: 75%;
   height: auto;
   margin-right: auto;
