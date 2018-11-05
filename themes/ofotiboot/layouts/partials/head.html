@@ -42,14 +42,6 @@
       <link rel="stylesheet" href="{{ .Site.BaseURL }}bootstrap/bootstrap-4/css/bootstrap.min.css">
     -->
 
-
-    <!-- Font Awesome as of 2018-11-05; FontAwesome JS at bottom of BODY tag -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
-    <!-- this domain only -->
-    <!-- if local -- load all styles
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}fontawesome/css/all.min.css">
-    -->
-
     <!-- CSS/SCSS -->
     {{ $sass := resources.Get "scss/ofotiboot.scss" }}
     {{ $style := $sass | resources.ToCSS }}
