@@ -36,11 +36,19 @@
     {{- end }}
 
   
-    <!-- Bootstrap CSS as of 2018-10-26; Bootstrap JS at bottom of BODY tag -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}bootstrap/bootstrap-4/css/bootstrap.min.css">
+    <!-- Bootstrap CSS as of 2018-11-05; Bootstrap JS at bottom of BODY tag -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--if local 
+      <link rel="stylesheet" href="{{ .Site.BaseURL }}bootstrap/bootstrap-4/css/bootstrap.min.css">
+    -->
+
 
     <!-- Font Awesome as of 2018-11-05; FontAwesome JS at bottom of BODY tag -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}fontawesome/css/all.min.css"><!-- load all styles -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous">
+    <!-- this domain only -->
+    <!-- if local -- load all styles
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}fontawesome/css/all.min.css">
+    -->
 
     <!-- CSS/SCSS -->
     {{ $sass := resources.Get "scss/ofotiboot.scss" }}

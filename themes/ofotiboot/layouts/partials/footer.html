@@ -4,9 +4,20 @@
             Copyright &copy; <time datetime="{{ now }}">{{ now.Format "2006" }}</time> {{ .Site.Params.Author }}. Site built and managed with <a href="https://gohugo.io" target="_blank">Hugo</a>, <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="https://www.apple.com/mac" target="_blank">Macintosh</a>, <a href="https://ulysses.app" target="_blank">Ulysses</a>, <a href="https://code.visualstudio.com" target="_blank">Visual&nbsp;Studio&nbsp;Code</a>, <a href="https://sourcetreeapp.com">Sourcetree</a>, <span class="text-nowrap">time, and love.</span> <span class="text-nowrap">Hosted by <a href="https://netlify.com" target="_blank">Netlify</a></span> using a remote repository <span class="text-nowrap">in <a href="https://bitbucket.org">Bitbucket</a>.</span> <span class="text-nowrap">Comments served by <a href="https://comment.sh" target="_blank">comment.sh</a>.</span>
         </p>
     </footer>
+    
     <!-- Bootstrap 4 JS as of 2018-11-05 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- if local
     <script src="{{ .Site.BaseURL }}jquery/jquery-3.3.1.min.js"></script>
     <script src="{{ .Site.BaseURL }}popper_js/popper.min.js"></script>
     <script src="{{ .Site.BaseURL }}bootstrap/bootstrap-4/js/bootstrap.min.js"></script>
+    -->
+
     <!-- FontAwesome JS as of 2018-11-05 -->
-    <script src="{{ .Site.BaseURL }}fontawesome/js/all.min.js"></script><!-- load all styles -->
+    <script defer src="https://pro.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-3yBLeJ4waqGSAf4A8pjZ13UF7GuhgbdKnBQvIp/TkWoXtQbtwjlIPNjkDRJ46UCn" crossorigin="anonymous"></script>
+    <!-- this domain only -->
+    <!-- if local -- load all styles
+    <script src="{{ .Site.BaseURL }}fontawesome/js/all.min.js"></script>
+    -->
