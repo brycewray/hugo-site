@@ -126,7 +126,7 @@ However, if your primary mission with your Web site to ensure not just the best 
 
 A few days after I began writing this, I converted the site over to [Bootstrap 4](https://getbootstrap.com)-based CSS, whereupon I found that the Bootstrap folks had made [their own choices](https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack) about the nature of the aforementioned “system fonts stack.” They made it much simpler:
 
-- The Apple system font indicators mentioned above.
+- The Apple system “font” indicators mentioned above.
 - Segoe UI.
 - Roboto.
 - .&nbsp;.&nbsp;.&nbsp; after which it’s just a fallback to Helvetica Neue, Arial, and sans-serif, followed by some emoji-handling and symbol-handling.
