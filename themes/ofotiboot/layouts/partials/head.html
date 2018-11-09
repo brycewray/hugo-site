@@ -48,6 +48,20 @@
       <script src="/html5shiv/html5shiv.js"></script>
     {{ "<![endif]-->" | safeHTML }}
 
+    <!-- Twitter meta -->
+    <meta name="twitter:site" content="@BryceWrayTX">
+    <meta name="twitter:creator" content="@BryceWrayTX">
+    {{ if .IsPage }}
+      <meta name="twitter:description" content="{{ .Summary }}" />
+      <meta name="twitter:title" content="{{ .Title }}" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="{{ .Params.image }}" />
+    {{ else }}
+      <meta name="twitter:title" content="{{ .Site.Title }}" />
+      <meta name="twitter:description" content="{{ .Description }}" />
+      <meta name="twitter:image" content="/images/West_Texas_1990_from_FB_60pct.jpg" />
+    {{ end }}
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}images/favicon-16x16.png">
