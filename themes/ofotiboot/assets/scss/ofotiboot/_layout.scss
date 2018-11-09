@@ -19,6 +19,7 @@ footer {
   padding-bottom: 1rem;
   width: 85%;
   @media (max-width: 468px) {
+    margin-top: 4rem; /* keeps "Comments" item from infringing on this in small-device view */
     width: 95%;
     padding-bottom: 0.5rem;
   }
@@ -48,9 +49,11 @@ h3.twitter-border {
   border-top: 2px solid $blue;
 }
 
+/*
 a.twitter-timeline {
   font-family: $sans-serif;
 }
+*/
 
 img.featured-image {
   display: block;

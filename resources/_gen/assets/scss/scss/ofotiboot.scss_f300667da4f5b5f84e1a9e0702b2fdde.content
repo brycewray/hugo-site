@@ -1,7 +1,5 @@
 html,
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif !important;
-  /* more system fonts than in the Bootstrap stack */
   color: #333;
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.015rem; }
@@ -13,7 +11,6 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   color: #000088;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
   letter-spacing: -0.05rem; }
 
 a, a:focus, a:hover, a:active {
@@ -60,22 +57,23 @@ sup.footnote-ref {
 a.footnote-return {
   font-size: 50%; }
 
-.microblog {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif; }
-  .microblog_timeline {
-    color: #333;
-    font-size: 0.7rem; }
-  .microblog_post {
-    /* */
-    border-bottom: 1px solid #c8c8c8;
-    padding-bottom: 0.5rem; }
-  .microblog_text {
-    /* */ }
-    .microblog_text img {
-      height: auto; }
-  .microblog_time {
-    color: #656565;
-    text-align: right; }
+.microblog_timeline {
+  color: #333;
+  font-size: 0.7rem; }
+
+.microblog_post {
+  /* */
+  border-bottom: 1px solid #c8c8c8;
+  padding-bottom: 0.5rem; }
+
+.microblog_text {
+  /* */ }
+  .microblog_text img {
+    height: auto; }
+
+.microblog_time {
+  color: #656565;
+  text-align: right; }
 
 .ctr {
   text-align: center !important; }
@@ -154,20 +152,17 @@ pre code {
     margin-bottom: 0.5rem; }
   .post-info {
     color: #aaa;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     letter-spacing: -0.02em;
     text-align: center; }
     .post-info span {
       font-style: italic; }
   .post-title {
     color: #000088;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 2.5rem;
     margin: 1rem 0;
     text-align: center; }
   .post-subtitle {
     color: #000088;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 1.75rem;
     margin: 1rem 0;
     text-align: center !important; }
@@ -184,7 +179,6 @@ pre code {
   .post img + em {
     color: #aaa;
     display: block;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 0.9rem;
     font-style: normal;
     text-align: center; }
@@ -467,6 +461,8 @@ footer {
   width: 85%; }
   @media (max-width: 468px) {
     footer {
+      margin-top: 4rem;
+      /* keeps "Comments" item from infringing on this in small-device view */
       width: 95%;
       padding-bottom: 0.5rem; } }
 
@@ -490,9 +486,11 @@ h3.twitter-border {
   padding: 0.5rem 0 0 0;
   border-top: 2px solid #0088ff; }
 
+/*
 a.twitter-timeline {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif; }
-
+  font-family: $sans-serif;
+}
+*/
 img.featured-image {
   display: block;
   width: 75%;
@@ -573,7 +571,6 @@ img.postsFeatImg {
 
 .pagination {
   border-top: 0.5px solid #c8c8c8;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
   padding-top: 2rem;
   position: relative;
   text-align: center; }
@@ -585,7 +582,6 @@ img.postsFeatImg {
     -moz-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     color: #0088ff;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 0.85rem;
     opacity: .6; }
     .pagination .top:hover {
@@ -621,17 +617,14 @@ img.postsFeatImg {
       border: 0; }
   .catalogue-time {
     color: #aaa;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 0.75rem;
     letter-spacing: -0.025rem; }
   .catalogue-readmore {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 0.75rem;
     font-weight: 700; }
   .catalogue-title {
     color: #000088;
     display: block;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 1rem;
     letter-spacing: -0.02em;
     margin: 0 0 .25rem 0;
@@ -671,17 +664,14 @@ img.postsFeatImg {
       border: 0; }
   .catalogue-postsindex-time {
     color: #aaa;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 0.85rem;
     letter-spacing: -0.025rem; }
   .catalogue-postsindex-readmore {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 1rem;
     font-weight: 700; }
   .catalogue-postsindex-title {
     color: #000088;
     display: block;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 1.5rem;
     letter-spacing: -0.02em;
     margin: 0 0 .25rem 0;

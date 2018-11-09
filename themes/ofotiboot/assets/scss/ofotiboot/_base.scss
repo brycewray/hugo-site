@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: $sans-serif !important; /* more system fonts than in the Bootstrap stack */
+  // font-family: $sans-serif !important; /* more system fonts than in the Bootstrap stack */
   color: $default-color;
   -webkit-text-size-adjust: 100%;
   letter-spacing: -0.015rem;
@@ -13,7 +13,6 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   color: $darkblue;
-  font-family: $sans-serif;
   letter-spacing: -0.05rem;
 }
 
@@ -78,8 +77,6 @@ a.footnote-return{
 
 .microblog {
 
-  font-family: $sans-serif;
-  
   &_timeline {
     color: $default-color;
     font-size: 0.7rem;

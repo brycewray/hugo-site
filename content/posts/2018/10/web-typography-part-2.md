@@ -12,7 +12,7 @@ date: 2018-10-25T07:40:00-05:00
 
 final_date: 2018-10-25T07:40:00-05:00
 
-lastmod: 2018-10-27T12:48:00-05:00
+lastmod: 2018-11-09T16:00:00-06:00
 
 draft: false # note!
 
@@ -25,6 +25,9 @@ featured_image: /images/computer-1869236_1280_72dpi_60pct.jpg
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---
+_**Note**: For those teeming masses who had already read this deathless prose before November 9, 2018, please be advised there’s a major change at the bottom. For the rest of you, as a friend from my high school days used to say, “Go ahead on.”_
+
+<hr style="border: 1px solid #666;" />
 
 In [Part 1](https://brycewray.com/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
@@ -113,6 +116,21 @@ The first three entries take care of current Apple devices and also, in the case
 If you, or Those Who Tell You How to Design, are dead-set on having all your site’s visitors see the same, specific typeface, this approach won’t be for you. I’ve been in your shoes. I understand.
 
 However, if your primary mission with your Web site to ensure not just the best readability but also the fastest possible loading speed, using a “system fonts stack” is an easily implemented way to help achieve that.
+
+<hr style="border: 1px solid #666;" />
+
+### _Major change, November 9, 2018_
+
+A few days after I began writing this, I converted the site over to [Bootstrap 4](https://getbootstrap.com)-based CSS, whereupon I found that the Bootstrap folks had made [their own choices](https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack) about the nature of the aforementioned “system fonts stack.” To put it simply, they made it a lot simpler:
+
+- The Apple system font indicators mentioned above.
+- Segoe UI.
+- Roboto.
+- .&nbsp;.&nbsp;.&nbsp; after which it’s just a fallback to Helvetica Neue, Arial, and sans-serif, followed by some emoji-handling and symbol-handling.
+
+.&nbsp;.&nbsp;.&nbsp; and that’s it!
+
+At first, I was sufficiently unimpressed with this simplification that I overrode it in my site-wide CSS with the more comprehensive “system fonts stack” I mentioned above. However, after some experimentation with how the Bootstrap 4 version looked in certain Linux distributions as compared to what I was using, I decided I preferred Bootstrap’s way, after all, and changed my CSS accordingly. The vast majority of you, covered by the first three entries, will never know the difference; but, on a few odd combinations of OS and devices, the Bootstrap version is better. Lesson learned; _mea&nbsp;culpa_.
 
 [^1]:	As, indeed, I did in my earlier post, “[Why I finally settled on Ulysses](https://brycewray.com/posts/2018/09/why-finally-settled-ulysses),” when referring to the available selections.
 
