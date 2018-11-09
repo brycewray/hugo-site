@@ -55,11 +55,11 @@
     {{ if .IsPage }}
       <meta name="twitter:description" content="{{ .Summary }}" />
       <meta name="twitter:title" content="{{ .Title }}" />
-      <meta name="twitter:image" content="{{ .Params.featured_image }}" />
+      <meta name="twitter:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
     {{ else }}
       <meta name="twitter:description" content="{{ .Description }}" />
       <meta name="twitter:title" content="{{ .Site.Title }}" />
-      <meta name="twitter:image" content="/images/West_Texas_1990_from_FB_60pct.jpg" />
+      <meta name="twitter:image" content="{{ .Site.BaseURL }}images/West_Texas_1990_from_FB_60pct.jpg" />
     {{ end }}
 
     <!-- Favicon -->
