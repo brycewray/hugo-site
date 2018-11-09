@@ -25,11 +25,14 @@ featured_image: /images/computer-1869236_1280_72dpi_60pct.jpg
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---
-_**Note**: For those teeming masses who had already read this deathless prose before November 9, 2018, please be advised there’s a major change at the bottom. For the rest of you, as a friend from my high school days used to say, “Go ahead on.”_
+
+In [Part 1](https://brycewray.com/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
 <hr style="border: 1px solid #666;" />
 
-In [Part 1](https://brycewray.com/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
+_**Note**: For those teeming masses who had already read this deathless prose before November 9, 2018, please be advised there’s a major change at the bottom. For the rest of you, as a friend from my high school days used to say, “Go ahead on.”_
+
+<hr style="border: 1px solid #666;" />
 
 First, this nerdish note: you’ll see me referring herein to _typefaces_ rather than _fonts_. That said, if we were just sitting around having the kind of chat about on-screen typography that people do every day (normal people do that, right? Right?), I would probably slip and call them “fonts,” as well.[^1] It’s more commonly understood and, besides, we’re all accustomed to how our apps’ menus call them “fonts” rather than “typefaces.” That convention that dates back at least to 1984 and the original Mac. However, as Wikipedia says:
 
