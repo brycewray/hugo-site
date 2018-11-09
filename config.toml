@@ -10,6 +10,7 @@ enableRobotsTXT = true
 
 [params]
     Author = "Bryce Wray"
+    Description = "Bryce Wray’s Web site — observations, opinions, and portfolio"
 
 [blackfriday]
     hrefTargetBlank = true
