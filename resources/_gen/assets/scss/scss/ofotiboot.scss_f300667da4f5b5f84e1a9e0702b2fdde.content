@@ -470,9 +470,17 @@ figure, .figure {
   display: table;
   margin-right: auto;
   margin-left: auto; }
+  figure img, .figure img {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto; }
+    @media (max-width: 768px) {
+      figure img, .figure img {
+        width: 90%; } }
 
 figure.figurebox {
-  border: 1px solid #c8c8c8;
+  /* border: 1px solid $grey-2; */
   padding: 0.5rem; }
 
 figcaption p {
@@ -568,6 +576,15 @@ img.postsFeatImg {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       -column-count: 1; } }
+
+.container-comments {
+  width: 50%; }
+  @media (max-width: 768px) {
+    .container-comments {
+      font-size: 85%;
+      width: 85%;
+      max-width: 720px !important;
+      margin-bottom: 3rem; } }
 
 .pagination {
   border-top: 0.5px solid #c8c8c8;
