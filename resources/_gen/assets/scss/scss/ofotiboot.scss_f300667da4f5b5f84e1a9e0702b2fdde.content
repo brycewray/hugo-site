@@ -12,7 +12,7 @@ h5, .h5,
 h6, .h6 {
   color: #000088;
   letter-spacing: -0.05rem;
-  font-weight: 600; }
+  font-weight: 700; }
 
 a, a:focus, a:hover, a:active {
   text-decoration: none; }
