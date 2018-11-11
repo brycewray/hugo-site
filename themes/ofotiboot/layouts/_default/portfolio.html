@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="container">
-    <h1 class="mt-5 text-center"><strong>{{ .Title | markdownify}}</strong></h1>
+    <h1 class="mt-5 text-center">{{ .Title | markdownify}}</h1>
 
     {{- if .Params.Subtitle }}
       <h2 class="mb-3 text-center h4">{{ .Params.Subtitle | markdownify }}</h2>
