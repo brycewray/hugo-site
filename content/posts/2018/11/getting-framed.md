@@ -10,7 +10,7 @@ author: Bryce Wray
 
 date: 2018-11-14T15:09:00-06:00
 
-lastmod: 2018-12-04T09:00:00-06:000
+lastmod: 2018-11-28T11:58:00-06:00
 
 final_date: 2018-11-14T15:09:00-06:00
 
@@ -34,7 +34,7 @@ Each client wants its site or site modifications finished yesterday, to perfecti
 
 <hr style="border: 1px solid #666;" />
 
-_**Note**: I, uh, kinda [re-thought this](/posts/2018/12/grid-locked-no-more) a few days later, but go ahead and read this one first so you’ll have some perspective on that post._
+_**Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more) a few days later, but go ahead and read this one first so you’ll have some perspective on that post._
 
 <hr style="border: 1px solid #666;" />
 
