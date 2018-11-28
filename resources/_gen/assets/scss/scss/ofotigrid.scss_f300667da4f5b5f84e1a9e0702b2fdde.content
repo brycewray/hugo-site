@@ -1,0 +1,653 @@
+/* based on the simplified system stack in Bootstrap 4 as of November, 2018 */
+html,
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  color: #333;
+  letter-spacing: -0.01em;
+  letter-spacing: -0.015rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility; }
+
+p, li {
+  line-height: 1.4; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #000088;
+  letter-spacing: -0.05em;
+  letter-spacing: -0.05rem;
+  font-weight: 700; }
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em; }
+
+h1, .h1 {
+  font-size: 2.5em;
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 2em;
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.75em;
+  font-size: 1.75rem; }
+
+h4, .h4 {
+  font-size: 1.5em;
+  font-size: 1.5rem; }
+
+h5, .h5, h6, .h6 {
+  font-size: 1.25em;
+  font-size: 1.25rem; }
+
+a, a:focus, a:hover, a:active {
+  text-decoration: none; }
+
+a {
+  color: #0088ff; }
+
+a:focus, a:hover, a:active {
+  color: #000088; }
+
+blockquote {
+  border-left: 0.25em solid #c8c8c8;
+  border-left: 0.25rem solid #c8c8c8;
+  color: #656565;
+  margin: .8em 0;
+  margin: .8rem 0;
+  padding: .5em 1em;
+  padding: .5rem 1rem; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+  @media (min-width: 600px) {
+    blockquote {
+      padding: 0 5em 0 1.25em;
+      padding: 0 5rem 0 1.25rem; } }
+
+/*
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%;
+}
+*/
+td {
+  vertical-align: top; }
+
+.footnotes {
+  font-size: 0.75em;
+  font-size: 0.75rem; }
+  .footnotes ol li {
+    margin-bottom: 0.5em; }
+
+sup.footnote-ref {
+  font-size: 0.6em;
+  font-size: 0.6rem; }
+
+a.footnote-return {
+  font-size: 50%; }
+
+.microblog_timeline {
+  color: #333;
+  font-size: 0.7em;
+  font-size: 0.7rem; }
+
+.microblog_post {
+  /* */
+  border-bottom: 1px solid #c8c8c8;
+  padding-bottom: 0.5em;
+  padding-bottom: 0.5rem; }
+
+.microblog_text {
+  /* */ }
+  .microblog_text img {
+    height: auto; }
+
+.microblog_time {
+  color: #656565;
+  text-align: right; }
+
+.ctr {
+  text-align: center; }
+
+.teenytxt, .teeny {
+  font-size: 0.6em;
+  font-size: 0.6rem; }
+
+.legaltxt, .legal {
+  font-size: 0.75em;
+  font-size: 0.75rem; }
+
+.pokeytxt, .pokey {
+  font-size: 0.85em;
+  font-size: 0.85rem; }
+
+.nobrk {
+  white-space: nowrap;
+  font-size: inherit; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 1em; }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#content {
+  padding-top: 40px;
+  display: grid; }
+
+.text-sans-serif {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.text-link {
+  color: #0088ff; }
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: #000088; }
+
+.text-body {
+  color: #333 !important; }
+
+.text-nowrap, .nobrk {
+  white-space: nowrap; }
+
+.text-link {
+  color: #0088ff; }
+
+.text-muted {
+  color: #656565; }
+
+.text-body {
+  color: #333; }
+
+footer {
+  margin-top: 4rem;
+  /* keeps "Comments" item from infringing on this in small-device view */
+  width: 95%;
+  padding-bottom: 0.5rem; }
+  @media (min-width: 900px) {
+    footer {
+      margin: 25px auto 0 auto;
+      margin: 2rem auto 0 auto;
+      padding-bottom: 1em;
+      padding-bottom: 1rem;
+      width: 85%; } }
+
+figure, .figure {
+  margin-right: auto;
+  margin-left: auto; }
+  figure img, .figure img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%; }
+    @media (min-width: 900px) {
+      figure img, .figure img {
+        width: 60%; } }
+
+figure.figurebox {
+  /* border: 1px solid $grey-2; */
+  padding: 0.5em;
+  padding: 0.5rem; }
+
+figcaption p {
+  font-size: 0.75em;
+  font-size: 0.75unquote "rem";
+  color: #656565;
+  padding-top: 1em;
+  padding-top: 1rem;
+  text-align: center !important; }
+
+h3.twitter-border {
+  margin: 1em 0;
+  margin: 1rem 0;
+  padding: 0.5em 0 0 0;
+  padding: 0.5rem 0 0 0;
+  border-top: 2px solid #0088ff; }
+
+img.featured-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 900px) {
+    img.featured-image {
+      width: 75%; } }
+
+.featured-image-caption {
+  margin-top: 0;
+  padding-bottom: 1.5em;
+  padding-bottom: 1.5rem;
+  text-align: center !important;
+  font-size: 0.75em;
+  font-size: 0.75rem;
+  color: #656565; }
+
+table.noborders {
+  width: 100%;
+  margin: 1.5em auto 1em auto;
+  margin: 1.5rem auto 1rem auto;
+  border: 0;
+  border-collapse: collapse; }
+  @media (min-width: 900px) {
+    table.noborders {
+      width: 90%; } }
+  table.noborders td {
+    text-align: left !important;
+    vertical-align: middle;
+    padding: 0.25em 0 0.25em 0.5em;
+    padding: 0.25rem 0 0.25rem 0.5rem; }
+    table.noborders td img {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0; }
+  table.noborders tr:nth-child(even) {
+    background-color: #dfefff; }
+  table.noborders thead {
+    background-color: #000088; }
+  table.noborders thead td {
+    color: #fff !important;
+    font-weight: bold;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  table.noborders td.td70 {
+    width: 70%; }
+  table.noborders td.td30 {
+    width: 30%; }
+
+.wht {
+  color: #fff; }
+
+img.postsFeatImg {
+  float: inherit;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0; }
+  @media (min-width: 900px) {
+    img.postsFeatImg {
+      float: right;
+      padding-top: 1em;
+      padding-top: 1rem;
+      padding-left: 1.5em;
+      padding-left: 1.5rem;
+      width: 50%;
+      height: auto; } }
+
+.sortabig {
+  font-size: 1.5em;
+  font-size: 1.5rem; }
+
+.bigger {
+  font-size: 2em;
+  font-size: 2rem; }
+
+.hero {
+  /* specifically for home page, at least to begin with */
+  background-color: #0088ff;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+  margin-bottom: 1rem;
+  height: 400px;
+  height: 40vh; }
+  .hero-home {
+    background-image: url("/images/West_Texas_1990_from_FB_60pct.jpg"); }
+
+.container {
+  display: table-cell;
+  display: grid;
+  width: 90%;
+  margin: 0 auto; }
+  .container-home {
+    display: table;
+    border-spacing: 30px;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2rem;
+    width: 90%;
+    grid-template-columns: 100%; }
+    @media screen and (min-width: 900px) {
+      .container-home {
+        width: 75%;
+        grid-template-columns: 60% 40%;
+        padding-top: 0.5em; } }
+    .container-home .column-home {
+      display: table-cell;
+      display: grid-item; }
+  .container-portfolio {
+    display: table;
+    border-spacing: 30px;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2rem;
+    width: 90%;
+    grid-template-columns: 100%; }
+    @media screen and (min-width: 900px) {
+      .container-portfolio {
+        width: 75%;
+        grid-template-columns: auto auto; } }
+    .container-portfolio .column {
+      display: table-cell;
+      display: grid-item; }
+  .container-narrower {
+    margin: 0 auto 0 auto;
+    max-width: 90%; }
+    @media screen and (min-width: 900px) {
+      .container-narrower {
+        margin-top: 0.5em;
+        max-width: 60%; } }
+  .container-other-posts {
+    margin: 0 auto 1em auto;
+    width: 90%;
+    display: block;
+    text-align: center; }
+    @media (min-width: 900px) {
+      .container-other-posts {
+        display: table;
+        display: grid;
+        text-align: inherit;
+        grid-gap: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-areas: "column-left-end column-right-end"; }
+        .container-other-posts .column-left-end {
+          display: table-cell;
+          padding-bottom: 1em;
+          grid-column: 1;
+          justify-self: end;
+          grid-area: column-left-end; }
+        .container-other-posts .column-right-end {
+          display: table-cell;
+          padding-bottom: 1em;
+          grid-column: 2;
+          justify-self: start;
+          grid-area: column-right-end; } }
+  .container-comments {
+    font-size: 85%;
+    width: 85%;
+    max-width: 720px !important;
+    margin-bottom: 3em;
+    margin-bottom: 3rem; }
+    @media (min-width: 900px) {
+      .container-comments {
+        width: 50%; } }
+
+.bg-primary {
+  background-color: #0088ff !important; }
+
+.bg-dark {
+  background-color: #000088 !important; }
+  .bg-dark div, .bg-dark p {
+    color: #fff; }
+  .bg-dark a, .bg-dark a.hover, .bg-dark a.focus {
+    color: #aaddff !important; }
+
+.btn-primary {
+  background-color: #0088ff;
+  border-color: #0088ff;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25em 0.5em;
+  padding: 0.25rem 0.5rem; }
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #000088;
+  border-color: #000088; }
+
+.disclaimer-portfolio {
+  margin: 1em auto 1em auto; }
+  @media screen and (min-width: 900px) {
+    .disclaimer-portfolio {
+      margin: 1em 17.5% 1em 17.5%; } }
+
+/* 
+CSS-only menu based on...
+https://codepen.io/kevinpowell/pen/jxppmr
+(related video at https://www.youtube.com/watch?v=8QKOaTYvYUA with other notes there)
+*/
+header {
+  height: 30px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  width: 100%;
+  background-color: #000088;
+  position: fixed;
+  padding: 0.5em 0 0.5em 0;
+  margin-top: 0;
+  z-index: 9999; }
+
+.nav-toggle {
+  display: none; }
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 1.5em;
+  border-radius: 2px;
+  position: relative; }
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute; }
+
+.nav-toggle-label span::before {
+  bottom: 7px; }
+
+.nav-toggle-label span::after {
+  top: 7px; }
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: #000088;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  /*
+  transition: transform 400ms ease-in-out;
+  */ }
+  nav ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    list-style: none; }
+  nav li {
+    margin-bottom: 0.5em;
+    margin-right: 5%;
+    display: inline; }
+    @media screen and (max-width: 899px) {
+      nav li {
+        display: inherit; } }
+  nav a {
+    color: #fff;
+    font-size: 1em;
+    font-size: 1rem;
+    opacity: 0;
+    /*
+    transition: opacity 150ms ease-in-out;
+    */ }
+  nav a:hover, nav a:active {
+    color: #c8c8c8; }
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1); }
+  .nav-toggle:checked ~ nav a {
+    opacity: 1; }
+
+.site-logo {
+  color: #fff;
+  font-size: 1.15em;
+  font-size: 1.15rem;
+  margin-top: 0;
+  margin-left: 5%; }
+  .site-logo a {
+    color: #fff; }
+  .site-logo a:active, .site-logo a:hover {
+    color: #c8c8c8; }
+
+/* 
+=== Beginning of primary settings for larger screens ===
+*/
+@media screen and (min-width: 900px) {
+  .nav-toggle-label {
+    display: none; }
+  header {
+    display: table;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
+    position: fixed; }
+  .site-logo {
+    z-index: 999999;
+    display: grid-item;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding-left: 1.5em;
+    font-size: 1.15em;
+    font-size: 1.15unquote "rem"; }
+  nav {
+    top: 25%;
+    transform: none;
+    margin-top: 0;
+    margin-left: 20%;
+    display: table;
+    grid-column: 4 / 5; }
+    nav a {
+      opacity: 1;
+      position: relative; }
+    nav ul {
+      margin: auto;
+      padding-right: 20%;
+      text-align: left; }
+    nav li {
+      margin-left: 3em;
+      margin-bottom: 0; } }
+
+/* 
+=== End of primary settings for larger screens ===
+*/
+pre,
+code {
+  font-family: "iA Writer Duospace", Menlo, Consolas, Courier, "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+code {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  color: #00aa22;
+  font-size: 85%;
+  padding: .25em .5em; }
+
+pre {
+  margin: 0 0 1rem; }
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0 0.5rem; }
+
+.highlight {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+  padding: 1rem; }
+  .highlight pre {
+    margin-bottom: 0;
+    overflow-x: auto; }
+  .highlight .lineno {
+    color: #aaa;
+    display: inline-block;
+    padding: 0 .75rem 0 .25rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none; }
+
+/* border-radius variable -- uses em rather than rem due to old browsers; IE 9+ supports 'calc'   */
+.container-posts-cards {
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+  border-spacing: 0.25em;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 1rem; }
+  @media screen and (min-width: 900px) {
+    .container-posts-cards {
+      max-width: 85%;
+      grid-template-columns: 50% 50%; } }
+  .container-posts-cards .column {
+    display: table-cell;
+    display: grid; }
+
+.card {
+  display: table-cell;
+  display: grid;
+  grid-template-rows: auto auto 4.5vh;
+  grid-template-areas: "img" "body" "button";
+  background-color: #f9f9f9;
+  border: 1px solid #c8c8c8;
+  border-radius: calc(0.5em - 1px);
+  /* don't declare padding here because we want image to cover card; we'll handle padding in .card-body */ }
+  @media screen and (min-width: 900px) {
+    .card {
+      grid-template-rows: auto 12rem 4.5vh; } }
+
+.card-img-top {
+  border-top-left-radius: calc(0.5em - 1px);
+  border-top-right-radius: calc(0.5em - 1px); }
+
+.card-body {
+  padding: 0.5em 1.5em;
+  padding: 0.5rem 1.5rem;
+  grid-area: body; }
+
+.card-img-crop {
+  /* based on https://stackoverflow.com/questions/28460844/html-bootstrap-how-to-crop-the-center-part-of-an-image */
+  grid-area: img;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 200px; }
+
+.card-btn-bottom {
+  grid-area: button;
+  align-self: end;
+  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem; }

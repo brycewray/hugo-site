@@ -1,0 +1,170 @@
+/* 
+CSS-only menu based on...
+https://codepen.io/kevinpowell/pen/jxppmr
+(related video at https://www.youtube.com/watch?v=8QKOaTYvYUA with other notes there)
+*/
+
+// keep header here rather than base or layout SCSS
+header {
+  height: 30px;
+  font-family: $sans-serif-boot;
+  width: 100%;
+  background-color: $darkblue;
+  position: fixed;
+  padding: 0.5em 0 0.5em 0;
+  margin-top: 0;
+  z-index: 9999; // keeps YT videos from appearing over it, for one thing
+}
+
+.nav-toggle {
+  display: none;
+  &-label {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before, 
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 1.5em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before, 
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: $darkblue;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  /*
+  transition: transform 400ms ease-in-out;
+  */
+  ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    list-style: none;
+  }
+  li {
+    margin-bottom: 0.5em;
+    margin-right: 5%;
+    display: inline; // putting here for really old non-query-savvy browsers
+    @media screen and (max-width: 899px) {
+      display: inherit;
+    } // undoing the inline-for-really-old-browsers stuff
+  }
+  a {
+    color: #fff;
+    font-size: $stdsize + unquote("em"); // old browsers
+    font-size: $stdsize + unquote("rem");
+    opacity: 0;
+    /*
+    transition: opacity 150ms ease-in-out;
+    */
+  }
+  a:hover, a:active {
+    color: $grey-2;
+  }
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+  a {
+    opacity: 1;
+  }
+}
+
+.site-logo {
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  a:active, a:hover {
+    color: $grey-2;
+  }
+  font-size: $minimalbig + unquote("em"); // old browsers
+  font-size: $minimalbig + unquote("rem");
+  margin-top: 0;
+  margin-left: 5%;
+}
+
+
+/* 
+=== Beginning of primary settings for larger screens ===
+*/
+
+@media screen and (min-width: 900px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  
+  header {
+    display: table;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
+    position: fixed;
+  }
+
+  .site-logo {
+    z-index: 999999;
+    display: grid-item;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding-left: 1.5em;
+    font-size: $minimalbig + unquote("em"); // old browsers
+    font-size: $minimalbig + unquote ("rem");
+}
+
+  nav {
+    top: 25%;
+    transform: none;
+    margin-top: 0;
+    margin-left: 20%;
+    display: table;
+    grid-column: 4 / 5;
+    a {
+      opacity: 1;
+      position: relative;
+    }
+    ul {
+      margin: auto;
+      padding-right: 20%;
+      text-align: left; // fixes old browsers that don't understand media queries
+    }
+    li {
+      margin-left: 3em;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* 
+=== End of primary settings for larger screens ===
+*/

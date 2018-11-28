@@ -1,0 +1,332 @@
+#content {
+  padding-top: 40px;
+  display: grid;
+}
+
+.text-sans-serif {
+  font-family: $sans-serif-boot;
+}
+
+.text-link {
+  color: $blue;
+}
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: $darkblue;
+}
+
+.text-body {
+  color: $default-color !important;
+}
+
+.text-nowrap, .nobrk {
+  white-space: nowrap;
+}
+
+.text-link {
+  color: $blue;
+}
+
+.text-muted {
+  color: $grey-1;
+}
+
+.text-body {
+  color: $default-color;
+}
+
+footer {
+  margin-top: 4rem; /* keeps "Comments" item from infringing on this in small-device view */
+  width: 95%;
+  padding-bottom: 0.5rem;
+  @media (min-width: 900px) {
+    margin: 25px auto 0 auto; // old browsers
+    margin: 2rem auto 0 auto;
+    padding-bottom: 1em; // old browsers
+    padding-bottom: 1rem;
+    width: 85%;
+  }
+}
+
+figure, .figure {
+  margin-right: auto;
+  margin-left: auto;
+  img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    @media (min-width: 900px) {
+      width: 60%;
+    }
+  }
+}
+
+figure.figurebox {
+  /* border: 1px solid $grey-2; */
+  padding: 0.5em; // old browsers
+  padding: 0.5rem;
+}
+
+figcaption p {
+  font-size: $legal + unquote("em"); // old browsers
+  font-size: $legal + unquote ("rem");
+  color: $grey-1;
+  padding-top: 1em; // old browsers
+  padding-top: 1rem;
+  text-align: center !important;
+}
+
+h3.twitter-border {
+  margin: 1em 0; // old browsers
+  margin: 1rem 0;
+  padding: 0.5em 0 0 0; // old browsers
+  padding: 0.5rem 0 0 0;
+  border-top: 2px solid $blue;
+}
+
+img.featured-image {
+  display: block;
+  width: 100%;
+  @media (min-width: 900px) {
+    width: 75%;
+  }
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.featured-image-caption {
+  margin-top: 0;
+  padding-bottom: 1.5em; // old browsers
+  padding-bottom: 1.5rem;
+  text-align: center !important;
+  font-size: $legal + unquote("em"); // old browsers
+  font-size: $legal + unquote("rem");
+  color: $grey-1;
+}
+
+table.noborders {
+  width: 100%;
+  @media (min-width: 900px){
+    width: 90%;
+  }
+  margin: 1.5em auto 1em auto; // old browsers
+  margin: 1.5rem auto 1rem auto;
+  border: 0;
+  border-collapse: collapse;
+
+  td {
+    text-align: left !important;
+    vertical-align: middle;
+    padding: 0.25em 0 0.25em 0.5em; // old browsers
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;  
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: #dfefff;
+  }
+
+  thead {
+    background-color: $darkblue;
+  }
+  
+  thead td {
+    color: #fff !important;
+    font-weight: bold;
+    font-family: $sans-serif-boot;
+  }
+  
+  td.td70 {
+    width: 70%;
+  }
+  
+  td.td30 {
+    width: 30%;
+  }
+}
+
+.wht {
+  color: #fff;
+}
+
+img.postsFeatImg {
+  float: inherit;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  @media (min-width: 900px) {
+    float: right;
+    padding-top: 1em; // old browsers
+    padding-top: 1rem;
+    padding-left: 1.5em; // old browsers
+    padding-left: 1.5rem;
+    width: 50%;
+    height: auto;
+  }
+}
+
+.sortabig {
+  font-size: $sortabig + unquote("em"); // old browsers
+  font-size: $sortabig + unquote("rem");
+}
+
+.bigger {
+  font-size: $bigger + unquote("em"); // old browsers
+  font-size: $bigger + unquote("rem");
+}
+
+$homeHeroImageURL: "/images/West_Texas_1990_from_FB_60pct.jpg";
+
+.hero { /* specifically for home page, at least to begin with */
+  background-color: #0088ff;
+  // old-browser stuff...
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  // end this particular old-browser stuff...
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1em; // old browsers
+  margin-bottom: 1rem;
+  height: 400px; // old browsers
+  height: 40vh;
+  &-home {
+    background-image: url($homeHeroImageURL);
+  }
+}
+
+.container {
+  display: table-cell; // old browsers
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  &-home {
+    // old browsers
+    display: table;
+    border-spacing: 30px;
+    // end old browsers
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2rem;
+    width: 90%;
+    grid-template-columns: 100%;
+    @media screen and (min-width: 900px) {
+      width: 75%;
+      grid-template-columns: 60% 40%;
+      padding-top: 0.5em;
+    }
+    .column-home {
+      display: table-cell; // old browsers
+      display: grid-item;
+    }
+  }
+  &-portfolio {
+    display: table; // old browsers
+    border-spacing: 30px; // old browsers
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2rem;
+    width: 90%;
+    grid-template-columns: 100%;
+    @media screen and (min-width: 900px) {
+      width: 75%;
+      grid-template-columns: auto auto;
+    }
+    .column {
+      display: table-cell; // old browsers
+      display: grid-item;
+    }
+  }
+  &-narrower {
+    margin: 0 auto 0 auto;
+    max-width: 90%;
+    @media screen and (min-width: 900px) {
+      margin-top: 0.5em;
+      max-width: 60%;
+    }
+  }
+  &-other-posts {
+    margin: 0 auto 1em auto;
+    width: 90%;
+    display: block;
+    text-align: center;
+    @media (min-width: 900px) {
+      display: table; // old browsers
+      display: grid;
+      text-align: inherit;
+      grid-gap: 2rem;
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        "column-left-end column-right-end"
+      ;
+      .column-left-end {
+        display: table-cell; // old browsers
+        padding-bottom: 1em; // old browsers
+        grid-column: 1;
+        justify-self: end;
+        grid-area: column-left-end;
+      }
+      .column-right-end {
+        display: table-cell; // old browsers
+        padding-bottom: 1em; // old browsers
+        grid-column: 2;
+        justify-self: start;
+        grid-area: column-right-end;
+      }
+    }
+  }
+  &-comments {
+    font-size: 85%;
+    width: 85%;
+    max-width: 720px !important;
+    margin-bottom: 3em; // old browsers
+    margin-bottom: 3rem;
+    @media (min-width: 900px) {
+      width: 50%;
+    }
+  }
+}
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  background-color: $darkblue !important;
+  div, p {
+    color: #fff;
+  }
+  a, a.hover, a.focus {
+    color: #aaddff !important;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25em 0.5em; // old browsers
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+.disclaimer-portfolio {
+  margin: 1em auto 1em auto;
+  @media screen and (min-width: 900px) {
+    margin: 1em 17.5% 1em 17.5%;
+  }
+}

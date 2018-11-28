@@ -1,0 +1,49 @@
+{{ define "main" }}
+    <div class="container">
+        <h1 class="ctr">{{ .Title | markdownify }}</h1>
+        <div class="post-line"></div>
+
+        <div class="container-posts-cards">
+               {{ range first 2 (where .Pages "Section" "posts") }}
+               <div class="column ctr">
+                <a href="{{ .RelPermalink }}">
+                    <div class="card">
+                        {{- if isset .Params "featured_image" }}
+                        <img class="card-img-top card-img-crop"  src="{{ index .Params "featured_image" }}" alt="{{ .Title }}">
+                        {{- end }}
+                        <div class="card-body">
+                            <h2 class="card-title h4" style="margin-bottom: 0;">{{ .Title }}</h2>
+                            <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                            <p class="card-text pokey text-body">{{ .Summary }}</p>
+                        </div>
+                        {{ if .Truncated }}
+                            <div class="card-btn-bottom">
+                                <button type="button" class="btn btn-primary pokey">Read more</button>
+                            </div>
+                        {{ end }}
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+
+        {{ range after 2 (where .Pages "Section" "posts") }}				
+        <div class="container-narrower">          
+        <a href="{{ .RelPermalink }}">
+            <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
+            <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
+            <p class="pokey text-body">
+            {{ .Summary }}
+            {{ if .Truncated }}
+                <strong class="text-link text-nowrap text-sans-serif">Read more&nbsp;.&nbsp;.&nbsp;.</strong>
+            {{ end }}
+            </p>
+        </a>
+        </div>
+        {{ end }}
+        <div class="teeny ctr" style="margin-top: 3rem;">
+            <p style="margin-top: 0; margin-bottom: 0;">For media credits (where applicable), see the original posts linked&nbsp;herein.</p>
+        </div>
+    </div>
+
+{{ end }}

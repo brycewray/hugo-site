@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<div class="hero hero-home"></div>
+
+<div class="container-home">
+  <div class="column-home">
+    {{ .Content }}
+  </div>
+  <div class="column-home">
+    <h2 class="h1" style="margin-bottom: 1.5rem;">Latest posts</h2>
+    {{ range first 2 (where .Pages "Section" "posts") }}				
+      <div>          
+        <a href="{{ .RelPermalink }}">
+          <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
+          <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
+          <p class="pokey text-body">
+            {{ .Summary }}
+            {{ if .Truncated }}<br />
+              <strong class="text-link text-sans-serif">Read more&nbsp;.&nbsp;.&nbsp;.</strong>
+            {{ end }}
+          </p>
+        </a>
+      </div>
+    {{ end }}
+    <p class="text-sans-serif"><a href="/posts/"><strong>All posts</strong></a></p>
+    <h3 class="h5 twitter-border">Tweets by&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank">@BryceWrayTX</a></h3>
+    <p class="teeny"><strong>Note</strong>: Some retweets with added comments won‘t show the original&nbsp;tweets unless you click or tap on&nbsp;them.</p>
+    <a class="twitter-timeline" data-chrome="noheader transparent" data-tweet-limit="3" data-link-color="#0088ff" data-dnt="true" data-border-color="#c8c8c8" href="https://twitter.com/BryceWrayTX?ref_src=twsrc%5Etfw">Tweets by BryceWrayTX</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+{{ end }}

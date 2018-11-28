@@ -1,16 +1,16 @@
 {{ define "main" }}
-  <div class="container container-narrower">
-    <h1 class="mt-5 text-center">{{ .Title | markdownify}}</h1>
+<div class="container-narrower">
+    <h1 class="ctr" style="margin-bottom: 0.25em;">{{ .Title | markdownify}}</h1>
 
-    <h2 class="mb-3 text-center h4">
+    <h2 class="ctr h4" style="margin-top: 0;">
       {{- if .Params.Subtitle }}
         {{ .Params.Subtitle | markdownify }}
       {{- else }}
         &nbsp;
       {{- end }}
     </h2>
-
-    <p class="text-muted mt-3 text-center">
+    
+    <p class="text-muted text-sans-serif ctr">
       Published: {{ .Date.Format "January 2, 2006"  }}<br /><span style="font-size: 85%;">
       {{- if ne .Date .Lastmod }}
         Last modified: {{ .Lastmod.Format "January 2, 2006" }}
@@ -29,7 +29,7 @@
 			{{- end }}
 		{{- end }}
 
-    <article class="article mt-5">
+    <article class="article">
       {{ .Content }}
     </article>
   </div>
@@ -43,23 +43,20 @@
     </div>
   
   {{ if or .PrevPage .NextPage }}
-    <div class="bg-dark py-5">
-      <div class="container">
-        <h3 class="text-center wht"><a href="/posts/">Other posts</a></h3>
-
-        <div class="row">
-          <div class="col-md-6 text-center pokey">
-            {{ with .PrevInSection }}
-              <strong>Previous</strong>:
-              <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-              {{ end }}
-          </div>
-          <div class="col-md-6 text-center pokey">
-            {{ with .NextInSection }}
-              <strong>Next</strong>:
-              <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-              {{ end }}
-          </div>
+    <div class="bg-dark">
+      <h3 class="ctr wht"><a href="/posts/">Other posts</a></h3>
+      <div class="container container-other-posts">
+        <div class="column-left-end">
+          {{ with .PrevInSection }}
+            <strong>Previous</strong>:
+            <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+            {{ end }}
+        </div>
+        <div class="column-right-end">
+          {{ with .NextInSection }}
+            <strong>Next</strong>:
+            <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+            {{ end }}
         </div>
       </div>
     </div>

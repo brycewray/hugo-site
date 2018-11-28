@@ -1,0 +1,11 @@
+name = "Ofotigrid"
+license = "MIT"
+description = "Variation of a Bootstrap 4-based theme, converted to CSS Grid"
+min_version = "0.41"
+
+tags = ["tags"]
+
+[author]
+  name = "Bryce Wray"
+  homepage = "https://brycewray.com/"
+
