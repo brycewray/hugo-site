@@ -10,6 +10,8 @@ author: Bryce Wray
 
 date: 2018-11-28T09:00:00-06:00
 
+lastmod: 2018-11-29T21:33:00-06:00
+
 final_date: 2018-11-28T09:00:00-06:00
 
 draft: false # note!
@@ -69,7 +71,7 @@ To be sure, I’d relied on media queries to make sure everything worked fine on
 
 Finally, while I was at it and essentially starting from scratch (again), I figured I also may as well tackle the uncomfortable subject of [making stuff work on Internet Explorer](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility). And I don’t mean just IE 11, the version that Microsoft still ships with Windows; I mean as far back as I could go without, um, losing my mind. That turned out to be [IE 8](https://en.wikipedia.org/wiki/Internet_Explorer_8). (Upon reading that last sentence, you probably just muttered, “Oh, God,” or words to that effect.)
 
-In doing this part in particular, I was guided by several HTML/CSS luminaries’ writings and videos—including, yes, Jen Simmons’, Rachel Andrew’s, and Kevin Powell’s—that stressed the most important thing to keep in mind for accommodating such legacy software was to give its users the _best possible user experience_. It’s not necessary to give them everything that current browsers and devices can, mainly because you _can’t_, but you _can_ give them everything they really need to have a decent experience with whatever you’re trying to present. Of course, this site isn’t exactly on the cutting edge, so that was less difficult than you might think, although there were a few times I wanted to pull out my mostly absent hair.
+In doing this part in particular, I was guided by several HTML/CSS luminaries’ writings and videos—including, yes, Jen Simmons’s, Rachel Andrew’s, and Kevin Powell’s—that stressed the most important thing to keep in mind for accommodating such legacy software was to give its users the _best possible user experience_. It’s not necessary to give them everything that current browsers and devices can, mainly because you _can’t_, but you _can_ give them everything they really need to have a decent experience with whatever you’re trying to present. Of course, this site isn’t exactly on the cutting edge, so that was less difficult than you might think, although there were a few times I wanted to pull out my mostly absent hair.
 
 (Oh, and did I mention that most of this study and the work that resulted occurred over Thanksgiving? Great holiday fun, eh? Why, yes, in fact, I _am_ a delight at parties. _Snork_.)
 
