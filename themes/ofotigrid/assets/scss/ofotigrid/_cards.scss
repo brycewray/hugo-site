@@ -1,4 +1,4 @@
-/* border-radius variable -- uses em rather than rem due to old browsers; IE 9+ supports 'calc'   */
+// border-radius variable -- uses em rather than rem due to old browsers; IE 9+ supports 'calc'
 $card-border-radius: calc(0.5em - 1px);
 
 .container-posts-cards {
@@ -35,7 +35,7 @@ $card-border-radius: calc(0.5em - 1px);
   background-color: $grey-3;
   border: 1px solid $grey-2;
   border-radius: $card-border-radius;
-  /* don't declare padding here because we want image to cover card; we'll handle padding in .card-body */  
+  // don't declare padding here because we want image to cover card; we'll handle padding in .card-body
 }
 
 .card-img-top {
@@ -49,7 +49,7 @@ $card-border-radius: calc(0.5em - 1px);
   grid-area: body;
 }
 
-.card-img-crop { /* based on https://stackoverflow.com/questions/28460844/html-bootstrap-how-to-crop-the-center-part-of-an-image */
+.card-img-crop { // based on https://stackoverflow.com/questions/28460844/html-bootstrap-how-to-crop-the-center-part-of-an-image
   grid-area: img;
   object-fit: cover;
   object-position: center;

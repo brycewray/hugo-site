@@ -1,4 +1,3 @@
-/* based on the simplified system stack in Bootstrap 4 as of November, 2018 */
 html,
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -179,9 +178,9 @@ a.footnote-return {
   color: #333; }
 
 footer {
-  margin-top: 4rem;
-  /* keeps "Comments" item from infringing on this in small-device view */
-  width: 95%;
+  margin: 4em auto 0 auto;
+  margin: 4rem auto 0 auto;
+  width: 90%;
   padding-bottom: 0.5rem; }
   @media (min-width: 900px) {
     footer {
@@ -204,13 +203,12 @@ figure, .figure {
         width: 60%; } }
 
 figure.figurebox {
-  /* border: 1px solid $grey-2; */
   padding: 0.5em;
   padding: 0.5rem; }
 
 figcaption p {
   font-size: 0.75em;
-  font-size: 0.75unquote "rem";
+  font-size: 0.75rem;
   color: #656565;
   padding-top: 1em;
   padding-top: 1rem;
@@ -301,7 +299,6 @@ img.postsFeatImg {
   font-size: 2rem; }
 
 .hero {
-  /* specifically for home page, at least to begin with */
   background-color: #0088ff;
   min-width: 100%;
   min-height: 100%;
@@ -354,11 +351,11 @@ img.postsFeatImg {
       display: table-cell;
       display: grid-item; }
   .container-narrower {
-    margin: 0 auto 0 auto;
+    margin: 1em 5% 0 5%;
     max-width: 90%; }
     @media screen and (min-width: 900px) {
       .container-narrower {
-        margin-top: 0.5em;
+        margin: 1em 20% 0 20%;
         max-width: 60%; } }
   .container-other-posts {
     margin: 0 auto 1em auto;
@@ -423,11 +420,6 @@ img.postsFeatImg {
     .disclaimer-portfolio {
       margin: 1em 17.5% 1em 17.5%; } }
 
-/* 
-CSS-only menu based on...
-https://codepen.io/kevinpowell/pen/jxppmr
-(related video at https://www.youtube.com/watch?v=8QKOaTYvYUA with other notes there)
-*/
 header {
   height: 30px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -478,10 +470,7 @@ nav {
   background-color: #000088;
   width: 100%;
   transform: scale(1, 0);
-  transform-origin: top;
-  /*
-  transition: transform 400ms ease-in-out;
-  */ }
+  transform-origin: top; }
   nav ul {
     padding-left: 0;
     margin: 0;
@@ -498,10 +487,7 @@ nav {
     color: #fff;
     font-size: 1em;
     font-size: 1rem;
-    opacity: 0;
-    /*
-    transition: opacity 150ms ease-in-out;
-    */ }
+    opacity: 0; }
   nav a:hover, nav a:active {
     color: #c8c8c8; }
 
@@ -521,9 +507,6 @@ nav {
   .site-logo a:active, .site-logo a:hover {
     color: #c8c8c8; }
 
-/* 
-=== Beginning of primary settings for larger screens ===
-*/
 @media screen and (min-width: 900px) {
   .nav-toggle-label {
     display: none; }
@@ -539,7 +522,7 @@ nav {
     text-align: left;
     padding-left: 1.5em;
     font-size: 1.15em;
-    font-size: 1.15unquote "rem"; }
+    font-size: 1.15rem; }
   nav {
     top: 25%;
     transform: none;
@@ -558,9 +541,6 @@ nav {
       margin-left: 3em;
       margin-bottom: 0; } }
 
-/* 
-=== End of primary settings for larger screens ===
-*/
 pre,
 code {
   font-family: "iA Writer Duospace", Menlo, Consolas, Courier, "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
@@ -598,7 +578,6 @@ pre code {
     -moz-user-select: none;
     user-select: none; }
 
-/* border-radius variable -- uses em rather than rem due to old browsers; IE 9+ supports 'calc'   */
 .container-posts-cards {
   max-width: 95%;
   margin-right: auto;
@@ -623,8 +602,7 @@ pre code {
   grid-template-areas: "img" "body" "button";
   background-color: #f9f9f9;
   border: 1px solid #c8c8c8;
-  border-radius: calc(0.5em - 1px);
-  /* don't declare padding here because we want image to cover card; we'll handle padding in .card-body */ }
+  border-radius: calc(0.5em - 1px); }
   @media screen and (min-width: 900px) {
     .card {
       grid-template-rows: auto 12rem 4.5vh; } }
@@ -639,7 +617,6 @@ pre code {
   grid-area: body; }
 
 .card-img-crop {
-  /* based on https://stackoverflow.com/questions/28460844/html-bootstrap-how-to-crop-the-center-part-of-an-image */
   grid-area: img;
   object-fit: cover;
   object-position: center;

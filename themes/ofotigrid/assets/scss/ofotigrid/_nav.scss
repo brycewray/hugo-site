@@ -1,8 +1,4 @@
-/* 
-CSS-only menu based on...
-https://codepen.io/kevinpowell/pen/jxppmr
-(related video at https://www.youtube.com/watch?v=8QKOaTYvYUA with other notes there)
-*/
+// CSS-only menu based on... https://codepen.io/kevinpowell/pen/jxppmr (related video at https://www.youtube.com/watch?v=8QKOaTYvYUA with other notes there)
 
 // keep header here rather than base or layout SCSS
 header {
@@ -63,9 +59,7 @@ nav {
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
-  /*
-  transition: transform 400ms ease-in-out;
-  */
+  // transition: transform 400ms ease-in-out;
   ul {
     padding-left: 0;
     margin: 0;
@@ -85,9 +79,7 @@ nav {
     font-size: $stdsize + unquote("em"); // old browsers
     font-size: $stdsize + unquote("rem");
     opacity: 0;
-    /*
-    transition: opacity 150ms ease-in-out;
-    */
+    // transition: opacity 150ms ease-in-out;
   }
   a:hover, a:active {
     color: $grey-2;
@@ -116,9 +108,7 @@ nav {
 }
 
 
-/* 
-=== Beginning of primary settings for larger screens ===
-*/
+// === Beginning of primary settings for larger screens ===
 
 @media screen and (min-width: 900px) {
   .nav-toggle-label {
@@ -139,7 +129,7 @@ nav {
     text-align: left;
     padding-left: 1.5em;
     font-size: $minimalbig + unquote("em"); // old browsers
-    font-size: $minimalbig + unquote ("rem");
+    font-size: $minimalbig + unquote("rem");
 }
 
   nav {
@@ -165,6 +155,4 @@ nav {
   }
 }
 
-/* 
-=== End of primary settings for larger screens ===
-*/
+// === End of primary settings for larger screens ===
