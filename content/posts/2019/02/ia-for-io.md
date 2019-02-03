@@ -52,4 +52,4 @@ Bottom line: I still haven't made up my mind about whether to go with a differen
 <br />
 <hr />
 
-*(One more thing before I end this quickie: if you haven't already read [Chris Rosser](https://chrisrosser.net)'s [most recent review of iA Writer](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/), I definitely urge you to do so. His workflow is quite different from mine since he actually coded his own text-to-HTML setup (whoa) but his observations are always keen and useful. "[Joe Bob says check it out](https://en.wikipedia.org/wiki/Joe_Bob_Briggs).")*
+*One more thing before I end this quickie: if you haven't already read [Chris Rosser](https://chrisrosser.net)'s [most recent review of iA Writer](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/), I definitely urge you to do so. His workflow is quite different from mine since he actually coded his own text-to-HTML setup (whoa) but his observations are always keen and useful. "[Joe Bob says check it out](https://en.wikipedia.org/wiki/Joe_Bob_Briggs)."*
