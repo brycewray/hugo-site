@@ -11,7 +11,7 @@ date: 2019-01-19T09:25:00-06:00
 
 final_date: 2019-01-19T09:25:00-06:00
 
-lastmod: 2019-01-25T22:10:00-06:00
+lastmod: 2019-02-03T11:09:00-06:00
 
 draft: false # note!
 
@@ -75,4 +75,6 @@ Right now, the WordPress world is in a [frothing](https://www.rystedtcreative.co
 
 *While I still absolutely [love Ulysses for creative writing](/posts/2018/09/why-finally-settled-ulysses), I have been thinking about using a different app for my Markdown-only work, such as content for this site. I prefer to edit Ulysses content through its Library rather than opening and saving actual .md files, but the latter are exactly what Hugo needs; so using a more conventional approach saves steps (specifically, exports from Ulysses to .md files) when I’m editing with my locally hosted staging site in view. The obvious downside to this approach is that you lose the organizational asset of* having *those files’ content in the Ulysses Library; but, for now, I’ll consider this method. I can always copy/paste into Ulysses, of course.*
 
-*I gave [iA Writer](https://ia.net/writer) a brief trial but wasn’t impressed, especially given the clunky way it handles such [SSG](https://www.staticgen.com) essentials as top-of-page [YAML](https://yaml.org)-type metadata. (I won’t bore you with the details, for once.) Then I tried [Typora](https://typora.io) and liked it so much that I wrote nearly this entire piece in it before, indeed, copying/pasting the content into Ulysses for storage in the Library with my other posts. I had read a lot of glowing comments about Typora, and now I see why. It’s even free (for now), for Pete’s sake, while it’s still pre-Version-1. I don’t know what Version 1 eventually will cost, but it may well be a worthy addition to my stable of apps. However, [a new version of Ulysses is coming before long](https://ulysses.app/blog/2019/01/ulysses-15-beta/), so I’ll probably wait to see what it offers before I decide to separate my writing processes between Ulysses and [whatever], whether [whatever] turns out to be Typora or something else.*
+*I gave [iA Writer](https://ia.net/writer) a brief trial but wasn’t impressed, especially given the clunky way it handles such [SSG](https://www.staticgen.com) essentials as top-of-page [YAML](https://yaml.org)-type metadata. (I won’t bore you with the details, for once.)[^1] Then I tried [Typora](https://typora.io) and liked it so much that I wrote nearly this entire piece in it before, indeed, copying/pasting the content into Ulysses for storage in the Library with my other posts. I had read a lot of glowing comments about Typora, and now I see why. It’s even free (for now), for Pete’s sake, while it’s still pre-Version-1. I don’t know what Version 1 eventually will cost, but it may well be a worthy addition to my stable of apps. However, [a new version of Ulysses is coming before long](https://ulysses.app/blog/2019/01/ulysses-15-beta/), so I’ll probably wait to see what it offers before I decide to separate my writing processes between Ulysses and [whatever], whether [whatever] turns out to be Typora or something else.*
+
+[^1]:	On the other hand, [I gave it yet another try](/posts/2019/02/ia-for-io) and learned some things that changed my mind somewhat.
