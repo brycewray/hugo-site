@@ -59,7 +59,7 @@ I put the annoyance aside for that weekend, what with all the other pages I had 
 Everything I did in CSS that made it look mildly acceptable on IE made it go bonkers on the *real* browsers (`<burn>`shots fired`</burn>`). After spending 'way too much time trying to dope it out, and with my regular tasks waiting impatiently for my attention, I decided to do that hated thing known as browser-specific CSS.^[And, no, I don't know whether [HTML5 Shiv](https://github.com/aFarkas/html5shiv) would've fixed it; I didn't try it.] So I proceeded to create a little "ie.css" stylesheet and prepared to use IE conditional comments. Yep, those ugly things in the `<head>` section that only Internet Explorer sees, like:
 
 `<!--[if IE]>`  
-&nbsp;&nbsp;&nbsp;&nbsp;`<link rel="stylesheet: href="/css/ie.css">`  
+&nbsp;&nbsp;&nbsp;&nbsp;`<link rel="stylesheet" href="/css/ie.css">`  
 `<![endif]-->  `
 
 Except I didn't learn until that very morning---and this is where I really feel foolish---that **Internet Explorer had stopped supporting those in IE** ***10***. **Ten**! Hey, sports fans, that was released in *2012*.
