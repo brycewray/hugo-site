@@ -12,6 +12,8 @@ date: 2019-02-16T10:50:00-06:00
 
 # final_date: 2019-02-16T10:50:00-06:00
 
+lastmod: 2019-02-17T08:35:00-06:00
+
 draft: false # note!
 
 actual_path: /content/posts/2019/02/old-dog-old-trick
@@ -40,7 +42,7 @@ So, I'm both relieved to know it and embarrassed that I didn't. Let me tell you 
 
 ## Wresting victory from the jaws .&nbsp;.&nbsp;.
 
-Remember that wretched excuse for a WordPress page builder against which [I inveighed](/pages/2019/01/blox-sux/)? Well, I have managed to convince the appropriate folks that we should yank it from my employer's growing number of Web sites as the opportunities present themselves. Yay. Of course, that'll be a while, because we're talking about production sites that serve many thousands of people a day, and one mustn't throw the proverbial monkey wrench into that functionality. But the path has been laid out. We will get there. Again, yay.
+Remember that wretched excuse for a WordPress page builder against which [I inveighed](/posts/2019/01/blox-sux/)? Well, I have managed to convince the appropriate folks that we should yank it from my employer's growing number of Web sites as the opportunities present themselves. Yay. Of course, that'll be a while, because we're talking about production sites that serve many thousands of people a day, and one mustn't throw the proverbial monkey wrench into that functionality. But the path has been laid out. We will get there. Again, yay.
 
 Part of the way I managed to get this decision, for which I am more grateful than words will express, was to take one of our existing test sites, rebuild it (and, I believe, improve it) in [the page builder I prefer when I have to prefer one](https://elementor.com), and let the appropriate folks check out the results for themselves.
 
@@ -72,9 +74,9 @@ I am still embarrassed. In the words of Donald Sutherland in *Animal House*: "[L
 
 So why am I sharing my shame? Because I saw posts from *other* people still asking about IE conditionals for IE 10 and 11 even in recent months, so there are others to inform. Here is the correct way to schnooker IE 10 and 11 into seeing an instruction that you want the *real* browsers to ignore (hat tip to [Philip Newcomer](https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/) and [numerous](https://stackoverflow.com/questions/19502040/if-ie-conditionals-not-working) [folks](https://stackoverflow.com/questions/27735840/why-are-conditional-comments-in-html-not-recognized-in-internet-explorer-11-is) [on](https://stackoverflow.com/questions/19446584/why-doesnt-internet-explorer-11-honour-conditional-comments-even-when-emulating) [Stack Overflow](https://stackoverflow.com/questions/40656043/conditional-comments-not-working-in-ie11)):
 
-> *.&nbsp;.&nbsp;.&nbsp;create a media query using `-ms-high-contrast`, in which you place your IE 10- and 11-specific CSS styles. Because `-ms-high-contrast` is Microsoft-specific (and .&nbsp;.&nbsp;.&nbsp;available [only] in IE 10+), it will .&nbsp;.&nbsp;.&nbsp;be parsed in [only] Internet Explorer 10 and greater.^["How to Target Internet Explorer 10 and 11 in CSS," [Philip Newcomer: The Backwoods Coder](https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/).]*
+> .&nbsp;.&nbsp;.&nbsp;create a media query using `-ms-high-contrast`, in which you place your IE 10- and 11-specific CSS styles. Because `-ms-high-contrast` is Microsoft-specific (and .&nbsp;.&nbsp;.&nbsp;available [only] in IE 10+), it will .&nbsp;.&nbsp;.&nbsp;be parsed in [only] Internet Explorer 10 and greater.^["How to Target Internet Explorer 10 and 11 in CSS," [Philip Newcomer: The Backwoods Coder](https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/).]
 
-So I was saved the trouble of an "ie.css" sheet; and my resulting addition to the end of the "style.css" sheet I was already using  turned out to be something along these lines:
+So I was saved the trouble of an "ie.css" sheet; and my resulting addition to the end of the "style.css" sheet I was already using turned out to be something along these lines:
 
 `/* ==== for IE 10 and 11 **ONLY** ==== */`  
 `@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {`  
@@ -106,7 +108,7 @@ Woof.
 
 *Two things about my [last post](/posts/2019/02/ia-for-io/), an abbreviated revisiting of iA Writer after I'd [previously](/posts/2019/01/blox-sux/) dissed it:*
 
-- *While I wrote much of that post within iA Writer and then transferred it to Ulysses, I did this one* entirely *from within iA Writer. (Whether it, too, will end up within the Ulysses Library is TBD.) While, without question, it is one opinionated son of a gun---and I have to say that it's weird to read [one](https://www.macstories.net/ios/ia-writer-5-2-better-typography-and-external-library-locations/) [article](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/) [after](http://randsinrepose.com/archives/bear-an-elegant-combination-of-design-whimsy-and-voice/) [another](https://medium.com/@mariusmasalar/ulysses-vs-ia-writer-a-new-comparison-7015c899e883) referring to* ***a software app*** *as "opinionated"---it doth have charms to sooth the savage [static site generator](https://staticgen.com).*
+- *While I wrote much of that post within iA Writer and then transferred it to Ulysses, I did this one* entirely *from within iA Writer. (Whether it, too, will end up within the Ulysses Library is TBD.) While, without question, iA Writer is one opinionated son of a gun---and I have to say that it's weird to read [one](https://www.macstories.net/ios/ia-writer-5-2-better-typography-and-external-library-locations/) [article](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/) [after](http://randsinrepose.com/archives/bear-an-elegant-combination-of-design-whimsy-and-voice/) [another](https://medium.com/@mariusmasalar/ulysses-vs-ia-writer-a-new-comparison-7015c899e883) referring to* ***a software app*** *as "opinionated"---it doth have charms to sooth the savage [static site generator](https://staticgen.com).*
 - *But the shocker is that I've actually spent some time over the last few days writing the WIP in iA Writer, too. Right now, it's an experiment and no more. Then again, about nine months ago, I said that about a Memorial Day weekend tryout of Ulysses, and suddenly I was using it instead of Scrivener, and [committing my beloved WIP to it a few months after that](/posts/2018/09/why-finally-settled-ulysses/). I still have some serious reservations about iA Writer as a repository of anything longer than fluff like what you're reading now---for example, it seems a trifle unstable at times, and I have lost a little writing when it crashed while I've never lost any when Ulysses hit the dirt---but that's what experimentation is for, right?*
 
 *In short, stay tuned.*
