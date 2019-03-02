@@ -1,4 +1,5 @@
 ---
+
 title: Back up, Jack 
 
 subtitle: From 3-2-1 to 4-2-2
@@ -9,9 +10,9 @@ author: Bryce Wray
 
 date: 2019-02-23T12:45:00-06:00
 
-# final_date: 2019-02-23T12:45:00-06:00
+#final_date: 2019-02-23T12:45:00-06:00
 
-# lastmod: TBD
+#lastmod: TBD
 
 draft: false # note!
 

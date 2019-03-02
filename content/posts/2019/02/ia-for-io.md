@@ -10,9 +10,9 @@ author: Bryce Wray
 
 date: 2019-02-03T09:25:00-06:00
 
-# final_date: 2019-02-19T09:25:00-06:00
+#final_date: 2019-02-19T09:25:00-06:00
 
-# lastmod: 2019-01-25T22:10:00-06:00
+#lastmod: 2019-01-25T22:10:00-06:00
 
 draft: false # note!
 
