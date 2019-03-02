@@ -125,12 +125,12 @@ More on that in a future post.
 
 [^open]: Think .docx is sufficiently open that we don't have to worry about that? [Think again](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/).
 
-[^Libre]: Some third-party apps, notably LibreOffice and its forebear, OpenOffice, have been known to get to old DOS Word files, but---again---not without some headaches and less-than-satisfactory results. For example, check out [this forum discussion](https://forum.openoffice.org/en/forum/viewtopic.php?f=7&t=74093).
+[^Libre]: Some third-party apps, notably LibreOffice and its forebear, OpenOffice, have been known to get to old DOS Word files, but---again---with headaches and, often, less-than-satisfactory results. For example, check out [this forum discussion](https://forum.openoffice.org/en/forum/viewtopic.php?f=7&t=74093).
 
 [^WordPerfect]: Before you say, "Hey, just a minute, bucko: [WordPerfect is still around](https://www.wordperfect.com)": true, it is. But, in terms of market share, it's a ghost of its former self; and God help its users if they can't share files with Word. WordPerfect only barely exists, and in the dark shadow of the conqueror from Redmond.
 
 [^manual]: Well, at least, I could write as long as I wanted *within the limits* of what my pudgy little fingers could stand to do on that Royal manual, although, through sheer repetition, I got pretty fast at it, eventually reaching over sixty words per minute despite being essentially a two-finger typist.
 
-[^noAC]: In the dark ages, we didn't all have central air, y'know.
+[^noAC]: In the dark ages, even we folks south of the Mason-Dixon Line didn't all have central air, y'know.
 
 [^lastpost]: Ahem, again, a plug for my [most recent post](/posts/2019/02/back-up-jack).
