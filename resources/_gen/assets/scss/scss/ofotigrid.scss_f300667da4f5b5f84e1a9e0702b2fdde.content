@@ -5,7 +5,7 @@ body {
   letter-spacing: -0.01em;
   letter-spacing: -0.015rem;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-rendering: optimizeLegibility; }
 
@@ -149,9 +149,11 @@ a.footnote-return {
     width: 100%;
     height: 100%; }
 
+pre, code {
+  white-space: inherit; }
+
 #content {
-  padding-top: 40px;
-  display: grid; }
+  padding-top: 40px; }
 
 .text-sans-serif {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
@@ -223,7 +225,7 @@ h3.twitter-border {
 
 img.featured-image {
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
   margin-right: auto;
   margin-left: auto; }
@@ -317,13 +319,13 @@ img.postsFeatImg {
 .container {
   display: table-cell;
   display: grid;
-  width: 90%;
   margin: 0 auto; }
   .container-home {
     display: table;
     border-spacing: 30px;
     display: grid;
     margin: 0 auto;
+    grid-gap: 2em;
     grid-gap: 2rem;
     width: 90%;
     grid-template-columns: 100%; }
@@ -340,6 +342,7 @@ img.postsFeatImg {
     border-spacing: 30px;
     display: grid;
     margin: 0 auto;
+    grid-gap: 2em;
     grid-gap: 2rem;
     width: 90%;
     grid-template-columns: 100%; }
@@ -351,12 +354,11 @@ img.postsFeatImg {
       display: table-cell;
       display: grid-item; }
   .container-narrower {
-    margin: 1em 5% 0 5%;
-    max-width: 90%; }
-    @media screen and (min-width: 900px) {
+    margin: 1em auto 0 auto;
+    width: 80%; }
+    @media screen and (min-width: 769px) {
       .container-narrower {
-        margin: 1em 20% 0 20%;
-        max-width: 60%; } }
+        width: 34em; } }
   .container-other-posts {
     margin: 0 auto 1em auto;
     width: 90%;

@@ -1,6 +1,6 @@
 #content {
   padding-top: 40px;
-  display: grid;
+  // display: grid;
 }
 
 .text-sans-serif {
@@ -87,7 +87,7 @@ h3.twitter-border {
 
 img.featured-image {
   display: block;
-  width: 100%;
+  width: 90%;
   @media (min-width: 900px) {
     width: 75%;
   }
@@ -207,7 +207,7 @@ $homeHeroImageURL: "/images/West_Texas_1990_from_FB_60pct.jpg";
 .container {
   display: table-cell; // old browsers
   display: grid;
-  width: 90%;
+  // width: 90%;
   margin: 0 auto;
   &-home {
     // old browsers
@@ -216,6 +216,7 @@ $homeHeroImageURL: "/images/West_Texas_1990_from_FB_60pct.jpg";
     // end old browsers
     display: grid;
     margin: 0 auto;
+    grid-gap: 2em;
     grid-gap: 2rem;
     width: 90%;
     grid-template-columns: 100%;
@@ -234,6 +235,7 @@ $homeHeroImageURL: "/images/West_Texas_1990_from_FB_60pct.jpg";
     border-spacing: 30px; // old browsers
     display: grid;
     margin: 0 auto;
+    grid-gap: 2em;
     grid-gap: 2rem;
     width: 90%;
     grid-template-columns: 100%;
@@ -247,11 +249,10 @@ $homeHeroImageURL: "/images/West_Texas_1990_from_FB_60pct.jpg";
     }
   }
   &-narrower {
-    margin: 1em 5% 0 5%;
-    max-width: 90%;
-    @media screen and (min-width: 900px) {
-      margin: 1em 20% 0 20%;
-      max-width: 60%;
+    margin: 1em auto 0 auto;
+    width: 80%;
+    @media screen and (min-width: 769px) {
+      width: 34em;
     }
   }
   &-other-posts {

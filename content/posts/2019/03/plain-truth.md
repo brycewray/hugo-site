@@ -10,9 +10,9 @@ author: Bryce Wray
 
 date: 2019-03-02T16:00:00-06:00
 
-#final_date: 2019-03-02T15:55:00-06:00
+date: 2019-03-02T16:00:00-06:00
 
-#lastmod: TBD
+lastmod: 2019-03-05T20:45:00-06:00
 
 draft: false # note!
 
@@ -66,7 +66,7 @@ What changed? Simple. The first version of Windows that many offices considered 
 
 With the loss of realistic competition, Microsoft dictated the format for word processing from there on. There have been four different versions of its .doc format, followed by the .docx format that has been standard since Word 2003 was introduced.[^wordformats] And, the older a file is, the greater the likelihood that you won't be able to read it now, except without difficulty.
 
-So what? Well, we have no way of knowing that similar compatibility problems won't crop up in the future with files that are perfectly readable now---at least, those that are in proprietary formats like Word's[^open], not to mention the equally proprietary formats of those competitors it all but wiped off the map.
+So what? Well, we have no way of knowing that similar compatibility problems won't crop up in the future with files that are perfectly readable now---at least, those that are in proprietary formats like Word's[^open], not to mention the equally proprietary formatssssssss of those competitors it all but wiped off the map.
 
 Now, let's think about permanence.
 
@@ -117,7 +117,7 @@ More on that in a future post.
 
 [^Martin]: I know, I know; [George R. R. Martin](https://www.theverge.com/2014/5/14/5716232/george-r-r-martin-uses-dos-wordstar-to-write) and all that. But he's not exactly your average word processing software user, now, is he? Hmm?
 
-[^wordformats]:[https://en.wikipedia.org/wiki/Microsoft_Word#File_extensions](https://en.wikipedia.org/wiki/Microsoft_Word#File_extensions).
+[^wordformats]: Here's a [handy list](https://en.wikipedia.org/wiki/Microsoft_Word#File_extensions).
 
 [^WYSIWYG]:The following year, with the introduction of the Mac, the  world began to learn how *real* WYSIWYG should look; but the original Word *was* pretty cool for its time if you were stuck in MS-DOS.
 
