@@ -12,7 +12,7 @@ date: 2019-03-02T16:00:00-06:00
 
 date: 2019-03-02T16:00:00-06:00
 
-lastmod: 2019-03-05T20:45:00-06:00
+lastmod: 2019-03-07T05:01:00-06:00
 
 draft: false # note!
 
@@ -66,7 +66,7 @@ What changed? Simple. The first version of Windows that many offices considered 
 
 With the loss of realistic competition, Microsoft dictated the format for word processing from there on. There have been four different versions of its .doc format, followed by the .docx format that has been standard since Word 2003 was introduced.[^wordformats] And, the older a file is, the greater the likelihood that you won't be able to read it now, except without difficulty.
 
-So what? Well, we have no way of knowing that similar compatibility problems won't crop up in the future with files that are perfectly readable now---at least, those that are in proprietary formats like Word's[^open], not to mention the equally proprietary formatssssssss of those competitors it all but wiped off the map.
+So what? Well, we have no way of knowing that similar compatibility problems won't crop up in the future with files that are perfectly readable now---at least, those that are in proprietary formats like Word's[^open], not to mention the equally proprietary formats of those competitors it all but wiped off the map.
 
 Now, let's think about permanence.
 
