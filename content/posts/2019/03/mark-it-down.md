@@ -12,7 +12,7 @@ date: 2019-03-08T22:08:00-06:00
 
 #final_date: 2019-03-08T21:05:00-06:00
 
-#lastmod: TBD
+lastmod: 2019-03-09T06:35:00-06:00
 
 draft: false # note!
 
@@ -36,7 +36,7 @@ Instead, there were .md files.
 
 I remember being unimpressed when I found the answer to that question. Boldfacing and italicizing by placing asterisks? Using pound signs---I wasn't yet calling them "hashes," despite having used Twitter since 2011[^Twitter]---to identify heading levels? What was with these people? If they wanted to use plain text and yet have formatting, why didn't they simply use HTML?[^jobhunt]
 
-[^Twitter]: My current account dates from 2014, but opened my original one---which I gave a mercy killing, let's just leave it at that---in 2011.
+[^Twitter]: My current account dates from 2014, but I opened my original one---which I gave a mercy killing, let's just leave it at that---in 2011.
 
 [^jobhunt]: On the other hand, I probably was just grumpy because I'd already realized my poor command of one particular programming language meant I wouldn't be able to solve those puzzles and, thus, my jobless 2015 was going to continue. I normally don't bother chasing jobs when I know it's likely I don't qualify for them, but I'd been out of work for nearly half a year and I figured it was worth a try. Modesty aside, I'm a quick study, so I knew I could rapidly pick up any necessary knowledge I didn't have at the outset. For some jobs, that works fine, especially if the applicant is fresh out of school, but it wasn't suitable for this particular one or this particular applicant. *C'est la guerre.*
 
@@ -60,11 +60,11 @@ But Markdown is the trick up that little bird's sleeve---um, fuzz. (I would say,
 
 ## How to make plain text powerful?
 
-Plain text has been the backbone of computing in general, and the Internet and the software and servers that make it possible in particular, from the beginning. However, it seemed to be left behind during the last two decades of the twentieth century as the computing public generally embraced word processing and desktop publishing, each replete with proprietary methods and file formats that ensured a lack of that very permanence I touted in the [last post](/posts/2019/03/plain-truth).
+Plain text has been the backbone of computing in general, and the Internet (and the software and servers that make it possible) in particular, from the beginning. However, it seemed to be left behind during the last two decades of the twentieth century as the computing public generally embraced word processing and desktop publishing, each replete with proprietary methods and file formats that ensured a lack of that very permanence I touted in the [last post](/posts/2019/03/plain-truth).
 
 This got some serious minds to doing some serious thinking. They couldn't simply ignore the fact that most users wanted their text formatted---boldfaced, italicized, organized with headings and subheadings, full of bulleted and numbered lists, and so on. But how could all that get into plain text, period, much less in a uniform manner?
 
-Finding a solution to this question became more urgent in the early 2000s as, increasingly, documentation for software apps moved from its traditional print format to online. One obvious answer had been in place since around 1990: hypertext markup language (HTML). After all, the source code of every single Web page is absolutely plain text. It just has a lot of stuff that makes it not *look* plain:
+Finding a solution to this question became more urgent in the early 2000s as, increasingly, documentation for software apps moved from its traditional print format to online. One obvious answer had been in place since around 1990: HTML. After all, the source code of every single Web page is absolutely plain text. It just has a lot of stuff that makes it not *look* plain:
 
 <code>
 \<h1\>This is a heading (H1).<br />
@@ -95,9 +95,9 @@ All of the above---and please understand, that's some pretty *bare-bones* HTML--
 > - This is an unnumbered item.
 > - This is another unnumbered item.
 
-However, a lot of tech writers (or, in really small shops that couldn't afford dedicated writers, the developers themselves) didn't care *at all* for having to write in HTML. That was especially true when the task got considerably more complicated than my example, above. I'm talking about tables, steps and sub-steps and sub-**sub**-steps, wraparound** graphics, *ad nauseam*.
+However, a lot of tech writers (or, in really small shops that couldn't afford dedicated writers, the developers themselves) didn't care *at all* for having to write in HTML. That was especially true when the task got considerably more complicated than my example, above. I'm talking about tables, steps and sub-steps and sub-**sub**-steps, *ad nauseam*.
 
-Yes, there were (and still are) apps to create HTML-based documentation from a WYSIWYG editor, but they---like the export-to-HTML features that came to be standard parts of most word processing apps---became infamous for producing [bloated HTML](https://www.moorecreative.com/Articles/Detail/tabid/522/ArticleId/18/How-can-i-clean-extra-code-out-of-Word-HTML.aspx), or [Extensible HTML (XHTML)](https://en.wikipedia.org/wiki/XHTML), that opened slowly and [presented standards-bending difficulties](https://www.simplycast.com/interactive-marketing-support/faqs/why-does-html-code-created-microsoft-word-sometimes-render-incorrectly-message-editor/), especially in certain browsers.
+Yes, there were (and still are) apps to create HTML-based documentation from a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editor, but they---like the export-to-HTML features that came to be standard parts of most word processing apps---became infamous for producing [bloated](https://www.moorecreative.com/Articles/Detail/tabid/522/ArticleId/18/How-can-i-clean-extra-code-out-of-Word-HTML.aspx) HTML or [XHTML](https://en.wikipedia.org/wiki/XHTML) that opened slowly and [presented standards-bending difficulties](https://www.simplycast.com/interactive-marketing-support/faqs/why-does-html-code-created-microsoft-word-sometimes-render-incorrectly-message-editor/), especially in certain browsers.
 
 Documentation writers in particular, and writers in general, increasingly believed there had to be a better way to produce text in general, and online text in particular.
 
@@ -138,16 +138,20 @@ There are a number of variations of Markdown, perhaps most notably [Fletcher Pen
 
 ## Look, Ma: hands!
 
-In pretty much all takes on Markdown, one key idea is that, once you pick up the special characters---and, frankly, get used to seeing them amidst your writing---you rarely, if ever, have to take your hands off the keyboard, although the vast majority of Markdown editors, like the word processing apps from which they've stolen more than a few of us, have keystroke shortcuts to keep you from having to remember *too* many things.
+In pretty much all takes on Markdown that I've seen, one key idea is that, once you pick up the special characters---and, frankly, get used to seeing them amidst your writing---you rarely, if ever, have to take your hands off the keyboard, although the vast majority of Markdown editors, like the word processing apps from which they've stolen more than a few of us,  do have keystroke shortcuts to keep you from having to remember *too* many things in the early going.
 
 The best thing of all is that Markdown is, indeed, plain text. Glorious, [safe-forever](/posts/2019/03/plain-truth) plain text. It just happens to be plain text with super powers, especially when paired with a smart [static site generator](https://gohugo.io) or one of the many exceptional editor apps that use it (the ones I mentioned before are merely the tip of the iceberg).
 
 To be honest, a Markdown editor can't give you *everything* that a rich-text format word processing app can when it comes to formatting, including non-text components, and other file-bloating aspects; but, when your task is to write first and worry later (if at all) about whether the text comes out looking pretty, the Markdown experience is awfully hard to beat.
 
+Oh, that reminds me: I mentioned earlier that a first look at Markdown might cause a word processor user to wonder about how to share files with people---like most businesspeople, not to mention publishing editors or even publication apps like [Vellum](https://vellum.pub/)---that want everything in Word format. Well, never fear: most of the top Markdown editors have superb exporting capabilities. I can highly recommend both [Ulysses](https://ulysses.app/tutorials/export) and [iA Writer](https://ia.net/writer/blog/word-and-github) in particular for this functionality, but they're by no means the only ones.[^backward]
+
+[^backward]: Lest I mislead you, don't take that to mean it's an easy thing to get stuff *back* from Word in a format that's friendly to Markdown, but that's not the fault of Markdown or the apps that use it. Each author's workflow is different, and some adapt to this disparity by simply shrugging and using Word, too, once they've lovingly crafted their early drafts in their Markdown-friendly apps of choice.
+
 ## It'll set you free---often, *for* free
 
-You don't even have to buy an app to try it out. There are any number of online sites that will let you play with Markdown and save your work. Some even let you do it absolutely for free, perhaps with some optional extra charges for certain goodies. (Of those online editors, my personal experience suggests it's hard to beat [StackEdit](https://stackedit.io), but you'll want to search for your own best landing spot.) So even folks who are mostly Web-bound, like [Chromebook](https://www.google.com/chromebook) users, can get in on the fun.
+You don't have to buy anything to give Markdown a try. There are any number of online sites that will let you play with Markdown and, in most cases, save and/or export your work. Some even let you do it absolutely for free, perhaps with some optional extra charges for certain goodies. (Of those online editors, my limited personal experience leads me to recommend [StackEdit](https://stackedit.io), but you'll want to search for your own best landing spot.)  That means even folks who are mostly Web-bound, like [Chromebook](https://www.google.com/chromebook) users, can get in on the fun.
 
-And, yes, it actually *is* fun. It looks a little goofy on-screen, depending on the editor you're using, but you get used to it pretty quickly. Then, as you realize how much more deeply you're getting into your writing by using a fast, *writing*-focused Markdown editor rather than a bloated, *presentation*-focused word processor---and as you enjoy the warm feeling of knowing that using Markdown enables you to save your work in bulletproof plain text---you'll be amazed how much freer you'll feel when you write.
+And, yes, it actually *is* fun. It looks a little goofy on-screen, depending on the editor you're using, but you get used to it pretty quickly. Then, as you realize how much more deeply you're getting into your writing by using a lean, *writing*-focused Markdown editor rather than a bloated, *presentation*-focused word processor---and as you enjoy the warm feeling of knowing that using Markdown enables you to save your work in bulletproof plain text---you'll be amazed how much freer you'll feel when you write.
 
 So, yeah, mark it down: however you go about it, Markdown is something you want to give a shot. <code>And \*\*sooner\*\* rather than later.</code>
