@@ -12,7 +12,7 @@ date: 2019-03-08T22:08:00-06:00
 
 #final_date: 2019-03-08T21:05:00-06:00
 
-lastmod: 2019-03-09T06:35:00-06:00
+lastmod: 2019-03-09T07:38:00-06:00
 
 draft: false # note!
 
@@ -67,7 +67,7 @@ This got some serious minds to doing some serious thinking. They couldn't simply
 Finding a solution to this question became more urgent in the early 2000s as, increasingly, documentation for software apps moved from its traditional print format to online. One obvious answer had been in place since around 1990: HTML. After all, the source code of every single Web page is absolutely plain text. It just has a lot of stuff that makes it not *look* plain:
 
 <code>
-\<h1\>This is a heading (H1).<br />
+\<h1\>This is a top-level heading (H1).<br />
 <br />
 \<p\>This would give you a paragraph with \<strong\>bold text here\</strong\> and \<em\>italicized text here\</em\>.\</p\><br />
 <br />
