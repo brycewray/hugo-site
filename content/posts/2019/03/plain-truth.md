@@ -12,7 +12,7 @@ date: 2019-03-02T16:00:00-06:00
 
 date: 2019-03-02T16:00:00-06:00
 
-lastmod: 2019-03-07T05:01:00-06:00
+lastmod: 2019-03-22T14:10:00-05:00
 
 draft: false # note!
 
@@ -30,7 +30,7 @@ I still have stuff I wrote fifty years ago.
 
 It's not any *good*, mind you, but I have it.
 
-Whether we're talking about an op-ed I wrote in a school newspaper or a pitiful attempt my almost-fourteen-year-old self made at a novel in the ensuing summer of '69, the now-dingy sheets of typing paper on which they exist have long since seen their better days, but I can read them again any time I want.
+Whether we're talking about an op-ed I wrote in a school newspaper or a pitiful attempt my almost-fourteen-year-old self made at a novel in the ensuing summer of &rsquo;69, the now-dingy sheets of typing paper on which they exist have long since seen their better days, but I can read them again any time I want.
 
 Will today's kids will be able to say that in 2069 about things they're writing now? For that matter: will *you* will be able to say it in *2029* about *your* current work?
 
