@@ -4,13 +4,13 @@ title = "BryceWray.com"
 theme = "ofotigrid"
 googleAnalytics = "UA-126570650-1"
 
-summaryLength = 30
+summaryLength = 20
 FootnoteReturnLinkContents = "&#8593;"
 enableRobotsTXT = true
 
 [params]
     Author = "Bryce Wray"
-    Description = "Bryce Wray’s Web site — observations, opinions, and portfolio"
+    Description = "Bryce Wray’s Web site — observations and opinions"
 
 [blackfriday]
     hrefTargetBlank = true
@@ -24,15 +24,8 @@ enableRobotsTXT = true
         weight = 100
     
     [[menu.main]]
-        identifier = "portfolio"
-        name = "Portfolio"
-        title = "Portfolio"
-        url = "/portfolio/"
-        weight = 110
-    
-    [[menu.main]]
         identifier = "posts"
         name = "Posts"
         title = "Posts"
         url = "/posts/"
-        weight = 120
+        weight = 110

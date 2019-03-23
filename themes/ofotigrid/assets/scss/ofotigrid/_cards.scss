@@ -9,7 +9,7 @@ $card-border-radius: calc(0.5em - 1px);
   border-spacing: 0.25em; // old browsers
   display: grid;
   grid-auto-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 1rem; // rem is OK because old browsers don't do grid
   @media screen and (min-width: 900px) {
     max-width: 85%;
     grid-template-columns: 50% 50%;
@@ -25,7 +25,7 @@ $card-border-radius: calc(0.5em - 1px);
   display: grid;
   grid-template-rows: auto auto 4.5vh;
   @media screen and (min-width: 900px) {
-    grid-template-rows: auto 12rem 4.5vh;
+    grid-template-rows: auto 12rem 4.5vh; // rem is OK because old browsers don't do grid
   }
   grid-template-areas:
     "img"
