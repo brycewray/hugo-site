@@ -303,7 +303,7 @@ img.postsFeatImg {
   min-height: 100%;
   top: 0;
   left: 0;
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 1em;
