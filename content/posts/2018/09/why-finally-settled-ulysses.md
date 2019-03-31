@@ -8,7 +8,7 @@ author: Bryce Wray
 
 date: 2018-09-22T11:04:36-05:00
 
-lastmod: 2018-11-05T12:30:00-06:00
+lastmod: 2019-03-31T16:40:00-05:00
 
 draft: false
 
@@ -23,6 +23,14 @@ featured_image: /images/Ulysses-Preferences-General-screen-shot_60pct.jpg
 As I write this in late September, 2018, it’s a little over a year since I began writing a novel I really, truly thought I’d have finished by now.
 
 Well, that hasn’t happened, but at least now I **really** think I’ve got all my plot holes figured out. Still, that’s not why I’m writing this.
+
+<div style="border: 1px solid black; background-color: #ffffcc; padding: 0.5em; line-height: 1.3; margin: 1.5em auto;">
+
+<strong style="color: #000088;"><span style="font-variant: small-caps;">u p d a t e</span> : March 31, 2019</strong><br />
+&nbsp;<br />
+Lately, I’ve experienced repeated problems with Ulysses&rsquo;s ability to sync with iCloud, to the point of actually losing content; therefore, I’m now considering discontinuing my Ulysses subscription, which expires soon. However that decision goes, I will add a new post to explain it and detail what happened. I&rsquo;ll still leave <strong>this</strong> post active, not only for archival purposes but also because it doesn’t address Ulysses&rsquo;s (or Scrivener&rsquo;s) sync&rsquo;ing functionality one way or the other and, thus, its own points remain valid.
+
+</div>
 
 ## Holy wars? Holy .&nbsp;.&nbsp;.
 

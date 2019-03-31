@@ -12,7 +12,7 @@ date: 2019-03-02T16:00:00-06:00
 
 date: 2019-03-02T16:00:00-06:00
 
-lastmod: 2019-03-22T14:10:00-05:00
+lastmod: 2019-03-30T15:45:00-05:00
 
 draft: false # note!
 
@@ -127,7 +127,7 @@ More on that in a future post.
 
 [^Libre]: Some third-party apps, notably LibreOffice and its forebear, OpenOffice, have been known to get to old DOS Word files, but---again---with headaches and, often, less-than-satisfactory results. For example, check out [this forum discussion](https://forum.openoffice.org/en/forum/viewtopic.php?f=7&t=74093).
 
-[^WordPerfect]: Before you say, "Hey, just a minute, bucko: [WordPerfect is still around](https://www.wordperfect.com)": true, it is. But, in terms of market share, it's a ghost of its former self; and God help its users if they can't share files with Word. WordPerfect only barely exists, and in the dark shadow of the conqueror from Redmond.
+[^WordPerfect]: Before you say, "Hey, just a minute, bucko: WordPerfect is still around": [true, it is](https://www.wordperfect.com). But, in terms of market share, it's a ghost of its former self; and God help its users if they can't share files with Word. WordPerfect only barely exists, and in the dark shadow of the conqueror from Redmond.
 
 [^manual]: Well, at least, I could write as long as I wanted *within the limits* of what my pudgy little fingers could stand to do on that Royal manual, although, through sheer repetition, I got pretty fast at it, eventually reaching over sixty words per minute despite being essentially a two-finger typist.
 
