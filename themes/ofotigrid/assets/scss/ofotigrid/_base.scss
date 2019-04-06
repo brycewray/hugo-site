@@ -64,6 +64,7 @@ h5, .h5, h6, .h6 {
 
 a, a:focus, a:hover, a:active {
   text-decoration: none;
+  // text-decoration-skip-ink: auto;
 }
 
 a {

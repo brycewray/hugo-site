@@ -78,6 +78,8 @@ nav {
     color: #fff;
     font-size: $stdsize + unquote("em"); // old browsers
     font-size: $stdsize + unquote("rem");
+    // text-decoration-skip-ink: none;
+    text-decoration: none;
     opacity: 0;
     // transition: opacity 150ms ease-in-out;
   }
@@ -97,6 +99,8 @@ nav {
   color: #fff;
   a {
     color: #fff;
+    // text-decoration-skip-ink: none;
+    // text-decoration: none;
   }
   a:active, a:hover {
     color: $grey-2;

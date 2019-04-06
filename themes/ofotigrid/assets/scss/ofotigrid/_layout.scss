@@ -180,7 +180,7 @@ img.postsFeatImg {
   font-size: $bigger + unquote("rem");
 }
 
-$homeHeroImageURL: "/images/West_Texas_1990_from_FB_60pct.jpg";
+$homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
 
 .hero { // specifically for home page, at least to begin with
   background-color: #0088ff;
@@ -193,8 +193,7 @@ $homeHeroImageURL: "/images/West_Texas_1990_from_FB_60pct.jpg";
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 1em; // old browsers
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   height: 400px; // old browsers
   height: 40vh;
   &-home {

@@ -311,12 +311,11 @@ img.postsFeatImg {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 1em;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   height: 400px;
   height: 40vh; }
   .hero-home {
-    background-image: url("/images/West_Texas_1990_from_FB_60pct.jpg"); }
+    background-image: url("/images/hero_typing-writing_tint_1920x700_60pct.jpg"); }
 
 .container {
   display: table-cell;
@@ -489,6 +488,7 @@ nav {
     color: #fff;
     font-size: 1em;
     font-size: 1rem;
+    text-decoration: none;
     opacity: 0; }
   nav a:hover, nav a:active {
     color: #c8c8c8; }
