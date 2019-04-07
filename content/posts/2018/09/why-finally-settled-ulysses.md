@@ -8,7 +8,7 @@ author: Bryce Wray
 
 date: 2018-09-22T11:04:36-05:00
 
-lastmod: 2019-03-31T16:40:00-05:00
+lastmod: 2019-04-07T14:40:00-05:00
 
 draft: false
 
@@ -26,9 +26,13 @@ Well, that hasn’t happened, but at least now I **really** think I’ve got all
 
 <div style="border: 1px solid black; background-color: #ffffcc; padding: 0.5em; line-height: 1.3; margin: 1.5em auto;">
 
-<strong style="color: #000088;"><span style="font-variant: small-caps;">u p d a t e</span> : March 31, 2019</strong><br />
+<strong style="color: #000088;"><span style="font-variant: small-caps;">u p d a t e</span> : April 7, 2019</strong><br />
 &nbsp;<br />
-Lately, I’ve experienced repeated problems with Ulysses&rsquo;s ability to sync with iCloud, to the point of actually losing content; therefore, I’m now considering discontinuing my Ulysses subscription, which expires soon. However that decision goes, I will add a new post to explain it and detail what happened. I&rsquo;ll still leave <strong>this</strong> post active, not only for archival purposes but also because it doesn’t address Ulysses&rsquo;s (or Scrivener&rsquo;s) sync&rsquo;ing functionality one way or the other and, thus, its own points remain valid.
+As I mentioned a week ago, I'm debating whether to stick with Ulysses when my subscription expires soon, due to some difficulties I&rsquo;ve experienced with its ability to sync with iCloud, to the point of actually losing some content.<br />
+&nbsp;<br />
+<strong>However</strong> . . . because I <em>really</em> don&rsquo;t want to quit using an app which makes writing so enjoyable, I&rsquo;ve been &ldquo;stress-testing&rdquo; it in the last few days, writing a few thousand words&rsquo; worth of WIP content on all three of my Apple devices and then checking back and forth among them in the least &ldquo;careful&rdquo; way I could (so to speak), <em>trying</em> to provoke a glitch; and, throughout, it&rsquo;s been good as gold&mdash;just as it was once before.<br />
+&nbsp;<br />
+Thus, my decision remains in doubt. However it goes, at some point I will add a new post to explain it and detail what happened. I&rsquo;ll still leave <strong>this</strong> post active, not only for archival purposes but also because it doesn’t address Ulysses&rsquo;s (or Scrivener&rsquo;s) sync&rsquo;ing functionality one way or the other and, thus, its own points remain valid.
 
 </div>
 
@@ -50,7 +54,7 @@ Besides, this Scrivener app seemed to be all I could ever want, and it was going
 
 As the months went by, I kept toiling in Scrivener on my work in progress (WIP).  Such as it was. [Sigh.] However, much as I had done in trying to figure out which mail client to use on Mac and iOS—yet another story for another day—I started to waver in my estimation of whether Scrivener was the wisest choice for me. This was troubling, especially considering how much I liked the care and thinking behind it and greatly admired how obviously it was a labor of love for the [small but dedicated team behind it](https://www.literatureandlatte.com/about-us) (especially Keith Blount, who taught himself to program so he could create it and is still its chief developer).
 
-So, once again, I began researching writing software. But this time, I had a better idea of what I needed. I needed more simplicity, yet I still needed most of the organizational power of Scrivener. In the end, it came down to Ulysses. I downloaded the software and subscribed _well_ before the expiration of the trial period; it was so clearly a fit.
+So, once again, I began researching writing software. But this time, I had a better idea of what I needed. The siren song of simplicity, in the form of Ulysses, wailed at me from the rocks. I knew I still needed most of the organizational power of Scrivener; but the Ulysses fans proclaimed that Scrivener simply had too many bells and whistles. Ulysses is _pure_. Just write. You don’t need all that other stuff. So, indeed, I downloaded Ulysses on my Mac and iOS devices, and subscribed _well_ before the expiration of the trial period; it was so clearly a fit.
 
 Do I regret having Scrivener? Absolutely not! I still use it from time to time, and occasionally have cast a longing eye back toward it and switched stuff from Ulysses to it. But—at least so far—I keep switching back. And I really think I’m gonna stick with Big U this time. I’ll explain why below. _N.B.: I don’t give a flip one way or the other about subscriptions, so long as it’s something I need and will use. Ulysses easily passes that test. So I won’t engage in **that** holy war. Fought and done, as far as I’m concerned._
 
