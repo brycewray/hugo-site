@@ -130,7 +130,7 @@ Hugo "knows" that the *content* subdirectory within *mysite* is, in essence, the
 
 You can edit this and any other Markdown file with a plain-text editor, which every OS includes free of charge, or any of the many great Markdown apps out there (some of which also are free of charge, or very nearly so). When you want to add content, just create a new Markdown file in the *content* subdirectory. Until you're comfortable with setting up the Hugo front matter, you can simply create each file with Hugo itself as described in this step[^draft] and then edit it separately with your chosen text editor. Also, I'd suggest creating some sort of logical structure to make things easier for both you and your visitors to find---for example, I arrange my posts according to year and month, as you can see in this page's URL---but that's totally up to you.
 
-[^draft]: The default for this method of content creation is that the file will be a **draft**, which means it might not necessarily show up when you run Hugo's server as described in STEP 5. To get around that, just set the front matter's *draft* parameter to *false* (assuming you're ready for that content to be visible!).
+[^draft]: The default for this method of content creation is that the file will be a **draft**, which means it might not necessarily show up when you run Hugo's server as described in **STEP 5**. To get around that, just set the front matter's *draft* parameter to *false* (assuming you're ready for that content to be visible!).
 
 ### STEP 5: Start the Hugo server.
 
