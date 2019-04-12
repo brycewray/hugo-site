@@ -79,7 +79,7 @@ Now that your Hugo site's files are out in a remote repo and you have a domain f
 
 ### Step 6f: Put the site on Netlify
 
-[Netlify](https://www.netlify.com) hosts SSG sites for free on a highly advanced, eerily fast, [CDN](https://www.webopedia.com/TERM/C/CDN.html)-driven setup and makes it extremely easy to get your content from your remote repo to a real, live website, especially once you've completed the setup I'm about to describe.
+[Netlify](https://www.netlify.com) hosts SSG sites for free on a highly advanced, eerily fast, [CDN](https://www.webopedia.com/TERM/C/CDN.html)-driven setup and makes it extremely easy to get your content from your remote repo to a real, live Web site, especially once you've completed the setup I'm about to describe.
 
 The first thing to do is [set up a free Netlify account](https://app.netlify.com/signup). Choose to do it through your newly created Bitbucket account, which will make the rest of this even easier. When Bitbucket prompts you to **authorize** Netlify to use it, let it do so.
 
