@@ -10,8 +10,8 @@
 </h2>
 
 <p class="text-muted text-sans-serif ctr">
-  Published: {{ .Date.Format "January 2, 2006"  }}<br /><span style="font-size: 85%;">
-  {{- if ne .Date .Lastmod }}
+  Published: {{ .PublishDate.Format "January 2, 2006"  }}<br /><span style="font-size: 85%;">
+  {{- if ne .PublishDate .Lastmod }}
     Last modified: {{ .Lastmod.Format "January 2, 2006" }}
   {{- else }}
     &nbsp;
@@ -44,7 +44,7 @@
   
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark">
-      <h3 class="ctr wht"><a href="/posts/">Other posts</a></h3>
+      <h3 class="ctr wht"><a href="/posts/" style="border-bottom: 0;">Other posts</a></h3>
       <div class="container container-other-posts">
         <div class="column-left-end">
           {{ with .PrevInSection }}

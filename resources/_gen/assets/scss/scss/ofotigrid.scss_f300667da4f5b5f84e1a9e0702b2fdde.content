@@ -53,13 +53,17 @@ h5, .h5, h6, .h6 {
   font-size: 1.25rem; }
 
 a, a:focus, a:hover, a:active {
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: 1px solid #0088ff; }
 
 a {
   color: #0088ff; }
 
 a:focus, a:hover, a:active {
   color: #000088; }
+
+sup a, a.previous, a.next, .footnote-return {
+  border-bottom: 0; }
 
 blockquote {
   border-left: 0.25em solid #c8c8c8;
@@ -224,6 +228,8 @@ h3.twitter-border {
   padding: 0.5em 0 0 0;
   padding: 0.5rem 0 0 0;
   border-top: 2px solid #0088ff; }
+  h3.twitter-border a {
+    border-bottom: 0; }
 
 img.featured-image {
   display: block;
@@ -489,9 +495,11 @@ nav {
     font-size: 1em;
     font-size: 1rem;
     text-decoration: none;
+    border-bottom: 0;
     opacity: 0; }
   nav a:hover, nav a:active {
-    color: #c8c8c8; }
+    color: #c8c8c8;
+    border-bottom: 0; }
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1); }
@@ -505,9 +513,12 @@ nav {
   margin-top: 0.2em;
   margin-left: 5%; }
   .site-logo a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 0; }
   .site-logo a:active, .site-logo a:hover {
-    color: #c8c8c8; }
+    color: #c8c8c8;
+    border-bottom: 0; }
 
 @media screen and (min-width: 900px) {
   .nav-toggle-label {
@@ -635,3 +646,5 @@ pre code {
   align-self: end;
   margin-bottom: 0.5em;
   margin-bottom: 0.5rem; }
+  .card-btn-bottom a {
+    border-bottom: 0 !important; }

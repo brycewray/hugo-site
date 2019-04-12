@@ -8,10 +8,9 @@
     &nbsp;
   {{- end }}
 </h2>
-
 <p class="text-muted text-sans-serif ctr">
   Published: {{ .Date.Format "January 2, 2006"  }}<br /><span style="font-size: 85%;">
-  {{- if ne .Date .Lastmod }}
+  {{- if ne .PublishDate .Lastmod }}
     Last modified: {{ .Lastmod.Format "January 2, 2006" }}
   {{- else }}
     &nbsp;

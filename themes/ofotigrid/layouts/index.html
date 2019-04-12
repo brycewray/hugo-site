@@ -11,16 +11,16 @@
     <h2 class="h1" style="margin-bottom: 1.5rem;">Latest posts</h2>
     {{ range first 2 (where .Pages "Section" "posts") }}				
       <div>          
-        <a href="{{ .RelPermalink }}">
+        
           <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
           <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
           <p class="pokey text-body">
             {{ .Summary }}
             {{ if .Truncated }}<br />
-              <strong class="text-link text-sans-serif">Read more&nbsp;.&nbsp;.&nbsp;.</strong>
+              <strong class="text-link text-sans-serif"><a href="{{ .RelPermalink }}">Read more&nbsp;.&nbsp;.&nbsp;.</a></strong>
             {{ end }}
           </p>
-        </a>
+        
       </div>
     {{ end }}
     <p class="text-sans-serif"><a href="/posts/"><strong>All posts</strong></a></p>

@@ -62,4 +62,7 @@ $card-border-radius: calc(0.5em - 1px);
   align-self: end;
   margin-bottom: 0.5em; // old browsers
   margin-bottom: 0.5rem;
+  a {
+    border-bottom: 0 !important;
+  }
 }

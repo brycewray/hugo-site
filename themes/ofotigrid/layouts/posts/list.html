@@ -6,7 +6,7 @@
         <div class="container-posts-cards">
                {{ range first 2 (where .Pages "Section" "posts") }}
                <div class="column ctr">
-                <a href="{{ .RelPermalink }}">
+                
                     <div class="card">
                         {{- if isset .Params "featured_image" }}
                         <img class="card-img-top card-img-crop"  src="{{ index .Params "featured_image" }}" alt="{{ .Title }}">
@@ -18,27 +18,27 @@
                         </div>
                         {{ if .Truncated }}
                             <div class="card-btn-bottom">
-                                <button type="button" class="btn btn-primary pokey">Read more</button>
+                                <a href="{{ .RelPermalink }}"><button type="button" class="btn btn-primary pokey">Read more</button></a>
                             </div>
                         {{ end }}
                     </div>
-                </a>
+                
             </div>
             {{ end }}
         </div>
 
         {{ range after 2 (where .Pages "Section" "posts") }}				
         <div class="container-narrower">          
-        <a href="{{ .RelPermalink }}">
+        
             <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
             <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
             <p class="pokey text-body">
             {{ .Summary }}
             {{ if .Truncated }}
-                <strong class="text-link text-nowrap text-sans-serif">Read more&nbsp;.&nbsp;.&nbsp;.</strong>
+                <a href="{{ .RelPermalink }}"><strong class="text-link text-nowrap text-sans-serif">Read more&nbsp;.&nbsp;.&nbsp;.</strong></a>
             {{ end }}
             </p>
-        </a>
+        
         </div>
         {{ end }}
         <div class="teeny ctr" style="margin-top: 3rem;">

@@ -1,17 +1,18 @@
-<header>
-  <h1 class="site-logo"><a href="{{ "/" | relURL}}">{{.Site.Title}}</a></h1>
-  <input type="checkbox" id="nav-toggle" class="nav-toggle">
-  <nav>
-    <ul>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-        <li>
-          <a href="{{ .URL | relURL }}" title="{{ .Title }}">{{ .Name }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-    <span></span>
-  </label>
-</header>
+
+    <header>
+      <h1 class="site-logo"><a href="{{ "/" | relURL}}">{{.Site.Title}}</a></h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ .URL | relURL }}" title="{{ .Title }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>

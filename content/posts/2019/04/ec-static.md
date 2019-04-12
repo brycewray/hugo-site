@@ -10,6 +10,8 @@ author: Bryce Wray
 
 date: 2019-04-07T14:00:00-05:00
 
+lastmod: 2019-04-11T19:35:00-05:00
+
 #final_date: 2019-04-07T14:00:00-05:00
 
 draft: false # note!
@@ -65,6 +67,18 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 - Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the ```text that looks like this``` in the entry; **don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown---no more, no less.
 
 ### STEP 1: Install Hugo.
+
+<div style="border: 1px solid black; background-color: #ffffcc; padding: 0.5em; line-height: 1.3; margin: 1.5em auto;">
+
+<strong style="color: #000088;"><span style="font-variant: small-caps;">u p d a t e</span> : April 11, 2019</strong><br />
+&nbsp;<br />
+Before you follow the instructions within, please be advised that the latest version of Hugo, 0.55.0, <a href="https://gohugo.io/news/0.55.0-relnotes/" target="_blank">released since my initial publication of this post</a>, seems to be buggier than these versions have typically been. For example, I had to <a href="https://discourse.gohugo.io/t/hugo-0-55-0-date-appears-as-january-1-0001/18029" target="_blank">do some slightly weird things</a> (long story) to get my &ldquo;About&rdquo; page to show the correct publish/last-modified dates instead of &ldquo;January 1, 0001.&rdquo;<br />
+<br />
+So, while I still heartily advocate choosing Hugo as your SSG, <strong>either</strong> give it a few days and let things settle <strong>or</strong> use the previous version, 0.54.0, which didn&rsquo;t have these bugs. In order to do the latter, you&rsquo;ll need to forego <strong>STEP 1</strong> and, instead, download  the <a href="https://github.com/gohugoio/hugo/releases/tag/v0.54.0" target="_blank">0.54.0 binary</a>, decompress (&ldquo;unzip&rdquo;) its contents, and move the enclosed <em>hugo</em> file (<em>hugo.exe</em> for Windows) to a location in your system&rsquo;s <a href="https://pureinfotech.com/list-environment-variables-windows-10/" target="_blank">path</a>&mdash;for example, <em>C:\</em> for Windows or <em>/usr/local/bin</em> for Mac/Linux. The reason you have to do it this way is to circumvent the package installer app&rsquo;s default selection, which is the most current version.<br />
+<br />
+Given those two choices, I&rsquo;d wait.
+
+</div>
 
 #### Step 1 for Mac/Linux
 

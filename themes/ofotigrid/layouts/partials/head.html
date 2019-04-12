@@ -4,13 +4,11 @@
         
     {{ template "_internal/google_analytics.html" . }}
     
-    <link href="https://micro.blog/BryceWrayTX" rel="me" />
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {{- if eq .URL "/" }}
+    {{- if .IsHome }}
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta property="og:description" content="{{ .Site.Params.Description }}" />
     {{- else if isset .Params "description" }}
@@ -26,7 +24,7 @@
     {{- end }}
 
 
-    {{- if eq .URL "/" }}
+    {{- if .IsHome }}
     <title>{{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Site.Title }}" />
     {{- else }}
@@ -55,7 +53,7 @@
     {{ else }}
       <meta name="twitter:description" content="{{ .Description }}" />
       <meta name="twitter:title" content="{{ .Site.Title }}" />
-      <meta name="twitter:image" content="{{ .Site.BaseURL }}images/West_Texas_1990_from_FB_60pct.jpg" />
+      <meta name="twitter:image" content="{{ .Site.BaseURL }}images/hero_typing-writing_tint_1920x700_60pct.jpg" />
     {{ end }}
 
     <!-- Favicon -->
@@ -64,10 +62,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL}}images/apple-touch-icon.png">
 
     <!-- RSS -->
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
   
   </head>

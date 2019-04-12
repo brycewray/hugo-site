@@ -64,6 +64,7 @@ h5, .h5, h6, .h6 {
 
 a, a:focus, a:hover, a:active {
   text-decoration: none;
+  border-bottom: 1px solid $blue;
   // text-decoration-skip-ink: auto;
 }
 
@@ -73,6 +74,10 @@ a {
 
 a:focus, a:hover, a:active {
   color: $darkblue;
+}
+
+sup a, a.previous, a.next, .footnote-return {
+  border-bottom: 0;
 }
 
 blockquote {

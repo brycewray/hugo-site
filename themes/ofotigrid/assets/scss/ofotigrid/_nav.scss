@@ -80,11 +80,13 @@ nav {
     font-size: $stdsize + unquote("rem");
     // text-decoration-skip-ink: none;
     text-decoration: none;
+    border-bottom: 0;
     opacity: 0;
     // transition: opacity 150ms ease-in-out;
   }
   a:hover, a:active {
     color: $grey-2;
+    border-bottom: 0;
   }
 }
 
@@ -100,10 +102,12 @@ nav {
   a {
     color: #fff;
     // text-decoration-skip-ink: none;
-    // text-decoration: none;
+    text-decoration: none;
+    border-bottom: 0;
   }
   a:active, a:hover {
     color: $grey-2;
+    border-bottom: 0;
   }
   font-size: $minimalbig + unquote("em"); // old browsers
   font-size: $minimalbig + unquote("rem");
