@@ -1,6 +1,45 @@
 {{ define "main" }}
-<div class="container">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-</div>
+<h1 class="ctr" style="margin-top: 0.5em; margin-bottom: 0.25em;">{{ .Title | markdownify}}</h1>
+
+<h2 class="ctr h4" style="margin-top: 0;">
+  {{- if .Params.Subtitle }}
+    {{ .Params.Subtitle | markdownify }}
+  {{- else }}
+    &nbsp;
+  {{- end }}
+</h2>
+<p class="text-muted text-sans-serif ctr">
+  Published: {{ .Date.Format "January 2, 2006"  }}<br /><span style="font-size: 85%;">
+  {{- if ne .PublishDate .Lastmod }}
+    Last modified: {{ .Lastmod.Format "January 2, 2006" }}
+  {{- else }}
+    &nbsp;
+  {{- end }}
+  </span>
+</p>
+
+<div class="post-line"></div> 
+
+{{- if isset .Params "featured_image" }}
+  <img src="{{ index .Params "featured_image" }}" class="img-fluid featured-image">
+  {{- if isset .Params "featured_image_caption" }}
+    <p class="featured-image-caption">{{ index .Params "featured_image_caption" }}</p>
+  {{- end }}
+{{- end }}
+
+<div class="container-narrower">
+    <article class="article">
+      {{ .Content }}
+    </article>
+  </div>
+
+  <div class="container container-comments">
+      <p>&nbsp;</p>
+      <!-- Comments code -->
+      <script data-isso="https://comments.comment.sh/brycewray-com" src="https://comments.comment.sh/brycewray-com/js/embed.min.js"></script>
+      <section id="isso-thread"></section>
+      <!-- end, Comments code -->
+    </div>
+  
+
 {{ end }}
