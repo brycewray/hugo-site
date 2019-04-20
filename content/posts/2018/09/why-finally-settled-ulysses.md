@@ -8,7 +8,7 @@ author: Bryce Wray
 
 date: 2018-09-22T11:04:36-05:00
 
-lastmod: 2019-04-07T14:40:00-05:00
+lastmod: 2019-04-20T11:17:00-05:00
 
 draft: false
 
@@ -24,17 +24,11 @@ As I write this in late September, 2018, it’s a little over a year since I beg
 
 Well, that hasn’t happened, but at least now I **really** think I’ve got all my plot holes figured out. Still, that’s not why I’m writing this.
 
-<div style="border: 1px solid black; background-color: #ffffcc; padding: 0.5em; line-height: 1.3; margin: 1.5em auto;">
+<hr />
 
-<strong style="color: #000088;"><span style="font-variant: small-caps;">u p d a t e</span> : April 7, 2019</strong><br />
-&nbsp;<br />
-As I mentioned a week ago, I'm debating whether to stick with Ulysses when my subscription expires soon, due to some difficulties I&rsquo;ve experienced with its ability to sync with iCloud, to the point of actually losing some content.<br />
-&nbsp;<br />
-<strong>However</strong> . . . because I <em>really</em> don&rsquo;t want to quit using an app which makes writing so enjoyable, I&rsquo;ve been &ldquo;stress-testing&rdquo; it in the last few days, writing a few thousand words&rsquo; worth of WIP content on all three of my Apple devices and then checking back and forth among them in the least &ldquo;careful&rdquo; way I could (so to speak), <em>trying</em> to provoke a glitch; and, throughout, it&rsquo;s been good as gold&mdash;just as it was once before.<br />
-&nbsp;<br />
-Thus, my decision remains in doubt. However it goes, at some point I will add a new post to explain it and detail what happened. I&rsquo;ll still leave <strong>this</strong> post active, not only for archival purposes but also because it doesn’t address Ulysses&rsquo;s (or Scrivener&rsquo;s) sync&rsquo;ing functionality one way or the other and, thus, its own points remain valid.
+***Note:*** *Please see the update from April 20, 2019, at the end of this post.*
 
-</div>
+<hr />
 
 ## Holy wars? Holy .&nbsp;.&nbsp;.
 
@@ -85,6 +79,16 @@ I don’t mean to cast shade on Scrivener and the wonderful people at L&amp;L. T
 As [David Hewson](https://davidhewson.com) [puts it so well](https://davidhewson.com/2017/08/13/five-reasons-i-use-ulysses/):
 
 > Ulysses is about text on the page. Yes, you can do lots of clever things with tagging and stuff if you want (and I do when it’s necessary). But at its heart Ulysses works like a very clever digital typewriter. Clear the decks of all the frills, the folders, the styles, the agonising over whether to write in Avenir or Helvetica. Get all that out of the way and just write. What you see is what the eventual reader will see. In essence Ulysses is extremely simple. Once you get your head around the basics you can forget about software and focus on the hard bit — saying what you want to say and saying it well. There are no distractions, and that’s a wonderful thing because writers tend to hunt for distractions all the time. It’s easier puzzling over them than getting down to the real job in hand.[^3]
+
+<br />
+<hr />
+<br />
+
+#### *Update, April 20, 2019*
+
+*After a few weeks of trying to find a way around it, I am no longer using Ulysses, as explained in "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)." However, I'll still leave* ***this*** *post active, not only for archival purposes but also because it doesn't address Ulysses's (or Scrivener's) sync'ing functionality one way or the other and, thus, its own points remain valid.*
+
+<br />
 
 [^1]:	I’ll save it from a Ulysses “sheet” to an .md file in an appropriate part of my Hugo site’s “posts” directory and, therefore, convert it into this Web page.
 

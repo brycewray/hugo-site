@@ -12,7 +12,7 @@ date: 2019-03-08T22:08:00-06:00
 
 #final_date: 2019-03-08T21:05:00-06:00
 
-lastmod: 2019-03-22T14:09:00-05:00
+lastmod: 2019-04-14T17:15:00-05:00
 
 draft: false # note!
 
@@ -28,7 +28,7 @@ featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 Before summer, 2015, if you'd asked me what Markdown was, I'd have said, "Cutting the price on a product, of course." And I wouldn't have been kidding, either.
 
-My first encounter with the Markdown I'll discuss herein was part of an interview process for a Web development job. The hiring manager sent me an email with the URL of a [Github](https://github.com) repository where I'd find several programming puzzles, accompanied by explanatory text files. I expected to find *readme.txt* and that sort of thing.
+My first encounter with the Markdown I'll discuss herein was part of an interview process for a Web development job. The hiring manager sent me an email with the URL of a [GitHub](https://github.com) repository where I'd find several programming puzzles, accompanied by explanatory text files. I expected to find *readme.txt* and that sort of thing.
 
 Instead, there were .md files.
 
