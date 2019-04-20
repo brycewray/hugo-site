@@ -11,6 +11,8 @@ enableRobotsTXT = true
 [params]
     Author = "Bryce Wray"
     Description = "Bryce Wray’s Web site — observations and opinions"
+    talkyardServerUrl = "https://comments-for-brycewray-com.talkyard.net"
+    talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 
 [blackfriday]
     hrefTargetBlank = true

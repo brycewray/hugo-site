@@ -427,6 +427,9 @@ img.postsFeatImg {
     .disclaimer-portfolio {
       margin: 1em 17.5% 1em 17.5%; } }
 
+.talkyard-comments {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
 header {
   height: 30px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

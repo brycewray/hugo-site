@@ -35,12 +35,17 @@
   </div>
 
   <div class="container container-comments">
-      <p>&nbsp;</p>
-      <!-- Comments code -->
-      <script data-isso="https://comments.comment.sh/brycewray-com" src="https://comments.comment.sh/brycewray-com/js/embed.min.js"></script>
-      <section id="isso-thread"></section>
-      <!-- end, Comments code -->
+    <p>&nbsp;</p>
+    <!-- Comments code -->
+    <script>talkyardServerUrl='{{ .Site.Params.talkyardServerUrl }}';</script>
+    <script async defer src="{{ .Site.Params.talkyardScriptUrl }}"></script>
+    <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
+    <div class="talkyard-comments" data-discussion-id="{{ .Params.discussionId }}" style="margin-top: 3em;">
+      <noscript>Please enable Javascript to view comments.</noscript>
+      <!-- commenting this out because it's in the footer -- <p class="legal text-muted" style="margin-top: 2em;">Comments powered by <a href="https://www.talkyard.io">Talkyard</a>.</p>-->
     </div>
+    <!-- end, Comments code -->
+  </div>
   
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark">
