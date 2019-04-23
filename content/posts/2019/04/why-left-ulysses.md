@@ -12,7 +12,7 @@ date: 2019-04-20T11:17:00-05:00
 
 finaldate: 2019-04-20T11:17:00-05:00
 
-#lastmod: TBD
+lastmod: 2019-04-23T03:50:00-05:00
 
 draft: false # note!
 
@@ -146,9 +146,9 @@ But it was hard to let go. Even as late as a couple of weeks ago, I found myself
 
 And, almost as if it had gotten the message, Ulysses was good as gold across my devices---until this morning.
 
-Then, after doing some WIP edits in Ulysses on my iPad last night and confirming that they'd transferred smoothly and nearly instantaneously over to the iPhone across iCloud, I opened up Ulysses on the Mac this morning so I could copy the latest edits over to iA Writer just to be safe, as I've done throughout this "stress test."
+Then, after doing some WIP edits in Ulysses on my iPad last night and confirming that they'd transferred smoothly and nearly instantaneously over to the iPhone across iCloud, I opened up Ulysses on the Mac so I could copy the latest edits over to iA Writer just to be safe, as I've done throughout this "stress test."
 
-Last night's edits weren't there; the last stuff there was from the night before last, my most recent editing session on the Mac. I waited. And waited. I wasn't about to touch anything at this point, lest I cause any conflicts. Finally, nearly *five minutes later*, the newest edits began popping up on the Mac, **except** that their timestamps were from they appeared in the Mac version, **not** when I'd actually last edited them.
+Last night's edits weren't there; the last stuff there was from the night before last, my most recent editing session on the Mac. I waited. And waited. I wasn't about to touch anything at this point, lest I cause any conflicts. Finally, nearly *five minutes later*, the newest edits began popping up on the Mac, **except** that their timestamps were from right that moment, when they'd appeared in the Mac version, **not** when I'd actually last edited them.
 
 I just sat there a minute, thinking about what I'd just witnessed and what it meant. Finally, I muttered, quietly and sadly, "Well, sir, that's all she wrote." I got those files safely copied over to iA Writer and---for the last time---closed Ulysses.
 
