@@ -7,10 +7,10 @@ $grey-2: #c8c8c8;
 $grey-3: #f9f9f9;
 $white: #fff;
 $black: #000;
-$blue: #0088ff;
+$blue: #0033ff; // was 0088ff but that's not sufficient contrast for accessibility
 $darkblue: #000088;
 $shadow-color: rgba(0, 0, 0, .2);
-$code-color: #00aa22;
+$code-color: #006600; // was 00aa22 but that's not sufficient contrast for accessibility
 
 // Typography
 $sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
