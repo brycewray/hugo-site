@@ -12,6 +12,8 @@ date: 2019-04-11T19:00:00-05:00
 
 #final_date: 2019-04-14T14:00:00-05:00
 
+lastmod: 2019-04-27T17:53:00-05:00
+
 draft: false # note!
 
 actual_path: /content/posts/2019/04/publish-or-perish
@@ -30,7 +32,7 @@ This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you
 
 ## Keepin' it easy: Go GUI
 
-First, let me harken back to another [previous post](/posts/2018/10/version-control-follies) in which I described how I manage this site through a great [Atlassian](https://atlassian.com) app called [Sourcetree](https://www.sourcetreeapp.com). Quick summary thereof: yes, you **can** use [Git](https://gitscm.com) commands in a command-line interface app to do what I'm going to describe, but there's no real need for it as long as there are user-friendly [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [version-control](https://en.wikipedia.org/wiki/Graphical_user_interface) apps like Sourcetree that let you point and click your way to the same final result.
+First, let me harken back to another [previous post](/posts/2018/10/version-control-follies) in which I described how I manage this site through a great [Atlassian](https://atlassian.com) app called [Sourcetree](https://www.sourcetreeapp.com). Quick summary thereof: yes, you **can** use [Git](https://gitscm.com) commands in a command-line interface app to do what I'm going to describe, but there's no real need for it as long as there are user-friendly [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [version-control](https://www.atlassian.com/git/tutorials/what-is-version-control) apps like Sourcetree that let you point and click your way to the same final result.
 
 (Please note that Sourcetree is available only for Windows and macOS, so you Linux users---assuming you aren't already familiar with your Linux distro's Terminal app and Git anyway, which frankly is not that likely, but one never knows---will need to use a [different GUI app](https://www.tecmint.com/best-gui-git-clients-git-repository-viewers-for-linux/) to accomplish this.)
 
