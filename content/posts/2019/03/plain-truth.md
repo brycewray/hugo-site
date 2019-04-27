@@ -12,7 +12,7 @@ date: 2019-03-02T16:00:00-06:00
 
 date: 2019-03-02T16:00:00-06:00
 
-lastmod: 2019-03-30T15:45:00-05:00
+lastmod: 2019-04-27T06:38:00-05:00
 
 draft: false # note!
 
@@ -32,7 +32,7 @@ It's not any *good*, mind you, but I have it.
 
 Whether we're talking about an op-ed I wrote in a school newspaper or a pitiful attempt my almost-fourteen-year-old self made at a novel in the ensuing summer of &rsquo;69, the now-dingy sheets of typing paper on which they exist have long since seen their better days, but I can read them again any time I want.
 
-Will today's kids will be able to say that in 2069 about things they're writing now? For that matter: will *you* will be able to say it in *2029* about *your* current work?
+Will today's kids be able to say that in 2069 about things they're writing now? For that matter: will *you* be able to say it in *2029* about *your* current work?
 
 Exaggeration? Perhaps. But think about it.
 
@@ -40,7 +40,7 @@ Exaggeration? Perhaps. But think about it.
 
 Let's say you still have a file from something you wrote in the early 1980s on the original, [MS-DOS](https://www.whoishostingthis.com/resources/ms-dos/) version of [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)[^Scripsit], introduced in 1983 and hailed at the time for how [WYSIWYG](https://whatis.techtarget.com/definition/WYSIWYG-what-you-see-is-what-you-get) it was.[^WYSIWYG]
 
-First of all, hats off on your diligence over the years, not to mention extraordinary defiance of the odds, in safely moving those files as storage realities evolved: from their original 5.25-inch floppy disks to 3.5-inch microfloppies to multiple hard drives on multiple computers (and perhaps a CD-ROM or DVD-ROM along the way), and finally to the *probable* safety of The Cloud.[^disks] You should be out buying lottery tickets, or playing the slots in Las Vegas, instead of wasting your time reading this.
+First of all, hats off on your diligence over the years, not to mention extraordinary defiance of the odds, in safely moving such files as storage realities evolved: from their original 5.25-inch floppy disks to 3.5-inch microfloppies to multiple hard drives on multiple computers (and perhaps a CD-ROM or DVD-ROM along the way), and finally to the *probable* safety of The Cloud.[^disks] You should be out buying lottery tickets, or playing the slots in Las Vegas, instead of wasting your time reading this.
 
 But, back to my point: what can you do with that 1980s Word .doc file *today*?
 
