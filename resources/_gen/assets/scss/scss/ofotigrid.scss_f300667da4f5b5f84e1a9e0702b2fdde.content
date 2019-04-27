@@ -565,7 +565,7 @@ code {
 code {
   background-color: #f9f9f9;
   border-radius: 3px;
-  color: #006600;
+  color: #006400;
   font-size: 85%;
   padding: .25em .5em; }
 
