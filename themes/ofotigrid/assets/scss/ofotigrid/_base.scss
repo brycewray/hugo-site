@@ -74,6 +74,7 @@ a {
 
 a:focus, a:hover, a:active {
   color: $darkblue;
+  border-bottom: 1px solid $blueFirst;
 }
 
 sup a, a.previous, a.next, .footnote-return {

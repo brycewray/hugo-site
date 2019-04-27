@@ -20,6 +20,8 @@ draft: false
 
 featured_image: /images/question-mark-over-mac-keyboard-49958_1280_crop_1280x780_60pct.jpg
 
+featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
+
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon 
 
 ---

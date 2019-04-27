@@ -20,6 +20,8 @@ final_url: posts/2018/10/web-typography-part-1/
 
 featured_image: /images/letters-691842_1280_60pct.jpg
 
+featured_image_alt: Letters for old-style typesetting
+
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---
@@ -46,11 +48,11 @@ By “easily readable,” I mean:
 
 But, rather than rant aimlessly, let me show you some examples of sins against either or both of these principles of Web typography. They were current as of when I originally posted this.
 
-{{< figure src="/images/Typography-scr-cap-2-2018-10-16.jpg"  width="672px" >}}
+{{< figure src="/images/Typography-scr-cap-2-2018-10-16.jpg"  width="672px" alt="Thin and dim text that is hard to read" >}}
 
-{{< figure src="/images/Typography-scr-cap-3-2018-10-16.jpg"  width="699px" >}}
+{{< figure src="/images/Typography-scr-cap-3-2018-10-16.jpg"  width="699px" alt="More thin and dim text that is hard to read" >}}
 
-{{< figure src="/images/Typography-scr-cap-4-2018-10-16.jpg" width="699px" >}}
+{{< figure src="/images/Typography-scr-cap-4-2018-10-16.jpg" width="699px" alt="Still more thin and dim text that is hard to read" >}}
 
 We can do better, friends.
 

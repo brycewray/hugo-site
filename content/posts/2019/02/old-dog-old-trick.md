@@ -22,6 +22,8 @@ final_url: posts/2019/02/old-dog-old-trick
 
 featured_image: /images/dog-2514968_1920x1080_72dpi_60pct.jpg
 
+featured_image_alt: Face of an old dog
+
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---

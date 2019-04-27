@@ -22,6 +22,8 @@ final_url: posts/2019/04/why-left-ulysses
 
 featured_image: /images/hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct.jpg
 
+featured_image_alt: Hand releases a butterfly (which is the Ulysses logo)
+
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---
@@ -56,7 +58,7 @@ At the beginning, I wished only to make blogging a little less tedious.
 
 I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-io/) [time](/posts/2019/02/old-dog-old-trick) over the  last few months that I was experimenting with other [Markdown](https://daringfireball.net/projects/markdown/) editors. While I still enjoyed writing this site's posts in Ulysses, I'd wearied of the write-export-write-export dance it required because the native Ulysses file format is proprietary, not the standalone Markdown (.md) needed by my [static site generator](https://www.staticgen.com) of choice, [Hugo](https://gohugo.io). Thus, I was trying writing apps that saved *natively* to Markdown without needing to export.[^preview]
 
-{{< figure src="/images/Ulysses_export_to_Markdown.png" caption="Ulysses's Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files." >}}
+{{< figure src="/images/Ulysses_export_to_Markdown.png" caption="Ulysses's Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files." alt="Screen capture of Quick Export feature of Ulysses app" >}}
 
 [^preview]: Sometimes there are disparities between the original Markdown files and how they translate to HTML, so it's best to catch those in a local instance before you publish to the real site, and thus I was having to do that "dance" quite often during the editing process.
 
@@ -82,7 +84,7 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-{{< figure src="/images/iCloud_sync-save_icon_in_Ulysses.png" caption="When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem." >}}
+{{< figure src="/images/iCloud_sync-save_icon_in_Ulysses.png" caption="When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem." alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" >}}
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
 
@@ -174,7 +176,7 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-{{< figure src="/images/iA_Writer_on_why-left-ulysses_post.png" caption="Ladies and gentlemen, the winner (for now): iA&nbsp;Writer." >}}
+{{< figure src="/images/iA_Writer_on_why-left-ulysses_post.png" caption="Ladies and gentlemen, the winner (for now): iA&nbsp;Writer." alt="Screen capture from iA Writer app" >}}
 
 *For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW]---and that's high praise, because each of those is outstanding in its own way.
 

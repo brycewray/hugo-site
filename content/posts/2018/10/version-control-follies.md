@@ -20,6 +20,8 @@ final_url: posts/2018/10/version-control-follies/
 
 featured_image: /images/Sourcetree-screen-shot_1512px_60pct.jpg
 
+featured_image_alt: Screen capture of Sourcetree software
+
 ---
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don’t feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving Web pages are much better now, and are continuing to improve.

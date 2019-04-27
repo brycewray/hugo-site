@@ -22,6 +22,8 @@ final_url: posts/2018/11/some-curmudgeonish-thoughts/
 
 featured_image: /images/brain-1300479_1280_60pct.jpg
 
+featured_image_alt: Cartoonish art depicting ancient myths about which parts of the brain stored which kinds of thoughts
+
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---

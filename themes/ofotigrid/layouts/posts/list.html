@@ -9,7 +9,7 @@
                 
                     <div class="card">
                         {{- if isset .Params "featured_image" }}
-                        <img class="card-img-top card-img-crop"  src="{{ index .Params "featured_image" }}" alt="{{ .Title }}">
+                        <img class="card-img-top card-img-crop"  src="{{ index .Params "featured_image" }}" alt="{{ index .Params "featured_image_alt" }}">
                         {{- end }}
                         <div class="card-body">
                             <h2 class="card-title h4" style="margin-bottom: 0;">{{ .Title }}</h2>

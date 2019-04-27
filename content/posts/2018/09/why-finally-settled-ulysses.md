@@ -18,6 +18,8 @@ final_url: posts/2018/09/why-finally-settled-ulysses/
 
 featured_image: /images/Ulysses-Preferences-General-screen-shot_60pct.jpg
 
+featured_image_alt: Screen capture - Ulysses app preferences window
+
 ---
 
 As I write this in late September, 2018, it’s a little over a year since I began writing a novel I really, truly thought I’d have finished by now.

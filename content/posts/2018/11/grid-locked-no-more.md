@@ -22,6 +22,8 @@ final_url: posts/2018/11/grid-locked-no-more/
 
 featured_image: /images/hairpin-turn-sign-94966_1280x719_72dpi_60pct.jpg
 
+featured_image_alt: Road sign - hairpin turn three thousand feet ahead
+
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---

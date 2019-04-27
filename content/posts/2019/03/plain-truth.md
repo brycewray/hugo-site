@@ -22,6 +22,8 @@ final_url: posts/2019/03/plain-truth
 
 featured_image: /images/typewriter-1031024_1280x853_60pct.jpg
 
+featured_image_alt: A very old Royal-brand typewriter
+
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---

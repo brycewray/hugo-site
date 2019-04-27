@@ -8,7 +8,8 @@ $grey-3: #f9f9f9;
 $white: #fff;
 $black: #000;
 $blue: #0033ff; // was 0088ff but that's not sufficient contrast for accessibility
-$darkblue: #000088;
+$blueFirst: #0088ff; // Will use as a hover color only
+$darkblue: #0000aa;
 $shadow-color: rgba(0, 0, 0, .2);
 $code-color: #006600; // was 00aa22 but that's not sufficient contrast for accessibility
 
