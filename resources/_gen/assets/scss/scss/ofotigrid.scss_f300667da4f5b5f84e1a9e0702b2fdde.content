@@ -514,6 +514,7 @@ nav {
   color: #fff;
   font-size: 1.15em;
   font-size: 1.15rem;
+  font-weight: 700;
   margin-top: 0.2em;
   margin-left: 5%; }
   .site-logo a {

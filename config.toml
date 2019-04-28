@@ -21,13 +21,13 @@ enableRobotsTXT = true
     [[menu.main]]
         identifier = "about"
         name = "About"
-        title = "About"
+        title = "The About Me page"
         url = "/about/"
         weight = 100
     
     [[menu.main]]
         identifier = "posts"
         name = "Posts"
-        title = "Posts"
+        title = "This site’s posts"
         url = "/posts/"
         weight = 110

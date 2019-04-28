@@ -1,74 +1,73 @@
 
 <head>
-    <title>{{ .Title }}</title>
-        
-    {{ template "_internal/google_analytics.html" . }}
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    {{- if .IsHome }}
-    <meta name="description" content="{{ .Site.Params.Description }}">
-    <meta property="og:description" content="{{ .Site.Params.Description }}" />
-    {{- else if isset .Params "description" }}
-    <meta name="description" content="{{ index .Params "description" }}">
-    {{- end }}
-
-    {{- if isset .Params "final_url" }}
-    <meta property="og:url" content="{{ .Site.BaseURL }}{{ index .Params "final_url" }}" />        
-    {{- end }}
-
-    {{- if isset .Params "featured_image" }}
-    <meta property="og:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
-    {{- end }}
-
-
-    {{- if .IsHome }}
+  {{- if .IsHome }}
     <title>{{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Site.Title }}" />
-    {{- else }}
+  {{- else }}
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-    {{- end }}
+  {{- end }}
+      
+  {{ template "_internal/google_analytics.html" . }}
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {{- if .IsHome }}
+  <meta name="description" content="{{ .Site.Params.Description }}">
+  <meta property="og:description" content="{{ .Site.Params.Description }}" />
+  {{- else if isset .Params "description" }}
+  <meta name="description" content="{{ index .Params "description" }}">
+  {{- end }}
+
+  {{- if isset .Params "final_url" }}
+  <meta property="og:url" content="{{ .Site.BaseURL }}{{ index .Params "final_url" }}" />        
+  {{- end }}
+
+  {{- if isset .Params "featured_image" }}
+  <meta property="og:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
+  {{- end }}
+
 
   
-    <!-- CSS/SCSS -->
-    {{ $sass := resources.Get "scss/ofotigrid.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-    {{ "<!--[if lt IE 9]>" | safeHTML }}
-      <script src="/html5shiv/html5shiv.js"></script>
-    {{ "<![endif]-->" | safeHTML }}
+  <!-- CSS/SCSS -->
+  {{ $sass := resources.Get "scss/ofotigrid.scss" }}
+  {{ $style := $sass | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-    <!-- Twitter meta -->
-    <meta name="twitter:site" content="@BryceWrayTX">
-    <meta name="twitter:creator" content="@BryceWrayTX">
-    <meta name="twitter:card" content="summary_large_image" />
-    {{ if .IsPage }}
-      <meta name="twitter:description" content="{{ .Summary }}" />
-      <meta name="twitter:title" content="{{ .Title }}" />
-      <meta name="twitter:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
-    {{ else }}
-      <meta name="twitter:description" content="{{ .Description }}" />
-      <meta name="twitter:title" content="{{ .Site.Title }}" />
-      <meta name="twitter:image" content="{{ .Site.BaseURL }}images/hero_typing-writing_tint_1920x700_60pct.jpg" />
-    {{ end }}
+  {{ "<!--[if lt IE 9]>" | safeHTML }}
+    <script src="/html5shiv/html5shiv.js"></script>
+  {{ "<![endif]-->" | safeHTML }}
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL}}images/apple-touch-icon.png">
+  <!-- Twitter meta -->
+  <meta name="twitter:site" content="@BryceWrayTX">
+  <meta name="twitter:creator" content="@BryceWrayTX">
+  <meta name="twitter:card" content="summary_large_image" />
+  {{ if .IsPage }}
+    <meta name="twitter:description" content="{{ .Summary }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
+  {{ else }}
+    <meta name="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/hero_typing-writing_tint_1920x700_60pct.jpg" />
+  {{ end }}
 
-    <!-- RSS -->
-    {{ range .AlternativeOutputFormats -}}
-      {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL}}images/apple-touch-icon.png">
 
-    {{ with .OutputFormats.Get "rss" -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
   
   </head>
   
