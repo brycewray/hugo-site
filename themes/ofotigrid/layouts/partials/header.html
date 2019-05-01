@@ -1,7 +1,7 @@
 
     <header>
       <p class="site-logo"><a href="{{ "/" | relURL}}">{{.Site.Title}}</a></p>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" title="Toggle for small screens">
       <nav>
         <ul>
           {{ $currentPage := . }}
@@ -16,3 +16,4 @@
         <span></span>
       </label>
     </header>
+-
