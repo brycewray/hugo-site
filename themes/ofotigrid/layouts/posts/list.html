@@ -6,23 +6,16 @@
         <div class="container-posts-cards">
                {{ range first 2 (where .Pages "Section" "posts") }}
                <div class="column ctr">
-                
-                    <div class="card">
-                        {{- if isset .Params "featured_image" }}
-                        <img class="card-img-top card-img-crop"  src="{{ index .Params "featured_image" }}" alt="{{ index .Params "featured_image_alt" }}">
-                        {{- end }}
-                        <div class="card-body">
-                            <h2 class="card-title h4" style="margin-bottom: 0;">{{ .Title }}</h2>
-                            <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
-                            <p class="card-text pokey text-body">{{ .Summary }}</p>
-                        </div>
-                        {{ if .Truncated }}
-                            <div class="card-btn-bottom">
-                                <a href="{{ .RelPermalink }}"><button type="button" class="btn btn-primary pokey">Read more</button></a>
-                            </div>
-                        {{ end }}
+                <div class="card">
+                    {{- if isset .Params "featured_image" }}
+                    <img class="card-img-top card-img-crop"  src="{{ index .Params "featured_image" }}" alt="{{ index .Params "featured_image_alt" }}">
+                    {{- end }}
+                    <div class="card-body">
+                        <h2 class="card-title h4" style="margin-bottom: 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                        <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                        <p class="card-text pokey text-body">{{ .Summary }}</p>
                     </div>
-                
+                </div>
             </div>
             {{ end }}
         </div>
@@ -30,13 +23,10 @@
         {{ range after 2 (where .Pages "Section" "posts") }}				
         <div class="container-narrower">          
         
-            <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
+            <h2 class="h5" style="margin-bottom: 0;"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
             <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
             <p class="pokey text-body">
             {{ .Summary }}
-            {{ if .Truncated }}
-                <a href="{{ .RelPermalink }}"><strong class="text-link text-nowrap text-sans-serif">Read more&nbsp;.&nbsp;.&nbsp;.</strong></a>
-            {{ end }}
             </p>
         
         </div>

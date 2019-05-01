@@ -25,7 +25,7 @@ $card-border-radius: calc(0.5em - 1px);
   display: grid;
   grid-template-rows: auto auto 4.5vh;
   @media screen and (min-width: 900px) {
-    grid-template-rows: auto 12rem 4.5vh; // rem is OK because old browsers don't do grid
+    grid-template-rows: auto 11rem; // rem is OK because old browsers don't do grid
   }
   grid-template-areas:
     "img"
@@ -44,8 +44,8 @@ $card-border-radius: calc(0.5em - 1px);
 }
 
 .card-body {
-  padding: 0.5em 1.5em; // old browsers
-  padding: 0.5rem 1.5rem;
+  padding: 1em 1.5em; // old browsers
+  padding: 1rem 1.5rem;
   grid-area: body;
 }
 

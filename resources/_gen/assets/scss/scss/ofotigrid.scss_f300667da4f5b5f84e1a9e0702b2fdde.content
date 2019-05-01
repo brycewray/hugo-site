@@ -628,15 +628,15 @@ pre code {
   border-radius: calc(0.5em - 1px); }
   @media screen and (min-width: 900px) {
     .card {
-      grid-template-rows: auto 12rem 4.5vh; } }
+      grid-template-rows: auto 11rem; } }
 
 .card-img-top {
   border-top-left-radius: calc(0.5em - 1px);
   border-top-right-radius: calc(0.5em - 1px); }
 
 .card-body {
-  padding: 0.5em 1.5em;
-  padding: 0.5rem 1.5rem;
+  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   grid-area: body; }
 
 .card-img-crop {

@@ -12,13 +12,10 @@
     {{ range first 2 (where .Pages "Section" "posts") }}				
       <div>          
         
-          <h2 class="h5" style="margin-bottom: 0;">{{ .Title | markdownify }}</h2>
+          <h2 class="h5" style="margin-bottom: 0;"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
           <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
           <p class="pokey text-body">
             {{ .Summary }}
-            {{ if .Truncated }}<br />
-              <strong class="text-link text-sans-serif"><a href="{{ .RelPermalink }}">Read more&nbsp;.&nbsp;.&nbsp;.</a></strong>
-            {{ end }}
           </p>
         
       </div>
