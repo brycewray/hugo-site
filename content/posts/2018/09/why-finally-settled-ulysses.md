@@ -8,7 +8,7 @@ author: Bryce Wray
 
 date: 2018-09-22T11:04:36-05:00
 
-lastmod: 2019-04-20T11:17:00-05:00
+lastmod: 2019-05-04T12:20:00-05:00
 
 draft: false
 
@@ -25,12 +25,6 @@ featured_image_alt: Screen capture - Ulysses app preferences window
 As I write this in late September, 2018, it’s a little over a year since I began writing a novel I really, truly thought I’d have finished by now.
 
 Well, that hasn’t happened, but at least now I **really** think I’ve got all my plot holes figured out. Still, that’s not why I’m writing this.
-
-<hr />
-
-***Note:*** *Please see the update from April 20, 2019, at the end of this post.*
-
-<hr />
 
 ## Holy wars? Holy .&nbsp;.&nbsp;.
 
@@ -82,15 +76,6 @@ As [David Hewson](https://davidhewson.com) [puts it so well](https://davidhewson
 
 > Ulysses is about text on the page. Yes, you can do lots of clever things with tagging and stuff if you want (and I do when it’s necessary). But at its heart Ulysses works like a very clever digital typewriter. Clear the decks of all the frills, the folders, the styles, the agonising over whether to write in Avenir or Helvetica. Get all that out of the way and just write. What you see is what the eventual reader will see. In essence Ulysses is extremely simple. Once you get your head around the basics you can forget about software and focus on the hard bit — saying what you want to say and saying it well. There are no distractions, and that’s a wonderful thing because writers tend to hunt for distractions all the time. It’s easier puzzling over them than getting down to the real job in hand.[^3]
 
-<br />
-<hr />
-<br />
-
-#### *Update, April 20, 2019*
-
-*After a few weeks of trying to find a way around it, I am no longer using Ulysses, as explained in "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)." However, I'll still leave* ***this*** *post active, not only for archival purposes but also because it doesn't address Ulysses's (or Scrivener's) sync'ing functionality one way or the other and, thus, its own points remain valid.*
-
-<br />
 
 [^1]:	I’ll save it from a Ulysses “sheet” to an .md file in an appropriate part of my Hugo site’s “posts” directory and, therefore, convert it into this Web page.
 
