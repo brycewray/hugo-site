@@ -2,15 +2,15 @@
 
 title: Boxed in?
 
-subtitle: “Shoebox”&nbsp;apps (including&nbsp;Ulysses) and&nbsp;iCloud&nbsp;sync
+subtitle: “Shoebox” apps (including Ulysses) and iCloud&nbsp;sync
 
-description: 'A revisiting of the whole Ulysses matter — after I learned some more about “shoebox” apps in general.'
+description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
 
 author: Bryce Wray
 
 date: 2019-05-04T06:00:00-05:00
 
-final_date: 2019-05-04T10:00:00-05:00
+final_date: 2019-05-10T05:22:00-05:00
 
 aliases:
     [/posts/2019/04/why-left-ulysses/]
@@ -59,7 +59,7 @@ Nearly two weeks elapsed.
 
 At first, I felt a weight lift off my shoulders following the weeks of agonizing over what to do, albeit not without regrets. Someone with whom I discussed my mixed feelings about dumping Ulysses compared me to "a divorced guy who still misses the ex-wife who cheated on him."
 
-I thought that was taking it a bit far, but I understood his point. I had *really loved* writing in Ulysses. I'd seen myself using it to finish the WIP in it and maybe even write a sequel (assuming anyone gave a flip about the WIP itself, unless I just wrote the sequel for my own enjoyment because I already know its plot and would love to get it out of my head and into text).
+I thought that was taking it a bit far, but I understood his point. I had *really loved* writing in Ulysses. I'd seen myself using it to finish the WIP and maybe even write a sequel (assuming anyone gave a flip about the WIP itself, unless I just wrote the sequel for my own enjoyment because I already know its plot and would love to get it out of my head and into text).
 
 Now, it was no longer[^notUninstalled] in my stable of tools, and I wasn't happy about that.
 
@@ -106,7 +106,7 @@ I know: *hubris* is an unattractive thing to witness. I'm sorry.
 
 ## "Hey, kids, what time is it??"
 
-Also in the deleted post: what I'd perceived as the Smoking Gun proving Ulysses had failed my "stress test" and thus had to hit the road was when, one morning, I opened the app on the Mac and it took several minutes to retrieve something I'd done on another device the night before, after which it gave a timestamp conforming to *right that minute* rather than the true time and date of the last edit.
+Also in the deleted post: I mentioned what I'd perceived as the Smoking Gun proving Ulysses had failed my "stress test" and thus had to hit the road was when, one morning, I opened the app on the Mac and it took several minutes to retrieve something I'd done on another device the night before, after which it gave a timestamp conforming to *right that minute* rather than the true time and date of the last edit.
 
 I wondered about that aspect, too, as I did my post-cancellation research in recent days. I found---you guessed it---that when a device forces a sync either automatically, as the Mac did in that case (albeit belatedly so, which might even explain this particular oddity), or manually due to a user command, that [can](http://forums.storyist.com/topic/2987-syncing-problems-is-it-just-me/?do=findComment&comment=19938) [trigger](https://www.reddit.com/r/bearapp/comments/7i4s4s/manual_sync_notes_without_icloud/) a timestamp change. In fact, it [sometimes can be bizarre](https://discussions.apple.com/thread/8553656). Anyway, this is on the sync provider---in this case, Apple---rather than Ulysses GMBH &amp; Co. or other third parties, for that matter.
 
@@ -122,8 +122,8 @@ What did I learn? Well&nbsp;.&nbsp;.&nbsp;.
 - To quote none other than Linus of "Peanuts" fame: "[I'm never quite so stupid as when I'm being smart!](https://www.pinterest.com/pin/4574037096083898)" I thought I knew. And maybe I knew some of it. But I didn't know enough. I was blaming one particular app for something that is an irregularly appearing characteristic of its app type, a type which I already knew and accepted because it makes the all-inclusive Ulysses Library possible.
 - It's still a good idea to "[trust, but verify](https://en.wikipedia.org/wiki/Trust,_but_verify)." So I will continue the practice I started even before all this hubbub began, which is a periodic copy of Ulysses content over to iA Writer and, to be triply sure, Scrivener[^ScrivStill] as well.
 
-[^ScrivStill]: Yes, I still open Scrivener. I gave serious thought to switching to it during these two weeks of post-decision angst, and gave it a shot or two, but still ran into the [same issues as before](/posts/2018/09/why-finally-settled-ulysses) (my issues, not Scrivener's). That said, I may yet find needs for its organizational super powers if/when the WIP ever nears publication time, especially since [the 3.0.3 upgrade](https://www.literatureandlatte.com/export-to-vellum) made it even more [Vellum](https://vellum.pub)-friendly.
+[^ScrivStill]: Yes, I still open Scrivener on occasion. I gave serious thought to switching back to it during these two weeks of post-decision angst, and even gave it a shot or two with the WIP, but still ran into the [same issues as before](/posts/2018/09/why-finally-settled-ulysses) (my issues, not Scrivener's). That said, I may yet find needs for its organizational super powers if/when the WIP ever nears publication time, especially since [the 3.0.3 upgrade](https://www.literatureandlatte.com/export-to-vellum) made it even more [Vellum](https://vellum.pub)-friendly.
 
-So, with the hope that you'll ever trust me again after this episode, I close this little *mea culpa*. I am somewhat (?) chagrined by this whole thing, but nonetheless am grateful to have that little Ulysses butterfly back in my Mac and iPad docks, although I'm keeping iA Writer in the iPhone dock since I use it more often for quickie stuff.
+So, with the hope that you'll ever trust me again after this episode, I close this *mea culpa*. I am somewhat (?) chagrined by this whole thing, but nonetheless am grateful to have that little Ulysses butterfly back in my Mac and iPad docks, although I'm keeping iA Writer in the iPhone dock since I use it more often for quickie stuff.
 
 And, as for said butterfly, it and I have a WIP to get back to, finally, so if you'll excuse us&nbsp;.&nbsp;.&nbsp;.

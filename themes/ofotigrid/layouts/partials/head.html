@@ -17,6 +17,7 @@
   {{- if .IsHome }}
   <meta name="description" content="{{ .Site.Params.Description }}">
   <meta property="og:description" content="{{ .Site.Params.Description }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/hero_typing-writing_tint_1920x700_60pct.jpg" />
   {{- else if isset .Params "description" }}
   <meta name="description" content="{{ index .Params "description" }}">
   {{- end }}
@@ -26,7 +27,7 @@
   {{- end }}
 
   {{- if isset .Params "featured_image" }}
-  <meta property="og:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
   {{- end }}
 
 
