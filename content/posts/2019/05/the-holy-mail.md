@@ -60,7 +60,7 @@ One suggested client was [Edison Mail](https://mail.edison.tech/), which did, in
 
 So that wasn't going to work to my satisfaction, at least not for Exchange. However, I did follow another poster's advice and kept Edison Mail around **only** for notifications, then would open them in Apple Mail. Nonetheless, it was a clunky solution. 
 
-## A giant (battery-)sucking sound
+## A giant <span style="white-space: nowrap;">(battery-)</span> sucking sound
 
 I dearly wanted to settle on Apple's mail clients in both iOS and macOS, but the whole urinating contest with GMail push remained a show-stopper for me; so I continued the Edison Mail/Apple Mail tag-team match for a while on iOS, only to suffer a self-inflicted wound.
 
