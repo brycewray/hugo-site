@@ -18,7 +18,7 @@ actual_path: /content/posts/2019/05/the-holy-mail
 
 final_url: posts/2019/05/the-holy-mail
 
-featured_image: /images/letterbox-1926493_1280x738_60pct.jpg
+featured_image: images/letterbox-1926493_1280x738_60pct.jpg
 
 featured_image_alt: Old metal mailslot on bright red door
 

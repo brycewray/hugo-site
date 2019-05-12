@@ -20,7 +20,7 @@ actual_path: /content/posts/2018/10/web-typography-part-2.md
 
 final_url: posts/2018/10/web-typography-part-2/
 
-featured_image: /images/computer-1869236_1280_72dpi_60pct.jpg
+featured_image: images/computer-1869236_1280_72dpi_60pct.jpg
 
 featured_image_alt: Backlit computer keyboard
 

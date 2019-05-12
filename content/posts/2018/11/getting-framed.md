@@ -20,7 +20,7 @@ actual_path: /content/posts/2018/11/getting-framed
 
 final_url: posts/2018/11/getting-framed/
 
-featured_image: /images/medieval-castle-84336_1920x1080_60pct.jpg
+featured_image: images/medieval-castle-84336_1920x1080_60pct.jpg
 
 featured_image_alt: Rock wall of ancient castle, depicting solid framework
 

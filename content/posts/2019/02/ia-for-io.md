@@ -20,7 +20,7 @@ actual_path: /content/posts/2019/02/another-test
 
 final_url: posts/2019/02/another-test
 
-featured_image: /images/notebook-933362_1920x1280_60pct.jpg
+featured_image: images/notebook-933362_1920x1280_60pct.jpg
 
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
 

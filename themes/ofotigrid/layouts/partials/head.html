@@ -49,7 +49,7 @@
   {{ if .IsPage }}
     <meta name="twitter:description" content="{{ .Summary }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:image" content="https://brycewray.com{{ index .Params "featured_image" }}" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
   {{ else }}
     <meta name="twitter:description" content="{{ .Description }}" />
     <meta name="twitter:title" content="{{ .Site.Title }}" />

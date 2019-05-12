@@ -19,7 +19,7 @@ actual_path: /content/posts/2019/01/blox-sux
 
 final_url: posts/2019/01/blox-sux
 
-featured_image: /images/lego-169603_1280x720_72dpi.jpg
+featured_image: images/lego-169603_1280x720_72dpi.jpg
 
 featured_image_alt: Lego blocks
 

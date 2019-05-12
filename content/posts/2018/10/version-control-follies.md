@@ -18,7 +18,7 @@ actual_path: /content/posts/2018/10/version-control-follies.md
 
 final_url: posts/2018/10/version-control-follies/
 
-featured_image: /images/Sourcetree-screen-shot_1512px_60pct.jpg
+featured_image: images/Sourcetree-screen-shot_1512px_60pct.jpg
 
 featured_image_alt: Screen capture of Sourcetree software
 

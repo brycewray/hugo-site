@@ -16,7 +16,7 @@ actual_path: /content/posts/2018/09/why-finally-settled-ulysses.md
 
 final_url: posts/2018/09/why-finally-settled-ulysses/
 
-featured_image: /images/Ulysses-Preferences-General-screen-shot_60pct.jpg
+featured_image: images/Ulysses-Preferences-General-screen-shot_60pct.jpg
 
 featured_image_alt: Screen capture - Ulysses app preferences window
 

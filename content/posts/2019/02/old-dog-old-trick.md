@@ -20,7 +20,7 @@ actual_path: /content/posts/2019/02/old-dog-old-trick
 
 final_url: posts/2019/02/old-dog-old-trick
 
-featured_image: /images/dog-2514968_1920x1080_72dpi_60pct.jpg
+featured_image: images/dog-2514968_1920x1080_72dpi_60pct.jpg
 
 featured_image_alt: Face of an old dog
 

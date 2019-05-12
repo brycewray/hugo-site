@@ -18,7 +18,7 @@ actual_path: /content/posts/2018/10/client-too-smart.md
 
 final_url: posts/2018/10/client-too-smart/
 
-featured_image: /images/contact-2805253_1280.png
+featured_image: images/contact-2805253_1280.png
 
 featured_image_alt: Illustration - mail flying at a stylized human head
 

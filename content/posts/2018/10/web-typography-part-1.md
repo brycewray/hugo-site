@@ -18,7 +18,7 @@ actual_path: /content/posts/2018/10/web-typography-part-1.md
 
 final_url: posts/2018/10/web-typography-part-1/
 
-featured_image: /images/letters-691842_1280_60pct.jpg
+featured_image: images/letters-691842_1280_60pct.jpg
 
 featured_image_alt: Letters for old-style typesetting
 
