@@ -12,7 +12,7 @@ date: 2019-02-23T12:45:00-06:00
 
 #final_date: 2019-02-23T12:45:00-06:00
 
-#lastmod: TBD
+lastmod: 2019-05-17T21:15:00-05:00
 
 draft: false # note!
 
@@ -88,6 +88,12 @@ Sufficiently convinced by that opinion and others that said basically the same t
 As for the cost savings, they’re small *but* I’m getting more for my money. Before, I was paying a buck a month for two hundred gigabytes of iCloud storage *and* ten bucks a month for *one* terabyte of Dropbox storage. Now, I’m paying ten bucks a month for *two* terabytes of iCloud storage *and*, not incidentally, sharing that two terabytes with my wife via [Family Sharing](https://www.apple.com/family-sharing/) for her iPhone photos, as well.[^8]
 
 In the first week under the new setup, I have been continually amazed to watch how smoothly macOS works with iCloud, now that I’ve finally given it the full “You da Sync Man” treatment—especially with the Mac set to [optimize local storage](https://support.apple.com/en-us/HT206996). I know, it should’ve been obvious, and it was, but *knowing* it was much different than *seeing* it has been. And, as a side benefit, I get a little thrill every time I check the Files app in iOS and see *all* my freakin’ Mac stuff in there, too. That was sometimes problematic with the other services, notably OneDrive.
+
+<hr />
+
+<em>**Note**: In the wake of my [later issues with my Mac's iCloud Sync that briefly caused me to drop using Ulysses](/posts/2019/05/boxed-in), I learned that [it can be unwise to use the </em>Optimize Mac Storage<em> option](https://www.macworld.com/article/3306257/how-to-disable-optimized-icloud-drive-storage-with-a-single-click.html), after all. It can inadvertently delete files on which [some](https://support.screencast-o-matic.com/hc/en-us/articles/360007256154--Sorry-this-recording-has-missing-files-since-iCloud-Drive-Optimize-Mac-Storage-is-enabled) [apps](https://support.native-instruments.com/hc/en-us/articles/360000816565-TRAKTOR-Warning-Message-Optimize-Mac-Storage-is-turned-on-in-iCloud-Drive-Mac-), particularly ["shoebox" apps](/posts/2019/05/boxed-in), depend. The more you know&nbsp;.&nbsp;.&nbsp;.</em>
+
+<hr />
 
 Oh, yeah, OneDrive. Left that OneDrive-as-backup-from-Arq thread hanging, didn’t I? Well, about that&nbsp;.&nbsp;.&nbsp;.
 
