@@ -161,26 +161,49 @@ a.footnote-return {
 pre, code {
   white-space: inherit; }
 
+/* following is for dark mode where browsers respect this */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: #181818; }
+  .card-body {
+    background: #333; }
+  body, .text-body {
+    color: #ddd !important; }
+  .text-muted, .text-sans-serif {
+    color: #a8a8a8 !important; }
+  a {
+    color: #00bbff;
+    border-bottom: 1px solid #0088ff; }
+  a:hover, a:focus, a:active {
+    color: #c8c8c8;
+    border-bottom: 1px solid #00bbff; }
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: #00bbff; }
+  blockquote, .featured-image-caption {
+    color: #a8a8a8 !important; }
+  code {
+    color: #88ff88 !important;
+    background-color: #303030 !important; }
+  table.noborders tr {
+    background-color: #ddd;
+    color: #333; }
+  table.noborders thead tr {
+    background-color: #0000aa; } }
+
 #content {
   padding-top: 40px; }
 
 .text-sans-serif {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-.text-link {
-  color: #0033ff; }
-
-.text-link:active, .text-link:focus, .text-link:hover {
-  color: #0000aa; }
-
-.text-body {
-  color: #333 !important; }
-
 .text-nowrap, .nobrk {
   white-space: nowrap; }
 
 .text-link {
   color: #0033ff; }
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: #0000aa; }
 
 .text-muted {
   color: #656565; }
