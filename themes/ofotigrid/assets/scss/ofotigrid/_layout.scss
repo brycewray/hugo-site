@@ -7,24 +7,16 @@
   font-family: $sans-serif-boot;
 }
 
-.text-link {
-  color: $blue;
-}
-
-.text-link:active, .text-link:focus, .text-link:hover {
-  color: $darkblue;
-}
-
-.text-body {
-  color: $default-color !important;
-}
-
 .text-nowrap, .nobrk {
   white-space: nowrap;
 }
 
 .text-link {
   color: $blue;
+}
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: $darkblue;
 }
 
 .text-muted {
