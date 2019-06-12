@@ -12,6 +12,8 @@ date: 2019-06-08T20:25:00-05:00
 
 #final_date: 2019-06-08T08:25:00-05:00
 
+lastmod: 2019-06-11T20:15:00-05:00
+
 draft: false # note!
 
 actual_path: /content/posts/2019/06/ahoy-mate
@@ -101,3 +103,11 @@ You can customize various aspects of the display, such as the "font" size and le
 I began the 30-day trial of MailMate prior to Apple's WWDC 2019, curious as to whether there'd be any big changes in Mail for what we now know will be macOS Catalina and, if so, whether they'd be enough to keep me from continuing to consider MailMate. After all, Apple Mail is included with macOS while, at this writing, MailMate costs&nbsp;$50.
 
 However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin'. I'll keep you advised as to how I&nbsp;land.
+
+<hr />
+
+### Update, 2019-06-11
+
+My tweet tonight says it all:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Bought a license for, and became a patron of, <a href="https://twitter.com/mailmateapp?ref_src=twsrc%5Etfw">@mailmateapp</a>. Very impressed with the software and the developer, as I made clear in my recent post: <a href="https://t.co/ErdQPfeAps">https://t.co/ErdQPfeAps</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1138614802518020096?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
