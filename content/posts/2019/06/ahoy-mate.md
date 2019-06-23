@@ -84,7 +84,7 @@ Of course, you'll still have to use Markdown to *compose* formatted text. And, a
 
 While those are the biggies, there are other reasons why MailMate interests me these days.
 
-It's hard to think of any method of searching through and filtering emails that MailMate doesn't provide. The app is simply astonishing in this regard. As a result: if you're inclined to use Smart Mailboxes, its implementation of them goes 'waaaay beyond similar capabilities on other email&nbsp;clients.
+It's hard to think of any method of searching through and filtering emails that MailMate doesn't provide. The app is simply astonishing in this regard. As a result: if you're inclined to use Smart Mailboxes, its implementation of them goes ’waaaay beyond similar capabilities on other email&nbsp;clients.
 
 Of course, the drawback to using Smart Mailboxes on MailMate, as on other email clients with similar capabilities, is that they don't sync with your iOS devices' mail apps.[^creepy] The way around that is to apply rules that work with IMAP folders and subfolders, *etc.*, at the *provider*&nbsp;level.
 
