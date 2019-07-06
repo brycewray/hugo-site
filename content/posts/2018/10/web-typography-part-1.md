@@ -16,6 +16,8 @@ draft: false # note!
 
 actual_path: /content/posts/2018/10/web-typography-part-1.md
 
+discussionId: "2018-10-web-typography-part-1"
+
 final_url: posts/2018/10/web-typography-part-1/
 
 featured_image: images/letters-691842_1280_60pct.jpg

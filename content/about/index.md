@@ -16,6 +16,8 @@ draft: false
 
 #actual-path: /content/about/
 
+discussionId: "about"
+
 #final_url: about/
 
 featured_image: images/question-mark-over-mac-keyboard-49958_1280_crop_1280x780_60pct.jpg

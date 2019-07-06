@@ -14,6 +14,8 @@ draft: false
 
 actual_path: /content/posts/2018/09/why-finally-settled-ulysses.md
 
+discussionId: "2018-09-why-finally-settled-ulysses"
+
 final_url: posts/2018/09/why-finally-settled-ulysses/
 
 featured_image: images/Ulysses-Preferences-General-screen-shot_60pct.jpg

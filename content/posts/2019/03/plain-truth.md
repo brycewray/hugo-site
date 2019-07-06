@@ -10,13 +10,13 @@ author: Bryce Wray
 
 date: 2019-03-02T16:00:00-06:00
 
-date: 2019-03-02T16:00:00-06:00
-
 lastmod: 2019-04-27T06:38:00-05:00
 
 draft: false # note!
 
 actual_path: /content/posts/2019/03/plain-truth
+
+discussionId: "2019-03-plain-truth"
 
 final_url: posts/2019/03/plain-truth
 

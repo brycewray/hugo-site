@@ -18,6 +18,8 @@ draft: false # note!
 
 actual_path: /content/posts/2019/03/mark-it-down
 
+discussionId: "2019-03-mark-it-down"
+
 final_url: posts/2019/03/mark-it-down
 
 featured_image: images/ugly-ducking-young-swan-1639154_1280x720_60pct.jpg

@@ -11,6 +11,8 @@ draft: false
 
 actual_path: /content/posts/2018/09/hardy-press-wp-ssg-with-twist.md
 
+discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
+
 final_url: posts/2018/09/hardy-press-wp-ssg-with-twist/
 
 featured_image: images/Hardy_Press_Web_page_2019-04-27_1280x630_60pct.jpg

@@ -16,6 +16,8 @@ draft: false # note!
 
 actual_path: /content/posts/2018/12/on-edge
 
+discussionId: "2018-12-on-edge"
+
 final_url: posts/2018/12/on-edge/
 
 featured_image: images/MS-Edge-logo-and-bkgd_1280x720_60pct.jpg

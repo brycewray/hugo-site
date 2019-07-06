@@ -18,6 +18,8 @@ draft: false # note!
 
 actual_path: /content/posts/2018/11/some-curmudgeonish-thoughts.md
 
+discussionId: "2018-11-some-curmudgeonish-thoughts"
+
 final_url: posts/2018/11/some-curmudgeonish-thoughts/
 
 featured_image: images/brain-1300479_1280_60pct.jpg

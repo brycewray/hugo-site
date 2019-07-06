@@ -16,6 +16,8 @@ draft: false # note!!
 
 actual_path: /content/posts/2018/10/client-too-smart.md
 
+discussionId: "2018-10-client-too-smart"
+
 final_url: posts/2018/10/client-too-smart/
 
 featured_image: images/contact-2805253_1280.png

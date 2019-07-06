@@ -18,6 +18,8 @@ draft: false # note!
 
 actual_path: /content/posts/2018/11/grid-locked-no-more
 
+discussionId: "2018-11-grid-locked-no-more"
+
 final_url: posts/2018/11/grid-locked-no-more/
 
 featured_image: images/hairpin-turn-sign-94966_1280x719_72dpi_60pct.jpg

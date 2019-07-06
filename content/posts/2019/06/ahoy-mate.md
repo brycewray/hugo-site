@@ -18,6 +18,8 @@ draft: false # note!
 
 actual_path: /content/posts/2019/06/ahoy-mate
 
+discussionId: "2019-06-ahoy-mate"
+
 final_url: posts/2019/06/ahoy-mate
 
 featured_image: images/MailMate_screen_cap_1544x792_60pct.jpg

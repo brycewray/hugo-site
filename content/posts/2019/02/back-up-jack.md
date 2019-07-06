@@ -18,6 +18,8 @@ draft: false # note!
 
 actual_path: /content/posts/2019/02/back-up-jack
 
+discussionId: "2019-02-back-up-jack"
+
 final_url: posts/2019/02/back-up-jack
 
 featured_image: images/binary-2688910_1920_1280x719_60pct.jpg

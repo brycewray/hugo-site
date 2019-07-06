@@ -18,6 +18,8 @@ draft: false # note!
 
 actual_path: /content/posts/2019/04/ec-static
 
+discussionId: "2019-04-ec-static"
+
 final_url: posts/2019/04/ec-static
 
 featured_image: images/server-1235959_1920_1280x720_60pct.jpg
