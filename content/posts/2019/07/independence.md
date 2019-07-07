@@ -4,7 +4,7 @@ title: Independence
 
 subtitle: Thirty-five years a Mac lover
 
-description: "Thirty-five years ago today, I encountered a Mac for the first time, and it literally changed my life."
+description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 
 author: Bryce Wray
 
