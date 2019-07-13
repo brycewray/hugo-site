@@ -13,7 +13,7 @@
                     <div class="card-body">
                         <h2 class="card-title h4" style="margin-bottom: 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                         <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
-                        <p class="card-text pokey text-body">{{ .Summary }}</p>
+                        <p class="card-text pokey text-body">{{ .Description }}</p>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <h2 class="h5" style="margin-bottom: 0;"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
             <time datetime="{{ .PublishDate }}" class="pokey text-muted text-sans-serif">{{ .PublishDate.Format "January 2, 2006" }}</time>
             <p class="pokey text-body">
-            {{ .Summary }}
+            {{ .Description }}
             </p>
         
         </div>

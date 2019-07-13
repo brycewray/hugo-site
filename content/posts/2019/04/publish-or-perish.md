@@ -4,7 +4,7 @@ title: Publish or perish
 
 subtitle: Going live with your Hugo site
 
-description: "A follow-up to a previous post about the Hugo static site generator to create and maintain a Web site."
+description: In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free.
 
 author: Bryce Wray
 

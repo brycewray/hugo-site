@@ -4,7 +4,7 @@ title: The Holy Mail
 
 subtitle: Stopping the e-madness
 
-description: "The way I sort-of cured the email client dance."
+description: The way I sort-of cured the email client dance.
 
 author: Bryce Wray
 

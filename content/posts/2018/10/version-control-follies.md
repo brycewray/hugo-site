@@ -4,7 +4,7 @@ title: The version-control follies
 
 subtitle: Life’s too short for CLI
 
-description: Why you should go GUI with version control
+description: Why you should go GUI with version control.
 
 author: Bryce Wray
 

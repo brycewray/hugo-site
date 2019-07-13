@@ -4,7 +4,7 @@ title: Readable Web text, pretty please
 
 subtitle: Part 1 of a two-part series on Web typography
 
-description: This is Part 1 of a two-part series on Web typography.
+description: Can we just agree that type on the Web should be, y’know, readable?
 
 author: Bryce Wray
 

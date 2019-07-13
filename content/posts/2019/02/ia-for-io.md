@@ -16,11 +16,11 @@ date: 2019-02-03T09:25:00-06:00
 
 draft: false # note!
 
-actual_path: /content/posts/2019/02/another-test
+actual_path: /content/posts/2019/02/ia-for-io
 
-discussionId: "2019-02-another-test"
+discussionId: "2019-02-ia-for-io"
 
-final_url: posts/2019/02/another-test
+final_url: posts/2019/02/ia-for-io
 
 featured_image: images/notebook-933362_1920x1280_60pct.jpg
 
