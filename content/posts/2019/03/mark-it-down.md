@@ -12,7 +12,7 @@ date: 2019-03-08T22:08:00-06:00
 
 #final_date: 2019-03-08T21:05:00-06:00
 
-lastmod: 2019-04-14T17:15:00-05:00
+lastmod: 2019-07-14T11:40:00-05:00
 
 draft: false # note!
 
@@ -70,21 +70,21 @@ This got some serious minds to doing some serious thinking. They couldn't simply
 
 Finding a solution to this question became more urgent in the early 2000s as, increasingly, documentation for software apps moved from its traditional print format to online. One obvious answer had been in place since around 1990: HTML. After all, the source code of every single Web page is absolutely plain text. It just has a lot of stuff that makes it not *look* plain:
 
-<code>
-\<h1\>This is a top-level heading (H1).\</h1\><br />
-<br />
-\<p\>This would give you a paragraph with \<strong\>bold text here\</strong\> and \<em\>italicized text here\</em\>.\</p\><br />
-<br />
-\<ol\><br />
-&nbsp;&nbsp;&nbsp;&nbsp;\<li\>This is item Number One.\</li\><br />
-&nbsp;&nbsp;&nbsp;&nbsp;\<li\>This is item Number Two.\</li\><br />
-\</ol\><br />
-<br />
-\<ul\><br />
-&nbsp;&nbsp;&nbsp;&nbsp;\<li\>This is an unnumbered item.\</li\><br />
-&nbsp;&nbsp;&nbsp;&nbsp;\<li\>This is another unnumbered item.\</li\><br />
-\</ul\>
-</code>
+{{< highlight html >}}
+<h1>This is a top-level heading (H1).</h1>
+
+<p>This would give you a paragraph with <strong>bold text here</strong> and <em>italicized text here</em>.</p>
+
+<ol>
+    <li>This is item Number One.</li>
+    <li>This is item Number Two.</li>
+</ol>
+
+<ul>
+    <li>This is an unnumbered item.</li>
+    <li>This is another unnumbered item.</li>
+</ul>
+{{< /highlight >}}
 
 All of the above---and please understand, that's some pretty *bare-bones* HTML---then would look like this in the Web page itself:
 
@@ -115,16 +115,17 @@ However, his lasting fame may well lie in his creation of Markdown in 2004 as a 
 
 For example, here's Markdown that would create the same result as that HTML I showed you earlier:
 
-<code>
-\# This is a top-level heading (H1).<br />
-<br />
-This would give you a paragraph with \*\*bold text here\*\* and \*italicized text here\*.<br /><br />
-1. This is item Number One.<br />
-2. This is item Number Two.<br />
-<br />
-\- This is an unnumbered item.<br />
-\- This is another unnumbered item.
-</code>
+{{< highlight md >}}
+# This is a top-level heading (H1).
+
+This would give you a paragraph with **bold text here** and *italicized text here*.
+
+1. This is item Number One.
+2. This is item Number Two.
+
+- This is an unnumbered item.
+- This is another unnumbered item.
+{{< /highlight >}}
 
 Again, it's a simple example, but you can see how much less typing that would involve, especially for people writing tech docs that would become Web pages. Although Markdown took its sweet time catching on, it's become a lifeline for such writers.
 
@@ -158,4 +159,4 @@ You don't have to buy anything to give Markdown a try. There are any number of o
 
 And, yes, it actually *is* fun. It looks a little goofy on-screen, depending on the editor you're using, but you get used to it pretty quickly. Then, as you realize how much more deeply you're getting into your writing by using a lean, *writing*-focused Markdown editor rather than a bloated, *presentation*-focused word processor---and as you enjoy the warm feeling of knowing that using Markdown enables you to save your work in bulletproof plain text---you'll be amazed how much freer you'll feel when you write.
 
-So, yeah, mark it down: however you go about it, Markdown is something you want to give a shot. <code>And \*\*sooner\*\* rather than later.</code>
+So, yeah, mark it down: however you go about it, Markdown is something you want to give a shot. {{< highlight md >}}And **sooner** rather than later.{{< /highlight >}}

@@ -199,10 +199,6 @@ a.footnote-return{
   }
 }
 
-pre, code {
-  white-space: inherit; // otherwise, code causes horizontal overflow
-}
-
 /* following is for dark mode where browsers respect this */
 @media (prefers-color-scheme: dark) {
   html, body {

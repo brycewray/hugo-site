@@ -6,6 +6,9 @@ theme = "ofotigrid"
 summaryLength = 30 # words
 FootnoteReturnLinkContents = "&#8593;"
 enableRobotsTXT = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
 
 [params]
     Author = "Bryce Wray"

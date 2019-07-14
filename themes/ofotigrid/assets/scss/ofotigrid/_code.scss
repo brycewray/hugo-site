@@ -1,3 +1,42 @@
+.chroma {
+	background-color: $black;
+
+	code.language-html, 
+	code.language-css,
+	code.language-md,
+	code.language-cmd, 
+	span.o  {
+		color: white;
+	}
+	span.c {
+		color: $code-color-dark-mode;
+	}
+
+	span.p {
+		color: $code-color-orange-dark-mode;
+	}
+
+	span.s2,
+	span.nt {
+		color: $code-color-yellow-dark-mode;
+	}
+
+	span.gs,
+	span.gh,
+	span.ge {
+		color: $code-color-blueLight-dark-mode;
+	}
+
+	span.gs {
+		font-weight: bold;
+	}
+
+	span.ge {
+		font-style: italic;
+	}
+
+}
+
 pre,
 code {
   font-family: $monospaced;
@@ -8,30 +47,35 @@ code {
   border-radius: 3px;
   color: $code-color;
   font-size: 85%;
-  padding: .25em .5em;
 }
 
 pre {
-  margin: 0 0 1em;
-  margin: 0 0 1rem;
+  margin: 0;
+	margin: 0;
+	padding: 1em;
+	padding: 1rem;
 }
 
 pre code {
   background-color: transparent;
   color: inherit;
   font-size: 100%;
-  padding: 0 0.5em;
-  padding: 0 0.5rem;
+  padding: 0;
 }
 
+/*
+pre code span {
+	color: $code-color-dark-mode !important;
+}
+*/
+
 .highlight {
-  background-color: $grey-3;
+  background-color: transparent;
   border-radius: 3px;
   line-height: 1.4;
-  margin: 0 0 1em;
-  margin: 0 0 1rem;
-  padding: 1em;
-  padding: 1rem;
+  margin: 0 0 0.5em;
+  margin: 0 0 0.5rem;
+  padding: 0;
 
   pre {
     margin-bottom: 0;

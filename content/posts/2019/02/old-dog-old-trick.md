@@ -12,7 +12,7 @@ date: 2019-02-16T10:50:00-06:00
 
 #final_date: 2019-02-16T10:50:00-06:00
 
-lastmod: 2019-02-17T08:35:00-06:00
+lastmod: 2019-07-14T11:40:00-05:00
 
 draft: false # note!
 
@@ -64,9 +64,11 @@ I put the annoyance aside for that weekend, what with all the other pages I had 
 
 Everything I did in CSS that made it look mildly acceptable on IE made it go bonkers on the *real* browsers (`<burn>`shots fired`</burn>`). After spending 'way too much time trying to dope it out, and with my regular tasks waiting impatiently for my attention, I decided to do that hated thing known as browser-specific CSS.^[And, no, I don't know whether [HTML5 Shiv](https://github.com/aFarkas/html5shiv) would've fixed it; I didn't try it.] So I proceeded to create a little "ie.css" stylesheet and prepared to use IE conditional comments. Yep, those ugly things in the `<head>` section that only Internet Explorer sees, like:
 
-`<!--[if IE]>`  
-&nbsp;&nbsp;&nbsp;&nbsp;`<link rel="stylesheet" href="/css/ie.css">`  
-`<![endif]-->  `
+{{< highlight html >}}
+<!--[if IE]>
+  <link rel="stylesheet" href="/css/ie.css">
+<![endif]-->
+{{< /highlight >}}
 
 Except I didn't learn until that very morning---and this is where I really feel foolish---that **Internet Explorer had stopped supporting those in IE** ***10***. **Ten**! Hey, sports fans, that was released in *2012*.
 
@@ -82,13 +84,15 @@ So why am I sharing my shame? Because I saw posts from *other* people still aski
 
 So I was saved the trouble of an "ie.css" sheet; and my resulting addition to the end of the "style.css" sheet I was already using turned out to be something along these lines:
 
-`/* ==== for IE 10 and 11 **ONLY** ==== */`  
-`@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {`  
-&nbsp;&nbsp;&nbsp;&nbsp;`.slider-text {`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`hey, IE, don’t screw up that text or it’s coitains, see? Coitains.`  
-&nbsp;&nbsp;&nbsp;&nbsp;`}`  
-`}`  
-`/* ==== end, IE 10 and 11 **ONLY** ==== */`
+{{< highlight html >}}
+<!-- ==== for IE 10 and 11 **ONLY** ==== -->
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .slider-text {  
+    hey, IE, don’t screw up that text or it’s coitains, see? Coitains.
+  }  
+}  
+<!-- ==== end, IE 10 and 11 **ONLY** ==== -->
+{{< /highlight >}}
 
 .&nbsp;.&nbsp;. or code to that effect. And it worked like a charm.
 

@@ -12,7 +12,7 @@ date: 2018-10-25T07:40:00-05:00
 
 final_date: 2018-10-25T07:40:00-05:00
 
-lastmod: 2018-11-09T16:00:00-06:00
+lastmod: 2019-07-14T11:40:00-05:00
 
 draft: false # note!
 
@@ -112,7 +112,9 @@ In case you aren’t familiar with all of these, here you go (all except the gen
 
 The easiest way[^3] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):
 
-`font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif; `
+{{< highlight css >}}
+font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
+{{< /highlight >}}
 
 The first three entries take care of current Apple devices and also, in the case of `system-ui`, the latest Chrome browsers. The rest are simply calls to the typefaces in question.
 

@@ -158,9 +158,6 @@ a.footnote-return {
     width: 100%;
     height: 100%; }
 
-pre, code {
-  white-space: inherit; }
-
 /* following is for dark mode where browsers respect this */
 @media (prefers-color-scheme: dark) {
   html, body {
@@ -642,36 +639,64 @@ nav {
       margin-left: 3em;
       margin-bottom: 0; } }
 
+.chroma {
+  background-color: #000; }
+  .chroma code.language-html,
+  .chroma code.language-css,
+  .chroma code.language-md,
+  .chroma code.language-cmd,
+  .chroma span.o {
+    color: white; }
+  .chroma span.c {
+    color: #88ff88; }
+  .chroma span.p {
+    color: #ffaa00; }
+  .chroma span.s2,
+  .chroma span.nt {
+    color: #ddcc55; }
+  .chroma span.gs,
+  .chroma span.gh,
+  .chroma span.ge {
+    color: #88ddff; }
+  .chroma span.gs {
+    font-weight: bold; }
+  .chroma span.ge {
+    font-style: italic; }
+
 pre,
 code {
-  font-family: "iA Writer Duospace", Menlo, Consolas, Courier, "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: Menlo, Consolas, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 code {
   background-color: #f9f9f9;
   border-radius: 3px;
   color: #006400;
-  font-size: 85%;
-  padding: .25em .5em; }
+  font-size: 85%; }
 
 pre {
-  margin: 0 0 1em;
-  margin: 0 0 1rem; }
+  margin: 0;
+  margin: 0;
+  padding: 1em;
+  padding: 1rem; }
 
 pre code {
   background-color: transparent;
   color: inherit;
   font-size: 100%;
-  padding: 0 0.5em;
-  padding: 0 0.5rem; }
+  padding: 0; }
 
+/*
+pre code span {
+	color: $code-color-dark-mode !important;
+}
+*/
 .highlight {
-  background-color: #f9f9f9;
+  background-color: transparent;
   border-radius: 3px;
   line-height: 1.4;
-  margin: 0 0 1em;
-  margin: 0 0 1rem;
-  padding: 1em;
-  padding: 1rem; }
+  margin: 0 0 0.5em;
+  margin: 0 0 0.5rem;
+  padding: 0; }
   .highlight pre {
     margin-bottom: 0;
     overflow-x: auto; }

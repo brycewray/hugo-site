@@ -10,7 +10,7 @@ author: Bryce Wray
 
 date: 2019-04-07T14:00:00-05:00
 
-lastmod: 2019-04-13T14:00:00-05:00
+lastmod: 2019-07-14T11:40:00-05:00
 
 #final_date: 2019-04-07T14:00:00-05:00
 
@@ -68,7 +68,10 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 <span style="color: #d10000;">**IMPORTANT**</span>:
 
 - All of these instructions presume you have **full administrative rights** to the system you're using, whether it's a Mac, a Windows PC, or a Linux system. If you don't, stop now because you simply won't be able to do it (and shouldn't be trying). Period.
-- Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the ```text that looks like this``` in the entry; **don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown---no more, no less.
+- Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the&nbsp;.&nbsp;.&nbsp;.
+{{< highlight bash >}}
+text that looks like this
+{{< /highlight >}} &nbsp;.&nbsp;.&nbsp;. in the entry. **don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry, including anything that may require scrolling to the right, and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown---no more, no less.
 
 ### STEP 1: Install Hugo.
 
@@ -76,29 +79,35 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 
 1. Open the **Terminal** CLI app.
 2. If you already have the [**Homebrew** package installer app](https://brew.sh) installed, skip to the next item.  \
-Otherwise, install Homebrew by copying/pasting the following into Terminal and pressing **Return** or **Enter**:  \
-```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```  \
-Once the Homebrew installation is complete, go on to the next item.
-3. [Install Hugo](https://gohugo.io/getting-started/quick-start/) by copying/pasting the following into Terminal and pressing **Return** or **Enter**:  \
-```brew install hugo```
+Otherwise, install Homebrew by copying/pasting the following into Terminal and pressing **Return** or **Enter**:
+{{< highlight bash >}}
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+{{< /highlight >}} Once the Homebrew installation is complete, go on to the next item.
+3. [Install Hugo](https://gohugo.io/getting-started/quick-start/) by copying/pasting the following into Terminal and pressing **Return** or **Enter**:
+{{< highlight bash >}}
+brew install hugo
+{{< /highlight >}}
 
 #### Step 1 for Windows
 
 1. Open the **Command Prompt** CLI app (*cmd.exe*) as an admin-level user (right-click the app's icon and select **Run as Administrator**).
 2. If you already have the [**Chocolatey** package installer app](https://chocolatey.org) installed, skip to the next item.  \
-Otherwise, install Chocolatey by copying/pasting the following into the Command Prompt app and pressing **Enter**:  \
-```@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"```  \
+Otherwise, install Chocolatey by copying/pasting the following into the Command Prompt app and pressing **Enter**:
+{{< highlight bash >}}
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+{{< /highlight >}}
 Once the Chocolatey installation is complete, go on to the next item.
-3. [Install Hugo](https://gohugo.io/getting-started/installing) by copying/pasting the following into the Command Prompt app and pressing **Enter**:  \
-```choco install hugo -confirm```
+3. [Install Hugo](https://gohugo.io/getting-started/installing) by copying/pasting the following into the Command Prompt app and pressing **Enter**: {{< highlight bash >}}choco install hugo -confirm{{< /highlight >}}
 
 ### STEP 2: Create your new site.
 
 1. Use your system's CLI app to navigate to the location on your computer where you want to create the local version of your new site.  \
-I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.
+I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.[^syncGit]
 2. Copy/paste the following into the CLI app and press **Return** or **Enter**:  \
-```hugo new site mysite```  \
+{{< highlight bash >}}hugo new site mysite{{< /highlight >}}
 This command will create a new *mysite* directory in that location, and *mysite* will have various subdirectories of its own.[^mysite] One of those is called *themes*, which brings us to **STEP 3**.
+
+[^syncGit]: Since writing this, I have learned there are different opinions about whether it's a good idea to mix a Git repository with cloud sync, since the whole idea of a Git repo is to keep track of versions going back as far as necessary and some cloud sync operations have at least the potential to disrupt some of that. All I can say for my own experience is that it hasn't been a problem, but you should make sure your cloud setup is **not** set so that it won't keep local copies of any inactive files (*e.g.*, on a Mac, make sure iCloud is **not** set to "Optimize Mac storage"; see also [this post](/posts/05/boxed-in)), since deviations between what Git expects to see and what's actually on your drive can lead to utter Git chaos. Having seen that occur, I can assure you: you do **not** want that.
 
 [^mysite]:If you want to call it something other than *mysite,* type that instead of *mysite* in that line. Be sure the name has no spaces; you can use hyphens or underscores to separate words, such as *my-site* or *my_site*, if you prefer. For the remainder of these instructions, we'll continue to use *mysite* as the example name.
 
@@ -124,8 +133,7 @@ Like most site-building technology, Hugo uses *themes* to make a site look and p
 All the textual content---the *posts*---that you'll be adding in the future will be in the form of [Markdown](https://daringfireball.net/projects/markdown) files with [front matter](https://gohugo.io/content-management/front-matter/) that tells Hugo how to handle them. However, Hugo can get you started with that very simply:
 
 1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
-2. Copy/paste the following and then press **Return** or **Enter**:  \
-```hugo new posts/my-first-post.md```  \
+2. Copy/paste the following and then press **Return** or **Enter**: {{< highlight bash >}}hugo new posts/my-first-post.md{{< /highlight >}}
 This will create a new Markdown file, *my-first-post.md*, which produces this arrangement: 
 	- mysite
 		- content
@@ -143,9 +151,7 @@ You can edit this and any other Markdown file with a plain-text editor, which ev
 In order to see what's going on in your browser, you now have to start Hugo's built-in Web server. This is one of the coolest things about Hugo, because it builds giant Web sites at staggering speed, far more quickly than the vast majority of other SSGs. The [Smashing Magazine site](https://www.smashingmagazine.com) is built on it.
 
 1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
-2. Copy/paste the following and then press **Return** or **Enter**:  \
-```hugo server -D```  \
-	This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]
+2. Copy/paste the following and then press **Return** or **Enter**:{{< highlight bash >}}hugo server -D{{< /highlight >}} This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]
 	
 [^drafts]: This will help while you're creating content; normally, you'd just use ```hugo server``` without the ```-D``` on the end, because you wouldn't publish a file if it was still a draft. The default for that command you used in **STEP 4: Add some content** is to create a draft file.
 
