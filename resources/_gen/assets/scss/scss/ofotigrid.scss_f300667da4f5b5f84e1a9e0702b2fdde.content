@@ -646,12 +646,16 @@ nav {
   .chroma code.language-md,
   .chroma code.language-cmd,
   .chroma code.language-bash,
-  .chroma span.o {
+  .chroma code.language-text,
+  .chroma code.language-js,
+  .chroma span.o,
+  .chroma span.nx {
     color: white; }
   .chroma span.c {
     color: #88ff88; }
   .chroma span.p {
     color: #ffaa00; }
+  .chroma span.s1,
   .chroma span.s2,
   .chroma span.nt {
     color: #ddcc55; }

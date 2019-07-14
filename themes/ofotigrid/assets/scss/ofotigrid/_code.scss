@@ -5,8 +5,11 @@
 	code.language-css,
 	code.language-md,
 	code.language-cmd,
-	code.language-bash, 
-	span.o  {
+	code.language-bash,
+	code.language-text,
+	code.language-js, 
+	span.o,
+	span.nx  {
 		color: white;
 	}
 	span.c {
@@ -17,6 +20,7 @@
 		color: $code-color-orange-dark-mode;
 	}
 
+	span.s1,
 	span.s2,
 	span.nt {
 		color: $code-color-yellow-dark-mode;
