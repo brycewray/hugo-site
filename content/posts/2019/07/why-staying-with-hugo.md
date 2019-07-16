@@ -12,7 +12,7 @@ date: 2019-07-14T20:45:00-05:00
 
 #final_date: 2019-07-14T20:45:00-05:00
 
-#lastmod: DATE
+lastmod: 2019-07-15T20:25:00-05:00
 
 draft: false
 
@@ -179,7 +179,7 @@ Late in the third week of this effort, even as I got those last few items workin
 
 ## FUBARed footnotes
 
-One other thing kept nagging at me, also: footnotes. Here on the Hugo site, as I [explained](posts/2019/02/ia-for-io) back in February, I can type stuff like this:
+One other thing kept nagging at me, also: footnotes. Here on the Hugo site, as I [explained](/posts/2019/02/ia-for-io) back in February, I can type stuff like this:
 
 {{< highlight md >}}
 This is how you do footnotes[^footnoteInfo] in 
