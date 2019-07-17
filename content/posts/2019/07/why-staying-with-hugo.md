@@ -12,7 +12,7 @@ date: 2019-07-14T20:45:00-05:00
 
 #final_date: 2019-07-14T20:45:00-05:00
 
-lastmod: 2019-07-15T20:25:00-05:00
+lastmod: 2019-07-16T19:00:00-05:00
 
 draft: false
 
@@ -26,7 +26,7 @@ featured_image: images/hugo-logo-more-white-space.svg
 
 featured_image_alt: Logo for the Hugo static site generator.
 
-featured_image_caption: "Image: Hugo logo by Steve Francia, sourced from gohugo.io."
+featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 
 ---
 
@@ -259,7 +259,7 @@ It wasn't worth it.
 
 Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
-[^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the creator of Hugo) "liked" that tweet.
+[^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Will have more to say about this in a future post, butl am keeping <a href="https://t.co/QPSmjqXwft">https://t.co/QPSmjqXwft</a> firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw">July 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 

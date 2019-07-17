@@ -1,5 +1,5 @@
 .chroma {
-	background-color: $black;
+	background-color: $chroma-bkgd;
 
 	code.language-html, 
 	code.language-css,
@@ -10,26 +10,23 @@
 	code.language-js, 
 	span.o,
 	span.nx  {
-		color: white;
+		color: black;
 	}
 	span.c {
-		color: $code-color-dark-mode;
+		color: $code-color;
 	}
 
-	span.p {
-		color: $code-color-orange-dark-mode;
-	}
-
+	span.p, 
 	span.s1,
 	span.s2,
 	span.nt {
-		color: $code-color-yellow-dark-mode;
+		color: $code-color-tan;
 	}
 
 	span.gs,
 	span.gh,
 	span.ge {
-		color: $code-color-blueLight-dark-mode;
+		color: $blueFirst;
 	}
 
 	span.gs {

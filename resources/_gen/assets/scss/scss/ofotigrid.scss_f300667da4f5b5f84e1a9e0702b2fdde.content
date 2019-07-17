@@ -1,3 +1,77 @@
+.chroma {
+  background-color: #ededed; }
+  .chroma code.language-html,
+  .chroma code.language-css,
+  .chroma code.language-md,
+  .chroma code.language-cmd,
+  .chroma code.language-bash,
+  .chroma code.language-text,
+  .chroma code.language-js,
+  .chroma span.o,
+  .chroma span.nx {
+    color: black; }
+  .chroma span.c {
+    color: #006400; }
+  .chroma span.p,
+  .chroma span.s1,
+  .chroma span.s2,
+  .chroma span.nt {
+    color: #996600; }
+  .chroma span.gs,
+  .chroma span.gh,
+  .chroma span.ge {
+    color: #0088ff; }
+  .chroma span.gs {
+    font-weight: bold; }
+  .chroma span.ge {
+    font-style: italic; }
+
+pre,
+code {
+  font-family: Menlo, Consolas, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+code {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  color: #006400;
+  font-size: 85%; }
+
+pre {
+  margin: 0;
+  margin: 0;
+  padding: 1em;
+  padding: 1rem; }
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0; }
+
+/*
+pre code span {
+	color: $code-color-dark-mode !important;
+}
+*/
+.highlight {
+  background-color: transparent;
+  border-radius: 3px;
+  line-height: 1.4;
+  margin: 0 0 0.5em;
+  margin: 0 0 0.5rem;
+  padding: 0; }
+  .highlight pre {
+    margin-bottom: 0;
+    overflow-x: auto; }
+  .highlight .lineno {
+    color: #aaa;
+    display: inline-block;
+    padding: 0 .75em 0 .25em;
+    padding: 0 .75rem 0 .25rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none; }
+
 html,
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -162,6 +236,12 @@ a.footnote-return {
 @media (prefers-color-scheme: dark) {
   html, body {
     background: #181818; }
+  .chroma, code {
+    background-color: #cdcdcd; }
+  span.gs,
+  span.gh,
+  span.ge {
+    color: #0000aa !important; }
   .card-body {
     background: #333; }
   body, .text-body {
@@ -178,9 +258,6 @@ a.footnote-return {
     color: #00bbff; }
   blockquote, .featured-image-caption {
     color: #a8a8a8 !important; }
-  code {
-    color: #88ff88 !important;
-    background-color: #303030 !important; }
   table.noborders tr {
     background-color: #ddd;
     color: #333; }
@@ -638,81 +715,6 @@ nav {
     nav li {
       margin-left: 3em;
       margin-bottom: 0; } }
-
-.chroma {
-  background-color: #000; }
-  .chroma code.language-html,
-  .chroma code.language-css,
-  .chroma code.language-md,
-  .chroma code.language-cmd,
-  .chroma code.language-bash,
-  .chroma code.language-text,
-  .chroma code.language-js,
-  .chroma span.o,
-  .chroma span.nx {
-    color: white; }
-  .chroma span.c {
-    color: #88ff88; }
-  .chroma span.p {
-    color: #ffaa00; }
-  .chroma span.s1,
-  .chroma span.s2,
-  .chroma span.nt {
-    color: #ddcc55; }
-  .chroma span.gs,
-  .chroma span.gh,
-  .chroma span.ge {
-    color: #88ddff; }
-  .chroma span.gs {
-    font-weight: bold; }
-  .chroma span.ge {
-    font-style: italic; }
-
-pre,
-code {
-  font-family: Menlo, Consolas, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-
-code {
-  background-color: #f9f9f9;
-  border-radius: 3px;
-  color: #006400;
-  font-size: 85%; }
-
-pre {
-  margin: 0;
-  margin: 0;
-  padding: 1em;
-  padding: 1rem; }
-
-pre code {
-  background-color: transparent;
-  color: inherit;
-  font-size: 100%;
-  padding: 0; }
-
-/*
-pre code span {
-	color: $code-color-dark-mode !important;
-}
-*/
-.highlight {
-  background-color: transparent;
-  border-radius: 3px;
-  line-height: 1.4;
-  margin: 0 0 0.5em;
-  margin: 0 0 0.5rem;
-  padding: 0; }
-  .highlight pre {
-    margin-bottom: 0;
-    overflow-x: auto; }
-  .highlight .lineno {
-    color: #aaa;
-    display: inline-block;
-    padding: 0 .75em 0 .25em;
-    padding: 0 .75rem 0 .25rem;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none; }
 
 .container-posts-cards {
   max-width: 95%;

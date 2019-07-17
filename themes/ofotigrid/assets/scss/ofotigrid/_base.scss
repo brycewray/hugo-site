@@ -205,7 +205,17 @@ a.footnote-return{
     background: $background-dark-mode;
   }
 
-  .card-body {
+	.chroma, code {
+		background-color: $chroma-bkgd-dark-mode;
+	}
+
+	span.gs, 
+	span.gh, 
+	span.ge {
+		color: $darkblue !important;
+	}
+
+	.card-body {
     background: $default-color;
   }
 
@@ -233,11 +243,6 @@ a.footnote-return{
 
   blockquote, .featured-image-caption {
     color: $grey-2-dark-mode !important;
-  }
-
-  code {
-    color: $code-color-dark-mode !important;
-    background-color: $code-bkgd-dark-mode !important;
   }
 
   table.noborders tr {
