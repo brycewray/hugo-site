@@ -1,7 +1,7 @@
 baseURL = "https://brycewray.com/"
 languageCode = "en-us"
 title = "BryceWray.com"
-theme = "ofotigrid"
+# theme = "ofotigrid"
 
 summaryLength = 30 # words
 FootnoteReturnLinkContents = "&#8593;"
