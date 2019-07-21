@@ -10,6 +10,8 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
 
+Paginate = 5 #so five will appear on each page
+
 [params]
     Author = "Bryce Wray"
     Description = "Bryce Wray’s Web site — observations and opinions"
