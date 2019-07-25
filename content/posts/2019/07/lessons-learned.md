@@ -125,6 +125,6 @@ At some point, the SSG folks will have to decide whether they do indeed want to 
 
 So, yes, I learned a lot of things I hadn't expected to learn, or in some cases wanted to learn. But I thought they were worth bringing to your attention, so there you are. I hope you find them useful.
 
-I have no particular place for this one last note, so I'll just toss it in here at the end. You'll find either insight, or humor, or perhaps both in [this Twitter thread](https://twitter.com/stowball/status/1151314822400577536) about the drawbacks of the many JavaScript "framework"-based SSGs that are Kewl today.
+I have no particular place for this one last note, so I'll just toss it in here at the end: you'll find either insight, or humor, or perhaps both in [this Twitter thread](https://twitter.com/stowball/status/1151314822400577536) about the drawbacks of the many JavaScript "framework"-based SSGs that are Kewl today.
 
 Discuss.
