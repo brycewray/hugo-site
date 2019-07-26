@@ -119,7 +119,7 @@ So far, fine. Then&nbsp;.&nbsp;.&nbsp;.
 
 Assuming you're not a dev, go ahead and re-read that. I'll wait.
 
-At some point, the SSG folks will have to decide whether they do indeed want to maintain their role as [Merlin](https://en.wikipedia.org/wiki/Merlin)s rather than making SSGs accessible to ordinary users, particularly in corporate life. I mean, WordPress is a God-awful, performance-eating, security-defying thing---but at least your average Joe or Jane, particularly your average Joe or Jane in corporate settings that **aren't going to hire dev help for them**, can use it. Try that with **any** SSG.
+At some point, the SSG folks will have to decide whether they do indeed want to maintain their role as [Merlin](https://en.wikipedia.org/wiki/Merlin)s rather than making SSGs accessible to ordinary users, particularly in corporate life. I mean, WordPress is a God-awful, performance-eating, security-defying thing---but at least your average Joe or Jane, and most notably your average Joe or Jane in corporate settings that **aren't going to hire dev help for them**, can use it. Try that with **any** SSG.
 
 ## A parting shot
 
