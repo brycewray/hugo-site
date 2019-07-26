@@ -12,7 +12,7 @@ date: 2019-06-08T20:25:00-05:00
 
 #final_date: 2019-06-08T08:25:00-05:00
 
-lastmod: 2019-06-11T20:15:00-05:00
+lastmod: 2019-07-25T19:05:00-05:00
 
 draft: false # note!
 
@@ -32,7 +32,7 @@ featured_image_caption: "MailMate, with its Latin-displaying “distortion mode�
 
 My [last post](/posts/2019/05/the-holy-mail) closed with:
 
-> Do I ever look at other *[email]* apps any more? Oh, sure. It's what I sometimes call "the geek's prereogative."
+> Do I ever look at other *[email]* apps any more? Oh, sure. It's what I sometimes call "the geek's prerogative."
 
 And that continues, as I have become interested in [MailMate](https://freron.com). This macOS-only, [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)-only app is a creation of Benny Kjær Nielsen, a Danish indie developer and holder of a doctorate in computer science.
 
