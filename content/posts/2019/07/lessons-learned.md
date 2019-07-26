@@ -10,7 +10,7 @@ date: 2019-07-21T17:43:00-05:00
 
 #finaldate: 2019-07-27T10:00:00-05:00
 
-lastmod: 2019-07-25T21:20:00-05:00
+lastmod: 2019-07-25T21:28:00-05:00
 
 draft: false
 
@@ -44,7 +44,7 @@ From the beginning, I'd had my local Hugo directory set up for cloud storage---f
 
 [^Dropbox]: As I [noted](/posts/2019/02/back-up-jack) earlier this year, Dropbox had already ceased to be my go-to cloud sync vendor, and I was keeping only a small quantity of files on there, none of which *had* to be there. Then, a few days ago, Dropbox unexpectedly revamped how it works on the Mac in a way I---and [others](https://www.inc.com/jason-aten/dropbox-just-announced-a-major-redesign-that-youre-going-to-love-until-you-realize-it-has-a-fatal-flaw.html)---found objectionable, so I decided to cut the cord, moving my remaining files away and killing the account.
 
-While I was trying Gatsby, I had its directory in iCloud Drive also, and soon saw that, occasionally, files I killed would come back, irrespective of what I'd done in the [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml). Mystified, I did some research and soon found that there was a very good reason not to do that: in essence, using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).
+While I was trying Gatsby, I had its directory in iCloud Drive also, and soon saw that, occasionally, files I killed would come back, irrespective of what I'd done in the [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml). Mystified, I did some research and found that there was a very good reason not to do that: in essence, using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).
 
 So, now, I keep my Hugo directory in a drive that's not sync'd with the cloud. [Of course](/posts/2019/02/back-up-jack), it definitely is fully backed up as well as pushed to a remote repo. In fact, I now have it in three different remote repos: not only the original [Bitbucket](https://bitbucket.org) repo which feeds the site to [Netlify](https://www.netlify.com) but also repos on [GitHub](https://github.com) and [GitLab](https://gitlab.com).[^NetlifyHost]
 
