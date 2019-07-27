@@ -54,7 +54,7 @@ code {
 pre {
   margin: 0;
 	margin: 0;
-	padding: 1em;
+	padding: 1em; /* old browsers */
 	padding: 1rem;
 }
 
@@ -75,7 +75,7 @@ pre code span {
   background-color: transparent;
   border-radius: 3px;
   line-height: 1.4;
-  margin: 0 0 0.5em;
+  margin: 0 0 0.5em; /* old browsers */
   margin: 0 0 0.5rem;
   padding: 0;
 
@@ -87,7 +87,7 @@ pre code span {
   .lineno {
     color: $default-tint;
     display: inline-block; // Ensures the null space also isn't selectable
-    padding: 0 .75em 0 .25em;
+    padding: 0 .75em 0 .25em; /* old browsers */
     padding: 0 .75rem 0 .25rem;
     // Make sure numbers aren't selectable
     -webkit-user-select: none;

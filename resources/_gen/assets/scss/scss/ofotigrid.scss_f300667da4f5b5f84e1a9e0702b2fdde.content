@@ -40,6 +40,7 @@ pre {
   margin: 0;
   margin: 0;
   padding: 1em;
+  /* old browsers */
   padding: 1rem; }
 
 pre code {
@@ -58,6 +59,7 @@ pre code span {
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 0.5em;
+  /* old browsers */
   margin: 0 0 0.5rem;
   padding: 0; }
   .highlight pre {
@@ -67,6 +69,7 @@ pre code span {
     color: #aaa;
     display: inline-block;
     padding: 0 .75em 0 .25em;
+    /* old browsers */
     padding: 0 .75rem 0 .25rem;
     -webkit-user-select: none;
     -moz-user-select: none;
