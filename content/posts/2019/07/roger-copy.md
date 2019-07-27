@@ -24,7 +24,7 @@ featured_image: images/time-2387976_1280x853_60pct.jpg
 
 featured_image_alt: Image to come.
 
-featured_image_caption: "Image by Pixabay" # quotation marks to allow colon
+featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 ---
 
