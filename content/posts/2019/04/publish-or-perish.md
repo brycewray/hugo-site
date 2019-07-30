@@ -12,7 +12,7 @@ date: 2019-04-11T19:00:00-05:00
 
 #final_date: 2019-04-14T14:00:00-05:00
 
-lastmod: 2019-07-14T11:40:00-05:00
+lastmod: 2019-07-29T20:55:00-05:00
 
 draft: false # note!
 
@@ -93,7 +93,8 @@ The Netlify interface then will bring you to your Netlify **dashboard**. You'll 
 
 You'll be asked to select a Bitbucket repo to use. You probably have only the one we've been talking about up to now but, if by chance, you have more than one, be sure to select the one that's for this site. (You also probably have only one **branch** for that repo; if you're already into [branching with your repo](https://confluence.atlassian.com/bitbucket/branching-a-repository-223217999.html), I really doubt you need my help!)
 
-You'll also be asked for your **build command**---which means just specifying which version of Hugo you want Netlify to use. Select the same version you've been running on your local Hugo setup. If you don't know what that is, open your local system's CLI app and type into it the following command, followed by **Return** or **Enter**: {{< highlight bash >}}hugo version{{< /highlight >}}
+You'll also be asked for your **build command**---which means just specifying which version of Hugo you want Netlify to use. Select the same version you've been running on your local Hugo setup. If you don't know what that is, open your local system's CLI app and type into it the following command, followed by **Return** or **Enter**: {{< highlight bash >}}hugo version{{< /highlight >}} 
+
 (This assumes you aren't currently running Hugo on your local system. If you are, you'll need to exit it and then run that command.)
 
 Finally, you'll be asked for your **publish directory**. It should be the same as what your site has, which almost certainly is **publish**.
@@ -101,16 +102,11 @@ Finally, you'll be asked for your **publish directory**. It should be the same a
 At that point, click **Deploy site** and Netlify will take it from there. In a few moments, it'll tell you your site has been published ("deployed"). Of course, it'll have a Netlify URL with a randomly generated name, like "wondrous-weasel-d38a82" or something similar. Since you obviously don't want to have to encourage people to visit your site at *wondrous-weasel-d38a82.netlify.com* (well, I hope not, anyway), there's one more thing you have to do, and that's **connect it to that domain** you set up in **Step 6e**. Netlify documentation [tells you how](https://www.netlify.com/docs/custom-domains/), and this is the gist of it:
 
 1. In your Netlify site (i.e., that *wondrous-weasel-d38a82*-type thing---probably in *apps.netlify.com/sites/wondrous-weasel-d38a82/overview*, but your mileage may vary), click **Settings** and then **Domain Management**.
-
 2. In the **Custom domains** panel, the only thing you should see so far is the Netlify-assigned *wondrous-weasel-d38a82*-type thing.
-
 3. Click **Add custom domain**.
-
 4. Enter the domain you obtained in **Step 6e**, then click **Verify**. Netlify will *validate* the domain. Since you've already got it, it will appear as unavailable. (Netlify will, for a fee, get the domain for you at this step if you haven't already obtained it, but I suggest having done so already as described earlier; in my experience, it's best to keep your hosting vendor and your domain vendor separate). The domain you've entered should now appear grayed-out with a **Check [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) configuration** link. Click it for customized instructions as to what to do next. **I recommend using [Netlify's built-in DNS service](https://www.netlify.com/docs/dns/)** of the options you'll see. So, let's say you agree. Then&nbsp;.&nbsp;.&nbsp;.
-
 5. **Back in the browser window/tab with the domain provider's site**, use those Netlify instructions to have the domain's **DNS records** point to your "wondrous-weasel-[whatever]" site. (How you do that will vary by domain provider; Namecheap, my recommended provider, makes it pretty easy as [explained here](https://www.namecheap.com/support/knowledgebase/article.aspx/9837/46/how-to-connect-a-domain-to-a-server-or-hosting#hostingwtrd).)  \
 Once you've made this change with the domain provider, it will start world-wide [**propagation**](https://www.namecheap.com/support/knowledgebase/article.aspx/9622/10/dns-propagation--explained). While some domain providers can make that happen within a few minutes, it may take a while---sometimes, a good while, even a day or two. But let's be optimistic and take the "within a few minutes" choice.
-
 6. **Back in the Netlify browser window/tab**, refresh it and see if the custom domain is still grayed-out. Once it no longer is---and, more to the point, when it shows **NETLIFY DNS** next to it---that should mean your site is up and running for real! So, if your custom domain is *mygreatwebsite.com*, see if you can visit your Hugo site at that location. (Truthfully, it'll work with either *www.mygreatwebsite.com* or *mygreatwebsite.com* if the DNS records have been set up as per those Netlify instructions I mentioned before.)
 
 ## Going forward&nbsp;.&nbsp;.&nbsp;.

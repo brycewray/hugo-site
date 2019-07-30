@@ -12,7 +12,7 @@ date: 2018-10-25T07:40:00-05:00
 
 final_date: 2018-10-25T07:40:00-05:00
 
-lastmod: 2019-07-14T11:40:00-05:00
+lastmod: 2019-07-29T20:45:00-05:00
 
 draft: false # note!
 
@@ -55,7 +55,6 @@ The only “real” text in this view was the timestamp, on the right side under
 In that era, the graphics-as-text approach was a technological necessity for two reasons:
 
 1. There was no standard way to deliver Web “fonts” automatically, nor was it always easy to detect which computer platform and which browser were displaying the text; so it was necessary to use only those “fonts” you could be sure would be on any computer capable of running a Web browser. (At least back then, you could assume they _were_ computers, since this was well before Web-capable phones and tablets appeared.) So, yes, people saw a lot of Times New Roman, Arial, Tahoma, Verdana, and the like.
-
 2. If there _had_ been the means to deliver such “fonts,” the slow Internet connections of that era would’ve made their use unpopular. Even today, there can be some delivery issues with Web “fonts” that require [effective mitigation](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#optimizing_loading_and_rendering).
 
 .&nbsp;.&nbsp;.&nbsp;And that, conveniently enough, brings me to my next point.

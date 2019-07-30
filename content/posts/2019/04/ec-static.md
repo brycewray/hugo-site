@@ -10,7 +10,7 @@ author: Bryce Wray
 
 date: 2019-04-07T14:00:00-05:00
 
-lastmod: 2019-07-14T11:40:00-05:00
+lastmod: 2019-07-29T20:55:00-05:00
 
 #final_date: 2019-04-07T14:00:00-05:00
 
@@ -151,10 +151,8 @@ You can edit this and any other Markdown file with a plain-text editor, which ev
 In order to see what's going on in your browser, you now have to start Hugo's built-in Web server. This is one of the coolest things about Hugo, because it builds giant Web sites at staggering speed, far more quickly than the vast majority of other SSGs. The [Smashing Magazine site](https://www.smashingmagazine.com) is built on it.
 
 1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
-2. Copy/paste the following and then press **Return** or **Enter**:{{< highlight bash >}}hugo server -D{{< /highlight >}} This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]
-	
+2. Copy/paste the following and then press **Return** or **Enter**:{{< highlight bash >}}hugo server -D{{< /highlight >}} This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]	
 [^drafts]: This will help while you're creating content; normally, you'd just use ```hugo server``` without the ```-D``` on the end, because you wouldn't publish a file if it was still a draft. The default for that command you used in **STEP 4: Add some content** is to create a draft file.
-
 3. **To view your locally-hosted site**, use your Web browser to visit ```http://localhost:1313/```.  \
 You'll see that it already has one post listed, *my-first-post*, from what you did in **STEP 4: Add some content**. The resulting URL for it is ```http://localhost:1313/posts/my-first-post/```.
 

@@ -144,13 +144,21 @@ sup a, a.previous, a.next, .footnote-return {
   border-bottom: 0; }
 
 blockquote {
-  border-left: 0.25em solid #c8c8c8;
-  border-left: 0.25rem solid #c8c8c8;
+  /*
+	border-left: .25em solid $grey-2; // old browsers
+	border-left: .25rem solid $grey-2;
+	*/
   color: #656565;
-  margin: .8em 0;
+  margin-right: 1em;
+  margin-right: 1rem;
+  margin-left: 2em;
+  margin-left: 2rem;
+  /*
+	margin: .8em 0; // old browsers
   margin: .8rem 0;
-  padding: .5em 1em;
-  padding: .5rem 1rem; }
+  padding: .5em 1em; // old browsers
+	padding: .5rem 1rem;
+	*/ }
   blockquote p:last-child {
     margin-bottom: 0; }
   @media (min-width: 600px) {
@@ -227,6 +235,7 @@ a.footnote-return {
   /* 16:9 */
   padding-top: 25px;
   height: 0;
+  margin-top: 1em;
   margin-bottom: 1em; }
   .videoWrapper iframe {
     position: absolute;
@@ -340,7 +349,7 @@ img.featured-image {
   margin-left: auto; }
   @media (min-width: 900px) {
     img.featured-image {
-      width: 50%; } }
+      width: 70%; } }
 
 .featured-image-caption {
   margin-top: 0;
@@ -463,8 +472,22 @@ img.postsFeatImg {
     margin: 1em auto 0 auto;
     width: 80%; }
     @media screen and (min-width: 769px) {
-      .container-narrower {
-        width: 34em; } }
+      .container-narrower h1, .container-narrower .h1, .container-narrower h2, .container-narrower .h2, .container-narrower h3, .container-narrower .h3, .container-narrower h4, .container-narrower .h4, .container-narrower h5, .container-narrower .h5, .container-narrower p, .container-narrower time, .container-narrower twitter-widget, .container-narrower ul, .container-narrower ol, .container-narrower hr, .container-narrower .highlight {
+        margin: 1em auto 0 auto;
+        width: 50%; }
+      .container-narrower ul .highlight, .container-narrower ol .highlight {
+        width: 100%; }
+      .container-narrower li ul, .container-narrower li ol {
+        margin: 0.25em auto 0 auto;
+        width: 85%;
+        padding-right: 2em;
+        padding-left: 1.5em; }
+      .container-narrower time {
+        display: block;
+        margin-top: 0.25em;
+        margin-top: 0.25rem; }
+      .container-narrower image {
+        width: 80%; } }
   .container-other-posts {
     margin: 0 auto 1em auto;
     width: 90%;

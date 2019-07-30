@@ -82,7 +82,7 @@ img.featured-image {
   display: block;
   width: 90%;
   @media (min-width: 900px) {
-    width: 50%;
+    width: 70%;
   }
   height: auto;
   margin-right: auto;
@@ -242,7 +242,29 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
     margin: 1em auto 0 auto;
     width: 80%;
     @media screen and (min-width: 769px) {
-      width: 34em;
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, ul, ol, hr, .highlight {
+				margin: 1em auto 0 auto;
+				width: 50%;
+			}
+
+			ul .highlight, ol .highlight {
+				width: 100%; // within that element
+			}
+
+			li ul, li ol {
+				margin: 0.25em auto 0 auto;
+				width: 85%;
+				padding-right: 2em;
+				padding-left: 1.5em;
+			}
+			time {
+				display: block;
+				margin-top: 0.25em; // old browsers
+				margin-top: 0.25rem;
+			}
+			image {
+				width: 80%;
+			}
     }
   }
   &-other-posts {
