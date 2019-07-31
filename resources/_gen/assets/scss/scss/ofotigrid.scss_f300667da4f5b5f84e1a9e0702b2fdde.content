@@ -341,6 +341,9 @@ h3.twitter-border {
   h3.twitter-border a {
     border-bottom: 0; }
 
+.twitter-timeline {
+  width: 100vw !important; }
+
 img.featured-image {
   display: block;
   width: 90%;
@@ -472,7 +475,7 @@ img.postsFeatImg {
     margin: 1em auto 0 auto;
     width: 80%; }
     @media screen and (min-width: 769px) {
-      .container-narrower h1, .container-narrower .h1, .container-narrower h2, .container-narrower .h2, .container-narrower h3, .container-narrower .h3, .container-narrower h4, .container-narrower .h4, .container-narrower h5, .container-narrower .h5, .container-narrower p, .container-narrower time, .container-narrower twitter-widget, .container-narrower ul, .container-narrower ol, .container-narrower hr, .container-narrower .highlight {
+      .container-narrower h1, .container-narrower .h1, .container-narrower h2, .container-narrower .h2, .container-narrower h3, .container-narrower .h3, .container-narrower h4, .container-narrower .h4, .container-narrower h5, .container-narrower .h5, .container-narrower p, .container-narrower time, .container-narrower twitter-widget, .container-narrower .twitter-tweet, .container-narrower ul, .container-narrower ol, .container-narrower hr, .container-narrower .highlight {
         margin: 1em auto 0 auto;
         width: 50%; }
       .container-narrower ul .highlight, .container-narrower ol .highlight {
