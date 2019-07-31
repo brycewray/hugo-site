@@ -349,7 +349,7 @@ img.featured-image {
   margin-left: auto; }
   @media (min-width: 900px) {
     img.featured-image {
-      width: 70%; } }
+      width: 65%; } }
 
 .featured-image-caption {
   margin-top: 0;
