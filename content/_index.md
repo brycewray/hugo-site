@@ -2,7 +2,7 @@
 
 title: BryceWray.com
 
-description: This is the home page for brycewray.com.
+description: "brycewray.com: Opinions, observations, nerdiness, miscellany." # quotation marks to allow colon
 
 author: Bryce Wray
 
