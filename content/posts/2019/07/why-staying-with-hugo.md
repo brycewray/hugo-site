@@ -12,7 +12,7 @@ date: 2019-07-14T20:45:00-05:00
 
 #final_date: 2019-07-14T20:45:00-05:00
 
-lastmod: 2019-07-31T18:55:00-05:00
+lastmod: 2019-08-01T20:34:00-05:00
 
 draft: false
 
@@ -169,7 +169,7 @@ The nights and weekends assumed a reasonably predictable pattern. Nearly every f
 
 But, by the end of the "long weekend" starting with the Fourth of July holiday, the new site on my local system closely resembled the Hugo site for the first time, thanks especially to that help from the ["kind stranger" on Reddit to whom, unfortunately, I had no gold to give](https://knowyourmeme.com/memes/edit-thanks-for-the-gold-kind-stranger). Fortunately, getting [SCSS/SASS](https://en.wikipedia.org/wiki/Sass_(stylesheet_language)) to work on the Gatsby site through the use of `gatsby-plugin-sass` had proved much easier than some of the other plugin-related tinkering, so for the most part I was able to use the SCSS from this site without any serious changes. That provided the look-and-feel of this site's header, footer, nav menu, columns, and so on.
 
-In addition, the [*gatsby-remark-smartypants* plugin](https://www.gatsbyjs.org/packages/gatsby-remark-smartypants/) produced the typographical effects to which I'd become accustomed here on the Hugo site such as "smart" quotes and em- and en-dashes from `--` and `---` respectively. Wouldn't have considered doing it any other way.
+In addition, the [*gatsby-remark-smartypants* plugin](https://www.gatsbyjs.org/packages/gatsby-remark-smartypants/) produced the typographical effects to which I'd become accustomed here on the Hugo site such as "smart" quotes and em- and en-dashes from `---` and `--` respectively. Wouldn't have considered doing it any other way.
 
 Finally, my not-often-used-but-still-wanted [Talkyard](https://www.talkyard.io)-powered comments area on each post worked, because the [developer](https://twitter.com/kajmagnus3) wisely provided a [Gatsby way](https://gatsby-demo.talkyard.io/demo-and-installation/) of doing it just as he had a [Hugo way](https://hugo-demo.talkyard.io/posts/demo-and-instructions/) (not to mention a [Jekyll way](https://jekyll-demo.talkyard.io/2018/01/09/installation-instructions.html) and a [Hexo way](https://hexo-demo.talkyard.io/2018/01/04/demo-and-instructions/)). So that, too, was good to go.
 
