@@ -22,7 +22,7 @@ discussionId: "2019-07-roger-copy"
 
 featured_image: images/time-2387976_1280x853_60pct.jpg
 
-featured_image_alt: Image to come.
+featured_image_alt: Various timepieces synchronized to the same time, illustrating synchronicity.
 
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
