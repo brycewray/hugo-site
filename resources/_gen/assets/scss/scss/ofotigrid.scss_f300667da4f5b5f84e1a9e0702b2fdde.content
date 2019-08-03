@@ -363,6 +363,18 @@ img.featured-image {
   font-size: 0.75rem;
   color: #656565; }
 
+table.leagues {
+  width: 90%;
+  margin: 1em auto 0 auto;
+  margin: 1rem auto 0 auto;
+  border: 0;
+  border-collapse: collapse; }
+  @media (min-width: 900px) {
+    table.leagues {
+      width: 60%; } }
+  table.leagues td.col {
+    width: 50%; }
+
 table.noborders {
   width: 100%;
   margin: 1.5em auto 1em auto;
@@ -474,10 +486,17 @@ img.postsFeatImg {
   .container-narrower {
     margin: 1em auto 0 auto;
     width: 80%; }
+    .container-narrower table {
+      margin: 1em auto 0 auto;
+      width: 80%; }
     @media screen and (min-width: 769px) {
-      .container-narrower h1, .container-narrower .h1, .container-narrower h2, .container-narrower .h2, .container-narrower h3, .container-narrower .h3, .container-narrower h4, .container-narrower .h4, .container-narrower h5, .container-narrower .h5, .container-narrower p, .container-narrower time, .container-narrower twitter-widget, .container-narrower .twitter-tweet, .container-narrower ul, .container-narrower ol, .container-narrower hr, .container-narrower .highlight {
+      .container-narrower h1, .container-narrower .h1, .container-narrower h2, .container-narrower .h2, .container-narrower h3, .container-narrower .h3, .container-narrower h4, .container-narrower .h4, .container-narrower h5, .container-narrower .h5, .container-narrower p, .container-narrower time, .container-narrower twitter-widget, .container-narrower table, .container-narrower .twitter-tweet, .container-narrower ul, .container-narrower ol, .container-narrower hr, .container-narrower .highlight {
         margin: 1em auto 0 auto;
         width: 50%; }
+      .container-narrower .footnotes ol li {
+        margin: 1em auto 0 auto;
+        padding-left: 0em;
+        padding-right: 2em; }
       .container-narrower ul .highlight, .container-narrower ol .highlight {
         width: 100%; }
       .container-narrower li ul, .container-narrower li ol {

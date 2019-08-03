@@ -103,6 +103,20 @@ img.featured-image {
   color: $grey-1;
 }
 
+table.leagues {
+	width: 90%;
+	margin: 1em auto 0 auto; // old browsers
+	margin: 1rem auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+	@media (min-width: 900px) {
+		width: 60%;
+	}
+	td.col {
+		width: 50%;
+	}
+}
+
 table.noborders {
   width: 100%;
   @media (min-width: 900px){
@@ -244,11 +258,21 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
   }
   &-narrower {
     margin: 1em auto 0 auto;
-    width: 80%;
+		width: 80%;
+		table {
+			margin: 1em auto 0 auto;
+			width: 80%;
+		}
     @media screen and (min-width: 769px) {
-      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, .twitter-tweet, ul, ol, hr, .highlight {
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight {
 				margin: 1em auto 0 auto;
 				width: 50%;
+			}
+
+			.footnotes ol li {
+				margin: 1em auto 0 auto;
+				padding-left: 0em;
+				padding-right: 2em;
 			}
 
 			ul .highlight, ol .highlight {
