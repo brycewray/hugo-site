@@ -12,7 +12,7 @@ date: 2019-08-03T11:00:00-05:00
 
 #final_date: 2019-08-03T11:00:00-05:00
 
-lastmod: 2019-08-04T07:58:00-05:00
+lastmod: 2019-08-04T08:04:00-05:00
 
 draft: false # note!
 
@@ -38,7 +38,7 @@ I speak, of course, of how Major League Baseball (MLB) and the National Football
 
 The NFL's current National and American Conferences date from when the NFL [merged](https://en.wikipedia.org/wiki/American_League) with the original American Football League (AFL) in 1966 and began playing a unified---but still Conference-oriented---schedule four years later. This arrangement had a precedent from the early 1950s after the NFL absorbed its 1940s rival, the All-American Football Conference (AAFC)[^AAFC] and [operated for three years with National and American Conferences before reverting to Eastern and Western Conferences in 1953](https://en.wikipedia.org/wiki/Eastern_and_Western_Conferences_(NFL)_1933–69).
 
-[^AAFC]: The only AAFC survivors to this day are the San Francisco 49ers and Baltimore Ravens; and, of the two, only the 49ers still haven't changed their names or metro areas. The Ravens were the original Cleveland Browns; the current Browns team was added as an expansion franchise in 1999, three years after the original Browns moved to Baltimore---although [the league let the franchise's records, dating back to the AAFC days, stay with the new team](https://en.wikipedia.org/wiki/Baltimore_Ravens), as a sop to Cleveland fans after their outrage how the original Browns left. In other words, the *current* Browns organization claims to be the original franchise from the AAFC. History and reality, cruel though they may be to the spurned and justifiably angry Browns fans of twenty years ago, say otherwise.
+[^AAFC]: The only AAFC survivors to this day are the San Francisco 49ers and Baltimore Ravens; and, of the two, only the 49ers still haven't changed their names or metro areas. The Ravens were the original Cleveland Browns; the current Browns team was added as an expansion franchise in 1999, three years after the original Browns moved to Baltimore---although [the league let the franchise's records, dating back to the AAFC days, stay with the new team](https://en.wikipedia.org/wiki/Baltimore_Ravens), as a sop to Cleveland fans after their outrage over how the original Browns left. In other words, the *current* Browns organization claims to be the original franchise from the AAFC. History and reality, cruel though they may be to the spurned and justifiably angry Browns fans of twenty years ago, say otherwise.
 
 Meanwhile, MLB has been two leagues since 1903, when the [1876-vintage](https://en.wikipedia.org/wiki/National_League) National League (NL) reluctantly began having its champion play the [1901-vintage](https://en.wikipedia.org/wiki/American_League)[^ALWL] American League (AL) champion in the (usually[^WS]) annual World Series.
 
