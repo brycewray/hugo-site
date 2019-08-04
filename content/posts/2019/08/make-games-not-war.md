@@ -12,6 +12,8 @@ date: 2019-08-03T11:00:00-05:00
 
 #final_date: 2019-08-03T11:00:00-05:00
 
+lastmod: 2019-08-04T07:54:00-05:00
+
 draft: false # note!
 
 actual_path: /content/posts/2019/08/make-games-not-war
@@ -121,7 +123,7 @@ One additional possibility could be Las Vegas, which already has the NHL and wil
 
 So how would I decide the champions of the new, unified MLB universe each year?
 
-- **Qualifiers**: The four division champions and two wildcards make the playoffs. This is a big change from how MLB does it now, in which qualifiers include six division champions and four wildcards (which quickly get cut down to two wildcards). Nonetheless, I think this makes more sense. Consider that the thickest part of the playoffs occurs just as football, both college and pro, is really starting to get interesting. Thus, fewer teams and fewer series should mean more national focus or, at the very least, less to track. It also means fewer *marginal* teams getting in. I'm not big on the "participation trophy" approach to playoffs---*i.e.*, keeping more teams in the mix longer just to draw butts to seats, regardless of play quality---in the so-called linear sports like baseball, basketball, and hockey. All that said, I do know many, especially fans of the more financially strapped teams who have a hard time staying in there with the top-dollar teams would hate a winnowing-down of MLB playoff spots.
+- **Qualifiers**: The four division champions and two wildcards make the playoffs. This is a big change from how MLB does it now, in which qualifiers include six division champions and four wildcards (which quickly get cut down to two wildcards). Nonetheless, I think this makes more sense. Consider that the thickest part of the playoffs occurs just as football, both college and pro, is really starting to get interesting. Thus, fewer teams and fewer series should mean more national focus or, at the very least, less to track. It also means fewer *marginal* teams getting in. I'm not big on the "participation trophy" approach to playoffs---*i.e.*, keeping more teams in the mix longer just to draw butts to seats, regardless of play quality---in the so-called linear sports like baseball, basketball, and hockey. All that said, I do know many, especially fans of the more financially strapped teams, who have a hard time staying in there with the top-dollar teams would hate a winnowing-down of MLB playoff spots.
 - **Divisional Playoffs**: Best 3-of-5. The top two division champs get a bye while the other two division champs host the two wildcards.
 - **Semifinals**: Best 4-of-7. The top two host the Divisional Playoffs' winners. (Yes, it's a little sad to give up the "LCS" moniker, but it just wouldn't apply any more. Sorry.)
 - **World Series**: Best 4-of-7. And, yes, it's possible this ends up as two teams from *the same division*. But if they're the two best at the end, well, why not?
