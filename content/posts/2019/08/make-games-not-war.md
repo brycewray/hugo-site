@@ -12,7 +12,7 @@ date: 2019-08-03T11:00:00-05:00
 
 #final_date: 2019-08-03T11:00:00-05:00
 
-lastmod: 2019-08-04T08:04:00-05:00
+lastmod: 2019-08-07T12:42:00-05:00
 
 draft: false # note!
 
@@ -50,7 +50,7 @@ Seeing a pattern here? All the arguing was a *long time ago*. The vast majority 
 
 So, too, should be the artificiality of which teams play whom, and how often. Each organization should be one big league, divided on geographical lines, as are the National Hockey League (NHL) and National Basketball Association (NBA)---each of which, by the way, also went through mergers and absorptions with long-ago competitors, but managed to end up doing things correctly with geographically oriented conferences and divisions.
 
-Thus, I offer this modest proposal for peace in our time for the two sticklers. Each is based on the compass, although in many ways it still pays homage to some particularly important long-time rivalries---so, see, I'm *not* completely blowing off history.[^historyGeek]
+Thus, I offer this modest proposal for peace in our time for the two sticklers. Each of the following suggested configurations is based on the compass, although in many ways it still pays homage to some particularly important long-time rivalries---so, see, I'm *not* completely blowing off history.[^historyGeek]
 
 [^historyGeek]: If you ever spent a few minutes swapping trivia with me, you'd know I'm the last person who would want to blow off history, much less USA sports history. I just think we shouldn't celebrate that history at the expense of what makes sense.
 
