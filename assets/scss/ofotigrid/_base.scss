@@ -212,8 +212,8 @@ a.footnote-return{
 @media (prefers-color-scheme: dark) {
   html, body {
     background: $background-dark-mode;
-  }
-
+	}
+	
 	.chroma, code {
 		background-color: $chroma-bkgd-dark-mode;
 	}
