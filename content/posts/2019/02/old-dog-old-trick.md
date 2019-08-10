@@ -12,7 +12,7 @@ date: 2019-02-16T10:50:00-06:00
 
 #final_date: 2019-02-16T10:50:00-06:00
 
-lastmod: 2019-07-14T11:40:00-05:00
+lastmod: 2019-08-09T22:39:00-05:00
 
 draft: false # note!
 
@@ -84,14 +84,14 @@ So why am I sharing my shame? Because I saw posts from *other* people still aski
 
 So I was saved the trouble of an "ie.css" sheet; and my resulting addition to the end of the "style.css" sheet I was already using turned out to be something along these lines:
 
-{{< highlight html >}}
-<!-- ==== for IE 10 and 11 **ONLY** ==== -->
+{{< highlight css >}}
+/* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .slider-text {  
     hey, IE, don’t screw up that text or it’s coitains, see? Coitains.
   }  
 }  
-<!-- ==== end, IE 10 and 11 **ONLY** ==== -->
+/* ==== end, IE 10 and 11 **ONLY** ==== */
 {{< /highlight >}}
 
 .&nbsp;.&nbsp;. or code to that effect. And it worked like a charm.
@@ -112,7 +112,7 @@ Woof.
 
 <hr />
 
-### *Oh, Lord, Helen, he's* still *talking about .&nbsp;.&nbsp;.*
+### Oh, Lord, Helen, he's STILL talking about .&nbsp;.&nbsp;.
 
 *Two things about my [last post](/posts/2019/02/ia-for-io/), an abbreviated revisiting of iA Writer after I'd [previously](/posts/2019/01/blox-sux/) dissed it:*
 
