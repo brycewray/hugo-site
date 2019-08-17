@@ -10,7 +10,7 @@ date: 2019-07-21T17:43:00-05:00
 
 #finaldate: 2019-07-27T10:00:00-05:00
 
-lastmod: 2019-07-25T21:28:00-05:00
+lastmod: 2019-08-17T16:21:00-05:00
 
 draft: false
 
@@ -58,11 +58,11 @@ Well, I want to tell you: in my admittedly limited research, I found this  to be
 
 More often than not, they lack---and their developers show almost a nonchalance about the importance of---"smart" typography (*e.g.*, see [this](https://github.com/getzola/zola/issues/740) regarding the oddly Hugo-like [Zola](https://www.getzola.org) SSG). So, if *you* can put up with&nbsp;.&nbsp;.&nbsp;.
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; color: #333; text-align: center;">goofy-lookin' &quot;punctuation&quot; like this</p>
+<p style="font-size: 1.5em; font-weight: normal; font-family: serif;  text-align: center;">goofy-lookin' &quot;punctuation&quot; like this</p>
 
 .&nbsp;.&nbsp;. as opposed to .&nbsp;.&nbsp;.
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; color: #333; text-align: center;">nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
+<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
 
 .&nbsp;.&nbsp;. fine. I choose otherwise.
 
