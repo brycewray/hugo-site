@@ -9,7 +9,7 @@
   </div>
   <div class="column-home">
     <h2 class="h1" style="margin-bottom: 1.5rem;">Latest posts</h2>
-    {{ range first 2 (where .Pages "Section" "posts") }}				
+    {{ range first 2 (where .Site.RegularPages "Section" "posts") }}				
       <div>          
         
           <h2 class="h5" style="margin-bottom: 0;"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
