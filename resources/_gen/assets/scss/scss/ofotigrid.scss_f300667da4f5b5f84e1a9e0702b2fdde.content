@@ -576,6 +576,33 @@ img.postsFeatImg {
 .talkyard-comments {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
+/* ==== for IE 10 and 11 **ONLY** ==== */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .container-home {
+    border-spacing: 15px;
+    padding: 0; }
+    .container-home .column-home {
+      margin-top: 0;
+      padding-top: 0; }
+      .container-home .column-home h1 {
+        margin-top: 0;
+        padding-top: 0; }
+    .container-home .twitter-timeline {
+      width: 95% !important; }
+  .container {
+    display: inherit; }
+  .bg-dark h3 {
+    margin: 0;
+    padding: 0; }
+  .bg-dark .column-left-end,
+  .bg-dark .column-right-end {
+    display: inherit;
+    text-align: center; }
+  .bg-dark .column-left-end {
+    margin: 0;
+    padding: 0; } }
+
+/* ==== end, IE 10 and 11 **ONLY** ==== */
 header {
   height: 30px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -764,6 +791,16 @@ nav {
       margin-left: 3em;
       margin-bottom: 0; } }
 
+/* ==== for IE 10 and 11 **ONLY** ==== */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  nav ul {
+    margin-left: 48%;
+    text-align: inherit; }
+  .site-logo {
+    margin: 0 0 0.25em 0;
+    padding: 0 0 0 4%; } }
+
+/* ==== end, IE 10 and 11 **ONLY** ==== */
 .container-posts-cards {
   max-width: 95%;
   margin-right: auto;

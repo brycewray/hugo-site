@@ -266,4 +266,17 @@ nav {
   }
 }
 
+/* ==== for IE 10 and 11 **ONLY** ==== */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  nav ul {  
+		margin-left: 48%;
+		text-align: inherit;
+	}
+	.site-logo {
+		margin: 0 0 0.25em 0;
+		padding: 0 0 0 4%;
+	}
+}  
+/* ==== end, IE 10 and 11 **ONLY** ==== */
+
 // === End of primary settings for larger screens ===
