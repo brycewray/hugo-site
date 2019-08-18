@@ -122,7 +122,7 @@ Indeed, with Dropbox continuing to make moves that seem [designed to make Wall S
 
 Finally: the L&amp;L forums also are visited frequently by those who ask, essentially, "Well, if you can't make Scrivener's file structure work with anything other than Dropbox, why don't you just change the file structure to something similar to what your competitors use?"[^iCloudapps]
 
-[^iCloudapps]: This argument usually cites apps like Ulysses and [iA Writer](https://ia.net/writer), which indeed are happy campers where iCloud sync and their apps are concerned. However, those apps aren't designed to do all the things that Scrivener does, so their file structures can be simpler and, thus, iCloud-friendly; so it's apples-and-oranges.
+[^iCloudapps]: This argument usually cites apps like Ulysses and [iA Writer](https://ia.net/writer), which indeed are happy campers where iCloud sync and their apps are concerned. However, those apps aren't designed to do all the things that Scrivener does, so their file structures can be simpler and, thus, iCloud-friendly; it's apples-and-oranges.
 
 And then, the answer---sometimes even from Scrivener creator Keith Blount himself---comes back, in so many words: "Because that would destroy Scrivener." And that's absolutely true. Scrivener without the very powers it gets from that file structure would be a pale remnant of its current self.
 
