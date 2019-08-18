@@ -8,9 +8,9 @@ description: "When even Ars Technica's forum users can’t keep this straight, i
 
 author: Bryce Wray
 
-date: 2019-08-18T14:00:00-05:00
+date: 2019-08-18T14:15:00-05:00
 
-#final_date: 2019-08-18T14:00:00-05:00
+#final_date: 2019-08-18T14:15:00-05:00
 
 draft: false # note!
 
@@ -46,19 +46,19 @@ It all started yesterday, when I was looking through an Ars Technica article fro
 
 No, what got me on this particular jag is what I saw as I combed through the [article's many reader comments](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1) as various folks mentioned how this would be *their* last straw with Dropbox, also. I was curious to see how many of them would note that, as had been true for me, they'd kept it as at least a background cloud sync vendor only because of specific apps---like Scrivener---known to require Dropbox for cloud sync among multiple types of devices. (I'll get to the particulars in a bit, but stay with me for the moment.)
 
-A few did register just such comments. However, what suddenly had me wanting to raise my hand and yell, "Ooh, ooh! Teacher!"[^nerd] was when I saw one particular commenter saying:
+A few did register just such comments. However, what suddenly had me wanting to raise my hand and yell, "Ooh, ooh! Teacher!"[^nerd] was when I saw one particular commenter [saying](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1&post=37672823&mode=quote#reply):
 
 [^nerd]: I admit it: I was one of those kids, eons ago. Rest assured, I paid for it and then some at recess, so spare me the hate now, willya? Thanks.
 
-> Used to be I had some other apps that were reliant on Dropbox, but [I think](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1&post=37672823&mode=quote#reply) they've all added their own cloud (1Password) or now work with iCloud or Google Drive (Scrivener), so I think I can ditch Dropbox.
+> Used to be I had some other apps that were reliant on Dropbox, but I think they've all added their own cloud (1Password) or now work with iCloud or Google Drive (Scrivener), so I think I can ditch Dropbox.
 
-.&nbsp;.&nbsp;. or this response to someone else's wishes that Scrivener didn't depend on Dropbox .&nbsp;.&nbsp;.
+.&nbsp;.&nbsp;. or [this response](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1&post=37676751&mode=quote#reply) to someone else's wishes that Scrivener didn't depend on Dropbox .&nbsp;.&nbsp;.
 
-> Scrivener iOS [added iCloud syncing](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1&post=37676751&mode=quote#reply) a while ago. (Don't know exactly when, because I missed it too, but a friend pointed it out.)
+> Scrivener iOS added iCloud syncing a while ago. (Don't know exactly when, because I missed it too, but a friend pointed it out.)
 
-.&nbsp;.&nbsp;. or another such response .&nbsp;.&nbsp;.
+.&nbsp;.&nbsp;. or [another](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1&post=37687283&mode=quote#reply) such response .&nbsp;.&nbsp;.
 
-> Scrivener [added iCloud sync](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1&post=37687283&mode=quote#reply) a while back.
+> Scrivener added iCloud sync a while back.
 
 Well, sir, your friend done you wrong, I'm here to tell ya. And it would seem that neither of you ever looks at the [Literature and Latte forums](https://www.literatureandlatte.com/forum/index.php), where this sore subject comes up far too often for the good of the nice L&amp;L people's collective blood pressure, I'd guess.
 
