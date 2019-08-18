@@ -32,7 +32,7 @@ It can be hard on one's psyche to visit the comments sections of many tech-orien
 
 [MacRumors](https://macrumors.com), I'm looking at you, bud.
 
-However, there are plenty of tech sites where I've usually found the visitors, even when hacked and for good reason, not only are (mostly) pleasant to read but also have their facts straight.
+However, there are tech sites where I've usually found the visitors, even when hacked and for good reason, not only are (mostly) pleasant to read but also have their facts straight.
 
 [Ars Technica](https://arstechnica.com) is one of those special, all-too-rare places.
 
