@@ -30,16 +30,14 @@
   <meta property="og:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
   {{- end }}
 
-
-  
-
   <!-- CSS/SCSS -->
   {{ $sass := resources.Get "scss/ofotigrid.scss" }}
   {{ $style := $sass | resources.ToCSS }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-  {{ "<!--[if lt IE 9]>" | safeHTML }}
-    <script src="/html5shiv/html5shiv.js"></script>
+  {{ "<!--[if lt IE 10]>" | safeHTML }}
+		<script src="/html5shiv/html5shiv.js"></script>
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css-for-ie9/ie9.css">
   {{ "<![endif]-->" | safeHTML }}
 
   <!-- Twitter meta -->

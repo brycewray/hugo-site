@@ -1,0 +1,28 @@
+nav {
+	margin-left: 70%;
+}
+
+#content {
+	padding-top: 60px;
+}
+
+#content .container {
+	display: table;
+}
+
+.container-narrower {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.container-home {
+	border-spacing: 30px 0;
+}
+
+label.nav__icon, .nav__icon-line {
+	display: none; /* unnecessary for IE */
+}
+
+.bg-dark h3 {
+	margin: 0 auto 0.25em 0;
+}
