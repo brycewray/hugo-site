@@ -2,6 +2,7 @@ baseURL = "https://brycewray.com/"
 languageCode = "en-us"
 title = "BryceWray.com"
 # theme = "ofotigrid"
+googleAnalytics = "UA-146418828-1"
 
 summaryLength = 30 # words
 FootnoteReturnLinkContents = "&#8593;"
