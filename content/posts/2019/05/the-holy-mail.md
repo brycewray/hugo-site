@@ -1,33 +1,19 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: The Holy Mail
-
 tags: post
-
 subtitle: Stopping the e-madness
-
 description: The way I sort-of cured the email client dance.
-
 author: Bryce Wray
-
 date: 2019-05-10T07:20:00-05:00
-
 #final_date: 2019-05-10T07:20:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/05/the-holy-mail
-
 discussionId: "2019-05-the-holy-mail"
-
-final_url: posts/2019/05/the-holy-mail
-
-featured_image: images/letterbox-1926493_1280x738_60pct.jpg
-
+final_url: /posts/2019/05/the-holy-mail
+featured_image: /images/letterbox-1926493_1280x738_60pct.jpg
 featured_image_alt: Old metal mailslot on bright red door
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 Dr. McCoy said it so well in *Star Trek: The Motion Picture*: "I know geeks: they *love* to change things."

@@ -1,31 +1,18 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: The version-control follies
-
 tags: post
-
 subtitle: Life’s too short for CLI
-
 description: Why you should go GUI with version control.
-
 author: Bryce Wray
-
 date: 2018-10-06T08:30:00-05:00
-
 lastmod: 2019-07-14T11:40:00-05:00
-
 draft: false # note!!
-
 actual_path: /content/posts/2018/10/version-control-follies.md
-
 discussionId: "2018-10-version-control-follies"
-
-final_url: posts/2018/10/version-control-follies/
-
-featured_image: images/Sourcetree-screen-shot_1512px_60pct.jpg
-
+final_url: /posts/2018/10/version-control-follies/
+featured_image: /images/Sourcetree-screen-shot_1512px_60pct.jpg
 featured_image_alt: Screen capture of Sourcetree software
-
 ---
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don’t feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving Web pages are much better now, and are continuing to improve.

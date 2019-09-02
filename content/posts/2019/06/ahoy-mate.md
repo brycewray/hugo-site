@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Ahoy, ’Mate
-
 tags: post
-
 subtitle: Considering MailMate
-
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
-
 author: Bryce Wray
-
 date: 2019-06-08T20:25:00-05:00
-
 #final_date: 2019-06-08T08:25:00-05:00
-
 lastmod: 2019-07-25T19:05:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/06/ahoy-mate
-
-#discussionId: "2019-06-ahoy-mate"
-
-final_url: posts/2019/06/ahoy-mate
-
-featured_image: images/MailMate_screen_cap_1544x792_60pct.jpg
-
+#discussionId: "2019-06-ahoy-mate" -- assign later when possible
+final_url: /posts/2019/06/ahoy-mate
+featured_image: /images/MailMate_screen_cap_1544x792_60pct.jpg
 featured_image_alt: Screen capture of the MailMate app
-
 featured_image_caption: "MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake" # quotation marks to allow colon
-
 ---
 
 My [last post](/posts/2019/05/the-holy-mail) closed with:

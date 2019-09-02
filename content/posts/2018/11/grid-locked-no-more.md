@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Grid-locked no more
-
 tags: post
-
 subtitle: Doing a 180 on CSS Grid
-
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
-
 author: Bryce Wray
-
 date: 2018-11-28T09:00:00-06:00
-
 lastmod: 2018-12-01T09:39:00-06:00
-
 final_date: 2018-11-28T09:00:00-06:00
-
 draft: false # note!
-
 actual_path: /content/posts/2018/11/grid-locked-no-more
-
 discussionId: "2018-11-grid-locked-no-more"
-
-final_url: posts/2018/11/grid-locked-no-more/
-
-featured_image: images/hairpin-turn-sign-94966_1280x719_72dpi_60pct.jpg
-
+final_url: /posts/2018/11/grid-locked-no-more/
+featured_image: /images/hairpin-turn-sign-94966_1280x719_72dpi_60pct.jpg
 featured_image_alt: Road sign - hairpin turn three thousand feet ahead
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: “Never mind.”
 

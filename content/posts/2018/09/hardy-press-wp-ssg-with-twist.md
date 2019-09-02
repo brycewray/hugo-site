@@ -1,28 +1,17 @@
 ---
+layout: layouts/posts/singlepost.njk
 title: "HardyPress: WP + SSG with a twist"
-
 tags: post
-
 description: Here’s a brief look at an interesting way to have your WordPress cake and eat your SSG site, too—or something like that.
-
 date: 2018-09-15T08:28:17-05:00
-
 lastmod: 2019-04-27T13:45:00-05:00
-
 draft: false
-
 actual_path: /content/posts/2018/09/hardy-press-wp-ssg-with-twist.md
-
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
-
-final_url: posts/2018/09/hardy-press-wp-ssg-with-twist/
-
-featured_image: images/Hardy_Press_Web_page_2019-04-27_1280x630_60pct.jpg
-
+final_url: /posts/2018/09/hardy-press-wp-ssg-with-twist/
+featured_image: /images/Hardy_Press_Web_page_2019-04-27_1280x630_60pct.jpg
 featured_image_alt: Screen capture from hardypress-dot-com
-
 featured_image_caption: "[Screen capture: April 27, 2019.]" # In quotes to allow brackets
-
 ---
 
 While researching the static-site generator (SSG) scene for the first time in a while yesterday, I happened upon  [HardyPress](https://www.hardypress.com).

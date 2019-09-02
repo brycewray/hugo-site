@@ -1,33 +1,19 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Independence
-
 tags: post
-
 subtitle: Thirty-five years a Mac lover
-
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
-
 author: Bryce Wray
-
 date: 2019-07-06T10:38:00-05:00
-
 #final_date: 2019-07-06T10:38:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/07/independence
-
-final_url: posts/2019/07/independence
-
+final_url: /posts/2019/07/independence
 discussionId: "2019-07-independence"
-
-featured_image: images/1984-07-11_01_retouched_1280x834_60pct.jpg
-
+featured_image: /images/1984-07-11_01_retouched_1280x834_60pct.jpg
 featured_image_alt: Me, in 1984, eagerly wrapping my new Macintosh.
-
 featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)" # quotation marks to allow colon
-
 ---
 
 This most recent Fourth of July was the 243rd anniversary of the *signing* of the Declaration of Independence---not the actual small-d declaration itself, which actually was [two days earlier](https://www.archives.gov/press/press-releases/2005/nr05-83.html), as all we American history nerds know.

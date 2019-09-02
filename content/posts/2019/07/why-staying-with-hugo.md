@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Why I’m staying with Hugo
-
 tags: post
-
 subtitle: An “interesting” learning experience
-
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
-
 author: Bryce Wray
-
 date: 2019-07-14T20:45:00-05:00
-
 #final_date: 2019-07-14T20:45:00-05:00
-
 lastmod: 2019-08-11T08:48:00-05:00
-
 draft: false
-
 actual_path: /content/posts/2019/07/why-staying-with-hugo
-
-final_url: posts/2019/07/why-staying-with-hugo
-
+final_url: /posts/2019/07/why-staying-with-hugo
 discussionId: "2019-07-why-staying-with-hugo"
-
-featured_image: images/hugo-logo-more-white-space.svg
-
+featured_image: /images/hugo-logo-more-white-space.svg
 featured_image_alt: Logo for the Hugo static site generator.
-
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
-
 ---
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear---and I've even said as much---that I tend to have a problem avoiding New Shiny Things where tech is concerned.

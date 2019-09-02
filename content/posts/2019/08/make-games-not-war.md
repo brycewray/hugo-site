@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Make games, not war
-
 tags: post
-
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
-
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."
-
 author: Bryce Wray
-
 date: 2019-08-03T11:00:00-05:00
-
 #final_date: 2019-08-03T11:00:00-05:00
-
 lastmod: 2019-08-07T12:42:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/08/make-games-not-war
-
-final_url: posts/2019/08/make-games-not-war
-
+final_url: /posts/2019/08/make-games-not-war
 discussionId: "2019-08-make-games-not-war"
-
 featured_image: /images/stadium-seats-3310891_1280x720_60pct.jpg
-
 featured_image_alt: Rows of empty seats in a sports stadium
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 Feel free to consider this a once-in-a-while break from my usual tech-y stuff, so I can pontificate on another subject near and dear to my choler: the need to make the USA's two most prominent major pro sports leagues admit at last that the wars are over.

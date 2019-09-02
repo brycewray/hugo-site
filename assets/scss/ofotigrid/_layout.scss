@@ -3,6 +3,10 @@
   // display: grid;
 }
 
+#content .topOfMain, main .topOfMain {
+  margin-top: 0.5em;
+}
+
 .text-sans-serif {
   font-family: $sans-serif-boot;
 }

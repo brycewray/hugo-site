@@ -17,7 +17,7 @@
   {{- if .IsHome }}
   <meta name="description" content="{{ .Site.Params.Description }}">
   <meta property="og:description" content="{{ .Site.Params.Description }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}images/hero_typing-writing_tint_1920x700_60pct.jpg" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}/images/hero_typing-writing_tint_1920x700_60pct.jpg" />
   {{- else if isset .Params "description" }}
   <meta name="description" content="{{ index .Params "description" }}">
   {{- end }}
@@ -51,17 +51,17 @@
   {{ else }}
     <meta name="twitter:description" content="{{ .Description }}" />
     <meta name="twitter:title" content="{{ .Site.Title }}" />
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/hero_typing-writing_tint_1920x700_60pct.jpg" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/hero_typing-writing_tint_1920x700_60pct.jpg" />
   {{ end }}
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}images/favicon-16x16.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/apple-touch-icon_180x180.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}images/apple-touch-icon_120x120.png">
-	<link rel="apple-touch-icon" sizes="167x167" href="{{ .Site.BaseURL }}images/apple-touch-icon_167x167.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}images/apple-touch-icon_152x152.png">
-	<link rel="apple-touch-icon" sizes="1024x1024" href="{{ .Site.BaseURL }}images/apple-touch-icon_1024x1024.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon_180x180.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon_120x120.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon_167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon_152x152.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="/images/apple-touch-icon_1024x1024.png">
 
   <!-- RSS -->
   {{ range .AlternativeOutputFormats -}}

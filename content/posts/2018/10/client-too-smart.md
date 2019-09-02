@@ -1,33 +1,19 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: The client is too smart for you
-
 tags: post
-
 subtitle: The email client, that is
-
 description: Pretty emails don’t work so well in an Outlook-centric business world.
-
 author: Bryce Wray
-
 date: 2018-10-11T15:30:00-05:00
-
 lastmod: 2019-02-17T20:00:00-06:00
-
 draft: false # note!!
-
 actual_path: /content/posts/2018/10/client-too-smart.md
-
 discussionId: "2018-10-client-too-smart"
-
-final_url: posts/2018/10/client-too-smart/
-
-featured_image: images/contact-2805253_1280.png
-
+final_url: /posts/2018/10/client-too-smart/
+featured_image: /images/contact-2805253_1280.png
 featured_image_alt: Illustration - mail flying at a stylized human head
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 It’s been nearly two decades since we tech marketing folks started counting on the majority of prospects and customers to have access to reasonably fast email. Hey, I remember when we used to send out mass faxes. (We shall now observe a moment of silence for all the trees that we sacrificed in the service of raising profits.)

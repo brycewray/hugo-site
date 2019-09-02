@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Ec-static
-
 tags: post
-
 subtitle: How to go Hugo
-
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own Web sites."
-
 author: Bryce Wray
-
 date: 2019-04-07T14:00:00-05:00
-
 lastmod: 2019-07-29T20:55:00-05:00
-
 #final_date: 2019-04-07T14:00:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/04/ec-static
-
 #discussionId: "2019-04-ec-static"
-
-final_url: posts/2019/04/ec-static
-
-featured_image: images/server-1235959_1920_1280x720_60pct.jpg
-
+final_url: /posts/2019/04/ec-static
+featured_image: /images/server-1235959_1920_1280x720_60pct.jpg
 featured_image_alt: Internet server
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 Want to share your thoughts on the Web? [Good for you](https://ia.net/topics/take-the-power-back).

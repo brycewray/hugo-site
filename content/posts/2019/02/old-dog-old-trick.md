@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Old dog learns old trick
-
 tags: post
-
 subtitle: How’d I miss this way to fool IE?
-
 description: A major ”Do’h” moment in the never-ending battle against Internet Explorer.
-
 author: Bryce Wray
-
 date: 2019-02-16T10:50:00-06:00
-
 #final_date: 2019-02-16T10:50:00-06:00
-
 lastmod: 2019-08-09T22:39:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/02/old-dog-old-trick
-
 discussionId: "2019-02-old-dog-old-trick"
-
-final_url: posts/2019/02/old-dog-old-trick
-
-featured_image: images/dog-2514968_1920x1080_72dpi_60pct.jpg
-
+final_url: /posts/2019/02/old-dog-old-trick
+featured_image: /images/dog-2514968_1920x1080_72dpi_60pct.jpg
 featured_image_alt: Face of an old dog
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 "What? You must be joking! *Darth Vader* was Luke's *father*?"

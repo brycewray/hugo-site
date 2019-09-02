@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Mark it down
-
 tags: post
-
 subtitle: Plain but pretty
-
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
-
 author: Bryce Wray
-
 date: 2019-03-08T22:08:00-06:00
-
 #final_date: 2019-03-08T21:05:00-06:00
-
 lastmod: 2019-07-14T11:40:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/03/mark-it-down
-
 discussionId: "2019-03-mark-it-down"
-
-final_url: posts/2019/03/mark-it-down
-
-featured_image: images/ugly-ducking-young-swan-1639154_1280x720_60pct.jpg
-
+final_url: /posts/2019/03/mark-it-down
+featured_image: /images/ugly-ducking-young-swan-1639154_1280x720_60pct.jpg
 featured_image_alt: A baby swan swimming
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 Before summer, 2015, if you'd asked me what Markdown was, I'd have said, "Cutting the price on a product, of course." And I wouldn't have been kidding, either.

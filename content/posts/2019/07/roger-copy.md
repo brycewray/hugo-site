@@ -1,33 +1,19 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Roger, Copy
-
 tags: post
-
 subtitle: Keeping my .git together with Working&nbsp;Copy
-
 description: "How I now keep my site files ”synced“ across my devices—via Git and Working Copy."
-
 author: Bryce Wray
-
 date: 2019-07-27T06:38:00-05:00
-
 #final_date: 2019-07-28T10:00:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/07/roger-copy
-
-final_url: posts/2019/07/roger-copy
-
+final_url: /posts/2019/07/roger-copy
 discussionId: "2019-07-roger-copy"
-
-featured_image: images/time-2387976_1280x853_60pct.jpg
-
+featured_image: /images/time-2387976_1280x853_60pct.jpg
 featured_image_alt: Various timepieces synchronized to the same time, illustrating synchronicity.
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 If this site had a horde of regular readers, there probably would be enough of you out there that, probability suggests, a tiny percentage could be expected to watch every change with eagle eyes.

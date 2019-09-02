@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Publish or perish
-
 tags: post
-
 subtitle: Going live with your Hugo site
-
 description: In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free.
-
 author: Bryce Wray
-
 date: 2019-04-11T19:00:00-05:00
-
 #final_date: 2019-04-14T14:00:00-05:00
-
 lastmod: 2019-07-29T20:55:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/04/publish-or-perish
-
-#discussionId: "2019-04-publish-or-perish"
-
-final_url: posts/2019/04/publish-or-perish
-
-featured_image: images/office-blogging-monochrome-381228_1280x720_60pct.jpg
-
+#discussionId: "2019-04-publish-or-perish" -- assign later if possible
+final_url: /posts/2019/04/publish-or-perish
+featured_image: /images/office-blogging-monochrome-381228_1280x720_60pct.jpg
 featured_image_alt: Hand moving a computer mouse near a keyboard
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static Web site](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** Web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.

@@ -1,31 +1,18 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: The obligatory About Me page
-
 description: Here are a few notes about who I am and what business I have in adding one more site to an already overstuffed Web.
-
 author: Bryce Wray
-
 publishdate: 2018-09-14T15:00:00-05:00
-
 date: 2018-09-14T15:00:00-05:00
-
 lastmod: 2019-04-06T06:09:00-05:00
-
 draft: false
-
 #actual-path: /content/about/
-
 discussionId: "about"
-
-#final_url: about/
-
-featured_image: images/question-mark-over-mac-keyboard-49958_1280_crop_1280x780_60pct.jpg
-
+final_url: /about
+featured_image: /images/question-mark-over-mac-keyboard-49958_1280_crop_1280x780_60pct.jpg
 featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon 
-
 ---
 
 So, who am I, and what business do I have putting yet another site on this already overstuffed Web?

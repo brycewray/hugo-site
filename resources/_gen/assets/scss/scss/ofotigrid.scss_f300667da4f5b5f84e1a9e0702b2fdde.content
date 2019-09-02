@@ -279,6 +279,9 @@ a.footnote-return {
 #content {
   padding-top: 40px; }
 
+#content .topOfMain, main .topOfMain {
+  margin-top: 0.5em; }
+
 .text-sans-serif {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 

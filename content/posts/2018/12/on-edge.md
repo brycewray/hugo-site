@@ -1,33 +1,19 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: On Edge
-
 tags: post
-
 subtitle: Ch-ch-ch-ch-Chromium
-
 description: "Microsoft’s decision about Edge is important on many levels."
-
 author: Bryce Wray
-
 date: 2018-12-07T13:35:00-06:00
-
 final_date: 2018-12-07T13:35:00-06:00
-
 draft: false # note!
-
 actual_path: /content/posts/2018/12/on-edge
-
 discussionId: "2018-12-on-edge"
-
-final_url: posts/2018/12/on-edge/
-
-featured_image: images/MS-Edge-logo-and-bkgd_1280x720_60pct.jpg
-
+final_url: /posts/2018/12/on-edge/
+featured_image: /images/MS-Edge-logo-and-bkgd_1280x720_60pct.jpg
 featured_image_alt: Logos for Microsoft Edge and Chromium
-
 featured_image_caption: "Images: DeviantArt; The Chromium Projects" # quotation marks to allow colon
-
 ---
 Earlier this week, there were [reports](https://www.windowscentral.com/microsoft-building-chromium-powered-web-browser-windows-10) that Microsoft was going to dump the [EdgeHTML engine](https://en.wikipedia.org/wiki/EdgeHTML) that has powered its [Edge browser](https://www.microsoft.com/en-us/windows/microsoft-edge) since its introduction in the summer of 2015, when Windows 10 also debuted. Yesterday, [Microsoft officially confirmed](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) that it’s moving toward basing Edge on Chromium and, thus, on the same [Blink engine](https://www.chromium.org/blink) as one finds under the hood in Chrome.
 

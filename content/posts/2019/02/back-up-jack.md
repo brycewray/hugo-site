@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Back up, Jack
-
 tags: post
-
 subtitle: From 3-2-1 to 4-2-2
-
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
-
 author: Bryce Wray
-
 date: 2019-02-23T12:45:00-06:00
-
 #final_date: 2019-02-23T12:45:00-06:00
-
 lastmod: 2019-05-17T21:15:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/02/back-up-jack
-
 discussionId: "2019-02-back-up-jack"
-
-final_url: posts/2019/02/back-up-jack
-
-featured_image: images/binary-2688910_1920_1280x719_60pct.jpg
-
+final_url: /posts/2019/02/back-up-jack
+featured_image: /images/binary-2688910_1920_1280x719_60pct.jpg
 featured_image_alt: Stylistic illustration of moving binary data
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 No one will ever mistake me for a high-tech version of [Henry David Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) (which is a pretty bizarre concept, if you go there), but I’ve been trying to simplify my computing setup—not so much where hardware is concerned but, instead, the services to which I have subscribed.

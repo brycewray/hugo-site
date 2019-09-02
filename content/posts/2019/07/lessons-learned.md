@@ -1,33 +1,19 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Lessons learned
-
 tags: post
-
 subtitle: What I found while trying other SSGs
-
 description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site to another SSG, I learned a few interesting things.
-
 date: 2019-07-21T17:43:00-05:00
-
 #finaldate: 2019-07-27T10:00:00-05:00
-
 lastmod: 2019-08-17T16:21:00-05:00
-
 draft: false
-
 actual_path: /content/posts/2019/07/lessons-learned
-
-final_url: posts/2019/07/lessons-learned
-
+final_url: /posts/2019/07/lessons-learned
 discussionId: "2019-07-lessons-learned"
-
-featured_image: images/binoculars-4143165_1280x719_60pct.jpg
-
+featured_image: /images/binoculars-4143165_1280x719_60pct.jpg
 featured_image_alt: A binocular telescope on a stand near a body of water
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics]---and quite a few retweets and friendly tweets from Hugo aficionados.

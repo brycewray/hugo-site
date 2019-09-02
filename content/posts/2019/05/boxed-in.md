@@ -1,38 +1,22 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Boxed in?
-
 tags: post
-
 subtitle: “Shoebox” apps (including Ulysses) and iCloud&nbsp;sync
-
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
-
 author: Bryce Wray
-
 date: 2019-05-04T06:00:00-05:00
-
 final_date: 2019-05-10T05:22:00-05:00
-
 lastmod: 2019-05-10T07:20:00-05:00
-
 aliases:
     [/posts/2019/04/why-left-ulysses/]
-
 draft: false # note!
-
 actual_path: /content/posts/2019/05/boxed-in
-
 discussionId: "2019-05-boxed-in"
-
-final_url: posts/2019/05/boxed-in
-
-featured_image: images/thunderstorm-3625405_1280x720_60pct.jpg
-
+final_url: /posts/2019/05/boxed-in
+featured_image: /images/thunderstorm-3625405_1280x720_60pct.jpg
 featured_image_alt: Thunderstorm clouds with lighting flashes
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 <hr />

@@ -1,34 +1,20 @@
 ---
+layout: layouts/posts/singlepost.njk
 title: Blox sux
-
 tags: post
-
 subtitle: Page builders are a pain, but...
-
 description: "Some highly uncomplimentary words about WordPress page builders."
-
 author: Bryce Wray
-
 date: 2019-01-19T09:25:00-06:00
-
 final_date: 2019-01-19T09:25:00-06:00
-
 lastmod: 2019-02-03T11:09:00-06:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/01/blox-sux
-
 discussionId: "2019-01-blox-sux"
-
-final_url: posts/2019/01/blox-sux
-
-featured_image: images/lego-169603_1280x720_72dpi.jpg
-
+final_url: /posts/2019/01/blox-sux
+featured_image: /images/lego-169603_1280x720_72dpi.jpg
 featured_image_alt: Lego blocks
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 There’s an old saying to the effect that “a poor craftsman blames his tools.”

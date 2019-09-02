@@ -1,33 +1,19 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Backtracking to Big G
-
 tags: post
-
 subtitle: A noble experiment ends
-
 description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
-
 author: Bryce Wray
-
 date: 2019-08-25T10:45:00-05:00
-
 #final_date: 2019-08-25T10:45:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/08/backtracking-to-big-g
-
-final_url: posts/2019/08/backtracking-to-big-g
-
+final_url: /posts/2019/08/backtracking-to-big-g
 discussionId: "2019-08-backtracking-to-big-g"
-
 featured_image: /images/BW_shadow_of_G_export.svg
-
 featured_image_alt: Google logo overshadowing this site’s logo
-
 featured_image_caption: "Google favicon image: Pixabay" # quotation marks to allow colon
-
 ---
 
 "Your honor, we submit the following in evidence for today's proceedings. 

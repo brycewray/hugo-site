@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1 class="ctr" style="margin-top: 0.5em; margin-bottom: 0.25em;">{{ .Title | markdownify}}</h1>
+<h1 class="ctr topOfMain">{{ .Title | markdownify}}</h1>
 
 <h2 class="ctr h4" style="margin-top: 0;">
   {{- if .Params.Subtitle }}
@@ -22,7 +22,7 @@
 <div class="post-line"></div> 
 
 {{- if isset .Params "featured_image" }}
-  <img src="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" class="img-fluid featured-image" alt="{{ index .Params "featured_image_alt" }}">
+  <img src="{{ index .Params "featured_image" }}" class="img-fluid featured-image" alt="{{ index .Params "featured_image_alt" }}">
   {{- if isset .Params "featured_image_caption" }}
     <p class="featured-image-caption">{{ index .Params "featured_image_caption" }}</p>
   {{- end }}

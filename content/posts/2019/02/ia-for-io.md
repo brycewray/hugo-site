@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: iA for IO?
-
 tags: post
-
 subtitle: Evaluating iA Writer for use with Hugo
-
 description: "This is a brief consideration of using iA Writer in making Markdown files for this site’s posts."
-
 author: Bryce Wray
-
 date: 2019-02-03T09:25:00-06:00
-
 #final_date: 2019-02-19T09:25:00-06:00
-
 #lastmod: 2019-01-25T22:10:00-06:00
-
 draft: false # note!
-
 actual_path: /content/posts/2019/02/ia-for-io
-
 discussionId: "2019-02-ia-for-io"
-
-final_url: posts/2019/02/ia-for-io
-
-featured_image: images/notebook-933362_1920x1280_60pct.jpg
-
+final_url: /posts/2019/02/ia-for-io
+featured_image: /images/notebook-933362_1920x1280_60pct.jpg
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 
 My comments at the end of my [previous post](/posts/2019/01/blox-sux) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.

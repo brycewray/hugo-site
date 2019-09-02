@@ -1,35 +1,20 @@
 ---
-
+layout: layouts/posts/singlepost.njk
 title: Some curmudgeonish thoughts
-
 tags: post
-
 subtitle: (with apologies to the late Andy Rooney)
-
 description: “Didja ever notice...?” Yes, I did. And here’s the result. 
-
 author: Bryce Wray
-
 date: 2018-11-01T11:00:00-05:00
-
 lastmod: 2019-07-30T19:50:00-05:00
-
 final_date: 2018-11-01T11:00:00-05:00
-
 draft: false # note!
-
 actual_path: /content/posts/2018/11/some-curmudgeonish-thoughts.md
-
 discussionId: "2018-11-some-curmudgeonish-thoughts"
-
-final_url: posts/2018/11/some-curmudgeonish-thoughts/
-
-featured_image: images/brain-1300479_1280_60pct.jpg
-
+final_url: /posts/2018/11/some-curmudgeonish-thoughts/
+featured_image: /images/brain-1300479_1280_60pct.jpg
 featured_image_alt: Cartoonish art depicting ancient myths about which parts of the brain stored which kinds of thoughts
-
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
-
 ---
 Here are a few odds and ends—some a tad acerbic, some not so much. And I swear I’m not trying to sound like the late [Andy Rooney](https://www.biography.com/people/andy-rooney-9542557), or even a parody&nbsp;thereof.&nbsp;&nbsp;.&nbsp;.&nbsp;.
 
