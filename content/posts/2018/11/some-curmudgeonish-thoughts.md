@@ -2,6 +2,8 @@
 
 title: Some curmudgeonish thoughts
 
+tags: post
+
 subtitle: (with apologies to the late Andy Rooney)
 
 description: “Didja ever notice...?” Yes, I did. And here’s the result. 

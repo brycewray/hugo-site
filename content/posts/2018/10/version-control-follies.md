@@ -2,6 +2,8 @@
 
 title: The version-control follies
 
+tags: post
+
 subtitle: Life’s too short for CLI
 
 description: Why you should go GUI with version control.

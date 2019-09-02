@@ -2,6 +2,8 @@
 
 title: Readable Web text, pretty please
 
+tags: post
+
 subtitle: Part 1 of a two-part series on Web typography
 
 description: Can we just agree that type on the Web should be, y’know, readable?

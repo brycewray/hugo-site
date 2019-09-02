@@ -2,6 +2,8 @@
 
 title: Getting framed
 
+tags: post
+
 subtitle: Why I still use Bootstrap
 
 description: "In an ideal world, Web devs would never use CSS frameworks, but we’re not in that world: why I still use Bootstrap."

@@ -2,6 +2,8 @@
 
 title: Why I’m staying with Hugo
 
+tags: post
+
 subtitle: An “interesting” learning experience
 
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.

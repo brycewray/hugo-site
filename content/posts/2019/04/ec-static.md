@@ -1,6 +1,8 @@
 ---
 
-title: Ec-static 
+title: Ec-static
+
+tags: post
 
 subtitle: How to go Hugo
 

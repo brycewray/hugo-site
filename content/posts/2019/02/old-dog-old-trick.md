@@ -1,6 +1,8 @@
 ---
 
-title: Old dog learns old trick 
+title: Old dog learns old trick
+
+tags: post
 
 subtitle: How’d I miss this way to fool IE?
 

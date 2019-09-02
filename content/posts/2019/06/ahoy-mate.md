@@ -2,6 +2,8 @@
 
 title: Ahoy, ’Mate
 
+tags: post
+
 subtitle: Considering MailMate
 
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."

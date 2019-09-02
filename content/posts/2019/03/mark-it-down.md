@@ -1,6 +1,8 @@
 ---
 
-title: Mark it down 
+title: Mark it down
+
+tags: post
 
 subtitle: Plain but pretty
 

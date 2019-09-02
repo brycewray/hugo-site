@@ -2,6 +2,8 @@
 
 title: The client is too smart for you
 
+tags: post
+
 subtitle: The email client, that is
 
 description: Pretty emails don’t work so well in an Outlook-centric business world.

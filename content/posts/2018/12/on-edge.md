@@ -2,6 +2,8 @@
 
 title: On Edge
 
+tags: post
+
 subtitle: Ch-ch-ch-ch-Chromium
 
 description: "Microsoft’s decision about Edge is important on many levels."

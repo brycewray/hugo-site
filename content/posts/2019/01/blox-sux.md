@@ -1,6 +1,8 @@
 ---
 title: Blox sux
 
+tags: post
+
 subtitle: Page builders are a pain, but...
 
 description: "Some highly uncomplimentary words about WordPress page builders."

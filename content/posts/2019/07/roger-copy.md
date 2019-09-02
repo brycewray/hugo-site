@@ -2,6 +2,8 @@
 
 title: Roger, Copy
 
+tags: post
+
 subtitle: Keeping my .git together with Working&nbsp;Copy
 
 description: "How I now keep my site files ”synced“ across my devices—via Git and Working Copy."

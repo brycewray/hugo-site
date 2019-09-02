@@ -1,6 +1,8 @@
 ---
 
-title: Plain truth 
+title: Plain truth
+
+tags: post
 
 subtitle: On permanence
 

@@ -2,6 +2,8 @@
 
 title: Scrivener and The Cloud
 
+tags: post
+
 subtitle: Cutting through the fog (maybe)
 
 description: "When even Ars Technica's forum users can’t keep this straight, intervention is necessary."

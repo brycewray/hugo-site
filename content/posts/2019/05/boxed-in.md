@@ -2,6 +2,8 @@
 
 title: Boxed in?
 
+tags: post
+
 subtitle: “Shoebox” apps (including Ulysses) and iCloud&nbsp;sync
 
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'

@@ -2,6 +2,8 @@
 
 title: The Holy Mail
 
+tags: post
+
 subtitle: Stopping the e-madness
 
 description: The way I sort-of cured the email client dance.

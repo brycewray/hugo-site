@@ -2,6 +2,8 @@
 
 title: A stacked deck
 
+tags: post
+
 subtitle: Part 2 of a two-part series on Web typography
 
 description: Making the case for a system “fonts” approach to the typography on Web sites.

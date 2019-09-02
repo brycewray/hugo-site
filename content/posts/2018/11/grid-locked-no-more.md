@@ -2,6 +2,8 @@
 
 title: Grid-locked no more
 
+tags: post
+
 subtitle: Doing a 180 on CSS Grid
 
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."

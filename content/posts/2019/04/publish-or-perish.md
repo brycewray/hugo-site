@@ -1,6 +1,8 @@
 ---
 
-title: Publish or perish 
+title: Publish or perish
+
+tags: post
 
 subtitle: Going live with your Hugo site
 

@@ -1,6 +1,8 @@
 ---
 
-title: Back up, Jack 
+title: Back up, Jack
+
+tags: post
 
 subtitle: From 3-2-1 to 4-2-2
 

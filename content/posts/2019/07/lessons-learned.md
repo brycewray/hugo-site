@@ -2,6 +2,8 @@
 
 title: Lessons learned
 
+tags: post
+
 subtitle: What I found while trying other SSGs
 
 description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site to another SSG, I learned a few interesting things.

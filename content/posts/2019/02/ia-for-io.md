@@ -1,6 +1,8 @@
 ---
 
-title: iA for IO? 
+title: iA for IO?
+
+tags: post
 
 subtitle: Evaluating iA Writer for use with Hugo
 
