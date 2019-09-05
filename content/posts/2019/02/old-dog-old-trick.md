@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
 #final_date: 2019-02-16T10:50:00-06:00
 lastmod: 2019-08-09T22:39:00-05:00
+idx: 13
 draft: false # note!
 actual_path: /content/posts/2019/02/old-dog-old-trick
 discussionId: "2019-02-old-dog-old-trick"

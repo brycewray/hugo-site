@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
 #final_date: 2019-06-08T08:25:00-05:00
 lastmod: 2019-07-25T19:05:00-05:00
+idx: 21
 draft: false # note!
 actual_path: /content/posts/2019/06/ahoy-mate
 #discussionId: "2019-06-ahoy-mate" -- assign later when possible

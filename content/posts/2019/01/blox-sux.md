@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
 final_date: 2019-01-19T09:25:00-06:00
 lastmod: 2019-02-03T11:09:00-06:00
+idx: 11
 draft: false # note!
 actual_path: /content/posts/2019/01/blox-sux
 discussionId: "2019-01-blox-sux"

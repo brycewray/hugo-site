@@ -7,6 +7,7 @@ description: "Some tips for ordinary non-geeks on using the Hugo static site gen
 author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00
+idx: 17
 #final_date: 2019-04-07T14:00:00-05:00
 draft: false # note!
 actual_path: /content/posts/2019/04/ec-static

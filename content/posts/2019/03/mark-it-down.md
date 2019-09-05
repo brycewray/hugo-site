@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-03-08T22:08:00-06:00
 #final_date: 2019-03-08T21:05:00-06:00
 lastmod: 2019-07-14T11:40:00-05:00
+idx: 16
 draft: false # note!
 actual_path: /content/posts/2019/03/mark-it-down
 discussionId: "2019-03-mark-it-down"

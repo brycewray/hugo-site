@@ -7,6 +7,7 @@ description: “Didja ever notice...?” Yes, I did. And here’s the result.
 author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
 lastmod: 2019-07-30T19:50:00-05:00
+idx: 7
 final_date: 2018-11-01T11:00:00-05:00
 draft: false # note!
 actual_path: /content/posts/2018/11/some-curmudgeonish-thoughts.md

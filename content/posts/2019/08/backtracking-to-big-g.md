@@ -6,6 +6,8 @@ subtitle: A noble experiment ends
 description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
 author: Bryce Wray
 date: 2019-08-25T10:45:00-05:00
+#lastmod:
+idx: 28
 #final_date: 2019-08-25T10:45:00-05:00
 draft: false # note!
 actual_path: /content/posts/2019/08/backtracking-to-big-g

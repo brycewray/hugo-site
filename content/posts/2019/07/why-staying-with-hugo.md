@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
 #final_date: 2019-07-14T20:45:00-05:00
 lastmod: 2019-08-11T08:48:00-05:00
+idx: 23
 draft: false
 actual_path: /content/posts/2019/07/why-staying-with-hugo
 final_url: /posts/2019/07/why-staying-with-hugo

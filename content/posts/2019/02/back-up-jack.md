@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
 #final_date: 2019-02-23T12:45:00-06:00
 lastmod: 2019-05-17T21:15:00-05:00
+idx: 14
 draft: false # note!
 actual_path: /content/posts/2019/02/back-up-jack
 discussionId: "2019-02-back-up-jack"

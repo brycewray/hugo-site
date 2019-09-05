@@ -6,6 +6,8 @@ subtitle: Cutting through the fog (maybe)
 description: "When even Ars Technica's forum users can’t keep this straight, intervention is necessary."
 author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
+#lastmod:
+idx: 27
 #final_date: 2019-08-18T14:15:00-05:00
 draft: false # note!
 actual_path: /content/posts/2019/08/scrivener-and-cloud

@@ -6,6 +6,8 @@ subtitle: Thirty-five years a Mac lover
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
+#lastmod:
+idx: 22
 #final_date: 2019-07-06T10:38:00-05:00
 draft: false # note!
 actual_path: /content/posts/2019/07/independence

@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
 final_date: 2018-10-25T07:40:00-05:00
 lastmod: 2019-07-29T20:45:00-05:00
+idx: 6
 draft: false # note!
 actual_path: /content/posts/2018/10/web-typography-part-2.md
 discussionId: "2018-10-web-typography-part-2"

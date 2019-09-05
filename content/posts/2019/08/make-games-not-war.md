@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-08-03T11:00:00-05:00
 #final_date: 2019-08-03T11:00:00-05:00
 lastmod: 2019-08-07T12:42:00-05:00
+idx: 26
 draft: false # note!
 actual_path: /content/posts/2019/08/make-games-not-war
 final_url: /posts/2019/08/make-games-not-war

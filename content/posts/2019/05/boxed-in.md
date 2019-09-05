@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
 final_date: 2019-05-10T05:22:00-05:00
 lastmod: 2019-05-10T07:20:00-05:00
+idx: 19
 aliases:
     [/posts/2019/04/why-left-ulysses/]
 draft: false # note!
