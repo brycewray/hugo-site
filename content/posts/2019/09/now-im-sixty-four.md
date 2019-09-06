@@ -39,7 +39,7 @@ Although some folks my age
 
 When my employer's  
 Web sites need work,  
-Or when my own does too,  
+Or when my own does, too,  
 I'm just glad that I can still code  
 And that I still "get" Admin mode.
 
