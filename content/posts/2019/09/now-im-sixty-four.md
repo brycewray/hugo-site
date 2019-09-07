@@ -63,5 +63,6 @@ And wonder just who I may be.
 
 "Kid, I'm your grandpa," I will explain.  
 "Will be, forevermore."  
-And on this birthday, yes, sir, I do say:  
+And on this birthday,  
+Yes, sir, I do say:  
 Now I'm sixty-four.
