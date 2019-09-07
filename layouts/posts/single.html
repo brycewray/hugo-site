@@ -51,15 +51,15 @@
     <div class="bg-dark">
       <h3 class="ctr wht"><a href="/posts/" style="border-bottom: 0;">Other posts</a></h3>
 			<p class="ctr">
-				{{ with .PrevInSection }}
-					<strong>Previous</strong>:
-					<a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-					{{ end }}
-			</p>
-			<p class="ctr">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
 					<a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+					{{ end }}
+			</p>
+			<p class="ctr">
+				{{ with .PrevInSection }}
+					<strong>Previous</strong>:
+					<a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
 					{{ end }}
 			</p>
     </div>
