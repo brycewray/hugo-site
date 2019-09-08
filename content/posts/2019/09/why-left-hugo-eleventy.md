@@ -26,7 +26,7 @@ If you know what the JAMstack is (if you don't, follow that link above for a muc
 
 But there was more to it. Things were afoot. Now, you get to find out just what they were.
 
-The fact is: this site, having just entered its second year of life, now comes to you via a different SSG---one also born in 2018, called [Eleventy](https://11ty.io).
+The fact is: this site, about to enter its second year of life, now comes to you via a different SSG---one also born in 2018, called [Eleventy](https://11ty.io).
 
 Yep, that's what I said. Eleventy. Not Hugo any more.
 
