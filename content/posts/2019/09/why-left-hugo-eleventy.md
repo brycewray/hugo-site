@@ -199,7 +199,7 @@ While we're on the subject of speed: while I was working on this post, I saw the
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which has a better First Meaningful Paint time?<br><br>① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br>② a client rendered React site with exactly one tweet on it<br><br>(Spoiler: <a href="https://twitter.com/____lighthouse?ref_src=twsrc%5Etfw">@____lighthouse</a> reports 8.5MB of HTML wins by about 200ms)</p>&mdash; Zach Leatherman (@zachleat) <a href="https://twitter.com/zachleat/status/1169998370041208832?ref_src=twsrc%5Etfw">September 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-React. Hmm. Wonder who he might be zinging there?
+React. Hmm. Wonder whom he might be zinging there?
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅 <a href="https://t.co/VTAcXU53be">pic.twitter.com/VTAcXU53be</a></p>&mdash; Eleventy (@eleven_ty) <a href="https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw">September 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
