@@ -155,7 +155,7 @@ To enable the flexibility of SCSS/SASS, Hugo has [Hugo Pipes](https://gohugo.io/
 
 With Eleventy, I installed the [node-sass](https://www.npmjs.com/package/node-sass) library and then set up [Gulp](https://gulpjs.com) to handle processing the SCSS/SASS files.
 
-Running Gulp with the settings in my site's `gulpfile.js` file does this processing and watches constantly for changes, any of which will trigger a new processing run.
+Running Gulp with the settings in my repo's `gulpfile.js` file does this processing and watches constantly for changes, any of which will trigger a new processing run.
 
 But that's not all that this particular `gulpfile.js` file does for me. It also:
 
@@ -169,7 +169,7 @@ But that's not all that this particular `gulpfile.js` file does for me. It also:
 
 ## Eleventy's *advantages*
 
-Now that I've explained some of what I had to do to make Eleventy not miss Hugo too badly, let me finish telling you the other side: what I like *better* about Eleventy. Some of this will be a little repetitive of what I said above, but I wanted it all in one place.
+Now that I've explained some of what I had to do in Eleventy so I wouldn't miss Hugo too badly, let me finish telling you the other side: what I like *better* about Eleventy. Some of this will be a little repetitive of what I said above, but I wanted it all in one place.
 
 ### It's reasonably easy to customize
 
@@ -219,4 +219,4 @@ Indeed, one part of the transition was to convert all my Hugo site's Markdown fi
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 
-.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019-06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
+> .&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019-06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
