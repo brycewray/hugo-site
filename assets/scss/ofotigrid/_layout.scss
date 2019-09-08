@@ -267,11 +267,31 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
 			margin: 1em auto 0 auto;
 			width: 80%;
 		}
+
+    .yellowBox {
+      display: block;
+      background: #ffff88;
+      border: 1px solid #333;
+      margin: 0.5em auto;
+      width: 95%;
+      padding: 0 1em 0 0;
+      p { 
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em;
+      }
+    }
+
     @media screen and (min-width: 769px) {
       h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight {
 				margin: 1em auto 0 auto;
 				width: 50%;
 			}
+      
+      .yellowBox {
+        width: 48%;
+      }
 
 			.footnotes ol li {
 				margin: 1em auto 0 auto;

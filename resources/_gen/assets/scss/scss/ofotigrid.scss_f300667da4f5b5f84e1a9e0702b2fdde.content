@@ -492,10 +492,24 @@ img.postsFeatImg {
     .container-narrower table {
       margin: 1em auto 0 auto;
       width: 80%; }
+    .container-narrower .yellowBox {
+      display: block;
+      background: #ffff88;
+      border: 1px solid #333;
+      margin: 0.5em auto;
+      width: 95%;
+      padding: 0 1em 0 0; }
+      .container-narrower .yellowBox p {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em; }
     @media screen and (min-width: 769px) {
       .container-narrower h1, .container-narrower .h1, .container-narrower h2, .container-narrower .h2, .container-narrower h3, .container-narrower .h3, .container-narrower h4, .container-narrower .h4, .container-narrower h5, .container-narrower .h5, .container-narrower p, .container-narrower time, .container-narrower twitter-widget, .container-narrower table, .container-narrower .twitter-tweet, .container-narrower ul, .container-narrower ol, .container-narrower hr, .container-narrower .highlight {
         margin: 1em auto 0 auto;
         width: 50%; }
+      .container-narrower .yellowBox {
+        width: 48%; }
       .container-narrower .footnotes ol li {
         margin: 1em auto 0 auto;
         padding-left: 0em;

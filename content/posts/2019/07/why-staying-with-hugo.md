@@ -13,10 +13,14 @@ draft: false
 actual_path: /content/posts/2019/07/why-staying-with-hugo
 final_url: /posts/2019/07/why-staying-with-hugo
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: /images/hugo-logo-more-white-space.svg
+featured_image: /images/hugo-logo-more-white-space_870x238.png
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---
+
+<div class="yellowBox">
+	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things have changed</a> since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so here it shall&nbsp;stay.</p>
+</div>
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear---and I've even said as much---that I tend to have a problem avoiding New Shiny Things where tech is concerned.
 
