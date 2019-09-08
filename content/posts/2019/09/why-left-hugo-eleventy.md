@@ -219,4 +219,4 @@ Indeed, one part of the transition was to convert all my Hugo site's Markdown fi
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 
-> .&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019-06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
+.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019-06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
