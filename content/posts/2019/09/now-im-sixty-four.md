@@ -43,7 +43,7 @@ Or when my own does, too,
 I'm just glad that I can still code  
 And that I still "get" Admin mode.
 
-Building `do-while` [loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while), editing [styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while):  
+Building `do-while` [loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while), editing [styles](https://developer.mozilla.org/en-US/docs/Web/CSS):  
 Who could ask for more?  
 That's why work needs me  
 And it still feeds me  
