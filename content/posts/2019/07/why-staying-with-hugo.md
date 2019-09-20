@@ -13,7 +13,7 @@ draft: false
 actual_path: /content/posts/2019/07/why-staying-with-hugo
 final_url: /posts/2019/07/why-staying-with-hugo
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: /images/hugo-logo-more-white-space_870x238.png
+featured_image: /images/hugo-logo-16x9.svg
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---

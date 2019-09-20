@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/06/ahoy-mate
 #discussionId: "2019-06-ahoy-mate" -- assign later when possible
 final_url: /posts/2019/06/ahoy-mate
-featured_image: /images/MailMate_screen_cap_1544x792_60pct.jpg
+featured_image: /images/MailMate_screen_cap_1280x720_60pct.jpg
 featured_image_alt: Screen capture of the MailMate app
 featured_image_caption: "MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake" # quotation marks to allow colon
 ---

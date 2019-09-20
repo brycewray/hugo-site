@@ -13,13 +13,13 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   {{- if .IsHome }}
   <meta name="description" content="{{ .Site.Params.Description }}">
   <meta property="og:description" content="{{ .Site.Params.Description }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}/images/hero_typing-writing_tint_1920x700_60pct.jpg" />
-  {{- else if isset .Params "description" }}
-  <meta name="description" content="{{ index .Params "description" }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+  {{- else }}
+  <meta name="description" content="{{ .Params.Description }}">
+  <meta property="og:description" content="{{ .Params.Description }}" />
   {{- end }}
 
   {{- if isset .Params "final_url" }}
@@ -31,8 +31,9 @@
   {{- end }}
 
   <!-- CSS/SCSS -->
-  {{ $sass := resources.Get "scss/ofotigrid.scss" }}
-  {{ $style := $sass | resources.ToCSS }}
+  {{ $options := (dict "targetPath" "css/ofotigrid.css" "outputStyle" "compressed") }}
+  {{ $style := resources.Get "scss/ofotigrid.scss" | resources.ToCSS $options }}
+
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
   {{ "<!--[if lt IE 10]>" | safeHTML }}

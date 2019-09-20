@@ -247,7 +247,7 @@ nav {
     top: 25%;
     transform: none;
     margin-top: 0;
-    margin-left: 30%;
+    margin-left: 60%;
     display: table;
     grid-column: 4 / 5;
     a {
@@ -268,6 +268,9 @@ nav {
 
 /* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  nav {
+    margin-left: 35%;
+  }
   nav ul {  
 		margin-left: 48%;
 		text-align: inherit;

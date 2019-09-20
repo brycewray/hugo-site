@@ -14,8 +14,8 @@ actual_path: /content/posts/2019/09/why-left-hugo-eleventy
 final_url: /posts/2019/09/why-left-hugo-eleventy
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: /images/detour-2496197_1280x720_60pct.jpg
-#featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
-#featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
+featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).

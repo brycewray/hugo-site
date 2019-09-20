@@ -1,0 +1,58 @@
+
+/* following is for dark mode where browsers respect this */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: $background-dark-mode;
+	}
+	
+	.chroma, code {
+    background-color: $chroma-bkgd-dark-mode;
+    color: $black;
+	}
+
+	span.gs, 
+	span.gh, 
+	span.ge {
+		color: $darkblue !important;
+	}
+
+	.card-body {
+    background: $default-color;
+  }
+
+  body, .text-body {
+    color: $default-color-dark-mode !important;
+  }
+
+  .text-muted, .text-sans-serif {
+    color: $grey-2-dark-mode !important;
+  }
+
+  a {
+    color: $blueLight;
+    border-bottom: 1px solid $blueFirst;
+  }
+
+  a:hover, a:focus, a:active {
+    color: $grey-2;
+    border-bottom: 1px solid $blueLight;
+  }
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: $default-color-dark-mode;
+  }
+
+  blockquote, .featured-image-caption {
+    color: $grey-2-dark-mode !important;
+  }
+
+  table.noborders tr {
+    background-color: $default-color-dark-mode;
+    color: $default-color;
+  }
+
+  table.noborders thead tr {
+    background-color: $darkblue;
+  }
+
+}

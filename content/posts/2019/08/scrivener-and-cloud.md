@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/08/scrivener-and-cloud
 final_url: /posts/2019/08/scrivener-and-cloud
 discussionId: "2019-08-scrivener-and-cloud"
-featured_image: /images/scriv-and-cloud-from-3331240_1280x720.png
+featured_image: /images/scriv-and-cloud-from-3331240_flattened.svg
 featured_image_alt: Scrivener logo and cloud computing icon
 featured_image_caption: "Images: Literature and Latte; Pixabay" # quotation marks to allow colon
 ---

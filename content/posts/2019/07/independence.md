@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/07/independence
 final_url: /posts/2019/07/independence
 discussionId: "2019-07-independence"
-featured_image: /images/1984-07-11_01_retouched_1280x834_60pct.jpg
+featured_image: /images/1984-07-11_01_retouched_1280x720_60pct.jpg
 featured_image_alt: Me, in 1984, eagerly wrapping my new Macintosh.
 featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)" # quotation marks to allow colon
 ---

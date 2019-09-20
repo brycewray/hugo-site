@@ -2,7 +2,7 @@ html,
 body {
   font-family: $sans-serif-boot !important;
   color: $default-color;
-  letter-spacing: -0.01em; // old browsers
+  letter-spacing: -0.015em; // old browsers
   letter-spacing: -0.015rem;
   width: 100%;
   margin: 0 auto;
@@ -21,7 +21,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-family: $sans-serif-boot;
-  color: $darkblue;
+  color: $default-color;
   letter-spacing: -0.05em; // old browsers
   letter-spacing: -0.05rem;
   font-weight: 700;
@@ -171,6 +171,14 @@ a.footnote-return{
   text-align: center;
 }
 
+.rgt {
+  text-align: right;
+}
+
+.wht {
+  color: #fff;
+}
+
 .teenytxt, .teeny {
   font-size: $teeny + unquote("em"); // old browsers
   font-size: $teeny + unquote("rem");
@@ -208,60 +216,4 @@ a.footnote-return{
   }
 }
 
-/* following is for dark mode where browsers respect this */
-@media (prefers-color-scheme: dark) {
-  html, body {
-    background: $background-dark-mode;
-	}
-	
-	.chroma, code {
-		background-color: $chroma-bkgd-dark-mode;
-	}
-
-	span.gs, 
-	span.gh, 
-	span.ge {
-		color: $darkblue !important;
-	}
-
-	.card-body {
-    background: $default-color;
-  }
-
-  body, .text-body {
-    color: $default-color-dark-mode !important;
-  }
-
-  .text-muted, .text-sans-serif {
-    color: $grey-2-dark-mode !important;
-  }
-
-  a {
-    color: $blueLight;
-    border-bottom: 1px solid $blueFirst;
-  }
-
-  a:hover, a:focus, a:active {
-    color: $grey-2;
-    border-bottom: 1px solid $blueLight;
-  }
-
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    color: $blueLight;
-  }
-
-  blockquote, .featured-image-caption {
-    color: $grey-2-dark-mode !important;
-  }
-
-  table.noborders tr {
-    background-color: $default-color-dark-mode;
-    color: $default-color;
-  }
-
-  table.noborders thead tr {
-    background-color: $darkblue;
-  }
-
-}
 

@@ -12,7 +12,7 @@ draft: false # note!!
 actual_path: /content/posts/2018/10/client-too-smart.md
 discussionId: "2018-10-client-too-smart"
 final_url: /posts/2018/10/client-too-smart/
-featured_image: /images/contact-2805253_1280.png
+featured_image: /images/contact-2805253_1280x720_60pct.jpg
 featured_image_alt: Illustration - mail flying at a stylized human head
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

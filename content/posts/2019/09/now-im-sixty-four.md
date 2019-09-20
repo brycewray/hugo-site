@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singleposthero.njk
 title: Now I’m sixty-four
 tags: post
 subtitle: Amending my obligatory earworm
-description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
+description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
-#lastmod:
+lastmod: 2019-09-10T14:37:00-05:00
 idx: 29
 #final_date: 2019-09-06T06:40:00-05:00
 #draft: Note!

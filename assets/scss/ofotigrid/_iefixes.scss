@@ -1,0 +1,46 @@
+
+/* ==== for IE 10 and 11 **ONLY** ==== */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #content .topOfMain, main .topOfMain {
+    margin-top: 60px;
+  }
+  
+  .container-home {
+		border-spacing: 15px;
+		padding: 0;
+		// margin: 0;
+		.column-home {
+			margin-top: 0;
+			padding-top: 0;
+			h1 {
+				margin-top: 0;
+				padding-top: 0;
+			}
+		}
+		.twitter-timeline {
+			width: 95% !important;
+		}
+	}
+	.container {
+		display: inherit;
+	}
+
+	.bg-dark {
+		h3 {
+			margin: 0;
+			padding: 0;
+		}
+		.column-left-end, 
+		.column-right-end {
+			display: inherit;
+			text-align: center;
+		}
+		.column-left-end {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+/* ==== end, IE 10 and 11 **ONLY** ==== */

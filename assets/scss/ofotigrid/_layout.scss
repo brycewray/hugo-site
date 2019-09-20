@@ -1,4 +1,4 @@
-#content {
+#content, main {
   padding-top: 40px;
   // display: grid;
 }
@@ -86,6 +86,95 @@ h3.twitter-border {
 	width: 100vw !important;
 }
 
+.background-hero {
+  &-div {
+    background: $darkblue; // fallback for really old browsers
+    background: linear-gradient(
+      rgba(0,0,170,1.00),
+      rgba(0,0,85,1.00)
+    );
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+    height: 60vh;
+    /* image supplied programmatically by template */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 70vh;
+    }
+    @media screen and (min-width: 1025px) {
+      background-attachment: fixed;
+      height: 80vh;
+    }
+  }
+  &-title-block {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.00),
+      rgba(0, 0, 0, 1.00)
+    );
+  }
+  &-title-text, &-subtitle-text, &-description-text {
+    color: #fff;
+    margin: 0 auto 0 auto;
+    text-shadow: 4px 4px 2px #000;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+      padding-left: 15%;
+    }
+  }
+
+  &-title-text {
+    font-size: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 3.5em;
+    }
+    @media screen and (min-width: 1025px) {
+      font-size: 3.5em;
+    }
+  }
+
+  &-subtitle-text {
+    font-size: 1.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
+    @media screen and (min-width: 900px) {
+      font-size: 2.25em;
+    }
+  }
+
+  &-description-text {
+    display: none; // appears only on wider screens
+    @media screen and (min-width: 900px) {
+      display: block;
+      font-weight: bold; // older browsers
+      font-weight: 600;
+      padding-top: 0.25em;
+      font-size: 1.25em;
+      font-style: italic;
+      padding-right: 15%;
+    }
+  }
+
+  &-p-text {
+    color: #fff;
+    text-shadow: 4px 4px 2px #000;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: right;
+      padding-right: 15%;
+    }
+  }
+}
+
+
 img.featured-image {
   display: block;
   width: 90%;
@@ -95,10 +184,13 @@ img.featured-image {
   height: auto;
   margin-right: auto;
   margin-left: auto;
+  &-hero {
+    width: 100%;    
+  }
 }
 
 .featured-image-caption {
-  margin-top: 0;
+  margin-top: 0.25em;
   padding-bottom: 1.5em; // old browsers
   padding-bottom: 1.5rem;
   text-align: center !important;
@@ -159,15 +251,17 @@ table.noborders {
   
   td.td70 {
     width: 70%;
+    img {
+      display: block;
+      width: 50%;
+      max-width: 50%;
+      height: auto;
+    }
   }
   
   td.td30 {
     width: 30%;
   }
-}
-
-.wht {
-  color: #fff;
 }
 
 img.postsFeatImg {
@@ -197,7 +291,7 @@ img.postsFeatImg {
   font-size: $bigger + unquote("rem");
 }
 
-$homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
+$homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
 
 .hero { // specifically for home page, at least to begin with
   background-color: #0088ff;
@@ -215,6 +309,10 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
   height: 40vh;
   &-home {
     background-image: url($homeHeroImageURL);
+    @media screen and (min-width: 1025px) {
+      background-attachment: fixed;
+      height: 50vh;
+    }
   }
 }
 
@@ -241,6 +339,19 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
     .column-home {
       display: table-cell; // old browsers
       display: grid-item;
+      img.homeContainedImage {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media screen and (min-width: 900px) {
+        img.homeContainedImage {
+          width: 90%;
+        }
+      }
     }
   }
   &-portfolio {
@@ -266,7 +377,15 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
 		table {
 			margin: 1em auto 0 auto;
 			width: 80%;
-		}
+    }
+    img.containedImage {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
     .yellowBox {
       display: block;
@@ -287,7 +406,7 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
       h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight {
 				margin: 1em auto 0 auto;
 				width: 50%;
-			}
+      }
       
       .yellowBox {
         width: 48%;
@@ -314,9 +433,23 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
 				margin-top: 0.25em; // old browsers
 				margin-top: 0.25rem;
 			}
-			image {
-				width: 80%;
-			}
+			img {
+        display: block;
+        width: 80%;
+        max-width: 80%;
+        height: auto;
+        margin: 0.5em auto 0.5em auto;
+        text-align: center;
+      }
+
+      img.containedImage { /* for lower-res images */
+        width: 50%;
+      }
+      
+      pre {
+        // width: 50%;
+        margin: 0.5em auto;
+      }
     }
   }
   &-comments {
@@ -336,7 +469,8 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
 }
 
 .bg-dark {
-	background-color: $darkblue !important;
+  margin-top: 2em;
+  background-color: $darkblue !important;
 	padding: 0.15em 0 0.25em 0;
   div, p {
     color: #fff;
@@ -375,44 +509,23 @@ $homeHeroImageURL: "/images/hero_typing-writing_tint_1920x700_60pct.jpg";
   font-family: $sans-serif-boot;
 }
 
-/* ==== for IE 10 and 11 **ONLY** ==== */
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.container-home {
-		border-spacing: 15px;
-		padding: 0;
-		// margin: 0;
-		.column-home {
-			margin-top: 0;
-			padding-top: 0;
-			h1 {
-				margin-top: 0;
-				padding-top: 0;
-			}
-		}
-		.twitter-timeline {
-			width: 95% !important;
-		}
-	}
-	.container {
-		display: inherit;
-	}
-
-	.bg-dark {
-		h3 {
-			margin: 0;
-			padding: 0;
-		}
-		.column-left-end, 
-		.column-right-end {
-			display: inherit;
-			text-align: center;
-		}
-		.column-left-end {
-			margin: 0;
-			padding: 0;
-		}
-	}
+li p {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  width: 100% !important;
 }
 
-/* ==== end, IE 10 and 11 **ONLY** ==== */
+.YTembed { /* container for iframe */
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,10 +1,15 @@
 @import 'ofotigrid/variables';
 @import 'ofotigrid/code';
+// have to keep code or prismjs in this order for now due to container-narrower issues
+// @import 'ofotigrid/prismjs';
 @import 'ofotigrid/base';
 @import 'ofotigrid/layout';
 @import 'ofotigrid/nav';
-@import 'ofotigrid/cards';
-@import 'ofotigrid/pagination'
+// @import 'ofotigrid/cards';
+@import 'ofotigrid/pagination';
+@import 'ofotigrid/darkmode';
+@import 'ofotigrid/lazysizes';
+@import 'ofotigrid/iefixes';
 // @import 'ofotigrid/post';
 // @import 'ofotigrid/syntax';
 // @import 'ofotigrid/pagination';

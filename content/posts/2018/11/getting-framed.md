@@ -13,8 +13,8 @@ draft: false # note!
 actual_path: /content/posts/2018/11/getting-framed
 discussionId: "2018-11-getting-framed"
 final_url: /posts/2018/11/getting-framed/
-featured_image: /images/medieval-castle-84336_1920x1080_60pct.jpg
-featured_image_alt: Rock wall of ancient castle, depicting solid framework
+featured_image: /images/scaffolding-1617969_1280x720_60pct.jpg
+featured_image_alt: Scaffolding for a building, with construction workers climbing and working within
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 

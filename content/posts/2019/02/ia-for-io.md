@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/02/ia-for-io
 discussionId: "2019-02-ia-for-io"
 final_url: /posts/2019/02/ia-for-io
-featured_image: /images/notebook-933362_1920x1280_60pct.jpg
+featured_image: /images/notebook-933362_1920_1280x720_60pct.jpg
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
