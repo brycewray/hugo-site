@@ -7,7 +7,7 @@ description: "Only weeks after telling you I was sticking with Hugo, I switch to
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
 #final_date: 2019-09-08T10:00:00-05:00
-#lastmod:
+lastmod: 2019-09-20T16:40:00-05:00
 idx: 30
 #draft: Note!
 actual_path: /content/posts/2019/09/why-left-hugo-eleventy
@@ -17,6 +17,10 @@ featured_image: /images/detour-2496197_1280x720_60pct.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
+
+<div class="yellowBox">
+	<p><strong>Note</strong>: Um, <a href="/posts/2019/09/back-with-hugo">this decision didn&rsquo;t last long</a>. Still, you may find some value in what&rsquo;s here, so I&rsquo;ll leave it in&nbsp;place.</p>
+</div>
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
 

@@ -7,7 +7,7 @@ description: After experimenting for a few weeks with Gatsby and a few other tre
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
 #final_date: 2019-07-14T20:45:00-05:00
-lastmod: 2019-08-11T08:48:00-05:00
+lastmod: 2019-09-20T16:40:00-05:00
 idx: 23
 draft: false
 actual_path: /content/posts/2019/07/why-staying-with-hugo
@@ -19,7 +19,7 @@ featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced
 ---
 
 <div class="yellowBox">
-	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things have changed</a> since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so here it shall&nbsp;stay.</p>
+	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things have changed</a> and then <a href="/posts/2019/09/back-with-hugo">changed again</a> since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so here it shall&nbsp;stay.</p>
 </div>
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear---and I've even said as much---that I tend to have a problem avoiding New Shiny Things where tech is concerned.
