@@ -1,11 +1,13 @@
 
 <head>
+  {{ hugo.Generator }}
+  
   {{- if .IsHome }}
-    <title>{{ .Site.Title }}</title>
-    <meta property="og:title" content="{{ .Site.Title }}" />
+  <title>{{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Site.Title }}" />
   {{- else }}
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
   {{- end }}
       
   {{ template "_internal/google_analytics.html" . }}
@@ -37,8 +39,8 @@
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
   {{ "<!--[if lt IE 10]>" | safeHTML }}
-		<script src="/html5shiv/html5shiv.js"></script>
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}css-for-ie9/ie9.css">
+	<script src="/html5shiv/html5shiv.js"></script>
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css-for-ie9/ie9.css">
   {{ "<![endif]-->" | safeHTML }}
 
   <!-- Twitter meta -->
