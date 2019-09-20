@@ -1,18 +1,18 @@
 ---
 layout: layouts/posts/singlepost.njk
 tags: post
-title: Annnnnd we're back with Hugo
+title: Back with Hugo
 subtitle: "Well, that didn't last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
-date: 2019-09-19T11:00:00-05:00
+date: 2019-09-21T11:00:00-05:00
 #final_date: 2019-09-21T11:00:00-05:00
 #lastmod:
 idx: 31
 #draft: Note!
-actual_path: /content/posts/2019/09/and-were-back-hugo
-final_url: /posts/2019/09/and-were-back-hugo
-discussionId: "2019-09-and-were-back-hugo"
+actual_path: /content/posts/2019/09/back-with-hugo
+final_url: /posts/2019/09/back-with-hugo
+discussionId: "2019-09-back-with-hugo"
 featured_image: /images/skid-mark-567668_1280x720_60pct.jpg
 featured_image_alt: "Skid marks on asphalt"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
@@ -44,7 +44,9 @@ Truthfully, I don't know for sure. But here are the reasons that sound right to 
 
 That may seem weird, but, as I [previously](/posts/2019/07/why-staying-with-hugo) [explained](/posts/2019/09/why-left-hugo-eleventy), a big part of the reason why I was looking to leave Hugo in the first place was that I wanted to learn more about how JavaScript-based SSGs work.
 
-However, because Eleventy is **so** easy and **so** flexible as compared to, say, [Gatsby](https://gatsbyjs.org), I just didn't find it challenging enough. That's kind of a strange tribute to Eleventy and its creator, Zach Leatherman, but it's a "while-I-say-goodbye" tribute.
+However, because Eleventy is **so** easy and **so** flexible as compared to, say, [Gatsby](https://gatsbyjs.org), I just didn't find it challenging enough. That's kind of a strange tribute to Eleventy[^contribute] and its creator, Zach Leatherman, but it's a "while-I-say-goodbye" tribute.
+
+[^contribute]: I also plan to keep giving a small monthly contribution to Eleventy's development, and still encourage others to do so. I would do the same for Hugo if the opportunity were there, but a look through the Hugo site indicates it has some large sponsors and apparently isn't seeking that kind of help. If that changes, I'll definitely put my (small amount of) money where my ever-active mouth is.
 
 ### I changed my mind about Node.js
 
@@ -54,7 +56,9 @@ While Eleventy does an admirable job of keeping that from its users, it can't do
 
 ### Flavio Copes is 'waaaay smarter than I (no&nbsp;kidding)
 
-Back in January, Mr. Copes, a well-known developer and prolific tech blogger (not to mention Hugo user), wrote a piece called "[The pros of using a boring stack](https://flaviocopes.com/boring-stack/)." Among his many salient-as-usual points:
+On the day this week when I was deciding whether to revert to Hugo, I encountered one particular article that made my decision a lot easier, if not less personally embarrassing given the big deal I'd made about the short-lived change.
+
+Back in January, Flavio Copes, the well-known developer and prolific tech blogger (not to mention Hugo user), wrote a piece called "[The pros of using a boring stack](https://flaviocopes.com/boring-stack/)." Among his many salient-as-usual points (and the boldfacing is all his):
 
 > .&nbsp;.&nbsp;. if you want to create a blog and be serious at it, then use the most boring and bulletproof thing you can find. Definitely **don’t work on your blog infrastructure if you want to do any serious blogging**.
 > 
@@ -66,11 +70,13 @@ Back in January, Mr. Copes, a well-known developer and prolific tech blogger (no
 
 That crunching sound you heard was from my toes, getting crushed by Mr. Copes's words.
 
-Mind you, if Hugo *is* "boring," that's in a good way. It's not The Hot Shiny. But it's definitely bulletproof.
+(Mind you, if Hugo *is* "boring," that's in a good way, the "I-don't-get-excited-about-the-air-I-breathe-either" way. Hugo is surely not The Hot Shiny---but it's definitely bulletproof.)
+
+Over and above that consideration is the simple fact that I wanted this site to be about content, not about the vehicle in which I provide it. Mr. Copes's admonitions hit home quite surely in that regard.
 
 ## Still learning, but not leaving again (really)
 
-I'll keep reading about other SSGs and their respective software stacks. I may even keep trying them---on my own local system.[^learnHugo]
+I'll keep learning about other SSGs and their respective software stacks. I may even keep trying them---on my own local system.[^learnHugo]
 
 [^learnHugo]: Also: as I took a fresh look at Hugo's docs upon deciding to return, I have found out there's a lot more under its hood than I knew, and I will spend time getting better acquainted with it. While it won't be the exact kind of new knowledge I'd originally planned to seek, it will be challenging---and that definitely **was** a prerequisite.
 
@@ -78,7 +84,7 @@ However, brycewray.com is back on, and will remain on, Hugo. You have every righ
 
 Since I used to spend a lot a time on [Slashdot](https://slashdot.org), I'll offer a car analogy.
 
-Think of me as a car mechanic---which is really a stretch since I'm not mechanical at all, but it's just an analogy---who works all days making sure customers' vehicles are running properly, then spends nights and weekends tinkering, as a hobby, on some old classic in his garage.
+Think about a car mechanic---which is really a stretch since I'm not mechanical at all, but it's just an analogy---who works days making sure customers' vehicles are running properly, then spends nights and weekends tinkering, as a hobby, on some old classic in his garage at home.
 
 But he keeps the two separate.
 
@@ -86,4 +92,4 @@ Why? Because the day job is not for tinkering. It's for delivering quality servi
 
 Similarly, this site isn't for me to tinker. It's to deliver what I hope is quality content. I can tinker locally. And will.
 
-I will strive, going forward, to keep the two separate. There aren't a lot of you stopping by, but I appreciate each of you who does, and I owe you at least that much effort.
+I will strive, going forward, to keep the two separate. There aren't a lot of you stopping by, but I appreciate each of you who does, and I owe you at least that much.

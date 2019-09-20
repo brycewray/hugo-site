@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepost.njk
 title: The obligatory About Me page
-description: Here are a few notes about who I am and what business I have in adding one more site to an already overstuffed Web.
+description: Not a bio (you‘d fall asleep), but just a few explanatory observations.
 author: Bryce Wray
 publishdate: 2018-09-14T15:00:00-05:00
 date: 2018-09-14T15:00:00-05:00

@@ -3,7 +3,7 @@ layout: layouts/posts/singlepost.njk
 title: iA for IO?
 tags: post
 subtitle: Evaluating iA Writer for use with Hugo
-description: "This is a brief consideration of using iA Writer in making Markdown files for this site’s posts."
+description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
 #final_date: 2019-02-19T09:25:00-06:00
