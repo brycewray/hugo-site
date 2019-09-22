@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Old dog learns old trick
 tags: post
+title: Old dog learns old trick 
 subtitle: How’d I miss this way to fool IE?
-description: A major ”Do’h” moment in the never-ending battle against Internet Explorer.
+description: A major ”Do’h” moment in the never-ending battle against Internet Explorer.
 author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
 #final_date: 2019-02-16T10:50:00-06:00

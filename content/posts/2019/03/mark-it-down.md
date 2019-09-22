@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Mark it down
 tags: post
+title: Mark it down 
 subtitle: Plain but pretty
-description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
+description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
 author: Bryce Wray
 date: 2019-03-08T22:08:00-06:00
 #final_date: 2019-03-08T21:05:00-06:00

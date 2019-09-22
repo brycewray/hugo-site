@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singleposthero.njk
-title: Now I’m sixty-four
 tags: post
+title: Now I’m sixty-four
 subtitle: Amending my obligatory earworm
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray

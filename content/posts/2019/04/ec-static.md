@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Ec-static
 tags: post
+title: Ec-static 
 subtitle: How to go Hugo
-description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own Web sites."
+description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own Web sites."
 author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00

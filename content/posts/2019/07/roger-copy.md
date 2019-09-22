@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Roger, Copy
 tags: post
-subtitle: Keeping my .git together with Working&nbsp;Copy
-description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
+title: Roger, Copy
+subtitle: Keeping my .git together with Working Copy
+description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
 #lastmod:

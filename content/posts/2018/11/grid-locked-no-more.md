@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Grid-locked no more
 tags: post
+title: Grid-locked no more
 subtitle: Doing a 180 on CSS Grid
-description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
+description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
 date: 2018-11-28T09:00:00-06:00
 lastmod: 2018-12-01T09:39:00-06:00

@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Backtracking to Big G
 tags: post
+title: Backtracking to Big G
 subtitle: A noble experiment ends
-description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
+description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
 author: Bryce Wray
 date: 2019-08-25T10:45:00-05:00
 #lastmod:

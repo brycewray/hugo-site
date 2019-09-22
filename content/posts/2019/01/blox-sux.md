@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Blox sux
 tags: post
-subtitle: Page builders are a pain, but...
-description: "Some highly uncomplimentary words about WordPress page builders."
+title: Blox sux
+subtitle: Page builders are a pain, but . . .
+description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
 final_date: 2019-01-19T09:25:00-06:00

@@ -3,7 +3,7 @@ layout: layouts/posts/singlepost.njk
 title: Lessons learned
 tags: post
 subtitle: What I found while trying other SSGs
-description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
+description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
 date: 2019-07-21T17:43:00-05:00
 #finaldate: 2019-07-27T10:00:00-05:00
 lastmod: 2019-08-17T16:21:00-05:00

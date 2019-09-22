@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: A stacked deck
 tags: post
+title: A stacked deck
 subtitle: Part 2 of a two-part series on Web typography
-description: Making the case for a system “fonts” approach to the typography on Web sites.
+description: Making the case for a system “fonts” approach to the typography on Web sites.
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
 final_date: 2018-10-25T07:40:00-05:00

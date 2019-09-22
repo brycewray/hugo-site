@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: The client is too smart for you
 tags: post
+title: The client is too smart for you
 subtitle: The email client, that is
-description: Pretty emails don’t work so well in an Outlook-centric business world.
+description: Pretty emails don’t work so well in an Outlook-centric business world.
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
 lastmod: 2019-02-17T20:00:00-06:00

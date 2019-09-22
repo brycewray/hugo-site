@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: On Edge
 tags: post
+title: On Edge
 subtitle: Ch-ch-ch-ch-Chromium
-description: "Microsoft’s decision about Edge is important on many levels."
+description: "Microsoft’s decision about Edge is important on many levels."
 author: Bryce Wray
 date: 2018-12-07T13:35:00-06:00
 final_date: 2018-12-07T13:35:00-06:00

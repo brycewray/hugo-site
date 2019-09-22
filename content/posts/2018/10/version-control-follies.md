@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: The version-control follies
 tags: post
+title: The version-control follies
 subtitle: Life’s too short for CLI
-description: Why you should go GUI with version control.
+description: Why you should go GUI with version control.
 author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
 lastmod: 2019-07-14T11:40:00-05:00

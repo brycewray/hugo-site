@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Readable Web text, pretty please
 tags: post
+title: Readable Web text, pretty please
 subtitle: Part 1 of a two-part series on Web typography
-description: Can we just agree that type on the Web should be, y’know, readable?
+description: Can we just agree that type on the Web should be, y’know, readable?
 author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
 lastmod: 2019-04-11T20:33:00-05:00

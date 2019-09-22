@@ -1,8 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: "HardyPress: WP + SSG with a twist"
 tags: post
-description: Here’s a brief look at an interesting way to have your WordPress cake and eat your SSG site, too—or something like that.
+title: "HardyPress: WP + SSG with a twist"
+subtitle: Trying to have the best of two worlds
+description: Here’s a brief look at an interesting way to have your WordPress cake and eat your SSG site, too—or something like that.
 date: 2018-09-15T08:28:17-05:00
 lastmod: 2019-04-27T13:45:00-05:00
 idx: 1

@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: Ahoy, ’Mate
 tags: post
+title: Ahoy, ’Mate
 subtitle: Considering MailMate
-description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
+description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
 #final_date: 2019-06-08T08:25:00-05:00

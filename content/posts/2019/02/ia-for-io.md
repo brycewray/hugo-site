@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepost.njk
-title: iA for IO?
 tags: post
+title: iA for IO? 
 subtitle: Evaluating iA Writer for use with Hugo
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
