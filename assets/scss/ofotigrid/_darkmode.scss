@@ -1,20 +1,45 @@
 
 /* following is for dark mode where browsers respect this */
 @media (prefers-color-scheme: dark) {
-  html, body {
+  html, 
+  body {
     background: $background-dark-mode;
-	}
-	
-	.chroma, code {
+  }
+  
+  .chroma, 
+  code {
     background-color: $chroma-bkgd-dark-mode;
-    color: $black;
-	}
+    color: $code-color-dark-mode;
+    [class^="language-"] {
+      color: #fff !important;
+    }
+  }
+  
+  span.c {
+    color: $code-color-dark-mode !important;
+  }
 
-	span.gs, 
+  span.gs, 
 	span.gh, 
 	span.ge {
-		color: $darkblue !important;
-	}
+		color: $blueLight !important;
+  }
+  
+  span.nx {
+    color: $grey-3 !important;
+  }
+
+  span.o {
+    color: #fff !important;
+  }
+
+  span.s1, span.k, span.p {
+    color: $code-color-orange-dark-mode !important;
+  }
+
+  span.s2, span.nt {
+    color: $code-color-tan-dark-mode !important;
+  }
 
 	.card-body {
     background: $default-color;
@@ -28,8 +53,11 @@
     color: $grey-2-dark-mode !important;
   }
 
-  a {
+  a, .fakeFn {
     color: $blueLight;
+  }
+
+  a {
     border-bottom: 1px solid $blueFirst;
   }
 
@@ -53,6 +81,15 @@
 
   table.noborders thead tr {
     background-color: $darkblue;
+  }
+
+  .container {
+    &-narrower {
+      .yellowBox {
+        background: #332200;
+        border: 1px solid $grey-1;
+      }
+    }
   }
 
 }

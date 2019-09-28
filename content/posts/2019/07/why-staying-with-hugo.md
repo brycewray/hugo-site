@@ -185,15 +185,15 @@ the original reference and down at the bottom.
 
 .&nbsp;.&nbsp;. and it comes out like this (let's say that this footnote ends up being the third one in the document, no matter what it was at its original entry):
 
-> This is how you do footnotes<sup class="teeny" style="color: #0000df;">3</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
+> This is how you do footnotes<sup class="teeny fakeFn">3</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
 
 Then, down at the bottom, you get something that looks kind of like this:
 
-<p class="legal">3.&nbsp;&nbsp;So here we are at the bottom.<span class="teeny" style="color: #0000df;">↑</span></p>
+<p class="legal">3.&nbsp;&nbsp;So here we are at the bottom.<span class="teeny fakeFn">↑</span></p>
 
 For somebody like me who uses footnotes a lot and moves their origins' paragraphs around frequently during the editing process, that's a gotta-have. For Gatsby, there are a couple of plugins that purport to provide it, but I found neither to do the job *reliably*. The most widely used one would work *sometimes*, but then something else would cause a crash and, after the reboot, suddenly that same Markdown would produce this in the rendered page:
 
-> This is how you do footnotes<sup class="teeny" style="color: #0000df;">footnoteInfo</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
+> This is how you do footnotes<sup class="teeny fakeFn">footnoteInfo</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
 
 Nope, nope, nope. Couldn't have that.
 

@@ -68,7 +68,7 @@ a, a:focus, a:hover, a:active {
   // text-decoration-skip-ink: auto;
 }
 
-a {
+a, .fakeFn {
   color: $blue;
 }
 

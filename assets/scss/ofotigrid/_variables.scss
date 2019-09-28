@@ -7,11 +7,11 @@ $grey-1: #656565;
 $grey-2: #c8c8c8;
 $chroma-bkgd: #ededed; // was ededed
 $grey-2-5: #ededed;
-$chroma-bkgd-dark-mode: #cdcdcd;
+$chroma-bkgd-dark-mode: #555;
 $grey-2-dark-mode: #a8a8a8;
 $grey-3: #f9f9f9;
 $white: #fff;
-$background-dark-mode: #181818;
+$background-dark-mode: #000; // was #181818
 $black: #000;
 $blue: #0033ff; // was 0088ff but that's not sufficient contrast for accessibility
 $blueFirst: #0088ff; // Will use as a hover color only
@@ -22,6 +22,7 @@ $code-color: #006400; // was 00aa22 and then 006600 but neither is sufficient co
 $code-color-dark-mode: #88ff88;
 $code-bkgd-dark-mode: #303030;
 $code-color-tan: #996600;
+$code-color-tan-dark-mode: #cc9900;
 $code-color-blueLight-dark-mode: #88ddff;
 $code-color-orange-dark-mode: #ffaa00;
 
