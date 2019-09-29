@@ -1,79 +1,84 @@
 
-<head>
-  {{ hugo.Generator }}
-  
-  {{- if .IsHome }}
-  <title>{{ .Site.Title }}</title>
-  <meta property="og:title" content="{{ .Site.Title }}" />
-  {{- else }}
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-  {{- end }}
-      
-  {{ template "_internal/google_analytics.html" . }}
-  
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{- if .IsHome }}
-  <meta name="description" content="{{ .Site.Params.Description }}">
-  <meta property="og:description" content="{{ .Site.Params.Description }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
-  {{- else }}
-  <meta name="description" content="{{ .Params.Description }}">
-  <meta property="og:description" content="{{ .Params.Description }}" />
-  {{- end }}
+  <head>
+    {{ hugo.Generator }}
+    
+    {{- if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    {{- else }}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    {{- end }}
+        
+    {{ template "_internal/google_analytics.html" . }}
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{- if .IsHome }}
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta property="og:description" content="{{ .Site.Params.Description }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+    {{- else }}
+    <meta name="description" content="{{ .Params.Description }}">
+    <meta property="og:description" content="{{ .Params.Description }}" />
+    {{- end }}
 
-  {{- if isset .Params "final_url" }}
-  <meta property="og:url" content="{{ .Site.BaseURL }}{{ index .Params "final_url" }}" />        
-  {{- end }}
+    {{- if isset .Params "final_url" }}
+    <meta property="og:url" content="{{ .Site.BaseURL }}{{ index .Params "final_url" }}" />        
+    {{- end }}
 
-  {{- if isset .Params "featured_image" }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
-  {{- end }}
+    {{- if isset .Params "featured_image" }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
+    {{- end }}
 
-  <!-- CSS/SCSS -->
-  {{ $options := (dict "targetPath" "css/ofotigrid.css" "outputStyle" "compressed") }}
-  {{ $style := resources.Get "scss/ofotigrid.scss" | resources.ToCSS $options }}
+    <!-- CSS/SCSS -->
+    {{ $options := (dict "targetPath" "css/ofotigrid.css" "outputStyle" "compressed") }}
+    {{ $style := resources.Get "scss/ofotigrid.scss" | resources.ToCSS $options }}
 
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-  {{ "<!--[if lt IE 10]>" | safeHTML }}
-	<script src="/html5shiv/html5shiv.js"></script>
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css-for-ie9/ie9.css">
-  {{ "<![endif]-->" | safeHTML }}
+    {{ "<!--[if lt IE 10]>" | safeHTML }}
+    <script src="/html5shiv/html5shiv.js"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css-for-ie9/ie9.css">
+    {{ "<![endif]-->" | safeHTML }}
 
-  <!-- Twitter meta -->
-  <meta name="twitter:site" content="@BryceWrayTX">
-  <meta name="twitter:creator" content="@BryceWrayTX">
-  <meta name="twitter:card" content="summary_large_image" />
-  {{ if .IsPage }}
-    <meta name="twitter:description" content="{{ .Summary }}" />
-    <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
-  {{ else }}
-    <meta name="twitter:description" content="{{ .Description }}" />
-    <meta name="twitter:title" content="{{ .Site.Title }}" />
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
-  {{ end }}
+    <!-- Twitter meta -->
+    <meta name="twitter:site" content="@BryceWrayTX">
+    <meta name="twitter:creator" content="@BryceWrayTX">
+    <meta name="twitter:card" content="summary_large_image" />
+    {{ if .IsPage }}
+      <meta name="twitter:description" content="{{ .Summary }}" />
+      <meta name="twitter:title" content="{{ .Title }}" />
+      <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
+    {{ else }}
+      <meta name="twitter:description" content="{{ .Description }}" />
+      <meta name="twitter:title" content="{{ .Site.Title }}" />
+      <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+    {{ end }}
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon_180x180.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon_120x120.png">
-	<link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon_167x167.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon_152x152.png">
-	<link rel="apple-touch-icon" sizes="1024x1024" href="/images/apple-touch-icon_1024x1024.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon_180x180.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon_120x120.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon_167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon_152x152.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/apple-touch-icon_1024x1024.png">
 
-  <!-- RSS -->
-  {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
+    <!-- RSS -->
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 
-  {{ with .OutputFormats.Get "rss" -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
-  
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    
+    <noscript>
+      <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
+      <meta name="twitter:widgets:theme" content="dark">
+      <meta name="twitter:widgets:link-color" content="#00bbff">
+    </noscript>
   </head>
   
