@@ -10,6 +10,7 @@ date: 2019-10-02T18:15:00-05:00
 #lastmod: 2019-10-05T10:00:00-05:00
 aliases:
   - /posts/2019/07/why-staying-with-hugo/
+  - /posts/2019/07/lessons-learned/
   - /posts/2019/09/why-left-hugo-eleventy/
   - /posts/2019/09/back-with-hugo/
 idx: 33
