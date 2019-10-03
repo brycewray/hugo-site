@@ -6,7 +6,7 @@ subtitle: Keeping my .git together with Working Copy
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
-#lastmod:
+lastmod: 2019-10-02T19:36:00-05:00
 idx: 25
 #final_date: 2019-07-28T10:00:00-05:00
 draft: false # note!
@@ -28,11 +28,11 @@ On July 21, I removed that reference.
 
 On July 24, I brought it back.
 
-The reason why the reference went away goes back to something from my [last post](/posts/2019/07/lessons-learned):
+The reason why the reference went away goes back to something from a [now-deleted](/posts/2019/10/its-about-food-not-decor) previous post:
 
-> .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together). So, now, I keep my Hugo directory in a drive that's not sync'd with the cloud.
+> .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together). So, now, I keep my [SSG] directory in a drive that's not sync'd with the cloud.
 
-But, in giving up keeping this [Hugo](https://gohugo.io) site's local [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml) in [iCloud Drive](https://developer.apple.com/icloud/icloud-drive/), I'd apparently also ceded one key advantage which cloud sync had provided: being able to write posts and manage my site from any of my iOS devices. Instead, it appeared, I was going back to the beginning, when I'd done it all from my iMac.
+But, in giving up keeping this site's local [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml) in [iCloud Drive](https://developer.apple.com/icloud/icloud-drive/), I'd apparently also ceded one key advantage which cloud sync had provided: being able to write posts and manage my site from any of my iOS devices. Instead, it appeared, I was going back to the beginning, when I'd done it all from my iMac.
 
 The reason I was able to bring back the reference is the subject of this post.
 
@@ -60,7 +60,7 @@ The best way to learn about Working Copy is to read Borum's excellent [documenta
 
 [^docs]: After the awfulness of the [SSG](https://staticgen.com) documentation that I recently [attacked](/posts/2019/07/lessons-learned), it was and is a distinct pleasure to use Working Copy's outstanding online manual.
 
-Early this morning in the comfort of the living room recliner, I started this very post in [iA Writer](https://ia.net/writer) on the iPad. I put in some early [front matter](https://gohugo.io/content-management/front-matter/) and a paragraph of text just to get started, and then I opened Working Copy and had both apps running in [split-screen mode](https://support.apple.com/en-us/HT207582). As you can see on the left, I'd started a Git commit of this article's original [Markdown](https://daringfireball.net/projects/markdown) file ("roger-copy.md"), highlighted on the right in iA Writer:
+Early this morning in the comfort of the living room recliner, I started this very post in [iA Writer](https://ia.net/writer) on the iPad. I put in some early front matter and a paragraph of text just to get started, and then I opened Working Copy and had both apps running in [split-screen mode](https://support.apple.com/en-us/HT207582). As you can see on the left, I'd started a Git commit of this article's original [Markdown](https://daringfireball.net/projects/markdown) file ("roger-copy.md"), highlighted on the right in iA Writer:
 
 {{< figure src="/images/Working_Copy_scr_cap_01.png" alt="iPad screen capture: Working Copy on the left, iA Writer on the right" >}}
 
@@ -70,9 +70,9 @@ Once I'd done the commit, I returned to the main display for the local repo, whe
 
 {{< figure src="/images/Working_Copy_scr_cap_02.png" alt="iPad screen capture: Working Copy display of the local Git repository on the device" >}}
 
-Please note that I wanted to push this Markdown file to Bitbucket and then the others, but obviously I *didn't* want this barely-started post to go live on the site; so I simply set the **date** parameter in the front matter to a future date. Then, when Netlify "saw" the change to the remote repo in Bitbucket, the resulting Hugo build process would ignore the new post as being not yet ready to go.[^draft]
+Please note that I wanted to push this Markdown file to Bitbucket and then the others, but obviously I *didn't* want this barely-started post to go live on the site; so I simply set the **date** parameter in the front matter to a future date. Then, when Netlify "saw" the change to the remote repo in Bitbucket, the resulting build process would ignore the new post as being not yet ready to go.[^draft]
 
-[^draft]: You can achieve the same result---purposely not publishing the post---by just setting its **draft** parameter to *true* rather than *false*, but I prefer the "future date" method. It works better for my development purposes when I'm preparing upcoming posts, letting me see in a browser how they'll look.
+[^draft]: This method may not work in all SSGs. Besides, you can achieve the same result---purposely not publishing the post---by just setting its **draft** parameter to *true* rather than *false*, but I prefer the "future date" method. It works better for my development purposes when I'm preparing upcoming posts, letting me see in a browser how they'll look.
 
 So, this matter (pardon the pun) handled, I then pushed the commit---first, to Bitbucket:
 

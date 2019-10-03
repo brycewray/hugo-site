@@ -6,7 +6,7 @@ subtitle: Doing a 180 on CSS Grid
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
 date: 2018-11-28T09:00:00-06:00
-lastmod: 2018-12-01T09:39:00-06:00
+lastmod: 2019-10-02T19:20:00-05:00
 idx: 9
 final_date: 2018-11-28T09:00:00-06:00
 draft: false # note!
@@ -45,11 +45,11 @@ I thought over their points long and hard, and one key observation by Simmons fr
 
 > I know a _lot_ of people will think the “best” way to use CSS Grid will be to download the new version of Bootstrap (version 5! now with Grid!), or to use any one of a number of CSS Grid layout frameworks that people are inevitably going to make later this year.&nbsp;.&nbsp;.&nbsp;. But I don’t. The more I use CSS Grid, the more convinced I am that there is no benefit to be had by adding a layer of abstraction over it. CSS Grid is the layout framework. Baked right into the browser.
 
-Thus, feeling only mildly sheepish _(baaaaa)_ about my previous position on CSS Grid _vs._ Bootstrap, I prepared to venture forth and give it a shot. That meant, only a few weeks after converting this [Hugo](https://gohugo.io)-based site from its original incarnation (based on CSS and other code from the [Hugo-version Tale theme](https://themes.gohugo.io/tale-hugo/)) to Bootstrap 4, I would be converting it again, this time to CSS Grid.
+Thus, feeling only mildly sheepish _(baaaaa)_ about my previous position on CSS Grid _vs._ Bootstrap, I prepared to venture forth and give it a shot. That meant, only a few weeks after converting this site from its original incarnation to Bootstrap 4, I would be converting it again, this time to CSS Grid.
 
 ## Why boot Bootstrap?
 
-While that move didn’t _necessarily_ require flat-out eliminating Bootstrap code from my site—after all, I still have a few Tale-based bits of [GoLang](https://golang.org) code here and there that keep Hugo happy, so I’m certainly not too proud to keep helpful bits around from past work—I knew keeping that CSS foundation around while also writing CSS to work with the Grid ways of doing things would confuse me.
+While that move didn’t _necessarily_ require flat-out eliminating Bootstrap code from my site—after all, I’m certainly not too proud to keep helpful bits (including bits borrowed from other, more talented individuals) around from past work—I knew keeping that CSS foundation around while also writing CSS to work with the Grid ways of doing things would confuse me.
 
 You see, I’d inevitably run into things I _thought_ were CSS Grid’s “fault” but, in fact, would’ve happened just because the Bootstrap CSS and JS code, too, was sitting there in the background. The only way to make sure that whatever I was seeing was because of _my_ code was to make sure it all _was_ my code.
 

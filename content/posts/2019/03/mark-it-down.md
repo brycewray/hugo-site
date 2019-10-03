@@ -7,7 +7,7 @@ description: "Markdown: how to have that plain-text cake and still eat it with f
 author: Bryce Wray
 date: 2019-03-08T22:08:00-06:00
 #final_date: 2019-03-08T21:05:00-06:00
-lastmod: 2019-07-14T11:40:00-05:00
+lastmod: 2019-10-02T19:26:00-05:00
 idx: 16
 draft: false # note!
 actual_path: /content/posts/2019/03/mark-it-down
@@ -133,7 +133,7 @@ There are a number of variations of Markdown, perhaps most notably [Fletcher Pen
 
 In pretty much all takes on Markdown that I've seen, one key idea is that, once you pick up the special characters---and, frankly, get used to seeing them amidst your writing---you rarely, if ever, have to take your hands off the keyboard, although the vast majority of Markdown editors, like the word processing apps from which they've stolen more than a few of us,  do have keystroke shortcuts to keep you from having to remember *too* many things in the early going.
 
-The best thing of all is that Markdown is, indeed, plain text. Glorious, [safe-forever](/posts/2019/03/plain-truth) plain text. It just happens to be plain text with super powers, especially when paired with a smart [static site generator](https://gohugo.io) or one of the many exceptional editor apps that use it (the ones I mentioned before are merely the tip of the iceberg).
+The best thing of all is that Markdown is, indeed, plain text. Glorious, [safe-forever](/posts/2019/03/plain-truth) plain text. It just happens to be plain text with super powers, especially when paired with a smart [static site generator](https://staticgen.com) or one of the many exceptional editor apps that use it (the ones I mentioned before are merely the tip of the iceberg).
 
 To be honest, a Markdown editor can't give you *everything* that a rich-text format word processing app can when it comes to formatting, including non-text components, and other file-bloating aspects; but, when your task is to write first and worry later (if at all) about whether the text comes out looking pretty, the Markdown experience is awfully hard to beat.
 

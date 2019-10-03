@@ -6,7 +6,7 @@ subtitle: How to go Hugo
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own Web sites."
 author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
-lastmod: 2019-07-29T20:55:00-05:00
+lastmod: 2019-10-02T19:30:00-05:00
 idx: 17
 #final_date: 2019-04-07T14:00:00-05:00
 draft: false # note!
@@ -43,7 +43,7 @@ WordPress sites attract the attention of nasty-intentioned people because fully 
 
 By contrast, the Web pages that originate from an SSG load like lightning, especially since static pages can be [cached](https://www.maxcdn.com/one/visual-glossary/static-content/) for even better performance, and they aren't vulnerable to database exploits because they don't *use* databases. A static site vs. a database-driven site is like looking at a snapshot vs. waiting for somebody to paint the image. Well, okay, I'm exaggerating; but the analogy is sound, even if the relative disparities aren't quite that stark.
 
-But perhaps you've read some of the articles out there about SSGs and thought, "Gee, that sounds too complicated." After all, one appeal of WordPress is that it's easy to install and, if set up properly, easy to use. I admit there are a few more steps, a bit more geekiness, to getting started with an SSG-powered site. However, it's really not as complicated as a lot of the articles make it sound. So, if you do have interest in it, let me walk you through setting up a site on [Hugo](https://gohugo.io), my SSG of choice.
+But perhaps you've read some of the articles out there about SSGs and thought, "Gee, that sounds too complicated." After all, one appeal of WordPress is that it's easy to install and, if set up properly, easy to use. I admit there are a few more steps, a bit more geekiness, to getting started with an SSG-powered site. However, it's really not as complicated as a lot of the articles make it sound. So, if you do have interest in it, let me walk you through setting up a site on [Hugo](https://gohugo.io), which I believe is the best SSG for beginners.
 
 Just so we're clear up-front: I am not saying installing and using Hugo is **super**-simple. This is not a "[There is no Step 3](https://en.wikipedia.org/wiki/IMac#History)" situation. But I promise I'll keep it as simple as it will allow. For best results, you do need at least some familiarity with using your operating system's [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface) (**CLI**) app---**Terminal** on a Mac or Linux system, or **Command Prompt** in Windows.[^htmlcss]
 
@@ -90,12 +90,12 @@ Once the Chocolatey installation is complete, go on to the next item.
 ### STEP 2: Create your new site.
 
 1. Use your system's CLI app to navigate to the location on your computer where you want to create the local version of your new site.  \
-I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.[^syncGit]
+I would suggest picking a location that's [backed up](/posts/2019/02/back-up-jack).[^syncGit]
 2. Copy/paste the following into the CLI app and press **Return** or **Enter**:  \
 {{< highlight bash >}}hugo new site mysite{{< /highlight >}}
 This command will create a new *mysite* directory in that location, and *mysite* will have various subdirectories of its own.[^mysite] One of those is called *themes*, which brings us to **STEP 3**.
 
-[^syncGit]: Since writing this, I have learned there are different opinions about whether it's a good idea to mix a Git repository with cloud sync, since the whole idea of a Git repo is to keep track of versions going back as far as necessary and some cloud sync operations have at least the potential to disrupt some of that. All I can say for my own experience is that it hasn't been a problem, but you should make sure your cloud setup is **not** set so that it won't keep local copies of any inactive files (*e.g.*, on a Mac, make sure iCloud is **not** set to "Optimize Mac storage"; see also [this post](/posts/05/boxed-in)), since deviations between what Git expects to see and what's actually on your drive can lead to utter Git chaos. Having seen that occur, I can assure you: you do **not** want that.
+[^syncGit]: Note that I'm saying "backed up," not "sync'd." There are different opinions about whether it's a good idea to mix a Git repository with cloud sync, since the whole idea of a Git repo is to keep track of versions going back as far as necessary and some cloud sync operations have at least the potential to disrupt some of that. In my own experience it wasn't a problem when I was using cloud sync with my own repos, but you should make sure your cloud setup is **not** set so that it won't keep local copies of any inactive files (*e.g.*, on a Mac, make sure iCloud is **not** set to "Optimize Mac storage"; see also [this post](/posts/05/boxed-in)), since deviations between what Git expects to see and what's actually on your drive can lead to utter Git chaos. Having seen that occur, I can assure you: you do **not** want that.
 
 [^mysite]:If you want to call it something other than *mysite,* type that instead of *mysite* in that line. Be sure the name has no spaces; you can use hyphens or underscores to separate words, such as *my-site* or *my_site*, if you prefer. For the remainder of these instructions, we'll continue to use *mysite* as the example name.
 

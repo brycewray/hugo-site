@@ -8,7 +8,7 @@ author: Bryce Wray
 
 date: 2018-09-14T21:00:00-05:00
 
-lastmod: 2019-09-20T16:40:00-05:00
+lastmod: 2019-10-02T19:15:00-05:00
 
 draft: false
 
@@ -34,7 +34,7 @@ And then there are creatures like Facebook, Instagram, and Twitter, which [for a
 
 (Don’t worry. This site is, and will remain, apolitical by design unless we're nearing World War III or something along those lines. Maybe even then, since I doubt my little ol' site is going to stop The Really Big One.)
 
-Anyway, it seemed a lot of the fun had gone out of puttering around on the Web and actually creating content. Then---first among the techno-cognoscenti and, more recently, among us ordinary folks---came Web sites powered by [static site generators (SSGs)](https://www.staticgen.com) and written in [Markdown](https://daringfireball.net/projects/markdown/). I found them a source of curiosity at first but gradually became more interested in the prospect, especially as I learned more about their [technical advantages](https://www.makeuseof.com/tag/reasons-ditch-cms-static-site-generator/). I chose to build this one with the [Hugo](https://gohugo.io) SSG; and, so, here we are.
+Anyway, it seemed a lot of the fun had gone out of puttering around on the Web and actually creating content. Then---first among the techno-cognoscenti and, more recently, among us ordinary folks---came Web sites powered by [static site generators (SSGs)](https://www.staticgen.com) and written in [Markdown](https://daringfireball.net/projects/markdown/). I found them a source of curiosity at first but gradually became more interested in the prospect, especially as I learned more about their [technical advantages](https://www.makeuseof.com/tag/reasons-ditch-cms-static-site-generator/); and, so, here we are.
 
 Thank you for stopping by. I hope you find this site a source of various little nuggets of helpful info, and occasionally a laugh or two---even if I hadn't intended it, but especially if I had.
 

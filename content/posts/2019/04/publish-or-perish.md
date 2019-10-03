@@ -42,7 +42,7 @@ We're going to accomplish this with Sourcetree. First, get Sourcetree by visitin
 
 Once you have Sourcetree running, Atlassian has a [great help page](https://confluence.atlassian.com/get-started-with-sourcetree/create-a-local-repository-847359103.html) to show you to how to create your local repo, and I really can't improve upon it---except to say: 
 
-1. For our purposes here, the **Destination Path** for the repo would be in the **top-level directory** of your local Hugo site. For example, the local version of this site resides in my iCloud Drive's *hugo-site-css-grid* folder, so that's where I'd be creating my local repo if I were starting from scratch.
+1. For our purposes here, the **Destination Path** for the repo would be in the **top-level directory** of your local Hugo site. For example, if your site's local directory is a *my-hugo-site* folder, that's where you'd be creating the local repo if starting from scratch.
 2. After you create the repo, you'll see in Sourcetree that it has "read" the files and folders from that directory and is showing a line in its **Description** field that says **Uncommitted changes**. This means it wants you to do a [**commit**](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html) action; until you do that, the repo is still empty. So click **Commit** (with the "plus" icon) and, when it switches to the next view:
 	- Make sure all the items in the **Pending files, sorted by path** column are checked, meaning they're okay to be added to this commit.
 	- Type a little message in the blank field at the bottom to describe what you're doing, such as "My first commit" or something like that. You don't have to list the date or time; Sourcetree will keep that straight for you as part of version control.
@@ -105,6 +105,6 @@ So, once all this is done, how do you update your site in the future when you ch
 
 Once more, I apologize for the length of this, especially when combined with its [predecessor](/posts/2019/04/ec-static). I am sure you can find better how-to-SSG guides out there, and I encourage you to search for and find the one that works best with your learning methods[^visual] and knowledge level.
 
-However it ends up, I hope that you enjoy having your own Hugo-powered Web site as much as I've enjoyed mine so far. Build some content, spiff things up, speak your mind, and have fun!
+However it ends up, I hope that you enjoy having your own SSG-powered Web site as much as I've enjoyed mine so far. Build some content, spiff things up, speak your mind, and have fun!
 
 [^visual]: In particular, you may be one of those folks who learns best from pictures and videos, not wordy instructions like these. If so, you might try the Hugo-related videos on [Mike Dane's YouTube channel](https://www.youtube.com/channel/UCvmINlrza7JHB1zkIOuXEbw) and [this "Deploy Websites In Seconds With Netlify" video](https://www.youtube.com/watch?v=bjVUqvcCnxM), just for starters.
