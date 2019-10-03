@@ -13,18 +13,3 @@
   from = "/posts/2019/04/why-left-ulysses"
   to = "/posts/2019/05/boxed-in"
   status = 301
-
-[[redirects]]
-  from = "/posts/2019/07/why-staying-with-hugo"
-  to = "/posts/2019/10/its-about-food-not-decor"
-  status = 301
-
-[[redirects]]
-  from = "/posts/2019/09/why-left-hugo-eleventy"
-  to = "posts/2019/10/its-about-food-not-decor"
-  status = 301
-
-[[redirects]]
-  from = "/posts/2019/09/back-with-hugo"
-  to = "/posts/2019/10/its-about-food-not-decor"
-  status = 301
