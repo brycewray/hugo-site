@@ -30,7 +30,7 @@ On July 24, I brought it back.
 
 The reason why the reference went away goes back to something from a [now-deleted](/posts/2019/10/its-about-food-not-decor) previous post:
 
-> .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together). So, now, I keep my [SSG] directory in a drive that's not sync'd with the cloud.
+> .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together). So, now, I keep my [SSG](https://staticsite.gen) directory in a drive that's not sync'd with the cloud.
 
 But, in giving up keeping this site's local [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml) in [iCloud Drive](https://developer.apple.com/icloud/icloud-drive/), I'd apparently also ceded one key advantage which cloud sync had provided: being able to write posts and manage my site from any of my iOS devices. Instead, it appeared, I was going back to the beginning, when I'd done it all from my iMac.
 
