@@ -1,0 +1,62 @@
+
+/* following is for dark mode where browsers respect this */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: var(--background-dark-mode);
+	}
+
+  body, .text-body, figcaption {
+    color: var(--default-color-dark-mode) !important;
+  }
+
+  .text-muted, .text-sans-serif {
+    color: var(--grey-2-dark-mode) !important;
+  }
+
+  a {
+    color: var(--blueLight);
+    border-bottom: 1px solid var(--blueFirst);
+  }
+
+  a:hover, a:focus, a:active {
+    color: var(--grey-2);
+    border-bottom: 1px solid var(--blueLight);
+  }
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: var(--default-color-dark-mode);
+  }
+
+  blockquote, .featured-image-caption {
+    color: var(--grey-2-dark-mode) !important;
+  }
+
+  table.noborders tr {
+    background-color: var(--default-color-dark-mode);
+    color: var(--default-color);
+  }
+
+  table.noborders thead tr {
+    background-color: var(--darkblue);
+  }
+  
+  .container-narrower {
+    & .yellowBox {
+      background: var(--yellowBox-dark-mode);
+      border: 1px solid var(--grey-1);
+    }
+  }
+
+  footer {
+    background: #000;  
+  }
+
+  code {
+    background: var(--code-bkgd-dark-mode);
+  }
+  
+  .u-url {
+    color: #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+  }
+}
