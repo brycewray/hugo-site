@@ -19,7 +19,8 @@ module.exports = {
       },
     }),
     postcssPartialImport({
-      root: './assets/css/',
+      path: 'assets/css/',
+      // see https://discourse.gohugo.io/t/pipes-postcss-postcss-import-how-to-keep-filesystem-context/15164
     }),
     cssvariables({}),
     postcssNesting({}),
