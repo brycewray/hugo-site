@@ -1,0 +1,17 @@
+ul.pagination {
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+li.page-item, 
+li.pagination__item, 
+li.pagination__item--first, 
+li.pagination__item--previous, 
+li.pagination__item--next, 
+li.pagination__item--last {
+	font-size: $pokey + unquote("em"); // old browsers
+	font-size: $pokey + unquote("rem");
+	display: inline;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}

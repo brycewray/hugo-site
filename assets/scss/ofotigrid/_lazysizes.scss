@@ -1,0 +1,38 @@
+.lazybox {
+  position: relative;
+  display: block;
+  @media screen and (min-width: 900px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.lazybox-img.ls-blur-up-is-loading, 
+.lazybox-img.lazyload:not([src]) {
+  visibility: hidden;
+}
+
+.ls-blur-up-img, 
+.lazybox-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: "blur-up: auto", "object-fit: cover";
+
+  object-fit: cover;
+}
+
+
+.ls-blur-up img {
+  filter: blur(10px);
+  opacity: 1;
+  transition: opacity 1000ms, filter 1500ms;
+}
+
+.ls-blur-up-img.ls-inview.ls-original-loaded {
+  opacity: 0;
+  filter: blur(5px);
+}

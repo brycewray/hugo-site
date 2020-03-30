@@ -1,0 +1,44 @@
+.pagination {
+  border-top: .5px solid $grey-2;
+  padding-top: 2rem;
+  position: relative;
+  text-align: center;
+
+  span {
+    color: $default-shade;
+    font-size: $legal;
+  }
+
+  .top {
+    @include transition(all .3s ease-out);
+    color: $blue;
+    font-size: $pokey;
+    opacity: .6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .arrow {
+    @include transition(all .3s ease-out);
+    color: $blue;
+    position: absolute;
+    font-size: $pokey;
+    opacity: .6;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+}

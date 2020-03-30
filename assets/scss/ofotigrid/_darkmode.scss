@@ -1,0 +1,95 @@
+
+/* following is for dark mode where browsers respect this */
+@media (prefers-color-scheme: dark) {
+  html, 
+  body {
+    background: $background-dark-mode;
+  }
+  
+  .chroma, 
+  code {
+    background-color: $chroma-bkgd-dark-mode;
+    color: $code-color-dark-mode;
+    [class^="language-"] {
+      color: #fff !important;
+    }
+  }
+  
+  span.c {
+    color: $code-color-dark-mode !important;
+  }
+
+  span.gs, 
+	span.gh, 
+	span.ge {
+		color: $blueLight !important;
+  }
+  
+  span.nx {
+    color: $grey-3 !important;
+  }
+
+  span.o {
+    color: #fff !important;
+  }
+
+  span.s1, span.k, span.p {
+    color: $code-color-orange-dark-mode !important;
+  }
+
+  span.s2, span.nt {
+    color: $code-color-tan-dark-mode !important;
+  }
+
+	.card-body {
+    background: $default-color;
+  }
+
+  body, .text-body {
+    color: $default-color-dark-mode !important;
+  }
+
+  .text-muted, .text-sans-serif {
+    color: $grey-2-dark-mode !important;
+  }
+
+  a, .fakeFn {
+    color: $blueLight;
+  }
+
+  a {
+    border-bottom: 1px solid $blueFirst;
+  }
+
+  a:hover, a:focus, a:active {
+    color: $grey-2;
+    border-bottom: 1px solid $blueLight;
+  }
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: $default-color-dark-mode;
+  }
+
+  blockquote, .featured-image-caption {
+    color: $grey-2-dark-mode !important;
+  }
+
+  table.noborders tr {
+    background-color: $default-color-dark-mode;
+    color: $default-color;
+  }
+
+  table.noborders thead tr {
+    background-color: $darkblue;
+  }
+
+  .container {
+    &-narrower {
+      .yellowBox {
+        background: #332200;
+        border: 1px solid $grey-1;
+      }
+    }
+  }
+
+}

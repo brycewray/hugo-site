@@ -1,0 +1,68 @@
+// border-radius variable -- uses em rather than rem due to old browsers; IE 9+ supports 'calc'
+$card-border-radius: calc(0.5em - 1px);
+
+.container-posts-cards {
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  display: table; // old browsers
+  border-spacing: 0.25em; // old browsers
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 1rem; // rem is OK because old browsers don't do grid
+  @media screen and (min-width: 900px) {
+    max-width: 85%;
+    grid-template-columns: 50% 50%;
+  }
+  .column {
+    display: table-cell; // old browsers
+    display: grid;
+  }
+}
+
+.card {
+  display: table-cell; // old browsers
+  display: grid;
+  grid-template-rows: auto auto 4.5vh;
+  @media screen and (min-width: 900px) {
+    grid-template-rows: auto 11rem; // rem is OK because old browsers don't do grid
+  }
+  grid-template-areas:
+    "img"
+    "body"
+    "button"
+  ;
+  background-color: $grey-3;
+  border: 1px solid $grey-2;
+  border-radius: $card-border-radius;
+  // don't declare padding here because we want image to cover card; we'll handle padding in .card-body
+}
+
+.card-img-top {
+  border-top-left-radius: $card-border-radius;
+  border-top-right-radius: $card-border-radius;
+}
+
+.card-body {
+  padding: 1em 1.5em; // old browsers
+  padding: 1rem 1.5rem;
+  grid-area: body;
+}
+
+.card-img-crop { // based on https://stackoverflow.com/questions/28460844/html-bootstrap-how-to-crop-the-center-part-of-an-image
+  grid-area: img;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 200px;
+}
+
+.card-btn-bottom {
+  grid-area: button;
+  align-self: end;
+  margin-bottom: 0.5em; // old browsers
+  margin-bottom: 0.5rem;
+  a {
+    border-bottom: 0 !important;
+  }
+}

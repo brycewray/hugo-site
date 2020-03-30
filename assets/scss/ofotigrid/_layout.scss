@@ -1,0 +1,531 @@
+#content, main {
+  padding-top: 40px;
+  // display: grid;
+}
+
+#content .topOfMain, main .topOfMain {
+  margin-top: 0.5em;
+}
+
+.text-sans-serif {
+  font-family: $sans-serif-boot;
+}
+
+.text-nowrap, .nobrk {
+  white-space: nowrap;
+}
+
+.text-link {
+  color: $blue;
+}
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: $darkblue;
+}
+
+.text-muted {
+  color: $grey-1;
+}
+
+.text-body {
+  color: $default-color;
+}
+
+footer {
+  margin: 4em auto 0 auto;
+  margin: 4rem auto 0 auto; // top margin keeps "Comments" item from infringing on this in small-device view
+  width: 90%;
+  padding-bottom: 0.5em;
+  padding-bottom: 0.5rem;
+  @media (min-width: 900px) {
+    margin: 25px auto 0 auto; // old browsers
+    margin: 2rem auto 0 auto;
+    padding-bottom: 1em; // old browsers
+    padding-bottom: 1rem;
+    width: 85%;
+  }
+}
+
+figure, .figure {
+  margin-right: auto;
+  margin-left: auto;
+  img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+}
+
+figure.figurebox {
+  padding: 0.5em; // old browsers
+  padding: 0.5rem;
+}
+
+figcaption p {
+  font-size: $legal + unquote("em"); // old browsers
+  font-size: $legal + unquote("rem");
+  color: $grey-1;
+  padding-top: 1em; // old browsers
+  padding-top: 1rem;
+  text-align: center !important;
+}
+
+h3.twitter-border {
+  margin: 1em 0; // old browsers
+  margin: 1rem 0;
+  padding: 0.5em 0 0 0; // old browsers
+  padding: 0.5rem 0 0 0;
+  border-top: 2px solid $blue;
+  a {
+    border-bottom: 0;
+  }
+}
+
+.twitter-timeline {
+	width: 100vw !important;
+}
+
+.background-hero {
+  &-div {
+    background: $darkblue; // fallback for really old browsers
+    background: linear-gradient(
+      rgba(0,0,170,1.00),
+      rgba(0,0,85,1.00)
+    );
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+    height: 60vh;
+    /* image supplied programmatically by template */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 70vh;
+    }
+    @media screen and (min-width: 1025px) {
+      background-attachment: fixed;
+      height: 80vh;
+    }
+  }
+  &-title-block {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.00),
+      rgba(0, 0, 0, 1.00)
+    );
+  }
+  &-title-text, &-subtitle-text, &-description-text {
+    color: #fff;
+    margin: 0 auto 0 auto;
+    text-shadow: 4px 4px 2px #000;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+      padding-left: 15%;
+    }
+  }
+
+  &-title-text {
+    font-size: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 3.5em;
+    }
+    @media screen and (min-width: 1025px) {
+      font-size: 3.5em;
+    }
+  }
+
+  &-subtitle-text {
+    font-size: 1.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
+    @media screen and (min-width: 900px) {
+      font-size: 2.25em;
+    }
+  }
+
+  &-description-text {
+    display: none; // appears only on wider screens
+    @media screen and (min-width: 900px) {
+      display: block;
+      font-weight: bold; // older browsers
+      font-weight: 600;
+      padding-top: 0.25em;
+      font-size: 1.25em;
+      font-style: italic;
+      padding-right: 15%;
+    }
+  }
+
+  &-p-text {
+    color: #fff;
+    text-shadow: 4px 4px 2px #000;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: right;
+      padding-right: 15%;
+    }
+  }
+}
+
+
+img.featured-image {
+  display: block;
+  width: 90%;
+  @media (min-width: 900px) {
+    width: 65%;
+  }
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  &-hero {
+    width: 100%;    
+  }
+}
+
+.featured-image-caption {
+  margin-top: 0.25em;
+  padding-bottom: 1.5em; // old browsers
+  padding-bottom: 1.5rem;
+  text-align: center !important;
+  font-size: $legal + unquote("em"); // old browsers
+  font-size: $legal + unquote("rem");
+  color: $grey-1;
+}
+
+table.leagues {
+	width: 90%;
+	margin: 1em auto 0 auto; // old browsers
+	margin: 1rem auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+	@media (min-width: 900px) {
+		width: 60%;
+	}
+	td.col {
+		width: 50%;
+	}
+}
+
+table.noborders {
+  width: 100%;
+  @media (min-width: 900px){
+    width: 90%;
+  }
+  margin: 1.5em auto 1em auto; // old browsers
+  margin: 1.5rem auto 1rem auto;
+  border: 0;
+  border-collapse: collapse;
+
+  td {
+    text-align: left !important;
+    vertical-align: middle;
+    padding: 0.25em 0 0.25em 0.5em; // old browsers
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;  
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: #dfefff;
+  }
+
+  thead {
+    background-color: $darkblue;
+  }
+  
+  thead td {
+    color: #fff !important;
+    font-weight: bold;
+    font-family: $sans-serif-boot;
+  }
+  
+  td.td70 {
+    width: 70%;
+    img {
+      display: block;
+      width: 50%;
+      max-width: 50%;
+      height: auto;
+    }
+  }
+  
+  td.td30 {
+    width: 30%;
+  }
+}
+
+img.postsFeatImg {
+  float: inherit;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  @media (min-width: 900px) {
+    float: right;
+    padding-top: 1em; // old browsers
+    padding-top: 1rem;
+    padding-left: 1.5em; // old browsers
+    padding-left: 1.5rem;
+    width: 50%;
+    height: auto;
+  }
+}
+
+.sortabig {
+  font-size: $sortabig + unquote("em"); // old browsers
+  font-size: $sortabig + unquote("rem");
+}
+
+.bigger {
+  font-size: $bigger + unquote("em"); // old browsers
+  font-size: $bigger + unquote("rem");
+}
+
+$homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
+
+.hero { // specifically for home page, at least to begin with
+  background-color: #0088ff;
+  // old-browser stuff...
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  // end this particular old-browser stuff...
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  height: 400px; // old browsers
+  height: 40vh;
+  &-home {
+    background-image: url($homeHeroImageURL);
+    @media screen and (min-width: 1025px) {
+      background-attachment: fixed;
+      height: 50vh;
+    }
+  }
+}
+
+.container {
+  display: table-cell; // old browsers
+  display: grid;
+  // width: 90%;
+  margin: 0 auto;
+  &-home {
+    // old browsers
+    display: table;
+    border-spacing: 30px;
+    // end old browsers
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2rem; // rem is OK because old browsers don't do grid
+    width: 90%;
+    grid-template-columns: 100%;
+    @media screen and (min-width: 900px) {
+      width: 75%;
+      grid-template-columns: 60% 40%;
+      padding-top: 0.5em;
+    }
+    .column-home {
+      display: table-cell; // old browsers
+      display: grid-item;
+      img.homeContainedImage {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media screen and (min-width: 900px) {
+        img.homeContainedImage {
+          width: 90%;
+        }
+      }
+    }
+  }
+  &-portfolio {
+    display: table; // old browsers
+    border-spacing: 30px; // old browsers
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2rem; // rem is OK because old browsers don't do grid
+    width: 90%;
+    grid-template-columns: 100%;
+    @media screen and (min-width: 900px) {
+      width: 75%;
+      grid-template-columns: auto auto;
+    }
+    .column {
+      display: table-cell; // old browsers
+      display: grid-item;
+    }
+  }
+  &-narrower {
+    margin: 1em auto 0 auto;
+		width: 80%;
+		table {
+			margin: 1em auto 0 auto;
+			width: 80%;
+    }
+    img.containedImage {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .yellowBox {
+      display: block;
+      background: #ffff88;
+      border: 1px solid #333;
+      margin: 0.5em auto;
+      width: 95%;
+      padding: 0 1em 0 0;
+      p { 
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight {
+				margin: 1em auto 0 auto;
+				width: 50%;
+      }
+      
+      .yellowBox {
+        width: 48%;
+      }
+
+			.footnotes ol li {
+				margin: 1em auto 0 auto;
+				padding-left: 0em;
+				padding-right: 2em;
+			}
+
+			ul .highlight, ol .highlight {
+				width: 100%; // within that element
+			}
+
+			li ul, li ol {
+				margin: 0.25em auto 0 auto;
+				width: 85%;
+				padding-right: 2em;
+				padding-left: 1.5em;
+			}
+			time {
+				display: block;
+				margin-top: 0.25em; // old browsers
+				margin-top: 0.25rem;
+			}
+			img {
+        display: block;
+        width: 80%;
+        max-width: 80%;
+        height: auto;
+        margin: 0.5em auto 0.5em auto;
+        text-align: center;
+      }
+
+      img.containedImage { /* for lower-res images */
+        width: 50%;
+      }
+      
+      pre {
+        // width: 50%;
+        margin: 0.5em auto;
+      }
+    }
+  }
+  &-comments {
+    font-size: 85%;
+    width: 85%;
+    max-width: 720px !important;
+    margin-bottom: 3em; // old browsers
+    margin-bottom: 3rem;
+    @media (min-width: 900px) {
+      width: 50%;
+    }
+  }
+}
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  margin-top: 2em;
+  background-color: $darkblue !important;
+	padding: 0.15em 0 0.25em 0;
+  div, p {
+    color: #fff;
+	}
+	h3, p {
+		margin: 0;
+		padding: 0;
+	}
+  a, a.hover, a.focus {
+    color: #aaddff !important;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25em 0.5em; // old browsers
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+.disclaimer-portfolio {
+  margin: 1em auto 1em auto;
+  @media screen and (min-width: 900px) {
+    margin: 1em 17.5% 1em 17.5%;
+  }
+}
+
+.talkyard-comments {
+  font-family: $sans-serif-boot;
+}
+
+li p {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+.YTembed { /* container for iframe */
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

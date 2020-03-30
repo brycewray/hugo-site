@@ -1,0 +1,285 @@
+// CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/WRwJQX
+
+// keep header here rather than base or layout SCSS
+
+// vars just for this one:
+$breakpoint: 900px;
+$nav-height: 50px;
+
+header {
+  height: 30px;
+  font-family: $sans-serif-boot;
+  width: 100%;
+  background-color: $darkblue;
+  position: fixed;
+  padding: 0.5em 0 0.5em 0;
+  margin-top: 0;
+  z-index: 9999; // keeps YT videos from appearing over it, for one thing
+}
+
+.nav {
+  &__bar {
+    background-color: $darkblue;
+    padding-top: $nav-height;
+
+    @media (min-width: $breakpoint) {
+      max-height: none;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+    background: $darkblue; // example was #fff
+
+    @media (min-width: $breakpoint) {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      padding: 0.5em 1.5em 0.5em 1.5em;
+      margin: 0;
+      // border-bottom: 1px solid #fff;
+      color: #fff;
+      background: $darkblue; // example was green
+      // font-size: 1.2rem; font-size: 1.2em;
+      text-decoration: none;
+      transition: opacity 0.5s ease;
+
+      @media (min-width: $breakpoint) {
+        display: inline-block;
+        // height: $nav-height;
+        // line-height: $nav-height;
+        padding-top: 0;
+        padding-bottom: 0;
+        border: none;
+      }
+
+      &:link, &:visited {
+        color: #fff;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    top: ($nav-height - 20px)/2;
+    right: 13px;
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+    text-indent: -9999px; // hide the label
+    transition: all 1s cubic-bezier(.19, 1, .22, 1);
+
+     //Remove blinking cursor
+     border: none;
+     color: transparent;
+     text-shadow: 0 0 0 gray;
+     text-align: center;
+ 
+     &:focus {
+         outline: none;
+     }
+ 
+     @media (min-width: $breakpoint) {
+       display: none;
+     }
+   }
+ 
+   &__icon-line {
+     position: absolute;
+     display: block;
+     background: #fff;
+     width: 27px;
+     height: .2rem; height: .2em;
+     border-radius: .2rem; border-radius: 2em;
+     left: 0;
+     text-indent: 0;
+     transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+ 
+     &:first-child {
+       top: 0;
+     }
+ 
+     &:nth-child(2) {
+       top: 8px;
+     }
+ 
+     &:nth-child(3) {
+       top: 16px;
+     }
+   }
+ }
+ 
+ // Checkbox hack for toggling mobile menu
+ input[type=checkbox] {
+   display: none;
+   visibility: hidden;
+ 
+   &:checked {
+ 
+     ~ nav .nav__items {
+       height: auto;
+       max-height: 30rem;
+       transition: all 2s cubic-bezier(.5, 1, .22, 1);
+     }
+ 
+     ~ label .nav__icon-line:first-child {
+       top: 0px;
+       width: 27px;
+       transform: translateX(-8px) rotate(-45deg) translateY(12px);
+     }
+ 
+     ~ label .nav__icon-line:nth-child(2) {
+       opacity: 0;
+     }
+ 
+     ~ label .nav__icon-line:nth-child(3) {
+       top: 14px;
+       width: 27px;
+       transform: translateX(-5px) rotate(45deg) translateY(-8px);
+     }
+   }
+ }
+ 
+
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: $darkblue;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  // transition: transform 400ms ease-in-out;
+  ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    list-style: none;
+  }
+  li {
+    margin-bottom: 0.5em;
+    margin-right: 5%;
+    display: inline; // putting here for really old non-query-savvy browsers
+    @media screen and (max-width: 899px) {
+      display: inherit;
+    } // undoing the inline-for-really-old-browsers stuff
+  }
+  a {
+    color: #fff;
+    font-size: $stdsize + unquote("em"); // old browsers
+    font-size: $stdsize + unquote("rem");
+    // text-decoration-skip-ink: none;
+    text-decoration: none;
+    border-bottom: 0;
+    opacity: 0;
+    // transition: opacity 150ms ease-in-out;
+  }
+  a:hover, a:active {
+    color: $grey-2;
+    border-bottom: 0;
+  }
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+  a {
+    opacity: 1;
+  }
+}
+
+.site-logo {
+  color: #fff;
+  a {
+    color: #fff;
+    // text-decoration-skip-ink: none;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+  a:active, a:hover {
+    color: $grey-2;
+    border-bottom: 0;
+  }
+  font-size: $minimalbig + unquote("em"); // old browsers
+  font-size: $minimalbig + unquote("rem");
+  font-weight: 700;
+  margin-top: 0.2em;
+  margin-left: 5%;
+}
+
+
+// === Beginning of primary settings for larger screens ===
+
+@media screen and (min-width: 900px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  
+  header {
+    display: table;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
+    position: fixed;
+  }
+
+  .site-logo {
+    z-index: 999999;
+    display: grid-item;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding-left: 1.5em;
+    font-size: $minimalbig + unquote("em"); // old browsers
+    font-size: $minimalbig + unquote("rem");
+}
+
+  nav {
+    top: 25%;
+    transform: none;
+    margin-top: 0;
+    margin-left: 60%;
+    display: table;
+    grid-column: 4 / 5;
+    a {
+      opacity: 1;
+      position: relative;
+    }
+    ul {
+      margin: auto;
+      padding-right: 20%;
+      text-align: left; // fixes old browsers that don't understand media queries
+    }
+    li {
+      margin-left: 3em;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* ==== for IE 10 and 11 **ONLY** ==== */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  nav {
+    margin-left: 35%;
+  }
+  nav ul {  
+		margin-left: 48%;
+		text-align: inherit;
+	}
+	.site-logo {
+		margin: 0 0 0.25em 0;
+		padding: 0 0 0 4%;
+	}
+}  
+/* ==== end, IE 10 and 11 **ONLY** ==== */
+
+// === End of primary settings for larger screens ===

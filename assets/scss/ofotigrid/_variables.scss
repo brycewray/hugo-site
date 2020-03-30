@@ -1,0 +1,49 @@
+// Colors
+$default-color: #333;
+$default-color-dark-mode: #ddd;
+$default-shade: #484848;
+$default-tint: rgba(170, 170, 170, 0.719);
+$grey-1: #656565;
+$grey-2: #c8c8c8;
+$chroma-bkgd: #ededed; // was ededed
+$grey-2-5: #ededed;
+$chroma-bkgd-dark-mode: #555;
+$grey-2-dark-mode: #a8a8a8;
+$grey-3: #f9f9f9;
+$white: #fff;
+$background-dark-mode: #000; // was #181818
+$black: #000;
+$blue: #0033ff; // was 0088ff but that's not sufficient contrast for accessibility
+$blueFirst: #0088ff; // Will use as a hover color only
+$blueLight: #00bbff; // for use with dark mode where supported
+$darkblue: #0000aa;
+$shadow-color: rgba(0, 0, 0, .2);
+$code-color: #006400; // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
+$code-color-dark-mode: #88ff88;
+$code-bkgd-dark-mode: #303030;
+$code-color-tan: #996600;
+$code-color-tan-dark-mode: #cc9900;
+$code-color-blueLight-dark-mode: #88ddff;
+$code-color-orange-dark-mode: #ffaa00;
+
+// Typography
+$sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$sans-serif-boot: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // based on the simplified system stack in Bootstrap 4 as of November, 2018
+$serif-primary: Georgia, "Droid Serif", Times, "Times New Roman", serif;
+$serif-secondary: "Georgia", serif;
+$monospaced: "SFMono-Regular", Consolas, "Liberation-Mono", Menlo, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// ems rather than rems for older-browser support
+$biggest: 2.5;
+$bigger: 2;
+$mightybig: 1.75;
+$sortabig: 1.5;
+$slightlybig: 1.25;
+$minimalbig: 1.15;
+$stdsize: 1;
+$pokey: 0.85;
+$legal: 0.75;
+$timelineTxt: 0.7;
+$teeny: 0.6;
+
+// alignment
+$bodyalign: left;
