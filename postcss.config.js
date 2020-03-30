@@ -23,7 +23,7 @@ module.exports = {
     }),
     cssvariables({}),
     postcssNesting({}),
-    process.env.NODE_ENV === 'production' 
+    process.env.HUGO_ENVIRONMENT === 'production' 
     ? cssnano({ preset: 'default' })
     : null,
   ],
