@@ -19,7 +19,7 @@ module.exports = {
       },
     }),
     postcssPartialImport({
-      root: './src/assets/css/',
+      root: './assets/css/',
     }),
     cssvariables({}),
     postcssNesting({}),
