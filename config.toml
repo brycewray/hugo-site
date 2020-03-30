@@ -1,28 +1,23 @@
 baseURL = "https://brycewray.com"
 languageCode = "en-us"
 title = "BryceWray.com"
-# theme = "ofotigrid"
-googleAnalytics = "UA-146418828-1"
 
 summaryLength = 30 # words
 FootnoteReturnLinkContents = "&#8593;"
 enableRobotsTXT = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
-pygmentsCodefencesGuessSyntax = true
 
 Paginate = 5 #so five will appear on each page
 
 [params]
     Author = "Bryce Wray"
-    Description = "Bryce Wray’s Web site — observations and opinions"
-    talkyardServerUrl = "https://comments-for-brycewray-com.talkyard.net"
-    talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
+    Description = "Bryce Wray’s Web site — observations, opinions, geekiness"
 
-[blackfriday]
-    hrefTargetBlank = true
-    nofollowLinks = true
-    noreferredLinks = true
+[markup]
+    [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true # only to allow for inline HTML and/or JS
+    [markup.highlight]
+      guessSyntax = true
 
 [menu]
     [[menu.main]]
