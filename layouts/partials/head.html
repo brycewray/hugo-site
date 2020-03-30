@@ -34,7 +34,7 @@
     {{ $css := resources.Get "css/index.css" }}
     {{ $style := $css | resources.PostCSS }}
 
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     {{ "<!--[if lt IE 10]>" | safeHTML }}
     <script src="/html5shiv/html5shiv.js"></script>
