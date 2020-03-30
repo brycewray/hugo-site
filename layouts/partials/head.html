@@ -10,8 +10,6 @@
     <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
     {{- end }}
         
-    {{ template "_internal/google_analytics.html" . }}
-    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +30,9 @@
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
     {{- end }}
 
-    <!-- CSS/SCSS -->
-    {{ $options := (dict "targetPath" "css/ofotigrid.css" "outputStyle" "compressed") }}
-    {{ $style := resources.Get "scss/ofotigrid.scss" | resources.ToCSS $options }}
+    <!-- CSS from PostCSS -->
+    {{ $css := resources.Get "css/index.css" }}
+    {{ $style := $css | resources.PostCSS }}
 
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
