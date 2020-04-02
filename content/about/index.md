@@ -23,4 +23,4 @@ Am I anybody special? Nope; just an ordinary working guy who, for decades, has u
 
 Finally: since the Kewl Kids went off and left us non-[SSG](https://staticgen.com) users in the dust, it behooved me and my geek's curiosity to give this stuff a try, and that was the main reason I started the site in the first place. As one who's long delighted in hand-coding Web sites[^incorrigible] whenever possible, I love seeing the comeback of static sites.
 
-[^incorrigible]:	Yes, I still like to call them _Web sites_. I also use the [Oxford comma](https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/). I am incorrigible.
+[^incorrigible]: Yes, I still like to call them _Web sites_. I also use the [Oxford comma](https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/). I am incorrigible.
