@@ -13,10 +13,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
     {{- if .IsHome }}
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta property="og:description" content="{{ .Site.Params.Description }}" />
-    <meta property="og:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
     {{- else }}
     <meta name="description" content="{{ .Params.Description }}">
     <meta property="og:description" content="{{ .Params.Description }}" />
@@ -25,21 +25,6 @@
     {{- if isset .Params "final_url" }}
     <meta property="og:url" content="{{ .Site.BaseURL }}{{ index .Params "final_url" }}" />        
     {{- end }}
-
-    {{- if isset .Params "featured_image" }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
-    {{- end }}
-
-    <!-- CSS from PostCSS -->
-    {{ $css := resources.Get "css/index.css" }}
-    {{ $style := $css | resources.PostCSS }}
-
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-
-    {{ "<!--[if lt IE 10]>" | safeHTML }}
-    <script src="/html5shiv/html5shiv.js"></script>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css-for-ie9/ie9.css">
-    {{ "<![endif]-->" | safeHTML }}
 
     <!-- Twitter meta -->
     <meta name="twitter:site" content="@BryceWrayTX">
@@ -56,13 +41,32 @@
     {{ end }}
 
     <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon_180x180.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon_120x120.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon_167x167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon_152x152.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/apple-touch-icon_1024x1024.png">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+
+    <!-- CSS from PostCSS -->
+    {{ $css := resources.Get "css/index.css" }}
+    {{ $style := $css | resources.PostCSS }}
+
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{ "<!--[if lt IE 10]>" | safeHTML }}
+    <script src="/html5shiv/html5shiv.js"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css-for-ie9/ie9.css">
+    {{ "<![endif]-->" | safeHTML }}
 
     <!-- RSS -->
     {{ range .AlternativeOutputFormats -}}

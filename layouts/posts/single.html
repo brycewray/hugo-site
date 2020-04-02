@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-  <div class="background-hero-div" style="background-image: url({{ index .Params "featured_image" }});">
-    <div class="background-hero-title-block">
+  <div class="background-hero-div">
+    <div class="background-hero-title-block-fit">
       <h1 class="background-hero-title-text">{{ .Title | markdownify}}</h1>
       <h2 class="background-hero-subtitle-text" style="margin-top: 0;">
         {{- if .Params.Subtitle }}
@@ -24,28 +24,10 @@
     </div>
   </div>
 
-  {{- if isset .Params "featured_image_caption" }}
-    <p class="featured-image-caption">{{ index .Params "featured_image_caption" }}</p>
-  {{- end }}
-<div class="post-line"></div> 
-
 <div class="container-narrower">
   <article class="article">
     {{ .Content }}
   </article>
-</div>
-
-<div class="container container-comments">
-  <p>&nbsp;</p>
-  <!-- Comments code -->
-  <script>talkyardServerUrl='{{ .Site.Params.talkyardServerUrl }}';</script>
-  <script async defer src="{{ .Site.Params.talkyardScriptUrl }}"></script>
-  <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-  <div class="talkyard-comments" data-discussion-id="{{ .Params.discussionId }}" data-iframe-title="Comments section on brycewray.com, powered by Talkyard" style="margin-top: 3em;">
-    <noscript>Please enable Javascript to view comments.</noscript>
-    <!-- commenting this out because it's in the footer -- <p class="legal text-muted" style="margin-top: 2em;">Comments powered by <a href="https://www.talkyard.io">Talkyard</a>.</p>-->
-  </div>
-  <!-- end, Comments code -->
 </div>
   
   {{ if or .PrevPage .NextPage }}
