@@ -13,7 +13,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
     {{- if .IsHome }}
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta property="og:description" content="{{ .Site.Params.Description }}" />
@@ -22,23 +22,15 @@
     <meta property="og:description" content="{{ .Params.Description }}" />
     {{- end }}
 
-    {{- if isset .Params "final_url" }}
-    <meta property="og:url" content="{{ .Site.BaseURL }}{{ index .Params "final_url" }}" />        
-    {{- end }}
+    <meta property="og:url" content="https://brycewray.com{{ .RelPermalink }}" />        
 
     <!-- Twitter meta -->
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    {{ if .IsPage }}
-      <meta name="twitter:description" content="{{ .Description }}" />
-      <meta name="twitter:title" content="{{ .Title }}" />
-      <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ index .Params "featured_image" }}" />
-    {{ else }}
-      <meta name="twitter:description" content="{{ .Site.Params.Description }}" />
-      <meta name="twitter:title" content="{{ .Site.Title }}" />
-      <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
-    {{ end }}
+    <meta name="twitter:description" content="{{ .Site.Params.Description }}" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico">
@@ -61,12 +53,7 @@
     {{ $css := resources.Get "css/index.css" }}
     {{ $style := $css | resources.PostCSS }}
 
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-
-    {{ "<!--[if lt IE 10]>" | safeHTML }}
-    <script src="/html5shiv/html5shiv.js"></script>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css-for-ie9/ie9.css">
-    {{ "<![endif]-->" | safeHTML }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
 
     <!-- RSS -->
     {{ range .AlternativeOutputFormats -}}
