@@ -1,6 +1,7 @@
 ul.pagination {
 	margin: 0 auto 0 auto;
-	text-align: center;
+  text-align: center;
+  padding-inline-start: 0;
 }
 
 li.page-item, 
