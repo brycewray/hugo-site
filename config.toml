@@ -18,6 +18,7 @@ Paginate = 5 #so five will appear on each page
         unsafe = true # only to allow for inline HTML and/or JS
     [markup.highlight]
       guessSyntax = true
+      noClasses = false
 
 [menu]
     [[menu.main]]

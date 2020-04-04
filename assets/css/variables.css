@@ -14,6 +14,7 @@
   --default-tint: rgba(170, 170, 170, 0.719);
   --grey-1: #656565;
   --grey-2: #c8c8c8;
+  --chroma-bkgd: #ededed;
   --grey-2-5: #ededed;
   --grey-2-dark-mode: #a8a8a8;
   --grey-3: #f9f9f9;
@@ -26,7 +27,10 @@
   --blueFirst: #0088ff; /* Will use as a hover color only */
   --blueLight: #00bbff; /* for use with dark mode where supported */
   --darkblue: #0000aa;
-  --shadow-color: rgba(0, 0, 0, .2);--code-color-dark-mode: #88ff88;
+  --shadow-color: rgba(0, 0, 0, .2);
+  --code-color: #006400;
+  --code-color-dark-mode: #88ff88;
+  --code-color-tan: #996600;
   --code-bkgd-light-mode: #dfefff; /* for reference, GitHub uses f6f8fa */
   --code-bkgd-dark-mode: #0e2e3e;
 
