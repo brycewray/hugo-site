@@ -108,5 +108,8 @@ pre[class*="language-"] {
 }
 
 .highlight {
-  font-size: 0.8em;
+  font-size: 0.8em; /* for Roboto Mono as compared to Public Sans */
+  & .chroma {
+    font-size: 1.25em; /* undoing the above when necessary */
+  }
 }
