@@ -161,7 +161,7 @@ td {
   }
 }
 
-sup.footnote-ref {
+sup a.footnote-ref {
   font-size: calc(var(--teeny) * 1em);
 }
 
