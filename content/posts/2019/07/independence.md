@@ -66,8 +66,8 @@ I knew I had to have a Mac.
 
 In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local [ComputerLand](https://en.wikipedia.org/wiki/ComputerLand) and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
 
-{% lazypicture "1984-07-11_01_retouched_1280x720", "jpg", 1280, "Me, in 1984, eagerly wrapping my new Macintosh." %}
-<p class="lazypicturecaption">July 11, 1984: A much younger and skinnier me eagerly unwraps my new &ldquo;Skinny Mac.&rdquo; (Photo by my overly tolerant&nbsp;spouse.)</p>
+
+<p class="lazypicturecaption"><img class="imgCover" src="/images/1984-07-11_01_retouched_1280x720_60pct.jpg" alt="Me, in 1984, eagerly wrapping my new Macintosh." />July 11, 1984: A much younger and skinnier me eagerly unwraps my new &ldquo;Skinny Mac.&rdquo; (Photo by my overly tolerant&nbsp;spouse.)</p>
 
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 

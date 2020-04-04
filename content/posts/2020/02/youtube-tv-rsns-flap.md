@@ -10,11 +10,15 @@ lastmod: 2020-04-02T12:23:00-05:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
 ---
 
-***Update, 2020-02-29***---This morning, I learned from [a story on *CordCutters News*](https://www.cordcuttersnews.com/youtube-tv-sinclair-agree-to-a-short-term-extension-to-keep-fox-regional-sports-networks/) that YouTube TV and Sinclair are continuing to negotiate over the dispute described in this post and have agreed that, while they do so, YouTube TV will keep carrying the RSNs. I'll still keep this post in place because (a.) that's not exactly a final resolution, if indeed such a thing is ever possible in this case and (b.) there are a number of points herein which, in this here point-maker's opinion, remain salient nonetheless.{.yellowBox}
+<div class="yellowBox">
+  <p><strong><em>Update, 2020-02-29</em></strong>&mdash;This morning, I learned from <a href="https://www.cordcuttersnews.com/youtube-tv-sinclair-agree-to-a-short-term-extension-to-keep-fox-regional-sports-networks/">a story on <em>CordCutters News</em></a> that YouTube TV and Sinclair are continuing to negotiate over the dispute described in this post and have agreed that, while they do so, YouTube TV will keep carrying the RSNs. I&rsquo;ll still keep this post in place because (a.) that&rsquo;s not exactly a final resolution, if indeed such a thing is ever possible in this case and (b.) there are a number of points herein which, in this here point-maker&rsquo;s opinion, remain salient nonetheless.</p>
+</div>
 
 Ninety years ago, a reporter asked Babe Ruth about the fact that his previous year's pay had been higher than that of the president of the United States, Herbert Hoover. The Babe [responded](https://quoteinvestigator.com/2014/12/28/better-year/), in a probable dig at Hoover's handling of the dawning Great Depression: "I had a better year than he did."
 
-Ruth, arguably the greatest player in the history of baseball, played in an era when only the very top professional athletes made more than just enough to live a decent life. And that didn't change for a very long time---until the [really large paychecks](https://www.firmex.com/resources/uncategorized/when-did-athletes-start-getting-rich/) started becoming common in the latter half of the twentieth century.^[Still, it's interesting to consider that Ruth's 1929 pay of what then was eighty thousand dollars [would be over $1.2 million in 2020 dollars](https://www.in2013dollars.com/us/inflation/1929?amount=80000).]
+Ruth, arguably the greatest player in the history of baseball, played in an era when only the very top professional athletes made more than just enough to live a decent life. And that didn't change for a very long time---until the [really large paychecks](https://www.firmex.com/resources/uncategorized/when-did-athletes-start-getting-rich/) started becoming common in the latter half of the twentieth century.[^Ruth]
+
+[^Ruth]: Still, it's interesting to consider that Ruth's 1929 pay of what then was eighty thousand dollars [would be over $1.2 million in 2020 dollars](https://www.in2013dollars.com/us/inflation/1929?amount=80000).
 
 Fast-forward to today, when:
 
@@ -26,7 +30,9 @@ Fast-forward to today, when:
 
 It's been [over 150 years](https://ohiohistorycentral.org/w/Cincinnati_Reds) since professional sports began to captivate the hearts of U. S. fans. Now, all of this may finally have become unsustainable, a possibility I've been pondering for a while. It may well be that the pyramid is, at long last, toppling.
 
-I was further prompted toward this conclusion yesterday, when [YouTube TV](https://tv.youtube.com)---[our home's streaming provider of choice](/posts/2020/01/streamers-party)---[announced](https://www.cordcuttersnews.com/youtube-tv-is-losing-sinclair-owned-fox-sports-networks/) that it, like several other TV services before it, is dropping the [Sinclair](https://en.wikipedia.org/wiki/Sinclair_Broadcast_Group)-owned RSNs on which many sports fans depend to watch their favorite teams. The two sides just couldn't reach an agreement.^[Today, things got still stranger when [it was reported](https://www.cordcuttersnews.com/comcast-may-lose-fox-rsns-later-this-year/) that even a *conventional cable service*, none other than the giant Comcast, was seriously considering telling Sinclair to shove its RSNs.]
+I was further prompted toward this conclusion yesterday, when [YouTube TV](https://tv.youtube.com)---[our home's streaming provider of choice](/posts/2020/01/streamers-party)---[announced](https://www.cordcuttersnews.com/youtube-tv-is-losing-sinclair-owned-fox-sports-networks/) that it, like several other TV services before it, is dropping the [Sinclair](https://en.wikipedia.org/wiki/Sinclair_Broadcast_Group)-owned RSNs on which many sports fans depend to watch their favorite teams. The two sides just couldn't reach an agreement.[^Comcast]
+
+[^Comcast]: Today, things got still stranger when [it was reported](https://www.cordcuttersnews.com/comcast-may-lose-fox-rsns-later-this-year/) that even a *conventional cable service*, none other than the giant Comcast, was seriously considering telling Sinclair to shove its RSNs.
 
 Before I go on, the obvious question is: "What's an RSN, and why should you care?"
 
@@ -48,7 +54,11 @@ I grew up a TV sports fan. My late father and I spent many a weekend afternoon w
 
 However, as one service after another drops RSNs because the rising cost doesn't justify having them, I suspect I've reached the end of always being just one button-press away from seeing my local teams, a luxury (as it turns out) to which I'd become accustomed over the last decade and a half.
 
-At this writing, there remain two streaming services that are still carrying the Sinclair-owned RSNs: AT&amp;T Now and Hulu. Compared to YouTube TV, each costs more and doesn't work as well, in my opinion as a [long-time TV nerd](/posts/2020/01/streamers-party).^[Similarly, my wife likes certain YouTube TV features---notably the category-leading DVR functionality---much better than what we had with cable. She's not easy to please when it's necessary to make a change, especially if she deems it a "technical" subject, so I'm not about to upset the applecart on that score.] So, although the Twitterverse and various online comments sections would lead me to believe I'm in the minority on this, I'm sticking with YouTube TV. Sinclair is known for its stubbornness (and [other](https://splinternews.com/sinclair-boss-gives-his-most-evil-sounding-interview-ye-1825143498) [things](https://www.huffpost.com/entry/opinion-weiss-sinclair-television-propaganda_n_5ac2c6d4e4b09712fec38b95)), so I doubt seriously there will be a resolution. The other providers who dropped the Sinclair RSNs haven't come back, and I see no reason to believe YouTube TV will vary from that pattern.^[And you may be absolutely sure I have *no intention whatsoever* of backtracking to cable, and the humongous bills that accompany it, just to get the "local" RSN back. No way.]
+At this writing, there remain two streaming services that are still carrying the Sinclair-owned RSNs: AT&amp;T Now and Hulu. Compared to YouTube TV, each costs more and doesn't work as well, in my opinion as a [long-time TV nerd](/posts/2020/01/streamers-party).[^WifeTV] So, although the Twitterverse and various online comments sections would lead me to believe I'm in the minority on this, I'm sticking with YouTube TV. Sinclair is known for its stubbornness (and [other](https://splinternews.com/sinclair-boss-gives-his-most-evil-sounding-interview-ye-1825143498) [things](https://www.huffpost.com/entry/opinion-weiss-sinclair-television-propaganda_n_5ac2c6d4e4b09712fec38b95)), so I doubt seriously there will be a resolution. The other providers who dropped the Sinclair RSNs haven't come back, and I see no reason to believe YouTube TV will vary from that pattern.[^NoReturn]
+
+[^WifeTV]: Similarly, my wife likes certain YouTube TV features---notably the category-leading DVR functionality---much better than what we had with cable. She's not easy to please when it's necessary to make a change, especially if she deems it a "technical" subject, so I'm not about to upset the applecart on that score.
+
+[^NoReturn]: And you may be absolutely sure I have *no intention whatsoever* of backtracking to cable, and the humongous bills that accompany it, just to get the "local" RSN back. No way.
 
 ## The shadow of the pyramid
 
@@ -60,7 +70,9 @@ It was good while it lasted.
 
 Beyond my own inconvenience, however, I wonder just how long the whole house of cards will survive.
 
-Every month, tens of thousands more homes cut the cord---often in favor of services like the ultra-low-cost [Philo](https://try.philo.com) that have *no* sports programming because that allows the services to charge less, freed of the growing fees demanded by the sports-specific networks like ESPN and the RSNs.^[Philo is a no-go for our household primarily because it doesn't have our local network affliates, but also due to its much more spartan cloud DVR service as compared to YouTube TV. Still, for those who care about neither local TV nor extensive DVR functionality, it's a good option and a great value.] And, almost as often, more non-cable TV services that *were* carrying the sports nets are dropping the increasingly expensive RSNs rather than passing along the costs to their subscribers.
+Every month, tens of thousands more homes cut the cord---often in favor of services like the ultra-low-cost [Philo](https://try.philo.com) that have *no* sports programming because that allows the services to charge less, freed of the growing fees demanded by the sports-specific networks like ESPN and the RSNs.[^Philo] And, almost as often, more non-cable TV services that *were* carrying the sports nets are dropping the increasingly expensive RSNs rather than passing along the costs to their subscribers.
+
+[^Philo]: Philo is a no-go for our household primarily because it doesn't have our local network affliates, but also due to its much more spartan cloud DVR service as compared to YouTube TV. Still, for those who care about neither local TV nor extensive DVR functionality, it's a good option and a great value.
 
 As a result, the pool of TV money on which the pro sports organizations have depended will, inevitably, shrink.
 

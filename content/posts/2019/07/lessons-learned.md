@@ -58,12 +58,12 @@ First, understand how easy we Hugo users have it where SCSS/SASS compatibility i
 
 [^ofoti]: That weird file name is from when I originally had considered calling this site *ofoti.com*---a domain which I own---with *OFOTI* standing whimsically for *Old Fart on the Internet*. However, I thought better of it, especially after I learned that the name *Ofoti* had, in fact, [already been used as the title of a prize-winning play](https://en.wikipedia.org/wiki/John_Wheatcroft).
 
-```html {% raw %}
+```html
 <!-- CSS/SCSS -->
 {{ $sass := resources.Get "scss/ofotigrid.scss" }}
 {{ $style := $sass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-{% endraw %} ```
+```
 
 (**Note**: If you're bothered by the Go code in there, you're apparently not alone. I'll address that below.)
 

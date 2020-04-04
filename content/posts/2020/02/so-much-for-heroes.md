@@ -16,7 +16,7 @@ Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimiza
 
 If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great, big, honkin' stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019)):
 
-{% lazypicture "2020-01-31--curmudgeonishish-2019_1280x726", "jpg", 1280, "Screen capture of “hero image” from “Some curmudgeonish thoughts, 2019 edition,” as it appeared before the site redesign" %}
+<img class="imgCover" src="/images/2020-01-31--curmudgeonishish-2019_1280x726.jpg" alt="Screen capture of “hero image” from “Some curmudgeonish thoughts, 2019 edition,” as it appeared before the site redesign" />
 
 Not today, though. In fact, you might want to open another browser tab or window and check around the rest of the site, except for the home page. You'll see that this isn't an aberration.
 

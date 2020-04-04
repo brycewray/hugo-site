@@ -18,7 +18,6 @@ In reading not only the Eleventy [docs](https://11ty.dev/docs) but also numerous
 
 You see, the most workable method I'd found so far from among the [starter projects](https://11ty.dev/docs/starter) and [others](https://11ty.dev/docs/sites) listed on the Eleventy site was quite manual: give each post an index number in its front matter (`idx: 41`, for example), and then find it that way. For example **(WARNING: if you're looking through this in a hurry, THIS *ISN'T* THE FINAL ANSWER!)**:
 
-{% raw %}
 ```html
 {% if collections.post[idx] %}
 	<p class="ctr">
@@ -34,7 +33,6 @@ You see, the most workable method I'd found so far from among the [starter proje
 {% endif %}
 
 ```
-{% endraw %}
 
 Yes, it worked, but I wanted a "set-and-forget" method---something that would survive post deletions or any other possibility that might come up, not to mention a simple human failure to give the correct and unique `idx` assignment to a new post. And [so](https://github.com/11ty/eleventy/issues/211) [did](https://github.com/11ty/eleventy/issues/529) [others](https://github.com/11ty/eleventy/issues/819).
 
@@ -42,7 +40,6 @@ I suspected there was a solution in the Eleventy API that was so ridiculously si
 
 Early yesterday morning, after having asked about an [earlier](https://github.com/11ty/eleventy/issues/529#issuecomment-532393625) proposed answer to the question, I saw a [reply](https://github.com/11ty/eleventy/issues/529#issuecomment-568257426) that quickly proved to be *The* Answer **(THIS one is what you're seeking, folks)** from [Pascal Widdershoven](https://pascalw.me) in the form of a wonderfully simple and elegant addition to one's `.eleventy.js` file: 
 
-{% raw %}
 ```js
 eleventyConfig.addCollection("posts", function(collection) {
   const coll = collection.getFilteredByTag("posts");
@@ -59,13 +56,10 @@ eleventyConfig.addCollection("posts", function(collection) {
 });
 ```
 
-{% endraw %}
 
 Ah. A thing of beauty.
 
 Once you've added that to your site's `.eleventy.js` file, all you have to do is put something like the following in the appropriate place in your Eleventy template for single posts (this is in [Nunjucks](https://www.11ty.dev/docs/languages/nunjucks/), so please adjust according to the [template language](https://www.11ty.dev/docs/languages/) of your choice):
-
-{% raw %}
 
 ```html
   {% if nextPost.url %}
@@ -81,8 +75,6 @@ Once you've added that to your site's `.eleventy.js` file, all you have to do is
     </p>
   {% endif %}
 ```
-
-{% endraw %}
 
 And, no, I didn't swat myself, but I did get the joy.
 
