@@ -6,15 +6,8 @@ subtitle: On permanence
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
-lastmod: 2019-04-27T06:38:00-05:00
-idx: 15
-draft: false # note!
-actual_path: /content/posts/2019/03/plain-truth
+lastmod: 2020-01-31T14:13:00-06:00
 discussionId: "2019-03-plain-truth"
-final_url: /posts/2019/03/plain-truth
-featured_image: /images/typewriter-1031024_1280x720_60pct.jpg
-featured_image_alt: A very old Royal-brand typewriter
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 I still have stuff I wrote fifty years ago.
@@ -65,7 +58,7 @@ First, let me tell you how I created those documents that I retain five decades 
 
 ## The Royal treatment
 
-That typewriter in the photo at the top of this page looks very similar to the old Royal manual I was using back in 1969 to write the aforementioned school newspaper op-ed and attempt-at-a-novel. About five years earlier, my father had bought it secondhand out of the garage of some folks up the hill from where we lived at the time, so my sister would have a typewriter on which to do her tenth-grade typing homework.
+One night in 1964, my father bought a 1940s-vintage Royal typewriter secondhand from some neighbors (it had been sitting unused in their garage), so my sister would have a typewriter on which to do her tenth-grade typing homework.
 
 As far as I can remember, she rarely if ever used it for anything else, but nine-year-old me was agog. I was one of those kids who liked to write stuff all the time and would turn it in for my teacher to critique. It wasn't for extra credit; I just wanted someone to read it. My writing jag started about midway through the third grade.
 

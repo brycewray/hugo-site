@@ -6,17 +6,14 @@ subtitle: From 3-2-1 to 4-2-2
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-#final_date: 2019-02-23T12:45:00-06:00
-lastmod: 2019-05-17T21:15:00-05:00
-idx: 14
-draft: false # note!
-actual_path: /content/posts/2019/02/back-up-jack
+lastmod: 2020-02-16T13:32:00-06:00
 discussionId: "2019-02-back-up-jack"
-final_url: /posts/2019/02/back-up-jack
-featured_image: /images/binary-2688910_1920_1280x719_60pct.jpg
-featured_image_alt: Stylistic illustration of moving binary data
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
+
+<div class="yellowBox">
+	<h2><em>Update, 2020-01-11</em></h2>
+	<p>While I&rsquo;ll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I&rsquo;m now &ldquo;just&rdquo; on 3-2-1 rather than 4-2-2). If you&rsquo;re on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta <em>can</em> imagine just doesn&rsquo;t seem to care about QC where its Mac version of OneDrive is concerned.</p>
+</div>
 
 No one will ever mistake me for a high-tech version of [Henry David Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) (which is a pretty bizarre concept, if you go there), but I’ve been trying to simplify my computing setup—not so much where hardware is concerned but, instead, the services to which I have subscribed.
 
@@ -73,7 +70,7 @@ Well, shut my mouth and call me “Cloudy.”
 
 That had perfectly described my situation. Couldn’t make it clearer than that.
 
-Sufficiently convinced by that opinion and others that said basically the same thing (*i.e.*, if you’re all-in on Apple gear and sync’g only personal content, go with iCloud Drive), I promptly upgraded my iCloud subscription from fifty-gigabyte to two-terabyte and copied almost everything from my Dropbox folder onto iCloud Drive. It took about nine hours to complete the transfer, even with my high-bandwidth connectivity. Once there was nothing left available to move—there are a few apps I still use, such as the [Road Trip MPG](https://itunes.apple.com/us/app/road-trip-mpg/id298398207?mt=8) iOS app that keeps track of my car expenses, that require Dropbox to retain their data—I deleted the now-duplicated content from my Dropbox folder and terminated the paid subscription with Dropbox. I did keep the free [Dropbox Basic](https://www.dropbox.com/basic) two-gigabyte tier, which is more than enough for those aforementioned few apps’ use.
+Sufficiently convinced by that opinion and others that said basically the same thing (*i.e.*, if you’re all-in on Apple gear and sync’g only personal content, go with iCloud Drive), I promptly upgraded my iCloud subscription from fifty-gigabyte to two-terabyte and copied almost everything from my Dropbox folder onto iCloud Drive. It took about nine hours to complete the transfer, even with my high-bandwidth connectivity. Once there was nothing left available to move—there are a few apps I still use, such as the [Road Trip MPG](https://itunes.apple.com/us/app/road-trip-mpg/id298398207?mt=8) iOS app that keeps track of my car expenses, that require Dropbox to retain their data^[And even that app became iCloud-friendly a few months after I originally wrote this, so that was still one more nail in the Dropbox coffin for my purposes.]—I deleted the now-duplicated content from my Dropbox folder and terminated the paid subscription with Dropbox. I did keep the free [Dropbox Basic](https://www.dropbox.com/basic) two-gigabyte tier, which is more than enough for those aforementioned few apps’ use.
 
 As for the cost savings, they’re small *but* I’m getting more for my money. Before, I was paying a buck a month for two hundred gigabytes of iCloud storage *and* ten bucks a month for *one* terabyte of Dropbox storage. Now, I’m paying ten bucks a month for *two* terabytes of iCloud storage *and*, not incidentally, sharing that two terabytes with my wife via [Family Sharing](https://www.apple.com/family-sharing/) for her iPhone photos, as well.[^8]
 
@@ -135,4 +132,4 @@ I urge you to figure out a 3-2-1 (or better) backup plan that works for you, as 
 
 [^10]:	That is, if the opinions of her mother and me—and the professionals who rate her, and the parents who keep requesting to have her teach the younger siblings of kids she’s already taught—can be any guide for you.
 
-[^11]:	Yes, I know the main problem with this scenario: unlike the concept of saving plain-text versions of your documents (a subject about which I'll write at another time), there is no way to know how compatible future software will be with these media files. After all, you can’t very well save them as “plain video” or other such non-existent format! However, my immediate concern was to make sure I had “rescued” them from existing only on multi-decades-old VHS tapes. If, while I'm still sufficiently tech-savvy to grasp it, The Tech Powers That Be decide to make obsolescent both these files and the apps that can open them, I will do my best to convert the files to whatever format seems feasible at the time; and I will have to hope those who follow me will be motivated to do the same when necessary. After all, it is they for whom I’m saving these memories. If they don’t care, I suppose it won’t matter in the end; but better that I do this and they don’t care than that I fall to do this and they wish I had.
+[^11]:	Yes, I know the main problem with this scenario: unlike the concept of saving plain-text versions of your documents (a subject about which I'll write at another time), there is no way to know how compatible future software will be with these media files. After all, you can’t very well save them as “plain video” or other such non-existent format! However, my immediate concern was to make sure I had “rescued” them from existing only on multi-decades-old VHS tapes. If, while I'm still sufficiently tech-savvy to grasp it, The Tech Powers That Be decide to make obsolescent both these files and the apps that can open them, I will do my best to convert the files to whatever format seems feasible at the time; and I will have to hope those who follow me will be motivated to do the same when necessary. After all, it is they for whom I’m saving these memories. If they don’t care, I suppose it won’t matter in the end; but better that I do this and they don’t care than that I fail to do this and they wish I had.

@@ -3,19 +3,11 @@ layout: layouts/posts/singlepost.njk
 tags: post
 title: Old dog learns old trick 
 subtitle: How’d I miss this way to fool IE?
-description: A major ”Do’h” moment in the never-ending battle against Internet Explorer.
+description: A major “Do’h” moment in the never-ending battle against Internet Explorer.
 author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
-#final_date: 2019-02-16T10:50:00-06:00
-lastmod: 2019-08-09T22:39:00-05:00
-idx: 13
-draft: false # note!
-actual_path: /content/posts/2019/02/old-dog-old-trick
+lastmod: 2019-11-08T10:00:00-06:00
 discussionId: "2019-02-old-dog-old-trick"
-final_url: /posts/2019/02/old-dog-old-trick
-featured_image: /images/dog-2514968_1920_1280x720_60pct.jpg
-featured_image_alt: Face of an old dog
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 "What? You must be joking! *Darth Vader* was Luke's *father*?"
@@ -52,11 +44,11 @@ I put the annoyance aside for that weekend, what with all the other pages I had 
 
 Everything I did in CSS that made it look mildly acceptable on IE made it go bonkers on the *real* browsers (`<burn>`shots fired`</burn>`). After spending 'way too much time trying to dope it out, and with my regular tasks waiting impatiently for my attention, I decided to do that hated thing known as browser-specific CSS.^[And, no, I don't know whether [HTML5 Shiv](https://github.com/aFarkas/html5shiv) would've fixed it; I didn't try it.] So I proceeded to create a little "ie.css" stylesheet and prepared to use IE conditional comments. Yep, those ugly things in the `<head>` section that only Internet Explorer sees, like:
 
-{{< highlight html >}}
+```html
 <!--[if IE]>
   <link rel="stylesheet" href="/css/ie.css">
 <![endif]-->
-{{< /highlight >}}
+```
 
 Except I didn't learn until that very morning---and this is where I really feel foolish---that **Internet Explorer had stopped supporting those in IE** ***10***. **Ten**! Hey, sports fans, that was released in *2012*.
 
@@ -72,7 +64,7 @@ So why am I sharing my shame? Because I saw posts from *other* people still aski
 
 So I was saved the trouble of an "ie.css" sheet; and my resulting addition to the end of the "style.css" sheet I was already using turned out to be something along these lines:
 
-{{< highlight css >}}
+```css
 /* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .slider-text {  
@@ -80,7 +72,7 @@ So I was saved the trouble of an "ie.css" sheet; and my resulting addition to th
   }  
 }  
 /* ==== end, IE 10 and 11 **ONLY** ==== */
-{{< /highlight >}}
+```
 
 .&nbsp;.&nbsp;. or code to that effect. And it worked like a charm.
 

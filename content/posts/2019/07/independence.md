@@ -6,16 +6,8 @@ subtitle: Thirty-five years a Mac lover
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
-#lastmod:
-idx: 22
-#final_date: 2019-07-06T10:38:00-05:00
-draft: false # note!
-actual_path: /content/posts/2019/07/independence
-final_url: /posts/2019/07/independence
+lastmod: 2020-01-31T14:27:00-06:00
 discussionId: "2019-07-independence"
-featured_image: /images/1984-07-11_01_retouched_1280x720_60pct.jpg
-featured_image_alt: Me, in 1984, eagerly wrapping my new Macintosh.
-featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)" # quotation marks to allow colon
 ---
 
 This most recent Fourth of July was the 243rd anniversary of the *signing* of the Declaration of Independence---not the actual small-d declaration itself, which actually was [two days earlier](https://www.archives.gov/press/press-releases/2005/nr05-83.html), as all we American history nerds know.
@@ -44,9 +36,9 @@ The skies had threatened all afternoon and, indeed, just as we got there it bega
 
 But while we were inside, we happened into one particular department store. (In case you kids don't know, ordinary department stores used to sell high-priced computers. That didn't last long, but back then it was common to buy clothes and computers at many of the same places.) My wife ventured into the women's shoes area and I, bored by that, told her I'd go check out the electronics area.
 
-There, sitting on a glass display panel between two sales clerks who were joking with each other about some silly thing, sat what soon would become known as the "skinny Mac": the [original Macintosh](https://en.wikipedia.org/wiki/Macintosh_128K).[^skinnyMac]
+There, sitting on a glass display panel between two sales clerks who were joking with each other about some silly thing, sat what soon would become known as the "Skinny Mac": the [original Macintosh](https://en.wikipedia.org/wiki/Macintosh_128K).[^skinnyMac]
 
-[^skinnyMac]: The term "skinny Mac" came about when, a few months after I got my Mac, Apple released the first Mac with 512K, which everyone quickly dubbed the "Fat Mac"---as I recall, partly because Apple didn't want to refer to it even jokingly as the "Big Mac" for reasons which should be fairly obvious, especially where trademark infringement-seeking corporate lawyers are concerned.
+[^skinnyMac]: The term "Skinny Mac" came about when, a few months after I got my Mac, Apple released the first Mac with 512K, which everyone quickly dubbed the "Fat Mac"---as I recall, partly because Apple didn't want to refer to it even jokingly as the "Big Mac" for reasons which should be fairly obvious, especially where trademark infringement-seeking corporate lawyers are concerned.
 
 ## "For the rest of us"
 
@@ -73,6 +65,9 @@ I knew I had to have a Mac.
 ## Hints of a future
 
 In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local [ComputerLand](https://en.wikipedia.org/wiki/ComputerLand) and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
+
+{% lazypicture "1984-07-11_01_retouched_1280x720", "jpg", 1280, "Me, in 1984, eagerly wrapping my new Macintosh." %}
+<p class="lazypicturecaption">July 11, 1984: A much younger and skinnier me eagerly unwraps my new &ldquo;Skinny Mac.&rdquo; (Photo by my overly tolerant&nbsp;spouse.)</p>
 
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 

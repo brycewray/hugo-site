@@ -6,33 +6,17 @@ subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
-final_date: 2019-05-10T05:22:00-05:00
-lastmod: 2019-05-10T07:20:00-05:00
-idx: 19
-aliases:
-    - /posts/2019/04/why-left-ulysses/
-draft: false # note!
-actual_path: /content/posts/2019/05/boxed-in
+lastmod: 2020-01-31T14:23:00-06:00
 discussionId: "2019-05-boxed-in"
-final_url: /posts/2019/05/boxed-in
-featured_image: /images/thunderstorm-3625405_1280x720_60pct.jpg
-featured_image_alt: Thunderstorm clouds with lighting flashes
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
-
-<hr />
-
-***Note****:* *You've been redirected here automatically if you were trying to reach a former post, since deleted, called "Why I left Ulysses." I explain herein* ***why*** *I deleted that post.*
-
-<hr />
 
 Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things---the Work-in-Progress (WIP) being the most damnable example thereof.
 
-Yeah, I know: "Write it all the way through, first, then edit later." Still, you may as well tell me not to cross my "t"s and dot my "i"s in mid-word, and I've been doing that since I was a kid. (Don't get me started on why.)
+Yeah, I know: "Write it all the way through, first, then edit later." Still, you may as well tell me not to cross my “t”s and dot my “i”s in mid-word, and I've been doing that since I was a kid. (Don't get me started on why.)
 
 ## Sick sync
 
-On April 20, 2019, I issued a post, since deleted, called "Why I left Ulysses." It detailed why I would no longer use---and had cancelled my soon-expiring annual subscription to---the [Ulysses](https://ulysses.app) app on which I'd once [gleefully relied](/posts/2018/09/why-finally-settled-Ulysses) for writing the WIP and, before I glommed onto [iA Writer](https://ia.net/writer), this site's posts.
+On April 20, 2019, I issued a post called "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)." It detailed why I would no longer use---and had cancelled my soon-expiring annual subscription to---the [Ulysses](https://ulysses.app) app on which I'd once [gleefully relied](/posts/2018/09/why-finally-settled-Ulysses) for writing the WIP and, before I glommed onto [iA Writer](https://ia.net/writer), this site's posts.
 
 In essence, it had come down to my no longer trusting the ability of Ulysses to sync successfully with iCloud---particularly on the Mac. I'd lost a little work but, mostly, just had scares: "red-sheet" conflicts and that sort of thing.
 
@@ -62,16 +46,21 @@ In the second week after I issued that post, I got curious and began researching
 
 [Yes, I know: [the correct line from *Goodfellas*](http://www.moviequotedb.com/movies/goodfellas/quote_9863.html) is "Now go home and get your \*\*\*\*ing *shinebox*." But, hey, work with me, okay?]
 
-Mind you, my now-deleted post had differentiated between apps like Ulysses---sometimes called *shoebox* or *central-library* apps \(like Apple's own Notes and Photos apps, among many others\)---and *document-based* apps like iA Writer.[^centralLib]
+Mind you, my post had differentiated between apps like Ulysses---sometimes called *shoebox* or *central-library* apps \(like Apple's own Notes and Photos apps, among many others\)---and *document-based* apps like iA Writer.[^centralLib] In a few words&nbsp;.&nbsp;.&nbsp;.
 
-In a few words&nbsp;.&nbsp;.&nbsp;.
+A shoebox app:
 
-- A shoebox app:
-	- Keeps its working files in an obscure location on the device, such as `/Users/[your user name]/Library/Containers/com.ulyssesapp.mac/Data/CloudKit/` .&nbsp;.&nbsp;. and then deeper inside from there.
-	- Reacts to saves and syncs by altering a database.
-- A document-based app:
-	- Keeps its working files in a readily accessible location, typically a visible folder within iCloud Drive.
-	- Reacts to saves and syncs by altering separate documents.
+- Keeps its working files in an obscure location on the device[^obscLoc] and then deeper inside from there.
+
+- Reacts to saves and syncs by altering a database.
+
+[^obscLoc]: *E.g.*: `/Users/[your user name]/Library/Containers/com.ulyssesapp.mac/Data/CloudKit/`.
+
+A document-based app:
+
+- Keeps its working files in a readily accessible location, typically a visible folder within iCloud Drive.
+
+- Reacts to saves and syncs by altering separate documents.
 
 Each variation has its advantages and disadvantages, but a search reveals a shoebox app, in general, tends to have more difficulty interacting successfully with iCloud sync than does a document-based app.[^otherEqual] Here are some links I found from the last few years for how other shoebox apps caution their users about possible issues with iCloud Sync and suggest attempted fixes:
 
@@ -89,7 +78,7 @@ Each variation has its advantages and disadvantages, but a search reveals a shoe
 10. [MarginNote](https://forum.marginnote.com/t/mac-icloud-sync-thread/92)
 11. [(Apple) Photos](https://daringfireball.net/2018/10/icloud_photo_library_start_over)
 
-If you saw the deleted post, you may recall my dissing the [Ulysses FAQs regarding iCloud sync](https://ulysses.app/faq#macos-icloud). That clearly was before I'd read the above, very similar items---and more like them.
+If you saw the post, you may recall my dissing the [Ulysses FAQs regarding iCloud sync](https://ulysses.app/faq#macos-icloud). That clearly was before I'd read the above, very similar items---and more like them.
 
 I know: *hubris* is an unattractive thing to witness. I'm sorry.
 
@@ -97,13 +86,13 @@ I know: *hubris* is an unattractive thing to witness. I'm sorry.
 
 ## "Hey, kids, what time is it??"
 
-Also in the deleted post: I mentioned what I'd perceived as the Smoking Gun proving Ulysses had failed my "stress test" and thus had to hit the road was when, one morning, I opened the app on the Mac and it took several minutes to retrieve something I'd done on another device the night before, after which it gave a timestamp conforming to *right that minute* rather than the true time and date of the last edit.
+Also in the post: I mentioned what I'd perceived as the Smoking Gun proving Ulysses had failed my "stress test" and thus had to hit the road was when, one morning, I opened the app on the Mac and it took several minutes to retrieve something I'd done on another device the night before, after which it gave a timestamp conforming to *right that minute* rather than the true time and date of the last edit.
 
 I wondered about that aspect, too, as I did my post-cancellation research in recent days. I found---you guessed it---that when a device forces a sync either automatically, as the Mac did in that case (albeit belatedly so, which might even explain this particular oddity), or manually due to a user command, that [can](http://forums.storyist.com/topic/2987-syncing-problems-is-it-just-me/?do=findComment&comment=19938) [trigger](https://www.reddit.com/r/bearapp/comments/7i4s4s/manual_sync_notes_without_icloud/) a timestamp change. In fact, it [sometimes can be bizarre](https://discussions.apple.com/thread/8553656). Anyway, this is on the sync provider---in this case, Apple---rather than Ulysses GMBH &amp; Co. or other third parties, for that matter.
 
 ## Trusting, but verifying
 
-Bottom line: armed with my newly gained knowledge, I've started using Ulysses again over the last couple of days---once again "stress-testing" it, and so far, so good---and, this morning, I renewed my Ulysses subscription for another year. Thus, I killed the other post and redirected its traffic here.
+Bottom line: armed with my newly gained knowledge, I've started using Ulysses again over the last couple of days---once again "stress-testing" it, and so far, so good---and, this morning, I renewed my Ulysses subscription for another year.
 
 And, no, I actually do *not* like the taste of crow, since you ask. But I very much am glad to have Ulysses back in the fold.
 
