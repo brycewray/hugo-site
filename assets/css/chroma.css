@@ -106,3 +106,7 @@ pre[class*="language-"] {
   border-radius: .3em;
   white-space: normal;
 }
+
+.highlight {
+  font-size: 0.8em;
+}
