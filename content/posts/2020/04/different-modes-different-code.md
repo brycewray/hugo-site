@@ -5,8 +5,8 @@ title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
-date: 2020-04-05T18:00:00-05:00
-#lastmod: A
+date: 2020-04-05T13:45:00-05:00
+#lastmod:
 discussionId: "2020-04-different-modes-different-code"
 ---
 
