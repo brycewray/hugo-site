@@ -356,7 +356,7 @@ img.postsFeatImg {
   }
   & .column-home-2 {
     & .topofHome {
-      margin: 0;
+      margin: 0.25em 0 0 0;
     }
     & h2.h5 {
       font-size: calc(var(--slightlybig) * 1em);
