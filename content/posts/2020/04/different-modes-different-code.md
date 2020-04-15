@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
-#lastmod:
+lastmod: 2020-04-15 17:30:00-05:00
 discussionId: "2020-04-different-modes-different-code"
 ---
 
@@ -50,7 +50,7 @@ While checking out differences between Goldmark and Eleventy's [Markdown-it](htt
 
 What I'd been doing recently was so-called *inline* footnoting, like this:
 
-```Markdown
+```markdown
 This^[This would be a footnote] is an example of an alternative footnoting method, inline footnoting, that works in Eleventy.
 
 ```
@@ -64,7 +64,7 @@ OK, fine. I put it *after* the bracket. Then, Hugo and Gatsby worked fine---but 
 
 So I decided to quit being cute and went back to a more standard method which works across all three, although it's a tad clunkier to type:
 
-```Markdown
+```markdown
 This[^SomeReference] is an example of the once-and-future (non-inline) method of footnoting.
 
 [^SomeReference]: This would be a footnote.
@@ -72,7 +72,7 @@ This[^SomeReference] is an example of the once-and-future (non-inline) method of
 
 Clunky or not, one other advantage of this method is that none of these SSGs will balk at links in footnotes, unlike what happened with the inline footnoting---in which it was wise to "hard"-code links (if you can call HTML *coding*) rather than just doing them like this:
 
-```Markdown
+```markdown
 This[^SomeReference] is an example of the once-and-future (non-inline) method of footnoting.
 
 [^SomeReference]: And [this](https://www.11ty.dev) will be a link to Eleventy's own site.
@@ -130,3 +130,7 @@ And there may be more.
 I have been curious about [Vue](https://vuejs.org) and the Vue-based, Gatsby-like [Gridsome](https://gridsome.org) for some time now. I figure (dangerously), if I can make a Gatsby version of this site, why not see if I can do the same with Gridsome? That SSG's ways of doing things are remarkably similar to Gatsby's, despite the differences between their respective frameworks, Vue and [React](https://reactjs.org).
 
 Since [it looks as if we'll be here a while](https://www.vox.com/future-perfect/2020/3/26/21191702/coronavirus-lockdowns-stay-home-new-cases): well, who knows? Stay tuned.
+
+<div class="yellowBox">
+  <p><strong><em>Update, 2020-04-15</em></strong>: While I did make some progress on the Gridsome repo project in the ensuing days after first releasing this post, I think it will be a while&mdash;perhaps months&mdash;before I can make any serious headway. There are a number of things the young Gridsome still doesn&rsquo;t do that well which, while they wouldn&rsquo;t be showstoppers to others, just cause it to miss the mark where I&rsquo;m concerned. Two minor examples are <a href="https://github.com/gridsome/gridsome/issues/177" target="_blank" rel="noopener">&ldquo;previous post&rdquo; and &ldquo;next post&rdquo; functionality</a> and <a href="https://github.com/gridsome/gridsome/issues/1089" target="_blank" rel="noopener">directory-based URLs</a>, but there are others. <em>(In the meantime, however, <a href="/posts/2020/04/full-11ty-js-monty" target="_blank" rel="noopener">I can always find other things to do</a>.)</em></p>
+</div>

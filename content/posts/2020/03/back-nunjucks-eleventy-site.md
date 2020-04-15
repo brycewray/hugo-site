@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Back to Nunjucks for my Eleventy site"
 subtitle: "Taking a course of lesser resistance"
 description: "Why I’ve decided for now to backtrack from JavaScript-only templating in Eleventy."
 author: Bryce Wray
 date: 2020-03-22T14:30:00-05:00
-lastmod: 2020-03-29T10:15:00-05:00
+lastmod: 2020-04-15T17:30:00-05:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
 ---
 
@@ -14,9 +14,9 @@ As even a casual perusal of some recent posts to this site could easily make cle
 
 For those of you who have no clue what that means and/or why you should give a rip, here's an extremely simplified explanation.
 
-Adding content to an SSG-generated[^SSG] Web site like this one usually involves giving the SSG a plain-text file, which the SSG then runs through a template to transform it into a Web page. For example, the template may look like the bare bones of the [HTML](https://en.wikipedia.org/wiki/html) for a Web page but with one or more special "placeholder" variables for the plain-text file's content. When the SSG does its thing, it turns this combination of the plain-text file and template into Web content.
+Adding content to an SSG-generated[^SSGgen] Web site like this one usually involves giving the SSG a plain-text file, which the SSG then runs through a template to transform it into a Web page. For example, the template may look like the bare bones of the [HTML](https://en.wikipedia.org/wiki/html) for a Web page but with one or more special "placeholder" variables for the plain-text file's content. When the SSG does its thing, it turns this combination of the plain-text file and template into Web content.
 
-[^SSG]: Saying "SSG-generated" is like saying "ATM machine" or "PIN number," but I think it's clearer and more accurate than saying "SSG-based."
+[^SSGgen]: Saying "SSG-generated" is like saying "ATM machine" or "PIN number," but I think it's clearer and more accurate than saying "SSG-based."
 
 However, not all SSGs are created equal in this regard.
 
@@ -36,9 +36,9 @@ I was intrigued, and---with help from not only Mr. Lillie but also fellow Eleven
 
 ## Ignorance of the code is no excuse
 
-However, it didn't take me long to realize that I simply don't know enough JavaScript to implement a *full* switchover. Mr. Lillie and Mr. deHaan had tried to help me with the issues I encountered[^issues] but, in the end, I still was left with multiple key templates in .njk. It wasn't so terrible, but, well, the intent had been to switch, completely. And I couldn't.
+However, it didn't take me long to realize that I simply don't know enough JavaScript to implement a *full* switchover. Mr. Lillie and Mr. deHaan had tried to help me with the issues I encountered[^HelpNeeded] but, in the end, I still was left with multiple key templates in .njk. It wasn't so terrible, but, well, the intent had been to switch, completely. And I couldn't.
 
-[^issues]: Notably, I couldn't successfully translate the Nunjucks template for my [posts list pages](/posts) into a properly [paginated](https://11ty.dev/docs/pagination) "feed" (so to speak) using .11ty.js templating. I also couldn't figure out how to make a pure-vanilla-JavaScript version of Max Böck's [superb webmentions-handling Nunjucks code](https://mxb.dev/blog/using-webmentions-on-static-sites/), which I'd shamelessly copied for my own purposes; as a result, I temporarily reverted to using [Talkyard](https://talkyard.io) for commenting---which I **still** recommend for general commenting purposes, mind you---because it was easy to insert the necessary Talkyard-provided code into the appropriate .11ty.js template. Incidentally, I removed webmentions (and old pre-webmentions comments) a few days later, so that issue is now moot.
+[^HelpNeeded]: Notably, I couldn't successfully translate the Nunjucks template for my [posts list pages](/posts) into a properly [paginated](https://11ty.dev/docs/pagination) "feed" (so to speak) using .11ty.js templating. I also couldn't figure out how to make a pure-vanilla-JavaScript version of Max Böck's [superb webmentions-handling Nunjucks code](https://mxb.dev/blog/using-webmentions-on-static-sites/), which I'd shamelessly copied for my own purposes; as a result, I temporarily reverted to using [Talkyard](https://talkyard.io) for commenting---which I **still** recommend for general commenting purposes, mind you---because it was easy to insert the necessary Talkyard-provided code into the appropriate .11ty.js template. Incidentally, I removed webmentions (and old pre-webmentions comments) a few days later, so that issue is now moot.
 
 Plus, I soon realized that, *because* of my inability to do much with the .11ty.js templates other than slavishly follow others' examples (and keep begging smarter people for help they didn't have time to give), I wouldn't be able to do much with .11ty.js templates going forward. By contrast, I'd frequently tinkered behind the scenes with the .njk templates to see what I could do to make small improvements.
 
@@ -51,3 +51,7 @@ I *remain* very interested in the *idea* of going fully to .11ty.js templates, b
 If you, too, would like to see that, please note that Mr. Lillie is interested in providing such documentation that could, with the approval of Eleventy creator [Zach Leatherman](https://zachleat.com), become part of the official docs.
 
 I hope that happens sooner rather than later. If it does, and if Mr. Lillie's docs are *half* as good as the documentation he put in his own code---wowzers.
+
+<div class="yellowBox">
+  <p><strong><em>Update, 2020-04-15</em></strong>&mdash;Have now transitioned to full-.11ty.js templating (<a href="/posts/2020/04/full-11ty-js-monty">details</a>).</p>
+</div>
