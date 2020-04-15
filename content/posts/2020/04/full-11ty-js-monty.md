@@ -102,7 +102,7 @@ And, of course, one must *always* acknowledge [the guy](https://zachleat.com) wh
 
 But, seriously: that great Eleventy community I mentioned earlier seems to take its cues from Mr. Leatherman, whose friendly nature and quick wit make adopting Eleventy even more pleasant than it would be anyway. As I [wrote last December](/posts/2019/12/packing-up), Eleventy is "a good product built by a good person."
 
-Eleventy is by no means the best-known of the SSGs, and [it is purposely *not* based on any framework](https://www.11ty.dev/docs/), so it can claim no built-in base of fanboy developers---as can Gatsby because of its ties to React, or [Gridsome](https://gridsome.org)'s creators hope it will because of its ties to [Vue](https://vuejs.org). Thus, Mr. Leatherman's continuing achievement in building and enhancing Eleventy, along with the growth and *esprit de corps* of the Eleventy community, are even more impressive by comparison.
+Eleventy is by no means the best-known of the SSGs, and [it is purposely *not* based on any framework](https://www.11ty.dev/docs/), so it can claim no built-in base of fanboy developers---as can Gatsby because of its ties to React, or as [Gridsome](https://gridsome.org)'s creators hope it will because of its ties to [Vue](https://vuejs.org). Thus, Mr. Leatherman's continuing achievement in building and enhancing Eleventy, along with the growth and *esprit de corps* of the Eleventy community, are even more impressive by comparison.
 
 ## Next up?
 
