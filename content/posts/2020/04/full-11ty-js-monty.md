@@ -76,7 +76,7 @@ As I note in my repo's [README](https://github.com/brycewray/eleventy_bundler/bl
 
 .&nbsp;.&nbsp;.&nbsp;but, that said, I do hope that this post and the repo---and, yes, even those aforementioned branches thereof---will help others with Eleventy-based sites who want to take a shot at all-.11ty.js templating.
 
-I must once again extend my highest thanks and commendations to various folks for their extremely valuable help, online code examples, and/or superb community behavior (or, as some of them might spell it, *behaviour*). Three stand out in particular.
+I must once again extend my highest thanks and commendations to various folks for their extremely valuable help, online code examples, and/or superb community behavior (or, as some of them might spell it, *behaviour*). Four stand out in particular.
 
 ### Reuben Lillie
 
