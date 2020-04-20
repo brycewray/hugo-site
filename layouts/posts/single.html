@@ -24,11 +24,13 @@
     </div>
   </div>
 
-<div class="container-narrower">
-  <article class="article">
-    {{ .Content }}
-  </article>
-</div>
+  <div class="container-narrower">
+    <article class="article">
+      {{ .Content }}
+    </article>
+  </div>
+
+  {{- partial "webmentions.html" . -}}  
   
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark">
@@ -47,5 +49,4 @@
 			</p>
     </div>
   {{ end }}
-
 {{ end }}
