@@ -11,11 +11,18 @@ lastmod: 2019-07-29T20:55:00-05:00
 idx: 18
 draft: false # note!
 actual_path: /content/posts/2019/04/publish-or-perish
-#discussionId: "2019-04-publish-or-perish" -- assign later if possible
-final_url: /posts/2019/04/publish-or-perish
-featured_image: /images/office-blogging-monochrome-381228_1280x720_60pct.jpg
-featured_image_alt: Hand moving a computer mouse near a keyboard
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+oldComments: |
+  <div class="webmentions">
+    <h3 class="ctr">Comments</h3>
+    <p class="legal ctr">
+      (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
+    </p>
+    <p class="commentOpen"><strong>Andrew Canion</strong> <em>2019-06-18</em></p>
+    <p class="commentBody">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="nofollow">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="nofollow">helped another user on micro.blog</a>.</p>
+  
+    <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-06-18</em></p>
+    <p class="commentBody">Very glad I could help. Have fun with Hugo! I certainly do.</p>
+  </div>
 ---
 
 This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static Web site](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** Web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.
