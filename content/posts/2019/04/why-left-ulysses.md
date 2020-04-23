@@ -5,7 +5,7 @@ subtitle: iA Writer wins—for now
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
-lastmod: 2019-10-11T19:00:00-05:00
+lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-04-why-left-ulysses"
 oldComments: |
     <div class="webmentions">
@@ -36,7 +36,9 @@ A few months ago, I couldn't have imagined writing those sentences at all, much 
 
 After all, one of my most-viewed posts was my explanation of why I had [settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses) as the daily driver for my writing. The people at Ulysses even linked to it from their monthly e-newsletter, obviously the reason for its *being* so visited. (Quite understandably, they won't be linking to this one.)
 
-I wrote for nearly a year within Ulysses, both for this site and in my swear-I'm-gonna-finish-it-while-I-still-remember-how-to-form-sentences work in progress (WIP).
+I wrote for nearly a year within Ulysses, both for this site and in my swear-I'm-gonna-finish-it-while-I-still-remember-how-to-form-sentences work in progress (WIP).[^RIPWIP]
+
+[^RIPWIP]: I can still form sentences, but [I didn't carry through on the rest of that](/posts/2020/04/murdered-darlings).
 
 Ulysses was a delight to use on the Mac and my iOS devices. The UI on each seemed perfect for me. Ulysses had just the right mix of features for my creative writing, neither so many that I'd feel overwhelmed nor so few that I'd feel restricted.
 
