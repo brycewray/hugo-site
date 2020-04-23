@@ -9,12 +9,16 @@
   <h3>Webmentions</h3>
   {{ if index .Site.Data $urlized }}
     {{ $likes := index (index .Site.Data $urlized) "like-of" }}
+    {{ $likesSize := len $likes }}
     {{ $replies := index (index .Site.Data $urlized) "in-reply-to" }}
+    {{ $repliesSize := len $replies }}
     {{ $mentions := index (index .Site.Data $urlized) "mention-of" }}
+    {{ $mentionsSize := len $mentions }}
     {{ $reposts := index (index .Site.Data $urlized) "repost-of"}}
+    {{ $repostsSize := len $reposts }}
     {{ if $likes }}
       <details>
-        <summary class="h4">Likes</summary>
+        <summary class="h4">Likes&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">({{ $likesSize }})</span></summary>
         <ul class="webmentions__list_facepile">
         {{ range $i, $like := $likes }}
           <li><a href="{{$like.url}}" class="u-url"><img class="webmention__author__photo u-photo" src="{{ $like.author.photo}}" alt="{{ $like.author.name }}"></a></li>
@@ -25,7 +29,7 @@
   
     {{ if $reposts }}
       <details>
-        <summary class="h4">Reposts</summary>
+        <summary class="h4">Reposts&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">({{ $repostsSize }})</summary>
         <ul class="webmentions__list_facepile">
           {{ range $i, $repost := $reposts }}
             <li><a href="{{$repost.url}}" class="u-url"><img class="webmention__author__photo u-photo" src="{{ $repost.author.photo}}" alt="{{ $repost.author.name }}"></a></li>
@@ -36,7 +40,7 @@
   
     {{ if $replies }}
       <details>
-      <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies</summary>
+      <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">({{ $repliesSize }})</span></summary>
       <ol class="webmentions__list">
       {{ range $index, $reply := sort $replies "published" }}
         <li class="webmentions__item">
@@ -56,7 +60,7 @@
   
     {{ if $mentions }}
       <details>
-      <summary class="h4">Mentions</summary>
+      <summary class="h4">Mentions&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">({{ $mentionsSize }})</span></summary>
       <ol class="webmentions__list">
       {{ range $index, $mention := sort $mentions "published" }}
         <li class="webmentions__item">
