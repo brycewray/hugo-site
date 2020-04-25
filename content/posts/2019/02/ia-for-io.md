@@ -1,21 +1,13 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: iA for IO? 
 subtitle: Evaluating iA Writer for use with an SSG
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
-#final_date: 2019-02-19T09:25:00-06:00
-lastmod: 2019-10-02T19:23:00-05:00
-idx: 12
-draft: false # note!
-actual_path: /content/posts/2019/02/ia-for-io
+lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-02-ia-for-io"
-final_url: /posts/2019/02/ia-for-io
-featured_image: /images/notebook-933362_1920_1280x720_60pct.jpg
-featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 My comments at the end of my [previous post](/posts/2019/01/blox-sux) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.
@@ -34,14 +26,13 @@ Perhaps more to the point, I believe I was more concerned about how the TOML (li
 
 {{< figure src="/images/iA-Writer-inline-footnotes_1548x582.png" alt="Screen capture from iA Writer software showing how footnotes look in it" >}}
 
-
-That said, iA Writer's inline footnotes, while fine for export from iA Writer, don't fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs "think" when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they can work fine in an SSG.[^InlineNotes] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses---that is to say, all the ones I've included on [my other posts](/posts) before this one---work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
-
-[^InlineNotes]: "Inline notes are easier to write, since you don't have to pick an identifier and move down to type the note." See [here](https://github.com/Witiko/markdown/issues/3)---the source of that quote---for an example of what I mean.
+That said, iA Writer's inline footnotes, while fine for export from iA Writer, don't fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs "think" when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.^["Inline notes are easier to write, since you don't have to pick an identifier and move down to type the note." See [here](https://github.com/Witiko/markdown/issues/3)---the source of that quote---for an example of what I mean.] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses---that is to say, all the ones I've included on [my other posts](/posts) before this one---work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
 
 ## Status quo, or no?
 
-Bottom line: I still haven't made up my mind about whether to go with a different editor for future Markdown work or stick with Ulysses for it as well as for my other creative writing (that WIP ain't finishing itself). However, if you are an SSG user and you're trying to decide about which editor to use for your writing, I hope these thoughts have been helpful.
+Bottom line: I still haven't made up my mind about whether to go with a different editor for future Markdown work or stick with Ulysses for it as well as for my other creative writing (that WIP ain't finishing itself).[^RIPWIP] However, if you are an SSG user and you're trying to decide about which editor to use for your writing, I hope these thoughts have been helpful.
+
+[^RIPWIP]: [Unfortunately, I didn't finish it either](/posts/2020/04/murdered-darlings).
 
 <br />
 <hr />

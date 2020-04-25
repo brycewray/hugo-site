@@ -5,9 +5,20 @@ subtitle: iA Writer wins—for now
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
-lastmod: 2019-10-11T19:00:00-05:00
+lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-04-why-left-ulysses"
-oldComments: true
+oldComments: |
+    <div class="webmentions">
+      <h3 class="ctr">Comments</h3>
+      <p class="legal ctr">
+        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
+      </p>
+      <p class="commentOpen"><strong>Chris Rosser</strong> <em>2019-04-30</em></p>
+      <p class="commentBody">An excellent and very well considered article as always. Thanks for posting it!</p>
+    
+      <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-05-01</em></p>
+      <p class="commentBody">Thank you, sir. I&rsquo;d have liked nothing more than for it to have been a &ldquo;Why I was able to stick with Ulysses despite a few scary moments&rdquo; article, instead (although that would have been a goofy article title); but, sadly, the continuing glitches left me no good choice in the end.</p>
+    </div>
 ---
 
 <div class="yellowBox">
@@ -25,7 +36,9 @@ A few months ago, I couldn't have imagined writing those sentences at all, much 
 
 After all, one of my most-viewed posts was my explanation of why I had [settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses) as the daily driver for my writing. The people at Ulysses even linked to it from their monthly e-newsletter, obviously the reason for its *being* so visited. (Quite understandably, they won't be linking to this one.)
 
-I wrote for nearly a year within Ulysses, both for this site and in my swear-I'm-gonna-finish-it-while-I-still-remember-how-to-form-sentences work in progress (WIP).
+I wrote for nearly a year within Ulysses, both for this site and in my swear-I'm-gonna-finish-it-while-I-still-remember-how-to-form-sentences work in progress (WIP).[^RIPWIP]
+
+[^RIPWIP]: I can still form sentences, but [I didn't carry through on the rest of that](/posts/2020/04/murdered-darlings).
 
 Ulysses was a delight to use on the Mac and my iOS devices. The UI on each seemed perfect for me. Ulysses had just the right mix of features for my creative writing, neither so many that I'd feel overwhelmed nor so few that I'd feel restricted.
 

@@ -8,7 +8,17 @@ author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
 lastmod: 2020-03-29T10:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
-oldComments: true
+oldComments: |
+  <div class="webmentions">
+    <h3 class="ctr">Comments</h3>
+    <p class="legal ctr">
+      (Imported from previous comments host, <a href="https://talkyard.io">Talkyard</a>.)
+    </p>
+
+    <p class="commentOpen"><strong>Cap Pike</strong> <em>2019-09-07</em></p>
+    <p class="commentBody">People that use Word that don't &quot;get&quot; styles and formatting in general are generally just annoying. Like people who drive that don't bother with turn signals.<br />
+      ...and then there's Excel...</p>
+  </div>
 ---
 
 *(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) &copy; Sony/ATV Music Publishing LLC.*)
