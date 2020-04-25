@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
 
-{{- partial "head.html" . -}}
+{{ partial "head.html" . }}
 
   <body>
-    {{- partial "header.html" . -}}
+    {{ partial "header.html" . }}
     <div id="content">
     {{- block "main" . }}{{- end }}
     </div>
-    {{- partial "footer.html" . -}}
+    {{ if eq .Params.title "Posts" }}
+    {{ partial "footer.html" . }}
+    {{ else }}
+    {{ partial "footer-wm.html" . }}
+    {{ end }}
   </body>
 
 </html>

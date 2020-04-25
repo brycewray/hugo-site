@@ -9,5 +9,20 @@
       <h4 class="ctr pokey">Information for webmentions</h4>
       <img class="u-photo" alt="This site's 'BW' logo" src="/images/favicon-512x512.png" style="width: 45px; height: 45px;" />
       <p class="p-note legal">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
+      <h4 class="ctr legal">About this page</h4>
+      <article class="h-entry legal">
+        <div class="e-content p-name">
+          {{ .Title }}
+          {{- if .Params.Subtitle }}
+          &nbsp;&nbsp;|&nbsp;&nbsp;{{ .Params.Subtitle}}
+          {{- end }}
+          {{- if .Params.Description}}
+          &nbsp;&nbsp;|&nbsp;&nbsp;{{ .Params.Description }}
+          {{- end }}
+        </div>
+        <a class="u-url" href="${data.page.url}">Published <time class="dt-published">{{ .PublishDate.Format "2006-01-02T15:04:05.000Z07:00" }}</time>
+        </a>
+        <link rel="author" href="https://brycewray.com/" />
+      </article>
     </footer>
     <script src="/js/twitterMeta.js" charset="utf-8"></script>
