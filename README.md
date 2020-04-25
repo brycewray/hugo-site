@@ -8,7 +8,7 @@ While this is a Hugo version of the actual site&rsquo;s repo rather than a start
 
 1. Clone it to a local repo.
 2. Make appropriate changes to `/data/metadata.json`.
-3. Delete from `/content/**/.*` the Markdown files and images (well, maybe you should keep one or two of each around at the start, until you see how things work).
+3. Delete the Markdown files from `/content/**/.*` and the images from `/static/images/` (well, maybe you should keep one or two of each around at the start, until you see how things work).
 
 ## What&rsquo;s under the hood
 
