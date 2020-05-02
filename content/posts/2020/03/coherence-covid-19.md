@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Coherence and COVID-19"
 subtitle: "Trying to grasp the new reality"
@@ -12,9 +12,9 @@ discussionId: "2020-03-coherence-covid-19"
 
 This is the third weekend of the month when the U.S.A. began to grasp just how big a deal that [COVID-19 a/k/a novel coronavirus](https://www.cdc.gov/coronavirus/2019-nCoV/index.html) was going to be. It's been a head-snapping experience for your friendly writer, just as it doubtless has been for almost all of you, wherever you are.
 
-Just two weekends ago, my vain hope for a restful weekend ended when [our first grandchild was born](/posts/2020/03/welcome-sweet-little-early-bird) nearly a month earlier than predicted. We now know that was an astoundingly fortunate happenstance rather than the *oh-I-hope-she-didn't-arrive-too-early* that we initially believed it to be.[^Kennedy] Indeed, just as I was helping our son-in-law haul all their stuff down in preparation for the trip home, the hospital was setting up the beginnings of its check-all-visitors-for-the-virus operation in the lobby. Even though we were outside the building only a moment as he loaded the vehicle, we had to pass muster upon our re-entry---attesting to our neither having COVID-19 symptoms nor having been out of the U.S.A. recently (specific other countries were mentioned, but I frankly didn't understand what the person asking said through her somewhat ill-fitting mask).
+Just two weekends ago, my vain hope for a restful weekend ended when [our first grandchild was born](/posts/2020/03/welcome-sweet-little-early-bird) nearly a month earlier than predicted. We now know that was an astoundingly fortunate happenstance rather than the *oh-I-hope-she-didn't-arrive-too-early* that we initially believed it to be.[^Cuter] Indeed, just as I was helping our son-in-law haul all their stuff down in preparation for the trip home, the hospital was setting up the beginnings of its check-all-visitors-for-the-virus operation in the lobby. Even though we were outside the building only a moment as he loaded the vehicle, we had to pass muster upon our re-entry---attesting to our neither having COVID-19 symptoms nor having been out of the U.S.A. recently (specific other countries were mentioned, but I frankly didn't understand what the person asking said through her somewhat ill-fitting mask).
 
-[^Kennedy]: And she's still fine, by the way, gaining weight and getting cuter with every new photo our daughter and son-in-law send.
+[^Cuter]: And she's still fine, by the way, gaining weight and getting cuter with every new photo our daughter and son-in-law send.
 
 That was my first encounter with any anti-COVID-19 measures.
 
@@ -38,19 +38,19 @@ By the way: I have seen some gallows humor in social media to the effect that yo
 
 Anyway, back to the "easier-said-than-done" part about avoiding COVID-19 where we live&nbsp;.&nbsp;.&nbsp;.
 
-Last night, for example, an email from the auto dealership where we recently purchased a vehicle informed us that one of the dealership's employees had tested positive for COVID-19 and, as a result, the dealership was closing temporarily.[^Denialists] I was there on March 7 to pick up tags for the new vehicle[^Car], but interacted with only one or two employees during my brief visit. That was two weeks ago, which is the limit of the [observed incubation period for COVID-19](https://www.who.int/news-room/q-a-detail/q-a-coronaviruses); but so far, so good.
+Last night, for example, an email from the auto dealership where we recently purchased a vehicle informed us that one of the dealership's employees had tested positive for COVID-19 and, as a result, the dealership was closing temporarily.[^Dealership] I was there on March 7 to pick up tags for the new vehicle[^Kennedy], but interacted with only one or two employees during my brief visit. That was two weeks ago, which is the limit of the [observed incubation period for COVID-19](https://www.who.int/news-room/q-a-detail/q-a-coronaviruses); but so far, so good.
 
-[^Car]: As I [previously mentioned](/posts/2020/03/welcome-sweet-little-early-bird), I had just finished that errand when we learned the aforementioned grandchild had decided to start her early arrival.
+[^Dealership]: If you're thinking, "Well, it's not as if they were gonna get car-shoppers on the lot with all that's going on right now," all I can reply is: "You'd think." You see, this area seems full of COVID-19 skeptics. They surely have seen news coverage of the virus but---given the typical political leanings around here---are doubtful about whether it's truly all that serious. Science begs to differ, as it usually does.
 
-[^Denialists]: If you're thinking, "Well, it's not as if they were gonna get car-shoppers on the lot with all that's going on right now," all I can reply is: "You'd think." You see, this area seems full of COVID-19 skeptics. They surely have seen news coverage of the virus but---given the typical political leanings around here---are doubtful about whether it's truly all that serious. Science begs to differ, as it usually does.
+[^Kennedy]: As I [previously mentioned](/posts/2020/03/welcome-sweet-little-early-bird), I had just finished that errand when we learned the aforementioned grandchild had decided to start her early arrival.
 
 ## No end in sight
 
 My naïveté over the timing of my working from home due to the COVID-19 scare is long gone. That period is now indefinite, especially since my employers' home offices as well as the branch office where I work are affected by their respective states' regulations requiring near- or total shutdown of non-essential businesses.
 
-When will it end? Some businesses are saying things like April something-or-other. Since I have spent a *great deal* of time reading and listening to the opinions of leading epidemiologists[^Science] over these last few days, I think such optimism is the product of somebody having smoked something funky.
+When will it end? Some businesses are saying things like April something-or-other. Since I have spent a *great deal* of time reading and listening to the opinions of leading epidemiologists[^ScienceRules] over these last few days, I think such optimism is the product of somebody having smoked something funky.
 
-[^Science]: I trust science. Period. As I [said on Twitter](https://twitter.com/BryceWrayTX/status/1238448849838059520) about this mess: "Science > myth. Truth > lies. Real smarts > fake smarts. Realism > thinking 'miracles' will fix a crisis. Whatever happens, these are always true."
+[^ScienceRules]: [I trust science. Period. As I [said on Twitter](https://twitter.com/BryceWrayTX/status/1238448849838059520) about this mess: "Science > myth. Truth > lies. Real smarts > fake smarts. Realism > thinking 'miracles' will fix a crisis. Whatever happens, these are always true."
 
 I'm no betting man, but right now I would be astounded if we're told it's OK to go back to sort-of-normal before late June or early July.
 
@@ -68,7 +68,7 @@ Fine. So I'm negative. *But*&nbsp;.&nbsp;.&nbsp;.
 
 .&nbsp;.&nbsp;. Given how quickly this whole thing came upon us---remember, [Patient Zero in Wuhan, China, was only about four months ago](https://www.businessinsider.com/coronavirus-patients-zero-contracted-case-november-2020-3)---I feel this simply justifies an attitude I've long held *and* seen vindicated over and over again: being a pessimist may not make you fun to be around, but it also is more likely to prepare you for reality.[^Surprises]
 
-[^Surprises]: Since I hate surprises, I'd rather be prepared than gobsmacked.]
+[^Surprises]: Since I hate surprises, I'd rather be prepared than gobsmacked.
 
 And right now, to coin a phrase: reality bites.
 
