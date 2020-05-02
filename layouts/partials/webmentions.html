@@ -26,7 +26,7 @@
     {{ if $reposts }}
       <details>
         <summary class="h4">Reposts&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">({{ len $reposts }})</summary>
-          <</summary>
+          </summary>
         <ul class="webmentions__list_facepile">
           {{ range $i, $repost := $reposts }}
             <li><a href="{{$repost.url}}" class="u-url"><img class="webmention__author__photo u-photo" src="{{ $repost.author.photo}}" alt="{{ $repost.author.name }}"></a></li>
