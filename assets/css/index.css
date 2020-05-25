@@ -8,6 +8,10 @@ body {
   font-feature-settings: "liga" 1;
 }
 
+#content {
+  @apply pt-12;
+}
+
 p, li {
   /* for handling Markdown-created <p> and <li> */
   @apply mb-3 text-lg;
@@ -281,27 +285,19 @@ blockquote {
 
 /* start, footnotes */
 
-.footnote-ref {
-  font-size: 0.65em;
+.footnotes ol li, .footnotes p {
+  @apply text-xs leading-5;
 }
 
-.footnote-ref a {
+.footnotes ol li, .footnotes p {
+  @apply my-3;
+}
+
+a.footnote-backref {
   @apply border-transparent;
 }
 
-.footnotes-sep {
-  @apply mb-3;
-}
-
-.footnotes-list {
-  @apply list-decimal pl-6;
-}
-
-.footnote-item, .footnote-item p {
-  @apply text-sm tracking-normal;
-}
-
-.footnote-item pre, .footnote-item code {
+.footnotes pre, .footnotes code {
   @apply text-xs;
 }
 
