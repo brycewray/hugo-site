@@ -1,107 +1,59 @@
-/* CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/WRwJQX
+/*
+CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/WRwJQX ...but considerably changed since then, especially due to change to Tailwind CSS
 */
 
-/* keep header here rather than base or layout SCSS */
-
-header {
-  height: 30px;
-  font-family: var(--sans-serif);
-  width: 100%;
-  background-color: var(--darkblue);
-  position: fixed;
-  padding: 0.5em 0;
-  margin-top: 0;
-  z-index: 9999;
-  /* keeps YT videos from appearing over it, for one thing */
-}
-
-.nav__bar {
-  background-color: var(--darkblue);
-  padding-top: var(--nav-height);
-}
-@media (min-width: 900px) {
-  .nav__bar {
-    max-height: none;
-    text-align: center;
-  }
-}
-
 .nav__item {
-  padding: 0;
-  margin: 0;
-  background: var(--darkblue);
+  @apply p-0 m-0;
 
   & a {
-    display: block;
-    padding: 0.5em 1.5em;
-    margin: 0;
-    color: #fff;
-    background: var(--darkblue);
-    text-decoration: none;
-    transition: opacity 0.5s ease;
+    @apply block py-2 px-6 m-0 text-white no-underline transition-opacity duration-500 ease-linear;
 
     &:link, &:visited {
-      color: #fff;
+      @apply text-white;
     }
 
     &:hover, &:focus {
-      text-decoration: none;
-      opacity: 0.7;
+      @apply no-underline opacity-75;
     }
   }
 }
 
 @media (min-width: 900px) {
   .nav__item {
-    display: inline-block;
+    @apply text-lg inline-block;
     & a {
-      display: inline-block;
-      padding-top: 0.5em;
-      padding-bottom: 0;
-      border: none;
+      @apply inline-block pt-1 pb-0 no-underline
     }
   }
 }
 
 .nav__icon {
-  display: block;
-  position: absolute;
-  top: calc((var(--nav-height) - 20px)/2);
+  @apply block absolute cursor-pointer;
+  top: 15px;
   right: 13px;
   height: 27px;
   width: 27px;
-  cursor: pointer;
   text-indent: -9999px;
   /* hide the label */
   transition: all 1s cubic-bezier(.19, 1, .22, 1);
   /* Remove blinking cursor */
-  border: none;
-  color: transparent;
+  @apply border-none text-transparent text-center;
   text-shadow: 0 0 0 gray;
-  text-align: center;
   &:focus {
-      outline: none;
+    @apply outline-none;
   }
 }
 @media (min-width: 900px) {
   .nav__icon{
-    display: none;
+    @apply hidden;
   }
 }
 
 .nav__icon-line {
-  position: absolute;
-  display: block;
-  background: #fff;
-  width: 27px;
-  height: 0.2rem;
-  border-radius: 0.2rem;
-  left: 0;
-  text-indent: 0;
-  transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+  @apply absolute block bg-white rounded left-0 transition-all duration-500 w-6 h-1 ease-linear;
 
   &:first-child {
-    top: 0;
+    @apply top-0;
   }
 
   &:nth-child(2) {
@@ -115,65 +67,46 @@ header {
  
  /* Checkbox hack for toggling mobile menu */
  input[type=checkbox] {
-   display: none;
-   visibility: hidden;
+   @apply hidden invisible;
    &:checked {
      & ~ nav .nav__items {
        height: auto;
+       @apply bg-blue-700 transition-all duration-500 ease-linear;
        max-height: 30rem;
-       transition: all 2s cubic-bezier(.5, 1, .22, 1);
      }
      & ~ label .nav__icon-line:first-child {
-       top: 0px;
-       width: 27px;
-       transform: translateX(-8px) rotate(-45deg) translateY(12px);
+       @apply top-0 transform -rotate-45 translate-y-2 w-6;
      }
      & ~ label .nav__icon-line:nth-child(2) {
-       opacity: 0;
+       @apply opacity-0;
      }
      & ~ label .nav__icon-line:nth-child(3) {
-       top: 14px;
-       width: 27px;
-       transform: translateX(-5px) rotate(45deg) translateY(-8px);
+       @apply transform rotate-45 -translate-y-2 w-6;
      }
    }
 }
  
 nav {
-  position: absolute;
-  text-align: left;
+  @apply absolute text-left left-0 w-full transition duration-500 ease-linear transform scale-x-100 scale-y-0 origin-top;
   top: 100%;
-  left: 0;
-  background-color: var(--darkblue);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
   & ul {
-    padding-left: 0;
-    margin: 0;
-    text-align: right;
-    list-style: none;
+    @apply pl-0 m-0 text-right list-none transition duration-500 ease-linear;
   }
   & li {
-    margin-bottom: 0.5em;
+    @apply mb-2 inline;
     margin-right: 5%;
-    display: inline;
     @media screen and (max-width: 899px) {
       display: inherit;
     }
-    /* undoing the inline-for-really-old-browsers stuff */
   }
   & a {
-    color: #fff;
-    font-size: calc(var(--stdsize) * 1em);
-    text-decoration: none;
-    border-bottom: 0;
-    opacity: 0;
-  }
+    @apply text-white text-lg opacity-0;
+    text-decoration: none !important;
+    border: 0 !important;
+  }/*
   & a:hover, & a:active {
-    color: var(--grey-2);
-    border-bottom: 0;
-  }
+    @apply border-b-0 text-gray-500;
+  }*/
 }
 
 .nav-toggle:checked ~ nav {
@@ -183,79 +116,43 @@ nav {
   }
 }
 
-.site-logo {
-  color: #fff;
-  & a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 0;
-  }
-  & a:active, & a:hover {
-    color: var(--grey-2);
-    border-bottom: 0;
-  }
-  font-size: calc(var(--minimalbig) * 1em);
-  font-weight: 700;
-  margin-top: 0.2em;
-  margin-left: 5%;
-}
-
-
 /* === Beginning of primary settings for larger screens === */
-
 @media screen and (min-width: 900px) {
-/* can't use CSS vars in media queries' parameters yet */
   .nav-toggle-label {
-    display: none;
+    @apply hidden;
   }
   
   header {
-    display: table;
-    display: grid;
-    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
-    position: fixed;
+    @apply fixed grid grid-cols-5;
   }
 
   .site-logo {
-    z-index: 999999;
-    grid-column: 1 / 2;
-    text-align: left;
-    padding-left: 1.5em;
-    font-size: calc(var(--minimalbig) * 1em);
+    @apply z-50 text-left col-start-1 col-end-3 text-lg;
+    padding-left: 8%;
   }
 
   nav {
+    @apply mt-0 col-start-4 col-end-6;
     top: 15%;
     transform: none;
-    margin-top: 0;
-    margin-left: 60%;
-    display: table;
-    grid-column: 4 / 5;
     & a {
-      opacity: 1;
-      position: relative;
+      @apply opacity-100 relative;
     }
     & ul {
-      margin: auto;
-      padding-right: 20%;
-      text-align: left;
-      /* fixes old browsers that don't understand media queries */
+      padding-right: 8%;
+      @apply text-right;
     }
     & li {
-      display: inline-block;
-      margin-left: 3em;
-      margin-bottom: 0;
+      @apply inline-block p-0 mb-0;
     }
   }
 }
 
 .site-logo-holder {
-  vertical-align: text-top;
   & img {
     height: 18px;
     width: 18px;
+    @apply mb-1;
   }
 }
-
-
 /* === End of primary settings for larger screens === */

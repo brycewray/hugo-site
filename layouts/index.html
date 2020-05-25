@@ -1,35 +1,36 @@
 {{ define "main" }}
 
-<div class="hero-home">
+<div class="w-full height-hero">
   <img src="{{ index .Params "featured_image" }}" alt="{{ index .Params "featured_image_alt" }}" class="imgCover" />
 </div>
 {{ if index .Params "featured_image_caption" }}
-<p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ index .Params "featured_image_caption" }}<span class="IEonly"> &bull; <em>(May appear distorted in obsolete browsers.)</em></span></p>
+<p class="text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" }}<span class="IEonly"> &bull; <em>(May appear distorted in obsolete browsers.)</em></span></p>
 {{ end }}
 
 
-<div class="container-home">
-  <div class="column-home-1">
+<div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
+  <div class="col-span-3 home-colOne">
     {{ .Content }}
   </div>
-  <div class="column-home-2">
-    <h2 class="h1 topofHome" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
+  <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
+    <h2 class="h1 mb-4"><a href="/posts/">Posts</a></h2>
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>
-        <h2 class="h5"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="h5"><em>{{ .Params.Subtitle | markdownify }}</em></p>
-        <p class="legal text-muted" style="margin-top: 0;"><time style="display: inline;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
-        {{ if .Params.Lastmod }}
-        &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time>
+        <h2 class="h4 not-italic tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="font-bold text-base mt-2 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
+        <p class="text-xs tracking-normal mt-0 mb-1">
+          <time style="display: inline;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+          {{ if .Params.Lastmod }}
+          &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time>
         {{ end }}
         </p>
         
-        <p class="pokey text-body">
+        <p class="text-sm mt-2 mb-3">
           {{ .Description }}
         </p>
       </div>
     {{ end }}
-    <p class="text-sans-serif"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+    <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
   </div>
 </div>
 {{ end }}

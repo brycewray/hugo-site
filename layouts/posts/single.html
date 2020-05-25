@@ -1,19 +1,18 @@
 {{ define "main" }}
 
-  <div class="background-hero-div">
-    <div class="background-hero-title-block-fit">
-      <h1 class="background-hero-title-text">{{ .Title | markdownify}}</h1>
-      <h2 class="background-hero-subtitle-text" style="margin-top: 0;">
+<div class="container h-auto w-full min-w-full relative overflow-hidden gradient-titles pt-12 pb-6 px-4 md:px-12">
+  <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{{ .Title | markdownify}}</h1>
+  <h2 class="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl leading-tight tracking-tight px-6 md:px-0 text-white">
         {{- if .Params.Subtitle }}
         {{ .Params.Subtitle | markdownify }}
         {{- else }}
         &nbsp;
         {{- end }}
       </h2>
-      <p class="background-hero-description-text">{{ .Params.Description }}</p>
-      <p class="background-hero-p-text">
+      <p class="hidden not-italic md:block md:text-2xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{{ .Params.Description }}</p>
+      <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
         <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
-        <span class="pokey">
+        <span class="text-sm">
         {{- if ne .PublishDate .Lastmod }}
         <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ .Lastmod.Format "January 2, 2006" }}
         {{- else }}
@@ -24,7 +23,7 @@
     </div>
   </div>
 
-  <div class="container-narrower">
+  <div class="sm:w-5/6 md:w-4/5 xl:w-1/2 mt-10 mr-auto ml-auto px-6 lg:px-16">
     <article class="article">
       {{ .Content }}
     </article>
@@ -33,19 +32,19 @@
   {{- partial "webmentions.html" . -}}  
   
   {{ if or .PrevPage .NextPage }}
-    <div class="bg-dark">
-      <h3 class="ctr wht"><a href="/posts/" style="border-bottom: 0;">Other posts</a></h3>
-			<p class="ctr">
+    <div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
+      <h3 class="text-center text-3xl tracking-normal mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
+			<p class="text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
-					<a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.Permalink}}"> {{.Title}}</a>
 					{{ end }}
 			</p>
-			<p class="ctr">
+			<p class="text-center pb-4 my-0 text-xl text-white leading-tight tracking-tight">
 				{{ with .PrevInSection }}
 					<strong>Previous</strong>:
-					<a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-					{{ end }}
+					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.Permalink}}"> {{.Title}}</a>
+				{{ end }}
 			</p>
     </div>
   {{ end }}

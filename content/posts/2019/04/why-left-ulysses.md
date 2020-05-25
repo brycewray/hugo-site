@@ -8,16 +8,16 @@ date: 2019-04-20T11:17:00-05:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-04-why-left-ulysses"
 oldComments: |
-    <div class="webmentions">
-      <h3 class="ctr">Comments</h3>
-      <p class="legal ctr">
+    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
+      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
+      <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>
-      <p class="commentOpen"><strong>Chris Rosser</strong> <em>2019-04-30</em></p>
-      <p class="commentBody">An excellent and very well considered article as always. Thanks for posting it!</p>
+      <p class="mt-6 mb-0 text-base"><strong>Chris Rosser</strong> <span class="italic text-sm">2019-04-30</span></p>
+      <p class="my-0 text-base leading-normal">An excellent and very well considered article as always. Thanks for posting it!</p>
     
-      <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-05-01</em></p>
-      <p class="commentBody">Thank you, sir. I&rsquo;d have liked nothing more than for it to have been a &ldquo;Why I was able to stick with Ulysses despite a few scary moments&rdquo; article, instead (although that would have been a goofy article title); but, sadly, the continuing glitches left me no good choice in the end.</p>
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-05-01</span></p>
+      <p class="my-0 text-base leading-normal">Thank you, sir. I&rsquo;d have liked nothing more than for it to have been a &ldquo;Why I was able to stick with Ulysses despite a few scary moments&rdquo; article, instead (although that would have been a goofy article title); but, sadly, the continuing glitches left me no good choice in the end.</p>
     </div>
 ---
 
