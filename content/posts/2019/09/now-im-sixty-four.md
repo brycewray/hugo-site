@@ -9,14 +9,14 @@ date: 2019-09-06T06:40:00-05:00
 lastmod: 2020-03-29T10:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
 oldComments: |
-  <div class="webmentions">
-    <h3 class="ctr">Comments</h3>
-    <p class="legal ctr">
+  <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
+    <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
+    <p class="text-xs italic text-center">
       (Imported from previous comments host, <a href="https://talkyard.io">Talkyard</a>.)
     </p>
 
-    <p class="commentOpen"><strong>Cap Pike</strong> <em>2019-09-07</em></p>
-    <p class="commentBody">People that use Word that don't &quot;get&quot; styles and formatting in general are generally just annoying. Like people who drive that don't bother with turn signals.<br />
+    <p class="mt-6 mb-0 text-base"><strong>Cap Pike</strong> <span class="italic text-sm">2019-09-07</span></p>
+    <p class="my-0 text-base leading-normal">People that use Word that don't &quot;get&quot; styles and formatting in general are generally just annoying. Like people who drive that don't bother with turn signals.<br />
       ...and then there's Excel...</p>
   </div>
 ---

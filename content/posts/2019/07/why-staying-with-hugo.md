@@ -9,25 +9,25 @@ date: 2019-07-14T20:45:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
 oldComments: |
-    <div class="webmentions">
-      <h3 class="ctr">Comments</h3>
-      <p class="legal ctr">
+    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
+      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
+      <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>
-      <p class="commentOpen"><strong>Cole Krumz</strong> <em>2019-07-15</em></p>
-      <p class="commentBody">Interesting read. Any chance you'd be willing to open source the attempted site, bugs and all, as a learning tool? I'd be pretty interested to try to get your site working, and in the process understand how gatsby handles a set of "real-world" requirements.</p>
+      <p class="mt-6 mb-0 text-base"><strong>Cole Krumz</strong> <span class="italic text-sm">2019-07-15</span></p>
+      <p class="my-0 text-base leading-normal">Interesting read. Any chance you'd be willing to open source the attempted site, bugs and all, as a learning tool? I'd be pretty interested to try to get your site working, and in the process understand how gatsby handles a set of "real-world" requirements.</p>
     
-      <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-07-15</em></p>
-      <p class="commentBody">I&rsquo;m afraid it&rsquo;s already history. I didn&rsquo;t want all those thousands of node modules taking up space on my Mac. :-) I do use Time Machine so it&rsquo;s probably on there somewhere, but I wouldn&rsquo;t know which version to recover.</p>
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-07-15</span></p>
+      <p class="my-0 text-base leading-normal">I&rsquo;m afraid it&rsquo;s already history. I didn&rsquo;t want all those thousands of node modules taking up space on my Mac. :-) I do use Time Machine so it&rsquo;s probably on there somewhere, but I wouldn&rsquo;t know which version to recover.</p>
     
-      <p class="commentOpen"><strong>Nico</strong> <em>2019-07-16</em></p>
-      <p class="commentBody">Thank you for the really interesting reading! Nico here. And I have to say that I feel for you there!</p>
-      <p class="commentBody">Also, I think you raise some very valid and important topics, which for me are food for thought:</p>
-      <p class="commentBody">One of them being that <em><strong>documentation</strong></em> is something excessively...(how do you say in English when someone looks to the side so they don't see you? That's what I mean! Like &quot;ignored&quot; more or less). The fact a developer will use a certain framework/library/etc. does not tell you nothing about their background or objective. Making no assumptions, good documentation can be built.</p>
-      <p class="commentBody">I also have more comments but this is already too long lol. In short, thanks for the great reading!</p>
+      <p class="mt-6 mb-0 text-base"><strong>Nico</strong> <span class="italic text-sm">2019-07-16</span></p>
+      <p class="my-0 text-base leading-normal">Thank you for the really interesting reading! Nico here. And I have to say that I feel for you there!</p>
+      <p class="my-0 text-base leading-normal">Also, I think you raise some very valid and important topics, which for me are food for thought:</p>
+      <p class="my-0 text-base leading-normal">One of them being that <em><strong>documentation</strong></em> is something excessively...(how do you say in English when someone looks to the side so they don't see you? That's what I mean! Like &quot;ignored&quot; more or less). The fact a developer will use a certain framework/library/etc. does not tell you nothing about their background or objective. Making no assumptions, good documentation can be built.</p>
+      <p class="my-0 text-base leading-normal">I also have more comments but this is already too long lol. In short, thanks for the great reading!</p>
     
-      <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-07-16</em></p>
-      <p class="commentBody">Given how long I yakked in this article, you have no need to apologize. :-) Thanks for your kind words and insights.</p>
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-07-16</span></p>
+      <p class="my-0 text-base leading-normal">Given how long I yakked in this article, you have no need to apologize. :-) Thanks for your kind words and insights.</p>
     </div>
 ---
 

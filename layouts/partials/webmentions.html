@@ -15,11 +15,11 @@
     {{ if $likes }}
       <details>
         <summary class="md:text-2xl font-bold tracking-tight">Likes&nbsp;&nbsp;<span class="text-base font-normal">({{ len $likes }})</span></summary>
-        <ul class="webmentions__list_facepile">
+        <div>
         {{ range $i, $like := $likes }}
-          <li><a href="{{$like.url}}" class="border-0 no-underline" aria-label="{{ $like.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $like.author.photo}}" alt="{{ $like.author.name }}"></a></li>
+          <a href="{{$like.url}}" class="border-0 no-underline" aria-label="{{ $like.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $like.author.photo}}" alt="{{ $like.author.name }}"></a>
         {{end}}
-        </ul>
+        </div>
       </details>
     {{ end }}
   
@@ -27,25 +27,25 @@
       <details>
         <summary class="md:text-2xl font-bold tracking-tight">Reposts&nbsp;&nbsp;<span class="text-base font-normal">({{ len $reposts }})</summary>
           </summary>
-        <ul class="webmentions__list_facepile">
+        <div>
           {{ range $i, $repost := $reposts }}
-            <li><a href="{{$repost.url}}"  class="border-0 no-underline" aria-label="{{ $repost.author.name }}"><img  class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $repost.author.photo}}" alt="{{ $repost.author.name }}"></a></li>
+            <a href="{{$repost.url}}"  class="border-0 no-underline" aria-label="{{ $repost.author.name }}"><img  class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $repost.author.photo}}" alt="{{ $repost.author.name }}"></a>
           {{end}}
-        </ul>
+        </div>
       </details>
     {{ end }}
   
     {{ if $replies }}
       <details>
       <summary class="md:text-2xl font-bold tracking-tight">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="text-base font-normal">({{ len $replies }})</summary>
-      <ol class="webmentions__list">
+      <ol class="list-none p-0">
       {{ range $index, $reply := sort $replies "published" }}
-        <li class="webmentions__item">
+        <li class="mt-8">
           <article class="block h-cite">
             <div class="flex items-center flex-wrap">
-              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$reply.url}}" aria-label="{{ $reply.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $reply.author.photo}}" alt="{{ $reply.author.name }}"><strong class="p-name">{{ $reply.author.name }}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="{{ $reply.published }}">{{ $reply.published | dateFormat "Jan 2, 2006" }}</time></span>
+              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$reply.url}}" aria-label="{{ $reply.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $reply.author.photo}}" alt="{{ $reply.author.name }}"><strong class="p-name text-base">{{ $reply.author.name }}</strong></a>&nbsp;<span class="text-sm"><time class="webmention__pubdate dt-published" datetime="{{ $reply.published }}">{{ $reply.published | dateFormat "Jan 2, 2006" }}</time></span>
             </div>
-            <div class="p-content pt-2 pl-2 text-base leading-normal">
+            <div class="p-content text-base">
               {{ $reply.content.html | safeHTML }}
             </div>
           </article>
@@ -58,14 +58,14 @@
     {{ if $mentions }}
       <details>
       <summary class="md:text-2xl font-bold tracking-tight">Mentions&nbsp;&nbsp;<span class="text-base font-normal">({{ len $mentions }})</summary></summary>
-      <ol class="webmentions__list">
+      <ol class="list-none p-0">
       {{ range $index, $mention := sort $mentions "published" }}
-        <li class="webmentions__item">
+        <li class="mt-8">
           <article class="block h-cite">
             <div class="flex items-center flex-wrap">
-              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$mention.url}}" aria-label="{{ $mention.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $mention.author.photo}}" alt="{{ $mention.author.name }}"><strong class="p-name">{{ $mention.author.name }}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="{{ $mention.published }}">{{ $mention.published | dateFormat "Jan 2, 2006" }}</time></span>
+              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$mention.url}}" aria-label="{{ $mention.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $mention.author.photo}}" alt="{{ $mention.author.name }}"><strong class="p-name text-base">{{ $mention.author.name }}</strong></a>&nbsp;<span class="text-sm"><time class="webmention__pubdate dt-published" datetime="{{ $mention.published }}">{{ $mention.published | dateFormat "Jan 2, 2006" }}</time></span>
             </div>
-            <div class="p-content pt-2 pl-2 text-base leading-normal">
+            <div class="p-content text-base">
               {{ $mention.content.html | safeHTML }}
             </div>
           </article>

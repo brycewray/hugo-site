@@ -12,16 +12,16 @@ idx: 18
 draft: false # note!
 actual_path: /content/posts/2019/04/publish-or-perish
 oldComments: |
-  <div class="webmentions">
-    <h3 class="ctr">Comments</h3>
-    <p class="legal ctr">
+  <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
+      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
+    <p class="text-xs italic text-center">
       (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
     </p>
-    <p class="commentOpen"><strong>Andrew Canion</strong> <em>2019-06-18</em></p>
-    <p class="commentBody">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="nofollow">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="nofollow">helped another user on micro.blog</a>.</p>
+    <p class="mt-6 mb-0 text-base"><strong>Andrew Canion</strong> <span class="italic text-sm">2019-06-18</span></p>
+    <p class="my-0 text-base leading-normal">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="nofollow">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="nofollow">helped another user on micro.blog</a>.</p>
   
-    <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-06-18</em></p>
-    <p class="commentBody">Very glad I could help. Have fun with Hugo! I certainly do.</p>
+    <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-06-18</span></p>
+    <p class="my-0 text-base leading-normal">Very glad I could help. Have fun with Hugo! I certainly do.</p>
   </div>
 ---
 

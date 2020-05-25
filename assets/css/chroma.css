@@ -60,7 +60,6 @@
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 
 code {
-  font-family: var(--monospaced);
   background: #dfefff;
 }
 
@@ -68,7 +67,6 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
   background: none;
-  font-family: var(--monospaced);
   text-align: left;
   white-space: pre;
   word-spacing: normal;
