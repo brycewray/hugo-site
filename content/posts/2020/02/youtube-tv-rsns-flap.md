@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
 lastmod: 2020-04-02T12:23:00-05:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
-featured_image: globe-life-park-rangers-1402096_1280x853.jpg
+featured_image: /images/globe-life-park-rangers-1402096_1280x853.jpg
 featured_image_alt: "Baseball game at Globe Life Park, Arlington, Texas"
 featured_image_caption: "Image: rwelborn; Pixabay"
 ---

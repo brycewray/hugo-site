@@ -47,8 +47,6 @@ Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2
 
 It's hard for somebody who's prided himself since the 1980s on knowing his way around the Mac-o-sphere *not* to give MailMate a try sooner or later. After all, its [fans](https://www.youtube.com/watch?v=e_SlbQzL9lc) [swear](https://brettterpstra.com/2018/01/08/best-of-2017-working-on-macos/) [by](https://www.slant.co/options/1952/~mailmate-review) [it](https://www.youtube.com/playlist?list=PLC4ZkBr87CO0jmrQvGQ77t44tCT-xklqU) as *the* email client for Mac power users. However, perhaps *because* [I had become so locked into my personal "Holy Grail" where email is concerned](/posts/2019/05/the-holy-mail), I became aware of it only recently.
 
-<p class="lazypicturecaption"><img class="imgCover" src="/images/MailMate_screen_cap_1280x720_60pct.jpg" alt="Screen capture of the MailMate app" />MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake.</p>
-
 Although my email needs aren't dramatic---as I've explained before, I don't use my Mac to access work-related email[^vmMail], so it's simply my personal stuff, albeit over twenty years' worth of it, and plenty more rolling in every day---I still was intrigued by several aspects of MailMate.
 
 [^vmMail]: To clarify: yes, I do work from home sometimes, typically each Friday; and, yes, I access work email from home. However, I do so through the employer-supplied [VMWare Horizon Client](https://www.vmware.com/products/horizon.html), not through other apps on my Mac.
