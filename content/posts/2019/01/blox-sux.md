@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
 lastmod: 2019-10-06T19:00:00-05:00
 discussionId: "2019-01-blox-sux"
+featured_image: /images/lego-169603_1280x960.jpg
+featured_image_alt: Lego blocks arranged stylistically
+featured_image_caption: "Image: M W; Pixabay" # quotation marks to allow colon
 ---
 
 There’s an old saying to the effect that “a poor craftsman blames his tools.”

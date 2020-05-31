@@ -139,7 +139,7 @@ nav {
       @apply opacity-100 relative;
     }
     & ul {
-      padding-right: 8%;
+      padding-right: 10%;
       @apply text-right;
     }
     & li {
