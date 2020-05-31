@@ -9,13 +9,9 @@ lastmod: 2020-04-22T19:30:00-05:00
 draft: false
 #actual-path: /content/about/
 discussionId: "about"
-final_url: /about
-featured_image: /images/question-mark-over-mac-keyboard-49958_1280x720_100pct-1280.jpg
-featured_image_base: question-mark-over-mac-keyboard-49958_1280x720_100pct
-featured_image_width: 1280
-featured_image_ext: jpg
+featured_image: /images/question-mark-over-mac-keyboard-49958_1280x905.jpg
 featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon 
+featured_image_caption: "Image: Dalamo; Pixabay" 
 ---
 
 So, who am I, and what business do I have putting yet another site on this already overstuffed Web?
