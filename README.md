@@ -1,10 +1,10 @@
 # Repo for brycewray.com
 
-This is the repository from which the [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is built. Please note that this is just as an example; the **real** site is done in [Eleventy](https://11ty.dev).
+This is the repository from which a shortened, [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is built. Please note that this is just as an example; the **real** site is done in [Eleventy](https://11ty.dev).
 
-## Not a starter kit, but&nbsp;.&nbsp;.&nbsp;.
+## Not *(exactly)* a starter kit, but&nbsp;.&nbsp;.&nbsp;.
 
-While this is a Hugo version of the actual site&rsquo;s repo rather than a starter version thereof, you can turn it into the latter by doing the following:
+While this isn&rsquo;t truly a starter version of the real site, you can use it that way since it includes only a small number of the original posts to give you ideas about how it all works: 
 
 1. Clone it to a local repo.
 2. Make appropriate changes to `/data/metadata.json`.
