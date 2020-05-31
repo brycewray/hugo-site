@@ -1,7 +1,7 @@
 {{ define "main" }}
 
   <div class="background-hero-image-div">
-    <div class="h-full bg-cover" style="background-image: url({{ index .Params "featured_image" }});">
+    <div class="h-full bg-cover bg-center" style="background-image: url({{ index .Params "featured_image" }});">
       <div class="background-hero-title-block-fit">
         <div class="background-hero-title-text">
           <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{{ .Title | markdownify}}</h1>
