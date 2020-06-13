@@ -5,9 +5,9 @@
 @tailwind base;
 
 body {
+  @apply font-body; /* assigned in tailwind.config.js */
   font-feature-settings: "liga" 1;
 }
-
 #content {
   @apply pt-12;
 }
@@ -18,7 +18,7 @@ p, li {
 }
 
 pre, code {
-  @apply text-base;
+  @apply font-codefont; /* assigned in tailwind.config.js */
   font-feature-settings: normal;
 }
 
