@@ -13,6 +13,13 @@
     {{ else }}
     {{ partial "footer-wm.html" . }}
     {{ end }}
+    <script src="/js/twitterMeta.js" charset="utf-8" defer></script>
+    <script src="/js/lazyload.min.js" charset="utf-8"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        threshold: 150,
+      })
+    </script>
   </body>
 
 </html>
