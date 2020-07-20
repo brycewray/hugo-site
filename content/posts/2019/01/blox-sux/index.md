@@ -33,7 +33,7 @@ That consideration aside, said Godforsaken Unidentified Page Builder, hereafter 
 
 - **Shortcode spray**—GUPB is one of those page builders that, if deactivated in favor of a better option, leaves behind a <em>\[bleep\]</em>ton of shortcode that is (a.)&nbsp;absolutely useless and (b.)&nbsp;a tedious chore to clean up. The following screen capture from [Pippin Williamson’s excellent “WordPress page builder plugins: A critical review”](https://pippinsplugins.com/wordpress-page-builder-plugins-critical-review/) is a perfect example, even though it shows only a  fraction of some of the shortcodes mess that’s really likely to result *(and, yeah, that is from GUPB, as it turns out; so, if you’re willing to do a little detective work and/or you simply know your page builder shortcodes when you see ’em, you now know which page builder is GUPB)*.
 
-<img class="imgCover" src="/images/screen-cap-from-Pippin-Williamson-s-page-builders-review.png" alt="Screen capture showing shortcodes from a WordPress page builder" />
+{{< img src="screen-cap-from-Pippin-Williamson-s-page-builders-review.png" alt="Screen capture showing shortcodes from a WordPress page builder" >}}
 
 My having once specifically replaced GUPB in favor of another pagebuilder at a different company for precisely these reasons (well, except for code bloat, because they *all* do that) doesn’t make it any easier.
 
