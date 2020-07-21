@@ -1,13 +1,24 @@
-<!--
-  Shamelessly stolen from https://laurakalbag.com/processing-responsive-images-with-hugo/
-  as it was on 2020-07-19
--->
+{{/*
+  Shamelessly stolen from 
+  https://raw.githubusercontent.com/stereobooster/dev.wtf/master/layouts/shortcodes/img.html
+  as it was on 2020-07-21
+  ... EXCEPT ...
+  ... as comment from https://dev.to/dmayo2/comment/k7fc points out,
+  it needs "the update of {{ .Get $medium }} to {{ .Get (print $medium) }} since Hugo 0.59+."
+*/}}
 
+{{/*
+  - https://laurakalbag.com/processing-responsive-images-with-hugo/
+  - https://mwellner.de/en/2018/10/30/image-handling-with-hugo/
+  - https://kodify.net/hugo/functions/imageconfig-function/
+  - https://addyosmani.com/blog/lazy-loading/
+*/}}
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
+{{ $lqipw := default "20x" }}
 {{ $tinyw := default "500x" }}
 {{ $smallw := default "800x" }}
 {{ $mediumw := default "1200x" }}
@@ -15,20 +26,64 @@
 
 {{/* resize the src image to the given sizes */}}
 
-{{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
-{{ .Scratch.Set "small" ($src.Resize $smallw) }}
-{{ .Scratch.Set "medium" ($src.Resize $mediumw) }}
-{{ .Scratch.Set "large" ($src.Resize $largew) }}
-
-{{/* add the processed images to the scratch */}}
-
-{{ $tiny := .Scratch.Get "tiny" }}
-{{ $small := .Scratch.Get "small" }}
-{{ $medium := .Scratch.Get "medium" }}
-{{ $large := .Scratch.Get "large" }}
+{{ $lqip := $src.Resize $lqipw }}
+{{ $tiny := $src.Resize $tinyw }}
+{{ $small := $src.Resize $smallw }}
+{{ $medium := $src.Resize $mediumw }}
+{{ $large := $src.Resize $largew }}
 
 {{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
-<img class="lazy" {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
-  srcset='{{ if ge $src.Width "500" }}{{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}{{ end }}{{ if ge $src.Width "800" }}{{ with $small.RelPermalink }}, {{.}} 800w{{ end }}{{ end }}{{ if ge $src.Width "1200" }}{{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}{{ end }}{{ if ge $src.Width "1500" }}{{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}{{ end }}' {{ if .Get (print $medium) }} src="{{ $medium.RelPermalink }}" {{ else }} src="{{ $src.RelPermalink }}" {{ end }} {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }} />
+{{ $img := imageConfig ($src.RelPermalink | printf "content/%s" ) }}
+
+<div class="img" style="background: url(data:image/jpeg;base64,{{ $lqip.Content | base64Encode  }}); background-size: cover;">
+  <img
+    class="lazy"
+    data-sizes="auto"
+    data-srcset='
+    {{ if ge $src.Width "500" }}
+      {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
+    {{ end }}
+    {{ if ge $src.Width "800" }}
+      {{ with $small.RelPermalink }}, {{.}} 800w{{ end }}
+    {{ end }}
+    {{ if ge $src.Width "1200" }}
+      {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
+    {{ end }}
+    {{ if ge $src.Width "1500" }}
+      {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
+    {{ end }}'
+    {{ if .Get (print $medium) }}
+      data-src="{{ $medium.RelPermalink }}"
+    {{ else }}
+      data-src="{{ $src.RelPermalink }}"
+    {{ end }}
+    width="{{ $img.Width }}" height="{{ $img.Height }}"
+    {{ with .Get "alt" }}alt='{{.}}'{{ end }}>
+  <noscript>
+    <img
+      loading="lazy"
+      {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}{{ end }}
+      srcset='
+      {{ if ge $src.Width "500" }}
+        {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "800" }}
+        {{ with $small.RelPermalink }}, {{.}} 800w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1200" }}
+        {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
+      {{ end }}
+      {{ if ge $src.Width "1500" }}
+        {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
+      {{ end }}'
+      {{ if .Get (print $medium) }}
+        src="{{ $medium.RelPermalink }}"
+      {{ else }}
+        src="{{ $src.RelPermalink }}"
+      {{ end }}
+      width="{{ $img.Width }}" height="{{ $img.Height }}"
+      {{ with .Get "alt" }}alt='{{.}}'{{ end }}>
+  </noscript>
+</div>
