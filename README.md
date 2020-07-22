@@ -16,7 +16,7 @@ For Hugo users unused to dealing with JavaScript from [npm](https://npmjs.org) p
 
 - [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
 - Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
-- Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly from Laura Kalbag’s “[Processing Responsive Images with Hugo](https://laurakalbag.com/processing-responsive-images-with-hugo/).”
+- Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly (and adapted for later versions of Hugo) from Stereobooster’s “[Responsive images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9).”
 - [Webmentions](https://indieweb.org), enabled through `/assets/js/webmentions.js` (called in the dev process by `npm run start` or `npm run build`, both in the `package.json` file). This file is adapted from my real Eleventy/webpack repo&rsquo;s webmentions-handling code &mdash; for which you can thank superb articles and code by [Max Böck](https://mxb.dev/blog/using-webmentions-on-static-sites/) and [Sia Karamalegos](https://sia.codes/posts/webmentions-eleventy-in-depth/). Any flaws you find in my code are mine alone, of course.
 
 <hr />
