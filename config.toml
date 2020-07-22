@@ -12,10 +12,6 @@ Paginate = 5 #so five will appear on each page
     Author = "Bryce Wray"
     Description = "Bryce Wray’s Web site — observations, opinions, geekiness"
 
-    bodyName = "Public Sans" # variable font
-    codeName = "Roboto Mono"
-
-
 [markup]
     [markup.goldmark]
       [markup.goldmark.renderer]

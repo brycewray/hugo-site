@@ -61,10 +61,6 @@
     {{ $css := resources.Get "css/index.css" }}
     {{ $style := $css | resources.PostCSS }}
 
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family={{ .Site.Params.bodyName }}:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family={{ .Site.Params.bodyName }}:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family={{ .Site.Params.codeName }}&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family={{ .Site.Params.codeName }}&display=swap" rel="stylesheet">
     <link rel="preload" as="style" href="{{ $style.Permalink }}">
     <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>

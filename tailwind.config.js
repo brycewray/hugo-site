@@ -11,10 +11,6 @@ module.exports = {
       'lg': '1024px', // => @media (min-width: 1024px) { ... }
       'xl': '1280px', // => @media (min-width: 1280px) { ... }
     },
-    fontFamily: {
-      body: ['Public Sans', 'sans-serif'],
-      codefont: ['Roboto Mono', 'monospace'],
-    },
     extend: {
       screens: {
         'dark': {
