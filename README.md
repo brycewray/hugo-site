@@ -15,10 +15,7 @@ This is a starter set for the [Hugo](https://gohugo.io) [static site generator (
 
 ## What’s under the hood
 
-For Hugo users unused to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, this repo may not be your cup of tea, and that’s perfectly understandable. However, if you’re willing to take a trip to the npm Dark Side, it does offer some interesting add-on possibilities. (That said, Hugo’s single-binary, nearly-everything-out-of-the-box approach has served it well and is impressive.) In `package.json` you’ll find dependencies and scripts to allow the following:
-
-- [PostCSS](https://postcss.org).
-- [Tailwind CSS](https://tailwindcss.com).
+For Hugo users unused to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, this repo may not be your cup of tea, and that’s perfectly understandable. However, if you’re willing to take a trip to the npm Dark Side, it does offer some interesting add-on possibilities. (That said, Hugo’s single-binary, nearly-everything-out-of-the-box approach has served it well and is impressive.) In `package.json` you’ll find dependencies and scripts that make possible the use of [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
 
 In addition, there’s:
 
