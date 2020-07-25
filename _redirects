@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://agitated-leavitt-d77a5d.netlify.com/* https://brycewray.com/:splat 301!
