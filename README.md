@@ -17,8 +17,12 @@ This is a starter set for the [Hugo](https://gohugo.io) [static site generator (
 
 For Hugo users unused to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, this repo may not be your cup of tea, and that’s perfectly understandable. However, if you’re willing to take a trip to the npm Dark Side, it does offer some interesting add-on possibilities. (That said, Hugo’s single-binary, nearly-everything-out-of-the-box approach has served it well and is impressive.) In `package.json` you’ll find dependencies and scripts to allow the following:
 
-- [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
-- Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
+- [PostCSS](https://postcss.org).
+- [Tailwind CSS](https://tailwindcss.com).
+
+In addition, there’s:
+
+- Lazy-loading of in-body images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
 - Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly (and, where necessary, adapted for later versions of Hugo) from Stereobooster’s “[Responsive images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9)” and Strict Panda’s “[Using Image Processing to Load Images in Hugo](https://blog.strict-panda.com/post/image-processing-media-queries/).”
 
 
