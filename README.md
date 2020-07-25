@@ -7,7 +7,7 @@ This is a starter set for the [Hugo](https://gohugo.io) [static site generator (
 1. Clone this to a local repo.
 2. Make appropriate changes to `config.toml` to conform to your site’s parameters.
 3. Run `npm install` to load all the dependencies in `package.json`.
-4. Once you have [installed Hugo](https://gohugo.io/getting-started/installing/), run `hugo serve` from your terminal app. You can then view the site in [http://localhost:1313](http://localhost:1313) on your computer.
+4. Once you have [installed Hugo](https://gohugo.io/getting-started/installing/), run `npm run start` from your terminal app. You can then view the site in [http://localhost:1313](http://localhost:1313) on your computer.
 5. Read the sample posts and their Markdown files to see how everything works.
 6. Edit the content to make it your own!
 7. When ready, [deploy the site](https://gohugo.io/hosting-and-deployment/) to your chosen host.
