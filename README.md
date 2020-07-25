@@ -1,14 +1,17 @@
-# Repo for brycewray.com
+# Hugo starter set
 
-This is the repository from which a shortened, [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is built. Please note that this is just as an example; the **real** site is done in [Eleventy](https://11ty.dev).
+This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on my website at [brycewray.com](https://brycewray.com). Please note that this serves just as an example; my **real** site is done in [Eleventy](https://11ty.dev).
 
-## Not *(exactly)* a starter kit, but&nbsp;.&nbsp;.&nbsp;.
+## How to use
 
-While this isn&rsquo;t truly a starter version of the real site, you can use it that way since it includes only a small number of the original posts to give you ideas about how it all works: 
+1. Clone this to a local repo.
+2. Make appropriate changes to `config.toml` to conform to your site’s parameters.
+3. Run `npm install` to load all the dependencies in `package.json`.
+4. Once you have [installed Hugo](https://gohugo.io/getting-started/installing/), run `hugo serve` from your terminal app. You can then view the site in [http://localhost:1313](http://localhost:1313) on your computer.
+5. Read the sample posts and their Markdown files to see how everything works.
+6. Edit the content to make it your own!
+7. When ready, [deploy the site](https://gohugo.io/hosting-and-deployment/) to your chosen host.
 
-1. Clone it to a local repo.
-2. Make appropriate changes to `/data/metadata.json`.
-3. Delete the Markdown files from `/content/**/.*` and the images from `/static/images/` (well, maybe you should keep one or two of each around at the start, until you see how things work).
 
 ## What&rsquo;s under the hood
 
@@ -16,9 +19,8 @@ For Hugo users unused to dealing with JavaScript from [npm](https://npmjs.org) p
 
 - [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
 - Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
-- Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly (and adapted for later versions of Hugo) from Stereobooster’s “[Responsive images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9).”
-- [Webmentions](https://indieweb.org), enabled through `/assets/js/webmentions.js` (called in the dev process by `npm run start` or `npm run build`, both in the `package.json` file). This file is adapted from my real Eleventy/webpack repo&rsquo;s webmentions-handling code &mdash; for which you can thank superb articles and code by [Max Böck](https://mxb.dev/blog/using-webmentions-on-static-sites/) and [Sia Karamalegos](https://sia.codes/posts/webmentions-eleventy-in-depth/). Any flaws you find in my code are mine alone, of course.
+- Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly (and, where necessary, adapted for later versions of Hugo) from Stereobooster’s “[Responsive images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9)” and Strict Panda’s “[Using Image Processing to Load Images in Hugo](https://blog.strict-panda.com/post/image-processing-media-queries/).”
 
 <hr />
 
-For more information about the thinking behind this repo as well as a similar, [Gatsby](https://gatsbyjs.org)-generated version of the site, please refer to “[Different modes for different code](https://brycewray.com/posts/2020/04/different-modes-different-code).”
+**Note**: If you don’t care for dealing with JavaScript and [npm](https://npmjs.org) plugins and dependencies, you may be interested in another Hugo repo, [hugo_solo](https://github.com/brycewray/hugo_solo), which offers the same image processing **but** uses [SCSS](https://sass-lang.com/) [through Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) instead of Tailwind CSS and PostCSS.
