@@ -111,6 +111,7 @@ h5, .h5, h6, .h6 {
   height: 45vh;
   max-height: 45vh;
   overflow: hidden;
+  @apply bg-cover;
 }
 
 .height-post {

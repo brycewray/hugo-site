@@ -1,8 +1,41 @@
 {{ define "main" }}
 
-<div class="w-full height-hero">
-  <img src="{{ index .Params "featured_image" }}" alt="{{ index .Params "featured_image_alt" }}" class="imgCover" />
-</div>
+<style type="text/css">
+  {{ if .Params.featured_image }}
+   {{ with .Resources.GetMatch (.Params.featured_image) }}
+     {{ $extraSmall := .Resize "768x" }}
+     {{ $small := .Resize "992x" }}
+     {{ $medium := .Resize "1200x" }}
+     {{ $large := .Fill "1920x516 center"}}
+     
+     @media (max-width: 767px) {
+       .height-hero {
+         background-image: url('{{ $extraSmall.RelPermalink }}')
+       }
+     }
+ 
+     @media (min-width: 768px) {
+       .height-hero {
+         background-image: url('{{ $small.RelPermalink }}')
+       }
+     }
+ 
+     @media (min-width: 992px) {
+       .height-hero {
+         background-image: url('{{ $medium.RelPermalink }}')
+       }
+     }
+ 
+     @media (min-width: 1200px) {
+       .height-hero {
+         .background-image: url('{{ $large.RelPermalink }}')
+       }
+     }
+   {{ end }}
+ {{ end }}
+ </style>
+ 
+<div class="w-full height-hero"></div>
 {{ if index .Params "featured_image_caption" }}
 <p class="text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" }}</p>
 {{ end }}
@@ -19,9 +52,9 @@
         <h2 class="h4 not-italic tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="font-bold text-base mt-2 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
         <p class="text-xs tracking-normal mt-0 mb-1">
-          <time style="display: inline;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+          Published: <time style="display: inline;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
           {{ if .Params.Lastmod }}
-          &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time>
+          <br />Last modified: <time style="display: inline;" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
         {{ end }}
         </p>
         
