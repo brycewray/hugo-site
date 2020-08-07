@@ -9,3 +9,5 @@ node_modules
 /data
 /.vscode
 .npmrc
+# Local Netlify folder
+.netlify
