@@ -2,6 +2,10 @@
 
 This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on my website at [brycewray.com](https://brycewray.com). Please note that this serves just as an example; my **real** site is done in [Eleventy](https://11ty.dev).
 
+See the [online demo](https://hugo-site-css-grid.netlify.app/).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbf86fd7-5d17-4476-879d-8847b6213b50/deploy-status)](https://app.netlify.com/sites/hugo-site-css-grid/deploys)
+
 ## How to use
 
 1. Clone this to a local repo.
