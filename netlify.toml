@@ -1,7 +1,7 @@
-# Netlify instructions to make this work
+# Netlify instructions to control build
 
 [build]
-  command = "find . -name _gen -exec rm -rf {} + ; hugo --gc --minify"
+  command = "hugo --gc --minify"
   # from https://discourse.gohugo.io/t/hugo-build-error-with-gc-minify/20600/14
 
 [context.production.environment]
