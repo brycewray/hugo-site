@@ -12,7 +12,7 @@
     "dev:postcss": "postcss ./assets/css/index.css -d public/css/ --config ./postcss.config.js -w",
     "dev:hugo": "hugo server",
     "prod:postcss": "postcss ./assets/css/index.css -d public/css/ --config ./postcss.config.js -w",
-    "prod:hugo": "hugo --gc --minify",
+    "prod:hugo": "find . -name _gen -exec rm -rf {} + ; hugo --gc --minify",
     "testbuild:hugo": "hugo server --gc --minify"
   },
   "keywords": [],

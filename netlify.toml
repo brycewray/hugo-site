@@ -1,10 +1,10 @@
 # Netlify instructions to make this work
 
 [build]
-  command = "find . -name _gen -exec rm -rf {} + ; hugo --gc --minify"
+  # command = "find . -name _gen -exec rm -rf {} + ; hugo --gc --minify"
   # from https://discourse.gohugo.io/t/hugo-build-error-with-gc-minify/20600/14
 
 [context.production.environment]
-  HUGO_VERSION = "0.74.2" # substitute whichever version you prefer; this was as of 2020-08-07
-  HUGO_ENV = "production"
+  # HUGO_VERSION = "0.74.2" # substitute whichever version you prefer; this was as of 2020-08-07
+  # HUGO_ENV = "production"
   
