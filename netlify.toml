@@ -2,7 +2,7 @@
 
 [build]
   command = "hugo --gc --minify"
-  # from https://discourse.gohugo.io/t/hugo-build-error-with-gc-minify/20600/14
+  # see also https://discourse.gohugo.io/t/hugo-build-error-with-gc-minify/20600/14
 
 [context.production.environment]
   HUGO_VERSION = "0.74.2" # substitute whichever version you prefer; this was as of 2020-08-07
