@@ -1,0 +1,2 @@
+command = "find . -name _gen -exec rm -rf {} + ; hugo --gc --minify"
+# from https://discourse.gohugo.io/t/hugo-build-error-with-gc-minify/20600/14
