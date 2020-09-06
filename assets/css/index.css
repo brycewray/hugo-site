@@ -72,6 +72,18 @@ sup a, a.previous, a.next, .footnote-return {
   @apply border-b-0;
 }
 
+span.caption {
+  text-shadow: none;
+}
+
+span.caption a {
+  @apply text-blue-100 border-blue-100;
+}
+
+span.caption a:focus, span.caption a:hover, span caption a:active {
+  @apply text-gray-200 border-blue-100;
+}
+
 #nav-toggle:checked + #navMenu {
   @apply block;
 }

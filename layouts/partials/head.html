@@ -1,4 +1,3 @@
-
   <head>
     {{ hugo.Generator }}
     
@@ -28,16 +27,14 @@
 
     <!-- CSS from PostCSS -->
     {{ $css := resources.Get "css/index.css" }}
-    {{ $style := $css | resources.PostCSS }}
+    {{ $css := $css | resources.PostCSS (dict "inlineImports" true) }}
+    {{ if hugo.IsProduction }}
+      {{ $css = $css | minify }}
+    {{ end}}
 
-    <link rel="preload" as="style" href="{{ $style.Permalink }}">
-    <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
+    <link rel="preload" as="style" href="{{ $css.Permalink }}">
+    <link rel="stylesheet" href="{{ $css.Permalink }}" type="text/css">
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
     
-    <noscript>
-      <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
-      <meta name="twitter:widgets:theme" content="dark">
-      <meta name="twitter:widgets:link-color" content="#00bbff">
-    </noscript>
   </head>
   

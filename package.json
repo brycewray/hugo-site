@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "This is the Hugo version of the repo for https://brycewray.com.",
   "main": "postcss.config.js",
-  "scripts": {},
+  "scripts": {
+    "start": "hugo server",
+    "testbuild": "NODE_ENV=production hugo server",
+    "build": "NODE_ENV=production hugo"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

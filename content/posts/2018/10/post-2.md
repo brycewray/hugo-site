@@ -6,7 +6,9 @@ author: Your name goes here
 date: 2018-10-25T07:40:00 # This would be 7:40 (0740) AM UTC on Oct. 25, 2018
 lastmod: 2020-06-13T13:10:00 # Comment-out this line with a # if content is unchanged
 draft: false # Make it "true" if you don't want Hugo to "publish" yet
-featured_image: computer-1869236_1920x1440.jpg # Or whatever image you want to use
+featured_image: computer-1869236_3264x2448.jpg
+featured_image_width: 3264
+featured_image_height: 2448
 featured_image_alt: Backlit computer keyboard # Always include an ALT tag for accessibility
 featured_image_caption: "Image: Pixabay" # Quotation marks allow colons, semicolons, etc.
 ---
@@ -29,6 +31,6 @@ Text here.
 
 And here's an example of how to use the `img` shortcode in `/layouts/shortcodes` (note that the images must be in the same folder with the content, because of how Hugo bundles do image processing, so that's why the `src` references don't include a folder upfront):
 
-{{< img src="Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg" alt="Image from Apple Web site in 1999 showing graphic elements as text" >}}
+{{< imgc src="Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg" alt="Image from Apple website in 1999 showing graphic elements as text" width=1218 height=1296 >}}
 
 Closing text. That ends Post 2!
