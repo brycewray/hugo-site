@@ -1,3 +1,4 @@
+@import 'fonts.css';
 @import 'nav.css';
 @import 'chroma.css';
 
@@ -5,6 +6,7 @@
 @tailwind base;
 
 body {
+  @apply font-body; /* assigned in tailwind.config.js */
   font-feature-settings: "liga" 1;
 }
 #content {

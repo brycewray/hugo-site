@@ -6,7 +6,7 @@
   "scripts": {
     "start": "hugo server",
     "testbuild": "NODE_ENV=production hugo server",
-    "build": "NODE_ENV=production hugo"
+    "build": "NODE_ENV=production hugo --gc --minify"
   },
   "keywords": [],
   "author": "",

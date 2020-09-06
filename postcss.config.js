@@ -1,5 +1,6 @@
 const postcssImport = require('postcss-import')
 const postcssNesting = require('postcss-nesting')
+const postcssClean = require('postcss-clean')
 
 module.exports = {
   plugins: [
@@ -9,5 +10,6 @@ module.exports = {
     }),
     require('tailwindcss'),
     postcssNesting({}),
+    postcssClean({})
   ],
 }

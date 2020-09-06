@@ -28,9 +28,6 @@
     <!-- CSS from PostCSS -->
     {{ $css := resources.Get "css/index.css" }}
     {{ $css := $css | resources.PostCSS (dict "inlineImports" true) }}
-    {{ if hugo.IsProduction }}
-      {{ $css = $css | minify }}
-    {{ end}}
 
     <link rel="preload" as="style" href="{{ $css.Permalink }}">
     <link rel="stylesheet" href="{{ $css.Permalink }}" type="text/css">
