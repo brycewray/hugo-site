@@ -37,10 +37,10 @@
         <h2 class="h4 not-italic tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="font-bold text-base mt-2 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
         <p class="text-xs tracking-normal mt-0 mb-1">
-          Published: <time style="display: inline;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
-          {{ if .Params.Lastmod }}
-          <br />Last modified: <time style="display: inline;" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
-        {{ end }}
+          Published: {{ .PublishDate.Format "January 2, 2006" }}<span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
+          {{- if ne .PublishDate .Lastmod }}
+          <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}<span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
+          {{- end }}
         </p>
         
         <p class="text-sm mt-2 mb-3">
