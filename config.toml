@@ -1,6 +1,6 @@
-#baseURL = "https://brycewray.com" # Change to your site URL and un-comment, of course
-languageCode = "en-us" # Change if not appropriate for your site
-title = "Site title goes here"
+baseURL = "https://brycewray.com"
+languageCode = "en-us"
+title = "BryceWray.com"
 
 summaryLength = 30 # words --- if you use summaries
 FootnoteReturnLinkContents = "&#8593;"
@@ -10,8 +10,8 @@ Paginate = 5 # so five posts will appear on each page from "/posts"
 
 [params]
     Domain = "brycewray.com"
-    Author = "Your name goes here"
-    Description = "Your site description goes here"
+    Author = "Bryce Wray"
+    Description = "Bryce Wray’s website | Observations, opinions, geekiness"
 
 [markup]
     [markup.goldmark]
