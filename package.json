@@ -10,7 +10,7 @@
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "prod:hugo": "hugo --gc --minify",
     "testbuild": "NODE_ENV=production npm-run-all clean --parallel testProd:*",
-    "testProd:hugo": "hugo server"
+    "testProd:hugo": "hugo server --minify"
   },
   "keywords": [],
   "author": "",
