@@ -1,6 +1,7 @@
 @import 'fonts.css';
 @import 'nav.css';
 @import 'chroma.css';
+@import 'webmentions.css';
 
 /* purgecss start ignore */
 @tailwind base;
