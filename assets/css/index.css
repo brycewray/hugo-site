@@ -307,11 +307,11 @@ blockquote {
 /* start, footnotes */
 
 .footnotes ol li, .footnotes p {
-  @apply text-xs leading-5;
+  @apply text-sm leading-5;
 }
 
 .footnotes ol li, .footnotes p {
-  @apply my-3;
+  @apply my-4;
 }
 
 a.footnote-backref {
