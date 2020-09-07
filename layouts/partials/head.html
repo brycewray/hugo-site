@@ -1,4 +1,4 @@
-  {{ $fallbackImg .= "typewriter-monochrome_2242164_6260x4374.jpg" }}
+  {{ $fallbackImg := "typewriter-monochrome_2242164_6260x4374.jpg" }}
   
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
@@ -29,7 +29,7 @@
     {{- if .IsHome }}
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta property="og:description" content="{{ .Site.Params.Description }}" />
-    <meta property="og:url" content="{{ .Site.BaseUrl }}" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
     {{- else }}
     <meta name="description" content="{{ .Params.Description }}">
     <meta property="og:description" content="{{ .Params.Description }}" />
@@ -41,8 +41,8 @@
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://res.cloudinary.com/brycewray-com/image/upload/c_fill,w_1024,h_512,q_auto,f_auto,x_0,z_1/{{ if .Params.Featured_image }}{{ .Params.Featured_Image }}{{ else }}{{ $fallbackImg }}{{ end }}" />
-    <meta name="twitter:description" content="{{-if .Params.Description }}{{ .Params.Description }}{{-else }}{{ .Site.Params.Description }}{{-end }}" />
-    <meta name="twitter:title" content="{{-if .Title }}{{ .Title }}{{-else }}{{ .Site.Title }}{{-end }}" />
+    <meta name="twitter:description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" /> 
 
     <!-- **** BEGINNING, favicons **** -->
 
