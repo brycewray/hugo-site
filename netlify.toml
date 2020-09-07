@@ -1,10 +1,8 @@
 # Netlify instructions to control build
 
 [build]
-  command = "hugo --gc --minify"
-  # see also https://discourse.gohugo.io/t/hugo-build-error-with-gc-minify/20600/14
+  command = "npm run build"
 
 [context.production.environment]
   HUGO_VERSION = "0.74.3" # substitute whichever version you prefer; this was as of 2020-08-07
   HUGO_ENV = "production"
-  
