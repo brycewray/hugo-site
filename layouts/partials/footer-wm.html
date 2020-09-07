@@ -24,7 +24,7 @@
             &nbsp;&nbsp;|&nbsp;&nbsp;{{ .Params.Description | markdownify }}
           {{ end }}
         </div>
-        <a class="u-url no-underline border-0 text-black dark:text-white tracking-normal" href="${data.page.url}">Published <time class="dt-published">{{ .PublishDate.Format "2006-01-02T15:04:05.000Z06:00" }}</time>
+        <a class="u-url no-underline border-0 text-black dark:text-white tracking-normal" href="${data.page.url}">Published <time class="dt-published">{{ .PublishDate.Format "2006-01-02T15:04:05.000Z00:00" }}</time>
         </a>
         <link rel="author" href="https://brycewray.com/" />
       </article>
