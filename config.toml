@@ -14,6 +14,8 @@ Paginate = 5 # so five posts will appear on each page from "/posts"
 
 [markup]
     [markup.goldmark]
+      [markup.goldmark.parser]
+        attribute = true
       [markup.goldmark.renderer]
         unsafe = true # only to allow for inline HTML and/or JS
     [markup.highlight]
