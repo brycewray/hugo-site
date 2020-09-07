@@ -34,6 +34,12 @@
     <link rel="preload" as="style" href="{{ $css.Permalink }}">
     <link rel="stylesheet" href="{{ $css.Permalink }}" type="text/css">
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
+
+    {{ if eq .Site.Params.Domain "brycewray.com" }}
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" excluded-domains="localhost" defer></script>
+    <!-- / Fathom -->
+    {{ end }}
     
   </head>
   
