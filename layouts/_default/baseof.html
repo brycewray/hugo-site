@@ -8,7 +8,11 @@
     <div id="content">
     {{- block "main" . }}{{- end }}
     </div>
+    {{ if eq .Params.title "Posts" }}
     {{ partial "footer.html" . }}
+    {{ else }}
+    {{ partial "footer-wm.html" . }}
+    {{ end }}
   </body>
 
 </html>

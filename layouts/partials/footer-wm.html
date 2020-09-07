@@ -12,5 +12,22 @@
     <p class="font-bold text-base tracking-tight mt-4 mb-2">Information for webmentions</p>
     <p class="inline-flex mt-0">{{ partial "svgFooterIcon.html" . }}</p>
     <p class="p-note text-xs leading-tight mt-0">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and&nbsp;opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
+    {{ if ne .Params.Title "Posts" }}
+      <p class="font-bold text-center text-sm mt-4 mb-0 tracking-tight">About this page</p>
+      <article class="h-entry text-xs leading-tight">
+        <div class="e-content p-name">
+          {{ .Params.Title }}
+          {{- if .Params.Subtitle }}
+            &nbsp;&nbsp;|&nbsp;&nbsp;{{ .Params.Subtitle | markdownify }}
+          {{ end }}
+          {{- if .Params.description }}
+            &nbsp;&nbsp;|&nbsp;&nbsp;{{ .Params.Description | markdownify }}
+          {{ end }}
+        </div>
+        <a class="u-url no-underline border-0 text-black dark:text-white tracking-normal" href="${data.page.url}">Published <time class="dt-published">{{ .PublishDate.Format "2006-01-02T15:04:05.000Z06:00" }}</time>
+        </a>
+        <link rel="author" href="https://brycewray.com/" />
+      </article>
+    {{ end }}
   </div>
 </footer>
