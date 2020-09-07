@@ -1,6 +1,6 @@
 <!--
   This shortcode takes the following form: 
-  imgc src, alt, width, height [,tmpl]
+  imgc src, alt, width, height
   ...with 'src' in the form of (note NO leading or ending slash):
   filename.font-ext
   ...and 'tmpl' optional in body copy. The template is used 
@@ -16,7 +16,6 @@
 {{ $alt := .Get "alt" }}
 {{ $width := .Get "width" }}
 {{ $height := .Get "height" }}
-{{ $tmpl := .Get "tmpl" }}
 
 {{ $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" }}
 <!-- replace $cloudiBase later with real thing -->
@@ -24,27 +23,10 @@
 {{ $xFmPart2 := ",x_0,z_1/" }}
 {{ $separator := ", " }}
 
-<!-- defaults, to be overridden if $tmpl is populated -->
 {{ $divClass := "relative" }}
 {{ $imgClass := "containedImage" }}
 {{ $nscClass := "containedImage" }}
 {{ $dataSzes := "(min-width: 1024px) 25vw, 100vw" }}
-<!-- end, defaults -->
-
-<!-- if $tmpl is populated -->
-{{ with (eq $tmpl "index") }}
-  {{ $divClass := "h-full gradient titles" }}
-  {{ $imgClass := "object-cover object-center h-full w-full containedImage" }}
-  {{ $nscClass := "imgCover hero" }}
-  {{ $dataSzes := "100vw" }}
-{{ end }}
-{{ with (eq $tmpl "posts") }}
-  {{ $divClass := "h-full gradient titles" }}
-  {{ $imgClass := "imgCover hero" }}
-  {{ $nscClass := "imgCover" }}
-  {{ $dataSzes := "100vw" }}
-{{ end }}
-<!-- end, if $tmpl is populated -->
 
 <div class='{{ $divClass }}' style='background-position: center; background-repeat: no-repeat; background-size: cover;'>
   <img
@@ -60,7 +42,7 @@
     {{ $cloudiBase }}f_auto,q_auto:eco,w_1200,x_0,z_1/{{ $src }} 1200w{{ end }}{{ if ge $width 1350 }}, 
     {{ $cloudiBase }}f_auto,q_auto:eco,w_1350,x_0,z_1/{{ $src }} 1350w{{ end }}{{ if ge $width 1500 }}, 
     {{ $cloudiBase }}f_auto,q_auto:eco,w_1500,x_0,z_1/{{ $src }} 1500w{{ end }}' alt='{{ $alt }}
-    ' width='{{ $width }}' height='{{ $height }}' {{ with (ne $divClass "h-full") }} loading="lazy"{{ end }}sizes="{{ $dataSzes }}"
+    ' width='{{ $width }}' height='{{ $height }}' loading="lazy" sizes="{{ $dataSzes }}"
   />
   <noscript>
     <img
