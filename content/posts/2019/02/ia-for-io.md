@@ -30,7 +30,7 @@ Perhaps more to the point, I believe I was more concerned about how the TOML (li
 
 ## Footnote follies
 
-{{< imgc src="iA-Writer-inline-footnotes_1548x582.jpg" alt="Screen capture from iA Writer software showing how footnotes look in it" width=1548 height=582 >}}
+{{< imgc src="iA-Writer-inline-footnotes_1548x582.jpg" alt="Screen capture from iA Writer software showing how footnotes look in it" width="1548" height="582" >}}
 
 That said, iA Writer's inline footnotes, while fine for export from iA Writer, don't fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs "think" when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.^["Inline notes are easier to write, since you don't have to pick an identifier and move down to type the note." See [here](https://github.com/Witiko/markdown/issues/3)---the source of that quote---for an example of what I mean.] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses---that is to say, all the ones I've included on [my other posts](/posts) before this one---work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
 

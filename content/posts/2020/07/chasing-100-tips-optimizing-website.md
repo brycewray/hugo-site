@@ -23,7 +23,7 @@ If you have your own website, chances are you like to make it work better for yo
 
 Of course, the Holy Grail looks like this:
 
-{{< imgc src="Lighthouse-CLI_2020-07-15-091833CDT_2268x492.png" alt="Screen capture from a Lighthouse CLI report showing perfect ”100” scores for “Performance,” “Accessibility,” “Best Practices,” and “SEO”" width=2268 height=492 >}}
+{{< imgc src="Lighthouse-CLI_2020-07-15-091833CDT_2268x492.png" alt="Screen capture from a Lighthouse CLI report showing perfect ”100” scores for “Performance,” “Accessibility,” “Best Practices,” and “SEO”" width="2268" height="492" >}}
 
 That's an authentic screen capture from my home page's [Lighthouse](https://developers.google.com/web/tools/lighthouse) profile as delivered from the [Lighthouse CLI tool](https://github.com/GoogleChrome/lighthouse#using-the-node-cli): perfect "100" scores for Performance, Accessibility, Best Practices, and Search Engine Optimization (SEO).
 
