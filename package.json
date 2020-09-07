@@ -1,5 +1,5 @@
 {
-  "name": "hugo_site_css-grid",
+  "name": "hugo_site",
   "version": "1.0.0",
   "description": "This is the Hugo version of the repo for https://brycewray.com.",
   "main": "postcss.config.js",
