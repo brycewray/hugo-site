@@ -34,3 +34,10 @@ Paginate = 5 # so five posts will appear on each page from "/posts"
         title = "This site’s posts"
         url = "/posts/"
         weight = 110
+
+    [[menu.main]]
+        identifier = "privacy"
+        name = "Privacy"
+        title = "This site’s privacy policy"
+        url = "/privacy/"
+        weight = 120
