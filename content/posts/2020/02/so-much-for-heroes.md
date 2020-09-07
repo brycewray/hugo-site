@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/evondue-4996403/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">evondue</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">Pixabay</a></span>
 ---
 
-**Update, 2020-05-17**: As you can plainly see above, I decided later to [reinstate the hero images](/posts/2020/05/thousand-words-indeed). Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.{.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-05-17</strong>: As you can plainly see above, I decided later to <a href="/posts/2020/05/thousand-words-indeed">reinstate the hero images</a>. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of <a href="/posts/2019/10/otoh">transparency</a>. In addition, you may find some value in the discussion herein concerning image processing.</p></div>
 
 Who needs heroes? Not this site, I've decided.
 

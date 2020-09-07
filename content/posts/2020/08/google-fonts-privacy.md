@@ -79,7 +79,7 @@ So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I ini
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 
-**Note, 2020-08-09**: This page originally mentioned my eschewing the "locally" served typefaces in favor of reverting to the "system fonts stack," but after sleeping on that choice I decided, nah, I prefer *this* look-and-feel, and its uniform appearance on all browsers, OSs, and devices; so it's back.{.yellowBox}
+<div class="yellowBox"><p><strong>Note, 2020-08-09</strong>: This page originally mentioned my eschewing the &ldquo;locally&rdquo; served typefaces in favor of reverting to the &ldquo;system fonts stack,&rdquo; but after sleeping on that choice I decided, nah, I prefer <em>this</em> look-and-feel, and its uniform appearance on all browsers, OSs, and devices; so it&rsquo;s back.</p></div>
 
 ## A little more cleaning-up
 

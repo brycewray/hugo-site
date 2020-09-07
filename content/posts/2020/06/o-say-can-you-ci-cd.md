@@ -44,7 +44,7 @@ You can do that through the right mix of plugins, but the quickest solution that
 
 Image processing during each build takes precious seconds (in my site's case, quite a few of them) so, regardless of whether your image processing approach is plugins-only, bespoke-only, or a mixture of the two, this will ramp up your build times.
 
-**Note, 2020-08-30**: I later solved *this* issue by [handing off image processing](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).{.yellowBox}
+<div class="yellowBox"><p><strong>Note, 2020-08-30</strong>: I later solved <em>this</em> issue by <a href="/posts/2020/07/transformed">handing off image processing</a> to <a href="https://cloudinary.com">Cloudinary</a>.</p></div>
 
 ### Webmentions
 
@@ -128,7 +128,6 @@ Yes, I know: *whew*. But it's all necessary. Quoting Mr. Pukaj once more:
 
 Store the following---call it `netlify-deploy.yml`, if you wish---in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions.
 
-{% raw %}
 ```yaml
 name: CI-Netlify
 
@@ -181,9 +180,8 @@ jobs:
           args: deploy --dir=_site --prod
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
 ```
-{% endraw %}
 
-**Note**: If you use this approach, you need to make sure you **don't** have your repo linked in Netlify for continuous deployment (in your site settings, that's **Build &amp; deploy** > **Continuous deployment**). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.{.yellowBox}
+<div class="yellowBox"><p><strong>Note</strong> If you use this approach, you need to make sure you <strong>don&rsquo;t</strong> have your repo linked in Netlify for continuous deployment (in your site settings, that&rsquo;s <strong>Build &amp; deploy</strong> &gt; <strong>Continuous deployment</strong>). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.</p></div>
 
 Here's how it works.
 

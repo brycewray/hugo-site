@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Arcaion-2057886/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Henryk Niestrój</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Pixabay</a></span>
 ---
 
-**Update, 2020-06-20**: As is my wont, [I later had second thoughts about this](/posts/2020/06/why-kept-ulysses), but I'll leave this here for the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-06-20</strong>: As is my wont, <a href="/posts/2020/06/why-kept-ulysses">I later had second thoughts about this</a>, but I&rsquo;ll leave this here for the sake of <a href="/posts/2019/10/otoh">transparency</a>.</p></div>
 
 Friends, we are gathered here on a solemn occasion. But, before I get to that, allow me to flesh out the title's background.
 

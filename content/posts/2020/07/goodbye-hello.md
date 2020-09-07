@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
 
-***Note**: As you'll learn at the end, this story is only Part 1 of what turns out to be an ongoing saga of sorts.* {.yellowBox}
+<div class="yellowBox"><p><em><strong>Note</strong>: As you&rsquo;ll learn at the end, this story is only Part&nbsp;1 of what turns out to be an ongoing saga of sorts.</em></p></div>
 
 Welcome to a story about an ending---and a beginning.
 
@@ -123,4 +123,4 @@ Thank you, Netlify, for twenty-one-and-a-half good and interesting months as my 
 
 And thank you, Vercel, for your warm welcome, and for the interesting journey on which we've embarked this week. I look forward to watching your already strong capabilities get even more impressive over time. Building upon the high performance of your platform, I hope to make this site a better place for nice folks to spend some time and learn a thing or two.
 
-**Note**: [To be continued](/posts/2020/07/goodbye-hello-part-2). {.yellowBox}
+<div class="yellowBox"><p><strong>Note</strong>: <a href="/posts/2020/07/goodbye-hello-part-2">To be continued</a>.</p></div>

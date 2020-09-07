@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@o5ky?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Oscar Sutton</a>; <a href="https://unsplash.com/s/photos/fast-speed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Note**: This originally took the form of an addendum to the original "[Goodbye and hello](/posts/2020/07/goodbye-hello)" post; but I soon realized this was the classic case of shooting at a moving target, so I decided to give each move its own post (using the appropriate addendum as the text), while leaving the original pretty much as it once was.{.yellowBox}
+<div class="yellowBox"><p><strong>Note</strong>: This originally took the form of an addendum to the original &ldquo;<a href="/posts/2020/07/goodbye-hello">Goodbye and hello</a>&rdquo; post; but I soon realized this was the classic case of shooting at a moving target, so I decided to give each move its own post (using the appropriate addendum as the text), while leaving the original pretty much as it once was.</p></div>
 
 Perhaps by now you've read how I [moved the site](/posts/2020/07/goodbye-hello-part-2) back to [Netlify](https://netlify.com), its long-time home, following the [initial move](/posts/2020/07/goodbye-hello) to [Vercel](https://vercel.com). If so, you know it was largely a sentimental decision, born out of my having missed being a part, even if a small one, of the Netlify community.
 
@@ -36,4 +36,4 @@ Why?
 
 So we'll see if I stick around this time. I hope this is not going to be the site-hosting equivalent of [last year's SSG "dance."](/posts/2019/12/sorta-strange-ssg-trip) And, if you're one of my few but highly appreciated regular visitors, I'm sure you share that hope.
 
-**Note**: [To be continued](/posts/2020/09/goodbye-hello-part-4) (sigh). {.yellowBox}
+<div class="yellowBox"><p><strong>Note</strong>: <a href="/posts/2020/09/goodbye-hello-part-4">To be continued</a> (sigh).</p></div>

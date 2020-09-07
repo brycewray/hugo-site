@@ -209,4 +209,4 @@ Finally, as a new user to each, I found Preside considerably more approachable, 
 
 It could be that, somewhere out there, somebody is secretly working on a truly MailMate-like iOS email app and, if so, there will be a small but extremely interested cadre of users ready to embrace it when it appears on the App Store. But, unless and until that occurs, Preside is the way to go.
 
-**Acknowledgment**: I'm extremely grateful to the members of the MailMate mailing list who responded to my recent request for their impressions of both AltaMail and Preside. I knew my use cases couldn't begin to match the experiences of *true* email power users, so I found their observations invaluable.{.yellowBox}
+<div class="yellowBox"><p><strong>Acknowledgment</strong>: I&rsquo;m extremely grateful to the members of the MailMate mailing list who responded to my recent request for their impressions of both AltaMail and Preside. I knew my use cases couldn&rsquo;t begin to match the experiences of <em>true</em> email power users, so I found their observations invaluable.<p></div>

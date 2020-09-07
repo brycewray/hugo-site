@@ -42,7 +42,7 @@ But, rather than rant aimlessly, let me show you some examples of sins against e
 
 {{< imgc src="Typography-scrimgc src=-cap-3-2018-10-16_1398x252.jpg" alt="More dim text that is hard to read" width=1398 height=252 >}}
 
-{{< imgc src="Typography-scr-capimgc src=-4-2018-10-16_1398x164.jpg" alt="Still more dim text that is hard to read" width=1398 height=164 % >}}
+{{< imgc src="Typography-scr-capimgc src=-4-2018-10-16_1398x164.jpg" alt="Still more dim text that is hard to read" width=1398 height=164 >}}
 
 We can do better, friends.
 

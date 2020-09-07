@@ -57,4 +57,4 @@ If you, too, would like to see that, please note that Mr. Lillie is interested i
 
 I hope that happens sooner rather than later. If it does, and if Mr. Lillie's docs are *half* as good as the documentation he put in his own code---wowzers.
 
-***Update, 2020-04-15***---Have now transitioned to full-.11ty.js templating ([details](/posts/2020/04/full-11ty-js-monty)). {.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-04-15</strong>&mdash;Have now transitioned to full-.11ty.js templating (<a href="/posts/2020/04/full-11ty-js-monty">details</a>).</p></div>

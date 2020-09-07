@@ -94,4 +94,4 @@ You see, Ulysses 20 is coming soon, and hints from the Ulysses team in Leipzig i
 
 With any luck at all, I---and a very-much-still-alive WIP---will be waiting eagerly for it when it arrives.
 
-**Update, 2020-06-20**: I decided to stay with the annual renewal past that additional two weeks, having made enough renewed progress on the WIP that I considered another year's worth of Ulysses a worthy investment.{.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-06-20</strong>: I decided to stay with the annual renewal past that additional two weeks, having made enough renewed progress on the WIP that I considered another year&rsquo;s worth of Ulysses a worthy investment.</p></div>

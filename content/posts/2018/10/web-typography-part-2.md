@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pexels</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pixabay</a></span>
 ---
 
-**Update, 2020-08-02**: Although the system fonts approach I describe in this post is still quite sensible in many cases, I later decided I preferred to give the site a standard appearance for all devices and OSs, and [still another later decision](/posts/2020/07/transformed) made me realize that personal preferences and convenience are worth the resulting potential drop in performance scores.{.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-08-02</strong>: Although the system fonts approach I describe in this post is still quite sensible in many cases, I later decided I preferred to give the site a standard appearance for all devices and OSs, and <a href="/posts/2020/07/transformed">still another later decision</a> made me realize that personal preferences and convenience are worth the resulting potential drop in performance scores.</p></div>
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on websites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 

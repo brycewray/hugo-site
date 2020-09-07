@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-***Update, 2020-08-09**: I posted this prior to my subsequent decisions to use non-system typefaces---[but **not** served from Google](/posts/2020/08/google-fonts-privacy)---and [hand off the site's image-handling to Cloudinary](/posts/2020/07/transformed). To me, each was more than worth the performance hit. (The screen capture below was from **before** those changes.)* {.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-08-09</strong>: I posted this prior to my subsequent decisions to use non-system typefaces&mdash;<a href="/posts/2020/08/google-fonts-privacy">but <strong>not</strong> served from Google</a>&mdash;and <a href="/posts/2020/07/transformed">hand off the site&rsquo;s image-handling to Cloudinary</a>. To me, each was more than worth the performance hit. <em>(The screen capture below was from <strong>before</strong> those changes.)</em></p></div>
 
 
 If you have your own website, chances are you like to make it work better for your visitors and, yes, show up higher in search engine ratings. Let's talk about how you can do that.
@@ -63,7 +63,7 @@ But I don't argue with the data, and one test after another has shown me web fon
 
 That's also turned out to be the case when I provide them "locally," as opposed to pulling them directly off (*e.g.*) [Google Fonts](https://fonts.google.com), even after trying a [variety](https://csswizardry.com/2020/05/the-fastest-google-fonts/) of [excellent](https://www.reich-consulting.net/web-development/loading-web-fonts-without-performance-penalty-from-lighthouse/) [advice](https://www.filamentgroup.com/lab/load-css-simpler/) from very smart folks. Consequently, I go with system fonts, however much I'd like to use [certain](https://fonts.google.com/specimen/Public+Sans?vfonly) [typefaces](https://fonts.google.com/specimen/Vollkorn?vfonly) I admire.
 
-**Update, 2020-08-08**: I've stricken through the remainder of this section, below, for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy) about the privacy violations involved with using Google Fonts typefaces if they're served *from* Google.{.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-08-08</strong>: I&rsquo;ve stricken through the remainder of this section, below, for reasons I explain in <a href="/posts/2020/08/google-fonts-privacy">another post</a> about the privacy violations involved with using Google Fonts typefaces if they&rsquo;re served <em>from</em> Google.</p></div>
 
 ~~If your response is "Damn the performance hit, full speed ahead with Google Fonts":~~
 

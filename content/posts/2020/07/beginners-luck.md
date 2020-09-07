@@ -74,4 +74,4 @@ Gatsby isn't the only SSG blessed with numerous starter sets out there for your 
 
 In any event, I hope that my new little efforts in this regard will help anyone who, as was true for me not all that long ago, is trying to find the path to a better website-management experience that I believe either Eleventy or Hugo will provide.
 
-**Update, 2020-08-07**: Each starter set now has its own online demo on Netlify, linked from its repo.{.yellowBox}
+<div class="yellowBox"><p><strong>Update, 2020-08-07</strong>: Each starter set now has its own online demo on Netlify, linked from its repo.</p></div>
