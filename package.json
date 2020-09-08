@@ -38,7 +38,7 @@
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.8.2"
+    "tailwindcss": "^1.8.5"
   },
   "engines": {
     "node": "10.x"
