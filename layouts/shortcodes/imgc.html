@@ -19,7 +19,7 @@
 
 {{ $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" }}
 <!-- replace $cloudiBase later with real thing -->
-{{ $xFmPart1 := "f_auto,q_auto:eco,w_" }}
+{{ $xFmPart1 := "f_auto,q_auto:eco,w_" }} <!-- can't use because the ':eco' triggers Go issues, even with `safeHTML`, `safeHTMLAttr`, etc. -->
 {{ $xFmPart2 := ",x_0,z_1/" }}
 {{ $separator := ", " }}
 
