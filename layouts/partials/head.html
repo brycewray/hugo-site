@@ -1,3 +1,6 @@
+  {{ $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" }}
+  {{ $xFmPart1 := "c_fill,w_1024,h_512," }}
+  {{ $xFmPart2 := "q_auto,f_auto,x_0,z_1/" }}
   {{ $fallbackImg := "typewriter-monochrome_2242164_6260x4374.jpg" }}
   
   <head>
@@ -23,7 +26,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:image" content="https://res.cloudinary.com/brycewray-com/image/upload/c_fill,w_1024,h_512,q_auto,f_auto,x_0,z_1/{{ if .Params.Featured_image }}{{ .Params.Featured_Image }}{{ else }}{{ $fallbackImg }}{{ end }}" />
+    <meta property="og:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ if .Params.Featured_image }}{{ .Params.Featured_Image }}{{ else }}{{ $fallbackImg }}{{ end }}" />
 
     {{- if .IsHome }}
     <meta name="description" content="{{ .Site.Params.Description }}">
@@ -39,7 +42,7 @@
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://res.cloudinary.com/brycewray-com/image/upload/c_fill,w_1024,h_512,q_auto,f_auto,x_0,z_1/{{ if .Params.Featured_image }}{{ .Params.Featured_Image }}{{ else }}{{ $fallbackImg }}{{ end }}" />
+    <meta name="twitter:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ if .Params.Featured_image }}{{ .Params.Featured_Image }}{{ else }}{{ $fallbackImg }}{{ end }}" />
     <meta name="twitter:description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
     <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" /> 
 
