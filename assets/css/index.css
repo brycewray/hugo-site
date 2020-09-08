@@ -45,10 +45,7 @@ pre, code {
 }
 
 .gradient-titles {
-  background: linear-gradient(
-    rgba(0,0,170,1.00),
-    rgba(0,0,0,1.00)
-  );
+  @apply bg-gradient-to-b from-blue-700 to-black;
 }
 
 .ctr {
