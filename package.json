@@ -8,11 +8,11 @@
     "start": "NODE_ENV=development npm-run-all clean --parallel dev:*",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "testbuild": "NODE_ENV=production npm-run-all clean --parallel testbuild:*",
-    "dev:wmFetch": "node -r dotenv/config assets/js/webmentions.js",
+    "dev:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
     "dev:hugo": "hugo server",
     "prod:wmFetch": "node assets/js/webmentions.js",
     "prod:hugo": "hugo --gc --minify",
-    "testbuild:wmFetch": "node -r dotenv/config assets/js/webmentions.js",
+    "testbuild:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
     "testbuild:hugo": "hugo server --gc --minify"
   },
   "keywords": [],
