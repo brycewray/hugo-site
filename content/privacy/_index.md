@@ -17,7 +17,7 @@ My site and I **don't** store your personal information---but, just in case I ne
 
 - This site **does NOT** store your personal information **in any way**. Period. That's thanks in part to its use of [Fathom Analytics](https://fathomanalytics.com) for analytics. 
 
-- The webmentions or other third-party comments that appear on certain pages occur only because the persons leaving them chose to do so in a public setting online. Such persons may at any time request deletion from this site of their third-party content, by sending an email to bw@brycewray.com.[^tweets]
+- The webmentions or other third-party comments that appear on certain pages occur only because the persons leaving them chose to do so in a public setting online. Such persons may at any time request deletion from this site of their third-party content, by sending an email to `bw@brycewray.com`.[^tweets]
 
 [^tweets]: In the case of past tweets that showed up as webmentions through my use of [webmention.io](https://webmention.io) and [Bridgy](https://brid.gy), I may have only a limited ability to delete them from my site, but will do what I can; you may also want to go back and delete the actual tweet.
 
