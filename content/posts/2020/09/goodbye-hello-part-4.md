@@ -6,7 +6,7 @@ subtitle: "The future is now, so to Render we go"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
 date: 2020-09-05T14:00:00
-#lastmod: Changed but same day -- 2020-09-05T18:15:00
+lastmod: 2020-09-09T12:25:00
 discussionId: "2020-09-goodbye-hello-4"
 featured_image: jeremy-thomas-E0AHdsENmDg-unsplash_5005x3417.jpg
 featured_image_width: 5005
@@ -43,5 +43,7 @@ Of course, as is now achingly clear, whether I will let it *stay* there remains 
 That said: at least as of this writing, I am optimistic. Unlike the other moves, this one wasn't followed by a vague sense of unease that, maybe, I should've waited a little longer before I placed my "bet" on this "horse."
 
 It may not win every single race but, boy, does it have great days ahead of it, and I think I want to be around as it gets to them.
+
+<div class="yellowBox"><p><strong>Note</strong>: Unfortunately, it turned out I hadn&rsquo;t done my due diligence, and so there&rsquo;s a&mdash;wait for it&mdash;<a href="/posts/2020/09/goodbye-hello-part-5">Part&nbsp;5</a>. (Arrgh.)</p></div>
 
 [^1]:	Because of how hobbled Netlify's free tier is when compared to the free tiers of Render and Vercel, the Netlify microsite never really was in the ballgame. It served more as a point of comparison than anything else. The same was true for another identical microsite that I briefly had on [Firebase](https://firebase.google.com) at the beginning of the testing. I pulled it from the test after it became clear it almost never would exceed last place, and definitely never eclipse third place out of the (then) four competing microsites. Whether that's because of Firebase's [previously noted](/posts/2020/07/goodbye-hello) lack of [Brotli compression](https://opensource.googleblog.com/2015/09/introducing-brotli-new-compression.html), I can't say.
