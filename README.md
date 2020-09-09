@@ -8,4 +8,4 @@ A **starter set** based on this repo’s design and code is in the works. As for
 
 - Hugo, of course.
 - [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
-- [Cloudinary](https://www.cloudinary.com)’s free tier for handling the site’s images, controlling their sizes, and working with my `lazypicture` shortcode to make them [responsive](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images).
+- [Cloudinary](https://www.cloudinary.com)’s free tier for handling the site’s images, controlling their sizes, and working with my `imgc` shortcode to make them [responsive](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images).
