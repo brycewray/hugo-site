@@ -1,6 +1,6 @@
 # Repo for brycewray.com
 
-This is the repository from which the [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is generated.
+This is the repository from which the [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is built.
 
 A **starter set** based on this repo’s design and code is in the works. As for this repo, I mainly suggest you use this repo **only for reference**.
 
