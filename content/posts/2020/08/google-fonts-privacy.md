@@ -59,7 +59,7 @@ Fortunately, I didn't stop researching the matter.
 
 ## Issue #1495
 
-What changed my mind was "[GDPR compliance](https://uxdesign.cc/a-privacy-concern-about-google-fonts-5aa4418bf87e)," Issue #1495 within the [Google Fonts repo](https://github.com/google/fonts) on GitHub.
+What changed my mind was "[GDPR compliance](https://github.com/google/fonts/issues/1495)," Issue #1495 within the [Google Fonts repo](https://github.com/google/fonts) on GitHub.
 
 Issue #1495, first filed a few weeks before the GDPR was to go into effect, was an attempt by developers to determine Google's official position regarding the impact by Google-served Google Fonts on a website's GDPR compliance. These devs hoped Google would provide a definitive statement about exactly what the corporation receives whenever someone visits a site where Google-served Google Fonts are in use.
 
