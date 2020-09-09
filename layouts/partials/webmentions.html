@@ -43,7 +43,7 @@
         <li class="mt-8">
           <article class="block h-cite">
             <div class="flex items-center flex-wrap">
-              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$reply.url}}" aria-label="{{ $reply.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $reply.author.photo}}" alt="{{ $reply.author.name }}"><strong class="p-name text-base">{{ $reply.author.name }}</strong></a>&nbsp;<span class="text-sm"><time class="webmention__pubdate dt-published" datetime="{{ $reply.published }}">{{ $reply.published | dateFormat "Jan 2, 2006 15:04:05 CST" }}</time></span>
+              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$reply.url}}" aria-label="{{ $reply.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $reply.author.photo}}" alt="{{ $reply.author.name }}"><strong class="p-name text-base">{{ $reply.author.name }}</strong></a>&nbsp;<span class="text-sm"><time class="webmention__pubdate dt-published" datetime="{{ $reply.published }}">{{ $reply.published | dateFormat "Jan 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span></time></span>
             </div>
             <div class="p-content text-base">
               {{ $reply.content.html | safeHTML }}
@@ -63,7 +63,7 @@
         <li class="mt-8">
           <article class="block h-cite">
             <div class="flex items-center flex-wrap">
-              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$mention.url}}" aria-label="{{ $mention.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $mention.author.photo}}" alt="{{ $mention.author.name }}"><strong class="p-name text-base">{{ $mention.author.name }}</strong></a>&nbsp;<span class="text-sm"><time class="webmention__pubdate dt-published" datetime="{{ $mention.published }}">{{ $mention.published | dateFormat "Jan 2, 2006 15:04:05 CST" }}</time></span>
+              <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="{{$mention.url}}" aria-label="{{ $mention.author.name }}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" src="{{ $mention.author.photo}}" alt="{{ $mention.author.name }}"><strong class="p-name text-base">{{ $mention.author.name }}</strong></a>&nbsp;<span class="text-sm"><time class="webmention__pubdate dt-published" datetime="{{ $mention.published }}">{{ $mention.published | dateFormat "Jan 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span></time></span>
             </div>
             <div class="p-content text-base">
               {{ $mention.content.html | safeHTML }}

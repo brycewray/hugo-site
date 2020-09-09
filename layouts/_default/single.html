@@ -41,10 +41,10 @@
         </h2>
         <p class="hidden not-italic md:block md:text-2xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{{ .Params.Description }}</p>
         <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
-          <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span><br />
+          <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><span style="font-variant: small-caps;">&nbsp;utc</span><br />
           <span class="text-sm">
           {{- if ne .PublishDate .Lastmod }}
-          <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ .Lastmod.Format "January 2, 2006" }}<span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
+          <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ .Lastmod.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>
           {{- else }}
           &nbsp;
           {{- end }}
