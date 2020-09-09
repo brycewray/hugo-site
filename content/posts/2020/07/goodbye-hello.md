@@ -6,7 +6,7 @@ subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T22:05:00
-lastmod: 2020-09-05T14:00:00
+lastmod: 2020-09-09T21:35:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: away-706464_4608x2592.jpg
 featured_image_width: 4608
@@ -66,6 +66,8 @@ First, it lacks Brotli and, if you do a search for "firebase brotli," you'll fin
 Second, CLI-based deployment is Firebase's *only* method. While that's fine from the desktop Mac (and, I admit, good and geeky fun at times), I sometimes want to [push a change from my iPhone or iPad](/posts/2019/07/roger-copy) with [Working Copy](https://workingcopyapp.com/).
 
 The only thing that kept Firebase in the evaluation process till nearly the end is that it's got the wicked-quick and ultra-consistent [Fastly](https://fastly.com) CDN in front of it. It half-tempted me to go back to my days of running sites off a $2.50/month [VPS](https://techterms.com/definition/vps) which I'd then put behind Fastly, but that's more trouble than I want to handle on a regular basis. Been there, done that.
+
+**Note, 2020-09-09**: Firebase [now supports Brotli](https://firebase.googleblog.com/2020/08/firebase-hosting-new-features.html); and using [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) (similar to [what I described here for Netlify](/posts/2020/06/o-say-can-you-ci-cd) can allow a more automated workflow with Firebase. Still, my continued testing shows it comes up a bit short against other considered options.
 
 ### Render
 
