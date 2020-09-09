@@ -5,7 +5,7 @@ module.exports = {
   },
   purge: {
     content: [
-      './layouts/**/*.html',
+      './themes/ofoti/layouts/**/*.html',
     ],
   },
   theme: {
