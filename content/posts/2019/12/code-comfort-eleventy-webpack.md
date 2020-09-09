@@ -6,7 +6,7 @@ subtitle: "Peeking inside this site"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray
 date: 2019-12-14T17:05:00
-lastmod: 2019-12-27T18:08:00
+lastmod: 2020-09-09T21:35:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 featured_image: code-1486361_5760x3840.jpg
 featured_image_width: 5760
@@ -16,17 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/markusspiske-670330/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486361">Markus Spiske</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486361">Pixabay</a></span>
 ---
 
-<div class="border-black border-solid yellowBox">
-	<p class="h3"><em>Updates</em></p>
-	<p class="h4">2019-12-27</p>
-	<p><a href="https://github.com/brycewray/eleventy_bundler">This site&rsquo;s GitHub repository</a> is <strong>now public</strong>! Thus, I am taking out the code blocks that <strong>were</strong> here, since otherwise they&rsquo;d constantly be outdated compared to the current repo; instead, I will link to the appropriate parts of the repo. And, um, don't make me regret making the repo public, OK, Internet? Pretty please?<br />
-	<em>[I&rsquo;ll keep the other updates in place, below, for archival purposes.]</em></p>
-  <p class="h4">2019-12-23</p>
-  <p>Updating to include in <code>.eleventy.js</code> the code from <a href="https://pascalw.me">Pascal Widdershoven</a> that makes possible, <a href="https://github.com/11ty/eleventy/issues/529">at long last</a>, a simple way to automate linking to previous and next posts from within a single-post template, about which I&rsquo;ll have a <a href="/posts/2019/12/previous-next-eleventy">short post</a> ASAP.</p>
-  <p class="h4">2019-12-20</p>
-  <p>I am updating this primarily to conform to some fixes I made a few days after the original version of the post.</p>
-  <p>One thing I had noted was that, during development mode, Eleventy&rsquo;s included <a href="https://www.browsersync.io">Browsersync</a> server was auto-refreshing the browser when I made <em>textual</em> changes, but not <em>CSS/SCSS</em> changes; for the latter, I&rsquo;d have to do a manual refresh. Not terrible; just annoying. I then tried using webpack&rsquo;s built-in server instead, but found the same issue as <a href="https://github.com/11ty/eleventy/issues/272#issuecomment-457368626">others</a>, which was that it didn&rsquo;t &ldquo;see&rdquo; Eleventy&rsquo;s changes without, yep, manual refresh. What I finally tried was installing the <a href="https://www.npmjs.com/package/browser-sync-webpack-plugin">Browsersync plugin for webpack</a>, then setting Eleventy just to <em>watch</em> and <strong>not</strong> serve during development mode. Once I did a little tinkering with settings, that did the trick. Now, with the setup I have below&mdash;noted in <code>webpack.dev.js</code> and <code>package.json</code>&mdash; I get full and <em>automatic</em> browser refresh during development mode when I edit either text or SCSS.</p>
-  <p>And, yes, it <em>was</em> worth the trouble. Trust me.</p>
+<div class="yellowBox">
+	<p><strong>Note, 2020-09-09</strong>: Although the site long since is no longer using the stack mentioned here, at least some parts of the repo <a href="https://github.com/brycewray/eleventy_bundler" target="_blank" rel="noopener">remain online for viewing by the curious</a>.</p>
 </div>
 
 *Following up on my [recent post](/posts/2019/12/packing-up) about how I got this site back to my favorite [static site generator](https://staticgen.com) (SSG), [Eleventy](https://11ty.dev), and also provided some enhancements with the [webpack](https://webpack.js.org) bundler&nbsp;app&nbsp;.&nbsp;.&nbsp;.*

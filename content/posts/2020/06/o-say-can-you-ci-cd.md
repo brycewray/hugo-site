@@ -44,7 +44,7 @@ You can do that through the right mix of plugins, but the quickest solution that
 
 Image processing during each build takes precious seconds (in my site's case, quite a few of them) so, regardless of whether your image processing approach is plugins-only, bespoke-only, or a mixture of the two, this will ramp up your build times.
 
-<div class="yellowBox"><p><strong>Note, 2020-08-30</strong>: I later solved <em>this</em> issue by <a href="/posts/2020/07/transformed">handing off image processing</a> to <a href="https://cloudinary.com">Cloudinary</a>.</p></div>
+<div class="yellowBox"><p><strong>Note, 2020-08-30</strong>: I later solved <em>this</em> issue by <a href="/posts/2020/07/transformed">handing off image processing</a> to <a href="https://cloudinary.com" target="_blank" rel="noopener">Cloudinary</a>.</p></div>
 
 ### Webmentions
 
