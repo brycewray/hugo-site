@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/YouComMedia-907282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">YouComMedia</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">Pixabay</a></span>
 ---
 
-<div class="yellowBox"><p><strong>Note</strong>: This originally took the form of an addendum to the original &ldquo;<a href="/posts/2020/07/goodbye-hello">Goodbye and hello</a>&rsquo; post; but I soon realized this was the classic case of shooting at a moving target, so I decided to give each move its own post (using the appropriate addendum as the text), while leaving the original pretty much as it once was.</p></div>
+<div class="yellowBox"><p><strong>Note</strong>: This originally took the form of an addendum to the original &ldquo;<a href="/posts/2020/07/goodbye-hello">Goodbye and hello</a>&rdquo; post; but I soon realized this was the classic case of shooting at a moving target, so I decided to give each move its own post (using the appropriate addendum as the text), while leaving the original pretty much as it once was.</p></div>
 
 In case you haven't yet seen "[Transformed](/posts/2020/07/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 

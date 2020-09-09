@@ -67,7 +67,7 @@ Second, CLI-based deployment is Firebase's *only* method. While that's fine from
 
 The only thing that kept Firebase in the evaluation process till nearly the end is that it's got the wicked-quick and ultra-consistent [Fastly](https://fastly.com) CDN in front of it. It half-tempted me to go back to my days of running sites off a $2.50/month [VPS](https://techterms.com/definition/vps) which I'd then put behind Fastly, but that's more trouble than I want to handle on a regular basis. Been there, done that.
 
-**Note, 2020-09-09**: Firebase [now supports Brotli](https://firebase.googleblog.com/2020/08/firebase-hosting-new-features.html); and using [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) (similar to [what I described here for Netlify](/posts/2020/06/o-say-can-you-ci-cd) can allow a more automated workflow with Firebase. Still, my continued testing shows it comes up a bit short against other considered options.
+<div class="yellowBox"><p><strong>Note, 2020-09-09</strong>: Firebase <a href="https://firebase.googleblog.com/2020/08/firebase-hosting-new-features.html" target="_blank" rel="noopener">now supports Brotli</a>; and using <a href="https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html" target="_blank" rel="noopener">CI/CD</a> (similar to [what I described here for Netlify](/posts/2020/06/o-say-can-you-ci-cd) can allow a more automated workflow with Firebase. Still, my continued testing shows it comes up a bit short against other considered options.</p></div>
 
 ### Render
 
