@@ -2,7 +2,7 @@
 
 This is the repository from which the [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is built.
 
-A **starter set** based on this repo’s design and code is in the works. As for this repo, I mainly suggest you use this repo **only for reference**.
+A **starter set** based on this repo’s design and code is in the works. As for this repo, I suggest you use it **only for reference**.
 
 ## What&rsquo;s under the hood
 
