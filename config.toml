@@ -1,4 +1,4 @@
-#baseURL = "https://brycewray.com"
+baseURL = "https://brycewray.com"
 languageCode = "en-us"
 title = "BryceWray.com"
 theme = "ofoti"
