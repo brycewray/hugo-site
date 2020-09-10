@@ -6,8 +6,8 @@
 /* purgecss start ignore */
 @tailwind base;
 
-body {
-  @apply font-body; /* assigned in tailwind.config.js */
+html, body {
+  @apply font-serif;
   font-feature-settings: "liga" 1;
 }
 #content {
