@@ -6,7 +6,7 @@ subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-10T01:05:00
-lastmod: 2020-08-11T17:40:00
+lastmod: 2020-09-11T21:35:00
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg
 featured_image_width: 5122
@@ -15,6 +15,8 @@ featured_image_alt: "Various sizes of type for a printing press"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030849">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030849">Pixabay</a></span>
 ---
+
+<div class="yellowBox"><p><strong>Note, 2020-09-11</strong>: Since this post&rsquo;s initial appearance, the site has adopted the <a href="https://rsms.me/inter/" target="_blank" rel="noreferrer">Inter</a> static font, replacing the <a href="https://public-sans.digital.gov/" target="_blank" rel="noreferrer">Public&nbsp;Sans</a> variable font mentioned herein. A&nbsp;non-problematic variable version of Inter <a href="https://thetrevorharmon.com/blog/how-to-prepare-and-use-variable-fonts-on-the-web" target="_blank" rel="noreferrer">remains&nbsp;elusive</a>.</p></div>
 
 Early in this site's history, I issued a post in [two](/posts/2018/10/web-typography-part-1) [parts](/posts/2018/10/web-typography-part-2) about web typography, a subject near and dear to my geeky heart. In the second part, I gave the reasons for styling your website with the so-called "system font stack"---a set of fonts of which at least one is almost certain to be native on a current device, thus assuring faster rendering of your site's textual content than if you force it to download other fonts.
 
@@ -30,9 +32,9 @@ But, hey, I'm here to help.
 
 Let me begin by giving you a brief intro to variable fonts.[^1]
 
-First, the web fonts you've typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let's say your site is using (as is this site's body copy) the Public Sans typeface, and a site page includes the following text and formatting:
+First, the web fonts you've typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let's say your site is using (as was this site's body copy at the time this post originally appeared) the Public Sans typeface, and a site page includes the following text and formatting:
 
-***Hello***, how *are* **you**?{.text-4xl .text-center}
+<p class="text-4xl text-center"><strong><em>Hello</em></strong>, how <em>are</em> <strong>you</strong>?</p>
 
 That would require the visitor's browser to access *four* Public Sans font files: one for the boldfaced regular "you"; another for the non-bold regular "how" and question mark; a third for the boldfaced/italicized "Hello"; and a fourth for the non-boldfaced italicized "are."
 
