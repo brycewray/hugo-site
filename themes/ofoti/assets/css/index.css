@@ -316,7 +316,7 @@ a.footnote-backref {
 }
 
 .footnotes pre, .footnotes code {
-  @apply text-xs;
+  @apply text-sm;
 }
 
 /* == end, footnotes */
