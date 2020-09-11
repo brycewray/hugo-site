@@ -6,14 +6,20 @@
   "scripts": {
     "clean": "rm -rf public",
     "start": "NODE_ENV=development npm-run-all clean --parallel dev:*",
+    "startIP": "NODE_ENV=development npm-run-all clean --parallel devIP:*",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "testbuild": "NODE_ENV=production npm-run-all clean --parallel testbuild:*",
+    "testbuildIP": "NODE_ENV=production npm-run-all clean --parallel testbuildIP:*",
     "dev:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
+    "devIP:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
     "dev:hugo": "hugo server",
+    "devIP:hugo": "hugo server --bind '192.168.254.10'",
     "prod:wmFetch": "node themes/ofoti/assets/js/webmentions.js",
     "prod:hugo": "hugo --gc --minify",
     "testbuild:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
-    "testbuild:hugo": "hugo server --gc --minify"
+    "testbuildIP:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
+    "testbuild:hugo": "hugo server --gc --minify",
+    "testbuildIP:hugo": "hugo server --gc --minify --bind '192.168.254.10'"
   },
   "keywords": [],
   "author": "",
