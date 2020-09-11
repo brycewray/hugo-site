@@ -1,4 +1,5 @@
-/* === Public Sans, VF === */
+/* === Inter, static until we can get a more-or-less final VF that isn't weird about italics === */
+/* === (see https://thetrevorharmon.com/blog/how-to-prepare-and-use-variable-fonts-on-the-web) === */
 /* latin */
 @font-face {
   font-family: 'Inter';
