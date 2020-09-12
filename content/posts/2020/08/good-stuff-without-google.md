@@ -6,7 +6,7 @@ subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-10T01:05:00
-lastmod: 2020-09-11T21:25:00
+lastmod: 2020-09-12T10:10:00
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg
 featured_image_width: 5122
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030849">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030849">Pixabay</a></span>
 ---
 
-<div class="yellowBox"><p><strong>Note, 2020-09-11</strong>: Since this post&rsquo;s initial appearance, the site has adopted the <a href="https://rsms.me/inter/" target="_blank" rel="noopener">Inter</a> static font, replacing the <a href="https://public-sans.digital.gov/" target="_blank" rel="noopener">Public&nbsp;Sans</a> variable font mentioned herein. A&nbsp;non-problematic variable version of Inter <a href="https://thetrevorharmon.com/blog/how-to-prepare-and-use-variable-fonts-on-the-web" target="_blank" rel="noopener">remains&nbsp;elusive</a>.</p></div>
+<div class="yellowBox"><p><strong>Note, 2020-09-12</strong>: Since this post&rsquo;s initial appearance, the site has adopted the <a href="https://rsms.me/inter/" target="_blank" rel="noopener">Inter</a> variable font, replacing the <a href="https://public-sans.digital.gov/" target="_blank" rel="noopener">Public&nbsp;Sans</a> variable font mentioned herein.</p></div>
 
 Early in this site's history, I issued a post in [two](/posts/2018/10/web-typography-part-1) [parts](/posts/2018/10/web-typography-part-2) about web typography, a subject near and dear to my geeky heart. In the second part, I gave the reasons for styling your website with the so-called "system font stack"---a set of fonts of which at least one is almost certain to be native on a current device, thus assuring faster rendering of your site's textual content than if you force it to download other fonts.
 
