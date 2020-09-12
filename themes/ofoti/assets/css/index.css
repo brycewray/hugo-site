@@ -13,6 +13,7 @@ i, cite, em, var, address, dfn, .italic {
 
 html, body {
   @apply font-serif;
+  font-weight: 450;
   font-feature-settings: "liga" 1;
 }
 
