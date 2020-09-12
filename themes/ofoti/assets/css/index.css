@@ -115,7 +115,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @apply text-2xl italic;
+  @apply text-2xl;
 }
 
 h4, .h4 {
