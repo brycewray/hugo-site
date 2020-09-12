@@ -63,6 +63,12 @@ code {
   background: #dfefff;
 }
 
+@media (prefers-color-scheme: dark) {
+  code {
+    @apply bg-gray-800;
+  }
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
