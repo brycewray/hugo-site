@@ -35,11 +35,7 @@
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>
         <h2 class="h4 not-italic tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-<<<<<<< HEAD
         <p class="font-bold text-base mt-1 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
-=======
-        <p class="italic font-bold text-base mt-1 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
->>>>>>> be0a87d00d80cd09f9fd813d41798d32d9f0a2c6
         <p class="text-xs tracking-normal mt-1 mb-0">
           Published: {{ .PublishDate.Format "January 2, 2006" }}<span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
           {{- if ne .PublishDate .Lastmod }}
