@@ -6,6 +6,7 @@
 /* purgecss start ignore */
 @tailwind base;
 
+<<<<<<< HEAD
 /* Safari 11+ */
 @media not all and (min-resolution:.001dpcm) {
   @supports (-webkit-appearance:none) and (stroke-color:transparent) {
@@ -20,9 +21,11 @@ i, cite, em, var, address, dfn, .italic, h3, .h3 {
   font-style: oblique 7deg !important;
 }
 
+=======
+>>>>>>> be0a87d00d80cd09f9fd813d41798d32d9f0a2c6
 html, body {
   @apply font-serif;
-  font-weight: 450;
+  font-weight: 400;
   font-feature-settings: "liga" 1;
 }
 
@@ -124,7 +127,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @apply text-2xl;
+  @apply text-2xl italic;
 }
 
 h4, .h4 {
