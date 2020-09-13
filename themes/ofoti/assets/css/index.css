@@ -21,7 +21,7 @@ i, cite, em, var, address, dfn, .italic, h3, .h3 {
 }
 
 html, body {
-  @apply font-serif;
+  @apply font-sans-serif;
   font-feature-settings: "liga" 1;
 }
 
