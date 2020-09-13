@@ -6,7 +6,16 @@
 /* purgecss start ignore */
 @tailwind base;
 
-i, cite, em, var, address, dfn, .italic {
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .italic { 
+        @apply not-italic !important;
+    }
+  }
+}
+
+i, cite, em, var, address, dfn, .italic, h3, .h3 {
   font-variation-settings: 'slnt' -7;
   font-style: oblique 7deg;
 }
