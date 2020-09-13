@@ -16,8 +16,8 @@
 }
 
 i, cite, em, var, address, dfn, .italic, h3, .h3 {
-  font-variation-settings: 'slnt' -7 !important;
-  font-style: oblique 7deg !important;
+  font-variation-settings: 'slnt' -7;
+  font-style: oblique 7deg;
 }
 
 html, body {
