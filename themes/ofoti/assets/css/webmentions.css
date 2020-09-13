@@ -79,17 +79,6 @@
   font-style: italic;
 }
 
-/* Safari 11+ */
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    .webmention__pubdate { 
-        font-style: normal;
-    }
-  }
-}
-
-
-
 .p-note {
   width: 90%;
   margin: 0 auto;

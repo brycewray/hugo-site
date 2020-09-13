@@ -6,23 +6,9 @@
 /* purgecss start ignore */
 @tailwind base;
 
-/* Safari 11+ */
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    .italic { 
-        @apply not-italic !important;
-    }
-  }
-}
-
-i, cite, em, var, address, dfn, .italic, h3, .h3 {
-  font-variation-settings: 'slnt' -7;
-  font-style: oblique 7deg;
-}
-
 html, body {
   @apply font-serif;
-  font-weight: 450;
+  font-weight: 400;
   font-feature-settings: "liga" 1;
 }
 
@@ -124,7 +110,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @apply text-2xl;
+  @apply text-2xl italic;
 }
 
 h4, .h4 {
