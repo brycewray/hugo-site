@@ -22,7 +22,7 @@ i, cite, em, var, address, dfn, .italic, h3, .h3 {
 
 html, body {
   @apply font-serif;
-  font-weight: 450;
+  font-weight: 400;
   font-feature-settings: "liga" 1;
 }
 
