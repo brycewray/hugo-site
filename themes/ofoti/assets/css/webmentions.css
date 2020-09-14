@@ -76,9 +76,7 @@
 }
 
 .webmention__pubdate {
-  /* font-style: italic; */
-  font-variation-settings: 'slnt' -7;
-  font-style: oblique 7deg;
+  font-style: italic;
 }
 
 .p-note {

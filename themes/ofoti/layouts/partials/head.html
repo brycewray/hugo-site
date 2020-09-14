@@ -81,7 +81,8 @@
     {{ $css := resources.Get "css/index.css" }}
     {{ $css := $css | resources.PostCSS (dict "inlineImports" true) }}
 
-    <link rel="preload" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PublicSans-Italic-VF-2020-09-14_subset.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/PublicSans-Regular-VF-2020-09-14_subset.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
     <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
