@@ -5,7 +5,7 @@ title: "Two, but not terrible"
 subtitle: "Dual candles on the site’s cake"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray
-date: 2020-09-15T12:15:00 # 7:15 AM CDT
+date: 2020-09-15T11:20:00
 #lastmod
 discussionId: "2020-09-two-but-not-terrible"
 featured_image: sahin-sezer-dincer-YhoQj_EUi50-unsplash_5063x3375.jpg
@@ -18,9 +18,9 @@ featured_image_caption: |
 
 Here we are, two years in.
 
-Although the site's officially [first post](/posts/2018/09/hardy-press-wp-ssg-with-twist) is actually dated as a day earlier, in point of fact it was two years ago today---Saturday, September 15, 2018---that I first put *brycewray.com* on the web.
+Although the site's officially [first post](/posts/2018/09/hardy-press-wp-ssg-with-twist) is actually dated as a day earlier, in point of fact it was two years ago today---Saturday, September 15, 2018---that I first put brycewray.com on the web.
 
-That was a Day Job ago, a [new grandchild](/posts/2020/03/welcome-sweet-little-early-bird) ago, the [onset of a worldwide pandemic](/posts/2020/03/coherence-covid-19) ago, a "[dance](/posts/2019/12/sorta-strange-ssg-trip)" ago, and a "[lurch](/posts/2020/09/goodbye-hello-part-5)" ago.
+That was a Day Job ago, a [new grandchild](/posts/2020/03/welcome-sweet-little-early-bird) ago, a [worldwide pandemic](/posts/2020/03/coherence-covid-19) ago, a "[dance](/posts/2019/12/sorta-strange-ssg-trip)" ago, and a "[lurch](/posts/2020/09/goodbye-hello-part-5)" ago.
 
 The site's existence has allowed me to make new friends and acquaintances in amazing places I'll almost certainly never visit and fascinating fields of expertise in which I'll probably never be more than a curious newbie. I've been able to learn about stuff I didn't even know existed when the site first went live. And I've mostly had a ball doing all of that. I sincerely hope any of you who've spent some time here have enjoyed it, too.
 
