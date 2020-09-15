@@ -33,10 +33,12 @@
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta property="og:description" content="{{ .Site.Params.Description }}" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <link rel="canonical" href="{{ .Site.BaseURL }}" />
     {{- else }}
     <meta name="description" content="{{ .Params.Description }}">
     <meta property="og:description" content="{{ .Params.Description }}" />
-    <meta property="og:url" content="{{ .Params.Permalink }}" />
+    <meta property="og:url" content="{{ .Page.Permalink }}" />
+    <link rel="canonical" href="{{ .Page.Permalink }}" />
     {{- end }}
 
     <!-- Twitter meta -->
