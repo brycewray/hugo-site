@@ -10,14 +10,9 @@
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "testbuild": "NODE_ENV=production npm-run-all clean --parallel testbuild:*",
     "testbuildIP": "NODE_ENV=production npm-run-all clean --parallel testbuildIP:*",
-    "dev:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
-    "devIP:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
     "dev:hugo": "hugo server",
     "devIP:hugo": "hugo server --bind '192.168.254.10'",
-    "prod:wmFetch": "node themes/ofoti/assets/js/webmentions.js",
     "prod:hugo": "hugo --gc --minify",
-    "testbuild:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
-    "testbuildIP:wmFetch": "node -r dotenv/config themes/ofoti/assets/js/webmentions.js",
     "testbuild:hugo": "hugo server --gc --minify",
     "testbuildIP:hugo": "hugo server --gc --minify --bind '192.168.254.10'"
   },
@@ -27,14 +22,7 @@
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
-    "dot-env": "0.0.1",
-    "dotenv": "^8.2.0",
-    "get-json": "^1.0.1",
-    "jsonfile": "^6.0.1",
     "lazysizes": "^5.2.2",
-    "lodash": "^4.17.20",
-    "md5": "^2.3.0",
-    "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.32",
     "postcss-clean": "^1.1.0",
@@ -49,9 +37,5 @@
   "engines": {
     "node": "10.x"
   },
-  "devDependencies": {
-    "cross-env": "^7.0.2",
-    "from-env": "^1.1.4",
-    "luxon": "^1.25.0"
-  }
+  "devDependencies": {}
 }
