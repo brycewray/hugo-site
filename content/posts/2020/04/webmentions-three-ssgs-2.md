@@ -20,6 +20,8 @@ featured_image_caption: |
 
 <div class="yellowBox"><p><strong>Added note, 2020-07-26</strong>: I have now archived the various configuration files linked within this series within a <a href="https://github.com/brycewray/files-webmentions">GitHub repo</a> of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.</p></div>
 
+<div class="yellowBox"><p><strong>Added note, 2020-09-16</strong>: The site no longer uses webmentions.</p></div>
+
 Having covered the purpose of this series, the [IndieWeb](https://indieweb.org), and the general setup of webmentions in this series' [introduction](/posts/2020/04/webmentions-three-ssgs-1), we'll now get into details about implementing them in the [Eleventy](https://11ty.dev) SSG.
 
 For two reasons, we start with the [Eleventy repo](https://github.com/brycewray/eleventy_bundler). First, it's the repo that powered this site as of the time I wrote this.[^toSolo] Second, it's where I initially added webmentions in their barest form---only so-called "mentions"---and then, more recently, enhanced their appearances. I refer to it here only as the *Eleventy repo* rather than, as usual, the *Eleventy/[webpack](https://webpack.js.org) repo*, because the addition of webpack really had nothing whatsoever to do with this particular process.

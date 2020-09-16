@@ -20,6 +20,8 @@ featured_image_caption: |
 
 <div class="yellowBox"><p><strong>Added note, 2020-07-26</strong>: I have now archived the various configuration files linked within this series within a <a href="https://github.com/brycewray/files-webmentions" target="_blank" rel="noopener">GitHub repo</a> of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.</p></div>
 
+<div class="yellowBox"><p><strong>Added note, 2020-09-16</strong>: The site no longer uses webmentions.</p></div>
+
 In the [introduction](/posts/2020/04/webmentions-three-ssgs-1) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Now, here in Part 3, we'll talk about implementing them in the [Hugo](https://gohugo.io) SSG.
 
 Of the three repos, I worked on the [Hugo repo](https://github.com/brycewray/hugo_site_css-grid) before the [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid), because I figured (wrongly) that webmention-izing it to match the [Eleventy repo](https://github.com/brycewray/eleventy_bundler) would be more difficult than doing so for the Gatsby repo, so I wanted to get it over with. I based this assumption on the fact that both the Eleventy and Gatsby repos ran on [JavaScript](https://js.org), while the Hugo repo was overwhelmingly [Go](https://golang.org)-based.

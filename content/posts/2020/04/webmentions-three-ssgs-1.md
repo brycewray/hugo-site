@@ -20,6 +20,8 @@ featured_image_caption: |
 
 <div class="yellowBox"><p><strong>Added note, 2020-07-26</strong>: I have now archived the various configuration files linked within this series within a <a href="https://github.com/brycewray/files-webmentions">GitHub repo</a> of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.</p></div>
 
+<div class="yellowBox"><p><strong>Added note, 2020-09-16</strong>: The site no longer uses webmentions.</p></div>
+
 It's an [often-misattributed](https://www.artsy.net/article/artsy-editorial-four-iconic-quotes-artists) phrase: "Good artists copy; great artists steal." Well, in the case of your faithful correspondent, here, it's more a case of "Great coders code; mediocre coders borrow shamelessly." But, if I didn't, I couldn't keep this site going, so shameless I shall continue to be.
 
 A few months ago, I first learned of the [IndieWeb](https://indieweb.org) movement and, more to the point, [webmentions](https://indieweb.org/Webmention). In case you're new to this stuff, too, the idea behind webmentions is that people should own their own web content because it's unwise to depend on third parties---even apparently financially healthy ones---to keep that content safe for the future. Having your own personal website is part of that idea, but having webmention functionality *on* that site is another major puzzle piece.
