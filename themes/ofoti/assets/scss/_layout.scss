@@ -1,0 +1,512 @@
+#content, main {
+  padding-top: 40px;
+}
+
+#content .topOfMain, main .topOfMain {
+  margin-top: 0.5em;
+}
+
+.text-sans-serif {
+  font-family: $sans-serif;
+}
+
+.text-nowrap, .nobrk {
+  white-space: nowrap;
+}
+
+.text-link {
+  color: $blue;
+}
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: $darkblue;
+}
+
+.text-muted {
+  color: $grey-1;
+}
+
+.text-body {
+  color: $default-color;
+}
+
+footer {
+  text-align: center;
+  font-size: $legal + unquote("em");
+  margin: 4em auto 0 auto; // top margin keeps "Comments" item from infringing on this in small-device view
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  p {
+    line-height: 1.5em;
+  }
+  @media (min-width: 900px) {
+    margin: 2em auto 0 auto;
+    padding-bottom: 1em;
+    width: 50%;
+  }
+}
+
+figure, .figure {
+  margin: 0 auto;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+figure.figurebox {
+  padding: 0.5em;
+}
+
+figcaption {
+  font-size: $legal + unquote("em");
+  color: $grey-1;
+  padding-top: 1em;
+  text-align: center !important;
+}
+
+h3.twitter-border {
+  margin: 1em 0;
+  padding: 0.5em 0 0 0;
+  border-top: 2px solid $blue;
+  a {
+    border-bottom: 0;
+  }
+}
+
+.imgCover {
+  object-fit: cover;
+  object-position: 50% 50%; // H = middle; V = middle
+  height: 100%;
+  width: 100%;
+}
+
+.hero-home {
+  background-color: #0088ff;
+  margin-bottom: 0;
+  overflow: hidden;
+  height: 45vh;
+  /* image supplied programmatically by template */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    height: 55vh;
+  }
+  @media screen and (min-width: 1025px) {
+    height: 65vh;
+  }
+  .imgCover { // just on the home page with that particular image
+    object-position: 50% 15%; // xH yV
+  }
+}
+
+.background-hero {
+  &-div {
+    background: linear-gradient(
+      rgba(0,0,170,1.00),
+      rgba(0,0,85,1.00)
+    );
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+    /* image supplied programmatically by template */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 75vh;
+    }
+    @media screen and (min-width: 1025px) {
+      height: 80vh;
+    }
+  }
+  &-image-div {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    max-height: 70vh;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 75vh;
+      max-height: 75vh;
+    }
+    @media screen and (min-width: 1025px) {
+      height: 80vh;
+      max-height: 80vh;
+    }
+  }
+  &-title-block-fit {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 1.00)
+    );
+  }
+  &-title-block {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 1.00)
+    );
+  }
+  &-title-text, &-subtitle-text, &-description-text {
+    color: #fff;
+    margin: 0 auto;
+    text-shadow: 4px 4px 2px #000;
+    text-align: center;
+    letter-spacing: -0.025em;
+    padding: 0.25em;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      text-align: left;
+      padding: 0 5%;
+    }
+    @media screen and (min-width: 1025px) {
+      text-align: left;
+      padding: 0 5% 0 10%;
+    }
+  }
+  &-title-text {
+    font-size: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 3.5em;
+    }
+    @media screen and (min-width: 1025px) {
+      font-size: 3.5em;
+    }
+  }
+  &-subtitle-text {
+    font-size: 1.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
+    font-style: italic;
+    @media screen and (min-width: 900px) {
+      font-size: 2.25em;
+    }
+  }
+  &-description-text {
+    display: none; // appears only on wider screens
+    @media screen and (min-width: 900px) {
+      display: block;
+      font-weight: bold;
+      padding-top: 0.25em;
+      padding-right: 15%;
+      font-size: 1.25em;
+    }
+  }
+  &-p-text {
+    color: #fff;
+    text-shadow: 4px 4px 2px #000;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: right;
+      padding-right: 15%;
+    }
+  }
+}
+
+
+img.featured-image {
+  display: block;
+  width: 90%;
+  @media (min-width: 900px) {
+    width: 65%;
+  }
+  height: auto;
+  margin: 0 auto;
+  &-hero {
+    width: 100%;    
+  }
+}
+
+.featured-image-caption {
+  margin-top: 0.25em;
+  padding-bottom: 1.5em;
+  text-align: center !important;
+  font-size: $legal + unquote("em");
+  color: $grey-1;
+}
+
+table.leagues {
+	width: 90%;
+	margin: 1em auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+	@media (min-width: 900px) {
+		width: 60%;
+	}
+	td.col {
+		width: 50%;
+	}
+}
+
+table.noborders {
+  width: 100%;
+  @media (min-width: 900px){
+    width: 90%;
+  }
+  margin: 1.5em auto 1em auto;
+  border: 0;
+  border-collapse: collapse;
+
+  td {
+    text-align: left !important;
+    vertical-align: middle;
+    padding: 0.25em 0 0.25em 0.5em;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;  
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: #dfefff;
+  }
+
+  thead {
+    background-color: $darkblue;
+  }
+  
+  thead td {
+    color: #fff !important;
+    font-weight: bold;
+    font-family: $sans-serif;
+  }
+  
+  td.td70 {
+    width: 70%;
+    img {
+      display: block;
+      width: 50%;
+      max-width: 50%;
+      height: auto;
+    }
+  }
+  
+  td.td30 {
+    width: 30%;
+  }
+}
+
+img.postsFeatImg {
+  float: inherit;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  @media (min-width: 900px) {
+    float: right;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    width: 50%;
+    height: auto;
+  }
+}
+
+.sortabig {
+  font-size: $sortabig + unquote("em");
+}
+
+.bigger {
+  font-size: $bigger + unquote("em");
+}
+
+.container {
+  // width: 90%;
+  margin: 0 auto;
+  &-home {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    grid-gap: 0.25rem;
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 769px) {
+      width: 75%;
+      grid-template-columns: 60% 1fr;
+      grid-gap: 2rem;
+      padding-top: 0.5em;
+    }
+    .column-home {
+      img.containedImage {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media screen and (min-width: 769px) {
+        img.containedImage {
+          min-width: 95%;
+          width: 95%;
+        }
+      }
+    }
+  }
+  &-narrower {
+    margin: 1em auto 0 auto;
+		width: 80%;
+		table {
+			margin: 1em auto 0 auto;
+			width: 80%;
+    }
+    img.containedImage, figure {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    figure img {
+      width: 100%;
+    }
+
+    .yellowBox {
+      display: block;
+      background: #ffff88;
+      border: 1px solid #333;
+      margin: 0.5em auto;
+      width: 95%;
+      padding: 0 1em 0 0;
+      p { 
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em;
+      }
+    }
+
+    .twitter-tweet {
+      margin: 1em auto 0 auto;
+    }
+
+    @media screen and (min-width: 1025px) {
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, .twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight, figcaption {
+				margin: 1em auto 0 auto;
+				width: 50%;
+      }
+      
+      .yellowBox {
+        width: 48%;
+      }
+
+			.footnotes ol li {
+				margin: 1em auto 0 auto;
+				padding-left: 0em;
+				padding-right: 2em;
+			}
+
+			ul .highlight, ol .highlight {
+				width: 100%; // within that element
+			}
+
+			li ul, li ol {
+				margin: 0.25em auto 0 auto;
+				width: 85%;
+				padding-right: 2em;
+				padding-left: 1.5em;
+			}
+			time {
+				display: block;
+				margin-top: 0.25em;
+      }
+
+      img.containedImage { /* for lower-res images */
+        width: 50%;
+      }
+      
+      .code-toolbar {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+  &-comments {
+    font-size: 85%;
+    width: 85%;
+    max-width: 720px !important;
+    margin-bottom: 3em;
+    @media (min-width: 900px) {
+      width: 50%;
+    }
+  }
+}
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  margin-top: 2em;
+  background-color: $darkblue !important;
+	padding: 0.15em 0 0.25em 0;
+  div, p {
+    color: #fff;
+	}
+	h3, p {
+		margin: 0;
+		padding: 0;
+	}
+  a, a.hover, a.focus {
+    color: #aaddff !important;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25em 0.5em;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+.talkyard-comments {
+  font-family: $sans-serif;
+}
+
+li p {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+.YTembed { /* container for iframe */
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gradient-titles {
+  background-image: linear-gradient(to bottom, var(--gradient-color-stops));
+  --gradient-from-color: #0000aa;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 170, 0));
+  --gradient-to-color: #000;
+}

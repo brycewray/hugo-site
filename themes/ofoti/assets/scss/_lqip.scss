@@ -1,0 +1,38 @@
+.lqipwrapper {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: #fff;
+    }
+  }
+}
+
+.frozen {
+  filter: blur(8px);
+  transform: scale(1.04);
+  animation: 0.2s ease-in 0.4s 1 forwards fade;
+  width: 100%;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

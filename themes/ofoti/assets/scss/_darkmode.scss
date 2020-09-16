@@ -1,0 +1,67 @@
+
+/* following is for dark mode where browsers respect this */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: $background-dark-mode;
+	}
+
+  body, .text-body, figcaption {
+    color: $default-color-dark-mode !important;
+  }
+
+  .text-muted, .text-sans-serif {
+    color: $grey-2-dark-mode !important;
+  }
+
+  a {
+    color: $blueLight;
+    border-bottom: 1px solid $blueFirst;
+  }
+
+  a:hover, a:focus, a:active {
+    color: $grey-2;
+    border-bottom: 1px solid $blueLight;
+  }
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: $default-color-dark-mode;
+  }
+
+  blockquote, .featured-image-caption {
+    color: $grey-2-dark-mode !important;
+  }
+
+  table.noborders tr {
+    background-color: $default-color-dark-mode;
+    color: $default-color;
+  }
+
+  table.noborders thead tr {
+    background-color: $darkblue;
+  }
+
+  .container {
+    &-narrower {
+      .yellowBox {
+        background: #332200;
+        border: 1px solid $grey-1;
+      }
+    }
+  }
+
+  footer {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(5, 0, 169, 1.00)
+    );  
+  }
+
+  code {
+    background: $code-bkgd-dark-mode;
+  }
+  
+  .u-url {
+    color: #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+  }
+}
