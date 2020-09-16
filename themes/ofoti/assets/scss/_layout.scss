@@ -337,6 +337,12 @@ img.postsFeatImg {
       padding-top: 0.5em;
     }
     .column-home {
+      article {
+        p {
+          font-size: 1.15em;
+          line-height: 1.6;
+        }
+      }
       img.containedImage {
         display: block;
         width: 100%;
@@ -345,12 +351,6 @@ img.postsFeatImg {
         height: auto;
         margin-right: auto;
         margin-left: auto;
-      }
-      @media screen and (min-width: 769px) {
-        img.containedImage {
-          min-width: 95%;
-          width: 95%;
-        }
       }
     }
   }
@@ -509,4 +509,27 @@ li p {
   --gradient-from-color: #0000aa;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 170, 0));
   --gradient-to-color: #000;
+}
+
+img.homeHeroImage {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.homePostSubtitle {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.homePostDates {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.homePostDescription {
+  margin-top: 0.5em;
 }
