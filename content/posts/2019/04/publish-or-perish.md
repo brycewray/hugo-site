@@ -14,18 +14,6 @@ featured_image_height: 3456
 featured_image_alt: Hand moving a computer mouse near a keyboard
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Pixabay</a></span>
-oldComments: |
-  <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
-      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
-    <p class="text-xs italic text-center">
-      (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
-    </p>
-    <p class="mt-6 mb-0 text-base"><strong>Andrew Canion</strong> <span class="italic text-sm">2019-06-18</span></p>
-    <p class="my-0 text-base leading-normal">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="noopener">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="noopener">helped another user on micro.blog</a>.</p>
-  
-    <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-06-18</span></p>
-    <p class="my-0 text-base leading-normal">Very glad I could help. Have fun with Hugo! I certainly do.</p>
-  </div>
 ---
 
 This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static website](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.
