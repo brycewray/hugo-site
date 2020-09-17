@@ -90,7 +90,11 @@ h3.twitter-border {
 }
 
 .hero-home {
-  background-color: #0088ff;
+  background: linear-gradient(
+    rgba(0,0,170,1.00),
+    rgba(0,0,85,1.00)
+  );
+  margin-top: 0;
   margin-bottom: 0;
   overflow: hidden;
   height: 45vh;
@@ -99,9 +103,6 @@ h3.twitter-border {
   }
   @media screen and (min-width: 1025px) {
     height: 65vh;
-  }
-  .imgCover {
-    object-position: 50% 15%; // xH yV
   }
 }
 
@@ -135,8 +136,8 @@ h3.twitter-border {
       max-height: 75vh;
     }
     @media screen and (min-width: 1025px) {
-      height: 80vh;
-      max-height: 80vh;
+      height: 95vh;
+      max-height: 95vh;
     }
   }
   &-title-block-fit {
@@ -170,11 +171,9 @@ h3.twitter-border {
     padding: 0.25em;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       text-align: left;
-      padding: 0 5%;
     }
     @media screen and (min-width: 1025px) {
       text-align: left;
-      padding: 0 5% 0 10%;
     }
   }
   &-title-text {
@@ -186,6 +185,7 @@ h3.twitter-border {
     }
     @media screen and (min-width: 1025px) {
       font-size: 3.5em;
+      padding-left: 5%;
     }
   }
   &-subtitle-text {
@@ -193,17 +193,25 @@ h3.twitter-border {
     padding-top: 0.25em;
     padding-bottom: 0.5em;
     font-style: italic;
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
       font-size: 2.25em;
+    }
+    @media screen and (min-width: 1025px) {
+      font-size: 2.25em;
+      padding-left: 5%;
     }
   }
   &-description-text {
     display: none; // appears only on wider screens
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 769px) {
       display: block;
       padding-top: 0.25em;
       padding-right: 15%;
       font-size: 1.25em;
+    }
+    @media screen and (min-width: 1025px) {
+      font-size: 1.5em;
+      padding-left: 5%;
     }
   }
   &-p-text {
@@ -212,7 +220,7 @@ h3.twitter-border {
     text-align: center;
     @media screen and (min-width: 1024px) {
       text-align: right;
-      padding-right: 15%;
+      padding-right: 5%;
     }
   }
 }
@@ -363,6 +371,12 @@ img.postsFeatImg {
 		table {
 			margin: 1em auto 0 auto;
 			width: 80%;
+    }    
+    article {
+      p {
+        font-size: 1.15em;
+        line-height: 1.6;
+      }
     }
     img.containedImage, figure {
       display: block;
