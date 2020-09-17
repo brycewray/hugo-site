@@ -1,31 +1,18 @@
 .chroma {
 	background-color: $chroma-bkgd;
 
-	code.language-html, 
-	code.language-css,
-	code.language-md,
-	code.language-cmd,
-	code.language-bash,
-	code.language-text,
-	code.language-js, 
-	span.o,
-	span.nx  {
+	code.language-html, code.language-css, code.language-md, code.language-cmd, code.language-bash, code.language-text, code.language-js, span.o, span.nx  {
 		color: black;
 	}
 	span.c {
 		color: $code-color;
 	}
 
-	span.p, 
-	span.s1,
-	span.s2,
-	span.nt {
+	span.p, span.s1, span.s2, span.nt {
 		color: $code-color-tan;
 	}
 
-	span.gs,
-	span.gh,
-	span.ge {
+	span.gs, span.gh, span.ge {
 		color: $blueFirst;
 	}
 
@@ -54,8 +41,7 @@ code {
 pre {
   margin: 0;
 	margin: 0;
-	padding: 1em; /* old browsers */
-	padding: 1rem;
+	padding: 1em;
 }
 
 pre code {
@@ -65,18 +51,11 @@ pre code {
   padding: 0;
 }
 
-/*
-pre code span {
-	color: $code-color-dark-mode !important;
-}
-*/
-
 .highlight {
   background-color: transparent;
   border-radius: 3px;
   line-height: 1.4;
-  margin: 0 0 0.5em; /* old browsers */
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.5em;
   padding: 0;
 
   pre {
@@ -87,8 +66,7 @@ pre code span {
   .lineno {
     color: $default-tint;
     display: inline-block; // Ensures the null space also isn't selectable
-    padding: 0 .75em 0 .25em; /* old browsers */
-    padding: 0 .75rem 0 .25rem;
+    padding: 0 .75em 0 .25em; 
     // Make sure numbers aren't selectable
     -webkit-user-select: none;
        -moz-user-select: none;

@@ -40,12 +40,15 @@ footer {
   p {
     line-height: 1.5em;
   }
+  div.footerWrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
   @media (min-width: 900px) {
     margin: 2em auto 0 auto;
     padding-bottom: 1em;
     div.footerWrapper {
       width: 50%;
-      margin: 0 auto;
     }
   }
 }
@@ -91,14 +94,13 @@ h3.twitter-border {
   margin-bottom: 0;
   overflow: hidden;
   height: 45vh;
-  /* image supplied programmatically by template */
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     height: 55vh;
   }
   @media screen and (min-width: 1025px) {
     height: 65vh;
   }
-  .imgCover { // just on the home page with that particular image
+  .imgCover {
     object-position: 50% 15%; // xH yV
   }
 }
@@ -115,7 +117,6 @@ h3.twitter-border {
     background-size: cover;
     position: relative;
     height: 70vh;
-    /* image supplied programmatically by template */
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       height: 75vh;
     }
@@ -200,7 +201,6 @@ h3.twitter-border {
     display: none; // appears only on wider screens
     @media screen and (min-width: 900px) {
       display: block;
-      font-weight: bold;
       padding-top: 0.25em;
       padding-right: 15%;
       font-size: 1.25em;
