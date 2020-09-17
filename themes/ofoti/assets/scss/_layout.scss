@@ -43,7 +43,10 @@ footer {
   @media (min-width: 900px) {
     margin: 2em auto 0 auto;
     padding-bottom: 1em;
-    width: 50%;
+    div.footerWrapper {
+      width: 50%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -532,4 +535,19 @@ img.homeHeroImage {
 
 .homePostDescription {
   margin-top: 0.5em;
+}
+
+span.caption {
+  color: #fff;
+  text-shadow: none;
+}
+
+span.caption a {
+  color: #bbeeff;
+  border-bottom: 1px solid #bbeeff;
+}
+
+span.caption a:focus, span.caption a:hover, span caption a:active {
+  color: #edf2f7;
+  border-bottom: #bbeeff;
 }
