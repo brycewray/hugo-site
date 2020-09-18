@@ -14,17 +14,6 @@ featured_image_height: 720
 featured_image_alt: Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/jchurch1977-1172969/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829805">jchurch1977</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829805">Pixabay</a>; edited in <a href="https://affinity.serif.com/en-us/photo/">Affinity Photo</a></span>
-oldComments: |
-  <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
-    <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
-    <p class="text-xs italic text-center">
-      (Imported from previous comments host, <a href="https://talkyard.io">Talkyard</a>.)
-    </p>
-
-    <p class="mt-6 mb-0 text-base"><strong>Cap Pike</strong> <span class="italic text-sm">2019-09-07</span></p>
-    <p class="my-0 text-base leading-normal">People that use Word that don't &quot;get&quot; styles and formatting in general are generally just annoying. Like people who drive that don't bother with turn signals.<br />
-      ...and then there's Excel...</p>
-  </div>
 ---
 
 *(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) &copy; Sony/ATV Music Publishing LLC.*)

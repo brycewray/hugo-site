@@ -13,37 +13,6 @@ featured_image_height: 2248
 featured_image_alt: A binocular telescope on a stand near a body of water
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/kisistvan77-8062321/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4143165">kisistvan77</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4143165">Pixabay</a></span>
-oldComments: |
-    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
-      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
-      <p class="text-xs italic text-center">
-        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
-      </p>
-      <p class="mt-6 mb-0 text-base"><strong>Magnus Lindberg</strong> <span class="italic text-sm">2019-09-30</span></p>
-      <p class="my-0 text-base leading-normal">Hi Bryce, I found a way to use both Git and cloud sync at the same time, for the same directory :- )<br />
-      I <em>exclude</em> the <code>.git</code> directory from the cloud sync &mdash; that's why this works. (Otherwise I think the Git repo would &quot;self destruct&quot; itself, when <code>.git</code> internal changes from one laptop, attempts to sync with changes from another laptop :- ))</p>
-      <p class="my-0 text-base leading-normal">I use Syncthing, here's my Syncthing config that excludes <code>.git</code> and other auto generated / downloaded things:</p>
-      <pre class="language-bash"><code class="language-bash">$ cat .stignore-synced 
-      // Add this single line to .stignore:
-      // #include .stignore-synced
-      .git/
-      node_modules/</code></pre>
-      <p class="my-0 text-base leading-normal">Actually, it's a bit more complicated:</p>
-      <pre class="language-bash"><code class="language-bash">sync-root/
-        project-X-laptop-A/
-          .git/  &lt;— ignored
-          project files ...
-        project-X-laptop-B/
-          .git/  &lt;— ignored
-          ...</code></pre>
-      <p class="my-0 text-base leading-normal">So, I have one synced root folder, and each laptop has its own sub folder, which is a Git repo with <code>.git/</code>excluded. And from laptop A, I work only in the <code>..-laptop-A</code> folder.  So as to not accidentally overwrite things I was working with on laptop B.</p>
-      <p class="my-0 text-base leading-normal">... And every few days I Git-merge/rebase changes the two directories onto each other.</p>
-      <p class="my-0 text-base leading-normal">Cheers</p>
-    
-      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-09-30</span></p>
-      <p class="my-0 text-base leading-normal">Very interesting! Will check into this.</p>
-      <p class="my-0 text-base leading-normal">(To other readers: this gentleman is the creator and developer of the Talkyard platform that powers these comments. If you have your own SSG-based site and need a way to provide comments, I highly recommend both Talkyard and this extremely helpful dev.)</p>
-    </div>
 ---
 
 <div class="border-black border-solid yellowBox">

@@ -14,27 +14,6 @@ featured_image_height: 3264
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/awsloley-3972173/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">awsloley</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">Pixabay</a></span>
-oldComments: |
-    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
-      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
-      <p class="text-xs italic text-center">
-        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
-      </p>
-      <p class="mt-6 mb-0 text-base"><strong>Chris Rosser</strong> <span class="italic text-sm">2019-09-08</span></p>
-      <p class="my-0 text-base leading-normal">Great post and very interesting. I hadn't heard of Eleventy before. That's one thing I love about using a static-site generator is how easy it is to change should you need to. I used several before I settled on Pelican. I briefly thought about changing to Hugo, but decided it against it once I read the docs.</p>
-    
-      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-09-09</span></p>
-      <p class="my-0 text-base leading-normal">Thank you. Yes, until Gatsby Experiment I, I&rsquo;d never heard of it, either, and at first I erroneously lumped it in with the others as not quite sufficient for my needs. Once I read its docs more thoroughly and got a better grasp of its extensibility, I realized I&rsquo;d missed the point entirely &mdash; as at least one triumphant Eleventy supporter reminded me yesterday after I released this post. :-)</p>
-    
-      <p class="mt-6 mb-0 text-base"><strong>Magnus Lindberg</strong> <span class="italic text-sm">2019-09-30</span></p>
-      <p class="my-0 text-base leading-normal">Thanks for this writeup about 11ty :- ) I'm about to create a blog for Talkyard, ... and found your article about 11ty when searching for 11ty versus Gatsby. To me, Gatsby is ... complicated. And with cryptic error messages that make my blood pressure rise. <span class="text-sm">(Maybe I'll want to use Gatsby for the main website, some time later, which might need complicated sliders and buttons and widgets, hmm.)</span></p>
-      <p class="my-0 text-base leading-normal">Nice to read that 11ty seems to be as simple as I originally expected all static gens to be :- )<br />
-      (I noticed you've since switched back to Hugo, however, for me, probably 11ty is better &mdash; I think I'll need Javascript plugins.)</p>
-      <p class="my-0 text-base leading-normal">Going to try this theme: <a href="https://hylia.website/posts/a-simple-post/" target="_blank" rel="noopener">https://hylia.website/posts/a-simple-post/</a></p>
-    
-      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-09-30</span></p>
-      <p class="my-0 text-base leading-normal">My continuing experimentation <strong>in the background</strong> (!) makes it increasingly clear that Gatsby is only for those who are thoroughly into React. Maybe someday I&rsquo;ll get it, but I&rsquo;m not holding my breath. But, yes, if your purposes are better served by a JS-based SSG, I emphatically recommend Eleventy. It is wonderfully easy to use and customize, especially if you have sufficient JS knowledge, and its build speed is surprisingly close to Hugo&rsquo;s, especially in league with Netlify.</p>
-    </div>
 ---
 
 <div class="border-black border-solid yellowBox">
