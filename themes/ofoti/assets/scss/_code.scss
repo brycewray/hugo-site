@@ -115,3 +115,9 @@ pre[class*="language-"] {
     font-size: 1.25em; /* undoing the above when necessary */
   }
 }
+
+p code, li code {
+  @media (prefers-color-scheme: dark) {
+    background-color: $code-bkgd-dark-mode;
+  }
+}
