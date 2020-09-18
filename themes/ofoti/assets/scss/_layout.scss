@@ -342,6 +342,7 @@ img.postsFeatImg {
   // width: 90%;
   margin: 0 auto;
   &-home {
+    display: -ms-grid;
     display: grid;
     margin: 0 auto;
     width: 90%;
