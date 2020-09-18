@@ -4,11 +4,6 @@ description: "How my vendors and I protect you on this site"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
 lastmod: 2020-09-16T01:50:00
-#featured_image:
-#featured_image_width:
-#featured_image_height:
-#featured_image_alt:
-#featured_image_caption:
 ---
 
 I could've done this with some long, drawn-out legalese borrowed from a website designed to *create* that legalese, but there was no need for it.
