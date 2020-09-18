@@ -90,18 +90,17 @@ td {
   vertical-align: top;
 }
 
-.footnotes {
-  font-size: $legal + unquote("em");
-  letter-spacing: normal;
-
-  ol li {
-    margin-bottom: 0.5em;
-  }
+sub, sup {
+  font-size: 65%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
-sup.footnote-ref {
-  font-size: $teeny + unquote("em");
+sup {
+  top: -0.5em;
 }
+
 
 a.footnote-return{
   font-size: 50%;

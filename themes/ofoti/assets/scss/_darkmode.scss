@@ -55,13 +55,13 @@
       rgba(5, 0, 169, 1.00)
     );  
   }
-
-  code {
-    background: $code-bkgd-dark-mode;
-  }
   
   .u-url {
     color: #ddd !important;
     border-bottom: 1px solid #ddd !important;
+  }
+
+  p code, li code {
+    background-color: $code-bkgd-dark-mode;
   }
 }

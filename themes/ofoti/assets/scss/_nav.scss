@@ -7,16 +7,16 @@ $breakpoint: 900px;
 
 header {
   height: 30px;
-  font-family: $sans-serif;
   width: 100%;
   background-color: $darkblue;
   position: fixed;
   padding: 0.5em 0;
   margin-top: 0;
-  z-index: 9999; // keeps YT videos from appearing over it, for one thing
+  z-index: 9999;
 }
 
 .nav {
+
   &__bar {
     background-color: $darkblue;
     padding-top: $nav-height;
@@ -214,6 +214,10 @@ nav {
   .nav-toggle-label {
     display: none;
   }
+
+  .nav__item {
+    font-size: 1.1em;
+  }
   
   header {
     display: table;
@@ -227,7 +231,7 @@ nav {
     display: grid-item;
     grid-column: 1 / 2;
     text-align: left;
-    padding-left: 1.5em;
+    padding-left: 10%;
     font-size: $minimalbig + unquote("em");
 }
 
@@ -235,21 +239,16 @@ nav {
     top: 25%;
     transform: none;
     margin-top: 0;
-    margin-left: 40%;
+    margin-left: 0%;
     display: table;
-    grid-column: 4 / 5;
+    // grid-column: 4 / 5;
     a {
       opacity: 1;
       position: relative;
     }
     ul {
-      margin: auto;
-      padding-right: 20%;
-      text-align: left; // fixes old browsers that don't understand media queries
-    }
-    li {
-      margin-left: 3em;
-      margin-bottom: 0;
+      padding-right: 3.5%;
+      text-align: right;
     }
   }
 }

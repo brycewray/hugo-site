@@ -31,12 +31,12 @@
     </article>    
   </div>
   <div class="column-home">
-    <h2 class="h1" style="margin-bottom: 0.25em;">Recent <a href="/posts/">posts</a></h2>
+    <h2 class="h1" style="margin-top: 0.65em; margin-bottom: 0.5em;">Recent <a href="/posts/">posts</a></h2>
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>
         <h2 class="h4 homePostTitle"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="homePostSubtitle">{{ .Params.Subtitle | markdownify }}</em></p>
-        <p class="pokey homePostDates">
+        <p class="legal homePostDates">
           Published: {{ .PublishDate.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>
           {{- if ne .PublishDate .Lastmod }}
           <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>

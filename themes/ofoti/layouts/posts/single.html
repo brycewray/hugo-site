@@ -1,7 +1,7 @@
 {{ define "main" }}
 
    <div class="background-hero-image-div">
-    <div class="gradient-titles" style="height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div class="gradient-titles" style="height: 100%; background-position: 50%; background-repeat: no-repeat; background-size: cover;">
       <img
         class='imgCover hero' 
         src='https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_600,x_0,z_1/{{ .Params.featured_image }}' 
@@ -42,9 +42,9 @@
         <p class="background-hero-description-text">{{ .Params.Description }}</p>
         <p class="background-hero-p-text">
           <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span><br />
-          <span class="text-sm">
+          <span class="pokey">
           {{- if ne .PublishDate .Lastmod }}
-          <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ .Lastmod.Format "January 2, 2006" }}<span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
+          <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ .Lastmod.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>
           {{- else }}
           &nbsp;
           {{- end }}
@@ -65,14 +65,14 @@
   
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark">
-      <h3 class="ctr wht"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
-			<p class="ctr">
+      <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
+			<p class="ctr prevnextP">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
 					<a class="next" href="{{.Permalink}}"> {{.Title}}</a>
 					{{ end }}
 			</p>
-			<p class="ctr">
+			<p class="ctr prevnextP">
 				{{ with .PrevInSection }}
 					<strong>Previous</strong>:
 					<a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
