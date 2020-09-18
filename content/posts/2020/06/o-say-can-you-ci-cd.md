@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "O say can you CI/CD?"
 subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."

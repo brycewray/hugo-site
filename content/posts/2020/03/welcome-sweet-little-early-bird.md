@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Welcome, sweet little early bird"
 subtitle: "Plans, schmans"
 description: "The new grandchild arrives, and on her own timeline."

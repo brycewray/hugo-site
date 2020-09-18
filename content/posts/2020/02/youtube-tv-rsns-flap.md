@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "YouTube TV and the RSNs flap"
 subtitle: "Is the pyramid near collapse?"
 description: "A tale of shrinking options for cord-cutters who love TV sports."

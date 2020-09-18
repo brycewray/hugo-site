@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Goodbye and hello • Part 2"
 subtitle: "Returning the site to Netlify"
 description: "Why I decided to come back."

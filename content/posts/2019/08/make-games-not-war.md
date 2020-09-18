@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Make games, not war
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."

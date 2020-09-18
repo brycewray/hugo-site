@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Getting framed
 subtitle: Why I still use Bootstrap
 description: "Reasons why one might still want to use a CSS framework."

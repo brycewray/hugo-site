@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Packing up
 subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."

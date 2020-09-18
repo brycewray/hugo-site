@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Thinking dark thoughts
 subtitle: How to keep up with a growing trend
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."

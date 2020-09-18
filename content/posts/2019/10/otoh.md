@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "OTOH"
 subtitle: "Retracting my retractions"
 description: "One shouldn’t make decisions out of spite. I’m living proof."

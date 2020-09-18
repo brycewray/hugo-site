@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Mark it down 
 subtitle: Plain but pretty
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."

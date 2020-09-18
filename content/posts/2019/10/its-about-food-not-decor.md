@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "It’s about the food, not the decor"
 subtitle: "The delivery method matters far less than what’s being delivered"
 description: "Thoughts about my recent emphasis on switching between SSGs."

@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: On Edge
 subtitle: Ch-ch-ch-ch-Chromium
 description: "Microsoft’s decision about Edge is important on many levels."

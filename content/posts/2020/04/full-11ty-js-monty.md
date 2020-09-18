@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "The full .11ty.js monty"
 subtitle: "Going all-JavaScript with my Eleventy site"
 description: "Once again, I can’t resist a nerdy challenge."

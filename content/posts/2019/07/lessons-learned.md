@@ -1,7 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
 title: Lessons learned
-tags: post
 subtitle: What I found while trying other SSGs
 description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
 date: 2019-07-21T22:43:00

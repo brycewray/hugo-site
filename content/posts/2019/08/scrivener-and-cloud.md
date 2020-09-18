@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Scrivener and The Cloud
 subtitle: Cutting through the fog (maybe)
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."

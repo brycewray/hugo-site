@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Webmentions in three SSGs: Part 3"
 subtitle: "IndieWebbin’ in Hugo"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."

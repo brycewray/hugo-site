@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Webmentions in three SSGs: Part 5"
 subtitle: "Thanking our sources for this series about IndieWebbin’"
 description: "Conclusion of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)."

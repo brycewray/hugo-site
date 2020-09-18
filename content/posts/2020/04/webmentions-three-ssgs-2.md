@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Webmentions in three SSGs: Part 2"
 subtitle: "IndieWebbin’ in Eleventy"
 description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."

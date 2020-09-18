@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Goodbye and hello • Part 4"
 subtitle: "The future is now, so to Render we go"
 description: "My curiosity overcomes me and, yet again, I move the site."

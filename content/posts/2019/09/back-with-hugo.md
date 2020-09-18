@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Back with Hugo
 subtitle: "Well, that didn’t last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."

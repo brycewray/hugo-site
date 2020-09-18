@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Goodbye and hello • Part 5"
 subtitle: "Failing to plan"
 description: "Two embarrassments: another site move and the reason behind it."

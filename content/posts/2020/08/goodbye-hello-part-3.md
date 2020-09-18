@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Goodbye and hello • Part 3"
 subtitle: "Performance is a heckuva drug"
 description: "Earlier considerations aside, I move the site to Vercel for a second time."

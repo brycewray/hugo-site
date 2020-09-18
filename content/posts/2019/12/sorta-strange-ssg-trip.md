@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Sorta StranGe (SSG) trip"
 subtitle: "Recapping “the dance” and what it taught me"
 description: "The changes I made to brycewray.com this past year, and what I learned along the way."

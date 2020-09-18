@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Old dog learns old trick 
 subtitle: How’d I miss this way to fool IE?
 description: A major “Do’h” moment in the never-ending battle against Internet Explorer.

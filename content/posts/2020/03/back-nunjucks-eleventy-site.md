@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Back to Nunjucks for my Eleventy site"
 subtitle: "Taking a course of lesser resistance"
 description: "Why I’ve decided for now to backtrack from JavaScript-only templating in Eleventy."

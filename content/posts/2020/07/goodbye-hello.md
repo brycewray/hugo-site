@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Goodbye and hello"
 subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."

@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Fathom Analytics: Count on it"
 subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."

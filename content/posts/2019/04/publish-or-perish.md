@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Publish or perish 
 subtitle: Going live with your Hugo site
 description: In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free.

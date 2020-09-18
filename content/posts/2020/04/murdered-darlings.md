@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Murdered darlings"
 subtitle: "R.I.P., WIP"
 description: "A farewell to this site’s original purpose."

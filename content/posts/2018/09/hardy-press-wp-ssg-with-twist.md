@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "HardyPress: WP + SSG with a twist"
 subtitle: Trying to have the best of two worlds
 description: Here’s a brief look at an interesting way to have your WordPress cake and eat your SSG site, too—or something like that.

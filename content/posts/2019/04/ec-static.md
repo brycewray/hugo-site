@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Ec-static 
 subtitle: How to go Hugo
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own websites."

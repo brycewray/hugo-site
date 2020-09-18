@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Picture perfect?
 subtitle: With SSGs and images, it’s “location, location, location”
 description: "Image-related items to consider when structuring your SSG-powered site."

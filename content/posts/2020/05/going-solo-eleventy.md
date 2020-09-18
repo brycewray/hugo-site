@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Going solo with Eleventy"
 subtitle: "Losing webpack, regaining Tailwind CSS"
 description: "As the saying goes, less is more."

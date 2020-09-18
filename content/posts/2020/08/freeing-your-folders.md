@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Freeing your folders"
 subtitle: "A safe way to change your cloud sync setup"
 description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."

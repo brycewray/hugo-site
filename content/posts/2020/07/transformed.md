@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Transformed"
 subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."

@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "So much for heroes"
 subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."

@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Mixed nuts • July, 2020"
 subtitle: "Random thoughts “R” us"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."

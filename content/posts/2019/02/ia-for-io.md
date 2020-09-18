@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: iA for IO? 
 subtitle: Evaluating iA Writer for use with an SSG
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."

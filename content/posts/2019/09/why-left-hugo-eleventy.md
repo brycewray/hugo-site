@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."

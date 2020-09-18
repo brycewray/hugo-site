@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: The Holy Mail
 subtitle: Stopping the e-madness
 description: The way I sort-of cured the email client dance.

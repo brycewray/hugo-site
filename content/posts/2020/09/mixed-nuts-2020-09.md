@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Mixed nuts • September, 2020"
 subtitle: "Oddities, observations, offal"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."

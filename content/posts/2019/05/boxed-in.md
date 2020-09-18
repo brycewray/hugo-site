@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Boxed in?
 subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'

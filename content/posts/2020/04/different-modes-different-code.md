@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."

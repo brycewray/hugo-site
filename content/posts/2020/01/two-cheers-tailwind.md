@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Two cheers for Tailwind"
 subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."

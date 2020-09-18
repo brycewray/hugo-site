@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: The client is too smart for you
 subtitle: The email client, that is
 description: Pretty emails don’t work so well in an Outlook-centric business world.

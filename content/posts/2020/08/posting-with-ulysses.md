@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Posting with Ulysses"
 subtitle: "Trying the latest version"
 description: "Still a nicer editor, but not truly SSG-friendly."

@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Streamers’ party"
 subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."

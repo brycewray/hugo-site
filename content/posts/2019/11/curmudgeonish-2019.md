@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Some curmudgeonish thoughts, 2019 edition
 subtitle: A few more things that irk me
 description: "Here’s a follow-up on last year’s list of items that stick in my craw."

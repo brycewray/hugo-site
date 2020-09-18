@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "“Previous” and “next” in Eleventy"
 subtitle: "The answer to an authentic FAQ"
 description: "A brief description of code that easily enables this oft-requested feature."

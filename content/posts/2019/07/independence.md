@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Independence
 subtitle: Thirty-five years a Mac lover
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."

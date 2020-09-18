@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: The version-control follies
 subtitle: Life’s too short for CLI
 description: Why you should go GUI with version control.

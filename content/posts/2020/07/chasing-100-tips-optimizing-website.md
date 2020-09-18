@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Chasing 100: Tips for optimizing your website"
 subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."

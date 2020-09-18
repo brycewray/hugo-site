@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Backtracking to Big G
 subtitle: A noble experiment ends
 description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."

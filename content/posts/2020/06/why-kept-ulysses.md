@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Why I kept Ulysses"
 subtitle: "Wanting to write more than nerdy stuff"
 description: "Renewing the subscription for another year."

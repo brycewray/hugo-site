@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Readable web text, pretty please
 subtitle: Part 1 of a two-part series on web typography
 description: Can we just agree that type on the web should be, y’know, readable?

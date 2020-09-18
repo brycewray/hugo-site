@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Stacks and stacks"
 subtitle: "That was then, this is now"
 description: "Comparing the site’s “tech stacks,” one year apart."

@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: Plain truth 
 subtitle: On permanence
 description: "Prose needn’t be deathless to survive."

@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Good stuff without Google"
 subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."

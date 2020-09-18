@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Webmentions in three SSGs: Part 1"
 subtitle: "Getting started with IndieWebbin’ in general"
 description: "The intro to a five-part series about incorporating webmentions into three different static site generators (SSGs)."

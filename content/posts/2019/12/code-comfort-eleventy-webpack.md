@@ -1,6 +1,4 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
-tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Some words about my Eleventy/webpack configuration."
