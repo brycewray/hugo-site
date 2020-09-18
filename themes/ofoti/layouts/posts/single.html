@@ -69,13 +69,13 @@
 			<p class="ctr prevnextP">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
-					<a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+					<a class="next" href="{{.RelPermalink}}"> {{.Title}}</a>
 					{{ end }}
 			</p>
 			<p class="ctr prevnextP">
 				{{ with .PrevInSection }}
 					<strong>Previous</strong>:
-					<a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+					<a class="previous" href="{{.RelPermalink}}"> {{.Title}}</a>
 				{{ end }}
 			</p>
     </div>

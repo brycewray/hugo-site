@@ -226,6 +226,9 @@ img.featured-image {
 .featured-image-caption {
   margin-top: 0.25em;
   padding-bottom: 1.5em;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center !important;
   font-size: $legal + unquote("em");
   color: $grey-1;
@@ -249,9 +252,6 @@ table.leagues {
 
 table.noborders {
   width: 100%;
-  @media (min-width: 900px){
-    width: 90%;
-  }
   margin: 1.5em auto 1em auto;
   border: 0;
   border-collapse: collapse;
@@ -353,11 +353,6 @@ img.postsFeatImg {
     margin: 1em auto 0 auto;
     width: 80%;
 
-    table {
-			margin: 1em auto 0 auto;
-			width: 80%;
-    }    
-
     figure img {
       width: 100%;
     }
@@ -400,8 +395,11 @@ img.postsFeatImg {
     font-size: 1.875em;
   }
   p.prevnextP {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 1.25em;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.025em;
   }
   a, a:hover, a:focus {
     color: #aaddff !important;
