@@ -86,7 +86,7 @@ If you've got time and you're feeling a little adventurous, MailMate's [hidden p
 
 You can customize various aspects of the display, such as the font size and leading of a column listing emails---although you can't add any text preview to the columnar view, as is commonly available in most other mail clients. It's something Dr. Nielsen [mentioned](https://blog.freron.com/2017/personalized_subscriber_emails/) as a "I'd-like-to-do-this-but" item over two years ago, and there it sits, still undone; but it's a minor nit.
 
-## Still thinkin'&nbsp;.&nbsp;.&nbsp;.
+## Still thinkin’&nbsp;.&nbsp;.&nbsp;.
 
 I began the 30-day trial of MailMate prior to Apple's WWDC 2019, curious as to whether there'd be any big changes in Mail for what we now know will be macOS Catalina and, if so, whether they'd be enough to keep me from continuing to consider MailMate. After all, Apple Mail is included with macOS while, at this writing, MailMate costs&nbsp;$50.
 
