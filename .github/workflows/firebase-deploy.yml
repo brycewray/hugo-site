@@ -1,0 +1,17 @@
+name: CI-Firebase
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    - name: Checkout branch
+      uses: actions/checkout@v1
+    - name: Build content
+      uses: ryank90/action-hugo-firebase-deploy@master
+      with:
+        firebase-token: ${{ secrets.FIREBASE_TOKEN }}
