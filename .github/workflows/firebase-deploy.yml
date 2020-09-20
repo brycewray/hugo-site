@@ -11,16 +11,14 @@ jobs:
 
     steps:
       - name: Checkout master branch
-        uses: actions/checkout@v2
-        with:
-          submodules: true
+        uses: actions/checkout@master
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v2.2.0
         with:
           hugo-version: '0.75.1'
           extended: true
       - name: Build site with Hugo
-        run: hugo --gc --minify
+        run: hugo --gc --minify --cleanDestinationDir
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
