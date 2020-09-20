@@ -13,6 +13,8 @@ Paginate = 5 # so five posts will appear on each page from "/posts"
     Domain = "brycewray.com"
     Author = "Bryce Wray"
     Description = "Bryce Wray’s website | Observations, opinions, geekiness"
+    talkyardServerUrl = "https://comments-for-brycewray-com.talkyard.net"
+    talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 
 [markup]
     [markup.goldmark]
