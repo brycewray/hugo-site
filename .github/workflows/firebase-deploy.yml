@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - name: Checkout branch
-      uses: actions/checkout@master
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2.2.0
       with:
