@@ -12,5 +12,4 @@ node_modules
 # Local Netlify folder
 .netlify
 .firebase
-firebase.json
 .firebaserc
