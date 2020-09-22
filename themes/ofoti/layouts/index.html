@@ -37,9 +37,9 @@
         <h2 class="h4 homePostTitle"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="homePostSubtitle">{{ .Params.Subtitle | markdownify }}</em></p>
         <p class="legal homePostDates">
-          Published: {{ .PublishDate.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>
+          Published: {{ .PublishDate.Format "January 2, 2006" }}
           {{- if ne .PublishDate .Lastmod }}
-          <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>
+          <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
           {{- end }}
         </p>        
         <p class="pokey homePostDescription">

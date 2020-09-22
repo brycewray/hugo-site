@@ -87,9 +87,9 @@
             <span class="legal"><em>{{ .Params.Subtitle }}</em></span>
           </h2>
           <p class="pokey text-muted" style="margin-top: 0;">
-            Published: {{ .PublishDate.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>
+            Published: {{ .PublishDate.Format "January 2, 2006" }}
             {{- if ne .PublishDate .Lastmod }}
-            <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}<span style="font-variant: small-caps;">&nbsp;utc</span>
+            <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
             {{- end }}
           </p>
 					<p class="pokey" style="margin-top: 0.5em; margin-bottom: 2em;">
