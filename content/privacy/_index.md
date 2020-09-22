@@ -16,7 +16,7 @@ That same email address is also where to send any questions about other privacy-
 
 ### Talkyard
 
-This site uses the [Talkyard](https://talkyard.io) platform for commenting. Logging into your user profile in Talkyard allows you to download your personal data and delete your comments. As an anti-spam and anti-"troll" measure, Talkyard itself briefly tracks each incoming IP address (or IP subnet) and installs a browser cookie.
+This site uses the [Talkyard](https://talkyard.io) platform for commenting. Logging into your user profile in Talkyard allows you to download your personal data and delete your comments. As an anti-spam and anti-"troll" measure, Talkyard itself briefly tracks each incoming IP address (or IP subnet) and installs a browser cookie. Please refer also to the [Talkyard Privacy Policy](https://www.talkyard.io/-/privacy-policy).
 
 ### Google Analytics
 
