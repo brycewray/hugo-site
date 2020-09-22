@@ -142,7 +142,8 @@ footer {
       transparent,
       rgba(0,0,0,.75) 80%,
       #000
-    );  }
+    );
+  }
   &-title-text, &-subtitle-text, &-description-text {
     color: #fff;
     margin: 0 auto;
@@ -163,6 +164,7 @@ footer {
     padding-bottom: 0;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       font-size: 3.5em;
+      padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       padding-top: 0;
@@ -178,6 +180,7 @@ footer {
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       padding-top: 1em;
       font-size: 2.25em;
+      padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       font-size: 3em;
@@ -192,6 +195,7 @@ footer {
       padding-top: 0.25em;
       padding-right: 15%;
       font-size: 1.25em;
+      padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       font-size: 1.5em;
