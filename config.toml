@@ -24,7 +24,7 @@ Paginate = 5 # so five posts will appear on each page from "/posts"
     [markup.blackFriday]
       hrefTargetBlank = true
       nofollowLinks = true
-      noreferredLinks = true
+      noreferrerLinks = true
       # other desired settings are defaults
 
 [menu]
