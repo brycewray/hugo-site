@@ -1,4 +1,5 @@
 ---
+title: The obligatory About Me page
 description: Not a bio (you’d fall asleep), but just a few explanatory observations.
 author: Bryce Wray
 date: 2018-09-14T20:00:00
