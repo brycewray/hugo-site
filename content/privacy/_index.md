@@ -14,6 +14,10 @@ That same email address is also where to send any questions about other privacy-
 
 ## Notes about external services
 
+### Talkyard
+
+This site uses the [Talkyard](https://talkyard.io) platform for commenting. Logging into your user profile in Talkyard allows you to download your personal data and delete your comments. Any comments you make while **not** logged in are anonymized and, thus, not linked with you in any way.
+
 ### Google Analytics
 
 Data collected through my former use of [Google Analytics](https://analytics.google.com) was deleted by my request on 2020-08-09. Even when the data was active, I never used it to identify any individual.

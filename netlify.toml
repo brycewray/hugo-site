@@ -4,6 +4,6 @@
   command = "npm run build"
 
 [context.production.environment]
-  HUGO_VERSION = "0.75.1" # substitute whichever version you prefer; this was as of 2020-08-07
+  HUGO_VERSION = "0.75.1"
   HUGO_ENV = "production"
   TZ = "America/Chicago"

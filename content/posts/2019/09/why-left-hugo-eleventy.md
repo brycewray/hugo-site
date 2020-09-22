@@ -74,7 +74,7 @@ So, six days into Gatsby Experiment II, I abandoned it.
 
 Again, I heard that whispering, snickering voice:
 
-*"Beat you **again**."*
+"*Beat you* ***again****."* 
 
 But this time, I didn't just slink off, happy to have retained my sanity if not my dignity. This time, I had a response.
 
