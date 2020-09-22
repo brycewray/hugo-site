@@ -3,7 +3,7 @@ title: "Privacy policy"
 description: "How my vendors and I protect you on this site"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
-lastmod: 2020-09-16T01:50:00
+lastmod: 2020-09-22T13:30:00
 ---
 
 I could've done this with some long, drawn-out legalese borrowed from a website designed to *create* that legalese, but there was no need for it.
@@ -16,7 +16,7 @@ That same email address is also where to send any questions about other privacy-
 
 ### Talkyard
 
-This site uses the [Talkyard](https://talkyard.io) platform for commenting. Logging into your user profile in Talkyard allows you to download your personal data and delete your comments. As an anti-spam and anti-"troll" measure, Talkyard itself briefly tracks each incoming IP address (or IP subnet) and installs a browser cookie. Please refer also to the [Talkyard Privacy Policy](https://www.talkyard.io/-/privacy-policy).
+This site uses the [Talkyard](https://talkyard.io) platform for commenting. Logging into your user profile in Talkyard allows you to download your personal data and delete your comments. As an anti-spam and anti-"troll" measure, Talkyard itself briefly tracks each incoming IP address (or IP subnet) and installs a browser cookie. Please refer also to the [Talkyard Privacy Policy](https://www.talkyard.io/-/privacy-policy) and see the "Google Fonts" information below.
 
 ### Google Analytics
 
@@ -27,6 +27,8 @@ Data collected through my former use of [Google Analytics](https://analytics.goo
 When I learned that the use of [Google Fonts](https://fonts.google.com) *served from* Google transmit a visitor's apparently **not** anonymized IP address[^Issue1495] to Google, I quit using this product (and suggesting to others that they use it) and, instead, served from my own site any typefaces that aren't part of the so-called "[system font stack](/posts/2018/10/web-typography-part-2)."
 
 [^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, "[GDPR compliance](https://github.com/google/fonts/issues/1495)" (known by many simply by its number, 1495).
+
+Please note that the Talkyard commenting platform by default uses Google Fonts; while we have made settings changes that prevent their being used, Talkyard still downloads Google-served CSS that normally accompanies them and, in the developer's opinion, does transmit the user's IP address to Google. Talkyard is working on an option to allow site administrators to disable Google Fonts and, when that's available, we will implement it.
 
 ### Embedded videos
 
