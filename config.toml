@@ -17,14 +17,15 @@ Paginate = 5 # so five posts will appear on each page from "/posts"
     talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 
 [markup]
-    [markup.goldmark]
-      [markup.goldmark.parser]
-        attribute = true
-      [markup.goldmark.renderer]
-        unsafe = true # only to allow for inline HTML and/or JS
-    [markup.highlight]
-      guessSyntax = true
-      noClasses = false
+    # Using BlackFriday again rather than Goldmark due to ongoing issues with typography
+    # -- e.g., https://github.com/gohugoio/hugo/issues/7289
+    # and https://github.com/yuin/goldmark/issues/39#issuecomment-564810327
+    defaultMarkdownHandler = "blackfriday"
+    [markup.blackFriday]
+      hrefTargetBlank = true
+      nofollowLinks = true
+      noreferredLinks = true
+      # other desired settings are defaults
 
 [menu]
     [[menu.main]]
