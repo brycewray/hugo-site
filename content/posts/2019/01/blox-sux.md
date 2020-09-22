@@ -3,8 +3,8 @@ title: Blox sux
 subtitle: Page builders are a pain, but . . .
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
-date: 2019-01-19T15:25:00
-lastmod: 2019-10-07T00:00:00
+date: 2019-01-19T09:25:00-06:00
+lastmod: 2019-10-06T19:00:00-05:00
 discussionId: "2019-01-blox-sux"
 featured_image: lego-169603_4320x3240.jpg
 featured_image_width: 4320

@@ -3,8 +3,8 @@ title: Roger, Copy
 subtitle: Keeping my .git together with Working Copy
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray
-date: 2019-07-27T11:38:00
-lastmod: 2020-02-03T20:23:00
+date: 2019-07-27T06:38:00-05:00
+lastmod: 2020-02-03T14:23:00-06:00
 discussionId: "2019-07-roger-copy"
 featured_image: animals-geese-in-a-row-2364769_3648x2736.jpg
 featured_image_width: 3648

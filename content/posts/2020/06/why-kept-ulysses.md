@@ -3,8 +3,8 @@ title: "Why I kept Ulysses"
 subtitle: "Wanting to write more than nerdy stuff"
 description: "Renewing the subscription for another year."
 author: Bryce Wray
-date: 2020-06-07T21:15:00
-lastmod: 2020-06-20T14:45:00
+date: 2020-06-07T16:15:00-05:00
+lastmod: 2020-06-20T09:45:00-05:00
 discussionId: "2020-06-why-kept-ulysses"
 featured_image: Ulysses-logo-over-Mac-keyboard_1280x720.jpg
 featured_image_width: 1280

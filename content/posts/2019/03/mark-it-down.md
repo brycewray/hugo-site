@@ -3,8 +3,8 @@ title: Mark it down
 subtitle: Plain but pretty
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
 author: Bryce Wray
-date: 2019-03-09T04:08:00
-lastmod: 2020-01-01T15:39:00
+date: 2019-03-08T23:08:00-05:00
+lastmod: 2020-01-01T09:39:00-06:00
 discussionId: "2019-03-mark-it-down"
 featured_image: swan-1639154_2816x1880.jpg
 featured_image_width: 2816

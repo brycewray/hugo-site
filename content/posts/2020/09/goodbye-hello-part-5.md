@@ -3,7 +3,7 @@ title: "Goodbye and hello • Part 5"
 subtitle: "Failing to plan"
 description: "Two embarrassments: another site move and the reason behind it."
 author: Bryce Wray
-date: 2020-09-09T19:30:00
+date: 2020-09-09T14:30:00-05:00
 #lastmod
 discussionId: "2020-09-goodbye-hello-5"
 featured_image: pencil-two-with-erasers-macro-1277094_3872x2592.jpg

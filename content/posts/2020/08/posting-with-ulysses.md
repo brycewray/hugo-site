@@ -3,8 +3,8 @@ title: "Posting with Ulysses"
 subtitle: "Trying the latest version"
 description: "Still a nicer editor, but not truly SSG-friendly."
 author: Bryce Wray
-date: 2020-08-05T00:15:00
-lastmod: 2020-08-11T01:15:00
+date: 2020-08-04T19:15:00-05:00
+lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2020-08-posting-with-ulysses"
 featured_image: typewriter-type-hammers-1022893_2000x1333.jpg
 featured_image_width: 2000

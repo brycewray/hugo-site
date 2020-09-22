@@ -3,8 +3,8 @@ title: The client is too smart for you
 subtitle: The email client, that is
 description: Pretty emails don’t work so well in an Outlook-centric business world.
 author: Bryce Wray
-date: 2018-10-11T20:30:00
-lastmod: 2020-01-31T16:30:00
+date: 2018-10-11T15:30:00-05:00
+lastmod: 2020-01-31T10:30:00-06:00
 discussionId: "2018-10-client-too-smart"
 featured_image: letters-envelope-on-color-strips-4029672_5376x3648.jpg
 featured_image_width: 5376

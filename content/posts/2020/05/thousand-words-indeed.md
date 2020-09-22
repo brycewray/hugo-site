@@ -3,8 +3,8 @@ title: "A thousand words, indeed"
 subtitle: "Feelings about look-and-feel"
 description: "How and why “hero images” have returned to this site."
 author: Bryce Wray
-date: 2020-05-22T23:00:00
-lastmod: 2020-08-11T01:15:00
+date: 2020-05-22T18:00:00-05:00
+lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2020-05-thousand-words-indeed"
 featured_image: colorful-flower-field-250016_4984x3607.jpg
 featured_image_width: 4984

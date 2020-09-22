@@ -3,8 +3,8 @@ title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
-date: 2020-04-05T18:45:00
-lastmod: 2020-05-31T22:30:00
+date: 2020-04-05T13:45:00-05:00
+lastmod: 2020-05-31T17:30:00-05:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg
 featured_image_width: 5184

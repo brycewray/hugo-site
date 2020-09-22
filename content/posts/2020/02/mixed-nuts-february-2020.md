@@ -3,7 +3,7 @@ title: "Mixed nuts • February, 2020"
 subtitle: "Here and there, frick and frack, yadda and yadda"
 description: "Another sampling of my random thoughts—lucky you."
 author: Bryce Wray
-date: 2020-02-09T22:05:00
+date: 2020-02-09T16:05:00-06:00
 #lastmod: TBD
 discussionId: "2020-02-mixed-nuts-2020-02"
 featured_image: almond-21502_5000x3333.jpg

@@ -3,7 +3,7 @@ title: On Edge
 subtitle: Ch-ch-ch-ch-Chromium
 description: "Microsoft’s decision about Edge is important on many levels."
 author: Bryce Wray
-date: 2018-12-07T19:35:00
+date: 2018-12-07T13:35:00-06:00
 # lastmod
 discussionId: "2018-12-on-edge"
 featured_image: MS-Edge-logo-and-bkgd_1920x1080.jpg

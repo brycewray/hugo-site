@@ -3,8 +3,8 @@ title: "Coherence and COVID–19" #Non-breaking hyphen there, copied/pasted from
 subtitle: "Trying to grasp the new reality"
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray
-date: 2020-03-21T14:45:00
-lastmod: 2020-08-08T19:15:00
+date: 2020-03-21T09:45:00-05:00
+lastmod: 2020-08-08T14:15:00-05:00
 discussionId: "2020-03-coherence-covid-19"
 featured_image: wash-hands-covid-19-4968117_4032x3024.jpg
 featured_image_width: 4032

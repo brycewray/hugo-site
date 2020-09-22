@@ -3,8 +3,8 @@ title: "“Previous” and “next” in Eleventy"
 subtitle: "The answer to an authentic FAQ"
 description: "A brief description of code that easily enables this oft-requested feature."
 author: Bryce Wray
-date: 2019-12-23T21:16:00
-lastmod: 2019-12-25T14:05:00
+date: 2019-12-23T15:16:00-06:00
+lastmod: 2019-12-25T08:05:00-06:00
 discussionId: "2019-12-previous-next-eleventy"
 featured_image: sand-1522182_3216x2136.jpg
 featured_image_width: 3216

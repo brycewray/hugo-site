@@ -2,8 +2,8 @@
 title: "Privacy policy"
 description: "How my vendors and I protect you on this site"
 author: Bryce Wray
-date: 2020-08-02T14:00:00
-lastmod: 2020-09-22T13:30:00
+date: 2020-08-02T09:00:00-05:00
+lastmod: 2020-09-22T08:30:00-05:00
 ---
 
 I could've done this with some long, drawn-out legalese borrowed from a website designed to *create* that legalese, but there was no need for it.

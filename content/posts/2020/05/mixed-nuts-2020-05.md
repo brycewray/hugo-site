@@ -3,8 +3,8 @@ title: "Mixed nuts • May, 2020"
 subtitle: "Month-of-May meanderings through my, um, mind"
 description: "Updates, uptakes, follow-ups, and foul-ups—not necessarily in that order."
 author: Bryce Wray
-date: 2020-05-16T22:40:00
-lastmod: 2020-08-11T01:15:00
+date: 2020-05-16T17:40:00-05:00
+lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2020-05-mixed-nuts-2020-05"
 featured_image: nuts-511492_4928x3264.jpg
 featured_image_width: 4928

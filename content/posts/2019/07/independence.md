@@ -3,8 +3,8 @@ title: Independence
 subtitle: Thirty-five years a Mac lover
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
-date: 2019-07-06T15:38:00
-lastmod: 2020-08-11T01:15:00
+date: 2019-07-06T10:38:00-05:00
+lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2019-07-independence"
 featured_image: 1984-07-11_01_retouched_1280x720.jpg
 featured_image_width: 1280

@@ -3,8 +3,8 @@ title: Ec-static
 subtitle: How to go Hugo
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own websites."
 author: Bryce Wray
-date: 2019-04-07T19:00:00
-lastmod: 2020-06-07T19:25:00
+date: 2019-04-07T14:00:00-05:00
+lastmod: 2020-06-07T14:25:00-05:00
 discussionId: "2019-04-ec-static"
 featured_image: server-1235959_1980x1320.jpg
 featured_image_width: 1980

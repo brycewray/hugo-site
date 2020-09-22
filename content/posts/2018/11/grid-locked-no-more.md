@@ -3,8 +3,8 @@ title: Grid-locked no more
 subtitle: Doing a 180 on CSS Grid
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
-date: 2018-11-28T15:00:00
-lastmod: 2019-10-03T00:20:00
+date: 2018-11-28T09:00:00-06:00
+lastmod: 2019-10-02T19:20:00-05:00
 discussionId: "2018-11-grid-locked-no-more"
 featured_image: railing-4274523_6000x4000.jpg
 featured_image_width: 6000

@@ -5,7 +5,7 @@ title: "Two, but not terrible"
 subtitle: "Dual candles on the site’s cake"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray
-date: 2020-09-15T11:20:00
+date: 2020-09-15T06:20:00-05:00
 #lastmod
 discussionId: "2020-09-two-but-not-terrible"
 featured_image: sahin-sezer-dincer-YhoQj_EUi50-unsplash_5063x3375.jpg

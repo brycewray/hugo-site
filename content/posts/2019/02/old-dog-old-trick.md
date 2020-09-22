@@ -3,8 +3,8 @@ title: Old dog learns old trick
 subtitle: How’d I miss this way to fool IE?
 description: A major “Do’h” moment in the never-ending battle against Internet Explorer.
 author: Bryce Wray
-date: 2019-02-16T16:50:00
-lastmod: 2020-08-08T19:15:00
+date: 2019-02-16T10:50:00-06:00
+lastmod: 2020-08-08T14:15:00-05:00
 discussionId: "2019-02-old-dog-old-trick"
 featured_image: dog-2514968_1940x1293.jpg
 featured_image_width: 1940

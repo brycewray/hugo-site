@@ -3,7 +3,7 @@ title: "Welcome, sweet little early bird"
 subtitle: "Plans, schmans"
 description: "The new grandchild arrives, and on her own timeline."
 author: Bryce Wray
-date: 2020-03-10T14:50:00
+date: 2020-03-10T09:50:00-05:00
 #lastmod: TBD
 discussionId: "2020-03-welcome-sweet-little-early-bird"
 featured_image: door-bear-for-newborn-Kennedy-Beck_edit_1280x720.jpg

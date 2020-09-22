@@ -3,8 +3,8 @@ title: Ahoy, ’Mate
 subtitle: Considering MailMate
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
-date: 2019-06-09T01:25:00
-lastmod: 2020-08-11T01:15:00
+date: 2019-06-08T20:25:00-05:00
+lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2019-06-ahoy-mate"
 featured_image: MailMate_screen_cap_1619x720.jpg
 featured_image_width: 1619

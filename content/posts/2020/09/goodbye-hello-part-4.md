@@ -3,8 +3,8 @@ title: "Goodbye and hello • Part 4"
 subtitle: "The future is now, so to Render we go"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
-date: 2020-09-05T14:00:00
-lastmod: 2020-09-09T12:25:00
+date: 2020-09-05T09:00:00-05:00
+lastmod: 2020-09-22T17:30:00-05:00
 discussionId: "2020-09-goodbye-hello-4"
 featured_image: jeremy-thomas-E0AHdsENmDg-unsplash_5005x3417.jpg
 featured_image_width: 5005
@@ -34,7 +34,7 @@ As a result, I created identical microsites on Vercel, Netlify, and Render (iden
 
 As the days went by, a pattern emerged from the Speedlify results. While it didn't *always* win, the Render microsite *usually* won---this, despite the [vaunted advantages of Vercel's Global Edge Network](https://vercel.com/blog/new-edge-dev-infrastructure).[^1]
 
-Having determined early on that I would let the data be my guide, I found the case to be narrow, but clear, for Render. And, so, late yesterday (UTC), my site was back on Render for the first time since that initial, one-day ride in late June.
+Having determined early on that I would let the data be my guide, I found the case to be narrow, but clear, for Render. And, so, yesterday, my site was back on Render for the first time since that initial, one-day ride in late June.
 
 Of course, as is now achingly clear, whether I will let it *stay* there remains to be seen.
 

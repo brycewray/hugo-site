@@ -3,8 +3,8 @@ title: A stacked deck
 subtitle: Part 2 of a two-part series on web typography
 description: Making the case for a system fonts approach to the typography on web sites.
 author: Bryce Wray
-date: 2018-10-25T12:40:00
-lastmod: 2020-08-11T01:15:00
+date: 2018-10-25T07:40:00-05:00
+lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: computer-1869236_3264x2448.jpg
 featured_image_width: 3264

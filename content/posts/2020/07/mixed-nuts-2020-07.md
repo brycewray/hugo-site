@@ -3,8 +3,8 @@ title: "Mixed nuts • July, 2020"
 subtitle: "Random thoughts “R” us"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."
 author: Bryce Wray
-date: 2020-07-09T21:40:00
-lastmod: 2020-08-30T20:40:00
+date: 2020-07-09T16:40:00-05:00
+lastmod: 2020-08-30T15:40:00-05:00
 discussionId: "2020-07-mixed-nuts-2020-07"
 featured_image: bowl-of-nuts-3587842_5184x3888.jpg
 featured_image_width: 5184

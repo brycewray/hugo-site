@@ -3,8 +3,8 @@ title: Now I’m sixty-four
 subtitle: Amending my obligatory earworm
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray
-date: 2019-09-06T11:40:00
-lastmod: 2020-03-29T15:08:00
+date: 2019-09-06T06:40:00-05:00
+lastmod: 2020-03-29T10:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
 featured_image: chevrolet-1955-stylized-829805_1280x720.jpg
 featured_image_width: 1280

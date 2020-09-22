@@ -3,7 +3,7 @@ title: The Holy Mail
 subtitle: Stopping the e-madness
 description: The way I sort-of cured the email client dance.
 author: Bryce Wray
-date: 2019-05-10T12:20:00
+date: 2019-05-10T07:20:00-05:00
 #lastmod
 discussionId: "2019-05-the-holy-mail"
 featured_image: letterbox-1926493_4589x2648.jpg
