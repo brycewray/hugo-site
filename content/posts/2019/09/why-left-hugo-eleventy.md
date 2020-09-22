@@ -44,7 +44,7 @@ First, I got a big spike in readership for that first post about it, courtesy of
 
 Second, not long after I dragged my bleeding carcass away from attempting to use Gatsby without sufficient familiarity with its [React](https://reactjs.org) framework, my initial sense of relief gave way to a distinct and annoying whisper in my ear:
 
-*"Beat you, old man. Heh, heh."*
+*"Beat you, old man. Heh, heh.”*
 
 It wasn't so much that I felt Gatsby and its adherents had beaten me. It was more that I felt I'd been laid low by the newer generation of mostly JavaScript-based SSGs in general.
 
@@ -54,7 +54,7 @@ Coding chops? Hah. Instead, it felt as if I were limping away while barely retai
 
 Nonetheless, I brooded over this for a few weeks until, a couple of weekends ago, I decided to take another stab at Gatsby.
 
-***Narrator***: *"But would he emerge alive?"*
+***Narrator***: *"But would he emerge alive?”*
 
 ## Second time's not a charm
 
@@ -74,7 +74,7 @@ So, six days into Gatsby Experiment II, I abandoned it.
 
 Again, I heard that whispering, snickering voice:
 
-*"Beat you **again**."*
+*"Beat you **again**.”*
 
 But this time, I didn't just slink off, happy to have retained my sanity if not my dignity. This time, I had a response.
 
@@ -111,7 +111,7 @@ Eleventy says, "I have some ideas but, in the end, how would *you* like to do it
 
 Deal. Done.
 
-If I were going to leave the comfortable confines of Hugo, it would be for Eleventy. (More about that later, under "Eleventy's advantages.")
+If I were going to leave the comfortable confines of Hugo, it would be for Eleventy. (More about that later, under "Eleventy's advantages.”)
 
 However, of course, it wasn't quite that simple.
 
