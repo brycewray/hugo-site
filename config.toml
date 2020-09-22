@@ -26,6 +26,9 @@ Paginate = 5 # so five posts will appear on each page from "/posts"
       nofollowLinks = true
       noreferrerLinks = true
       # other desired settings are defaults
+    [markup.highlight]
+      guessSyntax = true
+      noClasses = false
 
 [menu]
     [[menu.main]]
