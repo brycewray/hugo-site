@@ -1,7 +1,5 @@
 # Repo for brycewray.com
 
-![CI-Hugo-site-to-Firebase](https://github.com/brycewray/hugo_site/workflows/CI-Hugo-site-to-Firebase/badge.svg)
-
 This is the repository from which the [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is built.
 
 ## What&rsquo;s under the hood
