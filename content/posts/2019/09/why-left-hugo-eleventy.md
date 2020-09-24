@@ -54,7 +54,7 @@ Coding chops? Hah. Instead, it felt as if I were limping away while barely retai
 
 Nonetheless, I brooded over this for a few weeks until, a couple of weekends ago, I decided to take another stab at Gatsby.
 
-***Narrator***: *“But would he emerge alive?”*
+***Narrator**: “But would he emerge alive?”*
 
 ## Second time’s not a charm
 
@@ -74,7 +74,7 @@ So, six days into Gatsby Experiment II, I abandoned it.
 
 Again, I heard that whispering, snickering voice:
 
-*“Beat you* ***again****.”* 
+*“Beat you **again**.”* 
 
 But this time, I didn’t just slink off, happy to have retained my sanity if not my dignity. This time, I had a response.
 

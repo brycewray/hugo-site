@@ -96,6 +96,6 @@ However, the answers were “No” and “No.” The [changes in Apple Mail in C
 
 My tweet tonight says it all:
 
-> Bought a license for, and became a patron of, <a href=”https://twitter.com/mailmateapp?ref_src=twsrc%5Etfw”>@mailmateapp</a>. Very impressed with the software and the developer, as I made clear in my recent post *[linked to this page]*—[Bryce Wray (@BryceWrayTX) June 12, 2019](https://twitter.com/BryceWrayTX/status/1138614802518020096?ref_src=twsrc%5Etfw)[^privacy]
+> Bought a license for, and became a patron of, <a href="https://twitter.com/mailmateapp?ref_src=twsrc%5Etfw">@mailmateapp</a>. Very impressed with the software and the developer, as I made clear in my recent post *[linked to this page]*—[Bryce Wray (@BryceWrayTX) June 12, 2019](https://twitter.com/BryceWrayTX/status/1138614802518020096?ref_src=twsrc%5Etfw)[^privacy]
 
 [^privacy]: The embedded tweet that formerly was in this spot on the page is now just linked and identified, due to the site’s belatedly adopted [privacy policy](/privacy).

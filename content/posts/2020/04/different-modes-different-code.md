@@ -4,7 +4,7 @@ subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
-lastmod: 2020-05-31T17:30:00-05:00
+lastmod: 2020-09-24T09:00:00-05:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg
 featured_image_width: 5184
@@ -136,7 +136,5 @@ I have been curious about [Vue](https://vuejs.org) and the Vue-based, Gatsby-lik
 Since [it looks as if we’ll be here a while](https://www.vox.com/future-perfect/2020/3/26/21191702/coronavirus-lockdowns-stay-home-new-cases): well, who knows? Stay tuned.
 
 <div class="yellowBox"><p><strong>Update, 2020-04-15</strong>: While I did make some progress on the Gridsome repo project in the ensuing days after first releasing this post, I think it will be a while&mdash;perhaps months&mdash;before I can make any serious headway. There are a number of things the young Gridsome still doesn&rsquo;t do that well which, while they wouldn&rsquo;t be showstoppers to others, just cause it to miss the mark where I&rsquo;m concerned. Two minor examples are <a href="https://github.com/gridsome/gridsome/issues/177" target="_blank" rel="noopener">&ldquo;previous post&rdquo; and &ldquo;next post&rdquo; functionality</a> and <a href="https://github.com/gridsome/gridsome/issues/1089" target="_blank" rel="noopener">directory-based URLs</a>, but there are others. <em>(In the meantime, however, <a href="/posts/2020/04/full-11ty-js-monty">I can always find other things to do</a>.)</em></p></div>
-
-<br />
 
 <div class="yellowBox"><p><strong>Update, 2020-05-31</strong>: I later decided to limit the Hugo and Gatsby repos to just a sampling of the posts, especially given the <a href="/posts/2020/05/thousand-words-indeed">restoration of hero images</a>. While this obviously will save me work (and a modicum of sanity), the truth is that it also probably makes each repo <strong>more</strong> valuable to those who simply want to learn how to do a few things here and there, rather than having to download a ton of other posts and images.</p></div>

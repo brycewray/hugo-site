@@ -4,7 +4,7 @@ subtitle: "Trying to grasp the new reality"
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
-lastmod: 2020-08-08T14:15:00-05:00
+lastmod: 2020-09-24T08:57:00-05:00
 discussionId: "2020-03-coherence-covid-19"
 featured_image: wash-hands-covid-19-4968117_4032x3024.jpg
 featured_image_width: 4032
@@ -54,7 +54,7 @@ My naïveté over the timing of my working from home due to the COVID-19 scare i
 
 When will it end? Some businesses are saying things like April something-or-other. Since I have spent a *great deal* of time reading and listening to the opinions of leading epidemiologists[^ScienceRules] over these last few days, I think such optimism is the product of somebody having smoked something funky.
 
-[^ScienceRules]: [I trust science. Period. As I [said on Twitter](https://twitter.com/BryceWrayTX/status/1238448849838059520) about this mess: “Science > myth. Truth > lies. Real smarts > fake smarts. Realism > thinking ‘miracles’ will fix a crisis. Whatever happens, these are always true.”
+[^ScienceRules]: I trust science. Period. As I [said on Twitter](https://twitter.com/BryceWrayTX/status/1238448849838059520) about this mess: “Science > myth. Truth > lies. Real smarts > fake smarts. Realism > thinking ‘miracles’ will fix a crisis. Whatever happens, these are always true.”
 
 I’m no betting man, but right now I would be astounded if we’re told it’s OK to go back to sort-of-normal before late June or early July.
 
