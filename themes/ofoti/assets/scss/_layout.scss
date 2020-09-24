@@ -373,7 +373,7 @@ img.postsFeatImg {
     font-size: 85%;
     width: 85%;
     max-width: 720px !important;
-    margin-bottom: 3em;
+    margin-bottom: 0;
     @media (min-width: 900px) {
       width: 40%;
     }
@@ -427,10 +427,6 @@ img.postsFeatImg {
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: $darkblue;
   border-color: $darkblue;
-}
-
-.talkyard-comments {
-  font-family: $sans-serif;
 }
 
 li p {
