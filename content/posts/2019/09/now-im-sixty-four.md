@@ -19,46 +19,46 @@ featured_image_caption: |
 Long before aging,  
 I lost my hair  
 Many years ago,  
-So there's no point belaboring that  
+So there’s no point belaboring that  
 Or hiding it by wearing a hat.
 
 Quarter past three is  
 About when I wake.  
-[I can't sleep much more](https://www.sleepfoundation.org/articles/aging-and-sleep).  
-That's just the way  
+[I can’t sleep much more](https://www.sleepfoundation.org/articles/aging-and-sleep).  
+That’s just the way  
 My life goes these days:  
-Now I'm sixty-four.
+Now I’m sixty-four.
 
-I'm still a tech nerd,  
+I’m still a tech nerd,  
 Although some folks my age  
 [Struggle to use Word](https://www.dummies.com/software/microsoft-office/office-2019-for-seniors-for-dummies-cheat-sheet/).
 
-When my employer's  
+When my employer’s  
 Websites need work,  
 Or when my own does, too,  
-I'm just glad that I can still code  
-And that I still "get" Admin mode.
+I’m just glad that I can still code  
+And that I still “get” Admin mode.
 
 Building `do-while` [loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while), editing [styles](https://developer.mozilla.org/en-US/docs/Web/CSS):  
 Who could ask for more?  
-That's why work needs me  
+That’s why work needs me  
 And it still feeds me  
-Though I'm sixty-four.
+Though I’m sixty-four.
 
 Getting older is a thing you have to do  
-In the course of life. That's just the deal.  
-But it's not all bad.  
-Now a grandchild's on the way:  
+In the course of life. That’s just the deal.  
+But it’s not all bad.  
+Now a grandchild’s on the way:  
 A little lass or lad.
 
 Thrilled with such good news,  
-I've reached this day,  
+I’ve reached this day,  
 Awaiting things to come,   
 Knowing that a tiny face soon will see me  
 And wonder just who I may be.
 
-"Kid, I'm your grandpa," I will explain.  
-"Will be, forevermore."  
+“Kid, I’m your grandpa,” I will explain.  
+“Will be, forevermore.”  
 And on this birthday,  
 Yes, sir, I do say:  
-Now I'm sixty-four.
+Now I’m sixty-four.

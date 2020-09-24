@@ -37,7 +37,7 @@ cls
 copy manuald1.doc manuald2.doc
 ```
 
-The latter was to copy Draft 1 of an instruction manual file so I could work on Draft 2 while keeping Draft 1, just in case. But why such clunky file names? Remember: MS-DOS was limited to eight-character, non-case-sensitive, non-spaced names for files and directories. We got up to Windows 95 before the IBM-compatibles’ world shed that nasty little distinction, and up to Windows XP before the CLI sitting behind the Windows environment really recognized longer names rather than just *pretending* to do so in Windows while actually turning *My Windows Document.doc* into *MYWINDO~.DOC* and *My Windows Document As Well.doc* into *MYWIND2~.DOC*---and so on.
+The latter was to copy Draft 1 of an instruction manual file so I could work on Draft 2 while keeping Draft 1, just in case. But why such clunky file names? Remember: MS-DOS was limited to eight-character, non-case-sensitive, non-spaced names for files and directories. We got up to Windows 95 before the IBM-compatibles’ world shed that nasty little distinction, and up to Windows XP before the CLI sitting behind the Windows environment really recognized longer names rather than just *pretending* to do so in Windows while actually turning *My Windows Document.doc* into *MYWINDO~.DOC* and *My Windows Document As Well.doc* into *MYWIND2~.DOC*—and so on.
 
 You kids missed so much. You lucky dogs.
 
@@ -57,5 +57,5 @@ In short, I’d gone from a setup in which *every* change (no matter how tiny) i
 
 ### Correction, 2019-07-14:
 
-- *At the time I wrote this, I thought SourceTree was Bitbucket-specific but, of course, that's not true; it works also with GitHub and [GitLab](https://gitlab.com) as well.*
+- *At the time I wrote this, I thought SourceTree was Bitbucket-specific but, of course, that’s not true; it works also with GitHub and [GitLab](https://gitlab.com) as well.*
 - *Since the original writing, GitHub has joined Bitbucket (and GitLab) in having private repos. Each has slightly different rules about them, such as numbers of contributors allowed.*
