@@ -164,11 +164,13 @@ footer {
     padding-bottom: 0;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       font-size: 3.5em;
+      padding-right: 4%;
       padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       padding-top: 0;
       font-size: 4em;
+      padding-right: 5%;
       padding-left: 5%;
     }
   }
@@ -182,11 +184,13 @@ footer {
       @media screen and (min-width: 769px) and (max-width: 1024px) {
       padding-top: 1em;
       font-size: 2.25em;
+      padding-right: 4%;
       padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       font-size: 3em;
       padding-top: 0.75em;
+      padding-right: 5%;
       padding-left: 5%;
     }
   }
@@ -195,12 +199,13 @@ footer {
     @media screen and (min-width: 769px) {
       display: block;
       padding-top: 0.25em;
-      padding-right: 15%;
       font-size: 1.25em;
+      padding-right: 4%;
       padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       font-size: 1.5em;
+      padding-right: 4%;
       padding-left: 5%;
     }
   }

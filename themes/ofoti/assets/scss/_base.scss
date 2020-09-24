@@ -12,11 +12,11 @@ i, cite, em, var, address, dfn, .italic, h3, .h3 {  /* overriding the Tailwind C
 html, body {
   font-family: $sans-serif;
   color: $default-color;
-  letter-spacing: -0.001em;
+  letter-spacing: -0.002em;
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-weight: 450;
+  // font-weight: 450;
   font-feature-settings: "liga" 1; // ligatures won't work without this
   @media (prefers-color-scheme: dark) {
     background: $background-dark-mode;
@@ -32,9 +32,12 @@ p, li {
   line-height: 1.4;
 }
 
+bold, strong, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 750;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   letter-spacing: -0.025em;
-  font-weight: 700;
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark-mode;
   }
