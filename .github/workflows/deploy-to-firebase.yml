@@ -1,0 +1,30 @@
+name: CI-Hugo-site-to-Firebase
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  HUGO_VERSION: 0.75.1 # steps below will pick extended version
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout master branch
+        uses: actions/checkout@v2
+      - name: Download Hugo v${{ env.HUGO_VERSION }} Linux x64
+        run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
+      - name: Install Hugo
+        run: sudo dpkg -i hugo*.deb
+      - name: Build site with Hugo
+        run: npm run build
+      - name: Install Firebase Tools
+        run: npm install firebase-tools
+      - name: Deploy to Firebase
+        run: npx firebase deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          # Other args should come from .firebaserc and firebase.json
