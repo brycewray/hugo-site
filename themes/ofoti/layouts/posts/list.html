@@ -84,9 +84,9 @@
         <div>          
           <h2 class="h5" style="margin-bottom: 0.25em;">
             <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
-            <span class="legal"><em>{{ .Params.Subtitle }}</em></span>
+            <span class="legal">{{ .Params.Subtitle }}</span>
           </h2>
-          <p class="pokey text-muted" style="margin-top: 0;">
+          <p class="legal text-muted" style="margin-top: 0;">
             Published: {{ .PublishDate.Format "January 2, 2006" }}
             {{- if ne .PublishDate .Lastmod }}
             <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
