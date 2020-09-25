@@ -4,7 +4,7 @@ subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-09T20:05:00-05:00
-lastmod: 2020-08-11T12:40:00-05:00
+lastmod: 2020-09-24T14:30:00-05:00
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg
 featured_image_width: 5122
@@ -28,7 +28,7 @@ But, hey, I’m here to help.
 
 Let me begin by giving you a brief intro to variable fonts.[^1]
 
-First, the web fonts you’ve typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let’s say your site is using (as is this site’s body copy) the Public Sans typeface, and a site page includes the following text and formatting:
+First, the web fonts you’ve typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let’s say your site is using the Public Sans typeface, and a site page includes the following text and formatting:
 
 <p class="text-4xl text-center"><strong><em>Hello</em></strong>, how <em>are</em> <strong>you</strong>?</p>
 
@@ -68,7 +68,7 @@ Well, get your hoops-jumping outfit on, because I’m about to tell you how to d
 
 For each variable font you want from Google Fonts:
 
-1. Pick all the widths and styles you want and see what appears under **Review** on the right side of the Google Fonts interface. For example, for Public Sans I picked regular, italic, bold regular, and bold italic (*400* is the default regular weight and *700* is usually the default weight for boldfacing):   
+1. Pick all the widths and styles you want and see what appears under **Review** on the right side of the Google Fonts interface. For example, when I was using Public Sans for this site, I picked regular, italic, bold regular, and bold italic (*400* is the default regular weight and *700* is usually the default weight for boldfacing):   
 
 {{< imgc src="Public_Sans_selected_family_1024x1248.png" alt="Screen capture from Google Fonts showing typeface selections" width="1024" height="1248" >}}
 
@@ -178,7 +178,7 @@ You probably don’t need the `latin-extended` character sets (you already know 
 	- public-sans-20200809-vf-italic-latin.woff2
 	- public-sans-20200809-vf-roman-latin.woff2—I’m old-school and tend to call regular typefaces “Roman,” even though that’s actually correct only for serif faces.
 11. Now, put the renamed .woff2 files in whatever location is appropriate for your website’s setup, and do the normal setup you’d do to make “local” fonts work.  
-	For the CSS part of it, you can refer to that CSS you copied earlier, but **be sure** to change the URL to **yours** or you’ll be serving from Google! For example, on my site, you’d see the following for the Public Sans italic regular-weight file:
+	For the CSS part of it, you can refer to that CSS you copied earlier, but **be sure** to change the URL to **yours** or you’ll be serving from Google! For example, on my site when it was using Public Sans, you’d see the following for the Public Sans italic regular-weight file:
 
 ```css
 /* latin */

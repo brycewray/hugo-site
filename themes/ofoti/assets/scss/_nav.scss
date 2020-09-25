@@ -34,6 +34,10 @@ header {
 
     @media (min-width: $breakpoint) {
       display: inline-block;
+      text-transform: lowercase;
+      font-variant: small-caps;
+      font-weight: 650;
+      letter-spacing: 0.15em;
     }
 
     a {

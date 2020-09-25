@@ -24,7 +24,7 @@ But all that’s changed.
 
 I’ve followed plenty of good advice on the web and offloaded my images to [Cloudinary](https://cloudinary.com). And, by “offloaded,” I don’t mean just the *storage* of the images themselves; I also mean all the [optimizing](https://dev.to/giladmaayan/how-to-optimize-images-for-the-web-without-losing-quality-g2a) that they require.
 
-# How we got here
+## How we got here
 
 This all started with some nerdy fun on my part that soon got out of control.
 

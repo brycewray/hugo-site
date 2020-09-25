@@ -4,7 +4,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2020-09-05T12:45:00-05:00
+lastmod: 2020-09-25T07:52:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_4870x2672.jpg
 featured_image_width: 4870
@@ -45,6 +45,8 @@ Image processing during each build takes precious seconds (in my site’s case, 
 <div class="yellowBox"><p><strong>Note, 2020-08-30</strong>: I later solved <em>this</em> issue by <a href="/posts/2020/07/transformed">handing off image processing</a> to <a href="https://cloudinary.com" target="_blank" rel="noopener">Cloudinary</a>.</p></div>
 
 ### Webmentions
+
+<div class="yellowBox"><p><strong>Note, 2020-09-25</strong>: The site no longer uses webmenntions, but did at the time of this post&rsquo;s original appearance.</p></div>
 
 Some months ago, intrigued by the whole [IndieWeb](https://indieweb.org/) thing, I began dabbling in [webmentions](/posts/2020/04/webmentions-three-ssgs-1/); and I encourage you to consider doing the same with your own site. But, you ask, how would they increase the build times?
 
@@ -179,7 +181,7 @@ jobs:
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
 ```
 
-<div class="yellowBox"><p><strong>Note</strong> If you use this approach, you need to make sure you <strong>don&rsquo;t</strong> have your repo linked in Netlify for continuous deployment (in your site settings, that&rsquo;s <strong>Build &amp; deploy</strong> &gt; <strong>Continuous deployment</strong>). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.</p></div>
+<div class="yellowBox"><p><strong>Note</strong>: If you use this approach, you need to make sure you <strong>don&rsquo;t</strong> have your repo linked in Netlify for continuous deployment (in your site settings, that&rsquo;s <strong>Build &amp; deploy</strong> &gt; <strong>Continuous deployment</strong>). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.</p></div>
 
 Here’s how it works.
 
