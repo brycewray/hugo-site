@@ -4,8 +4,8 @@ subtitle: "Advice from a semi-normal old web geek"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
 date: 2020-09-22T16:35:00-05:00
+lastmod: 2020-09-25T09:33:00-05:00
 #draft: true
-#lastmod
 discussionId: "2020-09-normal-persons-guide-static-websites"
 featured_image: christina-wocintechchat-com-EkeThvO9VfM-unsplash_6016x4016.jpg
 featured_image_width: 6016
@@ -40,11 +40,11 @@ So your choices now come down to having your site’s content be generated eithe
 
 Analogies aside, here are two diagrams that may also help you grasp the difference. First, the dynamic site, with its content that is generated every time somebody visits:
 
-{{< imgc src="diagram--dynamic-site_1600x900.png" alt="Diagram of a dynamic website" width="1600" height="900" >}}
+{{< imgc src="diagram--dynamic-site_Inter_1600x900.png" alt="Diagram of a dynamic website" width="1600" height="900" >}}
 
 Then, the static site, with content already in place for you to see:
 
-{{< imgc src="diagram--static-site_1600x900.png" alt="Diagram of a static website" width="1600" height="900" >}}
+{{< imgc src="diagram--static-site_Inter_1600x900.png" alt="Diagram of a static website" width="1600" height="900" >}}
 
 <p class="lazypicturecaption">Images used to build these diagrams (all&nbsp;sourced from&nbsp;<a href="https://pixabay.com">Pixabay</a>): <a href="https://pixabay.com/users/FiveFlowersForFamilyFirst-552028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2243898">FiveFlowersForFamilyFirst</a>; <a href="https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=41259">Clker-Free-Vector-Images</a>; <a href="https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1745473">200&nbsp;Degrees</a>; and <a href="https://pixabay.com/users/MTZD-1593970/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2488093">Mateusz&nbsp;Zdrzałek</a>.</p>
 
