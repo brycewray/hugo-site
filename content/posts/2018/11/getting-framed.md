@@ -6,12 +6,12 @@ author: Bryce Wray
 date: 2018-11-14T09:15:00-06:00
 lastmod: 2020-01-10T13:45:00-06:00
 discussionId: "2018-11-getting-framed"
-featured_image: scaffolding-1617969_4907x3137.jpg
-featured_image_width: 4907
-featured_image_height: 3137
-featured_image_alt: Scaffolding for a building, with construction workers climbing and working within
+featured_image: ricardo-gomez-angel-7bzbyafVTYg-unsplash_2859x1888.jpg
+featured_image_width: 2859
+featured_image_height: 1888
+featured_image_alt: Construction site for a building, with construction workers climbing and working within
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/AhmadArdity-3112014/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1617969">Ahmad Ardity</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1617969">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://unsplash.com/@ripato?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ricardo Gomez Angel</a>; <a href="https://unsplash.com/s/photos/construction?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 In an ideal world, web developers would never use [CSS frameworks](https://www.keycdn.com/blog/front-end-frameworks). There would be ample time, patience, and money for building everything from scratch to suit every single site to a tee. All load times would be instantaneous, and all browsers would be compatible with whatever a web dev chose to do.

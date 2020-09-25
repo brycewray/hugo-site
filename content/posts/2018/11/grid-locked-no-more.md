@@ -6,12 +6,12 @@ author: Bryce Wray
 date: 2018-11-28T09:00:00-06:00
 lastmod: 2019-10-02T19:20:00-05:00
 discussionId: "2018-11-grid-locked-no-more"
-featured_image: railing-4274523_6000x4000.jpg
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: Clear view of sky above fencing
+featured_image: grid-3424959_5227x2935.jpg
+featured_image_width: 5227
+featured_image_height: 2935
+featured_image_alt: Abstract view of metal grid
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/analogicus-8164369/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4274523">analogicus</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4274523">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://pixabay.com/users/scholty1970-7596740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3424959">Achim Scholty</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3424959">Pixabay</a></span>
 ---
 
 As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: “Never mind.”
