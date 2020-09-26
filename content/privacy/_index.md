@@ -44,4 +44,4 @@ I no longer embed YouTube or other sites’ videos, since they can and do transm
 
 ### Twitter content
 
-I no longer embed tweets, since they can and do transmit personal information through cookies. I have replaced formerly embedded tweets with just their text content combined with clearly identified links to their original locations, and footnoted each link (or set of links where multiple tweets were quoted, as in the case of “[Backtracking to Big G](/posts/2019/08/backtracking-to-big-g)” with a reference and link to this privacy policy.
+I no longer embed tweets, since they can and do transmit personal information through cookies. I have replaced formerly embedded tweets with just their text content combined with clearly identified links to their original locations, and footnoted each link (or set of links where multiple tweets were quoted, as in the case of “[Backtracking to Big G](/posts/2019/08/backtracking-to-big-g)”) with a reference and link to this privacy policy.
