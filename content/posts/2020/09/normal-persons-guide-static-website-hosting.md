@@ -82,7 +82,7 @@ Very simply, you can’t go wrong with [Netlify](https://netlify.com). It makes 
 
 ### \#3: Render
 
-The newest of the three, [Render](https://render.com), is going through inevitable growing pains, some of which I’ll mention herein, but still offers a lot. It’s perhaps more attractive an option for down the line than right now—but not too *far* down the line, because it’s making aggressive moves to catch up with its better-known competitors. Like Vercel, Render isn’t as focused on static sites as is Netlify—Render’s *raison d’être* basically is dethroning [Heroku](https://heroku.com) in the [platform as a service (PaaS)](https://www.infoworld.com/article/3223434/what-is-paas-software-development-in-the-cloud.html) world, which is another story— but still manages to include their support in its offerings.
+The newest of the three, [Render](https://render.com), is going through inevitable growing pains, some of which I’ll mention herein, but still offers a lot. It’s perhaps more attractive an option for down the line than right now—but not too *far* down the line, because it’s making aggressive moves to catch up with its better-known competitors. Like Vercel, Render isn’t as focused on static sites as is Netlify—Render’s *raison d’être* basically is dethroning [Heroku](https://heroku.com) in the [platform as a service (PaaS)](https://www.infoworld.com/article/3223434/what-is-paas-software-development-in-the-cloud.html) world, which is another story—but still manages to include their support in its offerings.
 
 #### Strengths
 
