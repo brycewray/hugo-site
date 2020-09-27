@@ -4,9 +4,16 @@
   }
 }
 
-i, cite, em, var, address, dfn, .italic, h3, .h3 {  /* overriding the Tailwind CSS .italic class */
+i, cite, em, var, address, dfn, h3, .h3, h5, .h5, h6, .h6 {  /* dealing with Inter VF */
   font-variation-settings: 'slnt' -7;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
+     so we override that below with the @-moz-document url-prefix media query for Firefox */
   font-style: oblique 7deg;
+  /* previous is needed by Firefox and Safari to prevent "over-slanting"; 
+     it apparently has no effect on Chromium */
+  @-moz-document url-prefix() {
+    font-variation-settings: normal;
+  }
 }
 
 html, body {
@@ -51,12 +58,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin-block-start: 0.25em;
   margin-block-end: 0.25em;
-}
-
-h3, h5, h6 {
-  // font-style: italic;
-  font-variation-settings: 'slnt' -7;
-  font-style: oblique 7deg;
 }
 
 h1, .h1 {
