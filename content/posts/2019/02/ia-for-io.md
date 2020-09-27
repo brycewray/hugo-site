@@ -4,7 +4,7 @@ subtitle: Evaluating iA Writer for use with an SSG
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
-lastmod: 2020-09-27T13:40:00-05:00
+lastmod: 2020-09-27T13:45:00-05:00
 discussionId: "2019-02-ia-for-io"
 featured_image: notebook-933362_4752x3168.jpg
 featured_image_width: 4752
@@ -30,7 +30,9 @@ Perhaps more to the point, I believe I was more concerned about how the [YAML](h
 
 {{< imgc src="iA-Writer-inline-footnotes_1548x582.jpg" alt="Screen capture from iA Writer software showing how footnotes look in it" width="1548" height="582" >}}
 
-That said, iA Writer’s inline footnotes, while fine for export from iA Writer, don’t fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs “think” when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.^[“Inline notes are easier to write, since you don’t have to pick an identifier and move down to type the note.” See [here](https://github.com/Witiko/markdown/issues/3)—the source of that quote—for an example of what I mean.] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses—that is to say, all the ones I’ve included on [my other posts](/posts) before this one—work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
+That said, iA Writer’s inline footnotes, while fine for export from iA Writer, don’t fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs “think” when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.[^inlineNotes] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses—that is to say, all the ones I’ve included on [my other posts](/posts) before this one—work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
+
+[^inlineNotes]: “Inline notes are easier to write, since you don’t have to pick an identifier and move down to type the note.” See [here](https://github.com/Witiko/markdown/issues/3)—the source of that quote—for an example of what I mean.
 
 ## Status quo, or no?
 
