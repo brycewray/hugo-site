@@ -87,6 +87,6 @@ The TL;DR version is that **both** changes came for the same reason[^earlyDays]:
 
 [^WMsgone]: By the same token, I also decided to give up [webmentions](https://indieweb.org/webmention) and all the ongoing technical debt they required—even though [I obviously knew how to get them working in Hugo, too](/posts/2020/04/webmentions-three-ssgs-3)—in favor of bringing back the hosted [Talkyard](https://talkyard.io) commenting platform, which is much more easily added and maintained.
 
-Yes, some not-so-simple things—including, yes, Firebase Hosting—may be nerdy fun, but I decided I wanted much less complexity on the other parts of the site. So I hit the **Rewind** button, and that’s where we are.
+Yes, some not-so-simple things—most definitely including Firebase Hosting—may be nerdy fun, but I decided I wanted much less complexity on the other parts of the site. So I hit the **Rewind** button, and that’s where we are.
 
 It is, if you’ll pardon the unintentional wordplay, as *simple* as that.
