@@ -4,7 +4,7 @@ subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2020-08-08T14:15:00-05:00
+lastmod: 2020-09-27T10:20:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_1280x720.jpg
 featured_image_width: 1280
@@ -14,8 +14,8 @@ featured_image_caption: |
   <span class="caption">Image: Hugo logo by Hugo creator Steve&nbsp;Francia, sourced&nbsp;from <a href="https://gohugo.io">Hugo&nbsp;website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/">Affinity&nbsp;Designer</a>.</span>
 ---
 
-<div class="border-black border-solid yellowBox">
-	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things</a> <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> multiple times since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
+<div class="yellowBox">
+	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things</a> <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> <a href="/posts/2019/10/now-gatsby-geezer">multiple</a> <a href="/posts/2020/09/ignition-sequence-start">times</a> since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
 </div>
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear—and I've even said as much—that I tend to have a problem avoiding New Shiny Things where tech is concerned.

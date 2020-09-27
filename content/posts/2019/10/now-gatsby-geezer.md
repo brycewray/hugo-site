@@ -4,7 +4,7 @@ subtitle: Gatsby Experiment III proves the winner
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray
 date: 2019-10-27T10:00:00-05:00
-#lastmod: t/k
+lastmod: 2020-09-27T10:20:00-05:00
 discussionId: "2019-10-now-gatsby-geezer"
 featured_image: gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker.jpg
 featured_image_width: 1920
@@ -13,6 +13,10 @@ featured_image_alt: "Gatsby monogram logo over monochrome photo of puzzle pieces
 featured_image_caption: |
   <span class="caption">Images: <a href="https://gatsbyjs.org">Gatsby</a>; <a href="https://pixabay.com/users/LeoNeoBoy-2404531/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">LeoNeoBoy</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">Pixabay</a></span>
 ---
+
+<div class="yellowBox">
+	<p><strong>Note</strong>: To put it simply, things have <a href="/posts/2019/12/packing-up">changed</a> <a href="/posts/2020/05/going-solo-eleventy">multiple</a> <a href="/posts/2020/09/ignition-sequence-start">times</a> since this post, but it reflects my thinking at the time, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
+</div>
 
 While stubbornness is by no means always a virtue, it has its moments. What I’ll be announcing in this post is proof.
 

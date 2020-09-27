@@ -14,8 +14,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Jan-Mallander-615621/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Jan Mallander</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Pixabay</a></span>
 ---
 
-<div class="border-black border-solid yellowBox">
-  <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
+<div class="yellowBox">
+	<p><strong>Note</strong>: To put it simply, things have <a href="/posts/2019/10/now-gatsby-geezer">changed</a> <a href="/posts/2019/12/packing-up">multiple</a> <a href="/posts/2020/09/ignition-sequence-start">times</a> since this post, but it reflects my thinking at the time, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
 </div>
 
 I’m not even going to make a big deal of this, or spend a lot of your time explaining it. I’m just going to say it in what for me is a fairly short post.

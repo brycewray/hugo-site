@@ -4,7 +4,7 @@ subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2020-08-08T14:15:00-05:00
+lastmod: 2020-09-27T10:20:00-05:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: detour-2496197_4912x3264.jpg
 featured_image_width: 4912
@@ -14,8 +14,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/awsloley-3972173/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">awsloley</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">Pixabay</a></span>
 ---
 
-<div class="border-black border-solid yellowBox">
-  <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
+<div class="yellowBox">
+	<p><strong>Note</strong>: To put it simply, things <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> <a href="/posts/2019/10/now-gatsby-geezer">multiple</a> <a href="/posts/2020/09/ignition-sequence-start">times</a> since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
 </div>
 
 Recently, I edited this site’s footer. Where it used to say that this site is powered by Hugo—*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)—it now says it’s powered by [the JAMstack](https://jamstack.org).
