@@ -4,7 +4,7 @@ subtitle: "Well, that didn’t last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00
-lastmod: 2020-01-01T09:56:00-06:00
+lastmod: 2020-09-27T10:20:00-05:00
 discussionId: "2019-09-back-with-hugo"
 featured_image: skid-mark-567668_3500x2333.jpg
 featured_image_width: 3500
