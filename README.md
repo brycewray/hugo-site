@@ -11,4 +11,4 @@ There are two **starter sets** based on this repo’s layout and design. Each us
 - [hugo_site_css-grid](https://github.com/brycewray/hugo_site_css-grid) — Uses PostCSS and TailwindCSS (and, thus, has more dependencies than you might want to handle, if coming from a Hugo-centric background).
 - [hugo_solo](https://github.com/brycewray/hugo_solo) — Like this site, handles styling [through SCSS via Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) and, thus, has **no** external dependencies.
 
-As for this repo, I suggest you use it **only for reference**.
+As for this repo, I suggest you use it **only for reference**. This is particularly true because this repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/), which likely will become the increasingly *de rigueur* way to use Hugo. (I’m going to give a try to learning them, but have no sense of urgency about doing so.)
