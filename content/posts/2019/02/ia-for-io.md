@@ -4,7 +4,7 @@ subtitle: Evaluating iA Writer for use with an SSG
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
-lastmod: 2020-06-20T09:45:00-05:00
+lastmod: 2020-09-27T13:40:00-05:00
 discussionId: "2019-02-ia-for-io"
 featured_image: notebook-933362_4752x3168.jpg
 featured_image_width: 4752
@@ -24,7 +24,7 @@ So this is yet another look at iA Writer as a potential “daily driver” for u
 
 ## Okay, I was YAMmering; sorry
 
-Perhaps more to the point, I believe I was more concerned about how the TOML (like [YAML](https://yaml.org)) “front matter” looked in the iA Writer Preview window than how the SSG would handle the final Markdown file. (As I [already explained](/posts/2018/09/why-finally-settled-ulysses), I get distracted by such things.) It turns out that doesn’t matter. You don’t have to enclose front matter in a ```code block``` for the SSG to know what to do with it—in fact, it doesn’t know what to do with it if you **do** put it in a code block.
+Perhaps more to the point, I believe I was more concerned about how the [YAML](https://yaml.org) “front matter” looked in the iA Writer Preview window than how the SSG would handle the final Markdown file. (As I [already explained](/posts/2018/09/why-finally-settled-ulysses), I get distracted by such things.) It turns out that doesn’t matter. You don’t have to enclose front matter in a ```code block``` for the SSG to know what to do with it—in fact, it doesn’t know what to do with it if you **do** put it in a code block.
 
 ## Footnote follies
 
