@@ -1,0 +1,52 @@
+baseURL: https://brycewray.com
+languageCode: en-us
+title: BryceWray.com
+theme: ofoti
+
+summaryLength: 30 # words --- if you use summaries
+FootnoteReturnLinkContents: "&#8593;"
+enableRobotsTXT: true
+
+Paginate: 5 # so five posts will appear on each page from "/posts"
+
+params:
+  Domain: "brycewray.com"
+  Author: "Bryce Wray"
+  Description: "Bryce Wray’s website | Observations, opinions, geekiness"
+  talkyardServerUrl: "https://comments-for-brycewray-com.talkyard.net"
+  talkyardScriptUrl=: "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
+
+markup:
+  # Reverting to Hugo-standard Goldmark parser and will handle typographical niceties
+  # on own (i.e., manually fixing them in my content files),
+  # due to Goldmark's ongoing and unlikely-to-be-resolved issues with typography:
+  # -- e.g., https://github.com/gohugoio/hugo/issues/7289
+  # and https://github.com/yuin/goldmark/issues/39#issuecomment-564810327
+  goldmark:
+    parser:
+      attribute: true
+    renderer:
+      unsafe: true
+      # only to allow for inline HTML and/or JS
+      # other desired settings are defaults
+    highlight:
+      guessSyntax: true
+      noClasses: false
+
+menu:
+  main:
+  - identifier: "about"
+    name: "About"
+    title: "The obligatory “About me” page"
+    url: "/about/"
+    weight: 100
+  - identifier: "posts"
+    name: "Posts"
+    title: "This site’s posts"
+    url: "/posts/"
+    weight: 110
+  - identifier: "privacy"
+    name: "Privacy"
+    title: "This site’s privacy policy"
+    url: "/privacy/"
+    weight: 120
