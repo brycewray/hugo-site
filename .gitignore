@@ -12,4 +12,3 @@ node_modules
 # Local Netlify folder
 .netlify
 .firebase
-static/.well-known
