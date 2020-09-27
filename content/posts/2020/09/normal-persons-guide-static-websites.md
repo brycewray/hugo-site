@@ -1,5 +1,5 @@
 ---
-title: "A normal person’s guide to static websites"
+title: "A normal person’s guide to static websites"
 subtitle: "Advice from a semi-normal old web geek"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
