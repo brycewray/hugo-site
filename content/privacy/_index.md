@@ -1,18 +1,20 @@
 ---
 title: "Privacy policy"
-description: "How my vendors and I protect you on this site"
+description: "How you’re protected on this site"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-09-26T04:45:00-05:00
+lastmod: 2020-09-27T13:15:00-05:00
 ---
 
-I could’ve done this with some long, drawn-out legalese borrowed from a website designed to *create* that legalese, but there was no need for it.
+This site **does NOT** store your personal information **in any way**. However, it does use a number of externally hosted services, each of which have its own privacy policies and methods of complying with applicable privacy regulations.
 
-My site and I **don’t** store your personal information—but, just in case I need to be clearer: this site **does NOT** store your personal information **in any way**. Period.
-
-That same email address is also where to send any questions about other privacy-related matters for this site.
+Since September 27, 2020, this site features the free tier of the [Osano](https://osano.com) data privacy platform, which allows you to choose whether to opt into using the affected services’ features.
 
 ## Notes about external services
+
+### Fathom Analytics
+
+This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
 
 ### Talkyard
 
