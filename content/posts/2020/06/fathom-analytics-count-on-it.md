@@ -128,3 +128,7 @@ Forgive me for mentioning this just once more, **but** if you [click here to tak
 But even if you just want to go to the Fathom Analytics [website](https://usefathom.com) without giving me or you a break, I urge you to check out this product. It has a lot going for it, especially considering the alternatives. It strikes me as the best option available now for knowing what your website’s doing while protecting both your visitors and you.
 
 Let’s put it this way: Fathom Analytics is the kind of counting on which you **can** count.
+
+----
+
+***Note, 2020-09-28**: I have reinstated Google Analytics on an least an experimental basis for the meantime (due in part to an application to [Google AdSense](https://adsense.google.com) in an attempt to monetize this site to some extent), but still also use Fathom Analytics and remain convinced that it’s a better choice for the vast majority of use cases.*
