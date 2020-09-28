@@ -48,7 +48,6 @@
       </div>
     {{ end }}
     <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
-    {{ partial "ty.html" . }}
   </div>
 </div>
 {{ end }}
