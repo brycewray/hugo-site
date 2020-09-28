@@ -38,7 +38,7 @@ Enough talk; on with the GitHub Action. Of course, it’s based on two assumptio
 [^versionInfo]: Just be sure the version conforms to how it shows up in the Hugo release filename, since this reference helps build that name for the download process in the GitHub Action; always check the [Hugo releases page](https://github.com/gohugoio/hugo/releases) to be sure about the accurate filename.
 
 
-```bash
+```yaml
 name: CI-Hugo-site-to-Firebase
 
 on:
