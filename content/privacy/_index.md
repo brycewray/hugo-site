@@ -3,12 +3,12 @@ title: "Privacy policy"
 description: "How you’re protected on this site"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-09-27T13:15:00-05:00
+lastmod: 2020-09-28T13:15:00-05:00
 ---
 
 This site **does NOT** store your personal information **in any way**. However, it does use a number of externally hosted services, each of which have its own privacy policies and methods of complying with applicable privacy regulations.
 
-Since September 27, 2020, this site features the free tier of the [Osano](https://osano.com) data privacy platform, which allows you to choose whether to opt into using the affected services’ features.
+Since September 28, 2020, this site features the free tier of the [Osano](https://osano.com) data privacy platform, which allows you to choose whether to opt into using the affected services’ features.
 
 ## Notes about external services
 
