@@ -14,7 +14,7 @@ params:
   Author: "Bryce Wray"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
   talkyardServerUrl: "https://comments-for-brycewray-com.talkyard.net"
-  talkyardScriptUrl=: "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
+  talkyardScriptUrl: "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 
 markup:
   # Reverting to Hugo-standard Goldmark parser and will handle typographical niceties
