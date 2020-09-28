@@ -1,20 +1,24 @@
 ---
 title: "Privacy policy"
-description: "How you’re protected on this site"
+#description: "How you’re protected on this site"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-09-28T13:15:00-05:00
+lastmod: 2020-09-28T15:25:00-05:00
 ---
 
-This site **does NOT** store your personal information **in any way**. However, it does use a number of externally hosted services, each of which have its own privacy policies and methods of complying with applicable privacy regulations.
+This site and its owner **do NOT** store your personal information **in any way**. However, the site does use a number of **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
-Since September 28, 2020, this site features the free tier of the [Osano](https://osano.com) data privacy platform, which allows you to choose whether to opt into using the affected services’ features.
+As a way of helping to protect your privacy, this site features the free tier of the [Osano](https://osano.com) data privacy platform, which allows you to choose whether to opt into using the affected services’ features.
 
 ## Notes about external services
 
 ### Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
+
+### Google Analytics
+
+This site is once again using [Google Analytics](https://analytics.google.com) on at least an experimental basis, particularly in view of an application I’ve made to [Google AdSense](https://adsense.google.com) that may allow at least some monetization of this site. 
 
 ### Talkyard
 
@@ -27,10 +31,6 @@ This site is hosted on Google's [Firebase](https://firebase.google.com) service 
 - **Cloud Logging** — This feature allows me to view the actual logs from the [Fastly](https://fastly.com) content delivery network, with which Firebase’s hosting functionality works. (Of course, such logs would exist regardless of whether one accesses them.) I view these logs only to get a general sense of site activity and performance, **not** to identify any individual. For more information about Cloud Logging, see its [documentation](https://firebase.google.com/docs/hosting/web-request-logs-and-metrics). Please refer also to the [Fastly Privacy Policy](https://www.fastly.com/privacy).
 
 - **Firebase Performance Monitoring** — The [introduction to this feature’s documentation](https://firebase.google.com/docs/perf-mon/) says: *“Performance Monitoring does not permanently store any personally identifiable information (such as names, email addresses, or phone numbers). While monitoring HTTP network requests, Performance Monitoring uses URLs (not including URL parameters) to build aggregated and anonymous URL patterns that are eventually persisted and shown in the Firebase console.”*
-
-### Google Analytics
-
-Data collected through my former use of [Google Analytics](https://analytics.google.com) was deleted, by my request, on 2020-08-09. Even when the data was active, I never used it to identify any individual.
 
 ### Google Fonts
 
