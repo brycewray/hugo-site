@@ -2,7 +2,6 @@ baseURL: https://brycewray.com
 languageCode: en-us
 title: BryceWray.com
 theme: ofoti
-googleAnalytics: UA-146418828-1
 
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
