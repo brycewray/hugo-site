@@ -7,6 +7,9 @@ summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
 
+pygmentsUseClasses: true
+
+
 Paginate: 5 # so five posts will appear on each page from "/posts"
 
 params:
