@@ -1,6 +1,5 @@
 ---
 title: "Privacy policy"
-description: "How you’re protected on this site"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
 lastmod: 2020-09-29T08:50:00-05:00
