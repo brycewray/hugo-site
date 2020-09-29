@@ -4,7 +4,7 @@ subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
 date: 2020-06-18T23:45:00-05:00
-#lastmod: TBD
+lastmod: 2020-09-29T08:50:00-05:00
 discussionId: "2020-06-fathom-analytics-count-on-it"
 featured_image: alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg
 featured_image_width: 6024
@@ -128,7 +128,3 @@ Forgive me for mentioning this just once more, **but** if you [click here to tak
 But even if you just want to go to the Fathom Analytics [website](https://usefathom.com) without giving me or you a break, I urge you to check out this product. It has a lot going for it, especially considering the alternatives. It strikes me as the best option available now for knowing what your website’s doing while protecting both your visitors and you.
 
 Let’s put it this way: Fathom Analytics is the kind of counting on which you **can** count.
-
-----
-
-***Note, 2020-09-28**: I have reinstated Google Analytics on an least an experimental basis for the meantime (due in part to an application to [Google AdSense](https://adsense.google.com) in an attempt to monetize this site to some extent), but still also use Fathom Analytics and remain convinced that it’s a better choice for the vast majority of use cases.*

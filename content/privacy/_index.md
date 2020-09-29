@@ -1,24 +1,18 @@
 ---
 title: "Privacy policy"
-#description: "How you’re protected on this site"
+description: "How you’re protected on this site"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-09-28T19:45:00-05:00
+lastmod: 2020-09-29T08:50:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use a number of **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
-
-As a way of helping you protect your privacy, this site features the [open-source Osano Cookie Consent tool](https://github.com/osano/cookieconsent) to alert you about the use of the external services’ cookies.
 
 ## Notes about external services
 
 ### Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
-
-### Google Analytics
-
-This site is once again using [Google Analytics](https://analytics.google.com) on at least an experimental basis, particularly in view of an application I’ve made to [Google AdSense](https://adsense.google.com) that may allow at least some monetization of this site. 
 
 ### Talkyard
 
