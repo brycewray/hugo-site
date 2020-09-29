@@ -2,6 +2,7 @@
     <!-- Osano consent management -->
     <!--<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" defer></script>-->
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
       "palette": {
@@ -14,13 +15,15 @@
           "text": "#333333"
         }
       },
-      "type": "opt-in",
+      "theme": "classic",
+      "position": "bottom-right",
       "content": {
-        "href": "https://brycewray.com/privacy/"
+        "message": "External services use cookies to help us improve the site.",
+        "link": "See our privacy policy.",
+        "href": "https://www.brycewray.com/privacy"
       }
     });
-    </script>
-    <!-- Google Analytics -->
+    </script>    <!-- Google Analytics -->
     {{ template "_internal/google_analytics_async.html" . }}
 
     <!-- AdSense -->
