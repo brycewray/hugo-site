@@ -1,7 +1,25 @@
 
     <!-- Osano consent management -->
-    <script src="https://cmp.osano.com/Azyw3DSBu4ln51IzC/9212354d-6570-44d3-8004-a08ac31601ed/osano.js" defer></script>
-
+    <!--<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" defer></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#0000aa",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#88ddff",
+          "text": "#333333"
+        }
+      },
+      "type": "opt-in",
+      "content": {
+        "href": "https://brycewray.com/privacy/"
+      }
+    });
+    </script>
     <!-- Google Analytics -->
     {{ template "_internal/google_analytics_async.html" . }}
 
