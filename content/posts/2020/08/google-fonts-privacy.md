@@ -4,7 +4,7 @@ subtitle: "It’s about more than trust"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T14:35:00-05:00
-lastmod: 2020-09-28T13:55:00-05:00
+lastmod: 2020-09-28T20:05:00-05:00
 discussionId: "2020-08-google-fonts-privacy"
 featured_image: morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg
 featured_image_width: 3000
@@ -73,7 +73,7 @@ While there probably are ways to do that when one has total control of the serve
 
 Moreover, I wouldn’t *want* to do that. I’m annoyed whenever I encounter all this permissions-requesting stuff on one site after another, and I don’t want to put my visitors through it.
 
-<div class="yellowBox"><p><strong>Note, 2020-09-28</strong>: However, I later encountered the need to do just that, due to my choice to add several third-party services after I originally wrote this. As a result, I began using the free tier of the <a href="https://osano.com" target="_blank" rel="noopener">Osano</a> data privacy platform, which did enable me to add that additional consent feature for your protection, and with a minimum of trouble on my part—just one extra line of code in each page’s  <code>head</code> section .</p></div>
+<div class="yellowBox"><p><strong>Note, 2020-09-28</strong>: However, I later encountered the need to do just that, due to my choice to add several third-party services after I originally wrote this. As a result, I began using the <a href="https://github.com/osano/cookieconsent" target="_blank" rel="noopener">open-source Osano CookieConsent tool</a>.</p></div>
 
 So, yesterday, I began serving my chosen Google Fonts typefaces “locally.” I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts—yes, from Google—and “locally” provide them. (I explain the procedure in “[Good stuff without Google](/posts/2020/08/good-stuff-without-google).”)
 
