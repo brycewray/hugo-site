@@ -83,7 +83,7 @@ Beyond my own inconvenience, however, I wonder just how long the whole house of 
 
 Every month, tens of thousands more homes cut the cord—often in favor of services like the ultra-low-cost [Philo](https://try.philo.com) that have *no* sports programming because that allows the services to charge less, freed of the growing fees demanded by the sports-specific networks like ESPN and the RSNs.[^NoPhilo] And, almost as often, more non-cable TV services that *were* carrying the sports nets are dropping the increasingly expensive RSNs rather than passing along the costs to their subscribers.
 
-[^NoPhilo]: Philo is a no-go for our household primarily because it doesn’t have our local network affliates, but also due to its much more spartan cloud DVR service as compared to YouTube TV. Still, for those who care about neither local TV nor extensive DVR functionality, it’s a good option and a great value.
+[^NoPhilo]: Philo is a no-go for our household primarily because it doesn’t have our local network affiliates, but also due to its much more spartan cloud DVR service as compared to YouTube TV. Still, for those who care about neither local TV nor extensive DVR functionality, it’s a good option and a great value.
 
 As a result, the pool of TV money on which the pro sports organizations have depended will, inevitably, shrink.
 
