@@ -4,8 +4,8 @@ subtitle: "Where your site should “live”"
 description: "After suggesting how a non-geek could most easily have a website, I now offer thoughts on the site’s hosting."
 author: Bryce Wray
 date: 2020-09-26T13:55:00-05:00
+lastmod: 2020-10-01T06:45:00-05:00
 #draft: true
-#lastmod
 discussionId: "2020-09-normal-persons-guide-static-website-hosting"
 featured_image: tim-mossholder-GOMhuCj-O9w-unsplash_9000x6000.jpg
 featured_image_width: 9000
@@ -105,4 +105,4 @@ Unlike finding a physical home for yourself, finding an online home for your web
 
 [^2]:	Of course, this doesn’t include the domain name server (DNS) settings that go with it, which you still have to do at your domain’s name server vendor of choice; however, these vendors give you as much help on that, too, as is possible and reasonable.
 
-[^3]:	That earlier post mentioned *four* hosts, counting Netlify; but I’m leaving out [Firebase](https://firebase.google.com) because, although it has much to recommend it—and, indeed, at this writing I’ve moved to it on at least a temporary, out-of-curiosity basis—it’s clearly *not* suitable for non-geeks. (But, boy, is it fun for those of us who *are* geeks.)
+[^3]:	That earlier post mentioned *four* hosts, counting Netlify; but I’m leaving out [Firebase](https://firebase.google.com) because, although it has much to recommend it, it’s clearly *not* suitable for non-geeks.

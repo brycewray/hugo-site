@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-10-01T06:35:00-05:00
+lastmod: 2020-10-01T06:45:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -25,7 +25,7 @@ Actually, there were multiple reasons:
 - I had already been an admirer of the performance of the [Fastly](https://fastly.com) content delivery network (CDN) that Firebase uses, and found it was consistently better than the CDN setups provided with the free tiers for the other three hosts I’d been using and testing ([Netlify](https://netlify.com), [Render](https://render.com), and [Vercel](https://vercel.com)).
 - In the last few days, I tinkered around and was able to come up with a [GitHub Action](https://github.com/features/actions) that made it possible to **deploy** (in Firebase terminology) to Firebase Hosting every time I pushed a change to the site repo’s default branch—*i.e.*, making it as easy as when using the repo with those other three hosts. Yes, you can just do a local site build and then invoke `firebase deploy`, but that’s an extra step; I’ve kinda gotten accustomed to the ease of the push-to-repo method and didn’t want to give it up.
 
-Sharing that GitHub Action with you is the purpose of this post, in case it might be of use to others who use both Firebase Hosting and the [Hugo](https://gohugo.io) static site generator.
+Sharing that GitHub Action with you is the purpose of this post, in case it might be of use to those who use both Firebase Hosting and the [Hugo](https://gohugo.io) static site generator.
 
 *(Whoa, Hugo and not [Eleventy](https://11ty.dev) any more? Yes. See the [epilogue](#epiloguehead) for more on that.)*
 
