@@ -1,29 +1,28 @@
 ---
 title: "Privacy policy"
+description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-09-29T08:50:00-05:00
+lastmod: 2020-10-01T06:40:00-05:00
 ---
 
-This site and its owner **do NOT** store your personal information **in any way**. However, the site does use a number of **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
+This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
 
-### Fathom Analytics
+### Analytics
+
+#### Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
+
+#### Plausible Analytics
+
+At this time, the site is also on a free 30-day trial of [Plausible Analytics](https://plausible.io), which is [similarly privacy-focused](https://plausible.io/privacy-focused-web-analytics). The trial is due to end near the end of October.
 
 ### Talkyard
 
 This site uses the [Talkyard](https://talkyard.io) platform for commenting. Logging into your user profile in Talkyard allows you to download your personal data and delete your comments. As an anti-spam and anti-“troll” measure, Talkyard itself briefly tracks each incoming IP address (or IP subnet) and installs a browser cookie. Please refer also to the [Talkyard Privacy Policy](https://www.talkyard.io/-/privacy-policy) and see the “Google Fonts” section below.
-
-### Firebase
-
-This site is hosted on Google's [Firebase](https://firebase.google.com) service and uses the following Firebase features:
-
-- **Cloud Logging** — This feature allows me to view the actual logs from the [Fastly](https://fastly.com) content delivery network, with which Firebase’s hosting functionality works. (Of course, such logs would exist regardless of whether one accesses them.) I view these logs only to get a general sense of site activity and performance, **not** to identify any individual. For more information about Cloud Logging, see its [documentation](https://firebase.google.com/docs/hosting/web-request-logs-and-metrics). Please refer also to the [Fastly Privacy Policy](https://www.fastly.com/privacy).
-
-- **Firebase Performance Monitoring** — The [introduction to this feature’s documentation](https://firebase.google.com/docs/perf-mon/) says: *“Performance Monitoring does not permanently store any personally identifiable information (such as names, email addresses, or phone numbers). While monitoring HTTP network requests, Performance Monitoring uses URLs (not including URL parameters) to build aggregated and anonymous URL patterns that are eventually persisted and shown in the Firebase console.”*
 
 ### Google Fonts
 
@@ -32,6 +31,8 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 [^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, “[GDPR compliance](https://github.com/google/fonts/issues/1495).”
 
 Please note that the Talkyard commenting platform by default uses Google Fonts; while I have made settings changes that prevent their being used, Talkyard still downloads Google-served CSS that normally accompanies them and, in the developer’s opinion, does transmit the user’s IP address to Google. Talkyard is working on an option to allow site administrators to disable Google Fonts and, when that’s available, I will implement it.
+
+## Other considerations
 
 ### Embedded videos
 

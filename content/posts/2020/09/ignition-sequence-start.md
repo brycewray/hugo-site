@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-09-30T16:35:00-05:00
+lastmod: 2020-10-01T06:35:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
