@@ -3,7 +3,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-10-01T13:55:00-05:00
+lastmod: 2020-10-02T07:00:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -22,7 +22,7 @@ At this time, the site is also on a free 30-day trial of [Plausible Analytics](h
 
 ### Utterances
 
-This site uses [Utterances](https://utteranc.es) for commenting (requires a free [GitHub](https://github.com) account). Your comment becomes an issue in the site repo; feel free to delete it if you wish.
+This site uses [Utterances](https://utteranc.es) for commenting (requires a free [GitHub](https://github.com) account). Your comment becomes part of an issue in the [site repo](https://github.com/brycewray/hugo_site); you’re always free to delete it.
 
 ### Google Fonts
 
