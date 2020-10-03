@@ -5,8 +5,8 @@
   "main": "postcss.config.js",
   "scripts": {
     "clean": "rm -rf public",
-    "start": "NODE_ENV=development npm-run-all clean --parallel dev:*",
-    "startIP": "NODE_ENV=development npm-run-all clean --parallel devIP:*",
+    "start": "NODE_ENV=production npm-run-all clean --parallel dev:*",
+    "startIP": "NODE_ENV=production npm-run-all clean --parallel devIP:*",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "testbuild": "NODE_ENV=production npm-run-all clean --parallel testbuild:*",
     "testbuildIP": "NODE_ENV=production npm-run-all clean --parallel testbuildIP:*",
