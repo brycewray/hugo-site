@@ -5,9 +5,21 @@
 /* purgecss start ignore */
 @tailwind base;
 
+.italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+  font-variation-settings: 'slnt' -7;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
+     so we override that below with the @-moz-document url-prefix media query for Firefox */
+  font-style: oblique 7deg;
+  /* previous is needed by Firefox and Safari to prevent "over-slanting"; 
+     it apparently has no effect on Chromium */
+  @-moz-document url-prefix() {
+    font-variation-settings: normal;
+  }
+}
 html, body {
   @apply font-sans-serif;
   font-feature-settings: "liga" 1;
+  font-weight: 425;
 }
 
 #content {
@@ -95,12 +107,18 @@ a.navborderless {
 .dateInfo {
   @apply text-gray-700;
 }
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply font-bold leading-tight tracking-tight;
+  @apply leading-tight tracking-tight;
 }
 
 h1, .h1 {
   @apply text-4xl mb-4;
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
 }
 
 h2, .h2 {
@@ -108,7 +126,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @apply text-2xl italic;
+  @apply text-2xl;
 }
 
 h4, .h4 {
