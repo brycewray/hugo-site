@@ -6,7 +6,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
   @apply p-0 m-0;
 
   & a {
-    @apply block py-1 px-4 mb-1 text-white no-underline transition-opacity duration-500 ease-linear;
+    @apply block py-1 px-4 mb-1 text-white no-underline transition-opacity duration-150 ease-linear;
 
     &:link, &:visited {
       @apply text-white;
@@ -20,7 +20,10 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
 
 @media (min-width: 900px) {
   .nav__item {
-    @apply text-xs inline-block;
+    @apply text-xs inline-block lowercase;
+    font-variant: small-caps;
+    font-weight: 700;
+    letter-spacing: 0.25em;
     & a {
       @apply inline-block pt-1 pb-0 no-underline
     }
@@ -50,7 +53,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
 }
 
 .nav__icon-line {
-  @apply absolute block bg-white rounded left-0 transition-all duration-500 w-6 h-1 ease-linear;
+  @apply absolute block bg-white rounded left-0 transition-all duration-150 w-6 h-1 ease-linear;
 
   &:first-child {
     @apply top-0;
@@ -71,7 +74,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
    &:checked {
      & ~ nav .nav__items {
        height: auto;
-       @apply bg-blue-700 transition-all duration-500 ease-linear;
+       @apply bg-blue-700 transition-all duration-200 ease-linear;
        max-height: 30rem;
      }
      & ~ label .nav__icon-line:first-child {
@@ -87,10 +90,10 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
 }
  
 nav {
-  @apply absolute text-left left-0 w-full transition duration-500 ease-linear transform scale-x-100 scale-y-0 origin-top;
+  @apply absolute text-left left-0 w-full transition duration-150 ease-linear transform scale-x-100 scale-y-0 origin-top;
   top: 100%;
   & ul {
-    @apply pl-0 m-0 text-right list-none transition duration-500 ease-linear;
+    @apply pl-0 m-0 text-right list-none transition duration-150 ease-linear;
   }
   & li {
     @apply mb-2 inline;

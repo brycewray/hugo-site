@@ -10,10 +10,10 @@
   /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
      so we override that below with the @-moz-document url-prefix media query for Firefox */
   font-style: oblique 7deg;
-  /* previous is needed by Firefox and Safari to prevent "over-slanting"; 
-     it apparently has no effect on Chromium */
+  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
   @-moz-document url-prefix() {
     font-variation-settings: normal;
+    font-style: normal;
   }
 }
 html, body {
