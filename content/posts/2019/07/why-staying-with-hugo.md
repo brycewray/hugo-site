@@ -119,7 +119,7 @@ You plan a structure. This structure has directories—folders, if you prefer—
 
 [^index]: In each case where you see `index.html` in this diagram, it could just as easily be `index.php`, or `index.asp`, or `index.js`, or whatever makes sense for the particular site's setup.
 
-```markup
+```bash
 . [top level, usually "/public_html" on a server]
 └── index.html [site's home page]
     └── about [directory]
@@ -168,7 +168,7 @@ Late in the third week of this effort, even as I got those last few items workin
 
 One other thing kept nagging at me, also: footnotes. Here on the Hugo site, as I [explained](/posts/2019/02/ia-for-io) back in February, I can type stuff like this:
 
-```
+```md
 This is how you do footnotes[^footnoteInfo] in 
 Markdown and Hugo, even as you keep adding them, 
 moving them around within the doc, *etc.*, and 

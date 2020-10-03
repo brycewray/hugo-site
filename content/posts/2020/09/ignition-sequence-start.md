@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-10-02T12:55:00-05:00
+lastmod: 2020-10-03T12:40:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -31,9 +31,7 @@ Sharing that GitHub Action with you is the purpose of this post, in case it migh
 
 This GitHub Action purposely does **not** use the widely used and excellent [GitHub Actions for Hugo](https://github.com/peaceiris/actions-hugo) by [Shohei Ueda (peaceiris)](https://github.com/peaceiris) to install Hugo during the build process, because—as was the case with [Andrew Connell](https://andrewconnell.com), whose example I followed and to whom I am grateful for the information he imparted in “[Automated Hugo Releases With GitHub Actions](https://www.andrewconnell.com/blog/automated-hugo-releases-with-github-actions/)”—I preferred having more control over that exact part.
 
-Enough talk; on with the GitHub Action. Of course, it’s based on two assumptions: (a.) you’ve initialized your repo for Firebase, thus creating the `.firebaserc` and `firebase.json` files mentioned at the end; and (b.) you’ve stored your Firebase token—called below by `${{ secrets.FIREBASE_TOKEN }}`—in your repo’s **Secrets**. If you don’t **have** a Firebase token, you get that with `firebase login:ci` from the CLI, as explained in the [documentation](https://firebase.google.com/docs/cli#cli-ci-systems). You’ll note that I have `npm run build` in the *Build site with Hugo* step; but that’s peculiar to my formerly-using-[NodeJS](https://nodejs.org) repo (a long story) and, in fact, only does `rm -rf public && hugo --gc --minify`—so you may want to use a variation of that, instead, if you’ve kept *your* Hugo repo Node-free. The Hugo version shown is the latest as of this post’s original publication; set it as you wish.[^versionInfo] I’m using the [extended version](https://gohugo.io/troubleshooting/faq/#i-get-tocss--this-feature-is-not-available-in-your-current-hugo-version) to support [SCSS through Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/).
-
-*(Whoa a second time, SCSS and not [Tailwind CSS](https://tailwindcss.com) any more? Yup. The [epilogue](#epiloguehead) explains that, too.)*
+Enough talk; on with the GitHub Action. Of course, it’s based on two assumptions: (a.) you’ve initialized your repo for Firebase, thus creating the `.firebaserc` and `firebase.json` files mentioned at the end; and (b.) you’ve stored your Firebase token—called below by `${{ secrets.FIREBASE_TOKEN }}`—in your repo’s **Secrets**. If you don’t **have** a Firebase token, you get that with `firebase login:ci` from the CLI, as explained in the [documentation](https://firebase.google.com/docs/cli#cli-ci-systems). You’ll note that I have `npm run build` in the *Build site with Hugo* step, because I’m using [Tailwind CSS](https://tailwindcss.com) (and, therefore, [PostCSS](https://postcss.org). if you’ve kept *your* Hugo repo Node-free, you may want to use `rm -rf public && hugo --gc --minify`, instead.  The Hugo version shown is the latest as of this post’s original publication; set it as you wish.[^versionInfo] I’m using the [extended version](https://gohugo.io/troubleshooting/faq/#i-get-tocss--this-feature-is-not-available-in-your-current-hugo-version) for my occasional use of [SCSS through Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/), which does require the extended version.
 
 [^versionInfo]: Just be sure the version conforms to how it shows up in the Hugo release filename, since this reference helps build that name for the download process in the GitHub Action; always check the [Hugo releases page](https://github.com/gohugoio/hugo/releases) to be sure about the accurate filename.
 
@@ -79,11 +77,7 @@ So, what up, homie? At least, some of you may be thinking that, in so many words
 
 Yes, it's true: I'm back with the Hugo SSG after nearly ten months of peace from my infamous “[dance](/posts/2019/12/sorta-strange-ssg-trip)” among multiple SSGs. As for why, it’s actually a mercifully short story. I can assure you it has **absolutely nothing** to do with a change of opinion about Eleventy—as I hope my laudatory words about it in “[A normal person’s guide to static websites](/posts/2020/09/normal-persons-guide-static-websites)” made clear. I still tremendously admire Eleventy and its great community, and think it's an excellent choice for anyone wanting to build one's website, and even more so if one is interested in a JavaScript-based SSG. On that score, one can’t possibly do better than Eleventy.
 
-Similarly: yes, I returned to SCSS from Tailwind CSS and the [PostCSS](https://postcss.org) it requires, despite not only my still-friendly feelings about Tailwind (as noted in “[Going solo with Eleventy](/posts/2020/05/going-solo-eleventy)”) but also my “I’m done with SCSS and am adopting PostCSS instead” comments in the earlier “[Two cheers for Tailwind](/posts/2020/01/two-cheers-tailwind/).” 
-
-The TL;DR version is that **both** changes came for the same reason[^earlyDays]: after much thought, I felt an overwhelming desire to return to the **simplicity** I had in the early days of building and running this site. That led me back to the single-binary, all-in-one Hugo (with its built-in support for SCSS) rather than staying with Eleventy *and* Tailwind *and* PostCSS *and* all that goes with NodeJS—well, you get my point.[^WMsgone]
-
-[^earlyDays]:  However, both didn’t occur at the same time; during the first few days back with Hugo, I still had Tailwind as part of the [site stack](/posts/2020/07/stacks-and-stacks).
+The TL;DR version is that, after much thought, I felt an overwhelming desire to return to the **simplicity** I had in the early days of building and running this site. That led me back to the single-binary, all-in-one Hugo.[^WMsgone]
 
 [^WMsgone]: By the same token, I also decided to give up [webmentions](https://indieweb.org/webmention) and all the ongoing technical debt they required—even though [I obviously knew how to get them working in Hugo, too](/posts/2020/04/webmentions-three-ssgs-3)—in favor of a more easily added and maintained commenting platform: first, [Talkyard](https://talkyard.io), which I’d used previously; and, more recently, [Utterances](https://utteranc.es).
 
