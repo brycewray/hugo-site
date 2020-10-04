@@ -4,7 +4,7 @@ subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
-lastmod: 2020-08-21T16:30:00-05:00
+lastmod: 2020-10-04T10:45:00-05:00
 discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -91,3 +91,5 @@ The upshot of all this is that I deliver the same images as before—with better
 Did I give up some speed, [some performance](/posts/2020/07/chasing-100-tips-optimizing-website), in adopting Cloudinary? Well, maybe some, depending on the point from which the site is being tested—but keep in mind that Cloudinary-hosted assets are delivered via the aptly named [Fastly CDN](https://fastly.com), and its caching helps assure that, once the file has been seen *somewhere* within a region, it’s likely the CDN will deliver it ultra-quickly.
 
 I am willing to give up a few points off my performance scores. The relief I feel in *not* having to manage those images, *not* having to do *local builds* of those images, and *not* having to worry about how long my build times will be six months or a year or two years from now—believe me, it’s worth it.
+
+<div class="yellowBox"><p><strong>Update, 2020-10-04</strong>: While I remain impressed by all that’s included on Cloudinary’s free tier, one thing that’s not and <a href="https://support.cloudinary.com/hc/en-us/articles/202520562-Can-we-deliver-our-files-using-a-subdomain-of-our-own-domain-Like-a-CNAME-from-cdn-example-com-" target="_blank" rel="nofollow">apparently never will be</a> is CNAME support for a custom domain. (It comes only with Cloudinary’s highest-priced tier, which <a href="https://cloudinary.com/pricing" target="_blank" rel="nofollow">ranges from $224 to $249 per month</a> as of this writing.) In other words, each non-SVG image on my site as of now is coming from <code>res.cloudinary.com</code> rather than, say, <code>images.brycewray.com</code>—and that causes the images to be blocked by anally configured firewalls, especially in always-anal CorporateLand. So, much to my regret, I now must re-evaluate whether this is my best course going forward. This stuff is never as easy as it seems at first, I’m afraid.</p></div>
