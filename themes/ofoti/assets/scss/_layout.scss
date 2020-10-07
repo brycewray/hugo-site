@@ -3,8 +3,8 @@
 }
 
 #content .topOfMain, main .topOfMain {
-  margin-top: 0.5em;
-  font-size: 2.25em;
+  margin-top: 0.5rem;
+  font-size: 2.25rem;
 }
 
 .text-nowrap, .nobrk {
@@ -15,7 +15,7 @@ img.containedImage, figure {
   display: block;
   width: 100%;
   height: auto;
-  margin: 1em auto;
+  margin: 1rem auto;
   margin-right: auto;
   margin-left: auto;
 }
@@ -41,21 +41,21 @@ img.containedImage, figure {
 
 footer {
   text-align: center;
-  font-size: $legal + unquote("em");
-  margin: 4em auto 0 auto;
+  font-size: $legal + unquote("rem");
+  margin: 4rem auto 0 auto;
   width: 100%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   p {
-    line-height: 1.5em;
+    line-height: 1.5em; // definitely em, not rem, here
   }
   div.footerWrapper {
     margin: 0 auto;
     width: 80%;
   }
   @media (min-width: 900px) {
-    margin: 2em auto 0 auto;
-    padding-bottom: 1em;
+    margin: 2rem auto 0 auto;
+    padding-bottom: 1rem;
     div.footerWrapper {
       width: 65%;
     }
@@ -149,8 +149,8 @@ footer {
     margin: 0 auto;
     text-shadow: 4px 4px 2px #000;
     text-align: center;
-    letter-spacing: -0.025em;
-    padding: 0.25em;
+    letter-spacing: -0.025rem;
+    padding: 0.25rem;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       text-align: left;
     }
@@ -159,34 +159,34 @@ footer {
     }
   }
   &-title-text {
-    font-size: 2.5em;
-    padding-top: 0.5em;
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
     padding-bottom: 0;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      font-size: 3.5em;
+      font-size: 3.5rem;
       padding-right: 4%;
       padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       padding-top: 0;
-      font-size: 4em;
+      font-size: 4rem;
       padding-right: 5%;
       padding-left: 5%;
     }
   }
   &-subtitle-text {
-    font-size: 1.5em;
-    padding-top: 0.25em;
-    padding-bottom: 0.5em;
+    font-size: 1.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
       @media screen and (min-width: 769px) and (max-width: 1024px) {
-      padding-top: 1em;
-      font-size: 2.25em;
+      padding-top: 1rem;
+      font-size: 2.25rem;
       padding-right: 4%;
       padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
-      font-size: 3em;
-      padding-top: 0.75em;
+      font-size: 3rem;
+      padding-top: 0.75rem;
       padding-right: 5%;
       padding-left: 5%;
     }
@@ -195,13 +195,13 @@ footer {
     display: none; // appears only on wider screens
     @media screen and (min-width: 769px) {
       display: block;
-      padding-top: 0.25em;
-      font-size: 1.25em;
+      padding-top: 0.25rem;
+      font-size: 1.25rem;
       padding-right: 4%;
       padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       padding-right: 4%;
       padding-left: 5%;
     }
@@ -232,13 +232,13 @@ img.featured-image {
 }
 
 .featured-image-caption {
-  margin-top: 0.25em;
-  padding-bottom: 1.5em;
+  margin-top: 0.25rem;
+  padding-bottom: 1.5rem;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
   text-align: center !important;
-  font-size: $legal + unquote("em");
+  font-size: $legal + unquote("rem");
   color: $grey-1;
   @media (prefers-color-scheme: dark) {
     color: $grey-2-dark-mode;
@@ -247,7 +247,7 @@ img.featured-image {
 
 table.leagues {
 	width: 90%;
-	margin: 1em auto 0 auto;
+	margin: 1rem auto 0 auto;
 	border: 0;
 	border-collapse: collapse;
 	@media (min-width: 900px) {
@@ -260,7 +260,7 @@ table.leagues {
 
 table.noborders {
   width: 100%;
-  margin: 1.5em auto 1em auto;
+  margin: 1.5rem auto 1rem auto;
   border: 0;
   border-collapse: collapse;
 
@@ -274,7 +274,7 @@ table.noborders {
   td {
     text-align: left !important;
     vertical-align: middle;
-    padding: 0.25em 0 0.25em 0.5em;
+    padding: 0.25rem 0 0.25rem 0.5rem;
     img {
       display: inline-block;
       vertical-align: middle;
@@ -325,8 +325,8 @@ img.postsFeatImg {
   padding-left: 0;
   @media (min-width: 900px) {
     float: right;
-    padding-top: 1em;
-    padding-left: 1.5em;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
     width: 50%;
     height: auto;
   }
@@ -345,20 +345,20 @@ img.postsFeatImg {
     @media screen and (min-width: 769px) {
       width: 75%;
       grid-template-columns: 60% 1fr;
-      grid-gap: 3em;
-      padding-top: 0.5em;
+      grid-gap: 3rem;
+      padding-top: 0.5rem;
     }
     .column-home {
       article {
         p {
-          font-size: 1.15em;
+          font-size: 1.15rem;
           line-height: 1.6;
         }
       }
     }
   }
   &-narrower {
-    margin: 1em auto 0 auto;
+    margin: 1rem auto 0 auto;
     width: 80%;
 
     figure img {
@@ -366,7 +366,7 @@ img.postsFeatImg {
     }
 
     .twitter-tweet {
-      margin: 1em auto 0 auto;
+      margin: 1rem auto 0 auto;
     }
 
     @media (min-width: 900px) {
@@ -389,25 +389,25 @@ img.postsFeatImg {
 }
 
 .bg-dark {
-  margin-top: 2.5em;
+  margin-top: 2.5rem;
   background-color: $darkblue !important;
-	padding: 0.5em 0 1em 0;
+	padding: 0.5rem 0 1rem 0;
   div, p {
     color: #fff;
 	}
 	h3, p {
 		margin: 0;
-		padding: 0.15em 0;
+		padding: 0.15rem 0;
   }
   h3.prevnextH3 {
-    font-size: 1.875em;
+    font-size: 1.875rem;
   }
   p.prevnextP {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    font-size: 1.25em;
-    letter-spacing: -0.025em;
+    font-size: 1.25rem;
+    letter-spacing: -0.025rem;
   }
   a, a:hover, a:focus {
     color: #aaddff !important;
@@ -425,7 +425,7 @@ img.postsFeatImg {
   border-color: $blue;
   color: #fff;
   border-radius: 6px;
-  padding: 0.25em 0.5em;
+  padding: 0.25rem 0.5rem;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -454,12 +454,12 @@ img.homeHeroImage {
 }
 
 .homePostTitle {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 .homePostSubtitle {
   margin-top: 0;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.25rem;
   font-weight: bold;
 }
 
@@ -469,7 +469,7 @@ img.homeHeroImage {
 }
 
 .homePostDescription {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 
 span.caption {
@@ -488,32 +488,32 @@ span.caption a:focus, span.caption a:hover, span caption a:active {
 }
 
 article {
-  padding-top: 1em;
+  padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.6;
-    margin-top: 1em;
+    margin-top: 1em; // definitely em, not rem
   }
   li li, li p {
     font-size: inherit;
-    margin-top: 0.25em;
+    margin-top: 0.25em; // definitely em, not rem
   }
   h2, h3, h4 {
-    margin-top: 1.25em;
+    margin-top: 1.25em; // definitely em, not rem
   }
 }
 
 .footnotes {
-  font-size: $legal + unquote("em");
   letter-spacing: normal;
 
   ol {
-    padding-inline-start: 1.5em;
+    padding-inline-start: 1.5rem;
   }
 
   ol li {
-    margin-bottom: 0.5em;
-    line-height: 1.5em;
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size:  $legal + unquote("rem");
   }
 
   li p {
@@ -526,9 +526,9 @@ article {
   box-sizing: border-box;
   background: #ffff88;
   border: 1px solid #333;
-  margin: 0.5em auto;
+  margin: 0.5rem auto;
   width: 100%;
-  padding: 0.5em 1.5em;
+  padding: 0.5rem 1.5rem;
 
   @media (prefers-color-scheme: dark) {
     background: #332200;
@@ -547,9 +547,9 @@ img.containedImage {
 }
 
 .lazypicturecaption {
-  font-size: $pokey + unquote("em");
+  font-size: $pokey + unquote("rem");
   padding: 0;
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
   line-height: 1.375;
   text-align: center;
 }

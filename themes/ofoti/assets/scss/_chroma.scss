@@ -14,7 +14,6 @@ code {
 pre {
   margin: 0;
 	margin: 0;
-	padding: 1em; /* old browsers */
 	padding: 1rem;
 }
 
@@ -32,8 +31,8 @@ pre code {
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
 /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
-/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
-/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4rem; padding: 0 0.4em 0 0.4rem;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4rem; padding: 0 0.4em 0 0.4rem;color: #7f7f7f }
 /* Keyword */ .chroma .k { color: #66d9ef }
 /* KeywordConstant */ .chroma .kc { color: #66d9ef }
 /* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
@@ -114,7 +113,6 @@ pre code {
   background-color: transparent;
   border-radius: 3px;
   line-height: 1.4;
-  margin: 0 0 0.5em; /* old browsers */
   margin: 0 0 0.5rem;
   padding: 0;
 
