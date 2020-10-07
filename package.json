@@ -4,17 +4,11 @@
   "description": "This is the Hugo version of the repo for https://brycewray.com.",
   "main": "postcss.config.js",
   "scripts": {
-    "clean": "rm -rf public",
-    "start": "NODE_ENV=production npm-run-all clean --parallel dev:*",
-    "startIP": "NODE_ENV=production npm-run-all clean --parallel devIP:*",
-    "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
-    "testbuild": "NODE_ENV=production npm-run-all clean --parallel testbuild:*",
-    "testbuildIP": "NODE_ENV=production npm-run-all clean --parallel testbuildIP:*",
-    "dev:hugo": "hugo server",
-    "devIP:hugo": "hugo server --bind '192.168.254.10'",
-    "prod:hugo": "hugo --gc --minify",
-    "testbuild:hugo": "hugo server --gc --minify",
-    "testbuildIP:hugo": "hugo server --gc --minify --bind '192.168.254.10'"
+    "start": "hugo server",
+    "startIP": "hugo server --bind '192.168.254.10'",
+    "build": "rm -rf public && hugo --gc --minify",
+    "testbuild": "rm -rf public && hugo server --gc --minify",
+    "testbuildIP": "rm -rf public && hugo server --gc --minify --bind '192.168.254.10'"
   },
   "keywords": [],
   "author": "",
