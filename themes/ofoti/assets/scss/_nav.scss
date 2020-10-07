@@ -10,7 +10,7 @@ header {
   width: 100%;
   background-color: $darkblue;
   position: fixed;
-  padding: 0.5rem 0;
+  padding: 0.5em 0; // definitely em, not rem
   margin-top: 0;
   z-index: 9999;
 }
@@ -42,7 +42,7 @@ header {
 
     a {
       display: block;
-      padding: 0.5rem 1.5rem;
+      padding: 0.5em 1.5em; // definitely em, not rem
       margin: 0;
       color: #fff;
       background: $darkblue;
@@ -167,7 +167,7 @@ nav {
     list-style: none;
   }
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em; // definitely em, not rem
     margin-right: 5%;
     display: inline; // putting here for really old non-query-savvy browsers
     @media screen and (max-width: 899px) {
@@ -205,7 +205,7 @@ nav {
     color: $grey-2;
     border-bottom: 0;
   }
-  font-size: $minimalbig + unquote("em");
+  font-size: $minimalbig + unquote("rem");
   font-weight: 700;
   margin-top: 0;
   margin-left: 5%;
@@ -219,7 +219,7 @@ nav {
     display: none;
   }
 
-  .nav__itrem {
+  .nav__item {
     font-size: 1.1rem;
   }
   
@@ -233,7 +233,7 @@ nav {
 
   .site-logo {
     z-index: 999999;
-    display: grid-itrem;
+    display: grid-item;
     grid-column: 1 / 2;
     text-align: left;
     padding-left: 10%;
@@ -248,12 +248,16 @@ nav {
     display: table;
     // grid-column: 4 / 5;
     a {
+      font-size: $slightlybig + unquote("rem");
       opacity: 1;
       position: relative;
     }
     ul {
       padding-right: 3.5%;
       text-align: right;
+      li {
+        line-height: 1;
+      }
     }
   }
 }

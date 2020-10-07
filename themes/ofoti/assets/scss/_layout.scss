@@ -149,8 +149,7 @@ footer {
     margin: 0 auto;
     text-shadow: 4px 4px 2px #000;
     text-align: center;
-    letter-spacing: -0.025rem;
-    padding: 0.25rem;
+    padding: 0.25em; // definitely em, not rem
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       text-align: left;
     }
@@ -160,7 +159,7 @@ footer {
   }
   &-title-text {
     font-size: 2.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0.5em; // definitely em, not rem
     padding-bottom: 0;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       font-size: 3.5rem;
@@ -176,17 +175,17 @@ footer {
   }
   &-subtitle-text {
     font-size: 1.5rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.25em; // definitely em, not rem
+    padding-bottom: 0.5em; // definitely em, not rem
       @media screen and (min-width: 769px) and (max-width: 1024px) {
-      padding-top: 1rem;
+      padding-top: 1em; // definitely em, not rem
       font-size: 2.25rem;
       padding-right: 4%;
       padding-left: 4%;
     }
     @media screen and (min-width: 1025px) {
       font-size: 3rem;
-      padding-top: 0.75rem;
+      padding-top: 0.75em; // definitely em, not rem
       padding-right: 5%;
       padding-left: 5%;
     }
@@ -195,7 +194,7 @@ footer {
     display: none; // appears only on wider screens
     @media screen and (min-width: 769px) {
       display: block;
-      padding-top: 0.25rem;
+      padding-top: 0.25em; // definitely em, not rem
       font-size: 1.25rem;
       padding-right: 4%;
       padding-left: 4%;
@@ -513,7 +512,7 @@ article {
   ol li {
     margin-bottom: 0.5rem;
     line-height: 1.5rem;
-    font-size:  $legal + unquote("rem");
+    font-size: $legal + unquote("rem");
   }
 
   li p {

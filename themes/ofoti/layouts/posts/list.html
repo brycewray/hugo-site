@@ -82,10 +82,9 @@
 
 			{{ range $paginator.Pages }}
         <div>          
-          <h2 class="h5" style="margin-bottom: 0.25em;">
-            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
-            <span class="pokey">{{ .Params.Subtitle }}</span>
-          </h2>
+          <h2 class="h5" style="margin-bottom: 0.25rem;">
+            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+          <p class="pokey" style="margin-top: 0;"><strong>{{ .Params.Subtitle }}</strong></p>
           <p class="legal text-muted" style="margin-top: 0;">
             Published: {{ .PublishDate.Format "January 2, 2006" }}
             {{- if ne .PublishDate .Lastmod }}
