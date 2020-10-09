@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-10-02T12:55:00-05:00
+lastmod: 2020-10-09T14:08:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -85,7 +85,7 @@ The TL;DR version is that **both** changes came for the same reason[^earlyDays]:
 
 [^earlyDays]:  However, both didn’t occur at the same time; during the first few days back with Hugo, I still had Tailwind as part of the [site stack](/posts/2020/07/stacks-and-stacks).
 
-[^WMsgone]: By the same token, I also decided to give up [webmentions](https://indieweb.org/webmention) and all the ongoing technical debt they required—even though [I obviously knew how to get them working in Hugo, too](/posts/2020/04/webmentions-three-ssgs-3)—in favor of a more easily added and maintained commenting platform: first, [Talkyard](https://talkyard.io), which I’d used previously; and, more recently, [Utterances](https://utteranc.es).
+[^WMsgone]: By the same token, I also decided to give up [webmentions](https://indieweb.org/webmention) and all the ongoing technical debt they required—even though [I obviously knew how to get them working in Hugo, too](/posts/2020/04/webmentions-three-ssgs-3)—in favor of more easily added and maintained commenting.
 
 Yes, some not-so-simple things—most definitely including Firebase Hosting—may be nerdy fun, but I decided I wanted much less complexity on the other parts of the site. So I hit the **Rewind** button, and that’s where we are.
 

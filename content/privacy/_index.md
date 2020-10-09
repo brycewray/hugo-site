@@ -3,7 +3,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-10-02T07:00:00-05:00
+lastmod: 2020-10-08T14:20:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -20,9 +20,9 @@ This site uses [Fathom Analytics](https://usefathom.com), which [does not store 
 
 At this time, the site is also on a free 30-day trial of [Plausible Analytics](https://plausible.io), which is [similarly privacy-focused](https://plausible.io/privacy-focused-web-analytics). The trial is due to end near the end of October.
 
-### Utterances
+### Hyvor Talk
 
-This site uses [Utterances](https://utteranc.es) for commenting (requires a free [GitHub](https://github.com) account). Your comment becomes part of an issue in the [site repo](https://github.com/brycewray/hugo_site); you’re always free to delete it.
+This site uses [Hyvor Talk](https://talk.hyvor.com) for commenting (currently on a trial basis, which is due to expire October 23, 2020). Hyvor Talk doesn’t track you or share any data gained from your visit. If you choose, you may create a Hyvor Talk account into which to log in, so your comments will be identified with you; you may also choose to comment (anonymously) as a guest. If you log in, Hyvor Talk uses one cookie to store your log-in status across the Hyvor domain; under the [GDPR](https://gdpr-info.eu/), this is considered a "strictly necessary" cookie and therefore doesn't require a consent. For more details, please refer to the [Hyvor Talk privacy policy](https://talk.hyvor.com/docs/privacy).
 
 ### Google Fonts
 
