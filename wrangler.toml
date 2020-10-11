@@ -1,0 +1,10 @@
+name = "hugo_site"
+type = "webpack"
+account_id = "3ab8adf13ad39f3bd4fe2361a146f6a9"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
