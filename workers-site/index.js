@@ -35,7 +35,7 @@ async function handleEvent(event) {
   // options.mapRequestToAsset = handlePrefix(/^\/docs/)
 
   options.cacheControl = {
-    browserTTL: 15552000
+    browserTTL: 3600
   }
 
   try {
