@@ -35,7 +35,16 @@ async function handleEvent(event) {
   // options.mapRequestToAsset = handlePrefix(/^\/docs/)
 
   options.cacheControl = {
-    browserTTL: 3600
+    browserTTL: 3600,
+    edgeTTL: 3600,
+    bypassCache: false
+  }
+
+  const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/
+
+  if(url.pathname.match(filesRegex)) {
+    options.cacheControl.edgeTTL = 2592000
+    options.cacheControl.browserTTL = 2592000
   }
 
   try {
