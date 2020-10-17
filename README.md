@@ -11,4 +11,4 @@ There are two **starter sets** based on this repo’s layout and design. Each us
 - [hugo_site_css-grid](https://github.com/brycewray/hugo_site_css-grid) — Uses PostCSS and TailwindCSS (and, thus, has more dependencies than you might want to handle, if coming from a Hugo-centric background).
 - [hugo_solo](https://github.com/brycewray/hugo_solo) — Handles styling [through SCSS via Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) and, thus, has **no** external dependencies.
 
-As for this repo, I suggest you use it **only for reference**. I have it set up with two different themes: one for SCSS through Hugo Pipes and one for PostCSS (but not Tailwind). I switch back and forth between them as the mood suits me. 😀
+As for this repo, I suggest you use it **only for reference**. I have it set up with two different themes: one for SCSS and one for PostCSS (but not Tailwind). I switch back and forth between them as the mood suits me. 😀
