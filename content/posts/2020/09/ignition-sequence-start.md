@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-10-09T14:08:00-05:00
+lastmod: 2020-10-17T12:15:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -93,4 +93,5 @@ It is, if you’ll pardon the unintentional wordplay, as *simple* as that.
 
 <div class="yellowBox">
   <p><strong>Note</strong>: Decided to leave Firebase Hosting a few days later, since it appeared I might <em>occasionally</em> have a chance of exceeding the free tier’s 10&nbsp;GB monthly traffic limit, which is the skimpiest such allowance of all the hosts I’ve considered during the aforementioned “lurch.” (To be fair, Firebase doesn’t really push itself as a solution for this kind of free-tier use.) I knew of this limit ahead of time, of course, but didn’t know whether it would truly be a factor; figured the only way I’d find out would be to give it a try and see what kinds of numbers I got. Once I knew and did the math—well, that was all she wrote.</p>
+  <p>A few days after that, I decided to give PostCSS another try. I now have this site’s repo set up so that there are <strong>two</strong> themes for Hugo’s use—one with purely SCSS, one with CSS-on-PostCSS (but still no Tailwind). So, now, depending on which I want to use, I can simply switch themes in the site’s <code>config.yaml</code> file. The only other thing I have to do is to set the GitHub Action for <a href="/posts/2020/10/forward-paas">my Cloudflare Workers setup</a> so that it includes an <code>npm install</code> step to handle PostCSS and the plugins I have it running (or, conversely, comment-out that step if I revert to SCSS).</p>
 </div>

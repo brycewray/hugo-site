@@ -9,6 +9,6 @@ This is the repository from which the [Hugo](https://gohugo.io)-generated versio
 
 There are two **starter sets** based on this repo’s layout and design. Each uses Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/) (as compared to this repo, which uses [Cloudinary](https://cloudinary.com) rather than having the images in the repo and processing them as such).
 - [hugo_site_css-grid](https://github.com/brycewray/hugo_site_css-grid) — Uses PostCSS and TailwindCSS (and, thus, has more dependencies than you might want to handle, if coming from a Hugo-centric background).
-- [hugo_solo](https://github.com/brycewray/hugo_solo) — Like this site, handles styling [through SCSS via Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) and, thus, has **no** external dependencies.
+- [hugo_solo](https://github.com/brycewray/hugo_solo) — Handles styling [through SCSS via Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) and, thus, has **no** external dependencies.
 
-As for this repo, I suggest you use it **only for reference**.
+As for this repo, I suggest you use it **only for reference**. I have it set up with two different themes: one for SCSS through Hugo Pipes and one for PostCSS (but not Tailwind). I switch back and forth between them as the mood suits me. 😀
