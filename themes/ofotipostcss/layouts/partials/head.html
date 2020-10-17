@@ -73,8 +73,8 @@
   <link rel="preconnect" href="https://res.cloudinary.com" />
 
   <!-- CSS/SCSS -->
-  {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
-  {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint }}
+  {{ $css := resources.Get "css/index.css" }}
+  {{ $css := $css | resources.PostCSS (dict "inlineImports" true) | fingerprint }}
   <link rel="preload" href="/fonts/PublicSans-Italic-VF-2020-09-14_subset.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" href="/fonts/PublicSans-Regular-VF-2020-09-14_subset.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}">

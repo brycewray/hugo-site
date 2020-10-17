@@ -32,9 +32,9 @@
   --code-bkgd-dark-mode: #0e2e3e;
 
   /* Typography */
-  --sans-serif: "Public Sans", system-ui;
-  --serif-primary: Georgia, serif;
-  --monospaced: "Roboto Mono", monospace;
+  --sans-serif: "Public Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --serif-primary: Georgia, "Droid Serif", Times, "Times New Roman", serif;
+  --monospaced: SFMono-Regular, Menlo, Consolas, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   /* ==== rems ==== */
   --biggest: 2.5;
   --bigger: 2;

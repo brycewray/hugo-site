@@ -20,7 +20,7 @@ p, li {
 
 article {
   & p, & li {
-    letter-spacing: -0.025em;
+    letter-spacing: -0.015em;
   }
   & h2, & h3, & h4, & h5 {
     margin: 1.5em 0 1.2em 0;
@@ -69,9 +69,16 @@ h6, .h6 {
   font-family: var(--sans-serif);
   color: var(--default-color);
   letter-spacing: -0.035em;
-  font-weight: 700;
   margin-bottom: 2em;
   line-height: 1.2;
+}
+
+h1, .h1 {
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,7 +130,7 @@ a:focus, a:hover, a:active {
   border-bottom: 1px solid var(--blueFirst);
 }
 
-sup a, a.previous, a.next, .footnote-return {
+sup a, a.previous, a.next, .footnote-return, a.icon {
   border-bottom: 0;
 }
 

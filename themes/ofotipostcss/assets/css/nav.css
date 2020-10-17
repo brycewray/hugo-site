@@ -56,9 +56,14 @@ header {
     display: inline-block;
     & a {
       display: inline-block;
-      padding-top: 0.5em;
+      padding-top: 0.15em;
       padding-bottom: 0;
       border: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: lowercase;
+      font-variant: small-caps;
+      letter-spacing: 0.125rem;
     }
   }
 }
@@ -196,7 +201,7 @@ nav {
   }
   font-size: calc(var(--minimalbig) * 1em);
   font-weight: 700;
-  margin-top: 0.2em;
+  margin-top: 0;
   margin-left: 5%;
 }
 
@@ -228,7 +233,7 @@ nav {
     top: 15%;
     transform: none;
     margin-top: 0;
-    margin-left: 60%;
+    margin-left: 25%;
     display: table;
     grid-column: 4 / 5;
     & a {
