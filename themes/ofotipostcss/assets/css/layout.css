@@ -358,6 +358,17 @@ article {
   }
 }
 
+sub, sup {
+  font-size: calc(var(--teeny) * 1em);
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5rem;
+}
+
 sup.footnote-ref {
   font-size: calc(var(--teeny) * 1em);
 }
