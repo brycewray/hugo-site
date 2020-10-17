@@ -78,7 +78,7 @@ figcaption {
 .lazypicturecaption {
   font-size: calc(var(--pokey) * 1em);
   padding: 0;
-  margin: 0 0 2em 0;
+  margin: 0.5em 0 2em 0;
   line-height: 1.4;
   text-align: center;
 }
@@ -347,7 +347,7 @@ article {
   & ol li {
     margin-bottom: 0.5rem;
     line-height: 1.5rem;
-    font-size: calc(var(--legal) * 1rem);
+    font-size: calc(var(--pokey) * 1rem);
     & code, & pre {
       font-size: 1em;
     }
@@ -356,6 +356,14 @@ article {
   & li p {
     font-size: 100%;
   }
+}
+
+sup.footnote-ref {
+  font-size: calc(var(--teeny) * 1em);
+}
+
+a.footnote-return{
+  font-size: 50%;
 }
 
 table.leagues {

@@ -6,7 +6,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-feature-settings: "liga" 1; /* ligatures won't work without this */
+  font-weight: 450;
   -webkit-text-size-adjust: none; /* keeps iOS Safari from making odd changes when phone is in landscape orientation */
 }
 
@@ -23,11 +23,11 @@ article {
     letter-spacing: -0.015em;
   }
   & h2, & h3, & h4, & h5 {
-    margin: 1.5em 0 1.2em 0;
+    margin-top: 1.25em;
   }
   & p {
-    line-height: 1.8;
-    margin-bottom: 1.7em;
+    margin-top: 1em;
+    line-height: 1.6;
   }
   & li {
     line-height: 1.7;
@@ -69,7 +69,6 @@ h6, .h6 {
   font-family: var(--sans-serif);
   color: var(--default-color);
   letter-spacing: -0.035em;
-  margin-bottom: 2em;
   line-height: 1.2;
 }
 
@@ -153,27 +152,6 @@ blockquote {
 
 td {
   vertical-align: top;
-}
-
-.footnotes-sep {
-  margin-top: 2em;
-}
-
-.footnotes {
-  font-size: calc(var(--legal) * 1em);
-  letter-spacing: normal;
-
-  & ol li {
-    margin-bottom: 0.5em;
-  }
-}
-
-sup.footnote-ref {
-  font-size: calc(var(--teeny) * 1em);
-}
-
-a.footnote-return{
-  font-size: 50%;
 }
 
 .ctr {
