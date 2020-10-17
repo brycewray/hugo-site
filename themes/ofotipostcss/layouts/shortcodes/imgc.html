@@ -1,0 +1,52 @@
+<!--
+  This shortcode takes the following form: 
+  imgc src, alt, width, height
+  ...with 'src' in the form of (note NO leading or ending slash):
+  filename.font-ext
+  ...and 'tmpl' optional in body copy. The template is used 
+  to specify hero images on either the home page ('index') or 
+  post pages ('posts'). Without this parameter, the defaults 
+  cause body-copy-style image-handling.
+
+  This is based on the `lazy-picture.js` shortcode from 
+  the eleventy_solo repo.
+-->
+<!-- init -->
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
+{{ $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" }}
+<!-- replace $cloudiBase later with real thing -->
+{{ $xFmPart1 := "f_auto,q_auto:eco,w_" }} <!-- can't use because the ':eco' triggers Go issues, even with `safeHTML`, `safeHTMLAttr`, etc. -->
+{{ $xFmPart2 := ",x_0,z_1/" }}
+{{ $separator := ", " }}
+
+{{ $divClass := "relative" }}
+{{ $imgClass := "containedImage" }}
+{{ $nscClass := "containedImage" }}
+{{ $dataSzes := "(min-width: 1024px) 25vw, 100vw" }}
+
+<div style='position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;'>
+  <img
+    class='{{ $imgClass }}' 
+    src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $src }}' 
+    srcset='
+    {{ if ge $width 300 }}{{ $cloudiBase }}f_auto,q_auto:eco,w_300,x_0,z_1/{{ $src }} 300w{{ end }}{{ if ge $width 450 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_450,x_0,z_1/{{ $src }} 450w{{ end }}{{ if ge $width 600 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $src }} 600w{{ end }}{{ if ge $width 750 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_750,x_0,z_1/{{ $src }} 750w{{ end }}{{ if ge $width 900 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_900,x_0,z_1/{{ $src }} 900w{{ end }}{{ if ge $width 1050 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_1050,x_0,z_1/{{ $src }} 1050w{{ end }}{{ if ge $width 1200 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_1200,x_0,z_1/{{ $src }} 1200w{{ end }}{{ if ge $width 1350 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_1350,x_0,z_1/{{ $src }} 1350w{{ end }}{{ if ge $width 1500 }}, 
+    {{ $cloudiBase }}f_auto,q_auto:eco,w_1500,x_0,z_1/{{ $src }} 1500w{{ end }}' alt='{{ $alt }}
+    ' width='{{ $width }}' height='{{ $height }}' loading="lazy" sizes="{{ $dataSzes }}"
+  />
+  <noscript>
+    <img
+      class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_300,x_0,z_1/{{ $src }}" alt="{{ $alt }}" 
+    />
+  </noscript>
+</div>
