@@ -18,5 +18,16 @@
   "engines": {
     "node": "10.x"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.1.1",
+    "postcss-clean": "^1.1.0",
+    "postcss-cli": "^8.1.0",
+    "postcss-css-variables": "^0.17.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.1",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-preset-env": "^6.7.0"
+  }
 }
