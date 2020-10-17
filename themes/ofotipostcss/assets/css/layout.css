@@ -321,22 +321,6 @@ span.caption a:focus, span.caption a:hover, span caption a:active {
   border-bottom: #bbeeff;
 }
 
-article {
-  padding-top: 1em; // definitely em, not rem
-  & p, & li {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    margin-top: 1em; /* definitely em, not rem */
-  }
-  & li li, & li p {
-    font-size: inherit;
-    margin-top: 0.25em; /* definitely em, not rem */
-  }
-  & h2, & h3, & h4 {
-    margin-top: 1.25em; /* definitely em, not rem */
-  }
-}
-
 .footnotes {
   letter-spacing: normal;
 
