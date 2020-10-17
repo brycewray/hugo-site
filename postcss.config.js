@@ -1,6 +1,7 @@
 const postcssImport = require('postcss-import')
 const postcssNesting = require('postcss-nesting')
 const postcssClean = require('postcss-clean')
+const purgecss = require('@fullhuman/postcss-purgecss')
 
 module.exports = {
   plugins: [
@@ -9,6 +10,9 @@ module.exports = {
       path: 'assets/css',
     }),
     postcssNesting({}),
-    postcssClean({})
+    postcssClean({}),
+    purgecss({
+      content: ['./**/*.html']
+    })
   ],
 }
