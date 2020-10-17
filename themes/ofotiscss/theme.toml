@@ -1,4 +1,4 @@
-name = "ofoti"
+name = "ofotiscss"
 license = "MIT"
 description = "Something that has evolved since 2018; originally based on a Hugo theme called “Tale” but now with little resemblance thereto."
 min_version = "0.74.3"
