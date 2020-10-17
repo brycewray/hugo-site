@@ -4,6 +4,6 @@
 @import 'layout.css';
 @import 'nav.css';
 @import 'darkmode.css';
-/* @import 'lazysizes.css'; */
+@import 'lazysizes.css';
 @import 'webmentions.css';
 @import 'iefixes.css';
