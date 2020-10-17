@@ -31,7 +31,7 @@
     </article>    
   </div>
   <div class="column-home">
-    <h2 class="h1" style="margin-top: 0.65em; margin-bottom: 0.5em;">Recent <a href="/posts/">posts</a></h2>
+    <h2 class="h1" style="margin-top: 0.5em; margin-bottom: 0.5em;">Recent <a href="/posts/">posts</a></h2>
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>
         <h2 class="h4 homePostTitle"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
