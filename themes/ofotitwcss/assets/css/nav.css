@@ -20,7 +20,9 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
 
 @media (min-width: 900px) {
   .nav__item {
-    @apply text-xs inline-block;
+    @apply text-xs inline-block px-2 font-bold lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.15rem;
     & a {
       @apply inline-block pt-1 pb-0 no-underline
     }
