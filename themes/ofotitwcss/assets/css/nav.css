@@ -37,7 +37,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
   width: 27px;
   text-indent: -9999px;
   /* hide the label */
-  transition: all 1s cubic-bezier(.19, 1, .22, 1);
+  transition: all .6s cubic-bezier(.19, 1, .22, 1);
   /* Remove blinking cursor */
   @apply border-none text-transparent text-center;
   text-shadow: 0 0 0 gray;
