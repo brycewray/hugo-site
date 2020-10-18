@@ -1,7 +1,6 @@
 @import 'fonts.css';
 @import 'nav.css';
 @import 'chroma.css';
-@import 'webmentions.css';
 
 /* purgecss start ignore */
 @tailwind base;
@@ -399,6 +398,17 @@ hr {
   }
   & img {
     @apply my-4;
+  }
+}
+
+.container-comments {
+  margin: 0 auto;
+  font-size: 85%;
+  width: 85%;
+  max-width: 720px !important;
+  margin-bottom: 0;
+  @media screen and (min-width: 900px) {
+    width: 40%;
   }
 }
 
