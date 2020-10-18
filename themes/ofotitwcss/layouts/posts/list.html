@@ -1,0 +1,153 @@
+{{ define "main" }}
+  <div class="px-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
+    <h1 class="text-center tracking-tight pt-4">Posts</h1>
+    <div class="post-line"></div>
+    <div>
+
+			<!-- 
+			The following pagination based heavily on code derived from: 
+			https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/
+			-->
+
+			<!--
+			//
+			//  OUTPUT POSTS
+			//––––––––––––––––––––––––––––––––––––––––––––––––––
+			-->
+			{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+
+      {{ $paginator := .Paginator }}
+
+			<!-- Number of links either side of the current page. -->
+			{{ $adjacent_links := 2 }}
+
+			<!-- $max_links = ($adjacent_links * 2) + 1 -->
+			{{ $max_links := (add (mul $adjacent_links 2) 1) }}
+
+			<!-- $lower_limit = $adjacent_links + 1 -->
+			{{ $lower_limit := (add $adjacent_links 1) }}
+
+			<!-- $upper_limit = $paginator.TotalPages - $adjacent_links -->
+			{{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
+
+      <!-- If there's more than one page. -->
+			{{ if gt $paginator.TotalPages 1 }}
+
+      <p class="text-center text-sm mt-2 mb-2">
+        
+        <!-- First page. -->
+        {{ if ne $paginator.PageNumber 1 }}
+          <a class="border-transparent" aria-label="First page" href="{{ $paginator.First.URL }}">
+            {{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ else }}
+          {{ partial "svgFirstPageIcon.html" . }}{{ partial "svgFirstPageIcon.html" }}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ end }}
+        <!-- Previous page. -->
+        {{ if $paginator.HasPrev }}
+          <a href="{{ $paginator.Prev.URL }}" class="border-transparent" aria-label="Previous page">
+            {{ partial "svgPrevPageIcon.html" . }}
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ else }}
+          <span class="text-gray-500">{{ partial "svgFirstPageIcon.html" . }}</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ end }}
+
+        <!-- Next page. -->
+        {{ if $paginator.HasNext }}
+          <a href="{{ $paginator.Next.URL }}" class="border-transparent" aria-label="Next page">
+            {{ partial "svgNextPageIcon.html" . }}
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ else }}
+          <span class="text-gray-500">{{ partial "svgLastPageIcon.html" . }}</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ end }}
+
+        <!-- Last page. -->
+        {{ if ne $paginator.PageNumber $paginator.TotalPages }}
+          <a class="border-transparent" aria-label="Last page" href="{{ $paginator.Last.URL }}">
+            {{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
+          </a>
+        {{ else }}
+          <span class="text-muted">{{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}</span>
+        {{ end }}
+
+      </p><!-- .pagination -->
+    {{ end }}
+    <hr class="mt-2 mb-6" />
+
+			{{ range $paginator.Pages }}
+      <div>          
+        <h2 class="text-xl mb-1 leading-tight tracking-tight">
+            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
+            <span class="text-base tracking-tight italic">{{ .Params.Subtitle }}</span>
+          </h2>
+          <p class="text-sm dateInfo" style="margin-top: 0;">
+            Published: {{ .PublishDate.Format "January 2, 2006" }}
+            {{- if ne .PublishDate .Lastmod }}
+            <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
+            {{- end }}
+          </p>
+					<p class="text-sm mt-2 mb-10">
+						{{ .Description }}
+					</p>
+				</div>
+      {{ end }}
+      
+      <hr class="mt-6" />
+      <!-- If there's more than one page. -->
+			{{ if gt $paginator.TotalPages 1 }}
+
+      <p class="text-center text-sm mt-2 mb-16">
+        
+        <!-- First page. -->
+        {{ if ne $paginator.PageNumber 1 }}
+          <a class="border-transparent" aria-label="First page" href="{{ $paginator.First.URL }}">
+            {{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ else }}
+          {{ partial "svgFirstPageIcon.html" . }}{{ partial "svgFirstPageIcon.html" }}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ end }}
+        <!-- Previous page. -->
+        {{ if $paginator.HasPrev }}
+          <a href="{{ $paginator.Prev.URL }}" class="border-transparent" aria-label="Previous page">
+            {{ partial "svgPrevPageIcon.html" . }}
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ else }}
+          <span class="text-gray-500">{{ partial "svgFirstPageIcon.html" . }}</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ end }}
+
+        <!-- Next page. -->
+        {{ if $paginator.HasNext }}
+          <a href="{{ $paginator.Next.URL }}" class="border-transparent" aria-label="Next page">
+            {{ partial "svgNextPageIcon.html" . }}
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ else }}
+          <span class="text-gray-500">{{ partial "svgLastPageIcon.html" . }}</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ end }}
+
+        <!-- Last page. -->
+        {{ if ne $paginator.PageNumber $paginator.TotalPages }}
+          <a class="border-transparent" aria-label="Last page" href="{{ $paginator.Last.URL }}">
+            {{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
+          </a>
+        {{ else }}
+        <span class="text-gray-500">{{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}</span>
+        {{ end }}
+
+      </p><!-- .pagination -->
+      {{ end }}
+		</div>
+	</div>
+
+{{ end }}
