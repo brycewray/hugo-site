@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-10-18T10:15:00-05:00
+lastmod: 2020-10-18T14:30:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -39,7 +39,7 @@ Enough talk; on with the GitHub Action. Of course, it’s based on two assumptio
 
 
 ```yaml
-name: CI-Hugo-site-to-Cloudflare-Workers
+name: CI-Hugo-site-to-Firebase
 
 on:
   push:
@@ -47,28 +47,28 @@ on:
       - master
 
 env:
-  HUGO_VERSION: 0.76.5 #steps below will pick extended version
+  HUGO_VERSION: 0.75.1 # steps below will pick extended version
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    name: Deploy
+
     steps:
       - name: Checkout master branch
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       - name: Download Hugo v${{ env.HUGO_VERSION }} Linux x64
         run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
       - name: Install Hugo
         run: sudo dpkg -i hugo*.deb
-      - name: Install dependencies
-        run: npm install
       - name: Build site with Hugo
         run: npm run build
-      - name: Publish
-        uses: cloudflare/wrangler-action@1.3.0
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          # Other args should come from wrangler.toml and what's in ./workers-site/
+      - name: Install Firebase Tools
+        run: npm install firebase-tools
+      - name: Deploy to Firebase
+        run: npx firebase deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          # Other args should come from .firebaserc and firebase.json
 ```
 
 <hr id="epiloguehead" style="margin-top: 2em; margin-bottom: 1.5em;" />

@@ -4,7 +4,7 @@ subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
-#lastmod
+lastmod: 2020-10-1814:30:00-05:00
 #draft: true
 discussionId: "2020-10-forward-paas"
 featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
@@ -52,7 +52,7 @@ on:
       - master
 
 env:
-  HUGO_VERSION: 0.75.1 #steps below will pick extended version
+  HUGO_VERSION: 0.76.5 #steps below will pick extended version
 
 jobs:
   deploy:
@@ -65,6 +65,8 @@ jobs:
         run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
       - name: Install Hugo
         run: sudo dpkg -i hugo*.deb
+      - name: Install dependencies
+        run: npm install
       - name: Build site with Hugo
         run: npm run build
       - name: Publish
