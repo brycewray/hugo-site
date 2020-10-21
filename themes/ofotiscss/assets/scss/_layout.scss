@@ -168,12 +168,13 @@ footer {
     }
     @media screen and (min-width: 1025px) {
       padding-top: 0;
-      font-size: 4rem;
+      font-size: 4.5rem;
       padding-right: 5%;
       padding-left: 5%;
     }
   }
   &-subtitle-text {
+    font-style: italic;
     font-size: 1.5rem;
     padding-top: 0.25em; // definitely em, not rem
     padding-bottom: 0.5em; // definitely em, not rem
@@ -406,7 +407,6 @@ img.postsFeatImg {
     margin-right: auto;
     margin-left: auto;
     font-size: 1.25rem;
-    letter-spacing: -0.025rem;
   }
   a, a:hover, a:focus {
     color: #aaddff !important;
@@ -503,18 +503,14 @@ article {
 }
 
 .footnotes {
-  letter-spacing: normal;
-
   ol {
     padding-inline-start: 1.5rem;
   }
-
   ol li {
     margin-bottom: 0.5rem;
     line-height: 1.5rem;
     font-size: $pokey + unquote("rem");
   }
-
   li p {
     font-size: 100%;
   }
