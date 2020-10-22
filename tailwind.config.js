@@ -27,9 +27,6 @@ module.exports = {
       'xl': '1280px', // => @media (min-width: 1280px) { ... }
       'xb': '1920px', // => @media (min-width: 1920px) { ... }
     },
-    fontFamily: {
-      'sans-serif': ['Public Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
-    },
     extend: {
       screens: {
         'dark': {

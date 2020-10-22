@@ -36,7 +36,7 @@ header {
       display: inline-block;
       text-transform: lowercase;
       font-variant: small-caps;
-      font-weight: 650;
+      font-weight: bold;
       letter-spacing: 0.15rem;
     }
 
@@ -50,9 +50,9 @@ header {
       transition: opacity 0.5s ease;
 
       @media (min-width: $breakpoint) {
+        font-size: 1.1rem;
         display: inline-block;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0 1em;
         border: none;
       }
 

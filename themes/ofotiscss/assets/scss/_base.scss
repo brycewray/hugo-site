@@ -1,11 +1,9 @@
 html, body {
   font-family: $sans-serif;
   color: $default-color;
-  letter-spacing: -0.015rem;
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-weight: 450;
   // font-feature-settings: "liga" 1; // ligatures won't work without this
   @media (prefers-color-scheme: dark) {
     background: $background-dark-mode;
@@ -21,16 +19,9 @@ p, li {
   line-height: 1.4;
 }
 
-h1, .h1 {
-  font-weight: 825;
-}
-
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-weight: 625;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  letter-spacing: -0.035em;
+  font-weight: bold;
+  letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark-mode;
   }

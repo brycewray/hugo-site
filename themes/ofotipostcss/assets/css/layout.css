@@ -179,7 +179,7 @@ h3.twitter-border {
   margin: 0 auto;
   text-shadow: 4px 4px 2px #000;
   text-align: center;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.015em;
   padding: 0.25em;
 }
 @media screen and (min-width: 768px) {
@@ -199,18 +199,16 @@ h3.twitter-border {
   font-size: 2.5rem;
   padding-top: 1em;
   padding-bottom: 0;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
 }
 @media screen and (min-width: 768px) {
   .background-hero-title-text {
     font-size: 3rem;
-    letter-spacing: -0.04em;
   }
 }
 @media screen and (min-width: 1024px) {
   .background-hero-title-text {
     font-size: 4rem;
-    letter-spacing: -0.045em;
   }
 }
 
@@ -218,18 +216,17 @@ h3.twitter-border {
   font-size: 1.75rem;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
   .background-hero-subtitle-text {
     font-size: 2.25rem;
-    letter-spacing: -0.0325em;
   }
 }
 @media screen and (min-width: 1024px) {
   .background-hero-subtitle-text {
     font-size: 2.75rem;
-    letter-spacing: -0.035em;
   }
 }
 
@@ -242,7 +239,6 @@ h3.twitter-border {
     display: block;
     padding: 1em 5% 1em 5%;
     font-size: 1.5rem;
-    letter-spacing: -0.035em;
   }
 }
 
@@ -472,7 +468,6 @@ img.postsFeatImg {
   & .column-home-1 {
     & p {
       font-size: calc(var(--minimalbig) * 1em);
-      letter-spacing: -0.025em;
       line-height: 1.7;
     }
   }
@@ -590,7 +585,6 @@ img.containedImage {
     }
     & p {
       font-size: calc(var(--slightlybig) * 1em);
-      letter-spacing: -0.03em;
     }
   }
 }
