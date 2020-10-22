@@ -71,13 +71,13 @@
 			<p class="text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
-					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.Permalink}}"> {{.Title}}</a>
+					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.RelPermalink}}"> {{.Title}}</a>
 					{{ end }}
 			</p>
 			<p class="text-center pb-4 my-0 text-xl text-white leading-tight tracking-tight">
 				{{ with .PrevInSection }}
 					<strong>Previous</strong>:
-					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.Permalink}}"> {{.Title}}</a>
+					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.RelPermalink}}"> {{.Title}}</a>
 				{{ end }}
 			</p>
     </div>
