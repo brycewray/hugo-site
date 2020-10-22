@@ -19,6 +19,8 @@ jobs:
         run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
       - name: Install Hugo
         run: sudo dpkg -i hugo*.deb
+      - name: Install dependencies
+        run: npm install
       - name: Build site with Hugo
         run: npm run build
       - name: Publish
