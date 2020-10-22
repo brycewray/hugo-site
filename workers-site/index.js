@@ -43,8 +43,8 @@ async function handleEvent(event) {
   const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/
 
   if(url.pathname.match(filesRegex)) {
-    options.cacheControl.edgeTTL = 3600
-    options.cacheControl.browserTTL = 3600
+    options.cacheControl.edgeTTL = 86400
+    options.cacheControl.browserTTL = 86400
   }
 
   try {
