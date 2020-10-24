@@ -3,7 +3,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-10-23T08:05:00-05:00
+lastmod: 2020-10-23T19:23:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -38,7 +38,7 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 ### Embedded videos
 
-I no longer embed YouTube or other sites’ videos, since they can and do transmit personal information through cookies. In the two instances where I formerly did—”[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)" and "[Coherence and COVID-19](/posts/2020/03/coherence-covid-19)”—I replaced them with clearly identified links to their original locations, and footnoted each link with a reference and link to this privacy policy.
+I no longer embed YouTube or other sites’ videos, since they can and do transmit personal information through cookies. In the two instances where I formerly did—“[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)” and “[Coherence and COVID-19](/posts/2020/03/coherence-covid-19)”—I replaced them with clearly identified links to their original locations, and footnoted each link with a reference and link to this privacy policy.
 
 ### Twitter content
 
