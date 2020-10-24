@@ -307,6 +307,7 @@ img.featured-image-hero {
 
 .homePostDescription {
   margin-top: 0.5rem;
+  font-family: var(--sans-serif);
 }
 
 span.caption {
