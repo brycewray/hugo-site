@@ -22,7 +22,7 @@ But, **before** you go that route, please take a few minutes and read the advice
 
 ## Why you have to be careful
 
-The default for a while now has been for the Mac desktop and the user’s **Documents** folder to be tied into iCloud Drive with the **Optimize Mac Storage** option turned on. This means that, to minimize the amount of local storage used, macOS “decides" whether files on the desktop and in that **Documents** folder will actually be on the Mac or exist only in iCloud Drive’s online storage.
+The default for a while now has been for the Mac desktop and the user’s **Documents** folder to be tied into iCloud Drive with the **Optimize Mac Storage** option turned on. This means that, to minimize the amount of local storage used, macOS “decides” whether files on the desktop and in that **Documents** folder will actually be on the Mac or exist only in iCloud Drive’s online storage.
 
 Such a strategy might be a brilliant idea if a Mac-sized quantity of iCloud Drive storage were free, everyone’s Internet connection were blazing fast, and the “decisions" were always perfect. In reality, this has proven to be more trouble than it’s worth for many Mac users.
 
@@ -30,7 +30,7 @@ By now, perhaps you’re thinking, “Well, I can just go into my Mac’s **Syst
 
 **But** it’s not that simple.
 
-If you don’t **first** follow a special procedure I’ll describe shortly, some of all or that content will suddenly  disappear from your Mac when you “free" it from iCloud Drive. Still, don’t have a coronary. Your stuff isn’t really gone. It’s just not on the Mac any more. It’s safe on iCloud’s online storage. So, all you have to do is download it to your local drive, right?
+If you don’t **first** follow a special procedure I’ll describe shortly, some of all or that content will suddenly  disappear from your Mac when you “free” it from iCloud Drive. Still, don’t have a coronary. Your stuff isn’t really gone. It’s just not on the Mac any more. It’s safe on iCloud’s online storage. So, all you have to do is download it to your local drive, right?
 
 Once again: it’s not that simple.
 
@@ -40,7 +40,7 @@ Fortunately, there’s a better way.
 
 ## Borrowing some great advice
 
-Before I give you the particulars, please be aware that I didn’t come up with the most important part of these instructions. I simply found it by chance one day and, given its relative obscurity, realized I should share it with my fellow Mac users. If you want to see the original, go to “[How to Disable iCloud Desktop &amp; Documents on Mac](https://osxdaily.com/2017/07/06/disable-icloud-desktop-documents-mac/)"—dated July 6, 2017—and search that page for the name “James Howie," because it’s *his* comment, provided over two years after the article’s initial publication, whence this advice sprang. To Mr. Howie, wherever he is: a huge “thank you,” sir.
+Before I give you the particulars, please be aware that I didn’t come up with the most important part of these instructions. I simply found it by chance one day and, given its relative obscurity, realized I should share it with my fellow Mac users. If you want to see the original, go to “[How to Disable iCloud Desktop &amp; Documents on Mac](https://osxdaily.com/2017/07/06/disable-icloud-desktop-documents-mac/)”—dated July 6, 2017—and search that page for the name “James Howie,” because it’s *his* comment, provided over two years after the article’s initial publication, whence this advice sprang. To Mr. Howie, wherever he is: a huge “thank you,” sir.
 
 ### Important notes
 
