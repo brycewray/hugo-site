@@ -214,7 +214,7 @@ article p, li {
 }
 
 .yellowBox {
-  @apply bg-yellow-300 border border-gray-900 border-solid mx-auto my-2 w-full px-6 py-2;
+  @apply bg-yellow-300 font-sans border border-gray-900 border-solid mx-auto my-2 w-full px-6 py-2;
 }
 
 .yellowbox p { 
