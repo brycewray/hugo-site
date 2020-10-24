@@ -84,14 +84,14 @@
         <div>          
           <h2 class="h5" style="font-style: normal; margin-bottom: 0.25rem;">
             <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-          <p class="pokey" style="margin-top: 0; margin-bottom: 0.25em;"><strong>{{ .Params.Subtitle }}</strong></p>
-          <p class="legal text-muted" style="margin-top: 0;">
+          <p class="pokey sansSerif" style="margin-top: 0; margin-bottom: 0.25em;"><strong>{{ .Params.Subtitle }}</strong></p>
+          <p class="legal text-muted sansSerif" style="margin-top: 0;">
             Published: {{ .PublishDate.Format "January 2, 2006" }}
             {{- if ne .PublishDate .Lastmod }}
             <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
             {{- end }}
           </p>
-					<p class="pokey" style="margin-top: 0.5em; margin-bottom: 2em;">
+					<p class="pokey sansSerif" style="margin-top: 0.5em; margin-bottom: 2em;">
 						{{ .Description }}
 					</p>
 				</div>

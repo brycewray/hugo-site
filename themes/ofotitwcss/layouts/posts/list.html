@@ -86,13 +86,13 @@
             <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
             <span class="text-base tracking-tight">{{ .Params.Subtitle }}</span>
           </h2>
-          <p class="text-sm dateInfo" style="margin-top: 0;">
+          <p class="font-sans text-xs dateInfo" style="margin-top: 0;">
             Published: {{ .PublishDate.Format "January 2, 2006" }}
             {{- if ne .PublishDate .Lastmod }}
             <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
             {{- end }}
           </p>
-					<p class="text-sm mt-2 mb-10">
+					<p class="font-sans text-sm mt-2 mb-10">
 						{{ .Description }}
 					</p>
 				</div>

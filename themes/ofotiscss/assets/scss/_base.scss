@@ -1,5 +1,5 @@
 html, body {
-  font-family: $sans-serif;
+  font-family: $serif-primary;
   color: $default-color;
   width: 100%;
   margin: 0 auto;
@@ -11,6 +11,10 @@ html, body {
   }
 }
 
+.sansSerif {
+  font-family: $sans-serif;
+}
+
 .IEonly {
   display: none;
 }
@@ -20,6 +24,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $sans-serif;
   font-weight: bold;
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {

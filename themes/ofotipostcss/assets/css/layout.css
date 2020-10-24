@@ -32,6 +32,7 @@
 
 footer {
   text-align: center;
+  font-family: var(--sans-serif);
   font-size: calc(var(--legal) * 1rem);
   margin: 4rem auto 0 auto;
   width: 100%;
@@ -216,7 +217,6 @@ h3.twitter-border {
   font-size: 1.75rem;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
@@ -231,6 +231,7 @@ h3.twitter-border {
 }
 
 .background-hero-description-text {
+  font-family: var(--sans-serif);
   display: none; /* appears only on wider screens */
   padding: 1em;
 }
@@ -243,6 +244,7 @@ h3.twitter-border {
 }
 
 .background-hero-p-text {
+  font-family: var(--sans-serif);
   color: #fff;
   text-shadow: 4px 4px 2px #000;
   text-align: center;
@@ -281,6 +283,7 @@ img.featured-image-hero {
   margin-top: 0.25em;
   padding-bottom: 1.5em;
   text-align: center !important;
+  font-family: var(--sans-serif);
   font-size: calc(var(--legal) * 1em);
   color: var(--grey-1);
 }
@@ -293,15 +296,18 @@ img.featured-image-hero {
   margin-top: 0;
   margin-bottom: 0.25rem;
   font-weight: bold;
+  font-family: var(--sans-serif);
 }
 
 .homePostDates {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: var(--sans-serif);
 }
 
 .homePostDescription {
   margin-top: 0.5rem;
+  font-family: var(--sans-serif);
 }
 
 span.caption {
