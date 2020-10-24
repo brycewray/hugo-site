@@ -48,7 +48,7 @@
         </p>
       </div>
     {{ end }}
-    <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
+    <p class="font-sans"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
   </div>
 </div>
 {{ end }}

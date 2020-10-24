@@ -1,11 +1,15 @@
 html,
 body {
-  font-family: var(--sans-serif) !important;
+  font-family: var(--serif-primary) !important;
   color: var(--default-color);
   width: 100%;
   margin: 0 auto;
   padding: 0;
   -webkit-text-size-adjust: none; /* keeps iOS Safari from making odd changes when phone is in landscape orientation */
+}
+
+.sansSerif {
+  font-family: var(--sans-serif);
 }
 
 .IEonly {
