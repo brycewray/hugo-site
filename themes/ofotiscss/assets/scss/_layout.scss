@@ -41,6 +41,7 @@ img.containedImage, figure {
 
 footer {
   text-align: center;
+  font-family: $sans-serif;
   font-size: $legal + unquote("rem");
   margin: 4rem auto 0 auto;
   width: 100%;
@@ -174,7 +175,6 @@ footer {
     }
   }
   &-subtitle-text {
-    font-style: italic;
     font-size: 1.5rem;
     padding-top: 0.25em; // definitely em, not rem
     padding-bottom: 0.5em; // definitely em, not rem
@@ -192,6 +192,7 @@ footer {
     }
   }
   &-description-text {
+    font-family: $sans-serif;
     display: none; // appears only on wider screens
     @media screen and (min-width: 769px) {
       display: block;
@@ -207,6 +208,7 @@ footer {
     }
   }
   &-p-text {
+    font-family: $sans-serif;
     color: #fff;
     text-shadow: 4px 4px 2px #000;
     text-align: center;
@@ -238,6 +240,7 @@ img.featured-image {
   margin-right: auto;
   margin-left: auto;
   text-align: center !important;
+  font-family: $sans-serif;
   font-size: $legal + unquote("rem");
   color: $grey-1;
   @media (prefers-color-scheme: dark) {
@@ -457,17 +460,20 @@ img.homeHeroImage {
 }
 
 .homePostSubtitle {
+  font-family: $sans-serif;
   margin-top: 0;
   margin-bottom: 0.25rem;
   font-weight: bold;
 }
 
 .homePostDates {
+  font-family: $sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .homePostDescription {
+  font-family: $sans-serif;
   margin-top: 0.5rem;
 }
 
