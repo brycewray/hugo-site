@@ -4,7 +4,7 @@ subtitle: Life’s too short for CLI
 description: Why you should go GUI with version control.
 author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
-lastmod: 2019-07-14T11:40:00-05:00
+lastmod: 2020-10-25T12:40:00-05:00
 discussionId: "2018-10-version-control-follies"
 featured_image: javascript-programming-1873854_2605x1432.jpg
 featured_image_width: 2605
@@ -58,4 +58,4 @@ In short, I’d gone from a setup in which *every* change (no matter how tiny) i
 ### Correction, 2019-07-14:
 
 - *At the time I wrote this, I thought SourceTree was Bitbucket-specific but, of course, that’s not true; it works also with GitHub and [GitLab](https://gitlab.com) as well.*
-- *Since the original writing, GitHub has joined Bitbucket (and GitLab) in having private repos. Each has slightly different rules about them, such as numbers of contributors allowed.*
+- *Since the original writing, GitHub has joined Bitbucket (and GitLab) in having free private repos. Each has slightly different rules about them, such as numbers of contributors allowed.*
