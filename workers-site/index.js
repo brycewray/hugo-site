@@ -34,6 +34,7 @@ async function handleEvent(event) {
    */
   // options.mapRequestToAsset = handlePrefix(/^\/docs/)
 
+  /*
   options.cacheControl = {
     browserTTL: 0,
     edgeTTL: 0,
@@ -46,6 +47,7 @@ async function handleEvent(event) {
     options.cacheControl.edgeTTL = 691200 // 8 days - 60 * 60 * 24 * 8
     options.cacheControl.browserTTL = 691200 // 8 days - 60 * 60 * 24 * 8
   }
+  */
 
   try {
     if (DEBUG) {
