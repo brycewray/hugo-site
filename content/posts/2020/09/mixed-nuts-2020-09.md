@@ -4,7 +4,7 @@ subtitle: "Oddities, observations, offal"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00
-#lastmod
+lastmod: 2020-10-25T13:10:00-05:00
 discussionId: "2020-09-mixed-nuts-2020-09"
 featured_image: mixed-nuts-peter-feghali-fZ7-IAReeSo-unsplash_4891x3261.jpg
 featured_image_width: 4891
@@ -40,9 +40,9 @@ In large part, this experience with Ulysses is because, as novelist [Chris Rosse
 <br />
 {{< imgc src="iA_Writer_paragraph_sample_1334x682.png" alt="Screen capture of iA Writer for a given paragraph" width="1334" height="682" >}}
 
-*Although the [Next.js](https://nextjs.org) and [Nuxt.js](https://nuxtjs.org) JavaScript frameworks have [significantly](https://nextjs.org/blog/next-9-3) [improved](https://nuxtjs.org/blog/nuxt-static-improvements) their abilities to generate [static websites](https://dev.to/gtanyware/what-is-a-static-website-4k3o), **dedicated** [static site generators (SSGs)](https://staticgen.com) like [Eleventy](https://11ty.dev) (which powers this site) are ’waaaay easier to use and far less finicky. Want to build a web **app**? Either Next.js or Nuxt.js is great for that. Want to build and maintain a web**site**? Use a dedicated SSG.*
+*Although the [Next.js](https://nextjs.org) and [Nuxt.js](https://nuxtjs.org) JavaScript frameworks have [significantly](https://nextjs.org/blog/next-9-3) [improved](https://nuxtjs.org/blog/nuxt-static-improvements) their abilities to generate [static websites](https://dev.to/gtanyware/what-is-a-static-website-4k3o), **dedicated** [static site generators (SSGs)](https://staticgen.com) like [Hugo](https://gohugo.io) and [Eleventy](https://11ty.dev) are ’waaaay easier to use and far less finicky. Want to build a web **app**? Either Next.js or Nuxt.js is great for that. Want to build and maintain a web**site**? Use a dedicated SSG.*
 
-The vast majority of all web browsing now occurs through only two browser engines: [Blink](https://en.wikipedia.org/wiki/Blink_(browser_engine)) (e.g., Chrome) and [WebKit](https://webkit.org/) (e.g., Safari). By comparison, Firefox’s [Gecko](https://en.wikipedia.org/wiki/Gecko_(software)) engine is now down to about 4% and headed south. (Data: [StatCounter](https://gs.statcounter.com/browser-market-share) and [NetMarketShare](https://netmarketshare.com/browser-market-share.aspx).) It’ll be a sad day, especially for [those who write and maintain CSS](https://blog.logrocket.com/firefox-devtools-for-css-authors-1511f41d1e3/), if this trend continues to its perhaps inevitable conclusion.
+The vast majority of all web browsing now occurs through only two browser engines: [Blink](https://en.wikipedia.org/wiki/Blink_(browser_engine)) (*e.g.*, Chrome) and [WebKit](https://webkit.org/) (*e.g.*, Safari). By comparison, Firefox’s [Gecko](https://en.wikipedia.org/wiki/Gecko_(software)) engine is now down to about 4% and headed south. (Data: [StatCounter](https://gs.statcounter.com/browser-market-share) and [NetMarketShare](https://netmarketshare.com/browser-market-share.aspx).) It’ll be a sad day, especially for [those who write and maintain CSS](https://blog.logrocket.com/firefox-devtools-for-css-authors-1511f41d1e3/), if this trend continues to its perhaps inevitable conclusion.
 
 [^1]:	For those unfamiliar with the point (if that’s the word) of this particular type of post, please see the [original from last year](/posts/2019/11/mixed-nuts-2019-11).
 
