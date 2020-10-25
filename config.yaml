@@ -30,6 +30,8 @@ markup:
   # -- e.g., https://github.com/gohugoio/hugo/issues/7289
   # and https://github.com/yuin/goldmark/issues/39#issuecomment-564810327
   goldmark:
+    extensions:
+      linkify: false
     parser:
       attribute: true
     renderer:
