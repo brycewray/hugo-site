@@ -4,7 +4,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2020-09-25T07:52:00-05:00
+lastmod: 2020-10-26T16:05:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_4870x2672.jpg
 featured_image_width: 4870
@@ -134,7 +134,7 @@ name: CI-Netlify
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: '0 5 1/1 * *'
 
@@ -186,7 +186,7 @@ jobs:
 Here’s how it works.
 
 - The `on` section tells it to run whenever one of two things happens:
-	- The first is whenever a change is pushed to the default branch, currently `master`.[^masterName]
+	- The first is whenever a change is pushed to the default branch, `main`.
 	- The second is when it’s 5:00 AM [UTC](https://www.timeanddate.com/worldclock/timezone/utc)—which corresponds to late night in my time zone—and works because of GitHub Actions’ support for [cron jobs](https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/). This cron job generates that earlier-mentioned automatic daily build for the sake of updating webmentions.
 - Then there’s the `jobs` section. It gives these orders:
 	- Use the latest version of [Ubuntu](https://ubuntu.com) that the remote server is willing to load.
@@ -196,8 +196,6 @@ Here’s how it works.
 	- Run `npm install` to load all the dependencies identified in `package.json`.
 	- Build the site using those three “secrets” you already set up earlier: the Netlify authorization token, the Netlify site ID, and the webmentions.io token. Since we’re still on the GitHub servers at this point, only the last one may be necessary; but this file includes them all, just to be safe.
 	- Finally, deploy the now-built site to Netlify, using the configuration in the repo’s `netlify.toml` file. This step uses those same “secrets” as the last step. The Netlify variables *are* required here, for sure, while now the webmentions.io token becomes the just-in-case addition.
-
-[^masterName]: There’s an [ongoing](https://tools.ietf.org/id/draft-knodel-terminology-00.html) [discussion](https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/) in the dev community about whether repositories should use the `master` name for their default branches. My understanding is that the major repo hosts are adjusting their policies accordingly, so I’ll update this article if and when changes warrant.
 
 As a result: with this GitHub Action now handling builds on the GitHub setup, the deploy on Netlify typically takes no more than *ten seconds*, quite often more in the range of *two to five* seconds—and, once again, it counts as *zero* seconds against that 300-minute monthly build cap.
 

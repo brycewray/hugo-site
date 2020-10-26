@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-10-18T14:30:00-05:00
+lastmod: 2020-10-26T16:05:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -44,7 +44,7 @@ name: CI-Hugo-site-to-Firebase
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   HUGO_VERSION: 0.75.1 # steps below will pick extended version
@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout master branch
+      - name: Checkout default branch
         uses: actions/checkout@v2
       - name: Download Hugo v${{ env.HUGO_VERSION }} Linux x64
         run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
