@@ -4,6 +4,9 @@
       "HUGO_VERSION": "0.76.5"
     }
   },
+  "github": {
+    "silent": true
+  },
   "headers": [
     {
       "source": "/css/(.*)",
