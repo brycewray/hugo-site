@@ -3,7 +3,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-10-23T19:23:00-05:00
+lastmod: 2020-10-28T09:10:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -15,14 +15,6 @@ This site and its owner **do NOT** store your personal information **in any way*
 #### Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
-
-#### Plausible Analytics
-
-At this time, the site is also on a free 30-day trial of [Plausible Analytics](https://plausible.io), which is [similarly privacy-focused](https://plausible.io/privacy-focused-web-analytics). The trial is due to end near the end of October.
-
-#### Cloudflare Browser Insights
-
-This site’s traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights “collects the bare minimum amount of information, timing metrics, to show customers how their websites perform” and that “Cloudflare does not track individual end-users *[sic]* across our customers’ Internet properties.” For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, “[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/).”
 
 ### FastComments
 
