@@ -37,7 +37,7 @@ There’s another minor issue, but it’s also fairly easily resolved although i
 
 Since I wasn’t quite sure upfront how this would work for me, I bought only one month of the Workers Unbundled plan; so we’ll see in a few weeks whether I stick with this or move the site back to one of the other hosts I’ve used. At this writing, the performance numbers I’m seeing are impressive.
 
-<div class="yellowBox"><p><strong>Note, 2020-10-28</strong>: A few days prior to the end of the one-month use of the Workers Unbundled Plan, I decided to bail from this setup. It was an extremely interesting experiment, but numerous tests from various tools, including some that measure worldwide statistics, didn’t provide me sufficient evidence to favor this approach uniformly. However, it’s still —as I said above—impressive, and it’s worthy of strong consideration.</p></div>
+<div class="yellowBox"><p><strong>Note, 2020-10-28</strong>: A few days prior to the end of the one-month use of the Workers Unbundled Plan, I decided to bail from this setup. It was an extremely interesting experiment, but numerous tests from various tools, including some that measure worldwide statistics, didn’t provide me sufficient evidence to favor this approach uniformly. However, it’s still—as I said above—impressive, and it’s worthy of strong consideration.</p></div>
 
 ---- 
 

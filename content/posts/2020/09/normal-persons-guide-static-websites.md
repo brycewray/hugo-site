@@ -113,7 +113,7 @@ So much for those good words about Hugo and Eleventy. By contrast, I now must te
 
 ### Gatsby
 
-If you’ve researched SSGs, you’ve probably seen a lot about [Gatsby](https://gatsby.org), a tremendously popular and well-funded product. It has some amazing capabilities and is even used by some non-developers (albeit with its geeky stuff probably hidden behind a compatible CMS). However, my own experiences with Gatsby both positive and negative — mostly the latter—lead me to steer you away from it.
+If you’ve researched SSGs, you’ve probably seen a lot about [Gatsby](https://gatsby.org), a tremendously popular and well-funded product. It has some amazing capabilities and is even used by some non-developers (albeit with its geeky stuff probably hidden behind a compatible CMS). However, my own experiences with Gatsby both positive and negative—mostly the latter—lead me to steer you away from it.
 
 To use Gatsby without pain, you need to be fairly conversant in not only that React framework I mentioned before but, also, the [GraphQL](https://graphql.org/) query language (Gatsby has a pretty cool interface that helps with GraphQL, but it’s not cool enough to make up for the concomitant hassles). Gatsby typically needs a *lot* of configuration to do its thing, and that’s precisely what you *don’t* want. I could tell you much more, as my regular readers know all too well, but that’ll suffice for these purposes. Admire it, perhaps, but don’t use it.
 
