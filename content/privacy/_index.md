@@ -3,22 +3,20 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-10-28T09:10:00-05:00
+lastmod: 2020-10-29T12:53:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
 
-### Analytics
-
-#### Fathom Analytics
-
-This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
-
 ### FastComments
 
-This site uses [FastComments](https://fastcomments.com) for commenting (currently on a trial basis, which is due to expire November 10, 2020). For more details, please refer to the [FastComments privacy policy](https://fastcomments.com/privacy-policy).
+This site uses [FastComments](https://fastcomments.com) for commenting. For more details, please refer to the [FastComments privacy policy](https://fastcomments.com/privacy-policy).
+
+### Fathom Analytics
+
+This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
 
 ### Google Fonts
 
