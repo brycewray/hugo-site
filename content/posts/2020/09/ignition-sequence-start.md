@@ -4,7 +4,7 @@ subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-10-26T16:05:00-05:00
+lastmod: 2020-10-29T10:55:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -86,7 +86,3 @@ The TL;DR version for the change: after much thought, I felt an overwhelming des
 Yes, some not-so-simple things—most definitely including Firebase Hosting—may be nerdy fun, but I decided I wanted much less complexity on the other parts of the site. So I hit the **Rewind** button, and that’s where we are.
 
 It is, if you’ll pardon the unintentional wordplay, as *simple* as that.
-
-<div class="yellowBox">
-  <p><strong>Note</strong>: Decided to leave Firebase Hosting a few days later, since it appeared I might <em>occasionally</em> have a chance of exceeding the free tier’s 10&nbsp;GB monthly traffic limit, which is the skimpiest such allowance of all the hosts I’ve considered during the aforementioned “lurch.” (To be fair, Firebase doesn’t really push itself as a solution for this kind of free-tier use.) I knew of this limit ahead of time, of course, but didn’t know whether it would truly be a factor; figured the only way I’d find out would be to give it a try and see what kinds of numbers I got. Once I knew and did the math—well, that was all she wrote.</p>
-</div>
