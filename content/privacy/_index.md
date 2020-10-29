@@ -3,22 +3,28 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-10-28T09:10:00-05:00
+lastmod: 2020-10-29T10:45:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
 
-### Analytics
+### Firebase
 
-#### Fathom Analytics
+This site is hosted on Google's [Firebase](https://firebase.google.com) service and uses the following Firebase features:
+
+- **Cloud Logging** — This feature allows me to view the actual logs from the [Fastly](https://fastly.com) content delivery network, with which Firebase’s hosting functionality works. (Of course, such logs would exist regardless of whether one accesses them.) I view these logs only to get a general sense of site activity and performance, **not** to identify any individual. For more information about Cloud Logging, see its [documentation](https://firebase.google.com/docs/hosting/web-request-logs-and-metrics). Please refer also to the [Fastly Privacy Policy](https://www.fastly.com/privacy).
+
+- **Firebase Performance Monitoring** — The [introduction to this feature’s documentation](https://firebase.google.com/docs/perf-mon/) says: *“Performance Monitoring does not permanently store any personally identifiable information (such as names, email addresses, or phone numbers). While monitoring HTTP network requests, Performance Monitoring uses URLs (not including URL parameters) to build aggregated and anonymous URL patterns that are eventually persisted and shown in the Firebase console.”*
+
+### Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
 
 ### FastComments
 
-This site uses [FastComments](https://fastcomments.com) for commenting (currently on a trial basis, which is due to expire November 10, 2020). For more details, please refer to the [FastComments privacy policy](https://fastcomments.com/privacy-policy).
+This site uses [FastComments](https://fastcomments.com) for commenting. For more details, please refer to the [FastComments privacy policy](https://fastcomments.com/privacy-policy).
 
 ### Google Fonts
 
