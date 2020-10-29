@@ -12,11 +12,9 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 ### Firebase
 
-This site is hosted on Google's [Firebase](https://firebase.google.com) service and uses the following Firebase features:
+This site is hosted on Google's [Firebase](https://firebase.google.com) service and uses:
 
 - **Cloud Logging** — This feature allows me to view the actual logs from the [Fastly](https://fastly.com) content delivery network, with which Firebase’s hosting functionality works. (Of course, such logs would exist regardless of whether one accesses them.) I view these logs only to get a general sense of site activity and performance, **not** to identify any individual. For more information about Cloud Logging, see its [documentation](https://firebase.google.com/docs/hosting/web-request-logs-and-metrics). Please refer also to the [Fastly Privacy Policy](https://www.fastly.com/privacy).
-
-- **Firebase Performance Monitoring** — The [introduction to this feature’s documentation](https://firebase.google.com/docs/perf-mon/) says: *“Performance Monitoring does not permanently store any personally identifiable information (such as names, email addresses, or phone numbers). While monitoring HTTP network requests, Performance Monitoring uses URLs (not including URL parameters) to build aggregated and anonymous URL patterns that are eventually persisted and shown in the Firebase console.”*
 
 ### Fathom Analytics
 
