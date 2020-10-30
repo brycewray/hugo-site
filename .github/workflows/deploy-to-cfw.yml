@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.76.5 #steps below will pick extended version
+  HUGO_VERSION: 0.77.0 # steps below will pick extended version
 
 jobs:
   deploy:
