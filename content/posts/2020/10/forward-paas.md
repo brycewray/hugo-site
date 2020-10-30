@@ -4,7 +4,7 @@ subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
-lastmod: 2020-10-28T09:10:00-05:00
+lastmod: 2020-10-26T16:05:00-05:00
 #draft: true
 discussionId: "2020-10-forward-paas"
 featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
@@ -36,8 +36,6 @@ There’s another minor issue, but it’s also fairly easily resolved although i
 ## Stay tuned
 
 Since I wasn’t quite sure upfront how this would work for me, I bought only one month of the Workers Unbundled plan; so we’ll see in a few weeks whether I stick with this or move the site back to one of the other hosts I’ve used. At this writing, the performance numbers I’m seeing are impressive.
-
-<div class="yellowBox"><p><strong>Note, 2020-10-28</strong>: A few days prior to the end of the one-month use of the Workers Unbundled Plan, I decided to bail from this setup. It was an extremely interesting experiment, but numerous tests from various tools, including some that measure worldwide statistics, didn’t provide me sufficient evidence to favor this approach uniformly. However, it’s still—as I said above—impressive, and it’s worthy of strong consideration.</p></div>
 
 ---- 
 
