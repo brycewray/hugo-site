@@ -178,7 +178,7 @@ h4, .h4 {
 
 
 .text-nowrap, .text-nobrk {
-  @apply whitespace-no-wrap;
+  @apply whitespace-nowrap;
 }
 
 article h1, article h2, article h3, article h4 {
