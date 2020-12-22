@@ -73,7 +73,7 @@
 
   <!-- CSS from PostCSS -->
   {{ $css := resources.Get "css/index.css" }}
-  {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "inlineImports" true "outputStyle" "compressed") | fingerprint }}
+  {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") | fingerprint }}
 
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
