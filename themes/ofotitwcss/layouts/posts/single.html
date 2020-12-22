@@ -39,8 +39,8 @@
           &nbsp;
           {{- end }}
         </h2>
-        <p class="font-sans hidden not-italic md:block md:text-2xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{{ .Params.Description }}</p>
-        <p class="font-sans text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
+        <p class="hidden md:block md:text-2xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{{ .Params.Description }}</p>
+        <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
           <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
           <span class="text-sm">
           {{- if ne .PublishDate .Lastmod }}
@@ -51,7 +51,7 @@
           </span>
         </p>
         {{- if isset .Params "featured_image_caption" }}
-          <p class="font-sans text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
+          <p class="text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
         {{- end }}
       </div>
     </div>
@@ -67,14 +67,14 @@
 
   {{ if or .PrevPage .NextPage }}
     <div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
-      <h3 class="text-center text-3xl tracking-normal mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
-			<p class="font-sans text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight">
+      <h3 class="text-center text-3xl tracking-normal mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+			<p class="text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
 					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.RelPermalink}}"> {{.Title}}</a>
 					{{ end }}
 			</p>
-			<p class="font-sans text-center pb-4 my-0 text-xl text-white leading-tight tracking-tight">
+			<p class="text-center pb-4 my-0 text-xl text-white leading-tight tracking-tight">
 				{{ with .PrevInSection }}
 					<strong>Previous</strong>:
 					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.RelPermalink}}"> {{.Title}}</a>

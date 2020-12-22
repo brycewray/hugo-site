@@ -76,6 +76,8 @@
   <!-- CSS/SCSS -->
   {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
   {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint }}
+  
+  <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin />
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
   <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>

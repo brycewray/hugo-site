@@ -1,3 +1,26 @@
+.italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+  font-variation-settings: 'slnt' -8;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
+     so we override that below with the @-moz-document url-prefix media query for Firefox */
+  font-style: oblique 8deg;
+  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
+}
+
+@-moz-document url-prefix() {
+  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+    /* font-variation-settings: normal; */
+    font-style: normal;
+  }
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+ul li li li {
+  list-style-type: square;
+}
+
 #content {
   @apply pt-12;
 }
@@ -7,7 +30,7 @@ html, body {
 }
 
 body {
-  @apply font-serif dark:text-gray-200;
+  @apply dark:text-gray-200;
   font-feature-settings: "liga" 1;
 }
 
@@ -89,7 +112,7 @@ a.navborderless {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply font-sans font-bold leading-tight tracking-tight;
+  @apply font-bold leading-tight tracking-tight;
 }
 
 h1, .h1 {
@@ -101,7 +124,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @apply text-3xl italic;
+  @apply text-3xl;
 }
 
 h4, .h4 {
@@ -334,7 +357,7 @@ hr {
 }
 
 footer {
-  @apply font-sans bg-gradient-to-t from-transparent dark:from-blue-700;
+  @apply bg-gradient-to-t from-transparent dark:from-blue-700;
 }
 
 .lazypicturecaption {

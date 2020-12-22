@@ -1,3 +1,26 @@
+.italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+  font-variation-settings: 'slnt' -8;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
+     so we override that below with the @-moz-document url-prefix media query for Firefox */
+  font-style: oblique 8deg;
+  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
+}
+
+@-moz-document url-prefix() {
+  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+    /* font-variation-settings: normal; */
+    font-style: normal;
+  }
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+ul li li li {
+  list-style-type: square;
+}
+
 #content, main {
   padding-top: 40px;
 }
@@ -526,11 +549,11 @@ article {
   font-family: $sans-serif;
   display: block;
   box-sizing: border-box;
-  background: #ffff88;
+  background: #feef89;
   border: 1px solid #333;
   margin: 0.5rem auto;
   width: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 1.5rem;
 
   @media (prefers-color-scheme: dark) {
     background: #332200;

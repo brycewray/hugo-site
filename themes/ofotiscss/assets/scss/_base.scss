@@ -1,5 +1,6 @@
 html, body {
-  font-family: $serif-primary;
+  font-family: $sans-serif;
+  font-weight: 425;
   color: $default-color;
   width: 100%;
   margin: 0 auto;
@@ -24,12 +25,18 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: $sans-serif;
-  font-weight: bold;
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark-mode;
   }
+}
+
+h1, .h1 {
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -22,7 +22,7 @@
   </div>
 </div>
 {{ if index .Params "featured_image_caption" }}
-<p class="font-sans text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
+<p class="text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
 {{ end }}
 
 
@@ -34,21 +34,21 @@
     <h2 class="h1 mb-4">Recent <a href="/posts/">posts</a></h2>
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>
-        <h2 class="h4 not-italic tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="font-sans font-bold text-base mt-1 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
-        <p class="font-sans text-xs tracking-normal mt-1 mb-0">
+        <h2 class="h4 tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="font-bold text-base mt-1 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
+        <p class="text-xs tracking-normal mt-1 mb-0">
           Published: {{ .PublishDate.Format "January 2, 2006" }}
           {{- if ne .PublishDate .Lastmod }}
           <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
           {{- end }}
         </p>
         
-        <p class="font-sans text-sm mt-1 mb-4">
+        <p class="text-sm mt-1 mb-4">
           {{ .Description }}
         </p>
       </div>
     {{ end }}
-    <p class="font-sans"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
+    <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
   </div>
 </div>
 {{ end }}

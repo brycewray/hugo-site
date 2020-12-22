@@ -3,7 +3,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
 */
 
 .nav__item {
-  @apply font-sans p-0 m-0;
+  @apply p-0 m-0;
 
   & a {
     @apply block py-1 px-4 mb-1 text-white no-underline transition-opacity duration-500 ease-linear;
