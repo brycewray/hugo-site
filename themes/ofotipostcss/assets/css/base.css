@@ -19,9 +19,12 @@ ul li li {
 
 ul li li li {
   list-style-type: square;
-}html,
+}
+
+html,
 body {
   font-family: var(--sans-serif) !important;
+  font-weight: 425;
   color: var(--default-color);
   width: 100%;
   margin: 0 auto;
@@ -90,7 +93,6 @@ h6, .h6 {
   color: var(--default-color);
   letter-spacing: -0.025em;
   line-height: 1.2;
-  font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -105,6 +107,11 @@ h2 + h3, h3 + h4, h4 + h5 {
 
 h1, .h1 {
   font-size: calc(var(--biggest) * 1em);
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
 }
 
 h2, .h2 {
