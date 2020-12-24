@@ -4,8 +4,8 @@ title: "Using PostCSS for cache-busting in Eleventy"
 subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
-date: 2020-11-10T22:30:00
-lastmod: 2020-12-11T22:30:00 # 4:30 PM CST
+date: 2020-11-10T16:30:00-06:00
+lastmod: 2020-12-11T16:30:00-06:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@jilburr?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jilbert Ebrahimi</a>; <a href="https://unsplash.com/s/photos/broken-glass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-<p class="yellowBox"><strong>Important note, 2020-12-11</strong>: After I initially published this, I ran into significant build-time problems with the method described herein, despite its first appearing to work just fine both locally and online. I briefly resorted to the method described in &ldquo;<a href="https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/" rel="noreferrer">Simple 11ty cache busting</a>&rdquo; by Rob Hudson before I found another solution, which I explain in &ldquo;<a href="/posts/2020/12/cache-busting-eleventy-take-two">Cache-busting in Eleventy, take two</a>.&rdquo; I reluctantly recommend that you <strong>not</strong> follow the specific instructions in the article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of <a href=""/posts/2019/10/otoh">transparency</a>. <strong>My apologies</strong> to anyone who&rsquo;s run into trouble based on these recommendations as they originally appeared!</p>
+{{% yellowBox %}}**Important note, 2020-12-11**: After I initially published this, I ran into significant build-time problems with the method described herein, despite its first appearing to work just fine both locally and online. I briefly resorted to the method described in "[Simple 11ty cache busting](https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/)" by Rob Hudson before I found another solution, which I explain in "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two)." I reluctantly recommend that you **not** follow the specific instructions in the article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of [transparency](/posts/2019/10/otoh). **My apologies** to anyone who's run into trouble based on these recommendations as they originally appeared!{{% /yellowBox %}}
 
 Just when I thought I’d finished last year’s “[dance](/posts/2019/12/sorta-strange-ssg-trip)” among [static site generators](https://jamstack.org/generators/) (SSGs), it recently rose from the grave like a hockey-mask-wearing killer from a horror flick.
 

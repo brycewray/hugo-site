@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: A stacked deck
 subtitle: Part 2 of a two-part series on web typography
 description: Making the case for a system fonts approach to the typography on web sites.
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2020-10-24T09:25:00-05:00
+lastmod: 2020-12-13T12:30:00-06:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: computer-1869236_3264x2448.jpg
 featured_image_width: 3264
@@ -14,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pexels</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pixabay</a></span>
 ---
 
-<div class="yellowBox"><p><strong>Update, 2020-10-24</strong>: Although the all-sans-serif “system fonts stack” I mention in this post is still a good choice, I am (at least currently) using a <em>serif</em> “font stack,” albeit still native and therefore equally amenable for performance-related purposes, for this site’s <em>body</em> text.</p></div>
+{{% yellowBox %}}**Update, 2020-12-13**: Although the “system fonts stack” I mention in this post is still a good choice, I am (at least currently) using the [Inter](https://rsms.me/inter) web font.{{% /yellowBox %}}
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on websites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
@@ -36,7 +38,7 @@ Anyway, with that understood, let’s get on with it.
 
 The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
-{{< imgc src="Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg" alt="Image from Apple website in 1999 showing graphic elements as text" width="1218" height="1296" >}}
+{{% imgc src="Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg" alt="Image from Apple website in 1999 showing graphic elements as text" width="1218" height="1296" %}}
 
 The only “real” text in this view was the timestamp, on the right side under the image of the [iMac of that era in all its Bondi Blue glory](https://everymac.com/systems/apple/imac/specs/imac_ab.html). All other textual elements shown were graphics. (The image-missing icon above the [iBook](https://everymac.com/systems/apple/ibook/index-ibook.html) image apparently indicates a missing image that the Internet Archive didn’t capture at the time or, otherwise, was unable to recover at the time I made this screen capture.)
 
@@ -84,17 +86,17 @@ In case you aren’t familiar with all of these, here you go (all except the gen
 
 <table class="noborders">
 <thead><tr><td class="td30">Typeface name</td><td class="td70">Sample image</td></tr></thead>
-<tr><td class="td30">San Francisco</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_San_Francisco_684x104.png" loading="lazy" alt="San Francisco typeface" /></td></tr>
-<tr><td class="td30">Segoe UI</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Segoe_UI_684x104.png" loading="lazy" alt="Segoe UI typeface" /></td></tr>
-<tr><td class="td30">Tahoma</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Tahoma_684x104.png" loading="lazy" alt="Tahoma typeface" /></td></tr>
-<tr><td class="td30">Roboto</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Roboto_from_GF_684x104.png" loading="lazy" alt="Roboto typeface" /></td></tr>
-<tr><td class="td30">Oxygen</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Oxygen_from_GF_684x104.png" loading="lazy" alt="Oxygen typeface" /></td></tr>
-<tr><td class="td30">Ubuntu</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Ubuntu_from_GF_684x104.png" loading="lazy" alt="Ubuntu typeface" /></td></tr>
-<tr><td class="td30">Cantarell</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Cantarell_from_GF_684x104.png" loading="lazy" alt="Cantarell typeface" /></td></tr>
-<tr><td class="td30">Fira Sans</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Fira_Sans_from_GF_684x104.png" loading="lazy" alt="Fira Sans typeface" /></td></tr>
-<tr><td class="td30">Droid Sans</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899295/Sys_font_stack_Droid_Sans_from_GF_684x104.png" loading="lazy" alt="Droid Sans typeface" /></td></tr>
-<tr><td class="td30">Helvetica Neue</td><td class="td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899295/Sys_font_stack_Helvetica_Neue_680x104.png" loading="lazy" alt="Helvetica Neue typeface" /></td></tr>
-<tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899295/Sys_font_stack_Lucida_Grande_680x104.png" loading="lazy" alt="Lucida Grande typeface" /></td></tr>
+<tr><td class="td30">San Francisco</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_San_Francisco_684x104.png" loading="lazy" alt="San Francisco typeface" /></td></tr>
+<tr><td class="td30">Segoe UI</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Segoe_UI_684x104.png" loading="lazy" alt="Segoe UI typeface" /></td></tr>
+<tr><td class="td30">Tahoma</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Tahoma_684x104.png" loading="lazy" alt="Tahoma typeface" /></td></tr>
+<tr><td class="td30">Roboto</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Roboto_from_GF_684x104.png" loading="lazy" alt="Roboto typeface" /></td></tr>
+<tr><td class="td30">Oxygen</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Oxygen_from_GF_684x104.png" loading="lazy" alt="Oxygen typeface" /></td></tr>
+<tr><td class="td30">Ubuntu</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Ubuntu_from_GF_684x104.png" loading="lazy" alt="Ubuntu typeface" /></td></tr>
+<tr><td class="td30">Cantarell</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Cantarell_from_GF_684x104.png" loading="lazy" alt="Cantarell typeface" /></td></tr>
+<tr><td class="td30">Fira Sans</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899296/Sys_font_stack_Fira_Sans_from_GF_684x104.png" loading="lazy" alt="Fira Sans typeface" /></td></tr>
+<tr><td class="td30">Droid Sans</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899295/Sys_font_stack_Droid_Sans_from_GF_684x104.png" loading="lazy" alt="Droid Sans typeface" /></td></tr>
+<tr><td class="td30">Helvetica Neue</td><td class="td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899295/Sys_font_stack_Helvetica_Neue_680x104.png" loading="lazy" alt="Helvetica Neue typeface" /></td></tr>
+<tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img class="lazy" data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899295/Sys_font_stack_Lucida_Grande_680x104.png" loading="lazy" alt="Lucida Grande typeface" /></td></tr>
 </table>
 
 The easiest way[^2] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):
@@ -113,7 +115,7 @@ If you, or Those Who Tell You How to Design, are dead-set on having all your sit
 
 However, if your primary mission with your website to ensure not just the best readability but also the fastest possible loading speed, using a “system fonts stack” is an easily implemented way to help achieve that.
 
-<hr style="border: 1px solid #666;" />
+----
 
 ### _Major change, November 9, 2018_
 

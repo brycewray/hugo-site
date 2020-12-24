@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: "YouTube TV and the RSNs flap"
 subtitle: "Is the pyramid near collapse?"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
-lastmod: 2020-09-29T19:15:00-05:00
+lastmod: 2020-11-25T09:00:00-06:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
 featured_image: globe-life-park-rangers-1402096_6000x4000.jpg
 featured_image_width: 6000
@@ -13,17 +15,6 @@ featured_image_alt: "Baseball game at Globe Life Park, Arlington, Texas"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/rwelborn-2596238/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1402096">rwelborn</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1402096">Pixabay</a></span>
 ---
-
-<div class="yellowBox">
-  <p><strong>Update, 2020-09-29</strong>: While I’ll keep the rest of the post as-is (including the 2020-02-29 update below), note that tonight I got this email from YouTube TV:</p>
-  <blockquote>
-    <p>Providing our members with 85+ channels requires contracts that are periodically renegotiated with content owners. Earlier this year, we negotiated an extension with Sinclair to continue carrying FOX Regional Sports Networks through the regular seasons for baseball, basketball, and hockey. Unfortunately, now the seasons are over and that extension is expiring.</p>
-    <p>Starting Thursday, October 1, 2020, FOX Regional Sports Networks will no longer be available on YouTube TV, and you will no longer have access to any previous recordings from FOX Regional Sports Networks.</p>
-    <p>This was a difficult decision made after months of negotiations. We hope that we can bring FOX RSNs back in the future. Thank you for your membership as we work to make YouTube TV the best streaming experience.</p>
-  </blockquote>
-</div>
-<br />
-<div class="yellowBox"><p><strong>Update, 2020-02-29</strong>: This morning, I learned from <a href="https://www.cordcuttersnews.com/youtube-tv-sinclair-agree-to-a-short-term-extension-to-keep-fox-regional-sports-networks/" target="_blank" rel="noopener">a story on <em>CordCutters News</em></a> that YouTube TV and Sinclair are continuing to negotiate over the dispute described in this post and have agreed that, while they do so, YouTube TV will keep carrying the RSNs. I&rsquo;ll still keep this post in place because (a.) that&rsquo;s not exactly a final resolution, if indeed such a thing is ever possible in this case and (b.) there are a number of points herein which, in this here point-maker&rsquo;s opinion, remain salient nonetheless.</p></div>
 
 Ninety years ago, a reporter asked Babe Ruth about the fact that his previous year’s pay had been higher than that of the president of the United States, Herbert Hoover. The Babe [responded](https://quoteinvestigator.com/2014/12/28/better-year/), in a probable dig at Hoover’s handling of the dawning Great Depression: “I had a better year than he did.”
 
@@ -94,3 +85,9 @@ They can’t cut the massive salaries the athletes make. That would result in st
 They can’t make it up by charging higher ticket prices. Actual attendance has very little to do with a team’s income, compared to the mountains of money from broadcasters and cable networks.
 
 I don’t know where it all ends. But I don’t plan to be standing anywhere near the shadow of the pyramid if and when that once-solid edifice starts making cracking noises.
+
+----
+
+{{% yellowBox %}}**Update, 2020-02-29**: This morning, I learned from [a story on *CordCutters News*](https://www.cordcuttersnews.com/youtube-tv-sinclair-agree-to-a-short-term-extension-to-keep-fox-regional-sports-networks/) that YouTube TV and Sinclair are continuing to negotiate over the dispute described in this post and have agreed that, while they do so, YouTube TV will keep carrying the RSNs. I’ll still keep this post in place because (a.) that’s not exactly a final resolution, if indeed such a thing is ever possible in this case and (b.) there are a number of points herein which, in this here point-maker’s opinion, remain salient nonetheless.{{% /yellowBox %}}
+
+{{% yellowBox %}}**Update, 2020-09-29**: Tonight, YouTube TV emailed its subscribers to say that, once again, it was dropping the Sinclair-owned Fox Sports RSNs; the effective date for this version of the divorce would be 2020-10-01.{{% /yellowBox %}}

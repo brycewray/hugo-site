@@ -4,8 +4,8 @@ title: "Hashing out a cache-busting fix for Eleventy"
 subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
-date: 2020-12-15T23:00:00
-lastmod: 2020-12-17T12:50:00
+date: 2020-12-15T17:00:00-06:00
+lastmod: 2020-12-17T06:50:00-06:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 featured_image: csshash-js_in_Nova_2786x1650.png
@@ -154,8 +154,4 @@ In `head.js`:
 
 So many times I've seen things---often new products that struck me as being odd---and dismissed them as "a solution in search of a problem." I hope this article doesn't fit that description where many of you are concerned; and, of greater importance, I hope it helps you in managing your own Eleventy-based site.
 
-<p class="yellowBox">
-<strong>Note, 2020-12-17</strong>: If you use <a href="https://netlify.com" target="_blank" rel="noreferrer noopener">Netlify</a>, be sure you <strong>turn off</strong> its post-processing of your CSS, which I’ve found can bollix up this method. <em>(My repos’ code already handles such processing anyway.)</em>
-You can do it either through the Netlify GUI (<strong>Build &amp;deploy</strong>
-&gt;<strong>Post processing</strong>&gt;<strong>Asset optimization</strong>
-) or through use of an appropriately configured top-level <code>netlify.toml</code> file such as what I’ve now added to the starter set. Whether other hosts’ settings would be similarly disruptive, I can’t say; the only ones on which I’ve tested this method so far are <a href="https://workers.cloudflare.com" target="_blank" rel="noreferrer noopener">Cloudflare Workers</a>, <a href="https://www.digitalocean.com/products/app-platform/" target="_blank" rel="noreferrer noopener">DigitalOcean App Platform</a>, <a href="https://firebase.google.com" target="_blank" rel="noreferrer noopener">Firebase</a>, Netlify, <a href="https://render.com" target="_blank" rel="noreferrer noopener">Render</a>, and <a href="https://vercel.com" target="_blank" rel="noreferrer noopener">Vercel</a>.</p>
+{{% yellowBox %}}**Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos' code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts' settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).{{% /yellowBox %}}

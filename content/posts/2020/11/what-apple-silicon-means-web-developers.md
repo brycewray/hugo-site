@@ -4,7 +4,7 @@ title: "What Apple Silicon means for web developers"
 subtitle: "The Mac’s new world is amazing, but . . ."
 description: "As Apple takes the Mac to the final frontier, here’s what web devs should consider."
 author: Bryce Wray
-date: 2020-11-20T22:25:00 # 4:25 PM CST Fri., Nov. 20
+date: 2020-11-20T16:25:00-06:00
 #lastmod:
 #draft: false
 discussionId: "2020-11-what-apple-silicon-means-web-developers"

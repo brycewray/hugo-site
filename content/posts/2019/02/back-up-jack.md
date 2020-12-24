@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: Back up, Jack 
 subtitle: From 3-2-1 to 4-2-2
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-lastmod: 2020-05-20T20:46:00-05:00
+lastmod: 2020-11-26T08:15:00-06:00
 discussionId: "2019-02-back-up-jack"
 featured_image: binary-2688910_6000x3372.jpg
 featured_image_width: 6000
@@ -14,10 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2688910">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2688910">Pixabay</a></span>
 ---
 
-<div class="yellowBox">
-	<h2><em>Update, 2020-01-11</em></h2>
-	<p>While I&rsquo;ll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I&rsquo;m now &ldquo;just&rdquo; on 3-2-1 rather than 4-2-2). If you&rsquo;re on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta <em>can</em> imagine just doesn&rsquo;t seem to care about QC where its Mac version of OneDrive is concerned.</p>
-</div>
+{{% yellowBox %}}**Update, 2020-01-11**:  While I’ll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I’m now “just” on 3-2-1 rather than 4-2-2). If you’re on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta *can* imagine just doesn’t seem to care about QC where its Mac version of OneDrive is concerned.{{% /yellowBox %}}
 
 No one will ever mistake me for a high-tech version of [Henry David Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) (which is a pretty bizarre concept, if you go there), but I’ve been trying to simplify my computing setup—not so much where hardware is concerned but, instead, the services to which I have subscribed.
 
@@ -80,11 +79,7 @@ As for the cost savings, they’re small *but* I’m getting more for my money. 
 
 In the first week under the new setup, I have been continually amazed to watch how smoothly macOS works with iCloud, now that I’ve finally given it the full “You da Sync Man” treatment—especially with the Mac set to [optimize local storage](https://support.apple.com/en-us/HT206996). I know, it should’ve been obvious, and it was, but *knowing* it was much different than *seeing* it has been. And, as a side benefit, I get a little thrill every time I check the Files app in iOS and see *all* my freakin’ Mac stuff in there, too. That was sometimes problematic with the other services, notably OneDrive.
 
-<hr />
-
-<em>**Note**: In the wake of my [later issues with my Mac’s iCloud Sync that briefly caused me to drop using Ulysses](/posts/2019/05/boxed-in), I learned that [it can be unwise to use the </em>Optimize Mac Storage<em> option](https://www.macworld.com/article/3306257/how-to-disable-optimized-icloud-drive-storage-with-a-single-click.html), after all. It can inadvertently delete files on which [some](https://support.screencast-o-matic.com/hc/en-us/articles/360007256154--Sorry-this-recording-has-missing-files-since-iCloud-Drive-Optimize-Mac-Storage-is-enabled) [apps](https://support.native-instruments.com/hc/en-us/articles/360000816565-TRAKTOR-Warning-Message-Optimize-Mac-Storage-is-turned-on-in-iCloud-Drive-Mac-), particularly [“shoebox” apps](/posts/2019/05/boxed-in), depend. The more you know&nbsp;.&nbsp;.&nbsp;.</em>
-
-<hr />
+{{% yellowBox %}}**Note**: In the wake of my [later issues with my Mac's iCloud Sync that briefly caused me to drop using Ulysses](/posts/2019/05/boxed-in), I learned that [it can be unwise to use the *Optimize Mac Storage* option](https://www.macworld.com/article/3306257/how-to-disable-optimized-icloud-drive-storage-with-a-single-click.html), after all. It can inadvertently delete files on which [some](https://support.screencast-o-matic.com/hc/en-us/articles/360007256154--Sorry-this-recording-has-missing-files-since-iCloud-Drive-Optimize-Mac-Storage-is-enabled) [apps](https://support.native-instruments.com/hc/en-us/articles/360000816565-TRAKTOR-Warning-Message-Optimize-Mac-Storage-is-turned-on-in-iCloud-Drive-Mac-), particularly ["shoebox" apps](/posts/2019/05/boxed-in), depend. The more you know&nbsp;.&nbsp;.&nbsp;.{{% /yellowBox %}}
 
 Oh, yeah, OneDrive. Left that OneDrive-as-backup-from-Arq thread hanging, didn’t I? Well, about that&nbsp;.&nbsp;.&nbsp;.
 
@@ -136,4 +131,4 @@ I urge you to figure out a 3-2-1 (or better) backup plan that works for you, as 
 
 [^10]:	That is, if the opinions of her mother and me—and the professionals who rate her, and the parents who keep requesting to have her teach the younger siblings of kids she’s already taught—can be any guide for you.
 
-[^11]:	Yes, I know the main problem with this scenario: unlike the concept of saving plain-text versions of your documents (a subject about which I’ll write at another time), there is no way to know how compatible future software will be with these media files. After all, you can’t very well save them as “plain video” or other such non-existent format! However, my immediate concern was to make sure I had “rescued” them from existing only on multi-decades-old VHS tapes. If, while I’m still sufficiently tech-savvy to grasp it, The Tech Powers That Be decide to make obsolescent both these files and the apps that can open them, I will do my best to convert the files to whatever format seems feasible at the time; and I will have to hope those who follow me will be motivated to do the same when necessary. After all, it is they for whom I’m saving these memories. If they don’t care, I suppose it won’t matter in the end; but better that I do this and they don’t care than that I fail to do this and they wish I had.
+[^11]:	Yes, I know the main problem with this scenario: unlike the concept of saving plain-text versions of your documents (a subject about which I'll write at another time), there is no way to know how compatible future software will be with these media files. After all, you can’t very well save them as “plain video” or other such non-existent format! However, my immediate concern was to make sure I had “rescued” them from existing only on multi-decades-old VHS tapes. If, while I'm still sufficiently tech-savvy to grasp it, The Tech Powers That Be decide to make obsolescent both these files and the apps that can open them, I will do my best to convert the files to whatever format seems feasible at the time; and I will have to hope those who follow me will be motivated to do the same when necessary. After all, it is they for whom I’m saving these memories. If they don’t care, I suppose it won’t matter in the end; but better that I do this and they don’t care than that I fail to do this and they wish I had.

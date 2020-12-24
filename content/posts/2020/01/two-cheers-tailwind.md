@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: "Two cheers for Tailwind"
 subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2020-09-07T10:45:00-05:00
+lastmod: 2020-11-22T10:35:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: CSS-code-1797778_1971x1306.jpg
 featured_image_width: 1971
@@ -14,14 +16,11 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/WojciechKrakowiak-722397/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Wojciech Krakowiak</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Pixabay</a></span>
 ---
 
-<div class="yellowBox"><p><strong>Update, 2020-05-09</strong>:<br />
-Although it was clear from this take&mdash;and what I added at the bottom&mdash;that I wasn&rsquo;t crazy about the subject of this post, I later changed my mind and reinstated it, as explained in &ldquo;<a href="/posts/2020/05/going-solo-eleventy">Going solo with Eleventy</a>.&rdquo; Still, am leaving this post in place for archival purposes and the sake of <a href="/posts/2019/10/otoh">transparency</a>.</p></div>
+{{% yellowBox %}}**Update, 2020-05-09**: Although it was clear from this take---and what I added at the bottom---that I wasn't crazy about the subject of this post, I later changed my mind and reinstated it, as explained in "[Going solo with Eleventy](/posts/2020/05/going-solo-eleventy)." Still, am leaving this post in place for archival purposes and the sake of [transparency](/posts/2019/10/otoh).{{% /yellowBox %}}
 
-A couple of weekends ago, I tweeted[^privacy] a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year’s, so I figured I’d be fortunate if I got a handful of responses.
+A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year’s, so I figured I’d be fortunate if I got a handful of responses.
 
-[^privacy]: The embedded tweets that formerly were in this spot on the page are now just linked and identified, due to the site’s belatedly adopted [privacy policy](/privacy).
-
-> Reading about <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> and other <a href="https://twitter.com/hashtag/atomicCSS?src=hash&amp;ref_src=twsrc%5Etfw">#atomicCSS</a> approaches (<a href="https://twitter.com/tachyons_css?ref_src=twsrc%5Etfw">@tachyons_css</a>, <a href="https://twitter.com/basscss?ref_src=twsrc%5Etfw">@basscss</a> , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?—[Bryce Wray (@BryceWrayTX) December 28, 2019](https://twitter.com/BryceWrayTX/status/1210975092999704578?ref_src=twsrc%5Etfw)
+{{< twitscrn imageUrl="Twitter_1210975092999704578.png" alt="Tweet by @BryceWrayTX, 2019-12-28: Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?" width="1182" height="516" twitterUrl="https://twitter.com/BryceWrayTX/status/1210975092999704578" >}}
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively “bink”-ing at me for a few hours thereafter.
 
@@ -31,7 +30,7 @@ Tens of thousands of “[impressions](https://help.twitter.com/en/managing-your-
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-> Another holiday, another site spruce-up. Decided to go the <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄—[Bryce Wray (@BryceWrayTX) January 1, 2020](https://twitter.com/BryceWrayTX/status/1212496201385418753?ref_src=twsrc%5Etfw)
+{{< twitscrn imageUrl="Twitter_1212496201385418753.png" alt="Tweet by @BryceWrayTX, 2020-01-01: Another holiday, another site spruce-up. Decided to go the @tailwindcss route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄" width="1182" height="636" twitterUrl="https://twitter.com/BryceWrayTX/status/1212496201385418753" >}}
 
 ## Not a purist
 
@@ -86,7 +85,7 @@ I guess what still mainly bugs me is the whole idea of whether, specifically for
 
 By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn’t* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It’s clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin’ amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
-## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1.1em; margin-right: -1em;">&trade;</sup>—as usual
+## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1rem; margin-right: -0.85rem;">&trade;</sup>---as usual
 
 As I observed near the end of my [last post](/posts/2019/12/sorta-strange-ssg-trip), this site’s [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo gives me a solid foundation on which to build. And, on the subject I’ve discussed here today, it further shows how easily I can try new stuff.
 

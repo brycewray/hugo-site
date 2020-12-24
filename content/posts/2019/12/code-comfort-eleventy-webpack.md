@@ -1,4 +1,6 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Some words about my Eleventy/webpack configuration."
@@ -14,9 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/markusspiske-670330/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486361">Markus Spiske</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486361">Pixabay</a></span>
 ---
 
-<div class="yellowBox">
-	<p><strong>Note, 2020-09-09</strong>: Although the site long since is no longer using the stack mentioned here, at least some parts of the repo <a href="https://github.com/brycewray/eleventy_bundler" target="_blank" rel="noopener">remain online for viewing by the curious</a>.</p>
-</div>
+{{% yellowBox %}}**Note, 2020-09-09**: Although the site long since is no longer using the stack mentioned here, at least some parts of the repo [remain online for viewing by the curious](https://github.com/brycewray/eleventy_bundler).{{% /yellowBox %}}
 
 *Following up on my [recent post](/posts/2019/12/packing-up) about how I got this site back to my favorite [static site generator](https://staticgen.com) (SSG), [Eleventy](https://11ty.dev), and also provided some enhancements with the [webpack](https://webpack.js.org) bundler&nbsp;app&nbsp;.&nbsp;.&nbsp;.*
 

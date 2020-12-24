@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2020-09-27T10:20:00-05:00
+lastmod: 2020-11-22T11:25:00-06:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: detour-2496197_4912x3264.jpg
 featured_image_width: 4912
@@ -12,11 +14,30 @@ featured_image_height: 3264
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/awsloley-3972173/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">awsloley</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">Pixabay</a></span>
+oldComments: |
+    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
+      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
+      <p class="text-xs italic text-center">
+        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
+      </p>
+      <p class="mt-6 mb-0 text-base"><strong>Chris Rosser</strong> <span class="italic text-sm">2019-09-08</span></p>
+      <p class="my-0 text-base leading-normal">Great post and very interesting. I hadn't heard of Eleventy before. That's one thing I love about using a static-site generator is how easy it is to change should you need to. I used several before I settled on Pelican. I briefly thought about changing to Hugo, but decided it against it once I read the docs.</p>
+    
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-09-09</span></p>
+      <p class="my-0 text-base leading-normal">Thank you. Yes, until Gatsby Experiment I, I&rsquo;d never heard of it, either, and at first I erroneously lumped it in with the others as not quite sufficient for my needs. Once I read its docs more thoroughly and got a better grasp of its extensibility, I realized I&rsquo;d missed the point entirely &mdash; as at least one triumphant Eleventy supporter reminded me yesterday after I released this post. :-)</p>
+    
+      <p class="mt-6 mb-0 text-base"><strong>Magnus Lindberg</strong> <span class="italic text-sm">2019-09-30</span></p>
+      <p class="my-0 text-base leading-normal">Thanks for this writeup about 11ty :- ) I'm about to create a blog for Talkyard, ... and found your article about 11ty when searching for 11ty versus Gatsby. To me, Gatsby is ... complicated. And with cryptic error messages that make my blood pressure rise. <span class="text-sm">(Maybe I'll want to use Gatsby for the main website, some time later, which might need complicated sliders and buttons and widgets, hmm.)</span></p>
+      <p class="my-0 text-base leading-normal">Nice to read that 11ty seems to be as simple as I originally expected all static gens to be :- )<br />
+      (I noticed you've since switched back to Hugo, however, for me, probably 11ty is better &mdash; I think I'll need Javascript plugins.)</p>
+      <p class="my-0 text-base leading-normal">Going to try this theme: <a href="https://hylia.website/posts/a-simple-post/" target="_blank" rel="noopener">https://hylia.website/posts/a-simple-post/</a></p>
+    
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-09-30</span></p>
+      <p class="my-0 text-base leading-normal">My continuing experimentation <strong>in the background</strong> (!) makes it increasingly clear that Gatsby is only for those who are thoroughly into React. Maybe someday I&rsquo;ll get it, but I&rsquo;m not holding my breath. But, yes, if your purposes are better served by a JS-based SSG, I emphatically recommend Eleventy. It is wonderfully easy to use and customize, especially if you have sufficient JS knowledge, and its build speed is surprisingly close to Hugo&rsquo;s, especially in league with Netlify.</p>
+    </div>
 ---
 
-<div class="yellowBox">
-	<p><strong>Note</strong>: To put it simply, things <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> <a href="/posts/2019/10/now-gatsby-geezer">multiple</a> <a href="/posts/2020/09/ignition-sequence-start">times</a> since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
-</div>
+{{% yellowBox %}}**Note**: To put it simply, things [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2020/09/ignition-sequence-start) since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so [here it shall stay](/posts/2019/10/otoh).{{% /yellowBox %}}
 
 Recently, I edited this site’s footer. Where it used to say that this site is powered by Hugo—*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)—it now says it’s powered by [the JAMstack](https://jamstack.org).
 
@@ -199,11 +220,11 @@ It doesn’t build a site as quickly as Hugo—nothing beats Hugo on that score�
 
 While we’re on the subject of speed: while I was working on this post, I saw these Leatherman tweets from, respectively, his personal account and the Eleventy account:
 
-> Which has a better First Meaningful Paint time?<br /><br />① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br />② a client rendered React site with exactly one tweet on it<br /><br />(Spoiler: <a href="https://twitter.com/____lighthouse?ref_src=twsrc%5Etfw">@____lighthouse</a> reports 8.5MB of HTML wins by about 200ms)—[Zach Leatherman (@zachleat) September 6, 2019](https://twitter.com/zachleat/status/1169998370041208832?ref_src=twsrc%5Etfw)
+{{< twitscrn imageUrl="Twitter_1169998370041208832.png" alt="Tweet from @zachleat, 2019-09-06: Which has a better First Meaningful Paint time? 1. a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets 2. a client rendered React site with exactly one tweet on it (Spoiler: @____lighthouse reports 8.5MB of HTML wins by about 200ms)" width="1182" height="704" twitterUrl="https://twitter.com/zachleat/status/1169998370041208832" >}}
 
 React. Hmm. Wonder whom he might be zinging there?
 
-> Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅—[Eleventy (@eleven_ty) <a href="">September 7, 2019](https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw)
+{{< twitscrn imageUrl="Twitter_1170187490952712192.png" alt="Tweet from @eleven_ty, 2019-09-06: Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅" width="1182" height="540" twitterUrl="https://twitter.com/eleven_ty/status/1170187490952712192" >}}
 
 Good job, sir. In the case of that last tweet in particular: given the Gatsby team’s continual boasting about how they can handle massive amounts of data with ease, I hope you’re making them sweat, even if just a little.[^tweetEase]
 

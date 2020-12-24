@@ -1,9 +1,11 @@
 ---
-title: "Fathom Analytics: Count on it"
+layout: layouts/posts/singlepostherofit.njk
+tags: post
+title: "Fathom Analytics: Count on it"
 subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
-date: 2020-06-18T23:45:00-05:00
+date: 2020-06-19T12:45:00-05:00
 lastmod: 2020-09-29T08:50:00-05:00
 discussionId: "2020-06-fathom-analytics-count-on-it"
 featured_image: alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg
@@ -14,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@swimstaralex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alexander Sinn</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-<div class="yellowBox"><p><strong>Affiliation disclaimer</strong>: What follows is my <em>honest opinion</em> of something I&rsquo;m now using on this site and paying for with my own money. But I want to advise you up-front that, if you <a href="https://usefathom.com/ref/ZKHYWX" target="_blank" rel="noopener">use this affiliate link (or others like it herein) to <strong>sign up with Fathom Analytics</strong></a>, I&rsquo;ll get a commission&mdash;<strong><em>and</em></strong> <strong>you</strong> will get a <strong>$10 credit</strong> on your first invoice. So, if you like what I&rsquo;m telling you here and want to <a href="https://usefathom.com/ref/ZKHYWX" target="_blank" rel="noopener">give this product a try</a>, help out an old nerd <strong>and</strong> yourself and your visitors, okay? Thanks!</p></div>
+{{% yellowBox %}}**Affiliation disclaimer**: What follows is my *honest opinion* of something I'm now using on this site and paying for with my own money. But I want to advise you up-front that, if you [use this affiliate link (or others like it herein) to **sign up with Fathom Analytics**](https://usefathom.com/ref/ZKHYWX), I'll get a commission---***and*** **you** will get a **$10 credit** on your first invoice. So, if you like what I'm telling you here and want to [give this product a try](https://usefathom.com/ref/ZKHYWX), help out an old nerd **and** yourself and your visitors, okay? Thanks!{{% /yellowBox %}}
 
 Got your own website? Wonder how it’s doing out there?
 

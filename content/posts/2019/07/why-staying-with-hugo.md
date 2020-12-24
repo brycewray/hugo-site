@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: Why I’m staying with Hugo
 subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2020-09-27T10:20:00-05:00
+lastmod: 2020-11-22T09:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_1280x720.jpg
 featured_image_width: 1280
@@ -12,11 +14,30 @@ featured_image_height: 720
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: |
   <span class="caption">Image: Hugo logo by Hugo creator Steve&nbsp;Francia, sourced&nbsp;from <a href="https://gohugo.io">Hugo&nbsp;website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/">Affinity&nbsp;Designer</a>.</span>
+oldComments: |
+    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
+      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
+      <p class="text-xs italic text-center">
+        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
+      </p>
+      <p class="mt-6 mb-0 text-base"><strong>Cole Krumz</strong> <span class="italic text-sm">2019-07-15</span></p>
+      <p class="my-0 text-base leading-normal">Interesting read. Any chance you'd be willing to open source the attempted site, bugs and all, as a learning tool? I'd be pretty interested to try to get your site working, and in the process understand how gatsby handles a set of "real-world" requirements.</p>
+    
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-07-15</span></p>
+      <p class="my-0 text-base leading-normal">I&rsquo;m afraid it&rsquo;s already history. I didn&rsquo;t want all those thousands of node modules taking up space on my Mac. :-) I do use Time Machine so it&rsquo;s probably on there somewhere, but I wouldn&rsquo;t know which version to recover.</p>
+    
+      <p class="mt-6 mb-0 text-base"><strong>Nico</strong> <span class="italic text-sm">2019-07-16</span></p>
+      <p class="my-0 text-base leading-normal">Thank you for the really interesting reading! Nico here. And I have to say that I feel for you there!</p>
+      <p class="my-0 text-base leading-normal">Also, I think you raise some very valid and important topics, which for me are food for thought:</p>
+      <p class="my-0 text-base leading-normal">One of them being that <em><strong>documentation</strong></em> is something excessively...(how do you say in English when someone looks to the side so they don't see you? That's what I mean! Like &quot;ignored&quot; more or less). The fact a developer will use a certain framework/library/etc. does not tell you nothing about their background or objective. Making no assumptions, good documentation can be built.</p>
+      <p class="my-0 text-base leading-normal">I also have more comments but this is already too long lol. In short, thanks for the great reading!</p>
+    
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-07-16</span></p>
+      <p class="my-0 text-base leading-normal">Given how long I yakked in this article, you have no need to apologize. :-) Thanks for your kind words and insights.</p>
+    </div>
 ---
 
-<div class="yellowBox">
-	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things</a> <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> <a href="/posts/2019/10/now-gatsby-geezer">multiple</a> <a href="/posts/2020/09/ignition-sequence-start">times</a> since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
-</div>
+{{% yellowBox %}}**Note**: To put it simply, [things](/posts/2019/09/why-left-hugo-eleventy) [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2020/09/ignition-sequence-start) since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).{{% /yellowBox %}}
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear—and I've even said as much—that I tend to have a problem avoiding New Shiny Things where tech is concerned.
 
@@ -180,15 +201,15 @@ the original reference and down at the bottom.
 
 .&nbsp;.&nbsp;. and it comes out like this (let's say that this footnote ends up being the third one in the document, no matter what it was at its original entry):
 
-> This is how you do footnotes<sup class="teeny" style="color: #0000df;">3</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
+> This is how you do footnotes<sup class="teeny text-blue-500 dark:text-blue-200">3</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
 
 Then, down at the bottom, you get something that looks kind of like this:
 
-<p class="legal">3.&nbsp;&nbsp;So here we are at the bottom.<span class="teeny" style="color: #0000df;">↑</span></p>
+<p class="legal">3.&nbsp;&nbsp;So here we are at the bottom.<span class="teeny text-blue-500 dark:text-blue-200">↑</span></p>
 
 For somebody like me who uses footnotes a lot and moves their origins' paragraphs around frequently during the editing process, that's a gotta-have. For Gatsby, there are a couple of plugins that purport to provide it, but I found neither to do the job *reliably*. The most widely used one would work *sometimes*, but then something else would cause a crash and, after the reboot, suddenly that same Markdown would produce this in the rendered page:
 
-> This is how you do footnotes<sup class="teeny" style="color: #0000df;">footnoteInfo</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
+> This is how you do footnotes<sup class="teeny text-blue-500 dark:text-blue-200">footnoteInfo</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
 
 Nope, nope, nope. Couldn't have that.
 
@@ -250,9 +271,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) “liked” that tweet.
 
-> Will have more to say about this in a future post, but am keeping brycewray.com firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. #StayWithTheBest—[Bryce Wray (@BryceWrayTX) July 13, 2019](https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw)[^privacy]
-
-[^privacy]: The embedded tweet that formerly was in this spot on the page is now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy). 
+{{< twitscrn imageUrl="Twitter_1150104013871955971.png" alt="Tweet by @BryceWrayTX, 2019-07-13: Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest" width="1182" height="1234" twitterUrl="https://twitter.com/BryceWrayTX/status/1150104013871955971" >}}
 
 ## “Interesting,” indeed
 

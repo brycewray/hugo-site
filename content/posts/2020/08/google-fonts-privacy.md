@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: "Google Fonts and privacy"
 subtitle: "It’s about more than trust"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T14:35:00-05:00
-lastmod: 2020-09-29T08:50:00-05:00
+lastmod: 2020-12-13T12:35:00-06:00
 discussionId: "2020-08-google-fonts-privacy"
 featured_image: morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg
 featured_image_width: 3000
@@ -77,8 +79,6 @@ So, yesterday, I began serving my chosen Google Fonts typefaces “locally.” I
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my “local “ copies straight. That’s fine. I get to keep the site’s typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 
-<div class="yellowBox"><p><strong>Note, 2020-10-22</strong>: I have since reverted to the &ldquo;<a href="/posts/2018/10/web-typography-part-2">system fonts stack</a>.&rdquo;</p></div>
-
 ## A little more cleaning-up
 
 While I was in this process, I realized there were two other needed actions to achieve full (or at least fuller) compliance with the GDPR and other privacy-protection laws, both now and in the future; so I:
@@ -102,9 +102,8 @@ That has now changed.
 
 It was somewhat tedious making all these fixes I’ve described herein, but it was a good kind of tedious.
 
-Even if you’re not and never will be an EU citizen, your privacy deserves protection, too. I appreciate your visits, and want you to feel completely safe when you spend time here on, as I once described [my original website in the 1990s](https://web.archive.org/web/20000413205935/http://home1.gte.net/bwray/index.html), my “little spot on that lone prairie that is the great World Wide Web. “
+Even if you’re not and never will be an EU citizen, your privacy deserves protection, too. I appreciate your visits, and want you to feel completely safe when you spend time here on, as I once described [my original website in the 1990s](https://web.archive.org/web/20000413205935/http://home1.gte.net/bwray/index.html), my “little spot on that lone prairie that is the great World Wide Web.”
 
----- 
-***Totally unrelated additional note:*** *Contrary to what I’d thought at the end of my [last post](/posts/2020/08/posting-with-ulysses), I did this one in [Ulysses](https://ulysses.app), too. Who’d-a thunk it?*
+{{% yellowBox %}}**Totally unrelated additional note**: Contrary to what I’d thought at the end of my [last post](/posts/2020/08/posting-with-ulysses), I did this one in [Ulysses](https://ulysses.app), too. Who’d-a thunk it?{{% /yellowBox %}}
 
 [^1]:	Of course, that doesn’t necessarily identify you, especially if—as is true for most users—your device receives its IP address via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Nonetheless, it would at least narrow it down. And, equally of course, it absolutely *does* identify a device which has a *[static](https://whatismyipaddress.com/dynamic-static)* IP address.

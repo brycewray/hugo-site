@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: Getting framed
 subtitle: Why I still use Bootstrap
 description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
 date: 2018-11-14T09:15:00-06:00
-lastmod: 2020-01-10T13:45:00-06:00
+lastmod: 2020-11-26T08:05:00-06:00
 discussionId: "2018-11-getting-framed"
 featured_image: ricardo-gomez-angel-7bzbyafVTYg-unsplash_2859x1888.jpg
 featured_image_width: 2859
@@ -20,11 +22,7 @@ Breaking news: we don’t live in an ideal world.
 
 Each client wants its site or site modifications finished yesterday, to perfection, and for free—not necessarily in that order, but you get the point. Site-load time, including the [infamous Time to First Byte (TTFB)](https://developers.google.com/web/tools/chrome-devtools/network-performance/understanding-resource-timing#slow_time_to_first_byte), is critical. And, while browsers have advanced a lot in the last three or four years, [not everybody is using the latest and greatest](http://gs.statcounter.com/browser-version-market-share) and, besides, [there are still some CSS shortcomings among even recent browser versions](https://www.w3schools.com/cssref/css3_browsersupport.asp).
 
-<hr style="border: 1px solid #666;" />
-
-_**Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more) a few days later, but go ahead and read this one first so you’ll have some perspective on that post._
-
-<hr style="border: 1px solid #666;" />
+{{% yellowBox %}}**Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more) a few days later, but go ahead and read this one first so you’ll have some perspective on that post. {{% /yellowBox %}}
 
 ## Frickin’ frameworks?
 
@@ -55,7 +53,6 @@ As for CSS Grid, it’s undeniably cool. As time and events allow, I will learn 
 
 In the meantime, in our non-ideal world: when the decision is totally up to me, I’m Bootstrappin’.
 
-<p>&nbsp;</p>
-<hr style="border: 1px solid #666;" />
+<br />
 
-_**Note**: Many thanks to Carol Skelly for “[Bootstrap (Flexbox) is still better than CSS Grid for creating layouts](https://medium.com/wdstack/bootstrap-is-still-better-than-css-grid-for-creating-layouts-522b7baf0411),” and Maria Antonietta Perna for “[The CSS Grid layout vs. CSS frameworks debate](https://www.sitepoint.com/css-grid-layout-vs-css-frameworks-debate/).”_
+{{% yellowBox %}}**Note**: Many thanks to Carol Skelly for “[Bootstrap (Flexbox) is still better than CSS Grid for creating layouts](https://medium.com/wdstack/bootstrap-is-still-better-than-css-grid-for-creating-layouts-522b7baf0411),” and Maria Antonietta Perna for “[The CSS Grid layout vs. CSS frameworks debate](https://www.sitepoint.com/css-grid-layout-vs-css-frameworks-debate/).”{{% /yellowBox %}}

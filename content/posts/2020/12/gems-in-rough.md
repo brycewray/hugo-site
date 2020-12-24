@@ -4,8 +4,8 @@ title: "Gems in the rough"
 subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
-date: 2020-12-21T18:10:00
-#lastmod: TBD
+date: 2020-12-21T12:10:00-06:00
+lastmod: 2020-12-22T12:50:00-06:00
 #draft: false
 discussionId: "2020-12-gems-in-rough"
 featured_image: gems-836763_5184x3456.jpg
@@ -57,7 +57,7 @@ However, these free-tier CDN offerings vary widely. Here's the main thing to con
 
 ## When you change hosts
 
-In case that discussion about the various vendors' CDN capabilities have you thinking of doing as I have done several times in the last few months, which was to switch from one host to the other, first allow me to offer some valuable advice based on my experiences during that process. I have one warning, followed by one suggestion.
+In case that discussion about the various vendors' CDN capabilities has you thinking of doing as I have done several times in the last few months, which was to switch from one host to the other, first allow me to offer some valuable advice based on my experiences during that process. I have one warning, followed by one suggestion.
 
 ### Be careful about DNSSEC
 
@@ -69,7 +69,7 @@ So don't activate DNSSEC if you want to have the greatest flexibility when it co
 
 ### DNS cache? What&nbsp;DNS&nbsp;cache?
 
-When you *do* switch hosts---meaning, when you go to your DNS registrar and point your site to a different IP address---you can find yourself waiting up to 48 hours before that transition goes through. **However**, you'll find that the transition will go a lot more quickly if you'll simply tell three big worldwide DNS resolvers to forget your old address and reset to the new one by **purging their DNS caches**. How do you do that? Just use each of the following:
+When you *do* switch hosts---meaning, when you go to your DNS registrar and point your site to a different IP address---you can find yourself waiting up to 48 hours before that transition goes through. **However**, you'll find that it'll occur a lot more quickly if you'll simply tell three big worldwide DNS resolvers to forget your old address and reset to the new one by **purging their DNS caches**. How do you do that? Just use each of the following:
 
 - Cloudflare---[1.1.1.1 Purge Cache form](https://1.1.1.1/purge-cache/).
 - Google Public DNS---[Flush Cache form](https://developers.google.com/speed/public-dns/cache).
@@ -141,9 +141,9 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
 
 Finally, there are these even smaller nuggets which don't even deserve their own *sections* within this post:
 
-- **On the starter sites front**---I have recently created a [Nunjucks](https://mozilla.github.io/nunjucks/)-templating [version](https://github.com/brycewray/eleventy_solo_starter_njk) of the original JavaScript-templating (.11ty.js) [Eleventy starter site](https://github.com/brycewray/eleventy_solo_starter) I posted [a few months ago](/posts/2020/07/beginners-luck). If you find editing Nunjucks templates more pleasant than editing JavaScript templates, as I do, perhaps this will be a nice addition. Also, *all* my starter sites (for both the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) SSGs) now include both Tailwind CSS 2.x and my recent [cache-busting solution](/posts/2020/12/cache-busting-eleventy-take-two/). \
-And, speaking of starter sites&nbsp;.&nbsp;.&nbsp;.
-- **Zola? No, zanks**---I'd given some thought to making a starter site using the [Zola](https://getzola.org) SSG, since I already have starter sites using Hugo, to which Zola has many similarities. (In fact, its creator came up with Zola because Hugo's [Go](https://golang.org)-based templating drove him nuts; he even came up with his own [Rust](https://www.rust-lang.org/)-based templating engine, [Tera](https://tera.netlify.app/).) However, after a day or so of rooting around, I learned that Zola *purposely* is unfriendly to dividing a site's content into subdirectories the way I *always* divide mine. For example, dividing my posts by years, then months within the years, is a no-no in Zola, especially when you want to paginate in a [posts list](/posts). (I won't go into the gritty details; just search through Zola's [Github issues](https://github.com/getzola/zola/issues) and [documentation](https://www.getzola.org/documentation/getting-started/overview/) for the term *orphan pages*.) In fairness to Zola boosters, I have found similar problems in dealing with the [Gridsome](https://gridsome.org) SSG as well as the SSG capabilities of [Next.js](https://nextjs.org) and [Nuxt.js](https://nuxtjs.org)---and I have similarly rejected them for just that reason, among others. Whatever else may be true about Eleventy and Hugo, both of them let me arrange a site's content *the way I want*. Anything that doesn't, I refuse to use. Period.
+- **On the starter sites front**---I have recently created a [Nunjucks](https://mozilla.github.io/nunjucks/)-templating [version](https://github.com/brycewray/eleventy_solo_starter_njk) of the original JavaScript-templating (.11ty.js) [Eleventy starter site](https://github.com/brycewray/eleventy_solo_starter) I posted [a few months ago](/posts/2020/07/beginners-luck). If you find editing Nunjucks templates more pleasant than editing JavaScript templates, as I do, perhaps this will be a nice addition. Also, the applicable starter sites for both the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) SSGs now include Tailwind CSS 2.x; and both Eleventy starter sites include my recent [cache-busting solution](/posts/2020/12/cache-busting-eleventy-take-two/). (The Hugo starter sites don't need them because of capabilities built into Hugo.) \
+Speaking of starter sites&nbsp;.&nbsp;.&nbsp;.
+- **Zola? No, zanks**---I'd given some thought to making a starter site using the [Zola](https://getzola.org) SSG, since I already have starter sites using Hugo, to which Zola has many similarities. (In fact, its creator came up with Zola because Hugo's templating drove him nuts; he even came up with his own templating engine, [Tera](https://tera.netlify.app/).) However, after a day or so of rooting around, I learned that Zola *purposely* is unfriendly to dividing a site's content into subdirectories the way I *always* divide mine. For example, dividing my posts by years, then months within the years, is a no-no in Zola, especially when you want to paginate in a [posts list](/posts). (I won't go into the gritty details; just search through Zola's [Github issues](https://github.com/getzola/zola/issues) and [documentation](https://www.getzola.org/documentation/getting-started/overview/) for the term *orphan pages*.) In fairness to Zola boosters, I have found similar problems in dealing with the [Gridsome](https://gridsome.org) SSG as well as the SSG capabilities of [Next.js](https://nextjs.org) and [Nuxt.js](https://nuxtjs.org)---and I have similarly rejected them for just that reason, among others. Whatever else may be true about Eleventy and Hugo, both of them let me arrange a site's content *the way I want*. Anything that doesn't, I refuse to use. Period.
 
 ## Some days are diamonds, some&nbsp;days are&nbsp;stones
 

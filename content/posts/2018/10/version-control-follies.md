@@ -53,9 +53,4 @@ So I needed not just a GUI app for Git-commanded version control, but a GUI app 
 
 In short, I’d gone from a setup in which *every* change (no matter how tiny) involved a series of hand-typed Git commands to one in which change was no big deal. Make and save the change locally, do a commit, then do a push. Click, type in a description of what you’re changing, click, and click. Watch Netlify run with it. Bang. Life is good.
 
-<hr />
-
-### Correction, 2019-07-14:
-
-- *At the time I wrote this, I thought SourceTree was Bitbucket-specific but, of course, that’s not true; it works also with GitHub and [GitLab](https://gitlab.com) as well.*
-- *Since the original writing, GitHub has joined Bitbucket (and GitLab) in having free private repos. Each has slightly different rules about them, such as numbers of contributors allowed.*
+{{% yellowBox %}}**Correction, 2019-07-14**: At the time I wrote this, I thought SourceTree was Bitbucket-specific but, of course, that's not true; it works also with GitHub and [GitLab](https://gitlab.com) as well. Also: since the original writing, GitHub has joined Bitbucket (and GitLab) in having free private repos. Each has slightly different rules about them, such as numbers of contributors allowed.{{% /yellowBox %}}

@@ -1,4 +1,6 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: Some curmudgeonish thoughts
 subtitle: (with apologies to the late Andy Rooney)
 description: “Didja ever notice...?” Yes, I did. And here’s the result. 

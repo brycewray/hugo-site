@@ -4,8 +4,8 @@ title: "Cache-busting in Eleventy, take two"
 subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
-date: 2020-12-11T22:55:00
-lastmod: 2020-12-17T12:50:00
+date: 2020-12-11T16:55:00-06:00
+lastmod: 2020-12-17T06:50:00-06:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
 featured_image: broken-glass-549087_4000x3000.jpg
@@ -99,7 +99,7 @@ To my delight, it worked! And, by "it worked," I mean that the hash at the end o
 - Was successfully called within the final `head` for each page's HTML.
 - Was the same after each host completed its build process. This was important because---as I'd seen during my use of that interim query string solution---build configurations and processes vary among hosts and so, under certain conditions, can produce results that might not necessarily work for you.
 
-<p class="yellowBox"><strong>Caution</strong>: Chastened as I am by my recent whiff, I do <strong>not</strong> pretend that these tests, either locally or on actual hosting environments, can necessarily be accurate for <strong>every</strong> conceivable computing situation. That&rsquo;s why I put the &ldquo;(?)&rdquo; in the subtitle. All I can say for sure is that this solution works for me locally and on multiple hosts using various configurations where the previous, PostCSS Hash-based solution failed to be reliable. But, as always, YMMV.</p>
+{{% yellowBox %}}**Caution**: Chastened as I am by my recent whiff, I do **not** pretend that these tests, either locally or on actual hosting environments, can necessarily be accurate for **every** conceivable computing situation. That's why I put the "(?)" in the subtitle. All I can say for sure is that this solution works for me locally and on multiple hosts using various configurations where the previous, PostCSS Hash-based solution failed to be reliable. But, as always, YMMV.{{% /yellowBox %}}
 
 ## To fork or not&nbsp;to&nbsp;fork&nbsp;.&nbsp;.&nbsp;.
 
@@ -126,5 +126,4 @@ I hope that this solution, and this description of how I got to it, will at leas
 
 Happy cache-busting---for real this time, I hope.
 
-<p class="yellowBox"><strong>Note, 2020-12-17</strong>: If you use <a href="https://netlify.com" target="_blank" rel="noreferrer noopener">Netlify</a>, be sure you <strong>turn off</strong> its post-processing of your CSS, which I’ve found can bollix up this method. <em>(My repos’ code already handles such processing anyway.)</em> You can do it either through the Netlify GUI (<strong>Build &amp;deploy</strong> &gt;<strong>Post processing</strong>
-&gt;<strong>Asset optimization</strong>) or through use of an appropriately configured top-level <code>netlify.toml</code> file such as what I’ve now added to the starter set. Whether other hosts’ settings would be similarly disruptive, I can’t say; the only ones on which I’ve tested this method so far are <a href="https://workers.cloudflare.com" target="_blank" rel="noreferrer noopener">Cloudflare Workers</a>, <a href="https://www.digitalocean.com/products/app-platform/" target="_blank" rel="noreferrer noopener">DigitalOcean App Platform</a>, <a href="https://firebase.google.com" target="_blank" rel="noreferrer noopener">Firebase</a>, Netlify, <a href="https://render.com" target="_blank" rel="noreferrer noopener">Render</a>, and <a href="https://vercel.com" target="_blank" rel="noreferrer noopener">Vercel</a>.</p>
+{{% yellowBox %}}**Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos' code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts' settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).{{% /yellowBox %}}

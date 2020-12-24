@@ -1,10 +1,12 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: "Ignition sequence start"
-subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"
+subtitle: "GitHub Actions to deploy to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2020-11-27T17:32:00
+lastmod: 2020-11-27T11:32:00-06:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -15,7 +17,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@spacex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">SpaceX</a>; <a href="https://unsplash.com/s/photos/launch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-<p class="yellowBox"><strong>Note</strong>: Unlike the <a href="/posts/2020/09/normal-persons-guide-static-websites">last</a> <a href="/posts/2020/09/normal-persons-guide-static-website-hosting">two</a> posts, this one very definitely is for <strong>only</strong> my fellow web geeks&mdash;and, anyway, they&rsquo;re the only folks likely to be using <a href="https://firebase.google.com" target="_blank" rel="noopener">Firebase Hosting</a>, I would think.</p>
+{{% yellowBox %}}**Note**: Unlike the [last](/posts/2020/09/normal-persons-guide-static-websites) [two](/posts/2020/09/normal-persons-guide-static-website-hosting) posts, this one very definitely is for **only** my fellow web geeks---and, anyway, they're the only folks likely to be using [Firebase Hosting](https://firebase.google.com), I would think.{{% /yellowBox %}}
 
 I mentioned in a footnote to the original version of my [previous post](/posts/2020/09/normal-persons-guide-static-website-hosting) that my “[lurch](/posts/2020/09/goodbye-hello-part-5)” among hosts now has this site on Firebase. If you’ve read both the original “[Goodbye and hello](/posts/2020/07/goodbye-hello)” and its semi-[retconned](https://www.merriam-webster.com/words-at-play/retcon-history-and-meaning) [second part](/posts/2020/07/goodbye-hello-part-2), you may remember my describing why I chose **not** to use Firebase. If so, you then may also wonder what changed my mind.
 
@@ -74,7 +76,7 @@ jobs:
 
 ## For Eleventy
 
-**Note**: Other than obviously not downloading and installing Hugo, this one for Eleventy also was different because, in the `Deploy to Firebase` section, I had to add `npx firebase use default` to make this work with the project, for some reason I don't understand.{.yellowBox}
+{{% yellowBox %}}**Note**: Other than obviously not downloading and installing Hugo, this one for Eleventy also was different because, in the `Deploy to Firebase` section, I had to add `npx firebase use default` to make this work with the project, for some reason I don't understand.{{% /yellowBox %}}
 
 ```yaml
 name: CI-Eleventy-site-to-Firebase
@@ -104,4 +106,4 @@ jobs:
           # Other args should come from .firebaserc and firebase.json
 ```
 
-<p class="yellowBox"><strong>Note</strong>: Having learned all I wanted to learn from the experience, I decided a few days later to leave Firebase Hosting.</p>
+{{% yellowBox %}}**Note**: Having learned all I wanted to learn from the experience, I decided a few days later to leave Firebase Hosting.{{% /yellowBox %}}

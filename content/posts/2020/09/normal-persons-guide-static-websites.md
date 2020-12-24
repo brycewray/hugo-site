@@ -1,4 +1,6 @@
 ---
+layout: layouts/posts/singlepostherofit.njk
+tags: post
 title: "A normal person’s guide to static websites"
 subtitle: "Advice from a semi-normal old web geek"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
@@ -34,7 +36,7 @@ Then came something you may remember hearing about years ago: “Web 2.0.” Thi
 
 While we’re on the subject of WordPress sites: each is a significant cyberattack target, because something like one third of the *entire web* runs on WordPress. Let’s say a third of the cars in a parking lot are gleaming white, so they really stand out in the sunlight. If that causes them to attract the attention of a flock of excretion-minded birds flying overhead, those cars could get nasty in a hurry.
 
-<div class="yellowBox"><p><strong>Note</strong>: If your website needs are relatively simple, you won&rsquo;t have any trouble letting them be served by a static site on its own. On the other hand, if you need more advanced, more interactive capabilities, you might want to check into the <a href="https://jamstack.wtf">Jamstack</a>. The short explanation is that the Jamstack gives you the best of both worlds: the advantages of static sites combined with lots of whiz-bang stuff &ldquo;living&rdquo; elsewhere, safely, in The&nbsp;Cloud.</p></div>
+{{% yellowBox %}}**Note**: If your website needs are relatively simple, you won't have any trouble letting them be served by a static site on its own. On the other hand, if you need more advanced, more interactive capabilities, you might want to check into the [Jamstack](https://jamstack.wtf). The short explanation is that the Jamstack gives you the best of both worlds: the advantages of static sites combined with lots of whiz-bang stuff "living" elsewhere, safely, in The Cloud.{{% /yellowBox %}}
 
 So your choices now come down to having your site’s content be generated either: (a.) on each visit (dynamic); or (b.) ahead of each visit (static). If you can handle another analogy—and I promise to keep nasty birds out of this one—imagine two Baskin-Robbins ice cream parlors across the street from each other. You know you can go to either one and get an identical bowl of Baskin-Robbins chocolate ice cream. The only difference is that, on the north side of the street, they fill the bowls *in advance* (and keep them in the freezer) for quickest possible delivery when a customer orders them while, on the south side, they scoop it out only when you come in and order it. Again, the ice cream is exactly the same; the only difference is the process and the wait.
 
@@ -46,9 +48,9 @@ Then, the static site, with content already in place for you to see:
 
 {{< imgc src="diagram--static-site_Inter_1600x900.png" alt="Diagram of a static website" width="1600" height="900" >}}
 
-<p class="lazypicturecaption">Images used to build these diagrams (all&nbsp;sourced from&nbsp;<a href="https://pixabay.com">Pixabay</a>): <a href="https://pixabay.com/users/FiveFlowersForFamilyFirst-552028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2243898">FiveFlowersForFamilyFirst</a>; <a href="https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=41259">Clker-Free-Vector-Images</a>; <a href="https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1745473">200&nbsp;Degrees</a>; and <a href="https://pixabay.com/users/MTZD-1593970/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2488093">Mateusz&nbsp;Zdrzałek</a>.</p>
+{{% lazypictCapt %}}Images used to build these diagrams (all&nbsp;sourced from&nbsp;[Pixabay](https://pixabay.com)): [FiveFlowersForFamilyFirst](https://pixabay.com/users/FiveFlowersForFamilyFirst-552028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2243898); [Clker-Free-Vector-Images](https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=41259"); [200&nbsp;Degrees](https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1745473); and [Mateusz&nbsp;Zdrzałek](https://pixabay.com/users/MTZD-1593970/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2488093).{{% /lazypictCapt %}}
 
-With no reason to wait on a database to generate the content (all the aforementioned security concerns aside), the static site downloads more swiftly. All other things being equal—content, server, connectivity, browser, and computer— it always will.
+With no reason to wait on a database to generate the content (all the aforementioned security concerns aside), the static site downloads more swiftly. All other things being equal—content, server, connectivity, browser, and computer—it always will.
 
 But does having a static site mean you have to write, or hire somebody to write, all that code that makes such a site work?
 
@@ -88,7 +90,6 @@ This is because Go’s *templating*—that’s how you make a single layout hand
 {{ else }}
 	<span class="text-muted">{{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}</span>
 {{ end }}
-
 ```
 
 With that one qualification, I highly recommend Hugo as the easiest SSG for a normal person to learn and use.[^2]
@@ -113,7 +114,7 @@ So much for those good words about Hugo and Eleventy. By contrast, I now must te
 
 ### Gatsby
 
-If you’ve researched SSGs, you’ve probably seen a lot about [Gatsby](https://gatsby.org), a tremendously popular and well-funded product. It has some amazing capabilities and is even used by some non-developers (albeit with its geeky stuff probably hidden behind a compatible CMS). However, my own experiences with Gatsby both positive and negative—mostly the latter—lead me to steer you away from it.
+If you’ve researched SSGs, you’ve probably seen a lot about [Gatsby](https://gatsby.org), a tremendously popular and well-funded product. It has some amazing capabilities and is even used by some non-developers (albeit with its geeky stuff probably hidden behind a compatible CMS). However, my own experiences with Gatsby both positive and negative — mostly the latter—lead me to steer you away from it.
 
 To use Gatsby without pain, you need to be fairly conversant in not only that React framework I mentioned before but, also, the [GraphQL](https://graphql.org/) query language (Gatsby has a pretty cool interface that helps with GraphQL, but it’s not cool enough to make up for the concomitant hassles). Gatsby typically needs a *lot* of configuration to do its thing, and that’s precisely what you *don’t* want. I could tell you much more, as my regular readers know all too well, but that’ll suffice for these purposes. Admire it, perhaps, but don’t use it.
 
