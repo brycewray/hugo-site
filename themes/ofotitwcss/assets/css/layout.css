@@ -322,8 +322,12 @@ blockquote {
 
 /* start, footnotes */
 
+.footnotes ol li, .footnotes ol li p {
+  @apply text-sm leading-relaxed;
+}
+
 .footnote-ref {
-  font-size: 0.65em;
+  @apply text-xs;
 }
 
 .footnote-ref a {
