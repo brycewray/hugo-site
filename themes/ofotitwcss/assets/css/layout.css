@@ -27,6 +27,7 @@ ul li li li {
 
 html, body {
   @apply dark:bg-black;
+  font-weight: 425;
 }
 
 body {
@@ -112,11 +113,16 @@ a.navborderless {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply font-bold leading-tight tracking-tight;
+  @apply leading-tight tracking-tight;
 }
 
 h1, .h1 {
   @apply text-4xl mb-4;
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
 }
 
 h2, .h2 {
