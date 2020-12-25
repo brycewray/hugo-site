@@ -120,6 +120,8 @@ Getting *all* the functionality working will be the gooey part. However, it'll a
 
 &nbsp;.&nbsp;.&nbsp;. I think.
 
-{{% yellowBox %}}**Note, 2020-11-07**: For a variety of reasons, I came back to Nunjucks today. Two of the main reasons were: (1.) it's easier to edit Nunjucks templates in most code editors[^Hugo]; and (2.) you can make those edits in dev mode without having to keep restarting the dev server, which isn't the case with pure-JavaScript templating.{{% /yellowBox %}}
+____
+
+**Note, 2020-11-07**: For a variety of reasons, I came back to Nunjucks today. Two of the main reasons were: (1.) it's easier to edit Nunjucks templates in most code editors[^Hugo]; and (2.) you can make those edits in dev mode without having to keep restarting the dev server, which isn't the case with pure-JavaScript templating.
 
 [^Hugo]: Indeed, I actually went back to the [Hugo](https://gohugo.io) static site generator for a few weeks because, while tinkering with it on one of my other repos, I found I enjoyed the editing experience more **even though** it required dealing with Go, for God's sake. I realized the only way to come back to Eleventy but not lose that experience was to return to Nunjucks, too.
