@@ -1,18 +1,15 @@
 ---
+layout: layouts/privacy/privacy.njk
 title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2020-10-30T10:02:00-05:00
+lastmod: 2020-12-24T16:48:00-06:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
-
-### Cloudflare Browser Insights
-
-This site’s traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights “collects the bare minimum amount of information, timing metrics, to show customers how their websites perform” and that “Cloudflare does not track individual end-users *[sic]* across our customers’ Internet properties.” For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, “[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/).”
 
 ### FastComments
 
@@ -36,4 +33,4 @@ I no longer embed YouTube or other sites’ videos, since they can and do transm
 
 ### Twitter content
 
-I no longer embed tweets, since they can and do transmit personal information through cookies. I have replaced formerly embedded tweets with just their text content combined with clearly identified links to their original locations, and footnoted each link (or set of links where multiple tweets were quoted, as in the case of “[Backtracking to Big G](/posts/2019/08/backtracking-to-big-g)”) with a reference and link to this privacy policy.
+I do not *embed* tweets, since doing so makes the embedded tweets transmit personal information through cookies. Instead, each tweet is shown as a screen capture linked to its original location. For accessibility-respecting purposes, each such screen capture has a plain-text version of the tweet’s content in its [ALT attribute](https://en.wikipedia.org/wiki/Alt_attribute).
