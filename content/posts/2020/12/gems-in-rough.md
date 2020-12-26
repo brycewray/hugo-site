@@ -11,7 +11,7 @@ discussionId: "2020-12-gems-in-rough"
 featured_image: gems-836763_5184x3456.jpg
 featured_image_width: 5184
 featured_image_height: 3456
-featured_image_alt: "ALT TEXT FOR THE IMAGE"
+featured_image_alt: "Colorful gemstones"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/aldk-53964/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=836763">Aldk</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=836763">Pixabay</a></span>
 ---
