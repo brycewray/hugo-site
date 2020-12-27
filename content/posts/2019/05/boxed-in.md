@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: Boxed in?
-subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
-description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
+title: "Boxed in?"
+subtitle: "“Shoebox” apps (including Ulysses) and iCloud sync"
+description: "A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general."
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
 lastmod: 2020-07-17T07:50:00-05:00
@@ -11,7 +11,7 @@ discussionId: "2019-05-boxed-in"
 featured_image: kelly-sikkema-_JBGjZFFYRk-unsplash_5568x3712.jpg
 featured_image_width: 5568
 featured_image_height: 3712
-featured_image_alt: View downward into brown cardboard box with all flaps open
+featured_image_alt: "View downward into brown cardboard box with all flaps open"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---

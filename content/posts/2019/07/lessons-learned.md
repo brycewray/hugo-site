@@ -1,16 +1,16 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
-title: Lessons learned
+title: "Lessons learned"
 tags: post
-subtitle: What I found while trying other SSGs
-description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
+subtitle: "What I found while trying other SSGs"
+description: "During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things."
 date: 2019-07-21T17:43:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-lessons-learned"
 featured_image: binoculars-4143165_4000x2248.jpg
 featured_image_width: 4000
 featured_image_height: 2248
-featured_image_alt: A binocular telescope on a stand near a body of water
+featured_image_alt: "A binocular telescope on a stand near a body of water"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/kisistvan77-8062321/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4143165">kisistvan77</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4143165">Pixabay</a></span>
 oldComments: |
@@ -46,7 +46,7 @@ oldComments: |
     </div>
 ---
 
-{{% yellowBox %}}**Note**: See also [this post](/posts/2019/10/otoh) for why this post went away and, more to the point, why it’s back.{{% /yellowBox %}}
+{{% yellowBox %}}**Note**: See also [this post](/posts/2019/10/otoh) for why this post went away and, more to the point, why it's back.{{% /yellowBox %}}
 
 Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics]---and quite a few retweets and friendly tweets from Hugo aficionados.
 

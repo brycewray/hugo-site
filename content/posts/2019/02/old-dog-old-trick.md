@@ -1,9 +1,9 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: Old dog learns old trick 
-subtitle: How’d I miss this way to fool IE?
-description: A major “Do’h” moment in the never-ending battle against Internet Explorer.
+title: "Old dog learns old trick"
+subtitle: "How’d I miss this way to fool IE?"
+description: "A major “Do’h” moment in the never-ending battle against Internet Explorer."
 author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
 lastmod: 2020-11-21T17:15:00-06:00
@@ -11,7 +11,7 @@ discussionId: "2019-02-old-dog-old-trick"
 featured_image: dog-2514968_1940x1293.jpg
 featured_image_width: 1940
 featured_image_height: 1293
-featured_image_alt: Face of an old dog
+featured_image_alt: "Face of an old dog"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/sergeljeanette-5925450/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2514968">sergeljeanette</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2514968">Pixabay</a></span>
 ---
@@ -113,6 +113,6 @@ Woof.
 
 *In short, stay tuned.*
 
-*And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting* (below) *about my last post. As he might say: "Thanks, mate!"*
+*And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting* (below) *about my last post. As he might say: "Thanks, mate!”*
 
 {{% twitscrn imageUrl="Twitter_1095457720709263360.png" alt="Tweet by @CRosserAuthor, 2019-02-12: If you are a fan of, or contemplating using, iA Writer, I recommend @BryceWrayTX blog post. While our workflows are different, our ends and opinions are the same!" width="1182" height="720" twitterUrl="https://twitter.com/CRosserAuthor/status/1095457720709263360" %}}

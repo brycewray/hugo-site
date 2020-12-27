@@ -61,7 +61,7 @@ So, with all that understood, here we go.
 4. In this **Downloads** folder, create two new empty folders:  
 	— One called **1-Desktop**.  
 	— One called **2-Documents**.
-5. Drag (don't copy) to the **1-Desktop** folder all content you may have on the Mac desktop. This, of course, does **not** include any drive icons that are on the desktop—just files and aliases.  
+5. Drag (don't copy) to the **1-Desktop** folder all content you may have on the Mac desktop. This, of course, does **not** include any drive icons that are on the desktop'just files and aliases.  
 	You'll get a warning message about this content's no longer being available on your other iCloud-linked devices. Click the button that indicates you **do** want to move the content out of iCloud Drive.
 6. Open a separate Finder window and navigate to the **Documents** folder in your **iCloud Drive** folder.
 7. Select **everything** in that **Documents** folder.
@@ -86,6 +86,6 @@ I found Mr. Howie's sage advice while re-thinking my own [sync'ing strategies](/
 
 So, bottom line, I downsized my monthly sync expenses to just iCloud Drive's 200 GB tier ($2.99/month as of this writing), which is far more than enough for not only all the Mac files I would ever want to see on the iPhone and iPad but also the photos storage for **both** my phone and my wife's.
 
-In short, I was able to simplify. And that's always good (especially when it cuts your costs). If you find yourself able to simplify as well, perhaps this post will help you do it more safely—which also is always good.
+In short, I was able to simplify. And that's always good (especially when it cuts your costs). If you find yourself able to simplify as well, perhaps this post will help you do it more safely'which also is always good.
 
 [^1]:	I don't share files with anybody else, and my day job's computing environment is so utterly locked down that I couldn't use my sync'd content there even if I so wanted (and I don't). Moreover, our house has only one truly usable computer (I'm excluding the Chromebook, which now is too old to receive updates from Google and thus is of little practical use to me), so there won't be any need to share files between my Mac and any other computer.

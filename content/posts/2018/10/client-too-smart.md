@@ -1,7 +1,7 @@
 ---
-title: The client is too smart for you
-subtitle: The email client, that is
-description: Pretty emails don’t work so well in an Outlook-centric business world.
+title: "The client is too smart for you"
+subtitle: "The email client, that is"
+description: "Pretty emails don’t work so well in an Outlook-centric business world."
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
 lastmod: 2020-01-31T10:30:00-06:00
@@ -14,23 +14,23 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4029672">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4029672">Pixabay</a></span>
 ---
 
-It’s been nearly two decades since we tech marketing folks started counting on the majority of prospects and customers to have access to reasonably fast email. Hey, I remember when we used to send out mass faxes. (We shall now observe a moment of silence for all the trees that we sacrificed in the service of raising profits.)
+It's been nearly two decades since we tech marketing folks started counting on the majority of prospects and customers to have access to reasonably fast email. Hey, I remember when we used to send out mass faxes. (We shall now observe a moment of silence for all the trees that we sacrificed in the service of raising profits.)
 
-However, in those early days, we weren’t always able to count on people having email clients that were HTML-savvy, so that precluded the use of any text styling, colors, and the like. And still images, much less animated GIFs? No way. How we have advanced since those times, right? Now you can go crazy with images, and embedded videos, and&nbsp;.&nbsp;.&nbsp;.
+However, in those early days, we weren't always able to count on people having email clients that were HTML-savvy, so that precluded the use of any text styling, colors, and the like. And still images, much less animated GIFs? No way. How we have advanced since those times, right? Now you can go crazy with images, and embedded videos, and&nbsp;.&nbsp;.&nbsp;.
 
-Ahem. Well, not exactly. Here, have a towel and prepare for the cold water I’m going to throw in your face.
+Ahem. Well, not exactly. Here, have a towel and prepare for the cold water I'm going to throw in your face.
 
 The simple choice you have to make is whether you can afford to ignore the enormous number of business email users who rely on one specific client: the desktop version of Microsoft Outlook.
 
-If you can’t—and, indeed, you probably can’t—then you want to **steer clear of images**, with the possible exception of little ones (like signature-based logos and the like) that really have nothing to do with the messaging.
+If you can't---and, indeed, you probably can't---then you want to **steer clear of images**, with the possible exception of little ones (like signature-based logos and the like) that really have nothing to do with the messaging.
 
-Why? Because Outlook, by default, will block images from senders who haven’t already made it into the user’s “Safe Senders” list—which will mean you, if this is the first time you’re reaching out to the person. If you have an existing business relationship, that’s a different matter; but it’s also not the assumption we’re making here. Think of this as the email equivalent of a “cold call.”
+Why? Because Outlook, by default, will block images from senders who haven't already made it into the user's "Safe Senders" list---which will mean you, if this is the first time you're reaching out to the person. If you have an existing business relationship, that's a different matter; but it's also not the assumption we're making here. Think of this as the email equivalent of a "cold call."
 
-And, interestingly enough, it’s really not because Outlook is too dumb to handle the images. Rather, by design, it’s too smart to do so.
+And, interestingly enough, it's really not because Outlook is too dumb to handle the images. Rather, by design, it's too smart to do so.
 
-That’s because [there are a number of less-than-desirable things that can happen](https://security.stackexchange.com/questions/7489/why-would-someone-want-to-block-images-in-email) if [an email client lets images come in without putting up a fuss](https://kb.wisc.edu/office365/page.php?id=67394). Also, [Outlook isn’t the only one by any means](https://litmus.com/blog/the-ultimate-guide-to-email-image-blocking), but its [near-ubiquity due to the growth of Office 365](https://www.cio.com/article/2992546/office-software/why-companies-are-switching-from-google-apps-to-office-365.html), especially among the big-dollar companies that you probably want to reach, makes it the reason why you need to pay attention to this.
+That's because [there are a number of less-than-desirable things that can happen](https://security.stackexchange.com/questions/7489/why-would-someone-want-to-block-images-in-email) if [an email client lets images come in without putting up a fuss](https://kb.wisc.edu/office365/page.php?id=67394). Also, [Outlook isn't the only one by any means](https://litmus.com/blog/the-ultimate-guide-to-email-image-blocking), but its [near-ubiquity due to the growth of Office 365](https://www.cio.com/article/2992546/office-software/why-companies-are-switching-from-google-apps-to-office-365.html), especially among the big-dollar companies that you probably want to reach, makes it the reason why you need to pay attention to this.
 
-Let’s say you, or your ad agency, decide to make a really nice-looking, colorful email. We’re not even talking video embeds here, but rather just some colorful still images. In some clients, especially on mobile devices, that might work. But not with Outlook for either Windows or Mac. So, instead of the recipient seeing what you hoped for:
+Let's say you, or your ad agency, decide to make a really nice-looking, colorful email. We're not even talking video embeds here, but rather just some colorful still images. In some clients, especially on mobile devices, that might work. But not with Outlook for either Windows or Mac. So, instead of the recipient seeing what you hoped for:
 
 {{< imgc src="Outlook_full_img_600x940.jpg" alt="Fancy email from ad agency with styled text and artwork" width="600" height="940" >}}
 
@@ -38,21 +38,21 @@ Let’s say you, or your ad agency, decide to make a really nice-looking, colorf
 
 {{< imgc src="Outlook_full_no_imgs_600x940.jpg" alt="Email with many blank spaces because email client blocks images" width="600" height="940" >}}
 
-(By the way, that three-by-three arrangement of icons and text is something you wouldn’t want to try as separate columns even if Outlook _didn’t_ block the imagery, because [Outlook’s handling of the HTML and CSS you need to make all of it look just right is, shall we say, problematic](https://www.emailonacid.com/blog/article/email-development/how-to-code-emails-for-outlook-2016/). If you’ve ever looked under the hood at the HTML generated by a marketing automation platform like [Pardot](https://www.pardot.com) and wondered why it’s so pedestrian compared to the whiz-bang HTML5/CSS stuff that the best websites effect, it’s because HTML/CSS intended for business-centric desktop email clients has to work with a lowest common denominator, and that typically is Outlook.)
+(By the way, that three-by-three arrangement of icons and text is something you wouldn't want to try as separate columns even if Outlook _didn't_ block the imagery, because [Outlook's handling of the HTML and CSS you need to make all of it look just right is, shall we say, problematic](https://www.emailonacid.com/blog/article/email-development/how-to-code-emails-for-outlook-2016/). If you've ever looked under the hood at the HTML generated by a marketing automation platform like [Pardot](https://www.pardot.com) and wondered why it's so pedestrian compared to the whiz-bang HTML5/CSS stuff that the best websites effect, it's because HTML/CSS intended for business-centric desktop email clients has to work with a lowest common denominator, and that typically is Outlook.)
 
-As for [embedding videos](https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/), the fallback for clients that don’t support them is going to be, at best, a static image—which will, again, end up as the big blank spot. You’re pretty much limited to putting only a link to such a video, which you certainly can do; but a plain old URL isn’t exactly an attention-grabber, is it?
+As for [embedding videos](https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/), the fallback for clients that don't support them is going to be, at best, a static image---which will, again, end up as the big blank spot. You're pretty much limited to putting only a link to such a video, which you certainly can do; but a plain old URL isn't exactly an attention-grabber, is it?
 
 _Or_&nbsp;.&nbsp;.&nbsp;.
 
-Or you can just accept reality and use the email to point people to a _landing page_. That’s the solution to _all_ of these nagging problems, because what you can do with a landing page is limited only by what browsers can render (and the speed of your recipients’ Internet connections, which isn’t likely to be a problem for businesses in the developed world).
+Or you can just accept reality and use the email to point people to a _landing page_. That's the solution to _all_ of these nagging problems, because what you can do with a landing page is limited only by what browsers can render (and the speed of your recipients' Internet connections, which isn't likely to be a problem for businesses in the developed world).
 
-This also has the side benefit of being somewhat of a qualifier—or, if you will, a “self-selector.” After all: if someone isn’t even willing to click a link to go to a landing page, he or she clearly isn’t sufficiently interested in what you’re marketing that you should be wasting your company’s limited resources chasing him or her. Right?
+This also has the side benefit of being somewhat of a qualifier---or, if you will, a "self-selector." After all: if someone isn't even willing to click a link to go to a landing page, he or she clearly isn't sufficiently interested in what you're marketing that you should be wasting your company's limited resources chasing him or her. Right?
 
-And if your reaction to that is “But, but, how will they _know_ whether they’re interested in what I’m marketing without the fancy email?”: no amount of flash and bang can cover up a foggy message, especially if it’s gone to a person who’s not even the right target in the first place. On the other hand, a well-written, smartly targeted, and sufficiently brief textual message will steer the _true_ prospects to the landing page.
+And if your reaction to that is "But, but, how will they _know_ whether they're interested in what I'm marketing without the fancy email?": no amount of flash and bang can cover up a foggy message, especially if it's gone to a person who's not even the right target in the first place. On the other hand, a well-written, smartly targeted, and sufficiently brief textual message will steer the _true_ prospects to the landing page.
 
 So, in the end, what you really want is to send a brief, crisply written email to the right person. That email will point the person to a landing page with all the info, not to mention web-based bells and whistles, that you want an interested prospect to see and consider.
 
-And then it won’t matter how smart the email client is.
+And then it won't matter how smart the email client is.
 
 <br />
 

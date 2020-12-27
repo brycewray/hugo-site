@@ -100,7 +100,7 @@ Late in the day on May 7, I finally had things ready *enough*, and "told" [Netli
 
 Thus, here we are. This site now runs on Eleventy only, not Eleventy and webpack. Yet, it still has responsive and processed images as well as all the good stuff that PostCSS makes possible, *but* now also the re-added Tailwind. The magic of PurgeCSS-inside-Tailwind makes the delivered CSS a fraction of my old CSS's bulk. And, speaking of smaller deliveries, the JavaScript is about one-fourteenth of its size when webpack was involved, despite providing even *more* goodies (*e.g.*, Flying Pages as opposed to instant.page).
 
-Oh, yes: build time is now routinely well under a minute, while `eleventy_bundler`’s build times generally hovered around  a minute-forty but sometimes went as high as two-and-a-half minutes. Since this greater speed also extends to my local dev efforts, I am happy to recover those cumulative minutes and hours going forward.[^respImgBuild]
+Oh, yes: build time is now routinely well under a minute, while `eleventy_bundler`'s build times generally hovered around  a minute-forty but sometimes went as high as two-and-a-half minutes. Since this greater speed also extends to my local dev efforts, I am happy to recover those cumulative minutes and hours going forward.[^respImgBuild]
 
 [^respImgBuild]: That shorter build time didn't last long, once I began using a larger number of image sizes for responsiveness. Still, I've tried that same number of image sizes with the previous webpack repo and it would clearly be a *lot* longer than what the current non-webpack repo would do.
 

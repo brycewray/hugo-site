@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
-title: Why I left Ulysses 
-subtitle: iA Writer wins—for now
+title: "Why I left Ulysses"
+subtitle: "iA Writer wins—for now"
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
@@ -91,7 +91,7 @@ Sync was stuck on my Mac's installation of Ulysses, and had been that way for da
 
 {{< imgc src="iCloud_sync-save_icon_in_Ulysses_634x265.jpg" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width="634" height="265" >}}
 
-{{% lazypictCapt %}}When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device—Houston, we have an iCloud&nbsp;sync&nbsp;problem.{{% /lazypictCapt %}}
+{{% lazypictCapt %}}When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem.{{% /lazypictCapt %}}
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
 
