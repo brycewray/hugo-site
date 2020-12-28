@@ -78,9 +78,9 @@ In the case of the Hugo forum, I *highly* recommend you try to find answers with
 
 ### Not-so-great documentation
 
-With the good comes the not-so-good. Neither Hugo nor Eleventy has truly newbie-friendly documentation. Indeed, I've found no SSG out there that does; so be forewarned. 
+With the good comes the not-so-good. Neither Hugo nor Eleventy has truly newbie-friendly documentation. Indeed, I've found no SSG out there that does; so be forewarned.
 
-*Side note*: I brought this up in "[Lessons learned](/posts/2019/07/lessons-learned)" and, to my surprise, [received a verbal smack-down in the Hugo community forum over a year later](https://discourse.gohugo.io/t/has-hugo-become-too-complex/29609/23) because I'd had the temerity to criticize Hugo's (and other SSGs') documentation without offering improvements of my own. I thought the other guy's reasoning a bit odd---after all, it's one thing to know documentation is hard to follow but quite another to have the deep knowledge, much less writing chops, needed to *fix* it---but I replied, in part:
+*Side note*: I brought this up in "[Lessons learned](/posts/2019/07/lessons-learned)" and, to my surprise, [received a verbal smack-down in the Hugo community forum over a year later](https://discourse.gohugo.io/t/has-hugo-become-too-complex/29609/23) because I'd had the temerity to criticize Hugo's (and other SSGs’) documentation without offering improvements of my own. I thought the other guy's reasoning a bit odd---after all, it's one thing to know documentation is hard to follow but quite another to have the deep knowledge, much less writing chops, needed to *fix* it---but I replied, in part:
 
 > Ever since I wrote that post, I actually **have** given many thoughts to pitching in and helping in the way to which you're referring. What has always stopped me is the realization that those items whose documentation needs the most help require me to know far more than I do, or have time to learn, about the fine points (and/or more complex parts) of Hugo.[^contribCFW]
 
