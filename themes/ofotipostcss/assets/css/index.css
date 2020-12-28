@@ -1,6 +1,7 @@
 @import 'fonts.css';
 @import 'variables.css';
-@import 'chroma.css';
+@import 'chroma_native.css';
+@import 'chroma_fix-all.css';
 @import 'base.css';
 @import 'layout.css';
 @import 'nav.css';
