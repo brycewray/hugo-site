@@ -32,7 +32,7 @@ Well, if you're one of those "normal people" for whom I wrote [two](/posts/2020/
 
 *(By the way: from here on, I'll conceitedly assume you've already read those two articles; so, if you haven't, please check them out first.)*
 
-So, in the spirit of [another, much older song](https://en.wikipedia.org/wiki/Anything_You_Can_Do_(I_Can_Do_Better)): let's see where each SSG can say to the other, "Anything you can do, I can do better."[^legalLyricsAYCDICDB] And, please understand, I **don't** pretend this constitutes an exhaustive list in any way. Instead, these are just the things that strike me as likely to matter to you, based on over two years of using Hugo and about a year-and-a-half of using Eleventy (off-and-on in both cases).
+So, in the spirit of [another, much older song](https://en.wikipedia.org/wiki/Anything_You_Can_Do_(I_Can_Do_Better)): let's see where each SSG can say to the other, "Anything you can do, I can do better.”[^legalLyricsAYCDICDB] And, please understand, I **don't** pretend this constitutes an exhaustive list in any way. Instead, these are just the things that strike me as likely to matter to you, based on over two years of using Hugo and about a year-and-a-half of using Eleventy (off-and-on in both cases).
 
 [^legalLyricsAYCDICDB]: "Anything You Can Do (I Can Do Better),"  written by Irving Berlin. Lyrics &copy; BMG Rights Management, Concord Music Publishing LLC.
 
