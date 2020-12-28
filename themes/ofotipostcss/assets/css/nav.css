@@ -59,7 +59,7 @@ header {
       padding-top: 0.15em;
       padding-bottom: 0;
       border: none;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
       text-transform: lowercase;
       font-variant: small-caps;
@@ -248,7 +248,7 @@ nav {
     }
     & li {
       display: inline-block;
-      margin-left: 3em;
+      margin-left: 2rem;
       margin-bottom: 0;
     }
   }
