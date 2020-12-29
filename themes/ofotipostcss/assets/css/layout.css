@@ -554,6 +554,65 @@ img.containedImage {
   }
 }
 
+/* START == for old comments from TalkYard */
+
+.container-oldComments {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 0;
+  width: 75%;
+  & h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.75rem;
+    letter-spacing: -0.025rem;
+  }
+  & p.commentDisclaimer {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  & p.commentName {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  & .commentDate {
+    font-size: 0.85em;
+  }
+  & p.comment {
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: normal;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container-oldComments {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container-oldComments {
+    width: 33%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .container-oldComments {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+}
+
+/* END ==== for old comments from TalkYard */
+
+
+/* START == for comments from FastComments */
 .container-comments {
   margin: 0 auto;
   font-size: 85%;
@@ -564,6 +623,7 @@ img.containedImage {
     width: 40%;
   }
 }
+/* END ==== for comments from FastComments */
 
 .bg-primary {
   background-color: var(--blue) !important;

@@ -1,3 +1,7 @@
+{{- if .Params.oldcomments }}
+  {{ .Params.oldcomments | safeHTML }}
+{{- end }}
+
 <div class="container container-comments">
   <!--<hr />
   <h2 class="h4 ctr">Comments</h2>-->

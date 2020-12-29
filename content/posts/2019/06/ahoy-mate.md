@@ -15,26 +15,25 @@ featured_image_alt: "Screen capture of the MailMate app"
 featured_image_caption: |
   <span class="caption">Image: Screen capture of MailMate, with its Latin-displaying &ldquo;distortion mode&rdquo; engaged for privacy&rsquo;s sake</span>
 oldComments: |
-    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
-      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
-      <p class="text-xs italic text-center">
-        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
+    <div class="container-oldComments">
+      <p class="commentDisclaimer">
+        <em>(Older comments imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
       </p>
-      <p class="mt-6 mb-0 text-base"><strong>Andrew Canion</strong> <span class="italic text-sm">2019-06-16</span></p>
-      <p class="my-0 text-base leading-normal">Hi Bryce. I'm a new reader to your site. I found you when I was searching for information about MailMate. Thanks for this great overview. I've also enjoyed some of your other articles. I've now subscribed to your RSS feed, as I think your writing is great.</p>
+      <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-06-16</em></span></p>
+      <p class="comment">Hi Bryce. I'm a new reader to your site. I found you when I was searching for information about MailMate. Thanks for this great overview. I've also enjoyed some of your other articles. I've now subscribed to your RSS feed, as I think your writing is great.</p>
     
-      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-06-17</span></p>
-      <p class="my-0 text-base leading-normal">Not sure which of my relatives posted these kind comments under Mr. Canion&rsquo;s name :-) &mdash; but I appreciate them tremendously.</p>
+      <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-06-17</em></span></p>
+      <p class="comment">Not sure which of my relatives posted these kind comments under Mr. Canion&rsquo;s name :-) &mdash; but I appreciate them tremendously.</p>
     
-      <p class="mt-6 mb-0 text-base"><strong>Andrew Canion</strong> <span class="italic text-sm">2019-08-21</span></p>
-      <p class="my-0 text-base leading-normal">I finally got around to writing <a href="https://canion.me/mailmate-review" target="_blank" rel="noopener">my own review of MailMate</a>.</p>
+      <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-08-21</em></span></p>
+      <p class="comment">I finally got around to writing <a href="https://canion.me/mailmate-review" target="_blank" rel="noopener">my own review of MailMate</a>.</p>
     
-      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-08-22</span></p>
-      <p class="my-0 text-base leading-normal">And I like yours better. :-) I don&rsquo;t qualify as a power email user, particularly because I don&rsquo;t keep my business email with my personal email (don&rsquo;t want my employer&rsquo;s chosen MDM software on my primary iPhone, and such access isn&rsquo;t allowed on my Mac even if I <strong>did</strong> want it), so I would urge those who do so to read your review. You noted many superb MailMate features I either neglected to mention or didn&rsquo;t find germane to my more mundane use case.</p>
+      <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-08-22</em></span></p>
+      <p class="comment">And I like yours better. :-) I don&rsquo;t qualify as a power email user, particularly because I don&rsquo;t keep my business email with my personal email (don&rsquo;t want my employer&rsquo;s chosen MDM software on my primary iPhone, and such access isn&rsquo;t allowed on my Mac even if I <strong>did</strong> want it), so I would urge those who do so to read your review. You noted many superb MailMate features I either neglected to mention or didn&rsquo;t find germane to my more mundane use case.</p>
     
-      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-09-28</span></p>
-      <p class="my-0 text-base leading-normal">Later note . . .</p>
-      <p class="my-0 text-base leading-normal">To be fair: I should also note that, as I&rsquo;d originally suspected, MailMate has turned out to be more than my relatively pedestrian scenario really needs &mdash; but I&rsquo;m very much <em><strong>not</strong></em> sorry that I bought a license and became a patron. Dr. Nielsen&rsquo;s work is easily worthy of both.</p>
+      <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-09-28</em></span></p>
+      <p class="comment">Later note . . .</p>
+      <p class="comment">To be fair: I should also note that, as I&rsquo;d originally suspected, MailMate has turned out to be more than my relatively pedestrian scenario really needs &mdash; but I&rsquo;m very much <em><strong>not</strong></em> sorry that I bought a license and became a patron. Dr. Nielsen&rsquo;s work is easily worthy of both.</p>
     </div>
 ---
 

@@ -12,6 +12,15 @@ featured_image_height: 720
 featured_image_alt: "Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/jchurch1977-1172969/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829805">jchurch1977</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829805">Pixabay</a>; edited in <a href="https://affinity.serif.com/en-us/photo/">Affinity Photo</a></span>
+oldComments: |
+  <div class="container-oldComments">
+    <p class="commentDisclaimer">
+      <em>(Older comments imported from previous comments host, <a href="https://talkyard.io">Talkyard</a>.)</em>
+    </p>
+    <p class="commentName"><strong>Cap Pike</strong> <span class="commentDate"><em>2019-09-07</em></span></p>
+    <p class="comment">People that use Word that don't &quot;get&quot; styles and formatting in general are generally just annoying. Like people who drive that don't bother with turn signals.<br />
+      ...and then there's Excel...</p>
+  </div>
 ---
 
 *(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) &copy; Sony/ATV Music Publishing LLC.*)
