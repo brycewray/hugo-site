@@ -59,3 +59,8 @@ menu:
     title: "This site’s privacy policy"
     url: "/privacy/"
     weight: 120
+  - identifier: "contact"
+    name: "Contact"
+    title: "How to contact me"
+    url: "/contact"
+    weight: 130
