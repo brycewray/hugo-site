@@ -537,11 +537,11 @@ img.containedImage {
   font-family: var(--sans-serif);
   display: block;
   box-sizing: border-box;
-  background: #ffff88;
+  background: #fdee88;
   border: 1px solid #333;
   margin: 0.5rem auto;
   width: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 1.5rem;
   & p {
     margin-bottom: 1rem;
   }

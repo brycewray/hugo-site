@@ -125,7 +125,7 @@ nav {
   }
   
   header {
-    @apply fixed grid grid-cols-5;
+    @apply fixed grid grid-cols-6;
   }
 
   .site-logo {
@@ -134,7 +134,7 @@ nav {
   }
 
   nav {
-    @apply mt-0 col-start-4 col-end-6;
+    @apply mt-0 col-start-4 col-end-7;
     top: 15%;
     transform: none;
     & a {

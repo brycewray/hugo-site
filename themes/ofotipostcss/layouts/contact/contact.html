@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <div class="background-hero-div gradient-titles" style="height: 50vh;">
+    <div class="background-hero-title-block-fit">
+      <h1 class="background-hero-title-text">{{ .Params.Title }}</h1>
+      <h2 class="background-hero-subtitle-text">
+        {{- if .Params.Subtitle }}
+          {{ .Params.Subtitle }}
+        {{- else }}
+          &nbsp;
+        {{- end }}
+      </h2>
+      <p class="background-hero-description-text">{{ .Params.Description }}</p>
+      <p class="background-hero-p-text">
+        <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
+        <span class="pokey">
+          {{- if ne .PublishDate .Lastmod }}
+          <span style="font-variant: small-caps">last modified:</span>&nbsp;{{ .Lastmod.Format "January 2, 2006" }}
+          {{- else }}
+          &nbsp;
+          {{- end }}
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="container-narrower">
+    <article class="article">
+      {{ .Content }}
+    </article>
+  </div>
+{{ end }}

@@ -217,7 +217,7 @@ nav {
   header {
     display: table;
     display: grid;
-    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
+    grid-template-columns: 1fr auto minmax(150px, 1fr) minmax(650px, 1fr);
     position: fixed;
   }
 
