@@ -2,6 +2,8 @@
 
 This is the repository from which the [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://brycewray.com) is built. I suggest you use it **only for reference** and, rather than cloning or forking it, use one of the **starter sets** based on it (see below).
 
+![CI-Hugo-site-to-Cloudflare-Workers](https://github.com/brycewray/hugo_site/workflows/CI-Hugo-site-to-Cloudflare-Workers/badge.svg)
+
 ## Starter sets based on this repo
 
 There are two **starter sets** based on this repo’s layout and design. Each uses Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/) (as compared to this repo, which uses [Cloudinary](https://cloudinary.com) rather than having the images in the repo and processing them as such).
