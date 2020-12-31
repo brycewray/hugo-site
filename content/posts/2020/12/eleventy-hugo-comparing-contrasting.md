@@ -5,7 +5,7 @@ subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
-#lastmod: TBD
+lastmod: 2020-12-31T09:00:00-06:00
 #draft: false
 discussionId: "2020-12-eleventy-hugo-comparing-contrasting-two-best-ssgs"
 featured_image: "pros-cons-5202088_3000x2000.jpg"
@@ -101,7 +101,7 @@ To me, this is Hugo's biggest advantage, even more so than its vaunted build spe
 	- [SASS/SCSS](https://sass-lang.com).[^libSass] Please note that SASS/SCSS support [requires the *extended* version of Hugo](https://discourse.gohugo.io/t/should-i-use-hugo-extended-for-a-new-hugo-project/13954/7), and it must be running in both your local dev environment and on your chosen host. I recommend always using the extended version anyway, so you'll always have the choice of going the SASS/SCSS route if you want. (As I'll explain later in "Themes," it's best to rely on a good theme when you start with Hugo, and many of the available ones use SASS/SCSS, so that's another reason for always going with Hugo's extended version.)
 	- [PostCSS](https://postcss.org). However, using PostCSS actually does get you into needing *some* dependencies, particularly if you wish to use the popular [Tailwind CSS](https://tailwindcss.com) framework---but it's a *choice*, not a requirement. If you want to see the difference, check my two Hugo starter sets: [hugo_site_css-grid](https://github.com/brycewray/hugo_site_css-grid), which uses PostCSS to enable Tailwind CSS; and the more barebones, dependencies-free [hugo_solo](https://github.com/brycewray/hugo_solo), which uses SASS/SCSS. If you try both, you'll see that hugo_solo builds sites *much* more quickly than hugo_solo_css-grid, which leads me to the next point&nbsp;.&nbsp;.&nbsp;.
 
-[^libSass]: Note that Hugo's SASS/SCSS support currently is based on the [recently deprecated](https://sass-lang.com/blog/libsass-is-deprecated) LibSass library, which is incompatible with some newer SASS/SCSS features like the `@use` command and, given the deprecation, will become increasingly outdated over time. Of course, the Hugo dev team is [aware of this situation](https://discourse.gohugo.io/t/libsass-depreciated-will-this-affect-hugo/28526) but, at this writing, it's unclear what long-term mitigation is in the works. Be assured that this situation may not "bite" you for some time to come, if ever; but, if you choose Hugo and are trying to decide whether to build your styling on SASS/SCSS, this is at least a useful data point for that decision process.
+[^libSass]: **Updated 2020-12-31**: Hugo's SASS/SCSS support **prior to v.0.80.0, released today**, was based on the [recently deprecated](https://sass-lang.com/blog/libsass-is-deprecated) LibSass library, which is incompatible with some newer SASS/SCSS features like the `@use` command and, given the deprecation, will become increasingly outdated over time. Fortunately, the v.80.0 release is the first which works with the SASS/SCSS library which has a future, [Dart Sass](https://sass-lang.com/dart-sass)---although, for now, this requires a somewhat involved installation process which the Hugo team hopes to improve sometime in early 2021. Even if you're using SASS/SCSS with a Hugo version earlier than v.0.80.0, be assured that this situation may not "bite" you for some time to come, if ever; but this is at least a useful data point for that decision process.
 
 ### Staggering build speed
 
