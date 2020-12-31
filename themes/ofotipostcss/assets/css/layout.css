@@ -50,9 +50,6 @@ footer {
   footer {
     margin: 2em auto 0 auto;
     padding-bottom: 1em;
-    & .p-note {
-      width: 50%;
-    }
   }
 }
 
