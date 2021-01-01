@@ -130,7 +130,7 @@ In my site's case, I use the `head.njk` "partial" to give this entire site its `
 <link rel="stylesheet" href="/css/{{ manifest['index.css'] }}" type="text/css">
 ```
 
-The {% raw %} `{{ manifest['index.css'] }} `{% endraw %} part tells Eleventy, "Go to `_data/manifest.json`, find the value of its `index.css`  key, and insert the value here." In the resulting, Eleventy-generated HTML, the line shows up as (this is just an example, since the hash obviously will vary):
+The {{ manifest['index.css'] }} ` part tells Eleventy, "Go to `_data/manifest.json`, find the value of its `index.css`  key, and insert the value here." In the resulting, Eleventy-generated HTML, the line shows up as (this is just an example, since the hash obviously will vary):
 
 ```html
 <link rel="stylesheet" href="/css/index-a1ee6657944e0c6d4080.css" type="text/css">
