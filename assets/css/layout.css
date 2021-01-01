@@ -207,7 +207,7 @@ article p, li {
   @apply text-lg mt-6 mb-6 leading-relaxed;
 }
 
-img.containedImage {
+article img.containedImage, .home-colOne img.containedImage {
   min-width: 100%;
   max-width: 100%;
   width: 100%;
