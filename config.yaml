@@ -16,15 +16,15 @@ params:
   Domain: "brycewray.com"
   Author: "Bryce Wray"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
-  talkyardServerUrl: "https://comments-for-brycewray-com.talkyard.net"
-  talkyardScriptUrl: "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 
 markup:
   # Reverting to Hugo-standard Goldmark parser and will handle typographical niceties
   # on own (i.e., manually fixing them in my content files),
   # due to Goldmark's ongoing and unlikely-to-be-resolved issues with typography:
-  # -- e.g., https://github.com/gohugoio/hugo/issues/7289
-  # and https://github.com/yuin/goldmark/issues/39#issuecomment-564810327
+  # -- e.g.,
+  # https://github.com/gohugoio/hugo/issues/7289,
+  # https://github.com/yuin/goldmark/issues/39#issuecomment-564810327, and
+  # https://github.com/yuin/goldmark/issues/180
   goldmark:
     extensions:
       linkify: false
@@ -33,7 +33,7 @@ markup:
     renderer:
       unsafe: true
       # only to allow for inline HTML and/or JS
-      # other desired settings are defaults
+      # ... other desired settings are defaults
     highlight:
       guessSyntax: true
       noClasses: false
