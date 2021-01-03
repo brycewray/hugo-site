@@ -8,12 +8,12 @@ date: 2021-01-03T10:10:00-06:00
 #lastmod: TBD
 #draft: false
 discussionId: "2021-01-easy-peasy"
-featured_image: "maze-labyrinth-511151_4000x3000.jpg"
-featured_image_width: 4000
-featured_image_height: 3000
-featured_image_alt: "Labyrinth - maze - Glendurgan garden"
+featured_image: "rubiks-cube-3038657_3008x2000.jpg"
+featured_image_width: 3008
+featured_image_height: 2000
+featured_image_alt: "Puzzles concept - Rubik’s Cube puzzle toy"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/loggawiggler-15/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=511151">LoggaWiggler</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=511151">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://pixabay.com/users/ben-rock-7352082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3038657">Ben Rock</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3038657">Pixabay</a></span>
 ---
 
 {{% yellowBox %}}**Acknowledgment**: This is based on, and an attempted homage to, "[It's The Future](https://circleci.com/blog/its-the-future/)" by Paul Biggar and the admittedly derivative "[How it feels to learn JavaScript in 2016](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f)" by Jose Aguinaga. I do **not** pretend this is in the originals’ amazing league.{{% /yellowBox %}}
