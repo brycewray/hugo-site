@@ -30,7 +30,7 @@
   <div class="col-span-3 home-colOne">
     {{ .Content }}
   </div>
-  <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
+  <div class="font-sans col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
     <h2 class="h1 mb-4">Recent <a href="/posts/">posts</a></h2>
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>
