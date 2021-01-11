@@ -5,7 +5,7 @@ subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
-lastmod: 2020-12-31T11:50:00-06:00
+lastmod: 2021-01-11T08:10:00-06:00
 #draft: false
 discussionId: "2020-12-eleventy-hugo-comparing-contrasting-two-best-ssgs"
 featured_image: "pros-cons-5202088_3000x2000.jpg"
@@ -72,7 +72,7 @@ It's always a shock to me when I run into SSGs that force you to arrange your po
 
 ### Large, helpful online communities
 
-Hugo and Eleventy have many enthusiastic and knowledgeable fans who regularly inhabit their respective online communities---whether it's [Hugo's Discourse forum](https://discourse.gohugo.io) or Eleventy's [Discord server](https://www.11ty.dev/news/discord/).
+Hugo and Eleventy have many enthusiastic and knowledgeable fans who regularly inhabit their respective online communities---whether it's [Hugo's Discourse forum](https://discourse.gohugo.io) or [Eleventy's Discord server](https://www.11ty.dev/news/discord/).
 
 In the case of the Hugo forum, I *highly* recommend you try to find answers within the documentation (see also my next point, however) before you ask any questions. The good thing is that the forum itself has a great search function, and---given Hugo's been around since 2013---it's likely you'll find that somebody has already asked something very similar to what you want to know.
 
