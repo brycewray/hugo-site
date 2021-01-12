@@ -5,7 +5,7 @@ subtitle: "This site’s offerings in a rough year"
 description: "What I talked about while the world burned."
 author: Bryce Wray
 date: 2020-12-30T08:35:00-06:00
-#lastmod: TBD
+lastmod: 2021-01-11T12:25:00-06:00
 #draft: false
 discussionId: "2020-12-through-with-2020"
 featured_image: "road-signs-2020-to-2021-new-years-eve-5829158_3200x2200.jpg"
@@ -52,7 +52,7 @@ And, with those cheery thoughts, I segue to offering you a review of this site's
 ## April
 
 - **[Different modes for different code](/posts/2020/04/different-modes-different-code)**---Described the first of what became multiple efforts to help others get a better feel for how SSGs work.
-- **[The full .11ty.js monty](/posts/2020/04/full-11ty-js-monty)**---Went full-JavaScript as far as the site's templating was concerned. (Later in the year, I'd revert mainly to [Nunjucks](https://mozilla.github.io/nunjucks) when using Eleventy.)
+- **[The full .11ty.js monty](/posts/2020/04/full-11ty-js-monty)**---Went full-JavaScript as far as the site's templating was concerned.
 - **[Murdered darlings](/posts/2020/04/murdered-darlings)**---Temporarily gave up on the novel I've been trying to write since 2017 (and, with it, the [Ulysses](https://ulysses.app) writing app).
 - **Webmentions in three SSGs**---Did a five-part series on how to include [webmentions](https://indieweb.org/Webmention) in one's website. [Part 1](/posts/2020/04/webmentions-three-ssgs-1) was the intro; [Part 2](/posts/2020/04/webmentions-three-ssgs-2) explained how to add webmentions to an Eleventy site; [Part 3](/posts/2020/04/webmentions-three-ssgs-3), same for a [Hugo](https://gohugo.io) site; [Part 4](/posts/2020/04/webmentions-three-ssgs-4), same for a [Gatsby](https://gatsbyjs.org) site; and [Part 5](/posts/2020/04/webmentions-three-ssgs-5) wrapped it up with a bibliography of all the great articles on which I'd relied in writing the series.
 

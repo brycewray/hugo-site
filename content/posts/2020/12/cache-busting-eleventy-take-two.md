@@ -5,7 +5,7 @@ subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
 date: 2020-12-11T16:55:00-06:00
-lastmod: 2020-12-17T06:50:00-06:00
+lastmod: 2021-01-12T07:35:00-06:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
 featured_image: broken-glass-549087_4000x3000.jpg
@@ -85,7 +85,7 @@ So convinced, I went back to "Our Cache Busting Setup on Eleventy" for some more
 2. Create an [MD5](https://en.wikipedia.org/wiki/MD5) hash of the concatenated content. This hash will be appended to the name of the site's final CSS file at build time.
 3. Write two files out to the project: (a.) a JSON file in the `_data` directory which, like the `manifest.json` file in PostCSS Hash (as explained in that [previous article](/posts/2020/11/using-postcss-cache-busting-eleventy)) will "tell" the [Eleventy data cascade](https://www.11ty.dev/docs/data-cascade/) the name of the final CSS file; and (b.) a text file in the root directory which feeds the CSS file name to the PostCSS file-output command in the `package.json` scripts.
 4. Use that PostCSS command to write the appropriately named CSS file to the `_site` folder which the host uses to build the site.
-5. Use the site's `head.njk` partial template to tell each page on the site to refer to the CSS file by that special file name.
+5. Use the site's `head.js` partial template to tell each page on the site to refer to the CSS file by that special file name.
 
 As I've mentioned before, I have a private test repo that I use for evaluating various website hosts' performance.[^hostsTest] To make sure I didn't go live on *this* repo with the fix before I knew that it really worked---*i.e.*, to make sure I didn't screw the pooch here *again*---I briefly repurposed it for running this setup.
 
@@ -99,7 +99,7 @@ To my delight, it worked! And, by "it worked," I mean that the hash at the end o
 - Was successfully called within the final `head` for each page's HTML.
 - Was the same after each host completed its build process. This was important because---as I'd seen during my use of that interim query string solution---build configurations and processes vary among hosts and so, under certain conditions, can produce results that might not necessarily work for you.
 
-{{% yellowBox %}}**Caution**: Chastened as I am by my recent whiff, I do **not** pretend that these tests, either locally or on actual hosting environments, can necessarily be accurate for **every** conceivable computing situation. That's why I put the "(?)" in the subtitle. All I can say for sure is that this solution works for me locally and on multiple hosts using various configurations where the previous, PostCSS Hash-based solution failed to be reliable. But, as always, YMMV.{{% /yellowBox %}}
+{{% yellowBox %}}**Caution**: Chastened as I am by my recent whiff, I do **not** pretend that these tests, either locally or on actual hosting environments, can necessarily be accurate for **every** conceivable computing situation. That's why I put the "(?)" in the subtitle. All I can say for sure is that this solution works for me locally and on multiple hosts using various configurations where the previous, PostCSS Hash-based solution failed to be reliable. But, as always, YMMV. Also, **please note** that the process completes itself **only** during actual site **builds**, and **not** in dev mode (or the `testbuild` script I use, either, so be aware of that if you're looking at my code)---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur.{{% /yellowBox %}}
 
 ## To fork or not&nbsp;to&nbsp;fork&nbsp;.&nbsp;.&nbsp;.
 
@@ -116,7 +116,7 @@ In the starter set repo, the files of note are:
 	- `prod:postcss`
 	- `testbuild`
 	- `testProd:postcss`
-- `/src/_includes/partials/head.js`, the partial template which "tells" the site to use the hashed name when referring to the CSS file. (On this site's repo, by comparison, I use Nunjucks templating so the corresponding template is called `head.njk`.)
+- `/src/_includes/partials/head.js`, the partial template which "tells" the site to use the hashed name when referring to the CSS file.
 
 In the three `package.json` scripts whose names end with `postcss`, the key part for each is: \
 `postcss src/assets/css/index.css -o _site/css/$(cat csshash)`\

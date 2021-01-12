@@ -6,7 +6,7 @@ subtitle: "Going all-JavaScript with my Eleventy site"
 description: "Once again, I can’t resist a nerdy challenge."
 author: Bryce Wray
 date: 2020-04-15T17:30:00-05:00
-lastmod: 2020-11-07T09:38:00-06:00
+lastmod: 2021-01-11T12:25:00-06:00
 discussionId: "2020-04-full-11ty-js-monty"
 featured_image: puzzle-completion-654962_5184x3888.jpg
 featured_image_width: 5184
@@ -119,9 +119,3 @@ The content part is pretty easy. I just add this post, and others as I write the
 Getting *all* the functionality working will be the gooey part. However, it'll also be the fun part.
 
 &nbsp;.&nbsp;.&nbsp;. I think.
-
-____
-
-**Note, 2020-11-07**: For a variety of reasons, I came back to Nunjucks today. Two of the main reasons were: (1.) it's easier to edit Nunjucks templates in most code editors[^Hugo]; and (2.) you can make those edits in dev mode without having to keep restarting the dev server, which isn't the case with pure-JavaScript templating.
-
-[^Hugo]: Indeed, I actually went back to the [Hugo](https://gohugo.io) static site generator for a few weeks because, while tinkering with it on one of my other repos, I found I enjoyed the editing experience more **even though** it required dealing with Go, for God's sake. I realized the only way to come back to Eleventy but not lose that experience was to return to Nunjucks, too.

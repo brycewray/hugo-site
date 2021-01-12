@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T16:30:00-06:00
-lastmod: 2020-12-11T16:30:00-06:00
+lastmod: 2021-01-11T12:23:00-06:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -124,13 +124,13 @@ Simply put, you want to specify the location for the manifest file (`manifest.js
 
 That means, for Eleventy purposes, it's critical to put this manifest file where the template **can** find it. If you *don't* specify the location, PostCSS Hash by default will put it in `manifest.json` at the project's top level; but the **best** place to put it is within the Eleventy project's *global data directory* ([specified](https://www.11ty.dev/docs/config/#directory-for-global-data-files) in its `.eleventy.js` configuration file and defaulting to a `_data` directory in the project's top level). Once you do that, it's super-easy to point the template to it, because *Eleventy makes that directory's contents available to your entire site*.
 
-In my site's case, I use the `head.njk` "partial" to give this entire site its `<head>` content, so I can finish this very easily:
+In my site's case, I use the `head.js` "partial" to give this entire site its `<head>` content, so I can finish this very easily:
 
 ```html
-<link rel="stylesheet" href="/css/{{ manifest['index.css'] }}" type="text/css">
+<link rel="stylesheet" href="/css/${data.manifest['index.css']}" type="text/css">
 ```
 
-The {{ manifest['index.css'] }} ` part tells Eleventy, "Go to `_data/manifest.json`, find the value of its `index.css`  key, and insert the value here." In the resulting, Eleventy-generated HTML, the line shows up as (this is just an example, since the hash obviously will vary):
+The `${data.manifest['index.css']}` part tells Eleventy, "Go to `_data/manifest.json`, find the value of its `index.css`  key, and insert the value here." In the resulting, Eleventy-generated HTML, the line shows up as (this is just an example, since the hash obviously will vary):
 
 ```html
 <link rel="stylesheet" href="/css/index-a1ee6657944e0c6d4080.css" type="text/css">
