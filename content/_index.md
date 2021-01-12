@@ -12,8 +12,6 @@ featured_image_caption: |
   Image: <a href="https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164">rawpixel</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164">Pixabay</a>
 ---
 
-# Welcome.
-
 Eons ago, when [the web was a new thing](http://info.cern.ch/hypertext/WWW/TheProject.html)---and people still capitalized *Web* and used two words for *Web site*, consarn it---[ISPs](https://en.wikipedia.org/wiki/Internet_service_provider) tended to provide free file space for people to have [little personal websites](https://consumerist.com/2015/03/20/where-did-everyone-from-the-90s-go-when-we-all-got-facebook-and-quit-web-1-0/). Back in those days, one did so with whatever [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) client one could find, what we now know as static [HTML](https://www.w3schools.com/html/html_intro.asp) files (but not [CSS](https://www.w3schools.com/Css/), not yet anyway), and lots and lots of [dialup modem noise](https://en.wikipedia.org/wiki/File:Dial_up_modem_noises.ogg).
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.

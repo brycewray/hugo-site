@@ -22,12 +22,21 @@
   </div>
 </div>
 {{ if index .Params "featured_image_caption" }}
-<p class="text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
+<p class="font-sans text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
 {{ end }}
 
 
 <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
   <div class="col-span-3 home-colOne">
+    <h1>Welcome.</h1>
+    <p class="font-sans text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
+      Published: {{ .PublishDate.Format "January 2, 2006" }}<br />
+      {{- if ne .PublishDate .Lastmod }}
+      Last modified: {{ .Lastmod.Format "January 2, 2006" }}
+      {{- else }}
+      &nbsp;
+      {{- end }}
+    </p>
     {{ .Content }}
   </div>
   <div class="font-sans col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
