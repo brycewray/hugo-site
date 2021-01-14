@@ -139,7 +139,7 @@ You plan a structure. This structure has directories---folders, if you prefer---
 
 [^index]: In each case where you see `index.html` in this diagram, it could just as easily be `index.php`, or `index.asp`, or `index.js`, or whatever makes sense for the particular site's setup.
 
-```text
+```markdown
 . [top level, usually "/public_html" on a server]
 └── index.html [site's home page]
     └── about [directory]

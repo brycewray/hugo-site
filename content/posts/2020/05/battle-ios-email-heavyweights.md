@@ -94,12 +94,12 @@ To keep this post to a sort-of-tolerable length, we'll look primarily at the two
 
 Another thing any decent-quality iOS email app can do is show folders within an account. Where nearly all of them run afoul on this is to go *beyond* the top level, like this&nbsp;.&nbsp;.&nbsp;.
 
-```bash
+```markdown
 Account
-  |_ FolderLevel One
-     |_ FolderLevel Two
-        |_ FolderLevel Three
-           |_ FolderLevel Four
+  └── FolderLevel One
+     └── FolderLevel Two
+        └── FolderLevel Three
+           └── FolderLevel Four
 ```
 
 .&nbsp;.&nbsp;. in which case, AltaMail and Preside pretty much are the only games in town. Attorneys especially ache for this kind of functionality in an iOS email app, since they often keep at least one separate "master" folder, and practically never-ending sets and levels of subfolders, for *each* client's emails. Better yet is if an app can gradually "learn" how and where you file *and* start helping you do it, often with just a swipe. AltaMail and Preside can. One user said, "I'm almost always pleasantly surprised by the ability of Preside to 'guess right' about what I want to do with a specific message."
