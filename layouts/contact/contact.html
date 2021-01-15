@@ -8,8 +8,8 @@
         &nbsp;
       {{- end }}
     </h2>
-    <p class="font-sans hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:mt-8 mb-6 text-white">{{ .Params.Description }}</p>
-    <p class="font-sans text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
+    <p class="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:mt-8 mb-6 text-white">{{ .Params.Description }}</p>
+    <p class="text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
       <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
       <span class="text-sm xb:text-base">
         {{- if ne .PublishDate .Lastmod }}
