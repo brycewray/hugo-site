@@ -22,14 +22,14 @@
   </div>
 </div>
 {{ if index .Params "featured_image_caption" }}
-<p class="font-sans text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
+<p class="text-center text-xs tracking-normal mt-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
 {{ end }}
 
 
 <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 xb:gap-32 lg:w-3/4 xb:w-7/12 mr-auto ml-auto">
   <div class="col-span-3 home-colOne">
     <h1>Welcome.</h1>
-    <p class="font-sans text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
+    <p class="text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
       Published: {{ .PublishDate.Format "January 2, 2006" }}<br />
       {{- if ne .PublishDate .Lastmod }}
       Last modified: {{ .Lastmod.Format "January 2, 2006" }}
@@ -39,7 +39,7 @@
     </p>
     {{ .Content }}
   </div>
-  <div class="font-sans col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
+  <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
     <h2 class="h1 mb-4">Recent <a href="/posts/">posts</a></h2>
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>

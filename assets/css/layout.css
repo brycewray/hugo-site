@@ -1,3 +1,18 @@
+.italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+  font-variation-settings: 'slnt' -8;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
+     so we override that below with the @-moz-document url-prefix media query for Firefox */
+  font-style: oblique 8deg;
+  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
+}
+
+@-moz-document url-prefix() {
+  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+    /* font-variation-settings: normal; */
+    font-style: normal;
+  }
+}
+
 ul li li {
   list-style-type: circle;
 }
@@ -11,12 +26,13 @@ ul li li li {
 }
 
 html, body {
-  @apply font-serif dark:bg-black;
+  @apply dark:bg-black;
 }
 
 body {
   @apply dark:text-gray-200;
   font-feature-settings: "liga" 1;
+  font-weight: 425;
 }
 
 p, li {
@@ -97,11 +113,16 @@ a.navborderless {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply font-bold font-sans leading-tight tracking-tight;
+  @apply leading-tight tracking-tight;
 }
 
 h1, .h1 {
   @apply text-4xl mb-4;
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
 }
 
 h2, .h2 {
@@ -220,10 +241,11 @@ article img.containedImage, .home-colOne img.containedImage {
 
 
 .yellowBox {
-  @apply font-sans bg-yellow-200 border border-gray-900 border-solid mx-auto my-8 w-full p-8 dark:bg-gray-800 dark:border-gray-500;
+  @apply bg-yellow-200 border border-gray-900 border-solid mx-auto my-8 w-full p-8 dark:bg-gray-800 dark:border-gray-500;
 }
 
 .yellowbox p { 
+  font-weight: 825;
   @apply w-full p-2 m-0;
 }
 
