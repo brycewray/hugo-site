@@ -62,7 +62,7 @@ Now that I've apologized and, I hope, recompensed for my errors, I also want to 
 
 In "[It's about the food, not the decor](/posts/2019/10/its-about-food-not-decor)" and, to some extent, "[Back with Hugo](/posts/2019/09/back-with-hugo)," I said I was done being meta about how I put together this site with whichever SSG I choose to use at the time. A [Flavio Copes post](https://flaviocopes.com/boring-stack/) had convinced me of the wisdom of taking such a stand.
 
-However, since then, I've read quite a few other folks' posts about, guess what, how they do their sites with one SSG or another, their migration of those sites between SSGs, their choices and the occasional ruing thereof, and so on. And I've found them fascinating.
+However, since then, I've read quite a few other folks’ posts about, guess what, how they do their sites with one SSG or another, their migration of those sites between SSGs, their choices and the occasional ruing thereof, and so on. And I've found them fascinating.
 
 In the darkest sense, perhaps this meta on my part constitutes the train wreck from which one can't avert one's eyes.
 

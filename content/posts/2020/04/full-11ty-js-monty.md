@@ -114,7 +114,7 @@ Eleventy is by no means the best-known of the SSGs, and [it is purposely *not* b
 
 Having put this work to bed, I now will turn my attention to the task I mentioned earlier: making those Gatsby- and Hugo-based repos once again as close to this one as possible in both content and functionality.
 
-The content part is pretty easy. I just add this post, and others as I write them (and adjust each for any tiny issues related to different SSGs' ways of handling things).
+The content part is pretty easy. I just add this post, and others as I write them (and adjust each for any tiny issues related to different SSGs’ ways of handling things).
 
 Getting *all* the functionality working will be the gooey part. However, it'll also be the fun part.
 

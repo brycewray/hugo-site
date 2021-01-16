@@ -20,7 +20,7 @@ featured_image_caption: |
 
 "Initially, the defendant made the following assertions:"
 
-{{< twitscrn imageUrl="Twitter_1140023324988313601.png" alt="Tweet from @BryceWrayTX, 2019-06-15: Can't totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices' and browsers' default search to @DuckDuckGo. #UnGoogle" width="1182" height="474" twitterUrl="https://twitter.com/BryceWrayTX/status/1140023324988313601" >}}
+{{< twitscrn imageUrl="Twitter_1140023324988313601.png" alt="Tweet from @BryceWrayTX, 2019-06-15: Can't totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to @DuckDuckGo. #UnGoogle" width="1182" height="474" twitterUrl="https://twitter.com/BryceWrayTX/status/1140023324988313601" >}}
 
 ".&nbsp;.&nbsp;. and .&nbsp;.&nbsp;."
 

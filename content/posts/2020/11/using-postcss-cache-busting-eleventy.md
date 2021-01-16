@@ -70,7 +70,7 @@ But, again, that capability was built into Hugo. When I came back to Eleventy, I
 
 ### Build tools?
 
-At this writing, Eleventy has *no* built-in assets pipeline---and that's been on some users' wishlists [for quite some time](https://github.com/11ty/eleventy/issues/272)---which makes for problematic cache-busting. Smarter people than I have found ways to do it, most often by using external build tools like [webpack](https://webpack.js.org), [Parcel](https://parceljs.org), [Snowpack](https://snowpack.dev), [Gulp](https://gulpjs.com), and [Grunt](https://gruntjs.com).[^4]
+At this writing, Eleventy has *no* built-in assets pipeline---and that's been on some users’ wishlists [for quite some time](https://github.com/11ty/eleventy/issues/272)---which makes for problematic cache-busting. Smarter people than I have found ways to do it, most often by using external build tools like [webpack](https://webpack.js.org), [Parcel](https://parceljs.org), [Snowpack](https://snowpack.dev), [Gulp](https://gulpjs.com), and [Grunt](https://gruntjs.com).[^4]
 
 Some of you will recall I did use webpack with Eleventy for a while, [as I mentioned almost a year ago](/posts/2019/12/packing-up). However, a few months later, I [decided instead to "go solo"](/posts/2020/05/going-solo-eleventy); *i.e.*, use Eleventy on its own without webpack or any other build tool.
 

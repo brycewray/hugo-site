@@ -28,15 +28,15 @@ I've also converted my existing Hugo-based version of the Eleventy repo (*i.e.*,
 
 First, let me deal with one even more salient question: what exactly is a starter set where SSGs are concerned?
 
-In my starter sets' cases, at least, the term refers to a site repo that has been pared down to a sufficiently minimal set of content and configuration so that, while someone new to the SSG can load and run it, he or she then can also customize it without having to delete a ton of unneeded stuff.
+In my starter sets’ cases, at least, the term refers to a site repo that has been pared down to a sufficiently minimal set of content and configuration so that, while someone new to the SSG can load and run it, he or she then can also customize it without having to delete a ton of unneeded stuff.
 
-[A few months back](/posts/2020/04/different-modes-different-code/), I made public the Hugo and [Gatsby](https://gatsbyjs.org) versions of this site's repo. This was a follow-up to my having made my Eleventy repo public [last December](/posts/2019/12/code-comfort-eleventy-webpack) (the [webpack](https://webpack.js.org)-based version I had for a while) and [two months ago](/posts/2020/05/going-solo-eleventy) (the current, non-webpack version). I thus hoped the choice among the three repos I'd used would be as helpful to me as I have found it to see others' repos.
+[A few months back](/posts/2020/04/different-modes-different-code/), I made public the Hugo and [Gatsby](https://gatsbyjs.org) versions of this site's repo. This was a follow-up to my having made my Eleventy repo public [last December](/posts/2019/12/code-comfort-eleventy-webpack) (the [webpack](https://webpack.js.org)-based version I had for a while) and [two months ago](/posts/2020/05/going-solo-eleventy) (the current, non-webpack version). I thus hoped the choice among the three repos I'd used would be as helpful to me as I have found it to see others’ repos.
 
 The problem with that approach was, as I noted in the repos’ README files, each definitely wasn't a starter set **although** it could be *used* as one---if, of course, one was willing to go through and carve away all my content. (Yeah, right.)
 
 Then, more recently, I pared back both the Hugo and Gatsby versions to a very small number of posts, hoping that would simplify things. Still, the posts that did remain were the actual content rather than more generic (and *very* short) posts, and thus the repos remained not truly "starter-ish."
 
-In addition to that, I had *no* reduced-size repo for helping folks interested in Eleventy, and that *really* griped my cookies because that's the SSG in which I most want to spur newbies' interest.
+In addition to that, I had *no* reduced-size repo for helping folks interested in Eleventy, and that *really* griped my cookies because that's the SSG in which I most want to spur newbies’ interest.
 
 So, I spent the better part of this weekend fixing this problem, resulting in those three new starter repos (well, two new starter repos and a third repo *repurposed as* a starter repo).
 

@@ -38,7 +38,7 @@ So: kill your being-fancy-for-the-sake-of-trying-to-impress-somebody text and *t
 
 All of them.
 
-If you ever get any use, or even simple reading pleasure, from reading anything on this site, I therefore ask you to observe a moment of silence in those darlings' honor.
+If you ever get any use, or even simple reading pleasure, from reading anything on this site, I therefore ask you to observe a moment of silence in those darlings’ honor.
 
 This site wouldn't be here had it not been for them.
 

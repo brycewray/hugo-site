@@ -42,7 +42,7 @@ A GHP site typically has a name like *MyGitHubName.github.io*, but you can assig
 
 The second choice is a recently introduced PaaS offering that's been getting some attention: [DigitalOcean](https://digitalocean.com)'s [App Platform](https://www.digitalocean.com/products/app-platform/)---or, as I'll abbreviate it for the remainder of this article, *DOAP*. With DOAP, your original content exists on DO's infrastructure behind Cloudflare, obviously no slouch in the CDN realm.
 
-When DOAP [first went live](https://www.digitalocean.com/blog/introducing-digitalocean-app-platform-reimagining-paas-to-make-it-simpler-for-you-to-build-deploy-and-scale-apps), I eagerly gave it a try, but it soon became clear that I couldn't successfully deploy a test site from the same repo I use with no problem on other vendors' platforms. Simply put, the build process would die, and with error messages that weren't terribly helpful.
+When DOAP [first went live](https://www.digitalocean.com/blog/introducing-digitalocean-app-platform-reimagining-paas-to-make-it-simpler-for-you-to-build-deploy-and-scale-apps), I eagerly gave it a try, but it soon became clear that I couldn't successfully deploy a test site from the same repo I use with no problem on other vendors’ platforms. Simply put, the build process would die, and with error messages that weren't terribly helpful.
 
 DO Tech Support informed me, very courteously, that I'd need some [Docker](https://docker.com) stuff going on just to install the SSG---Hugo, back then---during the build process, much less to proceed from there. And that was fair enough, except that there were two catches to that where I was concerned:
 

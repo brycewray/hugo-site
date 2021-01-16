@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3354365">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3354365">Pixabay</a></span>
 ---
 
-{{% yellowBox %}}**Original opening note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{{% /yellowBox %}}
+{{% yellowBox %}}**Original opening note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{{% /yellowBox %}}
 
 {{% yellowBox %}}**Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.{{% /yellowBox %}}
 
@@ -44,7 +44,7 @@ Accordingly, when I enhanced this site's webmentions capabilities recently so th
 
 Does this series amount to the articles I wish I could've read before I started? No, but I do hope it will help you avoid some of the things that had me metaphorically beating my head against the computer screen for several nights in a row trying to find answers.
 
-In particular, I found it *really* difficult to follow the logic in certain articles' related code. I ended up "chasing" variables, constants, and statements from other files---and sourly muttering things like "Where'd *that* come from?" and "What's *that* got to do with what's supposed to be happening here?" and "Wait a minute; what happened to the step *before* this part?"
+In particular, I found it *really* difficult to follow the logic in certain articles’ related code. I ended up "chasing" variables, constants, and statements from other files---and sourly muttering things like "Where'd *that* come from?" and "What's *that* got to do with what's supposed to be happening here?" and "Wait a minute; what happened to the step *before* this part?"
 
 As I often say: if *I* can do this, *you* can do this. That's especially true if you have a decent base in [JavaScript](https://js.org) (and, for Hugo's sake, [Go](https://golang.org)); but, even if you don't, I hope what's contained in and linked from this series will help you reach a happy place, so your webmentions will get fetched regularly and then appear on your site as they should.
 
@@ -54,9 +54,9 @@ And no chase scenes involved, I hope.
 
 It's not within the scope of this series to give you *extensive* details about the general niceties of making your site compatible with webmentions in the first place. Fortunately, [IndieWebify.Me](https://indiewebify.me) not only is pretty much the canonical location for that, but also makes it easy.
 
-To facilitate the capture of webmentions for my site, I chose to use a combination of two free, hosted services: [webmention.io](https://webmention.io), which is an endpoint for receiving webmentions for web pages registered with it; and [Bridgy](https://brid.gy), which "watches" social media sites for responses to its registered users' pages and sends the responses back to those pages as webmentions. Each service has pretty simple instructions for how to sign up with and start using it. In my case, I did the following for each repo:
+To facilitate the capture of webmentions for my site, I chose to use a combination of two free, hosted services: [webmention.io](https://webmention.io), which is an endpoint for receiving webmentions for web pages registered with it; and [Bridgy](https://brid.gy), which "watches" social media sites for responses to its registered users’ pages and sends the responses back to those pages as webmentions. Each service has pretty simple instructions for how to sign up with and start using it. In my case, I did the following for each repo:
 
-1. Added the necessary **[microformats](https://indieweb.org/microformats)** information to the site footer. This essentially acts like a "beacon" to other sites, "announcing" pages' titles, descriptions, and more. The other sites can then "respond."
+1. Added the necessary **[microformats](https://indieweb.org/microformats)** information to the site footer. This essentially acts like a "beacon" to other sites, "announcing" pages’ titles, descriptions, and more. The other sites can then "respond."
 
 2. Added to the site's universal `<HEAD>` section the appropriate `link rel="webmention"` and `link rel="pingback"` HTML. This enables webmention.io to collect webmentions and "[pingbacks](https://en.wikipedia.org/wiki/Pingback)" for the site pages.
 

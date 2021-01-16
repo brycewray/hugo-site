@@ -88,7 +88,7 @@ However, this site is back on, and will remain on, Hugo. You have every right no
 
 Since I used to spend a lot a time on [Slashdot](https://slashdot.org), I'll offer a car analogy.
 
-Think about a car mechanic---which is really a stretch since I'm not mechanical at all, but it's just an analogy---who works days making sure customers' vehicles are running properly, then spends nights and weekends tinkering, as a hobby, on some old classic in his garage at home.
+Think about a car mechanic---which is really a stretch since I'm not mechanical at all, but it's just an analogy---who works days making sure customers’ vehicles are running properly, then spends nights and weekends tinkering, as a hobby, on some old classic in his garage at home.
 
 But he keeps the two separate.
 

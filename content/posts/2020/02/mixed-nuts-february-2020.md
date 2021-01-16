@@ -28,7 +28,7 @@ One benefit I didn't expect from the [streaming](/posts/2020/01/streamers-party)
 
 One thing I did *not* expect to occur when I made [this site's repository](https://github.com/brycewray/eleventy_bundler) [public](/posts/2019/12/code-comfort-eleventy-webpack) was that it would get GitHub stars. At this writing, the quantity is still in the single digits but, hey, man, it's actual *Github stars*. We Are Not Worthy.
 
-*For those reviewers out there who believe you can't do long-form writing in [iA Writer](https://ia.net/writer) because it requires you to rename individual chapters' files when you want to move around scenes&nbsp;.&nbsp;.&nbsp;.* **Really**?
+*For those reviewers out there who believe you can't do long-form writing in [iA Writer](https://ia.net/writer) because it requires you to rename individual chapters’ files when you want to move around scenes&nbsp;.&nbsp;.&nbsp;.* **Really**?
 
 I long in vain for a return to the days when athletes *did not* engage in elaborate celebrations after every frigging accomplishment during a game[^Volleyball]. Celebrate when you win, folks---maybe (*i.e.*, if the win doesn't simply advance you to a .350 record).
 
@@ -38,4 +38,4 @@ I long in vain for a return to the days when athletes *did not* engage in elabor
 
 Although I have nearly a year to go on my current subscription with [1Password](https://1password.com), have been impressed so far while trying out the open-source but fully featured [Bitwarden](https://bitwarden.com). If you're trying to sort out your own passwords, I strongly urge you to give Bitwarden a try.
 
-*Seeing how so many prominent individuals, institutions, and teams have succeeded by cheating and otherwise flouting the rules, perhaps society should just* eliminate *all rules and cut out the ineffective middleman. We could call this the "Systematic Correction and Repeal of Egregious Works' Interference via Total Annihilation of Limiting Legislation" (SCREWITALL).*
+*Seeing how so many prominent individuals, institutions, and teams have succeeded by cheating and otherwise flouting the rules, perhaps society should just* eliminate *all rules and cut out the ineffective middleman. We could call this the "Systematic Correction and Repeal of Egregious Works’ Interference via Total Annihilation of Limiting Legislation" (SCREWITALL).*

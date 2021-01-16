@@ -100,7 +100,7 @@ That said, I have another one to recommend if you're feeling just slightly more 
 
 [Eleventy](https://11ty.dev) is based on the much more commonly used JavaScript programming language and, while not as fast as Hugo, is among the most nimble of the many JS-based SSGs available today.
 
-It's also by far the easiest and most flexible JS-based SSG to set up and use, allowing the use of a number of templating languages; so, if you *do* want to do a little playing around with the innards of whichever SSG you pick, Eleventy is your go-to. With its growing popularity, Eleventy is quickly amassing a large community who gravitated to it precisely because of its competitors' shortcomings.
+It's also by far the easiest and most flexible JS-based SSG to set up and use, allowing the use of a number of templating languages; so, if you *do* want to do a little playing around with the innards of whichever SSG you pick, Eleventy is your go-to. With its growing popularity, Eleventy is quickly amassing a large community who gravitated to it precisely because of its competitors’ shortcomings.
 
 There is no real theming for Eleventy at this writing *but* there are plenty of [starter sets](https://www.11ty.dev/docs/starter/) available for it. I even have [one of my own](https://github.com/brycewray/eleventy_solo/) out there, similar to the look-and-feel of this site. If you decide to opt for this highly commendable JS-based SSG, I suggest, just as I did regarding themes for Hugo, that you take time to select a starter set best fitting your requirements---so that, at least at the outset while you're getting used to everything, you'll need to do as little of your own setup and design as possible.
 

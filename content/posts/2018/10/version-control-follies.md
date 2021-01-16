@@ -37,7 +37,7 @@ cls
 copy manuald1.doc manuald2.doc
 ```
 
-The latter was to copy Draft 1 of an instruction manual file so I could work on Draft 2 while keeping Draft 1, just in case. But why such clunky file names? Remember: MS-DOS was limited to eight-character, non-case-sensitive, non-spaced names for files and directories. We got up to Windows 95 before the IBM-compatibles' world shed that nasty little distinction, and up to Windows XP before the CLI sitting behind the Windows environment really recognized longer names rather than just *pretending* to do so in Windows while actually turning *My Windows Document.doc* into *MYWINDO~.DOC* and *My Windows Document As Well.doc* into *MYWIND2~.DOC*—and so on.
+The latter was to copy Draft 1 of an instruction manual file so I could work on Draft 2 while keeping Draft 1, just in case. But why such clunky file names? Remember: MS-DOS was limited to eight-character, non-case-sensitive, non-spaced names for files and directories. We got up to Windows 95 before the IBM-compatibles’ world shed that nasty little distinction, and up to Windows XP before the CLI sitting behind the Windows environment really recognized longer names rather than just *pretending* to do so in Windows while actually turning *My Windows Document.doc* into *MYWINDO~.DOC* and *My Windows Document As Well.doc* into *MYWIND2~.DOC*—and so on.
 
 You kids missed so much. You lucky dogs.
 

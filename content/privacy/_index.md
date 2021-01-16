@@ -33,7 +33,7 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 ### Embedded videos
 
-I no longer embed YouTube or other sites' videos, since they can and do transmit personal information through cookies. In the two instances where I formerly did---“[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)” and “[Coherence and COVID-19](/posts/2020/03/coherence-covid-19)”---I replaced them with clearly identified links to their original locations, and footnoted each link with a reference and link to this privacy policy.
+I no longer embed YouTube or other sites’ videos, since they can and do transmit personal information through cookies. In the two instances where I formerly did---“[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)” and “[Coherence and COVID-19](/posts/2020/03/coherence-covid-19)”---I replaced them with clearly identified links to their original locations, and footnoted each link with a reference and link to this privacy policy.
 
 ### Twitter content
 

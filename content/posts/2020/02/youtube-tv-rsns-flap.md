@@ -28,7 +28,7 @@ Fast-forward to today, when:
 
 - The sports leagues (perhaps for that reason) [live or die on massive outlays of money from the television networks that carry their games](https://globalsportmatters.com/business/2019/03/07/tv-is-biggest-driver-in-global-sport-league-revenue/).
 
-- The vast majority of those games' telecasts are controlled by dwindling numbers of providers which, exercising the muscle such a position gives them, are squeezing---or trying to squeeze---[ever-greater fees](https://www.latimes.com/business/hollywood/la-fi-ct-sports-channels-20161128-story.html) from the services that bring those telecasts to viewers.
+- The vast majority of those games’ telecasts are controlled by dwindling numbers of providers which, exercising the muscle such a position gives them, are squeezing---or trying to squeeze---[ever-greater fees](https://www.latimes.com/business/hollywood/la-fi-ct-sports-channels-20161128-story.html) from the services that bring those telecasts to viewers.
 
 It's been [over 150 years](https://ohiohistorycentral.org/w/Cincinnati_Reds) since professional sports began to captivate the hearts of U. S. fans. Now, all of this may finally have become unsustainable, a possibility I've been pondering for a while. It may well be that the pyramid is, at long last, toppling.
 

@@ -38,7 +38,7 @@ Such was the case, [earlier this year](/posts/2020/05/going-solo-eleventy), when
 
 At first, I tried some excellent Eleventy plugins, but found each didn't fit my particular setup for differing reasons. As what was intended at first as only an interim measure but soon became my go-to answer, I came up with a build-time script, `imgxfm.js`, which used the [Sharp](https://github.com/lovell/sharp) library (and, later in the script's brief life, the [pngquant](https://pngquant.org/) library) to handle image-processing duties.
 
-When I first went with this method, the site wasn't using [hero images](https://www.optimizely.com/optimization-glossary/hero-image/). Thus, the script, handling only the relatively few images within my posts' body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup.
+When I first went with this method, the site wasn't using [hero images](https://www.optimizely.com/optimization-glossary/hero-image/). Thus, the script, handling only the relatively few images within my posts’ body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup.
 
 Things changed quite a bit once [I brought back hero images](/posts/2020/05/thousand-words-indeed) a couple of weeks later. Now, the build times fattened dramatically, and grew longer with each new post and its hero image---and, of course, these increasingly long builds were happening also on *local* builds while I was doing dev stuff. I spent plenty of time waiting through such builds, twiddling my metaphorical thumbs while listening to my iMac's fans kick up in protest.
 

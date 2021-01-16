@@ -50,7 +50,7 @@ Last night, for example, an email from the auto dealership where we recently pur
 
 ## No end in sight
 
-My naïveté over the timing of my working from home due to the COVID-19 scare is long gone. That period is now indefinite, especially since my employers' home offices as well as the branch office where I work are affected by their respective states' regulations requiring near- or total shutdown of non-essential businesses.
+My naïveté over the timing of my working from home due to the COVID-19 scare is long gone. That period is now indefinite, especially since my employers’ home offices as well as the branch office where I work are affected by their respective states’ regulations requiring near- or total shutdown of non-essential businesses.
 
 When will it end? Some businesses are saying things like April something-or-other. Since I have spent a *great deal* of time reading and listening to the opinions of leading epidemiologists[^ScienceRules] over these last few days, I think such optimism is the product of somebody having smoked something funky.
 

@@ -189,7 +189,7 @@ Here's how it works.
 
 - The `on` section tells it to run whenever one of two things happens:
 	- The first is whenever a change is pushed to the default branch, `main`.
-	- The second is when it's 5:00 AM [UTC](https://www.timeanddate.com/worldclock/timezone/utc)---which corresponds to late night in my time zone---and works because of GitHub Actions' support for [cron jobs](https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/). This cron job generates that earlier-mentioned automatic daily build for the sake of updating webmentions.
+	- The second is when it's 5:00 AM [UTC](https://www.timeanddate.com/worldclock/timezone/utc)---which corresponds to late night in my time zone---and works because of GitHub Actions’ support for [cron jobs](https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/). This cron job generates that earlier-mentioned automatic daily build for the sake of updating webmentions.
 - Then there's the `jobs` section. It gives these orders:
 	- Use the latest version of [Ubuntu](https://ubuntu.com) that the remote server is willing to load.
 	- "Checkout" that aforementioned default branch in Git.
@@ -201,7 +201,7 @@ Here's how it works.
 
 As a result: with this GitHub Action now handling builds on the GitHub setup, the deploy on Netlify typically takes no more than *ten seconds*, quite often more in the range of *two to five* seconds---and, once again, it counts as *zero* seconds against that 300-minute monthly build cap.
 
-Finally: you may wonder, hey, what if the Netlify folks learn you're doing this? Won't they object? The simple answer is: Absolutely not! You're *helping* them! You're *saving* their setup valuable time, processing wear and tear, and bandwidth for *paying* customers' use. 
+Finally: you may wonder, hey, what if the Netlify folks learn you're doing this? Won't they object? The simple answer is: Absolutely not! You're *helping* them! You're *saving* their setup valuable time, processing wear and tear, and bandwidth for *paying* customers’ use. 
 
 ### GitLab CI/CD
 
