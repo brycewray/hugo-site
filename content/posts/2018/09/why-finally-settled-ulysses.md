@@ -21,9 +21,9 @@ Well, that hasn't happened, but at least now I **really** think I've got all my 
 
 There's kind of a holy war out there involving a lot of writing apps, especially for us lucky Mac users, and I've been going back and forth between probably the two biggest combatants: [Scrivener](https://www.literatureandlatte.com/scrivener/overview) and [Ulysses](https://ulyssesapp.com).
 
-And, truth be known, it seems silly to call them "combatants" since, as nearly as I can tell, the two companies behind these apps have a lot of mutual respect for each other, as well they should. But, grant a tired old man his tired metaphor, will ya? Ah 'ppreciate it.
+And, truth be known, it seems silly to call them "combatants" since, as nearly as I can tell, the two companies behind these apps have a lot of mutual respect for each other, as well they should. But, grant a tired old man his tired metaphor, will ya? Ah ’ppreciate it.
 
-When I started writing the aforementioned novel in late August, 2017, it was only a few weeks since my joyful rejoining of the Mac universe after a painfully long time away, and, when I started to consider how I would write the book that had been bouncing around my head for quite a while (although it now is 'waaaay different from that original story), my initial search for the best app to do the job made it reasonably clear my best choice was something called Scrivener.
+When I started writing the aforementioned novel in late August, 2017, it was only a few weeks since my joyful rejoining of the Mac universe after a painfully long time away, and, when I started to consider how I would write the book that had been bouncing around my head for quite a while (although it now is ’waaaay different from that original story), my initial search for the best app to do the job made it reasonably clear my best choice was something called Scrivener.
 
 It was my first encounter with writing software that was designed to make it easy to move around scenes and chapters, much less do all the other cool things I have since learned exist among the numerous creative writing-targeted apps for both Macs and iOS.
 
