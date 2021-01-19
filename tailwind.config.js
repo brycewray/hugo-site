@@ -8,6 +8,17 @@ module.exports = {
   },
   darkMode: 'media',
   theme: {
+    fontWeight: {
+      hairline: 100,
+      thin: 200,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 625, // default = 700
+      extrabold: 800,
+      black: 900,
+    },
     colors: {
       transparent: 'transparent',
       white: '#ffffff',

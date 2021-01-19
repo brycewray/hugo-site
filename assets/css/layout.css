@@ -13,6 +13,10 @@
   }
 }
 
+b, strong {
+  font-weight: 625;
+}
+
 ul li li {
   list-style-type: circle;
 }
