@@ -36,7 +36,6 @@ html, body {
 body {
   @apply dark:text-gray-200;
   font-feature-settings: "liga" 1;
-  font-weight: 425;
 }
 
 p, li {

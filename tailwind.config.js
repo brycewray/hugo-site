@@ -12,7 +12,7 @@ module.exports = {
       hairline: 100,
       thin: 200,
       light: 300,
-      normal: 400,
+      normal: 425, // default = 400
       medium: 500,
       semibold: 600,
       bold: 625, // default = 700
