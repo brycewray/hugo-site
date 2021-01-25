@@ -18,7 +18,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "browserslist": [
+    "defaults",
+    "maintained node versions"
+  ],
   "dependencies": {},
   "engines": {
     "node": "12.x"
