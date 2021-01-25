@@ -76,7 +76,6 @@
   {{ $css := $css | resources.PostCSS (dict "config" "postcss.config.js" "outputStyle" "compressed") | fingerprint }}
 
   <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin />
-  <link rel="preload" as="style" href="{{ $css.RelPermalink }}" />
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
   <noscript><style>.lazy {display: none !important;}</style></noscript>
 
