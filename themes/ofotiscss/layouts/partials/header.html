@@ -1,0 +1,20 @@
+<header>
+  <p class="site-logo"><a href="/" aria-label="This site's “BW” logo">{{ partial "svgNavIcon.html"}}</a></span></p>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+  <label for="nav-toggle" class="nav__icon" aria-hidden="true">
+  Expand the menu
+      <span class="nav__icon-line"></span>
+      <span class="nav__icon-line"></span>
+      <span class="nav__icon-line"></span>
+  </label>
+  <nav role="navigation" class="nav">
+    <ul class="nav__items">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        <li class="nav__item">
+          <a href="{{ .URL | relURL }}" title="{{ .Title }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+      </ul>
+  </nav>
+</header>
