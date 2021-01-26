@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+   <div class="background-hero-image-div">
+    <div class='h-full gradient-titles' style="background-image: url(https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_1,w_20/{{ .Params.featured_image }}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <img
+        class='imgCover hero lazy' 
+        data-src='https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_600,x_0,z_1/{{ .Params.featured_image }}' 
+        data-srcset='
+        {{ if ge .Params.featured_image_width 300 }}https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_300,x_0,z_1/{{ .Params.featured_image }} 300w{{ end }}{{ if ge .Params.featured_image_width 450 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_450,x_0,z_1/{{ .Params.featured_image }} 450w{{ end }}{{ if ge .Params.featured_image_width 600 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_600,x_0,z_1/{{ .Params.featured_image }} 600w{{ end }}{{ if ge .Params.featured_image_width 750 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_750,x_0,z_1/{{ .Params.featured_image }} 750w{{ end }}{{ if ge .Params.featured_image_width 900 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_900,x_0,z_1/{{ .Params.featured_image }} 900w{{ end }}{{ if ge .Params.featured_image_width 1050 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1050,x_0,z_1/{{ .Params.featured_image }} 1050w{{ end }}{{ if ge .Params.featured_image_width 1200 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1200,x_0,z_1/{{ .Params.featured_image }} 1200w{{ end }}{{ if ge .Params.featured_image_width 1350 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1350,x_0,z_1/{{ .Params.featured_image }} 1350w{{ end }}{{ if ge .Params.featured_image_width 1500 }}, 
+        https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1500,x_0,z_1/{{ .Params.featured_image }} 1500w{{ end }}
+        ' 
+        alt='{{ .Params.featured_image_alt }}' 
+        width='{{ .Params.featured_image_width }}' 
+        height='{{ .Params.featured_image_height }}' 
+        sizes="100vw"
+      />
+      <noscript>
+        <img
+          class="imgCover" 
+          src="https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_300,x_0,z_1/{{ .Params.featured_image }}" 
+          alt="{{ .Params.featured_image_alt }}" 
+        />
+      </noscript>
+    </div>
+    <div class="background-hero-title-block-fit">
+      <div class="background-hero-title-text">
+        <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{{ .Title | markdownify}}</h1>
+        <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
+          {{- if .Params.Subtitle }}
+          {{ .Params.Subtitle | markdownify }}
+          {{- else }}
+          &nbsp;
+          {{- end }}
+        </h2>
+        <p class="font-sans hidden not-italic md:block md:text-2xl tracking-tight md:text-base md:mt-8 mb-6 text-white">{{ .Params.Description }}</p>
+        <p class="font-sans text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
+          <span style="font-variant: small-caps">published:</span> <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
+          <span class="text-sm">
+          {{- if ne .PublishDate .Lastmod }}
+          <span style="font-variant: small-caps">last modified:</span> {{ .Lastmod.Format "January 2, 2006" }}
+          {{- else }}
+          &nbsp;
+          {{- end }}
+          </span>
+        </p>
+        {{- if isset .Params "featured_image_caption" }}
+          <p class="font-sans text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">{{ index .Params "featured_image_caption" | markdownify }}</p>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+
+  <div class="sm:w-5/6 md:w-4/5 xl:w-1/2 mt-10 mr-auto ml-auto px-6 lg:px-16">
+    <article class="article">
+      {{ .Content }}
+    </article>
+  </div>  
+{{ end }}
