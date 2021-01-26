@@ -1,7 +1,7 @@
 baseURL: https://brycewray.com
 languageCode: en-us
 title: BryceWray.com
-theme: ofotiscss
+theme: ofotitwcss
 # theme choices are:
 # - ofotiscss (pure SCSS, no PostCSS or Tailwind CSS)
 # - ofotitwcss (PostCSS, Tailwind CSS, and a little "bespoke" CSS)
