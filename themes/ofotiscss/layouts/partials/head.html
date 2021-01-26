@@ -4,6 +4,7 @@
 {{ $fallbackImg := "typewriter-monochrome_2242164_6260x4374.jpg" }}
 
 <head>
+
   <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
   {{ hugo.Generator }}
   
@@ -71,13 +72,13 @@
 
   <link rel="preconnect" href="https://res.cloudinary.com" />
 
-  <!-- CSS from PostCSS -->
-  {{ $css := resources.Get "css/index.css" }}
-  {{ $css := $css | resources.PostCSS (dict "config" "postcss.config.js" "outputStyle" "compressed") | fingerprint }}
-
+  <!-- CSS/SCSS -->
+  {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
+  {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint }}
+  
   <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-  <noscript><style>.lazy {display: none !important;}</style></noscript>
+  <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
 
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" included-domains="brycewray.com,www.brycewray.com" defer></script>

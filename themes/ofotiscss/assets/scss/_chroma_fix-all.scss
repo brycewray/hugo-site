@@ -1,0 +1,61 @@
+pre,
+code {
+  font-family: $monospaced;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ccc;
+  background: none;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+
+ /* Code blocks */
+ pre[class*="language-"], 
+ pre.chroma {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #2d2d2d;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.highlight {
+  font-size: 0.8em; /* for Roboto Mono as compared to Public Sans */
+  & .chroma {
+    font-size: 1.35em; /* undoing the above when necessary */
+  }
+}
+
+article code {
+  font-size: 0.9em;
+  background-color: #ddd;
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+  }
+}
