@@ -5,7 +5,7 @@ subtitle: "More geeky hints for SSG fans"
 description: "Another collection of neat and/or nerdy items."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
-#lastmod: TBD
+lastmod: 2021-01-28T12:55:00-06:00
 #draft: false
 discussionId: "2021-01-gems-in-rough-2021-01"
 featured_image: "gemstones-collection-3203865_4116x2304.jpg"
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/flitsart-717386/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3203865">FlitsArt</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3203865">Pixabay</a></span>
 ---
 
-For those of you who haven't read the [first "Gems in the rough"](/posts/2020/12/gems-in-rough), initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
+For those of you who haven't read the [first](/posts/2020/12/gems-in-rough) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
 
 Well, looks like we're there, because I've already accumulated some more of this stuff to pass along. (Fortunately for you, I doubt seriously that future such instances will be quite this closely spaced. No promises, though.) So, without further ado&nbsp;.&nbsp;.&nbsp;.
 
