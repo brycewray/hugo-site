@@ -588,6 +588,14 @@ article {
   }
 }
 
+.footnote-sim {
+  font-size: 0.65em;
+  color: #0000ff;
+  @media (prefers-color-scheme: dark) {
+    color: #00aaff;
+  }
+}
+
 .footnotes {
   ol {
     padding-inline-start: 1.5rem;

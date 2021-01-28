@@ -336,6 +336,10 @@ blockquote {
   @apply font-sans;
 }
 
+.footnote-sim {
+  @apply text-xs text-blue-500 dark:text-blue-200;
+}
+
 .footnotes ol li, .footnotes ol li p {
   @apply text-sm leading-relaxed;
 }
