@@ -84,7 +84,7 @@ Oh, and remember what I said about struggling to figure out how to get images to
 
 > You have thousands of images and need to dynamically reference their paths.[^imageCount]
 
-[^imageCount]: No, I don't yet have thousands of images in this site,  but I already have 'waaay too many to handle via the tedious, "one-off"-ish Gatsby process, and the number will only grow.
+[^imageCount]: No, I don't yet have thousands of images in this site,  but I already have ’waaay too many to handle via the tedious, "one-off"-ish Gatsby process, and the number will only grow.
 
 "Edge case," my big, fat heinie. As if I were actually going to do an *individual* importation of *each image*, which is the [Gatsby way](https://www.gatsbyjs.org/docs/importing-assets-into-files/), rather than make calls from templates to automate the process from front matter, *which is the frickin'* ***SSG way!***
 
@@ -163,7 +163,7 @@ I had a few (mostly self-inflicted) difficulties getting them going but the resu
 
 In the case of Gatsby, I'd managed to get the "smart" typography and, usually, good code block formatting---but automated footnotes were glitchy and often nonfunctional (as I [previously explained](/posts/2019/07/why-staying-with-hugo)).
 
-And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is 'waaaaay easier and more stable.
+And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is ’waaaaay easier and more stable.
 
 ### SASSy stuff
 

@@ -32,7 +32,7 @@ I'm unclear as to when people got [the notion that _ya_ or _yea_ is how you spel
 
 ## Hating the platform doesn't require&nbsp;ALL-CAPS
 
-I make no bones about it: I am a dyed-in-the-wool Apple fan, and from 'way back in the eighties at that. (I would say, "Apple sheep,” but I think [this guy](https://www.youtube.com/channel/UCa962e5dqRMO1nUldwaaRMw) may have that term locked up.) Of course, many don't share my high regard for that company and its products, and they absolutely have a right to feel that way.
+I make no bones about it: I am a dyed-in-the-wool Apple fan, and from ’way back in the eighties at that. (I would say, "Apple sheep,” but I think [this guy](https://www.youtube.com/channel/UCa962e5dqRMO1nUldwaaRMw) may have that term locked up.) Of course, many don't share my high regard for that company and its products, and they absolutely have a right to feel that way.
 
 However, I don't get the web commenters who, usually with antipathy, refer to the Macintosh as the _MAC_ (or just _MAC_ in referring to the platform). All caps? No. Not ever. It's _Mac_. It was never an acronym for something.
 

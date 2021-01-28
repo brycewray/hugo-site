@@ -46,11 +46,11 @@ However, like the pimple on one's nose on the night of a big date, this particul
 
 [^slidersNote]: I'm no fan of image sliders for a variety of reasons, chiefly that I think they distract from your messaging more than they help it. But [t'ain't my call, McGee](https://www.phrases.org.uk/bulletin_board/61/messages/878.html). When I was a webmaster working in Marketing, I could influence such decisions; those days are behind me.
 
-To be specific, the text that overlay that first slide was shifted 'way too far to the right. It looked fine in the desktop versions of Chrome, Firefox, and even Edge. And it looked fine on iOS and Android. Only the damnable IE resisted.
+To be specific, the text that overlay that first slide was shifted ’way too far to the right. It looked fine in the desktop versions of Chrome, Firefox, and even Edge. And it looked fine on iOS and Android. Only the damnable IE resisted.
 
 I put the annoyance aside for that weekend, what with all the other pages I had to rebuild; but, on Monday morning as I flipped through the various pages once more in an effort to find stuff I'd missed in the transition, I remembered there was that IE annoyance to fix.
 
-Everything I did in CSS that made it look mildly acceptable on IE made it go bonkers on the *real* browsers (`<burn>`shots fired`</burn>`). After spending 'way too much time trying to dope it out, and with my regular tasks waiting impatiently for my attention, I decided to do that hated thing known as browser-specific CSS.[^HTML5Shiv] So I proceeded to create a little "ie.css" stylesheet and prepared to use IE conditional comments. Yep, those ugly things in the `<head>` section that only Internet Explorer sees, like:
+Everything I did in CSS that made it look mildly acceptable on IE made it go bonkers on the *real* browsers (`<burn>`shots fired`</burn>`). After spending ’way too much time trying to dope it out, and with my regular tasks waiting impatiently for my attention, I decided to do that hated thing known as browser-specific CSS.[^HTML5Shiv] So I proceeded to create a little "ie.css" stylesheet and prepared to use IE conditional comments. Yep, those ugly things in the `<head>` section that only Internet Explorer sees, like:
 
 [^HTML5Shiv]: And, no, I don't know whether [HTML5 Shiv](https://github.com/aFarkas/html5shiv) would've fixed it; I didn't try it.
 
