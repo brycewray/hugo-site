@@ -22,7 +22,7 @@ The last few weeks of my life have been somewhat tumultuous compared to my usual
 
 [^StopNow]: The obvious rejoinder is reminiscent of the "Can we be funny? / Why start now?" joke from the [first post-9/11 *Saturday Night Live*](https://www.indiewire.com/2016/09/snl-letterman-jon-stewart-911-late-show-daily-show-1201725596/). Point taken.
 
-What follows, then, is loosely based on the "Scattershooting" motif. For now, let's call it "Mixed nuts," not only because of its intentionally miscellaneous nature but also, well, because it's coming from me. 'Nuff said. If I have a warm, fuzzy feeling about how it ends up *and* you readers don't emit howls of protest (all *[infinitesimally small number]* of you, of course), there may be more of it down the line.[^If] That's why I'm putting a date to it. There's no promise or threat that it'll be a monthly thing but, if I do it again, that'll be how I keep track of it.
+What follows, then, is loosely based on the "Scattershooting" motif. For now, let's call it "Mixed nuts," not only because of its intentionally miscellaneous nature but also, well, because it's coming from me. ’Nuff said. If I have a warm, fuzzy feeling about how it ends up *and* you readers don't emit howls of protest (all *[infinitesimally small number]* of you, of course), there may be more of it down the line.[^If] That's why I'm putting a date to it. There's no promise or threat that it'll be a monthly thing but, if I do it again, that'll be how I keep track of it.
 
 [^If]: That's assuming I keep the site going, which for a variety of reasons is in doubt as I write this.
 

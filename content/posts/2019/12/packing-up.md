@@ -108,7 +108,7 @@ This also dovetailed with my increasing realization, over the months of working 
 
 [^CRA]: Same is true for Create React App, for that matter, but that's a completely different subject.
 
-So, I began to wonder, what if I could learn to use Eleventy with a bundler? Eleventy by itself is pretty cool---but, with a bundler, too&nbsp;.&nbsp;.&nbsp;.?
+So, I began to wonder, what if I could learn to use Eleventy with a bundler? Eleventy by itself is pretty cool---but, with a bundler, too&nbsp;.&nbsp;.&nbsp;.&nbsp;?
 
 ## A leg up
 

@@ -18,7 +18,7 @@ When I [was](/posts/2019/07/why-staying-with-hugo) [railing](/posts/2019/07/less
 
 I won't take you back through the whole rant, especially since I linked above to the extended-length posts that contained its component parts, but here it is in TL;DR form:
 
-> "Ah been buildin' websites since the days of Abe Lincoln, by jingo, and Ah'm used to puttin' images in an `/images` folder at the top level and accessin' them from there from any dang web page Ah build. If Ah cain't do that no more, this Gatsby whipper-snapper can kiss mah grits. *[Now pardon me, sonny, while Ah go spit my tobacky juice.]*"
+> "Ah been buildin’ websites since the days of Abe Lincoln, by jingo, and Ah'm used to puttin’ images in an `/images` folder at the top level and accessin’ them from there from any dang web page Ah build. If Ah cain't do that no more, this Gatsby whipper-snapper can kiss mah grits. *[Now pardon me, sonny, while Ah go spit my tobacky juice.]*"
 
 .&nbsp;.&nbsp;. so you can well imagine the shock my *hubris* took when I learned that an insistence on where images should go **isn't** just a Gatsby requirement. It's even a [Hugo](https://gohugo.io) requirement, not to mention a requirement for the Gatsby near-beer, [Gridsome](https://gridsome.org). It all depends on how you want the site to perform where those images are concerned.
 

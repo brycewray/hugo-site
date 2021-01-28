@@ -26,7 +26,7 @@ We are free, free at last, from the preposterous monstrosity of cable television
 
 Hal-lay-loo-yah.
 
-As of January 13, all our television comes entirely over the 'Net, via [YouTube TV](https://tv.youtube.com), [FrndlyTV](https://www.frndlytv.com)[^TWC], two small [Roku](https://www.roku.com) devices[^ExpressPlus], and a really fast Internet connection.
+As of January 13, all our television comes entirely over the ’Net, via [YouTube TV](https://tv.youtube.com), [FrndlyTV](https://www.frndlytv.com)[^TWC], two small [Roku](https://www.roku.com) devices[^ExpressPlus], and a really fast Internet connection.
 
 [^TWC]: FrndlyTV is just $8 a month for the plan we chose. It has only a small number of channels. I wanted it because it was the cheapest way to get the Weather Channel, which is a comfort for us old farts living in Tornado Alley.
 
@@ -80,7 +80,7 @@ This was the birth of the cable TV industry.
 
 By the time I was in my twenties, satellite-delivered programming was becoming available on cable systems, which were popping up even in little towns like mine where antennae worked just fine. I still remember when my home town first got cable TV, around 1980 or so. My parents’ initial cable subscription included: the local channels (*i.e.*, the nearest network affiliates); a couple of pay channels (which you could hear but not see if you didn't subscribe to them, since the primitive system couldn't fully shut out all the signal); the "[superstations](https://en.wikipedia.org/wiki/Superstation)" [WTBS](https://en.wikipedia.org/wiki/TBS_(American_TV_channel)) and [WGN](https://en.wikipedia.org/wiki/WGN_America); a couple of religion-oriented channels; and a short-lived movie channel which aired only two or three hours of prime-time programming per night.
 
-I didn't see, much less subscribe to, anything like a "real" cable system---i.e., one that was overwhelmingly satellite channels---until a couple of years later, in another town nearby. Since I then was a radio announcer who often checked the Associated Press teletype machine at work, I was fascinated by one channel in particular: a live text feed from the AP. Waking early each day for my morning-drive "air shift," I'd sit in the living room of my apartment, quickly eating breakfast off a TV tray while using this feed to get an advance look at what I'd later be yanking off the radio station teletype machine.
+I didn't see, much less subscribe to, anything like a "real" cable system---*i.e.*, one that was overwhelmingly satellite channels---until a couple of years later, in another town nearby. Since I then was a radio announcer who often checked the Associated Press teletype machine at work, I was fascinated by one channel in particular: a live text feed from the AP. Waking early each day for my morning-drive "air shift," I'd sit in the living room of my apartment, quickly eating breakfast off a TV tray while using this feed to get an advance look at what I'd later be yanking off the radio station teletype machine.
 
 That cable system also gave me my first views of the [Weather Channel](https://weather.com), [CNN](https://cnn.com), and [ESPN](https://espn.com)---all very new at the time.
 
@@ -92,7 +92,7 @@ In the mid-2000s, fiber connectivity first reached our neighborhood. We were stu
 
 I thought that might be the zenith of my television viewing. It could, I figured, be the way I'd get my television channels for the rest of my life. How could it get better?
 
-Oh, sure, I read and heard of so-called [IPTV](https://en.wikipedia.org/wiki/Internet_Protocol_television), among other interesting video-delivery technologies in the works; so I knew of more possibilities that loomed. Still, in a time when a really fast home Internet connection was measured in the tens of megabits, I couldn't grasp how in my lifetime They<sup style="font-size: 0.5em; vertical-align: super;">&trade;</sup> would figure out a way to deliver all this new-fangled HDTV content to us via anything other than Same Old Cable, so to speak. Surely, I figured, I won't live to see strictly Internet-delivered programming become either technically practical or financially sensible for the average home.
+Oh, sure, I read and heard of so-called [IPTV](https://en.wikipedia.org/wiki/Internet_Protocol_television), among other interesting video-delivery technologies in the works; so I knew of more possibilities that loomed. Still, in a time when a really fast home Internet connection was measured in the tens of megabits, I couldn't grasp how in my lifetime They<sup>&trade;</sup> would figure out a way to deliver all this new-fangled HDTV content to us via anything other than Same Old Cable, so to speak. Surely, I figured, I won't live to see strictly Internet-delivered programming become either technically practical or financially sensible for the average home.
 
 Well, sir, so much for *my* powers of clairvoyance on that.
 
@@ -106,6 +106,6 @@ Still awake?
 
 Well, if so, thank you for letting me ramble on about both my new status as a streamer and the ancient times, TV-wise (and otherwise), from which I sprang.
 
-I don't know how I'll be receiving TV channels, or whatever we'll be watching, ten or fifteen years from now. I do know, however, that things have changed immensely in the sixty-plus years since I first watched a flickering Philco at a simple little house in northeast Texas and marveled at what I was seeing and hearing. Perhaps my little story has made clear to you young 'uns just *how* vast that change has been in this one old guy's lifetime.
+I don't know how I'll be receiving TV channels, or whatever we'll be watching, ten or fifteen years from now. I do know, however, that things have changed immensely in the sixty-plus years since I first watched a flickering Philco at a simple little house in northeast Texas and marveled at what I was seeing and hearing. Perhaps my little story has made clear to you young ’uns just *how* vast that change has been in this one old guy's lifetime.
 
 As always: I love living in the future.
