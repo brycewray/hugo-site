@@ -32,7 +32,7 @@ Let me begin by giving you a brief intro to variable fonts.[^1]
 
 First, the web fonts you've typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let's say your site is using a non-system typeface for the body text, and a site page includes the following text and formatting:
 
-<p class="text-4xl text-center"><strong><em>Hello</em></strong>, how <em>are</em> <strong>you</strong>?</p>
+<p class="ctr" style="font-size: 2rem;"><strong><em>Hello</em></strong>, how <em>are</em> <strong>you</strong>?</p>
 
 That would require the visitor's browser to access *four* font files: one for the boldfaced regular "you"; another for the non-bold regular "how" and question mark; a third for the boldfaced/italicized "Hello"; and a fourth for the non-boldfaced italicized "are."
 
