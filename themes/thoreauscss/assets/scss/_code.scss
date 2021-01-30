@@ -1,0 +1,101 @@
+.chroma {
+	background-color: $code-bkgd-light-mode;
+
+	code.language-html, 
+	code.language-css,
+	code.language-md,
+	code.language-cmd,
+	code.language-bash,
+	code.language-text,
+	code.language-js, 
+	span.o,
+	span.nx  {
+		color: black;
+	}
+	span.c {
+		color: $code-color;
+	}
+
+	span.p, 
+	span.s1,
+	span.s2,
+	span.nt {
+		color: $code-color-tan;
+	}
+
+	span.gs,
+	span.gh,
+	span.ge {
+		color: $blueFirst;
+	}
+
+	span.gs {
+		font-weight: bold;
+	}
+
+	span.ge {
+		font-style: italic;
+	}
+
+}
+
+pre,
+code {
+  font-family: $monospaced;
+}
+
+code {
+  background-color: $grey-3;
+  border-radius: 3px;
+  color: $code-color;
+  font-size: 85%;
+}
+
+pre {
+  margin: 0;
+	margin: 0;
+	padding: 1rem;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+}
+
+/*
+pre code span {
+	color: $code-color-dark-mode !important;
+}
+*/
+
+.highlight {
+  background-color: transparent;
+  border-radius: 3px;
+  line-height: 1.4;
+  margin: 0 0 0.5rem;
+  padding: 0;
+
+  pre {
+    margin-bottom: 0;
+    overflow-x: auto;
+  }
+
+  .lineno {
+    color: $default-tint;
+    display: inline-block; // Ensures the null space also isn't selectable
+    padding: 0 .75rem 0 .25rem;
+    // Make sure numbers aren't selectable
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    color: #fff;
+    background: $code-bkgd-dark-mode;
+  }
+}

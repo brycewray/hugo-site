@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+  <div class="billboard-div">
+    <div class="billboard-title-block">
+      <h1 class="billboard-title-text">{{ .Title | markdownify}}</h1>
+      {{- if .Params.Subtitle }}<h2 class="billboard-subtitle-text">{{ .Params.Subtitle | markdownify }}</h2>{{- end }}
+      {{- if .Params.Description }}<p class="billboard-description-text">{{ .Params.Description }}</p>{{- end }}
+      <p class="billboard-p-text"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span class="pokey">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}</p>
+    </div>
+  </div>
+
+  <div class="container-narrower">
+    <article class="article">
+      {{ .Content }}
+    </article>
+  </div>
+
+  {{ partial "fastcomments.html" . }}
+
+  {{ if or .PrevPage .NextPage }}
+    <div class="bg-dark sansSerif">
+      <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
+			<p class="ctr prevnextP">
+				{{ with .NextInSection }}
+					<strong>Next</strong>:
+					<a class="next" href="{{.RelPermalink}}"> {{.Title}}</a>
+					{{ end }}
+			</p>
+			<p class="ctr prevnextP">
+				{{ with .PrevInSection }}
+					<strong>Previous</strong>:
+					<a class="previous" href="{{.RelPermalink}}"> {{.Title}}</a>
+				{{ end }}
+			</p>
+    </div>
+  {{ end }}
+{{ end }}
