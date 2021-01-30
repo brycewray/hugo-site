@@ -3,10 +3,10 @@ layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "A thousand words, indeed"
 subtitle: "Feelings about look-and-feel"
-description: "How and why “hero images” have returned to this site."
+description: "How and why “hero images” have returned to this site."
 author: Bryce Wray
 date: 2020-05-22T18:00:00-05:00
-lastmod: 2020-12-13T12:35:00-06:00
+lastmod: 2021-01-30T17:35:00-06:00
 discussionId: "2020-05-thousand-words-indeed"
 featured_image: colorful-flower-field-250016_4984x3607.jpg
 featured_image_width: 4984
@@ -15,6 +15,8 @@ featured_image_alt: "Colorful field of flowers under a beautiful blue sky"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/DeltaWorks-37465/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Kohji Asakawa</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Pixabay</a>
 ---
+
+{{% yellowBox %}}**Update, 2021-01-30**: Nearly a year after the [original post](/posts/2020/02/so-much-for-heroes) about removing the hero images, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh).{{% /yellowBox %}}
 
 The phrase has been around [for about a century](https://grammarist.com/proverb/a-picture-is-worth-a-thousand-words/): "A picture is worth a thousand words."
 
