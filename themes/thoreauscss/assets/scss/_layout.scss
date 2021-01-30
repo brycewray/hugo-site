@@ -13,6 +13,10 @@
   }
 }
 
+bold, strong {
+  font-weight: 625;
+}
+
 ul li li {
   list-style-type: circle;
 }
@@ -315,12 +319,8 @@ img.postsFeatImg {
   // width: 90%;
   margin: 0 auto;
   &-home {
-    display: -ms-grid;
-    display: grid;
     margin: 0 auto;
     width: 90%;
-    grid-gap: 0.25rem;
-    grid-template-columns: 1fr;
     @media screen and (min-width: 769px) {
       width: 75%;
       grid-template-columns: 60% 1fr;
@@ -488,19 +488,54 @@ img.homeHeroImage {
   width: 100%;
 }
 
+.homeOpen {
+  text-align: center;
+  @media screen and (min-width: 769px) {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: 1921px) {
+    font-size: 2.5rem;
+  }
+  border-bottom: 3px solid $darkblue;
+  @media screen and (prefers-color-scheme: dark) {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.homePosts {
+  @media screen and (min-width: 1025px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+}
+
+.homeLatest {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-weight: 825;
+  font-size: 2rem;
+  @media screen and (min-width: 1025px) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 1921px) {
+    font-size: 4rem;
+  }
+}
+
 .homePostTitle {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
+  padding-top: 0.5rem;
 }
 
 .homePostSubtitle {
-  font-family: $sans-serif;
+  font-size: 1.25rem;
   margin-top: 0;
   margin-bottom: 0.25rem;
-  font-weight: bold;
+  font-weight: 625;
 }
 
 .homePostDates {
-  font-family: $sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
