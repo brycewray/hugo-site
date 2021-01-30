@@ -1,0 +1,492 @@
+.italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+  font-variation-settings: 'slnt' -8;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
+     so we override that below with the @-moz-document url-prefix media query for Firefox */
+  font-style: oblique 8deg;
+  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
+}
+
+@-moz-document url-prefix() {
+  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+    /* font-variation-settings: normal; */
+    font-style: normal;
+  }
+}
+
+b, strong {
+  font-weight: 625;
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+ul li li li {
+  list-style-type: square;
+}
+
+#content {
+  @apply pt-12;
+}
+
+html, body {
+  @apply dark:bg-black;
+}
+
+body {
+  @apply dark:text-gray-200;
+  font-feature-settings: "liga" 1;
+}
+
+p, li {
+  /* for handling Markdown-created <p> and <li> */
+  @apply mb-3 text-lg;
+}
+
+.navWhite, .navWhite:visited {
+  @apply text-white;
+}
+
+.navWhite:focus, .navWhite:active {
+  @apply text-gray-400;
+}
+
+.text-blue-light {
+  @apply text-blue-500;
+}
+
+.text-blue-dark { /* for dark mode */
+  @apply text-blue-200;
+}
+
+.gradient-titles {
+  @apply bg-gradient-to-b from-blue-700 to-black;
+}
+
+.ctr {
+  @apply text-center;
+}
+
+.legal {
+  @apply text-xs;
+}
+
+a, a:focus, a:hover, a:active {
+  @apply no-underline border-b border-solid border-blue-500;
+}
+
+span.caption {
+  text-shadow: none; /* keeps link borders from looking "dirty" */
+}
+
+span.caption a {
+  @apply text-blue-100 border-blue-100;
+}
+
+span.caption a:focus, span.caption a:hover, span caption a:active {
+  @apply text-gray-200 border-blue-100;
+}
+
+a {
+  @apply text-blue-500 dark:text-blue-200 dark:border-blue-200;
+}
+
+a:focus, a:hover, a:active {
+  @apply text-blue-800 border-blue-500;
+}
+
+a:hover {
+  @apply dark:text-blue-300;
+}
+
+sup a, a.previous, a.next, .footnote-return {
+  @apply border-b-0;
+}
+
+#nav-toggle:checked + #navMenu {
+  @apply block;
+}
+
+a.navborderless {
+  @apply border-b-0;
+}
+
+.dateInfo {
+  @apply text-gray-700 dark:text-gray-400;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  @apply leading-tight tracking-tight;
+}
+
+h1, .h1 {
+  @apply text-4xl mb-4;
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
+}
+
+h2, .h2 {
+  @apply text-4xl;
+}
+
+h3, .h3 {
+  @apply text-3xl;
+}
+
+h4, .h4 {
+  @apply text-2xl;
+}
+
+h5, .h5, h6, .h6 {
+  @apply text-lg;
+}
+
+.height-hero {
+  height: 45vh;
+  max-height: 45vh;
+  overflow: hidden;
+}
+
+.height-post {
+  height: 35vh;
+  max-height: 35vh;
+}
+
+.imgCover {
+  @apply object-cover object-center h-full w-full;
+}
+
+.background-hero-image-div {
+  @apply relative overflow-hidden w-full bg-black;
+  /* Have to allow for mobile browsers' own "chrome"; can't go by Inspector simulations of smaller breakpoints */
+  height: 80vh;
+  max-height: 80vh;
+}
+
+
+.background-hero-title-block-fit {
+  @apply block w-full absolute bottom-0 px-4 pt-3 pb-6 bg-gradient-to-t from-black;
+}
+
+.background-hero-title-text {
+  text-shadow: 4px 4px 2px #000;
+}
+
+@media screen and (min-width: 768px) {
+  .background-hero-title-block-fit {
+    @apply px-12;
+  }
+
+  .background-hero-image-div {
+    height: 85vh;
+    max-height: 85vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .background-hero-title-block-fit {
+    @apply px-16;
+  }
+
+  .background-hero-image-div {
+    height: 95vh;
+    max-height: 95vh;
+  }
+}
+
+
+.text-nowrap, .text-nobrk {
+  @apply whitespace-nowrap;
+}
+
+article h1, article h2, article h3, article h4 {
+  @apply tracking-tight mt-8 mb-6;
+}
+
+article p, li {
+  @apply text-lg mt-6 mb-6 leading-relaxed;
+}
+
+article img.containedImage, .home-colOne img.containedImage {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  /* latter two for no-jank in Chrome and Firefox */
+}
+
+@media screen and (min-width: 769px) {
+  .height-hero {
+    height: 70vh;
+    max-height: 70vh;
+  }
+
+  .height-post {
+    height: 40vh;
+    max-height: 40vh;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  article p, li {
+    @apply text-xl leading-relaxed;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  article p, li {
+    @apply text-2xl leading-relaxed;
+  }
+}
+
+
+.yellowBox {
+  @apply bg-yellow-200 border border-gray-900 border-solid mx-auto my-8 w-full p-8 dark:bg-gray-800 dark:border-gray-500;
+}
+
+.yellowbox p { 
+  font-weight: 825;
+  @apply w-full p-2 m-0;
+}
+
+ul, ol {
+  @apply pl-8;
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+.twitter-tweet {
+  @apply mt-4 mx-auto mb-0;
+}
+
+table.leagues {
+  @apply w-11/12 mt-4 mx-auto mb-0 border-0 border-collapse;
+}
+
+table.leagues td.col {
+  @apply w-1/2;
+}
+
+@media (min-width: 900px) {
+  table.leagues {
+    @apply w-3/5;
+  }
+  table.noborders {
+    @apply w-11/12;
+  }
+}
+
+table.noborders {
+  @apply w-full border-0 border-collapse mt-6 mx-auto mb-4;
+}
+
+table.noborders td {
+  @apply text-gray-800 text-left align-middle py-1 pr-0 pl-2;
+  /* text-align: left !important; */
+}
+
+table.noborders td img {
+  @apply inline-block align-middle m-0;
+}
+
+table.noborders tr {
+  @apply bg-blue-100;
+}
+
+table.noborders tr:nth-child(even) {
+  @apply bg-gray-200;
+}
+
+table.noborders thead tr {
+  @apply bg-blue-700;
+}
+  
+table.noborders thead td {
+  @apply text-white font-bold;
+}
+  
+table.noborders td.td70 {
+  width: 70%;
+}
+table.noborders td.td70 img {
+  @apply block w-1/2 h-auto;
+  max-width: 50%;
+}
+
+table.noborders td.td30 {
+  width: 30%;
+}
+
+blockquote {
+  @apply px-6 text-gray-700 dark:text-gray-400;
+}
+
+/* start, footnotes */
+
+.footnotes {
+  @apply font-sans;
+}
+
+.footnote-sim {
+  @apply text-xs text-blue-500 dark:text-blue-200;
+}
+
+.footnotes ol li, .footnotes ol li p {
+  @apply text-sm leading-relaxed;
+}
+
+.footnote-ref {
+  @apply text-xs;
+}
+
+.footnote-ref a {
+  @apply border-transparent;
+}
+
+.footnotes-sep {
+  @apply mb-3;
+}
+
+.footnotes-list {
+  @apply list-decimal pl-6;
+}
+
+.footnote-item, .footnote-item p {
+  @apply text-sm tracking-normal;
+}
+
+.footnote-item pre, .footnote-item code {
+  @apply text-xs;
+}
+
+/* == end, footnotes */
+
+.aspect-16x9 {
+  padding-bottom: 56.25%;
+}
+
+hr {
+  @apply border-solid border-gray-900 dark:border-gray-100;
+}
+
+footer {
+  @apply font-sans;
+}
+
+.lazypicturecaption {
+  @apply text-sm p-0 mt-2 leading-snug text-center;
+}
+
+.YTembed { /* container for iframe */
+  @apply relative pt-8 h-0 overflow-hidden;
+  padding-bottom: 56.25%;
+  & iframe, & object, & embed {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+}
+
+.home-colOne p {
+  @apply leading-8 mb-4;
+}
+
+.home-colOne img {
+  @apply my-4;
+}
+
+/* START == for old comments from TalkYard */
+
+.container-oldComments {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 0;
+  width: 75%;
+  & h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.75rem;
+    letter-spacing: -0.025rem;
+  }
+  & p.commentDisclaimer {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  & p.commentName {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  & .commentDate {
+    font-size: 0.85em;
+  }
+  & p.comment {
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: normal;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container-oldComments {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container-oldComments {
+    width: 33%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .container-oldComments {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+}
+
+/* END ==== for old comments from TalkYard */
+
+
+/* START == for comments from FastComments */
+.container-comments {
+  @apply my-0 mx-auto text-sm w-5/6;
+  max-width: 720px !important;
+  @media screen and (min-width: 900px) {
+    @apply w-2/5;
+  }
+}
+/* END ==== for comments from FastComments */
+
+/* from vanilla-lazyload */
+.lazy {
+  @apply opacity-0;
+}
+
+.lazy:not(.initial) {
+  @apply transition-opacity duration-500 ease-in-out;
+  /* transition: opacity 0.4s; */
+}
+
+.lazy.initial,
+.lazy.loaded,
+.lazy.error {
+  @apply opacity-100;
+}
+
+.lazy:not([src]) {
+  @apply invisible;
+}
+/* end of CSS from vanilla-lazyload */
