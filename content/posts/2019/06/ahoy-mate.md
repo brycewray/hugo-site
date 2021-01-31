@@ -6,7 +6,7 @@ subtitle: "Considering MailMate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
-lastmod: 2020-11-21T17:25:00-06:00
+lastmod: 2021-01-31T09:15:00-06:00
 discussionId: "2019-06-ahoy-mate"
 featured_image: MailMate_screen_cap_1619x720.jpg
 featured_image_width: 1619
@@ -42,6 +42,10 @@ My [last post](/posts/2019/05/the-holy-mail) closed with:
 > Do I ever look at other *[email]* apps any more? Oh, sure. It's what I sometimes call "the geek's prerogative."
 
 And that continues, as I have become interested in [MailMate](https://freron.com). This macOS-only, [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)-only app is a creation of Benny Kjær Nielsen, a Danish indie developer and holder of a doctorate in computer science.
+
+{{< imgc src="MailMate_screen_cap_1619x720.jpg" alt="Screen capture of the MailMate app" width="1619" height="720" >}}
+
+{{% lazypictCapt %}}The main MailMate window, with its Latin-displaying &ldquo;distortion mode&rdquo; engaged for privacy&rsquo;s sake.{{% /lazypictCapt %}}
 
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much---and that's fine with the good doctor, not to mention the app's many adherents.
 
@@ -107,11 +111,11 @@ If you've got time and you're feeling a little adventurous, MailMate's [hidden p
 
 You can customize various aspects of the display, such as the font size and leading of a column listing emails---although you can't add any text preview to the columnar view, as is commonly available in most other mail clients. It's something Dr. Nielsen [mentioned](https://blog.freron.com/2017/personalized_subscriber_emails/) as a "I'd-like-to-do-this-but" item over two years ago, and there it sits, still undone; but it's a minor nit.
 
-## Still thinkin'&nbsp;.&nbsp;.&nbsp;.
+## Still thinkin’&nbsp;.&nbsp;.&nbsp;.
 
 I began the 30-day trial of MailMate prior to Apple's WWDC 2019, curious as to whether there'd be any big changes in Mail for what we now know will be macOS Catalina and, if so, whether they'd be enough to keep me from continuing to consider MailMate. After all, Apple Mail is included with macOS while, at this writing, MailMate costs&nbsp;$50.
 
-However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin'. I'll keep you advised as to how I&nbsp;land.
+However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin’. I'll keep you advised as to how I&nbsp;land.
 
 ----
 

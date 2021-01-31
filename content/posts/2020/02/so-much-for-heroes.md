@@ -6,7 +6,7 @@ subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-lastmod: 2020-05-20T20:50:00-05:00
+lastmod: 2021-01-31T09:40:00-06:00
 discussionId: "2020-02-so-much-for-heroes"
 featured_image: paint-splatter-2224800_3648x2736.jpg
 featured_image_width: 3648
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/evondue-4996403/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">evondue</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">Pixabay</a></span>
 ---
 
-{{% yellowBox %}}**Update, 2020-05-17**: As you can plainly see above, I decided later to [reinstate the hero images](/posts/2020/05/thousand-words-indeed). Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.{{% /yellowBox %}}
+{{% yellowBox %}}**Update, 2021-01-30**: A few months later, I [reinstated the hero images](/posts/2020/05/thousand-words-indeed). Nearly a year after the original post, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. All that zigging and zagging notwithstanding, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.{{% /yellowBox %}}
 
 Who needs heroes? Not this site, I've decided.
 
