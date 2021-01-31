@@ -72,12 +72,11 @@
   <!-- <link rel="preconnect" href="https://res.cloudinary.com" /> -->
   <!-- No longer need the above for hero images -->
 
-  <!-- CSS from PostCSS -->
-  {{ $css := resources.Get "css/index.css" }}
-  {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") | fingerprint }}
-
+  <!-- CSS -->
   <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+  {{ with resources.Get "css/index.css" | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
   <noscript><style>.lazy {display: none !important;}</style></noscript>
 
   <!-- Fathom - beautiful, simple website analytics -->
