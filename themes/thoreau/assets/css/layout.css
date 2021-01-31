@@ -206,6 +206,18 @@ article h1, article h2, article h3, article h4 {
   @apply tracking-tight mt-8 mb-6;
 }
 
+article h2 {
+  @apply 2xl:text-5xl;
+}
+
+article h3 {
+  @apply 2xl:text-4xl;
+}
+
+article h4, article h5, article h6 {
+  @apply 2xl:text-3xl;
+}
+
 article p, li {
   @apply text-lg mt-6 mb-6 leading-relaxed;
 }
