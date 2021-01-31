@@ -25,6 +25,13 @@ ul li li li {
   list-style-type: square;
 }
 
+.post-line {
+  border-top: 0.2rem solid $darkblue;
+  display: block;
+  margin: 0 auto 3rem;
+  width: 6rem;
+}
+
 .postsHead {
   padding-top: 1rem;
   font-size: 2.5rem;
