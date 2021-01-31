@@ -353,6 +353,12 @@ img.postsFeatImg {
 
     .twitter-tweet {
       margin: 1rem auto 0 auto;
+      padding: 0.25rem;
+      border-radius: 12px;
+      border: 2px solid #000;
+      @media screen and (prefers-color-scheme: dark) {
+        border: 2px solid #fff;
+      }
     }
 
     @media (min-width: 900px) {
