@@ -13,7 +13,7 @@
 {{ $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" }}
 
 {{ $divClass := "relative mb-2 p-4 bg-white border-2 border-gray-400 rounded md:rounded-md lg:rounded-lg xl:rounded-xl" }}
-{{ $imgClass := "containedImage lazy" }}
+{{ $imgClass := "containedImage" }}
 {{ $nscClass := "containedImage" }}
 {{ $dataSzes := "(min-width: 1024px) 25vw, 100vw" }}
 
@@ -21,8 +21,8 @@
   <a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
   <img
     class='{{ $imgClass }}' 
-    data-src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $imageUrl }}' 
-    data-srcset='
+    src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $imageUrl }}' 
+    srcset='
     {{ if ge $width 300 }}{{ $cloudiBase }}f_auto,q_auto:eco,w_300,x_0,z_1/{{ $imageUrl }} 300w{{ end }}{{ if ge $width 450 }}, 
     {{ $cloudiBase }}f_auto,q_auto:eco,w_450,x_0,z_1/{{ $imageUrl }} 450w{{ end }}{{ if ge $width 600 }}, 
     {{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $imageUrl }} 600w{{ end }}{{ if ge $width 750 }}, 
@@ -32,7 +32,7 @@
     {{ $cloudiBase }}f_auto,q_auto:eco,w_1200,x_0,z_1/{{ $imageUrl }} 1200w{{ end }}{{ if ge $width 1350 }}, 
     {{ $cloudiBase }}f_auto,q_auto:eco,w_1350,x_0,z_1/{{ $imageUrl }} 1350w{{ end }}{{ if ge $width 1500 }}, 
     {{ $cloudiBase }}f_auto,q_auto:eco,w_1500,x_0,z_1/{{ $imageUrl }} 1500w{{ end }}' alt='{{ $alt }}
-    ' width='{{ $width }}' height='{{ $height }}' sizes="{{ $dataSzes }}"
+    ' width='{{ $width }}' height='{{ $height }}' sizes='{{ $dataSzes }}' loading='lazy'
   /></a>
   <noscript>
     <a href="{{ $twitterUrl }}" target="_blank" rel="noopener"></a><img
