@@ -5,8 +5,9 @@
     {{ .Content }}
   </div>
   <div class="homePosts">
+    <div class="post-line"></div>
     <h2 class="homeLatest">Most recent posts</h2>
-    {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
+    {{ range first 7 (where .Site.RegularPages "Section" "posts") }}	
       <div>
         <h2 class="h4 homePostTitle"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="homePostSubtitle">{{ .Params.Subtitle | markdownify }}</em></p>

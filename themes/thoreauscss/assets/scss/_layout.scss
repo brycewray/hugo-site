@@ -27,9 +27,12 @@ ul li li li {
 
 .post-line {
   border-top: 0.2rem solid $darkblue;
+  @media screen and (prefers-color-scheme: dark) {
+    border-color: #fff;
+  }
   display: block;
-  margin: 0 auto 3rem;
-  width: 6rem;
+  margin: 0 auto 2rem;
+  width: 15rem;
 }
 
 .postsHead {
@@ -508,10 +511,6 @@ img.homeHeroImage {
   }
   @media screen and (min-width: 1921px) {
     font-size: 2.5rem;
-  }
-  border-bottom: 3px solid $darkblue;
-  @media screen and (prefers-color-scheme: dark) {
-    border-bottom: 1px solid #fff;
   }
 }
 
