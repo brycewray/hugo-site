@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="px-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
-    <h1 class="text-center tracking-tight pt-4 2xl:mt-6 2xl:mb-8 md:text-4xl 2xl:text-5xl">Posts</h1>
+    <h1 class="text-center tracking-tight pt-4 2xl:mt-6 2xl:mb-8 md:text-5xl 2xl:text-7xl">Posts</h1>
     <div class="post-line"></div>
     <div>
 
@@ -83,19 +83,18 @@
 			{{ range $paginator.Pages }}
       <div>          
         <h2 class="text-xl mb-1 leading-tight tracking-tight">
-            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
-            <span class="text-base tracking-tight">{{ .Params.Subtitle }}</span>
-          </h2>
-          <p class="text-xs dateInfo" style="margin-top: 0;">
-            Published: {{ .PublishDate.Format "January 2, 2006" }}
-            {{- if ne .PublishDate .Lastmod }}
-            <br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}
-            {{- end }}
-          </p>
-					<p class="text-sm mt-2 mb-10">
-						{{ .Description }}
-					</p>
-				</div>
+          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a><br />
+          <span class="text-base tracking-tight">{{ .Params.Subtitle }}</span>
+        </h2>
+        <p class="text-xs dateInfo mt-0"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
+          {{- if ne .PublishDate .Lastmod }}
+          <br />Last modified {{ .Lastmod.Format "January 2, 2006" }}
+          {{- end }}
+        </p>
+        <p class="text-sm mt-2 mb-10">
+          {{ .Description }}
+        </p>
+      </div>
       {{ end }}
       
       <hr class="mt-6" />
