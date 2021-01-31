@@ -4,7 +4,7 @@ subtitle: "Thirty-five years a Mac lover"
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
-lastmod: 2020-08-10T20:15:00-05:00
+lastmod: 2021-01-31T09:25:00-06:00
 discussionId: "2019-07-independence"
 featured_image: 1984-07-11_01_retouched_1280x720.jpg
 featured_image_width: 1280
@@ -18,9 +18,7 @@ This most recent Fourth of July was the 243rd anniversary of the *signing* of th
 
 It also was the thirty-fifth anniversary of my first encounter with a Mac.
 
-<br />
-<hr />
-<br />
+---
 
 It was the night of July 4, 1984.
 
@@ -69,6 +67,10 @@ I knew I had to have a Mac.
 ## Hints of a future
 
 In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local [ComputerLand](https://en.wikipedia.org/wiki/ComputerLand) and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
+
+{{< imgc src="1984-07-11_01_retouched_1280x720.jpg" alt="Bryce Wray, in 1984, unwrapping his new Macintosh computer" width="1280" width="720" >}}
+
+{{% lazypictCapt %}}July 11, 1984: A much younger and skinnier me eagerly unwraps my new "Skinny Mac." (Photo&nbsp;by my overly tolerant&nbsp;spouse.){{% /lazypictCapt %}}
 
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 
