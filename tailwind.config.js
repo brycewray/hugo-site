@@ -4,6 +4,7 @@ module.exports = {
   purge: {
     content: [
       './themes/ofotitwcss/layouts/**/*.html',
+      './themes/thoreautw/layouts/**/*.html',
     ],
   },
   darkMode: 'media',
