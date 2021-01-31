@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [
     require('postcss-import')({
-      path: ['themes/ofotitwcss/assets/css']
+      path: ['themes/thoreau/assets/css']
     }),
     require('tailwindcss'),
     require('postcss-preset-env')({ stage: 1 }),
