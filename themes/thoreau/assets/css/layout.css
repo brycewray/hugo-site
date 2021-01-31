@@ -378,7 +378,7 @@ footer {
   @apply font-sans;
 }
 
-.lazypicturecaption {
+.imgcCaption {
   @apply text-sm p-0 mt-2 leading-snug text-center;
 }
 
