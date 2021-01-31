@@ -430,22 +430,22 @@ footer {
     letter-spacing: -0.025rem;
   }
   & p.commentDisclaimer {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-align: center;
   }
   & p.commentName {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     margin-top: 1rem;
     margin-bottom: 0;
   }
   & .commentDate {
-    font-size: 0.85em;
+    font-size: 0.75em;
   }
   & p.comment {
     margin-top: 0;
     margin-bottom: 0;
     letter-spacing: normal;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     line-height: 1.5;
   }
 }

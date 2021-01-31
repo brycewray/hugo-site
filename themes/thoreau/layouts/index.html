@@ -1,18 +1,18 @@
 {{ define "main" }}
 
 <div class="container px-8 lg:w-3/4 2xl:w-7/12 mr-auto ml-auto">
-  <div class="text-center pt-8">
-    {{ .Content }}
+  <div class="font-bold text-xl lg:text-2xl 2xl:text-4xl text-center pt-8">
+    Welcome to brycewray.com, offering <a href="/about">its owner</a>&rsquo;s &ldquo;observations, opinions, and geekiness&rdquo; since&nbsp;2018.
   </div>
   <div class="mr-auto ml-auto border-b-2 border-blue-700 dark:border-white w-1/2 mt-8 mb-8 md:w-1/3 2xl:w-1/4"></div>
   <div class="pt-4 lg:pt-0 lg:w-1/2 2xl:w-2/5 mr-auto ml-auto">
     <h2 class="h1 text-4xl lg:text-5xl 2xl:text-6xl mb-4 2xl:mb-12">Latest <a href="/posts/">posts</a></h2>
     {{ range first 3 (where .Site.RegularPages "Section" "posts") }}				
       <div>
-        <h2 class="h4 text-xl lg:text-3xl 2xl:text-4xl tracking-tight mb-2 2xl:mb-4"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="font-bold text-base lg:text-xl 2xl:text-2xl mt-1 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
+        <h2 class="h4 text-2xl lg:text-3xl 2xl:text-4xl tracking-tight mb-2 2xl:mb-4"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="font-bold text-xl lg:text-2xl 2xl:text-3xl mt-1 mb-0 leading-6">{{ .Params.Subtitle | markdownify }}</p>
         <p class="text-sm 2xl:text-base tracking-normal mt-1 mb-0"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br />Last modified {{ .Lastmod.Format "January 2, 2006" }}{{- end }}</p>        
-        <p class="text-base 2xl:text-xl mt-1 mb-4 2xl:mb-8">
+        <p class="text-base 2xl:text-xl mt-1 mb-4 2xl:mb-8 leading-5">
           {{ .Description }}
         </p>
       </div>
