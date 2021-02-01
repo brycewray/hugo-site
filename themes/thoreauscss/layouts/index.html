@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="container-home">
+  <p>Opening comment</p>
+  <div class="homePosts">
+    <div class="post-line"></div>
+    <h2 class="homeLatest">Latest posts</h2>
+    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}	
+      <div>
+        <h2 class="h4 homePostTitle"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="homePostSubtitle">{{ .Params.Subtitle | markdownify }}</em></p>
+        <p class="homePostDates">
+          {{ .PublishDate.Format "January 2, 2006" }}{{- if ne .PublishDate .Lastmod }}<br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}{{- end }}
+        </p>        
+        <p class="homePostDescription">
+          {{ .Description }}
+        </p>
+      </div>
+    {{ end }}
+    <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+  </div>
+</div>
+{{ end }}

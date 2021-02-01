@@ -1,0 +1,664 @@
+.italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+  font-variation-settings: 'slnt' -8;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
+     so we override that below with the @-moz-document url-prefix media query for Firefox */
+  font-style: oblique 8deg;
+  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
+}
+
+@-moz-document url-prefix() {
+  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+    /* font-variation-settings: normal; */
+    font-style: normal;
+  }
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+ul li li li {
+  list-style-type: square;
+}
+
+.post-line {
+  border-top: 0.2rem solid $darkblue;
+  @media screen and (prefers-color-scheme: dark) {
+    border-color: #fff;
+  }
+  display: block;
+  margin: 0 auto 2rem;
+  width: 15rem;
+}
+
+.postsHead {
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  letter-spacing: -0.025em;
+  @media screen and (min-width: 1025px) {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 1920px) {
+    padding-top: 3.5rem;
+    font-size: 4rem;
+  }
+}
+
+#content, main {
+  padding-top: 40px;
+}
+
+#content .topOfMain, main .topOfMain {
+  margin-top: 0.5rem;
+  font-size: 2.25rem;
+}
+
+.text-nowrap, .nobrk {
+  white-space: nowrap;
+}
+
+img.containedImage, figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-link {
+  color: $blue;
+}
+
+.text-link:active, .text-link:focus, .text-link:hover {
+  color: $darkblue;
+}
+
+.text-muted {
+  color: $grey-1;
+  @media (prefers-color-scheme: dark) {
+    color: $grey-2-dark-mode;
+  }
+}
+
+.text-body {
+  color: $default-color;
+}
+
+footer {
+  text-align: center;
+  font-family: $sans-serif;
+  font-size: $legal + unquote("rem");
+  margin: 4rem auto 0 auto;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  p {
+    line-height: 1.5em; // definitely em, not rem, here
+  }
+  div.footerWrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
+  @media (min-width: 900px) {
+    margin: 2rem auto 0 auto;
+    padding-bottom: 1rem;
+    div.footerWrapper {
+      width: 65%;
+    }
+  }
+}
+
+.imgCover {
+  object-fit: cover;
+  object-position: 50% 50%; // H = middle; V = middle
+  height: 100%;
+  width: 100%;
+}
+
+.hero-home {
+  background: linear-gradient(
+    rgba(0,0,170,1.00),
+    rgba(0,0,85,1.00)
+  );
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  height: 50vh;
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    height: 60vh;
+  }
+  @media screen and (min-width: 1025px) {
+    height: 70vh;
+  }
+}
+
+.billboard {
+  &-div {
+    font-family: $sans-serif;
+    text-align: center;
+    position: relative;
+    height: auto;
+  }
+  &-title-block {
+    display: block;
+    width: 100%;
+  }
+  &-title-block-fit {
+    display: block;
+    width: 100%;
+  }
+  &-title-text, &-subtitle-text, &-description-text {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.25em; // definitely em, not rem
+  }
+  &-title-text {
+    font-size: 2.5rem;
+    padding-top: 0.5em; // definitely em, not rem
+    padding-bottom: 0;
+    letter-spacing: -0.035em;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      padding-top: 3rem;
+      font-size: 3.5rem;
+      padding-right: 4%;
+      padding-left: 4%;
+    }
+    @media screen and (min-width: 1025px) {
+      padding-top: 4rem;
+      font-size: 4.5rem;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+  }
+  &-subtitle-text {
+    font-size: 1.5rem;
+    padding-top: 0.25em; // definitely em, not rem
+    padding-bottom: 0.5em; // definitely em, not rem
+    letter-spacing: -0.04em;
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+      padding-top: 1em; // definitely em, not rem
+      font-size: 2.25rem;
+      padding-right: 4%;
+      padding-left: 4%;
+    }
+    @media screen and (min-width: 1025px) {
+      font-size: 3rem;
+      padding-top: 0.75em; // definitely em, not rem
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+  }
+  &-description-text {
+    padding-top: 0.25em; // definitely em, not rem
+    padding-right: 4%;
+    padding-left: 4%;
+    letter-spacing: -0.035em;
+    @media screen and (min-width: 769px) {
+      font-size: 2rem;
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+    @media screen and (min-width: 1025px) {
+      padding-right: 20%;
+      padding-left: 20%;
+    }
+  }
+  &-p-text {
+    text-align: center;
+  }
+}
+
+img.featured-image {
+  display: block;
+  width: 90%;
+  @media (min-width: 900px) {
+    width: 65%;
+  }
+  height: auto;
+  margin: 0 auto;
+  &-hero {
+    width: 100%;    
+  }
+}
+
+.featured-image-caption {
+  margin-top: 0.25rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: $legal + unquote("rem");
+  @media (prefers-color-scheme: dark) {
+    color: $grey-2-dark-mode;
+  }
+}
+
+table.leagues {
+	width: 90%;
+	margin: 1rem auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+	@media (min-width: 900px) {
+		width: 60%;
+	}
+	td.col {
+		width: 50%;
+	}
+}
+
+table.noborders {
+  width: 100%;
+  margin: 1.5rem auto 1rem auto;
+  border: 0;
+  border-collapse: collapse;
+
+  tr {
+    @media (prefers-color-scheme: dark) {
+      background-color: $default-color-dark-mode;
+      color: $default-color;
+    }
+  }
+
+  td {
+    text-align: left !important;
+    vertical-align: middle;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;  
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: #dfefff;
+  }
+
+  thead {
+    background-color: $darkblue;
+  }
+
+  thead tr {
+    @media (prefers-color-scheme: dark) {
+      background-color: $darkblue;
+    }
+  }
+
+  thead td {
+    color: #fff !important;
+    font-weight: bold;
+    font-family: $sans-serif;
+  }
+  
+  td.td70 {
+    width: 70%;
+    img {
+      display: block;
+      width: 50%;
+      max-width: 50%;
+      height: auto;
+    }
+  }
+  
+  td.td30 {
+    width: 30%;
+  }
+}
+
+img.postsFeatImg {
+  float: inherit;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  @media (min-width: 900px) {
+    float: right;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    width: 50%;
+    height: auto;
+  }
+}
+
+.container {
+  // width: 90%;
+  margin: 0 auto;
+  &-home {
+    margin: 0 auto;
+    width: 90%;
+    @media screen and (min-width: 769px) {
+      width: 75%;
+      grid-template-columns: 60% 1fr;
+      grid-gap: 3rem;
+      padding-top: 0.5rem;
+    }
+    .column-home {
+      article {
+        p {
+          font-size: 1.15rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+  &-narrower {
+    margin: 1rem auto 0 auto;
+    width: 80%;
+
+    figure img {
+      width: 100%;
+    }
+
+    .twitter-tweet {
+      margin: 1rem auto 0 auto;
+      padding: 0.25rem;
+      border-radius: 12px;
+      border: 2px solid #000;
+      @media screen and (prefers-color-scheme: dark) {
+        border: 2px solid #fff;
+      }
+    }
+
+    @media (min-width: 900px) {
+      width: 40%;
+    }
+  }
+  &-comments {
+    font-size: 85%;
+    width: 85%;
+    max-width: 720px !important;
+    margin-bottom: 0;
+    @media (min-width: 900px) {
+      width: 40%;
+    }
+  }
+}
+
+/* START == for old comments from TalkYard */
+
+.container-oldComments {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 0;
+  width: 75%;
+  h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.75rem;
+    letter-spacing: -0.025rem;
+  }
+  p.commentDisclaimer {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  p.commentName {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .commentDate {
+    font-size: 0.85em;
+  }
+  p.comment {
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: normal;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container-oldComments {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container-oldComments {
+    width: 33%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .container-oldComments {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+}
+
+/* END ==== for old comments from TalkYard */
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  margin-top: 2.5rem;
+  background-color: $darkblue !important;
+	padding: 0.5rem 0 1rem 0;
+  div, p {
+    color: #fff;
+	}
+	h3, p {
+		margin: 0;
+		padding: 0.15rem 0;
+  }
+  h3.prevnextH3 {
+    font-size: 1.875rem;
+  }
+  p.prevnextP {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.25rem;
+  }
+  a, a:hover, a:focus {
+    color: #aaddff !important;
+  }
+  a {
+    border-bottom: 0;
+  }
+  a:hover, a:focus {
+    border-bottom: 1px solid #aaddff !important;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+li p {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+.gradient-titles {
+  background-image: linear-gradient(to bottom, var(--gradient-color-stops));
+  --gradient-from-color: #0000aa;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 170, 0));
+  --gradient-to-color: #000;
+}
+
+img.homeHeroImage {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.homeOpen {
+  text-align: center;
+  @media screen and (min-width: 769px) {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: 1921px) {
+    font-size: 2.5rem;
+  }
+}
+
+.homePosts {
+  @media screen and (min-width: 1025px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+}
+
+.homeLatest {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-weight: 825;
+  font-size: 2rem;
+  @media screen and (min-width: 1025px) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 1921px) {
+    font-size: 4rem;
+  }
+}
+
+.homePostTitle {
+  font-size: 1.75rem;
+  padding-top: 0.5rem;
+}
+
+.homePostSubtitle {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-weight: 625;
+}
+
+.homePostDates {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.homePostDescription {
+  font-family: $sans-serif;
+  margin-top: 0.5rem;
+}
+
+/*
+span.caption {
+  text-shadow: none;
+}
+
+span.caption a {
+  color: #bbeeff;
+  border-bottom: 1px solid #bbeeff;
+}
+
+span.caption a:focus, span.caption a:hover, span caption a:active {
+  color: #edf2f7;
+  border-bottom: #bbeeff;
+}
+*/
+
+article {
+  padding-top: 1em; // definitely em, not rem
+  p, li {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1em; // definitely em, not rem
+  }
+  li li, li p {
+    font-size: inherit;
+    margin-top: 0.25em; // definitely em, not rem
+  }
+  h2, h3, h4 {
+    margin-top: 1.25em; // definitely em, not rem
+  }
+}
+
+.footnote-sim {
+  font-size: 0.65em;
+  color: #0000ff;
+  @media (prefers-color-scheme: dark) {
+    color: #00aaff;
+  }
+}
+
+.footnotes {
+  ol {
+    padding-inline-start: 1.5rem;
+  }
+  ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size: $pokey + unquote("rem");
+  }
+  li p {
+    font-size: 100%;
+  }
+}
+
+.yellowBox {
+  font-family: $sans-serif;
+  display: block;
+  box-sizing: border-box;
+  background: #feef89;
+  border: 1px solid #333;
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 1.5rem;
+
+  @media (prefers-color-scheme: dark) {
+    background: #332200;
+    border: 1px solid $grey-1;
+  }
+}
+
+img.containedImage {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imgcCaption {
+  font-size: $pokey + unquote("rem");
+  padding: 0;
+  margin-top: 0.5rem;
+  line-height: 1.375;
+  text-align: center;
+}
+
+/* from vanilla-lazyload */
+.lazy {
+  opacity: 0;
+}
+
+.lazy:not(.initial) {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.lazy.initial,
+.lazy.loaded,
+.lazy.error {
+  opacity: 1;
+}
+
+.lazy:not([src]) {
+  visibility: hidden;
+}
+/* end of CSS from vanilla-lazyload */
