@@ -1,15 +1,8 @@
 {{ define "main" }}
 
-  <div class="billboard-div">
-    <div class="billboard-title-block">
-      <h1 class="billboard-title-text">{{ .Title | markdownify}}</h1>
-      {{- if .Params.Subtitle }}<h2 class="billboard-subtitle-text">{{ .Params.Subtitle | markdownify }}</h2>{{- end }}
-      {{- if .Params.Description }}<p class="billboard-description-text">{{ .Params.Description }}</p>{{- end }}
-      <p class="billboard-p-text"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span class="pokey">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}</p>
-    </div>
-  </div>
+  {{ partial "billboard.html" . }}
 
-  <div class="container-narrower">
+<div class="container-narrower">
     <article class="article">
       <div class="post-line"></div>
       {{ .Content }}
