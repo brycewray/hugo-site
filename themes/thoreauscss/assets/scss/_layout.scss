@@ -31,18 +31,62 @@ ul li li li {
   width: 15rem;
 }
 
-.postsHead {
-  padding-top: 1rem;
-  font-size: 2.5rem;
-  letter-spacing: -0.025em;
-  @media screen and (min-width: 1025px) {
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 3rem;
+.posts {
+  &-Head {
+    padding-top: 0.875rem;
+    font-size: 2.5rem;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.25em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 1rem;
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 1920px) {
+      padding-top: 3.5rem;
+      font-size: 4rem;
+    }
   }
-  @media screen and (min-width: 1920px) {
-    padding-top: 3.5rem;
-    font-size: 4rem;
+  &-Title {
+    margin-bottom: 0.25em;
+    padding: 0;
+    font-size: 1rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.25rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.5rem;
+    }
+  }
+  &-Subtitle {
+    letter-spacing: -0.025em;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    @media screen and (min-width: 1024px) {
+      font-size: 1rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.125rem;
+    }
+  }
+  &-Dates {
+    font-size: 0.625rem;
+    margin-top: 0.5em;
+    @media screen and (min-width: 1024px) {
+      font-size: 0.75rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 0.875rem;
+    }
+  }
+  &-Description {
+    font-size: 0.75rem;
+    margin-bottom: 3em;
+    @media screen and (min-width: 1024px) {
+      font-size: 0.875rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -127,17 +171,16 @@ footer {
   margin-bottom: 0;
   overflow: hidden;
   height: 50vh;
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     height: 60vh;
   }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1024px) {
     height: 70vh;
   }
 }
 
 .billboard {
   &-div {
-    font-family: $sans-serif;
     text-align: center;
     position: relative;
     height: auto;
@@ -160,13 +203,13 @@ footer {
     padding-top: 0.5em; // definitely em, not rem
     padding-bottom: 0;
     letter-spacing: -0.035em;
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       padding-top: 3rem;
       font-size: 3.5rem;
       padding-right: 4%;
       padding-left: 4%;
     }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
       padding-top: 4rem;
       font-size: 4.5rem;
       padding-right: 5%;
@@ -178,13 +221,13 @@ footer {
     padding-top: 0.25em; // definitely em, not rem
     padding-bottom: 0.5em; // definitely em, not rem
     letter-spacing: -0.04em;
-      @media screen and (min-width: 769px) and (max-width: 1024px) {
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
       padding-top: 1em; // definitely em, not rem
       font-size: 2.25rem;
       padding-right: 4%;
       padding-left: 4%;
     }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
       font-size: 3rem;
       padding-top: 0.75em; // definitely em, not rem
       padding-right: 5%;
@@ -196,12 +239,12 @@ footer {
     padding-right: 4%;
     padding-left: 4%;
     letter-spacing: -0.035em;
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 768px) {
       font-size: 2rem;
       padding-right: 10%;
       padding-left: 10%;
     }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
       padding-right: 20%;
       padding-left: 20%;
     }
@@ -325,20 +368,17 @@ img.postsFeatImg {
   // width: 90%;
   margin: 0 auto;
   &-home {
+    text-align: center;
+    padding: 2rem 0;
     margin: 0 auto;
     width: 90%;
-    @media screen and (min-width: 769px) {
-      width: 75%;
-      grid-template-columns: 60% 1fr;
-      grid-gap: 3rem;
-      padding-top: 0.5rem;
-    }
-    .column-home {
-      article {
-        p {
-          font-size: 1.15rem;
-          line-height: 1.6;
-        }
+    h1 {
+      font-size: 1.25rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (min-width: 1536px) {
+        font-size: 1.75rem;;
       }
     }
   }
@@ -502,7 +542,7 @@ img.homeHeroImage {
 
 .homeOpen {
   text-align: center;
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     font-size: 1.25rem;
   }
   @media screen and (min-width: 1921px) {
@@ -510,47 +550,66 @@ img.homeHeroImage {
   }
 }
 
-.homePosts {
-  @media screen and (min-width: 1025px) {
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
+.homePost {
+  &-Div {
+    padding-top: 1.5em;
   }
-}
-
-.homeLatest {
-  margin-top: 0.5em;
-  margin-bottom: 0.25em;
-  font-weight: 825;
-  font-size: 2rem;
-  @media screen and (min-width: 1025px) {
-    font-size: 3rem;
+  &-Latest {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    font-weight: 825;
+    font-size: 2rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 4rem;
+    }
   }
-  @media screen and (min-width: 1921px) {
-    font-size: 4rem;
+  &-Title {
+    font-size: 1.75rem;
+    padding-top: 0.5em;
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 2.25rem;
+    }
   }
-}
-
-.homePostTitle {
-  font-size: 1.75rem;
-  padding-top: 0.5rem;
-}
-
-.homePostSubtitle {
-  font-size: 1.25rem;
-  margin-top: 0;
-  margin-bottom: 0.25rem;
-  font-weight: 625;
-}
-
-.homePostDates {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.homePostDescription {
-  font-family: $sans-serif;
-  margin-top: 0.5rem;
+  &-Subtitle {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-weight: 625;
+    font-size: 1.25rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.75rem;
+    }
+  }
+  &-Dates {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 0.875rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.125rem;
+    }
+  }
+  &-Description {
+    font-family: $sans-serif;
+    margin-top: 0.5em;
+    font-size: 0.875rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 1rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.25rem;
+    }
+  }
 }
 
 /*

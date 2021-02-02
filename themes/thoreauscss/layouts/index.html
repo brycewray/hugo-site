@@ -1,18 +1,18 @@
 {{ define "main" }}
 
 <div class="container-home">
-  <p>Opening comment</p>
-  <div class="homePosts">
+  <h1><strong>Welcome to brycewray.com, offering <a href="/about">its owner</a>&rsquo;s &ldquo;observations, opinions, and geekiness&rdquo; since&nbsp;2018.</strong></h1>
+  <div class="homePost-Div">
     <div class="post-line"></div>
-    <h2 class="homeLatest">Latest posts</h2>
+    <h2 class="homePost-Latest">Latest <a href="/posts">posts</a></h2>
     {{ range first 3 (where .Site.RegularPages "Section" "posts") }}	
       <div>
-        <h2 class="h4 homePostTitle"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="homePostSubtitle">{{ .Params.Subtitle | markdownify }}</em></p>
-        <p class="homePostDates">
-          {{ .PublishDate.Format "January 2, 2006" }}{{- if ne .PublishDate .Lastmod }}<br />Last modified: {{ .Lastmod.Format "January 2, 2006" }}{{- end }}
+        <h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="homePost-Subtitle">{{ .Params.Subtitle | markdownify }}</p>
+        <p class="homePost-Dates">
+          <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br />Last modified {{ .Lastmod.Format "January 2, 2006" }}{{- end }}
         </p>        
-        <p class="homePostDescription">
+        <p class="homePost-Description">
           {{ .Description }}
         </p>
       </div>
