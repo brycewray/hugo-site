@@ -1,0 +1,8 @@
+  <div class="billboard-div">
+    <div class="billboard-title-block">
+      <h1 class="billboard-title-text">{{ .Title | markdownify}}</h1>
+      {{- if .Params.Subtitle }}<h2 class="billboard-subtitle-text">{{ .Params.Subtitle | markdownify }}</h2>{{- end }}
+      {{- if .Params.Description }}<p class="billboard-description-text">{{ .Params.Description }}</p>{{- end }}
+      <p class="billboard-p-text"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span style="font-size: 75%;">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}</p>
+    </div>
+  </div>
