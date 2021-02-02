@@ -43,16 +43,16 @@ ul li li li {
     }
   }
   &-Head {
-    padding-top: 0.875rem;
+    padding-top: 2rem;
     font-size: 3rem;
     letter-spacing: -0.025em;
     margin-bottom: 0.25em;
     @media screen and (min-width: 1024px) {
-      padding-top: 1rem;
+      padding-top: 3rem;
       font-size: 4rem;
     }
     @media screen and (min-width: 1920px) {
-      padding-top: 1.5rem;
+      padding-top: 4rem;
       font-size: 5rem;
     }
   }
