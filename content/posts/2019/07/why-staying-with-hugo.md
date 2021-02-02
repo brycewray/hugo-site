@@ -284,7 +284,7 @@ Then they all need to think about the dicey interaction between all the dependen
 
 If their response is, "Yeah, but you just need to know [$frameworkOne] and [$frameworkTwo] and [$languageVariantOne] and [$languageVariantTwo], and have a [$languageVariantThree] guy on your payroll, and put all your files into this one Magic Directory, and hold your mouth right---and then it'll work ninety percent of the time": again I say, no, thank you.
 
-Although it's apparently a [myth](https://en.wikipedia.org/wiki/May_you_live_in_interesting_times), we've all heard that there was an old Chinese curse, "May you live in interesting times." You may be certain that what I just endured on this front was pretty blamed  "interesting." On the other hand, to invoke another old saying, "That which doesn't kill you makes you stronger."[^tome]
+Although it's apparently a [myth](https://en.wikipedia.org/wiki/May_you_live_in_interesting_times), we've all heard that there was an old Chinese curse, "May you live in interesting times." You may be certain that what I just endured on this front was pretty blamed  "interesting." On the other hand, to invoke another old saying, "That which doesn't kill you makes you stronger.”[^tome]
 
 [^tome]: Is that also true for people who read through windy things like this to the end? For your sake, I gratefully hope so.
 
