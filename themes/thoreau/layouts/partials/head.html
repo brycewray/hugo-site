@@ -73,7 +73,7 @@
   <!-- No longer need the above for hero images -->
 
   <!-- CSS -->
-  <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin />
+  <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin="anonymous" />
   {{ with resources.Get "css/index.css" | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") }}
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
