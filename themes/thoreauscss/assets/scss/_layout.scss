@@ -197,6 +197,16 @@ footer {
     text-align: center;
     position: relative;
     height: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    @media screen and (min-width: 1024px) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    @media screen and (min-width: 1536px) {
+      padding-right: 8rem;
+      padding-left: 8rem;
+    }
   }
   &-title-block {
     display: block;
@@ -251,19 +261,21 @@ footer {
   }
   &-description-text {
     padding-top: 0.25em; // definitely em, not rem
-    padding-right: 4%;
-    padding-left: 4%;
     letter-spacing: -0.0125em;
+    font-size: 1.125rem;
+    line-height: 1.4;
     @media screen and (min-width: 1024px) {
       font-size: 1.625rem;
-      padding-right: 10%;
-      padding-left: 10%;
+      padding-top: 1.25em;
+      padding-right: 16rem;
+      padding-left: 16rem;
       letter-spacing: -0.0375em;
     }
     @media screen and (min-width: 1536px) {
       font-size: 2rem;
-      padding-right: 20%;
-      padding-left: 20%;
+      padding-top: 2em;
+      padding-right: 24rem;
+      padding-left: 24rem;
       letter-spacing: -0.05em;
       line-height: 1.25em;
     }
