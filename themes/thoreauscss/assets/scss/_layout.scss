@@ -93,12 +93,23 @@ ul li li li {
   &-Description {
     font-size: 0.875rem;
     line-height: 1.5em;
-    margin-bottom: 3em;
+    margin-bottom: 0.5em;
     @media screen and (min-width: 1024px) {
       font-size: 1rem;
     }
     @media screen and (min-width: 1536px) {
       font-size: 1.125rem;
+    }
+  }
+  &-ReadingTime {
+    margin-top: 0;
+    margin-bottom: 3em;
+    font-size: 0.625rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 0.75rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 0.875rem;
     }
   }
 }

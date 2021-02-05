@@ -1,4 +1,8 @@
 {{ define "main" }}
+{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+{{ $minutes := math.Floor (div $readTime 60) }}
+{{ $seconds := mod $readTime 60 }}
+{{ $seconds := printf "%02d" $seconds }}
 
   <div class="container h-auto w-full min-w-full relative overflow-hidden pt-12 pb-6 px-4 md:px-16 2xl:px-20">
     <h1 class="text-center text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight leading-tight md:mt-6 md:mb-12 2xl:mt-16 mb-6 px-4 md:px-0">{{ .Params.Title }}</h1>
@@ -10,6 +14,7 @@
   </div>
 
   <div class="sm:w-5/6 md:w-4/5 xl:w-1/2 mr-auto ml-auto px-6 lg:px-16">
+    <p class="text-xs lg:text-sm 2xl:text-base text-center"><em>Estimated reading time: {{ $minutes }}:{{ $seconds }}</em></p>
     <div class="mr-auto ml-auto border-b-2 border-blue-700 dark:border-white w-1/2 md:w-1/3 2xl:w-1/4"></div>
     <article class="article">
       {{ .Content }}

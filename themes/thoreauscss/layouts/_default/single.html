@@ -1,9 +1,14 @@
 {{ define "main" }}
+{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+{{ $minutes := math.Floor (div $readTime 60) }}
+{{ $seconds := mod $readTime 60 }}
+{{ $seconds := printf "%02d" $seconds }}
 
   {{ partial "billboard.html" . }}
 
   <div class="container-narrower">
     <article class="article">
+      <p class="legal ctr"><em>Estimated reading time: {{ $minutes }}:{{ $seconds }}</em></p>
       <div class="post-line"></div>
       {{ .Content }}
     </article>

@@ -88,8 +88,15 @@
           <br />Last modified {{ .Lastmod.Format "January 2, 2006" }}
           {{- end }}
         </p>
-        <p class="text-sm 2xl:text-lg mt-2 mb-10">
+        <p class="text-sm 2xl:text-lg mt-2 mb-2">
           {{ .Description }}
+        </p>
+        {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+        {{ $minutes := math.Floor (div $readTime 60) }}
+        {{ $seconds := mod $readTime 60 }}
+        {{ $seconds := printf "%02d" $seconds }}
+        <p class="text-xs lg:text-sm 2xl:text-base mb-10">
+          <em>Estimated reading time: {{ $minutes }}:{{ $seconds }}</em>
         </p>
       </div>
       {{ end }}
