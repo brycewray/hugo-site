@@ -81,7 +81,7 @@
 
 			{{ range $paginator.Pages }}
       <div>          
-        <h2 class="text-xl 2xl:text-4xl mb-1 tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <h2 class="text-xl 2xl:text-3xl mb-1 tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="text-base 2xl:text-2xl tracking-tight leading-tight mb-2"><strong>{{ .Params.Subtitle }}</strong></p>
         <p class="text-xs 2xl:text-base dateInfo mt-0"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
           {{- if ne .PublishDate .Lastmod }}
