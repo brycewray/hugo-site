@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Gatsby"
 description: "Part 4 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Gatsby."
 author: Bryce Wray
 date: 2020-04-28T16:45:00-05:00
-lastmod: 2020-09-16T10:00:00-05:00
+lastmod: 2021-02-06T08:35:00-06:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
 featured_image: jackrabbit-673965_3600x2400.jpg
 featured_image_width: 3600
@@ -36,7 +36,7 @@ I knew that [Chris Biscardi](https://www.christopherbiscardi.com/post/building-g
 
 Still, handling the webmention.io token as an [environment variable](https://en.wikipedia.org/wiki/Environment_variable) in Gatsby was tricky because I had to do two things to make the plugin send the appropriate token:
 
-- Instead of having just one `/.env` file, I had to have separate `/.env.development` and `/.env.production` files, which allowed me to specify in the plugin-specific code in [`/gatsby-config.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/gatsby-config.js) that it should find the token in the [`process.env` global variable](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7) that [Node JS](https://nodejs.org/) uses to determine the current working environment, development or production.[^RegularEnv] As with the standalone `/.env` file I mentioned earlier in the series, you should **not** source-control these files.
+- Instead of having just one `/.env` file, I had to have separate `/.env.development` and `/.env.production` files, which allowed me to specify in the plugin-specific code in [`/gatsby-config.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/gatsby-config.js) that it should find the token in the [`process.env` global variable](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7) that [Node.js](https://nodejs.org/) uses to determine the current working environment, development or production.[^RegularEnv] As with the standalone `/.env` file I mentioned earlier in the series, you should **not** source-control these files.
 
 [^RegularEnv]: Just to be consistent with the other repos, I still put a [non-source-controlled](https://dev.to/somedood/please-dont-commit-env-3o9h) `/.env` file in the Gatsby repo, but I know Gatsby doesn't see it.
 

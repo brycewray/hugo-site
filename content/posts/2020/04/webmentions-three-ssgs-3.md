@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Hugo"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
-lastmod: 2020-09-16T10:00:00-05:00
+lastmod: 2021-02-06T08:35:00-06:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
 featured_image: marko-pekic-IpLa37Uj2Dw-unsplash_3542x2362.jpg
 featured_image_width: 3542
@@ -42,11 +42,11 @@ Kinlan's code took a different approach: rather than fetching and then aggregati
 
 Or, at least it would if it *could* fetch the webmentions from webmention.io. And therein lay the biggest problem I faced with the Hugo repo.
 
-You see, one thing you have to "present" to webmention.io to "prove" that your site "deserves" to grab the webmentions is an *authentication token*. In the Eleventy site, you can easily handle this by creating a file, `/.env`, for storing such so-called [*environment variables*](https://en.wikipedia.org/wiki/Environment_variable) out of sight (**don't** source-control such a file; instead, add it to your `.gitignore`) but exposing them to other code through generic names such as `WEBMENTION_IO_TOKEN`. In an SSG like Eleventy or Gatsby that uses [Node JS](https://nodejs.org), that works because of a widely used [npm](https://npmjs.com) package called [`dotenv`](https://www.npmjs.com/package/dotenv).[^EnvVarsGatsby]
+You see, one thing you have to "present" to webmention.io to "prove" that your site "deserves" to grab the webmentions is an *authentication token*. In the Eleventy site, you can easily handle this by creating a file, `/.env`, for storing such so-called [*environment variables*](https://en.wikipedia.org/wiki/Environment_variable) out of sight (**don't** source-control such a file; instead, add it to your `.gitignore`) but exposing them to other code through generic names such as `WEBMENTION_IO_TOKEN`. In an SSG like Eleventy or Gatsby that uses [Node.js](https://nodejs.org), that works because of a widely used [npm](https://npmjs.com) package called [`dotenv`](https://www.npmjs.com/package/dotenv).[^EnvVarsGatsby]
 
 [^EnvVarsGatsby]: But Gatsby still made it, um, interesting, as you'll see in [Part 4](/posts/2020/04/webmentions-three-ssgs-4).
 
-Fine, I wondered, but how to do this in Hugo? Yes, I already had the repo using JavaScript because of PostCSS, but this was another matter. I was trying to get a non-Node-JS app to accept an environment variable from Node JS.
+Fine, I wondered, but how to do this in Hugo? Yes, I already had the repo using JavaScript because of PostCSS, but this was another matter. I was trying to get a non-Node-JS app to accept an environment variable from Node.js.
 
 For a while, it looked as if the only working method would require including the token in plain sight in a `GET`-style query string: *e.g.*, something like `https://webmention.io/api/mentions.jf2?domain=brycewray.com&token=1234567890123`. Not a good idea, as you can imagine.
 

@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2020-11-26T09:10:00-06:00
+lastmod: 2021-02-06T08:35:00-06:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_4870x2672.jpg
 featured_image_width: 4870
@@ -194,7 +194,7 @@ Here's how it works.
 	- Use the latest version of [Ubuntu](https://ubuntu.com) that the remote server is willing to load.
 	- "Checkout" that aforementioned default branch in Git.
 	- See if there's any previously cached material and load it, if so.
-	- Load Node JS v."12.x" (*i.e.*, the latest version of v.12).
+	- Load Node.js v."12.x" (*i.e.*, the latest version of v.12).
 	- Run `npm install` to load all the dependencies identified in `package.json`.
 	- Build the site using those three "secrets" you already set up earlier: the Netlify authorization token, the Netlify site ID, and the webmentions.io token. Since we're still on the GitHub servers at this point, only the last one may be necessary; but this file includes them all, just to be safe.
 	- Finally, deploy the now-built site to Netlify, using the configuration in the repo's `netlify.toml` file. This step uses those same "secrets" as the last step. The Netlify variables *are* required here, for sure, while now the webmentions.io token becomes the just-in-case addition.
