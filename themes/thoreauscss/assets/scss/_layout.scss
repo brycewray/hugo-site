@@ -1,18 +1,145 @@
+// === handling Inter VF obliquing
 .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
   font-variation-settings: 'slnt' -8;
-  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
-     so we override that below with the @-moz-document url-prefix media query for Firefox */
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, so we override that below with the @-moz-document url-prefix media query for Firefox */
   font-style: oblique 8deg;
   /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
 }
 
 @-moz-document url-prefix() {
-  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
-    /* font-variation-settings: normal; */
+  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {
+    // font-variation-settings: normal;
     font-style: normal;
   }
 }
+// === end, handling Inter VF obliquing 
 
+html, body {
+  font-family: $sans-serif;
+  font-weight: 425;
+  color: $default-color;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  // font-feature-settings: "liga" 1; // ligatures won't work without this
+  @media (prefers-color-scheme: dark) {
+    background: $background-dark-mode;
+    color: $default-color-dark-mode;
+  }
+}
+
+.sansSerif {
+  font-family: $sans-serif;
+}
+
+.IEonly {
+  display: none;
+}
+
+p, li {
+  line-height: 1.4;
+}
+
+bold, strong {
+  font-weight: 625;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  letter-spacing: -0.025rem;
+  @media (prefers-color-scheme: dark) {
+    color: $default-color-dark-mode;
+  }
+}
+
+h1, .h1 {
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-block-start: 0.25rem;
+  margin-block-end: 0.25rem;
+}
+
+h3, .h3, h5, .h5 {
+  font-style: italic;
+}
+
+h1, .h1 {
+  font-size: $biggest + unquote("rem");
+}
+
+h2, .h2 {
+  font-size: $bigger + unquote("rem");
+}
+
+h3, .h3 {
+  font-size: $mightybig + unquote("rem");
+}
+
+h4, .h4 {
+  font-size: $sortabig + unquote("rem");
+}
+
+h5, .h5, h6, .h6 {
+  font-size: $slightlybig + unquote("rem");
+}
+
+a, a:focus, a:hover, a:active {
+  text-decoration: none;
+  border-bottom: 1px solid $blue;
+  // text-decoration-skip-ink: auto;
+}
+
+a {
+  color: $blue;
+  border-bottom: 1px solid $blueFirst;
+  @media (prefers-color-scheme: dark) {
+    color: $blueLight;
+    border-bottom: 1px solid $blueFirst;
+  }
+}
+
+a:focus, a:hover, a:active {
+  color: $darkblue;
+  @media (prefers-color-scheme: dark) {
+    color: $grey-2;
+    border-bottom: 1px solid $blueLight;
+  }
+}
+
+sup a, a.previous, a.next, .footnote-return, a.icon {
+  border-bottom: 0;
+}
+
+blockquote {
+	color: $grey-1;
+  @media (prefers-color-scheme: dark) {
+    color: $grey-2-dark-mode;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+td {
+  vertical-align: top;
+}
+
+sub, sup {
+  font-size: 65%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5rem;
+}
 ul li li {
   list-style-type: circle;
 }
@@ -21,6 +148,184 @@ ul li li li {
   list-style-type: square;
 }
 
+#content, main {
+  padding-top: 40px;
+}
+
+#content .topOfMain, main .topOfMain {
+  margin-top: 0.5rem;
+  font-size: 2.25rem;
+}
+
+footer {
+  text-align: center;
+  font-family: $sans-serif;
+  font-size: $legal + unquote("rem");
+  margin: 4rem auto 0 auto;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  p {
+    line-height: 1.5em; // definitely em, not rem, here
+  }
+  div.footerWrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
+  @media (min-width: 900px) {
+    margin: 2rem auto 0 auto;
+    padding-bottom: 1rem;
+    div.footerWrapper {
+      width: 65%;
+    }
+  }
+}
+
+.imgCover {
+  object-fit: cover;
+  object-position: 50% 50%; // H = middle; V = middle
+  height: 100%;
+  width: 100%;
+}
+
+// === utility classes
+
+.ctr {
+  text-align: center;
+}
+
+.rgt {
+  text-align: right;
+}
+
+.wht {
+  color: #fff;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.sortabig {
+  font-size: $sortabig + unquote("rem");
+}
+
+.bigger {
+  font-size: $bigger + unquote("rem");
+}
+
+.teenytxt, .teeny {
+  font-size: $teeny + unquote("rem");
+}
+
+.legaltxt, .legal {
+  font-size: $legal + unquote("rem");
+}
+
+.pokeytxt, .pokey {
+  font-size: $pokey + unquote("rem");
+}
+
+.text {
+  &-nowrap, .nobrk {
+    white-space: nowrap;
+    font-size: inherit;
+  }
+  &-link {
+    color: $blue;
+  }
+  &-link:active, &-link:focus, &-link:hover {
+    color: $darkblue;
+  }
+  &-muted {
+    color: $grey-1;
+    @media (prefers-color-scheme: dark) {
+      color: $grey-2-dark-mode;
+    }
+  }
+  &-body {
+  color: $default-color;
+  }
+}
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  margin-top: 2.5rem;
+  background-color: $darkblue !important;
+  padding: 0.5rem 0 1rem 0;
+  div, p {
+    color: #fff;
+  }
+  h3, p {
+    margin: 0;
+    padding: 0.15rem 0;
+  }
+  h3.prevnextH3 {
+    font-size: 1.875rem;
+  }
+  p.prevnextP {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.25rem;
+  }
+  a, a:hover, a:focus {
+    color: #aaddff !important;
+  }
+  a {
+    border-bottom: 0;
+  }
+  a:hover, a:focus {
+    border-bottom: 1px solid #aaddff !important;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+// === end, utility classes
+
+// == footnotes == //
+.footnote-sim {
+  font-size: 0.65em;
+  color: #0000ff;
+  @media (prefers-color-scheme: dark) {
+    color: #00aaff;
+  }
+}
+
+.footnotes {
+  ol {
+    padding-inline-start: 1.5rem;
+  }
+  ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+    font-size: $pokey + unquote("rem");
+  }
+  li p {
+    font-size: 100%;
+  }
+}
+
+a.footnote-return{
+  font-size: 50%;
+}
+// == end, footnotes == //
+
+// === posts and post lists
 .post-line {
   border-top: 0.2rem solid $darkblue;
   @media screen and (prefers-color-scheme: dark) {
@@ -113,493 +418,9 @@ ul li li li {
     }
   }
 }
+// === end, posts and post lists
 
-#content, main {
-  padding-top: 40px;
-}
-
-#content .topOfMain, main .topOfMain {
-  margin-top: 0.5rem;
-  font-size: 2.25rem;
-}
-
-.text-nowrap, .nobrk {
-  white-space: nowrap;
-}
-
-img.containedImage, figure {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 1rem auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.text-link {
-  color: $blue;
-}
-
-.text-link:active, .text-link:focus, .text-link:hover {
-  color: $darkblue;
-}
-
-.text-muted {
-  color: $grey-1;
-  @media (prefers-color-scheme: dark) {
-    color: $grey-2-dark-mode;
-  }
-}
-
-.text-body {
-  color: $default-color;
-}
-
-footer {
-  text-align: center;
-  font-family: $sans-serif;
-  font-size: $legal + unquote("rem");
-  margin: 4rem auto 0 auto;
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  p {
-    line-height: 1.5em; // definitely em, not rem, here
-  }
-  div.footerWrapper {
-    margin: 0 auto;
-    width: 80%;
-  }
-  @media (min-width: 900px) {
-    margin: 2rem auto 0 auto;
-    padding-bottom: 1rem;
-    div.footerWrapper {
-      width: 65%;
-    }
-  }
-}
-
-.imgCover {
-  object-fit: cover;
-  object-position: 50% 50%; // H = middle; V = middle
-  height: 100%;
-  width: 100%;
-}
-
-.hero-home {
-  background: linear-gradient(
-    rgba(0,0,170,1.00),
-    rgba(0,0,85,1.00)
-  );
-  margin-top: 0;
-  margin-bottom: 0;
-  overflow: hidden;
-  height: 50vh;
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    height: 60vh;
-  }
-  @media screen and (min-width: 1024px) {
-    height: 70vh;
-  }
-}
-
-.billboard {
-  &-div {
-    text-align: center;
-    position: relative;
-    height: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    @media screen and (min-width: 1024px) {
-      padding-right: 4rem;
-      padding-left: 4rem;
-    }
-    @media screen and (min-width: 1536px) {
-      padding-right: 8rem;
-      padding-left: 8rem;
-    }
-  }
-  &-title-block {
-    display: block;
-    width: 100%;
-    padding-top: 2em;
-  }
-  &-title-block-fit {
-    display: block;
-    width: 100%;
-  }
-  &-title-text, &-subtitle-text, &-description-text {
-    margin: 0 auto;
-    text-align: center;
-    padding: 0.25em; // definitely em, not rem
-  }
-  &-title-text {
-    font-size: 2.5rem;
-    padding-top: 0.5em; // definitely em, not rem
-    padding-bottom: 0;
-    line-height: 1em;
-    letter-spacing: -0.035em;
-    @media screen and (min-width: 1024px) {
-      padding-top: 3rem;
-      font-size: 3.75rem;
-      padding-right: 4%;
-      padding-left: 4%;
-    }
-    @media screen and (min-width: 1536px) {
-      padding-top: 4rem;
-      font-size: 5rem;
-      padding-right: 5%;
-      padding-left: 5%;
-    }
-  }
-  &-subtitle-text {
-    font-size: 1.5rem;
-    padding-top: 0.75em; // definitely em, not rem
-    padding-bottom: 0.5em; // definitely em, not rem
-    letter-spacing: -0.04em;
-      @media screen and (min-width: 1024px) {
-      padding-top: 1em; // definitely em, not rem
-      font-size: 2.25rem;
-      padding-right: 4%;
-      padding-left: 4%;
-    }
-    @media screen and (min-width: 1536px) {
-      font-size: 3rem;
-      padding-top: 0.75em; // definitely em, not rem
-      padding-right: 5%;
-      padding-left: 5%;
-    }
-  }
-  &-description-text {
-    padding-top: 0.25em; // definitely em, not rem
-    letter-spacing: -0.0125em;
-    font-size: 1.125rem;
-    line-height: 1.4;
-    @media screen and (min-width: 1024px) {
-      font-size: 1.625rem;
-      padding-top: 1.25em;
-      padding-right: 16rem;
-      padding-left: 16rem;
-      letter-spacing: -0.0375em;
-    }
-    @media screen and (min-width: 1536px) {
-      font-size: 2rem;
-      padding-top: 2em;
-      padding-right: 24rem;
-      padding-left: 24rem;
-      letter-spacing: -0.05em;
-      line-height: 1.25em;
-    }
-  }
-  &-p-text {
-    text-align: center;
-    font-size: 1.125rem;
-    @media screen and (min-width: 1024px) {
-      font-size: 1.25rem;
-    }
-    @media screen and (min-width: 1536px) {
-      font-size: 1.375rem;
-    }
-  }
-}
-
-img.featured-image {
-  display: block;
-  width: 90%;
-  @media (min-width: 900px) {
-    width: 65%;
-  }
-  height: auto;
-  margin: 0 auto;
-  &-hero {
-    width: 100%;    
-  }
-}
-
-.featured-image-caption {
-  margin-top: 0.25rem;
-  padding-bottom: 1.5rem;
-  text-align: center;
-  font-size: $legal + unquote("rem");
-  @media (prefers-color-scheme: dark) {
-    color: $grey-2-dark-mode;
-  }
-}
-
-table.leagues {
-	width: 90%;
-	margin: 1rem auto 0 auto;
-	border: 0;
-	border-collapse: collapse;
-	@media (min-width: 900px) {
-		width: 60%;
-	}
-	td.col {
-		width: 50%;
-	}
-}
-
-table.noborders {
-  width: 100%;
-  margin: 1.5rem auto 1rem auto;
-  border: 0;
-  border-collapse: collapse;
-
-  tr {
-    @media (prefers-color-scheme: dark) {
-      background-color: $default-color-dark-mode;
-      color: $default-color;
-    }
-  }
-
-  td {
-    text-align: left !important;
-    vertical-align: middle;
-    padding: 0.25rem 0 0.25rem 0.5rem;
-    img {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0;  
-    }
-  }
-
-  tr:nth-child(even) {
-    background-color: #dfefff;
-  }
-
-  thead {
-    background-color: $darkblue;
-  }
-
-  thead tr {
-    @media (prefers-color-scheme: dark) {
-      background-color: $darkblue;
-    }
-  }
-
-  thead td {
-    color: #fff !important;
-    font-weight: bold;
-    font-family: $sans-serif;
-  }
-  
-  td.td70 {
-    width: 70%;
-    img {
-      display: block;
-      width: 50%;
-      max-width: 50%;
-      height: auto;
-    }
-  }
-  
-  td.td30 {
-    width: 30%;
-  }
-}
-
-img.postsFeatImg {
-  float: inherit;
-  width: 75%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  @media (min-width: 900px) {
-    float: right;
-    padding-top: 1rem;
-    padding-left: 1.5rem;
-    width: 50%;
-    height: auto;
-  }
-}
-
-.container {
-  // width: 90%;
-  margin: 0 auto;
-  &-home {
-    text-align: center;
-    padding: 2rem 0;
-    margin: 0 auto;
-    width: 90%;
-    h1 {
-      font-size: 1.25rem;
-      @media screen and (min-width: 1024px) {
-        font-size: 1.5rem;
-      }
-      @media screen and (min-width: 1536px) {
-        font-size: 1.75rem;;
-      }
-    }
-  }
-  &-narrower {
-    margin: 1rem auto 0 auto;
-    width: 80%;
-
-    figure img {
-      width: 100%;
-    }
-
-    .twitter-tweet {
-      margin: 1rem auto 0 auto;
-      padding: 0.25rem;
-      border-radius: 12px;
-      background-color: #fff;
-      border: 2px solid $grey-1;
-      @media screen and (prefers-color-scheme: dark) {
-        border: 2px solid $grey-2;
-      }
-    }
-
-    @media (min-width: 900px) {
-      width: 40%;
-    }
-  }
-  &-comments {
-    font-size: 85%;
-    width: 85%;
-    max-width: 720px !important;
-    margin-bottom: 0;
-    @media (min-width: 900px) {
-      width: 40%;
-    }
-  }
-}
-
-/* START == for old comments from TalkYard */
-
-.container-oldComments {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  display: block;
-  margin: 2rem auto 0 auto;
-  padding: 1rem 0;
-  width: 75%;
-  h3 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.75rem;
-    letter-spacing: -0.025rem;
-  }
-  p.commentDisclaimer {
-    font-size: 0.75rem;
-    text-align: center;
-  }
-  p.commentName {
-    font-size: 0.75rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-  .commentDate {
-    font-size: 0.85em;
-  }
-  p.comment {
-    margin-top: 0;
-    margin-bottom: 0;
-    letter-spacing: normal;
-    font-size: 0.75rem;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .container-oldComments {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .container-oldComments {
-    width: 33%;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .container-oldComments {
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
-  }
-}
-
-/* END ==== for old comments from TalkYard */
-
-.bg-primary {
-  background-color: $blue !important;
-}
-
-.bg-dark {
-  margin-top: 2.5rem;
-  background-color: $darkblue !important;
-	padding: 0.5rem 0 1rem 0;
-  div, p {
-    color: #fff;
-	}
-	h3, p {
-		margin: 0;
-		padding: 0.15rem 0;
-  }
-  h3.prevnextH3 {
-    font-size: 1.875rem;
-  }
-  p.prevnextP {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 1.25rem;
-  }
-  a, a:hover, a:focus {
-    color: #aaddff !important;
-  }
-  a {
-    border-bottom: 0;
-  }
-  a:hover, a:focus {
-    border-bottom: 1px solid #aaddff !important;
-  }
-}
-
-.btn-primary {
-  background-color: $blue;
-  border-color: $blue;
-  color: #fff;
-  border-radius: 6px;
-  padding: 0.25rem 0.5rem;
-}
-
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: $darkblue;
-  border-color: $darkblue;
-}
-
-li p {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  width: 100% !important;
-}
-
-.gradient-titles {
-  background-image: linear-gradient(to bottom, var(--gradient-color-stops));
-  --gradient-from-color: #0000aa;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 170, 0));
-  --gradient-to-color: #000;
-}
-
-img.homeHeroImage {
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.homeOpen {
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    font-size: 1.25rem;
-  }
-  @media screen and (min-width: 1921px) {
-    font-size: 2.5rem;
-  }
-}
-
+// === for home page
 .homePost {
   &-Div {
     padding-top: 1.5em;
@@ -661,22 +482,285 @@ img.homeHeroImage {
     }
   }
 }
+// === end, for home page
 
-/*
-span.caption {
-  text-shadow: none;
+// === for billboard.html partial
+
+.billboard {
+  &-div {
+    text-align: center;
+    position: relative;
+    height: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    @media screen and (min-width: 1024px) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    @media screen and (min-width: 1536px) {
+      padding-right: 8rem;
+      padding-left: 8rem;
+    }
+  }
+  &-title-block {
+    display: block;
+    width: 100%;
+    padding-top: 2em;
+  }
+  &-title-block-fit {
+    display: block;
+    width: 100%;
+  }
+  &-title-text, &-subtitle-text, &-description-text {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.25em; // definitely em, not rem
+  }
+  &-title-text {
+    font-size: 2.5rem;
+    padding-top: 0.5em; // definitely em, not rem
+    padding-bottom: 0;
+    line-height: 1em;
+    letter-spacing: -0.035em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 3rem;
+      font-size: 3.75rem;
+      padding-right: 4%;
+      padding-left: 4%;
+    }
+    @media screen and (min-width: 1536px) {
+      padding-top: 4rem;
+      font-size: 5rem;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+  }
+  &-subtitle-text {
+    font-size: 1.5rem;
+    padding-top: 0.75em; // definitely em, not rem
+    padding-bottom: 0.5em; // definitely em, not rem
+    letter-spacing: -0.04em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 1em; // definitely em, not rem
+      font-size: 2.25rem;
+      padding-right: 4%;
+      padding-left: 4%;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 3rem;
+      padding-top: 0.75em; // definitely em, not rem
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+  }
+  &-description-text {
+    padding-top: 0.25em; // definitely em, not rem
+    letter-spacing: -0.0125em;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.625rem;
+      padding-top: 1.25em;
+      padding-right: 16rem;
+      padding-left: 16rem;
+      letter-spacing: -0.0375em;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 2rem;
+      padding-top: 2em;
+      padding-right: 24rem;
+      padding-left: 24rem;
+      letter-spacing: -0.05em;
+      line-height: 1.25em;
+    }
+  }
+  &-p-text {
+    text-align: center;
+    font-size: 1.125rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.25rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.375rem;
+    }
+  }
 }
 
-span.caption a {
-  color: #bbeeff;
-  border-bottom: 1px solid #bbeeff;
+// === end, for billboard.html partial
+
+
+table.leagues {
+	width: 90%;
+	margin: 1rem auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+	@media (min-width: 900px) {
+		width: 60%;
+	}
+	td.col {
+		width: 50%;
+	}
 }
 
-span.caption a:focus, span.caption a:hover, span caption a:active {
-  color: #edf2f7;
-  border-bottom: #bbeeff;
+table.noborders {
+  width: 100%;
+  margin: 1.5rem auto 1rem auto;
+  border: 0;
+  border-collapse: collapse;
+  tr {
+    @media (prefers-color-scheme: dark) {
+      background-color: $default-color-dark-mode;
+      color: $default-color;
+    }
+  }
+  td {
+    text-align: left !important;
+    vertical-align: middle;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;  
+    }
+  }
+  tr:nth-child(even) {
+    background-color: #dfefff;
+  }
+  thead {
+    background-color: $darkblue;
+  }
+  thead tr {
+    @media (prefers-color-scheme: dark) {
+      background-color: $darkblue;
+    }
+  }
+  thead td {
+    color: #fff !important;
+    font-weight: bold;
+    font-family: $sans-serif;
+  }
+  td.td70 {
+    width: 70%;
+    img {
+      display: block;
+      width: 50%;
+      max-width: 50%;
+      height: auto;
+    }
+  }
+  td.td30 {
+    width: 30%;
+  }
 }
-*/
+
+.container {
+  // width: 90%;
+  margin: 0 auto;
+  &-home {
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 90%;
+    h1 {
+      font-size: 1.25rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (min-width: 1536px) {
+        font-size: 1.75rem;;
+      }
+    }
+  }
+  &-narrower {
+    margin: 1rem auto 0 auto;
+    width: 80%;
+    figure img {
+      width: 100%;
+    }
+    .twitter-tweet {
+      margin: 1rem auto 0 auto;
+      padding: 0.25rem;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 2px solid $grey-1;
+      @media screen and (prefers-color-scheme: dark) {
+        border: 2px solid $grey-2;
+      }
+    }
+    @media (min-width: 900px) {
+      width: 40%;
+    }
+  }
+  &-comments {
+    font-size: 85%;
+    width: 85%;
+    max-width: 720px !important;
+    margin-bottom: 0;
+    @media (min-width: 900px) {
+      width: 40%;
+    }
+  }
+  &-oldComments { // old comments from Talkyard
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    display: block;
+    margin: 2rem auto 0 auto;
+    padding: 1rem 0;
+    width: 75%;
+    @media screen and (min-width: 1024px) {
+      width: 40%;
+    }
+    @media screen and (min-width: 1536px) {
+      width: 33%;
+    }    
+    @media (prefers-color-scheme: dark) {
+      border-top: 1px solid #999;
+      border-bottom: 1px solid #999;
+    }
+    h3 {
+      margin: 0;
+      text-align: center;
+      font-size: 1.75rem;
+      letter-spacing: -0.025rem;
+    }
+    p.commentDisclaimer {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+    p.commentName {
+      font-size: 0.75rem;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    .commentDate {
+      font-size: 0.85em;
+    }
+    p.comment {
+      margin-top: 0;
+      margin-bottom: 0;
+      letter-spacing: normal;
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+li p {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+.homeOpen {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: 1921px) {
+    font-size: 2.5rem;
+  }
+}
 
 article {
   padding-top: 1em; // definitely em, not rem
@@ -700,6 +784,7 @@ article {
   }
 }
 
+// == footnotes == //
 .footnote-sim {
   font-size: 0.65em;
   color: #0000ff;
@@ -722,6 +807,11 @@ article {
   }
 }
 
+a.footnote-return{
+  font-size: 50%;
+}
+// == end, footnotes == //
+
 .yellowBox {
   font-family: $sans-serif;
   display: block;
@@ -731,7 +821,6 @@ article {
   margin: 0.5rem auto;
   width: 100%;
   padding: 1.5rem;
-
   @media (prefers-color-scheme: dark) {
     background: #332200;
     border: 1px solid $grey-1;
@@ -741,9 +830,8 @@ article {
 img.containedImage {
   display: block;
   width: 100%;
-  min-width: 100%;
-  max-width: 100%;
   height: auto;
+  margin: 1rem auto;
   margin-right: auto;
   margin-left: auto;
 }
@@ -755,25 +843,3 @@ img.containedImage {
   line-height: 1.375;
   text-align: center;
 }
-
-/* from vanilla-lazyload */
-.lazy {
-  opacity: 0;
-}
-
-.lazy:not(.initial) {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.lazy.initial,
-.lazy.loaded,
-.lazy.error {
-  opacity: 1;
-}
-
-.lazy:not([src]) {
-  visibility: hidden;
-}
-/* end of CSS from vanilla-lazyload */
