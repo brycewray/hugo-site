@@ -4,7 +4,7 @@ subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
-#lastmod: TBD
+lastmod: 2021-02-07T15:00:00-06:00
 #draft: false
 discussionId: "2021-02-simplify-simplify"
 ---
@@ -94,7 +94,7 @@ So, over the last few days, I put in place this plan:
 
 [^simpCSS]: Of course, there's also a possibility that I'll decide the true route of simplicity for my styling concerns would be to *keep* the Tailwind/PostCSS combo rather than committing to the somewhat more tedious maintenance of bespoke SCSS.
 
-At least until I decide that last item, I am maintaining two different themes in the Hugo repo. One is built on Tailwind, and the other on SCSS. (I named them "thoreau" and "thoreauscss," respectively.) While I continue to consider the choice, I can easily switch back and forth between them with a simple edit to the site's [config file](https://gohugo.io/getting-started/configuration/).
+At least until I decide that last item, I am maintaining two different themes in the Hugo repo. One is built on Tailwind, and the other on SCSS. (I named them "thoreau" and "thoreauscss," respectively.) While I continue to consider the choice, I can easily switch back and forth between them with a simple edit to the site's [config file](https://gohugo.io/getting-started/configuration/). *[**Update, 2021-02-07**: Decided to go with SCSS, and also back to [system fonts](/posts/2018/10/web-typography-part-2) to [reduce or eliminate CLS](https://web.dev/cls/).]*
 
 {{< yellowBox >}}**Important**: Be assured that every compliment I've ever paid to Eleventy, Tailwind, and/or PostCSS still applies. For those who *don't* have a problem with Node.js dependencies, I continue to give my highest recommendation to these projects, most especially Eleventy. All three are actively and lovingly maintained, and currently are far and away the best of their respective breeds (in Eleventy's case, that would be JavaScript-based SSGs).{{< /yellowBox >}}
 
