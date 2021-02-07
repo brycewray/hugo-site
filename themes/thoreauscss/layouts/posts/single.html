@@ -8,7 +8,7 @@
       {{ $minutes := math.Floor (div $readTime 60) }}
       {{ $seconds := mod $readTime 60 }}
       {{ $seconds := printf "%02d" $seconds }}
-      <p class="legal ctr"><em>Estimated reading time: {{ $minutes }}:{{ $seconds }}</em></p>
+      <p class="legal ctr">Estimated reading time: {{ $minutes }}:{{ $seconds }}</p>
       <div class="post-line"></div>
       {{ .Content }}
     </article>

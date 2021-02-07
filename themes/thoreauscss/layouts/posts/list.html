@@ -99,7 +99,7 @@
           {{ $seconds := mod $readTime 60 }}
           {{ $seconds := printf "%02d" $seconds }}
           <p class="posts-ReadingTime">
-            <em>Estimated reading time: {{ $minutes }}:{{ $seconds }}</em>
+            Estimated reading time: {{ $minutes }}:{{ $seconds }}
           </p>
 				</div>
       {{ end }}
