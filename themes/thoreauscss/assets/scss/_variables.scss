@@ -27,8 +27,8 @@ $code-color-blueLight-dark-mode: #88ddff;
 $code-color-orange-dark-mode: #ffaa00;
 
 // Typography
-$sans-serif: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$sans-serif-boot: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // based on the simplified system stack in Bootstrap 4 as of November, 2018
+$sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$sans-serif-boot: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // based on the simplified system stack in Bootstrap 4 as of November, 2018
 $serif-primary: Georgia, "Droid Serif", Times, "Times New Roman", serif;
 $serif-secondary: "Georgia", serif;
 $monospaced: SFMono-Regular, Menlo, Consolas, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

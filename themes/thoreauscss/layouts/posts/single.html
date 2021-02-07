@@ -8,7 +8,7 @@
       {{ $minutes := math.Floor (div $readTime 60) }}
       {{ $seconds := mod $readTime 60 }}
       {{ $seconds := printf "%02d" $seconds }}
-      <p class="legal ctr"><em>Estimated reading time: {{ $minutes }}:{{ $seconds }}</em></p>
+      <p class="legal ctr">Estimated reading time: {{ $minutes }}:{{ $seconds }}</p>
       <div class="post-line"></div>
       {{ .Content }}
     </article>
@@ -18,7 +18,7 @@
 
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark sansSerif">
-      <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
+      <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
 			<p class="ctr prevnextP">
 				{{ with .NextInSection }}
 					<strong>Next</strong>:
