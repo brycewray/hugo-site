@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf public",
-    "start": "NODE_ENV=production npm-run-all clean dev:hugo",
-    "startIP": "NODE_ENV=production npm-run-all clean devIP:hugo",
+    "start": "NODE_ENV=development npm-run-all clean dev:hugo",
+    "startIP": "NODE_ENV=development npm-run-all clean devIP:hugo",
     "build": "NODE_ENV=production npm-run-all clean prod:hugo",
     "testbuild": "NODE_ENV=production npm-run-all clean testbuild:hugo",
     "testbuildIP": "NODE_ENV=production npm-run-all clean testbuildIP:hugo",
