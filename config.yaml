@@ -1,7 +1,7 @@
 baseURL: https://brycewray.com
 languageCode: en-us
 title: BryceWray.com
-theme: thoreauscss
+theme: thoreau
 # theme choices are:
 # - thoreau, which uses PostCSS and Tailwind CSS
 # - thoreauscss, which uses SCSS with no need for outside dependencies
