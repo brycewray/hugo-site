@@ -73,7 +73,6 @@
   <link rel="preconnect" href="https://res.cloudinary.com" />
 
   <!-- CSS/SCSS -->
-  <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin="anonymous" />
   {{ with resources.Get "scss/index.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
