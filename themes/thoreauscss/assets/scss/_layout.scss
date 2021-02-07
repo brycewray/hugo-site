@@ -346,46 +346,46 @@ a.footnote-return{
   &-Title {
     margin-bottom: 0.25em;
     padding: 0;
+    font-size: 1.5rem;
+    letter-spacing: -0.025em;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.75rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 2rem;
+    }
+  }
+  &-Subtitle {
+    letter-spacing: -0.0125em;
     font-size: 1rem;
-    letter-spacing: -0.0375em;
+    margin-bottom: 0;
     @media screen and (min-width: 1024px) {
       font-size: 1.25rem;
     }
     @media screen and (min-width: 1536px) {
-      font-size: 1.75rem;
-    }
-  }
-  &-Subtitle {
-    letter-spacing: -0.025em;
-    font-size: 0.875rem;
-    margin-bottom: 0;
-    @media screen and (min-width: 1024px) {
-      font-size: 1rem;
-    }
-    @media screen and (min-width: 1536px) {
-      font-size: 1.125rem;
+      font-size: 1.5rem;
     }
   }
   &-Dates {
-    font-size: 0.625rem;
-    line-height: 1.25em;
-    margin-top: 0.5em;
-    @media screen and (min-width: 1024px) {
-      font-size: 0.75rem;
-    }
-    @media screen and (min-width: 1536px) {
-      font-size: 0.875rem;
-    }
-  }
-  &-Description {
     font-size: 0.75rem;
     line-height: 1.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     @media screen and (min-width: 1024px) {
       font-size: 0.875rem;
     }
     @media screen and (min-width: 1536px) {
       font-size: 1rem;
+    }
+  }
+  &-Description {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.125rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.25rem;
     }
   }
   &-ReadingTime {
@@ -495,15 +495,15 @@ a.footnote-return{
   &-title-text, &-subtitle-text, &-description-text {
     margin: 0 auto;
     text-align: center;
-    padding-right: 4%;
-    padding-left: 4%;
+    padding-right: 2%;
+    padding-left: 2%;
     @media screen and (min-width: 1024px) {
-      padding-right: 7%;
-      padding-left: 7%;
+      padding-right: 3%;
+      padding-left: 3%;
     }
     @media screen and (min-width: 1536px) {
-      padding-right: 10%;
-      padding-left: 10%;
+      padding-right: 4%;
+      padding-left: 4%;
     }
   }
   &-title-text {
