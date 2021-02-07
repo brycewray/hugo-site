@@ -3,7 +3,6 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: {
     content: [
-      './themes/ofotitwcss/layouts/**/*.html',
       './themes/thoreau/layouts/**/*.html',
     ],
   },
