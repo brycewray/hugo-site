@@ -74,8 +74,14 @@
 
   <!-- CSS -->
   <link rel="preload" as="font" href="/fonts/Inter-3-15_subset_2020-08-20.woff2" type="font/woff2" crossorigin="anonymous" />
-  {{ with resources.Get "css/index.css" | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") }}
+  {{ if not .Site.IsServer }}<!-- production only -->
+    {{ with resources.Get "css/index.css" | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") }}
     <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
+  {{ else }}<!-- development only -->
+    {{ $css := resources.Get "css/index.css" }}
+    {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
   {{ end }}
   <noscript><style>.lazy {display: none !important;}</style></noscript>
 
