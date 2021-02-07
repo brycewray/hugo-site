@@ -1,9 +1,6 @@
 // CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/WRwJQX
 
-// keep header here rather than base or layout SCSS
-
-// var just for this one:
-$breakpoint: 900px;
+$navBreakpoint: 900px;
 
 header {
   height: 30px;
@@ -17,30 +14,25 @@ header {
 }
 
 .nav {
-
   &__bar {
     background-color: $darkblue;
     padding-top: $nav-height;
-
-    @media (min-width: $breakpoint) {
+    @media (min-width: $navBreakpoint) {
       max-height: none;
       text-align: center;
     }
   }
-
   &__item {
     padding: 0;
     margin: 0;
     background: $darkblue; // example was #fff
-
-    @media (min-width: $breakpoint) {
+    @media (min-width: $navBreakpoint) {
       display: inline-block;
       text-transform: lowercase;
       font-variant: small-caps;
       font-weight: bold;
       letter-spacing: 0.15rem;
     }
-
     a {
       display: block;
       padding: 0.5em 1.5em; // definitely em, not rem
@@ -49,25 +41,21 @@ header {
       background: $darkblue;
       text-decoration: none;
       transition: opacity 0.5s ease;
-
-      @media (min-width: $breakpoint) {
+      &:link, &:visited {
+        color: #fff;
+      }
+      &:hover, &:focus {
+        text-decoration: none;
+        opacity: 0.7;
+     }
+      @media (min-width: $navBreakpoint) {
         font-size: 1.1rem;
         display: inline-block;
         padding: 0 1em;
         border: none;
       }
-
-      &:link, &:visited {
-        color: #fff;
-      }
-
-      &:hover, &:focus {
-        text-decoration: none;
-        opacity: 0.7;
-      }
     }
   }
-
   &__icon {
     display: block;
     position: absolute;
@@ -78,22 +66,18 @@ header {
     cursor: pointer;
     text-indent: -9999px; // hide the label
     transition: all 1s cubic-bezier(.19, 1, .22, 1);
-
-     //Remove blinking cursor
-     border: none;
-     color: transparent;
-     text-shadow: 0 0 0 gray;
-     text-align: center;
- 
-     &:focus {
-         outline: none;
-     }
- 
-     @media (min-width: $breakpoint) {
-       display: none;
-     }
-   }
- 
+    //Remove blinking cursor
+    border: none;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+    text-align: center;
+    &:focus {
+      outline: none;
+    }
+    @media (min-width: $navBreakpoint) {
+      display: none;
+    }
+   } 
    &__icon-line {
      position: absolute;
      display: block;
@@ -104,54 +88,44 @@ header {
      left: 0;
      text-indent: 0;
      transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
- 
      &:first-child {
        top: 0;
      }
- 
      &:nth-child(2) {
        top: 8px;
-     }
- 
+    }
      &:nth-child(3) {
        top: 16px;
-     }
-   }
- }
+    }
+  }
+}
  
  // Checkbox hack for toggling mobile menu
  input[type=checkbox] {
    display: none;
-   visibility: hidden;
- 
-   &:checked {
- 
+   visibility: hidden; 
+   &:checked { 
      ~ nav .nav__items {
        height: auto;
        max-height: 30rem;
        transition: all 2s cubic-bezier(.5, 1, .22, 1);
-     }
- 
+     } 
      ~ label .nav__icon-line:first-child {
        top: 0px;
        width: 27px;
        transform: translateX(-8px) rotate(-45deg) translateY(12px);
-     }
- 
+     } 
      ~ label .nav__icon-line:nth-child(2) {
        opacity: 0;
-     }
- 
+     } 
      ~ label .nav__icon-line:nth-child(3) {
        top: 14px;
        width: 27px;
        transform: translateX(-5px) rotate(45deg) translateY(-8px);
      }
    }
- }
+}
  
-
-
 nav {
   position: absolute;
   text-align: left;
@@ -214,16 +188,13 @@ nav {
 
 
 // === Beginning of primary settings for larger screens ===
-
 @media screen and (min-width: 900px) {
   .nav-toggle-label {
     display: none;
   }
-
   .nav__item {
     font-size: 1.1rem;
   }
-  
   header {
     display: table;
     display: -ms-grid;
@@ -231,7 +202,6 @@ nav {
     grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
     position: fixed;
   }
-
   .site-logo {
     z-index: 999999;
     display: grid-item;
@@ -239,8 +209,7 @@ nav {
     text-align: left;
     padding-left: 10%;
     font-size: $minimalbig + unquote("em");
-}
-
+  }
   nav {
     top: 25%;
     transform: none;
@@ -262,6 +231,4 @@ nav {
     }
   }
 }
-
-
 // === End of primary settings for larger screens ===
