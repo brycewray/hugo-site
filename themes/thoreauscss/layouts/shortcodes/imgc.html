@@ -46,7 +46,7 @@
 {{- end -}}
 {{- $stringtoRet := .Scratch.Get "innerString" }}
 {{- $stringtoRet := substr $stringtoRet 0 -2 -}}
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s" $stringtoRet "' alt='" $alt "' width='" $width "' height='" $height "' sizes='" $dataSzes "' />" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s" $stringtoRet "' alt='" $alt "' width='" $width "' height='" $height "' loading='lazy' sizes='" $dataSzes "' />" -}}
 {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><img class='" $nscClass "' src='" $cloudiBase "f_auto,q_auto:eco,w_300" $xFmPart2 $src "' alt='" $alt "' /></noscript></div>" -}}
 
 {{- $stringtoRet | safeHTML -}}
