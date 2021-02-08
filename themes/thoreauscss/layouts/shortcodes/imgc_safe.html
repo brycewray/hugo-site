@@ -1,0 +1,49 @@
+<!--
+  This shortcode takes the following form: 
+  imgc src, alt, width, height
+  ...with 'src' in the form of (note NO leading or ending slash):
+  filename.ext
+  ...and 'tmpl' optional in body copy. The template is used 
+  to specify hero images on either the home page ('index') or 
+  post pages ('posts'). Without this parameter, the defaults 
+  cause body-copy-style image-handling.
+
+  This is based on the `lazy-picture.js` shortcode from 
+  the eleventy_solo repo.
+-->
+<!-- init -->
+{{ $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" }}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
+{{ $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" }}
+{{/*
+  ===
+  Can't use the xFmPart1 from previous Eleventy shortcode because the `q_auto:eco` in a variable causes Hugo problems for some reason.
+  ===
+*/}}
+{{ $xFmPart2 := ",x_0,z_1/" }}
+
+{{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
+{{ $divClass := "relative" }}
+{{ $imgClass := "containedImage" }}
+{{ $nscClass := "containedImage" }}
+{{ $dataSzes := "(min-width: 1024px) 25vw, 100vw" }}
+{{ $stringtoRet := "" }}{{/* init */}}
+{{ $separator := ", " }}
+
+<div class='{{ $divClass }}'>
+  <img
+    class='{{ $imgClass }}' 
+    src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $src }}' 
+    srcset='
+    {{ range $respSizes }}{{ if ge $width . }}{{ $cloudiBase }}f_auto,q_auto:eco,w_{{ . }}{{ $xFmPart2 }}{{ $src }} {{ . }}w{{ $separator }}{{ end }}{{ end }}' alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" 
+    sizes="{{ $dataSzes }}" />
+  <noscript>
+    <img
+      class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_300,x_0,z_1/{{ $src }}" alt="{{ $alt }}" 
+    />
+  </noscript>
+</div>
