@@ -298,11 +298,14 @@ footer {
   }
   ol li {
     margin-bottom: 0.5rem;
-    line-height: 1.5rem;
     font-size: $pokey + unquote("rem");
   }
   li p {
     font-size: 100%;
+    line-height: 1.4;
+  }
+  .footnote-backref {
+    font-size: 75%;
   }
 }
 
@@ -699,34 +702,6 @@ article {
     margin-top: 1.25em; // definitely em, not rem
   }
 }
-
-// == footnotes == //
-.footnote-sim {
-  font-size: 0.65em;
-  color: #0000ff;
-  @media (prefers-color-scheme: dark) {
-    color: #00aaff;
-  }
-}
-
-.footnotes {
-  ol {
-    padding-inline-start: 1.5rem;
-  }
-  ol li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5rem;
-    font-size: $pokey + unquote("rem");
-  }
-  li p {
-    font-size: 100%;
-  }
-}
-
-a.footnote-return{
-  font-size: 50%;
-}
-// == end, footnotes == //
 
 .yellowBox {
   font-family: $sans-serif;
