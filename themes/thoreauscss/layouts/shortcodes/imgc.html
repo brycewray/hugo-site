@@ -39,10 +39,10 @@
 {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "'><img class='" $imgClass "' src='" $cloudiBase "f_auto,q_auto:eco,w_600,x_0,z_1/" $src "' srcset='" -}}
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
-{{- if ge $width . -}}
-{{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase "f_auto,q_auto:eco,w_" . $xFmPart2 $src " " . "w" $separator -}}
-{{- $.Scratch.Add "innerString" $innerString }}
-{{- end -}}
+  {{- if ge $width . -}}
+    {{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase "f_auto,q_auto:eco,w_" . $xFmPart2 $src " " . "w" $separator -}}
+    {{- $.Scratch.Add "innerString" $innerString }}
+  {{- end -}}
 {{- end -}}
 {{- $stringtoRet := .Scratch.Get "innerString" }}
 {{- $stringtoRet := substr $stringtoRet 0 -2 -}}
