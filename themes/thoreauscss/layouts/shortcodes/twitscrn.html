@@ -1,41 +1,42 @@
-<!--
+{{/*
   This shortcode takes the following form: 
   twitscrn imageUrl, alt, width, height, twitterUrl
--->
+*/}}
 
-<!-- init -->
-{{ $imageUrl := .Get "imageUrl" }}
-{{ $alt := .Get "alt" }}
-{{ $width := .Get "width" }}
-{{ $height := .Get "height" }}
-{{ $twitterUrl := .Get "twitterUrl" }}
+{{/* init vars */}}
+{{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+{{- $imageUrl := .Get "imageUrl" -}}
+{{- $alt := .Get "alt" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $twitterUrl := .Get "twitterUrl" -}}
 
-{{ $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" }}
+{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+{{/*
+  ===
+  Can't use the xFmPart1 from previous Eleventy shortcode because the `q_auto:eco` in a variable causes Hugo problems for some reason.
+  ===
+*/}}
+{{- $xFmPart2 := ",x_0,z_1/" -}}
 
 {{ $imgClass := "containedImage" }}
 {{ $nscClass := "containedImage" }}
 {{ $dataSzes := "(min-width: 1024px) 25vw, 100vw" }}
+{{- $stringtoRet := "" -}}{{/* init */}}
+{{- $separator := ", " -}}
+{{- $innerString := "" -}}{{/* init */}}
 
-<div class="twitter-tweet">
-  <a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
-  <img
-    class='{{ $imgClass }}' 
-    src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $imageUrl }}' 
-    srcset='
-    {{ if ge $width 300 }}{{ $cloudiBase }}f_auto,q_auto:eco,w_300,x_0,z_1/{{ $imageUrl }} 300w{{ end }}{{ if ge $width 450 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_450,x_0,z_1/{{ $imageUrl }} 450w{{ end }}{{ if ge $width 600 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_600,x_0,z_1/{{ $imageUrl }} 600w{{ end }}{{ if ge $width 750 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_750,x_0,z_1/{{ $imageUrl }} 750w{{ end }}{{ if ge $width 900 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_900,x_0,z_1/{{ $imageUrl }} 900w{{ end }}{{ if ge $width 1050 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_1050,x_0,z_1/{{ $imageUrl }} 1050w{{ end }}{{ if ge $width 1200 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_1200,x_0,z_1/{{ $imageUrl }} 1200w{{ end }}{{ if ge $width 1350 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_1350,x_0,z_1/{{ $imageUrl }} 1350w{{ end }}{{ if ge $width 1500 }}, 
-    {{ $cloudiBase }}f_auto,q_auto:eco,w_1500,x_0,z_1/{{ $imageUrl }} 1500w{{ end }}' alt='{{ $alt }}
-    ' width='{{ $width }}' height='{{ $height }}' sizes='{{ $dataSzes }}' loading='lazy'
-  /></a>
-  <noscript>
-    <a href="{{ $twitterUrl }}" target="_blank" rel="noopener"></a><img
-      class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_300,x_0,z_1/{{ $imageUrl }}" alt="{{ $alt }}" 
-    />
-  </noscript>
-</div>
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' src='" $cloudiBase "f_auto,q_auto:eco,w_600,x_0,z_1/" $imageUrl "' srcset='" -}}
+  {{- $.Scratch.Set "innerString" $stringtoRet -}}
+  {{- range $respSizes -}}
+  {{- if ge $width -}}
+  {{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase "f_auto,q_auto:eco,w_" . $xFmPart2 $imageUrl " " . "w" $separator -}}
+  {{-  $.Scratch.Add "innerString" $innerString -}}
+  {{- end -}}
+  {{- end -}}
+  {{- $stringtoRet := .Scratch.Get "innerString" -}}
+  {{- $stringtoRet := substr $stringtoRet 0 -2 -}}
+  {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s" $stringtoRet "' alt='" $alt "' width='" $width "' height='" $height "' loading='lazy' sizes='" $dataSzes "' /></a>" -}}
+  {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $nscClass "' src='" $cloudiBase "f_auto,q_auto:eco,w_300" $xFmPart2 $imageUrl "' alt='" $alt "' /></a></noscript></div>" -}}
+
+{{- $stringtoRet | safeHTML -}}
