@@ -11,12 +11,12 @@
 {{- $height := .Get "height" -}}
 {{- $twitterUrl := .Get "twitterUrl" -}}
 
+{{/* 
+  separating the Cloudinary-related vars for greater flexibility, especially in case somebody else 
+  wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
+*/}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
-{{- /*
-  ===
-  Can't use the xFmPart1 from previous Eleventy shortcode because the `q_auto:eco` in a variable causes Hugo problems for some reason.
-  ===
-*/ -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
 {{- $imgClass := "containedImage" -}}
@@ -26,17 +26,17 @@
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' src='" $cloudiBase "f_auto,q_auto:eco,w_600,x_0,z_1/" $imageUrl "' srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' srcset='" -}}
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
   {{- if ge $width -}}
-    {{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase "f_auto,q_auto:eco,w_" . $xFmPart2 $imageUrl " " . "w" $separator -}}
+    {{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase $xFmPart1 . $xFmPart2 $imageUrl " " . "w" $separator -}}
     {{-  $.Scratch.Add "innerString" $innerString -}}
   {{- end -}}
 {{- end -}}
 {{- $stringtoRet := .Scratch.Get "innerString" -}}
 {{- $stringtoRet := substr $stringtoRet 0 -2 -}}
 {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s" $stringtoRet "' alt='" $alt "' width='" $width "' height='" $height "' loading='lazy' sizes='" $dataSzes "' /></a>" -}}
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $nscClass "' src='" $cloudiBase "f_auto,q_auto:eco,w_300" $xFmPart2 $imageUrl "' alt='" $alt "' /></a></noscript></div>" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $nscClass "' src='" $cloudiBase $xFmPart1 "300" $xFmPart2 $imageUrl "' alt='" $alt "' /></a></noscript></div>" -}}
 
 {{- $stringtoRet | safeHTML -}}
