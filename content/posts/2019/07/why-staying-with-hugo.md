@@ -62,7 +62,7 @@ Boy, howdy, did I dodge a bullet when he declined.[^demur] Only now do I know ju
 
 [^demur]: He demurred after, as I recall, doing a web search and finding some reports about some limits on what the then-v.1.0 Gatsby could do in his particular kind of use case.
 
-You see, what I **didn't** do back then was follow up from those tutorials by setting up my own Gatsby site; all I saw at the time was the carefully charted path laid out in the tutorials. As you can well guess, they make it seem that, if you just follow the instructions, you'll have a Gatsby site up, running, and data-gulping faster than you can say, "F. Scott Fitzgerald."[^Leo]
+You see, what I **didn't** do back then was follow up from those tutorials by setting up my own Gatsby site; all I saw at the time was the carefully charted path laid out in the tutorials. As you can well guess, they make it seem that, if you just follow the instructions, you'll have a Gatsby site up, running, and data-gulping faster than you can say, "F. Scott Fitzgerald.”[^Leo]
 
 [^Leo]: Or "[Leonardo DiCaprio](https://www.imdb.com/title/tt1343092/?ref_=fn_al_tt_3)" or even "[Robert Redford](https://www.imdb.com/title/tt0071577/?ref_=fn_al_tt_4)," if you're so inclined.
 
@@ -72,7 +72,7 @@ You see, what I **didn't** do back then was follow up from those tutorials by se
 
 Fast forward to a month ago. In the Day Job, I was spending many hours on a particular project that was replete with JavaScript.
 
-You have to understand that, as an Old Web Guy<span style="vertical-align: top; line-height: -0.01; font-size: 60%;">&trade;</span>, I earned my website dev chops in another era. Back then, [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) had [fallen into disrepute](https://crockford.com/javascript/javascript.html) except for [those things which utterly had to be done client-side](https://en.wikipedia.org/wiki/Ajax_%28programming%29), server-side languages (like [PHP](https://www.php.net)) were all that really mattered, and too many browsers simply didn't handle JavaScript correctly (or, as in the case of the company for which I worked back then, too many customers had it turned off by default) for me to count on its utility.
+You have to understand that, as an Old Web Guy<sup>&trade;</sup>, I earned my website dev chops in another era. Back then, [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) had [fallen into disrepute](https://crockford.com/javascript/javascript.html) except for [those things which utterly had to be done client-side](https://en.wikipedia.org/wiki/Ajax_%28programming%29), server-side languages (like [PHP](https://www.php.net)) were all that really mattered, and too many browsers simply didn't handle JavaScript correctly (or, as in the case of the company for which I worked back then, too many customers had it turned off by default) for me to count on its utility.
 
 Yes, I knew [things had changed](https://medium.com/@alexbeletsky/renaissance-of-javascript-485118447cf9) for JavaScript since then, especially since [2015](https://ecma-international.org/ecma-262/6.0/) or so, but I just didn't care. Besides, I usually had other ways to do JS-like things, especially once I was tasked with maintaining CMS-based sites; so, until lately, I maintained that standoffishness toward JS.
 
