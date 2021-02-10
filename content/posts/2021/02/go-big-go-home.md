@@ -4,7 +4,7 @@ subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-#lastmod:
+#lastmod: 2021-02-10T12:28:00-06:00 # same date - adding photo caption
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 ---
@@ -40,6 +40,8 @@ The shortcode we're discussing here, initially created in the Eleventy site as *
 For example, I can insert all the code required for a responsive display of the following image&nbsp;.&nbsp;.&nbsp;.
 
 {{< imgc src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width="1984" height="1118" >}}
+
+{{% imgcCapt %}}Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/){{% /imgcCapt %}}
 
 .&nbsp;.&nbsp;. by inserting this shortcode in my Eleventy repo:
 
