@@ -20,7 +20,7 @@ featured_image_caption: |
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-{{< twitscrn imageUrl="Twitter_1210975092999704578.png" alt="Tweet by @BryceWrayTX, 2019-12-28: Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss, etc.). They seem aimed at the multi-project, multi-dev use case. But what if it's just one personal website with one maintainer (HTML and CSS)? Worth it then?" width="1182" height="516" twitterUrl="https://twitter.com/BryceWrayTX/status/1210975092999704578" >}}
+{{< twitscrn imageUrl="Twitter_1210975092999704578.png" alt="Tweet by @BryceWrayTX, 2019-12-28: Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss, etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?" width="1182" height="516" twitterUrl="https://twitter.com/BryceWrayTX/status/1210975092999704578" >}}
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 

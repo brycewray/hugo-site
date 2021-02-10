@@ -20,7 +20,7 @@ featured_image_caption: |
 
 "Initially, the defendant made the following assertions:"
 
-{{< twitscrn imageUrl="Twitter_1140023324988313601.png" alt="Tweet from @BryceWrayTX, 2019-06-15: Can't totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to @DuckDuckGo. #UnGoogle" width="1182" height="474" twitterUrl="https://twitter.com/BryceWrayTX/status/1140023324988313601" >}}
+{{< twitscrn imageUrl="Twitter_1140023324988313601.png" alt="Tweet from @BryceWrayTX, 2019-06-15: Can’t totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to @DuckDuckGo. #UnGoogle" width="1182" height="474" twitterUrl="https://twitter.com/BryceWrayTX/status/1140023324988313601" >}}
 
 ".&nbsp;.&nbsp;. and .&nbsp;.&nbsp;."
 
@@ -32,15 +32,15 @@ featured_image_caption: |
 
 "Unfortunately, your honor, this seemingly noble and well-intentioned course of action was derailed yesterday, as shown here&nbsp;.&nbsp;.&nbsp;."
 
-{{< twitscrn imageUrl="Twitter_1165327910078681088.png" alt="Tweet from @BryceWrayTX, 2019-08-24: Full disclosure: I dumped my long-standing @Google account recently, but found the resulting inconveniences greater than I'd anticipated, so have created another one. #PragmaticButNotProud" width="1182" height="468" twitterUrl="https://twitter.com/BryceWrayTX/status/1165327910078681088" >}}
+{{< twitscrn imageUrl="Twitter_1165327910078681088.png" alt="Tweet from @BryceWrayTX, 2019-08-24: Full disclosure: I dumped my long-standing @Google account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. #PragmaticButNotProud" width="1182" height="468" twitterUrl="https://twitter.com/BryceWrayTX/status/1165327910078681088" >}}
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-{{< twitscrn imageUrl="Twitter_1165328656392232960.png" alt="Tweet from @BryceWrayTX, 2019-08-24: ...one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things---and, while you can use it as a “guest,” that's not ideal (by design, of course)." width="1182" height="510" twitterUrl="https://twitter.com/BryceWrayTX/status/1165328656392232960" >}}
+{{< twitscrn imageUrl="Twitter_1165328656392232960.png" alt="Tweet from @BryceWrayTX, 2019-08-24: ...one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things---and, while you can use it as a “guest,” that’s not ideal (by design, of course)." width="1182" height="510" twitterUrl="https://twitter.com/BryceWrayTX/status/1165328656392232960" >}}
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-{{< twitscrn imageUrl="Twitter_1165357162551545857.png" alt="Tweet from @BryceWrayTX, 2019-08-24: Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics --- former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I'll end up, but not thrilled about it." width="1182" height="572" twitterUrl="https://twitter.com/BryceWrayTX/status/1165357162551545857" >}}
+{{< twitscrn imageUrl="Twitter_1165357162551545857.png" alt="Tweet from @BryceWrayTX, 2019-08-24: Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics --- former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it." width="1182" height="572" twitterUrl="https://twitter.com/BryceWrayTX/status/1165357162551545857" >}}
 
 "---and, as the defendant surmised in this most recent exhibit before the court, he did indeed end up stopping the usage of the tracking-free alternative, thus compounding his crime by no longer supporting it at the same time he was returning the Evil G Empire's tracking code to its former access to his site and its visitors.
 
