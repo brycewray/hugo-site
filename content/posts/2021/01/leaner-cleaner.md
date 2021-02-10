@@ -6,7 +6,7 @@ author: Bryce Wray
 date: 2021-01-31T10:10:00-06:00
 #lastmod: TBD
 #draft: false
-discussionId: "2021-01-leaner-new-look"
+discussionId: "2021-01-leaner-cleaner"
 ---
 
 To those of you who've been here before: yep, this **is** the same site. It just looks considerably different than it did yesterday.

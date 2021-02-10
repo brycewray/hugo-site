@@ -7,7 +7,7 @@ author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
 lastmod: 2021-01-28T12:55:00-06:00
 #draft: false
-discussionId: "2021-01-gems-in-rough-2021-01"
+discussionId: "2021-01-gems-in-rough-02"
 featured_image: "gemstones-collection-3203865_4116x2304.jpg"
 featured_image_width: 4116
 featured_image_height: 2304
