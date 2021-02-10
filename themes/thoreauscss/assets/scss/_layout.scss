@@ -1,5 +1,5 @@
 html, body {
-  font-family: $sans-serif;
+  font-family: $serif-primary;
   font-weight: 425;
   color: $default-color;
   width: 100%;
@@ -21,6 +21,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $sans-serif;
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark-mode;
@@ -285,6 +286,7 @@ footer {
 
 // == footnotes == //
 .footnote-sim {
+  font-family: $sans-serif;
   font-size: 0.65em;
   color: #0000ff;
   @media (prefers-color-scheme: dark) {
@@ -292,7 +294,12 @@ footer {
   }
 }
 
+.footnote-ref {
+  font-family: $sans-serif;
+}
+
 .footnotes {
+  font-family: $sans-serif;
   ol {
     padding-inline-start: 1.5rem;
   }
@@ -476,6 +483,7 @@ a.footnote-return{
 // === for billboard.html partial
 .billboard {
   &-div {
+    font-family: $sans-serif;
     text-align: center;
     position: relative;
     height: auto;
@@ -576,6 +584,7 @@ a.footnote-return{
   // width: 90%;
   margin: 0 auto;
   &-home {
+    font-family: $sans-serif;
     text-align: center;
     padding: 2rem 0;
     margin: 0 auto;
@@ -620,6 +629,7 @@ a.footnote-return{
     }
   }
   &-oldComments { // old comments from Talkyard
+    font-family: $sans-serif;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
     display: block;
