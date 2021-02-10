@@ -1,0 +1,36 @@
+// == footnotes == //
+.footnote-sim {
+  // font-family: $sans-serif;
+  font-size: 0.65em;
+  color: #0000ff;
+  @media (prefers-color-scheme: dark) {
+    color: #00aaff;
+  }
+}
+
+.footnote-ref {
+  // font-family: $sans-serif;
+}
+
+.footnotes {
+  // font-family: $sans-serif;
+  ol {
+    padding-inline-start: 1.5rem;
+  }
+  ol li {
+    margin-bottom: 0.5rem;
+    font-size: $pokey + unquote("rem");
+  }
+  li p {
+    font-size: 100%;
+    line-height: 1.4;
+  }
+  .footnote-backref {
+    font-size: 75%;
+  }
+}
+
+a.footnote-return{
+  font-size: 50%;
+}
+// == end, footnotes == //

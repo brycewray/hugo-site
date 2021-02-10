@@ -1,0 +1,99 @@
+// === for billboard.html partial
+.billboard {
+  &-div {
+    // font-family: $sans-serif;
+    text-align: center;
+    position: relative;
+    height: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    @media screen and (min-width: 1024px) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+    @media screen and (min-width: 1536px) {
+      padding-right: 8rem;
+      padding-left: 8rem;
+    }
+  }
+  &-title-block {
+    display: block;
+    width: 100%;
+    padding-top: 2em;
+  }
+  &-title-block-fit {
+    display: block;
+    width: 100%;
+  }
+  &-title-text, &-subtitle-text, &-description-text {
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 2%;
+    padding-left: 2%;
+    @media screen and (min-width: 1024px) {
+      padding-right: 3%;
+      padding-left: 3%;
+    }
+    @media screen and (min-width: 1536px) {
+      padding-right: 4%;
+      padding-left: 4%;
+    }
+  }
+  &-title-text {
+    font-size: 2.5rem;
+    padding-top: 0.5em; // definitely em, not rem
+    padding-bottom: 0;
+    line-height: 1em;
+    letter-spacing: -0.035em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 3rem;
+      font-size: 3.75rem;
+    }
+    @media screen and (min-width: 1536px) {
+      padding-top: 4rem;
+      font-size: 5rem;
+    }
+  }
+  &-subtitle-text {
+    font-size: 1.5rem;
+    padding-top: 0.75em; // definitely em, not rem
+    padding-bottom: 0.5em; // definitely em, not rem
+    letter-spacing: -0.04em;
+    @media screen and (min-width: 1024px) {
+      padding-top: 1em; // definitely em, not rem
+      font-size: 2.25rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 3rem;
+      padding-top: 0.75em; // definitely em, not rem
+    }
+  }
+  &-description-text {
+    padding-top: 0.25em; // definitely em, not rem
+    letter-spacing: -0.01em;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.625rem;
+      padding-top: 1.25em;
+      letter-spacing: -0.015em;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 2rem;
+      padding-top: 2em;
+      letter-spacing: -0.025em;
+      line-height: 1.25em;
+    }
+  }
+  &-p-text {
+    text-align: center;
+    font-size: 1.125rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.25rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.375rem;
+    }
+  }
+}
+// === end, for billboard.html partial

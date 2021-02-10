@@ -1,0 +1,63 @@
+// === for home page
+.homePost {
+  &-Div {
+    padding-top: 1.5em;
+  }
+  &-Latest {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    font-weight: 825;
+    font-size: 2rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 4rem;
+    }
+  }
+  &-Title {
+    font-size: 1.75rem;
+    padding-top: 0.5em;
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 2.25rem;
+    }
+  }
+  &-Subtitle {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-weight: 625;
+    font-size: 1.25rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.75rem;
+    }
+  }
+  &-Dates {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 0.875rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.125rem;
+    }
+  }
+  &-Description {
+    // font-family: $sans-serif;
+    margin-top: 0.5em;
+    font-size: 0.875rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 1rem;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+// === end, for home page

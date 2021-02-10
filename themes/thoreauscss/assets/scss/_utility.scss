@@ -1,0 +1,118 @@
+// === utility classes
+.ctr {
+  text-align: center;
+}
+
+.rgt {
+  text-align: right;
+}
+
+.wht {
+  color: #fff;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.sortabig {
+  font-size: $sortabig + unquote("rem");
+}
+
+.bigger {
+  font-size: $bigger + unquote("rem");
+}
+
+.teenytxt, .teeny {
+  font-size: $teeny + unquote("rem");
+}
+
+.legaltxt, .legal {
+  font-size: $legal + unquote("rem");
+}
+
+.pokeytxt, .pokey {
+  font-size: $pokey + unquote("rem");
+}
+
+.text {
+  &-nowrap, .nobrk {
+    white-space: nowrap;
+    font-size: inherit;
+  }
+  &-link {
+    color: $blue;
+  }
+  &-link:active, &-link:focus, &-link:hover {
+    color: $darkblue;
+  }
+  &-muted {
+    color: $grey-1;
+    @media (prefers-color-scheme: dark) {
+      color: $grey-2-dark-mode;
+    }
+  }
+  &-body {
+  color: $default-color;
+  }
+}
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.bg-dark {
+  margin-top: 2.5rem;
+  background-color: $darkblue !important;
+  padding: 0.5rem 0 1rem 0;
+  div, p {
+    color: #fff;
+  }
+  h3, p {
+    margin: 0;
+    padding: 0.15rem 0;
+  }
+  h3.prevnextH3 {
+    font-size: 1.875rem;
+  }
+  p.prevnextP {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.25rem;
+  }
+  a, a:hover, a:focus {
+    color: #aaddff !important;
+  }
+  a {
+    border-bottom: 0;
+  }
+  a:hover, a:focus {
+    border-bottom: 1px solid #aaddff !important;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+.sansSerif {
+  font-family: $sans-serif;
+}
+
+.IEonly {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+// === end, utility classes
