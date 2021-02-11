@@ -6,7 +6,7 @@ subtitle: "An “interesting” learning experience"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2020-11-22T09:50:00-06:00
+lastmod: 2021-02-11T07:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_1280x720.jpg
 featured_image_width: 1280
@@ -36,7 +36,7 @@ oldComments: |
     </div>
 ---
 
-{{% yellowBox %}}**Note**: To put it simply, [things](/posts/2019/09/why-left-hugo-eleventy) [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2020/09/ignition-sequence-start) since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).{{% /yellowBox %}}
+{{% yellowBox %}}**Note**: To put it simply, [things](/posts/2019/09/why-left-hugo-eleventy) [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).{{% /yellowBox %}}
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear---and I've even said as much---that I tend to have a problem avoiding New Shiny Things where tech is concerned.
 
