@@ -28,10 +28,10 @@ $code-color-orange-dark-mode: #ffaa00;
 
 // Typography
 $sans-serif: ui-sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$sans-serif-boot: ui-sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // based on the simplified system stack in Bootstrap 4 as of November, 2018
-$serif-primary: Georgia, ui-serif, Cambria, "Times New Roman", Times, serif;
-$serif-secondary: Georgia, serif;
-$monospaced: SFMono-Regular, Menlo, Consolas, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+$monospaced: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Consolas", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+// the monospaced above is from:
+// https://qwtel.com/posts/software/the-monospaced-system-ui-css-font-stack/
 
 // rems
 $biggest: 2.5;
