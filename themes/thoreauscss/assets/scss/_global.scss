@@ -1,5 +1,5 @@
 html, body {
-  font-family: $sans-serif;
+  font-family: $serif;
   // font-weight: 425;
   color: $default-color;
   width: 100%;
@@ -21,7 +21,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  // font-family: $sans-serif;
+  font-family: $sans-serif;
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark-mode;
@@ -135,8 +135,8 @@ ul li li li {
 }
 
 footer {
+  font-family: $sans-serif;
   text-align: center;
-  // font-family: $sans-serif;
   font-size: $legal + unquote("rem");
   margin: 4rem auto 0 auto;
   width: 100%;
@@ -169,7 +169,7 @@ footer {
   // width: 90%;
   margin: 0 auto;
   &-home {
-    // font-family: $sans-serif;
+    font-family: $sans-serif;
     text-align: center;
     padding: 2rem 0;
     margin: 0 auto;

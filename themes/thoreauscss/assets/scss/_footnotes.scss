@@ -1,6 +1,10 @@
 // == footnotes == //
+
+.footnotes, .footnote-sim, .footnote-ref {
+  font-family: $sans-serif;
+}
+
 .footnote-sim {
-  // font-family: $sans-serif;
   font-size: 0.65em;
   color: #0000ff;
   @media (prefers-color-scheme: dark) {
@@ -8,12 +12,7 @@
   }
 }
 
-.footnote-ref {
-  // font-family: $sans-serif;
-}
-
 .footnotes {
-  // font-family: $sans-serif;
   ol {
     padding-inline-start: 1.5rem;
   }

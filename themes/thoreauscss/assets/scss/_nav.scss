@@ -3,6 +3,7 @@
 $navBreakpoint: 900px;
 
 header {
+  font-family: $sans-serif;
   height: 30px;
   width: 100%;
   background-color: $darkblue;
@@ -10,7 +11,6 @@ header {
   padding: 0.5em 0; // definitely em, not rem
   margin-top: 0;
   z-index: 9999;
-  // font-family: $sans-serif;
 }
 
 .nav {
@@ -211,7 +211,7 @@ nav {
     font-size: $minimalbig + unquote("em");
   }
   nav {
-    top: 25%;
+    top: 30%;
     transform: none;
     margin-top: 0;
     margin-left: 0%;

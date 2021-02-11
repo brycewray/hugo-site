@@ -1,12 +1,7 @@
 // === posts and post lists
-.post-line {
-  border-top: 0.2rem solid $darkblue;
-  @media screen and (prefers-color-scheme: dark) {
-    border-color: #fff;
-  }
-  display: block;
-  margin: 0 auto 2rem;
-  width: 15rem;
+
+.posts-Container, .posts-ReadingTime {
+  font-family: $sans-serif;
 }
 
 .posts {
@@ -90,5 +85,15 @@
       font-size: 0.875rem;
     }
   }
+}
+
+.post-line {
+  border-top: 0.2rem solid $darkblue;
+  @media screen and (prefers-color-scheme: dark) {
+    border-color: #fff;
+  }
+  display: block;
+  margin: 0 auto 2rem;
+  width: 15rem;
 }
 // === end, posts and post lists
