@@ -60,37 +60,6 @@
   background-color: $blue !important;
 }
 
-.bg-dark {
-  margin-top: 2.5rem;
-  background-color: $darkblue !important;
-  padding: 0.5rem 0 1rem 0;
-  div, p {
-    color: #fff;
-  }
-  h3, p {
-    margin: 0;
-    padding: 0.15rem 0;
-  }
-  h3.prevnextH3 {
-    font-size: 1.875rem;
-  }
-  p.prevnextP {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 1.25rem;
-  }
-  a, a:hover, a:focus {
-    color: #aaddff !important;
-  }
-  a {
-    border-bottom: 0;
-  }
-  a:hover, a:focus {
-    border-bottom: 1px solid #aaddff !important;
-  }
-}
-
 .btn-primary {
   background-color: $blue;
   border-color: $blue;
