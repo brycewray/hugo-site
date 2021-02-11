@@ -59,4 +59,14 @@
     }
   }
 }
+
+.homeOpen {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: 1921px) {
+    font-size: 2.5rem;
+  }
+}
 // === end, for home page

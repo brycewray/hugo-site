@@ -266,16 +266,6 @@ li p {
   width: 100% !important;
 }
 
-.homeOpen {
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    font-size: 1.25rem;
-  }
-  @media screen and (min-width: 1921px) {
-    font-size: 2.5rem;
-  }
-}
-
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
@@ -296,36 +286,4 @@ article {
   h2, h3, h4 {
     margin-top: 1.25em; // definitely em, not rem
   }
-}
-
-.yellowBox {
-  // font-family: $sans-serif;
-  display: block;
-  box-sizing: border-box;
-  background: #feef89;
-  border: 1px solid #333;
-  margin: 0.5rem auto;
-  width: 100%;
-  padding: 1.5rem;
-  @media (prefers-color-scheme: dark) {
-    background: #332200;
-    border: 1px solid $grey-1;
-  }
-}
-
-img.containedImage {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 1rem auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.imgcCaption {
-  font-size: $pokey + unquote("rem");
-  padding: 0;
-  margin-top: 0.5rem;
-  line-height: 1.375;
-  text-align: center;
 }
