@@ -100,16 +100,18 @@ img.containedImage {
   display: block;
   width: 100%;
   height: auto;
-  margin: 1rem auto;
+  padding: 0;
+  margin: 0 auto;
   margin-right: auto;
   margin-left: auto;
 }
 
 .imgcCaption {
-  font-size: $pokey + unquote("rem");
+  font-family: $sans-serif;
   padding: 0;
-  margin-top: 0.5rem;
+  margin-block-start: 0.5em;
   line-height: 1.375;
+  font-size: $pokey + unquote("rem");
   text-align: center;
 }
 
