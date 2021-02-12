@@ -4,7 +4,7 @@ subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
-lastmod: 2021-02-07T15:00:00-06:00
+lastmod: 2021-02-12T13:23:00-06:00
 #draft: false
 discussionId: "2021-02-simplify-simplify"
 ---
@@ -44,7 +44,7 @@ As 2020 neared a merciful end, two things happened that made me re-think that ju
 
 ## Thing One: A wacko repo
 
-One Saturday morning, spurred by my ongoing curiosity about the cache-busting-in-Eleventy question (which also plays into Thing Two down below), I began to work once again with the [webpack](https://webpack.js.org)-based Eleventy [repo](https://github.com/brycewray/eleventy_bundler) I'd [abandoned earlier in the year](/posts/2020/05/going-solo-eleventy). Since it had been months since I'd updated all the dependencies, I ran the [usual sequence](https://www.carlrippon.com/upgrading-npm-dependencies/) of `npm` commands to accomplish that, and then ran `npm run start` so the repo would create a dev-mode version of the site.
+One Saturday morning, spurred by curiosity about cache-busting static assets in Eleventy (more on that in Thing Two down below), I began to work once again with the [webpack](https://webpack.js.org)-based Eleventy [repo](https://github.com/brycewray/eleventy_bundler) I'd [abandoned earlier in the year](/posts/2020/05/going-solo-eleventy). Since it had been months since I'd updated all the dependencies, I ran the [usual sequence](https://www.carlrippon.com/upgrading-npm-dependencies/) of `npm` commands to accomplish that, and then ran `npm run start` so the repo would create a dev-mode version of the site.
 
 Or, at least, I'd *hoped* it would create that. Can you say, "lots of breaking changes"?
 
