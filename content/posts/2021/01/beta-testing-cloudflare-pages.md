@@ -5,7 +5,7 @@ subtitle: "A possible game-changer emerges"
 description: "I take a look at a new website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
 date: 2021-01-27T12:30:00-06:00
-#lastmod: TBD
+lastmod: 2021-02-12T17:35:00-06:00
 #draft: false
 discussionId: "2021-01-beta-testing-cloudflare-pages"
 featured_image: "markus-spiske-KeFyYzxqmH0-unsplash_5760x3840.jpg"
@@ -30,7 +30,11 @@ I figured building the Hugo-based site might be more problematic since the build
 
 The Eleventy-based repo did, indeed, build with no problems due to the build process's reading and following the `package.json` file.
 
-So much for the good stuff about the build process; now for the bad stuff. Right now, the beta build process is **really slow**. Here's a breakdown of the first successful build for each repo, with each time segment in `min:sec` form. The titles for each action are directly from the CFP logs for these builds, except that I capitalized "Git" and the logs didn't.
+So much for the good stuff about the build process; now for the bad stuff. Right now, the beta build process is **really slow**.
+
+{{% yellowBox %}}**Update, 2021-02-12**: Since I initially published this post, Cloudflare has significantly improved the build speeds. More on that below.{{% /yellowBox %}}
+
+Here's a breakdown of the first successful build for each repo, with each time segment in `min:sec` form. The titles for each action are directly from the CFP logs for these builds, except that I capitalized "Git" and the logs didn't.
 
 ### Hugo
 
@@ -66,7 +70,9 @@ As for the less "automatic" ones that I handle via [GitHub Actions](https://gith
 - **Cloudflare Workers Sites**: 1:55
 - **Firebase**: 1:24
 
-So, clearly, the CFP folks have a lot of work to do on this part of it; and, based on a conversation I had with a Cloudflare staffer on the [Cloudflare Workers Discord server](https://blog.cloudflare.com/meet-the-workers-team-over-discord/), they're all too aware of that. 
+So, clearly, the CFP folks have a lot of work to do on this part of it; and, based on a conversation I had with a Cloudflare staffer on the [Cloudflare Workers Discord server](https://blog.cloudflare.com/meet-the-workers-team-over-discord/), they're all too aware of that.
+
+{{% yellowBox %}}**Update, 2021-02-12**: Yesterday afternoon, Cloudflare pushed a change that dramatically cut the **total** build times. For a newer Hugo-based test site I've put on Cloudflare Pages, build now happens in about 45 seconds. While this is still slower than several of the competitors, the trend is definitely in the right direction.{{% /yellowBox %}}
 
 ## Fine online performance
 
