@@ -198,6 +198,7 @@ footer {
   &-narrower {
     margin: 1rem auto 0 auto;
     width: 80%;
+    max-width: 60ch;
     figure img {
       width: 100%;
     }
@@ -211,9 +212,6 @@ footer {
         border: 2px solid $grey-2;
       }
     }
-    @media (min-width: 900px) {
-      width: 40%;
-    }
   }
   &-comments {
     font-size: 85%;
@@ -225,7 +223,7 @@ footer {
     }
   }
   &-oldComments { // old comments from Talkyard
-    // font-family: $sans-serif;
+    font-family: $sans-serif;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
     display: block;
