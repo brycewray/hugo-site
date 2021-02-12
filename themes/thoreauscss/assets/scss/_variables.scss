@@ -10,9 +10,9 @@ $grey-2-5: #ededed;
 $chroma-bkgd-dark-mode: #555;
 $grey-2-dark-mode: #a8a8a8;
 $grey-3: #f9f9f9;
-$white: #fff;
+$white: #fff; // could also be #eee at some point, hence this var
 $background-dark-mode: #000; // was #181818
-$black: #000;
+$black: #000; // could also be #333 at some point, hence this var
 $blue: #0033ff; // was 0088ff but that's not sufficient contrast for accessibility
 $blueFirst: #0088ff; // Will use as a hover color only
 $blueLight: #00bbff; // for use with dark mode where supported

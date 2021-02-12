@@ -1,7 +1,9 @@
 {{ define "main" }}
 
 <div class="container-home">
-  <h1><strong>Welcome to brycewray.com, offering <a href="/about">its owner</a>&rsquo;s &ldquo;observations, opinions, and geekiness&rdquo; since&nbsp;2018.</strong></h1>
+  <div class="homeOpen">
+    <h1>Welcome to brycewray.com, offering <a href="/about">its owner</a>&rsquo;s &ldquo;observations, opinions, and geekiness&rdquo; since&nbsp;2018.</h1>
+  </div>
   <div class="homePost-Div">
     <div class="post-line"></div>
     <h2 class="homePost-Latest">Latest <a href="/posts">posts</a></h2>
@@ -18,6 +20,6 @@
       </div>
     {{ end }}
     <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
-  </div>
+  </div>  
 </div>
 {{ end }}

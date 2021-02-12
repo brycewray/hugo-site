@@ -6,7 +6,10 @@ header {
   font-family: $sans-serif;
   height: 30px;
   width: 100%;
-  background-color: $darkblue;
+  background-color: $black;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $darkblue;
+  }
   position: fixed;
   padding: 0.5em 0; // definitely em, not rem
   margin-top: 0;
@@ -15,7 +18,10 @@ header {
 
 .nav {
   &__bar {
-    background-color: $darkblue;
+    background-color: $black;
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: $darkblue;
+    }
     padding-top: $nav-height;
     @media (min-width: $navBreakpoint) {
       max-height: none;
@@ -25,7 +31,10 @@ header {
   &__item {
     padding: 0;
     margin: 0;
-    background: $darkblue; // example was #fff
+    background-color: $black;
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: $darkblue;
+    }
     @media (min-width: $navBreakpoint) {
       display: inline-block;
       text-transform: lowercase;
@@ -38,7 +47,10 @@ header {
       padding: 0.5em 1.5em; // definitely em, not rem
       margin: 0;
       color: #fff;
-      background: $darkblue;
+      background-color: $black;
+      @media screen and (prefers-color-scheme: dark) {
+        background-color: $darkblue;
+      }
       text-decoration: none;
       transition: opacity 0.5s ease;
       &:link, &:visited {
@@ -131,7 +143,10 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background-color: $darkblue;
+  background-color: $black;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $darkblue;
+  }
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
