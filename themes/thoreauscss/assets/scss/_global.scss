@@ -77,7 +77,7 @@ a {
   border-bottom: 1px solid $blueFirst;
   @media (prefers-color-scheme: dark) {
     color: $blueLight;
-    border-bottom: 1px solid $blueFirst;
+    border-bottom: 1px solid $blueLight;
   }
 }
 
