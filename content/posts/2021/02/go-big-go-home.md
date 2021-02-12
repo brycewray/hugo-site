@@ -70,7 +70,7 @@ So you can assess the conversion required between the Eleventy and Hugo versions
 
 Here's the JavaScript version, on which the Go version was based[^origCode]:
 
-[^origCode]: This is a revised version because the *original* JS provides for an [LQIP-using preview](https://endler.dev/2017/image-previews/), the need for which ended when I [removed hero images](/posts/2021/01/leaner-cleaner)):
+[^origCode]: This is a revised version because the *original* JS provides for an [LQIP-using preview](https://endler.dev/2017/image-previews/), the need for which ended when I [removed hero images](/posts/2021/01/leaner-cleaner)).
 
 ```js
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
