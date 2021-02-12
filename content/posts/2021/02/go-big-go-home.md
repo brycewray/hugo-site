@@ -4,7 +4,7 @@ subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-#lastmod: 2021-02-10T12:28:00-06:00 # same date - adding photo caption
+lastmod: 2021-02-12T13:34:00-06:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 ---
@@ -169,7 +169,7 @@ Now that you've seen both, let's compare/contrast how they work.
 	- The image's height in pixels, either `height` (JS) or `$height` (Go).
 - Each uses a variable, either `stringtoRet` (JS) or `$stringtoRet` (Go), into which it then collects the necessary HTML and CSS; and, at the end, **returns** that variable's contents to the web page.
 - Each stores the desired image display sizes for the `srcset` in either an array called `respSizes` (JS) or a *[slice](https://gohugo.io/functions/slice)* called `$RespSizes` (Go).[^respSizes]
-- After providing the opening HTML/CSS to the variable, each shortcode loops through the array or slice and fills in the necessary per-size segments. The looping in JS is done with `forEach` and in Go with `range`. Immediately after each loop ends, a `substring` or `substr` statement chops off the last two characters of the result, so there's not a hanging space-and-comma combination after the last item.
+- After providing the opening HTML/CSS to the variable, each shortcode loops through the array or slice and fills in the necessary per-size segments. The looping in JS is done with `forEach` and in Go with `range`. Immediately after each loop ends, a `substring` or `substr` statement chops off the last two characters of the result, so there's not a hanging comma-and-space combination after the last item.
 - At the end, each finishes filling the variable by adding the closing HTML/CSS, including `noscript` material for those browsers where JS has been disabled. The latter dates back to when the shortcodes were handling lazy-loading via JS added to each web page; while that's no longer true, I kept the `noscript` items just in case I decide to revert to that lazy-loading method for some reason.
 
 [^respSizes]: The JS fills `respSizes` by pulling from a site parameters file in the Eleventy repo's site-wide `_data` directory. The Go fills `$RespSizes` from this code, but I could easily have brought in the values from the site-wide `config.yaml` configuration file. I wrote the JS version of this particular part as I did because, early on, I was frequently experimenting with different values and felt it easier to go this route. By the time I got to the Go version, I had settled on these values and felt no more need to separate their entry in this way.
