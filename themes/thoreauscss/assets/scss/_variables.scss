@@ -27,11 +27,10 @@ $code-color-blueLight-dark-mode: #88ddff;
 $code-color-orange-dark-mode: #ffaa00;
 
 // Typography
-$sans-serif: ui-sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-$monospaced: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Consolas", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-// the monospaced above is from:
-// https://qwtel.com/posts/software/the-monospaced-system-ui-css-font-stack/
+$monospaced: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// These come from https://tailwindcss.com/docs/font-family as of 2021-02-13.
 
 // rems
 $biggest: 2.5;
