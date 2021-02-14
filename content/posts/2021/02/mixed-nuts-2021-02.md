@@ -4,7 +4,7 @@ subtitle: "Free-association folderol for February"
 description: "No brain cells were even used, much less harmed, in the production of this post."
 author: Bryce Wray
 date: 2021-02-13T13:15:00-06:00
-#lastmod: 2021-02-13T17:32:00-06:00 # same day
+lastmod: 2021-02-14T16:48:00-06:00 # same day
 #draft: false
 discussionId: "2021-02-mixed-nuts-2021-02"
 ---
@@ -19,7 +19,9 @@ More to the point, friends, **you** are about to have that, uh, opportunity, as 
 
 Although I [gave up](/posts/2021/02/simplify-simplify) using [Tailwind CSS](https://tailwindcss.com), I'm still happily using the [Tailwind `font-family` selections](https://tailwindcss.com/docs/font-family), only now in my own [SCSS](https://sass-lang.com). For serif type, the default is [`ui-serif`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family). As of this writing, `ui-serif` is supported only on Safari, where it brings up the modern form of [Apple's New York font](https://www.creativebloq.com/news/new-york-font). I say "modern form" because we Mac old-timers remember [the 1980s version](https://fontsinuse.com/typefaces/31775/new-york-1984).
 
-*Incoming this August: grandchild #2, conferring upon [grandchild #1](/posts/2020/03/welcome-sweet-little-early-bird) the high and exalted status of Big Sister and [all the rights and privileges pertaining thereto](https://academia.stackexchange.com/questions/41735/what-are-all-the-rights-and-privileges-pertaining-thereto).*
+*Incoming this August: grandchild #2, conferring upon [grandchild #1](/posts/2020/03/welcome-sweet-little-early-bird) the high and exalted status of Big Sister and [all the rights and privileges pertaining thereto](https://academia.stackexchange.com/questions/41735/what-are-all-the-rights-and-privileges-pertaining-thereto).*[^reveal]
+
+[^reveal]: **Update, 2021-02-14**: The next day after I posted this, we learned grandchild #2 will be a boy.
 
 Incoming soon to one of my arms: shot #1 of the [COVID-19](/posts/2020/03/coherence-covid-19) vaccine. As of this writing, I'm scheduled to get it on the morning of February 17 about ten miles from home, but the weather forecast for then is pretty nasty. Still: if I **can** get there that morning, you can bet I will.
 
