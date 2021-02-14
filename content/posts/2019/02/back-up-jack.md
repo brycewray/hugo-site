@@ -6,7 +6,7 @@ subtitle: "From 3-2-1 to 4-2-2"
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-lastmod: 2020-11-26T08:15:00-06:00
+lastmod: 2021-02-14T07:50:00-06:00
 discussionId: "2019-02-back-up-jack"
 featured_image: binary-2688910_6000x3372.jpg
 featured_image_width: 6000
@@ -73,7 +73,9 @@ Well, shut my mouth and call me "Cloudy."
 
 That had perfectly described my situation. Couldn't make it clearer than that.
 
-Sufficiently convinced by that opinion and others that said basically the same thing (*i.e.*, if you're all-in on Apple gear and sync'g only personal content, go with iCloud Drive), I promptly upgraded my iCloud subscription from fifty-gigabyte to two-terabyte and copied almost everything from my Dropbox folder onto iCloud Drive. It took about nine hours to complete the transfer, even with my high-bandwidth connectivity. Once there was nothing left available to move---there are a few apps I still use, such as the [Road Trip MPG](https://itunes.apple.com/us/app/road-trip-mpg/id298398207?mt=8) iOS app that keeps track of my car expenses, that require Dropbox to retain their data^[And even that app became iCloud-friendly a few months after I originally wrote this, so that was still one more nail in the Dropbox coffin for my purposes.]---I deleted the now-duplicated content from my Dropbox folder and terminated the paid subscription with Dropbox. I did keep the free [Dropbox Basic](https://www.dropbox.com/basic) two-gigabyte tier, which is more than enough for those aforementioned few apps’ use.
+Sufficiently convinced by that opinion and others that said basically the same thing (*i.e.*, if you're all-in on Apple gear and sync'g only personal content, go with iCloud Drive), I promptly upgraded my iCloud subscription from fifty-gigabyte to two-terabyte and copied almost everything from my Dropbox folder onto iCloud Drive. It took about nine hours to complete the transfer, even with my high-bandwidth connectivity. Once there was nothing left available to move---there are a few apps I still use, such as the [Road Trip MPG](https://itunes.apple.com/us/app/road-trip-mpg/id298398207?mt=8) iOS app that keeps track of my car expenses, that require Dropbox to retain their data[^RoadTrip]---I deleted the now-duplicated content from my Dropbox folder and terminated the paid subscription with Dropbox. I did keep the free [Dropbox Basic](https://www.dropbox.com/basic) two-gigabyte tier, which is more than enough for those aforementioned few apps’ use.
+
+[^RoadTrip]: And even that app became iCloud-friendly a few months after I originally wrote this, so that was still one more nail in the Dropbox coffin for my purposes.
 
 As for the cost savings, they're small *but* I'm getting more for my money. Before, I was paying a buck a month for two hundred gigabytes of iCloud storage *and* ten bucks a month for *one* terabyte of Dropbox storage. Now, I'm paying ten bucks a month for *two* terabytes of iCloud storage *and*, not incidentally, sharing that two terabytes with my wife via [Family Sharing](https://www.apple.com/family-sharing/) for her iPhone photos, as well.[^8]
 
