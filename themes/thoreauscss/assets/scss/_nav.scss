@@ -3,7 +3,7 @@
 $navBreakpoint: 900px;
 
 header {
-  font-family: $sans-serif;
+  // font-family: $sans-serif;
   height: 30px;
   width: 100%;
   background-color: $black;
@@ -143,10 +143,12 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
+  /*
   background-color: $black;
   @media screen and (prefers-color-scheme: dark) {
     background-color: $darkblue;
   }
+  */
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;

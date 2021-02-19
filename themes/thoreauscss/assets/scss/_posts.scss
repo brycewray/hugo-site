@@ -1,8 +1,10 @@
 // === posts and post lists
 
+/*
 .posts-Container, .posts-ReadingTime {
   font-family: $sans-serif;
 }
+*/
 
 .posts {
   &-Container {
@@ -98,7 +100,7 @@
 }
 
 .bg-dark {
-  font-family: $sans-serif;
+  // font-family: $sans-serif;
   margin-top: 2.5rem;
   background-color: $darkblue !important;
   padding: 0.5rem 0 1rem 0;
