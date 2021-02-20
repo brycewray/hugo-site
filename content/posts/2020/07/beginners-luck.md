@@ -6,14 +6,8 @@ subtitle: "New Eleventy and Hugo starter sets"
 description: "Helping more people get going with two great SSGs."
 author: Bryce Wray
 date: 2020-07-27T16:30:00-05:00
-lastmod: 2020-12-19T09:43:00-06:00
+lastmod: 2021-02-20T16:42:00-06:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
-featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
-featured_image_width: 4608
-featured_image_height: 3072
-featured_image_alt: "Colorful toy alphabet blocks"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@shs521?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Holt Simpson</a>; <a href="https://unsplash.com/s/photos/toy-blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Rarely does a day go by that I don't read of yet another person deciding to move his or her website to one of the two [static site generators (SSGs)](https://staticgen.com) closest to my heart: [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
@@ -22,7 +16,9 @@ Good going, aforementioned "yet another person."
 
 To do my part in helping to lure more folks to one of these two happy places, I'm pleased to announce that I've created two new **starter sets**, [one for Eleventy](https://github.com/brycewray/eleventy_solo_starter) and [one for Hugo](https://github.com/brycewray/hugo_solo), based on my site.
 
-I've also converted my existing Hugo-based version of the Eleventy repo (*i.e.*, the one from which [Vercel](https://vercel.com) builds this site) to being [another starter set](https://github.com/brycewray/hugo_site_css-grid). (Why two Hugo starter sets? I'll explain that shortly.)
+I've also converted my existing Hugo-based version of the Eleventy repo (*i.e.*, the one from which [Vercel](https://vercel.com) builds this site) to being [another starter set](https://github.com/brycewray/hugo_site_css-grid).[^exLoc] (Why two Hugo starter sets? I'll explain that shortly.)
+
+[^exLoc]: **Update, 2021-02-20**: Today, I moved it from its [former location](https://github.com/brycewray/hugo_site_css-grid).
 
 ## Starter *vs.* non-starter
 
@@ -50,7 +46,7 @@ Repeating the earlier question: why do I have *two* Hugo starters?
 
 You see, there are many folks who gravitate toward Hugo **because**, out of the box, it doesn't require JavaScript and/or [npm](https://npmjs.org) dependencies. On the other hand, some like to see Hugo with additional capabilities added *with* JavaScript and npm dependencies. That's why I decided to give the two sides a choice. Both repos use [Hugo's built-in image processing](https://gohugo.io/content-management/image-processing/) to provide responsive images, but they differ on how they handle styling:
 
-- The [*hugo_site_css-grid* repo](https://github.com/brycewray/hugo_site_css-grid) uses, as does this site, [PostCSS](https://postcss.org) and the highly popular [Tailwind CSS](https://tailwindcss.com)---both of which do require JavaScript and dependencies.
+- The [*hugo_twcss* repo](https://github.com/brycewray/hugo_twcss) uses, as does this site, [PostCSS](https://postcss.org) and the highly popular [Tailwind CSS](https://tailwindcss.com)---both of which do require JavaScript and dependencies.
 
 - The [*hugo_solo* repo](https://github.com/brycewray/hugo_solo) is JavaScript- and dependencies-free, and uses [SCSS](https://sass-lang.com/) through [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/).
 

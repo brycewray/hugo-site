@@ -4,14 +4,8 @@ subtitle: "That was then, this is now"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00
-lastmod: 2020-08-10T20:15:00-05:00
+lastmod: 2021-02-20T16:45:00-06:00
 discussionId: "2020-07-stacks-and-stacks"
-featured_image: stones-stack-3841920_6000x4000.jpg
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "A stack of smooth stones on a beach near an ocean"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/fotoblend-87167/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3841920">Willfried Wende</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3841920">Pixabay</a></span>
 ---
 
 Thought I'd take this (U.S.) holiday weekend to do a brief comparison of this site's current "tech stack" with what I was using a year ago today. Since the site wasn't yet using `package.json`  in 2019, this is a little trickier than it would be otherwise, but I appear to have it reconstructed.
@@ -40,7 +34,9 @@ So, for your geeky pleasure, here goes nothing.
 
 ## Repository in use
 
-2019-07-05: `hugo_site_css-grid`.
+2019-07-05: `hugo_site_css-grid`.[^renamed]
+
+[^renamed]: I've since renamed this repo `hugo_twcss` and [repurposed it](/posts/2020/07/beginners-luck) as a Hugo starter set.
 
 2020-07-05: `eleventy_solo`.
 
