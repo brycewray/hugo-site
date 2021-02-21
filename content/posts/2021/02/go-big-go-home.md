@@ -4,7 +4,7 @@ subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2021-02-12T13:39:00-06:00
+lastmod: 2021-02-20T20:43:00-06:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 ---
@@ -82,7 +82,7 @@ module.exports = (url, alt, width, height) => {
   divClass = `relative`
   imgClass = `containedImage`
   nscClass = `containedImage`
-  dataSzes = `(min-width: 1024px) 25vw, 100vw`
+  dataSzes = `(min-width: 1024px) 100vw, 50vw`
   
   var separator = ', '
 
@@ -133,7 +133,7 @@ Here's the corresponding Go version for Hugo:
 {{- $divClass := "relative" -}}
 {{- $imgClass := "containedImage" -}}
 {{- $nscClass := "containedImage" -}}
-{{- $dataSzes := "(min-width: 1024px) 25vw, 100vw" -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $stringtoRet := "" -}}{{/* init */}}
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
