@@ -147,7 +147,7 @@ Yet, *because* of the Hugo built-ins to which I'd become accustomed, using Eleve
 
 Again, we're *learning*, here, so (b.) was the obvious selection.
 
-So how did I make up for what Hugo does from the moment you install it? Let me explain by covering my two "must-haves": typography and [SCSS/SASS](https://sass-lang.com).
+So how did I make up for what Hugo does from the moment you install it? Let me explain by covering my two "must-haves": typography and [SCSS/Sass](https://sass-lang.com).
 
 ### Definitely my type
 
@@ -165,15 +165,15 @@ In the case of Gatsby, I'd managed to get the "smart" typography and, usually, g
 
 And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is ’waaaaay easier and more stable.
 
-### SASSy stuff
+### Sassy stuff
 
 #### Hugo
 
-To enable the flexibility of SCSS/SASS, Hugo has [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) for asset-processing---in this case, transforming one or more SCSS/SASS files on the fly while you're developing with `hugo server`.
+To enable the flexibility of SCSS/Sass, Hugo has [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) for asset-processing---in this case, transforming one or more SCSS/Sass files on the fly while you're developing with `hugo server`.
 
 #### Eleventy
 
-With Eleventy, I installed the [node-sass](https://www.npmjs.com/package/node-sass) library and then set up [Gulp](https://gulpjs.com) to handle processing the SCSS/SASS files.
+With Eleventy, I installed the [node-sass](https://www.npmjs.com/package/node-sass) library and then set up [Gulp](https://gulpjs.com) to handle processing the SCSS/Sass files.
 
 Running Gulp with the settings in my repo's `gulpfile.js` file does this processing and watches constantly for changes, any of which will trigger a new processing run.
 

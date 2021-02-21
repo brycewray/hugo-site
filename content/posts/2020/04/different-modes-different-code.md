@@ -87,7 +87,7 @@ This[^SomeReference] is an example of the once-and-future (non-inline) method of
 
 ### Form and function
 
-As I said, I was determined that these other two repos’ code would produce content that would match this site as much as possible in look-and-feel and functionality. That meant I'd be translating from "Eleventy-ese" into "Hugo-ese" and "Gatsby-ese" two major changes I recently introduced: [transitioning from SASS/SCSS to PostCSS](/posts/2020/01/two-cheers-tailwind); and [getting rid of hero images](/posts/2020/02/so-much-for-heroes).
+As I said, I was determined that these other two repos’ code would produce content that would match this site as much as possible in look-and-feel and functionality. That meant I'd be translating from "Eleventy-ese" into "Hugo-ese" and "Gatsby-ese" two major changes I recently introduced: [transitioning from Sass/SCSS to PostCSS](/posts/2020/01/two-cheers-tailwind); and [getting rid of hero images](/posts/2020/02/so-much-for-heroes).
 
 The switch to PostCSS actually was pretty straightforward in the Gatsby repo. Since Gatsby incorporates webpack, I was able to use an identical `postcss-config.js` file. From there, it was all over but the shouting, by which I mean putting the CSS files where they needed to be. No biggie.
 

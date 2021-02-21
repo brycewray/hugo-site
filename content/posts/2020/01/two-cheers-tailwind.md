@@ -83,7 +83,7 @@ What I'm saying, then, is that any concerns I have about this approach definitel
 
 I guess what still mainly bugs me is the whole idea of whether, specifically for an [SSG](https://staticgen.com)-built site like mine that depends so heavily on a small number of [templates](https://www.11ty.dev/docs/templates/), I might not be better off just going back to a less utilitarian method. Am I really gaining anything from this build-the-appearance-one-Lego-block-at-a-time approach? Would I be wiser just to revert to the way I was doing it before?
 
-By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
+By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to Sass/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used Sass/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
 ## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1rem; margin-right: -0.85rem;">&trade;</sup>---as usual
 
@@ -115,13 +115,13 @@ After a few days of mulling this over as well as re-reading a lot of stuff about
 
 [^TWCSSG]: I did see a few days ago that [Tailwind CSS will soon include CSS Grid support](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.2.0-canary.4), which is definitely a good and overdue move; but it didn't change my mind.
 
-However, as I hinted above would be the case were I to eschew the utility-first approach, I opted *not* to return to SASS/SCSS.
+However, as I hinted above would be the case were I to eschew the utility-first approach, I opted *not* to return to Sass/SCSS.
 
 Why?
 
-Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in SASS/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers’ support for it, is getting better all the time and that's where the action is.
+Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in Sass/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers’ support for it, is getting better all the time and that's where the action is.
 
-I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) to browser-friendly CSS. Quite frankly, using SASS/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
+I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) to browser-friendly CSS. Quite frankly, using Sass/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
 
 [^elevwp]: Thank goodness for my [Eleventy/webpack setup](/posts/2019/12/packing-up), without which the whole process of reversion would've been much more onerous. I shudder to think about, say, if I'd still been on [Gatsby](/posts/2019/10/now-gatsby-geezer).
 

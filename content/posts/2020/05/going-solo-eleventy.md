@@ -28,7 +28,7 @@ But, then, some funny things happened on my way to [SSG](https://staticgen.com) 
 
 In the ensuing months, I removed two of the biggest reasons for having added webpack in the first place:
 
-- I dropped [SASS/SCSS](https://sass-lang.com) for [PostCSS](https://postcss.org) while [experimenting briefly](/posts/2020/01/two-cheers-tailwind) with [Tailwind CSS](https://tailwindcss.com). While I didn't warm up (then) to Tailwind, I liked PostCSS a lot and decided to stick with it. And while you certainly *could* use webpack to incorporate PostCSS with Eleventy, it wasn't *necessary* to do so.
+- I dropped [Sass/SCSS](https://sass-lang.com) for [PostCSS](https://postcss.org) while [experimenting briefly](/posts/2020/01/two-cheers-tailwind) with [Tailwind CSS](https://tailwindcss.com). While I didn't warm up (then) to Tailwind, I liked PostCSS a lot and decided to stick with it. And while you certainly *could* use webpack to incorporate PostCSS with Eleventy, it wasn't *necessary* to do so.
 
 - [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images’ actual utility. Only those few images necessary to tell certain posts’ stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time]
 

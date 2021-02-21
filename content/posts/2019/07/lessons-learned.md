@@ -85,9 +85,9 @@ More often than not, they lack---and their developers show almost a nonchalance 
 
 .&nbsp;.&nbsp;. fine. I choose otherwise.
 
-Then there's the whole issue of how the newer SSGs handle CSS and SCSS/SASS.
+Then there's the whole issue of how the newer SSGs handle CSS and SCSS/Sass.
 
-First, understand how easy we Hugo users have it where SCSS/SASS compatibility is concerned. Thanks to the out-of-the-box [Hugo Pipes](https://gohugo.io/hugo-pipes) functionality, [all](https://gohugo.io/hugo-pipes/scss-sass) you have to do is put your SCSS/SASS files in your Hugo install's `/assets` directory and then call to them in templates like this (this is from my own templates, with *ofotigrid.scss*[^ofoti] being the name of my primary SCSS file that `@import`s in content from its fellow SCSS files within `/assets/scss`):
+First, understand how easy we Hugo users have it where SCSS/Sass compatibility is concerned. Thanks to the out-of-the-box [Hugo Pipes](https://gohugo.io/hugo-pipes) functionality, [all](https://gohugo.io/hugo-pipes/scss-sass) you have to do is put your SCSS/Sass files in your Hugo install's `/assets` directory and then call to them in templates like this (this is from my own templates, with *ofotigrid.scss*[^ofoti] being the name of my primary SCSS file that `@import`s in content from its fellow SCSS files within `/assets/scss`):
 
 [^ofoti]: That weird file name is from when I originally had considered calling this site *ofoti.com*---a domain which I own---with *OFOTI* standing whimsically for *Old Fart on the Internet*. However, I thought better of it, especially after I learned that the name *Ofoti* had, in fact, [already been used as the title of a prize-winning play](https://en.wikipedia.org/wiki/John_Wheatcroft).
 
@@ -100,9 +100,9 @@ First, understand how easy we Hugo users have it where SCSS/SASS compatibility i
 
 (**Note**: If you're bothered by the Go code in there, you're apparently not alone. I'll address that below.)
 
-Many other SSGs make this sort of thing considerably more problematic, especially if you're not willing to craft your own pipeline between the SSG and the CSS or SCSS/SASS files, through either [plugins](https://www.npmjs.com/package/gatsby-plugin-sass) or other methods. ([I already told you my luck](/posts/2019/07/why-staying-with-hugo) with plugins, especially when there are a whole slew of them in the SSG's config files.) Believe me, I am neither willing nor (likely) able.
+Many other SSGs make this sort of thing considerably more problematic, especially if you're not willing to craft your own pipeline between the SSG and the CSS or SCSS/Sass files, through either [plugins](https://www.npmjs.com/package/gatsby-plugin-sass) or other methods. ([I already told you my luck](/posts/2019/07/why-staying-with-hugo) with plugins, especially when there are a whole slew of them in the SSG's config files.) Believe me, I am neither willing nor (likely) able.
 
-Even the documentation for an SSG like [Eleventy](https://11ty.dev) that claims to be much easier and more more logically configured than other JavaScript-based SSGs---and, in many ways, it is---makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/SASS, rather than [inlining](https://www.11ty.dev/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
+Even the documentation for an SSG like [Eleventy](https://11ty.dev) that claims to be much easier and more more logically configured than other JavaScript-based SSGs---and, in many ways, it is---makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/Sass, rather than [inlining](https://www.11ty.dev/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
 
 I'll have more to say later about the shortcomings of SSGs’ documentation. Even Hugo's.
 
