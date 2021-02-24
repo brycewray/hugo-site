@@ -32,7 +32,8 @@ While writing a few days ago in [Ulysses](https://ulysses.app), I suddenly found
 
 *My "lurch" among [Jamstack](https://jamstack.wtf)-savvy website hosts [over](/posts/2020/07/goodbye-hello) [the](/posts/2020/07/goodbye-hello-part-2) [last](/posts/2020/08/goodbye-hello-part-3) [few](/posts/2020/09/goodbye-hello-part-4) [months](/posts/2020/09/goodbye-hello-part-5) makes it clear that, of the "automatic" hosts[^2], [Vercel](https://vercel.com)'s free tier has by far the best combination of superior worldwide performance (especially because of the [recent enhancements](https://vercel.com/blog/new-edge-dev-infrastructure) to its [Edge Network](https://vercel.com/docs/edge-network/overview)) and clean, no-fuss maintenance. That said, my [experiment](/posts/2020/10/forward-paas) with [Cloudflare Workers sites](https://workers.cloudflare.com) and [Workers KV storage](https://developers.cloudflare.com/workers/learning/how-kv-works) was extremely interesting from a geekiness standpoint and, were I to drop Vercel for some reason, a Cloudflare Workers site---although **not** free---would be the very close second choice.*
 
-{{% yellowBox %}}**Update**: Cloudflare's subsequent announcement of a **free** tier for Cloudflare Workers KV storage followed by my successful test of that tier's performance further changed the equation, as explained in the updates I've since made to "[Forward PaaS](/posts/2020/10/forward-paas)." {{% /yellowBox %}}
+**Update**: Cloudflare's subsequent announcement of a **free** tier for Cloudflare Workers KV storage followed by my successful test of that tier's performance further changed the equation, as explained in the updates I've since made to "[Forward PaaS](/posts/2020/10/forward-paas)."
+{.yellowBox}
 
 [^1]:	If you think HOAs don't often get sued, you're kidding yourself.
 

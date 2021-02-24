@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/DeltaWorks-37465/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Kohji Asakawa</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Pixabay</a>
 ---
 
-{{% yellowBox %}}**Update, 2021-01-30**: Nearly a year after the [original post](/posts/2020/02/so-much-for-heroes) about removing the hero images, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh).{{% /yellowBox %}}
+**Update, 2021-01-30**: Nearly a year after the [original post](/posts/2020/02/so-much-for-heroes) about removing the hero images, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh).
+{.yellowBox}
 
 The phrase has been around [for about a century](https://grammarist.com/proverb/a-picture-is-worth-a-thousand-words/): "A picture is worth a thousand words."
 

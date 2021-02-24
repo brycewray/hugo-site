@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Pixabay</a></span>
 ---
 
-{{% yellowBox %}}**Update, 2020-08-05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)* {{% /yellowBox %}}
+**Update, 2020-08-05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)*
+{.yellowBox}
 
 This is about what one might call a transformative process.
 
@@ -42,7 +43,8 @@ When I first went with this method, the site wasn't using [hero images](https://
 
 Things changed quite a bit once [I brought back hero images](/posts/2020/05/thousand-words-indeed) a couple of weeks later. Now, the build times fattened dramatically, and grew longer with each new post and its hero image---and, of course, these increasingly long builds were happening also on *local* builds while I was doing dev stuff. I spent plenty of time waiting through such builds, twiddling my metaphorical thumbs while listening to my iMac's fans kick up in protest.
 
-{{% yellowBox %}}**Update, 2021-01-31**: I've [since chosen once again](/posts/2021/01/leaner-cleaner) to eschew the hero images, but am still using Cloudinary to host the site's remaining images.{{% /yellowBox %}}
+**Update, 2021-01-31**: I've [since chosen once again](/posts/2021/01/leaner-cleaner) to eschew the hero images, but am still using Cloudinary to host the site's remaining images.
+{.yellowBox}
 
 As a result: not long after I brought back the hero images, I was beginning to edge within sight of the [Netlify](https://netlify.com) free tier's 300-minutes-a-month build limit. My response took two forms (and resulted in posts about each):
 

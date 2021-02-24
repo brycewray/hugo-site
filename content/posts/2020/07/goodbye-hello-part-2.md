@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/YouComMedia-907282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">YouComMedia</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">Pixabay</a></span>
 ---
 
-{{% yellowBox %}}**Note**: This originally took the form of an addendum to the original "[Goodbye and hello](/posts/2020/07/goodbye-hello)" post; but I soon realized this was the classic case of shooting at a moving target, so I decided to give each move its own post (using the appropriate addendum as the text), while leaving the original pretty much as it once was.{{% /yellowBox %}}
+**Note**: This originally took the form of an addendum to the original "[Goodbye and hello](/posts/2020/07/goodbye-hello)" post; but I soon realized this was the classic case of shooting at a moving target, so I decided to give each move its own post (using the appropriate addendum as the text), while leaving the original pretty much as it once was.
+{.yellowBox}
 
 In case you haven't yet seen "[Transformed](/posts/2020/07/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 
@@ -52,4 +53,5 @@ Of course, switching back from Vercel to Netlify involved some fiddling, [DNS](h
 
 As a result, the original post's title---"Goodbye, hello"---turned out to be a little more nuanced than I'd originally intended. However things turned out, I am happy to be back within Netlify's "old" but comfy confines and no longer watching its bustling, friendly community from the outside, remembering all too fondly how nice it felt to be even an insignificant part of it.
 
-{{% yellowBox %}}**Note**: [To be continued](/posts/2020/08/goodbye-hello-part-3).{{% /yellowBox %}}
+**Note**: [To be continued](/posts/2020/08/goodbye-hello-part-3).
+{.yellowBox}

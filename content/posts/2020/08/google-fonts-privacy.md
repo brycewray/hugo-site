@@ -104,6 +104,7 @@ It was somewhat tedious making all these fixes I've described herein, but it was
 
 Even if you're not and never will be an EU citizen, your privacy deserves protection, too. I appreciate your visits, and want you to feel completely safe when you spend time here on, as I once described [my original website in the 1990s](https://web.archive.org/web/20000413205935/http://home1.gte.net/bwray/index.html), my "little spot on that lone prairie that is the great World Wide Web."
 
-{{% yellowBox %}}**Totally unrelated additional note**: Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?{{% /yellowBox %}}
+**Totally unrelated additional note**: Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?
+{.yellowBox}
 
 [^1]:	Of course, that doesn't necessarily identify you, especially if---as is true for most users---your device receives its IP address via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Nonetheless, it would at least narrow it down. And, equally of course, it absolutely *does* identify a device which has a *[static](https://whatismyipaddress.com/dynamic-static)* IP address.

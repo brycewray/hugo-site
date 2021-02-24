@@ -26,9 +26,11 @@ oldComments: |
     </div>
 ---
 
-{{% yellowBox %}}**Note, 2019-05-04**: In case you’ve already read this, be advised I’ve learned some additional information since the original post (2019-04-20) which doesn’t truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see “[Boxed in](/posts/2019/05/boxed-in).”{{% /yellowBox %}}
+**Note, 2019-05-04**: In case you’ve already read this, be advised I’ve learned some additional information since the original post (2019-04-20) which doesn’t truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see “[Boxed in](/posts/2019/05/boxed-in).”
+{.yellowBox}
 
-{{% yellowBox %}}**Note, 2019-10-11**: I originally deleted this post after writing “Boxed in”, but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it’s now back.{{% /yellowBox %}}
+**Note, 2019-10-11**: I originally deleted this post after writing “Boxed in”, but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it’s now back.
+{.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.
 
@@ -62,7 +64,8 @@ I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-
 
 {{< imgc src="Ulysses_export_to_Markdown_750x528.jpg" alt="Screen capture of Quick Export feature of Ulysses app" width="750" height="528" >}}
 
-{{% imgcCapt %}}Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.{{% /imgcCapt %}}
+Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.
+{.imgcCaption}
 
 [^preview]: Sometimes there are disparities between the original Markdown files and how they translate to HTML, so it's best to catch those in a local instance before you publish to the real site, and thus I was having to do that "dance" quite often during the editing process.
 
@@ -90,7 +93,8 @@ Sync was stuck on my Mac's installation of Ulysses, and had been that way for da
 
 {{< imgc src="iCloud_sync-save_icon_in_Ulysses_634x265.jpg" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width="634" height="265" >}}
 
-{{% imgcCapt %}}When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem.{{% /imgcCapt %}}
+When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem.
+{.imgcCaption}
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
 
@@ -160,7 +164,8 @@ Last night's edits weren't there; the last stuff there was from the night before
 
 I just sat there a minute, thinking about what I'd just witnessed and what it meant. Finally, I muttered, quietly and sadly, "Well, sir, that's all she wrote." I got those files safely copied over to iA Writer and---for the last time---closed Ulysses.
 
-{{% yellowBox %}}**Note from 2019-05-04**: I've since [learned](/posts/2019/05/boxed-in) that the behavior re the timestamp turns out to be common for so-called "shoebox" or "central-library" apps like Ulysses and, for that matter, Apple's own Notes and Photos apps. So, while I considered it the Smoking Gun at that point, now I doubt that. This doesn't explain the earlier business with the sync not happening for days, of course, but I've also learned of numerous similar reports from users of "shoebox" apps so, while that doesn't make it okay, it does suggest the fault isn't* necessarily *that of Ulysses. Again, will [update](/posts/2019/05/boxed-in) with more info when I can.{{% /yellowBox %}}
+**Note from 2019-05-04**: I've since [learned](/posts/2019/05/boxed-in) that the behavior re the timestamp turns out to be common for so-called "shoebox" or "central-library" apps like Ulysses and, for that matter, Apple's own Notes and Photos apps. So, while I considered it the Smoking Gun at that point, now I doubt that. This doesn't explain the earlier business with the sync not happening for days, of course, but I've also learned of numerous similar reports from users of "shoebox" apps so, while that doesn't make it okay, it does suggest the fault isn't* necessarily *that of Ulysses. Again, will [update](/posts/2019/05/boxed-in) with more info when I can.
+{.yellowBox}
 
 Shortly after that, I killed the Ulysses subscription on which I'd embarked with such high hopes and expectations last May. (Of course, it's still valid until the expiration date a few weeks off, but now I don't care.)
 
@@ -186,7 +191,8 @@ However, that was probably just how my wandering mind took them; because, by the
 
 {{< imgc src="iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg" alt="Screen capture from iA Writer app" width="1272" height="620" >}}
 
-{{% imgcCapt %}}Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.{{% /imgcCapt %}}
+Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.
+{.imgcCaption}
 
 *For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW]---and that's high praise, because each of those is outstanding in its own way.
 

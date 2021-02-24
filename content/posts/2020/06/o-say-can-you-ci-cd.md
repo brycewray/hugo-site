@@ -44,11 +44,13 @@ You can do that through the right mix of plugins, but the quickest solution that
 
 Image processing during each build takes precious seconds (in my site's case, quite a few of them) so, regardless of whether your image processing approach is plugins-only, bespoke-only, or a mixture of the two, this will ramp up your build times.
 
-{{% yellowBox %}}**Note, 2020-08-30**: I later solved *this* issue by [handing off image processing](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).{{% /yellowBox %}}
+**Note, 2020-08-30**: I later solved *this* issue by [handing off image processing](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).
+{.yellowBox}
 
 ### Webmentions
 
-{{% yellowBox %}}**Note, 2020-09-25**: The site no longer uses webmentions, but did at the time of this post's original appearance.{{% /yellowBox %}}
+**Note, 2020-09-25**: The site no longer uses webmentions, but did at the time of this post's original appearance.
+{.yellowBox}
 
 Some months ago, intrigued by the whole [IndieWeb](https://indieweb.org/) thing, I began dabbling in [webmentions](/posts/2020/04/webmentions-three-ssgs-1/); and I encourage you to consider doing the same with your own site. But, you ask, how would they increase the build times?
 
@@ -183,7 +185,8 @@ jobs:
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
 ```
 
-{{% yellowBox %}}**Note**: If you use this approach, you need to make sure you **don't** have your repo linked in Netlify for continuous deployment (in your site settings, that's **Build &amp; deploy** &gt; **Continuous deployment**). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.{{% /yellowBox %}}
+**Note**: If you use this approach, you need to make sure you **don't** have your repo linked in Netlify for continuous deployment (in your site settings, that's **Build &amp; deploy** &gt; **Continuous deployment**). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.
+{.yellowBox}
 
 Here's how it works.
 

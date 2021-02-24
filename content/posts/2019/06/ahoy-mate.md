@@ -45,7 +45,8 @@ And that continues, as I have become interested in [MailMate](https://freron.com
 
 {{< imgc src="MailMate_screen_cap_1619x720.jpg" alt="Screen capture of the MailMate app" width="1619" height="720" >}}
 
-{{% imgcCapt %}}The main MailMate window, with its Latin-displaying &ldquo;distortion mode&rdquo; engaged for privacy&rsquo;s sake.{{% /imgcCapt %}}
+The main MailMate window, with its Latin-displaying &ldquo;distortion mode&rdquo; engaged for privacy&rsquo;s&nbsp;sake.
+{.imgcCaption}
 
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much---and that's fine with the good doctor, not to mention the app's many adherents.
 

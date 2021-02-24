@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pexels</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pixabay</a></span>
 ---
 
-{{% yellowBox %}}**Update, 2020-12-13**: Although the "system fonts stack" I mention in this post is still a good choice, I am (at least currently) using the [Inter](https://rsms.me/inter) web font.{{% /yellowBox %}}
+**Update, 2020-12-13**: Although the "system fonts stack" I mention in this post is still a good choice, I am (at least currently) using the [Inter](https://rsms.me/inter) web font.
+{.yellowBox}
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on websites should, y'know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I'll explain the typographical choices on _this_ site.
 

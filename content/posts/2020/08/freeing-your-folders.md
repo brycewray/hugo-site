@@ -66,7 +66,8 @@ So, with all that understood, here we go.
 6. Open a separate Finder window and navigate to the **Documents** folder in your **iCloud Drive** folder.
 7. Select **everything** in that **Documents** folder.
 
-{{% yellowBox %}}**Note:** Well, *almost* everything. I suggest being careful about any folder that is identified in the **List** view as an "App Library" (often possessing an app's logo on the folder icon in the default **Icons** view)---one notable example of which, in my case, is [iA Writer](https://ia.net/writer). Leave folders of that type in the **iCloud Drive** folder's **Documents** folder. While you *can* move those items if you wish, just be forewarned that either the current app or its future versions might have a problem with the different location.{{% /yellowBox %}}
+**Note:** Well, *almost* everything. I suggest being careful about any folder that is identified in the **List** view as an "App Library" (often possessing an app's logo on the folder icon in the default **Icons** view)---one notable example of which, in my case, is [iA Writer](https://ia.net/writer). Leave folders of that type in the **iCloud Drive** folder's **Documents** folder. While you *can* move those items if you wish, just be forewarned that either the current app or its future versions might have a problem with the different location.
+{.yellowBox}
 
 8. Drag it all to the **2-Documents** folder.  
 	Again, you'll get the warning about moving the content out of iCloud Drive; so, as before, confirm that you **do** want to proceed.

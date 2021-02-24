@@ -36,7 +36,8 @@ oldComments: |
     </div>
 ---
 
-{{% yellowBox %}}**Note**: To put it simply, things [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so [here it shall stay](/posts/2019/10/otoh).{{% /yellowBox %}}
+**Note**: To put it simply, things [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so [here it shall stay](/posts/2019/10/otoh).
+{.yellowBox}
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
 

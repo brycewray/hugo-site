@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
 
-{{% yellowBox %}}**Note**: As you'll learn at the end, this story is only Part 1 of what turns out to be an ongoing saga of sorts.{{% /yellowBox %}}
+**Note**: As you'll learn at the end, this story is only Part 1 of what turns out to be an ongoing saga of sorts.
+{.yellowBox}
 
 Welcome to a story about an ending---and a beginning.
 
@@ -67,7 +68,8 @@ Second, CLI-based deployment is Firebase's *only* method. While that's fine from
 
 The only thing that kept Firebase in the evaluation process till nearly the end is that it's got the wicked-quick and ultra-consistent [Fastly](https://fastly.com) CDN in front of it. It half-tempted me to go back to my days of running sites off a $2.50/month [VPS](https://techterms.com/definition/vps) which I'd then put behind Fastly, but that's more trouble than I want to handle on a regular basis. Been there, done that.
 
-{{% yellowBox %}}**Note, 2020-09-09**: Firebase [now supports Brotli](https://firebase.googleblog.com/2020/08/firebase-hosting-new-features.html); and using [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) similar to [what I described here for Netlify](/posts/2020/06/o-say-can-you-ci-cd) can allow a more automated workflow with Firebase. Still, my continued testing shows it comes up a bit short against other considered options.{{% /yellowBox %}}
+**Note, 2020-09-09**: Firebase [now supports Brotli](https://firebase.googleblog.com/2020/08/firebase-hosting-new-features.html); and using [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) similar to [what I described here for Netlify](/posts/2020/06/o-say-can-you-ci-cd) can allow a more automated workflow with Firebase. Still, my continued testing shows it comes up a bit short against other considered options.
+{.yellowBox}
 
 ### Render
 
@@ -125,4 +127,5 @@ Thank you, Netlify, for twenty-one-and-a-half good and interesting months as my 
 
 And thank you, Vercel, for your warm welcome, and for the interesting journey on which we've embarked this week. I look forward to watching your already strong capabilities get even more impressive over time. Building upon the high performance of your platform, I hope to make this site a better place for nice folks to spend some time and learn a thing or two.
 
-{{% yellowBox %}}**Note**: [To be continued](/posts/2020/07/goodbye-hello-part-2).{{% /yellowBox %}}
+**Note**: [To be continued](/posts/2020/07/goodbye-hello-part-2).
+{.yellowBox}

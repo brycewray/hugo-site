@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Jan-Mallander-615621/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Jan Mallander</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Pixabay</a></span>
 ---
 
-{{% yellowBox %}}**Note**: To put it simply, things have [changed](/posts/2019/10/now-gatsby-geezer) [multiple](/posts/2019/12/packing-up) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).{{% /yellowBox %}}
+**Note**: To put it simply, things have [changed](/posts/2019/10/now-gatsby-geezer) [multiple](/posts/2019/12/packing-up) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).
+{.yellowBox}
 
 I'm not even going to make a big deal of this, or spend a lot of your time explaining it. I'm just going to say it in what for me is a fairly short post.
 

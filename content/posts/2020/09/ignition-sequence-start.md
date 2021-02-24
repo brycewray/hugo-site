@@ -17,7 +17,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@spacex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">SpaceX</a>; <a href="https://unsplash.com/s/photos/launch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{% yellowBox %}}**Note**: Unlike the [last](/posts/2020/09/normal-persons-guide-static-websites) [two](/posts/2020/09/normal-persons-guide-static-website-hosting) posts, this one very definitely is for **only** my fellow web geeks---and, anyway, they're the only folks likely to be using [Firebase Hosting](https://firebase.google.com), I would think.{{% /yellowBox %}}
+**Note**: Unlike the [last](/posts/2020/09/normal-persons-guide-static-websites) [two](/posts/2020/09/normal-persons-guide-static-website-hosting) posts, this one very definitely is for **only** my fellow web geeks---and, anyway, they're the only folks likely to be using [Firebase Hosting](https://firebase.google.com), I would think.
+{.yellowBox}
 
 I mentioned in a footnote to the original version of my [previous post](/posts/2020/09/normal-persons-guide-static-website-hosting) that my "[lurch](/posts/2020/09/goodbye-hello-part-5)" among hosts now has this site on Firebase. If you've read both the original "[Goodbye and hello](/posts/2020/07/goodbye-hello)" and its semi-[retconned](https://www.merriam-webster.com/words-at-play/retcon-history-and-meaning) [second part](/posts/2020/07/goodbye-hello-part-2), you may remember my describing why I chose **not** to use Firebase. If so, you then may also wonder what changed my mind.
 
@@ -76,7 +77,8 @@ jobs:
 
 ## For Eleventy
 
-{{% yellowBox %}}**Note**: Other than obviously not downloading and installing Hugo, this one for Eleventy also was different because, in the `Deploy to Firebase` section, I had to add `npx firebase use default` to make this work with the project, for some reason I don't understand.{{% /yellowBox %}}
+**Note**: Other than obviously not downloading and installing Hugo, this one for Eleventy also was different because, in the `Deploy to Firebase` section, I had to add `npx firebase use default` to make this work with the project, for some reason I don't understand.
+{.yellowBox}
 
 ```yaml
 name: CI-Eleventy-site-to-Firebase
@@ -106,4 +108,5 @@ jobs:
           # Other args should come from .firebaserc and firebase.json
 ```
 
-{{% yellowBox %}}**Note**: Having learned all I wanted to learn from the experience, I decided a few days later to leave Firebase Hosting.{{% /yellowBox %}}
+**Note**: Having learned all I wanted to learn from the experience, I decided a few days later to leave Firebase Hosting.
+{.yellowBox}

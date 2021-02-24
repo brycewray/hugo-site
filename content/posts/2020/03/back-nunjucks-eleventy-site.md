@@ -6,7 +6,7 @@ subtitle: "Taking a course of lesser resistance"
 description: "Why I’ve decided for now to backtrack from JavaScript-only templating in Eleventy."
 author: Bryce Wray
 date: 2020-03-22T14:30:00-05:00
-lastmod: 2020-08-04T06:57:00-05:00
+lastmod: 2021-02-24T13:37:00-06:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
 featured_image: Nunjucks-template-screen-capture-2020-02_edit_1280x881.jpg
 featured_image_width: 1280
@@ -57,4 +57,5 @@ If you, too, would like to see that, please note that Mr. Lillie is interested i
 
 I hope that happens sooner rather than later. If it does, and if Mr. Lillie's docs are *half* as good as the documentation he put in his own code---wowzers.
 
-{{% yellowBox %}}***Update, 2020-04-15***---Have now transitioned to full-.11ty.js templating ([details](/posts/2020/04/full-11ty-js-monty)). {{% /yellowBox %}}
+***Update, 2020-04-15***: Have now transitioned to full-.11ty.js templating ([details](/posts/2020/04/full-11ty-js-monty)).
+{.yellowBox}
