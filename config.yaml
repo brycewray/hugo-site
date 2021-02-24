@@ -31,7 +31,9 @@ markup:
     extensions:
       linkify: false
     parser:
-      attribute: true
+      attribute:
+        block: true
+        title: true
     renderer:
       unsafe: true
       # only to allow for inline HTML and/or JS
