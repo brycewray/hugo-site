@@ -1,9 +1,0 @@
-# Netlify instructions to control build
-
-[build]
-  command = "hugo --gc --minify"
-
-[context.production.environment]
-  HUGO_VERSION = "0.80.0"
-  HUGO_ENV = "production"
-  TZ = "America/Chicago"
