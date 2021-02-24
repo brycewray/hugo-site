@@ -96,7 +96,8 @@ So, over the last few days, I put in place this plan:
 
 At least until I decide that last item, I am maintaining two different themes in the Hugo repo. One is built on Tailwind, and the other on SCSS. (I named them "thoreau" and "thoreauscss," respectively.) While I continue to consider the choice, I can easily switch back and forth between them with a simple edit to the site's [config file](https://gohugo.io/getting-started/configuration/). *[**Update, 2021-02-07**: Decided to go with SCSS.]*
 
-{{< yellowBox >}}**Important**: Be assured that every compliment I've ever paid to Eleventy, Tailwind, and/or PostCSS still applies. For those who *don't* have a problem with Node.js dependencies, I continue to give my highest recommendation to these projects, most especially Eleventy. All three are actively and lovingly maintained, and currently are far and away the best of their respective breeds (in Eleventy's case, that would be JavaScript-based SSGs).{{< /yellowBox >}}
+**Important**: Be assured that every compliment I've ever paid to Eleventy, Tailwind, and/or PostCSS still applies. For those who *don't* have a problem with Node.js dependencies, I continue to give my highest recommendation to these projects, most especially Eleventy. All three are actively and lovingly maintained, and currently are far and away the best of their respective breeds (in Eleventy's case, that would be JavaScript-based SSGs).
+{.yellowBox}
 
 ## Time to let others run
 
