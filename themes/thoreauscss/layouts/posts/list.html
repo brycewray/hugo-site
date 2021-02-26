@@ -78,7 +78,7 @@
 
       </p><!-- .pagination -->
     {{ end }}
-    <hr style="width: 50%; margin-top: 0; margin-bottom: 1.5em;" />
+    <hr class="paginatorTop" />
 
 			{{ range $paginator.Pages }}
         <div>          
@@ -104,7 +104,7 @@
 				</div>
       {{ end }}
       
-      <hr style="margin-top: 2em;" />
+      <hr class="paginatorBottom" />
       <!-- If there's more than one page. -->
 			{{ if gt $paginator.TotalPages 1 }}
 

@@ -131,4 +131,23 @@
     border-bottom: 1px solid #aaddff !important;
   }
 }
+
+hr.paginatorTop, hr.paginatorBottom {
+  width: 65%;
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1536px) {
+    width: 40%;
+  }
+}
+
+hr.paginatorTop {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+hr.paginatorBottom {
+  margin-top: 2em;
+}
 // === end, posts and post lists
