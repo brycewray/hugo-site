@@ -1,7 +1,7 @@
 name = "thoreauscss"
 license = "MIT"
 description = "A simplification of something that has evolved since 2018; originally based on a Hugo theme called “Tale” but now with little resemblance thereto."
-min_version = "0.80.0"
+min_version = "0.81.0"
 
 tags = ["tags"]
 

@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+{{ $minutes := math.Floor (div $readTime 60) }}
+{{ $seconds := mod $readTime 60 }}
+{{ $seconds := printf "%02d" $seconds }}
+
+  {{ partial "billboard.html" . }}
+
+  <div class="mr-auto ml-auto px-6" style="max-width: 60ch;">
+    <p class="text-xs 2xl:text-base text-center">Estimated reading time: {{ $minutes }}:{{ $seconds }}</p>
+    <div class="mr-auto ml-auto border-b-2 border-blue-700 dark:border-white w-5/12"></div>
+    <article class="article">
+      {{ .Content }}
+    </article>
+  </div>
+
+  {{ partial "fastcomments.html" . }}
+
+  {{ if or .PrevPage .NextPage }}
+    <div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
+      <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+			<p class="text-center my-2 text-xl text-white leading-tight tracking-tight">
+				{{ with .NextInSection }}
+					<strong>Next</strong>:
+					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.RelPermalink}}"> {{.Title}}</a>
+					{{ end }}
+			</p>
+			<p class="text-center pb-4 my-2 text-xl text-white leading-tight tracking-tight">
+				{{ with .PrevInSection }}
+					<strong>Previous</strong>:
+					<a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{.RelPermalink}}"> {{.Title}}</a>
+				{{ end }}
+			</p>
+    </div>
+  {{ end }}
+{{ end }}
