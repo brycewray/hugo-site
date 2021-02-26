@@ -16,6 +16,7 @@ $black: #000; // could also be #333 at some point, hence this var
 $blue: #0033ff; // was 0088ff but that's not sufficient contrast for accessibility
 $blueFirst: #0088ff; // Will use as a hover color only
 $blueLight: #adf; // for use with dark mode where supported
+$blueLightCode: #dfeeff;
 $darkblue: #0000aa;
 $shadow-color: rgba(0, 0, 0, .2);
 $code-color: #006400; // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
