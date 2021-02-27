@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: "Chasing 100: Tips for optimizing your website"
+title: "Chasing 100: tips for optimizing your website"
 subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray

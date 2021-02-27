@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: "Fathom Analytics: Count on it"
+title: "Fathom Analytics: count on it"
 subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
