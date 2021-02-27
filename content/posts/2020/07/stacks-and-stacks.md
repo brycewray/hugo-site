@@ -4,7 +4,7 @@ subtitle: "That was then, this is now"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00
-lastmod: 2021-02-20T16:45:00-06:00
+lastmod: 2021-02-27T17:41:00-06:00
 discussionId: "2020-07-stacks-and-stacks"
 ---
 
@@ -50,7 +50,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: Private.
 
-2020-07-05: [Public](https:/github.com/brycewray/eleventy_solo/).
+2020-07-05: Public.
 
 ## Local repo management tools
 
