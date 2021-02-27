@@ -66,7 +66,7 @@ And, with those cheery thoughts, I segue to offering you a review of this site's
 ## June
 
 - **[Why I kept Ulysses](/posts/2020/06/why-kept-ulysses)**---Following up on "[Murdered darlings](/posts/2020/04/murdered-darlings)," I explained why I not only *wasn't* giving up on Ulysses but also *wasn't* deep-sixing the attempt at a novel.
-- **[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it)**---Dumped other website analytics products in favor of what I'd found to be the [cream of the crop](https://usefathom.com/ref/ZKHYWX) (affiliate link) where respecting the *privacy* of one's visitors is concerned.
+- **[Fathom Analytics: count on it](/posts/2020/06/fathom-analytics-count-on-it)**---Dumped other website analytics products in favor of what I'd found to be the [cream of the crop](https://usefathom.com/ref/ZKHYWX) (affiliate link) where respecting the *privacy* of one's visitors is concerned.
 - **[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd)**---Provided ways for [Netlify](https://netlify.com) users (at that time, I was one of ’em) to get around the 300-minute monthly build limit on that web host's free tier.
 
 
@@ -75,7 +75,7 @@ And, with those cheery thoughts, I segue to offering you a review of this site's
 - **[Goodbye and hello](/posts/2020/07/goodbye-hello)**---Examined the merits of several SSG-friendly hosts’ free tiers and moved the site to what I pronounced the top dog in that bunch, [Vercel](https://vercel.com). However, as you'll see, this was only the start of what I would subsequently call "the lurch" among various hosts.
 - **[Stacks and stacks](/posts/2020/07/stacks-and-stacks)**---Compared the site's "tech stack" from exactly a year before with what it was using on the date I initially posted this.
 - **[Mixed nuts • July, 2020](/posts/2020/07/mixed-nuts-2020-07)**---Another installment of sort-of-short observations on this, that, and the other thing.
-- **[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website)**---Suggested performance-enhancement methods (I'll forego the obvious snarky comment).
+- **[Chasing 100: tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website)**---Suggested performance-enhancement methods (I'll forego the obvious snarky comment).
 - **[Beginner's luck](/posts/2020/07/beginners-luck)**---Continued trying to help SSG newbies (because I'd been one not so long ago), this time with starter sets for both Eleventy and Hugo.
 - **[Transformed](/posts/2020/07/transformed)**---Finally reached the end of my patience with *locally* managing/prrocessing site images and, instead, transferred that aggravation to [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu) (that's an "invitation link," as explained in an update to the article).
 - **[Goodbye and hello • Part 2](/posts/2020/07/goodbye-hello-part-2)**---"Lurched" back to Netlify from Vercel. Briefly.

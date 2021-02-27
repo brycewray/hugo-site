@@ -17,7 +17,7 @@ This site uses [FastComments](https://fastcomments.com) for commenting. For more
 
 ### Fathom Analytics
 
-This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, "[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it)."
+This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, "[Fathom Analytics: count on it](/posts/2020/06/fathom-analytics-count-on-it)."
 
 ### Google Fonts
 
