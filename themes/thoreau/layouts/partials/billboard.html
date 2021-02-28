@@ -1,8 +1,0 @@
-<div class="container h-auto w-full min-w-full relative overflow-hidden pt-12 pb-6 px-4 md:px-8 2xl:px-12">
-  <h1 class="text-center text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight leading-tight md:mt-6 md:mb-12 2xl:mt-16 mb-0">{{ .Params.Title }}</h1>
-  {{- if .Params.Subtitle }}<h2 class="text-center text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl leading-tight tracking-tight">{{ .Params.Subtitle }}</h2>{{- end }}
-  {{- if .Params.Description }}<p class="text-center md:block md:text-2xl 2xl:text-3xl tracking-tight mt-6 md:mt-12 mb-0 md:mb-6 2xl:mb-12">{{ .Params.Description }}</p>{{- end }}
-  <p class="text-center text-base lg:text-lg 2xl:text-xl px-4 md:px-0 mt-8 md:mt-0">
-    <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span class="text-sm">Last modified {{ .Lastmod.Format "January 2, 2006" }}{{- end }}</span>
-  </p>
-</div>
