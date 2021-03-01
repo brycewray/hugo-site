@@ -7,6 +7,12 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "browserslist": [
+    "last 4 versions",
+    "> 1%",
+    "IE 11",
+    "maintained node versions"
+  ],
   "devDependencies": {
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
