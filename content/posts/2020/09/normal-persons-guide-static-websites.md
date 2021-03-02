@@ -6,7 +6,7 @@ subtitle: "Advice from a semi-normal old web geek"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
 date: 2020-09-22T16:35:00-05:00
-lastmod: 2020-09-25T09:33:00-05:00
+lastmod: 2021-03-02T15:22:00-06:00
 #draft: true
 discussionId: "2020-09-normal-persons-guide-static-websites"
 featured_image: christina-wocintechchat-com-EkeThvO9VfM-unsplash_6016x4016.jpg
@@ -104,7 +104,7 @@ That said, I have another one to recommend if you're feeling just slightly more 
 
 It's also by far the easiest and most flexible JS-based SSG to set up and use, allowing the use of a number of templating languages; so, if you *do* want to do a little playing around with the innards of whichever SSG you pick, Eleventy is your go-to. With its growing popularity, Eleventy is quickly amassing a large community who gravitated to it precisely because of its competitors’ shortcomings.
 
-There is no real theming for Eleventy at this writing *but* there are plenty of [starter sets](https://www.11ty.dev/docs/starter/) available for it. I even have [one of my own](https://github.com/brycewray/eleventy_solo/) out there, similar to the look-and-feel of this site. If you decide to opt for this highly commendable JS-based SSG, I suggest, just as I did regarding themes for Hugo, that you take time to select a starter set best fitting your requirements---so that, at least at the outset while you're getting used to everything, you'll need to do as little of your own setup and design as possible.
+There is no real theming for Eleventy at this writing *but* there are plenty of [starter sets](https://www.11ty.dev/docs/starter/) available for it. I even have [one of my own](https://github.com/brycewray/eleventy_solo_starter/) out there, similar to the look-and-feel of this site. If you decide to opt for this highly commendable JS-based SSG, I suggest, just as I did regarding themes for Hugo, that you take time to select a starter set best fitting your requirements---so that, at least at the outset while you're getting used to everything, you'll need to do as little of your own setup and design as possible.
 
 ## I suggest you avoid these
 
