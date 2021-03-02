@@ -46,6 +46,7 @@
   &-Subtitle {
     letter-spacing: -0.0125em;
     font-size: 1rem;
+    margin-top: 0;
     margin-bottom: 0;
     @media screen and (min-width: 1024px) {
       font-size: 1.25rem;
@@ -57,7 +58,8 @@
   &-Dates {
     font-size: 0.75rem;
     line-height: 1.5em;
-    margin-top: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
     @media screen and (min-width: 1024px) {
       font-size: 0.875rem;
     }
@@ -68,6 +70,7 @@
   &-Description {
     font-size: 1rem;
     line-height: 1.5em;
+    margin-top: 0;
     margin-bottom: 0.5em;
     @media screen and (min-width: 1024px) {
       font-size: 1.125rem;
