@@ -4,7 +4,7 @@ subtitle: "Evaluating Next.js for the Day Job"
 description: "Some things I’ve learned while tinkering with a major React framework."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
-#lastmod: actually 2021-03-11T17:57:00-06:00
+#lastmod: actually 2021-03-11T17:58:00-06:00
 #draft: false
 discussionId: "2021-03-next-steps"
 ---
@@ -94,7 +94,7 @@ Fortunately, there's no need to futz with all that **if** you add some [Babel](h
 As long as your relative references in *that* file are correct---which is easy to determine, especially since you're coming from the top level---you then can use those aliases throughout the project. Here's an alias-friendly version of the previous example:
 
 ```jsx
-import styles from '@scss/global.scss'
+import '@scss/global.scss'
 ```
 
 .&nbsp;.&nbsp;. so much easier.
