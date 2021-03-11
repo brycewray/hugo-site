@@ -4,7 +4,7 @@ subtitle: "Evaluating Next.js for the Day Job"
 description: "Some things I’ve learned while tinkering with a major React framework."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
-#lastmod:
+#lastmod: actually 2021-03-11T17:57:00-06:00
 #draft: false
 discussionId: "2021-03-next-steps"
 ---
