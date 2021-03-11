@@ -65,7 +65,7 @@ Those settings cover nearly every browser in use---even the justifiably despised
 One thing you'll do a lot in this sort of platform is to `import` components, styling files, and the like; and those `import` references are **relative** rather than **absolute**. So, depending on how nested your stuff is, you might end up with lines like this:
 
 ```jsx
-import styles from '../../../assets/scss/global.scss'
+import '../../../assets/scss/global.scss'
 ```
 
 And, yeah, you have to count up all those `../` items manually and keep doing so until the Next.js dev server stops throwing error messages.
