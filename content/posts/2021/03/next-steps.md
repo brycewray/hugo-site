@@ -4,7 +4,7 @@ subtitle: "Evaluating Next.js for the Day Job"
 description: "Some things I’ve learned while tinkering with a major React framework."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
-#lastmod: actually 2021-03-11T17:58:00-06:00
+lastmod: 2021-03-12T06:28:00-06:00
 #draft: false
 discussionId: "2021-03-next-steps"
 ---
@@ -139,7 +139,7 @@ Perhaps you're wondering, "Is all this worth the trouble?"
 
 Oh, yeah.
 
-The advantage of this modular approach is that I can apply, say, a `headlineRow` SCSS class on different pages *but* keep separate, different versions thereof (for the sake of styling differences from one page to another) **without** having to give them more convoluted names[^noBEM] in one long SCSS sheet (or a short one laden with `@include`s of multiple [SCSS "partials"](https://sass-lang.com/guide)---more on which, shortly). That allows a team to standardize on specific site-wide styles **but** have the flexibility to have slight (or not-so-slight) differences in how each style works on different pages **without** affecting the whole site-wide [style cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade). The bigger a site and/or the more people who may have to "touch" its inner workings over time, the more sense it makes to use CSS/SCSS Modules.
+The advantage of this modular approach is that I can apply, say, a `headlineRow` SCSS class on different pages *but* keep separate, different versions thereof (for the sake of styling differences from one page to another) **without** having to give them more convoluted names[^noBEM] in one long SCSS sheet (or a short one laden with `@import`s of multiple [SCSS "partials"](https://sass-lang.com/guide)---more on which, shortly). That allows a team to standardize on specific site-wide styles **but** have the flexibility to have slight (or not-so-slight) differences in how each style works on different pages **without** affecting the whole site-wide [style cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade). The bigger a site and/or the more people who may have to "touch" its inner workings over time, the more sense it makes to use CSS/SCSS Modules.
 
 [^noBEM]: I was already not a fan of [BEM](https://css-tricks.com/bem-101/),  and [other, similarly picky naming methodologies](https://www.webfx.com/blog/web-design/css-methodologies/) that I deem more convoluted than truly helpful. Now that I've seen the advantages and *relative* idiot-proof (?) status of CSS Modules, I am even more convinced not to worry about those other alternatives.
 
