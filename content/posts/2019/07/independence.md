@@ -68,11 +68,6 @@ I knew I had to have a Mac.
 
 In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local [ComputerLand](https://en.wikipedia.org/wiki/ComputerLand) and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
 
-{{< imgc src="1984-07-11_01_retouched_1280x720.jpg" alt="Bryce Wray, in 1984, unwrapping his new Macintosh computer" width="1280" width="720" >}}
-
-July 11, 1984: A much younger and skinnier me eagerly unwraps my new "Skinny Mac." (Photo&nbsp;by my overly tolerant&nbsp;spouse.)
-{.imgcCaption}
-
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 
 In 1986, the college library got a [Macintosh XL (the rebadged Lisa)](https://en.wikipedia.org/wiki/Apple_Lisa) and [LaserWriter](https://www.macworld.com/article/1150845/laserwriter.html)---oh, my typographical saliva flowed at that---and I gleefully used the library's installation of [Ready,Set,Go!](https://winworldpc.com/product/ready-set-go/3) to give my teaching materials even more pizzazz through the magic of a new thing called [desktop publishing](https://en.wikipedia.org/wiki/Desktop_publishing).
