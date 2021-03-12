@@ -7,6 +7,12 @@ date: 2021-03-06T15:55:00-06:00
 #lastmod:
 #draft: false
 discussionId: "2021-03-gems-in-rough-03"
+featured_image: "gem-amethyst-3804830_4928x3264.jpg"
+featured_image_width: 4928
+featured_image_height: 3264
+featured_image-alt: "Closeup of purple gemstone - amethyst"
+featured_image_caption: |
+  <span class="caption"Image: <a href="https://pixabay.com/users/paulapaulsen-4174329/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3804830">PaulaPaulsen</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3804830">Pixabay</a></span>
 ---
 
 As one gathers navel from one's lint, so also do I gather little bits of  information I hope will be helpful for those of you who, as I do, have found a hobby in fiddling with personal [SSG](https://jamstack.org/generators)-built websites. [Back in December](/posts/2020/12/gems-in-rough), I began issuing such items as "Gems in the rough." Here be the latest thereof.

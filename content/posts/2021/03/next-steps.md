@@ -7,6 +7,12 @@ date: 2021-03-11T16:30:00-06:00
 lastmod: 2021-03-12T06:28:00-06:00
 #draft: false
 discussionId: "2021-03-next-steps"
+featured_image: "crystal-ball-drew-beamer-xU5Mqq0Chck-unsplash_5284x3522.jpg"
+featured_image_width: 5284
+featured_image_height: 3522
+featured_image-alt: "Concept of the future - crystal ball held up in front of beachside sunset"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://unsplash.com/@drew_beamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Drew Beamer</a>; <a href="/s/photos/future?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 As I [mentioned a few days back](/posts/2021/03/gems-in-rough-03), Day Job-related concerns have led me to spend time dabbling in the [Next.js](https://nextjs.org) [React](https://reactjs.org) framework. This is because I'm researching possible future options for my employers’ web presence, and Next.js seems to fit their needs pretty well.

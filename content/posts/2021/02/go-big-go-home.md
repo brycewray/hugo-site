@@ -7,6 +7,12 @@ date: 2021-02-10T07:55:00-06:00
 lastmod: 2021-02-20T20:43:00-06:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
+featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
+featured_image_width: 5760
+featured_image_height: 3840
+featured_image-alt: "Closeup of computer code on a display"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a>; <a href="/s/photos/computer-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Imagine that you're about to take your first drive as owner of a shiny new vehicle which you chose after weeks of research and comparison.

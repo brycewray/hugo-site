@@ -7,6 +7,12 @@ date: 2021-02-02T16:25:00-06:00
 lastmod: 2021-02-06T08:35:00-06:00
 #draft: false
 discussionId: "2021-02-tailwind-head-hugo-pipes"
+featured_image: "code-html-head-5421210_5103x3403.jpg"
+featured_image_width: 5103
+featured_image_height: 3403
+featured_image-alt: "Closeup of display of web page's HTML HEAD section"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/stradus-833024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5421210">Sárfi Benjámin</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5421210">Pixabay</a></span>
 ---
 
 External *vs.* internal---that is the question. At least, it is when you're considering how and where to provide CSS in your website.
