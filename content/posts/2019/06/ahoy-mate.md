@@ -43,11 +43,6 @@ My [last post](/posts/2019/05/the-holy-mail) closed with:
 
 And that continues, as I have become interested in [MailMate](https://freron.com). This macOS-only, [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)-only app is a creation of Benny Kjær Nielsen, a Danish indie developer and holder of a doctorate in computer science.
 
-{{< imgc src="MailMate_screen_cap_1619x720.jpg" alt="Screen capture of the MailMate app" width="1619" height="720" >}}
-
-The main MailMate window, with its Latin-displaying &ldquo;distortion mode&rdquo; engaged for privacy&rsquo;s&nbsp;sake.
-{.imgcCaption}
-
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much---and that's fine with the good doctor, not to mention the app's many adherents.
 
 ## Power trip
