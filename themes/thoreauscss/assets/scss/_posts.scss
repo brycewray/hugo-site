@@ -153,4 +153,20 @@ hr.paginatorTop {
 hr.paginatorBottom {
   margin-top: 2em;
 }
+
+.featured-image-caption {
+  margin-top: 0.25rem;
+  padding-bottom: 1.5rem;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center !important;
+  font-family: $sans-serif;
+  font-size: $legal + unquote("rem");
+  color: $grey-1;
+  @media (prefers-color-scheme: dark) {
+    color: $grey-2-dark-mode;
+  }
+}
+
 // === end, posts and post lists
