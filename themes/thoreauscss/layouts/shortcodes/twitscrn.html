@@ -16,17 +16,19 @@
   wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+{{- $LQIPholder := "f_auto,q_1,w_20/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
-{{- $imgClass := "containedImage" -}}
+{{- $imgClass := "containedImage lazy" -}}
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $stringtoRet := "" -}}{{/* init */}}
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet' style='background-image: url(" $cloudiBase $LQIPholder $imageUrl "); background-position: center; background-repeat: no-repeat; background-size: cover;'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' data-srcset='" -}}
+
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
   {{- if ge $width -}}
