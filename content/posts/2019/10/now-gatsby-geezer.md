@@ -84,4 +84,3 @@ There are few things more satisfying to a brain wired like mine than fitting the
 Until the next puzzle, that is. But that'll come soon enough.
 
 For now, forgive me while I sit back, grin like a fool, and savor the moment.
-
