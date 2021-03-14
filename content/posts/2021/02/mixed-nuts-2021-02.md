@@ -10,7 +10,7 @@ discussionId: "2021-02-mixed-nuts-2021-02"
 featured_image: "almonds-484268_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
-featured_image-alt: "Mixed nuts, including almonds and hazelnuts"
+featured_image_alt: "Mixed nuts, including almonds and hazelnuts"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/trostle-140048/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=484268">Matt Trostle</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=484268">Pixabay</a></span>
 ---

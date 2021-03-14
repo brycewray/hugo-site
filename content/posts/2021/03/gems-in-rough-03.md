@@ -10,7 +10,7 @@ discussionId: "2021-03-gems-in-rough-03"
 featured_image: "gem-amethyst-3804830_4928x3264.jpg"
 featured_image_width: 4928
 featured_image_height: 3264
-featured_image-alt: "Closeup of purple gemstone - amethyst"
+featured_image_alt: "Closeup of purple gemstone - amethyst"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/paulapaulsen-4174329/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3804830">PaulaPaulsen</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3804830">Pixabay</a></span>
 ---

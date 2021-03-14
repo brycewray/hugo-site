@@ -10,7 +10,7 @@ discussionId: "2021-02-simplify-simplify"
 featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"
 featured_image_width: 6000
 featured_image_height: 4000
-featured_image-alt: "Concept photo of simplicity and serenity - distant sea horizon viewed from a beach"
+featured_image_alt: "Concept photo of simplicity and serenity - distant sea horizon viewed from a beach"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@oxanetruth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oxane Alexandroff</a>; <a href="/s/photos/simplicity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---

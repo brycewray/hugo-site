@@ -10,7 +10,7 @@ discussionId: "2021-01-leaner-cleaner"
 featured_image: "rest-5977908_6000x4000.jpg"
 featured_image_width: 6000
 featured_image_height: 4000
-featured_image-alt: "Concept photo of simplicity, showing single twig sticking out of still water"
+featured_image_alt: "Concept photo of simplicity, showing single twig sticking out of still water"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/achir-1634088/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5977908">Achim Ruhnau</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5977908">Pixabay</a></span>
 ---
