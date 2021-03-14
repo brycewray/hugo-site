@@ -4,7 +4,7 @@ subtitle: "An easy way to get internal CSS"
 description: "If your website draws that “render-blocking resource” gripe during tests, here’s one method for fighting it."
 author: Bryce Wray
 date: 2021-02-02T16:25:00-06:00
-lastmod: 2021-02-06T08:35:00-06:00
+lastmod: 2021-03-14T04:24:00-05:00
 #draft: false
 discussionId: "2021-02-tailwind-head-hugo-pipes"
 featured_image: "code-html-head-5421210_5103x3403.jpg"
@@ -32,14 +32,14 @@ This example assumes you already have both Tailwind CSS and [PostCSS](https://po
 
 To let you see clearly the differences between doing this as external CSS and doing it as internal CSS, here is a sample of each. First, **external**:
 
-```html
+```go
   {{ $css := resources.Get "css/index.css" }}
   {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") | fingerprint }}
 ```
 
 .&nbsp;.&nbsp;. and then, **internal**:
 
-```html
+```go
   {{ with resources.Get "css/index.css" | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") }}
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
@@ -49,14 +49,14 @@ To let you see clearly the differences between doing this as external CSS and do
 
 Finally, as a bonus, here's how you do it if you prefer to use [SCSS](https://sass-lang.com) (for which Hugo Pipes has its own out-of-the-box capabilities, not requiring either PostCSS or Node.js) rather than Tailwind CSS. As before, **external** first:
 
-```html
+```go
   {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
   {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint }}
 ```
 
 .&nbsp;.&nbsp;. and then, **internal**:
 
-```html
+```go
   {{ with resources.Get "scss/index.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
