@@ -4,7 +4,7 @@ subtitle: "How Hugo 0.81.0 lets me do more in Markdown"
 description: "The benefit of enhanced support for attributes."
 author: Bryce Wray
 date: 2021-02-27T11:35:00-06:00
-#lastmod:
+lastmod: 2021-03-15T16:25:00-05:00
 #draft: false
 discussionId: "2021-02-new-hugo-easier-writing"
 featured_image: "mac-and-keyboard-home-office-1207834_3000x2000.jpg"
@@ -104,7 +104,7 @@ Your faithful correspondent holds his first grandchild for the first time, on 
 {.imgcCaption}
 ```
 
-The only difference from how I did it in the Eleventy/plugins combo is that, in Hugo, it requires a line feed between the end of what you're styling and the attribute (in this case, `{.imgcCaption}` to specify use of the `imgcCaption` CSS class). Hardly a biggie.
+The only difference from how I did it in the Eleventy/plugins combo is that, in Hugo, it requires a line feed between the end of what you're styling and the attribute (in this case, `{.imgcCaption}` to specify use of the `imgcCaption` CSS class). Hardly a biggie. (With the Eleventy setup, you can put a line feed there, too, so that's even better for cross-site/cross-repo purposes, for those of you like me who are so inclined.)
 
 ## A little thing to some, but&nbsp;.&nbsp;.&nbsp;.
 
