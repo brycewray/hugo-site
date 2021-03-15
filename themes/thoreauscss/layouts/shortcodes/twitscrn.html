@@ -27,7 +27,7 @@
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet' style='background-image: url(" $cloudiBase $LQIPholder $imageUrl "); background-position: center; background-repeat: no-repeat; background-size: cover;'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' data-srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet' style='aspect-ratio: " $width " / " $height "; background-image: url(" $cloudiBase $LQIPholder $imageUrl "); background-position: center; background-repeat: no-repeat; background-size: cover;'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' data-srcset='" -}}
 
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}

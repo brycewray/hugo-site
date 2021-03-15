@@ -37,7 +37,7 @@
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "' style='background-image: url(" $cloudiBase $LQIPholder $src "); background-position: center; background-repeat: no-repeat; background-size: cover;'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' data-srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "' style='aspect-ratio: '" $width " / " $height "; background-image: url(" $cloudiBase $LQIPholder $src "); background-position: center; background-repeat: no-repeat; background-size: cover;'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' data-srcset='" -}}
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
   {{- if ge $width . -}}
