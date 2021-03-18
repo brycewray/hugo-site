@@ -71,23 +71,12 @@
     font-size: 1rem;
     line-height: 1.5em;
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
     @media screen and (min-width: 1024px) {
       font-size: 1.125rem;
     }
     @media screen and (min-width: 1536px) {
       font-size: 1.25rem;
-    }
-  }
-  &-ReadingTime {
-    margin-top: 0;
-    margin-bottom: 3em;
-    font-size: 0.625rem;
-    @media screen and (min-width: 1024px) {
-      font-size: 0.75rem;
-    }
-    @media screen and (min-width: 1536px) {
-      font-size: 0.875rem;
     }
   }
 }

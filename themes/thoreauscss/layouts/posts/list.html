@@ -93,13 +93,6 @@
 					<p class="posts-Description">
 						{{ .Description }}
 					</p>
-          {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
-          {{ $minutes := math.Floor (div $readTime 60) }}
-          {{ $seconds := mod $readTime 60 }}
-          {{ $seconds := printf "%02d" $seconds }}
-          <p class="posts-ReadingTime">
-            Estimated reading time: {{ $minutes }}:{{ $seconds }}
-          </p>
 				</div>
       {{ end }}
       

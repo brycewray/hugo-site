@@ -4,11 +4,6 @@
 
   <div class="container-narrower">
     <article class="article">
-      {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
-      {{ $minutes := math.Floor (div $readTime 60) }}
-      {{ $seconds := mod $readTime 60 }}
-      {{ $seconds := printf "%02d" $seconds }}
-      <p class="legal ctr sansSerif">Estimated reading time: {{ $minutes }}:{{ $seconds }}</p>
       <div class='relative' style='aspect-ratio: {{ .Params.featured_image_width }} / {{ .Params.featured_image_height }}; background-image: url(https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_1,w_20/{{ .Params.featured_image }}); background-position: center; background-repeat: no-repeat; background-size: cover;'>
         <img
           class='imgCover lazy' 
