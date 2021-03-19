@@ -1,6 +1,6 @@
 // CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/WRwJQX
 
-$navBreakpoint: 900px;
+$navBreakpoint: $BkPt-lg;
 
 header {
   // font-family: $sans-serif;
@@ -168,7 +168,7 @@ nav {
   }
   a {
     color: #fff;
-    font-size: $stdsize + unquote("em");
+    font-size: $stdsize;
     text-decoration: none;
     border-bottom: 0;
     opacity: 0;
@@ -197,7 +197,7 @@ nav {
     color: $grey-2;
     border-bottom: 0;
   }
-  font-size: $minimalbig + unquote("rem");
+  font-size: $minimalbig;
   font-weight: 700;
   margin-top: 0;
   margin-left: 5%;
@@ -225,7 +225,7 @@ nav {
     grid-column: 1 / 2;
     text-align: left;
     padding-left: 10%;
-    font-size: $minimalbig + unquote("em");
+    font-size: $minimalbig;
   }
   nav {
     top: 0.8rem;
@@ -235,7 +235,7 @@ nav {
     display: table;
     // grid-column: 4 / 5;
     a {
-      font-size: $slightlybig + unquote("rem");
+      font-size: $slightlybig;
       opacity: 1;
       position: relative;
     }

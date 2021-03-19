@@ -16,23 +16,23 @@
 }
 
 .sortabig {
-  font-size: $sortabig + unquote("rem");
+  font-size: $sortabig;
 }
 
 .bigger {
-  font-size: $bigger + unquote("rem");
+  font-size: $bigger;
 }
 
 .teenytxt, .teeny {
-  font-size: $teeny + unquote("rem");
+  font-size: $teeny;
 }
 
 .legaltxt, .legal {
-  font-size: $legal + unquote("rem");
+  font-size: $legal;
 }
 
 .pokeytxt, .pokey {
-  font-size: $pokey + unquote("rem");
+  font-size: $pokey;
 }
 
 .text {
@@ -111,7 +111,7 @@ img.containedImage {
   padding: 0;
   margin-block-start: 0.5em;
   line-height: 1.375;
-  font-size: $pokey + unquote("rem");
+  font-size: $pokey;
   text-align: center;
 }
 

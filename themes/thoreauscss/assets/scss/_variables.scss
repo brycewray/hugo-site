@@ -34,18 +34,25 @@ $monospaced: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation 
 // These come from https://tailwindcss.com/docs/font-family as of 2021-02-13.
 
 // rems
-$biggest: 2.5;
-$bigger: 2;
-$mightybig: 1.75;
-$sortabig: 1.5;
-$slightlybig: 1.25;
-$minimalbig: 1.15;
-$stdsize: 1;
-$pokey: 0.85;
-$legal: 0.75;
-$timelineTxt: 0.7;
-$teeny: 0.6;
+$biggest: 2.5rem;
+$bigger: 2rem;
+$mightybig: 1.75rem;
+$sortabig: 1.5rem;
+$slightlybig: 1.25rem;
+$minimalbig: 1.15rem;
+$stdsize: 1rem;
+$pokey: 0.85rem;
+$legal: 0.75rem;
+$timelineTxt: 0.7rem;
+$teeny: 0.6rem;
 
 // alignment
 $bodyalign: left;
 $nav-height: 50px;
+
+// breakpoints, based on TWCSS
+$BkPt-sm: 640px;
+$BkPt-md: 768px;
+$BkPt-lg: 1024px;
+$BkPt-xl: 1280px;
+$BkPt-2xl: 1536px;

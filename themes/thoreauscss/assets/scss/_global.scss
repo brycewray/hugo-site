@@ -49,23 +49,23 @@ h3, .h3, h5, .h5 {
 */
 
 h1, .h1 {
-  font-size: $biggest + unquote("rem");
+  font-size: $biggest;
 }
 
 h2, .h2 {
-  font-size: $bigger + unquote("rem");
+  font-size: $bigger;
 }
 
 h3, .h3 {
-  font-size: $mightybig + unquote("rem");
+  font-size: $mightybig;
 }
 
 h4, .h4 {
-  font-size: $sortabig + unquote("rem");
+  font-size: $sortabig;
 }
 
 h5, .h5, h6, .h6 {
-  font-size: $slightlybig + unquote("rem");
+  font-size: $slightlybig;
 }
 
 a, a:focus, a:hover, a:active {
@@ -144,7 +144,7 @@ ul li li li {
 footer {
   // font-family: $sans-serif;
   text-align: center;
-  font-size: $legal + unquote("rem");
+  font-size: $legal;
   margin: 4rem auto 0 auto;
   width: 100%;
   padding-top: 0.5rem;
@@ -156,7 +156,7 @@ footer {
     margin: 0 auto;
     width: 80%;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: $BkPt-lg) {
     margin: 2rem auto 0 auto;
     // padding-bottom: 1rem;
     div.footerWrapper {
@@ -182,7 +182,7 @@ footer {
     padding: 2rem 0;
     margin: 0 auto;
     width: 90%;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $BkPt-lg) {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -194,11 +194,11 @@ footer {
     }
     h1 {
       font-size: 1.25rem;
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: $BkPt-lg) {
         font-size: 1.5rem;
       }
-      @media screen and (min-width: 1536px) {
-        font-size: 1.75rem;;
+      @media screen and (min-width: $BkPt-2xl) {
+        font-size: 1.75rem;
       }
     }
   }
@@ -237,10 +237,10 @@ footer {
     margin: 2rem auto 0 auto;
     padding: 1rem 0;
     width: 75%;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $BkPt-lg) {
       width: 40%;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: $BkPt-2xl) {
       width: 33%;
     }    
     @media (prefers-color-scheme: dark) {
@@ -288,10 +288,10 @@ article {
     font-size: 1em; // definitely em, not rem
     line-height: 1.6em; // definitely em, not rem
     margin-top: 1em; // definitely em, not rem
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $BkPt-lg) {
       font-size: 1.125em;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: $BkPt-2xl) {
       font-size: 1.25em;
     }
   }
