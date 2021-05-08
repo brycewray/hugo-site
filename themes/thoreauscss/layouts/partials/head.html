@@ -73,19 +73,29 @@
     {{- end -}}
   {{- end }}
 
-  <link rel="preconnect" href="https://res.cloudinary.com" />
-
   {{/* CSS/SCSS */}}
   <link rel="preload" href="/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-  {{- with resources.Get "scss/index.scss" | toCSS | postCSS | minify -}}
-    <style>{{- .Content | safeCSS -}}</style>
+  {{- if hugo.IsProduction -}}
+    {{- with resources.Get "scss/index.scss" | toCSS | minify -}}
+      <style>{{- .Content | safeCSS -}}</style>
+    {{- end -}}
+  {{- else -}}
+    {{ $options := (dict "targetPath" "css/index.css" ) }}
+    {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
   {{- end -}}
+
   <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
 
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" included-domains="brycewray.com,www.brycewray.com" defer></script>
   <!-- / Fathom -->
 
+  <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#best_practices -->
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://cdn.jsdeliver.net" crossorigin />
+  <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
 
   <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v{{ $alpineJSVer }}/dist/alpine.min.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v{{ $alpineJSVer }}/dist/alpine-ie11.min.js" defer></script>
