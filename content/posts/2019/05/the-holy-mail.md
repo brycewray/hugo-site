@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "The Holy Mail"
 subtitle: "Stopping the e-madness"
 description: "The way I sort-of cured the email client dance."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2019-05-10T07:20:00-05:00
 #lastmod
 discussionId: "2019-05-the-holy-mail"
-featured_image: letterbox-1926493_4589x2648.jpg
+featured_image: "letterbox-1926493_4589x2648.jpg"
 featured_image_width: 4589
 featured_image_height: 2648
 featured_image_alt: "Old metal mailslot on bright red door"
@@ -28,7 +30,7 @@ In 2017, I once again became a macOS user following two-and-a-half miserable yea
 
 On the new Mac, at first, I used the built-in Apple Mail app, but by then I'd been using the iOS version of Outlook ([the former Acompli](https://www.theverge.com/2015/1/29/7936081/microsoft-outlook-app-ios-android-features)) for a while, and liking it quite a bit. However, not caring for the mild cognitive dissonance that provided, I decided fairly soon that, *if possible*, I wanted to run the same client on both iOS and macOS. That narrowed it down considerably. It also became, for a time, the Holy Grail for me.
 
-First, I tried [Airmail](https://airmailapp.com) on both macOS and iOS. I found it interesting---its many settings were certainly a nerd's delight---but it was occasionally buggy, and I really didn't like the fact that it took it upon itself to *add an Airmail folder* in each of my accounts’ IMAP setups! Not cool, Airmail. (Yes, you [can stop that](http://feedback.airmailapp.com/forums/274948-airmail-mac-3-x/suggestions/17041585-i-want-to-stop-airmail-from-creating-its-own-imap). No, you shouldn't have to do so.)
+First, I tried [Airmail](https://airmailapp.com) on both macOS and iOS. I found it interesting---its many settings were certainly a nerd's delight---but it was occasionally buggy, and I really didn't like the fact that it took it upon itself to *add an Airmail folder* in each of my accounts' IMAP setups! Not cool, Airmail. (Yes, you [can stop that](http://feedback.airmailapp.com/forums/274948-airmail-mac-3-x/suggestions/17041585-i-want-to-stop-airmail-from-creating-its-own-imap). No, you shouldn't have to do so.)
 
 ## G whizzes on Apple
 
@@ -40,7 +42,7 @@ In case you haven't already learned this the hard way, new emails into a **free*
 
 Fetching costs battery power, especially on an iOS device, and also is just a pain because it can be done only every few minutes, so you don't always know right away that you have new email waiting. No biggie if it's just spam, but quite a biggie if you're waiting on something important. Mind you, my Mac is an iMac, so battery power wasn't an issue there, but---especially since this was in the fall of 2017 and [the newly released iOS 11.0 was very buggy](https://www.fastcompany.com/90143457/ios-11-sucks)---my then-iPhone, a 7 Plus, was **not** a happy camper, battery-wise.
 
-So I tried to figure out better ways to do it, and came across [one particular MacRumors thread](https://forums.macrumors.com/threads/spark-the-best-update-a-good-email-client-for-both-macos-ios.2013631/) where they'd been discussing the merits of several email clients, particularly [Spark](https://sparkmailapp.com), for a year at that point. I followed the various posters’ advice for a while.
+So I tried to figure out better ways to do it, and came across [one particular MacRumors thread](https://forums.macrumors.com/threads/spark-the-best-update-a-good-email-client-for-both-macos-ios.2013631/) where they'd been discussing the merits of several email clients, particularly [Spark](https://sparkmailapp.com), for a year at that point. I followed the various posters' advice for a while.
 
 One suggested client was [Edison Mail](https://mail.edison.tech/), which did, in fact, get push notifications for new emails in free Gmail. However, I found Edison Mail couldn't show "Sent" items in conversations from an Exchange account. Back in those days, I cared about that because I was also receiving work emails on my devices. (This was about a year before I learned that's a [bad](https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/) [idea](https://www.m3networks.com/never-use-personal-devices-connect-company-data/).) I submitted a bug report and got this response:
 
@@ -68,7 +70,7 @@ Then, near the end of that October, I started thinking about another way to the 
 
 If Gmail was the problem, why not solve the problem?
 
-Now, mind you, I couldn't just drop my Gmail account. For one thing, at that point, I had twelve years’ worth of mail in it, and dozens if not hundreds of people I'd have to notify if I changed my personal address. Moreover, I needed to keep a Google account, anyway, for things like Google Analytics. But I began researching what some other folks had done, and one strategy gradually grew on me:
+Now, mind you, I couldn't just drop my Gmail account. For one thing, at that point, I had twelve years' worth of mail in it, and dozens if not hundreds of people I'd have to notify if I changed my personal address. Moreover, I needed to keep a Google account, anyway, for things like Google Analytics. But I began researching what some other folks had done, and one strategy gradually grew on me:
 
 - Set Gmail to *forward* all my emails to another vendor.
 - Get my *own domain* and have that vendor use it as my mail domain. That way, if I didn't like the new vendor, I'd simply move the address (and, yes, its emails) over to a new vendor *but* get to keep the address. So, yes, I'd have to notify folks I was no longer best reached at my Gmail address, but that would be the last time I'd have to tell them a new personal address. Whoever hosted it going forward---even if I got a [wild hair](https://www.waywordradio.org/wild-hair/) one day and decided to host the mail setup myself[^hostOwnMail] on a VPS or something like that---my address would stay the same.

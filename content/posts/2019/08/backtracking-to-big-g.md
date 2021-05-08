@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Backtracking to Big G"
 subtitle: "A noble experiment ends"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-08-25T10:45:00-05:00
 lastmod: 2020-11-22T10:00:00-06:00
 discussionId: "2019-08-backtracking-to-big-g"
-featured_image: BW_shadow_of_G_on_gray_gradient_1280x720.jpg
+featured_image: "BW_shadow_of_G_on_gray_gradient_1280x720.jpg"
 featured_image_width: 1280
 featured_image_height: 720
 featured_image_alt: "Google logo overshadowing this site’s logo"

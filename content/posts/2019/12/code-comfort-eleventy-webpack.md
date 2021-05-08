@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"

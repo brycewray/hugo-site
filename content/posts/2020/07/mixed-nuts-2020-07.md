@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Mixed nuts • July, 2020"
 subtitle: "Random thoughts “R” us"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2020-07-09T16:40:00-05:00
 lastmod: 2020-08-30T15:40:00-05:00
 discussionId: "2020-07-mixed-nuts-2020-07"
-featured_image: bowl-of-nuts-3587842_5184x3888.jpg
+featured_image: "bowl-of-nuts-3587842_5184x3888.jpg"
 featured_image_width: 5184
 featured_image_height: 3888
 featured_image_alt: "A bowl containing mixed nuts"
@@ -18,11 +20,11 @@ It's true that it hasn't been all that long since the [most recent](/posts/2020/
 
 Without further preamble, off we go.
 
-----
+-------
 
 For all the hoo-rahing about the [$15/month price increase by YouTube TV](https://www.theverge.com/2020/6/30/21308449/youtube-tv-price-increase-64-99-viacom-hbo-new-channels), I'm unconvinced by those who say they can do better by going back to cable. If it had been that affordable, they wouldn't have left it in the first place.[^notLeaving]
 
-[^notLeaving]: As for my household, we're keeping YTTV unless and until it goes much higher. None of its competitors has YTTV's mix of channels and features, notably the virtually unlimited cloud DVR that had my wife sold in the first week after we became subscribers. Also, we Tornado Alley residents like getting to see our local channels’ weather guys and gals when times call for it.
+[^notLeaving]: As for my household, we're keeping YTTV unless and until it goes much higher. None of its competitors has YTTV's mix of channels and features, notably the virtually unlimited cloud DVR that had my wife sold in the first week after we became subscribers. Also, we Tornado Alley residents like getting to see our local channels' weather guys and gals when times call for it.
 
 *A little bird told me some interesting performance enhancements are coming, soon, to that single line of code that makes [Fathom Analytics](/posts/2020/06/fathom-analytics-count-on-it) work on one's site. This product is already amazing, and now it will get even more so. [Check it out](https://usefathom.com/ref/ZKHYWX).[^affilFA]*
 

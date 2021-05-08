@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Roger, Copy"
 subtitle: "Keeping my .git together with Working Copy"
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
 lastmod: 2020-02-03T14:23:00-06:00
 discussionId: "2019-07-roger-copy"
-featured_image: animals-geese-in-a-row-2364769_3648x2736.jpg
+featured_image: "animals-geese-in-a-row-2364769_3648x2736.jpg"
 featured_image_width: 3648
 featured_image_height: 2736
 featured_image_alt: "Geese walking together in a row, illustrating synchronicity."
@@ -76,7 +78,7 @@ So, this matter (pardon the pun) handled, I then pushed the commit---first, to B
 
 .&nbsp;.&nbsp;.&nbsp;and then to the others, so that soon the content status appeared as follows. Note that the master branch (*master-grid*) now was all sync'ed up with the three remote repos:
 
-{{< imgc src="Working_Copy_scr_cap_07_2048x1536.png" alt="iPad screen capture: Working Copy display showing that the master branch is synchronized with the three remote repositories" width="2048" height="1536" >}}
+{% lazypicture "Working_Copy_scr_cap_07_2048x1536.png", "iPad screen capture: Working Copy display showing that the master branch is synchronized with the three remote repositories", 2048, 1536 %}
 
 So I was all ready to go. Then all I had to do when I got back on the Mac was to use my [currently preferred macOS Git client](https://git-fork.com) to fetch the changes from Bitbucket, which instantly added this Markdown file to the Mac's version of the repo so I could work on it more. Incidentally, I could choose---and have chosen---to do text edits within Working Copy itself. Here you can see the Markdown file for my [last post](/posts/2019/07/lessons-learned):
 

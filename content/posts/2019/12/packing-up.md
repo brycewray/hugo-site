@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Packing up"
 subtitle: "Eleventy and webpack are a powerful pair"
 description: "How using a bundler makes the coolest SSG even better."
 author: Bryce Wray
-date: 2019-12-08T18:48:00-06:00
+date: 2019-12-08T17:48:00-06:00
 lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2019-12-packing-up"
-featured_image: chain-11ty-webpack-3867751_1920x1080.jpg
+featured_image: "chain-11ty-webpack-3867751_1920x1080.jpg"
 featured_image_width: 1920
 featured_image_height: 1080
 featured_image_alt: "Eleventy and webpack logos over a chain"
@@ -63,7 +63,7 @@ In the bad old days before [HTTP/2](https://http2.github.io) became widespread, 
 
 ### Concatenation and minifying
 
-Soon, a popular way around this problem was *concatenating* and *minifying* JS files. You'd take your twelve or fourteen files and cram ’em together into one file while also eliminating comments, line breaks, and any other items not utterly necessary for the code to run.[^spaces] Now you'd be down to just one server call for that one big JS file.
+Soon, a popular way around this problem was *concatenating* and *minifying* JS files. You'd take your twelve or fourteen files and cram 'em together into one file while also eliminating comments, line breaks, and any other items not utterly necessary for the code to run.[^spaces] Now you'd be down to just one server call for that one big JS file.
 
 Good to go, right? Well, not quite.
 
@@ -137,7 +137,7 @@ Another Gatsby feature I wanted to carry with me was the way it prefetches in-si
 
 For that matter, as you've probably gathered by now, webpack makes short work of using npm packages in general. This recalls Eleventy creator Zach Leatherman's comment back when [he started Eleventy](https://www.zachleat.com/web/introducing-eleventy/):
 
-> Always bet on JavaScript. JavaScript gives you access to npm. The npm ecosystem is large. Crazy large. .&nbsp;.&nbsp;. When you want to add functionality, it's a good bet that a module exists on npm.
+> Always bet on JavaScript. JavaScript gives you access to npm. The npm ecosystem is large. Crazy large. .&nbsp;.&nbsp;. When you want to add functionality, it’s a good bet that a module exists on npm.
 
 I can also tell you that the development experience of my setup is a lot cleaner and less bug-laden than with Gatsby. For reasons I still don't understand, and this goes back to my agonies of last summer, the Gatsby development environment is just plain unstable at times. For example, it would often pull up the wrong template at odd intervals, making, say, the home page use the very different posts template. Sure, I *knew* that it wouldn't do it when actually building the site and delivering it via [Netlify](https://netlify.com), but it still bugged me. Eleventy by itself, as well as Eleventy-with-webpack, simply doesn't do that sort of thing to me. I greatly prefer that kind of experience.
 

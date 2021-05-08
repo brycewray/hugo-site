@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Mixed nuts • November, 2019"
 subtitle: "In a nutshell, odds and ends"
 description: "Observations worth exactly what you’re paying for them."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2019-11-24T10:15:00-06:00
 lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2019-11-mixed-nuts-2019-11"
-featured_image: nuts-768243_5184x3456.jpg
+featured_image: "nuts-768243_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Closeup view of mixed nuts"
@@ -28,8 +30,7 @@ What follows, then, is loosely based on the "Scattershooting" motif. For now, le
 
 So, let's sample some mixed nuts for November, 2019&nbsp;.&nbsp;.&nbsp;.
 
-<hr />
-<br />
+----
 
 The open-office concept is simply a way for businesses to cram more people into less, and therefore cheaper, real estate. However, on the bright side: it helps sell a metric [bleep]-ton of wireless headphones.
 
@@ -45,7 +46,7 @@ WordPress has its purposes, as do all things, but don't kid yourself into thinki
 
 There must be times when the wonderful folks at Literature and Latte wish they could go back in time and never make either Windows or iOS versions of Scrivener. Money aside, some things are simply not worth the angst.
 
-*One wonders: if luxury cars’ TV ads* stopped *showing them doing crazy high-speed maneuvers, would this keep their typical drivers from being such tailgating, lane-jumping[^BMWjoke], rules- and laws-flouting jerks?*
+*One wonders: if luxury cars' TV ads* stopped *showing them doing crazy high-speed maneuvers, would this keep their typical drivers from being such tailgating, lane-jumping[^BMWjoke], rules- and laws-flouting jerks?*
 
 [^BMWjoke]: Old joke&nbsp;.&nbsp;.&nbsp;. **Q**:&nbsp;What's the most unnecessary job on Earth? **A**:&nbsp;Installing turn signals on BMWs.
 
@@ -65,7 +66,7 @@ Our community allows only two options for high-speed home connectivity[^OnlyOne]
 
 [Never, ever let an employer put MDM on a personal device about which you care](https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/). Bad Things Ensue. Pro tip: next time you buy a new phone, keep the *old* one if it still works WiFi-wise and let *that* be your work mobile device.[^WorkDevice] Just be sure it isn't linked to any personal account with your photos, messages, and so forth.
 
-[^WorkDevice]: The *best* solution is if you can convince work to *provide* a device; but this advice is for folks such as I who need the connectivity but, in their employers’ eyes, don't merit having it that way.
+[^WorkDevice]: The *best* solution is if you can convince work to *provide* a device; but this advice is for folks such as I who need the connectivity but, in their employers' eyes, don't merit having it that way.
 
 <hr />
 <br />

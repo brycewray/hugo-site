@@ -1,12 +1,14 @@
 ---
-title: Make games, not war
+layout: singlepost
+tags: post
+title: "Make games, not war"
 subtitle: "Hey, MLB and NFL: time to unify"
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."
 author: Bryce Wray
 date: 2019-08-03T11:00:00-05:00
 lastmod: 2019-08-07T12:42:00-05:00
 discussionId: "2019-08-make-games-not-war"
-featured_image: stadium-seats-3310891_5472x3648.jpg
+featured_image: "stadium-seats-3310891_5472x3648.jpg"
 featured_image_width: 5472
 featured_image_height: 3648
 featured_image_alt: "Rows of empty seats in a sports stadium"
@@ -109,14 +111,14 @@ So how would I decide the champions of the new, unified MLB universe each year?
 
 - **Qualifiers**: The four division champions and two wildcards make the playoffs. This is a big change from how MLB does it now, in which qualifiers include six division champions and four wildcards (which quickly get cut down to two wildcards). Nonetheless, I think this makes more sense. Consider that the thickest part of the playoffs occurs just as football, both college and pro, is really starting to get interesting. Thus, fewer teams and fewer series should mean more national focus or, at the very least, less to track. It also means fewer *marginal* teams getting in. I'm not big on the "participation trophy" approach to playoffs---*i.e.*, keeping more teams in the mix longer just to draw butts to seats, regardless of play quality---in the so-called linear sports like baseball, basketball, and hockey. All that said, I do know many, especially fans of the more financially strapped teams who have a hard time staying in there with the top-dollar squads, would hate a winnowing-down of MLB playoff spots.
 - **Divisional Playoffs**: Best 3-of-5. The top two division champs get a bye while the other two division champs host the two wildcards.
-- **Semifinals**: Best 4-of-7. The top two host the Divisional Playoffs’ winners. (Yes, it's a little sad to give up the "LCS" moniker, but it just wouldn't apply any more. Sorry.)
+- **Semifinals**: Best 4-of-7. The top two host the Divisional Playoffs' winners. (Yes, it's a little sad to give up the "LCS" moniker, but it just wouldn't apply any more. Sorry.)
 - **World Series**: Best 4-of-7. And, yes, it's possible this ends up as two teams from *the same division*. But if they're the two best at the end, well, why not?
 
 ## How I'd arrange the NFL
 
-The NFL's divisions already are arranged by the compass within each conference (not to mention it has an evenly-divisible-by-four number of teams), so we have a better starting point than with MLB. However, some of the divisions’ configurations are squirrelly due to the NFL's wish to maintain long-time rivalries, some of which never really made sense but were historical accidents.[^NFCEast]
+The NFL's divisions already are arranged by the compass within each conference (not to mention it has an evenly-divisible-by-four number of teams), so we have a better starting point than with MLB. However, some of the divisions' configurations are squirrelly due to the NFL's wish to maintain long-time rivalries, some of which never really made sense but were historical accidents.[^NFCEast]
 
-[^NFCEast]: One of the most obvious examples is Dallas, **Texas**, in the NFC **East**. Hey, folks, I've been a Cowboys fan for over fifty years, and I fully get the long-time rivalry the Cowboys and their fellow NFC East teams have, partly a leftover from how the Cowboys were shunted into the Eastern Conference in the 1960s because the NFL had no other good place to put them (and wasn't cutting the 1960 expansion entry a lot of slack in its early, hungry days). However, the simplest way to keep that alive while finally giving all four teams’ fans a travel break---not to mention letting some more geographically natural rivalries come to life---is to arrange to put one or two on their **non**-division schedule each year, much as certain major colleges play each other once a year regardless of conference or other considerations. I think it's equally weird that the same AFC division hosts both Buffalo and Miami, which made sense when the NFL and AFL were separate and the AFL had only two small divisions, Western and Eastern. Now, in a thirty-two-team NFL? Nah.
+[^NFCEast]: One of the most obvious examples is Dallas, **Texas**, in the NFC **East**. Hey, folks, I've been a Cowboys fan for over fifty years, and I fully get the long-time rivalry the Cowboys and their fellow NFC East teams have, partly a leftover from how the Cowboys were shunted into the Eastern Conference in the 1960s because the NFL had no other good place to put them (and wasn't cutting the 1960 expansion entry a lot of slack in its early, hungry days). However, the simplest way to keep that alive while finally giving all four teams' fans a travel break---not to mention letting some more geographically natural rivalries come to life---is to arrange to put one or two on their **non**-division schedule each year, much as certain major colleges play each other once a year regardless of conference or other considerations. I think it's equally weird that the same AFC division hosts both Buffalo and Miami, which made sense when the NFL and AFL were separate and the AFL had only two small divisions, Western and Eastern. Now, in a thirty-two-team NFL? Nah.
 
 Anyway, here we go .&nbsp;.&nbsp;.
 

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "The full .11ty.js monty"
 subtitle: "Going all-JavaScript with my Eleventy site"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-15T17:30:00-05:00
 lastmod: 2021-01-11T12:25:00-06:00
 discussionId: "2020-04-full-11ty-js-monty"
-featured_image: puzzle-completion-654962_5184x3888.jpg
+featured_image: "puzzle-completion-654962_5184x3888.jpg"
 featured_image_width: 5184
 featured_image_height: 3888
 featured_image_alt: "Interlocked pieces of a completed jigsaw puzzle"
@@ -114,7 +114,7 @@ Eleventy is by no means the best-known of the SSGs, and [it is purposely *not* b
 
 Having put this work to bed, I now will turn my attention to the task I mentioned earlier: making those Gatsby- and Hugo-based repos once again as close to this one as possible in both content and functionality.
 
-The content part is pretty easy. I just add this post, and others as I write them (and adjust each for any tiny issues related to different SSGs’ ways of handling things).
+The content part is pretty easy. I just add this post, and others as I write them (and adjust each for any tiny issues related to different SSGs' ways of handling things).
 
 Getting *all* the functionality working will be the gooey part. However, it'll also be the fun part.
 

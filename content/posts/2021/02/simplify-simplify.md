@@ -1,10 +1,11 @@
 ---
+layout: singlepost
 title: "Simplify, simplify"
 subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
-lastmod: 2021-03-01T20:30:00-06:00
+lastmod: 2021-03-20T17:30:00-05:00
 #draft: false
 discussionId: "2021-02-simplify-simplify"
 featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"
@@ -123,3 +124,6 @@ To be sure, I can keep reading about, researching, and testing SSGs and other re
 That way, I can work harder on making its interior more comfortable for those of you who visit.
 
 The welcome mat is always out for you.
+
+**Note**: The more things change, the more they stay the same; see the ending of "[Tailwind-to-head with Eleventy](/posts/2021/03/tailwind-head-eleventy)" from a few weeks after I issued this post.
+{.yellowBox}

@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 title: "Hashing out a cache-busting fix for Eleventy"
 subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
-lastmod: 2021-01-12T07:35:00-06:00
+lastmod: 2021-03-20T17:30:00-05:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
-featured_image: csshash-js_in_Nova_2786x1650.png
+featured_image: "csshash-js_in_Nova_2786x1650.png"
 featured_image_width: 2786
 featured_image_height: 1650
 featured_image_alt: "Screen capture of JavaScript file in the Nova code editor"
@@ -16,11 +16,14 @@ featured_image_caption: |
   <span class="caption">Image: <em>cssdate.js</em> in the <a href="https://nova.app" target="_blank" rel="noopener">Nova</a> code&nbsp;editor, which I was trialing when I first published this&nbsp;post</span>
 ---
 
+**Note**: I later found a [much better solution](/posts/2021/03/tailwind-head-eleventy), but am leaving this here for the sake of [transparency](/posts/2019/10/otoh).
+{.yellowBox}
+
 *Up-front disclaimer: No proverbial horses were beaten to death (at least, not by me) during the writing of the following---although I could see how you might get a different impression.*
 
 Since a few days ago, when I initially published "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two)" as a way of apologizing for the abortive solution I'd offered in "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy)," I've thought it might be more helpful if I gave at least some of the actual code rather than pushing people to the [starter site](https://github.com/brycewray/eleventy_solo_starter) whose appearance is based on this one. So that'll be the purpose of this piece.
 
-Here's a brief bit of catchup, to clarify things for those who have read neither of those articles and/or have no idea why they should care about the articles’ subject matter:
+Here's a brief bit of catchup, to clarify things for those who have read neither of those articles and/or have no idea why they should care about the articles' subject matter:
 
 - It's best to set up caching of your site's static assets, specifically the CSS file or files it uses, to improve the experience for your visitors.
 - As of now, this caching must be set up manually in the [Eleventy](https://11ty.dev) [static site generator](https://jamstack.org/generators/) used by this site.
@@ -148,5 +151,5 @@ That leaves only setting the Eleventy `head.js` template to call the CSS file by
 
 So many times I've seen things---often new products that struck me as being odd---and dismissed them as "a solution in search of a problem." I hope this article doesn't fit that description where many of you are concerned; and, of greater importance, I hope it helps you in managing your own Eleventy-based site.
 
-**Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos’ code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts’ settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).
+**Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos' code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts' settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).
 {.yellowBox}

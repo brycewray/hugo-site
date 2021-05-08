@@ -1,12 +1,14 @@
 ---
-title: Some curmudgeonish thoughts, 2019 edition
+layout: singlepost
+tags: post
+title: "Some curmudgeonish thoughts, 2019 edition"
 subtitle: "A few more things that irk me"
 description: "Here’s a follow-up on last year’s list of items that stick in my craw."
 author: Bryce Wray
-date: 2019-11-03T20:01:00-05:00
+date: 2019-11-03T20:01:00-06:00
 #lastmod: t/k
 discussionId: "2019-11-curmudgeonish-2019"
-featured_image: cat-4383134_3840x2400.jpg
+featured_image: "cat-4383134_3840x2400.jpg"
 featured_image_width: 3840
 featured_image_height: 2400
 featured_image_alt: "Obviously angry cat"

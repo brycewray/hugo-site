@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
-title: "Webmentions in three SSGs • Part 2"
+title: "Webmentions in three SSGs: Part 2"
 subtitle: "IndieWebbin’ in Eleventy"
 description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."
 author: Bryce Wray
 date: 2020-04-28T16:35:00-05:00
-lastmod: 2020-09-16T09:00:00-05:00
+lastmod: 2020-09-16T10:00:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-2"
-featured_image: pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg
+featured_image: "pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg"
 featured_image_width: 4401
 featured_image_height: 2934
 featured_image_alt: "Communications concept - vintage pay telephones on a wall"
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@ptrikutam?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pavan Trikutam</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Original opening note**: This is Part 2 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev) (the subject of this part), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
+**Original opening note**: This is Part 2 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev) (the subject of this part), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}
 
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
@@ -25,7 +25,7 @@ featured_image_caption: |
 **Added note, 2020-09-16**: The site no longer uses webmentions.
 {.yellowBox}
 
-Having covered the purpose of this series, the [IndieWeb](https://indieweb.org), and the general setup of webmentions in this series’ [introduction](/posts/2020/04/webmentions-three-ssgs-1), we'll now get into details about implementing them in the [Eleventy](https://11ty.dev) SSG.
+Having covered the purpose of this series, the [IndieWeb](https://indieweb.org), and the general setup of webmentions in this series' [introduction](/posts/2020/04/webmentions-three-ssgs-1), we'll now get into details about implementing them in the [Eleventy](https://11ty.dev) SSG.
 
 For two reasons, we start with the [Eleventy repo](https://github.com/brycewray/eleventy_bundler). First, it's the repo that powered this site as of the time I wrote this.[^toSolo] Second, it's where I initially added webmentions in their barest form---only so-called "mentions"---and then, more recently, enhanced their appearances. I refer to it here only as the *Eleventy repo* rather than, as usual, the *Eleventy/[webpack](https://webpack.js.org) repo*, because the addition of webpack really had nothing whatsoever to do with this particular process.
 

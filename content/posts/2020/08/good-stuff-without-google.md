@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Good stuff without Google"
 subtitle: "Yes to variable typefaces, no to tracking"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-08-09T20:05:00-05:00
 lastmod: 2020-12-13T12:35:00-06:00
 discussionId: "2020-08-good-stuff-without-google"
-featured_image: printing-plate-typography-1030849_5122x3414.jpg
+featured_image: "printing-plate-typography-1030849_5122x3414.jpg"
 featured_image_width: 5122
 featured_image_height: 3414
 featured_image_alt: "Various sizes of type for a printing press"
@@ -20,7 +20,7 @@ Early in this site's history, I issued a post in [two](/posts/2018/10/web-typogr
 
 That said: if you're willing to give up some [performance points](/posts/2020/07/chasing-100-tips-optimizing-website), your site can gain a bit greater visual distinctiveness through the use of those other fonts, especially since there are so many cool, free typefaces out there for the grabbing and simple installation. [Google Fonts](https://fonts.google.com) is the source that comes most readily to mind, I'm sure.
 
-Unfortunately, as I explained in "[Google Fonts and privacy](/posts/2020/08/google-fonts-privacy)," you don't want to provide those fonts straight off Google's servers unless you want to violate your visitors’ privacy and, for that matter, run afoul of various types of legislation enacted to protect that privacy. The most obvious alternative is simply to download the desired fonts from Google Fonts and install them in your site, then set your site to serve them "locally," so to speak.
+Unfortunately, as I explained in "[Google Fonts and privacy](/posts/2020/08/google-fonts-privacy)," you don't want to provide those fonts straight off Google's servers unless you want to violate your visitors' privacy and, for that matter, run afoul of various types of legislation enacted to protect that privacy. The most obvious alternative is simply to download the desired fonts from Google Fonts and install them in your site, then set your site to serve them "locally," so to speak.
 
 However, there's a trick to doing that. And it gets even trickier if you want to use **variable fonts** rather than just ordinary fonts---and, I would suggest, in many cases you'd be wise to do.
 
@@ -32,7 +32,7 @@ Let me begin by giving you a brief intro to variable fonts.[^1]
 
 First, the web fonts you've typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let's say your site is using a non-system typeface for the body text, and a site page includes the following text and formatting:
 
-<p class="ctr" style="font-size: 2rem;"><strong><em>Hello</em></strong>, how <em>are</em> <strong>you</strong>?</p>
+<p class="text-4xl text-center"><strong><em>Hello</em></strong>, how <em>are</em> <strong>you</strong>?</p>
 
 That would require the visitor's browser to access *four* font files: one for the boldfaced regular "you"; another for the non-bold regular "how" and question mark; a third for the boldfaced/italicized "Hello"; and a fourth for the non-boldfaced italicized "are."
 
@@ -166,7 +166,7 @@ For each variable font you want from Google Fonts:
 }
 ```
 
-You probably don't need the `latin-extended` character sets (you already know if you do, and I'm guessing you don't if this information is new to you), and you want to provide as little downloadable content as possible to keep your visitors’ downloads smaller, so I'll assume from here on that we're interested only in the `latin`.
+You probably don't need the `latin-extended` character sets (you already know if you do, and I'm guessing you don't if this information is new to you), and you want to provide as little downloadable content as possible to keep your visitors' downloads smaller, so I'll assume from here on that we're interested only in the `latin`.
 
 6. For each variation of the `latin`:
 	- Copy the URL from the `src: url`. This is a direct link to the variable font. Don't worry about the bizarre name; we'll handle that in a moment.
@@ -198,7 +198,7 @@ You probably don't need the `latin-extended` character sets (you already know if
 
 ## It's a date
 
-Now, as promised, here are the reasons why you want to put the date in the .woff2 files’ names:
+Now, as promised, here are the reasons why you want to put the date in the .woff2 files' names:
 
 - From time to time, Google changes these files to provide certain enhancements, so you'll want to repeat this procedure to get the latest and replace them on your site. (You've already got the code in there; just change the respective .woff2 file names.) The date will help you keep track of that. Perhaps more importantly&nbsp;.&nbsp;.&nbsp;.
 - If your site host uses a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), as is true for most [Jamstack](https://jamstack.wtf)-savvy hosts, it'll probably *cache* your assets, including your fonts, for faster delivery. That cache won't change unless your font file names change; so, if you want to update the files, you'll want to vary the names, and---again---the date is a handy way to be sure about that.  

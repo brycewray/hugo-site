@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Back up, Jack"
 subtitle: "From 3-2-1 to 4-2-2"

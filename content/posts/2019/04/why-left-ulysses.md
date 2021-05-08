@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 title: "Why I left Ulysses"
 subtitle: "iA Writer wins—for now"
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
@@ -7,7 +7,7 @@ author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
 lastmod: 2020-11-26T08:20:00-06:00
 discussionId: "2019-04-why-left-ulysses"
-featured_image: hand-butterfly-3751159_6000x4000.jpg
+featured_image: "hand-butterfly-3751159_6000x4000.jpg"
 featured_image_width: 6000
 featured_image_height: 4000
 featured_image_alt: "Hand releases a butterfly (note: a butterfly is the Ulysses logo)"
@@ -26,10 +26,10 @@ oldComments: |
     </div>
 ---
 
-**Note, 2019-05-04**: In case you’ve already read this, be advised I’ve learned some additional information since the original post (2019-04-20) which doesn’t truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see “[Boxed in](/posts/2019/05/boxed-in).”
+**Note, 2019-05-04**: In case you've already read this, be advised I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in)."
 {.yellowBox}
 
-**Note, 2019-10-11**: I originally deleted this post after writing “Boxed in”, but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it’s now back.
+**Note, 2019-10-11**: I originally deleted this post after writing "Boxed in", but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it's now back.
 {.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.
@@ -164,7 +164,7 @@ Last night's edits weren't there; the last stuff there was from the night before
 
 I just sat there a minute, thinking about what I'd just witnessed and what it meant. Finally, I muttered, quietly and sadly, "Well, sir, that's all she wrote." I got those files safely copied over to iA Writer and---for the last time---closed Ulysses.
 
-**Note from 2019-05-04**: I've since [learned](/posts/2019/05/boxed-in) that the behavior re the timestamp turns out to be common for so-called "shoebox" or "central-library" apps like Ulysses and, for that matter, Apple's own Notes and Photos apps. So, while I considered it the Smoking Gun at that point, now I doubt that. This doesn't explain the earlier business with the sync not happening for days, of course, but I've also learned of numerous similar reports from users of "shoebox" apps so, while that doesn't make it okay, it does suggest the fault isn't* necessarily *that of Ulysses. Again, will [update](/posts/2019/05/boxed-in) with more info when I can.
+**Note from 2019-05-04**: I've since [learned](/posts/2019/05/boxed-in) that the behavior re the timestamp turns out to be common for so-called "shoebox" or "central-library" apps like Ulysses and, for that matter, Apple's own Notes and Photos apps. So, while I considered it the Smoking Gun at that point, now I doubt that. This doesn't explain the earlier business with the sync not happening for days, of course, but I've also learned of numerous similar reports from users of "shoebox" apps so, while that doesn't make it okay, it does suggest the fault isn't *necessarily* that of Ulysses. Again, will [update](/posts/2019/05/boxed-in) with more info when I can.
 {.yellowBox}
 
 Shortly after that, I killed the Ulysses subscription on which I'd embarked with such high hopes and expectations last May. (Of course, it's still valid until the expiration date a few weeks off, but now I don't care.)

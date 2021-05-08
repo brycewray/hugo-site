@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Ec-static"
 subtitle: "How to go Hugo"
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own websites."
 author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
-lastmod: 2020-11-18T18:40:00-06:00
+lastmod: 2020-11-18T20:40:00-06:00
 discussionId: "2019-04-ec-static"
-featured_image: server-1235959_1980x1320.jpg
+featured_image: "server-1235959_1980x1320.jpg"
 featured_image_width: 1980
 featured_image_height: 1320
 featured_image_alt: "Internet server"
@@ -31,7 +31,7 @@ In essence, WordPress, like any other content management system (CMS), [builds i
 - **Performance**---Each and every instance of a "hit" requires action from the database, which simply can't be as fast as pulling up a static page. To paraphrase the great [Montgomery Scott](https://scifi.fandom.com/wiki/Montgomery_Scott), "Y' can't change the laws o' physics, Captain."
 - **Security**---The CMS database, like any other with at least some exposure to the web, can fall prey to things like [SQL injection](https://en.wikipedia.org/wiki/SQL_injection) exploits. In plain language, it's easier for nasty people to crack.
 
-Beyond that, a WordPress site almost always depends on multiple [plugins](https://ithemes.com/tutorials/what-are-wordpress-plugins/)---in some cases, [’way too high numbers thereof](https://wplift.com/how-many-wordpress-plugins)---which present their own performance penalties and, if not kept constantly updated, security risks. Keep in mind that many plugins are the products of individual developers who, as you can understand, have Day Jobs and simply don't have the time or resources to maintain the plugins properly. (Worse still, many plugins have flat-out been abandoned by their developers but remain in use on countless WordPress sites, making those sites even more vulnerable.)
+Beyond that, a WordPress site almost always depends on multiple [plugins](https://ithemes.com/tutorials/what-are-wordpress-plugins/)---in some cases, ['way too high numbers thereof](https://wplift.com/how-many-wordpress-plugins)---which present their own performance penalties and, if not kept constantly updated, security risks. Keep in mind that many plugins are the products of individual developers who, as you can understand, have Day Jobs and simply don't have the time or resources to maintain the plugins properly. (Worse still, many plugins have flat-out been abandoned by their developers but remain in use on countless WordPress sites, making those sites even more vulnerable.)
 
 WordPress sites attract the attention of nasty-intentioned people because fully [one third of the websites *in the world* are based on WordPress](https://w3techs.com/technologies/details/cm-wordpress/all/all). Having a WordPress site, especially when you have other options[^options], is like painting a big target on your back, or wearing a "KICK ME" sign on your behind, or---well, you get the idea.
 
@@ -120,7 +120,7 @@ Like most site-building technology, Hugo uses *themes* to make a site look and p
 	- If your browser automatically downloads to a fixed location (such as a *Downloads* folder), manually move or copy the downloaded .zip file from that location to the *themes* subdirectory within *mysite*.
 6. In the *themes* subdirectory within *mysite*, if necessary (*e.g.*, Macs generally do this automatically), expand the *hugo-theme-basic-master.zip* file to that same subdirectory. This will then produce the following setup:
 
-```bash
+```markup
 	- mysite
 		- themes
 			- hugo-theme-basic-master
@@ -136,7 +136,7 @@ All the textual content---the *posts*---that you'll be adding in the future will
 hugo new posts/my-first-post.md
 ```
 This will create a new Markdown file, *my-first-post.md*, which produces this arrangement: 
-```bash
+```markup
 - mysite
 	- content
 		- posts

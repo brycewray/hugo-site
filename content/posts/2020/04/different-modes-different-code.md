@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
-lastmod: 2020-09-24T09:00:00-05:00
+lastmod: 2021-04-30T14:25:00-05:00
 discussionId: "2020-04-different-modes-different-code"
-featured_image: halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg
+featured_image: "halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Watercolor art from website design process"
@@ -40,7 +40,7 @@ And, today, I am pleased to tell you that *all three* of my site repos are now p
 
 Please be advised that I haven't yet decided whether to update *all* of them every time I update *this* one. Some changes I made during this restoration project may make that easier than it otherwise would've been, but I'm not promising an all-three-at-once approach.
 
-For one thing, it's all well and good to keep adding each new article, but quite another matter altogether to keep all three repos’ *[NPM dependencies](https://nodejs.dev/npm-dependencies-and-devdependencies)* up to date---especially on the Gatsby repo. (And, yes, even the Hugo repo now has some NPM dependencies. More on that in a moment.) Will I keep this one updated? You betcha. The other two? TBD.
+For one thing, it's all well and good to keep adding each new article, but quite another matter altogether to keep all three repos' *[NPM dependencies](https://nodejs.dev/npm-dependencies-and-devdependencies)* up to date---especially on the Gatsby repo. (And, yes, even the Hugo repo now has some NPM dependencies. More on that in a moment.) Will I keep this one updated? You betcha. The other two? TBD.
 
 ## Challenges
 
@@ -87,7 +87,7 @@ This[^SomeReference] is an example of the once-and-future (non-inline) method of
 
 ### Form and function
 
-As I said, I was determined that these other two repos’ code would produce content that would match this site as much as possible in look-and-feel and functionality. That meant I'd be translating from "Eleventy-ese" into "Hugo-ese" and "Gatsby-ese" two major changes I recently introduced: [transitioning from Sass/SCSS to PostCSS](/posts/2020/01/two-cheers-tailwind); and [getting rid of hero images](/posts/2020/02/so-much-for-heroes).
+As I said, I was determined that these other two repos' code would produce content that would match this site as much as possible in look-and-feel and functionality. That meant I'd be translating from "Eleventy-ese" into "Hugo-ese" and "Gatsby-ese" two major changes I recently introduced: [transitioning from Sass/SCSS to PostCSS](/posts/2020/01/two-cheers-tailwind); and [getting rid of hero images](/posts/2020/02/so-much-for-heroes).
 
 The switch to PostCSS actually was pretty straightforward in the Gatsby repo. Since Gatsby incorporates webpack, I was able to use an identical `postcss-config.js` file. From there, it was all over but the shouting, by which I mean putting the CSS files where they needed to be. No biggie.
 
@@ -137,7 +137,7 @@ I have been curious about [Vue](https://vuejs.org) and the Vue-based, Gatsby-lik
 
 Since [it looks as if we'll be here a while](https://www.vox.com/future-perfect/2020/3/26/21191702/coronavirus-lockdowns-stay-home-new-cases): well, who knows? Stay tuned.
 
-**Update, 2020-04-15**: While I did make some progress on the Gridsome repo project in the ensuing days after first releasing this post, I think it will be a while---perhaps months---before I can make any serious headway. There are a number of things the young Gridsome still doesn't do that well which, while they wouldn't be showstoppers to others, just cause it to miss the mark where I'm concerned. Two minor examples are ["previous post" and "next post" functionality](https://github.com/gridsome/gridsome/issues/177) and [directory-based URLs](https://github.com/gridsome/gridsome/issues/1089), but there are others. *(In the meantime, however, [I can always find other things to do](/posts/2020/04/full-11ty-js-monty).*
+**Update, 2020-04-15**: While I did make some progress on the Gridsome repo project in the ensuing days after first releasing this post, I think it will be a while---perhaps months---before I can make any serious headway. There are a number of things the young Gridsome still doesn't do that well which, while they wouldn't be showstoppers to others, just cause it to miss the mark where I'm concerned. Two minor examples are ["previous post" and "next post" functionality](https://github.com/gridsome/gridsome/issues/177) and [directory-based URLs](https://github.com/gridsome/gridsome/issues/1089), but there are others. *(In the meantime, however, [I can always find other things to do](/posts/2020/04/full-11ty-js-monty)).* 
 {.yellowBox}
 
 **Update, 2020-05-31**: I later decided to limit the Hugo and Gatsby repos to just a sampling of the posts, especially given the [restoration of hero images](/posts/2020/05/thousand-words-indeed). While this obviously will save me work (and a modicum of sanity), the truth is that it also probably makes each repo **more** valuable to those who simply want to learn how to do a few things here and there, rather than having to download a ton of other posts and images.

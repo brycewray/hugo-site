@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Mixed nuts • February, 2020"
 subtitle: "Here and there, frick and frack, yadda and yadda"
 description: "Another sampling of my random thoughts—lucky you."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2020-02-09T16:05:00-06:00
 #lastmod: TBD
 discussionId: "2020-02-mixed-nuts-2020-02"
-featured_image: almond-21502_5000x3333.jpg
+featured_image: "almond-21502_5000x3333.jpg"
 featured_image_width: 5000
 featured_image_height: 3333
 featured_image_alt: "Almonds and other nuts in a store"
@@ -16,7 +18,7 @@ featured_image_caption: |
 
 The world didn't end when I issued the [inaugural set of Mixed Nuts](/posts/2019/11/mixed-nuts-2019-11) so, while that's hardly a proof of the wisdom of Going There again, I figure: hey, why not? With that ringing endorsement from your humble host, here goes nothing (which may be truer than I'd like to believe).
 
-----
+-------
 
 This hoary, old boomer has studiously avoided addressing the "OK, boomer" phenomenon. He shall continue to do so.
 
@@ -28,7 +30,7 @@ One benefit I didn't expect from the [streaming](/posts/2020/01/streamers-party)
 
 One thing I did *not* expect to occur when I made [this site's repository](https://github.com/brycewray/eleventy_bundler) [public](/posts/2019/12/code-comfort-eleventy-webpack) was that it would get GitHub stars. At this writing, the quantity is still in the single digits but, hey, man, it's actual *Github stars*. We Are Not Worthy.
 
-*For those reviewers out there who believe you can't do long-form writing in [iA Writer](https://ia.net/writer) because it requires you to rename individual chapters’ files when you want to move around scenes&nbsp;.&nbsp;.&nbsp;.* **Really**?
+*For those reviewers out there who believe you can't do long-form writing in [iA Writer](https://ia.net/writer) because it requires you to rename individual chapters' files when you want to move around scenes&nbsp;.&nbsp;.&nbsp;.* **Really**?
 
 I long in vain for a return to the days when athletes *did not* engage in elaborate celebrations after every frigging accomplishment during a game[^Volleyball]. Celebrate when you win, folks---maybe (*i.e.*, if the win doesn't simply advance you to a .350 record).
 
@@ -38,4 +40,4 @@ I long in vain for a return to the days when athletes *did not* engage in elabor
 
 Although I have nearly a year to go on my current subscription with [1Password](https://1password.com), have been impressed so far while trying out the open-source but fully featured [Bitwarden](https://bitwarden.com). If you're trying to sort out your own passwords, I strongly urge you to give Bitwarden a try.
 
-*Seeing how so many prominent individuals, institutions, and teams have succeeded by cheating and otherwise flouting the rules, perhaps society should just* eliminate *all rules and cut out the ineffective middleman. We could call this the "Systematic Correction and Repeal of Egregious Works’ Interference via Total Annihilation of Limiting Legislation" (SCREWITALL).*
+*Seeing how so many prominent individuals, institutions, and teams have succeeded by cheating and otherwise flouting the rules, perhaps society should just* eliminate *all rules and cut out the ineffective middleman. We could call this the "Systematic Correction and Repeal of Egregious Works' Interference via Total Annihilation of Limiting Legislation" (SCREWITALL).*

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Going solo with Eleventy"
 subtitle: "Losing webpack, regaining Tailwind CSS"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
 lastmod: 2020-05-26T14:15:00-05:00
 discussionId: "2020-05-going-solo-eleventy"
-featured_image: solo-flight-by-a-seagull-at-sunset-4238769_3225x2330.jpg
+featured_image: "solo-flight-by-a-seagull-at-sunset-4238769_3225x2330.jpg"
 featured_image_width: 3225
 featured_image_height: 2330
 featured_image_alt: "A seagull flying alone over water at sunset"
@@ -30,7 +30,7 @@ In the ensuing months, I removed two of the biggest reasons for having added web
 
 - I dropped [Sass/SCSS](https://sass-lang.com) for [PostCSS](https://postcss.org) while [experimenting briefly](/posts/2020/01/two-cheers-tailwind) with [Tailwind CSS](https://tailwindcss.com). While I didn't warm up (then) to Tailwind, I liked PostCSS a lot and decided to stick with it. And while you certainly *could* use webpack to incorporate PostCSS with Eleventy, it wasn't *necessary* to do so.
 
-- [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images’ actual utility. Only those few images necessary to tell certain posts’ stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time]
+- [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images' actual utility. Only those few images necessary to tell certain posts' stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time]
 
 [^Time]: This wasn't just a matter of keeping me from twiddling my thumbs every time I made changes to the site. Limiting build times is important---especially since the Netlify free tier has a limit of 300 minutes a month; and, recently, I've been using [Zapier zaps](https://zapier.com/help/create/basics/create-zaps) to auto-build the site each midnight, Central time, to keep its [webmentions](https://alistapart.com/article/webmentions-enabling-better-communication-on-the-internet/) more frequently updated. The Eleventy/webpack combo typically took roughly two minutes per build, meaning over sixty minutes a month *even if I didn't change anything else on the site*---and, to be sure, I am *always* changing things, even things you may never notice.
 
@@ -101,7 +101,7 @@ Late in the day on May 7, I finally had things ready *enough*, and "told" [Netli
 
 Thus, here we are. This site now runs on Eleventy only, not Eleventy and webpack. Yet, it still has responsive and processed images as well as all the good stuff that PostCSS makes possible, *but* now also the re-added Tailwind. The magic of PurgeCSS-inside-Tailwind makes the delivered CSS a fraction of my old CSS's bulk. And, speaking of smaller deliveries, the JavaScript is about one-fourteenth of its size when webpack was involved, despite providing even *more* goodies (*e.g.*, Flying Pages as opposed to instant.page).
 
-Oh, yes: build time is now routinely well under a minute, while `eleventy_bundler`'s build times generally hovered around  a minute-forty but sometimes went as high as two-and-a-half minutes. Since this greater speed also extends to my local dev efforts, I am happy to recover those cumulative minutes and hours going forward.[^respImgBuild]
+Oh, yes: build time is now routinely well under a minute, while `eleventy_bundler`’s build times generally hovered around  a minute-forty but sometimes went as high as two-and-a-half minutes. Since this greater speed also extends to my local dev efforts, I am happy to recover those cumulative minutes and hours going forward.[^respImgBuild]
 
 [^respImgBuild]: That shorter build time didn't last long, once I began using a larger number of image sizes for responsiveness. Still, I've tried that same number of image sizes with the previous webpack repo and it would clearly be a *lot* longer than what the current non-webpack repo would do.
 

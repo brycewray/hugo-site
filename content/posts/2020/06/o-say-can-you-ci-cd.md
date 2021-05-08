@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "O say can you CI/CD?"
 subtitle: "A way around the Netlify build limit"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
 lastmod: 2021-02-06T08:35:00-06:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
-featured_image: dominoes-4020617_4870x2672.jpg
+featured_image: "dominoes-4020617_4870x2672.jpg"
 featured_image_width: 4870
 featured_image_height: 2672
 featured_image_alt: "A row of dominoes with a hand about to tip them over"
@@ -192,7 +192,7 @@ Here's how it works.
 
 - The `on` section tells it to run whenever one of two things happens:
 	- The first is whenever a change is pushed to the default branch, `main`.
-	- The second is when it's 5:00 AM [UTC](https://www.timeanddate.com/worldclock/timezone/utc)---which corresponds to late night in my time zone---and works because of GitHub Actions’ support for [cron jobs](https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/). This cron job generates that earlier-mentioned automatic daily build for the sake of updating webmentions.
+	- The second is when it's 5:00 AM [UTC](https://www.timeanddate.com/worldclock/timezone/utc)---which corresponds to late night in my time zone---and works because of GitHub Actions' support for [cron jobs](https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/). This cron job generates that earlier-mentioned automatic daily build for the sake of updating webmentions.
 - Then there's the `jobs` section. It gives these orders:
 	- Use the latest version of [Ubuntu](https://ubuntu.com) that the remote server is willing to load.
 	- "Checkout" that aforementioned default branch in Git.
@@ -204,7 +204,7 @@ Here's how it works.
 
 As a result: with this GitHub Action now handling builds on the GitHub setup, the deploy on Netlify typically takes no more than *ten seconds*, quite often more in the range of *two to five* seconds---and, once again, it counts as *zero* seconds against that 300-minute monthly build cap.
 
-Finally: you may wonder, hey, what if the Netlify folks learn you're doing this? Won't they object? The simple answer is: Absolutely not! You're *helping* them! You're *saving* their setup valuable time, processing wear and tear, and bandwidth for *paying* customers’ use. 
+Finally: you may wonder, hey, what if the Netlify folks learn you're doing this? Won't they object? The simple answer is: Absolutely not! You're *helping* them! You're *saving* their setup valuable time, processing wear and tear, and bandwidth for *paying* customers' use. 
 
 ### GitLab CI/CD
 

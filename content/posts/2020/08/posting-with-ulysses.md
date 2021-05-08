@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Posting with Ulysses"
 subtitle: "Trying the latest version"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-08-04T19:15:00-05:00
 lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2020-08-posting-with-ulysses"
-featured_image: typewriter-type-hammers-1022893_2000x1333.jpg
+featured_image: "typewriter-type-hammers-1022893_2000x1333.jpg"
 featured_image_width: 2000
 featured_image_height: 1333
 featured_image_alt: "An ultra-close-up view of the type hammers on a typewriter"

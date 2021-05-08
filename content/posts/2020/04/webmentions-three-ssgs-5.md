@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
-title: "Webmentions in three SSGs • Part 5"
+title: "Webmentions in three SSGs: Part 5"
 subtitle: "Thanking our sources for this series about IndieWebbin’"
 description: "Conclusion of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T16:50:00-05:00
 lastmod: 2020-09-16T10:00:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-5"
-featured_image: letters-pen-ink-paper-2111533_4608x3456.jpg
+featured_image: "letters-pen-ink-paper-2111533_4608x3456.jpg"
 featured_image_width: 4608
 featured_image_height: 3456
 featured_image_alt: "Writing concept - Fountain pen, white sheet of paper, open bottle of ink"
@@ -44,7 +44,7 @@ Finally, here's that bibliography I've been flogging for all four parts up to no
 
 *Everybody* interested in implementing webmentions in static sites should find this useful, even if they don't specifically use any of the three SSGs I mentioned. Every developer article in this list has a link to the person's public repo, which I found *at least* as helpful as the article itself. As always, I sit on the shoulders of people who are *far* smarter than I, and I am immensely grateful to them.
 
-Also, it'll often surprise me what I pick up from how others’ code works, especially when the thing I learn isn't even what prompted my search in the first place. Serendipity is cool.
+Also, it'll often surprise me what I pick up from how others' code works, especially when the thing I learn isn't even what prompted my search in the first place. Serendipity is cool.
 
 ### IndieWeb/webmentions ([Part 1](/posts/2020/04/webmentions-three-ssgs-1))
 

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Goodbye and hello • Part 2"
 subtitle: "Returning the site to Netlify"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-07-31T17:35:00-05:00
 lastmod: 2020-09-05T09:00:00-05:00
 discussionId: "2020-07-goodbye-hello-2"
-featured_image: welcome-mat-705102_4368x2912.jpg
+featured_image: "welcome-mat-705102_4368x2912.jpg"
 featured_image_width: 4368
 featured_image_height: 2912
 featured_image_alt: "A welcome mat in front of a home"

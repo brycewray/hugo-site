@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Ahoy, ’Mate"
 subtitle: "Considering MailMate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
-lastmod: 2021-03-12T10:30:00-06:00
+lastmod: 2021-04-30T09:06:00-05:00
 discussionId: "2019-06-ahoy-mate"
-featured_image: MailMate_screen_cap_1619x720.jpg
+featured_image: "MailMate_screen_cap_1619x720.jpg"
 featured_image_width: 1619
 featured_image_height: 720
 featured_image_alt: "Screen capture of the MailMate app"
@@ -45,11 +45,17 @@ And that continues, as I have become interested in [MailMate](https://freron.com
 
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much---and that's fine with the good doctor, not to mention the app's many adherents.
 
+{{< imgc src="MailMate_screen_cap_1619x720.jpg" alt="Screen capture of the MailMate app" width="1619" height=
+"720" >}}
+
+Image: Screen capture of MailMate, with its Latin-displaying "distortion mode" engaged for privacy's sake
+{.imgcCaption}
+
 ## Power trip
 
 It's hard for somebody who's prided himself since the 1980s on knowing his way around the Mac-o-sphere *not* to give MailMate a try sooner or later. After all, its [fans](https://www.youtube.com/watch?v=e_SlbQzL9lc) [swear](https://brettterpstra.com/2018/01/08/best-of-2017-working-on-macos/) [by](https://www.slant.co/options/1952/~mailmate-review) [it](https://www.youtube.com/playlist?list=PLC4ZkBr87CO0jmrQvGQ77t44tCT-xklqU) as *the* email client for Mac power users. However, perhaps *because* [I had become so locked into my personal "Holy Grail" where email is concerned](/posts/2019/05/the-holy-mail), I became aware of it only recently.
 
-Although my email needs aren't dramatic---as I've explained before, I don't use my Mac to access work-related email[^vmMail], so it's simply my personal stuff, albeit over twenty years’ worth of it, and plenty more rolling in every day---I still was intrigued by several aspects of MailMate.
+Although my email needs aren't dramatic---as I've explained before, I don't use my Mac to access work-related email[^vmMail], so it's simply my personal stuff, albeit over twenty years' worth of it, and plenty more rolling in every day---I still was intrigued by several aspects of MailMate.
 
 [^vmMail]: To clarify: yes, I do work from home sometimes, typically each Friday; and, yes, I access work email from home. However, I do so through the employer-supplied [VMWare Horizon Client](https://www.vmware.com/products/horizon.html), not through other apps on my Mac.
 
@@ -57,7 +63,7 @@ Although my email needs aren't dramatic---as I've explained before, I don't use 
 
 First,  the [documentation](https://manual.mailmate-app.com/), apparently all written by Dr. Nielsen, is superb, although certainly not a light read. If you've got a question about MailMate, it's hard *not* to find the answer there.
 
-Now, mind you: it's got very few screen captures, and none that are current. Indeed, the [ones you'll find on his site](https://freron.com/screenshots/) are several years old. Yet, since he's [labored](https://updates.mailmate-app.com/release_notes) to make the app *work* better rather than revising its appearance every time the other apps doll up their UIs[^lookandFeel], that doesn't really affect the screen captures’ usefulness in explaining how MailMate works.
+Now, mind you: it's got very few screen captures, and none that are current. Indeed, the [ones you'll find on his site](https://freron.com/screenshots/) are several years old. Yet, since he's [labored](https://updates.mailmate-app.com/release_notes) to make the app *work* better rather than revising its appearance every time the other apps doll up their UIs[^lookandFeel], that doesn't really affect the screen captures' usefulness in explaining how MailMate works.
 
 [^lookandFeel]: In a [blog post](https://blog.freron.com/2017/personalized_subscriber_emails/) in January, 2017, Dr. Nielsen said, regarding the look and feel of the product itself, "I admit that I'm usually more concerned about the look (and adherence to standards) of the emails that MailMate *sends* (something which seems to be a bit unorthodox among email client developers)."
 
@@ -95,7 +101,7 @@ While those are the biggies, there are other reasons why MailMate interests me t
 
 It's hard to think of any method of searching through and filtering emails that MailMate doesn't provide. The app is simply astonishing in this regard. As a result: if you're inclined to use Smart Mailboxes, its implementation of them goes ’waaaay beyond similar capabilities on other email&nbsp;clients.
 
-Of course, the drawback to using Smart Mailboxes on MailMate, as on other email clients with similar capabilities, is that they don't sync with your iOS devices’ mail apps.[^creepy] The way around that is to apply rules that work with IMAP folders and subfolders, *etc.*, at the *provider*&nbsp;level.
+Of course, the drawback to using Smart Mailboxes on MailMate, as on other email clients with similar capabilities, is that they don't sync with your iOS devices' mail apps.[^creepy] The way around that is to apply rules that work with IMAP folders and subfolders, *etc.*, at the *provider*&nbsp;level.
 
 However, at that point, you may well say: what's the use of the filtering on MailMate?
 
@@ -107,11 +113,11 @@ If you've got time and you're feeling a little adventurous, MailMate's [hidden p
 
 You can customize various aspects of the display, such as the font size and leading of a column listing emails---although you can't add any text preview to the columnar view, as is commonly available in most other mail clients. It's something Dr. Nielsen [mentioned](https://blog.freron.com/2017/personalized_subscriber_emails/) as a "I'd-like-to-do-this-but" item over two years ago, and there it sits, still undone; but it's a minor nit.
 
-## Still thinkin’&nbsp;.&nbsp;.&nbsp;.
+## Still thinkin'&nbsp;.&nbsp;.&nbsp;.
 
 I began the 30-day trial of MailMate prior to Apple's WWDC 2019, curious as to whether there'd be any big changes in Mail for what we now know will be macOS Catalina and, if so, whether they'd be enough to keep me from continuing to consider MailMate. After all, Apple Mail is included with macOS while, at this writing, MailMate costs&nbsp;$50.
 
-However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin’. I'll keep you advised as to how I&nbsp;land.
+However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin'. I'll keep you advised as to how I&nbsp;land.
 
 ----
 
@@ -119,4 +125,4 @@ However, the answers were "No" and "No." The [changes in Apple Mail in Catalina]
 
 My tweet tonight says it all:
 
-{{% twitscrn imageUrl="Twitter_1138614802518020096.png" alt="Tweet by @BryceWrayTX, 2019-06-11: Bought a license for, and became a patron of, @mailmateapp. Very impressed with the software and the developer, as I made clear in my recent post" width="1182" height="1220" twitterUrl="https://twitter.com/BryceWrayTX/status/1138614802518020096" %}}
+{% twitscrn "Twitter_1138614802518020096.png", "Tweet by @BryceWrayTX, 2019-06-11: Bought a license for, and became a patron of, @mailmateapp. Very impressed with the software and the developer, as I made clear in my recent post", 1182, 1220, "https://twitter.com/BryceWrayTX/status/1138614802518020096" %}

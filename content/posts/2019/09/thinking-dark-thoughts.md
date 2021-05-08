@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Thinking dark thoughts"
 subtitle: "How to keep up with a growing trend"
@@ -7,7 +7,7 @@ description: "As Dark Mode grows in use, it’s easy to make your site dark-frie
 date: 2019-09-29T10:08:00-05:00
 lastmod: 2020-08-08T14:15:00-05:00
 discussionId: "2019-09-thinking-dark-thoughts"
-featured_image: sunset-1090164_4608x3456.jpg
+featured_image: "sunset-1090164_4608x3456.jpg"
 featured_image_width: 4608
 featured_image_height: 3456
 featured_image_alt: "Skies at sunset"

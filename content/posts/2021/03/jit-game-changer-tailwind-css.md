@@ -1,11 +1,11 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: singlepost
 title: "JIT is a game-changer for Tailwind CSS"
 subtitle: "Still experimental, but already impressive"
 description: "Why Tailwind’s new capabilities will give it even more  momentum among web developers."
 author: Bryce Wray
 date: 2021-03-19T16:25:00-05:00
-#lastmod:
+lastmod: 2021-04-05T16:30:00-05:00
 #draft: false
 discussionId: "2021-03-jit-game-changer-tailwind-css"
 featured_image: "screen-cap-TWCSS-2702x1582.png"
@@ -14,6 +14,9 @@ featured_image_height: 1582
 featured_image_alt: "Screen capture of HTML with Tailwind CSS styles"
 #featured_image_caption:
 ---
+
+**Update, 2021-04-05**: As of the [release of Tailwind 2.1.0](https://blog.tailwindcss.com/tailwindcss-2-1), the feature described within is part of Tailwind core, although it's still described as being "in preview."
+{.yellowBox}
 
 Where the category of Major Events That I Did Not Expect to Occur This Week is concerned, you definitely can assign to it the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) of a **just-in-time (JIT) compiler** for [Tailwind CSS](https://tailwindcss.com).
 
@@ -47,13 +50,15 @@ Let's discuss an aggravation that's actually **designed into** Tailwind, and the
 
 Apart from the file-size issue, a major reason why many don't like Tailwind is because they have to create "pixel-perfect" websites---*i.e.*, providing *exact matches* for what designers have specified---and, thus, can't stick to the fixed settings that are a purposeful part of Tailwind.[^whyUnits]
 
-Let's say your design team requires your site's navigation bar to be exactly 63.7 pixels high with a background color of `#a7b492` (or `rgb(167, 180, 146)` or `hsl(83, 18%, 64%)`, depending on how one likes to code one's colors). Up to now, there's been no way in Tailwind to provide such exactitude. Of course, you then can just add your own **additional** CSS for that purpose; but that further bloats the CSS you're delivering. If a particular project needs a *ton* of these workarounds to achieve what you're trying to deliver, it might well seem pointless to use Tailwind in the first place.[^myUnits]
-
 [^whyUnits]: The idea behind Tailwind's fixed units is to enable developers, especially those who lack adequate layout/design skills, to work within a set of professionally curated sizes, breakpoints, colors, and so on.
+
+Let's say your design team requires your site's navigation bar to be exactly 63 pixels[^dotPixels] high with a background color of `#a7b492` (or `rgb(167, 180, 146)` or `hsl(83, 18%, 64%)`, depending on how one likes to code one's colors). Up to now, there's been no way in Tailwind to provide such exactitude. Of course, you then can just add your own **additional** CSS for that purpose; but that further bloats the CSS you're delivering. If a particular project needs a *ton* of these workarounds to achieve what you're trying to deliver, it might well seem pointless to use Tailwind in the first place.[^myUnits]
+
+[^dotPixels]: Not "63.7," as I originally wrote. (Jeez.) Shows why I shouldn't try writing sarcasm when I'm tired.
 
 [^myUnits]: Indeed, I noted that very thing in my recent "[Next steps?](/posts/2021/03/next-steps)" article about why I chose not to use Tailwind for a project I'm doing for the Day Job: ".&nbsp;.&nbsp;.&nbsp;Tailwind's fixed units aren't quite precise enough for some of what I'm trying to do."
 
-But now, another goodie in the Tailwind JIT code---the allowance of **arbitrary style creation**---gives you far more flexibility. Now you can satisfy your design team's requirements with CSS like `h-[63.7px]` and `bg-[#a7b492]` to build that nav bar as spec'd. It was *this* addition, even more than the JIT functionality, that made me sit up and take notice about what the Tailwind team announced; and I saw similar comments from other web devs who've been wanting something like this in Tailwind.[^arbs]
+But now, another goodie in the Tailwind JIT code---the allowance of **arbitrary style creation**---gives you far more flexibility. Now you can satisfy your design team's requirements with CSS like `h-[63px]` and `bg-[#a7b492]` to build that nav bar as spec'd. It was *this* addition, even more than the JIT functionality, that made me sit up and take notice about what the Tailwind team announced; and I saw similar comments from other web devs who've been wanting something like this in Tailwind.[^arbs]
 
 [^arbs]: Note that, as the Tailwind team continues to refine this experimental library, not necessarily *all* classes can yet accept arbitrary values; it's a work in progress, as [today's release of v.0.1.4](https://github.com/tailwindlabs/tailwindcss-jit/releases/tag/v0.1.4) shows.
 

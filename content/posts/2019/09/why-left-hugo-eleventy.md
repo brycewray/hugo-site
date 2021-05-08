@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Why I left Hugo for Eleventy"
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2021-02-11T07:50:00-06:00
+lastmod: 2021-03-20T17:30:00-05:00
 discussionId: "2019-09-why-left-hugo-eleventy"
-featured_image: detour-2496197_4912x3264.jpg
+featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
 featured_image_height: 3264
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
@@ -36,7 +36,7 @@ oldComments: |
     </div>
 ---
 
-**Note**: To put it simply, things [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so [here it shall stay](/posts/2019/10/otoh).
+**Note**: To put it simply, things have changed multiple times since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).
 {.yellowBox}
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
@@ -65,7 +65,7 @@ First, I got a big spike in readership for that first post about it, courtesy of
 
 Second, not long after I dragged my bleeding carcass away from attempting to use Gatsby without sufficient familiarity with its [React](https://reactjs.org) framework, my initial sense of relief gave way to a distinct and annoying whisper in my ear:
 
-*"Beat you, old man. Heh, heh.”*
+*“Beat you, old man. Heh, heh.”*
 
 It wasn't so much that I felt Gatsby and its adherents had beaten me. It was more that I felt I'd been laid low by the newer generation of mostly JavaScript-based SSGs in general.
 
@@ -85,7 +85,7 @@ Oh, and remember what I said about struggling to figure out how to get images to
 
 > You have thousands of images and need to dynamically reference their paths.[^imageCount]
 
-[^imageCount]: No, I don't yet have thousands of images in this site,  but I already have ’waaay too many to handle via the tedious, "one-off"-ish Gatsby process, and the number will only grow.
+[^imageCount]: No, I don't yet have thousands of images in this site,  but I already have 'waaay too many to handle via the tedious, "one-off"-ish Gatsby process, and the number will only grow.
 
 "Edge case," my big, fat heinie. As if I were actually going to do an *individual* importation of *each image*, which is the [Gatsby way](https://www.gatsbyjs.org/docs/importing-assets-into-files/), rather than make calls from templates to automate the process from front matter, *which is the frickin'* ***SSG way!***
 
@@ -95,13 +95,13 @@ So, six days into Gatsby Experiment II, I abandoned it.
 
 Again, I heard that whispering, snickering voice:
 
-*"Beat you **again**.”* 
+*“Beat you **again**.”* 
 
 But this time, I didn't just slink off, happy to have retained my sanity if not my dignity. This time, I had a response.
 
-"No. **I** ***rejected*** **you**. 
+“No. **I** ***rejected*** **you**. 
 
-"And now I'm going to prove that *you*, **not** I, are the problem.
+“And now I'm going to prove that *you*, **not** I, are the problem.
 
 "I'm going to pick the 'new' SSG I should've picked the first time."
 
@@ -164,7 +164,7 @@ I had a few (mostly self-inflicted) difficulties getting them going but the resu
 
 In the case of Gatsby, I'd managed to get the "smart" typography and, usually, good code block formatting---but automated footnotes were glitchy and often nonfunctional (as I [previously explained](/posts/2019/07/why-staying-with-hugo)).
 
-And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is ’waaaaay easier and more stable.
+And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is 'waaaaay easier and more stable.
 
 ### Sassy stuff
 
@@ -204,7 +204,7 @@ Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particu
 
 [^graphqlExpII]: Indeed, the Straw That Broke the Camel's Back for Gatsby Experiment II was when I couldn't *reliably* make GraphQL "see" each post's featured image *as* an image rather than a string, no matter how many ways I tried or how many tutorials I followed slavishly over a week's time. And only if you *can* get GraphQL to "see" an image can you make Gatsby apply all the admittedly cool features available through [Gatsby Image](https://www.gatsbyjs.org/docs/using-gatsby-image/), so that's where I drew the line the second and final time around with Gatsby.
 
-Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others’ code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
+Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others' code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
 
 ### It's far more robust than Gatsby
 
@@ -238,7 +238,7 @@ I fully intend to stay current with *both* of what I now believe are the two bes
 
 [^bitToGit]: Another transition may be in the works on that front, too; since back before Gatsby Experiment I, I've been considering switching the web's "source of truth" for this site to either GitHub or GitLab. I can see good arguments for each, as well as for just sticking with Bitbucket, so this call remains in the air.
 
-Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts’ main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts’ front matter and purely textual parts of their body copy are now totally portable.
+Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts' main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts' front matter and purely textual parts of their body copy are now totally portable.
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 

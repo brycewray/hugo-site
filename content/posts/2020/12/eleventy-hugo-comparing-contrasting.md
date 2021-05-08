@@ -1,6 +1,6 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
-title: "Eleventy and Hugo • Comparing and contrasting"
+layout: singlepost
+title: "Eleventy and Hugo: Comparing and contrasting"
 subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray

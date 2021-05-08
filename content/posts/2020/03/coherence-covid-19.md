@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Coherence and COVID–19" #Non-breaking hyphen there, copied/pasted from https://alignedonline.com/non%E2%80%91breaking-spaces/ since it can't be entered otherwise in text string
 subtitle: "Trying to grasp the new reality"
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
 lastmod: 2020-09-24T08:57:00-05:00
 discussionId: "2020-03-coherence-covid-19"
-featured_image: wash-hands-covid-19-4968117_4032x3024.jpg
+featured_image: "wash-hands-covid-19-4968117_4032x3024.jpg"
 featured_image_width: 4032
 featured_image_height: 3024
 featured_image_alt: "Hand-washing"
@@ -50,7 +52,7 @@ Last night, for example, an email from the auto dealership where we recently pur
 
 ## No end in sight
 
-My naïveté over the timing of my working from home due to the COVID-19 scare is long gone. That period is now indefinite, especially since my employers’ home offices as well as the branch office where I work are affected by their respective states’ regulations requiring near- or total shutdown of non-essential businesses.
+My naïveté over the timing of my working from home due to the COVID-19 scare is long gone. That period is now indefinite, especially since my employers' home offices as well as the branch office where I work are affected by their respective states' regulations requiring near- or total shutdown of non-essential businesses.
 
 When will it end? Some businesses are saying things like April something-or-other. Since I have spent a *great deal* of time reading and listening to the opinions of leading epidemiologists[^ScienceRules] over these last few days, I think such optimism is the product of somebody having smoked something funky.
 

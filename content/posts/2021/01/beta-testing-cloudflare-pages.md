@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: singlepost
 title: "Beta-testing Cloudflare Pages"
 subtitle: "A possible game-changer emerges"
 description: "I take a look at a new website-hosting platform and find some early glitchiness, but also plenty of potential."

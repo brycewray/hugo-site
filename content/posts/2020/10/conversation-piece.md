@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Conversation piece"
 subtitle: "Commenting options for your static website"
 description: "Here are several ways you can hear from your visitors."
@@ -7,7 +9,7 @@ date: 2020-10-13T16:30:00-05:00
 #lastmod
 #draft: true
 discussionId: "2020-10-conversation-piece"
-featured_image: miguel-a-amutio-27QOmh18KDc-unsplash_3785x2847.jpg
+featured_image: "miguel-a-amutio-27QOmh18KDc-unsplash_3785x2847.jpg"
 featured_image_width: 3785
 featured_image_height: 2847
 featured_image_alt: "An array of public address speakers mounted on a pole"
@@ -148,7 +150,7 @@ I don't want this to sound like one of those useless commercial-site review arti
 At this writing, my commenting platform choice is FastComments, for which I'm still on the free trial. If I choose *not* to stick with it once it comes time to pay or go, I'd probably just revert to the free Utterances[^1]---especially since I'm guessing that, given the content of my articles, my typical reader either already has a GitHub account or wouldn't have a problem with getting one.
 
 For your purposes, I'd rank the *non*-free offerings as follows:
-1. **FastComments**---Of these four, it's the best combination of light code, decent pricing, active development, respect for commenters’ privacy, and (reasonable) customizability. Since it's also the *newest* of the four, that's pretty impressive!
+1. **FastComments**---Of these four, it's the best combination of light code, decent pricing, active development, respect for commenters' privacy, and (reasonable) customizability. Since it's also the *newest* of the four, that's pretty impressive!
 2. **Commento**---Since I couldn't test it without going truly live with it (and chose not to do so), I go by what I've read about this. It comes out ahead of Hyvor Talk only because the latter is still so code-heavy. Otherwise, it gives you the least bang for the buck of these four.
 3. **Hyvor Talk**---If you don't care so much about code load (although you probably should), this should be your second option from this group. I'd watch this one for what I hope will be future refinements that further trim it down, perhaps by letting you use a significantly lighter and more bare-bones version thereof.
 4. **Talkyard**---The code load just buries this otherwise great and highly affordable choice. As with Hyvor Talk, I hope there will eventually be a "Light" version that's a much smaller download and is for *only* commenting, rather than carrying the additional weight that supports its many other features.

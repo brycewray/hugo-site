@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "iA for IO?"
 subtitle: "Evaluating iA Writer for use with an SSG"
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
 lastmod: 2020-09-27T13:45:00-05:00
 discussionId: "2019-02-ia-for-io"
-featured_image: notebook-933362_4752x3168.jpg
+featured_image: "notebook-933362_4752x3168.jpg"
 featured_image_width: 4752
 featured_image_height: 3168
 featured_image_alt: "Stylized photograph of notebook and, in blurry background, a pencil"
@@ -41,4 +43,4 @@ Bottom line: I still haven't made up my mind about whether to go with a differen
 <br />
 <hr />
 
-*One more thing before I end this quickie: if you haven't already read [Chris Rosser](https://chrisrosser.net)'s [most recent review of iA Writer](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/), I definitely urge you to do so. His workflow is quite different from mine since he actually coded his own text-to-HTML setup (whoa) but his observations are always keen and useful. "[Joe Bob says check it out](https://en.wikipedia.org/wiki/Joe_Bob_Briggs).”*
+*One more thing before I end this quickie: if you haven't already read [Chris Rosser](https://chrisrosser.net)'s [most recent review of iA Writer](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/), I definitely urge you to do so. His workflow is quite different from mine since he actually coded his own text-to-HTML setup (whoa) but his observations are always keen and useful. "[Joe Bob says check it out](https://en.wikipedia.org/wiki/Joe_Bob_Briggs)."*

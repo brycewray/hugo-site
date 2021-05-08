@@ -1,12 +1,14 @@
 ---
+layout: singlepost
+tags: post
 title: "The client is too smart for you"
 subtitle: "The email client, that is"
 description: "Pretty emails don’t work so well in an Outlook-centric business world."
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
-lastmod: 2020-01-31T10:30:00-06:00
+lastmod: 2020-11-26T08:10:00-06:00
 discussionId: "2018-10-client-too-smart"
-featured_image: letters-envelope-on-color-strips-4029672_5376x3648.jpg
+featured_image: "letters-envelope-on-color-strips-4029672_5376x3648.jpg"
 featured_image_width: 5376
 featured_image_height: 3648
 featured_image_alt: "Communications concept: Envelope hanging over color strips"
@@ -44,11 +46,11 @@ As for [embedding videos](https://www.emailonacid.com/blog/article/email-develop
 
 _Or_&nbsp;.&nbsp;.&nbsp;.
 
-Or you can just accept reality and use the email to point people to a _landing page_. That's the solution to _all_ of these nagging problems, because what you can do with a landing page is limited only by what browsers can render (and the speed of your recipients’ Internet connections, which isn't likely to be a problem for businesses in the developed world).
+Or you can just accept reality and use the email to point people to a _landing page_. That's the solution to _all_ of these nagging problems, because what you can do with a landing page is limited only by what browsers can render (and the speed of your recipients' Internet connections, which isn't likely to be a problem for businesses in the developed world).
 
 This also has the side benefit of being somewhat of a qualifier---or, if you will, a "self-selector." After all: if someone isn't even willing to click a link to go to a landing page, he or she clearly isn't sufficiently interested in what you're marketing that you should be wasting your company's limited resources chasing him or her. Right?
 
-And if your reaction to that is "But, but, how will they _know_ whether they're interested in what I'm marketing without the fancy email?”: no amount of flash and bang can cover up a foggy message, especially if it's gone to a person who's not even the right target in the first place. On the other hand, a well-written, smartly targeted, and sufficiently brief textual message will steer the _true_ prospects to the landing page.
+And if your reaction to that is "But, but, how will they _know_ whether they're interested in what I'm marketing without the fancy email?": no amount of flash and bang can cover up a foggy message, especially if it's gone to a person who's not even the right target in the first place. On the other hand, a well-written, smartly targeted, and sufficiently brief textual message will steer the _true_ prospects to the landing page.
 
 So, in the end, what you really want is to send a brief, crisply written email to the right person. That email will point the person to a landing page with all the info, not to mention web-based bells and whistles, that you want an interested prospect to see and consider.
 

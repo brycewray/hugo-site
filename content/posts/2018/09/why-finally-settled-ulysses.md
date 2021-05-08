@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Why I finally settled on Ulysses"
 subtitle: "The write stuff (sorry)"
 description: "How I came to realize why one particular creative writing app was a better fit for me as compared to its chief rival."
@@ -6,11 +8,12 @@ author: Bryce Wray
 date: 2018-09-22T11:04:36-05:00
 lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2018-09-why-finally-settled-ulysses"
-featured_image: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.jpg
+featured_image: "Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.jpg"
 featured_image_width: 1280
 featured_image_height: 720
 featured_image_alt: "Screen capture - Ulysses app preferences window"
-#featured_image_caption: My own screen capture, so no attribution needed
+featured_image_caption: |
+  <span class="caption">Image: <strong>Preferences</strong> window in the Ulysses app</span>
 ---
 
 As I write this in late September, 2018, it's a little over a year since I began writing a novel I really, truly thought I'd have finished by now.
@@ -29,11 +32,11 @@ It was my first encounter with writing software that was designed to make it eas
 
 There was also this thing out there called Ulysses, but that was back when it was [receiving a ton of Internet hate for going to a subscription plan](https://gizmodo.com/another-great-app-went-subscription-only-and-everything-1797802223), and I didn't pay it much mind. Honestly don't recall if that was a factor, though.
 
-Besides, this Scrivener app seemed to be all I could ever want, and it was going to be getting a major upgrade in just a few months after that which would address any lingering concerns about its design, which hadn't changed much in the previous six years. Having not been following macOS _née_ OS X software design Kewl Stuff for the aforementioned quite some time away, I didn't see anything wrong with the appearance of v.2.x, but there was little question that v.3.x was [definitely a major improvement and added many even cooler features along with the more updated look-'n'-feel](https://www.helpingwritersbecomeauthors.com/the-new-scrivener-3-0-should-you-upgrade/).
+Besides, this Scrivener app seemed to be all I could ever want, and it was going to be getting a major upgrade in just a few months after that which would address any lingering concerns about its design, which hadn't changed much in the previous six years. Having not been following macOS _née_ OS X software design Kewl Stuff for the aforementioned quite some time away, I didn't see anything wrong with the appearance of v.2.x, but there was little question that v.3.x was [definitely a major improvement and added many even cooler features along with the more updated look-’n'-feel](https://www.helpingwritersbecomeauthors.com/the-new-scrivener-3-0-should-you-upgrade/).
 
 ## Siren song
 
-As the months went by, I kept toiling in Scrivener on my work in progress (WIP).  Such as it was. (Sigh.) However, much as I had done in trying to figure out which mail client to use on Mac and iOS---yet another story for another day---I started to waver in my estimation of whether Scrivener was the wisest choice for me. This was troubling, especially considering how much I liked the care and thinking behind it and greatly admired how obviously it was a labor of love for the [small but dedicated team behind it](https://www.literatureandlatte.com/about-us) (especially Keith Blount, who taught himself to program so he could create it and is still its chief developer).
+As the months went by, I kept toiling in Scrivener on my work in progress (WIP).  Such as it was. [Sigh.] However, much as I had done in trying to figure out which mail client to use on Mac and iOS---yet another story for another day---I started to waver in my estimation of whether Scrivener was the wisest choice for me. This was troubling, especially considering how much I liked the care and thinking behind it and greatly admired how obviously it was a labor of love for the [small but dedicated team behind it](https://www.literatureandlatte.com/about-us) (especially Keith Blount, who taught himself to program so he could create it and is still its chief developer).
 
 So, once again, I began researching writing software. But this time, I had a better idea of what I needed. The siren song of simplicity, in the form of Ulysses, wailed at me from the rocks. I knew I still needed most of the organizational power of Scrivener; but the Ulysses fans proclaimed that Scrivener simply had too many bells and whistles. Ulysses is _pure_. Just write. You don't need all that other stuff. So, indeed, I downloaded Ulysses on my Mac and iOS devices, and subscribed _well_ before the expiration of the trial period; it was so clearly a fit.
 
@@ -67,8 +70,9 @@ As [David Hewson](https://davidhewson.com) [puts it so well](https://davidhewson
 
 > Ulysses is about text on the page. Yes, you can do lots of clever things with tagging and stuff if you want (and I do when it's necessary). But at its heart Ulysses works like a very clever digital typewriter. Clear the decks of all the frills, the folders, the styles, the agonising over whether to write in Avenir or Helvetica. Get all that out of the way and just write. What you see is what the eventual reader will see. In essence Ulysses is extremely simple. Once you get your head around the basics you can forget about software and focus on the hard bit --- saying what you want to say and saying it well. There are no distractions, and that's a wonderful thing because writers tend to hunt for distractions all the time. It's easier puzzling over them than getting down to the real job in hand.[^3]
 
+
 [^1]:	I'll save it from a Ulysses "sheet" to an .md file in an appropriate part of my Hugo site's "posts" directory and, therefore, convert it into this web page.
 
 [^2]:	By the way: if you don't know CSS yet but you're using Ulysses, learn it ASAP. It's a delight to know how to customize the export styles in Ulysses using its CSS-derived styles language. If you're concerned at all with the final appearance of whatever you export, it behooves you to know this schtuff.
 
-[^3]:	Speaking of Mr. Hewson, his *[Writing a Novel With Ulysses](http://www.amazon.com/Writing-Novel-Ulysses-David-Hewson-ebook/dp/B00OHGAZTY/)* is indispensable. Even if you already know Ulysses, you'll find so many good nuggets of information about writing _with_ Ulysses. And, if you _don't_ already know the app, you'll find this book a fantastic way to get started. Consider it the user's manual that The Soulmen didn't write.
+[^3]:	Speaking of Mr. Hewson, his [_Writing a Novel With Ulysses_](http://www.amazon.com/Writing-Novel-Ulysses-David-Hewson-ebook/dp/B00OHGAZTY/) is indispensable. Even if you already know Ulysses, you'll find so many good nuggets of information about writing _with_ Ulysses. And, if you _don't_ already know the app, you'll find this book a fantastic way to get started. Consider it the user's manual that The Soulmen didn't write.

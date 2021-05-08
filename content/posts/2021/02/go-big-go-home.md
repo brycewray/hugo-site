@@ -1,10 +1,11 @@
 ---
+layout: singlepost
 title: "Go big or Go home?"
 subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2021-03-13T13:40:00-06:00
+lastmod: 2021-04-30T13:10:00-05:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
@@ -75,42 +76,26 @@ So you can assess the conversion required between the Eleventy and Hugo versions
 
 ### First, the JavaScript
 
-Here's the JavaScript version, on which the Go version was based:
+Here's the JavaScript version, on which the Go version was based[^origCode]:
+
+[^origCode]: This is a revised version because the *original* JS provides for an [LQIP-using preview](https://endler.dev/2017/image-previews/), the need for which ended when I [removed hero images](/posts/2021/01/leaner-cleaner)).
 
 ```js
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
-var LQIPholder = 'f_auto,q_1,w_20/' // note ending slash
 var xFmPart1 = 'f_auto,q_auto:eco,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
  
-module.exports = (url, alt, width, height, tmpl) => {
-  if (!tmpl) tmpl == "none"
-
-  switch(tmpl) {
-    case 'index':
-      divClass = `h-full`
-      imgClass = `object-cover object-center h-full w-full containedImage lazy`
-      nscClass = `object-cover object-center h-full w-full containedImage`
-      dataSzes = `100vw`
-      break
-    case 'posts':
-      divClass = `h-full`
-      imgClass = `imgCover hero lazy`
-      nscClass = `imgCover hero`
-      dataSzes = `100vw`
-      break
-    default:
-      divClass = `relative`
-      imgClass = `containedImage lazy`
-      nscClass = `containedImage`
-      dataSzes = `(min-width: 1024px) 100vw, 50vw`
-  }
+module.exports = (url, alt, width, height) => {
+  divClass = `relative`
+  imgClass = `containedImage`
+  nscClass = `containedImage`
+  dataSzes = `(min-width: 1024px) 100vw, 50vw`
   
   var separator = ', '
 
   var stringtoRet = ``
-  stringtoRet = `<div class="${divClass}" style="background-image: url(${cloudiBase + LQIPholder + url}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  stringtoRet = `<div class="${divClass}">
   <img class="${imgClass}" data-src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + url}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
@@ -119,13 +104,7 @@ module.exports = (url, alt, width, height, tmpl) => {
     }
   })
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
-  stringtoRet += `" alt="${alt}" width="${width}" height="${height}"`
-  /*
-  if (divClass !== "h-full") {
-    stringtoRet += ` loading="lazy"` // not good for above-the-fold images
-  }
-  */
-  stringtoRet +=` sizes="${dataSzes}" />
+  stringtoRet += `" alt="${alt}" width="${width}" height="${height}" loading="lazy" sizes="${dataSzes}" />
   <noscript>
     <img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + url}" alt="${alt}" />
   </noscript>
@@ -151,24 +130,23 @@ Here's the corresponding Go version for Hugo:
   separating the Cloudinary-related vars for 
   greater flexibility, especially in case 
   somebody else wants to borrow this code 
-  for his/her own Cloudinary setup 
-  and transformation ("xFm") choices
+  for his/her own Cloudinary setup and 
+  transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
-{{- $LQIPholder := "f_auto,q_1,w_20/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $divClass := "relative" -}}
-{{- $imgClass := "containedImage lazy" -}}
+{{- $imgClass := "containedImage" -}}
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $stringtoRet := "" -}}{{/* init */}}
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "' style='background-image: url(" $cloudiBase $LQIPholder $src "); background-position: center; background-repeat: no-repeat; background-size: cover;'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' data-srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "'><img class='" $imgClass "' src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' srcset='" -}}
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
   {{- if ge $width . -}}
@@ -200,11 +178,9 @@ Now that you've seen both, let's compare/contrast how they work.
 - Each uses a variable, either `stringtoRet` (JS) or `$stringtoRet` (Go), into which it then collects the necessary HTML and CSS; and, at the end, **returns** that variable's contents to the web page.
 - Each stores the desired image display sizes for the `srcset` in either an array called `respSizes` (JS) or a *[slice](https://gohugo.io/functions/slice)* called `$RespSizes` (Go).[^respSizes]
 - After providing the opening HTML/CSS to the variable, each shortcode loops through the array or slice and fills in the necessary per-size segments. The looping in JS is done with `forEach` and in Go with `range`. Immediately after each loop ends, a `substring` or `substr` statement chops off the last two characters of the result, so there's not a hanging comma-and-space combination after the last item.
-- At the end, each finishes filling the variable by adding the closing HTML/CSS, including `noscript` material for those browsers where JS has been disabled. This is because the shortcodes are also handling lazy-loading and "blur-up" effects[^lqipStuff] via JS added to each web page.
+- At the end, each finishes filling the variable by adding the closing HTML/CSS, including `noscript` material for those browsers where JS has been disabled. The latter dates back to when the shortcodes were handling lazy-loading via JS added to each web page; while that's no longer true, I kept the `noscript` items just in case I decide to revert to that lazy-loading method for some reason.
 
 [^respSizes]: The JS fills `respSizes` by pulling from a site parameters file in the Eleventy repo's site-wide `_data` directory. The Go fills `$RespSizes` from this code, but I could easily have brought in the values from the site-wide `config.yaml` configuration file. I wrote the JS version of this particular part as I did because, early on, I was frequently experimenting with different values and felt it easier to go this route. By the time I got to the Go version, I had settled on these values and felt no more need to separate their entry in this way.
-
-[^lqipStuff]: The "blur-up" is the reason why the encompassing `div` contains a [low-quality image placeholder (LQIP)](https://cloudinary.com/blog/low_quality_image_placeholders_lqip_explained) as a background image; it's also the purpose of the variable `LQIPholder` (JS) or `$LQIPholder` (Go).
 
 ## Passing Go
 

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: singlepost
 title: "Gems in the rough #2"
 subtitle: "More geeky hints for SSG fans"
 description: "Another collection of neat and/or nerdy items."
@@ -7,7 +7,7 @@ author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
 lastmod: 2021-01-28T12:55:00-06:00
 #draft: false
-discussionId: "2021-01-gems-in-rough-02"
+discussionId: "2021-01-gems-in-rough-2021-01"
 featured_image: "gemstones-collection-3203865_4116x2304.jpg"
 featured_image_width: 4116
 featured_image_height: 2304
@@ -64,7 +64,7 @@ So, if you're a Hugo user right now, you have two options where it comes to good
 
 Those who have inflicted upon themselves the curse of reading any significant number of my posts are all too aware that I have a thing about using footnotes. Often, lots of ’em. So it kinda griped my cookies (as the technical term is used) that Eleventy---when properly set up for footnotes in the first place through use of the [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote) plugin for Eleventy's usual [markdown-it](https://github.com/markdown-it/markdown-it) parser---always encased the footnote numbers in brackets. Brackets!! Argh.
 
-Here's an example, using a screen capture of a paragraph from last year's "[YouTube TV and the RSNs flap](/posts/2020/02/youtube-tv-rsns-flap)”:
+Here's an example, using a screen capture of a paragraph from last year's "[YouTube TV and the RSNs flap](/posts/2020/02/youtube-tv-rsns-flap)":
 
 {{< imgc src="Eleventy-bracketed-footnotes_2520x844.png" alt="Paragraph ending in a footnote whose number is bracketed" width="2520" height="844" >}}
 
@@ -84,7 +84,7 @@ markdownLibrary.renderer.rules.footnote_caption = (tokens, idx) => {
 
 After a brief and successful test on a repo branch, I gleefully incorporated his fix[^semiColons] on each of my Eleventy repos (the [one for this site](https://github.com/brycewray/eleventy_solo) and my two Eleventy-based [starter](https://github.com/brycewray/eleventy_solo_starter) [repos](https://github.com/brycewray/eleventy_solo_starter_njk)); and, now, that earlier paragraph looks like this, **as it should**:
 
-[^semiColons]: Well, all but the semicolons at lines’ ends. I'm one of those who [choose to avoid them in their JS](https://flaviocopes.com/javascript-automatic-semicolon-insertion/). Sorry, [pro-semicolon partisans](https://medium.com/better-programming/you-might-need-those-semicolons-in-your-javascript-after-all-b28154f93ea8).
+[^semiColons]: Well, all but the semicolons at lines' ends. I'm one of those who [choose to avoid them in their JS](https://flaviocopes.com/javascript-automatic-semicolon-insertion/). Sorry, [pro-semicolon partisans](https://medium.com/better-programming/you-might-need-those-semicolons-in-your-javascript-after-all-b28154f93ea8).
 
 {{< imgc src="Eleventy-non-bracketed-footnotes_2510x840.png" alt="Paragraph ending in a footnote whose number is not bracketed" width="2510" height="840" >}}
 

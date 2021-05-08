@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Scrivener and The Cloud"
 subtitle: "Cutting through the fog (maybe)"
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
 #lastmod:
 discussionId: "2019-08-scrivener-and-cloud"
-featured_image: scriv-and-cloud-from-3331240_1280x720.jpg
+featured_image: "scriv-and-cloud-from-3331240_1280x720.jpg"
 featured_image_width: 1280
 featured_image_height: 720
 featured_image_alt: "Scrivener logo and cloud computing icon"
@@ -48,7 +50,7 @@ A few did register just such comments. However, what suddenly had me wanting to 
 
 Well, sir, your friend done you wrong, I'm here to tell ya. And it would seem that neither of you ever looks at the [Literature and Latte forums](https://www.literatureandlatte.com/forum/index.php), where this sore subject comes up far too often for the good of the nice L&amp;L people's collective blood pressure, I'd guess.
 
-## The skinny on Scriv ’n’ sync
+## The skinny on Scriv ’n' sync
 
 So, let me say the simple part first, and then I'll get into the whys and wherefores. Yes, this stuff is on the L&amp;L site and in plenty of places elsewhere but, as that one commenter's seemingly well-intentioned statements make clear, it's still not clearly understood.
 

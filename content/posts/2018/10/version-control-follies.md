@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "The version-control follies"
 subtitle: "Life’s too short for CLI"
 description: "Why you should go GUI with version control."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
 lastmod: 2020-10-25T12:40:00-05:00
 discussionId: "2018-10-version-control-follies"
-featured_image: javascript-programming-1873854_2605x1432.jpg
+featured_image: "javascript-programming-1873854_2605x1432.jpg"
 featured_image_width: 2605
 featured_image_height: 1432
 featured_image_alt: "Computer code on a monitor"
@@ -24,7 +26,7 @@ No, the problem is that "simple command" part. Just as [the cake is a lie](https
 
 Lest you young whippersnappers think I'm not up to handling a CLI, please note that I spent *years* using MS-DOS on IBM-compatible PCs before Windows finally gained enough traction that my employers of the time considered it worth their while to have. In case you've never encountered MS-DOS on what formerly was called a "DOS prompt" and now has the more dignified name of "command prompt," [here](https://www.lifewire.com/dos-commands-4070427) are the commands by which we used to go through our day.
 
-Okay, so I'm exaggerating a bit. My typical day in MS-DOS usually consisted of typing an app name (*e. g.*, `word`)—*if* it was in the system file [path](https://www.pcmag.com/encyclopedia/term/41838/dos-path), and you'd typically make sure it was—and hanging around in that app for a few hours. Remember, this was before `Alt`-`Tab` made it a simple matter to jump among different apps. If I needed to find and manipulate files apart from that app, I found myself doing sequences like:
+Okay, so I'm exaggerating a bit. My typical day in MS-DOS usually consisted of typing an app name (*e. g.*, `word`)---*if* it was in the system file [path](https://www.pcmag.com/encyclopedia/term/41838/dos-path), and you'd typically make sure it was---and hanging around in that app for a few hours. Remember, this was before `Alt`-`Tab` made it a simple matter to jump among different apps. If I needed to find and manipulate files apart from that app, I found myself doing sequences like:
 
 ```batch
 cd
@@ -37,13 +39,13 @@ cls
 copy manuald1.doc manuald2.doc
 ```
 
-The latter was to copy Draft 1 of an instruction manual file so I could work on Draft 2 while keeping Draft 1, just in case. But why such clunky file names? Remember: MS-DOS was limited to eight-character, non-case-sensitive, non-spaced names for files and directories. We got up to Windows 95 before the IBM-compatibles’ world shed that nasty little distinction, and up to Windows XP before the CLI sitting behind the Windows environment really recognized longer names rather than just *pretending* to do so in Windows while actually turning *My Windows Document.doc* into *MYWINDO~.DOC* and *My Windows Document As Well.doc* into *MYWIND2~.DOC*—and so on.
+The latter was to copy Draft 1 of an instruction manual file so I could work on Draft 2 while keeping Draft 1, just in case. But why such clunky file names? Remember: MS-DOS was limited to eight-character, non-case-sensitive, non-spaced names for files and directories. We got up to Windows 95 before the IBM-compatibles' world shed that nasty little distinction, and up to Windows XP before the CLI sitting behind the Windows environment really recognized longer names rather than just *pretending* to do so in Windows while actually turning *My Windows Document.doc* into *MYWINDO~.DOC* and *My Windows Document As Well.doc* into *MYWIND2~.DOC*---and so on.
 
 You kids missed so much. You lucky dogs.
 
 Anyway, gitting back to Git (see what I did there?), you command it via a CLI. As with those DOS commands I mentioned above, you must type Git commands exactly the right way with exactly the right sequences and only when you're in the exactly right directory. Please note that your chosen platform's CLI may not necessarily make your current directory easy to identify without a little messing around with things.
 
-Having served my time in hell with MS-DOS a quarter-century ago, I say: nope, life is too short; be a wimp like me and **go GUI**. Otherwise, you'll emulate me anyway—as in, the part in building this site's initial setup where I kept fat-fingering Git commands with certain extensions and finally muttered, "I *know* there's gotta be a GUI app for this."
+Having served my time in hell with MS-DOS a quarter-century ago, I say: nope, life is too short; be a wimp like me and **go GUI**. Otherwise, you'll emulate me anyway---as in, the part in building this site's initial setup where I kept fat-fingering Git commands with certain extensions and finally muttered, "I *know* there's gotta be a GUI app for this."
 
 ## "We're gonna need&nbsp;.&nbsp;.&nbsp;."
 

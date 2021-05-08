@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Why I’m staying with Hugo"
 subtitle: "An “interesting” learning experience"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2021-02-11T07:50:00-06:00
+lastmod: 2021-03-20T17:30:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_closer_3200x1800.jpg
 featured_image_width: 3200
@@ -36,7 +36,7 @@ oldComments: |
     </div>
 ---
 
-**Note**: To put it simply, [things](/posts/2019/09/why-left-hugo-eleventy) [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).
+**Note**: To put it simply, things have changed multiple times since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).
 {.yellowBox}
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear---and I've even said as much---that I tend to have a problem avoiding New Shiny Things where tech is concerned.
@@ -53,7 +53,7 @@ With that said, moving right along&nbsp;.&nbsp;.&nbsp;.
 
 ## A taste of&nbsp;.&nbsp;.&nbsp;. something
 
-My first true interaction with Gatsby came, in fact, only a few weeks after this site hit the web. While I was between Day Jobs, I came into contact with a fellow who, while he didn't have a full-time job to give, nonetheless consulted me for help with his new e-commerce site which, at the time, was WordPress-based and ’waaaaay too slow as a result. Because the site's purpose was to demonstrate his invention, a web app that can fetch and display an item almost instantaneously from within an immense "catalog," he obviously couldn't tolerate the site's being sluggish. It'd have been like trying to sell rides in a Lamborghini being towed by a [Pinto](https://en.wikipedia.org/wiki/Ford_Pinto).
+My first true interaction with Gatsby came, in fact, only a few weeks after this site hit the web. While I was between Day Jobs, I came into contact with a fellow who, while he didn't have a full-time job to give, nonetheless consulted me for help with his new e-commerce site which, at the time, was WordPress-based and 'waaaaay too slow as a result. Because the site's purpose was to demonstrate his invention, a web app that can fetch and display an item almost instantaneously from within an immense "catalog," he obviously couldn't tolerate the site's being sluggish. It'd have been like trying to sell rides in a Lamborghini being towed by a [Pinto](https://en.wikipedia.org/wiki/Ford_Pinto).
 
 With my then-recent research on SSGs, I suggested one of them might be his answer: tremendous speed, no WordPress performance hits or security risks, and plenty of New Shiny (well, okay, I didn't put it that way). Since I knew Hugo best from among the ones I'd studied, I recommended it. He liked what he read about it, but noticed its [docs](https://gohugo.io/documentation/) lacked any mention of being able to grab vast amounts of data from other sources quickly, which was utterly necessary for his purposes.
 
@@ -63,7 +63,7 @@ Boy, howdy, did I dodge a bullet when he declined.[^demur] Only now do I know ju
 
 [^demur]: He demurred after, as I recall, doing a web search and finding some reports about some limits on what the then-v.1.0 Gatsby could do in his particular kind of use case.
 
-You see, what I **didn't** do back then was follow up from those tutorials by setting up my own Gatsby site; all I saw at the time was the carefully charted path laid out in the tutorials. As you can well guess, they make it seem that, if you just follow the instructions, you'll have a Gatsby site up, running, and data-gulping faster than you can say, "F. Scott Fitzgerald.”[^Leo]
+You see, what I **didn't** do back then was follow up from those tutorials by setting up my own Gatsby site; all I saw at the time was the carefully charted path laid out in the tutorials. As you can well guess, they make it seem that, if you just follow the instructions, you'll have a Gatsby site up, running, and data-gulping faster than you can say, "F. Scott Fitzgerald."[^Leo]
 
 [^Leo]: Or "[Leonardo DiCaprio](https://www.imdb.com/title/tt1343092/?ref_=fn_al_tt_3)" or even "[Robert Redford](https://www.imdb.com/title/tt0071577/?ref_=fn_al_tt_4)," if you're so inclined.
 
@@ -73,7 +73,7 @@ You see, what I **didn't** do back then was follow up from those tutorials by se
 
 Fast forward to a month ago. In the Day Job, I was spending many hours on a particular project that was replete with JavaScript.
 
-You have to understand that, as an Old Web Guy<sup>&trade;</sup>, I earned my website dev chops in another era. Back then, [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) had [fallen into disrepute](https://crockford.com/javascript/javascript.html) except for [those things which utterly had to be done client-side](https://en.wikipedia.org/wiki/Ajax_%28programming%29), server-side languages (like [PHP](https://www.php.net)) were all that really mattered, and too many browsers simply didn't handle JavaScript correctly (or, as in the case of the company for which I worked back then, too many customers had it turned off by default) for me to count on its utility.
+You have to understand that, as an Old Web Guy<span style="vertical-align: top; line-height: -0.01; font-size: 60%;">&trade;</span>, I earned my website dev chops in another era. Back then, [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) had [fallen into disrepute](https://crockford.com/javascript/javascript.html) except for [those things which utterly had to be done client-side](https://en.wikipedia.org/wiki/Ajax_%28programming%29), server-side languages (like [PHP](https://www.php.net)) were all that really mattered, and too many browsers simply didn't handle JavaScript correctly (or, as in the case of the company for which I worked back then, too many customers had it turned off by default) for me to count on its utility.
 
 Yes, I knew [things had changed](https://medium.com/@alexbeletsky/renaissance-of-javascript-485118447cf9) for JavaScript since then, especially since [2015](https://ecma-international.org/ecma-262/6.0/) or so, but I just didn't care. Besides, I usually had other ways to do JS-like things, especially once I was tasked with maintaining CMS-based sites; so, until lately, I maintained that standoffishness toward JS.
 
@@ -83,7 +83,7 @@ As a result, I went into this JS-intensive project not knowing enough about the 
 
 With that increasing comfort with JS, I began thinking, and reading, about Gatsby once again. When the Day Job coding for that project became a little less intense (for a while) and I once again had some spare brain cells during nights and weekends, I got it in my head that, perhaps now, I should give Gatsby a shot---and not simply as a trial, but to replace this Hugo-based site you're viewing now.
 
-## Polishing up the ol’ résumé?
+## Polishing up the ol' résumé?
 
 After what by then was a nine-month stretch with Hugo on this site and relatively smooth operation thereof, why was I willing to switch the site from Hugo to Gatsby? It came down to these two interconnected things I'd decided:
 
@@ -128,7 +128,7 @@ But when Gatsby crashes while in [*gatsby develop*](https://www.gatsbyjs.org/doc
 
 Also, the Gatsby error messages sometimes were helpful, but other times obscure and pointing to problems in files deep within Gatsby's bowels that I knew I shouldn't even *think* about editing.
 
-Unfortunately, the error messages’ characteristic unhelpfulness---indeed, my [VS Code](https://code.visualstudio.com) app was quite often more instructive about functions, mistypings, missed characters, *etc.*---proved to be part of a pattern. That pattern's most unfortunate aspect was the Gatsby [documentation](https://www.gatsbyjs.org/docs/). Obviously and understandably written by developers who've already Been There and Done That and perhaps are too busy and tired to care whether you haven't, it wasn't exactly planned for someone who wanted to do what I was attempting---such as accessing images that aren't in the same directory as the Markdown file which tries to reference it.
+Unfortunately, the error messages' characteristic unhelpfulness---indeed, my [VS Code](https://code.visualstudio.com) app was quite often more instructive about functions, mistypings, missed characters, *etc.*---proved to be part of a pattern. That pattern's most unfortunate aspect was the Gatsby [documentation](https://www.gatsbyjs.org/docs/). Obviously and understandably written by developers who've already Been There and Done That and perhaps are too busy and tired to care whether you haven't, it wasn't exactly planned for someone who wanted to do what I was attempting---such as accessing images that aren't in the same directory as the Markdown file which tries to reference it.
 
 Huh? Okay, maybe I need to explain that first.
 
@@ -207,7 +207,7 @@ Then, down at the bottom, you get something that looks kind of like this:
 
 <p class="legal">3.&nbsp;&nbsp;So here we are at the bottom.<span class="footnote-sim">↑</span></p>
 
-For somebody like me who uses footnotes a lot and moves their origins’ paragraphs around frequently during the editing process, that's a gotta-have. For Gatsby, there are a couple of plugins that purport to provide it, but I found neither to do the job *reliably*. The most widely used one would work *sometimes*, but then something else would cause a crash and, after the reboot, suddenly that same Markdown would produce this in the rendered page:
+For somebody like me who uses footnotes a lot and moves their origins' paragraphs around frequently during the editing process, that's a gotta-have. For Gatsby, there are a couple of plugins that purport to provide it, but I found neither to do the job *reliably*. The most widely used one would work *sometimes*, but then something else would cause a crash and, after the reboot, suddenly that same Markdown would produce this in the rendered page:
 
 > This is how you do footnotes<sup class="footnote-sim">footnoteInfo</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
 
@@ -219,7 +219,7 @@ Again: nope, nope, nope. (And it became a **double** "nope, nope, nope" when the
 
 At one point in this process late last week, I looked at myself in the mirror and said aloud with amazement in my voice, "I haven't had to do *manual* numbering of footnotes since I was using a *typewriter* back in the eighties. And I ain't starting back on it now. This is supposed to be an *improvement*, not a regression."
 
-However, by this point, I was laboring under the predictable feeling of "Well, you've come this far, spent this much time, lost this many nights’ and weekends’ worth of free time and sleep, and built a whole new site. You can't quit on it now. Gatsby, or at least something like it, is the future. You have to go ahead and do this."
+However, by this point, I was laboring under the predictable feeling of "Well, you've come this far, spent this much time, lost this many nights' and weekends' worth of free time and sleep, and built a whole new site. You can't quit on it now. Gatsby, or at least something like it, is the future. You have to go ahead and do this."
 
 So, angst aside, I prepared to do so, hoping my fears wouldn't prove true.
 
@@ -271,7 +271,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-{{< twitscrn imageUrl="Twitter_1150104013871955971.png" alt="Tweet by @BryceWrayTX, 2019-07-13: Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest" width="1182" height="1234" twitterUrl="https://twitter.com/BryceWrayTX/status/1150104013871955971" >}}
+{% twitscrn "Twitter_1150104013871955971.png", "Tweet by @BryceWrayTX, 2019-07-13: Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest", 1182, 1234, "https://twitter.com/BryceWrayTX/status/1150104013871955971" %}
 
 ## "Interesting," indeed
 
@@ -285,7 +285,7 @@ Then they all need to think about the dicey interaction between all the dependen
 
 If their response is, "Yeah, but you just need to know [$frameworkOne] and [$frameworkTwo] and [$languageVariantOne] and [$languageVariantTwo], and have a [$languageVariantThree] guy on your payroll, and put all your files into this one Magic Directory, and hold your mouth right---and then it'll work ninety percent of the time": again I say, no, thank you.
 
-Although it's apparently a [myth](https://en.wikipedia.org/wiki/May_you_live_in_interesting_times), we've all heard that there was an old Chinese curse, "May you live in interesting times." You may be certain that what I just endured on this front was pretty blamed  "interesting." On the other hand, to invoke another old saying, "That which doesn't kill you makes you stronger.”[^tome]
+Although it's apparently a [myth](https://en.wikipedia.org/wiki/May_you_live_in_interesting_times), we've all heard that there was an old Chinese curse, "May you live in interesting times." You may be certain that what I just endured on this front was pretty blamed  "interesting." On the other hand, to invoke another old saying, "That which doesn't kill you makes you stronger."[^tome]
 
 [^tome]: Is that also true for people who read through windy things like this to the end? For your sake, I gratefully hope so.
 

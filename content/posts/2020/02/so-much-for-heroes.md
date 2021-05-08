@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "So much for heroes"
 subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-lastmod: 2021-03-12T10:31:00-06:00
+lastmod: 2021-04-30T09:10:00-05:00
 discussionId: "2020-02-so-much-for-heroes"
 featured_image: paint-splatter-2224800_3648x2736.jpg
 featured_image_width: 3648
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/evondue-4996403/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">evondue</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">Pixabay</a></span>
 ---
 
-**Update, 2021-03-12**: A few months later, I [reinstated the hero images](/posts/2020/05/thousand-words-indeed). Nearly a year after the original post, [I decided](/posts/2021/01/leaner-new-look) to drop them again. Then, today, I brought them back in a reduced form---basically, **featured** images *vs.* **hero** images---that is reminiscent of this site's earliest days. All that zigging and zagging notwithstanding, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.
+**Update**: A few months later, I [reinstated the hero images](/posts/2020/05/thousand-words-indeed). Nearly a year after the original post, [I decided](/posts/2021/01/leaner-new-look) to drop them again. Still, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.
 {.yellowBox}
 
 Who needs heroes? Not this site, I've decided.
@@ -69,7 +69,7 @@ One. At. A. Time.
 
 ---and, often, with different settings for each. (By the way, I had no way of knowing that even the largest image offered by the vendor hadn't already been processed somehow. After all, these were JPG or PNG files, not [raw](https://en.wikipedia.org/wiki/Raw_image_format) files.)
 
-It got worse. Often, I also had to convert the WebP version of a stock image at only *twenty or thirty percent quality* to achieve a smaller file size. To the credit of the WebP format, that ugly process *didn't* result in the horrible, [artifact](https://en.wikipedia.org/wiki/Compression_artifact)-laden mess you'd get if you reduced other formats’ files to so low a quality. Still, it was visibly not as clear as the JPG or PNG, especially when I compared the two on a high-resolution display.[^workLoRes]
+It got worse. Often, I also had to convert the WebP version of a stock image at only *twenty or thirty percent quality* to achieve a smaller file size. To the credit of the WebP format, that ugly process *didn't* result in the horrible, [artifact](https://en.wikipedia.org/wiki/Compression_artifact)-laden mess you'd get if you reduced other formats' files to so low a quality. Still, it was visibly not as clear as the JPG or PNG, especially when I compared the two on a high-resolution display.[^workLoRes]
 
 [^workLoRes]: A WebP converted at such low quality looked passable on the old low-resolution monitor at work, but on the double- or triple-quality displays commonly used by today's smartphones, much less my iMac's 5K display---not so much.
 

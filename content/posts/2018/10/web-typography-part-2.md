@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "A stacked deck"
 subtitle: "Part 2 of a two-part series on web typography"
 description: "Making the case for a system fonts approach to the typography on websites."
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2020-12-13T12:30:00-06:00
+lastmod: 2021-04-22T20:11:00-05:00
 discussionId: "2018-10-web-typography-part-2"
-featured_image: computer-1869236_3264x2448.jpg
+featured_image: "computer-1869236_3264x2448.jpg"
 featured_image_width: 3264
 featured_image_height: 2448
 featured_image_alt: "Backlit computer keyboard"
@@ -16,18 +16,18 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pexels</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pixabay</a></span>
 ---
 
-**Update, 2020-12-13**: Although the "system fonts stack" I mention in this post is still a good choice, I am (at least currently) using the [Inter](https://rsms.me/inter) web font.
+**Note**: Although the "system fonts stack" I mention in this post is still a good choice, at times I still use web fonts with this site.
 {.yellowBox}
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on websites should, y'know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I'll explain the typographical choices on _this_ site.
 
 ----
 
-***Note**: For those teeming masses who had already read this deathless prose before November 9, 2018, please be advised there's a major change at the bottom. For the rest of you, as a friend from my high school days used to say, "Go ahead on.”* 
+_**Note**: For those teeming masses who had already read this deathless prose before November 9, 2018, please be advised there's a major change at the bottom. For the rest of you, as a friend from my high school days used to say, "Go ahead on."_
 
 ----
 
-First, this nerdish note: until an update to this post nearly two years after I first wrote it, you'd have seen me referring in not only this post but also all other posts on this site to _typefaces_ rather than _fonts_---and then putting _fonts_ always in quotation marks. However, it became awkward-looking to keep  quotation marks around _fonts_ every time I used the word. Besides, if we were just sitting around having the kind of chat about on-screen typography that people do every day (normal people do that, right? Right?), I'd often slip and call them _fonts_, too. It's more commonly understood and, besides, we're all accustomed to how our apps’ menus call them _fonts_ rather than _typefaces_. That convention that dates back at least to 1984 and the original Mac. In my defense, though (even as I concede), to quote Wikipedia:
+First, this nerdish note: until an update to this post nearly two years after I first wrote it, you'd have seen me referring in not only this post but also all other posts on this site to _typefaces_ rather than _fonts_---and then putting _fonts_ always in quotation marks. However, it became awkward-looking to keep  quotation marks around _fonts_ every time I used the word. Besides, if we were just sitting around having the kind of chat about on-screen typography that people do every day (normal people do that, right? Right?), I'd often slip and call them _fonts_, too. It's more commonly understood and, besides, we're all accustomed to how our apps' menus call them _fonts_ rather than _typefaces_. That convention that dates back at least to 1984 and the original Mac. In my defense, though (even as I concede), to quote Wikipedia:
 
 > The term _typeface_ is frequently confused with the term _font_. Before the advent of digital typography and desktop publishing, the two terms had more clearly understood meanings.[^1]
 
@@ -37,7 +37,7 @@ Anyway, with that understood, let's get on with it.
 
 ## A simpler---and duller---time
 
-The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of "safe" system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can't read graphics as text; but it wasn't such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here's an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
+The early years of the web involved considerable limitations where web pages' body type was concerned. Any text needing more than a [small collection of "safe" system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can't read graphics as text; but it wasn't such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here's an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
 {{% imgc src="Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg" alt="Image from Apple website in 1999 showing graphic elements as text" width="1218" height="1296" %}}
 

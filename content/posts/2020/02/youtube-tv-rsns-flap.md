@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "YouTube TV and the RSNs flap"
 subtitle: "Is the pyramid near collapse?"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
 lastmod: 2020-11-25T09:00:00-06:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
-featured_image: globe-life-park-rangers-1402096_6000x4000.jpg
+featured_image: "globe-life-park-rangers-1402096_6000x4000.jpg"
 featured_image_width: 6000
 featured_image_height: 4000
 featured_image_alt: "Baseball game at Globe Life Park, Arlington, Texas"
@@ -28,7 +28,7 @@ Fast-forward to today, when:
 
 - The sports leagues (perhaps for that reason) [live or die on massive outlays of money from the television networks that carry their games](https://globalsportmatters.com/business/2019/03/07/tv-is-biggest-driver-in-global-sport-league-revenue/).
 
-- The vast majority of those games’ telecasts are controlled by dwindling numbers of providers which, exercising the muscle such a position gives them, are squeezing---or trying to squeeze---[ever-greater fees](https://www.latimes.com/business/hollywood/la-fi-ct-sports-channels-20161128-story.html) from the services that bring those telecasts to viewers.
+- The vast majority of those games' telecasts are controlled by dwindling numbers of providers which, exercising the muscle such a position gives them, are squeezing---or trying to squeeze---[ever-greater fees](https://www.latimes.com/business/hollywood/la-fi-ct-sports-channels-20161128-story.html) from the services that bring those telecasts to viewers.
 
 It's been [over 150 years](https://ohiohistorycentral.org/w/Cincinnati_Reds) since professional sports began to captivate the hearts of U. S. fans. Now, all of this may finally have become unsustainable, a possibility I've been pondering for a while. It may well be that the pyramid is, at long last, toppling.
 

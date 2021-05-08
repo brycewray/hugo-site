@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Forward PaaS"
 subtitle: "Trying Cloudflare Workers and KV storage"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
 lastmod: 2020-12-12T13:15:00-06:00
 discussionId: "2020-10-forward-paas"
-featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
+featured_image: "jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg"
 featured_image_width: 4032
 featured_image_height: 3024
 featured_image_alt: "Photo concept of high-bandwidth computer networking: Strands of glowing cables representing fiber-optical cables"
@@ -24,16 +24,16 @@ It will come as no surprise to my regular readers that I like New Shiny, especia
 
 [Cloudflare Workers](https://workers.cloudflare.com/) have been around [since 2017](https://blog.cloudflare.com/introducing-cloudflare-workers/). They allow developers to put code at the "edge" of Cloudflare's worldwide [reverse-proxy](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/) [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), letting users worldwide see faster results since it puts the content "closer" to those users.
 
-A year later, Cloudflare [introduced Workers KV](https://blog.cloudflare.com/introducing-workers-kv/) (the *KV* stands for *key-value*), a way of providing *storage*, mainly for databases as well as code, out on the "edge." Then, last year, as explained in a [blog post by Rita Kozlov](https://blog.cloudflare.com/workers-sites/), Cloudflare began pushing this setup as a way to put static websites online, [using the Workers KV "edge" storage to host such sites’ files](https://blog.cloudflare.com/extending-the-workers-platform/).
+A year later, Cloudflare [introduced Workers KV](https://blog.cloudflare.com/introducing-workers-kv/) (the *KV* stands for *key-value*), a way of providing *storage*, mainly for databases as well as code, out on the "edge." Then, last year, as explained in a [blog post by Rita Kozlov](https://blog.cloudflare.com/workers-sites/), Cloudflare began pushing this setup as a way to put static websites online, [using the Workers KV "edge" storage to host such sites' files](https://blog.cloudflare.com/extending-the-workers-platform/).
 
-A Cloudflare Worker is free; but, when I originally published this post, using KV to store your website files [cost at least $5/month for a Workers Bundled Plan](https://workers.cloudflare.com/#plans). (By "at least," I mean you have to stay within certain bandwidth limits. Your site probably wouldn't exceed them but, in case it ever gets a burst of viral popularity one day, you'd want to keep these limits in mind.) Then, in a [blog post](https://blog.cloudflare.com/workers-kv-free-tier/) issued on November 16, 2020, Cloudflare announced a new **free tier** for KV storage which, even better, increased the size limit on each KV storage value from 10&nbsp;MB to 25&nbsp;MB. This appeared to change the ballgame where hobbyists’ use of Workers sites is concerned.
+A Cloudflare Worker is free; but, when I originally published this post, using KV to store your website files [cost at least $5/month for a Workers Bundled Plan](https://workers.cloudflare.com/#plans). (By "at least," I mean you have to stay within certain bandwidth limits. Your site probably wouldn't exceed them but, in case it ever gets a burst of viral popularity one day, you'd want to keep these limits in mind.) Then, in a [blog post](https://blog.cloudflare.com/workers-kv-free-tier/) issued on November 16, 2020, Cloudflare announced a new **free tier** for KV storage which, even better, increased the size limit on each KV storage value from 10&nbsp;MB to 25&nbsp;MB. This appeared to change the ballgame where hobbyists' use of Workers sites is concerned.
 
 That said, I was initially concerned that the free tier might come up short compared to the Workers Bundled Plan because the former still lacked a key performance capability---specifically, lower first-hit latency---that's included with the latter. However, I've since tested the free tier, and the results suggest the difference is negligible for a static site like this one, so I now *think* that shouldn't be a problem. In addition: just for messing around with a Workers site so you can see how it all works before you go all-in, the free plan is a great new option.
 
 **Important**: Still, be sure that you test this fairly extensively with lots of changes before you commit your site to it, because this can result in more "requests" in a given amount of time than the free tier allows.
 {.yellowBox}
 
-With the three hosts I described in "[A normal person's guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting)," deploying content is as simple and quick as pushing a commit to your chosen online repository. With Cloudflare Workers, you have to use Cloudflare's `wrangler` command-line interface (CLI) tools (which I'd compare favorably to [Firebase](https://firebase.google.com)'s CLI tools). I'm currently mitigating this through a [GitHub Action](https://github.com/features/actions),  an approach similar to what I described in "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd)" and "[Ignition sequence start](/posts/2020/09/ignition-sequence-start)”; but none of this is for normal, non-nerdy folks.
+With the three hosts I described in "[A normal person's guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting)," deploying content is as simple and quick as pushing a commit to your chosen online repository. With Cloudflare Workers, you have to use Cloudflare's `wrangler` command-line interface (CLI) tools (which I'd compare favorably to [Firebase](https://firebase.google.com)'s CLI tools). I'm currently mitigating this through a [GitHub Action](https://github.com/features/actions),  an approach similar to what I described in "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd)" and "[Ignition sequence start](/posts/2020/09/ignition-sequence-start)"; but none of this is for normal, non-nerdy folks.
 
 (For those who care: the GitHub Action is at the end of this post. In fact, I provided two: one for the [Hugo](https://gohugo.io) static site generator (SSG), and one for the [Eleventy](https://11ty.dev) SSG.)
 

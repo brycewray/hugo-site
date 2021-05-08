@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 title: "Mixed nuts • November, 2020"
 subtitle: "Another set of odd-servations"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T10:10:00-06:00
-lastmod: 2020-12-12T19:20:00-06:00
+lastmod: 2020-12-12T13:20:00-06:00
 draft: false
 discussionId: "2020-11-mixed-nuts-2020-11"
-featured_image: usman-yousaf-qHETVV5u7Wk-unsplash_5184x3456.jpg
+featured_image: "usman-yousaf-qHETVV5u7Wk-unsplash_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Overhead view of mixed nuts in a decorative glass dish on an orange surface"
@@ -22,7 +22,7 @@ Given the course of recent events in our storm-tossed existence, both here in th
 
 Regardless of which country you inhabit or which party (if any) you follow, you can be sure of this about elections: the good guys always want all legally qualified citizens to vote *and* want all the votes to be counted, no matter how long it takes.
 
-*Trying to sell your house? Don't rely on those "we-buy-it-quick-so-you-can-get-out" companies, hereafter referred to as* ZeeCOs. *Folks I know contracted with a ZeeCO to buy their old house so they could get a new one. Just days before the dual closings, the ZeeCO suddenly backed out because the neighborhood's homeowners’ association (HOA) was being sued for reasons that had zero effect on the [saleability](https://dictionary.cambridge.org/us/dictionary/english/saleable) of these folks’ old house.[^1] Fortunately, they made other arrangements and still got the new house, but they'd learned never to trust ZeeCOs.*
+*Trying to sell your house? Don't rely on those "we-buy-it-quick-so-you-can-get-out" companies, hereafter referred to as* ZeeCOs. *Folks I know contracted with a ZeeCO to buy their old house so they could get a new one. Just days before the dual closings, the ZeeCO suddenly backed out because the neighborhood's homeowners' association (HOA) was being sued for reasons that had zero effect on the [saleability](https://dictionary.cambridge.org/us/dictionary/english/saleable) of these folks' old house.[^1] Fortunately, they made other arrangements and still got the new house, but they'd learned never to trust ZeeCOs.*
 
 O, for the return of *real* cable news channels, fashioned after the way they operated before the mid-1990s, back when they actually spent most of their 24-hour cycles *reporting* and (mostly) separated editorial comments into a blissfully few specific panel shows.
 

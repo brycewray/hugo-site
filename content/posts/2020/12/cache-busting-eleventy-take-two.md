@@ -1,20 +1,23 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 title: "Cache-busting in Eleventy, take two"
 subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
 date: 2020-12-11T16:55:00-06:00
-lastmod: 2021-01-12T07:35:00-06:00
+lastmod: 2021-03-20T17:30:00-05:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
-featured_image: broken-glass-549087_4000x3000.jpg
+featured_image: "broken-glass-549087_4000x3000.jpg"
 featured_image_width: 4000
 featured_image_height: 3000
 featured_image_alt: "Broken window pane with sunlight shining through hole in glass"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/humusak-137455/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=549087">jan mesaros</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=549087">Pixabay</a></span>
 ---
+
+**Note**: I later found a [much better solution](/posts/2021/03/tailwind-head-eleventy), but am leaving this here for the sake of [transparency](/posts/2019/10/otoh).
+{.yellowBox}
 
 *Before reading this article, please review "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy)" (despite how flawed its proposed solution turned out to be) for details on the importance of cache-busting your CSS and why Eleventy---at least, as of this writing---needs some external help with performing that function. In any event, I think you'll get a lot more out of **this** article if you've first read **that** one; and, so that I can omit some explainers and thus keep this already long article from being even longer, I will assume you've already done so.*
 
@@ -69,7 +72,7 @@ Over the next few days, I repeated my earlier process of researching the specifi
 - The aforementioned interim solution---which involves appending a query string to the `index.css` file name, resulting in a name like `index.css?v=1604094309`---isn't advisable because "URL parameters can get discarded anywhere in the file journey."
 - The ideal result (although even this article counseled for something easier) is that the final CSS file name is built from hashing of the *contents*.
 
-The latter is as opposed to a *timestamp*-based approach, in which the file name's extra segment comes from a [Unix timestamp](https://www.epochconverter.com) corresponding to the file's last-modified date and time. At first, when I was just playing around with things locally, I thought a timestamp actually *would* be the answer. Indeed, I figured that all I had to do was write some build-time code that would add up all the imported CSS files’ Unix timestamps and somehow affix that to the `index` part of the final CSS name. If none of the files changed, the combined timestamps wouldn't change; so, I wondered, why wouldn't that get the job done?
+The latter is as opposed to a *timestamp*-based approach, in which the file name's extra segment comes from a [Unix timestamp](https://www.epochconverter.com) corresponding to the file's last-modified date and time. At first, when I was just playing around with things locally, I thought a timestamp actually *would* be the answer. Indeed, I figured that all I had to do was write some build-time code that would add up all the imported CSS files' Unix timestamps and somehow affix that to the `index` part of the final CSS name. If none of the files changed, the combined timestamps wouldn't change; so, I wondered, why wouldn't that get the job done?
 
 Well, after I had just such code running, it took only a couple of online tests for me to see why.
 
@@ -87,7 +90,7 @@ So convinced, I went back to "Our Cache Busting Setup on Eleventy" for some more
 4. Use that PostCSS command to write the appropriately named CSS file to the `_site` folder which the host uses to build the site.
 5. Use the site's `head.js` partial template to tell each page on the site to refer to the CSS file by that special file name.
 
-As I've mentioned before, I have a private test repo that I use for evaluating various website hosts’ performance.[^hostsTest] To make sure I didn't go live on *this* repo with the fix before I knew that it really worked---*i.e.*, to make sure I didn't screw the pooch here *again*---I briefly repurposed it for running this setup.
+As I've mentioned before, I have a private test repo that I use for evaluating various website hosts' performance.[^hostsTest] To make sure I didn't go live on *this* repo with the fix before I knew that it really worked---*i.e.*, to make sure I didn't screw the pooch here *again*---I briefly repurposed it for running this setup.
 
 [^hostsTest]: As of the initial publication of this post, those hosting platforms are, in alphabetical order: [Cloudflare Workers Sites](https://workers.cloudflare.com/sites); [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/); [Firebase Hosting](https://firebase.google.com/products/hosting); [Netlify](https://netlify.com); [Render](https://render.com); and [Vercel](https://vercel.com).
 
@@ -127,5 +130,5 @@ I hope that this solution, and this description of how I got to it, will at leas
 
 Happy cache-busting---for real this time, I hope.
 
-**Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos’ code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts’ settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).
+**Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos' code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts' settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).
 {.yellowBox}

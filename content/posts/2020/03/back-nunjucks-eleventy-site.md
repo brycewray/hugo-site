@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Back to Nunjucks for my Eleventy site"
 subtitle: "Taking a course of lesser resistance"

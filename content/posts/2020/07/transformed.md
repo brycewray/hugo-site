@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Transformed"
 subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
-lastmod: 2021-03-12T10:30:00-06:00
+lastmod: 2021-04-30T09:00:00-05:00
 discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -43,7 +43,7 @@ When I first went with this method, the site wasn't using [hero images](https://
 
 Things changed quite a bit once [I brought back hero images](/posts/2020/05/thousand-words-indeed) a couple of weeks later. Now, the build times fattened dramatically, and grew longer with each new post and its hero image---and, of course, these increasingly long builds were happening also on *local* builds while I was doing dev stuff. I spent plenty of time waiting through such builds, twiddling my metaphorical thumbs while listening to my iMac's fans kick up in protest.
 
-**Update, 2021-03-12**: I've [since chosen once again](/posts/2021/01/leaner-cleaner) to eschew the hero images; then, today, I brought them back as **featured** images rather than **hero** images.
+**Update**: I've [since chosen once again](/posts/2021/01/leaner-cleaner) to eschew the hero images.
 {.yellowBox}
 
 As a result: not long after I brought back the hero images, I was beginning to edge within sight of the [Netlify](https://netlify.com) free tier's 300-minutes-a-month build limit. My response took two forms (and resulted in posts about each):

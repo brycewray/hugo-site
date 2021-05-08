@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Ignition sequence start"
 subtitle: "GitHub Actions to deploy to Firebase Hosting"
@@ -9,7 +9,7 @@ date: 2020-09-27T08:05:00-05:00
 lastmod: 2021-02-06T08:35:00-06:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
-featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
+featured_image: "spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg"
 featured_image_width: 3000
 featured_image_height: 2000
 featured_image_alt: "SpaceX rocket launching from the Kennedy Space Center in Florida"
@@ -33,6 +33,7 @@ The purpose of this post is to share with you the applicable GitHub Actions for 
 The GitHub Action for Hugo purposely does **not** use the widely used and excellent [GitHub Actions for Hugo](https://github.com/peaceiris/actions-hugo) by [Shohei Ueda (peaceiris)](https://github.com/peaceiris) to install Hugo during the build process, because---as was the case with [Andrew Connell](https://andrewconnell.com), whose example I followed and to whom I am grateful for the information he imparted in "[Automated Hugo Releases With GitHub Actions](https://www.andrewconnell.com/blog/automated-hugo-releases-with-github-actions/)"---I preferred having more control over that exact part.
 
 Enough talk; on with the GitHub Actions. Of course, each is based on two assumptions: (a.) you've initialized your repo for Firebase, thus creating the `.firebaserc` and `firebase.json` files mentioned at the end; and (b.) you've stored your Firebase token---called below by `${{ secrets.FIREBASE_TOKEN }}`---in your repo's **Secrets**. If you don't **have** a Firebase token, you get that with `firebase login:ci` from the CLI, as explained in the [documentation](https://firebase.google.com/docs/cli#cli-ci-systems). You'll note that I have `npm run build` in the *Build site with Hugo* step; but that's peculiar to my [Node.js](https://nodejs.org)-using Hugo repo (chiefly because of [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com)), so you may want to use a variation of that, instead, if you've kept *your* Hugo repo Node-free. The Hugo version shown is the latest as of this post's original publication; set it as you wish.[^versionInfo] When I use Hugo, I use the [extended version](https://gohugo.io/troubleshooting/faq/#i-get-tocss--this-feature-is-not-available-in-your-current-hugo-version) in case I decide to support [SCSS through Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) rather than Tailwind.[^diffThemes]
+
 
 [^versionInfo]: Just be sure the version conforms to how it shows up in the Hugo release filename, since this reference helps build that name for the download process in the GitHub Action; always check the [Hugo releases page](https://github.com/gohugoio/hugo/releases) to be sure about the accurate filename.
 

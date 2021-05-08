@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "A thousand words, indeed"
 subtitle: "Feelings about look-and-feel"
 description: "How and why “hero images” have returned to this site."
 author: Bryce Wray
 date: 2020-05-22T18:00:00-05:00
-lastmod: 2021-03-12T10:30:00-06:00
+lastmod: 2021-04-30T09:01:00-05:00
 discussionId: "2020-05-thousand-words-indeed"
 featured_image: colorful-flower-field-250016_4984x3607.jpg
 featured_image_width: 4984
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/DeltaWorks-37465/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Kohji Asakawa</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Pixabay</a>
 ---
 
-**Update, 2021-03-12**: Nearly a year after the [original post](/posts/2020/02/so-much-for-heroes) about removing the hero images, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. Then, today, I reinstated them as **featured** images rather than **hero** images. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh).
+**Update**: Nearly a year after the [original post](/posts/2020/02/so-much-for-heroes) about removing the hero images, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh).
 {.yellowBox}
 
 The phrase has been around [for about a century](https://grammarist.com/proverb/a-picture-is-worth-a-thousand-words/): "A picture is worth a thousand words."
@@ -33,7 +33,7 @@ Near that post's end, I said:
 
 So, yes, I did leave myself some "outs" there.
 
-While not a single visitor complained about the featured images’ departure, in time I did miss them. But I'm a big (old) boy, and I figured I'd get over it, especially since the site presumably would work better without them.
+While not a single visitor complained about the featured images' departure, in time I did miss them. But I'm a big (old) boy, and I figured I'd get over it, especially since the site presumably would work better without them.
 
 Recently, though, I decided that, especially in these [troubled times](/posts/2020/03/coherence-covid-19), I not only *wanted* but also flat-out *needed* to see big, (usually) pretty pictures atop my posts once again. By coincidence, I simultaneously [realized](/posts/2020/05/mixed-nuts-2020-05) that this site in even its sparest form was never going to [rank among *the* fastest](https://www.11ty.dev/leaderboard/perf/) in the stable of [Eleventy](https://11ty.dev)-using sites.
 
@@ -54,7 +54,6 @@ So here's what happened.
 - **Responsiveness**---After I [took the site off webpack](/posts/2020/05/going-solo-eleventy), I used an Eleventy plugin to create [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) and inject the appropriate [`<picture>` HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) into site pages. However, with the return of the hero images, a typical build to [Netlify](https://netlify.com) ballooned well past the four-minute mark. Since the Netlify free plan is for 300 build minutes per month, and my site typically has quite a few builds a month, I needed another answer. That turned out to be a combo of two previous efforts of my own: the [Sharp](https://github.com/lovell/sharp)-powered `imgxfm.js` build-time script for creating responsive images (including highly efficient [WebP](https://developers.google.com/speed/webp)-formatted images for compatible browsers), and the `lazy-picture.js` [shortcode](https://11ty.dev/docs/shortcodes) for simplifying placement of those images in my posts.
 
 - **[System fonts](/posts/2018/10/web-typography-part-2)**---The first fifteen months of this site's existence, I'd been content to stick with the so-called "[system font stack](/posts/2018/10/web-typography-part-2)" and reap the performance benefits thereof. Then, with the integration of [webpack](https://webpack.js.org) [last December](/posts/2019/12/packing-up), the site used web fonts for the first time. For the first couple of weeks after [dumping webpack](/posts/2020/05/going-solo-eleventy), I kept the web fonts, first by self-hosting them and then briefly delivering them straight from [Google Fonts](https://fonts.google.com). But my [re-embrace](/posts/2020/05/going-solo-eleventy) of [Tailwind CSS](https://tailwindcss.com)---which defaults to that same "system font stack"---presented a perfect opportunity to go back to it, so I did.<br />**Update, 2020-08-08**: I later opted to return to web fonts (albeit self-hosted once again, for reasons explained in [this post](/posts/2020/08/google-fonts-privacy)) realizing I still preferred a standard appearance for the site across all devices and OSs. This also freed me from worrying about the [occasional glitches that Chromium-based browsers exhibit](https://www.coywolf.news/webmaster/chrome-81-breaks-system-fonts-bold/) when handling macOS system fonts.
-
 
 ## Nothing more than feelings?
 

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "It’s about the food, not the decor"
 subtitle: "The delivery method matters far less than what’s being delivered"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00
 lastmod: 2019-11-09T10:00:00-06:00
 discussionId: "2019-10-its-about-food-not-decor"
-featured_image: mount-horeb-lunch-4162348_3000x2006.jpg
+featured_image: "mount-horeb-lunch-4162348_3000x2006.jpg"
 featured_image_width: 3000
 featured_image_height: 2006
 featured_image_alt: "Duotone photo of a diner with customers waiting to be served"
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/MikeGoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Mike Goad</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Pixabay</a></span>
 ---
 
-**Note**: You formerly may have been redirected here because I deleted multiple posts I'll be discussing herein---including *why* I deleted them. However, I [later decided](/posts/2019/10/otoh) that had been a bad idea, so they're back. If you'll read that post to which I just linked, you'll know why you shouldn't either worry about, or take much heart in (as the case may be), my comments below regarding *not* writing about my SSG stuff going forward---since that, too, was a bad idea, Flavio Copes's wisdom quoted below and [previously](/posts/2019/09/back-with-hugo) notwithstanding.
+**Note**: You formerly may have been redirected here because I deleted multiple posts I'll be discussing herein—including *why* I deleted them. However, I [later decided](/posts/2019/10/otoh) that had been a bad idea, so they're back. If you'll read that post to which I just linked, you’ll know why you shouldn't either worry about, or take much heart in (as the case may be), my comments below regarding *not* writing about my SSG stuff going forward---since that, too, was a bad idea, Flavio Copes's wisdom quoted below and [previously](/posts/2019/09/back-with-hugo) notwithstanding.
 {.yellowBox}
 
 Keeping this brief, for once&nbsp;.&nbsp;.&nbsp;.
@@ -37,7 +37,7 @@ No one cares about which make of truck brought the food to the restaurant; they 
 
 In the most recent such post, I had quoted "[The pros of using a boring stack](https://flaviocopes.com/boring-stack/)" by Flavio Copes, but apparently didn't grasp sufficiently the most telling point he made:
 
-> .&nbsp;.&nbsp;. if you want to create a blog and be serious at it, then use the most boring and bulletproof thing you can find. Definitely **don't work on your blog infrastructure if you want to do any serious blogging**.
+> .&nbsp;.&nbsp;. if you want to create a blog and be serious at it, then use the most boring and bulletproof thing you can find. Definitely **don’t work on your blog infrastructure if you want to do any serious blogging**.
 > 
 > **The tech must go out of the way**[;] you should only **focus on the content**.
 > 

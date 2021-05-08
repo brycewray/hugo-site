@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Some curmudgeonish thoughts"
 subtitle: "(with apologies to the late Andy Rooney)"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
 lastmod: 2020-09-23T07:10:00-05:00
 discussionId: "2018-11-some-curmudgeonish-thoughts"
-featured_image: smilies-2912641_6016x4000.jpg
+featured_image: "smilies-2912641_6016x4000.jpg"
 featured_image_width: 6016
 featured_image_height: 4000
 featured_image_alt: "Not-so-happy smiley-face ball"
@@ -24,15 +24,15 @@ Since I began this with a linked YouTube video, that brings me to the first topi
 
 ## The ubiquitous YouTube intro
 
-Is it part of the YouTube user agreement that the default greeting on every vlog it hosts is "Hey, guys, what's up”? Asking for a friend.
+Is it part of the YouTube user agreement that the default greeting on every vlog it hosts is "Hey, guys, what's up"? Asking for a friend.
 
 ## Nope, the word is _yeah_
 
-I'm unclear as to when people got [the notion that _ya_ or _yea_ is how you spell _yeah_](http://www.genpink.com/yeah-yay-yah-ya/). I could see _yeh_, maybe. But _yea_? Someone misusing that apparently never ran into someone quoting a "Yea, verily,” from the gospels. And the misuse of _ya_ eludes me altogether, unless somebody somewhere thinks it's the way a variety of languages spell [their word for _yes_](https://en.wiktionary.org/wiki/ja) and decided it would be cool to---ahhhh, no, don't think that works either.
+I'm unclear as to when people got [the notion that _ya_ or _yea_ is how you spell _yeah_](http://www.genpink.com/yeah-yay-yah-ya/). I could see _yeh_, maybe. But _yea_? Someone misusing that apparently never ran into someone quoting a "Yea, verily," from the gospels. And the misuse of _ya_ eludes me altogether, unless somebody somewhere thinks it's the way a variety of languages spell [their word for _yes_](https://en.wiktionary.org/wiki/ja) and decided it would be cool to---ahhhh, no, don't think that works either.
 
 ## Hating the platform doesn't require&nbsp;ALL-CAPS
 
-I make no bones about it: I am a dyed-in-the-wool Apple fan, and from ’way back in the eighties at that. (I would say, "Apple sheep,” but I think [this guy](https://www.youtube.com/channel/UCa962e5dqRMO1nUldwaaRMw) may have that term locked up.) Of course, many don't share my high regard for that company and its products, and they absolutely have a right to feel that way.
+I make no bones about it: I am a dyed-in-the-wool Apple fan, and from ’way back in the eighties at that. (I would say, "Apple sheep," but I think [this guy](https://www.youtube.com/channel/UCa962e5dqRMO1nUldwaaRMw) may have that term locked up.) Of course, many don't share my high regard for that company and its products, and they absolutely have a right to feel that way.
 
 However, I don't get the web commenters who, usually with antipathy, refer to the Macintosh as the _MAC_ (or just _MAC_ in referring to the platform). All caps? No. Not ever. It's _Mac_. It was never an acronym for something.
 
@@ -49,9 +49,9 @@ When one _loses_ something, he is misplacing it. When he _looses_ something, he 
 
 ## Yes, we do need the Oxford comma
 
-I include in my [Twitter profile](https://twitter.com/BryceWrayTX) and in a footnote on the [About Me page](https://brycewray.com/about/) some kind words about my whole-hearted advocacy for the [Oxford comma](https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/), sometimes also called the "serial comma.” As I imply on selfsame Twitter profile, the Associated Press [disagrees](https://twitter.com/apstylebook/status/907673471865507841?lang=en), letting it be a matter of judgment as to whether it's necessary to avoid confusion. (That doesn't mean I can't command AP style when that's required, because I can and do; it means only that I think the AP is wrong about this.) That school of thought says it would rather rewrite sentences and, perhaps, screw around with their intended rhythm than use the Oxford comma.
+I include in my [Twitter profile](https://twitter.com/BryceWrayTX) and in a footnote on the [About Me page](https://brycewray.com/about/) some kind words about my whole-hearted advocacy for the [Oxford comma](https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/), sometimes also called the "serial comma." As I imply on selfsame Twitter profile, the Associated Press [disagrees](https://twitter.com/apstylebook/status/907673471865507841?lang=en), letting it be a matter of judgment as to whether it's necessary to avoid confusion. (That doesn't mean I can't command AP style when that's required, because I can and do; it means only that I think the AP is wrong about this.) That school of thought says it would rather rewrite sentences and, perhaps, screw around with their intended rhythm than use the Oxford comma.
 
-However, I think it's easier not to have to make that call every frickin' time the subject comes up. Why leave a grammar-related decision to a general public [increasingly unconcerned with grammar](https://www.mathgenie.com/blog/spelling-grammar-social-media) when, instead, you can simply pat 'em on their heads, say, "Here, do it this way every time,” and be done with it?
+However, I think it's easier not to have to make that call every frickin' time the subject comes up. Why leave a grammar-related decision to a general public [increasingly unconcerned with grammar](https://www.mathgenie.com/blog/spelling-grammar-social-media) when, instead, you can simply pat 'em on their heads, say, "Here, do it this way every time," and be done with it?
 
 ## No, we don't need double spaces after periods _unless_&nbsp;.&nbsp;.&nbsp;.
 
@@ -63,4 +63,4 @@ If you're using monospaced typefaces for whatever reason, then, yes, double-spac
 
 <p>&nbsp;</p>
 
-And I'd better end it at this point---before I start saying, "Didja ever wonder&nbsp;.&nbsp;.&nbsp;.?” (Sorry, Mr.&nbsp;Rooney.)
+And I'd better end it at this point---before I start saying, "Didja ever wonder&nbsp;.&nbsp;.&nbsp;.?" (Sorry, Mr.&nbsp;Rooney.)

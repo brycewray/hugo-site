@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "Publish or perish"
 subtitle: "Going live with your Hugo site"
 description: "In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2019-04-11T19:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00
 discussionId: "2019-04-publish-or-perish"
-featured_image: office-blogging-monochrome-381228_5184x3456.jpg
+featured_image: "office-blogging-monochrome-381228_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Hand moving a computer mouse near a keyboard"
@@ -33,7 +35,7 @@ First, let me harken back to another [previous post](/posts/2018/10/version-cont
 
 (Please note that Sourcetree is available only for Windows and macOS, so you Linux users---assuming you aren't already familiar with your Linux distro's Terminal app and Git anyway, which frankly is not that likely, but one never knows---will need to use a [different GUI app](https://www.tecmint.com/best-gui-git-clients-git-repository-viewers-for-linux/) to accomplish this.)
 
-## Knowin’ where you're goin’
+## Knowin' where you're goin'
 
 In that aforementioned post about setting up Hugo, I left you hanging at **STEP 6**, which was:
 
@@ -103,7 +105,7 @@ At that point, click **Deploy site** and Netlify will take it from there. In a f
 2. In the **Custom domains** panel, the only thing you should see so far is the Netlify-assigned *wondrous-weasel-d38a82*-type thing.
 3. Click **Add custom domain**.
 4. Enter the domain you obtained in **Step 6e**, then click **Verify**. Netlify will *validate* the domain. Since you've already got it, it will appear as unavailable. (Netlify will, for a fee, get the domain for you at this step if you haven't already obtained it, but I suggest having done so already as described earlier; in my experience, it's best to keep your hosting vendor and your domain vendor separate). The domain you've entered should now appear grayed-out with a **Check [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) configuration** link. Click it for customized instructions as to what to do next. **I recommend using [Netlify's built-in DNS service](https://www.netlify.com/docs/dns/)** of the options you'll see. So, let's say you agree. Then&nbsp;.&nbsp;.&nbsp;.
-5. **Back in the browser window/tab with the domain provider's site**, use those Netlify instructions to have the domain's **DNS records** point to your "wondrous-weasel-\[whatever]" site. (How you do that will vary by domain provider; Namecheap, my recommended provider, makes it pretty easy as [explained here](https://www.namecheap.com/support/knowledgebase/article.aspx/9837/46/how-to-connect-a-domain-to-a-server-or-hosting#hostingwtrd).)  \
+5. **Back in the browser window/tab with the domain provider's site**, use those Netlify instructions to have the domain's **DNS records** point to your "wondrous-weasel-[whatever]" site. (How you do that will vary by domain provider; Namecheap, my recommended provider, makes it pretty easy as [explained here](https://www.namecheap.com/support/knowledgebase/article.aspx/9837/46/how-to-connect-a-domain-to-a-server-or-hosting#hostingwtrd).)  \
 Once you've made this change with the domain provider, it will start world-wide [**propagation**](https://www.namecheap.com/support/knowledgebase/article.aspx/9622/10/dns-propagation--explained). While some domain providers can make that happen within a few minutes, it may take a while---sometimes, a good while, even a day or two. But let's be optimistic and take the "within a few minutes" choice.
 6. **Back in the Netlify browser window/tab**, refresh it and see if the custom domain is still grayed-out. Once it no longer is---and, more to the point, when it shows **NETLIFY DNS** next to it---that should mean your site is up and running for real! So, if your custom domain is *mygreatwebsite.com*, see if you can visit your Hugo site at that location. (Truthfully, it'll work with either *www.mygreatwebsite.com* or *mygreatwebsite.com* if the DNS records have been set up as per those Netlify instructions I mentioned before.)
 
@@ -111,7 +113,7 @@ Once you've made this change with the domain provider, it will start world-wide 
 
 So, once all this is done, how do you update your site in the future when you change an existing post or write a new one? Simple, actually. Your Bitbucket remote repo is connected to the Netlify-based site, so all you have to do is commit any local changes to your local repo and push the commit to the remote repo. Within a few seconds after Netlify "sees" the push, it'll start updating your site with its own Hugo server setup---and, because Hugo's server is **so** fast, your site updates should be out there for the world to see in a minute or two, at the very most.
 
-<hr />
+----
 
 Once more, I apologize for the length of this, especially when combined with its [predecessor](/posts/2019/04/ec-static). I am sure you can find better how-to-SSG guides out there, and I encourage you to search for and find the one that works best with your learning methods[^visual] and knowledge level.
 

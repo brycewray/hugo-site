@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Google Fonts and privacy"
 subtitle: "It’s about more than trust"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-08-08T14:35:00-05:00
 lastmod: 2020-12-13T12:35:00-06:00
 discussionId: "2020-08-google-fonts-privacy"
-featured_image: morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg
+featured_image: "morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg"
 featured_image_width: 3000
 featured_image_height: 2000
 featured_image_alt: "A magnifying glass over the Google logo"
@@ -44,7 +44,7 @@ When I first learned of this in the August 6, 2020, edition of the "Go Make Thin
 
 When I contrasted this with what [Google says about Google Analytics](https://support.google.com/analytics/answer/6004245) .&nbsp;.&nbsp;.
 
-> Google Analytics mainly uses first-party cookies to report on visitor .&nbsp;.&nbsp;.&nbsp;interactions on Google Analytics customers’ websites. Users may disable cookies or delete any individual cookie.
+> Google Analytics mainly uses first-party cookies to report on visitor .&nbsp;.&nbsp;.&nbsp;interactions on Google Analytics customers' websites. Users may disable cookies or delete any individual cookie.
 
 .&nbsp;.&nbsp;. it seemed to me that Google was saying flatly it *did* track visitors with Google Analytics (duh), yet simultaneously
 saying---carefully, as giant corporations with armies of lawyers tend to do everything---that it *didn't* track visitors to websites using Google-served Google Fonts.
@@ -86,7 +86,7 @@ While I was in this process, I realized there were two other needed actions to a
 - Removed [YouTube](https://youtube.com) embeds from two pages in favor of simply linking to the videos themselves.
 - Changed all [Twitter](https://twitter.com) content from embedded tweets to text-only versions with links back to the original content.
 
-These were easy decisions, since there's little doubt about the fact that embedded YouTube videos and tweets "phone home " with visitors’ information.
+These were easy decisions, since there's little doubt about the fact that embedded YouTube videos and tweets "phone home " with visitors' information.
 
 To be safe, I also checked out the GDPR compliance of [Cloudinary](https://cloudinary.com), which the site [recently began using](/posts/2020/07/transformed), and satisfied myself that [it was sufficient](https://cloudinary.com/privacy) that I didn't need to revert to locally processed, locally hosted images. (Whew.)
 
@@ -102,7 +102,7 @@ That has now changed.
 
 It was somewhat tedious making all these fixes I've described herein, but it was a good kind of tedious.
 
-Even if you're not and never will be an EU citizen, your privacy deserves protection, too. I appreciate your visits, and want you to feel completely safe when you spend time here on, as I once described [my original website in the 1990s](https://web.archive.org/web/20000413205935/http://home1.gte.net/bwray/index.html), my "little spot on that lone prairie that is the great World Wide Web."
+Even if you're not and never will be an EU citizen, your privacy deserves protection, too. I appreciate your visits, and want you to feel completely safe when you spend time here on, as I once described [my original website in the 1990s](https://web.archive.org/web/20000413205935/http://home1.gte.net/bwray/index.html), my "little spot on that lone prairie that is the great World Wide Web. "
 
 **Totally unrelated additional note**: Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?
 {.yellowBox}

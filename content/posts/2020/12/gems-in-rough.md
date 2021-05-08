@@ -1,14 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 title: "Gems in the rough"
 subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
 date: 2020-12-21T12:10:00-06:00
-lastmod: 2020-12-22T12:50:00-06:00
+lastmod: 2020-12-22T13:50:00-06:00
 #draft: false
 discussionId: "2020-12-gems-in-rough"
-featured_image: gems-836763_5184x3456.jpg
+featured_image: "gems-836763_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Colorful gemstones"
@@ -57,7 +57,7 @@ However, these free-tier CDN offerings vary widely. Here's the main thing to con
 
 ## When you change hosts
 
-In case that discussion about the various vendors’ CDN capabilities has you thinking of doing as I have done several times in the last few months, which was to switch from one host to the other, first allow me to offer some valuable advice based on my experiences during that process. I have one warning, followed by one suggestion.
+In case that discussion about the various vendors' CDN capabilities has you thinking of doing as I have done several times in the last few months, which was to switch from one host to the other, first allow me to offer some valuable advice based on my experiences during that process. I have one warning, followed by one suggestion.
 
 ### Be careful about DNSSEC
 

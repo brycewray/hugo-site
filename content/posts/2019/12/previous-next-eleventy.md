@@ -1,4 +1,6 @@
 ---
+layout: singlepost
+tags: post
 title: "“Previous” and “next” in Eleventy"
 subtitle: "The answer to an authentic FAQ"
 description: "A brief description of code that easily enables this oft-requested feature."
@@ -6,7 +8,7 @@ author: Bryce Wray
 date: 2019-12-23T15:16:00-06:00
 lastmod: 2019-12-25T08:05:00-06:00
 discussionId: "2019-12-previous-next-eleventy"
-featured_image: sand-1522182_3216x2136.jpg
+featured_image: "sand-1522182_3216x2136.jpg"
 featured_image_width: 3216
 featured_image_height: 2136
 featured_image_alt: "View from above of directional arrow in sand"
@@ -35,7 +37,6 @@ You see, the most workable method I'd found so far from among the [starter proje
 		<a class="previous" href="{{ collections.post[idx-2].url }}">{{ collections.post[idx-2].data.title }}</a>
 	</p>
 {% endif %}
-
 ```
 
 Yes, it worked, but I wanted a "set-and-forget" method---something that would survive post deletions or any other possibility that might come up, not to mention a simple human failure to give the correct and unique `idx` assignment to a new post. And [so](https://github.com/11ty/eleventy/issues/211) [did](https://github.com/11ty/eleventy/issues/529) [others](https://github.com/11ty/eleventy/issues/819).

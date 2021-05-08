@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Some Sirius(XM) thoughts"
 subtitle: "Radio, and more, from on high"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-03-15T15:35:00-05:00
 lastmod: 2020-05-22T16:45:00-05:00
 discussionId: "2020-03-some-siriusxm-thoughts"
-featured_image: audio-radio-station-3153963_5184x3456.jpg
+featured_image: "audio-radio-station-3153963_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Stylistic view from behind microphone in radio control room"
@@ -20,7 +20,7 @@ Perhaps the title for this post should've been "[Old geezer](/posts/2019/09/now-
 
 Anyway&nbsp;.&nbsp;.&nbsp;.
 
-Recently, I traded in a vehicle without [SiriusXM](https://www.siriusxm.com) for one with it.[^Pkg] Mind you, I'd had plenty of exposure to this satellite radio service before, but only in my relatives’ cars and SUVs. At the ripe old age of eons, I now am experiencing it in a vehicle of my own for the first time.
+Recently, I traded in a vehicle without [SiriusXM](https://www.siriusxm.com) for one with it.[^Pkg] Mind you, I'd had plenty of exposure to this satellite radio service before, but only in my relatives' cars and SUVs. At the ripe old age of eons, I now am experiencing it in a vehicle of my own for the first time.
 
 [^Pkg]: I did this not *for* SiriusXM, of course; it simply was part of the package.
 
@@ -74,7 +74,7 @@ Problem is, SiriusXM employs a "customer retention" operation that puts cable co
 
 I *hate* negotiating prices, whether with car dealers or with "retention specialists." If I could erase the world and remake it to suit me, *everything would have a fixed price*. There would be *true* "no-haggle" pricing. Unfortunately, that's not how one buys a vehicle, and it's also not how one deals with SiriusXM.
 
-At this writing, the top-of-the-line XM All Access package,  which is the only one I would consider having, has a list price---or let's call it a *sticker price*, to keep the car-buying analogy sufficiently sound---of twenty-two bucks a month. However, you know what they say about buying vehicles: "Never pay the sticker price." Numerous commenters on the web tell you that, when it's time either to start a subscription or renew one, you should negotiate that number ’way, ’way down. The consensus seems to be that you ought to be able to get the "retention specialist" to give you twelve months’ worth of XM All Access for just a hundred bucks, which is less than half of what it's supposed to cost.[^XMS]
+At this writing, the top-of-the-line XM All Access package,  which is the only one I would consider having, has a list price---or let's call it a *sticker price*, to keep the car-buying analogy sufficiently sound---of twenty-two bucks a month. However, you know what they say about buying vehicles: "Never pay the sticker price." Numerous commenters on the web tell you that, when it's time either to start a subscription or renew one, you should negotiate that number ’way, ’way down. The consensus seems to be that you ought to be able to get the "retention specialist" to give you twelve months' worth of XM All Access for just a hundred bucks, which is less than half of what it's supposed to cost.[^XMS]
 
 [^XMS]: For the more popular XM Select, which has fewer channels but the vast majority of those that the [Reddit](https://reddit.com) crowd seems to want, the sticker price is seventeen bucks a month *but* you'll see lots of people bragging they got it down to six months for just thirty bucks, or thereabout.
 

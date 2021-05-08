@@ -1,13 +1,13 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 title: "Lessons learned"
 tags: post
 subtitle: "What I found while trying other SSGs"
 description: "During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things."
-date: 2019-07-21T17:43:00-05:00
+date: 2019-07-21T18:43:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-lessons-learned"
-featured_image: binoculars-4143165_4000x2248.jpg
+featured_image: "binoculars-4143165_4000x2248.jpg"
 featured_image_width: 4000
 featured_image_height: 2248
 featured_image_alt: "A binocular telescope on a stand near a body of water"
@@ -45,7 +45,7 @@ oldComments: |
     </div>
 ---
 
-**Note**: See also [this post](/posts/2019/10/otoh) for why this post went away and, more to the point, why it's back.
+**Note**: See also [this post](/posts/2019/10/otoh) for why this post went away and, more to the point, why it’s back.
 {.yellowBox}
 
 Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics]---and quite a few retweets and friendly tweets from Hugo aficionados.
@@ -105,7 +105,7 @@ Many other SSGs make this sort of thing considerably more problematic, especiall
 
 Even the documentation for an SSG like [Eleventy](https://11ty.dev) that claims to be much easier and more more logically configured than other JavaScript-based SSGs---and, in many ways, it is---makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/Sass, rather than [inlining](https://www.11ty.dev/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
 
-I'll have more to say later about the shortcomings of SSGs’ documentation. Even Hugo's.
+I'll have more to say later about the shortcomings of SSGs' documentation. Even Hugo's.
 
 Because, so far, I've been able to land punches with glee on The Other Guys; but, unfortunately, the latter two main points leave their marks on Hugo, too.
 
@@ -123,9 +123,9 @@ Which brings me, finally, to&nbsp;.&nbsp;.&nbsp;.
 
 ## Docs are a nearly universal problem
 
-Yes, we have to talk about SSGs’ documentation. It pretty much all sucks *for non-devs*---Hugo's, too, although I would say Hugo's sucks *less*, probably because it's been around several more years than many of the other SSGs that hold more prominence these days, and thus there's been more time for people to write and tweak the docs.
+Yes, we have to talk about SSGs' documentation. It pretty much all sucks *for non-devs*---Hugo's, too, although I would say Hugo's sucks *less*, probably because it's been around several more years than many of the other SSGs that hold more prominence these days, and thus there's been more time for people to write and tweak the docs.
 
-In one of my past Work Lives, I wrote user manuals for fax machines. (Obviously, this was a *long* time ago.) Our team prided ourselves on "writing for Grandma," as we put it then, because our products were bought by people of all ages and experience levels.[^ageism] Thus, I am acutely aware how far short SSGs’ docs fall when it comes to being understandable by people outside the narrow circle of their own community, and sometimes even some *within* it.
+In one of my past Work Lives, I wrote user manuals for fax machines. (Obviously, this was a *long* time ago.) Our team prided ourselves on "writing for Grandma," as we put it then, because our products were bought by people of all ages and experience levels.[^ageism] Thus, I am acutely aware how far short SSGs' docs fall when it comes to being understandable by people outside the narrow circle of their own community, and sometimes even some *within* it.
 
 [^ageism]: Lest I let that "Grandma" reference go unaddressed, please note that now I'm in my mid-sixties and doing my best to keep up with the technical acumen of my colleagues who are half my age or younger. I also encourage others in my age bracket to keep learning, too, even if they're no longer required to do so by a Day Job. The world is changing too fast to make any other approach a wise one, as I try to impress on my peers who persist in thinking (*e.g.*) that they'll always be able to pay for stuff with checks, or use paper coupons, or do other once-commonplace things that are going away Real Soon Now.
 

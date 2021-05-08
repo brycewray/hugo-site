@@ -1,12 +1,14 @@
 ---
+layout: singlepost
+tags: post
 title: "Mixed nuts • September, 2020"
 subtitle: "Oddities, observations, offal"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00
-#lastmod
+#lastmod:
 discussionId: "2020-09-mixed-nuts-2020-09"
-featured_image: mixed-nuts-peter-feghali-fZ7-IAReeSo-unsplash_4891x3261.jpg
+featured_image: "mixed-nuts-peter-feghali-fZ7-IAReeSo-unsplash_4891x3261.jpg"
 featured_image_width: 4891
 featured_image_height: 3261
 featured_image_alt: "Various mixed nuts"

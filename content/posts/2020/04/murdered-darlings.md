@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: singlepost
 tags: post
 title: "Murdered darlings"
 subtitle: "R.I.P., WIP"
@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
 lastmod: 2020-06-20T09:45:00-05:00
 discussionId: "2020-04-murdered-darlings"
-featured_image: candles-memorial-2905395_5472x3648.jpg
+featured_image: "candles-memorial-2905395_5472x3648.jpg"
 featured_image_width: 5472
 featured_image_height: 3648
 featured_image_alt: "Candles lit in memoriam of the dead"
@@ -31,7 +31,7 @@ Second, it's often believed that this phrase refers to the need for a fiction wr
 
 Here is the *real* intent of Quiller-Couch's statement, as [Lisa L. Spangenberg](https://www.lisaspangenberg.com/) [explains](https://www.lisaspangenberg.com/writing/murder-your-darlings/):
 
-> Style should serve the purpose of the text, not the writer's ego. .&nbsp;.&nbsp;.&nbsp;if the text doesn't serve to drive your story forward (or support your argument), if its purpose is purely ornament, then kill it.
+> Style should serve the purpose of the text, not the writer’s ego. .&nbsp;.&nbsp;.&nbsp;if the text doesn't serve to drive your story forward (or support your argument), if its purpose is purely ornament, then kill it.
 
 So: kill your being-fancy-for-the-sake-of-trying-to-impress-somebody text and *tell the story*. That's the true meaning of the phrase. I just wanted to get all that in here, first, for the sake of correctness.
 
@@ -39,7 +39,7 @@ So: kill your being-fancy-for-the-sake-of-trying-to-impress-somebody text and *t
 
 All of them.
 
-If you ever get any use, or even simple reading pleasure, from reading anything on this site, I therefore ask you to observe a moment of silence in those darlings’ honor.
+If you ever get any use, or even simple reading pleasure, from reading anything on this site, I therefore ask you to observe a moment of silence in those darlings' honor.
 
 This site wouldn't be here had it not been for them.
 
