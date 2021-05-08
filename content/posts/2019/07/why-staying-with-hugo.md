@@ -271,7 +271,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-{% twitscrn "Twitter_1150104013871955971.png", "Tweet by @BryceWrayTX, 2019-07-13: Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest", 1182, 1234, "https://twitter.com/BryceWrayTX/status/1150104013871955971" %}
+{{< twitscrn imageUrl="Twitter_1150104013871955971.png" alt="Tweet by @BryceWrayTX, 2019-07-13: Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest" width="1182" height="1234" twitterUrl="https://twitter.com/BryceWrayTX/status/1150104013871955971" >}}
 
 ## "Interesting," indeed
 
