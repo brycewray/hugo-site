@@ -181,7 +181,6 @@ multi-line comments, disable entire blocks
 of code, etc.)
 */
 ```
-{% endraw %}
 
 ### Stuff that CSS may never do
 
