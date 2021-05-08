@@ -1,0 +1,10 @@
+{{- /*
+
+  This shortcode takes the following form: 
+  caption content
+
+*/ -}}
+
+{{- $content := .Get "content" -}}
+
+<figcaption>{{- $content | markdownify -}}</figcaption>
