@@ -5,7 +5,7 @@ html, body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
+  // font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
   @media (prefers-color-scheme: dark) {
     background: $background-dark-mode;
     color: $default-color-dark-mode;
@@ -156,7 +156,7 @@ footer {
     margin: 0 auto;
     width: 80%;
   }
-  @media (min-width: $BkPt-lg) {
+  @media (min-width: $bkpt_lg) {
     margin: 2rem auto 0 auto;
     // padding-bottom: 1rem;
     div.footerWrapper {
@@ -182,7 +182,7 @@ footer {
     padding: 2rem 0;
     margin: 0 auto;
     width: 90%;
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_lg) {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -194,10 +194,10 @@ footer {
     }
     h1 {
       font-size: 1.25rem;
-      @media screen and (min-width: $BkPt-lg) {
+      @media screen and (min-width: $bkpt_lg) {
         font-size: 1.5rem;
       }
-      @media screen and (min-width: $BkPt-2xl) {
+      @media screen and (min-width: $bkpt_2xl) {
         font-size: 1.75rem;
       }
     }
@@ -237,10 +237,10 @@ footer {
     margin: 2rem auto 0 auto;
     padding: 1rem 0;
     width: 75%;
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_lg) {
       width: 40%;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_2xl) {
       width: 33%;
     }    
     @media (prefers-color-scheme: dark) {
@@ -288,10 +288,10 @@ article {
     font-size: 1em; // definitely em, not rem
     line-height: 1.6em; // definitely em, not rem
     margin-top: 1em; // definitely em, not rem
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_lg) {
       font-size: 1.125em;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_2xl) {
       font-size: 1.25em;
     }
   }

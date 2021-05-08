@@ -1,3 +1,5 @@
+@use 'variables' as var;
+
 // === for billboard.html partial
 .billboard {
   &-div {
@@ -7,11 +9,11 @@
     height: auto;
     padding-right: 2rem;
     padding-left: 2rem;
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_lg) {
       padding-right: 4rem;
       padding-left: 4rem;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_2xl) {
       padding-right: 8rem;
       padding-left: 8rem;
     }
@@ -28,14 +30,13 @@
   &-title-text, &-subtitle-text, &-description-text {
     margin: 0 auto;
     text-align: center;
-    line-height: 1.25em;
     padding-right: 2%;
     padding-left: 2%;
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_lg) {
       padding-right: 3%;
       padding-left: 3%;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_2xl) {
       padding-right: 4%;
       padding-left: 4%;
     }
@@ -44,12 +45,17 @@
     font-size: 2.5rem;
     padding-top: 0.5em; // definitely em, not rem
     padding-bottom: 0;
+    line-height: 1em;
     letter-spacing: -0.035em;
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_md) {
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
+    @media screen and (min-width: $bkpt_lg) {
       padding-top: 3rem;
       font-size: 3.75rem;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_2xl) {
       padding-top: 4rem;
       font-size: 5rem;
     }
@@ -59,11 +65,14 @@
     padding-top: 0.75em; // definitely em, not rem
     padding-bottom: 0.5em; // definitely em, not rem
     letter-spacing: -0.04em;
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_md) {
+      font-size: 1.75rem;
+    }
+    @media screen and (min-width: $bkpt_lg) {
       padding-top: 1em; // definitely em, not rem
       font-size: 2.25rem;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_2xl) {
       font-size: 3rem;
       padding-top: 0.75em; // definitely em, not rem
     }
@@ -72,26 +81,35 @@
     padding-top: 0.25em; // definitely em, not rem
     letter-spacing: -0.01em;
     font-size: 1.125rem;
-    @media screen and (min-width: $BkPt-lg) {
+    line-height: 1.4;
+    @media screen and (min-width: $bkpt_md) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: $bkpt_lg) {
       font-size: 1.625rem;
-      padding-top: 1.25em;
+      padding-top: 0.25em;
       letter-spacing: -0.015em;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_2xl) {
       font-size: 2rem;
-      padding-top: 2em;
+      padding-top: 0.5em;
       letter-spacing: -0.025em;
+      line-height: 1.25em;
     }
   }
   &-p-text {
     text-align: center;
     font-size: 1.125rem;
-    @media screen and (min-width: $BkPt-lg) {
+    @media screen and (min-width: $bkpt_md) {
       font-size: 1.25rem;
     }
-    @media screen and (min-width: $BkPt-2xl) {
+    @media screen and (min-width: $bkpt_lg) {
       font-size: 1.375rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      font-size: 1.5rem;
     }
   }
 }
+
 // === end, for billboard.html partial

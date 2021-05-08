@@ -7,11 +7,13 @@
 @import 'chroma_fix-all';
 @import 'global';
 @import 'utility';
+@import 'tables';
 @import 'billboard';
 @import 'posts';
 @import 'footnotes';
 @import 'home';
-@import 'tables';
 @import 'nav';
 @import 'lazyload';
 @import 'intervf'; // for Inter VF's weird obliquing stuff
+// @import 'ffoxobliq'; // if using system font stack
+// @import 'iefixes';
