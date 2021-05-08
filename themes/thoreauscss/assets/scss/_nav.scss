@@ -1,251 +1,142 @@
-// CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/WRwJQX
-
-$navBreakpoint: $bkpt_lg;
-
+/*
 header {
-  // font-family: $sans-serif;
-  height: 30px;
-  width: 100%;
+  font-family: $sans-serif;
+}
+*/
+
+nav {
+  display: flex;
+  align-items: center;
   background-color: $black;
-  @media screen and (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme:dark) {
     background-color: $darkblue;
+  }
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  @media screen and (min-width: $bkpt_lg) {
+    width: 100%;
   }
   position: fixed;
-  padding: 0.5em 0; // definitely em, not rem
-  margin-top: 0;
-  z-index: 9999;
+  top: 0;
+  z-index: 10;
 }
 
-.nav {
-  &__bar {
-    background-color: $black;
-    @media screen and (prefers-color-scheme: dark) {
-      background-color: $darkblue;
-    }
-    padding-top: $nav-height;
-    @media (min-width: $navBreakpoint) {
-      max-height: none;
-      text-align: center;
-    }
-  }
-  &__item {
-    padding: 0;
-    margin: 0;
-    background-color: $black;
-    @media screen and (prefers-color-scheme: dark) {
-      background-color: $darkblue;
-    }
-    @media (min-width: $navBreakpoint) {
-      display: inline-block;
-      text-transform: lowercase;
-      font-variant: small-caps;
-      font-weight: bold;
-      letter-spacing: 0.15rem;
-    }
-    a {
-      display: block;
-      padding: 0.5em 1.5em; // definitely em, not rem
-      margin: 0;
-      color: #fff;
-      background-color: $black;
-      @media screen and (prefers-color-scheme: dark) {
-        background-color: $darkblue;
-      }
-      text-decoration: none;
-      transition: opacity 0.5s ease;
-      &:link, &:visited {
-        color: #fff;
-      }
-      &:hover, &:focus {
-        text-decoration: none;
-        opacity: 0.7;
-     }
-      @media (min-width: $navBreakpoint) {
-        font-size: 1.1rem;
-        display: inline-block;
-        padding: 0 1em;
-        border: none;
-      }
-    }
-  }
-  &__icon {
-    display: block;
-    position: absolute;
-    top: ($nav-height - 20px)/2;
-    right: 13px;
-    height: 27px;
-    width: 27px;
-    cursor: pointer;
-    text-indent: -9999px; // hide the label
-    transition: all 1s cubic-bezier(.19, 1, .22, 1);
-    //Remove blinking cursor
-    border: none;
-    color: transparent;
-    text-shadow: 0 0 0 gray;
-    text-align: center;
-    &:focus {
-      outline: none;
-    }
-    @media (min-width: $navBreakpoint) {
-      display: none;
-    }
-   } 
-   &__icon-line {
-     position: absolute;
-     display: block;
-     background: #fff;
-     width: 27px;
-     height: 0.2rem;
-     border-radius: 0.2rem;
-     left: 0;
-     text-indent: 0;
-     transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
-     &:first-child {
-       top: 0;
-     }
-     &:nth-child(2) {
-       top: 8px;
-    }
-     &:nth-child(3) {
-       top: 16px;
-    }
-  }
+.nav-LogoContainer {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: $white;
+  padding-left: 0.5rem;
+  margin-right: 1.5rem;
 }
- 
- // Checkbox hack for toggling mobile menu
- input[type=checkbox] {
-   display: none;
-   visibility: hidden; 
-   &:checked { 
-     ~ nav .nav__items {
-       height: auto;
-       max-height: 30rem;
-       transition: all 2s cubic-bezier(.5, 1, .22, 1);
-     } 
-     ~ label .nav__icon-line:first-child {
-       top: 0px;
-       width: 27px;
-       transform: translateX(-8px) rotate(-45deg) translateY(12px);
-     } 
-     ~ label .nav__icon-line:nth-child(2) {
-       opacity: 0;
-     } 
-     ~ label .nav__icon-line:nth-child(3) {
-       top: 14px;
-       width: 27px;
-       transform: translateX(-5px) rotate(45deg) translateY(-8px);
-     }
-   }
-}
- 
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  /*
-  background-color: $black;
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: $darkblue;
-  }
-  */
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  ul {
-    padding-left: 0;
-    margin: 0;
-    text-align: right;
-    list-style: none;
-  }
-  li {
-    margin-bottom: 0.5em; // definitely em, not rem
-    margin-right: 5%;
-    display: inline; // putting here for really old non-query-savvy browsers
-    @media screen and (max-width: 899px) {
-      display: inherit;
-    } // undoing the inline-for-really-old-browsers stuff
-  }
-  a {
-    color: #fff;
-    font-size: $stdsize;
-    text-decoration: none;
-    border-bottom: 0;
-    opacity: 0;
-  }
-  a:hover, a:active {
+
+a.nav-LogoLink { // yes, this specificity is required
+  color: $white;
+  font-size: $sortabig; // only if text instead of logo
+  text-decoration: none;
+  border: 0;
+  &:hover {
     color: $grey-2;
-    border-bottom: 0;
+  }
+  @media screen and (min-width: $bkpt_lg) {
+    font-size: $stdsize; // only if text instead of logo
   }
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1, 1);
-  a {
-    opacity: 1;
-  }
-}
-
-.site-logo {
-  color: #fff;
-  a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 0;
-  }
-  a:active, a:hover {
+.nav-HamburgerButton {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 0 1.5rem;
+  margin-right: 2em;
+  color: $white;
+  &:hover {
     color: $grey-2;
-    border-bottom: 0;
   }
-  font-size: $minimalbig;
-  font-weight: 700;
-  margin-top: 0;
-  margin-left: 5%;
-}
-
-
-// === Beginning of primary settings for larger screens ===
-@media screen and (min-width: 900px) {
-  .nav-toggle-label {
+  &:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color: $white;
+  }
+  @media screen and (min-width: $bkpt_lg) {
     display: none;
   }
-  .nav__item {
-    font-size: 1.1rem;
-  }
-  header {
-    display: table;
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
-    position: fixed;
-  }
-  .site-logo {
-    z-index: 999999;
-    display: grid-item;
-    grid-column: 1 / 2;
-    text-align: left;
-    padding-left: 10%;
-    font-size: $minimalbig;
-  }
-  nav {
-    top: 0.8rem;
-    transform: none;
-    margin-top: 0;
-    margin-left: 0%;
-    display: table;
-    // grid-column: 4 / 5;
-    a {
-      font-size: $slightlybig;
-      opacity: 1;
-      position: relative;
-    }
-    ul {
-      padding-right: 3.5%;
-      text-align: right;
-      li {
-        line-height: 1;
-      }
-    }
+}
+
+.nav-HamburgerButtonAlpine {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.nav-HamburgerLogo {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.nav-Menu {
+  width: 100%;
+  flex-grow: 1;
+  display: none;
+  @media screen and (min-width: $bkpt_lg) {
+    display: flex;
+    align-items: center;
+    width: auto;
   }
 }
-// === End of primary settings for larger screens ===
+
+.nav-MenuAlpine {
+  display: block;
+}
+
+.nav-MenuAlpineHidden {
+  display: none;
+  @media screen and (min-width: $bkpt_lg) {
+    display: block;
+  }
+}
+
+.nav-MenuUL {
+  padding-top: 0;
+  padding-right: 3rem;
+  list-style-type: none;
+  align-items: center;
+  text-align: right;
+  @media screen and (min-width: $bkpt_lg) {
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 0%;
+    margin: 0;
+  }
+}
+
+.nav-MenuLI {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  padding-top: 0;
+  @media screen and (min-width: $bkpt_lg) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0;
+    padding-right: 2rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+}
+
+.nav-MenuLILink {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: $white;
+  border-width: 0;
+  &:hover {
+    border-width: 0;
+    color: $grey-2;
+    text-decoration: none;
+  }
+}
