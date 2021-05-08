@@ -41,26 +41,3 @@ markup:
     highlight:
       guessSyntax: true
       noClasses: false
-
-menu:
-  main:
-  - identifier: "about"
-    name: "About"
-    title: "The obligatory “About me” page"
-    url: "/about/"
-    weight: 100
-  - identifier: "posts"
-    name: "Posts"
-    title: "This site’s posts"
-    url: "/posts/"
-    weight: 110
-  - identifier: "privacy"
-    name: "Privacy"
-    title: "This site’s privacy policy"
-    url: "/privacy/"
-    weight: 120
-  - identifier: "contact"
-    name: "Contact"
-    title: "How to contact me"
-    url: "/contact"
-    weight: 130
