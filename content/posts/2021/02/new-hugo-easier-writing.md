@@ -70,8 +70,7 @@ When I came back to Hugo, I figured I'd lost this convenience because Hugo's bui
 
 {{< imgc src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width="1008" height="712" >}}
 
-Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
-{.imgcCaption}
+{{< caption content="Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough “firsts” for you there?" >}}
 
 ## Hugo 0.81.0 as a labor-saving device
 

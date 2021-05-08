@@ -33,15 +33,12 @@ As I close this little update about this new little one, please allow "Pawpaw”
 
 {{< imgc src="Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg" alt="Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival" width="1008" height="756" >}}
 
-Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after she arrived.
-{.imgcCaption}
+{{< caption content="Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after&nbsp;she&nbsp;arrived." >}}
 
 {{< imgc src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width="1008" height="712" >}}
 
-Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
-{.imgcCaption}
+{{< caption content="Your faithful correspondent holds his first grandchild for the first time, on the first night of her&nbsp;life. Enough&nbsp;“firsts” for&nbsp;you&nbsp;there?" >}}
 
 {{< imgc src="Kennedy-goes-home__crop_1008x1021.jpg" alt="Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time" width="1008" height="1021" >}}
 
-Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class="nobrk">forty-three hours old</span>.
-{.imgcCaption}
+{{< caption content="Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class='nobrk'>forty-three hours old.</span>" >}}

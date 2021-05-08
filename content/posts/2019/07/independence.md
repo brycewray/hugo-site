@@ -72,8 +72,7 @@ In the days that followed, I eagerly found and read everything I could find abou
 
 {{< imgc src="1984-07-11_01_retouched_1280x720.jpg" alt="Bryce Wray, in 1984, unwrapping his new Macintosh computer" width="1280" height="720" >}}
 
-July 11, 1984: A much younger and skinnier me eagerly unwraps my new "Skinny Mac." (Photo by my overly tolerant spouse.)
-{.imgcCaption}
+{{< caption content="July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)" >}}
 
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 
