@@ -20,14 +20,14 @@
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
-{{- $imgClass := "containedImage lazy" -}}
+{{- $imgClass := "containedImage" -}}
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $stringtoRet := "" -}}{{/* init */}}
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet' style='aspect-ratio: " $width " / " $height ";'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' data-srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet' style='aspect-ratio: " $width " / " $height ";'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' srcset='" -}}
 
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
