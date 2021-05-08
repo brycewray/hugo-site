@@ -87,7 +87,7 @@
           <p class="posts-Dates">
             <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
             {{- if ne .PublishDate .Lastmod }}
-            <br />Last modified {{ .Lastmod.Format "January 2, 2006" }}
+            <br /><span style="font-size: 85%;">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>
             {{- end }}
           </p>
 					<p class="posts-Description">

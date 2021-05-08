@@ -3,19 +3,20 @@
   text-align: center;
   h1 {
     line-height: 1.5em;
+    font-size: 1.5rem;
   }
   @media screen and (min-width: $bkpt_lg) {
     text-align: right;
     padding: 0 3em 0 0;
     color: $white;
-    background-image: linear-gradient(to bottom, $darkblue, $black);
+    background-image: linear-gradient(to bottom, $darkblue 65%, $white);
     @media screen and (prefers-color-scheme: dark) {
-      background-image: linear-gradient(to bottom, $black, $darkblue);
+      background-image: linear-gradient(to bottom, $black, $darkblue 40%, $black);
     }
     width: 45%;
     min-height: 80vh;
     h1 {
-      padding: 3.25em 0 0 2em;
+      padding: 3.5em 0 0 2em;
       font-size: 2rem;
     }
     a {
@@ -25,8 +26,8 @@
   }
   @media screen and (min-width: $bkpt_2xl) {
     h1 {
-      padding: 3.5em 0 0 2.5em;
-      font-size: 2.5rem;
+      padding: 2.5em 0 0 2.5em;
+      font-size: 3rem;
     }
   }
 }
@@ -93,7 +94,7 @@
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1rem;
     }
-    @media screen and (min-width: $bkpt_2xl) {
+    @media screen and (min-width: 1536px) {
       font-size: 1.25rem;
     }
   }
