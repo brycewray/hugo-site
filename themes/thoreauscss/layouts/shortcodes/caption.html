@@ -1,10 +1,1 @@
-{{- /*
-
-  This shortcode takes the following form: 
-  caption content
-
-*/ -}}
-
-{{- $content := .Get "content" -}}
-
-<figcaption>{{- $content | markdownify -}}</figcaption>
+<figcaption>{{ .Inner | $.Page.RenderString }}</figcaption>
