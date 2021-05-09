@@ -80,11 +80,11 @@ Now, I should note: that's how it works in Mark Text's *standard* appearance mod
 
 {{< imgc src="Mark-Text_screen-cap_reg-mode-dark_1568x1090.png" alt="Screen capture of Mark Text in regular editing mode" width="1568" height="1090" >}}
 
-{{< caption content="*Above*: Mark Text's standard appearance." >}}
+{{% caption %}}*Above*: Mark Text's standard appearance.{{% /caption %}}
 
 {{< imgc src="Mark-Text_screen-cap_SC-mode-dark_1568x1210.png" alt="Screen capture of Mark Text in Source Code Mode" width="1568" height="1210" >}}
 
-{{< caption content="*Above*: Mark Text in Source Code Mode." >}}
+{{% caption %}}*Above*: Mark Text in Source Code Mode.{{% /caption %}}
 
 I will say that the [documentation](https://github.com/marktext/marktext/blob/develop/docs/README.md) is decent enough, but you have to dig into the project's GitHub issues to learn that, for example, you can't edit or create a *theme* so you can make the app look as you want. (This bothers me because none of the supplied themes work well for my eyes, especially where body text is concerned.)
 
