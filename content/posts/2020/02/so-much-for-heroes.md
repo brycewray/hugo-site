@@ -69,7 +69,7 @@ One. At. A. Time.
 
 ---and, often, with different settings for each. (By the way, I had no way of knowing that even the largest image offered by the vendor hadn't already been processed somehow. After all, these were JPG or PNG files, not [raw](https://en.wikipedia.org/wiki/Raw_image_format) files.)
 
-It got worse. Often, I also had to convert the WebP version of a stock image at only *twenty or thirty percent quality* to achieve a smaller file size. To the credit of the WebP format, that ugly process *didn't* result in the horrible, [artifact](https://en.wikipedia.org/wiki/Compression_artifact)-laden mess you'd get if you reduced other formats' files to so low a quality. Still, it was visibly not as clear as the JPG or PNG, especially when I compared the two on a high-resolution display.[^workLoRes]
+It got worse. Often, I also had to convert the WebP version of a stock image at only *twenty or thirty percent quality* to achieve a smaller file size. To the credit of the WebP format, that ugly process *didn't* result in the horrible, [artifact](https://en.wikipedia.org/wiki/Compression_artifact)-laden mess you'd get if you reduced other formats’ files to so low a quality. Still, it was visibly not as clear as the JPG or PNG, especially when I compared the two on a high-resolution display.[^workLoRes]
 
 [^workLoRes]: A WebP converted at such low quality looked passable on the old low-resolution monitor at work, but on the double- or triple-quality displays commonly used by today's smartphones, much less my iMac's 5K display---not so much.
 

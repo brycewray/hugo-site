@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/trostle-140048/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=484268">Matt Trostle</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=484268">Pixabay</a></span>
 ---
 
-A reader who [made contact with me](/contact) recently told me my writing style seems very stream-of-consciousness[^compliment]---to which I mused inwardly, "Well, if you think that about my *regular* stuff, wait ’til you read one of my 'Mixed nuts' posts.”
+A reader who [made contact with me](/contact) recently told me my writing style seems very stream-of-consciousness[^compliment]---to which I mused inwardly, "Well, if you think that about my *regular* stuff, wait ’til you read one of my 'Mixed nuts’ posts.”
 
 [^compliment]: To be fair, he followed it up with a wonderful compliment (that I didn't deserve), but I felt the excerpt I used here was more appropriate to this series of posts.
 

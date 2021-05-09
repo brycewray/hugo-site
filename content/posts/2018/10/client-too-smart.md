@@ -46,7 +46,7 @@ As for [embedding videos](https://www.emailonacid.com/blog/article/email-develop
 
 _Or_&nbsp;.&nbsp;.&nbsp;.
 
-Or you can just accept reality and use the email to point people to a _landing page_. That's the solution to _all_ of these nagging problems, because what you can do with a landing page is limited only by what browsers can render (and the speed of your recipients' Internet connections, which isn't likely to be a problem for businesses in the developed world).
+Or you can just accept reality and use the email to point people to a _landing page_. That's the solution to _all_ of these nagging problems, because what you can do with a landing page is limited only by what browsers can render (and the speed of your recipients’ Internet connections, which isn't likely to be a problem for businesses in the developed world).
 
 This also has the side benefit of being somewhat of a qualifier---or, if you will, a "self-selector." After all: if someone isn't even willing to click a link to go to a landing page, he or she clearly isn't sufficiently interested in what you're marketing that you should be wasting your company's limited resources chasing him or her. Right?
 

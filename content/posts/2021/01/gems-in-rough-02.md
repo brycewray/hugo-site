@@ -43,7 +43,7 @@ The `Typographer` extension is supposed to make sure text has the proper "smart"
 However, as of this writing, the Goldmark version "shipping" with Hugo has a problem with plural possessives. As I noted in an [issue I filed concerning the problem](https://github.com/yuin/goldmark/issues/180), if you include the following text in a Markdown file&nbsp;.&nbsp;.&nbsp;.
 
 ```md
-John's dog is named Sam. The Smiths' dog is named Rover.
+John's dog is named Sam. The Smiths’ dog is named Rover.
 ```
 
 .&nbsp;.&nbsp;. you'd expect to get:
@@ -84,7 +84,7 @@ markdownLibrary.renderer.rules.footnote_caption = (tokens, idx) => {
 
 After a brief and successful test on a repo branch, I gleefully incorporated his fix[^semiColons] on each of my Eleventy repos (the [one for this site](https://github.com/brycewray/eleventy_solo) and my two Eleventy-based [starter](https://github.com/brycewray/eleventy_solo_starter) [repos](https://github.com/brycewray/eleventy_solo_starter_njk)); and, now, that earlier paragraph looks like this, **as it should**:
 
-[^semiColons]: Well, all but the semicolons at lines' ends. I'm one of those who [choose to avoid them in their JS](https://flaviocopes.com/javascript-automatic-semicolon-insertion/). Sorry, [pro-semicolon partisans](https://medium.com/better-programming/you-might-need-those-semicolons-in-your-javascript-after-all-b28154f93ea8).
+[^semiColons]: Well, all but the semicolons at lines’ ends. I'm one of those who [choose to avoid them in their JS](https://flaviocopes.com/javascript-automatic-semicolon-insertion/). Sorry, [pro-semicolon partisans](https://medium.com/better-programming/you-might-need-those-semicolons-in-your-javascript-after-all-b28154f93ea8).
 
 {{< imgc src="Eleventy-non-bracketed-footnotes_2510x840.png" alt="Paragraph ending in a footnote whose number is not bracketed" width="2510" height="840" >}}
 

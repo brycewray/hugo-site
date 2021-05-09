@@ -57,7 +57,7 @@ However, these free-tier CDN offerings vary widely. Here's the main thing to con
 
 ## When you change hosts
 
-In case that discussion about the various vendors' CDN capabilities has you thinking of doing as I have done several times in the last few months, which was to switch from one host to the other, first allow me to offer some valuable advice based on my experiences during that process. I have one warning, followed by one suggestion.
+In case that discussion about the various vendors’ CDN capabilities has you thinking of doing as I have done several times in the last few months, which was to switch from one host to the other, first allow me to offer some valuable advice based on my experiences during that process. I have one warning, followed by one suggestion.
 
 ### Be careful about DNSSEC
 

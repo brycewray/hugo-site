@@ -128,7 +128,7 @@ But when Gatsby crashes while in [*gatsby develop*](https://www.gatsbyjs.org/doc
 
 Also, the Gatsby error messages sometimes were helpful, but other times obscure and pointing to problems in files deep within Gatsby's bowels that I knew I shouldn't even *think* about editing.
 
-Unfortunately, the error messages' characteristic unhelpfulness---indeed, my [VS Code](https://code.visualstudio.com) app was quite often more instructive about functions, mistypings, missed characters, *etc.*---proved to be part of a pattern. That pattern's most unfortunate aspect was the Gatsby [documentation](https://www.gatsbyjs.org/docs/). Obviously and understandably written by developers who've already Been There and Done That and perhaps are too busy and tired to care whether you haven't, it wasn't exactly planned for someone who wanted to do what I was attempting---such as accessing images that aren't in the same directory as the Markdown file which tries to reference it.
+Unfortunately, the error messages’ characteristic unhelpfulness---indeed, my [VS Code](https://code.visualstudio.com) app was quite often more instructive about functions, mistypings, missed characters, *etc.*---proved to be part of a pattern. That pattern's most unfortunate aspect was the Gatsby [documentation](https://www.gatsbyjs.org/docs/). Obviously and understandably written by developers who've already Been There and Done That and perhaps are too busy and tired to care whether you haven't, it wasn't exactly planned for someone who wanted to do what I was attempting---such as accessing images that aren't in the same directory as the Markdown file which tries to reference it.
 
 Huh? Okay, maybe I need to explain that first.
 
@@ -207,7 +207,7 @@ Then, down at the bottom, you get something that looks kind of like this:
 
 <p class="legal">3.&nbsp;&nbsp;So here we are at the bottom.<span class="footnote-sim">↑</span></p>
 
-For somebody like me who uses footnotes a lot and moves their origins' paragraphs around frequently during the editing process, that's a gotta-have. For Gatsby, there are a couple of plugins that purport to provide it, but I found neither to do the job *reliably*. The most widely used one would work *sometimes*, but then something else would cause a crash and, after the reboot, suddenly that same Markdown would produce this in the rendered page:
+For somebody like me who uses footnotes a lot and moves their origins’ paragraphs around frequently during the editing process, that's a gotta-have. For Gatsby, there are a couple of plugins that purport to provide it, but I found neither to do the job *reliably*. The most widely used one would work *sometimes*, but then something else would cause a crash and, after the reboot, suddenly that same Markdown would produce this in the rendered page:
 
 > This is how you do footnotes<sup class="footnote-sim">footnoteInfo</sup> in Markdown and Hugo, even as you keep adding them, moving them around within the doc, <em>etc.</em>, and all of them end up perfectly numbered both at the original reference and down at the bottom.
 
@@ -219,7 +219,7 @@ Again: nope, nope, nope. (And it became a **double** "nope, nope, nope" when the
 
 At one point in this process late last week, I looked at myself in the mirror and said aloud with amazement in my voice, "I haven't had to do *manual* numbering of footnotes since I was using a *typewriter* back in the eighties. And I ain't starting back on it now. This is supposed to be an *improvement*, not a regression."
 
-However, by this point, I was laboring under the predictable feeling of "Well, you've come this far, spent this much time, lost this many nights' and weekends' worth of free time and sleep, and built a whole new site. You can't quit on it now. Gatsby, or at least something like it, is the future. You have to go ahead and do this."
+However, by this point, I was laboring under the predictable feeling of "Well, you've come this far, spent this much time, lost this many nights’ and weekends’ worth of free time and sleep, and built a whole new site. You can't quit on it now. Gatsby, or at least something like it, is the future. You have to go ahead and do this."
 
 So, angst aside, I prepared to do so, hoping my fears wouldn't prove true.
 

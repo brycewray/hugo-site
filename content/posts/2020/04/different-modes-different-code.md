@@ -40,7 +40,7 @@ And, today, I am pleased to tell you that *all three* of my site repos are now p
 
 Please be advised that I haven't yet decided whether to update *all* of them every time I update *this* one. Some changes I made during this restoration project may make that easier than it otherwise would've been, but I'm not promising an all-three-at-once approach.
 
-For one thing, it's all well and good to keep adding each new article, but quite another matter altogether to keep all three repos' *[NPM dependencies](https://nodejs.dev/npm-dependencies-and-devdependencies)* up to date---especially on the Gatsby repo. (And, yes, even the Hugo repo now has some NPM dependencies. More on that in a moment.) Will I keep this one updated? You betcha. The other two? TBD.
+For one thing, it's all well and good to keep adding each new article, but quite another matter altogether to keep all three repos’ *[NPM dependencies](https://nodejs.dev/npm-dependencies-and-devdependencies)* up to date---especially on the Gatsby repo. (And, yes, even the Hugo repo now has some NPM dependencies. More on that in a moment.) Will I keep this one updated? You betcha. The other two? TBD.
 
 ## Challenges
 
@@ -87,7 +87,7 @@ This[^SomeReference] is an example of the once-and-future (non-inline) method of
 
 ### Form and function
 
-As I said, I was determined that these other two repos' code would produce content that would match this site as much as possible in look-and-feel and functionality. That meant I'd be translating from "Eleventy-ese" into "Hugo-ese" and "Gatsby-ese" two major changes I recently introduced: [transitioning from Sass/SCSS to PostCSS](/posts/2020/01/two-cheers-tailwind); and [getting rid of hero images](/posts/2020/02/so-much-for-heroes).
+As I said, I was determined that these other two repos’ code would produce content that would match this site as much as possible in look-and-feel and functionality. That meant I'd be translating from "Eleventy-ese" into "Hugo-ese" and "Gatsby-ese" two major changes I recently introduced: [transitioning from Sass/SCSS to PostCSS](/posts/2020/01/two-cheers-tailwind); and [getting rid of hero images](/posts/2020/02/so-much-for-heroes).
 
 The switch to PostCSS actually was pretty straightforward in the Gatsby repo. Since Gatsby incorporates webpack, I was able to use an identical `postcss-config.js` file. From there, it was all over but the shouting, by which I mean putting the CSS files where they needed to be. No biggie.
 

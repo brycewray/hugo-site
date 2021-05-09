@@ -204,7 +204,7 @@ Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particu
 
 [^graphqlExpII]: Indeed, the Straw That Broke the Camel's Back for Gatsby Experiment II was when I couldn't *reliably* make GraphQL "see" each post's featured image *as* an image rather than a string, no matter how many ways I tried or how many tutorials I followed slavishly over a week's time. And only if you *can* get GraphQL to "see" an image can you make Gatsby apply all the admittedly cool features available through [Gatsby Image](https://www.gatsbyjs.org/docs/using-gatsby-image/), so that's where I drew the line the second and final time around with Gatsby.
 
-Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others' code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
+Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others’ code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
 
 ### It's far more robust than Gatsby
 
@@ -238,7 +238,7 @@ I fully intend to stay current with *both* of what I now believe are the two bes
 
 [^bitToGit]: Another transition may be in the works on that front, too; since back before Gatsby Experiment I, I've been considering switching the web's "source of truth" for this site to either GitHub or GitLab. I can see good arguments for each, as well as for just sticking with Bitbucket, so this call remains in the air.
 
-Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts' main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts' front matter and purely textual parts of their body copy are now totally portable.
+Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts’ main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts’ front matter and purely textual parts of their body copy are now totally portable.
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 

@@ -24,7 +24,7 @@ Without further preamble, off we go.
 
 For all the hoo-rahing about the [$15/month price increase by YouTube TV](https://www.theverge.com/2020/6/30/21308449/youtube-tv-price-increase-64-99-viacom-hbo-new-channels), I'm unconvinced by those who say they can do better by going back to cable. If it had been that affordable, they wouldn't have left it in the first place.[^notLeaving]
 
-[^notLeaving]: As for my household, we're keeping YTTV unless and until it goes much higher. None of its competitors has YTTV's mix of channels and features, notably the virtually unlimited cloud DVR that had my wife sold in the first week after we became subscribers. Also, we Tornado Alley residents like getting to see our local channels' weather guys and gals when times call for it.
+[^notLeaving]: As for my household, we're keeping YTTV unless and until it goes much higher. None of its competitors has YTTV's mix of channels and features, notably the virtually unlimited cloud DVR that had my wife sold in the first week after we became subscribers. Also, we Tornado Alley residents like getting to see our local channels’ weather guys and gals when times call for it.
 
 *A little bird told me some interesting performance enhancements are coming, soon, to that single line of code that makes [Fathom Analytics](/posts/2020/06/fathom-analytics-count-on-it) work on one's site. This product is already amazing, and now it will get even more so. [Check it out](https://usefathom.com/ref/ZKHYWX).[^affilFA]*
 

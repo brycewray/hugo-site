@@ -24,7 +24,7 @@ That was a Day Job ago, a [new grandchild](/posts/2020/03/welcome-sweet-little-e
 
 The site's existence has allowed me to make new friends and acquaintances in amazing places I'll almost certainly never visit and fascinating fields of expertise in which I'll probably never be more than a curious newbie. I've been able to learn about stuff I didn't even know existed when the site first went live. And I've mostly had a ball doing all of that. I sincerely hope any of you who've spent some time here have enjoyed it, too.
 
-By most sites' likely standards, this one's traffic is anemic---typically, only a few hundred unique visitors a day, according to [Fathom Analytics](https://usefathom.com)---but, after all, as I've made clear in [the site's "About" page](/about) from the beginning:
+By most sites’ likely standards, this one's traffic is anemic---typically, only a few hundred unique visitors a day, according to [Fathom Analytics](https://usefathom.com)---but, after all, as I've made clear in [the site's "About" page](/about) from the beginning:
 
 > Am I anybody special? Nope; just an ordinary working guy who, for decades, has used a multitude of computing devices, operating systems, and apps---and learned a few things (and formed more than a few opinions) along the way. I've been told I can make complicated things easier to understand, and I try to do the same here.
 

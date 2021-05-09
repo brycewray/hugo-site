@@ -46,7 +46,7 @@ WordPress has its purposes, as do all things, but don't kid yourself into thinki
 
 There must be times when the wonderful folks at Literature and Latte wish they could go back in time and never make either Windows or iOS versions of Scrivener. Money aside, some things are simply not worth the angst.
 
-*One wonders: if luxury cars' TV ads* stopped *showing them doing crazy high-speed maneuvers, would this keep their typical drivers from being such tailgating, lane-jumping[^BMWjoke], rules- and laws-flouting jerks?*
+*One wonders: if luxury cars’ TV ads* stopped *showing them doing crazy high-speed maneuvers, would this keep their typical drivers from being such tailgating, lane-jumping[^BMWjoke], rules- and laws-flouting jerks?*
 
 [^BMWjoke]: Old joke&nbsp;.&nbsp;.&nbsp;. **Q**:&nbsp;What's the most unnecessary job on Earth? **A**:&nbsp;Installing turn signals on BMWs.
 
@@ -66,7 +66,7 @@ Our community allows only two options for high-speed home connectivity[^OnlyOne]
 
 [Never, ever let an employer put MDM on a personal device about which you care](https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/). Bad Things Ensue. Pro tip: next time you buy a new phone, keep the *old* one if it still works WiFi-wise and let *that* be your work mobile device.[^WorkDevice] Just be sure it isn't linked to any personal account with your photos, messages, and so forth.
 
-[^WorkDevice]: The *best* solution is if you can convince work to *provide* a device; but this advice is for folks such as I who need the connectivity but, in their employers' eyes, don't merit having it that way.
+[^WorkDevice]: The *best* solution is if you can convince work to *provide* a device; but this advice is for folks such as I who need the connectivity but, in their employers’ eyes, don't merit having it that way.
 
 <hr />
 <br />

@@ -36,7 +36,7 @@ Let's break it down to three simple questions:<br />
 
 ## What is Eleventy Image?
 
-One of Eleventy's great strengths is how readily you can expand it, through plugins and other adaptations, to do more, work better, and fit your needs. The Eleventy Image plugin is a particularly apt example thereof. Built atop the super-fast and flexible [sharp](https://github.com/lovell/sharp) image processor[^sharpToo], Eleventy Image takes image files you "feed" it and turns them into files that are smaller and more efficient. This makes it easier to serve images that work better with your visitors' respective devices and connections.
+One of Eleventy's great strengths is how readily you can expand it, through plugins and other adaptations, to do more, work better, and fit your needs. The Eleventy Image plugin is a particularly apt example thereof. Built atop the super-fast and flexible [sharp](https://github.com/lovell/sharp) image processor[^sharpToo], Eleventy Image takes image files you "feed" it and turns them into files that are smaller and more efficient. This makes it easier to serve images that work better with your visitors’ respective devices and connections.
 
 [^sharpToo]: Since I'd built `imgxfm.js` (see the previous footnote) on sharp, I already knew I was going to like Eleventy Image once I did finally understand it well enough to use it.
 
@@ -128,7 +128,7 @@ module.exports = function (eleventyConfig) {
 
 For each image file you "feed" this shortcode in your Markdown (we'll explain that part next), it will create new files with:
 
-- The sizes (in pixels) listed in the `widths` array. I used sizes ranging from 600 to 1,500 pixels because that's my preference; but you can enter whatever combination works for you, especially if you have any data about your most frequent visitors' screen sizes.
+- The sizes (in pixels) listed in the `widths` array. I used sizes ranging from 600 to 1,500 pixels because that's my preference; but you can enter whatever combination works for you, especially if you have any data about your most frequent visitors’ screen sizes.
 - The file formats listed in the `formats` array. Here, we're specifying both WebP and JPEG formats because that covers you with virtually every browser out there.[^inOut]
 
 [^inOut]: For more details on the file formats Eleventy Image can accept (input) and create (output), see [its documentation](https://www.11ty.dev/docs/plugins/image/).
@@ -157,7 +157,7 @@ Here, you've entered what the shortcode considers the `src` part ("./src/images/
 
 Now, just build your site, and Eleventy Image will do its magic everywhere within your site that you're using the `image` shortcode. Of course, you'll want to get a sneak peek by running Eleventy in development mode and viewing your site locally, in case you need to adjust your site's CSS so each resulting image appears as you want.[^sizesInfo]
 
-[^sizesInfo]: You also can go back into the shortcode's definition in `.eleventy.js` to adjust the `sizes` parameter so that it works better with your site's unique layout. See [MDN's thorough explanation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes) of how the `sizes` setting in CSS affects images' appearances.
+[^sizesInfo]: You also can go back into the shortcode's definition in `.eleventy.js` to adjust the `sizes` parameter so that it works better with your site's unique layout. See [MDN's thorough explanation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes) of how the `sizes` setting in CSS affects images’ appearances.
 
 ## Go ye forth and process
 

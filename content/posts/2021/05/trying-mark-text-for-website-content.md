@@ -100,7 +100,7 @@ The biggest problem you can have with relying on a FOSS app for "mission-critica
 
 To be fair, I should note that there actually has been one release since then, to [version 0.16.3](https://github.com/marktext/marktext/releases/tag/v0.16.3). I haven't taken the time to dig through the involved commits and determine whether most of those pre-dated this statement.
 
-Given the devs' promises in the repo about how Mark Text will always be FOSS, I'd presume that, even if all development stopped on Mark Text, the final version would remain extant in the repo. In such an event, you'd then have to decide whether you'd want to rely on something that will never, ever get updated. I know many people like to stick with stuff from years ago that, so far, still works on their particular setups, but that's not the way I roll.
+Given the devs’ promises in the repo about how Mark Text will always be FOSS, I'd presume that, even if all development stopped on Mark Text, the final version would remain extant in the repo. In such an event, you'd then have to decide whether you'd want to rely on something that will never, ever get updated. I know many people like to stick with stuff from years ago that, so far, still works on their particular setups, but that's not the way I roll.
 
 The usual answer that FOSS advocates suggest for such concerns generally runs along the lines of, "Yeah, but all the source code is freely available, so you can fix it yourself or somebody in the open-source community will fix it." To which I reply: "Uh, nope, I can *use* it, but I can't *code* it; and, as for the community, can I rely on that?"
 

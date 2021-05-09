@@ -44,7 +44,7 @@ When I first learned of this in the August 6, 2020, edition of the "Go Make Thin
 
 When I contrasted this with what [Google says about Google Analytics](https://support.google.com/analytics/answer/6004245) .&nbsp;.&nbsp;.
 
-> Google Analytics mainly uses first-party cookies to report on visitor .&nbsp;.&nbsp;.&nbsp;interactions on Google Analytics customers' websites. Users may disable cookies or delete any individual cookie.
+> Google Analytics mainly uses first-party cookies to report on visitor .&nbsp;.&nbsp;.&nbsp;interactions on Google Analytics customers’ websites. Users may disable cookies or delete any individual cookie.
 
 .&nbsp;.&nbsp;. it seemed to me that Google was saying flatly it *did* track visitors with Google Analytics (duh), yet simultaneously
 saying---carefully, as giant corporations with armies of lawyers tend to do everything---that it *didn't* track visitors to websites using Google-served Google Fonts.
@@ -86,7 +86,7 @@ While I was in this process, I realized there were two other needed actions to a
 - Removed [YouTube](https://youtube.com) embeds from two pages in favor of simply linking to the videos themselves.
 - Changed all [Twitter](https://twitter.com) content from embedded tweets to text-only versions with links back to the original content.
 
-These were easy decisions, since there's little doubt about the fact that embedded YouTube videos and tweets "phone home " with visitors' information.
+These were easy decisions, since there's little doubt about the fact that embedded YouTube videos and tweets "phone home " with visitors’ information.
 
 To be safe, I also checked out the GDPR compliance of [Cloudinary](https://cloudinary.com), which the site [recently began using](/posts/2020/07/transformed), and satisfied myself that [it was sufficient](https://cloudinary.com/privacy) that I didn't need to revert to locally processed, locally hosted images. (Whew.)
 

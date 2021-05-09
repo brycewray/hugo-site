@@ -58,7 +58,7 @@ When I came back to Hugo, I figured I'd lost this convenience because Hugo's bui
 
 [^blackFriday]: You also can configure Hugo to use its previous Markdown parser, [Blackfriday](https://github.com/russross/blackfriday), but it doesn't do the attributes thing *at all*. Moreover, Blackfriday support in Hugo is being deprecated in the not-too-distant future.
 
-[^oldName]: In Eleventy, I'd called this class `lazypicturecaption` as a reference to the `lazypicture` shortcode I used in concert with lazy-loading-specific JavaScript to produce responsive images. In Hugo, I've dispensed with that JavaScript, using an `imgc` shortcode for responsive images (relying instead on browsers' native lazy-loading)---hence, the different name in Hugo for what essentially is the same thing, namely a caption-styling CSS class.
+[^oldName]: In Eleventy, I'd called this class `lazypicturecaption` as a reference to the `lazypicture` shortcode I used in concert with lazy-loading-specific JavaScript to produce responsive images. In Hugo, I've dispensed with that JavaScript, using an `imgc` shortcode for responsive images (relying instead on browsers’ native lazy-loading)---hence, the different name in Hugo for what essentially is the same thing, namely a caption-styling CSS class.
 
 ```md
 {{</* imgc src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width="1008" height="712" */>}}
