@@ -74,7 +74,7 @@
   {{- end }}
 
   {{/* CSS/SCSS */}}
-  <link rel="preload" href="/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+  <!--<link rel="preload" href="/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />-->
   {{- if hugo.IsProduction -}}
     {{- with resources.Get "scss/index.scss" | toCSS | minify -}}
       <style>{{- .Content | safeCSS -}}</style>

@@ -1,5 +1,5 @@
 // not using @use here until Hugo supports it --- slated for 1Q 2021
-@import 'fonts';
+// @import 'fonts';
 @import 'variables';
 @import 'chroma_native_tweaked';
 // @import 'chroma_rrt';
@@ -14,6 +14,6 @@
 @import 'home';
 @import 'nav';
 @import 'lazyload';
-@import 'intervf'; // for Inter VF's weird obliquing stuff
-// @import 'ffoxobliq'; // if using system font stack
-// @import 'iefixes';
+// @import 'intervf'; // for Inter VF's weird obliquing stuff
+@import 'ffoxobliq'; // if using system font stack
+@import 'iefixes';
