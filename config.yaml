@@ -11,22 +11,12 @@ enableRobotsTXT: true
 
 pygmentsUseClasses: true
 
-
 Paginate: 5 # so five posts will appear on each page from "/posts"
 
 params:
   Domain: "brycewray.com"
   Author: "Bryce Wray"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
-
-outputFormats:
-  JSONfeed:
-    mediaType: "application/json"
-    BaseName: "index"
-    IsPlainText: true
-
-outputs:
-  home: ["html", "rss", "JSONfeed"]
 
 markup:
   # Reverting to Hugo-standard Goldmark parser and will handle typographical niceties
@@ -50,3 +40,15 @@ markup:
     highlight:
       guessSyntax: true
       noClasses: false
+
+outputFormats:
+  json:
+    baseName: "index"
+    mediaType: "application/json"
+    isPlainText: true
+
+outputs:
+  home:
+    - html
+    - rss
+    - json
