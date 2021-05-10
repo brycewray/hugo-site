@@ -19,6 +19,15 @@ params:
   Author: "Bryce Wray"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
 
+outputFormats:
+  JSONfeed:
+    mediaType: "application/json"
+    BaseName: "index"
+    # IsPlainText: true
+
+outputs:
+  home: ["html", "rss", "JSONfeed"]
+
 markup:
   # Reverting to Hugo-standard Goldmark parser and will handle typographical niceties
   # on own (i.e., manually fixing them in my content files),
