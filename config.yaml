@@ -23,7 +23,7 @@ outputFormats:
   JSONfeed:
     mediaType: "application/json"
     BaseName: "index"
-    # IsPlainText: true
+    IsPlainText: true
 
 outputs:
   home: ["html", "rss", "JSONfeed"]
