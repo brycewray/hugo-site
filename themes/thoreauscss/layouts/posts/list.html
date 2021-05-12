@@ -83,7 +83,7 @@
 			{{ range $paginator.Pages }}
         <div>          
           <h2 class="posts-Title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-          <p class="posts-Subtitle"><strong>{{ .Params.Subtitle }}</strong></p>
+          <p class="posts-Subtitle"><strong>{{ .Params.Subtitle | markdownify }}</strong></p>
           <p class="posts-Dates">
             <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
             {{- if ne .PublishDate .Lastmod }}
@@ -91,7 +91,7 @@
             {{- end }}
           </p>
 					<p class="posts-Description">
-						{{ .Description }}
+						{{ .Description | markdownify }}
 					</p>
 				</div>
       {{ end }}
