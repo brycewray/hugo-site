@@ -6,7 +6,7 @@ subtitle: "Feelings about look-and-feel"
 description: "How and why “hero images” have returned to this site."
 author: Bryce Wray
 date: 2020-05-22T18:00:00-05:00
-lastmod: 2021-04-30T09:01:00-05:00
+lastmod: 2021-05-15T07:21:00-05:00
 discussionId: "2020-05-thousand-words-indeed"
 featured_image: colorful-flower-field-250016_4984x3607.jpg
 featured_image_width: 4984
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/DeltaWorks-37465/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Kohji Asakawa</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Pixabay</a>
 ---
 
-**Update**: Nearly a year after the [original post](/posts/2020/02/so-much-for-heroes) about removing the hero images, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh).
+**Update**: Nearly a year after the [original post](/posts/2020/02/so-much-for-heroes) about removing the hero images, [I decided](/posts/2021/01/leaner-new-look) I'd been right the first time, although for totally different reasons. Later, I reinstated them as **featured** images rather than **hero** images. Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh).
 {.yellowBox}
 
 The phrase has been around [for about a century](https://grammarist.com/proverb/a-picture-is-worth-a-thousand-words/): "A picture is worth a thousand words."

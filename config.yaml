@@ -33,6 +33,7 @@ markup:
       attribute:
         block: true
         title: true
+      autoHeadingID: false # otherwise, can't use (e.g.) "Content" as a heading
     renderer:
       unsafe: true
       # only to allow for inline HTML and/or JS

@@ -5,7 +5,7 @@ subtitle: "Using <code>package.json</code> as an asset pipeline"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site—and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-lastmod: 2021-04-30T09:45:00-05:00
+lastmod: 2021-05-15T07:15:00-05:00
 #draft: false
 discussionId: "2021-03-tailwind-head-eleventy"
 featured_image: "code-html-head-5421210_5103x3403.jpg"
@@ -27,7 +27,9 @@ The thing is, using those suckers can be a hassle, regardless of one's abilities
 
 So I got to thinking: what if we just achieved it through an Eleventy project's `package.json` file? What if we used `package.json` scripting to serve as an asset pipeline of sorts for Eleventy?
 
-After all, we've [already seen](/posts/2021/03/gems-in-rough-03) how to do that with SCSS, using the [`sass` distribution](https://npmjs.com/package/sass) that enables SCSS use in Eleventy. How much more difficult, I wondered, could it be to do the same via the [PostCSS](https://postcss.org) tool required for use of Tailwind?
+After all, we've [already seen](/posts/2021/03/gems-in-rough-03) how to do that with SCSS, using the [`sass` distribution](https://npmjs.com/package/sass) that enables SCSS use in Eleventy. How much more difficult, I wondered, could it be to do the same via the [PostCSS](https://postcss.org) tool required for use of Tailwind?[^featImg]
+
+[^featImg]: I even borrowed the featured image from the earlier "Tailwind-to-head in Hugo Pipes" post since its subject and this post's subject are essentially so similar. You can call it being lazy; I prefer to say I was "leveraging the image's thematic synergy." (Hey, I didn't spend 30 years in tech marketing for nothing, you know.)
 
 Fortunately, the answer turned out to be: "not so difficult"---at least, that was the case once I stopped doing dumb things. I'll spare you *that* sob story and cut to the chase.
 

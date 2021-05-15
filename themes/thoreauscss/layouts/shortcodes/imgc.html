@@ -30,14 +30,14 @@
 
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $divClass := "relative" -}}
-{{- $imgClass := "containedImage" -}}
+{{- $imgClass := "containedImage lazy" -}}
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $stringtoRet := "" -}}{{/* init */}}
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s" "<img class='" $imgClass "' src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "' style='aspect-ratio: " $width " / " $height "; background-image: url(" $cloudiBase $LQIPholder $src "); background-position: center; background-repeat: no-repeat; background-size: cover;'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' data-srcset='" -}}
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
   {{- if ge $width . -}}
@@ -48,6 +48,6 @@
 {{- $stringtoRet := .Scratch.Get "innerString" }}
 {{- $stringtoRet := substr $stringtoRet 0 -2 -}}
 {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s" $stringtoRet "' alt='" $alt "' width='" $width "' height='" $height "' loading='lazy' sizes='" $dataSzes "' />" -}}
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><img class='" $nscClass "' src='" $cloudiBase $xFmPart1 "300" $xFmPart2 $src "' alt='" $alt "' /></noscript>" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><img class='" $nscClass "' src='" $cloudiBase $xFmPart1 "300" $xFmPart2 $src "' alt='" $alt "' /></noscript></div>" -}}
 
 {{- $stringtoRet | safeHTML -}}

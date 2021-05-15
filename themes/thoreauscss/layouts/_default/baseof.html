@@ -1,3 +1,5 @@
+{{- $lazyloadFile := "lazyload_17-3-0.min.js" -}}
+
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
   {{ partial "head.html" . -}}
@@ -7,6 +9,12 @@
     {{- block "main" . -}}{{- end }}
     </div>
     {{- partial "footer.html" . -}}
+    <script src="/assets/js/{{- $lazyloadFile -}}"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        threshold: 150,
+      })
+    </script>
   </body>
 
 </html>
