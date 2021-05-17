@@ -1,7 +1,6 @@
 /* Background */ .chroma { color: #d0d0d0; background-color: #202020 }
 /* Other */ .chroma .x { color: #ffffff }
-// /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
-/* Error */ .chroma .err { }
+/* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
 /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
@@ -18,7 +17,7 @@
 /* NameAttribute */ .chroma .na { color: #bbbbbb }
 /* NameBuiltin */ .chroma .nb { color: lightblue } /* was #24909d
 /* NameBuiltinPseudo */ .chroma .bp { color: #efefef }
-/* NameClass */ .chroma .nc { color: #99cfef } /* was 447fcf */
+/* NameClass */ .chroma .nc { color: #de9aef } /* was 447fcf */
 /* NameConstant */ .chroma .no { color: #40ffff }
 /* NameDecorator */ .chroma .nd { color: #ffa500 }
 /* NameEntity */ .chroma .ni { color: #efefef }
@@ -51,12 +50,12 @@
 /* LiteralStringRegex */ .chroma .sr { color: orange } /* was ed9d13 */
 /* LiteralStringSingle */ .chroma .s1 { color: orange } /* was ed9d13 */
 /* LiteralStringSymbol */ .chroma .ss { color: orange } /* was ed9d13 */
-/* LiteralNumber */ .chroma .m { color: #3677a9 }
-/* LiteralNumberBin */ .chroma .mb { color: #3677a9 }
-/* LiteralNumberFloat */ .chroma .mf { color: #3677a9 }
-/* LiteralNumberHex */ .chroma .mh { color: #3677a9 }
+/* LiteralNumber */ .chroma .m { color: #7fcad7 }
+/* LiteralNumberBin */ .chroma .mb { color: #7fcad7 }
+/* LiteralNumberFloat */ .chroma .mf { color: #7fcad7 }
+/* LiteralNumberHex */ .chroma .mh { color: #7fcad7 }
 /* LiteralNumberInteger */ .chroma .mi { color: #fff56f }
-/* LiteralNumberIntegerLong */ .chroma .il { color: #3677a9 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #7fcad7 }
 /* LiteralNumberOct */ .chroma .mo { color: #fff56f }
 /* Operator */ .chroma .o { color: #efefef }
 /* OperatorWord */ .chroma .ow { color: yellowgreen } /* was 6ab825
