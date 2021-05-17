@@ -20,7 +20,7 @@ featured_image_caption: |
 
 The phrase has been around [for about a century](https://grammarist.com/proverb/a-picture-is-worth-a-thousand-words/): "A picture is worth a thousand words."
 
-Sometime, it's worth even more than words. And that's why there are big ol' pictures back at the top of each of this site's posts.
+Sometime, it's worth even more than words. And that's why there are big ol’ pictures back at the top of each of this site's posts.
 
 ## Gone, but not forgotten
 

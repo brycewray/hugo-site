@@ -92,7 +92,7 @@ You can't go wrong by following the [Web Content Accessibility Guidelines (WCAG)
 
 ## Best Practices
 
-There's a long list of items Lighthouse checks for conformance with "Best Practices." Try to adhere to them all if you can, but comply with the following out of plain ol' common sense.
+There's a long list of items Lighthouse checks for conformance with "Best Practices." Try to adhere to them all if you can, but comply with the following out of plain ol’ common sense.
 
 **Use [HTTPS](https://en.wikipedia.org/wiki/HTTPS)**. When nearly every host makes having `https://` at the head of your URL a freebie through services like [LetsEncrypt](https://letsencrypt.org/), and browsers flag an HTTP-only site as bad news, *not* having HTTPS is dumb. Increasingly, it marks a site as being in a state of neglect.
 

@@ -82,7 +82,7 @@ As a result, I went into this JS-intensive project not knowing enough about the 
 
 With that increasing comfort with JS, I began thinking, and reading, about Gatsby once again. When the Day Job coding for that project became a little less intense (for a while) and I once again had some spare brain cells during nights and weekends, I got it in my head that, perhaps now, I should give Gatsby a shot---and not simply as a trial, but to replace this Hugo-based site you're viewing now.
 
-## Polishing up the ol' résumé?
+## Polishing up the ol’ résumé?
 
 After what by then was a nine-month stretch with Hugo on this site and relatively smooth operation thereof, why was I willing to switch the site from Hugo to Gatsby? It came down to these two interconnected things I'd decided:
 

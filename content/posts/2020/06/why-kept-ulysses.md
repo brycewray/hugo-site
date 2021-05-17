@@ -50,7 +50,7 @@ Well, it's like this&nbsp;.&nbsp;.&nbsp;.
 
 ## Why Ulysses is still my best choice
 
-I made very clear back in this site's second-ever post (and still one of its most popular), "[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses)," that the way my mind works simply meshes better with Ulysses than with Scrivener, however much I love good ol' "Scriv." That hasn't changed, and---unless somebody reprograms me---isn't going to change. If the WIP is to have a future, it will be in Ulysses.
+I made very clear back in this site's second-ever post (and still one of its most popular), "[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses)," that the way my mind works simply meshes better with Ulysses than with Scrivener, however much I love good ol’ "Scriv." That hasn't changed, and---unless somebody reprograms me---isn't going to change. If the WIP is to have a future, it will be in Ulysses.
 
 (Of course, that was in the days before I'd spent much time with iA Writer and learned it was a better choice for writing this site's posts. And *that* hasn't changed, either, but only because iA Writer outputs SSG-friendly [Markdown](https://daringfireball.net/projects/markdown) natively while you have to export it from Ulysses.[^Export] If the Ulysses folks ever change that---well, I'm just sayin'.)
 

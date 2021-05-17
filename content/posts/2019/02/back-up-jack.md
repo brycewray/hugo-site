@@ -58,7 +58,7 @@ So that left me with Dropbox as my main cloud sync provider.
 
 ## Musical clouds
 
-See, in the back of my Apple-loving mind there always was, of course, good ol' [iCloud Drive](https://www.apple.com/icloud/).
+See, in the back of my Apple-loving mind there always was, of course, good ol’ [iCloud Drive](https://www.apple.com/icloud/).
 
 Still, iCloud Drive was more of an afterthought than anything else, except for obvious things like photos from my iPhone or files created by software such as [Ulysses](https://ulysses.app), [iA Writer](https://ia.net/writer), and [Affinity Photo](https://affinity.serif.com/en-us/photo/desktop/). Also, I had only the fifty-gigabyte plan from iCloud, the main use for which still was to store those iPhone photos as well as all my [Apple Music](https://www.apple.com/music/) goodies.
 

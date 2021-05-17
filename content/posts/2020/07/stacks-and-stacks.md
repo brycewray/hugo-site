@@ -65,7 +65,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: [Sourcetree](https://www.sourcetreeapp.com/).
 
-2020-07-05: [Fork](https://git-fork.com/) for macOS, [Visual Studio Code](https://code.visualstudio.com/), and---when the mood strikes me---just plain ol' Git CLI commands in a terminal window.
+2020-07-05: [Fork](https://git-fork.com/) for macOS, [Visual Studio Code](https://code.visualstudio.com/), and---when the mood strikes me---just plain ol’ Git CLI commands in a terminal window.
 
 ## Primary text editor for posts
 

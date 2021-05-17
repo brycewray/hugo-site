@@ -54,7 +54,7 @@ So that wasn't going to work to my satisfaction, at least not for Exchange. Howe
 
 I dearly wanted to settle on Apple's mail clients in both iOS and macOS, but the whole urinating contest with GMail push remained a show-stopper for me; so I continued the Edison Mail/Apple Mail tag-team match for a while on iOS, only to suffer a self-inflicted wound.
 
-As I mentioned before, in those early days of iOS 11, a *lot* of stuff wasn't working well, especially where battery consumption was concerned. But, good ol' clever me, I made it worse by inadvertently leaving the Apple Mail app to "fetch" more aggressively---*i.e.*, as if I hadn't put Edison Mail on there to notify me of new mails---which, of course, was sucking battery juice big-time.
+As I mentioned before, in those early days of iOS 11, a *lot* of stuff wasn't working well, especially where battery consumption was concerned. But, good ol’ clever me, I made it worse by inadvertently leaving the Apple Mail app to "fetch" more aggressively---*i.e.*, as if I hadn't put Edison Mail on there to notify me of new mails---which, of course, was sucking battery juice big-time.
 
 Upon discovering this, I changed Apple Mail's setting so it would fetch only every 15 minutes, hoping that would be sufficient to stop the draining behavior until Apple got its software act together in a dot-version or two.
 
@@ -81,7 +81,7 @@ That vendor ended up being [FastMail](https://fastmail.com). It even provided [A
 
 [^timing]: Those of you who delight in leaving your inboxes loaded with email---who gleefully post screen caps of iPhones with five-digit "unread" badges on your chosen mail apps---well, I'm not one of you, nor could I ever be. When an email comes in, I want to know about it *now*. More often than not, I just Mark As Read and go about my business, but on occasion there *is* the one big-deal email I really *do* need to read and act on right away, and my Happy Path for email lets me do so.
 
-After all, it was football season, so why not do a good ol' end run?
+After all, it was football season, so why not do a good ol’ end run?
 
 So, over the last weekend of October, 2017, I signed up with FastMail, got a domain from Namecheap, set FastMail to use the domain for my new address, and set up forwarding (and copying of my existing IMAP mail) from Gmail to FastMail.
 
