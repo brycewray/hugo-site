@@ -6,7 +6,7 @@ subtitle: "GitHub Actions to deploy to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2021-02-06T08:35:00-06:00
+lastmod: 2021-05-17T12:47:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: "spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg"
@@ -16,6 +16,8 @@ featured_image_alt: "SpaceX rocket launching from the Kennedy Space Center in Fl
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@spacex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">SpaceX</a>; <a href="https://unsplash.com/s/photos/launch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
+
+{{< disclaimer >}}
 
 **Note**: Unlike the [last](/posts/2020/09/normal-persons-guide-static-websites) [two](/posts/2020/09/normal-persons-guide-static-website-hosting) posts, this one very definitely is for **only** my fellow web geeks---and, anyway, they're the only folks likely to be using [Firebase Hosting](https://firebase.google.com), I would think.
 {.yellowBox}
@@ -108,6 +110,3 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           # Other args should come from .firebaserc and firebase.json
 ```
-
-**Note**: Having learned all I wanted to learn from the experience, I decided a few days later to leave Firebase Hosting.
-{.yellowBox}

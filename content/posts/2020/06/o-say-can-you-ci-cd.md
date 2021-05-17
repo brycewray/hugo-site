@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2021-02-06T08:35:00-06:00
+lastmod: 2021-05-17T12:37:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: "dominoes-4020617_4870x2672.jpg"
 featured_image_width: 4870
@@ -15,6 +15,8 @@ featured_image_alt: "A row of dominoes with a hand about to tip them over"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/SparrowsHome-4168069/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">SparrowsHome</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">Pixabay</a></span>
 ---
+
+{{< disclaimer >}}
 
 Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) is an amazing way to have a personal or small-business website, especially one built by a [static site generator](https://staticgen.com) (SSG) like the [Eleventy](https://11ty.dev) SSG this site uses.
 
@@ -44,13 +46,7 @@ You can do that through the right mix of plugins, but the quickest solution that
 
 Image processing during each build takes precious seconds (in my site's case, quite a few of them) so, regardless of whether your image processing approach is plugins-only, bespoke-only, or a mixture of the two, this will ramp up your build times.
 
-**Note, 2020-08-30**: I later solved *this* issue by [handing off image processing](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).
-{.yellowBox}
-
 ### Webmentions
-
-**Note, 2020-09-25**: The site no longer uses webmentions, but did at the time of this post's original appearance.
-{.yellowBox}
 
 Some months ago, intrigued by the whole [IndieWeb](https://indieweb.org/) thing, I began dabbling in [webmentions](/posts/2020/04/webmentions-three-ssgs-1/); and I encourage you to consider doing the same with your own site. But, you ask, how would they increase the build times?
 

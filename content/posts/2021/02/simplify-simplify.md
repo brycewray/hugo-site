@@ -5,7 +5,7 @@ subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
-lastmod: 2021-03-20T17:30:00-05:00
+lastmod: 2021-05-17T12:50:00-05:00
 #draft: false
 discussionId: "2021-02-simplify-simplify"
 featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"
@@ -15,6 +15,8 @@ featured_image_alt: "Concept photo of simplicity and serenity - distant sea hori
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@oxanetruth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oxane Alexandroff</a>; <a href="/s/photos/simplicity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
+
+{{< disclaimer >}}
 
 > Our life is frittered away by detail. Simplify, simplify.<br />
 > ---[Henry David Thoreau](https://simple.wikiquote.org/wiki/Henry_David_Thoreau).
@@ -124,6 +126,3 @@ To be sure, I can keep reading about, researching, and testing SSGs and other re
 That way, I can work harder on making its interior more comfortable for those of you who visit.
 
 The welcome mat is always out for you.
-
-**Note**: The more things change, the more they stay the same; see the ending of "[Tailwind-to-head with Eleventy](/posts/2021/03/tailwind-head-eleventy)" from a few weeks after I issued this post.
-{.yellowBox}

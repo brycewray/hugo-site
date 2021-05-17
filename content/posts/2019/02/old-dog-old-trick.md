@@ -109,4 +109,4 @@ Woof.
 
 *And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting* (below) *about my last post. As he might say: "Thanks, mate!"*
 
-{{< twitscrn imageUrl="Twitter_1095457720709263360.png" alt="Tweet by @CRosserAuthor, 2019-02-12: If you are a fan of, or contemplating using, iA Writer, I recommend @BryceWrayTX blog post. While our workflows are different, our ends and opinions are the same!" width="1182" height="720" twitterUrl="https://twitter.com/CRosserAuthor/status/1095457720709263360" >}}
+{{< tweet 1095457720709263360 >}}

@@ -5,7 +5,7 @@ title: "Thinking dark thoughts"
 subtitle: "How to keep up with a growing trend"
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
 date: 2019-09-29T10:08:00-05:00
-lastmod: 2020-08-08T14:15:00-05:00
+lastmod: 2021-05-17T12:21:00-05:00
 discussionId: "2019-09-thinking-dark-thoughts"
 featured_image: "sunset-1090164_4608x3456.jpg"
 featured_image_width: 4608
@@ -14,6 +14,8 @@ featured_image_alt: "Skies at sunset"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Hans-2/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1090164">Hans Braxmeier</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1090164">Pixabay</a></span>
 ---
+
+{{< disclaimer >}}
 
 With the recent release of [iOS 13](https://en.wikipedia.org/wiki/IOS_13), system-wide [Dark Mode](https://en.wikipedia.org/wiki/Light-on-dark_color_scheme) [finally became available to iPhone and iPad users](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/). That means a massive number of people are now going to be looking at apps and websites in completely different ways than before.[^Android] Moreover, [browsers on both mobile devices and the desktop are getting increasingly Dark Mode-savvy](https://www.cnet.com/news/dark-mode-web-browsers-are-here-safari-firefox-soon-chrome/), switching between Light and Dark Modes fairly seamlessly.
 

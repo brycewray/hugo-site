@@ -6,7 +6,7 @@ subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2021-03-20T17:30:00-05:00
+lastmod: 2021-05-17T12:21:00-05:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
@@ -36,8 +36,7 @@ oldComments: |
     </div>
 ---
 
-**Note**: To put it simply, things have changed multiple times since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).
-{.yellowBox}
+{{< disclaimer >}}
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
 
@@ -220,11 +219,11 @@ It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---
 
 While we're on the subject of speed: while I was working on this post, I saw these Leatherman tweets from, respectively, his personal account and the Eleventy account:
 
-{{< twitscrn imageUrl="Twitter_1169998370041208832.png" alt="Tweet from @zachleat, 2019-09-06: Which has a better First Meaningful Paint time? 1. a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets 2. a client rendered React site with exactly one tweet on it (Spoiler: @____lighthouse reports 8.5MB of HTML wins by about 200ms)" width="1182" height="704" twitterUrl="https://twitter.com/zachleat/status/1169998370041208832" >}}
+{{< tweet 1169998370041208832 >}}
 
 React. Hmm. Wonder whom he might be zinging there?
 
-{{< twitscrn imageUrl="Twitter_1170187490952712192.png" alt="Tweet from @eleven_ty, 2019-09-06: Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅" width="1182" height="540" twitterUrl="https://twitter.com/eleven_ty/status/1170187490952712192" >}}
+{{< tweet 1170187490952712192 >}}
 
 Good job, sir. In the case of that last tweet in particular: given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
 

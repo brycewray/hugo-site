@@ -6,7 +6,7 @@ subtitle: "Gatsby Experiment III proves the winner"
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray
 date: 2019-10-27T10:00:00-05:00
-lastmod: 2021-03-20T17:30:00-05:00
+lastmod: 2021-05-17T12:22:00-05:00
 discussionId: "2019-10-now-gatsby-geezer"
 featured_image: gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker.jpg
 featured_image_width: 1920
@@ -16,8 +16,7 @@ featured_image_caption: |
   <span class="caption">Images: <a href="https://gatsbyjs.org">Gatsby</a>; <a href="https://pixabay.com/users/LeoNeoBoy-2404531/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">LeoNeoBoy</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">Pixabay</a></span>
 ---
 
-**Note**: To put it simply, things have changed multiple times since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).
-{.yellowBox}
+{{< disclaimer >}}
 
 While stubbornness is by no means always a virtue, it has its moments. What I'll be announcing in this post is proof.
 

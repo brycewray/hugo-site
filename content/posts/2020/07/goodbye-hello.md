@@ -6,7 +6,7 @@ subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T17:05:00-05:00
-lastmod: 2020-09-09T16:25:00-05:00
+lastmod: 2021-05-17T12:42:00-05:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: "away-706464_4608x2592.jpg"
 featured_image_width: 4608
@@ -16,8 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
 
-**Note**: As you'll learn at the end, this story is only Part 1 of what turns out to be an ongoing saga of sorts.
-{.yellowBox}
+{{< disclaimer >}}
 
 Welcome to a story about an ending---and a beginning.
 

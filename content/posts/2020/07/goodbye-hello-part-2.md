@@ -6,7 +6,7 @@ subtitle: "Returning the site to Netlify"
 description: "Why I decided to come back."
 author: Bryce Wray
 date: 2020-07-31T17:35:00-05:00
-lastmod: 2020-09-05T09:00:00-05:00
+lastmod: 2021-05-17T12:40:00-05:00
 discussionId: "2020-07-goodbye-hello-2"
 featured_image: "welcome-mat-705102_4368x2912.jpg"
 featured_image_width: 4368
@@ -16,8 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/YouComMedia-907282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">YouComMedia</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">Pixabay</a></span>
 ---
 
-**Note**: This originally took the form of an addendum to the original "[Goodbye and hello](/posts/2020/07/goodbye-hello)" post; but I soon realized this was the classic case of shooting at a moving target, so I decided to give each move its own post (using the appropriate addendum as the text), while leaving the original pretty much as it once was.
-{.yellowBox}
+{{< disclaimer >}}
 
 In case you haven't yet seen "[Transformed](/posts/2020/07/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 

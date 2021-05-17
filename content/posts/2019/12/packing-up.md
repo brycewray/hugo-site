@@ -6,7 +6,7 @@ subtitle: "Eleventy and webpack are a powerful pair"
 description: "How using a bundler makes the coolest SSG even better."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2020-08-10T20:15:00-05:00
+lastmod: 2021-05-17T12:23:00-05:00
 discussionId: "2019-12-packing-up"
 featured_image: "chain-11ty-webpack-3867751_1920x1080.jpg"
 featured_image_width: 1920
@@ -16,8 +16,7 @@ featured_image_caption: |
   <span class="caption">Images: <a href="https://11ty.dev">Eleventy site</a>; <a href="https://webpack.js.org">webpack site</a>; <a href="https://pixabay.com/users/Skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Rudy and Peter Skitterians</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Pixabay</a></span>
 ---
 
-**Update, 2020-05-09**: A few months later, I went with an Eleventy-only setup after [deciding](/posts/2020/05/going-solo-eleventy) it would be just fine, after all. Still, I'll leave this and other, related posts in place for archival purposes and the sake of [transparency](posts/2019/10/otoh).
-{.yellowBox}
+{{< disclaimer >}}
 
 It's that time again, [static site generator](https://staticgen.com) (SSG) nerdiness fans. Yes, that's right, it's time for me to geek out about another change to this site.
 

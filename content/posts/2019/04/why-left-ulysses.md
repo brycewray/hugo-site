@@ -5,7 +5,7 @@ subtitle: "iA Writer wins—for now"
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
-lastmod: 2020-11-26T08:20:00-06:00
+lastmod: 2021-05-17T12:14:00-05:00
 discussionId: "2019-04-why-left-ulysses"
 featured_image: "hand-butterfly-3751159_6000x4000.jpg"
 featured_image_width: 6000
@@ -26,10 +26,7 @@ oldComments: |
     </div>
 ---
 
-**Note, 2019-05-04**: In case you've already read this, be advised I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in)."
-{.yellowBox}
-
-**Note, 2019-10-11**: I originally deleted this post after writing "Boxed in", but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it's now back.
+**Note, 2019-05-04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in)."
 {.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.
@@ -152,7 +149,7 @@ Yet another nail in the Ulysses sub's coffin.
 
 But it was hard to let go. Even as late as a couple of weeks ago, I found myself posting this on Twitter:
 
-{{< twitscrn imageUrl="Twitter_1114140807764893696.png" alt="Tweet by @BryceWrayTX, 2019-04-05: I may be crazy, but have been stress-testing Ulysses and am giving it one more chance **not** to eat my stuff before I pull the plug on my subscription (ends in late May). It’s hard to quit an app that makes writing such a pleasure, even one with known issues. #DontFailMeNowBigU" width="1182" height="578" twitterUrl="https://twitter.com/BryceWrayTX/status/1114140807764893696" >}}
+{{< tweet 1114140807764893696 >}}
 
 And, almost as if it had gotten the message, Ulysses was good as gold across my devices---until this morning.
 

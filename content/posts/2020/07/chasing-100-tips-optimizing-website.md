@@ -6,7 +6,7 @@ subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00
-lastmod: 2020-10-15T10:20:00-05:00
+lastmod: 2021-05-17T12:39:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: "tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg"
 featured_image_width: 6036
@@ -16,8 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Update, 2020-10-22**: I posted this prior to my subsequent decision to [hand off the site's image-handling to Cloudinary](/posts/2020/07/transformed). To me, it was more than worth the performance hit. *(The screen capture below was from **before** those changes.)*
-{.yellowBox}
+{{< disclaimer >}}
 
 If you have your own website, chances are you like to make it work better for your visitors and, yes, show up higher in search engine ratings. Let's talk about how you can do that.
 

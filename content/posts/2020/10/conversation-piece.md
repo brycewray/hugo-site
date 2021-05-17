@@ -6,7 +6,7 @@ subtitle: "Commenting options for your static website"
 description: "Here are several ways you can hear from your visitors."
 author: Bryce Wray
 date: 2020-10-13T16:30:00-05:00
-#lastmod
+lastmod: 2021-05-17T12:48:00-05:00
 #draft: true
 discussionId: "2020-10-conversation-piece"
 featured_image: "miguel-a-amutio-27QOmh18KDc-unsplash_3785x2847.jpg"
@@ -16,6 +16,8 @@ featured_image_alt: "An array of public address speakers mounted on a pole"
 featured_image_caption: |
   <span class="caption">Photo: <a href="https://unsplash.com/@amutiomi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Miguel A. Amutio</a>; <a href="https://unsplash.com/s/photos/communication?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
+
+{{< disclaimer >}}
 
 Modern static websites have many advantages over many old-school dynamic ones---especially those based on [WordPress](https://wordpress.org)---as [noted here recently](/posts/2020/09/normal-persons-guide-static-websites). However, one area where they fall short is the ease, or lack thereof, of providing commenting capabilities.
 

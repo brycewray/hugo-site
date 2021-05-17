@@ -6,7 +6,7 @@ subtitle: "Going all-JavaScript with my Eleventy site"
 description: "Once again, I can’t resist a nerdy challenge."
 author: Bryce Wray
 date: 2020-04-15T17:30:00-05:00
-lastmod: 2021-01-11T12:25:00-06:00
+lastmod: 2021-05-17T12:27:00-05:00
 discussionId: "2020-04-full-11ty-js-monty"
 featured_image: "puzzle-completion-654962_5184x3888.jpg"
 featured_image_width: 5184
@@ -15,6 +15,8 @@ featured_image_alt: "Interlocked pieces of a completed jigsaw puzzle"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/422737-422737/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=654962">Hebi B.</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=654962">Pixabay</a></span>
 ---
+
+{{< disclaimer >}}
 
 Well, wouldn't you know it? My [recent post](/posts/2020/03/back-nunjucks-eleventy-site) notwithstanding, this [Eleventy](https://11ty.dev)-/[webpack](https://webpack.js.org)-based site is now using nothing but [JavaScript-*only*](https://11ty.dev/docs/languages/javascript) [templating](https://11ty.dev/docs/templates). That means .11ty.js template files rather than [.njk](https://11ty.dev/docs/languages/nunjucks) ([Nunjucks](https://mozilla.github.io/nunjucks/)) files.
 

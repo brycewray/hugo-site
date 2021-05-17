@@ -6,7 +6,7 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2020-11-22T10:35:00-06:00
+lastmod: 2021-05-17T12:25:00-05:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: "CSS-code-1797778_1971x1306.jpg"
 featured_image_width: 1971
@@ -16,12 +16,11 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/WojciechKrakowiak-722397/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Wojciech Krakowiak</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Pixabay</a></span>
 ---
 
-**Update, 2020-05-09**: Although it was clear from this take---and what I added at the bottom---that I wasn't crazy about the subject of this post, I later changed my mind and reinstated it, as explained in "[Going solo with Eleventy](/posts/2020/05/going-solo-eleventy)." Still, am leaving this post in place for archival purposes and the sake of [transparency](/posts/2019/10/otoh).
-{.yellowBox}
+{{< disclaimer >}}
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-{{< twitscrn imageUrl="Twitter_1210975092999704578.png" alt="Tweet by @BryceWrayTX, 2019-12-28: Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss, etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?" width="1182" height="516" twitterUrl="https://twitter.com/BryceWrayTX/status/1210975092999704578" >}}
+{{< tweet 1210975092999704578 >}}
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
@@ -31,7 +30,7 @@ Tens of thousands of "[impressions](https://help.twitter.com/en/managing-your-ac
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-{{< twitscrn imageUrl="Twitter_1212496201385418753.png" alt="Tweet by @BryceWrayTX, 2020-01-01: Another holiday, another site spruce-up. Decided to go the @tailwindcss route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄" width="1182" height="636" twitterUrl="https://twitter.com/BryceWrayTX/status/1212496201385418753" >}}
+{{< tweet 1212496201385418753 >}}
 
 ## Not a purist
 
