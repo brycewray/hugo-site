@@ -81,18 +81,35 @@
   display: none;
 }
 
-.yellowBox {
+.yellowBox, .blueBox {
   // font-family: $sans-serif;
   display: block;
   box-sizing: border-box;
-  background: #feef89;
-  border: 1px solid #333;
+  border: 1px solid hsl(0, 0%, 20%);
   margin: 0.5rem auto;
   width: 100%;
   padding: 1.5rem;
   @media (prefers-color-scheme: dark) {
-    background: #332200;
     border: 1px solid $grey-1;
+  }
+}
+
+.yellowBox + hr, .blueBox + hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+  margin-top: 1.75em;
+}
+
+.yellowBox {
+  background: hsl(52, 98%, 77%);
+  @media (prefers-color-scheme: dark) {
+    background: hsl(40, 100%, 10%);
+  }
+}
+
+.blueBox {
+  background: hsl(200, 100%, 95%);
+  font-size: 85%;
+  @media (prefers-color-scheme: dark) {
+    background: hsl(200, 100%, 20%);
   }
 }
 
