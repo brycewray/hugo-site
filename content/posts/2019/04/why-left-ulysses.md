@@ -125,7 +125,7 @@ And, in case you've decided I was being too hasty, that I was letting one odd oc
 
 [^Library]: For further details on how and where the Ulysses Library stores files, see: "The Library, and File Management" in [this article](https://mariusmasalar.me/ulysses-vs-ia-writer-a-new-comparison-7015c899e883/) by Marius Masalar; and "One library" in [this article](https://chrisrosser.net/posts/2017/09/01/ulysses-review/) by Chris Rosser.
 
-Besides: having to evaluate whether a late-2010s writing app will store and sync your content reliably is like having to evaluate whether an NFL running back can carry the ball without fumbling: *that's his frickin' job*.
+Besides: having to evaluate whether a late-2010s writing app will store and sync your content reliably is like having to evaluate whether an NFL running back can carry the ball without fumbling: *that's his frickin’ job*.
 
 A few days after the initial scare, I consulted a fellow writer, blogger, and Ulysses user whose opinions I trust greatly, and asked him whether he'd run into similar problems with Ulysses/iCloud sync. He said he had, multiple times, and that was a major part of why he was considering ditching Ulysses when his own subscription neared its end in a few months.
 

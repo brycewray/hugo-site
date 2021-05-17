@@ -25,7 +25,7 @@ Each client wants its site or site modifications finished yesterday, to perfecti
 **Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more) a few days later, but go ahead and read this one first so you'll have some perspective on that post.
 {.yellowBox}
 
-## Frickin' frameworks?
+## Frickin’ frameworks?
 
 While what I've just pointed out would seem to be not just common sense but "duh"-level common sense, I've read a lot of web-based articles and comments that go all "[No true Scotsman](https://rationalwiki.org/wiki/No_True_Scotsman)" on the notion of a web dev's using a framework. This is especially true for those who are touting the seeming superiority of the [CSS Grid Layout Module](https://www.w3schools.com/css/css_grid.asp) (usually just called _CSS Grid_) over the best-known framework out there, [Bootstrap](https://getbootstrap.com):
 

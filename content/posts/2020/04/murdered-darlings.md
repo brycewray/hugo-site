@@ -64,7 +64,7 @@ Soon, it had been nearly a year since I'd started, and I (naïvely) thought I wa
 
 That's why, in the late summer of 2018, I returned to heavier reading about a subject which had caught my eye earlier in the year as an "Oh-that-sounds-geekily-interesting" item: building websites with [static site generators](https://staticgen.com) (SSGs). I then spent a couple of weekends getting everything set up and, in mid-September, *brycewray.com* went live for the first time. At its birth, the site had just three pages: the home page, the "About" page, and a very short [initial post](/posts/2018/09/hardy-press-wp-ssg-with-twist).
 
-So the site was online. Now I just had to finish the frickin' book.
+So the site was online. Now I just had to finish the frickin’ book.
 
 ## Sticking point
 

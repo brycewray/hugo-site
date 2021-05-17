@@ -61,7 +61,7 @@ And, guess who dings a page's search results downward if the page is comparative
 
 So, what to do?
 
-## Goin' back to the classics---sort of 
+## Goin’ back to the classics---sort of 
 
 What I've chosen, and what quite a few sites have chosen, is to go back in time and trust the so-called "[system fonts stack](https://woorkup.com/system-font/)." That refers to the system-default sans-serif typefaces on people's individual devices. They're already there, and they load virtually instantaneously. If you're doubting the wisdom of such an approach considering my earlier explanation of how that worked in the 1990s, please understand that this is a major case of "That was then and this is now."
 

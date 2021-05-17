@@ -29,13 +29,13 @@ oldComments: |
 
 This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static website](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.
 
-## Keepin' it easy: Go GUI
+## Keepin’ it easy: Go GUI
 
 First, let me harken back to another [previous post](/posts/2018/10/version-control-follies) in which I described how I manage this site through a great [Atlassian](https://atlassian.com) app called [Sourcetree](https://www.sourcetreeapp.com). Quick summary thereof: yes, you **can** use [Git](https://gitscm.com) commands in a command-line interface app to do what I'm going to describe, but there's no real need for it as long as there are user-friendly [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [version-control](https://www.atlassian.com/git/tutorials/what-is-version-control) apps like Sourcetree that let you point and click your way to the same final result.
 
 (Please note that Sourcetree is available only for Windows and macOS, so you Linux users---assuming you aren't already familiar with your Linux distro's Terminal app and Git anyway, which frankly is not that likely, but one never knows---will need to use a [different GUI app](https://www.tecmint.com/best-gui-git-clients-git-repository-viewers-for-linux/) to accomplish this.)
 
-## Knowin' where you're goin'
+## Knowin’ where you're goin’
 
 In that aforementioned post about setting up Hugo, I left you hanging at **STEP 6**, which was:
 

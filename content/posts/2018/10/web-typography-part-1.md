@@ -34,7 +34,7 @@ By "easily readable," I mean:
 	However, there's more to this.
 - **It should have sufficient width**.---With the ready availability of web fonts (a separate subject which I'll address in Part 2), many website designers want to use some of the slick, ultra-thin type they've seen, or implemented, in video or print. And, again, that's fine in sufficiently large **headline** text. But I draw the line on body text for a web page; that's no place for super-thin type. Indeed, it's yet another barrier to sufficient contrast.
 
-## Now that's (not) what I'm talkin' about
+## Now that's (not) what I'm talkin’ about
 
 But, rather than rant aimlessly, let me show you some examples of sins against either or both of these principles of web typography. They were current as of when I originally posted this.
 
