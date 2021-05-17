@@ -214,4 +214,4 @@ If your site can make use of variable fonts, believe me when I tell you: the hoo
 
 [^2]:	The google-webfonts-helper site lets you choose between files and CSS for "Best Support" (.woff2 and .woff, for both modern and obsolete browsers) and "Modern Browsers" (.woff2 only). 
 
-[^3]:	I altered this info from the initial post, in which I said, probably incorrectly, the original file names "are how Google tracks the different versions, and they also serve to 'bust caches' when they change." On later consideration, I decided that probably isn't the case, since the Google servers change what's delivered behind the scenes *without* your changing the URL if you're using Google-served fonts.
+[^3]:	I altered this info from the initial post, in which I said, probably incorrectly, the original file names "are how Google tracks the different versions, and they also serve to 'bust caches’ when they change." On later consideration, I decided that probably isn't the case, since the Google servers change what's delivered behind the scenes *without* your changing the URL if you're using Google-served fonts.
