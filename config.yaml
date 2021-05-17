@@ -53,3 +53,12 @@ outputs:
     - html
     - rss
     - json
+
+privacy:
+  twitter:
+    enableDNT: true
+    simple: true
+
+services:
+  twitter:
+    disableInlineCSS: true
