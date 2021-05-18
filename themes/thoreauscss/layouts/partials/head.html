@@ -89,6 +89,17 @@
   <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" included-domains="brycewray.com,www.brycewray.com" defer></script>
   <!-- / Fathom -->
 
+  <!-- Analytics by volument.com -->
+  <script>
+    function startVolument() {
+      volument.start({
+        token: 'c63cb179db',
+        policy_url: '/privacy',
+      })
+    }
+  </script>
+  <script async src="https://cdn.volument.com/v1/volument-ui.js" onload="startVolument()"></script>
+
   <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#best_practices -->
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   <link rel="preconnect" href="https://cdn.jsdeliver.net" crossorigin />
