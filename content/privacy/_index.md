@@ -27,7 +27,7 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 ### Twitter
 
-I use [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies.
+I use this site's [configuration](https://gohugo.io/about/hugo-and-gdpr/) to embed tweets as purely static content with **no**&nbsp;cookies.
 
 ## Other considerations
 
