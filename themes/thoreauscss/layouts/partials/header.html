@@ -1,92 +1,16 @@
 <header>
-  <nav
-    x-data="{ isOpen: false }"
-    @keydown.escape="isOpen = false"
-  >
-    <!--Logo etc. -->
-    <div class="nav-LogoContainer">
-      <a
-        class="nav-LogoLink"
-        href="/" 
-        aria-label="This site's “BW” logo"
-      >
-        <span class="site-logo"><!-- in TWCSS, was "pl-2" -->
-          {{ partial "svgNavIcon.html"}}
-        </span>
-        </a>
-      </div>
-
-      <!--Toggle button (hidden on large screens)-->
-      <button
-        @click="isOpen = !isOpen"
-        type="button"
-        class="nav-HamburgerButton"
-        :class="{ 'nav-HamburgerButtonAlpine': isOpen }"
-        aria-label="Open mobile menu"
-      >
-        <svg
-          class="nav-HamburgerLogo"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path
-            x-show="isOpen"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-          />
-          <path
-            x-show="!isOpen"
-            fill-rule="evenodd"
-            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-          />
-        </svg>
-      </button>
-
-      <!--Menu-->
-      <div
-        class="nav-Menu" 
-        :class="{ 'nav-MenuAlpine': isOpen, 'nav-MenuAlpineHidden': !isOpen }"
-        @click.away="isOpen = false"
-        x-show.transition="true"
-      >
-        <ul
-          class="nav-MenuUL"
-        >
-          <li class="nav-MenuLI">
-            <a
-              class="nav-MenuLILink"
-              href="/about/"
-              @click="isOpen = false"
-              >About
-            </a>
-          </li>
-          <li class="nav-MenuLI">
-            <a
-              class="nav-MenuLILink"
-              href="/posts/"
-              @click="isOpen = false"
-              >Posts
-            </a>
-          </li>
-          <li class="nav-MenuLI">
-            <a
-              class="nav-MenuLILink"
-              href="/privacy/"
-              @click="isOpen = false"
-              >Privacy
-            </a>
-          </li>
-          <li class="nav-MenuLI">
-            <a
-              class="nav-MenuLILink"
-              href="/contact/"
-              @click="isOpen = false"
-              >Contact
-            </a>
-          </li>
-        </ul>
-      </div>
+  <nav class="nav">
+    <input type="checkbox" id="nav-Checkbox" class="nav-Checkbox">
+    <label for="nav-Checkbox" class="nav-Toggle">
+      <svg class="menu" viewBox="0 0 448 512" width="100" title="bars"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg>
+      <svg class="close" viewBox="0 0 384 512" width="100" title="times"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" /></svg>
+    </label>
+    <ul class="nav-Menu">
+      <li><a href="/" aria-label="Home page">{{ partial "svgNavIcon.html"}}</li>
+        <li><a href="/about/" aria-label="About me">About</a></li>
+        <li><a href="/posts/" aria-label="Posts">Posts</a></li>
+        <li><a href="/privacy/" aria-label="Privacy policy">Privacy</a></li>
+        <li><a href="/contact/" aria-label="Contact me">Contact</a></li>
+      </ul>
     </nav>
   </header>

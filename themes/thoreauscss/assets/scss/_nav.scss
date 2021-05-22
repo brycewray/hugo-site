@@ -1,142 +1,127 @@
-/*
 header {
-  font-family: $sans-serif;
-}
-*/
-
-nav {
-  display: flex;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
   background-color: $black;
-  @media (prefers-color-scheme:dark) {
+  z-index: 9999;
+}
+
+.nav {
+  background-color: $black;
+  color: $white;
+  @media screen and (prefers-color-scheme: dark) {
     background-color: $darkblue;
   }
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0.5rem 1.5rem;
-  width: 100%;
-  @media screen and (min-width: $bkpt_lg) {
-    width: 100%;
-  }
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
+  &-Toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
 
-.nav-LogoContainer {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  color: $white;
-  padding-left: 0.5rem;
-  margin-right: 1.5rem;
-}
+    svg {
+      width: 1.5rem;
+      fill: $white;
+    }
+    .close {
+      display: none;
+    }
+    .menu {
+      margin-top: 0.2rem;
+    }
+  }
 
-a.nav-LogoLink { // yes, this specificity is required
-  color: $white;
-  font-size: $sortabig; // only if text instead of logo
-  text-decoration: none;
-  border: 0;
-  &:hover {
-    color: $grey-2;
-  }
-  @media screen and (min-width: $bkpt_lg) {
-    font-size: $stdsize; // only if text instead of logo
-  }
-}
-
-.nav-HamburgerButton {
-  display: block;
-  background-color: transparent;
-  border: 0;
-  padding: 0 1.5rem;
-  margin-right: 2em;
-  color: $white;
-  &:hover {
-    color: $grey-2;
-  }
-  &:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    color: $white;
-  }
-  @media screen and (min-width: $bkpt_lg) {
+  &-Checkbox {
     display: none;
   }
-}
 
-.nav-HamburgerButtonAlpine {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.nav-HamburgerLogo {
-  height: 1.5rem;
-  width: 1.5rem;
-  fill: currentColor;
-}
-
-.nav-Menu {
-  width: 100%;
-  flex-grow: 1;
-  display: none;
-  @media screen and (min-width: $bkpt_lg) {
+  &-Menu {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    background-color: $black;
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: $darkblue;
+    }
     display: flex;
-    align-items: center;
-    width: auto;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: right;
+    // align-items: right;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    li {
+      list-style: none;
+      display: none;
+      font-weight: bold;
+      padding-right: 0.75em;
+
+      &:first-child {
+        padding: 0;
+        margin-right: auto;
+        margin-left: 1.5rem;
+        display: block;
+        svg { // for site logo
+          width: auto;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      border: 0;
+      color: $white;
+    }
+
+    svg {
+      width: 1.5rem;
+      fill: $white;
+    }
   }
 }
 
-.nav-MenuAlpine {
+#nav-Checkbox:checked ~ ul.nav-Menu li {
   display: block;
 }
 
-.nav-MenuAlpineHidden {
+#nav-Checkbox:checked ~ label.nav-Toggle .close {
+  display: block;
+}
+
+#nav-Checkbox:checked ~ label.nav-Toggle .menu {
   display: none;
-  @media screen and (min-width: $bkpt_lg) {
-    display: block;
-  }
 }
 
-.nav-MenuUL {
-  padding-top: 0;
-  padding-right: 3rem;
-  list-style-type: none;
-  align-items: center;
-  text-align: right;
-  @media screen and (min-width: $bkpt_lg) {
-    padding-right: 2rem;
-    display: flex;
-    justify-content: flex-end;
-    flex: 1 1 0%;
-    margin: 0;
-  }
+#nav-Checkbox:checked ~ ul.nav-Menu {
+  padding-bottom: 1rem;
 }
 
-.nav-MenuLI {
-  font-size: 1.125rem;
-  font-weight: bold;
-  line-height: 1.75rem;
-  padding-top: 0;
-  @media screen and (min-width: $bkpt_lg) {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    margin: 0;
-    padding-right: 2rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  }
-}
+// now, larger screens
 
-.nav-MenuLILink {
-  display: inline-block;
-  padding: 0.5rem 0;
-  color: $white;
-  border-width: 0;
-  &:hover {
-    border-width: 0;
-    color: $grey-2;
-    text-decoration: none;
+@media only screen and (min-width: $bkpt_lg) {
+  .nav {
+    &-Toggle {
+      display: none;
+    }
+
+    &-Menu {
+      flex-direction: row;
+      padding: 0;
+      gap: 1.5rem;
+      margin: 0.5rem 1.5rem 0 0;
+
+      li {
+        font-size: $pokey;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        margin: 0.5rem 0 0.5rem 0;
+        // padding: 0;
+
+        &:first-child {
+          letter-spacing: normal;
+          line-height: 0;
+          margin-top: 0;
+        }
+      }
+    }
   }
 }
