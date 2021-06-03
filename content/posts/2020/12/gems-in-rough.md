@@ -5,7 +5,7 @@ subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
 date: 2020-12-21T12:10:00-06:00
-lastmod: 2020-12-22T13:50:00-06:00
+lastmod: 2021-06-03T06:43:00-05:00
 #draft: false
 discussionId: "2020-12-gems-in-rough"
 featured_image: "gems-836763_5184x3456.jpg"
@@ -124,12 +124,12 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
 .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
   font-variation-settings: 'slnt' -8;
   /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, 
-     so we override that below with the @-moz-document url-prefix media query for Firefox */
+     so we override that below with the media query for Firefox */
   font-style: oblique 8deg;
   /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
 }
 
-@-moz-document url-prefix() {
+@supports (-moz-appearance: none) {
   .italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
     /* font-variation-settings: normal; */
     font-style: normal;

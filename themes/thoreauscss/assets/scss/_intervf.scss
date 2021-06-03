@@ -1,15 +1,15 @@
-// === handling Inter VF obliquing
-.italic, i, cite, em, var, address, dfn, h3, h5, h6 {  /* dealing with Inter VF */
+/* === handling Inter VF obliquing */
+.italic, i, cite, em, var, address, dfn, h3, h5 {  /* dealing with Inter VF */
   font-variation-settings: 'slnt' -8;
-  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, so we override that below with the @-moz-document url-prefix media query for Firefox */
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, so we override that below with the media query for Firefox */
   font-style: oblique 8deg;
   /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
 }
 
-@-moz-document url-prefix() {
-  .italic, i, cite, em, var, address, dfn, h3, h5, h6 {
-    // font-variation-settings: normal;
+@supports (-moz-appearance: none) {
+  .italic, i, cite, em, var, address, dfn, h3, h5 {
+    /* font-variation-settings: normal; */
     font-style: normal;
   }
 }
-// === end, handling Inter VF obliquing
+/* === end, handling Inter VF obliquing */
