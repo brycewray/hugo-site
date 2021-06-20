@@ -1,0 +1,30 @@
+---
+layout: singlepost
+title: "Mixed nuts • June, 2021"
+subtitle: "More miscellany for your mental masochism"
+description: "The latest set of “takes” that don’t all fit in any one category."
+author: Bryce Wray
+date: 2021-06-11T16:30:00-05:00
+#lastmod:
+discussionId: "2021-06-mixed-nuts-2021-06"
+featured_image: "nuts-5503118_6000x4000.jpg"
+featured_image_width: 6000
+featured_image_height: 4000
+featured_image_alt: "Concept image: mixed nuts on a tabletop"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
+---
+
+It's time once again to bounce around a few miscellaneous observations that, in fact, already been bouncing in my brain like pinballs in a particularly old and janky machine. And I will try not to take too much offense at that reference on my own part.
+
+---
+
+Everyday life with the internet requires manipulating passwords for a ridiculous number of sites and services. A common, but dangerous, response to that requirement is to use the same password on multiple sites. It's dangerous because, if *any one* of those sites gets cracked, the bad actors have your access to *all* of them. The smart response is to have a different and unguessable password on each site, and then [use a password manager app](https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started/)---preferably as cross-platform as possible---to keep them all straight. The one I've used for several years is [1Password](https://1password.com), but I've recently also begun using the [open-source](https://en.wikipedia.org/wiki/Open-source_software) [Bitwarden](https://bitwarden.com). 1Password has a free trial, after which it costs around $50/year. Bitwarden has a totally free version, although a $10/year subscription adds several highly desirable features, not to mention it's a low-pain way of supporting a worthy vendor in this space.
+
+*Also on the subject of personal cybersecurity: it was [announced](https://9to5mac.com/2021/06/07/ios-15-ipados-15-and-macos-monterey-gain-built-in-two-factor-code-generator-and-autofill/) at this week's 2021 edition of the [Apple Worldwide Developers Conference (WWDC)](https://en.wikipedia.org/wiki/Apple_Worldwide_Developers_Conference) that this fall's next major versions of iOS and macOS will make [time-based one-time password (TOTP) authentication](https://datatracker.ietf.org/doc/html/rfc6238) a built-in feature of the [iCloud Keychain](https://support.apple.com/en-us/HT204085). To my admittedly limited knowledge, they will be the first OSs with baked-in TOTP handling. Especially where the smartphone market is concerned, it remains to be seen how disruptive this may be to standalone password management providers such as, say, 1Password and Bitwarden.*
+
+If my recent visits to the [Firefox subreddit](https://reddit.com/r/firefox) constitute any indication, the Firefox community is sharply divided over the release of [the Proton UI in Firefox 89](https://www.xda-developers.com/mozilla-releases-firefox-89-update-with-new-proton-design/). I kinda like it myself; but my main problem with the latest ’fox version is that it seems to be a considerably greedier memory hog on macOS than Microsoft Edge, much less the memory-sippin' Safari (but definitely not the famously hungry Chrome). Speaking of Safari, it'll be getting a lot of new features this fall on both iOS and macOS, as [this WWDC 2021 video](https://developer.apple.com/videos/play/wwdc2021/10104/) makes clear.
+
+*It's not hard to find various ’net-based paeans to [VSCodium](https://vscodium.com/), which is a fully open-source version of the mostly-but-not-fully-open-source [Visual Studio Code](https://code.visualstudio.com). I gave VSCodium a try but didn't like how some of my favorite extensions, or at least their latest versions, are unavailable for it. I also disliked the hacky ways some suggest for getting around that, with which I simply chose not to futz. Given that VSCodium's main advantage over VS Code is that the former lacks Microsoft tracking but I already use Microsoft apps that, yeah, track me, I'll stick with the real thing. (I still use [Panic](https://panic.com)'s [Nova](https://nova.app), too, but not nearly as often.)*
+
+To end on an extremely non-techy note: it's nice when I can occasionally mosey out as a COVID-19-vaccinated human here in my little corner of the planet, especially when it's time to gather with similarly vaccinated relatives for a meal at a restaurant, something we wouldn't have considered not so long ago. One obviously also must be aware that the virus itself is far from ceasing its assault (especially in other parts of the world), but at least now---if/when you can get a vaccine to people and, just as important, get people to *accept* a vaccine---there would **appear** to be something of an end in sight for this trouble, albeit that it's taking its sweet time in arriving.
