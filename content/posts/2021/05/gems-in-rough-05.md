@@ -51,7 +51,7 @@ Another PostCSS 8-incompatible plugin I had to replace is [postcss-clean](https:
 Here's the latest on where the Hugo SSG stands regarding some shortcomings I mentioned in earlier articles:
 
 - [No compatibility yet](https://github.com/gohugoio/hugo/issues/8343) with the [JIT mode](https://tailwindcss.com/docs/just-in-time-mode) in [Tailwind CSS](https://tailwindcss.com) 2.1+.
-- [Not yet using Dart Sass](https://github.com/gohugoio/hugo/issues/8299), rather than the [deprecated Libsass](https://sass-lang.com/blog/libsass-is-deprecated), for [Sass/SCSS](https://sass-lang.com) support.
+- [Not yet using Dart Sass](https://github.com/gohugoio/hugo/issues/8299), rather than the [deprecated LibSass](https://sass-lang.com/blog/libsass-is-deprecated), for [Sass/SCSS](https://sass-lang.com) support.
 - No fix yet to [punctuation glitches](https://github.com/yuin/goldmark/issues/180) in the [goldmark](https://github.com/yuin/goldmark) parser Hugo uses to handle [Markdown](https://daringfireball.net/projects/markdown).
 
 While [Hugo's status as a single binary](https://discourse.gohugo.io/t/what-will-2021-bring-for-hugo/31098/5) can be a good thing when one doesn't want to deal with the many dependencies (as in the aforementioned PostCSS weirdness) required by most other popular SSGs, that also can suck in cases like these because the user, unable to "get under the hood," has to wait for remedies from the Hugo dev team and the developers of various external packages on which Hugo relies.
