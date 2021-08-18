@@ -5,7 +5,7 @@ subtitle: "Another set of SSG-centric suggestions"
 description: "Hiding “future” posts in Eleventy, life with Vercel (nearly) a year later, and other items that may interest static site generator users."
 author: Bryce Wray
 date: 2021-06-21T16:30:00-05:00
-#lastmod:
+lastmod: 2021-08-05T16:02:00-05:00
 discussionId: "2021-06-gems-in-rough-06"
 featured_image: "gems--e-mens-3Iv9FS_1RBQ-unsplash_3879x2650.jpg"
 featured_image_width: 3879
@@ -48,4 +48,7 @@ The latest version of Hugo, 0.84.0, [emerged on June 18](https://gohugo.io/news/
 
 Mainly due to the first two, I have temporarily ceased updating my [two Hugo starter sets](/posts/2021/03/beginners-luck-update/), one of which would benefit greatly from Tailwind's JIT mode while the other would be better with Dart Sass rather than LibSass. Mind you, I harbor no illusions that the Hugo community will be broken-hearted by this decision. Still, when things change on either of these fronts, I'll act accordingly.
 
-As for the third issue, I have **no** expectation that it will be resolved; I don't think the goldmark dev is interested in fixing it. The only alternative seems to be [reverting to the blackfriday parser](https://gohugo.io/getting-started/configuration-markup/#blackfriday), which [goldmark replaced in Hugo 0.60.0](https://gohugo.io/news/0.60.0-relnotes/), but I can tell you that it's not a foolproof fix **even if** we could assume Hugo will continue to support blackfriday indefinitely---which we can't, because it won't. For one thing, my recent tests show that using blackfriday with the current version of Hugo can result in occasional weirdness (*e.g.*, a footnote numbered *0* which wasn't even the first footnote in the document). Would using it with, say, a version *prior to* 0.60.0 allow blackfriday to work properly? Perhaps. But Hugo's added many enhancements since the pre-0.60.0 days. I'm not going to tell the starter sets' potential users to give up those goodies just for the proper punctuation that goldmark is incapable of providing.
+As for the third issue, I have **no** expectation that it will be resolved; I don't think the goldmark dev is interested in fixing it. The only alternative seems to be [reverting to the Blackfriday parser](https://gohugo.io/getting-started/configuration-markup/#blackfriday), which [goldmark replaced in Hugo 0.60.0](https://gohugo.io/news/0.60.0-relnotes/), but I can tell you that it's not a foolproof fix **even if** we could assume Hugo will continue to support Blackfriday indefinitely---which we can't, because it won't. For one thing, my recent tests show that using Blackfriday with the current version of Hugo can result in occasional weirdness (*e.g.*, a footnote numbered *0* which wasn't even the first footnote in the document). Would using it with, say, a version *prior to* 0.60.0 allow Blackfriday to work properly? Perhaps. But Hugo's added many enhancements since the pre-0.60.0 days. I'm not going to tell the starter sets' potential users to give up those goodies just for the proper punctuation that goldmark is incapable of providing.
+
+**Update, 2021-08-05**: The [release of Hugo 0.87.0](https://gohugo.io/news/0.87.0-relnotes/) included the [deprecation of Blackfriday](https://github.com/gohugoio/hugo/commit/c7252224c4fecfe8321f31b901e2510d98b657c4).
+{.yellowBox}

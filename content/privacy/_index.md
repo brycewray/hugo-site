@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-05-18T08:23:00-05:00
+lastmod: 2021-08-15T16:52:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -27,7 +27,7 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 ### Twitter
 
-I use this site's [configuration](https://gohugo.io/about/hugo-and-gdpr/) to embed tweets as purely static content with **no**&nbsp;cookies.
+This site *quotes* tweets in the form of purely static text (with, obviously, no tracking involved), rather than embeds of any kind.
 
 ## Other considerations
 

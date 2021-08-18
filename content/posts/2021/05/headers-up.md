@@ -5,7 +5,7 @@ subtitle: "Managing caching and FLOC"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-05-01T11:43:00-05:00
-lastmod: 2021-05-02T11:33:00-05:00
+lastmod: 2021-06-20T10:49:00-05:00
 discussionId: "2021-05-headers-up"
 featured_image: "server-room-90389_4818x3212.jpg"
 featured_image_width: 4818
@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/kewl-24755/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=90389">kewl</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=90389">Pixabay</a></span>
 ---
 
-As I wrote [a few months ago](/posts/2020/11/fast-but-flawed), [Cloudflare Pages](https://pages.cloudflare.com)---which has since [emerged from beta testing](https://blog.cloudflare.com/cloudflare-pages-ga/)---is yet another in a growing list of [places](/posts/2020/09/normal-persons-guide-static-website-hosting) where you can host [static websites](/posts/2020/09/normal-persons-guide-static-websites). Back then, I dinged it for not giving you the ability to edit the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) of a Pages site's content, so you can control how a browser [caches](https://web.dev/http-cache/) that content for better performance.
+As I wrote [a few months ago](/posts/2021/01/beta-testing-cloudflare-pages), [Cloudflare Pages](https://pages.cloudflare.com)---which has since [emerged from beta testing](https://blog.cloudflare.com/cloudflare-pages-ga/)---is yet another in a growing list of [places](/posts/2020/09/normal-persons-guide-static-website-hosting) where you can host [static websites](/posts/2020/09/normal-persons-guide-static-websites). Back then, I dinged it for not giving you the ability to edit the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) of a Pages site's content so you can control how a browser [caches](https://web.dev/http-cache/) that content for better performance.
 
 Cloudflare Pages still lacks that ability at this writing. When you ask Pages-knowledgeable folks about it, the typical answer is that you should put a [Cloudflare Worker](https://workers.cloudflare.com) "in front of" a Pages site and manage its headers that way. Although I'd dabbled with Workers [before](/posts/2020/10/forward-paas), it was only as a way of using [Cloudflare Workers sites](https://developers.cloudflare.com/workers/platform/sites) and not in conjunction with Pages sites, so I didn't know how to proceed.
 
@@ -41,7 +41,7 @@ I gratefully replied:
 
 In this scenario, your website's DNS is managed in Cloudflare, where your DNS settings screen shows info like this: 
 
-{{< imgc src="screen-cap-cloudflare-DNS_edit_1040x609.png" alt="Cloudflare DNS settings display" width="1040" height="609" >}}
+{% imgc "screen-cap-cloudflare-DNS_edit_1040x609.png", "Cloudflare DNS settings display", 1040, 609 %}
 
 You'll see here that there are two entries[^DNSitems] with the little orange cloud icon and the word "Proxied" under "Proxy status," each referring to an item under "Content" that ends in `.pages.dev` (the default subdomain for a Cloudflare Pages site before one assigns a custom domain to it). With these settings, every hit on the site gets *proxied*---essentially, intercepted---so Cloudflare can do things with it.
 
@@ -53,7 +53,9 @@ If you simply leave such settings as they are and do no more, this enables Cloud
 
 My original reason for caring about all this was because I really wanted a way to edit a Pages site's *existing* HTTP headers, specifically for `Cache-Control`. But, in recent days, I learned of a relatively new header that I wanted to *add*.
 
-In case you haven't yet heard, there's a big flap in Websitedom over Google's new tracking method, **[FLOC](https://www.howtogeek.com/724441/what-is-googles-floc-and-how-will-it-track-you-online/)** (Federated Learning of Cohorts). I am **not** a FLOC fan by any means; so, when I found a blog post called "[Opting your Website out of Google's FLOC Network](https://paramdeo.com//blog/opting-your-website-out-of-googles-floc-network)," I quickly followed its instructions and added a no-FLOC header to my existing site. At that time, the site was on [Vercel](https://vercel.com), which makes such header edits easy through use of a [`vercel.json` configuration file](https://vercel.com/docs/configuration) in the project's top level.
+In case you haven't yet heard, there's a big flap in Websitedom over Google's new tracking method, **[FLOC](https://www.howtogeek.com/724441/what-is-googles-floc-and-how-will-it-track-you-online/)** (Federated Learning of Cohorts). I am **not** a FLOC fan by any means; so, when I found a blog post called "[Opting your Website out of Google's FLOC Network](https://paramdeo.com//blog/opting-your-website-out-of-googles-floc-network)," I quickly followed its instructions and added a no-FLOC header to my existing site. At that time, the site was on [Vercel](https://vercel.com), which makes such header edits easy through use of a [`vercel.json` configuration file](https://vercel.com/docs/configuration) in the project's top level.[^moreOnFLOC]
+
+[^moreOnFLOC]: In fairness, I must also note that there are [opposing views](https://seirdy.one/2021/04/16/permissions-policy-floc-misinfo.html) on the need for this.
 
 Consequently, I now had another reason to learn how to manage a Pages site's HTTP headers.
 

@@ -6,7 +6,7 @@ subtitle: "An “interesting” learning experience"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2021-05-17T12:19:00-05:00
+lastmod: 2021-06-16T15:31:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_closer_3200x1800.jpg
 featured_image_width: 3200
@@ -270,7 +270,11 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-{{< tweet 1150104013871955971 >}}
+> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
+>
+> Will have more to say about this in a future post, but am keeping [brycewray.com](http://brycewray.com/) firmly within [@GoHugoIO](https://twitter.com/GoHugoIO) after three weekends’ worth of experimentation with [@gatsbyjs](https://twitter.com/gatsbyjs) and some other kewl kids. [#StayWithTheBest](https://twitter.com/hashtag/StayWithTheBest)
+>
+> [1:05 PM • Jul 13, 2019](https://twitter.com/BryceWrayTX/status/1150104013871955971) (CDT)
 
 ## "Interesting," indeed
 

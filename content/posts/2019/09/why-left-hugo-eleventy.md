@@ -6,7 +6,7 @@ subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2021-05-17T12:21:00-05:00
+lastmod: 2021-06-16T15:48:00-05:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
@@ -26,7 +26,7 @@ oldComments: |
       <p class="comment">Thank you. Yes, until Gatsby Experiment I, I&rsquo;d never heard of it, either, and at first I erroneously lumped it in with the others as not quite sufficient for my needs. Once I read its docs more thoroughly and got a better grasp of its extensibility, I realized I&rsquo;d missed the point entirely &mdash; as at least one triumphant Eleventy supporter reminded me yesterday after I released this post. :-)</p>
     
       <p class="commentName"><strong>Magnus Lindberg</strong> <span class="commentName"><em>2019-09-30</em></span></p>
-      <p class="comment">Thanks for this writeup about 11ty :- ) I'm about to create a blog for Talkyard, ... and found your article about 11ty when searching for 11ty versus Gatsby. To me, Gatsby is ... complicated. And with cryptic error messages that make my blood pressure rise. <span style="font-size: 0.75em;">(Maybe I'll want to use Gatsby for the main website, some time later, which might need complicated sliders and buttons and widgets, hmm.)</span></p>
+      <p class="comment">Thanks for this writeup about 11ty :- ) I'm about to create a blog for Talkyard, ... and found your article about 11ty when searching for 11ty versus Gatsby. To me, Gatsby is ... complicated. And with cryptic error messages that make my blood pressure rise. <span class="seventyFive">(Maybe I'll want to use Gatsby for the main website, some time later, which might need complicated sliders and buttons and widgets, hmm.)</span></p>
       <p class="comment">Nice to read that 11ty seems to be as simple as I originally expected all static gens to be :- )<br />
       (I noticed you've since switched back to Hugo, however, for me, probably 11ty is better &mdash; I think I'll need Javascript plugins.)</p>
       <p class="comment">Going to try this theme: <a href="https://hylia.website/posts/a-simple-post/" target="_blank" rel="noopener">https://hylia.website/posts/a-simple-post/</a></p>
@@ -36,7 +36,7 @@ oldComments: |
     </div>
 ---
 
-{{< disclaimer >}}
+{% disclaimer %}
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
 
@@ -84,7 +84,7 @@ Oh, and remember what I said about struggling to figure out how to get images to
 
 > You have thousands of images and need to dynamically reference their paths.[^imageCount]
 
-[^imageCount]: No, I don't yet have thousands of images in this site,  but I already have 'waaay too many to handle via the tedious, "one-off"-ish Gatsby process, and the number will only grow.
+[^imageCount]: No, I don't yet have thousands of images in this site,  but I already have ’waaay too many to handle via the tedious, "one-off"-ish Gatsby process, and the number will only grow.
 
 "Edge case," my big, fat heinie. As if I were actually going to do an *individual* importation of *each image*, which is the [Gatsby way](https://www.gatsbyjs.org/docs/importing-assets-into-files/), rather than make calls from templates to automate the process from front matter, *which is the frickin'* ***SSG way!***
 
@@ -163,7 +163,7 @@ I had a few (mostly self-inflicted) difficulties getting them going but the resu
 
 In the case of Gatsby, I'd managed to get the "smart" typography and, usually, good code block formatting---but automated footnotes were glitchy and often nonfunctional (as I [previously explained](/posts/2019/07/why-staying-with-hugo)).
 
-And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is 'waaaaay easier and more stable.
+And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is ’waaaaay easier and more stable.
 
 ### Sassy stuff
 
@@ -203,7 +203,7 @@ Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particu
 
 [^graphqlExpII]: Indeed, the Straw That Broke the Camel's Back for Gatsby Experiment II was when I couldn't *reliably* make GraphQL "see" each post's featured image *as* an image rather than a string, no matter how many ways I tried or how many tutorials I followed slavishly over a week's time. And only if you *can* get GraphQL to "see" an image can you make Gatsby apply all the admittedly cool features available through [Gatsby Image](https://www.gatsbyjs.org/docs/using-gatsby-image/), so that's where I drew the line the second and final time around with Gatsby.
 
-Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others’ code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
+Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others' code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
 
 ### It's far more robust than Gatsby
 
@@ -217,15 +217,20 @@ It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---
 
 [^privacy]: The embedded tweets that formerly were in this part on the page are now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy).
 
-While we're on the subject of speed: while I was working on this post, I saw these Leatherman tweets from, respectively, his personal account and the Eleventy account:
+While we're on the subject of speed: while I was working on this post, I saw this Leatherman tweet:
 
-{{< tweet 1169998370041208832 >}}
+> [Zach Leatherman • @zachleat](https://twitter.com/zachleat)
+>
+> Which has a better First Meaningful Paint time?
+>
+> ① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br />
+> ② a client rendered React site with exactly one tweet on it
+>
+> (Spoiler: [@____lighthouse](https://twitter.com/____lighthouse) reports 8.5MB of HTML wins by about 200ms)
+>
+> [10:38 AM • Sep 6, 2019](https://twitter.com/zachleat/status/1169998370041208832) (CDT)
 
-React. Hmm. Wonder whom he might be zinging there?
-
-{{< tweet 1170187490952712192 >}}
-
-Good job, sir. In the case of that last tweet in particular: given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
+React. Hmm. Wonder whom he might be zinging there? Good job, sir. Given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
 
 [^tweetEase]: And I would be sorely remiss here if I didn't mention how **freaking easy** it is to embed tweets, Twitter cards, and Twitter timelines within Eleventy-generated content. With Gatsby, it's sufficiently fussy about JavaScript from elsewhere that you need one or more plugins---and sometimes they work and sometimes they don't. In my experience, it was mostly "don't." But, with Eleventy (as is true for Hugo), you just **paste in the embed code from Twitter** as the Internet gods intended.
 
@@ -237,7 +242,7 @@ I fully intend to stay current with *both* of what I now believe are the two bes
 
 [^bitToGit]: Another transition may be in the works on that front, too; since back before Gatsby Experiment I, I've been considering switching the web's "source of truth" for this site to either GitHub or GitLab. I can see good arguments for each, as well as for just sticking with Bitbucket, so this call remains in the air.
 
-Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts’ main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts’ front matter and purely textual parts of their body copy are now totally portable.
+Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts' main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts' front matter and purely textual parts of their body copy are now totally portable.
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 

@@ -6,14 +6,14 @@ subtitle: "Considering MailMate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
-lastmod: 2021-05-17T10:49:00-05:00
+lastmod: 2021-06-16T15:28:00-05:00
 discussionId: "2019-06-ahoy-mate"
-featured_image: "MailMate_screen_cap_1619x720.jpg"
-featured_image_width: 1619
-featured_image_height: 720
-featured_image_alt: "Screen capture of the MailMate app"
+featured_image: "p-o-boxes--elizabeth-kay-9szCcOw4BWo-unsplash_3634x2725.jpg"
+featured_image_width: 3634
+featured_image_height: 2725
+featured_image_alt: "Old-style post office boxes"
 featured_image_caption: |
-  <span class="caption">Image: Screen capture of MailMate, with its Latin-displaying &ldquo;distortion mode&rdquo; engaged for privacy&rsquo;s sake</span>
+  <span class="caption">Image: <a href="https://unsplash.com/@elizabeth_kay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elizabeth Kay</a>; <a href="https://unsplash.com/s/photos/mail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
@@ -44,6 +44,10 @@ My [last post](/posts/2019/05/the-holy-mail) closed with:
 And that continues, as I have become interested in [MailMate](https://freron.com). This macOS-only, [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)-only app is a creation of Benny Kjær Nielsen, a Danish indie developer and holder of a doctorate in computer science.
 
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much---and that's fine with the good doctor, not to mention the app's many adherents.
+
+{{< imgc src="MailMate_screen_cap_1619x720.jpg" alt="Screen capture of the MailMate app" width="1619" height="720" >}}
+
+{{% caption %}}Image: Screen capture of MailMate, with its Latin-displaying "distortion mode" engaged for privacy's sake.{{% /caption %}}
 
 ## Power trip
 
@@ -119,4 +123,8 @@ However, the answers were "No" and "No." The [changes in Apple Mail in Catalina]
 
 My tweet tonight says it all:
 
-{{< tweet 1138614802518020096 >}}
+> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
+>
+> Bought a license for, and became a patron of, [@mailmateapp](https://twitter.com/mailmateapp). Very impressed with the software and the developer, as I made clear in my recent post: [brycewray.com/posts/2019/06/ahoy-mate](https://brycewray.com/posts/2019/06/ahoy-mate)
+>
+> [8:11 PM • Jun 11, 2019](https://twitter.com/BryceWrayTX/status/1138614802518020096) (CDT)

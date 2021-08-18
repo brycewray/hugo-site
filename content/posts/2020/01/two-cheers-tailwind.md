@@ -6,7 +6,7 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2021-05-17T12:25:00-05:00
+lastmod: 2021-06-16T15:54:00-05:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: "CSS-code-1797778_1971x1306.jpg"
 featured_image_width: 1971
@@ -16,11 +16,15 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/WojciechKrakowiak-722397/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Wojciech Krakowiak</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{% disclaimer %}
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-{{< tweet 1210975092999704578 >}}
+> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
+>
+> Reading about [@tailwindcss](https://twitter.com/tailwindcss) and other [#atomicCSS](https://twitter.com/hashtag/atomicCSS) approaches ([@tachyons_css](https://twitter.com/tachyons_css), [@basscss](https://twitter.com/basscss), etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal Web site with one maintainer (HTML and CSS)? Worth it then?
+>
+> [11:25 AM • Dec 28, 2019](https://twitter.com/BryceWrayTX/status/1210975092999704578) (CST)
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
@@ -30,7 +34,12 @@ Tens of thousands of "[impressions](https://help.twitter.com/en/managing-your-ac
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-{{< tweet 1212496201385418753 >}}
+> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
+>
+> Another holiday, another site spruce-up. Decided to go the [@tailwindcss](https://twitter.com/tailwindcss) route, as recommended by so many this past weekend --- and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄<br />
+> [buff.ly/2CGRCRK](https://buff.ly/2CGRCRK)
+>
+> [4:09 PM • Jan 1, 2020](https://twitter.com/BryceWrayTX/status/1212496201385418753) (CST)
 
 ## Not a purist
 
@@ -83,7 +92,7 @@ What I'm saying, then, is that any concerns I have about this approach definitel
 
 I guess what still mainly bugs me is the whole idea of whether, specifically for an [SSG](https://staticgen.com)-built site like mine that depends so heavily on a small number of [templates](https://www.11ty.dev/docs/templates/), I might not be better off just going back to a less utilitarian method. Am I really gaining anything from this build-the-appearance-one-Lego-block-at-a-time approach? Would I be wiser just to revert to the way I was doing it before?
 
-By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to Sass/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used Sass/SCSS. In fact, what PostCSS enables is pretty frickin’ amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
+By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to Sass/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used Sass/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
 ## We shall see---as usual
 
@@ -106,8 +115,7 @@ Finally, here are the best from among the many articles I've been reading (often
 - "[In Defense of Functional CSS](https://critter.blog/2018/06/08/in-defense-of-functional-css/)" by Mike Crittenden.
 - "[Why I Haven't Jumped on the Tailwind CSS Bandwagon](https://block81.com/blog/why-i-havent-jumped-on-the-tailwind-css-bandwagon)" by Angie Herrera.
 
-
-<hr style="margin-bottom: 1em;" />
+---
 
 ## *Update, 2020-01-18*
 
@@ -119,7 +127,7 @@ However, as I hinted above would be the case were I to eschew the utility-first 
 
 Why?
 
-Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in Sass/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers’ support for it, is getting better all the time and that's where the action is.
+Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in Sass/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers' support for it, is getting better all the time and that's where the action is.
 
 I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) to browser-friendly CSS. Quite frankly, using Sass/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
 
