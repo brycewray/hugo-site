@@ -1,0 +1,168 @@
+@use 'variables' as var;
+
+// === posts and post lists
+
+.posts {
+  &-pagerGray {
+    color: $grey-2;
+  }
+  &-pagerThingP {
+    text-align: center;
+    font-size: $pokey;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  &-Container {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    @media screen and (min-width: $bkpt_lg) {
+      width: 75%;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      width: 62.5%
+    }
+  }
+  &-Head {
+    padding-top: 2.5rem;
+    font-size: 2.5rem;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.25em;
+    @media screen and (min-width: $bkpt_md) {
+      padding-top: 2rem;
+      font-size: 2.75rem;
+    }
+    @media screen and (min-width: $bkpt_lg) {
+      padding-top: 3.25rem;
+      font-size: 3rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      padding-top: 4rem;
+      font-size: 3.5rem;
+    }
+  }
+  &-Title {
+    margin-bottom: 0.25em;
+    padding: 0;
+    font-size: 1.75rem;
+    letter-spacing: -0.025em;
+    @media screen and (min-width: $bkpt_lg) {
+      font-size: 1.875rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      font-size: 2rem;
+    }
+  }
+  &-Subtitle {
+    letter-spacing: -0.0125em;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    @media screen and (min-width: $bkpt_lg) {
+      font-size: 1.375rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      font-size: 1.5rem;
+    }
+  }
+  &-Dates {
+    font-size: 1rem;
+    line-height: 1.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    @media screen and (min-width: $bkpt_lg) {
+      font-size: 1.125rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      font-size: 1.25rem;
+    }
+  }
+  &-Description {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    @media screen and (min-width: $bkpt_lg) {
+      font-size: 1.125rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      font-size: 1.25rem;
+    }
+  }
+  &-ReadingTime {
+    margin-top: 0;
+    margin-bottom: 3em;
+    font-size: 0.625rem;
+    @media screen and (min-width: $bkpt_lg) {
+      font-size: 0.75rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.post-line {
+  border-top: 0.2rem solid $darkblue;
+  @media screen and (prefers-color-scheme: dark) {
+    border-color: hsl(0, 0%, 100%);
+  }
+  display: block;
+  margin: 0 auto 2rem;
+  width: 15rem;
+}
+
+.bg-dark {
+  margin-top: 2.5rem;
+  background-color: black;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $darkblue;
+  }
+  padding: 0.5rem 0 1rem 0;
+  div, p {
+    color: hsl(0, 0%, 100%);
+  }
+  h3, p {
+    margin: 0;
+    padding: 0.15rem 0;
+  }
+  h3.prevnextH3 {
+    font-size: 1.875rem;
+  }
+  p.prevnextP {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.25rem;
+  }
+  a, a:hover, a:focus {
+    color: hsl(204, 100%, 83%) !important;
+  }
+  a {
+    border-bottom: 0;
+  }
+  a:hover, a:focus {
+    border-bottom: 1px solid hsl(204, 100%, 83%) !important;
+  }
+}
+
+hr.paginatorTop, hr.paginatorBottom {
+  width: 65%;
+  @media screen and (min-width: $bkpt_lg) {
+    width: 50%;
+  }
+  @media screen and (min-width: $bkpt_2xl) {
+    width: 40%;
+  }
+}
+
+hr.paginatorTop {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+hr.paginatorBottom {
+  margin-top: 2em;
+}
+
+// === end, posts and post lists

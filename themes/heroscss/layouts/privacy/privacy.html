@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+  {{ partial "billboard.html" . }}
+
+  <div class="container-narrower">
+    <article class="article">
+      <div class="post-line"></div>
+      {{ .Content }}
+    </article>
+  </div>
+
+{{ end }}

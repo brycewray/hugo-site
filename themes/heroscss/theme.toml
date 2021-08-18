@@ -1,0 +1,11 @@
+name = "heroscss"
+license = "MIT"
+description = "Back to hero images; originally based on a Hugo theme called “Tale” but now with little resemblance thereto."
+min_version = "0.87.0"
+
+tags = ["tags"]
+
+[author]
+  name = "Bryce Wray"
+  homepage = "https://brycewray.com/"
+

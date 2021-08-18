@@ -1,0 +1,27 @@
+
+{{ define "main" }}
+
+  <div class="container-narrower sitemapDiv">
+    <h1>Sitemap</h1>
+    <div class="post-line"></div>
+    <h2>Main pages</h2>
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}">Home page</a></li>
+      <li><a href="{{ .Site.BaseURL }}about/">About me</li>
+      <li><a href="{{ .Site.BaseURL }}privacy/">Site&rsquo;s privacy policy</a></li>
+      <li><a href="{{ .Site.BaseURL }}contact/">How to contact me</a></li>
+    </ul>
+    <h2>Posts</h2>
+    <ul>
+      <li><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
+    {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
+      {{- if (ne .Title "Posts") -}}
+      <li><strong><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}<br />
+      <strong>{{ .Params.Subtitle | markdownify }}</strong><br />
+      {{ .Description | markdownify }}</li>
+      {{- end -}}
+    {{- end -}}
+    </ul>
+  </div>
+
+{{ end }}

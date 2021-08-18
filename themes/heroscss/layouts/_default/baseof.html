@@ -1,0 +1,16 @@
+{{- $lazyloadFile := "lazyload_17-4-0.min.js" -}}
+
+<!DOCTYPE html>
+<html lang="en" charset="utf-8">
+  {{ partial "head.html" . -}}
+  <body>
+    {{ partial "header.html" . }}
+    <div id="content">
+    {{- block "main" . -}}{{- end }}
+    </div>
+    {{- partial "footer.html" . -}}
+    <script src="/assets/js/{{- $lazyloadFile -}}"></script>
+    <script src="/assets/js/lazyload-helper.js"></script>
+</body>
+
+</html>
