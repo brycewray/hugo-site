@@ -22,4 +22,4 @@ At 2:55 PM this past Monday, that boy---all six pounds, 10 ounces of Dylan Evere
 
 Incidentally: as I [recently mentioned](/posts/2021/08/gems-in-rough-08), I've been paying close attention to the new [Astro](https://astro.build) static site generator and running some tests with it, so I've filed a few issues in its GitHub repository. When it became obvious that Dylan's birth was going to happen **soon**, I responded to one issue's proposed solution to say that I "will have to wait a while before I can try it, however --- my daughter is in the process of delivering our second grandchild." To my delight, this got mentioned on the Astro Discord community, whereupon I was greeted with a slew of congratulatory comments (and accompanying emojis) that I shared with Dylan's proud parents:
 
-{% imgc "Astro-Discord-general_2021-08-09_1794x1462.png", "Screen capture from a Discord community chat session", 1794, 1462 %} 
+{{< imgc src="Astro-Discord-general_2021-08-09_1794x1462.png" alt="Screen capture from a Discord community chat session" width="1794" height="1462" >}}
