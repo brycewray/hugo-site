@@ -1,9 +1,17 @@
 .background-hero {
   &-div {
-    background: linear-gradient(
+    background: linear-gradient(to bottom,
+      rgba(0,0,0,1.00),
       rgba(0,0,170,1.00),
-      rgba(0,0,85,1.00)
+      rgba(0,0,0,1.00)
     );
+    @media screen and (prefers-color-scheme: dark) {
+      background: linear-gradient(to bottom,
+        rgba(0,0,170,1.00),
+        rgba(0,0,0,1.00),
+        rgba(0,0,170,1.00)
+      );
+      }
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
