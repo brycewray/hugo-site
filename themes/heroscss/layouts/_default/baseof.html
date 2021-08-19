@@ -1,4 +1,6 @@
-{{- $lazyloadFile := "lazyload_17-4-0.min.js" -}}
+{{- $lazyloadFile := resources.Get "js/lazyload_17-4-0.min.js" -}}
+{{- $lazyloadHelp := resources.Get "js/lazyload-helper.js" -}}
+{{- $jsBundle := slice $lazyloadFile $lazyloadHelp | resources.Concat "js/lazyBundle.js" | resources.Minify | fingerprint "md5" -}}
 
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
@@ -9,8 +11,7 @@
     {{- block "main" . -}}{{- end }}
     </div>
     {{- partial "footer.html" . -}}
-    <script src="/assets/js/{{- $lazyloadFile -}}"></script>
-    <script src="/assets/js/lazyload-helper.js"></script>
+    <script src="{{ $jsBundle.RelPermalink }}" defer></script>
 </body>
 
 </html>
