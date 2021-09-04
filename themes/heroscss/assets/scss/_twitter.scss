@@ -1,12 +1,36 @@
-/*
-.twitter-tweet {
+.tweet-card {
+  // font-family: $sans-serif;
+  padding: 2em 1em;
+  letter-spacing: -0.025em;
   margin: 1rem auto 0 auto;
-  padding: 0.25rem;
-  border-radius: 12px;
-  background-color: #fff;
   border: 2px solid $grey-1;
+  border-radius: 12px;
+  background: transparent;
+  color: #333;
+  a, a:hover {
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blueLight;
+    }
+  }
   @media screen and (prefers-color-scheme: dark) {
     border: 2px solid $grey-2;
+    color: #fff;
   }
 }
-*/
+
+.tweet-profile,
+.tweet-bird,
+.tweet-images,
+.tweet-like {
+  display: none;
+}
+
+.tweet-author-name::after {
+  content: " • ";
+}
+
+.tweet-footer::after {
+  content: " (UTC)";
+  font-size: 85%;
+  padding-left: 0.5em;
+}

@@ -1,0 +1,25 @@
+// search form
+
+.search {
+  &Form {
+    margin-top: -0.35em;
+    margin-bottom: 0;
+  }
+  &FormQuery {
+    border: 0;
+    margin-right: 0.25em;
+    // border-radius: 6px;
+    padding: 0.25em 0.5em;
+    background: white;
+  }
+  &FormButton {
+    // border-radius: 6px;
+    padding: 0.25em 0.5em;
+    border: 0;
+    font-family: $sans-serif; // override browser stylesheet
+    background: $grey-2;
+    &:hover {
+      background: $blueLight;
+    }
+  }
+}

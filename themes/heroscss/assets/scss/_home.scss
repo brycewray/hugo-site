@@ -9,9 +9,9 @@
     text-align: right;
     padding: 0 3em 0 0;
     color: $white;
-    background-image: linear-gradient(to bottom, $darkblue 65%, $white);
+    background-image: linear-gradient(to bottom, $darkblue, $black 60%, $white);
     @media screen and (prefers-color-scheme: dark) {
-      background-image: linear-gradient(to bottom, $black, $darkblue 40%, $black);
+      background-image: linear-gradient(to bottom, $black, $darkblue 60%, $black);
     }
     width: 45%;
     min-height: 80vh;
@@ -80,9 +80,9 @@
   &-Dates {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     @media screen and (min-width: $bkpt_lg) {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
     @media screen and (min-width: $bkpt_2xl) {
       font-size: 1.125rem;
@@ -97,9 +97,6 @@
     @media screen and (min-width: 1536px) {
       font-size: 1.25rem;
     }
-  }
-  &-Finish {
-    margin-top: 2em;
   }
 }
 // === end, for home page

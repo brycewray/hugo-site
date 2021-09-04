@@ -1,4 +1,4 @@
-// === for billboard.html partial
+// === for billboard partial
 .billboard {
   &-div {
     // font-family: $sans-serif;
@@ -42,7 +42,7 @@
   &-title-text {
     font-size: 2.5rem;
     padding-top: 0.5em; // definitely em, not rem
-    padding-bottom: 0;
+    padding-bottom: 0.5em;
     line-height: 1em;
     letter-spacing: -0.035em;
     @media screen and (min-width: $bkpt_md) {
@@ -59,12 +59,12 @@
     }
   }
   &-subtitle-text {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding-top: 0.75em; // definitely em, not rem
     padding-bottom: 0.5em; // definitely em, not rem
     letter-spacing: -0.04em;
     @media screen and (min-width: $bkpt_md) {
-      font-size: 1.75rem;
+      font-size: 1.875rem;
     }
     @media screen and (min-width: $bkpt_lg) {
       padding-top: 1em; // definitely em, not rem
@@ -78,7 +78,7 @@
   &-description-text {
     padding-top: 0.25em; // definitely em, not rem
     letter-spacing: -0.01em;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.4;
     @media screen and (min-width: $bkpt_md) {
       font-size: 1.5rem;
@@ -97,6 +97,7 @@
   }
   &-p-text {
     text-align: center;
+    margin-top: 1em;
     font-size: 1.125rem;
     @media screen and (min-width: $bkpt_md) {
       font-size: 1.25rem;
@@ -110,4 +111,4 @@
   }
 }
 
-// === end, for billboard.html partial
+// === end, for billboard partial

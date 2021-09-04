@@ -1,3 +1,9 @@
+/*
+td {
+  font-family: $sans-serif;
+}
+*/
+
 // === table for web typography article, part II
 table.noborders {
   width: 100%;
@@ -17,11 +23,11 @@ table.noborders {
     img {
       display: inline-block;
       vertical-align: middle;
-      margin: 0;  
+      margin: 0;
     }
   }
   tr:nth-child(even) {
-    background-color: #dfefff;
+    background-color: hsl(210, 100%, 94%);
   }
   thead {
     background-color: $darkblue;
@@ -32,9 +38,8 @@ table.noborders {
     }
   }
   thead td {
-    color: #fff !important;
+    color: hsl(0, 0%, 100%) !important;
     font-weight: bold;
-    // font-family: $sans-serif;
   }
   td.td70 {
     width: 70%;
@@ -64,4 +69,5 @@ table.leagues {
 		width: 50%;
 	}
 }
+
 // === end, table for MLB/NFL article

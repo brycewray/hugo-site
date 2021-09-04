@@ -9,11 +9,12 @@ html, body {
   @media (prefers-color-scheme: dark) {
     background: $background-dark-mode;
     color: $default-color-dark-mode;
+    font-weight: 375;
   }
 }
 
-bold, strong {
-  font-weight: 625;
+html {
+  scroll-padding-top: 80px;
 }
 
 p, li {
@@ -29,11 +30,58 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-weight: 825;
+  font-weight: 800;
+  @media (prefers-color-scheme: dark) {
+    font-weight: 750;
+  }
 }
 
 h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 625;
+  @media (prefers-color-scheme: dark) {
+    font-weight: 575;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  outline: 2px transparent;
+  outline-offset: 2px;
+  &:active, &:focus, &:hover {
+    outline: 2px transparent;
+    outline-offset: 2px;
+  }
+}
+
+.header-anchor {
+  border: none;
+  color: $black;
+  @media screen and (prefers-color-scheme: dark) {
+    color: $white;
+  }
+  &:hover{
+    color: $blue;
+    border-bottom: 2px solid $blue;
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blueLight;
+      border-bottom: 2px solid $blueLight;
+    }
+    &::after {
+      font-size: $stdsize;
+      font-weight: 425;
+      padding-left: 0.5em;
+      content: "#";
+      @media screen and (prefers-color-scheme: dark) {
+        font-weight: 375;
+      }
+    }
+  }
+}
+
+strong, b {
+  font-weight: 675;
+  @media (prefers-color-scheme: dark) {
+    font-weight: 625;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,6 +187,10 @@ ul li li li {
   font-size: 2.25rem;
 }
 
+audio, canvas, embed, iframe, img, object, svg, video {
+  vertical-align: middle;
+}
+
 footer {
   // font-family: $sans-serif;
   text-align: center;
@@ -153,8 +205,11 @@ footer {
   div.footerWrapper {
     margin: 0 auto;
     width: 80%;
+    p {
+      margin: 1rem 0;
+    }
   }
-  @media (min-width: $bkpt_lg) {
+  @media (min-width: 1024px) {
     margin: 2rem auto 0 auto;
     // padding-bottom: 1rem;
     div.footerWrapper {
@@ -180,7 +235,7 @@ footer {
     padding: 2rem 0;
     margin: 0 auto;
     width: 90%;
-    @media screen and (min-width: $bkpt_lg) {
+    @media screen and (min-width: 1024px) {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -192,11 +247,11 @@ footer {
     }
     h1 {
       font-size: 1.25rem;
-      @media screen and (min-width: $bkpt_lg) {
+      @media screen and (min-width: 1024px) {
         font-size: 1.5rem;
       }
-      @media screen and (min-width: $bkpt_2xl) {
-        font-size: 1.75rem;
+      @media screen and (min-width: 1536px) {
+        font-size: 1.75rem;;
       }
     }
   }
@@ -204,18 +259,28 @@ footer {
     margin: 1rem auto 0 auto;
     width: 80%;
     max-width: 40em;
-    img, figure img {
+    figure img, img {
       width: 100%;
+      height: auto;
+    }
+    .twitter-tweet {
+      margin: 1rem auto 0 auto;
+      padding: 0.25rem;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 2px solid $grey-1;
+      @media screen and (prefers-color-scheme: dark) {
+        border: 2px solid $grey-2;
+      }
+    }
+    a .twitter-tweet {
+      margin: 0;
     }
   }
   &-comments {
     font-size: 85%;
-    width: 85%;
     max-width: 720px !important;
     margin-bottom: 0;
-    @media (min-width: 900px) {
-      width: 40%;
-    }
   }
   &-oldComments { // old comments from Talkyard
     // font-family: $sans-serif;
@@ -224,16 +289,9 @@ footer {
     display: block;
     margin: 2rem auto 0 auto;
     padding: 1rem 0;
-    width: 75%;
-    @media screen and (min-width: $bkpt_lg) {
-      width: 40%;
-    }
-    @media screen and (min-width: $bkpt_2xl) {
-      width: 33%;
-    }    
     @media (prefers-color-scheme: dark) {
-      border-top: 1px solid #999;
-      border-bottom: 1px solid #999;
+      border-top: 1px solid hsl(0, 0%, 60%);
+      border-bottom: 1px solid hsl(0, 0%, 60%);
     }
     h3 {
       margin: 0;
@@ -273,21 +331,24 @@ li p {
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: 1em; // definitely em, not rem
-    line-height: 1.6em; // definitely em, not rem
-    margin-top: 1em; // definitely em, not rem
-    @media screen and (min-width: $bkpt_lg) {
-      font-size: 1.25em;
+    font-size: 1.125rem;
+    line-height: 1.625;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.25rem;
     }
-    @media screen and (min-width: $bkpt_2xl) {
-      font-size: 1.5em;
+    @media screen and (min-width: 1536px) {
+      font-size: 1.5rem;
     }
   }
   li li, li p {
     font-size: inherit;
     margin-top: 0.25em; // definitely em, not rem
   }
-  h2, h3, h4 {
-    margin-top: 1.25em; // definitely em, not rem
+  h1, h2, h3, h4 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -.025em;
   }
 }

@@ -59,6 +59,10 @@
   margin-bottom: 10em;
 }
 
+.tightLead {
+  line-height: 1.25;
+}
+
 .text {
   &-nowrap, .nobrk {
     white-space: nowrap;
@@ -147,19 +151,18 @@ img.containedImage {
 
 .red {
   color: $red;
+  @media (prefers-color-scheme: dark) {
+    color: $red-dark-mode;
+  }
 }
 
-figcaption, .imgcCaption, .imgCaption, .lazypicturecaption {
+.imgcCaption, .imgCaption, .lazypicturecaption {
   // font-family: $sans-serif;
   padding: 0;
   margin-block-start: 0.5em;
   line-height: 1.375;
   font-size: $pokey;
   text-align: center;
-}
-
-figcaption {
-  margin-bottom: 1em;
 }
 
 .EICapt { // for use with images used with Eleventy Image which have captions
@@ -181,7 +184,14 @@ figcaption {
   text-align: center;
 }
 
-/* borrowed from TWCSS */
+.indentAfterLI {
+  margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
+  @media screen and (min-width: $bkpt_2xl) {
+    margin-left: 2em;
+  }
+}
+
+/* === start, borrowed from TWCSS === */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -198,7 +208,7 @@ figcaption {
   display: inline;
 }
 
-/* end, borrowed from TWCSS */
+/* === end, borrowed from TWCSS === */
 
 /* start, for imgc.html */
 
@@ -236,17 +246,5 @@ figcaption {
     margin-bottom: 10em;
   }
 }
-
-.search-box {
-  iframe {
-    overflow: hidden;
-    margin: 1rem auto;
-    padding: 0;
-    width: 330px;
-    height: 40px;
-  }
-}
-
-/* end, for 404 page */
 
 // === end, utility classes
