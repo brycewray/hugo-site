@@ -6,7 +6,7 @@ subtitle: "Trying to grasp the new reality"
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
-lastmod: 2020-09-24T08:57:00-05:00
+lastmod: 2021-08-24T12:43:00-05:00
 discussionId: "2020-03-coherence-covid-19"
 featured_image: "wash-hands-covid-19-4968117_4032x3024.jpg"
 featured_image_width: 4032
@@ -84,9 +84,9 @@ And right now, to coin a phrase: reality bites.
 
 So, until reality *ceases* to bite in at least this specific way it's biting right now&nbsp;.&nbsp;.&nbsp;.
 
-Hunker down. Wash your hands every chance you get, with soap and for twenty seconds. By the way, [**here's why that matters**](https://www.youtube.com/watch?v=-LKVUarhtvE) (YouTube link)[^privacy], in case you haven't seen this.
+Hunker down. Wash your hands every chance you get, with soap and for twenty seconds. By the way, **here's why that matters**, in case you haven't seen this.
 
-[^privacy]: The embedded YouTube video that formerly was in this spot on the page is now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy).
+{{< lite-youtube videoTitle="How soap kills the coronavirus" videoId="-LKVUarhtvE" >}}
 
 Do this not just for yourself but for everyone with whom you might unavoidably come into contact.
 
