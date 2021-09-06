@@ -40,7 +40,7 @@ I imagined how it would be if the job-of-the-time were actually a thing of the p
 
 Now, I need no such imagination. Now, for the first time in forty-plus years, my schedule is fully mine to manage.[^5] And, if the choice remains mine, it will stay that way.
 
-My workday is done. While I do and will miss many of those folks with whom I formerly shared it over the decades, I won't miss *it*. To paraphrase the [familiar quotation](https://quoteinvestigator.com/2021/03/31/deathbed-wish/): "I never heard a dying man say, 'I wish I'd spent more time at work.'" And, although I am quite alive and well, rest assured you won't catch *me* saying, writing, or thinking anything of the kind, either.
+My workday is done. While I do and will miss many of those folks with whom I formerly shared it over the decades, I won't miss *it*. To paraphrase the [familiar quotation](https://quoteinvestigator.com/2021/03/31/deathbed-wish/): "I never heard a dying man say, 'I wish I'd spent more time at work.’" And, although I am quite alive and well, rest assured you won't catch *me* saying, writing, or thinking anything of the kind, either.
 
 [^1]:	To put it another way, I could echo the words of George S. Patton as portrayed in the 1970 film about his World War II exploits: "All right now, by God, **that's *enough***!"
 
