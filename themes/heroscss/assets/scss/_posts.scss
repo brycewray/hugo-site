@@ -176,6 +176,7 @@ hr.paginatorBottom {
   padding-bottom: 1rem;
   padding-top: 1rem;
   button {
+    font-size: 1rem; // needed in Hugo, vs. Eleventy
     padding: 1rem;
     background-color: $darkblue;
     border-radius: 0.375rem;
