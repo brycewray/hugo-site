@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-05-04T12:48:00-05:00
+lastmod: 2021-09-06T10:56:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -155,7 +155,16 @@ Here, you've entered what the shortcode considers the `src` part ("./src/images/
 
 ### Get a look at the result
 
-Now, just build your site, and Eleventy Image will do its magic everywhere within your site that you're using the `image` shortcode. Of course, you'll want to get a sneak peek by running Eleventy in development mode and viewing your site locally, in case you need to adjust your site's CSS so each resulting image appears as you want.[^sizesInfo]
+Now, just build your site, and Eleventy Image will do its magic everywhere within your site that you're using the `image` shortcode. For example, here's the code the shortcode above could generate:
+
+```html
+<picture>
+  <source type="image/webp" srcset="/images/my-pet-cat-600w.webp 600w, /images/my-pet-cat-900w.webp 900w, /images/my-pet-cat-1500w.webp 1500w" sizes="(min-width: 1024px) 100vw, 50vw">
+  <source type="image/jpeg" srcset="/images/my-pet-cat-600w.jpeg 600w, /images/my-pet-cat-900w.jpeg 900w, /images/my-pet-cat-1500w.jpeg 1500w" sizes="(min-width: 1024px) 100vw, 50vw">
+  <img src="/images/my-pet-cat-600w.jpeg" width="1500" height="1125" alt="Photo of a cat named Shakespeare sitting on a window sill" loading="lazy" decoding="async">
+</picture>
+```
+Of course, you'll want to get a sneak peek by running Eleventy in development mode and viewing your site locally, in case you need to adjust your site's CSS so each resulting image appears as you want.[^sizesInfo]
 
 [^sizesInfo]: You also can go back into the shortcode's definition in `.eleventy.js` to adjust the `sizes` parameter so that it works better with your site's unique layout. See [MDN's thorough explanation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes) of how the `sizes` setting in CSS affects images’ appearances.
 
