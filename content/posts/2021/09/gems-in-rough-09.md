@@ -5,7 +5,7 @@ subtitle: "Better video embeds, CFP improvements, “passtro” on Astro"
 description: "A few more nerdy thoughts for SSG fans."
 author: Bryce Wray
 date: 2021-09-05T14:35:00-05:00
-lastmod: 2021-09-06T10:59:00-05:00
+lastmod: 2021-09-06T11:53:00-05:00
 discussionId: "2021-09-gems-in-rough-09"
 featured_image: "gemstones-glass-1462395_4000x2667.jpg"
 featured_image_width: 4000
@@ -54,9 +54,9 @@ Incidentally, this works in [Hugo](https://gohugo.io), too, and even more compac
 
 Cloudflare continues to make back-end changes in [Cloudflare Pages](https://pages.cloudflare.com) so it'll be a good place for one's static website to live. Until recently, the build process took far too long on each new push to a site's CFP-linked online repository, as [I noted in a previous "Gems in the rough" post](/posts/2021/08/gems-in-rough-08/#using-speedlify-to-compare-vendors).
 
-The specific part of the process that racked up the biggest delay each time was the initialization of the build environment, typically taking at least two to three minutes on its own even before the build then proceeded to, um, **build** the site and then deploy it to the Cloudflare network. But some particular fix came into play around the middle of August, after which that segment of each build began clocking in at just around thirty to forty seconds. So, now, a total build time for one of my CFP-linked repos will usually be slightly over a minute.
+The specific part of the process that racked up the biggest delay each time was the initialization of the build environment, typically taking at least two to three minutes on its own even before the build proceeded to, um, **build** the site and then deploy it to the Cloudflare network. But some particular fix came into play around the middle of August, after which that segment of each build began clocking in at just around thirty to forty seconds. So, now, a total build time for one of my CFP-linked repos will usually be slightly over a minute.
 
-While that's still about twice as slow as the same repo will build on [Vercel](https://vercel.com), apparently due to how Vercel caches previously uploaded content, the CFP folks are aware of that continuing disparity and say they're not done ramping up the build speed. Consider my eyes peeled. Speaking of which&nbsp;.&nbsp;.&nbsp;.
+While that's still about twice as slow as the build speed the same repo can achieve on [Vercel](https://vercel.com), apparently due to how Vercel caches previously uploaded content, the CFP folks are aware of that continuing disparity and say they're not done ramping up the build speed. Consider my eyes peeled. Speaking of which&nbsp;.&nbsp;.&nbsp;.
 
 ## “Passtro” on Astro for now
 
