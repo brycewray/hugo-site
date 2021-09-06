@@ -5,7 +5,7 @@ subtitle: "Better video embeds, CFP improvements, “passtro” on Astro"
 description: "A few more nerdy thoughts for SSG fans"
 author: Bryce Wray
 date: 2021-09-05T14:35:00-05:00
-#lastmod: 2021-09-05T23:34:00-05:00
+lastmod: 2021-09-06T10:28:00-05:00
 discussionId: "2021-09-gems-in-rough-09"
 featured_image: "gemstones-glass-1462395_4000x2667.jpg"
 featured_image_width: 4000
@@ -30,7 +30,7 @@ While it was satisfying to protect my visitors from those cookies, it was simult
 
 As a result, I was delighted a few weeks back when I happened upon "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)" by [Sia Karamalegos](https://github.com/siakaramalegos/). While it was (as the title implies) concerned mostly with doing higher-performance video embeds, it also showed me a way to have those embeds *without* worrying about the cookies. Ms. Karamalegos's article described how to use the [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) package to provide just that. I promptly implemented her solution and was able to restore those two aforementioned YouTube video embeds, plus add any others in the future as I wish.
 
-For example, this:
+For example, adding the following to the [Markdown](https://daringfireball.net/projects/markdown) in a suitably configured [Eleventy](https://11ty.dev) site:
 
 ```twig
 {% set videoTitle = "Every programming tutorial" %}
@@ -43,6 +43,12 @@ For example, this:
 {{< lite-youtube videoTitle="Every programming tutorial" videoId="MAlSjtxy5ak" >}}
 
 I altered the code a little bit to add the disclaimer after each video, which I believe keeps this site in good shape where the [GDPR](https://gdpr-info.eu/) and other related privacy measures are concerned. I made this additional change after noting the concerns expressed in "[Embed YouTube videos without cookies](https://axbom.com/embed-youtube-videos-without-cookies/)" by [Per Axbom](https://twitter.com/axbom). In short: just using the (sorta-)no-cookies YouTube domain isn't enough; it's also necessary to advise your visitors that actually **playing** an embed from that domain, the domain name notwithstanding, **still** loads cookies.
+
+Incidentally, this works in [Hugo](https://gohugo.io), too, and even more compactly in your Markdown content. Just create a Hugo [shortcode](https://gohugo.io/content-management/shortcodes/) with the same items that Ms. Karamalegos’s article prescribes for an Eleventy partial---with obvious adjustments for Hugo's [Go](https://go-lang.org)-based templating that I won't describe in this space---and insert it in your Markdown (here, the shortcode file is called *lite-youtube.html*, so we call it with `lite-youtube`):
+
+```md
+{{</* lite-youtube videoTitle="Every programming tutorial" videoId="MAlSjtxy5ak" */>}}
+```
 
 ## Faster CFP builds
 
