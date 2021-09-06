@@ -127,7 +127,7 @@ However, as I hinted above would be the case were I to eschew the utility-first 
 
 Why?
 
-Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in Sass/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers' support for it, is getting better all the time and that's where the action is.
+Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in Sass/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers’ support for it, is getting better all the time and that's where the action is.
 
 I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) to browser-friendly CSS. Quite frankly, using Sass/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
 

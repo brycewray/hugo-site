@@ -13,7 +13,7 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 ### Cloudflare Browser Insights
 
-This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights "collects the bare minimum amount of information, timing metrics, to show customers how their websites perform" and that "Cloudflare does not track individual end-users *[sic]* across our customers' Internet properties." For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, "[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/)."
+This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights "collects the bare minimum amount of information, timing metrics, to show customers how their websites perform" and that "Cloudflare does not track individual end-users *[sic]* across our customers’ Internet properties." For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, "[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/)."
 
 ### Fathom Analytics
 

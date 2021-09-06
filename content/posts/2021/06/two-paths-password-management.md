@@ -75,7 +75,7 @@ Then there are the KeePass fans who concede that the convenience of cloud-based 
 
 As you may be gathering by now, the KeePass way in general probably is a bit much for those who are just getting started in practicing good password management. Indeed, most KeePass fans I've encountered seem to be highly tech-savvy and, often, long-time IT pros. I suspect their efforts to get their non-tech-savvy relatives to join them in this worthy endeavor of family-wide password management are often blunted by the apparent difficulty and occasional inconvenience of the KeePass approach, however many merits it may otherwise have.[^ITpros]
 
-[^ITpros]: On the other hand, such individuals are probably used to being their respective families' tech support gurus anyway, so perhaps they don't mind.
+[^ITpros]: On the other hand, such individuals are probably used to being their respective families’ tech support gurus anyway, so perhaps they don't mind.
 
 More on that in a bit.
 
@@ -89,15 +89,15 @@ This is the sector of password management apps about which you see and hear the 
 
 {{% caption %}}The home page on the [Bitwarden website](https://www.bitwarden.com).{{% /caption %}}
 
-Each involves cloud sync from the word "go"[^Enpass] (although Bitwarden [can be self-hosted](https://bitwarden.com/help/article/install-on-premise/) by those who are sufficiently knowledgeable about "hardening" servers---which points us back toward the "this is for techies only" segment already owned by KeePass fans) and provides options for all the major operating systems and device types, as well as extensions for the vast majority of modern web browsers to further simplify your logging into websites. These providers' user-friendly apps and web browser extensions[^extsKP] give the non-KeePass way a **huge** usability advantage over the KeePass way.
+Each involves cloud sync from the word "go"[^Enpass] (although Bitwarden [can be self-hosted](https://bitwarden.com/help/article/install-on-premise/) by those who are sufficiently knowledgeable about "hardening" servers---which points us back toward the "this is for techies only" segment already owned by KeePass fans) and provides options for all the major operating systems and device types, as well as extensions for the vast majority of modern web browsers to further simplify your logging into websites. These providers’ user-friendly apps and web browser extensions[^extsKP] give the non-KeePass way a **huge** usability advantage over the KeePass way.
 
 [^Enpass]: I didn't include [Enpass](https://www.enpass.io) in this group because it doesn't exactly fit the description. Specifically, it's somewhat KeePass-like in that it doesn't store the database file on its servers but, instead, leaves it to the customer to store the file on his/her chosen cloud vendor if he/she wishes to have cross-device sync.
 
 [^extsKP]: Some KeePass-compatible apps---notably, KeePassXC---also work with web browser extensions, but this appears to be the exception rather than the rule in that category. Besides, the more hard-core KeePass rooters tend to express about as many suspicions about the security of browser extensions as they do for that of cloud-based database syncing.
 
-Another advantage these services have over the KeePass way is in their allowing secure storage and access of other sensitive data, such as credit cards' authentication codes. (Some KeePass-compatible apps do allow this in some measure, but how they do it, and how easy they make it for you to use, will vary widely from app to app.)
+Another advantage these services have over the KeePass way is in their allowing secure storage and access of other sensitive data, such as credit cards’ authentication codes. (Some KeePass-compatible apps do allow this in some measure, but how they do it, and how easy they make it for you to use, will vary widely from app to app.)
 
-These services' pricing is all over the map, although there are free versions of nearly all of these---and definitely free *trials*, or at least generous money-back-guarantee periods, for all. You sign up with the service, download the appropriate app to each device, connect that app to your service account, and you're off to the races.
+These services’ pricing is all over the map, although there are free versions of nearly all of these---and definitely free *trials*, or at least generous money-back-guarantee periods, for all. You sign up with the service, download the appropriate app to each device, connect that app to your service account, and you're off to the races.
 
 The non-KeePass way, while technically not *quite* as secure as the KeePass method (mainly because you're putting more trust in a single provider than is necessary for the KeePass way even when cloud sync is involved), is far more convenient and requires a lot less up-front thinking. I found myself agreeing with two commenters I observed in a discussion of the two methods following a [Ghacks article from a few months back](https://www.ghacks.net/2021/02/20/migrating-from-lastpass-to-an-alternative-password-manager-keepass-vs-bitwarden-which-one-will-you-choose/):
 
@@ -113,6 +113,6 @@ The non-KeePass way, thus, can make it easier to gain the support of technophobi
 
 For many, it comes down to this: although there is considerable technical justification for the KeePass way, getting *everybody* to practice good password management is simpler with the non-KeePass way. After all, it doesn't matter how good a product is if you can't persuade people to use it, much less use it consistently, when you're not around to hold their hands about it.
 
-Be aware also of this: certain conversions from one "way" to the other can be nearly impossible. This is particularly true if you're trying to go from the non-KeePass way to the KeePass way, given that some apps on both sides do a fairly lousy job of either exporting their own files or importing other apps' existing files for use across the "ways." **Therefore**, I strongly recommend that, before you act on any of this, you **make up your mind**---which "way" and which app(s)---and then stick to that decision as best you can.
+Be aware also of this: certain conversions from one "way" to the other can be nearly impossible. This is particularly true if you're trying to go from the non-KeePass way to the KeePass way, given that some apps on both sides do a fairly lousy job of either exporting their own files or importing other apps’ existing files for use across the "ways." **Therefore**, I strongly recommend that, before you act on any of this, you **make up your mind**---which "way" and which app(s)---and then stick to that decision as best you can.
 
 Anyway, those are some of my takeaways from a semi-deep dive into the world of password management software. If I find others worth noting in the future, I obviously will bring them to your attention; and, as always, [I welcome your thoughts](/contact).

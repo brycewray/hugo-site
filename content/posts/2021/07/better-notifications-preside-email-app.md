@@ -29,9 +29,9 @@ So&nbsp;.&nbsp;.&nbsp;. **if** you have both MailMate and Preside and **if** you
 
 ## Methods, but not madness
 
-First, understand that Preside's notification behavior, as is true for any email app, is based on which *synchronization method* it's using. Consider this analogy from snail mail: if you go outside to check your home's mailbox only once a day, that's how often you'll learn whether you have any mail in the box. Well, how often an email app "checks" your email accounts' servers is what determines how snappily it can notify you of new emails.
+First, understand that Preside's notification behavior, as is true for any email app, is based on which *synchronization method* it's using. Consider this analogy from snail mail: if you go outside to check your home's mailbox only once a day, that's how often you'll learn whether you have any mail in the box. Well, how often an email app "checks" your email accounts’ servers is what determines how snappily it can notify you of new emails.
 
-As you can imagine, constantly syncing with the servers could be a battery-draining experience, so many third-party mobile email apps provide quick notifications by passively "listening" for "calls" from their respective vendors' servers, which are constantly "watching" one's email accounts for new arrivals. Of course, this means those vendors have to have varying degrees of access to your email accounts, which many consider a violation of their privacy. To its great credit, Preside doesn't work that way.
+As you can imagine, constantly syncing with the servers could be a battery-draining experience, so many third-party mobile email apps provide quick notifications by passively "listening" for "calls" from their respective vendors’ servers, which are constantly "watching" one's email accounts for new arrivals. Of course, this means those vendors have to have varying degrees of access to your email accounts, which many consider a violation of their privacy. To its great credit, Preside doesn't work that way.
 
 Of the five synchronization methods Preside does offer, *private remote sync* is the only one that's relevant to the neat trick I'll be explaining shortly; so let's talk about it.
 
