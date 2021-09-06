@@ -5,7 +5,7 @@ subtitle: "An Electron-ic firestorm"
 description: "A timely follow-up to my earlier article about password management."
 author: Bryce Wray
 date: 2021-08-14T10:20:00-05:00
-lastmod: 2021-08-17T18:41:00-05:00
+lastmod: 2021-09-06T13:12:00-05:00
 discussionId: "2021-08-1Password-hits-fan"
 featured_image: "lock-and-castle-5359174_4109x2832.jpg"
 featured_image_width: 4109
@@ -80,5 +80,10 @@ I've been a 1Password subscriber for a few years but had already decided to let 
 
 [^KeePassium]: In the original version of this post, I mentioned that I tried KeePassium before Strongbox but kept encountering an iOS 14-caused glitch with the former. I was initially wary about the KeePassium developer's [helpful description of a remedy](https://keepassium.com/blog/2020/09/ios-14-file-doesnt-exist/), which involved [changing a file security setting in KeePassXC](https://www.reddit.com/r/KeePassium/comments/oicp1j/cannot_find_the_database_file_the_file_doesnt/h4ukrbk?utm_source=share&utm_medium=web2x&context=3). However, he subsequently explained to me that KeePassium handled this differently because of a [purposeful feature that's designed to make it more secure](https://keepassium.com/articles/cloud-sync-sandboxing/), so I reverted to KeePassium and it worked fine.
 
-**Note**: Whichever "way" you go, I suggest you **not** store any [time-based one-time passwords](https://en.wikipedia.org/wiki/Time-based_One-Time_Password) (TOTPs) in it, even though these apps generally are capable of allowing that. It's the whole "don't put all your eggs in one basket" thing. Instead, use a **separate** authentication app, and one that syncs your TOTPs across your devices. The one I suggest (and use myself) is [Authy](https://authy.com), with [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app) coming in second. I strongly suggest you **not** use [Google Authenticator](https://support.google.com/accounts/answer/1066447) mainly because of its inability to back up and recover your TOTPs’ "seeds." For more information on this subject, see this [ArsTechnica authenticator roundup](https://arstechnica.com/information-technology/2020/05/choosing-2fa-authenticator-apps-can-be-hard-ars-did-it-so-you-dont-have-to/) from 2020.
-{.yellowBox}
+### A closing note about TOTPs
+
+Whichever "way" you go, it's a convenience-vs.-security question whether you store in it any [**time-based one-time passwords**](https://en.wikipedia.org/wiki/Time-based_One-Time_Password) (TOTPs) for multi-factor authentication, even though these apps generally are capable of allowing such storage. It's the whole "don't put all your eggs in one basket" thing. Instead, use a **separate** authentication app.[^masterTOTP] For more information on this subject, see the [Techlore](https://techlore.tech) video, "The Ultimate TOTP/2FA Guide for Max Security Online":
+
+{{< lite-youtube videoTitle="The Ultimate TOTP/2FA Guide for Max Security Online" videoId="iXSyxm9jmmo" >}}
+
+[^masterTOTP]: At the very least, keep the TOTP for any "non-KeePass way" provider (*e.g.*, Bitwarden or 1Password) in a separate authenticator app. You **do** have multi-factor authentication set up for that vendor, right?
