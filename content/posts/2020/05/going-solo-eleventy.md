@@ -6,7 +6,7 @@ subtitle: "Losing webpack, regaining Tailwind CSS"
 description: "As the saying goes, less is more."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
-lastmod: 2021-05-17T13:30:00-05:00
+lastmod: 2020-05-25T13:31:00-05:00
 discussionId: "2020-05-going-solo-eleventy"
 featured_image: "solo-flight-by-a-seagull-at-sunset-4238769_3225x2330.jpg"
 featured_image_width: 3225
@@ -32,11 +32,11 @@ In the ensuing months, I removed two of the biggest reasons for having added web
 
 - I dropped [Sass/SCSS](https://sass-lang.com) for [PostCSS](https://postcss.org) while [experimenting briefly](/posts/2020/01/two-cheers-tailwind) with [Tailwind CSS](https://tailwindcss.com). While I didn't warm up (then) to Tailwind, I liked PostCSS a lot and decided to stick with it. And while you certainly *could* use webpack to incorporate PostCSS with Eleventy, it wasn't *necessary* to do so.
 
-- [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images’ actual utility. Only those few images necessary to tell certain posts’ stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time]
+- [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images' actual utility. Only those few images necessary to tell certain posts' stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time]
 
 [^Time]: This wasn't just a matter of keeping me from twiddling my thumbs every time I made changes to the site. Limiting build times is important---especially since the Netlify free tier has a limit of 300 minutes a month; and, recently, I've been using [Zapier zaps](https://zapier.com/help/create/basics/create-zaps) to auto-build the site each midnight, Central time, to keep its [webmentions](https://alistapart.com/article/webmentions-enabling-better-communication-on-the-internet/) more frequently updated. The Eleventy/webpack combo typically took roughly two minutes per build, meaning over sixty minutes a month *even if I didn't change anything else on the site*---and, to be sure, I am *always* changing things, even things you may never notice.
 
-Then, in what I hoped would be a learning experience for not only me but also others out there in [GitHub](https://github.com) land, I [produced near-duplicate repositories](/posts/2020/04/different-modes-different-code) of this site in its two previous SSGs, [Hugo](https://gohugo.io) and Gatsby. The experience with the Hugo repo was particularly eye-opening, because by necessity it *had* to be webpack-free. Yet, I had been able to re-make this site down to almost the last detail without a whiff of webpack---and all that goes with webpack: namely, a big ol’ bundle of JavaScript code on every download.
+Then, in what I hoped would be a learning experience for not only me but also others out there in [GitHub](https://github.com) land, I [produced near-duplicate repositories](/posts/2020/04/different-modes-different-code) of this site in its two previous SSGs, [Hugo](https://gohugo.io) and Gatsby. The experience with the Hugo repo was particularly eye-opening, because by necessity it *had* to be webpack-free. Yet, I had been able to re-make this site down to almost the last detail without a whiff of webpack---and all that goes with webpack: namely, a big ol' bundle of JavaScript code on every download.
 
 And I began to wonder just how much I really needed webpack---and whether my site-development process might actually be better *without* it.
 

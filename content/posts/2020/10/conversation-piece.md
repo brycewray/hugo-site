@@ -6,7 +6,7 @@ subtitle: "Commenting options for your static website"
 description: "Here are several ways you can hear from your visitors."
 author: Bryce Wray
 date: 2020-10-13T16:30:00-05:00
-lastmod: 2021-05-17T12:48:00-05:00
+lastmod: 2021-09-02T12:20:00-05:00
 #draft: true
 discussionId: "2020-10-conversation-piece"
 featured_image: "miguel-a-amutio-27QOmh18KDc-unsplash_3785x2847.jpg"
@@ -41,11 +41,11 @@ So, if Disqus is a bad idea, how should you then implement comments on your site
 
 Here are some hosted services I've tried, and one more about which I've read good things. Here they all are, in alphabetical order.
 
-### [Commento](https://commento.io)
+### Commento
 
 {{< imgc src="Commento_scr_cap_2702x1530.png" alt="Screen capture of Commento web page" width="2702" height="1530" >}}
 
-This is the one of the group I haven't yet tried, because its hosted version doesn't allow testing with `localhost` or even a local IP address, and I didn't want to try it "live" without doing local testing.
+[Commento](https://commento.io) is the one of the group I haven't yet tried, because its hosted version doesn't allow testing with `localhost` or even a local IP address, and I didn't want to try it "live" without doing local testing.
 
 #### Advantages
 - Doesn't require signups, so comments can be anonymous; anyone who wishes to log in can do so via Google, Twitter, GitHub, or GitLab.
@@ -60,9 +60,11 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 - **Model**: One plan per domain.
 - **[Cost](https://commento.io/pricing)**: Thirty-day free trial; then $10/domain/month or $99/domain/year for up to 50,000 **daily** pageviews (if you need more than that, you shouldn't be wasting your time reading *my* pitiful little site when you should be making money hand-over-fist from *your* site).
 
-### [FastComments](https://fastcomments.com)
+### FastComments
 
 {{< imgc src="FastComments_scr_cap_2696x1530.png" alt="Screen capture of FastComments web page" width="2696" height="1530" >}}
+
+In [FastComments](https://fastcomments.com)&nbsp;.&nbsp;.&nbsp;.
 
 #### Advantages
 - Comments can be anonymous (if you allow that); anyone who wishes to log in can do so by providing his or her email address.
@@ -81,9 +83,11 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 - **Model**: Unlimited websites.
 - **[Cost](https://fastcomments.com/traffic-pricing)**: Thirty-day free trial; then $4.99/month for up to *a million* "page loads" per month.
 
-### [Hyvor Talk](https://talk.hyvor.com)
+### Hyvor Talk
 
 {{< imgc src="Hyvor_Talk_scr_cap_2696x1528.png" alt="Screen capture of FastComments web page" width="2696" height="1528" >}}
+
+Now, a look at [Hyvor Talk](https://talk.hyvor.com)&nbsp;.&nbsp;.&nbsp;.
 
 #### Advantages
 - Comments can be anonymous (if you allow that); otherwise, each commenter will have to create a Hyvor account.
@@ -102,9 +106,11 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 - **Model**: Unlimited websites.
 - **[Cost](https://talk.hyvor.com/plans)**: Fourteen-day free trial; then $5/month Premium Plan for up to 100,000 monthly pageviews among all your domains.
 
-### [Talkyard](https://talkyard.io)
+### Talkyard
 
 {{< imgc src="Talkyard_scr_cap_2696x1524.png" alt="Screen capture of Talkyard web page" width="2696" height="1524" >}}
+
+As for [Talkyard](https://talkyard.io)&nbsp;.&nbsp;.&nbsp;.
 
 #### Advantages
 - Comments can be anonymous (if you allow that); anyone who wishes to log in can do so either by creating a Talkyard account or via Google, Facebook, Twitter, or GitHub.
@@ -120,9 +126,11 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 - **Model**: Unlimited websites.
 - **[Cost](https://www.talkyard.io/plans)**: One-month free trial; then 1.9&#8364;/month for 25,000 monthly pageviews, or 19&#8364;/month for 50,000 monthly pageviews. (To convert euros to dollars, check a tool like the [XE Currency Converter](https://www.xe.com/currencyconverter/convert/?Amount=1&From=EUR&To=USD).)
 
-### [Utterances](https://utteranc.es)
+### Utterances
 
 {{< imgc src="Utterances_scr_cap_2698x1530.png" alt="Screen capture of FastComments web page" width="2698" height="1530" >}}
+
+Finally, there's [Utterances](https://utteranc.es)&nbsp;.&nbsp;.&nbsp;.
 
 #### Advantages
 - Uses the [GitHub](https://github.com) API to provide commenting as issues on your GitHub-based site repository.
@@ -143,7 +151,7 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 - **Model**: N/A.
 - **Cost**: None.
 
----- 
+----
 
 ## Can we talk?
 

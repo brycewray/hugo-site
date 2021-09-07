@@ -6,7 +6,7 @@ subtitle: "Gatsby Experiment III proves the winner"
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray
 date: 2019-10-27T10:00:00-05:00
-lastmod: 2021-05-17T12:22:00-05:00
+lastmod: 2021-05-16T10:21:00-05:00
 discussionId: "2019-10-now-gatsby-geezer"
 featured_image: gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker.jpg
 featured_image_width: 1920

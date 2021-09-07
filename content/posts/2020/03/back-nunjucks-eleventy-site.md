@@ -6,7 +6,7 @@ subtitle: "Taking a course of lesser resistance"
 description: "Why I’ve decided for now to backtrack from JavaScript-only templating in Eleventy."
 author: Bryce Wray
 date: 2020-03-22T14:30:00-05:00
-lastmod: 2021-05-17T12:26:00-05:00
+lastmod: 2021-05-16T10:24:00-05:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
 featured_image: Nunjucks-template-screen-capture-2020-02_edit_1280x881.jpg
 featured_image_width: 1280

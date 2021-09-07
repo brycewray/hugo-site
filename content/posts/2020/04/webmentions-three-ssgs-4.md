@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Gatsby"
 description: "Part 4 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Gatsby."
 author: Bryce Wray
 date: 2020-04-28T16:45:00-05:00
-lastmod: 2021-05-17T12:34:00-05:00
+lastmod: 2021-05-16T10:29:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
 featured_image: "jackrabbit-673965_3600x2400.jpg"
 featured_image_width: 3600

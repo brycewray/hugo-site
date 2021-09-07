@@ -5,7 +5,7 @@ subtitle: "More geeky hints for SSG fans"
 description: "Another collection of neat and/or nerdy items."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
-lastmod: 2021-01-28T12:55:00-06:00
+lastmod: 2021-05-19T11:31:00-05:00
 #draft: false
 discussionId: "2021-01-gems-in-rough-2021-01"
 featured_image: "gemstones-collection-3203865_4116x2304.jpg"
@@ -26,9 +26,9 @@ Well, looks like we're there, because I've already accumulated some more of this
 
 *[Fans of U.S. professional football likely will "get" the pun in that headline without much help, but [here's a brief explainer](https://www.urbandictionary.com/define.php?term=straight%20cash%2C%20homey) for the rest of you.]*
 
-I spent [three](/posts/2020/11/using-postcss-cache-busting-eleventy) [entire](/posts/2020/12/cache-busting-eleventy-take-two) [posts](/posts/2020/12/hashing-out-cache-busting-fix-eleventy) in recent weeks talking about how to handle cache-busting your CSS in [Eleventy](https://11ty.dev). Now, don't worry: I'm *not* going over all that again, I promise. **Still**, for those of you who *did* read those posts, especially the last two (in which I proposed a solution that actually works with my recommended CSS setup), please be aware that I recently added one more notable bit of related info. So here it is once again:
+I spent [three](/posts/2020/11/using-postcss-cache-busting-eleventy) [entire](/posts/2020/12/cache-busting-eleventy-take-two) [posts](/posts/2020/12/hashing-out-cache-busting-fix-eleventy) in recent weeks talking about how to handle cache-busting your CSS in [Eleventy](https://11ty.dev). Now, don't worry: I'm *not* going over all that again, I promise. **Still**, for those of you who *did* read those posts, especially the last two (in which I proposed a solution that actually works with my recommended CSS setup), please be aware that I recently added one more notable bit of related info. So here it is once again (including a later update):
 
-> **Important**: Note that the process completes itself **only** during actual site **builds**, and **not** in the `dev` or `testbuild` scripts---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur.
+> **Important**: Note that the process completes itself **only** during actual site **builds**, and **not** in the `dev` or `testbuild` scripts---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur. Thus, you may want to `gitignore` the top-level file `csshash` (but **not** `csshash.js`) and the files `/_data/csshash.json` and `/_data/year.json`.
 
 While this means your builds online are always okay, it occurred to me that you might (as I did) become concerned that, during your local development, your version-controlled CSS edits weren't triggering concomitant version-controlled edits for the corresponding files handling the cache-busting. (If that sentence doesn't quite make sense to you, please review those aforementioned three posts, especially the last two.)
 
@@ -38,21 +38,21 @@ Each SSG has its own way of parsing the plain text, usually [Markdown](https://d
 
 The `Typographer` extension is supposed to make sure text has the proper "smart" punctuation:
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">Here&rsquo;s some nice-lookin&rsquo; &ldquo;punctuation.&rdquo;</p>
+<p class="punctuationExample">Here&rsquo;s some nice-lookin&rsquo; &ldquo;punctuation.&rdquo;</p>
 
 However, as of this writing, the Goldmark version "shipping" with Hugo has a problem with plural possessives. As I noted in an [issue I filed concerning the problem](https://github.com/yuin/goldmark/issues/180), if you include the following text in a Markdown file&nbsp;.&nbsp;.&nbsp;.
 
 ```md
-John's dog is named Sam. The Smiths’ dog is named Rover.
+John's dog is named Sam. The Smiths' dog is named Rover.
 ```
 
 .&nbsp;.&nbsp;. you'd expect to get:
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named Rover.</p>
 
 But what you actually get right now is:
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named Rover.</p>
 
 So, if you're a Hugo user right now, you have two options where it comes to good typography and plural possessives:
 

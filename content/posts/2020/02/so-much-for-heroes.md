@@ -6,7 +6,7 @@ subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-lastmod: 2021-05-17T12:25:00-05:00
+lastmod: 2021-05-16T10:23:00-05:00
 discussionId: "2020-02-so-much-for-heroes"
 featured_image: paint-splatter-2224800_3648x2736.jpg
 featured_image_width: 3648

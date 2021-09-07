@@ -6,7 +6,7 @@ subtitle: "The delivery method matters far less than what’s being delivered"
 description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00
-lastmod: 2021-05-17T12:22:00-05:00
+lastmod: 2021-05-16T10:20:00-05:00
 discussionId: "2019-10-its-about-food-not-decor"
 featured_image: "mount-horeb-lunch-4162348_3000x2006.jpg"
 featured_image_width: 3000

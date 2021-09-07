@@ -6,7 +6,7 @@ subtitle: "R.I.P., WIP"
 description: "A farewell to this site’s original purpose."
 author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
-lastmod: 2021-05-17T12:28:00-05:00
+lastmod: 2021-05-16T10:26:00-05:00
 discussionId: "2020-04-murdered-darlings"
 featured_image: "candles-memorial-2905395_5472x3648.jpg"
 featured_image_width: 5472

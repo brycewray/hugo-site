@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T16:30:00-06:00
-lastmod: 2021-03-20T17:30:00-05:00
+lastmod: 2021-05-29T12:21:00-05:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: "jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg"
@@ -15,9 +15,6 @@ featured_image_alt: "Monochrome image of a pane of glass out of which a hole has
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@jilburr?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jilbert Ebrahimi</a>; <a href="https://unsplash.com/s/photos/broken-glass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
-
-**Note**: I later found a [much better solution](/posts/2021/03/tailwind-head-eleventy). Please see also the **important note** below.
-{.yellowBox}
 
 **Important note, 2020-12-11**: After I initially published this, I ran into significant build-time problems with the method described herein, despite its first appearing to work just fine both locally and online. I briefly resorted to the method described in "[Simple 11ty cache busting](https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/)" by Rob Hudson before I found another solution, which I explain in "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two)." I reluctantly recommend that you **not** follow the specific instructions in the article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of [transparency](/posts/2019/10/otoh). **My apologies** to anyone who's run into trouble based on these recommendations as they originally appeared!
 {.yellowBox}

@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2021-05-17T12:37:00-05:00
+lastmod: 2021-05-16T10:33:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: "dominoes-4020617_4870x2672.jpg"
 featured_image_width: 4870

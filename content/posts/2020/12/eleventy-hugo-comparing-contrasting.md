@@ -1,13 +1,13 @@
 ---
 layout: singlepost
-title: "Eleventy and Hugo: Comparing and contrasting"
+title: "Eleventy and Hugo: comparing and contrasting"
 subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
-lastmod: 2021-02-21T09:18:00-06:00
+lastmod: 2021-06-25T16:45:00-06:00
 #draft: false
-discussionId: "2020-12-eleventy-hugo-comparing-contrasting-two-best-ssgs"
+discussionId: "2020-12-eleventy-hugo-comparing-contrasting"
 featured_image: "pros-cons-5202088_3000x2000.jpg"
 featured_image_width: 3000
 featured_image_height: 2000

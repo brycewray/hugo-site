@@ -1,12 +1,12 @@
 ---
 layout: singlepost
 tags: post
-title: "Chasing 100: Tips for optimizing your website"
+title: "Chasing 100: tips for optimizing your website"
 subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00
-lastmod: 2021-05-17T12:39:00-05:00
+lastmod: 2021-06-25T16:45:00-06:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: "tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg"
 featured_image_width: 6036
@@ -92,7 +92,7 @@ You can't go wrong by following the [Web Content Accessibility Guidelines (WCAG)
 
 ## Best Practices
 
-There's a long list of items Lighthouse checks for conformance with "Best Practices." Try to adhere to them all if you can, but comply with the following out of plain ol’ common sense.
+There's a long list of items Lighthouse checks for conformance with "Best Practices." Try to adhere to them all if you can, but comply with the following out of plain ol' common sense.
 
 **Use [HTTPS](https://en.wikipedia.org/wiki/HTTPS)**. When nearly every host makes having `https://` at the head of your URL a freebie through services like [LetsEncrypt](https://letsencrypt.org/), and browsers flag an HTTP-only site as bad news, *not* having HTTPS is dumb. Increasingly, it marks a site as being in a state of neglect.
 

@@ -5,7 +5,7 @@ subtitle: "A FOSS option for Markdown-based writing"
 description: "A free, cross-platform text editor for (maybe) managing your site’s content."
 author: Bryce Wray
 date: 2021-05-07T16:30:00-05:00
-#lastmod:
+lastmod: 2021-07-14T07:55:00-05:00
 discussionId: "2021-05-trying-mark-text-for-website-content"
 featured_image: "mark-text-logo-on-gradient_2400x1350.png"
 featured_image_width: 2400
@@ -80,11 +80,15 @@ Now, I should note: that's how it works in Mark Text's *standard* appearance mod
 
 {{< imgc src="Mark-Text_screen-cap_reg-mode-dark_1568x1090.png" alt="Screen capture of Mark Text in regular editing mode" width="1568" height="1090" >}}
 
-{{% caption %}}*Above*: Mark Text's standard appearance.{{% /caption %}}
+*Above*: Mark Text's standard appearance.
+{.imgcCaption}
+
+<br />
 
 {{< imgc src="Mark-Text_screen-cap_SC-mode-dark_1568x1210.png" alt="Screen capture of Mark Text in Source Code Mode" width="1568" height="1210" >}}
 
-{{% caption %}}*Above*: Mark Text in Source Code Mode.{{% /caption %}}
+*Above*: Mark Text in Source Code Mode.
+{.imgcCaption}
 
 I will say that the [documentation](https://github.com/marktext/marktext/blob/develop/docs/README.md) is decent enough, but you have to dig into the project's GitHub issues to learn that, for example, you can't edit or create a *theme* so you can make the app look as you want. (This bothers me because none of the supplied themes work well for my eyes, especially where body text is concerned.)
 

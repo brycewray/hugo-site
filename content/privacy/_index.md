@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-08-15T16:52:00-05:00
+lastmod: 2021-08-22T15:47:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -13,7 +13,7 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 ### Cloudflare Browser Insights
 
-This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights "collects the bare minimum amount of information, timing metrics, to show customers how their websites perform" and that "Cloudflare does not track individual end-users *[sic]* across our customers’ Internet properties." For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, "[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/)."
+This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights "collects the bare minimum amount of information, timing metrics, to show customers how their websites perform" and that "Cloudflare does not track individual end-users *[sic]* across our customers' Internet properties." For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, "[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/)."
 
 ### Fathom Analytics
 
@@ -29,8 +29,6 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 This site *quotes* tweets in the form of purely static text (with, obviously, no tracking involved), rather than embeds of any kind.
 
-## Other considerations
+### YouTube
 
-### Embedded videos
-
-I no longer embed YouTube or other sites’ videos, since they can and do transmit personal information through cookies. In the two instances where I formerly did---“[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)” and “[Coherence and COVID-19](/posts/2020/03/coherence-covid-19)”---I replaced them with clearly identified links to their original locations, and footnoted each link with a reference and link to this privacy policy.
+This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide YouTube embeds that respect your privacy. For details concerning how this works, see Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)," on which this site's related templating is based.

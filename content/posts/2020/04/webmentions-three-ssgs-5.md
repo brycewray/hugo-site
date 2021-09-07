@@ -6,7 +6,7 @@ subtitle: "Thanking our sources for this series about IndieWebbin’"
 description: "Conclusion of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T16:50:00-05:00
-lastmod: 2021-05-17T12:35:00-05:00
+lastmod: 2021-05-16T10:30:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-5"
 featured_image: "letters-pen-ink-paper-2111533_4608x3456.jpg"
 featured_image_width: 4608

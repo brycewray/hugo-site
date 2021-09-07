@@ -1,12 +1,12 @@
 ---
 layout: singlepost
 tags: post
-title: "Fathom Analytics: Count on it"
+title: "Fathom Analytics: count on it"
 subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
 date: 2020-06-19T00:45:00-05:00
-lastmod: 2020-09-29T08:50:00-05:00
+lastmod: 2021-06-25T16:45:00-06:00
 discussionId: "2020-06-fathom-analytics-count-on-it"
 featured_image: "alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg"
 featured_image_width: 6024
@@ -38,7 +38,7 @@ But, you know the sayings:
 
 As with its market-crushing search engine, Google uses its [cookie](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)-powered analytics setup to gulp down gigabytes of data from visitors to the sites with its tracking code, so it can sell that data to advertisers. *That's* why its consumer-targeted products are free; Google makes billions of dollars with the data it grabs from its free search, email, and analytics platforms.
 
-It'll also come as no shock to you that, because of the cookies and all the data they capture, Google Analytics is a significant violator of users’ online privacy. In recent years, various laws have gone into effect that require sites to tell you about that. Why do you think you're greeted with a "Hey, yo, click here to accept that we're putting cookies on your computer" message on virtually every site you visit these days, especially if for the first time?
+It'll also come as no shock to you that, because of the cookies and all the data they capture, Google Analytics is a significant violator of users' online privacy. In recent years, various laws have gone into effect that require sites to tell you about that. Why do you think you're greeted with a "Hey, yo, click here to accept that we're putting cookies on your computer" message on virtually every site you visit these days, especially if for the first time?
 
 (Oh, while we're on that subject: if you're currently using Google Analytics or other cookie-planting stuff and you *don't* give your visitors that warning somehow---well, depending on where your visitors live, that could be "[a heap o' trouble, boy](https://www.macsmotorcitygarage.com/video-the-sheriff-of-dodge-country-1970/).")
 
@@ -50,13 +50,13 @@ Yet, you still want *some* data, albeit gathered in a proper way, right? Surely 
 
 Well, there are two alternatives that I can recommend, but one more than the other. And I learned of it only recently.
 
-Each is **not** free---but, again, analytics solutions that *are* "free" are using you to grab and sell your visitors’ data, so it's a question of how you want to pay.
+Each is **not** free---but, again, analytics solutions that *are* "free" are using you to grab and sell your visitors' data, so it's a question of how you want to pay.
 
 First, let me deal with the solution that formerly held sway with me, but lost out to the second.
 
 ## Netlify Analytics: Close, but&nbsp;.&nbsp;.&nbsp;.
 
-Since this site has been online, it's been hosted by [Netlify](https://www.netlify.com). Last year, the company introduced its own analytics product, offering a $9-per-month package. Since it works totally server-side, it needs to put no cookies on any visitor's device. Thus, Netlify Analytics seemed to be the answer to the prayers of anybody wanting to have decent site analytics that still respected visitors’ privacy.
+Since this site has been online, it's been hosted by [Netlify](https://www.netlify.com). Last year, the company introduced its own analytics product, offering a $9-per-month package. Since it works totally server-side, it needs to put no cookies on any visitor's device. Thus, Netlify Analytics seemed to be the answer to the prayers of anybody wanting to have decent site analytics that still respected visitors' privacy.
 
 I've used it off-and-on since then, and---[as](https://jarv.is/notes/netlify-analytics-review/) [have](https://www.vojtechruzicka.com/netlify-analytics/) [others](https://regpaq.com/netlify-analytics-review)---have found a number of "growing pain"-type problems with what you get for that nine bucks a month (and note that many of the common complaints remain unaddressed nearly a year later):
 
@@ -65,7 +65,7 @@ I've used it off-and-on since then, and---[as](https://jarv.is/notes/netlify-ana
 - **Questionable data**---Netlify Analytics doesn't give you any way to block your own traffic. So, if you're sitting there trying to figure out something about your own site's appearance and thus hitting numerous pages, Netlify Analytics is counting all that. The same goes for views of your site when it's only on "[localhost](https://en.wikipedia.org/wiki/Localhost)" during development. What good does having *that* data do you? And, speaking of bogus traffic&nbsp;.&nbsp;.&nbsp;.
 - **"Bots" are** ***not*** **people**---Netlify Analytics doesn't block the jillions of "bots" that scour the web for all manners of reasons, so *that* traffic, too, inflates your numbers to the point of near-uselessness.
 
-In short, while you could say that Netlify Analytics’ "heart" is in the right place, it's just not as smart as you'd want, especially when you're paying for it. (I've justified the pricing to myself mainly as a way of paying for the quality of what I get from Netlify's otherwise free tier of website hosting, as I think a lot of other Netlify Analytics users have while waiting on the product to get better.)
+In short, while you could say that Netlify Analytics' "heart" is in the right place, it's just not as smart as you'd want, especially when you're paying for it. (I've justified the pricing to myself mainly as a way of paying for the quality of what I get from Netlify's otherwise free tier of website hosting, as I think a lot of other Netlify Analytics users have while waiting on the product to get better.)
 
 There's another thing worth considering: **log retention**. For all the seemingly privacy-respecting aspects of Netlify Analytics, it obviously [requires the keeping of server access logs](https://docs.netlify.com/monitor-sites/analytics/how-analytics-works/#chart-data) for at least thirty days, so the platform definitely is not, and cannot be, log-free.
 
@@ -94,8 +94,8 @@ Fathom Analytics does, indeed, present a nice picture, as this screen capture sh
 - **No cookies**---Fathom Analytics uses a method involving "[multiple, unrelated complex hashes](https://usefathom.com/blog/anonymization)" which provides all the tracking you'd reasonably want, yet without the drawbacks of cookies (or server logging, for that matter).
 - **Compliant with privacy regs**---Because of this approach, Fathom Analytics is **fully compliant** with Internet privacy protection laws like the EU's [GDPR](https://gdpr-info.eu/), California's [CCPA](https://www.oag.ca.gov/privacy/ccpa), and the UK's [PECR](https://ico.org.uk/for-organisations/guide-to-pecr/what-are-pecr/). That means you don't have to worry about putting up (or, for that matter, whether you **need** to put up) those annoying permission pop-ups on your site.
 - **Real-time display**---The Fathom Analytics dashboard shows you the data in real time. This includes the usual visitor stats you'd expect: unique visits, page views, average time on site, bounce rate, highest-traffic pages, referring sites, device types, browsers, and countries. You also can set up goals, like what kind of traffic you're getting on specific pages you may be promoting for some reason.
-- **Bloat-free**---Fathom Analytics’ *single line of code*, delivered by a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) with worldwide endpoints, **won't** sap your site's performance the way the more bloated Google Analytics code can.
-- **No problem with ad blockers**---Recently, Fathom Analytics [added the ability to *bypass* ad-blocker software and extensions](https://usefathom.com/blog/bypass-adblockers) while *still* protecting visitors’ privacy. So, fellow and sister owners of tech-oriented sites, when you [use Fathom Analytics](https://usefathom.com/ref/ZKHYWX), now you finally can *trust* the numbers you're seeing.
+- **Bloat-free**---Fathom Analytics' *single line of code*, delivered by a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) with worldwide endpoints, **won't** sap your site's performance the way the more bloated Google Analytics code can.
+- **No problem with ad blockers**---Recently, Fathom Analytics [added the ability to *bypass* ad-blocker software and extensions](https://usefathom.com/blog/bypass-adblockers) while *still* protecting visitors' privacy. So, fellow and sister owners of tech-oriented sites, when you [use Fathom Analytics](https://usefathom.com/ref/ZKHYWX), now you finally can *trust* the numbers you're seeing.
 - **No bogus data**---Speaking of blocking: Fathom Analytics *blocks "bots"* and, with a simple procedure that takes a few seconds to do on a browser's Inspector, [allows you to block *your* traffic](https://usefathom.com/support/exclude), even ["localhost" stuff](https://usefathom.com/support/tracking-advanced) while you're developing. That's yet another way you know the data is real; and, especially if you build sites for customers, you want those numbers to be as real as they can be.
 - **Unlimited data period**---There's no "thirty-day limit" on this data. You can see as far back as whenever you start using Fathom Analytics. So, if you [sign up today](https://usefathom.com/ref/ZKHYWX) and are still a Fathom Analytics customer four years, three months, and eighteen days from now, you'll be able to look all the way back to the data from this time.
 - **Total portability**---Move your site from one host to another, even a server you run yourself if you're into that approach, and Fathom Analytics goes with you, especially because the [data is *totally exportable*](https://usefathom.com/support/export). **And**&nbsp;.&nbsp;.&nbsp;.
@@ -106,10 +106,10 @@ Fathom Analytics does, indeed, present a nice picture, as this screen capture sh
 
 As you can see, if you [choose Fathom Analytics](https://usefathom.com/ref/ZKHYWX), you get all the goodness of the cookie-less approach of Netlify Analytics *and* a great deal more. Indeed, Fathom Analytics includes many of the truly useful features of the "free"-but-cookie-infested Google Analytics while *not* drowning you in some minutia you may not even want. (Anyone who's ever had to prepare Google Analytics reports for non-tech-savvy customers or superiors knows exactly what I mean by that last part.)
 
-Yet, compared to Netlify Analytics, Fathom Analytics’ pricing isn't much different, especially when you consider the additional good stuff you're getting.
+Yet, compared to Netlify Analytics, Fathom Analytics' pricing isn't much different, especially when you consider the additional good stuff you're getting.
 
-- [Netlify Analytics’ pricing](https://www.netlify.com/pricing/#analytics) is $9/month ***per site*** for 250,000 pageviews per month. Beyond that level comes that ominous phrase, "Contact sales"---and, given the spurious data one sees in a Netlify Analytics instance, you have to hope that Netlify isn't using its **own** numbers to assess when you pass the basic plan's limit.
-- [Fathom Analytics’ pricing](https://usefathom.com/pricing) for ***unlimited sites*** is:
+- [Netlify Analytics' pricing](https://www.netlify.com/pricing/#analytics) is $9/month ***per site*** for 250,000 pageviews per month. Beyond that level comes that ominous phrase, "Contact sales"---and, given the spurious data one sees in a Netlify Analytics instance, you have to hope that Netlify isn't using its **own** numbers to assess when you pass the basic plan's limit.
+- [Fathom Analytics' pricing](https://usefathom.com/pricing) for ***unlimited sites*** is:
 	- $14/month (or $140/year) for 100,000 pageviews per month.
 	- $24/month (or $240/year) for 200,000 pageviews per month.
 	- $34/month (or $340/year) for 400,000 pageviews per month.

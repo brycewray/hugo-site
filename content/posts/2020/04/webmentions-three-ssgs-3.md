@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Hugo"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
-lastmod: 2021-05-17T12:33:00-05:00
+lastmod: 2021-05-16T10:28:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
 featured_image: "marko-pekic-IpLa37Uj2Dw-unsplash_3542x2362.jpg"
 featured_image_width: 3542

@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-#lastmod:
+lastmod: 2021-05-30T09:26:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -60,76 +60,54 @@ Some starting assumptions:
 With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 
 1. If you haven't already added them to your Eleventy setup, add the [Eleventy RSS plugin](https://www.11ty.dev/docs/plugins/rss/) and the [Luxon](https://github.com/moment/luxon) time-related library.
-2. In your [sitewide configuration file](https://www.11ty.dev/docs/config/) (probably `.eleventy.js` at the top level of the project), add the following filters:
 
-```js
-  eleventyConfig.addFilter("dateFromRFC2822", (timestamp) => {
-    return DateTime.fromJSDate(timestamp).toISO()
-  })
-  eleventyConfig.addFilter("dateStringISO", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd")
-  })
-```
-
-3. In your [sitewide data folder](https://www.11ty.dev/docs/data-global/), create a file `siteparams.json` (with your values in place of the obvious examples):
-
-```json
-{
-  "siteURLforOG": "https://www.example.com",
-  "siteBaseURL": "/",
-  "siteTitle": "My Site Title",
-  "siteAuthor": "Your Name",
-  "siteDescription": "A short site description.",
-  "feed": {
-    "subtitle": "My Site -- What my site includes.",
-    "filename": "index.xml",
-    "path": "/index.xml",
-    "url": "https://www.example.com/index.xml",
-    "id": "https://www.example.com"
-  }
-}
-```
-
-4. In the `src` folder, create the file `feed.njk` to make your template for the RSS feed:
+2. In the `src` folder, create the file `feed.njk` to make your template for the RSS feed:
 
 ```twig
----
-permalink: /index.xml
-eleventyExcludeFromCollections: true
-# No space allowed underneath the divider (breaks the XML)
+---json
+{
+  "permalink": "/index.json",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "My Site Title",
+    "description": "A short site description.",
+    "url": "https://www.example.com/",
+    "feedUrl": "https://www.example.com/index.xml",
+    "authors": {
+      "name": "Your Name",
+      "url": "https://www.example.com/about/"
+    }
+  }
+}
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ siteparams.siteTitle }}</title>
-	<subtitle>{{ siteparams.feed.subtitle }}</subtitle>
-	<link href="{{ siteparams.siteURLforOG }}/index.xml" rel="self"/>
-	<link href="{{ siteparams.siteURLforOG }}"/>
-	<updated>{{ collections.post | rssLastUpdatedDate }}</updated>
-	<id>{{ siteparams.feed.id }}</id>
+	<title>{{ metadata.title }}</title>
+	<subtitle>{{ metadata.subtitle }}</subtitle>
+	<link href="{{ metadata.feedUrl }}" rel="self"/>
+	<link href="{{ metadata.url }}"/>
+	<updated>{{ collections.all | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<id>{{ metadata.url }}</id>
 	<author>
-		<name>{{ siteparams.siteAuthor }}</name>
+		<name>{{ metadata.authors.name }}</name>
 	</author>
-	{%- for post in collections.post | reverse %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-	<entry>
-		<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
-		<link href="{{ absolutePostUrl }}"/>
-    {% if post.data.lastmod %}
-    <updated>{{ post.data.lastmod | rssDate }}</updated>
-    {% else %}
-    <updated>{{ post.date | rssDate }}</updated>
-    {% endif %}
-		<id>{{ absolutePostUrl }}</id>
-    <description>
-      {{ post.data.description }}
-    </description>
-	</entry>
+	{%- for item in collections.all | reverse -%}
+		{%- if loop.index0 < 10 -%}
+			{%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
+			<entry>
+				<title>{{ item.data.title }}</title>
+				<link href="{{ absolutePostUrl }}"/>
+				<updated>{{ item.date | dateToRfc3339 }}</updated>
+				<id>{{ absolutePostUrl }}</id>
+				<summary>{%- if item.data.subtitle -%}{{ item.data.subtitle }}{%- else -%}""{%- endif -%}{%- if item.data.description %} • {{ item.data.description }}{%- else -%}"[No description]"{%- endif -%}</summary>
+				<content type="html">{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+			</entry>
+		{%- endif -%}
 	{%- endfor %}
 </feed>
 ```
 
-5. In the `src` folder, create the file `jsonfile.njk` to make your template for the JSON feed:
-
+3. In the `src` folder, create the file `jsonfile.njk` to make your template for the JSON feed:
 
 ```twig
 ---json
@@ -155,52 +133,46 @@ eleventyExcludeFromCollections: true
   "feed_url": "{{ metadata.feedUrl }}",
   "description": "{{ metadata.description }}",
   "items": [
-    {% for post in collections.posts | reverse %}
-    {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
-    {
-      "id": "{{ absolutePostUrl }}",
-      "title": "{{ post.data.title }}",
-      "url": "{{ absolutePostUrl }}",
-      "date_published": "{{ post.date | dateFromRFC2822 }}",
-      "date_modified": "{% if post.data.lastmod %}{{ post.data.lastmod | dateFromRFC2822 }}{% else %}{{ post.date | dateFromRFC2822 }}{% endif %}",
-      "summary": "{{ post.data.description }}",
-      "content_html": {% if post.templateContent %}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{% else %}""{% endif %}
-    }{% if not loop.last %},{% endif %}
-    {% endfor %}]
+    {%- for item in collections.all | reverse -%}
+      {%- if loop.index0 < 10  -%}
+        {%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
+        {
+          "id": "{{ absolutePostUrl }}",
+          "title": "{{ item.data.title }}",
+          "url": "{{ absolutePostUrl }}",
+          "date_published": "{{ item.date | dateFromRFC2822 }}",
+          "summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
+          "content_html": {%- if item.templateContent -%}{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif -%}
+        }{%- if not loop.last -%},{%- endif %}
+      {%- endif -%}
+    {%- endfor %}
+  ]
 }
 ```
 
-6. In the `src` folder, create the file `sitemap.njk` to make your template for the XML sitemap (replace the dates in the final two items with what make sense for your site):
+4. In the `src` folder, create the file `sitemap.njk` to make your template for the XML sitemap (replace the dates in the final two items with what make sense for your site):
 
 ```twig
 ---
 permalink: /sitemap.xml
-#eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for post in collections.post | reverse %}
+  {%- for item in collections.all | reverse -%}
   <url>
-    <loc>{{ siteparams.siteURLforOG }}{{ post.url }}</loc>
-    {% if post.data.lastmod %}
-    <lastmod>{{ post.data.lastmod | dateStringISO }}</lastmod>
-    {% else %}
-    <lastmod>{{ post.date | dateStringISO }}</lastmod>
-    {% endif %}
+    <loc>{{ siteparams.siteURLforOG }}{{ item.url }}</loc>
+    {%- if item.data.lastmod -%}
+    <lastmod>{{ item.data.lastmod | dateStringISO }}</lastmod>
+    {%- else -%}
+    <lastmod>{{ item.date | dateStringISO }}</lastmod>
+    {%- endif -%}
   </url>
-  {%- endfor %}
-  <url>
-    <loc>{{ siteparams.siteURLforOG }}/about</loc>
-    <lastmod>2019-09-08</lastmod>
-  </url>
-  <url>
-    <loc>{{ siteparams.siteURLforOG }}</loc>
-    <lastmod>2019-09-08</lastmod>
-  </url>
+  {%- endfor -%}
 </urlset>
 ```
 
-7. In the `src` folder, create the folder `sitemap`; then, within it, create the file `index.md` with whatever date makes sense for you:
+5. In the `src` folder, create the folder `sitemap`; then, within it, create the file `index.md` with whatever date makes sense for you:
 
 ```md
 ---
@@ -211,7 +183,7 @@ title: "Sitemap (HTML form)"
 (The text for the page is all in the appropriate template.)
 ```
 
-8. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/)):
+6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/), and you'll obviously want to customize those "Main pages" items at the top):
 
 ```twig
 ---
@@ -227,8 +199,8 @@ layout: 'base.njk'
     </ul>
     <h2>Posts</h2>
     <ul>
-	  {%- for post in collections.post | reverse %}
-	    <li>{{ siteparams.siteURLforOG }}{{ post.url }} &bull; {{ post.date | dateStringISO }}</li>
+    {%- for post in collections.post | reverse %}
+	  <li>{{ siteparams.siteURLforOG }}{{ post.url }} &bull; {{ post.date | dateStringISO }}</li>
     {%- endfor %}
     </ul>
   </div>
@@ -357,9 +329,9 @@ Now, finish up the Hugo-based setup with the "For either SSG" instructions below
 1. Add the following to your sitewide `head` tag, wherever it resides in your layouts:
 
 ```html
-<!-- discover news feeds -->
-<link rel="alternate" title="News feed - RSS" type="application/rss+xml" href="https://www.example.com/index.xml" />
-<link rel="alternate" title="News feed - JSON" type="application/feed+json" href="https://www.example.com/index.json" />
+<!-- discover feeds -->
+<link rel="alternate" title="Feed - RSS" type="application/rss+xml" href="https://www.example.com/index.xml" />
+<link rel="alternate" title="Feed - JSON" type="application/feed+json" href="https://www.example.com/index.json" />
 ```
 
 2. This one is a **suggestion** but I think it's wise, especially for accessibility: add sitewide links (perhaps in the footer) to both of your sitemaps. For example, you might do it like this:

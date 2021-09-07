@@ -5,7 +5,7 @@ subtitle: "A trimmer website is a faster website"
 description: "How to subset large web font files to improve your site’s performance."
 author: Bryce Wray
 date: 2021-08-08T14:00:00-05:00
-#lastmod:
+lastmod: 2021-09-02T12:17:00-05:00
 discussionId: "2021-08-down-with-flabby-fonts"
 featured_image: "typography-1069409_6000x4000.jpg"
 featured_image_width: 6000
@@ -14,6 +14,8 @@ featured_image_alt: "Closeup view of type sheet showing type specifications"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/fill-8988/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1069409">Florian Pircher</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1069409">Pixabay</a></span>
 ---
+
+{{< disclaimer >}}
 
 Consider this a blast from the past, just the not-too-distant past.
 
@@ -28,6 +30,8 @@ Because I keep seeing the appearance of *non*-downsized fonts in the code of mor
 ## Very Inter-esting
 
 As of the initial publication of this post, this site uses the [Inter font](https://rsms.me/inter), and specifically the [variable](https://web.dev/variable-fonts/) version thereof (which, from here, I'll call "Inter VF"). Inter is a beautiful sans-serif font that looks a lot like San Francisco, the native system font on Apple devices.
+
+{{< imgc src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" width="2164" height="698" >}}
 
 The problem is that, due to the vast number of [glyphs](https://en.wikipedia.org/wiki/Glyph) it contains, Inter can be a *really* large download. So you want to make sure you *[subset](https://dev.to/benjaminblack/save-your-users-data-by-subsetting-web-fonts-5eo9)* it, extracting only those parts your site will actually use, and then use your CSS to tell the site to *use* only those parts. This is referring specifically to Inter VF because I think using *just* the variable-font version, which can provide all the styles you want, is more sensible than having to do the following procedure with *multiple* conventional (static) font files:
 
@@ -46,7 +50,7 @@ pyftsubset Inter.ttf \
 
 ```css
 /* === Inter, variable === */
-/* === 
+/* ===
 references:
 https://thetrevorharmon.com/blog/how-to-prepare-and-use-variable-fonts-on-the-web
 https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-support
@@ -89,6 +93,6 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
 
 *Back to the present&nbsp;.&nbsp;.&nbsp;.*
 
-For those who like the idea of using a trimmer version of the Inter variable web font but **don't** want to follow the procedure above, you certainly can go to [this site's repo](https://github.com/brycewray/eleventy_vite) and snag my copy. However, I encourage you to get comfortable with the subsetting procedure described here. After all, there are a lot of other great web fonts for the grabbing, and virtually all of them can use the slimming-down process this involves.[^subsetDiffs] It's not easy to put yourself on a diet when that's needed, but following these steps will make it a snap to de-fat your fonts.
+For those who like the idea of using a trimmer version of the Inter variable web font but **don't** want to follow the procedure above, you certainly can go to [this site's repo](https://github.com/brycewray/eleventy_site) and snag my copy. However, I encourage you to get comfortable with the subsetting procedure described here. After all, there are a lot of other great web fonts for the grabbing, and virtually all of them can use the slimming-down process this involves.[^subsetDiffs] It's not easy to put yourself on a diet when that's needed, but following these steps will make it a snap to de-fat your fonts.
 
 [^subsetDiffs]: Besides, your site may have totally different needs where the characters-to-be-included-in-the-subset are concerned, so it makes more sense to learn this procedure and adapt it for not only different fonts but also different subsetting.

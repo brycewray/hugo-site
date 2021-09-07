@@ -5,7 +5,7 @@ subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
-lastmod: 2021-05-17T12:50:00-05:00
+lastmod: 2021-05-16T10:43:00-05:00
 #draft: false
 discussionId: "2021-02-simplify-simplify"
 featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"

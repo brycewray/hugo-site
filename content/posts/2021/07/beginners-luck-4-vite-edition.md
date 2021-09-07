@@ -5,7 +5,7 @@ subtitle: "The stable of starter sets grows again"
 description: "Now I have an Eleventy/Vite starter, and here’s some of the code that makes it go."
 author: Bryce Wray
 date: 2021-07-25T16:46:00-05:00
-lastmod: 2021-07-26T09:43:00-05:00
+lastmod: 2021-08-22T16:22:00-05:00
 discussionId: "2021-07-beginners-luck-4-vite-edition"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608
@@ -21,6 +21,9 @@ A quickie for you (if you don't count the code blocks, that is) . . .
 Given the interest the community showed in my previous post, "[Eleventy + Vite = elite](/posts/2021/07/eleventy-vite-elite)," I thought I'd go ahead and issue [yet another starter set](/posts/2021/06/beginners-luck-3-adding-zola-starter): an [Eleventy](https://11ty.dev)/[Vite](https://vitejs.dev) combo. To make it, I simply cloned the existing [`eleventy_solo_starter_njk` repository](https://github.com/brycewray/eleventy_solo_starter_njk) and converted it for use with Vite as described herein. That means it gives you Eleventy with [Nunjucks](https://mozilla.github.io/nunjucks) templating, Vite, **and** [Tailwind CSS](https://tailwindcss.com) (plus [JIT](https://tailwindcss.com/docs/just-in-time-mode)) to boot.
 
 The new starter's repo is [`eleventy_vite_starter`](https://github.com/brycewray/eleventy_vite_starter). There's also an [online demo](https://eleventy-vite.vercel.app) which, if you're familiar with any of my other starters, may not float your boat---but the thing is, I was able to convert its predecessor to this config in well under an hour. That augurs well for your efforts, I would hope.
+
+**Update, 2021-08-22**: Today, I switched my site repo **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the previous one](/posts/2021/07/eleventy-vite-elite) for [archival purposes](/posts/2019/10/otoh); and, for those who might yet be interested, I'll also keep alive the starter repo described in this post.
+{.yellowBox}
 
 ## The conversion process
 

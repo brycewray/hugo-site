@@ -5,7 +5,7 @@ subtitle: "The latest of my wide-ranging website whatchamacallits"
 description: "More notes, notions, and nitpicks about managing one’s personal website."
 author: Bryce Wray
 date: 2021-05-30T13:16:00-05:00
-lastmod: 2021-06-03T12:14:00-05:00
+lastmod: 2021-06-21T13:06:00-05:00
 discussionId: "2021-05-gems-in-rough-05"
 featured_image: "gems-sarah-brown-cVt0u781VGo-unsplash_5521x3767.jpg"
 featured_image_width: 5521
