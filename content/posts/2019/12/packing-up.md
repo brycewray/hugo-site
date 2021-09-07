@@ -62,7 +62,7 @@ In the bad old days before [HTTP/2](https://http2.github.io) became widespread, 
 
 ### Concatenation and minifying
 
-Soon, a popular way around this problem was *concatenating* and *minifying* JS files. You'd take your twelve or fourteen files and cram 'em together into one file while also eliminating comments, line breaks, and any other items not utterly necessary for the code to run.[^spaces] Now you'd be down to just one server call for that one big JS file.
+Soon, a popular way around this problem was *concatenating* and *minifying* JS files. You'd take your twelve or fourteen files and cram ’em together into one file while also eliminating comments, line breaks, and any other items not utterly necessary for the code to run.[^spaces] Now you'd be down to just one server call for that one big JS file.
 
 Good to go, right? Well, not quite.
 

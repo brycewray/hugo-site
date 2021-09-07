@@ -112,6 +112,6 @@ In the meantime, I will muddle on with Google services[^mail] and hope they don'
 
 [^mail]: Except for Gmail, for which I [still](/posts/2019/05/the-holy-mail) have no remaining use.
 
-So, your honor, there we are. I anticipate no mercy from the court, as my learned former counsel so correctly put it, but them's the facts as I knows 'em.
+So, your honor, there we are. I anticipate no mercy from the court, as my learned former counsel so correctly put it, but them's the facts as I knows ’em.
 
 And, yes, your honor, I will try not to be too nervous about the sound of that blade I hear somebody sharpening off in the distance.

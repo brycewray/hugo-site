@@ -45,7 +45,7 @@ As for `.eleventy.js`, the main config file for Eleventy (thankfully, no separat
 
 ## package.json
 
-By now, the more observant among you, having seen certain items mentioned in these files, may be wondering what's in the `package.json` file. [Wonder no longer](https://github.com/brycewray/eleventy_bundler/blob/master/package.json)---although, I caution you, there are things in there I no longer use but simply haven't gotten around to opening up a can of `npm uninstall` on 'em as yet.
+By now, the more observant among you, having seen certain items mentioned in these files, may be wondering what's in the `package.json` file. [Wonder no longer](https://github.com/brycewray/eleventy_bundler/blob/master/package.json)---although, I caution you, there are things in there I no longer use but simply haven't gotten around to opening up a can of `npm uninstall` on ’em as yet.
 
 ## Copy-pasta meal?
 
