@@ -30,7 +30,7 @@ Perhaps the most surprising part of the news for some readers was that, as a res
 
 Since the news broke and, especially, since Microsoft confirmed it, I have seen several well-thought-out articles about the change. I especially recommend that you check out [this one](https://ferdychristant.com/the-state-of-web-browsers-f5a83a41c1cb) and [this one](https://love2dev.com/blog/project-anaheim/). You may also want to read the Mozilla Foundation's [obviously Firefox-oriented take](https://blog.mozilla.org/blog/2018/12/06/goodbye-edge/).
 
-And, yes, I do have a few thoughts about all this, partly in reaction to _others'_ comments and partly just on my own.
+And, yes, I do have a few thoughts about all this, partly in reaction to _others’_ comments and partly just on my own.
 
 ## Back to a too-few-cooks web?
 

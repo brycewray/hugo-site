@@ -48,7 +48,7 @@ We can do better, friends.
 
 I close with these comments, by blogger Kevin Marks, taken from a [2016 article](https://www.telegraph.co.uk/science/2016/10/23/internet-is-becoming-unreadable-because-of-a-trend-towards-light/) in _The Telegraph_:
 
-> To arbitrarily throw away contrast based on a fashion that looks good on my perfect screen in my perfectly lit office is abdicating [designers'] responsibilities to the very people for whom they are designing. My plea to designers and software engineers: Ignore the fads and go back to the typographic principles of print. You'll be making things better for people who read on smaller, dimmer screens, even if their eyes aren't aging like mine. It may not be trendy, but it's time to consider who is being left out by the web's aesthetic.
+> To arbitrarily throw away contrast based on a fashion that looks good on my perfect screen in my perfectly lit office is abdicating [designers’] responsibilities to the very people for whom they are designing. My plea to designers and software engineers: Ignore the fads and go back to the typographic principles of print. You'll be making things better for people who read on smaller, dimmer screens, even if their eyes aren't aging like mine. It may not be trendy, but it's time to consider who is being left out by the web's aesthetic.
 
 <p>&nbsp;</p>
 
