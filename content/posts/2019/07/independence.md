@@ -56,7 +56,7 @@ I think it was showing some demo program. I only vaguely remember seeing some [M
 
 But then I picked up the brochure: the [amazing, original Macintosh brochure](https://www.macobserver.com/tmo/article/Remembering_1984_With_An_Original_Mac_Brochure).
 
-> *"Of the 235 million people in America, only a fraction can use a computer. Introducing Macintosh. For the rest of us."*
+> *"Of the 235 million people in America, only a fraction can use a computer. Introducing Macintosh. For the rest of us.”*
 
 It still, in my mind, is the greatest piece of marketing material ever created to sell a computer system---or perhaps anything else. And then I really was stunned by the story it told: the thinking that had gone into making the Mac totally different, the ideas about how to use it that were a complete one-eighty from the staid crap that, say, the [IBM PC](https://computerhistory.org/revolution/personal-computers/17/301) of the time was built to handle. *Creative* stuff.
 

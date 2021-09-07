@@ -44,12 +44,12 @@ The alternative would be actually writing HTML within the Markdown, but that was
 .&nbsp;.&nbsp;. instead of just writing this in Markdown:
 
 ```md
-**This** is bold and *this* is italicized/obliqued, and [this link](https://gohugo.io/documentation) goes to the Hugo documentation, while [this post link](/posts/2021/02/simplify-simplify) goes to the site's recent **"Simplify, simplify"** post.{.yellowBox}
+**This** is bold and *this* is italicized/obliqued, and [this link](https://gohugo.io/documentation) goes to the Hugo documentation, while [this post link](/posts/2021/02/simplify-simplify) goes to the site's recent **"Simplify, simplify”** post.{.yellowBox}
 ```
 
 .&nbsp;.&nbsp;. to get the same result:
 
-**This** is bold and *this* is italicized/obliqued, and [this link](https://gohugo.io/documentation) goes to the Hugo documentation, while [this post link](/posts/2021/02/simplify-simplify) goes to the site's recent **"Simplify, simplify"** post.
+**This** is bold and *this* is italicized/obliqued, and [this link](https://gohugo.io/documentation) goes to the Hugo documentation, while [this post link](/posts/2021/02/simplify-simplify) goes to the site's recent **"Simplify, simplify”** post.
 {.yellowBox}
 
 In Eleventy, I enjoyed this convenience through use of the [Markdown-it-attrs plugin](https://github.com/GerHobbelt/markdown-it-attrs) for the [Markdown-it parser](https://github.com/markdown-it/markdown-it). In Eleventy, you essentially put together your chosen parser with whatever plugins it needs to do what you want---footnoting, "smart" punctuation, and, yes, handling styling attributes.

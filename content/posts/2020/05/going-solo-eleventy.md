@@ -87,7 +87,7 @@ Well, one lunchtime, I decided out of curiosity to check up on what's been going
 
 This day, my search brought up a video of a presentation that Tailwind creator [Adam Wathan](https://adamwathan.me/going-full-time-on-tailwind-css/) gave at [last year's Laracon US event](https://laravel-news.com/talks-and-photos-laracon-us-2019). The talk was called "[Tailwind CSS Best Practice Patterns](https://www.youtube.com/watch?v=J_7_mnFSLDg)." Perhaps the most interesting point Mr. Wathan made, early on, was&nbsp;.&nbsp;.&nbsp;.
 
-*"Tailwind is an [API](https://en.wikipedia.org/wiki/Application_programming_interface) for your design system."*
+*"Tailwind is an [API](https://en.wikipedia.org/wiki/Application_programming_interface) for your design system.”*
 
 I'd never thought of it that way before. Intrigued by the concept, I decided to give Tailwind another try; so, now, `eleventy_solo` would be not only *minus* webpack but also *plus* Tailwind.
 

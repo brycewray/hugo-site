@@ -50,7 +50,7 @@ The fact is: this site, about to enter its second year of life, now comes to you
 
 Yep, that's what I said. Eleventy. Not Hugo any more.
 
-Those of you who've been visiting this site for a while, and certainly over the last two-and-a-half months, are certainly entitled to a moment's worth of *"Whiskey Tango Foxtrot?!?"* as a result of that statement. (The rest probably couldn't care less.)
+Those of you who've been visiting this site for a while, and certainly over the last two-and-a-half months, are certainly entitled to a moment's worth of *"Whiskey Tango Foxtrot?!?”* as a result of that statement. (The rest probably couldn't care less.)
 
 Nonetheless, I do owe you an explanation, so please return with me now to those thrilling days of yestermonth&nbsp;.&nbsp;.&nbsp;.
 

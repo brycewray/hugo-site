@@ -42,13 +42,17 @@ Only thing is, my day job is in [one of those enterprise shops where Windows 7 a
 
 Everything had gone fine in that respect *except* for one thing that bedeviled me throughout last weekend, when I completed the vast majority of the transition to the test site that, as it turned out, would earn my path to freedom from what I've [dubbed](/posts/2019/01/blox-sux) "GUPB," for *godforsaken unidentified page builder*.
 
-However, like the pimple on one's nose on the night of a big date, this particular "one thing" was a big, honking problem *on the home page*. On the *first slide* of a slider, carousel, whatchamacallit, at the *top of the home page*.^[I'm no fan of image sliders for a variety of reasons, chiefly that I think they distract from your messaging more than they help it. But [t'ain't my call, McGee](https://www.phrases.org.uk/bulletin_board/61/messages/878.html). When I was a webmaster working in Marketing, I could influence such decisions; those days are behind me.] Arrgh!
+However, like the pimple on one's nose on the night of a big date, this particular "one thing" was a big, honking problem *on the home page*. On the *first slide* of a slider, carousel, whatchamacallit, at the *top of the home page*.[^sliders] Arrgh!
+
+[^sliders]: I'm no fan of image sliders for a variety of reasons, chiefly that I think they distract from your messaging more than they help it. But [t'ain't my call, McGee](https://www.phrases.org.uk/bulletin_board/61/messages/878.html). When I was a webmaster working in Marketing, I could influence such decisions; those days are behind me.
 
 To be specific, the text that overlay that first slide was shifted ’way too far to the right. It looked fine in the desktop versions of Chrome, Firefox, and even Edge. And it looked fine on iOS and Android. Only the damnable IE resisted.
 
 I put the annoyance aside for that weekend, what with all the other pages I had to rebuild; but, on Monday morning as I flipped through the various pages once more in an effort to find stuff I'd missed in the transition, I remembered there was that IE annoyance to fix.
 
-Everything I did in CSS that made it look mildly acceptable on IE made it go bonkers on the *real* browsers (`<burn>`shots fired`</burn>`). After spending ’way too much time trying to dope it out, and with my regular tasks waiting impatiently for my attention, I decided to do that hated thing known as browser-specific CSS.^[And, no, I don't know whether [HTML5 Shiv](https://github.com/aFarkas/html5shiv) would've fixed it; I didn't try it.] So I proceeded to create a little "ie.css" stylesheet and prepared to use IE conditional comments. Yep, those ugly things in the `<head>` section that only Internet Explorer sees, like:
+Everything I did in CSS that made it look mildly acceptable on IE made it go bonkers on the *real* browsers (`<burn>`shots fired`</burn>`). After spending ’way too much time trying to dope it out, and with my regular tasks waiting impatiently for my attention, I decided to do that hated thing known as browser-specific CSS.[^Shiv] So I proceeded to create a little "ie.css" stylesheet and prepared to use IE conditional comments. Yep, those ugly things in the `<head>` section that only Internet Explorer sees, like:
+
+[^Shiv]: And, no, I don't know whether [HTML5 Shiv](https://github.com/aFarkas/html5shiv) would've fixed it; I didn't try it.
 
 ```html
 <!--[if IE]>
@@ -66,7 +70,9 @@ I am still embarrassed. In the words of Donald Sutherland in *Animal House*: "[L
 
 So why am I sharing my shame? Because I saw posts from *other* people still asking about IE conditionals for IE 10 and 11 even in recent months, so there are others to inform. Here is the correct way to schnooker IE 10 and 11 into seeing an instruction that you want the *real* browsers to ignore (hat tip to [Philip Newcomer](https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/) and [numerous](https://stackoverflow.com/questions/19502040/if-ie-conditionals-not-working) [folks](https://stackoverflow.com/questions/27735840/why-are-conditional-comments-in-html-not-recognized-in-internet-explorer-11-is) [on](https://stackoverflow.com/questions/19446584/why-doesnt-internet-explorer-11-honour-conditional-comments-even-when-emulating) [Stack Overflow](https://stackoverflow.com/questions/40656043/conditional-comments-not-working-in-ie11)):
 
-> .&nbsp;.&nbsp;.&nbsp;create a media query using `-ms-high-contrast`, in which you place your IE 10- and 11-specific CSS styles. Because `-ms-high-contrast` is Microsoft-specific (and .&nbsp;.&nbsp;.&nbsp;available [only] in IE 10+), it will .&nbsp;.&nbsp;.&nbsp;be parsed in [only] Internet Explorer 10 and greater.^["How to Target Internet Explorer 10 and 11 in CSS," [Philip Newcomer: The Backwoods Coder](https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/).]
+> .&nbsp;.&nbsp;.&nbsp;create a media query using `-ms-high-contrast`, in which you place your IE 10- and 11-specific CSS styles. Because `-ms-high-contrast` is Microsoft-specific (and .&nbsp;.&nbsp;.&nbsp;available [only] in IE 10+), it will .&nbsp;.&nbsp;.&nbsp;be parsed in [only] Internet Explorer 10 and greater.[^Newcomer]
+
+[^Newcomer]: "How to Target Internet Explorer 10 and 11 in CSS," [Philip Newcomer: The Backwoods Coder](https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/).
 
 So I was saved the trouble of an "ie.css" sheet; and my resulting addition to the end of the "style.css" sheet I was already using turned out to be something along these lines:
 
