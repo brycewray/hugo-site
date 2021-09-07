@@ -23,7 +23,7 @@ Recently, I've been spending spare hours working on [Eleventy](https://11ty.dev)
 
 Rather than expect you to find them on your own in my various scattered references across my humble little site, I thought I'd write this brief post to list them all together. Maybe you'll find them helpful in whatever you choose to do in Eleventy or Hugo. Each is always based on the current appearance and layout of this site, which I hope will make clearer the connection between the code and the result.
 
-I'll list each by the name of its respective [repository](https://en.wikipedia.org/wiki/Software_repository) ("repo") in [GitHub](https://github.com). I've also linked each to its live demo on [Vercel](https://vercel.com).
+I'll list each by the name of its respective [repository](https://en.wikipedia.org/wiki/Software_repository) ("repo”) in [GitHub](https://github.com). I've also linked each to its live demo on [Vercel](https://vercel.com).
 
 ## Eleventy starters
 

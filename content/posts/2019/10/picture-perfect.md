@@ -28,7 +28,7 @@ If you're thinking about getting into the whole static-site thing and are wonder
 
 ## Monkey no see, monkey no do
 
-First off, let me explain the thing that threw me for a loop where Gatsby and images are concerned: under most circumstances, it wants you to put them in the same directory ("folder") as content. Back when I simply dropped images files into one big top-level `images` folder and Markdown files into another[^dirSet]---after which I'd let my SSG of the moment handle them pretty automatically---I found this limiting. Surely I wasn't going to have to start having to keep my images and Markdown files in the same directory?
+First off, let me explain the thing that threw me for a loop where Gatsby and images are concerned: under most circumstances, it wants you to put them in the same directory ("folder”) as content. Back when I simply dropped images files into one big top-level `images` folder and Markdown files into another[^dirSet]---after which I'd let my SSG of the moment handle them pretty automatically---I found this limiting. Surely I wasn't going to have to start having to keep my images and Markdown files in the same directory?
 
 [^dirSet]: Well, within limits. What I did with the site posts was to put them all in month-based folders; for example, this one would go in `/posts/2019/10` and then appear as `/posts/2019/10/picture-perfect`. Still, the point is: I wasn't putting Markdown files in the same folders with their images.
 

@@ -131,7 +131,7 @@ Eleventy says, "I have some ideas but, in the end, how would *you* like to do it
 
 Deal. Done.
 
-If I were going to leave the comfortable confines of Hugo, it would be for Eleventy. (More about that later, under "Eleventy's advantages.")
+If I were going to leave the comfortable confines of Hugo, it would be for Eleventy. (More about that later, under "Eleventy's advantages.”)
 
 However, of course, it wasn't quite that simple.
 

@@ -100,7 +100,7 @@ There's a long list of items Lighthouse checks for conformance with "Best Practi
 
 **Have the right HTML `doctype`**. If the HTML on your pages begins with an inaccurate `doctype` declaration (or, worse, none), browsers have to "guess" how to show your pages, and that "guessing" process takes extra time. The `doctype` declaration for HTML 5 is simple: `<!DOCTYPE html>`. For the older XHTML and HTML 4.x, the `doctype` declarations are somewhat more tedious.
 
-**Don't use WordPress if you can avoid it**. While there are countless reasons why that's always good advice, the Lighthouse "Best Practices" test adds another: WordPress includes an ancient version of jQuery that has known security vulnerabilities. Automattic, the entity behind WordPress, sticks with this hoary jQuery version to [avoid breaking changes](https://nimblewebdeveloper.com/blog/use-modern-jquery-in-wordpress) with the depressingly high number of extant WordPress sites---many of which are run by people who, to be kind about it, don't manage their sites’ technical components wisely. (As they say on social media, "SMH.")
+**Don't use WordPress if you can avoid it**. While there are countless reasons why that's always good advice, the Lighthouse "Best Practices" test adds another: WordPress includes an ancient version of jQuery that has known security vulnerabilities. Automattic, the entity behind WordPress, sticks with this hoary jQuery version to [avoid breaking changes](https://nimblewebdeveloper.com/blog/use-modern-jquery-in-wordpress) with the depressingly high number of extant WordPress sites---many of which are run by people who, to be kind about it, don't manage their sites’ technical components wisely. (As they say on social media, "SMH.”)
 
 ## SEO
 

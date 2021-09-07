@@ -70,7 +70,7 @@ First, let's install Eleventy Image in your Eleventy project.
 const Image = require("@11ty/eleventy-img")
 ```
 
-That tells Eleventy that, when we refer to `Image` (note the capital "I") from here on, we're talking about the Eleventy Image plugin package.
+That tells Eleventy that, when we refer to `Image` (note the capital "I”) from here on, we're talking about the Eleventy Image plugin package.
 
 Keep that `.eleventy.js` file open for editing, as we move to the next step.
 
@@ -88,7 +88,7 @@ module.exports = function (eleventyConfig) {
 }
 ```
 
-.&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i") by adding the code shown below.
+.&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i”) by adding the code shown below.
 
 **Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
 {.yellowBox}
@@ -151,7 +151,7 @@ Let's say you keep your Eleventy project's original image files (the ones the `i
 {% image "./src/images/my-pet-cat.jpg", "Photo of a brown-striped tabby cat named Tiger" %}
 ```
 
-Here, you've entered what the shortcode considers the `src` part ("./src/images/my-pet-cat.jpg"), then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project.
+Here, you've entered what the shortcode considers the `src` part ("./src/images/my-pet-cat.jpg”), then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger”) for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project.
 
 ### Get a look at the result
 

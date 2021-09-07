@@ -35,11 +35,11 @@ Do you even have to write all that well? It surely helps, but even a casual chec
 
 ### Performance
 
-I already addressed this subject in last year's "[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website)"; and, where the Google-critical Core Web Vitals are concerned, you should rely on the proverbial horse's mouth (*e.g.*, "[More time, tools, and details on the page experience update](https://developers.google.com/search/blog/2021/04/more-details-page-experience)"; "[Core Web Vitals &amp; Page Experience FAQs](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021)"; and, most especially, "[Web Vitals](https://web.dev/vitals/)").
+I already addressed this subject in last year's "[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website)"; and, where the Google-critical Core Web Vitals are concerned, you should rely on the proverbial horse's mouth (*e.g.*, "[More time, tools, and details on the page experience update](https://developers.google.com/search/blog/2021/04/more-details-page-experience)"; "[Core Web Vitals &amp; Page Experience FAQs](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021)"; and, most especially, "[Web Vitals](https://web.dev/vitals/)”).
 
 ### Feeds and sitemaps
 
-It's surprising how many otherwise SEO-friendly websites lack suitable *feeds* (or, as some used to call them, "news feeds") and *sitemaps*. The latter, in particular, are good not only for the always-"watching" search engines but also your fellow humans who have difficulty seeing, since sitemaps provide additional ways for such individuals to read your content.
+It's surprising how many otherwise SEO-friendly websites lack suitable *feeds* (or, as some used to call them, "news feeds”) and *sitemaps*. The latter, in particular, are good not only for the always-"watching" search engines but also your fellow humans who have difficulty seeing, since sitemaps provide additional ways for such individuals to read your content.
 
 By the way, each site should provide two types of feeds and two types of sitemaps:
 
@@ -230,7 +230,7 @@ outputs:
 ```
 
 2. Hugo comes with a built-in template for the RSS feed, so there's no need to come up with one.
-3. For the JSON feed, go to the appropriate `layouts/_defaults` folder (either in the top level or within a theme's folder setup; see "[Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/)") and create an `index.json` file with the following content (based on how the aforementioned RSS template works):
+3. For the JSON feed, go to the appropriate `layouts/_defaults` folder (either in the top level or within a theme's folder setup; see "[Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/)”) and create an `index.json` file with the following content (based on how the aforementioned RSS template works):
 
 ```go
 {{- $pctx := . -}}

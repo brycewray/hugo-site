@@ -75,7 +75,7 @@ While there probably are ways to do that when one has total control of the serve
 
 Moreover, I wouldn't *want* to do that. I'm annoyed whenever I encounter all this permissions-requesting stuff on one site after another, and I don't want to put my visitors through it.
 
-So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google).")
+So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google).”)
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 

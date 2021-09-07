@@ -86,7 +86,7 @@ async function handleRequest(request) {
   }
 
   let newHeaders = new Headers(response.headers)
-  newHeaders.set("Permissions-Policy", "interest-cohort=()")
+  newHeaders.set("Permissions-Policy", "interest-cohort=()”)
   if (ttl) {
     newHeaders.set("Cache-Control", "max-age=" + ttl)
   }

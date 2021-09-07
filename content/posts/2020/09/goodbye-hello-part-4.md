@@ -34,7 +34,7 @@ Still, throughout all the gyrations among these hosts, I'd never quite gotten pa
 
 In recent days, the curiosity finally became too great.
 
-As a result, I created identical microsites on Vercel, Netlify, and Render (identical so comparing them would be a case of "apples *vs.* apples *vs.* apples"); then, I set up [Zach Leatherman's Speedlify tool](https://github.com/zachleat/speedlify/) to scan them three times a day, measuring each microsite's respective performance.
+As a result, I created identical microsites on Vercel, Netlify, and Render (identical so comparing them would be a case of "apples *vs.* apples *vs.* apples”); then, I set up [Zach Leatherman's Speedlify tool](https://github.com/zachleat/speedlify/) to scan them three times a day, measuring each microsite's respective performance.
 
 As the days went by, a pattern emerged from the Speedlify results. While it didn't *always* win, the Render microsite *usually* won---this, despite the [vaunted advantages of Vercel's Global Edge Network](https://vercel.com/blog/new-edge-dev-infrastructure).[^1]
 

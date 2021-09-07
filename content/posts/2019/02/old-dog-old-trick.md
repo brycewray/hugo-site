@@ -113,7 +113,7 @@ Woof.
 
 *In short, stay tuned.*
 
-*And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting* (below) *about my last post. As he might say: "Thanks, mate!"*
+*And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting* (below) *about my last post. As he might say: "Thanks, mate!”*
 
 > [Chris Rosser • @RosserWrites](https://twitter.com/RosserWrites)
 >

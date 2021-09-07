@@ -83,7 +83,7 @@ My experience has been that using *all three* of these, every time you switch ho
 
 ## Very Inter-esting
 
-As of the initial publication of this post, this site uses the [Inter font](https://rsms.me/inter), and specifically the [variable](https://web.dev/variable-fonts/) version thereof (which, from here, I'll call "Inter VF"). Inter is a beautiful sans-serif font that looks a lot like San Francisco, the native system font on Apple devices.
+As of the initial publication of this post, this site uses the [Inter font](https://rsms.me/inter), and specifically the [variable](https://web.dev/variable-fonts/) version thereof (which, from here, I'll call "Inter VF”). Inter is a beautiful sans-serif font that looks a lot like San Francisco, the native system font on Apple devices.
 
 {{< imgc src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" width="2164" height="698" >}}
 

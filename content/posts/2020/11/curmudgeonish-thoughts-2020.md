@@ -26,7 +26,7 @@ So, with my spittle fully locked and loaded, here we go, and I apologize in adva
 
 - People say, "anyways," as if it were a reference to multiple items. The word is *anyway*. The meaning is of one thing---essentially, *in any event*---not multiple things ("in any events"?). Don't know if this is a regionalism, but its use is widespread. And annoying.
 
-- Then there is "those ones" (or "these ones"); *e.g.*, "So we'll get to those ones in a minute." In this, the word  *ones* is unnecessary. Just say, "those" (or "these").
+- Then there is "those ones" (or "these ones”); *e.g.*, "So we'll get to those ones in a minute." In this, the word  *ones* is unnecessary. Just say, "those" (or "these”).
 
 - I love to watch and listen to sporting events, but most sports announcers obviously never paid attention back in school when their teachers were trying to explain the objective case. Abominations like "they're coming through the line at he and Jones" are the result. Arrrgh.[^whyNomObj]
 
@@ -42,7 +42,7 @@ Broadcast ad buyers of the world, I ask you: how would you feel if you were stuc
 
 Mind you, this doesn't take into account the additional reality of how tired one becomes of even the cleverest Hallowe'en-themed commercials by about the first week of October or the nicest Christmas-themed commercials by about, in this day and age, the first week of November.
 
-But, back to you ad buyers: if you can't afford to make and place a wider variety of commercials, just save the vast sum you're spending on broadcast spots. After the first or second viewings, the spots work *against* you. Contrary to the old joke, it's *not* true that even a negative reaction is worse than no reaction at all. I purposely don't spend money on products whose commercials rub me the wrong way (including making me say, "Oh, God, not *again*, not *this* soon"); and I suspect I'm not the only one who feels that way.
+But, back to you ad buyers: if you can't afford to make and place a wider variety of commercials, just save the vast sum you're spending on broadcast spots. After the first or second viewings, the spots work *against* you. Contrary to the old joke, it's *not* true that even a negative reaction is worse than no reaction at all. I purposely don't spend money on products whose commercials rub me the wrong way (including making me say, "Oh, God, not *again*, not *this* soon”); and I suspect I'm not the only one who feels that way.
 
 ## Like concerns
 
