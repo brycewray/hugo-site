@@ -74,7 +74,7 @@
   <link rel="preload" href="/fonts/Public-Sans-Roman-VF-1-008_2020-01-08_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
   <link rel="preload" href="/fonts/Public-Sans-Italic-VF-1-008_2020-01-08_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
   {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
-  {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint "md5" }}
+  {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | resources.PostCSS | fingerprint "md5" }}
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 
