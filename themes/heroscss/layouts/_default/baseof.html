@@ -1,4 +1,4 @@
-{{- $lazyloadFile := resources.Get "js/lazyload_17-4-0.min.js" -}}
+{{- $lazyloadFile := resources.Get "js/lazyload_17-5-0.min.js" -}}
 {{- $lazyloadHelp := resources.Get "js/lazyload-helper.js" -}}
 {{- $jsBundle := slice $lazyloadFile $lazyloadHelp | resources.Concat "js/lazyBundle.js" | resources.Minify | fingerprint "md5" -}}
 
