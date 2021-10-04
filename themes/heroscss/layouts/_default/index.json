@@ -34,11 +34,9 @@
   {{ end -}}
   "items": [
     {{ range $index, $element := $pages -}}
-    {{- $contentSafe := .Content | safeJS -}}
     {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` .Title `”">Reply via email</a></p>` -}}
-    {{- $emailReplyHTML := $emailReplyHTML | safeJS -}}
-    {{- $contentHTML := printf "%s%s" $contentSafe $emailReplyHTML -}}
-    {{- $contentHTML := chomp $contentHTML -}}
+    {{- $emailReplyHTML := $emailReplyHTML -}}
+    {{- $contentHTML := printf "%s%s" .Content $emailReplyHTML -}}
     {
       "title": {{ .Title | jsonify }},
       "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
@@ -52,7 +50,7 @@
         }
       ],
       {{ end -}}
-      "content_html": {{- $contentHTML -}}
+      "content_html": {{- $contentHTML | jsonify -}}
     }{{ if ne (add $index 1) $length }},{{ end }}
     {{ end -}}
   ]
