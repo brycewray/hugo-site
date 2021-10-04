@@ -22,9 +22,7 @@ In those aforementioned posts, I only briefly touched on the MFA-related subject
 
 I’ll once again acknowledge the excellent [Techlore](https://techlore.tech) video about TOTPs to which I referred you in one of those earlier posts:
 
-{% set videoTitle = "The Ultimate TOTP/2FA Guide for Max Security Online" %}
-{% set videoId = "iXSyxm9jmmo" %}
-{% include "layouts/partials/lite-youtube.njk" %}
+{{< lite-youtube videoTitle="The Ultimate TOTP/2FA Guide for Max Security Online" videoId="iXSyxm9jmmo" >}}
 
 If you watch that video from start to finish, you’ll learn *far* more than I’m going to describe here, so you may just want to do that rather than read what follows. However, I’ll still proceed with this post because some folks, like Yours Truly in All His Hoariness, often prefer to learn by reading rather than watching a video.
 
@@ -72,7 +70,7 @@ Incidentally, here’s a little more about Microsoft Authenticator in particular
 
 I’ll offer one final caution regarding Microsoft Authenticator. This comes into play if you do have to use it *and* for some reason end up deleting it and restoring from your previous backup. If so, you must do that at **one specific spot** in the app reinstallation process or else you’ll have to re-enter all your TOTPs:
 
-{% imgc "MS_Authenticator_recovery_prompt_annotated_1125x2436.png", "Annotated screen capture from Microsoft Authenticator application setup process", 1125, 2436 %}
+{{< imgc src="MS_Authenticator_recovery_prompt_annotated_1125x2436.png" alt="Annotated screen capture from Microsoft Authenticator application setup process" height="1125" width="2436" >}}
 
 This is the only screen in the Microsoft Authenticator setup process where you have a chance to recover previously backed-up TOTPs (annotation added, of course).
 {.imgcCaption}
@@ -85,21 +83,21 @@ So if those are the TOTP apps to avoid, assuming your workplace or school doesn�
 
 For Android devices, you’d be hard-pressed to find something better than [Aegis Authenticator](https://getaegis.app/), a free/open-source software (FOSS) app. Although it mostly lacks cloud backup functionality[^3], it lets you export encrypted vaults to your cloud of choice and access them from there.
 
-{% imgc "Aegis_screenshot_edited_1080x1920.png", "Edited screen capture of Aegis Authenticator application", 1080, 1920 %}
+{{< imgc src="Aegis_screenshot_edited_1080x1920.png" alt="Edited screen capture of Aegis Authenticator application" width="1080" height="1920" >}}
 
 Aegis Authenticator (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
 
 For iOS devices, I can strongly recommend [Raivo OTP](https://github.com/raivo-otp/ios-application). Its main app is on iOS, while its recently added macOS app is a “receiver” which lets you copy a TOTP from your phone straight to the Mac clipboard.[^4] It backs up to iCloud and thus makes your TOTPs available on all your iOS devices. Both apps are free, but the dev obviously appreciates—and, in my opinion, deserves—donations to help keep his work going.
 
-{% imgc "Raivo-OTP_screenshot_edited_1125x2436.png", "Edited screen capture of Raivo OTP application", 1125, 2436 %}
+{{< imgc src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" width="1125" height="2436" >}}
 
 Raivo OTP, iOS version (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
 
 If Raivo OTP doesn’t float your boat for some reason, you can also try [OTP Auth](https://cooperrs.de/otpauth.html). It comes in both iOS and macOS/Catalyst flavors. As with Raivo OTP, it provides backups on iCloud. I prefer Raivo OTP’s UI over that of OTP Auth, but otherwise find each to be equally capable. The iOS app is freemium[^5] while the macOS app must be purchased for, at this writing, $5.99. If you don’t want or need the macOS app, you certainly can use only the iOS app and just manually enter into your Mac the TOTPs the app shows you.
 
-{% imgc "OTP_Auth_screenshot_edited_1125x2436.png", "Edited screen capture of OTP Auth application", 1125, 2436 %}
+{{< imgc src="OTP_Auth_screenshot_edited_1125x2436.png" alt="Edited screen capture of OTP Auth application" width="1125" height="2436" >}}
 
 OTP Auth, iOS version (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
@@ -108,7 +106,7 @@ Please note that, although Raivo OTP has its code publicly viewable on GitHub, i
 
 [^TofuBackup]: See the "FAQ" section on the [Tofu Authenticator website](https://www.tofuauth.com/).
 
-{% imgc "Tofu_Authenticator_screen_cap_edited_1125x2436.png", "Edited screen capture of Tofu Authenticator application", 1125, 2436 %}
+{{< imgc src="Tofu_Authenticator_screen_cap_edited_1125x2436.png" alt="Edited screen capture of Tofu Authenticator application" width="1125" height="2436" >}}
 
 Tofu Authenticator (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}

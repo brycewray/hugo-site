@@ -23,8 +23,6 @@ Now, on to the code.
 
 ### Eleventy RSS
 
-{% raw %}
-
 ```twig
 ---json
 {
@@ -74,11 +72,7 @@ Now, on to the code.
 </feed>
 ```
 
-{% endraw %}
-
 ### Eleventy JSON
-
-{% raw %}
 
 ```twig
 ---json
@@ -123,13 +117,9 @@ Now, on to the code.
 }
 ```
 
-{% endraw %}
-
 ### Hugo RSS
 
-{% raw %}
-
-```twig
+```go
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
@@ -177,13 +167,9 @@ Now, on to the code.
 </rss>
 ```
 
-{% endraw %}
-
 ### Hugo JSON
 
-{% raw %}
-
-```twig
+```go
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := $pctx.RegularPages -}}
@@ -242,8 +228,6 @@ Now, on to the code.
   ]
 }
 ```
-
-{% endraw %}
 
 **Note**: Of course, if you're already a subscriber to either of my feeds (and, if so, thank you!), you won't see the resulting "Reply via email" link in content that had been pulled into your chosen newsreader app before I implemented these code changes. The only way to see it in older content would be to flush the old posts and then reload them.
 {.yellowBox}
