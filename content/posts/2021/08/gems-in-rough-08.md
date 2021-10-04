@@ -5,7 +5,7 @@ subtitle: "More bits, bytes, ’n’ bushwa ’bout static site builders"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray
 date: 2021-08-04T16:30:00-05:00
-lastmod: 2021-08-14T21:10:00-05:00
+lastmod: 2021-09-25T12:07:00-05:00
 discussionId: "2021-08-gems-in-rough-08"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
 featured_image_width: 7315
@@ -28,7 +28,7 @@ You might want to see [Fireship](https://fireship.io/)'s [YouTube video about As
 
 Astro's got a lot of promise, but for now it's also kinda frustrating in that a lot of the example code in the [documentation](https://docs.astro.build) simply doesn't work as it should---or, at least, it doesn't for me. Astro also is pretty opinionated by design, which has its good points---*e.g.*, fewer ways for certain procedures to go wrong---but also can make it difficult to re-use some items that work perfectly well on other SSGs.
 
-For example: in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) SSGs, you can insert *shortcodes* into your [Markdown](https://daringfireball.net/projects/markdown) text. This lets you insert bits of code to do cool things, like image processing, that Markdown on its own won't allow. In Astro, the only way to include code in Markdown is to use an `.astro` file[^dotAstro] with a proprietary `<Markdown>` element and then intermix your code with that. It works, but this limitation means you're not likely to move years’ worth of shortcode-laden `.md` files over from another SSG. That's a **big** deal. (The Astro team is [considering](https://github.com/snowpackjs/astro/issues/491) allowing components in actual `.md` files, somewhat like how the [`.mdx` file format](https://mdxjs.com/) works, so this particular gotcha may improve soon.)
+For example: in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) SSGs, you can insert *shortcodes* into your [Markdown](https://daringfireball.net/projects/markdown) text. This lets you insert bits of code to do cool things, like image processing, that Markdown on its own won't allow. In Astro, the only way to include code in Markdown is to use an `.astro` file[^dotAstro] with a proprietary `<Markdown>` element and then intermix your code with that. It works, but this limitation means you're not likely to move years' worth of shortcode-laden `.md` files over from another SSG. That's a **big** deal. (The Astro team is [considering](https://github.com/snowpackjs/astro/issues/491) allowing components in actual `.md` files, somewhat like how the [`.mdx` file format](https://mdxjs.com/) works, so this particular gotcha may improve soon.)
 
 [^dotAstro]: It seems wrong to say aloud, "an 'dot-astro' file," but it looks right on the screen. *C'est la guerre.*
 
@@ -51,7 +51,7 @@ I have a cloned repo of Zach Leatherman's [Speedlify project](https://github.com
 
 I have no idea why DOAP's build time was so slow this time, sparing Cloudflare Pages from being the slowest of the six for once; stuff happens. That said, it's a big black eye for both the last two in that their build times **without** GitHub Actions were considerably slower than the two above them which **did** use GitHub Actions.
 
-As for the actual performance numbers I see in Speedlify, you can check my [test results](https://speedlify-tests.netlify.app/hosts-tests/) at any time. Speedlify stores only the ten most recent results, so the trends you see lack statistical significance; **but** I can make a couple of general observations about what I've been seeing:
+As for the actual performance numbers I see in Speedlify, you can check my [test results](https://speedlify-tests.netlify.app/hosts-tests/) at any time *(but see my 2021-09-25 update further down)*. Speedlify stores only the ten most recent results, so the trends you see lack statistical significance; **but** I can make a couple of general observations about what I've been seeing:
 
 - Cloudflare Pages and DOAP tend to be in the top two or three pretty consistently, while the Cloudflare Workers site and ASWA tend to be in the **bottom** two or three almost as consistently.
 - Render and Vercel are somewhat erratic, varying wildly from top three to bottom three. I'm at a loss to know why.
@@ -60,3 +60,9 @@ As for the actual performance numbers I see in Speedlify, you can check my [test
 {.yellowBox}
 
 [^CICD]: Of course, I could use GitHub Actions to get around this, as I explained in last year's "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd)"---but, as a friend overseas would say, "I can't be arsed."
+
+**Update, 2021-09-18**: Azure deleted my test ASWA site tonight (early on 2021-09-19 according to UTC) because, apparently, it doesn't allow free static sites, after all, unlike the other vendors mentioned here. Consequently, the Speedlify test results now have four sites.
+{.yellowBox}
+
+**Update, 2021-09-25**: I've turned off the cron jobs that run the test each day, so the results will be frozen going forward. It seemed nonsensical to keep running the tests since the list of sites was down to just four---two of them Cloudflare-based.
+{.yellowBox}
