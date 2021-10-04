@@ -9,38 +9,61 @@
   },
   "headers": [
     {
-      "source": "/css/(.*)",
+      "source": "(.*)",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=2678400"
+          "key": "Permissions-Policy",
+          "value": "interest-cohort=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer, strict-origin-when-cross-origin"
         }
       ]
     },
     {
-      "source": "/images/(.*)",
+      "source": "/(.*).(jpe?g|gif|png|ico|webp|svg|xml|webm|mp4|mpe?g|ttf|otf|woff2?)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=2678400"
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         }
       ]
     },
     {
-      "source": "/images/icons/(.*)",
+      "source": "/(.*).(css|js|pdf)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=2678400"
-        }
-      ]
-    },
-    {
-      "source": "/fonts/(.*)",
-      "headers": [
+          "value":"public, max-age=2678400, immutable"
+        },
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000,immutable"
+          "key": "CDN-Cache-Control",
+          "value": "public, max-age=2678400, immutable"
         }
       ]
     }
