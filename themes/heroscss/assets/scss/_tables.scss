@@ -17,7 +17,7 @@ table.noborders {
     }
   }
   td {
-    text-align: left !important;
+    text-align: left;
     vertical-align: middle;
     padding: 0.25rem 0 0.25rem 0.5rem;
     img {
@@ -38,7 +38,7 @@ table.noborders {
     }
   }
   thead td {
-    color: hsl(0, 0%, 100%) !important;
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
   }
   td.td70 {

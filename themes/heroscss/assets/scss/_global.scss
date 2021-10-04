@@ -22,7 +22,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  // font-family: $sans-serif;
+  font-family: $sans-serif;
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
     color: $default-color-dark-mode;
@@ -137,7 +137,7 @@ a:focus, a:hover, a:active {
   }
 }
 
-sup a, a.previous, a.next, .footnote-return, a.icon {
+sup a, .footnote-return, a.icon {
   border-bottom: 0;
 }
 
@@ -178,11 +178,11 @@ ul li li li {
   list-style-type: square;
 }
 
-#content-main-hugo, main {
+#content, main {
   padding-top: 40px;
 }
 
-#content-main-hugo .topOfMain, main .topOfMain {
+#content .topOfMain, main .topOfMain {
   margin-top: 0.5rem;
   font-size: 2.25rem;
 }
@@ -192,7 +192,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 footer {
-  // font-family: $sans-serif;
+  font-family: $sans-serif;
   text-align: center;
   font-size: $legal;
   margin: 4rem auto 0 auto;
@@ -209,7 +209,7 @@ footer {
       margin: 1rem 0;
     }
   }
-  @media (min-width: 1024px) {
+  @media (min-width: $bkpt_lg) {
     margin: 2rem auto 0 auto;
     // padding-bottom: 1rem;
     div.footerWrapper {
@@ -230,12 +230,12 @@ footer {
   // width: 90%;
   margin: 0 auto;
   &-home {
-    // font-family: $sans-serif;
+    font-family: $sans-serif;
     text-align: center;
     padding: 2rem 0;
     margin: 0 auto;
     width: 90%;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $bkpt_lg) {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -247,10 +247,10 @@ footer {
     }
     h1 {
       font-size: 1.25rem;
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: $bkpt_lg) {
         font-size: 1.5rem;
       }
-      @media screen and (min-width: 1536px) {
+      @media screen and (min-width: $bkpt_2xl) {
         font-size: 1.75rem;;
       }
     }
@@ -258,7 +258,15 @@ footer {
   &-narrower {
     margin: 1rem auto 0 auto;
     width: 80%;
-    max-width: 40em;
+    @media screen and (min-width: $bkpt_lg) {
+      width: 65%;
+    }
+    @media screen and (min-width: $bkpt_xl) {
+      width: 50%;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      width: 43%;
+    }
     figure img, img {
       width: 100%;
       height: auto;
@@ -277,55 +285,13 @@ footer {
       margin: 0;
     }
   }
-  &-comments {
-    font-size: 85%;
-    max-width: 720px !important;
-    margin-bottom: 0;
-  }
-  &-oldComments { // old comments from Talkyard
-    // font-family: $sans-serif;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    display: block;
-    margin: 2rem auto 0 auto;
-    padding: 1rem 0;
-    @media (prefers-color-scheme: dark) {
-      border-top: 1px solid hsl(0, 0%, 60%);
-      border-bottom: 1px solid hsl(0, 0%, 60%);
-    }
-    h3 {
-      margin: 0;
-      text-align: center;
-      font-size: 1.75rem;
-      letter-spacing: -0.025rem;
-    }
-    p.commentDisclaimer {
-      font-size: 0.75rem;
-      text-align: center;
-    }
-    p.commentName {
-      font-size: 0.75rem;
-      margin-top: 1rem;
-      margin-bottom: 0;
-    }
-    .commentDate {
-      font-size: 0.85em;
-    }
-    p.comment {
-      margin-top: 0;
-      margin-bottom: 0;
-      letter-spacing: normal;
-      font-size: 0.75rem;
-      line-height: 1.5;
-    }
-  }
 }
 
 
 li p {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  width: 100% !important;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
 }
 
 article {
@@ -335,10 +301,10 @@ article {
     line-height: 1.625;
     margin-top: 1em;
     margin-bottom: 1em;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $bkpt_lg) {
       font-size: 1.25rem;
     }
-    @media screen and (min-width: 1536px) {
+    @media screen and (min-width: $bkpt_2xl) {
       font-size: 1.5rem;
     }
   }
@@ -350,5 +316,6 @@ article {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     letter-spacing: -.025em;
+    line-height: normal;
   }
 }

@@ -1,4 +1,4 @@
-/* 
+/*
   h/t to Andy Bell
   https://piccalil.li/blog/a-modern-css-reset/
   . . . as of 2021-07-09
@@ -39,7 +39,7 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
+  // text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
@@ -68,7 +68,7 @@ select {
   html:focus-within {
    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {

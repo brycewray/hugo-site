@@ -58,6 +58,7 @@
   &-Title {
     font-size: 1.75rem;
     padding-top: 0.5em;
+    line-height: normal;
     @media screen and (min-width: $bkpt_lg) {
       font-size: 2rem;
     }

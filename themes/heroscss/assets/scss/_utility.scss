@@ -85,7 +85,19 @@
   }
 }
 .bg-primary {
-  background-color: $blue !important;
+  background-color: $blue;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .btn-primary {
@@ -110,7 +122,7 @@
 }
 
 .yellowBox, .blueBox {
-  // font-family: $sans-serif;
+  font-family: $sans-serif;
   display: block;
   box-sizing: border-box;
   border: 1px solid hsl(0, 0%, 20%);
@@ -157,7 +169,7 @@ img.containedImage {
 }
 
 .imgcCaption, .imgCaption, .lazypicturecaption {
-  // font-family: $sans-serif;
+  font-family: $sans-serif;
   padding: 0;
   margin-block-start: 0.5em;
   line-height: 1.375;
@@ -245,6 +257,19 @@ img.containedImage {
   .bottom {
     margin-bottom: 10em;
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 1s ease-in-out;
 }
 
 // === end, utility classes
