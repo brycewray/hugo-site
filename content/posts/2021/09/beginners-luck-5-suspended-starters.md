@@ -30,7 +30,7 @@ As for why I'm pulling the plug on working with these, call it an after-effect o
 
 [^retirement]: You young whippersnappers may want to know that there's actually a lot of important post-retirement paperwork---all too much actual dead-tree paper and not nearly enough electronic paper for my preferences---with which one has to deal fairly urgently, and those things take up more of one's time than you might think.
 
-I'll keep the starters' repos alive for the time being, in case anybody is curious about the code for some bizarre reason, but in any event there are (and always have been) much better places to look:
+I'll keep the starters’ repos alive for the time being, in case anybody is curious about the code for some bizarre reason, but in any event there are (and always have been) much better places to look:
 
 - Eleventy --- ["Starter Projects" page](https://www.11ty.dev/docs/starter/).
 - Hugo --- ["Starter Kits" page](https://gohugo.io/tools/starter-kits/) and ["Themes" mini-site](https://themes.gohugo.io/).

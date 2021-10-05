@@ -44,7 +44,7 @@ Performance questions aside, 1Password has long been a go-to for many Mac users 
 
 ### Vaults
 
-The whole subject of "vaults" was already touchy among 1Password users who resisted the long-recommended move to subscription-based storage of their credentials on 1Password's own cloud setup. They wanted to keep *local* vaults and sync those with their own preferred cloud storage vendors, like iCloud and Dropbox, but [that's a no-go starting with 1Password 8](https://www.cultofmac.com/749946/1password-upsets-fans/). With the new version, users' only choice for cloud-based credentials storage will be 1Password's cloud.
+The whole subject of "vaults" was already touchy among 1Password users who resisted the long-recommended move to subscription-based storage of their credentials on 1Password's own cloud setup. They wanted to keep *local* vaults and sync those with their own preferred cloud storage vendors, like iCloud and Dropbox, but [that's a no-go starting with 1Password 8](https://www.cultofmac.com/749946/1password-upsets-fans/). With the new version, users’ only choice for cloud-based credentials storage will be 1Password's cloud.
 
 ## The alternatives?
 
