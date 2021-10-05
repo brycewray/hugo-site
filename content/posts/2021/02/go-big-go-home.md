@@ -48,7 +48,8 @@ For example, I can insert all the code required for a responsive display of the 
 
 {{< imgc src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width="1984" height="1118" >}}
 
-{{% caption %}}Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/){{% /caption %}}
+Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/)
+{.imgcCaption}
 
 .&nbsp;.&nbsp;. by inserting this shortcode in my Eleventy repo:
 
@@ -84,13 +85,13 @@ const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
 var xFmPart1 = 'f_auto,q_auto:eco,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
- 
+
 module.exports = (url, alt, width, height) => {
   divClass = `relative`
   imgClass = `containedImage`
   nscClass = `containedImage`
   dataSzes = `(min-width: 1024px) 100vw, 50vw`
-  
+
   var separator = ', '
 
   var stringtoRet = ``
@@ -125,11 +126,11 @@ Here's the corresponding Go version for Hugo:
 {{- $width := .Get "width" -}}
 {{- $height := .Get "height" -}}
 
-{{/* 
-  separating the Cloudinary-related vars for 
-  greater flexibility, especially in case 
-  somebody else wants to borrow this code 
-  for his/her own Cloudinary setup and 
+{{/*
+  separating the Cloudinary-related vars for
+  greater flexibility, especially in case
+  somebody else wants to borrow this code
+  for his/her own Cloudinary setup and
   transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}

@@ -21,16 +21,16 @@ oldComments: |
       </p>
       <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-06-16</em></span></p>
       <p class="comment">Hi Bryce. I'm a new reader to your site. I found you when I was searching for information about MailMate. Thanks for this great overview. I've also enjoyed some of your other articles. I've now subscribed to your RSS feed, as I think your writing is great.</p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-06-17</em></span></p>
       <p class="comment">Not sure which of my relatives posted these kind comments under Mr. Canion&rsquo;s name :-) &mdash; but I appreciate them tremendously.</p>
-    
+
       <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-08-21</em></span></p>
       <p class="comment">I finally got around to writing <a href="https://canion.me/mailmate-review" target="_blank" rel="noopener">my own review of MailMate</a>.</p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-08-22</em></span></p>
       <p class="comment">And I like yours better. :-) I don&rsquo;t qualify as a power email user, particularly because I don&rsquo;t keep my business email with my personal email (don&rsquo;t want my employer&rsquo;s chosen MDM software on my primary iPhone, and such access isn&rsquo;t allowed on my Mac even if I <strong>did</strong> want it), so I would urge those who do so to read your review. You noted many superb MailMate features I either neglected to mention or didn&rsquo;t find germane to my more mundane use case.</p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-09-28</em></span></p>
       <p class="comment">Later note . . .</p>
       <p class="comment">To be fair: I should also note that, as I&rsquo;d originally suspected, MailMate has turned out to be more than my relatively pedestrian scenario really needs &mdash; but I&rsquo;m very much <em><strong>not</strong></em> sorry that I bought a license and became a patron. Dr. Nielsen&rsquo;s work is easily worthy of both.</p>
@@ -47,7 +47,8 @@ Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2
 
 {{< imgc src="MailMate_screen_cap_1619x720.jpg" alt="Screen capture of the MailMate app" width="1619" height="720" >}}
 
-{{% caption %}}Image: Screen capture of MailMate, with its Latin-displaying "distortion mode" engaged for privacy's sake.{{% /caption %}}
+Image: Screen capture of MailMate, with its Latin-displaying "distortion mode" engaged for privacy's sake.
+{.imgcCaption}
 
 ## Power trip
 

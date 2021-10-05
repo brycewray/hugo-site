@@ -61,7 +61,8 @@ Fortunately, this isn't true of the basic Windows version of KeePass, which cont
 
 {{< imgc src="keepassxc_unlock_db_2066x1532.png" alt="Screen capture from KeePassXC" width="2066" height="1532" >}}
 
-{{% caption %}}The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.{{% /caption %}}
+The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.
+{.imgcCaption}
 
 Now, let's consider that "on each device" business concerning the database file.
 
@@ -87,7 +88,8 @@ This is the sector of password management apps about which you see and hear the 
 
 {{< imgc src="bitwarden-com_screen-cap_2021-06-09_3164x1420.png" alt="Screen capture of the Bitwarden website" width="3164" height="1420" >}}
 
-{{% caption %}}The home page on the [Bitwarden website](https://www.bitwarden.com).{{% /caption %}}
+The home page on the [Bitwarden website](https://www.bitwarden.com).
+{.imgcCaption}
 
 Each involves cloud sync from the word "go"[^Enpass] (although Bitwarden [can be self-hosted](https://bitwarden.com/help/article/install-on-premise/) by those who are sufficiently knowledgeable about "hardening" servers---which points us back toward the "this is for techies only" segment already owned by KeePass fans) and provides options for all the major operating systems and device types, as well as extensions for the vast majority of modern web browsers to further simplify your logging into websites. These providers’ user-friendly apps and web browser extensions[^extsKP] give the non-KeePass way a **huge** usability advantage over the KeePass way.
 
