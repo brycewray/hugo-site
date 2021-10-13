@@ -23,7 +23,7 @@ To illustrate the difference, here's how the Windows version of Outlook shows an
 
 {{< imgc src="2021-10-11_screenshot_Outlook-on-Windows_segment_1610x512.png" alt="Outlook on Windows - view of email thread" width="1610" height="512" >}}
 
-I can see both my own emails and others' listed in this view. Nice and convenient, right?
+I can see both my own emails and others’ listed in this view. Nice and convenient, right?
 
 Now, here's how, for some years now, the Mac version of Outlook would show the same thread:
 
