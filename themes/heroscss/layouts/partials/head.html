@@ -13,7 +13,7 @@
   {{- hugo.Generator -}}
 
   <meta property="og:type" content="website" />
-  
+
   {{- if .IsHome -}}
   <title>{{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }}" />
@@ -42,7 +42,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ if .Params.Featured_image }}{{ .Params.Featured_Image }}{{ else }}{{ $fallbackImg }}{{ end }}" />
   <meta name="twitter:description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
-  <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" /> 
+  <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 
   {{/* **** BEGINNING, favicons **** */}}
   {{- /* generics */ -}}
@@ -71,8 +71,10 @@
 
 
   {{/* CSS/SCSS */}}
+  <!--
   <link rel="preload" href="/fonts/Public-Sans-Roman-VF-1-008_2020-01-08_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
   <link rel="preload" href="/fonts/Public-Sans-Italic-VF-1-008_2020-01-08_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+  -->
   {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
   {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | resources.PostCSS | fingerprint "md5" }}
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
@@ -87,5 +89,5 @@
   <link rel="preconnect" href="https://cdn.jsdeliver.net" crossorigin />
   <link rel="dns-prefetch" href="https://res.cloudinary.com" />
   <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
-  
+
 </head>
