@@ -1,14 +1,14 @@
 {{/*
-  This shortcode takes the following form: 
+  This shortcode takes the following form:
   imgc src, alt, width, height
   ...with 'src' in the form of (note NO leading or ending slash):
   filename.ext
-  ...and 'tmpl' optional in body copy. The template is used 
-  to specify hero images on either the home page ('index') or 
-  post pages ('posts'). Without this parameter, the defaults 
+  ...and 'tmpl' optional in body copy. The template is used
+  to specify hero images on either the home page ('index') or
+  post pages ('posts'). Without this parameter, the defaults
   cause body-copy-style image-handling.
 
-  This is based on the `lazy-picture.js` shortcode from 
+  This is based on the `lazy-picture.js` shortcode from
   the eleventy_solo repo.
 /*}}
 
@@ -19,12 +19,12 @@
 {{- $width := .Get "width" -}}
 {{- $height := .Get "height" -}}
 
-{{/* 
-  separating the Cloudinary-related vars for greater flexibility, especially in case somebody else 
+{{/*
+  separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
   wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
-{{- $LQIPholder := "f_auto,q_1,w_20/" -}}
+{{/* $LQIPholder := "f_auto,q_1,w_20/" */}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
@@ -37,7 +37,7 @@
 {{- $separator := ", " -}}
 {{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "bg-center bg-no-repeat bg-cover' aspect-ratio='" $width " / " $height "' style='background-image: url(" $cloudiBase $LQIPholder $src ")'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' data-srcset='" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "bg-center bg-no-repeat bg-cover' aspect-ratio='" $width " / " $height "'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' data-srcset='" -}}
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
   {{- if ge $width . -}}
@@ -48,6 +48,6 @@
 {{- $stringtoRet := .Scratch.Get "innerString" }}
 {{- $stringtoRet := substr $stringtoRet 0 -2 -}}
 {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s" $stringtoRet "' alt='" $alt "' width='" $width "' height='" $height "' loading='lazy' sizes='" $dataSzes "' />" -}}
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><img class='" $nscClass "' src='" $cloudiBase $xFmPart1 "300" $xFmPart2 $src "' alt='" $alt "' /></noscript></div>" -}}
+{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><img class='" $nscClass "' src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' alt='" $alt "' /></noscript></div>" -}}
 
 {{- $stringtoRet | safeHTML -}}
