@@ -52,7 +52,7 @@ Indeed, the day before I started writing this, I spent a few hours learning abou
 
 As for CSS Grid, it's undeniably cool. As time and events allow, I will learn about it even while I continue to use Bootstrap; perhaps a future version of Bootstrap even will include it (albeit with whatever modifications, perhaps even kludges, it would take to make CSS Grid somehow work with older browser versions), just as Bootstrap 4 already includes Flexbox.
 
-In the meantime, in our non-ideal world: when the decision is totally up to me, I'm Bootstrappin'.
+In the meantime, in our non-ideal world: when the decision is totally up to me, I'm Bootstrappin’.
 
 <br />
 

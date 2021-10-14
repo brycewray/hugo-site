@@ -32,7 +32,7 @@ It was my first encounter with writing software that was designed to make it eas
 
 There was also this thing out there called Ulysses, but that was back when it was [receiving a ton of Internet hate for going to a subscription plan](https://gizmodo.com/another-great-app-went-subscription-only-and-everything-1797802223), and I didn't pay it much mind. Honestly don't recall if that was a factor, though.
 
-Besides, this Scrivener app seemed to be all I could ever want, and it was going to be getting a major upgrade in just a few months after that which would address any lingering concerns about its design, which hadn't changed much in the previous six years. Having not been following macOS _née_ OS X software design Kewl Stuff for the aforementioned quite some time away, I didn't see anything wrong with the appearance of v.2.x, but there was little question that v.3.x was [definitely a major improvement and added many even cooler features along with the more updated look-’n'-feel](https://www.helpingwritersbecomeauthors.com/the-new-scrivener-3-0-should-you-upgrade/).
+Besides, this Scrivener app seemed to be all I could ever want, and it was going to be getting a major upgrade in just a few months after that which would address any lingering concerns about its design, which hadn't changed much in the previous six years. Having not been following macOS _née_ OS X software design Kewl Stuff for the aforementioned quite some time away, I didn't see anything wrong with the appearance of v.2.x, but there was little question that v.3.x was [definitely a major improvement and added many even cooler features along with the more updated look-’n’-feel](https://www.helpingwritersbecomeauthors.com/the-new-scrivener-3-0-should-you-upgrade/).
 
 ## Siren song
 
@@ -42,7 +42,7 @@ So, once again, I began researching writing software. But this time, I had a bet
 
 Do I regret having Scrivener? Absolutely not! I still use it from time to time, and occasionally have cast a longing eye back toward it and switched stuff from Ulysses to it. But---at least so far---I keep switching back. And I really think I'm gonna stick with Big U this time. I'll explain why below. _N.B.: I don't give a flip one way or the other about subscriptions, so long as it's something I need and will use. Ulysses easily passes that test. So I won't engage in **that** holy war. Fought and done, as far as I'm concerned._
 
-## The curse of DTP, or why I _need_ Ulysses 
+## The curse of DTP, or why I _need_ Ulysses
 
 You can read oodles of reviews of Ulysses and its "beautiful" interface and all that. I won't try to add to those, at least not at this time, although I may do so somewhere down the line. This is simply an explanation of how my particular mindset requires something like a Ulysses to do creative writing---and, for that matter, what you're reading now.[^1]
 
@@ -64,7 +64,7 @@ Once I realized this about myself, it was clear why my particular DTP-/typograph
 
 Ulysses probably isn't where I'd want to write, say, _another_ book the size of the James Joyce novel after which I presume it was named. At least, that's what most reviewers say with almost an "And of course you know" sort of shrug. Since I'm more into writing stuff that ranges from short stories to, in the case of the current WIP, slightly-longer-than-novella novels, that's not a problem for me. If you're trying to write the twenty-first century version of _War and Peace_, well, then you're probably better off in Scrivener.
 
-I don't mean to cast shade on Scrivener and the wonderful people at L&amp;L. There are many authors who swear by Scrivener as the only way they can write. They clearly don't have my problem with being distracted by the appearance of text. But, believe me, when you've spent most of your adult life having to make sure paragraphs and pages and websites both _looked_ and _read_ a certain way, you're going to find it hard to divorce the text from the look of the text. Yet, that's exactly what you have to do if you're going to _write_. 
+I don't mean to cast shade on Scrivener and the wonderful people at L&amp;L. There are many authors who swear by Scrivener as the only way they can write. They clearly don't have my problem with being distracted by the appearance of text. But, believe me, when you've spent most of your adult life having to make sure paragraphs and pages and websites both _looked_ and _read_ a certain way, you're going to find it hard to divorce the text from the look of the text. Yet, that's exactly what you have to do if you're going to _write_.
 
 As [David Hewson](https://davidhewson.com) [puts it so well](https://davidhewson.com/2017/08/13/five-reasons-i-use-ulysses/):
 

@@ -79,10 +79,10 @@ So I was saved the trouble of an "ie.css" sheet; and my resulting addition to th
 ```css
 /* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .slider-text {  
-    hey, IE, don’t screw up that text or it’s coitains, see? Coitains.
-  }  
-}  
+  .slider-text {
+    hey, IE, don't screw up that text or it's coitains, see? Coitains.
+  }
+}
 /* ==== end, IE 10 and 11 **ONLY** ==== */
 ```
 
