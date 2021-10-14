@@ -50,7 +50,7 @@ A few did register just such comments. However, what suddenly had me wanting to 
 
 Well, sir, your friend done you wrong, I'm here to tell ya. And it would seem that neither of you ever looks at the [Literature and Latte forums](https://www.literatureandlatte.com/forum/index.php), where this sore subject comes up far too often for the good of the nice L&amp;L people's collective blood pressure, I'd guess.
 
-## The skinny on Scriv ’n' sync
+## The skinny on Scriv ’n’ sync
 
 So, let me say the simple part first, and then I'll get into the whys and wherefores. Yes, this stuff is on the L&amp;L site and in plenty of places elsewhere but, as that one commenter's seemingly well-intentioned statements make clear, it's still not clearly understood.
 
