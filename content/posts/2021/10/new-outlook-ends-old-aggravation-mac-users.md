@@ -37,6 +37,6 @@ That aggravation, which had persisted for years, is nearing an end because of [M
 
 {{< imgc src="2021-10-10_screenshot_new-Outlook-on-Mac_segment_1696x752.png" alt="New Outlook on Mac - a view of email thread" width="1696" height="752" >}}
 
-Bingo. Now, really, Microsoft, was that so frickin' difficult?
+Bingo. Now, really, Microsoft, was that so frickin’ difficult?
 
 In short: if you're one of those Mac users who either prefers to use Outlook or is required to do so for some reason, New Outlook finally ends the feature prejudice Microsoft has shown Macs for some years now. Even if you're an Electron hater, this might be a time for giving that a pass. This cross-platform approach appears to be the only way Microsoft will stop treating Outlook-using Mac folks as if they were second-class citizens.
