@@ -6,7 +6,7 @@ subtitle: "A noble experiment ends"
 description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
 author: Bryce Wray
 date: 2019-08-25T10:45:00-05:00
-lastmod: 2021-07-05T13:03:00-05:00
+lastmod: 2021-10-17T12:30:00-05:00
 discussionId: "2019-08-backtracking-to-big-g"
 featured_image: "BW_shadow_of_G_on_gray_gradient_1280x720.jpg"
 featured_image_width: 1280
@@ -16,57 +16,31 @@ featured_image_caption: |
   <span class="caption">Google favicon image: <a href="https://pixabay.com/users/WikimediaImages-1185597/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015752">WikimediaImages</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015752">Pixabay</a></span>
 ---
 
-“Your honor, we submit the following in evidence for today's proceedings. 
+“Your honor, we submit the following in evidence for today's proceedings.
 
 "Initially, the defendant made the following assertions:"
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> Can’t totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to [@DuckDuckGo](https://twitter.com/DuckDuckGo). [#UnGoogle](https://twitter.com/hashtag/UnGoogle)
->
-> [5:28 PM • Jun 15, 2019](https://twitter.com/BryceWrayTX/status/1140023324988313601) (CDT)
+{{< twitscrn imageUrl="Twitter_1140023324988313601.png" alt="Tweet from @BryceWrayTX, 2019-06-15: Can’t totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to @DuckDuckGo. #UnGoogle" width="1182" height="474" twitterUrl="https://twitter.com/BryceWrayTX/status/1140023324988313601" >}}
 
 ".&nbsp;.&nbsp;. and .&nbsp;.&nbsp;."
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> Deleted my personal Google account today. We still have a couple accounts in the family for necessity (contacts, access to a gifted Google Home Mini, etc.), but the main one is gone. Facebook last fall, Google now. The disengagement continues.
->
-> [5:00 PM • Jun 23, 2019](https://twitter.com/BryceWrayTX/status/1142915419784863745) (CDT)
+{{< twitscrn imageUrl="Twitter_1142915419784863745.png" alt="Tweet from @BryceWrayTX, 2019-06-23: Deleted my personal Google account today. We still have a couple accounts in the family for necessity (contacts, access to a gifted Google Home Mini, etc.), but the main one is gone. Facebook last fall, Google now. The disengagement continues." width="1182" height="568" twitterUrl="https://twitter.com/BryceWrayTX/status/1142915419784863745" >}}
 
 ".&nbsp;.&nbsp;. followed a few weeks later by .&nbsp;.&nbsp;."
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> Just started using this on my site. Interesting stuff so far, and I love how it requires ZERO tracking code.
->
-> Netlify Analytics | Netlify [buff.ly/2jJEIKQ](https://buff.ly/2jJEIKQ)
->
-> [1:23 PM • Jul 13, 2019](https://twitter.com/BryceWrayTX/status/1150108543208579072) (CDT)
+{{< twitscrn imageUrl="Twitter_1150108543208579072.png" alt="Tweet from @BryceWrayTX, 2019-07-13: Just started using this on my site. Interesting stuff so far, and I love how it requires ZERO tracking code. Netlify Analytics | Netlify" width="1182" height="468" twitterUrl="https://twitter.com/BryceWrayTX/status/1150108543208579072" >}}
 
 "Unfortunately, your honor, this seemingly noble and well-intentioned course of action was derailed yesterday, as shown here&nbsp;.&nbsp;.&nbsp;."
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> Full disclosure: I dumped my long-standing [@Google](https://twitter.com/Google) account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. [#PragmaticButNotProud](https://twitter.com/hashtag/PragmaticButNotProud)
->
-> [1:19 PM • Aug 24, 2019](https://twitter.com/BryceWrayTX/status/1165327910078681088) (CDT)
+{{< twitscrn imageUrl="Twitter_1165327910078681088.png" alt="Tweet from @BryceWrayTX, 2019-08-24: Full disclosure: I dumped my long-standing @Google account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. #PragmaticButNotProud" width="1182" height="468" twitterUrl="https://twitter.com/BryceWrayTX/status/1165327910078681088" >}}
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> ...one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things---and, while you can use it as a “guest," that’s not ideal (by design, of course).
->
-> [1:22 PM • Aug 24, 2019](https://twitter.com/BryceWrayTX/status/1165328656392232960) (CDT)
+{{< twitscrn imageUrl="Twitter_1165328656392232960.png" alt="Tweet from @BryceWrayTX, 2019-08-24: ...one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things—and, while you can use it as a “guest,” that’s not ideal (by design, of course)." width="1182" height="510" twitterUrl="https://twitter.com/BryceWrayTX/status/1165328656392232960" >}}
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics --- former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it.
->
-> [3:16 PM • Aug 24, 2019](https://twitter.com/BryceWrayTX/status/1165357162551545857) (CDT)
+{{< twitscrn imageUrl="Twitter_1165357162551545857.png" alt="Tweet from @BryceWrayTX, 2019-08-24: Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics --- former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it." width="1182" height="572" twitterUrl="https://twitter.com/BryceWrayTX/status/1165357162551545857" >}}
 
 “---and, as the defendant surmised in this most recent exhibit before the court, he did indeed end up stopping the usage of the tracking-free alternative, thus compounding his crime by no longer supporting it at the same time he was returning the Evil G Empire's tracking code to its former access to his site and its visitors.
 

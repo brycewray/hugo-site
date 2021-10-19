@@ -6,7 +6,7 @@ subtitle: "How’d I miss this way to fool IE?"
 description: "A major “Do’h” moment in the never-ending battle against Internet Explorer."
 author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
-lastmod: 2021-06-16T15:11:00-05:00
+lastmod: 2021-10-17T12:30:00-05:00
 discussionId: "2019-02-old-dog-old-trick"
 featured_image: "dog-2514968_1940x1293.jpg"
 featured_image_width: 1940
@@ -115,10 +115,4 @@ Woof.
 
 *And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting* (below) *about my last post. As he might say: "Thanks, mate!”*
 
-> [Chris Rosser • @RosserWrites](https://twitter.com/RosserWrites)
->
-> If you are a fan of, or contemplating using, iA Writer, I recommend [@BryceWrayTX](https://twitter.com/BryceWrayTX) blog post. While our workflows are different, our ends and opinions are the same!
->
-> [brycewray.com/posts/2019/02/ia-for-io/](https://brycewray.com/posts/2019/02/ia-for-io)
->
-> [5:00 PM • Feb 12, 2019](https://twitter.com/RosserWrites/status/1095457720709263360) (CST)
+{{< twitscrn imageUrl="Twitter_1095457720709263360.png" alt="Tweet by @CRosserAuthor, 2019-02-12: If you are a fan of, or contemplating using, iA Writer, I recommend @BryceWrayTX blog post. While our workflows are different, our ends and opinions are the same!" width="1182" height="720" twitterUrl="https://twitter.com/CRosserAuthor/status/1095457720709263360" >}}

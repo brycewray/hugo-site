@@ -6,7 +6,7 @@ subtitle: "Considering MailMate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
-lastmod: 2021-06-16T15:28:00-05:00
+lastmod: 2021-10-17T12:30:00-05:00
 discussionId: "2019-06-ahoy-mate"
 featured_image: "p-o-boxes--elizabeth-kay-9szCcOw4BWo-unsplash_3634x2725.jpg"
 featured_image_width: 3634
@@ -116,7 +116,7 @@ You can customize various aspects of the display, such as the font size and lead
 
 I began the 30-day trial of MailMate prior to Apple's WWDC 2019, curious as to whether there'd be any big changes in Mail for what we now know will be macOS Catalina and, if so, whether they'd be enough to keep me from continuing to consider MailMate. After all, Apple Mail is included with macOS while, at this writing, MailMate costs&nbsp;$50.
 
-However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin'. I'll keep you advised as to how I&nbsp;land.
+However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin’. I'll keep you advised as to how I&nbsp;land.
 
 ----
 
@@ -124,8 +124,4 @@ However, the answers were "No" and "No." The [changes in Apple Mail in Catalina]
 
 My tweet tonight says it all:
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> Bought a license for, and became a patron of, [@mailmateapp](https://twitter.com/mailmateapp). Very impressed with the software and the developer, as I made clear in my recent post: [brycewray.com/posts/2019/06/ahoy-mate](https://brycewray.com/posts/2019/06/ahoy-mate)
->
-> [8:11 PM • Jun 11, 2019](https://twitter.com/BryceWrayTX/status/1138614802518020096) (CDT)
+{{< twitscrn imageUrl="Twitter_1138614802518020096.png" alt="Tweet by @BryceWrayTX, 2019-06-11: Bought a license for, and became a patron of, @mailmateapp. Very impressed with the software and the developer, as I made clear in my recent post" width="1182" height="1220" twitterUrl="https://twitter.com/BryceWrayTX/status/1138614802518020096" >}}

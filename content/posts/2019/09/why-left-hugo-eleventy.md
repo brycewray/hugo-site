@@ -6,7 +6,7 @@ subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2021-06-16T15:48:00-05:00
+lastmod: 2021-10-17T12:30:00-05:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
@@ -21,16 +21,16 @@ oldComments: |
       </p>
       <p class="commentName"><strong>Chris Rosser</strong> <span class="commentName"><em>2019-09-08</em></span></p>
       <p class="comment">Great post and very interesting. I hadn't heard of Eleventy before. That's one thing I love about using a static-site generator is how easy it is to change should you need to. I used several before I settled on Pelican. I briefly thought about changing to Hugo, but decided it against it once I read the docs.</p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentName"><em>2019-09-09</em></span></p>
       <p class="comment">Thank you. Yes, until Gatsby Experiment I, I&rsquo;d never heard of it, either, and at first I erroneously lumped it in with the others as not quite sufficient for my needs. Once I read its docs more thoroughly and got a better grasp of its extensibility, I realized I&rsquo;d missed the point entirely &mdash; as at least one triumphant Eleventy supporter reminded me yesterday after I released this post. :-)</p>
-    
+
       <p class="commentName"><strong>Magnus Lindberg</strong> <span class="commentName"><em>2019-09-30</em></span></p>
       <p class="comment">Thanks for this writeup about 11ty :- ) I'm about to create a blog for Talkyard, ... and found your article about 11ty when searching for 11ty versus Gatsby. To me, Gatsby is ... complicated. And with cryptic error messages that make my blood pressure rise. <span class="seventyFive">(Maybe I'll want to use Gatsby for the main website, some time later, which might need complicated sliders and buttons and widgets, hmm.)</span></p>
       <p class="comment">Nice to read that 11ty seems to be as simple as I originally expected all static gens to be :- )<br />
       (I noticed you've since switched back to Hugo, however, for me, probably 11ty is better &mdash; I think I'll need Javascript plugins.)</p>
       <p class="comment">Going to try this theme: <a href="https://hylia.website/posts/a-simple-post/" target="_blank" rel="noopener">https://hylia.website/posts/a-simple-post/</a></p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentName"><em>2019-09-30</em></span></p>
       <p class="comment">My continuing experimentation <strong>in the background</strong> (!) makes it increasingly clear that Gatsby is only for those who are thoroughly into React. Maybe someday I&rsquo;ll get it, but I&rsquo;m not holding my breath. But, yes, if your purposes are better served by a JS-based SSG, I emphatically recommend Eleventy. It is wonderfully easy to use and customize, especially if you have sufficient JS knowledge, and its build speed is surprisingly close to Hugo&rsquo;s, especially in league with Netlify.</p>
     </div>
@@ -94,11 +94,11 @@ So, six days into Gatsby Experiment II, I abandoned it.
 
 Again, I heard that whispering, snickering voice:
 
-*“Beat you **again**.”* 
+*“Beat you **again**.”*
 
 But this time, I didn't just slink off, happy to have retained my sanity if not my dignity. This time, I had a response.
 
-“No. **I** ***rejected*** **you**. 
+“No. **I** ***rejected*** **you**.
 
 “And now I'm going to prove that *you*, **not** I, are the problem.
 
@@ -114,7 +114,7 @@ That left Eleventy.
 
 First hearing about it during Gatsby Experiment I, I'd been singularly impressed by how its creator, [Zach Leatherman](https://www.zachleat.com/), positioned it when he [introduced](https://www.zachleat.com/web/introducing-eleventy/) it in early 2018:
 
-- It **does** "bet on JavaScript," which I believe is going to be a pretty *safe* "bet" for some time to come.  
+- It **does** "bet on JavaScript," which I believe is going to be a pretty *safe* "bet" for some time to come.
 .&nbsp;.&nbsp;. and yet .&nbsp;.&nbsp;.
 
 - It **doesn't** rely on a specific framework.
@@ -219,16 +219,7 @@ It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---
 
 While we're on the subject of speed: while I was working on this post, I saw this Leatherman tweet:
 
-> [Zach Leatherman • @zachleat](https://twitter.com/zachleat)
->
-> Which has a better First Meaningful Paint time?
->
-> ① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets<br />
-> ② a client rendered React site with exactly one tweet on it
->
-> (Spoiler: [@____lighthouse](https://twitter.com/____lighthouse) reports 8.5MB of HTML wins by about 200ms)
->
-> [10:38 AM • Sep 6, 2019](https://twitter.com/zachleat/status/1169998370041208832) (CDT)
+{{< twitscrn imageUrl="Twitter_1169998370041208832.png" alt="Tweet from @zachleat, 2019-09-06: Which has a better First Meaningful Paint time? 1. a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets 2. a client rendered React site with exactly one tweet on it (Spoiler: @____lighthouse reports 8.5MB of HTML wins by about 200ms)" width="1182" height="704" twitterUrl="https://twitter.com/zachleat/status/1169998370041208832" >}}
 
 React. Hmm. Wonder whom he might be zinging there? Good job, sir. Given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
 

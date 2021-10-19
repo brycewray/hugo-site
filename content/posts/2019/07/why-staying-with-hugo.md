@@ -6,7 +6,7 @@ subtitle: "An “interesting” learning experience"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2021-06-16T15:31:00-05:00
+lastmod: 2021-10-17T12:30:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_closer_3200x1800.jpg
 featured_image_width: 3200
@@ -21,16 +21,16 @@ oldComments: |
       </p>
       <p class="commentName"><strong>Cole Krumz</strong> <span class="commentDate"><em>2019-07-15</em></span></p>
       <p class="comment">Interesting read. Any chance you'd be willing to open source the attempted site, bugs and all, as a learning tool? I'd be pretty interested to try to get your site working, and in the process understand how gatsby handles a set of "real-world" requirements.</p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-07-15</em></span></p>
       <p class="comment">I&rsquo;m afraid it&rsquo;s already history. I didn&rsquo;t want all those thousands of node modules taking up space on my Mac. :-) I do use Time Machine so it&rsquo;s probably on there somewhere, but I wouldn&rsquo;t know which version to recover.</p>
-    
+
       <p class="commentName"><strong>Nico</strong> <span class="commentDate"><em>2019-07-16</em></span></p>
       <p class="comment">Thank you for the really interesting reading! Nico here. And I have to say that I feel for you there!</p>
       <p class="comment">Also, I think you raise some very valid and important topics, which for me are food for thought:</p>
       <p class="comment">One of them being that <em><strong>documentation</strong></em> is something excessively...(how do you say in English when someone looks to the side so they don't see you? That's what I mean! Like &quot;ignored&quot; more or less). The fact a developer will use a certain framework/library/etc. does not tell you nothing about their background or objective. Making no assumptions, good documentation can be built.</p>
       <p class="comment">I also have more comments but this is already too long lol. In short, thanks for the great reading!</p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-07-16</em></span></p>
       <p class="comment">Given how long I yakked in this article, you have no need to apologize. :-) Thanks for your kind words and insights.</p>
     </div>
@@ -151,7 +151,7 @@ You plan a structure. This structure has directories---folders, if you prefer---
     ├── downloads [directory]
     |   ├── [files and/or subdirectories]
 ```
-    
+
 .&nbsp;.&nbsp;. and so on. Now, because it's an SSG, [Hugo's structure is a little different](https://gohugo.io/content-management/organization/), but the basic idea remains the same.
 
 And, silly me, I figured Gatsby would follow a convention more or less like that. After all, it had the `gatsby-source-filesystem` plugin which, when set up properly in `/gatsby-config.js`, was [supposed](https://www.gatsbyjs.org/docs/sourcing-from-the-filesystem/) (I thought) to point Gatsby to wherever I wanted it to point.[^filesystem]
@@ -189,14 +189,14 @@ Late in the third week of this effort, even as I got those last few items workin
 One other thing kept nagging at me, also: footnotes. Here on the Hugo site, as I [explained](/posts/2019/02/ia-for-io) back in February, I can type stuff like this:
 
 ```md
-This is how you do footnotes[^footnoteInfo] in 
-Markdown and Hugo, even as you keep adding them, 
-moving them around within the doc, *etc.*, and 
-all of them end up perfectly numbered both at 
+This is how you do footnotes[^footnoteInfo] in
+Markdown and Hugo, even as you keep adding them,
+moving them around within the doc, *etc.*, and
+all of them end up perfectly numbered both at
 the original reference and down at the bottom.
 
 [^footnoteInfo]: So here we are at the bottom.
-``` 
+```
 
 .&nbsp;.&nbsp;. and it comes out like this (let's say that this footnote ends up being the third one in the document, no matter what it was at its original entry):
 
@@ -270,11 +270,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-> [Bryce Wray • @BryceWrayTX](https://twitter.com/BryceWrayTX)
->
-> Will have more to say about this in a future post, but am keeping [brycewray.com](http://brycewray.com/) firmly within [@GoHugoIO](https://twitter.com/GoHugoIO) after three weekends’ worth of experimentation with [@gatsbyjs](https://twitter.com/gatsbyjs) and some other kewl kids. [#StayWithTheBest](https://twitter.com/hashtag/StayWithTheBest)
->
-> [1:05 PM • Jul 13, 2019](https://twitter.com/BryceWrayTX/status/1150104013871955971) (CDT)
+{{< twitscrn imageUrl="Twitter_1150104013871955971.png" alt="Tweet by @BryceWrayTX, 2019-07-13: Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest" width="1182" height="1234" twitterUrl="https://twitter.com/BryceWrayTX/status/1150104013871955971" >}}
 
 ## "Interesting," indeed
 
