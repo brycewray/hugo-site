@@ -12,6 +12,12 @@
     </div>
     {{- partial "footer.html" . -}}
     <script nonce="DhcnhD3khTMePgXw" src="{{ $jsBundle.RelPermalink }}" defer></script>
-</body>
+    {{- if hugo.IsProduction -}}
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "36afbbd88c1b4b608a61683f9555fd48"}'>
+    </script>
+    <!-- End Cloudflare Web Analytics -->
+    {{- end -}}
+  </body>
 
 </html>

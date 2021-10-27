@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-10-17T12:30:00-05:00
+lastmod: 2021-10-21T09:02:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -25,9 +25,9 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 [^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, "[GDPR compliance](https://github.com/google/fonts/issues/1495)."
 
-### Twitter content
+### Twitter
 
-This site *quotes* tweets in the form of purely static text (with, obviously, no tracking involved), rather than embeds of any kind. I do not *embed* tweets, since doing so makes the embedded tweets transmit personal information through cookies. Instead, each tweet is shown as a screen capture linked to its original location.[^delTweet] For accessibility-respecting purposes, each such screen capture has a plain-text version of the tweet's content in its [ALT attribute](https://en.wikipedia.org/wiki/Alt_attribute).
+I do not *embed* tweets, since doing so makes the embedded tweets transmit personal information through cookies. Instead, each tweet is shown as a screen capture linked to its original location.[^delTweet] For accessibility-respecting purposes, each such screen capture has a plain-text version of the tweet's content in its [ALT attribute](https://en.wikipedia.org/wiki/Alt_attribute).
 
 [^delTweet]: The link is the last one I knew to be active, so a *deleted* tweet obviously won't appear at such a link.
 
