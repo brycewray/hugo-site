@@ -1,7 +1,30 @@
 {
+  "scripts": {
+    "clean": "rimraf public && rimraf ./assets/css/index/css",
+    "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel dev:*",
+    "build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
+    "prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tw.css -o ./assets/css/index.css --jit",
+    "dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tw.css -o ./assets/css/index.css --jit -w",
+    "dev:hugo": "hugo server",
+    "prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tw.css -o ./assets/css/index.css --jit --minify",
+    "prod:hugo": "hugo --gc --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "browserslist": [
+    "last 4 versions",
+    "> 1%",
+    "maintained node versions"
+  ],
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.1"
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.2.19",
+    "tailwindcss-logical": "^2.0.0"
   }
 }
