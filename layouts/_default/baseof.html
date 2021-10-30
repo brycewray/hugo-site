@@ -1,0 +1,23 @@
+{{- $lazyloadFile := resources.Get "js/lazyload_17-5-0.min.js" -}}
+{{- $lazyloadHelp := resources.Get "js/lazyload-helper.js" -}}
+{{- $jsBundle := slice $lazyloadFile $lazyloadHelp | resources.Concat "js/lazyBundle.js" | resources.Minify | fingerprint "md5" -}}
+
+<!DOCTYPE html>
+<html class="dark:bg-black" lang="en" charset="utf-8">
+  {{ partial "head.html" . -}}
+  <body class="dark:bg-black dark:text-gray-100">
+    {{ partial "header.html" . }}
+    <div id="content-main-hugo">
+    {{- block "main" . -}}{{- end }}
+    </div>
+    {{- partial "footer.html" . -}}
+    <script {{ if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end -}} src="{{ $jsBundle.RelPermalink }}" defer></script>
+    {{- if eq .Site.Params.Host "CFP" -}}
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "36afbbd88c1b4b608a61683f9555fd48"}'>
+    </script>
+    <!-- End Cloudflare Web Analytics -->
+    {{- end -}}
+  </body>
+
+</html>
