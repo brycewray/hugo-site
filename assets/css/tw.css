@@ -121,6 +121,44 @@
   /* ============================
   END, from original global.css
   ============================= */
+
+  /* =======================================
+  START, adapted from original footnotes.css
+  ========================================== */
+  /* start, footnotes */
+
+  .footnotes, .footnote-sim, .footnote-ref {
+    @apply font-sans;
+  }
+
+  .footnote-sim {
+    @apply text-xs text-blue-500 dark:text-blue-100;
+  }
+
+  .footnotes {
+    & ol {
+      @apply pis-6;
+    }
+    & ol li {
+      @apply mb-2 text-sm;
+    }
+    & li p {
+      @apply text-sm leading-5;
+    }
+    & .footnote-backref {
+      @apply text-sm;
+    }
+  }
+
+  a.footnote-ref {
+    @apply text-blue-500 dark:text-blue-100;
+  }
+
+  /* == end, footnotes */
+
+  /* =======================================
+  END, adapted from original footnotes.css
+  ======================================== */
 }
 
 @layer components {
@@ -193,49 +231,6 @@
   /* ============================
   END, from original tables.css
   ============================= */
-
-  /* ============================
-  START, from original tables.css
-  ============================= */
-
-  /* ===============================
-  START, from original footnotes.css
-  ================================ */
-  /* start, footnotes */
-
-  .footnotes {
-    @apply font-sans;
-  }
-
-  .footnote-ref {
-    @apply font-sans text-fn md:text-xs;
-  }
-
-  .footnote-ref a {
-    @apply border-transparent;
-  }
-
-  .footnotes-sep {
-    @apply mb-3;
-  }
-
-  .footnotes-list {
-    @apply list-decimal pl-6;
-  }
-
-  .footnote-item, .footnote-item p {
-    @apply text-sm tracking-normal leading-snug my-4;
-  }
-
-  .footnote-item pre, .footnote-item code {
-    @apply text-xs;
-  }
-
-  /* == end, footnotes */
-
-  /* ===============================
-  END, from original footnotes.css
-  ================================ */
 
   /* =========================
   START, from original nav.css
