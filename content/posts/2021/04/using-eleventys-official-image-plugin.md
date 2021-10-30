@@ -148,10 +148,10 @@ Now, let's get this show on the road.
 Let's say you keep your Eleventy project's original image files (the ones the `image` shortcode will process) in an `images` folder that's within a top-level `src` folder---*i.e.*, `./src/images/`. Let's also say that the image file you want to pop into a post you're writing is called `my-pet-cat.jpg`. So type this in your post's Markdown file:
 
 ```md
-{% image "./src/images/my-pet-cat.jpg", "Photo of a brown-striped tabby cat named Tiger" %}
+{% image "my-pet-cat.jpg", "Photo of a cat named Shakespeare sitting on a window sill" %}
 ```
 
-Here, you've entered what the shortcode considers the `src` part ("./src/images/my-pet-cat.jpg”), then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger”) for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project.
+Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jpg"; the code automatically adds `./src/assets/images/` to it so **you** don't have to type it every time you use the shortcode), then a comma, and then the `alt` text ("Photo of a cat named Shakespeare sitting on a window sill") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project. As you know, the `alt` text describes for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/) what the image contains. **You must enter that `alt` text** if you want the shortcode to work properly---the `image` shortcode requires both `src` and `alt` to work, as you may have noted in the shortcode's configuration in `.eleventy.js`. If an image is only [decorative](https://www.w3.org/WAI/tutorials/images/decorative/) (*e.g.*, a logo or other image that fits that description), it's perfectly acceptable for the `alt` to be just `""`, but you **must** have an `alt` entry after the `src` and that separating comma.
 
 ### Get a look at the result
 
