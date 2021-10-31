@@ -132,15 +132,15 @@
   }
 
   .footnote-sim {
-    @apply text-xs text-blue-500 dark:text-blue-100;
+    @apply text-blue-500 dark:text-blue-100;
   }
 
   .footnotes {
     & ol {
-      @apply pis-6;
+      @apply mt-4 pis-6;
     }
     & ol li {
-      @apply mb-2 text-sm;
+      @apply text-sm;
     }
     & li p {
       @apply text-sm leading-5;
@@ -150,8 +150,16 @@
     }
   }
 
+  article .footnotes ol li, article .footnotes ol li p {
+    @apply my-4 py-0;
+  }
+
   a.footnote-ref {
     @apply text-blue-500 dark:text-blue-100;
+  }
+
+  sup[id^='fn'], .footnote-sim {
+    font-size: 65%;
   }
 
   /* == end, footnotes */
