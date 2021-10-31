@@ -86,7 +86,7 @@
         <p class="text-base lg:text-xl 2xl:text-2xl leading-tight mb-2"><strong>{{ .Params.Subtitle | markdownify }}</strong></p>
         <p class="text-sm lg:text-base 2xl:text-lg text-gray-700 dark:text-gray-400 mt-0 mb-2"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
           {{- if ne .PublishDate .Lastmod }}
-          <br /><span class="text-xs lg:text-sm">Last modified: {{ .Lastmod.Format "January 2, 2006" }}
+          <br /><span class="text-xs lg:text-sm">Last modified {{ .Lastmod.Format "January 2, 2006" }}
           {{- end }}
         </p>
         <p class="text-sm lg:text-base 2xl:text-lg mt-2 mb-8">
