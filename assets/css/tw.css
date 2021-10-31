@@ -1,14 +1,9 @@
 @import '/assets/css/reset.css';
-@import '/assets/css/fonts_Inter.css';
-/* '/assets/css/fonts/PublicSans.css'; */
-@import '/assets/css/chroma_native_tweaked.css';
-@import '/assets/css/chroma_fix-all.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-
   /* ============================
   START, from original global.css
   ============================= */
@@ -349,52 +344,6 @@
   END, from original lite-yt-embed.css
   =================================== */
 
-  /* =============================
-  START, from original intervf.css
-  ============================= */
-
-  /* === handling Inter VF obliquing */
-  .italic, i, cite, em, var, address, dfn, h3, .h3, h5, .h5 {  /* dealing with Inter VF */
-    font-variation-settings: 'slnt' -8;
-    /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, so we override that below with the media query for Firefox */
-    font-style: oblique 8deg;
-    /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
-  }
-
-  @supports (-moz-appearance: none) {
-    .italic, i, cite, em, var, address, dfn, h3, h5 {
-      /* font-variation-settings: normal; */
-      font-style: normal;
-    }
-  }
-  /* === end, handling Inter VF obliquing */
-
-  /* =============================
-  END, from original intervf.css
-  ============================= */
-
-  /* ===============================
-  START, from original ffoxobliq.css
-  =============================== */
-
-  /* === handling system-fonts-stack obliquing issues in Firefox
-  === **COMMENT OUT** if **NOT** using system fonts stack
-  */
-
-  /*
-  @supports (-moz-appearance: none) {
-    .italic, i, cite, em, var, address, dfn, h3, .h3, h5, .h5 {
-      font-style: oblique 8deg;
-    }
-  }
-  */
-
-  /* === end, handling system-font-stack obliquing issues in Firefox */
-
-  /* ===============================
-  END, from original ffoxobliq.css
-  =============================== */
-
 }
 
 @layer utilities {
@@ -502,3 +451,235 @@
   END, from original utility.css
   ============================== */
 }
+
+/* =========================================
+From here on, we're following the advice of:
+https://tailwindcss.com/docs/optimizing-for-production#removing-all-unused-styles
+========================================= */
+
+/* ===========================================
+START, from original chroma_native_tweaked.css
+=========================================== */
+
+/* Background */ .chroma { color: #d0d0d0; background-color: #202020 }
+/* Other */ .chroma .x { color: #ffffff }
+/* Error */ .chroma .err { color: #fd7777; }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #686868 }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #686868 }
+/* Keyword */ .chroma .k { color: rgb(145, 239, 252) } /* was 6ab825 */
+/* KeywordConstant */ .chroma .kc { color: yellowgreen } /* was 6ab825 */
+/* KeywordDeclaration */ .chroma .kd { color: yellowgreen } /* was 6ab825 */
+/* KeywordNamespace */ .chroma .kn { color: yellowgreen } /* was 6ab825 */
+/* KeywordPseudo */ .chroma .kp { color: yellowgreen } /* was 6ab825 */
+/* KeywordReserved */ .chroma .kr { color: yellowgreen } /* was 6ab825 */
+/* KeywordType */ .chroma .kt { color: yellowgreen } /* was 6ab825 */
+/* Name */ .chroma .n { color: #efefef }
+/* NameAttribute */ .chroma .na { color: #bbbbbb }
+/* NameBuiltin */ .chroma .nb { color: lightblue } /* was #24909d */
+/* NameBuiltinPseudo */ .chroma .bp { color: #efefef }
+/* NameClass */ .chroma .nc { color: #de9aef } /* was 447fcf */
+/* NameConstant */ .chroma .no { color: #40ffff }
+/* NameDecorator */ .chroma .nd { color: #ffa500 }
+/* NameEntity */ .chroma .ni { color: #efefef }
+/* NameException */ .chroma .ne { color: #bbbbbb }
+/* NameFunction */ .chroma .nf { color: #8ad2fc } /* was 447fcf */
+/* NameFunctionMagic */ .chroma .fm { color: #efefef }
+/* NameLabel */ .chroma .nl { color: #efefef }
+/* NameNamespace */ .chroma .nn { color: #99cfef } /* was 447fcf */
+/* NameOther */ .chroma .nx { color: #efefef }
+/* NameProperty */ .chroma .py { color: #efefef }
+/* NameTag */ .chroma .nt { color: rgb(253, 182, 100) } /* was 6ab825 */
+/* NameVariable */ .chroma .nv { color: #40ffff }
+/* NameVariableClass */ .chroma .vc { color: #efefef }
+/* NameVariableGlobal */ .chroma .vg { color: #efefef }
+/* NameVariableInstance */ .chroma .vi { color: #efefef }
+/* NameVariableMagic */ .chroma .vm { color: #efefef }
+/* Literal */ .chroma .l { color: #efefef }
+/* LiteralDate */ .chroma .ld { color: #efefef }
+/* LiteralString */ .chroma .s { color: orange } /* was ed9d13 */
+/* LiteralStringAffix */ .chroma .sa { color: orange } /* was ed9d13 */
+/* LiteralStringBacktick */ .chroma .sb { color: orange } /* was ed9d13 */
+/* LiteralStringChar */ .chroma .sc { color: orange } /* was ed9d13 */
+/* LiteralStringDelimiter */ .chroma .dl { color: orange } /* was ed9d13 */
+/* LiteralStringDoc */ .chroma .sd { color: orange } /* was ed9d13 */
+/* LiteralStringDouble */ .chroma .s2 { color: rgb(255, 177, 146) } /* was ed9d13 */
+/* LiteralStringEscape */ .chroma .se { color: orange } /* was ed9d13 */
+/* LiteralStringHeredoc */ .chroma .sh { color: orange } /* was ed9d13 */
+/* LiteralStringInterpol */ .chroma .si { color: orange } /* was ed9d13 */
+/* LiteralStringOther */ .chroma .sx { color: #ffa500 }
+/* LiteralStringRegex */ .chroma .sr { color: orange } /* was ed9d13 */
+/* LiteralStringSingle */ .chroma .s1 { color: orange } /* was ed9d13 */
+/* LiteralStringSymbol */ .chroma .ss { color: orange } /* was ed9d13 */
+/* LiteralNumber */ .chroma .m { color: #7fcad7 }
+/* LiteralNumberBin */ .chroma .mb { color: #7fcad7 }
+/* LiteralNumberFloat */ .chroma .mf { color: #7fcad7 }
+/* LiteralNumberHex */ .chroma .mh { color: #7fcad7 }
+/* LiteralNumberInteger */ .chroma .mi { color: #fff56f }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #7fcad7 }
+/* LiteralNumberOct */ .chroma .mo { color: #fff56f }
+/* Operator */ .chroma .o { color: #efefef }
+/* OperatorWord */ .chroma .ow { color: yellowgreen } /* was 6ab825
+/* Punctuation */ .chroma .p { color: #76fcc4 }
+/* Comment */ .chroma .c { color: #bbffdd; }
+/* CommentHashbang */ .chroma .ch { color: #bbffdd; }
+/* CommentMultiline */ .chroma .cm { color: #bbffdd; }
+/* CommentSingle */ .chroma .c1 { color: #bbffdd; }
+/* CommentSpecial */ .chroma .cs { color: #e50808; background-color: #520000 }
+/* CommentPreproc */ .chroma .cp { color: #ff8585 }
+/* CommentPreprocFile */ .chroma .cpf { color: #cd2828 }
+/* Generic */ .chroma .g { color: #efefef }
+/* GenericDeleted */ .chroma .gd { color: #d22323 }
+/* GenericEmph */ .chroma .ge { font-style: italic }
+/* GenericError */ .chroma .gr { color: #d22323 }
+/* GenericHeading */ .chroma .gh { color: #ffffff }
+/* GenericInserted */ .chroma .gi { color: #589819 }
+/* GenericOutput */ .chroma .go { color: #cccccc }
+/* GenericPrompt */ .chroma .gp { color: #aaaaaa }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #ffffff }
+/* GenericTraceback */ .chroma .gt { color: #d22323 }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: #666666 }
+
+/* ===========================================
+END, from original chroma_native_tweaked.css
+=========================================== */
+
+/* ====================================
+START, from original chroma_fix-all.css
+==================================== */
+
+pre,
+code {
+  font-family: ui-monospace, SFMono-Regular, "SFMono-Regular", SFMono, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, "Ubuntu Mono", "Courier New", monospace;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ddd; /* was ccc */
+  background: none;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"],
+pre.chroma {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #2d2d2d;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.highlight {
+  font-size: 0.8em; /* for Roboto Mono as compared to Public Sans */
+  & .chroma {
+    font-size: 1.35em; /* undoing the above when necessary */
+  }
+}
+
+article code {
+  font-size: 0.9em;
+  background-color: #e0efff;
+  @media (prefers-color-scheme: dark) {
+    background-color: #454545;
+  }
+}
+
+
+/* ====================================
+END, from original chroma_fix-all.css
+==================================== */
+
+
+/* =================================
+START, from original fonts_Inter.css
+==================================/*
+/* === Inter, variable === */
+/* ===
+references:
+https://thetrevorharmon.com/blog/how-to-prepare-and-use-variable-fonts-on-the-web
+https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-support
+=== */
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-weight: 1 999;
+  font-style: normal;
+  font-display: optional;
+  src: url('../fonts/Inter-3-19_subset_2021-06-18.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* ===
+'src' formerly used relative reference but must be site-absolute when injected into <head>
+*/
+
+/* =================================
+END, from original fonts_Inter.css
+==================================/*
+
+/* =============================
+START, from original intervf.css
+============================= */
+
+/* === handling Inter VF obliquing */
+.italic, i, cite, em, var, address, dfn, h3, .h3, h5, .h5 {  /* dealing with Inter VF */
+  font-variation-settings: 'slnt' -8;
+  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, so we override that below with the media query for Firefox */
+  font-style: oblique 8deg;
+  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
+}
+
+@supports (-moz-appearance: none) {
+  .italic, i, cite, em, var, address, dfn, h3, h5 {
+    /* font-variation-settings: normal; */
+    font-style: normal;
+  }
+}
+/* === end, handling Inter VF obliquing */
+
+/* =============================
+END, from original intervf.css
+============================= */
+
+/* ===============================
+START, from original ffoxobliq.css
+=============================== */
+
+/* === handling system-fonts-stack obliquing issues in Firefox
+=== **COMMENT OUT** if **NOT** using system fonts stack
+*/
+
+/*
+@supports (-moz-appearance: none) {
+  .italic, i, cite, em, var, address, dfn, h3, .h3, h5, .h5 {
+    font-style: oblique 8deg;
+  }
+}
+*/
+
+/* === end, handling system-font-stack obliquing issues in Firefox */
+
+/* ===============================
+END, from original ffoxobliq.css
+=============================== */
