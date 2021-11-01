@@ -5,7 +5,7 @@ module.exports = {
   purge: [
     "./content/**/*.md",
     "./content/**/*.html",
-    "./layouts/**/*.html"
+    "./themes/twjit/layouts/**/*.html"
   ],
   darkMode: 'media',
   theme: {

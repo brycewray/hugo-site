@@ -1,7 +1,7 @@
-@import '/assets/css/reset.css';
-@import '/assets/css/fonts_PublicSans.css';
-@import '/assets/css/chroma_native_tweaked.css';
-@import '/assets/css/chroma_fix-all.css';
+@import '/themes/twjit/assets/css/reset.css';
+@import '/themes/twjit/assets/css/fonts_PublicSans.css';
+@import '/themes/twjit/assets/css/chroma_native_tweaked.css';
+@import '/themes/twjit/assets/css/chroma_fix-all.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
