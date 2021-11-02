@@ -5,7 +5,7 @@ subtitle: "Stepping away from several projects"
 description: "That’s a wrap on further development of my SSG starter sets."
 author: Bryce Wray
 date: 2021-09-11T09:25:00-05:00
-#lastmod:
+lastmod: 2021-11-02T14:08:00-05:00
 discussionId: "2021-09-suspended-starters"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608
@@ -25,6 +25,9 @@ As I've chronicled here a few times over the last year-plus&nbsp;.&nbsp;.&nbsp;.
 - "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition)"
 
 .&nbsp;.&nbsp;.&nbsp;I have churned out a few starter sets for the [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Zola](https://www.getzola.org/) [static site generators](https://jamstack.org/generators) (SSGs). However, I've decided to suspend development on each set, as of today. The GitHub repository for each set now has a note to that effect.
+
+**Update, 2021-11-02**: I decided to go back today and do one more fix on the [hugo_twcss](https://github.com/brycewray/hugo_twcss) Hugo/[Tailwind CSS](https://tailwindcss.com) starter set, based on what the configuration I described in "[Making Tailwind JIT work with Hugo](/posts/2021/11/making-tailwind-jit-work-hugo)."
+{.yellowBox}
 
 As for why I'm pulling the plug on working with these, call it an after-effect of my [retirement](/posts/2021/09/transition) combined with my original intent, which was to keep these updated constantly. That also means all their software dependencies, especially in the cases of the Eleventy starters. To handle these repos in what I consider the right way for actively developed projects, I'd need to do quite a bit of work on them in the near future, and with no end in sight. I had wanted to keep them active and fresh, but that was becoming more of a chore than I wanted.[^retirement] So, rather than leave them half-maintained, I chose instead just to mark them as "suspended" as a sort of *caveat emptor*.
 
