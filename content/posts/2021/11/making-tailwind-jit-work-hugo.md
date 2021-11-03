@@ -5,7 +5,7 @@ subtitle: "Building on others’ superb workarounds"
 description: "What to do until Tailwind CSS’s JIT mode works OoTB with Hugo."
 author: Bryce Wray
 date: 2021-11-01T12:08:00-05:00
-#lastmod:
+lastmod: 2021-11-03T12:27:00-05:00
 discussionId: "2021-11-making-tailwind-jit-work-hugo"
 featured_image: "screen-cap-TWCSS-2702x1582.png"
 featured_image_width: 2702
@@ -59,7 +59,6 @@ Here's one such weird thing I encountered, just so you can get the picture. In m
 
 ```css
 @import 'reset.css';
-@import 'fonts_Public_Sans.css';
 @import 'prismjs.css';
 @import 'tailwindcss/base';
 @import 'global.css';
@@ -69,7 +68,6 @@ Here's one such weird thing I encountered, just so you can get the picture. In m
 @import 'nav.css';
 @import 'lazyload.css';
 @import 'lite-yt-embed.css';
-@import 'intervf.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 ```
@@ -98,7 +96,6 @@ When I (finally) figured out this part, I moved the vast majority of my bespoke 
 ```css
 /* tw.css */
 @import '/themes/twjit/assets/css/reset.css';
-@import '/themes/twjit/assets/css/fonts_PublicSans.css';
 @import '/themes/twjit/assets/css/chroma_native_tweaked.css';
 @import '/themes/twjit/assets/css/chroma_fix-all.css';
 @tailwind base;
@@ -116,7 +113,7 @@ When I (finally) figured out this part, I moved the vast majority of my bespoke 
 
 .&nbsp;.&nbsp;. and so on down the line. The `@import`ed files **above** the first `@tailwind` statement do, indeed, get into the final CSS file. Again, anything `@import`ed after that **won't**, so that's why `@layer` is the way to go.[^InterVF]
 
-[^InterVF]: I should note that the use of the [Inter](https://rsms.me/inter) variable font, which I've more typically used instead of the [Public Sans](https://public-sans.digital.gov/) variable font indicated in these CSS files, is more complicated to configure in this setup compared to a Tailwind JIT setup that doesn't involve the workaround. This is because **one** Inter variable font file serves for **both** regular and italic/oblique styles, and it takes some extra CSS to make that work correctly with Firefox and Safari where italics/obliques are concerned (Chromium-based browsers have no problem with it). The placement of that CSS can be problematic in this particular setup. I've made it work, but it's tricky: basically, I `@import`ed the CSS for the Inter font file while putting the Firefox- and Safari-specific CSS in one of the `@layer` statements. YMMV, as is so often true for CSS. For these examples and the Hugo repo using them, I stuck with the Public Sans variable fonts and their considerably less complicated CSS.
+[^InterVF]: For web font users, I should note that the use of the [Inter](https://rsms.me/inter) variable font is more complicated to configure in this setup compared to a Tailwind JIT setup that doesn't involve the workaround. This is because **one** Inter variable font file serves for **both** regular and italic/oblique styles, and it takes some extra CSS to make that work correctly with Firefox and Safari where italics/obliques are concerned (Chromium-based browsers have no problem with it). The placement of that CSS can be problematic in this particular setup. I've made it work, but it's tricky: basically, I put the CSS for the Inter font file **before** the `@import` statements and the Firefox- and Safari-specific CSS **after** all the `@layer` statements. YMMV, as is so often true for CSS.
 
 ### Making it work with Hugo Pipes
 
