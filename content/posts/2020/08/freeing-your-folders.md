@@ -58,17 +58,18 @@ So, with all that understood, here we go.
 1. On the Mac desktop, double-click your Mac's default drive icon to open a Finder window at the top level of the Mac's file structure.
 2. Navigate to your user account's home folder in **Users**. For example, if you entered **John Doe** as your account name when you set up the Mac initially, there should be a **John Doe** folder within **Users**.
 3. Navigate to that folder's **Downloads** folder. (If there's not already a **Downloads** folder there, create one.)
-4. In this **Downloads** folder, create two new empty folders:  
-	— One called **1-Desktop**.  
+4. In this **Downloads** folder, create two new empty folders:
+	— One called **1-Desktop**.
 	— One called **2-Documents**.
-5. Drag (don't copy) to the **1-Desktop** folder all content you may have on the Mac desktop. This, of course, does **not** include any drive icons that are on the desktop—just files and aliases.  
+5. Drag (don't copy) to the **1-Desktop** folder all content you may have on the Mac desktop. This, of course, does **not** include any drive icons that are on the desktop—just files and aliases.
 	You'll get a warning message about this content's no longer being available on your other iCloud-linked devices. Click the button that indicates you **do** want to move the content out of iCloud Drive.
 6. Open a separate Finder window and navigate to the **Documents** folder in your **iCloud Drive** folder.
 7. Select **everything** in that **Documents** folder.
 
-**Note:** Well, *almost* everything. I suggest being careful about any folder that is identified in the **List** view as an "App Library" (often possessing an app's logo on the folder icon in the default **Icons** view)---one notable example of which, in my case, is [iA Writer](https://ia.net/writer). Leave folders of that type in the **iCloud Drive** folder's **Documents** folder. While you *can* move those items if you wish, just be forewarned that either the current app or its future versions might have a problem with the different location.{.yellowBox}
+**Note:** Well, *almost* everything. I suggest being careful about any folder that is identified in the **List** view as an "App Library" (often possessing an app's logo on the folder icon in the default **Icons** view)---one notable example of which, in my case, is [iA Writer](https://ia.net/writer). Leave folders of that type in the **iCloud Drive** folder's **Documents** folder. While you *can* move those items if you wish, just be forewarned that either the current app or its future versions might have a problem with the different location.
+{.yellowBox}
 
-8. Drag it all to the **2-Documents** folder.  
+8. Drag it all to the **2-Documents** folder.
 	Again, you'll get the warning about moving the content out of iCloud Drive; so, as before, confirm that you **do** want to proceed.
 9. Access the iCloud Drive settings: **System Preferences** \> **Internet Accounts** \> **iCloud** \> **iCloud Drive**.
 10. Click **Options**.
