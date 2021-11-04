@@ -8,12 +8,12 @@ author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
 lastmod: 2021-10-17T12:30:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: hugo-logo_reflection_closer_3200x1800.jpg
-featured_image_width: 3200
-featured_image_height: 1800
-featured_image_alt: "Logo for the Hugo static site generator."
+featured_image: nikko-macaspac-6SNbWyFwuhk-unsplash_2391x1593.jpg
+featured_image_width: 2391
+featured_image_height: 1593
+featured_image_alt: "Seeking safety concept - hand reaching out of water for help."
 featured_image_caption: |
-  <span class="caption">Image: Hugo logo by Hugo creator Steve&nbsp;Francia, sourced&nbsp;from <a href="https://gohugo.io">Hugo&nbsp;website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/">Affinity&nbsp;Designer</a>.</span>
+  <span class="caption">Image: <a href="https://unsplash.com/@nikkotations?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">nikko macaspac</a>; <a href="https://unsplash.com/s/photos/chaos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</span>
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
