@@ -96,7 +96,7 @@ choco install hugo -confirm
 
 1. Use your system's CLI app to navigate to the location on your computer where you want to create the local version of your new site.  \
 I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.[^syncGit]
-2. Copy/paste the following into the CLI app and press **Return** or **Enter**:  
+2. Copy/paste the following into the CLI app and press **Return** or **Enter**:
 ```bash
 hugo new site mysite
 ```
@@ -120,7 +120,7 @@ Like most site-building technology, Hugo uses *themes* to make a site look and p
 	- If your browser automatically downloads to a fixed location (such as a *Downloads* folder), manually move or copy the downloaded .zip file from that location to the *themes* subdirectory within *mysite*.
 6. In the *themes* subdirectory within *mysite*, if necessary (*e.g.*, Macs generally do this automatically), expand the *hugo-theme-basic-master.zip* file to that same subdirectory. This will then produce the following setup:
 
-```markup
+```bash
 	- mysite
 		- themes
 			- hugo-theme-basic-master
@@ -131,12 +131,12 @@ Like most site-building technology, Hugo uses *themes* to make a site look and p
 All the textual content---the *posts*---that you'll be adding in the future will be in the form of [Markdown](https://daringfireball.net/projects/markdown) files with [front matter](https://gohugo.io/content-management/front-matter/) that tells Hugo how to handle them. However, Hugo can get you started with that very simply:
 
 1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
-2. Copy/paste the following and then press **Return** or **Enter**: 
+2. Copy/paste the following and then press **Return** or **Enter**:
 ```bash
 hugo new posts/my-first-post.md
 ```
-This will create a new Markdown file, *my-first-post.md*, which produces this arrangement: 
-```markup
+This will create a new Markdown file, *my-first-post.md*, which produces this arrangement:
+```bash
 - mysite
 	- content
 		- posts
@@ -156,8 +156,8 @@ In order to see what's going on in your browser, you now have to start Hugo's bu
 2. Copy/paste the following and then press **Return** or **Enter**:
 ```bash
 hugo server -D
-``` 
-This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]	
+```
+This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]
 [^drafts]: This will help while you're creating content; normally, you'd just use ```hugo server``` without the ```-D``` on the end, because you wouldn't publish a file if it was still a draft. The default for that command you used in **STEP 4: Add some content** is to create a draft file.
 3. **To view your locally-hosted site**, use your web browser to visit ```http://localhost:1313/```.  \
 You'll see that it already has one post listed, *my-first-post*, from what you did in **STEP 4: Add some content**. The resulting URL for it is ```http://localhost:1313/posts/my-first-post/```.
