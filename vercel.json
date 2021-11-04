@@ -34,32 +34,19 @@
       ]
     },
     {
-      "source": "/(.*).(jpe?g|gif|png|ico|webp|svg|xml|webm|mp4|mpe?g|ttf|otf|woff2?)",
+      "source": "/(.*).(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        }
-      ]
-    },
-    {
-      "source": "/(.*).(css|js|pdf)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value":"public, max-age=2678400, immutable"
+          "value": "public, max-age=2678400, immutable"
         },
         {
           "key": "CDN-Cache-Control",
           "value": "public, max-age=2678400, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
         }
       ]
     }
