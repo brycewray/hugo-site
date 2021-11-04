@@ -89,12 +89,16 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
     @apply text-3xl;
   }
 
-  h3, .h3, h5, .h5 {
-    @apply italic;
+  h4 {
+    @apply text-2xl;
   }
 
-  h4, .h4 {
-    @apply text-2xl;
+  .h4 {
+    @apply text-2xl; /* oddity in Hugo/TWCSS JIT */
+  }
+
+  h3, .h3, h5, .h5 {
+    @apply italic;
   }
 
   h5, .h5, h6, .h6 {
@@ -284,7 +288,7 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
   }
 
   .lazy:not(.initial) {
-    @apply transition-opacity duration-1000 ease-in-out;
+    @apply transition-opacity duration-500 ease-in-out;
     /* transition: opacity 0.4s; */
   }
 
