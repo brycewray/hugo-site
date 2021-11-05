@@ -22,4 +22,6 @@ cache-nonce-playground.js
 
 /assets/css/index.css
 /themes/twjit/assets/css/index.css
+/themes/twjit-hero/assets/css/index.css
+/themes/twjit-thoreau/assets/css/index.css
 .hugo_build.lock
