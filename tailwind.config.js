@@ -1,3 +1,4 @@
+let hugoTheme = 'twjit-thoreau' // choices are twjit-hero and twjit-thoreau
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -5,7 +6,7 @@ module.exports = {
   purge: [
     "./content/**/*.md",
     "./content/**/*.html",
-    "./themes/twjit/layouts/**/*.html"
+    `./themes/${hugoTheme}/layouts/**/*.html`
   ],
   darkMode: 'media',
   theme: {
