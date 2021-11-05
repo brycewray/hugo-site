@@ -16,7 +16,9 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/achir-1634088/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5977908">Achim Ruhnau</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5977908">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}ust looks considerably different than it did yesterday.
+{{< disclaimer >}}
+
+To those of you who've been here before: yep, this **is** the same site. It just looks considerably different than it did yesterday.
 
 The most notable change is that it's completely free of "hero images," even the familiar guy-typing-on-a-typewriter photo that used to grace the home page. Now, the only images you see on this site are those which offer explanatory value (*e.g.*, the one further down on this particular page).
 
