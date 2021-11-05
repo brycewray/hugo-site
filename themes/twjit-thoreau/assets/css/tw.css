@@ -55,7 +55,7 @@
   }
 
   h1, .h1 {
-    @apply text-4xl mb-4;
+    @apply text-4xl 2xl:text-5xl mb-4;
     font-weight: 825;
   }
 
@@ -64,19 +64,19 @@
   }
 
   h2, .h2 {
-    @apply text-4xl;
+    @apply text-4xl 2xl:text-5xl;
   }
 
   h3, .h3 {
-    @apply text-3xl;
+    @apply text-3xl 2xl:text-4xl;
   }
 
-  h4 {
-    @apply text-2xl;
+  h4, h5 {
+    @apply text-2xl 2xl:text-3xl;
   }
 
-  .h4 {
-    @apply text-2xl; /* oddity in Hugo/TWCSS JIT */
+  .h4, .h5 {
+    @apply text-2xl 2xl:text-3xl; /* oddity in Hugo/TWCSS JIT */
   }
 
   h3, .h3, h5, .h5 {
