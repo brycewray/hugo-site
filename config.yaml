@@ -1,7 +1,7 @@
 baseURL: https://www.brycewray.com/
 languageCode: en-us
 title: BryceWray.com
-theme: twjit
+theme: twjit-thoreau # choices are twjit-hero and twjit-thoreau
 
 buildFuture: true # so I don't have to play with dates while developing
 
