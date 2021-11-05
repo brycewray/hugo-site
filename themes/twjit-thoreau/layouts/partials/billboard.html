@@ -1,9 +1,8 @@
-<div class="font-sans container h-auto w-full min-w-full relative overflow-hidden pt-6 md:pt-12 px-4 md:px-8 2xl:px-12">
-  <h1 class="text-center text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight leading-tight mt-2 mb-4 md:mt-6 md:mb-6 2xl:mt-16">{{ .Title | markdownify}}</h1>
-      {{- if .Params.Subtitle }}<h2 class="text-center text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl mb-4 md:mb-6 2xl:mb-6 leading-tight tracking-tight">{{ .Params.Subtitle | markdownify }}</h2>{{- end }}
-      {{- if .Params.Description }}<p class="text-center md:block md:text-2xl 2xl:text-3xl tracking-tight mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">{{ .Params.Description }}</p>{{- end }}
-      <p class="text-center text-base lg:text-lg 2xl:text-xl px-4 md:px-0 mt-8 mb-0 md:mt-0">
-        <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />{{- if ne .PublishDate .Lastmod }}<span class="text-sm">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- else -}}&nbsp;{{- end }}
-      </p>
-    </div>
-  </div>
+<div class="font-sans container h-auto w-full min-w-full relative overflow-hidden px-4 md:px-8 2xl:px-12">
+  <h1 class="text-center md:text-left text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight leading-[1.1em] md:leading-none lg:pl-12 pt-8 md:pt-12 mb-4 md:mb-8">{{ .Title | markdownify}}</h1>
+  {{- if .Params.Subtitle }}<h2 class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl lg:pl-12 mb-4 md:mb-12 leading-[1.1em] md:leading-none tracking-tight">{{ .Params.Subtitle | markdownify }}</h2>{{- end }}
+  {{- if .Params.Description }}<p class="italic font-serif text-center md:text-right md:block md:text-3xl 2xl:text-4xl tracking-tight leading-tight mt-2 md:mt-6 mb-6 md:mb-12 lg:px-12">{{ .Params.Description }}</p>{{- end }}
+  <p class="text-center md:text-right text-base lg:text-lg 2xl:text-xl px-4 md:px-0 mt-4 mb-0 md:mt-0 leading-tight lg:pr-12">
+    <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />{{- if ne .PublishDate .Lastmod }}<span class="text-sm">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- else -}}&nbsp;{{- end }}
+  </p>
+</div>
