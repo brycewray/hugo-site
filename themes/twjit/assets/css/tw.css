@@ -11,6 +11,7 @@
   ============================= */
   html {
     scroll-padding-top: 80px;
+    @apply font-serif;
   }
 
   main, #content-main-hugo {
