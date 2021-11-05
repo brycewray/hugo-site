@@ -2,10 +2,13 @@
   "scripts": {
     "clean": "rimraf public && rimraf ./themes/twjit/assets/css/index/css",
     "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel dev:*",
+    "startIP": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel devIP:*",
     "build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
     "prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit",
     "dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit -w",
+    "devIP:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit -w",
     "dev:hugo": "hugo server",
+    "devIP:hugo": "hugo server --bind '192.168.254.10'",
     "prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit --minify",
     "prod:hugo": "hugo --gc --minify"
   },
