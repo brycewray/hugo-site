@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /
-
-Sitemap: https://www.brycewray.com/sitemap.xml
