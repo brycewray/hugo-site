@@ -8,12 +8,12 @@ date: 2020-12-21T12:10:00-06:00
 lastmod: 2021-09-02T12:28:00-05:00
 #draft: false
 discussionId: "2020-12-gems-in-rough"
-featured_image: "gems-836763_5184x3456.jpg"
-featured_image_width: 5184
-featured_image_height: 3456
+featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
+featured_image_width: 7315
+featured_image_height: 4881
 featured_image_alt: "Colorful gemstones"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/aldk-53964/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=836763">Aldk</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=836763">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{< disclaimer >}}

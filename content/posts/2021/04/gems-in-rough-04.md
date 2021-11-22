@@ -8,12 +8,12 @@ date: 2021-04-09T04:40:00-05:00
 lastmod: 2021-04-22T12:46:00-05:00
 #draft: false
 discussionId: "2021-04-gems-in-rough-04"
-featured_image: "gems-1400682_3364x2696.jpg"
-featured_image_width: 3364
-featured_image_height: 2696
-featured_image_alt: "Collection of semi-precious stones on a dark background"
+featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
+featured_image_width: 7315
+featured_image_height: 4881
+featured_image_alt: "Colorful gemstones"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/brett_hondow-49958/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1400682">Brett Hondow</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1400682">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Yes, friends, [once again](/posts/2021/03/gems-in-rough-03) we're going to go through a few instances of folderol, borderline fulmination, and perhaps foolishness about developing stuff for Ye Olde Webbe.

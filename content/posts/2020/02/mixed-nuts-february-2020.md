@@ -8,12 +8,12 @@ author: Bryce Wray
 date: 2020-02-09T16:05:00-06:00
 #lastmod: TBD
 discussionId: "2020-02-mixed-nuts-2020-02"
-featured_image: "almond-21502_5000x3333.jpg"
-featured_image_width: 5000
-featured_image_height: 3333
-featured_image_alt: "Almonds and other nuts in a store"
+featured_image: "nuts-5503118_6000x4000.jpg"
+featured_image_width: 6000
+featured_image_height: 4000
+featured_image_alt: "Concept image: mixed nuts on a tabletop"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/PublicDomainPictures-14/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=21502">PublicDomainPictures</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=21502">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 The world didn't end when I issued the [inaugural set of Mixed Nuts](/posts/2019/11/mixed-nuts-2019-11) so, while that's hardly a proof of the wisdom of Going There again, I figure: hey, why not? With that ringing endorsement from your humble host, here goes nothing (which may be truer than I'd like to believe).

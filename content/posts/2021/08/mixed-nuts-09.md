@@ -7,12 +7,12 @@ author: Bryce Wray
 date: 2021-08-29T08:52:00-05:00
 lastmod: 2021-09-02T06:53:00-05:00
 discussionId: "2021-08-mixed-nuts-09"
-featured_image: "nuts-5555301_5184x3456.jpg"
-featured_image_width: 5184
-featured_image_height: 3456
-featured_image_alt: "Concept image: various mixed nuts"
+featured_image: "nuts-5503118_6000x4000.jpg"
+featured_image_width: 6000
+featured_image_height: 4000
+featured_image_alt: "Concept image: mixed nuts on a tabletop"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/saniusman89-8519787/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5555301">Usman Yousaf</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5555301">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 Starting with this latest version of the "Mixed nuts" series of *über*-random observations that I [began inflicting upon you nearly two years ago](/posts/2019/11/mixed-nuts-2019-11), I will name each according to its sequence in the motley crew rather than its month of publication. In other words, this post previously would have been "Mixed nuts • August, 2021" but will, instead, be "Mixed nuts #9."

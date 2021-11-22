@@ -8,12 +8,12 @@ date: 2021-01-16T13:45:00-06:00
 lastmod: 2021-05-19T11:31:00-05:00
 #draft: false
 discussionId: "2021-01-gems-in-rough-2021-01"
-featured_image: "gemstones-collection-3203865_4116x2304.jpg"
-featured_image_width: 4116
-featured_image_height: 2304
-featured_image_alt: "An assortment of colorful gemstones"
+featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
+featured_image_width: 7315
+featured_image_height: 4881
+featured_image_alt: "Colorful gemstones"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/flitsart-717386/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3203865">FlitsArt</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3203865">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 For those of you who haven't read the [first](/posts/2020/12/gems-in-rough) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
@@ -56,7 +56,7 @@ But what you actually get right now is:
 
 So, if you're a Hugo user right now, you have two options where it comes to good typography and plural possessives:
 
-- Make sure you manually (or, if your text editor app handles it for you, automatically) take care of "smart" punctuation in your Markdown source files rather than relying on Hugo/Goldmark to do it. 
+- Make sure you manually (or, if your text editor app handles it for you, automatically) take care of "smart" punctuation in your Markdown source files rather than relying on Hugo/Goldmark to do it.
 
 - Use your Hugo project's config file to opt instead for Blackfriday, which Hugo does still support. It's unknown how long that support will continue; so, if you go this route, you may want to start periodically checking the [Hugo community forum](https://discourse.gohugo.io) and [relevant Hugo docs](https://gohugo.io/getting-started/configuration-markup), just so a deprecation doesn't catch you by surprise.
 

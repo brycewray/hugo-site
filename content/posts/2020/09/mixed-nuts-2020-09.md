@@ -8,17 +8,17 @@ author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00
 #lastmod:
 discussionId: "2020-09-mixed-nuts-2020-09"
-featured_image: "mixed-nuts-peter-feghali-fZ7-IAReeSo-unsplash_4891x3261.jpg"
-featured_image_width: 4891
-featured_image_height: 3261
-featured_image_alt: "Various mixed nuts"
+featured_image: "nuts-5503118_6000x4000.jpg"
+featured_image_width: 6000
+featured_image_height: 4000
+featured_image_alt: "Concept image: mixed nuts on a tabletop"
 featured_image_caption: |
-  <span class="caption">Photo: <a href="https://unsplash.com/@peterf?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Peter Feghali</a>; <a href="https://unsplash.com/s/photos/nuts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 Time for another "Mixed nuts" post, another selection of various and sundry emissions from my brain. And, no: I mean, even *more* various and sundry than usual.[^1]
 
----- 
+----
 
 If you like to advise your [tweeps](https://www.merriam-webster.com/dictionary/tweep) every time you put something on your own website, save yourself some frustration, first, by running the URL past the [Twitter Card Validator](https://cards-dev.twitter.com/validator)---and do it as many times as it takes before the featured image appears. Otherwise, because Twitter refreshes its image cache only every few days, your tweet will show a generic placeholder image rather than the image you chose. (H/T to [Mito Studios](https://www.mitostudios.com/blog/how-to-clear-twitter-featured-image-cache/) for the tip.)
 

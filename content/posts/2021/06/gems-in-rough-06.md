@@ -7,12 +7,12 @@ author: Bryce Wray
 date: 2021-06-21T16:30:00-05:00
 lastmod: 2021-08-05T16:02:00-05:00
 discussionId: "2021-06-gems-in-rough-06"
-featured_image: "gems--e-mens-3Iv9FS_1RBQ-unsplash_3879x2650.jpg"
-featured_image_width: 3879
-featured_image_height: 2650
-featured_image_alt: "Close-up view of colorful gemstones"
+featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
+featured_image_width: 7315
+featured_image_height: 4881
+featured_image_alt: "Colorful gemstones"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@kwakus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">E Mens</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Introductory note for the uninitiated: each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).

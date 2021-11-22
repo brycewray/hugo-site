@@ -8,17 +8,17 @@ date: 2020-11-07T10:10:00-06:00
 lastmod: 2020-12-12T13:20:00-06:00
 draft: false
 discussionId: "2020-11-mixed-nuts-2020-11"
-featured_image: "usman-yousaf-qHETVV5u7Wk-unsplash_5184x3456.jpg"
-featured_image_width: 5184
-featured_image_height: 3456
-featured_image_alt: "Overhead view of mixed nuts in a decorative glass dish on an orange surface"
+featured_image: "nuts-5503118_6000x4000.jpg"
+featured_image_width: 6000
+featured_image_height: 4000
+featured_image_alt: "Concept image: mixed nuts on a tabletop"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@usmanyousaf?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Usman Yousaf</a>; <a href="https://unsplash.com/s/photos/mixed-nuts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 Given the course of recent events in our storm-tossed existence, both here in the United States and elsewhere, it seems a good time to whip out another set of those miscellaneous observations I typically call "mixed nuts" (most recent such assortment was [this example](/posts/2020/09/mixed-nuts-2020-09))&nbsp;.&nbsp;.&nbsp;.
 
----- 
+----
 
 Regardless of which country you inhabit or which party (if any) you follow, you can be sure of this about elections: the good guys always want all legally qualified citizens to vote *and* want all the votes to be counted, no matter how long it takes.
 

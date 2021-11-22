@@ -7,10 +7,10 @@ author: Bryce Wray
 date: 2021-11-01T12:08:00-05:00
 lastmod: 2021-11-03T12:27:00-05:00
 discussionId: "2021-11-making-tailwind-jit-work-hugo"
-featured_image: "screen-cap-TWCSS-2702x1582.png"
-featured_image_width: 2702
-featured_image_height: 1582
-featured_image_alt: "Screen capture of HTML with Tailwind CSS styles"
+featured_image: "2021-11-21_screenshot_TWCSS-on-Hugo_enlgd_3254x1564.png"
+featured_image_width: 3254
+featured_image_height: 1564
+featured_image_alt: "Screen capture from Hugo showing HTML with Tailwind CSS styles"
 #featured_image_caption:
 ---
 
