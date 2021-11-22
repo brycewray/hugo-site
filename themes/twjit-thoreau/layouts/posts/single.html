@@ -1,9 +1,54 @@
 {{ define "main" }}
 
   {{ partial "billboard.html" . }}
+  {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+  {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+  {{ $LQIPholder := "f_auto,q_1,w_20/" }}
+  {{/* $xFmPart1 := "f_auto,q_auto:eco,w_" */}}
+  {{- $xFmPart2 := ",x_0,z_1/" -}}
+  {{- $imgBd5 := md5 .Params.featured_image -}}
 
   <div class="sm:w-5/6 md:w-4/5 lg:w-2/3 xl:w-7/12 mt-10 mr-auto ml-auto px-6 lg:px-16">
-    <!--<div class="mx-auto border-b-2 border-blue-700 dark:border-white w-5/12"></div>-->
+    <!-- image and caption go here -->
+    {{- if .Params.featured_image }}
+      {{/* vars for range */}}
+      {{- $src:= .Params.featured_image -}}
+      {{- $width := .Params.featured_image_width -}}
+      <style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ .Params.featured_image }});}</style>
+      <div class="relative imgB-{{ $imgBd5 }} bg-center bg-no-repeat bg-cover">
+        <img
+          class='nScrHidden w-full h-full aspect-[{{ .Params.featured_image_width }}/{{ .Params.featured_image_height }}] animate-fade'
+          src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ .Params.featured_image }}'
+          srcset="
+          {{- range $i, $respSizes -}}
+            {{- if ge $width . -}}
+              {{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w{{ if $i }}, {{ end -}}
+            {{- end -}}
+          {{- end -}}"
+          alt='{{ .Params.featured_image_alt }}'
+          width='{{ .Params.featured_image_width }}'
+          height='{{ .Params.featured_image_height }}'
+          aspect-ratio="{{ .Params.featured_image_width }} / {{ .Params.featured_image_height }}"
+          sizes="(min-width: 1024px) 100vw, 50vw"
+        />
+        <noscript>
+          <img
+            class="w-full h-full aspect-[{{ .Params.featured_image_width }}/{{ .Params.featured_image_height }}]"
+            src='https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_600,x_0,z_1/{{ .Params.featured_image }}'
+            alt='{{ .Params.featured_image_alt }}'
+            width='{{ .Params.featured_image_width }}'
+            height='{{ .Params.featured_image_height }}'
+            aspect-ratio="{{ .Params.featured_image_width }} / {{ .Params.featured_image_height }}"
+            sizes="(min-width: 1024px) 100vw, 50vw"
+          />
+        </noscript>
+      </div>
+      {{- if isset .Params "featured_image_caption" }}
+        <p class="font-sans text-center text-xs mt-4 mb-0 pb-4">
+          {{ index .Params "featured_image_caption" | markdownify }}
+        </p>
+      {{- end -}}
+    {{- end -}}
     <article>
       {{ .Content }}
       <div class="font-sans text-center py-4">
