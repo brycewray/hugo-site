@@ -1,42 +1,7 @@
 {
-  "config": {
-    "hugoTheme": "twjit-thoreau"
-  },
-  "scripts": {
-    "clean": "rimraf public && rimraf ./themes/$npm_package_config_hugoTheme/assets/css/index/css",
-    "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel dev:*",
-    "startIP": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel devIP:*",
-    "build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
-    "testbuild": "NODE_ENV=production npm-run-all clean prelim:twcss testbuild:*",
-    "testbuildIP": "NODE_ENV=production npm-run-all clean prelim:twcss testbuildIP:*",
-    "prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/$npm_package_config_hugoTheme/assets/css/tw.css -o ./themes/$npm_package_config_hugoTheme/assets/css/index.css --jit",
-    "dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./themes/$npm_package_config_hugoTheme/assets/css/tw.css -o ./themes/$npm_package_config_hugoTheme/assets/css/index.css --jit -w",
-    "devIP:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./themes/$npm_package_config_hugoTheme/assets/css/tw.css -o ./themes/$npm_package_config_hugoTheme/assets/css/index.css --jit -w",
-    "dev:hugo": "hugo server",
-    "devIP:hugo": "hugo server --bind '192.168.254.10'",
-    "prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/$npm_package_config_hugoTheme/assets/css/tw.css -o ./themes/$npm_package_config_hugoTheme/assets/css/index.css --jit --minify",
-    "prod:hugo": "hugo --gc --minify",
-    "testbuild:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/$npm_package_config_hugoTheme/assets/css/tw.css -o ./themes/$npm_package_config_hugoTheme/assets/css/index.css --jit --minify",
-    "testbuild:hugo": "HUGO_ENV=production hugo server --gc --minify",
-    "testbuildIP:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/$npm_package_config_hugoTheme/assets/css/tw.css -o ./themes/$npm_package_config_hugoTheme/assets/css/index.css --jit --minify",
-    "testbuildIP:hugo": "HUGO_ENV=production hugo server --gc --minify --bind '192.168.254.10'"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "browserslist": [
-    "last 4 versions",
-    "> 1%",
-    "maintained node versions"
-  ],
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.1",
-    "postcss-import": "^14.0.2",
-    "rimraf": "^3.0.2",
-    "tailwindcss": "^2.2.19",
-    "tailwindcss-logical": "^2.0.0"
+    "postcss-cli": "^9.0.1"
   }
 }
