@@ -4,6 +4,20 @@
   font-family: $sans-serif;
 }
 
+
+
+.footnotes {
+  padding-top: 0.5em;
+  hr {
+    border: none;
+    height: 1px;
+    background-color: $black;
+    @media (prefers-color-scheme: dark) {
+      background-color: $white;
+    }
+  }
+}
+
 .footnote-sim {
   font-size: 0.65em;
   color: hsl(240, 100%, 50%);
@@ -17,12 +31,12 @@
     padding-inline-start: 1.5rem;
   }
   ol li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
     font-size: $pokey;
   }
   li p {
     font-size: 100%;
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .footnote-backref {
     font-size: 75%;
