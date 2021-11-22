@@ -45,7 +45,7 @@ Finally, here's that bibliography I've been flogging for all four parts up to no
 
 Also, it'll often surprise me what I pick up from how others’ code works, especially when the thing I learn isn't even what prompted my search in the first place. Serendipity is cool.
 
-### IndieWeb/webmentions ([Part 1](/posts/2020/04/webmentions-three-ssgs-1))
+### IndieWeb/webmentions (Part 1)
 
 - [Bridgy](https://brid.gy) and its [FAQs page masquerading as an About page](https://brid.gy/about).
 
@@ -55,13 +55,13 @@ Also, it'll often surprise me what I pick up from how others’ code works, espe
 
 - [webmention.io](https://webmention.io).
 
-### Eleventy sites ([Part 2](/posts/2020/04/webmentions-three-ssgs-2))
+### Eleventy sites (Part 2)
 
 - [Max Böck](https://mxb.dev), "[Static IndieWeb pt2: Using Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/)."
 
 - [Sia Karamalegos](https://sia.codes), "[An In-Depth Tutorial of Webmentions + Eleventy](https://sia.codes/posts/webmentions-eleventy-in-depth/)."
 
-### Hugo sites ([Part 3](/posts/2020/04/webmentions-three-ssgs-3))
+### Hugo sites (Part 3)
 
 - [Amit Gawande](https://www.amitgawande.com), "[IndieWebify Your Hugo Website](https://www.amitgawande.com/indiewebify-hugo-website/)."
 
@@ -73,7 +73,7 @@ Also, it'll often surprise me what I pick up from how others’ code works, espe
 
 - "[Anyone for Webmention?](https://discourse.gohugo.io/t/anyone-for-webmention/10411)" (from the [Hugo community forums](https://discourse.gohugo.io)).
 
-### Gatsby sites ([Part 4](/posts/2020/04/webmentions-three-ssgs-4))
+### Gatsby sites (Part 4)
 
 - [Chris Biscardi](https://www.christopherbiscardi.com), "[Building Gatsby Plugin Webmentions](https://www.christopherbiscardi.com/post/building-gatsby-plugin-webmentions)."
 
