@@ -259,13 +259,13 @@ footer {
     margin: 1rem auto 0 auto;
     width: 80%;
     @media screen and (min-width: $bkpt_lg) {
-      width: 65%;
+      width: 70%;
     }
     @media screen and (min-width: $bkpt_xl) {
-      width: 50%;
+      width: 60%;
     }
     @media screen and (min-width: $bkpt_2xl) {
-      width: 43%;
+      width: 50%;
     }
     figure img, img {
       width: 100%;
