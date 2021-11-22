@@ -414,17 +414,6 @@
     @apply text-xs;
   }
 
-  span.caption {
-    text-shadow: none; /* keeps link borders from looking "dirty" */
-  }
-
-  span.caption a {
-    @apply text-blue-100 border-blue-100;
-    &:focus, &:hover, &:active {
-      @apply text-blueGray-200 border-blue-100;
-    }
-  }
-
   .imgCover {
     @apply object-cover object-center h-full w-full;
   }
