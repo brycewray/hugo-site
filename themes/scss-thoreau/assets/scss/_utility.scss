@@ -1,0 +1,197 @@
+// === utility classes
+.ctr {
+  text-align: center;
+}
+
+.rgt {
+  text-align: right;
+}
+
+.wht {
+  color: hsl(0, 0%, 100%);
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.sortabig {
+  font-size: $sortabig;
+}
+
+.bigger {
+  font-size: $bigger;
+}
+
+.teenytxt, .teeny {
+  font-size: $teeny;
+}
+
+.legaltxt, .legal {
+  font-size: $legal;
+}
+
+.pokeytxt, .pokey {
+  font-size: $pokey;
+}
+
+.eightyFive {
+  font-size: $eightyFive;
+}
+
+.seventyFive {
+  font-size: $seventyFive;
+}
+
+.sixtyFive {
+  font-size: $sixtyFive;
+}
+
+.topM2 {
+  margin-top: 2em;
+}
+
+.btmM1 {
+  margin-bottom: 1em;
+}
+
+.btmM10 {
+  margin-bottom: 10em;
+}
+
+.text {
+  &-nowrap, .nobrk {
+    white-space: nowrap;
+    font-size: inherit;
+  }
+  &-link {
+    color: $blue;
+  }
+  &-link:active, &-link:focus, &-link:hover {
+    color: $darkblue;
+  }
+  &-muted {
+    color: $grey-1;
+    @media (prefers-color-scheme: dark) {
+      color: $grey-2-dark-mode;
+    }
+  }
+  &-body {
+  color: $default-color;
+  }
+}
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: hsl(0, 0%, 100%);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+.sansSerif {
+  font-family: $sans-serif;
+}
+
+.IEonly {
+  display: none;
+}
+
+.yellowBox, .blueBox {
+  // font-family: $sans-serif;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid hsl(0, 0%, 20%);
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 1.5rem;
+  @media (prefers-color-scheme: dark) {
+    border: 1px solid $grey-1;
+  }
+}
+
+.yellowBox + hr, .blueBox + hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+  margin-top: 1.75em;
+}
+
+.yellowBox {
+  background: hsl(52, 100%, 85%);
+  @media (prefers-color-scheme: dark) {
+    background: hsl(40, 100%, 10%);
+  }
+}
+
+.blueBox {
+  background: hsl(200, 100%, 95%);
+  font-size: 85%;
+  @media (prefers-color-scheme: dark) {
+    background: hsl(200, 100%, 20%);
+  }
+}
+
+img.containedImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.red {
+  color: $red;
+}
+
+figcaption, .imgcCaption, .imgCaption, .lazypicturecaption {
+  // font-family: $sans-serif;
+  padding: 0;
+  margin-block-start: 0.5em;
+  line-height: 1.375;
+  font-size: $pokey;
+  text-align: center;
+}
+
+figcaption {
+  margin-bottom: 1em;
+}
+
+.EICapt { // for use with images used with Eleventy Image which have captions
+  margin-bottom: -0.5em;
+}
+
+.relative {
+  position: relative;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.punctuationExample {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-family: $serif;
+  text-align: center;
+}
+
+/* borrowed from TWCSS */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+// === end, utility classes
