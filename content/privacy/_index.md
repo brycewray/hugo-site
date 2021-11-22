@@ -1,7 +1,7 @@
 ---
 layout: privacy
 title: "Privacy policy"
-description: "Information regarding this site and its vendors"
+description: "Information regarding this site and its vendors."
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
 lastmod: 2021-10-21T09:02:00-05:00
