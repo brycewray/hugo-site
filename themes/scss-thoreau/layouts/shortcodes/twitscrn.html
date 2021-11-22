@@ -21,13 +21,13 @@
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
 {{- $imgBd5 := md5 $imageUrl -}}
-{{- $divClass := printf "%s%s" "relative imgB-" $imgBd5 -}}
-{{- $imgClass := printf "%s%s%s%s%s" "w-full h-auto" -}}
+{{- $divClass := printf "%s%s" "relative tweet-bkgd imgB-" $imgBd5 -}}
+{{- $imgClass := "w-full h-auto lazy twitter-tweet" -}}
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 
 <style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $imageUrl }});}</style>
-<div class="{{ $divClass}} twitter-tweet" aspect-ratio="{{ $width }} / {{ $height }}"><a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
+<div class="{{ $divClass}} bg-center bg-no-repeat bg-cover" aspect-ratio="{{ $width }} / {{ $height }}"><a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
   <img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
   {{- range $i, $respSizes -}}
     {{- if ge $width . -}}
