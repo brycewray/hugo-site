@@ -5,8 +5,9 @@
     text-align: center;
     position: relative;
     height: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
     @media screen and (min-width: $bkpt_lg) {
       padding-right: 4rem;
       padding-left: 4rem;
@@ -85,7 +86,7 @@
       font-size: 1.5rem;
     }
     @media screen and (min-width: $bkpt_lg) {
-      font-size: 1.5rem;
+      font-size: 1.625rem;
       padding-top: 0.5em;
       letter-spacing: -0.015em;
     }

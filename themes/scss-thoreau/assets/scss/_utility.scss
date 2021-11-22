@@ -126,9 +126,9 @@
   display: block;
   box-sizing: border-box;
   border: 1px solid hsl(0, 0%, 20%);
-  margin: 0.5rem auto;
+  margin: 0.5em auto;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.5em;
   @media (prefers-color-scheme: dark) {
     border: 1px solid $grey-1;
   }
