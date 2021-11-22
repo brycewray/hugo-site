@@ -44,7 +44,7 @@
         </noscript>
       </div>
       {{- if isset .Params "featured_image_caption" }}
-        <p class="font-sans text-center text-xs mt-4 mb-0 pb-4">
+        <p class="FeatImgCaption">
           {{ index .Params "featured_image_caption" | markdownify }}
         </p>
       {{- end -}}

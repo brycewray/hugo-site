@@ -59,6 +59,10 @@
   margin-bottom: 10em;
 }
 
+.tightLead {
+  line-height: 1.25;
+}
+
 .text {
   &-nowrap, .nobrk {
     white-space: nowrap;
@@ -81,7 +85,19 @@
   }
 }
 .bg-primary {
-  background-color: $blue !important;
+  background-color: $blue;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .btn-primary {
@@ -106,7 +122,7 @@
 }
 
 .yellowBox, .blueBox {
-  // font-family: $sans-serif;
+  font-family: $sans-serif;
   display: block;
   box-sizing: border-box;
   border: 1px solid hsl(0, 0%, 20%);
@@ -147,10 +163,13 @@ img.containedImage {
 
 .red {
   color: $red;
+  @media (prefers-color-scheme: dark) {
+    color: $red-dark-mode;
+  }
 }
 
-figcaption, .imgcCaption, .imgCaption, .lazypicturecaption {
-  // font-family: $sans-serif;
+.imgcCaption, .imgCaption, .lazypicturecaption {
+  font-family: $sans-serif;
   padding: 0;
   margin-block-start: 0.5em;
   line-height: 1.375;
@@ -158,8 +177,12 @@ figcaption, .imgcCaption, .imgCaption, .lazypicturecaption {
   text-align: center;
 }
 
-figcaption {
-  margin-bottom: 1em;
+.FeatImgCaption {
+  font-family: $sans-serif;
+  font-size: $legal;
+  text-align: center;
+  padding-top: 0.5em;
+  margin-bottom: 0;
 }
 
 .EICapt { // for use with images used with Eleventy Image which have captions
@@ -181,7 +204,14 @@ figcaption {
   text-align: center;
 }
 
-/* borrowed from TWCSS */
+.indentAfterLI {
+  margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
+  @media screen and (min-width: $bkpt_2xl) {
+    margin-left: 2em;
+  }
+}
+
+/* === start, borrowed from TWCSS === */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -192,6 +222,62 @@ figcaption {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.inline {
+  display: inline;
+}
+
+/* === end, borrowed from TWCSS === */
+
+/* start, for imgc.html */
+
+.imgc {
+  &-div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* end, for imgc.html */
+
+/* start, for 404 page */
+
+.FourOhFour {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  h1 {
+    font-size: $biggest;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    @media screen and (min-width: $bkpt_lg) {
+      font-size: 3.25rem;
+    }
+    @media screen and (min-width: $bkpt_xl) {
+      font-size: 3.5rem;
+    }
+  }
+  p {
+    font-size: $slightlybig;
+  }
+  .bottom {
+    margin-bottom: 10em;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 1s ease-in-out;
 }
 
 // === end, utility classes

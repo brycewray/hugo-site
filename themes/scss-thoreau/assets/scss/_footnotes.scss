@@ -1,16 +1,14 @@
 // == footnotes == //
 
-/*
 .footnotes, .footnote-sim, .footnote-ref {
   font-family: $sans-serif;
 }
-*/
 
 .footnote-sim {
   font-size: 0.65em;
-  color: #0000ff;
+  color: hsl(240, 100%, 50%);
   @media (prefers-color-scheme: dark) {
-    color: #00aaff;
+    color: hsl(200, 100%, 50%);
   }
 }
 
@@ -34,4 +32,5 @@
 a.footnote-return{
   font-size: 50%;
 }
+
 // == end, footnotes == //

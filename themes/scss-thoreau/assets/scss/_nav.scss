@@ -1,5 +1,5 @@
 header {
-  // font-family: $sans-serif;
+  font-family: $sans-serif;
   position: fixed;
   width: 100%;
   margin-top: 0;
@@ -76,6 +76,9 @@ header {
       text-decoration: none;
       border: 0;
       color: $white;
+      &:focus, &:active, &:hover {
+        color: $grey-2;
+      }
     }
 
     svg {
