@@ -17,28 +17,24 @@
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
-{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{/* $xFmPart1 := "f_auto,q_auto:eco,w_" */}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
-{{- $imgClass := "containedImage lazy" -}}
+{{- $imgBd5 := md5 $imageUrl -}}
+{{- $divClass := printf "%s%s" "relative imgB-" $imgBd5 -}}
+{{- $imgClass := printf "%s%s%s%s%s" "w-full h-auto" -}}
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $stringtoRet := "" -}}{{/* init */}}
-{{- $separator := ", " -}}
-{{- $innerString := "" -}}{{/* init */}}
 
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" "<div class='twitter-tweet' aspect-ratio='" $width " / " $height "'><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $imgClass "' data-src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $imageUrl "' data-srcset='" -}}
-
-{{- $.Scratch.Set "innerString" $stringtoRet -}}
-{{- range $respSizes -}}
-  {{- if ge $width -}}
-    {{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase $xFmPart1 . $xFmPart2 $imageUrl " " . "w" $separator -}}
-    {{-  $.Scratch.Add "innerString" $innerString -}}
-  {{- end -}}
-{{- end -}}
-{{- $stringtoRet := .Scratch.Get "innerString" -}}
-{{- $stringtoRet := substr $stringtoRet 0 -2 -}}
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s" $stringtoRet "' alt='" $alt "' width='" $width "' height='" $height "' loading='lazy' sizes='" $dataSzes "' /></a>" -}}
-{{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><a href='" $twitterUrl "' target='_blank' rel='noopener'><img class='" $nscClass "' src='" $cloudiBase $xFmPart1 "300" $xFmPart2 $imageUrl "' alt='" $alt "' /></a></noscript></div>" -}}
-
-{{- $stringtoRet | safeHTML -}}
+<style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $imageUrl }});}</style>
+<div class="{{ $divClass}} twitter-tweet" aspect-ratio="{{ $width }} / {{ $height }}"><a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
+  <img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
+  {{- range $i, $respSizes -}}
+    {{- if ge $width . -}}
+      {{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $imageUrl }} {{ . }}w{{ if $i }}, {{ end -}}
+    {{- end -}}
+  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" aspect-ratio="{{ $width }} / {{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" /></a>
+  <noscript>
+    <a href="{{ $twitterUrl }}" target="_blank" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600 {{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
+  </noscript>
+</div>

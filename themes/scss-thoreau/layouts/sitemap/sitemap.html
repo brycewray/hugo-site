@@ -1,29 +1,26 @@
-
 {{ define "main" }}
 
-<div class="sm:w-5/6 md:w-4/5 lg:w-7/12 mr-auto ml-auto pt-10 px-6 lg:px-16">
-  <h1 class="text-center text-3xl lg:text-4xl 2xl:text-5xl mb-2">Sitemap</h1>
+<div class="container-narrower sitemapDiv">
+  <h1>Sitemap</h1>
   <div class="post-line"></div>
-  <h2 class="text-2xl my-6">Main pages</h2>
-    <ul>
-      <li class="text-sm my-4"><a href="{{ .Site.BaseURL }}">Home page</a></li>
-      <li class="text-sm my-4"><a href="{{ .Site.BaseURL }}about/">About me</li>
-      <li class="text-sm my-4"><a href="{{ .Site.BaseURL }}privacy/">Site&rsquo;s privacy policy</a></li>
-      <li class="text-sm my-4"><a href="{{ .Site.BaseURL }}contact/">How to contact me</a></li>
-    </ul>
-    <h2 class="text-2xl my-6">Posts</h2>
-    <ul>
-      <li class="text-sm my-4"><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
-    {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
-      {{- if (ne .Title "Posts") -}}
-      <li class="text-sm my-4">
-        <strong><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}<br />
-        <strong>{{ .Params.Subtitle | markdownify }}</strong><br />
-      {{ .Description | markdownify }}
-      </li>
-      {{- end -}}
+  <h2>Main pages</h2>
+  <ul>
+    <li><a href="{{ .Site.BaseURL }}">Home page</a></li>
+    <li><a href="{{ .Site.BaseURL }}about/">About me</li>
+    <li><a href="{{ .Site.BaseURL }}privacy/">Site&rsquo;s privacy policy</a></li>
+    <li><a href="{{ .Site.BaseURL }}contact/">How to contact me</a></li>
+  </ul>
+  <h2>Posts</h2>
+  <ul>
+    <li><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
+  {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
+    {{- if (ne .Title "Posts") -}}
+    <li><strong><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}<br />
+    <strong>{{ .Params.Subtitle | markdownify }}</strong><br />
+    {{ .Description | markdownify }}</li>
     {{- end -}}
-    </ul>
-  </div>
+  {{- end -}}
+  </ul>
+</div>
 
 {{ end }}

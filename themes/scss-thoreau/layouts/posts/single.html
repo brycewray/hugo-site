@@ -8,7 +8,7 @@
   {{- $xFmPart2 := ",x_0,z_1/" -}}
   {{- $imgBd5 := md5 .Params.featured_image -}}
 
-  <div class="sm:w-5/6 md:w-4/5 lg:w-2/3 xl:w-7/12 mt-10 mr-auto ml-auto px-6 lg:px-16">
+  <div class="container-narrower">
     <!-- image and caption go here -->
     {{- if .Params.featured_image }}
       {{/* vars for range */}}
@@ -49,11 +49,11 @@
         </p>
       {{- end -}}
     {{- end -}}
-    <article>
+    <article class="article">
       {{ .Content }}
-      <div class="font-sans text-center py-4">
-        <button class="bg-blue-600 hover:bg-blue-400 active:bg-blue-400 focus:bg-blue-400 dark:bg-sky-300 dark:hover:bg-blue-100 dark:active:bg-blue-100 dark:focus:bg-blue-100 rounded-md p-4">
-          <a class="text-white hover:text-white active:text-white focus:text-white dark:text-black dark:hover:text-black dark:active:text-black dark:focus:text-black border-transparent hover:border-transparent" href="mailto:bw@brycewray.com?subject=Re: “{{ .Title | markdownify}}”">
+      <div class="contactBtn">
+        <button>
+          <a href="mailto:bw@brycewray.com?subject=Re: “{{ .Title }}”">
             <svg aria-hidden="true" class="inline" role="img" height="2em" width="2em" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>&nbsp;&nbsp;<strong>Reply via email</strong>
           </a>
         </button>
@@ -62,17 +62,17 @@
   </div>
 
   {{ if or .PrevPage .NextPage }}
-    <div class="w-full px-8 md:px-0 bg-black dark:bg-blue-900 align-middle mt-10 mb-10">
-      <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200">Other posts</a></h3>
-			<p class="font-sans text-center mt-2 mb-2 text-xl lg:text-2xl text-white leading-tight tracking-tight">
+    <div class="bg-dark sansSerif">
+      <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
+			<p class="ctr prevnextP">
 				{{ with .NextInSection }}
-					<strong>Next</strong>: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
+					<strong>Next</strong>: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
 					{{ end }}
 			</p>
-			<p class="font-sans text-center pb-4 mt-2 mb-0 text-xl lg:text-2xl text-white leading-tight tracking-tight">
+			<p class="ctr prevnextP">
 				{{ with .PrevInSection }}
-        <strong>Previous</strong>: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
-        {{ end }}
+					<strong>Previous</strong>: <a class="previous" href="{{.RelPermalink}}">{{.Title}}</a>
+				{{ end }}
 			</p>
     </div>
   {{ end }}

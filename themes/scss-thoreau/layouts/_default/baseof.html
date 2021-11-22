@@ -3,11 +3,11 @@
 {{- $jsBundle := slice $lazyloadFile $lazyloadHelp | resources.Concat "js/lazyBundle.js" | resources.Minify | fingerprint "md5" -}}
 
 <!DOCTYPE html>
-<html class="bg-white dark:bg-black" lang="en" charset="utf-8">
+<html lang="en" charset="utf-8">
   {{ partial "head.html" . -}}
-  <body class="bg-white dark:bg-black dark:text-gray-100">
+  <body>
     {{ partial "header.html" . }}
-    <div id="content-main-hugo">
+    <div id="content">
     {{- block "main" . -}}{{- end }}
     </div>
     {{- partial "footer.html" . -}}

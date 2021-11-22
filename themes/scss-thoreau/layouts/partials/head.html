@@ -71,17 +71,13 @@
 
 
   {{/*- CSS/SCSS -*/}}
-  <!--
   <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-  <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-  <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+  <!--
+  <link rel="preload" href="/fonts/Public-Sans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+  <link rel="preload" href="/fonts/Public-Sans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
   -->
-  {{- $css := "" -}}{{/* Init var */}}
-  {{- if hugo.IsProduction -}}
-    {{ $css = resources.Get "css/index.css" | resources.PostCSS | fingerprint "md5" }}
-  {{- else -}}
-    {{ $css = resources.Get "css/index.css" | resources.PostCSS }}
-  {{- end -}}
+  {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
+  {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | resources.PostCSS | fingerprint "md5" }}
   <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 
