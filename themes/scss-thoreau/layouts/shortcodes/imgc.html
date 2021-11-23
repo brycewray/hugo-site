@@ -31,10 +31,9 @@
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := printf "%s%s" "relative imgB-" $imgBd5 -}}
-{{- $imgClass := printf "%s%s%s%s%s" "w-full h-auto aspect-" $width "/" $height " lazy" -}}
+{{- $imgClass := "w-full h-auto lazy" -}}
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $separator := ", " -}}
 
 <style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $src }});}</style>
 <div class="{{ $divClass }} bg-center bg-no-repeat bg-cover" aspect-ratio="{{ $width }} / {{ $height }}">
