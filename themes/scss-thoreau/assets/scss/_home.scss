@@ -2,22 +2,22 @@
 .homeOpen {
   text-align: center;
   h1 {
-    line-height: 1.5em;
+    line-height: 1.75em;
     font-size: 1.5rem;
   }
   @media screen and (min-width: $bkpt_lg) {
     text-align: right;
     padding: 0 3em 0 0;
     color: $white;
-    background-image: linear-gradient(to bottom, $darkblue, $black 60%, $white);
+    background-image: linear-gradient(to bottom, $darkblue, $black 50%, $white);
     @media screen and (prefers-color-scheme: dark) {
-      background-image: linear-gradient(to bottom, $black, $darkblue 60%, $black);
+      background-image: linear-gradient(to bottom, $black, $darkblue 50%, $black);
     }
     width: 45%;
     min-height: 80vh;
     h1 {
       padding: 3.5em 0 0 2em;
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
     a {
       color: $blueLight;
@@ -27,7 +27,7 @@
   @media screen and (min-width: $bkpt_2xl) {
     h1 {
       padding: 2.5em 0 0 2.5em;
-      font-size: 3rem;
+      font-size: 2.25rem;
     }
   }
 }
