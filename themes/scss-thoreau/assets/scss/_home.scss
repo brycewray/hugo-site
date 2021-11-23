@@ -91,6 +91,7 @@
   }
   &-Description {
     margin-top: 0.5em;
+    margin-bottom: 1.5em;
     font-size: 0.875rem;
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1rem;
@@ -100,7 +101,7 @@
     }
   }
   &-Finish {
-    margin-top: 2em;
+    margin-top: 3em;
   }
 }
 // === end, for home page
