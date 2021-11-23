@@ -5,7 +5,7 @@ subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2021-04-30T13:10:00-05:00
+lastmod: 2021-11-23T12:55:00-06:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
@@ -15,6 +15,9 @@ featured_image_alt: "Closeup of computer code on a display"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a>; <a href="/s/photos/computer-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
+
+**Note**: After you read this post, please see also [its sequel](/posts/2021/11/go-big-go-home-sequel) for what I believe is a much more usable result.
+{.yellowBox}
 
 Imagine that you're about to take your first drive as owner of a shiny new vehicle which you chose after weeks of research and comparison.
 
