@@ -76,10 +76,17 @@
   <link rel="preload" href="/fonts/Public-Sans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
   <link rel="preload" href="/fonts/Public-Sans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
   -->
-  {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
-  {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | resources.PostCSS | fingerprint "md5" }}
-  <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+  {{- if hugo.IsProduction -}}
+    {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed") }}
+    {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint "md5" }}
+    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+  {{- else -}}
+    {{ $options := (dict "targetPath" "css/index.css") }}
+    {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options }}
+    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+  {{- end -}}
 
   {{- if hugo.IsProduction -}}
   <!-- Fathom - beautiful, simple website analytics -->
