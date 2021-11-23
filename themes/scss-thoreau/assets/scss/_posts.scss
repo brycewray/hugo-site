@@ -6,7 +6,7 @@
   }
   &-pagerThingP {
     text-align: center;
-    font-size: $pokey;
+    font-size: 1.25em;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -151,12 +151,18 @@
 }
 
 hr.paginatorTop, hr.paginatorBottom {
-  width: 65%;
+  border: none;
+  height: 1px;
+  background-color: $black;
+  @media (prefers-color-scheme: dark) {
+    background-color: $white;
+  }
+  width: 75%;
   @media screen and (min-width: $bkpt_lg) {
-    width: 50%;
+    width: 65%;
   }
   @media screen and (min-width: $bkpt_2xl) {
-    width: 40%;
+    width: 55%;
   }
 }
 
