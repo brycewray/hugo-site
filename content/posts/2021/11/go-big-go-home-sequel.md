@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a>; <a href="/s/photos/computer-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-The inspiration for this mercifully brief post was a metaphorical, "Why didn't I think of this before?"-kinda forehead-slap. And perhaps it should have been more than metaphorical.
+The inspiration for this mercifully brief post was a metaphorical, "Why didn't I think of this before?”-kinda forehead-slap. And perhaps it should have been more than metaphorical.
 
 Back in February, I wrote [an article](/posts/2021/02/go-big-go-home) about my conversion of an [Eleventy](https://11ty.dev) [shortcode](https://11ty.dev/docs/shortcodes) to a [Go](https://go.dev)-based shortcode for [Hugo](https://gohugo.io). Each shortcode's purpose generated the necessary HTML for responsive handling of an image from my [Cloudinary](https://cloudinary.com) account. While the spaghetti-ish result for Hugo certainly worked, it was ’way more convoluted and hard to read than it needed to be. This post is an attempt to make up for that.
 
