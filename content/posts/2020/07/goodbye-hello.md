@@ -6,7 +6,7 @@ subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T17:05:00-05:00
-lastmod: 2021-05-17T12:42:00-05:00
+lastmod: 2021-05-16T10:35:00-05:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: "away-706464_4608x2592.jpg"
 featured_image_width: 4608
@@ -78,7 +78,7 @@ Render was hard to turn down. There is a lot of smart thinking behind it, it's y
 
 Unfortunately, some of Render's DX (developer experience)---notably the documentation---is still *somewhat* lacking; my testing showed some inconsistencies in CDN performance as compared to the others; and there's no CLI as yet, although I learned June 28 that one is planned (no ETA). This vendor will get better, and I'll probably give it another look-see before too terribly long. Right now, however, I don't think it's quite ready for how I want to use it.
 
-**That said**, I do encourage you to check it out; you may find Render perfectly fine for your own needs. It's definitely a "comer." Keep your eyes on it. 
+**That said**, I do encourage you to check it out; you may find Render perfectly fine for your own needs. It's definitely a "comer." Keep your eyes on it.
 
 ### Vercel
 
