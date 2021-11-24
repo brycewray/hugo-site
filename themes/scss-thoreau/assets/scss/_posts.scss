@@ -31,15 +31,15 @@
     margin-bottom: 0.25em;
     @media screen and (min-width: $bkpt_md) {
       padding-top: 2rem;
-      font-size: 3rem;
+      font-size: 2.75rem;
     }
     @media screen and (min-width: $bkpt_lg) {
       padding-top: 2.5rem;
-      font-size: 3.25rem;
+      font-size: 3rem;
     }
     @media screen and (min-width: $bkpt_2xl) {
       padding-top: 3rem;
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
   &-Title {
@@ -69,7 +69,7 @@
   }
   &-Dates {
     font-size: 0.825rem;
-    line-height: 1.25em;
+    line-height: 1.33;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     @media screen and (min-width: $bkpt_lg) {
