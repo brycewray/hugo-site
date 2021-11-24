@@ -4,13 +4,13 @@
 
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
-  {{ partial "head.html" . -}}
+  {{ partial "head.html" . }}
   <body>
     {{ partial "header.html" . }}
     <div id="content-main-hugo">
     {{- block "main" . -}}{{- end }}
     </div>
-    {{- partial "footer.html" . -}}
+    {{- partial "footer.html" . }}
     <script {{ if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end -}} src="{{ $jsBundle.RelPermalink }}" defer></script>
     {{- if eq .Site.Params.Host "CFP" -}}
     <!-- Cloudflare Web Analytics -->

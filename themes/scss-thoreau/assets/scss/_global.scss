@@ -99,19 +99,19 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: $bigger;
+  font-size: 1.75em;
 }
 
 h3, .h3 {
-  font-size: $mightybig;
+  font-size: 1.5em;
 }
 
 h4, .h4 {
-  font-size: $sortabig;
+  font-size: 1.25em;
 }
 
 h5, .h5, h6, .h6 {
-  font-size: $slightlybig;
+  font-size: 1.125em;
 }
 
 a, a:focus, a:hover, a:active {
@@ -297,15 +297,15 @@ li p {
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: 1.125rem;
-    line-height: 1.625;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-top: 1.15em;
+    margin-bottom: 1.15em;
     @media screen and (min-width: $bkpt_lg) {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
     }
     @media screen and (min-width: $bkpt_2xl) {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
   li li, li p {
