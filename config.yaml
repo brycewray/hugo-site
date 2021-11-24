@@ -17,7 +17,7 @@ params:
   Domain: "brycewray.com"
   Author: "Bryce Wray"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
-  Host: "Vercel" # choices are "CFP" and "Vercel"
+  Host: "CFP" # choices are "CFP" and "Vercel"
 
 markup:
   # defaultMarkdownHandler: blackfriday
