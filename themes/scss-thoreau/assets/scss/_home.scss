@@ -79,8 +79,8 @@
     }
   }
   &-Dates {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
     font-size: 0.875rem;
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1rem;
@@ -91,7 +91,6 @@
   }
   &-Description {
     margin-top: 0.5em;
-    margin-bottom: 1.5em;
     font-size: 0.875rem;
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1rem;

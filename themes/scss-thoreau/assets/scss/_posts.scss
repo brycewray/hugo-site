@@ -59,7 +59,7 @@
     font-size: 1rem;
     margin-top: 0;
     padding-top: 0.25em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1.25rem;
     }
@@ -70,7 +70,6 @@
   &-Dates {
     font-size: 0.825rem;
     line-height: 1.33;
-    margin-top: 0.5em;
     margin-bottom: 0.5em;
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1rem;
@@ -85,7 +84,7 @@
   &-Description {
     font-size: 0.875rem;
     // line-height: 1.25em;
-    margin-bottom: 1.25em;
+    margin-bottom: 0.5em;
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1rem;
     }
