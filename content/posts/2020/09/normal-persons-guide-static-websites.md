@@ -84,7 +84,7 @@ However, to be fair, I must note that Go is also responsible for Hugo's most sig
 
 This is because Go's *templating*---that's how you make a single layout handle a whole bunch of pages, rather than having to design each one separately---is no walk in the park even for most developers, much less for normal folks. Thus, I strongly urge you to take the time to *pick a good theme*. It not only should look the way you want but also be pre-configured with all the functionality you'll need. That'll probably spare you from spending time trying to understand, much less edit, something like:
 
-```go
+```go-html-template
 {{ if ne $paginator.PageNumber $paginator.TotalPages }}
 	<a class="icon" aria-label="Last page" href="{{ $paginator.Last.URL }}">
 	{{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}

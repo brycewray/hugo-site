@@ -54,7 +54,7 @@ An *asset pipeline* is how some software applications are "aware of" and process
 
 After all: if you're using PostCSS, you're almost certainly [using Hugo Pipes to implement it](https://gohugo.io/hugo-pipes/postcss/), so why not simply use it also to fingerprint the CSS file every time you make a change? It was as simple as this in the `<head>` "partial" template in the Hugo version of my site (note that this is the [Go](https://golang.org) language on which Hugo templating depends):
 
-```go
+```go-html-template
 {{ $css := resources.Get "css/index.css" }}
 {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "inlineImports" true "outputStyle" "compressed") | fingerprint }}
 ```

@@ -25,7 +25,7 @@ With that bad news is some accompanying good news: if you're willing to put in a
 
 Back in the late 1990s, before Google swallowed up the web search space and there still were *numerous* prominent search engines out there, you actually would have to **submit** your site to each of them for inclusion. But those days are long gone and now, to invoke a "[Russian Reversal](https://en.wikipedia.org/wiki/In_Soviet_Russia)"-ish line, "search engines find *you*." Or, at least, you hope they do.
 
-Search engine algorithms come and go, but you can safely assume that  three items are crucial to how well, and how frequently, search engines discover your site: **content**, **performance**, and the combination of **feeds** and **sitemaps**. 
+Search engine algorithms come and go, but you can safely assume that  three items are crucial to how well, and how frequently, search engines discover your site: **content**, **performance**, and the combination of **feeds** and **sitemaps**.
 
 ### Content
 
@@ -232,7 +232,7 @@ outputs:
 2. Hugo comes with a built-in template for the RSS feed, so there's no need to come up with one.
 3. For the JSON feed, go to the appropriate `layouts/_defaults` folder (either in the top level or within a theme's folder setup; see "[Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/)”) and create an `index.json` file with the following content (based on how the aforementioned RSS template works):
 
-```go
+```go-html-template
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := $pctx.RegularPages -}}
@@ -301,7 +301,7 @@ date: 2021-05-12T08:00:00-05:00
 
 6. Then, back in the appropriate `layouts` folder, add a `sitemap` folder containing a `sitemap.html` file with the following (edit the CSS classes and the "Main pages" stuff as makes sense for your site):
 
-```go
+```go-html-template
 {{ define "main" }}
   <div class="container-narrower sitemapDiv">
     <h1>Sitemap</h1>

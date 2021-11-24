@@ -121,7 +121,7 @@ module.exports = (url, alt, width, height) => {
 
 Here's the corresponding Go version for Hugo:
 
-```go
+```go-html-template
 {{/* init vars */}}
 {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
 {{- $src := .Get "src" -}}
@@ -193,7 +193,7 @@ Now, as promised above, I'll take you through some of the Go-isms in this shortc
 
 You'll notice a little dot (`.`) here and there in the Go shortcode, especially in the loop. If you're familiar with other programming languages, you might mistake that for a concatenation operator; but, in Go-based templating, the dot provides **context** regarding the item to which you're referring at any given time. For example, this part of the loop through the `$respSizes` slice&nbsp;.&nbsp;.&nbsp;.
 
-```go
+```go-html-template
 {{- if ge $width . -}}
 ```
 

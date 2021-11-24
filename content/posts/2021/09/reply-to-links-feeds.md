@@ -119,7 +119,7 @@ Now, on to the code.
 
 ### Hugo RSS
 
-```go
+```go-html-template
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
@@ -169,7 +169,7 @@ Now, on to the code.
 
 ### Hugo JSON
 
-```go
+```go-html-template
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := $pctx.RegularPages -}}

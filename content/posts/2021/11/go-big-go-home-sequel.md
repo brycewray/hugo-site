@@ -26,7 +26,7 @@ You see, I realized the other day that---“[D'oh](https://simpsons.fandom.com/w
 
 Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specific syntax therein, please refer to the [original post](/posts/2021/02/go-big-go-home) and its explanatory links.
 
-```go
+```go-html-template
 {{/* init the first set of vars */}}
 {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
 {{- $src := .Get "src" -}}
