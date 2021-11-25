@@ -79,8 +79,8 @@
     {{- if hugo.IsProduction -}}
       {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed") }}
       {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint "md5" }}
-      <link{{ if eq .Site.Params.Host "CFP" -}} nonce="DhcnhD3khTMePgXw"{{- end -}} rel="preload" as="style" href="{{ $css.RelPermalink }}">
-      <link{{ if eq .Site.Params.Host "CFP" -}} nonce="DhcnhD3khTMePgXw"{{- end -}} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
     {{- else -}}
       {{ $options := (dict "targetPath" "css/index.css") }}
       {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options }}
