@@ -25,3 +25,7 @@ cache-nonce-playground.js
 /themes/twjit-hero/assets/css/index.css
 /themes/twjit-thoreau/assets/css/index.css
 .hugo_build.lock
+
+start.sh
+build.sh
+testbuild.sh
