@@ -1,6 +1,5 @@
-{{- $lazyloadFile := resources.Get "js/lazyload_17-5-0.min.js" -}}
-{{- $lazyloadHelp := resources.Get "js/lazyload-helper.js" -}}
-{{- $jsBundle := slice $lazyloadFile $lazyloadHelp | resources.Concat "js/lazyBundle.js" | resources.Minify | fingerprint "md5" -}}
+{{- $options := dict "targetPath" "js/lazyBundle.js" -}}
+{{- $jsBundle := resources.Get "js/lazyload-helper.esm.js" | js.Build $options | resources.Minify | fingerprint "md5" -}}
 
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
