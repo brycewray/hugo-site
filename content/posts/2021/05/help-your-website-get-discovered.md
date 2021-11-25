@@ -63,7 +63,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 
 2. In the `src` folder, create the file `feed.njk` to make your template for the RSS feed:
 
-```twig
+```jinja
 ---json
 {
   "permalink": "/index.json",
@@ -109,7 +109,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 
 3. In the `src` folder, create the file `jsonfile.njk` to make your template for the JSON feed:
 
-```twig
+```jinja
 ---json
 {
   "permalink": "/index.json",
@@ -152,7 +152,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 
 4. In the `src` folder, create the file `sitemap.njk` to make your template for the XML sitemap (replace the dates in the final two items with what make sense for your site):
 
-```twig
+```jinja
 ---
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
@@ -185,7 +185,7 @@ title: "Sitemap (HTML form)"
 
 6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/), and you'll obviously want to customize those "Main pages" items at the top):
 
-```twig
+```jinja
 ---
 layout: 'base.njk'
 ---

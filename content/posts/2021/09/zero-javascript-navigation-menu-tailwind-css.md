@@ -53,7 +53,7 @@ Yeah, I know: that's enough talk. Let's get to the code, **after** I provide jus
 
 `./src/_includes/layouts/header.njk`
 
-```twig
+```jinja
 <header class="fixed w-full mt-0 bg-black dark:bg-blue-800 z-[9999]">
   <nav class="text-white bg-black dark:bg-blue-800">
     <input type="checkbox" id="nav-Checkbox" class="hidden">

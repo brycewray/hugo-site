@@ -23,7 +23,7 @@ Now, on to the code.
 
 ### Eleventy RSS
 
-```twig
+```jinja
 ---json
 {
   "permalink": "/index.xml",
@@ -74,7 +74,7 @@ Now, on to the code.
 
 ### Eleventy JSON
 
-```twig
+```jinja
 ---json
 {
   "permalink": "/index.json",

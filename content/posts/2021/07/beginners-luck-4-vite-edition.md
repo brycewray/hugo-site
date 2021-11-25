@@ -210,9 +210,9 @@ Then, at the end of `.eleventy.js`, I replaced the final `return {templateFormat
 
   return {
     templateFormats: [
-      "html", 
-      "md", 
-      "njk", 
+      "html",
+      "md",
+      "njk",
       "11ty.js"
     ],
     pathPrefix: PATH_PREFIX,
@@ -260,7 +260,7 @@ Finally, I changed my templates to fit the new setup.
 
 First up was the site-wide `base.njk`, the entirety of which now became:
 
-```twig
+```jinja
 <!DOCTYPE html>
 <html lang="en">
   {% include 'layouts/partials/head.njk' %}
@@ -268,10 +268,10 @@ First up was the site-wide `base.njk`, the entirety of which now became:
     {% include 'layouts/partials/header.njk' %}
     {{ content | safe }}
     {% include 'layouts/partials/footer.njk' %}
-    {#  
+    {#
       We must split development  and production scripts
       In development, vite runs a server to resolve and reload scripts
-      In production, the scripts are statically replaced at build-time 
+      In production, the scripts are statically replaced at build-time
 
       The build.env variable is assigned in src/_data/build.js
       @see https://vitejs.dev/guide/backend-integration.html#backend-integration
@@ -292,13 +292,13 @@ First up was the site-wide `base.njk`, the entirety of which now became:
 
 Then, I finished by changing the closing, CSS-related part of the site-wide `head.njk` template (which, as the name  implies, provides each page's `head` section) to the following:
 
-```twig
+```jinja
     {% if build.env == "production" %}
       {# Add any CSS from the main script #}
       {% viteLinkStylesheetTags "src/client/main.js" %}
       {% viteLinkModulePreloadTags "src/client/main.js" %}
     {% endif %}
-    
+
   </head>
 ```
 

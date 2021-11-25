@@ -32,7 +32,7 @@ As a result, I was delighted a few weeks back when I happened upon "[Faster YouT
 
 For example, adding the following to the [Markdown](https://daringfireball.net/projects/markdown) in a suitably configured [Eleventy](https://11ty.dev) site:
 
-```twig
+```jinja
 {% set videoTitle = "Every programming tutorial" %}
 {% set videoId = "MAlSjtxy5ak" %}
 {% include "layouts/partials/lite-youtube.njk" %}
