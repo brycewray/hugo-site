@@ -5,7 +5,7 @@ subtitle: "Bouncin’ among my neurons"
 description: "A few things currently on my so-called mind."
 author: Bryce Wray
 date: 2021-11-26T13:02:00-06:00
-#lastmod:
+lastmod: 2021-11-28T11:21:00-06:00
 discussionId: "2021-11-mixed-nuts-10"
 featured_image: "nuts-5503118_6000x4000.jpg"
 featured_image_width: 6000
@@ -20,7 +20,7 @@ Each entry in the "Mixed nuts" series is a collection of random and, occasionall
 
 ---
 
-Sliding into the "Wow, finally, I **did** live to see it" category is [this week's 1.0 release](https://support.typora.io/What's-New-1.0/), after years of beta testing, of the cross-platform[^Elec] [Typora](https://typora.io) text editor app. After a 15-day free trial of the full app, the price is fifteen bucks. That's a **one-time** license fee, so you inveterate subscription haters can stand down. Give it a try. (I'm writing this on it right now, as a matter of fact.)[^tipReIE]
+Sliding into the "Wow, finally, I **did** live to see it" category is [this week's 1.0 release](https://support.typora.io/What's-New-1.0/), after years of beta testing, of the cross-platform[^Elec] [Typora](https://typora.io) text editor app. After a fifteen-day free trial of the full app, the price is fifteen bucks. That's a **one-time** license fee, so you inveterate subscription haters can stand down. Give it a try. (I'm writing this on it right now, as a matter of fact.)[^tipReIE]
 
 [^Elec]: Yes, it's [Electron](https://www.electronjs.org/)-based. I'm okay with that, especially when it enables wide compatibility for an app of Typora's well-known quality.
 
