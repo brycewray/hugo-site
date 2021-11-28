@@ -22,8 +22,8 @@
 
 {{- $imgBd5 := md5 $imageUrl -}}
 {{- $divClass := printf "%s%s" "relative tweet-bkgd imgB-" $imgBd5 -}}
-{{- $imgClass := "w-full h-auto lazy twitter-tweet" -}}
-{{- $nscClass := "containedImage" -}}
+{{- $imgClass := "w-full h-auto lazy twitter-tweet nScrHidden" -}}
+{{- $nscClass := "containedImage twitter-tweet" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 
 <style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $imageUrl }});}</style>
