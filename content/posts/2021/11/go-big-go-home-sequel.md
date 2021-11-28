@@ -5,7 +5,7 @@ subtitle: "A pie recipe rather than tangled spaghetti"
 description: "After a “D’oh!” moment, I refine a bespoke Hugo shortcode."
 author: Bryce Wray
 date: 2021-11-23T12:55:00-06:00
-#lastmod:
+lastmod: 2021-11-28T09:54:00-06:00
 #draft: false
 discussionId: "2021-11-go-big-go-home-sequel"
 featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
@@ -47,7 +47,7 @@ Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specifi
 */}}
 {{- $cloudName := "brycewray-com" }}
 {{- $cloudiBase := printf "%s%s%s" "https://res.cloudinary.com/" {{ $cloudName }} "/image/upload/" -}}
-{{ $LQIPholder := "f_auto,q_1,w_20/" }}
+{{- $LQIPholder := "f_auto,q_1,w_20/" -}}
 {{/* $xFmPart1 := "f_auto,q_auto:eco,w_" */}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 {{/*
