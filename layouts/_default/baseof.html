@@ -1,5 +1,5 @@
-{{- $options := dict "targetPath" "js/index.js" -}}
-{{- $jsBundle := resources.Get "js/index.esm.js" | js.Build $options | resources.Minify | fingerprint "md5" -}}
+{{- $options := dict "targetPath" "js/bundle.js" -}}
+{{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint "md5" -}}
 
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
