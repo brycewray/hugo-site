@@ -54,3 +54,10 @@ article code {
     background-color: #454545;
   }
 }
+
+article blockquote code {
+  color: #494d50;
+  @media (prefers-color-scheme: dark) {
+    color: #dddddd;
+  }
+}
