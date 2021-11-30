@@ -74,7 +74,7 @@
     <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     -->
     {{- if hugo.IsProduction -}}
-      {{- $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed") -}}
+      {{- $options := (dict "targetPath" "css/index.min.css" "outputStyle" "compressed") -}}
       {{- $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint "md5" -}}
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
