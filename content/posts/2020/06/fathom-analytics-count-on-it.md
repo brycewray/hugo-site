@@ -40,7 +40,7 @@ As with its market-crushing search engine, Google uses its [cookie](https://deve
 
 It'll also come as no shock to you that, because of the cookies and all the data they capture, Google Analytics is a significant violator of users’ online privacy. In recent years, various laws have gone into effect that require sites to tell you about that. Why do you think you're greeted with a "Hey, yo, click here to accept that we're putting cookies on your computer" message on virtually every site you visit these days, especially if for the first time?
 
-(Oh, while we're on that subject: if you're currently using Google Analytics or other cookie-planting stuff and you *don't* give your visitors that warning somehow---well, depending on where your visitors live, that could be "[a heap o' trouble, boy](https://www.macsmotorcitygarage.com/video-the-sheriff-of-dodge-country-1970/).”)
+(Oh, while we're on that subject: if you're currently using Google Analytics or other cookie-planting stuff and you *don't* give your visitors that warning somehow---well, depending on where your visitors live, that could be "[a heap o’ trouble, boy](https://www.macsmotorcitygarage.com/video-the-sheriff-of-dodge-country-1970/).”)
 
 Similarly, many ad-blocking extensions for browsers now routinely screen out Google Analytics (and other cookie-based trackers), so it's not only intrusive on those who *don't* block it but less effective for those who use it to track their sites. What this means is: the more tech-savvy your targeted audience, the less likely Google Analytics is giving you accurate data about their visits.
 
