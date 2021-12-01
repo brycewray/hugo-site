@@ -6,7 +6,7 @@ subtitle: "Gaining from Go"
 description: "An example of how you could use Hugo’s phenomenally fast, built-in bundling capabilities."
 author: Bryce Wray
 date: 2021-12-01T08:34:00-06:00
-#lastmod:
+#lastmod: 2021-12-01T09:28:00-06:00 #forgot to remove "md5" from example code
 #initTextEditor: Ulysses
 discussionId: "2021-12-bundling-javascript-hugo-esbuild"
 featured_image: matryoshka-dolls-ornament-3131097_4630x3126.jpg
@@ -65,7 +65,7 @@ Here’s the resulting `baseof.html`:
 
 ```go-html-template
 {{- $options := dict "targetPath" "js/bundle.js" -}}
-{{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint "md5" -}}
+{{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint -}}
 
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
