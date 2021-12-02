@@ -5,7 +5,7 @@ subtitle: "Building on others’ superb workarounds"
 description: "What to do until Tailwind CSS’s JIT mode works OoTB with Hugo."
 author: Bryce Wray
 date: 2021-11-01T12:08:00-05:00
-lastmod: 2021-12-02T12:27:00-06:00
+lastmod: 2021-11-22T18:46:00-06:00
 discussionId: "2021-11-making-tailwind-jit-work-hugo"
 featured_image: "2021-11-21_screenshot_TWCSS-on-Hugo_enlgd_3254x1564.png"
 featured_image_width: 3254
@@ -128,13 +128,11 @@ In pre-JIT times, the project in question used [Hugo Pipes](https://gohugo.io/hu
 That had worked just fine when the `package.json` scripting looked like this:
 
 ```json
-"scripts": {
-  "clean": "rm -rf public",
-  "start": "npm-run-all clean --parallel dev:*",
-  "dev:hugo": "hugo server",
-  "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
-  "prod:hugo": "hugo --gc --minify"
-}
+"clean": "rm -rf public",
+"start": "npm-run-all clean --parallel dev:*",
+"dev:hugo": "hugo server",
+"build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
+"prod:hugo": "hugo --gc --minify"
 ```
 
 .&nbsp;.&nbsp;. because, back then, PostCSS (**not** the Tailwind CLI) was taking the aforementioned `@import`-laden CSS, converting it as needed, and then letting Hugo Pipes finish the job.
@@ -146,16 +144,14 @@ Here's the `package.json` scripting that finally did work.[^rimraf]
 [^rimraf]: I substituted the [`rimraf` package](https://github.com/isaacs/rimraf) for `rm -rf` to provide greater cross-platform compatibility.
 
 ```json
-"scripts": {
-  "clean": "rimraf public && rimraf ./themes/twjit/assets/css/index/css",
-  "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel dev:*",
-  "build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
-  "prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit",
-  "dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit -w",
-  "dev:hugo": "hugo server",
-  "prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit --minify",
-  "prod:hugo": "hugo --gc --minify"
-}
+"clean": "rimraf public && rimraf ./themes/twjit/assets/css/index/css",
+"start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel dev:*",
+"build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
+"prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit",
+"dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit -w",
+"dev:hugo": "hugo server",
+"prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit --minify",
+"prod:hugo": "hugo --gc --minify"
 ```
 
 As for what's happening therein:
