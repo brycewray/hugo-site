@@ -84,7 +84,7 @@
           <h2 class="posts-Title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
           <p class="posts-Subtitle"><strong>{{ .Params.Subtitle | markdownify }}</strong></p>
 					<p class="posts-Description">
-						{{ .Description | markdownify }}
+						<em>{{ .Description | markdownify }}</em>
 					</p>
           <p class="posts-Dates">
             <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>

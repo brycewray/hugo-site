@@ -12,7 +12,7 @@
           <h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
           <p class="homePost-Subtitle">{{ .Params.Subtitle | markdownify }}</p>
           <p class="homePost-Description">
-            {{ .Description }}
+            <em>{{ .Description }}</em>
           </p>
           <p class="homePost-Dates">
             <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span class="pokey">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}
