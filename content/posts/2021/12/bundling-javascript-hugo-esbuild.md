@@ -3,7 +3,7 @@ layout: singlepost
 tags: post
 title: "Bundling JavaScript with Hugo and esbuild"
 subtitle: "Gaining from Go"
-description: "An example of how you could use Hugo’s phenomenally fast, built-in bundling capabilities."
+description: "An example of how you could use Hugo’s phenomenally fast, built‑in bundling capabilities."
 author: Bryce Wray
 date: 2021-12-01T08:34:00-06:00
 #lastmod: 2021-12-01T09:28:00-06:00 #forgot to remove "md5" from example code
