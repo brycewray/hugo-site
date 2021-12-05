@@ -73,13 +73,11 @@
     <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     -->
-    {{ with resources.Get "scss/index.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
-      <style nonce="DhcnhD3khTMePgXw">{{ .Content | safeCSS }}</style>
-    {{ end }}
+    <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>{{ (resources.Get "scss/index.scss" | toCSS | minify ).Content | safeCSS }}</style>
 
     {{- if hugo.IsProduction -}}
     <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://unwavering-reward.brycewray.com/script.js"{{ if eq .Site.Params.Host "CFP" -}} nonce="DhcnhD3khTMePgXw"{{- end -}} data-site="CSERHYIA" defer></script>
+    <script src="https://unwavering-reward.brycewray.com/script.js"{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}} data-site="CSERHYIA" defer></script>
     <!-- / Fathom -->
     {{- end -}}
 
@@ -88,7 +86,7 @@
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
 
     <noscript>
-      <style nonce="DhcnhD3khTMePgXw">
+      <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>
         .nScrHidden {
           display: none;
         }

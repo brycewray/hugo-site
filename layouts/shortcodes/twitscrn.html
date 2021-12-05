@@ -26,7 +26,7 @@
 {{- $nscClass := "containedImage twitter-tweet" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 
-<style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $imageUrl }});}</style>
+<style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $imageUrl }});}</style>
 <div class="{{ $divClass}} bg-center bg-no-repeat bg-cover" aspect-ratio="{{ $width }} / {{ $height }}"><a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
   <img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
   {{- range $i, $respSizes -}}
