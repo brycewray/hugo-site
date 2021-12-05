@@ -1,5 +1,5 @@
 ---
-layout: contact
+# using standard `_default/single.html` layout
 title: "Want to reach me?"
 description: "Here are several ways to get in contact."
 author: Bryce Wray

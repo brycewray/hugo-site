@@ -1,55 +1,7 @@
 {{ define "main" }}
-
   {{ partial "billboard.html" . }}
-  {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
-  {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
-  {{ $LQIPholder := "f_auto,q_1,w_20/" }}
-  {{/* $xFmPart1 := "f_auto,q_auto:eco,w_" */}}
-  {{- $xFmPart2 := ",x_0,z_1/" -}}
-  {{- $imgBd5 := md5 .Params.featured_image -}}
-
   <div class="container-narrower">
-    <!-- image and caption go here -->
-    {{- if .Params.featured_image }}
-      {{/* vars for range */}}
-      {{- $src:= .Params.featured_image -}}
-      {{- $width := .Params.featured_image_width -}}
-      <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ .Params.featured_image }});}</style>
-      <div class="relative imgB-{{ $imgBd5 }} bg-center bg-no-repeat bg-cover">
-        <img
-          class='nScrHidden w-full h-full aspect-[{{ .Params.featured_image_width }}/{{ .Params.featured_image_height }}] animate-fade'
-          src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ .Params.featured_image }}'
-          srcset="
-          {{- range $i, $respSizes -}}
-            {{- if ge $width . -}}
-              {{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w{{ if $i }}, {{ end -}}
-            {{- end -}}
-          {{- end -}}"
-          alt='{{ .Params.featured_image_alt }}'
-          width='{{ .Params.featured_image_width }}'
-          height='{{ .Params.featured_image_height }}'
-          aspect-ratio="{{ .Params.featured_image_width }} / {{ .Params.featured_image_height }}"
-          sizes="(min-width: 1024px) 100vw, 50vw"
-        />
-        <noscript>
-          <img
-            class="w-full h-full aspect-[{{ .Params.featured_image_width }}/{{ .Params.featured_image_height }}]"
-            src='https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_600,x_0,z_1/{{ .Params.featured_image }}'
-            alt='{{ .Params.featured_image_alt }}'
-            width='{{ .Params.featured_image_width }}'
-            height='{{ .Params.featured_image_height }}'
-            aspect-ratio="{{ .Params.featured_image_width }} / {{ .Params.featured_image_height }}"
-            sizes="(min-width: 1024px) 100vw, 50vw"
-          />
-        </noscript>
-      </div>
-      {{- if isset .Params "featured_image_caption" }}
-        <p class="FeatImgCaption">
-          {{ index .Params "featured_image_caption" | markdownify }}
-        </p>
-      {{- end -}}
-    {{- end -}}
-    <article>
+    <article class="article">
       {{ .Content }}
     </article>
   </div>

@@ -1,5 +1,4 @@
 ---
-layout: privacy
 title: "Privacy policy"
 description: "Information regarding this site and its vendors."
 author: Bryce Wray
