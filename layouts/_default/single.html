@@ -14,7 +14,7 @@
       {{/* vars for range */}}
       {{- $src:= .Params.featured_image -}}
       {{- $width := .Params.featured_image_width -}}
-      <style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ .Params.featured_image }});}</style>
+      <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ .Params.featured_image }});}</style>
       <div class="relative imgB-{{ $imgBd5 }} bg-center bg-no-repeat bg-cover">
         <img
           class='nScrHidden w-full h-full aspect-[{{ .Params.featured_image_width }}/{{ .Params.featured_image_height }}] animate-fade'
