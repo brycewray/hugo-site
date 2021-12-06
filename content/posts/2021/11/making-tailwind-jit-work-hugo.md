@@ -5,7 +5,7 @@ subtitle: "Building on others’ superb workarounds"
 description: "What to do until Tailwind CSS’s JIT mode works OoTB with Hugo."
 author: Bryce Wray
 date: 2021-11-01T12:08:00-05:00
-lastmod: 2021-11-22T18:46:00-06:00
+lastmod: 2021-12-06T12:11:00-06:00
 discussionId: "2021-11-making-tailwind-jit-work-hugo"
 featured_image: "2021-11-21_screenshot_TWCSS-on-Hugo_enlgd_3254x1564.png"
 featured_image_width: 3254
@@ -13,6 +13,8 @@ featured_image_height: 1564
 featured_image_alt: "Screen capture from Hugo showing HTML with Tailwind CSS styles"
 #featured_image_caption:
 ---
+
+{{% disclaimer %}}
 
 Earlier this year, the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) of [Tailwind CSS](https://tailwindcss.com)'s [just-in-time (JIT) mode](https://tailwindcss.com/docs/just-in-time-mode) was followed closely by the subsequent and deflating word that this cool feature wouldn't work with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). The Hugo team immediately started trying to fix that issue but, as of this writing, still hasn't been able to deliver a solution.
 
@@ -75,9 +77,6 @@ Here's one such weird thing I encountered, just so you can get the picture. In m
 But that approach, or anything remotely like it, just wouldn't fly in the workaround-equipped Hugo repo. Essentially, either (a.) Hugo couldn't get past the Tailwind-related part of the `package.json` scripts or (b.) Tailwind would ignore anything after the `@import 'tailwindcss/base';` statement. Either way, I was hosed.
 
 A few nights ago, I began to give it another try, and decided that this time I would stay with it until I'd wrestled the SOB to the mat. Having done so with only a *little* huffing and puffing, I'll now tell you how I made it work.
-
-**Time-saving note**: If you just want to see the code without worrying about my explanation thereof, below, check my [`hugo_site` repo](https://github.com/brycewray/hugo_site). When I'm building the site on Hugo, as is sometimes the case, that's its home repo. However, the `package.json` described below won't necessarily be there, depending on whether the repo is set for Tailwind or Sass.
-{.yellowBox}
 
 ## Filling in the gaps
 
