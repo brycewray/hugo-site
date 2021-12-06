@@ -1,4 +1,4 @@
 User-agent: *
-{{ if eq .Site.Params.SiteLive "yes" -}}Allow{{- else -}}Disallow{{- end }}: /
+{{ if .Site.Params.SiteLive -}}Allow{{- else -}}Disallow{{- end }}: /
 
 Sitemap: https://www.brycewray.com/sitemap.xml
