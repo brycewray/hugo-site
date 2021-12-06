@@ -10,7 +10,7 @@
     {{- block "main" . -}}{{- end }}
     </div>
     {{- partial "footer.html" . }}
-    <script {{ if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end }} src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
+    <script {{- if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end }} src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
     {{- if hugo.IsProduction -}}
       {{- if eq .Site.Params.Host "CFP" -}}
         <!-- Cloudflare Web Analytics -->
