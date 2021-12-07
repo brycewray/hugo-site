@@ -10,11 +10,11 @@
     {{- block "main" . -}}{{- end }}
     </div>
     {{- partial "footer.html" . }}
-    <script {{- if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end }} src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
+    <script {{ if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end }} src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
     {{- if hugo.IsProduction -}}
       {{- if eq .Site.Params.Host "CFP" -}}
         <!-- Cloudflare Web Analytics -->
-        <script defer nonce="DhcnhD3khTMePgXw" src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "36afbbd88c1b4b608a61683f9555fd48"}'>
+        <script nonce="DhcnhD3khTMePgXw" src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "36afbbd88c1b4b608a61683f9555fd48"}' defer>
         </script>
         <!-- End Cloudflare Web Analytics -->
       {{- end -}}
