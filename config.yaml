@@ -46,8 +46,9 @@ markup:
       noClasses: false
 
 minify:
-  html:
-    keepQuotes: true
+  tdewolff:
+    html:
+      keepQuotes: true
 
 outputFormats:
   json:
