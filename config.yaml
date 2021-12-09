@@ -45,6 +45,10 @@ markup:
       guessSyntax: true
       noClasses: false
 
+minify:
+  html:
+    keepQuotes: true
+
 outputFormats:
   json:
     baseName: "index"
