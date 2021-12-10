@@ -29,11 +29,13 @@
 <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $imageUrl }});}</style>
 <div class="{{ $divClass}} bg-center bg-no-repeat bg-cover" aspect-ratio="{{ $width }} / {{ $height }}"><a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
   <img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
-  {{- range $i, $respSizes -}}
-    {{- if ge $width . -}}
-      {{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $imageUrl }} {{ . }}w{{ if $i }}, {{ end -}}
+  {{- with $respSizes -}}
+    {{- range $i, $e := . -}}
+      {{- if ge $width . -}}
+        {{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $imageUrl }} {{ . }}w
+      {{- end -}}
     {{- end -}}
-  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" aspect-ratio="{{ $width }} / {{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" /></a>
+  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" /></a>
   <noscript>
     <a href="{{ $twitterUrl }}" target="_blank" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
   </noscript>

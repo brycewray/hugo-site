@@ -20,9 +20,11 @@
           class='nScrHidden w-full h-full aspect-[{{ .Params.featured_image_width }}/{{ .Params.featured_image_height }}] animate-fade'
           src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ .Params.featured_image }}'
           srcset="
-          {{- range $i, $respSizes -}}
-            {{- if ge $width . -}}
-              {{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w{{ if $i }}, {{ end -}}
+          {{- with $respSizes -}}
+            {{- range $i, $e := . -}}
+              {{- if ge $width . -}}
+                {{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+              {{- end -}}
             {{- end -}}
           {{- end -}}"
           alt='{{ .Params.featured_image_alt }}'
