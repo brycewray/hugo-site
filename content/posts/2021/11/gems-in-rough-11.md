@@ -5,7 +5,7 @@ subtitle: "Dueling announcements, CSP-allowed CSS, fun with LQIPs"
 description: "If you know what an “SSG” is, perhaps you’ll have interest in these items."
 author: Bryce Wray
 date: 2021-11-19T11:27:00-06:00
-lastmod: 2021-11-28T14:45:00-06:00
+lastmod: 2021-12-10T12:24:00-06:00
 discussionId: "2021-11-gems-in-rough-11"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
 featured_image_width: 7315
@@ -48,14 +48,14 @@ As for *why* I wanted that dynamically added style, read on.
 
 When [lazy-loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) images, I like to provide that *blur-up* effect you often see with [Gatsby](https://www.gatsbyjs.com), Next.js, and other platforms which utilize [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs). Essentially, you first provide a tiny version of the full image, expanded out to the full width of the `div` the image will occupy, thus producing a blurry starting item, and then fade in ("blur up") the full image as it loads. This avoids a blank spot during the load, yet also provides a pleasing effect in the interim.
 
-That's easily done by having the full image housed within a `div` whose background is that LQIP. This typically is done with inline styling which changes dynamically on a per-image basis. I had once implemented this via the site's `imgc.js` file, which works throughout the site as an [Eleventy](https://11ty.dev) [shortcode](https://11ty.dev/docs/shortcodes). However, I found that's a no-go with a tight CSP---and now you understand my interest in that new nonce-handling in the Cloudflare Worker, which allowed me to add the following capabilities to `imgc.js`:
+That's easily done by having the full image housed within a `div` whose background is that LQIP. This typically is done with inline styling which changes dynamically on a per-image basis. I had once implemented this via the site's `imgc` **shortcode**, whether in [Eleventy](https://11ty.dev/docs/shortcodes) or [Hugo](https://gohugo.io/content-management/shortcodes/). However, I found that's a no-go with a tight CSP---and now you understand my interest in that new nonce-handling in the Cloudflare Worker, which allowed me to add the following capabilities to `imgc`:
 
-- The [md5 package](https://github.com/pvorb/node-md5) generates a random hash of the image's file name.
+- Use of [MD5](https://en.wikipedia.org/wiki/MD5) generates a random hash of the image's file name.
 - There's now a dynamically generated CSS class named `imgB-` followed by the hash. The class has only one item, specifying the LQIP[^typoFix] as `background-image` for whatever uses the rule.
 - The wrapping `div` includes this class.
 
 [^typoFix]: Not the full image, as I erroneously stated in the initial publication of this post.
 
-The code for `imgc.js` is viewable on [my `eleventy_site` repo](https://github.com/brycewray/eleventy_site), specifically at [this link](https://github.com/brycewray/eleventy_site/blob/main/src/assets/utils/imgc.js). If you want to see the resulting HTML from how it works, use your browser's **View Source** capability[^notInsp] and see the code for this post's featured image. Refresh the page and you'll see that the `imgB-` rule's nonce value changes each time. That's the whole point, and it thus makes everything fine where the CSP's `style-src` portion is concerned.
+If you want to see the resulting HTML from how `imgc` works, use your browser's **View Source** capability[^notInsp] and see the code for this post's featured image. Refresh the page and you'll see that the `imgB-` rule's nonce value changes each time. That's the whole point, and it thus makes everything fine where the CSP's `style-src` portion is concerned.
 
 [^notInsp]: I say to use **View Source** rather than the Inspector because, on some browsers, using the Inspector won't show you the nonce value.
