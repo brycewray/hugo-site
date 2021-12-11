@@ -165,7 +165,7 @@ Here's the corresponding Go version for Hugo:
 {{- $stringtoRet | safeHTML -}}
 ```
 
-And, yes: further down, I **am** going to try to explain all that `.Scratch` stuff---although I must also point you to what pretty much is `.Scratch` canon, namely [Regis Philibert](https://regisphilibert.com)'s article about the subject, "[Hugo .Scratch explained](https://regisphilibert.com/blog/2017/04/hugo-scratch-explained-variable/)." How canonical is it? When you go to Hugo's own [documentation about `.Scratch`](https://gohugo.io/functions/scratch), it points you to that Philibert article so you can get "a detailed analysis"!
+And, yes: further down, I **am** going to try to explain all that `.Scratch` stuff---although I must also point you to what pretty much is `.Scratch` canon, namely [Régis Philibert](https://regisphilibert.com)'s article about the subject, "[Hugo .Scratch explained](https://regisphilibert.com/blog/2017/04/hugo-scratch-explained-variable/)." How canonical is it? When you go to Hugo's own [documentation about `.Scratch`](https://gohugo.io/functions/scratch), it points you to that Philibert article so you can get "a detailed analysis"!
 
 I'll also explain all those `%s` items and a few other seeming oddities.
 
@@ -199,7 +199,7 @@ You'll notice a little dot (`.`) here and there in the Go shortcode, especially 
 
 .&nbsp;.&nbsp;.&nbsp;means: "if this number (the **context** at this point in the loop) that I'm currently pulling from `$respSizes` is *greater than or equal to* (`ge` in Go) the image's `$width` as supplied by the Markdown."
 
-Once again, Regis Philibert is the Go-to guy, so to speak, when it comes to explaining Hugo's reliance on "The Dot" via his article, "[Hugo, the scope, the context and the dot](https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/)."
+Once again, Régis Philibert is the Go-to guy, so to speak, when it comes to explaining Hugo's reliance on "The Dot" via his article, "[Hugo, the scope, the context and the dot](https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/)."
 
 ### `.Scratch`
 
