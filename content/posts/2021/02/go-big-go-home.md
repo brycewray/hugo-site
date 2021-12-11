@@ -5,7 +5,7 @@ subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2021-11-23T12:55:00-06:00
+lastmod: 2021-12-11T13:00:00-06:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
