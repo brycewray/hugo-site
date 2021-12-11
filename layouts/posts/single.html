@@ -7,6 +7,8 @@
   {{/* $xFmPart1 := "f_auto,q_auto:eco,w_" */}}
   {{- $xFmPart2 := ",x_0,z_1/" -}}
   {{- $imgBd5 := md5 .Params.featured_image -}}
+  {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder .Params.featured_image -}}
+  {{- $LQIP_get := resources.Get $LQIPdata -}}
 
   <div class="container-narrower">
     <!-- image and caption go here -->
@@ -14,8 +16,8 @@
       {{/* vars for range */}}
       {{- $src:= .Params.featured_image -}}
       {{- $width := .Params.featured_image_width -}}
-      <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ .Params.featured_image }});}</style>
-      <div class="relative imgB-{{ $imgBd5 }} bg-center bg-no-repeat bg-cover">
+      <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;}</style>
+      <div class="relative imgB-{{ $imgBd5 }} bg-center">
         <img
           class='nScrHidden w-full h-full aspect-[{{ .Params.featured_image_width }}/{{ .Params.featured_image_height }}] animate-fade'
           src='{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ .Params.featured_image }}'
