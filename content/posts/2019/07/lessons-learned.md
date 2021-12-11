@@ -22,7 +22,7 @@ oldComments: |
       <p class="comment">Hi Bryce, I found a way to use both Git and cloud sync at the same time, for the same directory :- )<br />
       I <em>exclude</em> the <code>.git</code> directory from the cloud sync &mdash; that's why this works. (Otherwise I think the Git repo would &quot;self destruct&quot; itself, when <code>.git</code> internal changes from one laptop, attempts to sync with changes from another laptop :- ))</p>
       <p class="comment">I use Syncthing, here's my Syncthing config that excludes <code>.git</code> and other auto generated / downloaded things:</p>
-      <pre class="language-bash"><code class="language-bash">$ cat .stignore-synced 
+      <pre class="language-bash"><code class="language-bash">$ cat .stignore-synced
       // Add this single line to .stignore:
       // #include .stignore-synced
       .git/
@@ -38,7 +38,7 @@ oldComments: |
       <p class="comment">So, I have one synced root folder, and each laptop has its own sub folder, which is a Git repo with <code>.git/</code>excluded. And from laptop A, I work only in the <code>..-laptop-A</code> folder.  So as to not accidentally overwrite things I was working with on laptop B.</p>
       <p class="comment">... And every few days I Git-merge/rebase changes the two directories onto each other.</p>
       <p class="comment">Cheers</p>
-    
+
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-09-30</em></span></p>
       <p class="comment">Very interesting! Will check into this.</p>
       <p class="comment">(To other readers: this gentleman is the creator and developer of the Talkyard platform that powers these comments. If you have your own SSG-based site and need a way to provide comments, I highly recommend both Talkyard and this extremely helpful dev.)</p>
@@ -77,11 +77,11 @@ Well, I want to tell you: in my admittedly limited research, I found this  to be
 
 More often than not, they lack---and their developers show almost a nonchalance about the importance of---"smart" typography (*e.g.*, see [this](https://github.com/getzola/zola/issues/740) regarding the oddly Hugo-like [Zola](https://www.getzola.org) SSG). So, if *you* can put up with&nbsp;.&nbsp;.&nbsp;.
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif;  text-align: center;">goofy-lookin' &quot;punctuation&quot; like this</p>
+<p class="punctuationExample">goofy-lookin' &quot;punctuation&quot; like this</p>
 
 .&nbsp;.&nbsp;. as opposed to .&nbsp;.&nbsp;.
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
+<p class="punctuationExample">nice-lookin&rsquo; &ldquo;punctuation&rdquo; like this</p>
 
 .&nbsp;.&nbsp;. fine. I choose otherwise.
 
