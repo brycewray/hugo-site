@@ -6,7 +6,7 @@ subtitle: "Fewer HTTP requests are better"
 description: "It’s a marriage made in heaven: the Cloudinary free tier and Hugo Pipes’ new ability to grab remote items."
 author: Bryce Wray
 date: 2021-12-11T12:41:00-06:00
-#lastmod: 
+#lastmod: 2021-12-11T12:51:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2021-12-fetching-remote-stuff-hugo-0-90-plus"
 featured_image: dog-fetching-stick-6724085_5184x3456.jpg
@@ -29,7 +29,7 @@ And, lo and behold, it hit me this morning: this new ability by Hugo to fetch re
 
 So what, you say? Well, this is what: now, the shortcode could ***halve*** its image-related [HTTP requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) to my free [Cloudinary](https://cloudinary.com) account.[^2] [Since HTTP requests are render-blocking, it’s always better to have fewer of them](https://blog.hubspot.com/marketing/reduce-http-requests).
 
-You see, up to that day, the shortcode got each image’s LQIP by having Cloudinary generate a tiny, 20-pixel-wide version of the original image. While that worked well enough for client-side viewing, it also meant that, for *each* image, I was sending two HTTP requests to Cloudinary: one for the original image and one for the LQIP.[^3]
+You see, up to then, the shortcode got each image’s LQIP by having Cloudinary generate a tiny, 20-pixel-wide version of the original image. While that worked well enough for client-side viewing, it also meant that, for *each* image, I was sending two HTTP requests to Cloudinary: one for the original image and one for the LQIP.[^3]
 
 However, starting with Hugo 0.90.x, Hugo Pipes can go right out to Cloudinary, pull down that 20-pixel-wide image, and instantly translate it into Base64-encoded data that fits right into my HTML. Since this is all happening during the site-building process, visitors not only *don’t* encounter a slowdown in the image-handling but also *don’t* make that extra HTTP request for a separate file.
 
