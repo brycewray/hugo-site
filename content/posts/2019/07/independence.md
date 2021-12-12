@@ -6,7 +6,7 @@ subtitle: "Thirty-five years a Mac lover"
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
-lastmod: 2021-06-10T19:55:00-05:00
+lastmod: 2021-12-11T23:16:00-06:00
 discussionId: "2019-07-independence"
 featured_image: orig-mac--matt-mech-KH0o-C1Z7lU-unsplash_6000x4000.jpg
 featured_image_width: 6000
@@ -54,7 +54,7 @@ I'd never seen a computer mouse before. Up to this point, my entire experience w
 
 I think it was showing some demo program. I only vaguely remember seeing some [MacPaint](https://encyclopedia2.thefreedictionary.com/MacPaint) art on it; it was some fancy-looking car, I think. It may even have been digitized art. I just don't recall.
 
-But then I picked up the brochure: the [amazing, original Macintosh brochure](https://www.macobserver.com/tmo/article/Remembering_1984_With_An_Original_Mac_Brochure).
+But then I picked up the brochure: the [amazing, original Macintosh brochure](https://www.digibarn.com/collections/ads/apple-mac/index.htm).
 
 > *"Of the 235 million people in America, only a fraction can use a computer. Introducing Macintosh. For the rest of us.”*
 
