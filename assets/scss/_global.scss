@@ -79,9 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 strong, b {
-  font-weight: 675;
   @media (prefers-color-scheme: dark) {
-    font-weight: 625;
+    font-weight: 725;
   }
 }
 
