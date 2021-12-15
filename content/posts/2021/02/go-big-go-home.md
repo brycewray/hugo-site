@@ -5,7 +5,7 @@ subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2021-12-11T13:00:00-06:00
+lastmod: 2021-12-15T12:24:00-06:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
@@ -231,4 +231,4 @@ However, I do like how this shortcode came out.[^twitscrn] I'll never be an expe
 
 Perhaps I'll get lucky and, twisted or not, won't find myself regretting that "not sufficiently embarrassed" part.
 
-[^twitscrn]: Based on what I'd learned in this process, I also fixed/DRY-ed a very similar shortcode, `twitscrn.html`, that I use for bringing in Twitter tweets’ screen captures as per the site's [privacy policy](/privacy).
+[^twitscrn]: Based on what I'd learned in this process, I also fixed/DRY-ed a very similar shortcode, `twitscrn.html`, that I formerly used for bringing in Twitter tweets’ screen captures as per the site's [privacy policy](/privacy), prior to later reverting to bringing them only as static text.

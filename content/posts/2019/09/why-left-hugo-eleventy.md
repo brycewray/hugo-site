@@ -6,7 +6,7 @@ subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2021-10-17T12:30:00-05:00
+lastmod: 2021-12-15T12:25:00-06:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
@@ -213,17 +213,13 @@ I am sure that Gatsby and React adherents will hee-haw at the thought that littl
 
 ### It's pretty fast
 
-It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---but Eleventy's build times are impressive enough for me, and I expect this aspect will improve in time, [much as it did for Gatsby in going from v1 to v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).[^privacy]
-
-[^privacy]: The embedded tweets that formerly were in this part on the page are now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy).
+It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---but Eleventy's build times are impressive enough for me, and I expect this aspect will improve in time, [much as it did for Gatsby in going from v1 to v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
 While we're on the subject of speed: while I was working on this post, I saw this Leatherman tweet:
 
-{{< twitscrn imageUrl="Twitter_1169998370041208832.png" alt="Tweet from @zachleat, 2019-09-06: Which has a better First Meaningful Paint time? 1. a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets 2. a client rendered React site with exactly one tweet on it (Spoiler: @____lighthouse reports 8.5MB of HTML wins by about 200ms)" width="1182" height="704" twitterUrl="https://twitter.com/zachleat/status/1169998370041208832" >}}
+{{< tweet user="zachleat" id="1169998370041208832" >}}
 
-React. Hmm. Wonder whom he might be zinging there? Good job, sir. Given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
-
-[^tweetEase]: And I would be sorely remiss here if I didn't mention how **freaking easy** it is to embed tweets, Twitter cards, and Twitter timelines within Eleventy-generated content. With Gatsby, it's sufficiently fussy about JavaScript from elsewhere that you need one or more plugins---and sometimes they work and sometimes they don't. In my experience, it was mostly "don't." But, with Eleventy (as is true for Hugo), you just **paste in the embed code from Twitter** as the Internet gods intended.
+React. Hmm. Wonder whom he might be zinging there? Good job, sir. Given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.
 
 ## The way forward
 

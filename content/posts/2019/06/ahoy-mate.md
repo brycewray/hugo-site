@@ -6,7 +6,7 @@ subtitle: "Considering MailMate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
-lastmod: 2021-10-17T12:30:00-05:00
+lastmod: 2021-12-15T12:27:00-06:00
 discussionId: "2019-06-ahoy-mate"
 featured_image: "p-o-boxes--elizabeth-kay-9szCcOw4BWo-unsplash_3634x2725.jpg"
 featured_image_width: 3634
@@ -124,4 +124,4 @@ However, the answers were "No" and "No." The [changes in Apple Mail in Catalina]
 
 My tweet tonight says it all:
 
-{{< twitscrn imageUrl="Twitter_1138614802518020096.png" alt="Tweet by @BryceWrayTX, 2019-06-11: Bought a license for, and became a patron of, @mailmateapp. Very impressed with the software and the developer, as I made clear in my recent post" width="1182" height="1220" twitterUrl="https://twitter.com/BryceWrayTX/status/1138614802518020096" >}}
+{{< tweet user="BryceWrayTX" id="1138614802518020096" >}}

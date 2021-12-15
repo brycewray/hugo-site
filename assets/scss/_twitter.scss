@@ -1,11 +1,12 @@
-.tweet-bkgd, .twitter-tweet {
-  border-radius: 12px;
-  background-color: #fff;
-}
-
 .twitter-tweet {
   margin: 1rem auto 0 auto;
-  padding: 0.25rem;
+  padding: 0 1.5em 1em;
+  border-radius: 12px;
+  // background-color: #fff;
+  border: 2px solid $grey-1;
+  @media screen and (prefers-color-scheme: dark) {
+    border: 2px solid $grey-2;
+  }
 }
 
 .tweet-card {
