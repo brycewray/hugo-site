@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-11-01T07:32:00-05:00
+lastmod: 2021-12-17T11:39:00-06:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -174,7 +174,7 @@ Now, just build your site, and Eleventy Image will do its magic everywhere withi
 
 {{< imgc src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" width="3264" height="2448" >}}
 
-**Disclaimer**: Image is sourced from Cloudinary (without using Eleventy&nbsp;Image) whenever the site is built with a non-Eleventy&nbsp;SSG, **but** this does show the result of the generated&nbsp;code.
+**Disclaimer**: Image is sourced from Cloudinary (without using Eleventy&nbsp;Image) whenever the site is built with a non-Eleventy&nbsp;SSG, **but** this (other than the fade-in effect) does show the result of the generated&nbsp;code.
 {.imgcCaption}
 
 Of course, you'll want to get a sneak peek by running Eleventy in development mode and viewing your site locally, in case you need to adjust your site's CSS so each resulting image appears as you want.[^sizesInfo]
