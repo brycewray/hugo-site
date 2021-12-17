@@ -8,7 +8,7 @@
   {{- $xFmPart2 := ",x_0,z_1/" -}}
   {{- $imgBd5 := md5 .Params.featured_image -}}
   {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder .Params.featured_image -}}
-  {{- $LQIP_get := resources.Get $LQIPdata -}}
+  {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
 
   <div class="container-narrower">
     <!-- image and caption go here -->

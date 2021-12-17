@@ -35,7 +35,7 @@
 {{- $nscClass := "containedImage" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
-{{- $LQIP_get := resources.Get $LQIPdata -}}
+{{- $LQIP_get := resources.GetRemote $LQIPdata -}}
 
 <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;}</style>
 <div class="{{ $divClass }} bg-center" aspect-ratio="{{ $width }} / {{ $height }}">
