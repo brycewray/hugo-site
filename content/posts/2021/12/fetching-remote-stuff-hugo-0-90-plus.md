@@ -6,7 +6,7 @@ subtitle: "Fewer HTTP requests are better"
 description: "It’s a marriage made in heaven: the Cloudinary free tier and Hugo Pipes’ new ability to grab remote items."
 author: Bryce Wray
 date: 2021-12-11T12:41:00-06:00
-lastmod: 2021-12-17T07:26:00-06:00
+lastmod: 2021-12-18T10:17:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2021-12-fetching-remote-stuff-hugo-0-90-plus"
 featured_image: dog-fetching-stick-6724085_5184x3456.jpg
@@ -36,22 +36,21 @@ You see, up to then, the shortcode got each image’s LQIP by having Cloudinary 
 
 However, starting with Hugo 0.90.x, Hugo Pipes can go right out to Cloudinary, pull down that 20-pixel-wide image, and instantly translate it into Base64-encoded data that fits right into my HTML. Since this is all happening during the site-building process, visitors not only *don’t* encounter a slowdown in the image-handling but also *don’t* make that extra HTTP request for a separate file.
 
-Rather than bore you with the entire shortcode, given that I just got through doing that [a few posts ago](/posts/2021/11/go-big-go-home-sequel), I’ll simply show you the parts that changed.[^4]
+Rather than bore you with the entire shortcode, given that I just got through doing that [a few posts ago](/posts/2021/11/go-big-go-home-sequel), I’ll simply show you the parts that changed.[^simpler]
 
 ```go-html-template
 {{/* These two variables are new */}}
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
 
-<style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>.imgB-{{ $imgBd5 }} {background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;}</style>
-<div class="{{ $divClass }} bg-center" aspect-ratio="{{ $width }} / {{ $height }}">
+<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
 ```
 
 Here’s what’s going on:
 
 - The `$LQIPdata` variable declaration uses concatenation to supply the Cloudinary-based LQIP’s URL.
 - `$LQIP_get` is where the Hugo 0.90.x magic comes in, as the newly souped-up Hugo Pipes functionality uses `GetRemote` to pull that LQIP directly from Cloudinary.
-- In the `style` tag, `$LQIP_get.Content | base64Encode` converts the result of `$LQIP_get` into Base64-encoded data and uses it as the `style`’s `background`.[^5]
+- In the `div` element, `$LQIP_get.Content | base64Encode` converts the result of `$LQIP_get` into Base64-encoded data and uses it as the `div`’s `background`.[^shortcode]
 
 For something that I originally thought wouldn’t ring my chimes, this new power in Hugo Pipes turns out to be pretty frickin’ amazing. Whether I’ll find additional uses for it is unclear, but I already consider it a winner. And I can only imagine the cool stuff that it will enable for the real experts out there in the Hugo-verse.
 
@@ -59,6 +58,6 @@ For something that I originally thought wouldn’t ring my chimes, this new powe
 
 [^2]:	For more on how I started using Cloudinary’s generous free tier to host this site’s images, please see also my post, “[Transformed](/posts/2020/07/transformed).”
 
-[^4]:	You also may wish to refer to “[Gems in the rough #11](/posts/2021/11/gems-in-rough-11),” in which I explained the reason for that `style` stuff in the code segment.
+[^simpler]: This is simpler than what I originally put in this post because I’m now excluding some host-specific stuff that’s likely irrelevant to anybody else.
 
-[^5]:	If you compare this to the earlier version of the shortcode, please note that I’m using `background` here rather than the previous `background-image`. That’s because, this time, the HTML is calling to data rather than an image file. Also, I put the `background-size` and `background-repeat` information in the `style`, rather than using previously set utility classes, because—well, it just worked better that way, and for reasons I honestly don’t know.
+[^shortcode]:	If you compare this to the earlier version of the shortcode, please note that I’m using `background` here rather than the previous `background-image`. That’s because, this time, the HTML is calling to data rather than an image file. Also, I put the `background-size` and `background-repeat` information in the element, rather than using previously set utility classes, because—well, it just worked better that way, and for reasons I honestly don’t know. (**Update, 2021-12-18**: This now uses inline styling rather than the more convoluted way I did it originally, and thus would run afoul of a truly strict [Content Security Policy](https://content-security-policy.com).)
