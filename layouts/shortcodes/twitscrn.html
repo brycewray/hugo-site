@@ -41,7 +41,7 @@
         {{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $imageUrl }} {{ . }}w
       {{- end -}}
     {{- end -}}
-  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" /></a>
+  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" aspect-ratio="{{ $width }} / {{ $height }}" /></a>
   <noscript>
     <a href="{{ $twitterUrl }}" target="_blank" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
   </noscript>
