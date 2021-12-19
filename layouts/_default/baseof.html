@@ -1,6 +1,3 @@
-{{- $options := dict "targetPath" "js/bundle.js" -}}
-{{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint -}}
-
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
   {{ partial "head.html" . }}
@@ -10,7 +7,6 @@
     {{- block "main" . -}}{{- end }}
     </div>
     {{- partial "footer.html" . }}
-    <script {{ if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end }} src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
     {{- if hugo.IsProduction -}}
       {{- if eq .Site.Params.Host "CFP" -}}
         <!-- Cloudflare Web Analytics -->
