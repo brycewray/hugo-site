@@ -6,14 +6,14 @@ subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."
 author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
-lastmod: 2020-02-04T07:20:00-06:00
+#lastmod: 2020-02-04T07:20:00-06:00
 discussionId: "2020-01-streamers-party"
-featured_image: "streaming-tv-remote-control-3914155_7360x4912.jpg"
-featured_image_width: 7360
-featured_image_height: 4912
-featured_image_alt: "A hand holding a remote control for streaming device"
+featured_image: streaming_glenn-carstens-peters-EOQhsfFBhRk-unsplash_4019x2674.jpeg
+featured_image_width: 4019
+featured_image_height: 2674
+featured_image_alt: "Streaming video concept: closeup of a hand holding a streaming video remote control in front of a blurred-out television set"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ncassullo-6121332/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3914155">ncassullo</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3914155">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://unsplash.com/@glenncarstenspeters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Glenn Carstens-Peters</a>; <a href="https://unsplash.com/s/photos/streaming-video?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).
