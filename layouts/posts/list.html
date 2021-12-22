@@ -87,10 +87,10 @@
 						<em>{{ .Description | markdownify }}</em>
 					</p>
           <p class="posts-Dates">
-            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
+            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{/*
             {{- if ne .PublishDate .Lastmod }}
             <br /><span class="eightyFive">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>
-            {{- end }}
+            {{- end }} */}}
           </p>
           <p class="legal">&nbsp;</p>
 				</div>

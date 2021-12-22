@@ -13,6 +13,14 @@ pygmentsUseClasses: true
 
 Paginate: 5 # so five posts will appear on each page from "/posts"
 
+enableGitInfo: true
+
+frontmatter:
+  lastmod: # https://gohugo.io/getting-started/configuration/#configure-dates
+  - lastmod
+  - :git
+  - :fileModTime
+
 params:
   Domain: "brycewray.com"
   Author: "Bryce Wray"

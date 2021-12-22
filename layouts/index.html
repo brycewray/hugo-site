@@ -15,7 +15,7 @@
             <em>{{ .Description }}</em>
           </p>
           <p class="homePost-Dates">
-            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span class="pokey">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}
+            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{/*{{- if ne .PublishDate .Lastmod }}<br /><span class="pokey">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}*/}}
           </p>
         </div>
         {{- end }}
