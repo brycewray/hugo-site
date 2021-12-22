@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
 #lastmod: 2020-02-04T07:20:00-06:00
 discussionId: "2020-01-streamers-party"
-featured_image: streaming_glenn-carstens-peters-EOQhsfFBhRk-unsplash_4019x2674.jpeg
+featured_image: streaming_glenn-carstens-peters-EOQhsfFBhRk-unsplash_4019x2674.jpeg #NOTE: Never change that filename to ".jpg"
 featured_image_width: 4019
 featured_image_height: 2674
 featured_image_alt: "Streaming video concept: closeup of a hand holding a streaming video remote control in front of a blurred-out television set"
