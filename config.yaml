@@ -20,6 +20,7 @@ frontmatter:
   - lastmod
   - :git
   - :fileModTime
+  # This sequence will use **manual** `lastmod`s first (which is not the default)
 
 params:
   Domain: "brycewray.com"
