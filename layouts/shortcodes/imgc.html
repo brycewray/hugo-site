@@ -39,8 +39,17 @@
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
+{{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
+{{- $CFPstyle := printf "%s%s%s%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat; aspect-ratio: " $width " / " $height -}}
 
-<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
+{{- if eq .Site.Params.Host "CFP" -}}
+  <style nonce="DhcnhD3khTMePgXw">
+    .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
+  </style>
+  <div class="relative imgB-{{ $imgBd5 }} bg-center">
+ {{- else -}}
+  <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
+{{- end -}}
   <img class="{{ $imgClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
   {{- with $respSizes -}}
     {{- range $i, $e := . -}}
