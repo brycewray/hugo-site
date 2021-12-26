@@ -5,7 +5,7 @@ subtitle: "Another swift dip into nerddom"
 description: "Speedier CFP builds, HTML sitemaps."
 author: Bryce Wray
 date: 2021-12-26T10:07:00-06:00
-#lastmod:
+#lastmod: 2021-12-26T10:56:00-06:00
 #initTextEditor: iA Writer
 discussionId: "2021-12-gems-in-rough-12"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -29,10 +29,11 @@ Then, a few days ago, I learned on the [Cloudflare Workers Developers Discord co
 
 [^Workers]: CFP runs "atop" [Cloudflare Workers](https://workers.cloudflare.com).
 
-> Very impressed with what I'm seeing. Did minor edits to each repo and pushed; each build environment initialization generally took about two seconds, not minutes, and here's how each overall build process compared with simultaneous processes (same push in each case) on Vercel:
+> Very impressed with what I'm seeing. Did minor edits to each repo and pushed; each build environment initialization generally took about two **seconds**, not minutes, and here's how each overall build process compared with simultaneous processes (same push in each case) on Vercel:
 > 1. *[Repo #1, the [Hugo](https://gohugo.io)-based version of this site]* — Vercel: 17 seconds; CFP: 38 seconds.
 > 2. *[Repo #2, the [Eleventy](https://11ty.dev)-based version of this site]* — Vercel: 36 seconds; CFP: 51 seconds.
 > 3. *[Repo #3, an Eleventy-based project I use to test multiple hosting vendors]* — Vercel: 49 seconds; CFP: 49 seconds.
+>
 > This is more like what we were seeing with CFP months ago. 👍  Hope this test goes super-well for everyone else and the fix goes GA ASAP.[^GAterm]
 
 [^GAterm]: *GA*, in this case, means *general availability*.
