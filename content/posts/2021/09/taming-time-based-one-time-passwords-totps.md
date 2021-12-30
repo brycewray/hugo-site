@@ -70,7 +70,7 @@ Incidentally, here’s a little more about Microsoft Authenticator in particular
 
 I’ll offer one final caution regarding Microsoft Authenticator. This comes into play if you do have to use it *and* for some reason end up deleting it and restoring from your previous backup. If so, you must do that at **one specific spot** in the app reinstallation process or else you’ll have to re-enter all your TOTPs:
 
-{{< imgc src="MS_Authenticator_recovery_prompt_annotated_1125x2436.png" alt="Annotated screen capture from Microsoft Authenticator application setup process" height="1125" width="2436" >}}
+{{< imgc src="MS_Authenticator_recovery_prompt_annotated_1125x2436.png" alt="Annotated screen capture from Microsoft Authenticator application setup process" width="1125" height="2436" >}}
 
 This is the only screen in the Microsoft Authenticator setup process where you have a chance to recover previously backed-up TOTPs (annotation added, of course).
 {.imgcCaption}
