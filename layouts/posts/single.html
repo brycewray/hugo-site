@@ -1,8 +1,55 @@
 {{ define "main" }}
 
   {{ partial "billboard.html" . }}
+  {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+  {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+  {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
+  {{- $xFmPart1 := "f_auto,q_auto,w_" -}}
+  {{- $xFmPart2 := ",x_0,z_1/" -}}
+  {{- $imgBd5 := md5 .Params.featured_image -}}
+  {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder .Params.featured_image -}}
+  {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
+  {{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
+  {{- $CFPstyle := printf "%s%s%s%d%s%d" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat; aspect-ratio: " .Params.featured_image_width " / " .Params.featured_image_height -}}
 
   <div class="container-narrower">
+    <!-- image and caption go here -->
+    {{- if .Params.featured_image }}
+      {{/* vars for range */}}
+      {{- $src := .Params.featured_image -}}
+      {{- $width := .Params.featured_image_width -}}
+      {{- if eq .Site.Params.Host "CFP" -}}
+      <style nonce="DhcnhD3khTMePgXw">
+        .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
+      </style>
+        <div class="relative imgB-{{ $imgBd5 }} bg-center">
+      {{- else -}}
+        <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ .Params.featured_image_width }} / {{ .Params.featured_image_height }}">
+      {{- end -}}
+        <img
+          class='w-full h-full animate-fade'
+          src='{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ .Params.featured_image }}'
+          srcset="
+          {{- with $respSizes -}}
+            {{- range $i, $e := . -}}
+              {{- if ge $width . -}}
+                {{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{- $xFmPart1 -}}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}"
+          alt='{{ .Params.featured_image_alt }}'
+          width='{{ .Params.featured_image_width }}'
+          height='{{ .Params.featured_image_height }}'
+          aspect-ratio="{{ .Params.featured_image_width }} / {{ .Params.featured_image_height }}"
+          sizes="(min-width: 1024px) 100vw, 50vw"
+        />
+      </div>
+      {{- if isset .Params "featured_image_caption" }}
+        <p class="FeatImgCaption">
+          {{ index .Params "featured_image_caption" | markdownify }}
+        </p>
+      {{- end -}}
+    {{- end -}}
     <article class="article">
       {{ .Content }}
       <div class="contactBtn">
