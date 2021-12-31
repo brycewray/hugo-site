@@ -4,7 +4,7 @@
   {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
   {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
   {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
-  {{- $xFmPart1 := "f_auto,q_auto,w_" -}}
+  {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
   {{- $xFmPart2 := ",x_0,z_1/" -}}
   {{- $imgBd5 := md5 .Params.featured_image -}}
   {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder .Params.featured_image -}}
@@ -28,12 +28,12 @@
       {{- end -}}
         <img
           class='w-full h-full animate-fade'
-          src='{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ .Params.featured_image }}'
+          src='{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ .Params.featured_image }}'
           srcset="
           {{- with $respSizes -}}
             {{- range $i, $e := . -}}
               {{- if ge $width . -}}
-                {{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+                {{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
               {{- end -}}
             {{- end -}}
           {{- end -}}"

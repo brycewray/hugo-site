@@ -25,7 +25,7 @@
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
-{{- $xFmPart1 := "f_auto,q_auto,w_" -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
@@ -50,11 +50,11 @@
  {{- else -}}
   <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
 {{- end -}}
-  <img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+  <img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
   {{- with $respSizes -}}
     {{- range $i, $e := . -}}
       {{- if ge $width . -}}
-        {{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+        {{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
       {{- end -}}
     {{- end -}}
   {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
