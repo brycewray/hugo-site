@@ -1,33 +1,30 @@
 {{ define "main" }}
 
-  {{ partial "billboard.html" . }}
-  {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
-  {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
-  {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
-  {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
-  {{- $xFmPart2 := ",x_0,z_1/" -}}
-  {{- $imgBd5 := md5 .Params.featured_image -}}
-  {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder .Params.featured_image -}}
-  {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
-  {{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
-  {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
-
-  <div class="container-narrower">
-    <!-- image and caption go here -->
-    {{- if .Params.featured_image }}
-      {{/* vars for range */}}
-      {{- $src := .Params.featured_image -}}
-      {{- $width := .Params.featured_image_width -}}
+  {{- if .Params.featured_image -}}
+    {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+    {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+    {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
+    {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+    {{- $xFmPart2 := ",x_0,z_1/" -}}
+    {{- $imgBd5 := md5 .Params.featured_image -}}
+    {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder .Params.featured_image -}}
+    {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
+    {{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
+    {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
+    {{/* vars for range */}}
+    {{- $src := .Params.featured_image -}}
+    {{- $width := .Params.featured_image_width -}}
+    <div class="background-hero-image-div"><!-- beginning, overarching hero image div -->
       {{- if eq .Site.Params.Host "CFP" -}}
       <style nonce="DhcnhD3khTMePgXw">
-        .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
+      .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
       </style>
-        <div class="relative imgB-{{ $imgBd5 }} bg-center">
+      <div class="background-hero-div imgc-div imgB-{{ $imgBd5 }}">
       {{- else -}}
-        <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;">
+      <div class="background-hero-div imgc-div" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;">
       {{- end -}}
         <img
-          class='w-full h-full animate-fade'
+          class='imgCover hero animate-fade'
           src='{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ .Params.featured_image }}'
           srcset="
           {{- with $respSizes -}}
@@ -44,13 +41,45 @@
           sizes="(min-width: 1024px) 100vw, 50vw"
         />
       </div>
-      {{- if isset .Params "featured_image_caption" }}
-        <p class="FeatImgCaption">
-          {{ index .Params "featured_image_caption" | markdownify }}
-        </p>
-      {{- end -}}
+      <div class="background-hero-wrapper-div">
+        <div class="background-hero-title-block">
+          <h1 class="background-hero-title-text">
+            {{ .Title | markdownify }}
+          </h1>
+          <h2 class="background-hero-subtitle-text">
+            {{- if .Params.Subtitle -}}
+            {{ .Params.Subtitle | markdownify }}
+            {{- else }}
+            &nbsp;
+            {{- end }}
+          </h2>
+          <p class="background-hero-description-text">
+            {{ .Params.Description | markdownify }}
+          </p>
+          <p class="background-hero-p-text">
+            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
+            <span class="pokey">
+              {{- if ne .PublishDate .Lastmod }}
+              Last modified {{ .Lastmod.Format "January 2, 2006" }}
+              {{- else }}
+              &nbsp;
+              {{- end }}
+            </span>
+          </p>
+        </div>
+        {{- if isset .Params "featured_image_caption" }}
+          <p class="FeatImgCaption">
+            {{ index .Params "featured_image_caption" | markdownify }}
+          </p>
+        {{- end -}}
+      </div>
+    </div><!-- end, overarching hero image div -->
+    {{- else -}}
+      {{ partial "billboard.html" . }}
     {{- end -}}
-    <article class="article">
+
+    <div class="container-narrower">
+      <article class="article">
       {{ .Content }}
       <div class="contactBtn">
         <button>
