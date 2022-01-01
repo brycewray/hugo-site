@@ -1,7 +1,7 @@
 // not using @use here until Hugo supports it
 @import 'reset';
-// @import 'fonts_Inter';
-@import 'fonts_PublicSans';
+@import 'fonts_Inter';
+// @import 'fonts_PublicSans';
 @import 'variables';
 @import 'twitter';
 @import 'chroma_native_tweaked';
@@ -18,7 +18,7 @@
 @import 'nav';
 @import 'lazyload';
 @import 'lazypic';
-// @import 'intervf'; // for Inter VF's weird obliquing stuff
+@import 'intervf'; // for Inter VF's weird obliquing stuff
 // @import 'ffoxobliq'; // if using system font stack
 @import 'heroimg';
 @import 'sitemaphtml';
