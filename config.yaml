@@ -3,7 +3,7 @@ languageCode: en-us
 title: BryceWray.com
 #theme: scss-thoreau
 
-buildFuture: true # so I don't have to play with dates while developing
+#buildFuture: true # so I don't have to play with dates while developing
 
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
