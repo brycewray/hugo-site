@@ -99,6 +99,7 @@
     display: none; // appears only on wider screens
     @media screen and (min-width: $bkpt_lg) {
       display: block;
+      margin-bottom: 1em;
       padding-top: 0.25em;
       padding-right: 15%;
       padding-left: 5%;
@@ -113,6 +114,7 @@
     font-size: $slightlybig;
     line-height: 1;
     padding-top: 1em;
+    padding-bottom: 0.5em;
     color: #fff;
     text-shadow: 4px 4px 2px #000;
     text-align: center;
