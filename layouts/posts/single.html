@@ -54,7 +54,7 @@
             {{- end }}
           </h2>
           <p class="background-hero-description-text">
-            {{ .Params.Description | markdownify }}
+            <em>{{ .Params.Description | markdownify }}</em>
           </p>
           <p class="background-hero-p-text">
             <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
