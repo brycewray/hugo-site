@@ -31,7 +31,11 @@
     <meta property="og:description" content="{{ .Params.Description }}" />
     <meta property="og:url" content="{{ .Page.Permalink }}" />
     <meta name="og:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ if .Params.Featured_image }}{{ .Params.Featured_Image }}{{ else }}{{ $fallbackImg }}{{ end }}" />
+    {{ if .Params.Ext_canonical -}}
+    <link rel="canonical" href=" {{ .Params.Ext_canonical }}" />
+    {{- else -}}
     <link rel="canonical" href="{{ .Page.Permalink }}" />
+    {{- end }}
     {{- end -}}
 
     {{/* Twitter meta */}}
