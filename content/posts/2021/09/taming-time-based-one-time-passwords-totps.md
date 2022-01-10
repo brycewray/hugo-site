@@ -6,7 +6,7 @@ subtitle: "It’s (mostly) all in the apps"
 description: "A few tips on managing multi-factor authentication—specifically, TOTPs."
 author: Bryce Wray
 date: 2021-09-20T10:30:00-05:00
-#lastmod:
+lastmod: 2022-01-10T07:55:00-06:00
 discussionId: "2021-09-taming-time-based-one-time-passwords-totps"
 featured_image: pocket-watch-2958127_2500x1300.jpg
 featured_image_width: 2500
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/piro4d-2707530/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2958127">PIRO4D</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2958127">Pixabay</a></span>
 ---
 
-While I spend a lot of my time here regaling you with content about static site generators, in recent weeks I’ve shared a [couple](/posts/2021/06/two-paths-password-management) of [posts](/posts/2021/08/1Password-hits-fan) about password management apps. Today, I want to dig a little deeper into that subject with some words about an equally important aspect of managing your online security: [multi-factor authentication (MFA)](https://www.nist.gov/itl/applied-cybersecurity/tig/back-basics-multi-factor-authentication), which is also sometimes called two-factor authentication (2FA).
+While I spend a lot of my time here regaling you with content about static site generators, in recent weeks I’ve shared a [couple](/posts/2021/06/two-paths-password-management) of [posts](/posts/2021/08/1Password-hits-fan) about password management apps. Today, I want to dig a little deeper into that subject with some words about an equally important aspect of managing your online security: [multi-factor authentication (MFA)](https://www.nist.gov/blogs/cybersecurity-insights/back-basics-whats-multi-factor-authentication-and-why-should-i-care), which is also sometimes called two-factor authentication (2FA).
 
 In those aforementioned posts, I only briefly touched on the MFA-related subject of *time-based one-time passwords (TOTPs)* and how to manage them, so I thought I’d correct that now. After all, there’s no *time* like the present. (See what I did there?)
 
