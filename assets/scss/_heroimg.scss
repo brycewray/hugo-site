@@ -8,13 +8,13 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 80vh;
-    max-height: 80vh;
-    min-height: 80vh;
+    height: 85vh;
+    max-height: 85vh;
+    min-height: 85vh;
     @media screen and (min-width: $bkpt_md) {
-      height: 85vh;
-      max-height: 85vh;
-      min-height: 85vh;
+      height: 90vh;
+      max-height: 90vh;
+      min-height: 90vh;
     }
     @media screen and (min-width: $bkpt_xl) {
       height: 100vh;
