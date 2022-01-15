@@ -207,4 +207,11 @@ hr.paginatorBottom {
   }
 }
 
+.arrowStop {
+  color: $grey-1;
+  @media (prefers-color-scheme: dark) {
+    color: $grey-2-dark-mode;
+  }
+}
+
 // === end, posts and post lists
