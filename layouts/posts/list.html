@@ -37,42 +37,42 @@
         <!-- First page. -->
         {{ if ne $paginator.PageNumber 1 }}
           <a class="icon" aria-label="First page" href="{{ $paginator.First.URL }}">
-           {{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
+            &#9664;&#9664;
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          {{ partial "svgFirstPageIcon.html" . }}{{ partial "svgFirstPageIcon.html" }}
+          &#9664;&#9664;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
         <!-- Previous page. -->
         {{ if $paginator.HasPrev }}
           <a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page">
-            {{ partial "svgPrevPageIcon.html" . }}
+            &#9664;
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          {{ partial "svgFirstPageIcon.html" . }}
+          &#9664;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Next page. -->
         {{ if $paginator.HasNext }}
           <a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page">
-            {{ partial "svgNextPageIcon.html" . }}
+            &#9654;
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          {{ partial "svgLastPageIcon.html" . }}
+          &#9654;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Last page. -->
         {{ if ne $paginator.PageNumber $paginator.TotalPages }}
           <a class="icon" aria-label="Last page" href="{{ $paginator.Last.URL }}">
-            {{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
+            &#9654;&#9654;
           </a>
         {{ else }}
-          {{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}
+          &#9654;&#9654;
         {{ end }}
 
       </p><!-- .pagination -->
@@ -105,42 +105,42 @@
         <!-- First page. -->
         {{ if ne $paginator.PageNumber 1 }}
           <a class="icon" aria-label="First page" href="{{ $paginator.First.URL }}">
-           {{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
+            &#9664;&#9664;
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          {{ partial "svgFirstPageIcon.html" . }}{{ partial "svgFirstPageIcon.html" }}
+          &#9664;&#9664;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
         <!-- Previous page. -->
         {{ if $paginator.HasPrev }}
           <a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page">
-            {{ partial "svgPrevPageIcon.html" . }}
+            &#9664;
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          {{ partial "svgFirstPageIcon.html" . }}
+          &#9664;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Next page. -->
         {{ if $paginator.HasNext }}
           <a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page">
-            {{ partial "svgNextPageIcon.html" . }}
+            &#9654;
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          {{ partial "svgLastPageIcon.html" . }}
+          &#9654;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Last page. -->
         {{ if ne $paginator.PageNumber $paginator.TotalPages }}
           <a class="icon" aria-label="Last page" href="{{ $paginator.Last.URL }}">
-            {{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
+            &#9654;&#9654;
           </a>
         {{ else }}
-          {{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}
+          &#9654;&#9654;
         {{ end }}
 
       </p><!-- .pagination -->
