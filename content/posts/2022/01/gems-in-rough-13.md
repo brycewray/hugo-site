@@ -5,7 +5,7 @@ subtitle: "Different choices on CSS and AVIFs"
 description: "Why I’ve recently backtracked on configurations for CSS and image-handling."
 author: Bryce Wray
 date: 2022-01-04T13:09:00-06:00
-#lastmod:
+lastmod: 2022-01-14T22:03:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-01-gems-in-rough-13"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -30,6 +30,9 @@ Unfortunately, this didn’t work so well with the [long-known](https://arstechn
 In such instances, I couldn’t realistically expect my Safari-using visitors to hassle with manually dumping their browsers’ caches, nor did I want to execute a *host*-side cache dump.[^2] Either would resolve the issue each time it arose, but neither was practical.
 
 The bottom line: I’m once again using internal CSS here and probably will keep doing so indefinitely, since I suspect there’s zero likelihood for the foreseeable future that Apple will stop requiring Webkit for iOS browsers.
+
+**Update, 2022-01-14**: Well, as it turned out, "indefinitely" was pushing it a bit. After a few days of what one might call "[CLS](https://web.dev/cls/) hell" whenever one goes from one page to another within the site, due to web fonts’ being loaded anew on each page, I reverted the site to **external** CSS. (Sigh.)
+{.yellowBox}
 
 ## A wave-off on AVIFs
 
