@@ -97,8 +97,10 @@
   }
   &-description-text {
     display: none; // appears only on wider screens
-    @media screen and (min-width: $bkpt_lg) {
+    @media screen and (min-width: $bkpt_md) {
       display: block;
+    }
+    @media screen and (min-width: $bkpt_lg) {
       margin-bottom: 1em;
       padding-top: 0.25em;
       padding-right: 15%;
