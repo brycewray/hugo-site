@@ -18,7 +18,7 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-In case you haven't yet seen "[Transformed](/posts/2020/07/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
+In case you haven't yet seen "[Transformed](/posts/2020/07/transformed/)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 
 It let me **return to [Netlify](https://netlify.com)**, slightly over a month after leaving.
 
@@ -32,7 +32,7 @@ Here's a lame attempt to explain.
 
 A reporter covering the 1863 National Cemetery dedication where Abraham Lincoln delivered the Gettyburg Address likened the [two-hour speech preceding Lincoln's two-minute classic](https://www.businessinsider.com/edward-everett-also-spoke-at-gettysburg-convention-2013-11) to "Greek sculpture---beautiful, but cold as ice." Well, for reasons hard to put into words, I find that comment vaguely applicable to a comparison between Vercel and Netlify.
 
-Vercel's free tier is technically superior to Netlify's in most ways that matter but, at least for me, the experience just didn't have the same *feel*. Hey, I'm the guy who [brought back hero images](/posts/2020/05/thousand-words-indeed) simply because *I missed seeing them*, their technical and logistical "costs" notwithstanding; so would you expect any more of me?
+Vercel's free tier is technically superior to Netlify's in most ways that matter but, at least for me, the experience just didn't have the same *feel*. Hey, I'm the guy who [brought back hero images](/posts/2020/05/thousand-words-indeed/) simply because *I missed seeing them*, their technical and logistical "costs" notwithstanding; so would you expect any more of me?
 
 Anyway: once I had completed the transition from build-time image processing to Cloudinary, and could see that the average build time was now drastically and permanently[^EleventyBuild] shorter, I suddenly realized that there no longer was any reason I couldn't go back to Netlify if I wanted.
 
@@ -40,7 +40,7 @@ Anyway: once I had completed the transition from build-time image processing to 
 
 First, I had to make sure I *did* want it.
 
-I created a generic test site (an even more scaled-down version of the [Eleventy starter set I recently posted](/posts/2020/07/beginners-luck)) and deployed its contents to all four hosts I mentioned in the original post: Vercel, Netlify, [Render](https://render.com), and [Firebase](https://firebase.google.com). With absolutely identical content on all four, I then could easily run various tests to compare them once again.
+I created a generic test site (an even more scaled-down version of the [Eleventy starter set I recently posted](/posts/2020/07/beginners-luck/)) and deployed its contents to all four hosts I mentioned in the original post: Vercel, Netlify, [Render](https://render.com), and [Firebase](https://firebase.google.com). With absolutely identical content on all four, I then could easily run various tests to compare them once again.
 
 As with my pre-Vercel testing, the process of elimination soon reduced the choice to Vercel *vs.* Netlify. (Render had some impressive results but, as was true the first time, fell short on some other items that I'm sure will get fixed in time. Firebase is still geekily interesting but, I suspect, is an afterthought to Google where static sites are concerned; and its performance seemed erratic in my latest tests; so it didn't last long in the comparison.)
 
@@ -52,5 +52,5 @@ Of course, switching back from Vercel to Netlify involved some fiddling, [DNS](h
 
 As a result, the original post's title---"Goodbye, hello"---turned out to be a little more nuanced than I'd originally intended. However things turned out, I am happy to be back within Netlify's "old" but comfy confines and no longer watching its bustling, friendly community from the outside, remembering all too fondly how nice it felt to be even an insignificant part of it.
 
-**Note**: [To be continued](/posts/2020/08/goodbye-hello-part-3).
+**Note**: [To be continued](/posts/2020/08/goodbye-hello-part-3/).
 {.yellowBox}

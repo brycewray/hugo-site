@@ -18,13 +18,13 @@ featured_image_caption: |
 
 This began as a very different post. Then I did some research that changed my mind.
 
-It all started innocently enough last Sunday, when I decided to post this site's first-ever [privacy policy](/privacy). It started out as a very short statement of how this site **doesn't track you**. I felt that to be a safe position, particularly since I recently [adopted Fathom Analytics](/posts/2020/06/fathom-analytics-count-on-it) in no small part because of its privacy-protecting, cookie-less orientation.
+It all started innocently enough last Sunday, when I decided to post this site's first-ever [privacy policy](/privacy). It started out as a very short statement of how this site **doesn't track you**. I felt that to be a safe position, particularly since I recently [adopted Fathom Analytics](/posts/2020/06/fathom-analytics-count-on-it/) in no small part because of its privacy-protecting, cookie-less orientation.
 
 But later in the week, things got more complicated. You see, I had reinstated [Google Fonts](https://fonts.google.com) because, well, I just preferred how my site looked with web fonts than without it. I figured I didn't have to think about it any longer.
 
 That was *before* I learned that my bent toward privacy protection didn't square with the use of Google Fonts---*i.e.*, if you're serving those fonts *from* Google (as I was doing) rather than their being self-hosted.
 
-As I'd mentioned in [a recent post](/posts/2020/07/chasing-100-tips-optimizing-website), there was a technical reason why I was letting Google serve the typefaces rather than handling it through self-hosting, even though the former can cause performance issues:
+As I'd mentioned in [a recent post](/posts/2020/07/chasing-100-tips-optimizing-website/), there was a technical reason why I was letting Google serve the typefaces rather than handling it through self-hosting, even though the former can cause performance issues:
 
 > When you load them off Google Fonts, they come with "secret sauce" to optimize them for each visitor's individual browser and device. Also, the code behind that "secret sauce" changes without much warning; do you really want to monitor it yourself all the time and keep updating your local installation of the Google Fonts content? It's easier to get it straight from the horse's ultra-fast CDN.
 
@@ -75,7 +75,7 @@ While there probably are ways to do that when one has total control of the serve
 
 Moreover, I wouldn't *want* to do that. I'm annoyed whenever I encounter all this permissions-requesting stuff on one site after another, and I don't want to put my visitors through it.
 
-So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google).”)
+So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google/).”)
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 
@@ -88,7 +88,7 @@ While I was in this process, I realized there were two other needed actions to a
 
 These were easy decisions, since there's little doubt about the fact that embedded YouTube videos and tweets "phone home" with visitors’ information.
 
-To be safe, I also checked out the GDPR compliance of [Cloudinary](https://cloudinary.com), which the site [recently began using](/posts/2020/07/transformed), and satisfied myself that [it was sufficient](https://cloudinary.com/privacy) that I didn't need to revert to locally processed, locally hosted images. (Whew.)
+To be safe, I also checked out the GDPR compliance of [Cloudinary](https://cloudinary.com), which the site [recently began using](/posts/2020/07/transformed/), and satisfied myself that [it was sufficient](https://cloudinary.com/privacy) that I didn't need to revert to locally processed, locally hosted images. (Whew.)
 
 Finally, I revised this site's privacy policy---and will continue to do so as needed---to reflect all these new realities.
 
@@ -104,7 +104,7 @@ It was somewhat tedious making all these fixes I've described herein, but it was
 
 Even if you're not and never will be an EU citizen, your privacy deserves protection, too. I appreciate your visits, and want you to feel completely safe when you spend time here on, as I once described [my original website in the 1990s](https://web.archive.org/web/20000413205935/http://home1.gte.net/bwray/index.html), my "little spot on that lone prairie that is the great World Wide Web."
 
-**Totally unrelated additional note**: Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?
+**Totally unrelated additional note**: Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses/), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?
 {.yellowBox}
 
 [^1]:	Of course, that doesn't necessarily identify you, especially if---as is true for most users---your device receives its IP address via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Nonetheless, it would at least narrow it down. And, equally of course, it absolutely *does* identify a device which has a *[static](https://whatismyipaddress.com/dynamic-static)* IP address.

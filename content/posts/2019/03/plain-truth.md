@@ -99,7 +99,7 @@ Ah, yes. Well, this looks like a job for [Markdown](https://daringfireball.net/p
 
 More on that in a future post.
 
-[^disks]: Shameless plug: might want to see my [most recent post](/posts/2019/02/back-up-jack).
+[^disks]: Shameless plug: might want to see my [most recent post](/posts/2019/02/back-up-jack/).
 
 [^doc]: Incidentally, [just because it's a .doc file and from the 1980s doesn't guarantee it came from Microsoft Word](https://en.wikipedia.org/wiki/Doc_(computing)), although .doc files did come to be commonly understood as Word files. For the sake of our example, we're assuming this is a Word file.
 
@@ -123,4 +123,4 @@ More on that in a future post.
 
 [^noAC]: In the dark ages, even we folks south of the Mason-Dixon Line didn't all have central air, y'know.
 
-[^lastpost]: Ahem, again, a plug for my [most recent post](/posts/2019/02/back-up-jack).
+[^lastpost]: Ahem, again, a plug for my [most recent post](/posts/2019/02/back-up-jack/).

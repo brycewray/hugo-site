@@ -18,11 +18,11 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-Just when I thought the site's "lurch"[^danceRef] among hosts was over with [last week's landing](/posts/2020/09/goodbye-hello-part-4) at [Render](https://render.com), I tripped on a banana peel whose presence in my path was entirely my own fault.
+Just when I thought the site's "lurch"[^danceRef] among hosts was over with [last week's landing](/posts/2020/09/goodbye-hello-part-4/) at [Render](https://render.com), I tripped on a banana peel whose presence in my path was entirely my own fault.
 
-[^danceRef]: Can't call it the "dance" because I [already ran that term into the ground for another purpose](/posts/2019/12/sorta-strange-ssg-trip).
+[^danceRef]: Can't call it the "dance" because I [already ran that term into the ground for another purpose](/posts/2019/12/sorta-strange-ssg-trip/).
 
-When I drew up the requirements I mentioned in [Part 1](/posts/2020/07/goodbye-hello) for the site's host, I thought I'd covered all the use cases to which I'd become accustomed in the nearly two years of this site's existence.
+When I drew up the requirements I mentioned in [Part 1](/posts/2020/07/goodbye-hello/) for the site's host, I thought I'd covered all the use cases to which I'd become accustomed in the nearly two years of this site's existence.
 
 *\<Harsh buzzer noise>* Wrong. Go to jail. Do not pass **Go**. Do not collect two hundred dollars. *(That's what I'm telling **myself**, you understand.)*
 

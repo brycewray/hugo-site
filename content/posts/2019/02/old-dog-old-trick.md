@@ -40,7 +40,7 @@ Only thing is, my day job is in [one of those enterprise shops where Windows 7 a
 
 ## Metaphor: IE as a nasal zit
 
-Everything had gone fine in that respect *except* for one thing that bedeviled me throughout last weekend, when I completed the vast majority of the transition to the test site that, as it turned out, would earn my path to freedom from what I've [dubbed](/posts/2019/01/blox-sux) "GUPB," for *godforsaken unidentified page builder*.
+Everything had gone fine in that respect *except* for one thing that bedeviled me throughout last weekend, when I completed the vast majority of the transition to the test site that, as it turned out, would earn my path to freedom from what I've [dubbed](/posts/2019/01/blox-sux/) "GUPB," for *godforsaken unidentified page builder*.
 
 However, like the pimple on one's nose on the night of a big date, this particular "one thing" was a big, honking problem *on the home page*. On the *first slide* of a slider, carousel, whatchamacallit, at the *top of the home page*.[^sliders] Arrgh!
 

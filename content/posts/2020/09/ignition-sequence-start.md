@@ -19,10 +19,10 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-**Note**: Unlike the [last](/posts/2020/09/normal-persons-guide-static-websites) [two](/posts/2020/09/normal-persons-guide-static-website-hosting) posts, this one very definitely is for **only** my fellow web geeks---and, anyway, they're the only folks likely to be using [Firebase Hosting](https://firebase.google.com), I would think.
+**Note**: Unlike the [last](/posts/2020/09/normal-persons-guide-static-websites/) [two](/posts/2020/09/normal-persons-guide-static-website-hosting/) posts, this one very definitely is for **only** my fellow web geeks---and, anyway, they're the only folks likely to be using [Firebase Hosting](https://firebase.google.com), I would think.
 {.yellowBox}
 
-I mentioned in a footnote to the original version of my [previous post](/posts/2020/09/normal-persons-guide-static-website-hosting) that my "[lurch](/posts/2020/09/goodbye-hello-part-5)" among hosts now has this site on Firebase. If you've read both the original "[Goodbye and hello](/posts/2020/07/goodbye-hello)" and its semi-[retconned](https://www.merriam-webster.com/words-at-play/retcon-history-and-meaning) [second part](/posts/2020/07/goodbye-hello-part-2), you may remember my describing why I chose **not** to use Firebase. If so, you then may also wonder what changed my mind.
+I mentioned in a footnote to the original version of my [previous post](/posts/2020/09/normal-persons-guide-static-website-hosting/) that my "[lurch](/posts/2020/09/goodbye-hello-part-5/)" among hosts now has this site on Firebase. If you've read both the original "[Goodbye and hello](/posts/2020/07/goodbye-hello/)" and its semi-[retconned](https://www.merriam-webster.com/words-at-play/retcon-history-and-meaning) [second part](/posts/2020/07/goodbye-hello-part-2/), you may remember my describing why I chose **not** to use Firebase. If so, you then may also wonder what changed my mind.
 
 Actually, there were multiple reasons:
 
@@ -30,7 +30,7 @@ Actually, there were multiple reasons:
 - I had already been an admirer of the performance of the [Fastly](https://fastly.com) content delivery network (CDN) that Firebase uses, and found it was consistently better than the CDN setups provided with the free tiers for the other three hosts I'd been using and testing ([Netlify](https://netlify.com), [Render](https://render.com), and [Vercel](https://vercel.com)).
 - In the last few days, I tinkered around and was able to come up with a [GitHub Action](https://github.com/features/actions) that made it possible to **deploy** (in Firebase terminology) to Firebase Hosting every time I pushed a change to the site repo's default branch---*i.e.*, making it as easy as when using the repo with those other three hosts. Yes, you can just do a local site build and then invoke `firebase deploy`, but that's an extra step; I've kinda gotten accustomed to the ease of the push-to-repo method and didn't want to give it up.
 
-The purpose of this post is to share with you the applicable GitHub Actions for using Firebase Hosting with my two favorite and [recommended](/posts/2020/09/normal-persons-guide-static-websites) [static site generators (SSGs)](https://staticgen.com): [Hugo](https://gohugo.io) and [Eleventy](https://11ty.dev).
+The purpose of this post is to share with you the applicable GitHub Actions for using Firebase Hosting with my two favorite and [recommended](/posts/2020/09/normal-persons-guide-static-websites/) [static site generators (SSGs)](https://staticgen.com): [Hugo](https://gohugo.io) and [Eleventy](https://11ty.dev).
 
 The GitHub Action for Hugo purposely does **not** use the widely used and excellent [GitHub Actions for Hugo](https://github.com/peaceiris/actions-hugo) by [Shohei Ueda (peaceiris)](https://github.com/peaceiris) to install Hugo during the build process, because---as was the case with [Andrew Connell](https://andrewconnell.com), whose example I followed and to whom I am grateful for the information he imparted in "[Automated Hugo Releases With GitHub Actions](https://www.andrewconnell.com/blog/automated-hugo-releases-with-github-actions/)"---I preferred having more control over that exact part.
 

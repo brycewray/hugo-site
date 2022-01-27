@@ -20,7 +20,7 @@ featured_image_caption: |
 
 Welcome to a story about an ending---and a beginning.
 
-A few days ago, I [posted](/posts/2020/06/o-say-can-you-ci-cd) about how a user of [Netlify](https://netlify.com), on which I launched this site in September, 2018, could work around the Netlify free tier's monthly limit of 300 build minutes. I also mentioned that one other option was simply to find a different host with fewer restrictions.
+A few days ago, I [posted](/posts/2020/06/o-say-can-you-ci-cd/) about how a user of [Netlify](https://netlify.com), on which I launched this site in September, 2018, could work around the Netlify free tier's monthly limit of 300 build minutes. I also mentioned that one other option was simply to find a different host with fewer restrictions.
 
 However, I didn't *suggest* that course of action to you, mostly because changing hosts is a big deal. It can be fraught with potential perils at worst and headache-inducing inconveniences at best, especially if you've never done it before. And that doesn't even account for all the time and work you have to spend in figuring out which host to pick.
 
@@ -51,7 +51,7 @@ To be sure, Netlify's free tier has a ton to offer, so I was determined that the
 - The option to deploy *also* (not *only*) via a [command-line interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface)[^CLIstuff] if the circumstances ever demand it.
 - [Brotli](https://opensource.googleblog.com/2015/09/introducing-brotli-new-compression.html) compression, which is even more efficient than the [gzip](https://en.wikipedia.org/wiki/Gzip) (the smaller the delivered content, the faster the web pages load) that pretty much any host offers.
 
-[^CLIstuff]: While failure to have a CLI isn't a show-stopper by itself, the [advantages I found for that in the getting-around-Netlify post](/posts/2020/06/o-say-can-you-ci-cd) showed the availability of a CLI to be a worthwhile "want." Ya never know&nbsp;.&nbsp;.&nbsp;.
+[^CLIstuff]: While failure to have a CLI isn't a show-stopper by itself, the [advantages I found for that in the getting-around-Netlify post](/posts/2020/06/o-say-can-you-ci-cd/) showed the availability of a CLI to be a worthwhile "want." Ya never know&nbsp;.&nbsp;.&nbsp;.
 
 Armed with these "must-haves," I spent several days checking out other vendors known for extra-special-quality hosting of static sites. In the end, the choice came down to three: Google's [Firebase](https://firebase.google.com); the fast-rising [Render](https://render.com); and [Vercel](https://vercel.com) (formerly called ZEIT).
 
@@ -67,7 +67,7 @@ Second, CLI-based deployment is Firebase's *only* method. While that's fine from
 
 The only thing that kept Firebase in the evaluation process till nearly the end is that it's got the wicked-quick and ultra-consistent [Fastly](https://fastly.com) CDN in front of it. It half-tempted me to go back to my days of running sites off a $2.50/month [VPS](https://techterms.com/definition/vps) which I'd then put behind Fastly, but that's more trouble than I want to handle on a regular basis. Been there, done that.
 
-**Note, 2020-09-09**: Firebase [now supports Brotli](https://firebase.googleblog.com/2020/08/firebase-hosting-new-features.html); and using [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) similar to [what I described here for Netlify](/posts/2020/06/o-say-can-you-ci-cd) can allow a more automated workflow with Firebase. Still, my continued testing shows it comes up a bit short against other considered options.
+**Note, 2020-09-09**: Firebase [now supports Brotli](https://firebase.googleblog.com/2020/08/firebase-hosting-new-features.html); and using [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) similar to [what I described here for Netlify](/posts/2020/06/o-say-can-you-ci-cd/) can allow a more automated workflow with Firebase. Still, my continued testing shows it comes up a bit short against other considered options.
 {.yellowBox}
 
 ### Render
@@ -100,13 +100,13 @@ When compared to not only Netlify but also other vendors I tested by actually se
 
 [^fbBuild]: There's no way to compare this to how Firebase works, by the way, because you do its builds on a separate system---whether that's your own computer or, say, GitHub or GitLab.
 
-[^hiRes]: Indeed, I took advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097). That said, the [move to Cloudinary](/posts/2020/07/transformed) rendered that consideration moot, as the 2020-07-31 addendum to this post explains.
+[^hiRes]: Indeed, I took advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097). That said, the [move to Cloudinary](/posts/2020/07/transformed/) rendered that consideration moot, as the 2020-07-31 addendum to this post explains.
 
 Finally, I simply preferred the Vercel DX, especially the developer UI, over that of either the increasingly cluttered Netlify or the getting-there-but-not-there-yet Render---not to mention the you-better-have-time-to-read-a-lot-of-docs Firebase.
 
 So, on June 30, this site moved to Vercel.
 
-I should note also that my site analytics didn't miss a beat, thanks to my [recent decision](/posts/2020/06/fathom-analytics-count-on-it) to convert the site to the totally portable [Fathom Analytics](https://usefathom.com/ref/ZKHYWX)[^affil] from Netlify's servers-locked offering.
+I should note also that my site analytics didn't miss a beat, thanks to my [recent decision](/posts/2020/06/fathom-analytics-count-on-it/) to convert the site to the totally portable [Fathom Analytics](https://usefathom.com/ref/ZKHYWX)[^affil] from Netlify's servers-locked offering.
 
 [^affil]: Affiliate link. If you use it to get started with Fathom, you'll receive a $10 credit on your first invoice and I'll get a commission.
 
@@ -126,5 +126,5 @@ Thank you, Netlify, for twenty-one-and-a-half good and interesting months as my 
 
 And thank you, Vercel, for your warm welcome, and for the interesting journey on which we've embarked this week. I look forward to watching your already strong capabilities get even more impressive over time. Building upon the high performance of your platform, I hope to make this site a better place for nice folks to spend some time and learn a thing or two.
 
-**Note**: [To be continued](/posts/2020/07/goodbye-hello-part-2).
+**Note**: [To be continued](/posts/2020/07/goodbye-hello-part-2/).
 {.yellowBox}

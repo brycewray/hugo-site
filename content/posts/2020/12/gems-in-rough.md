@@ -20,7 +20,7 @@ featured_image_caption: |
 
 It's tips time, my fellow and sister static website aficionados.
 
-I sometimes discover, and then want to share with you good folks,  some shiny, little nuggets of geeky information that present themselves while I'm messing around with [static site generators](https://jamstack.org/generators) (SSGs) and other tools that I use to build not only this site but also some [starter sites](/posts/2020/07/beginners-luck). However, those shiny nuggets often are *so* little that they don't merit posts of their own.
+I sometimes discover, and then want to share with you good folks,  some shiny, little nuggets of geeky information that present themselves while I'm messing around with [static site generators](https://jamstack.org/generators) (SSGs) and other tools that I use to build not only this site but also some [starter sites](/posts/2020/07/beginners-luck/). However, those shiny nuggets often are *so* little that they don't merit posts of their own.
 
 Thus, in this post, I'm describing some of them for you. Perhaps this will end up being a series of its own, as with my more general "Mixed nuts" series; perhaps not. Verily, time shall tell. But let's not get ahead of ourselves.
 
@@ -45,7 +45,7 @@ Nova is really good, pretty, and friendly, but you pay for it, while VS Code is 
 
 ## CDNs: my POPs can whip&nbsp;your&nbsp;POPs
 
-As the popularity of SSG-built websites grows, your choices for hosting vendors grow as well. Each of the leading [SSG-savvy hosting vendors](/posts/2020/09/normal-persons-guide-static-website-hosting) offers some sort of [content delivery network](https://en.wikipedia.org/wiki/content_delivery_network) (CDN) as part of its package, even on its free tier. This is a major advantage over "old-guard" hosting vendors, many of whom charge extra for even the barest CDN capability if they offer it at all.[^cfCDN]
+As the popularity of SSG-built websites grows, your choices for hosting vendors grow as well. Each of the leading [SSG-savvy hosting vendors](/posts/2020/09/normal-persons-guide-static-website-hosting/) offers some sort of [content delivery network](https://en.wikipedia.org/wiki/content_delivery_network) (CDN) as part of its package, even on its free tier. This is a major advantage over "old-guard" hosting vendors, many of whom charge extra for even the barest CDN capability if they offer it at all.[^cfCDN]
 
 [^cfCDN]: To be fair, you can put *any* site---even a regular, non-SSG-built one---behind a free Cloudflare account, but methods for doing that don't always provide the best efficiency. Explaining that is best left for another "Gems in the rough," assuming there *is* one.
 
@@ -63,7 +63,7 @@ In case that discussion about the various vendors’ CDN capabilities has you th
 
 ### Be careful about DNSSEC
 
-I think I'll simply repeat something I offered as a footnote to "[Goodbye and hello • Part 2](/posts/2020/07/goodbye-hello-part-2)" a few months back, when I was explaining how I'd returned (briefly, as it turned out) to Netlify after initially [leaving Netlify for Vercel](/posts/2020/07/goodbye-hello):
+I think I'll simply repeat something I offered as a footnote to "[Goodbye and hello • Part 2](/posts/2020/07/goodbye-hello-part-2/)" a few months back, when I was explaining how I'd returned (briefly, as it turned out) to Netlify after initially [leaving Netlify for Vercel](/posts/2020/07/goodbye-hello/):
 
 > While switching from Netlify's domain name servers to Google's during the site move to Vercel, I'd also activated [DNS System Security Extensions (DNSSEC)](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions). When I first began to return the site to Netlify and point my domain to Netlify's name servers because [that apparently works best with its CDN](https://css-tricks.com/using-your-domain-with-a-netlify-hosted-site/), I found that I first had to *de*-activate DNSSEC---and, quoting [the appropriate Google Support page](https://support.google.com/domains/answer/6387342?hl=en): "When you turn on DNSSEC, it takes roughly 2 hours for DNSSEC to activate completely. When you turn it off, there's a delay of up to 2 **days** before deactivation." [Emphasis added.] As it turned out, it took a full day. Anyway, lesson learned.
 

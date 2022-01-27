@@ -28,7 +28,7 @@ My initial reaction was: well, that’s surely cool, but I doubt I’ll ever nee
 
 {{< tweet user="regisphilibert" id="1469417024518565900" >}}
 
-And, lo and behold, it hit me this morning: this new ability by Hugo to fetch remote stuff meant, now, I could use [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs) in my image-handling shortcode (most recently described in “[Go big or Go home? The sequel](/posts/2021/11/go-big-go-home-sequel)”).
+And, lo and behold, it hit me this morning: this new ability by Hugo to fetch remote stuff meant, now, I could use [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs) in my image-handling shortcode (most recently described in “[Go big or Go home? The sequel](/posts/2021/11/go-big-go-home-sequel/)”).
 
 So what, you say? Well, this is what: now, the shortcode could ***halve*** its image-related [HTTP requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) to my free [Cloudinary](https://cloudinary.com) account.[^2] [Since HTTP requests are render-blocking, it’s always better to have fewer of them](https://blog.hubspot.com/marketing/reduce-http-requests).
 
@@ -36,7 +36,7 @@ You see, up to then, the shortcode got each image’s LQIP by having Cloudinary 
 
 However, starting with Hugo 0.90.x, Hugo Pipes can go right out to Cloudinary, pull down that 20-pixel-wide image, and instantly translate it into Base64-encoded data that fits right into my HTML. Since this is all happening during the site-building process, visitors not only *don’t* encounter a slowdown in the image-handling but also *don’t* make that extra HTTP request for a separate file.
 
-Rather than bore you with the entire shortcode, given that I just got through doing that [a few posts ago](/posts/2021/11/go-big-go-home-sequel), I’ll simply show you the parts that changed.[^simpler]
+Rather than bore you with the entire shortcode, given that I just got through doing that [a few posts ago](/posts/2021/11/go-big-go-home-sequel/), I’ll simply show you the parts that changed.[^simpler]
 
 ```go-html-template
 {{/* These two variables are new */}}
@@ -77,7 +77,7 @@ For something that I originally thought wouldn’t ring my chimes, this new powe
 
 [^1]:	That is, as compared to that of the regulars in the [Hugo Discourse forum](https://discourse.gohugo.io).
 
-[^2]:	For more on how I started using Cloudinary’s generous free tier to host this site’s images, please see also my post, “[Transformed](/posts/2020/07/transformed).”
+[^2]:	For more on how I started using Cloudinary’s generous free tier to host this site’s images, please see also my post, “[Transformed](/posts/2020/07/transformed/).”
 
 [^simpler]: This is simpler than what I originally put in this post because I’m now excluding some host-specific stuff that’s likely irrelevant to anybody else.
 

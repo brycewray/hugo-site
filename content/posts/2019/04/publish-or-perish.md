@@ -21,7 +21,7 @@ oldComments: |
     </p>
     <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-06-18</em></span></p>
     <p class="comment">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="noopener">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="noopener">helped another user on micro.blog</a>.</p>
-  
+
     <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-06-18</em></span></p>
     <p class="comment">Very glad I could help. Have fun with Hugo! I certainly do.</p>
   </div>
@@ -31,7 +31,7 @@ This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you
 
 ## Keepin’ it easy: Go GUI
 
-First, let me harken back to another [previous post](/posts/2018/10/version-control-follies) in which I described how I manage this site through a great [Atlassian](https://atlassian.com) app called [Sourcetree](https://www.sourcetreeapp.com). Quick summary thereof: yes, you **can** use [Git](https://gitscm.com) commands in a command-line interface app to do what I'm going to describe, but there's no real need for it as long as there are user-friendly [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [version-control](https://www.atlassian.com/git/tutorials/what-is-version-control) apps like Sourcetree that let you point and click your way to the same final result.
+First, let me harken back to another [previous post](/posts/2018/10/version-control-follies/) in which I described how I manage this site through a great [Atlassian](https://atlassian.com) app called [Sourcetree](https://www.sourcetreeapp.com). Quick summary thereof: yes, you **can** use [Git](https://gitscm.com) commands in a command-line interface app to do what I'm going to describe, but there's no real need for it as long as there are user-friendly [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [version-control](https://www.atlassian.com/git/tutorials/what-is-version-control) apps like Sourcetree that let you point and click your way to the same final result.
 
 (Please note that Sourcetree is available only for Windows and macOS, so you Linux users---assuming you aren't already familiar with your Linux distro's Terminal app and Git anyway, which frankly is not that likely, but one never knows---will need to use a [different GUI app](https://www.tecmint.com/best-gui-git-clients-git-repository-viewers-for-linux/) to accomplish this.)
 
@@ -49,7 +49,7 @@ Whichever place on the web you plan to publish your site, you need an online [**
 
 We're going to accomplish this with Sourcetree. First, get Sourcetree by visiting its [website](https://www.sourcetreeapp.com) and downloading/installing the appropriate version for your operating system. You need **administrator-level** access to install software on your system, of course.
 
-Once you have Sourcetree running, Atlassian has a [great help page](https://confluence.atlassian.com/get-started-with-sourcetree/create-a-local-repository-847359103.html) to show you to how to create your local repo, and I really can't improve upon it---except to say: 
+Once you have Sourcetree running, Atlassian has a [great help page](https://confluence.atlassian.com/get-started-with-sourcetree/create-a-local-repository-847359103.html) to show you to how to create your local repo, and I really can't improve upon it---except to say:
 
 1. For our purposes here, the **Destination Path** for the repo would be in the **top-level directory** of your local Hugo site. For example, the local version of this site resides in my iCloud Drive's *hugo-site-css-grid* folder, so that's where I'd be creating my local repo if I were starting from scratch.
 2. After you create the repo, you'll see in Sourcetree that it has "read" the files and folders from that directory and is showing a line in its **Description** field that says **Uncommitted changes**. This means it wants you to do a [**commit**](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html) action; until you do that, the repo is still empty. So click **Commit** (with the "plus" icon) and, when it switches to the next view:
@@ -90,7 +90,7 @@ The Netlify interface then will bring you to your Netlify **dashboard**. You'll 
 
 You'll be asked to select a Bitbucket repo to use. You probably have only the one we've been talking about up to now but, if by chance, you have more than one, be sure to select the one that's for this site. (You also probably have only one **branch** for that repo; if you're already into [branching with your repo](https://confluence.atlassian.com/bitbucket/branching-a-repository-223217999.html), I really doubt you need my help!)
 
-You'll also be asked for your **build command**---which means just specifying which version of Hugo you want Netlify to use. Select the same version you've been running on your local Hugo setup. If you don't know what that is, open your local system's CLI app and type into it the following command, followed by **Return** or **Enter**: 
+You'll also be asked for your **build command**---which means just specifying which version of Hugo you want Netlify to use. Select the same version you've been running on your local Hugo setup. If you don't know what that is, open your local system's CLI app and type into it the following command, followed by **Return** or **Enter**:
 ```bash
 hugo version
 ```
@@ -115,7 +115,7 @@ So, once all this is done, how do you update your site in the future when you ch
 
 ----
 
-Once more, I apologize for the length of this, especially when combined with its [predecessor](/posts/2019/04/ec-static). I am sure you can find better how-to-SSG guides out there, and I encourage you to search for and find the one that works best with your learning methods[^visual] and knowledge level.
+Once more, I apologize for the length of this, especially when combined with its [predecessor](/posts/2019/04/ec-static/). I am sure you can find better how-to-SSG guides out there, and I encourage you to search for and find the one that works best with your learning methods[^visual] and knowledge level.
 
 However it ends up, I hope that you enjoy having your own Hugo-powered website as much as I've enjoyed mine so far. Build some content, spiff things up, speak your mind, and have fun!
 

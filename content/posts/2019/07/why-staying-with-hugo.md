@@ -91,7 +91,7 @@ After what by then was a nine-month stretch with Hugo on this site and relativel
 
 Thus it was that one weekend, with those thoughts swirling in my already overheated brain, I went back to the Gatsby site and, to refresh my memory, re-did the same tutorials (although, since then, Gatsby v.2 has been released, so I'm sure they're somewhat different now). But, this time, I followed that up with starting a new local Gatsby site, fully intent on replacing this site with it.
 
-Just a word about that, by the way: as I [explained previously](/posts/2019/04/publish-or-perish), the way I publish this site to my chosen host, [Netlify](https://www.netlify.com), is to point Netlify to a [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml), or "repo," out on the web---in my case, with [Bitbucket](https://bitbucket.org). That then would've made it a piece of cake to switch the actual online site from Hugo to Gatsby: I'd simply have pointed Netlify to a different repo, one in which the new Gatsby version would be waiting.
+Just a word about that, by the way: as I [explained previously](/posts/2019/04/publish-or-perish/), the way I publish this site to my chosen host, [Netlify](https://www.netlify.com), is to point Netlify to a [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml), or "repo," out on the web---in my case, with [Bitbucket](https://bitbucket.org). That then would've made it a piece of cake to switch the actual online site from Hugo to Gatsby: I'd simply have pointed Netlify to a different repo, one in which the new Gatsby version would be waiting.
 
 I just had to build the thing first.
 
@@ -186,7 +186,7 @@ Late in the third week of this effort, even as I got those last few items workin
 
 ## FUBARed footnotes
 
-One other thing kept nagging at me, also: footnotes. Here on the Hugo site, as I [explained](/posts/2019/02/ia-for-io) back in February, I can type stuff like this:
+One other thing kept nagging at me, also: footnotes. Here on the Hugo site, as I [explained](/posts/2019/02/ia-for-io/) back in February, I can type stuff like this:
 
 ```md
 This is how you do footnotes[^footnoteInfo] in
@@ -252,7 +252,7 @@ Far too late that Friday night, I finally went to bed but I made a decision:  in
 
 Saturday morning arrived. I got up, went for a much-needed haircut (remember: I'd given several straight weekends to this, and that's my only time when I can go get the stuff trimmed), my thoughts thoroughly wrapped around MDX and Gatsby as I sat in the nice lady's barber chair.
 
-Soon, I was back home and at the Mac. I once again installed the Gatsby default starter and confirmed it was running fine. Then I shut it down, added `gatsby-plugin-mdx` as per "Add MDX to an existing Gatsby site" in the [instructions](https://www.gatsbyjs.org/docs/mdx/getting-started), and started it back up. Okay, fine. Then I added to the mix a single barebones .mdx file---essentially, an .mdx version of the Markdown file that created [my first, short post from last September](/posts/2018/09/hardy-press-wp-ssg-with-twist). There was nothing hinky in it at all, just text and highly innocuous front matter.
+Soon, I was back home and at the Mac. I once again installed the Gatsby default starter and confirmed it was running fine. Then I shut it down, added `gatsby-plugin-mdx` as per "Add MDX to an existing Gatsby site" in the [instructions](https://www.gatsbyjs.org/docs/mdx/getting-started), and started it back up. Okay, fine. Then I added to the mix a single barebones .mdx file---essentially, an .mdx version of the Markdown file that created [my first, short post from last September](/posts/2018/09/hardy-press-wp-ssg-with-twist/). There was nothing hinky in it at all, just text and highly innocuous front matter.
 
 Gatsby crashed, and with that same `Identifier '_frontmatter'` error.
 

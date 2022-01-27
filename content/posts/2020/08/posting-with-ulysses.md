@@ -63,7 +63,7 @@ It absolutely has. This was just a short experiment. Indeed, after running into 
 
 Moreover, the reason I originally used Ulysses for this kind of writing---the whole "keeping your writing all in the Ulysses Library" idea that drives that app---is rendered moot by the use of external files. You can *use* these files and Ulysses can track them, so to speak, but they're not part of the Ulysses Library.
 
-That said, I think the writing experience looks a bit *cleaner* in Ulysses, especially if---as is true for me---you don't like the particular background treatment in iA Writer. My [aged](/posts/2019/09/now-im-sixty-four) eyes prefer text to be a bit sharper and have a little more contrast *vs.* the background. The image below shows the difference (albeit not as clearly as I'd like), with the Ulysses text appearance first and then that of iA Writer:
+That said, I think the writing experience looks a bit *cleaner* in Ulysses, especially if---as is true for me---you don't like the particular background treatment in iA Writer. My [aged](/posts/2019/09/now-im-sixty-four/) eyes prefer text to be a bit sharper and have a little more contrast *vs.* the background. The image below shows the difference (albeit not as clearly as I'd like), with the Ulysses text appearance first and then that of iA Writer:
 
 {{< imgc src="Ulysses-vs-iA_Writer_text-treatments_1539x846.jpg" alt="The same paragraph as it appears in both Ulysses and iA Writer as of August, 2020" width="1539" height="846" >}}
 
@@ -79,9 +79,9 @@ This was an interesting experiment, but I likely will stick with iA Writer for t
 
 Still, glitches aside, it was fun to give the newest Ulysses a shot at writing posts again. Perhaps some day Ulysses will have a setting to turn off some of the unwanted behavior I mentioned herein---call it an "iA Writer mode" or "SSG mode." That would make it pretty hard to beat for someone who would like to stay within Big U for *all* his or her writing tasks.[^6]
 
-[^1]:	First hinted at in "[iA for IO?](/posts/2019/02/ia-for-io)"
+[^1]:	First hinted at in "[iA for IO?](/posts/2019/02/ia-for-io/)"
 
-[^2]:	Although this was seemingly allowed only on Mac, my use of Git and [Working Copy](/posts/2019/07/roger-copy) got me around that little problem.
+[^2]:	Although this was seemingly allowed only on Mac, my use of Git and [Working Copy](/posts/2019/07/roger-copy/) got me around that little problem.
 
 [^3]:	When Ulysses "forgets" the raw source block formatting, it can't "understand" that the ```---``` characters wrapped around the front matter make that content special and, ideally, inviolable.
 

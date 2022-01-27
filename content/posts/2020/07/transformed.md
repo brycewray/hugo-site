@@ -37,19 +37,19 @@ While I am *by no means* mechanical, I fully get how those who *are* can spend h
 
 You see, this is similar to how I feel when I have a challenge with the code behind this website. It can be aggravating getting to the solution but, truth be known, the journey there is (mostly) enjoyable.
 
-Such was the case, [earlier this year](/posts/2020/05/going-solo-eleventy), when I ended this site's five-month reliance on [webpack](https://webpack.js.org) in favor of letting [Eleventy](https://11ty.dev) carry the load alone. While, overall, this simplified things for me, it did require me to find a different way to process the site's images, since webpack and some plugins were now to be relieved of such duties.
+Such was the case, [earlier this year](/posts/2020/05/going-solo-eleventy/), when I ended this site's five-month reliance on [webpack](https://webpack.js.org) in favor of letting [Eleventy](https://11ty.dev) carry the load alone. While, overall, this simplified things for me, it did require me to find a different way to process the site's images, since webpack and some plugins were now to be relieved of such duties.
 
 At first, I tried some excellent Eleventy plugins, but found each didn't fit my particular setup for differing reasons. As what was intended at first as only an interim measure but soon became my go-to answer, I came up with a build-time script, `imgxfm.js`, which used the [Sharp](https://github.com/lovell/sharp) library (and, later in the script's brief life, the [pngquant](https://pngquant.org/) library) to handle image-processing duties.
 
 When I first went with this method, the site wasn't using [hero images](https://www.optimizely.com/optimization-glossary/hero-image/). Thus, the script, handling only the relatively few images within my posts’ body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup.
 
-Things changed quite a bit once [I brought back hero images](/posts/2020/05/thousand-words-indeed) a couple of weeks later. Now, the build times fattened dramatically, and grew longer with each new post and its hero image---and, of course, these increasingly long builds were happening also on *local* builds while I was doing dev stuff. I spent plenty of time waiting through such builds, twiddling my metaphorical thumbs while listening to my iMac's fans kick up in protest.
+Things changed quite a bit once [I brought back hero images](/posts/2020/05/thousand-words-indeed/) a couple of weeks later. Now, the build times fattened dramatically, and grew longer with each new post and its hero image---and, of course, these increasingly long builds were happening also on *local* builds while I was doing dev stuff. I spent plenty of time waiting through such builds, twiddling my metaphorical thumbs while listening to my iMac's fans kick up in protest.
 
 As a result: not long after I brought back the hero images, I was beginning to edge within sight of the [Netlify](https://netlify.com) free tier's 300-minutes-a-month build limit. My response took two forms (and resulted in posts about each):
 
-- [Using scripting](/posts/2020/06/o-say-can-you-ci-cd), specifically GitHub Actions, to cut the on-Netlify build times to only a few seconds each.
+- [Using scripting](/posts/2020/06/o-say-can-you-ci-cd/), specifically GitHub Actions, to cut the on-Netlify build times to only a few seconds each.
 
-- Subsequently just flat-out [moving the site's hosting](/posts/2020/07/goodbye-hello) from Netlify to [Vercel](https://vercel.com)---mostly because I preferred Vercel's superior performance and more generous free-tier build policy, but also in part because I wanted to revert to the GitHub Actions-free build process with which I'd become familiar through most of my time with Netlify.
+- Subsequently just flat-out [moving the site's hosting](/posts/2020/07/goodbye-hello/) from Netlify to [Vercel](https://vercel.com)---mostly because I preferred Vercel's superior performance and more generous free-tier build policy, but also in part because I wanted to revert to the GitHub Actions-free build process with which I'd become familiar through most of my time with Netlify.
 
 While the build *limit* problem was solved, the build *length* problem was alive and well, and getting worse with each new post/image combo.
 
@@ -57,7 +57,7 @@ That's when I began to take a new look at Cloudinary.
 
 I say "new look" because, back in June, I'd spent the better part of a Sunday playing with Cloudinary's free tier and trying out various *transformations* (re-sizings, format changes, *etc*.)---but deciding against it after running into some (self-imposed, as in [PEBKAC](https://www.computerhope.com/jargon/p/pebkac.htm)) difficulties in early tests.
 
-Apart from those experiences, one overarching concern I had about Cloudinary was whether I'd be able to stay within its free tier, given my large and growing supply of site images and the fact that *each* transformation of *each* image would be counted against the monthly 25-*credit* limit. I knew each transformation was only a tiny fraction of that limit and so the math didn't indicate I'd really have a problem, but my fear-of-the-unknown reaction remained. 
+Apart from those experiences, one overarching concern I had about Cloudinary was whether I'd be able to stay within its free tier, given my large and growing supply of site images and the fact that *each* transformation of *each* image would be counted against the monthly 25-*credit* limit. I knew each transformation was only a tiny fraction of that limit and so the math didn't indicate I'd really have a problem, but my fear-of-the-unknown reaction remained.
 
 Fortunately, I got over it after viewing the Cloudinary tutorial video, "[Understanding Cloudinary's Transformation Quotas](https://www.youtube.com/watch?v=kkAk_5jQPFE)," which explains the whole thing quite well. And, indeed, once I tried again and spent a few *more* hours testing, I realized that my site's needs would easily fit within the Cloudinary free tier.
 
@@ -93,7 +93,7 @@ The upshot of all this is that I deliver the same images as before---with better
 
 ## Trading points for pics?
 
-Did I give up some speed, [some performance](/posts/2020/07/chasing-100-tips-optimizing-website), in adopting Cloudinary? Well, maybe some, depending on the point from which the site is being tested---but keep in mind that Cloudinary-hosted assets are delivered via the aptly named [Fastly CDN](https://fastly.com), and its caching helps assure that, once the file has been seen *somewhere* within a region, it's likely the CDN will deliver it ultra-quickly.
+Did I give up some speed, [some performance](/posts/2020/07/chasing-100-tips-optimizing-website/), in adopting Cloudinary? Well, maybe some, depending on the point from which the site is being tested---but keep in mind that Cloudinary-hosted assets are delivered via the aptly named [Fastly CDN](https://fastly.com), and its caching helps assure that, once the file has been seen *somewhere* within a region, it's likely the CDN will deliver it ultra-quickly.
 
 I am willing to give up a few points off my performance scores. The relief I feel in *not* having to manage those images, *not* having to do *local builds* of those images, and *not* having to worry about how long my build times will be six months or a year or two years from now---believe me, it's worth it.
 

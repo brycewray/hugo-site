@@ -22,7 +22,7 @@ Breaking news: we don't live in an ideal world.
 
 Each client wants its site or site modifications finished yesterday, to perfection, and for free---not necessarily in that order, but you get the point. Site-load time, including the [infamous Time to First Byte (TTFB)](https://developers.google.com/web/tools/chrome-devtools/network-performance/understanding-resource-timing#slow_time_to_first_byte), is critical. And, while browsers have advanced a lot in the last three or four years, [not everybody is using the latest and greatest](http://gs.statcounter.com/browser-version-market-share) and, besides, [there are still some CSS shortcomings among even recent browser versions](https://www.w3schools.com/cssref/css3_browsersupport.asp).
 
-**Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more) a few days later, but go ahead and read this one first so you'll have some perspective on that post.
+**Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more/) a few days later, but go ahead and read this one first so you'll have some perspective on that post.
 {.yellowBox}
 
 ## Frickin’ frameworks?

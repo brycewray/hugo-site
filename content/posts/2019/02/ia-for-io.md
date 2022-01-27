@@ -26,7 +26,7 @@ So this is yet another look at iA Writer as a potential "daily driver" for use w
 
 ## Okay, I was YAMmering; sorry
 
-Perhaps more to the point, I believe I was more concerned about how the [YAML](https://yaml.org) "front matter" looked in the iA Writer Preview window than how the SSG would handle the final Markdown file. (As I [already explained](/posts/2018/09/why-finally-settled-ulysses), I get distracted by such things.) It turns out that doesn't matter. You don't have to enclose front matter in a ```code block``` for the SSG to know what to do with it---in fact, it doesn't know what to do with it if you **do** put it in a code block.
+Perhaps more to the point, I believe I was more concerned about how the [YAML](https://yaml.org) "front matter" looked in the iA Writer Preview window than how the SSG would handle the final Markdown file. (As I [already explained](/posts/2018/09/why-finally-settled-ulysses/), I get distracted by such things.) It turns out that doesn't matter. You don't have to enclose front matter in a ```code block``` for the SSG to know what to do with it---in fact, it doesn't know what to do with it if you **do** put it in a code block.
 
 ## Footnote follies
 

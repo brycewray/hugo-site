@@ -16,14 +16,14 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a>; <a href="/s/photos/computer-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Note**: After you read this post, please see also [its sequel](/posts/2021/11/go-big-go-home-sequel) for what I believe is a much more usable result.
+**Note**: After you read this post, please see also [its sequel](/posts/2021/11/go-big-go-home-sequel/) for what I believe is a much more usable result.
 {.yellowBox}
 
 Imagine that you're about to take your first drive as owner of a shiny new vehicle which you chose after weeks of research and comparison.
 
 Now, imagine that you've bought that vehicle even though its audio system, while superb, has all of its controls in a language that you barely can read.
 
-That's somewhat analogous to where I found myself a few days ago, when I committed to [returning this site](/posts/2021/02/simplify-simplify) to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). Why? Because, with that commitment, also came a commitment to learning more about the [Go programming language](https://golang.org) on which Hugo itself is based.
+That's somewhat analogous to where I found myself a few days ago, when I committed to [returning this site](/posts/2021/02/simplify-simplify/) to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). Why? Because, with that commitment, also came a commitment to learning more about the [Go programming language](https://golang.org) on which Hugo itself is based.
 
 I'd been spoiled by how the site's former SSG, [Eleventy](https://11ty.dev), famously allows use of [multiple languages](https://www.11ty.dev/docs/languages/) in building the *templates* that an SSG uses to convert plain text into web pages like the one you're reading now. Of course, having had the site on Hugo for nearly all of its first year of existence, I was fully aware of the need to accept Go-based templating once more upon the return.
 
@@ -35,7 +35,7 @@ To be specific: while the original JavaScript code looped nicely through an arra
 
 Cowardly, I know, but that's how it was.
 
-Anyway: after [completing and announcing the transition](/posts/2021/02/simplify-simplify), I was determined to improve that code as much as my extremely limited abilities would allow. In doing so, I felt, I'd be making at least a fair try at *beginning* to embrace Go-based templating.
+Anyway: after [completing and announcing the transition](/posts/2021/02/simplify-simplify/), I was determined to improve that code as much as my extremely limited abilities would allow. In doing so, I felt, I'd be making at least a fair try at *beginning* to embrace Go-based templating.
 
 [^scDef]: The definition of *shortcode* varies widely but, in SSG-land in general and both Hugo and Eleventy in particular, it refers to a macro-like thing that you can drop into a site's Markdown that produces the same effect as if you'd put actual code in there.
 
@@ -45,7 +45,7 @@ This is the story of what resulted from that effort. Perhaps it will be instruct
 
 The subject of this post is a **shortcode**. The definition of *shortcode* varies widely but, in SSG-land in general and for both Hugo and Eleventy in particular, it refers to a macro that you can drop into a site's [Markdown](https://daringfireball.net/projects/markdown) so it'll produce the same effect as if you'd put actual code in there.
 
-The shortcode we're discussing here, initially created in the Eleventy site as *lazy-picture.js* and now existing in the Hugo site as *imgc.html*, makes it easy for me to insert [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) from the [free account](/posts/2020/07/transformed) that I have with [Cloudinary](https://cloudinary.com). I stress that this is for *responsive* images because, if all you want to do is insert an image, Markdown already allows that on its own; but *responsive* images need some fairly involved HTML and CSS.
+The shortcode we're discussing here, initially created in the Eleventy site as *lazy-picture.js* and now existing in the Hugo site as *imgc.html*, makes it easy for me to insert [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) from the [free account](/posts/2020/07/transformed/) that I have with [Cloudinary](https://cloudinary.com). I stress that this is for *responsive* images because, if all you want to do is insert an image, Markdown already allows that on its own; but *responsive* images need some fairly involved HTML and CSS.
 
 For example, I can insert all the code required for a responsive display of the following image&nbsp;.&nbsp;.&nbsp;.
 
@@ -81,7 +81,7 @@ So you can assess the conversion required between the Eleventy and Hugo versions
 
 Here's the JavaScript version, on which the Go version was based[^origCode]:
 
-[^origCode]: This is a revised version because the *original* JS provides for an [LQIP-using preview](https://endler.dev/2017/image-previews/), the need for which ended when I [removed hero images](/posts/2021/01/leaner-cleaner)).
+[^origCode]: This is a revised version because the *original* JS provides for an [LQIP-using preview](https://endler.dev/2017/image-previews/), the need for which ended when I [removed hero images](/posts/2021/01/leaner-cleaner/)).
 
 ```js
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
@@ -221,7 +221,7 @@ Finally, those hyphens connected to many of the curly brackets (`{{-` and `-}}`)
 
 ## Twisted, mister
 
-During an [email exchange](/contact) with one of my readers not long after I [announced](/posts/2021/02/simplify-simplify) the site's return to Hugo, he---a recent convert to Eleventy from other, more "opinionated" JS-based SSGs---remarked how much he was enjoying the relative ease of templating in Eleventy. Only minutes after finishing the Go shortcode we've covered herein, I replied:
+During an [email exchange](/contact) with one of my readers not long after I [announced](/posts/2021/02/simplify-simplify/) the site's return to Hugo, he---a recent convert to Eleventy from other, more "opinionated" JS-based SSGs---remarked how much he was enjoying the relative ease of templating in Eleventy. Only minutes after finishing the Go shortcode we've covered herein, I replied:
 
 > As for templating: I just spent three hours whipping a Hugo shortcode into order so, yes, I do miss the simplicity of [templating] in Eleventy. &nbsp;.&nbsp;.&nbsp;. Anyway, there is kind of a twisted logic in how Go works, and maybe I’m just twisted enough to get it eventually.
 

@@ -18,15 +18,15 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-**Note**: This is Part 4 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in this part). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
+**Note**: This is Part 4 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2/)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3/)), and [Gatsby](https://gatsbyjs.org) (covered in detail in this part). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5/), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}
 
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
 {.yellowBox}
 
-In the [introduction](/posts/2020/04/webmentions-three-ssgs-1) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Then, in [Part 3](/posts/2020/04/webmentions-three-ssgs-3), I moved on to the subject of implementing them in the [Hugo](https://gohugo.io) SSG. Now, here in Part 4, it's time to look at doing the same thing in the [Gatsby](https://gatsbyjs.org) SSG.
+In the [introduction](/posts/2020/04/webmentions-three-ssgs-1/) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2/), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Then, in [Part 3](/posts/2020/04/webmentions-three-ssgs-3/), I moved on to the subject of implementing them in the [Hugo](https://gohugo.io) SSG. Now, here in Part 4, it's time to look at doing the same thing in the [Gatsby](https://gatsbyjs.org) SSG.
 
-My original hope, as I told you at the end of [Part 3](/posts/2020/04/webmentions-three-ssgs-3), was that the webmentions-on-Gatsby implementation would benefit from JavaScript code I'd used in my [Eleventy repo](https://github.com/brycewray/eleventy_bundler).
+My original hope, as I told you at the end of [Part 3](/posts/2020/04/webmentions-three-ssgs-3/), was that the webmentions-on-Gatsby implementation would benefit from JavaScript code I'd used in my [Eleventy repo](https://github.com/brycewray/eleventy_bundler).
 
 Ah, silly me.
 
@@ -48,7 +48,7 @@ Still, handling the webmention.io token as an [environment variable](https://en.
 
 Once I'd properly assuaged this particular Gatsby quirk, I could see the webmention.io data was clearly coming through in GraphQL. That's why I figured I was already about eight-tenths of the way home even before I got started on the more tedious coding required to make things actually appear.
 
-Yeah, right. And you'd think I'd have known better, too. 
+Yeah, right. And you'd think I'd have known better, too.
 
 ## Gatsby: Displaying webmentions
 
@@ -56,7 +56,7 @@ After all: it hadn't been that long since my failed [Gatsby Experiment I](/posts
 
 This is where I ran into the toughest "chase scene"[^Chase] of this entire effort.
 
-[^Chase]: As noted in [Part 1](/posts/2020/04/webmentions-three-ssgs-1): ".&nbsp;.&nbsp;.&nbsp;I found it *really* difficult to follow the logic in certain articles’ related code. I found myself chasing variables, constants, and statements from other files---and sourly muttering things like 'Where'd *that* come from?' and 'What's *that* got to do with what's supposed to be happening here?' and 'Wait a minute; what happened to the step *before* this part?'"
+[^Chase]: As noted in [Part 1](/posts/2020/04/webmentions-three-ssgs-1/): ".&nbsp;.&nbsp;.&nbsp;I found it *really* difficult to follow the logic in certain articles’ related code. I found myself chasing variables, constants, and statements from other files---and sourly muttering things like 'Where'd *that* come from?' and 'What's *that* got to do with what's supposed to be happening here?' and 'Wait a minute; what happened to the step *before* this part?'"
 
 For several nights, I pored through successful-webmentions-on-Gatsby articles, forum posts, and repos, trying desperately to duplicate how others had done it. There were a number of false exits along the way. Quite often, I'd achieve display of a *few* webmention elements and think I'd solved the problem, but then quickly discover not only that I couldn't display the *next* few but also that Gatsby didn't even understand what the next few *were*. If I saw one Gatsby error message about trying to display items it considered `Undefined`, I saw a million.
 
@@ -102,4 +102,4 @@ And, oh, don't forget [`/src/assets/css/webmentions.css`](https://github.com/bry
 
 Sorry for the harrowing nature of this part in particular, but my purpose was to give you some idea of potential bumps in the road-to-webmentions traverse so you could, if not truly *avoid* them, at least know where they were before you cracked a metaphorical front axle on them. To be sure, many other Gatsby users can address them far, far more capably than I; but what I've done works and, hey, my hands shake only a *little* when I recall the ordeal.
 
-Now, let's wrap up things with this series’ [conclusion](/posts/2020/04/webmentions-three-ssgs-5)---including that **bibliography** I touted at the start.
+Now, let's wrap up things with this series’ [conclusion](/posts/2020/04/webmentions-three-ssgs-5/)---including that **bibliography** I touted at the start.

@@ -18,7 +18,7 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-Perhaps by now you've read how I [moved the site](/posts/2020/07/goodbye-hello-part-2) back to [Netlify](https://netlify.com), its long-time home, following the [initial move](/posts/2020/07/goodbye-hello) to [Vercel](https://vercel.com). If so, you know it was largely a sentimental decision, born out of my having missed being a part, even if a small one, of the Netlify community.
+Perhaps by now you've read how I [moved the site](/posts/2020/07/goodbye-hello-part-2/) back to [Netlify](https://netlify.com), its long-time home, following the [initial move](/posts/2020/07/goodbye-hello/) to [Vercel](https://vercel.com). If so, you know it was largely a sentimental decision, born out of my having missed being a part, even if a small one, of the Netlify community.
 
 Well, that's nice and all, but&nbsp;.&nbsp;.&nbsp;.
 
@@ -34,7 +34,7 @@ Why?
 
 - There's also the simple fact that I admire the opinions of the extremely smart guys who run Fathom Analytics, who are [moving their site to Vercel later this year](https://usefathom.com/blog/tech-stack). Learning that (which was after I'd moved back to Netlify, in my own defense) probably was the first thing that got me to re-thinking my re-think, if you will.
 
-So we'll see if I stick around this time. I hope this is not going to be the site-hosting equivalent of [last year's SSG "dance."](/posts/2019/12/sorta-strange-ssg-trip) And, if you're one of my few but highly appreciated regular visitors, I'm sure you share that hope.
+So we'll see if I stick around this time. I hope this is not going to be the site-hosting equivalent of [last year's SSG "dance."](/posts/2019/12/sorta-strange-ssg-trip/) And, if you're one of my few but highly appreciated regular visitors, I'm sure you share that hope.
 
-**Note**: [To be continued](/posts/2020/09/goodbye-hello-part-4) (sigh).
+**Note**: [To be continued](/posts/2020/09/goodbye-hello-part-4/) (sigh).
 {.yellowBox}

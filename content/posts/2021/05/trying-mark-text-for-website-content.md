@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Mark Text logo sourced from <a href="https://marktext.app/">Mark Text website</a></span>
 ---
 
-If you're going to have a website which, like this one, is powered by a [static site generator](https://jamstack.org/generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format---the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down).
+If you're going to have a website which, like this one, is powered by a [static site generator](https://jamstack.org/generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format---the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down/).
 
 The apps I've used for managing this site's content have included all of the following, in descending order of how much I've used them for this purpose:
 
@@ -32,7 +32,7 @@ The answer to that one involves some navel-gazing.
 
 One thing you do when you have analytics set up for your site, as I've done for this site with [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate link), is keeping track of which sites are referring visitors to you. A few days ago, I noticed a small number of referrals coming from a site of which I'd never heard, although it's been around since 2010: [Linux Rig](https://linuxrig.com). It celebrates not only [Linux](https://www.linux.com/what-is-linux/) in particular but also [free open-source software (FOSS)](https://itsfoss.com/what-is-foss/) in general.
 
-The referral seemed odd since I rarely, if ever, mention Linux here; so, my curiosity aroused, I did some searching and, eventually, came across the source of the referral link. It was a [brief piece](https://linuxrig.com/2019/05/07/why-i-left-ulysses) which had been prompted by my publication of, and borrowed the title from, what as of now is this site's most-viewed article, "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)." It even was dated from a few days after I'd posted the original.
+The referral seemed odd since I rarely, if ever, mention Linux here; so, my curiosity aroused, I did some searching and, eventually, came across the source of the referral link. It was a [brief piece](https://linuxrig.com/2019/05/07/why-i-left-ulysses) which had been prompted by my publication of, and borrowed the title from, what as of now is this site's most-viewed article, "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)." It even was dated from a few days after I'd posted the original.
 
 Now I was really curious, given that the Mac-only, proprietary Ulysses neither runs on Linux nor is FOSS.
 

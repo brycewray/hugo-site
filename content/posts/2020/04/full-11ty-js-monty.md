@@ -22,11 +22,11 @@ Well, wouldn't you know it? My [recent post](/posts/2020/03/back-nunjucks-eleven
 
 Curious about the code itself? Check out this site's [public repository](https://github.com/brycewray/eleventy_bundler) for the .11ty.js templating. If you want to see the previous Nunjucks stuff, feel free to nose around inside some of the repo's [public branches](https://github.com/brycewray/eleventy_bundler/branches). And, if you're of a mildly sadistic bent, the `nunjucks-to-11ty-js`, `another-to-11ty-js`, and `wm-11ty-js` branches in particular might amuse you as you watch me huff and puff my way through the conversion process.
 
-For that matter: the `wm-11ty-js` branch actually is how I got to the point which allowed me to pull the Nunjucks-to-JavaScript switch on this here real site, rather than just futzing around with code on the local Mac. As I [noted previously](/posts/2020/03/back-nunjucks-eleventy-site):
+For that matter: the `wm-11ty-js` branch actually is how I got to the point which allowed me to pull the Nunjucks-to-JavaScript switch on this here real site, rather than just futzing around with code on the local Mac. As I [noted previously](/posts/2020/03/back-nunjucks-eleventy-site/):
 
 > .&nbsp;.&nbsp;.&nbsp;it didn't take me long to realize that I simply don't know enough JavaScript to implement a *full* switchover. .&nbsp;.&nbsp;.&nbsp;in the end, I still was left with multiple key templates in .njk. It wasn't so terrible, but, well, the intent had been to switch, completely. And I couldn't.
 
-That was what I wrote a few weeks ago. But, as my past posts have shown, your friendly post boy, here, takes his lumps from a first-time-around learning experience, nurses his wounds, and then keeps coming back until he gets it right---or, at least, as right as he can. So it was with [CSS Grid](/posts/2018/11/grid-locked-no-more), my "[dance](/posts/2019/12/sorta-strange-ssg-trip)" with multiple [SSGs](https://staticgen.com) in general and [Gatsby](/posts/2019/10/now-gatsby-geezer) in particular (before I [wised up and came back to Eleventy](/posts/2019/12/packing-up), of course), and [PostCSS](/posts/2020/01/two-cheers-tailwind).
+That was what I wrote a few weeks ago. But, as my past posts have shown, your friendly post boy, here, takes his lumps from a first-time-around learning experience, nurses his wounds, and then keeps coming back until he gets it right---or, at least, as right as he can. So it was with [CSS Grid](/posts/2018/11/grid-locked-no-more/), my "[dance](/posts/2019/12/sorta-strange-ssg-trip/)" with multiple [SSGs](https://staticgen.com) in general and [Gatsby](/posts/2019/10/now-gatsby-geezer/) in particular (before I [wised up and came back to Eleventy](/posts/2019/12/packing-up/), of course), and [PostCSS](/posts/2020/01/two-cheers-tailwind/).
 
 And, yea verily, so it was with JavaScript-only templating.
 
@@ -40,9 +40,9 @@ With this site now in the fifty-plus range where number of posts is concerned, I
 
 I had carefully followed the [Eleventy site](https://11ty.dev)'s [great explanation](https://11ty.dev/docs/pagination) on making such a paginated list. Only problem: it's based on doing so in Nunjucks. And, since it's still unusual for an Eleventy site to be all-.11ty.js (and even those which are tend not to have paginated lists in their public repos), I couldn't find any good ways of doing it. I would have to figure it out.
 
-And, oddly enough: I was able to do so chiefly because of my experience with [Gatsby](https://gatsbyjs.org)---especially my [recently](/posts/2020/04/different-modes-different-code) making public both Gatsby- and [Hugo](https://gohugo.io)-based repos of this site. While the all-JavaScript[^React] code for the Gatsby version of the paginated posts list wasn't directly transferrable, chiefly because of Gatsby's reliance on [GraphQL](https://graphql.org), there were enough similarities that I could find my way.
+And, oddly enough: I was able to do so chiefly because of my experience with [Gatsby](https://gatsbyjs.org)---especially my [recently](/posts/2020/04/different-modes-different-code/) making public both Gatsby- and [Hugo](https://gohugo.io)-based repos of this site. While the all-JavaScript[^React] code for the Gatsby version of the paginated posts list wasn't directly transferrable, chiefly because of Gatsby's reliance on [GraphQL](https://graphql.org), there were enough similarities that I could find my way.
 
-[^React]: Albeit that it was using [React](https://reactjs.org), of course, but that wasn't the obstacle it would've been a few months ago before the "[dance](/posts/2019/12/sorta-strange-ssg-trip)" somewhat toughened me to dealing with it.
+[^React]: Albeit that it was using [React](https://reactjs.org), of course, but that wasn't the obstacle it would've been a few months ago before the "[dance](/posts/2019/12/sorta-strange-ssg-trip/)" somewhat toughened me to dealing with it.
 
 ### Webmentions
 
@@ -58,7 +58,7 @@ Because my Nunjucks-based templates and files for webmentions had been based on 
 
 #### One more thing about webmentions
 
-Just as I [previously](/posts/2020/04/different-modes-different-code) noted, I don't promise to keep the Gatsby- and Hugo-based repos up to date with this one. While that originally referred only to my keeping the *posts* up to date, which actually isn't that hard, the re-addition of webmentions to this site now is another item which I'll make part of those repos *when* (and *if*) I can.
+Just as I [previously](/posts/2020/04/different-modes-different-code/) noted, I don't promise to keep the Gatsby- and Hugo-based repos up to date with this one. While that originally referred only to my keeping the *posts* up to date, which actually isn't that hard, the re-addition of webmentions to this site now is another item which I'll make part of those repos *when* (and *if*) I can.
 
 The amazingly capable [Chris Biscardi](https://www.christopherbiscardi.com/) has come up with a [Gatsby plugin](https://www.npmjs.com/package/gatsby-plugin-webmention) for this. It's not (yet?) listed in the [official Gatsby plugins section](https://gatsbyjs.org/plugins), which gives me some pause, but I'll probably check it out. If it's not the answer, I'll probably just try to adapt this site's .11ty.js webmentions-related code for use in that repo.[^Courtesy]
 
@@ -108,7 +108,7 @@ Believe me, any of you who may be considering webmentions in general and Elevent
 
 And, of course, one must *always* acknowledge [the guy](https://zachleat.com) who, you know, [*created* Eleventy](https://www.zachleat.com/web/introducing-eleventy/) and works nearly every day on making it better, despite his having [just switched Day Jobs](https://www.zachleat.com/web/netlify/), to make it the coolest, friendliest, most easily configured SSG out there. No biggie.
 
-But, seriously: that great Eleventy community I mentioned earlier seems to take its cues from Mr. Leatherman, whose friendly nature and quick wit make adopting Eleventy even more pleasant than it would be anyway. As I [wrote last December](/posts/2019/12/packing-up), Eleventy is "a good product built by a good person."
+But, seriously: that great Eleventy community I mentioned earlier seems to take its cues from Mr. Leatherman, whose friendly nature and quick wit make adopting Eleventy even more pleasant than it would be anyway. As I [wrote last December](/posts/2019/12/packing-up/), Eleventy is "a good product built by a good person."
 
 Eleventy is by no means the best-known of the SSGs, and [it is purposely *not* based on any framework](https://www.11ty.dev/docs/), so it can claim no built-in base of fanboy developers---as can Gatsby because of its ties to React, or as [Gridsome](https://gridsome.org)'s creators hope it will because of its ties to [Vue](https://vuejs.org). Thus, Mr. Leatherman's continuing achievement in building and enhancing Eleventy, along with the growth and *esprit de corps* of the Eleventy community, are even more impressive by comparison.
 

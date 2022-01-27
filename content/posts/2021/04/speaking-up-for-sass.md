@@ -21,7 +21,7 @@ featured_image_caption: |
 
 It's important for me to stay current with trends that affect my web development efforts. That's true whether we're talking about the websites I manage as part of the Day Job or just the tinkering I do with this personal site.
 
-For example, I've recently [written about](/posts/2021/03/jit-game-changer-tailwind-css), and have made significant use of, not only [Tailwind CSS](https://tailwindcss.com) but also its new, experimental [just-in-time (JIT) compiler](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css). To be sure, Tailwind's appeal among web developers---especially those who aren't particularly fond of futzing with CSS in the first place---is powerful and growing.
+For example, I've recently [written about](/posts/2021/03/jit-game-changer-tailwind-css/), and have made significant use of, not only [Tailwind CSS](https://tailwindcss.com) but also its new, experimental [just-in-time (JIT) compiler](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css). To be sure, Tailwind's appeal among web developers---especially those who aren't particularly fond of futzing with CSS in the first place---is powerful and growing.
 
 That said, there's plenty to be said for the tried and the true, the styling methods that were around years ago, long before Tailwind and other examples of New Shiny CSS ever existed. And, today, I'm here to do some of that "saying" in support of one of them: namely, the [Sass CSS preprocessor](https://sass-lang.com).
 
@@ -35,7 +35,7 @@ That's because those tend to be places where the execrable Internet Explorer 11 
 
 [^TWCSSandIE]: By the way: as of the release of version 2.0 in November, 2020, [Tailwind CSS doesn't support Internet Explorer](https://blog.tailwindcss.com/tailwindcss-v2#incompatibility-with-ie11). If you must use Tailwind *and* support IE users, you'll have to stick with Tailwind version 1.9.
 
-[^oldBrowsers]: Where the need to support old browsers is concerned, It also helps if you pair Sass with [PostCSS](https://postcss.org) and [Autoprefixer](https://github.com/postcss/autoprefixer), as I've done in [this site's repository](https://github.com/brycewray/eleventy_solo) as well as my two [Eleventy starter sets](/posts/2021/03/beginners-luck-update) that use SCSS, but that's up to you.
+[^oldBrowsers]: Where the need to support old browsers is concerned, It also helps if you pair Sass with [PostCSS](https://postcss.org) and [Autoprefixer](https://github.com/postcss/autoprefixer), as I've done in [this site's repository](https://github.com/brycewray/eleventy_solo) as well as my two [Eleventy starter sets](/posts/2021/03/beginners-luck-update/) that use SCSS, but that's up to you.
 
 However, even if you *don't* need to worry about IE 11 users, **Sass is still an incredibly attractive option for your work in CSS**.
 
@@ -175,9 +175,9 @@ If you're one of those wonderful and all-too-rare folks who document their code,
 // Most coders will find this familiar.
 
 /*
-(Note that, if desired, you can still use 
-the "wrapper" characters to simplify 
-multi-line comments, disable entire blocks 
+(Note that, if desired, you can still use
+the "wrapper" characters to simplify
+multi-line comments, disable entire blocks
 of code, etc.)
 */
 ```
@@ -191,9 +191,9 @@ Then there are those capabilities built into Sass which you likely won't ever se
 
 Full disclosure: I personally haven't had to use more than a tiny fraction of these as yet (mainly `@use` for now), but I also haven't spent as much time in Sass as I'd have liked, especially in the last year or so. I'm sure I'll be doing quite a bit more Sass work in the future, and expect to find myself increasingly using these capabilities.[^thisSite]
 
-[^thisSite]: Yesterday, I converted this site back to Sass after giving serious thought to all the items, and more, I've discussed in this article. I did so despite my previously expressed interest in Tailwind, partly because [I expect to be doing more Sass-related development in the Day Job in the future](/posts/2021/03/next-steps) and thus think I'll find it less neck-snapping to go from Day Job web dev on workdays to personal web dev nights and weekends. **Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing that development after all.
+[^thisSite]: Yesterday, I converted this site back to Sass after giving serious thought to all the items, and more, I've discussed in this article. I did so despite my previously expressed interest in Tailwind, partly because [I expect to be doing more Sass-related development in the Day Job in the future](/posts/2021/03/next-steps/) and thus think I'll find it less neck-snapping to go from Day Job web dev on workdays to personal web dev nights and weekends. **Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing that development after all.
 
-## Room for Sass in the Tailwind era? 
+## Room for Sass in the Tailwind era?
 
 There's little doubt that the lead dog in the CSS mindshare race right now is the utility-first Tailwind CSS framework. It would be reasonable to wonder if there's even a future for something like Sass in a dev world seemingly dominated by Tailwind.
 
@@ -223,7 +223,7 @@ Besides: don't you still **need** to name them? As [Aleksandr Hovhannisyan](http
 
 And I would say this is true even if you're a team of one. If you don't know what to call it, maybe you don't really grasp its purpose---and that's not good.
 
-### Plugins-ism *vs.* just-one-thing-ism 
+### Plugins-ism *vs.* just-one-thing-ism
 
 Tailwind depends on PostCSS, and a Tailwind user more often than not is going to be using other PostCSS plugins besides just Tailwind---often to get things, like mixins and nesting, with which devs had become familiar in earlier experience with Sass. As I mentioned before, there are some PostCSS plugins that have to be installed and configured in highly specific ways; otherwise, they can fail *and* also disable the other plugins, including Tailwind.
 

@@ -18,13 +18,13 @@ featured_image_caption: |
 
 The inspiration for this mercifully brief post was a metaphorical, "Why didn't I think of this before?”-kinda forehead-slap. And perhaps it should have been more than metaphorical.
 
-Back in February, I wrote [an article](/posts/2021/02/go-big-go-home) about my conversion of an [Eleventy](https://11ty.dev) [shortcode](https://11ty.dev/docs/shortcodes) to a [Go](https://go.dev)-based shortcode for [Hugo](https://gohugo.io). Each shortcode's purpose generated the necessary HTML for responsive handling of an image from my [Cloudinary](https://cloudinary.com) account. While the spaghetti-ish result for Hugo certainly worked, it was ’way more convoluted and hard to read than it needed to be. This post is an attempt to make up for that.
+Back in February, I wrote [an article](/posts/2021/02/go-big-go-home/) about my conversion of an [Eleventy](https://11ty.dev) [shortcode](https://11ty.dev/docs/shortcodes) to a [Go](https://go.dev)-based shortcode for [Hugo](https://gohugo.io). Each shortcode's purpose generated the necessary HTML for responsive handling of an image from my [Cloudinary](https://cloudinary.com) account. While the spaghetti-ish result for Hugo certainly worked, it was ’way more convoluted and hard to read than it needed to be. This post is an attempt to make up for that.
 
 You see, I realized the other day that---“[D'oh](https://simpsons.fandom.com/wiki/D%27oh)!”---I'd taken far too literally the process of going from the Eleventy shortcode to its Hugo counterpart. The JavaScript-based Eleventy original was structured to build and then `return` a string, but that wasn't necessary for the Hugo shortcode since its result, by default, already **was** a string. It was as if I had promised you the recipe for a pumpkin pie but, instead, had told you how to **type** the recipe or, worse, how to spell it out by positioning strands of wet, uh, spaghetti. Maybe in the end you still got a pumpkin pie recipe, but with much more trouble---and at the expense of a ridiculously messy kitchen counter.[^analogy]
 
 [^analogy]: I do concede that this analogy may, amazingly, be even more convoluted than the Hugo shortcode I gave you in the earlier post.
 
-Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specific syntax therein, please refer to the [original post](/posts/2021/02/go-big-go-home) and its explanatory links.
+Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specific syntax therein, please refer to the [original post](/posts/2021/02/go-big-go-home/) and its explanatory links.
 
 ```go-html-template
 {{/* init the first set of vars */}}

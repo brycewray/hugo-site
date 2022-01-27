@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Anne-Onyme-1513318/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Anne-Onyme</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Pixabay</a></span>
 ---
 
-Nearly a year since my [first encounter](/posts/2019/06/ahoy-mate) with [MailMate](https://freron.com), a stupendously powerful macOS email client app for power users, I remain utterly amazed by all its capabilities.
+Nearly a year since my [first encounter](/posts/2019/06/ahoy-mate/) with [MailMate](https://freron.com), a stupendously powerful macOS email client app for power users, I remain utterly amazed by all its capabilities.
 
 Largely since I'm *not* a heavy email user and [purposely don't use my go-to phone for any business email purposes](https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/), I've gone back and forth between using and not using MailMate. To some degree, how firmly I've stayed with the app has depended on how I felt at any given time about Apple Mail on macOS. So, since the Catalina (macOS 10.15) version has had [its](https://appleinsider.com/articles/19/10/12/missing-message-issues-plague-mail-users-in-macos-catalina) [share](https://9to5mac.com/2020/02/05/apple-pushed-fix-for-mail-app-encryption-bug-with-latest-macos-catalina-release/) [of](https://www.reddit.com/r/MacOS/comments/f3a15y/mail_app_in_catalina_1015_acting_strange/) [problems](https://forums.macrumors.com/threads/is-the-general-consensus-here-to-use-apple-mail.2190390/post-28121466), my macOS email activity is back to essentially all MailMate, all the time.
 
@@ -106,7 +106,7 @@ Account
 
 Another key organizational feature for heavy email users is the ability to assign *tags* to emails. Both apps provide this feature (contrary to what I said in the original version[^AMCorrected] of this post); AltaMail calls them *flags* rather than *tags*. Preside's tags use iMAP keywords, as is true for MailMate; Preside also can suggest tags for you based on past behavior.
 
-[^AMCorrected]: At first, I said AltaMail had no tagging ability; but a long-time AltaMail user kindly corrected me on that, as I had asked the MailMate mailing list recipients to do if they found errors in the post. This particular gentleman noted: "Tags/Keywords are also available. If I recall these are not on by default. In fact they may be called Flags which makes it more confusing." I did confirm this within the [appropriate section](https://mobile.eurosmartz.com/help/app/am/setFlag.html) of the AltaMail documentation. 
+[^AMCorrected]: At first, I said AltaMail had no tagging ability; but a long-time AltaMail user kindly corrected me on that, as I had asked the MailMate mailing list recipients to do if they found errors in the post. This particular gentleman noted: "Tags/Keywords are also available. If I recall these are not on by default. In fact they may be called Flags which makes it more confusing." I did confirm this within the [appropriate section](https://mobile.eurosmartz.com/help/app/am/setFlag.html) of the AltaMail documentation.
 
 ### Over-the-top, smart support
 
@@ -164,7 +164,7 @@ Why such a sequence? Who knows?
 And you have to figure it out on your own, because this is all you get from the AltaMail documentation:
 
 > **Edit, delete, and make new email folders**
-> 
+>
 > Tap on the "Folders" button in the left side panel. Then tap on the folder button beside an email account to show the folders. You may have to tap the left arrow beside the folder heading to go back to the correct account.
 
 So, if you're trying out AltaMail and want to navigate through multiple folders in one session, now you know how to do it---**but** only from the steps I gave above, **not** from the documentation. It would be one thing if AltaMail were sufficiently popular that there were a million web pages out there with "The AltaMail manual that EuroSmartz forgot to write" kind of help for you from other users, but that's just not reality.
@@ -179,7 +179,7 @@ Where Preside is concerned, the elephant in the room for me is *notifications*--
 
 In Preside's FAQs-serving-as-documentation, its dev makes what I concede is a [well-argued case](https://preside.io/faq.html#Notifications) against even using notifications *at all*, since he believes that *all* notifications compromise one's productivity. As a result, you won't be surprised to know that Preside is lacking where notifications are concerned---at least, *real-time* notifications.[^HolyMail]
 
-[^HolyMail]: As I've [explained before](/posts/2019/05/the-holy-mail), I wanted real-time email notifications in iOS badly enough to switch email vendors after over a decade. My choice, FastMail, [worked with Apple](https://blog.fastmail.com/2015/07/17/push-email-now-available-in-ios-mail) to enable real-time notifications capability for its servers’ emails in the Apple Mail app.
+[^HolyMail]: As I've [explained before](/posts/2019/05/the-holy-mail/), I wanted real-time email notifications in iOS badly enough to switch email vendors after over a decade. My choice, FastMail, [worked with Apple](https://blog.fastmail.com/2015/07/17/push-email-now-available-in-ios-mail) to enable real-time notifications capability for its servers’ emails in the Apple Mail app.
 
 The two Preside notifications options that were readily available to me[^OtherMethods], **Background iOS Fetch** and **Assisted iOS Fetch** (the latter requires a free online account), both provided considerably tardier notifications than either Apple Mail or AltaMail. The gap in my testing ranged as long as forty-eight minutes with **Background iOS Fetch**, the less "active" of the two choices; however, it *sometimes* was as short as only a few seconds---but more normally was a few minutes---with **Assisted iOS Fetch**.
 

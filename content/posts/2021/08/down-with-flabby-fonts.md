@@ -19,7 +19,7 @@ featured_image_caption: |
 
 Consider this a blast from the past, just the not-too-distant past.
 
-Last year, I issued the [initial offering](/posts/2020/12/gems-in-rough) of what became a series of "Gems in the rough" posts with tips for my fellow and sister static website nerds. Near the end of that post, I described a procedure for cutting web fonts down to size, so as to make them a smaller (and thus faster) download for your visitors.
+Last year, I issued the [initial offering](/posts/2020/12/gems-in-rough/) of what became a series of "Gems in the rough" posts with tips for my fellow and sister static website nerds. Near the end of that post, I described a procedure for cutting web fonts down to size, so as to make them a smaller (and thus faster) download for your visitors.
 
 Because I keep seeing the appearance of *non*-downsized fonts in the code of more websites than I care to consider, I thought I'd give that segment a post of its own, albeit with a few edits here and there to account for current realities.
 

@@ -22,7 +22,7 @@ Who needs heroes? Not this site, I've decided.
 
 Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimization-glossary/hero-image/)---a massive photo or other graphic element that constitutes much if not all of the "above-the-fold" content on the typical website these days.
 
-If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great, big, honkin’ stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019)):
+If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great, big, honkin’ stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019/)):
 
 {{< imgc src="2020-01-31--curmudgeonishish-2019_1280x726.jpg" alt="Screen capture of “hero image” from “Some curmudgeonish thoughts, 2019 edition,” as it appeared before the site redesign" width="1280" height="726" >}}
 
@@ -34,7 +34,7 @@ And it's here because of stuff I learned---and a decision I made.
 
 ## Oh, what a tangled WebP&nbsp;.&nbsp;.&nbsp;.
 
-As part of the [conversion](/posts/2019/12/packing-up) of this site to an [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo, I determined to do a better job where providing [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) is concerned. In the beginning, I accomplished this through use of [responsive-loader](https://github.com/herrstucki/responsive-loader), but that gave me only different sizes of JPGs and PNGs to serve visitors. There was no provision for the Google-created [WebP](https://developers.google.com/speed/webp) format which, although it's [been around for nearly a decade](https://web.archive.org/web/20101004134848/http://code.google.com/intl/no/speed/webp/docs/c_study.html) and is much more efficient than either JPG or PNG in most cases, has only recently gained support among a sufficient number of *non*-Chrome browsers to make it worth providing, in my opinion.[^ChrShare]
+As part of the [conversion](/posts/2019/12/packing-up/) of this site to an [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo, I determined to do a better job where providing [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) is concerned. In the beginning, I accomplished this through use of [responsive-loader](https://github.com/herrstucki/responsive-loader), but that gave me only different sizes of JPGs and PNGs to serve visitors. There was no provision for the Google-created [WebP](https://developers.google.com/speed/webp) format which, although it's [been around for nearly a decade](https://web.archive.org/web/20101004134848/http://code.google.com/intl/no/speed/webp/docs/c_study.html) and is much more efficient than either JPG or PNG in most cases, has only recently gained support among a sufficient number of *non*-Chrome browsers to make it worth providing, in my opinion.[^ChrShare]
 
 [^ChrShare]: Of course, between Google Chrome's already massive market share and the adoption by the Windows-default Microsoft Edge of the [Chromium](https://www.chromium.org) engine, that provided even more incentive to serve WebP-format images.
 
@@ -88,7 +88,7 @@ I'd thought about it before because, frankly, I had tired of always having to fi
 
 Besides, as I kept telling myself: "Dude, what few people you have visiting here from time to time *don't* come here looking for the Picture of the Day. They come here looking for *information*. For *words*. If you want to stick images *inside* certain posts to *illustrate points*, that's a totally different matter.[^postsImgs] But this ain't [*Life Magazine*](https://en.wikipedia.org/wiki/Life_(magazine))."
 
-[^postsImgs]: As of the day this was first posted, those posts with included images are: "[The client is too smart for you](/posts/2018/10/client-too-smart)”; "[Readable web type, pretty please](/posts/2018/10/web-typography-part-1)”; "[A stacked deck](/posts/2018/10/web-typography-part-2)”; "[Blox sux](/posts/2019/01/blox-sux)”; "[iA for IO?](/posts/2019/02/ia-for-io)”; "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)”; "[Ahoy, 'Mate](/posts/2019/06/ahoy-mate)”; "[Independence](/posts/2019/07/independence)”; and "[Roger, Copy](/posts/2019/07/roger-copy).”
+[^postsImgs]: As of the day this was first posted, those posts with included images are: "[The client is too smart for you](/posts/2018/10/client-too-smart/)”; "[Readable web type, pretty please](/posts/2018/10/web-typography-part-1/)”; "[A stacked deck](/posts/2018/10/web-typography-part-2/)”; "[Blox sux](/posts/2019/01/blox-sux/)”; "[iA for IO?](/posts/2019/02/ia-for-io/)”; "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)”; "[Ahoy, 'Mate](/posts/2019/06/ahoy-mate/)”; "[Independence](/posts/2019/07/independence/)”; and "[Roger, Copy](/posts/2019/07/roger-copy/).”
 
 As a result, I created a new branch, retooled the site accordingly, and today published the redesigned, hero-image-less site you now see.
 
@@ -100,6 +100,6 @@ So, it's gone.
 
 Will I miss the hero images? Perhaps. Maybe some of you will, too. And I did think they added a nice feel to things at times. Nonetheless, I hope this decision, like others[^decisions] I've made over the brief history of this site, will ensure that each visitor's browsing experience will be the best possible.
 
-[^decisions]: For example: doing the site in a [static site generator](https://staticgen.com) in the first place; choosing [Netlify](https://netlify.com) to host it; and generating it through the [current Eleventy/webpack combo](/posts/2019/12/packing-up).
+[^decisions]: For example: doing the site in a [static site generator](https://staticgen.com) in the first place; choosing [Netlify](https://netlify.com) to host it; and generating it through the [current Eleventy/webpack combo](/posts/2019/12/packing-up/).
 
 After all, *you* folks are the *real* heroes. You keep coming back. If that's not heroic, I don't know what is.

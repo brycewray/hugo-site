@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
-Starting with this latest version of the "Mixed nuts" series of *über*-random observations that I [began inflicting upon you nearly two years ago](/posts/2019/11/mixed-nuts-2019-11), I will name each according to its sequence in the motley crew rather than its month of publication. In other words, this post previously would have been "Mixed nuts • August, 2021" but will, instead, be "Mixed nuts #9."
+Starting with this latest version of the "Mixed nuts" series of *über*-random observations that I [began inflicting upon you nearly two years ago](/posts/2019/11/mixed-nuts-2019-11/), I will name each according to its sequence in the motley crew rather than its month of publication. In other words, this post previously would have been "Mixed nuts • August, 2021" but will, instead, be "Mixed nuts #9."
 
 With that unbelievably trivial concept suitably conveyed, let us now get to what, believe it or not, are even **more** mundane thoughts on my part.
 
@@ -27,7 +27,7 @@ My work department was supposed to have returned to the office on a "hybrid" bas
 
 In a few days, I'll be providing what they call on Twitter "some personal news." Whether you'll care is, as always, totally up to you, but it will be a significant milestone for your erstwhile correspondent. "[Be here. Aloha.](https://en.wikipedia.org/wiki/Hawaii_Five-O_(1968_TV_series)#Credits)"
 
-*My inability to watch my home team's ballgames on a regular basis due to what I [called the "RSNs flap"](/posts/2020/02/youtube-tv-rsns-flap) has had about the effect I'd figured it would: I have spent virtually no time this year watching **any** MLB games. While I doubt that the MLB moguls care about the viewing habit of this old fart, they **should** worry that an entire younger generation of potential baseball fans also is being shut out. In a decade or two, the owners and players might just find almost no one left (in the U.S., at least) still caring about, much less willing to pay to see, the sport that's made them all rich.*
+*My inability to watch my home team's ballgames on a regular basis due to what I [called the "RSNs flap"](/posts/2020/02/youtube-tv-rsns-flap/) has had about the effect I'd figured it would: I have spent virtually no time this year watching **any** MLB games. While I doubt that the MLB moguls care about the viewing habit of this old fart, they **should** worry that an entire younger generation of potential baseball fans also is being shut out. In a decade or two, the owners and players might just find almost no one left (in the U.S., at least) still caring about, much less willing to pay to see, the sport that's made them all rich.*
 
 **Finally, from the [virtual mailbag](/contact)&nbsp;.&nbsp;.&nbsp;.**\
 A reader told me that he shares my oft-noted affinity for Trying Whatever Is Currently Cool and therefore, implored me jokingly:
@@ -38,7 +38,7 @@ The only thing I could say to that was:
 
 > Ah, but you're working on a false assumption: *i.e.*, if I could avoid shiny objects themselves, then I could avoid recommendations thereof. But that's a huge "if."
 
-Another reader, having seen my "[Conversation piece](/posts/2020/10/conversation-piece)" article reviewing methods of allowing commenting on static websites, asked why I no longer had such commenting on my site. As I told him:
+Another reader, having seen my "[Conversation piece](/posts/2020/10/conversation-piece/)" article reviewing methods of allowing commenting on static websites, asked why I no longer had such commenting on my site. As I told him:
 
 > I decided to go with strictly emails after reading a few articles by fellow bloggers indicating that they preferred communicating by email with their readers, believing---as I have found, too---that such communications usually provided greater value to both sides.
 

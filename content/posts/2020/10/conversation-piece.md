@@ -19,13 +19,13 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-Modern static websites have many advantages over many old-school dynamic ones---especially those based on [WordPress](https://wordpress.org)---as [noted here recently](/posts/2020/09/normal-persons-guide-static-websites). However, one area where they fall short is the ease, or lack thereof, of providing commenting capabilities.
+Modern static websites have many advantages over many old-school dynamic ones---especially those based on [WordPress](https://wordpress.org)---as [noted here recently](/posts/2020/09/normal-persons-guide-static-websites/). However, one area where they fall short is the ease, or lack thereof, of providing commenting capabilities.
 
 Now, perhaps you don't *care* whether your readers have a chance to respond to your site's content. Or, perhaps, you just leave them an email address or your Twitter handle and let that handle it. If so, you can stop reading right now. After all, you've already determined that this isn't a problem for you.
 
-On the other hand, if you *do* want to provide such functionality but are uncertain how to proceed with a static site, I have some thoughts that might help you. All the services I'm mentioning are hosted, as I'm assuming you're running the site in a "serverless" environment ([as I recommend](/posts/2020/09/normal-persons-guide-static-website-hosting))---such as on [Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Render](https://render.com)---or otherwise are simply unable to install commenting software on a server you can control.
+On the other hand, if you *do* want to provide such functionality but are uncertain how to proceed with a static site, I have some thoughts that might help you. All the services I'm mentioning are hosted, as I'm assuming you're running the site in a "serverless" environment ([as I recommend](/posts/2020/09/normal-persons-guide-static-website-hosting/))---such as on [Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Render](https://render.com)---or otherwise are simply unable to install commenting software on a server you can control.
 
-**Note**: Yes, there also are [webmentions](https://indieweb.org/webmention), as I [explained earlier this year](/posts/2020/04/webmentions-three-ssgs-1), but they aren't the easiest things to set up and maintain, even if you're rather tech-savvy. This post is mainly for normal (*i.e.*, non-nerdy) folks who want more conventional commenting on their static websites.
+**Note**: Yes, there also are [webmentions](https://indieweb.org/webmention), as I [explained earlier this year](/posts/2020/04/webmentions-three-ssgs-1/), but they aren't the easiest things to set up and maintain, even if you're rather tech-savvy. This post is mainly for normal (*i.e.*, non-nerdy) folks who want more conventional commenting on their static websites.
 
 ## Don't even consider Disqus
 
@@ -165,4 +165,4 @@ For your purposes, I'd rank the *non*-free offerings as follows:
 3. **Hyvor Talk**---If you don't care so much about code load (although you probably should), this should be your second option from this group. I'd watch this one for what I hope will be future refinements that further trim it down, perhaps by letting you use a significantly lighter and more bare-bones version thereof.
 4. **Talkyard**---The code load just buries this otherwise great and highly affordable choice. As with Hyvor Talk, I hope there will eventually be a "Light" version that's a much smaller download and is for *only* commenting, rather than carrying the additional weight that supports its many other features.
 
-[^1]:	Part of the reason why I'd do so is because, at this writing, I'm already paying for [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) *(affiliate link)* and, as noted in "[Forward PaaS](/posts/2020/10/forward-paas)," am hosting the site with the $5/month combo of Cloudflare Workers and KV storage. Thus, I do have some incentive to keep down the monthly costs for running this **non**-monetized site.
+[^1]:	Part of the reason why I'd do so is because, at this writing, I'm already paying for [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) *(affiliate link)* and, as noted in "[Forward PaaS](/posts/2020/10/forward-paas/)," am hosting the site with the $5/month combo of Cloudflare Workers and KV storage. Thus, I do have some incentive to keep down the monthly costs for running this **non**-monetized site.

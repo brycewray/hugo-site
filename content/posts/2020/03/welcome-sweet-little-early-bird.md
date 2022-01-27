@@ -19,7 +19,7 @@ This'll be short. It's just an update on some good news I'd previously mentioned
 
 The old saying is that "Life is what happens when you're making other plans." True dat, as the kids were saying a few years ago.
 
-I [told](/posts/2019/09/now-im-sixty-four) you back in September that we were awaiting our first grandchild; then, in November, I [noted](/posts/2019/11/mixed-nuts-2019-11) that we'd learned she'd be a granddaughter, arriving in April.
+I [told](/posts/2019/09/now-im-sixty-four/) you back in September that we were awaiting our first grandchild; then, in November, I [noted](/posts/2019/11/mixed-nuts-2019-11/) that we'd learned she'd be a granddaughter, arriving in April.
 
 Granddaughter? Check. But arriving in April? Well&nbsp;.&nbsp;.&nbsp;.
 

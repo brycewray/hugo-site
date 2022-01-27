@@ -18,7 +18,7 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-**Note**: This is the conclusion of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)).
+**Note**: This is the conclusion of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2/)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3/)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/)).
 {.yellowBox}
 
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
@@ -26,7 +26,7 @@ featured_image_caption: |
 
 [Yes, Virginia](https://en.wikipedia.org/wiki/Yes,_Virginia,_there_is_a_Santa_Claus), there *is* an end to this series.
 
-Especially for those of you who took my [Part 1](/posts/2020/04/webmentions-three-ssgs-1) recommendation to heart and read, or at least skimmed, through it all and in order: I apologize for the length of this series. Still, it could've been worse. I originally wrote it as *one long post* before deciding to break that up into five parts (intro, Eleventy-specific part, Hugo-specific part, Gatsby-specific part, and this wrap-up). When I realized that most people would want this information as it relates to only *one* of these SSGs, I knew I had to break it up into parts.
+Especially for those of you who took my [Part 1](/posts/2020/04/webmentions-three-ssgs-1/) recommendation to heart and read, or at least skimmed, through it all and in order: I apologize for the length of this series. Still, it could've been worse. I originally wrote it as *one long post* before deciding to break that up into five parts (intro, Eleventy-specific part, Hugo-specific part, Gatsby-specific part, and this wrap-up). When I realized that most people would want this information as it relates to only *one* of these SSGs, I knew I had to break it up into parts.
 
 But, even so, even in parts: why so *many* details?
 

@@ -52,7 +52,7 @@ Not until The Dragon is slain.
 
 Why? Because this site now comes to you via the Great [Rebeccapurple](https://css-tricks.com/rebbeccapurple-663399/) Whale known as [Gatsby](https://gatsbyjs.org).
 
-Yep, I did it. This [geezer](/posts/2019/09/now-im-sixty-four) got Gatsby to work, at long last---[despite](/posts/2019/07/why-staying-with-hugo) [all](/posts/2019/07/lessons-learned) [evidence](/posts/2019/09/why-left-hugo-eleventy) to the contrary.
+Yep, I did it. This [geezer](/posts/2019/09/now-im-sixty-four/) got Gatsby to work, at long last---[despite](/posts/2019/07/why-staying-with-hugo/) [all](/posts/2019/07/lessons-learned/) [evidence](/posts/2019/09/why-left-hugo-eleventy/) to the contrary.
 
 ## Purple reign
 
@@ -68,7 +68,7 @@ There have been many times over the last few months when I never thought I'd get
 
 While this launch of the site-on-Gatsby is something I'm really happy to have behind me, the migration is still a work in progress. Project Purple isn't over yet, by any means.
 
-For one thing, I still don't know that much about [React](https://reactjs.org), the JavaScript framework on which Gatsby is based, or the [webpack](https://webpack.js.org) bundler that enables many of its coolest features. But I'm learning as fast as I can. 
+For one thing, I still don't know that much about [React](https://reactjs.org), the JavaScript framework on which Gatsby is based, or the [webpack](https://webpack.js.org) bundler that enables many of its coolest features. But I'm learning as fast as I can.
 
 Also, I still can't get [MDX](https://mdxjs.com) to work in Gatsby, at least not the way I want. Apparently right now there's a bug regarding how the Gatsby MDX functionality works with the `defaultLayouts` setting.[^alligator] Otherwise, I'd have implemented it from the get-go rather than starting off with just regular Markdown files. MDX-izing the site is my next big goal. (Gatsby Experiment IV? Project Purple 1.5?) Maybe I'll be able to get there before too long. I hope so, because I'm really interested in what MDX, as opposed to just [Markdown](https://daringfireball.net/projects/markdown), makes possible.
 

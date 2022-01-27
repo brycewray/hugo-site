@@ -20,7 +20,7 @@ For decades, Dallas/Fort Worth-area newspaper readers got to enjoy content from 
 
 That approach gave me an idea.
 
-The last few weeks of my life have been somewhat tumultuous compared to my usual, dull rigamarole, and I just haven't had sufficient mental clarity, much less time, to sit down and come up with a properly focused article.[^StopNow] Still, I do have a number of things---not necessarily more [curmudgeonish stuff](/posts/2019/11/curmudgeonish-2019)---I'd like to offer.
+The last few weeks of my life have been somewhat tumultuous compared to my usual, dull rigamarole, and I just haven't had sufficient mental clarity, much less time, to sit down and come up with a properly focused article.[^StopNow] Still, I do have a number of things---not necessarily more [curmudgeonish stuff](/posts/2019/11/curmudgeonish-2019/)---I'd like to offer.
 
 [^StopNow]: The obvious rejoinder is reminiscent of the "Can we be funny? / Why start now?" joke from the [first post-9/11 *Saturday Night Live*](https://www.indiewire.com/2016/09/snl-letterman-jon-stewart-911-late-show-daily-show-1201725596/). Point taken.
 
@@ -34,9 +34,9 @@ So, let's sample some mixed nuts for November, 2019&nbsp;.&nbsp;.&nbsp;.
 
 The open-office concept is simply a way for businesses to cram more people into less, and therefore cheaper, real estate. However, on the bright side: it helps sell a metric [bleep]-ton of wireless headphones.
 
-*Although this site's [been](/posts/2019/10/now-gatsby-geezer) on [Gatsby](https://www.gatsbyjs.org) for a few weeks now, I still admire [Eleventy](https://www.11ty.dev), which is just plain fun to use. Still, Gatsby's [image processing](/posts/2019/10/picture-perfect), seamless use of [webpack](https://webpack.js.org), and staggering array of [plugins](https://www.gatsbyjs.org/plugins) are keeping me with it. For now.*
+*Although this site's [been](/posts/2019/10/now-gatsby-geezer/) on [Gatsby](https://www.gatsbyjs.org) for a few weeks now, I still admire [Eleventy](https://www.11ty.dev), which is just plain fun to use. Still, Gatsby's [image processing](/posts/2019/10/picture-perfect/), seamless use of [webpack](https://webpack.js.org), and staggering array of [plugins](https://www.gatsbyjs.org/plugins) are keeping me with it. For now.*
 
-In September's "[Now I'm sixty-four](/posts/2019/09/now-im-sixty-four)," I referred to our inbound grandchild as "a little lass or lad" because we didn't know which, yet. We do now. That kiddo, due next April, will be a lass.
+In September's "[Now I'm sixty-four](/posts/2019/09/now-im-sixty-four/)," I referred to our inbound grandchild as "a little lass or lad" because we didn't know which, yet. We do now. That kiddo, due next April, will be a lass.
 
 *Real authors deliver something. And even "eventually" has a shelf life.*
 

@@ -25,13 +25,13 @@ So, for your geeky pleasure, here goes nothing.
 
 ## Static site generator (SSG)
 
-2019-07-05: [Hugo](https://gohugo.io) 0.55.6. At the time, I *thought* I was about to chuck Hugo for [Gatsby](https://gatsbyjs.org). [Didn't quite go that way](/posts/2019/07/why-staying-with-hugo). For full details on my oft-shifting SSG loyalties---the "Dance"---in the latter half of 2019 in particular, see my [2019 year-end wrap-up](/posts/2019/12/sorta-strange-ssg-trip).
+2019-07-05: [Hugo](https://gohugo.io) 0.55.6. At the time, I *thought* I was about to chuck Hugo for [Gatsby](https://gatsbyjs.org). [Didn't quite go that way](/posts/2019/07/why-staying-with-hugo/). For full details on my oft-shifting SSG loyalties---the "Dance"---in the latter half of 2019 in particular, see my [2019 year-end wrap-up](/posts/2019/12/sorta-strange-ssg-trip/).
 
 2020-07-05: [Eleventy](https://11ty.dev) 0.11.0.
 
 ## OSs used for local dev
 
-2019-07-05: macOS. iOS would join the mix only a few days later, thanks to [my adoption](/posts/2019/07/roger-copy) of the superb [Working Copy](https://workingcopyapp.com).
+2019-07-05: macOS. iOS would join the mix only a few days later, thanks to [my adoption](/posts/2019/07/roger-copy/) of the superb [Working Copy](https://workingcopyapp.com).
 
 2020-07-05: macOS, iOS.
 
@@ -39,13 +39,13 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: [Netlify](https://netlify.com).
 
-2020-07-05: [Vercel](https://vercel.com). My [most recent post](/posts/2020/07/goodbye-hello) explains the process that led me to Vercel, with the actual switchover occurring just this past week.
+2020-07-05: [Vercel](https://vercel.com). My [most recent post](/posts/2020/07/goodbye-hello/) explains the process that led me to Vercel, with the actual switchover occurring just this past week.
 
 ## Repository in use
 
 2019-07-05: `hugo_site_css-grid`.[^renamed]
 
-[^renamed]: I've since renamed this repo `hugo_twcss` and [repurposed it](/posts/2020/07/beginners-luck) as a Hugo starter set.
+[^renamed]: I've since renamed this repo `hugo_twcss` and [repurposed it](/posts/2020/07/beginners-luck/) as a Hugo starter set.
 
 2020-07-05: `eleventy_solo`.
 
@@ -141,7 +141,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: System fonts.
 
-2020-07-05: *Same*. I did, however, spend about half of the year between these two configs using either (a.) fonts imported via the [npm Typefaces package](https://npmjs.com/package/typefaces/) or (b.) [Google Fonts](https://fonts.google.com/)-provided typefaces. I finally decided a couple of days ago to revert to [only system fonts](/posts/2018/10/web-typography-part-2) after tiring of trying to compensate for the minor, but notable, performance hits that the other typefaces’ delivery methods imposed.[^zachFonts]
+2020-07-05: *Same*. I did, however, spend about half of the year between these two configs using either (a.) fonts imported via the [npm Typefaces package](https://npmjs.com/package/typefaces/) or (b.) [Google Fonts](https://fonts.google.com/)-provided typefaces. I finally decided a couple of days ago to revert to [only system fonts](/posts/2018/10/web-typography-part-2/) after tiring of trying to compensate for the minor, but notable, performance hits that the other typefaces’ delivery methods imposed.[^zachFonts]
 
 [^zachFonts]: I *am* aware there are ways to handle that, as [Zach Leatherman explained so well](https://www.zachleat.com/web/comprehensive-webfonts/) in 2016, but he obviously is ’waaaay smarter than I am and I don't have either the knowledge or guts to give the recommended methods a try. Maybe someday, but not now.
 
@@ -149,10 +149,10 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: No.
 
-2020-07-05: Yes. See also [this post](/posts/2019/09/thinking-dark-thoughts).
+2020-07-05: Yes. See also [this post](/posts/2019/09/thinking-dark-thoughts/).
 
 ## Official site grandchildren *(OK, humor&nbsp;me)*
 
 2019-07-05: None.
 
-2020-07-05: [One](/posts/2020/03/welcome-sweet-little-early-bird).
+2020-07-05: [One](/posts/2020/03/welcome-sweet-little-early-bird/).

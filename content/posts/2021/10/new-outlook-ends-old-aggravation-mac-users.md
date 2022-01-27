@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@liamtruong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Liam Truong</a>; <a href="https://unsplash.com/s/photos/mail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-Last year, [I wrote](/posts/2020/09/mixed-nuts-2020-09):
+Last year, [I wrote](/posts/2020/09/mixed-nuts-2020-09/):
 
 > Microsoft continues its (willful?) failure to give the Mac version of Outlook one specific feature that Outlook for Windows has had forever: the ability to see one's **own** sent emails in conversation threads. And I don't mean the hacky, unintuitive "talk balloons" method the Mac version uses; I mean the way the Windows version does it.
 

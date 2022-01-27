@@ -37,7 +37,7 @@ oldComments: |
     </div>
 ---
 
-My [last post](/posts/2019/05/the-holy-mail) closed with:
+My [last post](/posts/2019/05/the-holy-mail/) closed with:
 
 > Do I ever look at other *[email]* apps any more? Oh, sure. It's what I sometimes call "the geek's prerogative."
 
@@ -52,7 +52,7 @@ Image: Screen capture of MailMate, with its Latin-displaying "distortion mode" e
 
 ## Power trip
 
-It's hard for somebody who's prided himself since the 1980s on knowing his way around the Mac-o-sphere *not* to give MailMate a try sooner or later. After all, its [fans](https://www.youtube.com/watch?v=e_SlbQzL9lc) [swear](https://brettterpstra.com/2018/01/08/best-of-2017-working-on-macos/) [by](https://www.slant.co/options/1952/~mailmate-review) [it](https://www.youtube.com/playlist?list=PLC4ZkBr87CO0jmrQvGQ77t44tCT-xklqU) as *the* email client for Mac power users. However, perhaps *because* [I had become so locked into my personal "Holy Grail" where email is concerned](/posts/2019/05/the-holy-mail), I became aware of it only recently.
+It's hard for somebody who's prided himself since the 1980s on knowing his way around the Mac-o-sphere *not* to give MailMate a try sooner or later. After all, its [fans](https://www.youtube.com/watch?v=e_SlbQzL9lc) [swear](https://brettterpstra.com/2018/01/08/best-of-2017-working-on-macos/) [by](https://www.slant.co/options/1952/~mailmate-review) [it](https://www.youtube.com/playlist?list=PLC4ZkBr87CO0jmrQvGQ77t44tCT-xklqU) as *the* email client for Mac power users. However, perhaps *because* [I had become so locked into my personal "Holy Grail" where email is concerned](/posts/2019/05/the-holy-mail/), I became aware of it only recently.
 
 Although my email needs aren't dramatic---as I've explained before, I don't use my Mac to access work-related email[^vmMail], so it's simply my personal stuff, albeit over twenty years’ worth of it, and plenty more rolling in every day---I still was intrigued by several aspects of MailMate.
 
@@ -108,7 +108,7 @@ Well, MailMate makes it much easier to set up those provider rules because it tr
 
 [^creepy]: The exceptions to this are multi-platform apps like Airmail and Spark, and you pay for that convenience through (a.) their keeping your credentials on [their](https://helpspot.readdle.com/en/index.php?pg=kb.page&id=1285) [servers](https://www.iubenda.com/privacy-policy/558233/full-legal) and (b.) their less-than-optimal [privacy](https://sparkmailapp.com/privacy#privacy_3) [policies](https://www.iubenda.com/privacy-policy/558233/full-legal).
 
-If you've got time and you're feeling a little adventurous, MailMate's [hidden preferences](https://manual.mailmate-app.com/hidden_preferences) allow numerous options for customization to an amazing degree. In this, one relatively pedestrian capability that appeals to my [typography-obsessed](/posts/2018/10/web-typography-part-1) [brain](/posts/2018/10/web-typography-part-2) is the ability to set the default CSS which controls how unformatted emails appear, especially since that constitutes a lot of the [old emails I recently imported from an ancient PC](https://www.linkedin.com/feed/update/urn:li:activity:6543149472082386944).
+If you've got time and you're feeling a little adventurous, MailMate's [hidden preferences](https://manual.mailmate-app.com/hidden_preferences) allow numerous options for customization to an amazing degree. In this, one relatively pedestrian capability that appeals to my [typography-obsessed](/posts/2018/10/web-typography-part-1) [brain](/posts/2018/10/web-typography-part-2/) is the ability to set the default CSS which controls how unformatted emails appear, especially since that constitutes a lot of the [old emails I recently imported from an ancient PC](https://www.linkedin.com/feed/update/urn:li:activity:6543149472082386944).
 
 You can customize various aspects of the display, such as the font size and leading of a column listing emails---although you can't add any text preview to the columnar view, as is commonly available in most other mail clients. It's something Dr. Nielsen [mentioned](https://blog.freron.com/2017/personalized_subscriber_emails/) as a "I'd-like-to-do-this-but" item over two years ago, and there it sits, still undone; but it's a minor nit.
 

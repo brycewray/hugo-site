@@ -33,7 +33,7 @@ First, let me deal with one even more salient question: what exactly is a starte
 
 In my starter sets’ cases, at least, the term refers to a site repo that has been pared down to a sufficiently minimal set of content and configuration so that, while someone new to the SSG can load and run it, he or she then can also customize it without having to delete a ton of unneeded stuff.
 
-[A few months back](/posts/2020/04/different-modes-different-code/), I made public the Hugo and [Gatsby](https://gatsbyjs.org) versions of this site's repo. This was a follow-up to my having made my Eleventy repo public [last December](/posts/2019/12/code-comfort-eleventy-webpack) (the [webpack](https://webpack.js.org)-based version I had for a while) and [two months ago](/posts/2020/05/going-solo-eleventy) (the current, non-webpack version). I thus hoped the choice among the three repos I'd used would be as helpful to me as I have found it to see others’ repos.
+[A few months back](/posts/2020/04/different-modes-different-code/), I made public the Hugo and [Gatsby](https://gatsbyjs.org) versions of this site's repo. This was a follow-up to my having made my Eleventy repo public [last December](/posts/2019/12/code-comfort-eleventy-webpack/) (the [webpack](https://webpack.js.org)-based version I had for a while) and [two months ago](/posts/2020/05/going-solo-eleventy/) (the current, non-webpack version). I thus hoped the choice among the three repos I'd used would be as helpful to me as I have found it to see others’ repos.
 
 The problem with that approach was, as I noted in the repos’ README files, each definitely wasn't a starter set **although** it could be *used* as one---if, of course, one was willing to go through and carve away all my content. (Yeah, right.)
 
@@ -80,5 +80,5 @@ In any event, I hope that my new little efforts in this regard will help anyone 
 **Update, 2020-12-19**: Each starter set has its own online demo on Vercel (formerly on Netlify), linked from its repo.
 {.yellowBox}
 
-**Update, 2020-03-26**: See also [this update](/posts/2021/03/beginners-luck-update) on what has turned out to be a growing number of starter sets for Eleventy and Hugo.
+**Update, 2020-03-26**: See also [this update](/posts/2021/03/beginners-luck-update/) on what has turned out to be a growing number of starter sets for Eleventy and Hugo.
 {.yellowBox}

@@ -18,7 +18,7 @@ featured_image_caption: |
 
 *Up-front disclaimer: No proverbial horses were beaten to death (at least, not by me) during the writing of the following---although I could see how you might get a different impression.*
 
-Since a few days ago, when I initially published "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two)" as a way of apologizing for the abortive solution I'd offered in "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy)," I've thought it might be more helpful if I gave at least some of the actual code rather than pushing people to the [starter site](https://github.com/brycewray/eleventy_solo_starter) whose appearance is based on this one. So that'll be the purpose of this piece.
+Since a few days ago, when I initially published "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two/)" as a way of apologizing for the abortive solution I'd offered in "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy/)," I've thought it might be more helpful if I gave at least some of the actual code rather than pushing people to the [starter site](https://github.com/brycewray/eleventy_solo_starter) whose appearance is based on this one. So that'll be the purpose of this piece.
 
 Here's a brief bit of catchup, to clarify things for those who have read neither of those articles and/or have no idea why they should care about the articles’ subject matter:
 

@@ -87,7 +87,7 @@ By the way: no matter which way I go, a reversion to my previous workflow probab
 
 ## We shall see---as usual
 
-As I observed near the end of my [last post](/posts/2019/12/sorta-strange-ssg-trip), this site's [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo gives me a solid foundation on which to build. And, on the subject I've discussed here today, it further shows how easily I can try new stuff.
+As I observed near the end of my [last post](/posts/2019/12/sorta-strange-ssg-trip/), this site's [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo gives me a solid foundation on which to build. And, on the subject I've discussed here today, it further shows how easily I can try new stuff.
 
 .&nbsp;.&nbsp;. Or not.
 
@@ -122,7 +122,7 @@ Because I wanted to start doing CSS the right way, so to speak, rather than cont
 
 I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) to browser-friendly CSS. Quite frankly, using Sass/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
 
-[^elevwp]: Thank goodness for my [Eleventy/webpack setup](/posts/2019/12/packing-up), without which the whole process of reversion would've been much more onerous. I shudder to think about, say, if I'd still been on [Gatsby](/posts/2019/10/now-gatsby-geezer).
+[^elevwp]: Thank goodness for my [Eleventy/webpack setup](/posts/2019/12/packing-up/), without which the whole process of reversion would've been much more onerous. I shudder to think about, say, if I'd still been on [Gatsby](/posts/2019/10/now-gatsby-geezer/).
 
 Don't get me wrong. I do understand that there definitely are cases to be made for utility-based CSS, especially---as I tweeted back on December 28---for multi-dev shops. I just don't believe my little one-man, one-approver website qualifies as a good example of such a case.
 

@@ -40,7 +40,7 @@ In recent months, I've issued two different posts ([one about Hugo sites](/posts
 
 One of the most widely used PostCSS plugins is [postcss-preset-env](https://preset-env.cssdb.org/). It includes many capabilities which could otherwise require the use of numerous other plugins, but it [remains broken in PostCSS 8](https://github.com/csstools/postcss-preset-env/issues/191). I'd been using postcss-preset-env mainly to do what one can get with two separate plugins, [autoprefixer](https://github.com/postcss/autoprefixer) and [postcss-nesting](https://github.com/csstools/postcss-nesting), so I've replaced it with those.[^presetStarters]
 
-[^presetStarters]: For the most part, my most recent use of postcss-preset-env was in some of my [starter sets](/posts/2021/03/beginners-luck-update).
+[^presetStarters]: For the most part, my most recent use of postcss-preset-env was in some of my [starter sets](/posts/2021/03/beginners-luck-update/).
 
 Another PostCSS 8-incompatible plugin I had to replace is [postcss-clean](https://github.com/leodido/postcss-clean) for minifying CSS output. Instead, I'm now using [postcss-csso](https://github.com/lahmatiy/postcss-csso).[^sassOnly]
 

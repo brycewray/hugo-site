@@ -21,13 +21,13 @@ In the last few days, I've had the pleasure of seeing just how well two of today
 
 I speak, of course, of the [Eleventy](https://11ty.dev) [static site generator](https://jamstack.org/generators) (SSG) and the [Vite](https://vitejs.dev) [front end development](https://en.wikipedia.org/wiki/Front-end_web_development) tool.
 
-In case you haven't yet had your lesson in pronouncing *Vite*, it's the French word for *fast*, and it rhymes with *neat*. And *sweet*. And *elite*. I find the latter rhyme especially appropriate because uniting the excellence of **El**eventy with the brilliant performance of V**ite** produces what can be a truly elite solution for building [static websites](/posts/2020/09/normal-persons-guide-static-websites).
+In case you haven't yet had your lesson in pronouncing *Vite*, it's the French word for *fast*, and it rhymes with *neat*. And *sweet*. And *elite*. I find the latter rhyme especially appropriate because uniting the excellence of **El**eventy with the brilliant performance of V**ite** produces what can be a truly elite solution for building [static websites](/posts/2020/09/normal-persons-guide-static-websites/).
 
 Indeed, I am so sold on it that the site now runs off my [`eleventy_vite`](https://github.com/brycewray/eleventy_vite) repository, rather than the still-extant [`eleventy_solo`](https://github.com/brycewray/eleventy_solo) repo on which it had lived, off and on, for over a year.
 
 How all this came about is our tale for today, friends and neighbors.
 
-**Update, 2021-08-22**: Since the repo change had the unwanted but unavoidable effect of losing the Git history in `eleventy_solo`, I have since cloned `eleventy_solo` and added Vite to the resulting [`eleventy_site`](https://github.com/brycewray/eleventy_site) repo; I now run the site off that repo, instead. Then, today, I switched **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the similarly-themed one which follows](/posts/2021/07/beginners-luck-4-vite-edition) for [archival purposes](/posts/2019/10/otoh).
+**Update, 2021-08-22**: Since the repo change had the unwanted but unavoidable effect of losing the Git history in `eleventy_solo`, I have since cloned `eleventy_solo` and added Vite to the resulting [`eleventy_site`](https://github.com/brycewray/eleventy_site) repo; I now run the site off that repo, instead. Then, today, I switched **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the similarly-themed one which follows](/posts/2021/07/beginners-luck-4-vite-edition/) for [archival purposes](/posts/2019/10/otoh/).
 {.yellowBox}
 
 ## Curiosity killed the cache
@@ -36,7 +36,7 @@ A few days ago, a reader named Chad Henry contacted me about my 2020 article, "[
 
 In short: if the browser sees a file called *index.css*, it's going to assume it's the same *index.css* it already saw, and cached, on a previous visit. As a result, the browser won't use the site's **current** *index.css* if the file has changed since that visit. The way to do the desired "cache-busting" typically involves changing the CSS file name, usually by appending a [hash](https://www.sentinelone.com/cybersecurity-101/hashing/) of its content, every time there are any changes in the CSS. Ideally, the site automatically generates such name changes at build time *and* injects them within the site's HTML in such a way that everything just works. (That is: you don't want the HTML still to be referring to *index-2eXy57Qa.css* if the CSS file's **newly** generated name is *index-34Dk83Af.css*.)
 
-My eventual solution for all this, as I explained in "[Hashing out a cache-busting fix for Eleventy](/posts/2020/12/hashing-out-cache-busting-fix-eleventy)," was a JavaScript file, called `csshash.js` (originally `cssdate.js`, but that's another story), which the repo's `package.json` would run at build time to (a.) generate a new name for the site's CSS file whenever its content had changed and (b.) inject the name into the site-wide `head`.
+My eventual solution for all this, as I explained in "[Hashing out a cache-busting fix for Eleventy](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/)," was a JavaScript file, called `csshash.js` (originally `cssdate.js`, but that's another story), which the repo's `package.json` would run at build time to (a.) generate a new name for the site's CSS file whenever its content had changed and (b.) inject the name into the site-wide `head`.
 
 Of course, it's not just CSS files that present such problems. Whenever the content of any normally cached file changes, that file requires cache-busting. So, what Chad wanted to know was: did I have similar methods to offer regarding cache-busting of JavaScript files?
 
@@ -92,23 +92,23 @@ Hmm. I'd been down this road before.
 
 ## Tedious tooling
 
-My initial use of Eleventy began over Labor Day weekend, 2019. This was a few weeks after the [first](/posts/2019/07/why-staying-with-hugo) of several unsuccessful attempts to "get" the [Gatsby](https://gatsbyjs.com) SSG---although I did briefly succeed with it [later that year](/posts/2019/10/now-gatsby-geezer), only to [go back to Eleventy soon thereafter](/posts/2019/12/packing-up).
+My initial use of Eleventy began over Labor Day weekend, 2019. This was a few weeks after the [first](/posts/2019/07/why-staying-with-hugo/) of several unsuccessful attempts to "get" the [Gatsby](https://gatsbyjs.com) SSG---although I did briefly succeed with it [later that year](/posts/2019/10/now-gatsby-geezer/), only to [go back to Eleventy soon thereafter](/posts/2019/12/packing-up/).
 
 The first time with Eleventy, I wanted to convert the site from a [Hugo](https://gohugo.io)-based setup on which I'd used [Sass/SCSS](https://sass-lang.com) for styling. Only thing was: Eleventy, from the beginning, has been intended as something that you configure to function as needed, and that includes one's [asset pipeline](https://mxb.dev/blog/eleventy-asset-pipeline/). I'd gotten spoiled by how Hugo's built-in [Hugo Pipes](https://gohugo.io/hugo-pipes/) functionality had made compiling Sass to CSS so effortless but, at that time, I couldn't find any examples of how to accomplish it in Eleventy. A few searches later, I started using the [Gulp](https://gulpjs.com) [task runner](https://medium.com/tiny-code-lessons/javascript-task-runners-explained-c4762728bda), plus some plugins, to give Eleventy similar Sass-to-CSS compilation capabilities.
 
-Those several times during 2019 that I tried or used Gatsby had shown me how much it gained from being joined at the hip with the webpack bundler tool; so, near the end of 2019, I grafted webpack and Eleventy together and, as described in "[Packing up](/posts/2019/12/packing-up)," introduced my combo to the site in the `eleventy_bundler` repo (which, although [still available](https://github.com/brycewray/eleventy_bundler) for viewing by the curious, is only a shadow of its former self).
+Those several times during 2019 that I tried or used Gatsby had shown me how much it gained from being joined at the hip with the webpack bundler tool; so, near the end of 2019, I grafted webpack and Eleventy together and, as described in "[Packing up](/posts/2019/12/packing-up/)," introduced my combo to the site in the `eleventy_bundler` repo (which, although [still available](https://github.com/brycewray/eleventy_bundler) for viewing by the curious, is only a shadow of its former self).
 
-This served until the second quarter of 2020. Then, tired of dealing with the increasing hassles of webpack configuration but unable to find a suitable replacement tool (including the much-touted [Parcel](https://parceljs.org)), I decided to drop webpack in favor of doing everything through scripts in `package.json`---and, at the time, an image-processing script for build time that, later, [got replaced](/posts/2020/07/transformed) in favor of using [Cloudinary](https://cloudinary.com).
+This served until the second quarter of 2020. Then, tired of dealing with the increasing hassles of webpack configuration but unable to find a suitable replacement tool (including the much-touted [Parcel](https://parceljs.org)), I decided to drop webpack in favor of doing everything through scripts in `package.json`---and, at the time, an image-processing script for build time that, later, [got replaced](/posts/2020/07/transformed/) in favor of using [Cloudinary](https://cloudinary.com).
 
 After all, I figured, I really wasn't deriving enough benefit from webpack's bundling powers to justify keeping it. It was the proverbial case of killing a fly with a machine gun.
 
-So, [in May, 2020](/posts/2020/05/going-solo-eleventy), `eleventy_bundler` gave way to `eleventy_solo`.
+So, [in May, 2020](/posts/2020/05/going-solo-eleventy/), `eleventy_bundler` gave way to `eleventy_solo`.
 
 At first, this bundler-less approach apparently simplified things greatly. I had no more need to futz with webpack configurations, there were fewer software dependencies involved, and so on.
 
 However, it was a false kind of simplicity. I flat-out didn't worry about cache-busting back then. Only later in 2020, when I became more aware of its importance, would I begin properly scripting for it.
 
-In the year-plus following the switch away from webpack, my `package.json` scripting became pretty convoluted. It *worked*, mind you, but I found myself often searching for ways to do things "manually" that a bundler tool would do. Moreover, as in the embarrassing SNAFU I described in a later edit to "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy)," some solutions I chose turned out to be not so great.
+In the year-plus following the switch away from webpack, my `package.json` scripting became pretty convoluted. It *worked*, mind you, but I found myself often searching for ways to do things "manually" that a bundler tool would do. Moreover, as in the embarrassing SNAFU I described in a later edit to "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy/)," some solutions I chose turned out to be not so great.
 
 Fast-forward to earlier this week---and my still all-too-"manual" approach to cache-busting both CSS and JS (especially the JS) at build time.
 
@@ -180,7 +180,7 @@ Such was the case with the process I described herein. It started with a reader'
 
 Sometimes, lucky rabbits find carrots. So far, the Eleventy/Vite combo is proving to be a tasty morsel. I'll keep you advised as to my progress, including most definitely if this new way of handling the site should turn out unexpectedly to be more stick than carrot.
 
-**Update, 2021-07-25**: I now have an Eleventy/Vite starter set online; see "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition)."
+**Update, 2021-07-25**: I now have an Eleventy/Vite starter set online; see "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition/)."
 {.yellowBox}
 
 [^1]:	Of the hashed files, two are JS "helper" files which keep both the image "lazy-loading" functionality and the recently added all-Tailwind nav menu from violating the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)---specifically, its [`script-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) part.

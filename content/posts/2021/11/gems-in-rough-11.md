@@ -30,7 +30,7 @@ Then, on November 17, Cloudflare had a "Hold my beer"-kinda [announcement](https
 
 In two separate posts earlier this year, I gave you details about that aforementioned Cloudflare Worker. Specifically:
 
-- "[Headers up](/posts/2021/05/headers-up)" explained that I was using the Worker to provide proper browser-side caching of the site's assets.
+- "[Headers up](/posts/2021/05/headers-up/)" explained that I was using the Worker to provide proper browser-side caching of the site's assets.
 
 - Last month's "[My website and Cloudflare, a year later](/posts/2021/10/my-website-cloudflare-year-later)" mentioned that the Worker now also allows implementation of a tighter [Content Security Policy](https://content-security-policy.com) (CSP) through dynamic insertion of [nonces](https://content-security-policy.com/nonce/).
 

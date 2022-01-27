@@ -56,7 +56,7 @@ Nonetheless, I do owe you an explanation, so please return with me now to those 
 
 ## An annoying whisper
 
-Earlier in the summer, I experimented with switching this site to  [Gatsby](https://gatsbyjs.org), then dropped the effort in favor of [keeping this site on Hugo](/posts/2019/07/why-staying-with-hugo). I then made some [pointed observations about the problems with SSGs](/posts/2019/07/lessons-learned).
+Earlier in the summer, I experimented with switching this site to  [Gatsby](https://gatsbyjs.org), then dropped the effort in favor of [keeping this site on Hugo](/posts/2019/07/why-staying-with-hugo/). I then made some [pointed observations about the problems with SSGs](/posts/2019/07/lessons-learned/).
 
 That little episode had a couple of unexpected results.
 
@@ -68,7 +68,7 @@ Second, not long after I dragged my bleeding carcass away from attempting to use
 
 It wasn't so much that I felt Gatsby and its adherents had beaten me. It was more that I felt I'd been laid low by the newer generation of mostly JavaScript-based SSGs in general.
 
-[You may recall](/posts/2019/07/why-staying-with-hugo) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops---especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
+[You may recall](/posts/2019/07/why-staying-with-hugo/) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops---especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
 
 Coding chops? Hah. Instead, it felt as if I were limping away while barely retaining my mouth's choppers.
 
@@ -121,7 +121,7 @@ First hearing about it during Gatsby Experiment I, I'd been singularly impressed
 
 That last part rang especially true to me because, simply put, [frameworks come and go](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f). What are the framework-centric SSGs---and the sites built on them---going to do when those frameworks suffer their inevitable replacement by The Next Kewl Thing?
 
-But the part that grabbed me more than anything else, and was indeed that "breath of fresh air" I'd [originally hoped Gatsby would be for me](/posts/2019/07/why-staying-with-hugo), was Eleventy's amazing flexibility. Not only does it you let choose from among multiple templating languages, but it also gives you lots of freedom in choosing the directory structure of the hosting repo and, in the end, the site that will go on the web.
+But the part that grabbed me more than anything else, and was indeed that "breath of fresh air" I'd [originally hoped Gatsby would be for me](/posts/2019/07/why-staying-with-hugo/), was Eleventy's amazing flexibility. Not only does it you let choose from among multiple templating languages, but it also gives you lots of freedom in choosing the directory structure of the hosting repo and, in the end, the site that will go on the web.
 
 In short: within reasonable limits, Eleventy lets you build the site in a way with which **you** are comfortable.
 
@@ -161,7 +161,7 @@ Eleventy works with plugins, including [Markdown-it plugins](https://www.npmjs.c
 
 I had a few (mostly self-inflicted) difficulties getting them going but the results, as you can see here and elsewhere in this site, were worth it. (Truth be known, I actually prefer how PrismJS handles code blocks over how Chroma does it in Hugo.)
 
-In the case of Gatsby, I'd managed to get the "smart" typography and, usually, good code block formatting---but automated footnotes were glitchy and often nonfunctional (as I [previously explained](/posts/2019/07/why-staying-with-hugo)).
+In the case of Gatsby, I'd managed to get the "smart" typography and, usually, good code block formatting---but automated footnotes were glitchy and often nonfunctional (as I [previously explained](/posts/2019/07/why-staying-with-hugo/)).
 
 And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is ’waaaaay easier and more stable.
 
@@ -207,7 +207,7 @@ Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although qui
 
 ### It's far more robust than Gatsby
 
-Having watched Gatsby crash and crash and crash while I was doing only  very innocent little things like file moves or *legitimate* edits to Markdown or code, I was pleasantly surprised by how hard it is to crash this much younger, much earlier-in-its-dev-life SSG during site development. *Can* you crash it? Oh, yeah. Big-time. But, when you do, its error messages---at least, in my opinion as a non-expert in JavaScript and its hangers-on---have so far been sufficiently readable that I could resolve issues. That definitely [was not](/posts/2019/07/why-staying-with-hugo) the case with Gatsby.
+Having watched Gatsby crash and crash and crash while I was doing only  very innocent little things like file moves or *legitimate* edits to Markdown or code, I was pleasantly surprised by how hard it is to crash this much younger, much earlier-in-its-dev-life SSG during site development. *Can* you crash it? Oh, yeah. Big-time. But, when you do, its error messages---at least, in my opinion as a non-expert in JavaScript and its hangers-on---have so far been sufficiently readable that I could resolve issues. That definitely [was not](/posts/2019/07/why-staying-with-hugo/) the case with Gatsby.
 
 I am sure that Gatsby and React adherents will hee-haw at the thought that little Eleventy is tougher than their SSG; but, in my perhaps atypical experience, it is exactly that. For someone with sharply limited  free time to fool with this stuff, having an SSG that can take a few shots of [PEBKAC](https://www.computerhope.com/jargon/p/pebkac.htm) and still (usually) hang in there is invaluable.
 
@@ -233,4 +233,4 @@ Indeed, one part of the transition was to convert all my Hugo site's Markdown fi
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 
-.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019/06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
+.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more/) [doubt](/posts/2019/05/boxed-in/) [my](/posts/2019/06/ahoy-mate/) [ability](/posts/2019/07/why-staying-with-hugo/) to stick with anything, that is.

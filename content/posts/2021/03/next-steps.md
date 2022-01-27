@@ -16,10 +16,10 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@drew_beamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Drew Beamer</a>; <a href="/s/photos/future?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this post in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh).
+**Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this post in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).
 {.yellowBox}
 
-As I [mentioned a few days back](/posts/2021/03/gems-in-rough-03), Day Job-related concerns have led me to spend time dabbling in the [Next.js](https://nextjs.org) [React](https://reactjs.org) framework. This is because I'm researching possible future options for my employers’ web presence, and Next.js seems to fit their needs pretty well.
+As I [mentioned a few days back](/posts/2021/03/gems-in-rough-03/), Day Job-related concerns have led me to spend time dabbling in the [Next.js](https://nextjs.org) [React](https://reactjs.org) framework. This is because I'm researching possible future options for my employers’ web presence, and Next.js seems to fit their needs pretty well.
 
 I thought I'd pass along some things I've learned along the way, especially since some of them weren't as well-spelled-out and/or as collected in one place as I'd like. Next's documentation could use some work, **but** I'd still say it's pretty good.[^vsNuxt]
 
@@ -29,7 +29,7 @@ And, to be sure, so is Next.js itself.
 
 {{< imgc src="2021-03-11-nextjs-org-home-pg_2518x1330.png" alt="Screen capture of nextjs.org home page as of 2021-03-11" width="2518" height="1330" >}}
 
-Considering how much I've [lately tried to limit my dealings with dependency-heavy stuff](/posts/2021/02/simplify-simplify), it's amazing how much I've come to like developing within Next.js. I find it much more straightforward than the React-based [Gatsby](https://www.gatsbyjs.com) SSG with which I futzed [back in 2019](/posts/2019/07/why-staying-with-hugo). Indeed, Next.js boasts many capabilities out-of-the-proverbial-box that require a disturbing number of plugins and often-glitchy configuration hassles in Gatsby.
+Considering how much I've [lately tried to limit my dealings with dependency-heavy stuff](/posts/2021/02/simplify-simplify/), it's amazing how much I've come to like developing within Next.js. I find it much more straightforward than the React-based [Gatsby](https://www.gatsbyjs.com) SSG with which I futzed [back in 2019](/posts/2019/07/why-staying-with-hugo/). Indeed, Next.js boasts many capabilities out-of-the-proverbial-box that require a disturbing number of plugins and often-glitchy configuration hassles in Gatsby.
 
 To be fair, though, I should also note that I'd have been lost React-wise had I not spent the earlier time working with Gatsby and React's [JSX](https://reactjs.org/docs/introducing-jsx.html)---*e.g.*, here's an extremely simple footer component in JSX:
 
@@ -40,8 +40,8 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <p className="copyNote">&copy; {copyrightYr} 
-        Company Name, LLC. 
+        <p className="copyNote">&copy; {copyrightYr}
+        Company Name, LLC.
         All&nbsp;rights&nbsp;reserved.</p>
       </footer>
    </>
@@ -87,7 +87,7 @@ Fortunately, there's no need to futz with all that **if** you add some [Babel](h
   "presets": ["next/babel"],
   "plugins": [
     [
-      "module-resolver", 
+      "module-resolver",
       {
         "root": ["."],
         "alias": {
@@ -140,7 +140,7 @@ By the way: using the term `className` rather than `class` for CSS/SCSS referenc
 
 ```jsx
 <div className={`${careers.txtOnly} ${careers.extraStyle}`}>
-  <p>This is an otherwise-standard text div 
+  <p>This is an otherwise-standard text div
   where we want to have some special extra styling.
 </div>
 ```
@@ -175,7 +175,7 @@ const caretDown = <FontAwesomeIcon icon={faCaretDown} />
 {/* === further down within the file... === */}
 <ul>
   <li className={nav.menuItem}>
-    A menu item which has a “down-arrow” 
+    A menu item which has a “down-arrow”
     because it has a submenu
     <span className={nav.arrowDown}>{caretDown}</span>
     <ul className={nav.subMenu}>

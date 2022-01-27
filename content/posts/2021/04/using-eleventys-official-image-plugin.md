@@ -28,9 +28,9 @@ After all, Eleventy Image comes directly from Eleventy's creator, [Zach Leatherm
 
 Rather, it was because I found the plugin's documentation, and the few blog posts I found about using the plugin, somewhat less than approachable for those who don't eat, sleep, and breathe things like, say, JavaScript [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
-Then, last night, I finally decided to give it a try and, shortly before midnight, I'd successfully installed it to my satisfaction on my four [Eleventy starter sets](/posts/2021/03/beginners-luck-update).[^whyNotHere] [^imgXfm]
+Then, last night, I finally decided to give it a try and, shortly before midnight, I'd successfully installed it to my satisfaction on my four [Eleventy starter sets](/posts/2021/03/beginners-luck-update/).[^whyNotHere] [^imgXfm]
 
-[^whyNotHere]: I don't use it on this site, however, because I [let Cloudinary process this site's images](/posts/2020/07/transformed). While Eleventy Image definitely can work with images served from other locations besides your site, and although I greatly admire the elegance and features of Eleventy Image, it can't begin to match all the image-transformation capabilities you can [pack into a Cloudinary URL](https://cloudinary.com/documentation/image_transformations#transformation_url_syntax).
+[^whyNotHere]: I don't use it on this site, however, because I [let Cloudinary process this site's images](/posts/2020/07/transformed/). While Eleventy Image definitely can work with images served from other locations besides your site, and although I greatly admire the elegance and features of Eleventy Image, it can't begin to match all the image-transformation capabilities you can [pack into a Cloudinary URL](https://cloudinary.com/documentation/image_transformations#transformation_url_syntax).
 
 [^imgXfm]: Adding Eleventy Image to these starter sets allowed me finally to relieve them of my bespoke `imgxfm.js` file---which, although it worked well enough, delayed each build for a few seconds. For those who've used `imgxfm.js` in the past with any of my starter sets, I highly encourage you to upgrade to the latest and greatest so you can unburden yourself from that sludge. On the other hand, for any masochists out there who still are interested in the `imgxfm.js` code but don't have it, [let me know](/contact) and I'll provide it.
 
@@ -51,7 +51,7 @@ So what? Well&nbsp;.&nbsp;.&nbsp;.
 
 One answer to that is: you don't, **if** you're willing to do all that image processing on your own. Certainly, that's quite possible. You can do it in Photoshop, or Affinity Photo, or GIMP, or what-have-you. But that takes a **lot** of time and work. And, even if you're not worried about that part, you may not be **able** to save files in the space-saving [WebP format](https://developers.google.com/speed/webp) now accepted by most modern browsers.[^webP]
 
-[^webP]: I discussed this in last year's "[So much for heroes](/posts/2020/02/so-much-for-heroes)."
+[^webP]: I discussed this in last year's "[So much for heroes](/posts/2020/02/so-much-for-heroes/)."
 
 Another answer is: you don't, **if** you don't care about how your visitors experience your site. If you're fine with every visitor getting the exactly same image file regardless of the visitor's screen size or connectivity quality, then just put up one version of each image and be done with it.
 
@@ -95,7 +95,7 @@ module.exports = function (eleventyConfig) {
 
 .&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i”) by adding the code shown below.
 
-**Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
+**Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update/), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
 {.yellowBox}
 
 ```js

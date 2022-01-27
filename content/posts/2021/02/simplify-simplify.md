@@ -21,7 +21,7 @@ featured_image_caption: |
 > Our life is frittered away by detail. Simplify, simplify.<br />
 > ---[Henry David Thoreau](https://simple.wikiquote.org/wiki/Henry_David_Thoreau).
 
-A few days ago, I [explained](/posts/2021/01/leaner-cleaner) that I was simplifying the site's look-and-feel. That seemed plain enough, I'm sure.
+A few days ago, I [explained](/posts/2021/01/leaner-cleaner/) that I was simplifying the site's look-and-feel. That seemed plain enough, I'm sure.
 
 There was more going on behind the scenes, however.
 
@@ -31,21 +31,21 @@ Story time&nbsp;.&nbsp;.&nbsp;.
 
 It's been about two-and-a-half years since I first launched this site. It's been closer to three years since I began research into how I wanted to maintain it. That process ended with my choosing to go with [static site generators](https://jamstack.org/generators) (SSGs) in general and the [Hugo](https://gohugo.io) SSG in particular.
 
-Not quite a year after that, I [reexamined](/posts/2019/07/why-staying-with-hugo) the Hugo choice because I had what the Kewl Kids used to call "FOMO"---Fear of Missing Out. I figured I'd gain more potentially marketable experience by using an SSG based on [JavaScript](https://js.org) rather than the [Go](https://golang.org)-based Hugo, especially given that most of the hotness in the world of SSG development seemed to originate from JavaScript-based SSGs.
+Not quite a year after that, I [reexamined](/posts/2019/07/why-staying-with-hugo/) the Hugo choice because I had what the Kewl Kids used to call "FOMO"---Fear of Missing Out. I figured I'd gain more potentially marketable experience by using an SSG based on [JavaScript](https://js.org) rather than the [Go](https://golang.org)-based Hugo, especially given that most of the hotness in the world of SSG development seemed to originate from JavaScript-based SSGs.
 
-That led me to not one, not two, but [three](/posts/2019/10/now-gatsby-geezer) tries of [Gatsby](https://gatsbyjs.org). There also was an initial [short try](/posts/2019/09/why-left-hugo-eleventy) of, followed by a [longer engagement](/posts/2019/12/packing-up) with, [Eleventy](https://11ty.dev).
+That led me to not one, not two, but [three](/posts/2019/10/now-gatsby-geezer/) tries of [Gatsby](https://gatsbyjs.org). There also was an initial [short try](/posts/2019/09/why-left-hugo-eleventy/) of, followed by a [longer engagement](/posts/2019/12/packing-up/) with, [Eleventy](https://11ty.dev).
 
-Sprinkled in between that short try and longer engagement, not to mention the dalliance with Gatsby, was a brief [return to Hugo](/posts/2019/09/back-with-hugo) that was spurred in part by a distrust of all the [Node.js](https://nodejs.dev) [dependencies](https://nodejs.dev/learn/npm-dependencies-and-devdependencies) that power both Gatsby and Eleventy. This is as opposed to Hugo, which is a single-binary executable---in plain language, an *app*.
+Sprinkled in between that short try and longer engagement, not to mention the dalliance with Gatsby, was a brief [return to Hugo](/posts/2019/09/back-with-hugo/) that was spurred in part by a distrust of all the [Node.js](https://nodejs.dev) [dependencies](https://nodejs.dev/learn/npm-dependencies-and-devdependencies) that power both Gatsby and Eleventy. This is as opposed to Hugo, which is a single-binary executable---in plain language, an *app*.
 
 Nonetheless, I enjoyed JS-based SSGs in general and Eleventy in particular, so I buried such thoughts in the back of my mind and went on my merry way, figuring I'd finally fought the issue to a conclusion.[^dance2019]
 
-[^dance2019]: Those of you who want to go on an even deeper trip back down Memory Lane on what I ended up calling my "Dance" among SSGs need only check out my [end-of-2019 retrospective](/posts/2019/12/sorta-strange-ssg-trip) and, if you're so inclined, follow its links.
+[^dance2019]: Those of you who want to go on an even deeper trip back down Memory Lane on what I ended up calling my "Dance" among SSGs need only check out my [end-of-2019 retrospective](/posts/2019/12/sorta-strange-ssg-trip/) and, if you're so inclined, follow its links.
 
 Then, starting in the spring of 2020, I had occasion to deal with Hugo once again.
 
-In April, I wrote about incorporating [webmentions](https://indieweb.org/Webmention) in one's Hugo-based website. It was part of a five-part series about webmentions and SSG-based sites, and the research I did for the [Hugo-related part](/posts/2020/04/webmentions-three-ssgs-3) allowed me to notice anew some of Hugo's advantages.
+In April, I wrote about incorporating [webmentions](https://indieweb.org/Webmention) in one's Hugo-based website. It was part of a five-part series about webmentions and SSG-based sites, and the research I did for the [Hugo-related part](/posts/2020/04/webmentions-three-ssgs-3/) allowed me to notice anew some of Hugo's advantages.
 
-In July, as part of [creating some SSG starter sets](/posts/2020/07/beginners-luck), I made two for Hugo, and once again found myself enjoying working with Hugo more than I'd expected.
+In July, as part of [creating some SSG starter sets](/posts/2020/07/beginners-luck/), I made two for Hugo, and once again found myself enjoying working with Hugo more than I'd expected.
 
 Intrigued by the "what-if" ideas now swirling in my cranium, I thoroughly updated my old Hugo repo, including spiffing it up with [themes](https://gohugo.io/hugo-modules/theme-components/) for both [Tailwind CSS](https://tailwindcss.com) and [SCSS](https://sass-lang.com). I even used it to run this site for a few weeks. Nonetheless, I then switched the site back to Eleventy, figuring that'd been enough of that.
 
@@ -76,7 +76,7 @@ As I considered these things, a little voice in my head periodically whispered, 
 
 [^depHugo]: In fairness, let me observe that even Hugo [has a few dependencies](https://github.com/gohugoio/hugo#dependencies) in the form of a number of open-source libraries, such as [Goldmark](https://github.com/yuin/goldmark) for parsing a Hugo site's [Markdown](https://daringfireball.net/projects/markdown) content. The critical difference between Hugo and the Node.js-based SSGs on this score is that Hugo's relatively small number of dependencies are **baked into Hugo** rather than being separate things out in the Node.js package universe which one has to hope will behave themselves.
 
-I soon found myself ruefully recalling my own assessment at the end of "[Why I'm staying with Hugo](/posts/2019/07/why-staying-with-hugo)," the chronicle of my initial foray with SSGs from the world of Node.js:
+I soon found myself ruefully recalling my own assessment at the end of "[Why I'm staying with Hugo](/posts/2019/07/why-staying-with-hugo/)," the chronicle of my initial foray with SSGs from the world of Node.js:
 
 > .&nbsp;.&nbsp;. the extraordinarily bright people behind [JavaScript-based SSGs] .&nbsp;.&nbsp;. all need to think about the dicey interaction between all the dependencies and frameworks and other stuff on which their products rely. It's like trying to balance a chair by one leg poised on a tightrope. One little breeze and, **crash**. No, thank you.
 
@@ -84,7 +84,7 @@ I soon found myself ruefully recalling my own assessment at the end of "[Why I'm
 
 One particular Hugo functionality I not only rediscovered but also learned more about during that run-through last fall was Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes). This came to the fore for me after I became more aware of the need for cache-busting static assets. This is something Hugo can do out of the box, while Eleventy has no asset pipeline and therefore must accomplish this through other means.
 
-I spent [three](/posts/2020/11/using-postcss-cache-busting-eleventy) [separate](/posts/2020/12/cache-busting-eleventy-take-two) [articles](/posts/2020/12/hashing-out-cache-busting-fix-eleventy) on this subject of cache-busting CSS in Eleventy. Although I finally managed to come up with a *mostly* satisfactory solution, I once again found myself musing about how ably Hugo, on its own, handles this and so much more for which a Node.js-based SSG needs to depend on, well, tons of dependencies (and, even then, can't always do what Hugo can do).
+I spent [three](/posts/2020/11/using-postcss-cache-busting-eleventy/) [separate](/posts/2020/12/cache-busting-eleventy-take-two/) [articles](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/) on this subject of cache-busting CSS in Eleventy. Although I finally managed to come up with a *mostly* satisfactory solution, I once again found myself musing about how ably Hugo, on its own, handles this and so much more for which a Node.js-based SSG needs to depend on, well, tons of dependencies (and, even then, can't always do what Hugo can do).
 
 ## The result: Thoroughly Thoreau
 
@@ -92,7 +92,7 @@ After several weeks of these and numerous other considerations, I realized that 
 
 So, over the last few days, I put in place this plan:
 
-- **Simplify the site's appearance**. [Done](/posts/2021/01/leaner-cleaner).
+- **Simplify the site's appearance**. [Done](/posts/2021/01/leaner-cleaner/).
 - **Move the site's hosting from [Cloudflare Workers Sites](https://workers.cloudflare.com/sites) back to [Vercel](https://vercel.com)**. Done. In my tests over the last half-year, I've found that Vercel provides great worldwide performance and the fastest build speeds in the field while requiring no futzing around with [GitHub Actions](https://github.com/features/actions) for builds.[^CFP]
 - **Take the site back to single-binary land with Hugo**. Done. (Well, you probably figured that out some time back in this piece, didn't you?)[^Zola]
 - **Decide what to do about Tailwind CSS**. Still in flux. This is the last battlefield of the war between simplicity and FOMO. If FOMO wins on this count, I keep the ultra-popular Tailwind and the [PostCSS](https://postcss.org) it requires---even though the two constitute, yep, buckets of Node.js dependencies. If simplicity wins, the site goes back to SCSS, as in the site's first year-and-a-half under all three SSGs on which it existed during that period.[^simpCSS]

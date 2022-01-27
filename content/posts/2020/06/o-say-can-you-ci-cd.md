@@ -22,7 +22,7 @@ Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) i
 
 As long as your site's monthly in/out bandwidth stays under 100&nbsp;GB, Netlify gives you all these advantages even on the free tier:
 
-- **Easy and quick deployment from your online repository**---You can connect your Netlify-based site to a repo on [Bitbucket](https://bitbucket.org), [GitHub](https://github.com), or [GitLab](https://gitlab.com); then, every time you push to its default branch, *bang*, Netlify auto-deploys. So, if you keep your site project synchronized among your devices ([as I do](/posts/2019/07/roger-copy)), you can easily make changes and push them from just about anywhere.
+- **Easy and quick deployment from your online repository**---You can connect your Netlify-based site to a repo on [Bitbucket](https://bitbucket.org), [GitHub](https://github.com), or [GitLab](https://gitlab.com); then, every time you push to its default branch, *bang*, Netlify auto-deploys. So, if you keep your site project synchronized among your devices ([as I do](/posts/2019/07/roger-copy/)), you can easily make changes and push them from just about anywhere.
 - **CDN-powered speed and efficiency**---Netlify puts your site's generated files on a [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) through its partnership with multiple CDN providers, mainly [Amazon CloudFront](https://aws.amazon.com/cloudfront/). This allows your visitors, wherever they are, to access your site much more quickly than if its content lived on just one location that could be halfway around the world from them. This is a huge benefit under any circumstances, but particularly if you use images. And, speaking of assets like images&nbsp;.&nbsp;.&nbsp;.
 - **Post-processing of assets**---Check the right boxes in your site's deploy settings, and each deploy will include automatic processing of items like images, CSS files, and JavaScript files to make them smaller and, thus, further improve your site's performance.
 
@@ -78,7 +78,7 @@ Fortunately for us, a fellow named Marek Pukaj already led the way with his arti
 
 > One possible solution *[to Netlify's 300-minute monthly build limit]* is to move the build process to GitHub Actions. &nbsp;.&nbsp;.&nbsp;. With GitHub Actions, you have **2,000 free build minutes per month**, which is nearly **7 times** more than with Netlify. *[Emphasis his.]*
 
-(By the way: a **public** repo in GitHub allows for **unlimited** build minutes per month; the 2,000-per-month is for a **private** repo.) 
+(By the way: a **public** repo in GitHub allows for **unlimited** build minutes per month; the 2,000-per-month is for a **private** repo.)
 
 I had only vaguely heard of [GitHub Actions](https://github.com/features/actions/) but, the more I read about the subject in Mr. Pukaj's article and others I found, the more I liked the idea: you build on a platform with far more free build minutes, then send the result to Netlify for a quick deploy that uses not one second of *Netlify's* limit. This involves what's known as **CI/CD**, which stands for *[continuous integration/continuous delivery](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)*. While [the usual repository-to-Netlify pipeline also involves CI/CD](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git), it's less involved than what Mr. Pukaj was explaining.
 
@@ -155,7 +155,7 @@ jobs:
 
       - name: Use Node.js
         uses: actions/setup-node@v1
-        with: 
+        with:
           node-version: '12.x'
 
       - name: Install dependencies
@@ -200,7 +200,7 @@ Here's how it works.
 
 As a result: with this GitHub Action now handling builds on the GitHub setup, the deploy on Netlify typically takes no more than *ten seconds*, quite often more in the range of *two to five* seconds---and, once again, it counts as *zero* seconds against that 300-minute monthly build cap.
 
-Finally: you may wonder, hey, what if the Netlify folks learn you're doing this? Won't they object? The simple answer is: Absolutely not! You're *helping* them! You're *saving* their setup valuable time, processing wear and tear, and bandwidth for *paying* customers’ use. 
+Finally: you may wonder, hey, what if the Netlify folks learn you're doing this? Won't they object? The simple answer is: Absolutely not! You're *helping* them! You're *saving* their setup valuable time, processing wear and tear, and bandwidth for *paying* customers’ use.
 
 ### GitLab CI/CD
 
@@ -218,14 +218,14 @@ image: node:latest
 
 variables:
   WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
-  
+
 deploySite:
   stage: deploy
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
     # To use the above, you should turn off the auto-deploy
-    # GitHub-to-Netlify setup --- thus shutting off the 
-    # Netlify-side builds, thus not using your monthly build 
+    # GitHub-to-Netlify setup --- thus shutting off the
+    # Netlify-side builds, thus not using your monthly build
     # minutes quota.
     - if: '$CI_PIPELINE_SOURCE == "schedule"'
   environment:
@@ -256,7 +256,7 @@ Still&nbsp;.&nbsp;.&nbsp;. if you want me to provide similar information for Bit
 
 So, to you brave souls who got all the way through this, here's the bottom&nbsp;line&nbsp;.&nbsp;.&nbsp;.
 
-If you're using Netlify's free tier and want to stay with it, but are chafing under that 300-minute monthly build limit, follow my advice and you'll chafe no more. I can speak from experience, thanks to the aforementioned "time, research, testing, and tinkering." 
+If you're using Netlify's free tier and want to stay with it, but are chafing under that 300-minute monthly build limit, follow my advice and you'll chafe no more. I can speak from experience, thanks to the aforementioned "time, research, testing, and tinkering."
 
 There is something very precious about the right to express one's self on the web, just as in any other forum. Perhaps this long, nerdy post will help you continue to do so as often as you want, and however you want.
 

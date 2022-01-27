@@ -26,7 +26,7 @@ oldComments: |
     </div>
 ---
 
-**Note, 2019-05-04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in)."
+**Note, 2019-05-04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in/)."
 {.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.
@@ -37,7 +37,7 @@ I also cancelled my annual subscription to it, which was due to expire in five w
 
 A few months ago, I couldn't have imagined writing those sentences at all, much less posting them here.
 
-After all, one of my most-viewed posts was my explanation of why I had [settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses) as the daily driver for my writing. The people at Ulysses even linked to it from their monthly e-newsletter, obviously the reason for its *being* so visited. (Quite understandably, they won't be linking to this one.)
+After all, one of my most-viewed posts was my explanation of why I had [settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses/) as the daily driver for my writing. The people at Ulysses even linked to it from their monthly e-newsletter, obviously the reason for its *being* so visited. (Quite understandably, they won't be linking to this one.)
 
 I wrote for nearly a year within Ulysses, both for this site and in my swear-I'm-gonna-finish-it-while-I-still-remember-how-to-form-sentences work in progress (WIP).
 
@@ -72,7 +72,7 @@ So it would be Ulysses for long-form writing and iA Writer for the posts here. E
 
 Or so it seemed for a few weeks.
 
-Incidentally, as part of my getting to know iA Writer better, I even exported copies of my WIP from Ulysses to iA Writer's default storage location, the **iA Writer** iCloud Drive folder. I then began working on the WIP in *both* apps across my Apple devices, using whichever one caught my fancy that particular day. As time passed, I figured out ways to recreate (or, at least, simulate) certain Ulysses features that iA Writer lacked[^features]. And, with my growing adherence to the wisdom of keeping one's writing in [plain-text formats](/posts/2019/03/plain-truth), I also enjoyed the resulting peace of mind that came from knowing I had a backup plan for the WIP if, for some reason I couldn't yet imagine, I decided against continuing to be a Ulysses user.
+Incidentally, as part of my getting to know iA Writer better, I even exported copies of my WIP from Ulysses to iA Writer's default storage location, the **iA Writer** iCloud Drive folder. I then began working on the WIP in *both* apps across my Apple devices, using whichever one caught my fancy that particular day. As time passed, I figured out ways to recreate (or, at least, simulate) certain Ulysses features that iA Writer lacked[^features]. And, with my growing adherence to the wisdom of keeping one's writing in [plain-text formats](/posts/2019/03/plain-truth/), I also enjoyed the resulting peace of mind that came from knowing I had a backup plan for the WIP if, for some reason I couldn't yet imagine, I decided against continuing to be a Ulysses user.
 
 [^features]: For example, iA Writer lacks the commenting features available in Ulysses through the use of either ```%%``` or ```++``` as markup characters; however, because Markdown allows the insertion of HTML and CSS, I simply replaced Ulysses comments with HTML-style commenting that ```<!-- looks like this -->``` and is invisible when exported to other file formats when that's necessary. Pretty cool, huh?
 
@@ -161,7 +161,7 @@ Last night's edits weren't there; the last stuff there was from the night before
 
 I just sat there a minute, thinking about what I'd just witnessed and what it meant. Finally, I muttered, quietly and sadly, "Well, sir, that's all she wrote." I got those files safely copied over to iA Writer and---for the last time---closed Ulysses.
 
-**Note from 2019-05-04**: I've since [learned](/posts/2019/05/boxed-in) that the behavior re the timestamp turns out to be common for so-called "shoebox" or "central-library" apps like Ulysses and, for that matter, Apple's own Notes and Photos apps. So, while I considered it the Smoking Gun at that point, now I doubt that. This doesn't explain the earlier business with the sync not happening for days, of course, but I've also learned of numerous similar reports from users of "shoebox" apps so, while that doesn't make it okay, it does suggest the fault isn't *necessarily* that of Ulysses. Again, will [update](/posts/2019/05/boxed-in) with more info when I can.
+**Note from 2019-05-04**: I've since [learned](/posts/2019/05/boxed-in/) that the behavior re the timestamp turns out to be common for so-called "shoebox" or "central-library" apps like Ulysses and, for that matter, Apple's own Notes and Photos apps. So, while I considered it the Smoking Gun at that point, now I doubt that. This doesn't explain the earlier business with the sync not happening for days, of course, but I've also learned of numerous similar reports from users of "shoebox" apps so, while that doesn't make it okay, it does suggest the fault isn't *necessarily* that of Ulysses. Again, will [update](/posts/2019/05/boxed-in/) with more info when I can.
 {.yellowBox}
 
 Shortly after that, I killed the Ulysses subscription on which I'd embarked with such high hopes and expectations last May. (Of course, it's still valid until the expiration date a few weeks off, but now I don't care.)
@@ -201,7 +201,7 @@ To be sure, many don't find iA Writer a suitable replacement for Ulysses. Use ca
 
 For me, *for now*, it will do. And, just in case I haven't made my meaning sufficiently clear&nbsp;.&nbsp;.&nbsp;.
 
-One important thing I've gained through the transition to [Markdown](/posts/2019/03/mark-it-down)-flavored [plain text](/posts/2019/02/plain-truth) is tremendous freedom for the future. If the day comes that iA Writer either ceases to exist or simply winds up on my bad side one day for reasons I can't currently predict---well, there's a great, big world of Markdown-savvy apps out there, with more on the way.
+One important thing I've gained through the transition to [Markdown](/posts/2019/03/mark-it-down/)-flavored [plain text](/posts/2019/02/plain-truth/) is tremendous freedom for the future. If the day comes that iA Writer either ceases to exist or simply winds up on my bad side one day for reasons I can't currently predict---well, there's a great, big world of Markdown-savvy apps out there, with more on the way.
 
 So, yes, iA Writer, *for now*, I welcome your icon to the center positions on the docks of my Mac and iPad, and also to a presence in the Honored Four apps always visible at the bottom of my iPhone home screen. Just be sure you keep earning your presence there. Above all, don't get too comfortable.
 

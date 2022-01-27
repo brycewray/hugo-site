@@ -19,7 +19,7 @@ featured_image_caption: |
 **Note, 2020-09-09**: Although the site long since is no longer using the stack mentioned here, at least some parts of the repo [remain online for viewing by the curious](https://github.com/brycewray/eleventy_bundler).
 {.yellowBox}
 
-*Following up on my [recent post](/posts/2019/12/packing-up) about how I got this site back to my favorite [static site generator](https://staticgen.com) (SSG), [Eleventy](https://11ty.dev), and also provided some enhancements with the [webpack](https://webpack.js.org) bundler&nbsp;app&nbsp;.&nbsp;.&nbsp;.*
+*Following up on my [recent post](/posts/2019/12/packing-up/) about how I got this site back to my favorite [static site generator](https://staticgen.com) (SSG), [Eleventy](https://11ty.dev), and also provided some enhancements with the [webpack](https://webpack.js.org) bundler&nbsp;app&nbsp;.&nbsp;.&nbsp;.*
 
 As I mentioned, my process in making this happy transition was much easier than it might have been, thanks to the publicly available code from others who'd done it before me. Thus, I'm following their kind example by making this site's [GitHub repo](https://github.com/brycewray/eleventy_bundler) public. What follows, then, is some explanation of which code does what.
 
@@ -49,4 +49,4 @@ By now, the more observant among you, having seen certain items mentioned in the
 
 ## Copy-pasta meal?
 
-So, there you go. If you see anything in this site's repo that's helpful to your project, by all means, [copy-pasta](https://knowyourmeme.com/memes/copypasta) to your heart's content. If nothing else, perhaps the `package.json` file will give you some hints about cool npm packages to try if you, too, decide to weld Eleventy and webpack---which, I assure you, is a [worthy endeavor](/posts/2019/12/packing-up).
+So, there you go. If you see anything in this site's repo that's helpful to your project, by all means, [copy-pasta](https://knowyourmeme.com/memes/copypasta) to your heart's content. If nothing else, perhaps the `package.json` file will give you some hints about cool npm packages to try if you, too, decide to weld Eleventy and webpack---which, I assure you, is a [worthy endeavor](/posts/2019/12/packing-up/).

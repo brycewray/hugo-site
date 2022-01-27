@@ -19,17 +19,17 @@ It's not only all good things that come to an end; the not-so-good ones usually 
 
 As I've chronicled here a few times over the last year-plus&nbsp;.&nbsp;.&nbsp;.
 
-- "[Beginner's luck](/posts/2020/07/beginners-luck)"
-- "[Beginner's luck: an update](/posts/2021/03/beginners-luck-update)"
-- "[Beginner's luck #3: adding a Zola starter](/posts/2021/06/beginners-luck-3-adding-zola-starter)"
-- "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition)"
+- "[Beginner's luck](/posts/2020/07/beginners-luck/)"
+- "[Beginner's luck: an update](/posts/2021/03/beginners-luck-update/)"
+- "[Beginner's luck #3: adding a Zola starter](/posts/2021/06/beginners-luck-3-adding-zola-starter/)"
+- "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition/)"
 
 .&nbsp;.&nbsp;.&nbsp;I have churned out a few starter sets for the [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Zola](https://www.getzola.org/) [static site generators](https://jamstack.org/generators) (SSGs). However, I've decided to suspend development on each set, as of today. The GitHub repository for each set now has a note to that effect.
 
-**Update, 2021-11-02**: I decided to go back today and do one more fix on the [hugo_twcss](https://github.com/brycewray/hugo_twcss) Hugo/[Tailwind CSS](https://tailwindcss.com) starter set, based on the configuration I described in "[Making Tailwind JIT work with Hugo](/posts/2021/11/making-tailwind-jit-work-hugo)."
+**Update, 2021-11-02**: I decided to go back today and do one more fix on the [hugo_twcss](https://github.com/brycewray/hugo_twcss) Hugo/[Tailwind CSS](https://tailwindcss.com) starter set, based on the configuration I described in "[Making Tailwind JIT work with Hugo](/posts/2021/11/making-tailwind-jit-work-hugo/)."
 {.yellowBox}
 
-As for why I'm pulling the plug on working with these, call it an after-effect of my [retirement](/posts/2021/09/transition) combined with my original intent, which was to keep these updated constantly. That also means all their software dependencies, especially in the cases of the Eleventy starters. To handle these repos in what I consider the right way for actively developed projects, I'd need to do quite a bit of work on them in the near future, and with no end in sight. I had wanted to keep them active and fresh, but that was becoming more of a chore than I wanted.[^retirement] So, rather than leave them half-maintained, I chose instead just to mark them as "suspended" as a sort of *caveat emptor*.
+As for why I'm pulling the plug on working with these, call it an after-effect of my [retirement](/posts/2021/09/transition/) combined with my original intent, which was to keep these updated constantly. That also means all their software dependencies, especially in the cases of the Eleventy starters. To handle these repos in what I consider the right way for actively developed projects, I'd need to do quite a bit of work on them in the near future, and with no end in sight. I had wanted to keep them active and fresh, but that was becoming more of a chore than I wanted.[^retirement] So, rather than leave them half-maintained, I chose instead just to mark them as "suspended" as a sort of *caveat emptor*.
 
 [^retirement]: You young whippersnappers may want to know that there's actually a lot of important post-retirement paperwork---all too much actual dead-tree paper and not nearly enough electronic paper for my preferences---with which one has to deal fairly urgently, and those things take up more of one's time than you might think.
 

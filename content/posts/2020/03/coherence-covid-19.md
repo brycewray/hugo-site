@@ -18,7 +18,7 @@ featured_image_caption: |
 
 This is the third weekend of the month when the U.S.A. began to grasp just how big a deal that [COVID-19 a/k/a novel coronavirus](https://www.cdc.gov/coronavirus/2019-nCoV/index.html) was going to be. It's been a head-snapping experience for your friendly writer, just as it doubtless has been for almost all of you, wherever you are.
 
-Just two weekends ago, my vain hope for a restful weekend ended when [our first grandchild was born](/posts/2020/03/welcome-sweet-little-early-bird) nearly a month earlier than predicted. We now know that was an astoundingly fortunate happenstance rather than the *oh-I-hope-she-didn't-arrive-too-early* that we initially believed it to be.[^Cuter] Indeed, just as I was helping our son-in-law haul all their stuff down in preparation for the trip home, the hospital was setting up the beginnings of its check-all-visitors-for-the-virus operation in the lobby. Even though we were outside the building only a moment as he loaded the vehicle, we had to pass muster upon our re-entry---attesting to our neither having COVID-19 symptoms nor having been out of the U.S.A. recently (specific other countries were mentioned, but I frankly didn't understand what the person asking said through her somewhat ill-fitting mask).
+Just two weekends ago, my vain hope for a restful weekend ended when [our first grandchild was born](/posts/2020/03/welcome-sweet-little-early-bird/) nearly a month earlier than predicted. We now know that was an astoundingly fortunate happenstance rather than the *oh-I-hope-she-didn't-arrive-too-early* that we initially believed it to be.[^Cuter] Indeed, just as I was helping our son-in-law haul all their stuff down in preparation for the trip home, the hospital was setting up the beginnings of its check-all-visitors-for-the-virus operation in the lobby. Even though we were outside the building only a moment as he loaded the vehicle, we had to pass muster upon our re-entry---attesting to our neither having COVID-19 symptoms nor having been out of the U.S.A. recently (specific other countries were mentioned, but I frankly didn't understand what the person asking said through her somewhat ill-fitting mask).
 
 [^Cuter]: And she's still fine, by the way, gaining weight and getting cuter with every new photo our daughter and son-in-law send.
 
@@ -48,7 +48,7 @@ Last night, for example, an email from the auto dealership where we recently pur
 
 [^Dealership]: If you're thinking, "Well, it's not as if they were gonna get car-shoppers on the lot with all that's going on right now," all I can reply is: "You'd think." You see, this area seems full of COVID-19 skeptics. They surely have seen news coverage of the virus but---given the typical political leanings around here---are doubtful about whether it's truly all that serious. Science begs to differ, as it usually does.
 
-[^Kennedy]: As I [previously mentioned](/posts/2020/03/welcome-sweet-little-early-bird), I had just finished that errand when we learned the aforementioned grandchild had decided to start her early arrival.
+[^Kennedy]: As I [previously mentioned](/posts/2020/03/welcome-sweet-little-early-bird/), I had just finished that errand when we learned the aforementioned grandchild had decided to start her early arrival.
 
 ## No end in sight
 

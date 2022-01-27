@@ -19,7 +19,7 @@ featured_image_caption: |
 
 Interested in building a new website with, or converting an existing site to, either of the two best [static site generators](https://jamstack.org/generators) (SSGs)? Please read on, my friend.
 
-Recently, I've been spending spare hours working on [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) **starter sets** for folks like you. And they're not only updated versions of the ones I [announced last July](/posts/2020/07/beginners-luck), but also **two new ones** I'm announcing today.
+Recently, I've been spending spare hours working on [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) **starter sets** for folks like you. And they're not only updated versions of the ones I [announced last July](/posts/2020/07/beginners-luck/), but also **two new ones** I'm announcing today.
 
 Rather than expect you to find them on your own in my various scattered references across my humble little site, I thought I'd write this brief post to list them all together. Maybe you'll find them helpful in whatever you choose to do in Eleventy or Hugo. Each is always based on the current appearance and layout of this site, which I hope will make clearer the connection between the code and the result.
 
@@ -27,7 +27,7 @@ I'll list each by the name of its respective [repository](https://en.wikipedia.o
 
 ## Eleventy starters
 
-Incidentally: the *eleventy_solo* in each Eleventy starter's name comes from that of [**this** site's repo](https://github.com/brycewray/eleventy_solo) (and, if you're wondering why I chose that name, you may want to see my [post from last year](/posts/2020/05/going-solo-eleventy) about when, and why, I converted the site over from Eleventy/[webpack](https://webpack.js.org) to Eleventy-only).
+Incidentally: the *eleventy_solo* in each Eleventy starter's name comes from that of [**this** site's repo](https://github.com/brycewray/eleventy_solo) (and, if you're wondering why I chose that name, you may want to see my [post from last year](/posts/2020/05/going-solo-eleventy/) about when, and why, I converted the site over from Eleventy/[webpack](https://webpack.js.org) to Eleventy-only).
 
 The Eleventy starters are distinguished by two things: which of the [numerous Eleventy **templating choices**](https://www.11ty.dev/docs/languages/) they use, [JavaScript](https://www.11ty.dev/docs/languages/javascript/) or [Nunjucks](https://www.11ty.dev/docs/languages/nunjucks/); and how they're **styled**.
 

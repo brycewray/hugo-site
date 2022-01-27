@@ -47,7 +47,7 @@ oldComments: |
 
 {{< disclaimer >}}
 
-Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics]---and quite a few retweets and friendly tweets from Hugo aficionados.
+Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo/), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics]---and quite a few retweets and friendly tweets from Hugo aficionados.
 
 [^NetlifyAnalytics]: I'd just dumped both Google Analytics and a much lesser-known competitor for the brand-new [Netlify Analytics](https://netlify.com/products/analytics), and it was really cool to watch the data come in on this new, tracking code-free platform.
 
@@ -61,17 +61,17 @@ In fact, that's the case for the first item.
 
 From the beginning, I'd had my local Hugo directory set up for cloud storage---first with Dropbox, which I've since punted[^Dropbox], then with iCloud Drive---and hadn't encountered any issues. However, it turns out I'd been lucky.
 
-[^Dropbox]: As I [noted](/posts/2019/02/back-up-jack) earlier this year, Dropbox had already ceased to be my go-to cloud sync vendor, and I was keeping only a small quantity of files on there, none of which *had* to be there. Then, a few days ago, Dropbox unexpectedly revamped how it works on the Mac in a way I---and [others](https://www.inc.com/jason-aten/dropbox-just-announced-a-major-redesign-that-youre-going-to-love-until-you-realize-it-has-a-fatal-flaw.html)---found objectionable, so I decided to cut the cord, moving my remaining files away and killing the account.
+[^Dropbox]: As I [noted](/posts/2019/02/back-up-jack/) earlier this year, Dropbox had already ceased to be my go-to cloud sync vendor, and I was keeping only a small quantity of files on there, none of which *had* to be there. Then, a few days ago, Dropbox unexpectedly revamped how it works on the Mac in a way I---and [others](https://www.inc.com/jason-aten/dropbox-just-announced-a-major-redesign-that-youre-going-to-love-until-you-realize-it-has-a-fatal-flaw.html)---found objectionable, so I decided to cut the cord, moving my remaining files away and killing the account.
 
 While I was trying Gatsby, I had its directory in iCloud Drive also, and soon saw that, occasionally, files I killed would come back, irrespective of what I'd done in the [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml). Mystified, I did some research and found that there was a very good reason not to do that: in essence, using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).
 
-So, now, I keep my Hugo directory in a drive that's not sync'd with the cloud. [Of course](/posts/2019/02/back-up-jack), it definitely is fully backed up as well as pushed to a remote repo. In fact, I now have it in three different remote repos: not only the original [Bitbucket](https://bitbucket.org) repo which feeds the site to [Netlify](https://www.netlify.com) but also repos on [GitHub](https://github.com) and [GitLab](https://gitlab.com).[^NetlifyHost]
+So, now, I keep my Hugo directory in a drive that's not sync'd with the cloud. [Of course](/posts/2019/02/back-up-jack/), it definitely is fully backed up as well as pushed to a remote repo. In fact, I now have it in three different remote repos: not only the original [Bitbucket](https://bitbucket.org) repo which feeds the site to [Netlify](https://www.netlify.com) but also repos on [GitHub](https://github.com) and [GitLab](https://gitlab.com).[^NetlifyHost]
 
 [^NetlifyHost]: Why three remote repos? Hey, why not? All three sites host private repos for free; and Netlify supports all three, just in case I ever change my mind about the site to which I want to point Netlify. Also, it's just a little more security.
 
 ## Oh, the typography
 
-If you read [that last post](/posts/2019/07/why-staying-with-hugo), you know the ultimate straw that caused me to cancel the whole thing with Gatsby came when I found its handling of on-screen typography to be erratic after I'd attempted to install [MDX](https://mdxjs.com) compatibility. As I made clear last year, typography is a [big](/posts/2018/10/web-typography-part-1) [deal](/posts/2018/10/web-typography-part-2) with me, no less on the web than anywhere else, so that was the final show-stopper.
+If you read [that last post](/posts/2019/07/why-staying-with-hugo/), you know the ultimate straw that caused me to cancel the whole thing with Gatsby came when I found its handling of on-screen typography to be erratic after I'd attempted to install [MDX](https://mdxjs.com) compatibility. As I made clear last year, typography is a [big](/posts/2018/10/web-typography-part-1/) [deal](/posts/2018/10/web-typography-part-2/) with me, no less on the web than anywhere else, so that was the final show-stopper.
 
 Well, I want to tell you: in my admittedly limited research, I found this  to be a problem with many of the newer SSGs.
 
@@ -100,7 +100,7 @@ First, understand how easy we Hugo users have it where SCSS/Sass compatibility i
 
 (**Note**: If you're bothered by the Go code in there, you're apparently not alone. I'll address that below.)
 
-Many other SSGs make this sort of thing considerably more problematic, especially if you're not willing to craft your own pipeline between the SSG and the CSS or SCSS/Sass files, through either [plugins](https://www.npmjs.com/package/gatsby-plugin-sass) or other methods. ([I already told you my luck](/posts/2019/07/why-staying-with-hugo) with plugins, especially when there are a whole slew of them in the SSG's config files.) Believe me, I am neither willing nor (likely) able.
+Many other SSGs make this sort of thing considerably more problematic, especially if you're not willing to craft your own pipeline between the SSG and the CSS or SCSS/Sass files, through either [plugins](https://www.npmjs.com/package/gatsby-plugin-sass) or other methods. ([I already told you my luck](/posts/2019/07/why-staying-with-hugo/) with plugins, especially when there are a whole slew of them in the SSG's config files.) Believe me, I am neither willing nor (likely) able.
 
 Even the documentation for an SSG like [Eleventy](https://11ty.dev) that claims to be much easier and more more logically configured than other JavaScript-based SSGs---and, in many ways, it is---makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/Sass, rather than [inlining](https://www.11ty.dev/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
 

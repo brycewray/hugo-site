@@ -95,14 +95,14 @@ choco install hugo -confirm
 ### STEP 2: Create your new site.
 
 1. Use your system's CLI app to navigate to the location on your computer where you want to create the local version of your new site.  \
-I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.[^syncGit]
+I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack/). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.[^syncGit]
 2. Copy/paste the following into the CLI app and press **Return** or **Enter**:
 ```bash
 hugo new site mysite
 ```
 This command will create a new *mysite* directory in that location, and *mysite* will have various subdirectories of its own.[^mysite] One of those is called *themes*, which brings us to **STEP 3**.
 
-[^syncGit]: Since writing this, I have learned there are different opinions about whether it's a good idea to mix a Git repository with cloud sync, since the whole idea of a Git repo is to keep track of versions going back as far as necessary and some cloud sync operations have at least the potential to disrupt some of that. All I can say for my own experience is that it hasn't been a problem, but you should make sure your cloud setup is **not** set so that it won't keep local copies of any inactive files (*e.g.*, on a Mac, make sure iCloud is **not** set to "Optimize Mac storage"; see also [this post](/posts/2019/05/boxed-in)), since deviations between what Git expects to see and what's actually on your drive can lead to utter Git chaos. Having seen that occur, I can assure you: you do **not** want that.
+[^syncGit]: Since writing this, I have learned there are different opinions about whether it's a good idea to mix a Git repository with cloud sync, since the whole idea of a Git repo is to keep track of versions going back as far as necessary and some cloud sync operations have at least the potential to disrupt some of that. All I can say for my own experience is that it hasn't been a problem, but you should make sure your cloud setup is **not** set so that it won't keep local copies of any inactive files (*e.g.*, on a Mac, make sure iCloud is **not** set to "Optimize Mac storage"; see also [this post](/posts/2019/05/boxed-in/)), since deviations between what Git expects to see and what's actually on your drive can lead to utter Git chaos. Having seen that occur, I can assure you: you do **not** want that.
 
 [^mysite]:If you want to call it something other than *mysite,* type that instead of *mysite* in that line. Be sure the name has no spaces; you can use hyphens or underscores to separate words, such as *my-site* or *my_site*, if you prefer. For the remainder of these instructions, we'll continue to use *mysite* as the example name.
 

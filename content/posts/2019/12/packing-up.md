@@ -41,7 +41,7 @@ Until not all that many years ago, if you wanted to add JavaScript code to your 
 ```html
 <script src="/js/comments-script.js"></script>
 <script src="/js/goofy-image-slider.js"></script>
-``` 
+```
 
 &nbsp;.&nbsp;.&nbsp;. or put some code right in your HTML&nbsp;.&nbsp;.&nbsp;.
 
@@ -94,11 +94,11 @@ So, I hope, that explains bundlers. Now, where was I? Oh, yeah&nbsp;.&nbsp;.&nbs
 
 ## Purple, but no passion
 
-A few weeks ago, I [told you](/posts/2019/10/now-gatsby-geezer) I had managed at last to get this site up and running on [Gatsby](https://gatsbyjs.org) after [multiple](/posts/2019/07/why-staying-with-hugo) [tries](/posts/2019/07/lessons-learned) and considerable [angst](/posts/2019/09/why-left-hugo-eleventy).
+A few weeks ago, I [told you](/posts/2019/10/now-gatsby-geezer/) I had managed at last to get this site up and running on [Gatsby](https://gatsbyjs.org) after [multiple](/posts/2019/07/why-staying-with-hugo/) [tries](/posts/2019/07/lessons-learned/) and considerable [angst](/posts/2019/09/why-left-hugo-eleventy/).
 
 For a few days, I reveled in the fact that I, a person who really doesn't know that much about the [React](https://reactjs.org) JavaScript library on which Gatsby depends, had managed to overcome this "great rebeccapurple whale." However, I soon realized to my surprise that I wasn't satisfied. The feeling of triumph grew stale. I felt a distinct sense of "Okay, fine; **now** what?!" It was as if I'd climbed Everest, looked around for a minute, and said, "*So?!?*"
 
-You perhaps got a hint of that in my [recent "Mixed nuts" observation](/posts/2019/11/mixed-nuts-2019-11):
+You perhaps got a hint of that in my [recent "Mixed nuts" observation](/posts/2019/11/mixed-nuts-2019-11/):
 
 > Although this site's been on Gatsby for a few weeks now, I still admire Eleventy, which is just plain fun to use. Still, Gatsby's image processing, seamless use of webpack, and staggering array of plugins are keeping me with it. For now.
 
@@ -112,7 +112,7 @@ So, I began to wonder, what if I could learn to use Eleventy with a bundler? Ele
 
 ## A leg up
 
-As [previously described](/posts/2019/09/why-left-hugo-eleventy), I was familiar with Eleventy. The X factor on this was going to be webpack. While it's apparently considerably easier to configure than were earlier versions, it's no walk in the park.
+As [previously described](/posts/2019/09/why-left-hugo-eleventy/), I was familiar with Eleventy. The X factor on this was going to be webpack. While it's apparently considerably easier to configure than were earlier versions, it's no walk in the park.
 
 However, this is where my months of wrangling with Gatsby (and, a few times, with [Create React App](https://create-react-app.dev)) came in handy. Had I not been through that already, I'd probably have wilted quickly whenever I ran into the inevitable glitches while trying to set things just right for webpack to do its thing---including having separate configs for development and production. But, by now, it was no biggie. That's *not* to say it was easy.
 
@@ -142,7 +142,7 @@ I can also tell you that the development experience of my setup is a lot cleaner
 
 Oh, by the way: in my first few builds out to Netlify, I've found this combo to beat Gatsby on build speed, also. (To be fair, Gatsby hasn't ever been known for being a quick builder.) I was pleased to see that, despite the fact I was putting together the config with zero experience with webpack, it all worked, and quickly, when it finally came time to put the thing on the web for real.
 
-In summary, the Eleventy/webpack combo gives me things I couldn't have had if I'd used either without the other.[^webpackAlone] 
+In summary, the Eleventy/webpack combo gives me things I couldn't have had if I'd used either without the other.[^webpackAlone]
 
 - Eleventy allows easier and more flexible [templating](https://www.11ty.dev/docs/templates/). Yes, you *can* use Markdown with webpack to create web pages, but I simply find Eleventy's method easier to use and configure.
 
@@ -158,7 +158,7 @@ Although I have never been adept at dealing with mechanical things, much to my w
 
 In fact, not long ago, our company owner asked a group of us about our hobbies. The others mentioned normal, human things like dancing, mountain-climbing, and playing or watching various sports.[^sports] Then, he got to me. I had to be the group nerd who admitted that mine is very similar to what I do for pay. So I guess I'm the proverbial "[dull boy](https://en.wikipedia.org/wiki/All_work_and_no_play_makes_Jack_a_dull_boy)," which will shock absolutely no one who knows me.
 
-[^sports]: And, hey, I like watching sports, too. As I type these particular words, I have a browser window open with a stream of [NFL Red Zone](http://www.nfl.com/redzone)---although, similar to what I [mentioned](/posts/2019/11/mixed-nuts-2019-11) recently, ballgames lately are more background noise to me than anything else.
+[^sports]: And, hey, I like watching sports, too. As I type these particular words, I have a browser window open with a stream of [NFL Red Zone](http://www.nfl.com/redzone)---although, similar to what I [mentioned](/posts/2019/11/mixed-nuts-2019-11/) recently, ballgames lately are more background noise to me than anything else.
 
 That said, this tendency can come in handy. What you're seeing now is proof.
 

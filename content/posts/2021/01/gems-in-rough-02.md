@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-For those of you who haven't read the [first](/posts/2020/12/gems-in-rough) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
+For those of you who haven't read the [first](/posts/2020/12/gems-in-rough/) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
 
 Well, looks like we're there, because I've already accumulated some more of this stuff to pass along. (Fortunately for you, I doubt seriously that future such instances will be quite this closely spaced. No promises, though.) So, without further ado&nbsp;.&nbsp;.&nbsp;.
 
@@ -26,7 +26,7 @@ Well, looks like we're there, because I've already accumulated some more of this
 
 *[Fans of U.S. professional football likely will "get" the pun in that headline without much help, but [here's a brief explainer](https://www.urbandictionary.com/define.php?term=straight%20cash%2C%20homey) for the rest of you.]*
 
-I spent [three](/posts/2020/11/using-postcss-cache-busting-eleventy) [entire](/posts/2020/12/cache-busting-eleventy-take-two) [posts](/posts/2020/12/hashing-out-cache-busting-fix-eleventy) in recent weeks talking about how to handle cache-busting your CSS in [Eleventy](https://11ty.dev). Now, don't worry: I'm *not* going over all that again, I promise. **Still**, for those of you who *did* read those posts, especially the last two (in which I proposed a solution that actually works with my recommended CSS setup), please be aware that I recently added one more notable bit of related info. So here it is once again (including a later update):
+I spent [three](/posts/2020/11/using-postcss-cache-busting-eleventy/) [entire](/posts/2020/12/cache-busting-eleventy-take-two/) [posts](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/) in recent weeks talking about how to handle cache-busting your CSS in [Eleventy](https://11ty.dev). Now, don't worry: I'm *not* going over all that again, I promise. **Still**, for those of you who *did* read those posts, especially the last two (in which I proposed a solution that actually works with my recommended CSS setup), please be aware that I recently added one more notable bit of related info. So here it is once again (including a later update):
 
 > **Important**: Note that the process completes itself **only** during actual site **builds**, and **not** in the `dev` or `testbuild` scripts---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur. Thus, you may want to `gitignore` the top-level file `csshash` (but **not** `csshash.js`) and the files `/_data/csshash.json` and `/_data/year.json`.
 
@@ -64,7 +64,7 @@ So, if you're a Hugo user right now, you have two options where it comes to good
 
 Those who have inflicted upon themselves the curse of reading any significant number of my posts are all too aware that I have a thing about using footnotes. Often, lots of ’em. So it kinda griped my cookies (as the technical term is used) that Eleventy---when properly set up for footnotes in the first place through use of the [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote) plugin for Eleventy's usual [markdown-it](https://github.com/markdown-it/markdown-it) parser---always encased the footnote numbers in brackets. Brackets!! Argh.
 
-Here's an example, using a screen capture of a paragraph from last year's "[YouTube TV and the RSNs flap](/posts/2020/02/youtube-tv-rsns-flap)":
+Here's an example, using a screen capture of a paragraph from last year's "[YouTube TV and the RSNs flap](/posts/2020/02/youtube-tv-rsns-flap/)":
 
 {{< imgc src="Eleventy-bracketed-footnotes_2520x844.png" alt="Paragraph ending in a footnote whose number is bracketed" width="2520" height="844" >}}
 
@@ -94,7 +94,7 @@ Yay. Thanks and nice going, Mark. *(By the way, Eleventy fans: he's got a lot of
 
 It appears the next hot image format on the website front is going to be [AVIF](https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/). It offers even tighter compression than Google's WebP (and, thus, ’waaay more than the comparatively ancient JPEG), and is quickly gaining support among the most popular browsers.
 
-I bring this up only to note that, so far, [Cloudinary](https://cloudinary.com)---which I [began using last year](/posts/2020/07/transformed) to offload the increasing headaches of my site's image-handling---has yet to support AVIF except in an experimental way mentioned in a [blog post from a few months back](https://cloudinary.com/blog/image_formats_getting_it_right#next-gen). Moreover, that same post says that, "due to AVIF's extreme encode times, usage is currently limited." For now, I'm taking this to mean that little cheapo free-tier users such as I won't get to see AVIF be one of the formats provided by that otherwise amazing [`f_auto` parameter](https://cloudinary.com/documentation/image_transformations#automatic_format_selection_f_auto) in Cloudinary image URLs. I hope I'm wrong; the final outcome is TBD.
+I bring this up only to note that, so far, [Cloudinary](https://cloudinary.com)---which I [began using last year](/posts/2020/07/transformed/) to offload the increasing headaches of my site's image-handling---has yet to support AVIF except in an experimental way mentioned in a [blog post from a few months back](https://cloudinary.com/blog/image_formats_getting_it_right#next-gen). Moreover, that same post says that, "due to AVIF's extreme encode times, usage is currently limited." For now, I'm taking this to mean that little cheapo free-tier users such as I won't get to see AVIF be one of the formats provided by that otherwise amazing [`f_auto` parameter](https://cloudinary.com/documentation/image_transformations#automatic_format_selection_f_auto) in Cloudinary image URLs. I hope I'm wrong; the final outcome is TBD.
 
 ----
 

@@ -24,7 +24,7 @@ I do still like, admire the thinking behind, and anticipate a great future for, 
 
 But this site is back on [Hugo](https://gohugo.io).
 
-Yep. The [move](/posts/2019/09/why-left-hugo-eleventy) lasted fewer than two weeks.
+Yep. The [move](/posts/2019/09/why-left-hugo-eleventy/) lasted fewer than two weeks.
 
 ## This is getting old, fella
 
@@ -42,7 +42,7 @@ Truthfully, I'm not sure. But here are the reasons that sound right to me at the
 
 ### The learning curve wasn't steep enough
 
-That may seem weird, but, as I [previously](/posts/2019/07/why-staying-with-hugo) [explained](/posts/2019/09/why-left-hugo-eleventy), a big part of the reason why I was looking to leave Hugo in the first place was that I wanted to learn more about how JavaScript-based SSGs work.
+That may seem weird, but, as I [previously](/posts/2019/07/why-staying-with-hugo/) [explained](/posts/2019/09/why-left-hugo-eleventy/), a big part of the reason why I was looking to leave Hugo in the first place was that I wanted to learn more about how JavaScript-based SSGs work.
 
 However, because Eleventy is **so** easy and **so** flexible as compared to, say, the inscrutable [Gatsby](https://gatsbyjs.org), I just didn't find it challenging enough---which may be kind of a strange tribute to Eleventy[^contribute] and its creator, Zach Leatherman, albeit a "while-I-say-goodbye" tribute.
 
@@ -65,9 +65,9 @@ On the day this week when I was pondering whether to revert to Hugo, egg-on-my-f
 Back in January, Flavio Copes, the well-known developer and prolific tech blogger (not to mention Hugo user), wrote a piece called "[The pros of using a boring stack](https://flaviocopes.com/boring-stack/)." Among his many salient-as-usual points (and the boldfacing is all his):
 
 > .&nbsp;.&nbsp;. if you want to create a blog and be serious at it, then use the most boring and bulletproof thing you can find. Definitely **don't work on your blog infrastructure if you want to do any serious blogging**.
-> 
+>
 > **The tech must go out of the way**[;] you should only **focus on the content**.
-> 
+>
 > Otherwise you'll spend most of your free time tweaking the blog platform (which --- let's be clear --- **no one except you cares about**) instead of writing content. *[And just in case it wasn't sufficiently clear the first time, he immediately repeats it&nbsp;.&nbsp;.&nbsp;.]* No one cares about that infrastructure.
 
 > One rule is that you know the pitfalls of your platform, the grass is always greener on the other side of the fence, and you like to imagine new platforms being 100% perfect. That never happens, and the devil is in the details.

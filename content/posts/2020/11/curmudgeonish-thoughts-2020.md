@@ -16,11 +16,11 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@dre0316?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andre Hunter</a>; <a href="https://unsplash.com/s/photos/angry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-As years go, boy, 2020 has been one; and, as I post, its most bizarre parts may yet lie in wait. That's why it seems a good time---as in, "the rant before the storm"---to issue my third annual edition of "Curmudgeonish thoughts," working off the tradition (?) of the [2018 original](/posts/2018/11/some-curmudgeonish-thoughts) and its [2019 sequel](/posts/2019/11/curmudgeonish-2019).
+As years go, boy, 2020 has been one; and, as I post, its most bizarre parts may yet lie in wait. That's why it seems a good time---as in, "the rant before the storm"---to issue my third annual edition of "Curmudgeonish thoughts," working off the tradition (?) of the [2018 original](/posts/2018/11/some-curmudgeonish-thoughts/) and its [2019 sequel](/posts/2019/11/curmudgeonish-2019/).
 
 So, with my spittle fully locked and loaded, here we go, and I apologize in advance in case you're one of the people who regularly commit any of these *(shudder)* and didn't know before now that you were aggravating the pain of at least one-seven-billionth of a suffering humanity. Also, at the end, I'll address a question that probably will be burning in your brain by that point.
 
----- 
+----
 
 ## Grammar gripes
 
@@ -60,7 +60,7 @@ Mind you, these are *extremely smart people* who are doing this, and---perhaps e
 
 Speaking of YouTube: I hope, but don't expect, to see an end to the current trend of making each YouTube video's title "slide" with the video's creator making a goofy face at the camera. It doesn't exactly spur confidence in his or her judgment about whatever the subject of the video might be, especially if it's something that's slightly more serious than, say, making goofy faces at the camera.
 
----- 
+----
 
 ## Perspective?
 

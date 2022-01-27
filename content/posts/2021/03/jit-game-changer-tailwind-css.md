@@ -56,7 +56,7 @@ Let's say your design team requires your site's navigation bar to be exactly 63 
 
 [^dotPixels]: Not "63.7," as I originally wrote. (Jeez.) Shows why I shouldn't try writing sarcasm when I'm tired.
 
-[^myUnits]: Indeed, I noted that very thing in my recent "[Next steps?](/posts/2021/03/next-steps)" article about why I chose not to use Tailwind for a project I'm doing for the Day Job: ".&nbsp;.&nbsp;.&nbsp;Tailwind's fixed units aren't quite precise enough for some of what I'm trying to do."
+[^myUnits]: Indeed, I noted that very thing in my recent "[Next steps?](/posts/2021/03/next-steps/)" article about why I chose not to use Tailwind for a project I'm doing for the Day Job: ".&nbsp;.&nbsp;.&nbsp;Tailwind's fixed units aren't quite precise enough for some of what I'm trying to do."
 
 But now, another goodie in the Tailwind JIT code---the allowance of **arbitrary style creation**---gives you far more flexibility. Now you can satisfy your design team's requirements with CSS like `h-[63px]` and `bg-[#a7b492]` to build that nav bar as spec'd. It was *this* addition, even more than the JIT functionality, that made me sit up and take notice about what the Tailwind team announced; and I saw similar comments from other web devs who've been wanting something like this in Tailwind.[^arbs]
 

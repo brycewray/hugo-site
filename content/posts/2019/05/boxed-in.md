@@ -22,7 +22,7 @@ Yeah, I know: "Write it all the way through, first, then edit later." Still, you
 
 ## Sick sync
 
-On April 20, 2019, I issued a post called "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)." It detailed why I would no longer use---and had cancelled my soon-expiring annual subscription to---the [Ulysses](https://ulysses.app) app on which I'd once [gleefully relied](/posts/2018/09/why-finally-settled-Ulysses) for writing the WIP and, before I glommed onto [iA Writer](https://ia.net/writer), this site's posts.
+On April 20, 2019, I issued a post called "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)." It detailed why I would no longer use---and had cancelled my soon-expiring annual subscription to---the [Ulysses](https://ulysses.app) app on which I'd once [gleefully relied](/posts/2018/09/why-finally-settled-Ulysses/) for writing the WIP and, before I glommed onto [iA Writer](https://ia.net/writer), this site's posts.
 
 In essence, it had come down to my no longer trusting the ability of Ulysses to sync successfully with iCloud---particularly on the Mac. I'd lost a little work but, mostly, just had scares: "red-sheet" conflicts and that sort of thing.
 
@@ -30,7 +30,7 @@ While trying to find a fix to the initial occurrence of the glitch, I'd learned 
 
 I'd given Ulysses one more chance over a period of days when I "stress-tested" it, only for it to sputter again (so I thought; more on that later). As a result, I'd decided to drop Ulysses and cancel the sub, figuring to let iA Writer carry my entire creative writing load, not just this site's posts, going forward.
 
-I then issued the aforementioned "Why I left Ulysses" post to explain my decision. I felt an obligation to do so. After all, up to that point, my most-viewed post had been "[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses)" just eight short months before. That is: I'd told the good side, so I owed my tiny number of readers[^tinyNumber] the bad, as well.
+I then issued the aforementioned "Why I left Ulysses" post to explain my decision. I felt an obligation to do so. After all, up to that point, my most-viewed post had been "[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses/)" just eight short months before. That is: I'd told the good side, so I owed my tiny number of readers[^tinyNumber] the bad, as well.
 
 [^tinyNumber]: But please be assured that I appreciate the time and consideration of you long-suffering, not-easily-bored souls. Or, as a late and much-missed fellow I used to hear on the radio in my youth would close his afternoon show: "Ah love each and ever' one o' you li'l boogers."
 
@@ -107,11 +107,11 @@ And, no, I actually do *not* like the taste of crow, since you ask. But I very m
 
 What did I learn? Well&nbsp;.&nbsp;.&nbsp;.
 
-- As one Ulysses fan recently [told me jokingly on Twitter](https://twitter.com/craigdwarhurst/status/1120633985481285633), "We all pays our money and makes our choice." True. And I agree that I do so with wide-open eyes that neither Ulysses nor any other app is perfect. Nor is iCloud, in which I've [put a great deal of hope and trust---and my monthly money](/posts/2019/02/back-up-jack).
+- As one Ulysses fan recently [told me jokingly on Twitter](https://twitter.com/craigdwarhurst/status/1120633985481285633), "We all pays our money and makes our choice." True. And I agree that I do so with wide-open eyes that neither Ulysses nor any other app is perfect. Nor is iCloud, in which I've [put a great deal of hope and trust---and my monthly money](/posts/2019/02/back-up-jack/).
 - To quote none other than Linus of "Peanuts" fame: "[I'm never quite so stupid as when I'm being smart!](https://www.pinterest.com/pin/4574037096083898)" I thought I knew. And maybe I knew some of it. But I didn't know enough. I was blaming one particular app for something that is an irregularly appearing characteristic of its app type, a type which I already knew and accepted because it makes the all-inclusive Ulysses Library possible.
 - It's still a good idea to "[trust, but verify](https://en.wikipedia.org/wiki/Trust,_but_verify)." So I will continue the practice I started even before all this hubbub began, which is a periodic copy of Ulysses content over to iA Writer and, to be triply sure, Scrivener[^ScrivStill] as well.
 
-[^ScrivStill]: Yes, I still open Scrivener on occasion. I gave serious thought to switching back to it during these two weeks of post-decision angst, and even gave it a shot or two with the WIP, but still ran into the [same issues as before](/posts/2018/09/why-finally-settled-ulysses) (my issues, not Scrivener's). That said, I may yet find needs for its organizational super powers if/when the WIP ever nears publication time, especially since [the 3.0.3 upgrade](https://www.literatureandlatte.com/export-to-vellum) made it even more [Vellum](https://vellum.pub)-friendly.
+[^ScrivStill]: Yes, I still open Scrivener on occasion. I gave serious thought to switching back to it during these two weeks of post-decision angst, and even gave it a shot or two with the WIP, but still ran into the [same issues as before](/posts/2018/09/why-finally-settled-ulysses/) (my issues, not Scrivener's). That said, I may yet find needs for its organizational super powers if/when the WIP ever nears publication time, especially since [the 3.0.3 upgrade](https://www.literatureandlatte.com/export-to-vellum) made it even more [Vellum](https://vellum.pub)-friendly.
 
 So, with the hope that you'll ever trust me again after this episode, I close this *mea culpa*. I am somewhat (?) chagrined by this whole thing, but nonetheless am grateful to have that little Ulysses butterfly back in my Mac and iPad docks, although I'm keeping iA Writer in the iPhone dock since I use it more often for quickie stuff.
 

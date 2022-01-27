@@ -18,13 +18,13 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-**Note**: This is Part 3 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of this part), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
+**Note**: This is Part 3 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2/)), [Hugo](https://gohugo.io) (the subject of this part), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5/), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}
 
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
 {.yellowBox}
 
-In the [introduction](/posts/2020/04/webmentions-three-ssgs-1) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Now, here in Part 3, we'll talk about implementing them in the [Hugo](https://gohugo.io) SSG.
+In the [introduction](/posts/2020/04/webmentions-three-ssgs-1/) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2/), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Now, here in Part 3, we'll talk about implementing them in the [Hugo](https://gohugo.io) SSG.
 
 Of the three repos, I worked on the [Hugo repo](https://github.com/brycewray/hugo_site_css-grid) before the [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid), because I figured (wrongly) that webmention-izing it to match the [Eleventy repo](https://github.com/brycewray/eleventy_bundler) would be more difficult than doing so for the Gatsby repo, so I wanted to get it over with. I based this assumption on the fact that both the Eleventy and Gatsby repos ran on [JavaScript](https://js.org), while the Hugo repo was overwhelmingly [Go](https://golang.org)-based.
 
@@ -46,7 +46,7 @@ Or, at least it would if it *could* fetch the webmentions from webmention.io. An
 
 You see, one thing you have to "present" to webmention.io to "prove" that your site "deserves" to grab the webmentions is an *authentication token*. In the Eleventy site, you can easily handle this by creating a file, `/.env`, for storing such so-called [*environment variables*](https://en.wikipedia.org/wiki/Environment_variable) out of sight (**don't** source-control such a file; instead, add it to your `.gitignore`) but exposing them to other code through generic names such as `WEBMENTION_IO_TOKEN`. In an SSG like Eleventy or Gatsby that uses [Node.js](https://nodejs.org), that works because of a widely used [npm](https://npmjs.com) package called [`dotenv`](https://www.npmjs.com/package/dotenv).[^EnvVarsGatsby]
 
-[^EnvVarsGatsby]: But Gatsby still made it, um, interesting, as you'll see in [Part 4](/posts/2020/04/webmentions-three-ssgs-4).
+[^EnvVarsGatsby]: But Gatsby still made it, um, interesting, as you'll see in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/).
 
 Fine, I wondered, but how to do this in Hugo? Yes, I already had the repo using JavaScript because of PostCSS, but this was another matter. I was trying to get a non-Node-JS app to accept an environment variable from Node.js.
 
@@ -83,6 +83,6 @@ Done.
 
 ## Next up: Gatsby
 
-So, it was on to the [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid), which I naïvely believed would be a *relative* piece of cake. All I'd have to do was make a few changes to the JS from my Eleventy repo (see [Part 2](/posts/2020/04/webmentions-three-ssgs-2) of this series). Right? Hmm?
+So, it was on to the [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid), which I naïvely believed would be a *relative* piece of cake. All I'd have to do was make a few changes to the JS from my Eleventy repo (see [Part 2](/posts/2020/04/webmentions-three-ssgs-2/) of this series). Right? Hmm?
 
-Ahhh, not exactly, Space Cadet. Follow me to [Part 4](/posts/2020/04/webmentions-three-ssgs-4)---if you have the stomach for witnessing a bloody struggle.
+Ahhh, not exactly, Space Cadet. Follow me to [Part 4](/posts/2020/04/webmentions-three-ssgs-4/)---if you have the stomach for witnessing a bloody struggle.

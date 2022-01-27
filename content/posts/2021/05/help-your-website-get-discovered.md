@@ -211,7 +211,7 @@ Now, finish up the Eleventy-based setup by going down this page to the "For eith
 
 #### Hugo
 
-I've noted [before](/posts/2020/12/eleventy-hugo-comparing-contrasting) that Hugo comes with a lot of built-in goodies, so it won't surprise you that the process for Hugo is a bit simpler than with Eleventy.
+I've noted [before](/posts/2020/12/eleventy-hugo-comparing-contrasting/) that Hugo comes with a lot of built-in goodies, so it won't surprise you that the process for Hugo is a bit simpler than with Eleventy.
 
 1. Make sure that, in your [sitewide configuration file](https://gohugo.io/getting-started/configuration/), you have specified `json` as one of the output formats and one of the home output options. For example, my sitewide config file is `config.yaml` and has these entries:
 

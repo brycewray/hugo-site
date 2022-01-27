@@ -18,17 +18,17 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-**Note**: This is Part 2 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev) (the subject of this part), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
+**Note**: This is Part 2 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev) (the subject of this part), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3/)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5/), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}
 
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
 {.yellowBox}
 
-Having covered the purpose of this series, the [IndieWeb](https://indieweb.org), and the general setup of webmentions in this series’ [introduction](/posts/2020/04/webmentions-three-ssgs-1), we'll now get into details about implementing them in the [Eleventy](https://11ty.dev) SSG.
+Having covered the purpose of this series, the [IndieWeb](https://indieweb.org), and the general setup of webmentions in this series’ [introduction](/posts/2020/04/webmentions-three-ssgs-1/), we'll now get into details about implementing them in the [Eleventy](https://11ty.dev) SSG.
 
 For two reasons, we start with the [Eleventy repo](https://github.com/brycewray/eleventy_bundler). First, it's the repo that powered this site as of the time I wrote this.[^toSolo] Second, it's where I initially added webmentions in their barest form---only so-called "mentions"---and then, more recently, enhanced their appearances. I refer to it here only as the *Eleventy repo* rather than, as usual, the *Eleventy/[webpack](https://webpack.js.org) repo*, because the addition of webpack really had nothing whatsoever to do with this particular process.
 
-[^toSolo]: Not long after initially publishing this series, I [converted the site](/posts/2020/going-solo-eleventy) to a [webpack-less repo](https://github.com/brycewray/eleventy_solo).
+[^toSolo]: Not long after initially publishing this series, I [converted the site](/posts/2020/going-solo-eleventy/) to a [webpack-less repo](https://github.com/brycewray/eleventy_solo).
 
 ## Eleventy: Fetching webmentions
 
@@ -50,6 +50,6 @@ And, yeah, that pretty much was it where the Eleventy repo and webmentions were 
 
 After Eleventy, things got a bit (?) more challenging, to put it mildly.
 
-See you in [Part 3](/posts/2020/04/webmentions-three-ssgs-3), where I explain the webmention-izing of my [Hugo repo](https://github.com/brycewray/hugo_site_css-grid) (and then [Part 4](/posts/2020/04/webmentions-three-ssgs-4), where I cover the angst-y process of doing the same for my [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid)). Don't be late; last one there is a rotten SSG.[^DoubleEntendre]
+See you in [Part 3](/posts/2020/04/webmentions-three-ssgs-3/), where I explain the webmention-izing of my [Hugo repo](https://github.com/brycewray/hugo_site_css-grid) (and then [Part 4](/posts/2020/04/webmentions-three-ssgs-4/), where I cover the angst-y process of doing the same for my [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid)). Don't be late; last one there is a rotten SSG.[^DoubleEntendre]
 
 [^DoubleEntendre]: And that's just a playful little *double entendre*. If you saw through it: sorry, I couldn't resist.

@@ -56,13 +56,13 @@ When your site is one of hundreds, even thousands, of accounts sharing space on 
 
 ### Web fonts: Pretty, but&nbsp;.&nbsp;.&nbsp;.
 
-Diets aren't fun, and they suck even more when you're hungry. Because of my love of the distinctiveness that well-chosen web fonts can give a site, the question of whether to have them or [stick with the system fonts stack](/posts/2018/10/web-typography-part-2) is a hard one for me to debate.
+Diets aren't fun, and they suck even more when you're hungry. Because of my love of the distinctiveness that well-chosen web fonts can give a site, the question of whether to have them or [stick with the system fonts stack](/posts/2018/10/web-typography-part-2/) is a hard one for me to debate.
 
 But I don't argue with the data, and one test after another has shown me web fonts slow down my site---not a lot, to be sure, but enough to matter.
 
 That's also turned out to be the case when I provide them "locally," as opposed to pulling them directly off (*e.g.*) [Google Fonts](https://fonts.google.com), even after trying a [variety](https://csswizardry.com/2020/05/the-fastest-google-fonts/) of [excellent](https://www.reich-consulting.net/web-development/loading-web-fonts-without-performance-penalty-from-lighthouse/) [advice](https://www.filamentgroup.com/lab/load-css-simpler/) from very smart folks. Consequently, I go with system fonts, however much I'd like to use [certain](https://fonts.google.com/specimen/Public+Sans?vfonly) [typefaces](https://fonts.google.com/specimen/Vollkorn?vfonly) I admire.
 
-**Update, 2020-08-08**: I've stricken through the remainder of this section, below, for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy) about the privacy violations involved with using Google Fonts typefaces if they're served *from* Google.
+**Update, 2020-08-08**: I've stricken through the remainder of this section, below, for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy/) about the privacy violations involved with using Google Fonts typefaces if they're served *from* Google.
 {.yellowBox}
 
 ~~If your response is "Damn the performance hit, full speed ahead with Google Fonts":~~

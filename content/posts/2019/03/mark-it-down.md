@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 tags: post
-title: "Mark it down" 
+title: "Mark it down"
 subtitle: "Plain but pretty"
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
 author: Bryce Wray
@@ -36,7 +36,7 @@ Fortunately, Markdown has grown on me, especially in the last year as my writing
 
 ## Previously, on this site&nbsp;.&nbsp;.&nbsp;.
 
-In my [last post](/posts/2019/03/plain-truth), I made what I hope was a pretty clear case for the wisdom of plain text as the best medium for storing any writings you want to preserve for the long term, as opposed to keeping them in proprietary formats.
+In my [last post](/posts/2019/03/plain-truth/), I made what I hope was a pretty clear case for the wisdom of plain text as the best medium for storing any writings you want to preserve for the long term, as opposed to keeping them in proprietary formats.
 
 However, as I mentioned at the end:
 
@@ -50,7 +50,7 @@ But Markdown is the trick up that little bird's sleeve---um, fuzz. (I would say,
 
 ## How to make plain text powerful?
 
-Plain text has been the backbone of computing in general, and the Internet (and the software and servers that make it possible) in particular, from the beginning. However, it seemed to be left behind during the last two decades of the twentieth century as the computing public generally embraced word processing and desktop publishing, each replete with proprietary methods and file formats that ensured a lack of that very permanence I touted in the [last post](/posts/2019/03/plain-truth).
+Plain text has been the backbone of computing in general, and the Internet (and the software and servers that make it possible) in particular, from the beginning. However, it seemed to be left behind during the last two decades of the twentieth century as the computing public generally embraced word processing and desktop publishing, each replete with proprietary methods and file formats that ensured a lack of that very permanence I touted in the [last post](/posts/2019/03/plain-truth/).
 
 This got some serious minds to doing some serious thinking. They couldn't simply ignore the fact that most users wanted their text formatted---boldfaced, italicized, organized with headings and subheadings, full of bulleted and numbered lists, and so on. But how could all that get into plain text, period, much less in a uniform manner?
 
@@ -75,7 +75,7 @@ Finding a solution to this question became more urgent in the early 2000s as, in
 All of the above---and please understand, that's some pretty *bare-bones* HTML---then would look like this in the web page itself:
 
 > # This is a top-level heading (H1).
-> 
+>
 > This would give you a paragraph with **bold text here** and *italicized text here*.
 
 > 1. This is item Number One.
@@ -131,7 +131,7 @@ There are a number of variations of Markdown, perhaps most notably [Fletcher Pen
 
 In pretty much all takes on Markdown that I've seen, one key idea is that, once you pick up the special characters---and, frankly, get used to seeing them amidst your writing---you rarely, if ever, have to take your hands off the keyboard, although the vast majority of Markdown editors, like the word processing apps from which they've stolen more than a few of us,  do have keystroke shortcuts to keep you from having to remember *too* many things in the early going.
 
-The best thing of all is that Markdown is, indeed, plain text. Glorious, [safe-forever](/posts/2019/03/plain-truth) plain text. It just happens to be plain text with super powers, especially when paired with a smart [static site generator](https://staticgen.com) or one of the many exceptional editor apps that use it (the ones I mentioned before are merely the tip of the iceberg).
+The best thing of all is that Markdown is, indeed, plain text. Glorious, [safe-forever](/posts/2019/03/plain-truth/) plain text. It just happens to be plain text with super powers, especially when paired with a smart [static site generator](https://staticgen.com) or one of the many exceptional editor apps that use it (the ones I mentioned before are merely the tip of the iceberg).
 
 To be honest, a Markdown editor can't give you *everything* that a rich-text format word processing app can when it comes to formatting, including non-text components, and other file-bloating aspects; but, when your task is to write first and worry later (if at all) about whether the text comes out looking pretty, the Markdown experience is awfully hard to beat.
 

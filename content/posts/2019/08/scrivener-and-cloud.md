@@ -30,7 +30,7 @@ Yet, I recently found a commenter there wielding highly erroneous information co
 
 ## Dropkicking Dropbox
 
-It all started yesterday, when I was looking through an Ars Technica article from back when [Dropbox](https://dropbox.com) implemented its [ill-considered change](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/) to how Dropbox works on the desktop. As I mentioned in a footnote to a recent [post](/posts/2019/07/lessons-learned), it was the last straw that made me finally drop my last remaining ties to Dropbox. But that's not what I'm writing about here.
+It all started yesterday, when I was looking through an Ars Technica article from back when [Dropbox](https://dropbox.com) implemented its [ill-considered change](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/) to how Dropbox works on the desktop. As I mentioned in a footnote to a recent [post](/posts/2019/07/lessons-learned/), it was the last straw that made me finally drop my last remaining ties to Dropbox. But that's not what I'm writing about here.
 
 No, what got me on this particular jag is what I saw as I combed through the [article's many reader comments](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1) as various folks mentioned how this would be *their* last straw with Dropbox, also. I was curious to see how many of them would note that, as had been true for me, they'd kept it as at least a background cloud sync vendor only because of specific apps---like Scrivener---known to require Dropbox for cloud sync among multiple types of devices. (I'll get to the particulars in a bit, but stay with me for the moment.)
 
@@ -100,7 +100,7 @@ For Apple to change iCloud in such a way that its API and the Scrivener file str
 
 We who use Scrivener[^Ulysses] are a [scrappy, vocal bunch](https://www.literatureandlatte.com/forum/search.php?search_id=active_topics), but we definitely do not constitute more than a flyspeck when compared to the population of iOS and macOS users as a whole. Thus, it's easy for Apple to give lip service to L&amp;L about perhaps someday finding a way for iCloud to work with sync-to-iOS with Scrivener while never actually doing anything about it.
 
-[^Ulysses]: Yes, I still use Scrivener, as I've said before, despite my comments [here](/posts/2018/09/why-finally-settled-ulysses) about it vs. [Ulysses](https://ulysses.app). I have the luxury of having multiple superb writing apps, and I use whichever feels best to me at the time.
+[^Ulysses]: Yes, I still use Scrivener, as I've said before, despite my comments [here](/posts/2018/09/why-finally-settled-ulysses/) about it vs. [Ulysses](https://ulysses.app). I have the luxury of having multiple superb writing apps, and I use whichever feels best to me at the time.
 
 For the same reason, I don't imagine any other cloud sync vendors are spending much if any time working out their own solution for the Scriv conundrum.
 

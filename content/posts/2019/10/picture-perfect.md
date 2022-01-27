@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/belseykurns-926746/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Kelsey Burns</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Pixabay</a></span>
 ---
 
-When I [was](/posts/2019/07/why-staying-with-hugo) [railing](/posts/2019/07/lessons-learned) [against](/posts/2019/09/why-left-hugo-eleventy) the [Gatsby](https://www.gatsbyjs.org) [static site generator](https://www.staticgen.com) (SSG)---that is, before I decided [yet again](/posts/2019/10/otoh) to give it a shot, which is continuing in the background now---one of the things I found most annoying was how it wouldn't let me put images just anywhere I pleased within the site's directory structure.
+When I [was](/posts/2019/07/why-staying-with-hugo/) [railing](/posts/2019/07/lessons-learned/) [against](/posts/2019/09/why-left-hugo-eleventy/) the [Gatsby](https://www.gatsbyjs.org) [static site generator](https://www.staticgen.com) (SSG)---that is, before I decided [yet again](/posts/2019/10/otoh/) to give it a shot, which is continuing in the background now---one of the things I found most annoying was how it wouldn't let me put images just anywhere I pleased within the site's directory structure.
 
 I won't take you back through the whole rant, especially since I linked above to the extended-length posts that contained its component parts, but here it is in TL;DR form:
 
@@ -48,7 +48,7 @@ Want proof? (If you want details on the specific items involved, please follow t
 
 - **Gridsome**: "[Only local, relative image paths will be compressed by Gridsome](https://gridsome.org/docs/images/)."
 
-- **Hugo**: "[The `image` is a Page Resource, and the \[image\] processing methods listed below does not work \[sic\] on images inside your `/static` folder](https://gohugo.io/content-management/image-processing/)." 
+- **Hugo**: "[The `image` is a Page Resource, and the \[image\] processing methods listed below does not work \[sic\] on images inside your `/static` folder](https://gohugo.io/content-management/image-processing/)."
 
 ## Where's the fire, buddy?
 
@@ -70,7 +70,7 @@ But it gets even better.
 
 How about if the SSG also creates a tiny-file-size blurred version of the image, which then acts as a full-height-and-width placeholder while the real image is loading, and then magically turns it into the real image once the load is complete? You've doubtless seen that effect on [Medium](https://medium.com)-related sites, among others. Both Gatsby and Gridsome do that.[^gatsbyImage]
 
-[^gatsbyImage]: Indeed, this functionality was a key to keeping me trying to convert to Gatsby despite my [various](/posts/2019/07/why-staying-with-hugo) [troubles](/posts/2019/09/why-left-hugo-eleventy) in doing so.
+[^gatsbyImage]: Indeed, this functionality was a key to keeping me trying to convert to Gatsby despite my [various](/posts/2019/07/why-staying-with-hugo/) [troubles](/posts/2019/09/why-left-hugo-eleventy/) in doing so.
 
 Hugo doesn't do either of these out of the box, but you can add to your Hugo site an excellent external JavaScript tool called [**lazysizes**](https://github.com/aFarkas/lazysizes), which---especially if used with its optional plugins---offers many of the same capabilities. In fact, if your SSG is anything besides Gatsby or Gridsome, I'd highly recommend using lazysizes to make the best of your images.
 

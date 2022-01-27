@@ -29,13 +29,13 @@ You know the old line about "[standing on the shoulders of giants](https://en.wi
 
 There's no question that what I like the most about using CFP is Cloudflare's global content delivery network (CDN). A CDN is only as good as how many points of presence (POPs) it has and how well they work. Cloudflare has [*hundreds* of POPs worldwide](https://www.cloudflare.com/network/), with more coming online all the time, and continues to [put ever-greater quantities of customers’ content](https://stratechery.com/2021/cloudflare-on-the-edge/) out on the "edge." This translates to faster performance, regardless of where one's visitors may be.
 
-By comparison, Vercel's [Edge Network](https://vercel.com/docs/concepts/edge-network/overview), basically a [collection of other vendors’ POPs](https://vercel.com/docs/concepts/edge-network/regions), is impressive for its much smaller size but, as I noted in last year's ["Forward PaaS" article](/posts/2020/10/forward-paas) about Cloudflare Workers sites (quoting an email reply I'd given to a reader):
+By comparison, Vercel's [Edge Network](https://vercel.com/docs/concepts/edge-network/overview), basically a [collection of other vendors’ POPs](https://vercel.com/docs/concepts/edge-network/regions), is impressive for its much smaller size but, as I noted in last year's ["Forward PaaS" article](/posts/2020/10/forward-paas/) about Cloudflare Workers sites (quoting an email reply I'd given to a reader):
 
 > .&nbsp;.&nbsp;. it's hard to ignore that Cloudflare's POP count vastly outdoes that of Vercel's. Therefore, as long as I have readers in as many parts of the globe as the analytics keep telling me I do, I feel obligated to put the content out there in a way that makes their experience as pleasant (or, at least, as non-laggy) as possible.
 
 ### Up-front Cloudflare Workers
 
-CFP is based on Cloudflare Workers, but it also can be used with them to provide additional features. In my site's case, I've done so to provide headers for [browser-side caching](/posts/2021/05/headers-up) and, more recently, a thorough [content security policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) (CSP).
+CFP is based on Cloudflare Workers, but it also can be used with them to provide additional features. In my site's case, I've done so to provide headers for [browser-side caching](/posts/2021/05/headers-up/) and, more recently, a thorough [content security policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) (CSP).
 
 With Vercel, you can try to do that through a `vercel.json` file, but the problem comes when you want to apply conditional logic---specifically, setting certain headers for certain things but not for others. After all, not every element of a site needs the same settings for caching and/or the CSP. More to the point: a really tight CSP where scripts are concerned involves the application of [hashes](https://content-security-policy.com/hash/) or [nonces](https://content-security-policy.com/nonce/), and there just is no way to do that with a JSON file. But if you put an appropriately coded Cloudflare Worker in front of your CFP-based site, it can take care of all this as follows:
 

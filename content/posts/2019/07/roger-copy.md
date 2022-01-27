@@ -26,7 +26,7 @@ On July 21, I removed that reference.
 
 On July 24, I brought it back.
 
-The reason why the reference went away goes back to something from a [previous post](/posts/2019/07/lessons-learned):
+The reason why the reference went away goes back to something from a [previous post](/posts/2019/07/lessons-learned/):
 
 > .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).  So, now, I keep my [SSG](https://staticsite.gen) directory in a drive that's not sync'd with the cloud.
 
@@ -56,7 +56,7 @@ Fortunately, I'd been reading for months about the best iOS Git client: the just
 
 The best way to learn about Working Copy is to read Borum's excellent [documentation](https://workingcopyapp.com/manual.html)[^docs] for the app, and you can check out its great reviews on the iOS App Store as well as articles like [this one](https://www.macstories.net/reviews/working-copy-integrates-with-the-files-app-and-drag-and-drop/) that show how many professionals swear by Working Copy. What I thought I'd do here is just give you a little sample of how I now use it to keep this site's Git repo straight among not only my devices but also my three remote repos on Bitbucket, [GitHub](https://github.com), and [GitLab](https://gitlab.com). Please understand that this is an *extremely simple* example of what Working Copy can do; check out that documentation and you'll get a much better idea.
 
-[^docs]: After the awfulness of the [SSG](https://staticgen.com) documentation that I recently [attacked](/posts/2019/07/lessons-learned), it was and is a distinct pleasure to use Working Copy's outstanding online manual.
+[^docs]: After the awfulness of the [SSG](https://staticgen.com) documentation that I recently [attacked](/posts/2019/07/lessons-learned/), it was and is a distinct pleasure to use Working Copy's outstanding online manual.
 
 Early this morning in the comfort of the living room recliner, I started this very post in [iA Writer](https://ia.net/writer) on the iPad. I put in some early front matter and a paragraph of text just to get started, and then I opened Working Copy and had both apps running in [split-screen mode](https://support.apple.com/en-us/HT207582). As you can see on the left, I'd started a Git commit of this article's original [Markdown](https://daringfireball.net/projects/markdown) file, `roger-copy.md`, highlighted on the right in iA Writer:
 
@@ -80,7 +80,7 @@ So, this matter (pardon the pun) handled, I then pushed the commit---first, to B
 
 {{< imgc src="Working_Copy_scr_cap_07_2048x1536.png" alt="iPad screen capture: Working Copy display showing that the master branch is synchronized with the three remote repositories" width="2048" height="1536" >}}
 
-So I was all ready to go. Then all I had to do when I got back on the Mac was to use my [currently preferred macOS Git client](https://git-fork.com) to fetch the changes from Bitbucket, which instantly added this Markdown file to the Mac's version of the repo so I could work on it more. Incidentally, I could choose---and have chosen---to do text edits within Working Copy itself. Here you can see the Markdown file for my [last post](/posts/2019/07/lessons-learned):
+So I was all ready to go. Then all I had to do when I got back on the Mac was to use my [currently preferred macOS Git client](https://git-fork.com) to fetch the changes from Bitbucket, which instantly added this Markdown file to the Mac's version of the repo so I could work on it more. Incidentally, I could choose---and have chosen---to do text edits within Working Copy itself. Here you can see the Markdown file for my [last post](/posts/2019/07/lessons-learned/):
 
 {{< imgc src="Working_Copy_scr_cap_11_2048x1536.png" alt="iPad screen capture: Working Copy display showing its built-in text editor" width="2048" height="1536" >}}
 
