@@ -6,7 +6,7 @@ subtitle: "A little extra code will do ya"
 description: "Following up on last month’s article about doing this in Hugo, we explain how to get there in a JavaScript-based SSG."
 author: Bryce Wray
 date: 2022-01-25T14:45:00-06:00
-#lastmod:
+lastmod: 2022-01-26T09:10:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-01-fetching-remote-images-eleventy"
 featured_image: dog-fetching-stick-6724085_5184x3456.jpg
@@ -16,6 +16,9 @@ featured_image_alt: "A dog fetching a stick"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/annapowa-17446403/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6724085">Anna Powałowska</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6724085">Pixabay</a></span>
 ---
+
+**Update, 2022-01-26**: Please see the end of this post for additional info straight from the horse’s mouth, so to speak.
+{.yellowBox}
 
 A few weeks ago, I [described](/posts/2021/12/fetching-remote-stuff-hugo-0-90-plus/) how a [recent change](https://github.com/gohugoio/hugo/releases/tag/v0.90.0) to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) gives it the ability to fetch remote content for processing during the site-building process. In my case, I used it in the Hugo-based version of this site’s repository to grab tiny, low-resolution images from my free [Cloudinary](https://cloudinary.com) account and turn them into [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs).
 
@@ -68,3 +71,11 @@ And there you have it. Using your browser’s Inspector tool on nearly[^1] any i
 {.yellowBox}
 
 [^1]:	The lone exception—*i.e.*, the only image on the site which doesn’t use this shortcode when the site is running on Eleventy—is the “My pet cat” image sample near the bottom of my post, “[Using Eleventy’s official image plugin](/posts/2021/04/using-eleventys-official-image-plugin/).” As that post’s title implies, in such cases this particular image uses a different shortcode that’s based on the [Eleventy Image](https://www.11ty.dev/docs/plugins/image/) plugin.
+
+---
+
+### And there’s more (2022-01-26)
+
+The official Eleventy Twitter account graciously retweeted my announcement of this post and added the following, which I pass along for your further edification:
+
+{{< tweet user="eleven_ty" id="1486347755404640257" >}}
