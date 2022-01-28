@@ -43,13 +43,13 @@ markup:
       guessSyntax: true
       noClasses: false
 
-#privacy:
-#  twitter:
-#    simple: true
+privacy:
+  twitter:
+    simple: true
 
-#services:
-#  twitter:
-#    disableInlineCSS: true
+services:
+  twitter:
+    disableInlineCSS: true
 
 minify:
   tdewolff:
