@@ -64,16 +64,16 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     @media screen and (min-width: $bkpt_md) {
-      font-size: 3em;
+      font-size: 3.25em;
     }
     @media screen and (min-width: $bkpt_lg) {
-      font-size: 3.5em;
+      font-size: 3.75em;
       padding-left: 5%;
       padding-right: 5%;
     }
     @media screen and (min-width: $bkpt_xl) {
       padding-top: 0;
-      font-size: 4em;
+      font-size: 4.25em;
     }
   }
   &-subtitle-text {
