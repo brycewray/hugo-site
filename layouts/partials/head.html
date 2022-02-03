@@ -79,11 +79,11 @@
     -->
     {{- if hugo.IsProduction -}}
       {{- if eq .Site.Params.Host "CFP" -}}
-        {{ with resources.Get "scss/index.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+        {{ with resources.Get "scss/index.scss" | resources.ToCSS }}{{/* DO NOT MINIFY VIA SASS */}}
           <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
         {{ end }}
       {{- else -}}
-        {{ with resources.Get "scss/index.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+        {{ with resources.Get "scss/index.scss" | resources.ToCSS }}{{/* DO NOT MINIFY VIA SASS */}}
           <style>{{- .Content | safeCSS -}}</style>
         {{ end }}
       {{- end -}}
