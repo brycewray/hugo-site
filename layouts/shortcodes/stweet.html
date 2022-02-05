@@ -18,13 +18,16 @@
       {{ $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' target='_blank' ref='noopener'>@%s</a>" $user.screen_name $user.screen_name) }}
     {{ end }}
   {{ end }}
-
+  {{ if isset $json.entities "hashtags"}}
+    {{ range $hashtags := $json.entities.hashtags }}
+      {{ $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' ref='noopener'>#%s</a>" $hashtags.text $hashtags.text) }}
+    {{ end }}
+  {{ end }}
   {{ if isset $json.entities "media"  }}
     {{ range $media := $json.entities.media }}
       {{ $text = replace $text $media.url "" }}
     {{ end }}
   {{ end }}
-
   {{ if isset $json.entities "urls"  }}
     {{ range $url := $json.entities.urls}}
       {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' ref='noopener'>%s</a>" $url.url $url.display_url) }}
