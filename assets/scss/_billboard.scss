@@ -83,7 +83,7 @@
     }
     @media screen and (min-width: $bkpt_lg) {
       font-size: 1.75rem;
-      // font-family: $serif;
+      font-family: $serif;
       // handle italics/obliques in the partial with `em` (covers different fonts' handling thereof)
       letter-spacing: -0.025em;
     }
