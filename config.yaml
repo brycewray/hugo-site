@@ -51,6 +51,11 @@ services:
   twitter:
     disableInlineCSS: true
 
+caches:
+  getjson:
+    dir: :resourceDir/json
+    maxAge: -1
+
 minify:
   tdewolff:
     html:
