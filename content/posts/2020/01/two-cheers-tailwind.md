@@ -20,7 +20,7 @@ featured_image_caption: |
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-{{< tweet user="BryceWrayTX" id="1210975092999704578" >}}
+{{< stweet "1210975092999704578" >}}
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
@@ -30,7 +30,7 @@ Tens of thousands of "[impressions](https://help.twitter.com/en/managing-your-ac
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-{{< tweet user="BryceWrayTX" id="1212496201385418753" >}}
+{{< stweet "1212496201385418753" >}}
 
 ## Not a purist
 
