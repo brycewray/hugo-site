@@ -1,47 +1,88 @@
-.twitter-tweet {
-  font-family: $sans-serif;
-  margin: 1rem auto 0 auto;
-  padding: 0 1.5em 1em;
-  border-radius: 12px;
-  // background-color: #fff;
-  border: 2px solid $grey-1;
-  @media screen and (prefers-color-scheme: dark) {
-    border: 2px solid $grey-2;
-  }
-}
-
 .tweet-card {
-  padding: 2em 1em;
-  letter-spacing: -0.025em;
-  margin: 1rem auto 0 auto;
+  font-family: $sans-serif;
+  margin: 1.5rem auto;
+  padding: 1rem;
   border: 2px solid $grey-1;
   border-radius: 12px;
-  background: transparent;
-  color: #333;
+  background: $white;
+  @media screen and (prefers-color-scheme: dark) {
+    background: transparent;
+  }
   a, a:hover {
+    border: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    /*
+    See:
+    - https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+    - https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/
+    - https://css-tricks.com/better-line-breaks-for-long-urls/
+    */
     @media screen and (prefers-color-scheme: dark) {
       color: $blueLight;
     }
   }
   @media screen and (prefers-color-scheme: dark) {
     border: 2px solid $grey-2;
-    color: #fff;
+    color: $white;
   }
 }
 
-.tweet-profile,
-.tweet-bird,
-.tweet-images,
-.tweet-like {
-  display: none;
+.tweet-body {
+  font-size: $minimalbig;
 }
 
-.tweet-author-name::after {
-  content: " • ";
+.tweet-header {
+  display: flex;
+  .tweet-profile {
+    margin-right: 0.5em;
+    flex-shrink: 0;
+    img {
+      border-radius: 9999px;
+    }
+  }
+  .tweet-author {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    &-name {
+      font-weight: bold;
+      color: $black;
+      @media screen and (prefers-color-scheme: dark) {
+        color: $white;
+      }
+      line-height: 1.375;
+    }
+    &-handle {
+      color: $grey-1;
+      @media screen and (prefers-color-scheme: dark) {
+        color: $grey-2-dark-mode;
+      }
+      font-size: $pokey;
+      line-height: 1;
+    }
+    .tweet-bird {
+      margin-left: 1.25rem;
+    }
+  }
 }
 
-.tweet-footer::after {
-  content: " (UTC)";
-  font-size: 85%;
-  padding-left: 0.5em;
+.tweet-footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  .tweet-like-icon, .tweet-like-count {
+    display: none;
+  }
+  a {
+    color: $grey-1;
+    @media screen and (prefers-color-scheme: dark) {
+      color: $grey-2-dark-mode;
+    }
+  }/* === needed in Eleventy but not in Hugo
+  .tweet-date:after {
+    content: " (UTC)";
+    font-size: $legal;
+  }*/
 }
