@@ -48,6 +48,20 @@
   }
 }
 
+// ==== rounded image "attachment"
+// Eleventy version
+.tweet-images {
+  img {
+    border-radius: 12px;
+  }
+}
+// Hugo version
+.tweet-img {
+  border-radius: 12px;
+}
+// ==== END, rounded image "attachment"
+
+
 .tweet-header {
   display: flex;
   .tweet-profile {
