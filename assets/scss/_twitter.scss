@@ -9,7 +9,7 @@
     background: transparent;
   }
   a, a:hover {
-    border: none;
+    border: none !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
@@ -72,6 +72,10 @@
   margin-top: 1rem;
   display: flex;
   align-items: center;
+  color: $grey-1;
+  @media screen and (prefers-color-scheme: dark) {
+    color: $grey-2-dark-mode;
+  }
   .tweet-like-icon, .tweet-like-count {
     display: none;
   }
