@@ -96,7 +96,7 @@
   }
   &-description-text {
     display: none; // appears only on wider screens
-    font-family: $serif;
+    // font-family: $serif;
     @media screen and (min-width: $bkpt_md) {
       display: block;
       font-size: 1.375em;

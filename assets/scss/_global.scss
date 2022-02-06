@@ -1,6 +1,6 @@
 html, body {
-  font-family: $serif;
-  font-weight: 425;
+  font-family: $sans-serif;
+  // font-weight: 425; // when using variable fonts
   color: $default-color;
   width: 100%;
   margin: 0 auto;
@@ -95,24 +95,24 @@ h3, .h3, h5, .h5 {
 }
 
 h1, .h1 {
-  font-size: 2em;
+  font-size: 2rem;
   // usually overridden by other styling (e.g., billboard.scss)
 }
 
 h2, .h2 {
-  font-size: 1.85em;
+  font-size: 1.85rem;
 }
 
 h3, .h3 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 h4, .h4 {
-  font-size: 1.35em;
+  font-size: 1.35rem;
 }
 
 h5, .h5, h6, .h6 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 a, a:focus, a:hover, a:active {

@@ -7,13 +7,13 @@
   border-radius: 12px;
   background: $white;
   @media screen and (min-width: $bkpt_md) {
-    width: 85%;
+    width: 90%;
   }
   @media screen and (min-width: $bkpt_lg) {
-    width: 75%;
+    width: 80%;
   }
   @media screen and (min-width: $bkpt_2xl) {
-    width: 65%;
+    width: 70%;
   }
   @media screen and (prefers-color-scheme: dark) {
     background: transparent;
