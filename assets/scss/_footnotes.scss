@@ -30,6 +30,12 @@
   }
   ol li {
     font-size: $pokey;
+    ::marker {
+      margin-bottom: 0;
+    }
+    p {
+      line-height: 1.35;
+    }
   }
   .footnote-backref {
     font-size: 75%;
