@@ -1,10 +1,20 @@
 .tweet-card {
   font-family: $sans-serif;
+  width: 100%;
   margin: 1.5rem auto;
   padding: 1rem;
   border: 2px solid $grey-1;
   border-radius: 12px;
   background: $white;
+  @media screen and (min-width: $bkpt_md) {
+    width: 85%;
+  }
+  @media screen and (min-width: $bkpt_lg) {
+    width: 75%;
+  }
+  @media screen and (min-width: $bkpt_2xl) {
+    width: 65%;
+  }
   @media screen and (prefers-color-scheme: dark) {
     background: transparent;
   }
@@ -30,7 +40,12 @@
 }
 
 .tweet-body {
-  font-size: $minimalbig;
+  font-size: $stdsize;
+  line-height: 1.5em;
+  text-align: left !important;
+  @media screen and (min-width: $bkpt_lg) {
+    font-size: $minimalbig;
+  }
 }
 
 .tweet-header {
@@ -73,6 +88,7 @@
   display: flex;
   align-items: center;
   color: $grey-1;
+  font-size: $pokey;
   @media screen and (prefers-color-scheme: dark) {
     color: $grey-2-dark-mode;
   }
