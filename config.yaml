@@ -77,9 +77,4 @@ outputs:
 security:
   funcs:
     getenv:
-      - ^HUGO_
-      - ^CF_
-      - ^CFP_
-      - ^TW_
-      - ^NETLIFY_
-      - ^PWD
+      - ^*
