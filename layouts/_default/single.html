@@ -1,8 +1,6 @@
 {{ define "main" }}
   {{ partial "billboard.html" . }}
   <div class="container-narrower">
-    {{ $envVarTest := getenv "BEARER_TOKEN" }}
-    <p class="ctr">The test variable is {{ $envVarTest }}.</p>
     <article class="article">
       {{ .Content }}
     </article>
