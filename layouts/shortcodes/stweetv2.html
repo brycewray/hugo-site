@@ -1,0 +1,88 @@
+{{/*
+  =======
+  Based on...
+  - https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
+  - https://hugo.md/post/update-rendering-static-tweets/
+  - https://github.com/KyleMit/eleventy-plugin-embed-tweet
+  =======
+*/}}
+
+{{ $Bearer_Token := os.Getenv "BEARER_TOKEN" }}
+{{ $id := .Get 0 }}
+{{ $authHeaders := dict "Authorization" (printf "Bearer %s" $Bearer_Token) }}
+{{ $jsonURL1 := "https://api.twitter.com/2/tweets?ids=" }}
+{{ $jsonURL2 := "&expansions=author_id,attachments.media_keys&tweet.fields=created_at,text,attachments,entities,source&user.fields=name,username,profile_image_url&media.fields=preview_image_url,type,url,alt_text" }}
+{{ $json := getJSON $jsonURL1 $id $jsonURL2 $authHeaders }}
+{{/* init scratch vars */}}
+  {{ $jsonText := "" }}
+  {{ $jsonEntities := slice }}
+{{/* end init scratch vars */}}
+{{ range $json.data }}
+  {{ $.Scratch.Set "jsonText" .text  }}
+  {{ range .entities }}
+    {{ range .}}
+      {{ if .type }}
+      <strong style="color: red;">Hello:</strong> {{ .type }}<br />
+      {{ end}}
+    {{ end }}
+  {{ end }}
+  {{ range .attachments }}
+    {{ range . }}
+      {{ . }}<br />
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $jsonText := .Scratch.Get "jsonText" }}
+{{ $text := .Page.RenderString $jsonText }}{{/* Formatting */}}
+{{ $text }}
+{{/*
+
+{{ if isset $json.data "entities" }}
+  {{ if isset $json.data.entities "mentions"  }}
+    {{ range $user := $json.data.entities.mentions}}
+      {{ $text = replace $text (printf "@%s" $user.username) (printf "<a href='https://twitter.com/%s' target='_blank' ref='noopener'>@%s</a>" $user.username $user.username) }}
+    {{ end }}
+  {{ end }}
+  {{ if isset $json.data.entities "hashtags"}}
+    {{ range $hashtags := $json.data.entities.hashtags }}
+      {{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' ref='noopener'>#%s</a>" $hashtags.tag $hashtags.tag) }}
+    {{ end }}
+  {{ end }}
+  {{ if isset $json.data.entities "urls"  }}
+    {{ range $url := $json.data.entities.urls }}
+      {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' ref='noopener'>%s</a>" $url.url $url.display_url) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if isset $json.includes "media" }}
+  {{ range $media := $json.includes.media }}
+    {{ $text = replace $text $media.url "" }}
+  {{ end }}
+{{ end }}
+
+<blockquote class="tweet-card">
+  <div class="tweet-header">
+    <a class="tweet-profile" href="https://twitter.com/{{ $json.includes.user.username}}" target="_blank" ref="noopener">
+      <img src="{{ $json.includes.user.profile_image_url }}" alt="Twitter avatar for {{ $json.includes.user.name }}" />
+    </a>
+    <div class="tweet-author">
+      <a class="tweet-author-name" href="https://twitter.com/{{ $json.includes.user.username}}" target="_blank" ref="noopener">{{ $json.includes.user.name }}</a>
+      <a class="tweet-author-handle" href="https://twitter.com/{{ $json.includes.user.username}}" target="_blank" ref="noopener">@{{ $json.includes.user.username }}</a>
+    </div>
+  </div>
+  <p class="tweet-body">
+    {{ .Page.RenderString $text }}
+  </p>
+  {{ if isset $json "includes" }}
+    {{ if isset $json.includes "media" }}
+      {{ range $image := $json.includes.media }}
+        <img src="{{ $image.url }}" alt="Image from tweet {{ $id }}" class="tweet-img" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  <div class="tweet-footer">
+    <a href='https://twitter.com/{{ $json.includes.user.username }}/status/{{ $json.data.id }}' class='tweet-date' target='_blank' ref='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+  </div>
+</blockquote>
+*/}}
