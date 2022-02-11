@@ -6,7 +6,7 @@ subtitle: "To serve and protect"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray
 date: 2022-02-07T12:00:00-06:00
-#lastmod:
+lastmod: 2022-02-11T11:28:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -29,7 +29,7 @@ The solution is to present each tweet as *purely static* textual and image conte
 
 For example, here is a tweet I issued recently when I received[^2] some swag after having submitted some code to a Cloudflare contest:
 
-{{<stweet "1487140202141425673" >}}
+{{< stweet "1487140202141425673" >}}
 
 &nbsp;.&nbsp;. so you get to see the tweet—complete with my Twitter avatar and, in this case, the “attached” photo of the Cloudflare swag—**but** you’re spared all the other stuff that usually would come with it.[^3]
 
@@ -65,14 +65,14 @@ This creates a [shortcode](https://11ty.dev/docs/shortcodes/) called `tweet` tha
 ```twig
 {% tweet "1487140202141425673" %}
 ```
- 
+
 ### In Hugo
 
 To get a safe-but-nice-looking tweet embed in Hugo, we’ll add a [shortcode](https://gohugo.io/content-management/shortcodes/) which borrows heavily from one described in the excellent article, “[Update: Rendering Static Tweets](https://hugo.md/post/update-rendering-static-tweets/)” by a [developer who *also* is named Hugo](https://twitter.com/hugojmd). As it turns out, there is a *public* Twitter API, too, and this Hugo shortcode will extract data from it in much the same way as the Eleventy plugin does from the private developer API.
 
 Actually, Hugo has a [*built-in* `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) but, by default, it brings in *all* the content (good and bad) from Twitter’s regular embedding method. You can edit the site config file to [turn off](https://gohugo.io/about/hugo-and-gdpr/#twitter) the privacy-violating junk fetched by `tweet`, but that leaves you with a pretty plain result. For example, here’s how `tweet` reproduces that earlier tweet (albeit with little or no CSS help) when you’ve engaged Hugo’s maximum privacy setting for `tweet`-grabbed content:
 
-{{<tweet user="BryceWrayTX" id="1487140202141425673" >}}
+{{< tweet user="BryceWrayTX" id="1487140202141425673" >}}
 
 Now, that’s certainly not terrible, and it does give you the essence of the message, but it still isn’t as cool as what you’ll get by adding the following shortcode[^5], which we’ll call `stweet.html` (with `stweet` standing for *static tweet*):
 
@@ -149,7 +149,7 @@ And, just as we did with the Eleventy shortcode, we invoke this Hugo `stweet` sh
 
 ## Them’s the breaks?
 
-There are always important considerations when one’s site must trust the ongoing availability of a third-party data source. 
+There are always important considerations when one’s site must trust the ongoing availability of a third-party data source.
 
 - As of the initial publication of this post, `eleventy-plugin-embed-tweet` uses v.1.1 of the Twitter API. However, Twitter is [pushing migration to v.2](https://developer.twitter.com/en/docs/twitter-api), so it’s reasonable to assume the earlier version will be retired at some point. If so, that obviously would break anything depending on v.1.x.[^6]
 - Then there’s that public API which enables the Hugo `stweet` shortcode. Although it’s long in the tooth in internet time—I found other articles from years ago[^7] that mentioned it—I’ve seen nothing indicating that Twitter intends to retire it.[^8] That doesn’t prove it *won’t* happen, though.[^9]
@@ -174,6 +174,6 @@ SSG-built websites like this one amount to [only a very tiny fraction](https://w
 
 [^8]:	But what about Hugo’s built-in `tweet` shortcode, you ask? Well, a look at its [code in the Hugo GitHub repository](https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates/shortcodes) indicates it uses the [regular Twitter embedding method](https://help.twitter.com/en/using-twitter/how-to-embed-a-tweet), so its shelf life should be a very long one. Beyond that, the Hugo maintainers know it’s widely used and will keep it updated accordingly; besides, if Twitter changed *that* method, the worldwide sound of breaking websites would shatter all our eardrums.
 
-[^9]:	I am researching how to use Twitter API v.2, rather than the public API, with `stweet`, but I wouldn’t suggest you hold your breath. The Hugo documentation for handling build-level “secret” environment variables is, um, lacking—as am I.
+[^9]:	I am researching how to use Twitter API v.2, rather than the public API, with `stweet`, but I wouldn’t suggest you hold your breath. The Hugo documentation for handling build-level “secret” environment variables is, um, lacking—as am I. **Update, 2022-02-11**: I now have a v.2-based shortcode ready, and will post a follow-up article about it ASAP.
 
 [^10]:	It probably helps that both methods covered in this post link the static embeds back to their originals on Twitter, where one gets the full nine yards’ worth of JavaScript as Twitter prefers. Otherwise, yeah, Team Twitter might have a problem with this. Also: I would add in Twitter’s defense that its eventual retirement of old APIs won’t be an effort to make anybody’s life more difficult; rather, it’ll be a legitimate attempt to improve the quality of Twitter-accessing code. I can absolutely get behind that.
