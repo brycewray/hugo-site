@@ -51,9 +51,9 @@ While AVIFs have notable advantages, I feel that the horsepower they require whe
 
 As I was finishing this, I saw the following tweets from the [Eleventy account](https://twitter.com/eleven_ty) regarding the still-in-beta Eleventy 1.0:
 
-{{< stweet "1478407921264377858" >}}
+{{< stweetv2 "1478407921264377858" >}}
 
-{{< stweet "1478436909957402628" >}}
+{{< stweetv2 "1478436909957402628" >}}
 
 This will be (is?[^3]) very, very cool stuff (as [Slinkity](https://slinkity.dev) fans already know). [Here’s just one example from that aforementioned updated documentation](https://www.11ty.dev/docs/languages/custom/#example-add-sass-support-to-eleventy), specifically showing how to add [Sass](https://sass-lang.com) support to an Eleventy 1.x project—and, yes, *without* all the hassles of the `package.json` method I’ve typically used in my own Eleventy-based endeavors.
 

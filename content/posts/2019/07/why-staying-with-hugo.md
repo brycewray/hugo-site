@@ -270,7 +270,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-{{< stweet "1150104013871955971" >}}
+{{< stweetv2 "1150104013871955971" >}}
 
 ## "Interesting," indeed
 

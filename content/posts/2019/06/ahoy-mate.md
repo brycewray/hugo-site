@@ -124,4 +124,4 @@ However, the answers were "No" and "No." The [changes in Apple Mail in Catalina]
 
 My tweet tonight says it all:
 
-{{< stweet "1138614802518020096" >}}
+{{< stweetv2 "1138614802518020096" >}}
