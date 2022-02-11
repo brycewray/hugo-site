@@ -29,7 +29,7 @@ The solution is to present each tweet as *purely static* textual and image conte
 
 For example, here is a tweet I issued recently when I received[^2] some swag after having submitted some code to a Cloudflare contest:
 
-{{< tweet "1487140202141425673" >}}
+{{< stweet "1487140202141425673" >}}
 
 &nbsp;.&nbsp;. so you get to see the tweet—complete with my Twitter avatar and, in this case, the “attached” photo of the Cloudflare swag—**but** you’re spared all the other stuff that usually would come with it.[^3]
 
