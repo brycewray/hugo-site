@@ -50,7 +50,7 @@
   </p>
   {{ if isset $json "photos" }}
     {{ range $item := $json.photos }}
-      <img src="{{ $item.url }}" alt="Image from tweet {{ $id }}" class="tweet-img" />
+      <img src="{{ $item.url }}" alt="Image from tweet {{ $id }}" class="tweet-img" /><br />
     {{ end }}
   {{ end }}
   <div class="tweet-footer">
