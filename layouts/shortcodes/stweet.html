@@ -15,12 +15,12 @@
 {{ if isset $json "entities" }}
   {{ if isset $json.entities "user_mentions"  }}
     {{ range $user := $json.entities.user_mentions}}
-      {{ $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' target='_blank' ref='noopener'>@%s</a>" $user.screen_name $user.screen_name) }}
+      {{ $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' target='_blank' rel='noopener'>@%s</a>" $user.screen_name $user.screen_name) }}
     {{ end }}
   {{ end }}
   {{ if isset $json.entities "hashtags"}}
     {{ range $hashtags := $json.entities.hashtags }}
-      {{ $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' ref='noopener'>#%s</a>" $hashtags.text $hashtags.text) }}
+      {{ $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' rel='noopener'>#%s</a>" $hashtags.text $hashtags.text) }}
     {{ end }}
   {{ end }}
   {{ if isset $json.entities "media"  }}
@@ -30,7 +30,7 @@
   {{ end }}
   {{ if isset $json.entities "urls"  }}
     {{ range $url := $json.entities.urls}}
-      {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' ref='noopener'>%s</a>" $url.url $url.display_url) }}
+      {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $url.url $url.display_url) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -54,6 +54,6 @@
     {{ end }}
   {{ end }}
   <div class="tweet-footer">
-    <a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' class='tweet-date' target='_blank' ref='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+    <a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
   </div>
 </blockquote>
