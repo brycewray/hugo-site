@@ -3,7 +3,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors."
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2022-02-05T10:05:00-06:00
+lastmod: 2022-02-12T17:37:00-06:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -26,7 +26,7 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 ### Twitter
 
-This site reproduces tweets as purely static text and downloaded images with no Twitter (or other) tracking involved. Each tweet is linked to its original location.
+This site reproduces tweets as purely static text and downloaded images with no Twitter (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image—including the avatar—that’s included with a static tweet does include a Twitter cookie, but **no** trackers.
 
 ### YouTube
 
