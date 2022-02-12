@@ -1,8 +1,7 @@
 /public
-resources
+/resources/_gen/
 node_modules
 .env
-*.env
 *.env
 .env.*
 /_cache
