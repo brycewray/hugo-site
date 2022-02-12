@@ -6,7 +6,7 @@ subtitle: "Oddities, observations, offal"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00
-#lastmod:
+lastmod: 2022-02-12T11:39:00-06:00
 discussionId: "2020-09-mixed-nuts-2020-09"
 featured_image: "nuts-5503118_6000x4000.jpg"
 featured_image_width: 6000
@@ -28,7 +28,7 @@ In the last ten weeks, I've [moved the site](/posts/2020/07/goodbye-hello/) four
 
 *If an email provider charges for support of a custom domain (so you can be jdoe@doecompany.com rather than johndoe362973@emailprovider.com), that's like a [cellular service provider charging for texts](https://www.wired.com/2008/12/text-messages-c/)---which is to say, a ripoff---because it costs the provider little or nothing to do this. [Change my mind](https://imgflip.com/memegenerator/Change-My-Mind).[^2] Really.*
 
-Speaking of email-related sins: Microsoft continues its (willful?) failure to give the Mac version of Outlook one specific feature that Outlook for Windows has had forever: the ability to see one's **own** sent emails in conversation threads. And I don't mean the hacky, unintuitive "talk balloons" method the Mac version uses; I mean the way the Windows version does it. Microsoft should read **and act on** the hundreds of complaints, dating back for years, on its own frickin’ ["Outlook User Voice" page about this missing capability](https://outlook.uservoice.com/forums/335538-outlook-for-mac-business/suggestions/16585903-show-sent-messages-in-conversations).[^3]
+Speaking of email-related sins: Microsoft continues its (willful?) failure to give the Mac version of Outlook one specific feature that Outlook for Windows has had forever: the ability to see one's **own** sent emails in conversation threads. And I don't mean the hacky, unintuitive "talk balloons" method the Mac version uses; I mean the way the Windows version does it. Microsoft should read **and act on** the hundreds of complaints, dating back for years, on its own frickin’ "Outlook User Voice" page (which is no longer online) about this missing capability.[^3]
 
 *I *will* say this for Microsoft, however: at least it keeps trying to [push the enterprise market away from the awful, obsolete Internet Explorer](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666). Same goes for [Windows 7](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020) (the FBI, too, has had [a few choice words to say about Windows 7](https://www.techrepublic.com/article/fbi-announcement-on-windows-7-end-of-life-prompts-worry-from-security-experts/)) and, for that matter, the totally-**not**-for-the-office [Windows 10 LTSC](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/ltsc-what-is-it-and-when-should-it-be-used/ba-p/293181)*.
 
@@ -36,7 +36,7 @@ The data from [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate li
 
 *Another thing about [Ulysses](https://ulysses.app) that perhaps is worth a note: I originally expected "[Posting with Ulysses](/posts/2020/08/posting-with-ulysses/)" to be a one-shot experiment but, lo and behold, here we are a month after "Posting with Ulysses" and I'm still using Big U rather than [iA Writer](https://ia.net/writer) for at least the *writing* of these posts, as opposed to the final creation of their [Markdown](/posts/2019/03/mark-it-down)---which, from Ulysses, is best done as an export.[^4] Sue me, but I really like writing in Ulysses, especially with the great dashboard improvements [introduced in Ulysses 20](https://blog.ulysses.app/video-dashboard-mac/)*.
 
-In large part, this experience with Ulysses is because, as novelist [Chris Rosser](https://chrisrosser.net) [observed](https://chrisrosser.net/posts/2020/07/17/ia-writer-56-review/) about these apps: "Where iA [Writer] tries to create a zen-like focused drafting experience, Ulysses nails it with its aesthetics and the graceful way in which it handles ugly markup." So exactly how *does* each app handle "ugly markup"? Look at these screen captures of how the two handle the same paragraph---in this case, the one, above, that starts with "Another thing about Ulysses." Ulysses goes first.[^5]
+In large part, this experience with Ulysses is because, as novelist [Chris Rosser](https://chrisrosser.net) [observed](https://chrisrosser.net/posts/2020/07/17/another-look-at-ia-writer/) about these apps: "Where iA [Writer] tries to create a zen-like focused drafting experience, Ulysses nails it with its aesthetics and the graceful way in which it handles ugly markup." So exactly how *does* each app handle "ugly markup"? Look at these screen captures of how the two handle the same paragraph---in this case, the one, above, that starts with "Another thing about Ulysses." Ulysses goes first.[^5]
 
 {{< imgc src="Ulysses_paragraph_sample_1366x562.png" alt="Screen capture of Ulysses for a given paragraph" width="1366" height="562" >}}
 <br />

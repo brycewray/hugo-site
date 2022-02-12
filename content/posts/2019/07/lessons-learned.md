@@ -16,7 +16,7 @@ featured_image_caption: |
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
-        <em>(Older comments imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+        <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
       </p>
       <p class="commentName"><strong>Magnus Lindberg</strong> <span class="commentDate"><em>2019-09-30</em></span></p>
       <p class="comment">Hi Bryce, I found a way to use both Git and cloud sync at the same time, for the same directory :- )<br />

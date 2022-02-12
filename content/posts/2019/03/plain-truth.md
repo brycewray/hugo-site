@@ -6,7 +6,7 @@ subtitle: "On permanence"
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
-lastmod: 2020-01-31T14:13:00-06:00
+lastmod: 2022-02-12T12:22:00-06:00
 discussionId: "2019-03-plain-truth"
 featured_image: "typewriter-1031024_5184x3456.jpg"
 featured_image_width: 5184
@@ -86,7 +86,7 @@ The arc of my writing journey in recent years has taken me back to the very begi
 
 The difference now is that the plain text exists not as ink on paper but as bytes saved to solid-state drives and quadruple-archived on hard drives as well as online.[^lastpost]
 
-Documents saved as plain text, [even relatively long ago](http://www.klauskorner.com/2012/07/31/back-to-the-late-1970s-way-of-plain-text-writing/), are as readable today as they were at the beginning, and will be so for as long as we can imagine. They will survive operating system changes, file format changes, the rise and fall of vendors as well as attempts at lock-in by the more successful vendors, and all the other bugaboos that keep you from viewing files from the early 1990s and before---as if you'd never spent any time or energy creating them.
+Documents saved as plain text, even relatively long ago, are as readable today as they were at the beginning, and will be so for as long as we can imagine. They will survive operating system changes, file format changes, the rise and fall of vendors as well as attempts at lock-in by the more successful vendors, and all the other bugaboos that keep you from viewing files from the early 1990s and before---as if you'd never spent any time or energy creating them.
 
 I refer to my "deathless prose" only with great sarcasm, and I assure you I don't take it too seriously. That said, I would like to believe that, in my dotage, I'll still be able to pull up my past writings and read them without difficulty. They may mean nothing to anyone else, but I cared enough at the time to type them, and I hope to keep revisiting them in the future, unencumbered by the issues that plague files that *aren't* in plain text.
 

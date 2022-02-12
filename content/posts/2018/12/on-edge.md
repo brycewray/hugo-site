@@ -6,7 +6,7 @@ subtitle: "Ch-ch-ch-ch-Chromium"
 description: "Microsoft’s decision about Edge is important on many levels."
 author: Bryce Wray
 date: 2018-12-07T13:35:00-06:00
-#lastmod:
+lastmod: 2022-02-12T12:36:00-06:00
 discussionId: "2018-12-on-edge"
 featured_image: "MS-Edge-logo-and-bkgd_1920x1080.jpg"
 featured_image_width: 1920
@@ -38,7 +38,7 @@ One of the most immediate strains I saw in the reactions was an almost visceral 
 
 Those expressing this view compared it to the [late 1990s](https://en.wikipedia.org/wiki/Browser_wars#First_Browser_War:_1995-2001), when one often would see sites bearing logos that said things like "Best viewed in [Netscape Navigator](https://www.engadget.com/2014/05/10/history-of-netscape/)" or "Best viewed in Internet Explorer." The lack of compliance with browser standards---partially due to browser-makers’ understandable impatience with the pace of those standards’ development---made it a hit-or-miss proposition whether a site you wanted to view would be OK on the browser you'd chosen. And, with Internet Explorer built into Windows to an extent that it would eventually [become a key part of an antitrust suit](https://www.nytimes.com/2000/04/04/business/us-vs-microsoft-overview-us-judge-says-microsoft-violated-antitrust-laws-with.html), IE finally won that particular war.
 
-So, why the comparison? Because, at this writing, the Blink-powered Chrome has a mammoth share of the worldwide browser market, just as IE did around the turn of the century. The meager showing that Webkit has, by comparison, would dwindle nearly to non-existence were it not for all those iOS devices out there; and the [Gecko engine](https://developer.mozilla.org/en-US/docs/Mozilla/Gecko) used in Firefox is fading at what that browser's adherents consider to be an alarming rate. So, with Edge now adopting Blink as its engine, too, that means one particular engine will be even closer to the domination that IE once had.
+So, why the comparison? Because, at this writing, the Blink-powered Chrome has a mammoth share of the worldwide browser market, just as IE did around the turn of the century. The meager showing that Webkit has, by comparison, would dwindle nearly to non-existence were it not for all those iOS devices out there; and the [Gecko engine](https://en.wikipedia.org/wiki/Gecko_(software)) used in Firefox is fading at what that browser's adherents consider to be an alarming rate. So, with Edge now adopting Blink as its engine, too, that means one particular engine will be even closer to the domination that IE once had.
 
 Remembering those "IE is the web" unpleasant times all too well, I share some of the concerns that others have expressed concerning the possibility of Blink hegemony. **However**: while the Netscape _vs._ IE battle of long ago involved dueling _non_-compliance with standards, there now are robust HTML and CSS standards (advanced by equally robust groups) with which browser manufacturers seem determined to maintain compliance.
 
@@ -58,7 +58,7 @@ Supporting multiple browser engines---even if there is a Really Big Dog engine a
 
 ## Edge case
 
-Given that Microsoft's engineers were [only recently spotted getting involved in Chromium](https://www.windowscentral.com/microsoft-engineers-contributing-development-chrome-windows-10-arm), it's probably unlikely we'll see the Chromium-based Edge in the wild for some time; but it's coming, and perhaps sooner than we think. After all, we don't _know_ that they haven't been working on it in some ["skunkworks" project](https://en.wikipedia.org/wiki/Skunkworks_project) inside Microsoft. Only when it does begin to appear will we start to know whether it matters---which leads to one more point. 
+Given that Microsoft's engineers were [only recently spotted getting involved in Chromium](https://www.windowscentral.com/microsoft-engineers-contributing-development-chrome-windows-10-arm), it's probably unlikely we'll see the Chromium-based Edge in the wild for some time; but it's coming, and perhaps sooner than we think. After all, we don't _know_ that they haven't been working on it in some ["skunkworks" project](https://en.wikipedia.org/wiki/Skunkworks_project) inside Microsoft. Only when it does begin to appear will we start to know whether it matters---which leads to one more point.
 
 There's one final observation I've read and with which I agree. The simple truth is that, in the end, the whole Edge-to-Blink transition may be a big _meh_. If the only thing that the new Edge offers is the "Edge look" on top of Chromium's guts, it's unclear what this browser's [USP](https://whatis.techtarget.com/definition/unique-selling-point-USP) would be.
 

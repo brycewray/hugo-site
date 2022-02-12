@@ -17,7 +17,7 @@ featured_image_caption: |
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
-        <em>(Older comments imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+        <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
       </p>
       <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-06-16</em></span></p>
       <p class="comment">Hi Bryce. I'm a new reader to your site. I found you when I was searching for information about MailMate. Thanks for this great overview. I've also enjoyed some of your other articles. I've now subscribed to your RSS feed, as I think your writing is great.</p>

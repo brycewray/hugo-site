@@ -6,7 +6,7 @@ subtitle: "Keeping my .git together with Working Copy"
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
-lastmod: 2020-02-03T14:23:00-06:00
+lastmod: 2022-02-12T11:56:00-06:00
 discussionId: "2019-07-roger-copy"
 featured_image: "animals-geese-in-a-row-2364769_3648x2736.jpg"
 featured_image_width: 3648
@@ -28,7 +28,7 @@ On July 24, I brought it back.
 
 The reason why the reference went away goes back to something from a [previous post](/posts/2019/07/lessons-learned/):
 
-> .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).  So, now, I keep my [SSG](https://staticsite.gen) directory in a drive that's not sync'd with the cloud.
+> .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).  So, now, I keep my [SSG](https://staticgen.com) directory in a drive that's not sync'd with the cloud.
 
 But, in giving up keeping this site's local [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml) in [iCloud Drive](https://developer.apple.com/icloud/icloud-drive/), I'd apparently also ceded one key advantage which cloud sync had provided: being able to write posts and manage my site from any of my iOS devices. Instead, it appeared, I was going back to the beginning, when I'd done it all from my iMac.
 

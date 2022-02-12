@@ -110,7 +110,7 @@ Now, a look at [Hyvor Talk](https://talk.hyvor.com)&nbsp;.&nbsp;.&nbsp;.
 
 {{< imgc src="Talkyard_scr_cap_2696x1524.png" alt="Screen capture of Talkyard web page" width="2696" height="1524" >}}
 
-As for [Talkyard](https://talkyard.io)&nbsp;.&nbsp;.&nbsp;.
+As for [Talkyard](https://www.talkyard.io)&nbsp;.&nbsp;.&nbsp;.
 
 #### Advantages
 - Comments can be anonymous (if you allow that); anyone who wishes to log in can do so either by creating a Talkyard account or via Google, Facebook, Twitter, or GitHub.

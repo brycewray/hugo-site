@@ -6,7 +6,7 @@ subtitle: "Feelings about look-and-feel"
 description: "How and why “hero images” have returned to this site."
 author: Bryce Wray
 date: 2020-05-22T18:00:00-05:00
-lastmod: 2021-05-16T10:31:00-05:00
+lastmod: 2022-02-12T11:44:00-06:00
 discussionId: "2020-05-thousand-words-indeed"
 featured_image: colorful-flower-field-250016_4984x3607.jpg
 featured_image_width: 4984
@@ -46,7 +46,7 @@ The site just had to go on a diet. If we were going to put a big piece of pie on
 
 So here's what happened.
 
-- **Lazy-loading**---After having used the [LazySizes](https://github.com/afarka/lazysizes) library for [lazy-loading](https://en.wikipedia.org/wiki/Lazy_loading) images, I opted instead for [LazyLoad](https://www.andreaverlicchi.eu/lazyload/), sometimes called "[vanilla-lazyload](https://www.npmjs.com/package/vanilla-lazyload)." It does everything I require of this kind of code, but is a smaller download and also seems to be a more efficient steward of browser resources.[^LLDev]
+- **Lazy-loading**---After having used the [LazySizes](https://github.com/aFarkas/lazysizes) library for [lazy-loading](https://en.wikipedia.org/wiki/Lazy_loading) images, I opted instead for [LazyLoad](https://www.andreaverlicchi.eu/lazyload/), sometimes called "[vanilla-lazyload](https://www.npmjs.com/package/vanilla-lazyload)." It does everything I require of this kind of code, but is a smaller download and also seems to be a more efficient steward of browser resources.[^LLDev]
 
 [^LLDev]: I also greatly admire and appreciate the friendly and positive way that LazyLoad's dev, [Andrea Verlicchi](https://www.andreaverlicchi.eu/), handles issue reports to LazyLoad's [GitHub repo](https://github.com/verlok/lazyload).
 

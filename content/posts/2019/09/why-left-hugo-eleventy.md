@@ -17,7 +17,7 @@ featured_image_caption: |
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
-        <em>(Older comments imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+        <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
       </p>
       <p class="commentName"><strong>Chris Rosser</strong> <span class="commentName"><em>2019-09-08</em></span></p>
       <p class="comment">Great post and very interesting. I hadn't heard of Eleventy before. That's one thing I love about using a static-site generator is how easy it is to change should you need to. I used several before I settled on Pelican. I briefly thought about changing to Hugo, but decided it against it once I read the docs.</p>

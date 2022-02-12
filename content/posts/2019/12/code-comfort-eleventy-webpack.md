@@ -6,7 +6,7 @@ subtitle: "Peeking inside this site"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray
 date: 2019-12-14T11:05:00-06:00
-lastmod: 2021-05-29T12:24:00-05:00
+lastmod: 2022-02-12T11:51:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 featured_image: code-1486361_5760x3840.jpg
 featured_image_width: 5760
@@ -37,7 +37,7 @@ You *can* do it with just a `webpack.config.js` file---one to rule them all, so 
 
 - `webpack.prod.js`---You guessed it: this is the first file's bro, except that this one contains only config code for *production*. [See my site's `webpack.prod.js` file here](https://github.com/brycewray/eleventy_bundler/blob/master/webpack.prod.js).
 
-- `webpack.common.js`---Contains everything you'll need for *either* production or development. The other two files ***merge*** this content when they're run, thus ensuring everything happens as it should. Having this separate file, rather than duplicating code between the other two files, is DRY-friendly (well, [maybe](https://thevaluable.dev/dru-principle-cost-benefit-example)) and thus keeps peace among all of [Babbage](https://www.computerhistory.org/babbage/)'s descendants, genetic or otherwise. [See my site's `webpack.common.js` file here](https://github.com/brycewray/eleventy_bundler/blob/master/webpack.common.js).
+- `webpack.common.js`---Contains everything you'll need for *either* production or development. The other two files ***merge*** this content when they're run, thus ensuring everything happens as it should. Having this separate file, rather than duplicating code between the other two files, is DRY-friendly (well, [maybe](https://thevaluable.dev/dry-principle-cost-benefit-example)) and thus keeps peace among all of [Babbage](https://www.computerhistory.org/babbage/)'s descendants, genetic or otherwise. [See my site's `webpack.common.js` file here](https://github.com/brycewray/eleventy_bundler/blob/master/webpack.common.js).
 
 ## Configuring Eleventy itself
 

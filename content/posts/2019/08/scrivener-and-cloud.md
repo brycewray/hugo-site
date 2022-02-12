@@ -6,7 +6,7 @@ subtitle: "Cutting through the fog (maybe)"
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."
 author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
-#lastmod:
+lastmod: 2022-02-12T11:54:00-06:00
 discussionId: "2019-08-scrivener-and-cloud"
 featured_image: "scriv-and-cloud-from-3331240_1280x720.jpg"
 featured_image_width: 1280
@@ -98,7 +98,7 @@ And when I say, "end of story," I suspect it'll truly be that. Because now we ge
 
 For Apple to change iCloud in such a way that its API and the Scrivener file structure can become BFFs where iOS is concerned would require it to be worth Apple's while. The development costs are probably huge, and there's also the nagging concern that any such changes to iCloud would "break" things that work with it now. Since [Apple is putting a lot of its financial eggs in the services-selling basket](https://arstechnica.com/gadgets/2018/11/apple-services-reach-a-whopping-10-billion-in-revenue-in-q4-2018/), any such glitches would be stupendously bad. When you're a gargantuan publicly traded company [on which the Dow itself seems to ride some days](https://www.investors.com/market-trend/stock-market-today/stock-market-soars-as-recession-fears-go-on-back-burner-apple-leads-dow-jones/), you can't and won't take those kinds of risks if there's not an overwhelming financial reason to do so.
 
-We who use Scrivener[^Ulysses] are a [scrappy, vocal bunch](https://www.literatureandlatte.com/forum/search.php?search_id=active_topics), but we definitely do not constitute more than a flyspeck when compared to the population of iOS and macOS users as a whole. Thus, it's easy for Apple to give lip service to L&amp;L about perhaps someday finding a way for iCloud to work with sync-to-iOS with Scrivener while never actually doing anything about it.
+We who use Scrivener[^Ulysses] are a [scrappy, vocal bunch](https://forum.literatureandlatte.com/), but we definitely do not constitute more than a flyspeck when compared to the population of iOS and macOS users as a whole. Thus, it's easy for Apple to give lip service to L&amp;L about perhaps someday finding a way for iCloud to work with sync-to-iOS with Scrivener while never actually doing anything about it.
 
 [^Ulysses]: Yes, I still use Scrivener, as I've said before, despite my comments [here](/posts/2018/09/why-finally-settled-ulysses/) about it vs. [Ulysses](https://ulysses.app). I have the luxury of having multiple superb writing apps, and I use whichever feels best to me at the time.
 

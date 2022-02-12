@@ -6,7 +6,7 @@ subtitle: "From 3-2-1 to 4-2-2"
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-lastmod: 2021-02-14T07:50:00-06:00
+lastmod: 2022-02-12T12:24:00-06:00
 discussionId: "2019-02-back-up-jack"
 featured_image: binary-2688910_6000x3372.jpg
 featured_image_width: 6000
@@ -60,7 +60,7 @@ So that left me with Dropbox as my main cloud sync provider.
 
 See, in the back of my Apple-loving mind there always was, of course, good ol’ [iCloud Drive](https://www.apple.com/icloud/).
 
-Still, iCloud Drive was more of an afterthought than anything else, except for obvious things like photos from my iPhone or files created by software such as [Ulysses](https://ulysses.app), [iA Writer](https://ia.net/writer), and [Affinity Photo](https://affinity.serif.com/en-us/photo/desktop/). Also, I had only the fifty-gigabyte plan from iCloud, the main use for which still was to store those iPhone photos as well as all my [Apple Music](https://www.apple.com/music/) goodies.
+Still, iCloud Drive was more of an afterthought than anything else, except for obvious things like photos from my iPhone or files created by software such as [Ulysses](https://ulysses.app), [iA Writer](https://ia.net/writer), and [Affinity Photo](https://affinity.serif.com/en-us/photo/). Also, I had only the fifty-gigabyte plan from iCloud, the main use for which still was to store those iPhone photos as well as all my [Apple Music](https://www.apple.com/music/) goodies.
 
 I didn't *object* to iCloud Drive, or anything like that. I just wasn't sure I should rely on it too heavily for mass storage/sync for *all* my files. Hey, I still remembered the [MobileMe](https://en.wikipedia.org/wiki/MobileMe) fiasco. Of course, that was a long time ago and iCloud Drive is generations ahead of Apple's early days in that arena. Still, even though I knew [Apple has made a massive commitment to services like iCloud even as retail device sales seem to have plateaued](https://arstechnica.com/gadgets/2018/11/apple-services-reach-a-whopping-10-billion-in-revenue-in-q4-2018/), I just didn't make the connection. Besides, I already was paying the ten bucks a month for the one-terabyte Dropbox account and everything was fine. Why move?[^6]
 

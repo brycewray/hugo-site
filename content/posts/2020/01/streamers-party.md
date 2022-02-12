@@ -6,7 +6,7 @@ subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."
 author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
-#lastmod: 2020-02-04T07:20:00-06:00
+lastmod: 2021-02-12T11:45:00-06:00
 discussionId: "2020-01-streamers-party"
 featured_image: streaming_glenn-carstens-peters-EOQhsfFBhRk-unsplash_4019x2674.jpeg #NOTE: Never change that filename to ".jpg"
 featured_image_width: 4019
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@glenncarstenspeters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Glenn Carstens-Peters</a>; <a href="https://unsplash.com/s/photos/streaming-video?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).
+At long last, my household has [cut the cord](https://en.wikipedia.org/wiki/Cord-cutting). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).
 
 We are free, free at last, from the preposterous monstrosity of cable television&nbsp;.&nbsp;.&nbsp;.
 
@@ -76,7 +76,7 @@ When my father was transferred back to our home area in late 1965, I---a typical
 
 [^kines]: Yeah, kinescopes. I guess these smaller-market stations didn't yet have the wherewithal to buy the massive video tape machines of that era.
 
-Around this time, in the mid-1960s, I began hearing of something then called [community antenna television (CATV)](https://people.seas.harvard.edu/~jones/cscie129/nu_lectures/lecture13/CATV/CATV.html), in which people who lived in areas with bad over-the-air reception would join together to share ownership and/or renting of a really tall antenna and some retransmission equipment so they could see distant channels.
+Around this time, in the mid-1960s, I began hearing of something then called [community antenna television (CATV)](https://www.britannica.com/technology/community-antenna-television), in which people who lived in areas with bad over-the-air reception would join together to share ownership and/or renting of a really tall antenna and some retransmission equipment so they could see distant channels.
 
 This was the birth of the cable TV industry.
 

@@ -101,7 +101,7 @@ So, for your geeky pleasure, here goes nothing.
 
 ## Commenting platform
 
-2019-07-05: [Talkyard](https://talkyard.io).
+2019-07-05: [Talkyard](https://www.talkyard.io).
 
 2020-07-05: [Webmentions](https://indieweb.org).
 

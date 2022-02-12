@@ -6,7 +6,7 @@ subtitle: "Now hear and see this"
 description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices."
 author: Bryce Wray
 date: 2021-07-03T16:20:00-05:00
-lastmod: 2021-07-04T22:34:00-05:00
+lastmod: 2022-02-12T11:14:00-06:00
 discussionId: "2021-07-better-notifications-preside-email-app"
 featured_image: apple-iphone-in-hands-closeup-1281744_5472x3648-with-preside-icon_90pct.jpg
 featured_image_width: 5472
@@ -39,7 +39,7 @@ Private remote sync in Preside, which requires a free [preside.io account](https
 
 - A combination of the Mac's native Apple Mail app and [AppleScript](https://en.wikipedia.org/wiki/AppleScript).
 - A [Python](https://www.python.org/) script running on a remote server.
-- A combination of the MailMate app and a *MailMate bundle* (see Josh Sullivan's article, "[MailMate Bundles](https://joshsullivan.io/2019/07/mailmate-bundles/)," for an intro).
+- A combination of the MailMate app and a *MailMate bundle* (see the [Mailmate bundle documentation](https://github.com/mailmate/mailmate_manual/wiki/Bundles)).
 
 [^premium]: Don't confuse a preside.io account with the paid [Preside Premium](https://preside.io/PremiumFAQ.html) service. While you definitely will have a preside.io account with Preside Premium, you also can have a preside.io account without it, although its primary use with the free version of Preside is for the specific sync options that require it.
 

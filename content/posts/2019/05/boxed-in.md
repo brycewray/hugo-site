@@ -6,7 +6,7 @@ subtitle: "“Shoebox” apps (including Ulysses) and iCloud sync"
 description: "A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general."
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
-lastmod: 2020-07-17T07:50:00-05:00
+lastmod: 2022-02-12T11:00:00-06:00
 discussionId: "2019-05-boxed-in"
 featured_image: "kelly-sikkema-_JBGjZFFYRk-unsplash_5568x3712.jpg"
 featured_image_width: 5568
@@ -22,7 +22,7 @@ Yeah, I know: "Write it all the way through, first, then edit later." Still, you
 
 ## Sick sync
 
-On April 20, 2019, I issued a post called "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)." It detailed why I would no longer use---and had cancelled my soon-expiring annual subscription to---the [Ulysses](https://ulysses.app) app on which I'd once [gleefully relied](/posts/2018/09/why-finally-settled-Ulysses/) for writing the WIP and, before I glommed onto [iA Writer](https://ia.net/writer), this site's posts.
+On April 20, 2019, I issued a post called "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)." It detailed why I would no longer use---and had cancelled my soon-expiring annual subscription to---the [Ulysses](https://ulysses.app) app on which I'd once [gleefully relied](/posts/2018/09/why-finally-settled-ulysses/) for writing the WIP and, before I glommed onto [iA Writer](https://ia.net/writer), this site's posts.
 
 In essence, it had come down to my no longer trusting the ability of Ulysses to sync successfully with iCloud---particularly on the Mac. I'd lost a little work but, mostly, just had scares: "red-sheet" conflicts and that sort of thing.
 
@@ -74,7 +74,7 @@ Each variation has its advantages and disadvantages, but a search reveals a shoe
 
 1. [LogTen Pro X](http://help.coradine.com/kb/sync-backup/troubleshooting-icloud-sync)
 2. [Notability](https://support.gingerlabs.com/hc/en-us/articles/205688797-Troubleshooting-iCloud-Sync)
-3. [Due](https://dueapp.zendesk.com/hc/en-us/articles/203530679-iCloud-sync-problems)
+3. [Due](https://dueapp.zendesk.com/hc/en-us/search?utf8=%E2%9C%93&query=icloud)
 4. [1Password](https://support.1password.com/icloud-troubleshooting/)
 5. [GoodNotes](https://support.goodnotes.com/hc/en-us/articles/215102586-My-documents-are-not-uploading-to-iCloud-and-show-arrows-in-the-upper-right)
 6. [Lifecraft](https://support.lifecraft.com/hc/en-us/articles/115013307288-Sync-Troubleshooting)

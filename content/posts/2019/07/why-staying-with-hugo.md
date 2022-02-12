@@ -17,7 +17,7 @@ featured_image_caption: |
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
-        <em>(Older comments imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+        <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
       </p>
       <p class="commentName"><strong>Cole Krumz</strong> <span class="commentDate"><em>2019-07-15</em></span></p>
       <p class="comment">Interesting read. Any chance you'd be willing to open source the attempted site, bugs and all, as a learning tool? I'd be pretty interested to try to get your site working, and in the process understand how gatsby handles a set of "real-world" requirements.</p>

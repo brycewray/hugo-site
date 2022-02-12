@@ -6,7 +6,7 @@ subtitle: "Page builders are a pain, but . . ."
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
-lastmod: 2019-10-06T19:00:00-05:00
+lastmod: 2022-02-12T12:33:00-06:00
 discussionId: "2019-01-blox-sux"
 featured_image: "lego-169603_4320x3240.jpg"
 featured_image_width: 4320
@@ -64,7 +64,7 @@ For those of you who have a choice about how to build web pages, I offer some ha
 
 Oh, there's one more thing (and, no, I'm not trying to channel [Steve Jobs](http://mentalfloss.com/article/49097/every-one-more-thing-steve-jobs)).
 
-Right now, the WordPress world is in a [frothing](https://www.rystedtcreative.com/wordpress/wordpress-5-0-gutenberg-2018/) [mess](https://deliciousbrains.com/wordpress-gutenberg/) over the WordPress 5.x release and, with it, the embedding within WordPress core software of [WordPress's own page builder, Gutenberg](https://wordpress.org/gutenberg/). While there are some who love it and feel it should be a great free replacement for all the page builder plugins, it seems clear it'll be a while before it's ready for prime time. That's a bit sad because Gutenberg, especially once its early rough edges get smoothed somewhat, may well be enough for the vast majority of WordPress users who are not web designers---a description which includes a lot more of them than you might think, or want to think. Still, while that jury is out, my advice from above stands: if you have to have WordPress, use Elementor. (If your WordPress setup is staying up to date, [as it should if you want to avoid security issues](https://www.malcare.com/blog/2018/02/06/important-wp-security-updates/), you can turn off Gutenberg by installing the [official Classic Editor plugin](https://wordpress.org/plugins/classic-editor/).)
+Right now, the WordPress world is in a [frothing](https://www.rystedtcreative.com/wordpress/wordpress-5-0-gutenberg-2018/) [mess](https://deliciousbrains.com/wordpress-gutenberg/) over the WordPress 5.x release and, with it, the embedding within WordPress core software of [WordPress's own page builder, Gutenberg](https://wordpress.org/gutenberg/). While there are some who love it and feel it should be a great free replacement for all the page builder plugins, it seems clear it'll be a while before it's ready for prime time. That's a bit sad because Gutenberg, especially once its early rough edges get smoothed somewhat, may well be enough for the vast majority of WordPress users who are not web designers---a description which includes a lot more of them than you might think, or want to think. Still, while that jury is out, my advice from above stands: if you have to have WordPress, use Elementor. (If your WordPress setup is staying up to date, [as it should if you want to avoid security issues](https://www.malcare.com/blog/wordpress-security/), you can turn off Gutenberg by installing the [official Classic Editor plugin](https://wordpress.org/plugins/classic-editor/).)
 
 ----
 

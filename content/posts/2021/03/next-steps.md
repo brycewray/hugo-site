@@ -5,7 +5,7 @@ subtitle: "Evaluating Next.js for the Day Job"
 description: "Some things I’ve learned while tinkering with a major React framework."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
-lastmod: 2021-04-15T16:30:00-05:00
+lastmod: 2022-02-12T11:28:00-06:00
 #draft: false
 discussionId: "2021-03-next-steps"
 featured_image: "crystal-ball-drew-beamer-xU5Mqq0Chck-unsplash_5284x3522.jpg"
@@ -161,7 +161,7 @@ Incidentally, I took advantage of this exploration to try the [`@use`](https://s
 
 As I said earlier, part of the work I'm doing for this learning experience involves rebuilding one of our currently WordPress-based sites as closely as possible. Since that site uses [FontAwesome](https://fontawesome.com) characters in its navigation menu, I wanted to do the same---but **without** having to link to FontAwesome itself.
 
-Fortunately, FontAwesome has an "[official React component](https://fontawesome.com/how-to-use/on-the-web/using-with/react)," which makes that a breeze:
+Fortunately, FontAwesome has an "[official React component](https://fontawesome.com/docs/web/use-with/react/)," which makes that a breeze:
 
 ```jsx
 import nav from '@scss/Nav.module.scss'

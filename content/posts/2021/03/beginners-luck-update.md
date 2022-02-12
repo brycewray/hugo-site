@@ -6,7 +6,7 @@ subtitle: "New and updated starter sets for Eleventy and Hugo"
 description: "The inventory has grown, so here’s what I currently offer for those interested in the two best SSGs."
 author: Bryce Wray
 date: 2021-03-25T20:25:00-05:00
-lastmod: 2021-04-22T12:57:00-05:00
+lastmod: 2022-02-12T11:25:00-06:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608
@@ -33,7 +33,7 @@ The Eleventy starters are distinguished by two things: which of the [numerous El
 
 So, here we go.
 
-- **[eleventy_solo_starter](https://github.com/brycewray/eleventy_solo_starter)**---JavaScript templating; [Tailwind CSS](https://tailwindcss.com), which as of version 2.1.0 includes the just-in-time (JIT) compiler (for details about the advantages of this experimental addition to Tailwind, refer to the [official announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) as well as [my related post](/posts/2021/03/jit-game-changer-tailwind-css/)). [View the demo](https://eleventy-solo-starter-alpha.vercel.app/).
+- **[eleventy_solo_starter](https://github.com/brycewray/eleventy_solo_starter)**---JavaScript templating; [Tailwind CSS](https://tailwindcss.com), which as of version 2.1.0 includes the just-in-time (JIT) compiler (for details about the advantages of this experimental addition to Tailwind, refer to the [official announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) as well as [my related post](/posts/2021/03/jit-game-changer-tailwind-css/)). [View the demo](https://eleventy-solo-starter-original.vercel.app/).
 - **[eleventy_solo_starter_njk](https://github.com/brycewray/eleventy_solo_starter_njk)**---[Nunjucks](https://mozilla.github.io/nunjucks) templating; Tailwind CSS, now with the JIT compiler. [View the demo](https://eleventy-solo-starter-njk.vercel.app/).
 - **[eleventy_solo_starter_scss](https://github.com/brycewray/eleventy_solo_starter_scss)** *(**new**)*---JavaScript templating; [Sass/SCSS](https://sass-lang.com). [View the demo](https://eleventy-solo-starter-scss.vercel.app).
 - **[eleventy_solo_starter_njk_scss](https://github.com/brycewray/eleventy_solo_starter_njk_scss)** *(**new**)*---Nunjucks templating; Sass/SCSS. [View the demo](https://eleventy-solo-starter-njk-scss.vercel.app).

@@ -6,7 +6,7 @@ subtitle: "Doing a 180 on CSS Grid"
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
 date: 2018-11-28T10:00:00-05:00
-lastmod: 2019-10-02T19:20:00-05:00
+lastmod: 2022-02-12T12:37:00-06:00
 discussionId: "2018-11-grid-locked-no-more"
 featured_image: "grid-3424959_5227x2935.jpg"
 featured_image_width: 5227
@@ -36,7 +36,7 @@ And I meant it.
 
 Then, in the process of learning about CSS Grid, I decided to read articles and view videos by several of its key advocates, most notably [Jen Simmons](http://jensimmons.com), [Rachel Andrew](https://rachelandrew.co.uk), and [Kevin Powell](https://www.kevinpowell.co). They're widely known for their insights into web design and development, including the need to keep learning new ways of doing things we web-heads have been doing for a long, long time. Simmons's [Layout Land videos](https://www.youtube.com/layoutland), in particular, helped me understand the basics of CSS Grid much more quickly than I think would've been possible otherwise.
 
-I thought over their points long and hard, and one key observation by Simmons from [this article](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css) hit home with me (to the extent that I thought, "Man, I wish I'd read this _before_ I wrote that post, especially the last part about hoping the next Bootstrap version will include CSS Grid”):
+I thought over their points long and hard, and one key observation by Simmons from [this article](https://web.archive.org/web/20170723153324/http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css) hit home with me (to the extent that I thought, "Man, I wish I'd read this _before_ I wrote that post, especially the last part about hoping the next Bootstrap version will include CSS Grid”):
 
 > .&nbsp;.&nbsp;.&nbsp;it's time to stop assuming your page layout design process looks like this: 1) Pick a third-party framework; 2) Pick one of the layouts that comes with that framework; 3) Limit all your ideas to what that framework can do.
 >

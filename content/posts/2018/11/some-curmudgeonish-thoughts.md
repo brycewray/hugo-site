@@ -6,7 +6,7 @@ subtitle: "(with apologies to the late Andy Rooney)"
 description: "“Didja ever notice...?” Yes, I did. And here’s the result."
 author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
-lastmod: 2021-08-24T12:43:00-05:00
+lastmod: 2022-02-12T10:59:00-06:00
 discussionId: "2018-11-some-curmudgeonish-thoughts"
 featured_image: "smilies-2912641_6016x4000.jpg"
 featured_image_width: 6016
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Alexas_Fotos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Pixabay</a></span>
 ---
 
-Here are a few odds and ends---some a tad acerbic, some not so much. And I swear I'm not trying to sound like the late [Andy Rooney](https://www.biography.com/people/andy-rooney-9542557), or even a parody thereof&nbsp;.&nbsp;.&nbsp;.
+Here are a few odds and ends---some a tad acerbic, some not so much. And I swear I'm not trying to sound like the late [Andy Rooney](https://en.wikipedia.org/wiki/Andy_Rooney), or even a parody thereof&nbsp;.&nbsp;.&nbsp;.
 
 {{< lite-youtube videoTitle="Andy Rooney (Frank Caliendo) On The iPhone" videoId="u8pCsfT1gDU" >}}
 

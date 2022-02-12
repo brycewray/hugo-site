@@ -6,7 +6,7 @@ subtitle: "Part 2 of a two-part series on web typography"
 description: "Making the case for a system fonts approach to the typography on websites."
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2021-05-16T12:13:00-05:00
+lastmod: 2022-02-12T10:56:00-06:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: "computer-1869236_3264x2448.jpg"
 featured_image_width: 3264
@@ -36,7 +36,7 @@ Anyway, with that understood, let's get on with it.
 
 ## A simpler---and duller---time
 
-The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of "safe" system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can't read graphics as text; but it wasn't such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here's an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
+The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of "safe" system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can't read graphics as text; but it wasn't such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](https://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here's an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
 {{< imgc src="Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg" alt="Image from Apple website in 1999 showing graphic elements as text" width="1218" height="1296" >}}
 
@@ -61,7 +61,7 @@ And, guess who dings a page's search results downward if the page is comparative
 
 So, what to do?
 
-## Goin’ back to the classics---sort of 
+## Goin’ back to the classics---sort of
 
 What I've chosen, and what quite a few sites have chosen, is to go back in time and trust the so-called "[system fonts stack](https://woorkup.com/system-font/)." That refers to the system-default sans-serif typefaces on people's individual devices. They're already there, and they load virtually instantaneously. If you're doubting the wisdom of such an approach considering my earlier explanation of how that worked in the 1990s, please understand that this is a major case of "That was then and this is now."
 
@@ -78,8 +78,8 @@ As for which typefaces to specify and in which order in your CSS, any number of 
 - **Cantarell**---Linux distributions using GNOME.
 - **Fira Sans**---the Firefox OS for smartphones (an OS which is considered discontinued, but this typeface is still in the stack).
 - **Droid Sans**---Android before version 4.0.
-- **Helvetica Neue**---iOS prior to iOS 9 and Mac OS X 10.10.x (Yosemite). 
-- **Lucida Grande**---Mac OS X 10.0.x (Cheetah) through Mac OS X 10.9.x (Mavericks). 
+- **Helvetica Neue**---iOS prior to iOS 9 and Mac OS X 10.10.x (Yosemite).
+- **Lucida Grande**---Mac OS X 10.0.x (Cheetah) through Mac OS X 10.9.x (Mavericks).
 - **sans-serif** (yes, without capitalization)---This is at the end as a fallback in case, somehow, none of the others will float your device's boat, although that's _extremely_ unlikely.
 
 In case you aren't familiar with all of these, here you go (all except the generic sans-serif fallback, since it _is_ so generic and also, obviously, would vary by system and/or device):

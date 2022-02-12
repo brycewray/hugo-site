@@ -5,7 +5,7 @@ subtitle: "iA Writer wins—for now"
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
-lastmod: 2021-12-15T12:27:00-06:00
+lastmod: 2022-02-12T11:02:00-06:00
 discussionId: "2019-04-why-left-ulysses"
 featured_image: "hand-butterfly-3751159_6000x4000.jpg"
 featured_image_width: 6000
@@ -16,7 +16,7 @@ featured_image_caption: |
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
-        <em>(Older comments imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+        <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
       </p>
       <p class="commentName"><strong>Chris Rosser</strong> <span class="commentDate"><em>2019-04-30</em></span></p>
       <p class="comment">An excellent and very well considered article as always. Thanks for posting it!</p>
@@ -125,7 +125,7 @@ Since sync&rsquo;ing is one of those cases where "[failure is not an option](htt
 
 And, in case you've decided I was being too hasty, that I was letting one odd occurrence and some random complaints on the web sour me on a perfectly fine app: that Sunday afternoon wasn't the end of the trouble. I continued to suffer various types of a Ulysses/iCloud "[failure to communicate](https://www.americanrhetoric.com/MovieSpeeches/moviespeechcoolhandluke2.html)," and even lost some work as a result. Moreover, *none* of my other apps---most especially iA Writer, with its support for [Open in Place](https://developer.apple.com/document-based-apps/) as well as its fully transparent file storage in the Finder and the iOS Files app, as opposed to the workings of the obscurely located Ulysses Library[^Library]---had so much as a whisper of trouble dealing with iCloud.
 
-[^Library]: For further details on how and where the Ulysses Library stores files, see: "The Library, and File Management" in [this article](https://mariusmasalar.me/ulysses-vs-ia-writer-a-new-comparison-7015c899e883/) by Marius Masalar; and "One library" in [this article](https://chrisrosser.net/posts/2017/09/01/ulysses-review/) by Chris Rosser.
+[^Library]: For further details on how and where the Ulysses Library stores files, see: "The Library, and File Management" in [this article](https://mariusmasalar.me/ulysses-vs-ia-writer-a-new-comparison-7015c899e883/) by Marius Masalar. (In the original version of this post, I also referenced an excellent 2017 Ulysses review by [Chris Rosser](https://chrisrosser.net/), but it no longer appears on his website.)
 
 Besides: having to evaluate whether a late-2010s writing app will store and sync your content reliably is like having to evaluate whether an NFL running back can carry the ball without fumbling: *that's his frickin’ job*.
 
@@ -201,7 +201,7 @@ To be sure, many don't find iA Writer a suitable replacement for Ulysses. Use ca
 
 For me, *for now*, it will do. And, just in case I haven't made my meaning sufficiently clear&nbsp;.&nbsp;.&nbsp;.
 
-One important thing I've gained through the transition to [Markdown](/posts/2019/03/mark-it-down/)-flavored [plain text](/posts/2019/02/plain-truth/) is tremendous freedom for the future. If the day comes that iA Writer either ceases to exist or simply winds up on my bad side one day for reasons I can't currently predict---well, there's a great, big world of Markdown-savvy apps out there, with more on the way.
+One important thing I've gained through the transition to [Markdown](/posts/2019/03/mark-it-down/)-flavored [plain text](/posts/2019/03/plain-truth/) is tremendous freedom for the future. If the day comes that iA Writer either ceases to exist or simply winds up on my bad side one day for reasons I can't currently predict---well, there's a great, big world of Markdown-savvy apps out there, with more on the way.
 
 So, yes, iA Writer, *for now*, I welcome your icon to the center positions on the docks of my Mac and iPad, and also to a presence in the Honored Four apps always visible at the bottom of my iPhone home screen. Just be sure you keep earning your presence there. Above all, don't get too comfortable.
 

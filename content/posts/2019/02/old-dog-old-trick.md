@@ -6,7 +6,7 @@ subtitle: "How’d I miss this way to fool IE?"
 description: "A major “Do’h” moment in the never-ending battle against Internet Explorer."
 author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
-lastmod: 2021-12-15T12:27:00-06:00
+lastmod: 2022-02-12T12:27:00-06:00
 discussionId: "2019-02-old-dog-old-trick"
 featured_image: "dog-2514968_1940x1293.jpg"
 featured_image_width: 1940
@@ -68,7 +68,7 @@ I am still embarrassed. In the words of Donald Sutherland in *Animal House*: "[L
 
 ## Share the shame, but share the help, too
 
-So why am I sharing my shame? Because I saw posts from *other* people still asking about IE conditionals for IE 10 and 11 even in recent months, so there are others to inform. Here is the correct way to schnooker IE 10 and 11 into seeing an instruction that you want the *real* browsers to ignore (hat tip to [Philip Newcomer](https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/) and [numerous](https://stackoverflow.com/questions/19502040/if-ie-conditionals-not-working) [folks](https://stackoverflow.com/questions/27735840/why-are-conditional-comments-in-html-not-recognized-in-internet-explorer-11-is) [on](https://stackoverflow.com/questions/19446584/why-doesnt-internet-explorer-11-honour-conditional-comments-even-when-emulating) [Stack Overflow](https://stackoverflow.com/questions/40656043/conditional-comments-not-working-in-ie11)):
+So why am I sharing my shame? Because I saw posts from *other* people still asking about IE conditionals for IE 10 and 11 even in recent months, so there are others to inform. Here is the correct way to schnooker IE 10 and 11 into seeing an instruction that you want the *real* browsers to ignore (hat tip to [Philip Newcomer](https://web.archive.org/web/20210116234243/https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/) and [numerous](https://stackoverflow.com/questions/19502040/if-ie-conditionals-not-working) [folks](https://stackoverflow.com/questions/27735840/why-are-conditional-comments-in-html-not-recognized-in-internet-explorer-11-is) [on](https://stackoverflow.com/questions/19446584/why-doesnt-internet-explorer-11-honour-conditional-comments-even-when-emulating) [Stack Overflow](https://stackoverflow.com/questions/40656043/conditional-comments-not-working-in-ie11)):
 
 > .&nbsp;.&nbsp;.&nbsp;create a media query using `-ms-high-contrast`, in which you place your IE 10- and 11-specific CSS styles. Because `-ms-high-contrast` is Microsoft-specific (and .&nbsp;.&nbsp;.&nbsp;available [only] in IE 10+), it will .&nbsp;.&nbsp;.&nbsp;be parsed in [only] Internet Explorer 10 and greater.[^Newcomer]
 

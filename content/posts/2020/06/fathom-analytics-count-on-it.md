@@ -6,7 +6,7 @@ subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
 date: 2020-06-19T00:45:00-05:00
-lastmod: 2021-06-25T16:45:00-06:00
+lastmod: 2022-02-12T10:55:00-06:00
 discussionId: "2020-06-fathom-analytics-count-on-it"
 featured_image: "alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg"
 featured_image_width: 6024
@@ -89,7 +89,7 @@ And, mind you, it doesn't hurt if it's also easy on the eyes. So, with that, lad
 
 {{< imgc src="fathom-analytics_1420x1025.jpg" alt="Screen capture from the Fathom Analytics “dashboard” on its live demo" width="1420" height="1025" >}}
 
-Fathom Analytics does, indeed, present a nice picture, as this screen capture shows; you can also view a [live demo](https://app.usefathom.com/share/lsqyv/pjrvs). But what about the [features](https://usefathom.com/features) behind that pretty face?
+Fathom Analytics does, indeed, present a nice picture, as this screen capture shows; you can also view a [live demo](https://app.usefathom.com/demo). But what about the [features](https://usefathom.com/features) behind that pretty face?
 
 - **No cookies**---Fathom Analytics uses a method involving "[multiple, unrelated complex hashes](https://usefathom.com/blog/anonymization)" which provides all the tracking you'd reasonably want, yet without the drawbacks of cookies (or server logging, for that matter).
 - **Compliant with privacy regs**---Because of this approach, Fathom Analytics is **fully compliant** with Internet privacy protection laws like the EU's [GDPR](https://gdpr-info.eu/), California's [CCPA](https://www.oag.ca.gov/privacy/ccpa), and the UK's [PECR](https://ico.org.uk/for-organisations/guide-to-pecr/what-are-pecr/). That means you don't have to worry about putting up (or, for that matter, whether you **need** to put up) those annoying permission pop-ups on your site.

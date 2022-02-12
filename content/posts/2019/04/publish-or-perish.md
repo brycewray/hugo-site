@@ -6,7 +6,7 @@ subtitle: "Going live with your Hugo site"
 description: "In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free."
 author: Bryce Wray
 date: 2019-04-11T19:00:00-05:00
-lastmod: 2019-07-29T20:55:00-05:00
+lastmod: 2022-02-12T12:17:00-06:00
 discussionId: "2019-04-publish-or-perish"
 featured_image: "office-blogging-monochrome-381228_5184x3456.jpg"
 featured_image_width: 5184
@@ -17,7 +17,7 @@ featured_image_caption: |
 oldComments: |
   <div class="container-oldComments">
     <p class="commentDisclaimer">
-      <em>(Older comments imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+      <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
     </p>
     <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-06-18</em></span></p>
     <p class="comment">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="noopener">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="noopener">helped another user on micro.blog</a>.</p>
@@ -31,7 +31,7 @@ This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you
 
 ## Keepin’ it easy: Go GUI
 
-First, let me harken back to another [previous post](/posts/2018/10/version-control-follies/) in which I described how I manage this site through a great [Atlassian](https://atlassian.com) app called [Sourcetree](https://www.sourcetreeapp.com). Quick summary thereof: yes, you **can** use [Git](https://gitscm.com) commands in a command-line interface app to do what I'm going to describe, but there's no real need for it as long as there are user-friendly [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [version-control](https://www.atlassian.com/git/tutorials/what-is-version-control) apps like Sourcetree that let you point and click your way to the same final result.
+First, let me harken back to another [previous post](/posts/2018/10/version-control-follies/) in which I described how I manage this site through a great [Atlassian](https://atlassian.com) app called [Sourcetree](https://www.sourcetreeapp.com). Quick summary thereof: yes, you **can** use [Git](https://git-scm.com) commands in a command-line interface app to do what I'm going to describe, but there's no real need for it as long as there are user-friendly [GUI](https://en.wikipedia.org/wiki/Graphical_user_interface) [version-control](https://www.atlassian.com/git/tutorials/what-is-version-control) apps like Sourcetree that let you point and click your way to the same final result.
 
 (Please note that Sourcetree is available only for Windows and macOS, so you Linux users---assuming you aren't already familiar with your Linux distro's Terminal app and Git anyway, which frankly is not that likely, but one never knows---will need to use a [different GUI app](https://www.tecmint.com/best-gui-git-clients-git-repository-viewers-for-linux/) to accomplish this.)
 

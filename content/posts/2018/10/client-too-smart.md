@@ -6,7 +6,7 @@ subtitle: "The email client, that is"
 description: "Pretty emails don’t work so well in an Outlook-centric business world."
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
-lastmod: 2020-11-26T08:10:00-06:00
+lastmod: 2022-02-12T12:48:00-06:00
 discussionId: "2018-10-client-too-smart"
 featured_image: "letters-envelope-on-color-strips-4029672_5376x3648.jpg"
 featured_image_width: 5376
@@ -30,7 +30,7 @@ Why? Because Outlook, by default, will block images from senders who haven't alr
 
 And, interestingly enough, it's really not because Outlook is too dumb to handle the images. Rather, by design, it's too smart to do so.
 
-That's because [there are a number of less-than-desirable things that can happen](https://security.stackexchange.com/questions/7489/why-would-someone-want-to-block-images-in-email) if [an email client lets images come in without putting up a fuss](https://kb.wisc.edu/office365/page.php?id=67394). Also, [Outlook isn't the only one by any means](https://litmus.com/blog/the-ultimate-guide-to-email-image-blocking), but its [near-ubiquity due to the growth of Office 365](https://www.cio.com/article/2992546/office-software/why-companies-are-switching-from-google-apps-to-office-365.html), especially among the big-dollar companies that you probably want to reach, makes it the reason why you need to pay attention to this.
+That's because [there are a number of less-than-desirable things that can happen](https://security.stackexchange.com/questions/7489/why-would-someone-want-to-block-images-in-email) if [an email client lets images come in without putting up a fuss](https://kb.wisc.edu/office365/page.php?id=67394). Also, [Outlook isn't the only one by any means](https://litmus.com/blog/the-ultimate-guide-to-email-image-blocking), but its [near-ubiquity due to the growth of Office 365](https://www.cio.com/article/242385/why-companies-are-switching-from-google-apps-to-office-365.html), especially among the big-dollar companies that you probably want to reach, makes it the reason why you need to pay attention to this.
 
 Let's say you, or your ad agency, decide to make a really nice-looking, colorful email. We're not even talking video embeds here, but rather just some colorful still images. In some clients, especially on mobile devices, that might work. But not with Outlook for either Windows or Mac. So, instead of the recipient seeing what you hoped for:
 

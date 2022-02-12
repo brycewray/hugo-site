@@ -46,7 +46,7 @@ And, oddly enough: I was able to do so chiefly because of my experience with [Ga
 
 ### Webmentions
 
-During the first run with *mostly* .11ty.js templating, I replaced [webmentions](https://css-tricks.com/indieweb-and-webmentions) by going back to [Talkyard](https://talkyard.io)-based commenting but, on returning (briefly) to all-Nunjucks templating, I just went without any comments-displaying method whatsoever.
+During the first run with *mostly* .11ty.js templating, I replaced [webmentions](https://css-tricks.com/indieweb-and-webmentions) by going back to [Talkyard](https://www.talkyard.io)-based commenting but, on returning (briefly) to all-Nunjucks templating, I just went without any comments-displaying method whatsoever.
 
 To be sure, it's not like this is a widely read site on which vast hordes of visitors breathlessly await comments. (For the sake of a suffering humanity, I'd hope there *is* no such site, for that matter.) Still, if you search the web for any kind words about *not* providing some commenting in a blog or similar, personal site, you won't find many. So I decided any all-.11ty.js approach would have to allow for webmentions, too. Unfortunately, again: I could find no code in that respect.[^WMJS]
 
