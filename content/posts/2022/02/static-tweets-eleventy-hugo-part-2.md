@@ -6,7 +6,7 @@ subtitle: "Getting similar data, but from a safer source"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
 date: 2022-02-11T14:43:00-06:00
-#lastmod:
+lastmod: 2022-02-12T07:37:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -37,9 +37,9 @@ Using `stweetv2` requires you to have a Twitter Developer account and supply you
 
 > .&nbsp; .&nbsp; . you’ll have to supply .&nbsp; .&nbsp;. [the credentials] to your site host, so it can access them during each build (*e.g.*, here are instructions for [Netlify](https://docs.netlify.com/configure-builds/environment-variables/), [Vercel](https://vercel.com/docs/concepts/projects/environment-variables), and [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/build-configuration#environment-variables)).
 
-But, for Hugo, the potential hang-up is in *local* development, where you obviously want to confirm that everything works *before* you try building your site on the host. Unlike how many JavaScript-based [SSGs](https://jamstack.org/generators/) work, Hugo doesn’t recognize content in a project’s `dot.env` file, which is typically where you’d store sensitive variables like the `BEARER_TOKEN` variable that `stweetv2` must access in order to “talk to” Twitter’s v.2 Developer API. 
+But, for Hugo, the potential hang-up is in *local* development, where you obviously want to confirm that everything works *before* you try building your site on the host. Unlike how many JavaScript-based [SSGs](https://jamstack.org/generators/) work, Hugo doesn’t recognize content in a project’s `.env` file, which is typically where you’d store sensitive variables like the `BEARER_TOKEN` variable that `stweetv2` must access in order to “talk to” Twitter’s v.2 Developer API.
 
-Fortunately, after I asked on Hugo’s Discourse forum about how to handle this in local development, I [received some great help](https://discourse.gohugo.io/t/keeping-api-keys-secret-on-github-using-a-env-file/25283/14). Here’s the bottom line: if you’re using macOS or Linux (including Linux on Windows, such as through [WSL](https://docs.microsoft.com/en-us/windows/wsl/install)), install the [`direnv`](https://direnv.net/) shell extension. `direnv` injects the required `BEARER_TOKEN` variable (and any others you may wish to store in `dot.env`) during your local development process. Once `direnv` is up and running, you’ll be good to go with adding `stweetv2` to your Hugo site.
+Fortunately, after I asked on Hugo’s Discourse forum about how to handle this in local development, I [received some great help](https://discourse.gohugo.io/t/keeping-api-keys-secret-on-github-using-a-env-file/25283/14). Here’s the bottom line: if you’re using macOS or Linux (including Linux on Windows, such as through [WSL](https://docs.microsoft.com/en-us/windows/wsl/install)), install the [`direnv`](https://direnv.net/) shell extension. `direnv` injects the required `BEARER_TOKEN` variable (and any others you may wish to store in `.env`) during your local development process. Once `direnv` is up and running, you’ll be good to go with adding `stweetv2` to your Hugo site.
 
 What if you’re developing in Windows without using WSL? Unfortunately, `direnv` isn’t available for that setup. Instead, you can write a [shell script](https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/) for your usual Hugo development command—*e.g.*, `hugo server`—with Hugo’s `env` command to add the `BEARER_TOKEN` at launch, as [explained](https://gohugo.io/getting-started/configuration/#configure-with-environment-variables) in the Hugo documentation. (**Just make sure you don’t commit the shell script**, of course!) For example, here’s one with a fake `BEARER_TOKEN` of `123456789a`:
 
