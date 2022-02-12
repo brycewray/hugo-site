@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Eleventy"
 description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."
 author: Bryce Wray
 date: 2020-04-28T16:35:00-05:00
-lastmod: 2021-05-16T10:27:00-05:00
+lastmod: 2022-02-12T10:45:00-06:00
 discussionId: "2020-04-webmentions-three-ssgs-2"
 featured_image: "pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg"
 featured_image_width: 4401
@@ -28,7 +28,7 @@ Having covered the purpose of this series, the [IndieWeb](https://indieweb.org),
 
 For two reasons, we start with the [Eleventy repo](https://github.com/brycewray/eleventy_bundler). First, it's the repo that powered this site as of the time I wrote this.[^toSolo] Second, it's where I initially added webmentions in their barest form---only so-called "mentions"---and then, more recently, enhanced their appearances. I refer to it here only as the *Eleventy repo* rather than, as usual, the *Eleventy/[webpack](https://webpack.js.org) repo*, because the addition of webpack really had nothing whatsoever to do with this particular process.
 
-[^toSolo]: Not long after initially publishing this series, I [converted the site](/posts/2020/going-solo-eleventy/) to a [webpack-less repo](https://github.com/brycewray/eleventy_solo).
+[^toSolo]: Not long after initially publishing this series, I [converted the site](/posts/2020/05/going-solo-eleventy/) to a [webpack-less repo](https://github.com/brycewray/eleventy_solo).
 
 ## Eleventy: Fetching webmentions
 
