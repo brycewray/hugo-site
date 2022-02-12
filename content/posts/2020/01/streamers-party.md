@@ -6,7 +6,7 @@ subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."
 author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
-lastmod: 2021-02-12T11:45:00-06:00
+lastmod: 2022-02-12T11:45:00-06:00
 discussionId: "2020-01-streamers-party"
 featured_image: streaming_glenn-carstens-peters-EOQhsfFBhRk-unsplash_4019x2674.jpeg #NOTE: Never change that filename to ".jpg"
 featured_image_width: 4019
