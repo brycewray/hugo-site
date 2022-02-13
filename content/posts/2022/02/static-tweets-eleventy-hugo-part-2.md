@@ -6,7 +6,7 @@ subtitle: "Getting similar data, but from a safer source"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
 date: 2022-02-11T14:43:00-06:00
-lastmod: 2022-02-12T07:37:00-06:00
+lastmod: 2022-02-13T07:29:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -98,11 +98,11 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
       {{ $entities := . }}
       {{ range $entities.mentions }}
         {{ $mentions := . }}
-        {{ $text = replace $text (printf "@%s" $mentions.username) (printf "<a href='https://twitter.com/%s' target='_blank' ref='noopener'>@%s</a>" $mentions.username $mentions.username) }}
+        {{ $text = replace $text (printf "@%s" $mentions.username) (printf "<a href='https://twitter.com/%s' target='_blank' rel='noopener'>@%s</a>" $mentions.username $mentions.username) }}
       {{ end }}
       {{ range $entities.hashtags }}
         {{ $hashtags := . }}
-        {{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' ref='noopener'>#%s</a>" $hashtags.tag $hashtags.tag) }}
+        {{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' rel='noopener'>#%s</a>" $hashtags.tag $hashtags.tag) }}
       {{ end }}
       {{ range $entities.urls }}
         {{ $urls := . }}
@@ -134,12 +134,12 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 
 <blockquote class="tweet-card">
   <div class="tweet-header">
-    <a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" ref="noopener">
+    <a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">
       <img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" />
     </a>
     <div class="tweet-author">
-      <a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" ref="noopener">{{ $name }}</a>
-      <a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" target="_blank" ref="noopener">@{{ $username }}</a>
+      <a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" rel="noopener">{{ $name }}</a>
+      <a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">@{{ $username }}</a>
     </div>
   </div>
   <p class="tweet-body">
@@ -155,7 +155,7 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
     {{ end }}
   {{ end }}
   <div class="tweet-footer">
-    <a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' target='_blank' ref='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+    <a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
   </div>
 </blockquote>
 ```
