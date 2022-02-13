@@ -8,6 +8,9 @@ date: 2022-01-12T16:16:00-06:00
 #lastmod:
 discussionId: "2022-01-should-you-adopt-tailwind-3"
 ext_canonical: "https://www.stackbit.com/blog/should-you-adopt-tailwind-3/"
+ext_source: "the Stackbit blog"
+ext_url: "https://www.stackbit.com/"
+ext_copyright: "Stackbit"
 featured_image: "die-dice-three_mike-szczepanski-MnSYYYqunXA-unsplash_2400x1531.jpg"
 featured_image_width: 2400
 featured_image_height: 1531
