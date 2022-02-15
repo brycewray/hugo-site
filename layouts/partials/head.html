@@ -74,10 +74,14 @@
     {{/* CSS/SCSS */ -}}
     <!--
     <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    -->
     <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    -->
     {{- if hugo.IsProduction -}}
+      {{- $options := (dict "targetPath" "css/fonts_PublicSans.css") -}}{{/* DO NOT MINIFY VIA SASS */}}
+      {{- $css := resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $options | fingerprint "md5" -}}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
       {{- if eq .Site.Params.Host "CFP" -}}
         {{ with resources.Get "scss/index.scss" | resources.ToCSS }}{{/* DO NOT MINIFY VIA SASS */}}
           <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
@@ -88,6 +92,10 @@
         {{ end }}
       {{- end -}}
     {{- else -}}
+      {{- $options := (dict "targetPath" "css/fonts_PublicSans.css") -}}
+      {{- $css := resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $options -}}
+      <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+      <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
       {{ with resources.Get "scss/index.scss" | resources.ToCSS }}
         <style>{{- .Content | safeCSS -}}</style>
       {{ end }}
