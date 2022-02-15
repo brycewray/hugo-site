@@ -68,7 +68,7 @@ This creates a [shortcode](https://11ty.dev/docs/shortcodes/) called `tweet` tha
 ```twig
 {% tweet "1487140202141425673" %}
 ```
- 
+
 ### In Hugo
 
 To get a safe-but-nice-looking tweet embed in Hugo, we’ll add a [shortcode](https://gohugo.io/content-management/shortcodes/) which borrows heavily from one described in the excellent article, “[Update: Rendering Static Tweets](https://hugo.md/post/update-rendering-static-tweets/)” by a [developer who *also* is named Hugo](https://twitter.com/hugojmd). As it turns out, there is a *public* Twitter API, too, and this Hugo shortcode will extract data from it in much the same way as the Eleventy plugin does from the private developer API.
@@ -97,12 +97,12 @@ Now, that’s certainly not terrible, and it does give you the essence of the me
 {{ if isset $json "entities" }}
   {{ if isset $json.entities "user_mentions"  }}
     {{ range $user := $json.entities.user_mentions}}
-      {{ $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' target='_blank' ref='noopener'>@%s</a>" $user.screen_name $user.screen_name) }}
+      {{ $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' target='_blank' rel='noopener'>@%s</a>" $user.screen_name $user.screen_name) }}
     {{ end }}
   {{ end }}
   {{ if isset $json.entities "hashtags"}}
     {{ range $hashtags := $json.entities.hashtags }}
-      {{ $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' ref='noopener'>#%s</a>" $hashtags.text $hashtags.text) }}
+      {{ $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' rel='noopener'>#%s</a>" $hashtags.text $hashtags.text) }}
     {{ end }}
   {{ end }}
   {{ if isset $json.entities "media"  }}
@@ -112,7 +112,7 @@ Now, that’s certainly not terrible, and it does give you the essence of the me
   {{ end }}
   {{ if isset $json.entities "urls"  }}
     {{ range $url := $json.entities.urls}}
-      {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' ref='noopener'>%s</a>" $url.url $url.display_url) }}
+      {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $url.url $url.display_url) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -136,7 +136,7 @@ Now, that’s certainly not terrible, and it does give you the essence of the me
     {{ end }}
   {{ end }}
   <div class="tweet-footer">
-    <a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' class='tweet-date' target='_blank' ref='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+    <a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
   </div>
 </blockquote>
 ```
@@ -152,7 +152,7 @@ And, just as we did with the Eleventy shortcode, we invoke this Hugo `stweet` sh
 
 ## Them’s the breaks?
 
-There are always important considerations when one’s site must trust the ongoing availability of a third-party data source. 
+There are always important considerations when one’s site must trust the ongoing availability of a third-party data source.
 
 - As of the initial publication of this post, `eleventy-plugin-embed-tweet` uses v.1.1 of the Twitter API. However, Twitter is [pushing migration to v.2](https://developer.twitter.com/en/docs/twitter-api), so it’s reasonable to assume the earlier version will be retired at some point. If so, that obviously would break anything depending on v.1.x.[^6]
 - Then there’s that public API which enables the Hugo `stweet` shortcode. Although it’s long in the tooth in internet time—I found other articles from years ago[^7] that mentioned it—I’ve seen nothing indicating that Twitter intends to retire it.[^8] That doesn’t prove it *won’t* happen, though.[^9]
