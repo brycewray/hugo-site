@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
-  {{ partial "head.html" . }}
+  {{ partialCached "head.html" . }}
   <body>
-    {{ partial "header.html" . }}
+    {{ partialCached "header.html" . }}
     <div id="content-main-hugo">
     {{- block "main" . -}}{{- end }}
     </div>
-    {{- partial "footer.html" . }}
+    {{- partialCached "footer.html" . }}
     {{- if hugo.IsProduction -}}
       {{- if eq .Site.Params.Host "CFP" -}}
         <!-- Cloudflare Web Analytics -->
