@@ -72,16 +72,16 @@
     <link rel="alternate" title="News feed - JSON" type="application/feed+json" href="https://www.brycewray.com/index.json" />
 
     {{/* CSS/SCSS */ -}}
-    <!--
     <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    -->
+    <!--
     <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    -->
     {{- if hugo.IsProduction -}}
-      {{- $options := (dict "targetPath" "css/fonts_PublicSans.css") -}}{{/* DO NOT MINIFY VIA SASS */}}
-      {{- $css := resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $options | fingerprint "md5" -}}
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+      {{- $optionsFontsInter := (dict "targetPath" "css/fonts_Inter.css") -}}{{/* DO NOT MINIFY VIA SASS */}}
+      {{- $cssFontsInter := resources.Get "scss/_fonts_Inter.scss" | resources.ToCSS $optionsFontsInter | fingerprint "md5" -}}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsInter.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsInter.RelPermalink }}" type="text/css">
       {{- if eq .Site.Params.Host "CFP" -}}
         {{ with resources.Get "scss/index.scss" | resources.ToCSS }}{{/* DO NOT MINIFY VIA SASS */}}
           <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
@@ -91,14 +91,22 @@
           <style>{{- .Content | safeCSS -}}</style>
         {{ end }}
       {{- end -}}
+      {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}{{/* DO NOT MINIFY VIA SASS */}}
+      {{- $cssInterVF := resources.Get "scss/_intervf.scss" | resources.ToCSS $optionsInterVF | fingerprint "md5" -}}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssInterVF.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssInterVF.RelPermalink }}" type="text/css">
     {{- else -}}
-      {{- $options := (dict "targetPath" "css/fonts_PublicSans.css") -}}
-      {{- $css := resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $options -}}
-      <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-      <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+      {{- $optionsFontsInter := (dict "targetPath" "css/fonts_Inter.css") -}}
+      {{- $cssFontsInter := resources.Get "scss/_fonts_Inter.scss" | resources.ToCSS $optionsFontsInter -}}
+      <link rel="preload" as="style" href="{{ $cssFontsInter.RelPermalink }}">
+      <link rel="stylesheet" href="{{ $cssFontsInter.RelPermalink }}" type="text/css">
       {{ with resources.Get "scss/index.scss" | resources.ToCSS }}
         <style>{{- .Content | safeCSS -}}</style>
       {{ end }}
+      {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}{{/* DO NOT MINIFY VIA SASS */}}
+      {{- $cssInterVF := resources.Get "scss/_intervf.scss" | resources.ToCSS $optionsInterVF -}}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssInterVF.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssInterVF.RelPermalink }}" type="text/css">
     {{- end -}}
 
     {{- if hugo.IsProduction -}}
