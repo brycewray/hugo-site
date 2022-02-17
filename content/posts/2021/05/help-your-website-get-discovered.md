@@ -23,7 +23,7 @@ With that bad news is some accompanying good news: if you're willing to put in a
 
 ## Three keys to getting discovered
 
-Back in the late 1990s, before Google swallowed up the web search space and there still were *numerous* prominent search engines out there, you actually would have to **submit** your site to each of them for inclusion. But those days are long gone and now, to invoke a "[Russian Reversal](https://en.wikipedia.org/wiki/In_Soviet_Russia)"-ish line, "search engines find *you*." Or, at least, you hope they do.
+Back in the late 1990s, before Google swallowed up the web search space and there still were *numerous* prominent search engines out there, you actually would have to **submit** your site to each of them for inclusion. But those days are long gone and now, to invoke a "[Russian Reversal](https://en.wikipedia.org/wiki/In_Soviet_Russia)”-ish line, "search engines find *you*." Or, at least, you hope they do.
 
 Search engine algorithms come and go, but you can safely assume that  three items are crucial to how well, and how frequently, search engines discover your site: **content**, **performance**, and the combination of **feeds** and **sitemaps**.
 
@@ -35,7 +35,7 @@ Do you even have to write all that well? It surely helps, but even a casual chec
 
 ### Performance
 
-I already addressed this subject in last year's "[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website)"; and, where the Google-critical Core Web Vitals are concerned, you should rely on the proverbial horse's mouth (*e.g.*, "[More time, tools, and details on the page experience update](https://developers.google.com/search/blog/2021/04/more-details-page-experience)"; "[Core Web Vitals &amp; Page Experience FAQs](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021)"; and, most especially, "[Web Vitals](https://web.dev/vitals/)”).
+I already addressed this subject in last year's "[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website)”; and, where the Google-critical Core Web Vitals are concerned, you should rely on the proverbial horse's mouth (*e.g.*, "[More time, tools, and details on the page experience update](https://developers.google.com/search/blog/2021/04/more-details-page-experience)”; "[Core Web Vitals &amp; Page Experience FAQs](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021)”; and, most especially, "[Web Vitals](https://web.dev/vitals/)”).
 
 ### Feeds and sitemaps
 
