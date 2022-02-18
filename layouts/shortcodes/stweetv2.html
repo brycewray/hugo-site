@@ -85,8 +85,10 @@
     {{ with $json.includes }}
       {{ $includes := . }}
       {{ range $includes.media }}
-        <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-img" />
-        {{/* This will need to be in the main blockquote for multiple included images */}}
+        {{ if not (eq .type "animated_gif" ) }}
+          <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-img" />
+          {{/* This will need to be in the main blockquote for multiple included images */}}
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
