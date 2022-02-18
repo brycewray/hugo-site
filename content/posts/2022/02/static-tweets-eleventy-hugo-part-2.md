@@ -6,7 +6,7 @@ subtitle: "Getting similar data, but from a safer source"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
 date: 2022-02-11T14:43:00-06:00
-lastmod: 2022-02-13T07:29:00-06:00
+lastmod: 2022-02-18T11:24:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -37,7 +37,7 @@ Using `stweetv2` requires you to have a Twitter Developer account and supply you
 
 > .&nbsp; .&nbsp; . you’ll have to supply .&nbsp; .&nbsp;. [the credentials] to your site host, so it can access them during each build (*e.g.*, here are instructions for [Netlify](https://docs.netlify.com/configure-builds/environment-variables/), [Vercel](https://vercel.com/docs/concepts/projects/environment-variables), and [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/build-configuration#environment-variables)).
 
-But, for Hugo, the potential hang-up is in *local* development, where you obviously want to confirm that everything works *before* you try building your site on the host. Unlike how many JavaScript-based [SSGs](https://jamstack.org/generators/) work, Hugo doesn’t recognize content in a project’s `.env` file, which is typically where you’d store sensitive variables like the `BEARER_TOKEN` variable that `stweetv2` must access in order to “talk to” Twitter’s v.2 Developer API.
+But, for Hugo, the potential hang-up is in *local* development, where you obviously want to confirm that everything works *before* you try building your site on the host. Unlike how many JavaScript-based [SSGs](https://jamstack.org/generators/) work, Hugo doesn’t recognize content in a project’s `.env` file, which is typically where you’d store sensitive variables like the `BEARER_TOKEN` variable that `stweetv2` must access in order to “talk to” Twitter’s v.2 Developer API. 
 
 Fortunately, after I asked on Hugo’s Discourse forum about how to handle this in local development, I [received some great help](https://discourse.gohugo.io/t/keeping-api-keys-secret-on-github-using-a-env-file/25283/14). Here’s the bottom line: if you’re using macOS or Linux (including Linux on Windows, such as through [WSL](https://docs.microsoft.com/en-us/windows/wsl/install)), install the [`direnv`](https://direnv.net/) shell extension. `direnv` injects the required `BEARER_TOKEN` variable (and any others you may wish to store in `.env`) during your local development process. Once `direnv` is up and running, you’ll be good to go with adding `stweetv2` to your Hugo site.
 
@@ -134,12 +134,12 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 
 <blockquote class="tweet-card">
   <div class="tweet-header">
-    <a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">
+    <a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" ref="noopener">
       <img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" />
     </a>
     <div class="tweet-author">
-      <a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" rel="noopener">{{ $name }}</a>
-      <a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">@{{ $username }}</a>
+      <a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" ref="noopener">{{ $name }}</a>
+      <a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" target="_blank" ref="noopener">@{{ $username }}</a>
     </div>
   </div>
   <p class="tweet-body">
@@ -149,8 +149,10 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
     {{ with $json.includes }}
       {{ $includes := . }}
       {{ range $includes.media }}
-        <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-img" />
-        {{/* This will need to be in the main blockquote for multiple included images */}}
+        {{ if not (eq .type "animated_gif" ) }}
+          <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-img" />
+          {{/* This will need to be in the main blockquote for multiple included images */}}
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -159,6 +161,9 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
   </div>
 </blockquote>
 ```
+
+**Update, 2022-02-18**: I revised this slightly after learning that the Twitter API doesn’t quite supply all the data one needs to display animated GIFs. (See “[Gems in the rough #14](/posts/2022/02/gems-in-rough-14/)” for more information.)
+{.yellowBox}
 
 ## Testing with `cURL`
 

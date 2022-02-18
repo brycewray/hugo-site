@@ -5,7 +5,7 @@ subtitle: "Different choices on CSS and AVIFs"
 description: "Why I’ve recently backtracked on configurations for CSS and image-handling."
 author: Bryce Wray
 date: 2022-01-04T13:09:00-06:00
-lastmod: 2022-02-01T15:55:00-06:00
+lastmod: 2022-02-18T12:13:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-01-gems-in-rough-13"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -35,6 +35,9 @@ The bottom line: I’m once again using internal CSS here and probably will keep
 {.yellowBox}
 
 **Further update, 2022-02-01**: The actual solution was obvious---give up web fonts. Thus, today (at least for now), I did, and re-reverted the site to internal CSS *without* "CLS hell." We'll see how that works.
+{.yellowBox}
+
+**Still further update, 2022-02-18**: "After further review," I'm now back to web fonts **and** back to internal CSS. (Well, *mostly* internal CSS.) I explain it in [this section](/posts/2022/02/gems-in-rough-14/#making-web-fonts-work-with-internal-css) of the [next](/posts/2022/02/gems-in-rough-14/) “Gems in the rough.”
 {.yellowBox}
 
 ## A wave-off on AVIFs
