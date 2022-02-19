@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2021-05-30T09:26:00-05:00
+lastmod: 2022-02-19T13:20:00-06:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -66,7 +66,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 ```jinja
 ---json
 {
-  "permalink": "/index.json",
+  "permalink": "/index.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "My Site Title",
