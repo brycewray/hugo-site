@@ -6,7 +6,7 @@ subtitle: "Where your site should “live”"
 description: "After suggesting how a non-geek could most easily have a website, I now offer thoughts on the site’s hosting."
 author: Bryce Wray
 date: 2020-09-26T13:55:00-05:00
-lastmod: 2020-10-01T06:45:00-05:00
+lastmod: 2022-02-19T12:54:00-06:00
 #draft: true
 discussionId: "2020-09-normal-persons-guide-static-website-hosting"
 featured_image: "tim-mossholder-GOMhuCj-O9w-unsplash_9000x6000.jpg"
@@ -63,7 +63,7 @@ Very simply, you can't go wrong with [Netlify](https://netlify.com). It makes ge
 
 #### Weaknesses
 
-- Of these three vendors, only Netlify gives its free tier a lower-performance CDN setup. The fewer points of presence (POPs) a CDN has, the less quickly it will deliver content to your visitors; Netlify's free-tier CDN offering has only a handful to cover the entire world. (To get the only other CDN package from Netlify, the enterprise-class version with many more POPs and higher-quality connectivity, you'll be in for at least $100 a month.)
+- Of these three vendors, only Netlify gives its free tier a lower-performance CDN setup. The fewer points of presence (PoPs) a CDN has, the less quickly it will deliver content to your visitors; Netlify's free-tier CDN offering has only a handful to cover the entire world. (To get the only other CDN package from Netlify, the enterprise-class version with many more PoPs and higher-quality connectivity, you'll be in for at least $100 a month.)
 - The free tier allows only 300 build minutes per month---although there are geeky ways to get around that, as I explained in "[O say can you CI CD](/posts/2020/06/o-say-can-you-ci-cd/)?" You might not care about that for a while but, down the line, it could become an irritant.
 - To get the best performance out of Netlify, you're highly encouraged to use its name servers rather than your chosen DNS provider's. Netlify is the only one of these three which works that way. You may not care, if you plan on sticking to Netlify from here on; but, if you want to try other vendors, it's one more step at transition time and can delay the switchover at the worst possible time.
 

@@ -5,7 +5,7 @@ subtitle: "Talking out, and about, my mixed feelings"
 description: "It’s perhaps not so much “love/hate” as it is geeky curiosity combined with an old guy’s impatience."
 author: Bryce Wray
 date: 2021-10-22T14:00:00-05:00
-lastmod: 2021-10-26T12:56:00-05:00
+lastmod: 2022-02-19T12:54:00-06:00
 discussionId: "2021-10-my-website-cloudflare-year-later"
 featured_image: "hans-peter-gauster-3y1zF4hIPCg-unsplash_5988x4000.jpg"
 featured_image_width: 5988
@@ -27,11 +27,11 @@ Here are some of my current feelings about Cloudflare Pages---what keeps me comi
 
 You know the old line about "[standing on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)." There are no truer words when it comes to Cloudflare Pages, which benefits greatly from the platform on which it rides.
 
-There's no question that what I like the most about using CFP is Cloudflare's global content delivery network (CDN). A CDN is only as good as how many points of presence (POPs) it has and how well they work. Cloudflare has [*hundreds* of POPs worldwide](https://www.cloudflare.com/network/), with more coming online all the time, and continues to [put ever-greater quantities of customers’ content](https://stratechery.com/2021/cloudflare-on-the-edge/) out on the "edge." This translates to faster performance, regardless of where one's visitors may be.
+There's no question that what I like the most about using CFP is Cloudflare's global content delivery network (CDN). A CDN is only as good as how many points of presence (PoPs) it has and how well they work. Cloudflare has [*hundreds* of PoPs worldwide](https://www.cloudflare.com/network/), with more coming online all the time, and continues to [put ever-greater quantities of customers’ content](https://stratechery.com/2021/cloudflare-on-the-edge/) out on the "edge." This translates to faster performance, regardless of where one's visitors may be.
 
-By comparison, Vercel's [Edge Network](https://vercel.com/docs/concepts/edge-network/overview), basically a [collection of other vendors’ POPs](https://vercel.com/docs/concepts/edge-network/regions), is impressive for its much smaller size but, as I noted in last year's ["Forward PaaS" article](/posts/2020/10/forward-paas/) about Cloudflare Workers sites (quoting an email reply I'd given to a reader):
+By comparison, Vercel's [Edge Network](https://vercel.com/docs/concepts/edge-network/overview), basically a [collection of other vendors’ PoPs](https://vercel.com/docs/concepts/edge-network/regions), is impressive for its much smaller size but, as I noted in last year's ["Forward PaaS" article](/posts/2020/10/forward-paas/) about Cloudflare Workers sites (quoting an email reply I'd given to a reader):
 
-> .&nbsp;.&nbsp;. it's hard to ignore that Cloudflare's POP count vastly outdoes that of Vercel's. Therefore, as long as I have readers in as many parts of the globe as the analytics keep telling me I do, I feel obligated to put the content out there in a way that makes their experience as pleasant (or, at least, as non-laggy) as possible.
+> .&nbsp;.&nbsp;. it's hard to ignore that Cloudflare's PoP count vastly outdoes that of Vercel's. Therefore, as long as I have readers in as many parts of the globe as the analytics keep telling me I do, I feel obligated to put the content out there in a way that makes their experience as pleasant (or, at least, as non-laggy) as possible.
 
 ### Up-front Cloudflare Workers
 

@@ -5,7 +5,7 @@ subtitle: "A possible game-changer emerges"
 description: "I take a look at a new website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
 date: 2021-01-27T12:30:00-06:00
-lastmod: 2021-02-12T17:35:00-06:00
+lastmod: 2022-02-19T12:54:00-06:00
 #draft: false
 discussionId: "2021-01-beta-testing-cloudflare-pages"
 featured_image: "markus-spiske-KeFyYzxqmH0-unsplash_5760x3840.jpg"
@@ -18,7 +18,7 @@ featured_image_caption: |
 
 [Cloudflare](https://cloudflare.com) announced a few weeks ago in a [blog post](https://blog.cloudflare.com/cloudflare-pages/) that it was moving into the build-your-website-on-the-[Jamstack](https://jamstack.org) arena currently inhabited by the likes of [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com), and, more recently, [DigitalOcean](https://www.digitalocean.com/products/app-platform/). Hosts like these build your website automatically every time you push changes to a connected online [Git](https://git-scm.com) repository, rather than forcing you to put together your own build chain as is required by the slightly older [Cloudflare Workers Sites](https://workers.cloudflare.com/sites) as well as Google's [Firebase](https://firebase.google.com).
 
-That said, it's obvious from looking at the [documentation](https://developers.cloudflare.com/pages/) that Cloudflare Pages is built on a lot of the same "plumbing" as are Workers Sites. That's good news. Workers Sites, thanks to Cloudflare's [Workers KV storage](https://developers.cloudflare.com/workers/learning/how-kv-works), put websites’ content out on the network's worldwide "edge" with Cloudflare's [hundreds of points of presence (POPs)](https://www.cloudflare.com/network/) and, thus, enhance those sites’ performance.
+That said, it's obvious from looking at the [documentation](https://developers.cloudflare.com/pages/) that Cloudflare Pages is built on a lot of the same "plumbing" as are Workers Sites. That's good news. Workers Sites, thanks to Cloudflare's [Workers KV storage](https://developers.cloudflare.com/workers/learning/how-kv-works), put websites’ content out on the network's worldwide "edge" with Cloudflare's [hundreds of points of presence (PoPs)](https://www.cloudflare.com/network/) and, thus, enhance those sites’ performance.
 
 Intrigued by what I perceived as the promise of Cloudflare Pages (hereafter abbreviated as *CFP*), I signed up for its beta program on the day of the announcement; and, earlier this week, I finally gained access. Here's a summary of my first impressions. Please keep in mind as you read these, as well as any other such preliminary reviews you may find right now, that **this product is in beta**.
 

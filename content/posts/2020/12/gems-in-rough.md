@@ -5,7 +5,7 @@ subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
 date: 2020-12-21T12:10:00-06:00
-lastmod: 2021-09-02T12:28:00-05:00
+lastmod: 2022-02-19T12:54:00-06:00
 #draft: false
 discussionId: "2020-12-gems-in-rough"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -43,19 +43,19 @@ In sum&nbsp;.&nbsp;.&nbsp;.
 
 Nova is really good, pretty, and friendly, but you pay for it, while VS Code is free. VS Code is a real integrated development environment (IDE), while Nova is a very cool and fully featured code editor that does *some* IDE stuff but not nearly as much, or as well, as VS Code. (*Still*, that 30-day trial offer for Nova is worth a look if you're a Mac user. It might just grow on you, especially if you're not already that into VS Code.)
 
-## CDNs: my POPs can whip&nbsp;your&nbsp;POPs
+## CDNs: my PoPs can whip&nbsp;your&nbsp;PoPs
 
 As the popularity of SSG-built websites grows, your choices for hosting vendors grow as well. Each of the leading [SSG-savvy hosting vendors](/posts/2020/09/normal-persons-guide-static-website-hosting/) offers some sort of [content delivery network](https://en.wikipedia.org/wiki/content_delivery_network) (CDN) as part of its package, even on its free tier. This is a major advantage over "old-guard" hosting vendors, many of whom charge extra for even the barest CDN capability if they offer it at all.[^cfCDN]
 
 [^cfCDN]: To be fair, you can put *any* site---even a regular, non-SSG-built one---behind a free Cloudflare account, but methods for doing that don't always provide the best efficiency. Explaining that is best left for another "Gems in the rough," assuming there *is* one.
 
-However, these free-tier CDN offerings vary widely. Here's the main thing to consider: assuming more or less equal performance otherwise, how many points of presence (POPs) does each vendor's free-tier CDN service give you?
+However, these free-tier CDN offerings vary widely. Here's the main thing to consider: assuming more or less equal performance otherwise, how many points of presence (PoPs) does each vendor's free-tier CDN service give you?
 
-- [Netlify](https://netlify.com) comes up last on that score, with only six POPs for the whole world; and, if my own testing is any guidance, they're not particularly *fast* POPs, at that. Among the vendors I'm discussing here, only Netlify gives its free-tier users the short end of the CDN stick as compared to the more advanced CDN capabilities its paying users receive.
+- [Netlify](https://netlify.com) comes up last on that score, with only six PoPs for the whole world; and, if my own testing is any guidance, they're not particularly *fast* PoPs, at that. Among the vendors I'm discussing here, only Netlify gives its free-tier users the short end of the CDN stick as compared to the more advanced CDN capabilities its paying users receive.
 - In the middle tier, you'll find [Vercel](https://vercel.com) and [Render](https://render.com).
-	- Vercel has been [making big improvements](https://vercel.com/blog/new-edge-dev-infrastructure) in how it delivers content, but still has only a relatively [small number of POP locations](https://vercel.com/docs/edge-network/overview) worldwide. Nonetheless, whatever Vercel is doing with its Edge Network is producing extremely impressive results. You might say that, for a free-tier CDN, Vercel's Edge Network gets the most out of the fewest POPs.
-	- Render is a work in progress: it initially relied on the [Stackpath](https://stackpath.com) CDN but, after [deciding it could do better](https://render-community.slack.com/archives/CBULRG4LV/p1600883128002000), [has chosen](https://community.render.com/t/cdn-vendor-change-timing-and-choice/71) to switch to [Fastly](https://fastly.com), a CDN vendor which [prides itself](https://www.fastly.com/blog/why-having-more-pops-isnt-always-better) on wringing a surprising amount of performance out of a relatively modest number of POPs. It'll be a while before the transition is complete, so the result remains to be seen where Render is concerned.
-- The winners on this score for now, in my view, are [Cloudflare Workers Sites](https://workers.cloudflare.com) and [DigitalOcean App Platform](https://digitalocean.com/products/app-platform). Each uses [Cloudflare](https://cloudflare.com), with its hundreds of POPs; and, of course, the same will be true for the upcoming [Cloudflare Pages](https://blog.cloudflare.com/cloudflare-pages/).
+	- Vercel has been [making big improvements](https://vercel.com/blog/new-edge-dev-infrastructure) in how it delivers content, but still has only a relatively [small number of PoP locations](https://vercel.com/docs/edge-network/overview) worldwide. Nonetheless, whatever Vercel is doing with its Edge Network is producing extremely impressive results. You might say that, for a free-tier CDN, Vercel's Edge Network gets the most out of the fewest PoPs.
+	- Render is a work in progress: it initially relied on the [Stackpath](https://stackpath.com) CDN but, after [deciding it could do better](https://render-community.slack.com/archives/CBULRG4LV/p1600883128002000), [has chosen](https://community.render.com/t/cdn-vendor-change-timing-and-choice/71) to switch to [Fastly](https://fastly.com), a CDN vendor which [prides itself](https://www.fastly.com/blog/why-having-more-pops-isnt-always-better) on wringing a surprising amount of performance out of a relatively modest number of PoPs. It'll be a while before the transition is complete, so the result remains to be seen where Render is concerned.
+- The winners on this score for now, in my view, are [Cloudflare Workers Sites](https://workers.cloudflare.com) and [DigitalOcean App Platform](https://digitalocean.com/products/app-platform). Each uses [Cloudflare](https://cloudflare.com), with its hundreds of PoPs; and, of course, the same will be true for the upcoming [Cloudflare Pages](https://blog.cloudflare.com/cloudflare-pages/).
 
 ## When you change hosts
 

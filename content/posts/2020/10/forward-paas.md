@@ -6,7 +6,7 @@ subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
-lastmod: 2020-12-12T13:15:00-06:00
+lastmod: 2022-02-19T12:54:00-06:00
 discussionId: "2020-10-forward-paas"
 featured_image: "jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg"
 featured_image_width: 4032
@@ -43,7 +43,7 @@ There's another minor issue, but it's also fairly easily resolved although it to
 
 Since I wasn't quite sure upfront how this would work for me, I bought only one month of the Workers Bundled plan (before the announcement of the free tier) to give the whole thing a spin. The performance numbers, both on this site and a special testing-only site I have on multiple hosting vendors, were impressive; and I subsequently found the free tier to be impressive, as well, *as long as* I never had to make a lot of changes in a short period of time, in which case the free tier's limits start to bite. Since I do find myself doing that from time to time, I decided to stay with the paid plan. As I explained to someone via email a few weeks ago:
 
-> I believe right now I've found a pretty good solution in the combination of Cloudflare Workers and the KV storage; the main thing I have to decide is whether I want to continue to pay five dollars a month for it. So far, I'm justifying that expense plus the five-a-month for FastComments and the 14-a-month for Fathom Analytics (although the latter is reduced by a small number of affiliate earnings) by telling myself, "Well, other guys have hobbies that cost a lot more a month than this," but we'll see if my credit card and I can continue to run with that. The fallback host choice is still Vercel, since its free tier is so "performant," as the Kewl Kids say these days, but it's hard to ignore that Cloudflare's *[point of presence (POP)]* count vastly outdoes that of Vercel's. Therefore, as long as I have readers in as many parts of the globe as the analytics keep telling me I do, I feel obligated to put the content out there in a way that makes their experience as pleasant (or, at least, as non-laggy) as possible.
+> I believe right now I've found a pretty good solution in the combination of Cloudflare Workers and the KV storage; the main thing I have to decide is whether I want to continue to pay five dollars a month for it. So far, I'm justifying that expense plus the five-a-month for FastComments and the 14-a-month for Fathom Analytics (although the latter is reduced by a small number of affiliate earnings) by telling myself, "Well, other guys have hobbies that cost a lot more a month than this," but we'll see if my credit card and I can continue to run with that. The fallback host choice is still Vercel, since its free tier is so "performant," as the Kewl Kids say these days, but it's hard to ignore that Cloudflare's *[point of presence (PoP)]* count vastly outdoes that of Vercel's. Therefore, as long as I have readers in as many parts of the globe as the analytics keep telling me I do, I feel obligated to put the content out there in a way that makes their experience as pleasant (or, at least, as non-laggy) as possible.
 
 ----
 
