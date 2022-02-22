@@ -173,10 +173,12 @@ sup {
 }
 ul li li {
   list-style-type: circle;
+  margin-bottom: 0;
 }
 
 ul li li li {
   list-style-type: square;
+  margin-bottom: 0;
 }
 
 #content-main-hugo, main {
