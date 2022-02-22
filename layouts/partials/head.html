@@ -80,7 +80,6 @@
     {{- $optionsFontsInter := (dict "targetPath" "css/fonts_Inter.css") -}}{{/* DO NOT MINIFY VIA SASS */}}
     {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}{{/* DO NOT MINIFY VIA SASS */}}
     {{- $cssFontsInter := "" -}}
-    {{- $optionsInterVF := "" -}}
     {{- $cssInterVF := "" -}}
     {{- if hugo.IsProduction -}}
       {{- $cssFontsInter = resources.Get "scss/_fonts_Inter.scss" | resources.ToCSS $optionsFontsInter | fingerprint "md5" -}}
