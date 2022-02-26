@@ -1,5 +1,5 @@
 ---
-#layout: "layouts/about/about.html"
+layout: singlepost # for Eleventy
 type: about
 title: About me
 subtitle: Just who do I think I am?
