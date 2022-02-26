@@ -1,5 +1,6 @@
 ---
-#layout: using `layouts/about/about.html`
+#layout: "layouts/about/about.html"
+type: about
 title: About me
 subtitle: Just who do I think I am?
 description: Not a bio (you’d fall asleep), but just some explanatory observations.
