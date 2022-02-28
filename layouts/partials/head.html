@@ -77,11 +77,10 @@
     <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     -->
-    {{- $optionsInternalCSS := (dict "outputStyle" "compressed") -}}
     {{- $optionsFontsInter := (dict "targetPath" "css/fonts_Inter.css") -}}
-    {{- $optionsFontsInterComp := (dict "targetPath" "css/fonts_Inter.min.css" "outputStyle" "compressed") -}}
+    {{- $optionsFontsInterComp := (dict "targetPath" "css/fonts_Inter.min.css") -}}
     {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}
-    {{- $optionsInterVFComp := (dict "targetPath" "css/intervf.min.css" "outputStyle" "compressed") -}}
+    {{- $optionsInterVFComp := (dict "targetPath" "css/intervf.min.css") -}}
     {{- $cssFontsInter := "" -}}
     {{- $cssInterVF := "" -}}
     {{- if hugo.IsProduction -}}
@@ -89,11 +88,11 @@
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsInter.RelPermalink }}">
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsInter.RelPermalink }}" type="text/css">
       {{- if eq .Site.Params.Host "CFP" -}}
-        {{ with resources.Get "scss/index.scss" | resources.ToCSS $optionsInternalCSS }}
+        {{ with resources.Get "scss/index.scss" | resources.ToCSS }}
           <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
         {{ end }}
       {{- else -}}
-        {{ with resources.Get "scss/index.scss" | resources.ToCSS $optionsInternalCSS }}
+        {{ with resources.Get "scss/index.scss" | resources.ToCSS }}
           <style>{{- .Content | safeCSS -}}</style>
         {{ end }}
       {{- end -}}
@@ -104,7 +103,7 @@
       {{- $cssFontsInter = resources.Get "scss/_fonts_Inter.scss" | resources.ToCSS $optionsFontsInter -}}
       <link rel="preload" as="style" href="{{ $cssFontsInter.RelPermalink }}">
       <link rel="stylesheet" href="{{ $cssFontsInter.RelPermalink }}" type="text/css">
-      {{ with resources.Get "scss/index.scss" | resources.ToCSS $optionsInternalCSS }}
+      {{ with resources.Get "scss/index.scss" | resources.ToCSS }}
         <style>{{- .Content | safeCSS -}}</style>
       {{ end }}
       {{- $cssInterVF = resources.Get "scss/_intervf.scss" | resources.ToCSS $optionsInterVF -}}
