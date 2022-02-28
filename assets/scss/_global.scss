@@ -211,6 +211,12 @@ footer {
     p {
       margin: 1rem 0;
     }
+    div.icons-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+    }
   }
   @media (min-width: $bkpt_lg) {
     margin: 2rem auto 0 auto;

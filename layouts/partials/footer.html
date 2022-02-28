@@ -1,7 +1,20 @@
 
     <footer>
       <div class="footerWrapper">
-        <p><a class="icon" href="https://github.com/brycewray" target="_blank" rel="noopener" aria-label="GitHub">{{ partial "svgGitHubIcon.html" . }}</a>&nbsp;&nbsp;<a class="icon" href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" aria-label="Twitter">{{ partial "svgTwitterIcon.html" . }}</a>&nbsp;&nbsp;<a class="icon" href="/index.xml" aria-label="RSS">{{ partial "svgRSSIcon.html" . }}</a>&nbsp;&nbsp;<a class="icon" href="/index.json" aria-label="JSON newsfeed">{{ partial "svgJSONfeedIcon.html" . }}</a></p>
+        <div class="icons-box">
+          <a class="icon" href="https://github.com/brycewray" target="_blank" rel="noopener" aria-label="GitHub">
+            {{- partial "svgGitHubIcon.html" . -}}
+          </a>
+          <a class="icon" href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" aria-label="Twitter">
+            {{- partial "svgTwitterIcon.html" . -}}
+          </a>
+          <a class="icon" href="/index.xml" aria-label="RSS">
+            {{- partial "svgRSSIcon.html" . -}}
+          </a>
+          <a class="icon" href="/index.json" aria-label="JSON newsfeed">
+            {{- partial "svgJSONfeedIcon.html" . -}}
+          </a>
+        </div>
         <p>
           Site textual content &copy;&nbsp;2018&ndash;{{ now.Year }}&nbsp;<a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce&nbsp;Wray</a> except&nbsp;where otherwise&nbsp;noted.<br /><span class="text-nowrap">Images hosted and processed by <a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" target="_blank" rel="noopener">Cloudinary</a>.*</span><br/><span class="text-nowrap">Analytics by <a href="https://usefathom.com/ref/ZKHYWX" target="_blank" rel="noopener">Fathom Analytics</a>.*</span> <span class="text-nowrap"><a href="/privacy">View this site&rsquo;s <strong>privacy policy</strong></a>.</span><br /><span class="text-nowrap">Sitemaps: <a href="/sitemap">HTML</a> &bull; <a href="/sitemap.xml">XML</a>.</span><br />&nbsp;<br /><span class="legal"><em>* Affiliate/invite links.</em></span>
         </p>
