@@ -5,7 +5,7 @@ subtitle: "How Hugo 0.81.0 lets me do more in Markdown"
 description: "The benefit of enhanced support for attributes."
 author: Bryce Wray
 date: 2021-02-27T11:35:00-06:00
-lastmod: 2021-03-15T16:25:00-05:00
+lastmod: 2022-02-28T21:41:00-06:00
 #draft: false
 discussionId: "2021-02-new-hugo-easier-writing"
 featured_image: "mac-and-keyboard-home-office-1207834_3000x2000.jpg"
@@ -54,7 +54,7 @@ The alternative would be actually writing HTML within the Markdown, but that was
 
 In Eleventy, I enjoyed this convenience through use of the [Markdown-it-attrs plugin](https://github.com/GerHobbelt/markdown-it-attrs) for the [Markdown-it parser](https://github.com/markdown-it/markdown-it). In Eleventy, you essentially put together your chosen parser with whatever plugins it needs to do what you want---footnoting, "smart" punctuation, and, yes, handling styling attributes.
 
-When I came back to Hugo, I figured I'd lost this convenience because Hugo's built-in Markdown parser, [Goldmark](https://github.com/yuin/goldmark), is [limited to allowing attributes for only headings](https://github.com/yuin/goldmark#parser-options).[^blackFriday] I compensated by putting together [shortcodes](https://gohugo.io/content-management/shortcodes/) to insert the two classes I most frequently had used with attributes in Eleventy: the aforementioned `yellowBox` class for my "Hey-look-at-this" items and the `imgcCaption`[^oldName] class I used for captions under in-body images. It wasn't as convenient, but it worked:
+When I came back to Hugo, I figured I'd lost this convenience because Hugo's built-in Markdown parser, [goldmark](https://github.com/yuin/goldmark), is [limited to allowing attributes for only headings](https://github.com/yuin/goldmark#parser-options).[^blackFriday] I compensated by putting together [shortcodes](https://gohugo.io/content-management/shortcodes/) to insert the two classes I most frequently had used with attributes in Eleventy: the aforementioned `yellowBox` class for my "Hey-look-at-this" items and the `imgcCaption`[^oldName] class I used for captions under in-body images. It wasn't as convenient, but it worked:
 
 [^blackFriday]: You also can configure Hugo to use its previous Markdown parser, [Blackfriday](https://github.com/russross/blackfriday), but it doesn't do the attributes thing *at all*. Moreover, Blackfriday support in Hugo is being deprecated in the not-too-distant future.
 
@@ -75,11 +75,11 @@ Your faithful correspondent holds his first grandchild for the first time, on 
 
 ## Hugo 0.81.0 as a labor-saving device
 
-But then Hugo 0.81.0 arrived, with [enhanced attribute support](https://gohugo.io/news/0.81.0-relnotes/#attribute-lists-after-markdown-blocks) that goes well beyond that from Goldmark itself:
+But then Hugo 0.81.0 arrived, with [enhanced attribute support](https://gohugo.io/news/0.81.0-relnotes/#attribute-lists-after-markdown-blocks) that goes well beyond that from goldmark itself:
 
 > Hugo already supports adding attribute lists (e.g CSS classes) after titles. We now also allow adding attribute lists after Markdown blocks, e.g. tables, lists, paragraphs etc. *[sic]*
 
-To get that working in Hugo as of v.0.81.0, just make appropriate edits to your config file's [`markup` section](https://gohugo.io/getting-started/configuration-markup#goldmark). For example, here's how I have Goldmark set in this site's `config.yaml` file (note that `block` is `true`, which enables what I'm discussing in this article):
+To get that working in Hugo as of v.0.81.0, just make appropriate edits to your config file's [`markup` section](https://gohugo.io/getting-started/configuration-markup#goldmark). For example, here's how I have goldmark set in this site's `config.yaml` file (note that `block` is `true`, which enables what I'm discussing in this article):
 
 ```yaml
 markup:

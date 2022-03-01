@@ -5,7 +5,7 @@ subtitle: "More geeky hints for SSG fans"
 description: "Another collection of neat and/or nerdy items."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
-lastmod: 2021-05-19T11:31:00-05:00
+lastmod: 2022-02-28T21:41:00-06:00
 #draft: false
 discussionId: "2021-01-gems-in-rough-2021-01"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -34,13 +34,13 @@ While this means your builds online are always okay, it occurred to me that you 
 
 ## Possessed?
 
-Each SSG has its own way of parsing the plain text, usually [Markdown](https://daringfireball.net/projects/markdown), that constitutes a typical static website's main content. The [Hugo](https://gohugo.io) SSG's default parser is [Goldmark](https://github.com/yuin/goldmark). While it's faster than its predecessor, [Blackfriday](https://github.com/russross/blackfriday), Goldmark currently has a bug---or, to be more specific, one of its built-in extensions has a bug---that will matter to you **if** you care about good typography.
+Each SSG has its own way of parsing the plain text, usually [Markdown](https://daringfireball.net/projects/markdown), that constitutes a typical static website's main content. The [Hugo](https://gohugo.io) SSG's default parser is [goldmark](https://github.com/yuin/goldmark). While it's faster than its predecessor, [Blackfriday](https://github.com/russross/blackfriday), goldmark currently has a bug---or, to be more specific, one of its built-in extensions has a bug---that will matter to you **if** you care about good typography.
 
 The `Typographer` extension is supposed to make sure text has the proper "smart" punctuation:
 
 <p class="punctuationExample">Here&rsquo;s some nice-lookin&rsquo; &ldquo;punctuation.&rdquo;</p>
 
-However, as of this writing, the Goldmark version "shipping" with Hugo has a problem with plural possessives. As I noted in an [issue I filed concerning the problem](https://github.com/yuin/goldmark/issues/180), if you include the following text in a Markdown file&nbsp;.&nbsp;.&nbsp;.
+However, as of this writing, the goldmark version "shipping" with Hugo has a problem with plural possessives. As I noted in an [issue I filed concerning the problem](https://github.com/yuin/goldmark/issues/180), if you include the following text in a Markdown file&nbsp;.&nbsp;.&nbsp;.
 
 ```md
 John's dog is named Sam. The Smiths' dog is named Rover.
@@ -56,7 +56,7 @@ But what you actually get right now is:
 
 So, if you're a Hugo user right now, you have two options where it comes to good typography and plural possessives:
 
-- Make sure you manually (or, if your text editor app handles it for you, automatically) take care of "smart" punctuation in your Markdown source files rather than relying on Hugo/Goldmark to do it.
+- Make sure you manually (or, if your text editor app handles it for you, automatically) take care of "smart" punctuation in your Markdown source files rather than relying on Hugo/goldmark to do it.
 
 - Use your Hugo project's config file to opt instead for Blackfriday, which Hugo does still support. It's unknown how long that support will continue; so, if you go this route, you may want to start periodically checking the [Hugo community forum](https://discourse.gohugo.io) and [relevant Hugo docs](https://gohugo.io/getting-started/configuration-markup), just so a deprecation doesn't catch you by surprise.
 

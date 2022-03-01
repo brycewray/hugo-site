@@ -6,7 +6,7 @@ subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
-lastmod: 2021-04-30T14:25:00-05:00
+lastmod: 2022-02-28T21:41:00-06:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: "halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg"
 featured_image_width: 5184
@@ -50,9 +50,9 @@ As I've mentioned often in these blatherings of mine, one of the reasons I do th
 
 For example, there is the matter of the different [Markdown](https://daringfireball.net/projects/markdown) [parsers](https://css-tricks.com/choosing-right-markdown-parser/) these three SSGs use.
 
-When I last left Hugo, this past October, it was still using the [Black Friday](https://github.com/russross/blackfriday) parser, as had been the case since I started this site with Hugo in September, 2018. [More recently](https://gohugo.io/news/0.60.0-relnotes/), Hugo has changed over to the [Goldmark](https://github.com/yuin/goldmark) parser.
+When I last left Hugo, this past October, it was still using the [Black Friday](https://github.com/russross/blackfriday) parser, as had been the case since I started this site with Hugo in September, 2018. [More recently](https://gohugo.io/news/0.60.0-relnotes/), Hugo has changed over to the [goldmark](https://github.com/yuin/goldmark) parser.
 
-While checking out differences between Goldmark and Eleventy's [Markdown-it](https://github.com/markdown-it/markdown-it) parser in properly handling the post-Hugo/post-Gatsby posts I was copying to the other two repos---as well as seeing what few differences there were between Black Friday and Goldmark---I learned there was a problem with how I've recently been adding footnotes in my content. It worked fine in Markdown-it but not in Goldmark or, for that matter, the [Remark](https://github.com/remarkjs/remark) parser used in my Gatsby repo.
+While checking out differences between goldmark and Eleventy's [Markdown-it](https://github.com/markdown-it/markdown-it) parser in properly handling the post-Hugo/post-Gatsby posts I was copying to the other two repos---as well as seeing what few differences there were between Black Friday and goldmark---I learned there was a problem with how I've recently been adding footnotes in my content. It worked fine in Markdown-it but not in goldmark or, for that matter, the [Remark](https://github.com/remarkjs/remark) parser used in my Gatsby repo.
 
 What I'd been doing recently was so-called *inline* footnoting, like this:
 
