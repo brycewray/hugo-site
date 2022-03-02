@@ -5,7 +5,7 @@ subtitle: "Some recent items from the SSG front"
 description: "Full-time Eleventy, variables in Hugo, learning from a nice tweet, using web fonts with internal CSS."
 author: Bryce Wray
 date: 2022-02-18T12:36:00-06:00
-#lastmod:
+lastmod: 2022-03-02T10:16:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-gems-in-rough-14"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -48,7 +48,7 @@ For example, the following won’t work:
 
 <p>The value of x is {{ $x }}.</p>
 <!--
-There will be a blank after "is" 
+There will be a blank after "is"
 rather than the desired "10"; so
 it will say:
   The value of x is .
@@ -77,7 +77,7 @@ This ability to [overwrite template variables](https://github.com/golang/go/issu
 I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appeared in *August, 2018*—precisely around the time that I first started using Hugo! Ah, well. As I told you [three years ago](/posts/2019/02/old-dog-old-trick/#share-the-shame-but-share-the-help-too):
 
 > First, don’t be ashamed to admit you don’t know something. Maybe you should be ashamed that you didn’t know enough even to have curiosity about the item of which you were ignorant, but “water under the bridge” and all that rot.
-> 
+>
 > Second, when you belatedly discover the thing you surprisingly had missed, let others know it, too. Life happens and people miss things. They’ll appreciate knowing—finally knowing.
 
 ## Learning from a friendly hat-tip
@@ -107,7 +107,7 @@ Only thing was, I figured that was a cop-out, and a lazy one at that.
 
 So I finally (?) came up with this fix: load the styling for only the web fonts via *external* CSS (*i. e.*, CSS living in one or more separate, linked `.css` files) while still handling all other styling as *internal* CSS. That works because (a.) the web fonts’ CSS very rarely changes while (b.) I’m frequently dorking around with the internal CSS and, thus, need to inject it in such a way as to defeat too-aggressive caching.
 
-One added wrinkle is that the single-file [Inter](https://rsms.me/inter/) variable font I’m currently using can induce some funkiness with oblique characters, especially in Safari and Firefox, if you don’t handle its CSS properly.[^4] As a result, I provide the following in each page’s `head`, in this order:
+One added wrinkle is that the single-file [Inter](https://rsms.me/inter/) variable font---which the site is using as of the initial publication of this post---can induce some funkiness with oblique characters, especially in Safari and Firefox, if you don’t handle its CSS properly.[^4] As a result, I provide the following in each page’s `head`, in this order:
 
 - External CSS file #1, which calls the Inter font file and assigns its subsets.
 - The internal CSS within a `style` element.
