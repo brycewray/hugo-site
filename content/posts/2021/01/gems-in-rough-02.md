@@ -5,7 +5,7 @@ subtitle: "More geeky hints for SSG fans"
 description: "Another collection of neat and/or nerdy items."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
-lastmod: 2022-02-28T21:41:00-06:00
+lastmod: 2022-03-02T09:48:00-06:00
 #draft: false
 discussionId: "2021-01-gems-in-rough-2021-01"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -59,6 +59,9 @@ So, if you're a Hugo user right now, you have two options where it comes to good
 - Make sure you manually (or, if your text editor app handles it for you, automatically) take care of "smart" punctuation in your Markdown source files rather than relying on Hugo/goldmark to do it.
 
 - Use your Hugo project's config file to opt instead for Blackfriday, which Hugo does still support. It's unknown how long that support will continue; so, if you go this route, you may want to start periodically checking the [Hugo community forum](https://discourse.gohugo.io) and [relevant Hugo docs](https://gohugo.io/getting-started/configuration-markup), just so a deprecation doesn't catch you by surprise.
+
+**Update, 2022-03-02**: This issue **was resolved** on February 28, 2022, with the release of [Hugo 0.93.0](https://github.com/gohugoio/hugo/releases/tag/v0.93.0). It included the first goldmark version, 1.4.7, with the code from a [pull request](https://github.com/yuin/goldmark/pull/280) that fixed all the cases I'd reported.
+{.yellowBox}
 
 ## Check your brackets
 

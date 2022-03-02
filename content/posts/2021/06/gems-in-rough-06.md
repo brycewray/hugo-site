@@ -5,7 +5,7 @@ subtitle: "Another set of SSG-centric suggestions"
 description: "Hiding “future” posts in Eleventy, life with Vercel (nearly) a year later, and other items that may interest static site generator users."
 author: Bryce Wray
 date: 2021-06-21T16:30:00-05:00
-lastmod: 2021-08-05T16:02:00-05:00
+lastmod: 2022-03-02T09:48:00-06:00
 discussionId: "2021-06-gems-in-rough-06"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
 featured_image_width: 7315
@@ -51,4 +51,7 @@ Mainly due to the first two, I have temporarily ceased updating my [two Hugo sta
 As for the third issue, I have **no** expectation that it will be resolved; I don't think the goldmark dev is interested in fixing it. The only alternative seems to be [reverting to the Blackfriday parser](https://gohugo.io/getting-started/configuration-markup/#blackfriday), which [goldmark replaced in Hugo 0.60.0](https://gohugo.io/news/0.60.0-relnotes/), but I can tell you that it's not a foolproof fix **even if** we could assume Hugo will continue to support Blackfriday indefinitely---which we can't, because it won't. For one thing, my recent tests show that using Blackfriday with the current version of Hugo can result in occasional weirdness (*e.g.*, a footnote numbered *0* which wasn't even the first footnote in the document). Would using it with, say, a version *prior to* 0.60.0 allow Blackfriday to work properly? Perhaps. But Hugo's added many enhancements since the pre-0.60.0 days. I'm not going to tell the starter sets’ potential users to give up those goodies just for the proper punctuation that goldmark is incapable of providing.
 
 **Update, 2021-08-05**: The [release of Hugo 0.87.0](https://gohugo.io/news/0.87.0-relnotes/) included the [deprecation of Blackfriday](https://github.com/gohugoio/hugo/commit/c7252224c4fecfe8321f31b901e2510d98b657c4).
+{.yellowBox}
+
+**Update, 2022-03-02**: The third issue **was resolved** on February 28, 2022, with the release of [Hugo 0.93.0](https://github.com/gohugoio/hugo/releases/tag/v0.93.0). It included the first goldmark version, 1.4.7, with the code from a [pull request](https://github.com/yuin/goldmark/pull/280) that fixed all the cases I'd reported.
 {.yellowBox}

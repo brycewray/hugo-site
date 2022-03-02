@@ -5,7 +5,7 @@ subtitle: "The latest of my wide-ranging website whatchamacallits"
 description: "More notes, notions, and nitpicks about managing one’s personal website."
 author: Bryce Wray
 date: 2021-05-30T13:16:00-05:00
-lastmod: 2021-06-21T13:06:00-05:00
+lastmod: 2022-03-02T09:48:00-06:00
 discussionId: "2021-05-gems-in-rough-05"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
 featured_image_width: 7315
@@ -52,6 +52,6 @@ Here's the latest on where the Hugo SSG stands regarding some shortcomings I men
 
 - [No compatibility yet](https://github.com/gohugoio/hugo/issues/8343) with the [JIT mode](https://tailwindcss.com/docs/just-in-time-mode) in [Tailwind CSS](https://tailwindcss.com) 2.1+.
 - [Not yet using Dart Sass](https://github.com/gohugoio/hugo/issues/8299), rather than the [deprecated LibSass](https://sass-lang.com/blog/libsass-is-deprecated), for [Sass/SCSS](https://sass-lang.com) support.
-- No fix yet to [punctuation glitches](https://github.com/yuin/goldmark/issues/180) in the [goldmark](https://github.com/yuin/goldmark) parser Hugo uses to handle [Markdown](https://daringfireball.net/projects/markdown).
+- No fix yet to [punctuation glitches](https://github.com/yuin/goldmark/issues/180) in the [goldmark](https://github.com/yuin/goldmark) parser Hugo uses to handle [Markdown](https://daringfireball.net/projects/markdown). \[**Update, 2022-03-02**: This third problem **was resolved** on February 28, 2022, with the release of [Hugo 0.93.0](https://github.com/gohugoio/hugo/releases/tag/v0.93.0). It included the first goldmark version, 1.4.7, with the code from a [pull request](https://github.com/yuin/goldmark/pull/280) that fixed all the cases I'd reported.]
 
 While [Hugo's status as a single binary](https://discourse.gohugo.io/t/what-will-2021-bring-for-hugo/31098/5) can be a good thing when one doesn't want to deal with the many dependencies (as in the aforementioned PostCSS weirdness) required by most other popular SSGs, that also can suck in cases like these because the user, unable to "get under the hood," has to wait for remedies from the Hugo dev team and the developers of various external packages on which Hugo relies.
