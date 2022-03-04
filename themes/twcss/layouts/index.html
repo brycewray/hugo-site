@@ -15,7 +15,7 @@
           <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br />Last modified {{ .Lastmod.Format "January 2, 2006" }}{{- end }}
         </p>
         <p class="text-base mt-1 mb-6 lg:mb-10">
-          {{ .Description }}
+          <em>{{ .Description }}</em>
         </p>
       </div>
     {{ end }}

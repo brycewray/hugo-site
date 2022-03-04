@@ -13,7 +13,7 @@
       <svg id="svg-menu" class="w-6 fill-white mt-[0.3rem]" viewBox="0 0 448 512" width="100" title="bars"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg>
       <svg id="svg-close" class="w-6 fill-white hidden" viewBox="0 0 384 512" width="100" title="times"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" /></svg>
     </label>
-    <ul class="nav-Menu bg-black dark:bg-blue-800 flex flex-col lg:flex-row gap-4 lg:gap-2 text-right my-2 lg:mt-1 lg:mb-0 mr-2 lg:mr-6 ml-0 mbs-0 mbe-0 pis-0">
+    <ul class="[font-weight:700] nav-Menu bg-black dark:bg-blue-800 flex flex-col lg:flex-row gap-4 lg:gap-2 text-right my-2 lg:mt-1 lg:mb-0 mr-2 lg:mr-6 ml-0 mbs-0 mbe-0 pis-0">
       <li class="block py-2 my-0 mr-auto ml-6 lg:mt-0 lg:mb-1 lg:tracking-normal lg:leading-none">
         <a href="/" class="no-underline" aria-label="Home page">
           <svg class="w-[30px] h-auto" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
@@ -21,13 +21,13 @@
           </svg>
         </a>
       </li>
-      <li class="list-none hidden font-bold lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/about/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="About me">About</a></li>
+      <li class="list-none hidden lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/about/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="About me">About</a></li>
       {{- range first 1 (where .Site.RegularPages "Section" "posts") -}}
-        <li class="list-none hidden font-bold lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="{{ .RelPermalink }}" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Newest post">Newest post</a></li>
+        <li class="list-none hidden lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="{{ .RelPermalink }}" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Newest post">Newest post</a></li>
       {{- end -}}
-      <li class="list-none hidden font-bold lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/posts/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Posts">All posts</a></li>
-      <li class="list-none hidden font-bold lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/privacy/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Privacy policy">Privacy</a></li>
-      <li class="list-none hidden font-bold lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/contact/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Contact me">Contact</a></li>
+      <li class="list-none hidden lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/posts/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Posts">All posts</a></li>
+      <li class="list-none hidden lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/privacy/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Privacy policy">Privacy</a></li>
+      <li class="list-none hidden lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.85rem] lg:mx-0"><a href="/contact/" class="no-underline border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" aria-label="Contact me">Contact</a></li>
     </ul>
   </nav>
 </header>

@@ -15,8 +15,8 @@ strong, b {
   }
 }
 
-main {
-  @apply pt-10; /* needed in Eleventy repo; handled elsewhere in Hugo repo */
+#content-main-hugo, main {
+  @apply pt-[40px];
 }
 
 p, li {
@@ -107,12 +107,16 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply mt-6 mb-6 leading-relaxed md:text-lg 2xl:text-xl;
+  @apply mt-6 mb-6 leading-relaxed md:text-lg lg:text-xl 2xl:text-2xl;
 }
 
 article img.containedImage, article picture img {
   @apply min-w-full max-w-full w-full h-auto;
   /* latter two for no-jank in Chrome and Firefox */
+}
+
+article code {
+  @apply bg-blue-50 dark:bg-gray-700;
 }
 
 blockquote {

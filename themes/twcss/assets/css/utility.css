@@ -3,7 +3,7 @@
 }
 
 .yellowBox {
-  @apply bg-yellow-100 dark:bg-yellow-900;
+  @apply bg-yellow-100 dark:bg-slate-800;
 }
 
 .yellowBox a {
@@ -19,6 +19,11 @@
 
 .lazypicturecaption, .imgcCaption {
   @apply font-sans text-sm p-0 mt-2 leading-snug text-center;
+}
+
+.featured-image-caption a {
+  color: #a8dcff;
+  border-bottom: 1px solid #a8dcff;
 }
 
 .indentAfterLI {
@@ -98,4 +103,17 @@ a .twitter-tweet {
 
 .featImgCapt a {
   @apply text-blue-100 border-blue-100;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 750ms ease-in-out;
 }

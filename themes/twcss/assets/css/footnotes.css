@@ -1,35 +1,35 @@
 /* start, footnotes */
 
-.footnotes, .footnote-sim {
+.footnotes, .footnote-sim, .footnote-ref {
   @apply font-sans;
 }
 
+.footnotes {
+  @apply pt-[0.5em];
+  & hr {
+    @apply border-0 h-[1px] bg-black dark:bg-white;
+  }
+  & ol {
+    padding-inline-start: 1.5rem;
+    @apply pt-2;
+    & li {
+      @apply !text-sm my-0 pt-2 pb-1;
+      & p {
+        @apply leading-[1.5] !text-sm my-0 py-0;
+      }
+    }
+  }
+  & .footnote-backref {
+    @apply text-xs;
+  }
+}
+
 .footnote-sim {
-  @apply text-blue-500 dark:text-blue-100 text-fn;
+  @apply text-[0.65em] text-blue-500 dark:text-blue-200;
 }
 
-.footnote-ref {
-  @apply font-sans text-fn;
-}
-
-.footnote-ref a {
-  @apply border-transparent;
-}
-
-.footnotes-sep {
-  @apply mb-3;
-}
-
-.footnotes-list {
-  @apply list-decimal pl-6;
-}
-
-.footnote-item, .footnote-item p {
-  @apply text-sm tracking-normal leading-snug my-4;
-}
-
-.footnote-item pre, .footnote-item code {
-  @apply text-xs;
+a.footnote-return {
+  font-size: 50%;
 }
 
 /* == end, footnotes */
