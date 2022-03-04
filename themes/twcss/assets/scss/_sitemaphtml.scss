@@ -1,0 +1,23 @@
+// === for HTML sitemap
+
+.sitemapDiv {
+  font-family: $sans-serif;
+  h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    padding-top: 0.75em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  ul li {
+    font-size: $pokey;
+    margin-bottom: 0.75em;
+    line-height: 1.5em;
+  }
+}
+
+// === end, for HTML sitemap

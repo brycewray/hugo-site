@@ -1,0 +1,17 @@
+    {{/* CSS/SCSS */ -}}
+    {{/* - see https://github.com/gohugoio/hugo/issues/8343#issuecomment-1019383325 */}}
+    <!--
+    <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    -->
+    <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+
+    {{ $styles := resources.Get "css/index.css" }}
+    {{ $styles = $styles | resources.PostCSS }}
+    {{ if hugo.IsProduction }}
+      {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+    {{ else if .Site.IsServer }}
+      {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    {{/* end, CSS/SCSS */}}

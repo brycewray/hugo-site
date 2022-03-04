@@ -1,0 +1,21 @@
+/* from vanilla-lazyload */
+.lazy {
+  @apply opacity-0;
+}
+
+.lazy:not(.initial) {
+  @apply transition-opacity ease-in-out;
+  transition: opacity 1s;
+}
+
+.lazy.initial,
+.lazy.loaded,
+.lazy.error {
+  @apply opacity-100;
+}
+
+.lazy:not([src]) {
+  @apply invisible;
+}
+
+/* end of CSS from vanilla-lazyload */

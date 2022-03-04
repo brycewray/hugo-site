@@ -1,0 +1,35 @@
+/* start, footnotes */
+
+.footnotes, .footnote-sim {
+  @apply font-sans;
+}
+
+.footnote-sim {
+  @apply text-blue-500 dark:text-blue-100 text-fn;
+}
+
+.footnote-ref {
+  @apply font-sans text-fn;
+}
+
+.footnote-ref a {
+  @apply border-transparent;
+}
+
+.footnotes-sep {
+  @apply mb-3;
+}
+
+.footnotes-list {
+  @apply list-decimal pl-6;
+}
+
+.footnote-item, .footnote-item p {
+  @apply text-sm tracking-normal leading-snug my-4;
+}
+
+.footnote-item pre, .footnote-item code {
+  @apply text-xs;
+}
+
+/* == end, footnotes */

@@ -1,0 +1,67 @@
+// Colors
+$default-color: #374151; // TWCSS "Prose" black - was hsl(0, 0%, 20%), same as #333
+$default-color-dark-mode: hsl(0, 0%, 87%); // i.e., #dedede
+$default-shade: hsl(0, 0%, 28%);
+$default-tint: hsla(0, 0%, 67%, 0.72);
+$grey-1: hsl(0, 0%, 35%);
+$grey-2: rgb(199, 199, 199);
+$chroma-bkgd: hsl(0, 0%, 93%); // was ededed
+$grey-2-5: hsl(0, 0%, 93%);
+$greyArrow: hsl(218, 11%, 65%); // rgb(156, 163, 175) -- same as TWCSS `text-gray-400`
+$chroma-bkgd-dark-mode: hsl(0, 0%, 33%);
+$grey-2-dark-mode: hsl(0, 0%, 66%);
+$grey-3: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
+$background-dark-mode: hsl(0, 0%, 0%); // was #181818
+$black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
+$blue: hsl(228, 100%, 50%); // was 0088ff but that's not sufficient contrast for accessibility
+$blueFirst: hsl(208, 100%, 50%); // Will use as a hover color only
+$blueLight: hsl(204, 100%, 83%); // for use with dark mode where supported
+$blueLightCode: hsl(212, 100%, 94%);
+$blueLightBtn: hsl(204, 100%, 90%);
+$darkblue: hsl(240, 100%, 33%);
+$red: hsl(0, 100%, 41%);
+$red-dark-mode: hsl(0, 100%, 75%);
+$gold: hsl(55, 100%, 44%);
+$shadow-color: hsla(0, 0%, 0%, 0.2);
+$code-color: hsl(120, 100%, 20%); // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
+$code-color-dark-mode: hsl(120, 100%, 77%);
+$code-bkgd-light-mode: hsl(0, 0%, 96%); // for reference, GitHub uses f6f8fa
+$code-bkgd-dark-mode: hsl(200, 63%, 15%);
+$code-color-tan: hsl(40, 100%, 30%);
+$code-color-blueLight-dark-mode: hsl(197, 100%, 77%);
+$code-color-orange-dark-mode: hsl(40, 100%, 50%);
+
+// Typography
+$sans-serif: "Public Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$serif: ui-serif, Georgia, Cambria, Times, "Times New Roman", serif;
+$monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Roboto Mono", Menlo, Monaco, "Liberation Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, "Ubuntu Mono", "Courier New", monospace;
+
+// rems
+$biggest: 2.5rem;
+$bigger: 2.25rem;
+$mightybig: 2rem;
+$sortabig: 1.75rem;
+$slightlybig: 1.5rem;
+$minimalbig: 1.25rem;
+$stdsize: 1rem;
+$pokey: 0.85rem;
+$legal: 0.75rem;
+$timelineTxt: 0.7rem;
+$teeny: 0.6rem;
+
+$eightyFive: 85%;
+$seventyFive: 75%;
+$sixtyFive: 65%;
+
+// alignment
+$bodyalign: left;
+$nav-height: 50px;
+
+// breakpoints (based on Tailwind CSS)
+$bkpt_sm: 640px;
+$bkpt_md: 768px;
+$bkpt_lg: 1024px;
+$bkpt_xl: 1280px;
+$bkpt_2xl: 1536px;
+$bkpt_3xl: 1920px; // additional
