@@ -80,18 +80,14 @@
     {{/*
     {{- $optionsFontsInter := (dict "targetPath" "css/fonts_Inter.css") -}}
     {{- $optionsFontsInterComp := (dict "targetPath" "css/fonts_Inter.min.css") -}}
-    */}}
-    {{- $optionsFontsPublicSans := (dict "targetPath" "css/fonts_PublicSans.css") -}}
-    {{- $optionsFontsPublicSansComp := (dict "targetPath" "css/fonts_PublicSans.min.css") -}}
-    {{/*
     {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}
     {{- $optionsInterVFComp := (dict "targetPath" "css/intervf.min.css") -}}
     {{- $cssFontsInter := "" -}}
+    {{- $cssInterVF := "" -}}{{/* init */}}
     */}}
-    {{- $cssFontsPublicSans := "" -}}
-    {{/*
-    {{- $cssInterVF := "" -}}
-    */}}
+    {{- $optionsFontsPublicSans := (dict "targetPath" "css/fonts_PublicSans.css") -}}
+    {{- $optionsFontsPublicSansComp := (dict "targetPath" "css/fonts_PublicSans.min.css") -}}
+    {{- $cssFontsPublicSans := "" -}}{{/* init */}}
     {{- if hugo.IsProduction -}}
       {{- $cssFontsPublicSans = resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $optionsFontsPublicSansComp | fingerprint "md5" -}}
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
