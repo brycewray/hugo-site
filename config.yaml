@@ -1,7 +1,7 @@
 baseURL: https://www.brycewray.com/
 languageCode: en-us
 title: BryceWray.com
-#theme: scss-thoreau
+theme: twcss # choices are libsass and twcss - as of 2022-03-03
 
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
