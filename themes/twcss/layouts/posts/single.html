@@ -14,7 +14,7 @@
     {{/* vars for range */}}
     {{- $src := .Params.featured_image -}}
     {{- $width := .Params.featured_image_width -}}
-    <div class="relative overflow-hidden w-full h-[80vh] bg-black dark:bg-blue-700 max-h-[80vh] min-h-[80vh] md:h-[90vh] md:max-h-[90vh] md:min-h-[90vh] xl:h-[100xh] xl:max-h-[100vh] xl:min-h-[100vh]"><!-- beginning, overarching hero image div -->
+    <div class="relative overflow-hidden w-full h-[80vh] bg-black dark:bg-blue-700 max-h-[80vh] min-h-[80vh] md:h-[90vh] md:max-h-[95vh] md:min-h-[95vh] xl:h-[100xh] xl:max-h-[100vh] xl:min-h-[100vh]"><!-- beginning, overarching hero image div -->
       {{- if eq .Site.Params.Host "CFP" -}}
         <style nonce="DhcnhD3khTMePgXw">
           .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
@@ -43,7 +43,7 @@
       </div>
       <div class="block w-full absolute bottom-0 bg-gradient-to-t to-transparent from-black pt-[5em] px-[2em] pb-[1.5em]">
         <div class="[text-shadow:4px_4px_2px_#000] xl:pb-8">
-          <h1 class="text-center text-4xl md:text-left lg:text-6xl tracking-tight leading-[1.1] pt-0 pb-0 mt-0 lg:px-[5%] xl:pt-0 md:px-0 text-white">
+          <h1 class="text-center md:text-left text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1] pt-0 pb-0 mt-0 lg:px-[5%] xl:pt-0 md:px-0 text-white">
             {{ .Title | markdownify }}
           </h1>
           <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-5xl leading-tight tracking-tight text-white mt-0 pt-0 pb-[1.5rem] lg:px-[5%]">
