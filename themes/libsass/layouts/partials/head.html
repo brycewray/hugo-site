@@ -83,11 +83,11 @@
     {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}
     {{- $optionsInterVFComp := (dict "targetPath" "css/intervf.min.css") -}}
     {{- $cssFontsInter := "" -}}
-    {{- $cssInterVF := "" -}}{{/* init */}}
+    {{- $cssInterVF := "" -}}
     */}}
     {{- $optionsFontsPublicSans := (dict "targetPath" "css/fonts_PublicSans.css") -}}
     {{- $optionsFontsPublicSansComp := (dict "targetPath" "css/fonts_PublicSans.min.css") -}}
-    {{- $cssFontsPublicSans := "" -}}{{/* init */}}
+    {{- $cssFontsPublicSans := "" -}}
     {{- if hugo.IsProduction -}}
       {{- $cssFontsPublicSans = resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $optionsFontsPublicSansComp | fingerprint "md5" -}}
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
