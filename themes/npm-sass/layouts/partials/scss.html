@@ -1,12 +1,41 @@
-{{ $styles := resources.Get "css/index.css" }}
-{{ $styles = $styles | resources.PostCSS }}
-{{ if hugo.IsProduction }}
-  {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
-{{ else if .Site.IsServer }}
-  {{ $styles = $styles }}
-  {{/*
-    - above from https://github.com/Gioni06/hugo-pipes-tailwind-3/blob/main/layouts/partials/head.html
-    - based on https://dev.to/jonas_duri/how-to-use-tailwindcss-30-without-external-npm-scripts-just-hugo-pipes-2lg9
-  */}}
-{{ end }}
-<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    {{/* CSS/SCSS */ -}}
+    <!--
+    <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    -->
+    <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    {{/*
+    {{- $optionsFontsInter := (dict "targetPath" "css/fonts_Inter.css") -}}
+    {{- $optionsFontsInterComp := (dict "targetPath" "css/fonts_Inter.min.css") -}}
+    {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}
+    {{- $optionsInterVFComp := (dict "targetPath" "css/intervf.min.css") -}}
+    {{- $cssFontsInter := "" -}}
+    {{- $cssInterVF := "" -}}
+    */}}
+    {{ $cssFontsPublicSans := resources.Get "css/fonts_PublicSans.css" }}
+    {{ $styles := resources.Get "css/index.css" }}
+    {{ $styles = $styles | resources.PostCSS }}
+    {{ if hugo.IsProduction }}
+      {{ $cssFontsPublicSans = $cssFontsPublicSans | minify | fingerprint | resources.PostProcess }}
+      {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsPublicSans.RelPermalink }}" type="text/css">
+      {{- if eq .Site.Params.Host "CFP" -}}
+        {{ with $styles }}
+          <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
+        {{ end }}
+      {{- else -}}
+        {{ with $styles }}
+          <style>{{- .Content | safeCSS -}}</style>
+        {{ end }}
+      {{- end -}}
+    {{ else if .Site.IsServer }}
+      {{ $cssFontsPublicSans = $cssFontsPublicSans }}
+      {{ $styles = $styles | resources.ExecuteAsTemplate (printf "index.dev.%v.css" now.UnixMilli) .}}
+      <link href="{{ $cssFontsPublicSans.RelPermalink }}" rel="stylesheet" />
+      <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+      {{/*
+        - above from https://github.com/Gioni06/hugo-pipes-tailwind-3/blob/main/layouts/partials/head.html
+        - based on https://dev.to/jonas_duri/how-to-use-tailwindcss-30-without-external-npm-scripts-just-hugo-pipes-2lg9
+      */}}
+    {{ end }}
