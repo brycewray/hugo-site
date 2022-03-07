@@ -13,12 +13,11 @@
     {{- $cssInterVF := "" -}}
     */}}
     {{ $cssFontsPublicSans := resources.Get "css/fonts_PublicSans.css" }}
-    {{ $cssFontsPublicSans = $cssFontsPublicSans }}
+    {{ $cssFontsPublicSans = $cssFontsPublicSans | resources.PostCSS }}
     {{ $styles := resources.Get "css/index.css" }}
-    {{/* $styles = $styles | resources.PostCSS */}}
+    {{ $styles = $styles | resources.PostCSS }}
     {{ if hugo.IsProduction }}
-      {{/* $cssFontsPublicSans = $cssFontsPublicSans | minify | fingerprint | resources.PostProcess */}}
-      {{/* $styles = $styles | minify | fingerprint */}}
+      {{ $cssFontsPublicSans = $cssFontsPublicSans | minify | fingerprint }}
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsPublicSans.RelPermalink }}" type="text/css">
       {{- if eq .Site.Params.Host "CFP" -}}
