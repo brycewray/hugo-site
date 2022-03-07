@@ -32,6 +32,6 @@ push.sh
 
 tweetcurl*.json
 
-/themes/npm-sass/assets/css
-/themes/npm-sass/assets/css/*.css
+# /themes/npm-sass/assets/css
+# /themes/npm-sass/assets/css/*.css
 
