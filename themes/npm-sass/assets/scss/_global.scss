@@ -1,0 +1,317 @@
+html, body {
+  font-family: $sans-serif;
+  // font-weight: 425; // when using variable fonts
+  color: $default-color;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  -moz-osx-font-smoothing: auto; // only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
+  // font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
+  @media (prefers-color-scheme: dark) {
+    background: $background-dark-mode;
+    color: $default-color-dark-mode;
+    font-weight: 375;
+  }
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+p, li {
+  line-height: 1.4;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $sans-serif;
+  letter-spacing: -0.025rem;
+  @media (prefers-color-scheme: dark) {
+    color: $default-color-dark-mode;
+  }
+}
+
+h1, .h1 {
+  font-weight: 800;
+  @media (prefers-color-scheme: dark) {
+    font-weight: 750;
+  }
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
+  @media (prefers-color-scheme: dark) {
+    font-weight: 575;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  outline: 2px transparent;
+  outline-offset: 2px;
+  &:active, &:focus, &:hover {
+    outline: 2px transparent;
+    outline-offset: 2px;
+  }
+}
+
+.header-anchor {
+  border: none;
+  color: $black;
+  @media screen and (prefers-color-scheme: dark) {
+    color: $white;
+  }
+  &:hover{
+    color: $blue;
+    border-bottom: 2px solid $blue;
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blueLight;
+      border-bottom: 2px solid $blueLight;
+    }
+    &::after {
+      font-size: $stdsize;
+      font-weight: 425;
+      padding-left: 0.5em;
+      content: "#";
+      @media screen and (prefers-color-scheme: dark) {
+        font-weight: 375;
+      }
+    }
+  }
+}
+
+strong, b {
+  @media (prefers-color-scheme: dark) {
+    font-weight: 725;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-block-start: 0.25rem;
+  margin-block-end: 0.25rem;
+}
+
+h3, .h3, h5, .h5 {
+  font-style: italic;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+  // usually overridden by other styling (e.g., billboard.scss)
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5, h6, .h6 {
+  font-size: 1.25rem;
+}
+
+a, a:focus, a:hover, a:active {
+  text-decoration: none;
+  border-bottom: 1px solid $blue;
+  // text-decoration-skip-ink: auto;
+}
+
+a {
+  color: $blue;
+  border-bottom: 1px solid $blueFirst;
+  @media (prefers-color-scheme: dark) {
+    color: $blueLight;
+    border-bottom: 1px solid $blueLight;
+  }
+}
+
+a:focus, a:hover, a:active {
+  color: $darkblue;
+  @media (prefers-color-scheme: dark) {
+    color: $grey-2;
+    border-bottom: 1px solid $blueLight;
+  }
+}
+
+sup a, .footnote-return, a.icon {
+  border-bottom: 0;
+}
+
+blockquote {
+	border-left: 4px solid $grey-2;
+  color: $grey-1;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 1.5em;
+  @media (prefers-color-scheme: dark) {
+    border-left: solid $grey-1;
+    color: $grey-2-dark-mode;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+td {
+  vertical-align: top;
+}
+
+sub, sup {
+  font-size: 65%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5rem;
+}
+ul li li {
+  list-style-type: circle;
+  margin-bottom: 0;
+}
+
+ul li li li {
+  list-style-type: square;
+  margin-bottom: 0;
+}
+
+#content-main-hugo, main {
+  padding-top: 40px;
+}
+
+#content-main-hugo .topOfMain, main .topOfMain {
+  margin-top: 0.5rem;
+  font-size: 2.25rem;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+  vertical-align: middle;
+}
+
+footer {
+  font-family: $sans-serif;
+  text-align: center;
+  font-size: $legal;
+  margin: 4rem auto 0 auto;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  p {
+    line-height: 1.5em; // definitely em, not rem, here
+  }
+  div.footerWrapper {
+    margin: 0 auto;
+    width: 80%;
+    p {
+      margin: 1rem 0;
+    }
+    div.icons-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  @media (min-width: $bkpt_lg) {
+    margin: 2rem auto 0 auto;
+    // padding-bottom: 1rem;
+    div.footerWrapper {
+      width: 65%;
+      height: 100%;
+    }
+  }
+}
+
+.imgCover {
+  object-fit: cover;
+  object-position: 50% 50%; // H = middle; V = middle
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  // width: 90%;
+  margin: 0 auto;
+  &-home {
+    font-family: $sans-serif;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 90%;
+    @media screen and (min-width: $bkpt_lg) {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+      .post-line {
+        display: none;
+      }
+    }
+    h1 {
+      font-size: 1.25rem;
+      @media screen and (min-width: $bkpt_lg) {
+        font-size: 1.5rem;
+      }
+      @media screen and (min-width: $bkpt_2xl) {
+        font-size: 1.75rem;;
+      }
+    }
+  }
+  &-narrower {
+    margin: 1rem auto 0 auto;
+    width: 80%;
+    @media screen and (min-width: $bkpt_lg) {
+      width: 70%;
+    }
+    @media screen and (min-width: $bkpt_xl) {
+      width: 60%;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      width: 50%;
+    }
+    figure img, img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+li p {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+article {
+  padding-top: 1em; // definitely em, not rem
+  p, li {
+    font-size: 1.125rem;
+    line-height: 1.65em;
+    margin-top: 1.15em;
+    margin-bottom: 1.15em;
+    @media screen and (min-width: $bkpt_lg) {
+      font-size: 1.25rem;
+    }
+    @media screen and (min-width: $bkpt_2xl) {
+      font-size: 1.375rem;
+    }
+  }
+  li li, li p {
+    font-size: inherit;
+    margin-top: 0.25em; // definitely em, not rem
+  }
+  h1, h2, h3, h4 {
+    margin-top: 1.5em;
+    margin-bottom: 1.5rem;
+    letter-spacing: -.025em;
+    line-height: normal;
+  }
+}
