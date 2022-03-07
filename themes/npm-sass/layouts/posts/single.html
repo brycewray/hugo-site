@@ -66,11 +66,13 @@
               {{- end }}
             </span>
           </p>
-          {{- if isset .Params "featured_image_caption" }}
           <p class="featured-image-caption">
+          {{- if isset .Params "featured_image_caption" }}
             {{ index .Params "featured_image_caption" | markdownify }}
-          </p>
+          {{- else -}}
+            &nbsp;
           {{- end -}}
+          </p>
         </div>
       </div>
     </div><!-- end, overarching hero image div -->
