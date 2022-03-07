@@ -2,6 +2,19 @@
   "name": "hugo_site",
   "description": "This is the repository from which the [Hugo](https://gohugo.io)-generated version of [brycewray.com](https://www.brycewray.com) is built.",
   "main": "index.js",
+  "scripts": {
+    "clean": "rimraf public",
+    "devsass": "sass --no-source-map themes/npm-sass/assets/scss/index.scss themes/npm-sass/assets/css/index.css",
+    "prodsass": "sass --no-source-map themes/npm-sass/assets/scss/index.scss themes/npm-sass/assets/css/index.css --style=compressed",
+    "start": "NODE_ENV=development npm-run-all clean devsass --parallel dev:*",
+    "build": "NODE_ENV=production npm-run-all clean prod:sass prod:hugo",
+    "testbuild": "NODE_ENV=production npm-run-all clean prod:sass testbuild:hugo",
+    "dev:sass": "npm run devsass -- --watch",
+    "dev:hugo": "hugo server",
+    "prod:sass": "npm run prodsass",
+    "prod:hugo": "hugo --gc --minify",
+    "testbuild:hugo": "hugo server --gc --minify"
+  },
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
