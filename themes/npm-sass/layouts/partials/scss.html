@@ -13,7 +13,9 @@
     {{- $cssInterVF := "" -}}
     */}}
     {{ $cssFontsPublicSans := resources.Get "css/fonts_PublicSans.css" }}
+    {{ $cssFontsPublicSans = $cssFontsPublicSans | resources.PostCSS }}
     {{ $styles := resources.Get "css/index.css" }}
+    {{ $styles = $styles | resources.PostCSS }}
     {{ if hugo.IsProduction }}
       {{ $cssFontsPublicSans = $cssFontsPublicSans | minify | fingerprint | resources.PostProcess }}
       {{ $styles = $styles | minify | fingerprint }}
