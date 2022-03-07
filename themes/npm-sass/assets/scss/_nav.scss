@@ -1,20 +1,22 @@
+@use 'variables' as var;
+
 header {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   position: fixed;
   width: 100%;
   margin-top: 0;
-  background-color: $black;
+  background-color: var.$black;
   @media screen and (prefers-color-scheme: dark) {
-    background-color: $darkblue;
+    background-color: var.$darkblue;
   }
   z-index: 9999;
 }
 
 .nav {
-  color: $white;
-  background-color: $black;
+  color: var.$white;
+  background-color: var.$black;
   @media screen and (prefers-color-scheme: dark) {
-    background-color: $darkblue;
+    background-color: var.$darkblue;
   }
   &-Toggle {
     position: absolute;
@@ -24,7 +26,7 @@ header {
 
     svg {
       width: 1.5rem;
-      fill: $white;
+      fill: var.$white;
     }
     .close {
       display: none;
@@ -42,9 +44,9 @@ header {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-    background-color: $black;
+    background-color: var.$black;
     @media screen and (prefers-color-scheme: dark) {
-      background-color: $darkblue;
+      background-color: var.$darkblue;
     }
     display: flex;
     flex-direction: column;
@@ -75,15 +77,15 @@ header {
     a {
       text-decoration: none;
       border: 0;
-      color: $white;
+      color: var.$white;
       &:focus, &:active, &:hover {
-        color: $grey-2;
+        color: var.$grey-2;
       }
     }
 
     svg {
       width: 1.5rem;
-      fill: $white;
+      fill: var.$white;
     }
   }
 }
@@ -106,7 +108,7 @@ header {
 
 // now, larger screens
 
-@media only screen and (min-width: $bkpt_lg) {
+@media only screen and (min-width: var.$bkpt_lg) {
   .nav {
     &-Toggle {
       display: none;
@@ -119,7 +121,7 @@ header {
       margin: 0.5rem 1.5rem 0 0;
 
       li {
-        font-size: $pokey;
+        font-size: var.$pokey;
         display: block;
         text-transform: uppercase;
         // letter-spacing: 0.2em;
