@@ -13,9 +13,7 @@
     {{- $cssInterVF := "" -}}
     */}}
     {{ $cssFontsPublicSans := resources.Get "css/fonts_PublicSans.css" }}
-    {{/* $cssFontsPublicSans = $cssFontsPublicSans | resources.PostCSS */}}
     {{ $styles := resources.Get "css/index.css" }}
-    {{/* $styles = $styles | resources.PostCSS */}}
     {{ if hugo.IsProduction }}
       {{ $cssFontsPublicSans = $cssFontsPublicSans | minify | fingerprint }}
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
@@ -30,12 +28,12 @@
         {{ end }}
       {{- end -}}
     {{ else if .Site.IsServer }}
-      {{/* $cssFontsPublicSans = $cssFontsPublicSans */}}
       {{ $styles = $styles | resources.ExecuteAsTemplate (printf "index.dev.%v.css" now.UnixMilli) .}}
       <link href="{{ $cssFontsPublicSans.RelPermalink }}" rel="stylesheet" />
       <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
       {{/*
-        - above from https://github.com/Gioni06/hugo-pipes-tailwind-3/blob/main/layouts/partials/head.html
-        - based on https://dev.to/jonas_duri/how-to-use-tailwindcss-30-without-external-npm-scripts-just-hugo-pipes-2lg9
+        above based on:
+        - https://github.com/Gioni06/hugo-pipes-tailwind-3/blob/main/layouts/partials/head.html
+        - https://dev.to/jonas_duri/how-to-use-tailwindcss-30-without-external-npm-scripts-just-hugo-pipes-2lg9
       */}}
     {{ end }}
