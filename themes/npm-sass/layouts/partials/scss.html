@@ -7,7 +7,6 @@
     {{ $cssFontsPublicSans := resources.Get "css/fonts_PublicSans.css" }}
     {{ $styles := resources.Get "css/index.css" }}
     {{ if hugo.IsProduction }}
-      {{ $cssFontsPublicSans = $cssFontsPublicSans | resources.Minify | fingerprint }}
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsPublicSans.RelPermalink }}" type="text/css">
       {{- if eq .Site.Params.Host "CFP" -}}
