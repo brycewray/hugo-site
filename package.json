@@ -10,10 +10,9 @@
     "devsass": "sass --no-source-map themes/npm-sass/assets/scss/index.scss themes/npm-sass/assets/css/index.css",
     "prodsass": "sass --no-source-map themes/npm-sass/assets/scss/index.scss themes/npm-sass/assets/css/index.css --style=compressed",
     "start": "NODE_ENV=development npm-run-all clean PS-sass devsass --parallel dev:*",
-    "build": "NODE_ENV=production npm-run-all clean PS-sass prodsass prod:sass prod:hugo",
+    "build": "NODE_ENV=production npm-run-all clean PS-sass prodsass prod:hugo",
     "dev:sass": "npm run devsass -- --watch",
     "dev:hugo": "hugo server",
-    "prod:sass": "npm run prodsass",
     "prod:hugo": "hugo --gc --minify"
   },
   "keywords": [],
