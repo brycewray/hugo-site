@@ -11,7 +11,7 @@
     "start": "NODE_ENV=development npm-run-all clean PS-sass --parallel dev:*",
     "build": "NODE_ENV=production npm-run-all clean PS-sass sass-to-css prod:hugo",
     "dev:sass": "npm run sass-to-css -- --watch",
-    "dev:hugo": "hugo server",
+    "dev:hugo": "hugo server --bind=0.0.0.0 --baseURL=http://192.168.254.10:1313 --buildFuture --panicOnWarning",
     "prod:hugo": "hugo --gc --minify"
   },
   "keywords": [],
