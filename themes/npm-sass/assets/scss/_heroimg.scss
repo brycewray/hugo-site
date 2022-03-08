@@ -17,6 +17,7 @@
       height: 90vh;
       max-height: 90vh;
       min-height: 90vh;
+      // 90vh avoids cutoff on Chrome-on-iOS with iPad
     }
     @media screen and (min-width: var.$bkpt_xl) {
       height: 100vh;
