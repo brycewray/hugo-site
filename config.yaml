@@ -19,6 +19,10 @@ params:
   SiteLive: true # Boolean --- used for adapting robots.txt as needed
 
 markup:
+  highlight:
+    guessSyntax: true
+    noClasses: false
+    tabWidth: 2
   goldmark:
     extensions:
       linkify: false
@@ -31,9 +35,6 @@ markup:
       unsafe: true
       # only to allow for inline HTML and/or JS
       # ... other desired settings are defaults
-    highlight:
-      guessSyntax: true
-      noClasses: false
 
 privacy:
   twitter:
