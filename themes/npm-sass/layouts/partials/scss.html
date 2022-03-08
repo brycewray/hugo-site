@@ -19,7 +19,7 @@
           <style>{{- .Content | safeCSS -}}</style>
         {{ end }}
       {{- end -}}
-    {{ else if .Site.IsServer }}
+    {{ else }}
       <link href="{{ $cssFontsPublicSans.RelPermalink }}" rel="stylesheet" />
       <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
       {{/*
