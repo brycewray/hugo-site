@@ -5,7 +5,7 @@ subtitle: "Another version, another end run"
 description: "A Hugo fix for Tailwind CSS v.3—with a surprise bonus."
 author: Bryce Wray
 date: 2022-03-06T16:16:00-06:00
-#lastmod:
+lastmod: 2022-03-08T08:17:00-06:00
 discussionId: "2022-03-making-tailwind-jit-work-hugo-version-3-edition"
 featured_image: "2021-11-21_screenshot_TWCSS-on-Hugo_enlgd_3254x1564.png"
 featured_image_width: 3254
@@ -30,7 +30,7 @@ Perhaps you've already read the earlier post and thus don't need a total recap o
 - However, Juge's approach, which he demonstrated in a [deliberately bare-bones Hugo project](https://github.com/praveenjuge/hugo-tailwind-jit), presented some issues when I tried adding it to an existing Hugo repo.
 - Then, as I explained in that aforementioned [earlier post](/posts/2021/11/making-tailwind-jit-work-hugo/), I poked around with Hugo, Juge's approach, and Tailwind 2.x until I managed to make everything work together. I didn't care at all for the way this method forced me to restructure my CSS[^CSSmess] but, hey, it produced the final result I wanted.
 
-[^CSSmess]: Please understand that this unwanted result was **not** due to Juge's method, but rather because of the pecularities of how [`postcss-import`](https://github.com/postcss/postcss-import) and Tailwind worked together. And, yes, even though we were going around Tailwind in this endeavor, `postcss-import` was still in play.
+[^CSSmess]: Please understand that this unwanted result was **not** due to Juge's method, but rather because of the pecularities of how [`postcss-import`](https://github.com/postcss/postcss-import) and Tailwind worked together. And, yes, even though we were going around PostCSS in this endeavor, `postcss-import` was still in play.
 
 That's where things stood as of November 1, 2021. Then, a little over a month later, Tailwind Labs released Tailwind **3.0**, with JIT now an opt-*out* feature; but JIT still wasn't truly Hugo-okay without the Juges-inspired workaround. Testing revealed that the solution I'd described, slightly adjusted, was still workable. Yet, I remained convinced there should be a better way, one that didn't require what I considered to be mangling of my CSS file structure.[^HugoOfficial]
 
@@ -134,7 +134,7 @@ And, for me, one of the biggest benefits of doing Tailwind-on-Hugo this way is t
 
 ## A surprise for Sass supporters
 
-Finally, here's that extra I promised you Sass-on-Hugo fans: a slight variation on this approach **also** makes it possible to use **Dart Sass** on Hugo, with **any** Hugo-supporting hosting vendor! That's a biggie[^DartSassEmbedded]---as I'll explain in a future post, after I finish running a few more tests to make sure my eyes aren't deceiving me.
+Finally, here's that extra I promised you Sass-on-Hugo fans: this approach gave me an idea for how to enable the use of **[Dart Sass](https://sass-lang.com/dart-sass)** on Hugo, and with **any** Hugo-supporting hosting vendor! That's a biggie[^DartSassEmbedded]---as I'll explain in a future post, after I finish running a few more tests to make sure my eyes aren't deceiving me.
 
 Stay tuned.
 
