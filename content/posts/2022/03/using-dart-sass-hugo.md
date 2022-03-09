@@ -6,7 +6,7 @@ description: "Until hosts allow Embedded Dart Sass in their build processes, her
 author: Bryce Wray
 date: 2022-03-08T11:09:00-06:00
 #draft: true
-#lastmod:
+lastmod: 2022-03-09T17:47:00-06:00
 discussionId: "2022-03-using-dart-sass-hugo"
 featured_image: "sass-and-glasses_3200x1800.png"
 featured_image_width: 3200
@@ -15,6 +15,9 @@ featured_image_alt: "Sass logo and Sass glasses icon on gradient background"
 featured_image_caption: |
   <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
+
+**Update, 2022-03-09**: Things changed dramatically the day after I originally wrote this, so there's a [sequel](/posts/2022/03/using-dart-sass-hugo-sequel/) you'll definitely want to read after this one.
+{.yellowBox}
 
 {{% disclaimer %}}
 
