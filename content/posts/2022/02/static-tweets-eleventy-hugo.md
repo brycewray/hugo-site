@@ -6,7 +6,7 @@ subtitle: "To serve and protect"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray
 date: 2022-02-07T12:00:00-06:00
-lastmod: 2022-02-11T21:09:00-06:00
+lastmod: 2022-03-08T20:57:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -17,7 +17,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a>; <a href="https://unsplash.com/s/photos/twitter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Update, 2022-02-12**: After reading this post, please see also [its follow-up](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) regarding use of the v.2 Twitter Developer API mentioned herein.
+**Update, 2022-02-11**: After reading this post, please see also [its follow-up](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) regarding use of the v.2 Twitter Developer API mentioned herein.
 {.yellowBox}
 
 You know it’s important to respect, and protect, the privacy of your website’s visitors. However, serving them embedded social media content can complicate your good intentions. The good news is that my two favorite [static site generators](https://jamstack.org/generators/) (SSGs), [Eleventy](https://11ty.dev/) and [Hugo](https://gohugo.io/), will help you fix that.
