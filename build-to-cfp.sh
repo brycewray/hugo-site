@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
+# - thanks, @bep!
+
 echo "Install Dart Sass Embedded..."
 
 # This should be in the PATH.

@@ -79,6 +79,11 @@
     <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     {{- $transpiler := (dict "transpiler" "dartsass") -}}
     {{/*
+      Dart Sass Embedded stuff herein:
+      - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
+      - thanks, @bep!
+    */}}
+    {{/*
     {{- $optionsFontsInter := merge $transpiler (dict "targetPath" "css/fonts_Inter.css") -}}
     {{- $optionsFontsInterComp := merge $transpiler (dict "targetPath" "css/fonts_Inter.min.css") -}}
     {{- $optionsInterVF := merge $transpiler (dict "targetPath" "css/intervf.css") -}}
