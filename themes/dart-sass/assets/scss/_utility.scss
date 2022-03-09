@@ -1,3 +1,5 @@
+@use 'variables' as var;
+
 // === utility classes
 .ctr {
   text-align: center;
@@ -16,35 +18,35 @@
 }
 
 .sortabig {
-  font-size: $sortabig;
+  font-size: var.$sortabig;
 }
 
 .bigger {
-  font-size: $bigger;
+  font-size: var.$bigger;
 }
 
 .teenytxt, .teeny {
-  font-size: $teeny;
+  font-size: var.$teeny;
 }
 
 .legaltxt, .legal {
-  font-size: $legal;
+  font-size: var.$legal;
 }
 
 .pokeytxt, .pokey {
-  font-size: $pokey;
+  font-size: var.$pokey;
 }
 
 .eightyFive {
-  font-size: $eightyFive;
+  font-size: var.$eightyFive;
 }
 
 .seventyFive {
-  font-size: $seventyFive;
+  font-size: var.$seventyFive;
 }
 
 .sixtyFive {
-  font-size: $sixtyFive;
+  font-size: var.$sixtyFive;
 }
 
 .topM2 {
@@ -69,23 +71,23 @@
     font-size: inherit;
   }
   &-link {
-    color: $blue;
+    color: var.$blue;
   }
   &-link:active, &-link:focus, &-link:hover {
-    color: $darkblue;
+    color: var.$darkblue;
   }
   &-muted {
-    color: $grey-1;
+    color: var.$grey-1;
     @media (prefers-color-scheme: dark) {
-      color: $grey-2-dark-mode;
+      color: var.$grey-2-dark-mode;
     }
   }
   &-body {
-  color: $default-color;
+  color: var.$default-color;
   }
 }
 .bg-primary {
-  background-color: $blue;
+  background-color: var.$blue;
 }
 
 .bg-center {
@@ -101,20 +103,20 @@
 }
 
 .btn-primary {
-  background-color: $blue;
-  border-color: $blue;
+  background-color: var.$blue;
+  border-color: var.$blue;
   color: hsl(0, 0%, 100%);
   border-radius: 6px;
   padding: 0.25rem 0.5rem;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: $darkblue;
-  border-color: $darkblue;
+  background-color: var.$darkblue;
+  border-color: var.$darkblue;
 }
 
 .sansSerif {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
 }
 
 .IEonly {
@@ -122,7 +124,7 @@
 }
 
 .yellowBox, .blueBox {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   display: block;
   box-sizing: border-box;
   border: 1px solid hsl(0, 0%, 20%);
@@ -130,7 +132,7 @@
   width: 100%;
   padding: 1.5em;
   @media (prefers-color-scheme: dark) {
-    border: 1px solid $grey-1;
+    border: 1px solid var.$grey-1;
   }
 }
 
@@ -162,24 +164,24 @@ img.containedImage {
 }
 
 .red {
-  color: $red;
+  color: var.$red;
   @media (prefers-color-scheme: dark) {
-    color: $red-dark-mode;
+    color: var.$red-dark-mode;
   }
 }
 
 .imgcCaption, .imgCaption, .lazypicturecaption {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   padding: 0;
   margin-block-start: 0.5em;
   line-height: 1.375;
-  font-size: $pokey;
+  font-size: var.$pokey;
   text-align: center;
 }
 
 .FeatImgCaption {
-  font-family: $sans-serif;
-  font-size: $legal;
+  font-family: var.$sans-serif;
+  font-size: var.$legal;
   text-align: center;
   padding-top: 0.5em;
   margin-bottom: 0;
@@ -200,13 +202,13 @@ img.containedImage {
 .punctuationExample {
   font-size: 1.5em;
   font-weight: normal;
-  font-family: $serif;
+  font-family: var.$serif;
   text-align: center;
 }
 
 .indentAfterLI {
   margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
-  @media screen and (min-width: $bkpt_2xl) {
+  @media screen and (min-width: var.$bkpt_2xl) {
     margin-left: 2em;
   }
 }
@@ -231,7 +233,7 @@ img.containedImage {
 /* === end, borrowed from TWCSS === */
 
 .grayedOut {
-  color: $grey-2-dark-mode;
+  color: var.$grey-2-dark-mode;
 }
 
 /* start, for imgc.html */
@@ -253,18 +255,18 @@ img.containedImage {
   margin-right: auto;
   margin-left: auto;
   h1 {
-    font-size: $biggest;
+    font-size: var.$biggest;
     margin-top: 5rem;
     margin-bottom: 3rem;
-    @media screen and (min-width: $bkpt_lg) {
+    @media screen and (min-width: var.$bkpt_lg) {
       font-size: 3.25rem;
     }
-    @media screen and (min-width: $bkpt_xl) {
+    @media screen and (min-width: var.$bkpt_xl) {
       font-size: 3.5rem;
     }
   }
   p {
-    font-size: $slightlybig;
+    font-size: var.$slightlybig;
   }
   .bottom {
     margin-bottom: 10em;

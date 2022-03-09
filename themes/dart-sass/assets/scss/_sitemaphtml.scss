@@ -1,7 +1,9 @@
+@use 'variables' as var;
+
 // === for HTML sitemap
 
 .sitemapDiv {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   h1 {
     text-align: center;
     font-size: 2.25rem;
@@ -14,7 +16,7 @@
   }
 
   ul li {
-    font-size: $pokey;
+    font-size: var.$pokey;
     margin-bottom: 0.75em;
     line-height: 1.5em;
   }

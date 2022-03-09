@@ -1,7 +1,9 @@
+@use 'variables' as var;
+
 // == footnotes == //
 
 .footnotes, .footnote-sim, .footnote-ref {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
 }
 
 .footnotes {
@@ -9,9 +11,9 @@
   hr {
     border: none;
     height: 1px;
-    background-color: $black;
+    background-color: var.$black;
     @media (prefers-color-scheme: dark) {
-      background-color: $white;
+      background-color: var.$white;
     }
   }
 }
@@ -29,7 +31,7 @@
     padding-inline-start: 1.5rem;
   }
   ol li {
-    font-size: $pokey;
+    font-size: var.$pokey;
     // As of now, `::marker` has too little support even in good browsers;
     // see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
     p {

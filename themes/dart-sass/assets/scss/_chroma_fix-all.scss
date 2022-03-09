@@ -1,6 +1,8 @@
+@use 'variables' as var;
+
 pre,
 code {
-  font-family: $monospaced;
+  font-family: var.$monospaced;
 }
 
 code[class*="language-"],
@@ -49,7 +51,7 @@ pre[class*="language-"] {
 
 article code {
   font-size: 0.9em;
-  background-color: $blueLightCode;
+  background-color: var.$blueLightCode;
   @media (prefers-color-scheme: dark) {
     background-color: #454545;
   }

@@ -1,18 +1,20 @@
+@use 'variables' as var;
+
 .tweet-card {
-  font-family: $sans-serif;
+  font-family: var.$sans-serif;
   width: 100%;
   margin: 1.5rem auto;
   padding: 1rem;
-  border: 2px solid $grey-1;
+  border: 2px solid var.$grey-1;
   border-radius: 12px;
-  background: $white;
-  @media screen and (min-width: $bkpt_md) {
+  background: var.$white;
+  @media screen and (min-width: var.$bkpt_md) {
     width: 90%;
   }
-  @media screen and (min-width: $bkpt_lg) {
+  @media screen and (min-width: var.$bkpt_lg) {
     width: 80%;
   }
-  @media screen and (min-width: $bkpt_2xl) {
+  @media screen and (min-width: var.$bkpt_2xl) {
     width: 70%;
   }
   @media screen and (prefers-color-scheme: dark) {
@@ -30,21 +32,21 @@
     - https://css-tricks.com/better-line-breaks-for-long-urls/
     */
     @media screen and (prefers-color-scheme: dark) {
-      color: $blueLight;
+      color: var.$blueLight;
     }
   }
   @media screen and (prefers-color-scheme: dark) {
-    border: 2px solid $grey-2;
-    color: $white;
+    border: 2px solid var.$grey-2;
+    color: var.$white;
   }
 }
 
 .tweet-body {
-  font-size: $stdsize;
+  font-size: var.$stdsize;
   line-height: 1.5em;
   text-align: left !important;
-  @media screen and (min-width: $bkpt_lg) {
-    font-size: $minimalbig;
+  @media screen and (min-width: var.$bkpt_lg) {
+    font-size: var.$minimalbig;
   }
 }
 
@@ -77,18 +79,18 @@
     flex-grow: 1;
     &-name {
       font-weight: bold;
-      color: $black;
+      color: var.$black;
       @media screen and (prefers-color-scheme: dark) {
-        color: $white;
+        color: var.$white;
       }
       line-height: 1.375;
     }
     &-handle {
-      color: $grey-1;
+      color: var.$grey-1;
       @media screen and (prefers-color-scheme: dark) {
-        color: $grey-2-dark-mode;
+        color: var.$grey-2-dark-mode;
       }
-      font-size: $pokey;
+      font-size: var.$pokey;
       line-height: 1;
     }
     .tweet-bird {
@@ -101,22 +103,22 @@
   margin-top: 1rem;
   display: flex;
   align-items: center;
-  color: $grey-1;
-  font-size: $pokey;
+  color: var.$grey-1;
+  font-size: var.$pokey;
   @media screen and (prefers-color-scheme: dark) {
-    color: $grey-2-dark-mode;
+    color: var.$grey-2-dark-mode;
   }
   .tweet-like-icon, .tweet-like-count {
     display: none;
   }
   a {
-    color: $grey-1;
+    color: var.$grey-1;
     @media screen and (prefers-color-scheme: dark) {
-      color: $grey-2-dark-mode;
+      color: var.$grey-2-dark-mode;
     }
   }/* === needed in Eleventy but not in Hugo
   .tweet-date:after {
     content: " (UTC)";
-    font-size: $legal;
+    font-size: var.$legal;
   }*/
 }
