@@ -5,8 +5,8 @@ subtitle: "A solution for even Node-haters"
 description: "Hugo’s chief developer comes up with a way to get Embedded Dart Sass on the host, after all."
 author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
+#lastmod: 2022-03-09T18:01:00-06:00 # (!)
 #draft: true
-#lastmod:
 discussionId: "2022-03-using-dart-sass-hugo-sequel"
 featured_image: "sass-and-glasses_3200x1800.png"
 featured_image_width: 3200
@@ -83,7 +83,7 @@ dart-sass-embedded --version
 
 echo "Building..."
 
-hugo
+hugo --gc --minify
 ```
 
 The other two, below, are obviously **highly** derivative of this one.
@@ -163,7 +163,7 @@ That's likely to produce a very long list, separated by `:` characters, so you'l
 For example, here's what I got back from trying `echo "PATH is $PATH"` in an early version of the Cloudflare Pages script (and I have separated them onto separate lines, **without** the `:` separator, for your reading convenience, but that's not how they come back when you do it):
 
 ```bash
-Path is 
+Path is
 /opt/buildhome/.wasmer/bin
 /opt/buildhome/.gimme/versions/go1.14.4.linux.amd64/bin
 /opt/buildhome/cache/.binrc-a5679f71f5966d1b3450c8dcd52d4743ec08e632/binaries/gohugoio/hugo/v0.93.3
