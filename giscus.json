@@ -2,7 +2,9 @@
   "origins": [
     "https://www.brycewray.com",
     "https://brycewray.com",
-    "https://hugo-site-vercel.vercel.app"
+    "https://hugo-site-vercel.vercel.app",
+    "https://eleventy-site-1wo.pages.dev",
+    "https://eleventy-site-vercel.vercel.app"
   ],
   "originsRegex": [
     "http://localhost:[0-9]+",
