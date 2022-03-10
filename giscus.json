@@ -1,0 +1,12 @@
+{
+  "origins": [
+    "https://www.brycewray.com",
+    "https://brycewray.com",
+    ""
+  ],
+  "originsRegex": [
+    "http://localhost:[0-9]+",
+    "http://192.168.254.10:[0-9]+"
+  ],
+  "defaultCommentOrder": "oldest"
+}
