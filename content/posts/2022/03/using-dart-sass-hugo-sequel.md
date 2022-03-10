@@ -5,7 +5,7 @@ subtitle: "A solution for even Node-haters"
 description: "Hugo’s chief developer comes up with a way to get Embedded Dart Sass on the host, after all."
 author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
-#lastmod: 2022-03-09T18:01:00-06:00 # (!)
+lastmod: 2022-03-10T09:02:00-06:00
 #draft: true
 discussionId: "2022-03-using-dart-sass-hugo-sequel"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -46,7 +46,9 @@ Also, those of you who've never used Dart Sass up to now should be aware that it
 
 ## The scripts
 
-Once you have the appropriate one of these set up as your on-host build script (remember to make that setting in the appropriate place!), the only thing you'll have to change from time to time is the `DARTSASS_VERSION` variable, based on the [latest available release of Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases). Before using one of the scripts, you also should make sure it has sufficient *write permissions*, using the [following tip](https://community.cloudflare.com/t/permission-denied-on-build-script/295840/6) I found in a Cloudflare forum discussion on the subject:
+Once you have the appropriate one of these set up as your on-host build script[^shellSyntax] (remember to make that setting in the appropriate place!), the only thing you'll have to change from time to time is the `DARTSASS_VERSION` variable, based on the [latest available release of Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases). Before using one of the scripts, you also should make sure it has sufficient *write permissions*, using the [following tip](https://community.cloudflare.com/t/permission-denied-on-build-script/295840/6) I found in a Cloudflare forum discussion on the subject:
+
+[^shellSyntax]: Since it's a shell script, you'll need to use the right syntax. Let's say your normal build command is `hugo --minify`, and you've named your chosen shell script `build-to-host.sh`. That means you'll go into the right place in your host's settings and change the build command **from** `hugo --minify` **to** `./build-to-host.sh`. (That `./` at the beginning is utterly necessary.)
 
 > You can store the \[script] in \[Git] using `git add --chmod=+x build.sh`.
 
