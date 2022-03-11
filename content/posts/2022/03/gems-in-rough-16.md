@@ -5,7 +5,7 @@ subtitle: "Or, what else has been going on?"
 description: "Eleventy 2.x (yes, already), trying Giscus, another shameless plug."
 author: Bryce Wray
 date: 2022-03-11T09:55:00-06:00
-#lastmod:
+#lastmod: 2022-03-11T10:08:00-06:00 (!)
 #initTextEditor: Ulysses
 discussionId: "2022-03-gems-in-rough-16"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -27,7 +27,7 @@ Since the [Eleventy](https://11ty.dev/) SSG [became his full-time role](/posts/2
 
 The new dev server should be a great improvement. The current “canary” version of Eleventy, using this server, loads only a few kilobytes of extra JavaScript. That’s as compared to *hundreds* of kilobytes with Browsersync—and without all the nasty “red alert”-level warnings that Browsersync typically kicks up at launch. Those often cause new users in particular to wonder, erroneously but understandably, what in blue blazes they did wrong.
 
-What does this mean for existing Eleventy-based websites? Leatherman says only those sites with specific needs for (and/or ties to) Browsersync code should need fixes for breaking changes—and, for those instances, he’s even cooking up a [plugin](https://github.com/11ty/eleventy-server-browsersync) to let such sites continue to use Browsersync even with v.2.x. Other Eleventy sites should transition nearly seamlessly to the new server. Of course, that’s what testing is for, so we’ll see how that goes; but everything looks very promising at this point.
+What does this mean for existing Eleventy-based websites? Leatherman says only those sites with specific needs for (and/or ties to) Browsersync code should need fixes for breaking changes—and, for those instances, he’s cooking up a [plugin](https://github.com/11ty/eleventy-server-browsersync) to let such sites continue to use Browsersync even with v.2.x. Other Eleventy sites should transition nearly seamlessly to the new server. Of course, that’s what testing is for, so we’ll see how that goes; but everything looks very promising at this point.
 
 Leatherman announced these upcoming changes and demo’d the new dev server in his most recent weekly video for the [Eleventy YouTube channel](https://www.youtube.com/channel/UCskGTioqrMBcw8pd14_334A)—something else for which he has far more bandwidth now that he’s all-Eleventy, all-the-time.
 
