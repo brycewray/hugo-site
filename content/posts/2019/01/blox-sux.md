@@ -35,7 +35,7 @@ That consideration aside, said Godforsaken Unidentified Page Builder, hereafter 
 - **Code bloat**---Like just about every other page builder (even the two or three halfway decent ones), GUPB spews a ton of nested DIVs in order to do its thing. The result is agony to read when you have to open a browser's Inspector window to figure out why something got screwy. It's as metaphorically stinky as [the ancient practice of divining by "reading" the entrails of animal sacrifices](https://en.wikipedia.org/wiki/Haruspex) was literally so.
 
 - **Shortcode spray**---GUPB is one of those page builders that, if deactivated in favor of a better option, leaves behind a <em>\[bleep\]</em>ton of shortcode that is (a.)&nbsp;absolutely useless and (b.)&nbsp;a tedious chore to clean up. The following screen capture from [Pippin Williamson's excellent "WordPress page builder plugins: A critical review"](https://pippinsplugins.com/wordpress-page-builder-plugins-critical-review/) is a perfect example, even though it shows only a  fraction of some of the shortcodes mess that's really likely to result *(and, yeah, that is from GUPB, as it turns out; so, if you're willing to do a little detective work and/or you simply know your page builder shortcodes when you see ’em, you now know which page builder is GUPB)*.
-<p style="height: 0; margin: 0;">&nbsp;</p><!-- Needed to get the image out from the list for formatting -->
+<p>&nbsp;</p>
 
 {{< imgc src="screen-cap-from-Pippin-Williamson-s-page-builders-review_986x482.jpg" alt="Screen capture showing shortcodes from a WordPress page builder" width="986" height="482" >}}
 
