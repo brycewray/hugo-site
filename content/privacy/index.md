@@ -3,7 +3,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors."
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2022-02-12T17:37:00-06:00
+lastmod: 2022-03-11T08:11:00-06:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -17,6 +17,10 @@ This site's traffic goes through [Cloudflare](https://cloudflare.com) and is con
 ### Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, "[Fathom Analytics: count on it](/posts/2020/06/fathom-analytics-count-on-it/)."
+
+### Giscus
+
+The site's [Giscus](https://giscus.app) commenting system, which is based on the [GitHub Discussions search API](https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions#search), performs no tracking.
 
 ### Google Fonts
 
