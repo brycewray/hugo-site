@@ -5,7 +5,7 @@ subtitle: "A solution for even Node-haters"
 description: "Hugo’s chief developer comes up with a way to get Embedded Dart Sass on the host, after all."
 author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
-lastmod: 2022-03-10T09:02:00-06:00
+lastmod: 2022-03-12T10:34:00-06:00
 #draft: true
 discussionId: "2022-03-using-dart-sass-hugo-sequel"
 featured_image: "sass-and-glasses_3200x1800.png"
