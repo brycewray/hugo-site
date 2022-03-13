@@ -77,30 +77,61 @@
     -->
     <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    {{/*-
+    {{- $transpiler := (dict "transpiler" "dartsass") -}}
+    {{/*
       Dart Sass Embedded stuff herein:
       - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
       - thanks, @bep!
-    -*/}}
-    {{- $css := "" -}}
-    {{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
-    {{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
+    */}}
+    {{/*
+    {{- $optionsFontsInter := merge $transpiler (dict "targetPath" "css/fonts_Inter.css") -}}
+    {{- $optionsFontsInterComp := merge $transpiler (dict "targetPath" "css/fonts_Inter.min.css") -}}
+    {{- $optionsInterVF := merge $transpiler (dict "targetPath" "css/intervf.css") -}}
+    {{- $optionsInterVFComp := merge $transpiler (dict "targetPath" "css/intervf.min.css") -}}
+    {{- $cssFontsInter := "" -}}
+    {{- $cssInterVF := "" -}}
+    */}}
+    {{- $optionsFontsPublicSans := merge $transpiler (dict "targetPath" "css/fonts_PublicSans.css") -}}
+    {{- $optionsFontsPublicSansComp := merge $transpiler (dict "targetPath" "css/fonts_PublicSans.min.css") -}}
+    {{- $cssFontsPublicSans := "" -}}
     {{- if hugo.IsProduction -}}
-      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint -}}
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" integrity="{{ $css.Data.Integrity }}">
+      {{- $cssFontsPublicSans = resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $optionsFontsPublicSansComp | fingerprint "md5" -}}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsPublicSans.RelPermalink }}" type="text/css">
+      {{- if eq .Site.Params.Host "CFP" -}}
+        {{ with resources.Get "scss/index.scss" | resources.ToCSS $transpiler }}
+          <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
+        {{ end }}
+      {{- else -}}
+        {{ with resources.Get "scss/index.scss" | resources.ToCSS $transpiler }}
+          <style>{{- .Content | safeCSS -}}</style>
+        {{ end }}
+      {{- end -}}
+      {{/*
+      {{- $cssInterVF = resources.Get "scss/_intervf.scss" | resources.ToCSS $optionsInterVFComp | fingerprint "md5" -}}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssInterVF.RelPermalink }}">
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssInterVF.RelPermalink }}" type="text/css">
+      */}}
     {{- else -}}
-      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS -}}
-      <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-      <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+      {{- $cssFontsPublicSans = resources.Get "scss/_fonts_PublicSans.scss" | resources.ToCSS $optionsFontsPublicSans -}}
+      <link rel="preload" as="style" href="{{ $cssFontsPublicSans.RelPermalink }}">
+      <link rel="stylesheet" href="{{ $cssFontsPublicSans.RelPermalink }}" type="text/css">
+      {{ with resources.Get "scss/index.scss" | resources.ToCSS $transpiler }}
+        <style>{{- .Content | safeCSS -}}</style>
+      {{ end }}
+      {{/*
+      {{- $cssInterVF = resources.Get "scss/_intervf.scss" | resources.ToCSS $optionsInterVF -}}
+      <link rel="preload" as="style" href="{{ $cssInterVF.RelPermalink }}">
+      <link rel="stylesheet" href="{{ $cssInterVF.RelPermalink }}" type="text/css">
+      */}}
     {{- end }}
     {{/* end, CSS/SCSS */}}
 
     {{- if hugo.IsProduction -}}
-    {{/*- Fathom - beautiful, simple website analytics -*/}}
+    <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://unwavering-reward.brycewray.com/script.js"{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}} data-site="CSERHYIA" defer></script>
-    {{/*- / Fathom -*/}}
-    {{- end -}}
+    <!-- / Fathom -->
+    {{- end }}
 
     <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#best_practices -->
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
