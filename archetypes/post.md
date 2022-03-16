@@ -8,7 +8,7 @@ date: {{ .Date }}
 #lastmod:
 draft: true
 #initTextEditor: **FILL IN**
-discussionId: "20xx-0x-{{ .Name }}"
+discussionId: "202x-xx-{{ .Name }}"
 #featured_image: ""
 #featured_image_width: 0000
 #featured_image_height: 0000
