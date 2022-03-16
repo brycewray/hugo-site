@@ -20,13 +20,13 @@
     <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
     {{- end -}}
 
-    {{- if .IsHome -}}
+    {{- if .IsHome }}
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta property="og:description" content="{{ .Site.Params.Description }}" />
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
     <meta name="og:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ $fallbackImg }}" />
     <link rel="canonical" href="{{ .Site.BaseURL }}" />
-    {{- else -}}
+    {{- else }}
     <meta name="description" content="{{ .Params.Description }}">
     <meta property="og:description" content="{{ .Params.Description }}" />
     <meta property="og:url" content="{{ .Page.Permalink }}" />
@@ -46,8 +46,8 @@
     <meta name="twitter:description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
     <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 
-    {{- /* **** BEGINNING, favicons **** -*/ -}}
-    {{- /* generics */ -}}
+    {{/*- **** BEGINNING, favicons **** -*/}}
+    {{/*- generics -*/}}
     <link rel="icon" type="image/svg+xml" href="/assets/svg/svgNavIcon_reduced.svg" />
     <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">

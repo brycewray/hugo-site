@@ -75,7 +75,7 @@
       </div>
     </div><!-- end, overarching hero image div -->
     {{- else -}}
-      {{ partial "billboard.html" . }}
+      {{ partialCached "billboard.html" . }}
     {{- end -}}
 
     <div class="container-narrower">
@@ -88,7 +88,7 @@
           </a>
         </button>
       </div>
-      {{ partial "comments.html" . }}
+      {{ partialCached "comments.html" . }}
     </article>
   </div>
 
