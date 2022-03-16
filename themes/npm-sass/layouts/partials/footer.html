@@ -3,16 +3,16 @@
       <div class="footerWrapper">
         <div class="icons-box">
           <a class="icon" href="https://github.com/brycewray" target="_blank" rel="noopener" aria-label="GitHub">
-            {{- partial "svgGitHubIcon.html" . -}}
+            {{- partialCached "svgGitHubIcon.html" . -}}
           </a>
           <a class="icon" href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" aria-label="Twitter">
-            {{- partial "svgTwitterIcon.html" . -}}
+            {{- partialCached "svgTwitterIcon.html" . -}}
           </a>
           <a class="icon" href="/index.xml" aria-label="RSS">
-            {{- partial "svgRSSIcon.html" . -}}
+            {{- partialCached "svgRSSIcon.html" . -}}
           </a>
           <a class="icon" href="/index.json" aria-label="JSON newsfeed">
-            {{- partial "svgJSONfeedIcon.html" . -}}
+            {{- partialCached "svgJSONfeedIcon.html" . -}}
           </a>
         </div>
         <p>
