@@ -5,8 +5,8 @@ subtitle: "There’s no reason to wait for the good stuff"
 description: "Until hosts allow Embedded Dart Sass in their build processes, here’s a not-too-hacky workaround for Sass-on-Hugo fans."
 author: Bryce Wray
 date: 2022-03-08T11:09:00-06:00
+lastmod: 2022-03-17T06:32:00-05:00
 #draft: true
-lastmod: 2022-03-09T17:47:00-06:00
 discussionId: "2022-03-using-dart-sass-hugo"
 featured_image: "sass-and-glasses_3200x1800.png"
 featured_image_width: 3200
@@ -29,7 +29,7 @@ First, as almost always seems necessary, I'll provide some back story.
 
 In October, 2020, the Sass project [deprecated the LibSass implementation](https://sass-lang.com/blog/libsass-is-deprecated) on which [Hugo Pipes](https://gohugo.io/hugo-pipes) depends to provide Sass support. Two key points in the deprecation announcement were:
 
-- Going forward, LibSass will receive no additional feature updates, but rather only fixes for major bugs and security issues. As a result, since LibSass has received no feature updates since November, 2018, LibSass users---and LibSass-dependent apps like Hugo---are now nearly four-and-a-half years behind the curve where Sass features are concerned.
+- Going forward, LibSass will receive no additional feature updates, but rather only fixes for major bugs and security issues. As a result, since LibSass has received no feature updates since November, 2018, LibSass users---and LibSass-dependent apps like Hugo---are now nearly three-and-a-half years behind the curve where Sass features are concerned.
 - All LibSass users should switch to [Dart Sass](https://sass-lang.com/dart-sass).
 
 On many if not most other [static site generators](https://jamstack.org/generators) (SSGs), moving to Dart Sass is a fairly simple matter (other than whatever Sass code changes it might require, of course): one needs only to use the [standard Sass package](https://github.com/sass/sass). However, since LibSass is baked into Hugo, the only answer [appears to be](https://discourse.gohugo.io/t/question-are-there-plans-to-support-dart-sass-and-its-newly-introduced-use-modular-system/21882) in the form of [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded), present in one's `path`. And, while that's doable on a website developer's personal device, getting it into a hosting vendor's build process is another matter, one [which remains unsolved](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099) at this writing.
@@ -75,7 +75,7 @@ Then, open `package.json` and make its `scripts` object look as follows:
   "dev:hugo": "hugo server",
   "prod:hugo": "hugo --gc --minify"
 },
-``` 
+```
 
 What do all those scripts do? While the following explanation doesn't cover the scripts in order, its sequence may make it easier to understand their interaction:
 
