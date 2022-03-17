@@ -2,10 +2,10 @@
 #layout: singlepost
 title: "Gems in the rough #16"
 subtitle: "Or, what else has been going on?"
-description: "Eleventy 2.x (yes, already), trying Giscus, another shameless plug."
+description: "Eleventy 2.x (yes, already), trying giscus, another shameless plug."
 author: Bryce Wray
 date: 2022-03-11T09:55:00-06:00
-#lastmod: 2022-03-11T10:08:00-06:00 (!)
+lastmod: 2022-03-17T10:39:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-03-gems-in-rough-16"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -31,19 +31,19 @@ What does this mean for existing Eleventy-based websites? Leatherman says only t
 
 Leatherman announced these upcoming changes and demo’d the new dev server in his most recent weekly video for the [Eleventy YouTube channel](https://www.youtube.com/channel/UCskGTioqrMBcw8pd14_334A)—something else for which he has far more bandwidth now that he’s all-Eleventy, all-the-time.
 
-## Trying Giscus
+## Trying giscus
 
-As of the initial publication of this post, I’m trying a commenting system called [Giscus](https://giscus.app). It’s based on [Utterances](https://utteranc.es). Both rely on GitHub APIs. While Utterances uses the Search API for GitHub Issues, Giscus uses the Search API for the newer, more feature-rich, and seemingly more polished [GitHub Discussions](https://docs.github.com/en/discussions).[^1] (Of course, these projects’ dependence on GitHub also means that, as of now, each use thereof requires a GitHub login. Indeed, I couldn’t even find the **word** *guest* anywhere within the GitHub Discussions documentation.)
+As of the initial publication of this post, I’m trying a commenting system called [giscus](https://giscus.app). It’s based on [Utterances](https://utteranc.es). Both rely on GitHub APIs. While Utterances uses the Search API for GitHub Issues, giscus uses the Search API for the newer, more feature-rich, and seemingly more polished [GitHub Discussions](https://docs.github.com/en/discussions).[^1] (Of course, these projects’ dependence on GitHub also means that, as of now, each use thereof requires a GitHub login. Indeed, I couldn’t even find the **word** *guest* anywhere within the GitHub Discussions documentation.)
 
-It was [Patrick Kollitsch](https://github.com/davidsneighbour)—often better known online as [davidsneighbour](https://twitter.com/davidsneighbour)—who advised me via email to give Giscus a shot. As I replied to him:
+It was [Patrick Kollitsch](https://github.com/davidsneighbour)—often better known online as [davidsneighbour](https://twitter.com/davidsneighbour)—who advised me via email to give giscus a shot. As I replied to him:
 
-> Back in 2020, I did a [post about commenting options for static sites](/posts/2020/10/conversation-piece/) (and one of those mentioned was Utterances, which inspired Giscus). I chose not too long after that to go to my current reply-via-email setup, because I read on another fellow’s site that he did it that way because[^2] he found such interactions with readers were more meaningful. Since, I’ve found this to be true on my site, too. That said: if you’ve read enough of my stuff, you know that I’m always attracted by Shiny New (or sorta New) Things, so I may just give Giscus a look-see.
+> Back in 2020, I did a [post about commenting options for static sites](/posts/2020/10/conversation-piece/) (and one of those mentioned was Utterances, which inspired giscus). I chose not too long after that to go to my current reply-via-email setup, because I read on another fellow’s site that he did it that way because[^2] he found such interactions with readers were more meaningful. Since, I’ve found this to be true on my site, too. That said: if you’ve read enough of my stuff, you know that I’m always attracted by Shiny New (or sorta New) Things, so I may just give giscus a look-see.
 
 .&nbsp;.&nbsp;. and so I am doing just that. I had one commenting system or another on my site for about two years until that change last year and, now, here we are again—at least for now.
 
-To be sure, I’m *not* taking away the reply-by-email button/link, which will stick around regardless of what I decide long-term about continuing with Giscus. In the meantime, you have *two* ways to react to each post. Your faithful correspondent always welcomes your thoughts.
+To be sure, I’m *not* taking away the reply-by-email button/link, which will stick around regardless of what I decide long-term about continuing with giscus. In the meantime, you have *two* ways to react to each post. Your faithful correspondent always welcomes your thoughts.
 
-**Note**: Because of Giscus’s reliance on the existing GitHub Discussions feature set, there currently is only one level of nesting; so, if a thread gets “heavy,” it may not be readily obvious who’s replying to whom.
+**Note**: Because of giscus’s reliance on the existing GitHub Discussions feature set, there currently is only one level of nesting; so, if a thread gets “heavy,” it may not be readily obvious who’s replying to whom.
 {.yellowBox}
 
 ## Another shameless plug
@@ -58,6 +58,6 @@ I’m busy.
 
 That’s good.
 
-[^1]:	Giscus is more actively developed, too, from what I can tell.
+[^1]:	giscus is more actively developed, too, from what I can tell.
 
 [^2]:	Yep, that’s too many *because*s so close together. Sorry. I was in a hurry.
