@@ -10,10 +10,12 @@ if (article) {
       var widthDif = codeBlock.scrollWidth - codeBlock.clientWidth
       if (widthDif > 0) {
         codeBlock.parentNode.classList.add('expand')
+        /*
         console.log(key, " scrollWidth = ", codeBlock.scrollWidth)
         console.log("    clientWidth = ", codeBlock.clientWidth)
         console.log("    offsetWidth = ", codeBlock.offsetWidth)
         console.log("    widthDif    = ", widthDif)
+        */
       }
   }
 }
