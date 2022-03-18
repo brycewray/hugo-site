@@ -34,48 +34,46 @@
 			{{ if gt $paginator.TotalPages 1 }}
 
       <p class="text-center text-lg mt-2 mb-2">
-
         <!-- First page. -->
         {{ if ne $paginator.PageNumber 1 }}
           <a class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="First page" href="{{ $paginator.First.URL }}">
-            &#9664;&#9664;
+            {{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          <span class="text-gray-500 dark:text-gray-400">&#9664;&#9664;</span>
+          {{ partial "svgFirstPageIcon.html" . }}{{ partial "svgFirstPageIcon.html" }}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
         <!-- Previous page. -->
         {{ if $paginator.HasPrev }}
           <a href="{{ $paginator.Prev.URL }}" class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="Previous page">
-            &#9664;
+            {{ partial "svgPrevPageIcon.html" . }}
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          <span class="text-gray-500 dark:text-gray-400">&#9664;</span>
+          {{ partial "svgFirstPageIcon.html" . }}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Next page. -->
         {{ if $paginator.HasNext }}
           <a href="{{ $paginator.Next.URL }}" class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="Next page">
-            &#9654;
+            {{ partial "svgNextPageIcon.html" . }}
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          <span class="text-gray-500 dark:text-gray-400">&#9654;</span>
+          {{ partial "svgLastPageIcon.html" . }}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Last page. -->
         {{ if ne $paginator.PageNumber $paginator.TotalPages }}
           <a class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="Last page" href="{{ $paginator.Last.URL }}">
-            &#9654;&#9654;
+            {{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
           </a>
         {{ else }}
-          <span class="text-gray-500 dark:text-gray-400">&#9654;&#9654;</span>
+          {{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}
         {{ end }}
-
       </p><!-- .pagination -->
     {{ end }}
     <hr class="mt-2 mb-6" />
@@ -100,48 +98,46 @@
 			{{ if gt $paginator.TotalPages 1 }}
 
       <p class="text-center text-lg mt-2 mb-16">
-
         <!-- First page. -->
         {{ if ne $paginator.PageNumber 1 }}
           <a class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="First page" href="{{ $paginator.First.URL }}">
-            &#9664;&#9664;
+            {{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          <span class="text-gray-500 dark:text-gray-400">&#9664;&#9664;</span>
+          {{ partial "svgFirstPageIcon.html" . }}{{ partial "svgFirstPageIcon.html" }}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
         <!-- Previous page. -->
         {{ if $paginator.HasPrev }}
           <a href="{{ $paginator.Prev.URL }}" class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="Previous page">
-            &#9664;
+            {{ partial "svgPrevPageIcon.html" . }}
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          <span class="text-gray-500 dark:text-gray-400">&#9664;</span>
+          {{ partial "svgFirstPageIcon.html" . }}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Next page. -->
         {{ if $paginator.HasNext }}
           <a href="{{ $paginator.Next.URL }}" class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="Next page">
-            &#9654;
+            {{ partial "svgNextPageIcon.html" . }}
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ else }}
-          <span class="text-gray-500 dark:text-gray-400">&#9654;</span>
+          {{ partial "svgLastPageIcon.html" . }}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {{ end }}
 
         <!-- Last page. -->
         {{ if ne $paginator.PageNumber $paginator.TotalPages }}
           <a class="border-transparent no-underline hover:no-underline hover:border-0" aria-label="Last page" href="{{ $paginator.Last.URL }}">
-            &#9654;&#9654;
+            {{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
           </a>
         {{ else }}
-        <span class="text-gray-500 dark:text-gray-400">&#9654;&#9654;</span>
+          {{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}
         {{ end }}
-
       </p><!-- .pagination -->
       {{ end }}
 		</div>
