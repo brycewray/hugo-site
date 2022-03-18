@@ -15,16 +15,13 @@ pre[class*="language-"] {
   word-break: normal;
   word-wrap: normal;
   line-height: 1.5;
-
   tab-size: 4;
-
   hyphens: none;
 }
 
-
- /* Code blocks */
- pre[class*="language-"],
- pre.chroma {
+/* Code blocks */
+pre[class*="language-"],
+pre.chroma {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
@@ -61,5 +58,13 @@ article blockquote code {
   color: #494d50;
   @media (prefers-color-scheme: dark) {
     color: #dddddd;
+  }
+}
+
+@media screen and  (min-width: var.$bkpt-lg) {
+  pre.expand:hover {
+    margin-left: -20vw;
+    margin-right: -20vw;
+    max-width: 95vw;
   }
 }
