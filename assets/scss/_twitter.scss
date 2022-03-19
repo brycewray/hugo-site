@@ -2,19 +2,22 @@
 
 .tweet-card {
   font-family: var.$sans-serif;
-  width: 100%;
   margin: 1.5rem auto;
   padding: 1rem;
   border: 2px solid var.$grey-1;
   border-radius: 12px;
   background: var.$white;
+  width: 100%;
   @media screen and (min-width: var.$bkpt_md) {
-    width: 90%;
-  }
-  @media screen and (min-width: var.$bkpt_lg) {
     width: 80%;
   }
+  @media screen and (min-width: var.$bkpt_lg) {
+    width: 85%;
+  }
   @media screen and (min-width: var.$bkpt_2xl) {
+    width: 80%;
+  }
+  @media screen and (min-width: var.$bkpt_3xl) {
     width: 70%;
   }
   @media screen and (prefers-color-scheme: dark) {
