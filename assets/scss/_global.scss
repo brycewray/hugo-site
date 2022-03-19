@@ -275,6 +275,9 @@ footer {
     @media screen and (min-width: var.$bkpt_2xl) {
       width: 70ch;
     }
+    @media screen and (min-width: var.$bkpt_3xl) {
+      width: 80ch;
+    }
     figure img, img {
       width: 100%;
       height: auto;
