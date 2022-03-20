@@ -5,7 +5,7 @@ subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
-lastmod: 2021-05-16T10:43:00-05:00
+lastmod: 2022-03-20T11:34:00-05:00
 #draft: false
 discussionId: "2021-02-simplify-simplify"
 featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"
@@ -51,7 +51,7 @@ Intrigued by the "what-if" ideas now swirling in my cranium, I thoroughly update
 
 As 2020 neared a merciful end, two things happened that made me re-think that judgment.
 
-## Thing One: A wacko repo
+## Thing One: a wacko repo
 
 One Saturday morning, spurred by curiosity about cache-busting static assets in Eleventy (more on that in Thing Two down below), I began to work once again with the [webpack](https://webpack.js.org)-based Eleventy [repo](https://github.com/brycewray/eleventy_bundler) I'd [abandoned earlier in the year](/posts/2020/05/going-solo-eleventy). Since it had been months since I'd updated all the dependencies, I ran the [usual sequence](https://www.carlrippon.com/upgrading-npm-dependencies/) of `npm` commands to accomplish that, and then ran `npm run start` so the repo would create a dev-mode version of the site.
 
@@ -80,13 +80,13 @@ I soon found myself ruefully recalling my own assessment at the end of "[Why I'm
 
 > .&nbsp;.&nbsp;. the extraordinarily bright people behind [JavaScript-based SSGs] .&nbsp;.&nbsp;. all need to think about the dicey interaction between all the dependencies and frameworks and other stuff on which their products rely. It's like trying to balance a chair by one leg poised on a tightrope. One little breeze and, **crash**. No, thank you.
 
-## Thing Two: Asset pipeline envy
+## Thing Two: asset pipeline envy
 
 One particular Hugo functionality I not only rediscovered but also learned more about during that run-through last fall was Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes). This came to the fore for me after I became more aware of the need for cache-busting static assets. This is something Hugo can do out of the box, while Eleventy has no asset pipeline and therefore must accomplish this through other means.
 
 I spent [three](/posts/2020/11/using-postcss-cache-busting-eleventy/) [separate](/posts/2020/12/cache-busting-eleventy-take-two/) [articles](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/) on this subject of cache-busting CSS in Eleventy. Although I finally managed to come up with a *mostly* satisfactory solution, I once again found myself musing about how ably Hugo, on its own, handles this and so much more for which a Node.js-based SSG needs to depend on, well, tons of dependencies (and, even then, can't always do what Hugo can do).
 
-## The result: Thoroughly Thoreau
+## The result: thoroughly Thoreau
 
 After several weeks of these and numerous other considerations, I realized that what I wanted most about maintaining this website, over and above all the technicalities, was to **simplify** it. And I meant to simplify it for you readers, too, not just for me.
 
