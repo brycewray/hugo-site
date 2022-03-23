@@ -5,7 +5,7 @@ subtitle: "Building on others’ superb workarounds"
 description: "What to do until Tailwind CSS’s JIT mode works OoTB with Hugo."
 author: Bryce Wray
 date: 2021-11-01T12:08:00-05:00
-lastmod: 2022-03-02T09:48:00-06:00
+lastmod: 2022-03-23T08:19:00-05:00
 discussionId: "2021-11-making-tailwind-jit-work-hugo"
 featured_image: "2021-11-21_screenshot_TWCSS-on-Hugo_enlgd_3254x1564.png"
 featured_image_width: 3254
@@ -55,7 +55,7 @@ However, there was still more to do.
 
 You see, Juge's post described, and his repo included, a bare-bones Hugo/Tailwind project. The content didn't explain how to make Tailwind JIT work with existing Hugo projects, such as several I had, which included bespoke CSS rules and files *in addition to* those specific to Tailwind CSS. When I tried to convert those projects to use Juge's workaround, I kept running into certain odd glitches.
 
-Here's one such weird thing I encountered, just so you can get the picture. In my [Eleventy](https://11ty.dev)-based/JIT-using [repo](https://github.com/brycewray/eleventy_site), I'd used the following `index.css` file[^noKruft] along with the [`postcss-import` plugin](https://github.com/postcss/postcss-import) to combine Tailwind's CSS with my own:
+Here's one such weird thing I encountered, just so you can get the picture. In my [Eleventy](https://11ty.dev)-based/JIT-using repo, I'd used the following `index.css` file[^noKruft] along with the [`postcss-import` plugin](https://github.com/postcss/postcss-import) to combine Tailwind's CSS with my own:
 
 [^noKruft]: I've edited it slightly for easier reading, especially to remove things I'd commented out or which actually weren't of use (*e.g.*, `purgecss`-related statements, which Tailwind JIT rendered pointless).
 

@@ -5,7 +5,7 @@ subtitle: "A trimmer website is a faster website"
 description: "How to subset large web font files to improve your site’s performance."
 author: Bryce Wray
 date: 2021-08-08T14:00:00-05:00
-lastmod: 2021-09-02T12:17:00-05:00
+lastmod: 2022-03-23T08:22:00-05:00
 discussionId: "2021-08-down-with-flabby-fonts"
 featured_image: "typography-1069409_6000x4000.jpg"
 featured_image_width: 6000
@@ -93,6 +93,6 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
 
 *Back to the present&nbsp;.&nbsp;.&nbsp;.*
 
-For those who like the idea of using a trimmer version of the Inter variable web font but **don't** want to follow the procedure above, you certainly can go to [this site's repo](https://github.com/brycewray/eleventy_site) and snag my copy. However, I encourage you to get comfortable with the subsetting procedure described here. After all, there are a lot of other great web fonts for the grabbing, and virtually all of them can use the slimming-down process this involves.[^subsetDiffs] It's not easy to put yourself on a diet when that's needed, but following these steps will make it a snap to de-fat your fonts.
+I encourage you to get comfortable with the subsetting procedure described here. After all, there are a lot of other great web fonts for the grabbing, and virtually all of them can use the slimming-down process this involves.[^subsetDiffs] It's not easy to put yourself on a diet when that's needed, but following these steps will make it a snap to de-fat your fonts.
 
-[^subsetDiffs]: Besides, your site may have totally different needs where the characters-to-be-included-in-the-subset are concerned, so it makes more sense to learn this procedure and adapt it for not only different fonts but also different subsetting.
+[^subsetDiffs]: Besides, your site may have totally different needs where the characters-to-be-included-in-the-subset are concerned, so it makes sense to learn this procedure and adapt it for not only different fonts but also different subsetting.

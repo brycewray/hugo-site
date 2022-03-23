@@ -5,7 +5,7 @@ subtitle: "Re-bundling, but without the pain of webpack"
 description: "Pairing Eleventy and Vite shows me how far bundlers have come in a short time."
 author: Bryce Wray
 date: 2021-07-24T10:46:00-05:00
-lastmod: 2021-08-22T16:22:00-05:00
+lastmod: 2022-03-23T08:18:00-05:00
 discussionId: "2021-07-eleventy-vite-elite"
 featured_image: "Eleventy-and-Vite-logos__with_daniele-levis-pelusi-nEczFlV-GMI-unsplash_3000x2000_90pct.jpg"
 featured_image_width: 3000
@@ -27,7 +27,7 @@ Indeed, I am so sold on it that the site now runs off my [`eleventy_vite`](https
 
 How all this came about is our tale for today, friends and neighbors.
 
-**Update, 2021-08-22**: Since the repo change had the unwanted but unavoidable effect of losing the Git history in `eleventy_solo`, I have since cloned `eleventy_solo` and added Vite to the resulting [`eleventy_site`](https://github.com/brycewray/eleventy_site) repo; I now run the site off that repo, instead. Then, today, I switched **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the similarly-themed one which follows](/posts/2021/07/beginners-luck-4-vite-edition/) for [archival purposes](/posts/2019/10/otoh/).
+**Update, 2021-08-22**: Since the repo change had the unwanted but unavoidable effect of losing the Git history in `eleventy_solo`, I have since cloned `eleventy_solo` and added Vite to the resulting `eleventy_site` repo; I now run the site off that repo, instead. Then, today, I switched **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the similarly-themed one which follows](/posts/2021/07/beginners-luck-4-vite-edition/) for [archival purposes](/posts/2019/10/otoh/).
 {.yellowBox}
 
 ## Curiosity killed the cache
