@@ -4,7 +4,7 @@ subtitle: "Back to basics, to coin a phrase"
 description: "As I was saying over a year ago before I was so rudely interrupted by life . . ."
 author: Bryce Wray
 date: 2022-03-22T13:24:00-05:00
-#lastmod:
+lastmod: 2022-03-23T08:54:00-05:00
 #initTextEditor: Ulysses
 #draft: false
 discussionId: "2021-03-simplify-simplify-again"
@@ -33,8 +33,6 @@ Here is a greatly simplified depiction of my site’s typical content structure 
 └── src
     └── posts
         └── 2022
-            └── 01
-            └── 02
             └── 03
                 └── gems-in-rough-15.md
                 └── gems-in-rough-16.md
@@ -51,8 +49,6 @@ this post ->    └── simplify-simplify-again.md
 └── content
     └── posts
         └── 2022
-            └── 01
-            └── 02
             └── 03
                 └── gems-in-rough-15.md
                 └── gems-in-rough-16.md
@@ -66,7 +62,7 @@ Now, at first, that may not seem quite so bad for maintaining the two simultaneo
 
 For just one example: every article that included one or more code blocks (as do quite a few of my posts) had to be handled slightly differently between the two SSGs to ensure that each would correctly display the code.[^1] Multiply that &times; however many code blocks a post has, and you begin to see the problem. For this and other reasons, the two SSGs had different (even if sometimes only very slightly different) versions of each post.
 
-Thus, every time I’d *update* any post—which I often do, as a check of my [sitemap](/sitemap/) will indicate—I’d have to update it in the two separate repos. Where things really got to the tear-out-my-missing-hair level was when I had to apply content updates (*e.g.*, fixes of long-ignored typos or corrections of newly discovered informational errata) to *many* files. That meant *two* sets of such actions. Fortunately, my chosen editor apps made these tasks much less of a pain than might otherwise have been the case; but, still, this stuff could get nasty at times.
+Thus, every time I’d *update* any post, which I often do, I’d have to update it in the two separate repos. Where things really got to the tear-out-my-missing-hair level was when I had to apply content updates (*e.g.*, fixes of long-ignored typos or corrections of newly discovered informational errata) to *many* files. That meant *two* sets of such actions. Fortunately, my chosen editor apps made these tasks much less of a pain than might otherwise have been the case; but, still, this stuff could get nasty at times.
 
 Then, over and above the idea of duplicating (but only *sorta* duplicating) content, consider what was involved in maintaining layouts and shortcodes for the different SSGs. Much of the HTML, styling, and logic were the same, but the other code usually differed greatly. Having two different sets of layouts actually wasn’t that bad, since I could pretty much set them up and not worry about them; but what *was* particularly difficult at times, albeit a great learning experience, was the need for separate Eleventy and Hugo shortcodes. Just check my [two](/posts/2021/02/go-big-go-home/) [posts](/posts/2021/11/go-big-go-home-sequel/) about the differing shortcodes for handling the site’s [Cloudinary](https://cloudinary.com)-hosted images, and you’ll get some idea of what I mean.
 
