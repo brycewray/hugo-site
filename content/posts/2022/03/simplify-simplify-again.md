@@ -4,7 +4,7 @@ subtitle: "Back to basics, to coin a phrase"
 description: "As I was saying over a year ago before I was so rudely interrupted by life . . ."
 author: Bryce Wray
 date: 2022-03-22T13:24:00-05:00
-lastmod: 2022-03-23T08:54:00-05:00
+lastmod: 2022-03-23T09:08:00-05:00
 #initTextEditor: Ulysses
 #draft: false
 discussionId: "2021-03-simplify-simplify-again"
@@ -84,6 +84,9 @@ All of this has led me to some key decisions:
 	- An Astro repo. While Astro still is very much an early-stage project, it seems to have stabilized sufficiently that even this old fart can work with it without too much frustration.
 
 With any luck at all, this approach will enable me to maintain this site more efficiently, yet still keep my eyes on what else is happening in WebDevLand. I’m crossing my fingers.
+
+**Update, 2022-03-23**: Slinkity creator/maintainer [Ben Holmes](https://twitter.com/BHolmesDev) [announced today](https://twitter.com/BHolmesDev/status/1506616758806802435) that he’s joining the Astro team, and [indicated](https://twitter.com/BHolmesDev/status/1506621649944260610) that he may hand off Slinkity to someone else after getting Slinkity to v.1.x. How these developments will affect my aforementioned “stay current” plan remains to be seen.
+{.yellowBox}
 
 [^1]:	Otherwise, some of the code would fail to appear in the code block because the SSG would treat it as *real* code rather than just text in a code block. Indeed, under certain circumstances, this “code” even could cause build errors.
 
