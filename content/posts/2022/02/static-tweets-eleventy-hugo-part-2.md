@@ -17,7 +17,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a>; <a href="https://unsplash.com/s/photos/twitter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-A few days ago, I issued [a post](/posts/2022/02/static-tweets-eleventy-hugo/) explaining how to embed fully static Twitter content in your [Eleventy](https://11ty.dev/)- or [Hugo](https://gohugo.io/)-based website. (If you haven’t yet read that post, please do so before proceeding, so you can better understand what follows below.)
+A few days ago, I issued [a post](/posts/2022/02/static-tweets-eleventy-hugo/) explaining how to embed fully static Twitter content in your [Eleventy](https://11ty.dev/)- or [Hugo](https://gohugo.io/)-based website. (If you haven’t yet read that post, please do so before proceeding, so you can better understand what follows below.)
 
 The Eleventy-based solution I offered gets Twitter data from Version 1.1 of the Twitter Developer API, while the Hugo-based solution accesses Twitter’s public syndication API. Although these two approaches work fine as of now, I hinted that each could run into trouble in the future, especially since (a.) Twitter is actively encouraging migration to its newer **Version 2** Developer API and (b.) the public syndication API is discomfitingly old by internet standards.
 
