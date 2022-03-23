@@ -5,7 +5,7 @@ subtitle: "A follow-up to “Help your website get discovered”"
 description: "Thanks to a reader’s helpful advice, here’s how to enhance the code for your site’s RSS and JSON feeds."
 author: Bryce Wray
 date: 2021-09-09T14:40:00-05:00
-lastmod: 2021-09-12T15:10:00-05:00
+lastmod: 2022-03-23T18:17:00-05:00
 discussionId: "2021-09-reply-to-links-feeds"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -148,7 +148,7 @@ Now, on to the code.
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
     {{ range $pages }}
-    {{- $titleThis := .Title | markdownify -}}
+    {{- $titleThis := .Title | .Page.RenderString -}}
     {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` $titleThis `”">Reply via email</a></p>`  -}}
     {{- $contentMD := .Content -}}
     {{- $finalHTMLContent := printf "%s%s" $contentMD $emailReplyHTML -}}

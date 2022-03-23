@@ -44,17 +44,17 @@
       <div class="background-hero-wrapper-div">
         <div class="background-hero-title-block">
           <h1 class="background-hero-title-text">
-            {{ .Title | markdownify }}
+            {{ .Title | .Page.RenderString }}
           </h1>
           <h2 class="background-hero-subtitle-text">
             {{- if .Params.Subtitle -}}
-            {{ .Params.Subtitle | markdownify }}
+            {{ .Params.Subtitle | .Page.RenderString }}
             {{- else }}
             &nbsp;
             {{- end }}
           </h2>
           <p class="background-hero-description-text">
-            <em>{{ .Params.Description | markdownify }}</em>
+            <em>{{ .Params.Description | .Page.RenderString }}</em>
           </p>
           <p class="background-hero-p-text">
             <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
@@ -68,7 +68,7 @@
           </p>
           {{- if isset .Params "featured_image_caption" }}
           <p class="featured-image-caption">
-            {{ index .Params "featured_image_caption" | markdownify }}
+            {{ index .Params "featured_image_caption" | .Page.RenderString }}
           </p>
           {{- end -}}
         </div>

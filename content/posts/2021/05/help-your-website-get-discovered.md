@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2022-02-19T13:20:00-06:00
+lastmod: 2022-03-23T18:08:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -314,7 +314,7 @@ date: 2021-05-12T08:00:00-05:00
     <ul>
     {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
       {{- if (ne .Title "Posts") -}}
-      <li><strong><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}</li>
+      <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}</li>
       {{- end -}}
     {{- end -}}
     </ul>
