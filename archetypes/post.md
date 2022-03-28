@@ -1,7 +1,6 @@
 ---
 layout: singlepost # for Eleventy
 title: "TITLE"
-subtitle: "SUBTITLE"
 description: "DESCRIPTION."
 author: Bryce Wray
 date: {{ .Date }}
