@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Conversation piece"
-#subtitle: "Commenting options for your static website"
-description: "Here are several ways you can hear from your visitors."
+description: "Commenting options for your static website."
 author: Bryce Wray
 date: 2020-10-13T16:30:00-05:00
-lastmod: 2021-09-02T12:20:00-05:00
+lastmod: 2022-03-28T13:47:00-05:00
 #draft: true
 discussionId: "2020-10-conversation-piece"
 featured_image: "miguel-a-amutio-27QOmh18KDc-unsplash_3785x2847.jpg"

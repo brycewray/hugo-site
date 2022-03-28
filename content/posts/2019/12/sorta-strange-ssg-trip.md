@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Sorta StranGe (SSG) trip"
-#subtitle: "Recapping “the dance” and what it taught me"
-description: "The changes I made to brycewray.com this past year, and what I learned along the way."
+description: "Recapping “the dance” and what it taught me."
 author: Bryce Wray
 date: 2019-12-27T14:42:40-06:00
-lastmod: 2020-09-23T15:30:00-05:00
+lastmod: 2022-03-28T13:23:00-05:00
 discussionId: "2019-12-sorta-strange-ssg-trip"
 featured_image: alarm-clock-4711181_3648x2432.jpg
 featured_image_width: 3648

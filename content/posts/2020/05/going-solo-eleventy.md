@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Going solo with Eleventy"
-#subtitle: "Losing webpack, regaining Tailwind CSS"
-description: "As the saying goes, less is more."
+description: "Losing webpack, regaining Tailwind CSS."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
-lastmod: 2020-05-25T13:31:00-05:00
+lastmod: 2022-03-28T13:39:00-05:00
 discussionId: "2020-05-going-solo-eleventy"
 featured_image: "solo-flight-by-a-seagull-at-sunset-4238769_3225x2330.jpg"
 featured_image_width: 3225

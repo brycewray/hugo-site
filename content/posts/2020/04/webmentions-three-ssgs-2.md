@@ -3,7 +3,7 @@ layout: singlepost
 tags: post
 title: "Webmentions in three SSGs: Part 2"
 #subtitle: "IndieWebbin’ in Eleventy"
-description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."
+description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."
 author: Bryce Wray
 date: 2020-04-28T16:35:00-05:00
 lastmod: 2022-02-12T10:45:00-06:00

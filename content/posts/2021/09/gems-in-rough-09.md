@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Gems in the rough #9"
-#subtitle: "Better video embeds, CFP improvements, “passtro” on Astro"
-description: "A few more nerdy thoughts for SSG fans."
+description: "Better video embeds, CFP improvements, “passtro” on Astro."
 author: Bryce Wray
 date: 2021-09-05T14:35:00-05:00
-lastmod: 2021-09-06T11:53:00-05:00
+lastmod: 2022-03-28T14:02:00-05:00
 discussionId: "2021-09-gems-in-rough-09"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
 featured_image_width: 7315

@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Go big or Go home?"
-#subtitle: "A short(code) trip from Eleventy to Hugo"
-description: "How some image-handling code moved from JavaScript to Go."
+description: "How some image-handling code moved from Eleventy to Hugo."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2021-12-15T12:24:00-06:00
+lastmod: 2022-03-28T13:54:00-05:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"

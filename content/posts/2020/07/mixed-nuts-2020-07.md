@@ -3,7 +3,7 @@ layout: singlepost
 tags: post
 title: "Mixed nuts • July, 2020"
 #subtitle: "Random thoughts “R” us"
-description: "Another successful lowering of the bar where observations’ cleverness is concerned."
+description: "Another successful lowering of the bar where observations’ cleverness is concerned."
 author: Bryce Wray
 date: 2020-07-09T16:40:00-05:00
 lastmod: 2020-08-30T15:40:00-05:00

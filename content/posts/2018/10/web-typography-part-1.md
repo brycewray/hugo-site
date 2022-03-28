@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Readable web text, pretty please"
-#subtitle: "Part 1 of a two-part series on web typography"
-description: "Can we just agree that type on the web should be, y’know, readable?"
+description: "Part 1 of a two-part series on web typography."
 author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
-lastmod: 2020-09-23T07:07:00-05:00
+lastmod: 2022-03-28T13:13:00-05:00
 discussionId: "2018-10-web-typography-part-1"
 featured_image: "letters-691842_2504x1676.jpg"
 featured_image_width: 2504

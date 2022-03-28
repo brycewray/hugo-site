@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Eleventy plus Vite = elite"
-#subtitle: "Re-bundling, but without the pain of webpack"
-description: "Pairing Eleventy and Vite shows me how far bundlers have come in a short time."
+description: "Re-bundling, but without the pain of webpack."
 author: Bryce Wray
 date: 2021-07-24T10:46:00-05:00
-lastmod: 2022-03-23T08:18:00-05:00
+lastmod: 2022-03-28T13:59:00-05:00
 discussionId: "2021-07-eleventy-vite-elite"
 featured_image: "Eleventy-and-Vite-logos__with_daniele-levis-pelusi-nEczFlV-GMI-unsplash_3000x2000_90pct.jpg"
 featured_image_width: 3000

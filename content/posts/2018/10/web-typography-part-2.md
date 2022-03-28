@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "A stacked deck"
-#subtitle: "Part 2 of a two-part series on web typography"
-description: "Making the case for a system fonts approach to the typography on websites."
+description: "Part 2 of a two-part series on web typography."
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2022-02-12T10:56:00-06:00
+lastmod: 2022-03-28T13:13:00-05:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: "computer-1869236_3264x2448.jpg"
 featured_image_width: 3264

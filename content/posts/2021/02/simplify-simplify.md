@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Simplify, simplify"
-#subtitle: "A Thoreau-ly fine website"
-description: "The result of choosing between simplicity and FOMO."
+description: "A Thoreau-ly fine website, or the result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
-lastmod: 2022-03-20T11:34:00-05:00
+lastmod: 2022-03-28T13:53:00-05:00
 #draft: false
 discussionId: "2021-02-simplify-simplify"
 featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"

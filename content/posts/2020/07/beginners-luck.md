@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Beginner’s luck"
-#subtitle: "New Eleventy and Hugo starter sets"
-description: "Helping more people get going with two great SSGs."
+description: "Helping more people get going with Eleventy and Hugo."
 author: Bryce Wray
 date: 2020-07-27T16:30:00-05:00
-lastmod: 2021-03-26T07:35:00-06:00
+lastmod: 2022-03-28T13:41:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608

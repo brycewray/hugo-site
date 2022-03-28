@@ -3,7 +3,7 @@ layout: singlepost
 tags: post
 title: "Webmentions in three SSGs: Part 3"
 #subtitle: "IndieWebbin’ in Hugo"
-description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
+description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
 lastmod: 2021-05-16T10:28:00-05:00

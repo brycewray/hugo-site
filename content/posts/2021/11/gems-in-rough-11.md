@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Gems in the rough #11"
-#subtitle: "Dueling announcements, CSP-allowed CSS, fun with LQIPs"
-description: "If you know what an “SSG” is, perhaps you’ll have interest in these items."
+description: "Dueling announcements, CSP-allowed CSS, fun with LQIPs."
 author: Bryce Wray
 date: 2021-11-19T11:27:00-06:00
-lastmod: 2021-12-10T12:24:00-06:00
+lastmod: 2022-03-28T14:04:00-05:00
 discussionId: "2021-11-gems-in-rough-11"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
 featured_image_width: 7315

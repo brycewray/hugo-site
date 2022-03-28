@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Beginner’s luck: an update"
-#subtitle: "New and updated starter sets for Eleventy and Hugo"
-description: "The inventory has grown, so here’s what I currently offer for those interested in the two best SSGs."
+description: "The inventory has grown, so here’s what I currently offer for those interested in Eleventy and Hugo."
 author: Bryce Wray
 date: 2021-03-25T20:25:00-05:00
-lastmod: 2022-02-12T11:25:00-06:00
+lastmod: 2022-03-28T13:56:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608

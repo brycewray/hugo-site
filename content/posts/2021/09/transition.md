@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Transition"
-#subtitle: "Yep, forty-plus years will do"
-description: "Offering up what social media calls “some personal news.”"
+description: "Yep, forty-plus years will do."
 author: Bryce Wray
 date: 2021-09-03T16:30:00-05:00
-#lastmod:
+lastmod: 2022-03-28T14:02:00-05:00
 discussionId: "2021-09-transition"
 featured_image: sunset-prairie-679014_2500x1619.jpg
 featured_image_width: 2500

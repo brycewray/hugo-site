@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "O say can you CI/CD?"
-#subtitle: "A way around the Netlify build limit"
-description: "How you can stay within the free tier."
+description: "A way around the Netlify free-tier build limit."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2021-05-16T10:33:00-05:00
+lastmod: 2022-03-28T13:40:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: "dominoes-4020617_4870x2672.jpg"
 featured_image_width: 4870

@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Next steps?"
-#subtitle: "Evaluating Next.js for the Day Job"
-description: "Some things I’ve learned while tinkering with a major React framework."
+description: "Some things I’ve learned while tinkering with Next.js."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
-lastmod: 2022-02-12T11:28:00-06:00
+lastmod: 2022-03-28T13:55:00-05:00
 #draft: false
 discussionId: "2021-03-next-steps"
 featured_image: "crystal-ball-drew-beamer-xU5Mqq0Chck-unsplash_5284x3522.jpg"

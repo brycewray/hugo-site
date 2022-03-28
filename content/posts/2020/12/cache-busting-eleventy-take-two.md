@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Cache-busting in Eleventy, take two"
-#subtitle: "This time, a solution that really (?) works"
-description: "Sometimes, semi-bespoke is best."
+description: "This time, a solution that really (?) works."
 author: Bryce Wray
 date: 2020-12-11T16:55:00-06:00
-lastmod: 2021-05-29T12:21:00-05:00
+lastmod: 2022-03-28T13:49:00-05:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
 featured_image: "broken-glass-549087_4000x3000.jpg"

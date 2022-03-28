@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Gems in the rough #2"
-#subtitle: "More geeky hints for SSG fans"
-description: "Another collection of neat and/or nerdy items."
+description: "More geeky hints for SSG fans."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
-lastmod: 2022-03-02T09:48:00-06:00
+lastmod: 2022-03-28T13:51:00-05:00
 #draft: false
 discussionId: "2021-01-gems-in-rough-2021-01"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"

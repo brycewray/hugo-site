@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Goodbye and hello • Part 2"
-#subtitle: "Returning the site to Netlify"
-description: "Why I decided to come back."
+description: "Why I decided to come back to Netlify."
 author: Bryce Wray
 date: 2020-07-31T17:35:00-05:00
-lastmod: 2021-05-16T10:35:00-05:00
+lastmod: 2022-03-28T13:42:00-05:00
 discussionId: "2020-07-goodbye-hello-2"
 featured_image: "welcome-mat-705102_4368x2912.jpg"
 featured_image_width: 4368

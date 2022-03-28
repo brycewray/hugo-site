@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "1Password hits the fan"
-#subtitle: "An Electron-ic firestorm"
-description: "A timely follow-up to my earlier article about password management."
+description: "An Electron-ic firestorm: a follow-up to my earlier article about password management."
 author: Bryce Wray
 date: 2021-08-14T10:20:00-05:00
-lastmod: 2021-09-16T15:20:00-05:00
+lastmod: 2022-03-28T14:00:00-05:00
 discussionId: "2021-08-1Password-hits-fan"
 featured_image: "lock-and-castle-5359174_4109x2832.jpg"
 featured_image_width: 4109

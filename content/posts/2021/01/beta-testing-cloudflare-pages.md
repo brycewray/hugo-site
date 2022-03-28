@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Beta-testing Cloudflare Pages"
-#subtitle: "A possible game-changer emerges"
-description: "I take a look at a new website-hosting platform and find some early glitchiness, but also plenty of potential."
+description: "I take a look at a new, possibly game-changing website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
 date: 2021-01-27T12:30:00-06:00
-lastmod: 2022-02-19T12:54:00-06:00
+lastmod: 2022-03-28T13:52:00-05:00
 #draft: false
 discussionId: "2021-01-beta-testing-cloudflare-pages"
 featured_image: "markus-spiske-KeFyYzxqmH0-unsplash_5760x3840.jpg"

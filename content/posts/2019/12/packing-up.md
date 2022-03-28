@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Packing up"
-#subtitle: "Eleventy and webpack are a powerful pair"
-description: "How using a bundler makes the coolest SSG even better."
+description: "Eleventy and webpack are a powerful pair."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2021-05-16T10:22:00-05:00
+lastmod: 2022-03-28T13:22:00-05:00
 discussionId: "2019-12-packing-up"
 featured_image: "chain-11ty-webpack-3867751_1920x1080.jpg"
 featured_image_width: 1920

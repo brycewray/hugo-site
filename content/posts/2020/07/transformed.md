@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Transformed"
-#subtitle: "The move to Cloudinary"
-description: "Getting a big burden off my shoulders—and my site-build workflow."
+description: "The move to Cloudinary."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
-lastmod: 2021-05-16T10:36:00-05:00
+lastmod: 2022-03-28T13:42:00-05:00
 discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806

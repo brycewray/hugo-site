@@ -2,7 +2,7 @@
 #layout: singlepost
 title: "Gems in the rough #16"
 #subtitle: "Or, what else has been going on?"
-description: "Eleventy 2.x (yes, already), trying giscus, another shameless plug."
+description: "Eleventy 2.x (yes, already), trying giscus, another shameless plug."
 author: Bryce Wray
 date: 2022-03-11T09:55:00-06:00
 lastmod: 2022-03-17T10:39:00-05:00

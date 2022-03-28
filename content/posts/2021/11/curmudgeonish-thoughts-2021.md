@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Curmudgeonish thoughts for 2021"
-#subtitle: "Another year, another grievances list"
-description: "It’s November, so once more it’s time to air some gripes."
+description: "Another year, another grievances list."
 author: Bryce Wray
 date: 2021-11-09T08:56:00-06:00
-lastmod: 2021-11-10T12:35:00-06:00
+lastmod: 2022-03-28T14:04:00-05:00
 draft: false
 discussionId: "2021-11-curmudgeonish-thoughts-2021"
 featured_image: "stress-ball-6071852_4000x2667.jpg"

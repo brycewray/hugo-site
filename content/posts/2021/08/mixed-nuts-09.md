@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Mixed nuts #9"
-#subtitle: "Takes that are neither hot nor cool—in multiple ways"
-description: "Just tossing a few of these out there . . ."
+description: "Takes that are neither hot nor cool—in multiple ways."
 author: Bryce Wray
 date: 2021-08-29T08:52:00-05:00
-lastmod: 2021-09-02T06:53:00-05:00
+lastmod: 2022-03-28T14:01:00-05:00
 discussionId: "2021-08-mixed-nuts-09"
 featured_image: "nuts-5503118_6000x4000.jpg"
 featured_image_width: 6000

@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Easy-peasy"
-#subtitle: "A theoretical conversation about building static websites"
-description: "Simplicity is in the mind of the conveyor."
+description: "A theoretical conversation about building static websites."
 author: Bryce Wray
 date: 2021-01-03T10:10:00-06:00
-#lastmod: TBD
+lastmod: 2022-03-28T13:50:00-05:00
 #draft: false
 discussionId: "2021-01-easy-peasy"
 featured_image: "rubiks-cube-3038657_3008x2000.jpg"
