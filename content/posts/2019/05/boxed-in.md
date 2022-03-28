@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Boxed in?"
-#subtitle: "“Shoebox” apps (including Ulysses) and iCloud sync"
 description: "A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general."
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00

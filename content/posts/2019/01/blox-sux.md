@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Blox sux"
-#subtitle: "Page builders are a pain, but . . ."
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00

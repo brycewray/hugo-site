@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Beginner’s luck #4: the Vite edition"
-#subtitle: "The stable of starter sets grows again"
 description: "Now I have an Eleventy/Vite starter, and here’s some of the code that makes it go."
 author: Bryce Wray
 date: 2021-07-25T16:46:00-05:00

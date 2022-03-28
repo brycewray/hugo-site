@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Hashing out a cache-busting fix for Eleventy"
-#subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00

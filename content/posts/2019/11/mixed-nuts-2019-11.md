@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Mixed nuts • November, 2019"
-#subtitle: "In a nutshell, odds and ends"
 description: "Observations worth exactly what you’re paying for them."
 author: Bryce Wray
 date: 2019-11-24T10:15:00-06:00

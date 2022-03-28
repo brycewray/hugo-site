@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Independence"
-#subtitle: "Thirty-five years a Mac lover"
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00

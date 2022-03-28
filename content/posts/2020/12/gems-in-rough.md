@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Gems in the rough"
-#subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
 date: 2020-12-21T12:10:00-06:00

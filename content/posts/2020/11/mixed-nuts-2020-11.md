@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Mixed nuts • November, 2020"
-#subtitle: "Another set of odd-servations"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T10:10:00-06:00

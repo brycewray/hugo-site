@@ -1,11 +1,10 @@
 ---
 layout: singlepost
 title: "Eleventy and Hugo: comparing and contrasting"
-#subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
-lastmod: 2021-06-25T16:45:00-06:00
+lastmod: 2022-03-28T14:20:00-05:00
 #draft: false
 discussionId: "2020-12-eleventy-hugo-comparing-contrasting"
 featured_image: "pros-cons-5202088_3000x2000.jpg"
@@ -51,7 +50,6 @@ You write your main content in [Markdown](https://daringfireball.net/projects/ma
 layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Two, but not terrible"
-#subtitle: "Dual candles on the site’s cake"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray
 date: 2020-09-15T06:20:00-05:00

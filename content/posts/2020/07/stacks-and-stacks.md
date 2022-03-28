@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Stacks and stacks"
-#subtitle: "That was then, this is now"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00

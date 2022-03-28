@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Fathom Analytics: count on it"
-#subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
 date: 2020-06-19T00:45:00-05:00

@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "YouTube TV and the RSNs flap"
-#subtitle: "Is the pyramid near collapse?"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00

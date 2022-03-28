@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Why I left Hugo for Eleventy"
-#subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00

@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Using PostCSS for cache-busting in Eleventy"
-#subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T16:30:00-06:00

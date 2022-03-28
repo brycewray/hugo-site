@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Goodbye and hello • Part 4"
-#subtitle: "The future is now, so to Render we go"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
 date: 2020-09-05T09:00:00-05:00

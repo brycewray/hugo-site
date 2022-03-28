@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Static tweets in Eleventy and Hugo"
-#subtitle: "To serve and protect"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray
 date: 2022-02-07T12:00:00-06:00

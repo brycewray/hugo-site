@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "“Previous” and “next” in Eleventy"
-#subtitle: "The answer to an authentic FAQ"
 description: "A brief description of code that easily enables this oft-requested feature."
 author: Bryce Wray
 date: 2019-12-23T15:16:00-06:00

@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Welcome, sweet little early bird"
-#subtitle: "Plans, schmans"
 description: "The new grandchild arrives, and on her own timeline."
 author: Bryce Wray
 date: 2020-03-10T09:50:00-05:00

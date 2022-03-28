@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Gems in the rough #6"
-#subtitle: "Another set of SSG-centric suggestions"
 description: "Hiding “future” posts in Eleventy, life with Vercel (nearly) a year later, and other items that may interest static site generator users."
 author: Bryce Wray
 date: 2021-06-21T16:30:00-05:00

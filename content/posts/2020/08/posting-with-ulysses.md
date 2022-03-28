@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Posting with Ulysses"
-#subtitle: "Trying the latest version"
 description: "Still a nicer editor, but not truly SSG-friendly."
 author: Bryce Wray
 date: 2020-08-04T19:15:00-05:00

@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Using Dart Sass with Hugo"
-#subtitle: "There’s no reason to wait for the good stuff"
 description: "Until hosts allow Embedded Dart Sass in their build processes, here’s a not-too-hacky workaround for Sass-on-Hugo fans."
 author: Bryce Wray
 date: 2022-03-08T11:09:00-06:00

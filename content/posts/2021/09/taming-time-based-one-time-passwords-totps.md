@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Taming time-based one-time passwords (TOTPs)"
-#subtitle: "It’s (mostly) all in the apps"
 description: "A few tips on managing multi-factor authentication—specifically, TOTPs."
 author: Bryce Wray
 date: 2021-09-20T10:30:00-05:00

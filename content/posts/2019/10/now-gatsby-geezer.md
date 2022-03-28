@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Now I’m a Gatsby geezer"
-#subtitle: "Gatsby Experiment III proves the winner"
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray
 date: 2019-10-27T10:00:00-05:00

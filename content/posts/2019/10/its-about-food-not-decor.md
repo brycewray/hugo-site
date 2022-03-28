@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "It’s about the food, not the decor"
-#subtitle: "The delivery method matters far less than what’s being delivered"
 description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00

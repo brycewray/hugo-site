@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "HardyPress: WP + SSG with a twist"
-#subtitle: Trying to have the best of two worlds
 description: Here’s a brief look at an interesting way to have your WordPress cake and eat your SSG site, too—or something like that.
 author: Bryce Wray
 date: 2018-09-15T08:28:17-05:00

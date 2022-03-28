@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Mixed nuts • June, 2021"
-#subtitle: "More miscellany for your mental masochism"
 description: "The latest set of “takes” that don’t all fit in any one category."
 author: Bryce Wray
 date: 2021-06-11T16:30:00-05:00

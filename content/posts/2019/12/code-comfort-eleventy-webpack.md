@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Code comfort: Eleventy and webpack"
-#subtitle: "Peeking inside this site"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray
 date: 2019-12-14T11:05:00-06:00

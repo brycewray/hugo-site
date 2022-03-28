@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Beginner’s luck #3: adding a Zola starter"
-#subtitle: "And then there were seven"
 description: "For those interested in a (somewhat) easy take on Hugo, here’s a starter set for you."
 author: Bryce Wray
 date: 2021-06-25T16:50:00-05:00

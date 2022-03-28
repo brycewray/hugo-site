@@ -2,11 +2,10 @@
 layout: singlepost
 tags: post
 title: "Goodbye and hello"
-#subtitle: "Moving from Netlify to Vercel"
-description: "How this site gained a new home."
+description: "Moving from Netlify to Vercel: how this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T17:05:00-05:00
-lastmod: 2021-05-16T10:35:00-05:00
+lastmod: 2022-03-28T14:17:00-05:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: "away-706464_4608x2592.jpg"
 featured_image_width: 4608

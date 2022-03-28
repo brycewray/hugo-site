@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "My website and Cloudflare, a year later"
-#subtitle: "Talking out, and about, my mixed feelings"
 description: "It’s perhaps not so much “love/hate” as it is geeky curiosity combined with an old guy’s impatience."
 author: Bryce Wray
 date: 2021-10-22T14:00:00-05:00

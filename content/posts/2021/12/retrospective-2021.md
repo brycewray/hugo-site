@@ -2,7 +2,6 @@
 #layout: singlepost
 tags: post
 title: "Retrospective: 2021"
-#subtitle: "The annual review"
 description: "Reflections on some of the items discussed here in the outgoing year."
 author: Bryce Wray
 date: 2021-12-29T15:43:00-06:00

@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Mixed nuts • February, 2021"
-#subtitle: "Free-association folderol for February"
 description: "No brain cells were even used, much less harmed, in the production of this post."
 author: Bryce Wray
 date: 2021-02-13T13:15:00-06:00

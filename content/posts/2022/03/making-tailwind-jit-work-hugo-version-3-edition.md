@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Making Tailwind JIT work with Hugo, the Version 3 edition"
-#subtitle: "Another version, another end run"
 description: "A Hugo fix for Tailwind CSS v.3—with a surprise bonus."
 author: Bryce Wray
 date: 2022-03-06T16:16:00-06:00

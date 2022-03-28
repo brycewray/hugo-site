@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Gems in the rough #8"
-#subtitle: "More bits, bytes, ’n’ bushwa ’bout static site builders"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray
 date: 2021-08-04T16:30:00-05:00

@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Freeing your folders"
-#subtitle: "A safe way to change your cloud sync setup"
 description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."
 author: Bryce Wray
 date: 2020-08-16T14:35:00-05:00

@@ -1,7 +1,6 @@
 ---
 layout: singlepost
 title: "Gems in the rough #7"
-#subtitle: "Eleventy Meetup #1, Firefox’s woes, and other website-related arcana"
 description: "Static site generator fans, here’s another (sorta) brief set of goodies for your edification."
 author: Bryce Wray
 date: 2021-07-17T14:23:00-05:00

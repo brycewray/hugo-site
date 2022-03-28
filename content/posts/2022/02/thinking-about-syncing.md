@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "Thinking about syncing"
-#subtitle: "Pros and cons of cloud sync providers"
 description: "Some opinions I’ve formed while doing a semi-deep dive into cloud sync on macOS."
 author: Bryce Wray
 date: 2022-02-04T10:03:00-06:00

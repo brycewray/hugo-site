@@ -2,7 +2,6 @@
 layout: singlepost
 tags: post
 title: "iA for IO?"
-#subtitle: "Evaluating iA Writer for use with an SSG"
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
