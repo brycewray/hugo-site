@@ -46,13 +46,6 @@
           <h1 class="background-hero-title-text">
             {{ .Title | .Page.RenderString }}
           </h1>
-          <h2 class="background-hero-subtitle-text">
-            {{- if .Params.Subtitle -}}
-            {{ .Params.Subtitle | .Page.RenderString }}
-            {{- else }}
-            &nbsp;
-            {{- end }}
-          </h2>
           <p class="background-hero-description-text">
             <em>{{ .Params.Description | .Page.RenderString }}</em>
           </p>

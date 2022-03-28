@@ -10,7 +10,6 @@
         {{- range first 3 (where .Site.RegularPages "Section" "posts") }}
         <div>
           <h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
-          <p class="homePost-Subtitle">{{ .Params.Subtitle | .Page.RenderString }}</p>
           <p class="homePost-Description">
             <em>{{ .Description }}</em>
           </p>

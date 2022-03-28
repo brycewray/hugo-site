@@ -80,7 +80,6 @@
 			{{ range $paginator.Pages }}
         <div class="posts-ItemDiv">
           <h2 class="posts-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
-          <p class="posts-Subtitle"><strong>{{ .Params.Subtitle | .Page.RenderString }}</strong></p>
 					<p class="posts-Description">
 						<em>{{ .Description | .Page.RenderString }}</em>
 					</p>
