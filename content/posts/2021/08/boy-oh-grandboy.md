@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Boy, oh, grandboy"
-subtitle: "Another addition to our family"
+#subtitle: "Another addition to our family"
 description: "A few words about the arrival of grandchild #2."
 author: Bryce Wray
 date: 2021-08-11T11:30:00-05:00

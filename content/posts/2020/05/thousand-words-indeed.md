@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "A thousand words, indeed"
-subtitle: "Feelings about look-and-feel"
+#subtitle: "Feelings about look-and-feel"
 description: "How and why “hero images” have returned to this site."
 author: Bryce Wray
 date: 2020-05-22T18:00:00-05:00

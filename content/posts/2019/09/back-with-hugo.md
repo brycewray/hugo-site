@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Back with Hugo"
-subtitle: "Well, that didn’t last long"
+#subtitle: "Well, that didn’t last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00

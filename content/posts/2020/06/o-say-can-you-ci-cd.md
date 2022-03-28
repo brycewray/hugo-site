@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "O say can you CI/CD?"
-subtitle: "A way around the Netlify build limit"
+#subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00

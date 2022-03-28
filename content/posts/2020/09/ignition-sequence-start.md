@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Ignition sequence start"
-subtitle: "GitHub Actions to deploy to Firebase Hosting"
+#subtitle: "GitHub Actions to deploy to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00

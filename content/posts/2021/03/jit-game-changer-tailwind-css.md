@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "JIT is a game-changer for Tailwind CSS"
-subtitle: "Still experimental, but already impressive"
+#subtitle: "Still experimental, but already impressive"
 description: "Why Tailwind’s new capabilities will give it even more  momentum among web developers."
 author: Bryce Wray
 date: 2021-03-19T16:25:00-05:00

@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Gems in the rough #9"
-subtitle: "Better video embeds, CFP improvements, “passtro” on Astro"
+#subtitle: "Better video embeds, CFP improvements, “passtro” on Astro"
 description: "A few more nerdy thoughts for SSG fans."
 author: Bryce Wray
 date: 2021-09-05T14:35:00-05:00

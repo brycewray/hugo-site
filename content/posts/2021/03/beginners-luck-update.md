@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Beginner’s luck: an update"
-subtitle: "New and updated starter sets for Eleventy and Hugo"
+#subtitle: "New and updated starter sets for Eleventy and Hugo"
 description: "The inventory has grown, so here’s what I currently offer for those interested in the two best SSGs."
 author: Bryce Wray
 date: 2021-03-25T20:25:00-05:00

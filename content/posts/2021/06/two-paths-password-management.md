@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Two paths to password management"
-subtitle: "Ways to practice superior cybersecurity"
+#subtitle: "Ways to practice superior cybersecurity"
 description: "Some suggestions for wisely managing your passwords."
 author: Bryce Wray
 date: 2021-06-15T16:30:00-05:00

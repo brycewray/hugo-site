@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Some Sirius(XM) thoughts"
-subtitle: "Radio, and more, from on high"
+#subtitle: "Radio, and more, from on high"
 description: "Some pros and cons of having SiriusXM."
 author: Bryce Wray
 date: 2020-03-15T15:35:00-05:00

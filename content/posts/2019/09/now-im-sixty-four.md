@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Now I’m sixty-four"
-subtitle: "Amending my obligatory earworm"
+#subtitle: "Amending my obligatory earworm"
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00

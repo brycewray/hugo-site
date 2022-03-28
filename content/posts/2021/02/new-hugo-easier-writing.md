@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "New in Hugo: easier writing"
-subtitle: "How Hugo 0.81.0 lets me do more in Markdown"
+#subtitle: "How Hugo 0.81.0 lets me do more in Markdown"
 description: "The benefit of enhanced support for attributes."
 author: Bryce Wray
 date: 2021-02-27T11:35:00-06:00

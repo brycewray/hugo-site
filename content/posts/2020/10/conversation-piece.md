@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Conversation piece"
-subtitle: "Commenting options for your static website"
+#subtitle: "Commenting options for your static website"
 description: "Here are several ways you can hear from your visitors."
 author: Bryce Wray
 date: 2020-10-13T16:30:00-05:00

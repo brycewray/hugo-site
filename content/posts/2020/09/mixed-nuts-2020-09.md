@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Mixed nuts • September, 2020"
-subtitle: "Oddities, observations, offal"
+#subtitle: "Oddities, observations, offal"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00

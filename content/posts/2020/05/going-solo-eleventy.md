@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Going solo with Eleventy"
-subtitle: "Losing webpack, regaining Tailwind CSS"
+#subtitle: "Losing webpack, regaining Tailwind CSS"
 description: "As the saying goes, less is more."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00

@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Transition"
-subtitle: "Yep, forty-plus years will do"
+#subtitle: "Yep, forty-plus years will do"
 description: "Offering up what social media calls “some personal news.”"
 author: Bryce Wray
 date: 2021-09-03T16:30:00-05:00

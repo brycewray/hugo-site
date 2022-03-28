@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Forward PaaS"
-subtitle: "Trying Cloudflare Workers and KV storage"
+#subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00

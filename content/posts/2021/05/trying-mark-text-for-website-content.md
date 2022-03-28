@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Trying Mark Text for website content"
-subtitle: "A FOSS option for Markdown-based writing"
+#subtitle: "A FOSS option for Markdown-based writing"
 description: "A free, cross-platform text editor for (maybe) managing your site’s content."
 author: Bryce Wray
 date: 2021-05-07T16:30:00-05:00

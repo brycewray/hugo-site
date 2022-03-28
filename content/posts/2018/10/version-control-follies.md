@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "The version-control follies"
-subtitle: "Life’s too short for CLI"
+#subtitle: "Life’s too short for CLI"
 description: "Why you should go GUI with version control."
 author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00

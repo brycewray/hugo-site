@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Google Fonts and privacy"
-subtitle: "It’s about more than trust"
+#subtitle: "It’s about more than trust"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T14:35:00-05:00

@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Roger, Copy"
-subtitle: "Keeping my .git together with Working Copy"
+#subtitle: "Keeping my .git together with Working Copy"
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00

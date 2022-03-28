@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Cache-busting in Eleventy, take two"
-subtitle: "This time, a solution that really (?) works"
+#subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
 date: 2020-12-11T16:55:00-06:00

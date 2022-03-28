@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Goodbye and hello • Part 2"
-subtitle: "Returning the site to Netlify"
+#subtitle: "Returning the site to Netlify"
 description: "Why I decided to come back."
 author: Bryce Wray
 date: 2020-07-31T17:35:00-05:00

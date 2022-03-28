@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Gems in the rough #5"
-subtitle: "The latest of my wide-ranging website whatchamacallits"
+#subtitle: "The latest of my wide-ranging website whatchamacallits"
 description: "More notes, notions, and nitpicks about managing one’s personal website."
 author: Bryce Wray
 date: 2021-05-30T13:16:00-05:00

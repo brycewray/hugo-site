@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Ec-static"
-subtitle: "How to go Hugo"
+#subtitle: "How to go Hugo"
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own websites."
 author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00

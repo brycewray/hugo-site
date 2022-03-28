@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Grid-locked no more"
-subtitle: "Doing a 180 on CSS Grid"
+#subtitle: "Doing a 180 on CSS Grid"
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
 date: 2018-11-28T10:00:00-05:00

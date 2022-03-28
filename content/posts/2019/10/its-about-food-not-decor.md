@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "It’s about the food, not the decor"
-subtitle: "The delivery method matters far less than what’s being delivered"
+#subtitle: "The delivery method matters far less than what’s being delivered"
 description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00
@@ -37,9 +37,9 @@ No one cares about which make of truck brought the food to the restaurant; they 
 In the most recent such post, I had quoted "[The pros of using a boring stack](https://flaviocopes.com/boring-stack/)" by Flavio Copes, but apparently didn't grasp sufficiently the most telling point he made:
 
 > .&nbsp;.&nbsp;. if you want to create a blog and be serious at it, then use the most boring and bulletproof thing you can find. Definitely **don’t work on your blog infrastructure if you want to do any serious blogging**.
-> 
+>
 > **The tech must go out of the way**[;] you should only **focus on the content**.
-> 
+>
 > Otherwise you'll spend most of your free time tweaking the blog platform (which --- let's be clear --- **no one except you cares about**) instead of writing content. No one cares about that infrastructure.
 
 > One rule is that you know the pitfalls of your platform, the grass is always greener on the other side of the fence, and you like to imagine new platforms being 100% perfect. That never happens, and the devil is in the details.

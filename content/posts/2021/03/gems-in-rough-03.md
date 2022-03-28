@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Gems in the rough #3"
-subtitle: "Tips ’n’ tricks, this ’n’ that"
+#subtitle: "Tips ’n’ tricks, this ’n’ that"
 description: "The latest installment of unrequested advice about tinkering with websites."
 author: Bryce Wray
 date: 2021-03-06T15:55:00-06:00

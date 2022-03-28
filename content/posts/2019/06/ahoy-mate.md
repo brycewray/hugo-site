@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Ahoy, ’Mate"
-subtitle: "Considering MailMate"
+#subtitle: "Considering MailMate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00

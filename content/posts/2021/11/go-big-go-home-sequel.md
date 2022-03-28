@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Go big or Go home? The sequel"
-subtitle: "A pie recipe rather than tangled spaghetti"
+#subtitle: "A pie recipe rather than tangled spaghetti"
 description: "After a “D’oh!” moment, I refine a bespoke Hugo shortcode."
 author: Bryce Wray
 date: 2021-11-23T12:55:00-06:00

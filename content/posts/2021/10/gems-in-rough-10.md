@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Gems in the rough #10"
-subtitle: "Items of possible interest for SSG users"
+#subtitle: "Items of possible interest for SSG users"
 description: "A (perhaps) surprising requirement for native lazy-loading, the Slinkity project, problems with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-10-01T09:23:00-05:00

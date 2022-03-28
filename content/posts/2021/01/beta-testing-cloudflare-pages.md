@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Beta-testing Cloudflare Pages"
-subtitle: "A possible game-changer emerges"
+#subtitle: "A possible game-changer emerges"
 description: "I take a look at a new website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
 date: 2021-01-27T12:30:00-06:00

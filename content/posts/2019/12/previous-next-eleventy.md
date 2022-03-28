@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "“Previous” and “next” in Eleventy"
-subtitle: "The answer to an authentic FAQ"
+#subtitle: "The answer to an authentic FAQ"
 description: "A brief description of code that easily enables this oft-requested feature."
 author: Bryce Wray
 date: 2019-12-23T15:16:00-06:00
@@ -27,13 +27,13 @@ You see, the most workable method I'd found so far from among the [starter proje
 ```html
 {% if collections.post[idx] %}
 	<p class="ctr">
-		<strong>Next</strong>: 
+		<strong>Next</strong>:
 		<a class="next" href="{{ collections.post[idx].url }}">{{ collections.post[idx].data.title }}</a>
 	</p>
 {% endif %}
 {% if collections.post[idx-2] %}
 	<p class="ctr">
-		<strong>Previous</strong>: 
+		<strong>Previous</strong>:
 		<a class="previous" href="{{ collections.post[idx-2].url }}">{{ collections.post[idx-2].data.title }}</a>
 	</p>
 {% endif %}
@@ -43,7 +43,7 @@ Yes, it worked, but I wanted a "set-and-forget" method---something that would su
 
 I suspected there was a solution in the Eleventy API that was so ridiculously simple that, if I found it, I'd have two immediate reactions: joy from finding it and pain from the slap I'd give myself on top of the head for having missed it.
 
-Early yesterday morning, after having asked about an [earlier](https://github.com/11ty/eleventy/issues/529#issuecomment-532393625) proposed answer to the question, I saw a [reply](https://github.com/11ty/eleventy/issues/529#issuecomment-568257426) that quickly proved to be *The* Answer **(THIS one is what you're seeking, folks)** from [Pascal Widdershoven](https://pascalw.me) in the form of a wonderfully simple and elegant addition to one's `.eleventy.js` file: 
+Early yesterday morning, after having asked about an [earlier](https://github.com/11ty/eleventy/issues/529#issuecomment-532393625) proposed answer to the question, I saw a [reply](https://github.com/11ty/eleventy/issues/529#issuecomment-568257426) that quickly proved to be *The* Answer **(THIS one is what you're seeking, folks)** from [Pascal Widdershoven](https://pascalw.me) in the form of a wonderfully simple and elegant addition to one's `.eleventy.js` file:
 
 ```js
 eleventyConfig.addCollection("posts", function(collection) {
@@ -68,13 +68,13 @@ Once you've added that to your site's `.eleventy.js` file, all you have to do is
 ```html
   {% if nextPost.url %}
     <p class="ctr">
-      <strong>Next</strong>: 
+      <strong>Next</strong>:
       <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
     <p class="ctr">
-      <strong>Previous</strong>: 
+      <strong>Previous</strong>:
       <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
     </p>
   {% endif %}

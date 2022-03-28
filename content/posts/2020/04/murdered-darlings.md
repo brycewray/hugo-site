@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Murdered darlings"
-subtitle: "R.I.P., WIP"
+#subtitle: "R.I.P., WIP"
 description: "A farewell to this site’s original purpose."
 author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00

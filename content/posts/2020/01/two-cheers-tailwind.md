@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Two cheers for Tailwind"
-subtitle: "Staying current can bite"
+#subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00

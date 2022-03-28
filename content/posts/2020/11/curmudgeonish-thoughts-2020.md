@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Curmudgeonish thoughts for 2020"
-subtitle: "The third annual rant"
+#subtitle: "The third annual rant"
 description: "Pet peeves seem tiny at a time like this, but I have them nonetheless."
 author: Bryce Wray
 date: 2020-11-01T08:45:00-06:00

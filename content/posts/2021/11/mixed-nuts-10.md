@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Mixed nuts #10"
-subtitle: "Bouncin’ among my neurons"
+#subtitle: "Bouncin’ among my neurons"
 description: "A few things currently on my so-called mind."
 author: Bryce Wray
 date: 2021-11-26T13:02:00-06:00

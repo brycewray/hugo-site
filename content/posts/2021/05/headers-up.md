@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Headers up"
-subtitle: "Managing caching and FLOC"
+#subtitle: "Managing caching and FLOC"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-05-01T11:43:00-05:00

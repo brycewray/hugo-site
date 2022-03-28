@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Why I kept Ulysses"
-subtitle: "Wanting to write more than nerdy stuff"
+#subtitle: "Wanting to write more than nerdy stuff"
 description: "Renewing the subscription for another year."
 author: Bryce Wray
 date: 2020-06-07T16:15:00-05:00

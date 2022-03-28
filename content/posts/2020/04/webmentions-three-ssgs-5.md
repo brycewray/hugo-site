@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Webmentions in three SSGs: Part 5"
-subtitle: "Thanking our sources for this series about IndieWebbin’"
+#subtitle: "Thanking our sources for this series about IndieWebbin’"
 description: "Conclusion of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T16:50:00-05:00

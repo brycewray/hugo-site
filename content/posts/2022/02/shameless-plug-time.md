@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Shameless plug time"
-subtitle: "Read all about it, pretty please"
+#subtitle: "Read all about it, pretty please"
 description: "A few words about my new Hugo-related article for the CloudCannon blog."
 author: Bryce Wray
 date: 2022-02-24T12:11:00-06:00

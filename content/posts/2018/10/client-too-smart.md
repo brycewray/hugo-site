@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "The client is too smart for you"
-subtitle: "The email client, that is"
+#subtitle: "The email client, that is"
 description: "Pretty emails don’t work so well in an Outlook-centric business world."
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00

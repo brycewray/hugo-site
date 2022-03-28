@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Plain truth"
-subtitle: "On permanence"
+#subtitle: "On permanence"
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00

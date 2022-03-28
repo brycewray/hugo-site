@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Goodbye and hello • Part 3"
-subtitle: "Performance is a heckuva drug"
+#subtitle: "Performance is a heckuva drug"
 description: "Earlier considerations aside, I move the site to Vercel for a second time."
 author: Bryce Wray
 date: 2020-08-21T17:05:00-05:00

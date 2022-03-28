@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Getting framed"
-subtitle: "Why I still use Bootstrap"
+#subtitle: "Why I still use Bootstrap"
 description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
 date: 2018-11-14T09:15:00-06:00

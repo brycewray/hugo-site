@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Sorta StranGe (SSG) trip"
-subtitle: "Recapping “the dance” and what it taught me"
+#subtitle: "Recapping “the dance” and what it taught me"
 description: "The changes I made to brycewray.com this past year, and what I learned along the way."
 author: Bryce Wray
 date: 2019-12-27T14:42:40-06:00

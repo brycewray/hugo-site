@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Two, but not terrible"
-subtitle: "Dual candles on the site’s cake"
+#subtitle: "Dual candles on the site’s cake"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray
 date: 2020-09-15T06:20:00-05:00

@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Using Eleventy’s official image plugin"
-subtitle: "Save time and trouble with this intro and code"
+#subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00

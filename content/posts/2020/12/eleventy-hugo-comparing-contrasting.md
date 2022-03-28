@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Eleventy and Hugo: comparing and contrasting"
-subtitle: "You can’t always get what you want, but . . ."
+#subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
@@ -51,7 +51,7 @@ You write your main content in [Markdown](https://daringfireball.net/projects/ma
 layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Two, but not terrible"
-subtitle: "Dual candles on the site’s cake"
+#subtitle: "Dual candles on the site’s cake"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray
 date: 2020-09-15T06:20:00-05:00

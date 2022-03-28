@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Mixed nuts • May, 2020"
-subtitle: "Month-of-May meanderings through my, um, mind"
+#subtitle: "Month-of-May meanderings through my, um, mind"
 description: "Updates, uptakes, follow-ups, and foul-ups—not necessarily in that order."
 author: Bryce Wray
 date: 2020-05-16T17:40:00-05:00

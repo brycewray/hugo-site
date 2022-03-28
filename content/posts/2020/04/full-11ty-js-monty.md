@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "The full .11ty.js monty"
-subtitle: "Going all-JavaScript with my Eleventy site"
+#subtitle: "Going all-JavaScript with my Eleventy site"
 description: "Once again, I can’t resist a nerdy challenge."
 author: Bryce Wray
 date: 2020-04-15T17:30:00-05:00

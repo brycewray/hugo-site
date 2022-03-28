@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Go big or Go home?"
-subtitle: "A short(code) trip from Eleventy to Hugo"
+#subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00

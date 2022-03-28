@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Simplify, simplify"
-subtitle: "A Thoreau-ly fine website"
+#subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00

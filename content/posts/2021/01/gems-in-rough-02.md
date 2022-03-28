@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Gems in the rough #2"
-subtitle: "More geeky hints for SSG fans"
+#subtitle: "More geeky hints for SSG fans"
 description: "Another collection of neat and/or nerdy items."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00

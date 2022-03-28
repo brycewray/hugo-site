@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "The Holy Mail"
-subtitle: "Stopping the e-madness"
+#subtitle: "Stopping the e-madness"
 description: "The way I sort-of cured the email client dance."
 author: Bryce Wray
 date: 2019-05-10T07:20:00-05:00
@@ -48,7 +48,7 @@ One suggested client was [Edison Mail](https://mail.edison.tech/), which did, in
 
 > Thanks for your message, and our apologies for the confusion --- threading is only available for Gmail accounts for now. We hope to expand threading to other accounts in the future, but until then we'll do our best to specify that this feature is limited to Gmail accounts with future updates.
 
-So that wasn't going to work to my satisfaction, at least not for Exchange. However, I did follow another poster's advice and kept Edison Mail around **only** for notifications, then would open them in Apple Mail. Nonetheless, it was a clunky solution. 
+So that wasn't going to work to my satisfaction, at least not for Exchange. However, I did follow another poster's advice and kept Edison Mail around **only** for notifications, then would open them in Apple Mail. Nonetheless, it was a clunky solution.
 
 ## A giant <span style="white-space: nowrap;">(battery-)</span> sucking sound
 

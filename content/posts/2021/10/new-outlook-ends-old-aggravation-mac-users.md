@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "“New Outlook” ends an old aggravation for Mac users"
-subtitle: "A cross-platform solution of sorts"
+#subtitle: "A cross-platform solution of sorts"
 description: "For Mac users who must use Outlook, its Electron-based version brings some long-overdue feature parity."
 author: Bryce Wray
 date: 2021-10-11T14:10:00-05:00

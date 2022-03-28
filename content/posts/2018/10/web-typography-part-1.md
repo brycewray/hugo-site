@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Readable web text, pretty please"
-subtitle: "Part 1 of a two-part series on web typography"
+#subtitle: "Part 1 of a two-part series on web typography"
 description: "Can we just agree that type on the web should be, y’know, readable?"
 author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00

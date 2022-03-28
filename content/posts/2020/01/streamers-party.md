@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Streamers’ party"
-subtitle: "Getting with the (TV) program"
+#subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."
 author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00

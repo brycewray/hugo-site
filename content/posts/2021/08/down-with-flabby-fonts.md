@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Down with flabby fonts"
-subtitle: "A trimmer website is a faster website"
+#subtitle: "A trimmer website is a faster website"
 description: "How to subset large web font files to improve your site’s performance."
 author: Bryce Wray
 date: 2021-08-08T14:00:00-05:00

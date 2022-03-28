@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Transformed"
-subtitle: "The move to Cloudinary"
+#subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00

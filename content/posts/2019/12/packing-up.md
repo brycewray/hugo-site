@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Packing up"
-subtitle: "Eleventy and webpack are a powerful pair"
+#subtitle: "Eleventy and webpack are a powerful pair"
 description: "How using a bundler makes the coolest SSG even better."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00

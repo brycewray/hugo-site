@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Eleventy plus Vite = elite"
-subtitle: "Re-bundling, but without the pain of webpack"
+#subtitle: "Re-bundling, but without the pain of webpack"
 description: "Pairing Eleventy and Vite shows me how far bundlers have come in a short time."
 author: Bryce Wray
 date: 2021-07-24T10:46:00-05:00

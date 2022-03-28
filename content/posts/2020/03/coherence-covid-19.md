@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Coherence and COVID–19" #Non-breaking hyphen there, copied/pasted from https://alignedonline.com/non%E2%80%91breaking-spaces/ since it can't be entered otherwise in text string
-subtitle: "Trying to grasp the new reality"
+#subtitle: "Trying to grasp the new reality"
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00

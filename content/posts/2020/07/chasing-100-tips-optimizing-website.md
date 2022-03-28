@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Chasing 100: tips for optimizing your website"
-subtitle: "Pointers about performance, and then some"
+#subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00

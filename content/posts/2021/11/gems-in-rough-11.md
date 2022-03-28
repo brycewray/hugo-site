@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Gems in the rough #11"
-subtitle: "Dueling announcements, CSP-allowed CSS, fun with LQIPs"
+#subtitle: "Dueling announcements, CSP-allowed CSS, fun with LQIPs"
 description: "If you know what an “SSG” is, perhaps you’ll have interest in these items."
 author: Bryce Wray
 date: 2021-11-19T11:27:00-06:00

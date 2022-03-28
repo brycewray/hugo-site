@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Picture perfect?"
-subtitle: "With SSGs and images, it’s “location, location, location”"
+#subtitle: "With SSGs and images, it’s “location, location, location”"
 description: "Image-related items to consider when structuring your SSG-powered site."
 author: Bryce Wray
 date: 2019-10-20T19:00:00-05:00

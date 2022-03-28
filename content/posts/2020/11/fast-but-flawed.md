@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Fast but flawed"
-subtitle: "Two more static website hosts to consider (maybe)"
+#subtitle: "Two more static website hosts to consider (maybe)"
 description: "These can give you great performance, but there’s a catch."
 author: Bryce Wray
 date: 2020-11-25T16:30:00-06:00

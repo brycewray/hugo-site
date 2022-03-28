@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Easy-peasy"
-subtitle: "A theoretical conversation about building static websites"
+#subtitle: "A theoretical conversation about building static websites"
 description: "Simplicity is in the mind of the conveyor."
 author: Bryce Wray
 date: 2021-01-03T10:10:00-06:00

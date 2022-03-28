@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 title: "Reply-to links in site feeds"
-subtitle: "A follow-up to “Help your website get discovered”"
+#subtitle: "A follow-up to “Help your website get discovered”"
 description: "Thanks to a reader’s helpful advice, here’s how to enhance the code for your site’s RSS and JSON feeds."
 author: Bryce Wray
 date: 2021-09-09T14:40:00-05:00
