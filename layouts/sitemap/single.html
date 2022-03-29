@@ -16,8 +16,7 @@
   {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
     {{- if (ne .Title "Posts") -}}
     <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}<br />
-    <strong>{{ .Params.Subtitle | .Page.RenderString }}</strong><br />
-    {{ .Description | .Page.RenderString }}</li>
+    <em>{{ .Description | .Page.RenderString }}</em></li>
     {{- end -}}
   {{- end -}}
   </ul>
