@@ -16,9 +16,12 @@
   }
 
   ul li {
-    font-size: var.$pokey;
+    // font-size: var.$pokey;
     margin-bottom: 0.75em;
-    line-height: 1.5em;
+    line-height: 1.25em;
+  }
+  .description {
+    font-family: var.$serif;
   }
 }
 
