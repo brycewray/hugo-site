@@ -1,18 +1,20 @@
 @use 'variables' as var;
 
 html, body {
-  font-family: var.$sans-serif;
+  font-family: var.$serif;
   // font-weight: 425; // when using variable fonts
   color: var.$default-color;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   -moz-osx-font-smoothing: auto; // only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
-  // font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
+  -webkit-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
+  text-rendering: optimizeLegibility;
   @media (prefers-color-scheme: dark) {
     background: var.$background-dark-mode;
     color: var.$default-color-dark-mode;
-    font-weight: 375;
+    // font-weight: 375;
   }
 }
 
@@ -32,6 +34,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   }
 }
 
+/*
 h1, .h1 {
   font-weight: 800;
   @media (prefers-color-scheme: dark) {
@@ -45,6 +48,7 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight: 575;
   }
 }
+*/
 
 h1, h2, h3, h4, h5, h6 {
   outline: 2px transparent;
@@ -70,21 +74,21 @@ h1, h2, h3, h4, h5, h6 {
     }
     &::after {
       font-size: var.$stdsize;
-      font-weight: 425;
+      // font-weight: 425;
       padding-left: 0.5em;
       content: "#";
-      @media screen and (prefers-color-scheme: dark) {
-        font-weight: 375;
-      }
+      // @media screen and (prefers-color-scheme: dark) {
+      //   font-weight: 375;
+      // }
     }
   }
 }
 
-strong, b {
-  @media (prefers-color-scheme: dark) {
-    font-weight: 725;
-  }
-}
+// strong, b {
+//   @media (prefers-color-scheme: dark) {
+//     font-weight: 725;
+//   }
+// }
 
 h1, h2, h3, h4, h5, h6 {
   display: block;
@@ -270,13 +274,13 @@ footer {
     margin: 1rem auto 0 auto;
     width: 80%;
     @media screen and (min-width: var.$bkpt_lg) {
-      width: 65ch;
+      width: 55%;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      width: 70ch;
+      width: 50%;
     }
     @media screen and (min-width: var.$bkpt_3xl) {
-      width: 80ch;
+      width: 40%;
     }
     figure img, img {
       width: 100%;
@@ -295,15 +299,18 @@ li p {
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.65em;
     margin-top: 1.15em;
     margin-bottom: 1.15em;
     @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.375rem;
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: var.$bkpt_3xl) {
+      font-size: 1.625rem;
     }
   }
   li li, li p {

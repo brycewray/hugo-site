@@ -97,21 +97,25 @@
     }
   }
   &-description-text {
-    display: none; // appears only on wider screens
-    // font-family: var.$serif;
+    // display: none; // appears only on wider screens
+    font-family: var.$serif;
+    font-size: 1.25rem;
     @media screen and (min-width: var.$bkpt_md) {
-      display: block;
-      font-size: 1.375em;
+      // display: block;
+      font-size: 1.5rem;
     }
     @media screen and (min-width: var.$bkpt_lg) {
       margin-bottom: 1em;
       padding-top: 0.25em;
       padding-right: 15%;
       padding-left: 5%;
-      font-size: 1.5em;
+      font-size: 1.75rem;
     }
-    @media screen and (min-width: var.$bkpt_xl) {
-      font-size: 1.75em;
+    @media screen and (min-width: var.$bkpt_2xl) {
+      font-size: 2rem;
+    }
+    @media screen and (min-width: var.$bkpt_3xl) {
+      font-size: 2.25rem;
     }
   }
   &-p-text {

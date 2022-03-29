@@ -33,8 +33,8 @@ $code-color-blueLight-dark-mode: hsl(197, 100%, 77%);
 $code-color-orange-dark-mode: hsl(40, 100%, 50%);
 
 // Typography
-$sans-serif: "Public Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$serif: ui-serif, Georgia, Cambria, Times, "Times New Roman", serif;
+$sans-serif: "Helvetica Neue", Helvetica, "Liberation Sans", "Nimbus Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$serif: Times, "Times New Roman", "Liberation Serif", ui-serif, Georgia, Cambria, serif;
 $monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Roboto Mono", Menlo, Monaco, "Liberation Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, "Ubuntu Mono", "Courier New", monospace;
 
 // rems
@@ -58,9 +58,10 @@ $sixtyFive: 65%;
 $bodyalign: left;
 $nav-height: 50px;
 
-// breakpoints (based on Tailwind CSS)
+// breakpoints (mostly based on Tailwind CSS)
 $bkpt_sm: 640px;
 $bkpt_md: 768px;
+$bkpt_ml: 960px; // additional
 $bkpt_lg: 1024px;
 $bkpt_xl: 1280px;
 $bkpt_2xl: 1536px;

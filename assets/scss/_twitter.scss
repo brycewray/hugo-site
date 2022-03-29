@@ -8,17 +8,17 @@
   border-radius: 12px;
   background: var.$white;
   width: 100%;
-  @media screen and (min-width: var.$bkpt_md) {
+  @media screen and (min-width: var.$bkpt_ml) {
     width: 80%;
   }
   @media screen and (min-width: var.$bkpt_lg) {
     width: 85%;
   }
-  @media screen and (min-width: var.$bkpt_2xl) {
-    width: 80%;
-  }
+  // @media screen and (min-width: var.$bkpt_2xl) {
+  //   width: 85%;
+  // }
   @media screen and (min-width: var.$bkpt_3xl) {
-    width: 70%;
+    max-width: 80ch;
   }
   @media screen and (prefers-color-scheme: dark) {
     background: transparent;
@@ -119,9 +119,11 @@
     @media screen and (prefers-color-scheme: dark) {
       color: var.$grey-2-dark-mode;
     }
-  }/* === needed in Eleventy but not in Hugo
+  }
+  /* === needed in Eleventy but not in Hugo
   .tweet-date:after {
     content: " (UTC)";
     font-size: var.$legal;
-  }*/
+  }
+  */
 }
