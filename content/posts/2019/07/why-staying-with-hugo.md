@@ -203,7 +203,7 @@ the original reference and down at the bottom.
 
 Then, down at the bottom, you get something that looks kind of like this:
 
-<p class="legal">3.&nbsp;&nbsp;So here we are at the bottom.<span class="footnote-sim">↑</span></p>
+<p class="legal sansSerif">3.&nbsp;&nbsp;So here we are at the bottom.<span class="footnote-sim">↑</span></p>
 
 For somebody like me who uses footnotes a lot and moves their origins’ paragraphs around frequently during the editing process, that's a gotta-have. For Gatsby, there are a couple of plugins that purport to provide it, but I found neither to do the job *reliably*. The most widely used one would work *sometimes*, but then something else would cause a crash and, after the reboot, suddenly that same Markdown would produce this in the rendered page:
 
