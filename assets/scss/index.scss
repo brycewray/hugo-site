@@ -19,7 +19,7 @@
 @use 'lazyload';
 @use 'lazypic';
 // @use 'intervf'; // for Inter VF's weird obliquing stuff
-// @use 'ffoxobliq'; // if using system font stack with SF first for Mac sans-serif
+@use 'ffoxobliq'; // if using system font stack with SF first for Mac sans-serif
 @use 'heroimg';
 @use 'sitemaphtml';
 @use 'iefixes';

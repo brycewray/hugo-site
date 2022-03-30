@@ -6,6 +6,7 @@
   h1 {
     line-height: 1.75em;
     font-size: 1.5rem;
+    font-weight: bold;
   }
   @media screen and (min-width: var.$bkpt_lg) {
     text-align: right;
@@ -48,6 +49,7 @@
     margin-bottom: 0.25em;
     // font-weight: 825;
     font-size: 2rem;
+    font-weight: bold;
     @media screen and (min-width: var.$bkpt_lg) {
       margin-top: 0;
       padding-top: 1em;
