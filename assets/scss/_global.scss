@@ -1,7 +1,7 @@
 @use 'variables' as var;
 
 html, body {
-  font-family: var.$serif;
+  font-family: var.$sans-serif;
   // font-weight: 425; // when using variable fonts
   color: var.$default-color;
   width: 100%;
@@ -34,7 +34,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   }
 }
 
-/*
+
 h1, .h1 {
   font-weight: 800;
   @media (prefers-color-scheme: dark) {
@@ -48,7 +48,7 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight: 575;
   }
 }
-*/
+
 
 h1, h2, h3, h4, h5, h6 {
   outline: 2px transparent;

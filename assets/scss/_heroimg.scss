@@ -99,7 +99,7 @@
   }
   &-description-text {
     // display: none; // appears only on wider screens
-    font-family: var.$serif;
+    // font-family: var.$serif;
     font-size: 1.25rem;
     @media screen and (min-width: var.$bkpt_md) {
       // display: block;
