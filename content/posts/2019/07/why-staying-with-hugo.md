@@ -5,7 +5,7 @@ title: "Why I’m staying with Hugo"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2021-12-15T12:27:00-06:00
+lastmod: 2022-04-01T14:22:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: nikko-macaspac-6SNbWyFwuhk-unsplash_2391x1593.jpg
 featured_image_width: 2391
@@ -51,7 +51,7 @@ With that said, moving right along&nbsp;.&nbsp;.&nbsp;.
 
 ## A taste of&nbsp;.&nbsp;.&nbsp;. something
 
-My first true interaction with Gatsby came, in fact, only a few weeks after this site hit the web. While I was between Day Jobs, I came into contact with a fellow who, while he didn't have a full-time job to give, nonetheless consulted me for help with his new e-commerce site which, at the time, was WordPress-based and 'waaaaay too slow as a result. Because the site's purpose was to demonstrate his invention, a web app that can fetch and display an item almost instantaneously from within an immense "catalog," he obviously couldn't tolerate the site's being sluggish. It'd have been like trying to sell rides in a Lamborghini being towed by a [Pinto](https://en.wikipedia.org/wiki/Ford_Pinto).
+My first true interaction with Gatsby came, in fact, only a few weeks after this site hit the web. While I was between Day Jobs, I came into contact with a fellow who, while he didn't have a full-time job to give, nonetheless consulted me for help with his new e-commerce site which, at the time, was WordPress-based and ’waaaaay too slow as a result. Because the site's purpose was to demonstrate his invention, a web app that can fetch and display an item almost instantaneously from within an immense "catalog," he obviously couldn't tolerate the site's being sluggish. It'd have been like trying to sell rides in a Lamborghini being towed by a [Pinto](https://en.wikipedia.org/wiki/Ford_Pinto).
 
 With my then-recent research on SSGs, I suggested one of them might be his answer: tremendous speed, no WordPress performance hits or security risks, and plenty of New Shiny (well, okay, I didn't put it that way). Since I knew Hugo best from among the ones I'd studied, I recommended it. He liked what he read about it, but noticed its [docs](https://gohugo.io/documentation/) lacked any mention of being able to grab vast amounts of data from other sources quickly, which was utterly necessary for his purposes.
 
@@ -71,7 +71,7 @@ You see, what I **didn't** do back then was follow up from those tutorials by se
 
 Fast forward to a month ago. In the Day Job, I was spending many hours on a particular project that was replete with JavaScript.
 
-You have to understand that, as an Old Web Guy™, I earned my website dev chops in another era. Back then, [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) had [fallen into disrepute](https://crockford.com/javascript/javascript.html) except for [those things which utterly had to be done client-side](https://en.wikipedia.org/wiki/Ajax_%28programming%29), server-side languages (like [PHP](https://www.php.net)) were all that really mattered, and too many browsers simply didn't handle JavaScript correctly (or, as in the case of the company for which I worked back then, too many customers had it turned off by default) for me to count on its utility.
+You have to understand that, as an Old Web Guy, I earned my website dev chops in another era. Back then, JavaScript had [fallen into disrepute](https://crockford.com/javascript/javascript.html) except for [those things which utterly had to be done client-side](https://en.wikipedia.org/wiki/Ajax_%28programming%29), server-side languages (like [PHP](https://www.php.net)) were all that really mattered, and too many browsers simply didn't handle JavaScript correctly (or, as in the case of the company for which I worked back then, too many customers had it turned off by default) for me to count on its utility.
 
 Yes, I knew [things had changed](https://medium.com/@alexbeletsky/renaissance-of-javascript-485118447cf9) for JavaScript since then, especially since [2015](https://ecma-international.org/ecma-262/6.0/) or so, but I just didn't care. Besides, I usually had other ways to do JS-like things, especially once I was tasked with maintaining CMS-based sites; so, until lately, I maintained that standoffishness toward JS.
 
