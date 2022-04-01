@@ -1,7 +1,7 @@
 ---
 layout: singlepost
 tags: post
-title: "Why I’m staying with Hugo"
+title: "Why I’m staying with Hugo"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
