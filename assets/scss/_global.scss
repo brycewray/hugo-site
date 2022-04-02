@@ -275,9 +275,11 @@ footer {
     width: 80%;
     @media screen and (min-width: var.$bkpt_lg) {
       width: 55%;
+      // max-width: 65ch;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
       width: 50%;
+      // max-width: 65ch;
     }
     @media screen and (min-width: var.$bkpt_3xl) {
       width: 40%;
@@ -299,19 +301,20 @@ li p {
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: 1.25rem;
+    font-size: var.$stdsize;
     line-height: 1.65em;
     margin-top: 1.15em;
     margin-bottom: 1.15em;
     @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.375rem;
+      font-size: var.$minimalbig;
+      // max-width: 60ch;
     }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.5rem;
-    }
-    @media screen and (min-width: var.$bkpt_3xl) {
-      font-size: 1.625rem;
-    }
+    // @media screen and (min-width: var.$bkpt_2xl) {
+    //   font-size: var.$slightlybig;
+    // }
+    // @media screen and (min-width: var.$bkpt_3xl) {
+    //   font-size: 1.625rem;
+    // }
   }
   li li, li p {
     font-size: inherit;

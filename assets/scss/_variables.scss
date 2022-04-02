@@ -43,7 +43,9 @@ $bigger: 2.25rem;
 $mightybig: 2rem;
 $sortabig: 1.75rem;
 $slightlybig: 1.5rem;
+$size1375: 1.375rem;
 $minimalbig: 1.25rem;
+$size1125: 1.125rem;
 $stdsize: 1rem;
 $pokey: 0.85rem;
 $legal: 0.75rem;
@@ -53,6 +55,23 @@ $teeny: 0.6rem;
 $eightyFive: 85%;
 $seventyFive: 75%;
 $sixtyFive: 65%;
+
+// like Tailwind **SIZES**
+// but not the concomitant `line-height,
+// which is in comments
+// $text-xs: 0.75rem; // LH 1rem
+// $text-sm: 0.875rem; // LH 1.25rem
+// $text-base: 1rem; // LH 1.5rem
+// $text-lg: 1.125rem; // LH 1.75rem
+// $text-xl: 1.25em; // LH 1.75 rem (also)
+// $text-2xl: 1.5rem; // LH 2 rem
+// $text-3xl: 1.875rem; // LH 2.25rem
+// $text-4xl: 2.25rem; // LH 2.5rem
+// $text-5xl: 3rem; // LH 1
+// $text-6xl: 3.75rem; // LH 1 (also)
+// $text-7xl: 4.5rem; // LH 1 (also)
+// $text-8xl: 6rem; // LH 1 (also)
+// $text-9xl: 8rem; // LH 1 (also)
 
 // alignment
 $bodyalign: left;
