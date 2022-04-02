@@ -68,6 +68,16 @@ article code {
   }
 }
 
+article p code {
+  @media screen and (min-width: var.$bkpt_md) {
+    white-space: nowrap;
+  }
+}
+
+article .footnotes li code {
+  white-space: normal;
+}
+
 article blockquote code {
   color: #494d50;
   @media (prefers-color-scheme: dark) {
