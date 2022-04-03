@@ -133,12 +133,12 @@
   @media screen and (min-width: var.$bkpt_lg) {
     font-size: 1em;
   }
-  @media screen and (min-width: var.$bkpt_2xl) {
-    font-size: 1.1em;
-  }
-  @media screen and (min-width: var.$bkpt_3xl) {
-    font-size: 1.2em;
-  }
+  // @media screen and (min-width: var.$bkpt_2xl) {
+  //   font-size: 1.1em;
+  // }
+  // @media screen and (min-width: var.$bkpt_3xl) {
+  //   font-size: 1.2em;
+  // }
   display: block;
   box-sizing: border-box;
   border: 1px solid hsl(0, 0%, 20%);
