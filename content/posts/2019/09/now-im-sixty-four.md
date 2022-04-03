@@ -59,7 +59,7 @@ Getting older is a thing you have to do\
 In the course of life. That's just the deal.\
 But it's not all bad.\
 Now a grandchild's on the way:\
-A little lass or lad.\
+A little lass or lad.
 
 Thrilled with such good news,\
 I've reached this day,\
