@@ -1,7 +1,7 @@
 ---
 #layout: singlepost
 title: "Let all your devices see your site"
-description: "How to make “localhost” slightly less local."
+description: "How to make “localhost” slightly less local."
 author: Bryce Wray
 date: 2022-04-02T11:00:00-05:00
 lastmod: 2022-04-03T09:46:00-05:00
