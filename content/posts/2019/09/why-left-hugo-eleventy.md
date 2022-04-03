@@ -5,7 +5,7 @@ title: "Why I left Hugo for Eleventy"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2021-12-15T12:25:00-06:00
+lastmod: 2022-04-03T18:36:00-05:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
@@ -101,7 +101,7 @@ But this time, I didn't just slink off, happy to have retained my sanity if not 
 
 “And now I'm going to prove that *you*, **not** I, are the problem.
 
-"I'm going to pick the 'new' SSG I should've picked the first time."
+"I'm going to pick the ‘new’ SSG I should've picked the first time."
 
 ## Cast your bets
 
