@@ -42,11 +42,15 @@ pre[class*="language-"] {
 }
 
 article code {
-  font-size: 0.95em;
+  font-size: 0.8em;
   background-color: var.$blueLightCode;
   @media (prefers-color-scheme: dark) {
     background-color: #454545;
   }
+}
+article .footnotes code {
+  font-size: 1em;
+  // overriding the `article code` part above for footnotes
 }
 
 article p code {
