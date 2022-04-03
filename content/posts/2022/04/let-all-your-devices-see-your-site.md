@@ -4,8 +4,10 @@ title: "Let all your devices see your site"
 description: "How to make “localhost” slightly less local."
 author: Bryce Wray
 date: 2022-04-02T11:00:00-05:00
-#lastmod:
+lastmod: 2022-04-03T09:46:00-05:00
 #initTextEditor: iA Writer
+#devTo: https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd
+#HackerNews: https://news.ycombinator.com/item?id=30889663#30890211
 discussionId: "2022-04-let-all-your-devices-see-your-site"
 featured_image: "web-dev-concept_fotis-fotopoulos-DuHKoV44prg-unsplash_2400x1600.jpg"
 featured_image_width: 2400
@@ -16,7 +18,10 @@ featured_image_caption: |
   </span>
 ---
 
-Today's subject may seem a niche-ish use case, but I have reason to believe otherwise. 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd) and was the subject of a [Hacker News thread](https://news.ycombinator.com/item?id=30889663).
+{.yellowBox}
+
+Today's subject may seem a niche-ish use case, but I have reason to believe otherwise.
 
 Let's say you're developing your website. Since you want to make sure it looks okay on other operating systems, too, you may be using either a virtual machine (like [Parallels Desktop](https://www.parallels.com/), the appropriate [VMWare](https://www.vmware.com/products/desktop-hypervisor.html) product, or [VirtualBox](https://www.virtualbox.org/)) or an actual second computer running one or more different OSs. Or, for that matter, you're equally concerned with how the site looks on a phone or tablet, and you're not willing to depend on your browser's emulation mode for determining that---and, by the way, you're wise to think that way.
 
