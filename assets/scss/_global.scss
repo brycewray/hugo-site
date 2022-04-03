@@ -301,20 +301,20 @@ li p {
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: var.$stdsize;
+    font-size: var.$text-base;
     line-height: 1.65em;
     margin-top: 1.15em;
     margin-bottom: 1.15em;
     @media screen and (min-width: var.$bkpt_lg) {
-      font-size: var.$minimalbig;
+      font-size: var.$text-lg;
       // max-width: 60ch;
     }
-    // @media screen and (min-width: var.$bkpt_2xl) {
-    //   font-size: var.$slightlybig;
-    // }
-    // @media screen and (min-width: var.$bkpt_3xl) {
-    //   font-size: 1.625rem;
-    // }
+    @media screen and (min-width: var.$bkpt_2xl) {
+      font-size: var.$text-xl;
+    }
+    @media screen and (min-width: var.$bkpt_3xl) {
+      font-size: var.$text-2xl;
+    }
   }
   li li, li p {
     font-size: inherit;
