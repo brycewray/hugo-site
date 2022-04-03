@@ -12,11 +12,11 @@
   </ul>
   <h2>Posts</h2>
   <ul>
-    <li><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
+    <li><a href="/posts"><strong>Complete list</strong></a> <em class="serif">(first page of paginated list; five posts per page)</em></li>
   {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
     {{- if (ne .Title "Posts") -}}
     <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}<br />
-    <em class="description">{{ .Description | .Page.RenderString }}</em></li>
+    <span class="description">{{ .Description | .Page.RenderString }}</span></li>
     {{- end -}}
   {{- end -}}
   </ul>

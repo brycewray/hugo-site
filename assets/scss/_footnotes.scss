@@ -31,7 +31,7 @@
     padding-inline-start: 1.5rem;
   }
   ol li {
-    font-size: var.$pokey;
+    font-size: 1em;
     // As of now, `::marker` has too little support even in good browsers;
     // see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
     p {

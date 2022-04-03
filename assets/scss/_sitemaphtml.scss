@@ -7,12 +7,14 @@
   h1 {
     text-align: center;
     font-size: 2.25rem;
+    // font-weight: bold;
     padding-top: 0.75em;
     margin-bottom: 0.5em;
   }
 
   h2 {
     font-size: 1.5rem;
+    // font-weight: bold;
   }
 
   ul li {
@@ -21,7 +23,7 @@
     line-height: 1.25em;
   }
   .description {
-    // font-family: var.$serif;
+    font-family: var.$serif;
   }
 }
 

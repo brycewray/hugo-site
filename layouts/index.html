@@ -11,7 +11,7 @@
         <div>
           <h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
           <p class="homePost-Description">
-            <em>{{ .Description }}</em>
+            {{ .Description }}
           </p>
           <p class="homePost-Dates">
             <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span class="pokey">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}

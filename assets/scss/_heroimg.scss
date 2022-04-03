@@ -46,7 +46,7 @@
     }
   }
   &-title-text, &-subtitle-text, &-description-text {
-    font-family: var.$sans-serif;
+    // font-family: var.$sans-serif;
     color: #fff;
     margin: 0 auto;
     text-shadow: 4px 4px 2px #000;
@@ -62,7 +62,10 @@
   }
   &-title-text {
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: 600;
+    @media screen and (prefers-color-scheme: dark) {
+      font-weight: 550;
+    }
     line-height: 1.1;
     padding-top: 0.5em;
     padding-bottom: 1rem;
@@ -99,7 +102,7 @@
   }
   &-description-text {
     // display: none; // appears only on wider screens
-    // font-family: var.$serif;
+    font-family: var.$serif;
     font-size: 1.25rem;
     @media screen and (min-width: var.$bkpt_md) {
       // display: block;

@@ -6,7 +6,8 @@
   h1 {
     line-height: 1.75em;
     font-size: 1.5rem;
-    font-weight: bold;
+    // font-weight: bold;
+    letter-spacing: -0.025em;
   }
   @media screen and (min-width: var.$bkpt_lg) {
     text-align: right;
@@ -49,7 +50,8 @@
     margin-bottom: 0.25em;
     // font-weight: 825;
     font-size: 2rem;
-    font-weight: bold;
+    // font-weight: bold;
+    letter-spacing: -0.025em;
     @media screen and (min-width: var.$bkpt_lg) {
       margin-top: 0;
       padding-top: 1em;
@@ -61,6 +63,7 @@
   }
   &-Title {
     font-size: 1.75rem;
+    letter-spacing: -0.025em;
     padding-top: 0.5em;
     line-height: normal;
     @media screen and (min-width: var.$bkpt_lg) {
@@ -95,7 +98,7 @@
   }
   &-Description {
     margin-top: 0.5em;
-    // font-family: var.$serif;
+    font-family: var.$serif;
     font-size: 1.125rem;
     @media screen and (min-width: var.$bkpt_lg) {
       font-size: 1.25rem;
