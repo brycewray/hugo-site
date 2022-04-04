@@ -5,7 +5,7 @@ title: "So much for heroes"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-lastmod: 2021-05-16T10:23:00-05:00
+lastmod: 2022-04-03T19:42:00-05:00
 discussionId: "2020-02-so-much-for-heroes"
 featured_image: paint-splatter-2224800_3648x2736.jpg
 featured_image_width: 3648
@@ -91,7 +91,7 @@ Besides, as I kept telling myself: "Dude, what few people you have visiting here
 
 As a result, I created a new branch, retooled the site accordingly, and today published the redesigned, hero-image-less site you now see.
 
-## Noise reduction: It's a *good* thing
+## Noise reduction: it's a *good* thing
 
 It's ironic that one aspect of image processing has to do with reducing so-called [*noise*](https://www.cambridgeincolour.com/tutorials/image-noise.htm); because the "noise" of having the hero images (even the cute ones) became an end unto itself. In the end, that noise---and the growing technical debt, and growing expenditure of my already limited time, which now was going to come with it---had become unacceptable.
 
