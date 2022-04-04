@@ -5,7 +5,7 @@ title: "YouTube TV and the RSNs flap"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
-lastmod: 2020-11-25T09:00:00-06:00
+lastmod: 2022-04-03T20:30:00-05:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
 featured_image: "globe-life-park-rangers-1402096_6000x4000.jpg"
 featured_image_width: 6000
@@ -51,7 +51,9 @@ Sinclair then struck---or tried to strike---new arrangements with the various ca
 
 ## An end to some good times
 
-I grew up a TV sports fan. My late father and I spent many a weekend afternoon watching ballgames together. Back then, there typically was only a nationally televised "[game of the week](https://en.wikipedia.org/wiki/Major_League_Baseball_Game_of_the_Week)" for us to see, usually on a weekend afternoon. This was long before the existence of RSNs---indeed, before the cable TV explosion that made them possible---and the resulting glut of daily and nightly games, college and pro, that have become common in recent years.
+I grew up a TV sports fan. My late father and I spent many a weekend afternoon watching ballgames together. Back then, Major League Baseball typically appeared only in a nationally televised game of the week; and, during football season, we'd hope to get a decent college game to see, since there'd usually be only one or two available from whichever network, singular, happened to be carrying NCAA football in any given year.
+
+This was long before the existence of RSNs---indeed, before the cable TV explosion that made them possible---and the resulting glut of daily and nightly games (within multiple sports), college and pro, that have become common in recent years.
 
 However, as one service after another drops RSNs because the rising cost doesn't justify having them, I suspect I've reached the end of always being just one button-press away from seeing my local teams, a luxury (as it turns out) to which I'd become accustomed over the last decade and a half.
 
