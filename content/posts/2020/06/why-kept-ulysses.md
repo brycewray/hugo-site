@@ -5,7 +5,7 @@ title: "Why I kept Ulysses"
 description: "Renewing the subscription for another year."
 author: Bryce Wray
 date: 2020-06-07T16:15:00-05:00
-lastmod: 2020-06-20T09:45:00-05:00
+lastmod: 2022-04-03T22:16:00-05:00
 discussionId: "2020-06-why-kept-ulysses"
 featured_image: "Ulysses-logo-over-Mac-keyboard_1280x720.jpg"
 featured_image_width: 1280
@@ -79,7 +79,7 @@ It was Ulysses I chose in the middle of a sleepless night when, in a darkened ho
 
 ### It ain't all roses: Ulysses and sync
 
-One more thing I must mention, in the interests of full transparency, is what made me [briefly abandon Ulysses last year](/posts/2019/04/why-left-ulysses/) before returning to it: its occasional issues with iCloud sync.
+One more thing I must mention, in the interests of full [transparency](/posts/2019/10/otoh/), is what made me [briefly abandon Ulysses last year](/posts/2019/04/why-left-ulysses/) before returning to it: its occasional issues with iCloud sync.
 
 As I [already explained](/posts/2019/05/boxed-in/), this is simply something that goes with "shoebox" apps like Ulysses. It's also worth noting that, since the release of [Ulysses 18](https://ulysses.app/releases/) last September, the app has offered more transparent file storage options, although they still lack some of the advantages (and risks?) of keeping files in the native Ulysses Library.
 
