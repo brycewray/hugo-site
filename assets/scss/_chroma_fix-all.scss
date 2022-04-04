@@ -70,6 +70,10 @@ article blockquote code {
   }
 }
 
+.yellowBox code, .blueBox code {
+  font-size: 1em;
+}
+
 .highlight .chroma {
     font-size: 1.5em;
     // keeps code blocks from being too small
