@@ -5,7 +5,7 @@ title: "Transformed"
 description: "The move to Cloudinary."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
-lastmod: 2022-03-28T13:42:00-05:00
+lastmod: 2022-04-03T21:43:00-05:00
 discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -38,7 +38,7 @@ You see, this is similar to how I feel when I have a challenge with the code beh
 
 Such was the case, [earlier this year](/posts/2020/05/going-solo-eleventy/), when I ended this site's five-month reliance on [webpack](https://webpack.js.org) in favor of letting [Eleventy](https://11ty.dev) carry the load alone. While, overall, this simplified things for me, it did require me to find a different way to process the site's images, since webpack and some plugins were now to be relieved of such duties.
 
-At first, I tried some excellent Eleventy plugins, but found each didn't fit my particular setup for differing reasons. As what was intended at first as only an interim measure but soon became my go-to answer, I came up with a build-time script, `imgxfm.js`, which used the [Sharp](https://github.com/lovell/sharp) library (and, later in the script's brief life, the [pngquant](https://pngquant.org/) library) to handle image-processing duties.
+At first, I tried some excellent Eleventy plugins, but found each didn't fit my particular setup for differing reasons. As what was intended at first as only an interim measure but soon became my go-to answer, I came up with a build-time script, `imgxfm.js`, which used the [sharp](https://github.com/lovell/sharp) library (and, later in the script's brief life, the [pngquant](https://pngquant.org/) library) to handle image-processing duties.
 
 When I first went with this method, the site wasn't using [hero images](https://www.optimizely.com/optimization-glossary/hero-image/). Thus, the script, handling only the relatively few images within my posts’ body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup.
 
