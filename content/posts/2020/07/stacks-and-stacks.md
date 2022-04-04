@@ -5,7 +5,7 @@ title: "Stacks and stacks"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00
-lastmod: 2021-02-27T17:41:00-06:00
+lastmod: 2022-04-03T21:35:00-05:00
 discussionId: "2020-07-stacks-and-stacks"
 featured_image: stones-stack-3841920_6000x4000.jpg
 featured_image_width: 6000
@@ -114,7 +114,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: None.
 
-2020-07-05: `imgxfm.js` script, based on the [Sharp](https://github.com/lovell/sharp) library.
+2020-07-05: `imgxfm.js` script, based on the [sharp](https://github.com/lovell/sharp) library.
 
 ## Serving responsive images?
 
