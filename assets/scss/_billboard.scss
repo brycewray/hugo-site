@@ -44,7 +44,7 @@
     }
   }
   &-title-text {
-    font-size: 2.25rem;
+    font-size: 2.5em;
     // font-weight: 600;
     // @media screen and (prefers-color-scheme: dark) {
     //   font-weight: 550;
@@ -53,13 +53,13 @@
     line-height: 1.1;
     letter-spacing: -0.025em;
     @media screen and (min-width: var.$bkpt_md) {
-      font-size: 3rem;
+      font-size: 3em;
     }
     @media screen and (min-width: var.$bkpt_lg) {
       font-size: 3.5rem;
     }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 4.5em;
+    @media screen and (min-width: var.$bkpt_xl) {
+      font-size: 4em;
     }
   }
   &-subtitle-text {
