@@ -5,7 +5,7 @@ title: "Transformed"
 description: "The move to Cloudinary."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
-lastmod: 2022-04-03T21:43:00-05:00
+lastmod: 2022-04-03T21:47:00-05:00
 discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -98,4 +98,8 @@ I am willing to give up a few points off my performance scores. The relief I fee
 
 ----
 
-**Update, 2020-10-05**: While I remain impressed by all that's included on Cloudinary's free tier, one thing that's not and [apparently never will be](https://support.cloudinary.com/hc/en-us/articles/202520562-Can-we-deliver-our-files-using-a-subdomain-of-our-own-domain-Like-a-CNAME-from-cdn-example-com-") is CNAME support for a custom domain. (It comes only with Cloudinary's highest-priced tier, which [ranges from $224 to $249 per month](https://cloudinary.com/pricing) as of this writing.) In other words, each non-SVG image on my site as of now is coming from ```res.cloudinary.com``` rather than, say, ```images.brycewray.com```---and that causes the images to be blocked by anally configured firewalls, especially in always-anal CorporateLand. However, just as I ceased worrying some time back about supporting CorporateLand's beloved-yet-obsolete Internet Explorer (see this post's footnotes), I decided I also won't worry about CorporateLand's anal-ness (?) where ```res.cloudinary.com``` is concerned. I believe the vast majority of you readers are accessing this site from not-so-anal surroundings, anyway. **Still**, if *your* site **is** intended for viewing within CorporateLand, just be aware of this when/if you consider Cloudinary.
+### Update, 2020-10-05
+
+While I remain impressed by all that's included on Cloudinary's free tier, one thing that's not and [apparently never will be](https://support.cloudinary.com/hc/en-us/articles/202520562-Can-we-deliver-our-files-using-a-subdomain-of-our-own-domain-Like-a-CNAME-from-cdn-example-com-") is CNAME support for a custom domain. (It comes only with Cloudinary's highest-priced tier, which [ranges from $224 to $249 per month](https://cloudinary.com/pricing) as of this writing.) In other words, each non-SVG image on my site as of now is coming from ```res.cloudinary.com``` rather than, say, ```images.brycewray.com```---and that causes the images to be blocked by anally configured firewalls, especially in always-anal CorporateLand.
+
+However, just as I ceased worrying some time back about supporting CorporateLand's beloved-yet-obsolete Internet Explorer (see this post's footnotes), I decided I also won't worry about CorporateLand's anal-ness (?) where ```res.cloudinary.com``` is concerned. I believe the vast majority of you readers are accessing this site from not-so-anal surroundings, anyway. **Still**, if *your* site **is** intended for viewing within CorporateLand, just be aware of this when/if you consider Cloudinary.
