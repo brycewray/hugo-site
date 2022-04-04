@@ -5,7 +5,7 @@ title: "Chasing 100: tips for optimizing your website"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00
-lastmod: 2021-06-25T16:45:00-06:00
+lastmod: 2022-04-03T21:40:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: "tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg"
 featured_image_width: 6036
@@ -45,7 +45,7 @@ If you reply, "I don't anticipate attracting visitors from all that far away," c
 
 The best scenario is that, regardless of where a visitor may be, he or she doesn't have to wait long for your content to load---especially considering that a disproportionate percentage of visitors from certain nations will be coming in on slower mobile devices and less advanced networks. For those scenarios, you want your content on a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
 
-The good thing is that, if you're hosting your site on [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com/), or [Firebase](https://firebase.google.com/), a fast CDN is part of the deal. However, if you're operating off a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) or a shared-hosting account (see the next item for more on that), try to put your site behind a free account on [Cloudflare](https://www.cloudflare.com/). [It's a reverse proxy rather than a true CDN](https://wp-rocket.me/blog/cloudflare-use-not/), but it does at least offer similar functionality on its free plan.
+The good thing is that, if you're hosting your site on [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com/), or [Firebase](https://firebase.google.com/), a fast CDN is part of the deal. However, if you're operating off a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) or a shared-hosting account (see the next item for more on that), try to put your site behind a free account on [Cloudflare](https://www.cloudflare.com/).
 
 ### Sharing is bad
 
