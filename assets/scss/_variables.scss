@@ -33,12 +33,9 @@ $code-color-blueLight-dark-mode: hsl(197, 100%, 77%);
 $code-color-orange-dark-mode: hsl(40, 100%, 50%);
 
 // Typography
-// $sans-serif: "Public Sans", "Helvetica Neue", Helvetica, "Liberation Sans", "Nimbus Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Arial, "Segoe UI", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$sans-serif: sans-serif;
-// $serif: Times, "Times New Roman", "Liberation Serif", ui-serif, Georgia, Cambria, serif;
-$serif: serif;
-// $monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Roboto Mono", Menlo, Monaco, "Liberation Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, "Ubuntu Mono", "Courier New", monospace;
-$monospaced: monospace;
+$sans-serif: "Helvetica Neue", Helvetica, "DejaVu Sans", "Liberation Sans", "Nimbus Sans", Arimo, Cantarell, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Arial, "Segoe UI", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$serif: Times, "Times New Roman", "DejaVu Serif", "Liberation Serif", "Nimbus Roman", ui-serif, Georgia, Cambria, serif;
+$monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Roboto Mono", Menlo, Monaco, "Liberation Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, "Ubuntu Mono", "Courier New", monospace;
 
 // rems
 $biggest: 2.5rem;
