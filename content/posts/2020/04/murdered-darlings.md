@@ -5,7 +5,7 @@ title: "Murdered darlings"
 description: "R.I.P., WIP: a farewell to this site’s original purpose."
 author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
-lastmod: 2022-03-28T14:14:00-05:00
+lastmod: 2022-04-03T20:49:00-05:00
 discussionId: "2020-04-murdered-darlings"
 featured_image: "candles-memorial-2905395_5472x3648.jpg"
 featured_image_width: 5472
@@ -81,7 +81,7 @@ So the WIP is dead. Long live the website.
 
 That's not to say I now sport a T-shirt saying, "I visited Book-writing Land and all I got was this lousy website."
 
-Quite the contrary: I throughly enjoy writing the content on this site and, as recent posts make clear, doing all the geeky stuff that keeps it running. In fact, truth be known, I like *this* kind of writing more, which probably has its own role in the events that led to this decision.
+Quite the contrary: I thoroughly enjoy writing the content on this site and, as recent posts make clear, doing all the geeky stuff that keeps it running. In fact, truth be known, I like *this* kind of writing more, which probably has its own role in the events that led to this decision.
 
 Still, I'm glad for the learning experiences I had while trying to write the WIP. That's true for both the previously mentioned research I did and, especially, the writing apps I used.[^Ulysses]
 
