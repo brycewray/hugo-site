@@ -42,7 +42,16 @@ pre[class*="language-"] {
 }
 
 article code {
-  font-size: 0.8em;
+  font-size: 1em;
+  @media screen and (min-width: var.$bkpt_md) {
+    font-size: 0.95em;
+  }
+  @media screen and (min-width: var.$bkpt_xl) {
+    font-size: 0.9em;
+  }
+  @media screen and (min-width: var.$bkpt_2xl) {
+    font-size: 0.85em;
+  }
   background-color: var.$blueLightCode;
   @media (prefers-color-scheme: dark) {
     background-color: #454545;
@@ -75,9 +84,18 @@ article blockquote code {
 }
 
 .highlight .chroma {
+  // keeps code blocks from being too small
+  // due to the `article code` rule above
+  font-size: 1.125em;
+  @media screen and (min-width: var.$bkpt_lg) {
+    font-size: 1.25em;
+  }
+  @media screen and (min-width: var.$bkpt_xl) {
+    font-size: 1.375em;
+  }
+  @media screen and (min-width: var.$bkpt_2xl) {
     font-size: 1.5em;
-    // keeps code blocks from being too small
-    // due to the `article code` rule above
+  }
 }
 
 @media screen and  (min-width: var.$bkpt-lg) {
