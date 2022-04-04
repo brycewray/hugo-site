@@ -5,7 +5,7 @@ title: "Webmentions in three SSGs: Part 2"
 description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."
 author: Bryce Wray
 date: 2020-04-28T16:35:00-05:00
-lastmod: 2022-02-12T10:45:00-06:00
+lastmod: 2022-04-03T22:55:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-2"
 featured_image: "pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg"
 featured_image_width: 4401
@@ -31,7 +31,7 @@ For two reasons, we start with the [Eleventy repo](https://github.com/brycewray/
 
 ## Eleventy: Fetching webmentions
 
-Two things made this much easier with Eleventy than it would prove to be on the other two repos: Eleventy's amazing flexibility; and two superb articles by [Max Böck](https://mxb.dev/blog/using-webmentions-on-static-sites/) and [Sia Karamalegos](https://sia.codes/posts/webmentions-eleventy-in-depth/).
+Two things made this much easier with Eleventy than it would prove to be on the other two repos: Eleventy's amazing flexibility; and a pair of superb articles by [Max Böck](https://mxb.dev/blog/using-webmentions-on-static-sites/) and [Sia Karamalegos](https://sia.codes/posts/webmentions-eleventy-in-depth/).
 
 In the Eleventy repo, [`/_data/webmentions.js`](https://github.com/brycewray/files-webmentions/blob/master/eleventy_bundler/_data/webmentions.js) "phones home" to webmention.io and collects the resulting JSON data into `/_cache/webmentions.json`]. From there, [`/.eleventy.js`](https://github.com/brycewray/files-webmentions/blob/master/eleventy_bundler/.eleventy.js) (the main Eleventy configuration file) and [`/src/assets/utils/filters.js`](https://github.com/brycewray/files-webmentions/blob/master/eleventy_bundler/src/assets/utils/filters.js) massage the data for presentation. For example, each webmention is put in chronological order and arranged according to its respective type (in webmention-ese, its `wm-property`): `like-of`, `in-reply-to`, `bookmark-of`, `mention-of`, or `repost-of`.[^NoBookmarks]
 
