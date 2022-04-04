@@ -5,7 +5,7 @@ title: "Ignition sequence start"
 description: "GitHub Actions to deploy to Firebase Hosting."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2022-03-28T13:45:00-05:00
+lastmod: 2022-04-03T22:09:00-05:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: "spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg"
@@ -38,7 +38,7 @@ Enough talk; on with the GitHub Actions. Of course, each is based on two assumpt
 
 [^versionInfo]: Just be sure the version conforms to how it shows up in the Hugo release filename, since this reference helps build that name for the download process in the GitHub Action; always check the [Hugo releases page](https://github.com/gohugoio/hugo/releases) to be sure about the accurate filename.
 
-[^diffThemes]: At one point, I had the Hugo version of this site's repo set up so that there were **three** themes for Hugo's use---one with purely SCSS, one with CSS-on-PostCSS (but still no Tailwind), and one with Tailwind. That way, depending on which I wanted to use, I coukd simply switch themes in the site's <code>config.yaml</code> file. A few months after this post's initial publication, I decided maintaining all three themes was more trouble than I wanted and just went with Tailwind. However, just in case I change my mind, I'll stick with the extended version of Hugo for all my uses.
+[^diffThemes]: At one point, I had the Hugo version of this site's repo set up so that there were **three** themes for Hugo's use---one with purely SCSS, one with CSS-on-PostCSS (but still no Tailwind), and one with Tailwind. That way, depending on which I wanted to use, I could simply switch themes in the site's `config.yaml` file. A few months after this post's initial publication, I decided maintaining all three themes was more trouble than I wanted and just went with Tailwind. However, just in case I change my mind, I'll stick with the extended version of Hugo for all my uses.
 
 ## For Hugo
 
