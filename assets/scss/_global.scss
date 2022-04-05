@@ -2,7 +2,7 @@
 
 html, body {
   font-family: var.$sans-serif;
-  // font-weight: 425; // when using variable fonts
+  font-weight: 425; // when using variable fonts
   color: var.$default-color;
   width: 100%;
   margin: 0 auto;
@@ -11,10 +11,11 @@ html, body {
   -webkit-font-feature-settings: "liga" 1;
   font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
   text-rendering: optimizeLegibility;
+  font-kerning: normal;
   @media (prefers-color-scheme: dark) {
     background: var.$background-dark-mode;
     color: var.$default-color-dark-mode;
-    // font-weight: 375;
+    font-weight: 375;
   }
 }
 
@@ -35,19 +36,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 
-// h1, .h1 {
-//   font-weight: 800;
-//   @media (prefers-color-scheme: dark) {
-//     font-weight: 750;
-//   }
-// }
+h1, .h1 {
+  font-weight: 800;
+  @media (prefers-color-scheme: dark) {
+    font-weight: 750;
+  }
+}
 
-// h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-//   font-weight: 500;
-//   @media (prefers-color-scheme: dark) {
-//     font-weight: 475;
-//   }
-// }
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 600;
+  @media (prefers-color-scheme: dark) {
+    font-weight: 550;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   outline: 2px transparent;
@@ -73,21 +74,21 @@ h1, h2, h3, h4, h5, h6 {
     }
     &::after {
       font-size: var.$stdsize;
-      // font-weight: 425;
+      font-weight: 425;
       padding-left: 0.5em;
       content: "#";
-      // @media screen and (prefers-color-scheme: dark) {
-      //   font-weight: 375;
-      // }
+      @media screen and (prefers-color-scheme: dark) {
+        font-weight: 375;
+      }
     }
   }
 }
 
-// strong, b {
-//   @media (prefers-color-scheme: dark) {
-//     font-weight: 725;
-//   }
-// }
+strong, b {
+  @media (prefers-color-scheme: dark) {
+    font-weight: 725;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   display: block;

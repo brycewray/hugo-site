@@ -48,7 +48,10 @@
   &-Latest {
     margin-top: 0.5em;
     margin-bottom: 0.25em;
-    // font-weight: 825;
+    font-weight: 825;
+    @media screen and (prefers-color-scheme: dark) {
+      font-weight: 775;
+    }
     font-size: 2rem;
     // font-weight: bold;
     letter-spacing: -0.025em;
