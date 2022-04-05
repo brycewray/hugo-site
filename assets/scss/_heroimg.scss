@@ -61,7 +61,7 @@
     }
   }
   &-title-text {
-    font-size: 2.5em;
+    font-size: 2.25em;
     font-weight: 800;
     @media screen and (prefers-color-scheme: dark) {
       font-weight: 750;
@@ -104,35 +104,44 @@
   &-description-text {
     // display: none; // appears only on wider screens
     font-family: var.$sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
     @media screen and (min-width: var.$bkpt_md) {
       // display: block;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
     @media screen and (min-width: var.$bkpt_lg) {
+      font-size: 1.5rem;
+      letter-spacing: -0.025em;
       margin-bottom: 1em;
       padding-top: 0.25em;
       padding-right: 15%;
       padding-left: 5%;
-      font-size: 1.75rem;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
     @media screen and (min-width: var.$bkpt_3xl) {
-      font-size: 2.25rem;
+      font-size: 2rem;
     }
   }
   &-p-text {
-    font-family: var.$sans-serif;
-    font-size: var.$slightlybig;
-    line-height: 1;
+    // font-family: var.$sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
     padding-top: 1rem;
     // padding-bottom: 0.5em;
     color: #fff;
     text-shadow: 4px 4px 2px #000;
     text-align: center;
+    @media screen and (min-width: var.$bkpt_md) {
+      font-size: 1.25rem;
+      line-height: 1.175;
+    }
     @media screen and (min-width: var.$bkpt_lg) {
+      font-size: 1.375rem;
+      line-height: 1.1;
       text-align: right;
       padding-top: 0;
       padding-right: 5%;

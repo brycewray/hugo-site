@@ -86,15 +86,15 @@ article blockquote code {
 .highlight .chroma {
   // keeps code blocks from being too small
   // due to the `article code` rule above
-  font-size: 1.125em;
+  // font-size: 1.125em;
   @media screen and (min-width: var.$bkpt_lg) {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   @media screen and (min-width: var.$bkpt_xl) {
-    font-size: 1.375em;
+    font-size: 1.125em;
   }
   @media screen and (min-width: var.$bkpt_2xl) {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
