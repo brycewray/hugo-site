@@ -5,7 +5,7 @@ title: "Static tweets in Eleventy and Hugo • Part 2"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
 date: 2022-02-11T14:43:00-06:00
-lastmod: 2022-02-20T11:48:00-06:00
+lastmod: 2022-04-05T21:39:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -156,7 +156,7 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
     {{ end }}
   {{ end }}
   <div class="tweet-footer">
-    <a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+    <a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
   </div>
 </blockquote>
 ```
