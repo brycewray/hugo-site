@@ -5,7 +5,7 @@ title: "Static tweets in Astro"
 description: "A component which properly embeds tweets when you’re using today’s hottest SSG."
 author: Bryce Wray
 date: 2022-04-06T20:18:00-05:00
-#lastmod: 2022-04-06T21:11:00-05:00 # fixing quotation marks in description
+#lastmod: 2022-04-06T22:15:00-05:00 # losing extraneous period/dot
 #initTextEditor: iA Writer
 discussionId: "2022-04-static-tweets-astro"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -47,7 +47,7 @@ As was true with the v.2-compliant Hugo shortcode from that [earlier post](/post
 
 Now, you can **create the component** in, of course, your Astro project's top-level `src/components/` folder (unless you've otherwise [configured](https://docs.astro.build/en/reference/configuration-reference/) the site structure).
 
-The following is my `STweetV2.astro`.[^Astro] component, based on the logic and styling of my [previously posted](/posts/2022/02/static-tweets-eleventy-hugo-part-2/#the-stweetv2-shortcode) Hugo shortcode for interacting with v.2 of the Twitter API:
+The following is my `STweetV2.astro`[^Astro] component, based on the logic and styling of my [previously posted](/posts/2022/02/static-tweets-eleventy-hugo-part-2/#the-stweetv2-shortcode) Hugo shortcode for interacting with v.2 of the Twitter API:
 
 [^Astro]: As of this writing, this site's syntax highlighting doesn't "know" what an `.astro` file is, so I'm improvising by telling the highlighter it's JavaScript. That's partly true, since the top part *is* JS, but the bottom part is a mixture of JS and HTML.
 
