@@ -5,7 +5,7 @@ title: "Static tweets in Eleventy and Hugo"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray
 date: 2022-02-07T12:00:00-06:00
-lastmod: 2022-03-08T20:57:00-06:00
+lastmod: 2022-04-07T10:11:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -43,7 +43,7 @@ With the Eleventy SSG, we’ll be making use of [Kyle Mitofsky](https://twitter.
 
 When installed, the plugin will pull data from Twitter’s private Developer API and so, as the plugin’s [README](https://github.com/KyleMit/eleventy-plugin-embed-tweet) explains, this requires signing up for a free [Twitter Developer API account](https://developer.twitter.com/en/apply-for-access). Once you’ve got that account, you’ll have four environment variables—`TOKEN`, `TOKEN_SECRET`, `CONSUMER_KEY`, and `CONSUMER_SECRET`—that must live in a “dot-env” (`.env`) file at your site project’s root level.
 
-That’s fine for when you’re developing locally, but you obviously don’t want to [commit](https://git-scm.com/docs/git-commit) that file to a public repo. As a result, you’ll have to supply these variables to your site host, so it can access them during each build (*e.g.*, here are instructions for [Netlify](https://docs.netlify.com/configure-builds/environment-variables/), [Vercel](https://vercel.com/docs/concepts/projects/environment-variables), and [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/build-configuration#environment-variables)). The README warns that, if the environment variables *aren’t* available at build time, the plugin will fall back to that JavaScript glob from Twitter’s standard tweet-embedding process.
+That’s fine for when you’re developing locally, but you obviously don’t want to [commit](https://git-scm.com/docs/git-commit) that file to a public repo. As a result, you’ll have to supply these variables to your site host, so it can access them during each build (*e.g.*, here are instructions for [Netlify](https://docs.netlify.com/configure-builds/environment-variables/), [Vercel](https://vercel.com/docs/concepts/projects/environment-variables), and [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/build-configuration#environment-variables)). The README warns that, if the environment variables *aren’t* available at build time, the plugin will fall back to that JavaScript glop from Twitter’s standard tweet-embedding process.
 
 **Note**: Please refer to the README for more details about the plugin, including its available options.
 {.yellowBox}
