@@ -2,10 +2,10 @@
 layout: singlepost
 tags: post
 title: "Static tweets in Astro"
-description: "A component which properly embeds tweets when you're using today's hottest SSG."
+description: "A component which properly embeds tweets when you’re using today’s hottest SSG."
 author: Bryce Wray
 date: 2022-04-06T20:18:00-05:00
-#lastmod:
+#lastmod: 2022-04-06T21:11:00-05:00 # fixing quotation marks in description
 #initTextEditor: iA Writer
 discussionId: "2022-04-static-tweets-astro"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
