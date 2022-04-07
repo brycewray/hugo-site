@@ -40,7 +40,7 @@ I thought over their points long and hard, and one key observation by Simmons fr
 > .&nbsp;.&nbsp;.&nbsp;it's time to stop assuming your page layout design process looks like this: 1) Pick a third-party framework; 2) Pick one of the layouts that comes with that framework; 3) Limit all your ideas to what that framework can do.
 >
 > We don't need that crutch anymore.
-
+>
 > I know a _lot_ of people will think the "best" way to use CSS Grid will be to download the new version of Bootstrap (version 5! now with Grid!), or to use any one of a number of CSS Grid layout frameworks that people are inevitably going to make later this year.&nbsp;.&nbsp;.&nbsp;. But I don't. The more I use CSS Grid, the more convinced I am that there is no benefit to be had by adding a layer of abstraction over it. CSS Grid is the layout framework. Baked right into the browser.
 
 Thus, feeling only mildly sheepish _(baaaaa)_ about my previous position on CSS Grid _vs._ Bootstrap, I prepared to venture forth and give it a shot. That meant, only a few weeks after converting this [Hugo](https://gohugo.io)-based site from its original incarnation (based on CSS and other code from the [Hugo-version Tale theme](https://themes.gohugo.io/tale-hugo/)) to Bootstrap 4, I would be converting it again, this time to CSS Grid.
