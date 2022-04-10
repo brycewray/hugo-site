@@ -60,9 +60,9 @@
         {{ range $variants := . }}
           <div class="ctr">
             {{ if eq $variants.type "video/gif" }}
-              <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-img" preload="none">
+              <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-img">
             {{ else}}
-              <video loop autoplay controls class="ctr tweet-img" preload="none">
+              <video loop autoplay controls class="ctr tweet-img">
             {{ end }}
               <source src=" {{ $variants.src }}" type="{{ $variants.type }}">
               <p class="legal">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
