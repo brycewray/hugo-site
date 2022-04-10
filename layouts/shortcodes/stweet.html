@@ -53,6 +53,25 @@
       <img src="{{ $item.url }}" alt="Image from tweet {{ $id }}" class="tweet-img" />
     {{ end }}
   {{ end }}
+  {{ with $json }}
+    {{ with $json.video }}
+      {{ $video := . }}
+      {{ with $video.variants }}
+        {{ range $variants := . }}
+          <div class="ctr">
+            {{ if eq $variants.type "video/gif" }}
+              <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-img" preload="none">
+            {{ else}}
+              <video loop autoplay controls class="ctr tweet-img" preload="none">
+            {{ end }}
+              <source src=" {{ $variants.src }}" type="{{ $variants.type }}">
+              <p class="legal">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+            </video>
+          </div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
   <div class="tweet-footer">
     <a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
   </div>
