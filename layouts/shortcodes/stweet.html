@@ -61,7 +61,7 @@
           <div class="ctr">
             {{ if eq $variants.type "video/gif" }}
               <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-img">
-            {{ else}}
+            {{ else }}
               <video loop autoplay controls class="ctr tweet-img">
             {{ end }}
               <source src=" {{ $variants.src }}" type="{{ $variants.type }}">
