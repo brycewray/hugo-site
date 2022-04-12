@@ -4,6 +4,7 @@
   - https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
   - https://hugo.md/post/update-rendering-static-tweets/
   - https://github.com/KyleMit/eleventy-plugin-embed-tweet
+  - https://github.com/astro-community/astro-embed/blob/main/packages/astro-embed-twitter/Tweet.astro
   =======
 */}}
 
@@ -35,7 +36,9 @@
   {{ end }}
 {{ end }}
 
-<blockquote class="tweet-card">
+{{ $tweetLink := "https://twitter.com/{{ $json.user.screen_name}}/status/{{ $id }}" }}
+
+<blockquote class="tweet-card" cite="{{ $tweetLink }}">
   <div class="tweet-header">
     <a class="tweet-profile" href="https://twitter.com/{{ $json.user.screen_name}}" target="_blank" rel="noopener">
       <img src="{{ $json.user.profile_image_url_https }}" alt="Twitter avatar for {{ $json.user.screen_name}}" />
@@ -49,26 +52,29 @@
     {{ .Page.RenderString $text }}
   </p>
   {{ if isset $json "photos" }}
-    {{ range $item := $json.photos }}
-      <img src="{{ $item.url }}" alt="Image from tweet {{ $id }}" class="tweet-img" />
-    {{ end }}
+    {{ $imageCount := len $json.photos }}
+    <div class="tweet-img-grid-{{ $imageCount }}">
+      {{ range $item := $json.photos }}
+        <img src="{{ $item.url }}" alt="Image from tweet {{ $id }}" class="tweet-media-img" loading="lazy" />
+      {{ end }}
+    </div>
   {{ end }}
   {{ with $json }}
     {{ with $json.video }}
       {{ $video := . }}
       {{ with $video.variants }}
-        {{ range $variants := . }}
-          <div class="ctr">
+        <div class="ctr tweet-video-wrapper">
+          {{ range $variants := . }}
             {{ if eq $variants.type "video/gif" }}
-              <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-img">
+              <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
             {{ else }}
-              <video loop autoplay controls class="ctr tweet-img">
+              <video loop autoplay controls class="ctr tweet-media-img">
             {{ end }}
               <source src=" {{ $variants.src }}" type="{{ $variants.type }}">
               <p class="legal">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
-          </div>
-        {{ end }}
+          {{ end }}
+        </div>
       {{ end }}
     {{ end }}
   {{ end }}

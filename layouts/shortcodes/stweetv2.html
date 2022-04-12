@@ -5,6 +5,7 @@
   - https://hugo.md/post/update-rendering-static-tweets/
   - https://github.com/KyleMit/eleventy-plugin-embed-tweet
   - https://www.stackbit.com/blog/advanced-hugo-templates/
+  - https://github.com/astro-community/astro-embed/blob/main/packages/astro-embed-twitter/Tweet.astro
   =======
 */}}
 
@@ -81,15 +82,21 @@
   <p class="tweet-body">
     {{ .Page.RenderString $text }}
   </p>
+  {{ $imageCount := 1}}
   {{ with $json}}
     {{ with $json.includes }}
       {{ $includes := . }}
+      {{ if $includes.media }}
+        {{ $imageCount = len $includes.media }}
+      {{ end }}
+      <div class="tweet-img-grid-{{ $imageCount }}">
       {{ range $includes.media }}
         {{ if not (eq .type "animated_gif" ) }}
-          <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-img" />
+          <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-media-img" />
           {{/* This will need to be in the main blockquote for multiple included images */}}
         {{ end }}
       {{ end }}
+      </div>
     {{ end }}
   {{ end }}
   <div class="tweet-footer">
