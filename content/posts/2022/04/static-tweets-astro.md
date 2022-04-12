@@ -5,7 +5,7 @@ title: "Static tweets in Astro"
 description: "A component which properly embeds tweets when you’re using today’s hottest SSG."
 author: Bryce Wray
 date: 2022-04-06T20:18:00-05:00
-#lastmod: 2022-04-06T22:15:00-05:00 # losing extraneous period/dot
+lastmod: 2022-04-12T09:42:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-04-static-tweets-astro"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -15,6 +15,9 @@ featured_image_alt: "Digital image of a blue Twitter logo on a dark blue, rounde
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a>; <a href="https://unsplash.com/s/photos/twitter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
+
+**Update, 2022-04-12**: The [Astro](https://astro.build) team has come up with an [`astro-embed` project](https://github.com/astro-community/astro-embed) which will accomplish everything described herein and much more, so I encourage you to use it rather than the component described herein. That said, perhaps this post will still be of some educational value, especially for those new to Astro.
+{.yellowBox}
 
 Perhaps you saw one or both of my [earlier](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about how to embed fully static (thus, **not** privacy-violating) tweets in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) static site generators (SSGs). If not, you may want to read at least the [first one](/posts/2022/02/static-tweets-eleventy-hugo/) for background because, in this post, I offer a similar---albeit briefer---piece about how to do this with the **[Astro](https://astro.build)** SSG.
 
