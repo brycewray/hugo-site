@@ -72,7 +72,7 @@
 <blockquote class="tweet-card">
   <div class="tweet-header">
     <a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">
-      <img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" />
+      <img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" loading="lazy" />
     </a>
     <div class="tweet-author">
       <a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" rel="noopener">{{ $name }}</a>
@@ -92,7 +92,7 @@
       <div class="tweet-img-grid-{{ $imageCount }}">
       {{ range $includes.media }}
         {{ if not (eq .type "animated_gif" ) }}
-          <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-media-img" />
+          <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-media-img" loading="lazy" />
           {{/* This will need to be in the main blockquote for multiple included images */}}
         {{ end }}
       {{ end }}
