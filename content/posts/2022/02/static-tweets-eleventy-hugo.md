@@ -5,7 +5,7 @@ title: "Static tweets in Eleventy and Hugo"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray
 date: 2022-02-07T12:00:00-06:00
-lastmod: 2022-04-07T10:11:00-05:00
+lastmod: 2022-04-12T09:05:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo"
 featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a>; <a href="https://unsplash.com/s/photos/twitter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Update, 2022-02-11**: After reading this post, please see also [its follow-up](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) regarding use of the v.2 Twitter Developer API mentioned herein.
+**Update, 2022-04-12**: Based on [work](https://github.com/astro-community/astro-embed) by the [Astro](https://astro.build) team, I have enhanced the shortcode described within (and the accompanying styling) so it also can handle animations embedded in tweets. Unfortunately, this isn't possible with the one described in the [follow-up](/posts/2022/02/static-tweets-eleventy-hugo-part-2) to this post, as I explain in an update therein.
 {.yellowBox}
 
 You know it’s important to respect, and protect, the privacy of your website’s visitors. However, serving them embedded social media content can complicate your good intentions. The good news is that my two favorite [static site generators](https://jamstack.org/generators/) (SSGs), [Eleventy](https://11ty.dev/) and [Hugo](https://gohugo.io/), will help you fix that.
@@ -176,6 +176,6 @@ SSG-built websites like this one amount to [only a very tiny fraction](https://w
 
 [^8]:	But what about Hugo’s built-in `tweet` shortcode, you ask? Well, a look at its [code in the Hugo GitHub repository](https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates/shortcodes) indicates it uses the [regular Twitter embedding method](https://help.twitter.com/en/using-twitter/how-to-embed-a-tweet), so its shelf life should be a very long one. Beyond that, the Hugo maintainers know it’s widely used and will keep it updated accordingly; besides, if Twitter changed *that* method, the worldwide sound of breaking websites would shatter all our eardrums.
 
-[^9]:	I am researching how to use Twitter API v.2, rather than the public API, with `stweet`, but I wouldn’t suggest you hold your breath. The Hugo documentation for handling build-level “secret” environment variables is, um, lacking—as am I. **Update, 2022-02-11**: I now have a v.2-based shortcode ready; please see the [follow-up article](/posts/2022/02/static-tweets-eleventy-hugo-part-2/).
+[^9]:	I am researching how to use Twitter API v.2, rather than the public API, with `stweet`, but I wouldn’t suggest you hold your breath. The Hugo documentation for handling build-level “secret” environment variables is, um, lacking—as am I. **Update, 2022-02-11**: I now have a v.2-based shortcode ready; please see the [follow-up article](/posts/2022/02/static-tweets-eleventy-hugo-part-2/). **Further update, 2022-04-12**: I will keep that article online for the sake of [transparency](/posts/2019/10/otoh/), but things I learned later while examining the [Astro](https://astro.build) team's [`astro-embed` package](https://github.com/astro-community/astro-embed)---chiefly, that the v.2 API [doesn't currently support viewing animations within embedded tweets](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media)---led me to believe it would be better to stick with the public syndication API, instead. We will simply have to hope Twitter doesn't hose it.
 
 [^10]:	It probably helps that both methods covered in this post link the static embeds back to their originals on Twitter, where one gets the full nine yards’ worth of JavaScript as Twitter prefers. Otherwise, yeah, Team Twitter might have a problem with this. Also: I would add in Twitter’s defense that its eventual retirement of old APIs won’t be an effort to make anybody’s life more difficult; rather, it’ll be a legitimate attempt to improve the quality of Twitter-accessing code. I can absolutely get behind that.
