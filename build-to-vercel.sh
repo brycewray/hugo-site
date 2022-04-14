@@ -33,11 +33,9 @@ curl -LJO https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hu
 
 tar -xvzf hugo_extended_${HUGO_VERSION}_macOS-64bit.tar.gz;
 
-mv hugo $BIN_DIR
+mv hugo /usr/local/bin/
 
 which hugo
-
-ls $BIN_DIR
 
 hugo version
 
