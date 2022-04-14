@@ -39,7 +39,7 @@ mv hugo $BIN_DIR
 
 rm -rf hugo_extended*;
 
-hugo --version
+hugo version
 
 echo "Building site..."
 
