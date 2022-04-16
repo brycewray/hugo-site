@@ -4,7 +4,7 @@ title: "Let all your devices see your site"
 description: "How to make “localhost” slightly less local."
 author: Bryce Wray
 date: 2022-04-02T11:00:00-05:00
-lastmod: 2022-04-03T09:46:00-05:00
+lastmod: 2022-04-16T08:55:00-05:00
 #initTextEditor: iA Writer
 #devTo: https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd
 #HackerNews: https://news.ycombinator.com/item?id=30889663#30890211
@@ -87,7 +87,7 @@ Now you have to set your project's dev server to use that IP address, rather tha
 
 ### Eleventy
 
-If you're using a **pre-version-2.x** version of the [Eleventy](https://11ty.dev) SSG, its [Browsersync dependency](https://www.11ty.dev/docs/watch-serve/) will, by default, display the correct IP address when you run Eleventy in dev mode. In Eleventy **2.x and above**, its built-in dev server doesn't do that by default **but** you can [edit its settings](https://www.11ty.dev/docs/watch-serve/#eleventy-dev-server) in the `.eleventy.js` config file so that it will, by adding a line saying `showAllHosts: true` (the `showAllHosts` default setting is `false`).
+If you're using a **pre-version-2.x** installation of the [Eleventy](https://11ty.dev) SSG, its [Browsersync dependency](https://www.11ty.dev/docs/watch-serve/) will, by default, display the correct IP address when you run Eleventy in dev mode. In Eleventy **2.x and above**, its built-in dev server doesn't do that by default **but** you can [edit its settings](https://www.11ty.dev/docs/watch-serve/#eleventy-dev-server) in the `.eleventy.js` config file so that it will, by adding a line saying `showAllHosts: true` (the `showAllHosts` default setting is `false`).
 
 By default, Eleventy's dev server uses port 8080. If you prefer to use a different port, ***either*** set it in `.eleventy.js` (in Browsersync with pre-2.x or the built-in server with 2.x+) ***or***, when running the `eleventy` command, use the `--port` flag as shown here, wherein you're specifying port 3000:
 
@@ -115,13 +115,27 @@ hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000
 
 ### Astro
 
-With the [Astro](https://astro.build) SSG, [use the `--host` flag](https://docs.astro.build/en/reference/cli-reference/#astro-dev) with `astro dev`; *e.g.*:
+If you're using a **pre-version-0.26.x** installation of the [Astro](https://astro.build) SSG, [use the `--host` flag](https://docs.astro.build/en/reference/cli-reference/#astro-dev) with `astro dev`; *e.g.*:
 
 ```bash
 astro dev --host 192.168.254.10
 ```
 
 By default, it'll use port 3000, but you can change that by [adding the `--port` flag](https://docs.astro.build/en/reference/cli-reference/#astro-dev). You also can [set these parameters](https://docs.astro.build/en/reference/configuration-reference/#dev-options) in the project's `astro.config.mjs` file.
+
+In Astro **0.26.x and above**, [use the top-level `server` object](https://docs.astro.build/en/reference/configuration-reference/#server-options) in the `astro.config.mjs` file to make these changes. Here is how you'd make the ones noted above (using port 5000 as an alternate):
+
+```js
+export default defineConfig({
+  // other config, perhaps
+  server: {
+    port: 5000,
+    host: "192.168.254.10",
+  },
+  // other config, perhaps
+})
+
+```
 
 ### Next.js
 
