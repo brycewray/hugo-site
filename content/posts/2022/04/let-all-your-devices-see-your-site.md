@@ -4,7 +4,7 @@ title: "Let all your devices see your site"
 description: "How to make “localhost” slightly less local."
 author: Bryce Wray
 date: 2022-04-02T11:00:00-05:00
-lastmod: 2022-04-16T08:55:00-05:00
+lastmod: 2022-04-16T09:15:00-05:00
 #initTextEditor: iA Writer
 #devTo: https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd
 #HackerNews: https://news.ycombinator.com/item?id=30889663#30890211
@@ -121,7 +121,7 @@ If you're using a **pre-version-0.26.x** installation of the [Astro](https://ast
 astro dev --host 192.168.254.10
 ```
 
-By default, it'll use port 3000, but you can change that by [adding the `--port` flag](https://docs.astro.build/en/reference/cli-reference/#astro-dev). You also can [set these parameters](https://docs.astro.build/en/reference/configuration-reference/#dev-options) in the project's `astro.config.mjs` file.
+By default, it'll use port 3000, but you can change that by [adding the `--port` flag](https://docs.astro.build/en/reference/cli-reference/#astro-dev).
 
 In Astro **0.26.x and above**, [use the top-level `server` object](https://docs.astro.build/en/reference/configuration-reference/#server-options) in the `astro.config.mjs` file to make these changes. Here is how you'd make the ones noted above (using port 5000 as an alternate):
 
