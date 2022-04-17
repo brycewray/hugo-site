@@ -16,17 +16,6 @@
       background-color: var.$white;
     }
   }
-}
-
-.footnote-sim {
-  font-size: 0.65em;
-  color: hsl(240, 100%, 50%);
-  @media (prefers-color-scheme: dark) {
-    color: hsl(200, 100%, 50%);
-  }
-}
-
-.footnotes {
   ol {
     padding-inline-start: 1.5rem;
   }
@@ -40,6 +29,14 @@
   }
   .footnote-backref {
     font-size: 75%;
+  }
+}
+
+.footnote-sim {
+  font-size: 0.65em;
+  color: hsl(240, 100%, 50%);
+  @media (prefers-color-scheme: dark) {
+    color: hsl(200, 100%, 50%);
   }
 }
 
