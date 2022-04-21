@@ -24,4 +24,4 @@ dart-sass-embedded --version
 
 echo "Building..."
 
-hugo --gc --minify
+hugo --gc
