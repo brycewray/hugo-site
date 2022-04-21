@@ -87,19 +87,17 @@
     {{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
     {{- if hugo.IsProduction -}}
       {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
     {{- else -}}
       {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
       {{/*- Fingerprinting in dev due to Safari weirdness -*/}}
-      <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-      <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
     {{- end }}
-    {{/* end, CSS/SCSS */}}
+    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+  {{/* end, CSS/SCSS */}}
 
     {{- if hugo.IsProduction -}}
     {{/*- Fathom - beautiful, simple website analytics -*/}}
-    <script src="https://unwavering-reward.brycewray.com/script.js"{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}} data-site="CSERHYIA" defer></script>
+    <script src="https://unwavering-reward.brycewray.com/script.js" data-site="CSERHYIA" defer></script>
     {{/*- / Fathom -*/}}
     {{- end -}}
 
@@ -108,7 +106,7 @@
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
 
     <noscript>
-      <style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{- end -}}>
+      <style>
         .nScrHidden {
           display: none;
         }

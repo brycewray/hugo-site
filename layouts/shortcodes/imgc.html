@@ -43,7 +43,7 @@
 {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 
 {{- if eq .Site.Params.Host "CFP" -}}
-  <style nonce="DhcnhD3khTMePgXw">
+  <style>
     .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
   </style>
   <div class="relative imgB-{{ $imgBd5 }} bg-center">

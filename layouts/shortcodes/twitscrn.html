@@ -29,7 +29,7 @@
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
 
 {{- if eq .Site.Params.Host "CFP" -}}
-<style nonce="DhcnhD3khTMePgXw">.imgB-{{ $imgBd5 }} {background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;}</style>
+<style>.imgB-{{ $imgBd5 }} {background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;}</style>
   <div class="relative imgB-{{ $imgBd5 }} bg-center" aspect-ratio="{{ $width }} / {{ $height }}">
   {{- else -}}
   <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
