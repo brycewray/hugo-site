@@ -47,7 +47,7 @@
     .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
   </style>
   <div class="relative imgB-{{ $imgBd5 }} bg-center">
- {{- else -}}
+{{- else -}}
   <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
 {{- end -}}
   <img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
