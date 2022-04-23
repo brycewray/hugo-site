@@ -42,16 +42,16 @@ pre[class*="language-"] {
 }
 
 article code {
-  font-size: 1em;
+  font-size: 0.95em;
   @media screen and (min-width: var.$bkpt_md) {
     font-size: 0.95em;
   }
-  @media screen and (min-width: var.$bkpt_xl) {
-    font-size: 0.9em;
-  }
-  @media screen and (min-width: var.$bkpt_2xl) {
-    font-size: 0.85em;
-  }
+  // @media screen and (min-width: var.$bkpt_xl) {
+  //   font-size: 0.9em;
+  // }
+  // @media screen and (min-width: var.$bkpt_2xl) {
+  //   font-size: 0.85em;
+  // }
   background-color: var.$blueLightCode;
   @media (prefers-color-scheme: dark) {
     background-color: #454545;
