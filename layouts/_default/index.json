@@ -49,6 +49,7 @@
         }
       ],
       {{ end -}}
+      "summary": {{- .Description | jsonify -}}
       "content_html": {{- $contentHTML | jsonify -}}
     }{{ if ne (add $index 1) $length }},{{ end }}
     {{ end -}}
