@@ -101,51 +101,24 @@ h3, .h3, h5, .h5 {
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
   // usually overridden by other styling (e.g., billboard.scss)
 }
 
 h2, .h2 {
-  font-size: 1.5rem;
-  @media screen and (min-width: var.$bkpt_md) {
-    font-size: 1.625rem;
-  }
-  @media screen and (min-width: var.$bkpt_lg) {
-    font-size: 1.75rem;
-  }
-  @media screen and (min-width: var.$bkpt_2xl) {
-    font-size: 2rem;
-  }
+  font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
 }
 
 h3, .h3 {
-  font-size: 1.375rem;
-  @media screen and (min-width: var.$bkpt_md) {
-    font-size: 1.5rem;
-  }
-  @media screen and (min-width: var.$bkpt_lg) {
-    font-size: 1.625rem;
-  }
-  @media screen and (min-width: var.$bkpt_2xl) {
-    font-size: 1.75rem;
-  }
+  font-size: clamp(1.375rem, 0.5rem + 1.75vw, 1.75rem);
 }
 
 h4, .h4 {
-  font-size: 1.25rem;
-  @media screen and (min-width: var.$bkpt_md) {
-    font-size: 1.375rem;
-  }
-  @media screen and (min-width: var.$bkpt_lg) {
-    font-size: 1.5rem;
-  }
-  @media screen and (min-width: var.$bkpt_2xl) {
-    font-size: 1.625rem;
-  }
+  font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
 }
 
 h5, .h5, h6, .h6 {
-  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.375vw, 1.25rem);
 }
 
 a, a:focus, a:hover, a:active {
@@ -328,20 +301,10 @@ li p {
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: var.$text-base;
+    font-size: clamp(1rem, 10vw + 1.25em, var.$text-lg);
     line-height: 1.65em;
     margin-top: 1.15em;
     margin-bottom: 1.15em;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: var.$text-lg;
-      // max-width: 60ch;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: var.$text-xl;
-    }
-    // @media screen and (min-width: var.$bkpt_3xl) {
-    //   font-size: var.$text-2xl;
-    // }
   }
   li li, li p {
     font-size: inherit;

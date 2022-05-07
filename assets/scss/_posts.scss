@@ -19,7 +19,7 @@
       width: 75%;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      width: 62.5%
+      width: 62.5%;
     }
   }
   &-ItemDiv {
@@ -27,85 +27,31 @@
     padding: 0;
   }
   &-Head {
-    padding-top: 1.75rem;
-    font-size: 2.5rem;
+    padding-top: clamp(1.75rem, 5vh, 3rem);
+    font-size: clamp(2.5rem, 1.5rem + 3.75vw, 3.5rem);
     // font-weight: bold;
     letter-spacing: -0.025em;
     margin-bottom: 0.25em;
-    @media screen and (min-width: var.$bkpt_md) {
-      padding-top: 2rem;
-      font-size: 2.75rem;
-    }
-    @media screen and (min-width: var.$bkpt_lg) {
-      padding-top: 2.5rem;
-      font-size: 3rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      padding-top: 3rem;
-      font-size: 3.5rem;
-    }
   }
   &-Title {
     padding: 0;
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 0.875rem + 3.5vw, 2.25rem);
     line-height: 1.25em;
     letter-spacing: -0.025em;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 2rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 2.25rem;
-    }
-  }
-  &-Subtitle {
-    // letter-spacing: -0.0125em;
-    font-size: 1rem;
-    margin-top: 0;
-    padding-top: 0.25em;
-    margin-bottom: 0.5em;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.25rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.5rem;
-    }
-  }
-  &-Dates {
-    font-size: 0.825rem;
-    line-height: 1.33;
-    margin-bottom: 0.5em;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.15rem;
-    }
-    time {
-      display: inline;
-    }
   }
   &-Description {
     // font-family: var.$serif;
-    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 0.625rem + 2.25vw, 1.3rem);
     margin-top: 0.5em;
-    // line-height: 1.25em;
     margin-bottom: 0.5em;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.2rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.3rem;
-    }
   }
-  &-ReadingTime {
-    margin-top: 0;
-    margin-bottom: 3em;
-    font-size: 0.625rem;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 0.75rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 0.875rem;
+  &-Dates {
+    font-size: clamp(0.825rem, 0.5rem + 1.75vw, 1.15rem);
+    // font-size: 0.825rem;
+    line-height: 1.33;
+    margin-bottom: 0.5em;
+    time {
+      display: inline;
     }
   }
 }
@@ -162,13 +108,7 @@ hr.paginatorTop, hr.paginatorBottom {
   @media (prefers-color-scheme: dark) {
     background-color: var.$white;
   }
-  width: 75%;
-  @media screen and (min-width: var.$bkpt_lg) {
-    width: 65%;
-  }
-  @media screen and (min-width: var.$bkpt_2xl) {
-    width: 55%;
-  }
+  width: clamp(65%, 75vw, 90%);
 }
 
 hr.paginatorTop {

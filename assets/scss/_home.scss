@@ -5,7 +5,7 @@
   text-align: center;
   h1 {
     line-height: 1.75em;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 0.5rem + 1.5vw, 2.25rem);
     // font-weight: bold;
     letter-spacing: -0.025em;
   }
@@ -21,7 +21,6 @@
     min-height: 80vh;
     h1 {
       padding: 3.5em 0 0 2em;
-      font-size: 1.75rem;
     }
     a {
       color: var.$blueLight;
@@ -31,7 +30,6 @@
   @media screen and (min-width: var.$bkpt_2xl) {
     h1 {
       padding: 2.5em 0 0 2.5em;
-      font-size: 2.25rem;
     }
   }
 }
@@ -52,63 +50,29 @@
     @media screen and (prefers-color-scheme: dark) {
       font-weight: 775;
     }
-    font-size: 2rem;
+    font-size: clamp(2rem, 2rem + 1vw, 3.5rem);
     // font-weight: bold;
     letter-spacing: -0.025em;
     @media screen and (min-width: var.$bkpt_lg) {
       margin-top: 0;
       padding-top: 1em;
-      font-size: 2.75rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 3.5rem;
     }
   }
   &-Title {
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 1.25rem + 1vw, 2.25rem);
     letter-spacing: -0.025em;
     padding-top: 0.5em;
     line-height: normal;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 2rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 2.25rem;
-    }
-  }
-  &-Subtitle {
-    margin-top: 0;
-    margin-bottom: 0.25em;
-    // font-weight: 625;
-    font-size: 1.25rem;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.5rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.75rem;
-    }
-  }
-  &-Dates {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    font-size: 0.875rem;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1rem;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.125rem;
-    }
   }
   &-Description {
     margin-top: 0.5em;
     // font-family: var.$serif;
-    font-size: 1.125rem;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.25rem;
-    }
-    @media screen and (min-width: 1536px) {
-      font-size: 1.375rem;
-    }
+    font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
+  }
+  &-Dates {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: clamp(0.875rem, 0.75rem + 1vw, 1.125rem);
   }
   &-Finish {
     margin-top: 3em;
