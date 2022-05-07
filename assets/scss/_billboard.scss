@@ -54,7 +54,7 @@
     letter-spacing: -0.0375em;
   }
   &-description-text {
-    font-size: clamp(1rem, 0.5rem + 1.5vw, 2rem);
+    font-size: clamp(1.1rem, 0.5rem + 1.5vw, 2rem);
     // font-family: var.$serif;
     padding-top: 1em; // definitely em, not rem
     letter-spacing: -0.01em;
