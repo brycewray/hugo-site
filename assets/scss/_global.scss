@@ -301,7 +301,7 @@ li p {
 article {
   padding-top: 1em; // definitely em, not rem
   p, li {
-    font-size: clamp(1rem, 10vw + 1.25em, var.$text-lg);
+    font-size: clamp(0.9rem, 1vw + 0.5em, var.$text-xl);
     line-height: 1.65em;
     margin-top: 1.15em;
     margin-bottom: 1.15em;
