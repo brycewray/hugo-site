@@ -14,6 +14,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@still_loony?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadiia Ploshchenko</a>; <a href="https://unsplash.com/s/photos/wind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
+{{< disclaimer >}}
+
 My proclamation in last month’s “[Simplify, simplify (again)](/posts/2022/03/simplify-simplify-again/)” that this website “is on [Hugo](https://gohugo.io) for the foreseeable future” didn’t hold water for long, even given the escape route I left myself in a corresponding footnote:
 
 > Will I move it again? Ah, “never say, ‘never,’” and all that drivel. The [“dance”](/posts/2019/12/sorta-strange-ssg-trip/) has taught me not to be too sure about my answers to such questions.[^1]
@@ -107,6 +109,9 @@ In light of what I’ve done since, these two thoughts may seem even more nonsen
 As I wrap up this tell-all: no, I won’t even *suggest*, much less promise, that I will never again migrate this site to a different platform. I started to count the number of times that I’ve performed (or attempted) such a migration since I first launched the site in September, 2018; and, quite frankly, I could no longer even remember all the switches.[^5] That is a testimony to my nerdy curiosity, but definitely not to any degree of consistency.
 
 Besides: it’s clear that my mind, especially the part where that nerdy curiosity is always lurking, has no concept of what *the foreseeable future* means. So, why pretend? I’ll stick with Astro until I change my mind again. And who knows when that’ll be? It might be next week. It might be next month. It might be next year. Or— Well, you get the idea. Whatever happens (and whenever it does), I hope to keep you informed and, perhaps, entertained. Thanks as always for your patient readership.
+
+**Update, 2022-05-07**: And, sure enough, I brought it back to Hugo today (at least for now), as explained in “[Mulling over migration](/posts/2022/05/mulling-over-migration/#a-sheepish-u-turn)?”
+{.yellowBox}
 
 [^1]:	For those not familiar with my “dance” among different SSGs during 2019, just follow that link for the whole, sordid story.
 

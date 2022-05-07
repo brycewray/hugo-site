@@ -14,6 +14,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
+{{< disclaimer >}}
+
 Each entry in the “Gems in the rough” series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators](https://jamstack.org/generators) (SSGs).
 {.blueBox}
 
@@ -48,7 +50,7 @@ That same day, [Eleventy](https://11ty.dev) creator/maintainer [Zach Leatherman]
 
 ## Feed readers and built-in browsers
 
-While this section isn't really about web dev, I bring it up here because, during my [recent site migration](/posts/2022/04/winds-change/) to [Astro](https://astro.build), I spent a lot of time tinkering with my [RSS](https://en.wikipedia.org/wiki/RSS) and [JSON](https://jsonfeed.org) feeds[^AstroFeed]. That occasioned my testing the new repository's feeds on the RSS reader apps I use, one of which is the subject here.
+While this section isn't really about web dev, I bring it up here because, during my recent (but now-[reversed](/posts/2022/05/mulling-over-migration/#a-sheepish-u-turn)) [site migration](/posts/2022/04/winds-change/) to [Astro](https://astro.build), I spent a lot of time tinkering with my [RSS](https://en.wikipedia.org/wiki/RSS) and [JSON](https://jsonfeed.org) feeds[^AstroFeed]. That occasioned my testing the new repository's feeds on the RSS reader apps I use, one of which is the subject here.
 
 [^AstroFeed]: Those feeds still constitute a work in progress, while I wait to see whether the Astro team will make certain feature changes when Astro's currently ultra-tight development schedule permits.
 
