@@ -3,7 +3,7 @@ title: "The winds of change"
 description: "Switching to Astro, or tales of a migratory nerd."
 author: Bryce Wray
 date: 2022-04-26T09:35:00-05:00
-#lastmod:
+lastmod: 2022-05-07T13:05:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-04-winds-change"
 featured_image: "windy-grass-nadiia-ploshchenko-f1WyHWxWUM8-unsplash_5184x3456.jpg"
