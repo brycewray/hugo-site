@@ -1,5 +1,4 @@
 ---
-layout: singlepost # for Eleventy
 title: "TITLE"
 description: "DESCRIPTION."
 author: Bryce Wray
