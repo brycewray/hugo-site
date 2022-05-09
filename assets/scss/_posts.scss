@@ -28,25 +28,25 @@
   }
   &-Head {
     padding-top: clamp(1.75rem, 5vh, 3rem);
-    font-size: clamp(2.5rem, 1.5rem + 3.75vw, 3.5rem);
+    font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
     // font-weight: bold;
     letter-spacing: -0.025em;
     margin-bottom: 0.25em;
   }
   &-Title {
     padding: 0;
-    font-size: clamp(1.25rem, 0.875rem + 3.5vw, 2.25rem);
+    font-size: clamp(1.25rem, 0.625rem + 1.5vw, 2.25rem);
     line-height: 1.25em;
     letter-spacing: -0.025em;
   }
   &-Description {
     // font-family: var.$serif;
-    font-size: clamp(1.1rem, 0.625rem + 2.25vw, 1.3rem);
+    font-size: clamp(1.1rem, 0.5rem + 1vw, 1.3rem);
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
   &-Dates {
-    font-size: clamp(0.825rem, 0.5rem + 1.75vw, 1.15rem);
+    font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
     // font-size: 0.825rem;
     line-height: 1.33;
     margin-bottom: 0.5em;
