@@ -4,7 +4,7 @@ title: "Gems in the rough #15"
 description: "CFP Fast Builds update, Hugo/goldmark typography, another Tailwind-on-Hugo solution."
 author: Bryce Wray
 date: 2022-03-03T15:05:00-06:00
-#lastmod:
+lastmod: 2022-05-10T10:08:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-03-gems-in-rough-15"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
@@ -24,6 +24,8 @@ Each entry in the “Gems in the rough” series is a collection of tips, explan
 
 On February 23, Cloudflare opened the beta to all CFP users---allowing them to enable Fast Builds in their Cloudflare dashboards---and said the new infrastructure would be fully released as CFP's standard setup starting April 1 (no April Fool's joke intended, I presume). While I wish it hadn't taken so long for the CFP folks to get this straight, there's no question they've already made CFP one of the top two or three hosting solutions for SSG-based websites, especially for free-tier users like me. And, truthfully, the time involved in fixing the builds issues isn't bad, considering this platform's relative youth compared to its numerous competitors: Cloudflare [launched CFP as a beta in late 2020](https://blog.cloudflare.com/cloudflare-pages/) and then [released it to GA status only last April](https://blog.cloudflare.com/cloudflare-pages-ga/). Most of the Other Guys have been doing it for quite a bit longer.
 
+**Update, 2022-05-10**: While it didn't make the April 1 deadline, Cloudflare [announced today](https://blog.cloudflare.com/cloudflare-pages-build-improvements/) that the infrastructure fixes are now generally available.
+{.yellowBox}
 ## Hugo/goldmark typography glitch finally solved
 
 [Over a year ago](/posts/2021/01/gems-in-rough-02/#possessed), I first wrote here about a bug that was affecting the [Hugo](https://gohugo.io/) SSG's ability to convert [Markdown](https://daringfireball.net/projects/markdown) into HTML. The bug was not in Hugo itself, but rather was in the `Typographer` extension to the [goldmark](https://github.com/yuin/goldmark) Markdown parser which Hugo uses. For example, the bug would cause this Markdown&nbsp;.&nbsp;.&nbsp;.
