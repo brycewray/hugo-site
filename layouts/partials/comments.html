@@ -1,3 +1,13 @@
+{{- $dataTheme = "https://www.brycewray.com/assets/css/giscus.css" }}
+{{/*
+{{- $dataTheme := "" -}}
+{{- if hugo.IsProduction -}}
+  {{- $dataTheme = "preferred_color_scheme" -}}
+{{- else -}}
+  {{- $dataTheme = "https://www.brycewray.com/assets/css/giscus.css" -}}
+{{- end }}
+*/}}
+
 <div class="giscus-comments">
   <script src="https://giscus.app/client.js"
     data-repo="brycewray/comments"
@@ -8,7 +18,7 @@
     data-reactions-enabled="1"
     data-emit-metadata="1"
     data-input-position="bottom"
-    data-theme="preferred_color_scheme"
+    data-theme="{{ $dataTheme }}"
     data-lang="en"
     crossorigin="anonymous"
     data-loading="lazy"
