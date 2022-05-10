@@ -1,12 +1,3 @@
-/*
-Based on (as of 2022-05-09):
-https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/css/giscus.css
-*/
-
-/*
-@import url('http://fonts.cdnfonts.com/css/linux-biolinum');
-*/
-
 @font-face {
   font-family: 'Inter';
   font-weight: 1 999;
@@ -31,307 +22,204 @@ https://github.com/cesarsotovalero/cesarsotovalero.github.io/blob/master/css/gis
 }
 /* === end, handling Inter VF obliquing */
 
-/*!
- * GitHub Light v0.5.0
- * Copyright (c) 2012 - 2017 GitHub, Inc.
- * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
- */
 
-.pl-c /* comment, punctuation.definition.comment, string.comment */ {
-  color: #6a737d;
-}
-
-.pl-c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header, meta.output */,
-.pl-s .pl-v /* string variable */ {
-  color: #005cc5;
-}
-
-.pl-e /* entity */,
-.pl-en /* entity.name */ {
-  color: #6f42c1;
-}
-
-.pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
-.pl-s .pl-s1 /* string source */ {
-  color: #24292e;
-}
-
-.pl-ent /* entity.name.tag, markup.quote */ {
-  color: #22863a;
-}
-
-.pl-k /* keyword, storage, storage.type */ {
-  color: #d73a49;
-}
-
-.pl-s /* string */,
-.pl-pds /* punctuation.definition.string, source.regexp, string.regexp.character-class */,
-.pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
-.pl-sr /* string.regexp */,
-.pl-sr .pl-cce /* string.regexp constant.character.escape */,
-.pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
-.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: #032f62;
-}
-
-.pl-v /* variable */,
-.pl-smw /* sublimelinter.mark.warning */ {
-  color: #e36209;
-}
-
-.pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
-  color: #b31d28;
-}
-
-.pl-ii /* invalid.illegal */ {
-  color: #fafbfc;
-  background-color: #b31d28;
-}
-
-.pl-c2 /* carriage-return */ {
-  color: #fafbfc;
-  background-color: #d73a49;
-}
-
-.pl-c2::before /* carriage-return */ {
-  content: "^M";
-}
-
-.pl-sr .pl-cce /* string.regexp constant.character.escape */ {
-  font-weight: bold;
-  color: #22863a;
-}
-
-.pl-ml /* markup.list */ {
-  color: #735c0f;
-}
-
-.pl-mh /* markup.heading */,
-.pl-mh .pl-en /* markup.heading entity.name */,
-.pl-ms /* meta.separator */ {
-  font-weight: bold;
-  color: #005cc5;
-}
-
-.pl-mi /* markup.italic */ {
-  font-style: italic;
-  color: #24292e;
-}
-
-.pl-mb /* markup.bold */ {
-  font-weight: bold;
-  color: #24292e;
-}
-
-.pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
-  color: #b31d28;
-  background-color: #ffeef0;
-}
-
-.pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
-  color: #22863a;
-  background-color: #f0fff4;
-}
-
-.pl-mc /* markup.changed, punctuation.definition.changed */ {
-  color: #e36209;
-  background-color: #ffebda;
-}
-
-.pl-mi2 /* markup.ignored, markup.untracked */ {
-  color: #f6f8fa;
-  background-color: #005cc5;
-}
-
-.pl-mdr /* meta.diff.range */ {
-  font-weight: bold;
-  color: #6f42c1;
-}
-
-.pl-ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */ {
-  color: #586069;
-}
-
-.pl-sg /* sublimelinter.gutter-mark */ {
-  color: #959da5;
-}
-
-.pl-corl /* constant.other.reference.link, string.other.link */ {
-  text-decoration: underline;
-  color: #032f62;
-}
-
-/*!
- * Modified from GitHub's Dark Dimmed theme, licensed under the MIT License
- * Copyright (c) 2018 GitHub Inc.
- * https://github.com/primer/primitives/blob/main/LICENSE
- */
+/* ===
+from here on, borrowing from:
+https://raw.githubusercontent.com/giscus/giscus/main/styles/themes/preferred_color_scheme.css
+=== */
 
 /*! MIT License
  * Copyright (c) 2018 GitHub Inc.
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
 
-main {
-  --color-text-primary: var(--main-text-color);
-  --color-text-secondary: var(--post-meta-index-color);
-  --color-text-tertiary: #57606a;
-  --color-text-link: #0969da;
-  --color-text-danger: #cf222e;
-  --color-text-success: #1a7f37;
-  --color-border-primary: #d0d7de;
-  --color-border-secondary: #d8dee4;
-  --color-border-tertiary: rgba(175, 184, 193, 0.4);
-  --color-border-info: #0969da;
-  --color-bg-canvas: #fff;
-  --color-bg-canvas-inset: #f6f8fa;
-  --color-bg-primary: #fff;
-  --color-bg-secondary: #f6f8fa;
-  --color-bg-tertiary: #f6f8fa;
-  --color-bg-overlay: #fff;
-  --color-bg-info: #ddf4ff;
-  --color-state-focus-border: #0969da;
-  --color-state-focus-shadow: 0 0 0 3px rgba(9, 105, 218, 0.3);
-  --color-alert-error-text: #cf222e;
-  --color-alert-error-bg: #ffe7e5;
-  --color-alert-error-border: rgba(255, 129, 130, 0.4);
-  --color-counter-secondary-text: #57606a;
-  --color-counter-secondary-bg: rgba(234, 238, 242, 0.5);
-  --color-box-border-info: rgba(84, 174, 255, 0.4);
-  --color-markdown-code-bg: rgba(234, 238, 242, 0.5);
-  --color-hidden-text-expander-bg: rgba(175, 184, 193, 0.4);
-  --color-label-border: #d0d7de;
-  --color-input-bg: #fff;
-  --color-input-contrast-bg: #f6f8fa;
-  --color-input-border: #d0d7de;
+ main {
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #8250df;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
   --color-btn-text: #24292f;
   --color-btn-bg: #f6f8fa;
-  --color-btn-border: rgba(27, 31, 36, 0.15);
-  --color-btn-shadow: 0 1px 0 rgba(27, 31, 36, 0.04);
-  --color-btn-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  --color-btn-border: rgb(27 31 36 / 15%);
+  --color-btn-shadow: 0 1px 0 rgb(27 31 36 / 4%);
+  --color-btn-inset-shadow: inset 0 1px 0 rgb(255 255 255 / 25%);
   --color-btn-hover-bg: #f3f4f6;
-  --color-btn-hover-border: rgba(27, 31, 36, 0.15);
-  --color-btn-active-bg: #ebecf0;
-  --color-btn-active-border: rgba(27, 31, 36, 0.15);
+  --color-btn-hover-border: rgb(27 31 36 / 15%);
+  --color-btn-active-bg: hsl(220deg 14% 93% / 100%);
+  --color-btn-active-border: rgb(27 31 36 / 15%);
+  --color-btn-selected-bg: hsl(220deg 14% 94% / 100%);
   --color-btn-primary-text: #fff;
   --color-btn-primary-bg: #2da44e;
-  --color-btn-primary-border: rgba(27, 31, 36, 0.15);
-  --color-btn-primary-shadow: 0 1px 0 rgba(27, 31, 36, 0.1);
-  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  --color-btn-primary-border: rgb(27 31 36 / 15%);
+  --color-btn-primary-shadow: 0 1px 0 rgb(27 31 36 / 10%);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgb(255 255 255 / 3%);
   --color-btn-primary-hover-bg: #2c974b;
-  --color-btn-primary-hover-border: rgba(27, 31, 36, 0.15);
-  --color-btn-primary-selected-bg: #298e46;
-  --color-btn-primary-selected-shadow: inset 0 1px 0 rgba(0, 45, 17, 0.2);
-  --color-btn-primary-disabled-text: rgba(255, 255, 255, 0.8);
+  --color-btn-primary-hover-border: rgb(27 31 36 / 15%);
+  --color-btn-primary-selected-bg: hsl(137deg 55% 36% / 100%);
+  --color-btn-primary-selected-shadow: inset 0 1px 0 rgb(0 45 17 / 20%);
+  --color-btn-primary-disabled-text: rgb(255 255 255 / 80%);
   --color-btn-primary-disabled-bg: #94d3a2;
-  --color-btn-primary-disabled-border: rgba(27, 31, 36, 0.15);
+  --color-btn-primary-disabled-border: rgb(27 31 36 / 15%);
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #fff;
+  --color-canvas-overlay: #fff;
+  --color-canvas-inset: #f6f8fa;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsl(210deg 18% 87% / 100%);
+  --color-neutral-muted: rgb(175 184 193 / 20%);
+  --color-neutral-subtle: rgb(234 238 242 / 50%);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-accent-muted: rgb(84 174 255 / 40%);
+  --color-accent-subtle: #ddf4ff;
+  --color-success-fg: #1a7f37;
+  --color-danger-fg: #cf222e;
+  --color-primer-shadow-focus: 0 0 0 3px rgb(9 105 218 / 30%);
+  --color-primer-shadow-inset: inset 0 1px 0 rgb(208 215 222 / 20%);
+  --color-scale-gray-1: #eaeef2;
   --color-scale-blue-1: #b6e3ff;
 
-  /* Extensions from color-modes.scss */
-  --color-upvote-icon-bg: var(--color-scale-blue-1);
-}
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
 
-main .pagination-loader-container {
-  background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg)
-}
-
-/*! Custom CSS */
-main {
   color-scheme: light;
 }
 
-.giscus, .giscus-frame {
-  width: 100% !important;
-  margin-top: 2rem !important;
+main .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
 }
 
-.gsc-upvotes {
-  display: none
+main .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }
 
-.font-semibold {
-  font-weight: 700;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
-  color: var(--main-text-color);
-}
+/*! Dark mode */
+@media (prefers-color-scheme: dark) {
+  /*! MIT License
+   * Copyright (c) 2018 GitHub Inc.
+   * https://github.com/primer/primitives/blob/main/LICENSE
+   */
+  main {
+    --color-prettylights-syntax-comment: #8b949e;
+    --color-prettylights-syntax-constant: #79c0ff;
+    --color-prettylights-syntax-entity: #d2a8ff;
+    --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+    --color-prettylights-syntax-entity-tag: #7ee787;
+    --color-prettylights-syntax-keyword: #ff7b72;
+    --color-prettylights-syntax-string: #a5d6ff;
+    --color-prettylights-syntax-variable: #ffa657;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+    --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+    --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+    --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+    --color-prettylights-syntax-carriage-return-bg: #b62324;
+    --color-prettylights-syntax-string-regexp: #7ee787;
+    --color-prettylights-syntax-markup-list: #f2cc60;
+    --color-prettylights-syntax-markup-heading: #1f6feb;
+    --color-prettylights-syntax-markup-italic: #c9d1d9;
+    --color-prettylights-syntax-markup-bold: #c9d1d9;
+    --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+    --color-prettylights-syntax-markup-deleted-bg: #67060c;
+    --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+    --color-prettylights-syntax-markup-inserted-bg: #033a16;
+    --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+    --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+    --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+    --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+    --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+    --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+    --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+    --color-btn-text: #c9d1d9;
+    --color-btn-bg: #21262d;
+    --color-btn-border: rgb(240 246 252 / 10%);
+    --color-btn-shadow: 0 0 transparent;
+    --color-btn-inset-shadow: 0 0 transparent;
+    --color-btn-hover-bg: #30363d;
+    --color-btn-hover-border: #8b949e;
+    --color-btn-active-bg: hsl(212deg 12% 18% / 100%);
+    --color-btn-active-border: #6e7681;
+    --color-btn-selected-bg: #161b22;
+    --color-btn-primary-text: #fff;
+    --color-btn-primary-bg: #238636;
+    --color-btn-primary-border: rgb(240 246 252 / 10%);
+    --color-btn-primary-shadow: 0 0 transparent;
+    --color-btn-primary-inset-shadow: 0 0 transparent;
+    --color-btn-primary-hover-bg: #2ea043;
+    --color-btn-primary-hover-border: rgb(240 246 252 / 10%);
+    --color-btn-primary-selected-bg: #238636;
+    --color-btn-primary-selected-shadow: 0 0 transparent;
+    --color-btn-primary-disabled-text: rgb(240 246 252 / 50%);
+    --color-btn-primary-disabled-bg: rgb(35 134 54 / 60%);
+    --color-btn-primary-disabled-border: rgb(240 246 252 / 10%);
+    --color-fg-default: #c9d1d9;
+    --color-fg-muted: #8b949e;
+    --color-fg-subtle: #484f58;
+    --color-canvas-default: #0d1117;
+    --color-canvas-overlay: #161b22;
+    --color-canvas-inset: #010409;
+    --color-canvas-subtle: #161b22;
+    --color-border-default: #30363d;
+    --color-border-muted: #21262d;
+    --color-neutral-muted: rgb(110 118 129 / 40%);
+    --color-neutral-subtle: rgb(110 118 129 / 10%);
+    --color-accent-fg: #58a6ff;
+    --color-accent-emphasis: #1f6feb;
+    --color-accent-muted: rgb(56 139 253 / 40%);
+    --color-accent-subtle: rgb(56 139 253 / 15%);
+    --color-success-fg: #3fb950;
+    --color-danger-fg: #f85149;
+    --color-primer-shadow-focus: 0 0 0 3px #0c2d6b;
+    --color-primer-shadow-inset: 0 0 transparent;
+    --color-scale-gray-7: #21262d;
+    --color-scale-blue-8: #0c2d6b;
 
-.mr-2 {
-  font-size: 1rem;
-  color: var(--main-text-color);
-}
+    /*! Extensions from @primer/css/alerts/flash.scss */
+    --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+    --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
 
-.ml-1 {
-  font-size: 1rem;
-  color: var(--main-text-color);
-}
-
-.text-sm {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: var(--main-text-color);
-}
-
-.text-xs {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: var(--main-text-color);
-}
-
-.color-text-primary {
-  font-size: 1rem;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--main-text-color);
-}
-
-.gsc-comment-box-textarea {
-  font-size: 1rem;
-}
-
-.gsc-reactions {
-  font-size: 1rem;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--main-text-color);
-}
-
-.gsc-comments {
-  font-size: 1rem;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--main-text-color);
-}
-
-.gsc-comments-count {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--main-text-color);
-}
-
-.gsc-reactions-count {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--main-text-color);
-}
-
-@media only screen and (max-width: 425px) {
-  .font-semibold  {
-    font-size: 1rem;
+    color-scheme: dark;
   }
-  .mr-2 {
-    font-size: 1rem;
+
+  main .pagination-loader-container {
+    background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
   }
-  .text-sm {
-    font-size: 1rem;
-  }
-  .text-xs {
-    font-size: 1rem;
+
+  main .gsc-loading-image {
+    background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
   }
 }
 
-.justify-center {
-  justify-content: left;
-}
-
-.text-center {
-  justify-content: left;
-  text-align: left;
+html {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
