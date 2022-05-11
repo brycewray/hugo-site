@@ -16,7 +16,8 @@
   .hero,
   [class^="imgB-"],
   .contactBtn,
-  .giscus-comments {
+  .giscus-comments,
+  .featured-image-caption * {
     display: none !important;
   }
   @page {
@@ -24,8 +25,7 @@
   }
   html,
   body,
-  [class^="background-hero"],
-  .featured-image-caption * {
+  [class^="background-hero"] {
     font-family: sans-serif;
     background-color: none !important;
     color: #000 !important;
@@ -78,6 +78,13 @@
   a.header-anchor {
     border-bottom: none !important;
   }
+
+  a[target="_blank"]::after {
+    margin: 0;
+    content: "";
+    // "new window" indication obviously unneeded in print
+  }
+
   .container-narrower {
     width: 90% !important;
   }
