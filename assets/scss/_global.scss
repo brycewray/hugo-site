@@ -138,6 +138,7 @@ a[target="_blank"]::after {
   }
 }
 
+a.twitterExt[target="_blank"]::after,
 a.icon[target="_blank"]::after {
   margin: 0;
   content: "";
