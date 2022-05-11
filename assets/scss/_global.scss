@@ -129,15 +129,15 @@ a, a:focus, a:hover, a:active {
 
 a[target="_blank"]::after {
   margin: 0 0 0 0.1em;
-  // content: "\2197"; // arrow pointing upward and to right
-  // content: "\29C9"; // two joined squares
-  // content: "\2750"; // two joined squares of opposite colors
+  // content: "\2197"; font-size: 0.75em; font-weight: 400; font-style: normal; // arrow pointing upward and to right
+  content: "\29C9"; font-size: 0.75em; font-weight: 400; font-style: normal; // two joined squares
+  /*
   content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMC43NWVtIiBoZWlnaHQ9IjAuNzVlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iaC02IHctNiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2U9IiMwMDMzZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMTAgNkg2YTIgMiAwIDAwLTIgMnYxMGEyIDIgMCAwMDIgMmgxMGEyIDIgMCAwMDItMnYtNE0xNCA0aDZtMCAwdjZtMC02TDEwIDE0IiAvPjwvc3ZnPg==); // var.$blue in light mode
   @media screen and (prefers-color-scheme: dark) {
     content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMC43NWVtIiBoZWlnaHQ9IjAuNzVlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iaC02IHctNiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2U9IiNhOGRjZmYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMTAgNkg2YTIgMiAwIDAwLTIgMnYxMGEyIDIgMCAwMDIgMmgxMGEyIDIgMCAwMDItMnYtNE0xNCA0aDZtMCAwdjZtMC02TDEwIDE0IiAvPjwvc3ZnPg==); // var.$blueLight in dark mode
   }
+  */
 }
-
 a.twitterExt[target="_blank"]::after,
 a.icon[target="_blank"]::after {
   margin: 0;
