@@ -16,8 +16,7 @@ node_modules
 csp.txt
 cache-and-headers.js
 nonce-worker.js
-cache-nonce_mix.js
-cache-nonce-playground.js
+cache-nonce*.js
 
 /assets/css/index.css
 /themes/twjit/assets/css/index.css
