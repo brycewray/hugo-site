@@ -3,7 +3,7 @@ title: "Tips for using giscus"
 description: "Some advice about a commenting system for static websites."
 author: Bryce Wray
 date: 2022-05-10T15:10:00-05:00
-#lastmod:
+lastmod: 2022-05-12T11:37:00-05:00
 draft: false
 #initTextEditor: VS Code
 discussionId: "2022-05-tips-using-giscus"
@@ -19,7 +19,7 @@ As I noted [not long ago](/posts/2022/03/gems-in-rough-16/#trying-giscus):
 
 > . . . I’m trying a commenting system called [giscus](https://giscus.app). It’s based on [Utterances](https://utteranc.es). Both rely on GitHub APIs. While Utterances uses the Search API for GitHub Issues, giscus uses the Search API for the newer, more feature-rich, and seemingly more polished [GitHub Discussions](https://docs.github.com/en/discussions).
 
-That experiment continues as of this writing, and I've here today to pass along some tips to any folks who may be thinking about putting giscus on their sites.
+That experiment continues as of this writing, and I'm here today to pass along some tips to any folks who may be thinking about putting giscus on their sites.
 
 ## Discussions-wrangling
 
