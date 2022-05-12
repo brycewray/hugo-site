@@ -39,7 +39,7 @@
     <meta name="twitter:description" content="{{ .Site.Params.Description }}">
    {{- end }}
    {{- if .Params.Ext_canonical }}
-    <link rel="canonical" href=" {{ .Params.Ext_canonical }}" />
+    <link rel="canonical" href="{{ .Params.Ext_canonical }}" />
    {{- else }}
     <link rel="canonical" href="{{ .Page.Permalink }}" />
    {{- end }}
