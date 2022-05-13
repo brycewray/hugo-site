@@ -24,6 +24,7 @@
       <div class="background-hero-div imgc-div" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;">
       {{- end -}}
         <img
+          fetchpriority="high"
           class='imgCover hero animate-fade'
           src='{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ .Params.featured_image }}'
           srcset="
