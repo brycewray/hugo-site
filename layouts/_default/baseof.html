@@ -16,7 +16,7 @@
       {{- end -}}
     {{- end -}}
     {{- if (findRE "<pre" .Content 1) -}}
-      {{- $jsCopy := resources.Get "js/copy-code-button.js" | minify -}}
+      {{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint "md5" -}}
       <script nonce="DhcnhD3khTMePgXw" src="{{ $jsCopy.RelPermalink }}"></script>
     {{- end }}
   </body>
