@@ -3,7 +3,7 @@ title: "Gems in the rough #18"
 description: "Code for copying code, HugoConf, loose ends."
 author: Bryce Wray
 date: 2022-05-14T10:50:00-05:00
-#lastmod:
+#lastmod: 2022-05-14T11:14:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-gems-in-rough-18"
@@ -66,7 +66,7 @@ In recent months, the folks at [CloudCannon](https://cloudcannon.com) have been 
 
 {{< stweet "1524419059714039809" >}}
 
-I'd urge Hugo aficionados, as well as those simply curious about Hugo, to give this a look-see. Registration is free.
+I'd urge Hugo aficionados, as well as those simply curious about Hugo, to give this a look-see.
 
 ## Loose ends
 
