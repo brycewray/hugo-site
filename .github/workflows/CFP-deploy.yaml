@@ -1,5 +1,9 @@
 on: [push]
 
+env:
+  HUGO_VERSION: 0.99.0 #will get ext version below
+  DART_SASS_VERSION: 1.51.0
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
