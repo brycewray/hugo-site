@@ -1,0 +1,30 @@
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy to CFP
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v3
+      - name: Download Hugo v${{ env.HUGO_VERSION }} Linux x64
+        run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
+      - name: Install Hugo
+        run: sudo dpkg -i hugo*.deb
+      - name: Download tar.gz for Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+        run: "curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
+      - name: Install Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+        run: "sudo tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
+      - name: Build site with Hugo
+        run: hugo --gc --minify
+      - name: Publish to CFP
+        uses: cloudflare/pages-action@v1.0.0
+        with:
+          apiToken: ${{ secrets.CFP_API_TOKEN }}
+          accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'hugo-site'
+          directory: 'public'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
