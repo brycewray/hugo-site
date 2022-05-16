@@ -24,7 +24,7 @@ jobs:
       - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
         run: "curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DARTSASS_VERSION}/sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz"
       - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
-        run: "tar -xvf sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz"
+        run: "tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
       - name: Move Embedded Dart Sass v${{ env.DART_SASS_VERSION }} into PATH # from https://github.community/t/adding-a-binary-to-the-path-from-a-docker-github-action-for-use-by-later-workflow-steps/16922
         run: |
           mkdir -p $GITHUB_WORKSPACE/bin
