@@ -1,4 +1,7 @@
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 env:
   HUGO_VERSION: 0.99.0 #will get ext version below
