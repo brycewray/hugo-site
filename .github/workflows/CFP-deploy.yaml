@@ -35,3 +35,8 @@ jobs:
           projectName: 'hugo-site'
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
+          TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
+          CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+          CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
