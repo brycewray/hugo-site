@@ -21,10 +21,12 @@ jobs:
         run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
       - name: Install Hugo v${{ env.HUGO_VERSION }}
         run: sudo dpkg -i hugo*.deb
-      - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
-        run: "curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
-      - name: Install Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
-        run: "sudo tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
+      - name: Download and install Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+        uses: supplypike/setup-bin@1
+        with:
+          uri: "https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
+          name: "Embedded Dart Sass"
+          version: "${{ env.DART_SASS_VERSION }}"
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to CFP
