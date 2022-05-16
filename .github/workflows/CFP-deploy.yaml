@@ -23,6 +23,8 @@ jobs:
         run: sudo dpkg -i hugo*.deb
       - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
         run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+      - name: Add to the PATH
+        run: echo "$GITHUB_WORKSPACE" >> $GITHUB_PATH
       - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
         run: |
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
