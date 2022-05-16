@@ -1,3 +1,5 @@
+name: Deploy to Cloudflare Pages
+
 on:
   push:
     branches:
@@ -18,7 +20,6 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    name: Deploy to CFP
     steps:
       - name: Checkout default branch
         uses: actions/checkout@v3
