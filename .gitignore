@@ -34,3 +34,4 @@ tweetcurl*.json
 /themes/npm-sass/assets/css
 /themes/npm-sass/assets/css/*.css
 
+.vercel
