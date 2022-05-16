@@ -22,7 +22,7 @@ jobs:
       - name: Install Hugo v${{ env.HUGO_VERSION }}
         run: sudo dpkg -i hugo*.deb
       - name: Download and install Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
-        uses: supplypike/setup-bin@1
+        uses: supplypike/setup-bin@v1
         with:
           uri: "https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
           name: "Embedded Dart Sass"
