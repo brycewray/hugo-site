@@ -26,9 +26,8 @@ jobs:
       - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
         run: |
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          mv sass_embedded/dart-sass-embedded ..
+          mv sass_embedded/dart-sass-embedded ../
           rm -rf sass_embedded*
-          dart-sass-embedded --version
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to CFP
