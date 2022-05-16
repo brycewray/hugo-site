@@ -4,7 +4,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.99.0 #will get ext version below
+  HUGO_VERSION: 0.99.0 # will get Extended Version below
   DART_SASS_VERSION: 1.51.0
   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
   TOKEN: ${{ secrets.TOKEN }}
@@ -45,8 +45,3 @@ jobs:
           projectName: 'hugo-site'
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          # BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
-          # TOKEN: ${{ secrets.TOKEN }}
-          # TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
-          # CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
-          # CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
