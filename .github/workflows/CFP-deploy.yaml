@@ -30,7 +30,6 @@ jobs:
       - name: Add to the PATH
         run: |
           echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-          dart-sass-embedded --version
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to CFP
