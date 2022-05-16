@@ -1,5 +1,5 @@
 @use 'reset';
-@use 'fonts_Inter';
+// @use 'fonts_Inter';
 // @use 'fonts_Inter64';
 // @use 'fonts_PublicSans';
 // @use 'variables'; // calling it where needed within files
@@ -19,8 +19,9 @@
 @use 'nav';
 @use 'lazyload';
 @use 'lazypic';
-@use 'intervf'; // for Inter VF's weird obliquing stuff
-// @use 'ffoxobliq'; // if using system font stack with SF first for Mac sans-serif
+// @use 'intervf'; // for Inter VF's weird obliquing stuff
+@use 'vweights'; // for variable fonts, sys or uploaded (test on Linux VM?)
+@use 'ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
 @use 'heroimg';
 @use 'sitemaphtml';
 @use 'iefixes';

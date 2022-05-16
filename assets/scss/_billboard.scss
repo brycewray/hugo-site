@@ -45,10 +45,6 @@
   }
   &-title-text {
     font-size: clamp(2.25em, 0.75rem + 4vw, 4em);
-    font-weight: 800;
-    @media screen and (prefers-color-scheme: dark) {
-      font-weight: 750;
-    }
     padding-top: 1em; // definitely em, not rem
     line-height: 1.1;
     letter-spacing: -0.0375em;

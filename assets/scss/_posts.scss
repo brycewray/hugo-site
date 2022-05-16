@@ -29,7 +29,6 @@
   &-Head {
     padding-top: clamp(1.75rem, 5vh, 3rem);
     font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
-    // font-weight: bold;
     letter-spacing: -0.025em;
     margin-bottom: 0.25em;
   }
@@ -80,7 +79,7 @@
   h3, p {
     margin: 0;
     padding: 0.15rem 0;
-    font-style: normal;
+    // font-style: normal;
   }
   h3.prevnextH3 {
     font-size: 1.875rem;

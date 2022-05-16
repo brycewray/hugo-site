@@ -2,7 +2,6 @@
 
 html, body {
   font-family: var.$sans-serif;
-  font-weight: 425; // when using variable fonts
   color: var.$default-color;
   width: 100%;
   margin: 0 auto;
@@ -15,7 +14,6 @@ html, body {
   @media (prefers-color-scheme: dark) {
     background: var.$background-dark-mode;
     color: var.$default-color-dark-mode;
-    font-weight: 375;
   }
 }
 
@@ -32,21 +30,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
     color: var.$default-color-dark-mode;
-  }
-}
-
-
-h1, .h1 {
-  font-weight: 800;
-  @media (prefers-color-scheme: dark) {
-    font-weight: 750;
-  }
-}
-
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-weight: 600;
-  @media (prefers-color-scheme: dark) {
-    font-weight: 550;
   }
 }
 
@@ -74,19 +57,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     &::after {
       font-size: var.$stdsize;
-      font-weight: 425;
       padding-left: 0.5em;
       content: "#";
-      @media screen and (prefers-color-scheme: dark) {
-        font-weight: 375;
-      }
     }
-  }
-}
-
-strong, b {
-  @media (prefers-color-scheme: dark) {
-    font-weight: 725;
   }
 }
 
@@ -126,18 +99,6 @@ a, a:focus, a:hover, a:active {
   border-bottom: 1px solid var.$blue;
   // text-decoration-skip-ink: auto;
 }
-
-/*
-a[target="_blank"]::after {
-  margin: 0 0 0 0.25em;
-  content: "\29C9"; font-size: 0.75em; font-weight: 400; font-style: normal; // two joined squares
-}
-a.twitterExt[target="_blank"]::after,
-a.icon[target="_blank"]::after {
-  margin: 0;
-  content: "";
-}
-*/
 
 a {
   color: var.$blue;

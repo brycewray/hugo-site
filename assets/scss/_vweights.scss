@@ -1,0 +1,27 @@
+/* ====
+FOR USE **ONLY** WITH FONTS WITH VARIABLE WEIGHTS
+--------
+As of 2022-05-15, this includes system fonts such as San Francisco (macOS/iOS) and Segoe UI (Windows); not worrying about Linux distros because they're all over the map on this as with so many other specs.
+==== */
+
+.header-anchor::after {
+  font-weight: 425;
+}
+h1, .h1, .background-hero-title-text, .billboard-title-text, .posts-Head, .homePost-Latest {
+  font-weight: 800;
+}
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .homePost-Title {
+  font-weight: 600;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .header-anchor::after {
+    font-weight: 375;
+  }
+  h1, .h1, .background-hero-title-text, .billboard-title-text, .posts-Head, .homePost-Latest {
+    font-weight: 750;
+  }
+  h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .homePost-Title {
+    font-weight: 550;
+  }
+}
