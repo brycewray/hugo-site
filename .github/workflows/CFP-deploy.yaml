@@ -27,6 +27,8 @@ jobs:
         run: |
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           sass_embedded/dart-sass-embedded --version
+          sudo mv sass_embedded/dart-sass-embedded ../
+          dart-sass-embedded --version
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to CFP
