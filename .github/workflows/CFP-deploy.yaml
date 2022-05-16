@@ -27,7 +27,7 @@ jobs:
           uri: "https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz"
           name: "Embedded Dart Sass"
           version: "${{ env.DART_SASS_VERSION }}"
-          command: "tar -xvf sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz"
+          command: "dart-sass-embedded --version"
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to CFP
