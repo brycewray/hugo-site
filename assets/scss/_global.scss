@@ -150,14 +150,21 @@ sub, sup {
 sup {
   top: -0.5rem;
 }
-ul li li {
-  list-style-type: circle;
-  margin-bottom: 0;
+ul li li, ol li li, ul li li li, ol li li li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
-ul li li li {
+ul li li {
+  list-style-type: circle;
+}
+
+ol li li {
+  list-style-type: disc;
+}
+
+ul li li li, ol li li li {
   list-style-type: square;
-  margin-bottom: 0;
 }
 
 #content-main-hugo, main {
