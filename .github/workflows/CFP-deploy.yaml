@@ -36,7 +36,7 @@ jobs:
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
-        run: hugo --gc --minify
+        run: hugo --gc
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1.0.0
         with:
