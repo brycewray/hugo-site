@@ -4,7 +4,7 @@ title: "Using Dart Sass with Hugo: the sequel"
 description: "Hugo’s chief developer comes up with a way to get Embedded Dart Sass on the host, after all."
 author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
-lastmod: 2022-03-29T11:58:00-06:00
+lastmod: 2022-05-18T12:16:00-05:00
 #draft: true
 discussionId: "2022-03-using-dart-sass-hugo-sequel"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -207,3 +207,6 @@ Yes, it's a hit-or-miss proposition; but, when you finally "hit," you're golden 
 And all of that gives you what, you ask? Very simply, it gives you the full speed and efficiency of [Hugo Pipes](https://gohugo.io/hugo-pipes) **and** the up-to-date quality of Dart Sass, all together. Until now, that wasn't possible. Oh, and it also frees you [Node.js](https://nodejs.org)-hating Hugo users from all those dependencies which can give you the willies.
 
 *Finally: as always, thanks to Pedersen ([@bep](https://github.com/bep)) for his continuing efforts, above and beyond his already substantial day-to-day development work, for the Hugo community!*
+
+**Update, 2022-05-18**: I've since come up with what I consider to be a [better, or at least safer, way](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/).
+{.yellowBox}
