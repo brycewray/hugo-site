@@ -12,7 +12,7 @@
 @use 'utility';
 @use 'tables';
 @use 'billboard';
-@use 'clipboard';
+// @use 'clipboard'; // no longer needed; incorporated in 'chroma_fix-all'
 @use 'posts';
 @use 'footnotes';
 @use 'home';
