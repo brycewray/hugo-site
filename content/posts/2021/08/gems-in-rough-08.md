@@ -4,7 +4,7 @@ title: "Gems in the rough #8"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray
 date: 2021-08-04T16:30:00-05:00
-lastmod: 2022-02-12T11:04:00-06:00
+lastmod: 2022-05-19T11:44:00-05:00
 discussionId: "2021-08-gems-in-rough-08"
 featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
 featured_image_width: 7315
@@ -27,11 +27,9 @@ You might want to see [Fireship](https://fireship.io/)'s [YouTube video about As
 
 Astro's got a lot of promise, but for now it's also kinda frustrating in that a lot of the example code in the [documentation](https://docs.astro.build) simply doesn't work as it should---or, at least, it doesn't for me. Astro also is pretty opinionated by design, which has its good points---*e.g.*, fewer ways for certain procedures to go wrong---but also can make it difficult to re-use some items that work perfectly well on other SSGs.
 
-For example: in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) SSGs, you can insert *shortcodes* into your [Markdown](https://daringfireball.net/projects/markdown) text. This lets you insert bits of code to do cool things, like image processing, that Markdown on its own won't allow. In Astro, the only way to include code in Markdown is to use an `.astro` file[^dotAstro] with a proprietary `<Markdown>` element and then intermix your code with that. It works, but this limitation means you're not likely to move years’ worth of shortcode-laden `.md` files over from another SSG. That's a **big** deal. (The Astro team is [considering](https://github.com/snowpackjs/astro/issues/491) allowing components in actual `.md` files, somewhat like how the [`.mdx` file format](https://mdxjs.com/) works, so this particular gotcha may improve soon.)
+For example: in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) SSGs, you can insert *shortcodes* into your [Markdown](https://daringfireball.net/projects/markdown) text. This lets you insert bits of code to do cool things, like image processing, that Markdown on its own won't allow. In Astro, the only way to include code in Markdown is to use a `.astro` file with a proprietary `<Markdown>` element and then intermix your code with that. It works, but this limitation means you're not likely to move years’ worth of shortcode-laden `.md` files over from another SSG. That's a **big** deal. (The Astro team is [considering](https://github.com/snowpackjs/astro/issues/491) allowing components in actual `.md` files, somewhat like how the [`.mdx` file format](https://mdxjs.com/) works, so this particular gotcha may improve soon.)
 
-[^dotAstro]: It seems wrong to say aloud, "an 'dot-astro' file," but it looks right on the screen. *C'est la guerre.*
-
-On the bright side, I should note that I was able to convert this site's `imgc` image-delivery shortcode to an `Imgc.astro` component that works perfectly well when dropped into an `.astro` page, so that process is pretty straightforward.
+On the bright side, I should note that I was able to convert this site's `imgc` image-delivery shortcode to an `Imgc.astro` component that works perfectly well when dropped into a `.astro` page, so that process is pretty straightforward.
 
 On the still brighter side, the Astro team is friendly to a fault, seems to listen to any and all feedback, and is quickly building a great and helpful community---including its presence on Discord. This reminds me a lot of the early days of Eleventy (or, at least, what I gather those were like considering that I didn't get into Eleventy until it was already well over a year old; by contrast, the first public beta for Astro appeared only a few weeks ago). We'll see what comes of Astro, which is getting a lot of attention in the SSG world right now.
 
