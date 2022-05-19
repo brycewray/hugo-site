@@ -4,7 +4,7 @@ title: "Using Dart Sass with Hugo: the GitHub Actions edition"
 description: "Still more ways to make Hugo and Embedded Dart Sass work together."
 author: Bryce Wray
 date: 2022-05-17T14:49:00-05:00
-#lastmod:
+lastmod: 2022-05-19T11:29:00-05:00
 #draft: true
 discussionId: "2022-05-using-dart-sass-hugo-github-actions-edition.md"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -28,7 +28,7 @@ It was a different story when I kept mulling over the [second, somewhat trickier
 
 This had been working fine for me ever since Hugo's Bjørn Erik Pedersen [first proposed the idea](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7), so what was my more recent problem with it? Just this: whether it can **keep** working depends upon those three hosting vendors' **not** shutting down that particular workaround, perhaps for understandably security-related reasons, by simply (further) limiting one's ability to adjust the respective build environment.
 
-In the end, I figured, assuming they'd continue to let that slip by was too big a gamble; so I starting trying to think of something with a better chance of surviving until there's a more permanent solution.[^permanent]
+In the end, I figured, assuming they'd continue to let that slip by was too big a gamble; so I started trying to think of something with a better chance of surviving until there's a more permanent solution.[^permanent]
 
 [^permanent]: To be precise, that permanent solution would be for each vendor to allow adding the Embedded Dart Sass binary to the build image (perhaps via an environment variable), much as you now can specify the desired version of Hugo. There have been occasional rumblings that one or more of the vendors might do this, but at this writing ETA = TBD in each case. I doubt it's high on their collective radar.
 
