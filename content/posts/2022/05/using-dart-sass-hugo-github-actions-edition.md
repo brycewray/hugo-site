@@ -4,7 +4,7 @@ title: "Using Dart Sass with Hugo: the GitHub Actions edition"
 description: "Still more ways to make Hugo and Embedded Dart Sass work together."
 author: Bryce Wray
 date: 2022-05-17T14:49:00-05:00
-lastmod: 2022-05-19T11:29:00-05:00
+lastmod: 2022-05-19T11:36:00-05:00
 #draft: true
 discussionId: "2022-05-using-dart-sass-hugo-github-actions-edition.md"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -67,7 +67,7 @@ Before I get to the vendor-specific instructions and GHAs, here are some general
 **Because of that . . .**
 - You'll need to add each such environment variable to the GitHub repo's GHA-accessible **secrets**. You'll **also** have to add vendor-specific **credentials** to these secrets. The instructions for each vendor will tell you how.
 - You'll notice, in each GHA below, that we're referring to something called `secrets.GITHUB_TOKEN`. That secret already exists within the repo, and the GHA will automatically access it; it's not something you have to create or store.
-- We'll also refer to your local Hugo project's **`.env` file**, a plain-text file where you'll be storing the aforementioned environment variables for your own future reference (including *during* this process, as you'll see). If your project doesn't already have an `.env` file, create it now at the project's top level---and **be sure** it's an entry in your project's `.gitignore` file, because this will contain sensitive information you **never** want to commit in Git even locally, much less allow it to appear on GitHub. And please don't presume just making the GitHub repo private is sufficient protection for an inadvertently committed `.env` file, because it's definitely not.
+- We'll also refer to your local Hugo project's **`.env` file**, a plain-text file where you'll be storing the aforementioned environment variables and credentials for your own future reference (including *during* this process, as you'll see). If your project doesn't already have an `.env` file, create it now at the project's top level---and **be sure** it's an entry in your project's `.gitignore` file, because this will contain sensitive information you **never** want to commit in Git even locally, much less allow it to appear on GitHub. And please don't presume just making the GitHub repo private is sufficient protection for an inadvertently committed `.env` file, because it's definitely not.
 - The versions shown for Hugo and Embedded Dart Sass in each GHA are the current ones (0.99.0 and 1.51.0, respectively) as of the initial publication of this post. You can always see which releases are up-to-date by checking the release pages for [Hugo](https://github.com/gohugoio/hugo/releases) and [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases).
 
 Finally, because you don't want to have to scroll-scroll-scroll through instructions for vendors you don't even use, I'm using the [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`<summary>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) HTML elements to keep things nice and compact. Just click/tap on a section to toggle it as either open or closed.
