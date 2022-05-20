@@ -1,5 +1,5 @@
 // Colors
-$default-color: #374151; // TWCSS "Prose" black - was hsl(0, 0%, 20%), same as #333
+$default-color: hsl(0, 0, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 $default-color-dark-mode: hsl(0, 0%, 87%); // i.e., #dedede
 $default-shade: hsl(0, 0%, 28%);
 $default-tint: hsla(0, 0%, 67%, 0.72);
