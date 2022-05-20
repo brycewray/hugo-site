@@ -8,7 +8,7 @@ lastmod: 2022-03-19T21:00:00-05:00
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
-## Notes about external services
+## Notes about external services
 
 ### Cloudflare
 
