@@ -126,14 +126,17 @@
 }
 
 .featured-image-caption {
-  margin-top: 1em;
+  margin-top: 1.5em;
   padding-bottom: 0.5em;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   font-family: var.$sans-serif;
-  font-size: var.$legal;
+  font-size: var.$teeny;
+  @media screen and (min-width: var.$bkpt_md) {
+    font-size: var.$legal;
+  }
   color: var.$white;
   a {
     color: var.$blueLight;
