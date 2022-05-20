@@ -33,7 +33,7 @@
     text-align: center;
     padding-right: 2%;
     padding-left: 2%;
-    @media screen and (min-width: var.$bkpt_lg) {
+    @media screen and (min-width: var.$bkpt_md) {
       text-align: left;
       padding-right: 3%;
       padding-left: 3%;
@@ -62,7 +62,7 @@
     line-height: 1.25;
     margin-top: 1.5em;
     text-align: center;
-    @media screen and (min-width: var.$bkpt_lg) {
+    @media screen and (min-width: var.$bkpt_md) {
       text-align: right;
     }
   }
