@@ -9,7 +9,7 @@ $tc-padding: 1em;
   font-family: var.$twitter-sans-serif;
   margin: 1.5rem auto;
   padding: 1rem;
-  border: 2px solid var.$grey-1;
+  border: 2px solid var.$gray-1;
   border-radius: 12px;
   background: var.$white;
   width: 100%;
@@ -44,7 +44,7 @@ $tc-padding: 1em;
     }
   }
   @media screen and (prefers-color-scheme: dark) {
-    border: 2px solid var.$grey-2;
+    border: 2px solid var.$gray-2;
     color: var.$white;
   }
 }
@@ -98,9 +98,9 @@ $tc-padding: 1em;
       line-height: 1.375;
     }
     &-handle {
-      color: var.$grey-1;
+      color: var.$gray-1;
       @media screen and (prefers-color-scheme: dark) {
-        color: var.$grey-2-dark-mode;
+        color: var.$gray-2-dark-mode;
       }
       font-size: var.$pokey;
       line-height: 1;
@@ -115,18 +115,18 @@ $tc-padding: 1em;
   margin-top: 1rem;
   display: flex;
   align-items: center;
-  color: var.$grey-1;
+  color: var.$gray-1;
   font-size: var.$pokey;
   @media screen and (prefers-color-scheme: dark) {
-    color: var.$grey-2-dark-mode;
+    color: var.$gray-2-dark-mode;
   }
   .tweet-like-icon, .tweet-like-count {
     display: none;
   }
   a {
-    color: var.$grey-1;
+    color: var.$gray-1;
     @media screen and (prefers-color-scheme: dark) {
-      color: var.$grey-2-dark-mode;
+      color: var.$gray-2-dark-mode;
     }
   }
   /* === needed in Eleventy but not in Hugo

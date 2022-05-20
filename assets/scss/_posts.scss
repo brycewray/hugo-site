@@ -4,7 +4,7 @@
 
 .posts {
   &-pagerGray {
-    color: var.$grey-2;
+    color: var.$gray-2;
   }
   &-pagerThingP {
     text-align: center;
@@ -95,7 +95,7 @@
     border-bottom: 0;
   }
   a:hover, a:focus {
-    color: var.$grey-2;
+    color: var.$gray-2;
     border-bottom: 1px solid hsl(204, 100%, 83%);
   }
 }
@@ -153,7 +153,7 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-  color: var.$greyArrow;
+  color: var.$grayArrow;
 }
 
 // === end, posts and post lists

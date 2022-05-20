@@ -112,7 +112,7 @@ a {
 a:focus, a:hover, a:active {
   color: var.$darkblue;
   @media (prefers-color-scheme: dark) {
-    color: var.$grey-2;
+    color: var.$gray-2;
     border-bottom: 1px solid var.$blueLight;
   }
 }
@@ -122,14 +122,14 @@ sup a, .footnote-return, a.icon {
 }
 
 blockquote {
-	border-left: 4px solid var.$grey-2;
-  color: var.$grey-1;
+	border-left: 4px solid var.$gray-2;
+  color: var.$gray-1;
   margin-right: 0;
   margin-left: 0;
   padding-left: 1.5em;
   @media (prefers-color-scheme: dark) {
-    border-left: solid var.$grey-1;
-    color: var.$grey-2-dark-mode;
+    border-left: solid var.$gray-1;
+    color: var.$gray-2-dark-mode;
   }
   p:last-child {
     margin-bottom: 0;

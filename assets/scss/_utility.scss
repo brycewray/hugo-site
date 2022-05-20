@@ -77,9 +77,9 @@
     color: var.$darkblue;
   }
   &-muted {
-    color: var.$grey-1;
+    color: var.$gray-1;
     @media (prefers-color-scheme: dark) {
-      color: var.$grey-2-dark-mode;
+      color: var.$gray-2-dark-mode;
     }
   }
   &-body {
@@ -136,7 +136,7 @@
   width: 100%;
   padding: 1em 1.25em;
   @media (prefers-color-scheme: dark) {
-    border: 1px solid var.$grey-1;
+    border: 1px solid var.$gray-1;
   }
   p {
     padding: 0;
@@ -242,7 +242,7 @@ img.containedImage {
 /* === end, borrowed from TWCSS === */
 
 .grayedOut {
-  color: var.$grey-2-dark-mode;
+  color: var.$gray-2-dark-mode;
 }
 
 /* start, for imgc.html */
