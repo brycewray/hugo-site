@@ -1,6 +1,6 @@
 ---
 layout: singlepost
-title: "Using Dart Sass with Hugo: the GitHub Actions edition"
+title: "Using Dart Sass with Hugo: the GitHub Actions edition"
 description: "Still more ways to make Hugo and Embedded Dart Sass work together."
 author: Bryce Wray
 date: 2022-05-17T14:49:00-05:00
