@@ -71,8 +71,8 @@
     padding-top: 0.5em;
     padding-bottom: 1rem;
     @media screen and (min-width: var.$bkpt_lg) {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 5vw;
+      padding-right: 5vw;
     }
     @media screen and (min-width: var.$bkpt_xl) {
       padding-top: 0;
@@ -83,17 +83,13 @@
     font-size: clamp(1rem, 0.5rem + 1.5vw, 2rem);
     letter-spacing: -0.01em;
     line-height: 1.4;
-    @media screen and (min-width: var.$bkpt_md) {
-      // display: block;
-      // font-size: 1.25rem;
-    }
     @media screen and (min-width: var.$bkpt_lg) {
       // font-size: 1.5rem;
       letter-spacing: -0.025em;
       margin-bottom: 1em;
       padding-top: 0.25em;
-      padding-right: 15%;
-      padding-left: 5%;
+      padding-right: 15vw;
+      padding-left: 5vw;
     }
     // @media screen and (min-width: var.$bkpt_2xl) {
     //   font-size: 1.75rem;
@@ -120,7 +116,7 @@
       line-height: 1.1;
       text-align: right;
       padding-top: 0;
-      padding-right: 5%;
+      padding-right: 5vw;
     }
   }
 }
