@@ -2,29 +2,51 @@
 
 // === for HTML sitemap
 
-.sitemapDiv {
-  font-family: var.$sans-serif;
-  h1 {
-    text-align: center;
-    font-size: 2.25rem;
-    // font-weight: bold;
-    padding-top: 0.75em;
-    margin-bottom: 0.5em;
+.sitemap {
+  &-Container {
+    background-image: linear-gradient(
+      to bottom,
+      var.$gray-3-blue,
+      var.$gray-5-blue 3%,
+      var.$white
+    );
+    @media screen and (prefers-color-scheme: dark) {
+      background-image: linear-gradient(
+        to bottom,
+        var.$gray-0-5,
+        var.$black 3%
+      );
+    }
   }
-
-  h2 {
-    font-size: 1.5rem;
-    // font-weight: bold;
-  }
-
-  ul li {
-    font-size: var.$pokey;
-    margin-bottom: 0.75em;
-    line-height: 1.375;
-  }
-  .description {
+  &-Div {
     font-family: var.$sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    @media screen and (min-width: var.$bkpt_lg) {
+      width: 40%;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.25rem;
+      // font-weight: bold;
+      padding-top: 0.75em;
+      margin-bottom: 0.5em;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      // font-weight: bold;
+    }
+
+    ul li {
+      font-size: var.$pokey;
+      margin-bottom: 0.75em;
+      line-height: 1.375;
+    }
+    .description {
+      font-family: var.$sans-serif;
+    }
   }
-}
+  }
 
 // === end, for HTML sitemap

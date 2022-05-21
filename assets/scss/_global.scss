@@ -182,6 +182,13 @@ audio, canvas, embed, iframe, img, object, svg, video {
 
 footer {
   font-family: var.$sans-serif;
+  background-image: linear-gradient(
+    var.$white,
+    var.$gray-4-blue
+  );
+  @media screen and (prefers-color-scheme: dark) {
+    background: var.$black;
+  }
   text-align: center;
   font-size: var.$legal;
   margin: 4rem auto 0 auto;
@@ -227,9 +234,9 @@ footer {
   &-home {
     font-family: var.$sans-serif;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2vh 5vw;
     margin: 0 auto;
-    width: 90%;
+    // width: 90%;
     @media screen and (min-width: var.$bkpt_lg) {
       width: 100%;
       display: flex;

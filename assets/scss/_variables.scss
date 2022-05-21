@@ -3,14 +3,20 @@ $default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" 
 $default-color-dark-mode: hsl(0, 0%, 87%); // i.e., #dedede
 $default-shade: hsl(0, 0%, 28%);
 $default-tint: hsla(0, 0%, 67%, 0.72);
+$gray-0-5: hsl(219, 100%, 20%);
 $gray-1: hsl(0, 0%, 35%);
+$gray-1-blue: hsl(218, 90%, 20%);
 $gray-2: rgb(199, 199, 199);
-$chroma-bkgd: hsl(0, 0%, 93%); // was ededed
-$gray-2-5: hsl(0, 0%, 93%);
-$grayArrow: hsl(218, 11%, 65%); // rgb(156, 163, 175) -- same as TWCSS `text-gray-400`
-$chroma-bkgd-dark-mode: hsl(0, 0%, 33%);
+$gray-2-blue: hsl(218, 70%, 40%);
 $gray-2-dark-mode: hsl(0, 0%, 66%);
+$gray-2-5: hsl(0, 0%, 93%);
 $gray-3: hsl(0, 0%, 98%);
+$gray-3-blue: hsl(218, 50%, 70%); // #8ca8d9
+$gray-4-blue: hsl(218, 70%, 85%);
+$gray-5-blue: hsl(218, 85%, 95%);
+$grayArrow: rgb(156, 163, 176); // rgb(156, 163, 175) -- same as TWCSS `text-gray-400`
+$chroma-bkgd: hsl(0, 0%, 93%); // was ededed
+$chroma-bkgd-dark-mode: hsl(0, 0%, 33%);
 $white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 $background-dark-mode: hsl(0, 0%, 0%); // was #181818
 $black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
@@ -19,6 +25,7 @@ $blueFirst: hsl(208, 100%, 50%); // Will use as a hover color only
 $blueLight: hsl(204, 100%, 83%); // for use with dark mode where supported
 $blueLightCode: hsl(212, 100%, 94%);
 $blueLightBtn: hsl(204, 100%, 90%);
+$darkerblue: hsl(240, 100%, 25%);
 $darkblue: hsl(240, 100%, 33%);
 $red: hsl(0, 100%, 41%);
 $red-dark-mode: hsl(0, 100%, 75%);

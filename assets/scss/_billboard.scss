@@ -3,13 +3,23 @@
 // === for billboard partial
 .billboard {
   &-div {
+    background-image: linear-gradient(
+      var.$gray-3-blue,
+      var.$white
+    );
+    @media screen and (prefers-color-scheme: dark) {
+      background-image: linear-gradient(
+        var.$gray-0-5,
+        var.$black
+      );
+    }
     font-family: var.$sans-serif;
     text-align: center;
     position: relative;
     height: auto;
     padding-right: 2vw;
     padding-left: 2vw;
-    padding-bottom: 1em;
+    padding-bottom: 5vh;
     @media screen and (min-width: var.$bkpt_lg) {
       padding-right: 4vw;
       padding-left: 4vw;
