@@ -26,7 +26,8 @@ $tc-padding: 1em;
     max-width: 80ch;
   }
   @media screen and (prefers-color-scheme: dark) {
-    background: transparent;
+    background: var.$twitter-bkgd-dark-mode;
+    // background: transparent;
   }
   a, a:hover {
     border: none !important;
