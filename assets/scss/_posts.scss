@@ -7,8 +7,8 @@
     background-image: linear-gradient(
       to bottom,
       var.$gray-3-blue,
-      var.$gray-5-blue 20%,
-      var.$white
+      var.$gray-5-blue 5%,
+      var.$gray-GitHub-blue
     );
     @media screen and (prefers-color-scheme: dark) {
       background-image: linear-gradient(

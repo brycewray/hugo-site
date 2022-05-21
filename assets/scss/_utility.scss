@@ -260,25 +260,42 @@ img.containedImage {
 /* start, for 404 page */
 
 .FourOhFour {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  h1 {
-    font-size: var.$biggest;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 3.25rem;
-    }
-    @media screen and (min-width: var.$bkpt_xl) {
-      font-size: 3.5rem;
+  &-Wrapper {
+    padding-top: 10vh;
+    background-image: linear-gradient(
+      to bottom,
+      var.$gray-3-blue,
+      var.$gray-5-blue 40%,
+      var.$gray-GitHub-blue
+    );
+    @media screen and (prefers-color-scheme: dark) {
+      background-image: linear-gradient(
+        to bottom,
+        var.$gray-0-5,
+        var.$black
+      );
     }
   }
-  p {
-    font-size: var.$slightlybig;
-  }
-  .bottom {
-    margin-bottom: 10em;
+  &-Body {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    h1 {
+      font-size: var.$biggest;
+      margin-bottom: 3rem;
+      @media screen and (min-width: var.$bkpt_lg) {
+        font-size: 3.25rem;
+      }
+      @media screen and (min-width: var.$bkpt_xl) {
+        font-size: 3.5rem;
+      }
+    }
+    p {
+      font-size: var.$slightlybig;
+    }
+    .bottom {
+      margin-bottom: 10em;
+    }
   }
 }
 

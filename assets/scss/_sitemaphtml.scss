@@ -6,9 +6,9 @@
   &-Container {
     background-image: linear-gradient(
       to bottom,
-      var.$gray-3-blue,
-      var.$gray-5-blue 3%,
-      var.$white
+      var.$gray-4-blue,
+      var.$gray-5-blue 1%,
+      var.$gray-GitHub-blue
     );
     @media screen and (prefers-color-scheme: dark) {
       background-image: linear-gradient(

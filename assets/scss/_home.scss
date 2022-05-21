@@ -4,15 +4,14 @@
   background-image: linear-gradient(
     to bottom,
     var.$gray-3-blue,
-    var.$gray-5-blue 20%,
-    var.$white
+    var.$gray-5-blue 10%,
+    var.$gray-GitHub-blue
   );
   @media screen and (prefers-color-scheme: dark) {
     background-image: linear-gradient(
       to bottom,
-      var.$black,
-      var.$gray-1-blue 50%,
-      var.$black
+      var.$gray-0-5,
+      var.$black 40%
     );
   }
 }

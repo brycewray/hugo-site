@@ -2,7 +2,12 @@
 
 html, body {
   font-family: var.$sans-serif;
+  background-color: var.$gray-GitHub-blue;
   color: var.$default-color;
+  @media (prefers-color-scheme: dark) {
+    background: var.$background-dark-mode;
+    color: var.$default-color-dark-mode;
+  }
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -11,10 +16,6 @@ html, body {
   font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
   text-rendering: optimizeLegibility;
   font-kerning: normal;
-  @media (prefers-color-scheme: dark) {
-    background: var.$background-dark-mode;
-    color: var.$default-color-dark-mode;
-  }
 }
 
 html {
@@ -182,10 +183,6 @@ audio, canvas, embed, iframe, img, object, svg, video {
 
 footer {
   font-family: var.$sans-serif;
-  background-image: linear-gradient(
-    var.$white,
-    var.$gray-4-blue
-  );
   @media screen and (prefers-color-scheme: dark) {
     background: var.$black;
   }
