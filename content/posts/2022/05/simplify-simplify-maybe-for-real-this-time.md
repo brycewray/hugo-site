@@ -1,5 +1,5 @@
 ---
-title: "Simplify, simplify, maybe for real this time"
+title: "Simplify, simplify, maybe for real this time"
 description: "The site enters CTCAJW Mode."
 author: Bryce Wray
 date: 2022-05-21T11:30:00-05:00
