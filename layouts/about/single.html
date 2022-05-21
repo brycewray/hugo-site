@@ -1,41 +1,8 @@
 {{ define "main" }}
-
-  {{- if .Params.featured_image -}}
-    <div class="background-hero-image-div"><!-- beginning, overarching hero image div -->
-      {{ partial "partials/imgc.html" (dict "context" . "src" $.Params.featured_image "alt" $.Params.featured_image_alt "width" $.Params.featured_image_width "height" $.Params.featured_image_height) }}
-      <div class="background-hero-wrapper-div">
-        <div class="background-hero-title-block">
-          <h1 class="background-hero-title-text">
-            {{ .Title | .Page.RenderString }}
-          </h1>
-          <p class="background-hero-description-text">
-            {{ .Params.Description | .Page.RenderString }}
-          </p>
-          <p class="background-hero-p-text">
-            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
-            <span class="pokey">
-              {{- if ne .PublishDate .Lastmod }}
-              Last modified {{ .Lastmod.Format "January 2, 2006" }}
-              {{- else }}
-              &nbsp;
-              {{- end }}
-            </span>
-          </p>
-          {{- if isset .Params "featured_image_caption" }}
-            <p class="featured-image-caption">
-              {{ index .Params "featured_image_caption" | .Page.RenderString }}
-            </p>
-          {{- end -}}
-          </div>
-      </div>
-    </div><!-- end, overarching hero image div -->
-    {{- else -}}
-      {{ partial "billboard.html" . }}
-    {{- end -}}
-
-    <div class="container-narrower">
-      <article>
-          {{ .Content }}
-      </article>
-    </div>
+  {{ partial "billboard.html" . }}
+  <div class="container-narrower">
+    <article>
+      {{ .Content }}
+    </article>
+  </div>
 {{ end }}

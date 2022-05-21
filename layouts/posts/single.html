@@ -1,40 +1,7 @@
 {{ define "main" }}
-
-  {{- if .Params.featured_image -}}
-    <div class="background-hero-image-div"><!-- beginning, overarching hero image div -->
-      {{ partial "partials/imgc.html" (dict "context" . "src" $.Params.featured_image "alt" $.Params.featured_image_alt "width" $.Params.featured_image_width "height" $.Params.featured_image_height) }}
-      <div class="background-hero-wrapper-div">
-        <div class="background-hero-title-block">
-          <h1 class="background-hero-title-text">
-            {{ .Title | .Page.RenderString }}
-          </h1>
-          <p class="background-hero-description-text">
-            {{ .Params.Description | .Page.RenderString }}
-          </p>
-          <p class="background-hero-p-text">
-            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
-            <span class="pokey">
-              {{- if ne .PublishDate .Lastmod }}
-              Last modified {{ .Lastmod.Format "January 2, 2006" }}
-              {{- else }}
-              &nbsp;
-              {{- end }}
-            </span>
-          </p>
-          {{- if isset .Params "featured_image_caption" }}
-          <p class="featured-image-caption">
-            {{ index .Params "featured_image_caption" | .Page.RenderString }}
-          </p>
-          {{- end -}}
-        </div>
-      </div>
-    </div><!-- end, overarching hero image div -->
-    {{- else -}}
-      {{ partial "billboard.html" . }}
-    {{- end -}}
-
-    <div class="container-narrower">
-      <article class="article" id="postArticle">
+  {{ partial "billboard.html" . }}
+  <div class="container-narrower">
+    <article class="article" id="postArticle">
       {{ .Content }}
       <div class="contactBtn">
         <button>
@@ -46,14 +13,13 @@
       {{ partialCached "comments.html" . }}
     </article>
   </div>
-
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark sansSerif">
       <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
 			<p class="ctr prevnextP">
 				{{ with .NextInSection }}
 					Next: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
-					{{ end }}
+        {{ end }}
 			</p>
 			<p class="ctr prevnextP">
 				{{ with .PrevInSection }}
