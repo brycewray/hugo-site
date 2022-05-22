@@ -10,6 +10,10 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 ## Notes about external services
 
+### Brid.gy and webmention.io
+
+The [webmentions](https://indieweb.org/Webmention) or other third-party comments that appear on certain pages, through my use of [Bridgy](https://brid.gy) and [webmention.io](https://webmention.io), occur only because the persons leaving them chose to do so in a public setting online. Such persons may at any time request deletion from this site of their third-party content, by [contacting me](/contact/).
+
 ### Cloudflare
 
 This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
