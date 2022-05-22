@@ -1,0 +1,168 @@
+@use 'variables' as var;
+
+/* Webmention Section */
+/* from https://github.com/maxboeck/eleventy-webmentions/blob/master/css/webmentions.css */
+
+.webmentions {
+  border-top: 1px solid #333;
+  display:block;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  // width: 80%;
+}
+
+.webmentions h2, .webmentions h3, .webmentions h4 {
+  text-align: center;
+}
+
+.webmentions__facepile {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.webmentions__face {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.webmentions__list, .webmentions__list_facepile {
+  list-style-type: none;
+  padding:0;
+}
+
+.webmentions__list_facepile {
+  margin-top: 0;
+}
+
+.webmentions__list_facepile li {
+  display: inline;
+}
+
+.webmentions__item {
+  margin-bottom: 2rem;
+}
+
+/* Single Webmention */
+
+.webmention {
+  display: block;
+}
+
+.webmention__meta,
+.webmention__author {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.webmention__meta {
+  margin-bottom: .5rem;
+}
+
+.webmention__author {
+  margin-right: .25rem;
+}
+
+.webmention__author__photo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: .5rem;
+}
+
+.webmention__pubdate {
+  font-style: italic;
+}
+
+.p-note {
+  // width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1.5em; /* avoids phone UI stuff */
+}
+
+summary.h4 {
+  margin-bottom: 0.25em;
+}
+
+.u-url {
+  color: #333;
+  border-bottom: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .webmentions {
+    border-top: 1px solid #fff;
+  }
+  .p-name {
+    color: #fff;
+  }
+  .u-url {
+    color: #ddd;
+    /* border-bottom: 1px solid #fff; */
+  }
+}
+
+/* for imported comments */
+
+.commentOpen {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.commentBody {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* other, added later */
+
+.u-photo {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.hr-wm {
+  margin-top: 2em;
+}
+
+.wm-normal {
+  font-weight: normal;
+}
+
+h4.wm-h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+article.wm-article {
+  padding-top: 0;
+}
+
+/* for old, imported comments */
+
+.container-oldComments {
+  // to come
+}
+
+.commentDisclaimer {
+  font-size: var.$legal;
+  text-align: center;
+}
+
+.commentName {
+  font-size: var.$pokey;
+  margin: 1em 0 0.5em 0;
+}
+.comment {
+  margin: 0 0 0.5em 0;
+  font-size: var.$pokey;
+  line-height: 1.5;
+}

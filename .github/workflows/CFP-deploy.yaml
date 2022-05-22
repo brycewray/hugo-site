@@ -13,6 +13,7 @@ env:
   TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
   CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
   CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+  WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
 
 jobs:
   deploy:
@@ -36,7 +37,7 @@ jobs:
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
-        run: hugo --gc
+        run: npm run build # hugo --gc when not using WMs
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1.0.0
         with:
