@@ -9,7 +9,8 @@
 "use strict";
 
 const fs = require('fs');
-const fetch = require('node-fetch');
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const md5 = require('md5');
 
 // Load .env vars with dotenv
