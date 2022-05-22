@@ -18,7 +18,7 @@ require('dotenv').config();
 
 const API_ORIGIN = 'https://webmention.io/api/mentions.jf2';
 const addlStats = '?per-page=1000&domain=';
-const domainToPoll = 'www.brycewray.com';
+const domainToPoll = 'www.brycewray.com'; // the 'www' matters!
 const leadToToken = '&token=';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 const urlToPoll = API_ORIGIN + addlStats + domainToPoll + leadToToken + TOKEN;
