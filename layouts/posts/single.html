@@ -10,6 +10,7 @@
           </a>
         </button>
       </div>
+      {{ partial "webmentions.html" . }}
       {{ partialCached "comments.html" . }}
     </article>
   </div>
