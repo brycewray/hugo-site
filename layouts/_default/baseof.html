@@ -9,7 +9,7 @@
     {{- if eq .Params.title "Posts" -}}
       {{- partialCached "footer.html" . -}}
     {{- else -}}
-      {{- partialCached "footer-wm.html" . -}}
+      {{- partial "footer-wm.html" . -}}
     {{- end }}
     {{- if hugo.IsProduction -}}
       {{- if eq .Site.Params.Host "CFP" -}}
