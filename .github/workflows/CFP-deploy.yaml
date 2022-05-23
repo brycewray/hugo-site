@@ -28,12 +28,6 @@ jobs:
     steps:
       - name: Checkout default branch
         uses: actions/checkout@v3
-      - name: Use node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '17.6.0'
-      - name: Install dependencies
-        run: npm install
       - name: Download Hugo v${{ env.HUGO_VERSION }}
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb
       - name: Install Hugo v${{ env.HUGO_VERSION }}
@@ -47,7 +41,7 @@ jobs:
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
-        run: npm run build # hugo --gc when not using WMs
+        run: hugo --gc
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1.0.0
         with:
