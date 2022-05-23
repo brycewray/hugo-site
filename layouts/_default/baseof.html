@@ -6,7 +6,11 @@
     <div id="content-main-hugo">
     {{- block "main" . -}}{{- end }}
     </div>
-    {{- partialCached "footer.html" . -}}
+    {{- if eq .Params.title "Posts" -}}
+      {{- partialCached "footer.html" . -}}
+    {{- else -}}
+      {{- partial "footer-wm.html" . -}}
+    {{- end }}
     {{- if hugo.IsProduction -}}
       {{- if eq .Site.Params.Host "CFP" -}}
         <!-- Cloudflare Web Analytics -->

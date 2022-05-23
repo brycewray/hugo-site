@@ -11,6 +11,7 @@
         </button>
       </div>
       {{ partialCached "comments.html" . }}
+      {{ partial "webmentions-pipes.html" . }}
     </article>
   </div>
   {{ if or .PrevPage .NextPage }}
