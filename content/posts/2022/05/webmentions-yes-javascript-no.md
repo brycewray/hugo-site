@@ -3,7 +3,7 @@ title: "Webmentions yes, JavaScript no"
 description: "I wondered why a Hugo site needed JavaScript to go IndieWebbin’. I decided it didn’t."
 author: Bryce Wray
 date: 2022-05-23T16:23:00-05:00
-#lastmod: 2022-05-23T16:49:00-05:00
+#lastmod: 2022-05-23T18:43:00-05:00
 #draft: true
 #initTextEditor: VS Code
 discussionId: "2022-05-webmentions-yes-javascript-no"
@@ -20,9 +20,7 @@ In a short time, I'd ditched the idea of patching up the 2020 solution and, inst
 
 [^JS_API]: It would be funny if certain guys from my [final workplace](/posts/2021/09/transition/)---who, three years ago, laboriously helped me through my first-ever attempts at using JS to extract data from remote sites---should happen to read this. I just hope they're not eating or drinking anything when they do; I'd hate to be responsible for a choking incident or, at the very least, a splattered phone screen.
 
-Thus, after spending a long night and most of this day figuring it out, I present to you what could be the world's only Hugo-based site which displays webmentions **without** requiring a single line of JavaScript.[^correction] Also, I will confess to some pleasure in getting to trash all those `node_modules` folders I'd had to add just yesterday due to the dependencies on which the earlier, JS-based method relied. I'm no JS-hating purist but, hey, when you don't *need* all the extra weight, why keep it in the repo?
-
-[^correction]: Of course, if someone can correct me on this, please [let me know](/contact/); I don't want to make such a claim if it ain't so.
+Thus, after spending a long night and most of this day figuring it out, I present to you what I originally thought could be the world's only Hugo-based site which displays webmentions **without** requiring a single line of JavaScript, although [I later learned otherwise](https://gitlab.com/kaushalmodi/hugo-theme-refined/-/blob/master/layouts/partials/webmention_rcv.html) from fellow Hugo user [Kaushal Modi](https://twitter.com/kaushalmodi/). Also, I will confess to some pleasure in getting to trash all those `node_modules` folders I'd had to add just yesterday due to the dependencies on which the earlier, JS-based method relied. I'm no JS-hating purist but, hey, when you don't *need* all the extra weight, why keep it in the repo?
 
 When I have the code somewhat [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-er, I'll write  about it. In the meantime, I've left the following comment within the `webmentions-pipes` partial template I'm using to suck all this into each applicable post, just in case the curious happen to find that partial on the site repo:
 
