@@ -24,8 +24,6 @@
 }
 
 .webmentions__face {
-  width: 2rem;
-  height: 2rem;
   border-radius: 50%;
   object-fit: cover;
   flex: none;
@@ -40,7 +38,8 @@
   margin-top: 0;
 }
 
-.webmentions__list_facepile li {
+.webmentions__list_facepile li,
+.webmentions__list_facepile li img {
   display: inline;
 }
 
@@ -70,20 +69,21 @@
 }
 
 .webmention__author__photo {
-  height: 3rem;
-  width: 3rem;
+  // height: 3rem !important;
+  // width: 3rem !important;
   border-radius: 50%;
   object-fit: cover;
   margin-right: .5rem;
 }
 
 .webmention__pubdate {
-  font-style: italic;
+  // font-style: italic;
 }
 
 .p-note {
   // width: 90%;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  padding-top: 0;
   padding-bottom: 1.5em; /* avoids phone UI stuff */
 }
 
@@ -124,8 +124,8 @@ summary.h4 {
 /* other, added later */
 
 .u-photo {
-  width: 45px;
-  height: 45px;
+  width: 2em !important;  // override `article img`
+  height: 2em !important; // in other SCSS
   margin: 0 auto;
 }
 
@@ -144,6 +144,15 @@ h4.wm-h4 {
 
 article.wm-article {
   padding-top: 0;
+}
+
+.p-name, .webmention__content {
+  font-size: var.$pokey;
+  line-height: 1.5;
+}
+
+.p-name {
+  padding-left: 0.5em;
 }
 
 /* for old, imported comments */
