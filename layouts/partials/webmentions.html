@@ -1,5 +1,5 @@
 <div class="webmentions" id="webmentions">
-  {{ $siteURLforWMs := "https://www.brycewray.com" }}
+  {{ $siteURLforWMs := "https://www.brycewray.com/" }}
   {{ $linkForUse := print ($siteURLforWMs) (.RelPermalink) }}
   {{ $urlized := $linkForUse | md5 }}
   <h3>Webmentions</h3>
