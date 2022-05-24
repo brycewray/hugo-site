@@ -86,7 +86,7 @@
   {{- with $json -}}
     {{- if $json.children -}}
       <h3>Webmentions</h3>
-      {{/* No reason to show if there are none for this page */}}
+      {{- /* No reason to show if there are none for this page */ -}}
     {{- end }}
     {{- range $json.children -}}
       {{- $children = . -}}
@@ -176,7 +176,7 @@
                     </div>
                   </article>
                 </li>
-              {{- end }}{{/* if not me */}}
+              {{- end }}{{- /* if not me */ -}}
             {{- end }}
           {{- end }}
         </ul>
