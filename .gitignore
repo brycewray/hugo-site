@@ -1,14 +1,13 @@
-/public
-/resources/_gen/
+public
+resources/
 node_modules
 .env
 *.env
 .env.*
-/_cache
-/data
-/.vscode
+# _cache
+# data
+.vscode
 .npmrc
-# Local Netlify folder
 .netlify
 .firebase
 .nova
@@ -18,10 +17,10 @@ cache-and-headers.js
 nonce-worker.js
 cache-nonce*.js
 
-/assets/css/index.css
-/themes/twjit/assets/css/index.css
-/themes/twjit-hero/assets/css/index.css
-/themes/twjit-thoreau/assets/css/index.css
+assets/css/index.css
+themes/twjit/assets/css/index.css
+themes/twjit-hero/assets/css/index.css
+themes/twjit-thoreau/assets/css/index.css
 .hugo_build.lock
 
 start.sh
@@ -31,7 +30,7 @@ push.sh
 
 tweetcurl*.json
 
-/themes/npm-sass/assets/css
-/themes/npm-sass/assets/css/*.css
+themes/npm-sass/assets/css
+themes/npm-sass/assets/css/*.css
 
 .vercel
