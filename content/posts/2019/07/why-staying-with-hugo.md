@@ -5,7 +5,7 @@ title: "Why I’m staying with Hugo"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2022-04-01T14:22:00-05:00
+lastmod: 2022-05-23T21:55:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: nikko-macaspac-6SNbWyFwuhk-unsplash_2391x1593.jpg
 featured_image_width: 2391
@@ -45,7 +45,7 @@ In the three weeks before this post, including the four-day "weekend" that I had
 
 Why I was willing to make such a switch in the first place---and why I ultimately chose not to go through with it---is the story I'm here to tell you today, friends and neighbors. This'll be a long one (even for my long-winded self), but one which I hope will help others with similarly curious streaks avoid some of what I just endured.
 
-***Disclaimer:*** *As always, I claim no expertise on the subjects of today's little discourse. I am simply stating opinion; I am just telling you what happened to me. According to [statistics](https://www.staticgen.com/gatsby), there are many thousands of web developers who find Gatsby a delight, a game-changer, a breath of fresh air. Indeed, I had fully expected to be among their ranks before this was over. All I'm doing here is explaining why that didn't happen. If any Gatsby fans who happen on this post want to say it's because I'm too dumb to "get" Gatsby and/or React, that's perfectly fine. An overabundance of brainpower I do not have, and I know that. An overabundance of JavaScript knowledge, much less knowledge of React, I* ***absolutely*** *do not have. (However, the same is true for my knowledge of Hugo and its parent language---[Go](https://golang.org), sometimes [erroneously](https://golang.org/doc/faq#go_or_golang) called "Golang"---and yet I manage to use it without incident, for the most part, which is more than I can say about Gatsby and React.)*
+***Disclaimer:*** *As always, I claim no expertise on the subjects of today's little discourse. I am simply stating opinion; I am just telling you what happened to me. According to [statistics](https://www.staticgen.com/gatsby), there are many thousands of web developers who find Gatsby a delight, a game-changer, a breath of fresh air. Indeed, I had fully expected to be among their ranks before this was over. All I'm doing here is explaining why that didn't happen. If any Gatsby fans who happen on this post want to say it's because I'm too dumb to "get" Gatsby and/or React, that's perfectly fine. An overabundance of brainpower I do not have, and I know that. An overabundance of JavaScript knowledge, much less knowledge of React, I* ***absolutely*** *do not have. (However, the same is true for my knowledge of Hugo and its parent language---[Go](https://go.dev)---and yet I manage to use it without incident, for the most part, which is more than I can say about Gatsby and React.)*
 
 With that said, moving right along&nbsp;.&nbsp;.&nbsp;.
 

@@ -5,7 +5,7 @@ title: "Grid-locked no more"
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
 date: 2018-11-28T10:00:00-05:00
-lastmod: 2022-02-12T12:37:00-06:00
+lastmod: 2022-05-23T21:55:00-05:00
 discussionId: "2018-11-grid-locked-no-more"
 featured_image: "grid-3424959_5227x2935.jpg"
 featured_image_width: 5227
@@ -47,7 +47,7 @@ Thus, feeling only mildly sheepish _(baaaaa)_ about my previous position on CSS 
 
 ## Why boot Bootstrap?
 
-While that move didn't _necessarily_ require flat-out eliminating Bootstrap code from my site---after all, I still have a few Tale-based bits of [GoLang](https://golang.org) code here and there that keep Hugo happy, so I'm certainly not too proud to keep helpful bits around from past work---I knew keeping that CSS foundation around while also writing CSS to work with the Grid ways of doing things would confuse me.
+While that move didn't _necessarily_ require flat-out eliminating Bootstrap code from my site---after all, I still have a few Tale-based bits of [Go](https://go.dev) code here and there that keep Hugo happy, so I'm certainly not too proud to keep helpful bits around from past work---I knew keeping that CSS foundation around while also writing CSS to work with the Grid ways of doing things would confuse me.
 
 You see, I'd inevitably run into things I _thought_ were CSS Grid's "fault" but, in fact, would've happened just because the Bootstrap CSS and JS code, too, was sitting there in the background. The only way to make sure that whatever I was seeing was because of _my_ code was to make sure it all _was_ my code.
 

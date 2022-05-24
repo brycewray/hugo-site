@@ -25,7 +25,7 @@ featured_image_caption: |
 
 In the [introduction](/posts/2020/04/webmentions-three-ssgs-1/) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2/), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Now, here in Part 3, we'll talk about implementing them in the [Hugo](https://gohugo.io) SSG.
 
-Of the three repos, I worked on the [Hugo repo](https://github.com/brycewray/hugo_site_css-grid) before the [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid), because I figured (wrongly) that webmention-izing it to match the [Eleventy repo](https://github.com/brycewray/eleventy_bundler) would be more difficult than doing so for the Gatsby repo, so I wanted to get it over with. I based this assumption on the fact that both the Eleventy and Gatsby repos ran on [JavaScript](https://js.org), while the Hugo repo was overwhelmingly [Go](https://golang.org)-based.
+Of the three repos, I worked on the [Hugo repo](https://github.com/brycewray/hugo_site_css-grid) before the [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid), because I figured (wrongly) that webmention-izing it to match the [Eleventy repo](https://github.com/brycewray/eleventy_bundler) would be more difficult than doing so for the Gatsby repo, so I wanted to get it over with. I based this assumption on the fact that both the Eleventy and Gatsby repos ran on [JavaScript](https://js.org), while the Hugo repo was overwhelmingly [Go](https://go.dev)-based.
 
 In short: everything I'd learned up to that point involved JavaScript code and, with the Hugo repo, suddenly I'd be starting from scratch.
 

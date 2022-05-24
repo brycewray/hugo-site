@@ -5,7 +5,7 @@ title: "A normal person’s guide to static websites"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
 date: 2020-09-22T16:35:00-05:00
-lastmod: 2021-12-01T09:53:00-06:00
+lastmod: 2022-05-23T21:55:00-05:00
 #draft: true
 discussionId: "2020-09-normal-persons-guide-static-websites"
 featured_image: "christina-wocintechchat-com-EkeThvO9VfM-unsplash_6016x4016.jpg"
@@ -77,7 +77,7 @@ Unlike many of the other SSGs, Hugo *doesn't* rely on a long string of software 
 
 ### With great speed comes&nbsp;.&nbsp;.&nbsp;.
 
-Hugo's awesome speed is its greatest strength. That speed comes from Hugo's roots in the [Go programming language](https://golang.org) (sometimes erroneously called "Golang," probably because of its website's URL).
+Hugo's awesome speed is its greatest strength. That speed comes from Hugo's roots in the [Go programming language](https://go.dev).
 
 However, to be fair, I must note that Go is also responsible for Hugo's most significant weakness.
 

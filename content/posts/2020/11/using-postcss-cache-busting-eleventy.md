@@ -51,7 +51,7 @@ An *asset pipeline* is how some software applications are "aware of" and process
 - Its built-in support for [PostCSS](https://postcss.org), which allows an astounding set of capabilities, one of which is easy handling of things like the [Tailwind CSS](https://tailwindcss.com) that I've incorporated into this site.
 - [Fingerprinting](https://en.wikipedia.org/wiki/Fingerprint_(computing))---Although there are numerous ways you can use fingerprinting, my main need for it was to practice cache-busting on my CSS.
 
-After all: if you're using PostCSS, you're almost certainly [using Hugo Pipes to implement it](https://gohugo.io/hugo-pipes/postcss/), so why not simply use it also to fingerprint the CSS file every time you make a change? It was as simple as this in the `<head>` "partial" template in the Hugo version of my site (note that this is the [Go](https://golang.org) language on which Hugo templating depends):
+After all: if you're using PostCSS, you're almost certainly [using Hugo Pipes to implement it](https://gohugo.io/hugo-pipes/postcss/), so why not simply use it also to fingerprint the CSS file every time you make a change? It was as simple as this in the `<head>` "partial" template in the Hugo version of my site (note that this is the [Go](https://go.dev) language on which Hugo templating depends):
 
 ```go-html-template
 {{ $css := resources.Get "css/index.css" }}

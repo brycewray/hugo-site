@@ -69,7 +69,7 @@ const { title, subtitle, description, date, lastmod, permalink } = content;
 </html>
 ```
 
-**Comparison**: One of Eleventy's claims to fame is how it allows you to choose from among multiple templating languages as well as vanilla JavaScript. Gatsby and Next.js templates are built with JSX. Hugo is the only one of these platforms that doesn't use JavaScript or a variation thereof for templates; instead, the [Go](https://golang.org)-based Hugo relies on a very different, Go-derived templating language.
+**Comparison**: One of Eleventy's claims to fame is how it allows you to choose from among multiple templating languages as well as vanilla JavaScript. Gatsby and Next.js templates are built with JSX. Hugo is the only one of these platforms that doesn't use JavaScript or a variation thereof for templates; instead, the [Go](https://go.dev)-based Hugo relies on a very different, Go-derived templating language.
 
 ## Markdown
 

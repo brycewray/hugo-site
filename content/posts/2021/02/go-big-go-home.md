@@ -22,7 +22,7 @@ Imagine that you're about to take your first drive as owner of a shiny new vehic
 
 Now, imagine that you've bought that vehicle even though its audio system, while superb, has all of its controls in a language that you barely can read.
 
-That's somewhat analogous to where I found myself a few days ago, when I committed to [returning this site](/posts/2021/02/simplify-simplify/) to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). Why? Because, with that commitment, also came a commitment to learning more about the [Go programming language](https://golang.org) on which Hugo itself is based.
+That's somewhat analogous to where I found myself a few days ago, when I committed to [returning this site](/posts/2021/02/simplify-simplify/) to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). Why? Because, with that commitment, also came a commitment to learning more about the [Go programming language](https://go.dev) on which Hugo itself is based.
 
 I'd been spoiled by how the site's former SSG, [Eleventy](https://11ty.dev), famously allows use of [multiple languages](https://www.11ty.dev/docs/languages/) in building the *templates* that an SSG uses to convert plain text into web pages like the one you're reading now. Of course, having had the site on Hugo for nearly all of its first year of existence, I was fully aware of the need to accept Go-based templating once more upon the return.
 
@@ -212,7 +212,7 @@ In the case of this shortcode, **not** using `.Scratch` in this fashion would re
 
 ### `printf` and `%s`
 
-As for the `printf` stuff and all those `%s` items: `printf` is the [recommended way](https://regisphilibert.com/blog/2017/04/hugo-cheat-sheet-go-template-translator/) to build a Hugo variable through concatenation. Each separate string or variable so concatenated requires its own iteration of the `%s` "verb," instructing that particular `printf` to handle the string or variable as a string. (Go has [lots of other such "verbs.”](https://golang.org/pkg/fmt/)) If you **don't** use the right number of `%s` "verbs" for each `printf`, the `$stringtoRet` result has `%!(EXTRA string`-kinda error messages in it, FUBARing the resulting HTML/CSS.
+As for the `printf` stuff and all those `%s` items: `printf` is the [recommended way](https://regisphilibert.com/blog/2017/04/hugo-cheat-sheet-go-template-translator/) to build a Hugo variable through concatenation. Each separate string or variable so concatenated requires its own iteration of the `%s` "verb," instructing that particular `printf` to handle the string or variable as a string. (Go has [lots of other such "verbs.”](https://go.dev/pkg/fmt/)) If you **don't** use the right number of `%s` "verbs" for each `printf`, the `$stringtoRet` result has `%!(EXTRA string`-kinda error messages in it, FUBARing the resulting HTML/CSS.
 
 ### Hyphens and curly brackets
 

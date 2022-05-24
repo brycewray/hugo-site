@@ -92,7 +92,7 @@ The switch to PostCSS actually was pretty straightforward in the Gatsby repo. Si
 
 But Hugo was another matter.
 
-And that was despite its having a [pretty cool method](https://gohugo.io/hugo-pipes/postcss/) of incorporating PostCSS, when you consider Hugo uses no "bundler" (like webpack). I added the same NPM dependencies and `postcss.config.js` file to the repo, put the CSS files where Hugo wanted them, put the appropriate [Go](https://golang.org) code in the `head.html` partial template, and---kept getting errors.
+And that was despite its having a [pretty cool method](https://gohugo.io/hugo-pipes/postcss/) of incorporating PostCSS, when you consider Hugo uses no "bundler" (like webpack). I added the same NPM dependencies and `postcss.config.js` file to the repo, put the CSS files where Hugo wanted them, put the appropriate [Go](https://go.dev) code in the `head.html` partial template, and---kept getting errors.
 
 Only after a few hours of trial-and-error futzing did I finally locate a [Hugo community forums topic](https://discourse.gohugo.io/t/pipes-postcss-postcss-import-how-to-keep-filesystem-context/15164) that saved the day.
 

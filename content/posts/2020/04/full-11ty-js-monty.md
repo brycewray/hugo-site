@@ -65,7 +65,7 @@ The amazingly capable [Chris Biscardi](https://www.christopherbiscardi.com/) has
 
 As for the Hugo repo, adding webmentions will probably be a little more hinky for two reasons:
 
-- First, it's not a JavaScript-based repo, of course, so I doubt more than a tiny bit of what I've done will translate to it that well. Going from Nunjucks to "vanilla" JavaScript is one thing. Going from "vanilla" JavaScript to [Go](https://golang.org)---ah, that's a totally different clambake, folks.
+- First, it's not a JavaScript-based repo, of course, so I doubt more than a tiny bit of what I've done will translate to it that well. Going from Nunjucks to "vanilla" JavaScript is one thing. Going from "vanilla" JavaScript to [Go](https://go.dev)---ah, that's a totally different clambake, folks.
 
 - Second, there's no baked-in Hugo solution for it as there is for, say, [PostCSS](https://gohugo.io/hugo-pipes/postcss) or [syntax highlighting](https://gohugo.io/content-management/syntax-highlighting). However, the Hugo community is nothing if not resourceful, so there is the occasional [article](https://jvt.me/posts/2019/03/18/displaying-webmentions/) and [forum post](https://discourse.gohugo.io/t/anyone-for-webmention/10411) about incorporating webmentions in a Hugo site. I hope to find their information enough to guide me through the wilderness.
 

@@ -107,7 +107,7 @@ To me, this is Hugo's biggest advantage, even more so than its vaunted build spe
 
 The [Hugo home page](https://gohugo.io) proudly proclaims Hugo as "the world's fastest framework for building websites," and can do so completely honestly. Hugo's build speed is truly astonishing---creating a multi-hundred-page site in a second *or less*---especially if you've ever seen how molasses-drenched some other SSGs’ build processes seem to be by comparison. (If you *do* have to use some dependencies, such as with  PostCSS and Tailwind CSS, the overall time slows down a little but the *Hugo site-building part* of it remains head-snappingly quick.)
 
-Hugo's almost iconic build speed comes from the [Go language](https://golang.org)  on which Hugo is built. However, that foundation is not entirely a positive, as I'll explain later.
+Hugo's almost iconic build speed comes from the [Go language](https://go.dev)  on which Hugo is built. However, that foundation is not entirely a positive, as I'll explain later.
 
 ### Themes
 

@@ -41,7 +41,7 @@ Recently, I edited this site's footer. Where it used to say that this site is po
 
 If you know what the JAMstack is (if you don't, follow that link above for a much better explanation than I could give), that's probably no big deal to you---perhaps just an alternative choice of words, right? After all, Hugo is often mentioned as part of the movement toward the JAMstack.[^HugoJAM]
 
-[^HugoJAM]: Hugo is powered by [Go](https://golang.org), not JavaScript---the *J* in the term *JAMstack*---but is considered to be an example of the JAMstack because it is one of the apps that makes possible static sites whose dynamic features gain speed and lose latency by relying on client-side, JavaScript-enabled functionality rather than "heavier," slower operations on a server.
+[^HugoJAM]: Hugo is powered by [Go](https://go.dev), not JavaScript---the *J* in the term *JAMstack*---but is considered to be an example of the JAMstack because it is one of the apps that makes possible static sites whose dynamic features gain speed and lose latency by relying on client-side, JavaScript-enabled functionality rather than "heavier," slower operations on a server.
 
 But there was more to it. Things were afoot. Now, you get to find out just what they were.
 

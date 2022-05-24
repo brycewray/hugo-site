@@ -149,7 +149,7 @@ Here's the TL;DR version:
 
 Accordingly, I've decided to dip my toes back into the piranha tank of dependencies-heavy development, with the hope that I continue to be ambulatory thereafter.
 
-All of the above being the case, I also decided that I'd benefit more (consider it cross-training, if you will) from doing my personal stuff in a JavaScript-based SSG once again rather than Hugo with its basis in the [Go language](https://golang.org).
+All of the above being the case, I also decided that I'd benefit more (consider it cross-training, if you will) from doing my personal stuff in a JavaScript-based SSG once again rather than Hugo with its basis in the [Go language](https://go.dev).
 
 And, while I briefly considered trying to convert my site over to [Next.js](https://nextjs.org) since that's the framework we may very well adopt at the Day Job for the corporation's sites, I found it far more trouble than it was worth for a simple Markdown-based site like this one.[^nested]
 

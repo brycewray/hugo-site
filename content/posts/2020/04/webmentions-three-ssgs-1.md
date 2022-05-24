@@ -47,7 +47,7 @@ Does this series amount to the articles I wish I could've read before I started?
 
 In particular, I found it *really* difficult to follow the logic in certain articles’ related code. I ended up "chasing" variables, constants, and statements from other files---and sourly muttering things like "Where'd *that* come from?" and "What's *that* got to do with what's supposed to be happening here?" and "Wait a minute; what happened to the step *before* this part?"
 
-As I often say: if *I* can do this, *you* can do this. That's especially true if you have a decent base in [JavaScript](https://js.org) (and, for Hugo's sake, [Go](https://golang.org)); but, even if you don't, I hope what's contained in and linked from this series will help you reach a happy place, so your webmentions will get fetched regularly and then appear on your site as they should.
+As I often say: if *I* can do this, *you* can do this. That's especially true if you have a decent base in [JavaScript](https://js.org) (and, for Hugo's sake, [Go](https://go.dev)); but, even if you don't, I hope what's contained in and linked from this series will help you reach a happy place, so your webmentions will get fetched regularly and then appear on your site as they should.
 
 And no chase scenes involved, I hope.
 
