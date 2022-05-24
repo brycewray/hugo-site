@@ -1,0 +1,5 @@
+{{- $styles := resources.Get "css/index.css" -}}
+{{- $styles = $styles | resources.Minify | fingerprint -}}
+{{- /* We do it both dev and prod because of Safari */ -}}
+    <link rel="preload" as="style" href="{{ $styles.RelPermalink }}">
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
