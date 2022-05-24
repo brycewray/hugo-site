@@ -17,7 +17,7 @@ featured_image_caption: |
 
 {{< disclaimer >}}
 
-<strong class="red">Update, 2022-05-24</strong>: I am no longer using the method described herein, due to production-side problems I encountered with the site's default hosting provider, [Cloudflare Pages](https://pages.cloudflare.com) (although it worked fine with [Vercel](https://vercel.com)). I'll explain further in a future post.\
+<strong class="red">Update, 2022-05-24</strong>: I am no longer using the method described herein, due to production-side problems I encountered with the site's default hosting provider, [Cloudflare Pages](https://pages.cloudflare.com) (although it worked fine with [Vercel](https://vercel.com)). I'll explain further in a [future post](/posts/2022/05/using-dart-sass-hugo-back-to-node/).\
 \
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my two [previous](/posts/2022/03/using-dart-sass-hugo/) [posts](/posts/2022/03/using-dart-sass-hugo-sequel/) on this subject. This follow-up assumes you've already read them.
 {.yellowBox}
