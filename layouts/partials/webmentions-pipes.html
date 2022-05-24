@@ -76,12 +76,6 @@
 */ -}}
 {{- $json = $jsonString | transform.Unmarshal -}}
 
-{{- /*
-  Still to-do as of 2022-05-24-0837CDT:
-  - Sorting of replies and mentions (previous attempts didn't work).
-  - [I'll add to this list as things occur to me.]
-*/ -}}
-
 <div class="webmentions" id="webmentions">
   {{- with $json -}}
     {{- if $json.children -}}
@@ -156,7 +150,7 @@
       <details>
         <summary class="h4">Replies</summary>
         <ul class="webmentions__list">
-          {{- range sort $json.children "asc" }}
+          {{- range sort $json.children ".published" }}
             {{- $children = . -}}
             {{- with $children.content -}}
               {{- if ne $children.author.name "Bryce Wray" -}}
@@ -186,7 +180,8 @@
       <details>
         <summary class="h4">Mentions</summary>
         <ul class="webmentions__list">
-          {{- range $json.children -}}
+          {{- range sort $json.children ".wmId" "asc" -}}
+          {{/* for some reason, it doesn't sort correctly with ".published" */}}
             {{- $children = . -}}
             {{- with $children.content -}}
               {{- if ne $children.author.name "Bryce Wray" -}}
