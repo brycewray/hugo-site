@@ -46,7 +46,7 @@ services:
 
 caches:
   getjson:
-    dir: :resourceDir/json
+    #dir: :resourceDir/json
     maxAge: 10s # per https://discourse.gohugo.io/t/getjson-cache/23127
 
 minify:
