@@ -2,7 +2,7 @@
 title: "Using Dart Sass with Hugo: back to Node"
 description: "The GitHub Actions approach falls short, at least with our chosen host, so the site is now using the Node Sass package."
 author: Bryce Wray
-date: 2022-05-24T17:00:00-05:00
+date: 2022-05-24T15:23:00-05:00
 #lastmod:
 #draft: true
 #initTextEditor: iA Writer
