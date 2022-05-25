@@ -53,7 +53,7 @@ jobs:
   restart_on_failed_push_build:
     name: Restart failed push build
     runs-on: ubuntu-latest
-    # restarts scheduled run when it fails
+    # restarts push-based run when it fails
     if: github.event_name == 'deploy' && failure()
     needs: [deploy]
     steps:
