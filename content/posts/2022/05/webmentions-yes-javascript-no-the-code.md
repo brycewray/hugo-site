@@ -3,7 +3,7 @@ title: "Webmentions yes, JavaScript no: the code"
 description: "A walkthrough of this site’s all-Hugo, no-JS implementation of webmentions."
 author: Bryce Wray
 date: 2022-05-25T06:18:00-05:00
-#lastmod:
+#lastmod: 2022-05-25T09:40:00-05:00 #Fixing code indents
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-webmentions-yes-javascript-no-the-code"
@@ -288,7 +288,7 @@ Then, we set the rules of engagement, or perhaps I should call them the "rules o
 ```go-html-template
     {{- if $json.children -}}
       <h3>Webmentions</h3>
-      {{- /* 
+      {{- /*
       No reason to show that heading if
       this page has **no** webmentions.
       */ -}}
@@ -377,7 +377,7 @@ With those ground rules established, we provide for "likes":
 [^selfReplies]: By "replies from me," I mean items like what you may have seen in those optional-viewing snippets from the API return: I replied to someone's tweet that was, itself, a reply to my original tweet about the post in question.
 
 ```go-html-template
-		{{- if $repliesYes -}}
+    {{- if $repliesYes -}}
       <details>
         <summary class="h4">Replies</summary>
         <ul class="webmentions__list">
