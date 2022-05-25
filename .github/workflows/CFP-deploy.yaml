@@ -50,6 +50,8 @@ jobs:
           projectName: 'hugo-site'
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+  # following two jobs, for restarts-on-failures, are based on:
+  # https://www.eliostruyf.com/restart-github-actions-workflow-failed/
   restart_on_failed_push_build:
     name: Restart failed push build
     runs-on: ubuntu-latest
