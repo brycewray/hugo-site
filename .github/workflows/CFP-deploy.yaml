@@ -8,7 +8,6 @@ on:
     - cron: '0 0 * * *'   # every day at 00:00UTC (1900CDT/1800CST)
     - cron: '0 8 * * *'   # every day at 08:00UTC (0300CDT/0200CST)
     - cron: '0 16 * * *'  # every day at 16:00UTC (1100CDT/1000CST)
-  workflow_dispatch:
 
 env:
   HUGO_VERSION: 0.99.1 # will get Extended Version below
@@ -51,35 +50,3 @@ jobs:
           projectName: 'hugo-site'
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-  # following two jobs, for restarts-on-failures, are based on:
-  # https://www.eliostruyf.com/restart-github-actions-workflow-failed/
-  restart_on_failed_push_build:
-    name: Restart failed push build
-    runs-on: ubuntu-latest
-    # restarts push-based run when it fails
-    if: github.event_name == 'push' && failure()
-    needs: [deploy]
-    steps:
-      - name: Retry the workflow
-        run: |
-          curl -i \
-          -X POST \
-          -H "Accept: application/vnd.github.v3+json" \
-          -H "Authorization: token ${{ secrets.GHA_PAT }}" \
-          https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
-          -d '{"ref": "${{ github.ref }}" }'
-  restart_on_failed_cron_job:
-    name: Restart failed cron job build
-    runs-on: ubuntu-latest
-    # restarts scheduled run when it fails
-    if: github.event_name == 'schedule' && failure()
-    needs: [deploy]
-    steps:
-      - name: Retry the workflow
-        run: |
-          curl -i \
-          -X POST \
-          -H "Accept: application/vnd.github.v3+json" \
-          -H "Authorization: token ${{ secrets.GHA_PAT }}" \
-          https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
-          -d '{"ref": "${{ github.ref }}" }'
