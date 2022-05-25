@@ -4,7 +4,7 @@ title: "Using Dart Sass with Hugo: the GitHub Actions edition"
 description: "Still more ways to make Hugo and Embedded Dart Sass work together."
 author: Bryce Wray
 date: 2022-05-17T14:49:00-05:00
-#lastmod: 2022-05-24T21:38:00-05:00
+lastmod: 2022-05-24T21:38:00-05:00
 #draft: true
 discussionId: "2022-05-using-dart-sass-hugo-github-actions-edition.md"
 featured_image: "sass-and-glasses_3200x1800.png"
