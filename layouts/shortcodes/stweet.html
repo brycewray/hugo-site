@@ -36,7 +36,7 @@
   {{ end }}
 {{ end }}
 
-{{ $tweetLink := "https://twitter.com/{{ $json.user.screen_name}}/status/{{ $id }}" }}
+{{ $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id }}
 
 <blockquote class="tweet-card" cite="{{ $tweetLink }}">
   <div class="tweet-header">
