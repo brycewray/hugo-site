@@ -3,7 +3,7 @@ title: "Simplify, simplify, maybe for real this time"
 description: "The site enters CTCAJW Mode."
 author: Bryce Wray
 date: 2022-05-21T11:30:00-05:00
-#lastmod:
+lastmod: 2022-05-25T12:41:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-simplify-simplify-maybe-for-real-this-time"
@@ -46,6 +46,11 @@ My regular readers know that each of my posts has usually sported a big ol' hero
 [^comparison]: Before I decided to whack hero images *again*, I did something I don't recall doing before the previous deletions thereof: I pulled up blogs from some of my favorite web developers to see what *they* were doing. I was surprised to find the vast majority *do not* use hero images with their articles. I was even more surprised that this was true among those who tend to write more about look-and-feel than about the nuts and bolts of coding. So, if I needed any further confirmation that my decision had some solid precedent out there, that little survey-of-sorts was it.
 
 One more thing: because CTCAJW Mode means I may be more frequently publishing posts, even if they're often shorter, I'll have to decide whether to continue my long-established practice of giving a heads-up on social media every time I issue a new post. I don't want to be (more) annoying. There's already ’way too much of that on social media, and it ain't gonna be gettin' any better. So, as always, I invite you to follow my feed---[RSS](/index.xml) or [JSON](/index.json), as you may prefer---to make sure you won't miss anything, regardless of my future choices about social media.
+
+**Update, 2022-05-25**: Concerning that last paragraph, I've now pinned the following tweet/[toot](https://docs.joinmastodon.org/user/posting/) to my profiles on Twitter and the two [Mastodon](https://joinmastodon.org) instances where I’m currently active:
+{.yellowBox}
+
+{{< stweet "1529514823658110977" >}}
 
 ## It's not about SSG FOMO
 
