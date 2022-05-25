@@ -78,7 +78,7 @@ jobs:
         run: |
           curl -i \
           -X POST \
-          -H "Accept: application/vnd.github.v3+json"
-          -H "Authorization: token ${{ secrets.GHA_PAT }}"
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.GHA_PAT }}" \
           https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
           -d '{"ref: "${{ github.ref }}" }'
