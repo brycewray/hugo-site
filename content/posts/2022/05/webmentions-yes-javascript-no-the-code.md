@@ -3,7 +3,7 @@ title: "Webmentions yes, JavaScript no: the code"
 description: "A walkthrough of this site’s all-Hugo, no-JS implementation of webmentions."
 author: Bryce Wray
 date: 2022-05-25T06:18:00-05:00
-#lastmod: 2022-05-25T09:40:00-05:00 #Fixing code indents
+#lastmod: 2022-05-25T11:36:00-05:00 #Unneeded hyphen
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-webmentions-yes-javascript-no-the-code"
@@ -239,7 +239,7 @@ map[children:[map[author:map[name:Aleksandr Hovhannisyan photo:https://webmentio
 
 If we left it in that form, Hugo would be able to loop through *some* of it but would crash on other parts. Trust me on this: I learned it the hard way while building this code.
 
-So, first, we [`jsonify`](https://gohugo.io/functions/jsonify/) it so it'll *really* be JSON. Then we save that unvarnished, unedited result in another variable, just in case we ever want it later.[^unvarnishedJSON] Next, we create a **string** version of `$json` so we can do some text *replacements*. (Hugo doesn't allow using `replace` in anything but a string.) But what are we going to replace? Well, the webmention.io API returns some items with *hyphenated* keys (*e.g.*, `in-reply-to`) and Hugo "[don't play that](https://mygeekwisdom.com/2014/02/08/homey-dont-play-that/)." Thus, we'll use `replace` to rename each such key using "camelCase"-style (*e.g.*, `inReplyTo`).
+So, first, we [`jsonify`](https://gohugo.io/functions/jsonify/) it so it'll *really* be JSON. Then we save that unvarnished, unedited result in another variable, just in case we ever want it later.[^unvarnishedJSON] Next, we create a **string** version of `$json` so we can do some text *replacements*. (Hugo doesn't allow using `replace` in anything but a string.) But what are we going to replace? Well, the webmention.io API returns some items with *hyphenated* keys (*e.g.*, `in-reply-to`) and Hugo "[don't play that](https://mygeekwisdom.com/2014/02/08/homey-dont-play-that/)." Thus, we'll use `replace` to rename each such key using "camelCase" style (*e.g.*, `inReplyTo`).
 
 [^unvarnishedJSON]: As of this writing, I haven't yet found a use for that "original" JSON, but Stuff Happens.
 
