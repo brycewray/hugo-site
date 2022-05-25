@@ -3,11 +3,16 @@ title: "Using Dart Sass with Hugo: back to Node"
 description: "The GitHub Actions approach falls short, at least with our chosen host, so the site is now using the Node Sass package."
 author: Bryce Wray
 date: 2022-05-24T15:23:00-05:00
-#lastmod:
+lastmod: 2022-05-24T20:36:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-using-dart-sass-hugo-back-to-node"
 ---
+
+{{< disclaimer >}}
+
+**Update, a few hours later**: I re-thought this and went back to the GitHub Actions-enabled deployment method; I decided that, at least for now, it simply offers too many conveniences to blow it off, especially in favor of the slower development process required by using the Node.js Sass package mentioned below. Will keep you advised.
+{.yellowBox}
 
 "The best-laid plans of mice and men," and all that.
 
