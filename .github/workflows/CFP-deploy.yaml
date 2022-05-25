@@ -66,7 +66,7 @@ jobs:
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: token ${{ secrets.GHA_PAT }}" \
           https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
-          -d '{"ref: "${{ github.ref }}" }'
+          -d '{"ref": "${{ github.ref }}" }'
   restart_on_failed_cron_job:
     name: Restart failed cron job build
     runs-on: ubuntu-latest
@@ -81,4 +81,4 @@ jobs:
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: token ${{ secrets.GHA_PAT }}" \
           https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
-          -d '{"ref: "${{ github.ref }}" }'
+          -d '{"ref": "${{ github.ref }}" }'
