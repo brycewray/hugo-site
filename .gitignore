@@ -38,4 +38,5 @@ themes/npm-sass/assets/css/*.css
 .formergha
 
 gha.txt
+gha*.json
 
