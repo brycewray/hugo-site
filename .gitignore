@@ -29,6 +29,7 @@ testbuild.sh
 push.sh
 
 tweetcurl*.json
+toot*.json
 
 themes/npm-sass/assets/css
 themes/npm-sass/assets/css/*.css
