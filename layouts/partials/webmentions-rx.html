@@ -211,3 +211,7 @@
     {{- end }}
   {{- end }}
 </div>
+
+{{- if .Params.oldcomments }}
+  {{ .Params.oldcomments | safeHTML }}
+{{- end }}
