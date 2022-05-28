@@ -1,5 +1,6 @@
 public
-resources/
+resources/_gen
+# but not resources/ so getJSON results *will* be cached
 node_modules
 .env
 *.env
