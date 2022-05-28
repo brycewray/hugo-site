@@ -152,27 +152,25 @@
       <details>
         <summary class="h4">Replies</summary>
         <ul class="webmentions__list">
-          {{- range sort $json.children ".published" }}
+          {{- range sort $json.children ".wmSource" }}
             {{- $children = . -}}
             {{- with $children.content -}}
-              {{- if ne $children.author.name "Bryce Wray" -}}
-                <li class="webmentions__item">
-                  <article class="webmention h-cite">
-                    <div class="webmention__meta">
-                      <a class="webmention__author p-author h-card u-url" href="{{ $children.url }}">
-                        <img class="webmention__author__photo u-photo" src="{{ $children.author.photo }}" alt="{{ $children.author.name }}">
-                        <strong class="p-name">{{ $children.author.name }}</strong>
-                      </a>&nbsp;
-                      <span class="pokey">
-                        <time class="webmention__pubdate dt-published" datetime="{{ $children.published }}">{{ $children.published | dateFormat "Jan 2, 2006 15:04:05" }} (UTC)</time>
-                      </span>
-                    </div>
-                    <div class="webmention__content p-content">
-                      {{ $children.content.html | safeHTML }}
-                    </div>
-                  </article>
-                </li>
-              {{- end }}{{- /* if not me */ -}}
+              <li class="webmentions__item">
+                <article class="webmention h-cite">
+                  <div class="webmention__meta">
+                    <a class="webmention__author p-author h-card u-url" href="{{ $children.url }}">
+                      <img class="webmention__author__photo u-photo" src="{{ $children.author.photo }}" alt="{{ $children.author.name }}">
+                      <strong class="p-name">{{ $children.author.name }}</strong>
+                    </a>&nbsp;
+                    <span class="pokey">
+                      <time class="webmention__pubdate dt-published" datetime="{{ $children.published }}">{{ $children.published | dateFormat "Jan 2, 2006 15:04:05" }} (UTC)</time>
+                    </span>
+                  </div>
+                  <div class="webmention__content p-content">
+                    {{ $children.content.html | safeHTML }}
+                  </div>
+                </article>
+              </li>
             {{- end }}
           {{- end }}
         </ul>
@@ -182,8 +180,7 @@
       <details>
         <summary class="h4">Mentions</summary>
         <ul class="webmentions__list">
-          {{- range sort $json.children ".wmId" "asc" -}}
-          {{/* for some reason, it doesn't sort correctly with ".published" */}}
+          {{- range sort $json.children ".wmId" -}}
             {{- $children = . -}}
             {{- with $children.content -}}
               {{- if ne $children.author.name "Bryce Wray" -}}
