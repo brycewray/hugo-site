@@ -3,11 +3,14 @@ title: "Checking out the IndieWeb again"
 description: "While not entirely sure I’m holding my mouth right, I’m giving webmentions another try."
 author: Bryce Wray
 date: 2022-05-22T15:02:00-05:00
-lastmod: 2022-05-23T09:04:00-05:00
+lastmod: 2022-05-29T10:51:00-05:00
 #draft: true
 #initTextEditor: VS Code
 discussionId: "2022-05-checking-out-indieweb-again"
 ---
+
+{{< disclaimer >}}
+<br />
 
 **Update, 2022-05-23**: I decided a few hours later to try---emphasis on *try*---a totally different approach, and thus disabled the Node.js-based webmentions stuff mentioned below. My proposed replacement is still a work in progress at this point. Will tell you more when/if I get it all to work.
 {.yellowBox}

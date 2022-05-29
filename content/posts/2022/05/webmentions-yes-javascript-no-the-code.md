@@ -3,11 +3,14 @@ title: "Webmentions yes, JavaScript no: the code"
 description: "A walkthrough of this site’s all-Hugo, no-JS implementation of webmentions."
 author: Bryce Wray
 date: 2022-05-25T06:18:00-05:00
-#lastmod: 2022-05-25T11:36:00-05:00 #Unneeded hyphen
+lastmod: 2022-05-29T10:52:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-webmentions-yes-javascript-no-the-code"
 ---
+
+{{< disclaimer >}}
+<br />
 
 **Note**: This follow-up to "[Webmentions yes, JavaScript no](/posts/2022/05/webmentions-yes-javascript-no)" assumes you've already read that post.
 {.yellowBox}
