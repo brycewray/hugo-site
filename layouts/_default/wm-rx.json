@@ -1,0 +1,64 @@
+{{- $json := "Init" -}}
+{{- $text := "" -}}
+{{- $children := "" -}}
+{{- $stuff := "" -}}
+{{- $AddlStats := "" -}}
+{{- $API_Origin := "" -}}
+{{- $DomainToPoll := "" -}}
+{{- $PageToPoll := "" -}}
+{{- $LeadToToken := "" -}}
+{{- $SafeURL := "" -}}
+{{- $WMCount := "" -}}
+{{- $likes := "" -}}
+{{- $likesYes := "" -}}
+{{- $reposts := "" -}}
+{{- $repostsYes := "" -}}
+{{- $replies := "" -}}
+{{- $repliesYes := "" -}}
+{{- $mentions := "" -}}
+{{- $mentionsYes := "" -}}
+{{- $API_Origin = "https://webmention.io/api/mentions.jf2" -}}
+{{- $AddlStats = "?domain=" -}}
+{{- $DomainToPoll = "www.brycewray.com" -}}{{/* the 'www.' matters! */}}
+{{- $PageToPoll = .Permalink -}}
+{{- $SafeURL = print "%s%s%s" "https://" $DomainToPoll .RelPermalink -}}
+{{- $LeadToToken = "&token=" -}}
+{{- $TOKEN := os.Getenv "WEBMENTION_IO_TOKEN" -}}
+{{- $ThingToGet := print $API_Origin $AddlStats $DomainToPoll $LeadToToken $TOKEN -}}
+{{- $json := getJSON $ThingToGet }}
+{{- $json = $json | jsonify -}}{{- /* We'll have to unmarshal it at the end */ -}}
+{{- $jsonPreFix := $json -}}{{- /* Save it j/i/c */ -}}
+{{- /*
+  Now, we'll create a string version of $json so
+  we can do some replacements (explained below).
+*/ -}}
+{{- $jsonString := string $json -}}
+{{- /*
+  Because the webmention.io API provides items
+  with hyphenated keys --- and, not surprisingly,
+  Hugo balks at that --- we'll now rename them
+  with camelCase before we bring the resulting
+  $jsonString **back into** $json.
+*/ -}}
+{{- $jsonString := replace $jsonString "in-reply-to" "inReplyTo" -}}
+{{- $jsonString := replace $jsonString "like-of" "likeOf" -}}
+{{- $jsonString := replace $jsonString "repost-of" "repostOf" -}}
+{{- $jsonString := replace $jsonString "bookmark-of" "bookmarkOf" -}}
+{{- $jsonString := replace $jsonString "mention-of" "mentionOf" -}}
+{{- $jsonString := replace $jsonString "wm-id" "wmId" -}}
+{{- $jsonString := replace $jsonString "wm-private" "wmPrivate" -}}
+{{- $jsonString := replace $jsonString "wm-property" "wmProperty" -}}
+{{- $jsonString := replace $jsonString "wm-received" "wmReceived" -}}
+{{- $jsonString := replace $jsonString "wm-source" "wmSource" -}}
+{{- $jsonString := replace $jsonString "wm-target" "wmTarget" -}}
+{{- /*
+  With replaces done, we feed them back into $json
+  **and** unmarshal $json. Otherwise, it'll be no-go
+  (no pun intended). See also:
+  - https://gohugo.io/functions/transform.unmarshal/
+  - https://discourse.gohugo.io/t/loading-json-data-file-as-a-resource/15213/9
+  - https://www.thenewdynamic.com/article/toward-using-a-headless-cms-with-hugo-part-2-building-from-remote-api/
+*/ -}}
+{{- $json = $jsonString -}}
+
+{{ jsonify $json }}
