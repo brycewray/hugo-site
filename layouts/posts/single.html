@@ -1,5 +1,5 @@
-{{ define "main" }}
-  {{ partial "billboard.html" . }}
+{{- define "main" -}}
+  {{- partial "billboard.html" . }}
   <div class="container-narrower">
     <article class="article" id="postArticle">
       {{ .Content }}
@@ -10,23 +10,23 @@
           </a>
         </button>
       </div>
-      {{ partialCached "comments.html" . }}
-      {{ partial "webmentions-rx.html" . }}
+      {{- partialCached "comments.html" . }}
+      {{- /* partial "webmentions-rx.html" . */}}
     </article>
   </div>
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark sansSerif">
       <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
 			<p class="ctr prevnextP">
-				{{ with .NextInSection }}
+				{{ with .NextInSection -}}
 					Next: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
-        {{ end }}
+        {{- end }}
 			</p>
 			<p class="ctr prevnextP">
-				{{ with .PrevInSection }}
+				{{ with .PrevInSection -}}
 					Previous: <a class="previous" href="{{.RelPermalink}}">{{.Title}}</a>
-				{{ end }}
+				{{- end }}
 			</p>
     </div>
-  {{ end }}
-{{ end }}
+  {{- end }}
+{{- end }}
