@@ -3,7 +3,7 @@ title: "The IndieWeb experiment ends"
 description: "My timing wasn’t the greatest."
 author: Bryce Wray
 date: 2022-05-29T10:48:00-05:00
-#lastmod:
+#lastmod: 2022-05-29T11:41:00-05:00 # typo
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-indieweb-experiment-ends"
@@ -17,7 +17,7 @@ Why am I quitting webmentions again? There are several factors, mentioned below 
 
 ## My bad timing
 
-My [decision to do fewer advisories to social media](/posts/2022/05/site-week-2022-05-28/), which came a few days after I began this go-around, works contrary to the whole point of gathering webmentions. The simple fact is that, if I don't plug each new post to Twitter and Mastodon, it generally won't receive enough reaction therein to matter.[^HN] It's like buying your own gas station for your personal fleet of cars, only to learn the next day that your business manager had replaced all them with EVs. In this case, however, the gas station buyer and the business manager were both *moi*, and I simply didn't consider, at first, the incompatibility between Action A and Action B.
+My [decision to do fewer advisories to social media](/posts/2022/05/site-week-2022-05-28/), which came a few days after I began this go-around, works contrary to the whole point of gathering webmentions. The simple fact is that, if I don't plug each new post to Twitter and Mastodon, it generally won't receive enough reaction therein to matter.[^HN] It's like buying your own gas station for your personal fleet of cars, only to learn the next day that your business manager had replaced all of them with EVs. In this case, however, the gas station buyer and the business manager were both *moi*, and I simply didn't consider, at first, the incompatibility between Action A and Action B.
 
 [^HN]: Even my posts which get some decent traction on [Hacker News](https://news.ycombinator.com) get virtually no "love" social-media-wise, at least related to that traction.
 
