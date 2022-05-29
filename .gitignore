@@ -27,6 +27,7 @@ start.sh
 build.sh
 testbuild.sh
 push.sh
+wm*.sh
 
 tweetcurl*.json
 toot*.json
