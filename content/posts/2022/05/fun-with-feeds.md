@@ -3,7 +3,7 @@ title: "Fun with feeds"
 description: "Cut through the clutter by following various feeds."
 author: Bryce Wray
 date: 2022-05-30T13:10:00-05:00
-#lastmod:
+#lastmod: 2022-05-30T13:15:00-05:00 # consistency
 #draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-fun-with-feeds"
@@ -31,7 +31,7 @@ You may already be aware that podcasts notify apps and websites of new content a
 
 ```html
 <link rel="alternate" type="application/rss+xml"
-``` 
+```
 
 The URL you'll find within that `link` is the one that your feed reader needs. For example, here's the feed `link`  for one of my long-time favorites, [*The Skeptics' Guide to the Universe*](https://www.theskepticsguide.org):
 
@@ -43,7 +43,7 @@ The URL you'll find within that `link` is the one that your feed reader needs. F
 
 Most subreddits have an RSS feed. All you have to do is take a subreddit's URL and add `.rss` to the end of it. I suggest using the `new` designation so you get the latest posts, sorted appropriately.
 
-The [Eleventy](https://11ty.dev) subreddit, with the "new" designation, is `https://www.reddit.com/r/eleventy/new`. Thus, its feed URL would be:
+The [Eleventy](https://11ty.dev) subreddit, with the `new` designation, is `https://www.reddit.com/r/eleventy/new`. Thus, its feed URL would be:
 
 ```plaintext
 https://www.reddit.com/r/eleventy/new.rss
