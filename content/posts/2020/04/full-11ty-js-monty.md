@@ -71,7 +71,7 @@ As for the Hugo repo, adding webmentions will probably be a little more hinky fo
 
 ### “Nice-to-have”s
 
-Beyond those two biggies, there were also the **[sitemap](/sitemap.xml)** and the **[RSS feed](/index.xml?utm_campaign=RSS+feed&utm_source=RSS&utm_medium=RSS+feed)**.[^XMLstuff] Each was handled by Eleventy [plugins](https://11ty.dev/docs/plugins), and each of those plugins gave only Nunjucks-based code examples. Happily, doing so turned out to be reasonably easy, especially since I saved them for late in the process when I'd already worked through some other kerfuffles.
+Beyond those two biggies, there were also the **[sitemap](/sitemap.xml)** and the **[RSS feed](/index.xml)**.[^XMLstuff] Each was handled by Eleventy [plugins](https://11ty.dev/docs/plugins), and each of those plugins gave only Nunjucks-based code examples. Happily, doing so turned out to be reasonably easy, especially since I saved them for late in the process when I'd already worked through some other kerfuffles.
 
 [^XMLstuff]: If your site lacks either or both of these, you need to get at least a sitemap. It's important for both [accessibility](https://usabilitygeek.com/guidelines-improve-usability-accessibility) and [SEO](https://moz.com/blog/xml-sitemaps). We can all debate [how relevant](https://sevaa.com/blog/2019/02/are-rss-feeds-still-relevant) [RSS](https://en.wikipedia.org/wiki/RSS) is these days, but the fact is that some people still like to use RSS readers. If we can still support Internet Explorer, we also can support RSS. The former *should* be dead but isn't (sadly); the latter *isn't* dead and, in my opinion, never should be.
 
