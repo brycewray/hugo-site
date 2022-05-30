@@ -20,7 +20,7 @@
     height: auto;
     padding-right: 2vw;
     padding-left: 2vw;
-    padding-bottom: 5vh;
+    padding-bottom: 1vh; // was 5vh with hero images
     @media screen and (min-width: var.$bkpt_lg) {
       padding-right: 4vw;
       padding-left: 4vw;
@@ -44,9 +44,9 @@
     text-align: center;
     padding-right: 2%;
     padding-left: 2%;
-    @media screen and (min-width: var.$bkpt_lg) {
-      text-align: left;
-    }
+    // @media screen and (min-width: var.$bkpt_lg) {
+    //   text-align: left;
+    // }
   }
   &-title-text {
     font-size: clamp(2.25em, 0.75rem + 4vw, 4em);
@@ -67,9 +67,9 @@
     line-height: 1.25;
     margin-top: 1.5em;
     text-align: center;
-    @media screen and (min-width: var.$bkpt_lg) {
-      text-align: right;
-    }
+    // @media screen and (min-width: var.$bkpt_lg) {
+    //   text-align: right;
+    // }
   }
 }
 
