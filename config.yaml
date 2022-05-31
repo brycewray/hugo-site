@@ -6,7 +6,7 @@ title: BryceWray.com
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
-enableGitInfo: true
+# enableGitInfo: true
 
 pygmentsUseClasses: true
 
@@ -26,9 +26,9 @@ frontmatter:
     - lastmod
   lastmod:
     - lastmod
+    - :git
     - date
     - publishDate
-    - :git
   publishDate:
     - publishDate
     - date
