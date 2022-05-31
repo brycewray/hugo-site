@@ -30,9 +30,12 @@
     {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` $titleThis `”">Reply via email</a></p>`  -}}
     {{- $contentMD := .Content -}}
     {{- $finalHTMLContent := printf "%s%s" $contentMD $emailReplyHTML -}}
+    {{- /* https://www.brycewray.com/?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS */ -}}
+    {{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
+    {{- $PermaWithRSSutm := printf "%s%s" .Permalink $RSSutm -}}
     <item>
       <title>{{ $titleThis }}</title>
-      <link>{{ .Permalink }}</link>
+      <link>{{ $PermaWithRSSutm }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
