@@ -31,6 +31,16 @@ jobs:
         uses: actions/checkout@v3
       - name: Download Hugo v${{ env.HUGO_VERSION }}
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb
+      # ====================
+      # Beginning, Wrangler2-related
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '17.6.0'
+      - name: Install dependencies
+        run: npm install
+      # End, Wrangler2-related
+      # ====================
       - name: Install Hugo v${{ env.HUGO_VERSION }}
         run: sudo dpkg -i hugo*.deb
       - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
