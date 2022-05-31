@@ -1,6 +1,4 @@
 {{ define "main" }}
-  {{- $PublDateDay := "" -}}
-  {{- $LastmodDay := ""  -}}
   <div class="posts-Wrapper ctr sansSerif">
     <h1 class="posts-Head">Posts</h1>
     <div class="posts-Container">
@@ -80,17 +78,15 @@
     <hr class="paginatorTop" />
 
 			{{ range $paginator.Pages }}
-        {{- $PublDateDay = .PublishDate.Format "January 2, 2006" -}}
-        {{- $LastmodDay = .Lastmod.Format "January 2, 2006"  -}}
         <div class="posts-ItemDiv">
           <h2 class="posts-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
 					<p class="posts-Description">
 						{{ .Description | .Page.RenderString }}
 					</p>
           <p class="posts-Dates">
-            <strong>{{ $PublDateDay }}</strong>
-            {{- if ne $PublDateDay $LastmodDay }}
-            <br /><span class="eightyFive">Last modified {{ $LastmodDay }}</span>
+            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
+            {{- if ne .PublishDate .Lastmod }}
+            <br /><span class="eightyFive">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>
             {{- end }}
           </p>
           <p class="legal">&nbsp;</p>
