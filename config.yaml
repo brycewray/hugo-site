@@ -6,7 +6,7 @@ title: BryceWray.com
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
-# enableGitInfo: true
+enableGitInfo: true
 
 pygmentsUseClasses: true
 
@@ -18,6 +18,20 @@ params:
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
   Host: "Vercel" # choices are "CFP" and "Vercel"
   SiteLive: true # Boolean --- used for adapting robots.txt as needed
+
+frontmatter:
+  date:
+  - date
+  - publishDate
+  - lastmod
+  lastmod:
+  - lastmod
+  - :git
+  - date
+  - publishDate
+  publishDate:
+  - publishDate
+  - date
 
 markup:
   highlight:
