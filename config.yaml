@@ -21,17 +21,17 @@ params:
 
 frontmatter:
   date:
-  - date
-  - publishDate
-  - lastmod
+    - date
+    - publishDate
+    - lastmod
   lastmod:
-  - lastmod
-  - :git
-  - date
-  - publishDate
+    - lastmod
+    - :git
+    - date
+    - publishDate
   publishDate:
-  - publishDate
-  - date
+    - publishDate
+    - date
 
 markup:
   highlight:
