@@ -32,9 +32,6 @@
     }
   ],
   {{ end -}}
-  {{- /* https://www.brycewray.com/?utm_campaign=JSON&utm_source=JSON&utm_medium=JSON */ -}}
-  {{- $JSONutm := "?utm_campaign=JSON&utm_source=JSON&utm_medium=JSON"  -}}
-  {{- $PermaWithJSONutm := printf "%s%s" .Permalink $JSONutm -}}
   "items": [
     {{ range $index, $element := $pages -}}
     {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` .Title `”">Reply via email</a></p>` -}}
@@ -44,7 +41,7 @@
       "title": {{ .Title | jsonify }},
       "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
       "id": "{{ .Permalink }}",
-      "url": "{{ $PermaWithJSONutm }}",
+      "url": "{{ .Permalink }}",
       {{ with .Params.author -}}
       "authors": [
         {
