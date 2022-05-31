@@ -1,5 +1,4 @@
 {{ define "main" }}
-  {{- $PublDateDay := "" -}}
 
   <div class="sitemap-Container">
     <div class="sitemap-Div">
@@ -16,9 +15,8 @@
       <ul>
         <li><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
       {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
-        {{- $PublDateDay = .PublishDate.Format "January 2, 2006" -}}
         {{- if (ne .Title "Posts") -}}
-        <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ $PublDateDay }}<br />
+        <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}<br />
         <span class="description">{{ .Description | .Page.RenderString }}</span></li>
         {{- end -}}
       {{- end -}}

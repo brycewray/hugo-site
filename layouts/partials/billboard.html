@@ -1,10 +1,8 @@
-{{- $PublDateDay := .PublishDate.Format "January 2, 2006" -}}
-{{- $LastmodDay := .Lastmod.Format "January 2, 2006"  -}}
 <div class="billboard-div">
   <div class="billboard-title-block">
     <h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
     {{- if .Params.Description }}<p class="billboard-description-text">{{ .Params.Description }}</p>{{- end }}
-    <p class="billboard-p-text"><strong>{{ $PublDateDay }}</strong><br />{{- if ne $PublDateDay $LastmodDay }}<span class="seventyFive">Last modified {{ $LastmodDay }}</span>{{- else -}}&nbsp;{{- end }}</p>
-    <p class="ctr legal"><strong>Commit</strong>: <a href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a></p>
+    <p class="billboard-p-text"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />{{- if ne (.PublishDate.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}<span class="seventyFive">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- else -}}&nbsp;{{- end }}</p>
+    <p class="ctr legal">{{- if $.GitInfo -}}<strong>Commit</strong>: <a href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}</p>
   </div>
 </div>
