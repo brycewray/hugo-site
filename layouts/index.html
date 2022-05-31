@@ -1,24 +1,30 @@
 {{ define "main" }}
-
-    <div class="container-home">
-      <div class="homeOpen">
-        <h1>Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about/">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
-      </div>
-      <div class="homePost-Div">
-        <div class="post-line"></div>
-        <h2 class="homePost-Latest">Latest <a href="/posts">posts</a></h2>
-        {{- range first 3 (where .Site.RegularPages "Section" "posts") }}
+  {{- $PublDateDay := "" -}}
+  {{- $LastmodDay := ""  -}}
+  <div class="container-home">
+    <div class="homeOpen">
+      <h1>Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about/">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
+    </div>
+    <div class="homePost-Div">
+      <div class="post-line"></div>
+      <h2 class="homePost-Latest">Latest <a href="/posts">posts</a></h2>
+      {{- range first 3 (where .Site.RegularPages "Section" "posts") }}
+        {{- $PublDateDay = .PublishDate.Format "January 2, 2006" -}}
+        {{- $LastmodDay = .Lastmod.Format "January 2, 2006"  -}}
         <div>
           <h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
           <p class="homePost-Description">
             {{ .Description }}
           </p>
           <p class="homePost-Dates">
-            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span class="pokey">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}
+            <strong>{{ $PublDateDay }}</strong>
+            {{- if ne $PublDateDay $LastmodDay }}
+            <br /><span class="pokey">Last modified {{ $LastmodDay }}</span>
+            {{- end }}
           </p>
         </div>
-        {{- end }}
-        <p class="homePost-Finish"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
-      </div>
+      {{- end }}
+      <p class="homePost-Finish"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
     </div>
-    {{- end }}
+  </div>
+{{- end }}
