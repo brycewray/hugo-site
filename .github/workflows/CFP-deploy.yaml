@@ -29,6 +29,9 @@ jobs:
     steps:
       - name: Checkout default branch
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
       - name: Download Hugo v${{ env.HUGO_VERSION }}
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb
       - name: Install Hugo v${{ env.HUGO_VERSION }}
