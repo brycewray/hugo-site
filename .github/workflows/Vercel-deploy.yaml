@@ -12,6 +12,7 @@ name: Deploy to Vercel
 # “Alternatively, you can end the commit message
 # with two empty lines followed by either
 # `skip-checks: true`` or `skip-checks:true``.”
+#
 # ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
 
 on:
