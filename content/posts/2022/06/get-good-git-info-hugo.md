@@ -60,7 +60,7 @@ Incidentally: I test for whether a post's day of original publication and its "l
     Last modified {{ .Lastmod.Format "January 2, 2006" }}
   {{- else -}}
     &nbsp;
-  {{- end }}
+  {{- end -}}
 </p>
 ```
 
