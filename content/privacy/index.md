@@ -3,7 +3,6 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors."
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2022-05-29T10:30:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -32,10 +31,14 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 [^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, "[GDPR compliance](https://github.com/google/fonts/issues/1495)."
 
+### Mastodon
+
+This site reproduces [Mastodon](https://join.mastodon.org) toots as purely static text and downloaded images with no tracking involved. Each toot is linked to its original location on the applicable Mastodon instance.
+
 ### Twitter
 
-This site reproduces tweets as purely static text and downloaded images with no Twitter (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image—including the avatar—that’s included with a static tweet does include a Twitter cookie, but **no** trackers.
+This site reproduces tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image---including the avatar---that's included with a static tweet does include a Twitter cookie, but **no** trackers.
 
 ### YouTube
 
-This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide YouTube embeds that respect your privacy. For details concerning how this works, see Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)," on which this site's related templating is based.
+This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide [YouTube](https://youtube.com) embeds that respect your privacy. For details concerning how this works, see Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)," on which this site's related templating is based.
