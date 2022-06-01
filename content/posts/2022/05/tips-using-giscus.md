@@ -77,4 +77,4 @@ By the way, the giscus app apparently practices some extremely picky caching of 
 
 ## Be realistic
 
-Perhaps giscus's most significant flaw is one that besets many other FOSS apps: its ongoing development and maintenance is a non-paying, time-consuming hobby for a developer who happens to have a real Day Job. If you temper your expectations accordingly, you might just find this web app is up to the task of providing a satisfactory commenting solution for your site.
+Perhaps giscus's most significant flaw is one that besets many other FOSS apps: its ongoing development and maintenance are a non-paying, time-consuming hobby for a developer who happens to have a real Day Job. If you temper your expectations accordingly, you might just find this web app is up to the task of providing a satisfactory commenting solution for your site.
