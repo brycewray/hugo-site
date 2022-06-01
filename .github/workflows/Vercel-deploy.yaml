@@ -1,5 +1,19 @@
 name: Deploy to Vercel
 
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message** (INCLUDING the brackets):
+#
+# [skip ci]
+# [ci skip]
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true`` or `skip-checks:true``.”
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
+
 on:
   push:
     branches:
