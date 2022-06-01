@@ -10,7 +10,7 @@ on:
   #   - cron: '0 16 * * *'  # every day at 16:00UTC (1100CDT/1000CST)
 
 env:
-  HUGO_VERSION: 0.100.0 # will get Extended Version below
+  HUGO_VERSION: 0.100.1 # will get Extended Version below
   DART_SASS_VERSION: 1.52.1
   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
   TOKEN: ${{ secrets.TOKEN }}
