@@ -1,5 +1,6 @@
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
+{{ $handleInst := "" }}
 {{ $id := .Get 1 }}
 {{ $urlPre := print "https://" $masIns "/api/v1/statuses/" }}
 {{ $json := getJSON $urlPre $id }}
@@ -21,24 +22,35 @@
 
 {{ if isset $json "account" }}
   {{ $tootLink = print "https://" $masIns "@" $json.account.acct "/status/" $id }}
+  {{ $handleInst = print "@" $json.account.acct "@" $masIns }}
 {{ end }}
 
 {{ if isset $json "content" }}
   <blockquote class="tweet-card" cite="{{ $tootLink }}">
     <div class="tweet-header">
       <a class="tweet-profile twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">
-        <img src="{{ $json.account.avatar }}" alt="Mastodon avatar for @{{ $json.account.acct }}" loading="lazy" />
+        <img src="{{ $json.account.avatar }}" alt="Mastodon avatar for {{ $handleInst }}" loading="lazy" />
       </a>
       <div class="tweet-author">
         <a class="tweet-author-name twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">{{ $json.account.display_name }}</a>
-        <a class="tweet-author-handle twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">@{{ $json.account.acct }}</a>
+        <a class="tweet-author-handle twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">{{ $handleInst }}</a>
       </div>
     </div>
     <p class="tweet-body">
       {{ $json.content | safeHTML }}
     </p>
     {{ if isset $json "media_attachments" }}
-      {{/* to come */}}
+      {{ $media_count := len $json.media_attachments }}
+      <div class="tweet-img-grid-{{ $media_count }}">
+        {{ range $media := $json.media_attachments }}
+          <img
+            src="{{ $media.url }}"
+            alt="Image from toot {{ $json.id }}"
+            class="tweet-media-img"
+            loading="lazy"
+          />
+        {{ end }}
+    </div>
     {{ end }}
     {{ with $json }}
       {{/* video -- to come */}}
