@@ -1,6 +1,7 @@
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
 {{ $handleInst := "" }}
+{{ $imageCount := 0 }}
 {{ $id := .Get 1 }}
 {{ $urlPre := print "https://" $masIns "/api/v1/statuses/" }}
 {{ $json := getJSON $urlPre $id }}
@@ -39,21 +40,35 @@
     <p class="tweet-body">
       {{ $json.content | safeHTML }}
     </p>
-    {{ if isset $json "media_attachments" }}
-      {{ $media_count := len $json.media_attachments }}
-      <div class="tweet-img-grid-{{ $media_count }}">
-        {{ range $media := $json.media_attachments }}
+    {{ with $json.media_attachments }}
+      {{ range $media_attachments := . }}
+        {{ if eq $media_attachments.type "image" }}
+          {{ $imageCount = (add ($imageCount) 1) }}
+        {{ end }}
+      {{ end }}
+      <div class="tweet-img-grid-{{ $imageCount }}">
+      {{ range $media_attachments := . }}
+        {{ if eq $media_attachments.type "image" }}
           <img
-            src="{{ $media.url }}"
-            alt="Image from toot {{ $json.id }}"
+            src="{{ $media_attachments.url }}"
+            alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
             class="tweet-media-img"
             loading="lazy"
           />
         {{ end }}
-    </div>
-    {{ end }}
-    {{ with $json }}
-      {{/* video -- to come */}}
+      {{ end }}
+      {{ range $media_attachments := . }}
+        {{ if eq $media_attachments.type "video" }}
+          <div class="ctr tweet-video-wrapper">
+            <video muted playsinline controls class="ctr tweet-media-img">
+              <source
+                src="{{ $media_attachments.url }}"
+              >
+              <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+            </video>
+          </div>
+        {{ end }}
+      {{ end }}
     {{ end }}
     <div class="tweet-footer">
       <a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="tweet-date twitterExt" target="_blank" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>

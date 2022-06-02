@@ -16,3 +16,5 @@ Text begins here.
 {{< stoot "mastodon.technology" "108363758238065126" >}}
 
 {{< stoot "fosstodon.org" "108403876466493634" >}}
+
+{{< stoot "mastodon.online" "108405454964046877" >}}
