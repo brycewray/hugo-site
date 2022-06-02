@@ -177,13 +177,24 @@ $tc-padding: 1em;
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.tweet-poll-ul {
-  list-style-type: none;
-  padding-left: 0.5em;
-  margin-left: 0;
-  li {
-    // font-size: var.$pokey;
-    line-height: 1.5;
-    margin: 0;
+.tweet-poll {
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 3.5em 0.25fr 1fr;
+    grid-gap: 1em;
+    line-height: 1;
+  }
+  &-count {
+    grid-column: 1;
+    text-align: right;
+  }
+  &-meter {
+    grid-column: 2;
+    meter {
+      width: 100%;
+    }
+  }
+  &-title {
+    grid-column: 3;
   }
 }

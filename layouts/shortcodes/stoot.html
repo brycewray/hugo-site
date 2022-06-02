@@ -4,8 +4,8 @@
 {{ $imageCount := 0 }}
 {{ $votesCount := 0 }}
 {{ $id := .Get 1 }}
-{{ $urlPre := print "https://" $masIns "/api/v1/statuses/" }}
-{{ $json := getJSON $urlPre $id }}
+{{ $urlToGet := print "https://" $masIns "/api/v1/statuses/" $id }}
+{{ $json := getJSON $urlToGet }}
 {{ $jsonHolder := $json }}{{/* Being safe */}}
 
 {{ if isset $json "account" }}
@@ -80,14 +80,24 @@
     {{ with $json.poll }}
       {{ $poll := . }}
       {{ with $poll.options }}
-        <ul class="tweet-poll-ul">
         {{ range $pollOptions := . }}
-          <li><strong>{{ $pollOptions.votes_count }}</strong> &mdash; {{ $pollOptions.title }}</li>
+          {{ $votesCount = add $votesCount  $pollOptions.votes_count }}
         {{ end }}
-        </ul>
+        <div class="tweet-poll-wrapper">
+          {{ range $pollOptions := . }}
+            <div class="tweet-poll-count">
+              <strong>{{ (mul 100 (div $pollOptions.votes_count $votesCount)) | lang.FormatPercent 1 }}</strong>
+            </div>
+            <div class="tweet-poll-meter">
+              <meter id="vote-count" max="{{ $votesCount }}" value="{{ $pollOptions.votes_count }}"></meter>
+            </div>
+            <div class="tweet-poll-title">{{ $pollOptions.title }}</div>
+          {{ end }}
+        </div>
+        <p class="legal">{{ $votesCount }} votes</p>
       {{ end }}
     {{ end }}
-  <div class="tweet-footer">
+    <div class="tweet-footer">
       <a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="tweet-date twitterExt" target="_blank" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
     </div>
   </blockquote>
