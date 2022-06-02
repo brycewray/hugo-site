@@ -17,7 +17,11 @@
   <blockquote class="tweet-card" cite="{{ $tootLink }}">
     <div class="tweet-header">
       <a class="tweet-profile twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">
-        <img src="{{ $json.account.avatar }}" alt="Mastodon avatar for {{ $handleInst }}" loading="lazy" />
+        <img
+          src="{{ $json.account.avatar }}"
+          alt="Mastodon avatar for {{ $handleInst }}"
+          loading="lazy"
+        />
       </a>
       <div class="tweet-author">
         <a class="tweet-author-name twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">{{ $json.account.display_name }}</a>
@@ -58,9 +62,7 @@
         {{ if eq $media_attachments.type "video" }}
           <div class="ctr tweet-video-wrapper">
             <video muted playsinline controls class="ctr tweet-media-img">
-              <source
-                src="{{ $media_attachments.url }}"
-              >
+              <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
           </div>
@@ -68,9 +70,7 @@
         {{ if eq $media_attachments.type "gifv" }}
           <div class="ctr tweet-video-wrapper">
             <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
-              <source
-                src="{{ $media_attachments.url }}"
-              >
+              <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
           </div>
