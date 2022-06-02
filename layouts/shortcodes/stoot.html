@@ -57,10 +57,30 @@
           />
         {{ end }}
       {{ end }}
+      </div>
+      {{/*
+        N.B.:
+        The above results in an empty, no-height div
+        when there's no image but there **is**
+        at least one item in `$media_attachments`.
+        Unfortunately, it seems to be the only way
+        to accomplish this. Not a good HTML practice,
+        but gets the job done.
+      */}}
       {{ range $media_attachments := . }}
         {{ if eq $media_attachments.type "video" }}
           <div class="ctr tweet-video-wrapper">
             <video muted playsinline controls class="ctr tweet-media-img">
+              <source
+                src="{{ $media_attachments.url }}"
+              >
+              <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+            </video>
+          </div>
+        {{ end }}
+        {{ if eq $media_attachments.type "gifv" }}
+          <div class="ctr tweet-video-wrapper">
+            <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
               <source
                 src="{{ $media_attachments.url }}"
               >
