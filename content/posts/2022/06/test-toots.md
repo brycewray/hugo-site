@@ -1,10 +1,10 @@
 ---
-title: "TITLE TO COME"
+title: "KEEP THIS AS DRAFT WHEN PUSHING!!!"
 description: "DESCRIPTION TO COME."
 author: Bryce Wray
 date: 2022-06-01T13:52:09-05:00
 #lastmod:
-draft: true
+#draft: true
 #initTextEditor: **FILL IN**
 discussionId: "202x-xx-test-toots"
 ---
