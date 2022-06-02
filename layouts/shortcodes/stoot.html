@@ -2,24 +2,11 @@
 {{ $tootLink := "" }}
 {{ $handleInst := "" }}
 {{ $imageCount := 0 }}
+{{ $votesCount := 0 }}
 {{ $id := .Get 1 }}
 {{ $urlPre := print "https://" $masIns "/api/v1/statuses/" }}
 {{ $json := getJSON $urlPre $id }}
 {{ $jsonHolder := $json }}{{/* Being safe */}}
-
-
-{{ if isset $json "mentions" }}
-  {{/* to come */}}
-{{ end }}
-{{ if isset $json "tags" }}
-  {{/* to come */}}
-{{ end }}
-{{ if isset $json "media_attachments" }}
-  {{/* to come */}}
-{{ end }}
-{{ if isset $json "url" }}
-  {{/* to come */}}
-{{ end }}
 
 {{ if isset $json "account" }}
   {{ $tootLink = print "https://" $masIns "@" $json.account.acct "/status/" $id }}
@@ -90,7 +77,17 @@
         {{ end }}
       {{ end }}
     {{ end }}
-    <div class="tweet-footer">
+    {{ with $json.poll }}
+      {{ $poll := . }}
+      {{ with $poll.options }}
+        <ul class="tweet-poll-ul">
+        {{ range $pollOptions := . }}
+          <li><strong>{{ $pollOptions.votes_count }}</strong> &mdash; {{ $pollOptions.title }}</li>
+        {{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+  <div class="tweet-footer">
       <a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="tweet-date twitterExt" target="_blank" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
     </div>
   </blockquote>

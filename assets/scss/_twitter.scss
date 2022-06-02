@@ -176,3 +176,14 @@ $tc-padding: 1em;
 .tweet-img-grid-4 {
 	grid-template-columns: repeat(2, 1fr);
 }
+
+.tweet-poll-ul {
+  list-style-type: none;
+  padding-left: 0.5em;
+  margin-left: 0;
+  li {
+    // font-size: var.$pokey;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
