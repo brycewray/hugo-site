@@ -25,8 +25,8 @@ Text begins here.
 
 <!-- {{< stoot "mastodon.social" "108407972219696495" >}} -->
 
-{{< stoot "mastodon.social" "100540497858007977" >}}
+<!-- {{< stoot "mastodon.social" "100540497858007977" >}} -->
 
-<!-- {{< stoot "fosstodon.org" "108404043194717948" >}} -->
+{{< stoot "fosstodon.org" "108404043194717948" >}}
 
 <!-- {{< stoot "maly.io" "108408309263779506" >}} -->
