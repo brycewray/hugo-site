@@ -166,6 +166,7 @@ $tc-padding: 1em;
 
 .tweet-img-grid-3 :nth-child(1) {
 	grid-row: 1 / span 2;
+  height: 100%;
 }
 
 .tweet-img-grid-3 :nth-child(1) .tweet-media-img {

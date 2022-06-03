@@ -1,6 +1,7 @@
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
 {{ $handleInst := "" }}
+{{ $mediaMD5 := "" }}
 {{ $imageCount := 0 }}
 {{ $votesCount := 0 }}
 {{ $id := .Get 1 }}
@@ -40,10 +41,16 @@
       <div class="tweet-img-grid-{{ $imageCount }}">
       {{ range $media_attachments := . }}
         {{ if eq $media_attachments.type "image" }}
+          {{ $mediaMD5 = md5 $media_attachments.url }}
+          <style>
+            .img-{{ $mediaMD5 }} {
+              aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+            }
+          </style>
           <img
             src="{{ $media_attachments.url }}"
             alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
-            class="tweet-media-img"
+            class="tweet-media-img img-{{ $mediaMD5 }}"
             loading="lazy"
           />
         {{ end }}
@@ -60,16 +67,28 @@
       */}}
       {{ range $media_attachments := . }}
         {{ if eq $media_attachments.type "video" }}
+          {{ $mediaMD5 = md5 $media_attachments.url }}
+          <style>
+            .img-{{ $mediaMD5 }} {
+              aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+            }
+          </style>
           <div class="ctr tweet-video-wrapper">
-            <video muted playsinline controls class="ctr tweet-media-img">
+            <video muted playsinline controls class="ctr tweet-media-img img-{{ $mediaMD5 }}">
               <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
           </div>
         {{ end }}
         {{ if eq $media_attachments.type "gifv" }}
+          {{ $mediaMD5 = md5 $media_attachments.url }}
+          <style>
+            .img-{{ $mediaMD5 }} {
+              aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+            }
+          </style>
           <div class="ctr tweet-video-wrapper">
-            <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
+            <video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-{{ $mediaMD5 }}">
               <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
