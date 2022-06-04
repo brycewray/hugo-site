@@ -13,7 +13,7 @@ discussionId: "202x-xx-test-toots"
 
 Text begins here.
 
-<!-- {{< stoot "mastodon.technology" "108363758238065126" >}} -->
+{{< stoot "mastodon.technology" "108363758238065126" >}}
 
 <!-- {{< stoot "fosstodon.org" "108403876466493634" >}} -->
 
@@ -27,6 +27,10 @@ Text begins here.
 
 <!-- {{< stoot "mastodon.social" "100540497858007977" >}} -->
 
-{{< stoot "fosstodon.org" "108404043194717948" >}}
+<!-- {{< stoot "fosstodon.org" "108404043194717948" >}} -->
 
 <!-- {{< stoot "maly.io" "108408309263779506" >}} -->
+
+<!-- {{< stoot "wandering.shop" "108415635388157132" >}} -->
+
+<!-- {{< stoot "mastodon.social" "108417008209410699" >}} -->
