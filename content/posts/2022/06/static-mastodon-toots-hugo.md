@@ -166,6 +166,7 @@ You'll quickly see that I took advantage of the visual similarities between twee
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
 {{ $handleInst := "" }}
+{{ $mediaMD5 := "" }}
 {{ $imageCount := 0 }}
 {{ $votesCount := 0 }}
 {{ $id := .Get 1 }}
@@ -205,12 +206,25 @@ You'll quickly see that I took advantage of the visual similarities between twee
       <div class="tweet-img-grid-{{ $imageCount }}">
       {{ range $media_attachments := . }}
         {{ if eq $media_attachments.type "image" }}
+          {{ $mediaMD5 = md5 $media_attachments.url }}
+          <style>
+            .img-{{ $mediaMD5 }} {
+              aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+            }
+          </style>
           <img
             src="{{ $media_attachments.url }}"
             alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
-            class="tweet-media-img"
+            class="tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"
             loading="lazy"
+            {{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}
           />
+          {{- if $json.sensitive -}}
+            <div class="blur-text">
+              Sensitive content<br />
+              (flagged&nbsp;at&nbsp;origin)
+            </div>
+          {{- end -}}
         {{ end }}
       {{ end }}
       </div>
@@ -225,19 +239,43 @@ You'll quickly see that I took advantage of the visual similarities between twee
       */}}
       {{ range $media_attachments := . }}
         {{ if eq $media_attachments.type "video" }}
+          {{ $mediaMD5 = md5 $media_attachments.url }}
+          <style>
+            .img-{{ $mediaMD5 }} {
+              aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+            }
+          </style>
           <div class="ctr tweet-video-wrapper">
-            <video muted playsinline controls class="ctr tweet-media-img">
+            <video muted playsinline controls class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
               <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
+            {{- if $json.sensitive -}}
+              <div class="blur-text">
+                Sensitive content<br />
+                (flagged&nbsp;at&nbsp;origin)
+              </div>
+            {{- end -}}
           </div>
         {{ end }}
         {{ if eq $media_attachments.type "gifv" }}
+          {{ $mediaMD5 = md5 $media_attachments.url }}
+          <style>
+            .img-{{ $mediaMD5 }} {
+              aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+            }
+          </style>
           <div class="ctr tweet-video-wrapper">
-            <video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
+            <video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}" {{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
               <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
+            {{- if $json.sensitive -}}
+              <div class="blur-text">
+                Sensitive content<br />
+                (flagged&nbsp;at&nbsp;origin)
+              </div>
+            {{- end -}}
           </div>
         {{ end }}
       {{ end }}
@@ -296,6 +334,9 @@ In my opinion, the Mastodon API makes it easier to `GET` certain things, as comp
 Also: if you see the appearance of a *regular* toot embed, I think you'll prefer these.
 
 For those of you who are already Mastodon-savvy, you may have noticed that I didn't delve into Mastodon's "[Content Warning](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#what-does-cw-mean)" and "[Sensitive Content](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#i-just-attached-a-picture-to-my-toot-whats-with-the-new-eye-icon)" tags---mainly because I have no intention of embedding any toots here which would need such things. (If *your* site Goes There, well, just study the API return from toots of this nature and figure out how to add the appropriate loops and variables to the code. That's how I did it, and I'm sure you can, too.) It seems to me that the "Content Warning" tag, in particular, is used excessively---sometimes, simply because (*e.g.*) a toot mentions the hated Twitter by name instead of calling it "Birdsite" (!), rather than because the toot contains material that truly may offend the sensitive. **Still**: if I'm missing something on this aspect, feel free to [set me straight](/contact/).
+
+**Update, 2022-06-04**: Well, actually, someone **did** set me straight, [albeit via Mastodon itself](https://jawns.club/@skyfaller/108415541575257273), and I found the argument sufficiently convincing that I made some changes to the shortcode. Again, **I** have no plan to embed toots with potentially troublesome content here; but, in case you **might** do so and you've decided to use this shortcode, I've now updated it for that use case. Now, any image, animated GIF, or video which is tagged as `sensitive` in the API---presumably because the original toot's author gave it that designation---will appear initially with a blurring effect overlaid with a message, "Sensitive content flagged at origin." If one then clicks/taps the obscured visual content, it pops into full view and covers the message. This behavior is consistent with what I've observed on Mastodon.
+{.yellowBox}
 
 ## Here be dragons, maybe
 
