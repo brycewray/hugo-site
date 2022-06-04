@@ -154,6 +154,7 @@ $tc-padding: 1em;
 	border-radius: $tc-corner-radius;
   display: block;
   // overriding previous
+  position: relative;
 }
 
 .tweet-img-grid-3 {
@@ -176,6 +177,38 @@ $tc-padding: 1em;
 .tweet-img-grid-2,
 .tweet-img-grid-4 {
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.tweet-sens-blur {
+  filter: blur(5rem);
+  position: relative;
+}
+
+.tweet-sens-blur-no {
+  filter: none !important;
+  z-index: 9999 !important;
+  position: relative;
+}
+
+[class^='tweet-img-grid'] {
+  position: relative;
+}
+
+.blur-text {
+  position: absolute;
+  font-weight: bold;
+  text-shadow: 0.125em 0.125em 0.1em var.$black;
+  width: 100%;
+  top: 40%;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.blur-text-no {
+  display: none !important;
+  background-color: black;
 }
 
 .tweet-poll {

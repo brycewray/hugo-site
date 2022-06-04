@@ -50,9 +50,16 @@
           <img
             src="{{ $media_attachments.url }}"
             alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
-            class="tweet-media-img img-{{ $mediaMD5 }}"
+            class="tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"
             loading="lazy"
+            {{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}
           />
+          {{- if $json.sensitive -}}
+            <div class="blur-text">
+              Sensitive content<br />
+              (flagged&nbsp;at&nbsp;origin)
+            </div>
+          {{- end -}}
         {{ end }}
       {{ end }}
       </div>
@@ -74,10 +81,16 @@
             }
           </style>
           <div class="ctr tweet-video-wrapper">
-            <video muted playsinline controls class="ctr tweet-media-img img-{{ $mediaMD5 }}">
+            <video muted playsinline controls class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
               <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
+            {{- if $json.sensitive -}}
+              <div class="blur-text">
+                Sensitive content<br />
+                (flagged&nbsp;at&nbsp;origin)
+              </div>
+            {{- end -}}
           </div>
         {{ end }}
         {{ if eq $media_attachments.type "gifv" }}
@@ -88,10 +101,16 @@
             }
           </style>
           <div class="ctr tweet-video-wrapper">
-            <video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-{{ $mediaMD5 }}">
+            <video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}" {{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
               <source src="{{ $media_attachments.url }}">
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
+            {{- if $json.sensitive -}}
+              <div class="blur-text">
+                Sensitive content<br />
+                (flagged&nbsp;at&nbsp;origin)
+              </div>
+            {{- end -}}
           </div>
         {{ end }}
       {{ end }}
