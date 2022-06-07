@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 <strong class="red">Update, 2022-05-24</strong>: I am no longer using the method described herein, due to production-side problems I encountered with the site's default hosting provider, [Cloudflare Pages](https://pages.cloudflare.com) (although it worked fine with [Vercel](https://vercel.com)). I'll explain further in a [future post](/posts/2022/05/using-dart-sass-hugo-back-to-node/).\
 \

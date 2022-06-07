@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@o5ky?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Oscar Sutton</a>; <a href="https://unsplash.com/s/photos/fast-speed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Perhaps by now you've read how I [moved the site](/posts/2020/07/goodbye-hello-part-2/) back to [Netlify](https://netlify.com), its long-time home, following the [initial move](/posts/2020/07/goodbye-hello/) to [Vercel](https://vercel.com). If so, you know it was largely a sentimental decision, born out of my having missed being a part, even if a small one, of the Netlify community.
 

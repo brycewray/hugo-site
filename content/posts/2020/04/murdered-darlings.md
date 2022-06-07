@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Arcaion-2057886/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Henryk Niestrój</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Friends, we are gathered here on a solemn occasion. But, before I get to that, allow me to flesh out the title's background.
 

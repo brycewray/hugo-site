@@ -17,7 +17,7 @@ featured_image_caption: |
 **Recommendation**: While I very much appreciate your stopping by to read this, I **strongly** recommend that, instead, you check out [Aleksandr Hovhannisyan](https://github.com/AleksandrHovhannisyan)'s **far** superior article, "[Lazily Loading Images with the 11ty Image Plugin](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-lazy-loading/)."
 {.yellowBox}
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 It's been about a year since the first release of [Eleventy](https://www.11ty.dev)'s official image-processing plugin, [Eleventy Image](https://www.11ty.dev/docs/plugins/image/), but only in the last day or so have I given any serious thought to using it.
 

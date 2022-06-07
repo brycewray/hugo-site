@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/YouComMedia-907282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">YouComMedia</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 In case you haven't yet seen "[Transformed](/posts/2020/07/transformed/)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 

@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 **Update, 2020-08-05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)*
 {.yellowBox}

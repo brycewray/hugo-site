@@ -14,7 +14,7 @@ featured_image_alt: "Nunjucks template file displayed in Visual Studio Code"
 #featured_image_caption: This was my own screen capture
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 As even a casual perusal of some recent posts to this site could easily make clear, I have become a real fanboy for the [Eleventy](https://11ty.dev) [static site generator (SSG)](https://staticgen.com), which I use to create and maintain the site. It offers a tremendous number of advantages over the competition, and one of those advantages is the simplicity of *templating*.
 

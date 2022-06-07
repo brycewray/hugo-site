@@ -14,7 +14,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Daniele Levis Pelusi</a> via <a href="https://unsplash.com/s/photos/future?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a>; Eleventy and Vite logos from their <a href="https://11ty.dev" target="_blank" rel="noopener">respective</a> <a href="https://vitejs.dev" target="_blank" rel="noopener">websites</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 In the last few days, I've had the pleasure of seeing just how well two of today's hottest names in web development work together.
 

@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@floating_point?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Marko Pekić</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 **Note**: This is Part 3 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2/)), [Hugo](https://gohugo.io) (the subject of this part), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5/), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}

@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/MikeGoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Mike Goad</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Keeping this brief, for once&nbsp;.&nbsp;.&nbsp;.
 

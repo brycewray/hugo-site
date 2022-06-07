@@ -14,7 +14,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@still_loony?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadiia Ploshchenko</a>; <a href="https://unsplash.com/s/photos/wind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 My proclamation in last month’s “[Simplify, simplify (again)](/posts/2022/03/simplify-simplify-again/)” that this website “is on [Hugo](https://gohugo.io) for the foreseeable future” didn’t hold water for long, even given the escape route I left myself in a corresponding footnote:
 

@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/SparrowsHome-4168069/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">SparrowsHome</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) is an amazing way to have a personal or small-business website, especially one built by a [static site generator](https://staticgen.com) (SSG) like the [Eleventy](https://11ty.dev) SSG this site uses.
 

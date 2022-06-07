@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pexels</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on websites should, y'know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I'll explain the typographical choices on _this_ site.
 

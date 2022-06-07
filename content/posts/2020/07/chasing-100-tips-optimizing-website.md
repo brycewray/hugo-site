@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 If you have your own website, chances are you like to make it work better for your visitors and, yes, show up higher in search engine ratings. Let's talk about how you can do that.
 

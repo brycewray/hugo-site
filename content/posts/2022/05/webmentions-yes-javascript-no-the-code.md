@@ -9,7 +9,7 @@ lastmod: 2022-05-29T10:52:00-05:00
 discussionId: "2022-05-webmentions-yes-javascript-no-the-code"
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 <br />
 
 **Note**: This follow-up to "[Webmentions yes, JavaScript no](/posts/2022/05/webmentions-yes-javascript-no)" assumes you've already read that post.

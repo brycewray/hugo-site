@@ -18,7 +18,7 @@ featured_image_caption: |
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/is-astro-ready-for-your-blog-63m).
 {.yellowBox}
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Have you been considering the popular new [Astro](https://astro.build) static site generator (SSG) for maintaining your blog, whether it be a new website or one you'd be converting over from another platform?
 

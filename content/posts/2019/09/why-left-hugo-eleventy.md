@@ -35,7 +35,7 @@ oldComments: |
     </div>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
 

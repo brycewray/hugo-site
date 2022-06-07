@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/DeltaWorks-37465/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Kohji Asakawa</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Pixabay</a>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 The phrase has been around [for about a century](https://grammarist.com/proverb/a-picture-is-worth-a-thousand-words/): "A picture is worth a thousand words."
 

@@ -35,7 +35,7 @@ oldComments: |
     </div>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear---and I've even said as much---that I tend to have a problem avoiding New Shiny Things where tech is concerned.
 

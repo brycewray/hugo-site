@@ -14,7 +14,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/fill-8988/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1069409">Florian Pircher</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1069409">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Consider this a blast from the past, just the not-too-distant past.
 

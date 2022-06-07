@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/422737-422737/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=654962">Hebi B.</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=654962">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Well, wouldn't you know it? My [recent post](/posts/2020/03/back-nunjucks-eleventy-site) notwithstanding, this [Eleventy](https://11ty.dev)-/[webpack](https://webpack.js.org)-based site is now using nothing but [JavaScript-*only*](https://11ty.dev/docs/languages/javascript) [templating](https://11ty.dev/docs/templates). That means .11ty.js template files rather than [.njk](https://11ty.dev/docs/languages/nunjucks) ([Nunjucks](https://mozilla.github.io/nunjucks/)) files.
 

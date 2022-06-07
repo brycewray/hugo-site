@@ -44,7 +44,7 @@ oldComments: |
     </div>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo/), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics]---and quite a few retweets and friendly tweets from Hugo aficionados.
 

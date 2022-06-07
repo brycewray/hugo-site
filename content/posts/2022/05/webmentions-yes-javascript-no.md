@@ -9,7 +9,7 @@ lastmod: 2022-05-29T10:52:00-05:00
 discussionId: "2022-05-webmentions-yes-javascript-no"
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 <br />
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/webmentions-yes-javascript-no-ho6).

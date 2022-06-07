@@ -14,7 +14,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@herrherrmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sebastian Herrmann</a>; <a href="https://unsplash.com/s/photos/map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 If your static website uses [Tailwind CSS](https://tailwindcss.com) and you've been looking for a Tailwind-based, responsive, **zero**-JavaScript navigation menu, you've come to the right place. I'll provide its code in a bit. First, let me provide some background.
 

@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/joslex-2276481/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1277094">Jeff Weese</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1277094">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 Just when I thought the site's "lurch"[^danceRef] among hosts was over with [last week's landing](/posts/2020/09/goodbye-hello-part-4/) at [Render](https://render.com), I tripped on a banana peel whose presence in my path was entirely my own fault.
 

@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Images: <a href="https://gatsbyjs.org">Gatsby</a>; <a href="https://pixabay.com/users/LeoNeoBoy-2404531/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">LeoNeoBoy</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 While stubbornness is by no means always a virtue, it has its moments. What I'll be announcing in this post is proof.
 

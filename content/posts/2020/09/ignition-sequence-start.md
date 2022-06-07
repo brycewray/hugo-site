@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@spacex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">SpaceX</a>; <a href="https://unsplash.com/s/photos/launch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 **Note**: Unlike the [last](/posts/2020/09/normal-persons-guide-static-websites/) [two](/posts/2020/09/normal-persons-guide-static-website-hosting/) posts, this one very definitely is for **only** my fellow web geeks---and, anyway, they're the only folks likely to be using [Firebase Hosting](https://firebase.google.com), I would think.
 {.yellowBox}

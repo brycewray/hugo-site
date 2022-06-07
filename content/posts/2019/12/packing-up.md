@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Images: <a href="https://11ty.dev">Eleventy site</a>; <a href="https://webpack.js.org">webpack site</a>; <a href="https://pixabay.com/users/Skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Rudy and Peter Skitterians</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Pixabay</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 It's that time again, [static site generator](https://staticgen.com) (SSG) nerdiness fans. Yes, that's right, it's time for me to geek out about another change to this site.
 

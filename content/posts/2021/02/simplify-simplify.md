@@ -15,7 +15,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@oxanetruth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oxane Alexandroff</a>; <a href="/s/photos/simplicity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-{{< disclaimer >}}
+{{% disclaimer %}}
 
 > Our life is frittered away by detail. Simplify, simplify.<br />
 > ---[Henry David Thoreau](https://simple.wikiquote.org/wiki/Henry_David_Thoreau).
