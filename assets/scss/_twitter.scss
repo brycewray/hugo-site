@@ -105,6 +105,12 @@ a > .card {
     line-height: 1.4;
     margin-top: 0;
     font-size: var.$pokey;
+    .card-title {
+      color: var.$black;
+      @media screen and (prefers-color-scheme: dark){
+        color: var.$white;
+      }
+    }
   }
 }
 
