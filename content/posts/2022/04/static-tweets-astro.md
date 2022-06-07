@@ -215,7 +215,7 @@ import STweetV2 from '@components/STweetV2.astro'
 
 [^Inspector]: Use your browser's Inspector tool on the displayed tweet to see how I styled it. Of course, you should feel free to handle styling as you see fit.
 
-{{< stweetv2 "1487140202141425673" >}}
+{{< stweet "1487140202141425673" >}}
 
 As was true for my Hugo `stweetv2` shortcode, I wrote this component to add "(UTC)" after the date because, once you use this in production, the remote web server will return the tweet's `created_at` information in whatever time zone the server uses---which almost certainly is [UTC](https://www.timeanddate.com/time/aboututc.html).
 

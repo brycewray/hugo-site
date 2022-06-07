@@ -77,4 +77,4 @@ And there you have it. Using your browser’s Inspector tool on nearly[^1] any i
 
 The official Eleventy Twitter account graciously retweeted my announcement of this post and added the following, which I pass along for your further edification:
 
-{{< stweetv2 "1486347755404640257" >}}
+{{< stweet "1486347755404640257" >}}

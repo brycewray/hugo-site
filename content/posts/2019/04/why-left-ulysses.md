@@ -150,7 +150,7 @@ Yet another nail in the Ulysses sub's coffin.
 
 But it was hard to let go. Even as late as a couple of weeks ago, I found myself posting this on Twitter:
 
-{{< stweetv2 "1114140807764893696" >}}
+{{< stweet "1114140807764893696" >}}
 
 And, almost as if it had gotten the message, Ulysses was good as gold across my devices---until this morning.
 
