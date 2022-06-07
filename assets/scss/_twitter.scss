@@ -296,6 +296,12 @@ a > .card {
       @media screen and (prefers-color-scheme: dark) {
         color: var.$gray-2-dark-mode;
       }
+      &:hover {
+        color: var.$darkblue;
+        @media screen and (prefers-color-scheme: dark) {
+          color: var.$blueLight;
+        }
+      }
     }
   }
 }
