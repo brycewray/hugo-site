@@ -19,6 +19,9 @@ featured_image_caption: |
 **Update, 2022-04-12**: Based on [work](https://github.com/astro-community/astro-embed) by the [Astro](https://astro.build) team, I have enhanced the shortcode described within (and the accompanying styling) so it also can handle animations embedded in tweets. Unfortunately, this isn't possible with the one described in the [follow-up](/posts/2022/02/static-tweets-eleventy-hugo-part-2) to this post, as I explain in an update therein.
 {.yellowBox}
 
+**Update, 2022-06-07**: I have now [substantially improved](/posts/2022/06/static-tweets-hugo-update/) upon the [Hugo](https://gohugo.io) shortcode described in this post, but you still may find valuable background information in what follows here.
+{.yellowBox}
+
 You know it’s important to respect, and protect, the privacy of your website’s visitors. However, serving them embedded social media content can complicate your good intentions. The good news is that my two favorite [static site generators](https://jamstack.org/generators/) (SSGs), [Eleventy](https://11ty.dev/) and [Hugo](https://gohugo.io/), will help you fix that.
 
 In the [first item](/posts/2021/09/gems-in-rough-09/#privacy-respecting-youtubeembeds) in last September’s “[Gems in the rough #9](/posts/2021/09/gems-in-rough-09/),” I provided a description of a privacy-friendly way to embed YouTube videos in your Eleventy- or Hugo-powered site.[^1] Now, in this post, let’s talk about how to treat tweets (?) similarly.
