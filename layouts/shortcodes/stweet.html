@@ -12,6 +12,7 @@
 {{ $id := .Get 0 }}
 {{ $json := getJSON $urlPre $id }}
 {{ $text := .Page.RenderString $json.text }}
+{{ $QT_text := "" }}
 
 {{ if isset $json "entities" }}
   {{ if isset $json.entities "user_mentions"  }}
@@ -32,6 +33,17 @@
   {{ if isset $json.entities "urls"  }}
     {{ range $url := $json.entities.urls}}
       {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' rel='noopener' class='twitterExt'>%s</a>" $url.url $url.display_url) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if isset $json "quoted_tweet" }}
+  {{ $QT_text = $json.quoted_tweet.text }}
+  {{ if isset $json.quoted_tweet "entities" }}
+    {{ if isset $json.quoted_tweet.entities "hashtags" }}
+      {{ range $QT_urls := $json.quoted_tweet.entities.urls }}
+        {{ $QT_text = replace $QT_text $QT_urls.url $QT_urls.display_url }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -74,6 +86,15 @@
               <p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
             </video>
           {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+    {{ if isset $json "quoted_tweet" }}
+      {{ with $json.quoted_tweet }}
+        {{ $quoted_tweet := .}}
+        <div class="tweet-quoted-tweet">
+          <p class="pokey tweet-quoted-tweet-head"><img class="tweet-quoted-tweet-profile-image" src="{{ $quoted_tweet.user.profile_image_url_https }}" />&nbsp;<strong>{{ $quoted_tweet.user.name }}</strong> @{{ $quoted_tweet.user.screen_name }} &bull; {{ dateFormat "January 2, 2006" $quoted_tweet.created_at }} <span class="legal">(UTC)</span></p>
+          <p>{{ $.Page.RenderString $QT_text }}</p>
         </div>
       {{ end }}
     {{ end }}

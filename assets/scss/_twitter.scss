@@ -232,3 +232,26 @@ $tc-padding: 1em;
     grid-column: 3;
   }
 }
+
+.tweet-quoted-tweet {
+  border: 1px solid var.$gray-1;
+  @media screen and (prefers-color-scheme: dark) {
+    border: 1px solid var.$gray-2-dark-mode;
+  }
+  border-radius: 12px;
+  padding: 1em 1em 0.5em 1em;
+  p {
+    font-size: var.$pokey;
+    margin: 0 0 0.5em;
+    line-height: 1.4;
+    .tweet-quoted-tweet-profile-image {
+      border-radius: 9999px;
+      width: 18px;
+      height: auto;
+      display: inline;
+    }
+  }
+  p.tweet-quoted-tweet-head {
+    margin-bottom: 0.25em;
+  }
+}
