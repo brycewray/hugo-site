@@ -74,7 +74,39 @@ $tc-padding: 1em;
   aspect-ratio: 1;
   object-fit: cover;
 }
+
+.tweet-card-img {
+  // border-radius: 12px;
+  border-bottom: 1px solid var.$gray-2;
+  @media screen and (prefers-color-scheme: dark) {
+    border: 1px solid var.$gray-2-dark-mode;
+  }
+}
+
 // ==== END, rounded image "attachment"
+
+a > .card {
+  color: var.$gray-1;
+  @media screen and (prefers-color-scheme: dark) {
+    color: var.$gray-2-dark-mode;
+  }
+}
+
+.card {
+  overflow: hidden;
+  // background-color: yellow;
+  border-radius: 12px;
+  border: 1px solid var.$gray-2;
+  @media screen and (prefers-color-scheme: dark) {
+    border: 1px solid var.$gray-2-dark-mode;
+  }
+  p {
+    padding: 0.5em 1em 1em;
+    line-height: 1.4;
+    margin-top: 0;
+    font-size: var.$pokey;
+  }
+}
 
 
 .tweet-header {
@@ -253,5 +285,11 @@ $tc-padding: 1em;
   }
   p.tweet-quoted-tweet-head {
     margin-bottom: 0.25em;
+    a {
+      color: var.$gray-1;
+      @media screen and (prefers-color-scheme: dark) {
+        color: var.$gray-2-dark-mode;
+      }
+    }
   }
 }
