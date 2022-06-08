@@ -62,7 +62,7 @@ services:
 caches:
   getjson:
     dir: :resourceDir/json
-    maxAge: 0
+    maxAge: 10
 
 minify:
   tdewolff:
