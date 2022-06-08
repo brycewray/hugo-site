@@ -36,13 +36,6 @@
       {{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' rel='noopener' class='twitterExt'>%s</a>" $url.url $url.display_url) }}
     {{ end }}
   {{ end }}
-  {{ if isset $json "card" }}
-    {{ if isset $json.entities "urls" }}
-      {{ range $url := $json.entities.urls}}
-        {{ $text = replace $text $url.display_url "" }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
 {{ end }}
 
 {{ if isset $json "quoted_tweet" }}
