@@ -1,5 +1,6 @@
 public
 resources/_gen
+resources/json
 hugo_stats.json
 node_modules
 .env
