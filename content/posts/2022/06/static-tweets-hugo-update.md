@@ -1,11 +1,16 @@
 ---
-title: "Static tweets in Hugo: an update"
+title: "Static tweets in Hugo: an update"
 description: "Now!! With new features!! This Hugo shortcode allows you to embed tweets with link “cards.”"
 author: Bryce Wray
 date: 2022-06-07T15:46:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---
+
+**Further info, 2022-06-08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
+{.yellowBox}
+
+<br />
 
 **Note**: You may find it useful to see my [three](/posts/2022/02/static-tweets-eleventy-hugo/) [earlier](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) [posts](/posts/2022/04/static-tweets-astro/) about how to perform fully static embeds of tweets, but that's not necessary.
 {.yellowBox}
@@ -165,3 +170,15 @@ So, with that, friends and neighbors, here's the code.
   </div>
 </blockquote>
 ```
+
+## Important note, 2022-06-08
+
+I later found that, due to the way Twitter handles its asset-caching, you'll need to make a cache-related `maxAge` setting in your Hugo config file. The following is from mine, which is a YAML file:
+
+```yaml
+caches:
+  getjson:
+    maxAge: 10
+```
+
+The default `maxAge
