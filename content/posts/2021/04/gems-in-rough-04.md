@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "Gems in the rough #4"
 description: "Here a drib, there a drab, everywhere a drib-drab of web dev miscellany."
 author: Bryce Wray

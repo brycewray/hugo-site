@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "Freeing your folders"
 description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."
 author: Bryce Wray

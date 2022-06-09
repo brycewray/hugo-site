@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "Fast but flawed"
 description: "Two more static website hosts to consider (maybe)."
 author: Bryce Wray

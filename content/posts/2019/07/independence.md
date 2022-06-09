@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "Independence"
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray

@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "Gems in the rough #8"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray

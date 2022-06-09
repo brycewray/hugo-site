@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "Boy, oh, grandboy"
 description: "A few words about the arrival of grandchild #2."
 author: Bryce Wray

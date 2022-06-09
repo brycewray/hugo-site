@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "Gems in the rough #7"
 description: "Static site generator fans, here’s another (sorta) brief set of goodies for your edification."
 author: Bryce Wray

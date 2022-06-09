@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- img
 title: "So much for heroes"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
