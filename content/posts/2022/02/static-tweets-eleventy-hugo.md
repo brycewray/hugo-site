@@ -3,6 +3,7 @@
 tags:
 - post
 - social
+- code
 title: "Static tweets in Eleventy and Hugo"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray

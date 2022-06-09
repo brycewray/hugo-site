@@ -3,6 +3,7 @@
 tags:
 - post
 - social
+- code
 title: "Fetching remote stuff with Hugo 0.90+"
 description: "It’s a marriage made in heaven: the Cloudinary free tier and Hugo Pipes’ new ability to grab remote items."
 author: Bryce Wray

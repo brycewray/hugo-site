@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Ignition sequence start"
 description: "GitHub Actions to deploy to Firebase Hosting."
 author: Bryce Wray

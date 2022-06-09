@@ -3,6 +3,7 @@
 tags:
 - post
 - social
+- code
 title: "Old dog learns old trick"
 description: "A major “Do’h” moment in the never-ending battle against Internet Explorer."
 author: Bryce Wray

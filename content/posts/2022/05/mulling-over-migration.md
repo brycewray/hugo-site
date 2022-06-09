@@ -1,6 +1,7 @@
 ---
 tags:
 - post
+- code
 title: "Mulling over migration?"
 description: "Some tips about moving your website to Astro."
 author: Bryce Wray

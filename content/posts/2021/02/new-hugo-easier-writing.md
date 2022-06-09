@@ -3,6 +3,7 @@
 tags:
 - post
 - img
+- code
 title: "New in Hugo: easier writing"
 description: "How Hugo 0.81.0 lets me do more in Markdown."
 author: Bryce Wray

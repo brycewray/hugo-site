@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Publish or perish"
 description: "In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free."
 author: Bryce Wray

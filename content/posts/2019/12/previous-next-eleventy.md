@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "“Previous” and “next” in Eleventy"
 description: "A brief description of code that easily enables this oft-requested feature."
 author: Bryce Wray

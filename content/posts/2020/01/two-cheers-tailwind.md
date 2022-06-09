@@ -3,6 +3,7 @@
 tags:
 - post
 - social
+- code
 title: "Two cheers for Tailwind"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray

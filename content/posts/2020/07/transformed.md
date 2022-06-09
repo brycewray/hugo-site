@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Transformed"
 description: "The move to Cloudinary."
 author: Bryce Wray

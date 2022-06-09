@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Mark it down"
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
 author: Bryce Wray

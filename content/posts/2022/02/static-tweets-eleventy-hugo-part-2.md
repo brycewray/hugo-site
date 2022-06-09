@@ -3,6 +3,7 @@
 tags:
 - post
 - social
+- code
 title: "Static tweets in Eleventy and Hugo: Part 2"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray

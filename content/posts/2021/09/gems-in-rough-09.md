@@ -3,6 +3,7 @@
 tags:
 - post
 - YouTube
+- code
 title: "Gems in the rough #9"
 description: "Better video embeds, CFP improvements, “passtro” on Astro."
 author: Bryce Wray

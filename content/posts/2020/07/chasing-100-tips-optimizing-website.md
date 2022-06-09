@@ -3,6 +3,7 @@
 tags:
 - post
 - img
+- code
 title: "Chasing 100: tips for optimizing your website"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray

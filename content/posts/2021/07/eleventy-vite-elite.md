@@ -3,6 +3,7 @@
 tags:
 - post
 - img
+- code
 title: "Eleventy plus Vite = elite"
 description: "Re-bundling, but without the pain of webpack."
 author: Bryce Wray

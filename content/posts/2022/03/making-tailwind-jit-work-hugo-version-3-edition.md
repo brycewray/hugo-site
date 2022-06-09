@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Making Tailwind JIT work with Hugo, the Version 3 edition"
 description: "A Hugo fix for Tailwind CSS v.3—with a surprise bonus."
 author: Bryce Wray

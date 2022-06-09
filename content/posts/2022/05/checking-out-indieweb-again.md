@@ -3,6 +3,7 @@ title: "Checking out the IndieWeb again"
 tags:
 - post
 - social
+- code
 description: "While not entirely sure I’m holding my mouth right, I’m giving webmentions another try."
 author: Bryce Wray
 date: 2022-05-22T15:02:00-05:00
