@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Through with 2020"
 description: "What I talked about while the world burned."
 author: Bryce Wray

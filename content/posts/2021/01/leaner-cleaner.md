@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Leaner and cleaner"
 description: "After I remind myself of this site’s original, spartan appearance, changes result."
 author: Bryce Wray

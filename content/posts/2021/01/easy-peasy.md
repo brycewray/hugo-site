@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Easy-peasy"
 description: "A theoretical conversation about building static websites."
 author: Bryce Wray

@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Trying Mark Text for website content"
 description: "A free, cross-platform text editor for (maybe) managing your site’s content."
 author: Bryce Wray

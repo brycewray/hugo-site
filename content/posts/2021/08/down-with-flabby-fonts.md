@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Down with flabby fonts"
 description: "How to subset large web font files to improve your site’s performance."
 author: Bryce Wray

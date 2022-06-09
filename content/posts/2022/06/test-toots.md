@@ -1,4 +1,7 @@
 ---
+tags:
+- post
+- social
 title: "KEEP THIS AS DRAFT WHEN PUSHING!!!"
 description: "DESCRIPTION TO COME."
 author: Bryce Wray

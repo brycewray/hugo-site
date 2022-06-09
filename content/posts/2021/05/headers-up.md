@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Headers up"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray

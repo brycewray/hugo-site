@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Gems in the rough #3"
 description: "The latest installment of unrequested advice about tinkering with websites."
 author: Bryce Wray

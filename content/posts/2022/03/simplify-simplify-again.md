@@ -1,4 +1,6 @@
 ---
+tags:
+- post
 title: "Simplify, simplify (again)"
 description: "As I was saying over a year ago before I was so rudely interrupted by life . . ."
 author: Bryce Wray

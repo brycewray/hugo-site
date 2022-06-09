@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Eleventy plus Vite = elite"
 description: "Re-bundling, but without the pain of webpack."
 author: Bryce Wray

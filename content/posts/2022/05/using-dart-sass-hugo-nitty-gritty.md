@@ -1,4 +1,6 @@
 ---
+tags:
+- post
 title: "Using Dart Sass with Hugo: the nitty-gritty"
 description: "We go under the hood with the installation process for the Embedded Dart Sass binary."
 date: 2022-05-22T10:06:00-05:00

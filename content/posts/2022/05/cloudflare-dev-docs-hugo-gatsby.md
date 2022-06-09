@@ -1,4 +1,6 @@
 ---
+tags:
+- post
 title: "Cloudflare dev docs and the switch from Gatsby back to Hugo"
 description: "A few choice paragraphs from a blog post I saw today."
 author: Bryce Wray

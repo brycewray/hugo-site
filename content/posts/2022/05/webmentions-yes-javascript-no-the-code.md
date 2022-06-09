@@ -1,4 +1,6 @@
 ---
+tags:
+- post
 title: "Webmentions yes, JavaScript no: the code"
 description: "A walkthrough of this site’s all-Hugo, no-JS implementation of webmentions."
 author: Bryce Wray

@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "“New Outlook” ends an old aggravation for Mac users"
 description: "For Mac users who must use Outlook, its Electron-based version brings some long-overdue feature parity."
 author: Bryce Wray

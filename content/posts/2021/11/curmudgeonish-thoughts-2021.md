@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Curmudgeonish thoughts for 2021"
 description: "Another year, another grievances list."
 author: Bryce Wray

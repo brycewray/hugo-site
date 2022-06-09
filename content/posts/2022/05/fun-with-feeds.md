@@ -1,4 +1,6 @@
 ---
+tags:
+- post
 title: "Fun with feeds"
 description: "Cut through the clutter by following various feeds."
 author: Bryce Wray

@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Let all your devices see your site"
 description: "How to make “localhost” slightly less local."
 author: Bryce Wray

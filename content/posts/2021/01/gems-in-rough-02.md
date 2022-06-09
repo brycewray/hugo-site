@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Gems in the rough #2"
 description: "More geeky hints for SSG fans."
 author: Bryce Wray

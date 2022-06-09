@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Using Eleventy’s official image plugin"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray

@@ -1,4 +1,6 @@
 ---
+tags:
+- post
 title: "The IndieWeb experiment ends"
 description: "My timing wasn’t the greatest."
 author: Bryce Wray

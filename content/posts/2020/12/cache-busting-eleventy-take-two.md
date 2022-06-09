@@ -1,5 +1,7 @@
 ---
 #layout: singlepost
+tags:
+- post
 title: "Cache-busting in Eleventy, take two"
 description: "This time, a solution that really (?) works."
 author: Bryce Wray
