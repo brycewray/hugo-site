@@ -1,4 +1,6 @@
 ---
+tags:
+- post
 title: "TITLE TO COME"
 description: "DESCRIPTION TO COME."
 author: Bryce Wray
