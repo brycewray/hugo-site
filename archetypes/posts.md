@@ -1,6 +1,7 @@
 ---
 tags:
 - post
+# other `tags` options besides `post`: img, YouTube, social, code
 title: "TITLE TO COME"
 description: "DESCRIPTION TO COME."
 author: Bryce Wray
