@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "YouTube TV and the RSNs flap"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray

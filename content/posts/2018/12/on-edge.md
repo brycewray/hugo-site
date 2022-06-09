@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "On Edge"
 description: "Microsoft’s decision about Edge is important on many levels."
 author: Bryce Wray

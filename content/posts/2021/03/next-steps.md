@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Next steps?"
 description: "Some things I’ve learned while tinkering with Next.js."
 author: Bryce Wray

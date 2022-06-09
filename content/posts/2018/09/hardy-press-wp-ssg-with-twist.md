@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "HardyPress: WP + SSG with a twist"
 description: Here’s a brief look at an interesting way to have your WordPress cake and eat your SSG site, too—or something like that.
 author: Bryce Wray

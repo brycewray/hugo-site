@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Eleventy and Hugo: comparing and contrasting"
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
@@ -47,8 +47,9 @@ You write your main content in [Markdown](https://daringfireball.net/projects/ma
 
 ```md
 ---
-layout: layouts/posts/singlepostherofit.njk
-tags: post
+#layout: layouts/posts/singlepostherofit.njk
+tags:
+- post
 title: "Two, but not terrible"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray

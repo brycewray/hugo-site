@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Tailwind-to-head with Hugo Pipes"
 description: "If your website draws that “render-blocking resource” gripe during tests, here’s one method for fighting it."
 author: Bryce Wray

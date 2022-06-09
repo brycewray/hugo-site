@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Using PostCSS for cache-busting in Eleventy"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray

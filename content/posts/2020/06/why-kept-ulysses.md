@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Why I kept Ulysses"
 description: "Renewing the subscription for another year."
 author: Bryce Wray

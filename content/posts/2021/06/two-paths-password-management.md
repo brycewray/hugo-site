@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Two paths to password management"
 description: "Ways to practice superior cybersecurity."
 author: Bryce Wray

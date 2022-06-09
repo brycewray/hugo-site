@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Mixed nuts • September, 2020"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray

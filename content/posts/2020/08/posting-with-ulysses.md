@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Posting with Ulysses"
 description: "Still a nicer editor, but not truly SSG-friendly."
 author: Bryce Wray

@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Two, but not terrible"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray

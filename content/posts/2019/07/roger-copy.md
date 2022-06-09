@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Roger, Copy"
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray

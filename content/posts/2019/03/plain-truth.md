@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Plain truth"
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray

@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Packing up"
 description: "Eleventy and webpack are a powerful pair."
 author: Bryce Wray

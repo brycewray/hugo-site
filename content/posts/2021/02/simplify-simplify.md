@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Simplify, simplify"
 description: "A Thoreau-ly fine website, or the result of choosing between simplicity and FOMO."
 author: Bryce Wray

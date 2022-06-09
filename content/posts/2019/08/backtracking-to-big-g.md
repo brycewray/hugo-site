@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 tags:
 - post
 - social

@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Beginner’s luck: an update"
 description: "The inventory has grown, so here’s what I currently offer for those interested in Eleventy and Hugo."
 author: Bryce Wray

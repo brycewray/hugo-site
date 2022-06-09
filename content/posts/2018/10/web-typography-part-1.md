@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Readable web text, pretty please"
 description: "Part 1 of a two-part series on web typography."
 author: Bryce Wray

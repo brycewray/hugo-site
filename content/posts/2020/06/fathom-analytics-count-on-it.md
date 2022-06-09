@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Fathom Analytics: count on it"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray

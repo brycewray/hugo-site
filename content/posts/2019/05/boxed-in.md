@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Boxed in?"
 description: "A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general."
 author: Bryce Wray

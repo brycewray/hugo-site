@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Conversation piece"
 description: "Commenting options for your static website."
 author: Bryce Wray

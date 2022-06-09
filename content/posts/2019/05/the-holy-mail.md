@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "The Holy Mail"
 description: "The way I sort-of cured the email client dance."
 author: Bryce Wray

@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Mixed nuts • February, 2020"
 description: "Another sampling of my random thoughts—lucky you."
 author: Bryce Wray

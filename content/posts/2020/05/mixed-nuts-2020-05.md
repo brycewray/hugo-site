@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Mixed nuts • May, 2020"
 description: "Updates, uptakes, follow-ups, and foul-ups—not necessarily in that order."
 author: Bryce Wray

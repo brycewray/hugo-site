@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Why I finally settled on Ulysses"
 description: "How I came to realize why one particular creative writing app was a better fit for me as compared to its chief rival."
 author: Bryce Wray

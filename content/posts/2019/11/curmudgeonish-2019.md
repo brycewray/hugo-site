@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Some curmudgeonish thoughts, 2019 edition"
 description: "Here’s a follow-up on last year’s list of items that stick in my craw."
 author: Bryce Wray

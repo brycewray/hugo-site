@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "A stacked deck"
 description: "Part 2 of a two-part series on web typography."
 author: Bryce Wray

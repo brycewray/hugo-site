@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Google Fonts and privacy"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray

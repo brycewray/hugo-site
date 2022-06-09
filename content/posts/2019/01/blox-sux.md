@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Blox sux"
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray

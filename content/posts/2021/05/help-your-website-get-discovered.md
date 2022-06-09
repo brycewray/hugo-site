@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Help your website get discovered"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
@@ -175,7 +175,7 @@ eleventyExcludeFromCollections: true
 
 ```md
 ---
-layout: sitemap
+#layout: sitemap
 title: "Sitemap (HTML form)"
 ---
 
@@ -186,7 +186,7 @@ title: "Sitemap (HTML form)"
 
 ```jinja
 ---
-layout: 'base.njk'
+#layout: 'base.njk'
 ---
 <main>
   <div class="container-narrower sitemapDiv">

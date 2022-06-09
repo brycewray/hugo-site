@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "Hashing out a cache-busting fix for Eleventy"
 description: "Some of the code behind my previous post."
 author: Bryce Wray

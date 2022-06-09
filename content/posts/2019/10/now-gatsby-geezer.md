@@ -1,6 +1,7 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
 title: "Now I’m a Gatsby geezer"
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray

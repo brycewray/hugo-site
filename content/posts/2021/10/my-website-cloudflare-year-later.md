@@ -1,5 +1,5 @@
 ---
-layout: singlepost
+#layout: singlepost
 title: "My website and Cloudflare, a year later"
 description: "It’s perhaps not so much “love/hate” as it is geeky curiosity combined with an old guy’s impatience."
 author: Bryce Wray
