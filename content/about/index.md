@@ -1,5 +1,8 @@
 ---
-layout: singlepost # for Eleventy
+#layout: singlepost
+tags:
+- about
+- img
 type: about
 title: About me
 description: Not a bio (you’d fall asleep), but just some explanatory observations.

@@ -1,5 +1,7 @@
 ---
 # using standard `_default/single.html` layout
+tags:
+- contact
 title: "Want to reach me?"
 description: "Here are several ways to get in contact."
 author: Bryce Wray
