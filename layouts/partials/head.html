@@ -101,17 +101,19 @@
       - thanks, @bep!
     -*/}}
     {{- $css := "" -}}
-    {{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
-    {{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
-    {{- if hugo.IsProduction -}}
-      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
-    {{- else -}}
-      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-      {{/*- Fingerprinting in dev due to Safari weirdness -*/}}
+    {{- $cssBuild := "" -}}
+    {{- $optionsCSS := (dict "transpiler" "dartsass") -}}
+    {{- $optionsCSSFile := merge $optionsCSS (dict "targetPath" "css/index.css") -}}
+    {{- $optionsCSSFileComp := merge $optionsCSSFile (dict "outputStyle" "compressed") -}}
+    {{- $cssBuild = slice (resources.Get "scss/critical.scss") -}}
+    {{- if in .Params.tags "contact" -}}
+      {{- $cssBuild = $cssBuild | append (resources.Get "scss/_billboard.scss") -}}
     {{- end -}}
-    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+    {{- $css := $cssBuild | resources.Concat "scss/css.scss" | resources.ToCSS $optionsCSSFileComp | fingerprint "md5" -}}
+    {{/*- Fingerprinting even in dev, due to Safari weirdness -*/}}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-  {{/* end, CSS/SCSS */}}
+    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+    {{/* end, CSS/SCSS */}}
 
     {{- if hugo.IsProduction -}}
     {{/*- Fathom - beautiful, simple website analytics -*/}}
@@ -128,7 +130,17 @@
         .nScrHidden {
           display: none;
         }
+        .tester {
+          content: "{{ if in .Params.tags "contact" }}It is here{{ else }}Not here{{ end }}"
+        }
       </style>
     </noscript>
 
   </head>
+{{/*
+  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+  {{ $styles := slice (resources.Get "scss/app.scss") }}
+  {{ $styles = $styles | append (resources.Get "scss/pages/_blog.scss") }}
+  {{ $styleoutput := $styles | resources.Concat "scss/styles.scss" | resources.ToCSS $options }}
+  <link type="text/css" href="{{ $styleoutput.RelPermalink }}" rel="stylesheet">
+*/}}
