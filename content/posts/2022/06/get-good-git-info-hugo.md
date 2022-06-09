@@ -1,6 +1,6 @@
 ---
 title: "Get good Git info from Hugo"
-description: "It's easy to fetch and display your Hugo repo’s Git data."
+description: "It’s easy to fetch and display your Hugo repo’s Git data."
 author: Bryce Wray
 date: 2022-06-01T06:47:00-05:00
 #lastmod:
