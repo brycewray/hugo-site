@@ -1,6 +1,8 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
+- social
 title: "Static tweets in Eleventy and Hugo"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray

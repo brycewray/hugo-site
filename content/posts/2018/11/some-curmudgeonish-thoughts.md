@@ -1,6 +1,8 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
+- YouTube
 title: "Some curmudgeonish thoughts"
 description: "“Didja ever notice...?” Yes, I did. And here’s the result."
 author: Bryce Wray

@@ -1,6 +1,8 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
+- social
 title: "Static tweets in Astro"
 description: "A component which properly embeds tweets when you’re using today’s hottest SSG."
 author: Bryce Wray

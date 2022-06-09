@@ -1,6 +1,8 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
+- YouTube
 title: "Taming time-based one-time passwords (TOTPs)"
 description: "A few tips on managing multi-factor authentication—specifically, TOTPs."
 author: Bryce Wray

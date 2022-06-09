@@ -1,6 +1,8 @@
 ---
 layout: singlepost
-tags: post
+tags:
+- post
+- social
 title: "Ahoy, ’Mate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray

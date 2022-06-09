@@ -1,4 +1,7 @@
 ---
+tags:
+- post
+- social
 title: "Simplify, simplify, maybe for real this time"
 description: "The site enters CTCAJW Mode."
 author: Bryce Wray

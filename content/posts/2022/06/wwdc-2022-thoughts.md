@@ -1,4 +1,7 @@
 ---
+tags:
+- post
+- social
 title: "WWDC 2022 thoughts"
 description: "Cheers, “mehs,” and jeers from today’s Keynote at Apple’s latest Worldwide Developers Conference."
 author: Bryce Wray

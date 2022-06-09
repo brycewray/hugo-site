@@ -1,6 +1,8 @@
 ---
 layout: singlepost
-tags: post
+tags:
+- post
+- social
 title: "Why I’m staying with Hugo"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray

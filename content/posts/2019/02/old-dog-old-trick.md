@@ -1,6 +1,8 @@
 ---
 layout: singlepost
-tags: post
+tags:
+- post
+- social
 title: "Old dog learns old trick"
 description: "A major “Do’h” moment in the never-ending battle against Internet Explorer."
 author: Bryce Wray

@@ -1,5 +1,8 @@
 ---
-layout: singlepost
+#layout: singlepost
+tags:
+- post
+- YouTube
 title: "1Password hits the fan"
 description: "An Electron-ic firestorm: a follow-up to my earlier article about password management."
 author: Bryce Wray

@@ -1,6 +1,8 @@
 ---
-layout: singlepost
-tags: post
+#layout: singlepost
+tags:
+- post
+- YouTube
 title: "Coherence and COVID–19" #Non-breaking hyphen there, copied/pasted from https://alignedonline.com/non%E2%80%91breaking-spaces/ since it can't be entered otherwise in text string
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray

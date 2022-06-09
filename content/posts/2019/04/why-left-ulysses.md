@@ -1,5 +1,8 @@
 ---
 layout: singlepost
+tags:
+- post
+- social
 title: "Why I left Ulysses"
 description: "Just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray

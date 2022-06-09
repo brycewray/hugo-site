@@ -1,5 +1,8 @@
 ---
-layout: singlepost
+#layout: singlepost
+tags:
+- post
+- YouTube
 title: "Mixed nuts #10"
 description: "A few things currently on my so-called mind."
 author: Bryce Wray

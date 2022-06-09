@@ -1,4 +1,8 @@
 ---
+tags:
+- post
+- social
+- YouTube
 title: "Static Mastodon toots in Hugo"
 description: "Just like tweet embeds, toot embeds are best when they’re purely static."
 author: Bryce Wray

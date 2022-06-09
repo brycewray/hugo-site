@@ -1,5 +1,8 @@
 ---
 #layout: singlepost
+tags:
+- post
+- social
 title: "Gems in the rough #16"
 description: "Eleventy 2.x (yes, already), trying giscus, another shameless plug."
 author: Bryce Wray

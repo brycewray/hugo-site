@@ -1,6 +1,8 @@
 ---
 layout: singlepost
-tags: post
+tags:
+- post
+- social
 title: "Two cheers for Tailwind"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray

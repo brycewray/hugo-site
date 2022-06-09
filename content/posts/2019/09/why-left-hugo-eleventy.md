@@ -1,6 +1,8 @@
 ---
 layout: singlepost
-tags: post
+tags:
+- post
+- social
 title: "Why I left Hugo for Eleventy"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
