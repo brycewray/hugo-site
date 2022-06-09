@@ -1,22 +1,40 @@
+{{ $Tags := "" }}
 @charset 'utf-8';
 @use 'reset';
 // @use 'fonts_Inter';
 // @use 'fonts_Inter64';
 // @use 'fonts_PublicSans';
 // @use 'variables'; // calling it where needed within files
-@use 'twitter';
-@use 'chroma_native_tweaked';
-// @use 'chroma_rrt';
-// @use 'chroma_monokai_tweaked';
-@use 'chroma_fix-all';
+{{ if .Params.tags }}
+  {{ $Tags = . }}
+  {{ if in $Tags "social" }}
+    @use 'twitter';
+  {{ end }}
+  {{ if in $Tags "code" }}
+    @use 'chroma_native_tweaked';
+    // @use 'chroma_rrt';
+    // @use 'chroma_monokai_tweaked';
+    @use 'chroma_fix-all';
+  {{ end }}
+{{ end }}
 @use 'global';
 @use 'utility';
-@use 'tables';
-@use 'billboard';
-// @use 'clipboard'; // no longer needed; incorporated in 'chroma_fix-all'
-@use 'posts';
-@use 'footnotes';
-@use 'home';
+{{ if .Params.tags }}
+  {{ $Tags = . }}
+  {{ if in $Tags "tables" }}
+    @use 'tables';
+  {{ end }}
+  {{ if not (in $Tags "home") }}
+    @use 'billboard';
+  {{ end }}
+  {{ if in $Tags "post" }}
+    @use 'posts';
+    @use 'footnotes';
+  {{ end }}
+  {{ if in $Tags "home" }}
+    @use 'home';
+  {{ end }}
+{{ end }}
 @use 'nav';
 @use 'lazyload';
 @use 'lazypic';
@@ -29,3 +47,7 @@
 @use 'lite-yt-embed';
 // @use 'webmentions';
 @use 'print';
+.tagsItem {
+  font-size: 8px;
+  content: "{{ .Params.Tags }}";
+}
