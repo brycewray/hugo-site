@@ -125,8 +125,8 @@ Anyway, here we go .&nbsp;.&nbsp;.
 
 <table class="leagues">
 	<tr>
-		<td><strong>WEST</td>
-		<td><strong>NORTH</td>
+		<td><strong>WEST</strong></td>
+		<td><strong>NORTH</strong></td>
 	</tr>
 	<tr>
 		<td>
