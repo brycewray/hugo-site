@@ -13,6 +13,10 @@
     {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
     {{- $css := "" -}}
     {{- $cssBuild := "scss/" -}}{{/* init */}}
+    {{/*-
+      To repo lurkers, I apologize for the following spaghetti, but it works.
+      I still hope to make it DRY-er. Suggestions welcome.
+    -*/}}
     {{- $postCodeImgSocYT := slice "code" "img" "post" "social" "YouTube" -}}
     {{- $postCodeSocYT := slice "code" "post" "social" "YouTube" -}}
     {{- $postCodeSoc := slice "code" "post" "social" -}}
