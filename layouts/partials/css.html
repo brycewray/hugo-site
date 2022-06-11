@@ -9,124 +9,88 @@
       - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
       - thanks, @bep!
     -*/}}
-    {{- $optionsCSS := (dict "transpiler" "dartsass" "outputStyle" "compressed") -}}
-    {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
-    {{- $css := "" -}}
-    {{- $cssBuild := "scss/sectionals/" -}}{{/* init */}}
     {{/*-
       To repo lurkers, I apologize for the following spaghetti, but it works.
       I still hope to make it DRY-er. Suggestions welcome.
     -*/}}
-    {{- $postCodeImgSocYT := slice "code" "img" "post" "social" "YouTube" -}}
-    {{- $postCodeSocYT := slice "code" "post" "social" "YouTube" -}}
-    {{- $postCodeSoc := slice "code" "post" "social" -}}
-    {{- $postCodeImgYT := slice "code" "img" "post" "YouTube" -}}
-    {{- $postCodeImg := slice "code" "img" "post" -}}
-    {{- $postCodeImgSoc := slice "code" "img" "post" "social" -}}
-    {{- $postCodeImgTables := slice "code" "img" "post" "tables" -}}
-    {{- $postCode := slice "code" "post" -}}
-    {{- $postCodeYT := slice "code" "post" "YouTube" -}}
-    {{- $postImgSocYT := slice "img" "post" "social" "YouTube" -}}
-    {{- $postImgSoc := slice "img" "post" "social" -}}
-    {{- $postImgYT := slice "img" "post" "YouTube" -}}
-    {{- $postImg := slice "img" "post" -}}
-    {{- $postSocYT := slice "post" "social" "YouTube" -}}
-    {{- $postSoc := slice "post" "social" -}}
-    {{- $postTables := slice "post" "tables" -}}
-    {{- $postYT := slice "post" "YouTube" -}}
-    {{- $post := slice "post" }}
-    {{- $about := slice "about" "img" -}}
-    {{- $postsList := slice "postsList" -}}
-    {{- $contact := slice "contact" }}
-    {{- $privacy := slice "privacy" -}}
-    {{- $home := slice "code" "home" -}}
-    {{- $sitemap := slice "sitemap" -}}
+    {{- $css := "" -}}
+    {{- $scss := "" -}}
+    {{- $cssBuild := "scss/sectionals/" -}}{{/* init */}}
+    {{- $postCodeImgSocYT := slice "post-code-img-soc-yt" (slice "code" "img" "post" "social" "YouTube") -}}
+    {{- $postCodeSocYT := slice "post-code-soc-yt" (slice "code" "post" "social" "YouTube") -}}
+    {{- $postCodeSoc := slice "post-code-soc" (slice "code" "post" "social") -}}
+    {{- $postCodeImgYT := slice "post-code-img-yt" (slice "code" "img" "post" "YouTube") -}}
+    {{- $postCodeImg := slice "post-code-img" (slice "code" "img" "post") -}}
+    {{- $postCodeImgSoc := slice "post-code-img-soc" (slice "code" "img" "post" "social") -}}
+    {{- $postCodeImgTables := slice "post-code-img-tables" (slice "code" "img" "post" "tables") -}}
+    {{- $postCode := slice "post-code" (slice "code" "post") -}}
+    {{- $postCodeYT := slice "post-code-yt" (slice "code" "post" "YouTube") -}}
+    {{- $postImgSocYT := slice "post-img-soc-yt" (slice "img" "post" "social" "YouTube") -}}
+    {{- $postImgSoc := slice "post-img-soc" (slice "img" "post" "social") -}}
+    {{- $postImgYT := slice "post-img-yt" (slice "img" "post" "YouTube") -}}
+    {{- $postImg := slice "post-img" (slice "img" "post") -}}
+    {{- $postSocYT := slice "post-soc-yt" (slice "post" "social" "YouTube") -}}
+    {{- $postSoc := slice "post-soc" (slice "post" "social") -}}
+    {{- $postTables := slice "post-tables" (slice "post" "tables") -}}
+    {{- $postYT := slice "post-yt" (slice "post" "YouTube") -}}
+    {{- $post := slice "post" (slice "post") }}
+    {{- $about := slice "post" (slice "about" "img") -}}
+    {{- $postsList := slice "post" (slice "postsList") -}}
+    {{- $contact := slice "contact" (slice "contact") }}
+    {{- $privacy := slice "privacy" (slice "privacy") -}}
+    {{- $home := slice "home" (slice "code" "home") -}}
+    {{- $sitemap := slice "sitemap" (slice "sitemap") -}}
+
+    {{- $bigSlice := slice -}}
+    {{- $bigSlice = append $postCodeImgSocYT $postCodeSocYT $postCodeSoc $postCodeImgYT $postCodeImg $postCodeImgSoc $postCodeImgTables $postCode $postCodeYT $postImgSocYT $postImgSoc $postImgYT $postImg $postSocYT $postSoc $postTables $postYT $post $about $postsList $contact $privacy $home $sitemap $bigSlice -}}
+    {{- $tester := "" -}}
+    {{- $filePrefix := "" -}}
+    {{- $targetFilePrefix := "" }}
+    {{- $tagItems := "" -}}
+
     {{- $tags := "" -}}
     {{- with .Params.tags -}}
       {{ $tags = . }}
       {{ $tags = sort $tags }}
-      {{- if eq $tags $postCodeImgSocYT -}}
-        {{- $cssBuild = print $cssBuild "post-code-social-img-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $postCodeSocYT -}}
-        {{- $cssBuild = print $cssBuild "post-code-social-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $postCodeSoc -}}
-        {{- $cssBuild = print $cssBuild "post-code-social" -}}
-      {{- end -}}
-      {{- if eq $tags $postCodeImgYT -}}
-        {{- $cssBuild = print $cssBuild "post-code-img-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $postCodeImg -}}
-        {{- $cssBuild = print $cssBuild "post-code-img" -}}
-      {{- end -}}
-      {{- if eq $tags $postCodeImgSoc -}}
-        {{- $cssBuild = print $cssBuild "post-code-img-social" -}}
-      {{- end -}}
-      {{- if eq $tags $postCodeImgTables -}}
-        {{- $cssBuild = print $cssBuild "post-code-img-tables" -}}
-      {{- end -}}
-      {{- if eq $tags $postCode -}}
-        {{- $cssBuild = print $cssBuild "post-code" -}}
-      {{- end -}}
-      {{- if eq $tags $postCodeYT -}}
-        {{- $cssBuild = print $cssBuild "post-code-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $postImgSocYT -}}
-        {{- $cssBuild = print $cssBuild "post-img-social-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $postImgSoc -}}
-        {{- $cssBuild = print $cssBuild "post-img-social" -}}
-      {{- end -}}
-      {{- if eq $tags $postImg -}}
-        {{- $cssBuild = print $cssBuild "post-img" -}}
-      {{- end -}}
-      {{- if eq $tags $postImgYT -}}
-        {{- $cssBuild = print $cssBuild "post-img-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $postSocYT -}}
-        {{- $cssBuild = print $cssBuild "post-social-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $postSoc -}}
-        {{- $cssBuild = print $cssBuild "post-social" -}}
-      {{- end -}}
-      {{- if eq $tags $postTables -}}
-        {{- $cssBuild = print $cssBuild "post-tables" -}}
-      {{- end -}}
-      {{- if eq $tags $postYT -}}
-        {{- $cssBuild = print $cssBuild "post-yt" -}}
-      {{- end -}}
-      {{- if eq $tags $post -}}
-        {{- $cssBuild = print $cssBuild "post" -}}
-      {{- end -}}
-      {{- if eq $tags $about -}}
-        {{- $cssBuild = print $cssBuild "post-img" -}}
-      {{- end -}}
-      {{- if eq $tags $contact -}}
-        {{- $cssBuild = print $cssBuild "contact" -}}
-      {{- end -}}
-      {{- if eq $tags $postsList -}}
-        {{- $cssBuild = print $cssBuild "post" -}}
-      {{- end -}}
-      {{- if eq $tags $privacy -}}
-        {{- $cssBuild = print $cssBuild "privacy" -}}
-      {{- end -}}
-      {{- if eq $tags $home -}}
-        {{- $cssBuild = print $cssBuild "home" -}}
-      {{- end -}}
-      {{- if eq $tags $sitemap -}}
-        {{- $cssBuild = print $cssBuild "sitemap" -}}
-      {{- end -}}
+      {{ range $bigSlice }}
+        {{- $filePrefix = index . 0 -}}
+        {{- $tagItems = index . 1 -}}
+        {{- if eq $tags $tagItems -}}
+          {{- $cssBuild = print $cssBuild $filePrefix -}}
+          {{- $targetFilePrefix = $filePrefix -}}
+        {{- end }}
+      {{- end }}
     {{- end -}}
-    <link rel="{{ $cssBuild }}" href="#" name="{{ $tags }}" title="{{ (in $tags "code") }}" extra="{{ $postCodeSocYT }}" />
-    {{ if eq $cssBuild "scss/sectionals/" -}}{{/* fallback */}}
+    {{ if eq $cssBuild "scss/sectionals/" -}}{{/* fallback, such as for /404.html */}}
       {{- $cssBuild = print $cssBuild "critical" -}}
+      {{- $targetFilePrefix = "critical" -}}
     {{- end -}}
     {{- $cssBuild = print $cssBuild ".scss" -}}
+    {{- $targetPath := print "css/" $targetFilePrefix ".css" -}}
+    {{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" $targetPath "outputStyle" "compressed") -}}
+    {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
     {{/*  {{- with resources.Get $cssBuild | resources.ToCSS $optionsCSS -}}
       <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
     {{- end }}  */}}
-    {{- $css = resources.Get $cssBuild | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+
+    <link
+      cssbuild="{{ $cssBuild }}"
+      tags="{{ $tags }}"
+      targetFilePrefix="{{ $targetFilePrefix }}"
+      targetPath="{{ $targetPath }}"
+    />
+    {{ with $cssBuild -}}
+      {{- $scss = resources.Get $cssBuild }}
+      {{/*  {{- $scss = resources.Get "scss/sectionals/home.scss" -}}  */}}
+      {{- $css = $scss | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
+      <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+      <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+    {{- end }}
+    <link
+      scss="{{ $scss }}"
+      cssbuild="{{ $cssBuild }}"
+      tags="{{ $tags }}"
+      targetFilePrefix="{{ $targetFilePrefix }}"
+      targetPath="{{ $targetPath }}"
+    />
 {{/* end, CSS/SCSS */}}
