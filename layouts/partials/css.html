@@ -12,7 +12,7 @@
     {{- $optionsCSS := (dict "transpiler" "dartsass" "outputStyle" "compressed") -}}
     {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
     {{- $css := "" -}}
-    {{- $cssBuild := "scss/" -}}{{/* init */}}
+    {{- $cssBuild := "scss/sectionals/" -}}{{/* init */}}
     {{/*-
       To repo lurkers, I apologize for the following spaghetti, but it works.
       I still hope to make it DRY-er. Suggestions welcome.
@@ -119,7 +119,7 @@
       {{- end -}}
     {{- end -}}
     <link rel="{{ $cssBuild }}" href="#" name="{{ $tags }}" title="{{ (in $tags "code") }}" extra="{{ $postCodeSocYT }}" />
-    {{ if eq $cssBuild "scss/" -}}
+    {{ if eq $cssBuild "scss/sectionals/" -}}{{/* fallback */}}
       {{- $cssBuild = print $cssBuild "critical" -}}
     {{- end -}}
     {{- $cssBuild = print $cssBuild ".scss" -}}
