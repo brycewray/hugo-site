@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Now I’m a Gatsby geezer"
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray

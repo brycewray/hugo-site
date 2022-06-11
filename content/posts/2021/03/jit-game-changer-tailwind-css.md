@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "JIT is a game-changer for Tailwind CSS"
 description: "Why Tailwind’s new capabilities will give it even more  momentum among web developers."
 author: Bryce Wray

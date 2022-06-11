@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Code comfort: Eleventy and webpack"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray

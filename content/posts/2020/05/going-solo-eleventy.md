@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Going solo with Eleventy"
 description: "Losing webpack, regaining Tailwind CSS."
 author: Bryce Wray

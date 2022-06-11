@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Stacks and stacks"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray

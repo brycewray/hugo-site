@@ -51,7 +51,7 @@ If you want to see the CSS classes I use to style the webmentions, they're on th
 
 It's almost time to get into the code---but, first, to help you understand exactly what we're trying to obtain and display, here's what the [webmention.io](https://webmention.io) API returns for [one page](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/) on this site:
 
-json
+```json
 {
   "children": [
     {

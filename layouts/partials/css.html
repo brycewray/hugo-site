@@ -1,0 +1,124 @@
+{{/* CSS/SCSS */ -}}
+    <!--
+    <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+    -->
+    {{/*-
+      Dart Sass Embedded stuff herein:
+      - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
+      - thanks, @bep!
+    -*/}}
+    {{- $optionsCSS := (dict "transpiler" "dartsass" "outputStyle" "compressed") -}}
+    {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
+    {{- $cssBuild := "scss/" -}}{{/* init */}}
+    {{- $postCodeImgSocYT := slice "code" "img" "post" "social" "YouTube" -}}
+    {{- $postCodeSocYT := slice "code" "post" "social" "YouTube" -}}
+    {{- $postCodeSoc := slice "code" "post" "social" -}}
+    {{- $postCodeImgYT := slice "code" "img" "post" "YouTube" -}}
+    {{- $postCodeImg := slice "code" "img" "post" -}}
+    {{- $postCodeImgSoc := slice "code" "img" "post" "social" -}}
+    {{- $postCodeImgTables := slice "code" "img" "post" "tables" -}}
+    {{- $postCode := slice "code" "post" -}}
+    {{- $postCodeYT := slice "code" "post" "YouTube" -}}
+    {{- $postImgSocYT := slice "img" "post" "social" "YouTube" -}}
+    {{- $postImgSoc := slice "img" "post" "social" -}}
+    {{- $postImgYT := slice "img" "post" "YouTube" -}}
+    {{- $postImg := slice "img" "post" -}}
+    {{- $postSocYT := slice "post" "social" "YouTube" -}}
+    {{- $postSoc := slice "post" "social" -}}
+    {{- $postTables := slice "post" "tables" -}}
+    {{- $postYT := slice "post" "YouTube" -}}
+    {{- $post := slice "post" }}
+    {{- $about := slice "about" "img" -}}
+    {{- $postsList := slice "postsList" -}}
+    {{- $contact := slice "contact" }}
+    {{- $privacy := slice "privacy" -}}
+    {{- $home := slice "code" "home" -}}
+    {{- $sitemap := slice "sitemap" -}}
+    {{- $tags := "" -}}
+    {{- with .Params.tags -}}
+      {{ $tags = . }}
+      {{ $tags = sort $tags }}
+      {{- if eq $tags $postCodeImgSocYT -}}
+        {{- $cssBuild = print $cssBuild "post-code-social-img-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $postCodeSocYT -}}
+        {{- $cssBuild = print $cssBuild "post-code-social-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $postCodeSoc -}}
+        {{- $cssBuild = print $cssBuild "post-code-social" -}}
+      {{- end -}}
+      {{- if eq $tags $postCodeImgYT -}}
+        {{- $cssBuild = print $cssBuild "post-code-img-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $postCodeImg -}}
+        {{- $cssBuild = print $cssBuild "post-code-img" -}}
+      {{- end -}}
+      {{- if eq $tags $postCodeImgSoc -}}
+        {{- $cssBuild = print $cssBuild "post-code-img-social" -}}
+      {{- end -}}
+      {{- if eq $tags $postCodeImgTables -}}
+        {{- $cssBuild = print $cssBuild "post-code-img-tables" -}}
+      {{- end -}}
+      {{- if eq $tags $postCode -}}
+        {{- $cssBuild = print $cssBuild "post-code" -}}
+      {{- end -}}
+      {{- if eq $tags $postCodeYT -}}
+        {{- $cssBuild = print $cssBuild "post-code-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $postImgSocYT -}}
+        {{- $cssBuild = print $cssBuild "post-img-social-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $postImgSoc -}}
+        {{- $cssBuild = print $cssBuild "post-img-social" -}}
+      {{- end -}}
+      {{- if eq $tags $postImg -}}
+        {{- $cssBuild = print $cssBuild "post-img" -}}
+      {{- end -}}
+      {{- if eq $tags $postImgYT -}}
+        {{- $cssBuild = print $cssBuild "post-img-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $postSocYT -}}
+        {{- $cssBuild = print $cssBuild "post-social-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $postSoc -}}
+        {{- $cssBuild = print $cssBuild "post-social" -}}
+      {{- end -}}
+      {{- if eq $tags $postTables -}}
+        {{- $cssBuild = print $cssBuild "post-tables" -}}
+      {{- end -}}
+      {{- if eq $tags $postYT -}}
+        {{- $cssBuild = print $cssBuild "post-yt" -}}
+      {{- end -}}
+      {{- if eq $tags $post -}}
+        {{- $cssBuild = print $cssBuild "post" -}}
+      {{- end -}}
+      {{- if eq $tags $about -}}
+        {{- $cssBuild = print $cssBuild "post-img" -}}
+      {{- end -}}
+      {{- if eq $tags $contact -}}
+        {{- $cssBuild = print $cssBuild "contact" -}}
+      {{- end -}}
+      {{- if eq $tags $postsList -}}
+        {{- $cssBuild = print $cssBuild "post" -}}
+      {{- end -}}
+      {{- if eq $tags $privacy -}}
+        {{- $cssBuild = print $cssBuild "privacy" -}}
+      {{- end -}}
+      {{- if eq $tags $home -}}
+        {{- $cssBuild = print $cssBuild "home" -}}
+      {{- end -}}
+      {{- if eq $tags $sitemap -}}
+        {{- $cssBuild = print $cssBuild "sitemap" -}}
+      {{- end -}}
+    {{- end -}}
+    <link rel="{{ $cssBuild }}" href="#" name="{{ $tags }}" title="{{ (in $tags "code") }}" extra="{{ $postCodeSocYT }}" />
+    {{ if eq $cssBuild "scss/" -}}
+      {{- $cssBuild = print $cssBuild "critical" -}}
+    {{- end -}}
+    {{- $cssBuild = print $cssBuild ".scss" -}}
+    {{- with resources.Get $cssBuild | resources.ToCSS $optionsCSS -}}
+      <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
+    {{- end }}
+{{/* end, CSS/SCSS */}}

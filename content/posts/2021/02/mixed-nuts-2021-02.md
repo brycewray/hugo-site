@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Mixed nuts • February, 2021"
 description: "No brain cells were even used, much less harmed, in the production of this post."
 author: Bryce Wray

@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Picture perfect?"
 description: "With SSGs and images, it’s “location, location, location.”"
 author: Bryce Wray
