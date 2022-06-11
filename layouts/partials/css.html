@@ -11,6 +11,7 @@
     -*/}}
     {{- $optionsCSS := (dict "transpiler" "dartsass" "outputStyle" "compressed") -}}
     {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
+    {{- $css := "" -}}
     {{- $cssBuild := "scss/" -}}{{/* init */}}
     {{- $postCodeImgSocYT := slice "code" "img" "post" "social" "YouTube" -}}
     {{- $postCodeSocYT := slice "code" "post" "social" "YouTube" -}}
@@ -118,7 +119,10 @@
       {{- $cssBuild = print $cssBuild "critical" -}}
     {{- end -}}
     {{- $cssBuild = print $cssBuild ".scss" -}}
-    {{- with resources.Get $cssBuild | resources.ToCSS $optionsCSS -}}
+    {{/*  {{- with resources.Get $cssBuild | resources.ToCSS $optionsCSS -}}
       <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
-    {{- end }}
+    {{- end }}  */}}
+    {{- $css = resources.Get $cssBuild | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
+    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 {{/* end, CSS/SCSS */}}
