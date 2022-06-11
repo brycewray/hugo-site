@@ -15,7 +15,7 @@
   </div>
   {{ if or .PrevPage .NextPage }}
     <div class="bg-dark sansSerif">
-      <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+      <h3 class="ctr wht prevnextH3"><a href="/posts/" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
 			<p class="ctr prevnextP">
 				{{ with .NextInSection -}}
 					Next: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
