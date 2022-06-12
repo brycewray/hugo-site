@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 title: "Grid-locked no more"
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
