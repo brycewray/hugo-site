@@ -8,25 +8,30 @@
       Dart Sass Embedded stuff herein:
       - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
       - thanks, @bep!
+
+      And thanks very much to Daniel F. Dickinson (https://wildtechgarden.ca) for
+      helping me debug the logic, below, on 2022-06-11:
+      https://discourse.gohugo.io/t/different-results-for-if-in-params-tags-test/38990
     -*/}}
+    {{- $currentPage := .Page -}}
     {{- $css := "" -}}
     {{- $scss := "" -}}
     {{- $cssBuild := "scss/sectionals/" -}}{{/* init */}}
-    {{- $postCodeImgSocYT := slice "post-code-img-soc-yt" (slice "code" "img" "post" "social" "YouTube") -}}
-    {{- $postCodeSocYT := slice "post-code-soc-yt" (slice "code" "post" "social" "YouTube") -}}
-    {{- $postCodeSoc := slice "post-code-soc" (slice "code" "post" "social") -}}
+    {{- $postCodeImgSocYT := slice "post-code-img-social-yt" (slice "code" "img" "post" "social" "YouTube") -}}
+    {{- $postCodeSocYT := slice "post-code-social-yt" (slice "code" "post" "social" "YouTube") -}}
+    {{- $postCodeSoc := slice "post-code-social" (slice "code" "post" "social") -}}
     {{- $postCodeImgYT := slice "post-code-img-yt" (slice "code" "img" "post" "YouTube") -}}
     {{- $postCodeImg := slice "post-code-img" (slice "code" "img" "post") -}}
-    {{- $postCodeImgSoc := slice "post-code-img-soc" (slice "code" "img" "post" "social") -}}
+    {{- $postCodeImgSoc := slice "post-code-img-social" (slice "code" "img" "post" "social") -}}
     {{- $postCodeImgTables := slice "post-code-img-tables" (slice "code" "img" "post" "tables") -}}
     {{- $postCode := slice "post-code" (slice "code" "post") -}}
     {{- $postCodeYT := slice "post-code-yt" (slice "code" "post" "YouTube") -}}
-    {{- $postImgSocYT := slice "post-img-soc-yt" (slice "img" "post" "social" "YouTube") -}}
-    {{- $postImgSoc := slice "post-img-soc" (slice "img" "post" "social") -}}
+    {{- $postImgSocYT := slice "post-img-social-yt" (slice "img" "post" "social" "YouTube") -}}
+    {{- $postImgSoc := slice "post-img-social" (slice "img" "post" "social") -}}
     {{- $postImgYT := slice "post-img-yt" (slice "img" "post" "YouTube") -}}
     {{- $postImg := slice "post-img" (slice "img" "post") -}}
-    {{- $postSocYT := slice "post-soc-yt" (slice "post" "social" "YouTube") -}}
-    {{- $postSoc := slice "post-soc" (slice "post" "social") -}}
+    {{- $postSocYT := slice "post-social-yt" (slice "post" "social" "YouTube") -}}
+    {{- $postSoc := slice "post-social" (slice "post" "social") -}}
     {{- $postTables := slice "post-tables" (slice "post" "tables") -}}
     {{- $postYT := slice "post-yt" (slice "post" "YouTube") -}}
     {{- $post := slice "post" (slice "post") }}
@@ -36,14 +41,12 @@
     {{- $privacy := slice "privacy" (slice "privacy") -}}
     {{- $home := slice "home" (slice "code" "home") -}}
     {{- $sitemap := slice "sitemap" (slice "sitemap") -}}
-
     {{- $bigSlice := slice -}}
     {{- $bigSlice = append $postCodeImgSocYT $postCodeSocYT $postCodeSoc $postCodeImgYT $postCodeImg $postCodeImgSoc $postCodeImgTables $postCode $postCodeYT $postImgSocYT $postImgSoc $postImgYT $postImg $postSocYT $postSoc $postTables $postYT $post $about $postsList $contact $privacy $home $sitemap $bigSlice -}}
     {{- $tester := "" -}}
     {{- $filePrefix := "" -}}
     {{- $targetFilePrefix := "" }}
     {{- $tagItems := "" -}}
-
     {{- $tags := "" -}}
     {{- with .Params.tags -}}
       {{ $tags = . }}
@@ -68,25 +71,15 @@
     {{/*  {{- with resources.Get $cssBuild | resources.ToCSS $optionsCSS -}}
       <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
     {{- end }}  */}}
-
-    <link
-      cssbuild="{{ $cssBuild }}"
-      tags="{{ $tags }}"
-      targetFilePrefix="{{ $targetFilePrefix }}"
-      targetPath="{{ $targetPath }}"
-    />
-    {{ with $cssBuild -}}
+    {{- with $cssBuild -}}
       {{- $scss = resources.Get $cssBuild }}
-      {{/*  {{- $scss = resources.Get "scss/sectionals/home.scss" -}}  */}}
-      {{- $css = $scss | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-      <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-      <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-    {{- end }}
-    <link
-      scss="{{ $scss }}"
-      cssbuild="{{ $cssBuild }}"
-      tags="{{ $tags }}"
-      targetFilePrefix="{{ $targetFilePrefix }}"
-      targetPath="{{ $targetPath }}"
-    />
+      {{- if $scss -}}
+        {{/*  {{- $scss = resources.Get "scss/sectionals/home.scss" -}}  */}}
+        {{- $css = $scss | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
+        <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+      {{- else -}}
+        {{- warnf (printf "No scss found for page %s" $currentPage.TranslationKey) -}}
+      {{- end -}}
+    {{- end -}}
 {{/* end, CSS/SCSS */}}
