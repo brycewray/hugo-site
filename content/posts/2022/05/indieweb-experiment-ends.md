@@ -13,7 +13,7 @@ discussionId: "2022-05-indieweb-experiment-ends"
 
 We're back to where we were.
 
-I've changed my mind about continuing with my second shot at the [IndieWeb](https://indieweb.org) stuff, mainly in the form of receiving and displaying [webmentions](https://indieweb.org/Webmention), after giving it roughly a week of experimentation---some of which I [documented](/posts/2022/05/webmentions-yes-javascript-no/) [herein](/posts/2022/05/webmentions-yes-javascript-no-the-code/), perhaps to the aid of others.
+I've changed my mind about continuing with my second shot at the [IndieWeb](https://indieweb.org) stuff, mainly in the form of receiving and displaying [webmentions](https://indieweb.org/Webmention), after giving it roughly a week of experimentation --- some of which I [documented](/posts/2022/05/webmentions-yes-javascript-no/) [herein](/posts/2022/05/webmentions-yes-javascript-no-the-code/), perhaps to the aid of others.
 
 Why am I quitting webmentions again? There are several factors, mentioned below not necessarily in order of importance.
 

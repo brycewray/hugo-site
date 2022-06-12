@@ -3,7 +3,7 @@
 tags:
 - post
 title: "Mixed nuts #9"
-description: "Takes that are neither hot nor cool—in multiple ways."
+description: "Takes that are neither hot nor cool — in multiple ways."
 author: Bryce Wray
 date: 2021-08-29T08:52:00-05:00
 lastmod: 2022-03-28T14:01:00-05:00
@@ -41,6 +41,6 @@ The only thing I could say to that was:
 
 Another reader, having seen my "[Conversation piece](/posts/2020/10/conversation-piece/)" article reviewing methods of allowing commenting on static websites, asked why I no longer had such commenting on my site. As I told him:
 
-> I decided to go with strictly emails after reading a few articles by fellow bloggers indicating that they preferred communicating by email with their readers, believing---as I have found, too---that such communications usually provided greater value to both sides.
+> I decided to go with strictly emails after reading a few articles by fellow bloggers indicating that they preferred communicating by email with their readers, believing --- as I have found, too --- that such communications usually provided greater value to both sides.
 
 And, to close on a related note, that's what the button below is for. Operators may not be standing by, but I am (well, sometimes, anyway).

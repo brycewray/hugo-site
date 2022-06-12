@@ -50,7 +50,7 @@ Well, it's like this&nbsp;.&nbsp;.&nbsp;.
 
 ## Why Ulysses is still my best choice
 
-I made very clear back in this site's second-ever post (and still one of its most popular), "[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses/)," that the way my mind works simply meshes better with Ulysses than with Scrivener, however much I love good ol’ "Scriv." That hasn't changed, and---unless somebody reprograms me---isn't going to change. If the WIP is to have a future, it will be in Ulysses.
+I made very clear back in this site's second-ever post (and still one of its most popular), "[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses/)," that the way my mind works simply meshes better with Ulysses than with Scrivener, however much I love good ol’ "Scriv." That hasn't changed, and --- unless somebody reprograms me --- isn't going to change. If the WIP is to have a future, it will be in Ulysses.
 
 (Of course, that was in the days before I'd spent much time with iA Writer and learned it was a better choice for writing this site's posts. And *that* hasn't changed, either, but only because iA Writer outputs SSG-friendly [Markdown](https://daringfireball.net/projects/markdown) natively while you have to export it from Ulysses.[^Export] If the Ulysses folks ever change that---well, I'm just sayin'.)
 
@@ -84,7 +84,7 @@ One more thing I must mention, in the interests of full [transparency](/posts/20
 
 As I [already explained](/posts/2019/05/boxed-in/), this is simply something that goes with "shoebox" apps like Ulysses. It's also worth noting that, since the release of [Ulysses 18](https://ulysses.app/releases/) last September, the app has offered more transparent file storage options, although they still lack some of the advantages (and risks?) of keeping files in the native Ulysses Library.
 
-That said: having weathered the storm and understood the limitations of the Ulysses Library approach, I still trust it enough to keep using it. Do I keep its contents thoroughly backed up and ported, just to be safe? Oh, yeah. But I'd do that anyway, and [you should, too](/posts/2019/02/back-up-jack/)---regardless of the apps and/or data involved.
+That said: having weathered the storm and understood the limitations of the Ulysses Library approach, I still trust it enough to keep using it. Do I keep its contents thoroughly backed up and ported, just to be safe? Oh, yeah. But I'd do that anyway, and [you should, too](/posts/2019/02/back-up-jack/) --- regardless of the apps and/or data involved.
 
 ## Something big from Leipzig?
 
@@ -92,7 +92,7 @@ There's one additional thing that drew me back to Ulysses, and it has nothing to
 
 You see, Ulysses 20 is coming soon, and hints from the Ulysses team in Leipzig indicate [it'll be really cool](https://blog.ulysses.app/beta-ulysses-20/), offering certain features the Ulysses community has wanted for a very long time.
 
-With any luck at all, I---and a very-much-still-alive WIP---will be waiting eagerly for it when it arrives.
+With any luck at all, I --- and a very-much-still-alive WIP --- will be waiting eagerly for it when it arrives.
 
-**Update, 2020-06-20**: I decided to stay with the annual renewal past that additional two weeks, having made enough renewed progress on the WIP that I considered another year's worth of Ulysses a worthy investment.
+**Update, 2020‑06‑20**: I decided to stay with the annual renewal past that additional two weeks, having made enough renewed progress on the WIP that I considered another year's worth of Ulysses a worthy investment.
 {.yellowBox}

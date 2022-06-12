@@ -41,7 +41,7 @@ And, today, I am pleased to tell you that *all three* of my site repos are now p
 
 Please be advised that I haven't yet decided whether to update *all* of them every time I update *this* one. Some changes I made during this restoration project may make that easier than it otherwise would've been, but I'm not promising an all-three-at-once approach.
 
-For one thing, it's all well and good to keep adding each new article, but quite another matter altogether to keep all three repos’ *[NPM dependencies](https://nodejs.dev/npm-dependencies-and-devdependencies)* up to date---especially on the Gatsby repo. (And, yes, even the Hugo repo now has some NPM dependencies. More on that in a moment.) Will I keep this one updated? You betcha. The other two? TBD.
+For one thing, it's all well and good to keep adding each new article, but quite another matter altogether to keep all three repos’ *[NPM dependencies](https://nodejs.dev/npm-dependencies-and-devdependencies)* up to date --- especially on the Gatsby repo. (And, yes, even the Hugo repo now has some NPM dependencies. More on that in a moment.) Will I keep this one updated? You betcha. The other two? TBD.
 
 ## Challenges
 
@@ -53,7 +53,7 @@ For example, there is the matter of the different [Markdown](https://daringfireb
 
 When I last left Hugo, this past October, it was still using the [Black Friday](https://github.com/russross/blackfriday) parser, as had been the case since I started this site with Hugo in September, 2018. [More recently](https://gohugo.io/news/0.60.0-relnotes/), Hugo has changed over to the [goldmark](https://github.com/yuin/goldmark) parser.
 
-While checking out differences between goldmark and Eleventy's [Markdown-it](https://github.com/markdown-it/markdown-it) parser in properly handling the post-Hugo/post-Gatsby posts I was copying to the other two repos---as well as seeing what few differences there were between Black Friday and goldmark---I learned there was a problem with how I've recently been adding footnotes in my content. It worked fine in Markdown-it but not in goldmark or, for that matter, the [Remark](https://github.com/remarkjs/remark) parser used in my Gatsby repo.
+While checking out differences between goldmark and Eleventy's [Markdown-it](https://github.com/markdown-it/markdown-it) parser in properly handling the post-Hugo/post-Gatsby posts I was copying to the other two repos --- as well as seeing what few differences there were between Black Friday and goldmark --- I learned there was a problem with how I've recently been adding footnotes in my content. It worked fine in Markdown-it but not in goldmark or, for that matter, the [Remark](https://github.com/remarkjs/remark) parser used in my Gatsby repo.
 
 What I'd been doing recently was so-called *inline* footnoting, like this:
 
@@ -67,7 +67,7 @@ This^[This would be a footnote] is an example of an alternative footnoting metho
 
 However, the parsers in Hugo and Gatsby didn't care for the `^` being before the bracket. And, by "didn't care for," I mean they refused to consider the footnote *as* a footnote, instead leaving it in the main body text.
 
-OK, fine. I put it *after* the bracket. Then, Hugo and Gatsby worked fine---but the *Eleventy* parser wasn't happy.
+OK, fine. I put it *after* the bracket. Then, Hugo and Gatsby worked fine --- but the *Eleventy* parser wasn't happy.
 
 So I decided to quit being cute and went back to a more standard method which works across all three, although it's a tad clunkier to type:
 
@@ -77,7 +77,7 @@ This[^SomeReference] is an example of the once-and-future (non-inline) method of
 [^SomeReference]: This would be a footnote.
 ```
 
-Clunky or not, one other advantage of this method is that none of these SSGs will balk at links in footnotes, unlike what happened with the inline footnoting---in which it was wise to "hard"-code links (if you can call HTML *coding*) rather than just doing them like this:
+Clunky or not, one other advantage of this method is that none of these SSGs will balk at links in footnotes, unlike what happened with the inline footnoting --- in which it was wise to "hard"-code links (if you can call HTML *coding*) rather than just doing them like this:
 
 ```markdown
 This[^SomeReference] is an example of the once-and-future (non-inline) method of footnoting.
@@ -94,13 +94,13 @@ The switch to PostCSS actually was pretty straightforward in the Gatsby repo. Si
 
 But Hugo was another matter.
 
-And that was despite its having a [pretty cool method](https://gohugo.io/hugo-pipes/postcss/) of incorporating PostCSS, when you consider Hugo uses no "bundler" (like webpack). I added the same NPM dependencies and `postcss.config.js` file to the repo, put the CSS files where Hugo wanted them, put the appropriate [Go](https://go.dev) code in the `head.html` partial template, and---kept getting errors.
+And that was despite its having a [pretty cool method](https://gohugo.io/hugo-pipes/postcss/) of incorporating PostCSS, when you consider Hugo uses no "bundler" (like webpack). I added the same NPM dependencies and `postcss.config.js` file to the repo, put the CSS files where Hugo wanted them, put the appropriate [Go](https://go.dev) code in the `head.html` partial template, and --- kept getting errors.
 
 Only after a few hours of trial-and-error futzing did I finally locate a [Hugo community forums topic](https://discourse.gohugo.io/t/pipes-postcss-postcss-import-how-to-keep-filesystem-context/15164) that saved the day.
 
 After studying that page for a while, I grasped that, before Hugo would run PostCSS, the `postcss-config.js` code for using the [`postcss-partial-import` plugin](https://github.com/jonathantneal/postcss-partial-import) had to refer to the `path`, rather than the `root` reference which worked for the Eleventy/webpack and Gatsby repos. It seems a small distinction, but I guess it's not where Hugo's innards are concerned.
 
-By contrast, this site's departure from hero images *(**update, 2020-05-19**: a departure that I [later rescinded](/posts/2020/05/thousand-words-indeed/), as you can see at the top of this page)* was more easily handled in Hugo than in Gatsby.
+By contrast, this site's departure from hero images *(**update, 2020‑05‑19**: a departure that I [later rescinded](/posts/2020/05/thousand-words-indeed/), as you can see at the top of this page)* was more easily handled in Hugo than in Gatsby.
 
 As I've [noted before](/posts/2019/10/picture-perfect/), Gatsby typically does its image-processing magic only on image files that are in the same directory as the Markdown content which calls them.[^HugoImgs] That meant distinguishing between posts which had no images "inside" and those which did. As a result: I'd leave a file of the former type as an `index.md` in a directory named for the post; as for a file of the latter type, I'd name it after the post and move it into the appropriate "month" path.
 
@@ -108,7 +108,7 @@ As I've [noted before](/posts/2019/10/picture-perfect/), Gatsby typically does i
 
 **In plainer language**&nbsp;.&nbsp;.&nbsp;.
 
-Here's how I handled this page, since it had no images at the time I originally issued this post. I named it `different-modes-different-code.md` and left it in the top level of the Gatsby repo directory `/src/pages/posts/2019/04/`, thus producing a final path---as on this site---of `/posts/2019/04/different-modes-different-code/`.
+Here's how I handled this page, since it had no images at the time I originally issued this post. I named it `different-modes-different-code.md` and left it in the top level of the Gatsby repo directory `/src/pages/posts/2019/04/`, thus producing a final path --- as on this site --- of `/posts/2019/04/different-modes-different-code/`.
 
 **But**&nbsp;.&nbsp;.&nbsp;.
 
@@ -138,8 +138,8 @@ I have been curious about [Vue](https://vuejs.org) and the Vue-based, Gatsby-lik
 
 Since [it looks as if we'll be here a while](https://www.vox.com/future-perfect/2020/3/26/21191702/coronavirus-lockdowns-stay-home-new-cases): well, who knows? Stay tuned.
 
-**Update, 2020-04-15**: While I did make some progress on the Gridsome repo project in the ensuing days after first releasing this post, I think it will be a while---perhaps months---before I can make any serious headway. There are a number of things the young Gridsome still doesn't do that well which, while they wouldn't be showstoppers to others, just cause it to miss the mark where I'm concerned. Two minor examples are ["previous post" and "next post" functionality](https://github.com/gridsome/gridsome/issues/177) and [directory-based URLs](https://github.com/gridsome/gridsome/issues/1089), but there are others. *(In the meantime, however, [I can always find other things to do](/posts/2020/04/full-11ty-js-monty/)).*
+**Update, 2020‑04‑15**: While I did make some progress on the Gridsome repo project in the ensuing days after first releasing this post, I think it will be a while --- perhaps months --- before I can make any serious headway. There are a number of things the young Gridsome still doesn't do that well which, while they wouldn't be showstoppers to others, just cause it to miss the mark where I'm concerned. Two minor examples are ["previous post" and "next post" functionality](https://github.com/gridsome/gridsome/issues/177) and [directory-based URLs](https://github.com/gridsome/gridsome/issues/1089), but there are others. *(In the meantime, however, [I can always find other things to do](/posts/2020/04/full-11ty-js-monty/)).*
 {.yellowBox}
 
-**Update, 2020-05-31**: I later decided to limit the Hugo and Gatsby repos to just a sampling of the posts, especially given the [restoration of hero images](/posts/2020/05/thousand-words-indeed/). While this obviously will save me work (and a modicum of sanity), the truth is that it also probably makes each repo **more** valuable to those who simply want to learn how to do a few things here and there, rather than having to download a ton of other posts and images.
+**Update, 2020‑05‑31**: I later decided to limit the Hugo and Gatsby repos to just a sampling of the posts, especially given the [restoration of hero images](/posts/2020/05/thousand-words-indeed/). While this obviously will save me work (and a modicum of sanity), the truth is that it also probably makes each repo **more** valuable to those who simply want to learn how to do a few things here and there, rather than having to download a ton of other posts and images.
 {.yellowBox}

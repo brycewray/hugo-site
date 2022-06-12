@@ -26,7 +26,7 @@ While I plan to continue basing this site on [the JAMstack](https://jamstack.org
 
 I **will** occasionally offer observations **about** SSGs, including how to install and use them, because I'm interested in them and, I gather, many of you readers are, too.
 
-But I won't take sides again. At least, not overtly. (That is: those of you who like to peek at source code will be able to figure it out readily enough---if you care, which I'm guessing you don't.)
+But I won't take sides again. At least, not overtly. (That is: those of you who like to peek at source code will be able to figure it out readily enough --- if you care, which I'm guessing you don't.)
 
 In the last few months, I wrote several posts about switching or not switching around in the SSG arena. I portrayed each choice almost as  something to be carved in one's arm as a ritual, an undying commitment.
 
@@ -48,4 +48,4 @@ In the most recent such post, I had quoted "[The pros of using a boring stack](h
 
 I am a curious tech geek, so I will keep learning, and perhaps even switching platforms from time to time as the learning may dictate. This ain't the Army, after all. But I will do so without compromising what I bring to you here. There aren't many of you, so Google Analytics tells me daily, but I still appreciate your choice to stop by, and I intend to help you make the most of that choice.
 
-And I **really** hope that's the last thing I need to say on that subject---almost as much as some of you probably do.
+And I **really** hope that's the last thing I need to say on that subject --- almost as much as some of you probably do.

@@ -20,7 +20,7 @@ featured_image_caption: |
 
 {{% disclaimer %}}
 
-<strong class="red">Update, 2022-05-24</strong>: I am no longer using the method described herein, due to production-side problems I encountered with the site's default hosting provider, [Cloudflare Pages](https://pages.cloudflare.com) (although it worked fine with [Vercel](https://vercel.com)). I'll explain further in a [future post](/posts/2022/05/using-dart-sass-hugo-back-to-node/).\
+<strong class="red">Update, 2022‑05‑24</strong>: I am no longer using the method described herein, due to production-side problems I encountered with the site's default hosting provider, [Cloudflare Pages](https://pages.cloudflare.com) (although it worked fine with [Vercel](https://vercel.com)). I'll explain further in a [future post](/posts/2022/05/using-dart-sass-hugo-back-to-node/).\
 \
 <strong class="red">Further update, a few hours later</strong>: I re-thought this and went back to the GitHub Actions-enabled deployment method; I decided that, at least for now, it simply offers too many conveniences to blow it off, especially in favor of the slower development process required by using the Node.js Sass package mentioned in the post linked above. Will keep you advised.\
 \
@@ -33,7 +33,7 @@ Regarding the [first approach](/posts/2022/03/using-dart-sass-hugo/): some peopl
 
 But that one didn't trouble me a whole lot.
 
-It was a different story when I kept mulling over the [second, somewhat trickier approach](/posts/2022/03/using-dart-sass-hugo-sequel/). It enables Hugo to use the [Embedded Dart Sass binary](https://github.com/sass/dart-sass-embedded/), through shell scripting that tells one of three hosting vendors---[Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Cloudflare Pages](https://pages.cloudflare.com)---to install the binary within the proper build-image `$PATH`. As a result, the binary is "visible" to Hugo during the build, and all goes on smoothly from there.
+It was a different story when I kept mulling over the [second, somewhat trickier approach](/posts/2022/03/using-dart-sass-hugo-sequel/). It enables Hugo to use the [Embedded Dart Sass binary](https://github.com/sass/dart-sass-embedded/), through shell scripting that tells one of three hosting vendors --- [Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Cloudflare Pages](https://pages.cloudflare.com) --- to install the binary within the proper build-image `$PATH`. As a result, the binary is "visible" to Hugo during the build, and all goes on smoothly from there.
 
 This had been working fine for me ever since Hugo's Bjørn Erik Pedersen [first proposed the idea](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7), so what was my more recent problem with it? Just this: whether it can **keep** working depends upon those three hosting vendors' **not** shutting down that particular workaround, perhaps for understandably security-related reasons, by simply (further) limiting one's ability to adjust the respective build environment.
 
@@ -43,11 +43,11 @@ In the end, I figured, assuming they'd continue to let that slip by was too big 
 
 One morning this week, I awoke from an impromptu nap[^defense] and came up with the answer I'm going to describe below: a [**GitHub Action**](https://github.com/features/actions) (GHA). It wouldn't be new ground, since I've written before about using GHAs to deploy static websites:
 
-[^defense]: In my defense, it was after having had roughly three hours of sleep the night before. I tend not to take naps, period, much less unplanned ones---contrary to what you young ’uns imagine about [old, retired coots such as I](/posts/2021/09/transition/).
+[^defense]: In my defense, it was after having had roughly three hours of sleep the night before. I tend not to take naps, period, much less unplanned ones --- contrary to what you young ’uns imagine about [old, retired coots such as I](/posts/2021/09/transition/).
 
-- "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd/)" (June, 2020)---Deploying to Netlify. This GHA served as a workaround for the 300-minutes-a-month build limit on Netlify's free tier.
-- "[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)" (September, 2020)---Deploying to [Firebase](https://firebase.google.com).
-- "[Forward PaaS](/posts/2020/10/forward-paas/)" (October, 2020)---Deploying to a [Cloudflare Workers](https://workers.cloudflare.com) site, the precursor to Cloudflare Pages.
+- "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd/)" (June, 2020) --- Deploying to Netlify. This GHA served as a workaround for the 300-minutes-a-month build limit on Netlify's free tier.
+- "[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)" (September, 2020) --- Deploying to [Firebase](https://firebase.google.com).
+- "[Forward PaaS](/posts/2020/10/forward-paas/)" (October, 2020) --- Deploying to a [Cloudflare Workers](https://workers.cloudflare.com) site, the precursor to Cloudflare Pages.
 
 However, this GHA wouldn't be quite as straightforward as the ones in those posts. It would have to install not only the SSG (the Hugo binary, in this case) but also the Embedded Dart Sass binary. Furthermore, it would have to make sure the latter binary was in the build process's `$PATH`.
 
@@ -58,11 +58,11 @@ You may be wondering why this would be any better than the shell-scripting appro
 
 [^multiVendor]: I push the site to multiple vendors for a variety of reasons (*e.g.*, safety in case one vendor and/or its content delivery network happens to have an outage); but, even if you stick with only one vendor, changing environment variable(s) in the GUI-only method can be a nuisance. Besides, this site has a **lot** of environment variables, so multiply that nuisance by about 8x per vendor and you'll see my point, here.
 
-[^VercelJSON]: For Vercel, you used to be able to do this sort of thing more simply---at least where `HUGO_VERSION` was concerned---via the `vercel.json` file. However, now, [Vercel documentation calls it a "legacy method"](https://vercel.com/support/articles/how-do-i-migrate-away-from-vercel-json-env-and-build-env) and counsels setting environment variables in the GUI, instead. I will give Vercel this much, though: at least its GUI lets you set each environment variable only once for both production and "preview" environments. By comparison, the Cloudflare Pages GUI makes you set each environment variable **twice** (once for each environment). When you have to add and/or edit a **lot** of environment variables in a hurry, the CFP approach is a major pain in the wazoo.
+[^VercelJSON]: For Vercel, you used to be able to do this sort of thing more simply --- at least where `HUGO_VERSION` was concerned --- via the `vercel.json` file. However, now, [Vercel documentation calls it a "legacy method"](https://vercel.com/support/articles/how-do-i-migrate-away-from-vercel-json-env-and-build-env) and counsels setting environment variables in the GUI, instead. I will give Vercel this much, though: at least its GUI lets you set each environment variable only once for both production and "preview" environments. By comparison, the Cloudflare Pages GUI makes you set each environment variable **twice** (once for each environment). When you have to add and/or edit a **lot** of environment variables in a hurry, the CFP approach is a major pain in the wazoo.
 
 Suitably inspired, I got to work. After a few hours of research, experimentation, and occasional gnashing of teeth, I had a working GHA for each of the three hosting vendors in question.[^others]
 
-[^others]: I looked for a way to do this with [Render](https://render.com), too, but it appears the GHA ecosphere hasn't yet come up with a suitable Action. As for other static hosting vendors, each wasn't worth the trouble---yours or mine---for reasons into which I won't delve here (but have mentioned in previous posts). If you want specifics, [let me know](/contact/).
+[^others]: I looked for a way to do this with [Render](https://render.com), too, but it appears the GHA ecosphere hasn't yet come up with a suitable Action. As for other static hosting vendors, each wasn't worth the trouble --- yours or mine --- for reasons into which I won't delve here (but have mentioned in previous posts). If you want specifics, [let me know](/contact/).
 
 Anyway, that's more than enough preface. Now, let's move on to the good stuff.
 
@@ -76,7 +76,7 @@ Before I get to the vendor-specific instructions and GHAs, here are some general
 **Because of that . . .**
 - You'll need to add each such environment variable to the GitHub repo's GHA-accessible **secrets**. You'll **also** have to add vendor-specific **credentials** to these secrets. The instructions for each vendor will tell you how.
 - You'll notice, in each GHA below, that we're referring to something called `secrets.GITHUB_TOKEN`. That secret already exists within the repo, and the GHA will automatically access it; it's not something you have to create or store.
-- We'll also refer to your local Hugo project's **`.env` file**, a plain-text file where you'll be storing the aforementioned environment variables and credentials for your own future reference (including *during* this process, as you'll see). If your project doesn't already have a `.env` file, create it now at the project's top level---and **be sure** it's an entry in your project's `.gitignore` file, because this will contain sensitive information you **never** want to commit in Git even locally, much less allow it to appear on GitHub. And please don't presume just making the GitHub repo private is sufficient protection for an inadvertently committed `.env` file, because it's definitely not.
+- We'll also refer to your local Hugo project's **`.env` file**, a plain-text file where you'll be storing the aforementioned environment variables and credentials for your own future reference (including *during* this process, as you'll see). If your project doesn't already have a `.env` file, create it now at the project's top level --- and **be sure** it's an entry in your project's `.gitignore` file, because this will contain sensitive information you **never** want to commit in Git even locally, much less allow it to appear on GitHub. And please don't presume just making the GitHub repo private is sufficient protection for an inadvertently committed `.env` file, because it's definitely not.
 - The versions shown for Hugo and Embedded Dart Sass in each GHA are the current ones (0.99.0 and 1.51.0, respectively) as of the initial publication of this post. You can always see which releases are up-to-date by checking the release pages for [Hugo](https://github.com/gohugoio/hugo/releases) and [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases).
 
 Finally, because you don't want to have to scroll-scroll-scroll through instructions for vendors you don't even use, I'm using the [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`<summary>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) HTML elements to keep things nice and compact. Just click/tap on a section to toggle it as either open or closed.
@@ -451,6 +451,6 @@ And, let's not forget the most obvious possible gotcha of all: one or more of th
 
 [^leerob]: Indeed, while trying to find an appropriate Action for deploying to Vercel, I found at least one [GitHub Discussion](https://github.com/amondnet/vercel-action/discussions/126) in which Vercel's [Lee Robinson](https://github.com/leerob) was asking, essentially, "Um, why are you guys doing it this way instead of going through our GUI, as we'd prefer?" Fortunately, it appeared he was convinced by the answers he received. Nonetheless: as long as vendors are wont to raise such questions (since, as one would imagine, they worry about potential support issues arising from not-quite-kosher ways of doing stuff on their platforms), I have to be realistic and concede that GHA-assisted builds might get the side-eye from Those Who Decide Things.
 
-**Still**: while I thus concede this approach isn't truly bulletproof, I'd also suggest that, compared to the shell-scripting method, it has a better chance than did its predecessor of surviving the hosting vendors' various potential changes---not to mention GitHub's, which didn't even figure into the shell-scripting method since it was building on the vendors' platforms rather than on GitHub's.
+**Still**: while I thus concede this approach isn't truly bulletproof, I'd also suggest that, compared to the shell-scripting method, it has a better chance than did its predecessor of surviving the hosting vendors' various potential changes --- not to mention GitHub's, which didn't even figure into the shell-scripting method since it was building on the vendors' platforms rather than on GitHub's.
 
 We Shall See, as always. In the meantime: happy GHA'ing, folks.

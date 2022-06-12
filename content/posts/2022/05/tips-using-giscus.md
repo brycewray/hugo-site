@@ -28,7 +28,7 @@ That experiment continues as of this writing, and I'm here today to pass along s
 
 You may already have seen my giscus-related comments in "[Gems in the rough #17](/posts/2022/04/gems-in-rough-17/#getting-giscus-going-again)," but they factor in here, too, so please excuse whatever repetition which follows.
 
-When setting up giscus (see "Configuration" on the [giscus website](https://giscus.app)), you specify which repo it should check for appropriate GitHub Discussions. However, rather than the usual choice of the repo where your website files live, pick instead a *totally separate*, comments-only repo (if it doesn't already exist on GitHub, create it). This gives you the ability to point the **website** at a different repo without having to move your Discussions, too---which, trust me, can be a hassle.
+When setting up giscus (see "Configuration" on the [giscus website](https://giscus.app)), you specify which repo it should check for appropriate GitHub Discussions. However, rather than the usual choice of the repo where your website files live, pick instead a *totally separate*, comments-only repo (if it doesn't already exist on GitHub, create it). This gives you the ability to point the **website** at a different repo without having to move your Discussions, too --- which, trust me, can be a hassle.
 
 **However** . . .
 
@@ -39,7 +39,7 @@ If you **do** have to move your giscus-savvy Discussions to another repo, you **
 
 Also: when you set the `data-mapping` parameter, I **strongly** suggest choosing `pathname`. This will tell giscus to match a page with a GitHub Discussion titled the same as the page's internal pathname.[^pn] You then end up with awkward-looking Discussion titles but it's better than selecting `title`, since [giscus can be confused by pages with similar `title` settings](https://github.com/giscus/giscus/issues/508).
 
-[^pn]: For example, `posts/2022/05/tips-using-giscus/` is both this page's pathname and the title of its related GitHub Discussion---or, at least, the latter *will* be true when/if this page receives at least one giscus comment or reaction.
+[^pn]: For example, `posts/2022/05/tips-using-giscus/` is both this page's pathname and the title of its related GitHub Discussion --- or, at least, the latter *will* be true when/if this page receives at least one giscus comment or reaction.
 
 ## It's remote scripting all the way down
 
@@ -54,19 +54,19 @@ Sadly, the answer is: "No."
 
 ## Get lazy
 
-Be sure giscus is set to *lazy-load*, through a `data-loading="lazy"` line in your site's giscus script. That way, it won't bring in the vast majority of its code, styling, and image assets *until* the visitor has scrolled down to near where the giscus instance appears on the page---which, more often than not, probably will be near the bottom. This can give your visitors a smoother experience.
+Be sure giscus is set to *lazy-load*, through a `data-loading="lazy"` line in your site's giscus script. That way, it won't bring in the vast majority of its code, styling, and image assets *until* the visitor has scrolled down to near where the giscus instance appears on the page --- which, more often than not, probably will be near the bottom. This can give your visitors a smoother experience.
 
 ## Styling hocus-pocus
 
 I suggest that, for `data-theme`, you select `preferred_color_scheme`. That way, each giscus appearance on your pages will respect each visitor's choice for light or dark mode. (Of course, this makes a lot more sense if [your site itself **already** respects that](/posts/2019/09/thinking-dark-thoughts/)!)
 
-That may be all the styling you want to do. However, giscus by default uses the [sans-serif system fonts stack](/posts/2018/10/web-typography-part-2/#goin-back-to-the-classics---sort-of); so, if your site uses a web font and you prefer to have the giscus instance follow the typography of the rest of your page, you'll need to get a little tricky:
+That may be all the styling you want to do. However, giscus by default uses the [sans-serif system fonts stack](/posts/2018/10/web-typography-part-2/#goin-back-to-the-classics --- sort-of); so, if your site uses a web font and you prefer to have the giscus instance follow the typography of the rest of your page, you'll need to get a little tricky:
 
 1. Go to [https://github.com/giscus/giscus/tree/main/styles/themes](https://github.com/giscus/giscus/tree/main/styles/themes) and find the CSS file that matches your chosen `data-theme` setting. In my case, that's the [`preferred_color_scheme.css` file](https://github.com/giscus/giscus/blob/main/styles/themes/preferred_color_scheme.css).
 2. Copy the contents of that file into a new CSS file on your site repo; then, put the file in a `css/` folder and set your SSG to treat it as a *static assets folder*, so that the CSS file will be built on the website as `[domain]/css/[filename].css`. Here's how you do that in my three favorite SSGs:
-   - [**Astro**](https://astro.build)---Put the `css/` folder in the top-level `public/` folder, so that the CSS file is in `public/css/`.
-   - [**Eleventy**](https://11ty.dev)---Set the `css/` folder to use Eleventy's [*Passthrough File Copy* feature](https://www.11ty.dev/docs/copy/).
-   - [**Hugo**](https://gohugo.io)---Put the `css/` folder in the top-level `static/` folder, so that the CSS file is in `static/css/`.
+   - [**Astro**](https://astro.build) --- Put the `css/` folder in the top-level `public/` folder, so that the CSS file is in `public/css/`.
+   - [**Eleventy**](https://11ty.dev) --- Set the `css/` folder to use Eleventy's [*Passthrough File Copy* feature](https://www.11ty.dev/docs/copy/).
+   - [**Hugo**](https://gohugo.io) --- Put the `css/` folder in the top-level `static/` folder, so that the CSS file is in `static/css/`.
 3. At the **top** of the CSS file, insert the same CSS you normally use to add the web font to your site.[^noGF] **Be sure** that, for the `src` part, you specify an **absolute** URL (complete with `https://`), **not** a *relative* reference (*e.g.*, `/assets/fonts/my-font.woff2`), for a web font file that's already in your site. That's necessary because it's the giscus website, **not** your site, that'll be accessing the font.
 4. At the **bottom** of the CSS file, add `html { }` and put within it the necessary `font-family` rule to include your chosen web font as well as the usual fallbacks.
 

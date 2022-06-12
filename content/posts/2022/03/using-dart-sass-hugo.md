@@ -18,12 +18,12 @@ featured_image_caption: |
   <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
-**Update, 2022-03-09**: Things changed dramatically the day after I originally wrote this, so there's a [sequel](/posts/2022/03/using-dart-sass-hugo-sequel/) you'll definitely want to read after this one.
+**Update, 2022‑03‑09**: Things changed dramatically the day after I originally wrote this, so there's a [sequel](/posts/2022/03/using-dart-sass-hugo-sequel/) you'll definitely want to read after this one.
 {.yellowBox}
 
 {{% disclaimer %}}
 
-As promised at the end of my [previous post](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/) *(please read that first if you haven't already, and then come back here)*, I used what I learned in that exercise to try an experiment which worked---and it constitutes excellent news for [Hugo](https://gohugo.io) users who prefer to style their sites with [Sass](https://sass-lang.com).
+As promised at the end of my [previous post](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/) *(please read that first if you haven't already, and then come back here)*, I used what I learned in that exercise to try an experiment which worked --- and it constitutes excellent news for [Hugo](https://gohugo.io) users who prefer to style their sites with [Sass](https://sass-lang.com).
 
 First, as almost always seems necessary, I'll provide some back story.
 
@@ -31,7 +31,7 @@ First, as almost always seems necessary, I'll provide some back story.
 
 In October, 2020, the Sass project [deprecated the LibSass implementation](https://sass-lang.com/blog/libsass-is-deprecated) on which [Hugo Pipes](https://gohugo.io/hugo-pipes) depends to provide Sass support. Two key points in the deprecation announcement were:
 
-- Going forward, LibSass will receive no additional feature updates, but rather only fixes for major bugs and security issues. As a result, since LibSass has received no feature updates since November, 2018, LibSass users---and LibSass-dependent apps like Hugo---are now nearly three-and-a-half years behind the curve where Sass features are concerned.
+- Going forward, LibSass will receive no additional feature updates, but rather only fixes for major bugs and security issues. As a result, since LibSass has received no feature updates since November, 2018, LibSass users --- and LibSass-dependent apps like Hugo --- are now nearly three-and-a-half years behind the curve where Sass features are concerned.
 - All LibSass users should switch to [Dart Sass](https://sass-lang.com/dart-sass).
 
 On many if not most other [static site generators](https://jamstack.org/generators) (SSGs), moving to Dart Sass is a fairly simple matter (other than whatever Sass code changes it might require, of course): one needs only to use the [standard Sass package](https://github.com/sass/sass). However, since LibSass is baked into Hugo, the only answer [appears to be](https://discourse.gohugo.io/t/question-are-there-plans-to-support-dart-sass-and-its-newly-introduced-use-modular-system/21882) in the form of [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded), present in one's `path`. And, while that's doable on a website developer's personal device, getting it into a hosting vendor's build process is another matter, one [which remains unsolved](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099) at this writing.
@@ -84,7 +84,7 @@ What do all those scripts do? While the following explanation doesn't cover the 
 - The scripts near the bottom that start with either `dev:` or `prod:` make Sass and Hugo, respectively, do their usual thing in the appropriate mode, whether development or production. They're called by&nbsp;.&nbsp;.&nbsp;.
 - .&nbsp;.&nbsp;. `start` (for development) and `build` (for production), with each using `npm-run-all` to run multiple scripts with one command.
 - `devsass` is for development mode, and uses Sass to generate the `assets/css/index.css` file[^ignore] for Hugo Pipes to "see."[^themes] `prodsass` is like `devsass`, except for production, and thus we give it `devsass`'s functionality **plus** minifying the generated CSS.[^minify]
-- And, just for good measure, `clean` deletes[^rimraf] any `public` folder that a previous Hugo build might have left behind. This obviously is irrelevant for production---although definitely **quite** relevant for development---but I always include it to avoid occasional flashes of weirdness. It doesn't hurt anything and, besides, Ya Nevah Know.
+- And, just for good measure, `clean` deletes[^rimraf] any `public` folder that a previous Hugo build might have left behind. This obviously is irrelevant for production --- although definitely **quite** relevant for development --- but I always include it to avoid occasional flashes of weirdness. It doesn't hurt anything and, besides, Ya Nevah Know.
 
 [^ignore]: Incidentally, you may want to add `./assets/css/index.css` to your project's top-level [`.gitignore` file](https://git-scm.com/docs/gitignore), since there's no need to track this temporarily generated file; in the `build` script, the `prodsass` part generates it at the host on each build.
 
@@ -100,7 +100,7 @@ To run this in development, type `npm run start` in your terminal. For the build
 
 ### The `scss.html` partial
 
-As in the [two](/posts/2021/11/making-tailwind-jit-work-hugo/) [posts](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/) about Tailwind-3-on-Hugo, you'll want to create a separate [partial template ("partial")](https://gohugo.io/templates/partials/)---we'll name it `scss.html`---and call it with the [`partialCached` function](https://gohugo.io/functions/partialcached/). This will make both development and production far less taxing on your system and the host's. The `scss.html` partial will contain the SCSS/CSS-handling you'd otherwise do elsewhere (perhaps the site-wide `baseof.html` or a `head.html` partial), where you'll replace that code with:
+As in the [two](/posts/2021/11/making-tailwind-jit-work-hugo/) [posts](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/) about Tailwind-3-on-Hugo, you'll want to create a separate [partial template ("partial")](https://gohugo.io/templates/partials/) --- we'll name it `scss.html` --- and call it with the [`partialCached` function](https://gohugo.io/functions/partialcached/). This will make both development and production far less taxing on your system and the host's. The `scss.html` partial will contain the SCSS/CSS-handling you'd otherwise do elsewhere (perhaps the site-wide `baseof.html` or a `head.html` partial), where you'll replace that code with:
 
 ```go-html-template
 {{ partialCached "scss.html" . }}

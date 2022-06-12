@@ -28,7 +28,7 @@ When I drew up the requirements I mentioned in [Part 1](/posts/2020/07/goodbye-h
 
 Turns out there was one thing I'd forgotten, perhaps because it had been so long since I'd last needed to do it.
 
-Keep in mind that this site, like so many others built on the [Jamstack](https://jamstack.wtf), is auto-generated every time changes are pushed to the online repository where it lives. Well, sometimes, you may want to change *which* repository is "watched" so you can make some really major change to the site without having to shut it down---thus forcing the sometimes sluggish regeneration of the site's SSL certificate---and rebuild it.
+Keep in mind that this site, like so many others built on the [Jamstack](https://jamstack.wtf), is auto-generated every time changes are pushed to the online repository where it lives. Well, sometimes, you may want to change *which* repository is "watched" so you can make some really major change to the site without having to shut it down --- thus forcing the sometimes sluggish regeneration of the site's SSL certificate --- and rebuild it.
 
 I've done it before, and, trust me, I know I'll need to do it again.
 
@@ -36,7 +36,7 @@ And **that** was the scenario I forgot when evaluating the hosts I considered, w
 
 Render, however, currently lacks the capability for a site owner to do this. One of Render's techs helpfully offered to handle it for me if I wished, but noted that "it's not something we often do and technically we don't support it."
 
-So that was all she wrote for the site on Render, just a few days into my second run with it. Again---entirely my fault, not Render's, for my failure to evaluate that particular capability upfront.
+So that was all she wrote for the site on Render, just a few days into my second run with it. Again --- entirely my fault, not Render's, for my failure to evaluate that particular capability upfront.
 
 Please learn from my bad example and, when you're evaluating website hosts, make sure you've run through *all* the possible needs you'll have. If you're new to having a site, of course, you may not know what those are. But I'm definitely *not* new to this, so I should've known better. Don't be me.
 

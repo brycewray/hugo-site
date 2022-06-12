@@ -24,7 +24,7 @@ Okay, then, let's try the truth.
 
 ## You can't delete the past
 
-When I wrote and posted "[It's about the food, not the decor](/posts/2019/10/its-about-food-not-decor/)," I was in a sour mood over my various twists and turns in recent months---played out in embarrassing detail on this site---about which [static site generator](https://www.staticgen.com) (SSG) I'd use *for* this site. So, while stuck in traffic on the way home and fuming inwardly, I thought, "Screw this. Just wipe all the posts off there, swear never to write any more like those, and you're done."
+When I wrote and posted "[It's about the food, not the decor](/posts/2019/10/its-about-food-not-decor/)," I was in a sour mood over my various twists and turns in recent months --- played out in embarrassing detail on this site --- about which [static site generator](https://www.staticgen.com) (SSG) I'd use *for* this site. So, while stuck in traffic on the way home and fuming inwardly, I thought, "Screw this. Just wipe all the posts off there, swear never to write any more like those, and you're done."
 
 As the old wisdom goes, it's not a good idea to make a decision out of spite.
 
@@ -60,7 +60,7 @@ I even brought back a *non*-SSG-related post, "[Why I left Ulysses](/posts/2019/
 
 ## One more re-retraction
 
-Now that I've apologized and, I hope, recompensed for my errors, I also want to retract another retraction---well, *sort of* a retraction, in that it was retracting certain posts *in advance*.
+Now that I've apologized and, I hope, recompensed for my errors, I also want to retract another retraction --- well, *sort of* a retraction, in that it was retracting certain posts *in advance*.
 
 In "[It's about the food, not the decor](/posts/2019/10/its-about-food-not-decor)" and, to some extent, "[Back with Hugo](/posts/2019/09/back-with-hugo)," I said I was done being meta about how I put together this site with whichever SSG I choose to use at the time. A [Flavio Copes post](https://flaviocopes.com/boring-stack/) had convinced me of the wisdom of taking such a stand.
 
@@ -68,7 +68,7 @@ However, since then, I've read quite a few other folks’ posts about, guess wha
 
 In the darkest sense, perhaps this meta on my part constitutes the train wreck from which one can't avert one's eyes.
 
-In the most positive sense, I'd like to believe my search for better solutions---always the greener grass on that other side of the fence, as Copes would put it---can be as helpful to others as I've found the posts from other people.
+In the most positive sense, I'd like to believe my search for better solutions --- always the greener grass on that other side of the fence, as Copes would put it --- can be as helpful to others as I've found the posts from other people.
 
 For just one little example: believe it or not, I'm actually playing with [Gatsby](https://www.gatsbyjs.org) again.
 
@@ -76,7 +76,7 @@ Moreover, it's going quite a bit more smoothly this time (he said, his rabbit's 
 
 That's due in large part to the *excellent* advice and tutorials I've found from, yes, those other folks out there who've written about their sites and how, in some cases, they learned so much from their mistakes with particularly complicated SSGs like Gatsby.
 
-Am I ready to switch? Oh, not yet. Baby steps. But I'm learning some good stuff and catching some goofy things I did the first few times. (My recent interest in [webpack](https://webpack.js.org/), which is part of Gatsby as well as a powerful package of its own, didn't hurt.) Whether what I'm learning will translate into articles that will help you---much less into my actually being able to migrate this site to Gatsby as [I'd originally attempted months ago](/posts/2019/07/why-staying-with-hugo/)---well, that's what we'll find out in the weeks and months ahead.
+Am I ready to switch? Oh, not yet. Baby steps. But I'm learning some good stuff and catching some goofy things I did the first few times. (My recent interest in [webpack](https://webpack.js.org/), which is part of Gatsby as well as a powerful package of its own, didn't hurt.) Whether what I'm learning will translate into articles that will help you --- much less into my actually being able to migrate this site to Gatsby as [I'd originally attempted months ago](/posts/2019/07/why-staying-with-hugo/) --- well, that's what we'll find out in the weeks and months ahead.
 
 ## See ya, CYA
 
@@ -84,6 +84,6 @@ In the final analysis, it comes down to how you're best served: by my being tran
 
 I'm voting for transparency.
 
-So, those few of you still with me: thank you, and hang in there. Let's see whether I can bring you good stuff---meta or not---and, perhaps, make you smile a little in the process.
+So, those few of you still with me: thank you, and hang in there. Let's see whether I can bring you good stuff --- meta or not --- and, perhaps, make you smile a little in the process.
 
 More to the point for this post, let's see if I can avoid the temptation to cover my heinie again. It's too big to cover, anyway.

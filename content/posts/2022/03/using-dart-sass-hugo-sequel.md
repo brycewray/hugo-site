@@ -21,15 +21,15 @@ featured_image_caption: |
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my [previous post](/posts/2022/03/using-dart-sass-hugo/). This is a brief follow-up which will assume you've already read that one.
 {.yellowBox}
 
-Just when I thought the method about which I wrote yesterday would be the only way Hugo users would get to use [Dart Sass](https://sass-lang.com/dart-sass) any time soon---well, as I said therein, albeit in a totally different context, "Ya Nevah Know."
+Just when I thought the method about which I wrote yesterday would be the only way Hugo users would get to use [Dart Sass](https://sass-lang.com/dart-sass) any time soon --- well, as I said therein, albeit in a totally different context, "Ya Nevah Know."
 
-Lo and behold, I woke up this morning and saw that [Hugo's chief developer, Bjørn Erik Pedersen](https://github.com/bep), had come up with a much better way. It was never that I thought he **couldn't**, of course, but I just figured he was too busy---and he probably *is*, but he still nailed it with [this](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7) on the Hugo Discourse forum.
+Lo and behold, I woke up this morning and saw that [Hugo's chief developer, Bjørn Erik Pedersen](https://github.com/bep), had come up with a much better way. It was never that I thought he **couldn't**, of course, but I just figured he was too busy --- and he probably *is*, but he still nailed it with [this](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7) on the Hugo Discourse forum.
 
 Pedersen's solution works by building a Hugo site through a *shell script* which installs [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/) into the hosting vendor's `PATH`, where it must be for Hugo to recognize it during the build. He tested the script successfully on [Netlify](https://netlify.com); and, later, I created versions for [Vercel](https://vercel.com) and [Cloudflare Pages](https://pages.cloudflare.com). I'll provide all three below, so you can choose the one that works with your chosen hosting vendor. And, in case you use a different vendor, I'll offer a hint from Pedersen that helped me figure out how to adapt his Netlify-specific script for Vercel and CFP.
 
 ## What to do locally
 
-By the way, all of the scripts below are just for the production side; in local work---assuming you have [Embedded Dart Sass installed](https://github.com/sass/dart-sass-embedded/releases) in the system `PATH` on your local development machine[^DSElocal]---you need only run your normal `hugo server` command.
+By the way, all of the scripts below are just for the production side; in local work --- assuming you have [Embedded Dart Sass installed](https://github.com/sass/dart-sass-embedded/releases) in the system `PATH` on your local development machine[^DSElocal] --- you need only run your normal `hugo server` command.
 
 [^DSElocal]: Each release of Embedded Dart Sass has versions for Linux, macOS (just x64 Macs as yet, so Apple Silicon Macs must run it in [Rosetta 2](https://en.wikipedia.org/wiki/Rosetta_(software)#Rosetta_2)), and Windows. Just download the appropriate version and extract it. That will result in a `sass_embedded` folder. Then move *the folder's contents* (but **not** the folder itself) to a location within your machine's system `PATH`. If you need help with that, long-time Hugo user [Zachary Betz](https://github.com/zwbetz-gh) has a great explainer, "[How to Add a Binary (or Executable, or Program) to Your PATH on macOS, Linux, or Windows](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/)."
 
@@ -211,5 +211,5 @@ And all of that gives you what, you ask? Very simply, it gives you the full spee
 
 *Finally: as always, thanks to Pedersen ([@bep](https://github.com/bep)) for his continuing efforts, above and beyond his already substantial day-to-day development work, for the Hugo community!*
 
-**Update, 2022-05-18**: I've since come up with what I consider to be a [better, or at least safer, way](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/).
+**Update, 2022‑05‑18**: I've since come up with what I consider to be a [better, or at least safer, way](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/).
 {.yellowBox}

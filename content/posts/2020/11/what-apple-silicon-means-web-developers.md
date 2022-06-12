@@ -21,7 +21,7 @@ It's common to see web developers using laptops and desktops that run [macOS](ht
 
 And why not? Since the web runs on [\*nix](https://en.wikipedia.org/wiki/Unix-like), there is a significant incentive to build websites while using an operating system that combines enormous user-friendliness with a \*nix-like foundation. (To be specific, macOS is based on [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution), but that's another story.)
 
-This choice of OSs has become considerably more interesting in recent days with the introduction of [Apple's first Mac models](https://support.apple.com/en-us/HT211814)---Mac Mini, MacBook Air, and the 13-inch version of the MacBook Pro---whose central processing units (CPUs) are created by Apple itself. And, while what we're seeing now constitute only the beginning of a transition from Intel-created CPUs to Apple Silicon, [it's clear the move is a *big* win](https://www.zdnet.com/article/apple-silicon-m1-is-everything-apple-promised-so-whats-next/).
+This choice of OSs has become considerably more interesting in recent days with the introduction of [Apple's first Mac models](https://support.apple.com/en-us/HT211814) --- Mac Mini, MacBook Air, and the 13-inch version of the MacBook Pro --- whose central processing units (CPUs) are created by Apple itself. And, while what we're seeing now constitute only the beginning of a transition from Intel-created CPUs to Apple Silicon, [it's clear the move is a *big* win](https://www.zdnet.com/article/apple-silicon-m1-is-everything-apple-promised-so-whats-next/).
 
 The processors are enabling precisely the gains that Apple has promised ever since [announcing](https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/) Apple Silicon-based Macs back in June. Compared to their Intel-based predecessors, these new Macs are tremendously faster, more power-efficient, and more RAM-efficient. They're even able to emulate Intel-optimized software so it runs at least as well as on the Intel-based Macs they're replacing, and often *better*.
 
@@ -33,11 +33,11 @@ Well&nbsp;.&nbsp;.&nbsp;. perhaps not just yet, and certainly not as their *only
 
 With all of this going for ASBMs, what could possibly go wrong?
 
-For now, the missing puzzle piece for ASBMs where Mac-using web devs are concerned is a way to run *[virtualization](https://opensource.com/resources/virtualization)* apps---mainly, for running Windows.[^Linux]
+For now, the missing puzzle piece for ASBMs where Mac-using web devs are concerned is a way to run *[virtualization](https://opensource.com/resources/virtualization)* apps --- mainly, for running Windows.[^Linux]
 
 [^Linux]: It helps for running [Linux](https://linux.org), too, if your site targets Linux users (although there are so many different Linux distributions, that can still get problematic); but, for desktop users, you're pretty well covered with just Windows and macOS.
 
-The simple truth is: the vast majority of computer users run Windows, especially in settings where Apple devices are considered too expensive. Thus, nearly all web devs have to make their sites appear and work properly on Windows, so they have to be able to *view* their sites on Windows. On an Intel-based Mac, that's where virtualization comes in. For example, on my Intel-based 2017 Mac, I do this through Windows running in [Parallels Desktop](https://parallels.com/desktop). On an ASBM, you can't get there from here---yet.
+The simple truth is: the vast majority of computer users run Windows, especially in settings where Apple devices are considered too expensive. Thus, nearly all web devs have to make their sites appear and work properly on Windows, so they have to be able to *view* their sites on Windows. On an Intel-based Mac, that's where virtualization comes in. For example, on my Intel-based 2017 Mac, I do this through Windows running in [Parallels Desktop](https://parallels.com/desktop). On an ASBM, you can't get there from here --- yet.
 
 To be sure, an ASBM certainly can run macOS *versions* of all the major non-obsolete[^noIE] browsers that run on Windows, but that's no substitute for really running their Windows versions.
 
@@ -51,7 +51,7 @@ Efforts are underway to make virtualization work on ASBMs. We don't know when th
 
 In case you're wondering: doing web dev for *mobile* devices, as opposed to desktop and laptop computers, actually can be somewhat less problematic.
 
-*For the most part*, the mobile form of Chrome works the same on both Android (where it's usually the default browser) and iOS. I say, "for the most part," because Apple requires every iOS browser to use the same WebKit engine as Safari, rather than the engine it uses on Android. However, in my personal testing (YMMV), I've found no significant differences in the results, all other things---such as screen sizes---being equal.[^mobDif] Also, the default browser on Samsung phones is based on the same engine as the Android version of Chrome.
+*For the most part*, the mobile form of Chrome works the same on both Android (where it's usually the default browser) and iOS. I say, "for the most part," because Apple requires every iOS browser to use the same WebKit engine as Safari, rather than the engine it uses on Android. However, in my personal testing (YMMV), I've found no significant differences in the results, all other things --- such as screen sizes --- being equal.[^mobDif] Also, the default browser on Samsung phones is based on the same engine as the Android version of Chrome.
 
 [^mobDif]: To be sure, what differences I *have* seen between Chrome-on-Android and Chrome-on-iOS don't compare to the glitches that can occur between a macOS version of a browser and its Windows counterpart.
 

@@ -77,11 +77,11 @@ This will say, as we want:
 
 This ability to [overwrite template variables](https://github.com/golang/go/issues/10608) wasn’t always possible in either Go or Hugo, so you can find really old web pages, discussions, and tutorials which could steer you wrong on this subject. However, as long as you’re using any version of Hugo since the [release of Hugo 0.48](https://gohugo.io/news/0.48-relnotes/), you’re good to go with the above.
 
-I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appeared in *August, 2018*—precisely around the time that I first started using Hugo! Ah, well. As I told you [three years ago](/posts/2019/02/old-dog-old-trick/#share-the-shame-but-share-the-help-too):
+I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appeared in *August, 2018* — precisely around the time that I first started using Hugo! Ah, well. As I told you [three years ago](/posts/2019/02/old-dog-old-trick/#share-the-shame-but-share-the-help-too):
 
 > First, don’t be ashamed to admit you don’t know something. Maybe you should be ashamed that you didn’t know enough even to have curiosity about the item of which you were ignorant, but “water under the bridge” and all that rot.
 >
-> Second, when you belatedly discover the thing you surprisingly had missed, let others know it, too. Life happens and people miss things. They’ll appreciate knowing—finally knowing.
+> Second, when you belatedly discover the thing you surprisingly had missed, let others know it, too. Life happens and people miss things. They’ll appreciate knowing — finally knowing.
 
 ## Learning from a friendly hat-tip
 
@@ -97,7 +97,7 @@ More annoyingly, I found no way to fix the no-animation-data glitch when I resea
 
 Anyway, I went back to the `stweetv2` Hugo shortcode covered in the [most recent post](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) and added some logic which avoids showing any GIFs. Not fun, but necessary, in my view. (I also updated that post accordingly.)
 
-### Update, 2022-04-10
+### Update, 2022‑04‑10
 
 I have now learned *why* this didn't work with the V2 API. I found the following in the [Twitter documentation for the V2 API's `media` object](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media):
 
@@ -126,7 +126,7 @@ Only thing was, I figured that was a cop-out, and a lazy one at that.
 
 So I finally (?) came up with this fix: load the styling for only the web fonts via *external* CSS (*i. e.*, CSS living in one or more separate, linked `.css` files) while still handling all other styling as *internal* CSS. That works because (a.) the web fonts’ CSS very rarely changes while (b.) I’m frequently dorking around with the internal CSS and, thus, need to inject it in such a way as to defeat too-aggressive caching.
 
-One added wrinkle is that the single-file [Inter](https://rsms.me/inter/) variable font---which the site is using as of the initial publication of this post---can induce some funkiness with oblique characters, especially in Safari and Firefox, if you don’t handle its CSS properly.[^4] As a result, I provide the following in each page’s `head`, in this order:
+One added wrinkle is that the single-file [Inter](https://rsms.me/inter/) variable font --- which the site is using as of the initial publication of this post --- can induce some funkiness with oblique characters, especially in Safari and Firefox, if you don’t handle its CSS properly.[^4] As a result, I provide the following in each page’s `head`, in this order:
 
 - External CSS file #1, which calls the Inter font file and assigns its subsets.
 - The internal CSS within a `style` element.

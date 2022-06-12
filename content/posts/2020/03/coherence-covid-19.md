@@ -19,7 +19,7 @@ featured_image_caption: |
 
 This is the third weekend of the month when the U.S.A. began to grasp just how big a deal that [COVID-19 a/k/a novel coronavirus](https://www.cdc.gov/coronavirus/2019-nCoV/index.html) was going to be. It's been a head-snapping experience for your friendly writer, just as it doubtless has been for almost all of you, wherever you are.
 
-Just two weekends ago, my vain hope for a restful weekend ended when [our first grandchild was born](/posts/2020/03/welcome-sweet-little-early-bird/) nearly a month earlier than predicted. We now know that was an astoundingly fortunate happenstance rather than the *oh-I-hope-she-didn't-arrive-too-early* that we initially believed it to be.[^Cuter] Indeed, just as I was helping our son-in-law haul all their stuff down in preparation for the trip home, the hospital was setting up the beginnings of its check-all-visitors-for-the-virus operation in the lobby. Even though we were outside the building only a moment as he loaded the vehicle, we had to pass muster upon our re-entry---attesting to our neither having COVID-19 symptoms nor having been out of the U.S.A. recently (specific other countries were mentioned, but I frankly didn't understand what the person asking said through her somewhat ill-fitting mask).
+Just two weekends ago, my vain hope for a restful weekend ended when [our first grandchild was born](/posts/2020/03/welcome-sweet-little-early-bird/) nearly a month earlier than predicted. We now know that was an astoundingly fortunate happenstance rather than the *oh-I-hope-she-didn't-arrive-too-early* that we initially believed it to be.[^Cuter] Indeed, just as I was helping our son-in-law haul all their stuff down in preparation for the trip home, the hospital was setting up the beginnings of its check-all-visitors-for-the-virus operation in the lobby. Even though we were outside the building only a moment as he loaded the vehicle, we had to pass muster upon our re-entry --- attesting to our neither having COVID-19 symptoms nor having been out of the U.S.A. recently (specific other countries were mentioned, but I frankly didn't understand what the person asking said through her somewhat ill-fitting mask).
 
 [^Cuter]: And she's still fine, by the way, gaining weight and getting cuter with every new photo our daughter and son-in-law send.
 
@@ -31,15 +31,15 @@ From there, at least for us folks here in my country, things seemed to spiral ou
 
 ## Corona-craziness
 
-Over the next couple of days, [one major sporting event after another began to be cancelled](https://www.cnbc.com/2020/03/12/the-sports-world-grinds-to-a-halt-amid-the-coronavirus-outbreak.html). The news about the spread of COVID-19 came fast and furious and, by the end of the work week, I decided to take home my water mug---the only personal item I usually leave at the office---just in case we were told over the weekend to work from home for a few days as a matter of caution.
+Over the next couple of days, [one major sporting event after another began to be cancelled](https://www.cnbc.com/2020/03/12/the-sports-world-grinds-to-a-halt-amid-the-coronavirus-outbreak.html). The news about the spread of COVID-19 came fast and furious and, by the end of the work week, I decided to take home my water mug --- the only personal item I usually leave at the office --- just in case we were told over the weekend to work from home for a few days as a matter of caution.
 
 *A few days.* Wow. How amazingly naïve an assumption that now seems in retrospect.
 
-That was a little over a week ago, and now we've become a nation---and a world---edging toward lockdown and a full-stop to the economy while trying desperately to avoid getting, or giving each other, this damnable virus.
+That was a little over a week ago, and now we've become a nation --- and a world --- edging toward lockdown and a full-stop to the economy while trying desperately to avoid getting, or giving each other, this damnable virus.
 
 My wife and I are in our sixties (albeit not yet the apparently "magic" age of sixty-five), so we have to be especially careful about getting exposed. That's easier said than done, as each new day brings word of new COVID-19 cases here in Dallas/Fort Worth.
 
-By the way: I have seen some gallows humor in social media to the effect that younger folks, especially the ones who love to tout that "OK, Boomer" crap, are ironically (?) cheering on this virus as a "Boomer cleaner"---*i.e.*, as something which will wipe out a generation they detest for supposedly depriving them of jobs, electing leaders they hate, and so on.[^BoomerCleaner] As the father and father-in-law of two very fine millennials, I prefer to think otherwise. But it seems there are some among the literati who've been thinking and [writing](https://thefederalist.com/2020/03/19/will-the-costs-of-a-great-depression-outweigh-the-risks-of-coronavirus/) that, given a choice between the crash of the world economy and just going back to normal life while letting the virus "thin the herd" of us older folks, they're inclined toward the latter.
+By the way: I have seen some gallows humor in social media to the effect that younger folks, especially the ones who love to tout that "OK, Boomer" crap, are ironically (?) cheering on this virus as a "Boomer cleaner" --- *i.e.*, as something which will wipe out a generation they detest for supposedly depriving them of jobs, electing leaders they hate, and so on.[^BoomerCleaner] As the father and father-in-law of two very fine millennials, I prefer to think otherwise. But it seems there are some among the literati who've been thinking and [writing](https://thefederalist.com/2020/03/19/will-the-costs-of-a-great-depression-outweigh-the-risks-of-coronavirus/) that, given a choice between the crash of the world economy and just going back to normal life while letting the virus "thin the herd" of us older folks, they're inclined toward the latter.
 
 [^BoomerCleaner]: I emphatically plead "Not guilty" to the latter; but, especially given what the recent economic carnage has done to my retirement account, I admit I will be working full-time for as long as I have the opportunity and health to do so.
 
@@ -47,7 +47,7 @@ Anyway, back to the "easier-said-than-done" part about avoiding COVID-19 where w
 
 Last night, for example, an email from the auto dealership where we recently purchased a vehicle informed us that one of the dealership's employees had tested positive for COVID-19 and, as a result, the dealership was closing temporarily.[^Dealership] I was there on March 7 to pick up tags for the new vehicle[^Kennedy], but interacted with only one or two employees during my brief visit. That was two weeks ago, which is the limit of the [observed incubation period for COVID-19](https://www.who.int/news-room/q-a-detail/q-a-coronaviruses); but so far, so good.
 
-[^Dealership]: If you're thinking, "Well, it's not as if they were gonna get car-shoppers on the lot with all that's going on right now," all I can reply is: "You'd think." You see, this area seems full of COVID-19 skeptics. They surely have seen news coverage of the virus but---given the typical political leanings around here---are doubtful about whether it's truly all that serious. Science begs to differ, as it usually does.
+[^Dealership]: If you're thinking, "Well, it's not as if they were gonna get car-shoppers on the lot with all that's going on right now," all I can reply is: "You'd think." You see, this area seems full of COVID-19 skeptics. They surely have seen news coverage of the virus but --- given the typical political leanings around here --- are doubtful about whether it's truly all that serious. Science begs to differ, as it usually does.
 
 [^Kennedy]: As I [previously mentioned](/posts/2020/03/welcome-sweet-little-early-bird/), I had just finished that errand when we learned the aforementioned grandchild had decided to start her early arrival.
 
@@ -73,7 +73,7 @@ I can hear the skeptics now: "Ooh, you're too *negative*."
 
 Fine. So I'm negative. *But*&nbsp;.&nbsp;.&nbsp;.
 
-.&nbsp;.&nbsp;. Given how quickly this whole thing came upon us---remember, [Patient Zero in Wuhan, China, was only about four months ago](https://www.businessinsider.com/coronavirus-patients-zero-contracted-case-november-2020-3)---I feel this simply justifies an attitude I've long held *and* seen vindicated over and over again: being a pessimist may not make you fun to be around, but it also is more likely to prepare you for reality.[^Surprises]
+.&nbsp;.&nbsp;. Given how quickly this whole thing came upon us --- remember, [Patient Zero in Wuhan, China, was only about four months ago](https://www.businessinsider.com/coronavirus-patients-zero-contracted-case-november-2020-3) --- I feel this simply justifies an attitude I've long held *and* seen vindicated over and over again: being a pessimist may not make you fun to be around, but it also is more likely to prepare you for reality.[^Surprises]
 
 [^Surprises]: Since I hate surprises, I'd rather be prepared than gobsmacked.
 

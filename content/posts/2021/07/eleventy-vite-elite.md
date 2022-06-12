@@ -30,7 +30,7 @@ Indeed, I am so sold on it that the site now runs off my [`eleventy_vite`](https
 
 How all this came about is our tale for today, friends and neighbors.
 
-**Update, 2021-08-22**: Since the repo change had the unwanted but unavoidable effect of losing the Git history in `eleventy_solo`, I have since cloned `eleventy_solo` and added Vite to the resulting `eleventy_site` repo; I now run the site off that repo, instead. Then, today, I switched **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the similarly-themed one which follows](/posts/2021/07/beginners-luck-4-vite-edition/) for [archival purposes](/posts/2019/10/otoh/).
+**Update, 2021‑08‑22**: Since the repo change had the unwanted but unavoidable effect of losing the Git history in `eleventy_solo`, I have since cloned `eleventy_solo` and added Vite to the resulting `eleventy_site` repo; I now run the site off that repo, instead. Then, today, I switched **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the similarly-themed one which follows](/posts/2021/07/beginners-luck-4-vite-edition/) for [archival purposes](/posts/2019/10/otoh/).
 {.yellowBox}
 
 ## Curiosity killed the cache
@@ -53,9 +53,9 @@ Chad replied that, in his search for answers, he'd been looking at [another Elev
 
 > One thing with the example theme is that it seems to use webpack. I find webpack hard to understand at times, so I was looking for a different approach.
 
-Ah, yes, [webpack](https://webpack.js.org)---that household-name-class *bundler* tool which can be both the most powerful weapon and the largest headache a web dev can encounter.
+Ah, yes, [webpack](https://webpack.js.org) --- that household-name-class *bundler* tool which can be both the most powerful weapon and the largest headache a web dev can encounter.
 
-Incidentally, in case you're unaware of the purpose of a bundler, here's a greatly simplified explanation.[^Zhou] A bundler works at build time for a website or web app to combine certain separate assets, like CSS or JS files, into one *bundle*---with hashed file name---per file type, references to which it then injects into the website's HTML. That's trickier than it sounds because the bundler also automatically reconciles any conflicts among variables in the multiple JS files. The bundling process helps the website's performance because it can deliver the same content in fewer downloadable files.
+Incidentally, in case you're unaware of the purpose of a bundler, here's a greatly simplified explanation.[^Zhou] A bundler works at build time for a website or web app to combine certain separate assets, like CSS or JS files, into one *bundle* --- with hashed file name --- per file type, references to which it then injects into the website's HTML. That's trickier than it sounds because the bundler also automatically reconciles any conflicts among variables in the multiple JS files. The bundling process helps the website's performance because it can deliver the same content in fewer downloadable files.
 
 [^Zhou]: I would also refer you, as I've done before, to Victor Zhou's "[Why Webpack? (or, How Not to Serve JavaScript)](https://victorzhou.com/blog/why-you-should-use-webpack/)," which covers the subject well, albeit from an early-2019 and highly webpack-centric perspective.
 
@@ -95,13 +95,13 @@ Hmm. I'd been down this road before.
 
 ## Tedious tooling
 
-My initial use of Eleventy began over Labor Day weekend, 2019. This was a few weeks after the [first](/posts/2019/07/why-staying-with-hugo/) of several unsuccessful attempts to "get" the [Gatsby](https://gatsbyjs.com) SSG---although I did briefly succeed with it [later that year](/posts/2019/10/now-gatsby-geezer/), only to [go back to Eleventy soon thereafter](/posts/2019/12/packing-up/).
+My initial use of Eleventy began over Labor Day weekend, 2019. This was a few weeks after the [first](/posts/2019/07/why-staying-with-hugo/) of several unsuccessful attempts to "get" the [Gatsby](https://gatsbyjs.com) SSG --- although I did briefly succeed with it [later that year](/posts/2019/10/now-gatsby-geezer/), only to [go back to Eleventy soon thereafter](/posts/2019/12/packing-up/).
 
 The first time with Eleventy, I wanted to convert the site from a [Hugo](https://gohugo.io)-based setup on which I'd used [Sass/SCSS](https://sass-lang.com) for styling. Only thing was: Eleventy, from the beginning, has been intended as something that you configure to function as needed, and that includes one's [asset pipeline](https://mxb.dev/blog/eleventy-asset-pipeline/). I'd gotten spoiled by how Hugo's built-in [Hugo Pipes](https://gohugo.io/hugo-pipes/) functionality had made compiling Sass to CSS so effortless but, at that time, I couldn't find any examples of how to accomplish it in Eleventy. A few searches later, I started using the [Gulp](https://gulpjs.com) [task runner](https://medium.com/tiny-code-lessons/javascript-task-runners-explained-c4762728bda), plus some plugins, to give Eleventy similar Sass-to-CSS compilation capabilities.
 
 Those several times during 2019 that I tried or used Gatsby had shown me how much it gained from being joined at the hip with the webpack bundler tool; so, near the end of 2019, I grafted webpack and Eleventy together and, as described in "[Packing up](/posts/2019/12/packing-up/)," introduced my combo to the site in the `eleventy_bundler` repo (which, although [still available](https://github.com/brycewray/eleventy_bundler) for viewing by the curious, is only a shadow of its former self).
 
-This served until the second quarter of 2020. Then, tired of dealing with the increasing hassles of webpack configuration but unable to find a suitable replacement tool (including the much-touted [Parcel](https://parceljs.org)), I decided to drop webpack in favor of doing everything through scripts in `package.json`---and, at the time, an image-processing script for build time that, later, [got replaced](/posts/2020/07/transformed/) in favor of using [Cloudinary](https://cloudinary.com).
+This served until the second quarter of 2020. Then, tired of dealing with the increasing hassles of webpack configuration but unable to find a suitable replacement tool (including the much-touted [Parcel](https://parceljs.org)), I decided to drop webpack in favor of doing everything through scripts in `package.json` --- and, at the time, an image-processing script for build time that, later, [got replaced](/posts/2020/07/transformed/) in favor of using [Cloudinary](https://cloudinary.com).
 
 After all, I figured, I really wasn't deriving enough benefit from webpack's bundling powers to justify keeping it. It was the proverbial case of killing a fly with a machine gun.
 
@@ -113,13 +113,13 @@ However, it was a false kind of simplicity. I flat-out didn't worry about cache-
 
 In the year-plus following the switch away from webpack, my `package.json` scripting became pretty convoluted. It *worked*, mind you, but I found myself often searching for ways to do things "manually" that a bundler tool would do. Moreover, as in the embarrassing SNAFU I described in a later edit to "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy/)," some solutions I chose turned out to be not so great.
 
-Fast-forward to earlier this week---and my still all-too-"manual" approach to cache-busting both CSS and JS (especially the JS) at build time.
+Fast-forward to earlier this week --- and my still all-too-"manual" approach to cache-busting both CSS and JS (especially the JS) at build time.
 
 I realized that, yes, the time had come to integrate a bundler once again.
 
 ## A better bundler
 
-To be sure, I *wasn't* going back to webpack. Its complexity alone was enough to dissuade me; but I also recalled all too well how, out of curiosity one day last fall, I had tried updating the old `eleventy_bundler` repo [from webpack version 4 to version 5](https://webpack.js.org/migrate/5/), only to be scared away by tons of breaking changes---many of which were insoluble because of numerous remaining incompatibilities between version 5 and certain plugins that I needed.
+To be sure, I *wasn't* going back to webpack. Its complexity alone was enough to dissuade me; but I also recalled all too well how, out of curiosity one day last fall, I had tried updating the old `eleventy_bundler` repo [from webpack version 4 to version 5](https://webpack.js.org/migrate/5/), only to be scared away by tons of breaking changes --- many of which were insoluble because of numerous remaining incompatibilities between version 5 and certain plugins that I needed.
 
 A year earlier, I might've opted instead for the supposedly easier and smarter Parcel bundler, but it hadn't impressed me in the first place. I never found it to be as "automatic" and "configuration-free" with my repo tests as its adherents always claimed it to be.
 
@@ -142,7 +142,7 @@ This time, after reading Mr. East's article and re-re-reviewing Mr. Papado&shy;g
 
 ### Baby steps
 
-First, I cloned just the `eleventy-with-vite` repo itself---*i.e.*, without mixing any of my stuff with it. I called the cloned repo `eleventy_vite` to distinguish it from `eleventy_solo`. I played with it for a while, running it through its paces. So far, so good: both dev and build modes worked as advertised.
+First, I cloned just the `eleventy-with-vite` repo itself --- *i.e.*, without mixing any of my stuff with it. I called the cloned repo `eleventy_vite` to distinguish it from `eleventy_solo`. I played with it for a while, running it through its paces. So far, so good: both dev and build modes worked as advertised.
 
 Then, I added [Tailwind CSS](https://tailwindcss.com), following Tailwind's [own documentation for using it with Vite](https://tailwindcss.com/docs/guides/vue-3-vite), and was stunned by how cleanly and well everything worked right away. Unlike how I'd gotten Tailwind working in `eleventy-solo`, there was no need for tortured [PostCSS](https://postcss.org) commands in my `package.json`.
 
@@ -152,7 +152,7 @@ First came my CSS, and my specific Tailwind configuration with it. No problem. E
 
 Next, I added my Eleventy templating and configuration code. In the `.eleventy.js` config file, I made sure to mix in certain specifics from `eleventy-with-vite` that made the Eleventy/Vite partnership workable while *not* bringing over anything that would cause trouble for Vite. Again, all was fine.
 
-Finally, I brought in my content---all of it. With other tools that I'd used in the past, such moves would result in cascading crashes which would bring me to a frustrating stop. This time (except for a few self-inflicted issues that Vite's usually helpful error messages helped me fix in just a few minutes), that simply didn't happen.
+Finally, I brought in my content --- all of it. With other tools that I'd used in the past, such moves would result in cascading crashes which would bring me to a frustrating stop. This time (except for a few self-inflicted issues that Vite's usually helpful error messages helped me fix in just a few minutes), that simply didn't happen.
 
 For the second time during all this, I was stunned, this time by the ease and *non*-destructive results of the process. I'd thought it would take me days, maybe weeks, to come up with an Eleventy/Vite repo that could support the website. In fact, it had taken just a few hours.
 
@@ -160,9 +160,9 @@ I was pleasantly surprised also to see that, in addition to the cache-busting I 
 
 Once I had **everything** running successfully in `eleventy_vite` in dev mode, I pushed the repo to GitHub and connected it to [Vercel](https://vercel.com) to see how it worked on the real web (I'd already checked the build process locally, but that's not the same). There was nary a hiccup.
 
-I mulled it over for a couple of hours; then I went back into my Vercel setup and [switched my domain](https://vercel.com/docs/custom-domains) from `eleventy_solo` to `eleventy_vite`---thus making `eleventy-vite` the new repo for the site. Again, this was only a few hours after I'd **started** the whole process by cloning `eleventy-with-vite`!
+I mulled it over for a couple of hours; then I went back into my Vercel setup and [switched my domain](https://vercel.com/docs/custom-domains) from `eleventy_solo` to `eleventy_vite` --- thus making `eleventy-vite` the new repo for the site. Again, this was only a few hours after I'd **started** the whole process by cloning `eleventy-with-vite`!
 
-Incidentally: although I urge you to read [Mr. East's article](https://medium.com/@SimonEast/clean-sass-and-js-with-eleventy-in-2021-using-vite-98747500d8f8) and look at [Mr. Papado&shy;georgo&shy;poulos's repo](https://github.com/fpapado/eleventy-with-vite) for yourself, I suggest you also spend a little time with [`eleventy-vite`](https://github.com/brycewray/eleventy_vite) to see how the code---some of which still has a lot of the original commenting from `eleventy-with-vite`---makes it all work with my code and content.
+Incidentally: although I urge you to read [Mr. East's article](https://medium.com/@SimonEast/clean-sass-and-js-with-eleventy-in-2021-using-vite-98747500d8f8) and look at [Mr. Papado&shy;georgo&shy;poulos's repo](https://github.com/fpapado/eleventy-with-vite) for yourself, I suggest you also spend a little time with [`eleventy-vite`](https://github.com/brycewray/eleventy_vite) to see how the code --- some of which still has a lot of the original commenting from `eleventy-with-vite` --- makes it all work with my code and content.
 
 **Note**: I may have a follow-up post that delves into this more fully with actual code samples, much as I ended my CSS cache-busting posts troika with [such a piece](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/); but this one surely is already long enough as it is, and there's a **lot** of code to cover in such a post.
 {.yellowBox}
@@ -171,7 +171,7 @@ Incidentally: although I urge you to read [Mr. East's article](https://medium.co
 
 All was not blissful, however. I did run into a couple of annoyances, both of which remain unsolved as of this post's original publication.
 
-One came when I implemented my usual [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) on the site. Although everything seemed normal, I saw error messages in the browser Inspector that indicated some code in the repo was violating the CSP's [`script-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) directive. Turns out it's a [known issue](https://github.com/brillout/vite-plugin-ssr/issues/39) with a Vite plugin, also included with `eleventy-with-vite`, that provides special polyfill support for [legacy browsers](https://caniuse.com/?search=modules); but it appears to affect *only* those browsers, and I really don't support them anyway---the site is on Tailwind CSS 2.x, which [also doesn't support them](https://tailwindcss.com/docs/browser-support)---so I'm not worrying about it.
+One came when I implemented my usual [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) on the site. Although everything seemed normal, I saw error messages in the browser Inspector that indicated some code in the repo was violating the CSP's [`script-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) directive. Turns out it's a [known issue](https://github.com/brillout/vite-plugin-ssr/issues/39) with a Vite plugin, also included with `eleventy-with-vite`, that provides special polyfill support for [legacy browsers](https://caniuse.com/?search=modules); but it appears to affect *only* those browsers, and I really don't support them anyway --- the site is on Tailwind CSS 2.x, which [also doesn't support them](https://tailwindcss.com/docs/browser-support) --- so I'm not worrying about it.
 
 The other falls in the "ah, well, I wish it could do it but, for now, it can't" category. In addition to Vite's handling the bundling/cache-busting of my CSS and JS files, I'd hoped to let it do the same with font files and maybe even a local image or two (*e.g.*, [favicon files](https://en.wikipedia.org/wiki/Favicon) or the logo [SVGs](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) which appear in the site-wide header and footer). As I mentioned earlier: right out of the box, Vite bundles [numerous file formats](https://github.com/vitejs/vite/blob/main/packages/vite/src/node/constants.ts), including most image formats and [WOFF2 font files](https://fileinfo.com/extension/woff2).[^2] However, [apparently due to something wacky in recent versions of Vite 2.x](https://github.com/vitejs/vite/issues/2375), that doesn't work as it should.  While Vite successfully generates hashed/bundled versions of the files, it doesn't list them in the resulting [`manifest.json`](https://vitejs.dev/config/#build-manifest).[^3] That matters because such listings would've enabled Eleventy to "find" the files using their auto-generated names. So, until that's resolved, I'll go on cache-busting those specific types of files "manually," as before. It's no biggie, but rather something I hope will get fixed soon.
 
@@ -183,10 +183,10 @@ Such was the case with the process I described herein. It started with a reader'
 
 Sometimes, lucky rabbits find carrots. So far, the Eleventy/Vite combo is proving to be a tasty morsel. I'll keep you advised as to my progress, including most definitely if this new way of handling the site should turn out unexpectedly to be more stick than carrot.
 
-**Update, 2021-07-25**: I now have an Eleventy/Vite starter set online; see "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition/)."
+**Update, 2021‑07‑25**: I now have an Eleventy/Vite starter set online; see "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition/)."
 {.yellowBox}
 
-[^1]:	Of the hashed files, two are JS "helper" files which keep both the image "lazy-loading" functionality and the recently added all-Tailwind nav menu from violating the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)---specifically, its [`script-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) part.
+[^1]:	Of the hashed files, two are JS "helper" files which keep both the image "lazy-loading" functionality and the recently added all-Tailwind nav menu from violating the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) --- specifically, its [`script-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) part.
 
 [^2]:	With webpack, you need to set up special "[loaders](https://webpack.js.org/loaders/)" for various file formats, which is still another way Vite cleans webpack's clock for a busy web dev.
 

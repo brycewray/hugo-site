@@ -23,9 +23,9 @@ Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) i
 
 As long as your site's monthly in/out bandwidth stays under 100&nbsp;GB, Netlify gives you all these advantages even on the free tier:
 
-- **Easy and quick deployment from your online repository**---You can connect your Netlify-based site to a repo on [Bitbucket](https://bitbucket.org), [GitHub](https://github.com), or [GitLab](https://gitlab.com); then, every time you push to its default branch, *bang*, Netlify auto-deploys. So, if you keep your site project synchronized among your devices ([as I do](/posts/2019/07/roger-copy/)), you can easily make changes and push them from just about anywhere.
-- **CDN-powered speed and efficiency**---Netlify puts your site's generated files on a [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) through its partnership with multiple CDN providers, mainly [Amazon CloudFront](https://aws.amazon.com/cloudfront/). This allows your visitors, wherever they are, to access your site much more quickly than if its content lived on just one location that could be halfway around the world from them. This is a huge benefit under any circumstances, but particularly if you use images. And, speaking of assets like images&nbsp;.&nbsp;.&nbsp;.
-- **Post-processing of assets**---Check the right boxes in your site's deploy settings, and each deploy will include automatic processing of items like images, CSS files, and JavaScript files to make them smaller and, thus, further improve your site's performance.
+- **Easy and quick deployment from your online repository** --- You can connect your Netlify-based site to a repo on [Bitbucket](https://bitbucket.org), [GitHub](https://github.com), or [GitLab](https://gitlab.com); then, every time you push to its default branch, *bang*, Netlify auto-deploys. So, if you keep your site project synchronized among your devices ([as I do](/posts/2019/07/roger-copy/)), you can easily make changes and push them from just about anywhere.
+- **CDN-powered speed and efficiency** --- Netlify puts your site's generated files on a [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) through its partnership with multiple CDN providers, mainly [Amazon CloudFront](https://aws.amazon.com/cloudfront/). This allows your visitors, wherever they are, to access your site much more quickly than if its content lived on just one location that could be halfway around the world from them. This is a huge benefit under any circumstances, but particularly if you use images. And, speaking of assets like images&nbsp;.&nbsp;.&nbsp;.
+- **Post-processing of assets** --- Check the right boxes in your site's deploy settings, and each deploy will include automatic processing of items like images, CSS files, and JavaScript files to make them smaller and, thus, further improve your site's performance.
 
 Lots of goodies for free, right? You betcha. So what's the problem?
 
@@ -33,7 +33,7 @@ Lots of goodies for free, right? You betcha. So what's the problem?
 
 ## Houston, the limit has landed
 
-On October 1, 2019, Netlify's free tier started having a monthly limit of 300 build minutes. While it was understandable that there would have to be a limit of this nature, and 300 minutes seemed a lot for many users of the free tier, some folks [didn't take it well](https://www.reddit.com/r/webdev/comments/dc7lx0/netlify_starts_charging_for_build_minutes/). It didn't help that Netlify announced this to free-tier customers via an email with the subject line, "Introducing the Builds Tab in the Netlify dashboard," which buried the lede---the new limit---several paragraphs down.
+On October 1, 2019, Netlify's free tier started having a monthly limit of 300 build minutes. While it was understandable that there would have to be a limit of this nature, and 300 minutes seemed a lot for many users of the free tier, some folks [didn't take it well](https://www.reddit.com/r/webdev/comments/dc7lx0/netlify_starts_charging_for_build_minutes/). It didn't help that Netlify announced this to free-tier customers via an email with the subject line, "Introducing the Builds Tab in the Netlify dashboard," which buried the lede --- the new limit --- several paragraphs down.
 
 It's important to understand that a build isn't simply what *you* are uploading to the remote box. In order to make sure the build is "clean," so to speak, each build *reinstalls* everything you've got in your setup. For example, in this site's case, that means installing [Node.js](https://nodejs.org), Eleventy, and all the [npm](https://npmjs.com) plugins that my repo's `package.json` "knows" should be there. Again: that's on *every build*. Only *then* do your actual website files come into play.
 
@@ -43,7 +43,7 @@ In my own case, three factors gradually inflated my build times to the point tha
 
 For the sake of not only including responsive images but also giving different browsers more efficient formats, I incorporated better image processing.
 
-You can do that through the right mix of plugins, but the quickest solution that would do everything I wanted---generating all the correct formats for different browsers, providing [LQIP](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) placeholders, and processing the images for maximum delivery efficiency---was my own [sharp](https://github.com/lovell/sharp)-powered [`imgxfm.js` build-time script](/posts/2020/05/going-solo-eleventy/).
+You can do that through the right mix of plugins, but the quickest solution that would do everything I wanted --- generating all the correct formats for different browsers, providing [LQIP](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) placeholders, and processing the images for maximum delivery efficiency --- was my own [sharp](https://github.com/lovell/sharp)-powered [`imgxfm.js` build-time script](/posts/2020/05/going-solo-eleventy/).
 
 Image processing during each build takes precious seconds (in my site's case, quite a few of them) so, regardless of whether your image processing approach is plugins-only, bespoke-only, or a mixture of the two, this will ramp up your build times.
 
@@ -51,7 +51,7 @@ Image processing during each build takes precious seconds (in my site's case, qu
 
 Some months ago, intrigued by the whole [IndieWeb](https://indieweb.org/) thing, I began dabbling in [webmentions](/posts/2020/04/webmentions-three-ssgs-1/); and I encourage you to consider doing the same with your own site. But, you ask, how would they increase the build times?
 
-Well, they don't add more than a few milliseconds to *each* build, as they accumulate over time. The problem is that, since they get updated only when you *do* a build, they provide incentive to do *more* builds---notably in the immediate couple of days after a post, when you get the most online reaction and it translates to webmentions.[^ego] To my knowledge, there's no dynamic way to show updated webmentions on a truly static site. You *have* to build again, thus edging you closer to the build minutes cap.
+Well, they don't add more than a few milliseconds to *each* build, as they accumulate over time. The problem is that, since they get updated only when you *do* a build, they provide incentive to do *more* builds --- notably in the immediate couple of days after a post, when you get the most online reaction and it translates to webmentions.[^ego] To my knowledge, there's no dynamic way to show updated webmentions on a truly static site. You *have* to build again, thus edging you closer to the build minutes cap.
 
 [^ego]: Pardon my ego, folks, but I *like* to share with you when my work gets responses on social media.
 
@@ -61,9 +61,9 @@ And, believe me, I was going to do *plenty* more, which leads us to the third&nb
 
 ### Site maintenance in general
 
-Over and above writing posts and adding images, sometimes you just have to figure out stuff---HTML, CSS, and such---that's gone awry with your site, and *that* can require a lot of builds, some of them biggies when you're pushing a lot of changes that have to be processed on the fly.
+Over and above writing posts and adding images, sometimes you just have to figure out stuff --- HTML, CSS, and such --- that's gone awry with your site, and *that* can require a lot of builds, some of them biggies when you're pushing a lot of changes that have to be processed on the fly.
 
-For example: one Saturday last month, I had a particularly heavy session that racked up nearly a *half-hour* of build time---one-tenth of the monthly Netlify allowance---in that one day!
+For example: one Saturday last month, I had a particularly heavy session that racked up nearly a *half-hour* of build time --- one-tenth of the monthly Netlify allowance --- in that one day!
 
 ## How you can stay with Netlify
 
@@ -73,7 +73,7 @@ One obvious choice, albeit a drastic one, would be to leave Netlify for another 
 
 [^otherFish]: Be aware that quite a few of those competitors come up short compared to Netlify on items *other than* the generosity of the free tier, despite the initial impressions their marketing efforts might give. I may write about that in the near future.
 
-Keep in mind this central fact: Netlify's 300-minute monthly cap is for builds *on its infrastructure*. However, if you simply do the build *somewhere else* and then do only the *deploy* on Netlify's infrastructure, you use *zero* Netlify build minutes---after which the actual deployment not only isn't even counted as a build but also usually takes well under ten *seconds*.
+Keep in mind this central fact: Netlify's 300-minute monthly cap is for builds *on its infrastructure*. However, if you simply do the build *somewhere else* and then do only the *deploy* on Netlify's infrastructure, you use *zero* Netlify build minutes --- after which the actual deployment not only isn't even counted as a build but also usually takes well under ten *seconds*.
 
 Fortunately for us, a fellow named Marek Pukaj already led the way with his article, "[Build with GitHub Actions, host on Netlify](https://medium.com/@MarekPukaj/build-with-github-actions-host-on-netlify-ebf5fa505616)." As he explained:
 
@@ -89,7 +89,7 @@ So what are GitHub Actions?
 
 [Introduced in 2018](https://github.blog/2018-10-17-action-demos/) and [enhanced with CI/CD capabilities in 2019](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/), GitHub Actions allow you to write simple (well, *relatively* simple) .YML files that, essentially, are scripts for operations to be performed on the GitHub platform.
 
-To use this to deploy a Netlify site from a GitHub repo---and don't worry, GitHub haters, I have an alternative for you later on in this tome---you first have to get the necessary authorization and site ID variables, and then add them to your site's GitHub repo. To do so:
+To use this to deploy a Netlify site from a GitHub repo --- and don't worry, GitHub haters, I have an alternative for you later on in this tome --- you first have to get the necessary authorization and site ID variables, and then add them to your site's GitHub repo. To do so:
 
 1. Open a new file in a text editor (preferably a secure one, like [Standard Notes](https://standardnotes.org)) so you'll be ready to store one of the variables.
 2. Log into your Netlify account in your browser.
@@ -127,7 +127,7 @@ Yes, I know: *whew*. But it's all necessary. Quoting Mr. Pukaj once more:
 
 &nbsp;.&nbsp;.&nbsp;. which brings us to our GitHub Action for the build/deploy operation.
 
-Store the following---call it `netlify-deploy.yml`, if you wish---in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions.
+Store the following --- call it `netlify-deploy.yml`, if you wish --- in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions.
 
 ```yaml
 name: CI-Netlify
@@ -189,7 +189,7 @@ Here's how it works.
 
 - The `on` section tells it to run whenever one of two things happens:
 	- The first is whenever a change is pushed to the default branch, `main`.
-	- The second is when it's 5:00 AM [UTC](https://www.timeanddate.com/worldclock/timezone/utc)---which corresponds to late night in my time zone---and works because of GitHub Actions’ support for [cron jobs](https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/). This cron job generates that earlier-mentioned automatic daily build for the sake of updating webmentions.
+	- The second is when it's 5:00 AM [UTC](https://www.timeanddate.com/worldclock/timezone/utc) --- which corresponds to late night in my time zone --- and works because of GitHub Actions’ support for [cron jobs](https://www.ostechnix.com/a-beginners-guide-to-cron-jobs/). This cron job generates that earlier-mentioned automatic daily build for the sake of updating webmentions.
 - Then there's the `jobs` section. It gives these orders:
 	- Use the latest version of [Ubuntu](https://ubuntu.com) that the remote server is willing to load.
 	- "Checkout" that aforementioned default branch in Git.
@@ -199,7 +199,7 @@ Here's how it works.
 	- Build the site using those three "secrets" you already set up earlier: the Netlify authorization token, the Netlify site ID, and the webmentions.io token. Since we're still on the GitHub servers at this point, only the last one may be necessary; but this file includes them all, just to be safe.
 	- Finally, deploy the now-built site to Netlify, using the configuration in the repo's `netlify.toml` file. This step uses those same "secrets" as the last step. The Netlify variables *are* required here, for sure, while now the webmentions.io token becomes the just-in-case addition.
 
-As a result: with this GitHub Action now handling builds on the GitHub setup, the deploy on Netlify typically takes no more than *ten seconds*, quite often more in the range of *two to five* seconds---and, once again, it counts as *zero* seconds against that 300-minute monthly build cap.
+As a result: with this GitHub Action now handling builds on the GitHub setup, the deploy on Netlify typically takes no more than *ten seconds*, quite often more in the range of *two to five* seconds --- and, once again, it counts as *zero* seconds against that 300-minute monthly build cap.
 
 Finally: you may wonder, hey, what if the Netlify folks learn you're doing this? Won't they object? The simple answer is: Absolutely not! You're *helping* them! You're *saving* their setup valuable time, processing wear and tear, and bandwidth for *paying* customers’ use.
 
@@ -245,7 +245,7 @@ That does everything the GitHub Action mentioned above will do, except that it d
 
 Of course, just as with the "Secrets" in GitHub, you'll have to enter the necessary environment variables in GitLab. The procedure starts in your GitLab repo at **Settings** > **CI/CD** > **Variables**. At least you **can** view and edit these again later, but it's probably still a good idea to keep them in a secure text file just for safety's sake.
 
-There's no cron job set up here, as in the GitHub Actions file; that's because, in GitLab, you set up a cron job in your repo: **CI/CD** > **Schedules**. Note that it's **not** in **Settings** > **CI/CD**---which is different, for reasons that escape me.
+There's no cron job set up here, as in the GitHub Actions file; that's because, in GitLab, you set up a cron job in your repo: **CI/CD** > **Schedules**. Note that it's **not** in **Settings** > **CI/CD** --- which is different, for reasons that escape me.
 
 ### Bitbucket?
 

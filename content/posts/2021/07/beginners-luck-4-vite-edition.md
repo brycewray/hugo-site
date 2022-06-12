@@ -22,9 +22,9 @@ A quickie for you (if you don't count the code blocks, that is) . . .
 
 Given the interest the community showed in my previous post, "[Eleventy + Vite = elite](/posts/2021/07/eleventy-vite-elite/)," I thought I'd go ahead and issue [yet another starter set](/posts/2021/06/beginners-luck-3-adding-zola-starter/): an [Eleventy](https://11ty.dev)/[Vite](https://vitejs.dev) combo. To make it, I simply cloned the existing [`eleventy_solo_starter_njk` repository](https://github.com/brycewray/eleventy_solo_starter_njk) and converted it for use with Vite as described herein. That means it gives you Eleventy with [Nunjucks](https://mozilla.github.io/nunjucks) templating, Vite, **and** [Tailwind CSS](https://tailwindcss.com) (plus [JIT](https://tailwindcss.com/docs/just-in-time-mode)) to boot.
 
-The new starter's repo is [`eleventy_vite_starter`](https://github.com/brycewray/eleventy_vite_starter). There's also an [online demo](https://eleventy-vite-starter.vercel.app/) which, if you're familiar with any of my other starters, may not float your boat---but the thing is, I was able to convert its predecessor to this config in well under an hour. That augurs well for your efforts, I would hope.
+The new starter's repo is [`eleventy_vite_starter`](https://github.com/brycewray/eleventy_vite_starter). There's also an [online demo](https://eleventy-vite-starter.vercel.app/) which, if you're familiar with any of my other starters, may not float your boat --- but the thing is, I was able to convert its predecessor to this config in well under an hour. That augurs well for your efforts, I would hope.
 
-**Update, 2021-08-22**: Today, I switched my site repo **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the previous one](/posts/2021/07/eleventy-vite-elite/) for [archival purposes](/posts/2019/10/otoh/); and, for those who might yet be interested, I'll also keep alive the starter repo described in this post.
+**Update, 2021‑08‑22**: Today, I switched my site repo **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the previous one](/posts/2021/07/eleventy-vite-elite/) for [archival purposes](/posts/2019/10/otoh/); and, for those who might yet be interested, I'll also keep alive the starter repo described in this post.
 {.yellowBox}
 
 ## The conversion process
@@ -68,7 +68,7 @@ export default defineConfig({
 });
 ```
 
-In the Eleventy [site-wide data directory](https://www.11ty.dev/docs/data-global/)---in my repo's case, `_data` at the top level---I added a `build.js` file with the following content:
+In the Eleventy [site-wide data directory](https://www.11ty.dev/docs/data-global/) --- in my repo's case, `_data` at the top level --- I added a `build.js` file with the following content:
 
 ```js
 module.exports = {
@@ -84,7 +84,7 @@ import "../assets/css/index.css"
 // if you add any JS scripts or other files Vite can bundle, import them here
 ```
 
-This is the entry file to which `vite.config.js` directed Vite in the `rollupOptions` object. Anything you want handled in Vite gets referenced here. In this bare-bones starter, it was enough to have only the [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) importation from `eleventy-with-vite` and then the site's CSS file---the latter of which stayed exactly as was, and still got processed by Tailwind CSS just the same. Vite didn't impede that in the least.
+This is the entry file to which `vite.config.js` directed Vite in the `rollupOptions` object. Anything you want handled in Vite gets referenced here. In this bare-bones starter, it was enough to have only the [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) importation from `eleventy-with-vite` and then the site's CSS file --- the latter of which stayed exactly as was, and still got processed by Tailwind CSS just the same. Vite didn't impede that in the least.
 
 ### Edit existing files
 
@@ -312,15 +312,15 @@ And that was it.
 
 As promised, here's an explanation of each entry in the `scripts` object in `package.json`, with some of them unchanged from before the conversion.
 
-- `clean`---Deletes the contents of the `_site` output directory so you can be sure you're not using old content during a `testbuild` run (about which, more shortly).
-- `start`---Sets the environment for development mode and uses the `npm-run-all` package to run `clean` and then, concurrently, the next two scripts.[^concurrently]
-- `dev:eleventy`---Runs Eleventy to process templates and use its live server.
-- `dev:vite`---Runs Vite in dev mode to handle "watched" assets.
-- `build`---This is the aptly named command to run when you put the repo online. It sets the environment for production mode and uses `npm-run-all` to run `clean` followed by the next two scripts (*non*-concurrently this time).
-- `prod:eleventy`---Runs Eleventy to generate the site's HTML.
-- `prod:vite`---Runs Vite to cache-bust and bundle assets.
-- `testbuild:bsync`---Runs Browsersync on port 5000, just as `eleventy-with-vite` ran serve on it, for the `testbuild` functionality (next script).
-- `testbuild`---This is so you can be sure the site is building as it should **and** see the results **before** you push the changes to your host. It runs the `build` script to generate the site contents **and** then runs Browsersync so you can view them locally at `http://localhost:5000`. (However, it's not an *active*, "watched" build as in dev mode; *i.e.*, if you need to make changes in content or files, you'll want to stop and run `start` again for dev-mode editing.)
+- `clean` --- Deletes the contents of the `_site` output directory so you can be sure you're not using old content during a `testbuild` run (about which, more shortly).
+- `start` --- Sets the environment for development mode and uses the `npm-run-all` package to run `clean` and then, concurrently, the next two scripts.[^concurrently]
+- `dev:eleventy` --- Runs Eleventy to process templates and use its live server.
+- `dev:vite` --- Runs Vite in dev mode to handle "watched" assets.
+- `build` --- This is the aptly named command to run when you put the repo online. It sets the environment for production mode and uses `npm-run-all` to run `clean` followed by the next two scripts (*non*-concurrently this time).
+- `prod:eleventy` --- Runs Eleventy to generate the site's HTML.
+- `prod:vite` --- Runs Vite to cache-bust and bundle assets.
+- `testbuild:bsync` --- Runs Browsersync on port 5000, just as `eleventy-with-vite` ran serve on it, for the `testbuild` functionality (next script).
+- `testbuild` --- This is so you can be sure the site is building as it should **and** see the results **before** you push the changes to your host. It runs the `build` script to generate the site contents **and** then runs Browsersync so you can view them locally at `http://localhost:5000`. (However, it's not an *active*, "watched" build as in dev mode; *i.e.*, if you need to make changes in content or files, you'll want to stop and run `start` again for dev-mode editing.)
 
 [^concurrently]: Speaking of "concurrently," the more observant may have noticed that this repo uses `npm-run-all`, rather than the [`concurrently` package](https://github.com/kimmobrunfeldt/concurrently) included in `eleventy-with-vite`. This is no slap at `concurrently`; it's just that I've gotten accustomed to `npm-run-all` and chose to use it, instead.
 

@@ -39,7 +39,7 @@ This site reproduces [Mastodon](https://join.mastodon.org) toots as purely stati
 
 ### Twitter
 
-This site reproduces tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image---including the avatar---that's included with a static tweet does include a Twitter cookie, but **no** trackers.
+This site reproduces tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image --- including the avatar --- that's included with a static tweet does include a Twitter cookie, but **no** trackers.
 
 ### YouTube
 

@@ -31,7 +31,7 @@ However, not all SSGs are created equal in this regard.
 
 More often than not, an SSG will accept templating in only one specific computer language. So, if you know diddly about that language and can't readily pick it up from viewing the code of other people's sites (where those sites’ code is even publicly viewable in the first place, as [this site's code is](https://github.com/brycewray/eleventy_bundler)), it doesn't matter what cool things that SSG could have done for you; you're going to find using it a pain.
 
-No, what you want is an SSG that gives you plenty of templating choices. That, friends, [Eleventy does](https://11ty.dev/docs/templates), big-time---right down to even good old vanilla HTML, if you're so inclined. Of course, some of the choices offer more power than others, and therefore, again, it's even better to have choices.
+No, what you want is an SSG that gives you plenty of templating choices. That, friends, [Eleventy does](https://11ty.dev/docs/templates), big-time --- right down to even good old vanilla HTML, if you're so inclined. Of course, some of the choices offer more power than others, and therefore, again, it's even better to have choices.
 
 Most of the [Eleventy documentation](https://11ty.dev/docs) seems to assume the use of the flexible, JavaScript-based [Nunjucks](https://mozilla.github.io/nunjucks/) templating language, so it's not uncommon for an Eleventy newbie to go with it at the outset. I surely did for my first few months of running this site via Eleventy.
 
@@ -39,13 +39,13 @@ One of the other templating choices is pure JavaScript itself, handled through .
 
 Then, about a month ago, I saw word on the Eleventy [Twitter feed](https://twitter.com/Eleven_ty) of a fellow named [Reuben Lillie](https://reubenlillie.com), who had created his site almost entirely with .11ty.js templating. Even cooler: his [code](https://gitlab.com/reubenlillie/reubenlillie.com) is stupendously well-documented. If you're often disappointed by the documentation in other public repositories’ code, Mr. Lillie's will make you cry for joy.
 
-I was intrigued, and---with help from not only Mr. Lillie but also fellow Eleventy *aficionado* [Peter deHaan](https://about.me/peterdehaan)---spent a few weeks working to change my templating from .njk files to .11ty.js files. I finally went live with this templating last Sunday.
+I was intrigued, and --- with help from not only Mr. Lillie but also fellow Eleventy *aficionado* [Peter deHaan](https://about.me/peterdehaan) --- spent a few weeks working to change my templating from .njk files to .11ty.js files. I finally went live with this templating last Sunday.
 
 ## Ignorance of the code is no excuse
 
 However, it didn't take me long to realize that I simply don't know enough JavaScript to implement a *full* switchover. Mr. Lillie and Mr. deHaan had tried to help me with the issues I encountered[^HelpNeeded] but, in the end, I still was left with multiple key templates in .njk. It wasn't so terrible, but, well, the intent had been to switch, completely. And I couldn't.
 
-[^HelpNeeded]: Notably, I couldn't successfully translate the Nunjucks template for my [posts list pages](/posts) into a properly [paginated](https://11ty.dev/docs/pagination) "feed" (so to speak) using .11ty.js templating. I also couldn't figure out how to make a pure-vanilla-JavaScript version of Max Böck's [superb webmentions-handling Nunjucks code](https://mxb.dev/blog/using-webmentions-on-static-sites/), which I'd shamelessly copied for my own purposes; as a result, I temporarily reverted to using [Talkyard](https://www.talkyard.io) for commenting---which I **still** recommend for general commenting purposes, mind you---because it was easy to insert the necessary Talkyard-provided code into the appropriate .11ty.js template. Incidentally, I removed webmentions (and old pre-webmentions comments) a few days later, so that issue is now moot.
+[^HelpNeeded]: Notably, I couldn't successfully translate the Nunjucks template for my [posts list pages](/posts) into a properly [paginated](https://11ty.dev/docs/pagination) "feed" (so to speak) using .11ty.js templating. I also couldn't figure out how to make a pure-vanilla-JavaScript version of Max Böck's [superb webmentions-handling Nunjucks code](https://mxb.dev/blog/using-webmentions-on-static-sites/), which I'd shamelessly copied for my own purposes; as a result, I temporarily reverted to using [Talkyard](https://www.talkyard.io) for commenting --- which I **still** recommend for general commenting purposes, mind you --- because it was easy to insert the necessary Talkyard-provided code into the appropriate .11ty.js template. Incidentally, I removed webmentions (and old pre-webmentions comments) a few days later, so that issue is now moot.
 
 Plus, I soon realized that, *because* of my inability to do much with the .11ty.js templates other than slavishly follow others’ examples (and keep begging smarter people for help they didn't have time to give), I wouldn't be able to do much with .11ty.js templates going forward. By contrast, I'd frequently tinkered behind the scenes with the .njk templates to see what I could do to make small improvements.
 
@@ -57,4 +57,4 @@ I *remain* very interested in the *idea* of going fully to .11ty.js templates, b
 
 If you, too, would like to see that, please note that Mr. Lillie is interested in providing such documentation that could, with the approval of Eleventy creator [Zach Leatherman](https://zachleat.com), become part of the official docs.
 
-I hope that happens sooner rather than later. If it does, and if Mr. Lillie's docs are *half* as good as the documentation he put in his own code---wowzers.
+I hope that happens sooner rather than later. If it does, and if Mr. Lillie's docs are *half* as good as the documentation he put in his own code --- wowzers.

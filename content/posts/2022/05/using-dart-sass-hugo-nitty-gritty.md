@@ -23,7 +23,7 @@ There are four tasks to perform, the first of which you should need to do only o
 
 - Create a `bin` folder in your user directory and add it (and a designated subfolder-to-come) to your system `PATH`.
 - Download/unpack the Embedded Dart Sass archive file.
-- Move the resulting `sass_embedded` folder---the aforementioned "subfolder-to-come"---to the `bin` folder.
+- Move the resulting `sass_embedded` folder --- the aforementioned "subfolder-to-come" --- to the `bin` folder.
 - Confirm that the system detects the `sass_embedded` folder as being in the `PATH`.
 
 With that established, let's break this up into three sections that you can toggle to expand or compress so you'll be looking at only what applies to you and your OS/device combo. I have successfully tested these procedures in all three OSs mentioned, using macOS natively and running Linux and Windows in virtual machines.
@@ -45,7 +45,7 @@ echo $0
 {{< /highlight >}}
 This will return either `bash` or `zsh`.
 
-3. Use your preferred terminal-level text editor to open the appropriate file---either `/home/JohnDoe/.bashrc` or `/home/JohnDoe/.zshrc`---and add the following lines:
+3. Use your preferred terminal-level text editor to open the appropriate file --- either `/home/JohnDoe/.bashrc` or `/home/JohnDoe/.zshrc` --- and add the following lines:
 {{< highlight bash "linenos=false" >}}
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/sass_embedded:$PATH"
@@ -136,7 +136,7 @@ echo $0
 {{< /highlight >}}
 This will return either `bash` or `zsh`.
 
-3. Use your preferred terminal-level text editor to open the appropriate file---either `/Users/JohnDoe/.bashrc` or `/Users/JohnDoe/.zshrc`---and add the following lines:
+3. Use your preferred terminal-level text editor to open the appropriate file --- either `/Users/JohnDoe/.bashrc` or `/Users/JohnDoe/.zshrc` --- and add the following lines:
 {{< highlight bash "linenos=false" >}}
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/sass_embedded:$PATH"

@@ -31,7 +31,7 @@ As the setting's name implies, this activates the presence of the Git info varia
 
 I'll get to the part about displaying commit info shortly but, first, let's note that making this setting may have just liberated you from a nit-picking duty involved in how you display your posts' dates. If you've been using *manual* entries in your posts' front matter to indicate when they were last modified, you no longer have to do that. The Git info will, by default, provide this data as `.Lastmod`.[^manualDates]
 
-[^manualDates]: [By default](https://gohugo.io/getting-started/configuration/#configure-dates), Hugo will give higher priority to the Git info variable `.Lastmod` *vs.* other possibilities---including any manual `Lastmod` entries you may have already provided in your content's front matter.
+[^manualDates]: [By default](https://gohugo.io/getting-started/configuration/#configure-dates), Hugo will give higher priority to the Git info variable `.Lastmod` *vs.* other possibilities --- including any manual `Lastmod` entries you may have already provided in your content's front matter.
 
 **However**, there's a catch **if** you're using a [GitHub Action](https://github.com/features/actions/) to deploy your site to your chosen host, as [I've been doing lately](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The problem is that, although these automated `.Lastmod` indications will be correct when you're developing *locally* with `hugo server`, they'll *all* take on the *current* date when you deploy. Fortunately, there's an explanation and solution, from a [thread](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)[^years] on the Hugo Discourse forum:
 
@@ -54,7 +54,7 @@ After finding this answer, I simply added a `with` section to my GitHub Action's
 
 . . . and, indeed, that fixed the glitch.
 
-Incidentally: I test for whether a post's day of original publication and its "last-modified" day are the same---*e.g.*, when I fix a typo or otherwise edit something while it's still the same day as when I first issued the post---and, if so, I show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so this is in each applicable template:
+Incidentally: I test for whether a post's day of original publication and its "last-modified" day are the same --- *e.g.*, when I fix a typo or otherwise edit something while it's still the same day as when I first issued the post --- and, if so, I show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so this is in each applicable template:
 
 ```go-html-template
 <p>

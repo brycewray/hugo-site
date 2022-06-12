@@ -40,8 +40,8 @@ In recent weeks, I've been looking at an old repository which shows how the site
 
 Of course, that was over 100 [posts](/posts) ago and a lot has changed in the interim; but, in the end, I decided that the simpler and cleaner I could make the site look, the better.[^BTW]
 
-[^BTW]: By the way: these changes notwithstanding, I'm still using [Cloudinary](https://cloudinary.com) to [host the site's remaining images](/posts/2020/07/transformed). I see no reason to change that, especially because I don't want to go back to keeping those images in the site repo. And the styling is still from [Tailwind CSS](https://tailwindcss.com), as has been the case since [last spring](/posts/2020/05/going-solo-eleventy)---although I did give some serious thought to trying it in the site's original styling setup, which used [SCSS](https://sass-lang.com). I chose not to do so because, although I'm trying to simplify, I also don't want to get too far behind the web dev industry, where [Tailwind's popularity continues to grow](https://2020.stateofcss.com/en-US/technologies/css-frameworks/).
+[^BTW]: By the way: these changes notwithstanding, I'm still using [Cloudinary](https://cloudinary.com) to [host the site's remaining images](/posts/2020/07/transformed). I see no reason to change that, especially because I don't want to go back to keeping those images in the site repo. And the styling is still from [Tailwind CSS](https://tailwindcss.com), as has been the case since [last spring](/posts/2020/05/going-solo-eleventy) --- although I did give some serious thought to trying it in the site's original styling setup, which used [SCSS](https://sass-lang.com). I chose not to do so because, although I'm trying to simplify, I also don't want to get too far behind the web dev industry, where [Tailwind's popularity continues to grow](https://2020.stateofcss.com/en-US/technologies/css-frameworks/).
 
 All of this also considerably lowered the site's download sizes. That's a win-win.
 
-And that's the story: short, sweet, and---like the result itself---simple.
+And that's the story: short, sweet, and --- like the result itself --- simple.

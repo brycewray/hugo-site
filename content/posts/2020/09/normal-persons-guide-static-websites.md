@@ -19,9 +19,9 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christina @ wocintechchat.com</a>; <a href="https://unsplash.com/s/photos/laptop-computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-Websites are for everybody, not just geeks such as your faithful correspondent, here. That's why this article is aimed at a **normal** person like you---a **non**-techie, **non**-geek---who's interested in getting a website of your own, or in improving one you already have, but just don't know how to proceed.
+Websites are for everybody, not just geeks such as your faithful correspondent, here. That's why this article is aimed at a **normal** person like you --- a **non**-techie, **non**-geek --- who's interested in getting a website of your own, or in improving one you already have, but just don't know how to proceed.
 
-Maybe this would be your first-ever website. Or maybe you already have one but it's on something like WordPress, Wix, or Weebly---and, **good for you, you smart individual**, you want it to be on a much better platform.
+Maybe this would be your first-ever website. Or maybe you already have one but it's on something like WordPress, Wix, or Weebly --- and, **good for you, you smart individual**, you want it to be on a much better platform.
 
 Problem is, you keep reading that something called a *static website*, whatever that is, is the way to go, and you don't have a clue how to proceed.
 
@@ -41,7 +41,7 @@ While we're on the subject of WordPress sites: each is a significant cyberattack
 **Note**: If your website needs are relatively simple, you won't have any trouble letting them be served by a static site on its own. On the other hand, if you need more advanced, more interactive capabilities, you might want to check into the [Jamstack](https://jamstack.wtf). The short explanation is that the Jamstack gives you the best of both worlds: the advantages of static sites combined with lots of whiz-bang stuff "living" elsewhere, safely, in The Cloud.
 {.yellowBox}
 
-So your choices now come down to having your site's content be generated either: (a.) on each visit (dynamic); or (b.) ahead of each visit (static). If you can handle another analogy---and I promise to keep nasty birds out of this one---imagine two Baskin-Robbins ice cream parlors across the street from each other. You know you can go to either one and get an identical bowl of Baskin-Robbins chocolate ice cream. The only difference is that, on the north side of the street, they fill the bowls *in advance* (and keep them in the freezer) for quickest possible delivery when a customer orders them while, on the south side, they scoop it out only when you come in and order it. Again, the ice cream is exactly the same; the only difference is the process and the wait.
+So your choices now come down to having your site's content be generated either: (a.) on each visit (dynamic); or (b.) ahead of each visit (static). If you can handle another analogy --- and I promise to keep nasty birds out of this one --- imagine two Baskin-Robbins ice cream parlors across the street from each other. You know you can go to either one and get an identical bowl of Baskin-Robbins chocolate ice cream. The only difference is that, on the north side of the street, they fill the bowls *in advance* (and keep them in the freezer) for quickest possible delivery when a customer orders them while, on the south side, they scoop it out only when you come in and order it. Again, the ice cream is exactly the same; the only difference is the process and the wait.
 
 Analogies aside, here are two diagrams that may also help you grasp the difference. First, the dynamic site, with its content that is generated every time somebody visits:
 
@@ -54,7 +54,7 @@ Then, the static site, with content already in place for you to see:
 Images used to build these diagrams (all&nbsp;sourced from&nbsp;[Pixabay](https://pixabay.com)): [FiveFlowersForFamilyFirst](https://pixabay.com/users/FiveFlowersForFamilyFirst-552028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2243898); [Clker-Free-Vector-Images](https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=41259); [200&nbsp;Degrees](https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1745473); and [Mateusz&nbsp;Zdrzałek](https://pixabay.com/users/MTZD-1593970/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2488093).
 {.imgcCaption}
 
-With no reason to wait on a database to generate the content (all the aforementioned security concerns aside), the static site downloads more swiftly. All other things being equal---content, server, connectivity, browser, and computer---it always will.
+With no reason to wait on a database to generate the content (all the aforementioned security concerns aside), the static site downloads more swiftly. All other things being equal --- content, server, connectivity, browser, and computer --- it always will.
 
 But does having a static site mean you have to write, or hire somebody to write, all that code that makes such a site work?
 
@@ -70,11 +70,11 @@ The earliest SSGs worked well enough, but were slow (taking several minutes to b
 
 Ideally, using a static site generator is pretty easy. You pick out how you want your site to look, you "tell" the SSG that in whatever method befits that SSG, and you provide the content either through writing it in a plain-text format called [Markdown](/posts/2019/03/mark-it-down/) or by using a compatible [content management system](https://en.wikipedia.org/wiki/Web_content_management_system) (CMS) option. The latter method can make content creation with an SSG pretty much as easy as using WordPress and the others like it, but you still get all the advantages of a static site.
 
-I use the word "ideally," above, because certain SSGs---and more powerful development platforms which promote their recently gained SSG-ish abilities---do not work well, nor were designed, for you. They were, in fact, built *by* developers *for* developers. If you're a non-developer and can figure out how to use them, fine, but that's a lonely and steep road up which to drag yourself, especially since there are at least two much friendlier alternatives I can recommend.
+I use the word "ideally," above, because certain SSGs --- and more powerful development platforms which promote their recently gained SSG-ish abilities --- do not work well, nor were designed, for you. They were, in fact, built *by* developers *for* developers. If you're a non-developer and can figure out how to use them, fine, but that's a lonely and steep road up which to drag yourself, especially since there are at least two much friendlier alternatives I can recommend.
 
 ## First choice: Hugo
 
-[Hugo](https://gohugo.io) has been around for quite a few more years than most of the other well-known SSGs and, while it doesn't get quite the press it once did, the still-popular Hugo remains the fastest SSG in existence. It can build a 100+-page site in under two-tenths of a second. (Some trendier SSGs take *minutes* to do that. If you build a site with a slower SSG and start seeing your monthly costs go up because of the *build times* involved---if you're using a website host with fairly strict limits on builds---you'll wish for something approaching Hugo's speed.)
+[Hugo](https://gohugo.io) has been around for quite a few more years than most of the other well-known SSGs and, while it doesn't get quite the press it once did, the still-popular Hugo remains the fastest SSG in existence. It can build a 100+-page site in under two-tenths of a second. (Some trendier SSGs take *minutes* to do that. If you build a site with a slower SSG and start seeing your monthly costs go up because of the *build times* involved --- if you're using a website host with fairly strict limits on builds --- you'll wish for something approaching Hugo's speed.)
 
 Unlike many of the other SSGs, Hugo *doesn't* rely on a long string of software dependencies; it's completely self-contained, which is a huge advantage if you just want one simple thing that flat-out works. Also, because Hugo is so popular and has been in existence for so long, it has hundreds of free *[themes](https://themes.gohugo.io/)* from which you can choose the look-and-feel you want, perhaps without typing a single line of code. Then all you have to do is write your posts.
 
@@ -84,7 +84,7 @@ Hugo's awesome speed is its greatest strength. That speed comes from Hugo's root
 
 However, to be fair, I must note that Go is also responsible for Hugo's most significant weakness.
 
-This is because Go's *templating*---that's how you make a single layout handle a whole bunch of pages, rather than having to design each one separately---is no walk in the park even for most developers, much less for normal folks. Thus, I strongly urge you to take the time to *pick a good theme*. It not only should look the way you want but also be pre-configured with all the functionality you'll need. That'll probably spare you from spending time trying to understand, much less edit, something like:
+This is because Go's *templating* --- that's how you make a single layout handle a whole bunch of pages, rather than having to design each one separately --- is no walk in the park even for most developers, much less for normal folks. Thus, I strongly urge you to take the time to *pick a good theme*. It not only should look the way you want but also be pre-configured with all the functionality you'll need. That'll probably spare you from spending time trying to understand, much less edit, something like:
 
 ```go-html-template
 {{ if ne $paginator.PageNumber $paginator.TotalPages }}
@@ -106,7 +106,7 @@ That said, I have another one to recommend if you're feeling just slightly more 
 
 It's also by far the easiest and most flexible JS-based SSG to set up and use, allowing the use of a number of templating languages; so, if you *do* want to do a little playing around with the innards of whichever SSG you pick, Eleventy is your go-to. With its growing popularity, Eleventy is quickly amassing a large community who gravitated to it precisely because of its competitors’ shortcomings.
 
-There is no real theming for Eleventy at this writing *but* there are plenty of [starter sets](https://www.11ty.dev/docs/starter/) available for it. I even have [one of my own](https://github.com/brycewray/eleventy_solo_starter/) out there, similar to the look-and-feel of this site. If you decide to opt for this highly commendable JS-based SSG, I suggest, just as I did regarding themes for Hugo, that you take time to select a starter set best fitting your requirements---so that, at least at the outset while you're getting used to everything, you'll need to do as little of your own setup and design as possible.
+There is no real theming for Eleventy at this writing *but* there are plenty of [starter sets](https://www.11ty.dev/docs/starter/) available for it. I even have [one of my own](https://github.com/brycewray/eleventy_solo_starter/) out there, similar to the look-and-feel of this site. If you decide to opt for this highly commendable JS-based SSG, I suggest, just as I did regarding themes for Hugo, that you take time to select a starter set best fitting your requirements --- so that, at least at the outset while you're getting used to everything, you'll need to do as little of your own setup and design as possible.
 
 ## I suggest you avoid these
 
@@ -118,7 +118,7 @@ So much for those good words about Hugo and Eleventy. By contrast, I now must te
 
 ### Gatsby
 
-If you've researched SSGs, you've probably seen a lot about [Gatsby](https://gatsbyjs.org), a tremendously popular and well-funded product. It has some amazing capabilities and is even used by some non-developers (albeit with its geeky stuff probably hidden behind a compatible CMS). However, my own experiences with Gatsby both positive and negative --- mostly the latter---lead me to steer you away from it.
+If you've researched SSGs, you've probably seen a lot about [Gatsby](https://gatsbyjs.org), a tremendously popular and well-funded product. It has some amazing capabilities and is even used by some non-developers (albeit with its geeky stuff probably hidden behind a compatible CMS). However, my own experiences with Gatsby both positive and negative --- mostly the latter --- lead me to steer you away from it.
 
 To use Gatsby without pain, you need to be fairly conversant in not only that React framework I mentioned before but, also, the [GraphQL](https://graphql.org/) query language (Gatsby has a pretty cool interface that helps with GraphQL, but it's not cool enough to make up for the concomitant hassles). Gatsby typically needs a *lot* of configuration to do its thing, and that's precisely what you *don't* want. I could tell you much more, as my regular readers know all too well, but that'll suffice for these purposes. Admire it, perhaps, but don't use it.
 
@@ -126,8 +126,8 @@ To use Gatsby without pain, you need to be fairly conversant in not only that Re
 
 If you're about to drive your car down a potentially dangerous road, you'll appreciate getting flagged down by somebody who already took *his* car down that same road and cracked an axle in the process, a person who now advises you to try a different route.
 
-I hope the scars I've acquired in building websites in general and static websites in particular will translate, through this post, to your having the website---and website-building process---that will work best for you.
+I hope the scars I've acquired in building websites in general and static websites in particular will translate, through this post, to your having the website --- and website-building process --- that will work best for you.
 
 [^1]:	Note that I'm saying "cracked" rather than "hacked." The term *hacking* is widely misunderstood to mean criminally attacking computer systems when, in fact, it has always meant only computer coding, often in an attempt to solve a problem. Only *criminal* hacking is *cracking*. All cracking is hacking, but not all hacking is cracking.
 
-[^2]:	About a year and a half ago, I wrote two articles about getting started on a Hugo-based website: "[Ec-static](/posts/2019/04/ec-static)" and "[Publish or perish](/posts/2019/04/publish-or-perish)." You may still find them of use, but I suggest searching for newer "how-to" articles about Hugo, which has added a number of great features since then. Of course, you should also check the [official Hugo documentation](https://gohugo.io/documentation/), but be forewarned that it's clearly intended for a more technically oriented audience than was this post---or those two I just mentioned.
+[^2]:	About a year and a half ago, I wrote two articles about getting started on a Hugo-based website: "[Ec-static](/posts/2019/04/ec-static)" and "[Publish or perish](/posts/2019/04/publish-or-perish)." You may still find them of use, but I suggest searching for newer "how-to" articles about Hugo, which has added a number of great features since then. Of course, you should also check the [official Hugo documentation](https://gohugo.io/documentation/), but be forewarned that it's clearly intended for a more technically oriented audience than was this post --- or those two I just mentioned.

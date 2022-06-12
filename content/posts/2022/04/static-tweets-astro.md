@@ -19,10 +19,10 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a>; <a href="https://unsplash.com/s/photos/twitter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Update, 2022-04-12**: The [Astro](https://astro.build) team has come up with an [`astro-embed` project](https://github.com/astro-community/astro-embed) which will accomplish everything described herein and much more, so I encourage you to use it rather than the component described herein. That said, perhaps this post will still be of some educational value, especially for those new to Astro.
+**Update, 2022‑04‑12**: The [Astro](https://astro.build) team has come up with an [`astro-embed` project](https://github.com/astro-community/astro-embed) which will accomplish everything described herein and much more, so I encourage you to use it rather than the component described herein. That said, perhaps this post will still be of some educational value, especially for those new to Astro.
 {.yellowBox}
 
-Perhaps you saw one or both of my [earlier](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about how to embed fully static (thus, **not** privacy-violating) tweets in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) static site generators (SSGs). If not, you may want to read at least the [first one](/posts/2022/02/static-tweets-eleventy-hugo/) for background because, in this post, I offer a similar---albeit briefer---piece about how to do this with the **[Astro](https://astro.build)** SSG.
+Perhaps you saw one or both of my [earlier](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about how to embed fully static (thus, **not** privacy-violating) tweets in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) static site generators (SSGs). If not, you may want to read at least the [first one](/posts/2022/02/static-tweets-eleventy-hugo/) for background because, in this post, I offer a similar --- albeit briefer --- piece about how to do this with the **[Astro](https://astro.build)** SSG.
 
 At least for now, Astro seems to be the darling of a considerable portion of the web development world. Better yet for my purposes and yours: after months of alpha-level breaking changes out the wazoo, it's now stabilized considerably. In fact, a few days ago, the Astro team [announced](https://astro.build/blog/astro-1-beta-release/) the first beta release of v.1.0.
 
@@ -182,7 +182,7 @@ if (JsonIncludes.media) {
 
 ### Tip: use aliases
 
-Make things easier on yourself---*i.e.*, avoiding a lot of relative file references---by **using Astro's [aliases](https://docs.astro.build/en/guides/aliases/) feature**. In your project's appropriate file (`jsconfig.json` or, if you're using [TypeScript](https://www.typescriptlang.org/), `tsconfig.json`), have at least the following:
+Make things easier on yourself --- *i.e.*, avoiding a lot of relative file references --- by **using Astro's [aliases](https://docs.astro.build/en/guides/aliases/) feature**. In your project's appropriate file (`jsconfig.json` or, if you're using [TypeScript](https://www.typescriptlang.org/), `tsconfig.json`), have at least the following:
 
 ```json
 {
@@ -220,7 +220,7 @@ import STweetV2 from '@components/STweetV2.astro'
 
 {{< stweet "1487140202141425673" >}}
 
-As was true for my Hugo `stweetv2` shortcode, I wrote this component to add "(UTC)" after the date because, once you use this in production, the remote web server will return the tweet's `created_at` information in whatever time zone the server uses---which almost certainly is [UTC](https://www.timeanddate.com/time/aboututc.html).
+As was true for my Hugo `stweetv2` shortcode, I wrote this component to add "(UTC)" after the date because, once you use this in production, the remote web server will return the tweet's `created_at` information in whatever time zone the server uses --- which almost certainly is [UTC](https://www.timeanddate.com/time/aboututc.html).
 
 ### Calling from Markdown
 

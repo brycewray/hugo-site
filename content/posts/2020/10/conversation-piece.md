@@ -20,11 +20,11 @@ featured_image_caption: |
 
 {{% disclaimer %}}
 
-Modern static websites have many advantages over many old-school dynamic ones---especially those based on [WordPress](https://wordpress.org)---as [noted here recently](/posts/2020/09/normal-persons-guide-static-websites/). However, one area where they fall short is the ease, or lack thereof, of providing commenting capabilities.
+Modern static websites have many advantages over many old-school dynamic ones --- especially those based on [WordPress](https://wordpress.org) --- as [noted here recently](/posts/2020/09/normal-persons-guide-static-websites/). However, one area where they fall short is the ease, or lack thereof, of providing commenting capabilities.
 
 Now, perhaps you don't *care* whether your readers have a chance to respond to your site's content. Or, perhaps, you just leave them an email address or your Twitter handle and let that handle it. If so, you can stop reading right now. After all, you've already determined that this isn't a problem for you.
 
-On the other hand, if you *do* want to provide such functionality but are uncertain how to proceed with a static site, I have some thoughts that might help you. All the services I'm mentioning are hosted, as I'm assuming you're running the site in a "serverless" environment ([as I recommend](/posts/2020/09/normal-persons-guide-static-website-hosting/))---such as on [Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Render](https://render.com)---or otherwise are simply unable to install commenting software on a server you can control.
+On the other hand, if you *do* want to provide such functionality but are uncertain how to proceed with a static site, I have some thoughts that might help you. All the services I'm mentioning are hosted, as I'm assuming you're running the site in a "serverless" environment ([as I recommend](/posts/2020/09/normal-persons-guide-static-website-hosting/)) --- such as on [Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Render](https://render.com) --- or otherwise are simply unable to install commenting software on a server you can control.
 
 **Note**: Yes, there also are [webmentions](https://indieweb.org/webmention), as I [explained earlier this year](/posts/2020/04/webmentions-three-ssgs-1/), but they aren't the easiest things to set up and maintain, even if you're rather tech-savvy. This post is mainly for normal (*i.e.*, non-nerdy) folks who want more conventional commenting on their static websites.
 
@@ -78,7 +78,7 @@ In [FastComments](https://fastcomments.com)&nbsp;.&nbsp;.&nbsp;.
 
 #### Disadvantages
 - For a commenter who **does** log in, the parent company puts cookies on the person's browser and, of course, collects the person's user name and email address, requiring you to address this in your privacy policy.
-- As I said, the interface is *fairly* easily customized, so you may want to take the "fairly" as a case of damning-with-faint-praise; but a look through the [FastComments blog](https://blog.fastcomments.com/) indicates this product is improving quickly---it's only about a year old---so I wouldn't judge it too harshly on that score.
+- As I said, the interface is *fairly* easily customized, so you may want to take the "fairly" as a case of damning-with-faint-praise; but a look through the [FastComments blog](https://blog.fastcomments.com/) indicates this product is improving quickly --- it's only about a year old --- so I wouldn't judge it too harshly on that score.
 
 #### Pricing
 - **Model**: Unlimited websites.
@@ -120,7 +120,7 @@ As for [Talkyard](https://www.talkyard.io)&nbsp;.&nbsp;.&nbsp;.
 - Fairly easily customized interface.
 
 #### Disadvantages
-- The heaviest of all of these---about *930 KB* of code and files in my own use---probably because it's essentially forum software acting as commenting software. Indeed, this is the main reason I stopped using it after a number of months of being a very happy Talkyard user.
+- The heaviest of all of these --- about *930 KB* of code and files in my own use --- probably because it's essentially forum software acting as commenting software. Indeed, this is the main reason I stopped using it after a number of months of being a very happy Talkyard user.
 - [Briefly tracks each incoming IP address (or IP subnet) and installs a browser cookie](https://www.talkyard.io/-/privacy-policy), so your privacy policy will need to take that into account.
 
 #### Pricing
@@ -158,12 +158,12 @@ Finally, there's [Utterances](https://utteranc.es)&nbsp;.&nbsp;.&nbsp;.
 
 I don't want this to sound like one of those useless commercial-site review articles that ends with "Well, *we're* not going to make a choice, so it's all up to *you*"-kind of waffling. So, here's where I land on this.
 
-At this writing, my commenting platform choice is FastComments, for which I'm still on the free trial. If I choose *not* to stick with it once it comes time to pay or go, I'd probably just revert to the free Utterances[^1]---especially since I'm guessing that, given the content of my articles, my typical reader either already has a GitHub account or wouldn't have a problem with getting one.
+At this writing, my commenting platform choice is FastComments, for which I'm still on the free trial. If I choose *not* to stick with it once it comes time to pay or go, I'd probably just revert to the free Utterances[^1] --- especially since I'm guessing that, given the content of my articles, my typical reader either already has a GitHub account or wouldn't have a problem with getting one.
 
 For your purposes, I'd rank the *non*-free offerings as follows:
-1. **FastComments**---Of these four, it's the best combination of light code, decent pricing, active development, respect for commenters’ privacy, and (reasonable) customizability. Since it's also the *newest* of the four, that's pretty impressive!
-2. **Commento**---Since I couldn't test it without going truly live with it (and chose not to do so), I go by what I've read about this. It comes out ahead of Hyvor Talk only because the latter is still so code-heavy. Otherwise, it gives you the least bang for the buck of these four.
-3. **Hyvor Talk**---If you don't care so much about code load (although you probably should), this should be your second option from this group. I'd watch this one for what I hope will be future refinements that further trim it down, perhaps by letting you use a significantly lighter and more bare-bones version thereof.
-4. **Talkyard**---The code load just buries this otherwise great and highly affordable choice. As with Hyvor Talk, I hope there will eventually be a "Light" version that's a much smaller download and is for *only* commenting, rather than carrying the additional weight that supports its many other features.
+1. **FastComments** --- Of these four, it's the best combination of light code, decent pricing, active development, respect for commenters’ privacy, and (reasonable) customizability. Since it's also the *newest* of the four, that's pretty impressive!
+2. **Commento** --- Since I couldn't test it without going truly live with it (and chose not to do so), I go by what I've read about this. It comes out ahead of Hyvor Talk only because the latter is still so code-heavy. Otherwise, it gives you the least bang for the buck of these four.
+3. **Hyvor Talk** --- If you don't care so much about code load (although you probably should), this should be your second option from this group. I'd watch this one for what I hope will be future refinements that further trim it down, perhaps by letting you use a significantly lighter and more bare-bones version thereof.
+4. **Talkyard** --- The code load just buries this otherwise great and highly affordable choice. As with Hyvor Talk, I hope there will eventually be a "Light" version that's a much smaller download and is for *only* commenting, rather than carrying the additional weight that supports its many other features.
 
 [^1]:	Part of the reason why I'd do so is because, at this writing, I'm already paying for [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) *(affiliate link)* and, as noted in "[Forward PaaS](/posts/2020/10/forward-paas/)," am hosting the site with the $5/month combo of Cloudflare Workers and KV storage. Thus, I do have some incentive to keep down the monthly costs for running this **non**-monetized site.

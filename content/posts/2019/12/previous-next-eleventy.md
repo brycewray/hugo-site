@@ -40,7 +40,7 @@ You see, the most workable method I'd found so far from among the [starter proje
 {% endif %}
 ```
 
-Yes, it worked, but I wanted a "set-and-forget" method---something that would survive post deletions or any other possibility that might come up, not to mention a simple human failure to give the correct and unique `idx` assignment to a new post. And [so](https://github.com/11ty/eleventy/issues/211) [did](https://github.com/11ty/eleventy/issues/529) [others](https://github.com/11ty/eleventy/issues/819).
+Yes, it worked, but I wanted a "set-and-forget" method --- something that would survive post deletions or any other possibility that might come up, not to mention a simple human failure to give the correct and unique `idx` assignment to a new post. And [so](https://github.com/11ty/eleventy/issues/211) [did](https://github.com/11ty/eleventy/issues/529) [others](https://github.com/11ty/eleventy/issues/819).
 
 I suspected there was a solution in the Eleventy API that was so ridiculously simple that, if I found it, I'd have two immediate reactions: joy from finding it and pain from the slap I'd give myself on top of the head for having missed it.
 

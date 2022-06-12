@@ -24,7 +24,7 @@ However, there are tech sites where I've usually found the visitors, even when h
 
 [Ars Technica](https://arstechnica.com) is one of those special, all-too-rare places.
 
-Yet, I recently found a commenter there wielding highly erroneous information concerning that rare thing about which I know enough to say, "Uh, no"---specifically, how the writing app, [Scrivener](https://www.literatureandlatte.com/scrivener/overview), does and doesn't work where cloud sync is concerned. So, on the chance that this unexpected sighting of wrong-Ars[^sorry] statements means there are numerous otherwise-well-informed individuals in the wild spreading the same tainted info, I'm Here To Help.<sup style="font-size: 65%;">&trade;</sup>
+Yet, I recently found a commenter there wielding highly erroneous information concerning that rare thing about which I know enough to say, "Uh, no" --- specifically, how the writing app, [Scrivener](https://www.literatureandlatte.com/scrivener/overview), does and doesn't work where cloud sync is concerned. So, on the chance that this unexpected sighting of wrong-Ars[^sorry] statements means there are numerous otherwise-well-informed individuals in the wild spreading the same tainted info, I'm Here To Help.<sup style="font-size: 65%;">&trade;</sup>
 
 [^sorry]: Sorry, it was too easy to pass up. I'm weak.
 
@@ -32,7 +32,7 @@ Yet, I recently found a commenter there wielding highly erroneous information co
 
 It all started yesterday, when I was looking through an Ars Technica article from back when [Dropbox](https://dropbox.com) implemented its [ill-considered change](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/) to how Dropbox works on the desktop. As I mentioned in a footnote to a recent [post](/posts/2019/07/lessons-learned/), it was the last straw that made me finally drop my last remaining ties to Dropbox. But that's not what I'm writing about here.
 
-No, what got me on this particular jag is what I saw as I combed through the [article's many reader comments](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1) as various folks mentioned how this would be *their* last straw with Dropbox, also. I was curious to see how many of them would note that, as had been true for me, they'd kept it as at least a background cloud sync vendor only because of specific apps---like Scrivener---known to require Dropbox for cloud sync among multiple types of devices. (I'll get to the particulars in a bit, but stay with me for the moment.)
+No, what got me on this particular jag is what I saw as I combed through the [article's many reader comments](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1) as various folks mentioned how this would be *their* last straw with Dropbox, also. I was curious to see how many of them would note that, as had been true for me, they'd kept it as at least a background cloud sync vendor only because of specific apps --- like Scrivener --- known to require Dropbox for cloud sync among multiple types of devices. (I'll get to the particulars in a bit, but stay with me for the moment.)
 
 A few did register just such comments. However, what suddenly had me wanting to raise my hand and yell, "Ooh, ooh! Teacher!"[^nerd] was when I saw one particular commenter [saying](https://arstechnica.com/gadgets/2019/07/dropbox-silently-installs-new-file-manager-app-on-users-systems/?comments=1&post=37672823&mode=quote#reply):
 
@@ -70,13 +70,13 @@ And you want to keep it *all in one file*. That way, wherever you take your trus
 
 Every time you open that file, you want **all** of this content to be available to you.
 
-You want to be able to go back and forth among chapters and sections with ease. You *don't* want jumping around within this tome to seem as if you're putting either the software or the computer through the agonies of the damned, particularly since certain writing apps[^Word] have a devilish habit of crashing---or, worse, crashing **and** corrupting the file---under those circumstances.
+You want to be able to go back and forth among chapters and sections with ease. You *don't* want jumping around within this tome to seem as if you're putting either the software or the computer through the agonies of the damned, particularly since certain writing apps[^Word] have a devilish habit of crashing --- or, worse, crashing **and** corrupting the file --- under those circumstances.
 
 Similarly, you want it to load into your computer's memory, and to save, only those smaller parts of this huge project that you're actually working on at the time, so it won't work as if you were in molasses.
 
 [^Word]: ***[Cough]*** Word ***[cough]***.
 
-Scrivener does all that and more---and it's because of that file structure I just described. Although the .scriv file itself for a project like that can become gigantic, Scrivener lets you work on and save only those pieces you're using right now, leaving everything else unbothered until you need it. This is a massive win for RAM, for your CPU, and for file stability.
+Scrivener does all that and more --- and it's because of that file structure I just described. Although the .scriv file itself for a project like that can become gigantic, Scrivener lets you work on and save only those pieces you're using right now, leaving everything else unbothered until you need it. This is a massive win for RAM, for your CPU, and for file stability.
 
 Compare that experience to what you get with a more conventional word processing app, which keeps all the text for such a document in just one titanic, shaky file. Even if you find clever ways of identifying its segments and navigating within and between them, you'll still find such an app isn't cut out for this kind of work. And that doesn't even get into all the *other* apps and files you'll have to juggle due to the other requirements I mentioned.
 
@@ -84,13 +84,13 @@ Scrivener was built precisely for this and similar use cases, over a decade ago,
 
 ## Pursuit of APIness *vs.* realism
 
-Sadly, though---as is true for many a literary hero---Scrivener's greatest strength is also its greatest weakness. At least, that's the case when it comes to the issue of how to sync Scriv files across devices.
+Sadly, though --- as is true for many a literary hero --- Scrivener's greatest strength is also its greatest weakness. At least, that's the case when it comes to the issue of how to sync Scriv files across devices.
 
 First, let me say it again: you can sync a Scrivener file between two Macs via iCloud all you want, because macOS-to-macOS is fine. Where Scrivener is dependent on Dropbox is when you bring the iOS version into play.
 
 **For iOS**, [iCloud's API doesn't "get" the special file structure of Scrivener](https://www.literatureandlatte.com/forum/viewtopic.php?p=244405#p244405). Nor, for that matter, does OneDrive's. And [you **absolutely** should **NEVER** try Scrivener files in Google Drive](https://scrivener.tenderapp.com/help/kb/cloud-syncing/google-drive-advisory) (even Mac-to-Mac), which brings on its own special hell.[^Gdocs]
 
-[^Gdocs]: For reasons passing human understanding, Google Drive thinks a text file within it---even deep within the .scriv file container---should be changed to its own .gdoc format for use with Google Docs. Jeeeeez.
+[^Gdocs]: For reasons passing human understanding, Google Drive thinks a text file within it --- even deep within the .scriv file container --- should be changed to its own .gdoc format for use with Google Docs. Jeeeeez.
 
 Only the Dropbox API, still to this day, is able to "understand" the Scriv file structure for iOS purposes. Until that changes, Dropbox is the only approved, proven, safe way to sync Scrivener files between macOS and iOS. Period. End of story.
 
@@ -112,8 +112,8 @@ Finally: the L&amp;L forums also are visited frequently by those who ask, essent
 
 [^iCloudapps]: This argument usually cites apps like Ulysses and [iA Writer](https://ia.net/writer), which indeed are happy campers where iCloud sync and their apps are concerned. However, those apps aren't designed to do all the things that Scrivener does, so their file structures can be simpler and, thus, iCloud-friendly; it's apples-and-oranges.
 
-And then, the answer---sometimes even from Scrivener creator Keith Blount himself---comes back, in so many words: "Because that would destroy Scrivener." And that's absolutely true. Scrivener without the very powers it gets from that file structure would be a pale remnant of its current self.
+And then, the answer --- sometimes even from Scrivener creator Keith Blount himself --- comes back, in so many words: "Because that would destroy Scrivener." And that's absolutely true. Scrivener without the very powers it gets from that file structure would be a pale remnant of its current self.
 
-If L&amp;L were a bigger operation, perhaps it would develop a "light" version of Scriv along such lines---but I doubt it. I get the impression that the L&amp;L folks think, well, if you want a dumber version of this app to which we've given our full measure of devotion all these years, there's a big field of competitors out there; go for it. They're too nice to *say* that (usually, although [certain particularly rude questioners can provoke them](https://www.literatureandlatte.com/forum/viewtopic.php?p=294469#p294469)), but I believe that's their position, and I can't say I disagree. Those Who Do Not Code probably cannot understand such things; and that constitutes a large part of the Scriv audience, as nearly as I can tell through a variety of anecdotal data and observations.
+If L&amp;L were a bigger operation, perhaps it would develop a "light" version of Scriv along such lines --- but I doubt it. I get the impression that the L&amp;L folks think, well, if you want a dumber version of this app to which we've given our full measure of devotion all these years, there's a big field of competitors out there; go for it. They're too nice to *say* that (usually, although [certain particularly rude questioners can provoke them](https://www.literatureandlatte.com/forum/viewtopic.php?p=294469#p294469)), but I believe that's their position, and I can't say I disagree. Those Who Do Not Code probably cannot understand such things; and that constitutes a large part of the Scriv audience, as nearly as I can tell through a variety of anecdotal data and observations.
 
-Anyway, I do hope this has helped people understand why, and I say it again, **the Scrivener app for iOS DOESN'T work with iCloud sync**. Don't know how much plainer I can make it---even for somebody who's savvy enough to be a frequent commenter on Ars Technica.
+Anyway, I do hope this has helped people understand why, and I say it again, **the Scrivener app for iOS DOESN'T work with iCloud sync**. Don't know how much plainer I can make it --- even for somebody who's savvy enough to be a frequent commenter on Ars Technica.

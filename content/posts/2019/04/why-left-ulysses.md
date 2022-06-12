@@ -30,7 +30,7 @@ oldComments: |
     </div>
 ---
 
-**Note, 2019-05-04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in/)."
+**Note, 2019‑05‑04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in/)."
 {.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.
@@ -94,7 +94,7 @@ Sync was stuck on my Mac's installation of Ulysses, and had been that way for da
 
 {{< imgc src="iCloud_sync-save_icon_in_Ulysses_634x265.jpg" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width="634" height="265" >}}
 
-When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem.
+When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device --- Houston, we have an iCloud&nbsp;sync&nbsp;problem.
 {.imgcCaption}
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
@@ -109,7 +109,7 @@ But, during my search for answers, I'd had one of those "Can't unsee it" moments
 
 ## "A long, hard, awkward stare"
 
-On the same [forum page](https://talk.macpowerusers.com/t/ulysses-having-issues-with-icloud-sync-15-20-groups-with-sheets-not-downloading/9662) where I'd found the fix, multiple other posters said they, too, had gone through similar Ulysses/iCloud SNAFUs---in some cases, years ago.
+On the same [forum page](https://talk.macpowerusers.com/t/ulysses-having-issues-with-icloud-sync-15-20-groups-with-sheets-not-downloading/9662) where I'd found the fix, multiple other posters said they, too, had gone through similar Ulysses/iCloud SNAFUs --- in some cases, years ago.
 
 To me, that meant what I'd experienced was essentially a known bug in the very Ulysses/iCloud seamlessness that I'd celebrated in blissful ignorance for months.
 
@@ -127,7 +127,7 @@ Had my trouble been a one-shot deal, an isolated incident, that would've been on
 
 Since sync&rsquo;ing is one of those cases where "[failure is not an option](https://en.wikipedia.org/wiki/Failure_Is_Not_an_Option)," I now had to decide whether to continue storing my work within this app which, heretofore, I'd trusted completely.
 
-And, in case you've decided I was being too hasty, that I was letting one odd occurrence and some random complaints on the web sour me on a perfectly fine app: that Sunday afternoon wasn't the end of the trouble. I continued to suffer various types of a Ulysses/iCloud "[failure to communicate](https://www.americanrhetoric.com/MovieSpeeches/moviespeechcoolhandluke2.html)," and even lost some work as a result. Moreover, *none* of my other apps---most especially iA Writer, with its support for [Open in Place](https://developer.apple.com/document-based-apps/) as well as its fully transparent file storage in the Finder and the iOS Files app, as opposed to the workings of the obscurely located Ulysses Library[^Library]---had so much as a whisper of trouble dealing with iCloud.
+And, in case you've decided I was being too hasty, that I was letting one odd occurrence and some random complaints on the web sour me on a perfectly fine app: that Sunday afternoon wasn't the end of the trouble. I continued to suffer various types of a Ulysses/iCloud "[failure to communicate](https://www.americanrhetoric.com/MovieSpeeches/moviespeechcoolhandluke2.html)," and even lost some work as a result. Moreover, *none* of my other apps --- most especially iA Writer, with its support for [Open in Place](https://developer.apple.com/document-based-apps/) as well as its fully transparent file storage in the Finder and the iOS Files app, as opposed to the workings of the obscurely located Ulysses Library[^Library] --- had so much as a whisper of trouble dealing with iCloud.
 
 [^Library]: For further details on how and where the Ulysses Library stores files, see: "The Library, and File Management" in [this article](https://mariusmasalar.me/ulysses-vs-ia-writer-a-new-comparison-7015c899e883/) by Marius Masalar. (In the original version of this post, I also referenced an excellent 2017 Ulysses review by [Chris Rosser](https://chrisrosser.net/), but it no longer appears on his website.)
 
@@ -137,9 +137,9 @@ A few days after the initial scare, I consulted a fellow writer, blogger, and Ul
 
 Mine was due for renewal around the end of May, so decision time was nearing.
 
-The [arrival](https://ulysses.app/blog/2019/03/ulysses-15-released/) of Ulysses 15 on March 11---admittedly [an](https://www.macstories.net/reviews/ulysses-15-review-split-view-on-the-mac-remote-images-improved-ipad-multitasking-and-more/) [impressive](https://brooksreview.net/2019/03/ulysses-15-better-than-ever/) [release](https://thesweetsetup.com/ulysses-15-news-including-our-review-update-some-great-ulysses-tips-and-more/) with a lot to offer---didn't change my mind. The new and improved features were great. The ongoing risk to my content[^weirdness] wasn't.
+The [arrival](https://ulysses.app/blog/2019/03/ulysses-15-released/) of Ulysses 15 on March 11 --- admittedly [an](https://www.macstories.net/reviews/ulysses-15-review-split-view-on-the-mac-remote-images-improved-ipad-multitasking-and-more/) [impressive](https://brooksreview.net/2019/03/ulysses-15-better-than-ever/) [release](https://thesweetsetup.com/ulysses-15-news-including-our-review-update-some-great-ulysses-tips-and-more/) with a lot to offer --- didn't change my mind. The new and improved features were great. The ongoing risk to my content[^weirdness] wasn't.
 
-[^weirdness]: The glitchiness continued even after I upgraded to Ulysses 15, in case you're wondering whether I was sticking with an older, possibly problematic version. Similarly, my devices were---and always are---on the most currently available versions of both macOS and iOS. Trust me: especially in this time of one zero-day exploit after another, I am not one of these "Ooh, I don't believe in using the latest-and-the-greatest" people.
+[^weirdness]: The glitchiness continued even after I upgraded to Ulysses 15, in case you're wondering whether I was sticking with an older, possibly problematic version. Similarly, my devices were --- and always are --- on the most currently available versions of both macOS and iOS. Trust me: especially in this time of one zero-day exploit after another, I am not one of these "Ooh, I don't believe in using the latest-and-the-greatest" people.
 
 ## It's not me; it's U
 
@@ -157,13 +157,13 @@ But it was hard to let go. Even as late as a couple of weeks ago, I found myself
 
 {{< stweet "1114140807764893696" >}}
 
-And, almost as if it had gotten the message, Ulysses was good as gold across my devices---until this morning.
+And, almost as if it had gotten the message, Ulysses was good as gold across my devices --- until this morning.
 
 Then, after doing some WIP edits in Ulysses on my iPad last night and confirming that they'd transferred smoothly and nearly instantaneously over to the iPhone across iCloud, I opened up Ulysses on the Mac so I could copy the latest edits over to iA Writer just to be safe, as I've done throughout this "stress test."
 
 Last night's edits weren't there; the last stuff there was from the night before last, my most recent editing session on the Mac. I waited. And waited. I wasn't about to touch anything at this point, lest I cause any conflicts. Finally, nearly *five minutes later*, the newest edits began popping up on the Mac, **except** that their timestamps were from right that moment, when they'd appeared in the Mac version, **not** when I'd actually last edited them.
 
-I just sat there a minute, thinking about what I'd just witnessed and what it meant. Finally, I muttered, quietly and sadly, "Well, sir, that's all she wrote." I got those files safely copied over to iA Writer and---for the last time---closed Ulysses.
+I just sat there a minute, thinking about what I'd just witnessed and what it meant. Finally, I muttered, quietly and sadly, "Well, sir, that's all she wrote." I got those files safely copied over to iA Writer and --- for the last time --- closed Ulysses.
 
 **Note from 2019-05-04**: I've since [learned](/posts/2019/05/boxed-in/) that the behavior re the timestamp turns out to be common for so-called "shoebox" or "central-library" apps like Ulysses and, for that matter, Apple's own Notes and Photos apps. So, while I considered it the Smoking Gun at that point, now I doubt that. This doesn't explain the earlier business with the sync not happening for days, of course, but I've also learned of numerous similar reports from users of "shoebox" apps so, while that doesn't make it okay, it does suggest the fault isn't *necessarily* that of Ulysses. Again, will [update](/posts/2019/05/boxed-in/) with more info when I can.
 {.yellowBox}
@@ -195,7 +195,7 @@ However, that was probably just how my wandering mind took them; because, by the
 Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.
 {.imgcCaption}
 
-*For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW]---and that's high praise, because each of those is outstanding in its own way.
+*For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW] --- and that's high praise, because each of those is outstanding in its own way.
 
 [^scrolling_iAW]: To be fair, I'll mention one annoying problem in iA Writer for iOS: many times, when you attempt to select text, the cursor suddenly goes all caffeinated on you and wildly selects far more than what you intended. It appears to be a known bug which I hope the iA folks will fix soon.
 
@@ -205,7 +205,7 @@ To be sure, many don't find iA Writer a suitable replacement for Ulysses. Use ca
 
 For me, *for now*, it will do. And, just in case I haven't made my meaning sufficiently clear&nbsp;.&nbsp;.&nbsp;.
 
-One important thing I've gained through the transition to [Markdown](/posts/2019/03/mark-it-down/)-flavored [plain text](/posts/2019/03/plain-truth/) is tremendous freedom for the future. If the day comes that iA Writer either ceases to exist or simply winds up on my bad side one day for reasons I can't currently predict---well, there's a great, big world of Markdown-savvy apps out there, with more on the way.
+One important thing I've gained through the transition to [Markdown](/posts/2019/03/mark-it-down/)-flavored [plain text](/posts/2019/03/plain-truth/) is tremendous freedom for the future. If the day comes that iA Writer either ceases to exist or simply winds up on my bad side one day for reasons I can't currently predict --- well, there's a great, big world of Markdown-savvy apps out there, with more on the way.
 
 So, yes, iA Writer, *for now*, I welcome your icon to the center positions on the docks of my Mac and iPad, and also to a presence in the Honored Four apps always visible at the bottom of my iPhone home screen. Just be sure you keep earning your presence there. Above all, don't get too comfortable.
 

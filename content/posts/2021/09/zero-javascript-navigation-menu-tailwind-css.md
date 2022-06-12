@@ -27,7 +27,7 @@ When I originally put this site on the web three years ago this month, I didn't 
 - Responsive, serving as a "hamburger" menu for small screen widths but a regular nav bar otherwise.
 - Accessible, including keyboard-only navigability.
 
-However, by the end of that year, this site's menu was all of those. I built it by borrowing shamelessly from a [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) by [Kevin Powell](https://www.kevinpowell.co/). Over time, I learned to make it work under various styling configurations---first with Sass, then with Tailwind, then with more-or-less vanilla CSS (albeit enhanced by [PostCSS](https://postcss.org)). As regular readers of this site know, I've gone back and forth among those three ever since; and, currently, the site is back on Tailwind.
+However, by the end of that year, this site's menu was all of those. I built it by borrowing shamelessly from a [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) by [Kevin Powell](https://www.kevinpowell.co/). Over time, I learned to make it work under various styling configurations --- first with Sass, then with Tailwind, then with more-or-less vanilla CSS (albeit enhanced by [PostCSS](https://postcss.org)). As regular readers of this site know, I've gone back and forth among those three ever since; and, currently, the site is back on Tailwind.
 
 On occasion during my "Tailwind phases," I strayed from the zero-JavaScript approach (adding just a tiny bit of functionality with JavaScript) but, for reasons I won't cover herein, found it not to my liking. I kept wondering why I couldn't simply adapt the pure-CSS logic from Kevin Powell's original menu so it would work in Tailwind.
 
@@ -38,7 +38,7 @@ And, finally, I did. The results are the subject of this post.
 Yeah, I know: that's enough talk. Let's get to the code, **after** I provide just a little more info that will help you read and understand it:
 
 - This works with Tailwind CSS 2.2.x. With other versions, past or future, YMMV, although I'd **guess** future versions will be OK with it.
-- The HTML part is in the [Nunjucks](https://mozilla.github.io/nunjucks/) templating language which this [Eleventy](https://11ty.dev)-based site uses. Although much of it is indistinguishable from vanilla HTML, there are places---notably the part which derives the "newest post" item in the nav menu---where you see Nunjucks.
+- The HTML part is in the [Nunjucks](https://mozilla.github.io/nunjucks/) templating language which this [Eleventy](https://11ty.dev)-based site uses. Although much of it is indistinguishable from vanilla HTML, there are places --- notably the part which derives the "newest post" item in the nav menu --- where you see Nunjucks.
 - I will also include the `tailwind.config.js` file for your reference.
 - Because I was trying to make the CSS 100% Tailwind (but finally couldn't, as I'll note below), the site uses the [`tailwindcss-logical`](https://github.com/stevecochrane/tailwindcss-logical) plugin to add another three utilities to Tailwind:
 	- `mbs-0` = `margin-block-start: 0px`.

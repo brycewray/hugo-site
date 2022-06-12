@@ -17,7 +17,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/belseykurns-926746/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Kelsey Burns</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Pixabay</a></span>
 ---
 
-When I [was](/posts/2019/07/why-staying-with-hugo/) [railing](/posts/2019/07/lessons-learned/) [against](/posts/2019/09/why-left-hugo-eleventy/) the [Gatsby](https://www.gatsbyjs.org) [static site generator](https://www.staticgen.com) (SSG)---that is, before I decided [yet again](/posts/2019/10/otoh/) to give it a shot, which is continuing in the background now---one of the things I found most annoying was how it wouldn't let me put images just anywhere I pleased within the site's directory structure.
+When I [was](/posts/2019/07/why-staying-with-hugo/) [railing](/posts/2019/07/lessons-learned/) [against](/posts/2019/09/why-left-hugo-eleventy/) the [Gatsby](https://www.gatsbyjs.org) [static site generator](https://www.staticgen.com) (SSG) --- that is, before I decided [yet again](/posts/2019/10/otoh/) to give it a shot, which is continuing in the background now --- one of the things I found most annoying was how it wouldn't let me put images just anywhere I pleased within the site's directory structure.
 
 I won't take you back through the whole rant, especially since I linked above to the extended-length posts that contained its component parts, but here it is in TL;DR form:
 
@@ -25,11 +25,11 @@ I won't take you back through the whole rant, especially since I linked above to
 
 .&nbsp;.&nbsp;. so you can well imagine the shock my *hubris* took when I learned that an insistence on where images should go **isn't** just a Gatsby requirement. It's even a [Hugo](https://gohugo.io) requirement, not to mention a requirement for the Gatsby near-beer, [Gridsome](https://gridsome.org). It all depends on how you want the site to perform where those images are concerned.
 
-If you're thinking about getting into the whole static-site thing and are wondering how you'll set it up when you do, give me just a few moments of your time while I explain what I learned. Perhaps it'll save you some steps---or, at the very least, explain why you should arrange some content in ways you might not've originally planned.
+If you're thinking about getting into the whole static-site thing and are wondering how you'll set it up when you do, give me just a few moments of your time while I explain what I learned. Perhaps it'll save you some steps --- or, at the very least, explain why you should arrange some content in ways you might not've originally planned.
 
 ## Monkey no see, monkey no do
 
-First off, let me explain the thing that threw me for a loop where Gatsby and images are concerned: under most circumstances, it wants you to put them in the same directory ("folder”) as content. Back when I simply dropped image files into one big top-level `images` folder and Markdown files into another[^dirSet]---after which I'd let my SSG of the moment handle them pretty automatically---I found this limiting. Surely I wasn't going to have to start having to keep my images and Markdown files in the same directory?
+First off, let me explain the thing that threw me for a loop where Gatsby and images are concerned: under most circumstances, it wants you to put them in the same directory ("folder”) as content. Back when I simply dropped image files into one big top-level `images` folder and Markdown files into another[^dirSet] --- after which I'd let my SSG of the moment handle them pretty automatically --- I found this limiting. Surely I wasn't going to have to start having to keep my images and Markdown files in the same directory?
 
 [^dirSet]: Well, within limits. What I did with the site posts was to put them all in month-based folders; for example, this one would go in `/posts/2019/10` and then appear as `/posts/2019/10/picture-perfect`. Still, the point is: I wasn't putting Markdown files in the same folders with their images.
 
@@ -73,7 +73,7 @@ How about if the SSG also creates a tiny-file-size blurred version of the image,
 
 [^gatsbyImage]: Indeed, this functionality was a key to keeping me trying to convert to Gatsby despite my [various](/posts/2019/07/why-staying-with-hugo/) [troubles](/posts/2019/09/why-left-hugo-eleventy/) in doing so.
 
-Hugo doesn't do either of these out of the box, but you can add to your Hugo site an excellent external JavaScript tool called [**lazysizes**](https://github.com/aFarkas/lazysizes), which---especially if used with its optional plugins---offers many of the same capabilities. In fact, if your SSG is anything besides Gatsby or Gridsome, I'd highly recommend using lazysizes to make the best of your images.
+Hugo doesn't do either of these out of the box, but you can add to your Hugo site an excellent external JavaScript tool called [**lazysizes**](https://github.com/aFarkas/lazysizes), which --- especially if used with its optional plugins --- offers many of the same capabilities. In fact, if your SSG is anything besides Gatsby or Gridsome, I'd highly recommend using lazysizes to make the best of your images.
 
 ## Can't I just pre-optimize?
 

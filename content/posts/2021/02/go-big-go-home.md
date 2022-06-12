@@ -34,7 +34,7 @@ Still, there's a difference between *accepting* it and *embracing* it.
 
 While transitioning the site from Eleventy back to Hugo, I'd cobbled together a really spaghetti-ish Go version of one particular bit of code on which the site has been depending for some months now. However, the result's inelegance and un-[DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness embarrassed me.
 
-To be specific: while the original JavaScript code looped nicely through an array to do its thing, the Go code was repeating each part verbatim---and only because, frankly, it worked and I didn't want to fool with the looping process in Go.
+To be specific: while the original JavaScript code looped nicely through an array to do its thing, the Go code was repeating each part verbatim --- and only because, frankly, it worked and I didn't want to fool with the looping process in Go.
 
 Cowardly, I know, but that's how it was.
 
@@ -69,7 +69,7 @@ Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next
 {{</* imgc src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width="1984" height="1118" */>}}
 ```
 
-[^commentsGo]: If you happen upon [this site's repo](https://github.com/brycewray/hugo_site) out of curiosity and check out this post's Markdown file, you'll notice that this text's bounding `{{` and `}}` also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly---in this case, once again displaying the image. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). This is similar to how Eleventy requires the use of `{% raw %}` and `{% endraw %}` for proper display of code blocks which contain certain combinations of characters.
+[^commentsGo]: If you happen upon [this site's repo](https://github.com/brycewray/hugo_site) out of curiosity and check out this post's Markdown file, you'll notice that this text's bounding `{{` and `}}` also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the image. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). This is similar to how Eleventy requires the use of `{% raw %}` and `{% endraw %}` for proper display of code blocks which contain certain combinations of characters.
 
 Here's what each shortcode does:
 
@@ -168,7 +168,7 @@ Here's the corresponding Go version for Hugo:
 {{- $stringtoRet | safeHTML -}}
 ```
 
-And, yes: further down, I **am** going to try to explain all that `.Scratch` stuff---although I must also point you to what pretty much is `.Scratch` canon, namely [Régis Philibert](https://regisphilibert.com)'s article about the subject, "[Hugo .Scratch explained](https://regisphilibert.com/blog/2017/04/hugo-scratch-explained-variable/)." How canonical is it? When you go to Hugo's own [documentation about `.Scratch`](https://gohugo.io/functions/scratch), it points you to that Philibert article so you can get "a detailed analysis"!
+And, yes: further down, I **am** going to try to explain all that `.Scratch` stuff --- although I must also point you to what pretty much is `.Scratch` canon, namely [Régis Philibert](https://regisphilibert.com)'s article about the subject, "[Hugo .Scratch explained](https://regisphilibert.com/blog/2017/04/hugo-scratch-explained-variable/)." How canonical is it? When you go to Hugo's own [documentation about `.Scratch`](https://gohugo.io/functions/scratch), it points you to that Philibert article so you can get "a detailed analysis"!
 
 I'll also explain all those `%s` items and a few other seeming oddities.
 
@@ -190,7 +190,7 @@ Now that you've seen both, let's compare/contrast how they work.
 
 ## Passing Go
 
-Now, as promised above, I'll take you through some of the Go-isms in this shortcode, since they probably look strange if you're new to Go---and perhaps even if you're not.
+Now, as promised above, I'll take you through some of the Go-isms in this shortcode, since they probably look strange if you're new to Go --- and perhaps even if you're not.
 
 ### The Dot
 
@@ -210,7 +210,7 @@ Now, let's deal with `.Scratch`. I reiterate that there are others, particularly
 
 The name `.Scratch` comes from the concept of a "scratchpad" on which you can save notes while you're otherwise busy. `.Scratch` is something the Hugo devs cooked up years ago to get the templating process past the difficulties caused by an intentional characteristic of the Go language. You see, Go is a lot pickier than many other languages about the **scope** of a variable. One of those cases where that bites you in Hugo templating is when you're trying to get at a variable as modified within a slice (again, assume a slice is about the same as an array).
 
-While the JS version happily adds to `stringtoRet` as it loops through `respSizes` and then keeps adding to it after the loop, the Go version can't do that to `$stringtoRet` while looping through `$respSizes`---**unless** we use `.Scratch` to create `$innerString`, so it can "hold" the result of that loop and then, after the loop is done, add it to `$stringtoRet`.
+While the JS version happily adds to `stringtoRet` as it loops through `respSizes` and then keeps adding to it after the loop, the Go version can't do that to `$stringtoRet` while looping through `$respSizes` --- **unless** we use `.Scratch` to create `$innerString`, so it can "hold" the result of that loop and then, after the loop is done, add it to `$stringtoRet`.
 
 In the case of this shortcode, **not** using `.Scratch` in this fashion would result in an empty `srcset` and, thus, display only a small, fuzzy fallback image rather than the full responsive image `srcset`.
 
@@ -224,13 +224,13 @@ Finally, those hyphens connected to many of the curly brackets (`{{-` and `-}}`)
 
 ## Twisted, mister
 
-During an [email exchange](/contact) with one of my readers not long after I [announced](/posts/2021/02/simplify-simplify/) the site's return to Hugo, he---a recent convert to Eleventy from other, more "opinionated" JS-based SSGs---remarked how much he was enjoying the relative ease of templating in Eleventy. Only minutes after finishing the Go shortcode we've covered herein, I replied:
+During an [email exchange](/contact) with one of my readers not long after I [announced](/posts/2021/02/simplify-simplify/) the site's return to Hugo, he --- a recent convert to Eleventy from other, more "opinionated" JS-based SSGs --- remarked how much he was enjoying the relative ease of templating in Eleventy. Only minutes after finishing the Go shortcode we've covered herein, I replied:
 
 > As for templating: I just spent three hours whipping a Hugo shortcode into order so, yes, I do miss the simplicity of [templating] in Eleventy. &nbsp;.&nbsp;.&nbsp;. Anyway, there is kind of a twisted logic in how Go works, and maybe I’m just twisted enough to get it eventually.
 
 Although there's never been any mystery about whether I'm twisted, it remains to be seen how well I'll get Go-based templating in Hugo.
 
-However, I do like how this shortcode came out.[^twitscrn] I'll never be an expert in Hugo templates by any means; but, at least, `imgc.html` works, it's as DRY as I feel it needs to be, and I was sufficiently pleased---or maybe I should say, I was **not** sufficiently **embarrassed**---that I wrote this post about it.
+However, I do like how this shortcode came out.[^twitscrn] I'll never be an expert in Hugo templates by any means; but, at least, `imgc.html` works, it's as DRY as I feel it needs to be, and I was sufficiently pleased --- or maybe I should say, I was **not** sufficiently **embarrassed** --- that I wrote this post about it.
 
 Perhaps I'll get lucky and, twisted or not, won't find myself regretting that "not sufficiently embarrassed" part.
 

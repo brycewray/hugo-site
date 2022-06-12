@@ -34,9 +34,9 @@ But it *is* a trial. And I still haven't decided whether to go beyond that. I'll
 
 Before I get to the reasons why I have some reluctance about continuing with this service when the free trial ends, I'll address some of the service-based criticisms one often sees about SiriusXM.
 
-If reading the web-based comments from those who gripe about SiriusXM programming[^IntelligentOnes] can provide an accurate picture of what SiriusXM users think---and that's a *big* "if," in my view---it would seem that a lot of those users wish that:
+If reading the web-based comments from those who gripe about SiriusXM programming[^IntelligentOnes] can provide an accurate picture of what SiriusXM users think --- and that's a *big* "if," in my view --- it would seem that a lot of those users wish that:
 
-[^IntelligentOnes]: And I mean the intelligent ones, not the ones who TYPE IN ALL CAPS or can't spell or can't punctuate or---ah, you get the idea.
+[^IntelligentOnes]: And I mean the intelligent ones, not the ones who TYPE IN ALL CAPS or can't spell or can't punctuate or --- ah, you get the idea.
 
 - The channels with announcers were, well, *without* announcers. "Shut up and play the music," they say.
 
@@ -56,9 +56,9 @@ Jeeeez. Well, now&nbsp;.&nbsp;.&nbsp;.
 
 [^CHR]: "Contemporary hit radio."
 
-- It's true that, strictly due to the limited amount of bandwidth each SiriusXM satellite channel can occupy, the audio quality of many of the music channels includes a lot of compression and processing. That, too, is best resolved by listening to the streaming version where possible. I would also note that, again, those of us who got used to music on AM radio---much less FM radio---as it sounded back in the day aren't terribly troubled by this. And, let's be honest, a lot of us old farts who prefer oldies-ish channels aren't exactly still hearing those frequency peaks (although, ahem, I can, but I took *very* good care of my hearing back when many of my then-fellow "disc jockeys" were blasting their ears with full-volume audio fed into headphones, ignoring my clucking at them about the long-term bad effects of that practice).
+- It's true that, strictly due to the limited amount of bandwidth each SiriusXM satellite channel can occupy, the audio quality of many of the music channels includes a lot of compression and processing. That, too, is best resolved by listening to the streaming version where possible. I would also note that, again, those of us who got used to music on AM radio --- much less FM radio --- as it sounded back in the day aren't terribly troubled by this. And, let's be honest, a lot of us old farts who prefer oldies-ish channels aren't exactly still hearing those frequency peaks (although, ahem, I can, but I took *very* good care of my hearing back when many of my then-fellow "disc jockeys" were blasting their ears with full-volume audio fed into headphones, ignoring my clucking at them about the long-term bad effects of that practice).
 
-- Finally, the bitching about commercials on talk shows and/or simulcasts is just plain dumb, since those commercial breaks are *part* of that programming as SiriusXM receives it. Does SiriusXM insert commercials or "promos" of its own during these breaks? Yes. If it didn't, you'd still be hearing commercials, but they'd simply be the commercials---or, perhaps, background "break music"---in the original feed. To my knowledge, there is *no* talk show out there that is commercial-free, no matter how you access it.
+- Finally, the bitching about commercials on talk shows and/or simulcasts is just plain dumb, since those commercial breaks are *part* of that programming as SiriusXM receives it. Does SiriusXM insert commercials or "promos" of its own during these breaks? Yes. If it didn't, you'd still be hearing commercials, but they'd simply be the commercials --- or, perhaps, background "break music" --- in the original feed. To my knowledge, there is *no* talk show out there that is commercial-free, no matter how you access it.
 
 Now that you've decided I'm a pure and shameless apologist for SiriusXM, allow me to show you that you're wrong.
 
@@ -66,7 +66,7 @@ Now that you've decided I'm a pure and shameless apologist for SiriusXM, allow m
 
 It's clear that there's a lot about the SiriusXM service that I like. So why did I say I'm not sure about subscribing to it after my free trial ends soon?
 
-Let's put it this way: if you're a cord-cutter, weren't you thrilled when you first realized you never again would have to deal with the cable TV "customer retention specialists"---the people paid specifically to make it ultra-hard for you to cancel your subscription or at least get a decently priced renewal deal---whenever the yearly, or bi-yearly, renewal time came around for your cable TV service? I know I was.
+Let's put it this way: if you're a cord-cutter, weren't you thrilled when you first realized you never again would have to deal with the cable TV "customer retention specialists" --- the people paid specifically to make it ultra-hard for you to cancel your subscription or at least get a decently priced renewal deal --- whenever the yearly, or bi-yearly, renewal time came around for your cable TV service? I know I was.
 
 Problem is, SiriusXM employs a "customer retention" operation that puts cable companies to shame. Just do a search for horror stories about how much of a pain it is, *once SiriusXM has your credit card on record*, to cancel a SiriusXM subscription or get a decent price if you do want to renew.[^Prepaid]
 
@@ -74,7 +74,7 @@ Problem is, SiriusXM employs a "customer retention" operation that puts cable co
 
 I *hate* negotiating prices, whether with car dealers or with "retention specialists." If I could erase the world and remake it to suit me, *everything would have a fixed price*. There would be *true* "no-haggle" pricing. Unfortunately, that's not how one buys a vehicle, and it's also not how one deals with SiriusXM.
 
-At this writing, the top-of-the-line XM All Access package,  which is the only one I would consider having, has a list price---or let's call it a *sticker price*, to keep the car-buying analogy sufficiently sound---of twenty-two bucks a month. However, you know what they say about buying vehicles: "Never pay the sticker price." Numerous commenters on the web tell you that, when it's time either to start a subscription or renew one, you should negotiate that number ’way, ’way down. The consensus seems to be that you ought to be able to get the "retention specialist" to give you twelve months’ worth of XM All Access for just a hundred bucks, which is less than half of what it's supposed to cost.[^XMS]
+At this writing, the top-of-the-line XM All Access package,  which is the only one I would consider having, has a list price --- or let's call it a *sticker price*, to keep the car-buying analogy sufficiently sound --- of twenty-two bucks a month. However, you know what they say about buying vehicles: "Never pay the sticker price." Numerous commenters on the web tell you that, when it's time either to start a subscription or renew one, you should negotiate that number ’way, ’way down. The consensus seems to be that you ought to be able to get the "retention specialist" to give you twelve months’ worth of XM All Access for just a hundred bucks, which is less than half of what it's supposed to cost.[^XMS]
 
 [^XMS]: For the more popular XM Select, which has fewer channels but the vast majority of those that the [Reddit](https://reddit.com) crowd seems to want, the sticker price is seventeen bucks a month *but* you'll see lots of people bragging they got it down to six months for just thirty bucks, or thereabout.
 
@@ -84,7 +84,7 @@ First of all: while you can *sign up* with SiriusXM through its website, you mus
 
 [^Cali]: That is, you must call *unless* you live in a jurisdiction, like California, that actually protects its residents with laws against this idiocy. However, Texas, where I live, couldn't care less.
 
-And how do you do this? Well, there's a certain number to call, the "experts" say, as opposed to the usual one SiriusXM lists on its website. Often, you have to go through numerous calls---and all their accompanying on-hold time---and keep at it until you get a "retention specialist," or a (supposed) manager of that person, who'll give in. You'll probably have to threaten to cancel, or *actually* cancel, several times in all of this rigamarole.
+And how do you do this? Well, there's a certain number to call, the "experts" say, as opposed to the usual one SiriusXM lists on its website. Often, you have to go through numerous calls --- and all their accompanying on-hold time --- and keep at it until you get a "retention specialist," or a (supposed) manager of that person, who'll give in. You'll probably have to threaten to cancel, or *actually* cancel, several times in all of this rigamarole.
 
 Then, of course, you have to rinse and repeat when it's about time for that subscription to end. Also, you don't dare wait too late if they *do* have your credit card on record, lest they auto-bill you for the higher amount they really want to charge.[^AutoBill]
 
@@ -109,7 +109,7 @@ So, in short, I'd say this: *if* you don't mind the negotiation garbage I just d
 
 As for me, I have a few more weeks[^Kaching] to decide whether I like the service enough to jump through the negotiation hoops that a SiriusXM subscription unfortunately involves.
 
-[^Kaching]: My three-month freebie ends in early May, and I then could get another three "free" months---*by signing up*. Can you say, "Ka-ching"?
+[^Kaching]: My three-month freebie ends in early May, and I then could get another three "free" months --- *by signing up*. Can you say, "Ka-ching"?
 
-**Update, 2020-05-22**: Today, I saw an offer on the SiriusXM site for *precisely* the new-subscriber deal I wanted: one year of the All-Access package for $99 (not counting the music royalty fee and other stuff, of course, but I always knew that would be part of it, no matter what); so, two weeks after my freebie ended, I did go ahead and subscribe, after all. And I've already set a calendar reminder for May 15 of *next* year so I'll have plenty time to go back and cancel in time to avoid auto-renewal at $22 a month (or whatever the rate is by then)---or, if I can, negotiate a fair renewal price.
+**Update, 2020‑05‑22**: Today, I saw an offer on the SiriusXM site for *precisely* the new-subscriber deal I wanted: one year of the All-Access package for $99 (not counting the music royalty fee and other stuff, of course, but I always knew that would be part of it, no matter what); so, two weeks after my freebie ended, I did go ahead and subscribe, after all. And I've already set a calendar reminder for May 15 of *next* year so I'll have plenty time to go back and cancel in time to avoid auto-renewal at $22 a month (or whatever the rate is by then) --- or, if I can, negotiate a fair renewal price.
 {.yellowBox}

@@ -22,7 +22,7 @@ featured_image_caption: |
 
 Who needs heroes? Not this site, I've decided.
 
-Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimization-glossary/hero-image/)---a massive photo or other graphic element that constitutes much if not all of the "above-the-fold" content on the typical website these days.
+Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimization-glossary/hero-image/) --- a massive photo or other graphic element that constitutes much if not all of the "above-the-fold" content on the typical website these days.
 
 If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great, big, honkin’ stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019/)):
 
@@ -32,7 +32,7 @@ Not today, though. In fact, you might want to open another browser tab or window
 
 It's a new look.
 
-And it's here because of stuff I learned---and a decision I made.
+And it's here because of stuff I learned --- and a decision I made.
 
 ## Oh, what a tangled WebP&nbsp;.&nbsp;.&nbsp;.
 
@@ -44,13 +44,13 @@ I decided to do something about that. So, since responsive-loader doesn't suppor
 
 A weekend's worth of false starts later, I had the sequence just right and, on build, the setup converted each JPG or PNG image in `/src/images/` to up to four different sizes in the image's original format *plus* WebP. Then, finally, I retooled an [Eleventy shortcode](https://www.11ty.dev/docs/shortcodes/) I'd written so that it would produce, rather than just an `<img>` with a `data-srcset` (to conform to the needs of the [lazysizes](https://github.com/aFarkas/lazysizes) library), a `<picture>` which would give each browser its choice of sizes and formats. Browsers which couldn't handle WebP files would fall back to each file's original format, whether JPG or PNG.
 
-It seemed simple enough. But I gave you a hint above as to why it came a-cropper---"Webp .&nbsp;.&nbsp;. is much more efficient than either JPG or PNG **in most cases**" (emphasis added this time around).
+It seemed simple enough. But I gave you a hint above as to why it came a-cropper --- "Webp .&nbsp;.&nbsp;. is much more efficient than either JPG or PNG **in most cases**" (emphasis added this time around).
 
 Obviously, "in most cases" [!=](https://sciencetrends.com/does-not-equal-sign-what-does) "all the time"; and therein lay the problem.
 
 ## The diet wasn't working
 
-When I saw that some of the files actually were *larger* in WebP format---especially when I ran the site's `testbuild` script (see the [site repo](https://github.com/brycewray/eleventy_bundler)'s README file for more details)---I wondered how that could be.
+When I saw that some of the files actually were *larger* in WebP format --- especially when I ran the site's `testbuild` script (see the [site repo](https://github.com/brycewray/eleventy_bundler)'s README file for more details) --- I wondered how that could be.
 
 It didn't take long to find out.
 
@@ -68,11 +68,11 @@ This was particularly true for nearly all of the stock images. For each, I had--
 
 One. At. A. Time.
 
----and, often, with different settings for each. (By the way, I had no way of knowing that even the largest image offered by the vendor hadn't already been processed somehow. After all, these were JPG or PNG files, not [raw](https://en.wikipedia.org/wiki/Raw_image_format) files.)
+--- and, often, with different settings for each. (By the way, I had no way of knowing that even the largest image offered by the vendor hadn't already been processed somehow. After all, these were JPG or PNG files, not [raw](https://en.wikipedia.org/wiki/Raw_image_format) files.)
 
 It got worse. Often, I also had to convert the WebP version of a stock image at only *twenty or thirty percent quality* to achieve a smaller file size. To the credit of the WebP format, that ugly process *didn't* result in the horrible, [artifact](https://en.wikipedia.org/wiki/Compression_artifact)-laden mess you'd get if you reduced other formats’ files to so low a quality. Still, it was visibly not as clear as the JPG or PNG, especially when I compared the two on a high-resolution display.[^workLoRes]
 
-[^workLoRes]: A WebP converted at such low quality looked passable on the old low-resolution monitor at work, but on the double- or triple-quality displays commonly used by today's smartphones, much less my iMac's 5K display---not so much.
+[^workLoRes]: A WebP converted at such low quality looked passable on the old low-resolution monitor at work, but on the double- or triple-quality displays commonly used by today's smartphones, much less my iMac's 5K display --- not so much.
 
 So I had to decide what to do.
 
@@ -86,7 +86,7 @@ I first figured I had two choices:
 
 However, in the early hours of yesterday morning, I revisited something I'd played with only in separate branches of my repo but never yet committed to the remotes: *doing without hero images altogether*.
 
-I'd thought about it before because, frankly, I had tired of always having to find some stock photo to illustrate each and every post, particularly since I had to stick to free stock photos---yeah, right, the same free stock photos everyone else uses. And it's not as if I could always find an image that both fit the "hole" I had to give it and had at least some relation to the subject of the post.
+I'd thought about it before because, frankly, I had tired of always having to find some stock photo to illustrate each and every post, particularly since I had to stick to free stock photos --- yeah, right, the same free stock photos everyone else uses. And it's not as if I could always find an image that both fit the "hole" I had to give it and had at least some relation to the subject of the post.
 
 Besides, as I kept telling myself: "Dude, what few people you have visiting here from time to time *don't* come here looking for the Picture of the Day. They come here looking for *information*. For *words*. If you want to stick images *inside* certain posts to *illustrate points*, that's a totally different matter.[^postsImgs] But this ain't [*Life Magazine*](https://en.wikipedia.org/wiki/Life_(magazine))."
 
@@ -96,7 +96,7 @@ As a result, I created a new branch, retooled the site accordingly, and today pu
 
 ## Noise reduction: it's a *good* thing
 
-It's ironic that one aspect of image processing has to do with reducing so-called [*noise*](https://www.cambridgeincolour.com/tutorials/image-noise.htm); because the "noise" of having the hero images (even the cute ones) became an end unto itself. In the end, that noise---and the growing technical debt, and growing expenditure of my already limited time, which now was going to come with it---had become unacceptable.
+It's ironic that one aspect of image processing has to do with reducing so-called [*noise*](https://www.cambridgeincolour.com/tutorials/image-noise.htm); because the "noise" of having the hero images (even the cute ones) became an end unto itself. In the end, that noise --- and the growing technical debt, and growing expenditure of my already limited time, which now was going to come with it --- had become unacceptable.
 
 So, it's gone.
 

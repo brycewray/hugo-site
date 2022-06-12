@@ -35,7 +35,7 @@ Then, last night, I finally decided to give it a try and, shortly before midnigh
 
 [^whyNotHere]: I don't use it on this site, however, because I [let Cloudinary process this site's images](/posts/2020/07/transformed/). While Eleventy Image definitely can work with images served from other locations besides your site, and although I greatly admire the elegance and features of Eleventy Image, it can't begin to match all the image-transformation capabilities you can [pack into a Cloudinary URL](https://cloudinary.com/documentation/image_transformations#transformation_url_syntax).
 
-[^imgXfm]: Adding Eleventy Image to these starter sets allowed me finally to relieve them of my bespoke `imgxfm.js` file---which, although it worked well enough, delayed each build for a few seconds. For those who've used `imgxfm.js` in the past with any of my starter sets, I highly encourage you to upgrade to the latest and greatest so you can unburden yourself from that sludge. On the other hand, for any masochists out there who still are interested in the `imgxfm.js` code but don't have it, [let me know](/contact) and I'll provide it.
+[^imgXfm]: Adding Eleventy Image to these starter sets allowed me finally to relieve them of my bespoke `imgxfm.js` file --- which, although it worked well enough, delayed each build for a few seconds. For those who've used `imgxfm.js` in the past with any of my starter sets, I highly encourage you to upgrade to the latest and greatest so you can unburden yourself from that sludge. On the other hand, for any masochists out there who still are interested in the `imgxfm.js` code but don't have it, [let me know](/contact) and I'll provide it.
 
 Now that I've gone through that, I offer this post in the hope of making it simpler for even new Eleventy users to understand Eleventy Image. After all, if **this** old fart can, so can you.
 
@@ -72,7 +72,7 @@ First, let's install Eleventy Image in your Eleventy project.
 
 **Install the plugin package**. In your chosen OS's terminal interface, enter the command `npm i -D @11ty/eleventy-img`. This will install (`i`) the plugin package as a development dependency (`-D`).
 
-**Configure Eleventy to use Eleventy Image**. Now that the plugin package is installed, you'll tell Eleventy that it's there by going into the project's `.eleventy.js` configuration file---preferably at the top, **before** you get into the file's `module.exports` statement (about which we'll talk soon)---and adding the line:
+**Configure Eleventy to use Eleventy Image**. Now that the plugin package is installed, you'll tell Eleventy that it's there by going into the project's `.eleventy.js` configuration file --- preferably at the top, **before** you get into the file's `module.exports` statement (about which we'll talk soon) --- and adding the line:
 
 ```js
 const Image = require("@11ty/eleventy-img")
@@ -98,7 +98,7 @@ module.exports = function (eleventyConfig) {
 
 .&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i”) by adding the code shown below.
 
-**Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update/), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
+**Update, 2021‑04‑28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update/), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
 {.yellowBox}
 
 ```js
@@ -141,7 +141,7 @@ For each image file you "feed" this shortcode in your Markdown (we'll explain th
 
 [^inOut]: For more details on the file formats Eleventy Image can accept (input) and create (output), see [its documentation](https://www.11ty.dev/docs/plugins/image/).
 
- **Additional note, 2021-04-25**: If you have a *lot* of images you'll be running through this process, you'd best keep the `widths` array short, since more entries in `widths`---and, for that matter, `formats`---will result in even more files that Eleventy Image will have to create at build time. That can result in not only an extremely slow build but also, for local builds, a suddenly very hot CPU on your computer. Play with this over time and see what combination of image quantity, `widths` options, and `formats` options will work best for your project.
+ **Additional note, 2021‑04‑25**: If you have a *lot* of images you'll be running through this process, you'd best keep the `widths` array short, since more entries in `widths` --- and, for that matter, `formats` --- will result in even more files that Eleventy Image will have to create at build time. That can result in not only an extremely slow build but also, for local builds, a suddenly very hot CPU on your computer. Play with this over time and see what combination of image quantity, `widths` options, and `formats` options will work best for your project.
  {.yellowBox}
 
 The setting for `urlPath` tells your site's pages to think of these images as being located in the site's `/images/` folder; and the `outputDir` setting tells Eleventy Image to copy them to the right location to make that work (given the standard Eleventy output directory of `./site`).
@@ -153,13 +153,13 @@ Now, let's get this show on the road.
 
 ### Use your new shortcode
 
-Let's say you keep your Eleventy project's original image files (the ones the `image` shortcode will process) in an `images` folder that's within a top-level `src` folder---*i.e.*, `./src/images/`. Let's also say that the image file you want to pop into a post you're writing is called `my-pet-cat.jpg`. So type this in your post's Markdown file:
+Let's say you keep your Eleventy project's original image files (the ones the `image` shortcode will process) in an `images` folder that's within a top-level `src` folder --- *i.e.*, `./src/images/`. Let's also say that the image file you want to pop into a post you're writing is called `my-pet-cat.jpg`. So type this in your post's Markdown file:
 
 ```md
 {% image "my-pet-cat.jpg", "Photo of a cat named Shakespeare sitting on a window sill" %}
 ```
 
-Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jpg"; the code automatically adds `./src/assets/images/` to it so **you** don't have to type it every time you use the shortcode), then a comma, and then the `alt` text ("Photo of a cat named Shakespeare sitting on a window sill") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project. As you know, the `alt` text describes for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/) what the image contains. **You must enter that `alt` text** if you want the shortcode to work properly---the `image` shortcode requires both `src` and `alt` to work, as you may have noted in the shortcode's configuration in `.eleventy.js`. If an image is only [decorative](https://www.w3.org/WAI/tutorials/images/decorative/) (*e.g.*, a logo or other image that fits that description), it's perfectly acceptable for the `alt` to be just `""`, but you **must** have an `alt` entry after the `src` and that separating comma.
+Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jpg"; the code automatically adds `./src/assets/images/` to it so **you** don't have to type it every time you use the shortcode), then a comma, and then the `alt` text ("Photo of a cat named Shakespeare sitting on a window sill") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project. As you know, the `alt` text describes for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/) what the image contains. **You must enter that `alt` text** if you want the shortcode to work properly --- the `image` shortcode requires both `src` and `alt` to work, as you may have noted in the shortcode's configuration in `.eleventy.js`. If an image is only [decorative](https://www.w3.org/WAI/tutorials/images/decorative/) (*e.g.*, a logo or other image that fits that description), it's perfectly acceptable for the `alt` to be just `""`, but you **must** have an `alt` entry after the `src` and that separating comma.
 
 ### Get a look at the result
 
@@ -188,4 +188,4 @@ Of course, you'll want to get a sneak peek by running Eleventy in development mo
 
 Sometimes, I wonder what topic I should explore next when writing for this site. More often than not, it comes out of my own search for knowledge and a frustration with how much time and aggravation a particular search required. That certainly was the case with this post. I'd grown weary of trying to get my head around Eleventy Image from what sources I'd located thus far. So, when I did finally sort of "get" it last night, I knew what my next subject would be.
 
-Eleventy Image will only get better in the future---for all I know, Zach Leatherman may even be planning to put it in Eleventy "core" at some point---but there's no reason to wait. If you have an Eleventy site and want a simple and effective way to handle your site's images, use this post as a stepping stone on the way to using Eleventy Image and understanding what it can do for you.
+Eleventy Image will only get better in the future --- for all I know, Zach Leatherman may even be planning to put it in Eleventy "core" at some point --- but there's no reason to wait. If you have an Eleventy site and want a simple and effective way to handle your site's images, use this post as a stepping stone on the way to using Eleventy Image and understanding what it can do for you.

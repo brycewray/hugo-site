@@ -21,7 +21,7 @@ If you want your website to be discovered by search engines, the sad news is tha
 
 Even worse: you need to get your site's content discovered continuously, not just once. Search engines can slowly "lose interest" in your site unless you give them reasons to do otherwise.
 
-With that bad news is some accompanying good news: if you're willing to put in a little extra work, you can help the process considerably---and, unlike many activities related to search engine optimization (SEO), it needn't cost you a penny.
+With that bad news is some accompanying good news: if you're willing to put in a little extra work, you can help the process considerably --- and, unlike many activities related to search engine optimization (SEO), it needn't cost you a penny.
 
 ## Three keys to getting discovered
 
@@ -45,7 +45,7 @@ It's surprising how many otherwise SEO-friendly websites lack suitable *feeds* (
 
 By the way, each site should provide two types of feeds and two types of sitemaps:
 
-- Feeds should be in both **[RSS](https://www.rssboard.org/rss-specification)** and **[JSON](https://jsonfeed.org)** form. The former has been around since the late 1990s, while the newer (2017) JSON feed format offers a number of advantages---notably human-readability---over RSS.
+- Feeds should be in both **[RSS](https://www.rssboard.org/rss-specification)** and **[JSON](https://jsonfeed.org)** form. The former has been around since the late 1990s, while the newer (2017) JSON feed format offers a number of advantages --- notably human-readability --- over RSS.
 - Some website generators automatically provide sitemaps in **XML** format but, especially for accessibility purposes, a website should also have an **HTML** sitemap.
 
 Here's how to give your site those feeds and sitemaps **and** do everything you can to get them automatically discovered. These instructions are for the two [static site generators](https://jamstack.org/generators) (SSGs) whose use I most highly recommend, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
@@ -348,4 +348,4 @@ If you're wrinkling your nose at all of this (even the comparatively easier proc
 
 ## Why they should stop&nbsp;by
 
-The famous line from *[Field of Dreams](https://www.imdb.com/title/tt0097351/)* is: "If you build it, he will come." Just building a website doesn't mean that *human* visitors, much less search engines’ robots, will come to it. But, if you follow all of these suggestions, you give your site a better chance that they will. Creating original and often-updated content, making your site perform as well as possible, and providing feeds and sitemaps will tell both people and searchbots that they have reasons to stop by and stay a while---and, with any luck at all, to make a habit of it.
+The famous line from *[Field of Dreams](https://www.imdb.com/title/tt0097351/)* is: "If you build it, he will come." Just building a website doesn't mean that *human* visitors, much less search engines’ robots, will come to it. But, if you follow all of these suggestions, you give your site a better chance that they will. Creating original and often-updated content, making your site perform as well as possible, and providing feeds and sitemaps will tell both people and searchbots that they have reasons to stop by and stay a while --- and, with any luck at all, to make a habit of it.

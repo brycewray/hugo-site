@@ -28,9 +28,9 @@ This past Saturday morning, March 7, I ran a quick errand and, planning to have 
 
 Ohhhhhhkay. So much for plans.
 
-About nine hours after we received that "breaking" news (sorry), Kennedy Lane Beck arrived. She weighed five pounds, one ounce, and measured eighteen-and-a-quarter inches in length. Mom, Dad, and Kennedy are all fine---the normal sleepless experience for new parents notwithstanding---and are now home.
+About nine hours after we received that "breaking" news (sorry), Kennedy Lane Beck arrived. She weighed five pounds, one ounce, and measured eighteen-and-a-quarter inches in length. Mom, Dad, and Kennedy are all fine --- the normal sleepless experience for new parents notwithstanding --- and are now home.
 
-As I close this little update about this new little one, please allow "Pawpaw”---as I apparently will be called---to share a small smattering of photos about this momentous event in our little family. Think of it as the online equivalent of what I'd have done if this were decades ago and we met on the street, in which case I'd be whipping out a wallet containing photographs of the new arrival.
+As I close this little update about this new little one, please allow "Pawpaw” --- as I apparently will be called --- to share a small smattering of photos about this momentous event in our little family. Think of it as the online equivalent of what I'd have done if this were decades ago and we met on the street, in which case I'd be whipping out a wallet containing photographs of the new arrival.
 
 {{< imgc src="Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg" alt="Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival" width="1008" height="756" >}}
 

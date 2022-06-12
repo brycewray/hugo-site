@@ -22,12 +22,12 @@ featured_image_caption: |
 **Note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5/), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}
 
-**Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
+**Added note, 2020‑07‑26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
 {.yellowBox}
 
 It's an [often-misattributed](https://www.artsy.net/article/artsy-editorial-four-iconic-quotes-artists) phrase: "Good artists copy; great artists steal." Well, in the case of your faithful correspondent, here, it's more a case of "Great coders code; mediocre coders borrow shamelessly." But, if I didn't, I couldn't keep this site going, so shameless I shall continue to be.
 
-A few months ago, I first learned of the [IndieWeb](https://indieweb.org) movement and, more to the point, [webmentions](https://indieweb.org/Webmention). In case you're new to this stuff, too, the idea behind webmentions is that people should own their own web content because it's unwise to depend on third parties---even apparently financially healthy ones---to keep that content safe for the future. Having your own personal website is part of that idea, but having webmention functionality *on* that site is another major puzzle piece.
+A few months ago, I first learned of the [IndieWeb](https://indieweb.org) movement and, more to the point, [webmentions](https://indieweb.org/Webmention). In case you're new to this stuff, too, the idea behind webmentions is that people should own their own web content because it's unwise to depend on third parties --- even apparently financially healthy ones --- to keep that content safe for the future. Having your own personal website is part of that idea, but having webmention functionality *on* that site is another major puzzle piece.
 
 When I [converted](/posts/2019/12/packing-up/) this site to an [Eleventy](https://11ty.dev)-/[webpack](https://webpack.js.org)-based platform a few months back, I also began a tentative, gradual integration of webmentions into the site.[^FullWM] As [mentioned before](/posts/2020/04/full-11ty-js-monty/), I leaned heavily (out of my usual necessity) on code and articles by others who'd mastered this on their own sites. That's when I knew I'd be writing this post; but I'll get to that in a moment.
 
@@ -37,7 +37,7 @@ When I [converted](/posts/2019/12/packing-up/) this site to an [Eleventy](https:
 
 A few weeks ago, I [decided](/posts/2020/04/different-modes-different-code/) to launch public repositories of this site as it would be executed in its former [static site generators](https://staticgen.com) (SSGs),  [Hugo](https://gohugo.io) and [Gatsby](https://gatsbyjs.org). I hoped these would serve somewhat as a "[Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone)" in that all three would result in the same final site, so people interested in switching from one SSG to another could say, "Ah, yeah, I see: in *this* one you use *this* code to get there, and in the *other* one you use *that* code. That makes sense."
 
-Although I said at the time that I'd be wary about keeping those repos up to date with this one for more than just additional posts as they came along---*i.e.*, as opposed to making *configuration* changes---my challenge- and tinkering-loving brain wasn't having any of that.
+Although I said at the time that I'd be wary about keeping those repos up to date with this one for more than just additional posts as they came along --- *i.e.*, as opposed to making *configuration* changes --- my challenge- and tinkering-loving brain wasn't having any of that.
 
 Accordingly, when I enhanced this site's webmentions capabilities recently so that it now shows more kinds of webmentions, I couldn't resist doing the same for the other two repos. And, this past Saturday, I was able to post the necessary changes to them.
 
@@ -47,7 +47,7 @@ Accordingly, when I enhanced this site's webmentions capabilities recently so th
 
 Does this series amount to the articles I wish I could've read before I started? No, but I do hope it will help you avoid some of the things that had me metaphorically beating my head against the computer screen for several nights in a row trying to find answers.
 
-In particular, I found it *really* difficult to follow the logic in certain articles’ related code. I ended up "chasing" variables, constants, and statements from other files---and sourly muttering things like "Where'd *that* come from?" and "What's *that* got to do with what's supposed to be happening here?" and "Wait a minute; what happened to the step *before* this part?"
+In particular, I found it *really* difficult to follow the logic in certain articles’ related code. I ended up "chasing" variables, constants, and statements from other files --- and sourly muttering things like "Where'd *that* come from?" and "What's *that* got to do with what's supposed to be happening here?" and "Wait a minute; what happened to the step *before* this part?"
 
 As I often say: if *I* can do this, *you* can do this. That's especially true if you have a decent base in [JavaScript](https://js.org) (and, for Hugo's sake, [Go](https://go.dev)); but, even if you don't, I hope what's contained in and linked from this series will help you reach a happy place, so your webmentions will get fetched regularly and then appear on your site as they should.
 
@@ -65,7 +65,7 @@ To facilitate the capture of webmentions for my site, I chose to use a combinati
 
 So that's the generic webmention-ization process I followed, *but* keep in mind that all it does is start fetching your webmentions for you out on webmention.io. The nitty-gritty yet to come is when *you* subsequently fetch them *from* webmention.io and make them actually appear on *your* site. How you can do it varies from SSG to SSG, hence this series.
 
-We'll start with Eleventy in [Part 2](/posts/2020/04/webmentions-three-ssgs-2/), move on to Hugo in [Part 3](/posts/2020/04/webmentions-three-ssgs-3/), and get to Gatsby in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/). That'll be followed in the conclusion, [Part 5](/posts/2020/04/webmentions-three-ssgs-5/), with a wrap-up---**and** that previously referenced bibliography for the series.
+We'll start with Eleventy in [Part 2](/posts/2020/04/webmentions-three-ssgs-2/), move on to Hugo in [Part 3](/posts/2020/04/webmentions-three-ssgs-3/), and get to Gatsby in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/). That'll be followed in the conclusion, [Part 5](/posts/2020/04/webmentions-three-ssgs-5/), with a wrap-up --- **and** that previously referenced bibliography for the series.
 
 I'd urge you to read them in order so as to get the whole picture, **but** I surely understand you may want to read about only the SSG you're using. If so, maybe you could skim the other two and spend most of your time on the part that interests you most, but I still think it would be best to skim/read *in order*, if possible.
 

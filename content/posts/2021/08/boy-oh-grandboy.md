@@ -20,7 +20,7 @@ featured_image_caption: |
 
 We found out last Christmas Day that [our granddaughter, Kennedy Beck](/posts/2020/03/welcome-sweet-little-early-bird/), was going to be a big sister this summer. Then, on Valentine's Day and just before millions of Texans (including yours truly) were plunged into a power grid meltdown in the midst of a fierce winter storm, we learned the new arrival would be a boy.
 
-At 2:55 PM this past Monday, that boy---all six pounds, 10 ounces of Dylan Everett Beck---came into the world. He went home the next afternoon and, at last report, the members of the newly expanded family all were doing very well.
+At 2:55 PM this past Monday, that boy --- all six pounds, 10 ounces of Dylan Everett Beck --- came into the world. He went home the next afternoon and, at last report, the members of the newly expanded family all were doing very well.
 
 {{< imgc src="2021-08-09_BW-holding-Dylan_2978x1675.jpg" alt="Bryce Wray holds his grandson, Dylan Everett Beck, shortly after the child’s birth" width="2978" height="1675" >}}
 

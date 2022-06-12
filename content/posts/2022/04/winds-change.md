@@ -43,7 +43,7 @@ Then, the very next morning, a Twitter feed I regularly follow (I even have it c
 
 > Slinkity creator/maintainer [Ben Holmes](https://twitter.com/BHolmesDev) [announced today](https://twitter.com/BHolmesDev/status/1506616758806802435) that he’s joining the Astro team, and [indicated](https://twitter.com/BHolmesDev/status/1506621649944260610) that he may hand off Slinkity to someone else after getting Slinkity to v.1.x. How these developments will affect my aforementioned “stay current” plan remains to be seen.
 
-Fast-forward to this past Saturday afternoon—a month later to the day—when I tweeted:
+Fast-forward to this past Saturday afternoon — a month later to the day — when I tweeted:
 
 {{< stweet "1517957419447508992" >}}
 
@@ -91,9 +91,9 @@ As the weeks moved on, I slowly progressed toward the goal of making `astro-site
 - Putting together the right configuration to give my content the same typography and automatic formatting as on the website.
 - Struggling to get RSS and JSON feeds going.
 
-Then, late last week, it came time to perform the *true* migration: bringing in the content. I copied *all* my Markdown files over from the website’s `hugo_site` repository and converted each for Astro’s purposes. After I resolved some self-inflicted glitches[^3] from that process, things went fairly smoothly from there. My final hurdle—as I indicated in “[Is Astro ready for your blog?](/posts/2022/04/astro-ready-your-blog/)”—was in getting the repo to produce both RSS and JSON feeds that would meet my requirements. I reached a workable solution by using [Jean-Philippe Monette](https://github.com/jpmonette)’s [`feed` package](https://github.com/jpmonette/feed).[^4]
+Then, late last week, it came time to perform the *true* migration: bringing in the content. I copied *all* my Markdown files over from the website’s `hugo_site` repository and converted each for Astro’s purposes. After I resolved some self-inflicted glitches[^3] from that process, things went fairly smoothly from there. My final hurdle — as I indicated in “[Is Astro ready for your blog?](/posts/2022/04/astro-ready-your-blog/)” — was in getting the repo to produce both RSS and JSON feeds that would meet my requirements. I reached a workable solution by using [Jean-Philippe Monette](https://github.com/jpmonette)’s [`feed` package](https://github.com/jpmonette/feed).[^4]
 
-The next day—Saturday, April 23—I spent a few hours reading through the site one last time, squashing a few non-“crashy” bugs here and there; and, by mid-afternoon, I realized it was time to, as the saying goes, “Ship it!” I went into my [Cloudflare](https://cloudflare.com) dashboard, took my domain off the `hugo_site` repo’s [Cloudflare Pages](https://pages.cloudflare.com) instance, and pointed it instead to the one for the `astro-site` repo. For the first time since [December, 2019](/posts/2019/12/packing-up/), my site was running on an SSG besides Eleventy or Hugo.
+The next day — Saturday, April 23 — I spent a few hours reading through the site one last time, squashing a few non-“crashy” bugs here and there; and, by mid-afternoon, I realized it was time to, as the saying goes, “Ship it!” I went into my [Cloudflare](https://cloudflare.com) dashboard, took my domain off the `hugo_site` repo’s [Cloudflare Pages](https://pages.cloudflare.com) instance, and pointed it instead to the one for the `astro-site` repo. For the first time since [December, 2019](/posts/2019/12/packing-up/), my site was running on an SSG besides Eleventy or Hugo.
 
 ## Sewing up a loose end
 
@@ -111,9 +111,9 @@ In light of what I’ve done since, these two thoughts may seem even more nonsen
 
 As I wrap up this tell-all: no, I won’t even *suggest*, much less promise, that I will never again migrate this site to a different platform. I started to count the number of times that I’ve performed (or attempted) such a migration since I first launched the site in September, 2018; and, quite frankly, I could no longer even remember all the switches.[^5] That is a testimony to my nerdy curiosity, but definitely not to any degree of consistency.
 
-Besides: it’s clear that my mind, especially the part where that nerdy curiosity is always lurking, has no concept of what *the foreseeable future* means. So, why pretend? I’ll stick with Astro until I change my mind again. And who knows when that’ll be? It might be next week. It might be next month. It might be next year. Or— Well, you get the idea. Whatever happens (and whenever it does), I hope to keep you informed and, perhaps, entertained. Thanks as always for your patient readership.
+Besides: it’s clear that my mind, especially the part where that nerdy curiosity is always lurking, has no concept of what *the foreseeable future* means. So, why pretend? I’ll stick with Astro until I change my mind again. And who knows when that’ll be? It might be next week. It might be next month. It might be next year. Or —  Well, you get the idea. Whatever happens (and whenever it does), I hope to keep you informed and, perhaps, entertained. Thanks as always for your patient readership.
 
-**Update, 2022-05-07**: And, sure enough, I brought it back to Hugo today (at least for now), as explained in “[Mulling over migration](/posts/2022/05/mulling-over-migration/#a-sheepish-u-turn)?”
+**Update, 2022‑05‑07**: And, sure enough, I brought it back to Hugo today (at least for now), as explained in “[Mulling over migration](/posts/2022/05/mulling-over-migration/#a-sheepish-u-turn)?”
 {.yellowBox}
 
 [^1]:	For those not familiar with my “dance” among different SSGs during 2019, just follow that link for the whole, sordid story.

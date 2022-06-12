@@ -17,7 +17,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Alexas_Fotos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Pixabay</a></span>
 ---
 
-Here are a few odds and ends---some a tad acerbic, some not so much. And I swear I'm not trying to sound like the late [Andy Rooney](https://en.wikipedia.org/wiki/Andy_Rooney), or even a parody thereof&nbsp;.&nbsp;.&nbsp;.
+Here are a few odds and ends --- some a tad acerbic, some not so much. And I swear I'm not trying to sound like the late [Andy Rooney](https://en.wikipedia.org/wiki/Andy_Rooney), or even a parody thereof&nbsp;.&nbsp;.&nbsp;.
 
 {{< lite-youtube videoTitle="Andy Rooney (Frank Caliendo) On The iPhone" videoId="u8pCsfT1gDU" >}}
 
@@ -31,7 +31,7 @@ Is it part of the YouTube user agreement that the default greeting on every vlog
 
 ## Nope, the word is _yeah_
 
-I'm unclear as to when people got [the notion that _ya_ or _yea_ is how you spell _yeah_](http://www.genpink.com/yeah-yay-yah-ya/). I could see _yeh_, maybe. But _yea_? Someone misusing that apparently never ran into someone quoting a "Yea, verily," from the gospels. And the misuse of _ya_ eludes me altogether, unless somebody somewhere thinks it's the way a variety of languages spell [their word for _yes_](https://en.wiktionary.org/wiki/ja) and decided it would be cool to---ahhhh, no, don't think that works either.
+I'm unclear as to when people got [the notion that _ya_ or _yea_ is how you spell _yeah_](http://www.genpink.com/yeah-yay-yah-ya/). I could see _yeh_, maybe. But _yea_? Someone misusing that apparently never ran into someone quoting a "Yea, verily," from the gospels. And the misuse of _ya_ eludes me altogether, unless somebody somewhere thinks it's the way a variety of languages spell [their word for _yes_](https://en.wiktionary.org/wiki/ja) and decided it would be cool to --- ahhhh, no, don't think that works either.
 
 ## Hating the platform doesn't require&nbsp;ALL-CAPS
 
@@ -43,7 +43,7 @@ _MAC_, however, _is_ an acronym for either a [MAC address](https://techterms.com
 
 ## Add nauseum
 
-This one is simple. The abbreviation for _advertisement_ is <em>ad</em>---**not** _add_.
+This one is simple. The abbreviation for _advertisement_ is <em>ad</em> --- **not** _add_.
 
 ## Lose the kraken
 
@@ -62,8 +62,8 @@ I really thought this would've gone away back in the late nineties as the [growi
 
 But once your output was proportional type, one space was quite enough, [as it has been in conventional typography for decades](https://en.wikipedia.org/wiki/Sentence_spacing#Transition_to_single_spacing). Even [legal documents](https://abovethelaw.com/2011/04/small-firms-big-lawyers-the-perfect-font-to-show-you-don%E2%80%99t-care/) have been overwhelmingly in proportional type for a long time, now.
 
-If you're using monospaced typefaces for whatever reason, then, yes, double-space between sentences to your heart's content if you want. **But** if you're using **proportional** type---which the vast majority of you are---there really is **no** reason to type double spaces between sentences. That's especially true if you're preparing copy for the web, since [browsers usually ignore more than one space after a period unless you purposely work around that](https://stackoverflow.com/questions/17784595/do-browsers-remove-whitespace-in-between-text-of-any-html-tag).
+If you're using monospaced typefaces for whatever reason, then, yes, double-space between sentences to your heart's content if you want. **But** if you're using **proportional** type --- which the vast majority of you are --- there really is **no** reason to type double spaces between sentences. That's especially true if you're preparing copy for the web, since [browsers usually ignore more than one space after a period unless you purposely work around that](https://stackoverflow.com/questions/17784595/do-browsers-remove-whitespace-in-between-text-of-any-html-tag).
 
 <p>&nbsp;</p>
 
-And I'd better end it at this point---before I start saying, "Didja ever wonder&nbsp;.&nbsp;.&nbsp;.?" (Sorry, Mr.&nbsp;Rooney.)
+And I'd better end it at this point --- before I start saying, "Didja ever wonder&nbsp;.&nbsp;.&nbsp;.?" (Sorry, Mr.&nbsp;Rooney.)

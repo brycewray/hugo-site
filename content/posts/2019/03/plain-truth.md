@@ -50,13 +50,13 @@ Remember [WordPerfect](https://en.wikipedia.org/wiki/WordPerfect#WordPerfect_for
 
 Ah, nostalgia.
 
-*Ahem.* Not really. I can't say I liked any of them---and I freely confess that I have never actually used WordStar or even *known* anybody who *did*---but, back then, there at least was competition.
+*Ahem.* Not really. I can't say I liked any of them --- and I freely confess that I have never actually used WordStar or even *known* anybody who *did* --- but, back then, there at least was competition.
 
-What changed? Simple. The first version of Windows that many offices considered worth their time, Windows 3.1, [came out in 1992](https://www.pcworld.com/article/253287/windows-3-1-twenty-years-later.html), and the non-Microsoft word processing applications just didn't have suitable versions for it at the time. By the time they did, it was too late: Word for Windows, which had been around since well before Windows 3.1 and---obviously---had any number of baked-in Windows advantages the non-Microsoft competition couldn't boast, had won the battlefield. (Another key factor was the [adoption of suites, particularly Microsoft Office](https://www.eweek.com/enterprise-apps/eweek-at-30-how-microsoft-won-the-1990s-office-suite-wars).)
+What changed? Simple. The first version of Windows that many offices considered worth their time, Windows 3.1, [came out in 1992](https://www.pcworld.com/article/253287/windows-3-1-twenty-years-later.html), and the non-Microsoft word processing applications just didn't have suitable versions for it at the time. By the time they did, it was too late: Word for Windows, which had been around since well before Windows 3.1 and --- obviously --- had any number of baked-in Windows advantages the non-Microsoft competition couldn't boast, had won the battlefield. (Another key factor was the [adoption of suites, particularly Microsoft Office](https://www.eweek.com/enterprise-apps/eweek-at-30-how-microsoft-won-the-1990s-office-suite-wars).)
 
 With the loss of realistic competition, Microsoft dictated the format for word processing from there on. There have been four different versions of its .doc format, followed by the .docx format that has been standard since Word 2003 was introduced.[^wordformats] And, the older a file is, the greater the likelihood that you won't be able to read it now, except without difficulty.
 
-So what? Well, we have no way of knowing that similar compatibility problems won't crop up in the future with files that are perfectly readable now---at least, those that are in proprietary formats like Word's[^open], not to mention the equally proprietary formats of those competitors it all but wiped off the map.
+So what? Well, we have no way of knowing that similar compatibility problems won't crop up in the future with files that are perfectly readable now --- at least, those that are in proprietary formats like Word's[^open], not to mention the equally proprietary formats of those competitors it all but wiped off the map.
 
 Now, let's think about permanence.
 
@@ -68,7 +68,7 @@ One night in 1964, my father bought a 1940s-vintage Royal typewriter secondhand 
 
 As far as I can remember, she rarely if ever used it for anything else, but nine-year-old me was agog. I was one of those kids who liked to write stuff all the time and would turn it in for my teacher to critique. It wasn't for extra credit; I just wanted someone to read it. My writing jag started about midway through the third grade.
 
-Now, with the hulking Royal typewriter in-house, I could write as long as I wanted[^manual] without getting writer's cramp, sweating on the paper[^noAC] as my hand wrote furiously above it, and suffering the other nuisances of trying to produce content with handwriting---especially lousy handwriting such as mine.
+Now, with the hulking Royal typewriter in-house, I could write as long as I wanted[^manual] without getting writer's cramp, sweating on the paper[^noAC] as my hand wrote furiously above it, and suffering the other nuisances of trying to produce content with handwriting --- especially lousy handwriting such as mine.
 
 Even before my sister had finished with the typing class, she basically let me have the typewriter, perhaps sensing that I'd begun a lifelong love affair with punching out words from a keyboard.
 
@@ -86,7 +86,7 @@ The arc of my writing journey in recent years has taken me back to the very begi
 
 The difference now is that the plain text exists not as ink on paper but as bytes saved to solid-state drives and quadruple-archived on hard drives as well as online.[^lastpost]
 
-Documents saved as plain text, even relatively long ago, are as readable today as they were at the beginning, and will be so for as long as we can imagine. They will survive operating system changes, file format changes, the rise and fall of vendors as well as attempts at lock-in by the more successful vendors, and all the other bugaboos that keep you from viewing files from the early 1990s and before---as if you'd never spent any time or energy creating them.
+Documents saved as plain text, even relatively long ago, are as readable today as they were at the beginning, and will be so for as long as we can imagine. They will survive operating system changes, file format changes, the rise and fall of vendors as well as attempts at lock-in by the more successful vendors, and all the other bugaboos that keep you from viewing files from the early 1990s and before --- as if you'd never spent any time or energy creating them.
 
 I refer to my "deathless prose" only with great sarcasm, and I assure you I don't take it too seriously. That said, I would like to believe that, in my dotage, I'll still be able to pull up my past writings and read them without difficulty. They may mean nothing to anyone else, but I cared enough at the time to type them, and I hope to keep revisiting them in the future, unencumbered by the issues that plague files that *aren't* in plain text.
 
@@ -115,7 +115,7 @@ More on that in a future post.
 
 [^open]: Think .docx is sufficiently open that we don't have to worry about that? [Think again](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/).
 
-[^Libre]: Some third-party apps, notably LibreOffice and its forebear, OpenOffice, have been known to get to old DOS Word files, but---again---with headaches and, often, less-than-satisfactory results. For example, check out [this forum discussion](https://forum.openoffice.org/en/forum/viewtopic.php?f=7&t=74093).
+[^Libre]: Some third-party apps, notably LibreOffice and its forebear, OpenOffice, have been known to get to old DOS Word files, but --- again --- with headaches and, often, less-than-satisfactory results. For example, check out [this forum discussion](https://forum.openoffice.org/en/forum/viewtopic.php?f=7&t=74093).
 
 [^WordPerfect]: Before you say, "Hey, just a minute, bucko: WordPerfect is still around": [true, it is](https://www.wordperfect.com). But, in terms of market share, it's a ghost of its former self; and God help its users if they can't share files with Word. WordPerfect only barely exists, and in the dark shadow of the conqueror from Redmond.
 

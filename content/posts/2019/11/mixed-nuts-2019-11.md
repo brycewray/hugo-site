@@ -16,11 +16,11 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
-For decades, Dallas/Fort Worth-area newspaper readers got to enjoy content from the late [Blackie Sherrod](https://www.dallasnews.com/news/obituaries/2016/04/28/legendary-news-sportswriter-blackie-sherrod-dies-at-96/#). Perhaps his best-remembered output, although certainly only a small sample of his work, came in the form of a Sunday column he called "Scattershooting." Each edition thereof was---rather than the usual format and dedicated to just one subject---a collection of one- or two-sentence (mostly) sports-related opinions, reportage, *bon mots*, and just general Blackie-isms. He'd always begin each by saying something like: "Scattershooting while wondering whatever happened to *[formerly prominent person]* &nbsp;.&nbsp;.&nbsp;."
+For decades, Dallas/Fort Worth-area newspaper readers got to enjoy content from the late [Blackie Sherrod](https://www.dallasnews.com/news/obituaries/2016/04/28/legendary-news-sportswriter-blackie-sherrod-dies-at-96/#). Perhaps his best-remembered output, although certainly only a small sample of his work, came in the form of a Sunday column he called "Scattershooting." Each edition thereof was --- rather than the usual format and dedicated to just one subject --- a collection of one- or two-sentence (mostly) sports-related opinions, reportage, *bon mots*, and just general Blackie-isms. He'd always begin each by saying something like: "Scattershooting while wondering whatever happened to *[formerly prominent person]* &nbsp;.&nbsp;.&nbsp;."
 
 That approach gave me an idea.
 
-The last few weeks of my life have been somewhat tumultuous compared to my usual, dull rigamarole, and I just haven't had sufficient mental clarity, much less time, to sit down and come up with a properly focused article.[^StopNow] Still, I do have a number of things---not necessarily more [curmudgeonish stuff](/posts/2019/11/curmudgeonish-2019/)---I'd like to offer.
+The last few weeks of my life have been somewhat tumultuous compared to my usual, dull rigamarole, and I just haven't had sufficient mental clarity, much less time, to sit down and come up with a properly focused article.[^StopNow] Still, I do have a number of things --- not necessarily more [curmudgeonish stuff](/posts/2019/11/curmudgeonish-2019/) --- I'd like to offer.
 
 [^StopNow]: The obvious rejoinder is reminiscent of the "Can we be funny? / Why start now?" joke from the [first post-9/11 *Saturday Night Live*](https://www.indiewire.com/2016/09/snl-letterman-jon-stewart-911-late-show-daily-show-1201725596/). Point taken.
 
@@ -54,13 +54,13 @@ Have followed pro and major-college sports for decades, but it's increasingly ha
 
 *Collision-avoidance technology is still not offered across all new vehicle models. You just know that a lawsuit is bound to happen when someone is killed in a new econocar lacking such tech.*
 
-If you're thinking about buying your next HDTV, do some Googling about  backlighting problems. Certain brands and models seem more prone than others. I know whereof I speak, unfortunately. MicroLEDs will solve the problem---when/if they're affordable in my lifetime.
+If you're thinking about buying your next HDTV, do some Googling about  backlighting problems. Certain brands and models seem more prone than others. I know whereof I speak, unfortunately. MicroLEDs will solve the problem --- when/if they're affordable in my lifetime.
 
 *If you have to be up and out at six a.m. on a weekend, the quiet of the neighborhood gas station is infinitely nicer than the usual dog-eat-dog trip during rush hour. Can almost feel your blood pressure drop.*
 
 Our community allows only two options for high-speed home connectivity[^OnlyOne]. I thus soon will have to sign up for at least another year's worth of the only one of those two that provides the *synchronous* broadband connectivity my work (paid and otherwise) requires. Maybe in a few years, 5G will make that [Hobson's choice](https://en.wikipedia.org/wiki/Hobson%27s_choice) a thing of the past.
 
-[^OnlyOne]: Of course, some of you have only one choice or, worse, zero choices. (Observing the utter paucity of such choices in my rural birthplace, on my occasional trips back there, is at once enlightening and appalling.) However, if you---as do I---live in one of the ten most populous metro areas in the U.S., that simply shouldn't be the case. [South Korea](https://www.cnet.com/news/south-korea-gets-super-duper-fast-internet/) makes us look ridiculously backward by comparison.
+[^OnlyOne]: Of course, some of you have only one choice or, worse, zero choices. (Observing the utter paucity of such choices in my rural birthplace, on my occasional trips back there, is at once enlightening and appalling.) However, if you --- as do I --- live in one of the ten most populous metro areas in the U.S., that simply shouldn't be the case. [South Korea](https://www.cnet.com/news/south-korea-gets-super-duper-fast-internet/) makes us look ridiculously backward by comparison.
 
 *Am really pleased with how Apple is solving a number of long-standing gripes about its products. Most notable examples are the new MacBook Pro 16 and the soon-coming Mac Pro, and more recently the [report](https://www.bloomberg.com/news/articles/2019-11-21/apple-ios-14-features-changes-testing-after-ios-13-bugs) of an overhaul to resolve software-release issues. Cupertino* has *been listening, after all.*
 
@@ -71,6 +71,6 @@ Our community allows only two options for high-speed home connectivity[^OnlyOne]
 <hr />
 <br />
 
-And thus ends this edition of "Mixed nuts." We shall see if there are more to come down the line. I close with a statement I read long ago: "Any philosophy which can be put in a nutshell belongs there." I concede that such applies for these comments, too---and, for the most part, to everything else on this site. But I hope you found them worth a read.
+And thus ends this edition of "Mixed nuts." We shall see if there are more to come down the line. I close with a statement I read long ago: "Any philosophy which can be put in a nutshell belongs there." I concede that such applies for these comments, too --- and, for the most part, to everything else on this site. But I hope you found them worth a read.
 
 <br />

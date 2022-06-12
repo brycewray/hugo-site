@@ -48,7 +48,7 @@ oldComments: |
 
 {{% disclaimer %}}
 
-Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo/), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics]---and quite a few retweets and friendly tweets from Hugo aficionados.
+Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo/), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics] --- and quite a few retweets and friendly tweets from Hugo aficionados.
 
 [^NetlifyAnalytics]: I'd just dumped both Google Analytics and a much lesser-known competitor for the brand-new [Netlify Analytics](https://netlify.com/products/analytics), and it was really cool to watch the data come in on this new, tracking code-free platform.
 
@@ -60,9 +60,9 @@ In fact, that's the case for the first item.
 
 ## Don't mix Git and cloud sync
 
-From the beginning, I'd had my local Hugo directory set up for cloud storage---first with Dropbox, which I've since punted[^Dropbox], then with iCloud Drive---and hadn't encountered any issues. However, it turns out I'd been lucky.
+From the beginning, I'd had my local Hugo directory set up for cloud storage --- first with Dropbox, which I've since punted[^Dropbox], then with iCloud Drive --- and hadn't encountered any issues. However, it turns out I'd been lucky.
 
-[^Dropbox]: As I [noted](/posts/2019/02/back-up-jack/) earlier this year, Dropbox had already ceased to be my go-to cloud sync vendor, and I was keeping only a small quantity of files on there, none of which *had* to be there. Then, a few days ago, Dropbox unexpectedly revamped how it works on the Mac in a way I---and [others](https://www.inc.com/jason-aten/dropbox-just-announced-a-major-redesign-that-youre-going-to-love-until-you-realize-it-has-a-fatal-flaw.html)---found objectionable, so I decided to cut the cord, moving my remaining files away and killing the account.
+[^Dropbox]: As I [noted](/posts/2019/02/back-up-jack/) earlier this year, Dropbox had already ceased to be my go-to cloud sync vendor, and I was keeping only a small quantity of files on there, none of which *had* to be there. Then, a few days ago, Dropbox unexpectedly revamped how it works on the Mac in a way I --- and [others](https://www.inc.com/jason-aten/dropbox-just-announced-a-major-redesign-that-youre-going-to-love-until-you-realize-it-has-a-fatal-flaw.html) --- found objectionable, so I decided to cut the cord, moving my remaining files away and killing the account.
 
 While I was trying Gatsby, I had its directory in iCloud Drive also, and soon saw that, occasionally, files I killed would come back, irrespective of what I'd done in the [Git](https://git-scm.com) [repository](https://www.sbf5.com/~cduan/technical/git/git-1.shtml). Mystified, I did some research and found that there was a very good reason not to do that: in essence, using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).
 
@@ -76,7 +76,7 @@ If you read [that last post](/posts/2019/07/why-staying-with-hugo/), you know th
 
 Well, I want to tell you: in my admittedly limited research, I found this  to be a problem with many of the newer SSGs.
 
-More often than not, they lack---and their developers show almost a nonchalance about the importance of---"smart" typography (*e.g.*, see [this](https://github.com/getzola/zola/issues/740) regarding the oddly Hugo-like [Zola](https://www.getzola.org) SSG). So, if *you* can put up with&nbsp;.&nbsp;.&nbsp;.
+More often than not, they lack --- and their developers show almost a nonchalance about the importance of --- "smart" typography (*e.g.*, see [this](https://github.com/getzola/zola/issues/740) regarding the oddly Hugo-like [Zola](https://www.getzola.org) SSG). So, if *you* can put up with&nbsp;.&nbsp;.&nbsp;.
 
 <p class="punctuationExample">goofy-lookin' &quot;punctuation&quot; like this</p>
 
@@ -90,7 +90,7 @@ Then there's the whole issue of how the newer SSGs handle CSS and SCSS/Sass.
 
 First, understand how easy we Hugo users have it where SCSS/Sass compatibility is concerned. Thanks to the out-of-the-box [Hugo Pipes](https://gohugo.io/hugo-pipes) functionality, [all](https://gohugo.io/hugo-pipes/scss-sass) you have to do is put your SCSS/Sass files in your Hugo install's `/assets` directory and then call to them in templates like this (this is from my own templates, with *ofotigrid.scss*[^ofoti] being the name of my primary SCSS file that `@import`s in content from its fellow SCSS files within `/assets/scss`):
 
-[^ofoti]: That weird file name is from when I originally had considered calling this site *ofoti.com*---a domain which I own---with *OFOTI* standing whimsically for *Old Fart on the Internet*. However, I thought better of it, especially after I learned that the name *Ofoti* had, in fact, [already been used as the title of a prize-winning play](https://en.wikipedia.org/wiki/John_Wheatcroft).
+[^ofoti]: That weird file name is from when I originally had considered calling this site *ofoti.com* --- a domain which I own --- with *OFOTI* standing whimsically for *Old Fart on the Internet*. However, I thought better of it, especially after I learned that the name *Ofoti* had, in fact, [already been used as the title of a prize-winning play](https://en.wikipedia.org/wiki/John_Wheatcroft).
 
 ```html
 <!-- CSS/SCSS -->
@@ -103,7 +103,7 @@ First, understand how easy we Hugo users have it where SCSS/Sass compatibility i
 
 Many other SSGs make this sort of thing considerably more problematic, especially if you're not willing to craft your own pipeline between the SSG and the CSS or SCSS/Sass files, through either [plugins](https://www.npmjs.com/package/gatsby-plugin-sass) or other methods. ([I already told you my luck](/posts/2019/07/why-staying-with-hugo/) with plugins, especially when there are a whole slew of them in the SSG's config files.) Believe me, I am neither willing nor (likely) able.
 
-Even the documentation for an SSG like [Eleventy](https://11ty.dev) that claims to be much easier and more more logically configured than other JavaScript-based SSGs---and, in many ways, it is---makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/Sass, rather than [inlining](https://www.11ty.dev/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
+Even the documentation for an SSG like [Eleventy](https://11ty.dev) that claims to be much easier and more more logically configured than other JavaScript-based SSGs --- and, in many ways, it is --- makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/Sass, rather than [inlining](https://www.11ty.dev/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
 
 I'll have more to say later about the shortcomings of SSGs’ documentation. Even Hugo's.
 
@@ -123,7 +123,7 @@ Which brings me, finally, to&nbsp;.&nbsp;.&nbsp;.
 
 ## Docs are a nearly universal problem
 
-Yes, we have to talk about SSGs’ documentation. It pretty much all sucks *for non-devs*---Hugo's, too, although I would say Hugo's sucks *less*, probably because it's been around several more years than many of the other SSGs that hold more prominence these days, and thus there's been more time for people to write and tweak the docs.
+Yes, we have to talk about SSGs’ documentation. It pretty much all sucks *for non-devs* --- Hugo's, too, although I would say Hugo's sucks *less*, probably because it's been around several more years than many of the other SSGs that hold more prominence these days, and thus there's been more time for people to write and tweak the docs.
 
 In one of my past Work Lives, I wrote user manuals for fax machines. (Obviously, this was a *long* time ago.) Our team prided ourselves on "writing for Grandma," as we put it then, because our products were bought by people of all ages and experience levels.[^ageism] Thus, I am acutely aware how far short SSGs’ docs fall when it comes to being understandable by people outside the narrow circle of their own community, and sometimes even some *within* it.
 
@@ -139,7 +139,7 @@ So far, fine. Then&nbsp;.&nbsp;.&nbsp;.
 
 Assuming you're not a dev, go ahead and re-read that. I'll wait.
 
-At some point, the SSG folks will have to decide whether they do indeed want to maintain their role as [Merlin](https://en.wikipedia.org/wiki/Merlin)s rather than making SSGs accessible to ordinary users, particularly in corporate life. I mean, WordPress is a God-awful, performance-eating, security-defying thing---but at least your average Joe or Jane, and most notably your average Joe or Jane in corporate settings that **aren't going to hire dev help for them**, can use it. Try that with **any** SSG.
+At some point, the SSG folks will have to decide whether they do indeed want to maintain their role as [Merlin](https://en.wikipedia.org/wiki/Merlin)s rather than making SSGs accessible to ordinary users, particularly in corporate life. I mean, WordPress is a God-awful, performance-eating, security-defying thing --- but at least your average Joe or Jane, and most notably your average Joe or Jane in corporate settings that **aren't going to hire dev help for them**, can use it. Try that with **any** SSG.
 
 ## A parting shot
 

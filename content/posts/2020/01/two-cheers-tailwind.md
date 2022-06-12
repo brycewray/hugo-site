@@ -50,7 +50,7 @@ Although I still haven't quite gotten used to the appearance of this *[utility-f
 
 .&nbsp;.&nbsp;.&nbsp; the truth is that, apparently, I've been writing at least some form of utility-first CSS well before it received that name and *certainly* well before the ongoing industry infighting over whether it's the Greatest Thing Evah, an unforgivable sin against the holy of holies, or something in between.
 
-In 2002, I began using CSS for the first time, but this was before [CSS Zen Garden](https://en.wikipedia.org/wiki/CSS_Zen_Garden)---of which, to be honest, I never learned until many years later---and those whom it inspired carved out what was supposed to be a hard line between content (HTML) and that content's appearance (CSS). No, I blithely was occasionally doing nasty things like the following when I just didn't want to go through the rigamarole.
+In 2002, I began using CSS for the first time, but this was before [CSS Zen Garden](https://en.wikipedia.org/wiki/CSS_Zen_Garden) --- of which, to be honest, I never learned until many years later --- and those whom it inspired carved out what was supposed to be a hard line between content (HTML) and that content's appearance (CSS). No, I blithely was occasionally doing nasty things like the following when I just didn't want to go through the rigamarole.
 
 First, the CSS:
 
@@ -87,7 +87,7 @@ I guess what still mainly bugs me is the whole idea of whether, specifically for
 
 By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to Sass/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used Sass/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
-## We shall see---as usual
+## We shall see --- as usual
 
 As I observed near the end of my [last post](/posts/2019/12/sorta-strange-ssg-trip/), this site's [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo gives me a solid foundation on which to build. And, on the subject I've discussed here today, it further shows how easily I can try new stuff.
 
@@ -110,7 +110,7 @@ Finally, here are the best from among the many articles I've been reading (often
 
 ---
 
-## *Update, 2020-01-18*
+## *Update, 2020‑01‑18*
 
 After a few days of mulling this over as well as re-reading a lot of stuff about what ordinary CSS can do these days, especially in league with PostCSS and the appropriate set of PostCSS plugins, I concluded I'd return to CSS Grid.[^TWCSSG]
 
@@ -126,6 +126,6 @@ I *won't* try to tell you that it was easy to take my previous SCSS and convert 
 
 [^elevwp]: Thank goodness for my [Eleventy/webpack setup](/posts/2019/12/packing-up/), without which the whole process of reversion would've been much more onerous. I shudder to think about, say, if I'd still been on [Gatsby](/posts/2019/10/now-gatsby-geezer/).
 
-Don't get me wrong. I do understand that there definitely are cases to be made for utility-based CSS, especially---as I tweeted back on December 28---for multi-dev shops. I just don't believe my little one-man, one-approver website qualifies as a good example of such a case.
+Don't get me wrong. I do understand that there definitely are cases to be made for utility-based CSS, especially --- as I tweeted back on December 28 --- for multi-dev shops. I just don't believe my little one-man, one-approver website qualifies as a good example of such a case.
 
 And, more to the point: I just like this way better and, unlike so many other things in my life, this is one situation where I get to make the final call.

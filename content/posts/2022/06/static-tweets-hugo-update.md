@@ -11,7 +11,7 @@ date: 2022-06-07T15:46:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Further info, 2022-06-08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
+**Further info, 2022‑06‑08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
 {.yellowBox}
 
 <br />
@@ -21,9 +21,9 @@ date: 2022-06-07T15:46:00-05:00
 
 I've updated my [Hugo](https://gohugo.io) shortcode, `stweet.html`, that embeds tweets in a static site without any of [Twitter](https://twitter.com)'s JavaScript or trackers.[^privacy] The [earlier](/posts/2022/02/static-tweets-eleventy-hugo) version handled text and media well enough, but fell short on pulling in those "cards" that Twitter generates when you add a link in a tweet, so I decided to fix that.[^PubSync]
 
-[^privacy]: Quoting this site's [privacy policy](/privacy/#twitter): "This site reproduces tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image---including the avatar---that's included with a static tweet does include a Twitter cookie, but **no** trackers."
+[^privacy]: Quoting this site's [privacy policy](/privacy/#twitter): "This site reproduces tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image --- including the avatar --- that's included with a static tweet does include a Twitter cookie, but **no** trackers."
 
-[^PubSync]: As the filename makes clear, this is an enhancement of the *original* `stweet.html` shortcode, **not** the `stweetv2.html` version I provided subsequently, because I [later learned](/posts/2022/02/gems-in-rough-14/#learning-from-a-friendly-hat-tip) that [Twitter's Version 2 API](https://developer.twitter.com/en/docs/twitter-api) doesn't yet support handling videos and animated GIFs. Unless/until I hear that Twitter definitely will kill the much older Public Syndication API on which `stweet` depends, I'll just stick with that one---especially since the PubSync API is **far** easier to use than the V2 API.
+[^PubSync]: As the filename makes clear, this is an enhancement of the *original* `stweet.html` shortcode, **not** the `stweetv2.html` version I provided subsequently, because I [later learned](/posts/2022/02/gems-in-rough-14/#learning-from-a-friendly-hat-tip) that [Twitter's Version 2 API](https://developer.twitter.com/en/docs/twitter-api) doesn't yet support handling videos and animated GIFs. Unless/until I hear that Twitter definitely will kill the much older Public Syndication API on which `stweet` depends, I'll just stick with that one --- especially since the PubSync API is **far** easier to use than the V2 API.
 
 What's the difference? Before these latest changes, here's how `stweet` rendered this [particular tweet](https://twitter.com/CloudCannon/status/1534248828559400960) from [CloudCannon](https://cloudcannon.com) (and I've linked to the original tweet so you can view it for comparison's sake):
 
@@ -168,7 +168,7 @@ So, with that, friends and neighbors, here's the code.
 </blockquote>
 ```
 
-## *Important note, 2022-06-08*
+## *Important note, 2022‑06‑08*
 
 I later found that, due to the way Twitter handles its asset-caching, you'll need to adjust the `getJSON` function's caching, as set in your Hugo config file, to avoid big blank holes where some images should go. The following is from my [config file](https://gohugo.io/getting-started/configuration/), which is in YAML:
 

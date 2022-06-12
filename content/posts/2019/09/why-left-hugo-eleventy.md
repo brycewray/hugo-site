@@ -40,15 +40,15 @@ oldComments: |
 
 {{% disclaimer %}}
 
-Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
+Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo --- *i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG) --- it now says it's powered by [the JAMstack](https://jamstack.org).
 
-If you know what the JAMstack is (if you don't, follow that link above for a much better explanation than I could give), that's probably no big deal to you---perhaps just an alternative choice of words, right? After all, Hugo is often mentioned as part of the movement toward the JAMstack.[^HugoJAM]
+If you know what the JAMstack is (if you don't, follow that link above for a much better explanation than I could give), that's probably no big deal to you --- perhaps just an alternative choice of words, right? After all, Hugo is often mentioned as part of the movement toward the JAMstack.[^HugoJAM]
 
-[^HugoJAM]: Hugo is powered by [Go](https://go.dev), not JavaScript---the *J* in the term *JAMstack*---but is considered to be an example of the JAMstack because it is one of the apps that makes possible static sites whose dynamic features gain speed and lose latency by relying on client-side, JavaScript-enabled functionality rather than "heavier," slower operations on a server.
+[^HugoJAM]: Hugo is powered by [Go](https://go.dev), not JavaScript --- the *J* in the term *JAMstack* --- but is considered to be an example of the JAMstack because it is one of the apps that makes possible static sites whose dynamic features gain speed and lose latency by relying on client-side, JavaScript-enabled functionality rather than "heavier," slower operations on a server.
 
 But there was more to it. Things were afoot. Now, you get to find out just what they were.
 
-The fact is: this site, about to enter its second year of life, now comes to you via a different SSG---one also born in 2018, called [Eleventy](https://11ty.dev).
+The fact is: this site, about to enter its second year of life, now comes to you via a different SSG --- one also born in 2018, called [Eleventy](https://11ty.dev).
 
 Yep, that's what I said. Eleventy. Not Hugo any more.
 
@@ -62,7 +62,7 @@ Earlier in the summer, I experimented with switching this site to  [Gatsby](http
 
 That little episode had a couple of unexpected results.
 
-First, I got a big spike in readership for that first post about it, courtesy of a retweet from the [Hugo account](https://twitter.com/gohugoio). I remain tremendously grateful for both of those---although what I'm explaining herein likely will obviate the goodwill I received as a result, and I totally understand that.
+First, I got a big spike in readership for that first post about it, courtesy of a retweet from the [Hugo account](https://twitter.com/gohugoio). I remain tremendously grateful for both of those --- although what I'm explaining herein likely will obviate the goodwill I received as a result, and I totally understand that.
 
 Second, not long after I dragged my bleeding carcass away from attempting to use Gatsby without sufficient familiarity with its [React](https://reactjs.org) framework, my initial sense of relief gave way to a distinct and annoying whisper in my ear:
 
@@ -70,7 +70,7 @@ Second, not long after I dragged my bleeding carcass away from attempting to use
 
 It wasn't so much that I felt Gatsby and its adherents had beaten me. It was more that I felt I'd been laid low by the newer generation of mostly JavaScript-based SSGs in general.
 
-[You may recall](/posts/2019/07/why-staying-with-hugo/) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops---especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
+[You may recall](/posts/2019/07/why-staying-with-hugo/) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops --- especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
 
 Coding chops? Hah. Instead, it felt as if I were limping away while barely retaining my mouth's choppers.
 
@@ -121,7 +121,7 @@ First hearing about it during Gatsby Experiment I, I'd been singularly impressed
 
 - It **doesn't** rely on a specific framework.
 
-That last part rang especially true to me because, simply put, [frameworks come and go](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f). What are the framework-centric SSGs---and the sites built on them---going to do when those frameworks suffer their inevitable replacement by The Next Kewl Thing?
+That last part rang especially true to me because, simply put, [frameworks come and go](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f). What are the framework-centric SSGs --- and the sites built on them --- going to do when those frameworks suffer their inevitable replacement by The Next Kewl Thing?
 
 But the part that grabbed me more than anything else, and was indeed that "breath of fresh air" I'd [originally hoped Gatsby would be for me](/posts/2019/07/why-staying-with-hugo/), was Eleventy's amazing flexibility. Not only does it you let choose from among multiple templating languages, but it also gives you lots of freedom in choosing the directory structure of the hosting repo and, in the end, the site that will go on the web.
 
@@ -139,7 +139,7 @@ However, of course, it wasn't quite that simple.
 
 ## Substituting for Hugo
 
-As I explained back in July, Hugo comes loaded with functionality out of the box, especially since it's several years older than the New Kewl Kids. And let me say this quite simply: **I STILL recommend Hugo to less "tech-savvy" users**. There's no such thing as an SSG that "just works"---and may never be---but Hugo comes about as close for "normal" people as anything can right now.
+As I explained back in July, Hugo comes loaded with functionality out of the box, especially since it's several years older than the New Kewl Kids. And let me say this quite simply: **I STILL recommend Hugo to less "tech-savvy" users**. There's no such thing as an SSG that "just works" --- and may never be --- but Hugo comes about as close for "normal" people as anything can right now.
 
 Also, **no SSG can build a site faster than Hugo can**. It's still the undisputed champ there. Fortunately, my site isn't all that big and I don't build it that often, so that doesn't faze me; but anyone who wants to maintain a lot of often-changed content on an SSG is asking for trouble on anything other than Hugo. (However, Eleventy is getting there; keep reading.)
 
@@ -163,7 +163,7 @@ Eleventy works with plugins, including [Markdown-it plugins](https://www.npmjs.c
 
 I had a few (mostly self-inflicted) difficulties getting them going but the results, as you can see here and elsewhere in this site, were worth it. (Truth be known, I actually prefer how PrismJS handles code blocks over how Chroma does it in Hugo.)
 
-In the case of Gatsby, I'd managed to get the "smart" typography and, usually, good code block formatting---but automated footnotes were glitchy and often nonfunctional (as I [previously explained](/posts/2019/07/why-staying-with-hugo/)).
+In the case of Gatsby, I'd managed to get the "smart" typography and, usually, good code block formatting --- but automated footnotes were glitchy and often nonfunctional (as I [previously explained](/posts/2019/07/why-staying-with-hugo/)).
 
 And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is ’waaaaay easier and more stable.
 
@@ -171,7 +171,7 @@ And speaking of Gatsby: while you can go through many levels of hell trying to g
 
 #### Hugo
 
-To enable the flexibility of SCSS/Sass, Hugo has [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) for asset-processing---in this case, transforming one or more SCSS/Sass files on the fly while you're developing with `hugo server`.
+To enable the flexibility of SCSS/Sass, Hugo has [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) for asset-processing --- in this case, transforming one or more SCSS/Sass files on the fly while you're developing with `hugo server`.
 
 #### Eleventy
 
@@ -181,7 +181,7 @@ Running Gulp with the settings in my repo's `gulpfile.js` file does this process
 
 But that's not all that this particular `gulpfile.js` file does for me. It also:
 
-- Deletes the *previous* build---the "_site" folder---on each run to ensure that I'm looking at the latest-and-greatest.
+- Deletes the *previous* build --- the "_site" folder --- on each run to ensure that I'm looking at the latest-and-greatest.
 
 - Runs the necessary Eleventy CLI command to start up the Eleventy dev build/server process in "quiet" mode so messages aren't so frequent.
 
@@ -199,7 +199,7 @@ If you're gonna have to customize, which you do for *any* SSG (even Hugo, althou
 
 I chose to use [Nunjucks](https://mozilla.github.io/nunjucks/) for my Eleventy templates, as do many Eleventy users since that seems to be the preference of Zach Leatherman himself, and have found it considerably easier to read, write, and understand than similar templating based on the Go that undergirds Hugo.[^moreComing]
 
-[^moreComing]: Details to come in a future post, after I've had more time to play with Eleventy---especially in view of some major look-and-feel changes I'm considering that would be easier thanks to this transition. (The operative word there is *considering*.)
+[^moreComing]: Details to come in a future post, after I've had more time to play with Eleventy --- especially in view of some major look-and-feel changes I'm considering that would be easier thanks to this transition. (The operative word there is *considering*.)
 
 Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particular Eleventy *vs.* Gatsby dig. It is **vastly** easier to do, say, a list of your site's posts in Eleventy (through its [collections](https://www.11ty.dev/docs/collections/) feature) than via the impressive-but-finicky [GraphQL](https://www.gatsbyjs.org/docs/graphql/) in Gatsby (and [Gridsome](https://gridsome.org/docs/querying-data), for that matter).[^graphqlExpII]
 
@@ -209,13 +209,13 @@ Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although qui
 
 ### It's far more robust than Gatsby
 
-Having watched Gatsby crash and crash and crash while I was doing only  very innocent little things like file moves or *legitimate* edits to Markdown or code, I was pleasantly surprised by how hard it is to crash this much younger, much earlier-in-its-dev-life SSG during site development. *Can* you crash it? Oh, yeah. Big-time. But, when you do, its error messages---at least, in my opinion as a non-expert in JavaScript and its hangers-on---have so far been sufficiently readable that I could resolve issues. That definitely [was not](/posts/2019/07/why-staying-with-hugo/) the case with Gatsby.
+Having watched Gatsby crash and crash and crash while I was doing only  very innocent little things like file moves or *legitimate* edits to Markdown or code, I was pleasantly surprised by how hard it is to crash this much younger, much earlier-in-its-dev-life SSG during site development. *Can* you crash it? Oh, yeah. Big-time. But, when you do, its error messages --- at least, in my opinion as a non-expert in JavaScript and its hangers-on --- have so far been sufficiently readable that I could resolve issues. That definitely [was not](/posts/2019/07/why-staying-with-hugo/) the case with Gatsby.
 
 I am sure that Gatsby and React adherents will hee-haw at the thought that little Eleventy is tougher than their SSG; but, in my perhaps atypical experience, it is exactly that. For someone with sharply limited  free time to fool with this stuff, having an SSG that can take a few shots of [PEBKAC](https://www.computerhope.com/jargon/p/pebkac.htm) and still (usually) hang in there is invaluable.
 
 ### It's pretty fast
 
-It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---but Eleventy's build times are impressive enough for me, and I expect this aspect will improve in time, [much as it did for Gatsby in going from v1 to v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+It doesn't build a site as quickly as Hugo --- nothing beats Hugo on that score --- but Eleventy's build times are impressive enough for me, and I expect this aspect will improve in time, [much as it did for Gatsby in going from v1 to v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
 While we're on the subject of speed: while I was working on this post, I saw this Leatherman tweet:
 
@@ -231,7 +231,7 @@ I fully intend to stay current with *both* of what I now believe are the two bes
 
 [^bitToGit]: Another transition may be in the works on that front, too; since back before Gatsby Experiment I, I've been considering switching the web's "source of truth" for this site to either GitHub or GitLab. I can see good arguments for each, as well as for just sticking with Bitbucket, so this call remains in the air.
 
-Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts’ main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts’ front matter and purely textual parts of their body copy are now totally portable.
+Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts’ main content that require specific handling for each SSG --- especially when body-content images or code blocks are involved --- but the posts’ front matter and purely textual parts of their body copy are now totally portable.
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 

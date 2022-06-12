@@ -17,11 +17,11 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Angelo_Giordano-753934/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3930337">Angelo Giordano</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3930337">Pixabay</a></span>
 ---
 
-Are you a Mac user? Ever looked at that [joined-at-the-hip relationship between your **Documents** folder and iCloud Drive](https://support.apple.com/en-us/HT206985) and wondered if you might be better off sync'ing that folder with another provider---or, if you have no reason to view the folder's contents on other devices, not sync'ing it at all and thus avoiding the expense?
+Are you a Mac user? Ever looked at that [joined-at-the-hip relationship between your **Documents** folder and iCloud Drive](https://support.apple.com/en-us/HT206985) and wondered if you might be better off sync'ing that folder with another provider --- or, if you have no reason to view the folder's contents on other devices, not sync'ing it at all and thus avoiding the expense?
 
 You're not alone.
 
-But, **before** you go that route, please take a few minutes and read the advice in this post. It'll save you some grief, not to mention many, many hours of downloading---even if you have a pretty spiffy Internet connection.
+But, **before** you go that route, please take a few minutes and read the advice in this post. It'll save you some grief, not to mention many, many hours of downloading --- even if you have a pretty spiffy Internet connection.
 
 ## Why you have to be careful
 
@@ -37,13 +37,13 @@ If you don't **first** follow a special procedure I'll describe shortly, some of
 
 Once again: it's not that simple.
 
-The problem at this point is the **time** that downloading process will take, unless you have very little content either on your desktop or in your **Documents** folder, which probably is rather unlikely for the latter in particular. Even if you have a great Internet connection, you easily could be in store for many hours---perhaps multiple **days**---of downloading that content in its entirety from iCloud to your Mac.
+The problem at this point is the **time** that downloading process will take, unless you have very little content either on your desktop or in your **Documents** folder, which probably is rather unlikely for the latter in particular. Even if you have a great Internet connection, you easily could be in store for many hours --- perhaps multiple **days** --- of downloading that content in its entirety from iCloud to your Mac.
 
 Fortunately, there's a better way.
 
 ## Borrowing some great advice
 
-Before I give you the particulars, please be aware that I didn't come up with the most important part of these instructions. I simply found it by chance one day and, given its relative obscurity, realized I should share it with my fellow Mac users. If you want to see the original, go to "[How to Disable iCloud Desktop &amp; Documents on Mac](https://osxdaily.com/2017/07/06/disable-icloud-desktop-documents-mac/)"---dated July 6, 2017---and search that page for the name "James Howie," because it's *his* comment, provided over two years after the article's initial publication, whence this advice sprang. To Mr. Howie, wherever he is: a huge "thank you," sir.
+Before I give you the particulars, please be aware that I didn't come up with the most important part of these instructions. I simply found it by chance one day and, given its relative obscurity, realized I should share it with my fellow Mac users. If you want to see the original, go to "[How to Disable iCloud Desktop &amp; Documents on Mac](https://osxdaily.com/2017/07/06/disable-icloud-desktop-documents-mac/)" --- dated July 6, 2017 --- and search that page for the name "James Howie," because it's *his* comment, provided over two years after the article's initial publication, whence this advice sprang. To Mr. Howie, wherever he is: a huge "thank you," sir.
 
 ### Important notes
 
@@ -60,14 +60,14 @@ So, with all that understood, here we go.
 2. Navigate to your user account's home folder in **Users**. For example, if you entered **John Doe** as your account name when you set up the Mac initially, there should be a **John Doe** folder within **Users**.
 3. Navigate to that folder's **Downloads** folder. (If there's not already a **Downloads** folder there, create one.)
 4. In this **Downloads** folder, create two new empty folders:
-	— One called **1-Desktop**.
-	— One called **2-Documents**.
-5. Drag (don't copy) to the **1-Desktop** folder all content you may have on the Mac desktop. This, of course, does **not** include any drive icons that are on the desktop—just files and aliases.
+	 —  One called **1-Desktop**.
+	 —  One called **2-Documents**.
+5. Drag (don't copy) to the **1-Desktop** folder all content you may have on the Mac desktop. This, of course, does **not** include any drive icons that are on the desktop — just files and aliases.
 	You'll get a warning message about this content's no longer being available on your other iCloud-linked devices. Click the button that indicates you **do** want to move the content out of iCloud Drive.
 6. Open a separate Finder window and navigate to the **Documents** folder in your **iCloud Drive** folder.
 7. Select **everything** in that **Documents** folder.
 
-**Note:** Well, *almost* everything. I suggest being careful about any folder that is identified in the **List** view as an "App Library" (often possessing an app's logo on the folder icon in the default **Icons** view)---one notable example of which, in my case, is [iA Writer](https://ia.net/writer). Leave folders of that type in the **iCloud Drive** folder's **Documents** folder. While you *can* move those items if you wish, just be forewarned that either the current app or its future versions might have a problem with the different location.
+**Note:** Well, *almost* everything. I suggest being careful about any folder that is identified in the **List** view as an "App Library" (often possessing an app's logo on the folder icon in the default **Icons** view) --- one notable example of which, in my case, is [iA Writer](https://ia.net/writer). Leave folders of that type in the **iCloud Drive** folder's **Documents** folder. While you *can* move those items if you wish, just be forewarned that either the current app or its future versions might have a problem with the different location.
 {.yellowBox}
 
 8. Drag it all to the **2-Documents** folder.
@@ -88,6 +88,6 @@ I found Mr. Howie's sage advice while re-thinking my own [sync'ing strategies](/
 
 So, bottom line, I downsized my monthly sync expenses to just iCloud Drive's 200 GB tier ($2.99/month as of this writing), which is far more than enough for not only all the Mac files I would ever want to see on the iPhone and iPad but also the photos storage for **both** my phone and my wife's.
 
-In short, I was able to simplify. And that's always good (especially when it cuts your costs). If you find yourself able to simplify as well, perhaps this post will help you do it more safely—which also is always good.
+In short, I was able to simplify. And that's always good (especially when it cuts your costs). If you find yourself able to simplify as well, perhaps this post will help you do it more safely — which also is always good.
 
 [^1]:	I don't share files with anybody else, and my day job's computing environment is so utterly locked down that I couldn't use my sync'd content there even if I so wanted (and I don't). Moreover, our house has only one truly usable computer (I'm excluding the Chromebook, which now is too old to receive updates from Google and thus is of little practical use to me), so there won't be any need to share files between my Mac and any other computer.

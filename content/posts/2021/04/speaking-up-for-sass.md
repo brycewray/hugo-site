@@ -18,22 +18,22 @@ featured_image_caption: |
   <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
-**Note, 2021-04-04**: I revised this article to remove some references that, as a reader correctly pointed out, didn't really fit into what I was trying to say. (One of these days, I'll learn not to write these pieces late on Friday nights when I'm really, really tired.)
+**Note, 2021‑04‑04**: I revised this article to remove some references that, as a reader correctly pointed out, didn't really fit into what I was trying to say. (One of these days, I'll learn not to write these pieces late on Friday nights when I'm really, really tired.)
 {.yellowBox}
 
 It's important for me to stay current with trends that affect my web development efforts. That's true whether we're talking about the websites I manage as part of the Day Job or just the tinkering I do with this personal site.
 
-For example, I've recently [written about](/posts/2021/03/jit-game-changer-tailwind-css/), and have made significant use of, not only [Tailwind CSS](https://tailwindcss.com) but also its new, experimental [just-in-time (JIT) compiler](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css). To be sure, Tailwind's appeal among web developers---especially those who aren't particularly fond of futzing with CSS in the first place---is powerful and growing.
+For example, I've recently [written about](/posts/2021/03/jit-game-changer-tailwind-css/), and have made significant use of, not only [Tailwind CSS](https://tailwindcss.com) but also its new, experimental [just-in-time (JIT) compiler](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css). To be sure, Tailwind's appeal among web developers --- especially those who aren't particularly fond of futzing with CSS in the first place --- is powerful and growing.
 
 That said, there's plenty to be said for the tried and the true, the styling methods that were around years ago, long before Tailwind and other examples of New Shiny CSS ever existed. And, today, I'm here to do some of that "saying" in support of one of them: namely, the [Sass CSS preprocessor](https://sass-lang.com).
 
 ## Power that'll grow with you
 
-Sass---"Syntactically Awesome Style Sheets"---came into existence in 2006 and, almost from the beginning, one of its key slogans was that it "makes CSS fun again." While I can differ with that opinion on occasion, I completely agree with the Sass website's headline since 2013: "CSS with superpowers."
+Sass --- "Syntactically Awesome Style Sheets" --- came into existence in 2006 and, almost from the beginning, one of its key slogans was that it "makes CSS fun again." While I can differ with that opinion on occasion, I completely agree with the Sass website's headline since 2013: "CSS with superpowers."
 
 And let me stop right here for those who are already grumbling, "Yeah, but in this day and age you can do so much more with plain, vanilla CSS than you could back when Sass was new and hot, so who needs it today?" My simple answer is: *you* might, if you support websites intended for use in either enterprises or government.
 
-That's because those tend to be places where the execrable Internet Explorer 11 is still alive and well (I wouldn't waste time worrying about an IE version before that), often because of the need to support legacy apps or files that require it.[^TWCSSandIE] IE 11 is completely incompatible with one of modern CSS's coolest features, [CSS custom properties ("CSS variables”)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). As I'll shortly explain, using variables in CSS can be an *immense* time- and labor-saver for web dev work, especially as your projects grow. But Sass lets you use variables---in its own way, to be fair---while still generating CSS that even IE 11 can read.[^oldBrowsers]
+That's because those tend to be places where the execrable Internet Explorer 11 is still alive and well (I wouldn't waste time worrying about an IE version before that), often because of the need to support legacy apps or files that require it.[^TWCSSandIE] IE 11 is completely incompatible with one of modern CSS's coolest features, [CSS custom properties ("CSS variables”)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). As I'll shortly explain, using variables in CSS can be an *immense* time- and labor-saver for web dev work, especially as your projects grow. But Sass lets you use variables --- in its own way, to be fair --- while still generating CSS that even IE 11 can read.[^oldBrowsers]
 
 [^TWCSSandIE]: By the way: as of the release of version 2.0 in November, 2020, [Tailwind CSS doesn't support Internet Explorer](https://blog.tailwindcss.com/tailwindcss-v2#incompatibility-with-ie11). If you must use Tailwind *and* support IE users, you'll have to stick with Tailwind version 1.9.
 
@@ -189,11 +189,11 @@ of code, etc.)
 Then there are those capabilities built into Sass which you likely won't ever see in CSS. Yeah, you may be able to accomplish them in other languages if you're of a mind to do so (especially if you're in the [CSS-in-JS](https://css-tricks.com/the-differing-perspectives-on-css-in-js/) crowd), but why not take advantage of *built-in* cool things? Sass enables:
 - [Operators](https://sass-lang.com/documentation/operators) for math and logic. They go hand in hand with&nbsp;.&nbsp;.&nbsp;.
 - [Functions](https://sass-lang.com/documentation/at-rules/function) that let you, in essence, do *real* coding in your Sass through so-called [SassScript](https://sass-lang.com/documentation/syntax/structure#expressions).
-- [Modules](https://sass-lang.com/documentation/at-rules/use) for controlling your variables’ scope through [namespacing](https://en.wikipedia.org/wiki/Namespace), especially in view of the cascading nature of CSS in the first place. For example: that way, you can have both `homePage.$color` and `contactPage.$color` variables without worrying about one's overriding the other---simply by having separate `_homePage.scss` and `_contactPage.scss` files, each of which has its own `$color` variable, and then employing the `@use` rule (`@use 'homepage'` or `@use 'contactpage'`, as the case may be, in this example).
+- [Modules](https://sass-lang.com/documentation/at-rules/use) for controlling your variables’ scope through [namespacing](https://en.wikipedia.org/wiki/Namespace), especially in view of the cascading nature of CSS in the first place. For example: that way, you can have both `homePage.$color` and `contactPage.$color` variables without worrying about one's overriding the other --- simply by having separate `_homePage.scss` and `_contactPage.scss` files, each of which has its own `$color` variable, and then employing the `@use` rule (`@use 'homepage'` or `@use 'contactpage'`, as the case may be, in this example).
 
 Full disclosure: I personally haven't had to use more than a tiny fraction of these as yet (mainly `@use` for now), but I also haven't spent as much time in Sass as I'd have liked, especially in the last year or so. I'm sure I'll be doing quite a bit more Sass work in the future, and expect to find myself increasingly using these capabilities.[^thisSite]
 
-[^thisSite]: Yesterday, I converted this site back to Sass after giving serious thought to all the items, and more, I've discussed in this article. I did so despite my previously expressed interest in Tailwind, partly because [I expect to be doing more Sass-related development in the Day Job in the future](/posts/2021/03/next-steps/) and thus think I'll find it less neck-snapping to go from Day Job web dev on workdays to personal web dev nights and weekends. **Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing that development after all.
+[^thisSite]: Yesterday, I converted this site back to Sass after giving serious thought to all the items, and more, I've discussed in this article. I did so despite my previously expressed interest in Tailwind, partly because [I expect to be doing more Sass-related development in the Day Job in the future](/posts/2021/03/next-steps/) and thus think I'll find it less neck-snapping to go from Day Job web dev on workdays to personal web dev nights and weekends. **Update, 2021‑04‑15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing that development after all.
 
 ## Room for Sass in the Tailwind era?
 
@@ -211,29 +211,29 @@ Tailwind adherents say this isn't a problem because, once you recognize that you
 
 Then, once you've extracted a good quantity of components as I suspect happens more often than not, you'll run into the next issue that Tailwind fans say it solves&nbsp;.&nbsp;.&nbsp;.
 
-### "Naming is hard"---or is it?
+### "Naming is hard" --- or is it?
 
 There are numerous pieces on the web saying that one of the biggest hassles in dealing with code is naming things (*e.g.*, variables, functions, and CSS classes), and that this is a pain which Tailwind can remedy by keeping you from *having* to name more than a handful of CSS classes.
 
 To that I say: well, maybe sometimes, and for some people, but not universally.
 
-Surely, if you're trying to corral a web project with dozens of developers and hundreds of pages, I can see the point---and I'm also guessing you're not my audience in the first place. But when you're dealing with a smaller team and a project with only a few templates that you tweak to build a lot of pages, as is typical if you're a [static site generator](https://jamstack.org/generators) (SSG) user such as Yours Truly, it really shouldn't be that hard to decide what to call things.
+Surely, if you're trying to corral a web project with dozens of developers and hundreds of pages, I can see the point --- and I'm also guessing you're not my audience in the first place. But when you're dealing with a smaller team and a project with only a few templates that you tweak to build a lot of pages, as is typical if you're a [static site generator](https://jamstack.org/generators) (SSG) user such as Yours Truly, it really shouldn't be that hard to decide what to call things.
 
 Besides: don't you still **need** to name them? As [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/) said in an [article](https://www.aleksandrhovhannisyan.com/blog/why-i-dont-like-tailwind-css) that got him [roasted](https://news.ycombinator.com/item?id=26422286) on [Hacker News](https://news.ycombinator.com) by the Tailwind faithful:
 
 > .&nbsp;.&nbsp;.&nbsp;if you struggle to name things in the first place, this suggests you'll run into communication issues when discussing your UI with designers and other team members. If you can't name `x` element in your UI sensibly, and a conversation inevitably arises concerning that element, how are you going to refer to it? What are you going to call That Thing? Surely you can think of something. There's always a way to name things semantically.
 
-And I would say this is true even if you're a team of one. If you don't know what to call it, maybe you don't really grasp its purpose---and that's not good.
+And I would say this is true even if you're a team of one. If you don't know what to call it, maybe you don't really grasp its purpose --- and that's not good.
 
 ### Plugins-ism *vs.* just-one-thing-ism
 
-Tailwind depends on PostCSS, and a Tailwind user more often than not is going to be using other PostCSS plugins besides just Tailwind---often to get things, like mixins and nesting, with which devs had become familiar in earlier experience with Sass. As I mentioned before, there are some PostCSS plugins that have to be installed and configured in highly specific ways; otherwise, they can fail *and* also disable the other plugins, including Tailwind.
+Tailwind depends on PostCSS, and a Tailwind user more often than not is going to be using other PostCSS plugins besides just Tailwind --- often to get things, like mixins and nesting, with which devs had become familiar in earlier experience with Sass. As I mentioned before, there are some PostCSS plugins that have to be installed and configured in highly specific ways; otherwise, they can fail *and* also disable the other plugins, including Tailwind.
 
 This is certainly understandable once you grasp [how PostCSS works](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/) (which, I'll grant, is impressive[^usingPostCSS]), but it can be a big time-suck, especially whenever those plugins and even PostCSS itself get updates. For example, the PostCSS 8 update broke or at least impaired a lot of plugins and related packages, or so I've recently read on various plugins’ [GitHub](https://github.com) "Issues" pages.
 
 [^usingPostCSS]: As I mentioned in an earlier footnote, I'm actually still using PostCSS with this site, even though it's with Sass, so I can run Autoprefixer. As of this writing, I'm also using the [PurgeCSS](https://purgecss.com) plugin, at least until I can find the time (and motivation?) to reduce my SCSS files’ sizes through more manual methods.
 
-By contrast, Sass is *one package*, and all its many capabilities---including all the ones whose PostCSS-powered lookalikes require all those add-ons---work without the need for juggling plugins.[^binary] Moreover, in today's web dev world, it's easier than ever before to take advantage of Sass. Long ago, [you had to install Ruby](https://sass-lang.com/ruby-sass), but those days are in the web's distant past. Many key dev frameworks and bundlers support Sass out of the box; or, where necessary, it's easily added, such as through the [sass Node.js package](https://npmjs.com/package/sass).
+By contrast, Sass is *one package*, and all its many capabilities --- including all the ones whose PostCSS-powered lookalikes require all those add-ons --- work without the need for juggling plugins.[^binary] Moreover, in today's web dev world, it's easier than ever before to take advantage of Sass. Long ago, [you had to install Ruby](https://sass-lang.com/ruby-sass), but those days are in the web's distant past. Many key dev frameworks and bundlers support Sass out of the box; or, where necessary, it's easily added, such as through the [sass Node.js package](https://npmjs.com/package/sass).
 
 [^binary]:	It's kind of like the argument for the all-in-one-binary [Hugo](https://gohugo.io) and [Zola](https://getzola.org) SSGs over the plugin-laden [Gatsby](https://gatsbyjs.com).
 
@@ -243,11 +243,11 @@ If you're doing your web dev in Notepad or TextEdit, well, it sucks to be you, m
 
 [^editors]:	For that matter, you can edit multiple files at once in Notepad or TextEdit, too, if you really have no other choice. (And let's not kid ourselves: there are some enterprise IT shops which force even developers to use ancient text editors rather than their code editors of choice, so this isn't an idle concern. I know whereof I speak.)
 
-This whole "ah, I just want to write my CSS in my HTML because it's too much of a pain to edit two separate files at once" mantra held by utility-first CSS enthusiasts is BS---especially because, even *with* utility-first CSS, I think you **still** end up doing that lots of times anyway. (How else are you going to be extracting those components, after all?) And, if you don't, I'd guess you don't write a whole lot of HTML, or manage all that many websites, in the first place.
+This whole "ah, I just want to write my CSS in my HTML because it's too much of a pain to edit two separate files at once" mantra held by utility-first CSS enthusiasts is BS --- especially because, even *with* utility-first CSS, I think you **still** end up doing that lots of times anyway. (How else are you going to be extracting those components, after all?) And, if you don't, I'd guess you don't write a whole lot of HTML, or manage all that many websites, in the first place.
 
 ## Forward passé?
 
-The Sass website calls Sass "the most mature, stable, and powerful professional[-]grade CSS extension language in the world." Those who value only the latest and the greatest might spend too much time on those "mature" and "stable" descriptors and dismiss Sass as something that belongs to web development's yesterdays, but they do so at their own peril---namely, the danger of missing out on the power of Sass. I hope their attitude won't similarly imperil those just getting into the field who might otherwise think What's Kewl Right Now is definitely how they'll be building websites long-term. Maybe it will; maybe it won't.
+The Sass website calls Sass "the most mature, stable, and powerful professional[-]grade CSS extension language in the world." Those who value only the latest and the greatest might spend too much time on those "mature" and "stable" descriptors and dismiss Sass as something that belongs to web development's yesterdays, but they do so at their own peril --- namely, the danger of missing out on the power of Sass. I hope their attitude won't similarly imperil those just getting into the field who might otherwise think What's Kewl Right Now is definitely how they'll be building websites long-term. Maybe it will; maybe it won't.
 
 I doubt I've changed any minds with this article. It's kind of like trying to talk politics to those who are utterly committed to a specific party. However, I wanted to explain why Sass remains highly relevant for web development, and why that's likely to continue for the foreseeable future.
 

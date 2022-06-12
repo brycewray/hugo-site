@@ -71,7 +71,7 @@ The good news is that there are plenty of things in your existing Markdown you *
 
 If your current site has only a few pages, you'll find Astro's dev server refreshes the browser quickly enough to suit you. However, after your content gets up to and beyond about the 100-page level, even a fairly simple content edit will cause the refresh to take several seconds when you save the file you're changing, and the lag will get longer as the site gets bigger.[^styling]
 
-The Astro devs are aware of the issue---perhaps related to [Astro's interaction with Vite](https://astro.build/blog/astro-021-preview/#hello-vite)---but it's unknown when it'll be fixed. Thus, with a larger site, you may want to get used to writing your content *outside of* development mode and, only then, activating the Astro dev server to check the new page's appearance.
+The Astro devs are aware of the issue --- perhaps related to [Astro's interaction with Vite](https://astro.build/blog/astro-021-preview/#hello-vite) --- but it's unknown when it'll be fixed. Thus, with a larger site, you may want to get used to writing your content *outside of* development mode and, only then, activating the Astro dev server to check the new page's appearance.
 
 [^styling]: However, editing CSS or SCSS doesn't cause the same dragginess.
 
@@ -83,7 +83,7 @@ Speaking of which&nbsp;.&nbsp;.&nbsp;.
 
 ## A sheepish U-turn
 
-Forgive me for burying the proverbial lede but, today, two weeks after [moving this site from Hugo to Astro](/posts/2022/04/winds-change/), I moved it *back*---at least for the time being.
+Forgive me for burying the proverbial lede but, today, two weeks after [moving this site from Hugo to Astro](/posts/2022/04/winds-change/), I moved it *back* --- at least for the time being.
 
 I reluctantly made this choice after running into a few particular Astro glitches which turned out to be more limiting, and required more sweating over workarounds with which I'm only slightly familiar, than I'd anticipated. (There also were some external, **non**-Astro-related factors which played a significant role in tipping my hand, but they're not really germane to this discussion.)
 

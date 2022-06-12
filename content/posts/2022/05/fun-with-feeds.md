@@ -54,7 +54,7 @@ https://www.reddit.com/r/eleventy/new.rss
 
 ## Twitter
 
-Getting RSS from a Twitter timeline can be tricky, depending on your feed-reading options. Some readers (*e.g.*, my favorite, [NetNewsWire](https://netnewswire.com)) have built-in abilities to translate a Twitter timeline into an RSS feed.[^noise] Otherwise, just use the [Twitter RSS Feed tool](https://rss.app/rss-feed/create-twitter-rss-feed) on the [RSS.app](https://rss.app) site---about which, a bit more at the end.
+Getting RSS from a Twitter timeline can be tricky, depending on your feed-reading options. Some readers (*e.g.*, my favorite, [NetNewsWire](https://netnewswire.com)) have built-in abilities to translate a Twitter timeline into an RSS feed.[^noise] Otherwise, just use the [Twitter RSS Feed tool](https://rss.app/rss-feed/create-twitter-rss-feed) on the [RSS.app](https://rss.app) site --- about which, a bit more at the end.
 
 [^noise]: Obviously, this could become a big pain, quickly, if you follow a *very active* Twitter timeline. *Caveat emptor*.
 
@@ -70,4 +70,4 @@ https://mastodon.technology/@BryceWrayTX.rss
 
 These are just a few of the more obvious possibilities for what you might want to follow with a feed reader. For others, I suggest, once again, [RSS.app](https://rss.app) and, specifically, the numerous tools on its ["Create RSS feeds" page](https://rss.app/rss-feed).
 
-Back in the Cretaceous Era, when I was working as a radio announcer and doing remote broadcasts---especially at locations where giveaways were common---someone gave me some good advice: "Never turn down free T-shirts or free food." I would add to that: ". . . or free *feeds*." All you have to do is go get ’em. If this post has at least sparked your interest in checking on that, my work here is done.
+Back in the Cretaceous Era, when I was working as a radio announcer and doing remote broadcasts --- especially at locations where giveaways were common --- someone gave me some good advice: "Never turn down free T-shirts or free food." I would add to that: ". . . or free *feeds*." All you have to do is go get ’em. If this post has at least sparked your interest in checking on that, my work here is done.

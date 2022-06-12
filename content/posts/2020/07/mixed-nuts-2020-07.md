@@ -17,7 +17,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
-It's true that it hasn't been all that long since the [most recent](/posts/2020/05/mixed-nuts-2020-05/) edition of "Mixed Nuts," but you're here reading and I'm here tossing off drivel---and, well, that's a quorum, right?
+It's true that it hasn't been all that long since the [most recent](/posts/2020/05/mixed-nuts-2020-05/) edition of "Mixed Nuts," but you're here reading and I'm here tossing off drivel --- and, well, that's a quorum, right?
 
 Without further preamble, off we go.
 
@@ -35,11 +35,11 @@ While I'm on the subject of "little birds": our new granddaughter, whom I [dubbe
 
 {{< imgc src="2020-06-23_Kennedy-Beck_and_John-the-dog_3200x2400.jpg" alt="A baby, Kennedy Beck, with one of her family's dogs" width="3200" height="2400" >}}
 
-*I recently managed to achieve a slight performance boost for this site by dropping [Google Fonts](https://fonts.google.com) and [Flying Pages](https://npmjs.com/package/flying-pages), a [preloader](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) script. You may have better luck. (**Note, 2020-08-30**: Check "[Google Fonts and privacy](/posts/2020/08/google-fonts-privacy/)" and "[Good stuff without Google](/posts/2020/08/good-stuff-without-google/)" for more on the web fonts front where this site is concerned.)*
+*I recently managed to achieve a slight performance boost for this site by dropping [Google Fonts](https://fonts.google.com) and [Flying Pages](https://npmjs.com/package/flying-pages), a [preloader](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) script. You may have better luck. (**Note, 2020‑08‑30**: Check "[Google Fonts and privacy](/posts/2020/08/google-fonts-privacy/)" and "[Good stuff without Google](/posts/2020/08/good-stuff-without-google/)" for more on the web fonts front where this site is concerned.)*
 
 If you want an interesting and, yes, cool way to test **your** site's get-up-and-go, check out [this article](https://www.zachleat.com/web/speedlify/) by [Eleventy](https://11ty.dev) creator Zach Leatherman about his new tool, [Speedlify](https://github.com/zachleat/speedlify). He even makes it easy to publish a Speedlify instance on [Netlify](https://netlify.com) for automated testing, if you prefer not to do it manually (and/or leave it running all the time) on your local computer.
 
-*This is an interesting time to be a Mac user, given the [confirmation](https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/) at [WWDC 2020](https://developer.apple.com/wwdc20/) that the Mac platform is transitioning from Intel CPUs to Apple Silicon. Having been through the two other big Mac CPU transitions Apple has executed in recent memory---Motorola to PowerPC in the 1990s, and PowerPC to Intel in the mid-2000s---I am excited for this one and eager to see what, for example, the 2022 Mac lineup will offer.*
+*This is an interesting time to be a Mac user, given the [confirmation](https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/) at [WWDC 2020](https://developer.apple.com/wwdc20/) that the Mac platform is transitioning from Intel CPUs to Apple Silicon. Having been through the two other big Mac CPU transitions Apple has executed in recent memory --- Motorola to PowerPC in the 1990s, and PowerPC to Intel in the mid-2000s --- I am excited for this one and eager to see what, for example, the 2022 Mac lineup will offer.*
 
 I'm happy about another thing announced, although with much less fanfare, at WWDC: [notable improvements to Apple's Safari web browser for macOS and iOS](https://www.zdnet.com/article/safari-14-removes-flash-gets-support-for-breach-alerts-http3-and-webp/). These additions are long overdue but still quite welcome, especially given Safari's prominent role in mobile browsing.
 

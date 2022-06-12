@@ -22,7 +22,7 @@ It all started innocently enough last Sunday, when I decided to post this site's
 
 But later in the week, things got more complicated. You see, I had reinstated [Google Fonts](https://fonts.google.com) because, well, I just preferred how my site looked with web fonts than without it. I figured I didn't have to think about it any longer.
 
-That was *before* I learned that my bent toward privacy protection didn't square with the use of Google Fonts---*i.e.*, if you're serving those fonts *from* Google (as I was doing) rather than their being self-hosted.
+That was *before* I learned that my bent toward privacy protection didn't square with the use of Google Fonts --- *i.e.*, if you're serving those fonts *from* Google (as I was doing) rather than their being self-hosted.
 
 As I'd mentioned in [a recent post](/posts/2020/07/chasing-100-tips-optimizing-website/), there was a technical reason why I was letting Google serve the typefaces rather than handling it through self-hosting, even though the former can cause performance issues:
 
@@ -47,9 +47,9 @@ When I contrasted this with what [Google says about Google Analytics](https://su
 > Google Analytics mainly uses first-party cookies to report on visitor .&nbsp;.&nbsp;.&nbsp;interactions on Google Analytics customers’ websites. Users may disable cookies or delete any individual cookie.
 
 .&nbsp;.&nbsp;. it seemed to me that Google was saying flatly it *did* track visitors with Google Analytics (duh), yet simultaneously
-saying---carefully, as giant corporations with armies of lawyers tend to do everything---that it *didn't* track visitors to websites using Google-served Google Fonts.
+saying --- carefully, as giant corporations with armies of lawyers tend to do everything --- that it *didn't* track visitors to websites using Google-served Google Fonts.
 
-I also found articles and comments from individuals who *did* consider Google-served Google Fonts to be a tracking culprit---[Laura Kalbag](https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-13/), [Yves Peters](https://web.archive.org/web/20150304120024/http://fontfeed.com/archives/google-webfonts-the-spy-inside/), and [Adolfo Ramírez Corona](https://uxdesign.cc/a-privacy-concern-about-google-fonts-5aa4418bf87e), among others---but, I felt, they didn't present enough *evidence* to dispute the Google position as I (thought I) understood it.
+I also found articles and comments from individuals who *did* consider Google-served Google Fonts to be a tracking culprit --- [Laura Kalbag](https://www.smashingmagazine.com/2020/04/smashing-podcast-episode-13/), [Yves Peters](https://web.archive.org/web/20150304120024/http://fontfeed.com/archives/google-webfonts-the-spy-inside/), and [Adolfo Ramírez Corona](https://uxdesign.cc/a-privacy-concern-about-google-fonts-5aa4418bf87e), among others --- but, I felt, they didn't present enough *evidence* to dispute the Google position as I (thought I) understood it.
 
 Finally, I figured that Google, already a target by privacy advocates, simply wouldn't want to take the PR hit for lying if it could be caught saying falsely that Google-served typefaces don't track you. While it hardly could be said that I trust Google, I definitely *do* trust Google's instinct for avoiding self-inflicted harm and, thus, guessed my website wasn't committing privacy violations by including Google-hosted typefaces.
 
@@ -71,11 +71,11 @@ That's a GDPR violation.
 
 Why? Because you're *not* given the chance to consent to that practice (unlike the aforementioned popups about cookies). Thus, it's not enough to follow the later example of other sites and simply add a privacy notice someplace saying, "Yeah, we get our typefaces served by Google, and your IP address goes back to Google, and that's how it is, Jack." *You have to ask the user for permission.*
 
-While there probably are ways to do that when one has total control of the server---*e.g.*, by serving the typefaces from Google only after getting the user to click on an "I consent"-style link or button---it's not something I can do from my [Jamstack](https://jamstack.wtf) site, at least as far as I know.
+While there probably are ways to do that when one has total control of the server --- *e.g.*, by serving the typefaces from Google only after getting the user to click on an "I consent"-style link or button --- it's not something I can do from my [Jamstack](https://jamstack.wtf) site, at least as far as I know.
 
 Moreover, I wouldn't *want* to do that. I'm annoyed whenever I encounter all this permissions-requesting stuff on one site after another, and I don't want to put my visitors through it.
 
-So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google/).”)
+So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts --- yes, from Google --- and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google/).”)
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 
@@ -90,7 +90,7 @@ These were easy decisions, since there's little doubt about the fact that embedd
 
 To be safe, I also checked out the GDPR compliance of [Cloudinary](https://cloudinary.com), which the site [recently began using](/posts/2020/07/transformed/), and satisfied myself that [it was sufficient](https://cloudinary.com/privacy) that I didn't need to revert to locally processed, locally hosted images. (Whew.)
 
-Finally, I revised this site's privacy policy---and will continue to do so as needed---to reflect all these new realities.
+Finally, I revised this site's privacy policy --- and will continue to do so as needed --- to reflect all these new realities.
 
 ## Tedium, but good tedium
 
@@ -107,4 +107,4 @@ Even if you're not and never will be an EU citizen, your privacy deserves protec
 **Totally unrelated additional note**: Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses/), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?
 {.yellowBox}
 
-[^1]:	Of course, that doesn't necessarily identify you, especially if---as is true for most users---your device receives its IP address via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Nonetheless, it would at least narrow it down. And, equally of course, it absolutely *does* identify a device which has a *[static](https://whatismyipaddress.com/dynamic-static)* IP address.
+[^1]:	Of course, that doesn't necessarily identify you, especially if --- as is true for most users --- your device receives its IP address via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Nonetheless, it would at least narrow it down. And, equally of course, it absolutely *does* identify a device which has a *[static](https://whatismyipaddress.com/dynamic-static)* IP address.

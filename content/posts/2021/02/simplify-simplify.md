@@ -21,7 +21,7 @@ featured_image_caption: |
 {{% disclaimer %}}
 
 > Our life is frittered away by detail. Simplify, simplify.<br />
-> ---[Henry David Thoreau](https://simple.wikiquote.org/wiki/Henry_David_Thoreau).
+> --- [Henry David Thoreau](https://simple.wikiquote.org/wiki/Henry_David_Thoreau).
 
 A few days ago, I [explained](/posts/2021/01/leaner-cleaner/) that I was simplifying the site's look-and-feel. That seemed plain enough, I'm sure.
 
@@ -29,15 +29,15 @@ There was more going on behind the scenes, however.
 
 Story time&nbsp;.&nbsp;.&nbsp;.
 
----
+ ---
 
 It's been about two-and-a-half years since I first launched this site. It's been closer to three years since I began research into how I wanted to maintain it. That process ended with my choosing to go with [static site generators](https://jamstack.org/generators) (SSGs) in general and the [Hugo](https://gohugo.io) SSG in particular.
 
-Not quite a year after that, I [reexamined](/posts/2019/07/why-staying-with-hugo/) the Hugo choice because I had what the Kewl Kids used to call "FOMO"---Fear of Missing Out. I figured I'd gain more potentially marketable experience by using an SSG based on [JavaScript](https://js.org) rather than the [Go](https://go.dev)-based Hugo, especially given that most of the hotness in the world of SSG development seemed to originate from JavaScript-based SSGs.
+Not quite a year after that, I [reexamined](/posts/2019/07/why-staying-with-hugo/) the Hugo choice because I had what the Kewl Kids used to call "FOMO" --- Fear of Missing Out. I figured I'd gain more potentially marketable experience by using an SSG based on [JavaScript](https://js.org) rather than the [Go](https://go.dev)-based Hugo, especially given that most of the hotness in the world of SSG development seemed to originate from JavaScript-based SSGs.
 
 That led me to not one, not two, but [three](/posts/2019/10/now-gatsby-geezer/) tries of [Gatsby](https://gatsbyjs.org). There also was an initial [short try](/posts/2019/09/why-left-hugo-eleventy/) of, followed by a [longer engagement](/posts/2019/12/packing-up/) with, [Eleventy](https://11ty.dev).
 
-Sprinkled in between that short try and longer engagement, not to mention the dalliance with Gatsby, was a brief [return to Hugo](/posts/2019/09/back-with-hugo/) that was spurred in part by a distrust of all the [Node.js](https://nodejs.dev) [dependencies](https://nodejs.dev/learn/npm-dependencies-and-devdependencies) that power both Gatsby and Eleventy. This is as opposed to Hugo, which is a single-binary executable---in plain language, an *app*.
+Sprinkled in between that short try and longer engagement, not to mention the dalliance with Gatsby, was a brief [return to Hugo](/posts/2019/09/back-with-hugo/) that was spurred in part by a distrust of all the [Node.js](https://nodejs.dev) [dependencies](https://nodejs.dev/learn/npm-dependencies-and-devdependencies) that power both Gatsby and Eleventy. This is as opposed to Hugo, which is a single-binary executable --- in plain language, an *app*.
 
 Nonetheless, I enjoyed JS-based SSGs in general and Eleventy in particular, so I buried such thoughts in the back of my mind and went on my merry way, figuring I'd finally fought the issue to a conclusion.[^dance2019]
 
@@ -97,15 +97,15 @@ So, over the last few days, I put in place this plan:
 - **Simplify the site's appearance**. [Done](/posts/2021/01/leaner-cleaner/).
 - **Move the site's hosting from [Cloudflare Workers Sites](https://workers.cloudflare.com/sites) back to [Vercel](https://vercel.com)**. Done. In my tests over the last half-year, I've found that Vercel provides great worldwide performance and the fastest build speeds in the field while requiring no futzing around with [GitHub Actions](https://github.com/features/actions) for builds.[^CFP]
 - **Take the site back to single-binary land with Hugo**. Done. (Well, you probably figured that out some time back in this piece, didn't you?)[^Zola]
-- **Decide what to do about Tailwind CSS**. Still in flux. This is the last battlefield of the war between simplicity and FOMO. If FOMO wins on this count, I keep the ultra-popular Tailwind and the [PostCSS](https://postcss.org) it requires---even though the two constitute, yep, buckets of Node.js dependencies. If simplicity wins, the site goes back to SCSS, as in the site's first year-and-a-half under all three SSGs on which it existed during that period.[^simpCSS]
+- **Decide what to do about Tailwind CSS**. Still in flux. This is the last battlefield of the war between simplicity and FOMO. If FOMO wins on this count, I keep the ultra-popular Tailwind and the [PostCSS](https://postcss.org) it requires --- even though the two constitute, yep, buckets of Node.js dependencies. If simplicity wins, the site goes back to SCSS, as in the site's first year-and-a-half under all three SSGs on which it existed during that period.[^simpCSS]
 
 [^CFP]: That said, I'll still keep an eye on both [Render](https://render.com) and [Cloudflare Pages](https://pages.cloudflare.com), two up-and-coming SSG-friendly platforms which have a lot of promise but also a lot of growing to do.
 
-[^Zola]: I also took another look at the [Rust](https://rust-lang.org)-based [Zola](https://getzola.org) SSG, which is essentially an attempt to make a simplified version of Hugo. Zola is another single-binary, Node.js-free platform **but** has much easier templating, through the [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)-like [Tera](https://tera.netlify.app/), than Hugo's sometimes maddening Go-derived templating. The latest Zola version I tested has eliminated many of the annoyances I'd discovered earlier but isn't yet suitable for my purposes. For one thing, I'm not happy with [how it handles footnotes](https://zola.discourse.group/t/is-there-a-way-to-customise-the-way-zola-parses-markdown-footnotes/694)---which, as this post makes clear, is an important consideration for this site.
+[^Zola]: I also took another look at the [Rust](https://rust-lang.org)-based [Zola](https://getzola.org) SSG, which is essentially an attempt to make a simplified version of Hugo. Zola is another single-binary, Node.js-free platform **but** has much easier templating, through the [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)-like [Tera](https://tera.netlify.app/), than Hugo's sometimes maddening Go-derived templating. The latest Zola version I tested has eliminated many of the annoyances I'd discovered earlier but isn't yet suitable for my purposes. For one thing, I'm not happy with [how it handles footnotes](https://zola.discourse.group/t/is-there-a-way-to-customise-the-way-zola-parses-markdown-footnotes/694) --- which, as this post makes clear, is an important consideration for this site.
 
 [^simpCSS]: Of course, there's also a possibility that I'll decide the true route of simplicity for my styling concerns would be to *keep* the Tailwind/PostCSS combo rather than committing to the somewhat more tedious maintenance of bespoke SCSS.
 
-At least until I decide that last item, I am maintaining two different themes in the Hugo repo. One is built on Tailwind, and the other on SCSS. (I named them "thoreau" and "thoreauscss," respectively.) While I continue to consider the choice, I can easily switch back and forth between them with a simple edit to the site's [config file](https://gohugo.io/getting-started/configuration/). *[**Update, 2021-03-01**: Decided to go with SCSS, but still have PostCSS for using [Autoprefixer](https://github.com/postcss/autoprefixer).]*
+At least until I decide that last item, I am maintaining two different themes in the Hugo repo. One is built on Tailwind, and the other on SCSS. (I named them "thoreau" and "thoreauscss," respectively.) While I continue to consider the choice, I can easily switch back and forth between them with a simple edit to the site's [config file](https://gohugo.io/getting-started/configuration/). *[**Update, 2021‑03‑01**: Decided to go with SCSS, but still have PostCSS for using [Autoprefixer](https://github.com/postcss/autoprefixer).]*
 
 **Important**: Be assured that every compliment I've ever paid to Eleventy, Tailwind, and/or PostCSS still applies. For those who *don't* have a problem with Node.js dependencies, I continue to give my highest recommendation to these projects, most especially Eleventy. All three are actively and lovingly maintained, and currently are far and away the best of their respective breeds (in Eleventy's case, that would be JavaScript-based SSGs).
 {.yellowBox}
@@ -113,17 +113,17 @@ At least until I decide that last item, I am maintaining two different themes in
 ## Time to let others run
 
 > Just when I thought I was out, they pull me back in.<br />
-> ---[Michael Corleone, *The Godfather: Part III*](https://www.imdb.com/title/tt0099674/quotes?item=qt0360565).
+> --- [Michael Corleone, *The Godfather: Part III*](https://www.imdb.com/title/tt0099674/quotes?item=qt0360565).
 
 Indeed.
 
 The story I've related herein may make it appear that over the last year-and-a-half I have, to paraphrase the [Red Queen from *Alice in Wonderland*](https://en.wikipedia.org/wiki/Red_Queen%27s_race), been running as fast as I could to stay in the same place. That's fair.
 
-In my defense, though, I feel the last nineteen months of experience with multiple SSGs and the Node.js universe have been invaluable. I learned a lot and that always was---and remains---the idea, much more so than indulging FOMO.
+In my defense, though, I feel the last nineteen months of experience with multiple SSGs and the Node.js universe have been invaluable. I learned a lot and that always was --- and remains --- the idea, much more so than indulging FOMO.
 
 Nonetheless, there comes a time to let others do the hard running.
 
-To be sure, I can keep reading about, researching, and testing SSGs and other related geeky stuff in the background; and I will, because I'm a curious fellow (in multiple senses of the word *curious*). But, when it comes to this site, I believe---hope---that I've reached a point where I can make myself stop spending so much time and effort futzing with the house's paint and foundation.
+To be sure, I can keep reading about, researching, and testing SSGs and other related geeky stuff in the background; and I will, because I'm a curious fellow (in multiple senses of the word *curious*). But, when it comes to this site, I believe --- hope --- that I've reached a point where I can make myself stop spending so much time and effort futzing with the house's paint and foundation.
 
 That way, I can work harder on making its interior more comfortable for those of you who visit.
 

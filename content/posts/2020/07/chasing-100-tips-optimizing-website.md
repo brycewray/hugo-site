@@ -46,7 +46,7 @@ If you reply, "I don't anticipate attracting visitors from all that far away," c
 
 [^fathom]: I know this thanks to the privacy-respecting smarts of [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate link).
 
-The best scenario is that, regardless of where a visitor may be, he or she doesn't have to wait long for your content to load---especially considering that a disproportionate percentage of visitors from certain nations will be coming in on slower mobile devices and less advanced networks. For those scenarios, you want your content on a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
+The best scenario is that, regardless of where a visitor may be, he or she doesn't have to wait long for your content to load --- especially considering that a disproportionate percentage of visitors from certain nations will be coming in on slower mobile devices and less advanced networks. For those scenarios, you want your content on a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
 
 The good thing is that, if you're hosting your site on [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com/), or [Firebase](https://firebase.google.com/), a fast CDN is part of the deal. However, if you're operating off a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) or a shared-hosting account (see the next item for more on that), try to put your site behind a free account on [Cloudflare](https://www.cloudflare.com/).
 
@@ -60,11 +60,11 @@ When your site is one of hundreds, even thousands, of accounts sharing space on 
 
 Diets aren't fun, and they suck even more when you're hungry. Because of my love of the distinctiveness that well-chosen web fonts can give a site, the question of whether to have them or [stick with the system fonts stack](/posts/2018/10/web-typography-part-2/) is a hard one for me to debate.
 
-But I don't argue with the data, and one test after another has shown me web fonts slow down my site---not a lot, to be sure, but enough to matter.
+But I don't argue with the data, and one test after another has shown me web fonts slow down my site --- not a lot, to be sure, but enough to matter.
 
 That's also turned out to be the case when I provide them "locally," as opposed to pulling them directly off (*e.g.*) [Google Fonts](https://fonts.google.com), even after trying a [variety](https://csswizardry.com/2020/05/the-fastest-google-fonts/) of [excellent](https://www.reich-consulting.net/web-development/loading-web-fonts-without-performance-penalty-from-lighthouse/) [advice](https://www.filamentgroup.com/lab/load-css-simpler/) from very smart folks. Consequently, I go with system fonts, however much I'd like to use [certain](https://fonts.google.com/specimen/Public+Sans?vfonly) [typefaces](https://fonts.google.com/specimen/Vollkorn?vfonly) I admire.
 
-**Update, 2020-08-08**: I've stricken through the remainder of this section, below, for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy/) about the privacy violations involved with using Google Fonts typefaces if they're served *from* Google.
+**Update, 2020‑08‑08**: I've stricken through the remainder of this section, below, for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy/) about the privacy violations involved with using Google Fonts typefaces if they're served *from* Google.
 {.yellowBox}
 
 ~~If your response is "Damn the performance hit, full speed ahead with Google Fonts":~~
@@ -74,13 +74,13 @@ That's also turned out to be the case when I provide them "locally," as opposed 
 
 ## Accessibility
 
-Making your site available to as many people as possible, regardless of their individual circumstances, is every site owner's responsibility---and most especially if your site's content puts it under the stricture of laws like the [U.S. Americans With Disabilities Act (ADA)](https://www.ada.gov/). Even if you don't want to be nice, why risk being sued? Make your site accessible.
+Making your site available to as many people as possible, regardless of their individual circumstances, is every site owner's responsibility --- and most especially if your site's content puts it under the stricture of laws like the [U.S. Americans With Disabilities Act (ADA)](https://www.ada.gov/). Even if you don't want to be nice, why risk being sued? Make your site accessible.
 
-You can't go wrong by following the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/), and most notably avoiding WCAG "A"- and "AA"-level offenses. I won't---can't---try to cover all the WCAG content here. Instead, here is a small sampling of some of the most obvious things you should do to avoid running afoul of WCAG.
+You can't go wrong by following the [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/), and most notably avoiding WCAG "A"- and "AA"-level offenses. I won't --- can't --- try to cover all the WCAG content here. Instead, here is a small sampling of some of the most obvious things you should do to avoid running afoul of WCAG.
 
-**Give `alt` tags to all applicable images**. WCAG cuts you slack if an image is considered exclusively "decorative"---for example, a logo---but otherwise specifies that an image should be accompanied by an `alt` tag that tells a screen reader what the image shows.
+**Give `alt` tags to all applicable images**. WCAG cuts you slack if an image is considered exclusively "decorative" --- for example, a logo --- but otherwise specifies that an image should be accompanied by an `alt` tag that tells a screen reader what the image shows.
 
-**Specify sufficient contrast for text**. A web page is no place to be showing light gray text on a white background, or dark gray text on a black background. When you're choosing your site's text and background colors, run everything through one of the great online contrast-checking sites ([WebAIM's](https://webaim.org/resources/contrastchecker/) is my personal favorite). That goes also---or should I say, especially---for your link colors!
+**Specify sufficient contrast for text**. A web page is no place to be showing light gray text on a white background, or dark gray text on a black background. When you're choosing your site's text and background colors, run everything through one of the great online contrast-checking sites ([WebAIM's](https://webaim.org/resources/contrastchecker/) is my personal favorite). That goes also --- or should I say, especially --- for your link colors!
 
 **Have underlined links**. Speaking of links, yours should have underlining, making them easier to see. I don't use the `text-decoration` method on my site, because I hate text [descenders](https://en.wikipedia.org/wiki/Descender) punching through the underlines; instead, I use CSS to put borders underneath linked text. Regardless of the method you choose, be sure you *do* provide underlining.
 
@@ -102,7 +102,7 @@ There's a long list of items Lighthouse checks for conformance with "Best Practi
 
 **Have the right HTML `doctype`**. If the HTML on your pages begins with an inaccurate `doctype` declaration (or, worse, none), browsers have to "guess" how to show your pages, and that "guessing" process takes extra time. The `doctype` declaration for HTML 5 is simple: `<!DOCTYPE html>`. For the older XHTML and HTML 4.x, the `doctype` declarations are somewhat more tedious.
 
-**Don't use WordPress if you can avoid it**. While there are countless reasons why that's always good advice, the Lighthouse "Best Practices" test adds another: WordPress includes an ancient version of jQuery that has known security vulnerabilities. Automattic, the entity behind WordPress, sticks with this hoary jQuery version to [avoid breaking changes](https://nimblewebdeveloper.com/blog/use-modern-jquery-in-wordpress) with the depressingly high number of extant WordPress sites---many of which are run by people who, to be kind about it, don't manage their sites’ technical components wisely. (As they say on social media, "SMH.”)
+**Don't use WordPress if you can avoid it**. While there are countless reasons why that's always good advice, the Lighthouse "Best Practices" test adds another: WordPress includes an ancient version of jQuery that has known security vulnerabilities. Automattic, the entity behind WordPress, sticks with this hoary jQuery version to [avoid breaking changes](https://nimblewebdeveloper.com/blog/use-modern-jquery-in-wordpress) with the depressingly high number of extant WordPress sites --- many of which are run by people who, to be kind about it, don't manage their sites’ technical components wisely. (As they say on social media, "SMH.”)
 
 ## SEO
 
@@ -125,6 +125,6 @@ allow: /
 
 ## No guarantees, but these will help
 
-By no means can I, or will I, guarantee that following the advice herein will make right everything that may be keeping your site from doing well in Lighthouse. I said it before, and repeat it now: getting "100" scores across the board on Lighthouse takes work, a lot of it, and it might take a good while to achieve---even if your site is light enough on content that it would be a quick download via the most ragged of connections. But it *is* worth it.
+By no means can I, or will I, guarantee that following the advice herein will make right everything that may be keeping your site from doing well in Lighthouse. I said it before, and repeat it now: getting "100" scores across the board on Lighthouse takes work, a lot of it, and it might take a good while to achieve --- even if your site is light enough on content that it would be a quick download via the most ragged of connections. But it *is* worth it.
 
 If you're starting from scores well below "100," don't get discouraged. Start small, with the items I've noted in this article, and see what you can achieve; then move on to the other qualifiers identified in the drop-down items in a Lighthouse audit from the Inspector of a Chromium-based browser. Keep your eyes on the prize: making your site the best you can. It's good for your visitors, and good for you.

@@ -5,7 +5,7 @@ tags:
 - img
 - code
 title: "Forward PaaS"
-description: "Testing the waters on Cloudflare Workers and KV storage—an up-and-coming platform-as-a-service (PaaS) offering."
+description: "Testing the waters on Cloudflare Workers and KV storage — an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
 lastmod: 2022-03-28T13:46:00-05:00
@@ -30,7 +30,7 @@ A year later, Cloudflare [introduced Workers KV](https://blog.cloudflare.com/int
 
 A Cloudflare Worker is free; but, when I originally published this post, using KV to store your website files [cost at least $5/month for a Workers Bundled Plan](https://workers.cloudflare.com/#plans). (By "at least," I mean you have to stay within certain bandwidth limits. Your site probably wouldn't exceed them but, in case it ever gets a burst of viral popularity one day, you'd want to keep these limits in mind.) Then, in a [blog post](https://blog.cloudflare.com/workers-kv-free-tier/) issued on November 16, 2020, Cloudflare announced a new **free tier** for KV storage which, even better, increased the size limit on each KV storage value from 10&nbsp;MB to 25&nbsp;MB. This appeared to change the ballgame where hobbyists’ use of Workers sites is concerned.
 
-That said, I was initially concerned that the free tier might come up short compared to the Workers Bundled Plan because the former still lacked a key performance capability---specifically, lower first-hit latency---that's included with the latter. However, I've since tested the free tier, and the results suggest the difference is negligible for a static site like this one, so I now *think* that shouldn't be a problem. In addition: just for messing around with a Workers site so you can see how it all works before you go all-in, the free plan is a great new option.
+That said, I was initially concerned that the free tier might come up short compared to the Workers Bundled Plan because the former still lacked a key performance capability --- specifically, lower first-hit latency --- that's included with the latter. However, I've since tested the free tier, and the results suggest the difference is negligible for a static site like this one, so I now *think* that shouldn't be a problem. In addition: just for messing around with a Workers site so you can see how it all works before you go all-in, the free plan is a great new option.
 
 **Important**: Still, be sure that you test this fairly extensively with lots of changes before you commit your site to it, because this can result in more "requests" in a given amount of time than the free tier allows.
 {.yellowBox}
@@ -49,9 +49,9 @@ Since I wasn't quite sure upfront how this would work for me, I bought only one 
 
 ----
 
-## Appendix: CFW + KV GHAs---OK?
+## Appendix: CFW + KV GHAs --- OK?
 
-As promised above, here are the GitHub Actions for publishing the site, whether built by Hugo or by Eleventy, to my Cloudflare Worker and its KV storage. You'll find no great difference between them and the GitHub Actions I put in "[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)" for publishing to Firebase---with the possible exception of the fact that I'm using a [Cloudflare-created GitHub Action](https://github.com/cloudflare/wrangler-action) to handle the `wrangler` stuff. Of course, the value of `secrets.CF_API_TOKEN` is stored in the repo's **Secrets** settings in GitHub.
+As promised above, here are the GitHub Actions for publishing the site, whether built by Hugo or by Eleventy, to my Cloudflare Worker and its KV storage. You'll find no great difference between them and the GitHub Actions I put in "[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)" for publishing to Firebase --- with the possible exception of the fact that I'm using a [Cloudflare-created GitHub Action](https://github.com/cloudflare/wrangler-action) to handle the `wrangler` stuff. Of course, the value of `secrets.CF_API_TOKEN` is stored in the repo's **Secrets** settings in GitHub.
 
 ### For Hugo
 

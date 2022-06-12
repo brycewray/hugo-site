@@ -45,13 +45,13 @@ Private remote sync in Preside, which requires a free [preside.io account](https
 
 [^premium]: Don't confuse a preside.io account with the paid [Preside Premium](https://preside.io/PremiumFAQ.html) service. While you definitely will have a preside.io account with Preside Premium, you also can have a preside.io account without it, although its primary use with the free version of Preside is for the specific sync options that require it.
 
-Of these three choices, the MailMate-specific one is what I'll be describing---and amending---in this post.
+Of these three choices, the MailMate-specific one is what I'll be describing --- and amending --- in this post.
 
 Here's some of what Preside's built-in documentation says of private remote sync in general:
 
 > Use this option if you'd like to monitor your Inbox on your own desktop computer or server. When an email arrives, that computer can communicate with our servers to send the notification to your device. .&nbsp;.&nbsp;. The privacy implications are minimal with this mechanism. No account information is stored on our servers, and email information .&nbsp;.&nbsp;. passes through our servers [only] if you choose [for it] to do so. In that case, we don't do anything with the information other than to pass it through to your device.
 
-In this scenario, you keep MailMate running all the time on your Mac---if you're a MailMate user, I bet you do that anyway---and set each of your email accounts to ping Preside, via a command within a PresideNotify MailMate bundle, whenever the account gets a new email.
+In this scenario, you keep MailMate running all the time on your Mac --- if you're a MailMate user, I bet you do that anyway --- and set each of your email accounts to ping Preside, via a command within a PresideNotify MailMate bundle, whenever the account gets a new email.
 
 The [MailMate-related instructions](https://github.com/richwaters/PresideNotify#mailmate--monitoring) in the PresideNotify README tell you what you need to know but, in my moderately humble opinion, are unnecessarily cryptic while also leaving out a couple of "nice-to-have" items. So allow me to give you my own version of the instructions for making this work with MailMate.
 
@@ -94,7 +94,7 @@ Ready? Here we go.
 git clone https://github.com/richwaters/PresideNotify.git PresideNotify
 ```
 
-7. **Open another Finder window**---remember to keep that first one open---and navigate to:\
+7. **Open another Finder window** --- remember to keep that first one open --- and navigate to:\
 `{$User}`/PresideNotify/
 
 8. In that folder, you'll see an item called "Preside.mmBundle," which is the MailMate bundle for PresideNotify. **Copy** it from **that** Finder window to `{$User}`/Library/Application Support/MailMate/Bundles/ in the **other** Finder window.
@@ -157,7 +157,7 @@ sh preside_notify.sh --setup
 20. First, we'll test the notification process which that MailMate bundle will handle:
 	- In MailMate, select any email.
 	- Click **Commands** in the MailMate menu bar. You should see **Preside** among the options, thanks to that PresideNotify MailMate bundle you installed.
-	- From it, select **SendNotification**. That should send a test notification---complete with your chosen audio!---to your Preside app.[^glitch]
+	- From it, select **SendNotification**. That should send a test notification --- complete with your chosen audio! --- to your Preside app.[^glitch]
 
 [^glitch]: If the test notification failed, make sure you have notifications enabled for Preside. If you do, that means something went wacky above, so go back and make sure you didn't mistype something someplace. Remember that every character should be entered exactly as shown. Copy/paste is your friend.
 

@@ -41,14 +41,14 @@ I then posted word of this to a few Discords where I thought it might be useful;
 
 **However**, I'd missed the most sensible solution of all: give the GitHub Discussions their **own separate repo** and point giscus to it from, well, whichever repo may be hosting this site at whatever time. (Thanks to the Astro team's [Sarah Rainsberger](https://twitter.com/sarah11918) for the idea!) So, now, the comments live in [a `comments` repo](https://github.com/brycewray/comments), where they should be eternally safe from my fickleness.
 
-**Later update**: Turned out that, while the previous comments and reactions were indeed back on the site, it wasn't possible for anyone to enter **new** ones---**until** (and, again, I have Sarah Rainsberger to thank for giving me the word that things were amiss) I went back into the giscus website and obtained a new set of variables for the `comments` repo. **Now** it all works again. So that's one more thing you have to do in such a case.
+**Later update**: Turned out that, while the previous comments and reactions were indeed back on the site, it wasn't possible for anyone to enter **new** ones --- **until** (and, again, I have Sarah Rainsberger to thank for giving me the word that things were amiss) I went back into the giscus website and obtained a new set of variables for the `comments` repo. **Now** it all works again. So that's one more thing you have to do in such a case.
 {.yellowBox}
 
 ## Netlify Edge Functions
 
-On April 19, [Netlify](https://netlify.com) [announced](https://www.netlify.com/blog/announcing-serverless-compute-with-edge-functions/) it had become the latest of the Jamstack-savvy hosts to provide edge-computing functions in the form of [Netlify Edge Functions](https://www.netlify.com/products/#netlify-edge-functions), which currently are in beta. Unlike how Netlify's competitors have done it, this entry in the Edge Race [uses Deno](https://deno.com/blog/netlify-edge-functions-on-deno-deploy)---at least theoretically providing better performance and more successful interactivity with various web development frameworks, although that obviously will remain to be seen.
+On April 19, [Netlify](https://netlify.com) [announced](https://www.netlify.com/blog/announcing-serverless-compute-with-edge-functions/) it had become the latest of the Jamstack-savvy hosts to provide edge-computing functions in the form of [Netlify Edge Functions](https://www.netlify.com/products/#netlify-edge-functions), which currently are in beta. Unlike how Netlify's competitors have done it, this entry in the Edge Race [uses Deno](https://deno.com/blog/netlify-edge-functions-on-deno-deploy) --- at least theoretically providing better performance and more successful interactivity with various web development frameworks, although that obviously will remain to be seen.
 
-That same day, [Eleventy](https://11ty.dev) creator/maintainer [Zach Leatherman](https://zachleat.com)---who [Netlify now has working on Eleventy on a full-time basis](https://www.netlify.com/blog/growing-our-open-source-contributions/)---[announced](https://www.11ty.dev/blog/eleventy-edge/) [Eleventy Edge](https://www.11ty.dev/docs/plugins/edge/), a plugin that teams Eleventy 2.0.0-canary.7 or higher and Netlify Edge Functions "to add dynamic content to . . . Eleventy templates."
+That same day, [Eleventy](https://11ty.dev) creator/maintainer [Zach Leatherman](https://zachleat.com) --- who [Netlify now has working on Eleventy on a full-time basis](https://www.netlify.com/blog/growing-our-open-source-contributions/) --- [announced](https://www.11ty.dev/blog/eleventy-edge/) [Eleventy Edge](https://www.11ty.dev/docs/plugins/edge/), a plugin that teams Eleventy 2.0.0-canary.7 or higher and Netlify Edge Functions "to add dynamic content to . . . Eleventy templates."
 
 ## Feed readers and built-in browsers
 
@@ -66,7 +66,7 @@ One day, I became curious about NetNewsWire's lack of this seemingly obvious fea
 
 And to the argument that long-ago versions of the app **did** have built-in browsing, he correctly replied:
 
-> . . . times have changed. Many websites are hostile these days. In 2005, this feature was fine --- but these days it's totally not.
+> . . . times have changed. Many websites are hostile these days. In 2005, this feature was fine  ---  but these days it's totally not.
 
 NetNewsWire has since added a built-in *reader* option, using the open-source [Mercury parser](https://github.com/postlight/mercury-parser). In the same 2019 post, Simmons already anticipated this development, noting that it would provide only an item's **content** "without all the extra junk that is *not* the article you want to read."
 

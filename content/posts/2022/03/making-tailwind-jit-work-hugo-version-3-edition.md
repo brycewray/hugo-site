@@ -4,7 +4,7 @@ tags:
 - post
 - code
 title: "Making Tailwind JIT work with Hugo, the Version 3 edition"
-description: "A Hugo fix for Tailwind CSS v.3—with a surprise bonus."
+description: "A Hugo fix for Tailwind CSS v.3 — with a surprise bonus."
 author: Bryce Wray
 date: 2022-03-06T16:16:00-06:00
 lastmod: 2022-03-08T08:17:00-06:00
@@ -26,7 +26,7 @@ So, [as Daffy Duck would say](https://looneytunes.fandom.com/wiki/Rabbit_Fire_(t
 
 Perhaps you've already read the earlier post and thus don't need a total recap of the problem that occasioned it; but, just in case, here's a TL;DR version:
 
-- [The release of Tailwind 2.1](https://tailwindcss.com/blog/just-in-time-the-next-generation-of-tailwind-css) added **just-in-time (JIT) functionality** to the framework. This eliminated one of its biggest drawbacks up to that point. Before then, Tailwind would generate gigantic CSS files which required an occasionally problematic *purging* process to become suitable for distribution. With JIT---at that time, an opt-in feature---Tailwind created only enough CSS to handle whichever files you were having it "watch." In short, its CSS now was starting small and building up, rather than starting elephantine and trying to shrink.
+- [The release of Tailwind 2.1](https://tailwindcss.com/blog/just-in-time-the-next-generation-of-tailwind-css) added **just-in-time (JIT) functionality** to the framework. This eliminated one of its biggest drawbacks up to that point. Before then, Tailwind would generate gigantic CSS files which required an occasionally problematic *purging* process to become suitable for distribution. With JIT --- at that time, an opt-in feature --- Tailwind created only enough CSS to handle whichever files you were having it "watch." In short, its CSS now was starting small and building up, rather than starting elephantine and trying to shrink.
 - This was a great improvement, but some apps didn't play so cheerfully with Tailwind JIT, and one of them was Hugo. Tailwind-with-JIT either would lock up Hugo or cause it to crash, in each case because Tailwind couldn't find a [`stdin`](https://www.computerhope.com/jargon/s/stdin.htm) file. This would later turn out to be an issue with [PostCSS](https://postcss.org), on which Tailwind typically depends.
 - A few months later, Hugo user [Praveen Juge](https://github.com/praveenjuge) cooked up an ingenious workaround, about which he wrote in "[Use Tailwind JIT with Hugo](https://praveenjuge.com/blog/use-tailwind-jit-with-hugo/)." It made use of a Tailwind 2.x capability that allowed **not** using PostCSS, thus avoiding the problem.
 - However, Juge's approach, which he demonstrated in a [deliberately bare-bones Hugo project](https://github.com/praveenjuge/hugo-tailwind-jit), presented some issues when I tried adding it to an existing Hugo repo.
@@ -69,7 +69,7 @@ Struck's comment proved to be the final bit of information I needed to put toget
 
 ## The code
 
-I'll give you two versions of the `css.html` partial; they vary according to the *production*-side CSS output. One produces **external** CSS, while the other produces **internal** CSS---*i.e.*, `head`-based `<style></style>` stuff. In *development*, each works off Duri's method and produces an external CSS file with a name that changes every time you change any of the CSS that Tailwind is processing.
+I'll give you two versions of the `css.html` partial; they vary according to the *production*-side CSS output. One produces **external** CSS, while the other produces **internal** CSS --- *i.e.*, `head`-based `<style></style>` stuff. In *development*, each works off Duri's method and produces an external CSS file with a name that changes every time you change any of the CSS that Tailwind is processing.
 
 First, the version for *external* CSS in production:
 
@@ -136,7 +136,7 @@ And, for me, one of the biggest benefits of doing Tailwind-on-Hugo this way is t
 
 ## A surprise for Sass supporters
 
-Finally, here's that extra I promised you Sass-on-Hugo fans: this approach gave me an idea for how to enable the use of **[Dart Sass](https://sass-lang.com/dart-sass)** on Hugo, and with **any** Hugo-supporting hosting vendor! That's a biggie[^DartSassEmbedded]---as I'll explain in a future post, after I finish running a few more tests to make sure my eyes aren't deceiving me.
+Finally, here's that extra I promised you Sass-on-Hugo fans: this approach gave me an idea for how to enable the use of **[Dart Sass](https://sass-lang.com/dart-sass)** on Hugo, and with **any** Hugo-supporting hosting vendor! That's a biggie[^DartSassEmbedded] --- as I'll explain in a future post, after I finish running a few more tests to make sure my eyes aren't deceiving me.
 
 Stay tuned.
 

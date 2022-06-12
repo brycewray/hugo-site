@@ -49,7 +49,7 @@ If you want to see the CSS classes I use to style the webmentions, they're on th
 
 <details><summary>Click/tap here to toggle open/close.</summary>
 
-It's almost time to get into the code---but, first, to help you understand exactly what we're trying to obtain and display, here's what the [webmention.io](https://webmention.io) API returns for [one page](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/) on this site:
+It's almost time to get into the code --- but, first, to help you understand exactly what we're trying to obtain and display, here's what the [webmention.io](https://webmention.io) API returns for [one page](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/) on this site:
 
 ```json
 {
@@ -280,7 +280,7 @@ With the contents of `$jsonString` now suitably fixed, we feed them back into `$
 
 ### The web content
 
-Now---finally!---we provide the actual HTML content for the partial, complete with some fairly tortured [`range`](https://gohugo.io/functions/range/) and [`with`](https://gohugo.io/functions/with/) constructions that check for, and provide applicable parts of, the webmentions. And what do I mean by "check for"? Well, if you saw that API snippet I provided above, you'll notice not all parts have the same keys. After all, some items are `reply-to` entries (now `replyTo` since what we did above), some have `content` entries, and so on; thus, we have to check the items for the presence or absence of such entries and then loop accordingly.
+Now --- finally! --- we provide the actual HTML content for the partial, complete with some fairly tortured [`range`](https://gohugo.io/functions/range/) and [`with`](https://gohugo.io/functions/with/) constructions that check for, and provide applicable parts of, the webmentions. And what do I mean by "check for"? Well, if you saw that API snippet I provided above, you'll notice not all parts have the same keys. After all, some items are `reply-to` entries (now `replyTo` since what we did above), some have `content` entries, and so on; thus, we have to check the items for the presence or absence of such entries and then loop accordingly.
 
 First, we begin the overall `with` conditional:
 

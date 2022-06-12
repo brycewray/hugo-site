@@ -3,7 +3,7 @@
 tags:
 - post
 title: "Mixed nuts • February, 2020"
-description: "Another sampling of my random thoughts—lucky you."
+description: "Another sampling of my random thoughts — lucky you."
 author: Bryce Wray
 date: 2020-02-09T16:05:00-06:00
 #lastmod: TBD
@@ -32,7 +32,7 @@ One thing I did *not* expect to occur when I made [this site's repository](https
 
 *For those reviewers out there who believe you can't do long-form writing in [iA Writer](https://ia.net/writer) because it requires you to rename individual chapters’ files when you want to move around scenes&nbsp;.&nbsp;.&nbsp;.* **Really**?
 
-I long in vain for a return to the days when athletes *did not* engage in elaborate celebrations after every frigging accomplishment during a game[^Volleyball]. Celebrate when you win, folks---maybe (*i.e.*, if the win doesn't simply advance you to a .350 record).
+I long in vain for a return to the days when athletes *did not* engage in elaborate celebrations after every frigging accomplishment during a game[^Volleyball]. Celebrate when you win, folks --- maybe (*i.e.*, if the win doesn't simply advance you to a .350 record).
 
 [^Volleyball]: This extends even to *NCAA volleyball*, for God's sake. High-fiving after *every point*?!? Man alive.
 

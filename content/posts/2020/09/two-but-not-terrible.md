@@ -18,15 +18,15 @@ featured_image_caption: |
 
 Here we are, two years in.
 
-Although the site's officially [first post](/posts/2018/09/hardy-press-wp-ssg-with-twist/) is actually dated as a day earlier, in point of fact it was two years ago today---Saturday, September 15, 2018---that I first put brycewray.com on the web.
+Although the site's officially [first post](/posts/2018/09/hardy-press-wp-ssg-with-twist/) is actually dated as a day earlier, in point of fact it was two years ago today --- Saturday, September 15, 2018 --- that I first put brycewray.com on the web.
 
 That was a Day Job ago, a [new grandchild](/posts/2020/03/welcome-sweet-little-early-bird/) ago, a [worldwide pandemic](/posts/2020/03/coherence-covid-19/) ago, a "[dance](/posts/2019/12/sorta-strange-ssg-trip/)" ago, and a "[lurch](/posts/2020/09/goodbye-hello-part-5/)" ago.
 
 The site's existence has allowed me to make new friends and acquaintances in amazing places I'll almost certainly never visit and fascinating fields of expertise in which I'll probably never be more than a curious newbie. I've been able to learn about stuff I didn't even know existed when the site first went live. And I've mostly had a ball doing all of that. I sincerely hope any of you who've spent some time here have enjoyed it, too.
 
-By most sites’ likely standards, this one's traffic is anemic---typically, only a few hundred unique visitors a day, according to [Fathom Analytics](https://usefathom.com)---but, after all, as I've made clear in [the site's "About" page](/about) from the beginning:
+By most sites’ likely standards, this one's traffic is anemic --- typically, only a few hundred unique visitors a day, according to [Fathom Analytics](https://usefathom.com) --- but, after all, as I've made clear in [the site's "About" page](/about) from the beginning:
 
-> Am I anybody special? Nope; just an ordinary working guy who, for decades, has used a multitude of computing devices, operating systems, and apps---and learned a few things (and formed more than a few opinions) along the way. I've been told I can make complicated things easier to understand, and I try to do the same here.
+> Am I anybody special? Nope; just an ordinary working guy who, for decades, has used a multitude of computing devices, operating systems, and apps --- and learned a few things (and formed more than a few opinions) along the way. I've been told I can make complicated things easier to understand, and I try to do the same here.
 
 That's an effort I shall continue to make. This site may be two years old, but I'm determined to make sure it won't be a "[terrible two](https://www.mayoclinic.org/healthy-lifestyle/infant-and-toddler-health/expert-answers/terrible-twos/faq-20058314)."
 

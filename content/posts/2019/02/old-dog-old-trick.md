@@ -20,13 +20,13 @@ featured_image_caption: |
 
 "What? You must be joking! *Darth Vader* was Luke's *father*?"
 
-A few days ago, I felt like that guy: enlightened and glad for it, but chastened for my failure to "try to keep up," as the impatient are wont to say. Yes, it's okay for an old dog to learn a new trick, but when an old dog missed the trick a long time ago---and he was getting paid dog biscuits to *know* that trick---hoo, boy.
+A few days ago, I felt like that guy: enlightened and glad for it, but chastened for my failure to "try to keep up," as the impatient are wont to say. Yes, it's okay for an old dog to learn a new trick, but when an old dog missed the trick a long time ago --- and he was getting paid dog biscuits to *know* that trick --- hoo, boy.
 
 ## Fooling the king of web futz
 
 If there's anything an old web guy likes, it's another way to schnooker Internet Explorer.
 
-Oh, pardon the technospeak; let's say, "to fool" Internet Explorer (which is akin to fooling an addled fly). Said schnookery is to avoid having to kowtow to [IE's ancient, hoary behavior](https://crossbrowsertesting.com/blog/browsers/why-is-internet-explorer-so-bad/) in ways that cause problems for more standards-compliant browsers. As a matter of fact, I learned of one this week---and it works like a charm.
+Oh, pardon the technospeak; let's say, "to fool" Internet Explorer (which is akin to fooling an addled fly). Said schnookery is to avoid having to kowtow to [IE's ancient, hoary behavior](https://crossbrowsertesting.com/blog/browsers/why-is-internet-explorer-so-bad/) in ways that cause problems for more standards-compliant browsers. As a matter of fact, I learned of one this week --- and it works like a charm.
 
 Only thing is, it's nothing new. Holy cow, it's been out there for years. Yet I missed it. Hey, I didn't simply miss it. I didn't have even a clue about it.
 
@@ -38,7 +38,7 @@ Remember that wretched excuse for a WordPress page builder against which [I inve
 
 Part of the way I managed to get this decision, for which I am more grateful than words will express, was to take one of our existing test sites, rebuild it (and, I believe, improve it) in [the page builder I prefer when I have to prefer one](https://elementor.com), and let the appropriate folks check out the results for themselves.
 
-Only thing is, my day job is in [one of those enterprise shops where Windows 7 and, yes, Internet Explorer 11 remain alive and well](https://www.itproportal.com/news/businesses-still-running-windows-7-despite-end-of-service-coming-soon/)---although the vast majority of its denizens use Chrome, the only other browser open to us within the infrastructure---so it behooved me to make sure IE 11 wasn't ruffled by what I had done. After all, I've heard stories that some of our top folks still prefer the browser that our shop sets for auto-launch on each log-in to Windows, and that is none other than IE; so nothing would scotch my hard-won happy path faster than Somebody seeing unexpected things when viewing that newly rebuilt site once it goes to production.
+Only thing is, my day job is in [one of those enterprise shops where Windows 7 and, yes, Internet Explorer 11 remain alive and well](https://www.itproportal.com/news/businesses-still-running-windows-7-despite-end-of-service-coming-soon/) --- although the vast majority of its denizens use Chrome, the only other browser open to us within the infrastructure --- so it behooved me to make sure IE 11 wasn't ruffled by what I had done. After all, I've heard stories that some of our top folks still prefer the browser that our shop sets for auto-launch on each log-in to Windows, and that is none other than IE; so nothing would scotch my hard-won happy path faster than Somebody seeing unexpected things when viewing that newly rebuilt site once it goes to production.
 
 ## Metaphor: IE as a nasal zit
 
@@ -62,7 +62,7 @@ Everything I did in CSS that made it look mildly acceptable on IE made it go bon
 <![endif]-->
 ```
 
-Except I didn't learn until that very morning---and this is where I really feel foolish---that **Internet Explorer had stopped supporting those in IE** ***10***. **Ten**! Hey, sports fans, that was released in *2012*.
+Except I didn't learn until that very morning --- and this is where I really feel foolish --- that **Internet Explorer had stopped supporting those in IE** ***10***. **Ten**! Hey, sports fans, that was released in *2012*.
 
 How did I miss that??
 
@@ -96,7 +96,7 @@ So, children, what did we learn today?
 
 First, don't be ashamed to admit you don't know something. Maybe you should be ashamed that you didn't know enough even to have curiosity about the item of which you were ignorant, but "water under the bridge" and all that rot.
 
-Second, when you belatedly discover the thing you surprisingly had missed, let others know it, too. Life happens and people miss things. They'll appreciate knowing---finally knowing.
+Second, when you belatedly discover the thing you surprisingly had missed, let others know it, too. Life happens and people miss things. They'll appreciate knowing --- finally knowing.
 
 At least, that's my sheepish story and I'm sticking to it. But now you know.
 
@@ -110,8 +110,8 @@ Woof.
 
 *Two things about my [last post](/posts/2019/02/ia-for-io/), an abbreviated revisiting of iA Writer after I'd [previously](/posts/2019/01/blox-sux/) dissed it:*
 
-- *While I wrote much of that post within iA Writer and then transferred it to Ulysses, I did this one* entirely *from within iA Writer. (Whether it, too, will end up within the Ulysses Library is TBD.) While, without question, iA Writer is one opinionated son of a gun---and I have to say that it's weird to read [one](https://www.macstories.net/ios/ia-writer-5-2-better-typography-and-external-library-locations/) [article](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/) [after](http://randsinrepose.com/archives/bear-an-elegant-combination-of-design-whimsy-and-voice/) [another](https://medium.com/@mariusmasalar/ulysses-vs-ia-writer-a-new-comparison-7015c899e883) referring to* ***a software app*** *as "opinionated"---it doth have charms to sooth the savage [static site generator](https://staticgen.com).*
-- *But the shocker is that I've actually spent some time over the last few days writing the WIP in iA Writer, too. Right now, it's an experiment and no more. Then again, about nine months ago, I said that about a Memorial Day weekend tryout of Ulysses, and suddenly I was using it instead of Scrivener, and [committing my beloved WIP to it a few months after that](/posts/2018/09/why-finally-settled-ulysses/). I still have some serious reservations about iA Writer as a repository of anything longer than fluff like what you're reading now---for example, it seems a trifle unstable at times, and I have lost a little writing when it crashed while I've never lost any when Ulysses hit the dirt---but that's what experimentation is for, right?*
+- *While I wrote much of that post within iA Writer and then transferred it to Ulysses, I did this one* entirely *from within iA Writer. (Whether it, too, will end up within the Ulysses Library is TBD.) While, without question, iA Writer is one opinionated son of a gun --- and I have to say that it's weird to read [one](https://www.macstories.net/ios/ia-writer-5-2-better-typography-and-external-library-locations/) [article](https://chrisrosser.net/posts/2019/01/26/ia-writer-5-review/) [after](http://randsinrepose.com/archives/bear-an-elegant-combination-of-design-whimsy-and-voice/) [another](https://medium.com/@mariusmasalar/ulysses-vs-ia-writer-a-new-comparison-7015c899e883) referring to* ***a software app*** *as "opinionated" --- it doth have charms to sooth the savage [static site generator](https://staticgen.com).*
+- *But the shocker is that I've actually spent some time over the last few days writing the WIP in iA Writer, too. Right now, it's an experiment and no more. Then again, about nine months ago, I said that about a Memorial Day weekend tryout of Ulysses, and suddenly I was using it instead of Scrivener, and [committing my beloved WIP to it a few months after that](/posts/2018/09/why-finally-settled-ulysses/). I still have some serious reservations about iA Writer as a repository of anything longer than fluff like what you're reading now --- for example, it seems a trifle unstable at times, and I have lost a little writing when it crashed while I've never lost any when Ulysses hit the dirt --- but that's what experimentation is for, right?*
 
 *In short, stay tuned.*
 

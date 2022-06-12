@@ -21,7 +21,7 @@ featured_image_caption: |
 **Note**: For a [Eleventy](https://11ty.dev)-based solution, see "[Tailwind-to-head with Eleventy](/posts/2021/03/tailwind-head-eleventy/)" from a few weeks later.
 {.yellowBox}
 
-External *vs.* internal---that is the question. At least, it is when you're considering how and where to provide CSS in your website.
+External *vs.* internal --- that is the question. At least, it is when you're considering how and where to provide CSS in your website.
 
 Among the CSS *cognoscenti*, there are endless debates about whether your site's CSS should be in one or more separate files (external) or included in `<style>` tags in each page's HTML `<head>` (internal). One can make a good case for either position, but the internal method *can* obtain better performance scores because it [eliminates at least one render-blocking resource](https://web.dev/render-blocking-resources/).
 
@@ -31,9 +31,9 @@ This post isn't here to tell you whether one's firmly better than the other, sin
 
 ## Goin’ to the `<head>` with Tailwind
 
-This example assumes you already have both Tailwind CSS and [PostCSS](https://postcss.org) working successfully, with the `postcss.config.js` file and your main CSS file---called `index.css` in the example---in the proper places in your Hugo project. (I also suggest, although some will disagree, that you set the project's `package.json` so that, even during development, the [Node.js](https://nodejs.org) required by Tailwind and PostCSS is in **production** mode. Otherwise, the [PurgeCSS](https://purgecss.com) functionality built into Tailwind since v.2.0 won't be running and, thus, the CSS that ends up in your HTML's `<head>` will be massive.)
+This example assumes you already have both Tailwind CSS and [PostCSS](https://postcss.org) working successfully, with the `postcss.config.js` file and your main CSS file --- called `index.css` in the example --- in the proper places in your Hugo project. (I also suggest, although some will disagree, that you set the project's `package.json` so that, even during development, the [Node.js](https://nodejs.org) required by Tailwind and PostCSS is in **production** mode. Otherwise, the [PurgeCSS](https://purgecss.com) functionality built into Tailwind since v.2.0 won't be running and, thus, the CSS that ends up in your HTML's `<head>` will be massive.)
 
-**Note**: I purposely am **not** straying into the whole realm of [separating your CSS into critical and non-critical segments](https://web.dev/extract-critical-css/), which is well beyond the purposely limited scope of this post---**except** to say that, if you're properly using PurgeCSS with Tailwind, your resulting CSS probably is small enough that it essentially makes the whole question moot. At least, that's been my experience when using Tailwind and PurgeCSS on both the Hugo and [Eleventy](https://11ty.dev) SSGs.
+**Note**: I purposely am **not** straying into the whole realm of [separating your CSS into critical and non-critical segments](https://web.dev/extract-critical-css/), which is well beyond the purposely limited scope of this post --- **except** to say that, if you're properly using PurgeCSS with Tailwind, your resulting CSS probably is small enough that it essentially makes the whole question moot. At least, that's been my experience when using Tailwind and PurgeCSS on both the Hugo and [Eleventy](https://11ty.dev) SSGs.
 {.yellowBox}
 
 To let you see clearly the differences between doing this as external CSS and doing it as internal CSS, here is a sample of each. First, **external**:
@@ -68,4 +68,4 @@ Finally, as a bonus, here's how you do it if you prefer to use [SCSS](https://sa
   {{ end }}
 ```
 
-Whichever way you roll on each choice above---external *vs.* internal, Tailwind/PostCSS *vs.* SCSS---here's hoping this is useful information for you Hugo aficionados.
+Whichever way you roll on each choice above --- external *vs.* internal, Tailwind/PostCSS *vs.* SCSS --- here's hoping this is useful information for you Hugo aficionados.

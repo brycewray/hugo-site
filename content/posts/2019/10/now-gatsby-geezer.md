@@ -53,7 +53,7 @@ Not until The Dragon is slain.
 
 Why? Because this site now comes to you via the Great [Rebeccapurple](https://css-tricks.com/rebbeccapurple-663399/) Whale known as [Gatsby](https://gatsbyjs.org).
 
-Yep, I did it. This [geezer](/posts/2019/09/now-im-sixty-four/) got Gatsby to work, at long last---[despite](/posts/2019/07/why-staying-with-hugo/) [all](/posts/2019/07/lessons-learned/) [evidence](/posts/2019/09/why-left-hugo-eleventy/) to the contrary.
+Yep, I did it. This [geezer](/posts/2019/09/now-im-sixty-four/) got Gatsby to work, at long last --- [despite](/posts/2019/07/why-staying-with-hugo/) [all](/posts/2019/07/lessons-learned/) [evidence](/posts/2019/09/why-left-hugo-eleventy/) to the contrary.
 
 ## Purple reign
 
@@ -77,7 +77,7 @@ Also, I still can't get [MDX](https://mdxjs.com) to work in Gatsby, at least not
 
 Still&nbsp;.&nbsp;.&nbsp;.
 
-Considering where I was just a few weeks back---repeatedly flailing away at an elusive solution and unable to make any headway or even imagine how I *could* make any---I am elated to be here.
+Considering where I was just a few weeks back --- repeatedly flailing away at an elusive solution and unable to make any headway or even imagine how I *could* make any --- I am elated to be here.
 
 There are few things more satisfying to a brain wired like mine than fitting the last piece into an especially vexing puzzle.
 

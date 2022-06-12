@@ -11,7 +11,7 @@ date: 2022-06-07T08:59:00-05:00
 #initTextEditor: iA Writer
 ---
 
-Last week, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators/) (SSG) hit The Big One-Zero-Zero---namely, **[version 0.100.0](https://github.com/gohugoio/hugo/releases/tag/v0.100.0)**, but I'll call it *0.100.x* given that it's [since been tweaked to 0.100.1](https://github.com/gohugoio/hugo/releases/tag/v0.100.1).
+Last week, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators/) (SSG) hit The Big One-Zero-Zero --- namely, **[version 0.100.0](https://github.com/gohugoio/hugo/releases/tag/v0.100.0)**, but I'll call it *0.100.x* given that it's [since been tweaked to 0.100.1](https://github.com/gohugoio/hugo/releases/tag/v0.100.1).
 
 *(No, it **didn't** go to v.1.0. More on that at the end.)*
 
@@ -90,7 +90,7 @@ But, starting with Hugo 0.100.0, you get the desired indenting:
 - [Why buy from us?](#)
 - [What our customers say](#)
 
-**Note**: I purposely altered the example from the release notes, which showed a shortcode that was in Markdown---although, as pointed out earlier, that wasn't possible before v.0.100.0 in the first place. Um, oops?
+**Note**: I purposely altered the example from the release notes, which showed a shortcode that was in Markdown --- although, as pointed out earlier, that wasn't possible before v.0.100.0 in the first place. Um, oops?
 {.yellowBox}
 
 ## More goodies
@@ -99,7 +99,7 @@ All of this is possible because, as of v.0.100.0, Hugo's [`$page.RenderString` f
 
 {{< stweet "1531705641739460612" >}}
 
-Finally, 0.100.0 added a new [`resources.Copy` function](https://gohugo.io/hugo-pipes/introduction/#copy-a-resource) to Hugo's asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/). The documentation says it's "possibly most useful for renaming things"---as in this example (also from the documentation), in which Hugo's [built-in image-processing capability](https://gohugo.io/content-management/image-processing/) comes into play:
+Finally, 0.100.0 added a new [`resources.Copy` function](https://gohugo.io/hugo-pipes/introduction/#copy-a-resource) to Hugo's asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/). The documentation says it's "possibly most useful for renaming things" --- as in this example (also from the documentation), in which Hugo's [built-in image-processing capability](https://gohugo.io/content-management/image-processing/) comes into play:
 
 ```go-html-template
 {{ $resized := $image.Resize "400x400" |  resources.Copy "images/mynewname.jpg" }}

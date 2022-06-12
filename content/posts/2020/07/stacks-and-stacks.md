@@ -26,7 +26,7 @@ So, for your geeky pleasure, here goes nothing.
 
 ## Static site generator (SSG)
 
-2019-07-05: [Hugo](https://gohugo.io) 0.55.6. At the time, I *thought* I was about to chuck Hugo for [Gatsby](https://gatsbyjs.org). [Didn't quite go that way](/posts/2019/07/why-staying-with-hugo/). For full details on my oft-shifting SSG loyalties---the "Dance"---in the latter half of 2019 in particular, see my [2019 year-end wrap-up](/posts/2019/12/sorta-strange-ssg-trip/).
+2019-07-05: [Hugo](https://gohugo.io) 0.55.6. At the time, I *thought* I was about to chuck Hugo for [Gatsby](https://gatsbyjs.org). [Didn't quite go that way](/posts/2019/07/why-staying-with-hugo/). For full details on my oft-shifting SSG loyalties --- the "Dance" --- in the latter half of 2019 in particular, see my [2019 year-end wrap-up](/posts/2019/12/sorta-strange-ssg-trip/).
 
 2020-07-05: [Eleventy](https://11ty.dev) 0.11.0.
 
@@ -66,7 +66,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: [Sourcetree](https://www.sourcetreeapp.com/).
 
-2020-07-05: [Fork](https://git-fork.com/) for macOS, [Visual Studio Code](https://code.visualstudio.com/), and---when the mood strikes me---just plain ol’ Git CLI commands in a terminal window.
+2020-07-05: [Fork](https://git-fork.com/) for macOS, [Visual Studio Code](https://code.visualstudio.com/), and --- when the mood strikes me --- just plain ol’ Git CLI commands in a terminal window.
 
 ## Primary text editor for posts
 

@@ -39,7 +39,7 @@ Then, a few days ago, I learned on the [Cloudflare Workers Developers Discord co
 
 [^GAterm]: *GA*, in this case, means *general availability*.
 
-The upshot: to CFP aficionados---and also any who may be curious about giving the platform a try but are understandably leery about the drawbacks of CFP's current build process---I say, "Hang in there. Help is on the way. I've seen it and it works."
+The upshot: to CFP aficionados --- and also any who may be curious about giving the platform a try but are understandably leery about the drawbacks of CFP's current build process --- I say, "Hang in there. Help is on the way. I've seen it and it works."
 
 ## Remember the sitemap
 

@@ -46,4 +46,4 @@ In my tests so far, the ASWA site's performance is so-so, especially compared to
 
 On one of my at-least-daily visits to the [Eleventy Discord](https://www.11ty.dev/blog/discord/), I noticed a link to "[Emails, not comments](https://luke.work/blog/2021/07/alternative-to-comments/)" by [Luke Harris](https://twitter.com/lkhrs). The article described how, having decided not to have a commenting platform on his Eleventy site anymore, Mr. Harris made it a one-click action for anyone to reply to his articles by email. (He'd probably want me to add that he got the idea from [Kev Quirk's site](https://kevq.uk/), as the linked article duly notes.)
 
-The process was both appealingly simple and, to me, geekily interesting; so I stole, um, adopted his approach---as you can see at the bottom of this post, as well as all other pages on the site using the same template. Thank you, sir!
+The process was both appealingly simple and, to me, geekily interesting; so I stole, um, adopted his approach --- as you can see at the bottom of this post, as well as all other pages on the site using the same template. Thank you, sir!

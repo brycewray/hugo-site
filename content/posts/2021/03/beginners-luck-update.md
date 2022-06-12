@@ -33,22 +33,22 @@ The Eleventy starters are distinguished by two things: which of the [numerous El
 
 So, here we go.
 
-- **[eleventy_solo_starter](https://github.com/brycewray/eleventy_solo_starter)**---JavaScript templating; [Tailwind CSS](https://tailwindcss.com), which as of version 2.1.0 includes the just-in-time (JIT) compiler (for details about the advantages of this experimental addition to Tailwind, refer to the [official announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) as well as [my related post](/posts/2021/03/jit-game-changer-tailwind-css/)). [View the demo](https://eleventy-solo-starter-original.vercel.app/).
-- **[eleventy_solo_starter_njk](https://github.com/brycewray/eleventy_solo_starter_njk)**---[Nunjucks](https://mozilla.github.io/nunjucks) templating; Tailwind CSS, now with the JIT compiler. [View the demo](https://eleventy-solo-starter-njk.vercel.app/).
-- **[eleventy_solo_starter_scss](https://github.com/brycewray/eleventy_solo_starter_scss)** *(**new**)*---JavaScript templating; [Sass/SCSS](https://sass-lang.com). [View the demo](https://eleventy-solo-starter-scss.vercel.app).
-- **[eleventy_solo_starter_njk_scss](https://github.com/brycewray/eleventy_solo_starter_njk_scss)** *(**new**)*---Nunjucks templating; Sass/SCSS. [View the demo](https://eleventy-solo-starter-njk-scss.vercel.app).
+- **[eleventy_solo_starter](https://github.com/brycewray/eleventy_solo_starter)** --- JavaScript templating; [Tailwind CSS](https://tailwindcss.com), which as of version 2.1.0 includes the just-in-time (JIT) compiler (for details about the advantages of this experimental addition to Tailwind, refer to the [official announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) as well as [my related post](/posts/2021/03/jit-game-changer-tailwind-css/)). [View the demo](https://eleventy-solo-starter-original.vercel.app/).
+- **[eleventy_solo_starter_njk](https://github.com/brycewray/eleventy_solo_starter_njk)** --- [Nunjucks](https://mozilla.github.io/nunjucks) templating; Tailwind CSS, now with the JIT compiler. [View the demo](https://eleventy-solo-starter-njk.vercel.app/).
+- **[eleventy_solo_starter_scss](https://github.com/brycewray/eleventy_solo_starter_scss)** *(**new**)* --- JavaScript templating; [Sass/SCSS](https://sass-lang.com). [View the demo](https://eleventy-solo-starter-scss.vercel.app).
+- **[eleventy_solo_starter_njk_scss](https://github.com/brycewray/eleventy_solo_starter_njk_scss)** *(**new**)* --- Nunjucks templating; Sass/SCSS. [View the demo](https://eleventy-solo-starter-njk-scss.vercel.app).
 
 ## Hugo starters
 
 For now, I still have only two Hugo starters. This is for two reasons: there's only one form of templating in Hugo (Go-based templating); and the Tailwind JIT compiler isn't yet compatible with Hugo. One is based on Tailwind CSS (again, no JIT) and the other on Sass/SCSS. Once the Hugo-*vs.*-JIT issues are resolved, I'll likely add a JIT-equipped Hugo starter, too.
 
-- [hugo_twcss](https://github.com/brycewray/hugo_twcss)---Tailwind CSS. [View the demo](https://hugo-twcss.vercel.app).
-- [hugo_solo](https://github.com/brycewray/hugo_solo)---Sass/SCSS. [View the demo](https://hugo-solo.vercel.app).
+- [hugo_twcss](https://github.com/brycewray/hugo_twcss) --- Tailwind CSS. [View the demo](https://hugo-twcss.vercel.app).
+- [hugo_solo](https://github.com/brycewray/hugo_solo) --- Sass/SCSS. [View the demo](https://hugo-solo.vercel.app).
 
 ## Enjoy
 
 As usual, I've learned a few things while working on these, including the need to fix some embarrassing oversights in the older ones. Regardless of your proficiency with Eleventy and/or Hugo, perhaps you'll find them similarly educational. Have fun with them.
 
-If you use one of the repos, you'll probably want to "watch" that repo for changes (which have been frequent of late). Also, please [let me know](/contact)---including with [GitHub issues](https://guides.github.com/features/issues/), if you prefer---if you encounter difficulties with any of them.
+If you use one of the repos, you'll probably want to "watch" that repo for changes (which have been frequent of late). Also, please [let me know](/contact) --- including with [GitHub issues](https://guides.github.com/features/issues/), if you prefer --- if you encounter difficulties with any of them.
 
 Happy SSG-ing!

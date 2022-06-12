@@ -17,7 +17,7 @@ featured_image_caption: |
   <span class="caption">Mark Text logo sourced from <a href="https://marktext.app/">Mark Text website</a></span>
 ---
 
-If you're going to have a website which, like this one, is powered by a [static site generator](https://jamstack.org/generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format---the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down/).
+If you're going to have a website which, like this one, is powered by a [static site generator](https://jamstack.org/generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format --- the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down/).
 
 The apps I've used for managing this site's content have included all of the following, in descending order of how much I've used them for this purpose:
 
@@ -34,7 +34,7 @@ The answer to that one involves some navel-gazing.
 
 One thing you do when you have analytics set up for your site, as I've done for this site with [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate link), is keeping track of which sites are referring visitors to you. A few days ago, I noticed a small number of referrals coming from a site of which I'd never heard, although it's been around since 2010: Linux Rig.[^offLine] It celebrates not only [Linux](https://www.linux.com/what-is-linux/) in particular but also [free open-source software (FOSS)](https://itsfoss.com/what-is-foss/) in general.
 
-[^offLine]: **Update, 2022-02-12**: It appears the Linux Rig site is no longer available, so I’ve removed its links from this page.
+[^offLine]: **Update, 2022‑02‑12**: It appears the Linux Rig site is no longer available, so I’ve removed its links from this page.
 
 The referral seemed odd since I rarely, if ever, mention Linux here; so, my curiosity aroused, I did some searching and, eventually, came across the source of the referral link. It was a brief piece which had been prompted by my publication of, and borrowed the title from, what as of now is this site's most-viewed article, "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)." It even was dated from a few days after I'd posted the original.
 
@@ -58,7 +58,7 @@ I'm mentioning writing, specifically, because:
 - I already use the cross-platform and (mostly) FOSS Visual Studio Code for code editing and source control, although I also own non-FOSS tools for each and use them when I so choose.
 - While I've chosen [Affinity](https://affinity.serif.com)'s non-FOSS macOS-based apps for creating and editing graphics files, there are plenty of reasonably suitable FOSS/cross-platform substitutes, notably [GIMP](https://gimp.org) for bitmap graphics and [Inkscape](https://inkscape.org) for vector graphics. I don't *prefer* them, but I've used them plenty of times in the past and could again if necessary.
 
-Back to the writing: about the only FOSS/cross-platform option I've ever seen that sounded even halfway palatable to me was Mark Text. I've tried it on occasion, but only briefly---and never to try to write anything for this site.
+Back to the writing: about the only FOSS/cross-platform option I've ever seen that sounded even halfway palatable to me was Mark Text. I've tried it on occasion, but only briefly --- and never to try to write anything for this site.
 
 .&nbsp;.&nbsp;. until now, that is.
 
@@ -74,7 +74,7 @@ There are a number of Mark Text reviews out there, such as:
 
 I suggest reading those to get a fuller picture of Mark Text than what you're about to get from me, which is simply about how it worked for me in writing this particular content for the site.
 
-(By the way, I have no concern about the fact that Mark Text---like VS Code and many, many other apps---is based on [Electron](https://www.electronjs.org/), which is *why* it's cross-platform. Those who like to run their computers on bare minimums of RAM may care, and those who hate the idea that someone might not take the time and effort to code for their beloved platform may care. I fit neither of those categories. I don't care.)
+(By the way, I have no concern about the fact that Mark Text --- like VS Code and many, many other apps --- is based on [Electron](https://www.electronjs.org/), which is *why* it's cross-platform. Those who like to run their computers on bare minimums of RAM may care, and those who hate the idea that someone might not take the time and effort to code for their beloved platform may care. I fit neither of those categories. I don't care.)
 
 As in that first review I mentioned above, Mark Text is most commonly compared to Typora. Each tries to make writing Markdown look almost as pretty as in a rich-text editing environment like that of Microsoft Word, LibreOffice, or Google Docs. I might note that Ulysses does that to some extent, as well. While that's probably a laudable goal for regular, non-SSG-ish writing, I find that how Mark Text has achieved that gets in my way.
 
@@ -96,13 +96,13 @@ Now, I should note: that's how it works in Mark Text's *standard* appearance mod
 
 I will say that the [documentation](https://github.com/marktext/marktext/blob/develop/docs/README.md) is decent enough, but you have to dig into the project's GitHub issues to learn that, for example, you can't edit or create a *theme* so you can make the app look as you want. (This bothers me because none of the supplied themes work well for my eyes, especially where body text is concerned.)
 
-Finally---and this is true for many cross-platform apps including, yes, VS Code---Mark Text is simply clunkier (quirkier?) to use than a Mac-native app, whether we're talking about how copy/paste operations work, or how you manage files from within the app, or how certain key combinations work as opposed to how you would *expect* them to work. I would guess hard-core Windows users would have similar reservations after having become used to Windows-native apps. That's a largely unavoidable side effect of being cross-platform, so you shouldn't discount Mark Text because of that.
+Finally --- and this is true for many cross-platform apps including, yes, VS Code --- Mark Text is simply clunkier (quirkier?) to use than a Mac-native app, whether we're talking about how copy/paste operations work, or how you manage files from within the app, or how certain key combinations work as opposed to how you would *expect* them to work. I would guess hard-core Windows users would have similar reservations after having become used to Windows-native apps. That's a largely unavoidable side effect of being cross-platform, so you shouldn't discount Mark Text because of that.
 
 If I were in a position where I *had* to use Mark Text for my Markdown-related purposes, I certainly could. I simply would prefer otherwise.
 
 ## The future?
 
-The biggest problem you can have with relying on a FOSS app for "mission-critical" stuff, to use that baleful business term, comes if those who develop the app---occasionally, that's a team of one---can no longer spend the time to keep it going. After all, it's often a hobby project. You can hardly blame the devs, since they're not getting paid for it and they do have Day Jobs. Even though Mark Text has asked for donations, in recent months its devs have said things like [this, from last November](https://github.com/marktext/marktext/issues/1290#issuecomment-726744803):
+The biggest problem you can have with relying on a FOSS app for "mission-critical" stuff, to use that baleful business term, comes if those who develop the app --- occasionally, that's a team of one --- can no longer spend the time to keep it going. After all, it's often a hobby project. You can hardly blame the devs, since they're not getting paid for it and they do have Day Jobs. Even though Mark Text has asked for donations, in recent months its devs have said things like [this, from last November](https://github.com/marktext/marktext/issues/1290#issuecomment-726744803):
 
 > Unfortunately, Mark Text is currently not maintained and we currently haven't time for it.
 

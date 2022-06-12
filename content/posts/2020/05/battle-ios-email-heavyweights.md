@@ -22,7 +22,7 @@ Nearly a year since my [first encounter](/posts/2019/06/ahoy-mate/) with [MailMa
 
 Largely since I'm *not* a heavy email user and [purposely don't use my go-to phone for any business email purposes](https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/), I've gone back and forth between using and not using MailMate. To some degree, how firmly I've stayed with the app has depended on how I felt at any given time about Apple Mail on macOS. So, since the Catalina (macOS 10.15) version has had [its](https://appleinsider.com/articles/19/10/12/missing-message-issues-plague-mail-users-in-macos-catalina) [share](https://9to5mac.com/2020/02/05/apple-pushed-fix-for-mail-app-encryption-bug-with-latest-macos-catalina-release/) [of](https://www.reddit.com/r/MacOS/comments/f3a15y/mail_app_in_catalina_1015_acting_strange/) [problems](https://forums.macrumors.com/threads/is-the-general-consensus-here-to-use-apple-mail.2190390/post-28121466), my macOS email activity is back to essentially all MailMate, all the time.
 
-Fair warning to the uninitiated: MailMate isn't "pretty." Its interface is busy and dated-looking (although, like just about everything else in the app, highly customizable). **But** MailMate **is** solid, powerful, ultra-compliant with email standards, and loaded with more features than any user could ever possibly exhaust. And that's exactly how its creator and lone developer---Benny Kjær Nielsen, Ph.D in computer science---wants it. The same goes for the true power users[^OtherMMReviews] whom his work targets.
+Fair warning to the uninitiated: MailMate isn't "pretty." Its interface is busy and dated-looking (although, like just about everything else in the app, highly customizable). **But** MailMate **is** solid, powerful, ultra-compliant with email standards, and loaded with more features than any user could ever possibly exhaust. And that's exactly how its creator and lone developer --- Benny Kjær Nielsen, Ph.D in computer science --- wants it. The same goes for the true power users[^OtherMMReviews] whom his work targets.
 
 [^OtherMMReviews]: Since [my article](/posts/2019/06/ahoy-mate) last year wasn't deep enough to give MailMate its due, please also check out the more recent "[MailMate](https://tyler.io/mailmate/)" and "[Additional MailMate Tips](https://tyler.io/additional-mailmate-tips/)" by Tyler Hall, and "[MailMate Review](https://canion.me/mailmate-review)" by Andrew Canion.
 
@@ -32,9 +32,9 @@ But what about when those power users are away from their Macs and depending on 
 
 Well, let's get the bad news out of the way right now. There isn't, and won't be, an iOS version of MailMate.
 
-Dr. Nielsen has told hopeful inquirers more than once over the years that [it's just not a project he's prepared to undertake](https://freron.lighthouseapp.com/projects/58672/tickets/908-mailmate-for-ios). Given the high standard he's continually met with the original article, it's safe to say he---and MailMate's small but rabid fan base---wouldn't be satisfied with any less for an iOS version. The dev effort required to make a *worthy* iOS holder of the MailMate name would tax a *team* of devs, far less a one-man operation.
+Dr. Nielsen has told hopeful inquirers more than once over the years that [it's just not a project he's prepared to undertake](https://freron.lighthouseapp.com/projects/58672/tickets/908-mailmate-for-ios). Given the high standard he's continually met with the original article, it's safe to say he --- and MailMate's small but rabid fan base --- wouldn't be satisfied with any less for an iOS version. The dev effort required to make a *worthy* iOS holder of the MailMate name would tax a *team* of devs, far less a one-man operation.
 
-That leaves to others the tall order of trying to make an iOS mail client of similar excellence, especially where most MailMate users’ heavy-duty requirements are concerned---requirements such as, just to name a few:
+That leaves to others the tall order of trying to make an iOS mail client of similar excellence, especially where most MailMate users’ heavy-duty requirements are concerned --- requirements such as, just to name a few:
 
 - Handling massive amounts of emails, each of which must be retained as long as needed *and* filed exactly as needed, preferably automatically.
 - Seamless integration of multiple accounts.
@@ -52,7 +52,7 @@ Over and above the complexity involved, an iOS-for-MailMate-users candidate prob
 
 [^NotClickbait]: Similarly: if power equated to popularity, every Mac user would know about MailMate. The truth is quite different. MailMate isn't that well-known outside its circle, so it's not widely reviewed. A mention of MailMate just isn't clickbait, so most websites give it only passing notice at best. I can find no major-site reviews of MailMate newer than about 2016.
 
-Instead, when you start searching for reviews of third-party iOS email clients, the same names keep coming up: [Spark](https://sparkmailapp.com), [Outlook](https://apps.apple.com/us/app/microsoft-outlook/id951937596), [Edison Mail](https://mail.edison.tech/), [Canary](https://canarymail.io/), [Airmail](https://airmailapp.com/), [Postbox](https://www.postbox-inc.com/), and so forth. But none of these comes close to---or was ever meant to be---a heavy-lifter email app like MailMate.
+Instead, when you start searching for reviews of third-party iOS email clients, the same names keep coming up: [Spark](https://sparkmailapp.com), [Outlook](https://apps.apple.com/us/app/microsoft-outlook/id951937596), [Edison Mail](https://mail.edison.tech/), [Canary](https://canarymail.io/), [Airmail](https://airmailapp.com/), [Postbox](https://www.postbox-inc.com/), and so forth. But none of these comes close to --- or was ever meant to be --- a heavy-lifter email app like MailMate.
 
 Still, there are two long-standing iOS email clients who do give it a run.
 
@@ -116,7 +116,7 @@ MailMate users don't need their hands held very often but, when they do have que
 
 In reviews on the iOS App Store that go back several years, both apps’ users almost uniformly proclaim the support to be superb, regardless of the issues raised; and my own anecdotal information (both my own experiences and those from others with whom I've communicated about this topic) goes along with that.
 
-(**However**, please note these apps are eerily similar to MailMate in another way, and a bad one: the online documentation. While Dr. Nielsen's [documentation for MailMate](https://manual.mailmate-app.com/) is ultra-comprehensive, it's also spare on screen captures, much less current ones, and you may find certain items hard to locate within it. As for [AltaMail](https://mobile.eurosmartz.com/help/app/am/) and [Preside](https://preside.io/faq.html), each app's documentation comes only as numerous FAQs, although not *called* "FAQs" in AltaMail's case, and has **no** screen captures. AltaMail comes up even more poorly by comparison, in the haphazard organization of---and, I think, lack of detail in---its documentation.)
+(**However**, please note these apps are eerily similar to MailMate in another way, and a bad one: the online documentation. While Dr. Nielsen's [documentation for MailMate](https://manual.mailmate-app.com/) is ultra-comprehensive, it's also spare on screen captures, much less current ones, and you may find certain items hard to locate within it. As for [AltaMail](https://mobile.eurosmartz.com/help/app/am/) and [Preside](https://preside.io/faq.html), each app's documentation comes only as numerous FAQs, although not *called* "FAQs" in AltaMail's case, and has **no** screen captures. AltaMail comes up even more poorly by comparison, in the haphazard organization of --- and, I think, lack of detail in --- its documentation.)
 
 ### No funny business, period
 
@@ -128,13 +128,13 @@ MailMate users also are used to a complete lack of privacy-compromising shenanig
 
 ### Totally customizable look-and-feel
 
-MailMate users want function first, "pretty" last---and what degree of "pretty" they'll allow is something they want to control. It's what they're used to having from MailMate itself. So they'll be quite comfortable with how extensively you can customize each app's appearance in many different regards: which icons appear and when, color schemes, display typefaces, and so on. You *can't* make either look quite as bare-bones in appearance as many a "pretty" app; but, after all, that's almost certainly not of interest to anyone who'd want to use MailMate, AltaMail, or Preside.[^Antiquated]
+MailMate users want function first, "pretty" last --- and what degree of "pretty" they'll allow is something they want to control. It's what they're used to having from MailMate itself. So they'll be quite comfortable with how extensively you can customize each app's appearance in many different regards: which icons appear and when, color schemes, display typefaces, and so on. You *can't* make either look quite as bare-bones in appearance as many a "pretty" app; but, after all, that's almost certainly not of interest to anyone who'd want to use MailMate, AltaMail, or Preside.[^Antiquated]
 
 [^Antiquated]: I did, however, hear from one otherwise enthusiastic Preside user who described its UI as "lacking and dated" when compared to other email client apps.
 
 One appearances-related drawback these apps share when compared to MailMate is that neither allows use of [Markdown](https://daringfireball.net/projects/markdown) in composing emails.[^MDinMM] However, this isn't the big deal it might otherwise be, since Markdown's requirement to enter certain characters for formatting can be more of a hassle on iOS devices’ touchscreens than with a Mac keyboard. Indeed, some MailMate users say they're *glad* not to deal with Markdown in iOS apps, email or otherwise.
 
-[^MDinMM]: Remember that MailMate doesn't simply *allow* composing in Markdown---[it *requires* it](https://manual.mailmate-app.com/).
+[^MDinMM]: Remember that MailMate doesn't simply *allow* composing in Markdown --- [it *requires* it](https://manual.mailmate-app.com/).
 
 ## Fatal flaw?
 
@@ -169,7 +169,7 @@ And you have to figure it out on your own, because this is all you get from the 
 >
 > Tap on the "Folders" button in the left side panel. Then tap on the folder button beside an email account to show the folders. You may have to tap the left arrow beside the folder heading to go back to the correct account.
 
-So, if you're trying out AltaMail and want to navigate through multiple folders in one session, now you know how to do it---**but** only from the steps I gave above, **not** from the documentation. It would be one thing if AltaMail were sufficiently popular that there were a million web pages out there with "The AltaMail manual that EuroSmartz forgot to write" kind of help for you from other users, but that's just not reality.
+So, if you're trying out AltaMail and want to navigate through multiple folders in one session, now you know how to do it --- **but** only from the steps I gave above, **not** from the documentation. It would be one thing if AltaMail were sufficiently popular that there were a million web pages out there with "The AltaMail manual that EuroSmartz forgot to write" kind of help for you from other users, but that's just not reality.
 
 As for the procedure itself: it's clunky even on an iPad in landscape view, where you have all the room in the world to play this game. On an iPhone in portrait view, though, it's a now-you-see-it-now-you-don't mess, even if you're sitting safely in a chair with nothing else going on around you; I'd especially hate to try it while walking or as a car passenger.
 
@@ -177,25 +177,25 @@ Were I to gain control over AltaMail's development team through some bizarre cos
 
 ### Preside: You want it *when*?!?
 
-Where Preside is concerned, the elephant in the room for me is *notifications*---but, if you're a less "twitchy" email user than I, you may not even care.
+Where Preside is concerned, the elephant in the room for me is *notifications* --- but, if you're a less "twitchy" email user than I, you may not even care.
 
-In Preside's FAQs-serving-as-documentation, its dev makes what I concede is a [well-argued case](https://preside.io/faq.html#Notifications) against even using notifications *at all*, since he believes that *all* notifications compromise one's productivity. As a result, you won't be surprised to know that Preside is lacking where notifications are concerned---at least, *real-time* notifications.[^HolyMail]
+In Preside's FAQs-serving-as-documentation, its dev makes what I concede is a [well-argued case](https://preside.io/faq.html#Notifications) against even using notifications *at all*, since he believes that *all* notifications compromise one's productivity. As a result, you won't be surprised to know that Preside is lacking where notifications are concerned --- at least, *real-time* notifications.[^HolyMail]
 
 [^HolyMail]: As I've [explained before](/posts/2019/05/the-holy-mail/), I wanted real-time email notifications in iOS badly enough to switch email vendors after over a decade. My choice, FastMail, [worked with Apple](https://blog.fastmail.com/2015/07/17/push-email-now-available-in-ios-mail) to enable real-time notifications capability for its servers’ emails in the Apple Mail app.
 
-The two Preside notifications options that were readily available to me[^OtherMethods], **Background iOS Fetch** and **Assisted iOS Fetch** (the latter requires a free online account), both provided considerably tardier notifications than either Apple Mail or AltaMail. The gap in my testing ranged as long as forty-eight minutes with **Background iOS Fetch**, the less "active" of the two choices; however, it *sometimes* was as short as only a few seconds---but more normally was a few minutes---with **Assisted iOS Fetch**.
+The two Preside notifications options that were readily available to me[^OtherMethods], **Background iOS Fetch** and **Assisted iOS Fetch** (the latter requires a free online account), both provided considerably tardier notifications than either Apple Mail or AltaMail. The gap in my testing ranged as long as forty-eight minutes with **Background iOS Fetch**, the less "active" of the two choices; however, it *sometimes* was as short as only a few seconds --- but more normally was a few minutes --- with **Assisted iOS Fetch**.
 
 [^OtherMethods]: The dev also provides three other notification options, none of which helped me any. **Notifications Remote (provider)** requires using a [GMail](https://www.google.com/gmail) or [Office 365](https://www.office.com) account, so that left me out. **Notifications Remote (private)** is nerdily interesting since it involves running a [Python](https://www.python.org) script on one's own computer or server; but I couldn't successfully get it to work despite very helpful instructions from the dev, so that was out. (One fellow MailMate user who shares my wish for up-to-date notifications reported he was using this method successfully, but was having to pay several bucks a month for an online server instance just to run this script.) Finally, I didn't even try **Extended Device Syncing** because its constant background activities "might drain your device's battery," as the app's description of it warns. No, thanks.
 
-Thus: if, like me, you *really* want to get a notification whenever an email hits one of your accounts, just as occurs when you're using MailMate on the Mac (or even simply Apple Mail on either the Mac or an iOS device), Preside clearly isn't an app for you---**unless** you do what I did: let the Apple Mail app handle the live notifications and then, upon each one, go to Preside and view the email there. It's kludgy, but workable.
+Thus: if, like me, you *really* want to get a notification whenever an email hits one of your accounts, just as occurs when you're using MailMate on the Mac (or even simply Apple Mail on either the Mac or an iOS device), Preside clearly isn't an app for you --- **unless** you do what I did: let the Apple Mail app handle the live notifications and then, upon each one, go to Preside and view the email there. It's kludgy, but workable.
 
 **All that said**, I did hear from MailMate users who agreed with the dev's perspective: they're just not that worked up over getting notifications. They check for the emails when *they* want to do so, and don't really give a hoot the rest of the time. If that sounds like you, you'll be thoroughly fine with how Preside does (or doesn't do) notifications.
 
-Incidentally: AltaMail's notifications can be a little slow, too, unless you activate *both* of two settings called **Use push notifications (quicker)** and **Quick Notifications**---the latter of which is described in the app somewhat ominously as including "No filtering or Email Rule/SPAM checking" (meaning at the app level, not at your provider's level, of course). While these settings do, indeed, provide pretty quick notifications, they can be somewhat hoggish on a device's battery.
+Incidentally: AltaMail's notifications can be a little slow, too, unless you activate *both* of two settings called **Use push notifications (quicker)** and **Quick Notifications** --- the latter of which is described in the app somewhat ominously as including "No filtering or Email Rule/SPAM checking" (meaning at the app level, not at your provider's level, of course). While these settings do, indeed, provide pretty quick notifications, they can be somewhat hoggish on a device's battery.
 
 So, in truth, neither Preside nor AltaMail has a totally clean slate on notifications when compared to the old standby, Apple Mail. However, that's true for virtually all other third-party iOS email apps unless they're running your emails through their servers (potentially a [violation](https://www.vice.com/en_us/article/pkekmb/free-email-apps-spying-on-you-edison-slice-cleanfox) of your security) which, fortunately, neither of these apps does.
 
-**Update, 2021-07-03**: For an explanation of how to get more immediate notifications from Preside, see my later post, "[Better notifications in the Preside email app](/posts/2021/07/better-notifications-preside-email-app/)."
+**Update, 2021‑07‑03**: For an explanation of how to get more immediate notifications from Preside, see my later post, "[Better notifications in the Preside email app](/posts/2021/07/better-notifications-preside-email-app/)."
 {.yellowBox}
 
 ## The winnah

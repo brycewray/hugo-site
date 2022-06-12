@@ -26,7 +26,7 @@ featured_image_caption: |
 
 Today's subject may seem a niche-ish use case, but I have reason to believe otherwise.
 
-Let's say you're developing your website. Since you want to make sure it looks okay on other operating systems, too, you may be using either a virtual machine (like [Parallels Desktop](https://www.parallels.com/), the appropriate [VMWare](https://www.vmware.com/products/desktop-hypervisor.html) product, or [VirtualBox](https://www.virtualbox.org/)) or an actual second computer running one or more different OSs. Or, for that matter, you're equally concerned with how the site looks on a phone or tablet, and you're not willing to depend on your browser's emulation mode for determining that---and, by the way, you're wise to think that way.
+Let's say you're developing your website. Since you want to make sure it looks okay on other operating systems, too, you may be using either a virtual machine (like [Parallels Desktop](https://www.parallels.com/), the appropriate [VMWare](https://www.vmware.com/products/desktop-hypervisor.html) product, or [VirtualBox](https://www.virtualbox.org/)) or an actual second computer running one or more different OSs. Or, for that matter, you're equally concerned with how the site looks on a phone or tablet, and you're not willing to depend on your browser's emulation mode for determining that --- and, by the way, you're wise to think that way.
 
 In short, **you want to test your site locally on more than just your dev machine, while in dev mode**.
 
@@ -142,7 +142,7 @@ export default defineConfig({
 
 ### Next.js
 
-If you're running [Next.js](https://nextjs.org), [use the `-H` flag](https://nextjs.org/docs/api-reference/cli#development) with `npx next dev` to set the hostname to the desired IP address. To use a different port from the default of *3000*, [use either the `-p` flag or the `PORT` environment variable](https://nextjs.org/docs/api-reference/cli#development)---`PORT=3000`, for example---but the latter cannot be set in a project's `.env` file. You also can set these parameters in the project's `next.config.js` file.
+If you're running [Next.js](https://nextjs.org), [use the `-H` flag](https://nextjs.org/docs/api-reference/cli#development) with `npx next dev` to set the hostname to the desired IP address. To use a different port from the default of *3000*, [use either the `-p` flag or the `PORT` environment variable](https://nextjs.org/docs/api-reference/cli#development) --- `PORT=3000`, for example --- but the latter cannot be set in a project's `.env` file. You also can set these parameters in the project's `next.config.js` file.
 
 ### Gatsby
 
@@ -183,6 +183,6 @@ hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --bu
 
 Just entering `./start.sh` into my terminal app is far easier than always keeping a tab open to the appropriate `hugo server` documentation, much less re-entering all that jazz every time I run `hugo server`.
 
-Of course, with projects that use scripts in `package.json`, it might be as simple as remembering to use `npm run start` or `npm run dev`, assuming you've edited your `start` or `dev` scripting to include the specifications we've discussed in this post. **Still**: if you jump back and forth among projects and they **don't** all use `package.json`, you can always make the most of your muscle memory by putting a `start` shell script on each project---even if, in the case of a `package.json`-using project, the script's only content is `npm run start`.[^terminalRemember]
+Of course, with projects that use scripts in `package.json`, it might be as simple as remembering to use `npm run start` or `npm run dev`, assuming you've edited your `start` or `dev` scripting to include the specifications we've discussed in this post. **Still**: if you jump back and forth among projects and they **don't** all use `package.json`, you can always make the most of your muscle memory by putting a `start` shell script on each project --- even if, in the case of a `package.json`-using project, the script's only content is `npm run start`.[^terminalRemember]
 
 [^terminalRemember]: Plus, your terminal app should remember it for you, anyway. While, sure, that also could re-run one of the longish commands I mentioned, I still encourage using shell scripts just so you won't have to keep cycling through so many different sets of commands in your terminal app's memory.

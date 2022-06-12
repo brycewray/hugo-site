@@ -4,7 +4,7 @@ tags:
 - post
 - code
 title: "Tailwind-to-head with Eleventy"
-description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site—and with no build tools required."
+description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site — and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
 lastmod: 2021-07-04T21:56:00-05:00
@@ -18,7 +18,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/stradus-833024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5421210">Sárfi Benjámin</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5421210">Pixabay</a></span>
 ---
 
-Last month, I posted "[Tailwind-to-head with Hugo Pipes](/posts/2021/02/tailwind-head-hugo-pipes/)," an explanation of how to achieve internal CSS---styles injected into the HTML `head` rather than existing in a separate .css file---in a [Hugo](https://gohugo.io)-based site. In particular, this procedure involved CSS from the popular [Tailwind CSS](https://tailwindcss.com) framework, although I also showed how to do it with [SCSS](https://sass-lang.com). Each method was easy because of Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes).
+Last month, I posted "[Tailwind-to-head with Hugo Pipes](/posts/2021/02/tailwind-head-hugo-pipes/)," an explanation of how to achieve internal CSS --- styles injected into the HTML `head` rather than existing in a separate .css file --- in a [Hugo](https://gohugo.io)-based site. In particular, this procedure involved CSS from the popular [Tailwind CSS](https://tailwindcss.com) framework, although I also showed how to do it with [SCSS](https://sass-lang.com). Each method was easy because of Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes).
 
 By contrast, [Eleventy](https://11ty.dev), the other popular [static site generator](https://jamstack.org/generators) I typically recommend, has no such asset pipeline. As a result, more tech-savvy Eleventy users (and, given Eleventy's popularity among the web dev crowd, they are legion) often try to achieve similar results through use of build tools like [webpack](https://webpack.js.org), [Parcel](https://parceljs.org), and [Gulp](https://gulpjs.com), among others.
 
@@ -30,7 +30,7 @@ After all, we've [already seen](/posts/2021/03/gems-in-rough-03/) how to do that
 
 [^featImg]: I even borrowed the featured image (for social posts, even when the site's current configuration isn't showing featured images) from the earlier "Tailwind-to-head in Hugo Pipes" post since its subject and this post's subject are essentially so similar. You can call it being lazy; I prefer to say I was "leveraging the image's thematic synergy." (Hey, I didn't spend 30 years in tech marketing for nothing, you know.)
 
-Fortunately, the answer turned out to be: "not so difficult"---at least, that was the case once I stopped doing dumb things. I'll spare you *that* sob story and cut to the chase.
+Fortunately, the answer turned out to be: "not so difficult" --- at least, that was the case once I stopped doing dumb things. I'll spare you *that* sob story and cut to the chase.
 
 ## The `package.json` part
 
@@ -49,7 +49,7 @@ First of all, let's cover the `package.json` scripting (I'll save space by not i
   },
 ```
 
-**Update, 2021-03-24**: I corrected the script `dev:eleventy`, above, so that it includes the `--serve` parameter rather than the `--watch` parameter; as I was [reminded on Twitter](https://twitter.com/marcfilleul/status/1374840637112131589) and is [explained in the Eleventy documentation](https://www.11ty.dev/docs/usage/#re-run-eleventy-when-you-save), `serve` includes the "watching" process, so it's unnecessary to have **both** `--watch` and `serve`. Sorry that I missed this earlier, which probably happened because I previously was using a separate BrowserSync instance and, thus, the code from which I was copying at the time didn't have (or need) the `--serve` parameter for Eleventy.
+**Update, 2021‑03‑24**: I corrected the script `dev:eleventy`, above, so that it includes the `--serve` parameter rather than the `--watch` parameter; as I was [reminded on Twitter](https://twitter.com/marcfilleul/status/1374840637112131589) and is [explained in the Eleventy documentation](https://www.11ty.dev/docs/usage/#re-run-eleventy-when-you-save), `serve` includes the "watching" process, so it's unnecessary to have **both** `--watch` and `serve`. Sorry that I missed this earlier, which probably happened because I previously was using a separate BrowserSync instance and, thus, the code from which I was copying at the time didn't have (or need) the `--serve` parameter for Eleventy.
 {.yellowBox}
 
 Now let's see what all those scripts do when you invoke either development mode (`npm run start`) or production mode (`npm run build`). Here's the resulting sequence of actions; they're more alike than not alike, so I'll combine them into one list:
@@ -142,13 +142,13 @@ ${ process.env.NODE_ENV === 'production'
 
 Those of you who are the least bit OCD-ish about continuity may be wondering, "Um, didn't you say [a few weeks ago](/posts/2021/02/simplify-simplify/) that you'd changed this site over to Hugo and SCSS so you could get away from not only Tailwind but pretty much everything with software dependencies?"
 
-Yes. Yes, I did. So what happened? Well, simply, things changed for me after that---quite a bit, in fact.
+Yes. Yes, I did. So what happened? Well, simply, things changed for me after that --- quite a bit, in fact.
 
 Here's the TL;DR version:
 
-- As I've [noted previously](/posts/2021/03/next-steps/), it now appears the Day Job will entail my working a lot more with, you got it, dependencies-heavy development---in JavaScript and HTML, specifically. *(**Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this segment in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).)*
+- As I've [noted previously](/posts/2021/03/next-steps/), it now appears the Day Job will entail my working a lot more with, you got it, dependencies-heavy development --- in JavaScript and HTML, specifically. *(**Update, 2021‑04‑15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this segment in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).)*
 - For my part, this is actually a good thing, because it means we may finally get to do what I've been advising since 2019, which would shed a ton of technical debt while greatly improving our websites’ performance. Discussions and resulting decisions remain in the future, but things are looking promising.
-- I also [am intrigued](/posts/2021/03/jit-game-changer-tailwind-css/) by the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css)---and the performance I've personally witnessed---of the new, experimental just-in-time compiler for Tailwind. It makes Tailwind in a dev environment **much** faster, almost as fast as working in SCSS but with the advantages of [utility-first CSS](https://tailwindcss.com/docs/utility-first).
+- I also [am intrigued](/posts/2021/03/jit-game-changer-tailwind-css/) by the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) --- and the performance I've personally witnessed --- of the new, experimental just-in-time compiler for Tailwind. It makes Tailwind in a dev environment **much** faster, almost as fast as working in SCSS but with the advantages of [utility-first CSS](https://tailwindcss.com/docs/utility-first).
 
 Accordingly, I've decided to dip my toes back into the piranha tank of dependencies-heavy development, with the hope that I continue to be ambulatory thereafter.
 

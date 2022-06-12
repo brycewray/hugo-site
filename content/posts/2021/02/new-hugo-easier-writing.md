@@ -55,13 +55,13 @@ The alternative would be actually writing HTML within the Markdown, but that was
 **This** is bold and *this* is italicized/obliqued, and [this link](https://gohugo.io/documentation) goes to the Hugo documentation, while [this post link](/posts/2021/02/simplify-simplify/) goes to the site's recent **"Simplify, simplify”** post.
 {.yellowBox}
 
-In Eleventy, I enjoyed this convenience through use of the [Markdown-it-attrs plugin](https://github.com/GerHobbelt/markdown-it-attrs) for the [Markdown-it parser](https://github.com/markdown-it/markdown-it). In Eleventy, you essentially put together your chosen parser with whatever plugins it needs to do what you want---footnoting, "smart" punctuation, and, yes, handling styling attributes.
+In Eleventy, I enjoyed this convenience through use of the [Markdown-it-attrs plugin](https://github.com/GerHobbelt/markdown-it-attrs) for the [Markdown-it parser](https://github.com/markdown-it/markdown-it). In Eleventy, you essentially put together your chosen parser with whatever plugins it needs to do what you want --- footnoting, "smart" punctuation, and, yes, handling styling attributes.
 
 When I came back to Hugo, I figured I'd lost this convenience because Hugo's built-in Markdown parser, [goldmark](https://github.com/yuin/goldmark), is [limited to allowing attributes for only headings](https://github.com/yuin/goldmark#parser-options).[^blackFriday] I compensated by putting together [shortcodes](https://gohugo.io/content-management/shortcodes/) to insert the two classes I most frequently had used with attributes in Eleventy: the aforementioned `yellowBox` class for my "Hey-look-at-this" items and the `imgcCaption`[^oldName] class I used for captions under in-body images. It wasn't as convenient, but it worked:
 
 [^blackFriday]: You also can configure Hugo to use its previous Markdown parser, [Blackfriday](https://github.com/russross/blackfriday), but it doesn't do the attributes thing *at all*. Moreover, Blackfriday support in Hugo is being deprecated in the not-too-distant future.
 
-[^oldName]: In Eleventy, I'd called this class `lazypicturecaption` as a reference to the `lazypicture` shortcode I used in concert with lazy-loading-specific JavaScript to produce responsive images. In Hugo, I've dispensed with that JavaScript, using an `imgc` shortcode for responsive images (relying instead on browsers’ native lazy-loading)---hence, the different name in Hugo for what essentially is the same thing, namely a caption-styling CSS class.
+[^oldName]: In Eleventy, I'd called this class `lazypicturecaption` as a reference to the `lazypicture` shortcode I used in concert with lazy-loading-specific JavaScript to produce responsive images. In Hugo, I've dispensed with that JavaScript, using an `imgc` shortcode for responsive images (relying instead on browsers’ native lazy-loading) --- hence, the different name in Hugo for what essentially is the same thing, namely a caption-styling CSS class.
 
 ```md
 {{</* imgc src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width="1008" height="712" */>}}
@@ -118,4 +118,4 @@ I certainly can write stuff in HTML when needed. I've been doing it for a quarte
 
 So, thanks to this new enhanced attributes capability (and some fairly painless searching/replacing within the appropriate posts), I was able to retire both the `yellowBox` and `imgcCapt` shortcodes in favor of the simpler, more quickly typed attributes for the CSS classes they invoked. And, as I have need to call more CSS from Markdown over time, this capability will continue to make that a comparative breeze.
 
-Easier and faster `===` better. I'm grateful to the Hugo dev team for adding this functionality to Hugo in version 0.81.0---and will be in the future every time I can add, **HTML-free**, some yellow-boxed text, or an image caption, or any *other* item that needs special handling in CSS.
+Easier and faster `===` better. I'm grateful to the Hugo dev team for adding this functionality to Hugo in version 0.81.0 --- and will be in the future every time I can add, **HTML-free**, some yellow-boxed text, or an image caption, or any *other* item that needs special handling in CSS.

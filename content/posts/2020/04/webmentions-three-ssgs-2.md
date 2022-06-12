@@ -4,7 +4,7 @@ tags:
 - post
 - code
 title: "Webmentions in three SSGs: Part 2"
-description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."
+description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs) — in this case, Eleventy."
 author: Bryce Wray
 date: 2020-04-28T16:35:00-05:00
 lastmod: 2022-04-03T22:55:00-05:00
@@ -22,12 +22,12 @@ featured_image_caption: |
 **Note**: This is Part 2 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev) (the subject of this part), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3/)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5/), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}
 
-**Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
+**Added note, 2020‑07‑26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
 {.yellowBox}
 
 Having covered the purpose of this series, the [IndieWeb](https://indieweb.org), and the general setup of webmentions in this series’ [introduction](/posts/2020/04/webmentions-three-ssgs-1/), we'll now get into details about implementing them in the [Eleventy](https://11ty.dev) SSG.
 
-For two reasons, we start with the [Eleventy repo](https://github.com/brycewray/eleventy_bundler). First, it's the repo that powered this site as of the time I wrote this.[^toSolo] Second, it's where I initially added webmentions in their barest form---only so-called "mentions"---and then, more recently, enhanced their appearances. I refer to it here only as the *Eleventy repo* rather than, as usual, the *Eleventy/[webpack](https://webpack.js.org) repo*, because the addition of webpack really had nothing whatsoever to do with this particular process.
+For two reasons, we start with the [Eleventy repo](https://github.com/brycewray/eleventy_bundler). First, it's the repo that powered this site as of the time I wrote this.[^toSolo] Second, it's where I initially added webmentions in their barest form --- only so-called "mentions" --- and then, more recently, enhanced their appearances. I refer to it here only as the *Eleventy repo* rather than, as usual, the *Eleventy/[webpack](https://webpack.js.org) repo*, because the addition of webpack really had nothing whatsoever to do with this particular process.
 
 [^toSolo]: Not long after initially publishing this series, I [converted the site](/posts/2020/05/going-solo-eleventy/) to a [webpack-less repo](https://github.com/brycewray/eleventy_solo).
 
@@ -45,7 +45,7 @@ At that point, a [shortcode](https://11ty.dev/docs/shortcodes) in [`/src/_includ
 
 In addition, I also edited [`/src/_includes/layouts/partials/footer.js`](https://github.com/brycewray/files-webmentions/blob/master/eleventy_bundler/src/_includes/layouts/partials/footer.js) so that it would have the necessary [microformats](https://indieweb.org/microformats) information for the entire site, as well as page-specific microformats stuff **except** on any page within the paginated [posts list](/posts).
 
-And, yeah, that pretty much was it where the Eleventy repo and webmentions were concerned---other than, it should be noted, massaging the CSS to handle the actual look-and-feel of the webmentions display on each relevant page. That was especially necessary because of the newly added "counter" and "drop-down" functionality (the latter through use of the [HTML `details` tag](https://www.w3schools.com/tags/tag_details.asp)).
+And, yeah, that pretty much was it where the Eleventy repo and webmentions were concerned --- other than, it should be noted, massaging the CSS to handle the actual look-and-feel of the webmentions display on each relevant page. That was especially necessary because of the newly added "counter" and "drop-down" functionality (the latter through use of the [HTML `details` tag](https://www.w3schools.com/tags/tag_details.asp)).
 
 ## Saying goodbye to Easy Street
 

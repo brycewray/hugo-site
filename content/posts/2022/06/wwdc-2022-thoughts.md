@@ -24,7 +24,7 @@ At long last, my wife and I will be able to share our iCloud-based photos automa
 
 So, it appears, I'll finally be able to kick Google Photos to the curb. *That* announcement provoked a loud "Yes!" and a fist-pump from me.[^domainMail]
 
-[^domainMail]: **Important caveat**: that assumes that I've understood this announcement correctly. Last year, I was excited to hear about getting own-domain support in iCloud Mail, only to find the real thing had---and still has---some show-stoppers that prevented my planned use of it. Am hoping not to be similarly disappointed by the final appearance of the iCloud photo-sharing when it actually becomes available.
+[^domainMail]: **Important caveat**: that assumes that I've understood this announcement correctly. Last year, I was excited to hear about getting own-domain support in iCloud Mail, only to find the real thing had --- and still has --- some show-stoppers that prevented my planned use of it. Am hoping not to be similarly disappointed by the final appearance of the iCloud photo-sharing when it actually becomes available.
 
 Another "at long last": there will be an Apple Weather app on iPadOS.
 
@@ -38,9 +38,9 @@ I've never cared one way or the other about macOS version names. Ventura? Fine. 
 
 Hmm: there are two M2-based MacBooks, and the new-design MacBook Air is only $100 apart from the old-design 13-inch MacBook Pro. Curious positioning, there, Apple.
 
-CarPlay's new multi-screen features look very interesting---but, if they're not going to be available until late 2023, isn't that going to be a little weird for the supporting car manufacturers? At least, it will be weird *if* Apple really is going to be making its own car(s). Guess we'll see.
+CarPlay's new multi-screen features look very interesting --- but, if they're not going to be available until late 2023, isn't that going to be a little weird for the supporting car manufacturers? At least, it will be weird *if* Apple really is going to be making its own car(s). Guess we'll see.
 
-I don't give a flip about AR, so---unlike many who'd been predicting the announcement of "RealityOS"---wasn't bothered by its non-presence in this Keynote.
+I don't give a flip about AR, so --- unlike many who'd been predicting the announcement of "RealityOS" --- wasn't bothered by its non-presence in this Keynote.
 
 I'm not crazy about this "no-password" movement (in this case, Apple Passkeys), but I also know that Big Tech wants it, so it's inevitable. I am curious just how cross-platform it really can be. Also curious how the 1Passwords and Bitwardens of the world will roll with it. Since it was no secret that Apple, Google, and Microsoft are pushing hard for this, one can reasonably suppose that's why the various password management app makers are making more of a push toward enterprise customers, given that the consumers will gradually follow their devices into the password-less future. (Or not.) Hey, I'd just be glad if businesses all did real two-factor authentication, but I dream big.
 

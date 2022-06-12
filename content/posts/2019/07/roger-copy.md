@@ -4,7 +4,7 @@ tags:
 - post
 - img
 title: "Roger, Copy"
-description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
+description: "How I now keep my site files “synced” across my devices — via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
 lastmod: 2022-02-12T11:56:00-06:00
@@ -39,7 +39,7 @@ The reason I was able to bring back the reference is the subject of this post.
 
 Going back to desktop-only handling of the site wouldn't have been a show-stopper. Still, I didn't care for the prospect.
 
-After all, some of my more lucid moments and/or more accurate error-catching sessions come when I'm miles away from the Mac but within easy reach of my iPhone---or even when I'm just in the living room, using the iPad in the wee hours of the morning before it's time to head out for the day.
+After all, some of my more lucid moments and/or more accurate error-catching sessions come when I'm miles away from the Mac but within easy reach of my iPhone --- or even when I'm just in the living room, using the iPad in the wee hours of the morning before it's time to head out for the day.
 
 While I'd had my repo in iCloud Drive, it had been easy to make edits and know that, once I got back to the Mac, the changed files would be there, waiting to be pushed to the online [Bitbucket](https://bitbucket.org) repo from which [Netlify](https://www.netlify.com) deploys this site.
 
@@ -49,7 +49,7 @@ The answer was to treat each device as if it were a separate developer working o
 
 For that, I needed a good Git client on each of my iOS devices. Anything less would be not only counter-productive but also potentially data-destroying. (Yes, you can recover erroneous deletes and such with Git, but why not simply do it right the first time and thus minimize the need for that sort of "Holy [bleep]" moment?)
 
-Fortunately, I'd been reading for months about the best iOS Git client: the justifiably popular [Working Copy](https://workingcopyapp.com). This app from Danish developer [Anders Borum](https://twitter.com/palmin) costs $16 with full capabilities[^remote] unlocked across your iOS devices. You can do a free trial of the full-power version for a few days; but, if your use case is anything close to mine, the $16 purchase---plus about $9 every time a major revision comes out, generally once a year or so---is an absolute no-brainer. This app is astoundingly solid. As far as I'm concerned, it stands miles above the competition.
+Fortunately, I'd been reading for months about the best iOS Git client: the justifiably popular [Working Copy](https://workingcopyapp.com). This app from Danish developer [Anders Borum](https://twitter.com/palmin) costs $16 with full capabilities[^remote] unlocked across your iOS devices. You can do a free trial of the full-power version for a few days; but, if your use case is anything close to mine, the $16 purchase --- plus about $9 every time a major revision comes out, generally once a year or so --- is an absolute no-brainer. This app is astoundingly solid. As far as I'm concerned, it stands miles above the competition.
 
 [^remote]: The most notable example of what the paid version can do is pushing to a remote repo. In fact, this capability's being locked behind a paywall is probably the only reason this app gets a 4.9 rating on the App Store instead of a 5.0. But, once again I say: for what I want to do, it's a classic case of "Take my money."
 
@@ -71,9 +71,9 @@ Once I'd done the commit, I returned to the main display for the local repo, whe
 
 Please note that I wanted to push this Markdown file to Bitbucket and then the others, but obviously I *didn't* want this barely-started post to go live on the site; so I simply set the **date** parameter in the front matter to a future date. Then, when Netlify "saw" the change to the remote repo in Bitbucket, the resulting build process would ignore the new post as being not yet ready to go.[^draft]
 
-[^draft]: You can achieve the same result---purposely not publishing the post---by just setting its **draft** parameter to *true* rather than *false*, but I prefer the "future date" method. It works better for my development purposes when I'm preparing upcoming posts, letting me see in a browser how they'll look.
+[^draft]: You can achieve the same result --- purposely not publishing the post --- by just setting its **draft** parameter to *true* rather than *false*, but I prefer the "future date" method. It works better for my development purposes when I'm preparing upcoming posts, letting me see in a browser how they'll look.
 
-So, this matter (pardon the pun) handled, I then pushed the commit---first, to Bitbucket:
+So, this matter (pardon the pun) handled, I then pushed the commit --- first, to Bitbucket:
 
 {{< imgc src="Working_Copy_scr_cap_04_2048x1536.png" alt="iPad screen capture: Working Copy display showing a push has gone to Bitbucket" width="2048" height="1536" >}}
 
@@ -81,7 +81,7 @@ So, this matter (pardon the pun) handled, I then pushed the commit---first, to B
 
 {{< imgc src="Working_Copy_scr_cap_07_2048x1536.png" alt="iPad screen capture: Working Copy display showing that the master branch is synchronized with the three remote repositories" width="2048" height="1536" >}}
 
-So I was all ready to go. Then all I had to do when I got back on the Mac was to use my [currently preferred macOS Git client](https://git-fork.com) to fetch the changes from Bitbucket, which instantly added this Markdown file to the Mac's version of the repo so I could work on it more. Incidentally, I could choose---and have chosen---to do text edits within Working Copy itself. Here you can see the Markdown file for my [last post](/posts/2019/07/lessons-learned/):
+So I was all ready to go. Then all I had to do when I got back on the Mac was to use my [currently preferred macOS Git client](https://git-fork.com) to fetch the changes from Bitbucket, which instantly added this Markdown file to the Mac's version of the repo so I could work on it more. Incidentally, I could choose --- and have chosen --- to do text edits within Working Copy itself. Here you can see the Markdown file for my [last post](/posts/2019/07/lessons-learned/):
 
 {{< imgc src="Working_Copy_scr_cap_11_2048x1536.png" alt="iPad screen capture: Working Copy display showing its built-in text editor" width="2048" height="1536" >}}
 

@@ -25,7 +25,7 @@ Hello? Is this thing on? *[crickets]*
 
 Well, for those of you still in the room: bear with me, because there's a story here even if you're not at all into building websites. It's about helping a good product built by a [good person](https://www.zachleat.com) get even better.
 
-Still, for those who are edging toward the exits, I won't [bury the lede](https://style.mla.org/dont-bury-the-lede/): I found a way to come back to my favorite SSG, [Eleventy](https://11ty.dev). But, mind you, this is Eleventy on steroids, with added awesomeness that *bundler* software---specifically, [webpack](https://webpack.js.org)---makes possible.
+Still, for those who are edging toward the exits, I won't [bury the lede](https://style.mla.org/dont-bury-the-lede/): I found a way to come back to my favorite SSG, [Eleventy](https://11ty.dev). But, mind you, this is Eleventy on steroids, with added awesomeness that *bundler* software --- specifically, [webpack](https://webpack.js.org) --- makes possible.
 
 I know some of this (all of this?) is Greek to some of you. I'll try to fix that.
 
@@ -67,7 +67,7 @@ Soon, a popular way around this problem was *concatenating* and *minifying* JS f
 
 Good to go, right? Well, not quite.
 
-What if File Eight and File Twelve each want to have a variable named `event1`---but meaning two totally different things? That wouldn't work. In the same file (not to mention the same computer RAM), each variable would have to have a *unique* name. How would *you* like to go back through a megabyte's worth of code---or more---and have to make sure no two variables had the same names (*and* clean up all the references to them, which wouldn't necessarily be a simple search-and-replace operation)?
+What if File Eight and File Twelve each want to have a variable named `event1` --- but meaning two totally different things? That wouldn't work. In the same file (not to mention the same computer RAM), each variable would have to have a *unique* name. How would *you* like to go back through a megabyte's worth of code --- or more --- and have to make sure no two variables had the same names (*and* clean up all the references to them, which wouldn't necessarily be a simple search-and-replace operation)?
 
 ### Dependencies
 
@@ -75,7 +75,7 @@ In addition to these problems, there also was the issue of managing *dependencie
 
 Here's a simplified example. Let's say your home page's image "slider" JS file couldn't run until after the running of a different JS file that enabled the "slider" even to appear in the first place, and at the same time it also had to appear *before* yet another JS file that put some additional cuteness on the screen on top of the sliding images. As with the unique-variable-name issue, managing dependencies was not so big a deal with a small number of files, but a huge pain as the code grew.
 
-[^spaces]: Minifying, in particular, is useful for much code at the production level. All the pretty space that humans like to use in *writing* code helps us *read* it, but browsers don't care. So what you often see in source code---what appears to be a mashed-up mess---probably started out in the *development* phase as very nicely formatted, well-commented stuff.
+[^spaces]: Minifying, in particular, is useful for much code at the production level. All the pretty space that humans like to use in *writing* code helps us *read* it, but browsers don't care. So what you often see in source code --- what appears to be a mashed-up mess --- probably started out in the *development* phase as very nicely formatted, well-commented stuff.
 
 ## Bundlers to the rescue
 
@@ -89,7 +89,7 @@ Bundler software like webpack[^otherBundlers] handles all of these issues. When 
 
 - Orders all the code appropriately to manage the dependencies.
 
-They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source web typefaces. In fact, that's how I easily converted this site to first [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there), and later [Public Sans](https://fonts.google.com/specimen/Public+Sans). Normally, it can be challenging to add web fonts to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces---created by Gatsby's Kyle Matthews---works with webpack to make it a relative piece of cake.
+They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source web typefaces. In fact, that's how I easily converted this site to first [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there), and later [Public Sans](https://fonts.google.com/specimen/Public+Sans). Normally, it can be challenging to add web fonts to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces --- created by Gatsby's Kyle Matthews --- works with webpack to make it a relative piece of cake.
 
 So, I hope, that explains bundlers. Now, where was I? Oh, yeah&nbsp;.&nbsp;.&nbsp;.
 
@@ -109,15 +109,15 @@ This also dovetailed with my increasing realization, over the months of working 
 
 [^CRA]: Same is true for Create React App, for that matter, but that's a completely different subject.
 
-So, I began to wonder, what if I could learn to use Eleventy with a bundler? Eleventy by itself is pretty cool---but, with a bundler, too&nbsp;.&nbsp;.&nbsp;.&nbsp;?
+So, I began to wonder, what if I could learn to use Eleventy with a bundler? Eleventy by itself is pretty cool --- but, with a bundler, too&nbsp;.&nbsp;.&nbsp;.&nbsp;?
 
 ## A leg up
 
 As [previously described](/posts/2019/09/why-left-hugo-eleventy/), I was familiar with Eleventy. The X factor on this was going to be webpack. While it's apparently considerably easier to configure than were earlier versions, it's no walk in the park.
 
-However, this is where my months of wrangling with Gatsby (and, a few times, with [Create React App](https://create-react-app.dev)) came in handy. Had I not been through that already, I'd probably have wilted quickly whenever I ran into the inevitable glitches while trying to set things just right for webpack to do its thing---including having separate configs for development and production. But, by now, it was no biggie. That's *not* to say it was easy.
+However, this is where my months of wrangling with Gatsby (and, a few times, with [Create React App](https://create-react-app.dev)) came in handy. Had I not been through that already, I'd probably have wilted quickly whenever I ran into the inevitable glitches while trying to set things just right for webpack to do its thing --- including having separate configs for development and production. But, by now, it was no biggie. That's *not* to say it was easy.
 
-I *highly* encourage anyone considering taking up webpack to spend plenty of time reading applicable parts of the excellent webpack documentation, as well as finding and perusing online repositories of code from people who have built their sites with webpack. Of particular use in this case---putting Eleventy together with webpack---was [Ray Villalobos](https://7ty.tech/about)'s [Seven](https://7ty.tech). If you, too, want to mix Eleventy and webpack, you can't do better than to examine [Mr. Villalobos's code](https://github.com/planetoftheweb/seven).
+I *highly* encourage anyone considering taking up webpack to spend plenty of time reading applicable parts of the excellent webpack documentation, as well as finding and perusing online repositories of code from people who have built their sites with webpack. Of particular use in this case --- putting Eleventy together with webpack --- was [Ray Villalobos](https://7ty.tech/about)'s [Seven](https://7ty.tech). If you, too, want to mix Eleventy and webpack, you can't do better than to examine [Mr. Villalobos's code](https://github.com/planetoftheweb/seven).
 
 ## So what do we get?
 
@@ -155,14 +155,14 @@ In summary, the Eleventy/webpack combo gives me things I couldn't have had if I'
 
 Although I have never been adept at dealing with mechanical things, much to my wife's chagrin when things need fixing around our aging home[^doorknob], I *do* like to tinker. Only thing is, what I like tinkering with is: code that makes web pages work.
 
-[^doorknob]: Like today, for example, when I struggled to replace a doorknob---although, in my defense, doorknobs aren't really designed for easy replacement. Have *you* tried, lately, putting the mounting screws into a doorknob *around* the doorknob? It's not as if screwdrivers are flexible.
+[^doorknob]: Like today, for example, when I struggled to replace a doorknob --- although, in my defense, doorknobs aren't really designed for easy replacement. Have *you* tried, lately, putting the mounting screws into a doorknob *around* the doorknob? It's not as if screwdrivers are flexible.
 
 In fact, not long ago, our company owner asked a group of us about our hobbies. The others mentioned normal, human things like dancing, mountain-climbing, and playing or watching various sports.[^sports] Then, he got to me. I had to be the group nerd who admitted that mine is very similar to what I do for pay. So I guess I'm the proverbial "[dull boy](https://en.wikipedia.org/wiki/All_work_and_no_play_makes_Jack_a_dull_boy)," which will shock absolutely no one who knows me.
 
-[^sports]: And, hey, I like watching sports, too. As I type these particular words, I have a browser window open with a stream of [NFL Red Zone](http://www.nfl.com/redzone)---although, similar to what I [mentioned](/posts/2019/11/mixed-nuts-2019-11/) recently, ballgames lately are more background noise to me than anything else.
+[^sports]: And, hey, I like watching sports, too. As I type these particular words, I have a browser window open with a stream of [NFL Red Zone](http://www.nfl.com/redzone) --- although, similar to what I [mentioned](/posts/2019/11/mixed-nuts-2019-11/) recently, ballgames lately are more background noise to me than anything else.
 
 That said, this tendency can come in handy. What you're seeing now is proof.
 
 Don't misunderstand: this isn't a finished product, by any means. No website ever is. I'll keep doing cleanup, trying to make things work and look better. But there comes a time to "ship it," as the saying goes, and I decided today was as good a day as any.
 
-When this year started, I had no idea I'd be engaging in this six-month soap opera of switching back and forth among SSGs. However, I've loved learning all the stuff that went with that "dance," and---now that I'm back with my favorite SSG but also inaugurated into the webpack ecosphere about which I've been reading so much---I hope the sky's the limit.
+When this year started, I had no idea I'd be engaging in this six-month soap opera of switching back and forth among SSGs. However, I've loved learning all the stuff that went with that "dance," and --- now that I'm back with my favorite SSG but also inaugurated into the webpack ecosphere about which I've been reading so much --- I hope the sky's the limit.

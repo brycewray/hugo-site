@@ -5,7 +5,7 @@ tags:
 - YouTube
 - img
 title: "Taming time-based one-time passwords (TOTPs)"
-description: "A few tips on managing multi-factor authentication—specifically, TOTPs."
+description: "A few tips on managing multi-factor authentication — specifically, TOTPs."
 author: Bryce Wray
 date: 2021-09-20T10:30:00-05:00
 lastmod: 2022-01-10T07:55:00-06:00
@@ -32,7 +32,7 @@ If you watch that video from start to finish, you’ll learn *far* more than I�
 
 Just spelling out the meaning of the semi-acronym *TOTP* isn’t enough. What exactly *is* a time-based one-time password?
 
-Well, never mind the “time-based” part for the moment; we’ll break it down even further. What is a one-time password (OTP) in the first place? As the name implies, it’s a password (usually a set of digits rather than an actual word or phrase) that is valid only once. This ephemerality is intended to keep an OTP from being stolen—although, as you’ll see, that’s not always a given.
+Well, never mind the “time-based” part for the moment; we’ll break it down even further. What is a one-time password (OTP) in the first place? As the name implies, it’s a password (usually a set of digits rather than an actual word or phrase) that is valid only once. This ephemerality is intended to keep an OTP from being stolen — although, as you’ll see, that’s not always a given.
 
 Unless this is your first week on the web, it’s almost certain you’ve encountered OTPs many times before. Let’s say you go to a bank website to check on your account. Let’s also say you’ve already set up MFA/2FA with the bank. You’ll log in with your username and the *regular* password that you use *every* time. Now comes the MFA/2FA part: to confirm that you really are you, and not someone who’s somehow stolen your username and regular password, the bank requires you to enter an OTP, too. You can learn the required OTP for that particular instance in various ways, some better than others for reasons we’ll explain shortly:
 
@@ -40,7 +40,7 @@ Unless this is your first week on the web, it’s almost certain you’ve encoun
 - The bank can email it to you.
 - You can use a special app to view it and, perhaps, copy/paste it into the appropriate field on the website. Typically, this will be a *time-based* OTP (TOTP), which leads us to that subject.
 
-A *time-based* OTP is generated through an algorithm that computes a (usually) six-digit code by concatenating and scrambling (1.) the actual time in seconds and (2.) the numerical value from a “secret” or “seed.” Because of that first part—the time in seconds—it’s important that the clock of whatever device you’re using is set to the precise time. Fortunately, in this day when most cell phones and computers are accurate to the second, that’s usually a given.
+A *time-based* OTP is generated through an algorithm that computes a (usually) six-digit code by concatenating and scrambling (1.) the actual time in seconds and (2.) the numerical value from a “secret” or “seed.” Because of that first part — the time in seconds — it’s important that the clock of whatever device you’re using is set to the precise time. Fortunately, in this day when most cell phones and computers are accurate to the second, that’s usually a given.
 
 Like any other OTP, a TOTP has a short life span, typically thirty seconds. It changes at the :00 mark and :30 mark of each minute. There are some odd-duck TOTP generators that don’t follow that scheme[^1], but the aforementioned algorithm is part of an [open standard](https://datatracker.ietf.org/doc/html/rfc6238) and so, fortunately, the vast majority of them do.
 
@@ -54,21 +54,21 @@ The answer is that neither texting nor email is (or was designed to be) a secure
 
 As you may know, certain password management apps allow you to keep your TOTPs in there with your normal passwords. That's certainly better than not using TOTPs at all, but doesn’t strictly follow best practices. Ideally, you should use separate apps for such purposes to avoid the proverbial "all-your-eggs-in-one-basket" situation.
 
-Now, let's get into the story of the apps themselves. As is true for many stories, there are bad guys and good guys---or, at least, not-so-good guys and mostly good guys.
+Now, let's get into the story of the apps themselves. As is true for many stories, there are bad guys and good guys --- or, at least, not-so-good guys and mostly good guys.
 
 ### The bad (or not-so-good) guys
 
-As the Techlore video explains in detail, the technology behind TOTPs is an open standard, so your TOTPs should be *yours*—and that means the “secrets” (or “seeds”) and the QR codes that go with them. They shouldn’t be locked into any particular OS, device, or app. Yet, such lock-in is precisely what happens if you use the proprietary TOTP apps which get mentioned most frequently in major reviews.
+As the Techlore video explains in detail, the technology behind TOTPs is an open standard, so your TOTPs should be *yours* — and that means the “secrets” (or “seeds”) and the QR codes that go with them. They shouldn’t be locked into any particular OS, device, or app. Yet, such lock-in is precisely what happens if you use the proprietary TOTP apps which get mentioned most frequently in major reviews.
 
 Beyond those already sufficiently bad general points, here are a few more specific observations.
 
-[Authy](https://www.authy.com) requires a phone number for setup, hardly great for privacy concerns. Authy also can make it *really* difficult to break away from its ecosystem, to the point of sometimes not allowing individuals to delete their Authy accounts! (I was able to delete mine, but only after waiting thirty days and receiving multiple “Are you sure?” emails.) About the only good point of Authy, and one which pulls in many users, is its ease of cross-device syncing—on Authy’s servers—so you can access your TOTPs on your various devices and OSs. Indeed, it’s the only one of these that provides (mostly) full-fledged desktop apps as well as mobile apps.
+[Authy](https://www.authy.com) requires a phone number for setup, hardly great for privacy concerns. Authy also can make it *really* difficult to break away from its ecosystem, to the point of sometimes not allowing individuals to delete their Authy accounts! (I was able to delete mine, but only after waiting thirty days and receiving multiple “Are you sure?” emails.) About the only good point of Authy, and one which pulls in many users, is its ease of cross-device syncing — on Authy’s servers — so you can access your TOTPs on your various devices and OSs. Indeed, it’s the only one of these that provides (mostly) full-fledged desktop apps as well as mobile apps.
 
 [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator) is infamous for being a locked box when it comes to getting your TOTPs from one device to another. That’s a big deal, considering that phones can die, get stolen or lost, or otherwise become unavailable without warning. Google has tried to improve on this problem in the last year, but this app remains a pain in the ass, particularly on this score. Sadly, many who’re not familiar with TOTPs see widespread instructions to “use Google Authenticator” and follow them blindly, not realizing many other apps can accomplish the same purpose with much less trouble.
 
 Corporate and educational environments often require Authy, Cisco’s [Duo app](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app), or [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app), so you may not be able to get away from them. In fact, I’d go so far as to say you should use one of them *only if* you’re in a setting that requires it.
 
-Incidentally, here’s a little more about Microsoft Authenticator in particular. Lately, Microsoft has been adding some consumer-friendly features to this app. It can now be used as a full password management app rather than just for TOTP and Microsoft-specific authentication (more on that in a moment). Still, this app remains something to use only if you don’t have a choice or simply don’t know better.[^2] By the way, Microsoft Authenticator really should be considered a one-device-per-user app, so it’s a bad choice if you have any wish to share TOTPs among multiple devices. The Microsoft app is best suited for Microsoft-heavy workplaces, where it’s increasingly required for logging into many Microsoft cloud services. For example, a [recent wrinkle is that it allows password-less access](https://www.microsoft.com/security/blog/2021/09/15/the-passwordless-future-is-here-for-your-microsoft-account/) to one’s Microsoft account through a proprietary kind of TOTP. While there definitely are security advantages to this feature, the app’s various idiosyncrasies and shortcomings versus other TOTP apps—especially the ones I’m about to suggest—make the value of that attribute dubious at best.
+Incidentally, here’s a little more about Microsoft Authenticator in particular. Lately, Microsoft has been adding some consumer-friendly features to this app. It can now be used as a full password management app rather than just for TOTP and Microsoft-specific authentication (more on that in a moment). Still, this app remains something to use only if you don’t have a choice or simply don’t know better.[^2] By the way, Microsoft Authenticator really should be considered a one-device-per-user app, so it’s a bad choice if you have any wish to share TOTPs among multiple devices. The Microsoft app is best suited for Microsoft-heavy workplaces, where it’s increasingly required for logging into many Microsoft cloud services. For example, a [recent wrinkle is that it allows password-less access](https://www.microsoft.com/security/blog/2021/09/15/the-passwordless-future-is-here-for-your-microsoft-account/) to one’s Microsoft account through a proprietary kind of TOTP. While there definitely are security advantages to this feature, the app’s various idiosyncrasies and shortcomings versus other TOTP apps — especially the ones I’m about to suggest — make the value of that attribute dubious at best.
 
 I’ll offer one final caution regarding Microsoft Authenticator. This comes into play if you do have to use it *and* for some reason end up deleting it and restoring from your previous backup. If so, you must do that at **one specific spot** in the app reinstallation process or else you’ll have to re-enter all your TOTPs:
 
@@ -90,7 +90,7 @@ For Android devices, you’d be hard-pressed to find something better than [Aegi
 Aegis Authenticator (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
 
-For iOS devices, I can strongly recommend [Raivo OTP](https://github.com/raivo-otp/ios-application). Its main app is on iOS, while its recently added macOS app is a “receiver” which lets you copy a TOTP from your phone straight to the Mac clipboard.[^4] It backs up to iCloud and thus makes your TOTPs available on all your iOS devices. Both apps are free, but the dev obviously appreciates—and, in my opinion, deserves—donations to help keep his work going.
+For iOS devices, I can strongly recommend [Raivo OTP](https://github.com/raivo-otp/ios-application). Its main app is on iOS, while its recently added macOS app is a “receiver” which lets you copy a TOTP from your phone straight to the Mac clipboard.[^4] It backs up to iCloud and thus makes your TOTPs available on all your iOS devices. Both apps are free, but the dev obviously appreciates — and, in my opinion, deserves — donations to help keep his work going.
 
 {{< imgc src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" width="1125" height="2436" >}}
 

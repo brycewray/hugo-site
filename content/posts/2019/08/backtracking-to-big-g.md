@@ -43,9 +43,9 @@ featured_image_caption: |
 
 {{< stweet "1165357162551545857" >}}
 
-“---and, as the defendant surmised in this most recent exhibit before the court, he did indeed end up stopping the usage of the tracking-free alternative, thus compounding his crime by no longer supporting it at the same time he was returning the Evil G Empire's tracking code to its former access to his site and its visitors.
+“--- and, as the defendant surmised in this most recent exhibit before the court, he did indeed end up stopping the usage of the tracking-free alternative, thus compounding his crime by no longer supporting it at the same time he was returning the Evil G Empire's tracking code to its former access to his site and its visitors.
 
-“In cases like this, we would normally advise our client to claim insanity and/or throw himself at the mercy of the court, but neither course seems wise in this case---particularly since there long has been plenty of doubt about our client's sanity and we are reasonably certain the court shares our distaste for our client's actions.
+“In cases like this, we would normally advise our client to claim insanity and/or throw himself at the mercy of the court, but neither course seems wise in this case --- particularly since there long has been plenty of doubt about our client's sanity and we are reasonably certain the court shares our distaste for our client's actions.
 
 "The attorney for the defense now requests to be relieved from this case, due to that distaste and its inevitable effect on the client's right to a fair trial despite his dastardly deed."
 
@@ -63,11 +63,11 @@ NA is New Shiny, completely tracking-code-free, and sure to improve as time goes
 
 If I were monetizing this site, which I'm not (yet), nine bucks a month would be an easy decision. I've said before here that subscriptions do not faze me **if** I can see a good reason for them. But NA no longer met the smell test for my little place on the web, especially since NA remains extremely limited in what it offers. I have no doubt it will get better, but [Google Analytics](https://marketingplatform.google.com/about/analytics/) blows it away and probably will continue to do so for a long time to come. Being a multi-jillion-dollar behemoth can make such things possible.
 
-The other consideration that NA doesn't meet is the obvious one---it's available only if you keep using Netlify as your site's host. While I have no immediate plans to change that, I prefer the flexibility of being able to make such a move if I so choose. GA can follow me wherever, whenever.
+The other consideration that NA doesn't meet is the obvious one --- it's available only if you keep using Netlify as your site's host. While I have no immediate plans to change that, I prefer the flexibility of being able to make such a move if I so choose. GA can follow me wherever, whenever.
 
 .&nbsp;.&nbsp;. Whatever.
 
-## The search for---search
+## The search for --- search
 
 Then there was the whole "getting-away-from-Google-search" attempt.
 
@@ -79,7 +79,7 @@ As I was still employing regular Google search in the Day Job, using my Google I
 
 ## Reality bites
 
-Just in case I haven't riled the privacy advocates sufficiently, let me go ahead and really anger them---and/or make them pity me---by saying I am not one of those folks who form blood-like drops of sweat on their foreheads worrying about Google's tracking, or the (admitted) truth of "If you're not paying for it, you're the product," or any of the other related issues that one's use of Big G services tends to raise. It's like worrying about my hairline. That sucker went too far beyond a happy border long ago. I can't go back in time before the mid-2000s and suddenly **not** be Google-tracked within an inch of my life. Over. Done.
+Just in case I haven't riled the privacy advocates sufficiently, let me go ahead and really anger them --- and/or make them pity me --- by saying I am not one of those folks who form blood-like drops of sweat on their foreheads worrying about Google's tracking, or the (admitted) truth of "If you're not paying for it, you're the product," or any of the other related issues that one's use of Big G services tends to raise. It's like worrying about my hairline. That sucker went too far beyond a happy border long ago. I can't go back in time before the mid-2000s and suddenly **not** be Google-tracked within an inch of my life. Over. Done.
 
 Of course, maybe the aforementioned folks are right. Perhaps I *am* like those people eating voraciously while on their way to *becoming* food in the classic *Twilight Zone* episode, "[To Serve Man](https://en.wikipedia.org/wiki/To_Serve_Man_(The_Twilight_Zone))." If so, the "anything-but-Google" crowd will have the last laugh. They won't be the first people who were able to tell me,  "Idiot, I told you so," nor will they be the last.
 

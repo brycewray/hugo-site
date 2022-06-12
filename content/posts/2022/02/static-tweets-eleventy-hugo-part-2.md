@@ -19,10 +19,10 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a>; <a href="https://unsplash.com/s/photos/twitter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Update, 2022-04-12**: Based on [work](https://github.com/astro-community/astro-embed) by the [Astro](https://astro.build) team, I have enhanced the shortcode described in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/) (and the accompanying styling) so it also can handle animations embedded in tweets. Unfortunately, this isn't possible with the one described in **this** post, as I explain in an update below.
+**Update, 2022‑04‑12**: Based on [work](https://github.com/astro-community/astro-embed) by the [Astro](https://astro.build) team, I have enhanced the shortcode described in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/) (and the accompanying styling) so it also can handle animations embedded in tweets. Unfortunately, this isn't possible with the one described in **this** post, as I explain in an update below.
 {.yellowBox}
 
-**Update, 2022-06-07**: I have now [substantially improved](/posts/2022/06/static-tweets-hugo-update/) upon the original `stweet.html` [Hugo](https://gohugo.io) shortcode mentioned here and in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/), but you still may find valuable background information in what follows here.
+**Update, 2022‑06‑07**: I have now [substantially improved](/posts/2022/06/static-tweets-hugo-update/) upon the original `stweet.html` [Hugo](https://gohugo.io) shortcode mentioned here and in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/), but you still may find valuable background information in what follows here.
 {.yellowBox}
 
 A few days ago, I issued [a post](/posts/2022/02/static-tweets-eleventy-hugo/) explaining how to embed fully static Twitter content in your [Eleventy](https://11ty.dev/)- or [Hugo](https://gohugo.io/)-based website. (If you haven’t yet read that post, please do so before proceeding, so you can better understand what follows below.)
@@ -49,7 +49,7 @@ But, for Hugo, the potential hang-up is in *local* development, where you obviou
 
 Fortunately, after I asked on Hugo’s Discourse forum about how to handle this in local development, I [received some great help](https://discourse.gohugo.io/t/keeping-api-keys-secret-on-github-using-a-env-file/25283/14). Here’s the bottom line: if you’re using macOS or Linux (including Linux on Windows, such as through [WSL](https://docs.microsoft.com/en-us/windows/wsl/install)), install the [`direnv`](https://direnv.net/) shell extension. `direnv` injects the required `BEARER_TOKEN` variable (and any others you may wish to store in `.env`) during your local development process. Once `direnv` is up and running, you’ll be good to go with adding `stweetv2` to your Hugo site.
 
-What if you’re developing in Windows without using WSL? Unfortunately, `direnv` isn’t available for that setup. Instead, you can write a [shell script](https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/) for your usual Hugo development command—*e.g.*, `hugo server`—with Hugo’s `env` command to add the `BEARER_TOKEN` at launch, as [explained](https://gohugo.io/getting-started/configuration/#configure-with-environment-variables) in the Hugo documentation. (**Just make sure you don’t commit the shell script**, of course!) For example, here’s one with a fake `BEARER_TOKEN` of `123456789a`:
+What if you’re developing in Windows without using WSL? Unfortunately, `direnv` isn’t available for that setup. Instead, you can write a [shell script](https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/) for your usual Hugo development command — *e.g.*, `hugo server` — with Hugo’s `env` command to add the `BEARER_TOKEN` at launch, as [explained](https://gohugo.io/getting-started/configuration/#configure-with-environment-variables) in the Hugo documentation. (**Just make sure you don’t commit the shell script**, of course!) For example, here’s one with a fake `BEARER_TOKEN` of `123456789a`:
 
 ```bash
 env BEARER_TOKEN=123456789a hugo server
@@ -170,14 +170,14 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 </blockquote>
 ```
 
-**Update, 2022-04-12**: I revised this shortcode slightly after learning that the Twitter v2 API [doesn’t currently support animations](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media).[^formerContent] So, if you know you'll want to embed tweets with videos or animated GIFs, you'll be better off using the `stweet` shortcode from the [previous article](/posts/2022/02/static-tweets-eleventy-hugo/): its older API **does** support them.
+**Update, 2022‑04‑12**: I revised this shortcode slightly after learning that the Twitter v2 API [doesn’t currently support animations](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media).[^formerContent] So, if you know you'll want to embed tweets with videos or animated GIFs, you'll be better off using the `stweet` shortcode from the [previous article](/posts/2022/02/static-tweets-eleventy-hugo/): its older API **does** support them.
 {.yellowBox}
 
-[^formerContent]: The shortcode now simply shows nothing for such an item, as opposed to how it formerly displayed a link to the original tweet---a link which is already down in the timestamp.
+[^formerContent]: The shortcode now simply shows nothing for such an item, as opposed to how it formerly displayed a link to the original tweet --- a link which is already down in the timestamp.
 
 ## Testing with `cURL`
 
-By the way, there are times when Twitter’s APIs don’t respond because of some outage. If that happens during your development process, as it indeed did when I was finishing up work on `stweetv2`, you can confirm that it’s Twitter’s fault, not yours, by using the [`cURL` command](https://developer.ibm.com/articles/what-is-curl-command/) to submit your request to the API. For example, the `cURL` version of what we did above to get that tweet—again substituting `123456789a` for a real `BEARER_TOKEN`—is:
+By the way, there are times when Twitter’s APIs don’t respond because of some outage. If that happens during your development process, as it indeed did when I was finishing up work on `stweetv2`, you can confirm that it’s Twitter’s fault, not yours, by using the [`cURL` command](https://developer.ibm.com/articles/what-is-curl-command/) to submit your request to the API. For example, the `cURL` version of what we did above to get that tweet — again substituting `123456789a` for a real `BEARER_TOKEN` — is:
 
 ```bash
 curl "https://api.twitter.com/2/tweets?ids=1487140202141425673&expansions=author_id,attachments.media_keys&tweet.fields=created_at,text,attachments,entities,source&user.fields=name,username,profile_image_url&media.fields=preview_image_url,type,url,alt_text" -H "Authorization: Bearer 123456789a"

@@ -26,7 +26,7 @@ Sliding into the "Wow, finally, I **did** live to see it" category is [this week
 
 [^Elec]: Yes, it's [Electron](https://www.electronjs.org/)-based. I'm okay with that, especially when it enables wide compatibility for an app of Typora's well-known quality.
 
-[^tipReIE]: Most users of other Markdown editors---say, [iA Writer](https://ia.net/writer)---probably will prefer to use Typora in its Source Mode at the start. Just sayin’.
+[^tipReIE]: Most users of other Markdown editors --- say, [iA Writer](https://ia.net/writer) --- probably will prefer to use Typora in its Source Mode at the start. Just sayin’.
 
 *A pro tip for anyone who, as do I, lives in a place where fall is just now starting to feel like fall: suddenly cool temperatures can make your vehicles’ tires lose pressure much more quickly than you might think. I thought it had to get below freezing and stay there for a day or two before this would happen, but I've learned (the sort of hard way, but fortunately not **too** hard way) it happens if you simply reach the mid-forties (F.) or so.*
 

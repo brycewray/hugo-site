@@ -34,13 +34,13 @@ In such instances, I couldn’t realistically expect my Safari-using visitors to
 
 The bottom line: I’m once again using internal CSS here and probably will keep doing so indefinitely, since I suspect there’s zero likelihood for the foreseeable future that Apple will stop requiring Webkit for iOS browsers.
 
-**Update, 2022-01-14**: Well, as it turned out, "indefinitely" was pushing it a bit. After a few days of what one might call "[CLS](https://web.dev/cls/) hell" whenever one goes from one page to another within the site, due to web fonts’ being loaded anew on each page, I reverted the site to **external** CSS. (Sigh.)
+**Update, 2022‑01‑14**: Well, as it turned out, "indefinitely" was pushing it a bit. After a few days of what one might call "[CLS](https://web.dev/cls/) hell" whenever one goes from one page to another within the site, due to web fonts’ being loaded anew on each page, I reverted the site to **external** CSS. (Sigh.)
 {.yellowBox}
 
-**Further update, 2022-02-01**: The actual solution was obvious---give up web fonts. Thus, today (at least for now), I did, and re-reverted the site to internal CSS *without* "CLS hell." We'll see how that works.
+**Further update, 2022‑02‑01**: The actual solution was obvious --- give up web fonts. Thus, today (at least for now), I did, and re-reverted the site to internal CSS *without* "CLS hell." We'll see how that works.
 {.yellowBox}
 
-**Still further update, 2022-02-18**: "After further review," I'm now back to web fonts **and** back to internal CSS. (Well, *mostly* internal CSS.) I explain it in [this section](/posts/2022/02/gems-in-rough-14/#making-web-fonts-work-with-internal-css) of the [next](/posts/2022/02/gems-in-rough-14/) “Gems in the rough.”
+**Still further update, 2022‑02‑18**: "After further review," I'm now back to web fonts **and** back to internal CSS. (Well, *mostly* internal CSS.) I explain it in [this section](/posts/2022/02/gems-in-rough-14/#making-web-fonts-work-with-internal-css) of the [next](/posts/2022/02/gems-in-rough-14/) “Gems in the rough.”
 {.yellowBox}
 
 ## A wave-off on AVIFs
@@ -61,10 +61,10 @@ As I was finishing this, I saw the following tweets from the [Eleventy account](
 
 {{< stweet "1478436909957402628" >}}
 
-This will be (is?[^3]) very, very cool stuff (as [Slinkity](https://slinkity.dev) fans already know). [Here’s just one example from that aforementioned updated documentation](https://www.11ty.dev/docs/languages/custom/#example-add-sass-support-to-eleventy), specifically showing how to add [Sass](https://sass-lang.com) support to an Eleventy 1.x project—and, yes, *without* all the hassles of the `package.json` method I’ve typically used in my own Eleventy-based endeavors.
+This will be (is?[^3]) very, very cool stuff (as [Slinkity](https://slinkity.dev) fans already know). [Here’s just one example from that aforementioned updated documentation](https://www.11ty.dev/docs/languages/custom/#example-add-sass-support-to-eleventy), specifically showing how to add [Sass](https://sass-lang.com) support to an Eleventy 1.x project — and, yes, *without* all the hassles of the `package.json` method I’ve typically used in my own Eleventy-based endeavors.
 
 [^1]:	Not even cache-targeting techniques like those about which I’ve [previously written](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/) seem to work (reliably) where Safari/Webkit is concerned.
 
-[^2]:	A host-side cache dump is simple enough to do in most cases, but it then penalizes *all* your visitors—not just the iOS users—by causing reduced performance for a while.
+[^2]:	A host-side cache dump is simple enough to do in most cases, but it then penalizes *all* your visitors — not just the iOS users — by causing reduced performance for a while.
 
 [^3]:	Kinda depends on whether you want to wait for Version 1.0 to reach general availability. I’ve found the 1.0 beta quite stable so far in my own admittedly limited testing, but YMMV.

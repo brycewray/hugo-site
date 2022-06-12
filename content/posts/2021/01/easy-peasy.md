@@ -32,7 +32,7 @@ Yeah. See, my extended family is scattered all over the world and, a long time a
 
 &ndash; *Ah, good for them. Facebook is a cancer. Even if it did invent React. Well, never mind that; maybe even then. Anyway, you're starting over from scratch, right?*
 
-More or less. The good thing is, I remember the old site's layout. Even printed it out a few times---
+More or less. The good thing is, I remember the old site's layout. Even printed it out a few times ---
 
 &ndash; *You printed out a website?*
 
@@ -54,7 +54,7 @@ Oh. Right. So you're saying I need to set up both a mobile site and a regular si
 
 Responsive design?
 
-&ndash; *Yeah. You have to design and code your pages so that they resize and move their stuff around for whichever screen your viewer is using---smartphone, tablet, laptop, or full-size monitor, for that matter.*
+&ndash; *Yeah. You have to design and code your pages so that they resize and move their stuff around for whichever screen your viewer is using --- smartphone, tablet, laptop, or full-size monitor, for that matter.*
 
 How do you do that?
 
@@ -74,21 +74,21 @@ Um, Microsoft FrontPage.
 
 Fair enough. That's why I'm coming to you, so you can set me straight.
 
-&ndash; *I'll try.* [Chewing sounds.] *So let's start with how you're gonna host the site---*
+&ndash; *I'll try.* [Chewing sounds.] *So let's start with how you're gonna host the site --- *
 
 This is going to be one of those things you're gonna need to help me understand. Back then, I had nothing to do with that part.
 
-&ndash; *So how did it get on the web back in the old---back in 2000?*
+&ndash; *So how did it get on the web back in the old --- back in 2000?*
 
-This same cousin I was talking about, he worked for his company's IT department---
+This same cousin I was talking about, he worked for his company's IT department ---
 
 &ndash; *Like I do here.*
 
-Yeah. He always said he was "just a server guy." He didn't like to fool with the actual web pages. I guess that's why he sloughed it off to Facebook in the end. Anyway, he **was** willing to get the hosting set up. Every time I had any changes, I'd email him a ZIP file with the latest files---
+Yeah. He always said he was "just a server guy." He didn't like to fool with the actual web pages. I guess that's why he sloughed it off to Facebook in the end. Anyway, he **was** willing to get the hosting set up. Every time I had any changes, I'd email him a ZIP file with the latest files ---
 
 &ndash; *Hm.*
 
----and he'd put them on the site. But, like I said, he's lost interest in handling this, so this time I'll have to handle the hosting myself.
+--- and he'd put them on the site. But, like I said, he's lost interest in handling this, so this time I'll have to handle the hosting myself.
 
 &ndash; *Okay, gotcha.*
 
@@ -122,7 +122,7 @@ Oh, uh, *[sound of paper being unfolded]* Weebly&nbsp;.&nbsp;.&nbsp;.
 
 .&nbsp;.&nbsp;. and, of course, WordPress.
 
-&ndash; *Okay.* [Ahem.] *Well, uh, how frank you do want me to be? I mean, I know you and Jeannie are buddies, and she's my boss, so---*
+&ndash; *Okay.* [Ahem.] *Well, uh, how frank you do want me to be? I mean, I know you and Jeannie are buddies, and she's my boss, so ---*
 
 Please tell me what you really think. I'm coming to you because you're an expert. She said you'd give me the straight story on this stuff.
 
@@ -130,7 +130,7 @@ Please tell me what you really think. I'm coming to you because you're an expert
 
 They are? Why?
 
-&ndash; [Whispering] *God, where do I start?* [Regaining volume] *Okay. They're ultra-proprietary---*
+&ndash; [Whispering] *God, where do I start?* [Regaining volume] *Okay. They're ultra-proprietary ---*
 
 What does that mean?
 
@@ -148,9 +148,9 @@ Core Vitals?
 
 &ndash; *Yep. Like your LCP. Your FID. Your CLS.*
 
-Uh-**huh**. And what's the importance of these---Core Vitals?
+Uh-**huh**. And what's the importance of these --- Core Vitals?
 
-&ndash; *Nothing unless you don't care how slow your pages are, and also your SEO for Google although, if this is just for your family, that part's probably not---*
+&ndash; *Nothing unless you don't care how slow your pages are, and also your SEO for Google although, if this is just for your family, that part's probably not ---*
 
 Okay, so Core Vitals are important, whatever they are. I get that. So, if Weebly, and Web.com, and the rest, if they're wrong, what would you suggest?
 
@@ -176,13 +176,13 @@ Okay. And&nbsp;.&nbsp;.&nbsp;. ?
 
 &ndash; *You know what JavaScript is, right?*
 
-I hear of it occasionally. When I was doing web pages back in 2000, most of the stuff I read about it made it sound like it was a bad idea to use it because it was turned off in most browsers---
+I hear of it occasionally. When I was doing web pages back in 2000, most of the stuff I read about it made it sound like it was a bad idea to use it because it was turned off in most browsers ---
 
 &ndash; *Wow. Well, that's not the way it is now. The whole web lives and dies on JavaScript. Oh, you still have your odd-duck users who turn it off because they're paranoid conspiracy theorists, and you have to provide progressive enhancement for them, but for the most part you're good to go.*
 
 I'll pretend I understood all of that. What about the APIs?
 
-&ndash; *Application Programming Interfaces. An API lets two apps communicate with each other. The whole idea of the Jamstack is that you start with static web files for basic content, and then---if you need more functionality, like interactive forms or that sort of thing---you use APIs to communicate with external services and provide it.*
+&ndash; *Application Programming Interfaces. An API lets two apps communicate with each other. The whole idea of the Jamstack is that you start with static web files for basic content, and then --- if you need more functionality, like interactive forms or that sort of thing --- you use APIs to communicate with external services and provide it.*
 
 Ah. Okay. *[Scribbling noises.]* I guess. And markup? What are you marking up?
 
@@ -194,7 +194,7 @@ Truthfully? I never knew what it stood for. Like I told you, I just used Microso
 
 Like from Notepad?
 
-&ndash; [Coughs.] *Yeah, like from Notepad. Although there are **lots** better ways of handling that nowadays. Anyway, so the thing is, you type your content into these files, called Markdown files---*
+&ndash; [Coughs.] *Yeah, like from Notepad. Although there are **lots** better ways of handling that nowadays. Anyway, so the thing is, you type your content into these files, called Markdown files ---*
 
 I thought you said mark**up**.
 
@@ -202,7 +202,7 @@ I thought you said mark**up**.
 
 Well, **that** makes sense.
 
-&ndash; *No accounting for naming in this stuff, I'll give you that. But, like I was saying, you type your content into Markdown files, and then you use an SSG, a static site generator, to---*
+&ndash; *No accounting for naming in this stuff, I'll give you that. But, like I was saying, you type your content into Markdown files, and then you use an SSG, a static site generator, to ---*
 
 Static site generator?
 
@@ -214,11 +214,11 @@ Templates? What kind of templates?
 
 "Which" SSG? How many are we talking about?
 
-&ndash; *Oh, jeez, there's hundreds. Maybe thousands. About half of ’em exist just because somebody didn't like what was already out there and decided he could do better. They're fairly trivial to write if you're just doing it for yourself, but if you put it out there as FOSS then you have to support it, and---and you have no idea what I'm talking about, do ya?*
+&ndash; *Oh, jeez, there's hundreds. Maybe thousands. About half of ’em exist just because somebody didn't like what was already out there and decided he could do better. They're fairly trivial to write if you're just doing it for yourself, but if you put it out there as FOSS then you have to support it, and --- and you have no idea what I'm talking about, do ya?*
 
 Honest to God? No.
 
-&ndash; *Sorry. Messing with this sh---this stuff---is a hobby of mine, so I kinda get carried away. Not many people ever ask me about it. Guess it's kind of a niche-y subject.*
+&ndash; *Sorry. Messing with this sh --- this stuff --- is a hobby of mine, so I kinda get carried away. Not many people ever ask me about it. Guess it's kind of a niche-y subject.*
 
 Apparently. All right, so that's how you create the web pages themselves, right?
 
@@ -260,11 +260,11 @@ It's not the same thing?
 
 &ndash; *No, not at all.*
 
-Okay. I don't understand, but---
+Okay. I don't understand, but ---
 
 &ndash; *This is how I explain it to people. There are car dealerships where you wouldn't mind **parking** your car but you wouldn't **buy** a car from ’em in a million years. Right?*
 
-Yeah---I guess.
+Yeah --- I guess.
 
 &ndash; *Same deal. You can use GoDaddy as your domain registrar, at least until you have a chance to do better next time it comes up for renewal, but you want to host the actual website somewhere else that's Jamstack-oriented.*
 
@@ -272,17 +272,17 @@ Why does it matter?
 
 &ndash; *The old-line hosts aren't up to the job, and they charge you extra for everything. But the Jamstack-oriented hosts have tons of back-end tooling and, probably, won't cost you a thing.*
 
-*(Mumbling)* Tooling--- Wait, you mean it'll be free?
+*(Mumbling)* Tooling ---  Wait, you mean it'll be free?
 
 &ndash; *Yeah, should be.*
 
 Okay, well, that's certainly a positive. *[Sighs.]* Finally. Who are some of the hosts?
 
-&ndash; *Ah, there are plenty. Netlify, Vercel, Render, GitHub Pages, GitLab Pages---hey, even DigitalOcean and Cloudflare are getting into this now. It's a great time to be building websites.*
+&ndash; *Ah, there are plenty. Netlify, Vercel, Render, GitHub Pages, GitLab Pages --- hey, even DigitalOcean and Cloudflare are getting into this now. It's a great time to be building websites.*
 
 Okay. *[The noise of a piece of paper being flipped over.]* So, once you pick one of those as the host, what's the process?
 
-&ndash; *For most of ’em, it's pretty simple. Every time you push a commit to---*
+&ndash; *For most of ’em, it's pretty simple. Every time you push a commit to ---*
 
 Every time I do what?
 
@@ -300,7 +300,7 @@ Wow. Guess I didn't worry about that.
 
 &ndash; *Gotcha. Well, in web development, like in all software dev stuff, you've gotta do version control. That means you can essentially keep all versions of all files, as far back as possible.*
 
-But how do you keep them straight? I know you can't even have **two** files with the same name, so---?
+But how do you keep them straight? I know you can't even have **two** files with the same name, so --- ?
 
 &ndash; *No, no, you don't keep the older versions of the files, at least not the way you mean. That's why you use Git.*
 
@@ -322,9 +322,9 @@ Repo? **Repossession**?
 
 And you said something about "pushing."
 
-&ndash; *Right. For your repo, you set up a **remote** repo, like on GitHub, or GitLab, or---*
+&ndash; *Right. For your repo, you set up a **remote** repo, like on GitHub, or GitLab, or ---*
 
-*[Mumbling]* Git&nbsp;.&nbsp;.&nbsp;. Hub---
+*[Mumbling]* Git&nbsp;.&nbsp;.&nbsp;. Hub ---
 
 &ndash; *Yeah. Then, when you make any commits on your **local** repo, you push ’em out to your **remote** repo, and that's when the magic happens.*
 
@@ -340,8 +340,8 @@ Hm. *[Pause.]* Well, look, I've taken enough of your time, especially on your lu
 
 &ndash; *Sure.*
 
-I'll pick a "Jamstack-oriented" host. I'll use, um, "admin-level access" to log into GoDaddy, the "registrar" for the website domain, and I'll "point" the  domain to whichever "IP address" the host gives me. Then I'll do a "Git init" on my local computer to create a "local repo." Then I'll make web files there, using a "static site generator" and some "markup" that's called "Markdown" and some "templating" that includes "HTML" and "CSS"---and "responsive design," too, so it looks right on a phone or a tablet or a big monitor. Then I'll "commit" the changes. And I have to create a "**remote** repo," and set the host to "build" the site every time I "push" changes to that "remote repo." *[Pause.]* Oh, and the site won't have "cross-site scripting exploits" and its "Core Vitals" will be good. So, is that about it?
+I'll pick a "Jamstack-oriented" host. I'll use, um, "admin-level access" to log into GoDaddy, the "registrar" for the website domain, and I'll "point" the  domain to whichever "IP address" the host gives me. Then I'll do a "Git init" on my local computer to create a "local repo." Then I'll make web files there, using a "static site generator" and some "markup" that's called "Markdown" and some "templating" that includes "HTML" and "CSS" --- and "responsive design," too, so it looks right on a phone or a tablet or a big monitor. Then I'll "commit" the changes. And I have to create a "**remote** repo," and set the host to "build" the site every time I "push" changes to that "remote repo." *[Pause.]* Oh, and the site won't have "cross-site scripting exploits" and its "Core Vitals" will be good. So, is that about it?
 
-&ndash; *Yeah, pretty much. Good job. So when---?*
+&ndash; *Yeah, pretty much. Good job. So when ---?*
 
 You know what? *[Sound of paper being crumpled.]* I think I'm gonna tell my cousin to give me control over that frickin’ Facebook page and I'll take my chances with it. But, hey, thanks, and have a good rest-of-your-lunch. *[Click.]*
