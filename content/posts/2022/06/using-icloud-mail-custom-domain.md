@@ -11,6 +11,9 @@ date: 2022-06-13T13:26:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/using-icloud-mail-with-a-custom-domain-24pc).
+{.yellowBox}
+
 I was excited a year ago when, at its 2021 Worldwide Developers Conference (WWDC), Apple [announced](https://9to5mac.com/2021/06/07/custom-domain-names-are-coming-to-icloud-mail-with-icloud/) that one feature of its [new extra-cost iCloud+ package](https://www.macrumors.com/2021/06/07/apple-announces-icloud-with-private-relay-more/) was support for *custom domains* in iCloud Mail.
 
 Up to that point, only an `@icloud.com` address would work with this service[^meCom] but, now, people like me who got their email on one or more custom domains would be able to use those domains in connection with iCloud Mail. I knew I'd be an iCloud+ customer, anyway --- the bundled Apple services to which I'd already subscribed are cheaper via iCloud+ rather than as separate offerings --- so this additional benefit sounded like the feature which I'd long hoped Apple would provide.
