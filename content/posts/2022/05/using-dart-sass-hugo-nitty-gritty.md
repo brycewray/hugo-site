@@ -165,7 +165,7 @@ sass_embedded
     └─ dart-sass-embedded.snapshot
     └─ LICENSE
 {{< /highlight >}}
-Even though it lacks an extension, `sass_embedded\dart-sass-embedded` is a shell script that works with the actual binary, `sass_embedded\src\dart`.
+Even though it lacks an extension, `sass_embedded/dart-sass-embedded` is a shell script that works with the actual binary, `sass_embedded/src/dart`.
 
 ### Move the `sass_embedded` folder to `bin`
 
