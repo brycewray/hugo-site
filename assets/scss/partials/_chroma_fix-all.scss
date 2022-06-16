@@ -68,6 +68,12 @@ article p code {
   }
 }
 
+article p code.code-inline {
+  // font-size: var.$pokey;
+  padding: 0.25em 0.5em;
+  margin: 0 0.25em;
+}
+
 article .footnotes li code {
   white-space: normal;
 }
