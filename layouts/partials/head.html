@@ -91,12 +91,6 @@
 
     {{- partial "css.html" . -}}
 
-    {{- if hugo.IsProduction -}}
-    {{/*- Fathom - beautiful, simple website analytics -*/}}
-    <script src="https://unwavering-reward.brycewray.com/script.js" data-site="CSERHYIA" defer></script>
-    {{/*- / Fathom -*/}}
-    {{- end -}}
-
     <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#best_practices -->
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
