@@ -26,7 +26,6 @@
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
     {{ range $pages }}
-    {{- $PermaWithRSSutm = printf "%s%s" .Permalink $RSSutm -}}
     {{- $titleThis := .Title | .Page.RenderString -}}
     {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` $titleThis `”">Reply via email</a></p>`  -}}
     {{- $contentMD := .Content -}}
