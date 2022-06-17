@@ -25,8 +25,6 @@
     {{- with .OutputFormats.Get "RSS" -}}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
-    {{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
-    {{- $PermaWithRSSutm := "" -}}
     {{ range $pages }}
     {{- $PermaWithRSSutm = printf "%s%s" .Permalink $RSSutm -}}
     {{- $titleThis := .Title | .Page.RenderString -}}
@@ -35,7 +33,7 @@
     {{- $finalHTMLContent := printf "%s%s" $contentMD $emailReplyHTML -}}
     <item>
       <title>{{ $titleThis }}</title>
-      <link>{{ $PermaWithRSSutm }}</link>
+      <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
