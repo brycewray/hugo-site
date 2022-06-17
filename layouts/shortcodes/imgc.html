@@ -18,6 +18,8 @@
 {{- $alt := .Get "alt" -}}
 {{- $width := .Get "width" -}}
 {{- $height := .Get "height" -}}
+{{- $phn := false -}}
+{{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
 
 {{/*
   separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
@@ -30,26 +32,18 @@
 
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $imgBd5 := md5 $src -}}
-{{- if eq .Site.Params.Host "CFP" -}}
-  {{- $divClass := printf "%s%s" "relative imgB-" $imgBd5 -}}
-{{- else -}}
-  {{- $divClass := "relative" -}}
+{{- $divClass := "relative" -}}
+{{- $imgClass := "w-full h-auto ctrImg animate-fade" -}}
+{{- if $phn -}}
+  {{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
 {{- end -}}
-{{- $imgClass := "w-full h-auto animate-fade" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
 {{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
 {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 
-{{- if eq .Site.Params.Host "CFP" -}}
-  <style>
-    .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
-  </style>
-  <div class="relative imgB-{{ $imgBd5 }} bg-center">
-{{- else -}}
-  <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
-{{- end -}}
+<div class="{{ $divClass }}">
   <img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
   {{- with $respSizes -}}
     {{- range $i, $e := . -}}

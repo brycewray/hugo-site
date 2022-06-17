@@ -208,12 +208,29 @@ img.containedImage {
   width: 100%;
 }
 
+mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img.ctrImg {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .w-auto {
   width: auto;
 }
 
-.w-50 {
-  width: 50%;
+.img-phn {
+  width: 90%;
+  @media screen and (min-width: var.$bkpt_md) {
+    width: 65%;
+  }
+  @media screen and (min-width: var.$bkpt_lg) {
+    width: 50%;
+  }
 }
 
 .h-full {
