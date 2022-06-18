@@ -20,7 +20,7 @@ Up to that point, only an `@icloud.com` address would work with this service[^me
 
 [^meCom]: Well, of course, that's not counting those [legacy `@me.com` and `@mac.com` addresses](https://support.apple.com/en-us/HT201771) Apple issued many years ago, but I'm referring to *current* stuff.
 
-As I'd mentioned in 2019's "[The holy mail](/posts/2019/05/the-holy-mail/)," one advantage I gained in my 2017 move from a generic [Gmail](https://en.wikipedia.org/wiki/Gmail) address to a custom-domain address (hosted by [FastMail](https://fastmail.com)) was that, if I ever wanted to change providers in the future, this never again would involve telling all my various contacts to use a new address. Instead, I simply would point the appropriate online records for the domain to the new provider, and everything would continue to work just fine.
+As I'd mentioned in 2019's "[The Holy Mail](/posts/2019/05/the-holy-mail/)," one advantage I gained in my 2017 move from a generic [Gmail](https://en.wikipedia.org/wiki/Gmail) address to a custom-domain address (hosted by [FastMail](https://fastmail.com)) was that, if I ever wanted to change providers in the future, this never again would involve telling all my various contacts to use a new address. Instead, I simply would point the appropriate online records for the domain to the new provider, and everything would continue to work just fine.
 
 Don't get me wrong; I've been mostly very satisfied with FastMail --- but it *is* about fifty bucks a year. That price includes many services that I rarely or never use and which, I think, seem more useful for businesses than individuals; so I took this Apple announcement as a way I might get out of that.
 
