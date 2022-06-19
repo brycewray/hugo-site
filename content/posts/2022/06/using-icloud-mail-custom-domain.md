@@ -47,4 +47,4 @@ It's early, so the proverbial jury is still out; but I've been pleased so far. W
 
 It remains to be seen whether I'll also switch my *other* address, the Big Kahuna that serves me in all aspects of life *other than* interactions with you folks who kindly visit this website. As you can well imagine, it will depend in great measure on how things go with this first one. I have a few months before my FastMail subscription would auto-renew, so I'll have plenty of time to make a reasoned evaluation and act accordingly.
 
-I'll let you know how it goes.
+[I'll let you know how it goes](/posts/2022/06/using-icloud-mail-custom-domain-following-up/).
