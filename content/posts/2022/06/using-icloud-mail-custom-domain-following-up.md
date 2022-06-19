@@ -5,7 +5,7 @@ tags:
 title: "Using iCloud Mail with a custom domain: following up"
 description: "What happened when I moved my main email address to iCloud Mail."
 author: Bryce Wray
-date: 2022-06-18T11:27:00-05:00
+date: 2022-06-19T11:27:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---
@@ -13,7 +13,7 @@ date: 2022-06-18T11:27:00-05:00
 Here's how I ended my [initial "Using iCloud Mail with a custom domain" post](/posts/2022/06/using-icloud-mail-custom-domain/):
 
 > It remains to be seen whether I'll also switch my *other* [email] address, the Big Kahuna that serves me in all aspects of life *other than* interactions with you folks who kindly visit this website. As you can well imagine, it will depend in great measure on how things go with this first one. I have a few months before my FastMail subscription would auto-renew, so I'll have plenty of time to make a reasoned evaluation and act accordingly.
-> 
+>
 > I'll let you know how it goes.
 
 Two days later, after encountering zero non-self-inflicted problems with the first domain I'd moved to iCloud Mail, I decided to take the plunge with the main email domain, too. Here's my promised follow-up about the results.
