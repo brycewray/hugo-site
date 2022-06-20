@@ -31,6 +31,7 @@ table.noborders {
   }
   thead {
     background-color: var.$darkblue;
+    color: var.$white;
   }
   thead tr {
     @media (prefers-color-scheme: dark) {
@@ -68,6 +69,29 @@ table.leagues {
 	td.col {
 		width: 50%;
 	}
+}
+
+table.ulysses {
+  width: 100%;
+  border-collapse: collapse;
+  td {
+    width: 50%;
+    text-align: center;
+    border: 1px solid var.$black;
+    @media screen and (prefers-color-scheme: dark) {
+      border: 1px solid var.$white;
+    }
+    padding: 0;
+  }
+  thead th {
+    background-color: var.$blue;
+    border: 1px solid var.$black;
+    color: white;
+    @media screen and (prefers-color-scheme: dark) {
+      background-color: var.$gray-2-blue;
+      border: 1px solid var.$white;
+    }
+  }
 }
 
 // === end, table for MLB/NFL article
