@@ -4,7 +4,7 @@ tags:
 - social
 - code
 title: "Static tweets in Hugo: an update"
-description: "Now!! With new features!! This Hugo shortcode allows you to embed tweets with link “cards.”"
+description: "Now!! With new features!! This Hugo shortcode allows you to embed tweets with link “cards.”"
 author: Bryce Wray
 date: 2022-06-07T15:46:00-05:00
 #draft: true
