@@ -24,6 +24,7 @@
     {{- $postCodeImg := slice "post-code-img" (slice "code" "img" "post") -}}
     {{- $postCodeImgSoc := slice "post-code-img-social" (slice "code" "img" "post" "social") -}}
     {{- $postCodeImgTables := slice "post-code-img-tables" (slice "code" "img" "post" "tables") -}}
+    {{- $postCodeImgTablesYT := slice "post-code-img-tables-yt" (slice "code" "img" "post" "tables" "YouTube") -}}
     {{- $postCode := slice "post-code" (slice "code" "post") -}}
     {{- $postCodeYT := slice "post-code-yt" (slice "code" "post" "YouTube") -}}
     {{- $postImgSocYT := slice "post-img-social-yt" (slice "img" "post" "social" "YouTube") -}}
@@ -42,7 +43,7 @@
     {{- $home := slice "home" (slice "code" "home") -}}
     {{- $sitemap := slice "sitemap" (slice "sitemap") -}}
     {{- $bigSlice := slice -}}
-    {{- $bigSlice = append $postCodeImgSocYT $postCodeSocYT $postCodeSoc $postCodeImgYT $postCodeImg $postCodeImgSoc $postCodeImgTables $postCode $postCodeYT $postImgSocYT $postImgSoc $postImgYT $postImg $postSocYT $postSoc $postTables $postYT $post $about $postsList $contact $privacy $home $sitemap $bigSlice -}}
+    {{- $bigSlice = append $postCodeImgSocYT $postCodeSocYT $postCodeSoc $postCodeImgYT $postCodeImg $postCodeImgSoc $postCodeImgTables $postCodeImgTablesYT $postCode $postCodeYT $postImgSocYT $postImgSoc $postImgYT $postImg $postSocYT $postSoc $postTables $postYT $post $about $postsList $contact $privacy $home $sitemap $bigSlice -}}
     {{- $tester := "" -}}
     {{- $filePrefix := "" -}}
     {{- $targetFilePrefix := "" }}
