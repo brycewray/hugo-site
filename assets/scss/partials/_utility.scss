@@ -65,8 +65,12 @@
   line-height: 1.25;
 }
 
+.nobrk {
+  white-space: nowrap;
+}
+
 .text {
-  &-nowrap, .nobrk {
+  &-nowrap, -nobrk {
     white-space: nowrap;
     font-size: inherit;
   }
