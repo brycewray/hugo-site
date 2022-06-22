@@ -26,7 +26,7 @@ on:
 
 env:
   HUGO_VERSION: 0.101.0 # will get Extended Version below
-  DART_SASS_VERSION: 1.52.3
+  DART_SASS_VERSION: 1.53.0
   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
   TOKEN: ${{ secrets.TOKEN }}
   TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
