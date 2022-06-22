@@ -84,9 +84,9 @@
 						{{ .Description | .Page.RenderString }}
 					</p>
           <p class="posts-Dates">
-            <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>
-            {{- if ne (.PublishDate.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
-            <br /><span class="eightyFive">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>
+            <strong>{{ .PublishDate.Format "2006-01-02" }}</strong>
+            {{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
+            <br /><span class="eightyFive">Last modified {{ .Lastmod.Format "2006-01-02" }}</span>
             {{- end }}
           </p>
           <p class="legal">&nbsp;</p>

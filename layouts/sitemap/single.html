@@ -16,7 +16,7 @@
         <li><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
       {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
         {{- if (ne .Title "Posts") -}}
-        <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}<br />
+        <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong>{{- if ne (substr .Title 0 22) "The site this week: 20" -}}&nbsp;&nbsp;<span class="legal nobrk">{{ .PublishDate.Format "2006-01-02" }}</span>{{- end -}}<br />
         <span class="description">{{ .Description | .Page.RenderString }}</span></li>
         {{- end -}}
       {{- end -}}
