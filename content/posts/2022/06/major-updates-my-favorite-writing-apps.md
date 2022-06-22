@@ -15,6 +15,9 @@ date: 2022-06-21T08:14:00-05:00
 discussionId: "2022-06-major-updates-my-favorite-writing-apps"
 ---
 
+**Important note, 2022-06-22**: I made some errors herein that I have now fixed, as noted in a [subsequent post](/posts/2022/06/ulysses-27-correction/).
+{.yellowBox}
+
 June, 2022, has turned out to be a big month for the writing apps to which I most frequently turn, [iA Writer](https://ia.net/writer) and [Ulysses](https://ulysses.app). Both reached new major versions and added some long-awaited features.
 
 ## iA Writer 6
@@ -38,9 +41,9 @@ And, in case you're curious: no, iA Writer 6 *still* limits you to the same th
 
 ## Ulysses 27
 
-As for the macOS-only Ulysses 27, released June 20, its main addition is *tables*. And, yes, the Markdown it exports[^MDXL] for tables does work perfectly well with [static site generators](https://jamstack.org/generators) (SSGs), as you'll see in a bit. To create a table in Ulysses 27, you either use the main menu or type `(tbl)` in the editor. A default table appears:
+As for Ulysses 27 --- released June 20 for macOS, iOS, and iPadOS --- its main addition is *tables*. And, yes, the Markdown it exports[^MDXL] for tables does work perfectly well with [static site generators](https://jamstack.org/generators) (SSGs), as you'll see in a bit. To create a table in Ulysses 27, you either use the main menu or type `(tbl)` in the editor. A default table appears:
 
-[^MDXL]: The export is from Ulysses's proprietary Markdown XL, the only mode in which Ulysses supports tables.
+[^MDXL]: The export is from Ulysses's proprietary Markdown XL in the default Ulysses use of iCloud-based "sheets," as its docs are called. However, Ulysses also lets you create *standard* Markdown files in separate, "external" folders, and any tables you create in such Ulysses files also will work as described in this post.
 
 {{< imgc src="Ulysses-27-tables-01_1718x436.png" alt="Screen capture from Ulysses 27" width="1718" height="436" >}}
 
