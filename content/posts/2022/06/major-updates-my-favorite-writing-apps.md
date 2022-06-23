@@ -28,7 +28,7 @@ iA Writer 6 was released June 14 for macOS, iOS, and iPadOS.[^OSIA6] This versio
 
 {{< lite-youtube videoTitle="The Biggest Update to iA Writer Yet" videoId="LCUAxS7zaVk" >}}
 
-*(After having spent the last two-and-a-half years using iA Writer, I agree with him about those key shortcuts that moved, but them’s the breaks.)*
+*(After having spent the last three-and-a-half years using iA Writer, I agree with him about those key shortcuts that moved, but them’s the breaks.)*
 
 In addition to what Gravina described, the [official release announcement](https://ia.net/topics/ia-writer-6-now-with-lasers) mentioned these enhancements:
 
