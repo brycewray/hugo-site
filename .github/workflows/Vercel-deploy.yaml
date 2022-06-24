@@ -71,6 +71,6 @@ jobs:
           WORKING_DIRECTORY: 'public'
           BUILD_ENV: |
             WEBMENTION_IO_TOKEN="${{ secrets.WEBMENTION_IO_TOKEN }}"
-          #CUSTOM_DOMAINS: |
+          #ALIAS_DOMAINS: |
           # brycewray.com
           # www.brycewray.com
