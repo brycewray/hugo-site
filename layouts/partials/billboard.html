@@ -8,6 +8,5 @@
       {{- if ne (substr .Title 0 22) "The site this week: 20" -}}<br />{{- end -}}<span class="seventyFive">Last modified {{ .Lastmod.Format "2006-01-02" }}</span>
       {{- end }}    </p>
     <p class="ctr legal">{{- if $.GitInfo -}}<strong>Latest&nbsp;commit</strong>:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}</p>
-    <p class="ctr legal"><em>{{ .ReadingTime }}&ndash;{{ add 1 .ReadingTime }}&nbsp;minutes</em></p>
   </div>
 </div>
