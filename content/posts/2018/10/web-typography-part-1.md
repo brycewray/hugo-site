@@ -2,6 +2,7 @@
 #layout: singlepost
 tags:
 - post
+- code
 - img
 title: "Readable web text, pretty please"
 description: "Part 1 of a two-part series on web typography."
@@ -30,7 +31,7 @@ _At a minimum, body type on web pages should be **easily readable** by anyone wi
 By "easily readable," I mean:
 
 - **It should have decent contrast**. --- In other words, there should be enough difference between the color of the type and the color of the background.
-	I don't mean stark black on stark white, or vice versa, because that's _too_ much contrast on a display --- especially on a super-high-contrast [OLED](https://en.wikipedia.org/wiki/OLED) display such as is becoming _de rigueur_ for [smartphones](https://www.oled-info.com/oled_devices/mobile_phones). UI experts have told me they suggest a combination of #333 (really dark gray) on \#fff (white). That's what I have on this site, except for headlines and the nav menu.
+	I don't mean stark black on stark white, or vice versa, because that's _too_ much contrast on a display --- especially on a super-high-contrast [OLED](https://en.wikipedia.org/wiki/OLED) display such as is becoming _de rigueur_ for [smartphones](https://www.oled-info.com/oled_devices/mobile_phones). UI experts have told me they suggest a combination of `#333` (really dark gray) on `#fff` (white). That's what I have on this site, except for headlines and the nav menu.
 	So, no, having a substantial part of your page's body text appear as light-to-medium gray on white (or, worse, dark gray on black) isn't a good idea. By the way, the same is true for link text, particularly if you don't underline links (which I formerly didn't because I thought it was too 1990s-ish, but changed my mind after learning about the [difficulty that non-underlined links can cause, especially for the visually impaired](https://webaim.org/techniques/hypertext/link_text)). Link text should be a **different** color from your body text and **not** some color that melts into the background. Don't make me come over there and lecture you about ["mystery meat" navigation](http://www.webpagesthatsuck.com/mysterymeatnavigation.html).
 	However, there's more to this.
 - **It should have sufficient width**. --- With the ready availability of web fonts (a separate subject which I'll address in Part 2), many website designers want to use some of the slick, ultra-thin type they've seen, or implemented, in video or print. And, again, that's fine in sufficiently large **headline** text. But I draw the line on body text for a web page; that's no place for super-thin type. Indeed, it's yet another barrier to sufficient contrast.
