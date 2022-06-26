@@ -72,11 +72,9 @@ h2.h2big {
 And then the HTML:
 
 ```html
-
 <h2 class="ctr h2big darkBlue">
 	My big not-H1 headline that I want to be dark blue
 </h2>
-
 ```
 
 What I'm saying, then, is that any concerns I have about this approach definitely are *not* from the standpoint of being a warrior for purity. On this issue, I have zero credibility in that regard.
