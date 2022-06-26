@@ -55,12 +55,7 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 <span class="red">**IMPORTANT**</span>:
 
 - All of these instructions presume you have **full administrative rights** to the system you're using, whether it's a Mac, a Windows PC, or a Linux system. If you don't, stop now because you simply won't be able to do it (and shouldn't be trying). Period.
-- Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the&nbsp;.&nbsp;.&nbsp;.
-```bash
-text that looks like this
-```
-
-.&nbsp;.&nbsp;. in the entry. **Don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry, including anything that may require scrolling to the right, and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown --- no more, no less.
+- Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the {{< highlight plaintext "hl_inline=true">}}text that looks like this{{< /highlight >}} in the entry. **Don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry, including anything that may require scrolling to the right, and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown --- no more, no less.
 {.indentAfterLI}
 
 ### STEP 1: Install Hugo.
@@ -68,12 +63,16 @@ text that looks like this
 #### Step 1 for Mac/Linux
 
 1. Open the **Terminal** CLI app.
-2. If you already have the [**Homebrew** package installer app](https://brew.sh) installed, skip to the next item.  \
+2. If you already have the [**Homebrew** package installer app](https://brew.sh) installed, skip to the next item.
+
 Otherwise, install Homebrew by copying/pasting the following into Terminal and pressing **Return** or **Enter**:
+{.indentAfterLI}
+
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
   Once the Homebrew installation is complete, go on to the next item.
+{.indentAfterLI}
 
 3. [Install Hugo](https://gohugo.io/getting-started/quick-start/) by copying/pasting the following into Terminal and pressing **Return** or **Enter**:
 ```bash
@@ -83,12 +82,17 @@ brew install hugo
 #### Step 1 for Windows
 
 1. Open the **Command Prompt** CLI app (*cmd.exe*) as an admin-level user (right-click the app's icon and select **Run as Administrator**).
-2. If you already have the [**Chocolatey** package installer app](https://chocolatey.org) installed, skip to the next item.  \
+
+2. If you already have the [**Chocolatey** package installer app](https://chocolatey.org) installed, skip to the next item.
+
 Otherwise, install Chocolatey by copying/pasting the following into the Command Prompt app and pressing **Enter**:
+{.indentAfterLI}
+
 ```powershell
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
 Once the Chocolatey installation is complete, go on to the next item.
+{.indentAfterLI}
 
 3. [Install Hugo](https://gohugo.io/getting-started/installing) by copying/pasting the following into the Command Prompt app and pressing **Enter**:
 ```bash
@@ -97,13 +101,19 @@ choco install hugo -confirm
 
 ### STEP 2: Create your new site.
 
-1. Use your system's CLI app to navigate to the location on your computer where you want to create the local version of your new site.  \
+1. Use your system's CLI app to navigate to the location on your computer where you want to create the local version of your new site.
+
+
 I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack/). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.[^syncGit]
+{.indentAfterLI}
+
 2. Copy/paste the following into the CLI app and press **Return** or **Enter**:
 ```bash
 hugo new site mysite
 ```
+
 This command will create a new *mysite* directory in that location, and *mysite* will have various subdirectories of its own.[^mysite] One of those is called *themes*, which brings us to **STEP 3**.
+{.indentAfterLI}
 
 [^syncGit]: Since writing this, I have learned there are different opinions about whether it's a good idea to mix a Git repository with cloud sync, since the whole idea of a Git repo is to keep track of versions going back as far as necessary and some cloud sync operations have at least the potential to disrupt some of that. All I can say for my own experience is that it hasn't been a problem, but you should make sure your cloud setup is **not** set so that it won't keep local copies of any inactive files (*e.g.*, on a Mac, make sure iCloud is **not** set to "Optimize Mac storage"; see also [this post](/posts/2019/05/boxed-in/)), since deviations between what Git expects to see and what's actually on your drive can lead to utter Git chaos. Having seen that occur, I can assure you: you do **not** want that.
 
@@ -116,8 +126,11 @@ Like most site-building technology, Hugo uses *themes* to make a site look and p
 [^themes]:You can start with it and customize as you get more comfortable; you also can change to a different theme at any time by just repeating **STEP 3**, except with a different theme!
 
 1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
+
 2. Use your web browser to visit [https://github.com/siegerts/hugo-theme-basic](https://github.com/siegerts/hugo-theme-basic) and click the green **Clone or download** button.
+
 3. In the resulting **Clone with HTTPS** dropdown, click **Download ZIP**.
+
 4. Go ahead with the download:
 	- If your browser is set to give you a choice of download destination, select the *themes* subdirectory within *mysite* as the destination for the download of *hugo-theme-basic-master.zip* and let the download proceed (by clicking **OK** or **Save**, depending on the browser and the method).
 	- If your browser automatically downloads to a fixed location (such as a *Downloads* folder), manually move or copy the downloaded .zip file from that location to the *themes* subdirectory within *mysite*.
@@ -134,11 +147,14 @@ Like most site-building technology, Hugo uses *themes* to make a site look and p
 All the textual content --- the *posts* --- that you'll be adding in the future will be in the form of [Markdown](https://daringfireball.net/projects/markdown) files with [front matter](https://gohugo.io/content-management/front-matter/) that tells Hugo how to handle them. However, Hugo can get you started with that very simply:
 
 1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
+
 2. Copy/paste the following and then press **Return** or **Enter**:
 ```bash
 hugo new posts/my-first-post.md
 ```
 This will create a new Markdown file, *my-first-post.md*, which produces this arrangement:
+{.indentAfterLI}
+
 ```bash
 - mysite
 	- content
@@ -146,8 +162,14 @@ This will create a new Markdown file, *my-first-post.md*, which produces this ar
 			- my-first-post
 ```
 Hugo "knows" that the *content* subdirectory within *mysite* is, in essence, the top level of the site's content, so that's why you didn't have to include ```content``` within that command above.
+{.indentAfterLI}
 
-You can edit this and any other Markdown file with a plain-text editor, which every OS includes free of charge, or any of the many great Markdown apps out there (some of which also are free of charge, or very nearly so). When you want to add content, just create a new Markdown file in the *content* subdirectory. Until you're comfortable with setting up the Hugo front matter, you can simply create each file with Hugo itself as described in this step[^draft] and then edit it separately with your chosen text editor. Also, I'd suggest creating some sort of logical structure to make things easier for both you and your visitors to find --- for example, I arrange my posts according to year and month, as you can see in this page's URL --- but that's totally up to you.
+You can edit this and any other Markdown file with a plain-text editor, which every OS includes free of charge, or any of the many great Markdown apps out there (some of which also are free of charge, or very nearly so). When you want to add content, just create a new Markdown file in the *content* subdirectory.
+Until you're comfortable with setting up the Hugo front matter, you can simply create each file with Hugo itself as described in this step[^draft] and then edit it separately with your chosen text editor.
+{.indentAfterLI}
+
+Also, I'd suggest creating some sort of logical structure to make things easier for both you and your visitors to find --- for example, I arrange my posts according to year and month, as you can see in this page's URL --- but that's totally up to you.
+{.indentAfterLI}
 
 [^draft]: The default for this method of content creation is that the file will be a **draft**, which means it might not necessarily show up when you run Hugo's server as described in **STEP 5**. To get around that, just set the front matter's *draft* parameter to *false* (assuming you're ready for that content to be visible!).
 
@@ -161,13 +183,20 @@ In order to see what's going on in your browser, you now have to start Hugo's bu
 hugo server -D
 ```
 This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]
+{.indentAfterLI}
+
 [^drafts]: This will help while you're creating content; normally, you'd just use ```hugo server``` without the ```-D``` on the end, because you wouldn't publish a file if it was still a draft. The default for that command you used in **STEP 4: Add some content** is to create a draft file.
-3. **To view your locally-hosted site**, use your web browser to visit ```http://localhost:1313/```.  \
+
+3. **To view your locally-hosted site**, use your web browser to visit ```http://localhost:1313/```.
+
 You'll see that it already has one post listed, *my-first-post*, from what you did in **STEP 4: Add some content**. The resulting URL for it is ```http://localhost:1313/posts/my-first-post/```.
+{.indentAfterLI}
 
 The ```content``` part doesn't appear in the URL, since --- again --- the *content* subdirectory is the top level of the site.[^urlinfo]
+{.indentAfterLI}
 
 [^urlinfo]: The ```http://localhost:1313``` URL will work only on that system, since ```localhost``` means, well, just what it says. In time, you may want to see and test the site on other devices on your local wi-fi or Ethernet-connected network. If so, the [command to use](https://discourse.gohugo.io/t/hugo-server-only-serves-to-host-computer/5664/6), instead, is (*not* including the "drafts" stipulation here, since by the time you get to using this your knowledge will have advanced to the point where you'll probably no longer need the "drafts" thing): `hugo server --bind=$IP--baseURL=$IP:1313` --- where **$IP** represents the local IP address for the system where you're running the Hugo server. Then, on the other devices, you could visit `http://$IP:1313` to view the locally hosted site. If you're not comfortable figuring out your system's locally assigned IP address, just stick with viewing it only on the same system for now; it's not that critical, especially with nearly every modern browser possessing responsiveness emulation modes so you can see pretty clearly how a page will look on other devices.
+{.indentAfterLI}
 
 ### STEP 6: Publish the site to the web.
 
