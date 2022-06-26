@@ -1,6 +1,7 @@
 ---
 tags:
 - post
+- code
 - social
 title: "The winds of change"
 description: "Switching to Astro, or tales of a migratory nerd."
