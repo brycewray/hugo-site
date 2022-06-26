@@ -103,11 +103,11 @@ More to the point, I had to build it to be *exactly* like this one: ideally, one
 
 Before I go on (and, yeah, "go on" definitely is the accurate phrase at this point, but I did warn above that it'd be a long post), I should explain a fundamental difference between the Hugo and Gatsby SSGs. It's a difference that will help you understand a lot of the trouble I encountered in this attempted site migration.
 
-### Hugo: All-in-one
+### Hugo: all-in-one
 
 Hugo is a *self-contained executable*. It's an *app*. Just install it and, whammo, you've got Hugo and nearly all its goodness from Minute One. Of course, [you can configure Hugo](https://gohugo.io/getting-started/configuration/) to do certain things it doesn't do right off the bat; but you essentially get the whole package in that one installation, and, especially if you're not as typography-obsessed as I, you might be good to go from that point. Indeed, even if you *are*, you can get there fairly rapidly.
 
-### Gatsby: Turtles all the way down
+### Gatsby: turtles all the way down
 
 On the other hand, Gatsby is a *framework* built atop React. If you want it to do anything other than the basics, you can't just edit `/gatsby-config.js` (as well as `/gatsby-node.js` and, perhaps, `/gatsby-browser.js`); you have to load plugins. For even a site as modest as mine, I'm talking *lots* of plugins, each of which has to be installed just-so within `/gatsby-config.js`.
 
