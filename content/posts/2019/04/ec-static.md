@@ -52,14 +52,16 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 
 ## Steps to a static site
 
-<span style="color: #d10000;">**IMPORTANT**</span>:
+<span class="red">**IMPORTANT**</span>:
 
 - All of these instructions presume you have **full administrative rights** to the system you're using, whether it's a Mac, a Windows PC, or a Linux system. If you don't, stop now because you simply won't be able to do it (and shouldn't be trying). Period.
 - Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the&nbsp;.&nbsp;.&nbsp;.
 ```bash
 text that looks like this
 ```
+
 .&nbsp;.&nbsp;. in the entry. **Don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry, including anything that may require scrolling to the right, and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown --- no more, no less.
+{.indentAfterLI}
 
 ### STEP 1: Install Hugo.
 
