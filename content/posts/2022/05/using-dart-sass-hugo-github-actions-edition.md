@@ -7,7 +7,7 @@ title: "Using Dart Sass with Hugo: the GitHub Actions edition"
 description: "Still more ways to make Hugo and Embedded Dart Sass work together."
 author: Bryce Wray
 date: 2022-05-17T14:49:00-05:00
-lastmod: 2022-05-24T21:48:00-05:00
+#lastmod: 2022-05-24T21:48:00-05:00
 #draft: true
 discussionId: "2022-05-using-dart-sass-hugo-github-actions-edition.md"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -18,12 +18,6 @@ featured_image_caption: |
   <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
-{{% disclaimer %}}
-
-<strong class="red">Update, 2022‑05‑24</strong>: I am no longer using the method described herein, due to production-side problems I encountered with the site's default hosting provider, [Cloudflare Pages](https://pages.cloudflare.com) (although it worked fine with [Vercel](https://vercel.com)). I'll explain further in a [future post](/posts/2022/05/using-dart-sass-hugo-back-to-node/).\
-\
-<strong class="red">Further update, a few hours later</strong>: I re-thought this and went back to the GitHub Actions-enabled deployment method; I decided that, at least for now, it simply offers too many conveniences to blow it off, especially in favor of the slower development process required by using the Node.js Sass package mentioned in the post linked above. Will keep you advised.\
-\
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my two [previous](/posts/2022/03/using-dart-sass-hugo/) [posts](/posts/2022/03/using-dart-sass-hugo-sequel/) on this subject. This follow-up assumes you've already read them.
 {.yellowBox}
 
