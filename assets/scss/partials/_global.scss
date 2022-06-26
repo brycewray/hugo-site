@@ -1,7 +1,7 @@
 @use 'variables' as var;
 
 html, body {
-  font-family: var.$sans-serif;
+  font-family: var.$serif;
   background-color: var.$gray-GitHub-blue;
   color: var.$default-color;
   @media (prefers-color-scheme: dark) {
