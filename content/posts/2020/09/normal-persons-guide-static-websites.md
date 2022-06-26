@@ -88,11 +88,11 @@ This is because Go's *templating* --- that's how you make a single layout handle
 
 ```go-html-template
 {{ if ne $paginator.PageNumber $paginator.TotalPages }}
-	<a class="icon" aria-label="Last page" href="{{ $paginator.Last.URL }}">
-	{{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
-          </a>
+  <a class="icon" aria-label="Last page" href="{{ $paginator.Last.URL }}">
+    {{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
+  </a>
 {{ else }}
-	<span class="text-muted">{{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}</span>
+  <span class="text-muted">{{ partial "svgLastPageIcon.html" . }}{{ partial "svgLastPageIcon.html" . }}</span>
 {{ end }}
 ```
 
