@@ -1,10 +1,11 @@
 @charset 'utf-8';
 @use '../partials/reset';
+@use '../partials/fonts_Inter';
 @use '../partials/global';
 @use '../partials/utility';
 @use '../partials/nav';
-// @use '../partials/intervf'; // for Inter VF's weird obliquing stuff
+@use '../partials/intervf'; // for Inter VF's weird obliquing stuff
 @use '../partials/vweights'; // for variable fonts, sys or uploaded (test on Linux VM?)
-@use '../partials/ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
+// @use '../partials/ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
 // @use '../partials/heroimg';
 @use '../partials/print';
