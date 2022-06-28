@@ -5,7 +5,7 @@
 {{- $alt := .Get "alt" -}}
 {{- $phn := false -}}
 {{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
-{{- $hint := false -}}
+{{- $hint := "photo" -}}
 {{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
 {{- /*
   hint is applicable only to webp:
@@ -53,7 +53,7 @@
     {{- with $respSizes -}}
       {{- range $i, $e := . -}}
         {{- if ge $imgCfg.Width . -}}
-          {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s" . " webp " $hint $filter) ).RelPermalink }} {{ . }}w
+          {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s%s" . " webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
         {{- end -}}
       {{- end -}}
     {{- end -}}" sizes="{{ $dataSzes }}" />
