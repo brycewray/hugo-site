@@ -1,5 +1,5 @@
 public
-resources/_gen
+resources/_gen/assets
 resources/json
 hugo_stats.json
 node_modules
