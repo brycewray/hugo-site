@@ -36,17 +36,13 @@
 {{- $imgCfg := imageConfig (printf "%s%s" "/assets/" $src) -}}
 {{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
 
-<p>
-  imgBd5 = {{ $imgBd5 }}<br />
-  imageConfig = {{ $imgCfg }}
-</p>
 {{- if eq .Site.Params.Host "CFP" -}}
   <style>
     .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
   </style>
   <div class="relative imgB-{{ $imgBd5 }} bg-center">
 {{- else -}}
-  <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
+  <div class="relative bg-center" style="{{ $CFPstyle | safeCSS }}">
 {{- end -}}
   <picture>
     <source type="image/webp" srcset="
