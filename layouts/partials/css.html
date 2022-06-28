@@ -1,4 +1,4 @@
-{{/* CSS/SCSS */ -}}
+    {{/* CSS/SCSS */ -}}
     <!--
     <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
@@ -8,79 +8,16 @@
       Dart Sass Embedded stuff herein:
       - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
       - thanks, @bep!
-
-      And thanks very much to Daniel F. Dickinson (https://wildtechgarden.ca) for
-      helping me debug the logic, below, on 2022-06-11:
-      https://discourse.gohugo.io/t/different-results-for-if-in-params-tags-test/38990
     -*/}}
-    {{- $currentPage := .Page -}}
     {{- $css := "" -}}
-    {{- $scss := "" -}}
-    {{- $cssBuild := "scss/sectionals/" -}}{{/* init */}}
-    {{- $postCodeImgSocYT := slice "post-code-img-social-yt" (slice "code" "img" "post" "social" "YouTube") -}}
-    {{- $postCodeSocYT := slice "post-code-social-yt" (slice "code" "post" "social" "YouTube") -}}
-    {{- $postCodeSoc := slice "post-code-social" (slice "code" "post" "social") -}}
-    {{- $postCodeImgYT := slice "post-code-img-yt" (slice "code" "img" "post" "YouTube") -}}
-    {{- $postCodeImg := slice "post-code-img" (slice "code" "img" "post") -}}
-    {{- $postCodeImgSoc := slice "post-code-img-social" (slice "code" "img" "post" "social") -}}
-    {{- $postCodeImgTables := slice "post-code-img-tables" (slice "code" "img" "post" "tables") -}}
-    {{- $postCodeImgTablesYT := slice "post-code-img-tables-yt" (slice "code" "img" "post" "tables" "YouTube") -}}
-    {{- $postCode := slice "post-code" (slice "code" "post") -}}
-    {{- $postCodeYT := slice "post-code-yt" (slice "code" "post" "YouTube") -}}
-    {{- $postImgSocYT := slice "post-img-social-yt" (slice "img" "post" "social" "YouTube") -}}
-    {{- $postImgSoc := slice "post-img-social" (slice "img" "post" "social") -}}
-    {{- $postImgYT := slice "post-img-yt" (slice "img" "post" "YouTube") -}}
-    {{- $postImg := slice "post-img" (slice "img" "post") -}}
-    {{- $postSocYT := slice "post-social-yt" (slice "post" "social" "YouTube") -}}
-    {{- $postSoc := slice "post-social" (slice "post" "social") -}}
-    {{- $postTables := slice "post-tables" (slice "post" "tables") -}}
-    {{- $postYT := slice "post-yt" (slice "post" "YouTube") -}}
-    {{- $post := slice "post" (slice "post") }}
-    {{- $about := slice "post" (slice "about" "img") -}}
-    {{- $postsList := slice "post" (slice "postsList") -}}
-    {{- $contact := slice "contact" (slice "contact") }}
-    {{- $privacy := slice "privacy" (slice "privacy") -}}
-    {{- $home := slice "home" (slice "code" "home") -}}
-    {{- $sitemap := slice "sitemap" (slice "sitemap") -}}
-    {{- $bigSlice := slice -}}
-    {{- $bigSlice = append $postCodeImgSocYT $postCodeSocYT $postCodeSoc $postCodeImgYT $postCodeImg $postCodeImgSoc $postCodeImgTables $postCodeImgTablesYT $postCode $postCodeYT $postImgSocYT $postImgSoc $postImgYT $postImg $postSocYT $postSoc $postTables $postYT $post $about $postsList $contact $privacy $home $sitemap $bigSlice -}}
-    {{- $tester := "" -}}
-    {{- $filePrefix := "" -}}
-    {{- $targetFilePrefix := "" }}
-    {{- $tagItems := "" -}}
-    {{- $tags := "" -}}
-    {{- with .Params.tags -}}
-      {{ $tags = . }}
-      {{ $tags = sort $tags }}
-      {{ range $bigSlice }}
-        {{- $filePrefix = index . 0 -}}
-        {{- $tagItems = index . 1 -}}
-        {{- if eq $tags $tagItems -}}
-          {{- $cssBuild = print $cssBuild $filePrefix -}}
-          {{- $targetFilePrefix = $filePrefix -}}
-        {{- end }}
-      {{- end }}
+    {{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
+    {{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
+    {{- if hugo.IsProduction -}}
+      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
+    {{- else -}}
+      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
+      {{/*- Fingerprinting in dev due to Safari weirdness -*/}}
     {{- end -}}
-    {{ if eq $cssBuild "scss/sectionals/" -}}{{/* fallback, such as for /404.html */}}
-      {{- $cssBuild = print $cssBuild "critical" -}}
-      {{- $targetFilePrefix = "critical" -}}
-    {{- end -}}
-    {{- $cssBuild = print $cssBuild ".scss" -}}
-    {{- $targetPath := print "css/" $targetFilePrefix ".css" -}}
-    {{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" $targetPath "outputStyle" "compressed") -}}
-    {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
-    {{/*  {{- with resources.Get $cssBuild | resources.ToCSS $optionsCSS -}}
-      <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
-    {{- end }}  */}}
-    {{- with $cssBuild -}}
-      {{- $scss = resources.Get $cssBuild }}
-      {{- if $scss -}}
-        {{/*  {{- $scss = resources.Get "scss/sectionals/home.scss" -}}  */}}
-        {{- $css = $scss | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-        <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-        <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-      {{- else -}}
-        {{- warnf (printf "No scss found for page %s" $currentPage.TranslationKey) -}}
-      {{- end -}}
-    {{- end -}}
-{{/* end, CSS/SCSS */}}
+    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+  {{/* end, CSS/SCSS */}}
