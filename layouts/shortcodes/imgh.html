@@ -13,6 +13,8 @@
 */ -}}
 {{- $filter := false -}}
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
+{{- $simple := "false" -}}
+{{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
 {{- $divClass := "" -}}
 {{- $imgBd5 := md5 $src -}}
@@ -36,6 +38,7 @@
 {{- $imgCfg := imageConfig (printf "%s%s" "/assets/" $src) -}}
 {{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
 
+{{- if eq $simple "false" -}}
 {{- if eq .Site.Params.Host "CFP" -}}
   <style>
     .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
@@ -43,6 +46,7 @@
   <div class="relative imgB-{{ $imgBd5 }} bg-center">
 {{- else -}}
   <div class="relative bg-center" style="{{ $CFPstyle | safeCSS }}">
+{{- end -}}
 {{- end -}}
   <picture>
     <source type="image/webp" srcset="
@@ -61,7 +65,7 @@
         {{- end -}}
       {{- end -}}
     {{- end -}}" sizes="{{ $dataSzes }}" />
-    <img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" alt="{{ $alt }}" loading="lazy" />
+    <img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" alt="{{ $alt }}" loading="lazy" />
   </picture>
 </div>
 
