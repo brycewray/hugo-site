@@ -13,7 +13,9 @@ I won't take you back through the whole rant, especially since I linked above to
 
 > "Ah been buildin’ websites since the days of Abe Lincoln, by jingo, and Ah'm used to puttin’ images in an `/images` folder at the top level and accessin’ them from there from any dang web page Ah build. If Ah cain't do that no more, this Gatsby whipper-snapper can kiss mah grits. *[Now pardon me, sonny, while Ah go spit my tobacky juice.]*"
 
-.&nbsp;.&nbsp;. so you can well imagine the shock my *hubris* took when I learned that an insistence on where images should go **isn't** just a Gatsby requirement. It's even a [Hugo](https://gohugo.io) requirement, not to mention a requirement for the Gatsby near-beer, [Gridsome](https://gridsome.org). It all depends on how you want the site to perform where those images are concerned.
+.&nbsp;.&nbsp;. so you can well imagine the shock my *hubris* took when I learned that an insistence on where images should go **isn't** just a Gatsby requirement. It's even a [Hugo](https://gohugo.io) requirement[^depends], not to mention a requirement for the Gatsby near-beer, [Gridsome](https://gridsome.org). It all depends on how you want the site to perform where those images are concerned.
+
+[^depends]: **Update, 2022-06-28**: Although that restriction was true for Hugo when I initially wrote this in 2019, it has long since ceased to be the case. Hugo image processing now works on *global resources*, too, as explained in the [documentation](https://gohugo.io/content-management/image-processing/).
 
 If you're thinking about getting into the whole static-site thing and are wondering how you'll set it up when you do, give me just a few moments of your time while I explain what I learned. Perhaps it'll save you some steps --- or, at the very least, explain why you should arrange some content in ways you might not've originally planned.
 
