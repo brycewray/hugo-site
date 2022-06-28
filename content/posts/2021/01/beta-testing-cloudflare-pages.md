@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Beta-testing Cloudflare Pages"
 description: "I take a look at a new, possibly game-changing website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
 date: 2021-01-27T12:30:00-06:00
 lastmod: 2022-03-28T13:52:00-05:00
-#draft: false
 discussionId: "2021-01-beta-testing-cloudflare-pages"
-featured_image: "markus-spiske-KeFyYzxqmH0-unsplash_5760x3840.jpg"
-featured_image_width: 5760
-featured_image_height: 3840
-featured_image_alt: "Closeup of a monitor showing computer code"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Spiske</a>; <a href="https://unsplash.com/s/photos/web-development?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 [Cloudflare](https://cloudflare.com) announced a few weeks ago in a [blog post](https://blog.cloudflare.com/cloudflare-pages/) that it was moving into the build-your-website-on-the-[Jamstack](https://jamstack.org) arena currently inhabited by the likes of [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com), and, more recently, [DigitalOcean](https://www.digitalocean.com/products/app-platform/). Hosts like these build your website automatically every time you push changes to a connected online [Git](https://git-scm.com) repository, rather than forcing you to put together your own build chain as is required by the slightly older [Cloudflare Workers Sites](https://workers.cloudflare.com/sites) as well as Google's [Firebase](https://firebase.google.com).

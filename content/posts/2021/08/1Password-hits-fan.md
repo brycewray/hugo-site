@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- YouTube
 title: "1Password hits the fan"
 description: "An Electron-ic firestorm: a follow-up to my earlier article about password management."
 author: Bryce Wray
 date: 2021-08-14T10:20:00-05:00
 lastmod: 2022-03-28T14:00:00-05:00
 discussionId: "2021-08-1Password-hits-fan"
-featured_image: "lock-and-castle-5359174_4109x2832.jpg"
-featured_image_width: 4109
-featured_image_height: 2832
-featured_image_alt: "Security concept image: close-up view of rain-soaked padlocked chain on an outer door"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/foto_und_pinsel-6558995/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5359174">Foto_und_Pinsel</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5359174">Pixabay</a></span>
 ---
 
 Not long ago, I wrote "[Two paths to password management](/posts/2021/06/two-paths-password-management/)." It was an admittedly lengthy piece about using password management software to keep your online credentials as safe as possible.

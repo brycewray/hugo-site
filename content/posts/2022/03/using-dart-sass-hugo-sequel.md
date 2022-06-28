@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Using Dart Sass with Hugo: the sequel"
 description: "Hugo’s chief developer comes up with a way to get Embedded Dart Sass on the host, after all."
 author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
 lastmod: 2022-05-18T12:16:00-05:00
-#draft: true
 discussionId: "2022-03-using-dart-sass-hugo-sequel"
-featured_image: "sass-and-glasses_3200x1800.png"
-featured_image_width: 3200
-featured_image_height: 1800
-featured_image_alt: "Sass logo and Sass glasses icon on gradient background"
-featured_image_caption: |
-  <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my [previous post](/posts/2022/03/using-dart-sass-hugo/). This is a brief follow-up which will assume you've already read that one.

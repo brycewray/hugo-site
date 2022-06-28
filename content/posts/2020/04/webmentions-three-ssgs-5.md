@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Webmentions in three SSGs: Part 5"
 description: "Conclusion of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T16:50:00-05:00
 lastmod: 2021-05-16T10:30:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-5"
-featured_image: "letters-pen-ink-paper-2111533_4608x3456.jpg"
-featured_image_width: 4608
-featured_image_height: 3456
-featured_image_alt: "Writing concept - Fountain pen, white sheet of paper, open bottle of ink"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Bru-nO-1161770/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2111533">Bruno /Germany</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2111533">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

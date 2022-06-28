@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Back with Hugo"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00
 lastmod: 2021-05-16T10:18:00-05:00
 discussionId: "2019-09-back-with-hugo"
-featured_image: skid-mark-567668_3500x2333.jpg
-featured_image_width: 3500
-featured_image_height: 2333
-featured_image_alt: "Skid marks on asphalt"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Jan-Mallander-615621/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Jan Mallander</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

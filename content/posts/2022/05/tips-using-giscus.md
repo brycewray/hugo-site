@@ -1,21 +1,11 @@
 ---
-tags:
-- post
-- code
 title: "Tips for using giscus"
 description: "Some advice about a commenting system for static websites."
 author: Bryce Wray
 date: 2022-05-10T15:10:00-05:00
 lastmod: 2022-05-12T11:37:00-05:00
-draft: false
 #initTextEditor: VS Code
 discussionId: "2022-05-tips-using-giscus"
-featured_image: "miguel-a-amutio-27QOmh18KDc-unsplash_3785x2847.jpg"
-featured_image_width: 3785
-featured_image_height: 2847
-featured_image_alt: "An array of public address speakers mounted on a pole"
-featured_image_caption: |
-  <span class="caption">Photo: <a href="https://unsplash.com/@amutiomi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Miguel A. Amutio</a>; <a href="https://unsplash.com/s/photos/communication?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 As I noted [not long ago](/posts/2022/03/gems-in-rough-16/#trying-giscus):

@@ -1,21 +1,11 @@
 ---
-tags:
-- post
-- code
 title: "Simplify, simplify (again)"
 description: "As I was saying over a year ago before I was so rudely interrupted by life . . ."
 author: Bryce Wray
 date: 2022-03-22T13:24:00-05:00
 lastmod: 2022-05-07T13:05:00-05:00
 #initTextEditor: Ulysses
-#draft: false
 discussionId: "2021-03-simplify-simplify-again"
-featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept photo of simplicity and serenity - distant sea horizon viewed from a beach"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@oxanetruth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oxane Alexandroff</a>; <a href="/s/photos/simplicity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

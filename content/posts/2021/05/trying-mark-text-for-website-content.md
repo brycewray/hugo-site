@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Trying Mark Text for website content"
 description: "A free, cross-platform text editor for (maybe) managing your site’s content."
 author: Bryce Wray
 date: 2021-05-07T16:30:00-05:00
 lastmod: 2022-02-12T11:20:00-06:00
 discussionId: "2021-05-trying-mark-text-for-website-content"
-featured_image: "mark-text-logo-on-gradient_2400x1350.png"
-featured_image_width: 2400
-featured_image_height: 1350
-featured_image_alt: "Mark Text logo on gradient background"
-featured_image_caption: |
-  <span class="caption">Mark Text logo sourced from <a href="https://marktext.app/">Mark Text website</a></span>
 ---
 
 If you're going to have a website which, like this one, is powered by a [static site generator](https://jamstack.org/generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format --- the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down/).
@@ -82,14 +72,14 @@ Let's say I want to add a link. If I copy a URL from a browser and try to use Ma
 
 Now, I should note: that's how it works in Mark Text's *standard* appearance mode. If you prefer a sparer, iA Writer-like environment which gives you more control over that sort of thing (as I do), you can use Mark Text's "Source Code Mode"; **but**, at least in the Mac version, the **Undo** command *doesn't work* therein so, hey, no mistakes!
 
-{{< imgc src="Mark-Text_screen-cap_reg-mode-dark_1568x1090.png" alt="Screen capture of Mark Text in regular editing mode" width="1568" height="1090" >}}
+{{< imgh src="Mark-Text_screen-cap_reg-mode-dark_1568x1090.png" alt="Screen capture of Mark Text in regular editing mode" >}}
 
 *Above*: Mark Text's standard appearance.
 {.imgcCaption}
 
 <br />
 
-{{< imgc src="Mark-Text_screen-cap_SC-mode-dark_1568x1210.png" alt="Screen capture of Mark Text in Source Code Mode" width="1568" height="1210" >}}
+{{< imgh src="Mark-Text_screen-cap_SC-mode-dark_1568x1210.png" alt="Screen capture of Mark Text in Source Code Mode" >}}
 
 *Above*: Mark Text in Source Code Mode.
 {.imgcCaption}

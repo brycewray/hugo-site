@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Grid-locked no more"
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
 date: 2018-11-28T10:00:00-05:00
 lastmod: 2022-05-23T21:55:00-05:00
 discussionId: "2018-11-grid-locked-no-more"
-featured_image: "grid-3424959_5227x2935.jpg"
-featured_image_width: 5227
-featured_image_height: 2935
-featured_image_alt: "Abstract view of metal grid"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/scholty1970-7596740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3424959">Achim Scholty</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3424959">Pixabay</a></span>
 ---
 
 As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: "Never mind."

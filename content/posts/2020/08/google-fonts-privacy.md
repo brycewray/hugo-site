@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Google Fonts and privacy"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T14:35:00-05:00
 lastmod: 2021-07-08T08:24:00-05:00
 discussionId: "2020-08-google-fonts-privacy"
-featured_image: "morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg"
-featured_image_width: 3000
-featured_image_height: 2000
-featured_image_alt: "A magnifying glass over the Google logo"
-featured_image_caption: |
-  <span class="caption">Photo: <a href="https://unsplash.com/@morningbrew?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Morning Brew</a>; <a href="https://unsplash.com/s/photos/google?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 This began as a very different post. Then I did some research that changed my mind.

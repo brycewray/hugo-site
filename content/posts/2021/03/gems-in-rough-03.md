@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Gems in the rough #3"
 description: "The latest installment of unrequested advice about tinkering with websites."
 author: Bryce Wray
 date: 2021-03-06T15:55:00-06:00
 lastmod: 2022-02-12T11:30:00-06:00
-#draft: false
 discussionId: "2021-03-gems-in-rough-03"
-featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
-featured_image_width: 7315
-featured_image_height: 4881
-featured_image_alt: "Colorful gemstones"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 As one gathers navel from one's lint, so also do I gather little bits of  information I hope will be helpful for those of you who, as I do, have found a hobby in fiddling with personal [SSG](https://jamstack.org/generators)-built websites. [Back in December](/posts/2020/12/gems-in-rough/), I began issuing such items as "Gems in the rough." Here be the latest thereof.

@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Now I’m sixty-four"
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
 lastmod: 2020-03-29T09:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
-featured_image: "chevrolet-1955-stylized-829805_1280x720.jpg"
-featured_image_width: 1280
-featured_image_height: 720
-featured_image_alt: "Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/jchurch1977-1172969/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829805">jchurch1977</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829805">Pixabay</a>; edited in <a href="https://affinity.serif.com/en-us/photo/">Affinity Photo</a></span>
 oldComments: |
   <div class="container-oldComments">
     <p class="commentDisclaimer">

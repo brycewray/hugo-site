@@ -1,9 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
-- social
-- code
 title: "Fetching remote images with Eleventy"
 description: "Following up on last month’s article about doing this in Hugo, we explain how to get there in a JavaScript-based SSG."
 author: Bryce Wray
@@ -11,12 +6,6 @@ date: 2022-01-25T14:45:00-06:00
 lastmod: 2022-01-26T09:10:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2022-01-fetching-remote-images-eleventy"
-featured_image: dog-fetching-stick-6724085_5184x3456.jpg
-featured_image_width: 5184
-featured_image_height: 3456
-featured_image_alt: "A dog fetching a stick"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/annapowa-17446403/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6724085">Anna Powałowska</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6724085">Pixabay</a></span>
 ---
 
 **Update, 2022‑01‑26**: Please see the end of this post for additional info straight from the horse’s mouth, so to speak.

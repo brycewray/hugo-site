@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- YouTube
-- code
 title: "Gems in the rough #9"
 description: "Better video embeds, CFP improvements, “passtro” on Astro."
 author: Bryce Wray
 date: 2021-09-05T14:35:00-05:00
 lastmod: 2022-03-28T14:02:00-05:00
 discussionId: "2021-09-gems-in-rough-09"
-featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
-featured_image_width: 7315
-featured_image_height: 4881
-featured_image_alt: "Colorful gemstones"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).

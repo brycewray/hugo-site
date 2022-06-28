@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "New in Hugo: easier writing"
 description: "How Hugo 0.81.0 lets me do more in Markdown."
 author: Bryce Wray
 date: 2021-02-27T11:35:00-06:00
 lastmod: 2022-03-28T13:54:00-05:00
-#draft: false
 discussionId: "2021-02-new-hugo-easier-writing"
-featured_image: "mac-and-keyboard-home-office-1207834_3000x2000.jpg"
-featured_image_width: 3000
-featured_image_height: 2000
-featured_image_alt: "Closeup of iMac keyboard on desk in home office"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/marvorel-2835811/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1207834">Martin Vorel</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1207834">Pixabay</a></span>
 ---
 
 A few days ago, the [Hugo](https://gohugo.io) dev team [issued the latest version](https://gohugo.io/news/0.81.0-relnotes/) of this site's [static site generator](https://jamstack.org/generators/) (SSG). Hugo 0.81.0 added a number of goodies, as you would expect from a "dot-zero" upgrade, but one in particular has simplified my writing for this site.
@@ -71,7 +59,7 @@ When I came back to Hugo, I figured I'd lost this convenience because Hugo's bui
 
 .&nbsp;.&nbsp;. to produce the following result (borrowed from last year's ["Welcome, sweet little early bird"](/posts/2020/03/welcome-sweet-little-early-bird/) post about the slightly premature birth of our granddaughter, who's nearing her first birthday):
 
-{{< imgc src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width="1008" height="712" >}}
+{{< imgh src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" >}}
 
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough “firsts” for you there?
 {.imgcCaption}

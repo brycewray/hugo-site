@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "YouTube TV and the RSNs flap"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
 lastmod: 2022-04-03T20:30:00-05:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
-featured_image: "globe-life-park-rangers-1402096_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Baseball game at Globe Life Park, Arlington, Texas"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/rwelborn-2596238/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1402096">rwelborn</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1402096">Pixabay</a></span>
 ---
 
 Ninety years ago, a reporter asked Babe Ruth about the fact that his previous year's pay had been higher than that of the president of the United States, Herbert Hoover. The Babe [responded](https://quoteinvestigator.com/2014/12/28/better-year/), in a probable dig at Hoover's handling of the dawning Great Depression: "I had a better year than he did."

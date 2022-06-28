@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Beginner’s luck #4: the Vite edition"
 description: "Now I have an Eleventy/Vite starter, and here’s some of the code that makes it go."
 author: Bryce Wray
 date: 2021-07-25T16:46:00-05:00
 lastmod: 2022-02-12T11:08:00-06:00
 discussionId: "2021-07-beginners-luck-4-vite-edition"
-featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
-featured_image_width: 4608
-featured_image_height: 3072
-featured_image_alt: "Colorful toy alphabet blocks"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@shs521?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Holt Simpson</a>; <a href="https://unsplash.com/s/photos/toy-blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
 ---
 
 A quickie for you (if you don't count the code blocks, that is) . . .

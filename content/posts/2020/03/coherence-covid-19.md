@@ -1,5 +1,4 @@
 ---
-#layout: singlepost
 tags:
 - post
 - YouTube
@@ -9,12 +8,6 @@ author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
 lastmod: 2021-08-24T12:43:00-05:00
 discussionId: "2020-03-coherence-covid-19"
-featured_image: "wash-hands-covid-19-4968117_4032x3024.jpg"
-featured_image_width: 4032
-featured_image_height: 3024
-featured_image_alt: "Hand-washing"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/thisispatrice-15738535/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4968117">thisispatrice</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4968117">Pixabay</a></span>
 ---
 
 This is the third weekend of the month when the U.S.A. began to grasp just how big a deal that [COVID-19 a/k/a novel coronavirus](https://www.cdc.gov/coronavirus/2019-nCoV/index.html) was going to be. It's been a head-snapping experience for your friendly writer, just as it doubtless has been for almost all of you, wherever you are.

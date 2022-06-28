@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Two paths to password management"
 description: "Ways to practice superior cybersecurity."
 author: Bryce Wray
 date: 2021-06-15T16:30:00-05:00
 lastmod: 2022-03-28T13:58:00-05:00
 discussionId: "2021-06-two-paths-password-management"
-featured_image: "lock-and-castle-5359174_4109x2832.jpg"
-featured_image_width: 4109
-featured_image_height: 2832
-featured_image_alt: "Security concept image: close-up view of rain-soaked padlocked chain on an outer door"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/foto_und_pinsel-6558995/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5359174">Foto_und_Pinsel</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5359174">Pixabay</a></span>
 ---
 
 In my [most recent "Mixed nuts" post](/posts/2021/06/mixed-nuts-2021-06/), I touched briefly on the subject of [password management software](https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started/).
@@ -61,7 +51,7 @@ Fortunately, this isn't true of the basic Windows version of KeePass, which cont
 - **[KeePassXC](https://keepassxc.org/)** for Windows, macOS, and Linux.
 - **[Strongbox](https://www.strongboxsafe.com)** for macOS and iOS. (Paid on macOS, freemium on iOS.)
 
-{{< imgc src="keepassxc_unlock_db_2066x1532.png" alt="Screen capture from KeePassXC" width="2066" height="1532" >}}
+{{< imgh src="keepassxc_unlock_db_2066x1532.png" alt="Screen capture from KeePassXC" >}}
 
 The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.
 {.imgcCaption}
@@ -88,7 +78,7 @@ That, then, takes us to Option 2 among password management apps: the ones that *
 
 This is the sector of password management apps about which you see and hear the most, because it's where the serious money is being made. This involves the likes of [1Password](https://1password.com), [Bitwarden](https://www.bitwarden.com), [Keeper](https://www.keepersecurity.com), [LastPass](https://www.lastpass.com), [NordPass](https://www.nordpass.com), and [RoboForm](https://www.roboform.com), among others.
 
-{{< imgc src="bitwarden-com_screen-cap_2021-06-09_3164x1420.png" alt="Screen capture of the Bitwarden website" width="3164" height="1420" >}}
+{{< imgh src="bitwarden-com_screen-cap_2021-06-09_3164x1420.png" alt="Screen capture of the Bitwarden website" >}}
 
 The home page on the [Bitwarden website](https://www.bitwarden.com).
 {.imgcCaption}

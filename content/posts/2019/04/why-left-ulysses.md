@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- social
-- img
-- code
 title: "Why I left Ulysses"
 description: "Just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
 lastmod: 2022-03-28T13:16:00-05:00
 discussionId: "2019-04-why-left-ulysses"
-featured_image: "hand-butterfly-3751159_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Hand releases a butterfly (note: a butterfly is the Ulysses logo)"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3751159">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3751159">Pixabay</a></span>
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
@@ -63,7 +51,7 @@ At the beginning, I wished only to make blogging a little less tedious.
 
 I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-io/) [time](/posts/2019/02/old-dog-old-trick) over the  last few months that I was experimenting with other [Markdown](https://daringfireball.net/projects/markdown/) editors. While I still enjoyed writing this site's posts in Ulysses, I'd wearied of the write-export-write-export dance it required because the native Ulysses file format is proprietary, not the standalone Markdown (.md) needed by my [static site generator](https://www.staticgen.com) of choice, [Hugo](https://gohugo.io). Thus, I was trying writing apps that saved *natively* to Markdown without needing to export.[^preview]
 
-{{< imgc src="Ulysses_export_to_Markdown_750x528.jpg" alt="Screen capture of Quick Export feature of Ulysses app" width="750" height="528" >}}
+{{< imgh src="Ulysses_export_to_Markdown_750x528.png" alt="Screen capture of Quick Export feature of Ulysses app" >}}
 
 Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.
 {.imgcCaption}
@@ -92,7 +80,7 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-{{< imgc src="iCloud_sync-save_icon_in_Ulysses_634x265.jpg" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width="634" height="265" >}}
+{{< imgh src="iCloud_sync-save_icon_in_Ulysses_634x265.png" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" >}}
 
 When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device --- Houston, we have an iCloud&nbsp;sync&nbsp;problem.
 {.imgcCaption}
@@ -190,7 +178,7 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-{{< imgc src="iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg" alt="Screen capture from iA Writer app" width="1272" height="620" >}}
+{{< imgh src="iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png" alt="Screen capture from iA Writer app" >}}
 
 Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.
 {.imgcCaption}

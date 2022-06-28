@@ -1,13 +1,8 @@
 ---
-tags:
-- post
-- code
-#note: other `tags`: img, YouTube, social, code
 title: "Using iCloud Mail with a custom domain"
 description: "It took Apple a while to get it (maybe) right — but, it’s “so far, so good” on something announced at last year’s WWDC."
 author: Bryce Wray
 date: 2022-06-13T13:26:00-05:00
-#draft: true
 #initTextEditor: iA Writer
 ---
 

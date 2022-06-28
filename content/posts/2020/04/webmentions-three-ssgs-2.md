@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Webmentions in three SSGs: Part 2"
 description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs) — in this case, Eleventy."
 author: Bryce Wray
 date: 2020-04-28T16:35:00-05:00
 lastmod: 2022-04-03T22:55:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-2"
-featured_image: "pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg"
-featured_image_width: 4401
-featured_image_height: 2934
-featured_image_alt: "Communications concept - vintage pay telephones on a wall"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@ptrikutam?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pavan Trikutam</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

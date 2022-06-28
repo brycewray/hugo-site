@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Blox sux"
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
 lastmod: 2022-02-12T12:33:00-06:00
 discussionId: "2019-01-blox-sux"
-featured_image: "lego-169603_4320x3240.jpg"
-featured_image_width: 4320
-featured_image_height: 3240
-featured_image_alt: "Lego blocks arranged stylistically"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Efraimstochter-12351/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=169603">M W</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=169603">Pixabay</a></span>
 ---
 
 There's an old saying to the effect that "a poor craftsman blames his tools."
@@ -37,7 +27,7 @@ That consideration aside, said Godforsaken Unidentified Page Builder, hereafter 
 
 - **Shortcode spray** --- GUPB is one of those page builders that, if deactivated in favor of a better option, leaves behind a <em>\[bleep\]</em>ton of shortcode that is (a.)&nbsp;absolutely useless and (b.)&nbsp;a tedious chore to clean up. The following screen capture from [Pippin Williamson's excellent "WordPress page builder plugins: A critical review"](https://pippinsplugins.com/wordpress-page-builder-plugins-critical-review/) is a perfect example, even though it shows only a  fraction of some of the shortcodes mess that's really likely to result *(and, yeah, that is from GUPB, as it turns out; so, if you're willing to do a little detective work and/or you simply know your page builder shortcodes when you see ’em, you now know which page builder is GUPB)*.
 
-{{< imgc src="screen-cap-from-Pippin-Williamson-s-page-builders-review_986x482.jpg" alt="Screen capture showing shortcodes from a WordPress page builder" width="986" height="482" >}}
+{{< imgh src="screen-cap-from-Pippin-Williamson-s-page-builders-review_986x482.png" alt="Screen capture showing shortcodes from a WordPress page builder" >}}
 
 My having once specifically replaced GUPB in favor of another pagebuilder at a different company for precisely these reasons (well, except for code bloat, because they *all* do that) doesn't make it any easier.
 

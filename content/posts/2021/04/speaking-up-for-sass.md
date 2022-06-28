@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Speaking up for Sass"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
 lastmod: 2021-04-15T16:30:00-05:00
-#draft: false
 discussionId: "2021-04-speaking-up-for-sass"
-featured_image: "sass-and-glasses_3200x1800.png"
-featured_image_width: 3200
-featured_image_height: 1800
-featured_image_alt: "Sass logo and Sass glasses icon on gradient background"
-featured_image_caption: |
-  <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
 **Note, 2021‑04‑04**: I revised this article to remove some references that, as a reader correctly pointed out, didn't really fit into what I was trying to say. (One of these days, I'll learn not to write these pieces late on Friday nights when I'm really, really tired.)

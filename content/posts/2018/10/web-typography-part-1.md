@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
-- img
 title: "Readable web text, pretty please"
 description: "Part 1 of a two-part series on web typography."
 author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
 lastmod: 2022-03-28T13:13:00-05:00
 discussionId: "2018-10-web-typography-part-1"
-# featured_image: "letters-691842_2504x1676.jpg"
-# featured_image_width: 2504
-# featured_image_height: 1676
-# featured_image_alt: "Letters for old-style typesetting"
-# featured_image_caption: |
-#   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=691842">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=691842">Pixabay</a></span>
 ---
 
 As I suggested in a [recent post](/posts/2018/09/why-finally-settled-ulysses/), I'm more than a little hung up on on-screen type; so I thought I'd do a little two-part series on website typography and share some appropriate insights and tips. They come from two decades as a web designer and three-and-a-half decades as a writer and formatter --- oh, and nearly six decades of reading. Perhaps you'll find them useful.

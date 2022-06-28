@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Fast but flawed"
 description: "Two more static website hosts to consider (maybe)."
 author: Bryce Wray
 date: 2020-11-25T16:30:00-06:00
 lastmod: 2022-03-28T13:48:00-05:00
-#draft: false
 discussionId: "2020-11-fast-but-flawed"
-featured_image: "jack-van-der-spoel-dgCBjYHZ0kc-unsplash_5472x3648.jpg"
-featured_image_width: 5472
-featured_image_height: 3648
-featured_image_alt: "Closeup of spider web in a flower garden"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@doctor_punk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jack van der Spoel</a>; <a href="https://unsplash.com/s/photos/web-server?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 In "[Forward PaaS](/posts/2020/10/forward-paas)," I told you about [Cloudflare](https://cloudflare.com)'s [Platform-as-a-Service](https://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) offering, [Cloudflare Workers combined with KV storage](https://www.cloudflare.com/products/workers-kv/), and some of its aspects that intrigued me. In the end, its only real drawback is that, unlike many [other options](/posts/2020/09/normal-persons-guide-static-website-hosting/) for hosting one's static website, an optimal use thereof isn't completely free. Five bucks a month for the Workers Unbundled plan is no bank-breaker; still, as the man says, "Cheap is good, but free is better."
@@ -27,7 +16,7 @@ That's why I thought I would write this little piece about two other free hostin
 
 ## Venerableness &plus; velocity
 
-{{< imgc src="GHP-2020-11-24_2476x1340.png" alt="Screen capture of GitHub Pages section of GitHub website" width="2476" height="1340" >}}
+{{< imgh src="GHP-2020-11-24_2476x1340.png" alt="Screen capture of GitHub Pages section of GitHub website" >}}
 
 [GitHub Pages](https://pages.github.com) (GHP) first appeared in 2008. Initially requiring the [Jekyll](https://jekyllrb.com) static site generator (SSG), it now can work with just about any SSG out there --- including the two I favor, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
 
@@ -41,7 +30,7 @@ A GHP site typically has a name like *MyGitHubName.github.io*, but you can assig
 
 ## Is DOAP dope?
 
-{{< imgc src="DOAP-2020-11-24_2476x1362.png" alt="Screen capture of DigitalOcean App Platform section of DigitalOcean website" width="2476" height="1362" >}}
+{{< imgh src="DOAP-2020-11-24_2476x1362.png" alt="Screen capture of DigitalOcean App Platform section of DigitalOcean website" >}}
 
 The second choice is a recently introduced PaaS offering that's been getting some attention: [DigitalOcean](https://digitalocean.com)'s [App Platform](https://www.digitalocean.com/products/app-platform/) --- or, as I'll abbreviate it for the remainder of this article, *DOAP*. With DOAP, your original content exists on DO's infrastructure behind Cloudflare, obviously no slouch in the CDN realm.
 

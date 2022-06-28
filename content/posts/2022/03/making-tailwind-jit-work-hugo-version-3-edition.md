@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Making Tailwind JIT work with Hugo, the Version 3 edition"
 description: "A Hugo fix for Tailwind CSS v.3 — with a surprise bonus."
 author: Bryce Wray
 date: 2022-03-06T16:16:00-06:00
 lastmod: 2022-03-08T08:17:00-06:00
 discussionId: "2022-03-making-tailwind-jit-work-hugo-version-3-edition"
-featured_image: "2021-11-21_screenshot_TWCSS-on-Hugo_enlgd_3254x1564.png"
-featured_image_width: 3254
-featured_image_height: 1564
-featured_image_alt: "Screen capture from Hugo showing HTML with Tailwind CSS styles"
-#featured_image_caption:
 ---
 
 {{% disclaimer %}}

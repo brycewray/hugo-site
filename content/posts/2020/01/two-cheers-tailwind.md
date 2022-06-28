@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- social
-- code
 title: "Two cheers for Tailwind"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
 lastmod: 2021-12-15T12:27:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
-featured_image: "CSS-code-1797778_1971x1306.jpg"
-featured_image_width: 1971
-featured_image_height: 1306
-featured_image_alt: "Closeup of computer monitor showing CSS"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/WojciechKrakowiak-722397/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Wojciech Krakowiak</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

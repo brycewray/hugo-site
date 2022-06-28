@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "The version-control follies"
 description: "Why you should go GUI with version control."
 author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
 lastmod: 2020-10-25T12:40:00-05:00
 discussionId: "2018-10-version-control-follies"
-featured_image: "javascript-programming-1873854_2605x1432.jpg"
-featured_image_width: 2605
-featured_image_height: 1432
-featured_image_alt: "Computer code on a monitor"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Boskampi-3788146/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1873854">Boskampi</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1873854">Pixabay</a></span>
 ---
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don't feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving web pages are much better now, and are continuing to improve.

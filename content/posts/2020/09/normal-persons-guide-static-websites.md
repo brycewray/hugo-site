@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "A normal person’s guide to static websites"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
 date: 2020-09-22T16:35:00-05:00
 lastmod: 2022-05-23T21:55:00-05:00
-#draft: true
 discussionId: "2020-09-normal-persons-guide-static-websites"
-featured_image: "christina-wocintechchat-com-EkeThvO9VfM-unsplash_6016x4016.jpg"
-featured_image_width: 6016
-featured_image_height: 4016
-featured_image_alt: "Monochrome photo of a businesswoman using a laptop computer"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christina @ wocintechchat.com</a>; <a href="https://unsplash.com/s/photos/laptop-computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Websites are for everybody, not just geeks such as your faithful correspondent, here. That's why this article is aimed at a **normal** person like you --- a **non**-techie, **non**-geek --- who's interested in getting a website of your own, or in improving one you already have, but just don't know how to proceed.
@@ -45,11 +33,11 @@ So your choices now come down to having your site's content be generated either:
 
 Analogies aside, here are two diagrams that may also help you grasp the difference. First, the dynamic site, with its content that is generated every time somebody visits:
 
-{{< imgc src="diagram--dynamic-site_Inter_1600x900.png" alt="Diagram of a dynamic website" width="1600" height="900" >}}
+{{< imgh src="diagram--dynamic-site_Inter_1600x900.png" alt="Diagram of a dynamic website" >}}
 
 Then, the static site, with content already in place for you to see:
 
-{{< imgc src="diagram--static-site_Inter_1600x900.png" alt="Diagram of a static website" width="1600" height="900" >}}
+{{< imgh src="diagram--static-site_Inter_1600x900.png" alt="Diagram of a static website" >}}
 
 Images used to build these diagrams (all&nbsp;sourced from&nbsp;[Pixabay](https://pixabay.com)): [FiveFlowersForFamilyFirst](https://pixabay.com/users/FiveFlowersForFamilyFirst-552028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2243898); [Clker-Free-Vector-Images](https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=41259); [200&nbsp;Degrees](https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1745473); and [Mateusz&nbsp;Zdrzałek](https://pixabay.com/users/MTZD-1593970/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2488093).
 {.imgcCaption}

@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Code comfort: Eleventy and webpack"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray
 date: 2019-12-14T11:05:00-06:00
 lastmod: 2022-02-12T11:51:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
-featured_image: code-1486361_5760x3840.jpg
-featured_image_width: 5760
-featured_image_height: 3840
-featured_image_alt: "Computer code on a monitor"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/markusspiske-670330/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486361">Markus Spiske</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486361">Pixabay</a></span>
 ---
 
 **Note, 2020‑09‑09**: Although the site long since is no longer using the stack mentioned here, at least some parts of the repo [remain online for viewing by the curious](https://github.com/brycewray/eleventy_bundler).

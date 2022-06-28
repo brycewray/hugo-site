@@ -1,9 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
-- social
-- code
 title: "Fetching remote stuff with Hugo 0.90+"
 description: "It’s a marriage made in heaven: the Cloudinary free tier and Hugo Pipes’ new ability to grab remote items."
 author: Bryce Wray
@@ -11,12 +6,6 @@ date: 2021-12-11T12:41:00-06:00
 lastmod: 2021-12-18T12:34:00-06:00
 #initTextEditor: Ulysses
 discussionId: "2021-12-fetching-remote-stuff-hugo-0-90-plus"
-featured_image: dog-fetching-stick-6724085_5184x3456.jpg
-featured_image_width: 5184
-featured_image_height: 3456
-featured_image_alt: "A dog fetching a stick"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/annapowa-17446403/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6724085">Anna Powałowska</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6724085">Pixabay</a></span>
 ---
 
 **Important update**: I have updated this article due to the [release of Hugo 0.91.0](https://github.com/gohugoio/hugo/releases/tag/v0.91.0), which made a breaking change in the feature around which my original text was centered. **In short**: Hugo 0.90.x used `resources.Get` to fetch remote items but Hugo 0.91.0+ uses `resources.GetRemote` instead, so I've altered this article accordingly. You may wish to check [Hugo Issue #9285](https://github.com/gohugoio/hugo/issues/9285) to see why the change occurred.

@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Making Tailwind JIT work with Hugo"
 description: "What to do until Tailwind CSS’s JIT mode works OoTB with Hugo."
 author: Bryce Wray
 date: 2021-11-01T12:08:00-05:00
 lastmod: 2022-03-23T08:19:00-05:00
 discussionId: "2021-11-making-tailwind-jit-work-hugo"
-featured_image: "2021-11-21_screenshot_TWCSS-on-Hugo_enlgd_3254x1564.png"
-featured_image_width: 3254
-featured_image_height: 1564
-featured_image_alt: "Screen capture from Hugo showing HTML with Tailwind CSS styles"
-#featured_image_caption:
 ---
 
 {{% disclaimer %}}

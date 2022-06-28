@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Mixed nuts • July, 2020"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."
 author: Bryce Wray
 date: 2020-07-09T16:40:00-05:00
 lastmod: 2020-08-30T15:40:00-05:00
 discussionId: "2020-07-mixed-nuts-2020-07"
-featured_image: "nuts-5503118_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept image: mixed nuts on a tabletop"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 It's true that it hasn't been all that long since the [most recent](/posts/2020/05/mixed-nuts-2020-05/) edition of "Mixed Nuts," but you're here reading and I'm here tossing off drivel --- and, well, that's a quorum, right?
@@ -33,7 +23,7 @@ For all the hoo-rahing about the [$15/month price increase by YouTube TV](https:
 
 While I'm on the subject of "little birds": our new granddaughter, whom I [dubbed a "sweet little early bird"](/posts/2020/03/welcome-sweet-little-early-bird/) upon her slightly premature birth back in March, is doing just fine. She's also quite popular with her family's pets, like John, the very protective dog shown here at her side a few weeks ago:
 
-{{< imgc src="2020-06-23_Kennedy-Beck_and_John-the-dog_3200x2400.jpg" alt="A baby, Kennedy Beck, with one of her family's dogs" width="3200" height="2400" >}}
+{{< imgh src="2020-06-23_Kennedy-Beck_and_John-the-dog_3200x2400.jpg" alt="A baby, Kennedy Beck, with one of her family's dogs" >}}
 
 *I recently managed to achieve a slight performance boost for this site by dropping [Google Fonts](https://fonts.google.com) and [Flying Pages](https://npmjs.com/package/flying-pages), a [preloader](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) script. You may have better luck. (**Note, 2020‑08‑30**: Check "[Google Fonts and privacy](/posts/2020/08/google-fonts-privacy/)" and "[Good stuff without Google](/posts/2020/08/good-stuff-without-google/)" for more on the web fonts front where this site is concerned.)*
 

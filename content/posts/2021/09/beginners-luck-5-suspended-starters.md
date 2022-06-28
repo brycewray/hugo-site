@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Beginner’s luck #5: suspended starters"
 description: "That’s a wrap on further development of my SSG starter sets."
 author: Bryce Wray
 date: 2021-09-11T09:25:00-05:00
 lastmod: 2021-11-02T14:08:00-05:00
 discussionId: "2021-09-suspended-starters"
-featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
-featured_image_width: 4608
-featured_image_height: 3072
-featured_image_alt: "Colorful toy alphabet blocks"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@shs521?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Holt Simpson</a>; <a href="https://unsplash.com/s/photos/toy-blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 It's not only all good things that come to an end; the not-so-good ones usually do, too.

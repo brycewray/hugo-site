@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Mixed nuts • September, 2020"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00
 lastmod: 2022-02-12T11:39:00-06:00
 discussionId: "2020-09-mixed-nuts-2020-09"
-featured_image: "nuts-5503118_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept image: mixed nuts on a tabletop"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 Time for another "Mixed nuts" post, another selection of various and sundry emissions from my brain. And, no: I mean, even *more* various and sundry than usual.[^1]
@@ -40,9 +29,9 @@ The data from [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate li
 
 In large part, this experience with Ulysses is because, as novelist [Chris Rosser](https://chrisrosser.net) [observed](https://chrisrosser.net/posts/2020/07/17/another-look-at-ia-writer/) about these apps: "Where iA [Writer] tries to create a zen-like focused drafting experience, Ulysses nails it with its aesthetics and the graceful way in which it handles ugly markup." So exactly how *does* each app handle "ugly markup"? Look at these screen captures of how the two handle the same paragraph --- in this case, the one, above, that starts with "Another thing about Ulysses." Ulysses goes first.[^5]
 
-{{< imgc src="Ulysses_paragraph_sample_1366x562.png" alt="Screen capture of Ulysses for a given paragraph" width="1366" height="562" >}}
+{{< imgh src="Ulysses_paragraph_sample_1366x562.png" alt="Screen capture of Ulysses for a given paragraph" >}}
 <br />
-{{< imgc src="iA_Writer_paragraph_sample_1334x682.png" alt="Screen capture of iA Writer for a given paragraph" width="1334" height="682" >}}
+{{< imgh src="iA_Writer_paragraph_sample_1334x682.png" alt="Screen capture of iA Writer for a given paragraph" >}}
 
 *Although the [Next.js](https://nextjs.org) and [Nuxt.js](https://nuxtjs.org) JavaScript frameworks have [significantly](https://nextjs.org/blog/next-9-3) [improved](https://nuxtjs.org/blog/nuxt-static-improvements) their abilities to generate [static websites](https://dev.to/gtanyware/what-is-a-static-website-4k3o), **dedicated** [static site generators (SSGs)](https://staticgen.com) like [Eleventy](https://11ty.dev) (which powers this site) are ’waaaay easier to use and far less finicky. Want to build a web **app**? Either Next.js or Nuxt.js is great for that. Want to build and maintain a web**site**? Use a dedicated SSG.*
 

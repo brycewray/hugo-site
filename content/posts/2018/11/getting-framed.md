@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Getting framed"
 description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
 date: 2018-11-14T09:15:00-06:00
 lastmod: 2022-02-12T12:43:00-06:00
 discussionId: "2018-11-getting-framed"
-featured_image: "ricardo-gomez-angel-7bzbyafVTYg-unsplash_2859x1888.jpg"
-featured_image_width: 2859
-featured_image_height: 1888
-featured_image_alt: "Construction site for a building, with construction workers climbing and working within"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@ripato?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ricardo Gomez Angel</a>; <a href="https://unsplash.com/s/photos/construction?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 In an ideal world, web developers would never use [CSS frameworks](https://www.keycdn.com/blog/front-end-frameworks). There would be ample time, patience, and money for building everything from scratch to suit every single site to a tee. All load times would be instantaneous, and all browsers would be compatible with whatever a web dev chose to do.

@@ -1,13 +1,9 @@
 ---
-tags:
-- post
-- social
 title: "Simplify, simplify, maybe for real this time"
 description: "The site enters CTCAJW Mode."
 author: Bryce Wray
 date: 2022-05-21T11:30:00-05:00
 lastmod: 2022-05-25T12:41:00-05:00
-#draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-simplify-simplify-maybe-for-real-this-time"
 ---

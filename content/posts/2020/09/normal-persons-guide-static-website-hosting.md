@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "A normal person’s guide to static website hosting"
 description: "After suggesting how a non-geek could most easily have a website, I now offer thoughts on the site’s hosting."
 author: Bryce Wray
 date: 2020-09-26T13:55:00-05:00
 lastmod: 2022-02-19T12:54:00-06:00
-#draft: true
 discussionId: "2020-09-normal-persons-guide-static-website-hosting"
-featured_image: "tim-mossholder-GOMhuCj-O9w-unsplash_9000x6000.jpg"
-featured_image_width: 9000
-featured_image_height: 6000
-featured_image_alt: "Neon sign, “This must be the place,” mounted on a colorful grid pattern"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim Mossholder</a>; <a href="https://unsplash.com/s/photos/website?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 In the [last post](/posts/2020/09/normal-persons-guide-static-websites/), I made suggestions about how a normal, non-geeky person --- *i.e.*, someone very unlike Yours Truly --- could have the most painless experience in putting together a static website of his or her own.

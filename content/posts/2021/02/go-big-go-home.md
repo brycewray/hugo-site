@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Go big or Go home?"
 description: "How some image-handling code moved from Eleventy to Hugo."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
 lastmod: 2022-03-28T13:54:00-05:00
-#draft: false
 discussionId: "2021-02-go-big-go-home"
-featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
-featured_image_width: 5760
-featured_image_height: 3840
-featured_image_alt: "Closeup of computer code on a display"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a>; <a href="/s/photos/computer-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 **Note**: After you read this post, please see also [its sequel](/posts/2021/11/go-big-go-home-sequel/) for what I believe is a much more usable result.
@@ -52,7 +40,7 @@ The shortcode we're discussing here, initially created in the Eleventy site as *
 
 For example, I can insert all the code required for a responsive display of the following image&nbsp;.&nbsp;.&nbsp;.
 
-{{< imgc src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width="1984" height="1118" >}}
+{{< imgh src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" >}}
 
 Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/)
 {.imgcCaption}

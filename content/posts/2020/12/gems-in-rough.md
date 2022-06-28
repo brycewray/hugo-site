@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Gems in the rough"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
 date: 2020-12-21T12:10:00-06:00
 lastmod: 2022-02-19T12:54:00-06:00
-#draft: false
 discussionId: "2020-12-gems-in-rough"
-featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
-featured_image_width: 7315
-featured_image_height: 4881
-featured_image_alt: "Colorful gemstones"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}
@@ -29,7 +17,7 @@ Thus, in this post, I'm describing some of them for you. Perhaps this will end u
 
 ## Ahead code?
 
-{{< imgc src="index-njk_in_Nova_3202x2022.png" alt="Screen shot of index.njk template in Nova code editor" width="3202" height="2022" >}}
+{{< imgh src="index-njk_in_Nova_3202x2022.png" alt="Screen shot of index.njk template in Nova code editor" >}}
 
 As I write, I'm about a week into the 30-day free trial of the new [Nova](https://nova.app) code editor for macOS (and only macOS), the successor to [Panic](https://panic.com)'s venerable [Coda](https://panic.com/coda/). The Mac-focused Panic first released Nova only a few months ago, but has steadily improved it. As is typical for a Panic app, it's really slick and, as someone who is in the second half of his *fourth decade* as a Mac user and first became acquainted with Panic apps in the mid-"aughts," I admire its many Mac-ish touches. Unlike Microsoft's [Electron](https://www.electronjs.org/)-based [Visual Studio Code](https://code.visualstudio.com), Nova is a *native* app. It's also much easier to configure and extend than VS Code.
 
@@ -88,7 +76,7 @@ My experience has been that using *all three* of these, every time you switch ho
 
 As of the initial publication of this post, this site uses the [Inter font](https://rsms.me/inter), and specifically the [variable](https://web.dev/variable-fonts/) version thereof (which, from here, I'll call "Inter VF”). Inter is a beautiful sans-serif font that looks a lot like San Francisco, the native system font on Apple devices.
 
-{{< imgc src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" width="2164" height="698" >}}
+{{< imgh src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" >}}
 
 The problem is that, due to the vast number of [glyphs](https://en.wikipedia.org/wiki/Glyph) it contains, Inter can be a *really* large download. So you want to make sure you *[subset](https://dev.to/benjaminblack/save-your-users-data-by-subsetting-web-fonts-5eo9)* it, extracting only those parts your site will actually use, and then use your CSS to tell the site to *use* only those parts. This is referring specifically to Inter VF because I think using *just* the variable-font version, which can provide all the styles you want, is more sensible than having to do the following procedure with *multiple* conventional (static) font files:
 

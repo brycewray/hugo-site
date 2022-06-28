@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Leaner and cleaner"
 description: "After I remind myself of this site’s original, spartan appearance, changes result."
 author: Bryce Wray
 date: 2021-01-31T10:10:00-06:00
 lastmod: 2021-05-16T10:05:00-05:00
-#draft: false
 discussionId: "2021-01-leaner-cleaner"
-featured_image: "rest-5977908_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept photo of simplicity, showing single twig sticking out of still water"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/achir-1634088/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5977908">Achim Ruhnau</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5977908">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}
@@ -36,7 +25,7 @@ They happened because I wanted to recapture a cleanness and simplicity the site 
 
 In recent weeks, I've been looking at an old repository which shows how the site looked in its earliest days, back in the late summer of 2018 while it was still in development on my Mac before I actually took it live:
 
-{{< imgc src="orig-site_screen-cap_1518x1356.png" alt="Screen capture of this website’s pre-launch appearance in 2018" width="1518" height="1356" >}}
+{{< imgh src="orig-site_screen-cap_1518x1356.png" alt="Screen capture of this website’s pre-launch appearance in 2018" >}}
 
 Of course, that was over 100 [posts](/posts) ago and a lot has changed in the interim; but, in the end, I decided that the simpler and cleaner I could make the site look, the better.[^BTW]
 

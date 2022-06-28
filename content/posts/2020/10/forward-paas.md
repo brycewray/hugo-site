@@ -1,28 +1,17 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Forward PaaS"
 description: "Testing the waters on Cloudflare Workers and KV storage — an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
 lastmod: 2022-03-28T13:46:00-05:00
 discussionId: "2020-10-forward-paas"
-featured_image: "jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg"
-featured_image_width: 4032
-featured_image_height: 3024
-featured_image_alt: "Photo concept of high-bandwidth computer networking: Strands of glowing cables representing fiber-optical cables"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@jjying?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">JJ Ying</a>; <a href="https://unsplash.com/s/photos/network?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 It will come as no surprise to my regular readers that I like New Shiny, especially where this little old website is concerned. Well, I've succumbed again, for at least a test drive of an interesting [platform as a service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service) offering from [Cloudflare](https://cloudflare.com).
 
 ## Workers sites and Workers KV
 
-{{< imgc src="Cloudflare_Workers_scrshot_2020-10-20_2526x1440.png" alt="Screen capture of Cloudflare Workers web page" width="2526" alt="1440" >}}
+{{< imgh src="Cloudflare_Workers_scrshot_2020-10-20_2526x1440.png" alt="Screen capture of Cloudflare Workers web page" >}}
 
 [Cloudflare Workers](https://workers.cloudflare.com/) have been around [since 2017](https://blog.cloudflare.com/introducing-cloudflare-workers/). They allow developers to put code at the "edge" of Cloudflare's worldwide [reverse-proxy](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/) [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), letting users worldwide see faster results since it puts the content "closer" to those users.
 

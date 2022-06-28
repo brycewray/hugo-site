@@ -1,7 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Curmudgeonish thoughts for 2021"
 description: "Another year, another grievances list."
 author: Bryce Wray
@@ -9,12 +6,6 @@ date: 2021-11-09T08:56:00-06:00
 lastmod: 2022-03-28T14:04:00-05:00
 draft: false
 discussionId: "2021-11-curmudgeonish-thoughts-2021"
-featured_image: "stress-ball-6071852_4000x2667.jpg"
-featured_image_width: 4000
-featured_image_height: 2667
-featured_image_alt: "Annoyance concept: stress ball with angry expression painted on it"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/bellahu123-10783290/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6071852">Bella H.</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6071852">Pixabay</a></span>
 ---
 
 We're in the eleventh month of this year, so welcome to the fourth annual edition of my "curmudgeonish thoughts" post, which I hope remains true to the ideas behind its [original version](/posts/2018/11/some-curmudgeonish-thoughts/). Pet peeves? I've got ’em. Let's go.

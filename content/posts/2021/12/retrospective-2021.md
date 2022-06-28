@@ -1,21 +1,11 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Retrospective: 2021"
 description: "Reflections on some of the items discussed here in the outgoing year."
 author: Bryce Wray
 date: 2021-12-29T15:43:00-06:00
 #lastmod:
-#draft: true
 #initTextEditor: Ulysses
 discussionId: "2021-12-retrospective-2021"
-featured_image: "time-2825962_5800x3867.jpeg" #NOTE: Never change that filename to ".jpg"
-featured_image_width: 5800
-featured_image_height: 3867
-featured_image_alt: "Concept image of passing time, showing multiple clocks arrayed around photo of galaxial space"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2825962">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2825962">Pixabay</a></span>
 ---
 
 Here’s my annual summary of the outgoing year’s posts. Please note that I’m handling this edition quite differently from how I reflected back on my writings of [2019](/posts/2019/12/sorta-strange-ssg-trip/) and [2020](/posts/2020/12/through-with-2020/). Since this year is when I first began linking an [HTML sitemap](/sitemap)[^1] from the bottom of each page, I’ll spare you the post-by-post description given by the previous year-enders and, instead, give you a more general look at some of my over-arching topics for 2021.

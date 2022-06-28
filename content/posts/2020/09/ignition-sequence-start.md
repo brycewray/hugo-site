@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Ignition sequence start"
 description: "GitHub Actions to deploy to Firebase Hosting."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
 lastmod: 2022-04-03T22:09:00-05:00
-#draft: true
 discussionId: "2020-09-ignition-sequence-start"
-featured_image: "spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg"
-featured_image_width: 3000
-featured_image_height: 2000
-featured_image_alt: "SpaceX rocket launching from the Kennedy Space Center in Florida"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@spacex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">SpaceX</a>; <a href="https://unsplash.com/s/photos/launch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

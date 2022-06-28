@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Hashing out a cache-busting fix for Eleventy"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
 lastmod: 2021-06-02T16:43:00-05:00
-draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
-featured_image: "csshash-js_in_Nova_2786x1650.png"
-featured_image_width: 2786
-featured_image_height: 1650
-featured_image_alt: "Screen capture of JavaScript file in the Nova code editor"
-featured_image_caption: |
-  <span class="caption">Image: <em>cssdate.js</em> in the <a href="https://nova.app" target="_blank" rel="noopener">Nova</a> code&nbsp;editor, which I was trialing when I first published this&nbsp;post</span>
 ---
 
 *Up-front disclaimer: No proverbial horses were beaten to death (at least, not by me) during the writing of the following --- although I could see how you might get a different impression.*

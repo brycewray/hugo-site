@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Eleventy plus Vite = elite"
 description: "Re-bundling, but without the pain of webpack."
 author: Bryce Wray
 date: 2021-07-24T10:46:00-05:00
 lastmod: 2022-03-28T13:59:00-05:00
 discussionId: "2021-07-eleventy-vite-elite"
-featured_image: "Eleventy-and-Vite-logos__with_daniele-levis-pelusi-nEczFlV-GMI-unsplash_3000x2000_90pct.jpg"
-featured_image_width: 3000
-featured_image_height: 2000
-featured_image_alt: "Purple-tinted galaxy with Eleventy and Vite logos positioned above it"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Daniele Levis Pelusi</a> via <a href="https://unsplash.com/s/photos/future?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a>; Eleventy and Vite logos from their <a href="https://11ty.dev" target="_blank" rel="noopener">respective</a> <a href="https://vitejs.dev" target="_blank" rel="noopener">websites</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
 {{% disclaimer %}}
@@ -125,7 +114,7 @@ A year earlier, I might've opted instead for the supposedly easier and smarter P
 
 No, this time, I was going to give Vite a try.
 
-{{< imgc src="ViteJS-home-page-2021-07-23_2522x1428.png" alt="Vite website home page as of 2021-07-23" width="2522" height="1428" >}}
+{{< imgh src="ViteJS-home-page-2021-07-23_2522x1428.png" alt="Vite website home page as of 2021-07-23" >}}
 
 Vite, the brainchild of [Vue.js](https://vuejs.org) creator [Evan You](https://evanyou.me/), is a bundler built atop another bundler, the blazing fast [esbuild](https://esbuild.github.io/). However, Vite, whose first version was based to some extent on the [Rollup](https://rollupjs.org) bundler, can bundle many more types of files out of the box (although, as I'll later note, it currently has problems in that regard). That makes it considerably more practical for web developers, especially since its configuration is far less complicated than that of esbuild. And, thanks to its [Go](https://go.dev)-based esbuild underpinnings, Vite also is an order of magnitude faster than not only webpack but also Parcel and pretty much all other JavaScript-based bundlers.
 

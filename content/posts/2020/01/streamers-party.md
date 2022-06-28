@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Streamers’ party"
 description: "I finally jump off the sinking ship that is cable television — while also regaling you with tales of yesteryear."
 author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
 lastmod: 2022-02-12T11:45:00-06:00
 discussionId: "2020-01-streamers-party"
-featured_image: streaming_glenn-carstens-peters-EOQhsfFBhRk-unsplash_4019x2674.jpeg #NOTE: Never change that filename to ".jpg"
-featured_image_width: 4019
-featured_image_height: 2674
-featured_image_alt: "Streaming video concept: closeup of a hand holding a streaming video remote control in front of a blurred-out television set"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@glenncarstenspeters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Glenn Carstens-Peters</a>; <a href="https://unsplash.com/s/photos/streaming-video?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 At long last, my household has [cut the cord](https://en.wikipedia.org/wiki/Cord-cutting). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).

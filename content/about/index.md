@@ -1,8 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- about
-- img
 type: about
 title: About me
 description: Not a bio (you’d fall asleep), but just some explanatory observations.
@@ -10,12 +6,6 @@ author: Bryce Wray
 date: 2018-09-14T15:00:00-05:00
 lastmod: 2021-01-30T13:55:00-05:00
 discussionId: "about"
-featured_image: question-mark-over-mac-keyboard-49958_1280x905.jpg
-featured_image_width: 1280
-featured_image_height: 905
-featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Dalomo-5179/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=49958">Dalomo</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=49958">Pixabay</a></span>
 ---
 
 Welcome.
@@ -24,7 +14,7 @@ Eons ago, when [the web was a new thing](http://info.cern.ch/hypertext/WWW/ThePr
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-{{< imgc src="gte-net_HTML_1997-04-17_crop_1280x715.jpg" alt="HTML code from a 1997 website" width="1280" height="715" >}}
+{{< imgh src="gte-net_HTML_1997-04-17_crop_1280x715.jpg" alt="HTML code from a 1997 website" >}}
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites --- mine among them.
 

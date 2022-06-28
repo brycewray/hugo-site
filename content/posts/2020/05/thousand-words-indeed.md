@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "A thousand words, indeed"
 description: "Feelings about look-and-feel: how and why “hero images” have returned to this site."
 author: Bryce Wray
 date: 2020-05-22T18:00:00-05:00
 lastmod: 2022-04-03T21:19:00-05:00
 discussionId: "2020-05-thousand-words-indeed"
-featured_image: colorful-flower-field-250016_4984x3607.jpg
-featured_image_width: 4984
-featured_image_height: 3607
-featured_image_alt: "Colorful field of flowers under a beautiful blue sky"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/DeltaWorks-37465/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Kohji Asakawa</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=250016">Pixabay</a>
 ---
 
 {{% disclaimer %}}

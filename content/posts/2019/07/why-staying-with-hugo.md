@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- social
-- code
 title: "Why I’m staying with Hugo"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
 lastmod: 2022-05-23T21:55:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: nikko-macaspac-6SNbWyFwuhk-unsplash_2391x1593.jpg
-featured_image_width: 2391
-featured_image_height: 1593
-featured_image_alt: "Seeking safety concept - hand reaching out of water for help."
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@nikkotations?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">nikko macaspac</a>; <a href="https://unsplash.com/s/photos/chaos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</span>
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">

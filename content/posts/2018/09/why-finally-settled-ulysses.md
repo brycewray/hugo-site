@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Why I finally settled on Ulysses"
 description: "How I came to realize why one particular creative writing app was a better fit for me as compared to its chief rival."
 author: Bryce Wray
 date: 2018-09-22T11:04:36-05:00
 lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2018-09-why-finally-settled-ulysses"
-featured_image: "Ulysses-Preferences-General-screen-shot-dark-mode_dk-blue_bkgd_1853x1043.png"
-featured_image_width: 1853
-featured_image_height: 1043
-featured_image_alt: "Screen capture - Ulysses app preferences window"
-featured_image_caption: |
-  <span class="caption">Image: <strong>Preferences</strong> window in the Ulysses app</span>
 ---
 
 As I write this in late September, 2018, it's a little over a year since I began writing a novel I really, truly thought I'd have finished by now.

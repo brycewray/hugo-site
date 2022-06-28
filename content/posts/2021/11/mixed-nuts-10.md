@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- YouTube
 title: "Mixed nuts #10"
 description: "A few things currently on my so-called mind."
 author: Bryce Wray
 date: 2021-11-26T13:02:00-06:00
 lastmod: 2021-11-28T11:21:00-06:00
 discussionId: "2021-11-mixed-nuts-10"
-featured_image: "nuts-5503118_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept image: mixed nuts on a tabletop"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 Each entry in the "Mixed nuts" series is a collection of random and, occasionally, relevant observations. The series originally was inspired, as noted in the [first "Mixed nuts" post](/posts/2019/11/mixed-nuts-2019-11/), by the famed "Scattershooting" newspaper columns penned by the late Blackie Sherrod.

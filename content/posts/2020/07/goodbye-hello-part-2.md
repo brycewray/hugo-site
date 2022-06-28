@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Goodbye and hello • Part 2"
 description: "Why I decided to come back to Netlify."
 author: Bryce Wray
 date: 2020-07-31T17:35:00-05:00
 lastmod: 2022-03-28T13:42:00-05:00
 discussionId: "2020-07-goodbye-hello-2"
-featured_image: "welcome-mat-705102_4368x2912.jpg"
-featured_image_width: 4368
-featured_image_height: 2912
-featured_image_alt: "A welcome mat in front of a home"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/YouComMedia-907282/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">YouComMedia</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=705102">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Using Eleventy’s official image plugin"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
 lastmod: 2022-02-04T21:08:00-06:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
-featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Close-up photo of camera lens with colorful mood lighting"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@theregisti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">TheRegisti</a>; <a href="https://unsplash.com/s/photos/camera-lens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 **Recommendation**: While I very much appreciate your stopping by to read this, I **strongly** recommend that, instead, you check out [Aleksandr Hovhannisyan](https://github.com/AleksandrHovhannisyan)'s **far** superior article, "[Lazily Loading Images with the 11ty Image Plugin](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-lazy-loading/)."
@@ -175,7 +164,7 @@ Now, just build your site, and Eleventy Image will do its magic everywhere withi
 
 .&nbsp;.&nbsp;.&nbsp;and the result thereof:
 
-{{< imgc-nobg src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" width="3264" height="2448" >}}
+{{< imgh-nobg src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" >}}
 
 **Disclaimer**: Image is sourced from Cloudinary (without using Eleventy&nbsp;Image) whenever the site is built with <span class="text-nowrap">a non-Eleventy&nbsp;SSG,</span> **but** this does show the result of the generated&nbsp;code.
 {.imgcCaption}

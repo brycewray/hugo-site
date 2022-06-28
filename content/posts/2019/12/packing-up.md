@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Packing up"
 description: "Eleventy and webpack are a powerful pair."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
 lastmod: 2022-03-28T13:22:00-05:00
 discussionId: "2019-12-packing-up"
-featured_image: "chain-11ty-webpack-3867751_1920x1080.jpg"
-featured_image_width: 1920
-featured_image_height: 1080
-featured_image_alt: "Eleventy and webpack logos over a chain"
-featured_image_caption: |
-  <span class="caption">Images: <a href="https://11ty.dev">Eleventy site</a>; <a href="https://webpack.js.org">webpack site</a>; <a href="https://pixabay.com/users/Skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Rudy and Peter Skitterians</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

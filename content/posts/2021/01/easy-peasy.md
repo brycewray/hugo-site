@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Easy-peasy"
 description: "A theoretical conversation about building static websites."
 author: Bryce Wray
 date: 2021-01-03T10:10:00-06:00
 lastmod: 2022-03-28T13:50:00-05:00
-#draft: false
 discussionId: "2021-01-easy-peasy"
-featured_image: "rubiks-cube-3038657_3008x2000.jpg"
-featured_image_width: 3008
-featured_image_height: 2000
-featured_image_alt: "Puzzles concept - Rubik’s Cube puzzle toy"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ben-rock-7352082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3038657">Ben Rock</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3038657">Pixabay</a></span>
 ---
 
 **Acknowledgment**: This is based on, and an attempted homage to, "[It's The Future](https://circleci.com/blog/its-the-future/)" by Paul Biggar and the admittedly derivative "[How it feels to learn JavaScript in 2016](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f)" by Jose Aguinaga. I do **not** pretend this is in the originals’ amazing league.

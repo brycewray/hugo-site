@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Simplify, simplify"
 description: "A Thoreau-ly fine website, or the result of choosing between simplicity and FOMO."
 author: Bryce Wray
 date: 2021-02-06T21:00:00-06:00
 lastmod: 2022-03-28T13:53:00-05:00
-#draft: false
 discussionId: "2021-02-simplify-simplify"
-featured_image: "oxane-alexandroff-Z0ccygTNEfM-unsplash_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept photo of simplicity and serenity - distant sea horizon viewed from a beach"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@oxanetruth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oxane Alexandroff</a>; <a href="/s/photos/simplicity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Why I kept Ulysses"
 description: "Renewing the subscription for another year."
 author: Bryce Wray
 date: 2020-06-07T16:15:00-05:00
 lastmod: 2022-04-03T22:16:00-05:00
 discussionId: "2020-06-why-kept-ulysses"
-featured_image: "Ulysses-logo-over-Mac-keyboard_1280x720.jpg"
-featured_image_width: 1280
-featured_image_height: 720
-featured_image_alt: "Ulysses app’s butterfly-and-pen logo over a keyboard"
-featured_image_caption: |
-  <span class="caption">Ulysses logo (over my photo of a keyboard): <a href="https://ulysses.app">Ulysses GmbH & Co.</a></span>
 ---
 
 Numbers don't lie. Well, at least *these* numbers don't.

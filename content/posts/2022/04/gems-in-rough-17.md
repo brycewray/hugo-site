@@ -1,6 +1,4 @@
 ---
-tags:
-- post
 title: "Gems in the rough #17"
 description: "A GitHub Discussions oddity, Netlify Edge Functions, feed readers with built-in browsers."
 author: Bryce Wray
@@ -8,12 +6,6 @@ date: 2022-04-28T15:26:00-05:00
 lastmod: 2022-05-07T13:05:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-04-gems-in-rough-17"
-featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
-featured_image_width: 7315
-featured_image_height: 4881
-featured_image_alt: "Colorful gemstones"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

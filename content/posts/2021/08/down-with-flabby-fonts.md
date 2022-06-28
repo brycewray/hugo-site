@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Down with flabby fonts"
 description: "How to subset large web font files to improve your site’s performance."
 author: Bryce Wray
 date: 2021-08-08T14:00:00-05:00
 lastmod: 2022-03-23T08:22:00-05:00
 discussionId: "2021-08-down-with-flabby-fonts"
-featured_image: "typography-1069409_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Closeup view of type sheet showing type specifications"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/fill-8988/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1069409">Florian Pircher</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1069409">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}
@@ -34,7 +23,7 @@ Because I keep seeing the appearance of *non*-downsized fonts in the code of mor
 
 As of the initial publication of this post, this site uses the [Inter font](https://rsms.me/inter), and specifically the [variable](https://web.dev/variable-fonts/) version thereof (which, from here, I'll call "Inter VF”). Inter is a beautiful sans-serif font that looks a lot like San Francisco, the native system font on Apple devices.
 
-{{< imgc src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" width="2164" height="698" >}}
+{{< imgh src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" >}}
 
 The problem is that, due to the vast number of [glyphs](https://en.wikipedia.org/wiki/Glyph) it contains, Inter can be a *really* large download. So you want to make sure you *[subset](https://dev.to/benjaminblack/save-your-users-data-by-subsetting-web-fonts-5eo9)* it, extracting only those parts your site will actually use, and then use your CSS to tell the site to *use* only those parts. This is referring specifically to Inter VF because I think using *just* the variable-font version, which can provide all the styles you want, is more sensible than having to do the following procedure with *multiple* conventional (static) font files:
 

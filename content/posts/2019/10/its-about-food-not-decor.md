@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "It’s about the food, not the decor"
 description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00
 lastmod: 2021-05-16T10:20:00-05:00
 discussionId: "2019-10-its-about-food-not-decor"
-featured_image: "mount-horeb-lunch-4162348_3000x2006.jpg"
-featured_image_width: 3000
-featured_image_height: 2006
-featured_image_alt: "Duotone photo of a diner with customers waiting to be served"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/MikeGoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Mike Goad</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

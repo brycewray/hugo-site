@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Murdered darlings"
 description: "R.I.P., WIP: a farewell to this site’s original purpose."
 author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
 lastmod: 2022-04-03T20:49:00-05:00
 discussionId: "2020-04-murdered-darlings"
-featured_image: "candles-memorial-2905395_5472x3648.jpg"
-featured_image_width: 5472
-featured_image_height: 3648
-featured_image_alt: "Candles lit in memoriam of the dead"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Arcaion-2057886/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Henryk Niestrój</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Headers up"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-05-01T11:43:00-05:00
 lastmod: 2021-06-20T10:49:00-05:00
 discussionId: "2021-05-headers-up"
-featured_image: "server-room-90389_4818x3212.jpg"
-featured_image_width: 4818
-featured_image_height: 3212
-featured_image_alt: "Floor view of data center showing numerous racks of servers"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/kewl-24755/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=90389">kewl</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=90389">Pixabay</a></span>
 ---
 
 As I wrote [a few months ago](/posts/2021/01/beta-testing-cloudflare-pages), [Cloudflare Pages](https://pages.cloudflare.com) --- which has since [emerged from beta testing](https://blog.cloudflare.com/cloudflare-pages-ga/) --- is yet another in a growing list of [places](/posts/2020/09/normal-persons-guide-static-website-hosting) where you can host [static websites](/posts/2020/09/normal-persons-guide-static-websites). Back then, I dinged it for not giving you the ability to edit the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) of a Pages site's content so you can control how a browser [caches](https://web.dev/http-cache/) that content for better performance.
@@ -44,7 +33,7 @@ I gratefully replied:
 
 In this scenario, your website's DNS is managed in Cloudflare, where your DNS settings screen shows info like this:
 
-{{< imgc src="screen-cap-cloudflare-DNS_edit_1040x609.png" alt="Cloudflare DNS settings display" width="1040" height="609" >}}
+{{< imgh src="screen-cap-cloudflare-DNS_edit_1040x609.png" alt="Cloudflare DNS settings display" >}}
 
 You'll see here that there are two entries[^DNSitems] with the little orange cloud icon and the word "Proxied" under "Proxy status," each referring to an item under "Content" that ends in `.pages.dev` (the default subdomain for a Cloudflare Pages site before one assigns a custom domain to it). With these settings, every hit on the site gets *proxied* --- essentially, intercepted --- so Cloudflare can do things with it.
 

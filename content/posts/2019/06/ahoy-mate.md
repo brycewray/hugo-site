@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- social
-- img
 title: "Ahoy, ’Mate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps — like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
 lastmod: 2021-12-15T12:27:00-06:00
 discussionId: "2019-06-ahoy-mate"
-featured_image: "p-o-boxes--elizabeth-kay-9szCcOw4BWo-unsplash_3634x2725.jpg"
-featured_image_width: 3634
-featured_image_height: 2725
-featured_image_alt: "Old-style post office boxes"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@elizabeth_kay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elizabeth Kay</a>; <a href="https://unsplash.com/s/photos/mail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
@@ -47,7 +36,7 @@ And that continues, as I have become interested in [MailMate](https://freron.com
 
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much --- and that's fine with the good doctor, not to mention the app's many adherents.
 
-{{< imgc src="MailMate_screen_cap_1619x720.jpg" alt="Screen capture of the MailMate app" width="1619" height="720" >}}
+{{< imgh src="MailMate_screen_cap_3454 x1536.png" alt="Screen capture of the MailMate app" >}}
 
 Image: Screen capture of MailMate, with its Latin-displaying "distortion mode" engaged for privacy's sake.
 {.imgcCaption}

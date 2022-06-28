@@ -1,12 +1,9 @@
 ---
-tags:
-- post
 title: "The IndieWeb experiment ends"
 description: "My timing wasn’t the greatest."
 author: Bryce Wray
 date: 2022-05-29T10:48:00-05:00
 #lastmod: 2022-05-29T11:41:00-05:00 # typo
-#draft: true
 #initTextEditor: iA Writer
 discussionId: "2022-05-indieweb-experiment-ends"
 ---

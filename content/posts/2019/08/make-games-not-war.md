@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- tables
 title: "Make games, not war"
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."
 author: Bryce Wray
 date: 2019-08-03T11:00:00-05:00
 lastmod: 2019-08-07T12:42:00-05:00
 discussionId: "2019-08-make-games-not-war"
-featured_image: "stadium-seats-3310891_5472x3648.jpg"
-featured_image_width: 5472
-featured_image_height: 3648
-featured_image_alt: "Rows of empty seats in a sports stadium"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/4711018-4711018/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3310891">4711018</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3310891">Pixabay</a></span>
 ---
 
 Feel free to consider this a once-in-a-while break from my usual tech-y stuff, so I can pontificate on another subject near and dear to my choler: the need to make the USA's two most prominent major pro sports leagues admit at last that the wars are over.

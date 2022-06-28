@@ -1,7 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Curmudgeonish thoughts for 2020"
 description: "Pet peeves seem tiny at a time like this, but I have them nonetheless."
 author: Bryce Wray
@@ -9,12 +6,6 @@ date: 2020-11-01T08:45:00-06:00
 #lastmod
 draft: false
 discussionId: "2020-11-curmudgeonish-thoughts-2020"
-featured_image: "andre-hunter-5otlbgWJlLs-unsplash_7184x4792.jpg"
-featured_image_width: 7184
-featured_image_height: 4792
-featured_image_alt: "Hands holding up a sign showing an angry-face icon"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@dre0316?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andre Hunter</a>; <a href="https://unsplash.com/s/photos/angry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 As years go, boy, 2020 has been one; and, as I post, its most bizarre parts may yet lie in wait. That's why it seems a good time --- as in, "the rant before the storm" --- to issue my third annual edition of "Curmudgeonish thoughts," working off the tradition (?) of the [2018 original](/posts/2018/11/some-curmudgeonish-thoughts/) and its [2019 sequel](/posts/2019/11/curmudgeonish-2019/).

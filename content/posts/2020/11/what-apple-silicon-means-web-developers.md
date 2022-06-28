@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "What Apple Silicon means for web developers"
 description: "As Apple takes the Mac to the final frontier, here’s what web devs should consider."
 author: Bryce Wray
 date: 2020-11-20T16:25:00-06:00
 #lastmod:
-#draft: false
 discussionId: "2020-11-what-apple-silicon-means-web-developers"
-featured_image: "Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg"
-featured_image_width: 1984
-featured_image_height: 1118
-featured_image_alt: "Partially opened MacBook Pro laptop"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/">Apple, Inc.</a></span>
 ---
 
 It's common to see web developers using laptops and desktops that run [macOS](https://www.apple.com/macos/). The presence of the Apple logo on a web dev's computer, if not covered by seemingly uncounted numbers of stickers the dev has acquired during his or her travels (hey, remember when people actually *traveled* to developer events?), sometimes seems to be a safe presumption.

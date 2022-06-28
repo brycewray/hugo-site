@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Fathom Analytics: count on it"
 description: "How to count visitors while protecting them — and yourself."
 author: Bryce Wray
 date: 2020-06-19T00:45:00-05:00
 lastmod: 2022-02-12T10:55:00-06:00
 discussionId: "2020-06-fathom-analytics-count-on-it"
-featured_image: "alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg"
-featured_image_width: 6024
-featured_image_height: 4024
-featured_image_alt: "Concept image: Red heart shape superimposed over binary data on a computer display."
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@swimstaralex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alexander Sinn</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 **Affiliation disclaimer**: What follows is my *honest opinion* of something I'm now using on this site and paying for with my own money. But I want to advise you up-front that, if you [use this affiliate link (or others like it herein) to **sign up with Fathom Analytics**](https://usefathom.com/ref/ZKHYWX), I'll get a commission --- ***and*** **you** will get a **$10 credit** on your first invoice. So, if you like what I'm telling you here and want to [give this product a try](https://usefathom.com/ref/ZKHYWX), help out an old nerd **and** yourself and your visitors, okay? Thanks!\
@@ -90,7 +80,7 @@ And, mind you, it doesn't hurt if it's also easy on the eyes. So, with that, lad
 
 ## Fathom Analytics: checking the boxes
 
-{{< imgc src="fathom-analytics_1420x1025.jpg" alt="Screen capture from the Fathom Analytics “dashboard” on its live demo" width="1420" height="1025" >}}
+{{< imgh src="fathom-analytics_1420x1025.png" alt="Screen capture from the Fathom Analytics “dashboard” on its live demo" >}}
 
 Fathom Analytics does, indeed, present a nice picture, as this screen capture shows; you can also view a [live demo](https://app.usefathom.com/demo). But what about the [features](https://usefathom.com/features) behind that pretty face?
 

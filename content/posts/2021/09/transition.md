@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Transition"
 description: "Yep, forty-plus years will do."
 author: Bryce Wray
 date: 2021-09-03T16:30:00-05:00
 lastmod: 2022-03-28T14:02:00-05:00
 discussionId: "2021-09-transition"
-featured_image: sunset-prairie-679014_2500x1619.jpg
-featured_image_width: 2500
-featured_image_height: 1619
-featured_image_alt: "Sunset over a winding river on prairieland"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/cowins-822708/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=679014">Alex Hu</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=679014">Pixabay</a></span>
 ---
 
 Our daughter was born five days after my thirtieth birthday. I immediately knew, and have maintained ever since, that her birth was the best birthday gift of my life.

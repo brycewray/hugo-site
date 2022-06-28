@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Thinking about syncing"
 description: "Some opinions I’ve formed while doing a semi-deep dive into cloud sync on macOS."
 author: Bryce Wray
 date: 2022-02-04T10:03:00-06:00
 #lastmod:
 discussionId: "2022-02-thinking-about-syncing"
-featured_image: data-concept--circuit-board-2440249_1920x1280.jpg
-featured_image_width: 1920
-featured_image_height: 1280
-featured_image_alt: "Data concept - circuit board depiction"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2440249">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2440249">Pixabay</a></span>
 ---
 
 I’ve spent the last few weeks researching cloud [sync](https://en.wikipedia.org/wiki/File_synchronization) for my own setup, which is macOS-based. Here are some of my conclusions, just in case they may be of use to anyone else.

@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "JIT is a game-changer for Tailwind CSS"
 description: "Why Tailwind’s new capabilities will give it even more  momentum among web developers."
 author: Bryce Wray
 date: 2021-03-19T16:25:00-05:00
 lastmod: 2021-04-05T16:30:00-05:00
-#draft: false
 discussionId: "2021-03-jit-game-changer-tailwind-css"
-featured_image: "screen-cap-TWCSS-2702x1582.png"
-featured_image_width: 2702
-featured_image_height: 1582
-featured_image_alt: "Screen capture of HTML with Tailwind CSS styles"
-#featured_image_caption:
 ---
 
 **Update, 2021‑04‑05**: As of the [release of Tailwind 2.1.0](https://blog.tailwindcss.com/tailwindcss-2-1), the feature described within is part of Tailwind core, although it's still described as being "in preview."

@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Beginner’s luck: an update"
 description: "The inventory has grown, so here’s what I currently offer for those interested in Eleventy and Hugo."
 author: Bryce Wray
 date: 2021-03-25T20:25:00-05:00
 lastmod: 2022-03-28T13:56:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
-featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
-featured_image_width: 4608
-featured_image_height: 3072
-featured_image_alt: "Colorful toy alphabet blocks"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@shs521?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Holt Simpson</a>; <a href="https://unsplash.com/s/photos/toy-blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
 ---
 
 Interested in building a new website with, or converting an existing site to, either of the two best [static site generators](https://jamstack.org/generators) (SSGs)? Please read on, my friend.

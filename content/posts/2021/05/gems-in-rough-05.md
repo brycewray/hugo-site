@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Gems in the rough #5"
 description: "More notes, notions, and nitpicks about managing one’s personal website."
 author: Bryce Wray
 date: 2021-05-30T13:16:00-05:00
 lastmod: 2022-03-02T09:48:00-06:00
 discussionId: "2021-05-gems-in-rough-05"
-featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
-featured_image_width: 7315
-featured_image_height: 4881
-featured_image_alt: "Colorful gemstones"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Once more, let's venture bravely into the miscellaneous info one gathers while tinkering with, and learning about, websites built by [static site generators](https://jamstack.org/generators) (SSGs) such as [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).

@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Cache-busting in Eleventy, take two"
 description: "This time, a solution that really (?) works."
 author: Bryce Wray
 date: 2020-12-11T16:55:00-06:00
 lastmod: 2022-03-28T13:49:00-05:00
-draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
-featured_image: "broken-glass-549087_4000x3000.jpg"
-featured_image_width: 4000
-featured_image_height: 3000
-featured_image_alt: "Broken window pane with sunlight shining through hole in glass"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/humusak-137455/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=549087">jan mesaros</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=549087">Pixabay</a></span>
 ---
 
 *Before reading this article, please review "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy/)" (despite how flawed its proposed solution turned out to be) for details on the importance of cache-busting your CSS and why Eleventy --- at least, as of this writing --- needs some external help with performing that function. In any event, I think you'll get a lot more out of **this** article if you've first read **that** one; and, so that I can omit some explainers and thus keep this already long article from being even longer, I will assume you've already done so.*

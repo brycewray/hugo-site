@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Through with 2020"
 description: "What I talked about while the world burned."
 author: Bryce Wray
 date: 2020-12-30T08:35:00-06:00
 lastmod: 2021-01-11T12:25:00-06:00
-#draft: false
 discussionId: "2020-12-through-with-2020"
-featured_image: "road-signs-2020-to-2021-new-years-eve-5829158_3200x2200.jpg"
-featured_image_width: 3200
-featured_image_height: 2200
-featured_image_alt: "Concept - Road signs depicting cancellation of 2020 and path to 2021"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/hkama-15602717/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5829158">h kama</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5829158">Pixabay</a></span>
 ---
 
 Back during some of the anti-war activities of the 1960s, detractors of U.S. President Lyndon Johnson's policies in Vietnam would chant or sing this about him, borrowing from a protest song by activist/musician Pete Seeger:

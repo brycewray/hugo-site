@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Battle of the iOS email heavyweights"
 description: "AltaMail vs. Preside: there’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray
 date: 2020-05-14T17:45:00-05:00
 lastmod: 2022-03-28T14:15:00-05:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
-featured_image: "mail-old-mailboxes-1048452_3888x2592.jpg"
-featured_image_width: 3888
-featured_image_height: 2592
-featured_image_alt: "Row of old mailboxes in apparently rural setting"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Anne-Onyme-1513318/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Anne-Onyme</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Pixabay</a></span>
 ---
 
 Nearly a year since my [first encounter](/posts/2019/06/ahoy-mate/) with [MailMate](https://freron.com), a stupendously powerful macOS email client app for power users, I remain utterly amazed by all its capabilities.
@@ -64,7 +53,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## AltaMail
 
-{{< imgc src="AltaMail-iPhone-dark--FavsInBox_edit_1125x2436.jpg" alt="AltaMail “Favorites” inbox view" width="1125" height="2436" phn=true >}}
+{{< imgh src="AltaMail-iPhone-dark--FavsInBox_edit_1125x2436.png" alt="AltaMail “Favorites” inbox view" phn=true >}}
 
 **Maker**: [EuroSmartz, Ltd](https://mobile.eurosmartz.com/).
 
@@ -78,7 +67,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## Preside
 
-{{< imgc src="Preside-iPhone-dark--All-Inboxes-20200504-0951-1_1125x2436.jpg" alt="Preside “All Inboxes” view" width="1125" height="2436" phn=true >}}
+{{< imgh src="Preside-iPhone-dark--All-Inboxes-20200504-0951-1_edit_1125x2436.png" alt="Preside “All Inboxes” view" phn=true >}}
 
 **Maker**: [GoodHumans](https://goodhumans.net/).
 
@@ -204,7 +193,7 @@ Despite my disagreement with how Preside handles (or *doesn't* handle) notificat
 
 [^confusing]: In fairness, I should note that one otherwise "extremely happy" Preside user said, "I&nbsp;.&nbsp;.&nbsp;. find the iPad version more confusing and less satisfying than the iPhone version. There are annoying differences between the two and no way to sync settings that I've found." By contrast, AltaMail *does* do a good job with inter-device sync; so, if that's highly important to you, it may be a better choice.
 
-{{< imgc src="Preside-iPad-light--Inboxes-20200514-0932_edit_2048x1536.jpg" alt="Preside, as it appears in “light mode” on the iPad" width="2048" height="1536" >}}
+{{< imgh src="Preside-iPad-light--Inboxes-20200514-0932_edit_2048x1536.png" alt="Preside, as it appears in “light mode” on the iPad" >}}
 
 Another thing that made Preside a superior choice for me is the sheer number of email views it gives you out of the box. For example, on the phone, I keep Preside set to show me *all* the emails I've received, regardless of accounts or folders (like the **All Messages** view in MailMate), over the last twenty-four hours. You can "hold your mouth right" and get that view from AltaMail, too, but I think Preside makes it much easier to achieve.
 

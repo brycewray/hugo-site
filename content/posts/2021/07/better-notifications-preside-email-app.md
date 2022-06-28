@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Better notifications in the Preside email app"
 description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices."
 author: Bryce Wray
 date: 2021-07-03T16:20:00-05:00
 lastmod: 2022-02-12T11:14:00-06:00
 discussionId: "2021-07-better-notifications-preside-email-app"
-featured_image: apple-iphone-in-hands-closeup-1281744_5472x3648-with-preside-icon_90pct.jpg
-featured_image_width: 5472
-featured_image_height: 3648
-featured_image_alt: "Email concept: Preside app icon atop image of hands holding a smartphone"
-featured_image_caption: |
-  <span class="caption">Images: photo from <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1281744">Pexels</a> via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1281744">Pixabay</a>; Preside icon from GoodHumans via <a href="https://preside.io">Preside website</a></span>
-
 ---
 
 This is for all you power users who wield both the [MailMate](https://freron.com) Mac email app and [Preside](https://www.preside.io) iOS email app.
@@ -173,7 +161,7 @@ In it, we'll enable the actual notification setting for each account. In MailMat
 
 .&nbsp;.&nbsp;.&nbsp;and with that, my friend, you have the best of both worlds: the most fully featured iOS email app on the planet **and** quick notifications like you'd get from far more pedestrian (and privacy-violating) apps:
 
-{{< imgc src="screen-shot-Preside-notification_crop_2250x636.jpg" alt="Screen shot of Preside email app notification on an iOS device" width="2250" height="636" >}}
+{{< imgh src="screen-shot-Preside-notification_crop_2250x636.jpg" alt="Screen shot of Preside email app notification on an iOS device" >}}
 
 ## Caveats and conquering temptation
 

@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "O say can you CI/CD?"
 description: "A way around the Netlify free-tier build limit."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
 lastmod: 2022-03-28T13:40:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
-featured_image: "dominoes-4020617_4870x2672.jpg"
-featured_image_width: 4870
-featured_image_height: 2672
-featured_image_alt: "A row of dominoes with a hand about to tip them over"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/SparrowsHome-4168069/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">SparrowsHome</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

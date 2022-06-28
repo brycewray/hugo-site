@@ -1,8 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Let all your devices see your site"
 description: "How to make “localhost” slightly less local."
 author: Bryce Wray
@@ -12,13 +8,6 @@ lastmod: 2022-04-16T09:15:00-05:00
 #devTo: https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd
 #HackerNews: https://news.ycombinator.com/item?id=30889663#30890211
 discussionId: "2022-04-let-all-your-devices-see-your-site"
-featured_image: "web-dev-concept_fotis-fotopoulos-DuHKoV44prg-unsplash_2400x1600.jpg"
-featured_image_width: 2400
-featured_image_height: 1600
-featured_image_alt: "Web development concept - blurry photo of darkened keyboard and two monitors showing computer code"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fotis Fotopoulos</a>; <a href="https://unsplash.com/s/photos/web-development?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  </span>
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd) and was the subject of a [Hacker News thread](https://news.ycombinator.com/item?id=30889663).

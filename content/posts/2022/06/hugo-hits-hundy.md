@@ -1,14 +1,10 @@
 ---
-tags:
-- post
-- social
-- code
 title: "Hugo hits The Hundy"
 description: "As Hugo reaches version 0.100.x, the venerable SSG improves upon its handling of shortcodes."
 author: Bryce Wray
 date: 2022-06-07T08:59:00-05:00
-#draft: true
 #initTextEditor: iA Writer
+discussionId: "2022-06-hugo-hits-hundy"
 ---
 
 Last week, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators/) (SSG) hit The Big One-Zero-Zero --- namely, **[version 0.100.0](https://github.com/gohugoio/hugo/releases/tag/v0.100.0)**, but I'll call it *0.100.x* given that it's [since been tweaked to 0.100.1](https://github.com/gohugoio/hugo/releases/tag/v0.100.1).

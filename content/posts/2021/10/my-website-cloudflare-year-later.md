@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "My website and Cloudflare, a year later"
 description: "It’s perhaps not so much “love/hate” as it is geeky curiosity combined with an old guy’s impatience."
 author: Bryce Wray
 date: 2021-10-22T14:00:00-05:00
 lastmod: 2022-02-19T12:54:00-06:00
 discussionId: "2021-10-my-website-cloudflare-year-later"
-featured_image: "hans-peter-gauster-3y1zF4hIPCg-unsplash_5988x4000.jpg"
-featured_image_width: 5988
-featured_image_height: 4000
-featured_image_alt: "Confusion concept - numerous colorful puzzle pieces"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@sloppyperfectionist?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hans-Peter Gauster</a>; <a href="https://unsplash.com/s/photos/confusion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 It's been a year now since the first time I used [Cloudflare](https://cloudflare.com) assets to host this [SSG](https://jamstack.org/generators)-based website, and I'm still trying to decide what I think about that.

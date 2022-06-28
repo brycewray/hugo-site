@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Mixed nuts • November, 2020"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T10:10:00-06:00
 lastmod: 2020-12-12T13:20:00-06:00
-draft: false
 discussionId: "2020-11-mixed-nuts-2020-11"
-featured_image: "nuts-5503118_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept image: mixed nuts on a tabletop"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 Given the course of recent events in our storm-tossed existence, both here in the United States and elsewhere, it seems a good time to whip out another set of those miscellaneous observations I typically call "mixed nuts" (most recent such assortment was [this example](/posts/2020/09/mixed-nuts-2020-09/))&nbsp;.&nbsp;.&nbsp;.

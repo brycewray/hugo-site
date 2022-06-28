@@ -1,7 +1,4 @@
 ---
-tags:
-- post
-#note: other `tags`: img, YouTube, social, code
 title: "TITLE TO COME"
 description: "DESCRIPTION TO COME."
 author: Bryce Wray

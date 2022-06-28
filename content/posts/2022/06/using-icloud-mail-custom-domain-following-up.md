@@ -1,13 +1,10 @@
 ---
-tags:
-- post
-#note: other `tags`: img, YouTube, social, code
 title: "Using iCloud Mail with a custom domain: following up"
 description: "What happened when I moved my main email address to iCloud Mail."
 author: Bryce Wray
 date: 2022-06-19T11:27:00-05:00
-#draft: true
 #initTextEditor: iA Writer
+discussionId: "2022-06-using-icloud-mail-custom-domain-following-up"
 ---
 
 Here's how I ended my [initial "Using iCloud Mail with a custom domain" post](/posts/2022/06/using-icloud-mail-custom-domain/):

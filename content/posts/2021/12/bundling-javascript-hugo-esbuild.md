@@ -1,8 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Bundling JavaScript with Hugo and esbuild"
 description: "An example of how you could use Hugo’s phenomenally fast, built-in bundling capabilities."
 author: Bryce Wray
@@ -10,12 +6,6 @@ date: 2021-12-01T08:34:00-06:00
 #lastmod: 2021-12-01T09:28:00-06:00 #forgot to remove "md5" from example code
 #initTextEditor: Ulysses
 discussionId: "2021-12-bundling-javascript-hugo-esbuild"
-featured_image: matryoshka-dolls-ornament-3131097_4630x3126.jpg
-featured_image_width: 4630
-featured_image_height: 3126
-featured_image_alt: "Bundling concept image: close-up view of Russian matryoshka nesting-stacking dolls"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/schwoaze-4023294/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3131097">Schwoaze</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3131097">Pixabay</a></span>
 ---
 
 An **asset pipeline** allows software platforms to process certain kinds of files, such as CSS and JavaScript, for maximum efficiency. This is particularly helpful with software that generates web pages, since a website’s performance improves when the site is delivering fewer, smaller, more tightly organized files. It’s even better when an asset pipeline works with **bundler** code that further improves the efficient delivery of the files. For example, bundling can take multiple JavaScript files and convert them into a single, compressed downloadable with all the variables reprocessed as necessary to avoid any naming conflicts.[^1]

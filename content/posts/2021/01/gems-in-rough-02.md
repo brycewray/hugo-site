@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Gems in the rough #2"
 description: "More geeky hints for SSG fans."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
 lastmod: 2022-03-28T13:51:00-05:00
-#draft: false
 discussionId: "2021-01-gems-in-rough-2021-01"
-featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
-featured_image_width: 7315
-featured_image_height: 4881
-featured_image_alt: "Colorful gemstones"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 For those of you who haven't read the [first](/posts/2020/12/gems-in-rough/) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
@@ -72,7 +60,7 @@ Those who have inflicted upon themselves the curse of reading any significant nu
 
 Here's an example, using a screen capture of a paragraph from last year's "[YouTube TV and the RSNs flap](/posts/2020/02/youtube-tv-rsns-flap/)":
 
-{{< imgc src="Eleventy-bracketed-footnotes_2520x844.png" alt="Paragraph ending in a footnote whose number is bracketed" width="2520" height="844" >}}
+{{< imgh src="Eleventy-bracketed-footnotes_2520x844.png" alt="Paragraph ending in a footnote whose number is bracketed" >}}
 
 But it turns out there's been an answer out there for months, in the form of [Mark Llobrera](https://www.markllobrera.com)'s "[Eleventy: Markdown and Footnotes](https://www.markllobrera.com/posts/eleventy-markdown-and-footnotes/)," in which he prescribed adding the following code within the part of the `.eleventy.js` config file that specifies how markdown-it and its various plugins will work with Eleventy:
 
@@ -92,7 +80,7 @@ After a brief and successful test on a repo branch, I gleefully incorporated his
 
 [^semiColons]: Well, all but the semicolons at lines’ ends. I'm one of those who [choose to avoid them in their JS](https://flaviocopes.com/javascript-automatic-semicolon-insertion/). Sorry, [pro-semicolon partisans](https://medium.com/better-programming/you-might-need-those-semicolons-in-your-javascript-after-all-b28154f93ea8).
 
-{{< imgc src="Eleventy-non-bracketed-footnotes_2510x840.png" alt="Paragraph ending in a footnote whose number is not bracketed" width="2510" height="840" >}}
+{{< imgh src="Eleventy-non-bracketed-footnotes_2510x840.png" alt="Paragraph ending in a footnote whose number is not bracketed" >}}
 
 Yay. Thanks and nice going, Mark. *(By the way, Eleventy fans: he's got a lot of other neat Eleventy-related posts on [his site](https://www.markllobrera.com) --- and they're considerably more concise than my bloated blatherings --- so I highly recommend checking them out.)*
 

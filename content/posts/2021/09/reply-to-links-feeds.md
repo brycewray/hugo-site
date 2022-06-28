@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Reply-to links in site feeds"
 description: "Thanks to a reader’s helpful advice, here’s how to enhance the code for your site’s RSS and JSON feeds."
 author: Bryce Wray
 date: 2021-09-09T14:40:00-05:00
 lastmod: 2022-03-23T18:17:00-05:00
 discussionId: "2021-09-reply-to-links-feeds"
-featured_image: "magnifying-glass-4490044_4288x2848.jpg"
-featured_image_width: 4288
-featured_image_height: 2848
-featured_image_alt: "Monochrome photo of magnifying glass resting on an opened spiral notebook"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/kaosnoff-9039104/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4490044">Vitor Dutra Kaosnoff</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4490044">Pixabay</a></span>
 ---
 
 Back in May, in "[Help your website get discovered](/posts/2021/05/help-your-website-get-discovered)," I provided code you could use to add RSS and JSON feeds to an [Eleventy](https://11ty.dev) site. Then, [more recently](/posts/2021/07/gems-in-rough-07/#comment-by-email), I added the "Reply via email" link to the bottom of each post. However, combining the two --- *i.e.*, making sure there was a "Reply via email" link in each entry in the respective feeds --- hadn't occurred to me until a few days ago, when a reader suggested it to me and provided a link to his own article, "[Email Replies in Feeds](https://blog.jim-nielsen.com/2020/email-replies-in-rss/)," explaining how he'd done it in the [Metalsmith](https://metalsmith.io/) [static site generator](https://jamstack.org/generators) (SSG). Accordingly, I updated my feeds-related code to incorporate this capability.

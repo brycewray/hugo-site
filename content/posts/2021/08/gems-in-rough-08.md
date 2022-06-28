@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Gems in the rough #8"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray
 date: 2021-08-04T16:30:00-05:00
 lastmod: 2022-05-19T11:44:00-05:00
 discussionId: "2021-08-gems-in-rough-08"
-featured_image: "gemstones-sung-jin-cho-0d3qxUozE-0-unsplash_7315x4881.jpg"
-featured_image_width: 7315
-featured_image_height: 4881
-featured_image_alt: "Colorful gemstones"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).
@@ -23,7 +12,7 @@ Each entry in the "Gems in the rough" series is a collection of tips, explanatio
 
 ## Astro: still rough, but promising
 
-{{< imgc src="Astro_social_2021-08-04_2024x1012.jpg" alt="Astro SSG’s “social media image” as of 2021-08-04" width="2024" height="1012" >}}
+{{< imgh src="Astro_social_2021-08-04_2024x1012.jpg" alt="Astro SSG’s “social media image” as of 2021-08-04" >}}
 
 I've been spending a lot of time the last week or two playing with [Astro](https://astro.build), an interesting but still very beta-test-y (alpha-ish, at times) new SSG offering from the folks behind the [Snowpack](https://snowpack.dev) build tool and [Skypack](https://www.skypack.dev) software package delivery network. Right now, Astro is kind of like what you'd expect if  [Next.js](https://nextjs.org) and Snowpack had a baby.
 

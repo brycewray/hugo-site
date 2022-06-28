@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Chasing 100: tips for optimizing your website"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00
 lastmod: 2022-04-03T21:40:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
-featured_image: "tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg"
-featured_image_width: 6036
-featured_image_height: 4020
-featured_image_alt: "Sepia-tone photo of a stopwatch"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}
@@ -24,7 +13,7 @@ If you have your own website, chances are you like to make it work better for yo
 
 Of course, the Holy Grail looks like this:
 
-{{< imgc src="Lighthouse-CLI_2020-07-15-091833CDT_2268x492.png" alt="Screen capture from a Lighthouse CLI report showing perfect ”100” scores for “Performance,” “Accessibility,” “Best Practices,” and “SEO”" width="2268" height="492" >}}
+{{< imgh src="Lighthouse-CLI_2020-07-15-091833CDT_2268x492.png" alt="Screen capture from a Lighthouse CLI report showing perfect ”100” scores for “Performance,” “Accessibility,” “Best Practices,” and “SEO”" >}}
 
 That's an authentic screen capture from my home page's [Lighthouse](https://developers.google.com/web/tools/lighthouse) profile as delivered from the [Lighthouse CLI tool](https://github.com/GoogleChrome/lighthouse#using-the-node-cli): perfect "100" scores for Performance, Accessibility, Best Practices, and Search Engine Optimization (SEO).
 

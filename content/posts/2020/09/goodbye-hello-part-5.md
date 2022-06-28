@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Goodbye and hello • Part 5"
 description: "Two embarrassments: another site move and the reason behind it."
 author: Bryce Wray
 date: 2020-09-09T14:30:00-05:00
 lastmod: 2021-05-16T10:39:00-05:00
 discussionId: "2020-09-goodbye-hello-5"
-featured_image: "pencil-two-with-erasers-macro-1277094_3872x2592.jpg"
-featured_image_width: 3872
-featured_image_height: 2592
-featured_image_alt: "Closeup of two pencils and their erasers"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/joslex-2276481/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1277094">Jeff Weese</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1277094">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

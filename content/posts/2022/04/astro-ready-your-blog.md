@@ -1,8 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Is Astro ready for your blog?"
 description: "Some points to consider if you’re thinking about switching your site to the Astro platform."
 author: Bryce Wray
@@ -10,12 +6,6 @@ date: 2022-04-24T10:50:00-05:00
 lastmod: 2022-05-01T06:09:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-04-astro-ready-your-blog"
-featured_image: "blog-concept-kaitlyn-baker-vZJdYl5JVXY-unsplash_5472x3648.jpg"
-featured_image_width: 5472
-featured_image_height: 3648
-featured_image_alt: "Blog concept - closeup of hands typing on a laptop computer's keyboard"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@kaitlynbaker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kaitlyn Baker</a>; <a href="https://unsplash.com/s/photos/blog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/is-astro-ready-for-your-blog-63m).

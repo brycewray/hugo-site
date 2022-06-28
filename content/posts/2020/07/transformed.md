@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Transformed"
 description: "The move to Cloudinary."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
 lastmod: 2022-04-03T21:47:00-05:00
 discussionId: "2020-07-transformed"
-featured_image: cinema-film-images-photography-64154_2806x1984.jpg
-featured_image_width: 2806
-featured_image_height: 1984
-featured_image_alt: "Strips of photographic film positives with colorful landscape images"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

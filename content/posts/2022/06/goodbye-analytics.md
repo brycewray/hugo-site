@@ -1,12 +1,9 @@
 ---
-tags:
-- post
 title: "A goodbye to analytics"
 description: "As an unintended side effect of CTCAJW Mode, this site bids a fond farewell to The Numbers."
 author: Bryce Wray
 date: 2022-06-20T08:32:00-05:00
 #lastmod:
-#draft: true
 #initTextEditor: Ulysses
 discussionId: "2022-06-goodbye-analytics"
 ---

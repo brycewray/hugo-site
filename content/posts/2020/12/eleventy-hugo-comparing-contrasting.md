@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Eleventy and Hugo: comparing and contrasting"
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
 lastmod: 2022-03-28T14:20:00-05:00
-#draft: false
 discussionId: "2020-12-eleventy-hugo-comparing-contrasting"
-featured_image: "pros-cons-5202088_3000x2000.jpg"
-featured_image_width: 3000
-featured_image_height: 2000
-featured_image_alt: "Comparison concept: Icons of “thumbs up” and “thumbs down” hand signals"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/tumisu-148124/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5202088">Tumisu</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5202088">Pixabay</a></span>
 ---
 
 To quote Mick Jagger and Keith Richards [from over fifty years ago](https://en.wikipedia.org/wiki/You_Can%27t_Always_Get_What_You_Want):

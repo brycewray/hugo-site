@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "The client is too smart for you"
 description: "Pretty emails don’t work so well in an Outlook-centric business world."
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
 lastmod: 2022-02-12T12:48:00-06:00
 discussionId: "2018-10-client-too-smart"
-# featured_image: "letters-envelope-on-color-strips-4029672_5376x3648.jpg"
-# featured_image_width: 5376
-# featured_image_height: 3648
-# featured_image_alt: "Communications concept: Envelope hanging over color strips"
-# featured_image_caption: |
-#   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4029672">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4029672">Pixabay</a></span>
 ---
 
 It's been nearly two decades since we tech marketing folks started counting on the majority of prospects and customers to have access to reasonably fast email. Hey, I remember when we used to send out mass faxes. (We shall now observe a moment of silence for all the trees that we sacrificed in the service of raising profits.)

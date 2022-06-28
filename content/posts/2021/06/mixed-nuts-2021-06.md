@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Mixed nuts • June, 2021"
 description: "The latest set of “takes” that don’t all fit in any one category."
 author: Bryce Wray
 date: 2021-06-11T16:30:00-05:00
 lastmod: 2021-07-11T09:57:00-05:00
 discussionId: "2021-06-mixed-nuts-2021-06"
-featured_image: "nuts-5503118_6000x4000.jpg"
-featured_image_width: 6000
-featured_image_height: 4000
-featured_image_alt: "Concept image: mixed nuts on a tabletop"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ka_re-14461006/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Kai Reschke</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5503118">Pixabay</a></span>
 ---
 
 It's time once again to bounce around a few miscellaneous observations that, in fact, already have been bouncing in my brain like pinballs in a particularly old and janky machine. And I will try not to take too much offense at that reference on my own part.

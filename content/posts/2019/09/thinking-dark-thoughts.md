@@ -1,19 +1,9 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Thinking dark thoughts"
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
 date: 2019-09-29T10:08:00-05:00
 lastmod: 2021-05-16T10:20:00-05:00
 discussionId: "2019-09-thinking-dark-thoughts"
-featured_image: "sunset-1090164_4608x3456.jpg"
-featured_image_width: 4608
-featured_image_height: 3456
-featured_image_alt: "Skies at sunset"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Hans-2/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1090164">Hans Braxmeier</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1090164">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}

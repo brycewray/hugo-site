@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Goodbye and hello • Part 3"
 description: "Performance is a heckuva drug: earlier considerations aside, I move the site to Vercel for a second time."
 author: Bryce Wray
 date: 2020-08-21T17:05:00-05:00
 lastmod: 2022-03-28T14:18:00-05:00
 discussionId: "2020-08-goodbye-hello-3"
-featured_image: "oscar-sutton-pBrHNFqcX-M-unsplash_3888x2592.jpg"
-featured_image_width: 4608
-featured_image_height: 2592
-featured_image_alt: "Exhaust flame resulting from a sport car’s turbo boost"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@o5ky?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Oscar Sutton</a>; <a href="https://unsplash.com/s/photos/fast-speed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

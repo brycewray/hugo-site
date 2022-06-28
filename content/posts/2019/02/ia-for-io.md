@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "iA for IO?"
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
 lastmod: 2020-09-27T13:45:00-05:00
 discussionId: "2019-02-ia-for-io"
-featured_image: "notebook-933362_4752x3168.jpg"
-featured_image_width: 4752
-featured_image_height: 3168
-featured_image_alt: "Stylized photograph of notebook and, in blurry background, a pencil"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/tookapic-1386459/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=933362">tookapic</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=933362">Pixabay</a></span>
 ---
 
 My comments at the end of my [previous post](/posts/2019/01/blox-sux) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.
@@ -32,7 +21,7 @@ Perhaps more to the point, I believe I was more concerned about how the [YAML](h
 
 ## Footnote follies
 
-{{< imgc src="iA-Writer-inline-footnotes_1548x582.jpg" alt="Screen capture from iA Writer software showing how footnotes look in it" width="1548" height="582" >}}
+{{< imgh src="iA-Writer-inline-footnotes_1548x582.png" alt="Screen capture from iA Writer software showing how footnotes look in it" >}}
 
 That said, iA Writer's inline footnotes, while fine for export from iA Writer, don't fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs "think" when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.[^inlineNotes] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses --- that is to say, all the ones I've included on [my other posts](/posts) before this one --- work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
 

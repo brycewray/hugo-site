@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Boxed in?"
 description: "A revisiting of the whole Ulysses matter — after I learned some more about “shoebox” apps in general."
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
 lastmod: 2022-02-12T11:00:00-06:00
 discussionId: "2019-05-boxed-in"
-featured_image: "kelly-sikkema-_JBGjZFFYRk-unsplash_5568x3712.jpg"
-featured_image_width: 5568
-featured_image_height: 3712
-featured_image_alt: "View downward into brown cardboard box with all flaps open"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things --- the Work-in-Progress (WIP) being the most damnable example thereof.

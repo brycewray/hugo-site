@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Goodbye and hello"
 description: "Moving from Netlify to Vercel: how this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T17:05:00-05:00
 lastmod: 2022-03-28T14:17:00-05:00
 discussionId: "2020-07-goodbye-hello"
-featured_image: "away-706464_4608x2592.jpg"
-featured_image_width: 4608
-featured_image_height: 2592
-featured_image_alt: "An entrance to a pathway in a rural setting"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
 
 {{% disclaimer %}}
@@ -58,7 +48,7 @@ Armed with these "must-haves," I spent several days checking out other vendors k
 
 ### Firebase
 
-{{< imgc src="Firebase_screen_cap_1280x732.jpg" alt="Screen capture of firebase.google.com home page as of 2020-07-01" width="1280" height="732" >}}
+{{< imgh src="Firebase_screen_cap_2516x1438.png" alt="Screen capture of firebase.google.com home page as of 2020-07-01" >}}
 
 Despite the obvious advantages of Google's wealth backing it and its popularity in the dev community (albeit mainly among database guys, it seems), Firebase --- whose free "Spark" tier [allows](https://firebase.google.com/pricing) far more use in a month than I'd ever accumulate --- fell short for two reasons.
 
@@ -73,7 +63,7 @@ The only thing that kept Firebase in the evaluation process till nearly the end 
 
 ### Render
 
-{{< imgc src="Render_screen_cap_1280x714.jpg" alt="Screen capture of render.com home page as of 2020-07-01" width="1280" height="714" >}}
+{{< imgh src="Render_screen_cap_2524x1408.png" alt="Screen capture of render.com home page as of 2020-07-01" >}}
 
 Render was hard to turn down. There is a lot of smart thinking behind it, it's young and eager, and my tests showed its results to be pretty impressive in not just speed but also consistency. It's going to be one to watch in this "space" in the next two or three years. I gave Render a lot of thought, especially given that its free tier for static sites allows 100 GB of up/down bandwidth per month with no other deploy limits *at all*. (I'm sure Render would gently rein you in if you got crazy with the quantity of deployments, but I'd never be in danger of that.)
 
@@ -83,7 +73,7 @@ Unfortunately, some of Render's DX (developer experience) --- notably the docume
 
 ### Vercel
 
-{{< imgc src="Vercel_screen_cap_1280x726.jpg" alt="Screen capture of vercel.com home page as of 2020-07-01" width="1280" height="726" >}}
+{{< imgh src="Vercel_screen_cap_2524x1432.png" alt="Screen capture of vercel.com home page as of 2020-07-01" >}}
 
 Best known as the preeminent host for [Next.js](https://next.js.org)-based websites and apps but now branching out with better support for SSGs[^nextSSG], Vercel ticked all my boxes. Since I've also experimented a little with Next.js and admire the thinking and team behind that platform, I already had a good feeling about Vercel.
 

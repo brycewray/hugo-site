@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "A zero-JavaScript navigation menu for Tailwind CSS"
 description: "Seeking a non-JS nav menu for use with Tailwind? So was I. Here’s the resulting code."
 author: Bryce Wray
 date: 2021-09-15T10:30:00-05:00
 lastmod: 2021-09-30T13:41:00-05:00
 discussionId: "2021-09-zero-javascript-navigation-menu-tailwind-css"
-featured_image: "sebastian-herrmann-JB4aR34u248-unsplash_5184x3456.jpg"
-featured_image_width: 5184
-featured_image_height: 3456
-featured_image_alt: "Two pairs of hands pointing at a paper map"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@herrherrmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sebastian Herrmann</a>; <a href="https://unsplash.com/s/photos/map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

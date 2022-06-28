@@ -1,8 +1,4 @@
 ---
-tags:
-- post
-- code
-- social
 title: "The winds of change"
 description: "Switching to Astro, or tales of a migratory nerd."
 author: Bryce Wray
@@ -10,12 +6,6 @@ date: 2022-04-26T09:35:00-05:00
 lastmod: 2022-05-07T13:05:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-04-winds-change"
-featured_image: "windy-grass-nadiia-ploshchenko-f1WyHWxWUM8-unsplash_5184x3456.jpg"
-featured_image_width: 0000
-featured_image_height: 9999
-featured_image_alt: "Windiness concept - blurry grass blowing in a strong wind"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@still_loony?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadiia Ploshchenko</a>; <a href="https://unsplash.com/s/photos/wind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

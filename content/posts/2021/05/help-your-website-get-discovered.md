@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Help your website get discovered"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
 lastmod: 2022-03-23T18:08:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
-featured_image: "magnifying-glass-4490044_4288x2848.jpg"
-featured_image_width: 4288
-featured_image_height: 2848
-featured_image_alt: "Monochrome photo of magnifying glass resting on an opened spiral notebook"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/kaosnoff-9039104/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4490044">Vitor Dutra Kaosnoff</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4490044">Pixabay</a></span>
 ---
 
 If you want your website to be discovered by search engines, the sad news is that there's no [Hollywood drugstore](https://en.wikipedia.org/wiki/Schwab%27s_Pharmacy) where it can hang out in the vain hope that such discovery will happen. Just putting a site out there among the billions of others isn't going to get the job done.

@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "OTOH"
 description: "One shouldn’t make decisions out of spite. I’m living proof."
 author: Bryce Wray
 date: 2019-10-11T19:00:00-05:00
 lastmod: 2019-11-09T10:00:00-06:00
 discussionId: "2019-10-otoh"
-featured_image: "compass-1344839_2433x1622.jpg"
-featured_image_width: 2433
-featured_image_height: 1622
-featured_image_alt: "Compass lying on a granite background"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/SteenJepsen-1490089/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1344839">Steen Jepsen</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1344839">Pixabay</a></span>
 ---
 
 So, see, this crazy person took control of my site a few days ago and wrote a post that sounded *just like* something I'd write, and then he deleted several old posts just to prove a point. Or something like that.

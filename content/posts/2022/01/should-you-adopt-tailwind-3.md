@@ -1,8 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Should you adopt Tailwind 3?"
 description: "Tailwind is making too much progress to ignore. Is it time to check out the latest version?"
 author: Bryce Wray
@@ -13,12 +9,6 @@ ext_canonical: "https://www.stackbit.com/blog/should-you-adopt-tailwind-3/"
 ext_source: "the Stackbit blog"
 ext_url: "https://www.stackbit.com/"
 ext_copyright: "Stackbit"
-featured_image: "die-dice-three_mike-szczepanski-MnSYYYqunXA-unsplash_2400x1531.jpg"
-featured_image_width: 2400
-featured_image_height: 1531
-featured_image_alt: "Screen capture from Hugo showing HTML with Tailwind CSS styles"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@youngprodigy3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Szczepanski</a>; <a href="https://unsplash.com/s/photos/three?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 {{% ext_canonical %}}

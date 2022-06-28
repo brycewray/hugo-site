@@ -1,22 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
-- code
 title: "Next steps?"
 description: "Some things I’ve learned while tinkering with Next.js."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
 lastmod: 2022-03-28T13:55:00-05:00
-#draft: false
 discussionId: "2021-03-next-steps"
-featured_image: "crystal-ball-drew-beamer-xU5Mqq0Chck-unsplash_5284x3522.jpg"
-featured_image_width: 5284
-featured_image_height: 3522
-featured_image_alt: "Concept of the future - crystal ball held up in front of beachside sunset"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@drew_beamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Drew Beamer</a>; <a href="/s/photos/future?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 **Update, 2021‑04‑15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this post in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).
@@ -30,7 +18,7 @@ I thought I'd pass along some things I've learned along the way, especially sinc
 
 And, to be sure, so is Next.js itself.
 
-{{< imgc src="2021-03-11-nextjs-org-home-pg_2518x1330.png" alt="Screen capture of nextjs.org home page as of 2021-03-11" width="2518" height="1330" >}}
+{{< imgh src="2021-03-11-nextjs-org-home-pg_2518x1330.png" alt="Screen capture of nextjs.org home page as of 2021-03-11" >}}
 
 Considering how much I've [lately tried to limit my dealings with dependency-heavy stuff](/posts/2021/02/simplify-simplify/), it's amazing how much I've come to like developing within Next.js. I find it much more straightforward than the React-based [Gatsby](https://www.gatsbyjs.com) SSG with which I futzed [back in 2019](/posts/2019/07/why-staying-with-hugo/). Indeed, Next.js boasts many capabilities out-of-the-proverbial-box that require a disturbing number of plugins and often-glitchy configuration hassles in Gatsby.
 

@@ -1,21 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Go big or Go home? The sequel"
 description: "After a “D’oh!” moment, I refine a bespoke Hugo shortcode."
 author: Bryce Wray
 date: 2021-11-23T12:55:00-06:00
 lastmod: 2021-11-28T09:54:00-06:00
-#draft: false
 discussionId: "2021-11-go-big-go-home-sequel"
-featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
-featured_image_width: 5760
-featured_image_height: 3840
-featured_image_alt: "Closeup of computer code on a display"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a>; <a href="/s/photos/computer-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 The inspiration for this mercifully brief post was a metaphorical, "Why didn't I think of this before?”-kinda forehead-slap. And perhaps it should have been more than metaphorical.

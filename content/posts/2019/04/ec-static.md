@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- code
 title: "Ec-static"
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own websites."
 author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
 lastmod: 2020-11-18T20:40:00-06:00
 discussionId: "2019-04-ec-static"
-featured_image: "server-1235959_1980x1320.jpg"
-featured_image_width: 1980
-featured_image_height: 1320
-featured_image_alt: "Internet server"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/ColossusCloud-2086276/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1235959">Colossus Cloud</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1235959">Pixabay</a></span>
 ---
 
 Want to share your thoughts on the web? [Good for you](https://ia.net/topics/take-the-power-back).

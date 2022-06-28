@@ -1,19 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
 title: "Goodbye and hello • Part 4"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
 date: 2020-09-05T09:00:00-05:00
 lastmod: 2021-05-16T10:39:00-05:00
 discussionId: "2020-09-goodbye-hello-4"
-featured_image: "jeremy-thomas-E0AHdsENmDg-unsplash_5005x3417.jpg"
-featured_image_width: 5005
-featured_image_height: 3417
-featured_image_alt: "Time exposure of a star field"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@jeremythomasphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jeremy Thomas</a>; <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 {{% disclaimer %}}

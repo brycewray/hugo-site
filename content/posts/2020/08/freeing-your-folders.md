@@ -1,20 +1,10 @@
 ---
-#layout: singlepost
-tags:
-- post
-- img
 title: "Freeing your folders"
-description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."
+description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."
 author: Bryce Wray
 date: 2020-08-16T14:35:00-05:00
 #lastmod
 discussionId: "2020-08-freeing-your-folders"
-featured_image: "collector-old-folders-3930337_7360x4912.jpg"
-featured_image_width: 7360
-featured_image_height: 4912
-featured_image_alt: "Worn and stained paper folders in an office desk drawer"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/Angelo_Giordano-753934/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3930337">Angelo Giordano</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3930337">Pixabay</a></span>
 ---
 
 Are you a Mac user? Ever looked at that [joined-at-the-hip relationship between your **Documents** folder and iCloud Drive](https://support.apple.com/en-us/HT206985) and wondered if you might be better off sync'ing that folder with another provider --- or, if you have no reason to view the folder's contents on other devices, not sync'ing it at all and thus avoiding the expense?
@@ -76,7 +66,7 @@ So, with all that understood, here we go.
 10. Click **Options**.
 11. Uncheck the checkbox next to **Desktop &amp; Documents Folders**, so that the window looks like this (your list of apps will vary, of course, but the top one is all that concerns us here):
 
-{{< imgc src="iCloud-Drive-Desktop-Documents_1336x990.png" alt="The iCloud Drive settings for macOS Catalina as of August, 2020" width="1336" height="990" >}}
+{{< imgh src="iCloud-Drive-Desktop-Documents_1336x990.png" alt="The iCloud Drive settings for macOS Catalina as of August, 2020" >}}
 
 All done!
 

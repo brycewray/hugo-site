@@ -1,9 +1,4 @@
 ---
-#layout: singlepost
-tags:
-- post
-- social
-- code
 title: "Static tweets in Eleventy and Hugo: Part 2"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
@@ -11,12 +6,6 @@ date: 2022-02-11T14:43:00-06:00
 lastmod: 2022-04-12T09:11:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
-featured_image: twitter-icon--alexander-shatov-k1xf2D7jWUs-unsplash_2400x1800.jpg
-featured_image_width: 2400
-featured_image_height: 1800
-featured_image_alt: "Digital image of a blue Twitter logo on a dark blue, rounded cube"
-featured_image_caption: |
-  <span class="caption">Image: <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Shatov</a>; <a href="https://unsplash.com/s/photos/twitter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 **Update, 2022‑04‑12**: Based on [work](https://github.com/astro-community/astro-embed) by the [Astro](https://astro.build) team, I have enhanced the shortcode described in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/) (and the accompanying styling) so it also can handle animations embedded in tweets. Unfortunately, this isn't possible with the one described in **this** post, as I explain in an update below.
