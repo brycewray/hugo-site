@@ -2,11 +2,14 @@ baseURL: https://www.brycewray.com/
 languageCode: en-us
 title: BryceWray.com
 #theme: dart-sass # choices are dart-sass (for embedded), npm-sass, and twcss - as of 2022-03-09
+timeZone: America/Chicago
 
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
 enableGitInfo: true
+
+timeout: "150s" # for the sake of newly generated images and such
 
 pygmentsUseClasses: true
 
