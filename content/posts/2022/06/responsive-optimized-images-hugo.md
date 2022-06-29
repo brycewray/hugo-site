@@ -291,3 +291,4 @@ Even if you don't use `imgh` or anything like it, I hope this article has at lea
 - Dave Bennett, "[Hugo Responsive Images With Markdown Render Hook](https://www.bennettnotes.com/notes/hugo-responsive-images-with-markdown-render-hook/)" (2021-08-08).
 - Tim van Werkhoven, "[Responsive images &amp; image grids for Hugo](https://www.vanwerkhoven.org/blog/2021/responsive_images_in_hugo_theme/)" (2021-10-22).
 - Utkarsh Verma, "[Using responsive images effortlessly with Hugo](https://bitbanged.com/posts/using-responsive-images-effortlessly-with-hugo/)" (2022-03-06).
+- Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (2022-06-19).
