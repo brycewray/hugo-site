@@ -2,5 +2,5 @@
 // mitigates CSP's refusing to load inline script
 
 var lazyLoadInstance = new LazyLoad({
-  threshold: 150,
+	threshold: 150,
 })

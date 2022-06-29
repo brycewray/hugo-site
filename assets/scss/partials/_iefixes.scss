@@ -1,30 +1,30 @@
 /* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
-  * {
-    font-family: 'Segoe UI', sans-serif !important;
-  }
+	* {
+		font-family: 'Segoe UI', sans-serif !important;
+	}
 
-  main {
-    display: block;
-  }
+	main {
+		display: block;
+	}
 
-  .container-home {
-    width: 87%;
-  }
+	.container-home {
+		width: 87%;
+	}
 
-  .container-narrower {
-    width: 50%;
-    max-width: 100%;
-  }
+	.container-narrower {
+		width: 50%;
+		max-width: 100%;
+	}
 
-  .homePost-Title {
-    margin: 0;
-  }
+	.homePost-Title {
+		margin: 0;
+	}
 
-  .twitter-tweet img {
-    border: 0;
-  }
+	.twitter-tweet img {
+		border: 0;
+	}
 
 }
 /* ==== end, IE 10 and 11 **ONLY** ==== */

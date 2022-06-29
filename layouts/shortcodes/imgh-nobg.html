@@ -1,7 +1,7 @@
 {{/*
-  This one is just for use with images where we **DON'T**
-  want a background image and blur-up effect, such as the
-  example image in the post about the Eleventy Image plugin.
+	This one is just for use with images where we **DON'T**
+	want a background image and blur-up effect, such as the
+	example image in the post about the Eleventy Image plugin.
 */}}
 
 {{/* init vars */}}
@@ -14,8 +14,8 @@
 {{- $hint := "photo" -}}
 {{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
 {{- /*
-  hint is applicable only to webp:
-  https://gohugo.io/content-management/image-processing/#hint
+	hint is applicable only to webp:
+	https://gohugo.io/content-management/image-processing/#hint
 */ -}}
 {{- $filter := false -}}
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
@@ -25,13 +25,13 @@
 {{- $divClass := "" -}}
 {{- $imgBd5 := md5 $src -}}
 {{- if eq .Site.Params.Host "CFP" -}}
-  {{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
+	{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
 {{- else -}}
-  {{- $divClass = "relative" -}}
+	{{- $divClass = "relative" -}}
 {{- end -}}
 {{- $imgClass := "w-full h-auto" -}}
 {{- if $phn -}}
-  {{- $imgClass = "img-phn h-auto ctrImg" -}}
+	{{- $imgClass = "img-phn h-auto ctrImg" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIP_img := $src.Resize "20x jpg" -}}
@@ -42,24 +42,24 @@
 {{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
 
 <div class="relative">
-  <picture>
-    <source type="image/webp" srcset="
-    {{- with $respSizes -}}
-      {{- range $i, $e := . -}}
-        {{- if ge $imgCfg.Width . -}}
-          {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s%s" . " webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}" sizes="{{ $dataSzes }}" />
-    <source type="image/jpeg" srcset="
-    {{- with $respSizes -}}
-      {{- range $i, $e := . -}}
-        {{- if ge $imgCfg.Width . -}}
-          {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s" . " jpg " $filter) ).RelPermalink }} {{ . }}w
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}" sizes="{{ $dataSzes }}" />
-    <img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" alt="{{ $alt }}" loading="lazy" />
-  </picture>
+	<picture>
+		<source type="image/webp" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $imgCfg.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s%s" . " webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<source type="image/jpeg" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $imgCfg.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s" . " jpg " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" alt="{{ $alt }}" loading="lazy" />
+	</picture>
 </div>
 

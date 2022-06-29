@@ -3,172 +3,172 @@
 // === posts and post lists
 
 .posts {
-  &-Wrapper {
-    background-image: linear-gradient(
-      to bottom,
-      var.$gray-3-blue,
-      var.$gray-5-blue 5%,
-      var.$gray-GitHub-blue
-    );
-    @media screen and (prefers-color-scheme: dark) {
-      background-image: linear-gradient(
-        to bottom,
-        var.$gray-0-5,
-        var.$black 30%
-      );
-    }
-  }
-  &-pagerGray {
-    color: var.$gray-2;
-  }
-  &-pagerThingP {
-    text-align: center;
-    font-size: 1.25em;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  &-Container {
-    margin: 0 auto;
-    width: 85%;
-    @media screen and (min-width: var.$bkpt_lg) {
-      width: 75%;
-    }
-    @media screen and (min-width: var.$bkpt_2xl) {
-      width: 62.5%;
-    }
-  }
-  &-ItemDiv {
-    margin: 0;
-    padding: 0;
-  }
-  &-Head {
-    padding-top: clamp(1.75rem, 5vh, 3rem);
-    font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
-    letter-spacing: -0.025em;
-    margin-bottom: 0.25em;
-  }
-  &-Title {
-    padding: 0;
-    font-size: clamp(1.25rem, 0.625rem + 1.5vw, 2.25rem);
-    line-height: 1.25em;
-    letter-spacing: -0.025em;
-  }
-  &-Description {
-    // font-family: var.$serif;
-    font-size: clamp(1.1rem, 0.5rem + 1vw, 1.3rem);
-    margin-top: 0.5em;
-    margin-bottom: 0.25em;
-  }
-  &-Dates {
-    font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
-    // font-size: 0.825rem;
-    line-height: 1.33;
-    margin-bottom: 0.5em;
-    time {
-      display: inline;
-    }
-  }
+	&-Wrapper {
+		background-image: linear-gradient(
+			to bottom,
+			var.$gray-3-blue,
+			var.$gray-5-blue 5%,
+			var.$gray-GitHub-blue
+		);
+		@media screen and (prefers-color-scheme: dark) {
+			background-image: linear-gradient(
+				to bottom,
+				var.$gray-0-5,
+				var.$black 30%
+			);
+		}
+	}
+	&-pagerGray {
+		color: var.$gray-2;
+	}
+	&-pagerThingP {
+		text-align: center;
+		font-size: 1.25em;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	&-Container {
+		margin: 0 auto;
+		width: 85%;
+		@media screen and (min-width: var.$bkpt_lg) {
+			width: 75%;
+		}
+		@media screen and (min-width: var.$bkpt_2xl) {
+			width: 62.5%;
+		}
+	}
+	&-ItemDiv {
+		margin: 0;
+		padding: 0;
+	}
+	&-Head {
+		padding-top: clamp(1.75rem, 5vh, 3rem);
+		font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
+		letter-spacing: -0.025em;
+		margin-bottom: 0.25em;
+	}
+	&-Title {
+		padding: 0;
+		font-size: clamp(1.25rem, 0.625rem + 1.5vw, 2.25rem);
+		line-height: 1.25em;
+		letter-spacing: -0.025em;
+	}
+	&-Description {
+		// font-family: var.$serif;
+		font-size: clamp(1.1rem, 0.5rem + 1vw, 1.3rem);
+		margin-top: 0.5em;
+		margin-bottom: 0.25em;
+	}
+	&-Dates {
+		font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
+		// font-size: 0.825rem;
+		line-height: 1.33;
+		margin-bottom: 0.5em;
+		time {
+			display: inline;
+		}
+	}
 }
 
 .post-line {
-  border-top: 0.2rem solid var.$darkblue;
-  @media screen and (prefers-color-scheme: dark) {
-    border-color: hsl(0, 0%, 100%);
-  }
-  display: block;
-  margin: 0 auto 2rem;
-  width: 15rem;
+	border-top: 0.2rem solid var.$darkblue;
+	@media screen and (prefers-color-scheme: dark) {
+		border-color: hsl(0, 0%, 100%);
+	}
+	display: block;
+	margin: 0 auto 2rem;
+	width: 15rem;
 }
 
 .bg-dark {
-  // font-family: var.$sans-serif;
-  margin-top: 2.5rem;
-  background-color: var.$black;
-  @media (prefers-color-scheme: dark) {
-    background-color: var.$darkblue;
-  }
-  padding: 0.5rem 0 1rem 0;
-  div, p {
-    color: hsl(0, 0%, 100%);
-  }
-  h3, p {
-    margin: 0;
-    padding: 0.15rem 0;
-    // font-style: normal;
-  }
-  h3.prevnextH3 {
-    font-size: 1.875rem;
-  }
-  p.prevnextP {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 1.375rem;
-  }
-  a {
-    color: hsl(204, 100%, 83%);
-    border-bottom: 0;
-  }
-  a:hover, a:focus {
-    color: var.$gray-2;
-    border-bottom: 1px solid hsl(204, 100%, 83%);
-  }
+	// font-family: var.$sans-serif;
+	margin-top: 2.5rem;
+	background-color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		background-color: var.$darkblue;
+	}
+	padding: 0.5rem 0 1rem 0;
+	div, p {
+		color: hsl(0, 0%, 100%);
+	}
+	h3, p {
+		margin: 0;
+		padding: 0.15rem 0;
+		// font-style: normal;
+	}
+	h3.prevnextH3 {
+		font-size: 1.875rem;
+	}
+	p.prevnextP {
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 1.375rem;
+	}
+	a {
+		color: hsl(204, 100%, 83%);
+		border-bottom: 0;
+	}
+	a:hover, a:focus {
+		color: var.$gray-2;
+		border-bottom: 1px solid hsl(204, 100%, 83%);
+	}
 }
 
 hr.paginatorTop, hr.paginatorBottom {
-  border: none;
-  height: 1px;
-  background-color: var.$black;
-  @media (prefers-color-scheme: dark) {
-    background-color: var.$white;
-  }
-  width: clamp(65%, 75vw, 90%);
+	border: none;
+	height: 1px;
+	background-color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		background-color: var.$white;
+	}
+	width: clamp(65%, 75vw, 90%);
 }
 
 hr.paginatorTop {
-  margin-top: 0.5em;
-  margin-bottom: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
 }
 
 hr.paginatorBottom {
-  margin-top: 0em;
-  padding: 0;
+	margin-top: 0em;
+	padding: 0;
 }
 
 .contactBtn {
-  font-family: var.$sans-serif;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  button {
-    padding: 1rem;
-    background-color: var.$darkblue;
-    border-radius: 0.375rem;
-    border-color: transparent;
-    vertical-align: middle;
-    color: var.$white;
-    &:focus, &:active, &:hover {
-      background-color: var.$blue;
-    }
-    @media (prefers-color-scheme: dark) {
-      background-color: var.$code-color-blueLight-dark-mode;
-      &:focus, &:active, &:hover {
-        background-color: var.$blueLightBtn;
-      }
-    }
-    a {
-      color: var.$white;
-      border: none;
-      @media (prefers-color-scheme: dark) {
-        color: var.$black;
-      }
-    }
-  }
+	font-family: var.$sans-serif;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	button {
+		padding: 1rem;
+		background-color: var.$darkblue;
+		border-radius: 0.375rem;
+		border-color: transparent;
+		vertical-align: middle;
+		color: var.$white;
+		&:focus, &:active, &:hover {
+			background-color: var.$blue;
+		}
+		@media (prefers-color-scheme: dark) {
+			background-color: var.$code-color-blueLight-dark-mode;
+			&:focus, &:active, &:hover {
+				background-color: var.$blueLightBtn;
+			}
+		}
+		a {
+			color: var.$white;
+			border: none;
+			@media (prefers-color-scheme: dark) {
+				color: var.$black;
+			}
+		}
+	}
 }
 
 .arrowStop {
-  color: var.$grayArrow;
+	color: var.$grayArrow;
 }
 
 // === end, posts and post lists

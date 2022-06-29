@@ -1,81 +1,81 @@
 <div class="webmentions" id="webmentions">
-  {{ $siteURLforWMs := "https://www.brycewray.com/" }}
-  {{ $linkForUse := print ($siteURLforWMs) (.RelPermalink) }}
-  {{ $urlized := $linkForUse | md5 }}
-  <h3>Webmentions</h3>
-  {{ if index .Site.Data $urlized }}
-    {{ $likes := index (index .Site.Data $urlized) "like-of" }}
-    {{ $replies := index (index .Site.Data $urlized) "in-reply-to" }}
-    {{ $mentions := index (index .Site.Data $urlized) "mention-of" }}
-    {{ $reposts := index (index .Site.Data $urlized) "repost-of"}}
-    {{ if $likes }}
-      <details>
-        <summary class="h4">Likes&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $likes }})</span></summary>
-        <ul class="webmentions__list_facepile">
-        {{ range $i, $like := $likes }}
-          <li><a href="{{$like.url}}" class="u-url"><img class="webmention__author__photo u-photo" src="{{ $like.author.photo}}" alt="{{ $like.author.name }}"></a></li>
-        {{end}}
-        </ul>
-      </details>
-    {{ end }}
+	{{ $siteURLforWMs := "https://www.brycewray.com/" }}
+	{{ $linkForUse := print ($siteURLforWMs) (.RelPermalink) }}
+	{{ $urlized := $linkForUse | md5 }}
+	<h3>Webmentions</h3>
+	{{ if index .Site.Data $urlized }}
+		{{ $likes := index (index .Site.Data $urlized) "like-of" }}
+		{{ $replies := index (index .Site.Data $urlized) "in-reply-to" }}
+		{{ $mentions := index (index .Site.Data $urlized) "mention-of" }}
+		{{ $reposts := index (index .Site.Data $urlized) "repost-of"}}
+		{{ if $likes }}
+			<details>
+				<summary class="h4">Likes&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $likes }})</span></summary>
+				<ul class="webmentions__list_facepile">
+				{{ range $i, $like := $likes }}
+					<li><a href="{{$like.url}}" class="u-url"><img class="webmention__author__photo u-photo" src="{{ $like.author.photo}}" alt="{{ $like.author.name }}"></a></li>
+				{{end}}
+				</ul>
+			</details>
+		{{ end }}
 
-    {{ if $reposts }}
-      <details>
-        <summary class="h4">Reposts&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $reposts }})</summary>
-          <</summary>
-        <ul class="webmentions__list_facepile">
-          {{ range $i, $repost := $reposts }}
-            <li><a href="{{$repost.url}}" class="u-url"><img class="webmention__author__photo u-photo" src="{{ $repost.author.photo}}" alt="{{ $repost.author.name }}"></a></li>
-          {{end}}
-        </ul>
-      </details>
-    {{ end }}
+		{{ if $reposts }}
+			<details>
+				<summary class="h4">Reposts&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $reposts }})</summary>
+					<</summary>
+				<ul class="webmentions__list_facepile">
+					{{ range $i, $repost := $reposts }}
+						<li><a href="{{$repost.url}}" class="u-url"><img class="webmention__author__photo u-photo" src="{{ $repost.author.photo}}" alt="{{ $repost.author.name }}"></a></li>
+					{{end}}
+				</ul>
+			</details>
+		{{ end }}
 
-    {{ if $replies }}
-      <details>
-      <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $replies }})</summary>
-      <ol class="webmentions__list">
-      {{ range $index, $reply := sort $replies "published" }}
-        <li class="webmentions__item">
-          <article class="webmention h-cite">
-            <div class="webmention__meta">
-              <a class="webmention__author p-author h-card u-url" href="{{$reply.url}}"><img class="webmention__author__photo u-photo" src="{{ $reply.author.photo}}" alt="{{ $reply.author.name }}"><strong class="p-name">{{ $reply.author.name }}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="{{ $reply.published }}">{{ $reply.published | dateFormat "Jan 2, 2006" }}</time></span>
-            </div>
-            <div class="webmention__content p-content">
-              {{ $reply.content.html | safeHTML }}
-            </div>
-          </article>
-        </li>
-      {{end}}
-      </ol>
-      </details>
-    {{ end }}
+		{{ if $replies }}
+			<details>
+			<summary class="h4">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $replies }})</summary>
+			<ol class="webmentions__list">
+			{{ range $index, $reply := sort $replies "published" }}
+				<li class="webmentions__item">
+					<article class="webmention h-cite">
+						<div class="webmention__meta">
+							<a class="webmention__author p-author h-card u-url" href="{{$reply.url}}"><img class="webmention__author__photo u-photo" src="{{ $reply.author.photo}}" alt="{{ $reply.author.name }}"><strong class="p-name">{{ $reply.author.name }}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="{{ $reply.published }}">{{ $reply.published | dateFormat "Jan 2, 2006" }}</time></span>
+						</div>
+						<div class="webmention__content p-content">
+							{{ $reply.content.html | safeHTML }}
+						</div>
+					</article>
+				</li>
+			{{end}}
+			</ol>
+			</details>
+		{{ end }}
 
-    {{ if $mentions }}
-      <details>
-      <summary class="h4">Mentions&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $mentions }})</summary></summary>
-      <ol class="webmentions__list">
-      {{ range $index, $mention := sort $mentions "published" }}
-        <li class="webmentions__item">
-          <article class="webmention h-cite">
-            <div class="webmention__meta">
-              <a class="webmention__author p-author h-card u-url" href="{{$mention.url}}"><img class="webmention__author__photo u-photo" src="{{ $mention.author.photo}}" alt="{{ $mention.author.name }}" class="profile photo"><strong class="p-name">{{ $mention.author.name }}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="{{ $mention.published }}">{{ $mention.published | dateFormat "Jan 2, 2006" }}</time></span>
-            </div>
-            <div class="webmention__content p-content">
-              {{ $mention.content.html | safeHTML }}
-            </div>
-          </article>
-        </li>
-      {{end}}
-      </ol>
-      </details>
-    {{ end }}
+		{{ if $mentions }}
+			<details>
+			<summary class="h4">Mentions&nbsp;&nbsp;<span class="legal wm-normal;">({{ len $mentions }})</summary></summary>
+			<ol class="webmentions__list">
+			{{ range $index, $mention := sort $mentions "published" }}
+				<li class="webmentions__item">
+					<article class="webmention h-cite">
+						<div class="webmention__meta">
+							<a class="webmention__author p-author h-card u-url" href="{{$mention.url}}"><img class="webmention__author__photo u-photo" src="{{ $mention.author.photo}}" alt="{{ $mention.author.name }}" class="profile photo"><strong class="p-name">{{ $mention.author.name }}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="{{ $mention.published }}">{{ $mention.published | dateFormat "Jan 2, 2006" }}</time></span>
+						</div>
+						<div class="webmention__content p-content">
+							{{ $mention.content.html | safeHTML }}
+						</div>
+					</article>
+				</li>
+			{{end}}
+			</ol>
+			</details>
+		{{ end }}
 
-    {{ else }}
-  <p class="ctr">(No webmentions yet.)</p>
-  {{end}}
+		{{ else }}
+	<p class="ctr">(No webmentions yet.)</p>
+	{{end}}
 </div>
 
 {{- if .Params.oldcomments }}
-  {{ .Params.oldcomments | safeHTML }}
+	{{ .Params.oldcomments | safeHTML }}
 {{- end }}

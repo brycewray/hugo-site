@@ -1,53 +1,53 @@
 
-    <footer>
-      <div class="footerWrapper">
-        <div class="icons-box">
-          <a class="icon" href="https://github.com/brycewray" target="_blank" rel="noopener" aria-label="GitHub">
-            {{- partialCached "svgGitHubIcon.html" . -}}
-          </a>
-          <a class="icon" href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" aria-label="Twitter">
-            {{- partialCached "svgTwitterIcon.html" . -}}
-          </a>
-          <a class="icon" href="https://mastodon.technology/@BryceWrayTX" target="_blank" rel="noopener" aria-label="Mastodon">
-            {{- partialCached "svgMastodonIcon.html" . -}}
-          </a>
-          <a class="icon" href="/index.xml" aria-label="RSS">
-            {{- partialCached "svgRSSIcon.html" . -}}
-          </a>
-          <a class="icon" href="/index.json" aria-label="JSON newsfeed">
-            {{- partialCached "svgJSONfeedIcon.html" . -}}
-          </a>
-        </div>
-        <p>
-          Site textual content &copy;&nbsp;2018&ndash;{{ now.Year }}&nbsp;<a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce&nbsp;Wray</a> except&nbsp;where otherwise&nbsp;noted.<br /><span class="text-nowrap">Images hosted and processed by <a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" target="_blank" rel="noopener">Cloudinary</a>.*</span><br/><span class="text-nowrap">Analytics by <a href="https://usefathom.com/ref/ZKHYWX" target="_blank" rel="noopener">Fathom Analytics</a>.*</span> <span class="text-nowrap"><a href="/privacy">View this site&rsquo;s <strong>privacy policy</strong></a>.</span><br /><span class="text-nowrap">Sitemaps: <a href="/sitemap">HTML</a> &bull; <a href="/sitemap.xml">XML</a>.</span><br />&nbsp;<br /><span class="legal"><em>* Affiliate/invite links.</em></span>
-        </p>
-        <!-- for webmentions -->
-        <hr class="hr-wm" />
-        <h4 class="ctr pokey">Information for webmentions</h4>
-        <img class="u-photo" alt="This site's 'BW' logo" src="/images/icons/favicon-512x512.png" />
-        <p class="p-note legal">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
-        <h4 class="ctr pokey wm-h4">About this page</h4>
-        <article class="h-entry legal wm-article">
-          <div class="e-content p-name">
-            <p class="p-note legal">
-              {{ .Params.Title }}
-              {{- if .Params.Description}}
-              &nbsp;&nbsp;|&nbsp;&nbsp;{{ .Params.Description }}
-              {{- end }}
-              <br />
-              <a class="u-url" href="${data.page.url}">Published <time class="dt-published">{{ .PublishDate.Format "2006-01-02T15:04:05.000Z07:00" }}</time></a><link rel="author" href="https://brycewray.com/" />
-            </p>
-          </div>
-        </article>
-        <!-- for Fediverse -->
-        <hr class="hr-wm" />
-        <h4 class="ctr pokey wm-h4">Mastodon verification links</strong></h4>
-        <article class="h-entry legal wm-article">
-          <div class="e-content p-name">
-            <p class="p-note legal">
-              <a rel="me" href="https://mastodon.technology/@BryceWrayTX" target="_blank" rel="noopener">mastodon.technology</a> &bull; <a rel="me" href="https://fosstodon.org/@BryceWrayTX" target="_blank" rel="noopener">fosstodon.org</a> &bull; <a rel="me" href="https://mastodon.social/@BryceWrayTX" target="_blank" rel="noopener">mastodon.social</a>
-            </p>
-          </div>
-        </article>
-      </div>
-    </footer>
+		<footer>
+			<div class="footerWrapper">
+				<div class="icons-box">
+					<a class="icon" href="https://github.com/brycewray" target="_blank" rel="noopener" aria-label="GitHub">
+						{{- partialCached "svgGitHubIcon.html" . -}}
+					</a>
+					<a class="icon" href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" aria-label="Twitter">
+						{{- partialCached "svgTwitterIcon.html" . -}}
+					</a>
+					<a class="icon" href="https://mastodon.technology/@BryceWrayTX" target="_blank" rel="noopener" aria-label="Mastodon">
+						{{- partialCached "svgMastodonIcon.html" . -}}
+					</a>
+					<a class="icon" href="/index.xml" aria-label="RSS">
+						{{- partialCached "svgRSSIcon.html" . -}}
+					</a>
+					<a class="icon" href="/index.json" aria-label="JSON newsfeed">
+						{{- partialCached "svgJSONfeedIcon.html" . -}}
+					</a>
+				</div>
+				<p>
+					Site textual content &copy;&nbsp;2018&ndash;{{ now.Year }}&nbsp;<a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce&nbsp;Wray</a> except&nbsp;where otherwise&nbsp;noted.<br /><span class="text-nowrap">Images hosted and processed by <a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" target="_blank" rel="noopener">Cloudinary</a>.*</span><br/><span class="text-nowrap">Analytics by <a href="https://usefathom.com/ref/ZKHYWX" target="_blank" rel="noopener">Fathom Analytics</a>.*</span> <span class="text-nowrap"><a href="/privacy">View this site&rsquo;s <strong>privacy policy</strong></a>.</span><br /><span class="text-nowrap">Sitemaps: <a href="/sitemap">HTML</a> &bull; <a href="/sitemap.xml">XML</a>.</span><br />&nbsp;<br /><span class="legal"><em>* Affiliate/invite links.</em></span>
+				</p>
+				<!-- for webmentions -->
+				<hr class="hr-wm" />
+				<h4 class="ctr pokey">Information for webmentions</h4>
+				<img class="u-photo" alt="This site's 'BW' logo" src="/images/icons/favicon-512x512.png" />
+				<p class="p-note legal">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
+				<h4 class="ctr pokey wm-h4">About this page</h4>
+				<article class="h-entry legal wm-article">
+					<div class="e-content p-name">
+						<p class="p-note legal">
+							{{ .Params.Title }}
+							{{- if .Params.Description}}
+							&nbsp;&nbsp;|&nbsp;&nbsp;{{ .Params.Description }}
+							{{- end }}
+							<br />
+							<a class="u-url" href="${data.page.url}">Published <time class="dt-published">{{ .PublishDate.Format "2006-01-02T15:04:05.000Z07:00" }}</time></a><link rel="author" href="https://brycewray.com/" />
+						</p>
+					</div>
+				</article>
+				<!-- for Fediverse -->
+				<hr class="hr-wm" />
+				<h4 class="ctr pokey wm-h4">Mastodon verification links</strong></h4>
+				<article class="h-entry legal wm-article">
+					<div class="e-content p-name">
+						<p class="p-note legal">
+							<a rel="me" href="https://mastodon.technology/@BryceWrayTX" target="_blank" rel="noopener">mastodon.technology</a> &bull; <a rel="me" href="https://fosstodon.org/@BryceWrayTX" target="_blank" rel="noopener">fosstodon.org</a> &bull; <a rel="me" href="https://mastodon.social/@BryceWrayTX" target="_blank" rel="noopener">mastodon.social</a>
+						</p>
+					</div>
+				</article>
+			</div>
+		</footer>

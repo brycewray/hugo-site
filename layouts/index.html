@@ -1,27 +1,27 @@
 {{ define "main" }}
 
-    <div class="container-home">
-      <div class="homeOpen">
-        <h1>Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about/">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
-      </div>
-      <div class="homePost-Div">
-        <div class="post-line"></div>
-        <h2 class="homePost-Latest">Latest <a href="/posts">posts</a></h2>
-        {{- range first 3 (where .Site.RegularPages "Section" "posts") }}
-        <div>
-          <h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
-          <p class="homePost-Description">
-            {{ .Description }}
-          </p>
-          <p class="homePost-Dates">
-            {{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
-            {{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
-            {{- if ne (substr .Title 0 22) "The site this week: 20" -}}<br />{{- end -}}<span class="pokey">Last modified {{ .Lastmod.Format "2006-01-02" }}</span>
-            {{- end }}
-          </p>
-        </div>
-        {{- end }}
-        <p class="homePost-Finish"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
-      </div>
-    </div>
-    {{- end }}
+		<div class="container-home">
+			<div class="homeOpen">
+				<h1>Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about/">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
+			</div>
+			<div class="homePost-Div">
+				<div class="post-line"></div>
+				<h2 class="homePost-Latest">Latest <a href="/posts">posts</a></h2>
+				{{- range first 3 (where .Site.RegularPages "Section" "posts") }}
+				<div>
+					<h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+					<p class="homePost-Description">
+						{{ .Description }}
+					</p>
+					<p class="homePost-Dates">
+						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
+						{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
+						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<br />{{- end -}}<span class="pokey">Last modified {{ .Lastmod.Format "2006-01-02" }}</span>
+						{{- end }}
+					</p>
+				</div>
+				{{- end }}
+				<p class="homePost-Finish"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+			</div>
+		</div>
+		{{- end }}

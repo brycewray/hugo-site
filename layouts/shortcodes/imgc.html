@@ -1,15 +1,15 @@
 {{/*
-  This shortcode takes the following form:
-  imgc src, alt, width, height
-  ...with 'src' in the form of (note NO leading or ending slash):
-  filename.ext
-  ...and 'tmpl' optional in body copy. The template is used
-  to specify hero images on either the home page ('index') or
-  post pages ('posts'). Without this parameter, the defaults
-  cause body-copy-style image-handling.
+	This shortcode takes the following form:
+	imgc src, alt, width, height
+	...with 'src' in the form of (note NO leading or ending slash):
+	filename.ext
+	...and 'tmpl' optional in body copy. The template is used
+	to specify hero images on either the home page ('index') or
+	post pages ('posts'). Without this parameter, the defaults
+	cause body-copy-style image-handling.
 
-  This is based on the `lazy-picture.js` shortcode from
-  the eleventy_solo repo.
+	This is based on the `lazy-picture.js` shortcode from
+	the eleventy_solo repo.
 /*}}
 
 {{/* init vars */}}
@@ -22,8 +22,8 @@
 {{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
 
 {{/*
-  separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
-  wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
+	separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
+	wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
@@ -33,13 +33,13 @@
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $imgBd5 := md5 $src -}}
 {{- if eq .Site.Params.Host "CFP" -}}
-  {{- $divClass := printf "%s%s" "relative imgB-" $imgBd5 -}}
+	{{- $divClass := printf "%s%s" "relative imgB-" $imgBd5 -}}
 {{- else -}}
-  {{- $divClass := "relative" -}}
+	{{- $divClass := "relative" -}}
 {{- end -}}
 {{- $imgClass := "w-full h-auto animate-fade" -}}
 {{- if $phn -}}
-  {{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
+	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
@@ -47,23 +47,23 @@
 {{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
 {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 {{- if $phn -}}
-  {{- $CFPstyle = "background: none;" -}}
+	{{- $CFPstyle = "background: none;" -}}
 {{- end -}}
 
 {{- if eq .Site.Params.Host "CFP" -}}
-  <style>
-    .imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
-  </style>
-  <div class="relative imgB-{{ $imgBd5 }} bg-center">
+	<style>
+		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
+	</style>
+	<div class="relative imgB-{{ $imgBd5 }} bg-center">
 {{- else -}}
-  <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
+	<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
 {{- end -}}
-  <img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-  {{- with $respSizes -}}
-    {{- range $i, $e := . -}}
-      {{- if ge $width . -}}
-        {{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
+	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+	{{- with $respSizes -}}
+		{{- range $i, $e := . -}}
+			{{- if ge $width . -}}
+				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
 </div>

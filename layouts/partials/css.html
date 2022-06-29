@@ -1,23 +1,23 @@
-    {{/* CSS/SCSS */ -}}
-    <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    <!--
-    <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    -->
-    {{/*-
-      Dart Sass Embedded stuff herein:
-      - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
-      - thanks, @bep!
-    -*/}}
-    {{- $css := "" -}}
-    {{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
-    {{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
-    {{- if hugo.IsProduction -}}
-      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
-    {{- else -}}
-      {{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-      {{/*- Fingerprinting in dev due to Safari weirdness -*/}}
-    {{- end -}}
-    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-  {{/* end, CSS/SCSS */}}
+		{{/* CSS/SCSS */ -}}
+		<link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+		<!--
+		<link rel="preload" href="/fonts/PublicSans-Regular-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+		<link rel="preload" href="/fonts/PublicSans-Italic-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+		-->
+		{{/*-
+			Dart Sass Embedded stuff herein:
+			- Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
+			- thanks, @bep!
+		-*/}}
+		{{- $css := "" -}}
+		{{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
+		{{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
+		{{- if hugo.IsProduction -}}
+			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
+		{{- else -}}
+			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
+			{{/*- Fingerprinting in dev due to Safari weirdness -*/}}
+		{{- end -}}
+		<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+	{{/* end, CSS/SCSS */}}

@@ -1,6 +1,6 @@
 {{- /*
-  This shortcode takes the following form:
-  twitscrn imageUrl, alt, width, height, twitterUrl
+	This shortcode takes the following form:
+	twitscrn imageUrl, alt, width, height, twitterUrl
 */ -}}
 
 {{/* init vars */}}
@@ -12,8 +12,8 @@
 {{- $twitterUrl := .Get "twitterUrl" -}}
 
 {{/*
-  separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
-  wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
+	separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
+	wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
@@ -30,19 +30,19 @@
 
 {{- if eq .Site.Params.Host "CFP" -}}
 <style>.imgB-{{ $imgBd5 }} {background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;}</style>
-  <div class="relative imgB-{{ $imgBd5 }} bg-center" aspect-ratio="{{ $width }} / {{ $height }}">
-  {{- else -}}
-  <div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
-  {{- end -}}<a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
-  <img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
-  {{- with $respSizes -}}
-    {{- range $i, $e := . -}}
-      {{- if ge $width . -}}
-        {{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $imageUrl }} {{ . }}w
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" aspect-ratio="{{ $width }} / {{ $height }}" /></a>
-  <noscript>
-    <a href="{{ $twitterUrl }}" target="_blank" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
-  </noscript>
+	<div class="relative imgB-{{ $imgBd5 }} bg-center" aspect-ratio="{{ $width }} / {{ $height }}">
+	{{- else -}}
+	<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
+	{{- end -}}<a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
+	<img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
+	{{- with $respSizes -}}
+		{{- range $i, $e := . -}}
+			{{- if ge $width . -}}
+				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $imageUrl }} {{ . }}w
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" aspect-ratio="{{ $width }} / {{ $height }}" /></a>
+	<noscript>
+		<a href="{{ $twitterUrl }}" target="_blank" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
+	</noscript>
 </div>

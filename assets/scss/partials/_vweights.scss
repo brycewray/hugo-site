@@ -5,23 +5,23 @@ As of 2022-05-15, this includes system fonts such as San Francisco (macOS/iOS) a
 ==== */
 
 .header-anchor::after {
-  font-weight: 425;
+	font-weight: 425;
 }
 h1, .h1, .background-hero-title-text, .billboard-title-text, .posts-Head, .homePost-Latest {
-  font-weight: 800;
+	font-weight: 800;
 }
 h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .homePost-Title {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  .header-anchor::after {
-    font-weight: 375;
-  }
-  h1, .h1, .background-hero-title-text, .billboard-title-text, .posts-Head, .homePost-Latest {
-    font-weight: 750;
-  }
-  h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .homePost-Title {
-    font-weight: 550;
-  }
+	.header-anchor::after {
+		font-weight: 375;
+	}
+	h1, .h1, .background-hero-title-text, .billboard-title-text, .posts-Head, .homePost-Latest {
+		font-weight: 750;
+	}
+	h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .homePost-Title {
+		font-weight: 550;
+	}
 }
