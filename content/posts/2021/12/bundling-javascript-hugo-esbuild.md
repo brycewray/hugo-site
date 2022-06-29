@@ -41,7 +41,7 @@ import './assets/js/instantpage_5-1-0.js'
 	(https://github.com/verlok/vanilla-lazyload)
 */
 var lazyLoadInstance = new LazyLoad({
-  threshold: 150,
+	threshold: 150,
 })
 ```
 
@@ -60,15 +60,15 @@ Here’s the resulting `baseof.html`:
 
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
-  {{ partial "head.html" . }}
-  <body>
-    {{ partial "header.html" . }}
-    <div id="content-main-hugo">
-    {{- block "main" . -}}{{- end }}
-    </div>
-    {{- partial "footer.html" . }}
-    <script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
-  </body>
+	{{ partial "head.html" . }}
+	<body>
+		{{ partial "header.html" . }}
+		<div id="content-main-hugo">
+		{{- block "main" . -}}{{- end }}
+		</div>
+		{{- partial "footer.html" . }}
+		<script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
+	</body>
 </html>
 ```
 

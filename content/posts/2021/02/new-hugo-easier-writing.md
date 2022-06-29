@@ -70,23 +70,27 @@ But then Hugo 0.81.0 arrived, with [enhanced attribute support](https://gohugo.i
 
 > Hugo already supports adding attribute lists (e.g CSS classes) after titles. We now also allow adding attribute lists after Markdown blocks, e.g. tables, lists, paragraphs etc. *[sic]*
 
-To get that working in Hugo as of v.0.81.0, just make appropriate edits to your config file's [`markup` section](https://gohugo.io/getting-started/configuration-markup#goldmark). For example, here's how I have goldmark set in this site's `config.yaml` file (note that `block` is `true`, which enables what I'm discussing in this article):
+To get that working in Hugo as of v.0.81.0, just make appropriate edits to your config file's [`markup` section](https://gohugo.io/getting-started/configuration-markup#goldmark). For example, here's how I have `markup` set in this site's `config.yaml` file (note that `block` is `true`, which enables what I'm discussing in this article):
 
 ```yaml
 markup:
+  highlight:
+    guessSyntax: true
+    noClasses: false
+    tabWidth: 2
+  goldmark:
     extensions:
       linkify: false
     parser:
       attribute:
         block: true
         title: true
+      autoHeadingID: true
+			# otherwise, can't use (e.g.) "Content" as a heading
     renderer:
       unsafe: true
       # only to allow for inline HTML and/or JS
       # ... other desired settings are defaults
-    highlight:
-      guessSyntax: true
-      noClasses: false
 ```
 
 So, now, all I have to do to get that same caption is:

@@ -64,9 +64,9 @@ As for that content-based styling itself, that would require creating appropriat
 ```plaintext
 .
 └── assets
-    └── scss
-        └── partials
-        └── sectionals
+		└── scss
+				└── partials
+				└── sectionals
 ```
 
 In `assets/scss/partials/` would live all the partials, as is obvious, while `assets/scss/sectionals/` would contain the content-specific SCSS files.[^nameSCSS]
@@ -112,24 +112,24 @@ And here's what's in `css.html` at this writing (I've edited out certain now-unu
 
 ```go-html-template
 {{/*-
-  Dart Sass Embedded stuff herein:
-  - Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
-  - thanks, @bep!
+	Dart Sass Embedded stuff herein:
+	- Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
+	- thanks, @bep!
 
-  And thanks very much to Daniel F. Dickinson
-  (https://wildtechgarden.ca) for helping me
-  debug the logic, below, on 2022-06-11:
-  https://discourse.gohugo.io/t/different-results-for-if-in-params-tags-test/38990
+	And thanks very much to Daniel F. Dickinson
+	(https://wildtechgarden.ca) for helping me
+	debug the logic, below, on 2022-06-11:
+	https://discourse.gohugo.io/t/different-results-for-if-in-params-tags-test/38990
 -*/}}
 
 {{- $currentPage := .Page -}}
 {{/*
-  $currentPage helps debug this during dev,
-  to make sure we have all the necessary
-  SCSS at the end.
+	$currentPage helps debug this during dev,
+	to make sure we have all the necessary
+	SCSS at the end.
 
-  Then we initialize some variables
-  we'll use down the way . . .
+	Then we initialize some variables
+	we'll use down the way . . .
 */}}
 {{- $css := "" -}}
 {{- $scss := "" -}}
@@ -202,45 +202,45 @@ And here's what's in `css.html` at this writing (I've edited out certain now-unu
 {{- $tags := "" -}}
 
 {{/*
-  And now we get to the meat of this puppy.
+	And now we get to the meat of this puppy.
 
-  It identifies the current page's tags,
-  and sorts them alphabetically (remember
-  the earlier comment about the need for
-  `sort` here?).
+	It identifies the current page's tags,
+	and sorts them alphabetically (remember
+	the earlier comment about the need for
+	`sort` here?).
 
-  Next, it does a `range` loop through the
-  big slice's own set of slices. (It's turtles
-  all the way down, friends.) The loop compares
-  each individual slice's **nested** slice
-  to the page's tags and, if they match,
-  it tells Hugo which SCSS file to use in
-  the CSS-generation part at the end.
-  (We'll add the `.scss` extender later.)
+	Next, it does a `range` loop through the
+	big slice's own set of slices. (It's turtles
+	all the way down, friends.) The loop compares
+	each individual slice's **nested** slice
+	to the page's tags and, if they match,
+	it tells Hugo which SCSS file to use in
+	the CSS-generation part at the end.
+	(We'll add the `.scss` extender later.)
 
-  It also gets a $filePrefix (the name
-  before `.css`) to be given to the CSS file
-  that Hugo will generate.
+	It also gets a $filePrefix (the name
+	before `.css`) to be given to the CSS file
+	that Hugo will generate.
 */}}
 
 {{- with .Params.tags -}}
-  {{ $tags = . }}
-  {{ $tags = sort $tags }}
-  {{ range $bigSlice }}
-    {{- $filePrefix = index . 0 -}}
-    {{- $tagItems = index . 1 -}}
-    {{- if eq $tags $tagItems -}}
-      {{- $cssBuild = print $cssBuild $filePrefix -}}
-      {{- $targetFilePrefix = $filePrefix -}}
-    {{- end }}
-  {{- end }}
+	{{ $tags = . }}
+	{{ $tags = sort $tags }}
+	{{ range $bigSlice }}
+		{{- $filePrefix = index . 0 -}}
+		{{- $tagItems = index . 1 -}}
+		{{- if eq $tags $tagItems -}}
+			{{- $cssBuild = print $cssBuild $filePrefix -}}
+			{{- $targetFilePrefix = $filePrefix -}}
+		{{- end }}
+	{{- end }}
 {{- end -}}
 {{ if eq $cssBuild "scss/sectionals/" -}}
 	{{/*
 		This is a fallback, such as for /404.html.
 	*/}}
-  {{- $cssBuild = print $cssBuild "critical" -}}
-  {{- $targetFilePrefix = "critical" -}}
+	{{- $cssBuild = print $cssBuild "critical" -}}
+	{{- $targetFilePrefix = "critical" -}}
 {{- end -}}
 
 {{- $cssBuild = print $cssBuild ".scss" -}}
@@ -252,47 +252,47 @@ And here's what's in `css.html` at this writing (I've edited out certain now-unu
 {{- $targetPath := print "css/" $targetFilePrefix ".css" -}}
 
 {{/*
-  Now we have everything Hugo needs,
-  so from here it's **mostly** a normal
-  Hugo Pipes SCSS-to-CSS operation.
+	Now we have everything Hugo needs,
+	so from here it's **mostly** a normal
+	Hugo Pipes SCSS-to-CSS operation.
 
-  **Note**: Remember that what's below
-  is using Dart Sass, rather than LibSass,
-  which is why there's a "transpiler"
-  statement in what we'll feed Hugo.
-  If necessary, see:
-  https://gohugo.io/hugo-pipes/scss-sass/#options
+	**Note**: Remember that what's below
+	is using Dart Sass, rather than LibSass,
+	which is why there's a "transpiler"
+	statement in what we'll feed Hugo.
+	If necessary, see:
+	https://gohugo.io/hugo-pipes/scss-sass/#options
 
-  If you're using LibSass, remove
-  `"transpiler" "dartsass"` from the
-  $optionsCSS assignment below.
+	If you're using LibSass, remove
+	`"transpiler" "dartsass"` from the
+	$optionsCSS assignment below.
 */}}
 
 {{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" $targetPath "outputStyle" "compressed") -}}
 {{- $optionsCSS_FP := merge $optionsCSS (dict "fingerprint" "md5")}}
 {{/*
-  `"fingerprint" "md5"` is for cache-busting only.
+	`"fingerprint" "md5"` is for cache-busting only.
 */}}
 {{- with $cssBuild -}}
-  {{- $scss = resources.Get $cssBuild }}
-  {{- if $scss -}}
-    {{- $css = $scss | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-  {{- else -}}
-    {{- warnf (printf "No scss found for page %s" $currentPage.TranslationKey) -}}
-    {{/*
-      The `if $scss` test is from when
-      Mr. Dickinson helped me.
+	{{- $scss = resources.Get $cssBuild }}
+	{{- if $scss -}}
+		{{- $css = $scss | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+	{{- else -}}
+		{{- warnf (printf "No scss found for page %s" $currentPage.TranslationKey) -}}
+		{{/*
+			The `if $scss` test is from when
+			Mr. Dickinson helped me.
 
-      Before it was there, Hugo crashed in the
-      dev process because I'd made some mistakes
-      in the slice with the SCSS file names.
-      Mr. Dickinson's test showed that.
+			Before it was there, Hugo crashed in the
+			dev process because I'd made some mistakes
+			in the slice with the SCSS file names.
+			Mr. Dickinson's test showed that.
 
-      I suggest leaving it as-is, just in case.
-    */}}
-  {{- end -}}
+			I suggest leaving it as-is, just in case.
+		*/}}
+	{{- end -}}
 {{- end -}}
 ```
 
@@ -308,14 +308,14 @@ For example: at one point while I was writing this, going to the site's home pag
 
 ```html
 <link
-  rel="preload"
-  as="style"
-  href="/css/home.faef8a213bef990983a4241e7f2fb518.css"
+	rel="preload"
+	as="style"
+	href="/css/home.faef8a213bef990983a4241e7f2fb518.css"
 >
 <link
-  rel="stylesheet"
-  href="/css/home.faef8a213bef990983a4241e7f2fb518.css"
-  type="text/css"
+	rel="stylesheet"
+	href="/css/home.faef8a213bef990983a4241e7f2fb518.css"
+	type="text/css"
 >
 ```
 
@@ -325,14 +325,14 @@ For another example: my post, "[Hugo hits The Hundy](/posts/2022/06/hugo-hits-hu
 
 ```html
 <link
-  rel="preload"
-  as="style"
-  href="/css/post-code-social.dc74163e3d77d84db4d51d66a5f1c55f.css"
+	rel="preload"
+	as="style"
+	href="/css/post-code-social.dc74163e3d77d84db4d51d66a5f1c55f.css"
 >
 <link
-  rel="stylesheet"
-  href="/css/post-code-social.dc74163e3d77d84db4d51d66a5f1c55f.css"
-  type="text/css"
+	rel="stylesheet"
+	href="/css/post-code-social.dc74163e3d77d84db4d51d66a5f1c55f.css"
+	type="text/css"
 >
 ```
 

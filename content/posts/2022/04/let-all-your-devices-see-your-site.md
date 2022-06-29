@@ -119,12 +119,12 @@ In Astro **0.26.x and above**, [use the top-level `server` object](https://docs.
 
 ```js
 export default defineConfig({
-  // other config, perhaps
-  server: {
-    port: 5000,
-    host: "192.168.254.10",
-  },
-  // other config, perhaps
+	// other config, perhaps
+	server: {
+		port: 5000,
+		host: "192.168.254.10",
+	},
+	// other config, perhaps
 })
 
 ```

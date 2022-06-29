@@ -60,13 +60,13 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 
 ```go-html-template
 {{/*
-  =======
-  Based on...
-  - https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
-  - https://hugo.md/post/update-rendering-static-tweets/
-  - https://github.com/KyleMit/eleventy-plugin-embed-tweet
-  - https://www.stackbit.com/blog/advanced-hugo-templates/
-  =======
+	=======
+	Based on...
+	- https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
+	- https://hugo.md/post/update-rendering-static-tweets/
+	- https://github.com/KyleMit/eleventy-plugin-embed-tweet
+	- https://www.stackbit.com/blog/advanced-hugo-templates/
+	=======
 */}}
 
 {{ $Bearer_Token := os.Getenv "BEARER_TOKEN" }}
@@ -77,8 +77,8 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 {{ $json := getJSON $jsonURL1 $id $jsonURL2 $authHeaders }}
 
 {{/*
-  inits --
-  see https://www.stackbit.com/blog/advanced-hugo-templates/ (end of "Scratch" section)
+	inits --
+	see https://www.stackbit.com/blog/advanced-hugo-templates/ (end of "Scratch" section)
 */}}
 {{ $text := "" }}
 {{ $created_at := "" }}
@@ -87,75 +87,75 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 {{ $username := "" }}
 
 {{ with $json }}
-  {{ range $json.data }}
-    {{ $data := . }}
-    {{ $created_at = $data.created_at }}
-    {{ $text = $data.text }}
-    {{ with $data.entities }}
-      {{ $entities := . }}
-      {{ range $entities.mentions }}
-        {{ $mentions := . }}
-        {{ $text = replace $text (printf "@%s" $mentions.username) (printf "<a href='https://twitter.com/%s' target='_blank' rel='noopener'>@%s</a>" $mentions.username $mentions.username) }}
-      {{ end }}
-      {{ range $entities.hashtags }}
-        {{ $hashtags := . }}
-        {{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' rel='noopener'>#%s</a>" $hashtags.tag $hashtags.tag) }}
-      {{ end }}
-      {{ range $entities.urls }}
-        {{ $urls := . }}
-        {{ if not $urls.images }}
-          {{ if not $urls.unwound_url }}
-            {{ if in $urls.display_url "buff.ly" }}
-              {{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
-            {{ else }}
-              {{ $text = replace $text $urls.url "" }}
-            {{ end }}
-          {{ else }}
-            {{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
-          {{ end }}
-        {{ else }}
-          {{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-  {{ with $json.includes }}
-    {{ $includes := . }}
-    {{ range $includes.users }}
-      {{ $profile_image_url = .profile_image_url }}
-      {{ $name = .name }}
-      {{ $username = .username }}
-    {{ end }}
-  {{ end }}
+	{{ range $json.data }}
+		{{ $data := . }}
+		{{ $created_at = $data.created_at }}
+		{{ $text = $data.text }}
+		{{ with $data.entities }}
+			{{ $entities := . }}
+			{{ range $entities.mentions }}
+				{{ $mentions := . }}
+				{{ $text = replace $text (printf "@%s" $mentions.username) (printf "<a href='https://twitter.com/%s' target='_blank' rel='noopener'>@%s</a>" $mentions.username $mentions.username) }}
+			{{ end }}
+			{{ range $entities.hashtags }}
+				{{ $hashtags := . }}
+				{{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' rel='noopener'>#%s</a>" $hashtags.tag $hashtags.tag) }}
+			{{ end }}
+			{{ range $entities.urls }}
+				{{ $urls := . }}
+				{{ if not $urls.images }}
+					{{ if not $urls.unwound_url }}
+						{{ if in $urls.display_url "buff.ly" }}
+							{{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
+						{{ else }}
+							{{ $text = replace $text $urls.url "" }}
+						{{ end }}
+					{{ else }}
+						{{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
+					{{ end }}
+				{{ else }}
+					{{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+	{{ with $json.includes }}
+		{{ $includes := . }}
+		{{ range $includes.users }}
+			{{ $profile_image_url = .profile_image_url }}
+			{{ $name = .name }}
+			{{ $username = .username }}
+		{{ end }}
+	{{ end }}
 {{ end }}
 
 <blockquote class="tweet-card">
-  <div class="tweet-header">
-    <a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">
-      <img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" />
-    </a>
-    <div class="tweet-author">
-      <a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" rel="noopener">{{ $name }}</a>
-      <a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">@{{ $username }}</a>
-    </div>
-  </div>
-  <p class="tweet-body">
-    {{ .Page.RenderString $text }}
-  </p>
-  {{ with $json}}
-    {{ with $json.includes }}
-      {{ $includes := . }}
-      {{ range $includes.media }}
-        {{ if not (eq .type "animated_gif" ) }}
-          <img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-img" />
-          {{/* This will need to be in the main blockquote for multiple included images */}}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-  <div class="tweet-footer">
-    <a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
-  </div>
+	<div class="tweet-header">
+		<a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">
+			<img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" />
+		</a>
+		<div class="tweet-author">
+			<a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" rel="noopener">{{ $name }}</a>
+			<a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">@{{ $username }}</a>
+		</div>
+	</div>
+	<p class="tweet-body">
+		{{ .Page.RenderString $text }}
+	</p>
+	{{ with $json}}
+		{{ with $json.includes }}
+			{{ $includes := . }}
+			{{ range $includes.media }}
+				{{ if not (eq .type "animated_gif" ) }}
+					<img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-img" />
+					{{/* This will need to be in the main blockquote for multiple included images */}}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+	<div class="tweet-footer">
+		<a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
+	</div>
 </blockquote>
 ```
 

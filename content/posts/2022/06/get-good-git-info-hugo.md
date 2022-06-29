@@ -42,10 +42,10 @@ I'll get to the part about displaying commit info shortly but, first, let's note
 After finding this answer, I simply added a `with` section to my GitHub Action's `Checkout default branch` step:
 
 ```yaml
-      - name: Checkout default branch
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+   - name: Checkout default branch
+	   uses: actions/checkout@v3
+		 with:
+       fetch-depth: 0
 ```
 
 . . . and, indeed, that fixed the glitch.
@@ -54,12 +54,12 @@ Incidentally: I test for whether a post's day of original publication and its "l
 
 ```go-html-template
 <p>
-  <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
-  {{- if ne (.PublishDate.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
-    Last modified {{ .Lastmod.Format "January 2, 2006" }}
-  {{- else -}}
-    &nbsp;
-  {{- end -}}
+	<strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
+	{{- if ne (.PublishDate.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
+		Last modified {{ .Lastmod.Format "January 2, 2006" }}
+	{{- else -}}
+		&nbsp;
+	{{- end -}}
 </p>
 ```
 
@@ -71,11 +71,11 @@ Well, the `.GitInfo` object also provides two variables for each commit's [hash]
 
 ```go-html-template
 <p>
-  {{- if $.GitInfo -}}
-    <strong>Latest commit</strong>: <a href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
-  {{- else -}}
-    &nbsp;
-  {{- end -}}
+	{{- if $.GitInfo -}}
+		<strong>Latest commit</strong>: <a href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
+	{{- else -}}
+		&nbsp;
+	{{- end -}}
 </p>
 ```
 

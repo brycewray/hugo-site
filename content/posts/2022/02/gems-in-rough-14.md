@@ -35,7 +35,7 @@ For example, the following won’t work:
 {{ $myArray := slice "2" "4" "6" "8" "10" }}
 
 {{ range $myArray }}
-  {{ $x := . }}
+	{{ $x := . }}
 {{ end }}
 
 <p>The value of x is {{ $x }}.</p>
@@ -43,7 +43,7 @@ For example, the following won’t work:
 There will be a blank after "is"
 rather than the desired "10"; so
 it will say:
-  The value of x is .
+	The value of x is .
 -->
 ```
 
@@ -54,13 +54,13 @@ But this will:
 {{ $x := "" }}
 
 {{ range $myArray }}
-  {{ $x = . }}
+	{{ $x = . }}
 {{ end }}
 
 <p>The value of x is {{ $x }}.</p>
 <!--
 This will say, as we want:
-  The value of x is 10.
+	The value of x is 10.
 -->
 ```
 

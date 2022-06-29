@@ -26,16 +26,16 @@ Fortunately, the answer turned out to be: "not so difficult" --- at least, that 
 First of all, let's cover the `package.json` scripting (I'll save space by not including the `testbuild` scripts I also use for my own nerdy purposes):
 
 ```json
-  "scripts": {
-    "clean": "rimraf _site src/_includes/css",
-    "start": "NODE_ENV=development npm-run-all clean --parallel dev:*",
-    "build": "NODE_ENV=production npm-run-all clean postcss-build --parallel prod:*",
-    "postcss-build": "postcss src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
-    "dev:postcss": "postcss src/assets/css/index.css -o _site/css/index.css --config ./postcss.config.js -w",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet --serve",
-    "prod:postcss": "postcss src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site"
-  },
+	"scripts": {
+		"clean": "rimraf _site src/_includes/css",
+		"start": "NODE_ENV=development npm-run-all clean --parallel dev:*",
+		"build": "NODE_ENV=production npm-run-all clean postcss-build --parallel prod:*",
+		"postcss-build": "postcss src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
+		"dev:postcss": "postcss src/assets/css/index.css -o _site/css/index.css --config ./postcss.config.js -w",
+		"dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet --serve",
+		"prod:postcss": "postcss src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
+		"prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site"
+	},
 ```
 
 **Update, 2021‑03‑24**: I corrected the script `dev:eleventy`, above, so that it includes the `--serve` parameter rather than the `--watch` parameter; as I was [reminded on Twitter](https://twitter.com/marcfilleul/status/1374840637112131589) and is [explained in the Eleventy documentation](https://www.11ty.dev/docs/usage/#re-run-eleventy-when-you-save), `serve` includes the "watching" process, so it's unnecessary to have **both** `--watch` and `serve`. Sorry that I missed this earlier, which probably happened because I previously was using a separate BrowserSync instance and, thus, the code from which I was copying at the time didn't have (or need) the `--serve` parameter for Eleventy.
@@ -75,7 +75,7 @@ So Nunjucks can detect the environment, you first must create a file in the Elev
 
 ```js
 module.exports = {
-  environment: process.env.ELEVENTY_ENV
+	environment: process.env.ELEVENTY_ENV
 }
 ```
 
@@ -91,9 +91,9 @@ Then, down in the section where you'd want to call your CSS, add:
 
 ```html
 {% if eleventyEnv == "production" %}
-  <style>{% include 'css/index.css' ignore missing %}</style>
+	<style>{% include 'css/index.css' ignore missing %}</style>
 {% else %}
-  <link rel="stylesheet" href="/css/index.css" type="text/css" />
+	<link rel="stylesheet" href="/css/index.css" type="text/css" />
 {% endif %}
 ```
 
@@ -112,9 +112,9 @@ const fs = require('fs')
 var internalCSS = ''
 var internalCSSPath = 'src/_includes/css/index.css'
 if (process.env.NODE_ENV === 'production') {
-  if(fs.existsSync(internalCSSPath)) {
-    internalCSS = fs.readFileSync(internalCSSPath)
-  }
+	if(fs.existsSync(internalCSSPath)) {
+		internalCSS = fs.readFileSync(internalCSSPath)
+	}
 }
 ```
 
@@ -122,8 +122,8 @@ Then, down in the section where you'd want to call your CSS, add:
 
 ```html
 ${ process.env.NODE_ENV === 'production'
-  ? `<style>${internalCSS}</style>`
-  : `<link rel="stylesheet" href="/css/index.css" type="text/css" />`
+	? `<style>${internalCSS}</style>`
+	: `<link rel="stylesheet" href="/css/index.css" type="text/css" />`
 }
 ```
 

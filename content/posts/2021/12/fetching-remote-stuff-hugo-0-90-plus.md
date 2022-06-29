@@ -50,14 +50,14 @@ Here’s what’s going on:
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
 
 {{ if $LQIP_get.Err }}
-  {{ warnf "%s" . }}
-  {{/*
-  We output an error message.
-  */}}
+	{{ warnf "%s" . }}
+	{{/*
+	We output an error message.
+	*/}}
 {{ else }}
-  {{/*
-  [Handle things normally.]
-  */}}
+	{{/*
+	[Handle things normally.]
+	*/}}
 {{ end }}
 ```
 

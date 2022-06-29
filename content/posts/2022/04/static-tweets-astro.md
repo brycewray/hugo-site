@@ -54,13 +54,13 @@ The following is my `STweetV2.astro`[^Astro] component, based on the logic and s
 import { format } from "date-fns"
 
 /*
-  =======
-  Based on...
-  - https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
-  - https://hugo.md/post/update-rendering-static-tweets/
-  - https://github.com/KyleMit/eleventy-plugin-embed-tweet
-  - https://github.com/rebelchris/astro-static-tweet/blob/master/StaticTweet.astro
-  =======
+	=======
+	Based on...
+	- https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
+	- https://hugo.md/post/update-rendering-static-tweets/
+	- https://github.com/KyleMit/eleventy-plugin-embed-tweet
+	- https://github.com/rebelchris/astro-static-tweet/blob/master/StaticTweet.astro
+	=======
 */
 
 const { TweetID } = Astro.props
@@ -70,10 +70,10 @@ const jsonURL1 = "https://api.twitter.com/2/tweets?ids="
 const jsonURL2 = "&expansions=author_id,attachments.media_keys&tweet.fields=created_at,text,attachments,entities,source&user.fields=name,username,profile_image_url&media.fields=preview_image_url,type,url,alt_text"
 
 const response = await fetch(jsonURL1 + TweetID + jsonURL2, {
-  method: "get",
-  headers: {
-    "Authorization": `Bearer ${BearerToken}`
-  }
+	method: "get",
+	headers: {
+		"Authorization": `Bearer ${BearerToken}`
+	}
 })
 const Json = await response.json()
 const JsonData = Json.data[0]
@@ -89,50 +89,50 @@ created_at = JsonData.created_at
 text = JsonData.text
 
 if (JsonData.entities.urls) {
-  JsonData.entities.urls.forEach((url) => {
-    if (!url.images) {
-      if (!url.unwound_url) {
-        if (url.display_url.includes ("buff.ly")) {
-          text = text.replace(
-            url.url,
-            `<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`
-          )
-        } else {
-          text = text.replace(
-            url.url,
-            ``
-          )
-        }
-      } else {
-        text = text.replace(
-          url.url,
-          `<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`
-        )
-      }
-    } else {
-      text = text.replace(
-        url.url,
-        `<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`)
-    }
-  })
+	JsonData.entities.urls.forEach((url) => {
+		if (!url.images) {
+			if (!url.unwound_url) {
+				if (url.display_url.includes ("buff.ly")) {
+					text = text.replace(
+						url.url,
+						`<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`
+					)
+				} else {
+					text = text.replace(
+						url.url,
+						``
+					)
+				}
+			} else {
+				text = text.replace(
+					url.url,
+					`<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`
+				)
+			}
+		} else {
+			text = text.replace(
+				url.url,
+				`<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`)
+		}
+	})
 }
 
 if (JsonData.entities.mentions) {
-  JsonData.entities.mentions.forEach((mention) => {
-    text = text.replace(
-      `@${mention.username}`,
-      `<a target="_blank" rel="noreferrer noopener" href="https://twitter.com/${mention.username}">@${mention.username}</a>`
-    )
-  })
+	JsonData.entities.mentions.forEach((mention) => {
+		text = text.replace(
+			`@${mention.username}`,
+			`<a target="_blank" rel="noreferrer noopener" href="https://twitter.com/${mention.username}">@${mention.username}</a>`
+		)
+	})
 }
 
 if (JsonData.entities.hashtags) {
-  JsonData.entities.hashtags.forEach((hashtag) => {
-    text = text.replace(
-      `#${hashtag.tag}`,
-      `<a target="_blank" rel="noreferrer noopener" href="https://twitter.com/hashtag/${hashtag.tag}?src=hash&ref_src=twsrc">#${hashtag.tag}</a>`
-    )
-  })
+	JsonData.entities.hashtags.forEach((hashtag) => {
+		text = text.replace(
+			`#${hashtag.tag}`,
+			`<a target="_blank" rel="noreferrer noopener" href="https://twitter.com/hashtag/${hashtag.tag}?src=hash&ref_src=twsrc">#${hashtag.tag}</a>`
+		)
+	})
 }
 
 text = text.replace(/(?:\r\n|\r|\n)/g, '<br/>')
@@ -140,30 +140,30 @@ text = text.replace(/(?:\r\n|\r|\n)/g, '<br/>')
 let imageItems = ''
 
 if (JsonIncludes.media) {
-  JsonIncludes.media.forEach((item) => {
-    if (item.url) {
-      imageItems = imageItems + `<img class="tweet-img" src=${item.url} alt="" /><br />`
-    }
-  })
+	JsonIncludes.media.forEach((item) => {
+		if (item.url) {
+			imageItems = imageItems + `<img class="tweet-img" src=${item.url} alt="" /><br />`
+		}
+	})
 }
 
 ---
 
 <blockquote class="tweet-card">
-  <div class="tweet-header">
-    <a class="tweet-profile" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">
-      <img src={profile_image_url} alt=`Twitter avatar for ${username}` />
-    </a>
-    <div class="tweet-author">
-      <a class="tweet-author-name" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">{name}</a>
-      <a class="tweet-author-handle" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">@{username}</a>
-    </div>
-  </div>
-  <p class="tweet-body" set:html={text} />
-  <span set:html={imageItems} />
-  <div class="tweet-footer">
-    <a href=`https://twitter.com/${username}/status/${TweetID}` class="tweet-date" target="_blank" rel="noreferrer noopener">{format(new Date(created_at), "MMMM d, yyyy • h:mm aa")}</a>&nbsp;<span class="legal">(UTC)</span>
-  </div>
+	<div class="tweet-header">
+		<a class="tweet-profile" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">
+			<img src={profile_image_url} alt=`Twitter avatar for ${username}` />
+		</a>
+		<div class="tweet-author">
+			<a class="tweet-author-name" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">{name}</a>
+			<a class="tweet-author-handle" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">@{username}</a>
+		</div>
+	</div>
+	<p class="tweet-body" set:html={text} />
+	<span set:html={imageItems} />
+	<div class="tweet-footer">
+		<a href=`https://twitter.com/${username}/status/${TweetID}` class="tweet-date" target="_blank" rel="noreferrer noopener">{format(new Date(created_at), "MMMM d, yyyy • h:mm aa")}</a>&nbsp;<span class="legal">(UTC)</span>
+	</div>
 </blockquote>
 ```
 
@@ -175,12 +175,12 @@ Make things easier on yourself --- *i.e.*, avoiding a lot of relative file refer
 
 ```json
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"]
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["src/components/*"]
+		}
+	}
 }
 ```
 
@@ -218,7 +218,7 @@ To **use the component in a [Markdown](https://daringfireball.net/projects/markd
 ```js
 ---
 setup: |
-  import STweetV2 from '@components/STweetV2.astro'
+	import STweetV2 from '@components/STweetV2.astro'
 ```
 
 .&nbsp;.&nbsp;. along with [any other such items](https://docs.astro.build/en/guides/markdown-content/#using-components-in-markdown) that belong in the `setup` object, of course.

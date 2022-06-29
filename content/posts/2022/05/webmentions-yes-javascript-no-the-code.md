@@ -49,130 +49,130 @@ It's almost time to get into the code --- but, first, to help you understand exa
 
 ```json
 {
-  "children": [
-    {
-      "author": {
-        "name": "Aleksandr Hovhannisyan",
-        "photo": "https://webmention.io/avatar/pbs.twimg.com/a57ef2a18b0456507f96c7391f6f5c067084b20adca201c076619412ff6dff27.jpg",
-        "type": "card",
-        "url": "https://twitter.com/hovhaDovah"
-      },
-      "like-of": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
-      "published": null,
-      "type": "entry",
-      "url": "https://twitter.com/BryceWrayTX/status/1528051733477396482#favorited-by-1325417571223527424",
-      "wm-id": 1402128,
-      "wm-private": false,
-      "wm-property": "like-of",
-      "wm-received": "2022-05-22T17:27:19Z",
-      "wm-source": "https://brid.gy/like/twitter/BryceWrayTX/1528051733477396482/1325417571223527424",
-      "wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
-    },
-    {
-      "author": {
-        "name": "Marshall",
-        "photo": "https://webmention.io/avatar/pbs.twimg.com/960e8699fba9c1c002a9d721d8a6a9b40136ac3ee4d8126265c816a7eba23195.jpg",
-        "type": "card",
-        "url": "https://twitter.com/marshmallocreme"
-      },
-      "like-of": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
-      "published": null,
-      "type": "entry",
-      "url": "https://twitter.com/BryceWrayTX/status/1528051733477396482#favorited-by-14237201",
-      "wm-id": 1402126,
-      "wm-private": false,
-      "wm-property": "like-of",
-      "wm-received": "2022-05-22T17:27:17Z",
-      "wm-source": "https://brid.gy/like/twitter/BryceWrayTX/1528051733477396482/14237201",
-      "wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
-    },
-    {
-      "author": {
-        "name": "Arpit",
-        "photo": "https://webmention.io/avatar/pbs.twimg.com/c2657e3aa183e1b397ffcf5477ad8be765f5606d335c034205ea081b616be3ba.jpg",
-        "type": "card",
-        "url": "https://twitter.com/ArpitCodes"
-      },
-      "like-of": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
-      "published": null,
-      "type": "entry",
-      "url": "https://twitter.com/BryceWrayTX/status/1528051733477396482#favorited-by-423471075",
-      "wm-id": 1402127,
-      "wm-private": false,
-      "wm-property": "like-of",
-      "wm-received": "2022-05-22T17:27:17Z",
-      "wm-source": "https://brid.gy/like/twitter/BryceWrayTX/1528051733477396482/423471075",
-      "wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
-    },
-    {
-      "author": {
-        "name": "Bryce Wray",
-        "photo": "https://webmention.io/avatar/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg",
-        "type": "card",
-        "url": "https://twitter.com/BryceWrayTX"
-      },
-      "content": {
-        "html": "The quality and depth of your content consistently makes up for any shortcomings you may perceive — that much I can assure you, sir.\n\\u003ca class=\"u-mention\" href=\"https://twitter.com/hovhaDovah\"\\u003e\\u003c/a\\u003e",
-        "text": "The quality and depth of your content consistently makes up for any shortcomings you may perceive — that much I can assure you, sir."
-      },
-      "in-reply-to": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
-      "published": "2022-05-21T17:58:16+00:00",
-      "type": "entry",
-      "url": "https://twitter.com/BryceWrayTX/status/1528072700400476160",
-      "wm-id": 1402125,
-      "wm-private": false,
-      "wm-property": "in-reply-to",
-      "wm-received": "2022-05-22T17:27:16Z",
-      "wm-source": "https://brid.gy/comment/twitter/BryceWrayTX/1528051733477396482/1528072700400476160",
-      "wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
-    },
-    {
-      "author": {
-        "name": "Aleksandr Hovhannisyan",
-        "photo": "https://webmention.io/avatar/pbs.twimg.com/a57ef2a18b0456507f96c7391f6f5c067084b20adca201c076619412ff6dff27.jpg",
-        "type": "card",
-        "url": "https://twitter.com/hovhaDovah"
-      },
-      "content": {
-        "html": "Good read! I've been wanting to do this for a while now. My current design doesn't lend itself well to \"just writing\" because many of my (poor) design decisions impact my writing, like the permitted length for titles, descriptions, tags, etc., and thumbnails are tedious to find.\n\\u003ca class=\"u-mention\" href=\"https://twitter.com/BryceWrayTX\"\\u003e\\u003c/a\\u003e\n\\u003ca class=\"u-mention\" href=\"https://www.brycewray.com/\"\\u003e\\u003c/a\\u003e",
-        "text": "Good read! I've been wanting to do this for a while now. My current design doesn't lend itself well to \"just writing\" because many of my (poor) design decisions impact my writing, like the permitted length for titles, descriptions, tags, etc., and thumbnails are tedious to find."
-      },
-      "in-reply-to": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
-      "published": "2022-05-21T17:40:09+00:00",
-      "type": "entry",
-      "url": "https://twitter.com/hovhaDovah/status/1528068142479687681",
-      "wm-id": 1402124,
-      "wm-private": false,
-      "wm-property": "in-reply-to",
-      "wm-received": "2022-05-22T17:27:14Z",
-      "wm-source": "https://brid.gy/comment/twitter/BryceWrayTX/1528051733477396482/1528068142479687681",
-      "wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
-    },
-    {
-      "author": {
-        "name": "Marshall",
-        "photo": "https://webmention.io/avatar/pbs.twimg.com/960e8699fba9c1c002a9d721d8a6a9b40136ac3ee4d8126265c816a7eba23195.jpg",
-        "type": "card",
-        "url": "https://twitter.com/marshmallocreme"
-      },
-      "content": {
-        "html": "I love the spirit of this. I've been trying to do something similar: Make writing, and creating in general, feel as light as possible.\n\\u003ca class=\"u-mention\" href=\"https://twitter.com/BryceWrayTX\"\\u003e\\u003c/a\\u003e\n\\u003ca class=\"u-mention\" href=\"https://www.brycewray.com/\"\\u003e\\u003c/a\\u003e",
-        "text": "I love the spirit of this. I've been trying to do something similar: Make writing, and creating in general, feel as light as possible."
-      },
-      "in-reply-to": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
-      "published": "2022-05-21T20:01:35+00:00",
-      "type": "entry",
-      "url": "https://twitter.com/marshmallocreme/status/1528103732042272768",
-      "wm-id": 1402123,
-      "wm-private": false,
-      "wm-property": "in-reply-to",
-      "wm-received": "2022-05-22T17:27:13Z",
-      "wm-source": "https://brid.gy/comment/twitter/BryceWrayTX/1528051733477396482/1528103732042272768",
-      "wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
-    }
-  ],
-  "name": "Webmentions",
-  "type": "feed"
+	"children": [
+		{
+			"author": {
+				"name": "Aleksandr Hovhannisyan",
+				"photo": "https://webmention.io/avatar/pbs.twimg.com/a57ef2a18b0456507f96c7391f6f5c067084b20adca201c076619412ff6dff27.jpg",
+				"type": "card",
+				"url": "https://twitter.com/hovhaDovah"
+			},
+			"like-of": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
+			"published": null,
+			"type": "entry",
+			"url": "https://twitter.com/BryceWrayTX/status/1528051733477396482#favorited-by-1325417571223527424",
+			"wm-id": 1402128,
+			"wm-private": false,
+			"wm-property": "like-of",
+			"wm-received": "2022-05-22T17:27:19Z",
+			"wm-source": "https://brid.gy/like/twitter/BryceWrayTX/1528051733477396482/1325417571223527424",
+			"wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
+		},
+		{
+			"author": {
+				"name": "Marshall",
+				"photo": "https://webmention.io/avatar/pbs.twimg.com/960e8699fba9c1c002a9d721d8a6a9b40136ac3ee4d8126265c816a7eba23195.jpg",
+				"type": "card",
+				"url": "https://twitter.com/marshmallocreme"
+			},
+			"like-of": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
+			"published": null,
+			"type": "entry",
+			"url": "https://twitter.com/BryceWrayTX/status/1528051733477396482#favorited-by-14237201",
+			"wm-id": 1402126,
+			"wm-private": false,
+			"wm-property": "like-of",
+			"wm-received": "2022-05-22T17:27:17Z",
+			"wm-source": "https://brid.gy/like/twitter/BryceWrayTX/1528051733477396482/14237201",
+			"wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
+		},
+		{
+			"author": {
+				"name": "Arpit",
+				"photo": "https://webmention.io/avatar/pbs.twimg.com/c2657e3aa183e1b397ffcf5477ad8be765f5606d335c034205ea081b616be3ba.jpg",
+				"type": "card",
+				"url": "https://twitter.com/ArpitCodes"
+			},
+			"like-of": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
+			"published": null,
+			"type": "entry",
+			"url": "https://twitter.com/BryceWrayTX/status/1528051733477396482#favorited-by-423471075",
+			"wm-id": 1402127,
+			"wm-private": false,
+			"wm-property": "like-of",
+			"wm-received": "2022-05-22T17:27:17Z",
+			"wm-source": "https://brid.gy/like/twitter/BryceWrayTX/1528051733477396482/423471075",
+			"wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
+		},
+		{
+			"author": {
+				"name": "Bryce Wray",
+				"photo": "https://webmention.io/avatar/pbs.twimg.com/b7a80f06bd0444925bf3506019ab0f10869ae49d4b8c35ea126612f1875ceef2.jpg",
+				"type": "card",
+				"url": "https://twitter.com/BryceWrayTX"
+			},
+			"content": {
+				"html": "The quality and depth of your content consistently makes up for any shortcomings you may perceive — that much I can assure you, sir.\n\\u003ca class=\"u-mention\" href=\"https://twitter.com/hovhaDovah\"\\u003e\\u003c/a\\u003e",
+				"text": "The quality and depth of your content consistently makes up for any shortcomings you may perceive — that much I can assure you, sir."
+			},
+			"in-reply-to": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
+			"published": "2022-05-21T17:58:16+00:00",
+			"type": "entry",
+			"url": "https://twitter.com/BryceWrayTX/status/1528072700400476160",
+			"wm-id": 1402125,
+			"wm-private": false,
+			"wm-property": "in-reply-to",
+			"wm-received": "2022-05-22T17:27:16Z",
+			"wm-source": "https://brid.gy/comment/twitter/BryceWrayTX/1528051733477396482/1528072700400476160",
+			"wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
+		},
+		{
+			"author": {
+				"name": "Aleksandr Hovhannisyan",
+				"photo": "https://webmention.io/avatar/pbs.twimg.com/a57ef2a18b0456507f96c7391f6f5c067084b20adca201c076619412ff6dff27.jpg",
+				"type": "card",
+				"url": "https://twitter.com/hovhaDovah"
+			},
+			"content": {
+				"html": "Good read! I've been wanting to do this for a while now. My current design doesn't lend itself well to \"just writing\" because many of my (poor) design decisions impact my writing, like the permitted length for titles, descriptions, tags, etc., and thumbnails are tedious to find.\n\\u003ca class=\"u-mention\" href=\"https://twitter.com/BryceWrayTX\"\\u003e\\u003c/a\\u003e\n\\u003ca class=\"u-mention\" href=\"https://www.brycewray.com/\"\\u003e\\u003c/a\\u003e",
+				"text": "Good read! I've been wanting to do this for a while now. My current design doesn't lend itself well to \"just writing\" because many of my (poor) design decisions impact my writing, like the permitted length for titles, descriptions, tags, etc., and thumbnails are tedious to find."
+			},
+			"in-reply-to": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
+			"published": "2022-05-21T17:40:09+00:00",
+			"type": "entry",
+			"url": "https://twitter.com/hovhaDovah/status/1528068142479687681",
+			"wm-id": 1402124,
+			"wm-private": false,
+			"wm-property": "in-reply-to",
+			"wm-received": "2022-05-22T17:27:14Z",
+			"wm-source": "https://brid.gy/comment/twitter/BryceWrayTX/1528051733477396482/1528068142479687681",
+			"wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
+		},
+		{
+			"author": {
+				"name": "Marshall",
+				"photo": "https://webmention.io/avatar/pbs.twimg.com/960e8699fba9c1c002a9d721d8a6a9b40136ac3ee4d8126265c816a7eba23195.jpg",
+				"type": "card",
+				"url": "https://twitter.com/marshmallocreme"
+			},
+			"content": {
+				"html": "I love the spirit of this. I've been trying to do something similar: Make writing, and creating in general, feel as light as possible.\n\\u003ca class=\"u-mention\" href=\"https://twitter.com/BryceWrayTX\"\\u003e\\u003c/a\\u003e\n\\u003ca class=\"u-mention\" href=\"https://www.brycewray.com/\"\\u003e\\u003c/a\\u003e",
+				"text": "I love the spirit of this. I've been trying to do something similar: Make writing, and creating in general, feel as light as possible."
+			},
+			"in-reply-to": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/",
+			"published": "2022-05-21T20:01:35+00:00",
+			"type": "entry",
+			"url": "https://twitter.com/marshmallocreme/status/1528103732042272768",
+			"wm-id": 1402123,
+			"wm-private": false,
+			"wm-property": "in-reply-to",
+			"wm-received": "2022-05-22T17:27:13Z",
+			"wm-source": "https://brid.gy/comment/twitter/BryceWrayTX/1528051733477396482/1528103732042272768",
+			"wm-target": "https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/"
+		}
+	],
+	"name": "Webmentions",
+	"type": "feed"
 }
 ```
 
@@ -249,8 +249,8 @@ So, first, we [`jsonify`](https://gohugo.io/functions/jsonify/) it so it'll *rea
 {{- $json = $json | jsonify -}}{{- /* We'll have to unmarshal it at the end */ -}}
 {{- $jsonPreFix := $json -}}{{- /* Save it j/i/c */ -}}
 {{- /*
-  Now, we'll create a string version of $json so
-  we can do some replacements (explained below).
+	Now, we'll create a string version of $json so
+	we can do some replacements (explained below).
 */ -}}
 {{- $jsonString := string $json -}}
 {{- $jsonString := replace $jsonString "in-reply-to" "inReplyTo" -}}
@@ -282,93 +282,93 @@ First, we begin the overall `with` conditional:
 
 ```go-html-template
 <div class="webmentions" id="webmentions">
-  {{- with $json -}}
+	{{- with $json -}}
 ```
 
 Then, we set the rules of engagement, or perhaps I should call them the "rules of display," which establish which possible things we'll show, based on what we got back from webmention.io:
 
 ```go-html-template
-    {{- if $json.children -}}
-      <h3>Webmentions</h3>
-      {{- /*
-      No reason to show that heading if
-      this page has **no** webmentions.
-      */ -}}
-    {{- end }}
-    {{- range $json.children -}}
-      {{- $children = . -}}
-      {{- if $children.likeOf -}}
-        {{- $likesYes = true -}}
-      {{- end }}
-      {{- if $children.content -}}
-        {{- $repliesYes = true -}}
-      {{- end }}
-      {{- if $children.repostOf -}}
-        {{- range $children -}}
-          {{- if (and ($children.content) ($children.repostOf)) -}}
-            {{- $repliesYes = false -}}
-            {{- $repostsYes = true -}}
-          {{- else -}}
-            {{ $repostsYes = true -}}
-          {{- end }}
-        {{- end }}
-      {{- end }}
-      {{- if $children.mentionOf -}}
-        {{ $mentionsYes = true -}}
-      {{- end }}
-    {{- end }}
+		{{- if $json.children -}}
+			<h3>Webmentions</h3>
+			{{- /*
+			No reason to show that heading if
+			this page has **no** webmentions.
+			*/ -}}
+		{{- end }}
+		{{- range $json.children -}}
+			{{- $children = . -}}
+			{{- if $children.likeOf -}}
+				{{- $likesYes = true -}}
+			{{- end }}
+			{{- if $children.content -}}
+				{{- $repliesYes = true -}}
+			{{- end }}
+			{{- if $children.repostOf -}}
+				{{- range $children -}}
+					{{- if (and ($children.content) ($children.repostOf)) -}}
+						{{- $repliesYes = false -}}
+						{{- $repostsYes = true -}}
+					{{- else -}}
+						{{ $repostsYes = true -}}
+					{{- end }}
+				{{- end }}
+			{{- end }}
+			{{- if $children.mentionOf -}}
+				{{ $mentionsYes = true -}}
+			{{- end }}
+		{{- end }}
 ```
 
 With those ground rules established, we provide for "likes":
 
 ```go-html-template
-    {{- if $likesYes -}}
-      <details>
-        <summary class="h4">Likes</summary>
-        <ul class="webmentions__list_facepile">
-          {{- range $json.children -}}
-            {{- $children = . -}}
-            {{- with $children.likeOf -}}
-              <li>
-                <a href="{{ $children.author.url }}" class="u-url">
-                  <img
-                    class="webmention__author__photo u-photo"
-                    src="{{ $children.author.photo }}"
-                    alt="{{ $children.author.name }}"
-                  >
-                </a>
-              </li>
-            {{- end }}
-          {{- end }}
-        </ul>
-      </details>
-    {{- end }}
+		{{- if $likesYes -}}
+			<details>
+				<summary class="h4">Likes</summary>
+				<ul class="webmentions__list_facepile">
+					{{- range $json.children -}}
+						{{- $children = . -}}
+						{{- with $children.likeOf -}}
+							<li>
+								<a href="{{ $children.author.url }}" class="u-url">
+									<img
+										class="webmention__author__photo u-photo"
+										src="{{ $children.author.photo }}"
+										alt="{{ $children.author.name }}"
+									>
+								</a>
+							</li>
+						{{- end }}
+					{{- end }}
+				</ul>
+			</details>
+		{{- end }}
 ```
 
 . . . and "reposts":
 
 ```go-html-template
-    {{- if $repostsYes -}}
-      <details>
-        <summary class="h4">Reposts</summary>
-        <ul class="webmentions__list_facepile">
-          {{- range $json.children -}}
-            {{- $children = . -}}
-            {{- with $children.repostOf -}}
-              <li>
-                <a href="{{ $children.url }}" class="u-url">
-                  <img
-                    class="webmention__author__photo u-photo"
-                    src="{{ $children.author.photo }}"
-                    alt="{{ $children.author.name }}"
-                  >
-                </a>
-              </li>
-            {{- end }}
-          {{- end }}
-        </ul>
-      </details>
-    {{- end }}
+		{{- if $repostsYes -}}
+			<details>
+				<summary class="h4">Reposts</summary>
+				<ul class="webmentions__list_facepile">
+					{{- range $json.children -}}
+						{{- $children = . -}}
+						{{- with $children.repostOf -}}
+							<li>
+								<a href="{{ $children.url }}" class="u-url">
+									<img
+										class="webmention__author__photo u-photo"
+										src="{{ $children.author.photo }}"
+										alt="{{ $children.author.name }}"
+									>
+								</a>
+							</li>
+						{{- end }}
+					{{- end }}
+				</ul>
+			</details>
+		{{- end }}
 ```
 
 . . . and "replies." Please note that:
@@ -379,72 +379,72 @@ With those ground rules established, we provide for "likes":
 [^selfReplies]: By "replies from me," I mean items like what you may have seen in those optional-viewing snippets from the API return: I replied to someone's tweet that was, itself, a reply to my original tweet about the post in question.
 
 ```go-html-template
-    {{- if $repliesYes -}}
-      <details>
-        <summary class="h4">Replies</summary>
-        <ul class="webmentions__list">
-          {{- range sort $json.children ".published" }}
-            {{- $children = . -}}
-            {{- with $children.content -}}
-              {{- if ne $children.author.name "Bryce Wray" -}}
-                <li class="webmentions__item">
-                  <article class="webmention h-cite">
-                    <div class="webmention__meta">
-                      <a class="webmention__author p-author h-card u-url" href="{{ $children.url }}">
-                        <img class="webmention__author__photo u-photo" src="{{ $children.author.photo }}" alt="{{ $children.author.name }}">
-                        <strong class="p-name">{{ $children.author.name }}</strong>
-                      </a>&nbsp;
-                      <span class="pokey">
-                        <time class="webmention__pubdate dt-published" datetime="{{ $children.published }}">{{ $children.published | dateFormat "Jan 2, 2006 15:04:05" }} (UTC)</time>
-                      </span>
-                    </div>
-                    <div class="webmention__content p-content">
-                      {{ $children.content.html | safeHTML }}
-                    </div>
-                  </article>
-                </li>
-              {{- end }}{{- /* if not me */ -}}
-            {{- end }}
-          {{- end }}
-        </ul>
-      </details>
-    {{- end }}
+		{{- if $repliesYes -}}
+			<details>
+				<summary class="h4">Replies</summary>
+				<ul class="webmentions__list">
+					{{- range sort $json.children ".published" }}
+						{{- $children = . -}}
+						{{- with $children.content -}}
+							{{- if ne $children.author.name "Bryce Wray" -}}
+								<li class="webmentions__item">
+									<article class="webmention h-cite">
+										<div class="webmention__meta">
+											<a class="webmention__author p-author h-card u-url" href="{{ $children.url }}">
+												<img class="webmention__author__photo u-photo" src="{{ $children.author.photo }}" alt="{{ $children.author.name }}">
+												<strong class="p-name">{{ $children.author.name }}</strong>
+											</a>&nbsp;
+											<span class="pokey">
+												<time class="webmention__pubdate dt-published" datetime="{{ $children.published }}">{{ $children.published | dateFormat "Jan 2, 2006 15:04:05" }} (UTC)</time>
+											</span>
+										</div>
+										<div class="webmention__content p-content">
+											{{ $children.content.html | safeHTML }}
+										</div>
+									</article>
+								</li>
+							{{- end }}{{- /* if not me */ -}}
+						{{- end }}
+					{{- end }}
+				</ul>
+			</details>
+		{{- end }}
 ```
 
 Lastly, we get to "mentions." *This* is where the `sort` became weird. Try as I might, I couldn't get it to use `published` as with "replies," so I resorted to the `wmId` timestamp. While `wmId` won't necessarily allow for sorting in correct chronological order, this is one of those "any port in a storm" things: if we can't use `published`, `wmId` appears to be the best backup choice.
 
 ```go-html-template
-    {{- if $mentionsYes }}
-      <details>
-        <summary class="h4">Mentions</summary>
-        <ul class="webmentions__list">
-          {{- range sort $json.children ".wmId" "asc" -}}
-          {{/* for some reason, it doesn't sort correctly with ".published" */}}
-            {{- $children = . -}}
-            {{- with $children.content -}}
-              {{- if ne $children.author.name "Bryce Wray" -}}
-                <li class="webmentions__item">
-                  <article class="webmention h-cite">
-                    <div class="webmention__meta">
-                      <a class="webmention__author p-author h-card u-url" href="{{ $children.author.url }}">
-                        <img class="webmention__author__photo u-photo" src="{{ $children.author.photo }}" alt="{{ $children.author.name }}">
-                        <strong class="p-name">{{ $children.author.name }}</strong>
-                      </a>&nbsp;
-                      <span class="legal">
-                        <time class="webmention__pubdate dt-published" datetime="{{ $children.published }}">{{ $children.published | dateFormat "Jan 2, 2006 15:04:05" }} (UTC)</time>
-                      </span>
-                    </div>
-                    <div class="webmention__content p-content">
-                      {{ $children.content.html | safeHTML }}
-                    </div>
-                  </article>
-                </li>
-              {{- end }}
-            {{- end }}
-          {{- end }}
-        </ul>
-      </details>
-    {{- end }}
+		{{- if $mentionsYes }}
+			<details>
+				<summary class="h4">Mentions</summary>
+				<ul class="webmentions__list">
+					{{- range sort $json.children ".wmId" "asc" -}}
+					{{/* for some reason, it doesn't sort correctly with ".published" */}}
+						{{- $children = . -}}
+						{{- with $children.content -}}
+							{{- if ne $children.author.name "Bryce Wray" -}}
+								<li class="webmentions__item">
+									<article class="webmention h-cite">
+										<div class="webmention__meta">
+											<a class="webmention__author p-author h-card u-url" href="{{ $children.author.url }}">
+												<img class="webmention__author__photo u-photo" src="{{ $children.author.photo }}" alt="{{ $children.author.name }}">
+												<strong class="p-name">{{ $children.author.name }}</strong>
+											</a>&nbsp;
+											<span class="legal">
+												<time class="webmention__pubdate dt-published" datetime="{{ $children.published }}">{{ $children.published | dateFormat "Jan 2, 2006 15:04:05" }} (UTC)</time>
+											</span>
+										</div>
+										<div class="webmention__content p-content">
+											{{ $children.content.html | safeHTML }}
+										</div>
+									</article>
+								</li>
+							{{- end }}
+						{{- end }}
+					{{- end }}
+				</ul>
+			</details>
+		{{- end }}
 ```
 
 With that, we're done looping!
@@ -452,7 +452,7 @@ With that, we're done looping!
 Now we can bring this baby in for a smooth landing, `end`-ing the overall `with` and closing the wrapping `div`:
 
 ```go-html-template
-  {{- end }}
+	{{- end }}
 </div>
 ```
 

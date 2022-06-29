@@ -36,18 +36,18 @@ const axios = require('axios')
 After that, we can do this within the shortcode’s `module.exports` section:
 
 ```js
-  async function getBase64(urlFor64) {
-    const response = await axios
-      .get(urlFor64, {
-        responseType: 'arraybuffer'
-      })
-    return Buffer.from(response.data, 'binary').toString('base64')
-  }
+	async function getBase64(urlFor64) {
+		const response = await axios
+			.get(urlFor64, {
+				responseType: 'arraybuffer'
+			})
+		return Buffer.from(response.data, 'binary').toString('base64')
+	}
 
-  // Then, earlier, we've defined the appropriate
-  // LQIP's URL as `urlToGet`, so...
+	// Then, earlier, we've defined the appropriate
+	// LQIP's URL as `urlToGet`, so...
 
-  let LQIP_b64 = await getBase64(urlToGet)
+	let LQIP_b64 = await getBase64(urlToGet)
 ```
 
 That last statement assigns to `LQIP_b64` the Base64 representation of the LQIP, whose URL is supplied by `urlToGet`. Now we can use the `LQIP_b64` variable within the CSS for the main image’s background `div`, as shown in this excerpt from the [template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) which gets exported to any page that invokes the shortcode:

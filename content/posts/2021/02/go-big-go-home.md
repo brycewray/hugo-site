@@ -81,30 +81,30 @@ var xFmPart1 = 'f_auto,q_auto:eco,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
 
 module.exports = (url, alt, width, height) => {
-  divClass = `relative`
-  imgClass = `containedImage`
-  nscClass = `containedImage`
-  dataSzes = `(min-width: 1024px) 100vw, 50vw`
+	divClass = `relative`
+	imgClass = `containedImage`
+	nscClass = `containedImage`
+	dataSzes = `(min-width: 1024px) 100vw, 50vw`
 
-  var separator = ', '
+	var separator = ', '
 
-  var stringtoRet = ``
-  stringtoRet = `<div class="${divClass}">
-  <img class="${imgClass}" data-src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + url}" data-srcset="`
-  respSizes.forEach(size => {
-    if (size <= width) {
-      stringtoRet += `${cloudiBase + xFmPart1 + size + xFmPart2 + url} ${size}w`
-      stringtoRet += separator
-    }
-  })
-  stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
-  stringtoRet += `" alt="${alt}" width="${width}" height="${height}" loading="lazy" sizes="${dataSzes}" />
-  <noscript>
-    <img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + url}" alt="${alt}" />
-  </noscript>
-  </div>`
+	var stringtoRet = ``
+	stringtoRet = `<div class="${divClass}">
+	<img class="${imgClass}" data-src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + url}" data-srcset="`
+	respSizes.forEach(size => {
+		if (size <= width) {
+			stringtoRet += `${cloudiBase + xFmPart1 + size + xFmPart2 + url} ${size}w`
+			stringtoRet += separator
+		}
+	})
+	stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
+	stringtoRet += `" alt="${alt}" width="${width}" height="${height}" loading="lazy" sizes="${dataSzes}" />
+	<noscript>
+		<img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + url}" alt="${alt}" />
+	</noscript>
+	</div>`
 
-  return stringtoRet
+	return stringtoRet
 }
 ```
 
@@ -121,11 +121,11 @@ Here's the corresponding Go version for Hugo:
 {{- $height := .Get "height" -}}
 
 {{/*
-  separating the Cloudinary-related vars for
-  greater flexibility, especially in case
-  somebody else wants to borrow this code
-  for his/her own Cloudinary setup and
-  transformation ("xFm") choices
+	separating the Cloudinary-related vars for
+	greater flexibility, especially in case
+	somebody else wants to borrow this code
+	for his/her own Cloudinary setup and
+	transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
@@ -143,10 +143,10 @@ Here's the corresponding Go version for Hugo:
 {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s" "<div class='" $divClass "'><img class='" $imgClass "' src='" $cloudiBase $xFmPart1 "600" $xFmPart2 $src "' srcset='" -}}
 {{- $.Scratch.Set "innerString" $stringtoRet -}}
 {{- range $respSizes -}}
-  {{- if ge $width . -}}
-    {{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase $xFmPart1 . $xFmPart2 $src " " . "w" $separator -}}
-    {{- $.Scratch.Add "innerString" $innerString }}
-  {{- end -}}
+	{{- if ge $width . -}}
+		{{- $innerString := printf "%s%s%s%s%s%s%s%s%s%s" $innerString $cloudiBase $xFmPart1 . $xFmPart2 $src " " . "w" $separator -}}
+		{{- $.Scratch.Add "innerString" $innerString }}
+	{{- end -}}
 {{- end -}}
 {{- $stringtoRet := .Scratch.Get "innerString" }}
 {{- $stringtoRet := substr $stringtoRet 0 -2 -}}

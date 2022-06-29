@@ -59,35 +59,35 @@ Anyway, here's the Cloudflare Worker[^thanksWorker] I tested successfully during
 
 ```js
 addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
+	event.respondWith(handleRequest(event.request))
 })
 
 async function handleRequest(request) {
-  let response = await fetch(request)
+	let response = await fetch(request)
 
-  let ttl = undefined
-  let cache = caches.default
-  let url = new URL(request.url)
-  let shouldCache = false
+	let ttl = undefined
+	let cache = caches.default
+	let url = new URL(request.url)
+	let shouldCache = false
 
-  const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/
+	const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/
 
-  if (url.pathname.match(filesRegex)) {
-    shouldCache = true
-    ttl = 2678400
-  }
+	if (url.pathname.match(filesRegex)) {
+		shouldCache = true
+		ttl = 2678400
+	}
 
-  let newHeaders = new Headers(response.headers)
-  newHeaders.set("Permissions-Policy", "interest-cohort=()”)
-  if (ttl) {
-    newHeaders.set("Cache-Control", "max-age=" + ttl)
-  }
+	let newHeaders = new Headers(response.headers)
+	newHeaders.set("Permissions-Policy", "interest-cohort=()”)
+	if (ttl) {
+		newHeaders.set("Cache-Control", "max-age=" + ttl)
+	}
 
-  return new Response(response.body, {
-    status: response.status,
-    statusText: response.statusText,
-    headers: newHeaders
-  })
+	return new Response(response.body, {
+		status: response.status,
+		statusText: response.statusText,
+		headers: newHeaders
+	})
 }
 ```
 

@@ -43,17 +43,17 @@ import legacy from "@vitejs/plugin-legacy";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [legacy()],
-  build: {
-    outDir: "_site",
-    assetsDir: "assets-vite", // default = "assets"
-    // Sourcemaps are nice, but not critical for this to work
-    sourcemap: true,
-    manifest: true,
-    rollupOptions: {
-      input: "/src/client/main.js",
-    },
-  },
+	plugins: [legacy()],
+	build: {
+		outDir: "_site",
+		assetsDir: "assets-vite", // default = "assets"
+		// Sourcemaps are nice, but not critical for this to work
+		sourcemap: true,
+		manifest: true,
+		rollupOptions: {
+			input: "/src/client/main.js",
+		},
+	},
 });
 ```
 
@@ -61,7 +61,7 @@ In the Eleventy [site-wide data directory](https://www.11ty.dev/docs/data-global
 
 ```js
 module.exports = {
-  env: process.env.NODE_ENV,
+	env: process.env.NODE_ENV,
 }
 ```
 
@@ -100,127 +100,127 @@ const PATH_PREFIX = "/"
 Then, at the end of `.eleventy.js`, I replaced the final `return {templateFormats}` section with the following, which includes [shortcodes](https://www.11ty.dev/docs/shortcodes/) required for the repo's Nunjucks templates to call Vite properly:
 
 ```js
-  // Read Vite's manifest.json, and add script tags for the entry files
-  // You could decide to do more things here, such as adding preload/prefetch tags
-  // for dynamic segments
-  // NOTE: There is some hard-coding going on here, with regard to the assetDir
-  // and location of manifest.json
-  // you could probably read vite.config.js and get that information directly
-  // @see https://vitejs.dev/guide/backend-integration.html
-  eleventyConfig.addNunjucksAsyncShortcode("viteScriptTag", viteScriptTag);
-  eleventyConfig.addNunjucksAsyncShortcode(
-    "viteLegacyScriptTag",
-    viteLegacyScriptTag
-  );
-  eleventyConfig.addNunjucksAsyncShortcode(
-    "viteLinkStylesheetTags",
-    viteLinkStylesheetTags
-  );
-  eleventyConfig.addNunjucksAsyncShortcode(
-    "viteLinkModulePreloadTags",
-    viteLinkModulePreloadTags
-  );
+	// Read Vite's manifest.json, and add script tags for the entry files
+	// You could decide to do more things here, such as adding preload/prefetch tags
+	// for dynamic segments
+	// NOTE: There is some hard-coding going on here, with regard to the assetDir
+	// and location of manifest.json
+	// you could probably read vite.config.js and get that information directly
+	// @see https://vitejs.dev/guide/backend-integration.html
+	eleventyConfig.addNunjucksAsyncShortcode("viteScriptTag", viteScriptTag);
+	eleventyConfig.addNunjucksAsyncShortcode(
+		"viteLegacyScriptTag",
+		viteLegacyScriptTag
+	);
+	eleventyConfig.addNunjucksAsyncShortcode(
+		"viteLinkStylesheetTags",
+		viteLinkStylesheetTags
+	);
+	eleventyConfig.addNunjucksAsyncShortcode(
+		"viteLinkModulePreloadTags",
+		viteLinkModulePreloadTags
+	);
 
-  async function viteScriptTag(entryFilename) {
-    const entryChunk = await getChunkInformationFor(entryFilename);
-    return `<script type="module" src="${PATH_PREFIX}${entryChunk.file}"></script>`;
-  }
+	async function viteScriptTag(entryFilename) {
+		const entryChunk = await getChunkInformationFor(entryFilename);
+		return `<script type="module" src="${PATH_PREFIX}${entryChunk.file}"></script>`;
+	}
 
-  /* Generate link[rel=modulepreload] tags for a script's imports */
-  /* TODO(fpapado): Consider link[rel=prefetch] for dynamic imports, or some other signifier */
-  async function viteLinkModulePreloadTags(entryFilename) {
-    const entryChunk = await getChunkInformationFor(entryFilename);
-    if (!entryChunk.imports || entryChunk.imports.length === 0) {
-      console.log(
-        `The script for ${entryFilename} has no imports. Nothing to preload.`
-      );
-      return "";
-    }
-    /* There can be multiple import files per entry, so assume many by default */
-    /* Each entry in .imports is a filename referring to a chunk in the manifest; we must resolve it to get the output path on disk.
-     */
-    const allPreloadTags = await Promise.all(
-      entryChunk.imports.map(async (importEntryFilename) => {
-        const chunk = await getChunkInformationFor(importEntryFilename);
-        return `<link rel="modulepreload" href="${PATH_PREFIX}${chunk.file}"></link>`;
-      })
-    );
+	/* Generate link[rel=modulepreload] tags for a script's imports */
+	/* TODO(fpapado): Consider link[rel=prefetch] for dynamic imports, or some other signifier */
+	async function viteLinkModulePreloadTags(entryFilename) {
+		const entryChunk = await getChunkInformationFor(entryFilename);
+		if (!entryChunk.imports || entryChunk.imports.length === 0) {
+			console.log(
+				`The script for ${entryFilename} has no imports. Nothing to preload.`
+			);
+			return "";
+		}
+		/* There can be multiple import files per entry, so assume many by default */
+		/* Each entry in .imports is a filename referring to a chunk in the manifest; we must resolve it to get the output path on disk.
+		 */
+		const allPreloadTags = await Promise.all(
+			entryChunk.imports.map(async (importEntryFilename) => {
+				const chunk = await getChunkInformationFor(importEntryFilename);
+				return `<link rel="modulepreload" href="${PATH_PREFIX}${chunk.file}"></link>`;
+			})
+		);
 
-    return allPreloadTags.join("\n");
-  }
+		return allPreloadTags.join("\n");
+	}
 
-  async function viteLinkStylesheetTags(entryFilename) {
-    const entryChunk = await getChunkInformationFor(entryFilename);
-    if (!entryChunk.css || entryChunk.css.length === 0) {
-      console.warn(`No css found for ${entryFilename} entry. Is that correct?`);
-      return "";
-    }
-    /* There can be multiple CSS files per entry, so assume many by default */
-    return entryChunk.css
-      .map(
-        (cssFile) =>
-          `<link rel="stylesheet" href="${PATH_PREFIX}${cssFile}"></link>`
-      )
-      .join("\n");
-  }
+	async function viteLinkStylesheetTags(entryFilename) {
+		const entryChunk = await getChunkInformationFor(entryFilename);
+		if (!entryChunk.css || entryChunk.css.length === 0) {
+			console.warn(`No css found for ${entryFilename} entry. Is that correct?`);
+			return "";
+		}
+		/* There can be multiple CSS files per entry, so assume many by default */
+		return entryChunk.css
+			.map(
+				(cssFile) =>
+					`<link rel="stylesheet" href="${PATH_PREFIX}${cssFile}"></link>`
+			)
+			.join("\n");
+	}
 
-  async function viteLegacyScriptTag(entryFilename) {
-    const entryChunk = await getChunkInformationFor(entryFilename);
-    return `<script nomodule src="${PATH_PREFIX}${entryChunk.file}"></script>`;
-  }
+	async function viteLegacyScriptTag(entryFilename) {
+		const entryChunk = await getChunkInformationFor(entryFilename);
+		return `<script nomodule src="${PATH_PREFIX}${entryChunk.file}"></script>`;
+	}
 
-  async function getChunkInformationFor(entryFilename) {
-    // We want an entryFilename, because in practice you might have multiple entrypoints
-    // This is similar to how you specify an entry in development more
-    if (!entryFilename) {
-      throw new Error(
-        "You must specify an entryFilename, so that vite-script can find the correct file."
-      );
-    }
+	async function getChunkInformationFor(entryFilename) {
+		// We want an entryFilename, because in practice you might have multiple entrypoints
+		// This is similar to how you specify an entry in development more
+		if (!entryFilename) {
+			throw new Error(
+				"You must specify an entryFilename, so that vite-script can find the correct file."
+			);
+		}
 
-    // TODO: Consider caching this call, to avoid going to the filesystem every time
-    const manifest = await fs.readFile(
-      path.resolve(process.cwd(), "_site", "manifest.json")
-    );
-    const parsed = JSON.parse(manifest);
+		// TODO: Consider caching this call, to avoid going to the filesystem every time
+		const manifest = await fs.readFile(
+			path.resolve(process.cwd(), "_site", "manifest.json")
+		);
+		const parsed = JSON.parse(manifest);
 
-    let entryChunk = parsed[entryFilename];
+		let entryChunk = parsed[entryFilename];
 
-    if (!entryChunk) {
-      const possibleEntries = Object.values(parsed)
-        .filter((chunk) => chunk.isEntry === true)
-        .map((chunk) => `"${chunk.src}"`)
-        .join(`, `);
-      throw new Error(
-        `No entry for ${entryFilename} found in _site/manifest.json. Valid entries in manifest: ${possibleEntries}`
-      );
-    }
+		if (!entryChunk) {
+			const possibleEntries = Object.values(parsed)
+				.filter((chunk) => chunk.isEntry === true)
+				.map((chunk) => `"${chunk.src}"`)
+				.join(`, `);
+			throw new Error(
+				`No entry for ${entryFilename} found in _site/manifest.json. Valid entries in manifest: ${possibleEntries}`
+			);
+		}
 
-    return entryChunk;
-  }
+		return entryChunk;
+	}
 
-  return {
-    templateFormats: [
-      "html",
-      "md",
-      "njk",
-      "11ty.js"
-    ],
-    pathPrefix: PATH_PREFIX,
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
-    passthroughFileCopy: true,
-    dataTemplateEngine: "njk",
-    passthroughFileCopy: true,
-    dir: {
-      input: INPUT_DIR,
-      output: OUTPUT_DIR,
-      // NOTE: These two paths are relative to dir.input
-      // @see https://github.com/11ty/eleventy/issues/232
-      includes: "_includes",
-      data: "../_data",
-    },
-  }
+	return {
+		templateFormats: [
+			"html",
+			"md",
+			"njk",
+			"11ty.js"
+		],
+		pathPrefix: PATH_PREFIX,
+		htmlTemplateEngine: "njk",
+		markdownTemplateEngine: "njk",
+		passthroughFileCopy: true,
+		dataTemplateEngine: "njk",
+		passthroughFileCopy: true,
+		dir: {
+			input: INPUT_DIR,
+			output: OUTPUT_DIR,
+			// NOTE: These two paths are relative to dir.input
+			// @see https://github.com/11ty/eleventy/issues/232
+			includes: "_includes",
+			data: "../_data",
+		},
+	}
 }
 ```
 
@@ -229,17 +229,17 @@ Then, at the end of `.eleventy.js`, I replaced the final `return {templateFormat
 I tossed out the existing `scripts` object in `package.json` in favor of the following:
 
 ```json
-  "scripts": {
-    "clean": "rimraf _site",
-    "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean --parallel dev:*",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --incremental --quiet --serve",
-    "dev:vite": "vite",
-    "build": "NODE_ENV=production npm-run-all clean prod:vite prod:eleventy",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
-    "prod:vite": "NODE_ENV=production vite build",
-    "testbuild:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode --port 5000 --ui-port 5001",
-    "testbuild": "NODE_ENV=production npm run build && npm run testbuild:bsync"
-  },
+	"scripts": {
+		"clean": "rimraf _site",
+		"start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean --parallel dev:*",
+		"dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --incremental --quiet --serve",
+		"dev:vite": "vite",
+		"build": "NODE_ENV=production npm-run-all clean prod:vite prod:eleventy",
+		"prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
+		"prod:vite": "NODE_ENV=production vite build",
+		"testbuild:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode --port 5000 --ui-port 5001",
+		"testbuild": "NODE_ENV=production npm run build && npm run testbuild:bsync"
+	},
 ```
 
 **Note**: I'll explain later what these do.
@@ -254,43 +254,43 @@ First up was the site-wide `base.njk`, the entirety of which now became:
 ```jinja
 <!DOCTYPE html>
 <html lang="en">
-  {% include 'layouts/partials/head.njk' %}
-  <body>
-    {% include 'layouts/partials/header.njk' %}
-    {{ content | safe }}
-    {% include 'layouts/partials/footer.njk' %}
-    {#
-      We must split development  and production scripts
-      In development, vite runs a server to resolve and reload scripts
-      In production, the scripts are statically replaced at build-time
+	{% include 'layouts/partials/head.njk' %}
+	<body>
+		{% include 'layouts/partials/header.njk' %}
+		{{ content | safe }}
+		{% include 'layouts/partials/footer.njk' %}
+		{#
+			We must split development  and production scripts
+			In development, vite runs a server to resolve and reload scripts
+			In production, the scripts are statically replaced at build-time
 
-      The build.env variable is assigned in src/_data/build.js
-      @see https://vitejs.dev/guide/backend-integration.html#backend-integration
-      @see https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables
-    #}
-    {% if build.env == "production" %}
-      {# We must read the production scripts from the Vite manifest. We defer that logic to a custom shortcode #}
-      {% viteScriptTag "src/client/main.js" %}
-      {% viteLegacyScriptTag "vite/legacy-polyfills" %}
-      {% viteLegacyScriptTag "src/client/main-legacy.js" %}
-    {% else %}
-      <script type="module" src="http://localhost:3000/@vite/client"></script>
-      <script type="module" src="http://localhost:3000/src/client/main.js"></script>
-    {% endif %}
-  </body>
+			The build.env variable is assigned in src/_data/build.js
+			@see https://vitejs.dev/guide/backend-integration.html#backend-integration
+			@see https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables
+		#}
+		{% if build.env == "production" %}
+			{# We must read the production scripts from the Vite manifest. We defer that logic to a custom shortcode #}
+			{% viteScriptTag "src/client/main.js" %}
+			{% viteLegacyScriptTag "vite/legacy-polyfills" %}
+			{% viteLegacyScriptTag "src/client/main-legacy.js" %}
+		{% else %}
+			<script type="module" src="http://localhost:3000/@vite/client"></script>
+			<script type="module" src="http://localhost:3000/src/client/main.js"></script>
+		{% endif %}
+	</body>
 </html>
 ```
 
 Then, I finished by changing the closing, CSS-related part of the site-wide `head.njk` template (which, as the name  implies, provides each page's `head` section) to the following:
 
 ```jinja
-    {% if build.env == "production" %}
-      {# Add any CSS from the main script #}
-      {% viteLinkStylesheetTags "src/client/main.js" %}
-      {% viteLinkModulePreloadTags "src/client/main.js" %}
-    {% endif %}
+		{% if build.env == "production" %}
+			{# Add any CSS from the main script #}
+			{% viteLinkStylesheetTags "src/client/main.js" %}
+			{% viteLinkModulePreloadTags "src/client/main.js" %}
+		{% endif %}
 
-  </head>
+	</head>
 ```
 
 In development mode, the CSS appears here in `head` as internal CSS. In production mode, this is a reference to a separate CSS file that Vite has hashed and renamed appropriately for cache-busting (see "[Eleventy + Vite = elite](/posts/2021/07/eleventy-vite-elite/)" for more on that.)

@@ -28,16 +28,16 @@ This example assumes you already have both Tailwind CSS and [PostCSS](https://po
 To let you see clearly the differences between doing this as external CSS and doing it as internal CSS, here is a sample of each. First, **external**:
 
 ```go-html-template
-  {{ $css := resources.Get "css/index.css" }}
-  {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") | fingerprint }}
+	{{ $css := resources.Get "css/index.css" }}
+	{{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") | fingerprint }}
 ```
 
 .&nbsp;.&nbsp;. and then, **internal**:
 
 ```go-html-template
-  {{ with resources.Get "css/index.css" | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") }}
-    <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
+	{{ with resources.Get "css/index.css" | resources.PostCSS (dict "config" "assets/postcss.config.js" "outputStyle" "compressed") }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
 ```
 
 ## SCSS, anyone?
@@ -45,16 +45,16 @@ To let you see clearly the differences between doing this as external CSS and do
 Finally, as a bonus, here's how you do it if you prefer to use [SCSS](https://sass-lang.com) (for which Hugo Pipes has its own out-of-the-box capabilities, not requiring either PostCSS or Node.js) rather than Tailwind CSS. As before, **external** first:
 
 ```go-html-template
-  {{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
-  {{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint }}
+	{{ $options := (dict "targetPath" "css/index.css" "outputStyle" "compressed" ) }}
+	{{ $css := resources.Get "scss/index.scss" | resources.ToCSS $options | fingerprint }}
 ```
 
 .&nbsp;.&nbsp;. and then, **internal**:
 
 ```go-html-template
-  {{ with resources.Get "scss/index.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
-    <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
+	{{ with resources.Get "scss/index.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+		<style>{{ .Content | safeCSS }}</style>
+	{{ end }}
 ```
 
 Whichever way you roll on each choice above --- external *vs.* internal, Tailwind/PostCSS *vs.* SCSS --- here's hoping this is useful information for you Hugo aficionados.

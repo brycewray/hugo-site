@@ -62,20 +62,20 @@ const globAll = require('glob-all')
 const DATAFILE = '_data/csshash.json'
 const PCSSFILE = 'csshash'
 cssFiles = globAll.sync([
-  'src/assets/css/*.css'
+	'src/assets/css/*.css'
 ])
 
 var cssMd5Total = 0
 var cssContent = ''
 
 for(i=0; i<cssFiles.length; i++) {
-  cssContent += (fs.readFileSync(cssFiles[i]))
+	cssContent += (fs.readFileSync(cssFiles[i]))
 }
 cssMd5Total = md5(cssContent)
 console.log(`CSS MD5 result =`, cssMd5Total)
 
 var jsonValue = `{
-  "index.css": "index-${cssMd5Total}.css"
+	"index.css": "index-${cssMd5Total}.css"
 }`
 fs.writeFileSync(DATAFILE, jsonValue)
 
@@ -98,22 +98,22 @@ This file:
 From there, the focus shifts to the scripts in the project's `package.json` file (I'll include only the scripts, since there obviously is a *lot* more stuff in that file):
 
 ```json
-  "scripts": {
-    "clean": "rm -rf _site",
-    "hasher": "node cssdate.js",
-    "start": "npm-run-all clean hasher --parallel dev:*",
-    "dev:postcss": "postcss src/assets/css/index.css -o _site/css/$(cat csshash) --config ./postcss.config.js -w",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
-    "dev:svrx": "svrx",
-    "build": "NODE_ENV=production npm-run-all clean hasher --parallel prod:*",
-    "prod:postcss": "postcss src/assets/css/index.css -o _site/css/$(cat csshash) --config ./postcss.config.js",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
-    "testProd:svrx": "svrx",
-    "testProd:postcss": "postcss src/assets/css/index.css -o _site/css/$(cat csshash) --config ./postcss.config.js -w",
-    "testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site --watch",
-    "setProd": "NODE_ENV=production",
-    "testbuild": "NODE_ENV=production npm-run-all clean hasher --parallel testProd:*"
-  },
+	"scripts": {
+		"clean": "rm -rf _site",
+		"hasher": "node cssdate.js",
+		"start": "npm-run-all clean hasher --parallel dev:*",
+		"dev:postcss": "postcss src/assets/css/index.css -o _site/css/$(cat csshash) --config ./postcss.config.js -w",
+		"dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
+		"dev:svrx": "svrx",
+		"build": "NODE_ENV=production npm-run-all clean hasher --parallel prod:*",
+		"prod:postcss": "postcss src/assets/css/index.css -o _site/css/$(cat csshash) --config ./postcss.config.js",
+		"prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
+		"testProd:svrx": "svrx",
+		"testProd:postcss": "postcss src/assets/css/index.css -o _site/css/$(cat csshash) --config ./postcss.config.js -w",
+		"testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site --watch",
+		"setProd": "NODE_ENV=production",
+		"testbuild": "NODE_ENV=production npm-run-all clean hasher --parallel testProd:*"
+	},
 ```
 
 To be specific:

@@ -49,13 +49,13 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
 === */
 /* latin */
 @font-face {
-  font-family: 'Inter';
-  font-weight: 1 999;
-  font-style: normal;
-  font-display: swap;
-  /* optional is best for first-run CLS checks; swap looks better on one-hit */
-  src: url('/assets/fonts/Inter-3-19_subset_2021-06-18.woff2') format('woff2-variations');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	font-family: 'Inter';
+	font-weight: 1 999;
+	font-style: normal;
+	font-display: swap;
+	/* optional is best for first-run CLS checks; swap looks better on one-hit */
+	src: url('/assets/fonts/Inter-3-19_subset_2021-06-18.woff2') format('woff2-variations');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 ```
 
@@ -66,17 +66,17 @@ https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-
 ```css
 /* === handling Inter VF obliquing */
 .italic, i, cite, em, var, address, dfn, h3, h5 {  /* dealing with Inter VF */
-  font-variation-settings: 'slnt' -8;
-  /* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, so we override that below with the media query for Firefox */
-  font-style: oblique 8deg;
-  /* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
+	font-variation-settings: 'slnt' -8;
+	/* previous is needed by Chromium and Safari; its presence makes Firefox "over-slant" Inter VF, so we override that below with the media query for Firefox */
+	font-style: oblique 8deg;
+	/* previous is needed by Firefox and Safari; it apparently has no effect on Chromium */
 }
 
 @supports (-moz-appearance: none) {
-  .italic, i, cite, em, var, address, dfn, h3, h5 {
-    /* font-variation-settings: normal; */
-    font-style: normal;
-  }
+	.italic, i, cite, em, var, address, dfn, h3, h5 {
+		/* font-variation-settings: normal; */
+		font-style: normal;
+	}
 }
 /* === end, handling Inter VF obliquing */
 ```

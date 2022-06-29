@@ -23,8 +23,8 @@ At the top of each file's front matter, you'll have to add a `setup` item with o
 ```md
 ---
 setup: |
-  import Layout from '@layouts/Post.astro'
-  import Box from '@components/Box.astro'
+	import Layout from '@layouts/Post.astro'
+	import Box from '@components/Box.astro'
 ```
 
 I created the `Box` component for, say, an item[^attrs] like this:

@@ -79,9 +79,9 @@ Configurations can vary from user to user, but a more-or-less standard `.elevent
 
 ```js
 module.exports = function (eleventyConfig) {
-  // Typical configuration fits
-  // in this area and can go on
-  // for as long as necessary
+	// Typical configuration fits
+	// in this area and can go on
+	// for as long as necessary
 }
 ```
 
@@ -91,36 +91,36 @@ module.exports = function (eleventyConfig) {
 {.yellowBox}
 
 ```js
-  // --- START, eleventy-img
-  function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
-    console.log(`Generating image(s) from:  ${src}`)
-    let options = {
-      widths: [600, 900, 1500],
-      formats: ["webp", "jpeg"],
-      urlPath: "/images/",
-      outputDir: "./_site/images/",
-      filenameFormat: function (id, src, width, format, options) {
-        const extension = path.extname(src)
-        const name = path.basename(src, extension)
-        return `${name}-${width}w.${format}`
-      }
-    }
+	// --- START, eleventy-img
+	function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
+		console.log(`Generating image(s) from:  ${src}`)
+		let options = {
+			widths: [600, 900, 1500],
+			formats: ["webp", "jpeg"],
+			urlPath: "/images/",
+			outputDir: "./_site/images/",
+			filenameFormat: function (id, src, width, format, options) {
+				const extension = path.extname(src)
+				const name = path.basename(src, extension)
+				return `${name}-${width}w.${format}`
+			}
+		}
 
-    // generate images
-    Image(src, options)
+		// generate images
+		Image(src, options)
 
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    }
-    // get metadata
-    metadata = Image.statsSync(src, options)
-    return Image.generateHTML(metadata, imageAttributes)
-  }
-  eleventyConfig.addShortcode("image", imageShortcode)
-  // --- END, eleventy-img
+		let imageAttributes = {
+			alt,
+			sizes,
+			loading: "lazy",
+			decoding: "async",
+		}
+		// get metadata
+		metadata = Image.statsSync(src, options)
+		return Image.generateHTML(metadata, imageAttributes)
+	}
+	eleventyConfig.addShortcode("image", imageShortcode)
+	// --- END, eleventy-img
 ```
 
 For each image file you "feed" this shortcode in your Markdown (we'll explain that part next), it will create new files with:
@@ -156,9 +156,9 @@ Now, just build your site, and Eleventy Image will do its magic everywhere withi
 
 ```html
 <picture>
-  <source type="image/webp" srcset="/images/my-pet-cat-600w.webp 600w, /images/my-pet-cat-900w.webp 900w, /images/my-pet-cat-1500w.webp 1500w" sizes="(min-width: 1024px) 100vw, 50vw">
-  <source type="image/jpeg" srcset="/images/my-pet-cat-600w.jpeg 600w, /images/my-pet-cat-900w.jpeg 900w, /images/my-pet-cat-1500w.jpeg 1500w" sizes="(min-width: 1024px) 100vw, 50vw">
-  <img src="/images/my-pet-cat-600w.jpeg" width="1500" height="1125" alt="Photo of a cat named Shakespeare sitting on a window sill" loading="lazy" decoding="async">
+	<source type="image/webp" srcset="/images/my-pet-cat-600w.webp 600w, /images/my-pet-cat-900w.webp 900w, /images/my-pet-cat-1500w.webp 1500w" sizes="(min-width: 1024px) 100vw, 50vw">
+	<source type="image/jpeg" srcset="/images/my-pet-cat-600w.jpeg 600w, /images/my-pet-cat-900w.jpeg 900w, /images/my-pet-cat-1500w.jpeg 1500w" sizes="(min-width: 1024px) 100vw, 50vw">
+	<img src="/images/my-pet-cat-600w.jpeg" width="1500" height="1125" alt="Photo of a cat named Shakespeare sitting on a window sill" loading="lazy" decoding="async">
 </picture>
 ```
 

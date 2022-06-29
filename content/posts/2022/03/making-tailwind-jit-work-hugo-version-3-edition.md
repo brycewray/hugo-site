@@ -68,9 +68,9 @@ First, the version for *external* CSS in production:
 {{ $styles := resources.Get "css/index.css" }}
 {{ $styles = $styles | resources.PostCSS }}
 {{ if hugo.IsProduction }}
-  {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+	{{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ else }}
-  {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
+	{{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
 {{ end }}
 <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
 ```
@@ -81,12 +81,12 @@ And then, the one for *internal* CSS in production:
 {{ $styles := resources.Get "css/index.css" }}
 {{ $styles = $styles | resources.PostCSS }}
 {{ if hugo.IsProduction }}
-  {{- with $styles -}}
-    <style>{{- .Content | safeCSS -}}</style>
-  {{- end -}}
+	{{- with $styles -}}
+		<style>{{- .Content | safeCSS -}}</style>
+	{{- end -}}
 {{ else }}
-  {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
-  <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+	{{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
+	<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
 {{ end }}
 ```
 
@@ -100,11 +100,11 @@ As before, the `postcss.config.js` file for the project looks like this (with th
 
 ```js
 module.exports = {
-  plugins: {
-    'postcss-import': {},
-    'tailwindcss/nesting': {},
-    tailwindcss: {},
-  }
+	plugins: {
+		'postcss-import': {},
+		'tailwindcss/nesting': {},
+		tailwindcss: {},
+	}
 }
 ```
 

@@ -47,7 +47,7 @@ Everything I did in CSS that made it look mildly acceptable on IE made it go bon
 
 ```html
 <!--[if IE]>
-  <link rel="stylesheet" href="/css/ie.css">
+	<link rel="stylesheet" href="/css/ie.css">
 <![endif]-->
 ```
 
@@ -70,9 +70,9 @@ So I was saved the trouble of an "ie.css" sheet; and my resulting addition to th
 ```css
 /* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .slider-text {
-    hey, IE, don't screw up that text or it's coitains, see? Coitains.
-  }
+	.slider-text {
+		hey, IE, don't screw up that text or it's coitains, see? Coitains.
+	}
 }
 /* ==== end, IE 10 and 11 **ONLY** ==== */
 ```

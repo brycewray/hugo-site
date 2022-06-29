@@ -25,15 +25,15 @@ Here is a greatly simplified depiction of my site’s typical content structure 
 ```plaintext
 .
 └── src
-    └── posts
-        └── 2022
-            └── 03
-                └── gems-in-rough-15.md
-                └── gems-in-rough-16.md
-                └── making-tailwind-jit-work-hugo-version-3-edition.md
+		└── posts
+				└── 2022
+						└── 03
+								└── gems-in-rough-15.md
+								└── gems-in-rough-16.md
+								└── making-tailwind-jit-work-hugo-version-3-edition.md
 this post ->    └── simplify-simplify-again.md
-                └── using-dart-sass-hugo-sequel.md
-                └── using-dart-sass-hugo.md
+								└── using-dart-sass-hugo-sequel.md
+								└── using-dart-sass-hugo.md
 ```
 
 .&nbsp;.&nbsp;. and, then, in the Hugo repo:
@@ -41,15 +41,15 @@ this post ->    └── simplify-simplify-again.md
 ```plaintext
 .
 └── content
-    └── posts
-        └── 2022
-            └── 03
-                └── gems-in-rough-15.md
-                └── gems-in-rough-16.md
-                └── making-tailwind-jit-work-hugo-version-3-edition.md
+		└── posts
+				└── 2022
+						└── 03
+								└── gems-in-rough-15.md
+								└── gems-in-rough-16.md
+								└── making-tailwind-jit-work-hugo-version-3-edition.md
 this post ->    └── simplify-simplify-again.md
-                └── using-dart-sass-hugo-sequel.md
-                └── using-dart-sass-hugo.md
+								└── using-dart-sass-hugo-sequel.md
+								└── using-dart-sass-hugo.md
 ```
 
 Now, at first, that may not seem quite so bad for maintaining the two simultaneously. After all, I needed only to copy content back and forth as needed, right? Well, sometimes, it *has* been that simple, but not usually.

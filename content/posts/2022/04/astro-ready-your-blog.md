@@ -39,26 +39,26 @@ const { title, subtitle, description, date, lastmod, permalink } = content;
 ---
 
 <html lang={content.lang || 'en'}>
-  <head>
-    <Head {title} {description} {permalink} />
-  </head>
+	<head>
+		<Head {title} {description} {permalink} />
+	</head>
 
-  <body>
-    <Header />
-    <main>
-      <Billboard
-        title={title}
-        subtitle={subtitle}
-        description={description}
-        date={date}
-        lastmod={lastmod}
-      />
-      <Single >
-        <slot />
-      </Single>
-    </main>
-    <Footer />
-  </body>
+	<body>
+		<Header />
+		<main>
+			<Billboard
+				title={title}
+				subtitle={subtitle}
+				description={description}
+				date={date}
+				lastmod={lastmod}
+			/>
+			<Single >
+				<slot />
+			</Single>
+		</main>
+		<Footer />
+	</body>
 </html>
 ```
 

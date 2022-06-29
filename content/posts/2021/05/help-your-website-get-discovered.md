@@ -58,18 +58,18 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 ```jinja
 ---json
 {
-  "permalink": "/index.xml",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "My Site Title",
-    "description": "A short site description.",
-    "url": "https://www.example.com/",
-    "feedUrl": "https://www.example.com/index.xml",
-    "authors": {
-      "name": "Your Name",
-      "url": "https://www.example.com/about/"
-    }
-  }
+	"permalink": "/index.xml",
+	"eleventyExcludeFromCollections": true,
+	"metadata": {
+		"title": "My Site Title",
+		"description": "A short site description.",
+		"url": "https://www.example.com/",
+		"feedUrl": "https://www.example.com/index.xml",
+		"authors": {
+			"name": "Your Name",
+			"url": "https://www.example.com/about/"
+		}
+	}
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -104,41 +104,41 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 ```jinja
 ---json
 {
-  "permalink": "/index.json",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "My Site Title",
-    "description": "A short site description.",
-    "url": "https://www.example.com/",
-    "feedUrl": "https://www.example.com/index.json",
-    "authors": {
-      "name": "Your Name",
-      "url": "https://www.example.com/about/"
-    }
-  }
+	"permalink": "/index.json",
+	"eleventyExcludeFromCollections": true,
+	"metadata": {
+		"title": "My Site Title",
+		"description": "A short site description.",
+		"url": "https://www.example.com/",
+		"feedUrl": "https://www.example.com/index.json",
+		"authors": {
+			"name": "Your Name",
+			"url": "https://www.example.com/about/"
+		}
+	}
 }
 ---
 {
-  "version": "https://jsonfeed.org/version/1.1",
-  "title": "{{ metadata.title }}",
-  "home_page_url": "{{ metadata.url }}",
-  "feed_url": "{{ metadata.feedUrl }}",
-  "description": "{{ metadata.description }}",
-  "items": [
-    {%- for item in collections.all | reverse -%}
-      {%- if loop.index0 < 10  -%}
-        {%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
-        {
-          "id": "{{ absolutePostUrl }}",
-          "title": "{{ item.data.title }}",
-          "url": "{{ absolutePostUrl }}",
-          "date_published": "{{ item.date | dateFromRFC2822 }}",
-          "summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
-          "content_html": {%- if item.templateContent -%}{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif -%}
-        }{%- if not loop.last -%},{%- endif %}
-      {%- endif -%}
-    {%- endfor %}
-  ]
+	"version": "https://jsonfeed.org/version/1.1",
+	"title": "{{ metadata.title }}",
+	"home_page_url": "{{ metadata.url }}",
+	"feed_url": "{{ metadata.feedUrl }}",
+	"description": "{{ metadata.description }}",
+	"items": [
+		{%- for item in collections.all | reverse -%}
+			{%- if loop.index0 < 10  -%}
+				{%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
+				{
+					"id": "{{ absolutePostUrl }}",
+					"title": "{{ item.data.title }}",
+					"url": "{{ absolutePostUrl }}",
+					"date_published": "{{ item.date | dateFromRFC2822 }}",
+					"summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
+					"content_html": {%- if item.templateContent -%}{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif -%}
+				}{%- if not loop.last -%},{%- endif %}
+			{%- endif -%}
+		{%- endfor %}
+	]
 }
 ```
 
@@ -151,16 +151,16 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for item in collections.all | reverse -%}
-  <url>
-    <loc>{{ siteparams.siteURLforOG }}{{ item.url }}</loc>
-    {%- if item.data.lastmod -%}
-    <lastmod>{{ item.data.lastmod | dateStringISO }}</lastmod>
-    {%- else -%}
-    <lastmod>{{ item.date | dateStringISO }}</lastmod>
-    {%- endif -%}
-  </url>
-  {%- endfor -%}
+	{%- for item in collections.all | reverse -%}
+	<url>
+		<loc>{{ siteparams.siteURLforOG }}{{ item.url }}</loc>
+		{%- if item.data.lastmod -%}
+		<lastmod>{{ item.data.lastmod | dateStringISO }}</lastmod>
+		{%- else -%}
+		<lastmod>{{ item.date | dateStringISO }}</lastmod>
+		{%- endif -%}
+	</url>
+	{%- endfor -%}
 </urlset>
 ```
 
@@ -182,20 +182,20 @@ title: "Sitemap (HTML form)"
 #layout: 'base.njk'
 ---
 <main>
-  <div class="container-narrower sitemapDiv">
-    <h1>Sitemap</h1>
-    <h2>Main pages</h2>
-    <ul>
-      <li><a href="{{ siteparams.siteURLforOG }}">Home page</a></li>
-      <li><a href="{{ siteparams.siteURLforOG }}/about/">About me</a></li>
-    </ul>
-    <h2>Posts</h2>
-    <ul>
-    {%- for post in collections.post | reverse %}
-	  <li>{{ siteparams.siteURLforOG }}{{ post.url }} &bull; {{ post.date | dateStringISO }}</li>
-    {%- endfor %}
-    </ul>
-  </div>
+	<div class="container-narrower sitemapDiv">
+		<h1>Sitemap</h1>
+		<h2>Main pages</h2>
+		<ul>
+			<li><a href="{{ siteparams.siteURLforOG }}">Home page</a></li>
+			<li><a href="{{ siteparams.siteURLforOG }}/about/">About me</a></li>
+		</ul>
+		<h2>Posts</h2>
+		<ul>
+		{%- for post in collections.post | reverse %}
+		<li>{{ siteparams.siteURLforOG }}{{ post.url }} &bull; {{ post.date | dateStringISO }}</li>
+		{%- endfor %}
+		</ul>
+	</div>
 </main>
 ```
 
@@ -234,50 +234,50 @@ outputs:
 {{- end -}}
 {{ $length := (len $pages) -}}
 {
-  "version": "https://jsonfeed.org/version/1.1",
-  "title": "{{ .Site.Title }}",
-  "description": "{{ .Site.Params.Description }}",
-  "home_page_url": "{{ .Site.BaseURL }}",
-  {{ with .OutputFormats.Get "JSON" -}}
-  "feed_url": "{{ .Permalink }}",
-  {{ end -}}
-  {{ with .Site.LanguageCode -}}
-  "language": "{{ . }}",
-  {{ end -}}
-  {{ with $.Param "icon" -}}
-  "icon": "{{ . | absURL }}",
-  {{ end -}}
-  {{ with $.Param "favicon" -}}
-  "favicon": "{{ . | absURL }}",
-  {{ end -}}
-  {{ with .Site.Author.name -}}
-  "authors": [
-    {
-      "name": "{{ . }}"{{ with $.Site.Author.url }},
-      "url": "{{ . }}"{{ end }}{{ with $.Site.Author.avatar }},
-      "avatar": "{{ . | absURL }}"{{ end }}
-    }
-  ],
-  {{ end -}}
-  "items": [
-    {{ range $index, $element := $pages -}}
-    {
-      "title": {{ .Title | jsonify }},
-      "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-      "date_modified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-      "id": "{{ .Permalink }}",
-      "url": "{{ .Permalink }}",
-      {{ with .Params.author -}}
-      "authors": [
-        {
-          "name": "{{ . }}"
-        }
-      ],
-      {{ end -}}
-      "content_html": {{ .Content | jsonify }}
-    }{{ if ne (add $index 1) $length }},{{ end }}
-    {{ end -}}
-  ]
+	"version": "https://jsonfeed.org/version/1.1",
+	"title": "{{ .Site.Title }}",
+	"description": "{{ .Site.Params.Description }}",
+	"home_page_url": "{{ .Site.BaseURL }}",
+	{{ with .OutputFormats.Get "JSON" -}}
+	"feed_url": "{{ .Permalink }}",
+	{{ end -}}
+	{{ with .Site.LanguageCode -}}
+	"language": "{{ . }}",
+	{{ end -}}
+	{{ with $.Param "icon" -}}
+	"icon": "{{ . | absURL }}",
+	{{ end -}}
+	{{ with $.Param "favicon" -}}
+	"favicon": "{{ . | absURL }}",
+	{{ end -}}
+	{{ with .Site.Author.name -}}
+	"authors": [
+		{
+			"name": "{{ . }}"{{ with $.Site.Author.url }},
+			"url": "{{ . }}"{{ end }}{{ with $.Site.Author.avatar }},
+			"avatar": "{{ . | absURL }}"{{ end }}
+		}
+	],
+	{{ end -}}
+	"items": [
+		{{ range $index, $element := $pages -}}
+		{
+			"title": {{ .Title | jsonify }},
+			"date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+			"date_modified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+			"id": "{{ .Permalink }}",
+			"url": "{{ .Permalink }}",
+			{{ with .Params.author -}}
+			"authors": [
+				{
+					"name": "{{ . }}"
+				}
+			],
+			{{ end -}}
+			"content_html": {{ .Content | jsonify }}
+		}{{ if ne (add $index 1) $length }},{{ end }}
+		{{ end -}}
+	]
 }
 ```
 
@@ -295,22 +295,22 @@ date: 2021-05-12T08:00:00-05:00
 
 ```go-html-template
 {{ define "main" }}
-  <div class="container-narrower sitemapDiv">
-    <h1>Sitemap</h1>
-    <h2>Main pages</h2>
-    <ul>
-      <li><a href="{{ .Site.BaseURL }}">Home page</a></li>
-      <li><a href="{{ .Site.BaseURL }}about/">About me</li>
-    </ul>
-    <h2>Posts</h2>
-    <ul>
-    {{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
-      {{- if (ne .Title "Posts") -}}
-      <li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}</li>
-      {{- end -}}
-    {{- end -}}
-    </ul>
-  </div>
+	<div class="container-narrower sitemapDiv">
+		<h1>Sitemap</h1>
+		<h2>Main pages</h2>
+		<ul>
+			<li><a href="{{ .Site.BaseURL }}">Home page</a></li>
+			<li><a href="{{ .Site.BaseURL }}about/">About me</li>
+		</ul>
+		<h2>Posts</h2>
+		<ul>
+		{{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
+			{{- if (ne .Title "Posts") -}}
+			<li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong> &bull; {{ .PublishDate.Format "January 2, 2006" }}</li>
+			{{- end -}}
+		{{- end -}}
+		</ul>
+	</div>
 {{ end }}
 ```
 

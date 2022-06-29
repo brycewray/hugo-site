@@ -90,18 +90,18 @@ Then, add the plugin to your `postcss.config.js` file. If you're happy to go wit
 const path = require('path')
 
 module.exports = {
-  plugins: [
-    require('postcss-hash')({
-      // algorithm: "sha512", // default = "md5"
-      trim: 20,
-      manifest: './_data/manifest.json',
-      name: ({dir, name, hash, ext}) => path.join(dir, name + '-' + hash + ext)
-    }),
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('postcss-preset-env')({ stage: 1 }),
-    require('postcss-clean'),
-  ],
+	plugins: [
+		require('postcss-hash')({
+			// algorithm: "sha512", // default = "md5"
+			trim: 20,
+			manifest: './_data/manifest.json',
+			name: ({dir, name, hash, ext}) => path.join(dir, name + '-' + hash + ext)
+		}),
+		require('postcss-import'),
+		require('tailwindcss'),
+		require('postcss-preset-env')({ stage: 1 }),
+		require('postcss-clean'),
+	],
 }
 ```
 
@@ -140,48 +140,48 @@ One more thing: if you're given to running your site through various online perf
 
 ```json
 {
-  "build": {},
-  "github": {
-    "silent": true
-  },
-  "headers": [
-    {
-      "source": "/css/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2678400"
-        }
-      ]
-    },
-    {
-      "source": "/images/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2678400"
-        }
-      ]
-    },
-    {
-      "source": "/images/icons/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2678400"
-        }
-      ]
-    },
-    {
-      "source": "/fonts/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2678400"
-        }
-      ]
-    }
-  ]
+	"build": {},
+	"github": {
+		"silent": true
+	},
+	"headers": [
+		{
+			"source": "/css/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=2678400"
+				}
+			]
+		},
+		{
+			"source": "/images/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=2678400"
+				}
+			]
+		},
+		{
+			"source": "/images/icons/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=2678400"
+				}
+			]
+		},
+		{
+			"source": "/fonts/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=2678400"
+				}
+			]
+		}
+	]
 }
 ```
 

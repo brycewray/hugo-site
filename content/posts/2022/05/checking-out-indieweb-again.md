@@ -30,7 +30,7 @@ That's a no-no now, so it had to have [a fix I found](https://bobbyhadz.com/blog
 
 ```js
 const fetch = (...args) =>
-  import('node-fetch').then(({ default: fetch }) => fetch(...args));
+	import('node-fetch').then(({ default: fetch }) => fetch(...args));
 ```
 
 At first, that annoyed me but, to be fair, it's actually not bad: only one line of code from that many months ago didn't age well. If only I could say the same about most of the other JS I was using back then on one repo or another.

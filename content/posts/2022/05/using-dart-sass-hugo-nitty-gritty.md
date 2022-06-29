@@ -67,9 +67,9 @@ The resulting contents should be as shown in your downloads folder:
 sass_embedded
 └─ dart-sass-embedded
 └─ src
-    └─ dart
-    └─ dart-sass-embedded.snapshot
-    └─ LICENSE
+		└─ dart
+		└─ dart-sass-embedded.snapshot
+		└─ LICENSE
 {{< /highlight >}}
 Even though it lacks an extension, `sass_embedded/dart-sass-embedded` is a shell script that works with the actual binary, `sass_embedded/src/dart`.
 
@@ -95,11 +95,11 @@ This will run the `dart-sass-embedded` shell script included in the `sass_embedd
 
 ```bash
 {
-  "protocolVersion": "1.0.0",
-  "compilerVersion": "1.52.1",
-  "implementationVersion": "1.52.1",
-  "implementationName": "Dart Sass",
-  "id": 0
+	"protocolVersion": "1.0.0",
+	"compilerVersion": "1.52.1",
+	"implementationVersion": "1.52.1",
+	"implementationName": "Dart Sass",
+	"id": 0
 }
 ```
 
@@ -157,9 +157,9 @@ The resulting contents should be as shown inside your downloads folder:
 sass_embedded
 └─ dart-sass-embedded
 └─ src
-    └─ dart
-    └─ dart-sass-embedded.snapshot
-    └─ LICENSE
+		└─ dart
+		└─ dart-sass-embedded.snapshot
+		└─ LICENSE
 {{< /highlight >}}
 Even though it lacks an extension, `sass_embedded/dart-sass-embedded` is a shell script that works with the actual binary, `sass_embedded/src/dart`.
 
@@ -185,11 +185,11 @@ This will run the `dart-sass-embedded` shell script included in the `sass_embedd
 
 ```bash
 {
-  "protocolVersion": "1.0.0",
-  "compilerVersion": "1.52.1",
-  "implementationVersion": "1.52.1",
-  "implementationName": "Dart Sass",
-  "id": 0
+	"protocolVersion": "1.0.0",
+	"compilerVersion": "1.52.1",
+	"implementationVersion": "1.52.1",
+	"implementationName": "Dart Sass",
+	"id": 0
 }
 ```
 
@@ -251,9 +251,9 @@ The resulting contents should be as shown (inside the regular downloads folder):
 sass_embedded
 └─ dart-sass-embedded.bat
 └─ src
-    └─ dart.exe
-    └─ dart-sass-embedded.snapshot
-    └─ LICENSE
+		└─ dart.exe
+		└─ dart-sass-embedded.snapshot
+		└─ LICENSE
 {{< /highlight >}}
 The `sass_embedded\dart-sass-embedded.bat` batch file works with the actual binary, `sass_embedded\src\dart.exe`.
 
@@ -279,11 +279,11 @@ This will run the `dart-sass-embedded.bat` batch file included in the `sass_embe
 
 ```bash
 {
-  "protocolVersion": "1.0.0",
-  "compilerVersion": "1.52.1",
-  "implementationVersion": "1.52.1",
-  "implementationName": "Dart Sass",
-  "id": 0
+	"protocolVersion": "1.0.0",
+	"compilerVersion": "1.52.1",
+	"implementationVersion": "1.52.1",
+	"implementationName": "Dart Sass",
+	"id": 0
 }
 ```
 

@@ -30,15 +30,15 @@ When I have the code somewhat [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat
 
 ```go-html-template
 {{/*
-  Apologies for the ugliness of the following.
-  First, I'll make it work; then I'll **try**,
-  at least within the limits of Go and Hugo,
-  to make it a bit DRY-er at the very least.
-  Fortunately, both Go and Hugo are so fast,
-  I don't pay a (real) penalty for this spaghetti.
-  But I **do** want to do better. Trust me, friends.
-  And, yes, there are some unused vars in here.
-  Some are for testing only; some are yet to be used.
+	Apologies for the ugliness of the following.
+	First, I'll make it work; then I'll **try**,
+	at least within the limits of Go and Hugo,
+	to make it a bit DRY-er at the very least.
+	Fortunately, both Go and Hugo are so fast,
+	I don't pay a (real) penalty for this spaghetti.
+	But I **do** want to do better. Trust me, friends.
+	And, yes, there are some unused vars in here.
+	Some are for testing only; some are yet to be used.
 */}}
 ```
 

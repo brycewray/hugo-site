@@ -26,8 +26,8 @@ Let's say your `<body>` element currently is set to have a white background and 
 
 ```css
 body {
-    background: #fff; /* totally white */
-    color: #333; /* very dark gray, almost black */
+	background: #fff; /* totally white */
+	color: #333; /* very dark gray, almost black */
 }
 ```
 
@@ -35,21 +35,21 @@ To resolve this for Dark Mode, you could do it this way.
 
 ```css
 body {
-    background: #fff; /* totally white */
-    color: #333; /* very dark gray, almost black */
+	background: #fff; /* totally white */
+	color: #333; /* very dark gray, almost black */
 }
 
 @media (prefers-color-scheme: dark) {
-    /*
-    ============
-    this is what happens if the user
-    selects Dark Mode
-    ============
-    */
-    body {
-        background: #000; /* totally black */
-        color: #fff; /* totally white */
-    }
+	/*
+	============
+	this is what happens if the user
+	selects Dark Mode
+	============
+	*/
+	body {
+			background: #000; /* totally black */
+			color: #fff; /* totally white */
+	}
 }
 ```
 

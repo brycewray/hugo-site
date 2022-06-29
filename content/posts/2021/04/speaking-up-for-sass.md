@@ -48,20 +48,20 @@ $lkClr: hsl(5, 78%, 41%);
 $mdBkpt: 768px;
 
 @media screen and (min-width: $mdBkpt) {
-  body {
+	body {
 	padding: 0 1.5em;
-  }
+	}
 }
 
 .logoType {
-  color: $ourClr;
-  font-weight: 625;
+	color: $ourClr;
+	font-weight: 625;
 }
 
 a, a:focus, a:visited {
-  color: $lkClr;
-  text-decoration: none;
-  border-bottom: 1px solid $lkClr;
+	color: $lkClr;
+	text-decoration: none;
+	border-bottom: 1px solid $lkClr;
 }
 ```
 
@@ -71,29 +71,29 @@ While [PostCSS](https://postcss.org) lets you nest selectors within parent selec
 
 ```scss
 body {
-  padding: 0 1em;
-  @media screen and (min-width: $mdBkpt) {
+	padding: 0 1em;
+	@media screen and (min-width: $mdBkpt) {
 	padding: 0 1.5em;
-  }
+	}
 }
 
 .bigcontainer {
-  background-color: $ourClr;
-  color: white;
-  width: 100%;
-  @media screen and (min-width: $mdBkpt) {
+	background-color: $ourClr;
+	color: white;
+	width: 100%;
+	@media screen and (min-width: $mdBkpt) {
 	width: 80%;
-  }
-  p, li {
+	}
+	p, li {
 	margin: 1em 0;
 	letter-spacing: -0.015em;
-  }
-  &-narrower {
+	}
+	&-narrower {
 	width: 60%;
 	@media screen and (min-width: $mdBkpt) {
-	  width: 45%;
+		width: 45%;
 	}
-  }
+	}
 }
 ```
 
@@ -101,29 +101,29 @@ body {
 
 ```css
 body {
-  padding: 0 1em;
+	padding: 0 1em;
 }
 @media screen and (min-width: 768px) {
-  body {
+	body {
 	padding: 0 1.5em;
-  }
+	}
 }
 .bigContainer {
-  background-color: hsl(336, 58%, 57%);
-  color: white;
-  width: 100%;
+	background-color: hsl(336, 58%, 57%);
+	color: white;
+	width: 100%;
 }
 .bigContainer p, .bigContainer li {
-  margin: 1em 0;
-  letter-spacing: -0.015em;
+	margin: 1em 0;
+	letter-spacing: -0.015em;
 }
 .bigContainer-narrower {
-  width: 60%;
+	width: 60%;
 }
 @media screen and (min-width: 768px) {
-  .bigContainer-narrower {
+	.bigContainer-narrower {
 	width: 45%;
-  }
+	}
 }
 ```
 
@@ -133,20 +133,20 @@ Another capability built into Sass (and available in PostCSS through [a plugin i
 
 ```scss
 @mixin garishGradient {
-  background: rgb(47,250,163);
-  background: linear-gradient(90deg, rgba(47,250,163,1) 0%, rgba(112,103,255,1) 25%, rgba(246,255,26,1) 50%, rgba(242,145,150,1) 75%, rgba(239,52,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ffaa3",endColorstr="#ef34ff",GradientType=1);
+	background: rgb(47,250,163);
+	background: linear-gradient(90deg, rgba(47,250,163,1) 0%, rgba(112,103,255,1) 25%, rgba(246,255,26,1) 50%, rgba(242,145,150,1) 75%, rgba(239,52,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2ffaa3",endColorstr="#ef34ff",GradientType=1);
 }
 
 .bgBox1 {
-  @include garishGradient;
-  border: 1px solid #000;
+	@include garishGradient;
+	border: 1px solid #000;
 }
 
 .imgBkgd {
-  @include garishGradient;
-  border: 2px solid red;
-  z-index: 999;
+	@include garishGradient;
+	border: 2px solid red;
+	z-index: 999;
 }
 ```
 

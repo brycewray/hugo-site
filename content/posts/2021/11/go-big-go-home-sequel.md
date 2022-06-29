@@ -72,15 +72,15 @@ Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specifi
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 
 <div class="{{ $divClass }} bg-center bg-no-repeat bg-cover" style="background-image: url({{ $cloudiBase }}{{ $LQIPholder }}{{ $src }});" aspect-ratio="{{ $width }} / {{ $height }}">
-  <img class="{{ $imgClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}"
-  srcset="
-  {{- range $i, $respSizes -}}
-    {{- if ge $width . -}}
-      {{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w{{ if $i }}, {{ end -}}
-    {{- end -}}
-  {{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
-  <noscript>
-    <img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600 {{ $xFmPart2 }}{{ $src }}" alt="{{ $alt }}" />
-  </noscript>
+	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}"
+	srcset="
+	{{- range $i, $respSizes -}}
+		{{- if ge $width . -}}
+			{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w{{ if $i }}, {{ end -}}
+		{{- end -}}
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
+	<noscript>
+		<img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600 {{ $xFmPart2 }}{{ $src }}" alt="{{ $alt }}" />
+	</noscript>
 </div>
 ```

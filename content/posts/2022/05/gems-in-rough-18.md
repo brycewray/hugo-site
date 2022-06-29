@@ -21,19 +21,19 @@ Here's a sample with some JavaScript code. To see the "Copy" button, move the cu
 
 ```js
 async function handleRequest(req) {
-  const res = await fetch(req);
-  const contentType = res.headers.get("Content-Type");
-  if (contentType.startsWith("text/html")) {
-    return rewriter.transform(res);
-  } else {
-    return res;
-  }
+	const res = await fetch(req);
+	const contentType = res.headers.get("Content-Type");
+	if (contentType.startsWith("text/html")) {
+		return rewriter.transform(res);
+	} else {
+		return res;
+	}
 }
 const rewriter = new HTMLRewriter()
-  .on("a", new AttributeRewriter("href"))
-  .on("img", new AttributeRewriter("src"));
+	.on("a", new AttributeRewriter("href"))
+	.on("img", new AttributeRewriter("src"));
 addEventListener("fetch", (event) => {
-  event.respondWith(handleRequest(event.request));
+	event.respondWith(handleRequest(event.request));
 });
 ```
 

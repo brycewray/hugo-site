@@ -57,14 +57,14 @@ Then, open `package.json` and make its `scripts` object look as follows:
 
 ```json
 "scripts": {
-  "clean": "rimraf public",
-  "devsass": "sass --no-source-map assets/scss/index.scss assets/css/index.css",
-  "prodsass": "sass --no-source-map assets/scss/index.scss assets/css/index.css --style=compressed",
-  "start": "NODE_ENV=development npm-run-all clean devsass --parallel dev:*",
-  "build": "NODE_ENV=production npm-run-all clean prodsass prod:hugo",
-  "dev:sass": "npm run devsass -- --watch",
-  "dev:hugo": "hugo server",
-  "prod:hugo": "hugo --gc --minify"
+	"clean": "rimraf public",
+	"devsass": "sass --no-source-map assets/scss/index.scss assets/css/index.css",
+	"prodsass": "sass --no-source-map assets/scss/index.scss assets/css/index.css --style=compressed",
+	"start": "NODE_ENV=development npm-run-all clean devsass --parallel dev:*",
+	"build": "NODE_ENV=production npm-run-all clean prodsass prod:hugo",
+	"dev:sass": "npm run devsass -- --watch",
+	"dev:hugo": "hugo server",
+	"prod:hugo": "hugo --gc --minify"
 },
 ```
 
@@ -102,7 +102,7 @@ First, the version for **external** CSS:
 ```go-html-template
 {{ $styles := resources.Get "css/index.css" }}
 {{ if hugo.IsProduction }}
-  {{ $styles = $styles | resources.Minify | fingerprint }}
+	{{ $styles = $styles | resources.Minify | fingerprint }}
 {{ end }}
 <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
 ```
@@ -112,11 +112,11 @@ Then, the version for **internal** CSS:
 ```go-html-template
 {{ $styles := resources.Get "css/index.css" }}
 {{ if hugo.IsProduction }}
-  {{ with $styles }}
-    <style>{{- .Content | safeCSS -}}</style>
-  {{ end }}
+	{{ with $styles }}
+		<style>{{- .Content | safeCSS -}}</style>
+	{{ end }}
 {{ else }}
-  <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+	<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
 {{ end }}
 ```
 

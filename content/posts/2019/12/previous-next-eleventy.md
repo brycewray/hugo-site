@@ -38,17 +38,17 @@ Early yesterday morning, after having asked about an [earlier](https://github.co
 
 ```js
 eleventyConfig.addCollection("posts", function(collection) {
-  const coll = collection.getFilteredByTag("posts");
+	const coll = collection.getFilteredByTag("posts");
 
-  for(let i = 0; i < coll.length ; i++) {
-    const prevPost = coll[i-1];
-    const nextPost = coll[i + 1];
+	for(let i = 0; i < coll.length ; i++) {
+		const prevPost = coll[i-1];
+		const nextPost = coll[i + 1];
 
-    coll[i].data["prevPost"] = prevPost;
-    coll[i].data["nextPost"] = nextPost;
-  }
+		coll[i].data["prevPost"] = prevPost;
+		coll[i].data["nextPost"] = nextPost;
+	}
 
-  return coll;
+	return coll;
 });
 ```
 
@@ -57,18 +57,18 @@ Ah. A thing of beauty.
 Once you've added that to your site's `.eleventy.js` file, all you have to do is put something like the following in the appropriate place in your Eleventy template for single posts (this is in [Nunjucks](https://www.11ty.dev/docs/languages/nunjucks/), so please adjust according to the [template language](https://www.11ty.dev/docs/languages/) of your choice):
 
 ```html
-  {% if nextPost.url %}
-    <p class="ctr">
-      <strong>Next</strong>:
-      <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-    </p>
-  {% endif %}
-  {% if prevPost.url %}
-    <p class="ctr">
-      <strong>Previous</strong>:
-      <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
-    </p>
-  {% endif %}
+	{% if nextPost.url %}
+		<p class="ctr">
+			<strong>Next</strong>:
+			<a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+		</p>
+	{% endif %}
+	{% if prevPost.url %}
+		<p class="ctr">
+			<strong>Previous</strong>:
+			<a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+		</p>
+	{% endif %}
 ```
 
 And, no, I didn't swat myself, but I did get the joy.

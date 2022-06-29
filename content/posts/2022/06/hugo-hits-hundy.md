@@ -26,7 +26,7 @@ Up to now, that would've had to be an HTML file:
 
 ```html
 <div class="blueBox">
-  <p><strong>Disclaimer</strong>: This data is provided only for comparison and does <strong>not</strong> necessarily reflect the opinion of <a href="{{ .Site.BaseUrl }}/about/" target="_blank" rel="nofollow">this company</a>.</p>
+	<p><strong>Disclaimer</strong>: This data is provided only for comparison and does <strong>not</strong> necessarily reflect the opinion of <a href="{{ .Site.BaseUrl }}/about/" target="_blank" rel="nofollow">this company</a>.</p>
 </div>
 ```
 
@@ -54,7 +54,7 @@ Okay, fine. So if you want to turn that into *sub-bullets* within a bulleted lis
 
 ```md
 - More about us
-  {{%/* ourList */%}}
+	{{%/* ourList */%}}
 - [Why buy from us?](/why-buy/)
 - [What our customers say](/testimonials/)
 ```
@@ -64,16 +64,16 @@ Okay, fine. So if you want to turn that into *sub-bullets* within a bulleted lis
 Prior to v.0.100.0, this would result in the following (as before, the links are bogus):
 
 <ul>
-  <li>More about us
-    <ul>
-      <li><a href="#">Products</a></li>
-    </ul>
-   </li>
-   <li><a href="#">Services</a></li>
-   <li><a href="#">Locations</a></li>
-   <li><a href="#">Our team</a></li>
-   <li><a href="#">Why buy from us?</a></li>
-   <li><a href="#">What our customers say</a></li>
+	<li>More about us
+		<ul>
+			<li><a href="#">Products</a></li>
+		</ul>
+	 </li>
+	 <li><a href="#">Services</a></li>
+	 <li><a href="#">Locations</a></li>
+	 <li><a href="#">Our team</a></li>
+	 <li><a href="#">Why buy from us?</a></li>
+	 <li><a href="#">What our customers say</a></li>
 </ul>
 
 But, starting with Hugo 0.100.0, you get the desired indenting:

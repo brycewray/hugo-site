@@ -28,15 +28,15 @@ To be fair, though, I should also note that I'd have been lost React-wise had I 
 let copyrightYr = new Date().getFullYear()
 
 export default function Footer() {
-  return (
-    <>
-      <footer>
-        <p className="copyNote">&copy; {copyrightYr}
-        Company Name, LLC.
-        All&nbsp;rights&nbsp;reserved.</p>
-      </footer>
-   </>
-  )
+	return (
+		<>
+			<footer>
+				<p className="copyNote">&copy; {copyrightYr}
+				Company Name, LLC.
+				All&nbsp;rights&nbsp;reserved.</p>
+			</footer>
+	 </>
+	)
 }
 ```
 
@@ -52,10 +52,10 @@ To activate Autoprefixer, all you have to do is add some [Browserslist](https://
 
 ```json
 "browserslist": [
-  "last 4 versions",
-  "> 1%",
-  "IE 11",
-  "maintained node versions"
+	"last 4 versions",
+	"> 1%",
+	"IE 11",
+	"maintained node versions"
 ],
 ```
 
@@ -75,20 +75,20 @@ Fortunately, there's no need to futz with all that **if** you add some [Babel](h
 
 ```json
 {
-  "presets": ["next/babel"],
-  "plugins": [
-    [
-      "module-resolver",
-      {
-        "root": ["."],
-        "alias": {
-          "@scss": "./assets/scss",
-          "@components": "./components",
-          "@partials": "./components/partials"
-       }
-      }
-    ]
-  ]
+	"presets": ["next/babel"],
+	"plugins": [
+		[
+			"module-resolver",
+			{
+				"root": ["."],
+				"alias": {
+					"@scss": "./assets/scss",
+					"@components": "./components",
+					"@partials": "./components/partials"
+			 }
+			}
+		]
+	]
 }
 ```
 
@@ -123,7 +123,7 @@ With `careers` set as the *namespace* for styles from that SCSS file, I then cou
 
 ```jsx
 <div className={careers.headlineRow}>
-  <h1>Careers</h1>
+	<h1>Careers</h1>
 </div>
 ```
 
@@ -131,8 +131,8 @@ By the way: using the term `className` rather than `class` for CSS/SCSS referenc
 
 ```jsx
 <div className={`${careers.txtOnly} ${careers.extraStyle}`}>
-  <p>This is an otherwise-standard text div
-  where we want to have some special extra styling.
+	<p>This is an otherwise-standard text div
+	where we want to have some special extra styling.
 </div>
 ```
 
@@ -165,14 +165,14 @@ const caretDown = <FontAwesomeIcon icon={faCaretDown} />
 
 {/* === further down within the file... === */}
 <ul>
-  <li className={nav.menuItem}>
-    A menu item which has a “down-arrow”
-    because it has a submenu
-    <span className={nav.arrowDown}>{caretDown}</span>
-    <ul className={nav.subMenu}>
-	  {/* === ...and so on... === */}
-    </ul>
-  </li>
+	<li className={nav.menuItem}>
+		A menu item which has a “down-arrow”
+		because it has a submenu
+		<span className={nav.arrowDown}>{caretDown}</span>
+		<ul className={nav.subMenu}>
+		{/* === ...and so on... === */}
+		</ul>
+	</li>
 </ul>
 ```
 

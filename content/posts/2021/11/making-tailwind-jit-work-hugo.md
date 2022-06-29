@@ -95,12 +95,12 @@ When I (finally) figured out this part, I moved the vast majority of my bespoke 
 @tailwind utilities;
 
 @layer base {
-  /* ============================
-  START, from original global.css
-  ============================= */
-  html {
-    scroll-padding-top: 80px;
-  }
+	/* ============================
+	START, from original global.css
+	============================= */
+	html {
+		scroll-padding-top: 80px;
+	}
 ```
 
 .&nbsp;.&nbsp;. and so on down the line. The `@import`ed files **above** the first `@tailwind` statement do, indeed, get into the final CSS file. Again, anything `@import`ed after that **won't**, so that's why `@layer` is the way to go.[^InterVF]
