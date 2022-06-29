@@ -258,7 +258,7 @@ I also like the fact that, unlike my Cloudinary-using `imgc` shortcode, `imgh` d
 
 Here are a few more things to keep in mind about using this shortcode.
 
-The image quality is Hugo's default of 75% (although [this and other settings can be configured](https://gohugo.io/content-management/image-processing/#imaging-configuration)). As the saying goes, "I have left that as an exercise for the user." **But** I've been pleasantly surprised with this default, especially in comparison to the Cloudinary images these Hugo-generated images have replaced. While some are a bit larger, the vast majority are either roughly the same size or actually smaller, yet I can see little or no tangible difference.
+The image quality is Hugo's default of 75%, although [this and other settings can be configured](https://gohugo.io/content-management/image-processing/#imaging-configuration). (As the saying goes, "I have left that as an exercise for the user.") **But** I've been pleasantly surprised with this default, especially in comparison to the Cloudinary images these Hugo-generated images have replaced. While some are a bit larger, the vast majority are either roughly the same size or actually smaller, yet I can see little or no tangible difference.
 
 I suggest that you **not** gitignore `resources/_gen/assets`, so your repo will include both the original image files *and* the Hugo-generated versions. That will save time in both local devs/builds and the online build process on most hosts. Just make sure the image files don't constitute such a load that you risk exceeding your repo host's limits, especially if you're using its free tier.
 
