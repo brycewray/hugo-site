@@ -13,10 +13,6 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
 
-### Cloudinary
-
-[Cloudinary](https://cloudinary.com) hosts and serves some of the images on this site. A [Cloudinary Support article](https://support.cloudinary.com/hc/en-us/articles/360020207811-Does-Cloudinary-Store-Any-Cookies-) says that your viewing of any such images involves no storage or use of your personal data.
-
 ### giscus
 
 The site's [giscus](https://giscus.app) commenting system, which is based on the [GitHub Discussions search API](https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions#search), performs no tracking.
