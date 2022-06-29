@@ -2,14 +2,16 @@
 title: "Responsive and optimized images with Hugo"
 description: "How to take advantage of the amazingly capable image processing built into this SSG."
 author: Bryce Wray
-date: 2022-06-29T10:00:59-05:00
-draft: true
+date: 2022-06-29T08:17:00-05:00
+#draft: true
 #initTextEditor: iA Writer
 ---
 
 If you use any images on your website, you probably know how important it is to make them fully *responsive* and as *optimized* as possible so they provide an optimal user experience, regardless of screen size or connectivity. Fortunately, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) comes with many impressive [image processing capabilities](https://gohugo.io/content-management/image-processing/) which can help you automate this to an amazing degree. Hugo can resize images of all sizes, convert them to multiple different formats, and perform many more image processing feats --- all much more quickly than can any other SSG.
 
-Years ago, the availability of Hugo image processing was more restrictive concerning the images' location within a Hugo project. Specifically, they had to be [*page resources*](https://gohugo.io/content-management/image-processing/#page-resources), and thus in the same folder as the Markdown content calling them. While that's still perfectly fine, they now also can be [*global resources*](https://gohugo.io/content-management/image-processing/#global-resources), existing in either the project's `assets/` folder or any subfolder thereof. I'm old-school and prefer to keep textual content files separate from image files, so I like this flexibility quite a bit.
+Years ago, the availability of Hugo image processing was more restrictive concerning the images' location within a Hugo project. Specifically, they had to be [*page resources*](https://gohugo.io/content-management/image-processing/#page-resources), and thus in the same folder as the Markdown content calling them. While that's still perfectly fine, they now also can be [*global resources*](https://gohugo.io/content-management/image-processing/#global-resources), existing in either the project's `assets/` folder or any subfolder thereof.[^versionGlobal] I'm old-school and prefer to keep textual content files separate from image files, so I like this flexibility quite a bit.
+
+[^versionGlobal]: Despite searching through Hugo [release notes](https://github.com/gohugoio/hugo/releases) and various Hugo documentation updates, I was unable to determine exactly which version first supported this. All I could do was see that the related documentation itself changed sometime in the second half of 2020 to mention the acceptability of global resources for Hugo's image processing.
 
 For truly responsive images, you must define the *breakpoints*. These are viewport sizes, usually defined in pixels, for the browser to use in deciding *which* image to serve. Some articles you'll find out there --- as in the [references](#references) I'll list at the end --- take a more hard-coded approach to the breakpoints than I feel is necessary or appropriate. This probably is because of the sample code from older articles of this type, in which it's common to assign a variable to each of several breakpoints (*e.g.*, `$tiny` for a 500-pixel breakpoint, `$medium` for an 800-pixel one, *etc.*). Yes, you can do that and it'll work, but I suggest another method which I'll describe in a bit.
 
@@ -51,7 +53,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 {{/*
   This will be from top-level `assets/images`,
   where we'll keep all images for Hugo's
-  processing (this makes them "global 
+  processing (this makes them "global
   resources," as noted in the documentation.)
 */}}
 {{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}
@@ -69,13 +71,13 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 {{/*
   Now we'll create the 20-pixel-wide LQIP
   and turn it into Base64-encoded data, which
-  is better for performance and caching. 
+  is better for performance and caching.
 */}}
 {{- $LQIP_img := $src.Resize "20x jpg" -}}
 {{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
 {{/*
-  $CFPstyle is for use in styling 
-  the div's background, as you'll see shortly. 
+  $CFPstyle is for use in styling
+  the div's background, as you'll see shortly.
 */}}
 {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 {{/*
@@ -119,7 +121,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 {{- end -}}
 {{/*
   Now we'll build the `picture` which modern
-  browsers use to decide which image, and 
+  browsers use to decide which image, and
   which format thereof, to show. Remember to
   put `webp` first, since the browser will use
   the first format it can use, and WebP files
@@ -139,7 +141,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 	    {{- end -}}"
 	    sizes="{{ $dataSzes }}"
     />
-    <source 
+    <source
 	    type="image/jpeg"
 	    srcset="
 	    {{- with $respSizes -}}
@@ -170,7 +172,7 @@ To invoke `imgh` in Markdown, use it like so[^commentsGo]:
 {{</* imgh-nobg src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" */>}}
 ```
 
-In this case, this produces (and, yes, this truly is a photo of our pet cat, Shakespeare):
+In this case, it produces:
 
 {{< imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" >}}
 
@@ -198,47 +200,49 @@ Besides, there's a lot of difference between Then and Now.
 
 When the site [first began](/posts/2019/12/packing-up/) providing responsive images in late 2019, it was through a [webpack](https://webpack.js.org) plugin working with the [Eleventy](https://11ty.dev) SSG. As the site's inventory of images grew, so did its build times. Later, [when I stopped using webpack](/posts/2020/05/going-solo-eleventy/) and instead built the Eleventy site with `package.json` scripting, I came up with some JavaScript that used [sharp](https://github.com/lovell/sharp) to process the site's images. It worked well enough, but the build times grew longer. Only when I went to Cloudinary did I cease having to worry about that.
 
-So do I now have to worry about it again? Nope. Today is a different story. In 2020, before I began using Cloudinary, my site's image-generation process was a much slower mishmash that depended on JavaScript and a whole bucketload of Node.js dependencies. Now, I'm using the [Go](https://go.dev)-based, all-in-one Hugo --- whose built-in image processing, like Hugo itself, is preternaturally fast.
+So do I now have to worry about it again? Nope. Today is a different story. In 2020, before I began using Cloudinary, my site's image-generation process was a much slower mishmash that depended on JavaScript and a whole bucketload of Node.js dependencies. Now, I'm using the [Go](https://go.dev)-based, all-in-one Hugo --- whose built-in image processing, like Hugo itself, is preternaturally fast.[^noHeroes]
+
+[^noHeroes]: In the interest of a fair comparison, I do concede that, through much of the site's pre-Cloudinary time, it was using a large *hero image* on every post. However: (1.) the build times were slow even during periods when I would [take down the hero images](/posts/2020/02/so-much-for-heroes/); (2.) when I *was* using the hero images pre-Cloudinary, I used only downsampled, smaller versions rather than the full-size originals I could use with Cloudinary. (For the images I use now, I am using full-size originals once again, and Hugo handles them quickly and without complaint --- something I never dared to do with my old JavaScript-based process.) **In short**, this isn't an apples-*vs.*-apples matchup.
 
 But everything in web dev claims to be "blazing fast," so let's look at some proof.
 
 Yesterday, when I did a local `hugo build` of the site, including the post you're reading right now, I got:
 
 ```plaintext
-                   |  EN   
+                   |  EN
 -------------------+-------
-  Pages            |  219  
-  Paginator pages  |   39  
-  Non-page files   |    0  
-  Static files     |   69  
-  Processed images | 1489  
-  Aliases          |    1  
-  Sitemaps         |    1  
-  Cleaned          |   38  
+  Pages            |  219
+  Paginator pages  |   39
+  Non-page files   |    0
+  Static files     |   69
+  Processed images | 1489
+  Aliases          |    1
+  Sitemaps         |    1
+  Cleaned          |   38
 
 Total in 4134 ms
 ```
 
-In other words, it all built in slightly over four seconds. (Some of those pre-Cloudinary builds used to take **several minutes**, even locally.)
+As you see, it all built in slightly over four seconds. (Some of those pre-Cloudinary builds used to take **several minutes**, even locally.)
 
 However, to be fair, that was with all the images pre-generated by my earlier testing; so, then, I *deleted* them, forcing Hugo to *regenerate* all the images on the next build:
 
 ```plaintext
-                   |  EN   
+                   |  EN
 -------------------+-------
-  Pages            |  219  
-  Paginator pages  |   39  
-  Non-page files   |    0  
-  Static files     |   69  
-  Processed images | 1489  
-  Aliases          |    1  
-  Sitemaps         |    1  
-  Cleaned          |   37  
+  Pages            |  219
+  Paginator pages  |   39
+  Non-page files   |    0
+  Static files     |   69
+  Processed images | 1489
+  Aliases          |    1
+  Sitemaps         |    1
+  Cleaned          |   37
 
 Total in 69905 ms
 ```
 
-In just under seventy seconds, Hugo churned out all 1,489 images from scratch --- *and* the 200+-page site itself. Pretty slick.
+In just under seventy seconds, Hugo rebuilt nearly 1,500 image files from scratch --- *and* the 200+-page site itself. Pretty slick.
 
 **Note**: If you're similarly starting from scratch with many images, and/or you want to minimize issues on your site's host the first time you switch to this, [set your Hugo config file's `timeout` value](https://gohugo.io/getting-started/configuration/#timeout) to longer than the default of thirty seconds. After you get to the point where your builds are more incremental where the images are concerned, thirty seconds will be *’waaay* more than enough time, both locally and on the host.
 {.yellowBox}
@@ -271,7 +275,7 @@ You see, since the generated images end up in `resources/_gen/images`, the first
 
 ## References
 
-Even if you don't use `imgh` or anything like it, I hope this article has at least contributed to your understanding of Hugo's image processing prowess. Here are other selected articles about using Hugo for creating responsive images. I've listed them in order of their publish dates, oldest first. Note that even some which came *after* Hugo began allowing processing of images as global resources still referred erroneously to the earlier file-placement restrictions.
+Even if you don't use `imgh` or anything like it, I hope this article has at least contributed to your understanding of Hugo's image processing prowess. Here are other selected articles about using Hugo for creating responsive images. I've listed them in order of their publish dates, oldest first. Note that even some which came *after* Hugo began allowing processing of images as global resources still referred erroneously to Hugo's earlier file-placement restrictions.
 
 - Adam Wills, "[Responsive Images in Hugo](https://www.adamwills.io/blog/responsive-images-hugo/)" (2017-04-30).
 - Nils Norman Haukås, "[Hugo: How to add support for responsive images trough image processing and page bundles <3](https://nilsnh.no/2018/06/10/hugo-how-to-add-support-for-responsive-images-trough-image-processing-and-page-bundles-3/)" (2018-06-10).
