@@ -132,25 +132,25 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
     <source
       type="image/webp"
       srcset="
-	    {{- with $respSizes -}}
-	      {{- range $i, $e := . -}}
-	        {{- if ge $imgCfg.Width . -}}
-	          {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " webp") ).RelPermalink }} {{ . }}w
-	        {{- end -}}
-	      {{- end -}}
-	    {{- end -}}"
-	    sizes="{{ $dataSzes }}"
+      {{- with $respSizes -}}
+        {{- range $i, $e := . -}}
+          {{- if ge $imgCfg.Width . -}}
+            {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " webp") ).RelPermalink }} {{ . }}w
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}"
+      sizes="{{ $dataSzes }}"
     />
     <source
-	    type="image/jpeg"
-	    srcset="
-	    {{- with $respSizes -}}
-	      {{- range $i, $e := . -}}
-	        {{- if ge $imgCfg.Width . -}}
-	          {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " jpg") ).RelPermalink }} {{ . }}w
-	        {{- end -}}
-	      {{- end -}}
-	    {{- end -}}"
+      type="image/jpeg"
+      srcset="
+      {{- with $respSizes -}}
+        {{- range $i, $e := . -}}
+          {{- if ge $imgCfg.Width . -}}
+            {{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " jpg") ).RelPermalink }} {{ . }}w
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}"
       sizes="{{ $dataSzes }}"
     />
     <img class="{{ $imgClass }}"
