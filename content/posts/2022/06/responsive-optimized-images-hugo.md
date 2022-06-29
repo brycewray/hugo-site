@@ -54,7 +54,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
   This will be from top-level `assets/images`,
   where we'll keep all images for Hugo's
   processing (this makes them "global
-  resources," as noted in the documentation.)
+  resources," as noted in the documentation).
 */}}
 {{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}
 {{- $alt := .Get "alt" -}}
