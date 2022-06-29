@@ -190,7 +190,7 @@ In this case, it produces:
 
 ## Making comparisons
 
-Long-time readers of this site will require that, starting in [July, 2020](/posts/2020/07/transformed/), I began using the Cloudinary free tier to host virtually all of this site's images, after my development and build processes grew increasingly slower as I added more images to the site repo.
+Long-time readers of this site will recall that, starting in [July, 2020](/posts/2020/07/transformed/), I began using the Cloudinary free tier to host virtually all of this site's images, after my development and build processes grew increasingly slower as I added more images to the site repo.
 
 So why am I now backtracking to repo-hosted images?
 
