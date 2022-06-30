@@ -4,21 +4,18 @@
 {{- $fallbackImg := "typewriter-monochrome_2242164_6260x4374.jpg" -}}
 
 	<head>
-		{{/*- Required meta tags -*/}}
+		{{- /* Required meta tags */ -}}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		{{ hugo.Generator }}
-
 		<meta name="twitter:site" content="@BryceWrayTX">
 		<meta name="twitter:creator" content="@BryceWrayTX">
 		<meta name="twitter:card" content="summary_large_image" />
-
-		<!-- IndieWeb -->
+		{{- /* IndieWeb */ -}}
 		{{- if .IsHome }}
-			<link rel="me" href="https://twitter.com/BryceWrayTX" />
-			<link rel="me" href="https://github.com/brycewray" />
+		<link rel="me" href="https://twitter.com/BryceWrayTX" />
+		<link rel="me" href="https://github.com/brycewray" />
 		{{- end }}
 		<link rel="webmention" href="https://webmention.io/www.brycewray.com/webmention" />
 		<link rel="pingback" href="https://webmention.io/www.brycewray.com/xmlrpc" />
@@ -64,8 +61,8 @@
 	 {{- end }}
 	{{- end -}}
 
-		{{/*- **** BEGINNING, favicons **** -*/}}
-		{{/*- generics -*/}}
+		{{- /* **** BEGINNING, favicons **** */ -}}
+		{{- /* generics */}}
 		<link rel="icon" type="image/svg+xml" href="/assets/svg/svgNavIcon_reduced.svg" />
 		<link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
 		<link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
@@ -85,18 +82,9 @@
 		<meta name="msapplication-config" content="/browserconfig.xml">
 		{{- /* **** CONCLUSION, favicons **** */ -}}
 
-		<!-- discover news feeds -->
+		{{- /* discover news feeds */}}
 		<link rel="alternate" title="News feed - RSS" type="application/rss+xml" href="https://www.brycewray.com/index.xml" />
 		<link rel="alternate" title="News feed - JSON" type="application/feed+json" href="https://www.brycewray.com/index.json" />
-
-		{{- partialCached "css.html" . -}}
-
-		<noscript>
-			<style>
-				.nScrHidden {
-					display: none;
-				}
-			</style>
-		</noscript>
-
+		{{- partialCached "css.html" . }}
+		<noscript><style>.nScrHidden {display: none;}</style></noscript>
 	</head>
