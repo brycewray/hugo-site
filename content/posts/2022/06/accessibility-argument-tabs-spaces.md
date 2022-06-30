@@ -9,7 +9,7 @@ date: 2022-06-30T12:02:00-05:00
 
 When I was starting this site in September, 2018, its ["About" page](/about/) looked like this:
 
-[^Git]: 
+[^Git]:
 
 {{< imgh src="orig-site_screen-cap_1518x1356.png" alt="Screen capture of this website’s pre-launch appearance in 2018" >}}
 
@@ -69,7 +69,7 @@ insert_final_newline = false
 
 ```
 
-As for making sure my existing code samples then still looked as I desired (for me, that's two spaces per indent, as you saw in that `indent_size` setting above), I adjusted the site's styling to add `tab-size` settings for the **display** of code samples:
+As for making sure my existing code samples then still looked as I desired (for me, that's two spaces per indent, as you saw in that `indent_size` setting above), I adjusted the site's styling to add a `tab-size` setting for the **display** of code samples:
 
 ```css
 	code[class*="language-"],
