@@ -194,13 +194,13 @@ Long-time readers of this site will recall that, starting in [July, 2020](/posts
 
 So why am I now backtracking to repo-hosted images?
 
-You can be sure it's *not* because I have a problem with Cloudinary, because I've been very happy with that experience. Rather, I've chosen to "dogfood" this shortcode --- not only because I think that's only fair but also because I wanted to put Hugo to the test, having long been curious about this particular Hugo power.
+You can be sure it's *not* because I have a problem with Cloudinary, because I've been very happy with that experience. Rather, I've chosen to "dogfood" this shortcode --- not merely because I think that's only fair but also because I wanted to put Hugo to the test, having long been curious about this particular Hugo power.
 
 Besides, there's a lot of difference between Then and Now.
 
 When the site [first began](/posts/2019/12/packing-up/) providing responsive images in late 2019, it was through a [webpack](https://webpack.js.org) plugin working with the [Eleventy](https://11ty.dev) SSG. As the site's inventory of images grew, so did its build times. Later, [when I stopped using webpack](/posts/2020/05/going-solo-eleventy/) and instead built the Eleventy site with `package.json` scripting, I came up with some JavaScript that used [sharp](https://github.com/lovell/sharp) to process the site's images. It worked well enough, but the build times grew longer. Only when I went to Cloudinary did I cease having to worry about that.
 
-So do I now have to worry about it again? Nope. Today is a different story. In 2020, before I began using Cloudinary, my site's image-generation process was a much slower mishmash that depended on JavaScript and a whole bucketload of Node.js dependencies. Now, I'm using the [Go](https://go.dev)-based, all-in-one Hugo --- whose built-in image processing, like Hugo itself, is preternaturally fast.[^noHeroes]
+So do I now have to worry about it again? Nope. Today is a different story. Now, instead of that JavaScript-based mishmash, I'm using the [Go](https://go.dev)-based, all-in-one Hugo --- whose built-in image processing, like Hugo itself, is preternaturally fast.[^noHeroes]
 
 [^noHeroes]: In the interest of a fair comparison, I do concede that, through much of the site's pre-Cloudinary time, it was using a large *hero image* on every post. However: (1.) the build times were slow even during periods when I would [take down the hero images](/posts/2020/02/so-much-for-heroes/); (2.) when I *was* using the hero images pre-Cloudinary, I used only downsampled, smaller versions rather than the full-size originals I could use with Cloudinary. (For the images I use now, I am using full-size originals once again, and Hugo handles them quickly and without complaint --- something I never dared to do with my old JavaScript-based process.) **In short**, this isn't an apples-*vs.*-apples matchup.
 
