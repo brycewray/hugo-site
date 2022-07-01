@@ -411,6 +411,7 @@ jobs:
           apiToken: ${{ secrets.CFP_API_TOKEN }}
           accountID: ${{ secrets.CF_ACCOUNT_ID }}
           projectName: 'hugo-site'
+					# use **your** CFP project's name above
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 ```
