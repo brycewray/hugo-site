@@ -60,7 +60,7 @@ jobs:
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
-        run: hugo --gc
+        run: hugo --gc --minify
       - name: Publish to Vercel
         uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
