@@ -38,7 +38,7 @@ As for me, my former position on this Holy War was for spaces over tabs when it'
 
 Then, yesterday, I had my mind changed.
 
-That's when I saw a [Hacker News thread](https://news.ycombinator.com/item?id=31924495) about [Garrit Franke](https://github.com/garritfra)'s article, "[The only true answer to 'tabs vs spaces'](https://garrit.xyz/posts/2022-06-29-the-only-true-answer-to-tabs-vs-spaces)." My curiosity piqued, I followed a chain of links from that discussion and found two particular items:
+That's when I saw a [Hacker News thread](https://news.ycombinator.com/item?id=31924495) about [Garrit Franke](https://github.com/garritfra)'s article, "[The only true answer to 'tabs vs spaces.'](https://garrit.xyz/posts/2022-06-29-the-only-true-answer-to-tabs-vs-spaces)" My curiosity piqued, I followed a chain of links from that discussion and found two particular items:
 
 - A 2019-07-02 post on the [JavaScript subreddit](https://www.reddit.com/r/javascript) called "[Nobody talks about the real reason to use Tabs over Spaces](https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/)."
 - A 2020-08-04 [comment](https://github.com/prettier/prettier/issues/7475#issuecomment-668544890) by [Mario Zehe](https://github.com/MarcoZehe) on a GitHub issue.
