@@ -103,7 +103,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 	site config file, is Cloudflare Pages (where I
 	use a Cloudflare Worker for that tight CSP).
 	If so, it creates a new CSS/SCSS class, named
-	with an md5 hash for the image file name, that
+	with an md5 hash for the value of $src, that
 	the div can use to provide the LQIP background.
 	Otherwise, it inserts inline styling.
 	**THEREFORE** . . .
@@ -111,6 +111,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 	feel free to use only the second option and
 	avoid the conditional altogether.
 */}}
+{{- $imgBd5 := md5 $src -}}
 {{- if eq .Site.Params.Host "CFP" -}}
 	<style>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
