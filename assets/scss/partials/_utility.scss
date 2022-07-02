@@ -420,4 +420,69 @@ img.ctrImg {
 	font-family: var.$monospaced;
 }
 
+circle.GitHub,
+circle.RSS {
+	fill: var.$white;
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$black;
+	}
+}
+
+circle.Twitter,
+circle.JSON {
+	fill: var.$black;
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$blue;
+	}
+}
+
+path.GitHub,
+circle.MastodonCircle,
+path.MastodonM,
+circle.Twitter,
+circle.RSS,
+circle.JSON {
+	fill: var.$blue;
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$blueLight;
+	}
+}
+
+a:hover path.GitHub,
+a:hover circle.MastodonCircle,
+a:hover path.MastodonM,
+a:hover circle.Twitter,
+a:hover circle.RSS,
+a:hover circle.JSON {
+	fill: var.$darkblue;
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$blueFirst;
+	}
+}
+
+path.MastodonBody,
+path.MastodonM {
+	fill-rule:nonzero;
+}
+
+path.MastodonBody,
+path.Twitter,
+path.JSON,
+path.RSS {
+	fill: var.$white;
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$black;
+	}
+}
+
+a:hover circle.GitHub,
+a:hover path.Twitter,
+a:hover path.RSS,
+a:hover path.JSON,
+a:hover path.MastodonBody {
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$white;
+	}
+}
+
 // === end, utility classes
