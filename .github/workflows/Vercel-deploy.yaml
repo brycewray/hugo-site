@@ -62,7 +62,7 @@ jobs:
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to Vercel
-        uses: BetaHuhn/deploy-to-vercel-action@v1
+        uses: amondnet/vercel-action@v20
         with:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_HUGO_SITE }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
