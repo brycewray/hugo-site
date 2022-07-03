@@ -68,7 +68,7 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN_HUGO_SITE }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
           github-comment: false
           vercel-args: '--prod'
           working-directory: 'public'
