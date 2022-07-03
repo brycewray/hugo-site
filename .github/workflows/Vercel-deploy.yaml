@@ -62,15 +62,16 @@ jobs:
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to Vercel
-        uses: BetaHuhn/deploy-to-vercel-action@v1
+        uses: amondnet/vercel-action@v20
+        id: vercel-action
         with:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_HUGO_SITE }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
-          WORKING_DIRECTORY: 'public'
-          #BUILD_ENV: |
-          #  WEBMENTION_IO_TOKEN="${{ secrets.WEBMENTION_IO_TOKEN }}"
+          vercel-token: ${{ secrets.VERCEL_TOKEN_HUGO_SITE }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}
+          github-comment: false
+          vercel-args: '--prod'
+          working-directory: 'public'
           #ALIAS_DOMAINS: |
           # brycewray.com
           # www.brycewray.com
