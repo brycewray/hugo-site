@@ -13,6 +13,7 @@ env:
   TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
   CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
   CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+  # WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
 
 jobs:
   deploy:
@@ -47,3 +48,4 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
+          # WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
