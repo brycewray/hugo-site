@@ -57,17 +57,23 @@ I also changed the site's *[.editorconfig file](https://editorconfig.org/)* to t
 root = true
 
 [*]
-indent_style = tab
 indent_size = 2
+indent_style = tab
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 charset = utf-8
 
+[*.{sh,txt,yml,yaml}]
+indent_style = space
+
 [layouts/_default/_markup/*.*]
 insert_final_newline = false
 
 ```
+
+**Update, 2022-07-04**: This .editorconfig file is a revised version of what I originally posted. This takes into account certain troublesome[^beCareful] file types.
+{.yellowBox}
 
 As for making sure my existing code samples then still looked as I desired (for me, that's two spaces per indent, as you saw in that `indent_size` setting above), I adjusted the site's styling to add a `tab-size` setting for the **display** of code samples:
 
