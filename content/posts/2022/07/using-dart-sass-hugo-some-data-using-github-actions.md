@@ -2,7 +2,7 @@
 title: "Using Dart Sass with Hugo: some data on using GitHub Actions"
 description: "After encountering some surprising results with my GHA-based method, I decided to do the math."
 author: Bryce Wray
-date: 2022-07-05T13:00:00-05:00
+date: 2022-07-05T08:00:00-05:00
 draft: true
 #initTextEditor: iA Writer
 ---
@@ -56,6 +56,6 @@ Although doing it that way will result in slower local development (and the depe
 
 [^deprecation]: And, yes, you [definitely want Dart Sass, not Libsass](https://sass-lang.com/blog/libsass-is-deprecated).
 
-In the case of this site, these findings have led me to cease using Vercel as a backup host. For at least the foreseeable[^nonGHA] future, I'll go with just CFP. Of the only three hosts I consider worth using, it works most effectively with my chosen method of deployment. The logs don't lie.
+In the case of this site, these findings have led me to cease using Vercel as a backup host. For at least the foreseeable[^nonGHA] future, I'll go with just CFP. Of the only three hosts I consider worth using, it works most effectively with [my chosen method of deployment](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The logs don't lie.
 
 [^nonGHA]: In this case, that means as long as I continue to (a.) build this site with Hugo and (b.) need a GHA to do so, because (c.) neither CFP nor Vercel provides even the option of including the Embedded Dart Sass binary in its build image. I have no reason to assume either (b.) or (c.) will change any time soon. On the other hand, when/if (a.) changes, as it so often has in this site's existence, that would eliminate the need for (b.) and (c.).
