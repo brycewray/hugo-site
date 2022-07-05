@@ -8,7 +8,7 @@ echo "Install Dart Sass Embedded..."
 # This is in Vercel's PATH.
 BIN_DIR=${pwd}/bin
 
-DARTSASS_VERSION=1.51.0
+DARTSASS_VERSION=1.53.0
 
 mkdir -p $BIN_DIR
 
