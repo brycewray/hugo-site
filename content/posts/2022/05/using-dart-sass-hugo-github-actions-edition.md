@@ -7,6 +7,9 @@ date: 2022-05-17T14:49:00-05:00
 discussionId: "2022-05-using-dart-sass-hugo-github-actions-edition.md"
 ---
 
+<span class="red">**Update, 2022-07-05**</span>: If you're running a Hugo site on [Vercel](https://vercel.com), be aware that the method described herein may have an adverse affect on the speed of your deployments. For more details, see "[Using Dart Sass with Hugo: some data on using Github Actions](/posts/2022/07/using-dart-sass-hugo-some-data-using-github-actions/)."
+{.yellowBox}
+
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my two [previous](/posts/2022/03/using-dart-sass-hugo/) [posts](/posts/2022/03/using-dart-sass-hugo-sequel/) on this subject. This follow-up assumes you've already read them.
 {.yellowBox}
 
