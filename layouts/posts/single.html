@@ -15,17 +15,16 @@
 	</div>
 	{{ if or .PrevPage .NextPage }}
 		<div class="bg-dark sansSerif">
-			<h3 class="ctr wht prevnextH3"><a href="/posts/" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+			{{ with .NextInSection -}}
 			<p class="ctr prevnextP">
-				{{ with .NextInSection -}}
-					Next: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
-				{{- end }}
+				Next: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
 			</p>
+			{{- end }}
+			{{ with .PrevInSection -}}
 			<p class="ctr prevnextP">
-				{{ with .PrevInSection -}}
-					Previous: <a class="previous" href="{{.RelPermalink}}">{{.Title}}</a>
-				{{- end }}
+				Previous: <a class="previous" href="{{.RelPermalink}}">{{.Title}}</a>
 			</p>
+			{{- end }}
 		</div>
 	{{- end }}
 {{- end }}
