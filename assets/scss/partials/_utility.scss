@@ -25,6 +25,15 @@
 	font-size: var.$bigger;
 }
 
+.teenytxt, .teeny,
+.legaltxt, .legal,
+.pokeytxt, .pokey,
+.eightyFive,
+.seventyFive,
+.sixtyFive {
+	font-family: var.$sans-serif;
+}
+
 .teenytxt, .teeny {
 	font-size: var.$teeny;
 }
