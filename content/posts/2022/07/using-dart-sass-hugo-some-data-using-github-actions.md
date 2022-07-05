@@ -7,10 +7,11 @@ date: 2022-07-05T09:33:00-05:00
 #initTextEditor: iA Writer
 ---
 
-<span class="red">**Cutting to the chase . . .**</span>\
-\
+<span class="red">**Cutting to the chase . . .**</span>
+
 If you have a [Hugo](https://gohugo.io) website hosted by [Vercel](https://vercel.com) and you followed my [earlier advice](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) about using a [GitHub Action](https://github.com/features/actions) (GHA) to deploy that site with [Embedded Dart Sass](https://sass-lang.com/blog/embedded-sass-is-live), it turns out you may be better off using either the [npm sass package](/posts/2022/03/using-dart-sass-hugo/) or a [shell script](/posts/2022/03/using-dart-sass-hugo-sequel/) --- each of which I explain in the links. To learn *why*, read on; but that's the bottom line.
-{.yellowBox}
+
+----
 
 In the process of using that GHA to deploy Ye Olde Hugo Site, here, I've noticed some curiosities --- especially where one particular hosting provider is concerned --- so I decided to collect some data, run some tests, and collect more data.
 
