@@ -2,18 +2,21 @@
 title: "Using Dart Sass with Hugo: some data on using GitHub Actions"
 description: "After encountering some surprising results with my GHA-based method, I decided to do the math."
 author: Bryce Wray
-date: 2022-07-05T08:00:00-05:00
-draft: true
+date: 2022-07-05T09:33:00-05:00
+#draft: true
 #initTextEditor: iA Writer
 ---
 
-**Cutting to the chase . . .** If you have a [Hugo](https://gohugo.io) website hosted by [Vercel](https://vercel.com) and you followed my [earlier advice](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) about using a [GitHub Action](https://github.com/features/actions) (GHA) to deploy that site with [Embedded Dart Sass](https://sass-lang.com/blog/embedded-sass-is-live), it turns out you may be better off using either the [npm sass package](/posts/2022/03/using-dart-sass-hugo/) or a [**shell script**](/posts/2022/03/using-dart-sass-hugo-sequel/) --- each of which I explain in the links. To learn *why*, read on; but that's the bottom line.
+<span class="red">**Cutting to the chase . . .**</span>\
+\
+If you have a [Hugo](https://gohugo.io) website hosted by [Vercel](https://vercel.com) and you followed my [earlier advice](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) about using a [GitHub Action](https://github.com/features/actions) (GHA) to deploy that site with [Embedded Dart Sass](https://sass-lang.com/blog/embedded-sass-is-live), it turns out you may be better off using either the [npm sass package](/posts/2022/03/using-dart-sass-hugo/) or a [shell script](/posts/2022/03/using-dart-sass-hugo-sequel/) --- each of which I explain in the links. To learn *why*, read on; but that's the bottom line.
+{.yellowBox}
 
-----
+In the process of using that GHA to deploy Ye Olde Hugo Site, here, I've noticed some curiosities --- especially where one particular hosting provider is concerned --- so I decided to collect some data, run some tests, and collect more data.
 
-In the process of using that GHA to deploy Ye Olde Site Here, I've noticed some things which I found curious --- especially where one particular hosting provider is concerned --- so I decided to collect some data, run some tests, and collect more data.
+I did so on the only three [Jamstack](https://jamstack.org) hosting providers I recommend these days, in alphabetical order: [Cloudflare Pages](https://pages.cloudflare.com), this site's incumbent host as of the initial publication of this post; [Netlify](https://netlify.com); and Vercel, the site's backup host.
 
-I did so on the only three [Jamstack](https://jamstack.org) hosting providers I recommend these days, in alphabetical order: **[Cloudflare Pages](https://pages.cloudflare.com)** (this site's incumbent host as of the initial publication of this post); **[Netlify](https://netlify.com)**; and **[Vercel](https://vercel.com)** (the site's backup host).
+Now, the details.
 
 ## From speedster to snail
 
@@ -56,12 +59,21 @@ So, what can you do if your site is on Vercel and you (a.) want Hugo with Dart S
 
 [^deprecation]: And, yes, you [definitely want Dart Sass, not Libsass](https://sass-lang.com/blog/libsass-is-deprecated).
 
-I suggest you revert to the [standard, **non**-GHA Vercel process](https://vercel.com/docs/concepts/deployments/build-step) **and** do one of the following to get Dart Sass (each link below goes to my previous explanation thereof):
+I suggest you revert to the [standard, **non**-GHA Vercel process](https://vercel.com/docs/concepts/deployments/build-step) **and** do one of the following to get Dart Sass:
 
-- Use the [npm sass package](/posts/2022/03/using-dart-sass-hugo/), instead. Although doing it that way will result in slower local development (and the dependencies you must add with the use of any [Node.js](https://nodejs.org) package), it does avoid any problems caused by using a GHA. It also should be more future-proof, since you *won't* have to worry about any possibility that Vercel might shut the door on other deploy methods down the line.
-- Keep the superior performance of Embedded Dart Sass by deploying via a [shell script](/posts/2022/03/using-dart-sass-hugo-sequel/). It is a little more risky, in that one never knows whether Vercel may somehow make that a no-go down the line[^ballpark], but it preserves the superior dev experience of using Embedded Dart Sass.
+- [Use the npm sass package](/posts/2022/03/using-dart-sass-hugo/). Although doing it that way will result in slower local development (and the dependencies you must add with the use of any [Node.js](https://nodejs.org) package), it does avoid the problems caused by using a GHA to deploy to Vercel.
+- [Use a shell script](/posts/2022/03/using-dart-sass-hugo-sequel/). It is a little more risky, in that one never knows whether Vercel may later bar its use[^ballpark], but it preserves the superior dev experience of using Embedded Dart Sass.
 
 [^ballpark]: Quoting my analogy from [the post about using GHAs for this stuff](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/), in which "(A.)" refers to the GHA method and "(B.)" refers to the shell-script method: "It’s kinda like the difference between (A.) getting into a ballpark by buying a ticket and (B.) getting in by sneaking past an overly busy, preoccupied ticket-seller. Either way, you’re inside; but Option A is always suitable, while Option B works only until you get caught. (Okay, maybe that analogy is pushing it somewhat, but you understand what I’m saying.)" I would still urge reading [the whole post](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) to get the full context.
 
-**Note**: On a somewhat related subject: while I was finishing this post, I saw a [GitHub Discussions thread indicating that the Cloudflare Pages build image *may* be getting an update sometime soon](https://github.com/cloudflare/pages-build-image/discussions/1). I made my pitch in the comments for both a better version of Hugo --- the current CFP build image uses the ancient *v.0.54.0*, for God's sake --- **and** the option to specify Embedded Dart Sass through an environment variable, just as one now uses a `HUGO_VERSION` env var to pull a preferred, um, Hugo version *other than* 0.54.0. I'll keep you advised whether there's any progress on that front but, as [Sidhartha Chatterjee](https://github.com/sidharthachatterjee) says at the top of the discussion, "This is NOT a definite commitment to what we will deliver." Still, if that *did* happen, it would completely eliminate the need for *all* of these end runs: you'd use the *normal* CFP deploy process and everything would just work.
-{.yellowBox}
+The latter method, shell-scripting, is how I'm continuing to use Vercel as this site's backup host. I'm glad to report that, this way, Vercel is its usual quick-like-a-bunny self again where my deploys are concerned.
+
+----
+
+## CFP build image update?
+
+While I was finishing this post, I saw a [GitHub Discussions thread indicating that the Cloudflare Pages build image **may** get an update](https://github.com/cloudflare/pages-build-image/discussions/1). In the comments, I made a pitch for both a better version of Hugo --- the current CFP build image uses the [ancient *0.54.0*](https://github.com/gohugoio/hugo/releases/tag/v0.54.0), for God's sake --- **and** the option to specify Embedded Dart Sass through an environment variable, just as one now uses a `HUGO_VERSION` env var to pull a preferred, um, Hugo version *other than* 0.54.0. I'll keep you advised whether there's any progress on that front; but, as [Sidhartha Chatterjee](https://github.com/sidharthachatterjee) says at the top of the discussion:
+
+> This is NOT a definite commitment to what we will deliver.
+
+Still, if that *did* happen, it would completely eliminate the need for *any* end runs if you use Cloudflare Pages: you'd use the *normal* CFP deploy process, and everything would just work.
