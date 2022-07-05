@@ -87,7 +87,7 @@
 	@media (prefers-color-scheme: dark) {
 		background-color: var.$darkblue;
 	}
-	padding: 0.5rem 0 1rem 0;
+	padding: 0.5rem 0;
 	div, p {
 		color: hsl(0, 0%, 100%);
 	}
@@ -98,6 +98,7 @@
 	}
 	h3.prevnextH3 {
 		font-size: 1.875rem;
+		font-style: normal;
 	}
 	p.prevnextP {
 		width: 90%;
