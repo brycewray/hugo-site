@@ -17,9 +17,11 @@
 	font-variant-caps: small-caps;
 }
 
-.allSmallCaps, .ascaps {
+abbr, .allSmallCaps, .ascaps {
+	// font-feature-settings: "c2sc", "smcp";
 	font-variant-caps: all-small-caps;
-	font-size: 125%;
+	font-size: 120%;
+	font-weight: inherit;
 }
 
 .sortabig {
