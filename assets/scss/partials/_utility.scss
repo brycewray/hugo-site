@@ -13,8 +13,13 @@
 	color: hsl(0, 0%, 100%);
 }
 
-.smallCaps {
-	font-variant: small-caps;
+.smallCaps, .scaps {
+	font-variant-caps: small-caps;
+}
+
+.allSmallCaps, .ascaps {
+	font-variant-caps: all-small-caps;
+	font-size: 125%;
 }
 
 .sortabig {
