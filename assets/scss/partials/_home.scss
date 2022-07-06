@@ -1,6 +1,7 @@
 @use 'variables' as var;
 
 .container-home {
+	padding-bottom: 1em;
 	background-image: linear-gradient(
 		to bottom,
 		var.$gray-3-blue,
@@ -32,7 +33,7 @@
 		text-align: right;
 		padding: 0 3em 0 0;
 		width: 40%;
-		min-height: 80vh;
+		// min-height: 80vh;
 		h1 {
 			padding: 3.5em 0 0 2em;
 		}

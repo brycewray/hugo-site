@@ -80,7 +80,12 @@
 		<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
 		{{/* Windows 8.1 and up, IE 11 */ -}}
 		<meta name="msapplication-config" content="/browserconfig.xml">
-		{{- /* **** CONCLUSION, favicons **** */ -}}
+		{{- /* **** CONCLUSION, favicons **** */}}
+
+		{{- $searchEngine := "https://duckduckgo.com" -}}
+		{{- /* $searchEngine := "https://startpage.com" */}}
+		<link rel="preconnect" href="https://giscus.app" />
+		<link rel="preconnect" href="{{ $searchEngine }}" />
 
 		{{- /* discover news feeds */}}
 		<link rel="alternate" title="News feed - RSS" type="application/rss+xml" href="https://www.brycewray.com/index.xml" />

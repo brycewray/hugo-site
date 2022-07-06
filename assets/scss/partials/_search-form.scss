@@ -1,0 +1,58 @@
+@use 'variables' as var;
+
+// === for search form
+
+.searchDiv {
+	font-family: var.$sans-serif;
+	margin: 2em auto;
+	text-align: center;
+	width: 100%;
+}
+
+.searchInput {
+	@media (min-width: var.$bkpt_md) {
+		min-width: 20ch;
+		width: 30ch;
+		max-width: 30ch;
+	}
+	margin-bottom: 0.5em;
+	border: 1px solid var.$black;
+	// border-radius: 6px;
+	@media screen and (prefers-color-scheme: dark) {
+		border: 1px solid var.$gray-2;
+		background-color: var.$gray-1;
+		color: white;
+	}
+	&::placeholder {
+		@media screen and (prefers-color-scheme: dark) {
+			color: var.$gray-2;
+		}
+	}
+}
+
+.searchBtn {
+	margin-left: 0.5em;
+	border: 1px solid var.$blue;
+	border-radius: 6px;
+	font-weight: bold;
+	background-color: var.$blue;
+	color: var.$white;
+	@media screen and (prefers-color-scheme: dark) {
+		border: 1px solid var.$blueLight;
+		background-color: var.$blueLight;
+		color: var.$black;
+	}
+	&:hover {
+		border: 1px solid var.$darkblue;
+		background-color: var.$darkblue;
+		@media screen and (prefers-color-scheme: dark) {
+			border: 1px solid var.$blueFirst;
+			background-color: var.$blueFirst;
+			color: var.$white;
+		}
+	}
+}
+
+.searchInput, .searchBtn {
+	padding: 3px 6px;
+}
