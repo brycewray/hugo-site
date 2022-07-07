@@ -139,7 +139,7 @@ hr.paginatorBottom {
 .contactBtn {
 	font-family: var.$sans-serif;
 	text-align: center;
-	margin: auto;
+	margin: 0 auto 1em;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 	button {
@@ -152,17 +152,14 @@ hr.paginatorBottom {
 		&:focus, &:active, &:hover {
 			background-color: var.$blue;
 		}
+		&:hover {
+			cursor: pointer;
+		}
 		@media (prefers-color-scheme: dark) {
+			color: var.$black;
 			background-color: var.$code-color-blueLight-dark-mode;
 			&:focus, &:active, &:hover {
 				background-color: var.$blueLightBtn;
-			}
-		}
-		a {
-			color: var.$white;
-			border: none;
-			@media (prefers-color-scheme: dark) {
-				color: var.$black;
 			}
 		}
 	}

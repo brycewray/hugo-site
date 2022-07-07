@@ -32,24 +32,26 @@
 
 .searchBtn {
 	margin-left: 0.5em;
-	border: 1px solid var.$blue;
+	border: 1px solid var.$darkblue;
 	border-radius: 6px;
 	font-weight: bold;
-	background-color: var.$blue;
+	background-color: var.$darkblue;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$blueLight;
-		background-color: var.$blueLight;
+		border: 1px solid var.$code-color-blueLight-dark-mode;
+		background-color: var.$code-color-blueLight-dark-mode;
 		color: var.$black;
 	}
-	&:hover {
-		border: 1px solid var.$darkblue;
-		background-color: var.$darkblue;
+	&:focus, &:active, &:hover {
+		border: 1px solid var.$blue;
+		background-color: var.$blue;
 		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid var.$blueFirst;
-			background-color: var.$blueFirst;
-			color: var.$white;
+			border: 1px solid var.$blueLightBtn;
+			background-color: var.$blueLightBtn;
 		}
+	}
+	&:hover {
+		cursor: pointer;
 	}
 }
 

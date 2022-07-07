@@ -501,4 +501,34 @@ a:hover path.MastodonBody {
 	}
 }
 
+details.comments > summary {
+	list-style: none;
+	color: var.$white;
+	border-radius: 6px;
+	margin: 0 auto;
+	border: 1px solid var.$darkblue;
+	background-color: var.$darkblue;
+	padding: 0.5em 0.25em;
+	width: 20em;
+	&:focus, &:active, &:hover {
+		cursor: pointer;
+		background-color: var.$blue;
+		@media screen and (prefers-color-scheme: dark) {
+			border: 1px solid var.$blueLightBtn;
+			background-color: var.$blueLightBtn;
+			// color: var.$white;
+		}
+	}
+	@media screen and (prefers-color-scheme: dark) {
+		border: 1px solid var.$code-color-blueLight-dark-mode;
+		background-color: var.$code-color-blueLight-dark-mode;
+		color: var.$black;
+	}
+}
+
+details.comments > summary::marker,
+details.comments > summary::-webkit-details-marker {
+	display: none;
+}
+
 // === end, utility classes
