@@ -1,7 +1,9 @@
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "c_fill,w_1024,h_512," -}}
 {{- $xFmPart2 := "q_auto,f_auto,x_0,z_1/" -}}
-{{- $fallbackImg := "typewriter-monochrome_2242164_6260x4374.jpg" -}}
+{{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
+{{- $fallbackImg = $fallbackImg.Fit "1024x512" -}}
+{{- $socImg := resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
 
 	<head>
 		{{- /* Required meta tags */ -}}
@@ -30,8 +32,8 @@
 		<meta property="og:url" content="{{ .Site.BaseURL }}" />
 		<meta property="twitter:title" content="{{ .Site.Title }}" />
 		<meta property="twitter:description" content="{{ .Site.Params.Description }}" />
-		<meta name="og:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ $fallbackImg }}" />
-		<meta name="twitter:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ $fallbackImg }}" />
+		<meta name="og:image" content="{{ $fallbackImg.RelPermalink }}" />
+		<meta name="twitter:image" content="{{ $fallbackImg.RelPermalink }}" />
 	{{- else }}
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
@@ -52,13 +54,16 @@
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="{{ .Page.Permalink }}" />
 		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-	 {{- if .Params.Featured_image }}
-		<meta name="og:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ .Params.Featured_Image }}" />
-		<meta name="twitter:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ .Params.Featured_Image }}" />
-	 {{- else }}
-		<meta name="og:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ $fallbackImg }}" />
-		<meta name="twitter:image" content="{{ $cloudiBase }}{{ $xFmPart1 }}{{ $xFmPart2 }}{{ $fallbackImg }}" />
-	 {{- end }}
+		{{- $socImg = $socImg.Filter (images.Text .Title (dict
+			"color" "#ffffff"
+			"size" 60
+			"linespacing" 10
+			"x" 30
+			"y" 30
+			"font" (resources.Get "/fonts/Franklin Gothic Medium.ttf")
+		)) }}
+		<meta name="og:image" content="{{ $socImg.RelPermalink }}" />
+		<meta name="twitter:image" content="{{ $socImg.RelPermalink }}" />
 	{{- end -}}
 
 		{{- /* **** BEGINNING, favicons **** */ -}}
