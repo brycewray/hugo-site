@@ -32,8 +32,8 @@
 		<meta property="og:url" content="{{ .Site.BaseURL }}" />
 		<meta property="twitter:title" content="{{ .Site.Title }}" />
 		<meta property="twitter:description" content="{{ .Site.Params.Description }}" />
-		<meta name="og:image" content="{{ $fallbackImg.RelPermalink }}" />
-		<meta name="twitter:image" content="{{ $fallbackImg.RelPermalink }}" />
+		<meta name="og:image" content="{{ $fallbackImg.Permalink }}" />
+		<meta name="twitter:image" content="{{ $fallbackImg.Permalink }}" />
 	{{- else }}
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
@@ -62,8 +62,8 @@
 			"y" 30
 			"font" (resources.Get "/fonts/Franklin Gothic Medium.ttf")
 		)) }}
-		<meta name="og:image" content="{{ $socImg.RelPermalink }}" />
-		<meta name="twitter:image" content="{{ $socImg.RelPermalink }}" />
+		<meta name="og:image" content="{{ $socImg.Permalink }}" />
+		<meta name="twitter:image" content="{{ $socImg.Permalink }}" />
 	{{- end -}}
 
 		{{- /* **** BEGINNING, favicons **** */ -}}
