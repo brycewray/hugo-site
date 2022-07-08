@@ -506,13 +506,13 @@ details.comments > summary {
 	color: var.$white;
 	border-radius: 6px;
 	margin: 0 auto;
-	border: 1px solid var.$darkblue;
-	background-color: var.$darkblue;
+	border: 1px solid var.$blue;
+	background-color: var.$blue;
 	padding: 0.5em 0.25em;
 	width: 20em;
 	&:hover {
 		cursor: pointer;
-		background-color: var.$blue;
+		background-color: var.$darkblue;
 		@media screen and (prefers-color-scheme: dark) {
 			border: 1px solid var.$blueLightBtn;
 			background-color: var.$blueLightBtn;

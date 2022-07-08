@@ -32,10 +32,10 @@
 
 .searchBtn {
 	margin-left: 0.5em;
-	border: 1px solid var.$darkblue;
+	border: 1px solid var.$blue;
 	border-radius: 6px;
 	font-weight: bold;
-	background-color: var.$darkblue;
+	background-color: var.$blue;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
 		border: 1px solid var.$code-color-blueLight-dark-mode;
@@ -43,8 +43,8 @@
 		color: var.$black;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid var.$blue;
-		background-color: var.$blue;
+		border: 1px solid var.$darkblue;
+		background-color: var.$darkblue;
 		@media screen and (prefers-color-scheme: dark) {
 			border: 1px solid var.$blueLightBtn;
 			background-color: var.$blueLightBtn;
