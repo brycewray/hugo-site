@@ -46,6 +46,9 @@ Sadly, the answer is: "No."
 
 Be sure giscus is set to *lazy-load*, through a `data-loading="lazy"` line in your site's giscus script. That way, it won't bring in the vast majority of its code, styling, and image assets *until* the visitor has scrolled down to near where the giscus instance appears on the page --- which, more often than not, probably will be near the bottom. This can give your visitors a smoother experience.
 
+**Note**: Unfortunately, giscus's lazy-loading doesn't seem to work in either Firefox or Safari.
+{.yellowBox}
+
 ## Styling hocus-pocus
 
 I suggest that, for `data-theme`, you select `preferred_color_scheme`. That way, each giscus appearance on your pages will respect each visitor's choice for light or dark mode. (Of course, this makes a lot more sense if [your site itself **already** respects that](/posts/2019/09/thinking-dark-thoughts/)!)
