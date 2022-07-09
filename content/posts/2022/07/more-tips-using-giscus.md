@@ -42,7 +42,7 @@ Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-gi
 		</p>
 	</div>
 </details>
-``` 
+```
 
 . . . and the SCSS for the `details` and `summary`:
 
@@ -52,11 +52,11 @@ Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-gi
 // SCSS partial, `_variables.scss`.
 // The statement and the subsequent
 // variables it enables below --- such as
-// `var.$blue` --- require the use of 
+// `var.$blue` --- require the use of
 // **Dart Sass**. If you're still using the
 // Hugo default of Libsass, remove the
 // `var.` before each `$` (**and**,
-// of course, declare the vars someplace).  
+// of course, declare the vars someplace).
 
 details.comments > summary {
 	list-style: none;
@@ -103,4 +103,4 @@ Why *both* `preconnect` and `dns-prefetch`? As web.dev [explains](https://web.de
 
 >  [Browser support for `dns-prefetch`](https://caniuse.com/#search=dns-prefetch) is slightly different from [`preconnect` support](https://caniuse.com/#search=preconnect), so `dns-prefetch` can serve as a fallback for browsers that don't support `preconnect`.
 
-Notably --- and weirdly --- Firefox is one browser that **still** doesn't support `preconnect`, and its support for `dns-prefetch` is limited to connections *not* using the secure `https` protocol (which now excludes nearly all URLs one should even consider visiting). However, given Firefox's small [market share](https://gs.statcounter.com/browser-market-share), the suggested use of `preconnect` and `dns-prefetch` should help most users, while Firefox will simply ignore these two resource hints.
+Notably --- and weirdly --- Firefox is one browser that **still** doesn't support `preconnect`, and its support for `dns-prefetch` is limited to connections *not* using the secure `https` protocol (in other words, almost no URLs one should even consider visiting). However, given Firefox's small [market share](https://gs.statcounter.com/browser-market-share), the suggested use of `preconnect` and `dns-prefetch` should help most users, while Firefox will simply ignore these two resource hints.
