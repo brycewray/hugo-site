@@ -40,7 +40,7 @@ env:
   # WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
 
 jobs:
-  getBinaries:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -64,22 +64,8 @@ jobs:
           sass_embedded/dart-sass-embedded --version
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-  build:
-    needs: getBinaries
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    steps:
       - name: Build site with Hugo
         run: hugo --gc
-  deploy:
-    needs: [getBinaries, build]
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    steps:
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1.0.0
         with:
@@ -95,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     # restarts push-based run when it fails
     if: github.event_name == 'push' && failure()
-    needs: [getBinaries, build, deploy]
+    needs: [deploy]
     steps:
       - name: Retry the workflow
         run: |
@@ -110,7 +96,7 @@ jobs:
     runs-on: ubuntu-latest
     # restarts scheduled run when it fails
     if: github.event_name == 'schedule' && failure()
-    needs: [getBinaries, build, deploy]
+    needs: [deploy]
     steps:
       - name: Retry the workflow
         run: |
