@@ -140,11 +140,9 @@ hr.paginatorBottom {
 	font-family: var.$sans-serif;
 	text-align: center;
 	margin: 0 auto 1em;
-	padding-bottom: 1rem;
-	padding-top: 1rem;
 	button {
 		width: 15rem;
-		padding: 1rem;
+		padding: 0.25rem 0;
 		background-color: var.$blue;
 		border-radius: 0.375rem;
 		border-color: transparent;

@@ -15,6 +15,7 @@
 		width: 30ch;
 		max-width: 30ch;
 	}
+	padding: 3px 6px;
 	margin-bottom: 0.5em;
 	border: 1px solid var.$black;
 	// border-radius: 6px;
@@ -32,6 +33,7 @@
 
 .searchBtn {
 	margin-left: 0.5em;
+	padding: 3px 12px;
 	border: 1px solid var.$blue;
 	border-radius: 6px;
 	font-weight: bold;
@@ -42,6 +44,9 @@
 		background-color: var.$code-color-blueLight-dark-mode;
 		color: var.$black;
 	}
+	&:hover {
+		cursor: pointer;
+	}
 	&:focus, &:active, &:hover {
 		border: 1px solid var.$darkblue;
 		background-color: var.$darkblue;
@@ -50,11 +55,4 @@
 			background-color: var.$blueLightBtn;
 		}
 	}
-	&:hover {
-		cursor: pointer;
-	}
-}
-
-.searchInput, .searchBtn {
-	padding: 3px 6px;
 }
