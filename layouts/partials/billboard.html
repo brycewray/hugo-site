@@ -3,10 +3,13 @@
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
 		{{- if .Params.Description }}<p class="billboard-description-text">{{ .Params.Description }}</p>{{- end }}
 		<p class="billboard-p-text">
-			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
+			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}<br /><span class="seventyFive">
 			{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
-			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<br />{{- end -}}<span class="seventyFive">Last modified {{ .Lastmod.Format "2006-01-02" }}</span>
-			{{- end }}    </p>
-		<p class="ctr legal">{{- if $.GitInfo -}}<strong>Latest&nbsp;commit</strong>:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}</p>
+			Last modified {{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;
+			{{- end }}</span>
+		</p>
+		<p class="ctr legal">{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}<br />
+		Reading time: {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1)  }}s{{ end }}
+	</p>
 	</div>
 </div>
