@@ -34,6 +34,7 @@
 	{{ if isset $json.entities "urls"  }}
 		{{ range $url := $json.entities.urls}}
 			{{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' rel='noopener' class='twitterExt'>%s</a>" $url.url $url.display_url) }}
+			{{ $text = replace $text $url.display_url "" }}
 		{{ end }}
 	{{ end }}
 {{ end }}
@@ -83,16 +84,30 @@
 		{{ with $json.card }}
 			{{ with $json.card.binding_values }}
 				{{ $bVals := . }}
-				<a href="{{ $bVals.card_url.string_value }}" target='_blank' rel='noopener'>
-					<div class="card">
-						<img src="{{ $bVals.photo_image_full_size_large.image_value.url }}" alt="{{ $bVals.photo_image_full_size_large.image_value.alt }}" loading="lazy" class="tweet-card-img" />
-						<p>
-							{{ $bVals.vanity_url.string_value }}<br />
-							<span class="card-title">{{ $bVals.title.string_value }}</span><br />
-							{{ $bVals.description.string_value }}
-						</p>
-					</div>
-				</a>
+					{{ with $bVals.photo_image_full_size_large }}
+					<a href="{{ $bVals.card_url.string_value }}" target='_blank' rel='noopener'>
+						<div class="card">
+							<img src="{{ $bVals.photo_image_full_size_large.image_value.url }}" alt="{{ $bVals.photo_image_full_size_large.image_value.alt }}" loading="lazy" class="tweet-card-img" />
+							<p>
+								{{ $bVals.vanity_url.string_value }}<br />
+								<span class="card-title">{{ $bVals.title.string_value }}</span><br />
+								{{ $bVals.description.string_value }}
+							</p>
+						</div>
+					</a>
+				{{ end }}
+				{{ with $bVals.player_image_small }}
+					<a href="{{ $bVals.card_url.string_value }}" target="_blank" rel="noopener">
+						<div class="card tweet-player">
+							<img src="{{ $bVals.player_image_small.image_value.url }}" alt="{{ $bVals.title.string_value }}" loading="lazy" />
+							<p>
+								{{ $bVals.vanity_url.string_value }}<br />
+								<span class="card-title">{{ $bVals.title.string_value }}</span><br />
+								{{ $bVals.description.string_value }}
+							</p>
+						</div>
+					</a>
+				{{ end }}
 			{{ end }}
 		{{ end }}
 	{{ end }}

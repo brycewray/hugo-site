@@ -68,7 +68,6 @@ $tc-padding: 1em;
 }
 // Hugo version
 .tweet-media-img {
-	// border-radius: 12px;
 	width: 100%;
 	height: auto;
 	aspect-ratio: 1;
@@ -76,11 +75,14 @@ $tc-padding: 1em;
 }
 
 .tweet-card-img {
-	// border-radius: 12px;
 	border-bottom: 1px solid var.$gray-2;
 	@media screen and (prefers-color-scheme: dark) {
 		border: 1px solid var.$gray-2-dark-mode;
 	}
+}
+
+.tweet-player {
+	display: flex;
 }
 
 // ==== END, rounded image "attachment"
