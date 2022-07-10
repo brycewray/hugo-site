@@ -40,6 +40,7 @@ themes/npm-sass/assets/css/*.css
 .vercel
 
 .formergha
+.former_root-level
 
 gha.txt
 gha*.json
