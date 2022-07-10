@@ -196,9 +196,11 @@ Here's my reasoning, and I grant you upfront that it's opinionated.
 
 Although I have previously acknowledged Tailwind's strengths and am all too aware how much it's been embraced by CSS-averse web devs, I remain skeptical about how well it scales as one's web project grows, much less as one's inventory of projects grows.
 
-Tailwind adherents say this isn't a problem because, once you recognize that you're re-using certain Tailwind classes too frequently, you then simply extract them to reusable components and then `@apply` them, [as the Tailwind documentation suggests](https://tailwindcss.com/docs/extracting-components).  I agree that this is a workable strategy, but my own experience suggests it can get out of hand quickly, even in a small project. YMMV, of course.
+Tailwind adherents say this isn't a problem because, once you recognize that you're re-using certain Tailwind classes too frequently, you then simply extract them to reusable components and then `@apply` them, [as the Tailwind documentation suggests](https://tailwindcss.com/docs/extracting-components).  I agree that this is a workable strategy, but my own experience suggests it can get out of hand quickly, even in a small project. YMMV, of course. By the way: please note what Tailwind creator Adam Wathan famously tweeted about `@apply` . . .
 
-Then, once you've extracted a good quantity of components as I suspect happens more often than not, you'll run into the next issue that Tailwind fans say it solves&nbsp;.&nbsp;.&nbsp;.
+{{< stweet "1226511611592085504" >}}
+
+Once you've extracted a good quantity of components as I suspect happens more often than not, you'll run into the next issue that Tailwind fans say it solves . . .
 
 ### "Naming is hard" --- or is it?
 
