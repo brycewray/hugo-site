@@ -12,8 +12,8 @@
 .searchInput {
 	@media (min-width: var.$bkpt_md) {
 		min-width: 20ch;
-		width: 30ch;
-		max-width: 30ch;
+		width: 20ch;
+		max-width: 20ch;
 	}
 	padding: 3px 6px;
 	margin-bottom: 0.5em;
@@ -32,10 +32,10 @@
 }
 
 .searchBtn {
-	margin-left: 0.5em;
+	margin-left: 0.25em;
 	padding: 3px 12px;
 	border: 1px solid var.$blue;
-	border-radius: 6px;
+	border-radius: var.$btn_radius;
 	font-weight: bold;
 	background-color: var.$blue;
 	color: var.$white;

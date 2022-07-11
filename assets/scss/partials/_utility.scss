@@ -504,7 +504,7 @@ a:hover path.MastodonBody {
 details.comments > summary {
 	list-style: none;
 	color: var.$white;
-	border-radius: 6px;
+	border-radius: var.$btn_radius;
 	margin: 0 auto;
 	border: 1px solid var.$blue;
 	background-color: var.$blue;
