@@ -1,0 +1,52 @@
+{{/*
+	This partial receives the following items:
+	- src
+	- alt
+	- width
+	- height
+	This is for use only by **templates**.
+	Within **Markdown files**, use the `imgc` **shortcode**.
+/*}}
+
+{{/* init vars */}}
+{{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+{{- $src := .src -}}
+{{- $alt := .alt -}}
+{{- $width := .width -}}
+{{- $height := .height -}}
+
+{{/*
+	separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
+	wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
+*/}}
+{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+{{- $LQIPholder := "f_auto,q_1,w_20/" -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{- $xFmPart2 := ",x_0,z_1/" -}}
+
+{{/* Assumes hero images only. */}}
+{{- $imgBd5 := md5 $src -}}
+{{- $imgClass := "imgCover hero animate-fade" -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+{{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
+{{- $LQIP_get := resources.GetRemote $LQIPdata -}}
+{{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
+{{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
+
+{{- if eq .Site.Params.Host "CFP" -}}
+	<style>
+		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
+	</style>
+	<div class="background-hero-div imgc-div imgB-{{ $imgBd5 }} bg-center">
+{{- else -}}
+	<div class="background-hero-div imgc-div bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
+{{- end -}}
+	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+	{{- with $respSizes -}}
+		{{- range $i, $e := . -}}
+			{{- if ge $width . -}}
+				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
+</div>

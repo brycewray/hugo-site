@@ -1,0 +1,15 @@
+<div class="bg-gradient-to-b from-slate-400 absolute h-24 w-full"></div>
+<div class="font-sans container h-auto w-full min-w-full relative overflow-hidden pt-6 md:pt-12 px-4 md:px-8 2xl:px-12">
+	<h1 class="text-center font-extrabold text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight leading-tight mt-2 mb-4 md:mt-6 md:mb-6 2xl:mt-16">{{ .Title | .Page.RenderString }}</h1>
+	{{- if .Params.Description }}<p class="text-center md:block md:text-2xl 2xl:text-3xl mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">{{ .Params.Description }}</p>{{- end }}
+	<p class="text-center text-base lg:text-lg 2xl:text-xl px-4 md:px-0 mt-8 mb-0 md:mt-0">
+		{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}<br /><span class="text-xs">
+		{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
+		Last modified {{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;
+		{{- end }}</span>
+	</p>
+	<p class="text-center text-fn">
+		{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="font-mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}<br />
+		Reading time: {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1)  }}s{{ end }}
+	</p>
+</div>

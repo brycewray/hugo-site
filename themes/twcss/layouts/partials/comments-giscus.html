@@ -1,0 +1,30 @@
+{{- $dataTheme := "preferred_color_scheme" -}}
+{{/* === other choices
+{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_Inter.css" }}
+{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_sysFonts.css" }}
+{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_PublicSans.css" }}
+*/}}
+<details class="comments">
+	<summary class="text-center font-sans list-none text-white rounded-md my-0 mx-auto bg-blue-400 hover:bg-blue-600 active:bg-blue-600 focus:bg-blue-600 dark:text-black hover:dark:text-black dark:bg-sky-200 dark:hover:bg-sky-100 hover:cursor-pointer py-2 px-1 w-[15em]">
+		<strong>View/hide comments</strong>
+	</summary>
+	<div class="giscus-comments">
+		<script src="https://giscus.app/client.js"
+			data-repo="brycewray/comments"
+			data-repo-id="R_kgDOHQK0bQ"
+			data-category="Announcements"
+			data-category-id="DIC_kwDOHQK0bc4CO1ew"
+			data-mapping="pathname"
+			data-reactions-enabled="1"
+			data-emit-metadata="1"
+			data-input-position="bottom"
+			data-theme="{{ $dataTheme }}"
+			data-lang="en"
+			crossorigin="anonymous"
+			data-loading="lazy"
+			async
+		>
+		</script>
+		<p class="text-center text-sm">Commenting by <strong><a href="https://giscus.app" target="_blank" rel="nofollow">giscus</a></strong>.</p>
+	</div>
+</details>

@@ -1,0 +1,8 @@
+{{ define "main" }}
+	{{ partial "billboard.html" . }}
+	<div class="w-4/5 lg:w-1/2 2xl:w-[45%] 3xl:w-[40%] mt-10 mr-auto ml-auto">
+		<article>
+			{{ .Content }}
+		</article>
+	</div>
+{{ end }}

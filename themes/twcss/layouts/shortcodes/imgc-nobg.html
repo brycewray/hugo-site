@@ -1,0 +1,46 @@
+{{/*
+	This shortcode takes the following form:
+	imgc src, alt, width, height
+	...with 'src' in the form of (note NO leading or ending slash):
+	filename.ext
+	...and 'tmpl' optional in body copy. The template is used
+	to specify hero images on either the home page ('index') or
+	post pages ('posts'). Without this parameter, the defaults
+	cause body-copy-style image-handling.
+
+	This is based on the `lazy-picture.js` shortcode from
+	the old eleventy_solo repo.
+
+	This one is just for use with images where we **DON'T**
+	want a background image and blur-up effect, such as the
+	example image in the post about the Eleventy Image plugin.
+/*}}
+
+{{/* init vars */}}
+{{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+
+{{/*
+	separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
+	wants to borrow this code for his/her own Cloudinary setup and transformation ("xFm") choices
+*/}}
+{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{- $xFmPart2 := ",x_0,z_1/" -}}
+
+{{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
+{{- $imgClass := "w-full h-auto" -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+<div class="relative">
+	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+	{{- with $respSizes -}}
+		{{- range $i, $e := . -}}
+			{{- if ge $width . -}}
+				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
+</div>

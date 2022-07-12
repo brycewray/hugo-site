@@ -1,0 +1,15 @@
+		{{/* CSS */}}
+		<!--
+		<link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+		<link rel="preload" href="/fonts/PublicSans-Regular-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+		<link rel="preload" href="/fonts/PublicSans-Italic-VF-2-001_2022-05-11_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
+		-->
+		{{- $css := resources.Get "css/index.css" | resources.PostCSS -}}
+		{{- if hugo.IsProduction -}}
+			{{- $css = $css | minify | fingerprint "md5" | resources.PostProcess -}}
+		{{- else -}}
+			{{- $css = $css | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) . -}}
+		{{- end -}}
+		<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+	{{- /* end, CSS */ -}}

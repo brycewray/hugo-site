@@ -1,0 +1,14 @@
+{{- /*
+	h/t https://mentalpivot.com/using-duckduckgo-for-site-search-on-your-blog/
+*/ -}}
+<div class="searchDiv">
+	<form method="get" id="search" action="https://startpage.com/do/search" target="_blank" title="StartPage search for www.brycewray.com">
+		<input type="hidden" name="site" label="site:brycewray.com" value="brycewray.com" />
+		<input class="searchInput" type="text" name="query" maxlength="300" placeholder="Search this site" />
+		<input type="submit" value="Search" class="searchBtn" />
+	</form>
+	<p class="ctr legal">Uses <a href="https://startoage.com" target="_blank" rel="noopener">StartPage</a>. <span class="nobrk">Results open in a new tab/window.</span></p>
+</div>
+{{/*
+	https://www.startpage.com/do/search?sc=VHyc8E375Xsj00&query=accessibility+site%3Aw3.org&cat=web&qloc=bnVsbA%3D%3D
+*/}}
