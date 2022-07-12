@@ -65,7 +65,7 @@
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
+		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $imgCfg.Width }}" height="{{ $imgCfg.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
 	</picture>
 </div>
 
