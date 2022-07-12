@@ -11,7 +11,7 @@ date: 2022-07-11T08:43:00-05:00
 
 > I’ve seen many online events of this nature, including some put on by **much** larger operations than [CloudCannon], which didn’t go remotely as smoothly, or pack as much good info and interesting presentations into so relatively little time. How amazingly well it all came off clearly reflects the superior preparation and effort of all of you, and it was a winner from start to finish.
 
-For those of you who missed HugoConf 2022, the individual presentations will be available in a few days as separate videos on [CloudCannon's YouTube channel](https://www.youtube.com/c/CloudCannon), and you already can view recordings of the entire streams from [Day 1](https://www.youtube.com/watch?v=JpxiKUHzoqM) and [Day 2](https://www.youtube.com/watch?v=ACRN43SbF2g).
+For those of you who missed HugoConf 2022, the individual presentations are available as separate videos on [CloudCannon's YouTube channel](https://www.youtube.com/c/CloudCannon), and you also can view recordings of the entire streams from [Day 1](https://www.youtube.com/watch?v=JpxiKUHzoqM) and [Day 2](https://www.youtube.com/watch?v=ACRN43SbF2g).
 
 In no particular order, here are some of my takeaways from this first-ever HugoConf, of which I hope there will be future iterations.
 
