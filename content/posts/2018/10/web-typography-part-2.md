@@ -77,17 +77,17 @@ In case you aren't familiar with all of these, here you go (all except the gener
 
 <table class="noborders">
 <thead><tr><td class="td30">Typeface name</td><td class="td70">Sample image</td></tr></thead>
-<tr><td class="td30">San Francisco</td><td class="td70">{{< imgh src="Sys_font_stack_San_Francisco_684x104.png" alt="San Francisco typeface" simple="true" >}}</td></tr>
-<tr><td class="td30">Segoe UI</td><td class="td70">{{< imgh src="Sys_font_stack_Segoe_UI_684x104.png" alt="Segoe UI typeface" simple="true" >}}
-<tr><td class="td30">Tahoma</td><td class="td70">{{< imgh src="Sys_font_stack_Tahoma_684x104.png" alt="Tahoma typeface" simple="true" >}}
-<tr><td class="td30">Roboto</td><td class="td70">{{< imgh src="Sys_font_stack_Roboto_from_GF_684x104.png" alt="Roboto typeface" simple="true" >}}
-<tr><td class="td30">Oxygen</td><td class="td70">{{< imgh src="Sys_font_stack_Oxygen_from_GF_684x104.png" alt="Oxygen typeface" simple="true" >}}
-<tr><td class="td30">Ubuntu</td><td class="td70">{{< imgh src="Sys_font_stack_Ubuntu_from_GF_684x104.png" alt="Ubuntu typeface" simple="true" >}}
-<tr><td class="td30">Cantarell</td><td class="td70">{{< imgh src="Sys_font_stack_Cantarell_from_GF_684x104.png" alt="Cantarell typeface" simple="true" >}}
-<tr><td class="td30">Fira Sans</td><td class="td70">{{< imgh src="Sys_font_stack_Fira_Sans_from_GF_684x104.png" alt="Fira Sans typeface" simple="true" >}}
-<tr><td class="td30">Droid Sans</td><td class="td70">{{< imgh src="Sys_font_stack_Droid_Sans_from_GF_684x104.png" alt="Droid Sans typeface" simple="true" >}}
-<tr><td class="td30">Helvetica Neue</td><td class="td70">{{< imgh src="Sys_font_stack_Helvetica_Neue_680x104.png" alt="Helvetica Neue typeface" simple="true" >}}
-<tr><td class="td30">Lucida Grande</td><td class="ctr td70">{{< imgh src="Sys_font_stack_Lucida_Grande_680x104.png" alt="Lucida Grande typeface" simple="true" >}}
+<tr><td class="td30">San Francisco</td><td class="td70">{{< imgh src="Sys_font_stack_San_Francisco_684x104.png" alt="San Francisco typeface" simple="true" width="684" height="104" >}}</td></tr>
+<tr><td class="td30">Segoe UI</td><td class="td70">{{< imgh src="Sys_font_stack_Segoe_UI_684x104.png" alt="Segoe UI typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Tahoma</td><td class="td70">{{< imgh src="Sys_font_stack_Tahoma_684x104.png" alt="Tahoma typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Roboto</td><td class="td70">{{< imgh src="Sys_font_stack_Roboto_from_GF_684x104.png" alt="Roboto typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Ubuntu</td><td class="td70">{{< imgh src="Sys_font_stack_Ubuntu_from_GF_684x104.png" alt="Ubuntu typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Oxygen</td><td class="td70">{{< imgh src="Sys_font_stack_Oxygen_from_GF_684x104.png" alt="Oxygen typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Cantarell</td><td class="td70">{{< imgh src="Sys_font_stack_Cantarell_from_GF_684x104.png" alt="Cantarell typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Fira Sans</td><td class="td70">{{< imgh src="Sys_font_stack_Fira_Sans_from_GF_684x104.png" alt="Fira Sans typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Droid Sans</td><td class="td70">{{< imgh src="Sys_font_stack_Droid_Sans_from_GF_684x104.png" alt="Droid Sans typeface" simple="true" width="684" height="104" >}}
+<tr><td class="td30">Helvetica Neue</td><td class="td70">{{< imgh src="Sys_font_stack_Helvetica_Neue_680x104.png" alt="Helvetica Neue typeface" simple="true" width="680" height="104" >}}
+<tr><td class="td30">Lucida Grande</td><td class="ctr td70">{{< imgh src="Sys_font_stack_Lucida_Grande_680x104.png" alt="Lucida Grande typeface" simple="true" width="680" height="104" >}}
 </table>
 
 The easiest way[^2] to implement this "system fonts stack" throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):
