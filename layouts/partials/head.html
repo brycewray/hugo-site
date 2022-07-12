@@ -54,12 +54,16 @@
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="{{ .Page.Permalink }}" />
 		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+		{{- $titleSize := 80 -}}
+		{{- if gt (len $.Title) 20 -}}
+			{{- $titleSize = 70 -}}
+		{{- end -}}
 		{{- $socImg = $socImg.Filter (images.Text .Title (dict
 			"color" "#ffffff"
-			"size" 80
+			"size" $titleSize
 			"linespacing" 10
-			"x" 30
-			"y" 30
+			"x" 50
+			"y" 50
 			"font" (resources.Get "/fonts/Franklin Gothic Medium.ttf")
 		)) }}
 		<meta name="og:image" content="{{ $socImg.Permalink }}" />
