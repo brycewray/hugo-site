@@ -1,3 +1,5 @@
+/** @type {import('tailwindcss').Config} */
+
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -83,7 +85,5 @@ module.exports = {
       'hover'
     ],
   },
-  plugins: [
-    require('tailwindcss-logical'),
-  ], // if we add forms, do it here
+  plugins: [], // if we add forms, do it here
 }
