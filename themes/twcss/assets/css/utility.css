@@ -1,5 +1,5 @@
 .yellowBox, .blueBox {
-  @apply font-sans border border-zinc-900 border-solid mx-auto my-8 w-full p-[1.5em] dark:bg-zinc-800 dark:border-zinc-500;
+  @apply !text-sm font-sans border border-zinc-900 border-solid mx-auto my-8 w-full p-[1.5em] dark:bg-zinc-800 dark:border-zinc-500;
 }
 
 .yellowBox {
@@ -14,7 +14,7 @@
 }
 
 .blueBox {
-  @apply text-sm bg-sky-100 dark:bg-blue-900;
+  @apply bg-sky-100 dark:bg-blue-900;
 }
 
 .lazypicturecaption, .imgcCaption {

@@ -1,7 +1,33 @@
 {{ define "main" }}
 	{{ partial "billboard.html" . }}
 	<div class="w-4/5 lg:w-1/2 2xl:w-[45%] 3xl:w-[40%] mt-10 mr-auto ml-auto">
-		<article>
+		<article
+			class="
+			[&_p]:mt-6
+			[&_p]:mb-6
+			[&_p]:leading-relaxed
+			[&_p]:md:text-lg
+			[&_p]:2xl:text-xl
+			[&_li]:mt-6
+			[&_li]:mb-6
+			[&_li]:leading-relaxed
+			[&_li]:md:text-xl
+			[&_h1]:tracking-tight
+			[&_h2]:tracking-tight
+			[&_h3]:tracking-tight
+			[&_h4]:tracking-tight
+			[&_h1]:mt-8
+			[&_h2]:mt-8
+			[&_h3]:mt-8
+			[&_h4]:mt-8
+			[&_h1]:mb-6
+			[&_h2]:mb-6
+			[&_h3]:mb-6
+			[&_h4]:mb-6
+			[&_code]:bg-blue-50
+			[&_code]:dark:bg-gray-700
+			"
+		>
 			{{ .Content }}
 		</article>
 	</div>

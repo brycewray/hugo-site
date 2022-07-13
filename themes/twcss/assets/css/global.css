@@ -1,27 +1,26 @@
-html {
+/* html {
   scroll-padding-top: 80px;
 }
-
-body {
+ */
+/* body {
   @media screen and (prefers-color-scheme: dark) {
     font-weight: 375;
   }
 }
-
-strong, b {
+ */
+/* strong, b {
   @media screen and (prefers-color-scheme: dark) {
     font-weight: 725;
   }
 }
-
+ */
 #content-main-hugo, main {
   @apply pt-[40px];
 }
 
-p, li {
-  /* for handling Markdown-created <p> and <li> */
+/* p, li {
   @apply mb-3 text-lg;
-}
+} */
 
 ul li, ul li li {
   @apply list-disc;
@@ -62,12 +61,12 @@ h1, .h1 {
   } */
 }
 
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  /* font-weight: 625;
+/* h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
   @media screen and (prefers-color-scheme: dark) {
     font-weight: 575;
-  } */
-}
+  }
+} */
 
 h2, .h2 {
   @apply text-3xl 2xl:text-4xl;
@@ -100,14 +99,14 @@ h1, h2, h3, h4, h5, h6 {
     content: "#";
   }
 }
-
+/*
 article h1, article h2, article h3, article h4 {
   @apply tracking-tight mt-8 mb-6;
-}
+} */
 
-article p, li {
+/* article p, li {
   @apply mt-6 mb-6 leading-relaxed md:text-lg lg:text-xl 2xl:text-2xl;
-}
+} */
 
 article img.containedImage, article picture img {
   @apply min-w-full max-w-full w-full h-auto;
