@@ -17,6 +17,6 @@ Why does it matter? Because using `target="_blank"` "breaks" a browser's **back*
 
 > . . . [requiring] opening a new window commits one of the cardinal sins of Usability: **DON'T BREAK THE BACK BUTTON**. I've . . . done UX testing with people who have disabilities. The most frequently checked disability is sight loss; new tabs can present almost insurmountable problems to people who have poor sight. They cause confusion [and] frustration, and break the fundamental back button. The same is true for people who have cognition issues, or low sight, or manual dexterity issues. . . . Making the web accessible should be one of your highest priorities as a UX designer. Everyone needs to be able to do everything on the internet.[^Dickinson]
 
-[^Dickinson]: I also gratefully acknowledge Daniel F. Dickinson's 2021 article, "[Accessible Design: No '_blank'](https://wildtechgarden.ca/blog/accessible-design-no-blank/)," which tipped me off to Phoenix's (and Theng's).
+[^Dickinson]: I also gratefully acknowledge Daniel F. Dickinson's 2021 article, "[Accessible Design: No '_blank,'](https://wildtechgarden.ca/blog/accessible-design-no-blank/)" which tipped me off to Phoenix's (and Theng's).
 
 Good enough. Done.
