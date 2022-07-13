@@ -38,7 +38,7 @@ Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-gi
 		>
 		</script>
 		<p class="ctr pokey sansSerif">
-			Commenting by <strong><a href="https://giscus.app" target="_blank" rel="nofollow">giscus</a></strong>.
+			Commenting by <strong><a href="https://giscus.app" rel="nofollow">giscus</a></strong>.
 		</p>
 	</div>
 </details>

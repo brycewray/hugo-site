@@ -9,7 +9,7 @@
 		{{- end }}</span>
 	</p>
 	<p class="text-center text-fn">
-		{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="font-mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}<br />
+		{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="font-mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}<br />
 		Reading time: {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1)  }}s{{ end }}
 	</p>
 </div>

@@ -8,7 +8,7 @@
 			Last modified {{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;
 			{{- end }}</span>
 		</p>
-		<p class="ctr legal">{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}<br />
+		<p class="ctr legal">{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}<br />
 		Reading time: {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1)  }}s{{ end }}
 	</p>
 	</div>

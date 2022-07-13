@@ -29,7 +29,7 @@ Back when this site was on [Eleventy](https://11ty.dev), I could write the follo
 The alternative would be actually writing HTML within the Markdown, but that wasn't as convenient when it was necessary to add things like links and formatting:
 
 ```html
-<p class="yellowBox"><strong>This</strong> is bold and <em>this</em> is italicized/obliqued, and <a href="https://gohugo.io/documentation" target="_blank" rel="noopener">this link</a> goes to the Hugo documentation, while <a href="/posts/2021/02/simplify-simplify">this post link</a> goes to the site&rsquo;s recent <strong>&ldquo;Simplify, simplify&rdquo;</strong> post.</p>
+<p class="yellowBox"><strong>This</strong> is bold and <em>this</em> is italicized/obliqued, and <a href="https://gohugo.io/documentation" rel="noopener">this link</a> goes to the Hugo documentation, while <a href="/posts/2021/02/simplify-simplify">this post link</a> goes to the site&rsquo;s recent <strong>&ldquo;Simplify, simplify&rdquo;</strong> post.</p>
 ```
 
 .&nbsp;.&nbsp;. instead of just writing this in Markdown:

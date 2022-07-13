@@ -182,7 +182,7 @@ You'll quickly see that I took advantage of the visual similarities between twee
 {{ if isset $json "content" }}
 	<blockquote class="tweet-card" cite="{{ $tootLink }}">
 		<div class="tweet-header">
-			<a class="tweet-profile twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">
+			<a class="tweet-profile twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
 				<img
 					src="{{ $json.account.avatar }}"
 					alt="Mastodon avatar for {{ $handleInst }}"
@@ -190,8 +190,8 @@ You'll quickly see that I took advantage of the visual similarities between twee
 				/>
 			</a>
 			<div class="tweet-author">
-				<a class="tweet-author-name twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">{{ $json.account.display_name }}</a>
-				<a class="tweet-author-handle twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" target="_blank" rel="noopener">{{ $handleInst }}</a>
+				<a class="tweet-author-name twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
+				<a class="tweet-author-handle twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
 			</div>
 		</div>
 		<p class="tweet-body">
@@ -301,7 +301,7 @@ You'll quickly see that I took advantage of the visual similarities between twee
 			{{ end }}
 		{{ end }}
 		<div class="tweet-footer">
-			<a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="tweet-date twitterExt" target="_blank" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
+			<a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="tweet-date twitterExt" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
 		</div>
 	</blockquote>
 {{ end }}

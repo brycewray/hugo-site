@@ -33,7 +33,7 @@
 	<div class="relative imgB-{{ $imgBd5 }} bg-center" aspect-ratio="{{ $width }} / {{ $height }}">
 	{{- else -}}
 	<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
-	{{- end -}}<a href="{{ $twitterUrl }}" target="_blank" rel="noopener">
+	{{- end -}}<a href="{{ $twitterUrl }}" rel="noopener">
 	<img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
 	{{- with $respSizes -}}
 		{{- range $i, $e := . -}}
@@ -43,6 +43,6 @@
 		{{- end -}}
 	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" aspect-ratio="{{ $width }} / {{ $height }}" /></a>
 	<noscript>
-		<a href="{{ $twitterUrl }}" target="_blank" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
+		<a href="{{ $twitterUrl }}" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
 	</noscript>
 </div>

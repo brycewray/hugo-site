@@ -26,7 +26,7 @@ Up to now, that would've had to be an HTML file:
 
 ```html
 <div class="blueBox">
-	<p><strong>Disclaimer</strong>: This data is provided only for comparison and does <strong>not</strong> necessarily reflect the opinion of <a href="{{ .Site.BaseUrl }}/about/" target="_blank" rel="nofollow">this company</a>.</p>
+	<p><strong>Disclaimer</strong>: This data is provided only for comparison and does <strong>not</strong> necessarily reflect the opinion of <a href="{{ .Site.BaseUrl }}/about/" rel="nofollow">this company</a>.</p>
 </div>
 ```
 

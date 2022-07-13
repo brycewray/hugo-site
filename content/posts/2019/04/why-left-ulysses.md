@@ -8,7 +8,7 @@ discussionId: "2019-04-why-left-ulysses"
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
-        <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+        <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" rel="noopener">Talkyard</a>.)</em>
       </p>
       <p class="commentName"><strong>Chris Rosser</strong> <span class="commentDate"><em>2019-04-30</em></span></p>
       <p class="comment">An excellent and very well considered article as always. Thanks for posting it!</p>

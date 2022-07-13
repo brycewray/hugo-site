@@ -95,7 +95,7 @@ if (JsonData.entities.urls) {
 				if (url.display_url.includes ("buff.ly")) {
 					text = text.replace(
 						url.url,
-						`<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`
+						`<a href=${url.url} rel="noreferrer noopener">${url.display_url}</a>`
 					)
 				} else {
 					text = text.replace(
@@ -106,13 +106,13 @@ if (JsonData.entities.urls) {
 			} else {
 				text = text.replace(
 					url.url,
-					`<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`
+					`<a href=${url.url} rel="noreferrer noopener">${url.display_url}</a>`
 				)
 			}
 		} else {
 			text = text.replace(
 				url.url,
-				`<a href=${url.url} target="_blank" rel="noreferrer noopener">${url.display_url}</a>`)
+				`<a href=${url.url} rel="noreferrer noopener">${url.display_url}</a>`)
 		}
 	})
 }
@@ -121,7 +121,7 @@ if (JsonData.entities.mentions) {
 	JsonData.entities.mentions.forEach((mention) => {
 		text = text.replace(
 			`@${mention.username}`,
-			`<a target="_blank" rel="noreferrer noopener" href="https://twitter.com/${mention.username}">@${mention.username}</a>`
+			`<a rel="noreferrer noopener" href="https://twitter.com/${mention.username}">@${mention.username}</a>`
 		)
 	})
 }
@@ -130,7 +130,7 @@ if (JsonData.entities.hashtags) {
 	JsonData.entities.hashtags.forEach((hashtag) => {
 		text = text.replace(
 			`#${hashtag.tag}`,
-			`<a target="_blank" rel="noreferrer noopener" href="https://twitter.com/hashtag/${hashtag.tag}?src=hash&ref_src=twsrc">#${hashtag.tag}</a>`
+			`<a rel="noreferrer noopener" href="https://twitter.com/hashtag/${hashtag.tag}?src=hash&ref_src=twsrc">#${hashtag.tag}</a>`
 		)
 	})
 }
@@ -151,18 +151,18 @@ if (JsonIncludes.media) {
 
 <blockquote class="tweet-card">
 	<div class="tweet-header">
-		<a class="tweet-profile" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">
+		<a class="tweet-profile" href=`https://twitter.com/${username}` rel="noreferrer noopener">
 			<img src={profile_image_url} alt=`Twitter avatar for ${username}` />
 		</a>
 		<div class="tweet-author">
-			<a class="tweet-author-name" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">{name}</a>
-			<a class="tweet-author-handle" href=`https://twitter.com/${username}` target="_blank" rel="noreferrer noopener">@{username}</a>
+			<a class="tweet-author-name" href=`https://twitter.com/${username}` rel="noreferrer noopener">{name}</a>
+			<a class="tweet-author-handle" href=`https://twitter.com/${username}` rel="noreferrer noopener">@{username}</a>
 		</div>
 	</div>
 	<p class="tweet-body" set:html={text} />
 	<span set:html={imageItems} />
 	<div class="tweet-footer">
-		<a href=`https://twitter.com/${username}/status/${TweetID}` class="tweet-date" target="_blank" rel="noreferrer noopener">{format(new Date(created_at), "MMMM d, yyyy • h:mm aa")}</a>&nbsp;<span class="legal">(UTC)</span>
+		<a href=`https://twitter.com/${username}/status/${TweetID}` class="tweet-date" rel="noreferrer noopener">{format(new Date(created_at), "MMMM d, yyyy • h:mm aa")}</a>&nbsp;<span class="legal">(UTC)</span>
 	</div>
 </blockquote>
 ```

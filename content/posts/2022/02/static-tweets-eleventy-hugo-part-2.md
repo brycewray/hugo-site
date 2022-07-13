@@ -95,26 +95,26 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 			{{ $entities := . }}
 			{{ range $entities.mentions }}
 				{{ $mentions := . }}
-				{{ $text = replace $text (printf "@%s" $mentions.username) (printf "<a href='https://twitter.com/%s' target='_blank' rel='noopener'>@%s</a>" $mentions.username $mentions.username) }}
+				{{ $text = replace $text (printf "@%s" $mentions.username) (printf "<a href='https://twitter.com/%s' rel='noopener'>@%s</a>" $mentions.username $mentions.username) }}
 			{{ end }}
 			{{ range $entities.hashtags }}
 				{{ $hashtags := . }}
-				{{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' rel='noopener'>#%s</a>" $hashtags.tag $hashtags.tag) }}
+				{{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' rel='noopener'>#%s</a>" $hashtags.tag $hashtags.tag) }}
 			{{ end }}
 			{{ range $entities.urls }}
 				{{ $urls := . }}
 				{{ if not $urls.images }}
 					{{ if not $urls.unwound_url }}
 						{{ if in $urls.display_url "buff.ly" }}
-							{{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
+							{{ $text = replace $text $urls.url (printf "<a href='%s' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
 						{{ else }}
 							{{ $text = replace $text $urls.url "" }}
 						{{ end }}
 					{{ else }}
-						{{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
+						{{ $text = replace $text $urls.url (printf "<a href='%s' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
 					{{ end }}
 				{{ else }}
-					{{ $text = replace $text $urls.url (printf "<a href='%s' target='_blank' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
+					{{ $text = replace $text $urls.url (printf "<a href='%s' rel='noopener'>%s</a>" $urls.url $urls.display_url) }}
 				{{ end }}
 			{{ end }}
 		{{ end }}
@@ -131,12 +131,12 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 
 <blockquote class="tweet-card">
 	<div class="tweet-header">
-		<a class="tweet-profile" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">
+		<a class="tweet-profile" href="https://twitter.com/{{ $username }}" rel="noopener">
 			<img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" />
 		</a>
 		<div class="tweet-author">
-			<a class="tweet-author-name" href="https://twitter.com/{{ $username}}" target="_blank" rel="noopener">{{ $name }}</a>
-			<a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" target="_blank" rel="noopener">@{{ $username }}</a>
+			<a class="tweet-author-name" href="https://twitter.com/{{ $username}}" rel="noopener">{{ $name }}</a>
+			<a class="tweet-author-handle" href="https://twitter.com/{{ $username }}" rel="noopener">@{{ $username }}</a>
 		</div>
 	</div>
 	<p class="tweet-body">
@@ -154,7 +154,7 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 		{{ end }}
 	{{ end }}
 	<div class="tweet-footer">
-		<a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
+		<a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
 	</div>
 </blockquote>
 ```

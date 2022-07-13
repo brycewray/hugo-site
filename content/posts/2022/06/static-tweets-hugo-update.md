@@ -51,12 +51,12 @@ So, with that, friends and neighbors, here's the code.
 {{ if isset $json "entities" }}
 	{{ if isset $json.entities "user_mentions"  }}
 		{{ range $user := $json.entities.user_mentions}}
-			{{ $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' target='_blank' rel='noopener' class='twitterExt'>@%s</a>" $user.screen_name $user.screen_name) }}
+			{{ $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' rel='noopener' class='twitterExt'>@%s</a>" $user.screen_name $user.screen_name) }}
 		{{ end }}
 	{{ end }}
 	{{ if isset $json.entities "hashtags"}}
 		{{ range $hashtags := $json.entities.hashtags }}
-			{{ $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' target='_blank' rel='noopener' class='twitterExt'>#%s</a>" $hashtags.text $hashtags.text) }}
+			{{ $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' rel='noopener' class='twitterExt'>#%s</a>" $hashtags.text $hashtags.text) }}
 		{{ end }}
 	{{ end }}
 	{{ if isset $json.entities "media"  }}
@@ -66,7 +66,7 @@ So, with that, friends and neighbors, here's the code.
 	{{ end }}
 	{{ if isset $json.entities "urls"  }}
 		{{ range $url := $json.entities.urls}}
-			{{ $text = replace $text $url.url (printf "<a href='%s' target='_blank' rel='noopener' class='twitterExt'>%s</a>" $url.url $url.display_url) }}
+			{{ $text = replace $text $url.url (printf "<a href='%s' rel='noopener' class='twitterExt'>%s</a>" $url.url $url.display_url) }}
 		{{ end }}
 	{{ end }}
 {{ end }}
@@ -93,12 +93,12 @@ So, with that, friends and neighbors, here's the code.
 
 <blockquote class="tweet-card" cite="{{ $tweetLink }}">
 	<div class="tweet-header">
-		<a class="tweet-profile twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" target="_blank" rel="noopener">
+		<a class="tweet-profile twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">
 			<img src="{{ $json.user.profile_image_url_https }}" alt="Twitter avatar for {{ $json.user.screen_name}}" loading="lazy" />
 		</a>
 		<div class="tweet-author">
-			<a class="tweet-author-name twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" target="_blank" rel="noopener">{{ $json.user.name }}</a>
-			<a class="tweet-author-handle twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" target="_blank" rel="noopener">@{{ $json.user.screen_name}}</a>
+			<a class="tweet-author-name twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">{{ $json.user.name }}</a>
+			<a class="tweet-author-handle twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">@{{ $json.user.screen_name}}</a>
 		</div>
 	</div>
 	<p class="tweet-body">
@@ -116,7 +116,7 @@ So, with that, friends and neighbors, here's the code.
 		{{ with $json.card }}
 			{{ with $json.card.binding_values }}
 				{{ $bVals := . }}
-				<a href="{{ $bVals.card_url.string_value }}" target='_blank' rel='noopener'>
+				<a href="{{ $bVals.card_url.string_value }}" rel='noopener'>
 					<div class="card">
 						<img src="{{ $bVals.photo_image_full_size_large.image_value.url }}" alt="{{ $bVals.photo_image_full_size_large.image_value.alt }}" loading="lazy" class="tweet-card-img" />
 						<p>
@@ -151,14 +151,14 @@ So, with that, friends and neighbors, here's the code.
 			{{ with $json.quoted_tweet }}
 				{{ $quoted_tweet := .}}
 				<div class="tweet-quoted-tweet">
-					<p class="pokey tweet-quoted-tweet-head"><img class="tweet-quoted-tweet-profile-image" src="{{ $quoted_tweet.user.profile_image_url_https }}" />&nbsp;<strong>{{ $quoted_tweet.user.name }}</strong> @{{ $quoted_tweet.user.screen_name }} &bull; <a href="https://twitter.com/{{ $quoted_tweet.user.screen_name }}/status/{{ $quoted_tweet.id_str }}" class="tweet-date twitterExt" target="_blank" rel="noopener">{{ dateFormat "January 2, 2006" $quoted_tweet.created_at }}</a> <span class="legal">(UTC)</span></p>
+					<p class="pokey tweet-quoted-tweet-head"><img class="tweet-quoted-tweet-profile-image" src="{{ $quoted_tweet.user.profile_image_url_https }}" />&nbsp;<strong>{{ $quoted_tweet.user.name }}</strong> @{{ $quoted_tweet.user.screen_name }} &bull; <a href="https://twitter.com/{{ $quoted_tweet.user.screen_name }}/status/{{ $quoted_tweet.id_str }}" class="tweet-date twitterExt" rel="noopener">{{ dateFormat "January 2, 2006" $quoted_tweet.created_at }}</a> <span class="legal">(UTC)</span></p>
 					<p>{{ $.Page.RenderString $QT_text }}</p>
 				</div>
 			{{ end }}
 		{{ end }}
 	{{ end }}
 	<div class="tweet-footer">
-		<a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' target='_blank' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+		<a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
 	</div>
 </blockquote>
 ```

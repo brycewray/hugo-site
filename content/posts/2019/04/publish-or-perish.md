@@ -8,10 +8,10 @@ discussionId: "2019-04-publish-or-perish"
 oldComments: |
   <div class="container-oldComments">
     <p class="commentDisclaimer">
-      <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)</em>
+      <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" rel="noopener">Talkyard</a>.)</em>
     </p>
     <p class="commentName"><strong>Andrew Canion</strong> <span class="commentDate"><em>2019-06-18</em></span></p>
-    <p class="comment">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="noopener">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="noopener">helped another user on micro.blog</a>.</p>
+    <p class="comment">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" rel="noopener">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" rel="noopener">helped another user on micro.blog</a>.</p>
 
     <p class="commentName"><strong>Bryce Wray</strong> <span class="commentDate"><em>2019-06-18</em></span></p>
     <p class="comment">Very glad I could help. Have fun with Hugo! I certainly do.</p>
