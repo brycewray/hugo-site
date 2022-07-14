@@ -68,7 +68,7 @@ $tc-padding: 1em;
 }
 // Hugo version
 .tweet-media-img {
-	width: 100%;
+	width: 100%; // overcoming something in Andy Bell's `reset`
 	height: auto;
 	aspect-ratio: 1;
 	object-fit: cover;
@@ -79,6 +79,7 @@ $tc-padding: 1em;
 	@media screen and (prefers-color-scheme: dark) {
 		border: 1px solid var.$gray-2-dark-mode;
 	}
+	width: 100%;
 }
 
 .tweet-player {
