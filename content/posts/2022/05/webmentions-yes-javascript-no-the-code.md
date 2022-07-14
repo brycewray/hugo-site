@@ -182,7 +182,7 @@ And now, it's time to dive in.
 
 ### Variables
 
-We "begin at the beginning," by initializing a whole passel of variables. To repeat one of those obvious questions I mentioned earlier: why don't we do it more cleanly, rather than one frickin' line per variable? Because, it would appear, [we can't](https://discourse.gohugo.io/t/init-and-reassign-multiple-variables-at-once/2703).
+We "begin at the beginning," by initializing a whole passel of variables. To repeat one of those obvious questions I mentioned earlier: why don't we do it more cleanly, rather than one frickin' line per variable? Because, it would appear, [we can't](https://discourse.gohugo.io/t/init-and-reassign-multiple-variables-at-once/27039).
 
 ```go-html-template
 {{- $json := "Init" -}}
