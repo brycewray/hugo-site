@@ -11,6 +11,9 @@ Keeping one's website as accessibility-friendly as possible is an ongoing task, 
 
 [Last time](/posts/2022/06/accessibility-argument-tabs-spaces/), it was using tabs instead of spaces for indents in my code, to make it easier for those with visual impairments to read and use it. This time, it's **not** using `target="_blank"` to force each external link to open in a different browser tab/window. As of earlier today, that behavior is no longer wired into this site's external links --- and, to be safe, is also banished from all of my posts' various code examples.
 
+**Update**: After issuing this post, I had to make one exception --- the [DuckDuckGo](https://duckduckgo.com)-based search form at the bottom of each page, which apparently won't work **unless** I use `target="blank"` in it.
+{.yellowBox}
+
 Why does it matter? Because using `target="_blank"` "breaks" a browser's **back** button, and that turns out to be bad for less tech-savvy users (admittedly not so big a concern here) and **very** bad for the disabled. Quoting Andrew Phoenix's 2012 article[^rebuttal], "[Why External Links Should NOT Open in New Tabs](https://aphoenix.ca/blog/why-external-links-should-not-open-in-new-tabs/)":
 
 [^rebuttal]: Of course, there isn't unanimity about this view --- *e.g.*, Anthony Theng's piece (also from 2012), "[Why External Links Should Open in New Tabs](https://uxmovement.com/navigation/why-external-links-should-open-in-new-tabs/)," to which Phoenix's article was a rebuttal.
