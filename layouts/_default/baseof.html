@@ -6,7 +6,7 @@
 		<div id="content-main-hugo">
 		{{- block "main" . -}}{{- end }}
 		</div>
-		{{- partialCached "search-ddg-form.html" . -}}
+		{{- /* partialCached "search-ddg-form.html" . */ -}}
 		{{- partialCached "footer.html" . -}}
 		{{- if hugo.IsProduction -}}
 			{{- if eq .Site.Params.Host "CFP" -}}
