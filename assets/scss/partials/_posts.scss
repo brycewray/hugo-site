@@ -21,11 +21,18 @@
 	&-pagerGray {
 		color: var.$gray-2;
 	}
-	&-pagerThingP {
-		text-align: center;
-		font-size: 1.25em;
-		margin-top: 0.5rem;
-		margin-bottom: 0.5rem;
+	&-pagerThing {
+		// text-align: center;
+		// font-size: 1.25em;
+		// margin-top: 0.5rem;
+		// margin-bottom: 0.5rem;
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+		justify-content: center;
+		.pagerSpacer {
+			width: 1.5em;
+		}
 	}
 	&-Container {
 		margin: 0 auto;
@@ -166,6 +173,17 @@ hr.paginatorBottom {
 				background-color: var.$blueLightBtn;
 			}
 		}
+	}
+}
+
+.pagination {
+	list-style-type: none;
+	margin-block-start: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding-inline-start: 0;
+	li {
+		display: inline;
 	}
 }
 
