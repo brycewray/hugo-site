@@ -34,4 +34,4 @@ So if you're having similar difficulties getting such a form to work on a site w
 By the way, it turns out I'd have gotten my answer earlier if I'd only checked around a little more (`</ForeheadSlap>` again):
 
 - StackOverflow, "[Does a *.example.com for a content security policy header also match example.com?](https://stackoverflow.com/questions/44850590/does-a-example-com-for-a-content-security-policy-header-also-match-example-com)"; originally asked 2019-10-31.
-- Content Security Policy Level 3, W3C Working Draft, 4 July 2022, "[Source lists](https://w3c.github.io/webappsec-csp/#framework-directive-source-list)."
+- World Wide Web Consortium (W3C), *Content Security Policy Level 3, W3C Working Draft, 4 July 2022*, "[Source lists](https://w3c.github.io/webappsec-csp/#framework-directive-source-list)."
