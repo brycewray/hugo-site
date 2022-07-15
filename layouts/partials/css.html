@@ -11,7 +11,7 @@
 		*/ -}}
 		{{- $css := "" -}}
 		{{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
-		{{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
+		{{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle") -}}
 		{{- if hugo.IsProduction -}}
 			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
 		{{- else -}}

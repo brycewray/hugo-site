@@ -65,7 +65,8 @@ jobs:
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
-        run: hugo --gc
+        run: hugo --gc --minify
+        # **don't** minify if also compressing SCSS/CSS output; bad stuff happens
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1.0.0
         with:
