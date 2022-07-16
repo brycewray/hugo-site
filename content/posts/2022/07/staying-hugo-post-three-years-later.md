@@ -51,7 +51,7 @@ Compared to how much tinkering I've done over the years with various other SSGs 
 - Several posts about doing fully static embeds of social media posts --- which Hugo's built-in `getJSON` function makes easier than in JS-based SSGs[^fetchAxios] --- the most recent of which was "[Static tweets in Hugo: an update](/posts/2022/06/static-tweets-hugo-update/)," 2022-06-07.
 - "[Responsive and optimized images with Hugo](/posts/2022/06/responsive-optimized-images-hugo/)," 2022-06-29.
 
-[^fetchAxios]: That is, unless you just *like* futzing around with packages like [node-fetch](https://github.com/node-fetch/node-fetch) and [axios](https://axios-http.com/). I've used both in both Eleventy and Astro, and sometimes they've worked okay for me but other times they've constituted a major pain. (Async and I aren't exactly the best of friends.) I have yet to run into similar agonies with `getJSON`, which I've found far more forgiving than either `node-fetch` or `axios`.
+[^fetchAxios]: That is, unless you just *like* futzing around with packages like [node-fetch](https://github.com/node-fetch/node-fetch) and [axios](https://axios-http.com/). I've used both in both Eleventy and Astro, and sometimes they've worked okay for me but other times they've constituted a major pain. (Async and I aren't exactly the best of friends.) I have yet to run into similar agonies with `getJSON`, which I've found far more forgiving than either node-fetch or axios.
 
 ## And further staying
 
