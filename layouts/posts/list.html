@@ -33,7 +33,7 @@
 				<!-- First page. -->
 				<div>
 					{{ if ne $paginator.PageNumber 1 }}
-						<a class="icon" aria-label="First page" href="{{ $paginator.First.URL }}">
+						<a class="icon" aria-label="First page" title="First page" href="{{ $paginator.First.URL }}">
 							{{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
 						</a>
 					{{ else }}
@@ -44,7 +44,7 @@
 				<!-- Previous page. -->
 				<div>
 					{{ if $paginator.HasPrev }}
-						<a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page">
+						<a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page" title="Previous page">
 							{{ partial "svgPrevPageIcon.html" . }}
 						</a>
 					{{ else }}
@@ -56,7 +56,7 @@
 				<!-- Next page. -->
 				<div>
 					{{ if $paginator.HasNext }}
-						<a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page">
+						<a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page" title="Next page">
 							{{ partial "svgNextPageIcon.html" . }}
 						</a>
 					{{ else }}
@@ -67,7 +67,7 @@
 				<!-- Last page. -->
 				<div>
 					{{ if ne $paginator.PageNumber $paginator.TotalPages }}
-						<a class="icon" aria-label="Last page" href="{{ $paginator.Last.URL }}">
+						<a class="icon" aria-label="Last page" title="Last page" href="{{ $paginator.Last.URL }}">
 							{{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
 						</a>
 					{{ else }}
@@ -100,7 +100,7 @@
 				<!-- First page. -->
 				<div>
 					{{ if ne $paginator.PageNumber 1 }}
-						<a class="icon" aria-label="First page" href="{{ $paginator.First.URL }}">
+						<a class="icon" aria-label="First page" title="First page" href="{{ $paginator.First.URL }}">
 							{{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
 						</a>
 					{{ else }}
@@ -111,7 +111,7 @@
 				<!-- Previous page. -->
 				<div>
 					{{ if $paginator.HasPrev }}
-						<a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page">
+						<a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page" title="Previous page">
 							{{ partial "svgPrevPageIcon.html" . }}
 						</a>
 					{{ else }}
@@ -123,7 +123,7 @@
 				<!-- Next page. -->
 				<div>
 					{{ if $paginator.HasNext }}
-						<a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page">
+						<a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page" title="Next page">
 							{{ partial "svgNextPageIcon.html" . }}
 						</a>
 					{{ else }}
@@ -134,7 +134,7 @@
 				<!-- Last page. -->
 				<div>
 					{{ if ne $paginator.PageNumber $paginator.TotalPages }}
-						<a class="icon" aria-label="Last page" href="{{ $paginator.Last.URL }}">
+						<a class="icon" aria-label="Last page" title="Last page" href="{{ $paginator.Last.URL }}">
 							{{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
 						</a>
 					{{ else }}

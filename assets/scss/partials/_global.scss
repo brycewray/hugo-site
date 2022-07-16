@@ -112,6 +112,10 @@ a {
 	}
 }
 
+a.icon {
+	border-bottom: 0;
+}
+
 a:focus, a:hover, a:active {
 	color: var.$darkblue;
 	@media (prefers-color-scheme: dark) {
