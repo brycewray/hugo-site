@@ -5,43 +5,48 @@
 .searchDiv {
 	font-family: var.$sans-serif;
 	margin: 2em auto;
-	text-align: center;
 	width: 100%;
+}
+
+.searchBox {
+	position: relative;
+	margin: 0 auto;
+	width: 25ch;
+	padding: 0;
+	background-color: var.$white;
+	border: 1px solid var.$black;
+	@media screen and (prefers-color-scheme: dark) {
+		background-color: var.$gray-1;
+		border: 1px solid var.$gray-2;
+	}
 }
 
 .searchInput {
 	@media (min-width: var.$bkpt_md) {
-		min-width: 20ch;
-		width: 20ch;
-		max-width: 20ch;
+		max-width: 300ch;
 	}
-	padding: 3px 6px;
-	margin-bottom: 0.5em;
-	border: 1px solid var.$black;
-	// border-radius: 6px;
+	outline: none;
+	padding: 0.25em 0.5em 0.25em;
+	margin: 0;
+	border: 0;
+	background-color: transparent;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-2;
-		background-color: var.$gray-1;
-		color: white;
-	}
-	&::placeholder {
-		@media screen and (prefers-color-scheme: dark) {
-			color: var.$gray-2;
-		}
+		color: var.$white;
 	}
 }
 
 .searchBtn {
-	margin-left: 0.25em;
+	position: absolute;
+	right: 0px;
 	padding: 3px 12px;
 	border: 1px solid var.$blue;
-	border-radius: var.$btn_radius;
+	// border-radius: var.$btn_radius;
 	font-weight: bold;
 	background-color: var.$blue;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$code-color-blueLight-dark-mode;
-		background-color: var.$code-color-blueLight-dark-mode;
+		border: 1px solid var.$gray-2;
+		background-color: var.$blueLight;
 		color: var.$black;
 	}
 	&:hover {
