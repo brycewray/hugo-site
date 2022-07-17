@@ -11,6 +11,10 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
 
+## DuckDuckGo
+
+The search form on each page of the site sends site-specific queries to [DuckDuckGo](https://duckduckgo.com), a privacy-focused search engine. See also the [DuckDuckGo privacy policy](https://duckduckgo.com/privacy).
+
 ## giscus
 
 The site's [giscus](https://giscus.app) commenting system, which is based on the [GitHub Discussions search API](https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions#search), performs no tracking.
