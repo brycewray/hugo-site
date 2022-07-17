@@ -125,7 +125,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 	browsers use to decide which image, and
 	which format thereof, to show. Remember to
 	put `webp` first, since the browser will use
-	the first format it can use, and WebP files
+	the first format it **can** use, and WebP files
 	usually are smaller. After WebP, the fallback
 	is the universally safe JPG format.
 */}}
