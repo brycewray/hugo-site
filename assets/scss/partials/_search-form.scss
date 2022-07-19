@@ -11,7 +11,7 @@
 .searchBox {
 	position: relative;
 	margin: 0 auto;
-	width: 25ch;
+	width: 17em;
 	padding: 0;
 	background-color: var.$white;
 	border: 1px solid var.$black;
@@ -36,17 +36,17 @@
 }
 
 .searchBtn {
+	appearance: none; // otherwise, Safari rounds it
+	border-radius: 0; // " " " " " " " " " " " " " "
 	position: absolute;
 	right: 0px;
 	margin: 0; // fixes oddity in Safari
 	padding: 3px 12px;
 	border: 1px solid var.$blue;
-	// border-radius: var.$btn_radius;
 	font-weight: bold;
 	background-color: var.$blue;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-2;
 		background-color: var.$blueLight;
 		color: var.$black;
 	}
