@@ -168,7 +168,7 @@ Each of the files you'll create below is a plain-text file. In macOS, the defaul
   <p>This line is from <code>layouts/index.html</code>.</p>
 {{ end }}
 {{< /highlight >}}
-3. In `layouts/_default`, create a file called `baseof.html` with the following content (Hugo's default is for English, so that's why I use `lang="en"`):\
+3. In `layouts/_default/`, create a file called `baseof.html` with the following content (Hugo's default is for English, so that's why I use `lang="en"`):\
 {{< highlight go-html-template "linenos=false" >}}
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
@@ -180,7 +180,7 @@ Each of the files you'll create below is a plain-text file. In macOS, the defaul
 </body>
 </html>
 {{< /highlight >}}
-4. In `layouts/_default`, create a file called `single.html` with the following content:\
+4. In `layouts/_default/`, create a file called `single.html` with the following content:\
 {{< highlight go-html-template "linenos=false" >}}
 {{ define "main" }}
 	{{ .Content }}
