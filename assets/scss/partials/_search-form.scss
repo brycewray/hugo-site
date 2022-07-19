@@ -38,6 +38,7 @@
 .searchBtn {
 	position: absolute;
 	right: 0px;
+	margin: 0; // fixes oddity in Safari
 	padding: 3px 12px;
 	border: 1px solid var.$blue;
 	// border-radius: var.$btn_radius;
