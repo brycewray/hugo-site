@@ -108,6 +108,9 @@ Hugo has theming, and Eleventy doesn't. By selecting one of the many available [
 
 **One caveat I must offer** (as I always do for people who are new to Hugo) is that, **before** you get started with Hugo, you should look through those themes and pick one that seems more or less like how you think you'd like your site to look and "feel." Once you do that, you can get under the hood and see how the theme author got Hugo to do this thing or that. That also protects you, at least in the beginning, from one of Hugo's weak points, Go-based templating (again, I'll explain later).
 
+**Update, 2022-07-19**: About a year and a half after writing the above, I had [second thoughts](/posts/2022/07/really-getting-started-hugo/) about it.
+{.yellowBox}
+
 ### Time zone handling
 
 This one may seem trivial (even [OCD](https://iocdf.org/about-ocd/)-ish) to you, but Hugo accepts your post dates and times *as you specify them* in your content's front matter. By contrast, Eleventy defaults to [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), so you have to get into its configuration to work around that. Since I often am writing and posting articles late at night here in Texas but in the early morning according to UTC, I appreciate this degree of control. I want something dated December 31, 2020, according to where I was when I posted it, to *appear* with that date --- even if I posted it at a second before midnight Central Standard Time (5:59:59 AM on January 1, 2021, in UTC).
