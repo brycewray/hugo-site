@@ -121,7 +121,7 @@ scoop install hugo-extended
 scoop update hugo-extended
 {{< /highlight >}}
 
-This concludes Step 1 for Windows. You can now toggle this back to "closed." 
+This concludes Step 1 for Windows. You can now toggle this back to "closed."
 
 </details>
 
@@ -138,7 +138,7 @@ hugo new site my-site
 {{< /highlight >}}
 As it creates the site, Hugo will automatically display instructions talking about using a theme but, again, *we're not going there*. Anyway, the result will be a structure like the following in your user directory:
 {{< highlight plaintext "linenos=false" >}}
-my_site   <-- The Hugo project folder
+my-site   <-- The Hugo project folder
 └─ archetypes
 └─ config.toml   <-- The only non-folder
 └─ content
