@@ -7,6 +7,9 @@ date: 2022-07-19T10:55:00-05:00
 #initTextEditor: **iA Writer**
 ---
 
+**Update, 2022-07-20**: It was [suggested to me](https://discourse.gohugo.io/t/proposed-method-for-new-users/39596/2) that I provide only the *steps* in this post, *without* the explanatory lead-in. That way, the intended targets --- new Hugo users --- would get the good stuff right from the start. [So I did, in a follow-up](/posts/2022/07/really-getting-started-hugo-four-steps/).
+{.yellowBox}
+
 We've all tried to assemble something by following a set of written instructions. More than a few of those times, we've realized that the instructions either weren't complete or were just plain wrong (sometimes both). On certain occasions of this type, we've been even more perplexed by also seeing that some of the expected parts were missing.
 
 A huge problem in getting new users to try the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) is that you can't simply point them to the documentation about getting started. As I will explain below, it omits one key step of the startup process in favor of another which isn't nearly as helpful.
