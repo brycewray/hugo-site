@@ -28,7 +28,9 @@ That's short for *cut the crap and just write*.
 
 So what exactly will CTCAJW Mode involve?
 
-First: anyone who's stopped by here in the recent past will immediately notice a big difference in look-and-feel. The new minimalism, bereft of the need for "hero" images on each post page, is a key part of CTCAJW Mode. More on that shortly.
+First: anyone who's stopped by here in the recent past will immediately notice a big difference in look-and-feel. The new minimalism, bereft of the need for "hero" images on each post page (as in this example, *below*, from a few days ago), is a key part of CTCAJW Mode. More on that shortly.
+
+{{< imgh src="site-screen-shot-2022-05-17-archive-org_3160x2084.png" alt="Screen capture to show the “hero image” design approach used on this website before May 21, 2022" >}}
 
 As for how the posts themselves will line up from here on: well, CTCAJW Mode will be *mostly* new ground for me, so I can't really say how they'll play out. I don't *intend* for this to be like so-called micro-blogging on occasion, but there may be times when that's justified.
 
