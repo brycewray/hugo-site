@@ -1,0 +1,5 @@
+{{ $titleText := resources.Get "/images/social-OG-text-really-getting-started-hugo-four-steps.png" }}
+{{- $socImg := resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+{{ $finalFilter := (images.Overlay $titleText 0 0 ) }}
+{{ $finalImg := $socImg | images.Filter $finalFilter }}
+<p class="ctr"><img src="{{ $finalImg.RelPermalink }}" alt="test img" /></p>
