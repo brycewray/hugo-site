@@ -54,12 +54,28 @@
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="{{ .Page.Permalink }}" />
 		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		{{- if .Params.Titletext -}}
-			{{- $titleText := resources.Get (printf "%s%s" "/images/" .Params.Titletext) -}}
+		{{- if eq .Page.Type "posts" -}}
+			{{- $titleText := resources.Get (printf "%s%s%s" "/images/social-OG-text-" .Page.File.BaseFileName ".png") -}}
 			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
 			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
 			{{- $socImg = $socImg | images.Filter $finalFilter -}}
-			{{- /* If no 'titletext in front matter', $socImg remains the fallback image */ -}}
+		{{- else if eq .Page.Type "about" -}}
+			{{- $titleText := resources.Get "/images/social-OG-text-about-me.png" -}}
+			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
+			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+			{{- $socImg = $socImg | images.Filter $finalFilter -}}
+		{{- else if eq .Page.Type "contact" -}}
+			{{- $titleText := resources.Get "/images/social-OG-text-want-to-reach-me.png" -}}
+			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
+			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+			{{- $socImg = $socImg | images.Filter $finalFilter -}}
+		{{- else if eq .Page.Type "privacy" -}}
+			{{- $titleText := resources.Get "/images/social-OG-text-privacy-policy.png" -}}
+			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
+			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+			{{- $socImg = $socImg | images.Filter $finalFilter -}}
+		{{- else -}}
+			{{- /* $socImg remains fallback image */ -}}
 		{{- end }}
 		<meta name="og:image" content="{{ $socImg.Permalink }}" />
 		<meta name="twitter:image" content="{{ $socImg.Permalink }}" />
