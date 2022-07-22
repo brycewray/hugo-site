@@ -127,6 +127,7 @@ Each of the files you'll create below is a plain-text file. In macOS, the defaul
   <p>This line is from <code>layouts/index.html</code>.</p>
 {{ end }}
 {{< /highlight >}}
+`layouts/index.html` is the layout for the site's home page.
 3. In `layouts/_default/`, create a file called `baseof.html` with the following content (Hugo's default is for English, so that's why I use `lang="en"`):\
 {{< highlight go-html-template "linenos=false" >}}
 <!DOCTYPE html>
@@ -139,6 +140,8 @@ Each of the files you'll create below is a plain-text file. In macOS, the defaul
 </body>
 </html>
 {{< /highlight >}}
+`layouts/_default/baseof.html` is, to quote the [Hugo documentation](https://gohugo.io/templates/base/#define-the-base-template), "the shell from which all your pages will be rendered unless you specify another `baseof.html` closer to the beginning of the lookup order."[^lookupOrder]
+[^lookupOrder]: The lookup order is explained in [this vital part](https://gohugo.io/templates/lookup-order/) of the Hugo documentation.
 4. In `layouts/_default/`, create a file called `single.html` with the following content:\
 {{< highlight go-html-template "linenos=false" >}}
 {{ define "main" }}
@@ -146,6 +149,7 @@ Each of the files you'll create below is a plain-text file. In macOS, the defaul
   <p>This line is from <code>layouts/_default/single.html</code>.</p>
 {{ end }}
 {{< /highlight >}}
+`layouts/_default/single.html` is the default template for a *single page*.[^lookupOrder]
 5. In `content/`, add a file called `firstpost.md`[^Markdown] with the following content:\
 {{< highlight md "linenos=false" >}}
 ---
@@ -166,6 +170,7 @@ This line is from `content/_index.md`.
 
 [Go to firstpost](/firstpost/).
 {{< /highlight >}}
+Incidentally, the reason for that underscore in the name `_index.md` has to do with [how Hugo helps you manage content](https://gohugo.io/content-management/organization/#index-pages-_indexmd), but a more detailed explanation thereof is well outside the scope of these intentionally simplified instructions.
 
 7. In the `config.toml` file at the Hugo project's top level, add the following line[^disableKinds]:\
 {{< highlight toml "linenos=false" >}}
