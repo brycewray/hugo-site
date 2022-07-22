@@ -54,25 +54,28 @@
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="{{ .Page.Permalink }}" />
 		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		{{- if eq .Page.Type "posts" -}}
-			{{- $titleText := resources.Get (printf "%s%s%s" "/images/social-OG-text-" .Page.File.BaseFileName ".png") -}}
+		{{- if eq .Page.Type "posts" }}
+			{{/*}}
+			{{ warnf "%s" (resources.Get (printf "images/social-OG-text-%s.png" .Page.File.BaseFileName)) }}
+			{{*/}}
+			{{- $titleText := resources.Get (printf "images/social-OG-text-%s.png" .Page.File.BaseFileName) -}}
 			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
-			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+			{{- $socImg = resources.Get "images/social-OG-w-BW-logo_1024x512.jpg" -}}
 			{{- $socImg = $socImg | images.Filter $finalFilter -}}
-		{{- else if eq .Page.Type "about" -}}
-			{{- $titleText := resources.Get "/images/social-OG-text-about-me.png" -}}
+			{{- else if eq .Page.RelPermalink "/about/" -}}
+			{{- $titleText := resources.Get "images/social-OG-text-about-me.png" -}}
 			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
-			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+			{{- $socImg = resources.Get "images/social-OG-w-BW-logo_1024x512.jpg" -}}
 			{{- $socImg = $socImg | images.Filter $finalFilter -}}
-		{{- else if eq .Page.Type "contact" -}}
-			{{- $titleText := resources.Get "/images/social-OG-text-want-to-reach-me.png" -}}
+		{{- else if eq .Page.RelPermalink "/contact/" -}}
+			{{- $titleText := resources.Get "images/social-OG-text-want-to-reach-me.png" -}}
 			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
-			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+			{{- $socImg = resources.Get "images/social-OG-w-BW-logo_1024x512.jpg" -}}
 			{{- $socImg = $socImg | images.Filter $finalFilter -}}
-		{{- else if eq .Page.Type "privacy" -}}
-			{{- $titleText := resources.Get "/images/social-OG-text-privacy-policy.png" -}}
+		{{- else if eq .Page.RelPermalink "/privacy/" -}}
+			{{- $titleText := resources.Get "images/social-OG-text-privacy-policy.png" -}}
 			{{- $finalFilter := (images.Overlay $titleText 0 0 ) -}}
-			{{- $socImg = resources.Get "/images/social-OG-w-BW-logo_1024x512.jpg" -}}
+			{{- $socImg = resources.Get "images/social-OG-w-BW-logo_1024x512.jpg" -}}
 			{{- $socImg = $socImg | images.Filter $finalFilter -}}
 		{{- else -}}
 			{{- /* $socImg remains fallback image */ -}}
