@@ -6,8 +6,7 @@
 
 {{/* init vars */}}
 {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
-{{- $imgBase := "images/" -}} {{/* This will be from top-level /assets/images */}}
-{{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}
+{{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
 {{- $phn := false -}}
 {{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
@@ -38,7 +37,6 @@
 {{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
 {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 
-{{- $imgCfg := imageConfig (printf "%s%s" "/assets/" $src) -}}
 {{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
 
 <div class="relative">
@@ -46,7 +44,7 @@
 		<source type="image/webp" srcset="
 		{{- with $respSizes -}}
 			{{- range $i, $e := . -}}
-				{{- if ge $imgCfg.Width . -}}
+				{{- if ge $src.Width . -}}
 					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s%s" . " webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 				{{- end -}}
 			{{- end -}}
@@ -54,12 +52,12 @@
 		<source type="image/jpeg" srcset="
 		{{- with $respSizes -}}
 			{{- range $i, $e := . -}}
-				{{- if ge $imgCfg.Width . -}}
+				{{- if ge $src.Width . -}}
 					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s" . " jpg " $filter) ).RelPermalink }} {{ . }}w
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $imgCfg.Width }}" height="{{ $imgCfg.Height }}" alt="{{ $alt }}" loading="lazy" />
+		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" loading="lazy" />
 	</picture>
 </div>
 
