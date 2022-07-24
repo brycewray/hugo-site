@@ -58,7 +58,8 @@ I suggest that, for `data-theme`, you select `preferred_color_scheme`. That way,
 
 That may be all the styling you want to do. However, giscus by default uses the [sans-serif system fonts stack](/posts/2018/10/web-typography-part-2/#goin-back-to-the-classics-----sort-of); so, if your site uses a web font and you prefer to have the giscus instance follow the typography of the rest of your page, you'll need to get a little tricky:
 
-1. Go to [https://github.com/giscus/giscus/tree/main/styles/themes](https://github.com/giscus/giscus/tree/main/styles/themes) and find the CSS file that matches your chosen `data-theme` setting. In my case, that's the [`preferred_color_scheme.css` file](https://github.com/giscus/giscus/blob/main/styles/themes/preferred_color_scheme.css).
+1. Go to the [giscus themes page](https://github.com/giscus/giscus/tree/main/styles/themes) and find the CSS file that matches your chosen `data-theme` setting.\
+In my case, that's the [`preferred_color_scheme.css` file](https://github.com/giscus/giscus/blob/main/styles/themes/preferred_color_scheme.css).
 2. Copy the contents of that file into a new CSS file on your site repo; then, put the file in a `css/` folder and set your SSG to treat it as a *static assets folder*, so that the CSS file will be built on the website as `[domain]/css/[filename].css`. Here's how you do that in my three favorite SSGs:
    - [**Astro**](https://astro.build) --- Put the `css/` folder in the top-level `public/` folder, so that the CSS file is in `public/css/`.
    - [**Eleventy**](https://11ty.dev) --- Set the `css/` folder to use Eleventy's [*Passthrough File Copy* feature](https://www.11ty.dev/docs/copy/).
