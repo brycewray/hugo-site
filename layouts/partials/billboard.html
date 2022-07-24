@@ -1,3 +1,10 @@
+{{- /*
+	h/t to Joe Mooring's answer in
+	https://discourse.gohugo.io/t/count-word-function-customized-to-exclude-code/34380
+*/ -}}
+{{- $wordCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content | countwords -}}
+{{- $readingTime := div (float $wordCount) 213 | math.Ceil -}}
+{{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 <div class="billboard-div">
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
@@ -8,8 +15,9 @@
 			Last modified {{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;
 			{{- end }}</span>
 		</p>
-		<p class="ctr legal">{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end -}}<br />
-		Reading time: {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1)  }}s{{ end }}
-	</p>
+		<p class="ctr legal">
+			{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end }}<br />
+			{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{ if (gt $readingTime 1) }}s{{ end }}
+		</p>
 	</div>
 </div>
