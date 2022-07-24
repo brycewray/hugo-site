@@ -27,7 +27,9 @@ If you **do** have to move your giscus-savvy Discussions to another repo, you **
 - Click **Transfer discussion** and choose the new comments-only repo as the Discussion's destination.
 - Over in the comments-only repo's Discussions section, revert the transferred Discussion's category to "Announcements."
 
-Also: when you set the `data-mapping` parameter, I **strongly** suggest choosing `pathname`. This will tell giscus to match a page with a GitHub Discussion titled the same as the page's internal pathname.[^pn] You then end up with awkward-looking Discussion titles but it's better than selecting `title`, since [giscus can be confused by pages with similar `title` settings](https://github.com/giscus/giscus/issues/508).
+Also: when you set the `data-mapping` parameter, I **strongly** suggest choosing `pathname`. This will tell giscus to match a page with a GitHub Discussion titled the same as the page's internal pathname.[^pn] You then end up with awkward-looking Discussion titles but it's better than selecting `title`, since [giscus can be confused by pages with similar `title` settings](https://github.com/giscus/giscus/issues/508). That confusion is due to how the GitHub Discussions Search API works, rather than being a failure of giscus's code.
+
+**Update, 2022-07-24**: That problem was [solved on 2022-07-23](https://github.com/giscus/giscus/issues/508#issuecomment-1193106139) with a [fix that uses *hashing*](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#data-strict) to work around this problem.
 
 [^pn]: For example, `posts/2022/05/tips-using-giscus/` is both this page's pathname and the title of its related GitHub Discussion --- or, at least, the latter *will* be true when/if this page receives at least one giscus comment or reaction.
 
