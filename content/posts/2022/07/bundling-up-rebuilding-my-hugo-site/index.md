@@ -72,7 +72,7 @@ When I responded that this was a good idea if I were starting from scratch but n
 > Use [leaf bundles](https://gohugo.io/content-management/page-bundles/#leaf-bundles).
 > {{< highlight plaintext "linenos=false" >}}
  content/
- └─posts/
+ └─ posts/
     └─ 2022/
         └─ 07/
             ├── my-first-post/
@@ -115,13 +115,13 @@ The key is that, now, *every* post on the site contains a file called `title.png
 	   as the site's fallback image,
 	   such as is used by the home page
 	   and the HTML sitemap.)
-	   
+
 	   Now, we make a `with-else` loop
 	   that uses the `title.png` file
 	   **if** it exists. (If not, it
 	   does nothing and `$socImg` is
 	   still the fallback image.)
-	   
+
 	   Because `title.png` is a page resource,
 	   we use `.Page.Resources.GetMatch`.
 	 */}}
@@ -132,9 +132,9 @@ The key is that, now, *every* post on the site contains a file called `title.png
 	   (if we can), we overlay it across the
 	   site-wide gradient/logo image ---
 	   which, **because** it is site-wide,
-	   remains in `assets/images/`, so we 
+	   remains in `assets/images/`, so we
 	   obtain it with `resources.Get`.
-	 */}}	
+	 */}}
 		{{- $finalFilter := (images.Overlay $titleImg 0 0 ) -}}
 		{{- $socImg = resources.Get "images/social-OG-w-BW-logo_1024x512.jpg" -}}
 		{{- $socImg = $socImg | images.Filter $finalFilter -}}
@@ -143,7 +143,7 @@ The key is that, now, *every* post on the site contains a file called `title.png
 	 {{- end }}
 	 {{/*
 	   Finally, with `$socImg` set (either
-	   our desired gradient-with-the-title 
+	   our desired gradient-with-the-title
 	   or, if needed, the generic fallback),
 	   we use it as our social/OG image.
 	 */}}
