@@ -55,7 +55,11 @@ project   <-- The Hugo project folder
 
 . . . which hadn't been a problem --- until now.
 
-My initial plan was to name each title graphic based on the filename of its corresponding content file --- *e.g.*, a post file called `my-latest-post.md` would have a title graphic named something like `soc-OG-image-my-latest-post-1024x512.png`. Then, I'd write a loop that would, for each post, locate within `assets/images/` the title graphic that ended with the right filename.
+My initial plan was to name each title graphic based on the filename of its corresponding content file --- *e.g.*, a post file called `my-latest-post.md` would have a title graphic named something like:
+
+`soc-OG-image-my-latest-post-1024x512.png`
+
+Then, I'd write a loop that would, for each post, locate within `assets/images/` the title graphic that ended with the right filename.
 
 A few hours later, I had the title graphics done and in `assets/images/`. But, when I tried to build the code to assign each post a title graphic of its own, I ran into some trouble. After hours of fruitless research into the problem, I [asked for help on the Hugo Discourse](https://discourse.gohugo.io/t/using-printf-with-resources-get/39642); that link points to my detailed description of what was going wrong.
 
