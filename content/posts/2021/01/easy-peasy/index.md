@@ -64,7 +64,7 @@ Um, Microsoft FrontPage.
 
 Fair enough. That's why I'm coming to you, so you can set me straight.
 
-&ndash; *I'll try.* [Chewing sounds.] *So let's start with how you're gonna host the site --- *
+&ndash; *I'll try.* [Chewing sounds.] *So let's start with how you're gonna host the site ---*
 
 This is going to be one of those things you're gonna need to help me understand. Back then, I had nothing to do with that part.
 
