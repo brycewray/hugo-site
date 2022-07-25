@@ -1,18 +1,16 @@
 HTTP/2.0 200 OK
-Accept-Ranges: bytes
 Access-Contol-Allow-Origin: platform.twitter.com
 Access-Control-Allow-Methods: GET
 Cache-Control: must-revalidate, max-age=60
 Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
 Content-Type: application/json; charset=utf-8
-Date: Mon, 25 Jul 2022 20:53:31 GMT
+Date: Mon, 25 Jul 2022 21:05:30 GMT
 Etag: W/"3ae-qA/r/LYKAWQGwKo1gVr8I7GFZVI"
-Last-Modified: Mon, 25 Jul 2022 20:52:08 GMT
 Server: tsa_b
-Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=63
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=61
 Strict-Transport-Security: max-age=631138519
 Vary: Origin, Accept-Encoding
-X-Connection-Hash: 8ebb99075d4f924f3ffd648493dafa2046abd5a8022e92e723fc1530bf5604c6
+X-Connection-Hash: ad1f51af5ab22cb6d450e447ef0ca78956c6d4e48381659b270b0385dd4f0217
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Express

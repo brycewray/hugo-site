@@ -1,20 +1,22 @@
 HTTP/2.0 200 OK
+Accept-Ranges: bytes
 Access-Contol-Allow-Origin: platform.twitter.com
 Access-Control-Allow-Methods: GET
 Cache-Control: must-revalidate, max-age=60
 Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
 Content-Type: application/json; charset=utf-8
-Date: Mon, 25 Jul 2022 20:53:32 GMT
+Date: Mon, 25 Jul 2022 21:05:30 GMT
 Etag: W/"1aff-5bwoUJLHzreAwWEE1m9gCB6NiRY"
+Last-Modified: Mon, 25 Jul 2022 20:53:32 GMT
 Server: tsa_b
-Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=89
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=87
 Strict-Transport-Security: max-age=631138519
 Vary: Origin, Accept-Encoding
-X-Connection-Hash: 1f417674ed96a8b6ea79640077a30bdfdbedd396e247365506a0bfb9a1e7db81
+X-Connection-Hash: 6d5774be39a30bce11df2d04b02b949e36e08da2396087dc54e03b1e41fd87ab
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Express
-X-Response-Time: 65
+X-Response-Time: 64
 X-Tw-Cdn: VZ
 X-Tw-Cdn: VZ
 X-Xss-Protection: 0

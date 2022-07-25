@@ -3,21 +3,21 @@ Api-Version: 2.47
 Cache-Control: no-cache, no-store, max-age=0
 Content-Disposition: attachment; filename=json.json
 Content-Type: application/json; charset=utf-8
-Date: Mon, 25 Jul 2022 20:53:32 UTC
+Date: Mon, 25 Jul 2022 21:05:30 UTC
 Server: tsa_b
-Set-Cookie: guest_id_marketing=v1%3A165878241203858254; Max-Age=63072000; Expires=Wed, 24 Jul 2024 20:53:32 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-Set-Cookie: guest_id_ads=v1%3A165878241203858254; Max-Age=63072000; Expires=Wed, 24 Jul 2024 20:53:32 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-Set-Cookie: personalization_id="v1_gsNt6bwsG8xk7jaIqG2l6w=="; Max-Age=63072000; Expires=Wed, 24 Jul 2024 20:53:32 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-Set-Cookie: guest_id=v1%3A165878241203858254; Max-Age=63072000; Expires=Wed, 24 Jul 2024 20:53:32 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id_marketing=v1%3A165878313042945718; Max-Age=63072000; Expires=Wed, 24 Jul 2024 21:05:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id_ads=v1%3A165878313042945718; Max-Age=63072000; Expires=Wed, 24 Jul 2024 21:05:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: personalization_id="v1_HjtRliVHDN3w5z3uBXWX5g=="; Max-Age=63072000; Expires=Wed, 24 Jul 2024 21:05:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id=v1%3A165878313042945718; Max-Age=63072000; Expires=Wed, 24 Jul 2024 21:05:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
 Strict-Transport-Security: max-age=631138519
 X-Access-Level: read
-X-Connection-Hash: e2ec02ff14cf4643c3709c491d920f7a5c98da85239c5db57de6ca15c79354c0
+X-Connection-Hash: 9edd9932963da509a8c3f4459dbb33e744301d8c91f7c6d042f4d5f0dc469b87
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Rate-Limit-Limit: 300
-X-Rate-Limit-Remaining: 296
+X-Rate-Limit-Remaining: 293
 X-Rate-Limit-Reset: 1658783272
-X-Response-Time: 57
+X-Response-Time: 56
 X-Xss-Protection: 0
 
-{"data":[{"entities":{"mentions":[{"start":30,"end":42,"username":"BryceWrayTX","id":"2391572880"},{"start":60,"end":76,"username":"wafflingTaylors","id":"817863617181839360"}],"urls":[{"start":231,"end":254,"url":"https://t.co/GTtPejFT8N","expanded_url":"https://twitter.com/podcasterJay/status/1493660193653207040/photo/1","display_url":"pic.twitter.com/GTtPejFT8N","media_key":"16_1493660186841698315"}]},"source":"Twitter Web App","id":"1493660193653207040","attachments":{"media_keys":["16_1493660186841698315"]},"author_id":"1244885475372007424","text":"Thanks to some of the work by @BryceWrayTX, I just made the @wafflingTaylors website even faster and safer for its users\n(embedded Tweets which are generated at build time).\nI'm really grateful for their sharing of how to do this. https://t.co/GTtPejFT8N","created_at":"2022-02-15T18:55:15.000Z"}],"includes":{"media":[{"media_key":"16_1493660186841698315","type":"animated_gif","preview_image_url":"https://pbs.twimg.com/tweet_video_thumb/FLqMBrPX0AsT1BK.jpg"}],"users":[{"id":"1244885475372007424","profile_image_url":"https://pbs.twimg.com/profile_images/1366867879656841218/6h-u1pKT_normal.jpg","name":"podcasterJay","username":"podcasterJay"}]}}
+{"data":[{"source":"Twitter Web App","author_id":"1244885475372007424","created_at":"2022-02-15T18:55:15.000Z","id":"1493660193653207040","entities":{"mentions":[{"start":30,"end":42,"username":"BryceWrayTX","id":"2391572880"},{"start":60,"end":76,"username":"wafflingTaylors","id":"817863617181839360"}],"urls":[{"start":231,"end":254,"url":"https://t.co/GTtPejFT8N","expanded_url":"https://twitter.com/podcasterJay/status/1493660193653207040/photo/1","display_url":"pic.twitter.com/GTtPejFT8N","media_key":"16_1493660186841698315"}]},"attachments":{"media_keys":["16_1493660186841698315"]},"text":"Thanks to some of the work by @BryceWrayTX, I just made the @wafflingTaylors website even faster and safer for its users\n(embedded Tweets which are generated at build time).\nI'm really grateful for their sharing of how to do this. https://t.co/GTtPejFT8N"}],"includes":{"media":[{"preview_image_url":"https://pbs.twimg.com/tweet_video_thumb/FLqMBrPX0AsT1BK.jpg","type":"animated_gif","media_key":"16_1493660186841698315"}],"users":[{"id":"1244885475372007424","username":"podcasterJay","name":"podcasterJay","profile_image_url":"https://pbs.twimg.com/profile_images/1366867879656841218/6h-u1pKT_normal.jpg"}]}}
