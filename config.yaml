@@ -65,7 +65,10 @@ services:
 caches:
   getjson:
     dir: :resourceDir/json
-    maxAge: 10
+    maxAge: 10s
+  getresource:
+    dir: :resourceDir/_gen
+    maxAge: 10s
 
 minify:
   tdewolff:
