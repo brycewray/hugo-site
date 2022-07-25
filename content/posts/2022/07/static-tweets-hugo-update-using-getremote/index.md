@@ -13,7 +13,7 @@ As I noted in a footnote to a [recent post](/posts/2022/07/staying-hugo-post-thr
 
 I've written several times this year (most recently [last month](/posts/2022/06/static-tweets-hugo-update/)) about how to embed fully static tweets on one's site; and, where Hugo is concerned, `getJSON` is how I've done it and suggested that others do, too.
 
-Then, this morning, when I made my first visit of the day to the [Hugo Discourse](https://discourse.gohugo.io), I learned I'd likely need to make a change to that. 
+Then, this morning, when I made my first visit of the day to the [Hugo Discourse](https://discourse.gohugo.io), I learned I'd likely need to make a change to that.
 
 This realization hit me as I read a [comment](https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687/4) from Hugo's chief developer, Bjørn Erik Pedersen, in reply to someone who was having trouble with `getJSON`:
 
