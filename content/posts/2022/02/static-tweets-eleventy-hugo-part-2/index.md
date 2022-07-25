@@ -14,6 +14,8 @@ discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 **Update, 2022‑06‑07**: I have now [substantially improved](/posts/2022/06/static-tweets-hugo-update/) upon the original `stweet.html` [Hugo](https://gohugo.io) shortcode mentioned here and in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/), but you still may find valuable background information in what follows here.
 {.yellowBox}
 
+**Update, 2022-07-25**: After learning about the possibility of a future breaking change in the key function used in the Hugo `stweet.html` shortcode, I have [further revised it](/posts/2022/07/static-tweets-hugo-update-using-getremote/) beyond what I mentioned in the 2022-06-07 update, *above*.
+
 A few days ago, I issued [a post](/posts/2022/02/static-tweets-eleventy-hugo/) explaining how to embed fully static Twitter content in your [Eleventy](https://11ty.dev/)- or [Hugo](https://gohugo.io/)-based website. (If you haven’t yet read that post, please do so before proceeding, so you can better understand what follows below.)
 
 The Eleventy-based solution I offered gets Twitter data from Version 1.1 of the Twitter Developer API, while the Hugo-based solution accesses Twitter’s public syndication API. Although these two approaches work fine as of now, I hinted that each could run into trouble in the future, especially since (a.) Twitter is actively encouraging migration to its newer **Version 2** Developer API and (b.) the public syndication API is discomfitingly old by internet standards.
