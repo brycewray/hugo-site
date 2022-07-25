@@ -37,7 +37,7 @@ Now that I've done so, here's an ultra-simplified depiction of the main differen
 
 {{/* With `resources.GetRemote` ... */}}
 {{ with $resources.GetRemote $urlToGet }}
-	{{ $json := unmarshal .Content  }}
+	{{ $json := unmarshal .Content }}
 	{{ $text := $json.text | markdownify }}
 	{{/* [etc.] */}}
 {{ end }}
