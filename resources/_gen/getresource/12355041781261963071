@@ -4,17 +4,17 @@ Access-Control-Allow-Methods: GET
 Cache-Control: must-revalidate, max-age=60
 Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
 Content-Type: application/json; charset=utf-8
-Date: Mon, 25 Jul 2022 17:33:48 GMT
+Date: Mon, 25 Jul 2022 18:53:47 GMT
 Etag: W/"6dc-YOSQOTI+Gh5Yu8OCFZkrPJO6f9s"
 Server: tsa_b
-Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=80
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=75
 Strict-Transport-Security: max-age=631138519
 Vary: Origin, Accept-Encoding
-X-Connection-Hash: be01bf3ffc1d136b01b8c2ee7604149274796f541c192f34aadaa607314aeb6c
+X-Connection-Hash: 2725b81ee53d46a134468fc7d17344ffbac0bcf8f491a3799398ccd4886f2b3a
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Express
-X-Response-Time: 56
+X-Response-Time: 51
 X-Tw-Cdn: VZ
 X-Tw-Cdn: VZ
 X-Xss-Protection: 0
