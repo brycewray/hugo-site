@@ -1,5 +1,7 @@
 ---
-title: "Static tweets in Hugo: using resources.GetRemote"
+title: "Static tweets in Hugo: using resources.​GetRemote"
+# title has a zero-width-space character
+# - h/t https://www.somebits.com/weblog/tech/zero-width-space.html
 description: "A recommendation in the Hugo Discourse leads me to alter my shortcodes for embedding static tweets."
 author: Bryce Wray
 date: 2022-07-25T16:05:00-05:00
