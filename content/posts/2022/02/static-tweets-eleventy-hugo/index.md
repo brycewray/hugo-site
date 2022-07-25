@@ -15,6 +15,7 @@ discussionId: "2022-02-static-tweets-eleventy-hugo"
 {.yellowBox}
 
 **Update, 2022-07-25**: After learning about the possibility of a future breaking change in the key function used in the Hugo shortcode, I have [further revised it](/posts/2022/07/static-tweets-hugo-update-using-getremote/) beyond what I mentioned in the 2022-06-07 update, *above*.
+{.yellowBox}
 
 You know it’s important to respect, and protect, the privacy of your website’s visitors. However, serving them embedded social media content can complicate your good intentions. The good news is that my two favorite [static site generators](https://jamstack.org/generators/) (SSGs), [Eleventy](https://11ty.dev/) and [Hugo](https://gohugo.io/), will help you fix that.
 

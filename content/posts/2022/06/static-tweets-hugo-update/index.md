@@ -9,6 +9,9 @@ date: 2022-06-07T15:46:00-05:00
 **Further info, 2022‑06‑08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
 {.yellowBox}
 
+**Update, 2022-07-25**: After learning about the possibility of a future breaking change in the key function used in the Hugo `stweet.html` shortcode, I have [further revised it](/posts/2022/07/static-tweets-hugo-update-using-getremote/) (as well as [`stweetv2.html`](/posts/2022/02/static-tweets-eleventy-hugo/)) beyond what I mentioned in this post.
+{.yellowBox}
+
 <br />
 
 **Note**: You may find it useful to see my [three](/posts/2022/02/static-tweets-eleventy-hugo/) [earlier](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) [posts](/posts/2022/04/static-tweets-astro/) about how to perform fully static embeds of tweets, but that's not necessary.
