@@ -72,6 +72,9 @@ SSG-based blogs almost always have you add content mainly through use of [Markdo
 <ImageBox />
 ```
 
+**Update, 2022-07-26**: Astro has since moved to using [MDX](https://mdxjs.com/), rather than Markdown, for including components in one's markup. Be sure to check the [most current Astro documentation](https://docs.astro.build) for full details.
+{.yellowBox}
+
 **Comparison**: By default, Eleventy uses [Markdown-it](https://github.com/markdown-it/markdown-it); like Astro, Gatsby and Next.js use Remark; and Hugo uses [goldmark](https://github.com/yuin/goldmark). As for Astro's ability to mix components and Markdown on a page, probably the closest analogy to this is the use of [MDX](https://mdxjs.com/) files in Gatsby and Next.js; Eleventy and Hugo can't do this (however, see also “[Components](#components),” below, for some words on how Eleventy and Hugo use *shortcodes* which can provide some degree of code-in-Markdown functionality). Note that migrating an existing site to Astro from any of these other platforms probably will involve far more editing to your existing Markdown content than if you were migrating between two of the non-Astro platforms in this mix.
 
 ## Who's in charge?
