@@ -29,9 +29,7 @@
 				<a class="tweet-author-handle twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
 			</div>
 		</div>
-		<p class="tweet-body">
-			{{ $json.content | safeHTML }}
-		</p>
+		{{ $json.content | safeHTML }}
 		{{ with $json.media_attachments }}
 			{{ range $media_attachments := . }}
 				{{ if eq $media_attachments.type "image" }}

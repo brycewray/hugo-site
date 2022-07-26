@@ -6,7 +6,17 @@ $tc-corner-radius: 1em;
 $tc-padding: 1em;
 
 .tweet-card {
+	line-height: 1.35em; // for non-`p` results from $text
 	font-family: var.$twitter-sans-serif;
+	font-size: var.$stdsize;
+	@media screen and (min-width: var.$bkpt_lg) {
+		font-size: var.$minimalbig;
+	}
+	p {
+		margin-top: 0; //reset
+		margin-bottom: 1em;
+		line-height: 1.35em;
+	}
 	margin: 1.5rem auto;
 	padding: 1rem;
 	border: 2px solid var.$gray-1;
@@ -51,12 +61,7 @@ $tc-padding: 1em;
 }
 
 .tweet-body {
-	font-size: var.$stdsize;
-	line-height: 1.5em;
 	text-align: left !important;
-	@media screen and (min-width: var.$bkpt_lg) {
-		font-size: var.$minimalbig;
-	}
 }
 
 // ==== rounded image "attachment"
@@ -122,6 +127,7 @@ a > .card {
 	display: flex;
 	.tweet-profile {
 		margin-right: 0.5em;
+		margin-bottom: 1em;
 		flex-shrink: 0;
 		img {
 			border-radius: 9999px;
@@ -135,6 +141,7 @@ a > .card {
 		flex-grow: 1;
 		&-name {
 			font-weight: bold;
+			font-size: var.$stdsize;
 			color: var.$black;
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$white;
@@ -184,6 +191,7 @@ a > .card {
 [class^='tweet-img-grid'],
 .tweet-video-wrapper,
 .tweet-media-video {
+	margin-top: 0.5em;
 	border-radius: $tc-corner-radius;
 	overflow: hidden;
 	display: grid;
@@ -306,5 +314,19 @@ a > .card {
 				}
 			}
 		}
+	}
+}
+
+.tweet-reply-to {
+	margin-top: 0;
+	padding-top: 0;
+	line-height: 1.3em;
+	color: var.$gray-1;
+	font-size: var.$pokey;
+	@media screen and (prefers-color-scheme: dark) {
+		color: var.$gray-2-dark-mode;
+	}
+	.tweet-like-icon, .tweet-like-count {
+		display: none;
 	}
 }
