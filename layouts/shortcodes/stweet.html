@@ -15,10 +15,11 @@
 {{ $urlPre := "https://cdn.syndication.twimg.com/tweet?id="}}
 {{ $id := .Get 0 }}
 {{ $urlToGet := printf "%s%s" $urlPre $id }}
+{{ $curPage := .Page }}
 
 {{ with resources.GetRemote $urlToGet }}
   {{ $json := unmarshal .Content }}
-	{{ $text := $json.text | markdownify }}
+	{{ $text := $json.text | $curPage.RenderString }}
 
 	{{ if isset $json "entities" }}
 		{{ if isset $json.entities "user_mentions"  }}
@@ -79,7 +80,7 @@
 			</div>
 		</div>
 		<p class="tweet-body">
-			{{ $text | markdownify }}
+			{{ $text | $curPage.RenderString }}
 		</p>
 		{{ if isset $json "photos" }}
 			{{ $imageCount := len $json.photos }}
