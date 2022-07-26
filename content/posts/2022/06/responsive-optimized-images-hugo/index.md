@@ -81,11 +81,6 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 */}}
 {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 {{/*
-	Now we get the original image's information
-	via Hugo's built-in `imageConfig` function.
-*/}}
-{{- $imgCfg := imageConfig (printf "%s%s" "/assets/" $src) -}}
-{{/*
 	Then, we create a 600-pixel-wide JPG
 	of the image. This will serve as the
 	"fallback" image for that tiny percentage
@@ -135,7 +130,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 			srcset="
 			{{- with $respSizes -}}
 				{{- range $i, $e := . -}}
-					{{- if ge $imgCfg.Width . -}}
+					{{- if ge $src.Width . -}}
 						{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " webp") ).RelPermalink }} {{ . }}w
 					{{- end -}}
 				{{- end -}}
@@ -147,7 +142,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 			srcset="
 			{{- with $respSizes -}}
 				{{- range $i, $e := . -}}
-					{{- if ge $imgCfg.Width . -}}
+					{{- if ge $src.Width . -}}
 						{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " jpg") ).RelPermalink }} {{ . }}w
 					{{- end -}}
 				{{- end -}}
@@ -156,6 +151,8 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 		/>
 		<img class="{{ $imgClass }}"
 			src="{{ $actualImg.RelPermalink }}"
+			width="{{ $src.Width }}"
+			height="{{ $src.Height }}"
 			alt="{{ $alt }}"
 			loading="lazy"
 		/>
@@ -253,7 +250,10 @@ When I first used Hugo in 2018--2019, I knew little or nothing about its ability
 - The ability to produce WebP images, added only about a year ago in Hugo [0.83.0](https://github.com/gohugoio/hugo/releases/tag/v0.83.0). (Of course, unlike with Cloudinary, the format choice is something I have to specify in the code rather than something Cloudinary-generated based on browser capabilities. For now, my selections of WebP and JPG will do.)
 - The aforementioned global resources option, because --- again --- I like keeping images and text in separate places.
 
-I also like the fact that, unlike my Cloudinary-using `imgc` shortcode, `imgh` doesn't require manual entry of `width` and `height`, because Hugo's `imageConfig` function gets them automatically from each original image. (As you probably know, modern browsers use `width` and `height` to set the correct aspect ratio for images where styling doesn't otherwise handle it.)
+I also like the fact that, unlike my Cloudinary-using `imgc` shortcode, `imgh` doesn't require manual entry of `width` and `height`, because Hugo gets them automatically from each image `$src` as `$src.Width` and `$src.Height`, respectively. (As you probably know, modern browsers use `width` and `height` to set the correct aspect ratio for images where styling doesn't otherwise handle it.)
+
+**Update, 2022-07-26**: In the original version of this post, I used Hugo's [`imageConfig` function](https://gohugo.io/functions/images/#imageconfig) to get this information, only to learn later that it wasn't necessary (and, in fact, caused an issue or two when I made some other revisions in my own code not related to or included in the sample here) so I decided to drop it in favor of the already-there `.Width` and `.Height`. Simpler is better.
+{.yellowBox}
 
 ## Closing observations and suggestions
 
