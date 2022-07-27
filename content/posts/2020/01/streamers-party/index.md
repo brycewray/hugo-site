@@ -1,6 +1,6 @@
 ---
 title: "Streamers’ party"
-description: "I finally jump off the sinking ship that is cable television — while also regaling you with tales of yesteryear."
+description: "I finally jump off the sinking ship that is cable television — while also regaling you with tales of yesteryear."
 author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
 lastmod: 2022-02-12T11:45:00-06:00
