@@ -13,7 +13,7 @@ Here are a few odds and ends --- some a tad acerbic, some not so much. And I swe
 
 .&nbsp;.&nbsp;.&nbsp;but there may be some hint of that herein, for which I apologize ahead of time.
 
-Since I began this with a linked YouTube video, that brings me to the first topic.
+Since I began this with content from YouTube, that brings me to the first topic.
 
 ## The ubiquitous YouTube intro
 
