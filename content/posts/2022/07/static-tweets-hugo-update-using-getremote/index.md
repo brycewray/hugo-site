@@ -37,7 +37,7 @@ Now that I've done so, here's an ultra-simplified depiction of the main differen
 
 {{/* If using `resources.GetRemote` ... */}}
 {{ $currentPage := .Page }}
-{{ with $resources.GetRemote $urlToGet }}
+{{ with resources.GetRemote $urlToGet }}
 	{{ $json := unmarshal .Content }}
 	{{ $text := $json.text | $currentPage.RenderString }}
 	{{/* [etc.] */}}
