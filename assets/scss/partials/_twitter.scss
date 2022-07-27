@@ -103,6 +103,7 @@ a > .card {
 .card {
 	overflow: hidden;
 	// background-color: yellow;
+	margin-top: 1em;
 	border-radius: 12px;
 	border: 1px solid var.$gray-2;
 	@media screen and (prefers-color-scheme: dark) {
