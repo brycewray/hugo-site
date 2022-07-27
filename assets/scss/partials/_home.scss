@@ -66,23 +66,25 @@
 	}
 	&-Title {
 		font-size: clamp(1.75rem, 1.25rem + 1vw, 2.25rem);
-		font-family: var.$serif;
+		// font-family: var.$serif;
 		letter-spacing: -0.025em;
 		padding-top: 0.5em;
 		line-height: normal;
 	}
 	&-Description {
 		margin-top: 0.5em;
-		font-family: var.$serif;
+		// font-family: var.$serif;
 		font-style: italic;
 		font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
 	}
 	&-Dates {
 		margin-top: 0.5em;
 		margin-bottom: 1em;
+		font-family: var.$sans-serif;
 		font-size: clamp(0.875rem, 0.75rem + 1vw, 1.125rem);
 	}
 	&-Finish {
+		font-family: var.$sans-serif;
 		margin-top: 3em;
 	}
 }

@@ -12,17 +12,17 @@ discussionId: "2022-06-site-week-2022-06-25"
 
 Here are my posts from this past week . . .
 
-- <span class="sansSerif"><strong class="pokey">2022-06-19</strong>&nbsp;&nbsp;[**Using iCloud Mail with a custom domain: following up**](/posts/2022/06/using-icloud-mail-custom-domain-following-up/)</span>\
-What happened when I moved my main email address to iCloud Mail.
+- <span class="sansSerif"><strong class="pokey">2022-06-19</strong></span>&nbsp;&nbsp;[Using iCloud Mail with a custom domain: following up](/posts/2022/06/using-icloud-mail-custom-domain-following-up/)\
+*What happened when I moved my main email address to iCloud Mail.*
 
-- <span class="sansSerif"><strong class="pokey">2022-06-20</strong>&nbsp;&nbsp;[**A goodbye to analytics**](/posts/2022/06/goodbye-analytics/)</span>\
-As an unintended side effect of CTCAJW Mode, this site bids a fond farewell to The Numbers.
+- <span class="sansSerif"><strong class="pokey">2022-06-20</strong></span>&nbsp;&nbsp;[A goodbye to analytics](/posts/2022/06/goodbye-analytics/)\
+*As an unintended side effect of CTCAJW Mode, this site bids a fond farewell to The Numbers.*
 
-- <span class="sansSerif"><strong class="pokey">2022-06-21</strong>&nbsp;&nbsp;[**Major updates to my favorite writing apps**](/posts/2022/06/major-updates-my-favorite-writing-apps/)</span>\
-iA Writer 6 and Ulysses 27 arrive, bearing features their adherents had long requested.
+- <span class="sansSerif"><strong class="pokey">2022-06-21</strong></span>&nbsp;&nbsp;[Major updates to my favorite writing apps](/posts/2022/06/major-updates-my-favorite-writing-apps/)\
+*iA Writer 6 and Ulysses 27 arrive, bearing features their adherents had long requested.*
 
-- <span class="sansSerif"><strong class="pokey">2022-06-22</strong>&nbsp;&nbsp;[**Ulysses 27: a correction**](/posts/2022/06/ulysses-27-correction/)</span>\
-Haste makes waste, and it also makes for a bad summary, so here are some corrections to what I wrote yesterday about Ulysses 27.
+- <span class="sansSerif"><strong class="pokey">2022-06-22</strong></span>&nbsp;&nbsp;[Ulysses 27: a correction](/posts/2022/06/ulysses-27-correction/)\
+*Haste makes waste, and it also makes for a bad summary, so here are some corrections to what I wrote yesterday about Ulysses 27.*
 
 **Plug**: Want to know whenever I issue a post? **Follow the feed** (choose [RSS](/index.xml) or [JSON](/index.json)).
 {.yellowBox}

@@ -36,22 +36,22 @@ Now, let's see what spewed forth from here in the last week.
 
 ---
 
-- <span class="sansSerif"><strong class="pokey">2022-05-21</strong>&nbsp;&nbsp;[**Simplify, simplify, maybe for real this time**](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/)</span>\
-The site enters CTCAJW Mode.
-- <span class="sansSerif"><strong class="pokey">2022-05-22</strong>&nbsp;&nbsp;[**Using Dart Sass with Hugo: the nitty-gritty**](/posts/2022/05/using-dart-sass-hugo-nitty-gritty/)</span>\
-We go under the hood with the installation process for the Embedded Dart Sass binary.
-- <span class="sansSerif"><strong class="pokey">2022-05-23</strong>&nbsp;&nbsp;[**Checking out the IndieWeb again**](/posts/2022/05/checking-out-indieweb-again/)</span>\
-While not entirely sure I'm holding my mouth right, I'm giving webmentions another try.
-- <span class="sansSerif"><strong class="pokey">2022-05-23</strong>&nbsp;&nbsp;[**Webmentions yes, JavaScript no**](/posts/2022/05/webmentions-yes-javascript-no/)</span>\
-I wondered why a Hugo site needed JavaScript to go IndieWebbin'. I decided it didn't.
-- <span class="sansSerif"><strong class="pokey">2022-05-24</strong>&nbsp;&nbsp;[**Using Dart Sass with Hugo: back to Node**](/posts/2022/05/using-dart-sass-hugo-back-to-node/)</span>\
-The GitHub Actions approach falls short, at least with our chosen host, so the site is now using the Node Sass package.
-- <span class="sansSerif"><strong class="pokey">2022-05-25</strong>&nbsp;&nbsp;[**Webmentions yes, JavaScript no: the code**](/posts/2022/05/webmentions-yes-javascript-no-the-code/)</span>\
-A walkthrough of this site's all-Hugo, no-JS implementation of webmentions.
-- <span class="sansSerif"><strong class="pokey">2022-05-26</strong>&nbsp;&nbsp;[**GHAs on CFP glitch**](/posts/2022/05/ghas-on-cfp-glitch/)</span>\
-What I found out about my deploy-to-site GitHub Action and Cloudflare Pages.
-- <span class="sansSerif"><strong class="pokey">2022-05-27</strong>&nbsp;&nbsp;[**Cloudflare dev docs and the switch from Gatsby back to Hugo**](/posts/2022/05/cloudflare-dev-docs-hugo-gatsby/)</span>\
-A few choice paragraphs from a blog post I saw today.
+- <span class="sansSerif"><strong class="pokey">2022-05-21</strong></span>&nbsp;&nbsp;[Simplify, simplify, maybe for real this time](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/)\
+*The site enters CTCAJW Mode.*
+- <span class="sansSerif"><strong class="pokey">2022-05-22</strong></span>&nbsp;&nbsp;[Using Dart Sass with Hugo: the nitty-gritty](/posts/2022/05/using-dart-sass-hugo-nitty-gritty/)\
+*We go under the hood with the installation process for the Embedded Dart Sass binary.*
+- <span class="sansSerif"><strong class="pokey">2022-05-23</strong></span>&nbsp;&nbsp;[Checking out the IndieWeb again](/posts/2022/05/checking-out-indieweb-again/)\
+*While not entirely sure I'm holding my mouth right, I'm giving webmentions another try.*
+- <span class="sansSerif"><strong class="pokey">2022-05-23</strong></span>&nbsp;&nbsp;[Webmentions yes, JavaScript no](/posts/2022/05/webmentions-yes-javascript-no/)\
+*I wondered why a Hugo site needed JavaScript to go IndieWebbin'. I decided it didn't.*
+- <span class="sansSerif"><strong class="pokey">2022-05-24</strong></span>&nbsp;&nbsp;[Using Dart Sass with Hugo: back to Node](/posts/2022/05/using-dart-sass-hugo-back-to-node/)\
+*The GitHub Actions approach falls short, at least with our chosen host, so the site is now using the Node Sass package.*
+- <span class="sansSerif"><strong class="pokey">2022-05-25</strong></span>&nbsp;&nbsp;[Webmentions yes, JavaScript no: the code](/posts/2022/05/webmentions-yes-javascript-no-the-code/)\
+*A walkthrough of this site's all-Hugo, no-JS implementation of webmentions.*
+- <span class="sansSerif"><strong class="pokey">2022-05-26</strong></span>&nbsp;&nbsp;[GHAs on CFP glitch](/posts/2022/05/ghas-on-cfp-glitch/)\
+*What I found out about my deploy-to-site GitHub Action and Cloudflare Pages.*
+- <span class="sansSerif"><strong class="pokey">2022-05-27</strong></span>&nbsp;&nbsp;[Cloudflare dev docs and the switch from Gatsby back to Hugo](/posts/2022/05/cloudflare-dev-docs-hugo-gatsby/)\
+*A few choice paragraphs from a blog post I saw today.*
 
 **Plug**: Want to know whenever I issue a post? **Follow the feed** (choose [RSS](/index.xml) or [JSON](/index.json)).
 {.yellowBox}

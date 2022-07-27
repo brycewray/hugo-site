@@ -12,14 +12,14 @@ date: 2022-07-02T08:11:00-05:00
 
 Here are my posts from this past week . . .
 
-- <span class="sansSerif"><strong class="pokey">2022-06-29</strong>&nbsp;&nbsp;[**Responsive and optimized images with Hugo**](/posts/2022/06/responsive-optimized-images-hugo/)</span>\
-How to take advantage of the amazingly capable image processing built into this SSG.
+- <span class="sansSerif"><strong class="pokey">2022-06-29</strong></span>&nbsp;&nbsp;[Responsive and optimized images with Hugo](/posts/2022/06/responsive-optimized-images-hugo/)\
+*How to take advantage of the amazingly capable image processing built into this SSG.*
 
-- <span class="sansSerif"><strong class="pokey">2022-06-29</strong>&nbsp;&nbsp;[**HugoConf: a reminder**](/posts/2022/06/hugoconf-reminder/)</span>\
-The time is nearing for this free event, but you can still get in on the fun.
+- <span class="sansSerif"><strong class="pokey">2022-06-29</strong></span>&nbsp;&nbsp;[HugoConf: a reminder](/posts/2022/06/hugoconf-reminder/)\
+*The time is nearing for this free event, but you can still get in on the fun.*
 
-- <span class="sansSerif"><strong class="pokey">2022-06-30</strong>&nbsp;&nbsp;[**The accessibility argument for tabs over spaces**](/posts/2022/06/accessibility-argument-tabs-spaces/)</span>\
-I changed my position on a developers’ Holy War — because it was the right thing to do.
+- <span class="sansSerif"><strong class="pokey">2022-06-30</strong></span>&nbsp;&nbsp;[The accessibility argument for tabs over spaces](/posts/2022/06/accessibility-argument-tabs-spaces/)\
+*I changed my position on a developers’ Holy War — because it was the right thing to do.*
 
 **Plug**: Want to know whenever I issue a post? **Follow the feed** (choose [RSS](/index.xml) or [JSON](/index.json)).
 {.yellowBox}
