@@ -27,10 +27,13 @@ themes/twjit-thoreau/assets/css/index.css
 .hugo_build.lock
 
 start.sh
+logstart.sh
 build.sh
 testbuild.sh
 push.sh
 wm*.sh
+
+hugo_site-log.txt
 
 tweetcurl*.json
 toot*.json
