@@ -6,7 +6,7 @@
 	- https://github.com/KyleMit/eleventy-plugin-embed-tweet
 	- https://github.com/astro-community/astro-embed/blob/main/packages/astro-embed-twitter/Tweet.astro
 	... and, as of 2022-07-25...
-	- https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687/4
+	- https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687
 	=======
 */}}
 
@@ -17,6 +17,7 @@
 {{ $urlPre := "https://cdn.syndication.twimg.com/tweet?id="}}
 {{ $id := .Get 0 }}
 {{ $urlToGet := printf "%s%s" $urlPre $id }}
+{{ $currentPage := .Page }}{{/* h/t to DFD on that one */}}
 
 {{ with resources.GetRemote $urlToGet }}
   {{ $json := unmarshal .Content }}
@@ -80,7 +81,7 @@
 					{{ range $RT_names := $json.entities.user_mentions }}
 						{{ $text = replace $text (print "<a href='https://twitter.com/" $RT_names.screen_name "' rel='noopener' class='twitterExt'>@" $RT_names.screen_name "</a>") "" }}
 						{{ $RT_text = print $RT_text " " (print "<a href='https://twitter.com/" $RT_names.screen_name "' rel='noopener' class='twitterExt'>@" $RT_names.screen_name "</a>") }}
-						{{ $RT_text = $RT_text | $.Page.RenderString }}
+						{{ $RT_text = $RT_text | $currentPage.RenderString }}
 					{{ end }}
 				{{ end }}
 			{{ end }}
@@ -99,7 +100,7 @@
 		*/}}
 	{{ end }}
 
-	{{ $text = $text | $.Page.RenderString }}
+	{{ $text = $text | $currentPage.RenderString }}
 
 	<blockquote class="tweet-card" cite="{{ $tweetLink }}">
 		<div class="tweet-header">
@@ -116,7 +117,7 @@
 				{{ $RT_text }}
 			</p>
 		{{ end }}
-		{{ $text | $.Page.RenderString }}
+		{{ $text | $currentPage.RenderString }}
 		{{/*
 			Doesn't need a `p` tag because it's
 			in the .RenderString, and thus makes
@@ -184,7 +185,7 @@
 					{{ $quoted_tweet := .}}
 					<div class="tweet-quoted-tweet">
 						<p class="pokey tweet-quoted-tweet-head"><img class="tweet-quoted-tweet-profile-image" src="{{ $quoted_tweet.user.profile_image_url_https }}" />&nbsp;<strong>{{ $quoted_tweet.user.name }}</strong> @{{ $quoted_tweet.user.screen_name }} &bull; <a href="https://twitter.com/{{ $quoted_tweet.user.screen_name }}/status/{{ $quoted_tweet.id_str }}" class="tweet-date twitterExt" rel="noopener">{{ dateFormat "January 2, 2006" $quoted_tweet.created_at }}</a> <span class="legal">(UTC)</span></p>
-						<p>{{ $.Page.RenderString $QT_text }}</p>
+						<p>{{ $currentPage.RenderString $QT_text }}</p>
 					</div>
 				{{ end }}
 			{{ end }}
