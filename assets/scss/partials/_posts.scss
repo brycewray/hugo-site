@@ -63,12 +63,14 @@
 	&-Title {
 		padding: 0;
 		font-size: clamp(1.25rem, 0.625rem + 1.5vw, 2.25rem);
+		font-family: var.$serif;
 		line-height: 1.25em;
 		letter-spacing: -0.025em;
 	}
 	&-Description {
-		// font-family: var.$serif;
 		font-size: clamp(1.1rem, 0.5rem + 1vw, 1.3rem);
+		font-family: var.$serif;
+		font-style: italic;
 		margin-top: 0.5em;
 		margin-bottom: 0.25em;
 	}
