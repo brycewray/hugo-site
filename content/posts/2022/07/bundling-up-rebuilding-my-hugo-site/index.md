@@ -19,7 +19,7 @@ Not long ago, I began using Hugo's [`Text` filter](https://gohugo.io/functions/i
 
 [^imgNotStatic]: I'm using a screen capture, rather than doing my usual [static embed of the actual tweet](/posts/2022/06/static-tweets-hugo-update/), because that post's social/OG image has probably changed since then (I say, "probably," because it depends on Twitter's sometimes-slow-to-update image cache) and I want you to see how it originally looked.
 
-{{< imgh src="tweet-1549447287625207809-from-2022-07-19-1233CDT_1190x1494.png" alt="Screen capture of tweet ID 1549447287625207809" >}}
+{{< imgh src="tweet-1549447287625207809-from-2022-07-19-1233CDT_1782x2256.png" alt="Screen capture of tweet ID 1549447287625207809" >}}
 
 The next day, I got a response from [@gaetawoo](https://twitter.com/gaetawoo) --- not about my post, but about that social/OG image:
 
