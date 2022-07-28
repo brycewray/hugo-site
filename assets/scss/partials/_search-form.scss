@@ -2,9 +2,37 @@
 
 // === for search form
 
-.searchDiv, .searchDivPF {
+.searchDiv, .searchDivPF, .searchBtnDiv {
 	font-family: var.$sans-serif;
 	margin: 2em auto;
+}
+
+.searchBtnDiv{
+	text-align: center;
+	button {
+		// display: block;
+		margin: 0 auto;
+		color: white;
+		border-radius: 9px;
+		padding: 3px 12px;
+		background-color: var.$blue;
+		border: 1px solid var.$blue;
+		@media screen and (prefers-color-scheme: dark) {
+			background-color: var.$blueLight;
+			color: var.$black;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		&:focus, &:active, &:hover {
+			border: 1px solid var.$darkblue;
+			background-color: var.$darkblue;
+			@media screen and (prefers-color-scheme: dark) {
+				border: 1px solid var.$blueLightBtn;
+				background-color: var.$blueLightBtn;
+			}
+		}
+	}
 }
 
 .searchDivPF {

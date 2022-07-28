@@ -21,7 +21,7 @@ params:
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
   Host: "CFP" # choices are "CFP" and "Vercel"
   SiteLive: true # Boolean --- used for adapting robots.txt as needed
-  SearchTitle: "Site search"
+  SearchTitle: "Search the site"
 
 frontmatter:
   date:
