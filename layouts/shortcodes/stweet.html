@@ -22,6 +22,22 @@
 {{ with resources.GetRemote $urlToGet }}
   {{ $json := unmarshal .Content }}
 	{{ $text := $json.text }}
+	{{ $textBefore := $text }}{{/* pre-HTML-subs */}}
+
+	{{/*  {{ if isset $json "in_reply_to_screen_name" }}
+		{{ if isset $json "entities" }}
+			{{ if isset $json.entities "user_mentions" }}
+				{{ with $json.entities.user_mentions }}
+					{{ $RT_text = "Replying to"}}
+					{{ range $RT_names := $json.entities.user_mentions }}
+						{{ $text = replace $text (print "@" $RT_names.screen_name " ") "" }}
+						{{ $RT_text = print $RT_text " " (print "<a href='https://twitter.com/" $RT_names.screen_name "' rel='noopener' class='twitterExt'>@" $RT_names.screen_name "</a>") }}
+						{{ $RT_text = $RT_text | $currentPage.RenderString }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}  */}}
 
 	{{ if isset $json "entities" }}
 		{{ if isset $json.entities "user_mentions"  }}
@@ -69,25 +85,6 @@
 		{{ end }}
 	{{ end }}
 
-	{{ if isset $json "in_reply_to_screen_name" }}
-		{{ if isset $json "entities" }}
-			{{ if isset $json.entities "user_mentions" }}
-				{{ with $json.entities.user_mentions }}
-				{{/*
-					the `with` takes care of blanks here,
-					such as in self-replies/threads
-				*/}}
-					{{ $RT_text = "Replying to"}}
-					{{ range $RT_names := $json.entities.user_mentions }}
-						{{ $text = replace $text (print "<a href='https://twitter.com/" $RT_names.screen_name "' rel='noopener' class='twitterExt'>@" $RT_names.screen_name "</a>") "" }}
-						{{ $RT_text = print $RT_text " " (print "<a href='https://twitter.com/" $RT_names.screen_name "' rel='noopener' class='twitterExt'>@" $RT_names.screen_name "</a>") }}
-						{{ $RT_text = $RT_text | $currentPage.RenderString }}
-					{{ end }}
-				{{ end }}
-			{{ end }}
-		{{ end }}
-	{{ end }}
-
 	{{ $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id }}
 
 	{{ if eq (substr $text 0 1) " " }}
@@ -99,9 +96,9 @@
 			needed for markdownify, for that matter).
 		*/}}
 	{{ end }}
-
 	{{ $text = $text | $currentPage.RenderString }}
 
+	<!-- p class="pokey">{{ $textBefore }}</ !-->
 	<blockquote class="tweet-card" cite="{{ $tweetLink }}">
 		<div class="tweet-header">
 			<a class="tweet-profile twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">
