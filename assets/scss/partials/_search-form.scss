@@ -13,8 +13,9 @@
 		// display: block;
 		margin: 0 auto;
 		color: white;
-		border-radius: 9px;
-		padding: 3px 12px;
+		width: 15em;
+		border-radius: 6px;
+		padding: 0.5em 0.25em;
 		background-color: var.$blue;
 		border: 1px solid var.$blue;
 		@media screen and (prefers-color-scheme: dark) {
