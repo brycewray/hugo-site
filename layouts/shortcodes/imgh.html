@@ -38,7 +38,7 @@
 
 {{- if eq $simple "false" -}}
 {{- if eq .Site.Params.Host "CFP" -}}
-	<style>
+	<style data-pagefind-ignore>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
 	</style>
 	<div class="relative imgB-{{ $imgBd5 }} bg-center" data-pagefind-ignore>
