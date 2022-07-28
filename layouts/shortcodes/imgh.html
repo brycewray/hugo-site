@@ -43,10 +43,10 @@
 	</style>
 	<div class="relative imgB-{{ $imgBd5 }} bg-center">
 {{- else -}}
-	<div class="relative bg-center" style="{{ $CFPstyle | safeCSS }}">
+	<div class="relative bg-center" style="{{ $CFPstyle | safeCSS }}" data-pagefind-ignore>
 {{- end -}}
 {{- end -}}
-	<picture>
+	<picture data-pagefind-ignore>
 		<source type="image/webp" srcset="
 		{{- with $respSizes -}}
 			{{- range $i, $e := . -}}
@@ -63,7 +63,7 @@
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
+		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 	</picture>
 </div>
 

@@ -39,8 +39,8 @@
 
 {{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
 
-<div class="relative">
-	<picture>
+<div class="relative" data-pagefind-ignore>
+	<picture data-pagefind-ignore>
 		<source type="image/webp" srcset="
 		{{- with $respSizes -}}
 			{{- range $i, $e := . -}}
@@ -57,7 +57,7 @@
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" loading="lazy" />
+		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 	</picture>
 </div>
 
