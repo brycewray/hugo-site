@@ -41,7 +41,7 @@
 	<style>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
 	</style>
-	<div class="relative imgB-{{ $imgBd5 }} bg-center">
+	<div class="relative imgB-{{ $imgBd5 }} bg-center" data-pagefind-ignore>
 {{- else -}}
 	<div class="relative bg-center" style="{{ $CFPstyle | safeCSS }}" data-pagefind-ignore>
 {{- end -}}
