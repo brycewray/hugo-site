@@ -453,6 +453,7 @@ circle.JSON {
 }
 
 path.GitHub,
+path.NextPrev,
 circle.MastodonCircle,
 path.MastodonM,
 circle.Twitter,
@@ -465,6 +466,7 @@ circle.JSON {
 }
 
 a:hover path.GitHub,
+a:hover path.NextPrev,
 a:hover circle.MastodonCircle,
 a:hover path.MastodonM,
 a:hover circle.Twitter,
@@ -474,6 +476,10 @@ a:hover circle.JSON {
 	@media screen and (prefers-color-scheme: dark) {
 		fill: var.$blueFirst;
 	}
+}
+
+path.FirstLast {
+	fill: var.$grayArrow;
 }
 
 path.MastodonBody,
