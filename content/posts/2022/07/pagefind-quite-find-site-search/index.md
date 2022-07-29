@@ -61,13 +61,13 @@ If you're not using a GHA or other, similar scripting approach, you still should
 
 ```bash
 # With Astro
-npx pagefind --source "dist" && npm run build
+npm run build && npx pagefind --source "dist"
 
 # With Eleventy
-npx pagefind --source "_site" && npm run build
+npm run build && npx pagefind --source "_site"
 
 # With Hugo
-npx pagefind --source "public" && hugo
+hugo && npx pagefind --source "public"
 ```
 
 ## Fast, fast finds
