@@ -14,12 +14,12 @@
 		margin: 0 auto;
 		color: white;
 		width: 15em;
-		border-radius: 6px;
 		padding: 0.5em 0.25em;
 		background-color: var.$blue;
 		border: 1px solid var.$blue;
+		border-radius: var.$btn_radius;
 		@media screen and (prefers-color-scheme: dark) {
-			background-color: var.$blueLight;
+			background-color: var.$code-color-blueLight-dark-mode;
 			color: var.$black;
 		}
 		&:hover {
