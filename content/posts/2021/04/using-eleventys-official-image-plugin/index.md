@@ -7,7 +7,7 @@ lastmod: 2022-02-04T21:08:00-06:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 ---
 
-**Recommendation**: While I very much appreciate your stopping by to read this, I **strongly** recommend that, instead, you check out [Aleksandr Hovhannisyan](https://github.com/AleksandrHovhannisyan)'s **far** superior article, "[Lazily Loading Images with the 11ty Image Plugin](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-lazy-loading/)."
+**Recommendation**: While I very much appreciate your stopping by to read this, I **strongly** recommend that, instead, you check out [Aleksandr Hovhannisyan](https://github.com/AleksandrHovhannisyan)'s **far** superior article, "[Optimizing Images with the 11ty Image Plugin](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/)."
 {.yellowBox}
 
 {{% disclaimer %}}
