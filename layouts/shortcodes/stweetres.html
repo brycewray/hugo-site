@@ -18,10 +18,12 @@
   {{- $json := unmarshal .Content -}}
 	{{- $result := $json.html -}}
 	{{- $result = replace $result "</a></blockquote>" "</a> <span class='legal'>(UTC)</span></blockquote>" -}}
+	{{- $result = replace $result "!<a" "! <a" -}}
+	{{- $result = replace $result ".<a" ". <a" }}
 	{{- $result = $result | safeHTML -}}
-	{{- /*  {{- $raw -}}  */ -}}
 	{{- $result -}}
-	{{- /*  {{- $json -}}  */ -}}
+	{{/*  {{- $raw -}}  */}}
+	{{/*  {{- $json -}}  */}}
 {{- else -}}
 	<p class="ctr legal red">Tweet not found:<br />
 		user = {{ $user }}<br />
