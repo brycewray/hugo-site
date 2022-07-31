@@ -47,4 +47,4 @@ So what could be wrong with this picture? Well, anyone who had *already* transit
 
 The stability of Astro, like any other SSG (especially a JavaScript-based one), is only as good as the stability of its many third-party dependencies; and some of those are still a little shaky at this writing. That said, where the RC's readiness for becoming the *real* v.1.0 is concerned, the team is pretty near the finish line on this count --- and, in my view, the new MDX compatibility is a surprisingly big reason why. The switch was a gutsy move to make at all, much less at this point in the run-up to v.1.0, but also one that needed to be made.
 
-To the good folks at The Astro Technology Company: I think you just threw one whale of a Hail Mary as the fourth-quarter clock was ticking down to zero. Here's hoping v.1.0 is a winning touchdown.
+To the good folks at The Astro Technology Company: I think you just threw one whale of a "Hail Mary" as the fourth-quarter clock was ticking down to zero. Here's hoping v.1.0 is a winning touchdown.
