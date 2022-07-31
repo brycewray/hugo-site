@@ -59,11 +59,14 @@
 			{{ range $url := $json.entities.urls}}
 				{{ $text = replace $text $url.url (printf "<a href='%s' rel='noopener' class='twitterExt'>%s</a>" $url.url $url.display_url) }}
 			{{ end }}
+			{{/* next will delete text from message incl. URLs, so... :-( */}}
+			{{/*
 			{{ if isset $json "card" }}
 				{{ range $url := $json.entities.urls }}
 					{{ $text = replace $text $url.display_url "" }}
 				{{ end }}
 			{{ end }}
+			*/}}
 		{{ end }}
 	{{ end }}
 
