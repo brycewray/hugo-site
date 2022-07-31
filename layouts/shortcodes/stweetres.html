@@ -1,0 +1,30 @@
+{{- /*
+	=======
+	Based on...
+	- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/twitter.html
+	- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/twitter_simple.html
+	- https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/get-statuses-oembed
+	=======
+*/ -}}
+
+{{- $user := .Get "user" -}}
+{{- $id := .Get "id" -}}
+{{- $url := printf "https://twitter.com/%v/status/%v" $user $id -}}
+{{- $query := querify "url" $url "dnt" true "omit_script" true -}}
+{{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
+
+{{- with resources.GetRemote $request -}}
+	{{- $raw := .Content -}}
+  {{- $json := unmarshal .Content -}}
+	{{- $result := $json.html -}}
+	{{- $result = replace $result "</a></blockquote>" "</a> <span class='legal'>(UTC)</span></blockquote>" -}}
+	{{- $result = $result | safeHTML -}}
+	{{- /*  {{- $raw -}}  */ -}}
+	{{- $result -}}
+	{{- /*  {{- $json -}}  */ -}}
+{{- else -}}
+	<p class="ctr legal red">Tweet not found:<br />
+		user = {{ $user }}<br />
+		id = {{ $id }}
+	</p>
+{{- end -}}
