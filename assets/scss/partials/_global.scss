@@ -100,6 +100,7 @@ h5, .h5, h6, .h6 {
 a, a:focus, a:hover, a:active {
 	text-decoration: none;
 	border-bottom: 1px solid var.$blue;
+	padding-bottom: 0.025em;
 	// text-decoration-skip-ink: auto;
 }
 
