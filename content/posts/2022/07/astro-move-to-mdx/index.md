@@ -7,6 +7,9 @@ date: 2022-07-30T21:42:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/astro-and-the-move-to-mdx-4bd0).
+{.yellowBox}
+
 Grizzled old guy that I am, I saw [the original "Hail Mary" play](https://en.wikipedia.org/wiki/Hail_Mary_pass) when it happened[^Vikings] back in 1975, so I like to think I know a good "Hail Mary" when I see one. In fact, I may have done just that.
 
 [^Vikings]: Sorry, Minnesota Vikings fans, but I'm *not* interested in your complaints about offensive pass interference on the play. It was a long, long time ago. Get over it. (Also: in the famous film sequence of Drew Pearson as he crossed the goal line with the winning score, that was an *orange* thrown onto the field by a fan, not a penalty flag thrown by a referee. Truth hurts; I know.)
