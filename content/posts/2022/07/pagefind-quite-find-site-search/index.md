@@ -79,7 +79,7 @@ hugo && npx pagefind -y --source "public"
 
 After reading this post, Hugo expert [Régis Philibert](https://github.com/regisphilibert) looked through the [Pagefind documentation](https://pagefind.app/docs/) and came up with a method that allows you to use Pagefind in *Hugo's* dev mode. This lets you retain the various advantages of the Hugo dev server, such as live updates as you edit material. For future reference (in case I don't continue to use the [giscus](https://giscus.app) commenting setup, in which he suggested this), I'm recording Philibert's suggestion here.
 
-**Note**: Before proceeding, add `static/pagefind` to your Hugo project's `.gitignore` file.
+**Note**: Before proceeding, add `static/_pagefind` to your Hugo project's `.gitignore` file.
 {.yellowBox}
 
 1. Generate a build by entering `hugo` in your terminal app.
