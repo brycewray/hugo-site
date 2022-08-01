@@ -10,6 +10,7 @@
 {{- $user := .Get "user" -}}
 {{- $id := .Get "id" -}}
 {{- $url := printf "https://twitter.com/%v/status/%v" $user $id -}}
+{{- $urlSynd := printf "https://cdn.syndication.twimg.com/tweet?id=%v" $id -}}
 {{- $query := querify "url" $url "dnt" true "omit_script" true -}}
 {{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
 
@@ -17,6 +18,11 @@
 	{{- $raw := .Content -}}
   {{- $json := unmarshal .Content -}}
 	{{- $result := $json.html -}}
+
+	{{- $jsonSynd := resources.GetRemote $urlSynd -}}
+	{{- $jsonSynd = $jsonSynd | transform.Unmarshal -}}
+
+	{{- $result = $result | replaceRE `<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">` (printf `<blockquote class='twitter-tweet' data-dnt='true'><div class='tweet-header'><a class='tweet-profile twitterExt' href='https://twitter.com/%v' rel='noopener'><img src='%v' alt='Twitter avatar for %v' loading='lazy' /></a><div class='tweet-author'><a class='tweet-author-name twitterExt' href='https://twitter.com/%v'>%v</a><a class='tweet-author-handle twitterExt' href='https://twitter.com/%v' rel='noopener'>@%v</a></div></div><p lang='en' dir='ltr'>` $jsonSynd.user.screen_name $jsonSynd.user.profile_image_url_https $jsonSynd.user.screen_name $jsonSynd.user.screen_name $jsonSynd.user.name $jsonSynd.user.screen_name $jsonSynd.user.screen_name) -}}
 
 	{{- $result = replace $result "</a></blockquote>" "</a> <span class='legal'>(UTC)</span></blockquote>" -}}
 	{{- $result = replace $result "!<a" "! <a" -}}
@@ -36,10 +42,11 @@
 	{{- $result = replace $result ">https://t.co/99QL57yqH8" ">brycewray.com" -}}
 	{{- $result = replace $result ">https://t.co/cBGolS1bct" ">hugoconf.io" -}}
 
+	{{- $result = $result | replaceRE `</p>.*` (printf `<div class='tweet-footer'><a href='https://twitter.com/%v/status/%v' rel='noopener'>%v</a>&nbsp;<span class='legal'>(UTC)</span></div></blockquote>` $jsonSynd.user_screen_name $jsonSynd.id_str (dateFormat "3:04 PM • January 2, 2006" $jsonSynd.created_at)) }}
+
 	{{- $result = $result | safeHTML -}}
 	{{- $result -}}
-	{{/*  {{- $raw -}}  */}}
-	{{/*  {{- $json -}}  */}}
+	{{/*  {{- $jsonSynd -}}  */}}
 {{- else -}}
 	<p class="ctr legal red">Tweet not found:<br />
 		url = {{ $url }}
