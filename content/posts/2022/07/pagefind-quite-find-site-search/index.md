@@ -21,10 +21,12 @@ One key to using Pagefind, whether in dev mode or on your host, is that it has t
 
 As of now, Pagefind works only on macOS or Linux (the latter obviously covers just about any web hosting vendor, much less the [Jamstack](https://jamstack.org)-savvy vendors); there's not yet a Windows version.
 
-You can run Pagefind either by using the following command, which automatically installs the latest release:
+You can run Pagefind either by using the following command, which automatically[^Yflag] installs the latest release:
+
+[^Yflag]: The `-y` flag gives a pre-emptive "Yes" answer to Pagefind's resulting prompt which asks whether it's allowed to install itself.
 
 ```bash
-npx pagefind --source "public" --serve
+npx -y pagefind --source "public" --serve
 ```
 
 . . . or by downloading its binary and putting it in your system `PATH`.[^PFbinary] If you do the latter, your command would be simply:
@@ -41,7 +43,7 @@ For my site, I've created a `buildpf.sh` shell script for use with [Hugo](https:
 #!/bin/sh
 rm -rf public
 hugo --gc --minify
-npx pagefind --source "public" --serve
+npx pagefind -y --source "public" --serve
 ```
 
 This way, all I have to do is enter `./buildpf.sh` in my chosen terminal app and, within a few seconds, Pagefind is showing me a local dev view of my site, *with* search working, at `http://localhost:1414`.
@@ -52,7 +54,7 @@ Since I'm [using a GitHub Action](/posts/2022/05/using-dart-sass-hugo-github-act
 
 ```yaml
       - name: Run Pagefind
-        run: npx pagefind --source "public"
+        run: npx -y pagefind --source "public"
 ```
 
 (Obviously, you wouldn't use Pagefind's `--serve` flag here!)
@@ -61,14 +63,51 @@ If you're not using a GHA or other, similar scripting approach, you still should
 
 ```bash
 # With Astro
-npm run build && npx pagefind --source "dist"
+npm run build && npx -y pagefind --source "dist"
 
 # With Eleventy
-npm run build && npx pagefind --source "_site"
+npm run build && npx -y pagefind --source "_site"
 
 # With Hugo
-hugo && npx pagefind --source "public"
+hugo && npx pagefind -y --source "public"
 ```
+<br />
+
+----
+
+## Update, 2021-07-31
+
+After reading this post, Hugo expert [Régis Philibert](https://github.com/regisphilibert) looked through the [Pagefind documentation](https://pagefind.app/docs/) and came up with a method that allows you to use Pagefind in *Hugo's* dev mode. This lets you retain the various advantages of the Hugo dev server, such as live updates as you edit material. For future reference (in case I don't continue to use the [giscus](https://giscus.app) commenting setup, in which he suggested this), I'm recording Philibert's suggestion here.
+
+**Note**: Before proceeding, add `static/pagefind` to your Hugo project's `.gitignore` file.
+{.yellowBox}
+
+1. Generate a build by entering `hugo` in your terminal app.
+2. From the terminal, run:\
+{{< highlight bash "linenos=false" >}}
+npx -y pagefind --source public --bundle-dir ../static/_pagefind
+{{< /highlight >}}\
+The [`--bundle-dir` flag](https://pagefind.app/docs/config-options/#bundle-directory) will tell Pagefind to store its "crawl" results in, and source them from, a `static/_pagefind` directory rather than the default.
+3. Run `hugo server` and, lo and behold, you're running the Hugo dev server *and* you have Pagefind search working, just as in production.
+
+Of course, you should leave the *production* instructions as previously noted; this is for dev purposes only.
+
+Here's a shell script version, `startpf.sh`:
+
+```bash
+#!/bin/sh
+hugo
+npx -y pagefind --source public --bundle-dir ../static/_pagefind
+hugo server
+```
+
+<br />
+
+Thanks to Philibert for coming up for this --- and [Rodrigo Alcaraz de la Osa](https://github.com/rodrigoalcarazdelaosa) for suggesting that I add it to this post!
+
+*Now, back to our regularly scheduled post, still in progress . . .*
+
+----
 
 ## Fast, fast finds
 
