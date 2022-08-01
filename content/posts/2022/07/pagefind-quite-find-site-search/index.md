@@ -86,7 +86,7 @@ After reading this post, Hugo expert [Régis Philibert](https://github.com/regis
 2. From the terminal, run:\
 {{< highlight bash "linenos=false" >}}
 npx -y pagefind --source public --bundle-dir ../static/_pagefind
-{{< /highlight >}}\
+{{< /highlight >}}
 The [`--bundle-dir` flag](https://pagefind.app/docs/config-options/#bundle-directory) will tell Pagefind to store its "crawl" results in, and source them from, a `static/_pagefind` directory rather than the default.
 3. Run `hugo server` and, lo and behold, you're running the Hugo dev server *and* you have Pagefind search working, just as in production.
 
