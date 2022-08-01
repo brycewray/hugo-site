@@ -69,7 +69,7 @@ jobs:
       - name: Run Pagefind
         run: npx -y pagefind --source "public"
       - name: Publish to CFP
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CFP_API_TOKEN }}
           accountID: ${{ secrets.CF_ACCOUNT_ID }}
