@@ -17,16 +17,31 @@
 	{{- $raw := .Content -}}
   {{- $json := unmarshal .Content -}}
 	{{- $result := $json.html -}}
+
 	{{- $result = replace $result "</a></blockquote>" "</a> <span class='legal'>(UTC)</span></blockquote>" -}}
 	{{- $result = replace $result "!<a" "! <a" -}}
 	{{- $result = replace $result ".<a" ". <a" }}
+	{{- $result = replace $result ">https://t.co/QPSmjqXwft" ">brycewray.com" -}}
+	{{- $result = replace $result ">https://t.co/Oeoaacz8z8" ">brycewray.com/posts/2019/02/…" -}}
+	{{- $result = replace $result ">https://t.co/ErdQPfeAps" ">brycewray.com/posts/2019/06/…" -}}
+	{{- $result = replace $result ">https://t.co/RXBMHpqW3e" ">netlify.com/products/analytics/" -}}
+	{{- $result = replace $result "I’ll" "I’ll" -}}
+	{{- $result = replace $result "😄<a" "😄 <a" -}}
+	{{- $result = replace $result ">https://t.co/wB96VIVOLn" ">buff.ly/2CGRCRK" -}}
+	{{- $result = replace $result ">https://t.co/x6y4ksDwrt" ">m.youtube.com/watch?v=ab8ReP…" -}}
+	{{- $result = replace $result ">https://t.co/jsuCgadKmE" ">11ty.dev/docs/plugins/i…" -}}
+	{{- $result = replace $result ":<a" ": <a" }}
+	{{- $result = replace $result ">https://t.co/M2dJYnyAhc" ">11ty.dev/docs/languages…" -}}
+	{{- $result = replace $result ">https://t.co/99QL57gPPA" ">brycewray.com" -}}
+	{{- $result = replace $result ">https://t.co/99QL57yqH8" ">brycewray.com" -}}
+	{{- $result = replace $result ">https://t.co/cBGolS1bct" ">hugoconf.io" -}}
+
 	{{- $result = $result | safeHTML -}}
 	{{- $result -}}
 	{{/*  {{- $raw -}}  */}}
 	{{/*  {{- $json -}}  */}}
 {{- else -}}
 	<p class="ctr legal red">Tweet not found:<br />
-		user = {{ $user }}<br />
-		id = {{ $id }}
+		url = {{ $url }}
 	</p>
 {{- end -}}
