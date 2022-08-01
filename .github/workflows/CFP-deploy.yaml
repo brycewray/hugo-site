@@ -67,7 +67,7 @@ jobs:
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Run Pagefind
-        run: npx pagefind --source "public"
+        run: npx -y pagefind --source "public"
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1.0.0
         with:
