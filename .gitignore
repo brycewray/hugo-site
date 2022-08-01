@@ -26,7 +26,7 @@ themes/twjit-hero/assets/css/index.css
 themes/twjit-thoreau/assets/css/index.css
 .hugo_build.lock
 
-start.sh
+start*.sh
 logstart.sh
 build*.sh
 testbuild.sh
