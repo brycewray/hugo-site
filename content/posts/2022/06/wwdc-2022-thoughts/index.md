@@ -9,7 +9,7 @@ date: 2022-06-06T14:49:00-05:00
 
 As I joked (sort of) earlier today on Twitter and Mastodon:
 
-{{< stweet "1533830520030765057" >}}
+{{< stweet user="BryceWrayTX" id="1533830520030765057" >}}
 
 So, now, here are this Apple fanboy's initial takes on what that event revealed.
 

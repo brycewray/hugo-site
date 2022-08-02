@@ -16,7 +16,7 @@ discussionId: "2022-05-checking-out-indieweb-again"
 
 As I tweeted earlier:
 
-{{< stweet "1528446412169416704" >}}
+{{< stweet user="BryceWrayTX" id="1528446412169416704" >}}
 
 I even wrote a five-part **series** on incorporating [webmentions](https://indieweb.org/Webmention) on one's website back in April, 2020 (*e.g.*, [Part I](/posts/2020/04/webmentions-three-ssgs-1/)), but a few months later --- perhaps due to some uncertainty about how well [IndieWeb](https://indieweb.org) stuff was jibing with online privacy concerns --- dropped them from *this* site. So, when I decided earlier today to take another go at it, I had to dig back and find all the code from back then. (Thank Git for source-control history!)
 

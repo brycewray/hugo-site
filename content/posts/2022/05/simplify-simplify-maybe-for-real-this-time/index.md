@@ -51,7 +51,7 @@ One more thing: because CTCAJW Mode means I may be more frequently publishing po
 **Update, 2022‑05‑25**: Concerning that last paragraph, I've now pinned the following tweet/[toot](https://docs.joinmastodon.org/user/posting/) to my profiles on Twitter and the two [Mastodon](https://joinmastodon.org) instances where I’m currently active:
 {.yellowBox}
 
-{{< stweet "1529514823658110977" >}}
+{{< stweet user="BryceWrayTX" id="1529514823658110977" >}}
 
 ## It's not about SSG FOMO
 

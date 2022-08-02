@@ -36,7 +36,7 @@ Then, the very next morning, a Twitter feed I regularly follow (I even have it c
 
 Fast-forward to this past Saturday afternoon — a month later to the day — when I tweeted:
 
-{{< stweet "1517957419447508992" >}}
+{{< stweet user="BryceWrayTX" id="1517957419447508992" >}}
 
 . . . and shortly thereafter, added *another* update to “Simplify, simplify (again)”:
 

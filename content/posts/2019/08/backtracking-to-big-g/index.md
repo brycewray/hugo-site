@@ -11,27 +11,27 @@ discussionId: "2019-08-backtracking-to-big-g"
 
 "Initially, the defendant made the following assertions:"
 
-{{< stweet "1140023324988313601" >}}
+{{< stweet user="BryceWrayTX" id="1140023324988313601" >}}
 
 ".&nbsp;.&nbsp;. and .&nbsp;.&nbsp;."
 
-{{< stweet "1142915419784863745" >}}
+{{< stweet user="BryceWrayTX" id="1142915419784863745" >}}
 
 ".&nbsp;.&nbsp;. followed a few weeks later by .&nbsp;.&nbsp;."
 
-{{< stweet "1150108543208579072" >}}
+{{< stweet user="BryceWrayTX" id="1150108543208579072" >}}
 
 "Unfortunately, your honor, this seemingly noble and well-intentioned course of action was derailed yesterday, as shown here&nbsp;.&nbsp;.&nbsp;."
 
-{{< stweet "1165327910078681088" >}}
+{{< stweet user="BryceWrayTX" id="1165327910078681088" >}}
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-{{< stweet "1165328656392232960" >}}
+{{< stweet user="BryceWrayTX" id="1165328656392232960" >}}
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-{{< stweet "1165357162551545857" >}}
+{{< stweet user="BryceWrayTX" id="1165357162551545857" >}}
 
 “--- and, as the defendant surmised in this most recent exhibit before the court, he did indeed end up stopping the usage of the tracking-free alternative, thus compounding his crime by no longer supporting it at the same time he was returning the Evil G Empire's tracking code to its former access to his site and its visitors.
 

@@ -198,7 +198,7 @@ Although I have previously acknowledged Tailwind's strengths and am all too awar
 
 Tailwind adherents say this isn't a problem because, once you recognize that you're re-using certain Tailwind classes too frequently, you then simply extract them to reusable components and then `@apply` them, [as the Tailwind documentation suggests](https://tailwindcss.com/docs/extracting-components).  I agree that this is a workable strategy, but my own experience suggests it can get out of hand quickly, even in a small project. YMMV, of course. By the way: please note what Tailwind creator Adam Wathan famously tweeted about `@apply` . . .
 
-{{< stweet "1226511611592085504" >}}
+{{< stweet user="adamwathan" id="1226511611592085504" >}}
 
 Once you've extracted a good quantity of components as I suspect happens more often than not, you'll run into the next issue that Tailwind fans say it solves . . .
 

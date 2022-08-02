@@ -94,7 +94,7 @@ I have now learned *why* this didn't work with the V2 API. I found the following
 
 However, thanks in particular to [Chris Swithinbank](https://twitter.com/swithinbank), I have added the appropriate code to my `stweet` shortcode from the [first](/posts/2022/02/static-tweets-eleventy-hugo/) of those posts, so you can see that particular tweet as [@podcasterJay](https://twitter.com/podcasterJay) originally intended it:
 
-{{< stweet "1493660193653207040" >}}
+{{< stweet user="podcasterJay" id="1493660193653207040" >}}
 
 (If the continuing animation drives you nuts, just click or tap on the image.)
 

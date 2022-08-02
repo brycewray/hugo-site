@@ -208,7 +208,7 @@ It doesn't build a site as quickly as Hugo --- nothing beats Hugo on that score 
 
 While we're on the subject of speed: while I was working on this post, I saw this Leatherman tweet:
 
-{{< stweet "1169998370041208832" >}}
+{{< stweet user="zachleat" id="1169998370041208832" >}}
 
 React. Hmm. Wonder whom he might be zinging there? Good job, sir. Given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.
 

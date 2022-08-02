@@ -29,7 +29,7 @@ What's the difference? Before these latest changes, here's how `stweet` rendered
 
 And that works, to be sure. But now, `stweet` can do it this way:
 
-{{< stweet "1534248828559400960" >}}
+{{< stweet user="CloudCannon" id="1534248828559400960" >}}
 
 So, with that, friends and neighbors, here's the code.
 
