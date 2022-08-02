@@ -1,6 +1,6 @@
 ---
 title: "Static tweets in Hugo: a tale of two sources"
-description: "It turns out that I must access multiple Twitter APIs to get everything needed for an embedded tweet whose appearance won't annoy me too badly."
+description: "It turns out that I must access multiple Twitter APIs to get everything needed for an embedded tweet whose appearance won’t annoy me too badly."
 author: Bryce Wray
 date: 2022-08-02T15:35:00-05:00
 #draft: true
