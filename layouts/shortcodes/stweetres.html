@@ -42,7 +42,7 @@
 	{{- $result = replace $result ">https://t.co/99QL57yqH8" ">brycewray.com" -}}
 	{{- $result = replace $result ">https://t.co/cBGolS1bct" ">hugoconf.io" -}}
 
-	{{- $result = $result | replaceRE `</p>.*` (printf `<div class='tweet-footer'><a href='https://twitter.com/%v/status/%v' rel='noopener'>%v</a>&nbsp;<span class='legal'>(UTC)</span></div></blockquote>` $jsonSynd.user_screen_name $jsonSynd.id_str (dateFormat "3:04 PM • January 2, 2006" $jsonSynd.created_at)) }}
+	{{- $result = $result | replaceRE `</p>.*` (printf `<div class='tweet-footer'><a href='https://twitter.com/%v/status/%v' rel='noopener'>%v</a>&nbsp;<span class='legal'>(UTC)</span></div></blockquote>` $jsonSynd.user.screen_name $jsonSynd.id_str (dateFormat "3:04 PM • January 2, 2006" $jsonSynd.created_at)) }}
 
 	{{- $result = $result | safeHTML -}}
 	{{- $result -}}

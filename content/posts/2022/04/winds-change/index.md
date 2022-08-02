@@ -38,7 +38,6 @@ Fast-forward to this past Saturday afternoon — a month later to the day — wh
 
 {{< stweet "1517957419447508992" >}}
 
-
 . . . and shortly thereafter, added *another* update to “Simplify, simplify (again)”:
 
 > Well . . . “the foreseeable future” lasted only a month. After several days of serious experimentation with Astro, I moved the site there today. Will elaborate on all of this in a future post.
