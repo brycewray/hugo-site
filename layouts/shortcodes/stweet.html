@@ -34,20 +34,11 @@
 	{{ $jsonOembed = $jsonOembed | transform.Unmarshal }}
 	{{ $jsonOHTML := $jsonOembed.html }}
 
-	{{/*  {{ if isset $json "in_reply_to_screen_name" }}
-		{{ if isset $json "entities" }}
-			{{ if isset $json.entities "user_mentions" }}
-				{{ with $json.entities.user_mentions }}
-					{{ $RT_text = "Replying to"}}
-					{{ range $RT_names := $json.entities.user_mentions }}
-						{{ $text = replace $text (print "@" $RT_names.screen_name " ") "" }}
-						{{ $RT_text = print $RT_text " " (print "<a href='https://twitter.com/" $RT_names.screen_name "' rel='noopener' class='twitterExt'>@" $RT_names.screen_name "</a>") }}
-						{{ $RT_text = $RT_text | $currentPage.RenderString }}
-					{{ end }}
-				{{ end }}
-			{{ end }}
-		{{ end }}
-	{{ end }}  */}}
+	{{ if isset $json "in_reply_to_screen_name" }}
+		{{ $RT_text = "Replying to"}}
+		{{ $RT_text = print $RT_text " " (print "<a href='https://twitter.com/" $json.in_reply_to_screen_name "' rel='noopener' class='twitterExt'>@" $json.in_reply_to_screen_name "</a>") }}
+		{{ $RT_text = $RT_text | $currentPage.RenderString }}
+	{{ end }}
 
 	{{ if isset $json "entities" }}
 		{{ if isset $json.entities "user_mentions"  }}
