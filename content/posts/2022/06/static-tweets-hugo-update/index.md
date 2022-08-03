@@ -9,7 +9,7 @@ date: 2022-06-07T15:46:00-05:00
 **Further info, 2022‑06‑08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
 {.yellowBox}
 
-**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
+**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
 **However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
 Please use the [site search page](/search/) to find related posts.
 {.yellowBox}

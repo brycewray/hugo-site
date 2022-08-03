@@ -11,7 +11,7 @@ discussionId: "2022-04-static-tweets-astro"
 **Update, 2022‑04‑12**: The [Astro](https://astro.build) team has come up with an [`astro-embed` project](https://github.com/astro-community/astro-embed) which will accomplish everything described herein and much more, so I encourage you to use it rather than the component described herein. That said, perhaps this post will still be of some educational value, especially for those new to Astro.
 {.yellowBox}
 
-**Update from the future in general (!)**: Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo, so that code and what is shown below for Astro aren't necessarily related.\
+**Update from the future in general (!)**: Any displayed tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo, so that code and what is shown below for Astro aren't necessarily related.\
 Please use the [site search page](/search/) to find related posts.
 {.yellowBox}
 
