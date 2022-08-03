@@ -101,14 +101,20 @@
 	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/RXBMHpqW3e" ">netlify.com/products/analytics/" -}}
 	{{- $jsonOHTML = replace $jsonOHTML "I’ll" "I’ll" -}}
 	{{- $jsonOHTML = replace $jsonOHTML "😄<a" "😄 <a" -}}
-	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/wB96VIVOLn" ">buff.ly/2CGRCRK" -}}
-	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/x6y4ksDwrt" ">m.youtube.com/watch?v=ab8ReP…" -}}
-	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/jsuCgadKmE" ">11ty.dev/docs/plugins/i…" -}}
+	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/wB96VIVOLn" ">brycewray.com" -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/x6y4ksDwrt">https://t.co/x6y4ksDwrt</a>` `` -}}
+	{{- $jsonOHTML = replace $jsonOHTML "users<br>(embedded" "users (embedded" -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/tryfucEzv5">pic.twitter.com/tryfucEzv5</a>` `` -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/Dit0BhDVLg">pic.twitter.com/Dit0BhDVLg</a>` `` -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/jsuCgadKmE">https://t.co/jsuCgadKmE</a>` `` -}}
 	{{- $jsonOHTML = replace $jsonOHTML ":<a" ": <a" -}}
 	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/M2dJYnyAhc" ">11ty.dev/docs/languages…" -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/GTtPejFT8N">pic.twitter.com/GTtPejFT8N</a>` `` -}}
 	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/99QL57gPPA" ">brycewray.com" -}}
-	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/99QL57yqH8" ">brycewray.com" -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/99QL57yqH8">https://t.co/99QL57yqH8</a>` `` -}}
 	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/cBGolS1bct" ">hugoconf.io" -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/6vZvoEoAZU">https://t.co/6vZvoEoAZU</a>` `` -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/Ode2sKCtpG">https://t.co/Ode2sKCtpG</a>` `` -}}
 	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/LOmOSrG28e" ">github.com/giscus/giscus/..." -}}
 
 	{{- $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id -}}
