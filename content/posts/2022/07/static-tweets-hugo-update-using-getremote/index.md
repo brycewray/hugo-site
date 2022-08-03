@@ -9,6 +9,11 @@ date: 2022-07-25T16:05:00-05:00
 #initTextEditor: **iA Writer**
 ---
 
+**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
+**However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
+Please use the [site search page](/search/) to find related posts.
+{.yellowBox}
+
 As I noted in a footnote to a [recent post](/posts/2022/07/staying-hugo-post-three-years-later/), I **really** like using [Hugo](https://gohugo.io)'s [`getJSON` function](https://gohugo.io/templates/data-templates/#get-remote-data) for grabbing data from a remote API, especially as compared to alternatives for most of Hugo's JavaScript-based competitors in the world of [static site generators](https://jamstack.org/generators) (SSGs):
 
 > . . . I've used both [[node-fetch](https://github.com/node-fetch/node-fetch) and [axios](https://axios-http.com/)] in both [Eleventy](https://11ty.dev) and [Astro](https://astro.build), and sometimes they've worked okay for me but other times they've constituted a major pain. (Async and I aren't exactly the best of friends.) I have yet to run into similar agonies with `getJSON`, which I've found far more forgiving than either node-fetch or axios.
@@ -48,5 +53,3 @@ Now that I've done so, here's an ultra-simplified depiction of the main differen
 {.yellowBox}
 
 [^whyVar]: But could you use simply `.Page`, rather than having to create `$currentPage` as an equivalent of `.Page`? Usually, yes. However, the latter is safer. As Dickinson explained in the linked Discourse thread, "I tend to use the [`$currentPage`] method because I am frequently in a partial from a shortcode and other contexts where `$.` doesn't work as expected, and it is easier for me to . . . use something that works consistently . . ."
-
-*(Also: while I left the code as-is in my [three](/posts/2022/02/static-tweets-eleventy-hugo/) [earlier](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) [articles](/posts/2022/06/static-tweets-hugo-update/) about using Hugo shortcodes for static tweet embeds, I did add updates about, and links to, this post.)*

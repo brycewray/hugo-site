@@ -7,6 +7,11 @@ date: 2022-08-02T15:35:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
+**However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
+Please use the [site search page](/search/) to find related posts.
+{.yellowBox}
+
 Although I am by no means mechanically adept, I am tremendously curious about how things work. It's a major reason why, over the decades, I managed to eke out a decent living through various computer-enabled endeavors for which my 1970s college education obviously couldn't have prepared me. I was highly interested in these kinds of job functions, so I taught myself to do them.
 
 In multiple posts this year, I've covered the subject of embedding fully static tweets in one's website. My original reason for getting into this was an attempt to free my visitors from the grabby tracking that accompanies normal Twitter embeds. However, since then, the "how it works" aspect has taken hold, and I've continued to dork around with the accompanying code --- primarily in the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) --- in attempts to make the resulting embeds look and work better:

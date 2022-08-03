@@ -74,6 +74,10 @@ I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appe
 
 ## Learning from a friendly hat-tip
 
+**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
+Please use the [site search page](/search/) to find related posts.
+{.yellowBox}
+
 This showed up in my Twitter feed a few days ago, referring to those aforementioned [recent](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about embedding static versions of tweets:
 
 {{< stweetv2 "1493660193653207040" >}}

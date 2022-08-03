@@ -8,13 +8,9 @@ lastmod: 2022-04-12T09:05:00-05:00
 discussionId: "2022-02-static-tweets-eleventy-hugo"
 ---
 
-**Update, 2022‑04‑12**: Based on [work](https://github.com/astro-community/astro-embed) by the [Astro](https://astro.build) team, I have enhanced the shortcode described within (and the accompanying styling) so it also can handle animations embedded in tweets. Unfortunately, this isn't possible with the one described in the [follow-up](/posts/2022/02/static-tweets-eleventy-hugo-part-2) to this post, as I explain in an update therein.
-{.yellowBox}
-
-**Update, 2022‑06‑07**: I have now [substantially improved](/posts/2022/06/static-tweets-hugo-update/) upon the [Hugo](https://gohugo.io) shortcode described in this post, but you still may find valuable background information in what follows here.
-{.yellowBox}
-
-**Update, 2022-07-25**: After learning about the possibility of a future breaking change in the key function used in the Hugo shortcode, I have [further revised it](/posts/2022/07/static-tweets-hugo-update-using-getremote/) beyond what I mentioned in the 2022-06-07 update, *above*.
+**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
+**However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
+Please use the [site search page](/search/) to find related posts.
 {.yellowBox}
 
 You know it’s important to respect, and protect, the privacy of your website’s visitors. However, serving them embedded social media content can complicate your good intentions. The good news is that my two favorite [static site generators](https://jamstack.org/generators/) (SSGs), [Eleventy](https://11ty.dev/) and [Hugo](https://gohugo.io/), will help you fix that.

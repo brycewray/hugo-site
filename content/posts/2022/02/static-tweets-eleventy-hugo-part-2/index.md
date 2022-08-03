@@ -8,13 +8,9 @@ lastmod: 2022-04-12T09:11:00-05:00
 discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 ---
 
-**Update, 2022‑04‑12**: Based on [work](https://github.com/astro-community/astro-embed) by the [Astro](https://astro.build) team, I have enhanced the shortcode described in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/) (and the accompanying styling) so it also can handle animations embedded in tweets. Unfortunately, this isn't possible with the one described in **this** post, as I explain in an update below.
-{.yellowBox}
-
-**Update, 2022‑06‑07**: I have now [substantially improved](/posts/2022/06/static-tweets-hugo-update/) upon the original `stweet.html` [Hugo](https://gohugo.io) shortcode mentioned here and in the [previous post](/posts/2022/02/static-tweets-eleventy-hugo/), but you still may find valuable background information in what follows here.
-{.yellowBox}
-
-**Update, 2022-07-25**: After learning about the possibility of a future breaking change in the key function used in the Hugo `stweet.html` shortcode, I have [further revised it](/posts/2022/07/static-tweets-hugo-update-using-getremote/) beyond what I mentioned in the 2022-06-07 update, *above*. I also revised the `stweetv2.html` shortcode described below, although the code in this post reflects the original version.
+**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
+**However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
+Please use the [site search page](/search/) to find related posts.
 {.yellowBox}
 
 A few days ago, I issued [a post](/posts/2022/02/static-tweets-eleventy-hugo/) explaining how to embed fully static Twitter content in your [Eleventy](https://11ty.dev/)- or [Hugo](https://gohugo.io/)-based website. (If you haven’t yet read that post, please do so before proceeding, so you can better understand what follows below.)

@@ -11,6 +11,10 @@ discussionId: "2022-04-static-tweets-astro"
 **Update, 2022‑04‑12**: The [Astro](https://astro.build) team has come up with an [`astro-embed` project](https://github.com/astro-community/astro-embed) which will accomplish everything described herein and much more, so I encourage you to use it rather than the component described herein. That said, perhaps this post will still be of some educational value, especially for those new to Astro.
 {.yellowBox}
 
+**Update from the future in general (!)**: Any rendered tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo, so that code and what is shown below for Astro aren't necessarily related.\
+Please use the [site search page](/search/) to find related posts.
+{.yellowBox}
+
 Perhaps you saw one or both of my [earlier](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about how to embed fully static (thus, **not** privacy-violating) tweets in the [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) static site generators (SSGs). If not, you may want to read at least the [first one](/posts/2022/02/static-tweets-eleventy-hugo/) for background because, in this post, I offer a similar --- albeit briefer --- piece about how to do this with the **[Astro](https://astro.build)** SSG.
 
 At least for now, Astro seems to be the darling of a considerable portion of the web development world. Better yet for my purposes and yours: after months of alpha-level breaking changes out the wazoo, it's now stabilized considerably. In fact, a few days ago, the Astro team [announced](https://astro.build/blog/astro-1-beta-release/) the first beta release of v.1.0.
