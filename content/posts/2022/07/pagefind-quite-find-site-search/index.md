@@ -19,7 +19,7 @@ While I don't know whether the [Algolia](https://algolia.com) folks are exactly 
 
 One key to using Pagefind, whether in dev mode or on your host, is that it has to run **after** your site has been really built so there will be real HTML files for Pagefind to "crawl." This is an important distinction because, when a typical SSG spins up a site in development mode, it keeps everything in RAM and **not** as real HTML files on disk. For the latter, which Pagefind must have, you first must do an actual build to disk. Pagefind has its own dev server for use in such cases, so you can preview how it'll look before you push to your host (more on that in a bit).
 
-As of now, Pagefind works only on macOS or Linux (the latter obviously covers just about any web hosting vendor, much less the [Jamstack](https://jamstack.org)-savvy vendors); there's not yet a Windows version.
+As of now, Pagefind works only on macOS or Linux (the latter obviously covers just about any web hosting vendor, much less the [Jamstack](https://jamstack.org)-savvy vendors); there's not yet a Windows version. (**Update, 2022-08-04**: [Now](https://github.com/CloudCannon/pagefind/releases/tag/v0.6.0), there is a Windows version, too.)
 
 You can run Pagefind either by using the following command, which automatically[^Yflag] installs the latest release:
 
