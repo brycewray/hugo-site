@@ -24,7 +24,7 @@ Then, a few months later, I took an online accessibility course[^UofTor] for my 
 
 Since then, I've made sure that my links are underlined[^borders] and contrast sufficiently with whichever background they have at the time. While the former was fairly easy to achieve, I've taken pains to style **all** my site's text with sufficient contrast, in [both light and dark viewing modes](/posts/2019/09/thinking-dark-thoughts/). That applies to even the syntax highlighting in code segments. (The [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/) is a page I've used *often*.)
 
-[^borders]: Technically, they're not *really* underlined. Instead, because HTML underlining often screw up the descenders on characters like *p* and *g*, I style my site's links to have **borders** underneath. The visual effect is the same.
+[^borders]: Technically, they're not *really* underlined. Instead, because HTML underlining often screws up the descenders on characters like *p* and *g*, I style my site's links to have **borders** underneath. The visual effect is the same.
 
 In fact, it's because of those code segments that I'm writing this.
 
