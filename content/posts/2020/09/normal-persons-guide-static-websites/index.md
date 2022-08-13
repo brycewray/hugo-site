@@ -86,6 +86,9 @@ This is because Go's *templating* --- that's how you make a single layout handle
 
 With that one qualification, I highly recommend Hugo as the easiest SSG for a normal person to learn and use.[^2]
 
+**Update, 2022-07-19**: More than a year-and-a-half after writing the above, I had [second thoughts](/posts/2022/07/really-getting-started-hugo/) about it.
+{.yellowBox}
+
 That said, I have another one to recommend if you're feeling just slightly more ambitious and, especially, if you'd prefer to use something where the templating isn't quite as strange-looking as that example, above.
 
 ## Close second choice: Eleventy
