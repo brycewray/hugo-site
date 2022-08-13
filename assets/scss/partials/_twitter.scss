@@ -9,7 +9,7 @@ $tc-padding: 1em;
 	line-height: 1.35em; // for non-`p` results from $text
 	font-family: var.$twitter-sans-serif;
 	font-size: var.$stdsize;
-	@media screen and (min-width: var.$bkpt_lg) {
+	@media screen and (min-width: var.$bkpt_md) {
 		font-size: var.$minimalbig;
 	}
 	p {
