@@ -12,6 +12,7 @@ discussionId: "2022-04-static-tweets-astro"
 {.yellowBox}
 
 **Update from the future in general (!)**: Any displayed tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo, so that code and what is shown below for Astro aren't necessarily related.\
+\
 Please use the [site search page](/search/) to find related posts.
 {.yellowBox}
 
