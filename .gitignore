@@ -32,6 +32,7 @@ build*.sh
 testbuild.sh
 push.sh
 wm*.sh
+git*.sh
 
 hugo_site-log.txt
 
