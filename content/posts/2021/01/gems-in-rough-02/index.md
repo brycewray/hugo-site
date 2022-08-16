@@ -3,7 +3,7 @@ title: "Gems in the rough #2"
 description: "More geeky hints for SSG fans."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
-lastmod: 2022-03-28T13:51:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-01-gems-in-rough-2021-01"
 ---
 

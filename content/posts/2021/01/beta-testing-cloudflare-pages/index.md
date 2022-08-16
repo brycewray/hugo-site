@@ -3,7 +3,7 @@ title: "Beta-testing Cloudflare Pages"
 description: "I take a look at a new, possibly game-changing website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
 date: 2021-01-27T12:30:00-06:00
-lastmod: 2022-03-28T13:52:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-01-beta-testing-cloudflare-pages"
 ---
 

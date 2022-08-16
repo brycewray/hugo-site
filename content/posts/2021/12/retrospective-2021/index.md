@@ -3,7 +3,7 @@ title: "Retrospective: 2021"
 description: "Reflections on some of the items discussed here in the outgoing year."
 author: Bryce Wray
 date: 2021-12-29T15:43:00-06:00
-#lastmod:
+lastmod: 2022-07-22T21:46:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2021-12-retrospective-2021"
 ---

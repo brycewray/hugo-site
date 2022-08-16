@@ -3,7 +3,7 @@ title: "Gems in the rough #18"
 description: "Code for copying code, HugoConf, loose ends."
 author: Bryce Wray
 date: 2022-05-14T10:50:00-05:00
-#lastmod: 2022-05-14T11:14:00-05:00
+lastmod: 2022-08-01T21:27:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-05-gems-in-rough-18"
 ---

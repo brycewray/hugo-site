@@ -3,7 +3,7 @@ title: "Independence"
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
-lastmod: 2022-02-12T12:02:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-07-independence"
 ---
 

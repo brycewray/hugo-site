@@ -3,7 +3,7 @@ title: "Two cheers for Tailwind"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2021-12-15T12:27:00-06:00
+lastmod: 2022-08-01T21:27:00-05:00
 discussionId: "2020-01-two-cheers-tailwind"
 ---
 

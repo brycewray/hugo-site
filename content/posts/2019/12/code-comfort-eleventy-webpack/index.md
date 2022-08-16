@@ -3,7 +3,7 @@ title: "Code comfort: Eleventy and webpack"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray
 date: 2019-12-14T11:05:00-06:00
-lastmod: 2022-02-12T11:51:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 ---
 

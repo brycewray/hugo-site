@@ -3,7 +3,7 @@ title: "Google Fonts and privacy"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T14:35:00-05:00
-lastmod: 2021-07-08T08:24:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-08-google-fonts-privacy"
 ---
 

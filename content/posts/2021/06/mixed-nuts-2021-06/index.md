@@ -3,7 +3,7 @@ title: "Mixed nuts • June, 2021"
 description: "The latest set of “takes” that don’t all fit in any one category."
 author: Bryce Wray
 date: 2021-06-11T16:30:00-05:00
-lastmod: 2021-07-11T09:57:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-06-mixed-nuts-2021-06"
 ---
 

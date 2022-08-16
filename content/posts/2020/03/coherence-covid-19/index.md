@@ -6,7 +6,7 @@ title: "Coherence and COVID–19" #Non-breaking hyphen there, copied/pasted from
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
-lastmod: 2021-08-24T12:43:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-03-coherence-covid-19"
 ---
 

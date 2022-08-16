@@ -3,7 +3,7 @@ title: "Go big or Go home?"
 description: "How some image-handling code moved from Eleventy to Hugo."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2022-03-28T13:54:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-02-go-big-go-home"
 ---
 

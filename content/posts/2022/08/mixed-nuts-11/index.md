@@ -3,6 +3,7 @@ title: "Mixed nuts #11"
 description: "The first entry in my catch-all series since the site went into CTCAJW Mode, this offers the same — um — quality as its predecessors."
 author: Bryce Wray
 date: 2022-08-12T05:43:00-05:00
+lastmod: 2022-08-12T05:44:00-05:00
 #draft: true
 #initTextEditor: **iA Writer**
 ---

@@ -3,7 +3,7 @@ title: "The site this week: 2022-05-28"
 description: "A “just write” commitment, the IndieWeb, some code explainers, and Cloudflare Pages glitches."
 author: Bryce Wray
 date: 2022-05-28T16:50:00-05:00
-#lastmod:
+lastmod: 2022-07-27T08:57:00-05:00
 #initTextEditor: VS Code
 discussionId: "2022-05-site-week-2022-05-28"
 ---

@@ -3,7 +3,7 @@ title: "Gems in the rough #12"
 description: "Speedier CFP builds, HTML sitemaps."
 author: Bryce Wray
 date: 2021-12-26T10:07:00-06:00
-#lastmod: 2021-12-26T10:56:00-06:00
+lastmod: 2022-07-22T21:46:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2021-12-gems-in-rough-12"
 ---

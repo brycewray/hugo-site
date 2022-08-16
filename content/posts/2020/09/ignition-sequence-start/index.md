@@ -3,7 +3,7 @@ title: "Ignition sequence start"
 description: "GitHub Actions to deploy to Firebase Hosting."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00
-lastmod: 2022-04-03T22:09:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-09-ignition-sequence-start"
 ---
 

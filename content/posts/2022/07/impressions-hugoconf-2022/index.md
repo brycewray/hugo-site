@@ -3,6 +3,7 @@ title: "Impressions from HugoConf 2022"
 description: "Takeaways from two great days that focused on the Hugo static site generator."
 author: Bryce Wray
 date: 2022-07-11T08:43:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---

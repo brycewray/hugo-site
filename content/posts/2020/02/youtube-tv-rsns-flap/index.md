@@ -3,7 +3,7 @@ title: "YouTube TV and the RSNs flap"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
-lastmod: 2022-04-03T20:30:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
 ---
 

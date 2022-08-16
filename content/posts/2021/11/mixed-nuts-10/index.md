@@ -3,7 +3,7 @@ title: "Mixed nuts #10"
 description: "A few things currently on my so-called mind."
 author: Bryce Wray
 date: 2021-11-26T13:02:00-06:00
-lastmod: 2021-11-28T11:21:00-06:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-11-mixed-nuts-10"
 ---
 

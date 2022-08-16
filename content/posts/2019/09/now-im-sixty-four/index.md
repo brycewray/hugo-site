@@ -3,7 +3,7 @@ title: "Now I’m sixty-four"
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
-lastmod: 2020-03-29T09:08:00-05:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
 oldComments: |
   <div class="container-oldComments">

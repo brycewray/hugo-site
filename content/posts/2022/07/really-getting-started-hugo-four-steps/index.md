@@ -3,6 +3,7 @@ title: "Really getting started with Hugo: four simple steps"
 description: "Here is just the actual procedure from yesterday’s post about making things easier for new Hugo users."
 author: Bryce Wray
 date: 2022-07-20T08:56:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #draft: true
 #initTextEditor: **iA Writer**
 ---

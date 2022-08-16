@@ -3,7 +3,7 @@ title: "Better notifications in the Preside email app"
 description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices."
 author: Bryce Wray
 date: 2021-07-03T16:20:00-05:00
-lastmod: 2022-02-12T11:14:00-06:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-07-better-notifications-preside-email-app"
 ---
 

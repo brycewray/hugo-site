@@ -3,7 +3,7 @@ title: "Static tweets in Eleventy and Hugo: Part 2"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
 date: 2022-02-11T14:43:00-06:00
-lastmod: 2022-04-12T09:11:00-05:00
+lastmod: 2022-08-15T08:09:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 ---

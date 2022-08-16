@@ -3,7 +3,7 @@ title: "Let all your devices see your site"
 description: "How to make “localhost” slightly less local."
 author: Bryce Wray
 date: 2022-04-02T11:00:00-05:00
-lastmod: 2022-04-16T09:15:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 #devTo: https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd
 #HackerNews: https://news.ycombinator.com/item?id=30889663#30890211

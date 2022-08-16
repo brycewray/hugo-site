@@ -3,7 +3,7 @@ title: "Mark it down"
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
 author: Bryce Wray
 date: 2019-03-08T23:08:00-05:00
-lastmod: 2020-01-01T09:39:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-03-mark-it-down"
 ---
 

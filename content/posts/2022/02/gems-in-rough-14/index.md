@@ -3,7 +3,7 @@ title: "Gems in the rough #14"
 description: "Full-time Eleventy, variables in Hugo, learning from a nice tweet, using web fonts with internal CSS."
 author: Bryce Wray
 date: 2022-02-18T12:36:00-06:00
-lastmod: 2022-04-10T10:26:00-05:00
+lastmod: 2022-08-15T08:09:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-gems-in-rough-14"
 ---

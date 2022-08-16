@@ -3,7 +3,7 @@ title: "Mixed nuts • November, 2019"
 description: "Observations worth exactly what you’re paying for them."
 author: Bryce Wray
 date: 2019-11-24T10:15:00-06:00
-lastmod: 2020-08-10T20:15:00-05:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-11-mixed-nuts-2019-11"
 ---
 

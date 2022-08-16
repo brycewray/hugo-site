@@ -3,7 +3,7 @@ title: "Gems in the rough #16"
 description: "Eleventy 2.x (yes, already), trying giscus, another shameless plug."
 author: Bryce Wray
 date: 2022-03-11T09:55:00-06:00
-lastmod: 2022-03-17T10:39:00-05:00
+lastmod: 2022-08-01T21:27:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-03-gems-in-rough-16"
 ---

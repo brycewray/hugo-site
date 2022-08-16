@@ -3,6 +3,7 @@ title: "Ulysses 27: a correction"
 description: "Haste makes waste, and it also makes for a bad summary, so here are some corrections to what I wrote yesterday about Ulysses 27."
 author: Bryce Wray
 date: 2022-06-22T05:52:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-06-ulysses-27-correction"
 ---

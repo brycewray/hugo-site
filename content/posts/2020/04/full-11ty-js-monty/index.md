@@ -3,7 +3,7 @@ title: "The full .11ty.js monty"
 description: "Going all-JavaScript with my Eleventy site."
 author: Bryce Wray
 date: 2020-04-15T17:30:00-05:00
-lastmod: 2022-03-28T13:36:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-04-full-11ty-js-monty"
 ---
 

@@ -3,7 +3,7 @@ title: "Goodbye and hello"
 description: "Moving from Netlify to Vercel: how this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T17:05:00-05:00
-lastmod: 2022-03-28T14:17:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-07-goodbye-hello"
 ---
 

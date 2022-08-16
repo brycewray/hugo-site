@@ -3,7 +3,7 @@ title: "Making Tailwind JIT work with Hugo, the Version 3 edition"
 description: "A Hugo fix for Tailwind CSS v.3 — with a surprise bonus."
 author: Bryce Wray
 date: 2022-03-06T16:16:00-06:00
-lastmod: 2022-03-08T08:17:00-06:00
+lastmod: 2022-07-22T22:16:00-05:00
 discussionId: "2022-03-making-tailwind-jit-work-hugo-version-3-edition"
 ---
 

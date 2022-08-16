@@ -3,7 +3,7 @@ title: "Using Eleventy’s official image plugin"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2022-02-04T21:08:00-06:00
+lastmod: 2022-07-29T22:19:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 ---
 

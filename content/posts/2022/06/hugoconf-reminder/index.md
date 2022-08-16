@@ -3,6 +3,7 @@ title: "HugoConf: a reminder"
 description: "The time is nearing for this free event, but you can still get in on the fun."
 author: Bryce Wray
 date: 2022-06-29T13:32:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---

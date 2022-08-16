@@ -3,7 +3,7 @@ title: "iA for IO?"
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
-lastmod: 2020-09-27T13:45:00-05:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-02-ia-for-io"
 ---
 

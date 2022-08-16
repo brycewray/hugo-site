@@ -3,7 +3,7 @@ title: "Why I’m staying with Hugo"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2022-05-23T21:55:00-05:00
+lastmod: 2022-08-01T21:27:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 oldComments: |
     <div class="container-oldComments">

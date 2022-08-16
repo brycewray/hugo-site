@@ -3,7 +3,7 @@ title: "1Password hits the fan"
 description: "An Electron-ic firestorm: a follow-up to my earlier article about password management."
 author: Bryce Wray
 date: 2021-08-14T10:20:00-05:00
-lastmod: 2022-03-28T14:00:00-05:00
+lastmod: 2022-07-25T16:16:00-05:00
 discussionId: "2021-08-1Password-hits-fan"
 ---
 

@@ -3,7 +3,7 @@ title: "Beginner’s luck"
 description: "Helping more people get going with Eleventy and Hugo."
 author: Bryce Wray
 date: 2020-07-27T16:30:00-05:00
-lastmod: 2022-03-28T13:41:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 ---
 

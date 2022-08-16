@@ -3,7 +3,7 @@ title: "Gems in the rough #7"
 description: "Static site generator fans, here’s another (sorta) brief set of goodies for your edification."
 author: Bryce Wray
 date: 2021-07-17T14:23:00-05:00
-lastmod: 2021-07-18T13:28:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-07-gems-in-rough-07"
 ---
 

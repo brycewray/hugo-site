@@ -5,6 +5,7 @@ title: "Static tweets in Hugo: using resources.​GetRemote"
 description: "A recommendation in the Hugo Discourse leads me to alter my shortcodes for embedding static tweets."
 author: Bryce Wray
 date: 2022-07-25T16:05:00-05:00
+lastmod: 2022-08-15T08:09:00-05:00
 #draft: true
 #initTextEditor: **iA Writer**
 ---

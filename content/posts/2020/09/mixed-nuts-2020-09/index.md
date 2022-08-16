@@ -3,7 +3,7 @@ title: "Mixed nuts • September, 2020"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00
-lastmod: 2022-02-12T11:39:00-06:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-09-mixed-nuts-2020-09"
 ---
 

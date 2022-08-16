@@ -3,7 +3,7 @@ title: "Cache-busting in Eleventy, take two"
 description: "This time, a solution that really (?) works."
 author: Bryce Wray
 date: 2020-12-11T16:55:00-06:00
-lastmod: 2022-03-28T13:49:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-12-cache-busting-eleventy-take-two"
 ---
 

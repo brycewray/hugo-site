@@ -3,7 +3,7 @@ title: "Checking out the IndieWeb again"
 description: "While not entirely sure I’m holding my mouth right, I’m giving webmentions another try."
 author: Bryce Wray
 date: 2022-05-22T15:02:00-05:00
-lastmod: 2022-05-29T10:51:00-05:00
+lastmod: 2022-08-01T21:27:00-05:00
 #initTextEditor: VS Code
 discussionId: "2022-05-checking-out-indieweb-again"
 ---

@@ -3,6 +3,7 @@ title: "Static Mastodon toots in Hugo"
 description: "Just like tweet embeds, toot embeds are best when they’re purely static."
 author: Bryce Wray
 date: 2022-06-03T09:47:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-06-static-mastodon-toots-hugo"
 ---

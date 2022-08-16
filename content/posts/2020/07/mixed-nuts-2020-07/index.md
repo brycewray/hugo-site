@@ -3,7 +3,7 @@ title: "Mixed nuts • July, 2020"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."
 author: Bryce Wray
 date: 2020-07-09T16:40:00-05:00
-lastmod: 2020-08-30T15:40:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-07-mixed-nuts-2020-07"
 ---
 

@@ -2,7 +2,7 @@
 title: "Using Dart Sass with Hugo: the nitty-gritty"
 description: "We go under the hood with the installation process for the Embedded Dart Sass binary."
 date: 2022-05-22T10:06:00-05:00
-#lastmod:
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-05-using-dart-sass-hugo-nitty-gritty"
 ---

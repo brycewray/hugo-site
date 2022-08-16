@@ -3,7 +3,7 @@ title: "Fathom Analytics: count on it"
 description: "How to count visitors while protecting them — and yourself."
 author: Bryce Wray
 date: 2020-06-19T00:45:00-05:00
-lastmod: 2022-02-12T10:55:00-06:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-06-fathom-analytics-count-on-it"
 ---
 

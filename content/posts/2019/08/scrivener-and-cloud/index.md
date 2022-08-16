@@ -3,7 +3,7 @@ title: "Scrivener and The Cloud"
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."
 author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
-lastmod: 2022-02-12T11:54:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-08-scrivener-and-cloud"
 ---
 

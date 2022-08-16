@@ -3,7 +3,7 @@ title: "Static tweets in Astro"
 description: "A component which properly embeds tweets when you’re using today’s hottest SSG."
 author: Bryce Wray
 date: 2022-04-06T20:18:00-05:00
-lastmod: 2022-04-12T09:42:00-05:00
+lastmod: 2022-08-15T08:09:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-04-static-tweets-astro"
 ---

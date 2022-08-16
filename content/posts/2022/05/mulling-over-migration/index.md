@@ -3,7 +3,7 @@ title: "Mulling over migration?"
 description: "Some tips about moving your website to Astro."
 author: Bryce Wray
 date: 2022-05-07T13:15:00-05:00
-#lastmod:
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: MMDC5
 discussionId: "2022-05-mulling-over-migration"
 ---

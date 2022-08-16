@@ -3,7 +3,7 @@ title: "Beginner’s luck #3: adding a Zola starter"
 description: "For those interested in a (somewhat) easy take on Hugo, here’s a starter set for you."
 author: Bryce Wray
 date: 2021-06-25T16:50:00-05:00
-lastmod: 2021-07-20T07:05:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-06-beginners-luck-3-adding-zola-starter"
 ---
 

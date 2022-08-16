@@ -3,7 +3,7 @@ title: "Webmentions in three SSGs: Part 1"
 description: "The intro to a five-part series about incorporating webmentions into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T16:30:00-05:00
-lastmod: 2021-05-16T10:26:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-1"
 ---
 

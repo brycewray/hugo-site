@@ -3,7 +3,7 @@ title: "Next steps?"
 description: "Some things I’ve learned while tinkering with Next.js."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
-lastmod: 2022-03-28T13:55:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-03-next-steps"
 ---
 

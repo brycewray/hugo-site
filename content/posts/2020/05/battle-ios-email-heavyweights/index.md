@@ -3,7 +3,7 @@ title: "Battle of the iOS email heavyweights"
 description: "AltaMail vs. Preside: there’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray
 date: 2020-05-14T17:45:00-05:00
-lastmod: 2022-03-28T14:15:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
 ---
 

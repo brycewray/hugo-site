@@ -3,7 +3,7 @@ title: "Tailwind-to-head with Eleventy"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site — and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-lastmod: 2021-07-04T21:56:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-03-tailwind-head-eleventy"
 ---
 

@@ -3,7 +3,7 @@ title: "Thinking about syncing"
 description: "Some opinions I’ve formed while doing a semi-deep dive into cloud sync on macOS."
 author: Bryce Wray
 date: 2022-02-04T10:03:00-06:00
-#lastmod:
+lastmod: 2022-07-22T22:16:00-05:00
 discussionId: "2022-02-thinking-about-syncing"
 ---
 

@@ -3,7 +3,7 @@ title: "Some curmudgeonish thoughts"
 description: "“Didja ever notice...?” Yes, I did. And here’s the result."
 author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
-lastmod: 2022-02-12T10:59:00-06:00
+lastmod: 2022-07-27T08:14:00-05:00
 discussionId: "2018-11-some-curmudgeonish-thoughts"
 ---
 

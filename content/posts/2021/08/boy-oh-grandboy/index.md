@@ -3,7 +3,7 @@ title: "Boy, oh, grandboy"
 description: "A few words about the arrival of grandchild #2."
 author: Bryce Wray
 date: 2021-08-11T11:30:00-05:00
-lastmod: 2021-09-20T10:10:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-08-boy-oh-grandboy"
 ---
 

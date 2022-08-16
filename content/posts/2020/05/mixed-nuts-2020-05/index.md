@@ -3,7 +3,7 @@ title: "Mixed nuts • May, 2020"
 description: "Updates, uptakes, follow-ups, and foul-ups — not necessarily in that order."
 author: Bryce Wray
 date: 2020-05-16T17:40:00-05:00
-lastmod: 2020-08-10T20:15:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-05-mixed-nuts-2020-05"
 ---
 

@@ -3,7 +3,7 @@ title: "Go big or Go home? The sequel"
 description: "After a “D’oh!” moment, I refine a bespoke Hugo shortcode."
 author: Bryce Wray
 date: 2021-11-23T12:55:00-06:00
-lastmod: 2021-11-28T09:54:00-06:00
+lastmod: 2022-07-23T20:21:00-05:00
 discussionId: "2021-11-go-big-go-home-sequel"
 ---
 

@@ -3,7 +3,7 @@ title: "A normal person’s guide to static websites"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
 date: 2020-09-22T16:35:00-05:00
-lastmod: 2022-05-23T21:55:00-05:00
+lastmod: 2022-08-13T08:21:00-05:00
 discussionId: "2020-09-normal-persons-guide-static-websites"
 ---
 

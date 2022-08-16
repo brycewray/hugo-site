@@ -3,7 +3,7 @@ title: "Backtracking to Big G"
 description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
 author: Bryce Wray
 date: 2019-08-25T10:45:00-05:00
-lastmod: 2021-12-15T12:27:00-06:00
+lastmod: 2022-08-01T21:27:00-05:00
 discussionId: "2019-08-backtracking-to-big-g"
 ---
 

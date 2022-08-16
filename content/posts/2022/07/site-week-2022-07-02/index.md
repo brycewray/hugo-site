@@ -3,6 +3,7 @@ title: "The site this week: 2022-07-02"
 description: "Hugo image processing; a reminder about HugoConf; changing sides in a Holy War."
 author: Bryce Wray
 date: 2022-07-02T08:11:00-05:00
+lastmod: 2022-07-27T08:57:00-05:00
 #draft: true
 #initTextEditor: VS Code
 ---

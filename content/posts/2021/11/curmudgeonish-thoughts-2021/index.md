@@ -3,7 +3,7 @@ title: "Curmudgeonish thoughts for 2021"
 description: "Another year, another grievances list."
 author: Bryce Wray
 date: 2021-11-09T08:56:00-06:00
-lastmod: 2022-03-28T14:04:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 draft: false
 discussionId: "2021-11-curmudgeonish-thoughts-2021"
 ---

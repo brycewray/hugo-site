@@ -3,7 +3,7 @@ title: "Gems in the rough #6"
 description: "Hiding “future” posts in Eleventy, life with Vercel (nearly) a year later, and other items that may interest static site generator users."
 author: Bryce Wray
 date: 2021-06-21T16:30:00-05:00
-lastmod: 2022-03-02T09:48:00-06:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-06-gems-in-rough-06"
 ---
 

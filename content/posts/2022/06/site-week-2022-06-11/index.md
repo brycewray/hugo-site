@@ -3,6 +3,7 @@ title: "The site this week: 2022-06-11"
 description: "WWDC 2022, Hugo 0.100.x, better static tweets."
 author: Bryce Wray
 date: 2022-06-11T10:12:00-05:00
+lastmod: 2022-07-27T08:57:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-06-site-week-2022-06-11"
 ---

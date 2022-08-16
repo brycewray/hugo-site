@@ -3,7 +3,7 @@ title: "The version-control follies"
 description: "Why you should go GUI with version control."
 author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
-lastmod: 2020-10-25T12:40:00-05:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2018-10-version-control-follies"
 ---
 

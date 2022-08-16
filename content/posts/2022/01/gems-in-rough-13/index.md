@@ -3,7 +3,7 @@ title: "Gems in the rough #13"
 description: "Why I’ve recently backtracked on configurations for CSS and image-handling."
 author: Bryce Wray
 date: 2022-01-04T13:09:00-06:00
-lastmod: 2022-02-18T12:13:00-06:00
+lastmod: 2022-08-01T21:27:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-01-gems-in-rough-13"
 ---

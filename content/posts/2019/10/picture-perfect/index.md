@@ -3,7 +3,7 @@ title: "Picture perfect?"
 description: "With SSGs and images, it’s “location, location, location.”"
 author: Bryce Wray
 date: 2019-10-20T19:00:00-05:00
-lastmod: 2022-04-03T18:55:00-05:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-10-picture-perfect"
 ---
 

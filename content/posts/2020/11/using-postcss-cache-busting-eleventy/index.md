@@ -3,7 +3,7 @@ title: "Using PostCSS for cache-busting in Eleventy"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T16:30:00-06:00
-lastmod: 2021-05-29T12:21:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 ---
 

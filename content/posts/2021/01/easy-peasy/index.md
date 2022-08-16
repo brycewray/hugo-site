@@ -3,7 +3,7 @@ title: "Easy-peasy"
 description: "A theoretical conversation about building static websites."
 author: Bryce Wray
 date: 2021-01-03T10:10:00-06:00
-lastmod: 2022-03-28T13:50:00-05:00
+lastmod: 2022-07-24T21:43:00-05:00
 discussionId: "2021-01-easy-peasy"
 ---
 

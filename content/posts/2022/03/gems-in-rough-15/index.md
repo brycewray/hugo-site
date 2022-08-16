@@ -3,7 +3,7 @@ title: "Gems in the rough #15"
 description: "CFP Fast Builds update, Hugo/goldmark typography, another Tailwind-on-Hugo solution."
 author: Bryce Wray
 date: 2022-03-03T15:05:00-06:00
-lastmod: 2022-05-10T10:08:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-03-gems-in-rough-15"
 ---

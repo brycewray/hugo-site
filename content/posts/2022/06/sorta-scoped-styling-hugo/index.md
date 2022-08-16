@@ -3,6 +3,7 @@ title: "Sorta scoped styling in Hugo"
 description: "Interested in more efficient CSS for your site? Hugo doesn’t make it easy, but here’s a suggested way you might get there."
 author: Bryce Wray
 date: 2022-06-12T16:10:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-06-sorta-scoped-styling-hugo"
 ---

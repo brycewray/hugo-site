@@ -3,7 +3,7 @@ title: "O say can you CI/CD?"
 description: "A way around the Netlify free-tier build limit."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2022-03-28T13:40:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 ---
 

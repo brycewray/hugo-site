@@ -3,7 +3,7 @@ title: "Beginner’s luck #4: the Vite edition"
 description: "Now I have an Eleventy/Vite starter, and here’s some of the code that makes it go."
 author: Bryce Wray
 date: 2021-07-25T16:46:00-05:00
-lastmod: 2022-02-12T11:08:00-06:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-07-beginners-luck-4-vite-edition"
 ---
 

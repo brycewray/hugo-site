@@ -3,7 +3,7 @@ title: "Mixed nuts #9"
 description: "Takes that are neither hot nor cool — in multiple ways."
 author: Bryce Wray
 date: 2021-08-29T08:52:00-05:00
-lastmod: 2022-03-28T14:01:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-08-mixed-nuts-09"
 ---
 

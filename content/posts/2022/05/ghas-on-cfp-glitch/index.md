@@ -3,7 +3,7 @@ title: "GHAs on CFP glitch"
 description: "What I found out about my deploy-to-site GitHub Action and Cloudflare Pages."
 author: Bryce Wray
 date: 2022-05-26T05:24:00-05:00
-#lastmod: 2022-05-26T09:11:00-05:00
+lastmod: 2022-07-23T09:15:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-05-ghas-on-cfp-glitch"
 ---

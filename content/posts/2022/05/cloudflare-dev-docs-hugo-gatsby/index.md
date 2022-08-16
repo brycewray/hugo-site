@@ -3,7 +3,7 @@ title: "Cloudflare dev docs and the switch from Gatsby back to Hugo"
 description: "A few choice paragraphs from a blog post I saw today."
 author: Bryce Wray
 date: 2022-05-27T09:25:00-05:00
-#lastmod:
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-05-cloudflare-dev-docs-hugo-gatsby"
 ---

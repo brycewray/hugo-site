@@ -3,7 +3,7 @@ title: "Eleventy and Hugo: comparing and contrasting"
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
-lastmod: 2022-03-28T14:20:00-05:00
+lastmod: 2022-08-13T08:20:00-05:00
 discussionId: "2020-12-eleventy-hugo-comparing-contrasting"
 ---
 

@@ -3,7 +3,7 @@ title: "Get good Git info from Hugo"
 description: "It’s easy to fetch and display your Hugo repo’s Git data."
 author: Bryce Wray
 date: 2022-06-01T06:47:00-05:00
-#lastmod:
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-06-committing-gitinfo-hugo"
 ---

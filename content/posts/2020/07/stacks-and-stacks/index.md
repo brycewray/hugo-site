@@ -3,7 +3,7 @@ title: "Stacks and stacks"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00
-lastmod: 2022-04-03T21:35:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-07-stacks-and-stacks"
 ---
 

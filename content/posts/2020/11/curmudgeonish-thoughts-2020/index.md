@@ -3,7 +3,7 @@ title: "Curmudgeonish thoughts for 2020"
 description: "Pet peeves seem tiny at a time like this, but I have them nonetheless."
 author: Bryce Wray
 date: 2020-11-01T08:45:00-06:00
-#lastmod
+lastmod: 2022-07-22T21:24:00-05:00
 draft: false
 discussionId: "2020-11-curmudgeonish-thoughts-2020"
 ---

@@ -3,7 +3,7 @@ title: "Old dog learns old trick"
 description: "A major “Do’h” moment in the never-ending battle against Internet Explorer."
 author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
-lastmod: 2022-02-12T12:27:00-06:00
+lastmod: 2022-08-01T21:27:00-05:00
 discussionId: "2019-02-old-dog-old-trick"
 ---
 

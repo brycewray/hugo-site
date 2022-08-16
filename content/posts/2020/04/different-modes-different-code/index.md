@@ -3,7 +3,7 @@ title: "Different modes for different code"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
-lastmod: 2022-02-28T21:41:00-06:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-04-different-modes-different-code"
 ---
 

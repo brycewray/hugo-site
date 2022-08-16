@@ -3,7 +3,7 @@ title: "The Holy Mail"
 description: "The way I sort-of cured the email client dance."
 author: Bryce Wray
 date: 2019-05-10T07:20:00-05:00
-#lastmod
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-05-the-holy-mail"
 ---
 

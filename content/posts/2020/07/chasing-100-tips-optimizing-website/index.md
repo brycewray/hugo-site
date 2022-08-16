@@ -3,7 +3,7 @@ title: "Chasing 100: tips for optimizing your website"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00
-lastmod: 2022-04-03T21:40:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 ---
 

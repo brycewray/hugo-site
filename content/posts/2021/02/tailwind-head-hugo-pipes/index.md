@@ -3,7 +3,7 @@ title: "Tailwind-to-head with Hugo Pipes"
 description: "If your website draws that “render-blocking resource” gripe during tests, here’s one method for fighting it."
 author: Bryce Wray
 date: 2021-02-02T16:25:00-06:00
-lastmod: 2021-03-20T17:30:00-05:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-02-tailwind-head-hugo-pipes"
 ---
 

@@ -3,7 +3,7 @@ title: "A normal person’s guide to static website hosting"
 description: "After suggesting how a non-geek could most easily have a website, I now offer thoughts on the site’s hosting."
 author: Bryce Wray
 date: 2020-09-26T13:55:00-05:00
-lastmod: 2022-02-19T12:54:00-06:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-09-normal-persons-guide-static-website-hosting"
 ---
 

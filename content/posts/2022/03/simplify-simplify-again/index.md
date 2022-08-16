@@ -3,7 +3,7 @@ title: "Simplify, simplify (again)"
 description: "As I was saying over a year ago before I was so rudely interrupted by life . . ."
 author: Bryce Wray
 date: 2022-03-22T13:24:00-05:00
-lastmod: 2022-05-07T13:05:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2021-03-simplify-simplify-again"
 ---

@@ -3,6 +3,7 @@ title: "Using iCloud Mail with a custom domain"
 description: "It took Apple a while to get it (maybe) right — but, it’s “so far, so good” on something announced at last year’s WWDC."
 author: Bryce Wray
 date: 2022-06-13T13:26:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
 ---
 

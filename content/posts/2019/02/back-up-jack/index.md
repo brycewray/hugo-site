@@ -3,7 +3,7 @@ title: "Back up, Jack"
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-lastmod: 2022-02-12T12:24:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-02-back-up-jack"
 ---
 

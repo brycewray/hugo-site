@@ -3,7 +3,7 @@ title: "On Edge"
 description: "Microsoft’s decision about Edge is important on many levels."
 author: Bryce Wray
 date: 2018-12-07T13:35:00-06:00
-lastmod: 2022-02-12T12:36:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2018-12-on-edge"
 ---
 

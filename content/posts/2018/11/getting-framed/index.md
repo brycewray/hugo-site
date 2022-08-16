@@ -3,7 +3,7 @@ title: "Getting framed"
 description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
 date: 2018-11-14T09:15:00-06:00
-lastmod: 2022-02-12T12:43:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2018-11-getting-framed"
 ---
 

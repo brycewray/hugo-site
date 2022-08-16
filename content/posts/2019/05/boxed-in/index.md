@@ -3,7 +3,7 @@ title: "Boxed in?"
 description: "A revisiting of the whole Ulysses matter — after I learned some more about “shoebox” apps in general."
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
-lastmod: 2022-02-12T11:00:00-06:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2019-05-boxed-in"
 ---
 

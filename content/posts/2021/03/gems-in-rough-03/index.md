@@ -3,7 +3,7 @@ title: "Gems in the rough #3"
 description: "The latest installment of unrequested advice about tinkering with websites."
 author: Bryce Wray
 date: 2021-03-06T15:55:00-06:00
-lastmod: 2022-02-12T11:30:00-06:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-03-gems-in-rough-03"
 ---
 

@@ -3,6 +3,7 @@ title: "The “staying with Hugo” post, three years later"
 description: "Revisiting one of this website’s most frequently accessed posts."
 author: Bryce Wray
 date: 2022-07-14T14:07:00-05:00
+lastmod: 2022-07-22T22:16:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---

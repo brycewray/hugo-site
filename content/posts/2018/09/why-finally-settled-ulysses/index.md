@@ -3,7 +3,7 @@ title: "Why I finally settled on Ulysses"
 description: "How I came to realize why one particular creative writing app was a better fit for me as compared to its chief rival."
 author: Bryce Wray
 date: 2018-09-22T11:04:36-05:00
-lastmod: 2020-08-10T20:15:00-05:00
+lastmod: 2022-07-22T20:56:00-05:00
 discussionId: "2018-09-why-finally-settled-ulysses"
 ---
 

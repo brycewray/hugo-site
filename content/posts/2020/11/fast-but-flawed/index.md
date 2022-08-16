@@ -3,7 +3,7 @@ title: "Fast but flawed"
 description: "Two more static website hosts to consider (maybe)."
 author: Bryce Wray
 date: 2020-11-25T16:30:00-06:00
-lastmod: 2022-03-28T13:48:00-05:00
+lastmod: 2022-07-22T21:24:00-05:00
 discussionId: "2020-11-fast-but-flawed"
 ---
 

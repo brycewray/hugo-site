@@ -3,7 +3,7 @@ title: "My website and Cloudflare, a year later"
 description: "It’s perhaps not so much “love/hate” as it is geeky curiosity combined with an old guy’s impatience."
 author: Bryce Wray
 date: 2021-10-22T14:00:00-05:00
-lastmod: 2022-02-19T12:54:00-06:00
+lastmod: 2022-07-22T21:46:00-05:00
 discussionId: "2021-10-my-website-cloudflare-year-later"
 ---
 
