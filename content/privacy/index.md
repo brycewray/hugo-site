@@ -3,6 +3,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors."
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
+lastmod: 2022-07-22T23:00:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
