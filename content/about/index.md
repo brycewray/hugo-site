@@ -4,7 +4,7 @@ title: About me
 description: Not a bio (you’d fall asleep), but just some explanatory observations.
 author: Bryce Wray
 date: 2018-09-14T15:00:00-05:00
-lastmod: 2021-07-20T09:52:00-05:00
+lastmod: 2022-07-20T09:52:00-05:00
 discussionId: "about"
 ---
 
