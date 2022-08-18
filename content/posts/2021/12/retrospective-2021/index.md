@@ -32,6 +32,6 @@ On the personal front in 2021, many of the year’s events for my family and me 
 
 <hr />
 
-I thank you, as always, for your [comments and observations](/contact), as well as your valuable time and attention. May your 2022 be outstanding, and I hope you’ll find time during it to stop by here and see what’s up. I will try, also as always, to make such visits worth your while.
+I thank you, as always, for your [comments and observations](/contact/), as well as your valuable time and attention. May your 2022 be outstanding, and I hope you’ll find time during it to stop by here and see what’s up. I will try, also as always, to make such visits worth your while.
 
 [^1]:	That sitemap is derived automatically with code I first described in last May’s “[Help your website get discovered](/posts/2021/05/help-your-website-get-discovered/).”
