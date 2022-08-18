@@ -3,7 +3,7 @@ title: "Static tweets in Astro"
 description: "A component which properly embeds tweets when you’re using today’s hottest SSG."
 author: Bryce Wray
 date: 2022-04-06T20:18:00-05:00
-lastmod: 2022-08-15T08:09:00-05:00
+lastmod: 2022-08-18T09:12:00-05:00
 #initTextEditor: iA Writer
 discussionId: "2022-04-static-tweets-astro"
 ---
@@ -233,6 +233,8 @@ Finally, down in the Markdown itself, call the imported component the same way a
 ```md
 <STweetV2 TweetID="1487140202141425673" />
 ```
+**Update, 2022-07-26**: Astro has since moved to using [MDX](https://mdxjs.com/), rather than Markdown, for including components in one's markup. Be sure to check the [most current Astro documentation](https://docs.astro.build) for full details.
+{.yellowBox}
 
 ## An escapee from the lab?
 
