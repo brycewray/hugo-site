@@ -3,7 +3,7 @@ title: "Using Eleventy’s official image plugin"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2022-07-29T22:19:00-05:00
+lastmod: 2022-08-20T11:10:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 ---
 
@@ -65,9 +65,13 @@ First, let's install Eleventy Image in your Eleventy project.
 
 ```js
 const Image = require("@11ty/eleventy-img")
+const path = require('path')
 ```
 
-That tells Eleventy that, when we refer to `Image` (note the capital "I”) from here on, we're talking about the Eleventy Image plugin package.
+That tells Eleventy that, when we refer to `Image` (note the capital "I") from here on, we're talking about the Eleventy Image plugin package. (The `path` part has to do with an option in the upcoming code; if you already have a `require('path')` statement in your `.eleventy.js` configuration file, make sure it comes **before** the code we'll add below.)
+
+**Update, 2021-05-24**: I had neglected to mention the `path` statement before now; I apologize for the omission and any inconvenience it may have caused you. Thanks to Ruvi Lecamwasam for catching this goof and reporting it to me!
+{.yellowBox}
 
 Keep that `.eleventy.js` file open for editing, as we move to the next step.
 
@@ -148,7 +152,7 @@ Let's say you keep your Eleventy project's original image files (the ones the `i
 {% image "my-pet-cat.jpg", "Photo of a cat named Shakespeare sitting on a window sill" %}
 ```
 
-Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jpg"; the code automatically adds `./src/assets/images/` to it so **you** don't have to type it every time you use the shortcode), then a comma, and then the `alt` text ("Photo of a cat named Shakespeare sitting on a window sill") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project. As you know, the `alt` text describes for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/) what the image contains. **You must enter that `alt` text** if you want the shortcode to work properly --- the `image` shortcode requires both `src` and `alt` to work, as you may have noted in the shortcode's configuration in `.eleventy.js`. If an image is only [decorative](https://www.w3.org/WAI/tutorials/images/decorative/) (*e.g.*, a logo or other image that fits that description), it's perfectly acceptable for the `alt` to be just `""`, but you **must** have an `alt` entry after the `src` and that separating comma.
+Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jpg"; the code automatically adds `./src/images/` to it so **you** don't have to type it every time you use the shortcode), then a comma, and then the `alt` text ("Photo of a cat named Shakespeare sitting on a window sill") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project. As you know, the `alt` text describes for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/) what the image contains. **You must enter that `alt` text** if you want the shortcode to work properly --- the `image` shortcode requires both `src` and `alt` to work, as you may have noted in the shortcode's configuration in `.eleventy.js`. If an image is only [decorative](https://www.w3.org/WAI/tutorials/images/decorative/) (*e.g.*, a logo or other image that fits that description), it's perfectly acceptable for the `alt` to be just `""`, but you **must** have an `alt` entry after the `src` and that separating comma.
 
 ### Get a look at the result
 
