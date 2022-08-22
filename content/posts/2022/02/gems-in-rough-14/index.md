@@ -93,7 +93,7 @@ Anyway, I went back to the `stweetv2` Hugo shortcode covered in the [most recent
 
 ### Update, 2022‑04‑10
 
-I have now learned *why* this didn't work with the V2 API. I found the following in the [Twitter documentation for the V2 API's `media` object](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media):
+I have now learned *why* this didn't work with the v2 API. I found the following in the [Twitter documentation for the v2 API's `media` object](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media):
 
 > Note that video URLs are not currently available, only static images.
 
@@ -103,7 +103,7 @@ However, thanks in particular to [Chris Swithinbank](https://twitter.com/swithin
 
 (If the continuing animation drives you nuts, just click or tap on the image.)
 
-Of course, this doesn't obviate the issue, expressed in the first post, with using the really old public syndication API on which `stweet` depends. But that API also serves to buttress the Twitter-related part of the  [`astro-embed` package](https://github.com/astro-community/astro-embed) which Swithinbank started.[^embed] He told me he feels it will suffice until such time as Twitter actually kills off this API. Especially in view of this specific, current limitation in the V2 API, I agree.
+Of course, this doesn't obviate the issue, expressed in the first post, with using the really old public syndication API on which `stweet` depends. But that API also serves to buttress the Twitter-related part of the  [`astro-embed` package](https://github.com/astro-community/astro-embed) which Swithinbank started.[^embed] He told me he feels it will suffice until such time as Twitter actually kills off this API. Especially in view of this specific, current limitation in the v2 API, I agree.
 
 [^embed]: That package came about after the Astro team saw my [later post](/posts/2022/04/static-tweets-astro/) about doing static tweets in Astro. They liked the idea and quickly improved on it in a big way with the `astro-embed` package, which in time will provide fully static embeds from several different social media platforms, not just Twitter.
 

@@ -17,17 +17,17 @@ Please use the [site search page](/search/) to find related posts.
 
 A few days ago, I issued [a post](/posts/2022/02/static-tweets-eleventy-hugo/) explaining how to embed fully static Twitter content in your [Eleventy](https://11ty.dev/)- or [Hugo](https://gohugo.io/)-based website. (If you haven’t yet read that post, please do so before proceeding, so you can better understand what follows below.)
 
-The Eleventy-based solution I offered gets Twitter data from Version 1.1 of the Twitter Developer API, while the Hugo-based solution accesses Twitter’s public syndication API. Although these two approaches work fine as of now, I hinted that each could run into trouble in the future, especially since (a.) Twitter is actively encouraging migration to its newer **Version 2** Developer API and (b.) the public syndication API is discomfitingly old by internet standards.
+The Eleventy-based solution I offered gets Twitter data from Version 1.1 of the Twitter Developer API, while the Hugo-based solution accesses Twitter’s public syndication API. Although these two approaches work fine as of now, I hinted that each could run into trouble in the future, especially since (a.) Twitter is actively encouraging migration to its newer **Version 2** ("v2") Developer API and (b.) the public syndication API is discomfitingly old by internet standards.
 
 Thus, here’s a quick update on where all that stands.
 
-## V.2 and Eleventy
+## v2 and Eleventy
 
 After Kyle Mitofsky, the maintainer of the `eleventy-plugin-embed-tweet` plugin, saw my post, he responded via Twitter that he “should probably look into updating the Twitter API to use v2 .&nbsp; .&nbsp;. in case they drop support [of v.1.1].” Soon thereafter, he created [an issue](https://github.com/KyleMit/eleventy-plugin-embed-tweet/issues/15) on the plugin’s GitHub repository about performing just such an update. I was very pleased to see this positive response, and hope he will have the time to bring this about soon. Meanwhile, I still highly encourage use of his plugin in Eleventy sites; after all, it’s highly unlikely that Twitter will break v.1.1 in the *near* future.
 
-## V.2 and Hugo
+## v2 and Hugo
 
-In the previous post, I offered a [shortcode](https://gohugo.io/content-management/shortcodes/) to perform the static tweets stuff on a Hugo site. However, I was concerned about the shortcode’s dependence on the aging public syndication API; so, since then, I’ve spent a few days coming up with what I hope will be a better answer: *another* shortcode, called `stweetv2`. It’s very similar to `stweet` but uses the v.2 Twitter Developer API, which should enable it to work for quite some time.
+In the previous post, I offered a [shortcode](https://gohugo.io/content-management/shortcodes/) to perform the static tweets stuff on a Hugo site. However, I was concerned about the shortcode’s dependence on the aging public syndication API; so, since then, I’ve spent a few days coming up with what I hope will be a better answer: *another* shortcode, called `stweetv2`. It’s very similar to `stweet` but uses the v2 Twitter Developer API, which should enable it to work for quite some time.
 
 ### Handling credentials
 
@@ -35,7 +35,7 @@ Using `stweetv2` requires you to have a Twitter Developer account and supply you
 
 > .&nbsp; .&nbsp; . you’ll have to supply .&nbsp; .&nbsp;. [the credentials] to your site host, so it can access them during each build (*e.g.*, here are instructions for [Netlify](https://docs.netlify.com/configure-builds/environment-variables/), [Vercel](https://vercel.com/docs/concepts/projects/environment-variables), and [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/build-configuration#environment-variables)).
 
-But, for Hugo, the potential hang-up is in *local* development, where you obviously want to confirm that everything works *before* you try building your site on the host. Unlike how many JavaScript-based [SSGs](https://jamstack.org/generators/) work, Hugo doesn’t recognize content in a project’s `.env` file, which is typically where you’d store sensitive variables like the `BEARER_TOKEN` variable that `stweetv2` must access in order to “talk to” Twitter’s v.2 Developer API.
+But, for Hugo, the potential hang-up is in *local* development, where you obviously want to confirm that everything works *before* you try building your site on the host. Unlike how many JavaScript-based [SSGs](https://jamstack.org/generators/) work, Hugo doesn’t recognize content in a project’s `.env` file, which is typically where you’d store sensitive variables like the `BEARER_TOKEN` variable that `stweetv2` must access in order to “talk to” Twitter’s v2 Developer API.
 
 Fortunately, after I asked on Hugo’s Discourse forum about how to handle this in local development, I [received some great help](https://discourse.gohugo.io/t/keeping-api-keys-secret-on-github-using-a-env-file/25283/14). Here’s the bottom line: if you’re using macOS or Linux (including Linux on Windows, such as through [WSL](https://docs.microsoft.com/en-us/windows/wsl/install)), install the [`direnv`](https://direnv.net/) shell extension. `direnv` injects the required `BEARER_TOKEN` variable (and any others you may wish to store in `.env`) during your local development process. Once `direnv` is up and running, you’ll be good to go with adding `stweetv2` to your Hugo site.
 
