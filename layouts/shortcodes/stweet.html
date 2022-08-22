@@ -19,6 +19,7 @@
 {{- $RT_text := "" -}}
 {{- $user := .Get "user"  -}}
 {{- $id := .Get "id" -}}
+{{- $mp4Counter := 0 -}}
 {{- $urlOembed := printf "https://twitter.com/%v/status/%v" $user $id -}}
 {{- $query := querify "url" $urlOembed "dnt" true "omit_script" true -}}
 {{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
@@ -116,6 +117,7 @@
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/6vZvoEoAZU">https://t.co/6vZvoEoAZU</a>` `` -}}
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/Ode2sKCtpG">https://t.co/Ode2sKCtpG</a>` `` -}}
 	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/LOmOSrG28e" ">github.com/giscus/giscus/..." -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/oT6ok93vSp">pic.twitter.com/oT6ok93vSp</a>` `` -}}
 
 	{{- $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id -}}
 
@@ -196,18 +198,23 @@
 			{{- with $json.video -}}
 				{{- $video := . -}}
 				{{- with $video.variants -}}
-					<div class="ctr tweet-video-wrapper">
-						{{- range $variants := . -}}
-							{{- if eq $variants.type "video/gif" -}}
-								<video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
-							{{- else -}}
-								<video loop autoplay controls class="ctr tweet-media-img">
-							{{- end }}
-								<source src=" {{ $variants.src }}" type="{{ $variants.type }}">
+					{{ $variants := . }}
+					{{ $vidVarFirst2 := first 2 $variants }}{{/* for mp4 */}}
+					{{ $vidVarLast := last 1 $variants }}{{/* for gif */}}
+					{{ range $vidVarLast }}
+						{{ $varLast := . }}
+						<div class="ctr tweet-video-wrapper">
+						{{- if eq $varLast.type "video/gif" -}}
+							<video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
+						{{- else if eq $varLast.type "video/mp4" -}}
+							<video loop autoplay muted playsinline controls class="ctr tweet-media-img">
+						{{- else -}}
+						{{- end }}
+								<source src=" {{ $varLast.src }}" type="{{ $varLast.type }}">
 								<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
 							</video>
-						{{- end }}
-					</div>
+						</div>
+					{{- end -}}
 				{{- end }}
 			{{- end }}
 			{{- if isset $json "quoted_tweet" -}}
