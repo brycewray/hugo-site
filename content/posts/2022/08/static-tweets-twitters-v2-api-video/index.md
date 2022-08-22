@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2022-08-21T22:43:00-05:00
 lastmod: 2022-08-22T10:36:00-05:00
 #draft: true
-#initTextEditor: **FILL IN**
+#initTextEditor: iA Writer
 ---
 
 Several times this year, and [most recently earlier this month](/posts/2022/08/static-tweets-hugo-tale-two-sources/), I've written about how to embed fully static tweets in one's website, so as to include Twitter content *without* Twitter tracking scripts. I [originally found](/posts/2022/02/gems-in-rough-14/#learning-from-a-friendly-hat-tip) that doing this by accessing Twitter's preferred "v2" API was impaired by one particular shortcoming identified in the [appropriate documentation](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media):
