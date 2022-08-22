@@ -199,18 +199,22 @@
 				{{- $video := . -}}
 				{{- with $video.variants -}}
 					{{ $variants := . }}
-					{{ $vidVarFirst2 := first 2 $variants }}{{/* for mp4 */}}
-					{{ $vidVarLast := last 1 $variants }}{{/* for gif */}}
+					{{ $vidVar_1 := index $variants 1 }}{{/* for `type: video/mp4` */}}
+					{{ if eq (len $variants) 1 }}
+						{{ $vidVar_1 = index $variants 0 }}
+					{{ end }}
+					{{ $vidVarLast := last 1 $variants }}{{/* for `type: gif` */}}
 					{{ range $vidVarLast }}
 						{{ $varLast := . }}
 						<div class="ctr tweet-video-wrapper">
 						{{- if eq $varLast.type "video/gif" -}}
 							<video loop autoplay muted playsinline controlslist="nofullscreen" class="ctr tweet-media-img">
+								<source src=" {{ $vidVarLast.src }}" type="{{ $vidVarLast.type }}">
 						{{- else if eq $varLast.type "video/mp4" -}}
 							<video loop autoplay muted playsinline controls class="ctr tweet-media-img">
+								<source src=" {{ $vidVar_1.src }}" type="{{ $vidVar_1.type }}">
 						{{- else -}}
 						{{- end }}
-								<source src=" {{ $varLast.src }}" type="{{ $varLast.type }}">
 								<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
 							</video>
 						</div>
