@@ -3,7 +3,7 @@ title: "Scrivener and The Cloud"
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."
 author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
+lastmod: 2022-08-22T05:33:00-05:00
 discussionId: "2019-08-scrivener-and-cloud"
 ---
 
@@ -51,7 +51,9 @@ So, let me say the simple part first, and then I'll get into the whys and wheref
 
 So, why the difference?
 
-A Scrivener .scriv "file" on macOS and iOS is actually *not* a file in the usual sense but is, instead, a *ZIP archive*. Through some clever little manipulation of the macOS file structure, it *looks like* a file in the macOS Finder. In fact, those who use the Windows version of Scrivener see its "files" appear on that OS's File Explorer as, yep, ZIPs.
+A Scrivener .scriv "file" on macOS and iOS is actually *not* a file in the usual sense but is, instead, a *package* of files. Through some clever little manipulation of the macOS file structure, it *looks like* a file in the macOS Finder. In fact, those who use the Windows version of Scrivener see its "files" appear on that OS's File Explorer as folders.[^ZIPerror]
+
+[^ZIPerror]: **Note, 2022-08-22**: This corrects my error in the original version of this post, in which I stated erroneously that a Scrivener "file" is a .zip file (thus appearing as a folder-like item in the Windows UI). However, as Kirk McElhearn wrote in "[Syncing Scrivener Projects to the Cloud](https://www.literatureandlatte.com/blog/syncing-scrivener-projects-to-the-cloud)": "Scrivener projects are made up of files and folders. If you use a Mac, iOS, or iPadOS, you see these as 'packages'; they look just like single files, but within each project there are multiple items. On Windows, you see projects as folders, and you can easily navigate within them to see all the items they contain."
 
 And why is that?
 
@@ -108,3 +110,4 @@ And then, the answer --- sometimes even from Scrivener creator Keith Blount hims
 If L&amp;L were a bigger operation, perhaps it would develop a "light" version of Scriv along such lines --- but I doubt it. I get the impression that the L&amp;L folks think, well, if you want a dumber version of this app to which we've given our full measure of devotion all these years, there's a big field of competitors out there; go for it. They're too nice to *say* that (usually, although [certain particularly rude questioners can provoke them](https://www.literatureandlatte.com/forum/viewtopic.php?p=294469#p294469)), but I believe that's their position, and I can't say I disagree. Those Who Do Not Code probably cannot understand such things; and that constitutes a large part of the Scriv audience, as nearly as I can tell through a variety of anecdotal data and observations.
 
 Anyway, I do hope this has helped people understand why, and I say it again, **the Scrivener app for iOS DOESN'T work with iCloud sync**. Don't know how much plainer I can make it --- even for somebody who's savvy enough to be a frequent commenter on Ars Technica.
+	
