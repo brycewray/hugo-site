@@ -20,7 +20,7 @@ Perhaps you saw one or both of my [earlier](/posts/2022/02/static-tweets-elevent
 
 At least for now, Astro seems to be the darling of a considerable portion of the web development world. Better yet for my purposes and yours: after months of alpha-level breaking changes out the wazoo, it's now stabilized considerably. In fact, a few days ago, the Astro team [announced](https://astro.build/blog/astro-1-beta-release/) the first beta release of v.1.0.
 
-As was true for my [recent](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) Hugo [shortcode](https://gohugo.io/content-management/shortcodes/) for this purpose, the Astro **[component](https://docs.astro.build/en/core-concepts/astro-components/)** which follows is fully compliant with v.2 of the [Twitter API](https://developer.twitter.com/en/docs/twitter-api), the version toward which Twitter is trying hard to drive developers.
+As was true for my [recent](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) Hugo [shortcode](https://gohugo.io/content-management/shortcodes/) for this purpose, the Astro **[component](https://docs.astro.build/en/core-concepts/astro-components/)** which follows is fully compliant with v2 of the [Twitter API](https://developer.twitter.com/en/docs/twitter-api), the version toward which Twitter is trying hard to drive developers.
 
 ## The preliminaries
 
@@ -34,7 +34,7 @@ npm i -D date-fns
 
 ### Use a Bearer Token
 
-As was true with the v.2-compliant Hugo shortcode from that [earlier post](/posts/2022/02/static-tweets-eleventy-hugo-part-2/), you'll need a Twitter-assigned [**Bearer Token**](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens), which you'll then set within an [environment variable](https://docs.astro.build/en/guides/environment-variables/) with `PUBLIC_` at the beginning of its name.[^Public]
+As was true with the v2-compliant Hugo shortcode from that [earlier post](/posts/2022/02/static-tweets-eleventy-hugo-part-2/), you'll need a Twitter-assigned [**Bearer Token**](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens), which you'll then set within an [environment variable](https://docs.astro.build/en/guides/environment-variables/) with `PUBLIC_` at the beginning of its name.[^Public]
 
 [^Public]: Based on what I've read in recent weeks, I think the requirement to start the environment variable's name with `PUBLIC_` is related to the interaction between Astro and the [Vite](https://vitejs.dev) package it uses for server operations in both development and production.
 
@@ -47,7 +47,7 @@ As was true with the v.2-compliant Hugo shortcode from that [earlier post](/post
 
 Now, you can **create the component** in, of course, your Astro project's top-level `src/components/` folder (unless you've otherwise [configured](https://docs.astro.build/en/reference/configuration-reference/) the site structure).
 
-The following is my `STweetV2.astro`[^Astro] component, based on the logic and styling of my [previously posted](/posts/2022/02/static-tweets-eleventy-hugo-part-2/#the-stweetv2-shortcode) Hugo shortcode for interacting with v.2 of the Twitter API:
+The following is my `STweetV2.astro`[^Astro] component, based on the logic and styling of my [previously posted](/posts/2022/02/static-tweets-eleventy-hugo-part-2/#the-stweetv2-shortcode) Hugo shortcode for interacting with v2 of the Twitter API:
 
 [^Astro]: As of this writing, this site's syntax highlighting doesn't "know" what an `.astro` file is, so I'm improvising by telling the highlighter it's JavaScript. That's partly true, since the top part *is* JS, but the bottom part is a mixture of JS and HTML.
 
