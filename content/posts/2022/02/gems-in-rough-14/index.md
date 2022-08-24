@@ -3,7 +3,7 @@ title: "Gems in the rough #14"
 description: "Full-time Eleventy, variables in Hugo, learning from a nice tweet, using web fonts with internal CSS."
 author: Bryce Wray
 date: 2022-02-18T12:36:00-06:00
-lastmod: 2022-08-21T22:17:00-05:00
+lastmod: 2022-08-24T08:55:00-05:00
 #initTextEditor: Ulysses
 discussionId: "2022-02-gems-in-rough-14"
 ---
@@ -74,7 +74,7 @@ I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appe
 
 ## Learning from a friendly hat-tip
 
-**Update from the future in general (!)**: I continue to improve upon the [Hugo](https://gohugo.io) shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available when the site is on Hugo --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between Hugo's standard `tweet` shortcode and my own shortcode.\
+**Update from the future in general (!)**: I continue to improve upon the shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between [Hugo](https://gohugo.io)'s [standard `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) and my shortcode.\
 \
 Please use the [site search page](/search/) to find related posts.
 {.yellowBox}
