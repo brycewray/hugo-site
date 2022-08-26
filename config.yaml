@@ -7,7 +7,7 @@ timeZone: America/Chicago
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
-#enableGitInfo: true
+enableGitInfo: true
 
 timeout: "150s" # for the sake of newly generated images and such
 
@@ -29,7 +29,7 @@ frontmatter:
     - publishDate
     - lastmod
   lastmod:
-#    - :git
+    - :git
     - lastmod
     - date
     - publishDate
