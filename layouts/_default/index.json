@@ -35,8 +35,8 @@
   "items": [
     {{ range $index, $element := $pages -}}
     {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` .Title `”">Reply via email</a></p>` -}}
-    {{- /* $contentHTML := printf "%s%s" .Content $emailReplyHTML */ -}}
-		{{- $contentHTML := printf "%s%s%s%s%s" `<p>` .Description `<br /><span style="font-size: 85%;"><a href="` .Permalink `">Full post</a></span></p>` -}}
+    {{- $emailReplyHTML := $emailReplyHTML -}}
+    {{- $contentHTML := printf "%s%s" .Content $emailReplyHTML -}}
     {
       "title": {{ .Title | jsonify }},
       "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",

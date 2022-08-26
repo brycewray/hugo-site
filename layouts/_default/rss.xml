@@ -28,10 +28,8 @@
     {{ range $pages }}
     {{- $titleThis := .Title | .Page.RenderString -}}
     {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` $titleThis `”">Reply via email</a></p>`  -}}
-    {{- /* $contentMD := .Content */ -}}
-		{{ $contentMD := printf "%s%s%s%s%s" `<p>` .Description `<br /><span style="font-size: 85%;"><a href="` .Permalink `">Full post</a></span></p>` }}
-    {{- /* $finalHTMLContent := printf "%s%s" $contentMD $emailReplyHTML */ -}}
-		{{- $finalHTMLContent := $contentMD -}}
+    {{- $contentMD := .Content -}}
+    {{- $finalHTMLContent := printf "%s%s" $contentMD $emailReplyHTML -}}
     <item>
       <title>{{ $titleThis }}</title>
       <link>{{ .Permalink }}</link>
