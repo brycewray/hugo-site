@@ -3,7 +3,7 @@ title: "Using Cloudinary with Astro and Eleventy"
 description: "If Cloudinary’s free tier will serve your website’s needs, my code can make it easier to use."
 author: Bryce Wray
 date: 2022-08-27T16:01:00-05:00
-#lastmod:
+lastmod: 2022-08-27T16:04:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---
@@ -28,7 +28,7 @@ The `Imgc.astro` component is available in its most current form [here](https://
 	alt="Alt text for the image"
 	width="3200"
 	height="1800"
->
+/>
 ```
 
 . . . in which:
