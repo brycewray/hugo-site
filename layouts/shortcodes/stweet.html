@@ -118,6 +118,7 @@
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/Ode2sKCtpG">https://t.co/Ode2sKCtpG</a>` `` -}}
 	{{- $jsonOHTML = replace $jsonOHTML ">https://t.co/LOmOSrG28e" ">github.com/giscus/giscus/..." -}}
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/oT6ok93vSp">pic.twitter.com/oT6ok93vSp</a>` `` -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/YQWONLs0hm">pic.twitter.com/YQWONLs0hm</a>` `` -}}
 
 	{{- $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id -}}
 
