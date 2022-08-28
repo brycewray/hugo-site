@@ -1,22 +1,26 @@
 HTTP/2.0 200 OK
+Accept-Ranges: bytes
 Access-Contol-Allow-Origin: platform.twitter.com
 Access-Control-Allow-Methods: GET
+Age: 18
 Cache-Control: must-revalidate, max-age=60
 Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
 Content-Type: application/json; charset=utf-8
-Date: Sun, 28 Aug 2022 13:33:07 GMT
-Etag: W/"4e9-DeptMSvczgXiz7cawWNLhbxck6g"
-Server: tsa_b
-Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=59
+Date: Sun, 28 Aug 2022 13:53:41 GMT
+Etag: W/"4e9-pL1wxnr4KCJ9MWrKml2qTXO7Qe8"
+Last-Modified: Sun, 28 Aug 2022 13:53:23 GMT
+Server: ECS (dab/4B0A)
+Server-Timing: x-cache;desc= HIT,x-tw-cdn;desc=VZ,edge;dur=1
 Strict-Transport-Security: max-age=631138519
-Vary: Origin, Accept-Encoding
-X-Connection-Hash: 21b332b4e147201af8ca1d4ea46d3946c1691dc138af166ff276436c0573653e
+Vary: Accept-Encoding
+X-Cache: HIT
+X-Connection-Hash: 955abe7751862cd5c38cf1875b6c7050dc75a86ff0a5eba242e650b0967d2ce8
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Express
-X-Response-Time: 35
+X-Response-Time: 30
 X-Tw-Cdn: VZ
 X-Tw-Cdn: VZ
 X-Xss-Protection: 0
 
-{"lang":"en","favorite_count":418497,"self_thread":{"id_str":"1563133769443610625"},"possibly_sensitive":false,"created_at":"2022-08-26T11:58:26.000Z","display_text_range":[0,86],"entities":{"hashtags":[],"urls":[],"user_mentions":[],"symbols":[],"media":[{"display_url":"pic.twitter.com/YQWONLs0hm","expanded_url":"https://twitter.com/EliArieh/status/1563133769443610625/photo/1","indices":[87,110],"url":"https://t.co/YQWONLs0hm"}]},"id_str":"1563133769443610625","text":"For a split second I thought something had gone terribly, biblically wrong with my cat https://t.co/YQWONLs0hm","user":{"id_str":"498772611","name":"Eli Keren","profile_image_url_https":"https://pbs.twimg.com/profile_images/1428333262905163778/yUWAktSq_normal.jpg","screen_name":"EliArieh","verified":false},"photos":[{"backgroundColor":{"red":204,"green":214,"blue":221},"cropCandidates":[{"x":0,"y":747,"w":1536,"h":860},{"x":0,"y":409,"w":1536,"h":1536},{"x":0,"y":297,"w":1536,"h":1751},{"x":512,"y":0,"w":1024,"h":2048},{"x":0,"y":0,"w":1536,"h":2048}],"expandedUrl":"https://twitter.com/EliArieh/status/1563133769443610625/photo/1","url":"https://pbs.twimg.com/media/FbFd3_VXoAAPj5Z.jpg","width":1536,"height":2048}],"conversation_count":1920,"news_action_type":"conversation"}
+{"lang":"en","favorite_count":418740,"self_thread":{"id_str":"1563133769443610625"},"possibly_sensitive":false,"created_at":"2022-08-26T11:58:26.000Z","display_text_range":[0,86],"entities":{"hashtags":[],"urls":[],"user_mentions":[],"symbols":[],"media":[{"display_url":"pic.twitter.com/YQWONLs0hm","expanded_url":"https://twitter.com/EliArieh/status/1563133769443610625/photo/1","indices":[87,110],"url":"https://t.co/YQWONLs0hm"}]},"id_str":"1563133769443610625","text":"For a split second I thought something had gone terribly, biblically wrong with my cat https://t.co/YQWONLs0hm","user":{"id_str":"498772611","name":"Eli Keren","profile_image_url_https":"https://pbs.twimg.com/profile_images/1428333262905163778/yUWAktSq_normal.jpg","screen_name":"EliArieh","verified":false},"photos":[{"backgroundColor":{"red":204,"green":214,"blue":221},"cropCandidates":[{"x":0,"y":747,"w":1536,"h":860},{"x":0,"y":409,"w":1536,"h":1536},{"x":0,"y":297,"w":1536,"h":1751},{"x":512,"y":0,"w":1024,"h":2048},{"x":0,"y":0,"w":1536,"h":2048}],"expandedUrl":"https://twitter.com/EliArieh/status/1563133769443610625/photo/1","url":"https://pbs.twimg.com/media/FbFd3_VXoAAPj5Z.jpg","width":1536,"height":2048}],"conversation_count":1920,"news_action_type":"conversation"}
