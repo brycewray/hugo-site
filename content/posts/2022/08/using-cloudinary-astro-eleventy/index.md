@@ -1,5 +1,5 @@
 ---
-title: "Using Cloudinary with Astro and Eleventy"
+title: "Using Cloudinary with Astro and Eleventy"
 description: "If Cloudinary’s free tier will serve your website’s needs, my code can make it easier to use."
 author: Bryce Wray
 date: 2022-08-27T16:01:00-05:00
@@ -192,7 +192,7 @@ module.exports = async (url, alt, width, height, phn) => {
 		stringtoRet += `<div class="${divClass}">`
 	} else {
 		imgClass = `w-full h-auto animate-fade`
-		stringtoRet += `<style nonce="DhcnhD3khTMePgXw">
+		stringtoRet += `<style>
     .imgB-${imgBmd5} {
       background: url(data:image/jpeg;base64,${LQIP_b64});
       background-repeat: no-repeat;
