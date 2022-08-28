@@ -1,6 +1,6 @@
 ---
 title: "Fireship covers Astro (again)"
-description: "Last week it was Hugo; this week, it’s Astro — as perhaps the “ultimate web framework.”"
+description: "Last week, it was Hugo; this week, it’s Astro — as perhaps the “ultimate web framework.”"
 author: Bryce Wray
 date: 2022-08-19T09:47:00-05:00
 draft: false
