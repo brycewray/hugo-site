@@ -1,0 +1,20 @@
+HTTP/2.0 200 OK
+Api-Version: 2.49
+Cache-Control: no-cache, no-store, max-age=0
+Content-Disposition: attachment; filename=json.json
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:07 UTC
+Server: tsa_b
+Set-Cookie: guest_id=v1%3A166169358726083521; Max-Age=34214400; Expires=Thu, 28 Sep 2023 13:33:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Strict-Transport-Security: max-age=631138519
+X-Access-Level: read
+X-Connection-Hash: 42d69214514627deee8f43a46df5730d2208faa69da12a13b28776f89bb65b85
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Rate-Limit-Limit: 300
+X-Rate-Limit-Remaining: 297
+X-Rate-Limit-Reset: 1661694486
+X-Response-Time: 61
+X-Xss-Protection: 0
+
+{"data":[{"entities":{"mentions":[{"start":29,"end":38,"username":"GoHugoIO","id":"809067163235581952"}],"urls":[{"start":165,"end":188,"url":"https://t.co/Ode2sKCtpG","expanded_url":"https://cloudcannon.com/community/learn/hugo-and-remote-data-files/","display_url":"cloudcannon.com/community/lear…","status":200,"title":"Hugo and Remote Data Files","description":"Learn how to use getJSON or getCSV to get remote data with Hugo.","unwound_url":"https://cloudcannon.com/community/learn/hugo-and-remote-data-files/"}]},"author_id":"1014292639","text":"Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do.\nLearn more about this feature \uD83D\uDC47\nhttps://t.co/Ode2sKCtpG","created_at":"2022-06-07T19:00:00.000Z","id":"1534248828559400960","source":"Twitter Web App"}],"includes":{"users":[{"profile_image_url":"https://pbs.twimg.com/profile_images/1359623126959620096/BkmEsxs1_normal.jpg","name":"CloudCannon","username":"CloudCannon","id":"1014292639"}]}}

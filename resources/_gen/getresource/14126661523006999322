@@ -1,0 +1,24 @@
+HTTP/2.0 200 OK
+Accept-Ranges: bytes
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:06 GMT
+Etag: W/"6c3-FX1QqjadNh7+gAi1wJ3YcC6xN7A"
+Last-Modified: Sun, 28 Aug 2022 11:04:47 GMT
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=108
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: cfcc5594d2ccea14b0f7aec9438663010ed76b692c2c9ef48b866d24f3f66ed5
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 85
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"in_reply_to_screen_name":"BryceWrayTX","in_reply_to_status_id_str":"1140023324988313601","in_reply_to_user_id_str":"2391572880","lang":"en","favorite_count":0,"self_thread":{"id_str":"1140023324988313601"},"created_at":"2019-06-23T22:00:45.000Z","display_text_range":[0,243],"entities":{"hashtags":[],"urls":[],"user_mentions":[],"symbols":[]},"id_str":"1142915419784863745","text":"Deleted my personal Google account today. We still have a couple accounts in the family for necessity (contacts, access to a gifted Google Home Mini, etc.), but the main one is gone. Facebook last fall, Google now. The disengagement continues.","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false},"conversation_count":0,"news_action_type":"conversation","parent":{"lang":"en","reply_count":1,"retweet_count":0,"favorite_count":0,"self_thread":{"id_str":"1140023324988313601"},"created_at":"2019-06-15T22:28:35.000Z","display_text_range":[0,207],"entities":{"hashtags":[{"indices":[198,207],"text":"UnGoogle"}],"urls":[],"user_mentions":[{"id_str":"14504859","indices":[185,196],"name":"DuckDuckGo","screen_name":"DuckDuckGo"}],"symbols":[]},"id_str":"1140023324988313601","text":"Can’t totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to @DuckDuckGo. #UnGoogle","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false}}}

@@ -1,0 +1,20 @@
+HTTP/2.0 200 OK
+Api-Version: 2.49
+Cache-Control: no-cache, no-store, max-age=0
+Content-Disposition: attachment; filename=json.json
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:07 UTC
+Server: tsa_b
+Set-Cookie: guest_id=v1%3A166169358698409910; Max-Age=34214400; Expires=Thu, 28 Sep 2023 13:33:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Strict-Transport-Security: max-age=631138519
+X-Access-Level: read
+X-Connection-Hash: 42d69214514627deee8f43a46df5730d2208faa69da12a13b28776f89bb65b85
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Rate-Limit-Limit: 300
+X-Rate-Limit-Remaining: 299
+X-Rate-Limit-Reset: 1661694486
+X-Response-Time: 59
+X-Xss-Protection: 0
+
+{"data":[{"id":"1487140202141425673","created_at":"2022-01-28T19:07:08.000Z","text":"Got my swag! @CloudflareDev #CloudflareDevChallenge2021 https://t.co/Dit0BhDVLg","attachments":{"media_keys":["3_1487140197125005314"]},"entities":{"mentions":[{"start":13,"end":27,"username":"CloudflareDev","id":"300637864"}],"hashtags":[{"start":28,"end":55,"tag":"CloudflareDevChallenge2021"}],"urls":[{"start":56,"end":79,"url":"https://t.co/Dit0BhDVLg","expanded_url":"https://twitter.com/BryceWrayTX/status/1487140202141425673/photo/1","display_url":"pic.twitter.com/Dit0BhDVLg","media_key":"3_1487140197125005314"}]},"author_id":"2391572880","source":"Twitter for iPhone"}],"includes":{"media":[{"media_key":"3_1487140197125005314","type":"photo","url":"https://pbs.twimg.com/media/FKNiIUzXIAIyffc.jpg"}],"users":[{"name":"Bryce Wray","id":"2391572880","profile_image_url":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","username":"BryceWrayTX"}]}}

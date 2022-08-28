@@ -1,0 +1,20 @@
+HTTP/2.0 200 OK
+Cache-Control: must-revalidate, max-age=3153600000
+Content-Disposition: attachment; filename=json.json
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:06 GMT
+Expires: Tue, 04 Aug 2122 13:33:07 GMT
+Last-Modified: Sun, 28 Aug 2022 13:33:07 GMT
+Server: tsa_b
+Set-Cookie: guest_id_marketing=v1%3A166169358757299491; Max-Age=63072000; Expires=Tue, 27 Aug 2024 13:33:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id_ads=v1%3A166169358757299491; Max-Age=63072000; Expires=Tue, 27 Aug 2024 13:33:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: personalization_id="v1_PVXOispW2sytCdW7TG3hLQ=="; Max-Age=63072000; Expires=Tue, 27 Aug 2024 13:33:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id=v1%3A166169358757299491; Max-Age=63072000; Expires=Tue, 27 Aug 2024 13:33:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Strict-Transport-Security: max-age=631138519
+X-Connection-Hash: ba89e78e8d7dd6bdbfd4e89d93381f708145c7401dfb8b006160c37d8ed915a0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Response-Time: 17
+X-Xss-Protection: 0
+
+{"url":"https:\/\/twitter.com\/BryceWrayTX\/status\/1165357162551545857","author_name":"Bryce Wray","author_url":"https:\/\/twitter.com\/BryceWrayTX","html":"\u003Cblockquote class=\"twitter-tweet\" data-dnt=\"true\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EReactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics — former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it.\u003C\/p\u003E&mdash; Bryce Wray (@BryceWrayTX) \u003Ca href=\"https:\/\/twitter.com\/BryceWrayTX\/status\/1165357162551545857?ref_src=twsrc%5Etfw\"\u003EAugust 24, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"}

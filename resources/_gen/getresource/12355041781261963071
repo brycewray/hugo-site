@@ -1,0 +1,22 @@
+HTTP/2.0 200 OK
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:07 GMT
+Etag: W/"6dc-YOSQOTI+Gh5Yu8OCFZkrPJO6f9s"
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=106
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: a1250e1b275cf1ec33b69a3ebc90f36d0d239c821e117260a450066235cd6e2b
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 82
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"in_reply_to_screen_name":"BryceWrayTX","in_reply_to_status_id_str":"1165327910078681088","in_reply_to_user_id_str":"2391572880","lang":"en","favorite_count":0,"self_thread":{"id_str":"1165327910078681088"},"created_at":"2019-08-24T18:22:57.000Z","display_text_range":[8,204],"entities":{"hashtags":[],"urls":[],"user_mentions":[{"id_str":"20536157","indices":[0,7],"name":"Google","screen_name":"Google"}],"symbols":[]},"id_str":"1165328656392232960","text":"@Google …one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things—and, while you can use it as a “guest,\" that’s not ideal (by design, of course).","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false},"conversation_count":0,"news_action_type":"conversation","parent":{"lang":"en","reply_count":3,"retweet_count":0,"favorite_count":1,"self_thread":{"id_str":"1165327910078681088"},"created_at":"2019-08-24T18:19:59.000Z","display_text_range":[0,188],"entities":{"hashtags":[{"indices":[167,188],"text":"PragmaticButNotProud"}],"urls":[],"user_mentions":[{"id_str":"20536157","indices":[43,50],"name":"Google","screen_name":"Google"}],"symbols":[]},"id_str":"1165327910078681088","text":"Full disclosure: I dumped my long-standing @Google account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. #PragmaticButNotProud","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false}}}

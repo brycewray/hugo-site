@@ -1,0 +1,25 @@
+HTTP/2.0 200 OK
+Accept-Ranges: bytes
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:07 GMT
+Etag: W/"2ec-BYcm90OnAxiqUuEn8ku8ZdXwZ7M"
+Last-Modified: Sun, 28 Aug 2022 11:04:48 GMT
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=61
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: e890cd00795e288347dfc76a9065d77767b8672dd4e14125baedb9db7bbd7847
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 37
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":1,"created_at":"2019-08-24T20:16:13.000Z","display_text_range":[0,274],"entities":{"hashtags":[],"urls":[],"user_mentions":[],"symbols":[]},"id_str":"1165357162551545857","text":"Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics — former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it.","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false},"conversation_count":0,"news_action_type":"conversation"}

@@ -1,0 +1,25 @@
+HTTP/2.0 200 OK
+Accept-Ranges: bytes
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:06 GMT
+Etag: W/"31e-8PmpfCJRNX0+zQH+MiehGSVzIJE"
+Last-Modified: Sun, 28 Aug 2022 11:04:47 GMT
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=83
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: 71ddc24089fb4b4a6da587e209d84b47836582072d28f509744a7b1c4da73be1
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 59
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":0,"created_at":"2019-04-05T12:20:42.000Z","display_text_range":[0,279],"entities":{"hashtags":[{"indices":[261,279],"text":"DontFailMeNowBigU"}],"urls":[],"user_mentions":[],"symbols":[]},"id_str":"1114140807764893696","text":"I may be crazy, but have been stress-testing Ulysses and am giving it one more chance **not** to eat my stuff before I pull the plug on my subscription (ends in late May). It’s hard to quit an app that makes writing such a pleasure, even one with known issues. #DontFailMeNowBigU","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false},"conversation_count":0,"news_action_type":"conversation"}

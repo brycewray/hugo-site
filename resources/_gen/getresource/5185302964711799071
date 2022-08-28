@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sun, 28 Aug 2022 13:33:06 GMT
+Etag: W/"5c7-3DhqyYPOoYOUbzy8VODNS7XSu7w"
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=59
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: 668d87dc9286698297471de9ccd81e7c9cee87a139b1181fd9b0a6c26adf95b1
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 34
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":44,"possibly_sensitive":false,"created_at":"2021-12-10T21:21:33.000Z","display_text_range":[0,246],"entities":{"hashtags":[],"urls":[],"user_mentions":[{"id_str":"809067163235581952","indices":[5,14],"name":"GoHugo.io","screen_name":"GoHugoIO"}],"symbols":[],"media":[{"display_url":"pic.twitter.com/tryfucEzv5","expanded_url":"https://twitter.com/regisphilibert/status/1469417024518565900/photo/1","indices":[246,269],"url":"https://t.co/tryfucEzv5"}]},"id_str":"1469417024518565900","text":"With @GoHugoIO latest and its supercharged `resource.Get` there's no more limit to what your favorite SSG can fetch from the cloud! \n\nAny kind of files really, but a full fledged fetch like API is really what I was waiting for. \n\nAnd boy am I 🤩. https://t.co/tryfucEzv5","user":{"id_str":"303455170","name":"Régis Philibert","profile_image_url_https":"https://pbs.twimg.com/profile_images/704685130401636352/5E5SBP0H_normal.jpg","screen_name":"regisphilibert","verified":false},"photos":[{"backgroundColor":{"red":204,"green":214,"blue":221},"cropCandidates":[{"x":0,"y":0,"w":1200,"h":672},{"x":0,"y":0,"w":1200,"h":1200},{"x":0,"y":0,"w":1200,"h":1368},{"x":40,"y":0,"w":800,"h":1600},{"x":0,"y":0,"w":1200,"h":1600}],"expandedUrl":"https://twitter.com/regisphilibert/status/1469417024518565900/photo/1","url":"https://pbs.twimg.com/media/FGRq4e2WQAECHYr.jpg","width":1200,"height":1600}],"conversation_count":1,"news_action_type":"conversation"}
