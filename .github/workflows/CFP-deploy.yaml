@@ -20,8 +20,8 @@ on:
   push:
     branches:
       - main
-  # schedule:
-  #   - cron: '0 12 * * *' # every day at 12:00 UTC (0700CDT/0600CST)
+  schedule:
+    - cron: '0 12 * * *' # every day at 12:00 UTC (0700CDT/0600CST)
     # The above is to make sure static tweets' images don't run afoul
     # of Twitter's caching strategy
   #   - cron: '0 0 * * *'   # every day at 00:00UTC (1900CDT/1800CST)
@@ -30,7 +30,7 @@ on:
   workflow_dispatch:
 
 env:
-  HUGO_VERSION: 0.102.0 # will get Extended Version below
+  HUGO_VERSION: 0.102.1 # will get Extended Version below
   DART_SASS_VERSION: 1.54.5
   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
   TOKEN: ${{ secrets.TOKEN }}
