@@ -29,7 +29,6 @@ Note that `SToot.astro` assumes you have the [`date-fns`](https://github.com/dat
 ---
 import { format } from "date-fns";
 import md5 from "md5";
-import '@styles/Twitter.scss';
 
 export interface Props {
 	instance: string;
