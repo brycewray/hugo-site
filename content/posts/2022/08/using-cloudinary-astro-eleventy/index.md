@@ -136,7 +136,7 @@ let imgBkgd = `url(data:image/jpeg;base64,${LQIP_b64})`;
 
 The `imgc.js` shortcode is available in its most current form [here](https://github.com/brycewray/eleventy_site/blob/main/src/assets/utils/imgc.js). You call the shortcode as follows:
 
-```md
+```twig
 {% imgc "imagefilename.jpg", "Alt text for the image", 3200, 1800 %}
 ```
 
