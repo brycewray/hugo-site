@@ -3,6 +3,7 @@ title: "Static embeds in Eleventy"
 description: "In what could and perhaps should be the end of this saga, here’s code to provide static tweets and static Mastodon toots in Eleventy."
 author: Bryce Wray
 date: 2022-08-27T12:33:00-05:00
+lastmod: 2022-08-30T13:27:00-05:00
 #draft: true
 #initTextEditor: **iA Writer**
 ---
@@ -15,6 +16,9 @@ Of course, be sure to enable each of these in your Eleventy config file through 
 {.yellowBox}
 
 And, yes, this may finally be the end of my posts on this subject, half a year after [I started down this path](/posts/2022/02/static-tweets-eleventy-hugo/). Feel free to rejoice. I'll be right there with ya.
+
+**Update, 2022-08-30**: Actually, I decided I should do [at least one more such post](/posts/2022/08/static-tweets-atro-two-sources-edition/).
+{.yellowBox}
 
 ## Static tweets
 
