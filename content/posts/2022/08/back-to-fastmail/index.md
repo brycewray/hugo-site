@@ -3,6 +3,7 @@ title: "Back to Fastmail"
 description: "For a variety of reasons, I revert to the email provider I’ve trusted for nearly five years — and an email client I’ve loved for over three years."
 author: Bryce Wray
 date: 2022-08-30T15:01:00-05:00
+#lastmod: 2022-08-30T15:29:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---
@@ -15,7 +16,7 @@ Still, as I noted in both of those earlier posts, my current Fastmail subscripti
 
 Here are the factors I took into account.
 
-First, for those of you who are considering the iCloud+ route for your own custom domain(s), be assured that my experience therein went just fine. Given the pre-known caveats that (a.) I had to accept having my custom domains be essentially just aliases for iCloud Mail and (b.) iCloud is a bit too aggressive about deciding some emails are spam, all worked quite smoothly. As far as I know, I had no trouble sending or receiving emails using either of the two domains. In short: this return to Fastmail is definitely **not** because of any problems I had with my custom domains' being on iCloud Mail.
+First, for those of you who are considering the iCloud+ route for your own custom domain(s), be assured that my experience therein went just fine. Given the pre-known caveats that (a.) I had to accept having my custom domains be essentially only aliases for iCloud Mail and (b.) iCloud is a bit too aggressive about deciding some emails are spam, all worked quite smoothly. As far as I know, I had no trouble sending or receiving emails using either of the two domains. In short: this return to Fastmail is definitely **not** because of any problems I had with my custom domains' being on iCloud Mail.
 
 So why, then, did I go back?
 
@@ -29,7 +30,7 @@ Well, sir, there was just one big problem with that: for [over three years now](
 
 One other factor, although not nearly as significant, was the [Masked Email integration](https://blog.1password.com/fastmail-masked-email/) between Fastmail and [1Password](https://1password.com), my [password manager of choice](/posts/2022/05/gems-in-rough-18/#loose-ends). While there's a somewhat similar provision in Apple's [Hide My Email service](https://support.apple.com/en-us/HT210425), Masked Email is [considerably more feature-filled](https://www.coywolf.news/productivity/fastmail-masked-email-privacy-service-1password-integration/) *and*, I think, easier to use. Moreover, unlike Hide My Email, Masked Email isn't tied to the Apple ecosystem, should I ever need to stray therefrom. (I've currently no intention of doing so, but --- just sayin'.)
 
-Finally: while I [originally said](/posts/2022/06/using-icloud-mail-custom-domain/#as-always-reality-aint-pretty) that leaving iCloud Mail for one's previous provider was "tedious," I actually found that **not** to be the case where returning to Fastmail was concerned. In the case of the `brycewray.com` domain, I had only to make a few quick changes to its related DNS records. As my main address's domain, I simply went back to having Fastmail handle *all* its DNS records, which made that return even simpler. While I'd found the Fastmail-to-iCloud-Mail switch a little nerve-wracking for a few minutes, the iCloud-Mail-to-Fastmail switch was virtually painless, not to mention super-swift. (Of course, for each domain, I [refreshed the caches on the "big three" DNS resolvers](/posts/2020/12/gems-in-rough/#dns-cache-whatnbspdnsnbspcache) to speed things along even more.)
+Finally: while I [originally said](/posts/2022/06/using-icloud-mail-custom-domain/#as-always-reality-aint-pretty) that leaving iCloud Mail for one's previous provider was "tedious," I actually found that **not** to be the case where returning to Fastmail was concerned. In the case of the `brycewray.com` domain, I had only to make a few quick changes to its related DNS records. As my main address's domain, I simply went back to having Fastmail handle *all* its DNS records, which made that return even more of a no-brainer. While I'd found the Fastmail-to-iCloud-Mail switch a little nerve-wracking for a few minutes, the iCloud-Mail-to-Fastmail switch was virtually painless, not to mention super-swift. (Of course, for each domain, I [refreshed the caches on the "big three" DNS resolvers](/posts/2020/12/gems-in-rough/#dns-cache-whatnbspdnsnbspcache) to speed things along even more.)
 
 Indeed, the only glitch I encountered in the whole process was in using Apple's Mac Mail app, not anything relating to either iCloud Mail or Fastmail. After the switch, I tried sending a test email to my regular `@icloud.com` email address from one of the returned domains, but Fastmail kept rejecting the attempt due to a failure of SMTP authentication. It appeared I had all the right passwords[^FMPW] and settings, but I dug a little deeper and found that for Mac Mail, you have to use the **Edit SMTP Server List** feature to set **Authentication** to *Password*. Fortunately, MailMate still "remembered" its previous SMTP settings from the last time I'd used it with Fastmail, so the old champ gave me no truck whatsoever.
 
