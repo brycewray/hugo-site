@@ -3,7 +3,7 @@ title: "The Holy Mail"
 description: "The way I sort-of cured the email client dance."
 author: Bryce Wray
 date: 2019-05-10T07:20:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
+lastmod: 2022-08-30T13:35:00-05:00
 discussionId: "2019-05-the-holy-mail"
 ---
 
@@ -93,3 +93,5 @@ Do I ever look at other apps any more? Oh, sure. It's what I sometimes call "the
 [^attach]: To be fair, there once were times when I found Outlook useful on the Mac, particularly in sending emails with attachments since [Apple Mail on macOS is a little squirrelly about how it handles that task](https://www.makeuseof.com/tag/apple-mail-attachments/). However, the way Microsoft has kept Outlook's Mac feature set inferior to that of the Windows version hacked me off to no end, so I finally deleted all accounts from it. Now, it just sits there on the Mac, unopened and unlamented.
 
 Are the Apple Mail clients perfect? Absolutely not. Are they more feature-rich than the competition? No, definitely not. But they *work well enough* for my purposes, and they've relieved me of that search for the Holy Grail --- the Holy Mail? --- for a good while now. That's all I wanted. So, if you're also searching for that same chalice, perhaps you'll find this little tale of use.
+
+**Update from the future**: [A few weeks after I initially published this post](https://fastmail.blog/company/fastmail-new-logo/), the provider changed its name from *FastMail* to *Fastmail*.

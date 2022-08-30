@@ -3,7 +3,7 @@ title: "Battle of the iOS email heavyweights"
 description: "AltaMail vs. Preside: there’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray
 date: 2020-05-14T17:45:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
+lastmod: 2022-08-30T13:39:00-05:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
 ---
 
@@ -170,7 +170,7 @@ Where Preside is concerned, the elephant in the room for me is *notifications* -
 
 In Preside's FAQs-serving-as-documentation, its dev makes what I concede is a [well-argued case](https://preside.io/faq.html#Notifications) against even using notifications *at all*, since he believes that *all* notifications compromise one's productivity. As a result, you won't be surprised to know that Preside is lacking where notifications are concerned --- at least, *real-time* notifications.[^HolyMail]
 
-[^HolyMail]: As I've [explained before](/posts/2019/05/the-holy-mail/), I wanted real-time email notifications in iOS badly enough to switch email vendors after over a decade. My choice, FastMail, [worked with Apple](https://blog.fastmail.com/2015/07/17/push-email-now-available-in-ios-mail) to enable real-time notifications capability for its servers’ emails in the Apple Mail app.
+[^HolyMail]: As I've [explained before](/posts/2019/05/the-holy-mail/), I wanted real-time email notifications in iOS badly enough to switch email vendors after over a decade. My choice, Fastmail, [worked with Apple](https://blog.fastmail.com/2015/07/17/push-email-now-available-in-ios-mail) to enable real-time notifications capability for its servers’ emails in the Apple Mail app.
 
 The two Preside notifications options that were readily available to me[^OtherMethods], **Background iOS Fetch** and **Assisted iOS Fetch** (the latter requires a free online account), both provided considerably tardier notifications than either Apple Mail or AltaMail. The gap in my testing ranged as long as forty-eight minutes with **Background iOS Fetch**, the less "active" of the two choices; however, it *sometimes* was as short as only a few seconds --- but more normally was a few minutes --- with **Assisted iOS Fetch**.
 
