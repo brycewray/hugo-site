@@ -3,9 +3,7 @@ title: "Gems in the rough #17"
 description: "A GitHub Discussions oddity, Netlify Edge Functions, feed readers with built-in browsers."
 author: Bryce Wray
 date: 2022-04-28T15:26:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-04-gems-in-rough-17"
 ---
 
 {{% disclaimer %}}

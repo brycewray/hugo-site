@@ -3,8 +3,6 @@ title: "Headers up"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-05-01T11:43:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-05-headers-up"
 ---
 
 As I wrote [a few months ago](/posts/2021/01/beta-testing-cloudflare-pages), [Cloudflare Pages](https://pages.cloudflare.com) --- which has since [emerged from beta testing](https://blog.cloudflare.com/cloudflare-pages-ga/) --- is yet another in a growing list of [places](/posts/2020/09/normal-persons-guide-static-website-hosting) where you can host [static websites](/posts/2020/09/normal-persons-guide-static-websites). Back then, I dinged it for not giving you the ability to edit the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) of a Pages site's content so you can control how a browser [caches](https://web.dev/http-cache/) that content for better performance.

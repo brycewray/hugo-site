@@ -3,8 +3,6 @@ title: "Goodbye and hello • Part 4"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
 date: 2020-09-05T09:00:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-09-goodbye-hello-4"
 ---
 
 {{% disclaimer %}}

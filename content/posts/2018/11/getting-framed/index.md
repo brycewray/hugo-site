@@ -3,8 +3,6 @@ title: "Getting framed"
 description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
 date: 2018-11-14T09:15:00-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2018-11-getting-framed"
 ---
 
 In an ideal world, web developers would never use [CSS frameworks](https://www.keycdn.com/blog/front-end-frameworks). There would be ample time, patience, and money for building everything from scratch to suit every single site to a tee. All load times would be instantaneous, and all browsers would be compatible with whatever a web dev chose to do.

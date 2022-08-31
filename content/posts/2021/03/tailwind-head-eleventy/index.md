@@ -3,8 +3,6 @@ title: "Tailwind-to-head with Eleventy"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site — and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-03-tailwind-head-eleventy"
 ---
 
 Last month, I posted "[Tailwind-to-head with Hugo Pipes](/posts/2021/02/tailwind-head-hugo-pipes/)," an explanation of how to achieve internal CSS --- styles injected into the HTML `head` rather than existing in a separate .css file --- in a [Hugo](https://gohugo.io)-based site. In particular, this procedure involved CSS from the popular [Tailwind CSS](https://tailwindcss.com) framework, although I also showed how to do it with [SCSS](https://sass-lang.com). Each method was easy because of Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes).

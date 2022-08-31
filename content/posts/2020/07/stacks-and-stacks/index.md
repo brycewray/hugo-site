@@ -3,8 +3,6 @@ title: "Stacks and stacks"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-07-stacks-and-stacks"
 ---
 
 Thought I'd take this (U.S.) holiday weekend to do a brief comparison of this site's current "tech stack" with what I was using a year ago today. Since the site wasn't yet using `package.json`  in 2019, this is a little trickier than it would be otherwise, but I appear to have it reconstructed.

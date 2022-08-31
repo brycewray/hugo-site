@@ -3,8 +3,6 @@ title: "Webmentions in three SSGs: Part 3"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs) — in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-04-webmentions-three-ssgs-3"
 ---
 
 {{% disclaimer %}}

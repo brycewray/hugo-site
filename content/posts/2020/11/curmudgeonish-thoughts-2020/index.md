@@ -3,9 +3,6 @@ title: "Curmudgeonish thoughts for 2020"
 description: "Pet peeves seem tiny at a time like this, but I have them nonetheless."
 author: Bryce Wray
 date: 2020-11-01T08:45:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-draft: false
-discussionId: "2020-11-curmudgeonish-thoughts-2020"
 ---
 
 As years go, boy, 2020 has been one; and, as I post, its most bizarre parts may yet lie in wait. That's why it seems a good time --- as in, "the rant before the storm" --- to issue my third annual edition of "Curmudgeonish thoughts," working off the tradition (?) of the [2018 original](/posts/2018/11/some-curmudgeonish-thoughts/) and its [2019 sequel](/posts/2019/11/curmudgeonish-2019/).

@@ -3,9 +3,7 @@ title: "Retrospective: 2021"
 description: "Reflections on some of the items discussed here in the outgoing year."
 author: Bryce Wray
 date: 2021-12-29T15:43:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
 #initTextEditor: Ulysses
-discussionId: "2021-12-retrospective-2021"
 ---
 
 Here’s my annual summary of the outgoing year’s posts. Please note that I’m handling this edition quite differently from how I reflected back on my writings of [2019](/posts/2019/12/sorta-strange-ssg-trip/) and [2020](/posts/2020/12/through-with-2020/). Since this year is when I first began linking an [HTML sitemap](/sitemap)[^1] from the bottom of each page, I’ll spare you the post-by-post description given by the previous year-enders and, instead, give you a more general look at some of my over-arching topics for 2021.

@@ -3,8 +3,6 @@ title: "Conversation piece"
 description: "Commenting options for your static website."
 author: Bryce Wray
 date: 2020-10-13T16:30:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-10-conversation-piece"
 ---
 
 {{% disclaimer %}}

@@ -3,8 +3,6 @@ title: "Back to Fastmail"
 description: "For a variety of reasons, I revert to the email provider I’ve trusted for nearly five years — and an email client I’ve loved for over three years."
 author: Bryce Wray
 date: 2022-08-30T15:01:00-05:00
-#lastmod: 2022-08-30T15:29:00-05:00
-#draft: true
 #initTextEditor: iA Writer
 ---
 

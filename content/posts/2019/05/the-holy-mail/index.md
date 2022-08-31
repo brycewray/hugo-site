@@ -3,8 +3,6 @@ title: "The Holy Mail"
 description: "The way I sort-of cured the email client dance."
 author: Bryce Wray
 date: 2019-05-10T07:20:00-05:00
-lastmod: 2022-08-30T13:45:00-05:00
-discussionId: "2019-05-the-holy-mail"
 ---
 
 Dr. McCoy said it so well in *Star Trek: The Motion Picture*: "I know geeks: they *love* to change things."

@@ -3,8 +3,6 @@ title: "Back with Hugo"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-09-back-with-hugo"
 ---
 
 {{% disclaimer %}}

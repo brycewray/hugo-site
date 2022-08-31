@@ -3,7 +3,6 @@ title: "Want to reach me?"
 description: "Here are several ways to get in contact."
 author: Bryce Wray
 date: 2020-12-30T09:00:00-06:00
-lastmod: 2022-07-22T23:00:00-05:00
 ---
 
 ## Send me an email

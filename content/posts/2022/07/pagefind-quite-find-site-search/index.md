@@ -3,8 +3,6 @@ title: "Pagefind is quite a find for site search"
 description: "It used to be that having search on a static site was a hassle — and perhaps an expensive one — but Pagefind has changed all that."
 author: Bryce Wray
 date: 2022-07-28T20:32:00-05:00
-lastmod: 2022-08-05T12:10:00-05:00
-#draft: true
 #initTextEditor: iA Writer
 ---
 

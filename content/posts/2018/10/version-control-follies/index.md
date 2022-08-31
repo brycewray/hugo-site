@@ -3,8 +3,6 @@ title: "The version-control follies"
 description: "Why you should go GUI with version control."
 author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2018-10-version-control-follies"
 ---
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don't feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving web pages are much better now, and are continuing to improve.

@@ -3,8 +3,6 @@ title: "Some curmudgeonish thoughts"
 description: "“Didja ever notice...?” Yes, I did. And here’s the result."
 author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
-lastmod: 2022-07-27T08:14:00-05:00
-discussionId: "2018-11-some-curmudgeonish-thoughts"
 ---
 
 Here are a few odds and ends --- some a tad acerbic, some not so much. And I swear I'm not trying to sound like the late [Andy Rooney](https://en.wikipedia.org/wiki/Andy_Rooney), or even a parody thereof&nbsp;.&nbsp;.&nbsp;.

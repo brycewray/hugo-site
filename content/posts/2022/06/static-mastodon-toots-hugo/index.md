@@ -3,9 +3,7 @@ title: "Static Mastodon toots in Hugo"
 description: "Just like tweet embeds, toot embeds are best when they’re purely static."
 author: Bryce Wray
 date: 2022-06-03T09:47:00-05:00
-lastmod: 2022-08-29T14:06:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-06-static-mastodon-toots-hugo"
 ---
 
 **Note**: This is a follow-up to my [three](/posts/2022/02/static-tweets-eleventy-hugo/) [earlier](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) [posts](/posts/2022/04/static-tweets-astro/) about how to perform fully static embeds of tweets in a variety of [static site generators](https://jamstack/org/generators) (SSGs).

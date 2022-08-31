@@ -3,9 +3,7 @@ title: "The site this week: 2022-05-28"
 description: "A “just write” commitment, the IndieWeb, some code explainers, and Cloudflare Pages glitches."
 author: Bryce Wray
 date: 2022-05-28T16:50:00-05:00
-lastmod: 2022-07-27T08:57:00-05:00
 #initTextEditor: VS Code
-discussionId: "2022-05-site-week-2022-05-28"
 ---
 
 After this site went to [cut-the-crap-and-just-write (CTCAJW) Mode](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/), I suddenly wrote here more frequently --- several days in a row, including **twice** in one day (which I'd never done before). While I truly had topics worth covering, the more likely cause of this sudden flood was the greater freedom that, as I'd hoped it would, CTCAJW Mode has allowed me.

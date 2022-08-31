@@ -3,8 +3,6 @@ title: "Sorta StranGe (SSG) trip"
 description: "Recapping “the dance” and what it taught me."
 author: Bryce Wray
 date: 2019-12-27T14:42:40-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-12-sorta-strange-ssg-trip"
 ---
 
 In what almost certainly is my last post of 2019 --- this site’s first full calendar year of existence --- I want to look back at the major changes that I made on the site this year, and the learning experiences that resulted.

@@ -3,8 +3,6 @@ title: "Gems in the rough #2"
 description: "More geeky hints for SSG fans."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-01-gems-in-rough-2021-01"
 ---
 
 For those of you who haven't read the [first](/posts/2020/12/gems-in-rough/) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."

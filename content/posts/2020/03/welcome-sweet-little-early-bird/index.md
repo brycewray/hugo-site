@@ -3,8 +3,6 @@ title: "Welcome, sweet little early bird"
 description: "The new grandchild arrives, and on her own timeline."
 author: Bryce Wray
 date: 2020-03-10T09:50:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-03-welcome-sweet-little-early-bird"
 ---
 
 This'll be short. It's just an update on some good news I'd previously mentioned.

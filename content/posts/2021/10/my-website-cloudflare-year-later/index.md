@@ -3,8 +3,6 @@ title: "My website and Cloudflare, a year later"
 description: "It’s perhaps not so much “love/hate” as it is geeky curiosity combined with an old guy’s impatience."
 author: Bryce Wray
 date: 2021-10-22T14:00:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-10-my-website-cloudflare-year-later"
 ---
 
 It's been a year now since the first time I used [Cloudflare](https://cloudflare.com) assets to host this [SSG](https://jamstack.org/generators)-based website, and I'm still trying to decide what I think about that.

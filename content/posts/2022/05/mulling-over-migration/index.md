@@ -3,9 +3,7 @@ title: "Mulling over migration?"
 description: "Some tips about moving your website to Astro."
 author: Bryce Wray
 date: 2022-05-07T13:15:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: MMDC5
-discussionId: "2022-05-mulling-over-migration"
 ---
 
 The response I've received to my recent posts about the [Astro](https://astro.build) [static site generator](https://jamstack.org/generators) (SSG) suggests there are a **lot** of you out there considering moving your own websites to it. While I already gave [my thoughts](/posts/2022/04/astro-ready-your-blog/) about how Astro compares to the other SSGs with which I have experience, I figured you'd also find it useful if I gave you some tips about the sorts of changes you'd face in such a move. I am speaking here mainly about moving from a site that's currently on either [Eleventy](https://11ty.dev) or [Hugo](https://gohugo.io), although you likely can adapt this information to the migration of a site built with another SSG.

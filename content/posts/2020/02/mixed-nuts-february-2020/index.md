@@ -3,8 +3,6 @@ title: "Mixed nuts • February, 2020"
 description: "Another sampling of my random thoughts — lucky you."
 author: Bryce Wray
 date: 2020-02-09T16:05:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-02-mixed-nuts-2020-02"
 ---
 
 The world didn't end when I issued the [inaugural set of Mixed Nuts](/posts/2019/11/mixed-nuts-2019-11/) so, while that's hardly a proof of the wisdom of Going There again, I figure: hey, why not? With that ringing endorsement from your humble host, here goes nothing (which may be truer than I'd like to believe).

@@ -3,8 +3,6 @@ title: "Mixed nuts • May, 2020"
 description: "Updates, uptakes, follow-ups, and foul-ups — not necessarily in that order."
 author: Bryce Wray
 date: 2020-05-16T17:40:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-05-mixed-nuts-2020-05"
 ---
 
 The [last time](/posts/2020/02/mixed-nuts-february-2020/) I put you through --- ahem, I mean, *provided for you* --- the periodical mixed-bag-of-observations I call "Mixed Nuts," it was February. We here in the United States were in a totally different state of existence.

@@ -3,8 +3,6 @@ title: "New in Hugo: easier writing"
 description: "How Hugo 0.81.0 lets me do more in Markdown."
 author: Bryce Wray
 date: 2021-02-27T11:35:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-02-new-hugo-easier-writing"
 ---
 
 A few days ago, the [Hugo](https://gohugo.io) dev team [issued the latest version](https://gohugo.io/news/0.81.0-relnotes/) of this site's [static site generator](https://jamstack.org/generators/) (SSG). Hugo 0.81.0 added a number of goodies, as you would expect from a "dot-zero" upgrade, but one in particular has simplified my writing for this site.

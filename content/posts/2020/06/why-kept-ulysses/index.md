@@ -3,8 +3,6 @@ title: "Why I kept Ulysses"
 description: "Renewing the subscription for another year."
 author: Bryce Wray
 date: 2020-06-07T16:15:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-06-why-kept-ulysses"
 ---
 
 Numbers don't lie. Well, at least *these* numbers don't.

@@ -3,8 +3,6 @@ title: "Help your website get discovered"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-05-help-your-website-get-discovered"
 ---
 
 If you want your website to be discovered by search engines, the sad news is that there's no [Hollywood drugstore](https://en.wikipedia.org/wiki/Schwab%27s_Pharmacy) where it can hang out in the vain hope that such discovery will happen. Just putting a site out there among the billions of others isn't going to get the job done.

@@ -3,8 +3,6 @@ title: "Gems in the rough #6"
 description: "Hiding “future” posts in Eleventy, life with Vercel (nearly) a year later, and other items that may interest static site generator users."
 author: Bryce Wray
 date: 2021-06-21T16:30:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-06-gems-in-rough-06"
 ---
 
 Introductory note for the uninitiated: each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).

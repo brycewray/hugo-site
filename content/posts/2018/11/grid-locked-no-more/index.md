@@ -3,8 +3,6 @@ title: "Grid-locked no more"
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
 date: 2018-11-28T10:00:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2018-11-grid-locked-no-more"
 ---
 
 As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: "Never mind."

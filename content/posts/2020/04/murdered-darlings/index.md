@@ -3,8 +3,6 @@ title: "Murdered darlings"
 description: "R.I.P., WIP: a farewell to this site’s original purpose."
 author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-04-murdered-darlings"
 ---
 
 {{% disclaimer %}}

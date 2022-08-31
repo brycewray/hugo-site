@@ -3,8 +3,6 @@ title: "Responsive and optimized images with Hugo"
 description: "How to take advantage of the amazingly capable image processing built into this SSG."
 author: Bryce Wray
 date: 2022-06-29T08:17:00-05:00
-lastmod: 2022-08-31T08:17:00-05:00
-#draft: true
 #initTextEditor: iA Writer
 ---
 

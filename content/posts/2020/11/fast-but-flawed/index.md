@@ -3,8 +3,6 @@ title: "Fast but flawed"
 description: "Two more static website hosts to consider (maybe)."
 author: Bryce Wray
 date: 2020-11-25T16:30:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-11-fast-but-flawed"
 ---
 
 In "[Forward PaaS](/posts/2020/10/forward-paas)," I told you about [Cloudflare](https://cloudflare.com)'s [Platform-as-a-Service](https://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) offering, [Cloudflare Workers combined with KV storage](https://www.cloudflare.com/products/workers-kv/), and some of its aspects that intrigued me. In the end, its only real drawback is that, unlike many [other options](/posts/2020/09/normal-persons-guide-static-website-hosting/) for hosting one's static website, an optimal use thereof isn't completely free. Five bucks a month for the Workers Unbundled plan is no bank-breaker; still, as the man says, "Cheap is good, but free is better."

@@ -3,8 +3,6 @@ title: "YouTube TV and the RSNs flap"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-02-youtube-tv-rsns-flap"
 ---
 
 Ninety years ago, a reporter asked Babe Ruth about the fact that his previous year's pay had been higher than that of the president of the United States, Herbert Hoover. The Babe [responded](https://quoteinvestigator.com/2014/12/28/better-year/), in a probable dig at Hoover's handling of the dawning Great Depression: "I had a better year than he did."

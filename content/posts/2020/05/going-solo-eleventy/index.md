@@ -3,8 +3,6 @@ title: "Going solo with Eleventy"
 description: "Losing webpack, regaining Tailwind CSS."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-05-going-solo-eleventy"
 ---
 
 {{% disclaimer %}}

@@ -3,8 +3,6 @@ title: "Gems in the rough #8"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray
 date: 2021-08-04T16:30:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-08-gems-in-rough-08"
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).

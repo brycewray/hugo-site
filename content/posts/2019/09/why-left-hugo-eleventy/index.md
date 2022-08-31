@@ -3,8 +3,6 @@ title: "Why I left Hugo for Eleventy"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2022-08-01T21:27:00-05:00
-discussionId: "2019-09-why-left-hugo-eleventy"
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">

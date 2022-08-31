@@ -3,9 +3,7 @@ title: "Using iCloud Mail with a custom domain: following up"
 description: "What happened when I moved my main email address to iCloud Mail."
 author: Bryce Wray
 date: 2022-06-19T11:27:00-05:00
-lastmod: 2022-08-30T13:39:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-06-using-icloud-mail-custom-domain-following-up"
 ---
 
 Here's how I ended my [initial "Using iCloud Mail with a custom domain" post](/posts/2022/06/using-icloud-mail-custom-domain/):

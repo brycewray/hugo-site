@@ -3,8 +3,6 @@ title: "Goodbye and hello • Part 2"
 description: "Why I decided to come back to Netlify."
 author: Bryce Wray
 date: 2020-07-31T17:35:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-07-goodbye-hello-2"
 ---
 
 {{% disclaimer %}}

@@ -3,9 +3,7 @@ title: "The site this week: 2022-06-18"
 description: "Styling in Hugo; iCloud Mail and custom domains; R.I.P, IE."
 author: Bryce Wray
 date: 2022-06-18T10:15:00-05:00
-lastmod: 2022-07-27T08:57:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-06-site-week-2022-06-18"
 ---
 
 **Note**: To avoid spamming social media *every* time I issue a post, I use each entry in this series to list what I've published since the previous "The site this week" post. (Then, I promote **this**.)

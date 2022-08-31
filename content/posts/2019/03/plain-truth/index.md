@@ -3,8 +3,6 @@ title: "Plain truth"
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-03-plain-truth"
 ---
 
 I still have stuff I wrote fifty years ago.

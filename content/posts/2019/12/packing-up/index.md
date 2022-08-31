@@ -3,8 +3,6 @@ title: "Packing up"
 description: "Eleventy and webpack are a powerful pair."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-12-packing-up"
 ---
 
 {{% disclaimer %}}

@@ -3,8 +3,6 @@ title: "Blox sux"
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-01-blox-sux"
 ---
 
 There's an old saying to the effect that "a poor craftsman blames his tools."

@@ -3,8 +3,6 @@ title: "Using PostCSS for cache-busting in Eleventy"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T16:30:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 ---
 
 **Important note, 2020‑12‑11**: After I initially published this, I ran into significant build-time problems with the method described herein, despite its first appearing to work just fine both locally and online. I briefly resorted to the method described in "[Simple 11ty cache busting](https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/)" by Rob Hudson before I found another solution, which I explain in "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two/)." I reluctantly recommend that you **not** follow the specific instructions in the article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of [transparency](/posts/2019/10/otoh/). **My apologies** to anyone who's run into trouble based on these recommendations as they originally appeared!

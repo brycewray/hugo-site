@@ -3,8 +3,6 @@ title: "Now I’m a Gatsby geezer"
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray
 date: 2019-10-27T10:00:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-10-now-gatsby-geezer"
 ---
 
 {{% disclaimer %}}

@@ -3,9 +3,7 @@ title: "Fun with feeds"
 description: "Cut through the clutter by following various feeds."
 author: Bryce Wray
 date: 2022-05-30T13:10:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-05-fun-with-feeds"
 ---
 
 If you're not already using a [feed reader app](https://en.wikipedia.org/wiki/RSS), you should start.

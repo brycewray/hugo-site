@@ -3,8 +3,6 @@ title: "Using Dart Sass with Hugo: the sequel"
 description: "Hugo’s chief developer comes up with a way to get Embedded Dart Sass on the host, after all."
 author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
-lastmod: 2022-07-22T22:16:00-05:00
-discussionId: "2022-03-using-dart-sass-hugo-sequel"
 ---
 
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my [previous post](/posts/2022/03/using-dart-sass-hugo/). This is a brief follow-up which will assume you've already read that one.

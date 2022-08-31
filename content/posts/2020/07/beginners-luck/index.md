@@ -3,8 +3,6 @@ title: "Beginner’s luck"
 description: "Helping more people get going with Eleventy and Hugo."
 author: Bryce Wray
 date: 2020-07-27T16:30:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-07-chasing-100-tips-optimizing-website"
 ---
 
 Rarely does a day go by that I don't read of yet another person deciding to move his or her website to one of the two [static site generators (SSGs)](https://staticgen.com) closest to my heart: [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).

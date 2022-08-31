@@ -3,8 +3,6 @@ title: "Easy-peasy"
 description: "A theoretical conversation about building static websites."
 author: Bryce Wray
 date: 2021-01-03T10:10:00-06:00
-lastmod: 2022-07-24T21:43:00-05:00
-discussionId: "2021-01-easy-peasy"
 ---
 
 **Acknowledgment**: This is based on, and an attempted homage to, "[It's The Future](https://circleci.com/blog/its-the-future/)" by Paul Biggar and the admittedly derivative "[How it feels to learn JavaScript in 2016](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f)" by Jose Aguinaga. I do **not** pretend this is in the originals’ amazing league.

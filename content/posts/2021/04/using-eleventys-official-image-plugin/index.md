@@ -3,8 +3,6 @@ title: "Using Eleventy’s official image plugin"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2022-08-22T16:08:00-05:00
-discussionId: "2021-04-using-eleventys-official-image-plugin"
 ---
 
 **Recommendation**: While I very much appreciate your stopping by to read this, I **strongly** recommend that, instead, you check out [Aleksandr Hovhannisyan](https://github.com/AleksandrHovhannisyan)'s **far** superior article, "[Optimizing Images with the 11ty Image Plugin](https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/)."

@@ -3,8 +3,6 @@ title: "Make games, not war"
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."
 author: Bryce Wray
 date: 2019-08-03T11:00:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-08-make-games-not-war"
 ---
 
 Feel free to consider this a once-in-a-while break from my usual tech-y stuff, so I can pontificate on another subject near and dear to my choler: the need to make the USA's two most prominent major pro sports leagues admit at last that the wars are over.

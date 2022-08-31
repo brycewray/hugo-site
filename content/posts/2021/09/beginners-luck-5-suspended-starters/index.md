@@ -3,8 +3,6 @@ title: "Beginner’s luck #5: suspended starters"
 description: "That’s a wrap on further development of my SSG starter sets."
 author: Bryce Wray
 date: 2021-09-11T09:25:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-09-suspended-starters"
 ---
 
 It's not only all good things that come to an end; the not-so-good ones usually do, too.

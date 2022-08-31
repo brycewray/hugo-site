@@ -3,8 +3,6 @@ title: "1Password hits the fan"
 description: "An Electron-ic firestorm: a follow-up to my earlier article about password management."
 author: Bryce Wray
 date: 2021-08-14T10:20:00-05:00
-lastmod: 2022-07-25T16:16:00-05:00
-discussionId: "2021-08-1Password-hits-fan"
 ---
 
 Not long ago, I wrote "[Two paths to password management](/posts/2021/06/two-paths-password-management/)." It was an admittedly lengthy piece about using password management software to keep your online credentials as safe as possible.

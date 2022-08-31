@@ -3,9 +3,7 @@ title: "Is Astro ready for your blog?"
 description: "Some points to consider if you’re thinking about switching your site to the Astro platform."
 author: Bryce Wray
 date: 2022-04-24T10:50:00-05:00
-lastmod: 2022-07-26T09:59:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-04-astro-ready-your-blog"
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/is-astro-ready-for-your-blog-63m).

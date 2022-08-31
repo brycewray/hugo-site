@@ -3,9 +3,7 @@ title: "Webmentions yes, JavaScript no"
 description: "I wondered why a Hugo site needed JavaScript to go IndieWebbin’. I decided it didn’t."
 author: Bryce Wray
 date: 2022-05-23T16:23:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: VS Code
-discussionId: "2022-05-webmentions-yes-javascript-no"
 ---
 
 {{% disclaimer %}}

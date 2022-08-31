@@ -3,9 +3,7 @@ title: "A goodbye to analytics"
 description: "As an unintended side effect of CTCAJW Mode, this site bids a fond farewell to The Numbers."
 author: Bryce Wray
 date: 2022-06-20T08:32:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: Ulysses
-discussionId: "2022-06-goodbye-analytics"
 ---
 
 The site now is nearly a month into [CTCAJW Mode](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/), and is a few days away from the two-year anniversary of when I [started using](/posts/2020/06/fathom-analytics-count-on-it/) [Fathom Analytics](https://usefathom.com).

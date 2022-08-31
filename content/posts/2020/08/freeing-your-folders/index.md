@@ -3,8 +3,6 @@ title: "Freeing your folders"
 description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."
 author: Bryce Wray
 date: 2020-08-16T14:35:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-08-freeing-your-folders"
 ---
 
 Are you a Mac user? Ever looked at that [joined-at-the-hip relationship between your **Documents** folder and iCloud Drive](https://support.apple.com/en-us/HT206985) and wondered if you might be better off sync'ing that folder with another provider --- or, if you have no reason to view the folder's contents on other devices, not sync'ing it at all and thus avoiding the expense?

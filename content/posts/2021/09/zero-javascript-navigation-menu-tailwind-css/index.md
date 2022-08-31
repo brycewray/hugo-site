@@ -3,8 +3,6 @@ title: "A zero-JavaScript navigation menu for Tailwind CSS"
 description: "Seeking a non-JS nav menu for use with Tailwind? So was I. Here’s the resulting code."
 author: Bryce Wray
 date: 2021-09-15T10:30:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-09-zero-javascript-navigation-menu-tailwind-css"
 ---
 
 {{% disclaimer %}}

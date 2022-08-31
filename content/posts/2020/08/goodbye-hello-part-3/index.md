@@ -3,8 +3,6 @@ title: "Goodbye and hello • Part 3"
 description: "Performance is a heckuva drug: earlier considerations aside, I move the site to Vercel for a second time."
 author: Bryce Wray
 date: 2020-08-21T17:05:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-08-goodbye-hello-3"
 ---
 
 {{% disclaimer %}}

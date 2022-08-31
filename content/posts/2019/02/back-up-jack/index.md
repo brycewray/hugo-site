@@ -3,8 +3,6 @@ title: "Back up, Jack"
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-02-back-up-jack"
 ---
 
 **Update, 2020‑01‑11**:  While I'll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I'm now "just" on 3-2-1 rather than 4-2-2). If you're on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta *can* imagine just doesn't seem to care about QC where its Mac version of OneDrive is concerned.

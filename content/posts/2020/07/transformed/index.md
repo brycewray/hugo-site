@@ -3,8 +3,6 @@ title: "Transformed"
 description: "The move to Cloudinary."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-07-transformed"
 ---
 
 {{% disclaimer %}}

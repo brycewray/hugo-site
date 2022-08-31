@@ -3,8 +3,6 @@ title: "Gems in the rough #11"
 description: "Dueling announcements, CSP-allowed CSS, fun with LQIPs."
 author: Bryce Wray
 date: 2021-11-19T11:27:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-11-gems-in-rough-11"
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).

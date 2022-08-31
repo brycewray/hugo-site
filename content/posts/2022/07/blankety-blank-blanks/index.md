@@ -3,8 +3,6 @@ title: "Blankety-blank _blanks"
 description: "Once again, concerns over accessibility cause me to reverse one of this website’s oldest defaults."
 author: Bryce Wray
 date: 2022-07-13T18:29:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
-#draft: true
 #initTextEditor: iA Writer
 ---
 

@@ -3,8 +3,6 @@ title: "Some curmudgeonish thoughts, 2019 edition"
 description: "Here’s a follow-up on last year’s list of items that stick in my craw."
 author: Bryce Wray
 date: 2019-11-03T20:01:00-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-11-curmudgeonish-2019"
 ---
 
 A little over a year ago, I decided to use this site to note some pet peeves. I entitled the resulting post "[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts/)."

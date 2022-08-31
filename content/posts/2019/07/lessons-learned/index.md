@@ -2,8 +2,6 @@
 title: "Lessons learned"
 description: "During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things."
 date: 2019-07-21T18:43:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-07-lessons-learned"
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">

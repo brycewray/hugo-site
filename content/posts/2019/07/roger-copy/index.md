@@ -3,8 +3,6 @@ title: "Roger, Copy"
 description: "How I now keep my site files “synced” across my devices — via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-07-roger-copy"
 ---
 
 If this site had a horde of regular readers, there probably would be enough of you out there that, probability suggests, a tiny percentage could be expected to watch every change with eagle eyes.

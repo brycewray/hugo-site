@@ -3,8 +3,6 @@ title: "Hashing out a cache-busting fix for Eleventy"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 ---
 
 *Up-front disclaimer: No proverbial horses were beaten to death (at least, not by me) during the writing of the following --- although I could see how you might get a different impression.*

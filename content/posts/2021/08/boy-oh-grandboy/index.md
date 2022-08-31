@@ -3,8 +3,6 @@ title: "Boy, oh, grandboy"
 description: "A few words about the arrival of grandchild #2."
 author: Bryce Wray
 date: 2021-08-11T11:30:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-08-boy-oh-grandboy"
 ---
 
 We found out last Christmas Day that [our granddaughter, Kennedy Beck](/posts/2020/03/welcome-sweet-little-early-bird/), was going to be a big sister this summer. Then, on Valentine's Day and just before millions of Texans (including yours truly) were plunged into a power grid meltdown in the midst of a fierce winter storm, we learned the new arrival would be a boy.

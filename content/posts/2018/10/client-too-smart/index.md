@@ -3,8 +3,6 @@ title: "The client is too smart for you"
 description: "Pretty emails don’t work so well in an Outlook-centric business world."
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2018-10-client-too-smart"
 ---
 
 It's been nearly two decades since we tech marketing folks started counting on the majority of prospects and customers to have access to reasonably fast email. Hey, I remember when we used to send out mass faxes. (We shall now observe a moment of silence for all the trees that we sacrificed in the service of raising profits.)

@@ -3,9 +3,7 @@ title: "Static tweets in Eleventy and Hugo: Part 2"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
 date: 2022-02-11T14:43:00-06:00
-lastmod: 2022-08-24T08:55:00-05:00
 #initTextEditor: Ulysses
-discussionId: "2022-02-static-tweets-eleventy-hugo-part-2"
 ---
 
 **Update from the future in general (!)**: I continue to improve upon the shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between [Hugo](https://gohugo.io)'s [standard `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) and my shortcode.\

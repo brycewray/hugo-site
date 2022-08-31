@@ -3,8 +3,6 @@ title: "Beginner’s luck: an update"
 description: "The inventory has grown, so here’s what I currently offer for those interested in Eleventy and Hugo."
 author: Bryce Wray
 date: 2021-03-25T20:25:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2020-07-chasing-100-tips-optimizing-website"
 ---
 
 Interested in building a new website with, or converting an existing site to, either of the two best [static site generators](https://jamstack.org/generators) (SSGs)? Please read on, my friend.

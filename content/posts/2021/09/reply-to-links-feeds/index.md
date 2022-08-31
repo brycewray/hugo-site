@@ -3,8 +3,6 @@ title: "Reply-to links in site feeds"
 description: "Thanks to a reader’s helpful advice, here’s how to enhance the code for your site’s RSS and JSON feeds."
 author: Bryce Wray
 date: 2021-09-09T14:40:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-09-reply-to-links-feeds"
 ---
 
 Back in May, in "[Help your website get discovered](/posts/2021/05/help-your-website-get-discovered)," I provided code you could use to add RSS and JSON feeds to an [Eleventy](https://11ty.dev) site. Then, [more recently](/posts/2021/07/gems-in-rough-07/#comment-by-email), I added the "Reply via email" link to the bottom of each post. However, combining the two --- *i.e.*, making sure there was a "Reply via email" link in each entry in the respective feeds --- hadn't occurred to me until a few days ago, when a reader suggested it to me and provided a link to his own article, "[Email Replies in Feeds](https://blog.jim-nielsen.com/2020/email-replies-in-rss/)," explaining how he'd done it in the [Metalsmith](https://metalsmith.io/) [static site generator](https://jamstack.org/generators) (SSG). Accordingly, I updated my feeds-related code to incorporate this capability.

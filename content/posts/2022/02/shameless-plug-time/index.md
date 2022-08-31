@@ -3,8 +3,6 @@ title: "Shameless plug time"
 description: "A few words about my new Hugo-related article for the CloudCannon blog."
 author: Bryce Wray
 date: 2022-02-24T12:11:00-06:00
-lastmod: 2022-07-22T22:16:00-05:00
-discussionId: "2022-02-shameless-plug-time"
 ---
 
 I’ve just written my first article for the [CloudCannon Blog](https://cloudcannon.com/blog/), entitled “[**Planning for your next Hugo project**](https://cloudcannon.com/blog/planning-for-your-next-hugo-project/).”

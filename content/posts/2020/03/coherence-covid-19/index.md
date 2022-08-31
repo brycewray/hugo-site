@@ -3,8 +3,6 @@ title: "Coherence and COVID‑19" #Non-breaking hyphen there, copied/pasted from
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-03-coherence-covid-19"
 ---
 
 This is the third weekend of the month when the U.S.A. began to grasp just how big a deal that [COVID-19 a/k/a novel coronavirus](https://www.cdc.gov/coronavirus/2019-nCoV/index.html) was going to be. It's been a head-snapping experience for your friendly writer, just as it doubtless has been for almost all of you, wherever you are.

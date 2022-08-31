@@ -3,8 +3,6 @@ title: "Code comfort: Eleventy and webpack"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray
 date: 2019-12-14T11:05:00-06:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-12-code-comfort-eleventy-webpack"
 ---
 
 **Note, 2020‑09‑09**: Although the site long since is no longer using the stack mentioned here, at least some parts of the repo [remain online for viewing by the curious](https://github.com/brycewray/eleventy_bundler).

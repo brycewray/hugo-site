@@ -3,8 +3,6 @@ title: "A stacked deck"
 description: "Part 2 of a two-part series on web typography."
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2018-10-web-typography-part-2"
 ---
 
 {{% disclaimer %}}

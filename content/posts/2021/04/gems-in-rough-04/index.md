@@ -3,8 +3,6 @@ title: "Gems in the rough #4"
 description: "Here a drib, there a drab, everywhere a drib-drab of web dev miscellany."
 author: Bryce Wray
 date: 2021-04-09T04:40:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-04-gems-in-rough-04"
 ---
 
 Yes, friends, [once again](/posts/2021/03/gems-in-rough-03/) we're going to go through a few instances of folderol, borderline fulmination, and perhaps foolishness about developing stuff for Ye Olde Webbe.

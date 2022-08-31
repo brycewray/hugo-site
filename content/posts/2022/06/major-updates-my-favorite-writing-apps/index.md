@@ -3,9 +3,7 @@ title: "Major updates to my favorite writing apps"
 description: "iA Writer 6 and Ulysses 27 arrive, bearing features their adherents had long requested."
 author: Bryce Wray
 date: 2022-06-21T08:14:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: Ulysses
-discussionId: "2022-06-major-updates-my-favorite-writing-apps"
 ---
 
 **Important note, 2022-06-22**: I made some errors herein that I have now fixed, as noted in a [subsequent post](/posts/2022/06/ulysses-27-correction/).

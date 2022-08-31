@@ -3,8 +3,6 @@ title: "Publish or perish"
 description: "In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it — for free."
 author: Bryce Wray
 date: 2019-04-11T19:00:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-04-publish-or-perish"
 oldComments: |
   <div class="container-oldComments">
     <p class="commentDisclaimer">

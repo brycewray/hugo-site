@@ -3,8 +3,6 @@ title: "It’s about the food, not the decor"
 description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-10-its-about-food-not-decor"
 ---
 
 {{% disclaimer %}}

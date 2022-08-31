@@ -3,8 +3,6 @@ title: "Gems in the rough #3"
 description: "The latest installment of unrequested advice about tinkering with websites."
 author: Bryce Wray
 date: 2021-03-06T15:55:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-03-gems-in-rough-03"
 ---
 
 As one gathers navel from one's lint, so also do I gather little bits of  information I hope will be helpful for those of you who, as I do, have found a hobby in fiddling with personal [SSG](https://jamstack.org/generators)-built websites. [Back in December](/posts/2020/12/gems-in-rough/), I began issuing such items as "Gems in the rough." Here be the latest thereof.

@@ -3,8 +3,6 @@ title: "Scrivener and The Cloud"
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."
 author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
-lastmod: 2022-08-22T05:33:00-05:00
-discussionId: "2019-08-scrivener-and-cloud"
 ---
 
 It can be hard on one's psyche to visit the comments sections of many tech-oriented websites, particularly when people are in a nasty mood about something, and *most* particularly when the trolls come out brandishing their typical "I-hate-this-and-Imma-gonna-tell-ya-why-for-the-millionth-time-with-what-I-consider-to-be-my-clever-wit" approach.
@@ -110,4 +108,3 @@ And then, the answer --- sometimes even from Scrivener creator Keith Blount hims
 If L&amp;L were a bigger operation, perhaps it would develop a "light" version of Scriv along such lines --- but I doubt it. I get the impression that the L&amp;L folks think, well, if you want a dumber version of this app to which we've given our full measure of devotion all these years, there's a big field of competitors out there; go for it. They're too nice to *say* that (usually, although [certain particularly rude questioners can provoke them](https://www.literatureandlatte.com/forum/viewtopic.php?p=294469#p294469)), but I believe that's their position, and I can't say I disagree. Those Who Do Not Code probably cannot understand such things; and that constitutes a large part of the Scriv audience, as nearly as I can tell through a variety of anecdotal data and observations.
 
 Anyway, I do hope this has helped people understand why, and I say it again, **the Scrivener app for iOS DOESN'T work with iCloud sync**. Don't know how much plainer I can make it --- even for somebody who's savvy enough to be a frequent commenter on Ars Technica.
-	

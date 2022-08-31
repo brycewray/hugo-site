@@ -2,8 +2,6 @@
 title: "Thinking dark thoughts"
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
 date: 2019-09-29T10:08:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-09-thinking-dark-thoughts"
 ---
 
 {{% disclaimer %}}

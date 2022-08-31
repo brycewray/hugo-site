@@ -3,9 +3,7 @@ title: "Ulysses 27: a correction"
 description: "Haste makes waste, and it also makes for a bad summary, so here are some corrections to what I wrote yesterday about Ulysses 27."
 author: Bryce Wray
 date: 2022-06-22T05:52:00-05:00
-lastmod: 2022-07-22T22:16:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-06-ulysses-27-correction"
 ---
 
 In my hurry to publish yesterday's "[Major updates to my favorite writing apps](/posts/2022/06/major-updates-my-favorite-writing-apps/)," I committed some errors concerning [Ulysses 27](https://ulysses.app/release-notes/). I have now fixed those, but wanted to issue this separate post for the sake of those who view my content only through their feed readers.

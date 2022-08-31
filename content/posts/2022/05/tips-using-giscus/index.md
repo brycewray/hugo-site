@@ -3,9 +3,7 @@ title: "Tips for using giscus"
 description: "Some advice about a commenting system for static websites."
 author: Bryce Wray
 date: 2022-05-10T15:10:00-05:00
-lastmod: 2022-07-24T16:27:00-05:00
 #initTextEditor: VS Code
-discussionId: "2022-05-tips-using-giscus"
 ---
 
 As I noted [not long ago](/posts/2022/03/gems-in-rough-16/#trying-giscus):

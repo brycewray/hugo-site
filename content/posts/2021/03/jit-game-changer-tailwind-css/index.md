@@ -3,8 +3,6 @@ title: "JIT is a game-changer for Tailwind CSS"
 description: "Why Tailwind’s new capabilities will give it even more  momentum among web developers."
 author: Bryce Wray
 date: 2021-03-19T16:25:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-03-jit-game-changer-tailwind-css"
 ---
 
 **Update, 2021‑04‑05**: As of the [release of Tailwind 2.1.0](https://blog.tailwindcss.com/tailwindcss-2-1), the feature described within is part of Tailwind core, although it's still described as being "in preview."

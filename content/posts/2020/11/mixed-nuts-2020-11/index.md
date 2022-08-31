@@ -3,8 +3,6 @@ title: "Mixed nuts • November, 2020"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T10:10:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-11-mixed-nuts-2020-11"
 ---
 
 Given the course of recent events in our storm-tossed existence, both here in the United States and elsewhere, it seems a good time to whip out another set of those miscellaneous observations I typically call "mixed nuts" (most recent such assortment was [this example](/posts/2020/09/mixed-nuts-2020-09/))&nbsp;.&nbsp;.&nbsp;.

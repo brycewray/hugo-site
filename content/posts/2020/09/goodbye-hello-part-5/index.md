@@ -3,8 +3,6 @@ title: "Goodbye and hello • Part 5"
 description: "Two embarrassments: another site move and the reason behind it."
 author: Bryce Wray
 date: 2020-09-09T14:30:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-09-goodbye-hello-5"
 ---
 
 {{% disclaimer %}}

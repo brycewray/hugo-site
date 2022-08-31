@@ -3,8 +3,6 @@ title: "Transition"
 description: "Yep, forty-plus years will do."
 author: Bryce Wray
 date: 2021-09-03T16:30:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-09-transition"
 ---
 
 Our daughter was born five days after my thirtieth birthday. I immediately knew, and have maintained ever since, that her birth was the best birthday gift of my life.

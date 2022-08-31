@@ -3,9 +3,7 @@ title: "Fetching remote images with Eleventy"
 description: "Following up on last month’s article about doing this in Hugo, we explain how to get there in a JavaScript-based SSG."
 author: Bryce Wray
 date: 2022-01-25T14:45:00-06:00
-lastmod: 2022-08-01T21:27:00-05:00
 #initTextEditor: Ulysses
-discussionId: "2022-01-fetching-remote-images-eleventy"
 ---
 
 **Update, 2022‑01‑26**: Please see the end of this post for additional info straight from the horse’s mouth, so to speak.

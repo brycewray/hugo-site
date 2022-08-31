@@ -3,8 +3,6 @@ title: "Next steps?"
 description: "Some things I’ve learned while tinkering with Next.js."
 author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-03-next-steps"
 ---
 
 **Update, 2021‑04‑15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this post in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).

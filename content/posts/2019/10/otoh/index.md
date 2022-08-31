@@ -3,8 +3,6 @@ title: "OTOH"
 description: "One shouldn’t make decisions out of spite. I’m living proof."
 author: Bryce Wray
 date: 2019-10-11T19:00:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-10-otoh"
 ---
 
 So, see, this crazy person took control of my site a few days ago and wrote a post that sounded *just like* something I'd write, and then he deleted several old posts just to prove a point. Or something like that.

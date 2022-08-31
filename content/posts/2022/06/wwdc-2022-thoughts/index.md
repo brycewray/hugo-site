@@ -3,8 +3,6 @@ title: "WWDC 2022 thoughts"
 description: "Cheers, “mehs,” and jeers from today’s Keynote at Apple’s latest Worldwide Developers Conference."
 author: Bryce Wray
 date: 2022-06-06T14:49:00-05:00
-lastmod: 2022-08-01T21:27:00-05:00
-#draft: true
 #initTextEditor: iA Writer
 ---
 

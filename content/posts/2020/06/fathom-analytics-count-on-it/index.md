@@ -3,8 +3,6 @@ title: "Fathom Analytics: count on it"
 description: "How to count visitors while protecting them — and yourself."
 author: Bryce Wray
 date: 2020-06-19T00:45:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-06-fathom-analytics-count-on-it"
 ---
 
 **Affiliation disclaimer**: What follows is my *honest opinion* of something I'm now using on this site and paying for with my own money. But I want to advise you up-front that, if you [use this affiliate link (or others like it herein) to **sign up with Fathom Analytics**](https://usefathom.com/ref/ZKHYWX), I'll get a commission --- ***and*** **you** will get a **$10 credit** on your first invoice. So, if you like what I'm telling you here and want to [give this product a try](https://usefathom.com/ref/ZKHYWX), help out an old nerd **and** yourself and your visitors, okay? Thanks!\

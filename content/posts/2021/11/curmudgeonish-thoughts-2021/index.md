@@ -3,9 +3,6 @@ title: "Curmudgeonish thoughts for 2021"
 description: "Another year, another grievances list."
 author: Bryce Wray
 date: 2021-11-09T08:56:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
-draft: false
-discussionId: "2021-11-curmudgeonish-thoughts-2021"
 ---
 
 We're in the eleventh month of this year, so welcome to the fourth annual edition of my "curmudgeonish thoughts" post, which I hope remains true to the ideas behind its [original version](/posts/2018/11/some-curmudgeonish-thoughts/). Pet peeves? I've got ’em. Let's go.

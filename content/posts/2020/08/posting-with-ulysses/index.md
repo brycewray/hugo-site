@@ -3,8 +3,6 @@ title: "Posting with Ulysses"
 description: "Still a nicer editor, but not truly SSG-friendly."
 author: Bryce Wray
 date: 2020-08-04T19:15:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-08-posting-with-ulysses"
 ---
 
 There's something about this post that hasn't been true of any post on this site since early last year.

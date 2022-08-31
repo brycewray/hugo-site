@@ -3,8 +3,6 @@ title: "Taming time-based one-time passwords (TOTPs)"
 description: "A few tips on managing multi-factor authentication — specifically, TOTPs."
 author: Bryce Wray
 date: 2021-09-20T10:30:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-09-taming-time-based-one-time-passwords-totps"
 ---
 
 While I spend a lot of my time here regaling you with content about static site generators, in recent weeks I’ve shared a [couple](/posts/2021/06/two-paths-password-management/) of [posts](/posts/2021/08/1password-hits-fan/) about password management apps. Today, I want to dig a little deeper into that subject with some words about an equally important aspect of managing your online security: [multi-factor authentication (MFA)](https://www.nist.gov/blogs/cybersecurity-insights/back-basics-whats-multi-factor-authentication-and-why-should-i-care), which is also sometimes called two-factor authentication (2FA).

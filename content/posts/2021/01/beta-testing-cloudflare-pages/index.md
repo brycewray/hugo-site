@@ -3,8 +3,6 @@ title: "Beta-testing Cloudflare Pages"
 description: "I take a look at a new, possibly game-changing website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
 date: 2021-01-27T12:30:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
-discussionId: "2021-01-beta-testing-cloudflare-pages"
 ---
 
 [Cloudflare](https://cloudflare.com) announced a few weeks ago in a [blog post](https://blog.cloudflare.com/cloudflare-pages/) that it was moving into the build-your-website-on-the-[Jamstack](https://jamstack.org) arena currently inhabited by the likes of [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com), and, more recently, [DigitalOcean](https://www.digitalocean.com/products/app-platform/). Hosts like these build your website automatically every time you push changes to a connected online [Git](https://git-scm.com) repository, rather than forcing you to put together your own build chain as is required by the slightly older [Cloudflare Workers Sites](https://workers.cloudflare.com/sites) as well as Google's [Firebase](https://firebase.google.com).

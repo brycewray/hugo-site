@@ -3,8 +3,6 @@ title: "Boxed in?"
 description: "A revisiting of the whole Ulysses matter — after I learned some more about “shoebox” apps in general."
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
-lastmod: 2022-07-22T20:56:00-05:00
-discussionId: "2019-05-boxed-in"
 ---
 
 Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things --- the Work-in-Progress (WIP) being the most damnable example thereof.

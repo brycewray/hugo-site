@@ -3,8 +3,6 @@ title: "A thousand words, indeed"
 description: "Feelings about look-and-feel: how and why “hero images” have returned to this site."
 author: Bryce Wray
 date: 2020-05-22T18:00:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-05-thousand-words-indeed"
 ---
 
 {{% disclaimer %}}

@@ -3,9 +3,7 @@ title: "Simplify, simplify, maybe for real this time"
 description: "The site enters CTCAJW Mode."
 author: Bryce Wray
 date: 2022-05-21T11:30:00-05:00
-lastmod: 2022-08-01T21:27:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2022-05-simplify-simplify-maybe-for-real-this-time"
 ---
 
 Yes, it's my third post with "Simplify, simplify" in the title; but, please, hear me out. I'm hoping for better luck this time than with its [two](/posts/2021/02/simplify-simplify/) [predecessors](/posts/2022/03/simplify-simplify-again/) --- especially since, as I'll explain at the end, this has *nothing* to do with my gyrations among various [static site generators](https://jamstack.org/generators) (SSGs).

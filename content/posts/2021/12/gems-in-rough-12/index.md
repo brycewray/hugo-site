@@ -3,9 +3,7 @@ title: "Gems in the rough #12"
 description: "Speedier CFP builds, HTML sitemaps."
 author: Bryce Wray
 date: 2021-12-26T10:07:00-06:00
-lastmod: 2022-07-22T21:46:00-05:00
 #initTextEditor: iA Writer
-discussionId: "2021-12-gems-in-rough-12"
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).

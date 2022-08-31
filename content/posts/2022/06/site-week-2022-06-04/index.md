@@ -3,9 +3,7 @@ title: "The site this week: 2022-06-04"
 description: "Saying “Goodbye, IndieWeb” once again, the joy of feeds, and getting Hugo to show Git info and Mastodon content."
 author: Bryce Wray
 date: 2022-06-04T12:01:00-05:00
-lastmod: 2022-07-27T08:57:00-05:00
 #initTextEditor: VS Code
-discussionId: "2022-06-site-week-2022-06-04"
 ---
 
 **Note**: To avoid spamming social media *every* time I issue a post, I use each entry in this series to list what I've published since the previous "The site this week" post. (Then, I promote **this**.)

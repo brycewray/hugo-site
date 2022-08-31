@@ -3,8 +3,6 @@ title: "Different modes for different code"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-04-different-modes-different-code"
 ---
 
 As we all hunker down from [COVID-19](/posts/2020/03/coherence-covid-19/), maintaining some degree of sanity occasionally requires one to divert one's mind from this thing. At least, that's true for me; and, yes, "sanity" is a relative term when applied to me, but that said&nbsp;.&nbsp;.&nbsp;.

@@ -3,8 +3,6 @@ title: "Through with 2020"
 description: "What I talked about while the world burned."
 author: Bryce Wray
 date: 2020-12-30T08:35:00-06:00
-lastmod: 2022-07-22T21:24:00-05:00
-discussionId: "2020-12-through-with-2020"
 ---
 
 Back during some of the anti-war activities of the 1960s, detractors of U.S. President Lyndon Johnson's policies in Vietnam would chant or sing this about him, borrowing from a protest song by activist/musician Pete Seeger:

@@ -3,8 +3,6 @@ title: "Ahoy, ’Mate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps — like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
-lastmod: 2022-08-30T13:38:00-05:00
-discussionId: "2019-06-ahoy-mate"
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">
