@@ -3,7 +3,7 @@ title: "Responsive and optimized images with Hugo"
 description: "How to take advantage of the amazingly capable image processing built into this SSG."
 author: Bryce Wray
 date: 2022-06-29T08:17:00-05:00
-lastmod: 2022-08-14T11:48:00-05:00
+lastmod: 2022-08-31T08:17:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---
@@ -13,6 +13,9 @@ If you use any images on your website, you probably know how important it is to 
 Years ago, the availability of Hugo image processing was more restrictive concerning the images' location within a Hugo project. Specifically, they had to be [*page resources*](https://gohugo.io/content-management/image-processing/#page-resources), and thus in the same folder as the Markdown content calling them. While that's still perfectly fine, they now also can be [*global resources*](https://gohugo.io/content-management/image-processing/#global-resources), existing in either the project's `assets/` folder or any subfolder thereof.[^versionGlobal] I'm old-school and prefer to keep textual content files separate from image files, so I like this flexibility quite a bit.
 
 [^versionGlobal]: Despite searching through Hugo [release notes](https://github.com/gohugoio/hugo/releases) and various Hugo documentation updates, I was unable to determine exactly which version first supported this. All I could do was see that the related documentation itself changed sometime in the second half of 2020 to mention the acceptability of global resources for Hugo's image processing.
+
+**Update from the future**: [A few weeks later](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/), I changed to the page-resources approach after receiving some particularly savvy advice.
+{.yellowBox}
 
 For truly responsive images, you must define the *breakpoints*. These are viewport sizes, usually defined in pixels, for the browser to use in deciding *which* image to serve. Some articles you'll find out there --- as in the [references](#references) I'll list at the end --- take a more hard-coded approach to the breakpoints than I feel is necessary or appropriate. This probably is because of the sample code from older articles of this type, in which it's common to assign a variable to each of several breakpoints (*e.g.*, `$tiny` for a 500-pixel breakpoint, `$medium` for an 800-pixel one, *etc.*). Yes, you can do that and it'll work, but I suggest another method which I'll describe in a bit.
 
