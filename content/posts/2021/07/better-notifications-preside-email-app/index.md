@@ -3,7 +3,7 @@ title: "Better notifications in the Preside email app"
 description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices."
 author: Bryce Wray
 date: 2021-07-03T16:20:00-05:00
-lastmod: 2022-07-22T21:46:00-05:00
+lastmod: 2022-08-30T19:22:00-05:00
 discussionId: "2021-07-better-notifications-preside-email-app"
 ---
 
@@ -95,7 +95,7 @@ Although the Finder makes "Preside.mmBundle" appear to be a special sort of file
 cd "Library/Application Support/MailMate/Bundles/Preside.mmBundle/Support/bin/"
 ```
 
-10. Execute `ls` and you should see a listing of one item: a [shell script](https://en.wikipedia.org/wiki/Shell_script) file called "preside.notify.sh."
+10. Execute `ls` and you should see a listing of one item: a [shell script](https://en.wikipedia.org/wiki/Shell_script) file called "preside_notify.sh."
 
 11. Use your chosen command-line text editor to open this shell file. [Here is the original on GitHub](https://github.com/richwaters/PresideNotify/blob/master/Preside.mmBundle/Support/bin/preside_notify.sh), to which you may want to refer in the next few steps to keep the line numbering straight.
 
