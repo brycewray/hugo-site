@@ -8,16 +8,21 @@
 <div class="billboard-div">
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
-		{{- if and .Params.Description (ne .Title .Site.Params.SearchTitle) }}<p class="billboard-description-text">{{ .Params.Description }}</p>{{- end }}
-		{{- if ne .Title .Site.Params.SearchTitle -}}<p class="billboard-p-text" data-pagefind-ignore>
-			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}<br /><span class="seventyFive">
-			{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
-			Last modified {{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;
-			{{- end }}</span>
-		</p>{{- end -}}
-		{{- if ne .Title .Site.Params.SearchTitle -}}<p class="ctr legal" data-pagefind-ignore>
-			{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- else -}}&nbsp;{{- end }}<br />
-			{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{ if (gt $readingTime 1) }}s{{ end }}{{- end -}}
+		{{- if and .Params.Description (ne .Title .Site.Params.SearchTitle) }}
+		<p class="billboard-description-text">
+			{{ .Params.Description }}
 		</p>
+		{{- end }}
+		{{- if ne .Title .Site.Params.SearchTitle -}}
+		<p class="billboard-p-text" data-pagefind-ignore>
+			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
+		</p>
+		{{- end -}}
+		{{- if ne .Title .Site.Params.SearchTitle -}}
+		<p class="ctr legal" data-pagefind-ignore>
+			{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a> &bull; {{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;{{- end -}}<br />
+			{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}
+		</p>
+		{{- end -}}
 	</div>
 </div>

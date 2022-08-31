@@ -85,9 +85,6 @@
 					</p>
 					<p class="posts-Dates">
 						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
-						{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
-						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<br />{{- end -}}<span class="eightyFive">Last modified {{ .Lastmod.Format "2006-01-02" }}</span>
-						{{- end }}
 					</p>
 					<p class="legal">&nbsp;</p>
 				</div>
