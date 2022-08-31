@@ -1,6 +1,7 @@
 ---
 title: "Fetching remote images with Eleventy"
-description: "Following up on last month’s article about doing this in Hugo, we explain how to get there in a JavaScript-based SSG."
+description: "Following up on last month’s article about doing this in Hugo, we explain how to get there in a JavaScript‑based SSG."
+# non-breaking hyphen in `JavaScript-based`
 author: Bryce Wray
 date: 2022-01-25T14:45:00-06:00
 #initTextEditor: Ulysses

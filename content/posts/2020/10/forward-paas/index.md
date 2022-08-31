@@ -1,6 +1,7 @@
 ---
 title: "Forward PaaS"
-description: "Testing the waters on Cloudflare Workers and KV storage — an up-and-coming platform-as-a-service (PaaS) offering."
+description: "Testing the waters on Cloudflare Workers and KV storage — an up‑and‑coming platform‑as‑a‑service (PaaS) offering."
+# non-breaking hyphens in `up-and-coming` and `platform-as-a-service`
 author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
 ---

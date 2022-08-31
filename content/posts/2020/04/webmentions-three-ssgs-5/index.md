@@ -1,6 +1,6 @@
 ---
 title: "Webmentions in three SSGs: Part 5"
-description: "Conclusion of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)."
+description: "Conclusion of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T16:50:00-05:00
 ---
