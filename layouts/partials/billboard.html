@@ -20,8 +20,7 @@
 		{{- end -}}
 		{{- if ne .Title .Site.Params.SearchTitle -}}
 		<p class="ctr legal" data-pagefind-ignore>
-			{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a> &bull; {{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;{{- end -}}<br />
-			{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}
+			{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") -}},&nbsp;{{ .Lastmod.Format "2006-01-02" }}{{- else -}}&nbsp;(modified on same date){{- end -}}{{- else -}}&nbsp;{{- end -}}{{- if (and (ne .Title "Want to reach me?") (ne .Title "Privacy policy") ) -}}<br />{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}{{- end -}}
 		</p>
 		{{- end -}}
 	</div>
