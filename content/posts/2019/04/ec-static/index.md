@@ -5,6 +5,9 @@ author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
 ---
 
+**Note from the future**: You're probably better off with the approach I mention in 2022's "[Really getting started with Hugo: four simple steps](/posts/2022/07/really-getting-started-hugo-four-steps)," but I'm leaving this here for archival purposes and the sake of [transparency](/posts/2019/10/otoh/).
+{.yellowBox}
+
 Want to share your thoughts on the web? [Good for you](https://ia.net/topics/take-the-power-back).
 
 Considering using [WordPress](https://wordpress.org) to do it? Ahhh, not so good.
@@ -51,54 +54,52 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 #### Step 1 for Mac/Linux
 
 1. Open the **Terminal** CLI app.
-2. If you already have the [**Homebrew** package installer app](https://brew.sh) installed, skip to the next item.
 
+2. If you already have the [**Homebrew** package installer app](https://brew.sh) installed, skip to the next item.\
+\
 Otherwise, install Homebrew by copying/pasting the following into Terminal and pressing **Return** or **Enter**:
-{.indentAfterLI}
-
-```bash
+{{< highlight bash "linenos=false" >}}
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-  Once the Homebrew installation is complete, go on to the next item.
+{{< /highlight >}}
+
+Once the Homebrew installation is complete, go on to the next item.
 {.indentAfterLI}
 
 3. [Install Hugo](https://gohugo.io/getting-started/quick-start/) by copying/pasting the following into Terminal and pressing **Return** or **Enter**:
-```bash
+{{< highlight bash "linenos=false" >}}
 brew install hugo
-```
+{{< /highlight >}}
 
 #### Step 1 for Windows
 
 1. Open the **Command Prompt** CLI app (*cmd.exe*) as an admin-level user (right-click the app's icon and select **Run as Administrator**).
 
-2. If you already have the [**Chocolatey** package installer app](https://chocolatey.org) installed, skip to the next item.
-
+2. If you already have the [**Chocolatey** package installer app](https://chocolatey.org) installed, skip to the next item.\
+\
 Otherwise, install Chocolatey by copying/pasting the following into the Command Prompt app and pressing **Enter**:
-{.indentAfterLI}
-
-```powershell
+{{< highlight powershell "linenos=false" >}}
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-```
+{{< /highlight >}}
+
 Once the Chocolatey installation is complete, go on to the next item.
 {.indentAfterLI}
 
 3. [Install Hugo](https://gohugo.io/getting-started/installing) by copying/pasting the following into the Command Prompt app and pressing **Enter**:
-```bash
+{{< highlight powershell "linenos=false" >}}
 choco install hugo -confirm
-```
+{{< /highlight >}}
 
 ### STEP 2: Create your new site.
 
 1. Use your system's CLI app to navigate to the location on your computer where you want to create the local version of your new site.
 
-
 I would suggest picking a location that's [backed up and/or sync'd](/posts/2019/02/back-up-jack/). For example, on my Mac, I put my local Hugo sites in iCloud Drive. On a Windows PC, you may want to use OneDrive. On either, you might choose Dropbox if that's your cloud vendor of choice.[^syncGit]
 {.indentAfterLI}
 
 2. Copy/paste the following into the CLI app and press **Return** or **Enter**:
-```bash
+{{< highlight bash "linenos=false" >}}
 hugo new site mysite
-```
+{{< /highlight >}}
 
 This command will create a new *mysite* directory in that location, and *mysite* will have various subdirectories of its own.[^mysite] One of those is called *themes*, which brings us to **STEP 3**.
 {.indentAfterLI}
@@ -122,33 +123,32 @@ Like most site-building technology, Hugo uses *themes* to make a site look and p
 4. Go ahead with the download:
 	- If your browser is set to give you a choice of download destination, select the *themes* subdirectory within *mysite* as the destination for the download of *hugo-theme-basic-master.zip* and let the download proceed (by clicking **OK** or **Save**, depending on the browser and the method).
 	- If your browser automatically downloads to a fixed location (such as a *Downloads* folder), manually move or copy the downloaded .zip file from that location to the *themes* subdirectory within *mysite*.
-6. In the *themes* subdirectory within *mysite*, if necessary (*e.g.*, Macs generally do this automatically), expand the *hugo-theme-basic-master.zip* file to that same subdirectory. This will then produce the following setup:
 
-```bash
+5. In the *themes* subdirectory within *mysite*, if necessary (*e.g.*, Macs generally do this automatically), expand the *hugo-theme-basic-master.zip* file to that same subdirectory. This will then produce the following setup:
+{{< highlight plaintext "linenos=false" >}}
 	- mysite
 		- themes
 			- hugo-theme-basic-master
-```
+{{< /highlight >}}
 
 ### STEP 4: Add some content.
 
 All the textual content --- the *posts* --- that you'll be adding in the future will be in the form of [Markdown](https://daringfireball.net/projects/markdown) files with [front matter](https://gohugo.io/content-management/front-matter/) that tells Hugo how to handle them. However, Hugo can get you started with that very simply:
 
-1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
+1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
 
 2. Copy/paste the following and then press **Return** or **Enter**:
-```bash
+{{< highlight bash "linenos=false" >}}
 hugo new posts/my-first-post.md
-```
+{{< /highlight>}}
 This will create a new Markdown file, *my-first-post.md*, which produces this arrangement:
-{.indentAfterLI}
-
-```bash
+{{< highlight bash "linenos=false" >}}
 - mysite
 	- content
 		- posts
 			- my-first-post
-```
+{{< /highlight >}}
+
 Hugo "knows" that the *content* subdirectory within *mysite* is, in essence, the top level of the site's content, so that's why you didn't have to include ```content``` within that command above.
 {.indentAfterLI}
 
@@ -165,11 +165,13 @@ Also, I'd suggest creating some sort of logical structure to make things easier 
 
 In order to see what's going on in your browser, you now have to start Hugo's built-in web server. This is one of the coolest things about Hugo, because it builds giant websites at staggering speed, far more quickly than the vast majority of other SSGs. The [Smashing Magazine site](https://www.smashingmagazine.com) is built on it.
 
-1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
+1. If necessary, use your system's CLI app to navigate back to that *mysite* directory you created in **STEP 2: Create your new site**.
+
 2. Copy/paste the following and then press **Return** or **Enter**:
-```bash
+{{< highlight bash "linenos=false" >}}
 hugo server -D
-```
+{{< /highlight >}}
+
 This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/usage/#draft-future-and-expired-content) enabled.[^drafts]
 {.indentAfterLI}
 
@@ -177,7 +179,8 @@ This starts the Hugo server with [*drafts*](https://gohugo.io/getting-started/us
 
 3. **To view your locally-hosted site**, use your web browser to visit ```http://localhost:1313/```.
 
-You'll see that it already has one post listed, *my-first-post*, from what you did in **STEP 4: Add some content**. The resulting URL for it is ```http://localhost:1313/posts/my-first-post/```.
+You'll see that it already has one post listed, *my-first-post*, from what you did in **STEP 4: Add some content**. The resulting URL for it is:\
+```http://localhost:1313/posts/my-first-post/```.
 {.indentAfterLI}
 
 The ```content``` part doesn't appear in the URL, since --- again --- the *content* subdirectory is the top level of the site.[^urlinfo]

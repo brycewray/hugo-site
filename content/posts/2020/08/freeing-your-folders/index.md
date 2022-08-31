@@ -56,14 +56,14 @@ So, with all that understood, here we go.
 7. Select **everything** in that **Documents** folder.
 
 **Note:** Well, *almost* everything. I suggest being careful about any folder that is identified in the **List** view as an "App Library" (often possessing an app's logo on the folder icon in the default **Icons** view) --- one notable example of which, in my case, is [iA Writer](https://ia.net/writer). Leave folders of that type in the **iCloud Drive** folder's **Documents** folder. While you *can* move those items if you wish, just be forewarned that either the current app or its future versions might have a problem with the different location.
-{.yellowBox}
+{.yellowBox .indentAfterLI}
 
-8. Drag it all to the **2-Documents** folder.
-	Again, you'll get the warning about moving the content out of iCloud Drive; so, as before, confirm that you **do** want to proceed.
-9. Access the iCloud Drive settings: **System Preferences** \> **Internet Accounts** \> **iCloud** \> **iCloud Drive**.
+8. Drag it all to the **2-Documents** folder.\
+Again, you'll get the warning about moving the content out of iCloud Drive; so, as before, confirm that you **do** want to proceed.
+9.  Access the iCloud Drive settings: **System Preferences** \> **Internet Accounts** \> **iCloud** \> **iCloud Drive**.
 10. Click **Options**.
-11. Uncheck the checkbox next to **Desktop &amp; Documents Folders**, so that the window looks like this (your list of apps will vary, of course, but the top one is all that concerns us here):
-
+11. Uncheck the checkbox next to **Desktop &amp; Documents Folders**, so that the window looks like this (your list of apps will vary, of course, but the top one is all that concerns us here):\
+\
 {{< imgh src="iCloud-Drive-Desktop-Documents_1336x990.png" alt="The iCloud Drive settings for macOS Catalina as of August, 2020" >}}
 
 All done!

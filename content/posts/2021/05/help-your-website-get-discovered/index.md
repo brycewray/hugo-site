@@ -52,8 +52,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 1. If you haven't already added them to your Eleventy setup, add the [Eleventy RSS plugin](https://www.11ty.dev/docs/plugins/rss/) and the [Luxon](https://github.com/moment/luxon) time-related library.
 
 2. In the `src` folder, create the file `feed.njk` to make your template for the RSS feed:
-
-```jinja
+{{< highlight jinja "linenos=false" >}}
 ---json
 {
 	"permalink": "/index.xml",
@@ -95,11 +94,10 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 		{%- endif -%}
 	{%- endfor %}
 </feed>
-```
+{{< /highlight >}}
 
 3. In the `src` folder, create the file `jsonfile.njk` to make your template for the JSON feed:
-
-```jinja
+{{< highlight jinja "linenos=false" >}}
 ---json
 {
 	"permalink": "/index.json",
@@ -138,11 +136,10 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 		{%- endfor %}
 	]
 }
-```
+{{< /highlight >}}
 
 4. In the `src` folder, create the file `sitemap.njk` to make your template for the XML sitemap (replace the dates in the final two items with what make sense for your site):
-
-```jinja
+{{< highlight jinja "linenos=false" >}}
 ---
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
@@ -160,22 +157,20 @@ eleventyExcludeFromCollections: true
 	</url>
 	{%- endfor -%}
 </urlset>
-```
+{{< /highlight >}}
 
 5. In the `src` folder, create the folder `sitemap`; then, within it, create the file `index.md` with whatever date makes sense for you:
-
-```md
+{{< highlight md "linenos=false" >}}
 ---
 #layout: sitemap
 title: "Sitemap (HTML form)"
 ---
 
 (The text for the page is all in the appropriate template.)
-```
+{{< /highlight >}}
 
 6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/), and you'll obviously want to customize those "Main pages" items at the top):
-
-```jinja
+{{< highlight jinja "linenos=false" >}}
 ---
 #layout: 'base.njk'
 ---
@@ -195,7 +190,7 @@ title: "Sitemap (HTML form)"
 		</ul>
 	</div>
 </main>
-```
+{{< /highlight >}}
 
 Now, finish up the Eleventy-based setup by going down this page to the "For either SSG" instructions.
 
@@ -204,8 +199,7 @@ Now, finish up the Eleventy-based setup by going down this page to the "For eith
 I've noted [before](/posts/2020/12/eleventy-hugo-comparing-contrasting/) that Hugo comes with a lot of built-in goodies, so it won't surprise you that the process for Hugo is a bit simpler than with Eleventy.
 
 1. Make sure that, in your [sitewide configuration file](https://gohugo.io/getting-started/configuration/), you have specified `json` as one of the output formats and one of the home output options. For example, my sitewide config file is `config.yaml` and has these entries:
-
-```yaml
+{{< highlight yaml "linenos=false" >}}
 outputFormats:
 	json:
 		baseName: "index"
@@ -217,12 +211,12 @@ outputs:
 		- html
 		- rss
 		- json
-```
+{{< /highlight >}}
 
 2. Hugo comes with a built-in template for the RSS feed, so there's no need to come up with one.
-3. For the JSON feed, go to the appropriate `layouts/_defaults` folder (either in the top level or within a theme's folder setup; see "[Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/)”) and create an `index.json` file with the following content (based on how the aforementioned RSS template works):
 
-```go-html-template
+3. For the JSON feed, go to the appropriate `layouts/_defaults` folder (either in the top level or within a theme's folder setup; see "[Hugo's Lookup Order](https://gohugo.io/templates/lookup-order/)”) and create an `index.json` file with the following content (based on how the aforementioned RSS template works):
+{{< highlight go-html-template "linenos=false" >}}
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := $pctx.RegularPages -}}
@@ -277,21 +271,20 @@ outputs:
 		{{ end -}}
 	]
 }
-```
+{{< /highlight >}}
 
 4. Hugo comes with a built-in template for the XML sitemap, so there's no need to create one.
-5. For the HTML sitemap, go to the `content` folder (probably top-level) and create a `sitemap` folder containing an `_index.md` file (note that it's `_index.md` and not `index.md`, which [matters in Hugo](https://gohugo.io/content-management/page-bundles/)) with whatever date you prefer:
 
-```md
+5. For the HTML sitemap, go to the `content` folder (probably top-level) and create a `sitemap` folder containing an `_index.md` file (note that it's `_index.md` and not `index.md`, which [matters in Hugo](https://gohugo.io/content-management/page-bundles/)) with whatever date you prefer:
+{{< highlight md "linenos=false" >}}
 ---
 title: "Sitemap (HTML form)"
 date: 2021-05-12T08:00:00-05:00
 ---
-```
+{{< /highlight >}}
 
 6. Then, back in the appropriate `layouts` folder, add a `sitemap` folder containing a `sitemap.html` file with the following (edit the CSS classes and the "Main pages" stuff as makes sense for your site):
-
-```go-html-template
+{{< highlight go-html-template "linenos=false" >}}
 {{ define "main" }}
 	<div class="container-narrower sitemapDiv">
 		<h1>Sitemap</h1>
@@ -310,25 +303,23 @@ date: 2021-05-12T08:00:00-05:00
 		</ul>
 	</div>
 {{ end }}
-```
+{{< /highlight >}}
 
 Now, finish up the Hugo-based setup with the "For either SSG" instructions below.
 
 #### For either SSG
 
 1. Add the following to your sitewide `head` tag, wherever it resides in your layouts:
-
-```html
+{{< highlight html "linenos=false" >}}
 <!-- discover feeds -->
 <link rel="alternate" title="Feed - RSS" type="application/rss+xml" href="https://www.example.com/index.xml" />
 <link rel="alternate" title="Feed - JSON" type="application/feed+json" href="https://www.example.com/index.json" />
-```
+{{< /highlight >}}
 
 2. This one is a **suggestion** but I think it's wise, especially for accessibility: add sitewide links (perhaps in the footer) to both of your sitemaps. For example, you might do it like this:
-
-```html
+{{< highlight html "linenos=false" >}}
 Sitemaps: <a href="/sitemap">HTML</a> &bull; <a href="/sitemap.xml">XML</a>.
-```
+{{< /highlight >}}
 
 ### Easy and automatic from here on
 
