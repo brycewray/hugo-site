@@ -3,7 +3,7 @@ title: "Bundling up: rebuilding my Hugo site"
 description: "O ye new users, run as fast as you can — away from the way I was managing my content, and toward using page bundles, as I’m doing now."
 author: Bryce Wray
 date: 2022-07-23T16:53:00-05:00
-lastmod: 2022-08-01T21:27:00-05:00
+lastmod: 2022-08-31T08:23:00-05:00
 #draft: true
 #initTextEditor: iA Writer
 ---
@@ -38,7 +38,7 @@ But it was easier said than done. I'd have to:
 And this was going to take some doing. I was [keeping all my images in `assets/images/`](/posts/2022/06/responsive-optimized-images-hugo/). As for my content files: rather than using the page bundles approach, I'd always organized them as in this example:
 
 ```plaintext
-project   <-- The Hugo project folder
+.   <-- The Hugo project folder
 └─ content
     └─ posts
         └─ 2022
