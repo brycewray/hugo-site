@@ -60,10 +60,10 @@
 /* Operator */ .chroma .o, .code-inline .o { color: rgb(251, 191, 36) }
 /* OperatorWord */ .chroma .ow, .code-inline .ow { color: rgb(186, 230, 253) }
 /* Punctuation */ .chroma .p, .code-inline .p { color: rgb(192, 192, 192) }
-/* Comment */ .chroma .c, .code-inline .c { color: #bbffdd; }
-/* CommentHashbang */ .chroma .ch, .code-inline .ch { color: #bbffdd; }
-/* CommentMultiline */ .chroma .cm, .code-inline .cm { color: #bbffdd; }
-/* CommentSingle */ .chroma .c1, .code-inline .c1 { color: #bbffdd; }
+/* Comment */ .chroma .c, .code-inline .c { color: hsl(111, 38%, 57%); } /* #73BB66 */
+/* CommentHashbang */ .chroma .ch, .code-inline .ch { color: hsl(111, 38%, 57%); }
+/* CommentMultiline */ .chroma .cm, .code-inline .cm { color: hsl(111, 38%, 57%); }
+/* CommentSingle */ .chroma .c1, .code-inline .c1 { color: hsl(111, 38%, 57%); }
 /* CommentSpecial */ .chroma .cs, .code-inline .cs { color: #e50808; background-color: #520000 }
 /* CommentPreproc */ .chroma .cp, .code-inline .cp { color: #ff8585 }
 /* CommentPreprocFile */ .chroma .cpf, .code-inline .cpf { color: #cd2828 }
