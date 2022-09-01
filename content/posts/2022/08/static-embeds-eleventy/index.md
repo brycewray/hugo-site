@@ -34,12 +34,11 @@ The `stweet.js` shortcode uses two Twitter APIs: Public Syndication and oEmbed. 
 {% stweet "EliArieh", "1563133769443610625" %}
 ```
 
-Note that it assumes you have the [`luxon`](https://github.com/moment/luxon) package installed in the project.
+Note that it assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch) and [`luxon`](https://github.com/moment/luxon) packages installed in the project.
 
 ```js
-const fetch = (...args) =>
-	import('node-fetch').then(({ default: fetch }) => fetch(...args))
 
+const EleventyFetch = require("@11ty/eleventy-fetch")
 const { DateTime } = require("luxon")
 
 module.exports = async (user, id) => {
@@ -53,11 +52,15 @@ module.exports = async (user, id) => {
 	const urlSynd = `https://cdn.syndication.twimg.com/tweet?id=${id}`
 
 	async function getTweet(tweetURL) {
-		const response = await fetch(tweetURL, {
-			method: "get"
-		});
-		return response.json()
+		const response = await EleventyFetch(tweetURL, {
+			duration: "2w",
+			type: "json"
+		})
+		return response
 	}
+	// Regarding the settings above,
+	// consult the eleventy-fetch documentation
+	// at https://www.11ty.dev/docs/plugins/fetch/
 
 	let Json = await getTweet(urlSynd)
 	let Text = Json.text
@@ -278,15 +281,13 @@ The `stweetv2.js` shortcode uses Twitter's recommended v2 API, [although I **don
 {% stweetv2 "1563133769443610625" %}
 ```
 
-Note that it assumes you have the [`luxon`](https://github.com/moment/luxon) and [`dotenv`](https://github.com/motdotla/dotenv) packages installed in the project. The `dotenv` package allows you to keep your Twitter **bearer token** --- required for access of the v2 API --- in a *non*-public, *non*-committed `.env` file while still accessing the token during dev. (You may wish to review my post, "[Static tweets in Eleventy and Hugo: Part 2](/posts/2022/02/static-tweets-eleventy-hugo-part-2/)," for more concerning the Twitter bearer token and the v2 API, including the fact that you must set up the bearer token as an environment variable on your chosen hosting vendor.)
+Note that it assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch), [`luxon`](https://github.com/moment/luxon), and [`dotenv`](https://github.com/motdotla/dotenv) packages installed in the project. The `dotenv` package allows you to keep your Twitter **bearer token** --- required for access of the v2 API --- in a *non*-public, *non*-committed `.env` file while still accessing the token during dev. (You may wish to review my post, "[Static tweets in Eleventy and Hugo: Part 2](/posts/2022/02/static-tweets-eleventy-hugo-part-2/)," for more concerning the Twitter bearer token and the v2 API, including the fact that you must set up the bearer token as an environment variable on your chosen hosting vendor.)
 
 ```js
-const fetch = (...args) =>
-	import('node-fetch').then(({ default: fetch }) => fetch(...args))
-
+const EleventyFetch = require("@11ty/eleventy-fetch")
 const { DateTime } = require("luxon")
-
 require('dotenv').config()
+
 const BearerToken = process.env.BEARER_TOKEN
 
 module.exports = async (TweetID) => {
@@ -297,14 +298,20 @@ module.exports = async (TweetID) => {
 	const jsonURL2 = "&expansions=author_id,attachments.media_keys&tweet.fields=created_at,text,attachments,entities,source&user.fields=name,username,profile_image_url&media.fields=preview_image_url,type,url,alt_text"
 
 	async function getTweetV2(tweetURL) {
-		const response = await fetch(tweetURL, {
-			method: "get",
-			headers: {
-				"Authorization": `Bearer ${BearerToken}`
+		const response = await EleventyFetch(tweetURL, {
+			duration: "2w",
+			type: "json",
+			fetchOptions: {
+				headers: {
+					"Authorization": `Bearer ${BearerToken}`
+				},
 			}
 		});
-		return response.json()
+		return response
 	}
+	// Regarding the settings above,
+	// consult the eleventy-fetch documentation
+	// at https://www.11ty.dev/docs/plugins/fetch/
 
 	const Json = await getTweetV2(jsonURL1 + TweetID + jsonURL2)
 	const JsonData = Json.data[0]
@@ -413,15 +420,13 @@ Using the `stoot.js` shortcode in Markdown brings up the following:
 You can find this shortcode's most current repo version [here](https://github.com/brycewray/eleventy_site/blob/main/src/assets/utils/stoot.js). Invoke it in Markdown as in this example, where the first parameter represents the toot's Mastodon instance and the second represents the toot's numeric ID:
 
 ```md
-{% stweet "mastodon.technology", "108895710962373705" %}
+{% stoot "mastodon.technology", "108895710962373705" %}
 ```
 
-Note that it assumes you have the [`luxon`](https://github.com/moment/luxon) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
+Note that it assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch), [`luxon`](https://github.com/moment/luxon), and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
 
 ```js
-const fetch = (...args) =>
-	import('node-fetch').then(({ default: fetch }) => fetch(...args))
-
+const EleventyFetch = require("@11ty/eleventy-fetch")
 const md5 = require('md5')
 const { DateTime } = require("luxon")
 
@@ -433,11 +438,15 @@ module.exports = async (instance, id) => {
 	urlToGet = `https://` + instance + `/api/v1/statuses/` + id
 
 	async function GetToot(tootURL) {
-		const response = await fetch(tootURL, {
-			method: "get"
+		const response = await EleventyFetch(tootURL, {
+			duration: "2w",
+			type: "json"
 		});
-		return response.json()
+		return response
 	}
+	// Regarding the settings above,
+	// consult the eleventy-fetch documentation
+	// at https://www.11ty.dev/docs/plugins/fetch/
 
 	let Json = await GetToot(urlToGet);
 

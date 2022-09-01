@@ -147,7 +147,7 @@ The `imgc.js` shortcode is available in its most current form [here](https://git
 
 `imgc` uses the height and width to derive the image's aspect ratio.
 
-Note that `imgc` assumes you have the [`axios`](https://github.com/axios/axios) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
+Note that `imgc` assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
 
 Of course, be sure to enable the `imgc` shortcode in your Eleventy config file through the [usual procedure](https://www.11ty.dev/docs/shortcodes/).
 
@@ -156,8 +156,8 @@ Of course, be sure to enable the `imgc` shortcode in your Eleventy config file t
 
 ```js
 
+const EleventyFetch = require("@11ty/eleventy-fetch")
 const md5 = require('md5')
-const axios = require('axios')
 
 const respSizes = [ 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500 ]
 let myCloud = '' // <- PROVIDE YOUR CLOUDINARY CLOUD NAME!
@@ -173,12 +173,15 @@ module.exports = async (url, alt, width, height, phn) => {
 	dataSzes = `(min-width: 1024px) 100vw, 50vw`
 
   async function getBase64(urlFor64) {
-    const response = await axios
-      .get(urlFor64, {
-        responseType: 'arraybuffer'
-      })
-    return Buffer.from(response.data, 'binary').toString('base64')
+    const imageBuffer = await EleventyFetch(urlFor64, {
+			duration: "2w",
+			type: "buffer"
+		})
+    return Buffer.from(imageBuffer, 'binary').toString('base64')
   }
+	// Regarding the settings above,
+	// consult the eleventy-fetch documentation
+	// at https://www.11ty.dev/docs/plugins/fetch/
 
   let LQIP_b64 = await getBase64(cloudiBase + LQIPholder + url)
 
