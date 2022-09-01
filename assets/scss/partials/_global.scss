@@ -1,7 +1,7 @@
 @use 'variables' as var;
 
 html, body {
-	font-family: var.$serif;
+	font-family: var.$sans-serif;
 	background-color: var.$gray-GitHub-blue;
 	color: var.$default-color;
 	@media (prefers-color-scheme: dark) {
@@ -304,7 +304,7 @@ article {
 	h1, h2, h3, h4 {
 		margin-top: 1.5em;
 		margin-bottom: 1.5rem;
-		letter-spacing: -0.0125em;
+		letter-spacing: -0.03em;
 		line-height: normal;
 	}
 }

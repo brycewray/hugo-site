@@ -65,12 +65,13 @@
 		font-size: clamp(1.25rem, 0.625rem + 1.5vw, 2.25rem);
 		// font-family: var.$serif;
 		line-height: 1.25em;
-		letter-spacing: -0.025em;
+		letter-spacing: -0.0375em;
 	}
 	&-Description {
-		font-size: clamp(1.1rem, 0.5rem + 1vw, 1.3rem);
+		font-size: clamp(1.1rem, 0.5rem + 0.75vw, 1.2rem);
 		// font-family: var.$serif;
-		font-style: italic;
+		// font-style: italic;
+		letter-spacing: -0.025em;
 		margin-top: 0.5em;
 		margin-bottom: 0.25em;
 	}
