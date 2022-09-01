@@ -13,7 +13,7 @@
 			{{ .Params.Description }}
 		</p>
 		{{- end }}
-		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Privacy policy" ) (ne .Title "Want to reach me?") ) -}}
+		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}
 		<p class="billboard-p-text" data-pagefind-ignore>
 			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 		</p>
