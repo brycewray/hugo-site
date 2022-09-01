@@ -34,7 +34,7 @@
   {{ end -}}
   "items": [
     {{ range $index, $element := $pages -}}
-    {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=Re: “` .Title `”">Reply via email</a></p>` -}}
+    {{- $emailReplyHTML := printf "%s%s%s" `<p><a href="mailto:bw@brycewray.com?subject=“` .Title `”">Reply via email</a></p>` -}}
     {{- $emailReplyHTML := $emailReplyHTML -}}
     {{- $contentHTML := printf "%s%s" .Content $emailReplyHTML -}}
     {
