@@ -59,7 +59,7 @@
 		margin-top: 0.5em;
 		margin-bottom: 0.25em;
 		font-size: clamp(2rem, 2rem + 1vw, 3.5rem);
-		letter-spacing: -0.025em;
+		letter-spacing: -0.05em;
 		@media screen and (min-width: var.$bkpt_lg) {
 			margin-top: 0;
 			padding-top: 1em;
@@ -76,6 +76,7 @@
 		margin-top: 0.5em;
 		// font-family: var.$serif;
 		// font-style: italic;
+		font-weight: 300;
 		letter-spacing: -0.025em;
 		font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
 	}
