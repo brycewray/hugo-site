@@ -52,14 +52,14 @@
 		font-size: clamp(2.25em, 0.75rem + 4vw, 4em);
 		padding-top: 1em; // definitely em, not rem
 		line-height: 1.1;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.0375em;
 	}
 	&-description-text {
 		font-size: clamp(1.1rem, 0.5rem + 1.5vw, 2rem);
-		// font-style: italic;
+		font-style: italic;
 		// font-family: var.$serif;
 		padding-top: 1em; // definitely em, not rem
-		letter-spacing: -0.035em;
+		letter-spacing: -0.025em;
 		line-height: 1.4;
 	}
 	&-p-text {

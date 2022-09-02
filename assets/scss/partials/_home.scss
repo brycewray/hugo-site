@@ -23,7 +23,7 @@
 	h1 {
 		line-height: 1.75em;
 		font-size: clamp(1.5rem, 0.5rem + 1.5vw, 2.25rem);
-		letter-spacing: -0.05em;
+		letter-spacing: -0.025em;
 		padding-top: 2vh;
 	}
 	@media screen and (min-width: var.$bkpt_md) {
@@ -58,7 +58,7 @@
 		margin-top: 0.5em;
 		margin-bottom: 0.25em;
 		font-size: clamp(2rem, 2rem + 1vw, 3.5rem);
-		letter-spacing: -0.05em;
+		letter-spacing: -0.025em;
 		@media screen and (min-width: var.$bkpt_lg) {
 			margin-top: 0;
 			padding-top: 1em;
@@ -67,15 +67,15 @@
 	&-Title {
 		font-size: clamp(1.75rem, 1.25rem + 1vw, 2.25rem);
 		// font-family: var.$serif;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.025em;
 		padding-top: 0.5em;
 		line-height: normal;
 	}
 	&-Description {
 		margin-top: 0.5em;
 		// font-family: var.$serif;
-		// font-style: italic;
-		letter-spacing: -0.025em;
+		font-style: italic;
+		letter-spacing: -0.0125em;
 		font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
 	}
 	&-Dates {
