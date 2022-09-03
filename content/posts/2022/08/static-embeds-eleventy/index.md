@@ -15,7 +15,7 @@ Of course, be sure to enable each of these in your Eleventy config file through 
 
 And, yes, this may finally be the end of my posts on this subject, half a year after [I started down this path](/posts/2022/02/static-tweets-eleventy-hugo/). Feel free to rejoice. I'll be right there with ya.
 
-**Update, 2022-08-30**: Actually, I decided I should do [at least one more such post](/posts/2022/08/static-tweets-atro-two-sources-edition/).
+**Update, 2022-08-30**: Actually, I decided I should do [at least one more such post](/posts/2022/08/static-tweets-astro-two-sources-edition/).
 {.yellowBox}
 
 ## Static tweets
