@@ -262,7 +262,7 @@ module.exports = async (user, id) => {
 		}
 
 		let timeToFormat = Json.created_at
-		let formattedTime = DateTime.fromISO(timeToFormat).toFormat("h:mm a • MMM d, yyyy")
+		let formattedTime = DateTime.fromISO(timeToFormat, { zone: "utc" }).toFormat("h:mm a • MMM d, yyyy")
 
 		stringToRet += `<div class="tweet-footer">
 			<a href="https://twitter.com/${Json.user.screen_name}/status/${Json.id_str}" rel="noopener">${formattedTime}</a>&nbsp;<span class="legal">(UTC)</span>
@@ -399,7 +399,7 @@ module.exports = async (TweetID) => {
 		<span>${imageItems}</span>`
 
 		let timeToFormat = created_at
-		let formattedTime = DateTime.fromISO(timeToFormat).toFormat("h:mm a • MMM d, yyyy")
+		let formattedTime = DateTime.fromISO(timeToFormat, { zone: "utc" }).toFormat("h:mm a • MMM d, yyyy")
 
 		stringToRet += `<div class="tweet-footer">
 			<a href="https://twitter.com/${username}/status/${TweetID}" class="tweet-date" rel="noopener">${formattedTime}</a>&nbsp;<span class="legal">(UTC)</span>
@@ -553,7 +553,7 @@ module.exports = async (instance, id) => {
 			}
 
 			let timeToFormat = Json.created_at
-			let formattedTime = DateTime.fromISO(timeToFormat).toFormat("h:mm a • MMM d, yyyy")
+			let formattedTime = DateTime.fromISO(timeToFormat, { zone: "utc" }).toFormat("h:mm a • MMM d, yyyy")
 
 			stringToRet += `<div class="tweet-footer">
 				<a href="https://${instance}/@${Json.account.acct}/${Json.id}" class="tweet-date twitterExt" rel="noopener">${formattedTime}</a>&nbsp;<span class="legal">(UTC)</span>
