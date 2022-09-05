@@ -25,7 +25,7 @@ module.exports = async (user, id) => {
 		/*
 			get data from the API(s)
 			and put the results in
-			the `stringToReturn` var 
+			the `stringToReturn` var
 		*/
 	} else {
 		stringToReturn = `<blockquote><p>API result will appear here in production.</p></blockquote>`
@@ -53,3 +53,13 @@ The answer is that it depends. For example, in [Astro](https://astro.build), you
 ```
 
 . . . so entering `npm run testbuild` would let you develop while in a production environment --- and, thus, see the results of the APIs you're accessing. When you're done checking for those results, simply restart the dev server and use `npm run start` to return to a much leaner dev mode. Your SSG and CPU will thank you for it.
+
+----
+
+**Additional note**
+
+Another, perhaps simpler possibility would be optionally passing a `prod` variable (after `user` and `id` in our example above) which, if set to `"prod"`, **also** would access the API and cause the results to appear. In that case, the `if` statement above would become an "or" conditional:
+
+```js
+if (environment === "production" || prod === "prod")
+```
