@@ -55,7 +55,7 @@ And this is the Markdown it exports (I changed my mind and cleared the *Caption*
 | Ulysses   | 27.x                  |
 ```
 
-Finally, here’s how this site’s SSG ([Hugo](https://gohugo.io), at this writing) renders that Markdown:
+Finally, here’s how this site’s SSG renders that Markdown:
 
 | App       | Current major version |
 | --------- | --------------------- |
