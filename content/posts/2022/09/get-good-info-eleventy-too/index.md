@@ -57,7 +57,7 @@ module.exports = (pubdate, filename) => {
 			.trim()
 
 		const longHash =
-		childProcess
+			childProcess
 			.execSync(`git log -1 --pretty=format:"%H" ${filename}`)
 			.toString()
 			.trim()
