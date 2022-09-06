@@ -20,7 +20,7 @@ params:
   Author: "Bryce Wray"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
   Host: "CFP" # choices are "CFP" and "Vercel"
-  SiteLive: false # Boolean --- used for adapting robots.txt as needed
+  SiteLive: true # Boolean --- used for adapting robots.txt as needed
   SearchTitle: "Search the site"
 
 frontmatter:
