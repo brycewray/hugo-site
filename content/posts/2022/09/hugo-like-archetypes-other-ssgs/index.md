@@ -18,7 +18,7 @@ Perhaps you've just had some inspiration and want to get started with a new post
 But, in Hugo, you can take advantage of its [**archetypes**](https://gohugo.io/content-management/archetypes/), about which I [wrote](https://cloudcannon.com/blog/maximizing-the-convenience-factor-archetypes-in-hugo/) for the [CloudCannon Blog](https://cloudcannon.com/blog/) several months ago. With a Hugo archetype set correctly, you can turn those steps above into a simple one-line command:
 
 ```plaintext
-hugo new posts/2022/09/archetypes-other-ssgs/index.md
+hugo new posts/2022/09/hugo-like-archetypes-other-ssgs/index.md
 ```
 
 . . . instantly creating:
@@ -28,7 +28,7 @@ hugo new posts/2022/09/archetypes-other-ssgs/index.md
  └─ posts/
     └─ 2022/
         └─ 09/
-            ├── archetypes-other-ssgs/
+            ├── hugo-like-archetypes-other-ssgs/
             │   ├── index.md
 ```
 
