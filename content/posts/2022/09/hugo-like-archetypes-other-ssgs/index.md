@@ -78,7 +78,7 @@ read filepath
 cp -v "archetypes/posts.md" "src/$filepath"
 ```
 
-Of course, feel free to make the `cp -v` line conform to how your site and SSG arrange content. (For a typical [Eleventy](https://11ty.dev) or [Jekyll](https://jekyllrb.org) site, `src/$filepath` should work fine. However, SSGs like [Astro](https://astro.build) and [Next.js](https://nextjs.org) probably expect `src/pages/$filepath`. If necessary, consult your SSG's documentation to make sure you know the right place to target.)
+Of course, feel free to make the `cp -v` line conform to how your site and SSG arrange content. (For a typical [Eleventy](https://11ty.dev) or [Jekyll](https://jekyllrb.com) site, `src/$filepath` should work fine. However, SSGs like [Astro](https://astro.build) and [Next.js](https://nextjs.org) probably expect `src/pages/$filepath`. If necessary, consult your SSG's documentation to make sure you know the right place to target.)
 
 Finally, give `newfile.sh` the necessary permissions:
 
