@@ -48,7 +48,7 @@ Text begins here.
 
 **However**, for those of you using other SSGs, you can do something very similar to this neat shortcut, and without a lot of trouble.
 
-Let's say your SSG's main files live in a `src` directory at the project's top level. This is a standard convention among SSGs. Create a `src/archetypes/` folder and put within it a file, `posts.md`, with the following content:
+Let's say your SSG's main files live in a `src` directory at the project's top level. This is a standard convention among SSGs. Create a top-level `archetypes/` folder and put within it a file, `posts.md`, with the following content:
 
 ```md
 ---
