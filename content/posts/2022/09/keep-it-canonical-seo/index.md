@@ -1,6 +1,6 @@
 ---
 title: "Keep it canonical for SEO"
-description: "Use canonical URLs to keep search engines straight on which content they should index."
+description: "Use canonical URLs to keep search engines straight on which content they should index."
 author: Bryce Wray
 date: 2022-09-07T16:08:00-05:00
 #draft: true
