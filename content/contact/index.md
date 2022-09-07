@@ -15,6 +15,7 @@ bw@brycewray.com<br />
 
 ## Follow me
 
+- This site’s news feed ([RSS](/index.xml) or [JSON](/index.json))
 - [brycewray on GitHub](https://github.com/brycewray/)
 - [@BryceWrayTX on Twitter](https://twitter.com/BryceWrayTX/)
-- This site’s news feed ([RSS](/index.xml) or [JSON](/index.json))
+- [@BryceWrayTX on Mastodon](https://mastodon.technology/@BryceWrayTX)
