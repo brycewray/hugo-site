@@ -23,4 +23,4 @@ Anyway, continuing with our *example.com* example (?), here are links to explain
 - [Eleventy](https://11ty.dev): "[Absolute URLs](https://www.aleksandrhovhannisyan.com/blog/useful-11ty-filters/#4-absolute-urls)" from [Aleksandr Hovhannisyan](https://github.com/AleksandrHovhannisyan)'s article, "[A Set of Useful 11ty Filters](https://www.aleksandrhovhannisyan.com/blog/useful-11ty-filters/)."
 - [Hugo](https://gohugo.io): "[Hugo SEO Best Practices](https://cloudcannon.com/community/learn/hugo-seo-best-practices/)," a tutorial I helped to write for [CloudCannon](https://cloudcannon.com). (Scroll down to the section, "Set the canonical URL.")
 
-Take these simple steps to maximize the likelihood that the content of your real site, and not that of the site's oddly-named twin out on the host's platform, will garner all the "search juice" it deserves.
+Take these simple steps to maximize the likelihood that the content of your real site, and not that of the site's oddly named twin out on the host's platform, will garner all the "search juice" it deserves.
