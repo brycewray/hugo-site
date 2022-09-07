@@ -62,7 +62,7 @@ date: 2022-05-01T11:00:00-05:00
 Text begins here.
 ```
 
-- For `author`, substitute my `# fill in your name` comment with your name.
+- For `author`, substitute your name for my `# fill in your name` comment.
 - The `draft` item may not necessarily mean anything to your SSG but, in case you *are* using an SSG which distinguishes between drafts and ready-to-publish files, I included `draft` for safety's sake (as a Hugo archetype typically does) so you don't accidentally post anything before you're ready.
 - As for `date`, use a placeholder that works for your date and time zone.
 
