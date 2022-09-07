@@ -1,5 +1,5 @@
 ---
-title: "TITLE TO COME"
+title: "{{ replace .Name "-" " " | humanize }}"
 description: "DESCRIPTION TO COME."
 author: Bryce Wray
 date: {{ .Date }}
