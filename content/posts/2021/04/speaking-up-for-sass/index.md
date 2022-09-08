@@ -47,7 +47,7 @@ $mdBkpt: 768px;
 
 @media screen and (min-width: $mdBkpt) {
 	body {
-	padding: 0 1.5em;
+		padding: 0 1.5em;
 	}
 }
 
@@ -71,7 +71,7 @@ While [PostCSS](https://postcss.org) lets you nest selectors within parent selec
 body {
 	padding: 0 1em;
 	@media screen and (min-width: $mdBkpt) {
-	padding: 0 1.5em;
+		padding: 0 1.5em;
 	}
 }
 
@@ -80,17 +80,17 @@ body {
 	color: white;
 	width: 100%;
 	@media screen and (min-width: $mdBkpt) {
-	width: 80%;
+		width: 80%;
 	}
 	p, li {
-	margin: 1em 0;
-	letter-spacing: -0.015em;
+		margin: 1em 0;
+		letter-spacing: -0.015em;
 	}
 	&-narrower {
-	width: 60%;
-	@media screen and (min-width: $mdBkpt) {
-		width: 45%;
-	}
+		width: 60%;
+		@media screen and (min-width: $mdBkpt) {
+			width: 45%;
+		}
 	}
 }
 ```
@@ -103,7 +103,7 @@ body {
 }
 @media screen and (min-width: 768px) {
 	body {
-	padding: 0 1.5em;
+		padding: 0 1.5em;
 	}
 }
 .bigContainer {
@@ -120,7 +120,7 @@ body {
 }
 @media screen and (min-width: 768px) {
 	.bigContainer-narrower {
-	width: 45%;
+		width: 45%;
 	}
 }
 ```
