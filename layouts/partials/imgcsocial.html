@@ -1,0 +1,61 @@
+{{- $cloudName := "brycewray-com" -}}
+{{- $basicURL := print "https://res.cloudinary.com/" $cloudName "/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_760,c_fit," -}}
+{{- $fontColor := "ffffff" -}}{{/* No `#` */}}
+{{- $topCorner := "north_west" -}}
+{{- $topStart := "72" -}}{{/* pixels */}}
+{{- $leftStart := "72" -}}{{/* pixels */}}
+{{- $fontChoice := "helvetica" -}}
+{{/*
+	choices are:
+	- Arial
+	- Verdana
+	- Helvetica
+	- Trebuchet MS
+	- Times New Roman
+	- Georgia
+	- Courier New
+	- Open Sans
+	- Roboto
+	- Montserrat
+	ref: https://cloudinary.com/documentation/media_editor_reference#textoverlaysprops
+*/}}
+{{- $fontSize := "84" -}}{{/* pixels */}}
+{{- $overlayImg := "social-OG-bkgd-for-Eleventy_1280x669" -}}
+{{/*
+	/** From `get-share-image`:
+ * Encodes characters for Cloudinary URL
+ * Encodes some not allowed in Cloudinary parameter values twice:
+ *   hash, comma, slash, question mark, backslash
+ *   https://support.cloudinary.com/hc/en-us/articles/202521512-How-to-add-a-slash-character-or-any-other-special-characters-in-text-overlays-
+ *
+*/}}
+{{- $titleSafe := replace .Title " " "%20" -}}{{/* normal space */}}
+{{- $titleSafe = replace $titleSafe " " "%20" -}}{{/* &nbsp; */}}
+{{/* The API doesn’t handle &nbsp; well, so we just convert to regular */}}
+{{- $titleSafe = replace $titleSafe "’" "%E2%80%99" -}}{{/* &rsquo; */}}
+{{- $titleSafe = replace $titleSafe "“" "%E2%80%9C"  -}}{{/* &ldquo; */}}
+{{- $titleSafe = replace $titleSafe "”" "%E2%80%9D" -}}{{/* &rdquo; */}}
+{{- $titleSafe = replace $titleSafe ":" "%3A" -}}{{/* colon */}}
+{{- $titleSafe = replace $titleSafe "," "%252C" -}}{{/* comma */}}
+{{- $titleSafe = replace $titleSafe "?" "%253F" -}}{{/* question mark */}}
+{{- $titleSafe = replace $titleSafe "#" "%2523" -}}{{/* hash/number sign */}}
+{{- $titleSafe = replace $titleSafe "+" "%2B" -}}{{/* plus sign */}}
+{{- $titleSafe = replace $titleSafe "•" "%E2%80%A2" -}}{{/* bullet */}}
+{{- $finalSocImg := print $basicURL "co_rgb:" $fontColor ",g_" $topCorner ",x_" $topStart ",y_" $leftStart ",l_text:" $fontChoice "_" $fontSize ":" $titleSafe "/" $overlayImg -}}
+
+	<meta property="og:image" content="{{ $finalSocImg }}" />
+
+{{/*
+	Example response from using Jason Lengstorf's `get-share-image` NPM package:
+
+	https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_760,c_fit,co_rgb:ffffff,g_north_west,x_72,y_72,l_text:arial_84:
+	Wildness %20 with %20 wildcards %252C %20 or %C2%A0 why %C2%A0 DuckDuckGo %20 wouldn %E2%80 %99t %C2 %A0 go
+	/social-OG-bkgd-for-Eleventy_1280x669
+
+	https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_760,c_fit,co_rgb:ffffff,g_north_west,x_72,y_72,l_text:Arial_84:Get&#43;good&#43;Git&#43;info&#43;from%C2%A0Eleventy%2C%C2%A0too/social-OG-bkgd-for-Eleventy_1280x669
+
+	Refs:
+	- https://cloudinary.com/documentation/media_editor_reference
+	- https://cloudinary.com/documentation/image_transformations#adding_text_captions
+	- https://cloudinary.com/documentation/layers
+*/}}
