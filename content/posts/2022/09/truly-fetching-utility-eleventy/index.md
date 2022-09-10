@@ -1,5 +1,5 @@
 ---
-title: "A truly fetching utility for Eleventy"
+title: "A truly fetching utility for Eleventy"
 description: "While trying to make things work equally well in multiple repos, I discover the value of an Eleventy plugin I’d previously ignored."
 author: Bryce Wray
 date: 2022-09-01T13:20:00-05:00
@@ -18,7 +18,7 @@ In fact, I now like this package so much that I went back to those earlier posts
 Here are two examples of the old code vs. that with `eleventy-fetch`. In each case, the `duration` [parameter](https://www.11ty.dev/docs/plugins/fetch/#options) refers to how long Eleventy will keep the fetched item (data, image, text, whatever) in the project cache before re-fetching it. Here, I've specified `2w`, for two weeks.
 
 ```js
-/* ============================== 
+/* ==============================
 	with axios
 ============================== */
   async function getBase64(urlFor64) {
@@ -28,8 +28,8 @@ Here are two examples of the old code vs. that with `eleventy-fetch`. In each ca
       })
     return Buffer.from(response.data, 'binary').toString('base64')
   }
-    
-/* ============================== 
+
+/* ==============================
 	with eleventy-fetch
 ============================== */
   async function getBase64(urlFor64) {
@@ -44,7 +44,7 @@ Here are two examples of the old code vs. that with `eleventy-fetch`. In each ca
 <br />
 
 ```js
-/* ============================== 
+/* ==============================
 	with node-fetch
 ============================== */
 	async function getTweet(tweetURL) {
@@ -53,8 +53,8 @@ Here are two examples of the old code vs. that with `eleventy-fetch`. In each ca
 		});
 		return response.json()
 	}
-    
-/* ============================== 
+
+/* ==============================
 	with eleventy-fetch
 ============================== */
 	async function getTweet(tweetURL) {
