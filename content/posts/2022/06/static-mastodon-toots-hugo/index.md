@@ -331,7 +331,7 @@ In my opinion, the Mastodon API makes it easier to `GET` certain things, as comp
 
 {{< stoot "mastodon.social" "100540497858007977" >}}
 
-{{< stoot "hachyderm.io" "108364481876206357" >}}
+{{< stoot "mastodon.technology" "108370822931091907" >}}
 
 Also: if you see the appearance of a *regular* toot embed, I think you'll prefer these.
 
