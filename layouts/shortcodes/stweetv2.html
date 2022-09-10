@@ -34,6 +34,12 @@
 {{ $urlToGet := printf "%s%s%s" $jsonURL1 $id $jsonURL2 }}
 
 {{ with resources.GetRemote $urlToGet $authHeaders }}
+{{ if (resources.GetRemote $urlToGet $authHeaders).Err }}
+	<blockquote class="tweet-card">
+		<p class="ctr legal">[Source not online<br />
+		at time of site build.]</p>
+	</blockquote>
+{{ else }}
 	{{ $json := unmarshal .Content }}
 
 	{{ with $json }}
@@ -112,4 +118,5 @@
 			<a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date twitterExt' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
 		</div>
 	</blockquote>
+{{ end }}
 {{ end }}

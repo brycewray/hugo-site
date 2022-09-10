@@ -27,6 +27,12 @@
 {{- $currentPage := .Page -}}{{/* h/t to DFD on that one */}}
 
 {{- with resources.GetRemote $urlSynd -}}
+{{- if (resources.GetRemote $urlSynd).Err -}}
+	<blockquote class="tweet-card">
+		<p class="ctr legal">[Source not online<br />
+		at time of site build.]</p>
+	</blockquote>
+{{- else -}}
   {{ $json := unmarshal .Content -}}
 	{{- $text := $json.text -}}
 	{{- $textBefore := $text -}}{{/* pre-HTML-subs */}}
@@ -237,3 +243,4 @@
 		</div>
 	</blockquote>
 {{- end }}
+{{- end -}}
