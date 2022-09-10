@@ -4,6 +4,9 @@ title: BryceWray.com
 #theme: dart-sass # choices are dart-sass (for embedded), npm-sass, and twcss - as of 2022-03-09
 timeZone: America/Chicago
 
+# ignoreErrors:
+#   - "error-remote-getjson"
+
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
