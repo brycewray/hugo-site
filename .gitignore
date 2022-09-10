@@ -1,7 +1,7 @@
 public
-resources/_gen/assets
-resources/_gen/getresource
-resources/json
+# resources/_gen/assets
+# resources/_gen/getresource
+# resources/json
 hugo_stats.json
 node_modules
 .env
