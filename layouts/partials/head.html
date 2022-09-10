@@ -1,100 +1,11 @@
-{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
-{{- $xFmPart1 := "c_fill,w_1024,h_512," -}}
-{{- $xFmPart2 := "q_auto,f_auto,x_0,z_1/" -}}
-{{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
-{{- $fallbackImg = $fallbackImg.Fit "1024x512" -}}
-{{- $socImg := $fallbackImg -}}
-
 	<head>
-		{{- /* Required meta tags */ -}}
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		{{ hugo.Generator }}
-		<meta name="twitter:site" content="@BryceWrayTX">
-		<meta name="twitter:creator" content="@BryceWrayTX">
-		<meta name="twitter:card" content="summary_large_image" />
-		{{- /* IndieWeb */ -}}
-	{{- if .IsHome }}
-		<link rel="me" href="https://twitter.com/BryceWrayTX">
-		<link rel="me" href="https://github.com/brycewray">
-	{{- end }}
-		<link rel="webmention" href="https://webmention.io/www.brycewray.com/webmention">
-		<link rel="pingback" href="https://webmention.io/www.brycewray.com/xmlrpc">
-
-	{{- /* partial "imgcsocial.html" . */ -}}
-
-	{{- if .IsHome }}
-		<title>{{ .Site.Title }}</title>
-		<meta name="description" content="{{ .Site.Params.Description }}">
-		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<meta property="og:title" content="{{ .Site.Title }}" />
-		<meta property="og:type" content="website" />
-		<meta property="og:description" content="{{ .Site.Params.Description }}" />
-		<meta property="og:url" content="{{ .Site.BaseURL }}" />
-		<meta property="twitter:title" content="{{ .Site.Title }}" />
-		<meta property="twitter:description" content="{{ .Site.Params.Description }}" />
-		<meta name="og:image" content="{{ $fallbackImg.Permalink }}" />
-		<meta name="twitter:image" content="{{ $fallbackImg.Permalink }}" />
-	{{- else }}
-		<title>{{ .Title }} | {{ .Site.Title }}</title>
-	 {{- if .Params.Description }}
-		<meta name="description" content="{{ .Params.Description }}">
-		<meta property="og:description" content="{{ .Params.Description }}" />
-		<meta property="twitter:description" content="{{ .Params.Description }}" />
-	 {{- else }}
-		<meta name="description" content="{{ .Site.Params.Description }}">
-		<meta name="og:description" content="{{ .Site.Params.Description }}">
-		<meta name="twitter:description" content="{{ .Site.Params.Description }}">
-	 {{- end }}
-	 {{- if .Params.Ext_canonical }}
-		<link rel="canonical" href="{{ .Params.Ext_canonical }}">
-	 {{- else }}
-		<link rel="canonical" href="{{ .Page.Permalink }}">
-	 {{- end }}
-		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="{{ .Page.Permalink }}" />
-		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-	 {{- with .Page.Resources.GetMatch "title.png" }}
-		{{- $titleImg := . -}}
-		{{- $finalFilter := (images.Overlay $titleImg 0 0 ) -}}
-		{{- $socImg = resources.Get "images/social-OG-w-BW-logo_1024x512.jpg" -}}
-		{{- $socImg = $socImg | images.Filter $finalFilter -}}
-   {{- else -}}
-		{{- /* $socImg remains fallback image */ -}}
-	 {{- end }}
-		<meta name="og:image" content="{{ $socImg.Permalink }}" />
-		<meta name="twitter:image" content="{{ $socImg.Permalink }}" />
-	{{- end -}}
-
-		{{- /* **** BEGINNING, favicons **** */ -}}
-		{{- /* generics */}}
-		<link rel="icon" type="image/svg+xml" href="/assets/svg/svgNavIcon_reduced.svg">
-		<link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96">
-		{{/* iOS */ -}}
-		<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="167x167" href="/images/icons/apple-touch-icon-167x167.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
-		<link rel="apple-touch-icon" sizes="1024x1024" href="/images/icons/apple-icon-1024x1024.png">
-		{{/* Android */ -}}
-		<link rel="shortcut icon" sizes="196x196" href="/images/icons/favicon-196x196.png">
-		{{/* Windows 8, IE 10 */ -}}
-		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
-		{{/* Windows 8.1 and up, IE 11 */ -}}
-		<meta name="msapplication-config" content="/browserconfig.xml">
-		{{- /* **** CONCLUSION, favicons **** */}}
-
+		{{- partial "head-meta.html" . }}
+		{{- partial "head-favicons.html" }}
 		<link rel="preconnect" href="https://giscus.app">
 		<link rel="dns-prefetch" href="https://giscus.app">
-
-		{{- /* discover news feeds */}}
+		{{/* discover news feeds */}}
 		<link rel="alternate" title="News feed - RSS" type="application/rss+xml" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" title="News feed - JSON" type="application/feed+json" href="https://www.brycewray.com/index.json">
-		{{- partialCached "css.html" . }}
-		<noscript><style>.nScrHidden {display: none;}</style></noscript>
+		{{ partialCached "head-css.html" . }}
 	</head>
