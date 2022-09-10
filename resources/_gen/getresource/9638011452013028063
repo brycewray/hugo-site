@@ -1,0 +1,20 @@
+HTTP/2.0 200 OK
+Cache-Control: must-revalidate, max-age=3153600000
+Content-Disposition: attachment; filename=json.json
+Content-Type: application/json; charset=utf-8
+Date: Sat, 10 Sep 2022 13:00:29 GMT
+Expires: Mon, 17 Aug 2122 13:00:30 GMT
+Last-Modified: Sat, 10 Sep 2022 13:00:30 GMT
+Server: tsa_b
+Set-Cookie: guest_id_marketing=v1%3A166281483013336638; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id_ads=v1%3A166281483013336638; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: personalization_id="v1_dBbRfbf8nvwPrxOP0kAt7w=="; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id=v1%3A166281483013336638; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Strict-Transport-Security: max-age=631138519
+X-Connection-Hash: a89f762fb905142f01ebe7a0d3e542354584fad693ea0403e0c6dc04c0c73791
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Response-Time: 20
+X-Xss-Protection: 0
+
+{"url":"https:\/\/twitter.com\/RosserWrites\/status\/1095457720709263360","author_name":"Chris Rosser","author_url":"https:\/\/twitter.com\/RosserWrites","html":"\u003Cblockquote class=\"twitter-tweet\" data-dnt=\"true\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EIf you are a fan of, or contemplating using, iA Writer, I recommend \u003Ca href=\"https:\/\/twitter.com\/BryceWrayTX?ref_src=twsrc%5Etfw\"\u003E@BryceWrayTX\u003C\/a\u003E blog post. While our workflows are different, our ends and opinions are the same!\u003Ca href=\"https:\/\/t.co\/Oeoaacz8z8\"\u003Ehttps:\/\/t.co\/Oeoaacz8z8\u003C\/a\u003E\u003C\/p\u003E&mdash; Chris Rosser (@RosserWrites) \u003Ca href=\"https:\/\/twitter.com\/RosserWrites\/status\/1095457720709263360?ref_src=twsrc%5Etfw\"\u003EFebruary 12, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"}

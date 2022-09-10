@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sat, 10 Sep 2022 13:00:30 GMT
+Etag: W/"343-e3oDODd3MRqoSRRaeaA7EODEgJI"
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=56
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: 5e2aaa87f9124d549d3601490376982f51ef17d30f1113d510539e78562c5ed9
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 33
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":1,"self_thread":{"id_str":"1165327910078681088"},"created_at":"2019-08-24T18:19:59.000Z","display_text_range":[0,188],"entities":{"hashtags":[{"indices":[167,188],"text":"PragmaticButNotProud"}],"urls":[],"user_mentions":[{"id_str":"20536157","indices":[43,50],"name":"Google","screen_name":"Google"}],"symbols":[]},"id_str":"1165327910078681088","text":"Full disclosure: I dumped my long-standing @Google account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. #PragmaticButNotProud","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false},"conversation_count":3,"news_action_type":"conversation"}

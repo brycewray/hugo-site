@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sat, 10 Sep 2022 13:00:30 GMT
+Etag: W/"349-FTS0A22xsaXK7S8BqitsHAPr+ow"
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=52
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: 926b619cad06e5ce4f7a30a5623b9a97f758504395805a080ebfe146d5bbec20
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 29
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":864,"created_at":"2019-09-06T15:38:43.000Z","display_text_range":[0,261],"entities":{"hashtags":[],"urls":[],"user_mentions":[{"id_str":"832672455680413696","indices":[203,218],"name":"Lighthouse","screen_name":"____lighthouse"}],"symbols":[]},"id_str":"1169998370041208832","text":"Which has a better First Meaningful Paint time?\n\n① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets\n② a client rendered React site with exactly one tweet on it\n\n(Spoiler: @____lighthouse reports 8.5MB of HTML wins by about 200ms)","user":{"id_str":"96383","name":"Zach Leatherman","profile_image_url_https":"https://pbs.twimg.com/profile_images/1196791261233111040/iWVjazhO_normal.jpg","screen_name":"zachleat","verified":false},"conversation_count":35,"news_action_type":"conversation"}

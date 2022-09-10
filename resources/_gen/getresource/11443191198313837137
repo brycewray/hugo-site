@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sat, 10 Sep 2022 13:00:30 GMT
+Etag: W/"5ea-21DAOjuhlfHJDq8MGZHXGYKH2YE"
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=57
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: f3bd0074014b6795c6e589136d70fc6fec0846f1df0cc6effd14bb5b025fcc0c
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 34
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":3,"possibly_sensitive":false,"created_at":"2022-02-15T18:55:15.000Z","display_text_range":[0,230],"entities":{"hashtags":[],"urls":[],"user_mentions":[{"id_str":"2391572880","indices":[30,42],"name":"Bryce Wray","screen_name":"BryceWrayTX"},{"id_str":"817863617181839360","indices":[60,76],"name":"The Waffling Taylors","screen_name":"wafflingTaylors"}],"symbols":[],"media":[{"display_url":"pic.twitter.com/GTtPejFT8N","expanded_url":"https://twitter.com/podcasterJay/status/1493660193653207040/photo/1","indices":[231,254],"url":"https://t.co/GTtPejFT8N"}]},"id_str":"1493660193653207040","text":"Thanks to some of the work by @BryceWrayTX, I just made the @wafflingTaylors website even faster and safer for its users\n(embedded Tweets which are generated at build time).\nI'm really grateful for their sharing of how to do this. https://t.co/GTtPejFT8N","user":{"id_str":"1244885475372007424","name":"podcasterJay","profile_image_url_https":"https://pbs.twimg.com/profile_images/1366867879656841218/6h-u1pKT_normal.jpg","screen_name":"podcasterJay","verified":false},"photos":[],"video":{"aspectRatio":[1,1],"contentType":"gif","durationMs":0,"mediaAvailability":{"status":"available"},"poster":"https://pbs.twimg.com/tweet_video_thumb/FLqMBrPX0AsT1BK.jpg","variants":[{"type":"video/mp4","src":"https://video.twimg.com/tweet_video/FLqMBrPX0AsT1BK.mp4"}],"videoId":{"type":"tweet","id":"1493660193653207040"},"viewCount":0},"conversation_count":1,"news_action_type":"conversation"}

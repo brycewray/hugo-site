@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sat, 10 Sep 2022 13:00:30 GMT
+Etag: W/"7df-+3dAmK8aPvc1d2QS8HqKvzpCft4"
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=99
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: 62c838db01db0b0a983be6baa19082d59b192d773d1b163890d37e5de774a4d6
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 75
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":13,"possibly_sensitive":false,"created_at":"2022-05-31T18:34:17.000Z","display_text_range":[0,84],"entities":{"hashtags":[],"urls":[{"display_url":"twitter.com/GoHugoIO/statu…","expanded_url":"https://twitter.com/GoHugoIO/status/1531673770628456449","indices":[84,107],"url":"https://t.co/6vZvoEoAZU"}],"user_mentions":[{"id_str":"809067163235581952","indices":[30,39],"name":"GoHugo.io","screen_name":"GoHugoIO"}],"symbols":[]},"id_str":"1531705641739460612","text":"This means shortcodes in your @GoHugoIO Front Matter! \n\nPage Builder blocks etc… 🎉. https://t.co/6vZvoEoAZU","user":{"id_str":"303455170","name":"Régis Philibert","profile_image_url_https":"https://pbs.twimg.com/profile_images/704685130401636352/5E5SBP0H_normal.jpg","screen_name":"regisphilibert","verified":false},"conversation_count":1,"news_action_type":"conversation","quoted_tweet":{"lang":"en","reply_count":0,"retweet_count":16,"favorite_count":52,"possibly_sensitive":false,"created_at":"2022-05-31T16:27:38.000Z","display_text_range":[0,225],"entities":{"hashtags":[{"indices":[191,200],"text":"jamstack"},{"indices":[201,208],"text":"golang"},{"indices":[209,216],"text":"gohugo"}],"urls":[{"display_url":"github.com/gohugoio/hugo/…","expanded_url":"https://github.com/gohugoio/hugo/releases/tag/v0.100.0","indices":[167,190],"url":"https://t.co/EiqNMau6TA"}],"user_mentions":[{"id_str":"31096116","indices":[217,225],"name":"Bjørn Erik Pedersen","screen_name":"bepsays"}],"symbols":[{"indices":[22,27],"text":"page"}]},"id_str":"1531673770628456449","text":"Hugo v0.100.0 is out: $page.RenderString can finally handle shortcodes, several fixes for annoying shortcode indentation issues, a new resources.Copy func, and more:\n\nhttps://t.co/EiqNMau6TA #jamstack #golang #gohugo @bepsays","user":{"id_str":"809067163235581952","name":"GoHugo.io","profile_image_url_https":"https://pbs.twimg.com/profile_images/875029899614007298/NLZrk0Lw_normal.jpg","screen_name":"GoHugoIO","verified":false}}}
