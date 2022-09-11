@@ -91,7 +91,7 @@ And, although I then gave a (weak) rejoinder that this also was "in the category
 So, just a few hours after I had my *original* plan working, I created a new branch, `pagebundles`, and proceeded to rebuild my site exactly that way. For example, this post you're reading now is arranged as follows:
 
 ```plaintext
-project   <-- The Hugo project folder
+.   <-- The Hugo project folder
 └─ content
     └─ posts
         └─ 2022
