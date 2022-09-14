@@ -18,7 +18,7 @@
 			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
 			{{/*- Fingerprinting in dev due to Safari weirdness -*/}}
 		{{- end -}}
-		<!--<link rel="preload" as="style" href="{{ $css.RelPermalink }}">-->
+		<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{- /* end, CSS/SCSS */}}
 
