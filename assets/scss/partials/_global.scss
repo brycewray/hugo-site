@@ -1,7 +1,7 @@
 @use 'variables' as var;
 
 html, body {
-	font-family: var.$sans-serif;
+	font-family: var.$serif;
 	background-color: var.$gray-GitHub-blue;
 	color: var.$default-color;
 	@media (prefers-color-scheme: dark) {
@@ -292,7 +292,8 @@ li p {
 article {
 	padding-top: 1em; // definitely em, not rem
 	p, li {
-		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
+		font-size: clamp(1rem, 1vw + 0.875em, var.$text-xl);
+		// font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
 		line-height: 1.65em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
