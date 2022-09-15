@@ -23,7 +23,7 @@
 @use 'partials/sitemaphtml';
 @use 'partials/search-form';
 // @use 'partials/intervf'; // for Inter VF's weird obliquing stuff
-// @use 'partials/vweights'; // for variable fonts, sys or uploaded (test on Linux VM?)
+@use 'partials/vweights'; // for variable fonts, sys or uploaded (test on Linux VM?)
 @use 'partials/ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
 // @use 'partials/heroimg';
 @use 'partials/iefixes';

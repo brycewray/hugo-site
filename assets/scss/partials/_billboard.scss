@@ -56,7 +56,7 @@
 	}
 	&-description-text {
 		font-size: clamp(1.25rem, 0.75rem + 1.5vw, 2rem);
-		font-style: italic;
+		// font-style: italic;
 		// font-family: var.$serif;
 		padding-top: 1em; // definitely em, not rem
 		letter-spacing: -0.025em;
