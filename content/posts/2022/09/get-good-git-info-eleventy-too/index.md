@@ -90,7 +90,7 @@ You may have noticed that the shortcode took two parameters: `pubdate` and `file
 This will automatically feed to `gitinfo` a Markdown file's `date` (derived by default from the file's front matter but, if it's not there, [Eleventy has fallbacks](https://www.11ty.dev/docs/dates/)) and `inputPath`. In a typical Eleventy repo, `inputPath` takes this form:
 
 ```plaintext
-./src/posts/path/to/my-markdown-file.md
+./src/path/to/my-markdown-file.md
 ```
 
 As for the final message conveyed in your site by `stringToRet`, you're obviously free to make `stringToRet` say what works best for your site. The main thing is that the code here shows you how to get the data that it needs in the first place. And, to be specific about that data, in production the `gitinfo` shortcode invocation brings back a string containing:
