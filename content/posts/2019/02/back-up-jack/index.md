@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
 ---
 
-**Update, 2020‑01‑11**:  While I'll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I'm now "just" on 3-2-1 rather than 4-2-2). If you're on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta *can* imagine just doesn't seem to care about QC where its Mac version of OneDrive is concerned.
+**Update, 2020-01-11**:  While I'll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I'm now "just" on 3-2-1 rather than 4-2-2). If you're on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta *can* imagine just doesn't seem to care about QC where its Mac version of OneDrive is concerned.
 {.yellowBox}
 
 No one will ever mistake me for a high-tech version of [Henry David Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) (which is a pretty bizarre concept, if you go there), but I've been trying to simplify my computing setup --- not so much where hardware is concerned but, instead, the services to which I have subscribed.

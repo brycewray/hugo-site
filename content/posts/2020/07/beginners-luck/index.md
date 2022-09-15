@@ -13,7 +13,7 @@ To do my part in helping to lure more folks to one of these two happy places, I'
 
 I've also converted my existing Hugo-based version of the Eleventy repo (*i.e.*, the one from which [Vercel](https://vercel.com) builds this site) to being [another starter set](https://github.com/brycewray/hugo_site_css-grid).[^exLoc] (Why two Hugo starter sets? I'll explain that shortly.)
 
-[^exLoc]: **Update, 2021‑02‑20**: Today, I moved it from its [former location](https://github.com/brycewray/hugo_site_css-grid).
+[^exLoc]: **Update, 2021-02-20**: Today, I moved it from its [former location](https://github.com/brycewray/hugo_site_css-grid).
 
 ## Starter *vs.* non-starter
 
@@ -65,8 +65,8 @@ Gatsby isn't the only SSG blessed with numerous starter sets out there for your 
 
 In any event, I hope that my new little efforts in this regard will help anyone who, as was true for me not all that long ago, is trying to find the path to a better website-management experience that I believe either Eleventy or Hugo will provide.
 
-**Update, 2020‑12‑19**: Each starter set has its own online demo on Vercel (formerly on Netlify), linked from its repo.
+**Update, 2020-12-19**: Each starter set has its own online demo on Vercel (formerly on Netlify), linked from its repo.
 {.yellowBox}
 
-**Update, 2021‑03‑26**: See also [this update](/posts/2021/03/beginners-luck-update/) on what has turned out to be a growing number of starter sets for Eleventy and Hugo.
+**Update, 2021-03-26**: See also [this update](/posts/2021/03/beginners-luck-update/) on what has turned out to be a growing number of starter sets for Eleventy and Hugo.
 {.yellowBox}

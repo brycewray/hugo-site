@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-03-19T16:25:00-05:00
 ---
 
-**Update, 2021‑04‑05**: As of the [release of Tailwind 2.1.0](https://blog.tailwindcss.com/tailwindcss-2-1), the feature described within is part of Tailwind core, although it's still described as being "in preview."
+**Update, 2021-04-05**: As of the [release of Tailwind 2.1.0](https://blog.tailwindcss.com/tailwindcss-2-1), the feature described within is part of Tailwind core, although it's still described as being "in preview."
 {.yellowBox}
 
 Where the category of Major Events That I Did Not Expect to Occur This Week is concerned, you definitely can assign to it the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) of a **just-in-time (JIT) compiler** for [Tailwind CSS](https://tailwindcss.com).

@@ -158,7 +158,7 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 </blockquote>
 ```
 
-**Update, 2022‑04‑12**: I revised this shortcode slightly after learning that the Twitter v2 API [doesn’t currently support animations](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media).[^formerContent] So, if you know you'll want to embed tweets with videos or animated GIFs, you'll be better off using the `stweet` shortcode from the [previous article](/posts/2022/02/static-tweets-eleventy-hugo/): its older API **does** support them.
+**Update, 2022-04-12**: I revised this shortcode slightly after learning that the Twitter v2 API [doesn’t currently support animations](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media).[^formerContent] So, if you know you'll want to embed tweets with videos or animated GIFs, you'll be better off using the `stweet` shortcode from the [previous article](/posts/2022/02/static-tweets-eleventy-hugo/): its older API **does** support them.
 {.yellowBox}
 
 [^formerContent]: The shortcode now simply shows nothing for such an item, as opposed to how it formerly displayed a link to the original tweet --- a link which is already down in the timestamp.

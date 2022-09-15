@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
 ---
 
-**Note, 2021‑04‑04**: I revised this article to remove some references that, as a reader correctly pointed out, didn't really fit into what I was trying to say. (One of these days, I'll learn not to write these pieces late on Friday nights when I'm really, really tired.)
+**Note, 2021-04-04**: I revised this article to remove some references that, as a reader correctly pointed out, didn't really fit into what I was trying to say. (One of these days, I'll learn not to write these pieces late on Friday nights when I'm really, really tired.)
 {.yellowBox}
 
 It's important for me to stay current with trends that affect my web development efforts. That's true whether we're talking about the websites I manage as part of the Day Job or just the tinkering I do with this personal site.
@@ -180,7 +180,7 @@ Then there are those capabilities built into Sass which you likely won't ever se
 
 Full disclosure: I personally haven't had to use more than a tiny fraction of these as yet (mainly `@use` for now), but I also haven't spent as much time in Sass as I'd have liked, especially in the last year or so. I'm sure I'll be doing quite a bit more Sass work in the future, and expect to find myself increasingly using these capabilities.[^thisSite]
 
-[^thisSite]: Yesterday, I converted this site back to Sass after giving serious thought to all the items, and more, I've discussed in this article. I did so despite my previously expressed interest in Tailwind, partly because [I expect to be doing more Sass-related development in the Day Job in the future](/posts/2021/03/next-steps/) and thus think I'll find it less neck-snapping to go from Day Job web dev on workdays to personal web dev nights and weekends. **Update, 2021‑04‑15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing that development after all.
+[^thisSite]: Yesterday, I converted this site back to Sass after giving serious thought to all the items, and more, I've discussed in this article. I did so despite my previously expressed interest in Tailwind, partly because [I expect to be doing more Sass-related development in the Day Job in the future](/posts/2021/03/next-steps/) and thus think I'll find it less neck-snapping to go from Day Job web dev on workdays to personal web dev nights and weekends. **Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing that development after all.
 
 ## Room for Sass in the Tailwind era?
 

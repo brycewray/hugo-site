@@ -182,7 +182,7 @@ Incidentally: AltaMail's notifications can be a little slow, too, unless you act
 
 So, in truth, neither Preside nor AltaMail has a totally clean slate on notifications when compared to the old standby, Apple Mail. However, that's true for virtually all other third-party iOS email apps unless they're running your emails through their servers (potentially a [violation](https://www.vice.com/en_us/article/pkekmb/free-email-apps-spying-on-you-edison-slice-cleanfox) of your security) which, fortunately, neither of these apps does.
 
-**Update, 2021‑07‑03**: For an explanation of how to get more immediate notifications from Preside, see my later post, "[Better notifications in the Preside email app](/posts/2021/07/better-notifications-preside-email-app/)."
+**Update, 2021-07-03**: For an explanation of how to get more immediate notifications from Preside, see my later post, "[Better notifications in the Preside email app](/posts/2021/07/better-notifications-preside-email-app/)."
 {.yellowBox}
 
 ## The winnah

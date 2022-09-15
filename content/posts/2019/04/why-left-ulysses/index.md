@@ -16,7 +16,7 @@ oldComments: |
     </div>
 ---
 
-**Note, 2019‑05‑04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in/)."
+**Note, 2019-05-04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in/)."
 {.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.

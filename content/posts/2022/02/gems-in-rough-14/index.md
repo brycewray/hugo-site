@@ -89,7 +89,7 @@ More annoyingly, I found no way to fix the no-animation-data glitch when I resea
 
 Anyway, I went back to the `stweetv2` Hugo shortcode covered in the [most recent post](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) and added some logic which avoids showing any GIFs. Not fun, but necessary, in my view. (I also updated that post accordingly.)
 
-### Update, 2022‑04‑10
+### Update, 2022-04-10
 
 I have now learned *why* this didn't work with the v2 API. I found the following in the [Twitter documentation for the v2 API's `media` object](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media):
 

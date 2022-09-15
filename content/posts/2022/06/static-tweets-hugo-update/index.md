@@ -6,7 +6,7 @@ date: 2022-06-07T15:46:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Further info, 2022‑06‑08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
+**Further info, 2022-06-08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
 {.yellowBox}
 
 **Update from the future in general (!)**: I continue to improve upon the shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between [Hugo](https://gohugo.io)'s [standard `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) and my shortcode.\
@@ -170,7 +170,7 @@ So, with that, friends and neighbors, here's the code.
 </blockquote>
 ```
 
-## *Important note, 2022‑06‑08*
+## *Important note, 2022-06-08*
 
 **Note from the future**: I have stricken through most of the content below, because I later found it to be inaccurate (oops).
 {.yellowBox}

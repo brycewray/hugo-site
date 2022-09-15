@@ -77,13 +77,13 @@ All of this has led me to some key decisions:
 
 With any luck at all, this approach will enable me to maintain this site more efficiently, yet still keep my eyes on what else is happening in WebDevLand. I’m crossing my fingers.
 
-**Update, 2022‑03‑23**: Slinkity creator/maintainer [Ben Holmes](https://twitter.com/BHolmesDev) [announced today](https://twitter.com/BHolmesDev/status/1506616758806802435) that he’s joining the Astro team, and [indicated](https://twitter.com/BHolmesDev/status/1506621649944260610) that he may hand off Slinkity to someone else after getting Slinkity to v.1.x. How these developments will affect my aforementioned “stay current” plan remains to be seen.
+**Update, 2022-03-23**: Slinkity creator/maintainer [Ben Holmes](https://twitter.com/BHolmesDev) [announced today](https://twitter.com/BHolmesDev/status/1506616758806802435) that he’s joining the Astro team, and [indicated](https://twitter.com/BHolmesDev/status/1506621649944260610) that he may hand off Slinkity to someone else after getting Slinkity to v.1.x. How these developments will affect my aforementioned “stay current” plan remains to be seen.
 {.yellowBox}
 
-**Update, 2022‑04‑23**: Well . . . "the foreseeable future" lasted only a month. After several days of serious experimentation with Astro, I moved the site there today. Will elaborate on all of this in a [future post](/posts/2022/04/winds-change/).
+**Update, 2022-04-23**: Well . . . "the foreseeable future" lasted only a month. After several days of serious experimentation with Astro, I moved the site there today. Will elaborate on all of this in a [future post](/posts/2022/04/winds-change/).
 {.yellowBox}
 
-**Update, 2022‑05‑07**: . . . and then, today, I brought it back to Hugo (at least for now), as explained at the end of “[Mulling over migration](/posts/2022/05/mulling-over-migration/#a-sheepish-u-turn)?”
+**Update, 2022-05-07**: . . . and then, today, I brought it back to Hugo (at least for now), as explained at the end of “[Mulling over migration](/posts/2022/05/mulling-over-migration/#a-sheepish-u-turn)?”
 {.yellowBox}
 
 [^1]:	Otherwise, some of the code would fail to appear in the code block because the SSG would treat it as *real* code rather than just text in a code block. Indeed, under certain circumstances, this “code” even could cause build errors.

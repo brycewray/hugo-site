@@ -95,7 +95,7 @@ Finally, here are the best from among the many articles I've been reading (often
 
 ---
 
-## *Update, 2020‑01‑18*
+## *Update, 2020-01-18*
 
 After a few days of mulling this over as well as re-reading a lot of stuff about what ordinary CSS can do these days, especially in league with PostCSS and the appropriate set of PostCSS plugins, I concluded I'd return to CSS Grid.[^TWCSSG]
 

@@ -89,7 +89,7 @@ module.exports = function (eleventyConfig) {
 
 .&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i”) by adding the code shown below.
 
-**Update, 2021‑04‑28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update/), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
+**Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update/), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
 {.yellowBox}
 
 ```js
@@ -132,7 +132,7 @@ For each image file you "feed" this shortcode in your Markdown (we'll explain th
 
 [^inOut]: For more details on the file formats Eleventy Image can accept (input) and create (output), see [its documentation](https://www.11ty.dev/docs/plugins/image/).
 
- **Additional note, 2021‑04‑25**: If you have a *lot* of images you'll be running through this process, you'd best keep the `widths` array short, since more entries in `widths` --- and, for that matter, `formats` --- will result in even more files that Eleventy Image will have to create at build time. That can result in not only an extremely slow build but also, for local builds, a suddenly very hot CPU on your computer. Play with this over time and see what combination of image quantity, `widths` options, and `formats` options will work best for your project.
+ **Additional note, 2021-04-25**: If you have a *lot* of images you'll be running through this process, you'd best keep the `widths` array short, since more entries in `widths` --- and, for that matter, `formats` --- will result in even more files that Eleventy Image will have to create at build time. That can result in not only an extremely slow build but also, for local builds, a suddenly very hot CPU on your computer. Play with this over time and see what combination of image quantity, `widths` options, and `formats` options will work best for your project.
  {.yellowBox}
 
 The setting for `urlPath` tells your site's pages to think of these images as being located in the site's `/images/` folder; and the `outputDir` setting tells Eleventy Image to copy them to the right location to make that work (given the standard Eleventy output directory of `./site`).

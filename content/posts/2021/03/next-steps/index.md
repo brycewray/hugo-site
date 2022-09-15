@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-03-11T16:30:00-06:00
 ---
 
-**Update, 2021‑04‑15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this post in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).
+**Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this post in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).
 {.yellowBox}
 
 As I [mentioned a few days back](/posts/2021/03/gems-in-rough-03/), Day Job-related concerns have led me to spend time dabbling in the [Next.js](https://nextjs.org) [React](https://reactjs.org) framework. This is because I'm researching possible future options for my employers’ web presence, and Next.js seems to fit their needs pretty well.

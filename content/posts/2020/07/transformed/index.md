@@ -7,7 +7,7 @@ date: 2020-07-31T16:15:00-05:00
 
 {{% disclaimer %}}
 
-**Update, 2020‑08‑05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)*
+**Update, 2020-08-05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)*
 {.yellowBox}
 
 This is about what one might call a transformative process.
@@ -88,7 +88,7 @@ I am willing to give up a few points off my performance scores. The relief I fee
 
 ----
 
-### Update, 2020‑10‑05
+### Update, 2020-10-05
 
 While I remain impressed by all that's included on Cloudinary's free tier, one thing that's not and [apparently never will be](https://support.cloudinary.com/hc/en-us/articles/202520562-Can-we-deliver-our-files-using-a-subdomain-of-our-own-domain-Like-a-CNAME-from-cdn-example-com-") is CNAME support for a custom domain. (It comes only with Cloudinary's highest-priced tier, which [ranges from $224 to $249 per month](https://cloudinary.com/pricing) as of this writing.) In other words, each non-SVG image on my site as of now is coming from ```res.cloudinary.com``` rather than, say, ```images.brycewray.com``` --- and that causes the images to be blocked by anally configured firewalls, especially in always-anal CorporateLand.
 

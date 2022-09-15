@@ -109,7 +109,7 @@ However, the answers were "No" and "No." The [changes in Apple Mail in Catalina]
 
 ----
 
-### Update, 2019‑06‑11
+### Update, 2019-06-11
 
 My tweet tonight says it all:
 

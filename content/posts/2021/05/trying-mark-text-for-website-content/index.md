@@ -22,7 +22,7 @@ The answer to that one involves some navel-gazing.
 
 One thing you do when you have analytics set up for your site, as I've done for this site with [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate link), is keeping track of which sites are referring visitors to you. A few days ago, I noticed a small number of referrals coming from a site of which I'd never heard, although it's been around since 2010: Linux Rig.[^offLine] It celebrates not only [Linux](https://www.linux.com/what-is-linux/) in particular but also [free open-source software (FOSS)](https://itsfoss.com/what-is-foss/) in general.
 
-[^offLine]: **Update, 2022‑02‑12**: It appears the Linux Rig site is no longer available, so I’ve removed its links from this page.
+[^offLine]: **Update, 2022-02-12**: It appears the Linux Rig site is no longer available, so I’ve removed its links from this page.
 
 The referral seemed odd since I rarely, if ever, mention Linux here; so, my curiosity aroused, I did some searching and, eventually, came across the source of the referral link. It was a brief piece which had been prompted by my publication of, and borrowed the title from, what as of now is this site's most-viewed article, "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)." It even was dated from a few days after I'd posted the original.
 

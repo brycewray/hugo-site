@@ -75,7 +75,7 @@ Quite the contrary: I thoroughly enjoy writing the content on this site and, as 
 
 Still, I'm glad for the learning experiences I had while trying to write the WIP. That's true for both the previously mentioned research I did and, especially, the writing apps I used.[^Ulysses]
 
-[^Ulysses]: However, this does mean an end to my use of [Ulysses](https://ulysses.app), my only writing app with a subscription --- which runs out next month. So long, Big&nbsp;U. It was fun while it lasted. ***Update, 2020‑06‑20:*** *As noted at the top of this post, I [later changed my mind](/posts/2020/06/why-kept-ulysses/) and renewed the sub for another year.*
+[^Ulysses]: However, this does mean an end to my use of [Ulysses](https://ulysses.app), my only writing app with a subscription --- which runs out next month. So long, Big&nbsp;U. It was fun while it lasted. ***Update, 2020-06-20:*** *As noted at the top of this post, I [later changed my mind](/posts/2020/06/why-kept-ulysses/) and renewed the sub for another year.*
 
 I'll always retain a warm spot in my consciousness for my characters, especially the two leads. Somewhere in the recesses of my brain, they've ended up together happily ever after, all battles fought, all enemies defeated, all futures secured.
 

@@ -6,7 +6,7 @@ author: Bryce Wray
 date: 2022-03-08T11:09:00-06:00
 ---
 
-**Update, 2022‑03‑09**: Things changed dramatically the day after I originally wrote this, so there's a [sequel](/posts/2022/03/using-dart-sass-hugo-sequel/) you'll definitely want to read after this one.
+**Update, 2022-03-09**: Things changed dramatically the day after I originally wrote this, so there's a [sequel](/posts/2022/03/using-dart-sass-hugo-sequel/) you'll definitely want to read after this one.
 {.yellowBox}
 
 {{% disclaimer %}}

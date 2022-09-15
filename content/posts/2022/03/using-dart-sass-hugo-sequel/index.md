@@ -198,5 +198,5 @@ And all of that gives you what, you ask? Very simply, it gives you the full spee
 
 *Finally: as always, thanks to Pedersen ([@bep](https://github.com/bep)) for his continuing efforts, above and beyond his already substantial day-to-day development work, for the Hugo community!*
 
-**Update, 2022‑05‑18**: I've since come up with what I consider to be a [better, or at least safer, way](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/).
+**Update, 2022-05-18**: I've since come up with what I consider to be a [better, or at least safer, way](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/).
 {.yellowBox}

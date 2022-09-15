@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-06-25T16:50:00-05:00
 ---
 
-**Update, 2021‑07‑20**: Due to breaking changes introduced in Zola version 0.14.0 (released 2021-07-19), **DO&nbsp;NOT** use either starter set mentioned herein with that version or higher.
+**Update, 2021-07-20**: Due to breaking changes introduced in Zola version 0.14.0 (released 2021-07-19), **DO&nbsp;NOT** use either starter set mentioned herein with that version or higher.
 {.yellowBox}
 
 This will be an unusually short entry. I just wanted to advise that I've built my seventh [static site generator (SSG)](https://jamstack.org/generators) [starter set](/posts/2021/03/beginners-luck-update/). It uses [Zola](https://getzola.org), and you can find its GitHub repository at [https://github.com/brycewray/zola_solo](https://github.com/brycewray/zola_solo). There's also a [live demo](https://zola-solo.vercel.app).
@@ -16,5 +16,5 @@ If you want to use this starter set, be sure to check the repo README for some i
 
 All that aside, I had some nerdy fun building this starter, debugging it, and generally learning more about how Zola works. Perhaps it will similarly appeal to your own geekiness.
 
-**Update, 2021‑06‑26**: I've now added an **eighth** starter repo. It's [another Zola starter](https://github.com/brycewray/zola_twcss) (with a [demo version](https://zola-twcss.vercel.app) also live), but uses [Tailwind CSS](https://tailwindcss.com) --- **including** the [JIT mode](https://tailwindcss.com/docs/just-in-time-mode), which Hugo **still** doesn't support --- rather than Sass. Unlike the other repo that I added yesterday, this one likely will stay in active development at least for a while because of Zola's ability to work with Tailwind and JIT, although I still am perturbed by Zola's own shortcomings (notably about footnote-handling).
+**Update, 2021-06-26**: I've now added an **eighth** starter repo. It's [another Zola starter](https://github.com/brycewray/zola_twcss) (with a [demo version](https://zola-twcss.vercel.app) also live), but uses [Tailwind CSS](https://tailwindcss.com) --- **including** the [JIT mode](https://tailwindcss.com/docs/just-in-time-mode), which Hugo **still** doesn't support --- rather than Sass. Unlike the other repo that I added yesterday, this one likely will stay in active development at least for a while because of Zola's ability to work with Tailwind and JIT, although I still am perturbed by Zola's own shortcomings (notably about footnote-handling).
 {.yellowBox}

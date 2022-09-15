@@ -10,7 +10,7 @@ date: 2020-04-28T16:30:00-05:00
 **Note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5/), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors’ code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.
 {.yellowBox}
 
-**Added note, 2020‑07‑26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
+**Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
 {.yellowBox}
 
 It's an [often-misattributed](https://www.artsy.net/article/artsy-editorial-four-iconic-quotes-artists) phrase: "Good artists copy; great artists steal." Well, in the case of your faithful correspondent, here, it's more a case of "Great coders code; mediocre coders borrow shamelessly." But, if I didn't, I couldn't keep this site going, so shameless I shall continue to be.

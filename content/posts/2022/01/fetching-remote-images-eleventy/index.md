@@ -1,13 +1,13 @@
 ---
 title: "Fetching remote images with Eleventy"
-description: "Following up on last month’s article about doing this in Hugo, we explain how to get there in a JavaScript‑based SSG."
+description: "Following up on last month’s article about doing this in Hugo, we explain how to get there in a JavaScript-based SSG."
 # non-breaking hyphen in `JavaScript-based`
 author: Bryce Wray
 date: 2022-01-25T14:45:00-06:00
 #initTextEditor: Ulysses
 ---
 
-**Update, 2022‑01‑26**: Please see the end of this post for additional info straight from the horse’s mouth, so to speak.
+**Update, 2022-01-26**: Please see the end of this post for additional info straight from the horse’s mouth, so to speak.
 {.yellowBox}
 
 A few weeks ago, I [described](/posts/2021/12/fetching-remote-stuff-hugo-0-90-plus/) how a [recent change](https://github.com/gohugoio/hugo/releases/tag/v0.90.0) to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) gives it the ability to fetch remote content for processing during the site-building process. In my case, I used it in the Hugo-based version of this site’s repository to grab tiny, low-resolution images from my free [Cloudinary](https://cloudinary.com) account and turn them into [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs).
