@@ -2,19 +2,19 @@ HTTP/2.0 200 OK
 Cache-Control: must-revalidate, max-age=3153600000
 Content-Disposition: attachment; filename=json.json
 Content-Type: application/json; charset=utf-8
-Date: Sat, 10 Sep 2022 13:00:29 GMT
-Expires: Mon, 17 Aug 2122 13:00:30 GMT
-Last-Modified: Sat, 10 Sep 2022 13:00:30 GMT
+Date: Fri, 16 Sep 2022 15:00:27 GMT
+Expires: Sun, 23 Aug 2122 15:00:28 GMT
+Last-Modified: Fri, 16 Sep 2022 15:00:28 GMT
 Server: tsa_b
-Set-Cookie: guest_id_marketing=v1%3A166281483023462522; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-Set-Cookie: guest_id_ads=v1%3A166281483023462522; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-Set-Cookie: personalization_id="v1_8zLy5SnfmTtD9JDTVlJKEQ=="; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-Set-Cookie: guest_id=v1%3A166281483023462522; Max-Age=63072000; Expires=Mon, 09 Sep 2024 13:00:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id_marketing=v1%3A166334042861710935; Max-Age=63072000; Expires=Sun, 15 Sep 2024 15:00:28 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id_ads=v1%3A166334042861710935; Max-Age=63072000; Expires=Sun, 15 Sep 2024 15:00:28 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: personalization_id="v1_bFl/pWauW10gvx1RoBdAqA=="; Max-Age=63072000; Expires=Sun, 15 Sep 2024 15:00:28 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id=v1%3A166334042861710935; Max-Age=63072000; Expires=Sun, 15 Sep 2024 15:00:28 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
 Strict-Transport-Security: max-age=631138519
-X-Connection-Hash: a89f762fb905142f01ebe7a0d3e542354584fad693ea0403e0c6dc04c0c73791
+X-Connection-Hash: a8137e1d458a76f9bbb8e37aeba15bf6e51cbb30d4115ed83d6adf7879aa50c9
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
-X-Response-Time: 18
+X-Response-Time: 24
 X-Xss-Protection: 0
 
 {"url":"https:\/\/twitter.com\/adamwathan\/status\/1226511611592085504","author_name":"Adam Wathan","author_url":"https:\/\/twitter.com\/adamwathan","html":"\u003Cblockquote class=\"twitter-tweet\" data-dnt=\"true\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EConfession: The `apply` feature in Tailwind basically only exists to trick people who are put off by long lists of classes into trying the framework.\u003Cbr\u003E\u003Cbr\u003EYou should almost never use it \uD83D\uDE2C\u003Cbr\u003E\u003Cbr\u003EReuse your utility-littered HTML instead.\u003Ca href=\"https:\/\/t.co\/x6y4ksDwrt\"\u003Ehttps:\/\/t.co\/x6y4ksDwrt\u003C\/a\u003E\u003C\/p\u003E&mdash; Adam Wathan (@adamwathan) \u003Ca href=\"https:\/\/twitter.com\/adamwathan\/status\/1226511611592085504?ref_src=twsrc%5Etfw\"\u003EFebruary 9, 2020\u003C\/a\u003E\u003C\/blockquote\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"}

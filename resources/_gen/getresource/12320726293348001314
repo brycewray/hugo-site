@@ -1,9 +1,9 @@
 HTTP/2.0 200 OK
 Cache-Control: no-store
-Content-Security-Policy: base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mastodon.technology; img-src 'self' https: data: blob: https://mastodon.technology; style-src 'self' 'unsafe-inline' https://mastodon.technology 'nonce-oONWRUhkhQMxyhtkYZoBBQ=='; media-src 'self' https: data: https://mastodon.technology; frame-src 'self' https:; manifest-src 'self' https://mastodon.technology; connect-src 'self' data: blob: https://mastodon.technology https://cdn.mastodon.technology wss://mastodon.technology; script-src 'self' blob: https://mastodon.technology 'nonce-oONWRUhkhQMxyhtkYZoBBQ=='; child-src 'self' blob: https://mastodon.technology; worker-src 'self' blob: https://mastodon.technology
+Content-Security-Policy: base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://mastodon.technology; img-src 'self' https: data: blob: https://mastodon.technology; style-src 'self' 'unsafe-inline' https://mastodon.technology 'nonce-d2inJ8ZPgSubtqs+vp4X2A=='; media-src 'self' https: data: https://mastodon.technology; frame-src 'self' https:; manifest-src 'self' https://mastodon.technology; connect-src 'self' data: blob: https://mastodon.technology https://cdn.mastodon.technology wss://mastodon.technology; script-src 'self' blob: https://mastodon.technology 'nonce-d2inJ8ZPgSubtqs+vp4X2A=='; child-src 'self' blob: https://mastodon.technology; worker-src 'self' blob: https://mastodon.technology
 Content-Type: application/json; charset=utf-8
-Date: Sat, 10 Sep 2022 13:00:30 GMT
-Etag: W/"905f6d71c7b6285599d304f2746a6d41"
+Date: Fri, 16 Sep 2022 15:00:29 GMT
+Etag: W/"a799057e295567dfeafe7832b8a16da0"
 Permissions-Policy: interest-cohort=()
 Server: Mastodon
 Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -13,10 +13,10 @@ X-Cached: MISS
 X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-Ratelimit-Limit: 300
-X-Ratelimit-Remaining: 298
-X-Ratelimit-Reset: 2022-09-10T13:05:00.699893Z
-X-Request-Id: 359e1026-41b1-4bc9-87d6-853404495217
-X-Runtime: 0.048196
+X-Ratelimit-Remaining: 295
+X-Ratelimit-Reset: 2022-09-16T15:05:00.159202Z
+X-Request-Id: a4844a83-b161-437a-97a2-faba0b380a22
+X-Runtime: 0.355037
 X-Xss-Protection: 0
 
 {"id":"108895889717986727","created_at":"2022-08-27T16:56:50.982Z","in_reply_to_id":null,"in_reply_to_account_id":null,"sensitive":false,"spoiler_text":"","visibility":"public","language":"en","uri":"https://mastodon.technology/users/jrorci/statuses/108895889717986727","url":"https://mastodon.technology/@jrorci/108895889717986727","replies_count":1,"reblogs_count":17,"favourites_count":41,"edited_at":null,"content":"\u003cp\u003eMouse sings the song of her people for \u003ca href=\"https://mastodon.technology/tags/Caturday\" class=\"mention hashtag\" rel=\"tag\"\u003e#\u003cspan\u003eCaturday\u003c/span\u003e\u003c/a\u003e.\u003c/p\u003e","reblog":null,"application":{"name":"Fedilab","website":"https://fedilab.app"},"account":{"id":"309356","username":"jrorci","acct":"jrorci","display_name":"J.R. Orci ☢️","locked":false,"bot":false,"discoverable":false,"group":false,"created_at":"2020-05-10T00:00:00.000Z","note":"\u003cp\u003eMexiCuban, Tech junky, Buddhist Wannabe, Animal Lover. Writer of Alias, Fringe, The Blacklist, Hawaii Five-0 etc.\u003c/p\u003e","url":"https://mastodon.technology/@jrorci","avatar":"https://cdn.mastodon.technology/accounts/avatars/000/309/356/original/6a85118995c38581.jpg","avatar_static":"https://cdn.mastodon.technology/accounts/avatars/000/309/356/original/6a85118995c38581.jpg","header":"https://cdn.mastodon.technology/accounts/headers/000/309/356/original/f0a8446de00382e2.jpg","header_static":"https://cdn.mastodon.technology/accounts/headers/000/309/356/original/f0a8446de00382e2.jpg","followers_count":158,"following_count":146,"statuses_count":348,"last_status_at":"2022-09-03","emojis":[],"fields":[{"name":"IMDB","value":"\u003ca href=\"https://www.imdb.com/name/nm1347078/\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\u003e\u003cspan class=\"invisible\"\u003ehttps://www.\u003c/span\u003e\u003cspan class=\"\"\u003eimdb.com/name/nm1347078/\u003c/span\u003e\u003cspan class=\"invisible\"\u003e\u003c/span\u003e\u003c/a\u003e","verified_at":null},{"name":"Pixelfed","value":"\u003ca href=\"https://pixelfed.social/jrorci/\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\u003e\u003cspan class=\"invisible\"\u003ehttps://\u003c/span\u003e\u003cspan class=\"\"\u003epixelfed.social/jrorci/\u003c/span\u003e\u003cspan class=\"invisible\"\u003e\u003c/span\u003e\u003c/a\u003e","verified_at":null}]},"media_attachments":[{"id":"108895889603175242","type":"image","url":"https://cdn.mastodon.technology/media_attachments/files/108/895/889/603/175/242/original/0f1b5f36a2142dad.jpg","preview_url":"https://cdn.mastodon.technology/media_attachments/files/108/895/889/603/175/242/small/0f1b5f36a2142dad.jpg","remote_url":null,"preview_remote_url":null,"text_url":null,"meta":{"original":{"width":1440,"height":1440,"size":"1440x1440","aspect":1.0},"small":{"width":400,"height":400,"size":"400x400","aspect":1.0}},"description":"\"My cat, Mouse, meowing in a bathtub.\"","blurhash":"UNKUTNx]NGWB~qIof+xu8^IUtR%M_3xtRjM{"}],"mentions":[],"tags":[{"name":"caturday","url":"https://mastodon.technology/tags/caturday"}],"emojis":[],"card":null,"poll":null}
