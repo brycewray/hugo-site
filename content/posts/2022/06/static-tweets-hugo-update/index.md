@@ -172,10 +172,8 @@ So, with that, friends and neighbors, here's the code.
 
 ## *Important note, 2022-06-08*
 
-**Note from the future**: I have stricken through most of the content below, because I later found it to be inaccurate (oops).
-{.yellowBox}
+I later found that, due to the way Twitter handles its asset-caching, you'll need to adjust the `getJSON` function's caching, as set in your Hugo config file, to avoid big blank holes where some images should go.
 
-~~I later found that, due to the way Twitter handles its asset-caching, you'll need to adjust the `getJSON` function's caching, as set in your Hugo config file, to avoid big blank holes where some images should go.~~
+**Either** (a.) use the `maxAge: 10s` setting **or** (b.) simply *kill* the `getJSON` function's caching altogether by setting `maxAge` to `0`. Play with the two options and see which works better for you, both in dev mode and in production. For more information on Hugo's caching, see [the "Configure File Caches" section](https://gohugo.io/getting-started/configuration/#configure-file-caches) in the [Hugo config documentation](https://gohugo.io/getting-started/configuration/).
 
-~~**Either** (a.) use the `maxAge: 10s` setting **or** (b.) simply *kill* the `getJSON` function's caching altogether by setting `maxAge` to `0`. Play with the two options and see which works better for you, both in dev mode and in production.~~ For ~~more~~ information on Hugo's caching, see [the "Configure File Caches" section](https://gohugo.io/getting-started/configuration/#configure-file-caches) in the [Hugo config documentation](https://gohugo.io/getting-started/configuration/).\
 *(**Also**: if you **do** keep caching turned on, I'd also suggest `.gitignore`-ing your `getjson` cache directory. Otherwise: well, let's just say that Git will get "noisy" while you're developing.)*
