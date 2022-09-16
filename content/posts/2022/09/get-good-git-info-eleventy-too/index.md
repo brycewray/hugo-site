@@ -109,10 +109,10 @@ So, while it's indeed cool that Hugo wields Git info-handling prowess out of the
 - Hector Molina, "[Moving away from GitHub Pages to Cloudflare Pages](https://hmolina.dev/p/moving-away-from-github-pages-to-cloudflare-pages/)" (2022-07-03).
 - Michael Schnerring, "[Create a Hugo Website with GitHub Pages, GitHub Actions, and Cloudflare](https://schnerring.net/blog/create-a-hugo-website-with-github-pages-github-actions-and-cloudflare/)" (2021-03-19).
 - Mike Street, "[The Git Commit Hash](https://www.mikestreety.co.uk/blog/the-git-commit-hash/)" (2020-05-28).
-- [îles](https://iles.pages.dev/) GitHub Discussions, "[Any way to expose Git data?](https://github.com/ElMassimo/iles/discussions/132)" (initially posted 2022-06-10).
 - Hugo Discourse forum
 	- "[Adding Last Modified Git Status to Pages?](https://discourse.gohugo.io/t/adding-last-modified-git-status-to-pages/25402)" (initially posted 2020-05-10).
 	- "[Problems with GitInfo in CI](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)" (initially posted 2019-12-25).
+- [îles](https://iles.pages.dev/) GitHub Discussions, "[Any way to expose Git data?](https://github.com/ElMassimo/iles/discussions/132)" (initially posted 2022-06-10).
 - Node.js v18.8.0 documentation, "[Child process](https://nodejs.org/api/child_process.html)" (accessed 2022-09-04 for this article).
 - Pragmatic Pineapple, "[Add Updated At To Your Gatsby Blog](https://pragmaticpineapple.com/add-updated-at-to-your-gatsby-blog/)" (2021-02-08).
 - Stack Overflow
