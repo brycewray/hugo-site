@@ -1,24 +1,20 @@
 HTTP/2.0 200 OK
-Accept-Ranges: bytes
 Access-Contol-Allow-Origin: platform.twitter.com
 Access-Control-Allow-Methods: GET
-Age: 11
 Cache-Control: must-revalidate, max-age=60
 Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
 Content-Type: application/json; charset=utf-8
-Date: Fri, 16 Sep 2022 15:00:28 GMT
+Date: Fri, 16 Sep 2022 15:03:41 GMT
 Etag: W/"1519-LzSRHWrZIFU0th5wqQ1DepuFK6w"
-Last-Modified: Fri, 16 Sep 2022 12:07:20 GMT
-Server: ECS (dab/4A98)
-Server-Timing: x-cache;desc= HIT,x-tw-cdn;desc=VZ,edge;dur=1
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=65
 Strict-Transport-Security: max-age=631138519
-Vary: Accept-Encoding
-X-Cache: HIT
-X-Connection-Hash: a1ff050e88f75843852dc9ccbf2c833975ea9cc91b40671aed9d004a9cd3e832
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: 41e38aa75a0a8d91357eba80d1886f3980404d3525fabdc0e2218c2610c51a56
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Powered-By: Express
-X-Response-Time: 51
+X-Response-Time: 39
 X-Tw-Cdn: VZ
 X-Tw-Cdn: VZ
 X-Tw-Cdn: VZ
