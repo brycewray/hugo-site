@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #12"
+title: "Gems in the rough #12"
 description: "Speedier CFP builds, HTML sitemaps."
 author: Bryce Wray
 date: 2021-12-26T10:07:00-06:00

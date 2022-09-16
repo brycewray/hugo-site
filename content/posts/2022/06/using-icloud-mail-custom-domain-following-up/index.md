@@ -1,5 +1,5 @@
 ---
-title: "Using iCloud Mail with a custom domain: following up"
+title: "Using iCloud Mail with a custom domain: following up"
 description: "What happened when I moved my main email address to iCloud Mail."
 author: Bryce Wray
 date: 2022-06-19T11:27:00-05:00

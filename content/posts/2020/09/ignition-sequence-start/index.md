@@ -1,5 +1,5 @@
 ---
-title: "Ignition sequence start"
+title: "Ignition sequence start"
 description: "GitHub Actions to deploy to Firebase Hosting."
 author: Bryce Wray
 date: 2020-09-27T08:05:00-05:00

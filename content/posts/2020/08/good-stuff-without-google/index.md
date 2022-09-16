@@ -1,5 +1,5 @@
 ---
-title: "Good stuff without Google"
+title: "Good stuff without Google"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-09T20:05:00-05:00

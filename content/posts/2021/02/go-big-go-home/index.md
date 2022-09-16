@@ -1,5 +1,5 @@
 ---
-title: "Go big or Go home?"
+title: "Go big or Go home?"
 description: "How some image-handling code moved from Eleventy to Hugo."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00

@@ -1,5 +1,5 @@
 ---
-title: "Static tweets in Astro: the two sources edition"
+title: "Static tweets in Astro: the two sources edition"
 description: "After I learned that it takes two separate Twitter APIs to produce decent static embeds of tweets, I knew that meant more code changes."
 author: Bryce Wray
 date: 2022-08-26T16:14:00-05:00

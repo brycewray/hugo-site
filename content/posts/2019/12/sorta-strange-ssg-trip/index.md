@@ -1,5 +1,5 @@
 ---
-title: "Sorta StranGe (SSG) trip"
+title: "Sorta StranGe (SSG) trip"
 description: "Recapping “the dance” and what it taught me."
 author: Bryce Wray
 date: 2019-12-27T14:42:40-06:00

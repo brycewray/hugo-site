@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #15"
+title: "Gems in the rough #15"
 description: "CFP Fast Builds update, Hugo/goldmark typography, another Tailwind-on-Hugo solution."
 author: Bryce Wray
 date: 2022-03-03T15:05:00-06:00

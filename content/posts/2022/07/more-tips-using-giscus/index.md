@@ -1,5 +1,5 @@
 ---
-title: "More tips for using giscus"
+title: "More tips for using giscus"
 description: "How to lessen the load or, at least, make it easier to bear."
 author: Bryce Wray
 date: 2022-07-07T22:14:00-05:00

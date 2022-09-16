@@ -1,5 +1,5 @@
 ---
-title: "Static Mastodon toots in Astro"
+title: "Static Mastodon toots in Astro"
 description: "Got an Astro site and want to embed completely static versions of posts from the Fediverse? Check out this component."
 author: Bryce Wray
 date: 2022-08-29T14:36:00-05:00

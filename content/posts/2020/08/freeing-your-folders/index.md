@@ -1,5 +1,5 @@
 ---
-title: "Freeing your folders"
+title: "Freeing your folders"
 description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."
 author: Bryce Wray
 date: 2020-08-16T14:35:00-05:00

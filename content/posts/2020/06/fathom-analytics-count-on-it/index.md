@@ -1,5 +1,5 @@
 ---
-title: "Fathom Analytics: count on it"
+title: "Fathom Analytics: count on it"
 description: "How to count visitors while protecting them — and yourself."
 author: Bryce Wray
 date: 2020-06-19T00:45:00-05:00

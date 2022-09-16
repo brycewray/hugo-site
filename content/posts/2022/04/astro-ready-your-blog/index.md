@@ -1,5 +1,5 @@
 ---
-title: "Is Astro ready for your blog?"
+title: "Is Astro ready for your blog?"
 description: "Some points to consider if you’re thinking about switching your site to the Astro platform."
 author: Bryce Wray
 date: 2022-04-24T10:50:00-05:00

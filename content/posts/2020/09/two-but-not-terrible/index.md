@@ -1,5 +1,5 @@
 ---
-title: "Two, but not terrible"
+title: "Two, but not terrible"
 description: "“Reminiscin’” as this site celebrates its second birthday."
 author: Bryce Wray
 date: 2020-09-15T06:20:00-05:00

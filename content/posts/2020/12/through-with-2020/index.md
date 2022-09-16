@@ -1,5 +1,5 @@
 ---
-title: "Through with 2020"
+title: "Through with 2020"
 description: "What I talked about while the world burned."
 author: Bryce Wray
 date: 2020-12-30T08:35:00-06:00

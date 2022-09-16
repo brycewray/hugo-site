@@ -1,5 +1,5 @@
 ---
-title: "Beginner’s luck #5: suspended starters"
+title: "Beginner’s luck #5: suspended starters"
 description: "That’s a wrap on further development of my SSG starter sets."
 author: Bryce Wray
 date: 2021-09-11T09:25:00-05:00

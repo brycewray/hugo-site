@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #4"
+title: "Gems in the rough #4"
 description: "Here a drib, there a drab, everywhere a drib-drab of web dev miscellany."
 author: Bryce Wray
 date: 2021-04-09T04:40:00-05:00

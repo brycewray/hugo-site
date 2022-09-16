@@ -1,5 +1,5 @@
 ---
-title: "Going solo with Eleventy"
+title: "Going solo with Eleventy"
 description: "Losing webpack, regaining Tailwind CSS."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00

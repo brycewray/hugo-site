@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #10"
+title: "Gems in the rough #10"
 description: "A (perhaps) surprising requirement for native lazy-loading, the Slinkity project, problems with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-10-01T09:23:00-05:00

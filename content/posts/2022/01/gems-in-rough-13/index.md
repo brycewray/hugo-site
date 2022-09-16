@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #13"
+title: "Gems in the rough #13"
 description: "Why I’ve recently backtracked on configurations for CSS and image-handling."
 author: Bryce Wray
 date: 2022-01-04T13:09:00-06:00

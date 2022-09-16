@@ -1,5 +1,5 @@
 ---
-title: "Mixed nuts • February, 2020"
+title: "Mixed nuts • February, 2020"
 description: "Another sampling of my random thoughts — lucky you."
 author: Bryce Wray
 date: 2020-02-09T16:05:00-06:00

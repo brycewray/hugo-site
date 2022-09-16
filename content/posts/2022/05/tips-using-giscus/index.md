@@ -1,5 +1,5 @@
 ---
-title: "Tips for using giscus"
+title: "Tips for using giscus"
 description: "Some advice about a commenting system for static websites."
 author: Bryce Wray
 date: 2022-05-10T15:10:00-05:00

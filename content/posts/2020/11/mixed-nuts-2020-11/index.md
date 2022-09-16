@@ -1,5 +1,5 @@
 ---
-title: "Mixed nuts • November, 2020"
+title: "Mixed nuts • November, 2020"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T10:10:00-06:00

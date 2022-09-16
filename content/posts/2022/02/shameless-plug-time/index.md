@@ -1,5 +1,5 @@
 ---
-title: "Shameless plug time"
+title: "Shameless plug time"
 description: "A few words about my new Hugo-related article for the CloudCannon blog."
 author: Bryce Wray
 date: 2022-02-24T12:11:00-06:00

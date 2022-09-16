@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #7"
+title: "Gems in the rough #7"
 description: "Static site generator fans, here’s another (sorta) brief set of goodies for your edification."
 author: Bryce Wray
 date: 2021-07-17T14:23:00-05:00

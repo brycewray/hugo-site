@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #5"
+title: "Gems in the rough #5"
 description: "More notes, notions, and nitpicks about managing one’s personal website."
 author: Bryce Wray
 date: 2021-05-30T13:16:00-05:00

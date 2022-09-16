@@ -1,5 +1,5 @@
 ---
-title: "Static tweets in Eleventy and Hugo"
+title: "Static tweets in Eleventy and Hugo"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray
 date: 2022-02-07T12:00:00-06:00

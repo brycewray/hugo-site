@@ -1,5 +1,5 @@
 ---
-title: "Gems in the rough #11"
+title: "Gems in the rough #11"
 description: "Dueling announcements, CSP-allowed CSS, fun with LQIPs."
 author: Bryce Wray
 date: 2021-11-19T11:27:00-06:00
