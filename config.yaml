@@ -69,10 +69,10 @@ services:
 caches:
   getjson:
     dir: :resourceDir/json
-    maxAge: 10s # default = -1
+    #maxAge: 10h # default = -1 (forever)
   getresource:
     dir: :resourceDir/_gen
-    maxAge: 10s # default = -1
+    #maxAge: 10h # default = -1 (forever)
 
 minify:
   tdewolff:

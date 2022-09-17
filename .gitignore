@@ -1,7 +1,7 @@
 public
 resources/_gen/assets/scss
 # resources/_gen/assets
-resources/_gen/getresource
+# resources/_gen/getresource
 # --- the above line is so tweets/toots won't be "noisy"
 # resources/json
 hugo_stats.json
