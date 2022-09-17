@@ -23,7 +23,7 @@ h1,
 .homeOpen h1,
 .sitemap-Div h1 {
 	font-weight: 600;
-	// letter-spacing: -0.05em;
+	letter-spacing: -0.05em;
 }
 
 h2,
@@ -49,39 +49,39 @@ article .h6,
 .homePost-Title,
 .posts-Title {
 	font-weight: 550;
-	// letter-spacing: -0.04em;
+	letter-spacing: -0.04em;
 }
 
-// .prevnextP {
-// 	letter-spacing: -0.0375em;
-// }
+.prevnextP {
+	letter-spacing: -0.0375em;
+}
 
-// .billboard-description-text,
-// .posts-Description,
-// .homePost-Description {
-// 	font-weight: 300;
-// }
+.billboard-description-text,
+.posts-Description,
+.homePost-Description {
+	font-weight: 300;
+}
 
-// .posts-Description,
-// .homePost-Description {
-// 	letter-spacing: -0.0375em;
-// }
+.posts-Description,
+.homePost-Description {
+	letter-spacing: -0.0375em;
+}
 
-// .billboard-description-text {
-// 	letter-spacing: -0.05em;
-// }
+.billboard-description-text {
+	letter-spacing: -0.05em;
+}
 
-// .billboard-p-text,
-// .homePost-Dates,
-// .posts-Dates {
-// 	letter-spacing: -0.0375em;
-// }
+.billboard-p-text,
+.homePost-Dates,
+.posts-Dates {
+	letter-spacing: -0.0375em;
+}
 
-// article p, article li {
-// 	@media screen and (min-width: var.$bkpt_xl) {
-// 		letter-spacing: -0.0175em;
-// 	}
-// }
+article p, article li {
+	@media screen and (min-width: var.$bkpt_xl) {
+		letter-spacing: -0.0175em;
+	}
+}
 
 .footnotes li,
 .footnotes li p,
