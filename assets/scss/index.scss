@@ -2,7 +2,7 @@
 @use 'partials/reset';
 // @use 'partials/fonts_Inter';
 // @use 'partials/fonts_Inter64';
-@use 'partials/fonts_PublicSans';
+// @use 'partials/fonts_PublicSans';
 // @use 'partials/variables'; // calling it where needed within files
 @use 'partials/twitter';
 @use 'partials/chroma_native_tweaked';
@@ -24,7 +24,7 @@
 @use 'partials/search-form';
 // @use 'partials/intervf'; // for Inter VF's weird obliquing stuff
 @use 'partials/vweights'; // for variable fonts, sys or uploaded (test on Linux VM?)
-// @use 'partials/ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
+@use 'partials/ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
 // @use 'partials/heroimg';
 @use 'partials/iefixes';
 @use 'partials/lite-yt-embed';
