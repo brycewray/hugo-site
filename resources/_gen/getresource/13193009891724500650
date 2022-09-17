@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Cache-Control: no-store
+Content-Security-Policy: base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://static-cdn.mastodon.social; img-src 'self' https: data: blob: https://static-cdn.mastodon.social; style-src 'self' https://static-cdn.mastodon.social 'nonce-NHaVdJt3rZoMhvGIas3DuA=='; media-src 'self' https: data: https://static-cdn.mastodon.social; frame-src 'self' https:; manifest-src 'self' https://static-cdn.mastodon.social; connect-src 'self' data: blob: https://static-cdn.mastodon.social https://files.mastodon.social wss://mastodon.social; script-src 'self' https://static-cdn.mastodon.social; child-src 'self' blob: https://static-cdn.mastodon.social; worker-src 'self' blob: https://static-cdn.mastodon.social
+Content-Type: application/json; charset=utf-8
+Date: Sat, 17 Sep 2022 12:42:40 GMT
+Etag: W/"ae96e715156ffa7bd644cf76ca00300f"
+Permissions-Policy: interest-cohort=()
+Server: Mastodon
+Set-Cookie: _mkra_stck=postgres%3A1663418565.829616; path=/; max-age=10; expires=Sat, 17 Sep 2022 12:42:50 GMT; secure; HttpOnly; SameSite=Lax
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Strict-Transport-Security: max-age=31536000
+Vary: Accept-Encoding, Origin
+X-Cached: MISS
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 300
+X-Ratelimit-Remaining: 298
+X-Ratelimit-Reset: 2022-09-17T12:45:00.810175Z
+X-Request-Id: c3ed2777-eee4-48be-ba22-90435febbdc3
+X-Runtime: 0.024861
+X-Xss-Protection: 0
+
+{"id":"100540497858007977","created_at":"2018-08-13T02:10:49.099Z","in_reply_to_id":null,"in_reply_to_account_id":null,"sensitive":false,"spoiler_text":"","visibility":"public","language":"en","uri":"https://mastodon.social/users/nervous_jessica/statuses/100540497858007977","url":"https://mastodon.social/@nervous_jessica/100540497858007977","replies_count":0,"reblogs_count":6,"favourites_count":19,"edited_at":null,"content":"\u003cp\u003eDo gifs work on here? I can’t seem to view gifs in the web client on iPhone\u003c/p\u003e","reblog":null,"application":{"name":"Amaroq","website":"https://appsto.re/us/OfFxib.i"},"account":{"id":"253149","username":"nervous_jessica","acct":"nervous_jessica","display_name":"Jessica Rosenkrantz","locked":false,"bot":false,"discoverable":null,"group":false,"created_at":"2017-11-23T00:00:00.000Z","note":"\u003cp\u003eartist, designer, programmer, etc. Co-founder of Nervous System, a generative design studio that plays w/ code, science \u0026amp; digifab\u003cbr /\u003e\u003ca href=\"http://n-e-r-v-o-u-s.com\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\u003e\u003cspan class=\"invisible\"\u003ehttp://\u003c/span\u003e\u003cspan class=\"\"\u003en-e-r-v-o-u-s.com\u003c/span\u003e\u003cspan class=\"invisible\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e","url":"https://mastodon.social/@nervous_jessica","avatar":"https://files.mastodon.social/accounts/avatars/000/253/149/original/26fc729c29d28b7c.jpeg","avatar_static":"https://files.mastodon.social/accounts/avatars/000/253/149/original/26fc729c29d28b7c.jpeg","header":"https://files.mastodon.social/accounts/headers/000/253/149/original/b6e8083af163919e.png","header_static":"https://files.mastodon.social/accounts/headers/000/253/149/original/b6e8083af163919e.png","followers_count":807,"following_count":62,"statuses_count":275,"last_status_at":"2022-04-28","emojis":[],"fields":[{"name":"website","value":"\u003ca href=\"http://nervo.us\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\u003e\u003cspan class=\"invisible\"\u003ehttp://\u003c/span\u003e\u003cspan class=\"\"\u003enervo.us\u003c/span\u003e\u003cspan class=\"invisible\"\u003e\u003c/span\u003e\u003c/a\u003e","verified_at":null}]},"media_attachments":[{"id":"5387997","type":"gifv","url":"https://files.mastodon.social/media_attachments/files/005/387/997/original/f9f1811bbdd05abe.mp4","preview_url":"https://files.mastodon.social/media_attachments/files/005/387/997/small/f9f1811bbdd05abe.png","remote_url":null,"preview_remote_url":null,"text_url":"https://mastodon.social/media/KStwCwcBlF35ta8xYlo","meta":{"length":"0:00:09.20","duration":9.2,"fps":10,"size":"600x600","width":600,"height":600,"aspect":1.0,"original":{"width":600,"height":600,"frame_rate":"10/1","duration":9.2,"bitrate":970010},"small":{"width":400,"height":400,"size":"400x400","aspect":1.0}},"description":"a hemisphere grows into a ruffled flower by expanding on its edges","blurhash":null}],"mentions":[],"tags":[],"emojis":[],"card":null,"poll":null}

@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Cache-Control: no-store
+Content-Security-Policy: base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://static-cdn.mastodon.social; img-src 'self' https: data: blob: https://static-cdn.mastodon.social; style-src 'self' https://static-cdn.mastodon.social 'nonce-ypBKnqmhCIbIOT06h2JusQ=='; media-src 'self' https: data: https://static-cdn.mastodon.social; frame-src 'self' https:; manifest-src 'self' https://static-cdn.mastodon.social; connect-src 'self' data: blob: https://static-cdn.mastodon.social https://files.mastodon.social wss://mastodon.social; script-src 'self' https://static-cdn.mastodon.social; child-src 'self' blob: https://static-cdn.mastodon.social; worker-src 'self' blob: https://static-cdn.mastodon.social
+Content-Type: application/json; charset=utf-8
+Date: Sat, 17 Sep 2022 12:42:39 GMT
+Etag: W/"ad6d55f303cfb2054c659f0581ef06a9"
+Permissions-Policy: interest-cohort=()
+Server: Mastodon
+Set-Cookie: _mkra_stck=postgres%3A1663418564.9931083; path=/; max-age=10; expires=Sat, 17 Sep 2022 12:42:49 GMT; secure; HttpOnly; SameSite=Lax
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Strict-Transport-Security: max-age=31536000
+Vary: Accept-Encoding, Origin
+X-Cached: MISS
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 300
+X-Ratelimit-Remaining: 299
+X-Ratelimit-Reset: 2022-09-17T12:45:00.966450Z
+X-Request-Id: 44cd2451-1d7f-4e35-8bf3-488745606014
+X-Runtime: 0.033145
+X-Xss-Protection: 0
+
+{"id":"108411108941335064","created_at":"2022-06-03T02:10:43.370Z","in_reply_to_id":null,"in_reply_to_account_id":null,"sensitive":false,"spoiler_text":"","visibility":"public","language":"en","uri":"https://mastodon.social/users/gbraad/statuses/108411108941335064","url":"https://mastodon.social/@gbraad/108411108941335064","replies_count":1,"reblogs_count":0,"favourites_count":0,"edited_at":null,"content":"\u003cp\u003eCloudPilot and Mu look promising, but only run m68k versions of \u003ca href=\"https://mastodon.social/tags/PalmOS\" class=\"mention hashtag\" rel=\"tag\"\u003e#\u003cspan\u003ePalmOS\u003c/span\u003e\u003c/a\u003e, 4.1\u003c/p\u003e","reblog":null,"application":{"name":"Mastodon for Android","website":"https://app.joinmastodon.org/android"},"account":{"id":"18790","username":"gbraad","acct":"gbraad","display_name":"Gerard Braad ✅","locked":false,"bot":false,"discoverable":true,"group":false,"created_at":"2017-01-03T00:00:00.000Z","note":"\u003cp\u003e\u003ca href=\"https://mastodon.social/tags/Hardware\" class=\"mention hashtag\" rel=\"tag\"\u003e#\u003cspan\u003eHardware\u003c/span\u003e\u003c/a\u003e | \u003ca href=\"https://mastodon.social/tags/OpenSource\" class=\"mention hashtag\" rel=\"tag\"\u003e#\u003cspan\u003eOpenSource\u003c/span\u003e\u003c/a\u003e | \u003ca href=\"https://mastodon.social/tags/RetroTech\" class=\"mention hashtag\" rel=\"tag\"\u003e#\u003cspan\u003eRetroTech\u003c/span\u003e\u003c/a\u003e { 𝑨𝑴𝑰𝑮𝑨, MegaDrive } | Principal Software Engineer \u0026amp; Associate Manager working on DevTools | Opinions are my own!\u003c/p\u003e","url":"https://mastodon.social/@gbraad","avatar":"https://files.mastodon.social/accounts/avatars/000/018/790/original/0f31a9bf919028a3.png","avatar_static":"https://files.mastodon.social/accounts/avatars/000/018/790/original/0f31a9bf919028a3.png","header":"https://files.mastodon.social/accounts/headers/000/018/790/original/36060601201e5408.jpg","header_static":"https://files.mastodon.social/accounts/headers/000/018/790/original/36060601201e5408.jpg","followers_count":79,"following_count":110,"statuses_count":2629,"last_status_at":"2022-09-17","emojis":[],"fields":[{"name":"Website","value":"\u003ca href=\"https://gbraad.nl\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\u003e\u003cspan class=\"invisible\"\u003ehttps://\u003c/span\u003e\u003cspan class=\"\"\u003egbraad.nl\u003c/span\u003e\u003cspan class=\"invisible\"\u003e\u003c/span\u003e\u003c/a\u003e","verified_at":"2019-09-13T12:38:26.406+00:00"}]},"media_attachments":[{"id":"108411107818640168","type":"image","url":"https://files.mastodon.social/media_attachments/files/108/411/107/818/640/168/original/15d4d5f77b0114fc.jpg","preview_url":"https://files.mastodon.social/media_attachments/files/108/411/107/818/640/168/small/15d4d5f77b0114fc.jpg","remote_url":null,"preview_remote_url":null,"text_url":null,"meta":{"original":{"width":720,"height":1480,"size":"720x1480","aspect":0.4864864864864865},"small":{"width":279,"height":573,"size":"279x573","aspect":0.4869109947643979}},"description":null,"blurhash":"UxJ**bf8WBof?HayWBj[00WBj[ayD%ayofay"}],"mentions":[],"tags":[{"name":"palmos","url":"https://mastodon.social/tags/palmos"}],"emojis":[],"card":null,"poll":null}

@@ -1,0 +1,23 @@
+HTTP/2.0 200 OK
+Access-Contol-Allow-Origin: platform.twitter.com
+Access-Control-Allow-Methods: GET
+Cache-Control: must-revalidate, max-age=60
+Content-Security-Policy: connect-src 'self'; default-src 'self'; frame-src 'self'; font-src 'self'; form-action 'self'; img-src 'self'; media-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'; report-uri https://twitter.com/i/csp_report?a=O5RXE%3D%3D%3D&ro=false
+Content-Type: application/json; charset=utf-8
+Date: Sat, 17 Sep 2022 12:42:38 GMT
+Etag: W/"40b-k86ah6u9REUnnvTLE3KZHlMeuEc"
+Server: tsa_b
+Server-Timing: x-cache;desc= ,x-tw-cdn;desc=VZ,edge;dur=62
+Strict-Transport-Security: max-age=631138519
+Vary: Origin, Accept-Encoding
+X-Connection-Hash: 54d16a0baa5e5327763ec6163535f324abd5ec3c05f8563a600a27548b26169e
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
+X-Response-Time: 37
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Tw-Cdn: VZ
+X-Xss-Protection: 0
+
+{"lang":"en","favorite_count":2,"self_thread":{"id_str":"1212496201385418753"},"possibly_sensitive":false,"created_at":"2020-01-01T22:09:56.000Z","display_text_range":[0,261],"entities":{"hashtags":[],"urls":[{"display_url":"buff.ly/2CGRCRK","expanded_url":"https://buff.ly/2CGRCRK","indices":[237,260],"url":"https://t.co/wB96VIVOLn"}],"user_mentions":[{"id_str":"895273477711769600","indices":[59,71],"name":"Tailwind CSS","screen_name":"tailwindcss"}],"symbols":[]},"id_str":"1212496201385418753","text":"Another holiday, another site spruce-up. Decided to go the @tailwindcss route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄\n\nhttps://t.co/wB96VIVOLn","user":{"id_str":"2391572880","name":"Bryce Wray","profile_image_url_https":"https://pbs.twimg.com/profile_images/1213524547057655810/kjMG8wu3_normal.jpg","screen_name":"BryceWrayTX","verified":false},"conversation_count":1,"news_action_type":"conversation"}
