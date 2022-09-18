@@ -1,7 +1,8 @@
 name: Deploy to Cloudflare Pages
 
 # To do a push without triggering this GHA, include one of
-# the following in the **commit message** (INCLUDING the brackets):
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
 #
 # [skip ci]
 # [ci skip]
