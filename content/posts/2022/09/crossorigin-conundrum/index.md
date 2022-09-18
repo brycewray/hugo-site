@@ -7,6 +7,9 @@ date: 2022-09-17T22:58:00-05:00
 initTextEditor: iA Writer
 ---
 
+**Note, 2022-09-18**: In the initial publication of this post, I neglected to mention that, specifically due to the problem described herein, the site **doesn't currently** use web fonts --- so I apologize to anyone who went looking through the source code for them while trying to answer the question I'm posing.
+{.yellowBox}
+
 One thing you'll often see explained on the web is that, if you [preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload) a web font to enhance your site's performance, [the `preload` statement must include `crossorigin`](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#cors-enabled_fetches) or the font will be double-downloaded.
 
 But what if you include `crossorigin` and the font **still** is downloaded twice?
