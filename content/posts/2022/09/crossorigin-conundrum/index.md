@@ -7,7 +7,7 @@ date: 2022-09-17T22:58:00-05:00
 initTextEditor: iA Writer
 ---
 
-**Note, 2022-09-18**: In the initial publication of this post, I neglected to mention that, specifically due to the problem described herein, the site **doesn't currently** use web fonts --- so I apologize to anyone who went looking through the source code for them while trying to answer the question I'm posing.
+**Note**: Please see the **Updates** at the end.
 {.yellowBox}
 
 One thing you'll often see explained on the web is that, if you [preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload) a web font to enhance your site's performance, [the `preload` statement must include `crossorigin`](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#cors-enabled_fetches) or the font will be double-downloaded.
@@ -58,3 +58,10 @@ That's an oddity I've been experiencing, and I hope somebody reading this will h
 (And I've tried different fonts, each of which double-loads when I employ similar code, so it's not anything about the specific font file shown above.)
 
 Help, please?? Thanks in advance.
+
+----
+
+## Updates, 2022-09-18
+
+- In the initial publication of this post, I neglected to mention that, specifically due to the problem described herein, the site **at that time *didn't*** use web fonts --- so I apologize to anyone who went looking through the source code for them while trying to answer my question.
+- It now appears this issue is specific to the site's current host, [Cloudflare Pages](https://pages.cloudflare.com). However, I will leave this post in place for the sake of [transparency](/posts/2019/10/otoh/).
