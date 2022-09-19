@@ -5,6 +5,9 @@ author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
 ---
 
+**Update, 2022-09-19**: Go ahead and read this post’s [two](/posts/2020/11/using-postcss-cache-busting-eleventy/) [predecessors](/posts/2020/12/cache-busting-eleventy-take-two/), followed by this post, for perspective --- **but** then go to [this one](/posts/2022/09/cache-busting-eleventy-simpler-way-sass/) for a **much** simpler, **much** cleaner alternative.
+{.yellowBox}
+
 *Up-front disclaimer: No proverbial horses were beaten to death (at least, not by me) during the writing of the following --- although I could see how you might get a different impression.*
 
 Since a few days ago, when I initially published "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two/)" as a way of apologizing for the abortive solution I'd offered in "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy/)," I've thought it might be more helpful if I gave at least some of the actual code rather than pushing people to the [starter site](https://github.com/brycewray/eleventy_solo_starter) whose appearance is based on this one. So that'll be the purpose of this piece.
