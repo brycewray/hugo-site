@@ -3,6 +3,7 @@
 	https://discourse.gohugo.io/t/count-word-function-customized-to-exclude-code/34380
 */ -}}
 {{- $wordCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content | countwords -}}
+{{- $wordCount = .Content | countwords -}}
 {{- $readingTime := div (float $wordCount) 213 | math.Ceil -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 <div class="billboard-div">
