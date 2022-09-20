@@ -7,6 +7,9 @@ date: 2022-09-19T16:34:00-05:00
 initTextEditor: iA Writer # default --- change if needed
 ---
 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/cache-busting-in-eleventy-a-simpler-way-with-sass-10h3).
+{.yellowBox}
+
 If you use the [Eleventy](https://11ty.dev) static site generator (SSG) and [Sass](https://sass-lang.com) to build your website, read on for some cool stuff.
 
 Back in late 2020, I [wrote](/posts/2020/11/using-postcss-cache-busting-eleventy/) [three](/posts/2020/12/cache-busting-eleventy-take-two/) [posts](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/) about how to perform "cache-busting" on an Eleventy site's CSS, which ensures the vast majority of web browsers will reliably show your most up-to-date styling. In the end, I suggested a method that accomplished this through a combination of `package.json` scripting and build-time JavaScript runs. It worked, but it was somewhat of a time drag during dev mode. Besides, it's a lot clunkier than how one can do it in [Hugo](https://gohugo.io) via that SSG's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/). Thus, I've continued to look for a better way.
@@ -33,7 +36,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(eleventySass, {
 		rev: true
 	});
-	
+
 	/*
 		other Eleventy config as usual...
 	*/
