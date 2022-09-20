@@ -20,12 +20,12 @@ One key to using Pagefind, whether in dev mode or on your host, is that it has t
 
 As of now, Pagefind works only on macOS or Linux (the latter obviously covers just about any web hosting vendor, much less the [Jamstack](https://jamstack.org)-savvy vendors); there's not yet a Windows version. (**Update, 2022-08-04**: [Now](https://github.com/CloudCannon/pagefind/releases/tag/v0.6.0), there is a Windows version, too.)
 
-You can run Pagefind either by using the following command, which automatically[^Yflag] installs the latest release:
+You can run Pagefind either by using the following command[^fix], which automatically installs the latest release:
 
-[^Yflag]: The `-y` flag gives a pre-emptive "Yes" answer to Pagefind's resulting prompt which asks whether it's allowed to install itself.
+[^fix]: This command, including all its other occurrences herein, is slightly edited from in the original post due to [an issue](https://github.com/CloudCannon/pagefind/issues/73) that cropped up a few weeks later.
 
 ```bash
-npx -y pagefind --source "public" --serve
+npm_config_yes=true npx pagefind --source "public" --serve
 ```
 
 . . . or by downloading its binary and putting it in your system `PATH`.[^PFbinary] If you do the latter, your command would be simply:
@@ -42,7 +42,7 @@ For my site, I've created a `buildpf.sh` shell script for use with [Hugo](https:
 #!/bin/sh
 rm -rf public
 hugo --gc --minify
-npx pagefind -y --source "public" --serve
+npm_config_yes=true npx pagefind --source "public" --serve
 ```
 
 This way, all I have to do is enter `./buildpf.sh` in my chosen terminal app and, within a few seconds, Pagefind is showing me a local dev view of my site, *with* search working, at `http://localhost:1414`.
@@ -53,7 +53,7 @@ Since I'm [using a GitHub Action](/posts/2022/05/using-dart-sass-hugo-github-act
 
 ```yaml
       - name: Run Pagefind
-        run: npx -y pagefind --source "public"
+        run: npm_config_yes=true npx pagefind --source "public"
 ```
 
 (Obviously, you wouldn't use Pagefind's `--serve` flag here!)
@@ -62,13 +62,13 @@ If you're not using a GHA or other, similar scripting approach, you still should
 
 ```bash
 # With Astro
-npm run build && npx -y pagefind --source "dist"
+npm run build && npm_config_yes=true npx pagefind --source "dist"
 
 # With Eleventy
-npm run build && npx -y pagefind --source "_site"
+npm run build && npm_config_yes=true npx pagefind --source "_site"
 
 # With Hugo
-hugo && npx pagefind -y --source "public"
+hugo && npm_config_yes=true npx pagefind --source "public"
 ```
 <br />
 
@@ -84,7 +84,7 @@ After reading this post, Hugo expert [Régis Philibert](https://github.com/regis
 1. Generate a build by entering `hugo` in your terminal app.
 2. From the terminal, run:\
 {{< highlight bash "linenos=false" >}}
-npx -y pagefind --source public --bundle-dir ../static/_pagefind
+npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/_pagefind
 {{< /highlight >}}
 The [`--bundle-dir` flag](https://pagefind.app/docs/config-options/#bundle-directory) will tell Pagefind to store its "crawl" results in, and source them from, a `static/_pagefind` directory rather than the default.
 3. Run `hugo server` and, lo and behold, you're running the Hugo dev server *and* you have Pagefind search working, just as in production.
@@ -96,7 +96,7 @@ Here's a shell script version, `startpf.sh`:
 ```bash
 #!/bin/sh
 hugo
-npx -y pagefind --source public --bundle-dir ../static/_pagefind
+npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/_pagefind
 hugo server
 ```
 
