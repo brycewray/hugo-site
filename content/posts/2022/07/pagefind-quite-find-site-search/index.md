@@ -58,7 +58,7 @@ Since I'm [using a GitHub Action](/posts/2022/05/using-dart-sass-hugo-github-act
 
 (Obviously, you wouldn't use Pagefind's `--serve` flag here!)
 
-If you're not using a GHA or other, similar scripting approach, you still should find it easy to add Pagefind to your site-building process. In your chosen host's GUI, just use `&&` to tack an `npx pagefind` command onto your site's usual build command. Here are some examples:
+If you're not using a GHA or other, similar scripting approach, you still should find it easy to add Pagefind to your site-building process. In your chosen host's GUI, just use `&&` to tack a Pagefind command onto your site's usual build command. Here are some examples:
 
 ```bash
 # With Astro
