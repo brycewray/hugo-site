@@ -2,8 +2,11 @@
 	h/t to Joe Mooring's answer in
 	https://discourse.gohugo.io/t/count-word-function-customized-to-exclude-code/34380
 */ -}}
-{{- $wordCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content | countwords -}}
-{{- $wordCount = .Content | countwords -}}
+{{- $wordsToCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
+{{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
+{{- $wordsToCount = replaceRE `(?s)<div class="relative imgB.*?</div>` "" $wordsToCount -}}
+{{- $wordsToCount = replaceRE `(?s)<style.*?</style>` "" $wordsToCount -}}
+{{- $wordCount := $wordsToCount | countwords -}}
 {{- $readingTime := div (float $wordCount) 213 | math.Ceil -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 <div class="billboard-div">
