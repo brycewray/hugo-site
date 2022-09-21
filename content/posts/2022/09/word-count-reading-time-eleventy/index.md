@@ -61,7 +61,6 @@ The only other thing this requires is the formatting of the `wordCount` so that 
 	https://discourse.gohugo.io/t/count-word-function-customized-to-exclude-code/34380
 */ -}}
 {{- $wordCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content | countwords -}}
-{{- $wordCount = .Content | countwords -}}
 {{- $readingTime := div (float $wordCount) 225 | math.Ceil -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 <p>
