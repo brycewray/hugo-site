@@ -1,5 +1,5 @@
 ---
-title: "A few words about Hugo 0.103.0"
+title: "A few words about Hugo 0.103.0"
 description: "Here’s some info that’s worth knowing — especially if you use CI/CD to deploy your website."
 author: Bryce Wray
 date: 2022-09-15T14:39:00-05:00
