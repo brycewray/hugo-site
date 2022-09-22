@@ -15,6 +15,7 @@ enableGitInfo: true
 timeout: "150s" # for the sake of newly generated images and such
 
 pygmentsUseClasses: true
+pygmentsCodefences: true
 
 Paginate: 5 # so five posts will appear on each page from "/posts"
 
