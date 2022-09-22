@@ -7,7 +7,7 @@
 {{- $wordsToCount = replaceRE `(?s)<div class="relative imgB.*?</div>` "" $wordsToCount -}}
 {{- $wordsToCount = replaceRE `(?s)<style.*?</style>` "" $wordsToCount -}}
 {{- $wordCount := $wordsToCount | countwords -}}
-{{- $readingTime := div (float $wordCount) 213 | math.Ceil -}}
+{{- $readingTime := div (float $wordCount) 225 | math.Ceil -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 <div class="billboard-div">
 	<div class="billboard-title-block">
