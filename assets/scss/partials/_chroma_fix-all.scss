@@ -3,8 +3,12 @@
 pre,
 code {
 	font-family: var.$monospaced;
-	-webkit-font-feature-settings: "liga" 0;
-	font-feature-settings: "liga" 0;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  background: var.$blueLightCode;
+  @media screen and (prefers-color-scheme: dark) {
+    background: var.$code-bkgd-dark-mode;
+  }
 }
 
 code[class*="language-"],
