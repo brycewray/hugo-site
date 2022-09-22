@@ -95,15 +95,15 @@ article blockquote code {
 		border-radius: 16px;
 		// keeps code blocks from being too small
 		// due to the `article code` rule above
-		@media screen and (min-width: var.$bkpt_lg) {
-			font-size: 1rem;
-		}
-		@media screen and (min-width: var.$bkpt_xl) {
-			font-size: 1.125rem;
-		}
-		@media screen and (min-width: var.$bkpt_2xl) {
-			font-size: 1.25rem;
-		}
+		// @media screen and (min-width: var.$bkpt_lg) {
+		// 	font-size: 1rem; // rem, not em (for indented code blocks)
+		// }
+		// @media screen and (min-width: var.$bkpt_xl) {
+		// 	font-size: 1.125rem;
+		// }
+		// @media screen and (min-width: var.$bkpt_2xl) {
+		// 	font-size: 1.25rem;
+		// }
 	}
 }
 
