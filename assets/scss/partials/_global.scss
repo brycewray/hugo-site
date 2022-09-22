@@ -297,6 +297,31 @@ article {
 		line-height: 1.65em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
+		a strong, a b {
+			@media screen and (prefers-color-scheme: dark) {
+				color: var.$blueLight;
+			}
+		}
+		strong, b {
+			@media screen and (prefers-color-scheme: dark) {
+				color: var.$bold-dark-mode;
+			}
+			a {
+				@media screen and (prefers-color-scheme: dark) {
+					color: var.$blueLight;
+				}
+			}
+		}
+	}
+	.yellowBox strong, .yellowBox b, .blueBox strong, .blueBox b {
+		@media screen and (prefers-color-scheme: dark) {
+			color: var.$bold-dark-mode;
+		}
+	}
+	blockquote strong, blockquote b {
+		@media screen and (prefers-color-scheme: dark) {
+			color: var.$bold-blockquote-dark-mode;
+		}
 	}
 	li li, li p {
 		font-size: inherit;
@@ -307,5 +332,8 @@ article {
 		margin-bottom: 1.5rem;
 		letter-spacing: -0.02em;
 		line-height: normal;
+	}
+	picture img {
+		height: auto;
 	}
 }
