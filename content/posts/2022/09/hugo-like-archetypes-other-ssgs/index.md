@@ -34,7 +34,7 @@ hugo new posts/2022/09/hugo-like-archetypes-other-ssgs/index.md
 
 This works because, in this example, I already have an `archetypes/posts.md` file with the following content:
 
-```go-html-template
+```md
 ---
 title: "TITLE TO COME"
 description: "DESCRIPTION TO COME."
