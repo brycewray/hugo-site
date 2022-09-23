@@ -38,7 +38,7 @@ This is where my idea comes into play.
 
 ## The new way
 
-It was obvious that the failure point was in the domain-switching part. The just-as-obvious answer was that I would simply **not** switch the domains. Instead, I'd set up just **one** project, to which the domain would always be assigned, and point **different** repos to that project.
+It was obvious that the failure point was in the domain-switching part. The just-as-obvious answer was that I would simply **not** switch the domain. Instead, I'd set up just **one** project, to which the domain would always be assigned, and point **different** repos to that project.
 
 "But, wait," you say, "even that repo switch can involve some period of down-time, right?"
 
