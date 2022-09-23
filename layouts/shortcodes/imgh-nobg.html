@@ -33,9 +33,6 @@
 	{{- $imgClass = "img-phn h-auto ctrImg" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $LQIP_img := $src.Resize "20x jpg" -}}
-{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-{{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 
 {{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
 
