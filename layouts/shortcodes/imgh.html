@@ -29,9 +29,6 @@
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIP_colors := $src.Colors -}}
 {{- $LQIP_bkgd := delimit ($LQIP_colors) ", " -}}
-{{/*  {{- $LQIP_img := $src.Resize "20x jpg" -}}
-{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}  */}}
-{{/*  {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}  */}}
 {{- $CFPstyle := print "background: linear-gradient(" $LQIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
 {{- if $phn -}}
 	{{- $CFPstyle = "background: none;" -}}
