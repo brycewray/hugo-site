@@ -1,6 +1,6 @@
 ---
 title: "The accessibility argument for tabs over spaces"
-description: "I changed my position on a developers’ Holy War — because it was the right thing to do."
+description: "I changed my position on a developers’ Holy War — because it was the right thing to do."
 author: Bryce Wray
 date: 2022-06-30T12:02:00-05:00
 #initTextEditor: iA Writer
