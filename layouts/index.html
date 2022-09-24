@@ -10,8 +10,9 @@
 				{{- range first 3 (where .Site.RegularPages "Section" "posts") }}
 				<div>
 					<h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+					{{- $dashDescription := replace .Description " — " "—" -}}{{- /* Due to Public Sans bug */ -}}
 					<p class="homePost-Description">
-						{{ .Description }}
+						{{ $dashDescription }}
 					</p>
 					<p class="homePost-Dates">
 						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
