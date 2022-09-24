@@ -58,6 +58,9 @@ eleventyConfig.addCollection("everything", (collectionApi) => {
 
 ## Create the macros file
 
+**Important**: The following step assumes the presence in your project of a suitable JavaScript file from the [`lite-youtube-embed` repo](https://github.com/paulirish/lite-youtube-embed). In the code below, it's in the Eleventy project's `src/assets/js/` location (hence referred to as `/assets/js` since, in this project, the top-level `src` is the [input directory](https://www.11ty.dev/docs/config/#input-directory)) and called *lite-yt-embed_0-2-0.js*.
+{.yellowBox}
+
 Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/docs/config/#directory-for-includes), add a `macros` folder and, within it, an `index.njk` file for holding all your macros. Here's such a file that contains a macro version of the YouTube-embedding code:
 
 ```twig
