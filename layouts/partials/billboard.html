@@ -13,8 +13,9 @@
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
 		{{- if and .Params.Description (ne .Title .Site.Params.SearchTitle) }}
+		{{- $dashDescription := replace .Params.Description " — " "—" -}}{{- /* Due to Public Sans bug */ -}}
 		<p class="billboard-description-text">
-			{{ .Params.Description }}
+			{{ $dashDescription }}
 		</p>
 		{{- end }}
 		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}

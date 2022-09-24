@@ -2,7 +2,8 @@
 	{{ partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article">
-			{{ .Content }}
+			{{- $dashContent := replace .Content " &mdash; " "&mdash;" -}}
+			{{ $dashContent | safeHTML }}{{- /* Due to Public Sans bug */ -}}
 		</article>
 	</div>
 {{ end }}
