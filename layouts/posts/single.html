@@ -2,8 +2,12 @@
 	{{- partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article" id="postArticle">
-			{{- $dashContent := replace .Content " &mdash; " "&mdash;" -}}
-			{{ $dashContent | safeHTML }}{{- /* Due to Public Sans bug */ -}}
+			{{- $Content := .Content -}}
+			{{- if .Site.Params.PublicSans -}}
+				{{- $Content = replace .Content " &mdash; " "&mdash;" -}}
+				{{- /* Due to Public Sans bug */ -}}
+			{{- end -}}
+			{{ $Content | safeHTML }}
 			<div class="contactBtn" data-pagefind-ignore>
 				<a href="mailto:bw@brycewray.com?subject=“{{ .Title }}”">
 					<button>

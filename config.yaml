@@ -26,6 +26,7 @@ params:
   Host: "CFP" # choices are "CFP" and "Vercel"
   SiteLive: true # Boolean --- used for adapting robots.txt as needed
   SearchTitle: "Search the site"
+  PublicSans: true # Boolean --- "true" triggers use of em dash space replacements
 
 frontmatter:
   date:

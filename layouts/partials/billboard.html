@@ -13,10 +13,14 @@
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
 		{{- if and .Params.Description (ne .Title .Site.Params.SearchTitle) }}
-		{{- $dashDescription := replace .Params.Description " — " "—" -}}{{- /* Due to Public Sans bug */ -}}
-		<p class="billboard-description-text">
-			{{ $dashDescription }}
-		</p>
+			{{- $Description := .Params.Description -}}
+			{{- if .Site.Params.PublicSans -}}
+				{{- $Description = replace .Params.Description " — " "—" -}}
+				{{- /* Due to Public Sans bug */ -}}
+			{{- end -}}
+			<p class="billboard-description-text">
+				{{ $Description }}
+			</p>
 		{{- end }}
 		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}
 		<p class="billboard-p-text" data-pagefind-ignore>
