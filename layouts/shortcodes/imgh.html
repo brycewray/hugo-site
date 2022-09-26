@@ -29,12 +29,7 @@
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIP_img := $src.Resize "20x jpg" -}}
 {{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-{{- $LQIP_colors := $src.Colors -}}
-{{- if (lt ($LQIP_colors | len) 2) -}}
-	{{- $LQIP_colors = $LQIP_colors | append "#000000" -}}
-{{- end -}}
-{{- $LQIP_bkgd := delimit ($LQIP_colors) ", " -}}
-{{- $CFPstyle := print "background: linear-gradient(" $LQIP_bkgd "); background-image: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
+{{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 {{- if $phn -}}
 	{{- $CFPstyle = "background: none;" -}}
 {{- end -}}
@@ -71,4 +66,3 @@
 		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 	</picture>
 </div>
-
