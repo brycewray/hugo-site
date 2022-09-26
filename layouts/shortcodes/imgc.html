@@ -45,7 +45,14 @@
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
 {{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
-{{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
+{{- $urlForColors := print $cloudiBase ($xFmPart1 | safeURL) "600" $xFmPart2 $src -}}
+{{- $srcForColors := resources.GetRemote $urlForColors -}}
+{{- $LQIP_colors := $srcForColors.Colors -}}
+{{- if (lt ($LQIP_colors | len) 2) -}}
+	{{- $LQIP_colors = $LQIP_colors | append "#000000" -}}
+{{- end -}}
+{{- $LQIP_bkgd := delimit ($LQIP_colors) ", " -}}
+{{- $CFPstyle := print "background: linear-gradient(" $LQIP_bkgd "); background-image: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 {{- if $phn -}}
 	{{- $CFPstyle = "background: none;" -}}
 {{- end -}}
