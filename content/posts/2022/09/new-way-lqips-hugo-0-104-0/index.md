@@ -29,7 +29,7 @@ For example, given this image:
 #1d1816,#cac7c0,#978779
 ```
 
-Those are the colors, in hex format, that `.Colors` picked out as the main ones in the image. The number of colors obviously varies from image to image, and it can be as low as one. Note that one-item slice will be problematic if you try to code so that an image's `.Colors`-derived LQIP has a background that's a [linear gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient), because the `linear-gradient` function requires at least two colors. Thus, you'll want to add a test for a one-color return from `.Colors` so you can [append](https://gohugo.io/functions/append/) to the slice an extra color --- perhaps a safe one like black --- if need be.
+Those are the colors, in hex format, that `.Colors` picked out as the main ones in the image. The number of colors obviously varies from image to image, and it can be as low as one. Note that a one-item slice will be problematic if you try to code so that an image's `.Colors`-derived LQIP has a background that's a [linear gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient), because the `linear-gradient` function requires at least two colors. Thus, you'll want to add a test for a one-color return from `.Colors` so you can [append](https://gohugo.io/functions/append/) to the slice an extra color --- perhaps a safe one like black --- if need be.
 
 So, with Hugo 0.104.0 and up, you can try something like the following, in which `$src` represents the real image file:
 
