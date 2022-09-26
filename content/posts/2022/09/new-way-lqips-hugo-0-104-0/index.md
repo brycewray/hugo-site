@@ -21,7 +21,7 @@ Then, today, the release of Hugo 0.104.0 added a [`.Colors` method](https://gohu
 
 For example, given this image:
 
-{{< imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" >}}
+{{< imgh-colors src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" >}}
 
 . . . here's the slice you get from `.Colors`:
 
