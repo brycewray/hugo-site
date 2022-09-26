@@ -46,6 +46,6 @@ After specifying that `$LQIP_colors` is the return from `$src.Colors`, we have t
 - Create `$LQIP_bkgd`, which is a string containing the contents of `$LQIP_colors`, with each pair separated by a `delimit`-ing comma and space. That's for . . .
 - . . . `$style`, the CSS we'll provide to the eventual `div` in which the real image will be contained.[^CSP]
 
-[^CSP]: If you have a strict [Content Security Policy](https://content-security-policy.com) and need to work around the issue of inline styling, you might want to examine the admittedly more complicated [original](https://github.com/brycewray/hugo_site/blob/main/layouts/shortcodes/imgh.html) from which I extracted this example.
+[^CSP]: If you have a strict [Content Security Policy](https://content-security-policy.com) and need to work around the issue of inline styling, you might want to examine the admittedly more complicated [original](https://github.com/brycewray/hugo_site/blob/main/layouts/shortcodes/imgh-colors.html) from which I extracted this example.
 
 Finally, be sure to check the `$.Colors` [example page](https://staticbattery.com/), and its [source code](https://github.com/bep/gallerydeluxe), mentioned in the 0.104.0 release notes.
