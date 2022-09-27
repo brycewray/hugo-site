@@ -65,3 +65,7 @@ Help, please?? Thanks in advance.
 
 - In the initial publication of this post, I neglected to mention that, specifically due to the problem described herein, the site **at that time *didn't*** use web fonts --- so I apologize to anyone who went looking through the source code for them while trying to answer my question.
 - It now appears this issue is specific to the site's current host, [Cloudflare Pages](https://pages.cloudflare.com). However, I will leave this post in place for the sake of [transparency](/posts/2019/10/otoh/).
+
+## Update, 2022-09-27
+
+`@MichaelM` informed me today on the Cloudflare Developers Discord's `pages-general` channel that this issue is a Cloudflare Pages bug which actually *strips out* the `crossorigin` from the HTML content, thus causing a mismatch between the `link` header and the actual font request, upon which a browser "will complain and make an additional request" --- hence, the double-loading. He also gave me a workaround that I've since implemented successfully: providing the `preload` through CFP's available [method for attaching headers](https://developers.cloudflare.com/pages/platform/headers/). Thank you, sir!
