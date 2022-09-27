@@ -1,5 +1,5 @@
 ---
-title: "The IndieWeb experiment ends"
+title: "The IndieWeb experiment ends"
 description: "My timing wasn’t the greatest."
 author: Bryce Wray
 date: 2022-05-29T10:48:00-05:00

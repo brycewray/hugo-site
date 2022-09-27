@@ -1,5 +1,5 @@
 ---
-title: "Really getting started with Hugo"
+title: "Really getting started with Hugo"
 description: "Since the officially recommended approach tends to frustrate new users, let’s see whether we can do something about that."
 author: Bryce Wray
 date: 2022-07-19T10:55:00-05:00
