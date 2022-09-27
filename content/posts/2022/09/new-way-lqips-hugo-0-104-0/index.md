@@ -19,7 +19,9 @@ Then, today, the release of Hugo 0.104.0 added a [`.Colors` method](https://gohu
 
 *(Link added.)*
 
-For example, given this image:
+For example, given this[^inHugo] image:
+
+[^inHugo]: If the site is currently on Hugo, the image is rendered using a shortcode that makes use of `.Colors` for demonstrative purposes.
 
 {{< imgh-colors src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" >}}
 
@@ -49,3 +51,6 @@ After specifying that `$LQIP_colors` is the return from `$src.Colors`, we have t
 [^CSP]: If you have a strict [Content Security Policy](https://content-security-policy.com) and need to work around the issue of inline styling, you might want to examine the admittedly more complicated [original](https://github.com/brycewray/hugo_site/blob/main/layouts/shortcodes/imgh-colors.html) from which I extracted this example.
 
 Finally, be sure to check the `$.Colors` [example page](https://staticbattery.com/), and its [source code](https://github.com/bep/gallerydeluxe), mentioned in the 0.104.0 release notes.
+
+**Later note**: I subsequently found a [2018 article](https://calendar.perfplanet.com/2018/gradient-image-placeholders/) which suggested the result of this approach should be considered as not an LQIP but, rather, a **GIP** (gradient image placeholder). Fair enough --- and please, folks, let's avoid any *.gif*-style arguments about how to pronounce the *G* of *GIP*.
+{.yellowBox}
