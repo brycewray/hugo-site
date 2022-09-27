@@ -1,4 +1,5 @@
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
+/
 	Link: </fonts/PublicSans-Regular-VF-2-001_2022-05-11_subset.woff2>; rel=preload; as=font; crossorigin
 	Link: </fonts/PublicSans-Italic-VF-2-001_2022-05-11_subset.woff2>; rel=preload; as=font; crossorigin
