@@ -68,6 +68,9 @@ So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I ini
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 
+**Note from the future**: In time, I decided to get my chosen web font at any moment --- either [Inter](https://github.com/rsms/inter) or [Public Sans](https://github.com/uswds/public-sans/) --- directly from its repo on GitHub. "Watching" each repo for releases tells me when to update the file(s).
+{.yellowBox}
+
 ## A little more cleaning-up
 
 While I was in this process, I realized there were two other needed actions to achieve full (or at least fuller) compliance with the GDPR and other privacy-protection laws, both now and in the future; so I:
