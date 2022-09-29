@@ -77,3 +77,6 @@ And, if not: well, try not to pity me *too* awfully, okay?
 Besides, it could've been worse: I had a fleeting thought of trying to come up with a [**monorepo**](https://en.wikipedia.org/wiki/Monorepo) with *multiple* SSGs and their respective configurations, file/folder "lookup orders," *etc.* --- so I could share just one set of content among all the SSGs, making switcheroos that much easier. At least I didn't go *there*.
 
 Well . . . not yet, anyway. *[Evil laugh.]*
+
+**Later note**: For those who may be morbidly curious about that last item, be advised that, my curiosity too much to bear, I *did* attempt just such a monorepo-based approach. While I got it to work with very bare-bones-ish content, I couldn't determine how to make different SSGs respect --- or, more accurately, ignore --- each others' components, shortcodes, *etc.* (at least without show-stopping errors). That's where the mad-scientist-level experiment ended.
+{.yellowBox}
