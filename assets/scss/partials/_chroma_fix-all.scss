@@ -46,15 +46,15 @@ pre[class*="language-"] {
 }
 
 article code {
-	font-size: 0.95em;
+	font-size: 0.975em;
 	@media screen and (min-width: var.$bkpt_md) {
-		font-size: 0.9em;
+		font-size: 0.95em;
 	}
 	@media screen and (min-width: var.$bkpt_xl) {
-		font-size: 0.875em;
+		font-size: 0.925em;
 	}
 	@media screen and (min-width: var.$bkpt_2xl) {
-		font-size: 0.85em;
+		font-size: 0.9em;
 	}
 	background-color: var.$blueLightCode;
 	@media (prefers-color-scheme: dark) {
@@ -99,15 +99,15 @@ article blockquote code {
 		border-radius: 16px;
 		// keeps code blocks from being too small
 		// due to the `article code` rule above
-		// @media screen and (min-width: var.$bkpt_lg) {
-		// 	font-size: 1rem; // rem, not em (for indented code blocks)
-		// }
-		// @media screen and (min-width: var.$bkpt_xl) {
-		// 	font-size: 1.125rem;
-		// }
-		// @media screen and (min-width: var.$bkpt_2xl) {
-		// 	font-size: 1.25rem;
-		// }
+		@media screen and (min-width: var.$bkpt_lg) {
+			font-size: 0.9rem; // rem, not em (for indented code blocks)
+		}
+		@media screen and (min-width: var.$bkpt_xl) {
+			font-size: 1rem;
+		}
+		@media screen and (min-width: var.$bkpt_2xl) {
+			font-size: 1.1rem;
+		}
 	}
 }
 

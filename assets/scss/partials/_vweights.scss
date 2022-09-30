@@ -93,18 +93,18 @@ article .h6,
 	letter-spacing: normal;
 }
 
-article code, article p code {
-	font-size: 1em;
-	@media screen and (min-width: var.$bkpt_md) {
-		font-size: 0.975em;
-	}
-	@media screen and (min-width: var.$bkpt_xl) {
-		font-size: 0.95em;
-	}
-	@media screen and (min-width: var.$bkpt_2xl) {
-		font-size: 0.9em;
-	}
-}
+// article code, article p code {
+// 	font-size: 1em;
+// 	@media screen and (min-width: var.$bkpt_md) {
+// 		font-size: 0.975em;
+// 	}
+// 	@media screen and (min-width: var.$bkpt_xl) {
+// 		font-size: 0.95em;
+// 	}
+// 	@media screen and (min-width: var.$bkpt_2xl) {
+// 		font-size: 0.9em;
+// 	}
+// }
 
 @media screen and (prefers-color-scheme: dark) {
 	.header-anchor::after {
