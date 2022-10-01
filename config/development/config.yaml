@@ -1,7 +1,7 @@
 caches:
   getjson:
     dir: :resourceDir/json
-    maxAge: 10h # default = -1 (forever)
+    maxAge: 168h # default = -1 (forever)
   getresource:
     dir: :resourceDir/_gen
-    maxAge: 10h # default = -1 (forever)
+    maxAge: 168h # default = -1 (forever)
