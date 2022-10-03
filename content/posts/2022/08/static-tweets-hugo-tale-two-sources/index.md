@@ -43,13 +43,13 @@ Register today for to be part of the fun
 
 Not good!
 
-At one point in the last few days, I was prepared to give up on the whole thing and just use the built-in Hugo [`tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet), albeit while using [Hugo's privacy settings](https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings) to block Twitter's tracking code. With those settings, as I've [explained before](/posts/2022/02/static-tweets-eleventy-hugo/#in-hugo), `tweet` results in an *extremely* spare appearance. Here's an example of `tweet`, with the privacy shields up, rendering my recent tweet about a much-appreciated fix to the [giscus](https://giscus.app) commenting platform:
+At one point in the last few days, I was prepared to give up on the whole thing and just use the built-in Hugo [`tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet), albeit while using [Hugo's privacy settings](https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings) to block Twitter's tracking code. With those settings, as I've [explained before](/posts/2022/02/static-tweets-eleventy-hugo/#in-hugo), `tweet` results in an *extremely* spare appearance. Here's an example of `tweet`, with the privacy shields up:
 
-{{< tweet user="BryceWrayTX" id="1550908040794218496" >}}
+{{< tweet user="zachleat" id="1553141790894596097" >}}
 
-. . . instead of how it looks in my `stweet` shortcode:
+. . . instead of how the same tweet looks in my `stweet` shortcode:
 
-{{< stweet user="BryceWrayTX" id="1550908040794218496" >}}
+{{< stweet user="zachleat" id="1553141790894596097" >}}
 
 But, as I tested the `tweet` shortcode on various tweets where the API-produced text had been especially annoying to me, I noticed something: the `tweet`-rendered text was almost universally fine as it was, unlike what I'd gotten from either the Public Syndication API or the Version 2 API.
 
