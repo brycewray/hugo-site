@@ -29,7 +29,7 @@ Also: when you set the `data-mapping` parameter, I **strongly** suggest choosing
 
 [^pn]: For example, `posts/2022/05/tips-using-giscus/` is both this page's pathname and the title of its related GitHub Discussion --- or, at least, the latter *will* be true when/if this page receives at least one giscus comment or reaction.
 
-**Update, 2022-07-24**: That problem was [solved on 2022-07-23](https://github.com/giscus/giscus/issues/508#issuecomment-1193106139) with a [fix that uses *hashing*](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#data-strict) to work around this problem.
+**Update, 2022-07-24**: That problem was [solved on <span class="nobrk">2022-07-23</span>](https://github.com/giscus/giscus/issues/508#issuecomment-1193106139) with a [fix that uses *hashing*](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#data-strict) to work around this problem.
 {.yellowBox}
 
 ## It's remote scripting all the way down

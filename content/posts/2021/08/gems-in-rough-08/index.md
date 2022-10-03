@@ -47,7 +47,7 @@ As for the actual performance numbers I see in Speedlify, you can check my [test
 
 [^CICD]: Of course, I could use GitHub Actions to get around this, as I explained in last year's "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd/)" --- but, as a friend overseas would say, "I can't be arsed."
 
-**Update, 2021-09-18**: Azure deleted my test ASWA site tonight (early on 2021-09-19 according to UTC) because, apparently, it doesn't allow free static sites, after all, unlike the other vendors mentioned here. Consequently, the Speedlify test results now have four sites.
+**Update, 2021-09-18**: Azure deleted my test ASWA site tonight (early on <span class="nobrk">2021-09-19</span> according to UTC) because, apparently, it doesn't allow free static sites, after all, unlike the other vendors mentioned here. Consequently, the Speedlify test results now have four sites.
 {.yellowBox}
 
 **Update, 2021-09-25**: I've turned off the cron jobs that run the test each day, so the results will be frozen going forward. It seemed nonsensical to keep running the tests since the list of sites was down to just four --- two of them Cloudflare-based.
