@@ -57,7 +57,7 @@ Note from the relevant GitHub SCSS file:
 $sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $twitter-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-$monospaced: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$monospaced: "SF Mono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 // rems
 $biggest: 2.5rem;
