@@ -104,17 +104,17 @@ So, while it's indeed cool that Hugo wields Git info-handling prowess out of the
 
 ## Acknowledgements and related material
 
-- Zachary Betz, "[Create React App: Show Current Git Branch and Commit Hash From Any OS](https://zwbetz.com/create-react-app-show-current-git-branch-and-commit-hash-from-any-os/)" (2021-06-22).
-- Aleksandr Hovhannisyan, "[Add Build Info to an 11ty Site](https://www.aleksandrhovhannisyan.com/blog/eleventy-build-info/)" (2022-05-31).
-- Hector Molina, "[Moving away from GitHub Pages to Cloudflare Pages](https://hmolina.dev/p/moving-away-from-github-pages-to-cloudflare-pages/)" (2022-07-03).
-- Michael Schnerring, "[Create a Hugo Website with GitHub Pages, GitHub Actions, and Cloudflare](https://schnerring.net/blog/create-a-hugo-website-with-github-pages-github-actions-and-cloudflare/)" (2021-03-19).
-- Mike Street, "[The Git Commit Hash](https://www.mikestreety.co.uk/blog/the-git-commit-hash/)" (2020-05-28).
+- Zachary Betz, "[Create React App: Show Current Git Branch and Commit Hash From Any OS](https://zwbetz.com/create-react-app-show-current-git-branch-and-commit-hash-from-any-os/)" (<span class="nobrk">2021-06-22</span>).
+- Aleksandr Hovhannisyan, "[Add Build Info to an 11ty Site](https://www.aleksandrhovhannisyan.com/blog/eleventy-build-info/)" (<span class="nobrk">2022-05-31</span>).
+- Hector Molina, "[Moving away from GitHub Pages to Cloudflare Pages](https://hmolina.dev/p/moving-away-from-github-pages-to-cloudflare-pages/)" (<span class="nobrk">2022-07-03</span>).
+- Michael Schnerring, "[Create a Hugo Website with GitHub Pages, GitHub Actions, and Cloudflare](https://schnerring.net/blog/create-a-hugo-website-with-github-pages-github-actions-and-cloudflare/)" (<span class="nobrk">2021-03-19</span>).
+- Mike Street, "[The Git Commit Hash](https://www.mikestreety.co.uk/blog/the-git-commit-hash/)" (<span class="nobrk">2020-05-28</span>).
 - Hugo Discourse forum
-	- "[Adding Last Modified Git Status to Pages?](https://discourse.gohugo.io/t/adding-last-modified-git-status-to-pages/25402)" (initially posted 2020-05-10).
-	- "[Problems with GitInfo in CI](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)" (initially posted 2019-12-25).
-- [îles](https://iles.pages.dev/) GitHub Discussions, "[Any way to expose Git data?](https://github.com/ElMassimo/iles/discussions/132)" (initially posted 2022-06-10).
-- Node.js v18.8.0 documentation, "[Child process](https://nodejs.org/api/child_process.html)" (accessed 2022-09-04 for this article).
-- Pragmatic Pineapple, "[Add Updated At To Your Gatsby Blog](https://pragmaticpineapple.com/add-updated-at-to-your-gatsby-blog/)" (2021-02-08).
+	- "[Adding Last Modified Git Status to Pages?](https://discourse.gohugo.io/t/adding-last-modified-git-status-to-pages/25402)" (initially posted <span class="nobrk">2020-05-10</span>).
+	- "[Problems with GitInfo in CI](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)" (initially posted <span class="nobrk">2019-12-25</span>).
+- [îles](https://iles.pages.dev/) GitHub Discussions, "[Any way to expose Git data?](https://github.com/ElMassimo/iles/discussions/132)" (initially posted <span class="nobrk">2022-06-10</span>).
+- Node.js v18.8.0 documentation, "[Child process](https://nodejs.org/api/child_process.html)" (accessed <span class="nobrk">2022-09-04</span> for this article).
+- Pragmatic Pineapple, "[Add Updated At To Your Gatsby Blog](https://pragmaticpineapple.com/add-updated-at-to-your-gatsby-blog/)" (<span class="nobrk">2021-02-08</span>).
 - Stack Overflow
-	- "[Get hash of most recent git commit in Node](https://stackoverflow.com/questions/34518389/get-hash-of-most-recent-git-commit-in-node/)" (initially posted 2015-12-29).
-	- "[Why The Output Of 'git log' Is Different In Terminal and execSync In node.js](https://stackoverflow.com/questions/63673227/why-the-output-of-git-log-is-different-in-terminal-and-execsync-in-node-js)" (initially posted 2020-08-31).
+	- "[Get hash of most recent git commit in Node](https://stackoverflow.com/questions/34518389/get-hash-of-most-recent-git-commit-in-node/)" (initially posted <span class="nobrk">2015-12-29</span>).
+	- "[Why The Output Of 'git log' Is Different In Terminal and execSync In node.js](https://stackoverflow.com/questions/63673227/why-the-output-of-git-log-is-different-in-terminal-and-execsync-in-node-js)" (initially posted <span class="nobrk">2020-08-31</span>).

@@ -123,13 +123,12 @@ This is because, to quote that [comment from which I borrowed the code](https://
 
 ## Acknowledgements and related material
 
-- Iain Bean, "[Flexible components in Eleventy with Nunjucks macros](https://iainbean.com/posts/2020/flexible-components-in-eleventy-with-nunjucks-macros/)" (2020-12-04).
-- Jérôme Coupé, "[Modular code with Nunjucks and Eleventy](https://www.webstoemp.com/blog/modular-code-nunjucks-eleventy/)" (2021-08-06).
-- Paul Irish, "[Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed#readme)" documentation (date unknown).
-- Sia Karamalegos, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)" (2021-04-07).
-- Trys Mudford, "[Encapsulated Eleventy/Nunjucks components with macros](https://www.trysmudford.com/blog/encapsulated-11ty-components/)" (2021-02-19).
-- Thomas M. Semmler, "[Using parameters in your Eleventy includes with Nunjucks macros](https://helloyes.dev/blog/2021/using-parameters-in-your-eleventy-includes-with-nunjucks-macros/)" (2021-08-10).
-- W. Evan Sheehan, "[Includes and Macros](https://darthmall.net/weblog/2021/includes-and-macros/)" (2021-11-20).
-- "[How to use Nunjucks macro inside Markdown files?](https://github.com/11ty/eleventy/issues/613)" (Eleventy issue #613, initially posted 2019-07-16).
+- Iain Bean, "[Flexible components in Eleventy with Nunjucks macros](https://iainbean.com/posts/2020/flexible-components-in-eleventy-with-nunjucks-macros/)" (<span class="nobrk">2020-12-04</span>).
+- Jérôme Coupé, "[Modular code with Nunjucks and Eleventy](https://www.webstoemp.com/blog/modular-code-nunjucks-eleventy/)" (<span class="nobrk">2021-08-06</span>).
+- Paul Irish, "[Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed#readme)" documentation (<span class="nobrk">date unknown</span>).
+- Sia Karamalegos, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)" (<span class="nobrk">2021-04-07</span>).
+- Trys Mudford, "[Encapsulated Eleventy/Nunjucks components with macros](https://www.trysmudford.com/blog/encapsulated-11ty-components/)" (<span class="nobrk">2021-02-19</span>).
+- Thomas M. Semmler, "[Using parameters in your Eleventy includes with Nunjucks macros](https://helloyes.dev/blog/2021/using-parameters-in-your-eleventy-includes-with-nunjucks-macros/)" (<span class="nobrk">2021-08-10</span>).
+- W. Evan Sheehan, "[Includes and Macros](https://darthmall.net/weblog/2021/includes-and-macros/)" (<span class="nobrk">2021-11-20</span>).
+- "[How to use Nunjucks macro inside Markdown files?](https://github.com/11ty/eleventy/issues/613)" (Eleventy issue #613, initially posted <span class="nobrk">2019-07-16</span>).
 - [Nunjucks documentation](https://mozilla.github.io/nunjucks/templating.html).
-

@@ -280,18 +280,18 @@ You see, since the generated images end up in `resources/_gen/images`, the first
 
 Even if you don't use `imgh` or anything like it, I hope this article has at least contributed to your understanding of Hugo's image processing prowess. Here are other selected articles about using Hugo for creating responsive images. I've listed them in order of their publish dates, oldest first. Note that even some which came *after* Hugo began allowing processing of images as global resources still referred erroneously to Hugo's earlier file-placement restrictions.
 
-- Adam Wills, "[Responsive Images in Hugo](https://www.adamwills.io/blog/responsive-images-hugo/)" (2017-04-30).
-- Nils Norman Haukås, "[Hugo: How to add support for responsive images trough image processing and page bundles <3](https://nilsnh.no/2018/06/10/hugo-how-to-add-support-for-responsive-images-trough-image-processing-and-page-bundles-3/)" (2018-06-10).
-- Mathias Wellner, "[Image Handling with Hugo](https://mwellner.de/en/2018/10/30/image-handling-with-hugo/)" (2018-10-30).
-- Laura Kalbag, "[Processing Responsive Images with Hugo](https://laurakalbag.com/processing-responsive-images-with-hugo/)" (2018-12-13).
-- [stereobooster](https://github.com/stereobooster), "[Responsive Images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9)" (2019-06-16).
-- Alan W. Smith, "[A Flexible Responsive Image Solution for Hugo](https://www.alanwsmith.com/posts/a-flexible-responsive-image-solution-for-hugo--20en8rdqh5do)" (2019-11-07).
-- Strict Panda, "[Using Image Processing to Load Images in Hugo](https://blog.strict-panda.com/post/image-processing-media-queries/)" (2019-11-28).
-- Henrik Sommerfeld, "[Lazy Loading Images in Hugo](https://www.henriksommerfeld.se/lazy-loading-images-in-hugo/)" (2020-02-05).
-- Charl P. Botha, "[Drop-in replacement for Hugo figure shortcode with responsive img srcset](https://cpbotha.net/2020/05/02/drop-in-replacement-for-hugo-figure-shortcode-with-responsive-img-srcset/)" (2020-05-02).
-- Alex Lakatos, "[How To Add Image Processing to Your Hugo Website and Improve Performance](https://alexlakatos.com/web/2020/07/17/hugo-image-processing/)" (2020-07-17).
-- Jan Steinke, "[Module for responsive images with image source sets for Hugo](https://blog.jan-steinke.de/en/posts/tech/01_hugo_module/)" (2020-10-12).
-- Dave Bennett, "[Hugo Responsive Images With Markdown Render Hook](https://www.bennettnotes.com/notes/hugo-responsive-images-with-markdown-render-hook/)" (2021-08-08).
-- Tim van Werkhoven, "[Responsive images &amp; image grids for Hugo](https://www.vanwerkhoven.org/blog/2021/responsive_images_in_hugo_theme/)" (2021-10-22).
-- Utkarsh Verma, "[Using responsive images effortlessly with Hugo](https://bitbanged.com/posts/using-responsive-images-effortlessly-with-hugo/)" (2022-03-06).
-- Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (2022-06-19).
+- Adam Wills, "[Responsive Images in Hugo](https://www.adamwills.io/blog/responsive-images-hugo/)" (<span class="nobrk">2017-04-30</span>).
+- Nils Norman Haukås, "[Hugo: How to add support for responsive images trough image processing and page bundles <3](https://nilsnh.no/2018/06/10/hugo-how-to-add-support-for-responsive-images-trough-image-processing-and-page-bundles-3/)" (<span class="nobrk">2018-06-10</span>).
+- Mathias Wellner, "[Image Handling with Hugo](https://mwellner.de/en/2018/10/30/image-handling-with-hugo/)" (<span class="nobrk">2018-10-30</span>).
+- Laura Kalbag, "[Processing Responsive Images with Hugo](https://laurakalbag.com/processing-responsive-images-with-hugo/)" (<span class="nobrk">2018-12-13</span>).
+- [stereobooster](https://github.com/stereobooster), "[Responsive Images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9)" (<span class="nobrk">2019-06-16</span>).
+- Alan W. Smith, "[A Flexible Responsive Image Solution for Hugo](https://www.alanwsmith.com/posts/a-flexible-responsive-image-solution-for-hugo--20en8rdqh5do)" (<span class="nobrk">2019-11-07</span>).
+- Strict Panda, "[Using Image Processing to Load Images in Hugo](https://blog.strict-panda.com/post/image-processing-media-queries/)" (<span class="nobrk">2019-11-28</span>).
+- Henrik Sommerfeld, "[Lazy Loading Images in Hugo](https://www.henriksommerfeld.se/lazy-loading-images-in-hugo/)" (<span class="nobrk">2020-02-05</span>).
+- Charl P. Botha, "[Drop-in replacement for Hugo figure shortcode with responsive img srcset](https://cpbotha.net/2020/05/02/drop-in-replacement-for-hugo-figure-shortcode-with-responsive-img-srcset/)" (<span class="nobrk">2020-05-02</span>).
+- Alex Lakatos, "[How To Add Image Processing to Your Hugo Website and Improve Performance](https://alexlakatos.com/web/2020/07/17/hugo-image-processing/)" (<span class="nobrk">2020-07-17</span>).
+- Jan Steinke, "[Module for responsive images with image source sets for Hugo](https://blog.jan-steinke.de/en/posts/tech/01_hugo_module/)" (<span class="nobrk">2020-10-12</span>).
+- Dave Bennett, "[Hugo Responsive Images With Markdown Render Hook](https://www.bennettnotes.com/notes/hugo-responsive-images-with-markdown-render-hook/)" (<span class="nobrk">2021-08-08</span>).
+- Tim van Werkhoven, "[Responsive images &amp; image grids for Hugo](https://www.vanwerkhoven.org/blog/2021/responsive_images_in_hugo_theme/)" (<span class="nobrk">2021-10-22</span>).
+- Utkarsh Verma, "[Using responsive images effortlessly with Hugo](https://bitbanged.com/posts/using-responsive-images-effortlessly-with-hugo/)" (<span class="nobrk">2022-03-06</span>).
+- Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (<span class="nobrk">2022-06-19</span>).
