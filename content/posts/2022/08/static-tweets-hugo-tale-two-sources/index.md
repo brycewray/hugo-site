@@ -107,13 +107,13 @@ While having the text from the oEmbed API was a big improvement, it did occasion
 [^samecall]: Now you can change the `stweet` to `tweet` and you have the basic Hugo shortcode, so perhaps this is easier to edit in the long run, anyway.
 
 ```go-html-template
-{{</* stweet user="BryceWrayTX" id="1550908040794218496" */>}}
+{{</* stweet user="zachleat" id="1553141790894596097" */>}}
 ```
 
 . . . rather than the *former* method, where all I had to do was provide the tweet ID (and, since it was expecting only that one parameter, I didn't have to use the `id` name in referring to it):
 
 ```go-html-template
-{{</* stweet "1550908040794218496" */>}}
+{{</* stweet "1553141790894596097" */>}}
 ```
 
 . . . but, hey, that's what search/replace is for in one's chosen code editor, right? And, fortunately, I didn't have *that* many existing `stweet` instances to edit, anyway.
