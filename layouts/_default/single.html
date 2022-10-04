@@ -2,13 +2,7 @@
 	{{ partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article">
-			{{- $Content := .Content -}}
-			{{- if .Site.Params.PublicSans -}}
-				{{- $Content = replace .Content " &mdash; " "&mdash;" -}}
-				{{- if in $Content "—" -}}{{- $Content = replace .Content " — " "—" -}}{{- end -}}{{- /* Ulysses files */ -}}
-				{{- /* Due to Public Sans bug */ -}}
-			{{- end -}}
-			{{ $Content | safeHTML }}
+			{{ .Content | safeHTML }}
 		</article>
 	</div>
 {{ end }}
