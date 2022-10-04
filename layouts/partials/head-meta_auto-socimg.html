@@ -35,7 +35,9 @@
 		{{/*  {{- if gt (len $.Title) 20 -}}
 			{{- $titleSize = 70 -}}
 		{{- end -}}  */}}
-		{{- $socImg = $socImg.Filter (images.Text .Title (dict
+		{{- $titleSI := .Title -}}
+		{{/*  {{- $titleSI = .Title | htmlUnescape -}}  */}}
+		{{- $socImg = $socImg.Filter (images.Text $titleSI (dict
 			"color" "#ffffff"
 			"size" $titleSize
 			"linespacing" 10
