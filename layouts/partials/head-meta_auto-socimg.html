@@ -1,0 +1,67 @@
+{{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
+{{- $fallbackImg = $fallbackImg.Fit "1024x512" -}}
+{{- $socImg := $fallbackImg -}}{{/* fallback if not Home */}}
+
+{{/* Required meta tags */}}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	{{- /* IndieWeb */ -}}
+	{{- if .IsHome }}
+		<link rel="me" href="https://twitter.com/BryceWrayTX">
+		<link rel="me" href="https://github.com/brycewray">
+	{{- end }}
+		<link rel="webmention" href="https://webmention.io/www.brycewray.com/webmention">
+		<link rel="pingback" href="https://webmention.io/www.brycewray.com/xmlrpc">
+		<meta name="twitter:site" content="@BryceWrayTX">
+		<meta name="twitter:creator" content="@BryceWrayTX">
+		<meta name="twitter:card" content="summary_large_image" />
+
+	{{- if .IsHome }}
+		<title>{{ .Site.Title }}</title>
+		<meta name="description" content="{{ .Site.Params.Description }}">
+		<link rel="canonical" href="{{ .Site.BaseURL }}">
+		<meta property="og:title" content="{{ .Site.Title }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="{{ .Site.Params.Description }}" />
+		<meta property="og:url" content="{{ .Site.BaseURL }}" />
+		<meta property="twitter:title" content="{{ .Site.Title }}" />
+		<meta property="twitter:description" content="{{ .Site.Params.Description }}" />
+		<meta name="og:image" content="{{ $fallbackImg.Permalink }}" />
+		<meta name="twitter:image" content="{{ $fallbackImg.Permalink }}" />
+	{{- else }}
+		{{- $socImg = resources.Get "/images/social-OG-bkgd-for-left-align-text_1280x669.jpg" -}}
+		{{- $titleSize := 96 -}}
+		{{/*  {{- if gt (len $.Title) 20 -}}
+			{{- $titleSize = 70 -}}
+		{{- end -}}  */}}
+		{{- $socImg = $socImg.Filter (images.Text .Title (dict
+			"color" "#ffffff"
+			"size" $titleSize
+			"linespacing" 10
+			"x" 50
+			"y" 50
+			"font" (resources.Get "/fonts/Franklin Gothic Medium.ttf")
+		)) }}
+		<title>{{ .Title }} | {{ .Site.Title }}</title>
+	 {{- if .Params.Description }}
+		<meta name="description" content="{{ .Params.Description }}">
+		<meta property="og:description" content="{{ .Params.Description }}" />
+		<meta property="twitter:description" content="{{ .Params.Description }}" />
+	 {{- else }}
+		<meta name="description" content="{{ .Site.Params.Description }}">
+		<meta name="og:description" content="{{ .Site.Params.Description }}">
+		<meta name="twitter:description" content="{{ .Site.Params.Description }}">
+	 {{- end }}
+	 {{- if .Params.Ext_canonical }}
+		<link rel="canonical" href="{{ .Params.Ext_canonical }}">
+	 {{- else }}
+		<link rel="canonical" href="{{ .Page.Permalink }}">
+	 {{- end }}
+		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="{{ .Page.Permalink }}" />
+		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+		<meta name="og:image" content="{{ $socImg.Permalink }}" />
+		<meta name="twitter:image" content="{{ $socImg.Permalink }}" />
+	{{- end -}}
