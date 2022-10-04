@@ -4,7 +4,7 @@
 	{{/* Required meta tags */}}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	{{- /* IndieWeb */ -}}
 	{{- if .IsHome }}
 		<link rel="me" href="https://twitter.com/BryceWrayTX">
@@ -14,26 +14,26 @@
 		<link rel="pingback" href="https://webmention.io/www.brycewray.com/xmlrpc">
 		<meta name="twitter:site" content="@BryceWrayTX">
 		<meta name="twitter:creator" content="@BryceWrayTX">
-		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:card" content="summary_large_image">
 
 	{{- if .IsHome }}
 		<title>{{ .Site.Title }}</title>
 		<meta name="description" content="{{ .Site.Params.Description }}">
 		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<meta property="og:title" content="{{ .Site.Title }}" />
-		<meta property="og:type" content="website" />
-		<meta property="og:description" content="{{ .Site.Params.Description }}" />
-		<meta property="og:url" content="{{ .Site.BaseURL }}" />
-		<meta property="twitter:title" content="{{ .Site.Title }}" />
-		<meta property="twitter:description" content="{{ .Site.Params.Description }}" />
-		<meta name="og:image" content="{{ $fallbackImg.Permalink }}" />
-		<meta name="twitter:image" content="{{ $fallbackImg.Permalink }}" />
+		<meta property="og:title" content="{{ .Site.Title }}">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="{{ .Site.Params.Description }}">
+		<meta property="og:url" content="{{ .Site.BaseURL }}">
+		<meta property="twitter:title" content="{{ .Site.Title }}">
+		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
+		<meta name="og:image" content="{{ $fallbackImg.Permalink }}">
+		<meta name="twitter:image" content="{{ $fallbackImg.Permalink }}">
 	{{- else }}
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
 		<meta name="description" content="{{ .Params.Description }}">
-		<meta property="og:description" content="{{ .Params.Description }}" />
-		<meta property="twitter:description" content="{{ .Params.Description }}" />
+		<meta property="og:description" content="{{ .Params.Description }}">
+		<meta property="twitter:description" content="{{ .Params.Description }}">
 	 {{- else }}
 		<meta name="description" content="{{ .Site.Params.Description }}">
 		<meta name="og:description" content="{{ .Site.Params.Description }}">
@@ -44,10 +44,10 @@
 	 {{- else }}
 		<link rel="canonical" href="{{ .Page.Permalink }}">
 	 {{- end }}
-		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="{{ .Page.Permalink }}" />
-		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="{{ .Page.Permalink }}">
+		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
 	 {{- with .Page.Resources.GetMatch "title.png" }}
 		{{- $titleImg := . -}}
 		{{- $finalFilter := (images.Overlay $titleImg 0 0 ) -}}
@@ -56,6 +56,6 @@
    {{- else -}}
 		{{- /* $socImg remains fallback image */ -}}
 	 {{- end }}
-		<meta name="og:image" content="{{ $socImg.Permalink }}" />
-		<meta name="twitter:image" content="{{ $socImg.Permalink }}" />
+		<meta name="og:image" content="{{ $socImg.Permalink }}">
+		<meta name="twitter:image" content="{{ $socImg.Permalink }}">
 	{{- end -}}
