@@ -2,7 +2,7 @@
 title: "Accepting reality about Astro"
 description: "It comes down to understanding that not every SSG, no matter how otherwise attractive, is a good fit for this site."
 author: Bryce Wray
-date: 2022-10-06T11:27:00-05:00
+date: 2022-10-05T11:27:00-05:00
 #draft: true
 initTextEditor: iA Writer
 ---
@@ -23,7 +23,7 @@ I thought Astro's [recent emergence from beta testing](https://astro.build/blog/
 In the end, as I told a reader who'd [written](/contact/) to me about this and other subjects:
 
 > Even if the Astro team were to issue a permanent fix today for my show-stopper issue, the dev-side experience is still ’waaaay too slow when a site has hundreds of MDX files. They've fixed that more than once, but it seems to regress to molasses-level slowness --- *e.g.*, 5 to 10 seconds between an edit and the hot-refresh response --- every other new series of updates. As a result, particularly as compared to working with basic Markdown in [Eleventy](https://11ty.dev) or [Hugo](https://gohugo.io), I simply can't bear working in Astro dev mode any more.
-> 
+>
 > However, **to be fair**: the Astro folks obviously are focused on promoting it for normal commercial sites, most of which typically are going to be full of HTML/Astro files (hence no slowdown) rather than MDX files; and I can't blame them for such a mindset, because That's Where The Money Is<sup>™</sup> --- not in non-monetized, low-traffic, MDX-replete, nerdy blogs. 😀
 
 *[Links added.]*
