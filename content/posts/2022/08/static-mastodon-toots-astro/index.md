@@ -10,14 +10,14 @@ While experimenting with various static site generators (SSGs), I've created an 
 
 ```js
 <SToot
-	instance="mastodon.technology"
-	id="108895889717986727"
+	instance="fosstodon.org"
+	id="108896692414393920"
 />
 ```
 
 . . . to get:
 
-{{< stoot "mastodon.technology" "108895889717986727" >}}
+{{< stoot "fosstodon.org" "108896692414393920" >}}
 
 Note that `SToot.astro` assumes you have the [`date-fns`](https://github.com/date-fns/date-fns) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project. (By the way: in my original version of the component, I used [this styling](https://github.com/brycewray/astro-site/blob/main/src/styles/Twitter.scss).)
 

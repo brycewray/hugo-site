@@ -18,4 +18,4 @@ bw@brycewray.com<br />
 - This site’s news feed ([RSS](/index.xml) or [JSON](/index.json))
 - [brycewray on GitHub](https://github.com/brycewray/)
 - [@BryceWrayTX on Twitter](https://twitter.com/BryceWrayTX/)
-- [@BryceWrayTX on Mastodon](https://mastodon.technology/@BryceWrayTX)
+- [@BryceWrayTX on Mastodon](https://fosstodon.org/@BryceWrayTX)
