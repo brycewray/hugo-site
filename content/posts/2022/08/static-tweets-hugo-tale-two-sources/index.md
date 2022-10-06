@@ -45,7 +45,7 @@ Not good!
 
 At one point in the last few days, I was prepared to give up on the whole thing and just use the built-in Hugo [`tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet), albeit while using [Hugo's privacy settings](https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings) to block Twitter's tracking code. With those settings, as I've [explained before](/posts/2022/02/static-tweets-eleventy-hugo/#in-hugo), `tweet` results in an *extremely* spare appearance. Here's an example of `tweet`, with the privacy shields up:
 
-{{< tweet user="zachleat" id="1553141790894596097" >}}
+{{< stweet-simple user="zachleat" id="1553141790894596097" >}}
 
 . . . instead of how the same tweet looks in my `stweet` shortcode:
 
