@@ -6,6 +6,7 @@
 {{- $qual := "q75" -}}{{/* Hugo default */}}
 {{- if .Get "qual" -}}{{- $qual = .Get "qual" -}}{{- end -}}
 {{- $hint := "photo" -}}{{/* Hugo default */}}
+{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
 {{- $filter := false -}}{{/* Hugo default */}}
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
 
