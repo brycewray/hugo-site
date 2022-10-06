@@ -1,0 +1,12 @@
+{{/* init vars */}}
+{{- $src := .Page.Resources.GetMatch (.Get "src") -}}
+{{- $alt := .Get "alt" -}}
+{{- $size := "1000x" -}}{{/* providing a default */}}
+{{- if .Get "size" -}}{{- $size = .Get "size" -}}{{- end -}}
+{{- $qual := "q75" -}}{{/* Hugo default */}}
+{{- if .Get "qual" -}}{{- $qual = .Get "qual" -}}{{- end -}}
+{{- $hint := "photo" -}}{{/* Hugo default */}}
+{{- $filter := false -}}{{/* Hugo default */}}
+{{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
+
+<img src="{{- ($src.Resize (print $size " " $qual " " $hint " " $filter) ).RelPermalink }}" width="{{ $src.Width }}" height="auto" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
