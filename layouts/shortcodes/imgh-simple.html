@@ -5,9 +5,17 @@
 {{- if .Get "size" -}}{{- $size = .Get "size" -}}{{- end -}}
 {{- $qual := "q75" -}}{{/* Hugo default */}}
 {{- if .Get "qual" -}}{{- $qual = .Get "qual" -}}{{- end -}}
-{{- $hint := "photo" -}}{{/* Hugo default */}}
-{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
 {{- $filter := false -}}{{/* Hugo default */}}
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
 
-<img src="{{- ($src.Resize (print $size " " $qual " " $hint " " $filter) ).RelPermalink }}" width="{{ $src.Width }}" height="auto" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
+<img src="{{- ($src.Resize (print $size " " $qual " " $filter) ).RelPermalink }}" width="{{ $src.Width }}" height="auto" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
+
+{{/*
+	In your Markdown, you could call this as follows, assuming the image is within the same folder as the Markdown (if you wanted a `900x` size rather than `1000x`, for example):
+
+	{{< imgh src="my-image-file.jpg" alt="My image file alt text" size="900x" qual="q70" filter="Linear" >}}
+
+	If you **didn't** need to change any defaults in the supplied parameters, you wouldn't need to mention them:
+
+	{{< imgh src="my-image-file.jpg" alt="My image file alt text" >}}
+*/}}
