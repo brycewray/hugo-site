@@ -68,7 +68,7 @@ To get a safe-but-nice-looking tweet embed in Hugo, we’ll add a [shortcode](ht
 
 Actually, Hugo has a [*built-in* `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) but, by default, it brings in *all* the content (good and bad) from Twitter’s regular embedding method. You can edit the site config file to [turn off](https://gohugo.io/about/hugo-and-gdpr/#twitter) the privacy-violating junk fetched by `tweet`, but that leaves you with a pretty plain result. For example, here’s how `tweet` reproduces that earlier tweet (albeit with little or no CSS help) when you’ve engaged Hugo’s maximum privacy setting for `tweet`-grabbed content:
 
-{{< stweet-simple user="BryceWrayTX" id="1487140202141425673" >}}
+{{< tweet user="BryceWrayTX" id="1487140202141425673" >}}
 
 Now, that’s certainly not terrible, and it does give you the essence of the message, but it still isn’t as cool as what you’ll get by adding the following shortcode[^5], which we’ll call `stweet.html` (with `stweet` standing for *static tweet*):
 
