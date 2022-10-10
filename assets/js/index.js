@@ -4,11 +4,12 @@ window.FPConfig = {
   ignoreKeywords: [
     'index.xml',
     'index.json',
-    '/about',
-    '/privacy',
-    '/contact',
-		'/search',
-    '/sitemap',
+    '/about/',
+		'/posts/page/',
+    '/privacy/',
+    '/contact/',
+		'/search/',
+    '/sitemap/',
     '/sitemap.xml'
   ],
 }
