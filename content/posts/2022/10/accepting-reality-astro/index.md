@@ -15,10 +15,12 @@ Unfortunately, it seems I can no longer do so.
 
 I thought Astro's [recent emergence from beta testing](https://astro.build/blog/astro-1/) would mean an end to how frequently it would be introducing breaking changes (which, of course, are likely with *any* beta). But, in trying to develop this site in Astro since then, I haven't found that to be the case:
 
-- **Brittleness** --- Due mainly to [one particular issue](https://github.com/withastro/astro/issues/4533) that I've come to call the "show-stopper," I haven't been able to manage an Astro version of this site because using [`Astro.glob()`](https://docs.astro.build/en/reference/api-reference/#astroglob) to provide things as simple as "Previous post"/"Next post" links tends to cause call stack errors in development mode.[^Gatsby]
+- **Brittleness** --- Due mainly to [one particular issue](https://github.com/withastro/astro/issues/4533)[^Vitefix] that I've come to call the "show-stopper," I haven't been able to manage an Astro version of this site because using [`Astro.glob()`](https://docs.astro.build/en/reference/api-reference/#astroglob) to provide things as simple as "Previous post"/"Next post" links tends to cause call stack errors in development mode.[^Gatsby]
 - **Slowness** --- Using [MDX](https://mdxjs.com) files in Astro [had seemed](/posts/2022/07/astro-move-to-mdx/) to be a fix to its patience-eroding dev-mode slowness with Markdown files that I reported [back in April](/posts/2022/04/astro-ready-your-blog/#developer-experience) and [again in May](/posts/2022/05/mulling-over-migration/#dx-suffers-on-larger-sites); but, during the frequent updates to the plugin that enables the Astro/MDX combo, that slowness has kept returning.
 
 [^Gatsby]:  It's a bit too reminiscent of my [2019 agonies](/posts/2019/07/why-staying-with-hugo/) with using dev mode in [Gatsby](https://gatsbyjs.com). (Perhaps Gatsby is better now, but I have zero interest in making sure.)
+
+[^Vitefix]: **Update, 2022-10-10**: [Bjorn Lu](https://github.com/bluwy), a [Vite](https://vitejs.dev/) core team member and Astro "core resident," has determined that this issue is due to an interaction between Vite and Node.js. A fix is pending.
 
 In the end, as I told a reader who'd [written](/contact/) to me about this and other subjects:
 
