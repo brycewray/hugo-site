@@ -1,3 +1,6 @@
+{{- $options := dict "targetPath" "js/bundle.js" -}}
+{{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint "md5" -}}
+
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
 	{{ partial "head.html" . }}
@@ -7,7 +10,8 @@
 		{{- block "main" . -}}{{- end }}
 		</div>
 		{{- if ne .Title .Site.Params.SearchTitle -}}{{- partialCached "search-pagefind.html" . -}}{{- end -}}
-		{{- partialCached "footer.html" . -}}
+		{{- partialCached "footer.html" . }}
+    <script {{ if eq .Site.Params.Host "CFP" -}}nonce="DhcnhD3khTMePgXw"{{- end }} src="{{ $jsBundle.RelPermalink }}" defer></script>
 		{{- if hugo.IsProduction -}}
 			{{- if eq .Site.Params.Host "CFP" -}}
 				<!-- Cloudflare Web Analytics -->
@@ -15,8 +19,8 @@
 				</script>
 				<!-- End Cloudflare Web Analytics -->
 			{{- end -}}
-		{{- end -}}
-		{{- if (findRE "<pre" .Content 1) -}}
+		{{- end }}
+		{{ if (findRE "<pre" .Content 1) -}}
 			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint "md5" -}}
 			<script nonce="DhcnhD3khTMePgXw" src="{{ $jsCopy.RelPermalink }}" defer></script>
 		{{- end }}
