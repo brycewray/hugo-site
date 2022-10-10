@@ -1,5 +1,2 @@
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
-/
-  Link: </fonts/LibreFranklin-Roman-VariableFont_subset.woff2>; rel=preload; as=font; crossorigin
-  Link: </fonts/LibreFranklin-Italic-VariableFont_subset.woff2>; rel=preload; as=font; crossorigin
