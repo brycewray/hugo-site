@@ -33,5 +33,5 @@ Working with Astro has (usually) been fun over the last year or so, but it's tim
 To the wonderful people in the Astro community:\
 *[ad astra](https://en.wikipedia.org/wiki/Ad_astra_(phrase))*, Astronauts. 👋
 
-**Update, 2022-10-10**: [Bjorn Lu](https://github.com/bluwy), a [Vite](https://vitejs.dev/) core team member and Astro "core resident," determined that the "show-stopper" issue is due to an interaction between Vite and Node.js; his fix should be reflected in a future version of Astro. I'll keep you advised.
+**Update, 2022-10-10**: [Bjorn Lu](https://github.com/bluwy), a [Vite](https://vitejs.dev/) core team member and Astro "core resident," determined that the "show-stopper" issue is due to an interaction between Vite and Node.js; [his fix](https://github.com/vitejs/vite/pull/10401) should be reflected in a future version of Astro. I'll keep you advised.
 {.yellowBox}
