@@ -27,6 +27,6 @@ As a result of these two developments, I no longer need the analytics data from 
 
 *However* . . .
 
-I **am** retaining a free *affiliation* with Fathom — so, if you’re interested in giving Fathom a try, you can still take advantage of that to give yourself a **10% discount** on your first month (and, yes, give me a commission) by [using this link](https://usefathom.com/ref/ZKHYWX). End of plug.
+I **am** retaining a free *affiliation* with Fathom — so, if you’re interested in giving Fathom a try, you can still take advantage of that to give yourself a **$10 credit** toward your first month (and, yes, give me a commission) by [using this link](https://usefathom.com/ref/ZKHYWX). End of plug.
 
 [^1]:	The exception to that occurs when this site is on [Cloudflare Pages](https://pages.cloudflare.com), as it is at this writing. To quote my [privacy policy](/privacy/#cloudflare): “This site’s traffic goes through Cloudflare and is configured to use its Web Analytics tool, which Cloudflare claims doesn’t track individual users and doesn’t leave cookies.” However, Cloudflare Analytics — at least this freebie form thereof, which is the only kind I’d be trying — shares [most of the flaws I listed in 2020 for the similarly server-side Netlify Analytics](/posts/2020/06/fathom-analytics-count-on-it/#netlify-analytics-close-butnbspnbspnbsp), so it doesn’t begin to hold a candle to what I had with Fathom.
