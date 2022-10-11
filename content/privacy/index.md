@@ -11,6 +11,10 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
 
+## Fathom Analytics
+
+This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, "[Fathom Analytics: count on it](/posts/2020/06/fathom-analytics-count-on-it/)."
+
 ## giscus
 
 The site's [giscus](https://giscus.app) commenting system, which is based on the [GitHub Discussions search API](https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions#search), performs no tracking.
