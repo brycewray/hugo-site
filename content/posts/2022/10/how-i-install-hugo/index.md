@@ -40,6 +40,13 @@ With that established, let's break this up into three sections that you can togg
 
 Throughout these instructions, we will pretend that your user name is `JohnDoe`. Thus, your user directory (`{$HOME}`) will be `/home/JohnDoe/`.
 
+**Update**: [Daniel F. Dickinson](https://www.wildtechgarden.ca/about/) was kind enough to pass along these additional notes regarding Linux use, so please take them into account as you view the steps below.\
+\
+• If `$HOME` is mounted with the [`noexec` option](https://linux.die.net/man/1/noexec), you must put the Hugo binary in a supported system location, and that will require root (or equivalent) access.\
+\
+• The suggested procedure can also run into trouble if (a.) protection mechanisms like [SELinux](https://github.com/SELinuxProject/selinux) are in use, (b.) one is using an [OSTree](https://ostreedev.github.io/ostree/introduction/)-based distribution, which may not allow the procedure, and/or (c.) one is within an **enterprise**-based Linux setup, which may have even more lockdown options and their associated complications.
+{.yellowBox}
+
 ### Add a folder to your `PATH`
 
 1. Create `/home/JohnDoe/bin/` if it doesn't already exist. This `bin` folder will be the **target folder** where you'll store the Hugo binary.
