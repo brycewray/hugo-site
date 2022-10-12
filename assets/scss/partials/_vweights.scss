@@ -20,10 +20,15 @@ h1,
 .billboard-title-text,
 .posts-Head,
 .homePost-Latest,
-.homeOpen h1,
+// .homeOpen h1,
 .sitemap-Div h1 {
 	font-weight: 600;
 	letter-spacing: -0.05em;
+}
+
+.homeOpen h1 {
+	font-weight: 600;
+	letter-spacing: -0.0375em;
 }
 
 h2,
