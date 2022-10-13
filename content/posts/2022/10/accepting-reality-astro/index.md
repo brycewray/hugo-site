@@ -35,3 +35,6 @@ To the wonderful people in the Astro community:\
 
 **Update, 2022-10-10**: [Bjorn Lu](https://github.com/bluwy), a [Vite](https://vitejs.dev/) core team member and Astro "core resident," determined that the "show-stopper" issue is due to an interaction between Vite and Node.js; [his fix](https://github.com/vitejs/vite/pull/10401) should be reflected in a future version of Astro. I'll keep you advised.
 {.yellowBox}
+
+**Update, 2022-10-13**: With today's release of [Astro 1.5.0](https://github.com/withastro/astro/releases/tag/astro%401.5.0), it appears the fix for the "show-stopper" has been included. However, the poor, laggy DX continues with `Astro.glob()` --- which, of course, is a totally separate issue.
+{.yellowBox}
