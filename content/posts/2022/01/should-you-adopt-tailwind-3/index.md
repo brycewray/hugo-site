@@ -1,5 +1,5 @@
 ---
-title: "Should you adopt Tailwind 3?"
+title: "Should you adopt Tailwind 3?"
 description: "Tailwind is making too much progress to ignore. Is it time to check out the latest version?"
 author: Bryce Wray
 date: 2022-01-12T16:16:00-06:00
