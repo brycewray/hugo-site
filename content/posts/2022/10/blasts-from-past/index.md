@@ -66,7 +66,7 @@ The hosting vendor I've used for over a year now, and which I recommend, is [Clo
 
 - "[Publish or perish](/posts/2019/04/publish-or-perish/)" <span class="nobrk">(2019-04-11)</span>.
 - "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd/)" <span class="nobrk">(2020-06-28)</span>.
-- "[Goodbye and hello](/posts/2020/07/goodbye-hello/)" <span class="nobrk">(2020-07-02)</span> (plus its four sequels, each of which is linked to its predecessor).
+- "[Goodbye and hello](/posts/2020/07/goodbye-hello/)" <span class="nobrk">(2020-07-02)</span> (plus its four sequels, each of which is linked to its successor).
 - "[A normal person's guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting/)" <span class="nobrk">(2020-09-26)</span>.
 - "[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)" <span class="nobrk">(2020-09-27)</span>.
 - "[Forward Paas](/posts/2020/10/forward-paas/)" <span class="nobrk">(2020-10-11)</span>.
