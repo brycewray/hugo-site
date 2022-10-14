@@ -96,6 +96,14 @@ outputs:
     - json
 
 security:
+  exec:
+    allow:
+      - ^open$
   funcs:
     getenv:
       - ^*
+
+newContentEditor: open -b pro.writer.mac
+# h/t:
+#   https://www.lkhrs.com/blog/2022/10/hugo-ia-writer/
+#   https://discourse.gohugo.io/t/newcontenteditor-trouble-with-spaces/40930
