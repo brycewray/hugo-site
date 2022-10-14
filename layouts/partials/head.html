@@ -1,6 +1,12 @@
 	<head>
 		{{ hugo.Generator }}
-		{{- partial "head-meta_manual-socimg.html" . }}
+		{{- partial "head-meta_cloud-socimg.html" . }}
+		{{- /*
+			choices are:
+			- head-meta_auto-socimg.html (for text filter)
+			- head_meta_cloud-socimg.html (for Cloudinary)
+			- head_meta_manual-socimg.html (for manually typed text overlays)
+		*/ -}}
 		{{- partialCached "head-favicons.html" . }}
 		<link rel="preconnect" href="https://giscus.app">
 		<link rel="dns-prefetch" href="https://giscus.app">
