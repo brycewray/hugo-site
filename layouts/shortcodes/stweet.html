@@ -126,6 +126,7 @@
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/oT6ok93vSp">pic.twitter.com/oT6ok93vSp</a>` `` -}}
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/YQWONLs0hm">pic.twitter.com/YQWONLs0hm</a>` `` -}}
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/mxX4kogDMI">https://t.co/mxX4kogDMI</a>` `` -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/3yYtqWFukr">https://t.co/3yYtqWFukr</a>` `` -}}
 
 	{{- $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id -}}
 
