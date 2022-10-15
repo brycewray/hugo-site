@@ -62,8 +62,8 @@
 		{{- $escapedTitle = replace $escapedTitle "‑" "%E2%80%91" -}}{{/* non-breaking hyphen */}}
 		{{- $titleSize := 72 -}}
 		{{- $fontChoice := "librefranklinsemibold.ttf" -}}
-		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
 		{{- /* choices are `librefranklinsemibold.ttf` and `librefranklinmedium.ttf` */ -}}
+		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
 		{{- $socImg := print "https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" -}}
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
