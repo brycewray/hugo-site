@@ -39,7 +39,7 @@ On the other hand, if you're an SSG user, you can automate that second part thro
 
 A *semi*-automated way to make that image could be something like what I'd been doing until the last couple of days. I'd created a generic background image like this:
 
-{{< imgh src="social-OG-w-BW-logo_1024x512.jpg" alt="Background image for use with social media image creation" >}}
+{{< imgc src="social-OG-w-BW-logo_1024x512.jpg" alt="Background image for use with social media image creation" width=1024 height=512 >}}
 
 . . . and then written some code (as I [previously explained](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/)) to [overlay](https://gohugo.io/functions/images/#overlay) that generic background with another image file, `title.png`, which I'd create *manually* for each new web page. I'd chosen to do it this way because I didn't like the limited text-formatting choices involved in using Hugo's more automatic [`Text` filter](https://gohugo.io/functions/images/#text).
 
@@ -84,7 +84,7 @@ Here's an annotated version of how I'm handling it in [my Hugo setup's appropria
 
 At the top, I mention a fallback image (`$fallbackImg`), which I host myself rather than on Cloudinary. This is for use for the home page, for which I'd prefer the OG image to be my long-term site image:
 
-{{< imgh src="typewriter-monochrome_2242164_6260x4374.jpg" alt="Monochrome view of hands typing on an old typewriter" >}}
+{{< imgc src="typewriter-monochrome_2242164_6260x4374.jpg" alt="Monochrome view of hands typing on an old typewriter" width=6260 height=4374 >}}
 
 I could also use it for other pages if I so chose. Anyway: if you have no such concerns about having a fallback image for your home page (or any other), feel free to ignore that part.
 
@@ -137,8 +137,8 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 			their “escaped” versions.
 			As explained earlier in this post,
 			Cloudinary requires “double-escaping”
-			(meaning, escaping the `%` within 
-			as `%25`) the following characters 
+			(meaning, escaping the `%` within
+			as `%25`) the following characters
 			as follows:
 			- Percent sign %2525 (not just %25)
 			- Comma %252C (not just %2C)
@@ -149,8 +149,8 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		*/}}
 		{{- $escapedTitle = replace $escapedTitle "%" "%2525" -}}{{/* percent sign */}}
 			{{- /*
-				You **MUST** put that one 
-				at the top to avoid 
+				You **MUST** put that one
+				at the top to avoid
 				fouling up the rest!!
 			*/ -}}
 		{{- $escapedTitle = replace $escapedTitle "," "%252C" -}}{{/* comma */}}
@@ -158,10 +158,10 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- /*
 			From here on, the escaping
 			goes more simply.
-			These cover all the other 
+			These cover all the other
 			special characters my own titles
 			ever use. If yours use others,
-			you may want to use that 
+			you may want to use that
 			"URL Encode online" site
 			I mentioned before:
 			https://www.urlencoder.io/
@@ -190,7 +190,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $cloudName := "my-cloud-name" -}}
 			{{- /*
 				Must supply your own Cloudinary
-				cloud name, of course! 
+				cloud name, of course!
 			*/ -}}
 		{{- $titleSize := 72 -}}{{/* pixels, not points */}}
 		{{- $fontChoice := "arial" -}}
@@ -205,28 +205,28 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
 		{{- $myUploadedBkgd := "my-bkgd-3k4dvaxlzd" -}}
 			{{- /*
-				Fill in the Cloudinary-assigned 
+				Fill in the Cloudinary-assigned
 				**public ID** of your chosen,
 				pre-uploaded background image.
-				You can obtain that by going 
-				into your Cloudinary account 
-				and finding the image within 
+				You can obtain that by going
+				into your Cloudinary account
+				and finding the image within
 				your **Media Library**.
 			*/ -}}
-			
+
 		{{- /*
 			With everything now set,
-			we assign to `$socImg` the 
+			we assign to `$socImg` the
 			resulting Cloudinary URL.
 		*/ -}}
 		{{- $socImg := print "https://res.cloudinary.com/" $cloudName "/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/" $myUploadedBkgd -}}
 
 		{{- /*
-			Now, back to more mundane 
+			Now, back to more mundane
 			stuff until we get back
 			to the OG stuff at the end.
 		*/ -}}
-		
+
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
 		<meta name="description" content="{{ .Params.Description }}">

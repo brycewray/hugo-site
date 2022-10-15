@@ -13,7 +13,7 @@ Eons ago, when the web[^web] [was a new thing](http://info.cern.ch/hypertext/WWW
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-{{< imgh src="gte-net_HTML_1997-04-17_crop_1280x715.jpg" alt="HTML code from a 1997 website" >}}
+{{< imgc src="gte-net_HTML_1997-04-17_crop_1280x715.jpg" alt="HTML code from a 1997 website" width=1280 height=715 >}}
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites --- mine among them.
 
