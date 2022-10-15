@@ -20,6 +20,8 @@
 {{- $height := .Get "height" -}}
 {{- $phn := false -}}
 {{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
+{{- $simple := "false" -}}
+{{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
 {{/*
 	separating the Cloudinary-related vars for greater flexibility, especially in case somebody else
@@ -41,6 +43,9 @@
 {{- if $phn -}}
 	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
 {{- end -}}
+{{- if eq $simple "true" -}}
+	{{- $imgClass = "w-full h-auto ctrImg" -}}
+{{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
@@ -50,6 +55,7 @@
 	{{- $CFPstyle = "background: none;" -}}
 {{- end -}}
 
+{{- if eq $simple "false" -}}
 {{- if eq .Site.Params.Host "CFP" -}}
 	<style>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
@@ -57,6 +63,7 @@
 	<div class="relative imgB-{{ $imgBd5 }} bg-center">
 {{- else -}}
 	<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
+{{- end -}}
 {{- end -}}
 	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 	{{- with $respSizes -}}
@@ -66,4 +73,6 @@
 			{{- end -}}
 		{{- end -}}
 	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
+{{- if eq $simple "false" -}}
 </div>
+{{- end -}}

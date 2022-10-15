@@ -65,4 +65,6 @@
 		{{- end -}}" sizes="{{ $dataSzes }}" />
 		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 	</picture>
+{{- if eq $simple "false" -}}
 </div>
+{{- end -}}
