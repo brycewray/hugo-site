@@ -33,9 +33,9 @@
 		{{- $escapedTitle := .Title -}}
 		{{/*
 			Cloudinary requires “double-escaping” (meaning, escaping the `%` within as `%25`) the following characters as follows:
+			- Percent sign %2525 (not just %25)
 			- Comma %252C (not just %2C)
 			- Forward slash %252F (not just %2F)
-			- Percent sign %2525 (not just %25)
 			- Emoji character (not worrying about that one!)
 		*/}}
 		{{- $escapedTitle = replace $escapedTitle "%" "%2525" -}}{{/* percent sign */}}
