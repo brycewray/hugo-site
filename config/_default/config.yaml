@@ -12,7 +12,7 @@ FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
 enableGitInfo: true
 
-timeout: "150s" # for the sake of newly generated images and such
+timeout: "150s" # for the sake of newly generated images and such; default is `30s`
 
 pygmentsUseClasses: true
 pygmentsCodefences: true
@@ -108,7 +108,7 @@ security:
     getenv:
       - ^*
 
-newContentEditor: open -b pro.writer.mac
-# h/t:
-#   https://www.lkhrs.com/blog/2022/10/hugo-ia-writer/
-#   https://discourse.gohugo.io/t/newcontenteditor-trouble-with-spaces/40930
+# newContentEditor: open -b pro.writer.mac
+# # h/t:
+# # - https://www.lkhrs.com/blog/2022/10/hugo-ia-writer/
+# # - https://discourse.gohugo.io/t/newcontenteditor-trouble-with-spaces/40930
