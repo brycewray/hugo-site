@@ -62,6 +62,11 @@ markup:
       # only to allow for inline HTML and/or JS
       # ... other desired settings are defaults
 
+disableKinds:
+  - taxonomy
+  - term
+# keep it this way unless/until I config elsewhere appropriately
+
 privacy:
   twitter:
     simple: true
