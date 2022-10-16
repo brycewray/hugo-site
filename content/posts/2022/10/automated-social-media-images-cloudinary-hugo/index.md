@@ -57,36 +57,45 @@ Fortunately, Lengstorf's [`get-share-image` documentation](https://github.com/jl
 https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1036,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669
 ```
 
+. . . which results in:
+
+![OG image from URL shown above](https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1036,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669)
+
+**Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo.
+{.yellowBox}
+
 I found the Cloudinary documentation considerably less easy to follow than Lengstorf's; but, in the end, I managed to get to what I wanted. One key aspect about which I felt those Cloudinary docs weren't sufficiently explanatory was the need to **double-escape** [certain characters](https://cloudinary.com/documentation/layers#special_characters) in whatever text I wanted to overlay. Before I explain what *double-escaping* turned out to mean, let me first deal with the *escape* part.
 
 Cloudinary's text layers feature works with only very basic text characters --- essentially, the alphabet and numbers --- so it will accept an overlay text string *only* if other characters in the string are *escaped* for use in URLs. For example, every space character must be sent as `%20`. You've probably seen that encoding in URLs, such as when a page links to a PDF which has spaces in its file name.[^URLEncode]
 
 [^URLEncode]: To find escape codes for other characters, I relied on the **very** helpful site, [URL Encode online](https://www.urlencoder.io/).
 
-That much I understood, but the instruction to *double*-escape three specific text characters[^emoji] --- the comma, the forward slash, and the percent sign --- buffaloed me for a while. Finally, the inclusion of the percent sign within this made me realize what was necessary: for just those three characters, I had to escape-out **the percent sign itself WITHIN the escaped character**. The percent sign normally would be only `%25` but sending it as **only** `%25` would confuse the Cloudinary API, which would see it as only `%` and wonder what's coming next. Thus:
+That much I understood, but the instruction to *double*-escape three specific characters[^emoji] --- the percent sign, the comma, and the forward slash --- buffaloed me for a while. Finally, the inclusion of the percent sign within this made me realize what was necessary: for just those three characters, I had to escape-out **the percent sign itself WITHIN the escaped character**. The percent sign normally would be `%25`, but sending it as **only** `%25` would confuse the Cloudinary API, which would treat it as not an encoded percent sign but rather the beginning of *another* escaped character --- causing unexpected results. Thus, I'd have to send:
 
 [^emoji]: It's also necessary to double-escape emoji characters, but I never use those in titles and thus didn't worry about finding their codes.
 
-- The percent sign would be `%2525` (not just `%25`).
-- The comma would be `%252C` (not just `%2C`).
-- The forward slash would be `%252F` (not just `%2F`).
+- The percent sign as `%2525` (not just `%25`).
+- The comma as `%252C` (not just `%2C`).
+- The forward slash as `%252F` (not just `%2F`).
 
-Once I grasped that, I was home free. Well, almost. I also had to dope out Cloudinary's outdated [instructions for uploading additional fonts](https://cloudinary.com/documentation/layers#custom_fonts) to use with the text; but I got it in the end. In essence, you have to go into the Cloudinary *Media Library* settings, add an *upload preset*, and configure it to recognize uploaded fonts --- as `.ttf`, `.otf`, or `.woff2` files --- as okay for use. After that, you just drag-and-drop font files to the Media Library, just as you do image files. It wasn't nearly as complicated as Cloudinary's docs made it sound. (If you prefer to keep it simpler, you can just use what Cloudinary calls "universally available fonts" such as the default, Arial.)
+Once I grasped that, I was home free. Well, almost. I also had to dope out Cloudinary's outdated [instructions for uploading additional fonts](https://cloudinary.com/documentation/layers#custom_fonts) to use with the text; but I got it in the end. In essence, you have to go into the Cloudinary *Media Library* settings, add an *upload preset*, and configure it to recognize uploaded fonts --- as `.ttf`, `.otf`, or `.woff2` files --- as okay for use. After that, you simply drag-and-drop font files to the Media Library, just as you do image files. It wasn't nearly as complicated as Cloudinary's docs made it sound.[^uniFonts]
 
-By the way: remember how I mentioned earlier that I didn't like the lame formatting in Hugo's `Text` filter, which otherwise could accomplish the same thing as this procedure? Well, this is one major reason I prefer the Cloudinary URL method. It not only lets me control the text alignment, it also respects my use of *non-breaking spaces* to make sure none of my titles' line breaks result in one-word last lines, no matter how small a screen one may use.
+[^uniFonts]: If you prefer to keep the operation as uncomplicated as possible, you can just use what the Cloudinary docs call "universally available fonts," such as the default, Arial. Remember that the OG image is only bitmap, not vector --- *i.e.*, it includes no actual fonts or text but, rather, just graphical representations thereof --- so the "universal" nature refers to what **Cloudinary** already has online, not what your visitors have.
+
+By the way: remember how I mentioned earlier that I didn't like the lame formatting in Hugo's `Text` filter, which otherwise could accomplish the same thing as this procedure for locally hosted and processed images? Well, this is one major reason I prefer the Cloudinary URL method. It not only lets me control the text alignment, it also respects my use of *non-breaking spaces* to make sure none of my titles' line breaks result in one-word last lines, no matter how small a screen one may use.
 
 **Note**: For a fuller understanding of some of the parameters, I suggest reading Lengstorf's ["Options" documentation](https://github.com/jlengstorf/get-share-image#options) --- because, in the end, he's simply explaining the Cloudinary URL options. I particularly recommend reading his explanations **before** you try dealing with **Cloudinary's**. The latter's product is amazing, but a lot of its documentation clearly isn't for the faint-hearted (or, in my case, faint-headed).
 {.yellowBox}
 
 ## The code
 
-Here's an annotated version of how I'm handling it in [my Hugo setup's appropriate partial](https://github.com/brycewray/hugo_site/blob/main/layouts/partials/head-meta_cloud-socimg.html), which supplies only the metadata for the `head` element on each page. In addition to the comments, I've added *variables* to make it more applicable to other users; *e.g.*, I don't need to provide a variable for my own Cloudinary *cloud name* (because I "hard-code" it, so to speak), but you'll need to supply yours.
+In this section, I provide an annotated version of the code by which I'm handling this stuff in [my Hugo setup's appropriate partial](https://github.com/brycewray/hugo_site/blob/main/layouts/partials/head-meta_cloud-socimg.html), which supplies only the metadata for the `head` element on each page. In addition to the comments, I've added some *variables* to make it more applicable to other users; *e.g.*, I don't need to provide a variable for my own Cloudinary *cloud name* (because I "hard-code" it in my own URL), but you'll need to supply yours.
 
-At the top, I mention a fallback image (`$fallbackImg`), which I host myself rather than on Cloudinary. This is for use for the home page, for which I'd prefer the OG image to be my long-term site image:
+At the beginning of the code block, I mention a fallback image (`$fallbackImg`), which I host myself rather than on Cloudinary. This is for use for the home page, for which I'd prefer the OG image to be my long-term site image:
 
 {{< imgc src="typewriter-monochrome_2242164_6260x4374.jpg" alt="Monochrome view of hands typing on an old typewriter" width=6260 height=4374 >}}
 
-I could also use it for other pages if I so chose. Anyway: if you have no such concerns about having a fallback image for your home page (or any other), feel free to ignore that part.
+I could also use the fallback image for other pages if I so chose. **Anyway**: if you have no such concerns about having a fallback image for your home page (or any other), feel free to ignore that part.
 
 You'll notice that there's a *lot* of other metadata in this, and I recommend using it all.[^CCSEO] Still, for the specific purposes of this post, we're mainly concerned with building `$socImg` --- which will contain the final Cloudinary image transformation URL --- and supplying it at the end within your `twitter:image` and `og:image` metadata. **That** will then tell those SMPs to build a sharing card with your auto-generated title image whenever you share a link.
 
@@ -95,7 +104,8 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 ```go-html-template
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
-{{- $socImg := $fallbackImg.Permalink -}}{{/* fallback if not Home */}}
+{{- $socImg := $fallbackImg.Permalink -}}
+	{{/* fallback OG image if not we’re not on the home page */}}
 
 {{/* Required meta tags */}}
 		<meta charset="utf-8">
@@ -174,15 +184,23 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $escapedTitle = replace $escapedTitle "+" "%2B" -}}{{/* plus sign */}}
 		{{- $escapedTitle = replace $escapedTitle "—" "%E2%80%94" -}}{{/* em dash */}}
 		{{- $escapedTitle = replace $escapedTitle "–" "%E2%80%93" -}}{{/* en dash */}}
-		{{- $escapedTitle = replace $escapedTitle " " "%C2%A0" -}}{{/* non-breaking space */}}
+		{{- $escapedTitle = replace $escapedTitle " " "%C2%A0" -}}{{/* nbsp */}}
 		{{- $escapedTitle = replace $escapedTitle "•" "%E2%80%A2" -}}{{/* bullet */}}
 		{{- $escapedTitle = replace $escapedTitle "#" "%23" -}}{{/* number sign or hash */}}
 		{{- $escapedTitle = replace $escapedTitle "(" "%28" -}}{{/* opening parenthesis */}}
 		{{- $escapedTitle = replace $escapedTitle ")" "%29" -}}{{/* closing parenthesis */}}
-		{{- $escapedTitle = replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening double quotation mark */}}
-		{{- $escapedTitle = replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing double quotation mark */}}
-		{{- $escapedTitle = replace $escapedTitle "‘" "%E2%80%98" -}}{{/* opening single quotation mark */}}
-		{{- $escapedTitle = replace $escapedTitle "’" "%E2%80%99" -}}{{/* curly apostrophe - closing single quotation mark */}}
+		{{- $escapedTitle = replace $escapedTitle '"' "%22" -}}{{- /*
+			straight-up **double** quote character 
+			--- so the actual character 
+			must, therefore, be wrapped in 
+			**single** quote characters,
+			unlike the others in this list
+		*/ -}}
+		{{- $escapedTitle = replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening curly double quote character */}}
+		{{- $escapedTitle = replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing curly double quote character */}}
+		{{- $escapedTitle = replace $escapedTitle "'" "%27" -}}{{- /* straight-up apostrophe or single quote character */ -}}
+		{{- $escapedTitle = replace $escapedTitle "‘" "%E2%80%98" -}}{{/* opening curly single quote character */}}
+		{{- $escapedTitle = replace $escapedTitle "’" "%E2%80%99" -}}{{/* curly apostrophe - closing curly single quote character */}}
 		{{- $escapedTitle = replace $escapedTitle "‑" "%E2%80%91" -}}{{/* non-breaking hyphen */}}
 		{{- /*
 			Now we supply the other parameters.

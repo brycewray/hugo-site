@@ -55,10 +55,12 @@
 		{{- $escapedTitle = replace $escapedTitle "#" "%23" -}}{{/* number sign or hash */}}
 		{{- $escapedTitle = replace $escapedTitle "(" "%28" -}}{{/* opening parenthesis */}}
 		{{- $escapedTitle = replace $escapedTitle ")" "%29" -}}{{/* closing parenthesis */}}
-		{{- $escapedTitle = replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening double quotation mark */}}
-		{{- $escapedTitle = replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing double quotation mark */}}
-		{{- $escapedTitle = replace $escapedTitle "‘" "%E2%80%98" -}}{{/* opening single quotation mark */}}
-		{{- $escapedTitle = replace $escapedTitle "’" "%E2%80%99" -}}{{/* curly apostrophe - closing single quotation mark */}}
+		{{- $escapedTitle = replace $escapedTitle '"' "%22" -}}{{/* straight-up quote character */}}
+		{{- $escapedTitle = replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening curly double quote character */}}
+		{{- $escapedTitle = replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing curly double quote character */}}
+		{{- $escapedTitle = replace $escapedTitle "'" "%27" -}}{{- /* straight-up apostrophe or single quote character */ -}}
+		{{- $escapedTitle = replace $escapedTitle "‘" "%E2%80%98" -}}{{/* opening curly single quote character */}}
+		{{- $escapedTitle = replace $escapedTitle "’" "%E2%80%99" -}}{{/* curly apostrophe - closing curly single quote character */}}
 		{{- $escapedTitle = replace $escapedTitle "‑" "%E2%80%91" -}}{{/* non-breaking hyphen */}}
 		{{- $titleSize := 72 -}}
 		{{- $fontChoice := "librefranklinsemibold.ttf" -}}
