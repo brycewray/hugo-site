@@ -9,4 +9,4 @@ caches:
 disableKinds:
   - taxonomy
   - term
-# keep it this way unless/until I config elsewhere appropriately
+# ^^ keep it this way unless/until I config elsewhere appropriately
