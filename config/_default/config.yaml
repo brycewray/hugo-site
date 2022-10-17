@@ -68,8 +68,8 @@ markup:
 # # keep it this way unless/until I config elsewhere appropriately
 
 taxonomies:
-  category: categories
-  series: series
+  # category: categories
+  # series: series
   tag: tags
 
 privacy:
