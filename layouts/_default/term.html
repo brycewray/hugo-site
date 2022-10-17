@@ -1,6 +1,6 @@
 {{ define "main" }}
-  <div class="container">
-    <h1>All posts for {{ .Type | singularize }} &ldquo;{{ .Title }}&rdquo;</h1>
+	<h1 class="ctr">All posts for {{ .Type | singularize }} &ldquo;{{ .Title }}&rdquo;</h1>
+	<div class="container-narrower">
     <ul>
       {{ range .Data.Pages }}
         <li>
