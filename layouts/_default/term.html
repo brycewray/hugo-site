@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <div class="container">
+    <h1>All posts for {{ .Type | singularize }} &ldquo;{{ .Title }}&rdquo;</h1>
+    <ul>
+      {{ range .Data.Pages }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end}}
