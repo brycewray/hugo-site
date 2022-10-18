@@ -62,15 +62,10 @@ markup:
       # only to allow for inline HTML and/or JS
       # ... other desired settings are defaults
 
-# disableKinds:
-#   - taxonomy
-#   - term
-# # keep it this way unless/until I config elsewhere appropriately
-
-taxonomies:
-  # category: categories
-  # series: series
-  tag: tags
+disableKinds:
+  - taxonomy
+  - term
+# keep it this way unless/until I config elsewhere appropriately
 
 privacy:
   twitter:
