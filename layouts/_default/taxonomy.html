@@ -2,6 +2,9 @@
 	{{ partial "billboard.html" . }}
   <div class="container-narrower">
     <ul>
+      {{/*  {{ range $index, $var := (sort .Site.Taxonomies.tags.ByCount ) }}
+        <li><a href="tags/{{ .Name | urlize }}">{{ .Name }}</a> ({{ .Count }})</li>
+      {{ end }}  */}}
       {{ range .Data.Pages }}
         <li>
           <a href="{{ .Permalink }}">{{ .Title }}</a>

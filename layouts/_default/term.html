@@ -2,9 +2,10 @@
 	<h1 class="ctr">All posts for {{ .Type | singularize }} &ldquo;{{ .Title }}&rdquo;</h1>
 	<div class="container-narrower">
     <ul>
-      {{ range .Data.Pages }}
+      {{ range .Data.Pages.ByPublishDate }}
+
         <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a href="{{ .Permalink }}">{{ .Title }}</a> • <span class="pokey nobrk">{{ .PublishDate.Format "2006-01-02" }}</strong></span>
         </li>
       {{ end }}
     </ul>
