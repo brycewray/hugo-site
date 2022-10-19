@@ -1,0 +1,12 @@
+{{ define "main" }}
+	{{ partial "billboard.html" . }}
+  <div class="container-narrower">
+    <ul>
+      {{ range .Data.Pages }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
