@@ -2,6 +2,7 @@
 title: "Hugo hits The Hundy"
 description: "As Hugo reaches version 0.100.x, the venerable SSG improves upon its handling of shortcodes."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, markdown]
 date: 2022-06-07T08:59:00-05:00
 #initTextEditor: iA Writer
 ---

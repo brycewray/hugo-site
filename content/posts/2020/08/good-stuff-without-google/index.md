@@ -2,6 +2,7 @@
 title: "Good stuff without Google"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
+tags: [web-development, website-performance, web-typography, google-fonts, variable-fonts, css, infosec, online-privacy]
 date: 2020-08-09T20:05:00-05:00
 ---
 

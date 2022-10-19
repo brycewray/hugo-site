@@ -2,6 +2,7 @@
 title: "O say can you CI/CD?"
 description: "A way around the Netlify free-tier build limit."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, netlify, ci-cd, github-actions, gitlab-ci-cd, bitbucket, cdns, indieweb, webmentions]
 date: 2020-06-28T13:45:00-05:00
 ---
 

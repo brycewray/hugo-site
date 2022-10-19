@@ -2,6 +2,7 @@
 title: "Gems in the rough #8"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, astro, eleventy, hugo, markdown, website-hosting, vercel, render, cloudflare, cloudflare-workers, cloudflare-pages, digitalocean, azure]
 date: 2021-08-04T16:30:00-05:00
 ---
 
@@ -33,7 +34,7 @@ I have a cloned repo of Zach Leatherman's [Speedlify project](https://github.com
 3. **[Cloudflare Workers site](https://workers.cloudflare.com)** via [GitHub Actions](https://github.com/features/actions): 1:35. Previous: 1:20.
 4. **[Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/)** via GitHub Actions: 1:47. Previous: 3:56 (my first build to ASWA).
 5. **[Cloudflare Pages](https://pages.cloudflare.com)**: 2:48. Previous: 2:23.
-6. **[Digital Ocean Apps Platform](https://www.digitalocean.com/products/app-platform/)**: 3:41. Previous: 2:08.
+6. **[DigitalOcean Apps Platform](https://www.digitalocean.com/products/app-platform/)**: 3:41. Previous: 2:08.
 
 I have no idea why DOAP's build time was so slow this time, sparing Cloudflare Pages from being the slowest of the six for once; stuff happens. That said, it's a big black eye for both the last two in that their build times **without** GitHub Actions were considerably slower than the two above them which **did** use GitHub Actions.
 
@@ -42,7 +43,7 @@ As for the actual performance numbers I see in Speedlify, you can check my [test
 - Cloudflare Pages and DOAP tend to be in the top two or three pretty consistently, while the Cloudflare Workers site and ASWA tend to be in the **bottom** two or three almost as consistently.
 - Render and Vercel are somewhat erratic, varying wildly from top three to bottom three. I'm at a loss to know why.
 
-**Update, 2021-08-14**: Digital Ocean has cut the monthly build limit for App Platform static websites from the original 400 minutes to **only 100** minutes.[^CICD] Accordingly, I have taken the test repo off Digital Ocean, so the Speedlify test results mentioned above consist of only five sites as of now.
+**Update, 2021-08-14**: DigitalOcean has cut the monthly build limit for App Platform static websites from the original 400 minutes to **only 100** minutes.[^CICD] Accordingly, I have taken the test repo off DigitalOcean, so the Speedlify test results mentioned above consist of only five sites as of now.
 {.yellowBox}
 
 [^CICD]: Of course, I could use GitHub Actions to get around this, as I explained in last year's "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd/)" --- but, as a friend overseas would say, "I can't be arsed."

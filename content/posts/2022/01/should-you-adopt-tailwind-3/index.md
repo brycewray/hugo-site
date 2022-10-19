@@ -2,6 +2,7 @@
 title: "Should you adopt Tailwind 3?"
 description: "Tailwind is making too much progress to ignore. Is it time to check out the latest version?"
 author: Bryce Wray
+tags: [stackbit, web-development, css, tailwind-css, jit, review]
 date: 2022-01-12T16:16:00-06:00
 #initTextEditor: Ulysses
 ext_canonical: "https://www.stackbit.com/blog/should-you-adopt-tailwind-3/"

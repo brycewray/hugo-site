@@ -2,6 +2,7 @@
 title: "Mixed nuts #10"
 description: "A few things currently on my so-called mind."
 author: Bryce Wray
+tags: [humor-satire, personal, writing-applications, mass-media, website-hosting, netlify, cloudflare-pages, web-development, web-browsers, social-media, youtube]
 date: 2021-11-26T13:02:00-06:00
 ---
 

@@ -2,6 +2,7 @@
 title: "Plain truth"
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
+tags: [history, writing, ms-dos, writing-applications]
 date: 2019-03-02T16:00:00-06:00
 ---
 

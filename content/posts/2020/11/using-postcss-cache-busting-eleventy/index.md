@@ -2,6 +2,7 @@
 title: "Using PostCSS for cache-busting in Eleventy"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, postcss, eleventy, caching, image-processing, bundler-software, webpack, javascript]
 date: 2020-11-10T16:30:00-06:00
 ---
 

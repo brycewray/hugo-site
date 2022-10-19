@@ -2,6 +2,7 @@
 title: "Gems in the rough #16"
 description: "Eleventy 2.x (yes, already), trying giscus, another shameless plug."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, giscus, cloudcannon, personal, writing, social-media, twitter]
 date: 2022-03-11T09:55:00-06:00
 #initTextEditor: Ulysses
 ---

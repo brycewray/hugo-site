@@ -2,6 +2,7 @@
 title: "Automated social media images with Cloudinary and Hugo"
 description: "A little time spent wrangling with an API saves you plenty of time down the line."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, cloudinary, affiliate, image-processing, social-media, twitter, go-golang, cloudcannon, web-typography]
 date: 2022-10-15T10:43:00-05:00
 #draft: true
 initTextEditor: iA Writer # default --- change if needed
@@ -190,9 +191,9 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $escapedTitle = replace $escapedTitle "(" "%28" -}}{{/* opening parenthesis */}}
 		{{- $escapedTitle = replace $escapedTitle ")" "%29" -}}{{/* closing parenthesis */}}
 		{{- $escapedTitle = replace $escapedTitle '"' "%22" -}}{{- /*
-			straight-up **double** quote character 
-			--- so the actual character 
-			must, therefore, be wrapped in 
+			straight-up **double** quote character
+			--- so the actual character
+			must, therefore, be wrapped in
 			**single** quote characters,
 			unlike the others in this list
 		*/ -}}

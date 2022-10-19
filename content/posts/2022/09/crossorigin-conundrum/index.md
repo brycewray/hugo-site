@@ -2,6 +2,7 @@
 title: "The “crossorigin” conundrum"
 description: "After days of getting results that I shouldn’t be getting, I’m sending up an SOS to anyone who can set me straight."
 author: Bryce Wray
+tags: [meta, html, css, website-performance, cloudflare, cloudflare-pages]
 date: 2022-09-17T22:58:00-05:00
 #draft: true
 initTextEditor: iA Writer

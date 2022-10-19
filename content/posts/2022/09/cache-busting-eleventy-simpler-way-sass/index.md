@@ -2,6 +2,7 @@
 title: "Cache-busting in Eleventy: a simpler way with Sass"
 description: "Nearly two years after I thrashed around with code to accomplish this, two relatively new plugins make it a breeze — and with automatic Sass compilation, to boot."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, caching, css, sass-scss, javascript, website-performance, hugo]
 date: 2022-09-19T16:34:00-05:00
 #draft: true
 initTextEditor: iA Writer # default --- change if needed

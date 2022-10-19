@@ -2,6 +2,7 @@
 title: "JIT is a game-changer for Tailwind CSS"
 description: "Why Tailwind’s new capabilities will give it even more  momentum among web developers."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, css, tailwind-css, jit, hugo, next-js]
 date: 2021-03-19T16:25:00-05:00
 ---
 

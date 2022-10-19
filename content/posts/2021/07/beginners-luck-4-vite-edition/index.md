@@ -2,6 +2,7 @@
 title: "Beginner’s luck #4: the Vite edition"
 description: "Now I have an Eleventy/Vite starter, and here’s some of the code that makes it go."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, bundler-software, vite, javascript, css, tailwind-css, nunjucks]
 date: 2021-07-25T16:46:00-05:00
 ---
 

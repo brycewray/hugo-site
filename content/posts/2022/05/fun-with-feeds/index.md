@@ -2,6 +2,7 @@
 title: "Fun with feeds"
 description: "Cut through the clutter by following various feeds."
 author: Bryce Wray
+tags: [rss, json, youtube, social-media, twitter, mastodon]
 date: 2022-05-30T13:10:00-05:00
 #initTextEditor: iA Writer
 ---

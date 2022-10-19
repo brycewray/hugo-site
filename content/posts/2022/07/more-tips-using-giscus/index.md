@@ -2,6 +2,7 @@
 title: "More tips for using giscus"
 description: "How to lessen the load or, at least, make it easier to bear."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, giscus, javascript, next-js, html, go-golang, css, sass-scss, website-performance, web-browsers, mozilla-firefox]
 date: 2022-07-07T22:14:00-05:00
 #initTextEditor: iA Writer
 ---

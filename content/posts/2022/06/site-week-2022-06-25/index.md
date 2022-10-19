@@ -2,6 +2,7 @@
 title: "The site this week: 2022-06-25"
 description: "More about iCloud Mail and custom domains; no more numbers; updated writing apps."
 author: Bryce Wray
+site: [meta]
 date: 2022-06-25T09:39:00-05:00
 ---
 

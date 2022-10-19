@@ -2,6 +2,7 @@
 title: "Scrivener and The Cloud"
 description: "When even Ars Technica’s forum users can’t keep this straight, intervention is necessary."
 author: Bryce Wray
+tags: [writing, writing-applications, scrivener, cloud-sync, macos, ios, ipados]
 date: 2019-08-18T14:15:00-05:00
 ---
 

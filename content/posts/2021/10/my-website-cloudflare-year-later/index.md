@@ -2,6 +2,7 @@
 title: "My website and Cloudflare, a year later"
 description: "It’s perhaps not so much “love/hate” as it is geeky curiosity combined with an old guy’s impatience."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, cloudflare, cloudflare-pages, cloudflare-workers, website-performance, vercel, cdns, caching, content-security-policy, csp]
 date: 2021-10-22T14:00:00-05:00
 ---
 

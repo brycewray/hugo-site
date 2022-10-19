@@ -2,6 +2,7 @@
 title: "Static Mastodon toots in Hugo"
 description: "Just like tweet embeds, toot embeds are best when they’re purely static."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, social-media, twitter, mastodon, go-golang, css, sass-scss, astro, eleventy, markdown, cloudflare, cloudflare-workers]
 date: 2022-06-03T09:47:00-05:00
 #initTextEditor: iA Writer
 ---

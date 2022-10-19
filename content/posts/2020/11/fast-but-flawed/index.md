@@ -2,6 +2,7 @@
 title: "Fast but flawed"
 description: "Two more static website hosts to consider (maybe)."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, website-hosting, github-pages, digitalocean, review, cloudflare, cloudflare-workers, eleventy, hugo]
 date: 2020-11-25T16:30:00-06:00
 ---
 

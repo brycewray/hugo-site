@@ -2,6 +2,7 @@
 title: "Boy, oh, grandboy"
 description: "A few words about the arrival of grandchild #2."
 author: Bryce Wray
+tags: [personal, web-development, static-site-generators, ssgs, Astro]
 date: 2021-08-11T11:30:00-05:00
 ---
 

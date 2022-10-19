@@ -2,6 +2,7 @@
 title: "Webmentions yes, JavaScript no"
 description: "I wondered why a Hugo site needed JavaScript to go IndieWebbin’. I decided it didn’t."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, javascript, indieweb, webmentions, go-golang]
 date: 2022-05-23T16:23:00-05:00
 #initTextEditor: VS Code
 ---

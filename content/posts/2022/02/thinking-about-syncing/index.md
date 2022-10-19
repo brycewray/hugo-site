@@ -2,6 +2,7 @@
 title: "Thinking about syncing"
 description: "Some opinions I’ve formed while doing a semi-deep dive into cloud sync on macOS."
 author: Bryce Wray
+tags: [cloud-sync, icloud, review]
 date: 2022-02-04T10:03:00-06:00
 ---
 

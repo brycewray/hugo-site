@@ -2,6 +2,7 @@
 title: "HugoConf: a reminder"
 description: "The time is nearing for this free event, but you can still get in on the fun."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, cloudcannon]
 date: 2022-06-29T13:32:00-05:00
 #initTextEditor: iA Writer
 ---

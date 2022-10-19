@@ -2,6 +2,7 @@
 title: "Gems in the rough #3"
 description: "The latest installment of unrequested advice about tinkering with websites."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, caching, css, tailwind-css, next-js, website-hosting, cloudflare, cloudflare-pages, cloudflare-workers]
 date: 2021-03-06T15:55:00-06:00
 ---
 

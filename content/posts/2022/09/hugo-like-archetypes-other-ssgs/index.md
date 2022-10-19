@@ -2,6 +2,7 @@
 title: "Hugo-like archetypes in other SSGs"
 description: "A short shell script extends to the competition an obscure but cool feature in Hugo."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, astro, eleventy, writing, markdown, next-js]
 date: 2022-09-06T13:30:00-05:00
 #draft: true
 #initTextEditor: iA Writer

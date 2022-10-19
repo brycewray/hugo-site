@@ -2,6 +2,7 @@
 title: "The Holy Mail"
 description: "The way I sort-of cured the email client dance."
 author: Bryce Wray
+tags: [email, macos, ios, apple-mail, fastmail]
 date: 2019-05-10T07:20:00-05:00
 ---
 

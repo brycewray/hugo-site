@@ -2,6 +2,7 @@
 title: "Gems in the rough #6"
 description: "Hiding “future” posts in Eleventy, life with Vercel (nearly) a year later, and other items that may interest static site generator users."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, hugo, website-hosting, vercel, render, netlify, firebase, cloudflare, cloudflare-workers, cloudflare-pages, cdns, web-typography]
 date: 2021-06-21T16:30:00-05:00
 ---
 

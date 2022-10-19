@@ -2,6 +2,7 @@
 title: "Hashing out a cache-busting fix for Eleventy"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, css, postcss, eleventy, caching, image-processing, javascript, website-hosting, netlify, vercel, render, firebase, cloudflare, cloudflare-workers, sass-scss, tailwind-css]
 date: 2020-12-15T17:00:00-06:00
 ---
 

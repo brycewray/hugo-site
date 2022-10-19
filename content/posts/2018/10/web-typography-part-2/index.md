@@ -2,6 +2,7 @@
 title: "A stacked deck"
 description: "Part 2 of a two-part series on web typography."
 author: Bryce Wray
+tags: [web-development, web-typography, google-fonts, history, css]
 date: 2018-10-25T07:40:00-05:00
 ---
 

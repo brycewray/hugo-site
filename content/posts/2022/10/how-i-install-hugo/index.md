@@ -2,6 +2,7 @@
 title: "How I install Hugo"
 description: "Here’s how to bypass package managers and “go direct” when it’s time to install or upgrade Hugo."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, github, macos, linux, windows]
 date: 2022-10-12T12:15:00-05:00
 #draft: true
 initTextEditor: iA Writer
@@ -103,7 +104,7 @@ Finally, to confirm that the Hugo binary is in the `PATH`, enter the following i
 hugo version
 ```
 
-The result **should** look something like this: 
+The result **should** look something like this:
 
 ```bash
 hugo v0.104.3-58b824581360148f2d91f5cc83f69bd22c1aa331+extended linux/amd64 BuildDate=2022-10-04T14:25:23Z VendorInfo=gohugoio

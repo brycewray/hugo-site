@@ -2,6 +2,7 @@
 title: "Mixed nuts #9"
 description: "Takes that are neither hot nor cool — in multiple ways."
 author: Bryce Wray
+tags: [personal, pandemic, covid-19, ios, sports, mass-media, email, humor-satire]
 date: 2021-08-29T08:52:00-05:00
 ---
 

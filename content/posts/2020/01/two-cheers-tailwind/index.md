@@ -2,6 +2,7 @@
 title: "Two cheers for Tailwind"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, css, tailwind-css, sass-scss, postcss, social-media, twitter, eleventy, bundler-software, webpack]
 date: 2020-01-12T11:00:00-06:00
 ---
 

@@ -2,6 +2,7 @@
 title: "Beta-testing Cloudflare Pages"
 description: "I take a look at a new, possibly game-changing website-hosting platform and find some early glitchiness, but also plenty of potential."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, website-hosting, jamstack, netlify, vercel, render, digitalocean, cloudflare, cloudflare-pages, cloudflare-workers, website-performance, review, cdns, eleventy, hugo]
 date: 2021-01-27T12:30:00-06:00
 ---
 

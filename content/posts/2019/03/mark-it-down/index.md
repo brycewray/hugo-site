@@ -2,6 +2,7 @@
 title: "Mark it down"
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
 author: Bryce Wray
+tags: [markdown, writing, writing-applications, ulysses, ia-writer, scrivener, web-development, html]
 date: 2019-03-08T23:08:00-05:00
 ---
 

@@ -2,6 +2,7 @@
 title: "A move on Mastodon"
 description: "Until yesterday, my presence in the Fediverse was on mastodon.technology. Here’s why that ceased to be."
 author: Bryce Wray
+tags: [meta, personal, social-media, mastodon, web-development]
 date: 2022-10-07T09:59:00-05:00
 #draft: true
 initTextEditor: iA Writer

@@ -2,6 +2,7 @@
 title: "Some curmudgeonish thoughts"
 description: "“Didja ever notice...?” Yes, I did. And here’s the result."
 author: Bryce Wray
+tags: [humor-satire, web-typography, social-media, youtube]
 date: 2018-11-01T11:00:00-05:00
 ---
 

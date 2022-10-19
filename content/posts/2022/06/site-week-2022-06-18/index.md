@@ -2,6 +2,7 @@
 title: "The site this week: 2022-06-18"
 description: "Styling in Hugo; iCloud Mail and custom domains; R.I.P, IE."
 author: Bryce Wray
+tags: [meta]
 date: 2022-06-18T10:15:00-05:00
 #initTextEditor: iA Writer
 ---

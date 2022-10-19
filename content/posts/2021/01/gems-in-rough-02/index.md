@@ -2,6 +2,7 @@
 title: "Gems in the rough #2"
 description: "More geeky hints for SSG fans."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, caching, eleventy, markdown, web-typography, hugo, image-processing]
 date: 2021-01-16T13:45:00-06:00
 ---
 

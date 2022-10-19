@@ -2,6 +2,7 @@
 title: "Murdered darlings"
 description: "R.I.P., WIP: a farewell to this site’s original purpose."
 author: Bryce Wray
+tags: [meta, personal, writing, history, writing-applications, ulysses]
 date: 2020-04-22T19:30:00-05:00
 ---
 

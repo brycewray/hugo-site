@@ -2,6 +2,7 @@
 title: "“Previous” and “next” in Eleventy"
 description: "A brief description of code that easily enables this oft-requested feature."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, github, javascript]
 date: 2019-12-23T15:16:00-06:00
 ---
 

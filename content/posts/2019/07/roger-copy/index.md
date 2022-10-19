@@ -2,6 +2,7 @@
 title: "Roger, Copy"
 description: "How I now keep my site files “synced” across my devices — via Git and Working Copy."
 author: Bryce Wray
+tags: [web-development, git, version-control, ios, ipados, cloud-sync]
 date: 2019-07-27T06:38:00-05:00
 ---
 

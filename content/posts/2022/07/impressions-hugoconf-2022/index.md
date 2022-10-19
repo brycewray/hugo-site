@@ -2,6 +2,7 @@
 title: "Impressions from HugoConf 2022"
 description: "Takeaways from two great days that focused on the Hugo static site generator."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, hugo, cloudcannon, site-search, pagefind, css, tailwind-css, sass-scss, social-media, youtube]
 date: 2022-07-11T08:43:00-05:00
 #initTextEditor: iA Writer
 ---

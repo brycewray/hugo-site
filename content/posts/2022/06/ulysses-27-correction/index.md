@@ -2,6 +2,7 @@
 title: "Ulysses 27: a correction"
 description: "Haste makes waste, and it also makes for a bad summary, so here are some corrections to what I wrote yesterday about Ulysses 27."
 author: Bryce Wray
+tags: [meta, writing-applications, ulysses, review, macos, ios, ipados, ia-writer, apple]
 date: 2022-06-22T05:52:00-05:00
 #initTextEditor: iA Writer
 ---

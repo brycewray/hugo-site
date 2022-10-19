@@ -2,6 +2,7 @@
 title: "Beginner’s luck"
 description: "Helping more people get going with Eleventy and Hugo."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, github, eleventy, hugo, gatsby, postcss, sass-scss, tailwind-css, javascript, indieweb, webmentions]
 date: 2020-07-27T16:30:00-05:00
 ---
 

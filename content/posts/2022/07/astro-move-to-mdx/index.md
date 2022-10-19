@@ -2,6 +2,7 @@
 title: "Astro and the move to MDX"
 description: "After running into performance problems with basic Markdown, the Astro dev team opts for a more component-oriented flavor — and reaps benefits."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, astro, markdown, mdx, sports, history, browser-software, vite]
 date: 2022-07-30T21:42:00-05:00
 #initTextEditor: iA Writer
 ---

@@ -2,6 +2,7 @@
 title: "Keep it canonical for SEO"
 description: "Use canonical URLs to keep search engines straight on which content they should index."
 author: Bryce Wray
+tags: [web-development, jamstack, website-hosting, netlify, digitalocean, vercel, cloudflare, cloudflare-pages, seo, html, astro, eleventy, hugo]
 date: 2022-09-07T16:08:00-05:00
 #draft: true
 #initTextEditor: iA Writer
@@ -9,7 +10,7 @@ date: 2022-09-07T16:08:00-05:00
 
 When you deploy your static website to a typical Jamstack-savvy hosting vendor, your host generates the site within a subdomain for one of that host's top-level domains (which may be something ending in `.app` or `.dev`). This continues to exist as a "live" website even if you've assigned a custom domain to your site, as I have assigned the *brycewray.com* domain to this site.
 
-With some hosts --- notably, [Netlify](https://netlify.com) and the [Digital Ocean App Platform](https://www.digitalocean.com/products/app-platform) --- the subdomain may be some randomly generated nonsense, resulting in a URL of, say, *wondrous-weasel-d38a82.netlify.app* (although you usually can edit this subdomain to be something less, um, weird). Other hosts may use the name of your originating Git project, as do [Cloudflare Pages](https://pages.cloudflare.com) and [Vercel](https://vercel.com).
+With some hosts --- notably, [Netlify](https://netlify.com) and the [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform) --- the subdomain may be some randomly generated nonsense, resulting in a URL of, say, *wondrous-weasel-d38a82.netlify.app* (although you usually can edit this subdomain to be something less, um, weird). Other hosts may use the name of your originating Git project, as do [Cloudflare Pages](https://pages.cloudflare.com) and [Vercel](https://vercel.com).
 
 For example, let's say you have a site on Cloudflare Pages and have assigned the domain *example.com* to the site. If the project's online repo is called *our-website-repo*, it would exist on the web as not only *example.com* but also something like *our-website-repo-8dx.pages.dev*. This presents you with a *potential* problem for your site's search engine optimization (SEO): you must ensure that, when Google and other search engines find your content, they'll "know" which one --- your "real" site at *example.com* or the *.pages.dev* version --- to feature in their respective indices. Otherwise, the SEO "search juice" might go to that other version and **not** to the desired location at *example.com*.
 

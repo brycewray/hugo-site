@@ -2,6 +2,7 @@
 title: "Mixed nuts • November, 2019"
 description: "Observations worth exactly what you’re paying for them."
 author: Bryce Wray
+tags: [personal, humor-satire, meta, sports, wordpress, writing, web-development, apple]
 date: 2019-11-24T10:15:00-06:00
 ---
 

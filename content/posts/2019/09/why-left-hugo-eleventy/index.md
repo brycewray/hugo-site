@@ -2,6 +2,7 @@
 title: "Why I left Hugo for Eleventy"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, hugo, gatsby, social-media, twitter, website-performance, markdown, web-typography, javascript]
 date: 2019-09-08T10:00:00-05:00
 oldComments: |
     <div class="container-oldComments">

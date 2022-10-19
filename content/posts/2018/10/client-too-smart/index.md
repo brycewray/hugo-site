@@ -2,6 +2,7 @@
 title: "The client is too smart for you"
 description: "Pretty emails don’t work so well in an Outlook-centric business world."
 author: Bryce Wray
+tags: [email, marketing]
 date: 2018-10-11T15:30:00-05:00
 ---
 

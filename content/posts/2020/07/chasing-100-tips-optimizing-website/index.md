@@ -2,6 +2,7 @@
 title: "Chasing 100: tips for optimizing your website"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, website-performance, web-typography, infosec, online-privacy, google-fonts, accessibility, responsive-web-design, seo]
 date: 2020-07-16T20:30:00-05:00
 ---
 

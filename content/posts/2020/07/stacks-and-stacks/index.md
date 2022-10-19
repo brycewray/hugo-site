@@ -2,6 +2,7 @@
 title: "Stacks and stacks"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, eleventy, hugo, gatsby, ssgs, website-performance, web-typography]
 date: 2020-07-05T10:40:00-05:00
 ---
 

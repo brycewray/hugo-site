@@ -1,6 +1,8 @@
 ---
 title: "Thinking dark thoughts"
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
+author: Bryce Wray
+tags: [ios, ipados, android, css, web-development, web-browsers, accessibility, mozilla-firefox]
 date: 2019-09-29T10:08:00-05:00
 ---
 

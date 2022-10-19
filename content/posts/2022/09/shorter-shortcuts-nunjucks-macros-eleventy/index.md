@@ -2,6 +2,7 @@
 title: "Shorter shortcuts through Nunjucks macros in Eleventy"
 description: "While seeking a way to cut a three-line call down to one line, I found some great advice on using a sometimes-overlooked aspect of a popular templating language."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, nunjucks, javascript, social-media, youtube, hugo, astro, go-golang]
 date: 2022-09-24T06:58:00-05:00
 #draft: true
 initTextEditor: iA Writer

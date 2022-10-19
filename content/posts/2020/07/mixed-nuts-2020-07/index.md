@@ -2,6 +2,7 @@
 title: "Mixed nuts • July, 2020"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."
 author: Bryce Wray
+tags: [personal, analytics, mass-media, fathom-analytics, affiliate, eleventy, web-development, static-site-generators, ssgs, website-performance, google-fonts, covid-19, pandemic, wwdc, apple, apple-silicon, web-browsers, safari]
 date: 2020-07-09T16:40:00-05:00
 ---
 

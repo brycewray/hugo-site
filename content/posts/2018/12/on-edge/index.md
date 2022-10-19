@@ -2,6 +2,7 @@
 title: "On Edge"
 description: "Microsoft’s decision about Edge is important on many levels."
 author: Bryce Wray
+tags: [web-browsers, microsoft-edge, google-chrome, web-development]
 date: 2018-12-07T13:35:00-06:00
 ---
 

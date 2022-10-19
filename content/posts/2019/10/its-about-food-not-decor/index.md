@@ -2,6 +2,7 @@
 title: "It’s about the food, not the decor"
 description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, writing]
 date: 2019-10-02T18:15:00-05:00
 ---
 

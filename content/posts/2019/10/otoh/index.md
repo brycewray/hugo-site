@@ -2,6 +2,7 @@
 title: "OTOH"
 description: "One shouldn’t make decisions out of spite. I’m living proof."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, gatsby, ulysses]
 date: 2019-10-11T19:00:00-05:00
 ---
 

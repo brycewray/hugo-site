@@ -2,6 +2,7 @@
 title: "The site this week: 2022-06-04"
 description: "Saying “Goodbye, IndieWeb” once again, the joy of feeds, and getting Hugo to show Git info and Mastodon content."
 author: Bryce Wray
+tags: [meta]
 date: 2022-06-04T12:01:00-05:00
 #initTextEditor: VS Code
 ---

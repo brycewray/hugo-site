@@ -2,6 +2,7 @@
 title: "Accepting reality about Astro"
 description: "It comes down to understanding that not every SSG, no matter how otherwise attractive, is a good fit for this site."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, astro, mdx, website-performance, personal, browser-software, vite]
 date: 2022-10-05T11:27:00-05:00
 #draft: true
 initTextEditor: iA Writer

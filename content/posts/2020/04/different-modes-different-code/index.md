@@ -2,6 +2,7 @@
 title: "Different modes for different code"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
+tag: [web-development, static-site-generators, ssgs, eleventy, gatsby, hugo, github, ia-writer, markdown, covid-19, pandemic]
 date: 2020-04-05T13:45:00-05:00
 ---
 

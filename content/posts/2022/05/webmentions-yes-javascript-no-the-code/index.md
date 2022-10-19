@@ -2,6 +2,7 @@
 title: "Webmentions yes, JavaScript no: the code"
 description: "A walkthrough of this site’s all-Hugo, no-JS implementation of webmentions."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, javascript, indieweb, webmentions, go-golang]
 date: 2022-05-25T06:18:00-05:00
 #initTextEditor: iA Writer
 ---

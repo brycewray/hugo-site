@@ -2,6 +2,7 @@
 title: "Old dog learns old trick"
 description: "A major “Do’h” moment in the never-ending battle against Internet Explorer."
 author: Bryce Wray
+tags: [web-development, css, internet-explorer, wordpress, writing-applications, ia-writer, ulysses, social-media, twitter]
 date: 2019-02-16T10:50:00-06:00
 ---
 

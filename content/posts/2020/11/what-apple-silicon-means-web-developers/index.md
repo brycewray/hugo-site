@@ -2,6 +2,7 @@
 title: "What Apple Silicon means for web developers"
 description: "As Apple takes the Mac to the final frontier, here’s what web devs should consider."
 author: Bryce Wray
+tags: [web-development, web-browsers, google-chrome, safari, apple, apple-silicon, windows, macos, ios, android]
 date: 2020-11-20T16:25:00-06:00
 ---
 

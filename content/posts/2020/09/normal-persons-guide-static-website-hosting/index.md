@@ -2,6 +2,7 @@
 title: "A normal person’s guide to static website hosting"
 description: "After suggesting how a non-geek could most easily have a website, I now offer thoughts on the site’s hosting."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, website-hosting, netlify, vercel, render, version-control, git, website-performance, infosec, cdns]
 date: 2020-09-26T13:55:00-05:00
 ---
 

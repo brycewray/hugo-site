@@ -2,6 +2,7 @@
 title: "The full .11ty.js monty"
 description: "Going all-JavaScript with my Eleventy site."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, eleventy, gatsby, hugo, javascript, nunjucks, css, indieweb, webmentions, rss]
 date: 2020-04-15T17:30:00-05:00
 ---
 

@@ -2,6 +2,7 @@
 title: "Now I’m a Gatsby geezer"
 description: "Project Purple isn’t over, but today is worth celebrating."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, gatsby, website-performance, javascript, mdx]
 date: 2019-10-27T10:00:00-05:00
 ---
 

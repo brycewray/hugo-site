@@ -2,6 +2,7 @@
 title: "Grid-locked no more"
 description: "While I still think using frameworks is OK, I decided the best way to learn CSS Grid was to use it."
 author: Bryce Wray
+tags: [web-development, css, website-performance, web-browsers, internet-explorer]
 date: 2018-11-28T10:00:00-05:00
 ---
 

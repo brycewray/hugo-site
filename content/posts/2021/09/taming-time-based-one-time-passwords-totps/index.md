@@ -2,6 +2,7 @@
 title: "Taming time-based one-time passwords (TOTPs)"
 description: "A few tips on managing multi-factor authentication — specifically, TOTPs."
 author: Bryce Wray
+tags: [infosec, password-management, ios, ipados, android, social-media, youtube]
 date: 2021-09-20T10:30:00-05:00
 ---
 

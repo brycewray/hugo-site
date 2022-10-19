@@ -2,6 +2,7 @@
 title: "Making Tailwind JIT work with Hugo, the Version 3 edition"
 description: "A Hugo fix for Tailwind CSS v.3 — with a surprise bonus."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, css, postcss, tailwind-css, jit, sass-scss, github, node-js, go-golang]
 date: 2022-03-06T16:16:00-06:00
 ---
 

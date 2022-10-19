@@ -2,6 +2,7 @@
 title: "Help your website get discovered"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, eleventy, hugo, seo, rss, json, website-performance]
 date: 2021-05-14T16:30:00-05:00
 ---
 

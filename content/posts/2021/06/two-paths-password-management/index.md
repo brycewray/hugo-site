@@ -2,6 +2,7 @@
 title: "Two paths to password management"
 description: "Ways to practice superior cybersecurity."
 author: Bryce Wray
+tags: [infosec, password-management, cloud-sync]
 date: 2021-06-15T16:30:00-05:00
 ---
 

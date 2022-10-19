@@ -2,6 +2,7 @@
 title: "Google Fonts and privacy"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
+tags: [web-development, web-typography, infosec, online-privacy, google-fonts, analytics, google-analytics, github]
 date: 2020-08-08T14:35:00-05:00
 ---
 

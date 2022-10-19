@@ -2,6 +2,7 @@
 title: "Using Dart Sass with Hugo: the sequel"
 description: "Hugo’s chief developer comes up with a way to get Embedded Dart Sass on the host, after all."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, hugo, css, sass-scss, website-hosting, netlify, vercel, cloudflare, cloudflare-pages, node-js]
 date: 2022-03-09T17:41:00-06:00
 ---
 

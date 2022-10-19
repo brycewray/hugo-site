@@ -2,6 +2,7 @@
 title: "Transformed"
 description: "The move to Cloudinary."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, image-processing, cloudinary, affiliate, eleventy, website-hosting, netlify, vercel, javascript]
 date: 2020-07-31T16:15:00-05:00
 ---
 

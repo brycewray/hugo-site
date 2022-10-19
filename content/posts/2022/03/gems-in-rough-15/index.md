@@ -2,6 +2,7 @@
 title: "Gems in the rough #15"
 description: "CFP Fast Builds update, Hugo/goldmark typography, another Tailwind-on-Hugo solution."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, website-hosting, cloudflare, cloudflare-pages, hugo, website-typography, markdown, css, tailwind-css]
 date: 2022-03-03T15:05:00-06:00
 #initTextEditor: iA Writer
 ---

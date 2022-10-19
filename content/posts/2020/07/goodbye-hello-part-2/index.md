@@ -2,6 +2,7 @@
 title: "Goodbye and hello • Part 2"
 description: "Why I decided to come back to Netlify."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, website-hosting, netlify, vercel, firebase, render, website-performance, eleventy, image-processing, cloudinary, history, dns]
 date: 2020-07-31T17:35:00-05:00
 ---
 

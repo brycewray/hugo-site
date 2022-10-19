@@ -2,6 +2,7 @@
 title: "Mixed nuts • September, 2020"
 description: "Once more into the breach, dear friends, with assorted somethings-or-others."
 author: Bryce Wray
+tags: [meta, web-development, static-site-generators, ssgs, social-media, twitter, image-processing, cloudinary, affiliate, website-hosting, netlify, vercel, email, web-browsers, google-chrome, mozilla-firefox, safari, internet-explorer, analytics, fathom-analytics, writing-applications, ulysses, ia-writer, next-js, javascript]
 date: 2020-09-03T07:05:00-05:00
 ---
 

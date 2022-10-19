@@ -2,6 +2,7 @@
 title: "Major updates to my favorite writing apps"
 description: "iA Writer 6 and Ulysses 27 arrive, bearing features their adherents had long requested."
 author: Bryce Wray
+tags: [writing, writing-applications, ia-writer, ulysses, markdown]
 date: 2022-06-21T08:14:00-05:00
 #initTextEditor: Ulysses
 ---

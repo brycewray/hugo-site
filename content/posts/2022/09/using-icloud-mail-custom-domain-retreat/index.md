@@ -2,6 +2,7 @@
 title: "Using iCloud Mail with a custom domain: the retreat"
 description: "Why I’ve decided, perhaps finally this time, to eschew Apple’s offering."
 author: Bryce Wray
+tags: [personal, email, apple, icloud, icloud-plus, icloud-mail, fastmail, apple-mail, mailmate, imap, jmap, dns]
 date: 2022-09-27T10:54:00-05:00
 #draft: true
 initTextEditor: iA Writer

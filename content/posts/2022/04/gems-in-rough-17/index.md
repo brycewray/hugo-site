@@ -2,6 +2,7 @@
 title: "Gems in the rough #17"
 description: "A GitHub Discussions oddity, Netlify Edge Functions, feed readers with built-in browsers."
 author: Bryce Wray
+tags: [web-development, static-site-generators, ssgs, giscus, website-hosting, netlify, cdns, rss, json, github]
 date: 2022-04-28T15:26:00-05:00
 #initTextEditor: iA Writer
 ---
