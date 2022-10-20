@@ -2,7 +2,7 @@
 title: "Go big or Go home? The sequel"
 description: "After a “D’oh!” moment, I refine a bespoke Hugo shortcode."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, eleventy, image-processing, javascript, go-golang, cloudinary]
+tags: [web-development, static-site-generators, ssg, hugo, eleventy, image-processing, javascript, go-golang, cloudinary]
 date: 2021-11-23T12:55:00-06:00
 ---
 

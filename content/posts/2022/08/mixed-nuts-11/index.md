@@ -2,7 +2,7 @@
 title: "Mixed nuts #11"
 description: "The first entry in my catch-all series since the site went into CTCAJW Mode, this offers the same — um — quality as its predecessors."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssgs, astro, mdx, markdown, hugo, personal, version-control, git, humor, mass-media]
+tags: [meta, web-development, static-site-generators, ssg, astro, mdx, markdown, hugo, personal, version-control, git, humor-satire, mass-media]
 date: 2022-08-12T05:43:00-05:00
 #initTextEditor: **iA Writer**
 ---

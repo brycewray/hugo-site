@@ -2,7 +2,7 @@
 title: "Gems in the rough #14"
 description: "Full-time Eleventy, variables in Hugo, learning from a nice tweet, using web fonts with internal CSS."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, eleventy, hugo, social-media, twitter, css, web-typography, variable-fonts]
+tags: [web-development, static-site-generators, ssg, eleventy, hugo, social-media, twitter, css, web-typography, variable-fonts]
 date: 2022-02-18T12:36:00-06:00
 #initTextEditor: Ulysses
 ---

@@ -2,7 +2,7 @@
 title: "Is Astro ready for your blog?"
 description: "Some points to consider if you’re thinking about switching your site to the Astro platform."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, astro, eleventy, hugo, next-js, gatsby, rss, javascript, go-golang, css, sass-scss, markdown, mdx, image-processing, review]
+tags: [web-development, static-site-generators, ssg, astro, eleventy, hugo, next-js, gatsby, rss, javascript, go-golang, css, sass-scss, markdown, mdx, image-processing, review]
 date: 2022-04-24T10:50:00-05:00
 #initTextEditor: iA Writer
 ---

@@ -2,7 +2,7 @@
 title: "Ignition sequence start"
 description: "GitHub Actions to deploy to Firebase Hosting."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssgs, website-hosting, firebase, ci-cd, github-actions, hugo, eleventy, cdns, css, postcss, tailwind-css]
+tags: [meta, web-development, static-site-generators, ssg, website-hosting, firebase, ci-cd, github-actions, hugo, eleventy, cdn, css, postcss, tailwind-css]
 date: 2020-09-27T08:05:00-05:00
 ---
 

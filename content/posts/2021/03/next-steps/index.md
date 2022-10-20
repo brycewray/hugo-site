@@ -2,7 +2,7 @@
 title: "Next steps?"
 description: "Some things I’ve learned while tinkering with Next.js."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, next-js, css, sass-scss, postcss]
+tags: [web-development, static-site-generators, ssg, next-js, css, sass-scss, postcss]
 date: 2021-03-11T16:30:00-06:00
 ---
 

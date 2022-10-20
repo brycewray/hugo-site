@@ -2,7 +2,7 @@
 title: "Goodbye and hello • Part 3"
 description: "Performance is a heckuva drug: earlier considerations aside, I move the site to Vercel for a second time."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssgs, website-hosting, netlify, vercel, website-performance]
+tags: [meta, web-development, static-site-generators, ssg, website-hosting, netlify, vercel, website-performance]
 date: 2020-08-21T17:05:00-05:00
 ---
 

@@ -2,7 +2,7 @@
 title: "A truly fetching utility for Eleventy"
 description: "While trying to make things work equally well in multiple repos, I discover the value of an Eleventy plugin I’d previously ignored."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, eleventy, node-js, javascript, website-performance]
+tags: [web-development, static-site-generators, ssg, eleventy, node-js, javascript, website-performance]
 date: 2022-09-01T13:20:00-05:00
 #draft: true
 #initTextEditor: iA Writer

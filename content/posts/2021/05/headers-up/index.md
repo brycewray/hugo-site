@@ -2,7 +2,7 @@
 title: "Headers up"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, cloudflare, cloudflare-workers, cloudflare-pages, caching, google, website-hosting, vercel, render]
+tags: [web-development, static-site-generators, ssg, cloudflare, cloudflare-workers, cloudflare-pages, caching, google, website-hosting, vercel, render]
 date: 2021-05-01T11:43:00-05:00
 ---
 

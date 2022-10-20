@@ -2,7 +2,7 @@
 title: "Cache-busting in Eleventy, take two"
 description: "This time, a solution that really (?) works."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, css, postcss, eleventy, caching, image-processing, javascript, website-hosting, netlify, vercel, render, cloudflare, firebase, cloudflare-workers, sass-scss, tailwind-css]
+tags: [web-development, static-site-generators, ssg, css, postcss, eleventy, caching, image-processing, javascript, website-hosting, netlify, vercel, render, cloudflare, firebase, cloudflare-workers, sass-scss, tailwind-css]
 date: 2020-12-11T16:55:00-06:00
 ---
 

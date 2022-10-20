@@ -3,7 +3,7 @@ title: "Using Dart Sass with Hugo"
 description: "Until hosts allow Embedded Dart Sass in their build processes, here’s a not-too-hacky workaround for Sass-on-Hugo fans."
 # DO NOT use non-breaking hyphens; not all fonts have them
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, css, sass-scss, tailwind-css, node-js, go-golang]
+tags: [web-development, static-site-generators, ssg, hugo, css, sass-scss, tailwind-css, node-js, go-golang]
 date: 2022-03-08T11:09:00-06:00
 ---
 

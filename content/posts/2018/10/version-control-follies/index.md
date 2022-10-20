@@ -2,7 +2,7 @@
 title: "The version-control follies"
 description: "Why you should go GUI with version control."
 author: Bryce Wray
-tags: [version-control, git, history, bitbucket, github, gitlab, static-site-generators, ssgs, ms-dos]
+tags: [version-control, git, history, bitbucket, github, gitlab, static-site-generators, ssg, ms-dos]
 date: 2018-10-06T08:30:00-05:00
 ---
 

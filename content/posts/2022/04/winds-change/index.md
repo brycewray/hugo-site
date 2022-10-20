@@ -2,7 +2,7 @@
 title: "The winds of change"
 description: "Switching to Astro, or tales of a migratory nerd."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, astro, eleventy, hugo, social-media, twitter, javascript, go-golang, rss, json]
+tags: [web-development, static-site-generators, ssg, astro, eleventy, hugo, social-media, twitter, javascript, go-golang, rss, json]
 date: 2022-04-26T09:35:00-05:00
 #initTextEditor: Ulysses
 ---

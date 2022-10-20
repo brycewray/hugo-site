@@ -2,7 +2,7 @@
 title: "Gems in the rough #10"
 description: "A (perhaps) surprising requirement for native lazy-loading, the Slinkity project, problems with Cloudflare Pages."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, javascript, website-performance, eleventy, website-hosting, cloudflare-pages, vercel, node-js]
+tags: [web-development, static-site-generators, ssg, javascript, website-performance, eleventy, website-hosting, cloudflare-pages, vercel, node-js]
 date: 2021-10-01T09:23:00-05:00
 ---
 

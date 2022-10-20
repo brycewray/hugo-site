@@ -2,7 +2,7 @@
 title: "Goodbye and hello"
 description: "Moving from Netlify to Vercel: how this site gained a new home."
 author: Bryce Wray
-tags: [meta, personal, web-development, static-site-generators, ssgs, website-hosting, netlify, vercel, firebase, render, website-performance, apple, wwdc]
+tags: [meta, personal, web-development, static-site-generators, ssg, website-hosting, netlify, vercel, firebase, render, website-performance, apple, wwdc]
 date: 2020-07-02T17:05:00-05:00
 ---
 

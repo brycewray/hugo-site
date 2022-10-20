@@ -2,7 +2,7 @@
 title: "Mixed nuts • February, 2021"
 description: "No brain cells were even used, much less harmed, in the production of this post."
 author: Bryce Wray
-tags: [meta, personal, web-development, static-site-generators, ssgs, css, tailwind-css, sass-scss, web-typography, variable-fonts, pandemic, covid-19, website-hosting, cloudflare-pages, cloudflare, website-performance, macos, gaming]
+tags: [meta, personal, web-development, static-site-generators, ssg, css, tailwind-css, sass-scss, web-typography, variable-fonts, pandemic, covid-19, website-hosting, cloudflare-pages, cloudflare, website-performance, macos, gaming]
 date: 2021-02-13T13:15:00-06:00
 ---
 

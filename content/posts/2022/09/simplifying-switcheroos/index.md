@@ -2,7 +2,7 @@
 title: "Simplifying switcheroos"
 description: "Although I’m unsure of its value beyond my own brain, here’s a tale of how I made it easier to continue as a migratory nerd."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssgs, astro, hugo, eleventy, website-hosting, cloudflare, cloudflare-pages, netlify, vercel, version-control, git, rss, json]
+tags: [meta, web-development, static-site-generators, ssg, astro, hugo, eleventy, website-hosting, cloudflare, cloudflare-pages, netlify, vercel, version-control, git, rss, json]
 date: 2022-09-23T09:09:00-05:00
 #draft: true
 initTextEditor: iA Writer # default --- change if needed

@@ -2,7 +2,7 @@
 title: "Why I’m staying with Hugo"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, gatsby, eleventy, markdown, web-typography, social-media, twitter, version-control, git, website-hosting, netlify, mdx, javascript]
+tags: [web-development, static-site-generators, ssg, hugo, gatsby, eleventy, markdown, web-typography, social-media, twitter, version-control, git, website-hosting, netlify, mdx, javascript]
 date: 2019-07-14T20:45:00-05:00
 oldComments: |
     <div class="container-oldComments">

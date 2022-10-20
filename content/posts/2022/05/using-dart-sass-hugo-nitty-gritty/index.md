@@ -2,7 +2,7 @@
 title: "Using Dart Sass with Hugo: the nitty-gritty"
 description: "We go under the hood with the installation process for the Embedded Dart Sass binary."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, css, sass-scss, macos, linux, windows]
+tags: [web-development, static-site-generators, ssg, hugo, css, sass-scss, macos, linux, windows]
 date: 2022-05-22T10:06:00-05:00
 #initTextEditor: iA Writer
 ---

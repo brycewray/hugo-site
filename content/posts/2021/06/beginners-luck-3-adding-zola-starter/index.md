@@ -2,7 +2,7 @@
 title: "Beginner’s luck #3: adding a Zola starter"
 description: "For those interested in a (somewhat) easy take on Hugo, here’s a starter set for you."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, zola, github, css, sass-scss, tailwind-css]
+tags: [web-development, static-site-generators, ssg, zola, github, css, sass-scss, tailwind-css]
 date: 2021-06-25T16:50:00-05:00
 ---
 

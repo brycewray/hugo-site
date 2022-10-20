@@ -2,7 +2,7 @@
 title: "Using Dart Sass with Hugo: back to Node"
 description: "The GitHub Actions approach falls short, at least with our chosen host, so the site is now using the Node Sass package."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssgs, hugo, css, sass-scss, node-js, ci-cd, github-actions, website-hosting, cloudflare, cloudflare-pages, cdns]
+tags: [meta, web-development, static-site-generators, ssg, hugo, css, sass-scss, node-js, ci-cd, github-actions, website-hosting, cloudflare, cloudflare-pages, cdn]
 date: 2022-05-24T15:23:00-05:00
 #initTextEditor: iA Writer
 ---

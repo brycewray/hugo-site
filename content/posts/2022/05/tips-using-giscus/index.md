@@ -2,7 +2,7 @@
 title: "Tips for using giscus"
 description: "Some advice about a commenting system for static websites."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, giscus, css]
+tags: [web-development, static-site-generators, ssg, giscus, css]
 date: 2022-05-10T15:10:00-05:00
 #initTextEditor: VS Code
 ---

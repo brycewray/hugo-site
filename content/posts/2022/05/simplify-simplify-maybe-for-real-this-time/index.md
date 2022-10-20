@@ -2,7 +2,7 @@
 title: "Simplify, simplify, maybe for real this time"
 description: "The site enters CTCAJW Mode."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssgs, hugo, astro, eleventy, writing, rss, social-media, twitter]
+tags: [meta, web-development, static-site-generators, ssg, hugo, astro, eleventy, writing, rss, social-media, twitter]
 date: 2022-05-21T11:30:00-05:00
 #initTextEditor: iA Writer
 ---

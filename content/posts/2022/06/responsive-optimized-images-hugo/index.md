@@ -2,7 +2,7 @@
 title: "Responsive and optimized images with Hugo"
 description: "How to take advantage of the amazingly capable image processing built into this SSG."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, image-processing, go-golang, css, sass-scss, cloudinary, markdown, responsive-web-design]
+tags: [web-development, static-site-generators, ssg, hugo, image-processing, go-golang, css, sass-scss, cloudinary, markdown, responsive-web-design]
 date: 2022-06-29T08:17:00-05:00
 #initTextEditor: iA Writer
 ---

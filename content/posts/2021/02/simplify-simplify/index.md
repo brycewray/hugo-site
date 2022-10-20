@@ -2,7 +2,7 @@
 title: "Simplify, simplify"
 description: "A Thoreau-ly fine website, or the result of choosing between simplicity and FOMO."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssgs, hugo, eleventy, javascript, node-js, gatsby, css, tailwind-css, sass-scss, postcss, cloudflare, cloudflare-pages, vercel, infosec]
+tags: [meta, web-development, static-site-generators, ssg, hugo, eleventy, javascript, node-js, gatsby, css, tailwind-css, sass-scss, postcss, cloudflare, cloudflare-pages, vercel, infosec]
 date: 2021-02-06T21:00:00-06:00
 ---
 

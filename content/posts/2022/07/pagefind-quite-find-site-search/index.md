@@ -2,7 +2,7 @@
 title: "Pagefind is quite a find for site search"
 description: "It used to be that having search on a static site was a hassle — and perhaps an expensive one — but Pagefind has changed all that."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, astro, eleventy, cloudcannon, site-search, pagefind, social-media, youtube, linux, macos, windows]
+tags: [web-development, static-site-generators, ssg, hugo, astro, eleventy, cloudcannon, site-search, pagefind, social-media, youtube, linux, macos, windows]
 date: 2022-07-28T20:32:00-05:00
 #initTextEditor: iA Writer
 ---

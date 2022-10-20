@@ -2,7 +2,7 @@
 title: "Gems in the rough #9"
 description: "Better video embeds, CFP improvements, “passtro” on Astro."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, social-media, youtube, eleventy, hugo, website-hosting, cloudflare-pages, vercel, astro]
+tags: [web-development, static-site-generators, ssg, social-media, youtube, eleventy, hugo, website-hosting, cloudflare-pages, vercel, astro]
 date: 2021-09-05T14:35:00-05:00
 ---
 

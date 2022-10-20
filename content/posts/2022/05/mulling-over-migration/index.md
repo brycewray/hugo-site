@@ -2,7 +2,7 @@
 title: "Mulling over migration?"
 description: "Some tips about moving your website to Astro."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, astro, eleventy, hugo, markdown, writing-applications]
+tags: [web-development, static-site-generators, ssg, astro, eleventy, hugo, markdown, writing-applications]
 date: 2022-05-07T13:15:00-05:00
 #initTextEditor: MMDC5
 ---

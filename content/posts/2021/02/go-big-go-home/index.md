@@ -2,7 +2,7 @@
 title: "Go big or Go home?"
 description: "How some image-handling code moved from Eleventy to Hugo."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, image-processing, eleventy, hugo, go-golang, responsive-web-design, cloudinary]
+tags: [web-development, static-site-generators, ssg, image-processing, eleventy, hugo, go-golang, responsive-web-design, cloudinary]
 date: 2021-02-10T07:55:00-06:00
 ---
 

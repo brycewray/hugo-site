@@ -2,7 +2,7 @@
 title: "Get good Git info from Eleventy, too"
 description: "While per-page Git data is built into Hugo, a little code can bring it to Eleventy, as well."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, eleventy, version-control, git, javascript, hugo, ci-cd, github-actions]
+tags: [web-development, static-site-generators, ssg, eleventy, version-control, git, javascript, hugo, ci-cd, github-actions]
 date: 2022-09-05T10:01:00-05:00
 #draft: true
 #initTextEditor: iA Writer

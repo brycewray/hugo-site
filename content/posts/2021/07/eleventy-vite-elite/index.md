@@ -2,7 +2,7 @@
 title: "Eleventy plus Vite = elite"
 description: "Re-bundling, but without the pain of webpack."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, eleventy, hugo, bundler-software, webpack, vite, git, caching, css, sass-scss, tailwind-css, javascript]
+tags: [web-development, static-site-generators, ssg, eleventy, hugo, bundler-software, webpack, vite, git, caching, css, sass-scss, tailwind-css, javascript]
 date: 2021-07-24T10:46:00-05:00
 ---
 

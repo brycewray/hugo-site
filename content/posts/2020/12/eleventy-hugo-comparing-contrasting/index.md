@@ -2,7 +2,7 @@
 title: "Eleventy and Hugo: comparing and contrasting"
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, eleventy, hugo, review, css, tailwind-css, sass-scss, postcss, jamstack, image-processing, website-performance, javascript, go-golang, markdown]
+tags: [web-development, static-site-generators, ssg, eleventy, hugo, review, css, tailwind-css, sass-scss, postcss, jamstack, image-processing, website-performance, javascript, go-golang, markdown]
 date: 2020-12-28T11:45:00-06:00
 ---
 

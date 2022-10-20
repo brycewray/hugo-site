@@ -2,7 +2,7 @@
 title: "Really getting started with Hugo: four simple steps"
 description: "Here is just the actual procedure from yesterday’s post about making things easier for new Hugo users."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, go-golang, windows, macos, version-control]
+tags: [web-development, static-site-generators, ssg, hugo, go-golang, windows, macos, version-control]
 date: 2022-07-20T08:56:00-05:00
 #initTextEditor: **iA Writer**
 ---

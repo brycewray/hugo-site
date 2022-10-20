@@ -2,7 +2,7 @@
 title: "Webmentions in three SSGs: Part 2"
 description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs) — in this case, Eleventy."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, indieweb, webmentions, eleventy, gatsby, hugo, html]
+tags: [web-development, static-site-generators, ssg, indieweb, webmentions, eleventy, gatsby, hugo, html]
 date: 2020-04-28T16:35:00-05:00
 ---
 

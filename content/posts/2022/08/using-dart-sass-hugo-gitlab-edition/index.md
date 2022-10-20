@@ -2,7 +2,7 @@
 title: "Using Dart Sass with Hugo: the GitLab edition"
 description: "For those who prefer GitLab to GitHub where CI/CD is concerned, here’s a GitLab-friendly way to install Hugo and Embedded Dart Sass."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, css, sass-scss, ci-cd, github-actions, gitlab-ci-cd, json, website-hosting, jamstack, netlify, vercel, cloudflare, cloudflare-pages]
+tags: [web-development, static-site-generators, ssg, hugo, css, sass-scss, ci-cd, github-actions, gitlab-ci-cd, json, website-hosting, jamstack, netlify, vercel, cloudflare, cloudflare-pages]
 date: 2022-08-05T20:49:00-05:00
 #initTextEditor: iA Writer
 ---

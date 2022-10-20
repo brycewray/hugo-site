@@ -2,7 +2,7 @@
 title: "Shameless plug time"
 description: "A few words about my new Hugo-related article for the CloudCannon blog."
 author: Bryce Wray
-tags: [personal, writing, cloudcannon, web-development, static-site-generators, ssgs, hugo, git, cms]
+tags: [personal, writing, cloudcannon, web-development, static-site-generators, ssg, hugo, git, cms]
 date: 2022-02-24T12:11:00-06:00
 ---
 

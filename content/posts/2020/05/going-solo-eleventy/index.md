@@ -2,7 +2,7 @@
 title: "Going solo with Eleventy"
 description: "Losing webpack, regaining Tailwind CSS."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, eleventy, bundler-software, webpack, node-js, javascript, image-processing, website-performance, css, sass-scss, tailwind-css, postcss]
+tags: [web-development, static-site-generators, ssg, eleventy, bundler-software, webpack, node-js, javascript, image-processing, website-performance, css, sass-scss, tailwind-css, postcss]
 date: 2020-05-09T09:45:00-05:00
 ---
 

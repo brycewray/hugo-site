@@ -2,7 +2,7 @@
 title: "Ec-static"
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own websites."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssgs, hugo, wordpress, macos, linux, windows, infosec, website-performance]
+tags: [web-development, static-site-generators, ssg, hugo, wordpress, macos, linux, windows, infosec, website-performance]
 date: 2019-04-07T14:00:00-05:00
 ---
 

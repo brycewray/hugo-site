@@ -2,7 +2,7 @@
 title: "Curmudgeonish thoughts for 2021"
 description: "Another year, another grievances list."
 author: Bryce Wray
-tags: [humor-satire, web-development, static-site-generators, ssgs, zola, hugo, windows, web-typography, grammar]
+tags: [humor-satire, web-development, static-site-generators, ssg, zola, hugo, windows, web-typography, grammar]
 date: 2021-11-09T08:56:00-06:00
 ---
 
