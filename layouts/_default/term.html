@@ -1,10 +1,14 @@
 {{ define "main" }}
-	{{ partial "billboard.html" . }}
+	<h1 class="ctr">
+		Posts containing the&nbsp;tag<br />
+		&ldquo;{{ .Title }}&rdquo;
+	</h1>
   <div class="container-narrower">
     <ul>
-      {{ range .Data.Pages }}
+      {{ range .Pages.ByDate }}
         <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <strong><a href="{{ .Permalink }}">{{ .Title }}</a></strong> <span class="pokey nobrk">({{ .PublishDate.Format "2006-01-02" }})</span><br />
+					<span class="pokey">{{ .Description }}</span>
         </li>
       {{ end }}
     </ul>
