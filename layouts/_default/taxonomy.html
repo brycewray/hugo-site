@@ -1,10 +1,10 @@
 {{ define "main" }}
-  <div class="container">
-    <h1>All {{ .Type }}</h1>
+	{{ partial "billboard.html" . }}
+  <div class="container-narrower">
     <ul>
-      {{ range .Data.Pages }}
+      {{ range .Data.Terms.Alphabetical }}
         <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
         </li>
       {{ end }}
     </ul>
