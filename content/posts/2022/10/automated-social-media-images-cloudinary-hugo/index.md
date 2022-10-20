@@ -48,6 +48,9 @@ By contrast: whenever I'd tinker with the [Astro](https://astro.build) and [Elev
 
 This made more sense when using Astro or Eleventy, because they already are using a ton of [Node.js](https://nodejs.org) packages, so what's one more? But, for my Node.js-free Hugo setup, I didn't want to go the `node_modules` route for **just** `get-share-image`.
 
+**Update**: For that matter, see also my 2022-10-20 update near the bottom of this post for a different approach, at least for use with Eleventy.
+{.yellowBox}
+
 Thus, the only way to do this to my satisfaction in Hugo was to recreate, entirely in Hugo templating, what `get-share-image` does.
 
 ## Cloudinary image transformation URLs
@@ -270,6 +273,23 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		<meta name="og:image" content="{{ $socImg }}">
 		<meta name="twitter:image" content="{{ $socImg }}">
 	{{- end -}}
+```
+
+----
+
+## Update, 2022-10-20
+
+While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs, it's not utterly necessary. For example, here's some [Nunjucks](https://mozilla.github.io/nunjucks) templating for use in Eleventy --- essentially mashing all the `replace` operations into one long line, which to my knowledge isn't possible in Hugo. (To avoid repetition, I haven't annotated it as in the Hugo example above.) This is adapted from [how I did it](https://github.com/brycewray/eleventy_site/blob/main/src/_includes/layouts/partials/head-meta_cloud-socimg.njk) in the [Eleventy version](https://github.com/brycewray/eleventy_site) of this site's repository.
+
+```twig
+{% set escapedTitle = title | replace("%", "%2525") | replace(",", "%252C") | replace("/", "%252F") | replace(" ", "%20") | replace(":", "%3A") | replace(";", "%3B") | replace("!", "%21") | replace("?", "%3F") | replace("+", "%2B") | replace("—", "%E2%80%94") | replace("–", "%E2%80%93") | replace(" ", "%C2%A0") | replace("•", "%E2%80%A2") | replace("#", "%23") | replace("(", "%28") | replace(")", "%29") | replace('"', "%22") | replace("“", "%E2%80%9C") | replace("”", "%E2%80%9D") | replace("'", "%27") | replace("‘", "%E2%80%98") | replace("’", "%E2%80%99") | replace("‑", "%E2%80%91") %}
+{% set cloudName = "my-cloud-name" %}
+{% set titleSize = 72 %}
+{% set fontChoice = "arial" }
+{% set titleWidth = 1036 %}{# 72 each side from 1280 #}
+{% set myUploadedBkgd = "my-bkgd-3k4dvaxlzd" %}
+	{# your preferred image's Cloudinary `public ID`, as explained earlier #}
+{% set socImg = ["https://res.cloudinary.com/", cloudName, "/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_", titleWidth, ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:", fontChoice, "_", titleSize, "_center:", escapedTitle, "/", myUploadedBkgd] | join %}
 ```
 
 ----
