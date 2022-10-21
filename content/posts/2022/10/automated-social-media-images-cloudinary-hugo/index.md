@@ -94,7 +94,9 @@ By the way: remember how I mentioned earlier that I didn't like the lame formatt
 
 In this section, I provide an annotated version of the code by which I'm handling this stuff in [my Hugo setup's appropriate partial](https://github.com/brycewray/hugo_site/blob/main/layouts/partials/head-meta_cloud-socimg.html), which supplies only the metadata for the `head` element on each page. In addition to the comments, I've added some *variables* to make it more applicable to other users; *e.g.*, I don't need to provide a variable for my own Cloudinary *cloud name* (because I "hard-code" it in my own URL), but you'll need to supply yours.
 
-At the beginning of the code block, I mention a fallback image (`$fallbackImg`), which I host myself rather than on Cloudinary. This is for use for the home page, for which I'd prefer the OG image to be my long-term site image:
+At the beginning of the code block, I mention a fallback image (`$fallbackImg`), which I host myself[^fallbackLocal] rather than on Cloudinary. This is for use for the home page, for which I'd prefer the OG image to be my long-term site image:
+
+[^fallbackLocal]: This is true when the site is on Hugo, that is. Otherwise, the fallback image is another Cloudinary-hosted asset. In fact, its appearance in this page originates from Cloudinary, regardless of which SSG is in use.
 
 {{< imgc src="typewriter-monochrome_2242164_6260x4374.jpg" alt="Monochrome view of hands typing on an old typewriter" width=6260 height=4374 >}}
 
