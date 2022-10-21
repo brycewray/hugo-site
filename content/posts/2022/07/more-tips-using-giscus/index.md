@@ -13,7 +13,7 @@ Two of the biggest performance hits you'll encounter in using giscus are due to 
 
 ## Don't show it by default
 
-The Next.js app will load a bunch of JavaScript on page-load **if** you don't *lazy-load* giscus [as I suggested in the first post](http://192.168.254.10:3000/posts/2022/05/tips-using-giscus/#get-lazy); but, even with lazy loading set, it'll still dump all that JS on the user when that part of the page comes into view. The only way around that is not to *let* that part come into view **unless** the user wants it. The way I'm handling this is with the HTML [`detail`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`summary`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) elements. As [MDN](https://developer.mozilla.org/en-US/) explains:
+The Next.js app will load a bunch of JavaScript on page-load **if** you don't *lazy-load* giscus [as I suggested in the first post](/posts/2022/05/tips-using-giscus/#get-lazy); but, even with lazy loading set, it'll still dump all that JS on the user when that part of the page comes into view. The only way around that is not to *let* that part come into view **unless** the user wants it. The way I'm handling this is with the HTML [`detail`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`summary`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) elements. As [MDN](https://developer.mozilla.org/en-US/) explains:
 
 > The `<details>` HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the `<summary>` element.
 >
