@@ -109,8 +109,8 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 ```go-html-template
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
+	{{/* fallback OG image in case we're on the home page */}}
 {{- $socImg := "" -}}{{/* init */}}
-	{{/* fallback OG image for if we’re on the home page */}}
 
 {{/* Required meta tags */}}
 		<meta charset="utf-8">
@@ -132,7 +132,6 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		<meta property="og:url" content="{{ .Site.BaseURL }}">
 		<meta property="twitter:title" content="{{ .Site.Title }}">
 		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
-		<meta name="og:image" content="{{ $fallbackImg.Permalink }}">
 		{{- $socImg = $fallbackImg.Permalink -}}{{/* fallback if not Home */}}
 	{{- else }}
 		{{- /*
