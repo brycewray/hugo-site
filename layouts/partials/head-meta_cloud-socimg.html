@@ -1,6 +1,6 @@
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
-{{- $socImg := $fallbackImg.Permalink -}}{{/* fallback if not Home */}}
+{{- $socImg := "" -}}{{/* init */}}
 
 {{/* Required meta tags */}}
 		<meta charset="utf-8">
@@ -27,8 +27,7 @@
 		<meta property="og:url" content="{{ .Site.BaseURL }}">
 		<meta property="twitter:title" content="{{ .Site.Title }}">
 		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
-		<meta name="og:image" content="{{ $fallbackImg.Permalink }}">
-		<meta name="twitter:image" content="{{ $fallbackImg.Permalink }}">
+		{{- $socImg = $fallbackImg.Permalink -}}{{/* fallback if not Home */}}
 	{{- else }}
 		{{- $escapedTitle := .Title -}}
 		{{/*
@@ -66,7 +65,7 @@
 		{{- $fontChoice := "librefranklinsemibold.ttf" -}}
 		{{- /* choices are `librefranklinsemibold.ttf` and `librefranklinmedium.ttf` */ -}}
 		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
-		{{- $socImg := print "https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" -}}
+		{{- $socImg = print "https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" -}}
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
 		<meta name="description" content="{{ .Params.Description }}">
@@ -86,6 +85,6 @@
 		<meta property="og:type" content="article">
 		<meta property="og:url" content="{{ .Page.Permalink }}">
 		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
+	{{- end }}
 		<meta name="og:image" content="{{ $socImg }}">
 		<meta name="twitter:image" content="{{ $socImg }}">
-	{{- end -}}

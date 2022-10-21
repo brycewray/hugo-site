@@ -109,7 +109,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 ```go-html-template
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
-{{- $socImg := $fallbackImg.Permalink -}}
+{{- $socImg := "" -}}{{/* init */}}
 	{{/* fallback OG image for if we’re on the home page */}}
 
 {{/* Required meta tags */}}
@@ -133,7 +133,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		<meta property="twitter:title" content="{{ .Site.Title }}">
 		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
 		<meta name="og:image" content="{{ $fallbackImg.Permalink }}">
-		<meta name="twitter:image" content="{{ $fallbackImg.Permalink }}">
+		{{- $socImg = $fallbackImg.Permalink -}}{{/* fallback if not Home */}}
 	{{- else }}
 		{{- /*
 			Now we’ll start building
@@ -265,15 +265,14 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		<meta property="og:type" content="article">
 		<meta property="og:url" content="{{ .Page.Permalink }}">
 		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
-
-		{{- /*
-			And, finally, the payoff
-			of our earlier endeavors
-			with building `$socImg`...
-		*/ -}}
+	{{- end -}}
+	{{- /*
+		And, finally, the payoff
+		of our earlier endeavors
+		with building `$socImg`...
+	*/ -}}
 		<meta name="og:image" content="{{ $socImg }}">
 		<meta name="twitter:image" content="{{ $socImg }}">
-	{{- end -}}
 ```
 
 ----
