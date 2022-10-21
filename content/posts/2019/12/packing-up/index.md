@@ -2,7 +2,6 @@
 title: "Packing up"
 description: "Eleventy and webpack are a powerful pair."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, gatsby, web-typography, website-performance, image-processing, responsive-web-design, css, sass-scss, bundler-software, webpack, github, javascript]
 date: 2019-12-08T17:48:00-06:00
 ---
 

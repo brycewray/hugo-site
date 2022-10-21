@@ -2,7 +2,6 @@
 title: "Using Dart Sass with Hugo: some data on using GitHub Actions"
 description: "After encountering some surprising results with my GHA-based method, I decided to do the math."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, css, sass-scss, ci-cd, github-actions, website-hosting, cloudflare, cloudflare-pages, vercel, jamstack]
 date: 2022-07-05T09:33:00-05:00
 #initTextEditor: iA Writer
 ---

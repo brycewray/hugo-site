@@ -2,7 +2,6 @@
 title: "IE’s dead, Jim"
 description: "Years after Microsoft told people to stop using Internet Explorer, the hoary browser at last is (mostly) no more."
 author: Bryce Wray
-tags: [web-development, web-browsers, internet-explorer, windows]
 date: 2022-06-15T06:40:00-05:00
 #initTextEditor: iA Writer
 ---

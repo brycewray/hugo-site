@@ -2,7 +2,6 @@
 title: "A zero-JavaScript navigation menu for Tailwind CSS"
 description: "Seeking a non-JS nav menu for use with Tailwind? So was I. Here’s the resulting code."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, html, css, tailwind-css, javascript]
 date: 2021-09-15T10:30:00-05:00
 ---
 

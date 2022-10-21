@@ -2,7 +2,6 @@
 title: "Tailwind-to-head with Eleventy"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site — and with no build tools required."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, hugo, css, postcss, tailwind-css, bundler-software, html]
 date: 2021-03-20T17:07:00-05:00
 ---
 

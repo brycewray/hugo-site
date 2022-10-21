@@ -2,7 +2,6 @@
 title: "The IndieWeb experiment ends"
 description: "My timing wasn’t the greatest."
 author: Bryce Wray
-tags: [web-development, indieweb, webmentions, online-privacy]
 date: 2022-05-29T10:48:00-05:00
 #initTextEditor: iA Writer
 ---

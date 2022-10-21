@@ -2,7 +2,6 @@
 title: "Why I kept Ulysses"
 description: "Renewing the subscription for another year."
 author: Bryce Wray
-tags: [personal, writing, writing-applications, ulysses, covid-19, pandemic, macos, ios, ipados, icloud, cloud-sync]
 date: 2020-06-07T16:15:00-05:00
 ---
 

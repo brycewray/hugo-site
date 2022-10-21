@@ -2,7 +2,6 @@
 title: "Blasts from the past"
 description: "To save you the trouble, I revisit previous posts in search of useful info."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, astro, hugo, eleventy, website-hosting, netlify, vercel, cloudflare, cloudflare-workers, cloudflare-pages, firebase, render, digitalocean, github-pages, online-privacy, social-media, wordpress, css, sass-scss, tailwind-css]
 date: 2022-10-14T12:29:00-05:00
 #draft: true
 initTextEditor: iA Writer

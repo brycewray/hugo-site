@@ -2,7 +2,6 @@
 title: "Mixed nuts • May, 2020"
 description: "Updates, uptakes, follow-ups, and foul-ups — not necessarily in that order."
 author: Bryce Wray
-tags: [personal, pandemic, covid-19, meta, eleventy, web-development, mass-media, email, infosec, css, writing-applications, ia-writer, ulysses]
 date: 2020-05-16T17:40:00-05:00
 ---
 

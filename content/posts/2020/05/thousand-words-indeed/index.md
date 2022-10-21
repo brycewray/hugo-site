@@ -2,7 +2,6 @@
 title: "A thousand words, indeed"
 description: "Feelings about look-and-feel: how and why “hero images” have returned to this site."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, image-processing, accessibility, responsive-web-design, web-typography]
 date: 2020-05-22T18:00:00-05:00
 ---
 

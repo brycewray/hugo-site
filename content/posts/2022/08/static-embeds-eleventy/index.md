@@ -2,7 +2,6 @@
 title: "Static embeds in Eleventy"
 description: "In what could and perhaps should be the end of this saga, here’s code to provide static tweets and static Mastodon toots in Eleventy."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, hugo, javascript, markdown, css, sass-scss, social-media, twitter, mastodon, online-privacy]
 date: 2022-08-27T12:33:00-05:00
 #initTextEditor: **iA Writer**
 ---

@@ -4,7 +4,6 @@ title: "Static tweets in Hugo: using resources.​GetRemote"
 # - h/t https://www.somebits.com/weblog/tech/zero-width-space.html
 description: "A recommendation in the Hugo Discourse leads me to alter my shortcodes for embedding static tweets."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, social-media, twitter, eleventy, astro, node-js, javascript, json]
 date: 2022-07-25T16:05:00-05:00
 #initTextEditor: **iA Writer**
 ---

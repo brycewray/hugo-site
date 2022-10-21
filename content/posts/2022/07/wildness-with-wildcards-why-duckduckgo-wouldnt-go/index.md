@@ -2,7 +2,6 @@
 title: "Wildness with wildcards, or why DuckDuckGo wouldn’t go"
 description: "A quick tip about Content Security Policy prissiness where URLs’ wildcards are concerned."
 author: Bryce Wray
-tags: [meta, site-search, content-security-policy, csp, html]
 date: 2022-07-15T12:24:00-05:00
 #initTextEditor: iA Writer
 ---

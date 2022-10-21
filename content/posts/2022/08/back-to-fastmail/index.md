@@ -2,7 +2,6 @@
 title: "Back to Fastmail"
 description: "For a variety of reasons, I revert to the email provider I’ve trusted for nearly five years — and an email client I’ve loved for over three years."
 author: Bryce Wray
-tags: [personal, email, apple, icloud, icloud-plus, icloud-mail, fastmail, macos, ios, ipados, apple-mail, mailmate, dns, imap, jmap]
 date: 2022-08-30T15:01:00-05:00
 #initTextEditor: iA Writer
 ---

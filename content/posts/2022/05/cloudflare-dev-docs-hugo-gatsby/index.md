@@ -2,7 +2,6 @@
 title: "Cloudflare dev docs and the switch from Gatsby back to Hugo"
 description: "A few choice paragraphs from a blog post I saw today."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, gatsby, cloudflare]
 date: 2022-05-27T09:25:00-05:00
 #initTextEditor: iA Writer
 ---

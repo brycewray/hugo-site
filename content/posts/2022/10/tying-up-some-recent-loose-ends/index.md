@@ -2,7 +2,6 @@
 title: "Tying up some recent loose ends"
 description: "Because it’s reasonable to assume you might have missed some or all of these updates, I’ve gathered them into a pile for your inspection."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, giscus, version-control, git, hugo, css, sass-scss, go-golang, image-processing, site-search, pagefind, accessibility, online-privacy, social-media, twitter, astro]
 date: 2022-10-11T08:55:00-05:00
 #draft: true
 initTextEditor: iA Writer

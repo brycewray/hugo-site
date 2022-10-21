@@ -2,7 +2,6 @@
 title: "The “staying with Hugo” post, three years later"
 description: "Revisiting one of this website’s most frequently accessed posts."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, hugo, go-golang, gatsby, eleventy, astro, bundler-software, webpack, node-js, javascript]
 date: 2022-07-14T14:07:00-05:00
 #initTextEditor: iA Writer
 ---

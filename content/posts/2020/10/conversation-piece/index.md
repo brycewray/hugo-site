@@ -2,7 +2,6 @@
 title: "Conversation piece"
 description: "Commenting options for your static website."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, review]
 date: 2020-10-13T16:30:00-05:00
 ---
 

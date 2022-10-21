@@ -2,7 +2,6 @@
 title: "The site this week: 2022-05-28"
 description: "A “just write” commitment, the IndieWeb, some code explainers, and Cloudflare Pages glitches."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, social-media, mastodon]
 date: 2022-05-28T16:50:00-05:00
 #initTextEditor: VS Code
 ---

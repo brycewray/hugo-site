@@ -2,7 +2,6 @@
 title: "GHAs on CFP glitch"
 description: "What I found out about my deploy-to-site GitHub Action and Cloudflare Pages."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, ci-cd, website-hosting, cloudflare, cloudflare-pages]
 date: 2022-05-26T05:24:00-05:00
 #initTextEditor: iA Writer
 ---

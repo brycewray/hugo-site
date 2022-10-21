@@ -2,7 +2,6 @@
 title: "Backtracking to Big G"
 description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
 author: Bryce Wray
-tags: [google, netlify, analytics, infosec, social-media, twitter]
 date: 2019-08-25T10:45:00-05:00
 ---
 

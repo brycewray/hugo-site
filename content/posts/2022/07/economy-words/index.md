@@ -2,7 +2,6 @@
 title: "Economy of words"
 description: "Whatever else happens, you’ll always have this site’s feeds — and I encourage you to use them."
 author: Bryce Wray
-tags: [meta, writing, social-media, twitter]
 date: 2022-07-05T14:05:00-05:00
 #initTextEditor: iA Writer
 ---

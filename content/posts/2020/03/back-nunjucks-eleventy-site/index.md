@@ -2,7 +2,6 @@
 title: "Back to Nunjucks for my Eleventy site"
 description: "Why I’ve decided for now to backtrack from JavaScript-only templating in Eleventy."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, eleventy, javascript, indieweb, webmentions, nunjucks]
 date: 2020-03-22T14:30:00-05:00
 ---
 

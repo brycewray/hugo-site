@@ -2,7 +2,6 @@
 title: "Reply-to links in site feeds"
 description: "Thanks to a reader’s helpful advice, here’s how to enhance the code for your site’s RSS and JSON feeds."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, seo, email, eleventy, hugo, rss, json, html]
 date: 2021-09-09T14:40:00-05:00
 ---
 

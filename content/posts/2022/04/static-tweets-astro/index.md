@@ -2,7 +2,6 @@
 title: "Static tweets in Astro"
 description: "A component which properly embeds tweets when you’re using today’s hottest SSG."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, astro, eleventy, hugo, social-media, twitter, javascript, markdown, mdx]
 date: 2022-04-06T20:18:00-05:00
 #initTextEditor: iA Writer
 ---

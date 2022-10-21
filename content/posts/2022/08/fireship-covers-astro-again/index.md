@@ -2,7 +2,6 @@
 title: "Fireship covers Astro (again)"
 description: "Last week, it was Hugo; this week, it’s Astro — as perhaps the “ultimate web framework.”"
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, astro, hugo, social-media, youtube, github]
 date: 2022-08-19T09:47:00-05:00
 #initTextEditor: iA Writer
 ---

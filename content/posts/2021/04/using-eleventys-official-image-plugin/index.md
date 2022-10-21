@@ -2,7 +2,6 @@
 title: "Using Eleventy’s official image plugin"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, image-processing, javascript, css]
 date: 2021-04-17T13:41:00-05:00
 ---
 

@@ -2,7 +2,6 @@
 title: "Picture perfect?"
 description: "With SSGs and images, it’s “location, location, location.”"
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, image-processing, gatsby, hugo]
 date: 2019-10-20T19:00:00-05:00
 ---
 

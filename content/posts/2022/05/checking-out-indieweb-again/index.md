@@ -2,7 +2,6 @@
 title: "Checking out the IndieWeb again"
 description: "While not entirely sure I’m holding my mouth right, I’m giving webmentions another try."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, indieweb, webmentions, ci-cd, github-actions, javascript, content-security-policy, csp]
 date: 2022-05-22T15:02:00-05:00
 #initTextEditor: VS Code
 ---

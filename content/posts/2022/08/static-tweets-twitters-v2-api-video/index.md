@@ -2,7 +2,6 @@
 title: "Static tweets: Twitter’s v2 API and video"
 description: "Twitter has eliminated one major shortcoming in its preferred API."
 author: Bryce Wray
-tags: [web-development, social-media, twitter, online-privacy]
 date: 2022-08-21T22:43:00-05:00
 #initTextEditor: iA Writer
 ---

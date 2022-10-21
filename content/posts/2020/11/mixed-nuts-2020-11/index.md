@@ -2,7 +2,6 @@
 title: "Mixed nuts • November, 2020"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
-tags: [personal, meta, mass-media, css, caching, website-performance, website-hosting, cdn, netlify, vercel, cloudflare, cloudflare-workers, writing-applications, ulysses]
 date: 2020-11-07T10:10:00-06:00
 ---
 

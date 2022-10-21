@@ -2,7 +2,6 @@
 title: "Gems in the rough #5"
 description: "More notes, notions, and nitpicks about managing one’s personal website."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, hugo, content-security-policy, csp, website-performance, javascript, css, postcss, sass-scss, web-typography, tailwind-css, jit, caching]
 date: 2021-05-30T13:16:00-05:00
 ---
 

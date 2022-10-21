@@ -2,7 +2,6 @@
 title: "Blox sux"
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
-tags: [wordpress, web-development, writing-applications, cms]
 date: 2019-01-19T09:25:00-06:00
 ---
 

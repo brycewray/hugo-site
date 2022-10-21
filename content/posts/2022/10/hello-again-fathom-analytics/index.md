@@ -2,7 +2,6 @@
 title: "Hello again, Fathom Analytics"
 description: "It turns out one set of numbers justifies my getting, once more, to see another set thereof."
 author: Bryce Wray
-tags: [meta, analytics, fathom-analytics, affiliate, writing, google-analytics]
 date: 2022-10-11T13:14:00-05:00
 #draft: true
 initTextEditor: iA Writer # default --- change if needed

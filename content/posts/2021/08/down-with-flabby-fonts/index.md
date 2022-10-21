@@ -2,7 +2,6 @@
 title: "Down with flabby fonts"
 description: "How to subset large web font files to improve your site’s performance."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, css, web-typography, variable-fonts, web-browsers, google-chrome, mozilla-firefox, safari]
 date: 2021-08-08T14:00:00-05:00
 ---
 

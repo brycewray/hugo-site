@@ -2,7 +2,6 @@
 title: "Coherence and COVID-19" #Do NOT use non-breaking hyphen because not all fonts have it
 description: "What one thinks when “Well, that escalated quickly” becomes a gross understatement."
 author: Bryce Wray
-tags: [covid-19, pandemic, personal, history, social-media, youtube]
 date: 2020-03-21T09:45:00-05:00
 ---
 

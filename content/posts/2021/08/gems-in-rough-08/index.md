@@ -2,7 +2,6 @@
 title: "Gems in the rough #8"
 description: "Checking out Astro; comparing vendors."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, astro, eleventy, hugo, markdown, website-hosting, vercel, render, cloudflare, cloudflare-workers, cloudflare-pages, digitalocean, azure]
 date: 2021-08-04T16:30:00-05:00
 ---
 

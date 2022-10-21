@@ -2,7 +2,6 @@
 title: "Code comfort: Eleventy and webpack"
 description: "Some words about my Eleventy/webpack configuration."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, bundler-software, webpack, github]
 date: 2019-12-14T11:05:00-06:00
 ---
 

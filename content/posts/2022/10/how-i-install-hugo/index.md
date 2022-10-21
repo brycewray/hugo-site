@@ -2,7 +2,6 @@
 title: "How I install Hugo"
 description: "Here’s how to bypass package managers and “go direct” when it’s time to install or upgrade Hugo."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, github, macos, linux, windows]
 date: 2022-10-12T12:15:00-05:00
 #draft: true
 initTextEditor: iA Writer

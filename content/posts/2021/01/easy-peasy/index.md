@@ -2,7 +2,6 @@
 title: "Easy-peasy"
 description: "A theoretical conversation about building static websites."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, humor-satire, wordpress, history]
 date: 2021-01-03T10:10:00-06:00
 ---
 

@@ -2,7 +2,6 @@
 title: "Curmudgeonish thoughts for 2020"
 description: "Pet peeves seem tiny at a time like this, but I have them nonetheless."
 author: Bryce Wray
-tags: [personal, humor-satire, sports, mass-media, social-media, youtube, grammar]
 date: 2020-11-01T08:45:00-06:00
 ---
 

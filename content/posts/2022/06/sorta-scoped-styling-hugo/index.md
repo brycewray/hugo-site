@@ -2,7 +2,6 @@
 title: "Sorta scoped styling in Hugo"
 description: "Interested in more efficient CSS for your site? Hugo doesn’t make it easy, but here’s a suggested way you might get there."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, css, sass-scss, astro, bundler-software, vite, html, next-js, markdown]
 date: 2022-06-12T16:10:00-05:00
 #initTextEditor: iA Writer
 ---

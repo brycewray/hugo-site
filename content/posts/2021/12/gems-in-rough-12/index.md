@@ -2,7 +2,6 @@
 title: "Gems in the rough #12"
 description: "Speedier CFP builds, HTML sitemaps."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, website-hosting, cloudflare, cloudflare-pages, cloudflare-workers, html]
 date: 2021-12-26T10:07:00-06:00
 #initTextEditor: iA Writer
 ---

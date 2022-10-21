@@ -2,7 +2,6 @@
 title: "Goodbye and hello • Part 4"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, website-hosting, netlify, vercel, render, firebase, website-performance]
 date: 2020-09-05T09:00:00-05:00
 ---
 

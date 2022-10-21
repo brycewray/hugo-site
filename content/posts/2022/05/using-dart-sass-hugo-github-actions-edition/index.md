@@ -2,7 +2,6 @@
 title: "Using Dart Sass with Hugo: the GitHub Actions edition"
 description: "Still more ways to make Hugo and Embedded Dart Sass work together."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, css, sass-scss, ci-cd, github, github-actions, website-hosting, netlify, vercel, cloudflare, cloudflare-pages, node-js]
 date: 2022-05-17T14:49:00-05:00
 ---
 

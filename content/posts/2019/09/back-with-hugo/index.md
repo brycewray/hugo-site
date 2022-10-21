@@ -2,7 +2,6 @@
 title: "Back with Hugo"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, eleventy, writing]
 date: 2019-09-20T16:40:00-05:00
 ---
 

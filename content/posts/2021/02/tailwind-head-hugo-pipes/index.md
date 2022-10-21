@@ -2,7 +2,6 @@
 title: "Tailwind-to-head with Hugo Pipes"
 description: "If your website draws that “render-blocking resource” gripe during tests, here’s one method for fighting it."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, css, tailwind-css, website-performance, node-js, go-golang]
 date: 2021-02-02T16:25:00-06:00
 ---
 

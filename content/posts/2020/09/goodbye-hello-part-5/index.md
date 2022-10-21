@@ -2,7 +2,6 @@
 title: "Goodbye and hello • Part 5"
 description: "Two embarrassments: another site move and the reason behind it."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, website-hosting, netlify, vercel, render, firebase, website-performance]
 date: 2020-09-09T14:30:00-05:00
 ---
 

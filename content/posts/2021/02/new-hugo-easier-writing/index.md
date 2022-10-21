@@ -2,7 +2,6 @@
 title: "New in Hugo: easier writing"
 description: "How Hugo 0.81.0 lets me do more in Markdown."
 author: Bryce Wray
-tags: [personal, web-development, static-site-generators, ssg, hugo, markdown, writing, eleventy, css, web-typography, go-golang]
 date: 2021-02-27T11:35:00-06:00
 ---
 

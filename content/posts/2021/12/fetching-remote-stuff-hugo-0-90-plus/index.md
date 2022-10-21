@@ -2,7 +2,6 @@
 title: "Fetching remote stuff with Hugo 0.90+"
 description: "It’s a marriage made in heaven: the Cloudinary free tier and Hugo Pipes’ new ability to grab remote items."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, image-processing, cloudinary, go-golang, social-media, twitter]
 date: 2021-12-11T12:41:00-06:00
 #initTextEditor: Ulysses
 ---

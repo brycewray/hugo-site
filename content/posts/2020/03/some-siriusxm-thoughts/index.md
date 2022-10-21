@@ -2,7 +2,6 @@
 title: "Some Sirius(XM) thoughts"
 description: "Radio, and more, from on high."
 author: Bryce Wray
-tags: [personal, mass-media]
 date: 2020-03-15T15:35:00-05:00
 ---
 

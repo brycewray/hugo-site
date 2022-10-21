@@ -2,7 +2,6 @@
 title: "Welcome, sweet little early bird"
 description: "The new grandchild arrives, and on her own timeline."
 author: Bryce Wray
-tags: [personal]
 date: 2020-03-10T09:50:00-05:00
 ---
 

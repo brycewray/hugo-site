@@ -2,7 +2,6 @@
 title: "Get good Git info from Hugo"
 description: "It’s easy to fetch and display your Hugo repo’s Git data."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, version-control, git, ci-cd, github-actions, go-golang]
 date: 2022-06-01T06:47:00-05:00
 #initTextEditor: iA Writer
 ---

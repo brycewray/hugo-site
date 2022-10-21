@@ -2,7 +2,6 @@
 title: "Automated social media images with Cloudinary and Hugo"
 description: "A little time spent wrangling with an API saves you plenty of time down the line."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, cloudinary, affiliate, image-processing, social-media, twitter, go-golang, cloudcannon, web-typography]
 date: 2022-10-15T10:43:00-05:00
 #draft: true
 initTextEditor: iA Writer # default --- change if needed

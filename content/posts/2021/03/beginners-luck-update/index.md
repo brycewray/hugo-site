@@ -2,7 +2,6 @@
 title: "Beginner’s luck: an update"
 description: "The inventory has grown, so here’s what I currently offer for those interested in Eleventy and Hugo."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, github, eleventy, hugo, css, tailwind-css, sass-scss]
 date: 2021-03-25T20:25:00-05:00
 ---
 

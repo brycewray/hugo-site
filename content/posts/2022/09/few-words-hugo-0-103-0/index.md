@@ -2,7 +2,6 @@
 title: "A few words about Hugo 0.103.0"
 description: "Here’s some info that’s worth knowing — especially if you use CI/CD to deploy your website."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, ci-cd, website-hosting, netlify, linux, social-media, twitter]
 date: 2022-09-15T14:39:00-05:00
 #draft: true
 initTextEditor: iA Writer

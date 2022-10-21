@@ -2,7 +2,6 @@
 title: "Static tweets in Hugo: an update"
 description: "Now!! With new features!! This Hugo shortcode allows you to embed tweets with link “cards.”"
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, social-media, twitter, go-golang, markdown, cloudcannon]
 date: 2022-06-07T15:46:00-05:00
 #initTextEditor: iA Writer
 ---

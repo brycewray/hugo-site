@@ -2,7 +2,6 @@
 title: "Static tweets in Eleventy and Hugo: Part 2"
 description: "Using Twitter’s preferred API to embed static tweets."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, hugo, social-media, twitter, online-privacy, javascript, go-golang]
 date: 2022-02-11T14:43:00-06:00
 #initTextEditor: Ulysses
 ---

@@ -2,7 +2,6 @@
 title: "Gems in the rough #13"
 description: "Why I’ve recently backtracked on configurations for CSS and image-handling."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, css, web-browsers, safari, google-chrome, mozilla-firefox, caching, social-media, twitter, sass-scss]
 date: 2022-01-04T13:09:00-06:00
 #initTextEditor: Ulysses
 ---

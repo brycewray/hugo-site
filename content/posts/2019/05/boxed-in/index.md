@@ -2,7 +2,6 @@
 title: "Boxed in?"
 description: "A revisiting of the whole Ulysses matter — after I learned some more about “shoebox” apps in general."
 author: Bryce Wray
-tags: [writing, writing-applications, ulysses, ia-writer, scrivener, icloud, cloud-sync, markdown]
 date: 2019-05-04T06:00:00-05:00
 ---
 

@@ -2,7 +2,6 @@
 title: "Publish or perish"
 description: "In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it — for free."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, version-control, git, infosec, website-performance, website-hosting, jamstack, netlify, dns]
 date: 2019-04-11T19:00:00-05:00
 oldComments: |
   <div class="container-oldComments">

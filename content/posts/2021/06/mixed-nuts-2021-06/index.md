@@ -2,7 +2,6 @@
 title: "Mixed nuts • June, 2021"
 description: "The latest set of “takes” that don’t all fit in any one category."
 author: Bryce Wray
-tags: [personal, infosec, password-management, apple, wwdc, icloud, web-browsers, mozilla-firefox, pandemic, covid-19]
 date: 2021-06-11T16:30:00-05:00
 ---
 

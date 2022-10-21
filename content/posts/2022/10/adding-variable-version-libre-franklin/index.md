@@ -2,7 +2,6 @@
 title: "Adding the Libre Franklin variable web font"
 description: "For once, Google Fonts is the place to get the needed files — if you do it the right way, that is."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, web-typography, online-privacy, google-fonts, hugo, go-golang, github]
 date: 2022-10-04T09:53:00-05:00
 #draft: true
 initTextEditor: iA Writer

@@ -2,7 +2,6 @@
 title: "Readable web text, pretty please"
 description: "Part 1 of a two-part series on web typography."
 author: Bryce Wray
-tags: [web-development, web-typography, accessibility]
 date: 2018-10-17T14:40:00-05:00
 ---
 

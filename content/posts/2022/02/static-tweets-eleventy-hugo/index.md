@@ -2,7 +2,6 @@
 title: "Static tweets in Eleventy and Hugo"
 description: "How to embed tweets while still protecting your visitors’ privacy."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, hugo, social-media, twitter, online-privacy, javascript, go-golang]
 date: 2022-02-07T12:00:00-06:00
 #initTextEditor: Ulysses
 ---

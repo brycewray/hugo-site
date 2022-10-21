@@ -2,7 +2,6 @@
 title: "Bundling JavaScript with Hugo and esbuild"
 description: "An example of how you could use Hugo’s phenomenally fast, built-in bundling capabilities."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, bundler-software, vite, go-golang, javascript]
 date: 2021-12-01T08:34:00-06:00
 #initTextEditor: Ulysses
 ---

@@ -2,7 +2,6 @@
 title: "Using iCloud Mail with a custom domain: following up"
 description: "What happened when I moved my main email address to iCloud Mail."
 author: Bryce Wray
-tags: [email, apple, icloud, icloud-plus, icloud-mail, apple-mail, fastmail, dns, imap, mailmate]
 date: 2022-06-19T11:27:00-05:00
 #initTextEditor: iA Writer
 ---

@@ -2,7 +2,6 @@
 title: "Posting with Ulysses"
 description: "Still a nicer editor, but not truly SSG-friendly."
 author: Bryce Wray
-tags: [meta, web-development, static-site-generators, ssg, writing-applications, ulysses, ia-writer, markdown, eleventy]
 date: 2020-08-04T19:15:00-05:00
 ---
 

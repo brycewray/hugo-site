@@ -2,7 +2,6 @@
 title: "Trying Mark Text for website content"
 description: "A free, cross-platform text editor for (maybe) managing your site’s content."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, markdown, writing-applications, analytics, fathom-analytics, affiliate, linux]
 date: 2021-05-07T16:30:00-05:00
 ---
 

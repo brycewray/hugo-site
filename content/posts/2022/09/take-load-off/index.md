@@ -2,7 +2,6 @@
 title: "Take a load off"
 description: "Repeated grabs from remote APIs can stress some SSGs (and CPUs), so here’s a simple way to avoid that during development."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, eleventy, astro, javascript, website-performance, node-js]
 date: 2022-09-04T09:37:00-05:00
 #draft: true
 #initTextEditor: iA Writer

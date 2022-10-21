@@ -2,7 +2,6 @@
 title: "Getting framed"
 description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
-tags: [web-development, css, website-performance]
 date: 2018-11-14T09:15:00-06:00
 ---
 

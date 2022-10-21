@@ -2,7 +2,6 @@
 title: "Keep it canonical for SEO"
 description: "Use canonical URLs to keep search engines straight on which content they should index."
 author: Bryce Wray
-tags: [web-development, jamstack, website-hosting, netlify, digitalocean, vercel, cloudflare, cloudflare-pages, seo, html, astro, eleventy, hugo]
 date: 2022-09-07T16:08:00-05:00
 #draft: true
 #initTextEditor: iA Writer

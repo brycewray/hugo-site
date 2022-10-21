@@ -2,7 +2,6 @@
 title: "Static Mastodon toots in Astro"
 description: "Got an Astro site and want to embed completely static versions of posts from the Fediverse? Check out this component."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, social-media, mastodon, astro, hugo, eleventy, javascript, css, sass-scss, online-privacy]
 date: 2022-08-29T14:36:00-05:00
 #initTextEditor: iA Writer
 ---

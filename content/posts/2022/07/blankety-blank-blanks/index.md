@@ -2,7 +2,6 @@
 title: "Blankety-blank _blanks"
 description: "Once again, concerns over accessibility cause me to reverse one of this website’s oldest defaults."
 author: Bryce Wray
-tags: [meta, web-development, accessibility]
 date: 2022-07-13T18:29:00-05:00
 #initTextEditor: iA Writer
 ---

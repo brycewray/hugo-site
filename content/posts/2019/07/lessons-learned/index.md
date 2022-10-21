@@ -2,7 +2,6 @@
 title: "Lessons learned"
 description: "During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, gatsby, git, cloud-sync, version-control, web-typography]
 date: 2019-07-21T18:43:00-05:00
 oldComments: |
     <div class="container-oldComments">

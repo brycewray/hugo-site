@@ -2,7 +2,6 @@
 title: "Transition"
 description: "Yep, forty-plus years will do."
 author: Bryce Wray
-tags: [personal, pandemic, covid-19]
 date: 2021-09-03T16:30:00-05:00
 ---
 

@@ -2,7 +2,6 @@
 title: "Let all your devices see your site"
 description: "How to make “localhost” slightly less local."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, astro, eleventy, hugo, gatsby, next-js, macos, linux, windows]
 date: 2022-04-02T11:00:00-05:00
 #initTextEditor: iA Writer
 #devTo: https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd

@@ -2,7 +2,6 @@
 title: "Forward PaaS"
 description: "Testing the waters on Cloudflare Workers and KV storage — an up-and-coming platform-as-a-service (PaaS) offering." # DO NOT use non-breaking hyphens; not all fonts have them
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, website-hosting, cloudflare, cloudflare-workers, hugo, eleventy, ci-cd, github-actions]
 date: 2020-10-11T13:20:00-05:00
 ---
 

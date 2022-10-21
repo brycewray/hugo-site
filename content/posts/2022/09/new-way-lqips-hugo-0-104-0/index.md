@@ -2,7 +2,6 @@
 title: "A new way to generate LQIPs in Hugo 0.104.0"
 description: "An interesting addition to this SSG’s image-processing arsenal helps you accommodate users viewing your site under suboptimal conditions."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, image-processing, css, sass-scss, go-golang, content-security-policy, csp]
 date: 2022-09-23T13:33:00-05:00
 #draft: true
 initTextEditor: iA Writer

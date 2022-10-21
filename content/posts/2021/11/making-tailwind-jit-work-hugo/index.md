@@ -2,7 +2,6 @@
 title: "Making Tailwind JIT work with Hugo"
 description: "What to do until Tailwind CSS’s JIT mode works OoTB with Hugo."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, hugo, css, tailwind-css, jit, go-golang, node-js, postcss, sass-scss]
 date: 2021-11-01T12:08:00-05:00
 ---
 

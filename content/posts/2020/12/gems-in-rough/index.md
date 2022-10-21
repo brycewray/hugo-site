@@ -2,7 +2,6 @@
 title: "Gems in the rough"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, zola, eleventy, hugo, cdn, website-hosting, dns, netlify, vercel, cloudflare, cloudflare-workers, digitalocean, css, web-typography, variable-fonts]
 date: 2020-12-21T12:10:00-06:00
 ---
 

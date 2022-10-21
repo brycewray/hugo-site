@@ -2,7 +2,6 @@
 title: "Webmentions in three SSGs: Part 1"
 description: "The intro to a five-part series about incorporating webmentions into three different static site generators (SSGs)."
 author: Bryce Wray
-tags: [web-development, static-site-generators, ssg, indieweb, webmentions, eleventy, gatsby, hugo, html]
 date: 2020-04-28T16:30:00-05:00
 ---
 
