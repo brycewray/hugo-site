@@ -6,10 +6,13 @@ date: 2022-05-30T13:10:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Note**: If you entered "fun with food" into Google and it sent you here, I'm sorry, but this page **is not** about food. It's about how to use [web feeds](https://en.wikipedia.org/wiki/Web_feed).\
+<strong class="red">Note to visitors from Europe</strong>: If you entered "fun with food" into Google and it sent you here, I'm sorry, but this page <strong class="red">is not</strong> about food. It's about how to use [web feeds](https://en.wikipedia.org/wiki/Web_feed).\
 \
-*(Auf Deutsch)* . . .\
-**Hinweis**: Wenn Sie "Spaß am Essen" in Google eingegeben haben und Sie hierher weitergeleitet wurden, tut es mir leid, aber auf dieser Seite geht **es nicht** um Essen. Es geht um die Verwendung von [Web-Feeds](https://de.wikipedia.org/wiki/RSS_(Web-Feed)).
+<strong class="red">Hinweis für Besucher aus Europa</strong>: Wenn Sie "Spaß am Essen" *("fun with food" auf Englisch)* in Google eingegeben haben und Sie hierher weitergeleitet wurden, tut es mir leid, aber auf dieser Seite geht <strong class="red">es nicht</strong> um Essen. Es geht um die Verwendung von [Web-Feeds](https://de.wikipedia.org/wiki/RSS_(Web-Feed)).\
+\
+<strong class="red">Nota para los visitantes de Europa</strong>: si ingresó "diversión con comida" *("fun with food" en inglés)* en Google y lo envió aquí, lo siento, pero esta página <strong class="red">no es</strong> sobre comida. Se trata de cómo usar [las fuentes web](https://es.wikipedia.org/wiki/Fuente_web).\
+\
+<strong class="red">Poznámka pro návštěvníky z Evropy</strong>: Pokud jste do Googlu zadali „zábava s jídlem“ *(„fun with food“ v angličtině)* a poslalo vás to sem, omlouvám se, ale tato stránka <strong class="red">není</strong> o jídle. Jde o to, jak používat [webové zdroje](https://cs.wikipedia.org/wiki/RSS).
 {.yellowBox}
 
 If you're not already using a [feed reader app](https://en.wikipedia.org/wiki/RSS), you should start.
