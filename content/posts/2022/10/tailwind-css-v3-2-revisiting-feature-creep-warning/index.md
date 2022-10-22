@@ -7,7 +7,7 @@ date: 2022-10-22T08:43:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/tailwind-css-v32-revisiting-my-feature-creep-warning-3ohm).
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/tailwind-css-v32-revisiting-my-feature-creep-warning-3ohm) and was the subject of a [Hacker News thread](https://news.ycombinator.com/item?id=33298806).
 {.yellowBox}
 
 Earlier this week, a [blog post](https://tailwindcss.com/blog/tailwindcss-v3-2) introduced [version 3.2](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.2.0) of the popular [Tailwind CSS](https://tailwindcss.com) styling framework.
