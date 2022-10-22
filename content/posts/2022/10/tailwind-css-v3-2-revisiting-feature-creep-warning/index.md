@@ -4,7 +4,7 @@ description: "Only nine months after I suggested Tailwind might someday hit an u
 author: Bryce Wray
 date: 2022-10-22T08:43:00-05:00
 #draft: true
-initTextEditor: iA Writer
+#initTextEditor: iA Writer
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/tailwind-css-v32-revisiting-my-feature-creep-warning-3ohm).
