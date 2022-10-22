@@ -5,6 +5,9 @@ author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
 ---
 
+**Note**: This post also was the subject of a [Hacker News thread](https://news.ycombinator.com/item?id=33299506).
+{.yellowBox}
+
 **Note, 2021-04-04**: I revised this article to remove some references that, as a reader correctly pointed out, didn't really fit into what I was trying to say. (One of these days, I'll learn not to write these pieces late on Friday nights when I'm really, really tired.)
 {.yellowBox}
 
