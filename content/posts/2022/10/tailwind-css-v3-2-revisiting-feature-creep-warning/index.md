@@ -7,6 +7,9 @@ date: 2022-10-22T08:43:00-05:00
 initTextEditor: iA Writer
 ---
 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/tailwind-css-v32-revisiting-my-feature-creep-warning-3ohm).
+{.yellowBox}
+
 Earlier this week, a [blog post](https://tailwindcss.com/blog/tailwindcss-v3-2) introduced [version 3.2](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.2.0) of the popular [Tailwind CSS](https://tailwindcss.com) styling framework.
 
 The "absolutely *massive* amount of new stuff" the post trumpeted includes:
@@ -31,7 +34,7 @@ That was nine months ago. Although I surely wasn't expecting to be proven right 
 
 I'll cut to the chase for all the aforementioned "front-end developers who dislike getting under CSS's hood"[^teams] . . .
 
-[^teams]: And those who manage them, given that Tailwind is especially popular as a way of enforcing styles among corporate development teams -- where CSS expertise can vary widely.
+[^teams]: And those who manage them, given that Tailwind is especially popular as a way of enforcing styles among corporate development teams --- where CSS expertise can vary widely.
 
 The more features that get added to Tailwind, the more you have to **know** about CSS before you can **use** those features. Right? So why not just bite the bullet and learn to use CSS **without** the additional tooling (and weird, often lengthy additions to your HTML) that Tailwind and other utility-first styling frameworks require?[^Sass]
 
