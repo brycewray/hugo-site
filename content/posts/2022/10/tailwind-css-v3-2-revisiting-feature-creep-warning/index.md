@@ -1,5 +1,5 @@
 ---
-title: "Tailwind CSS v3.2: revisiting my “feature creep” warning"
+title: "Tailwind CSS v3.2: revisiting my “feature creep” warning"
 description: "Only nine months after I suggested Tailwind might someday hit an unpleasant inflection point, that may now be happening."
 author: Bryce Wray
 date: 2022-10-22T08:43:00-05:00
