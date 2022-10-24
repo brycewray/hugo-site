@@ -38,6 +38,11 @@ I'll cut to the chase for all the aforementioned "front-end developers who disli
 
 The more features that get added to Tailwind, the more you have to **know** about CSS before you can **use** those features. Right? So why not just bite the bullet and learn to use CSS **without** the additional tooling (and weird, often lengthy additions to your HTML) that Tailwind and other utility-first styling frameworks require?[^Sass]
 
+<strong class="red">Update, 2022-10-24</strong>: The Tailwind fans who responded to this article in the aforementioned [Hacker News thread](https://news.ycombinator.com/item?id=33298806) were especially annoyed by that previous paragraph --- because they took it out of context. I **didn't** say Tailwind users don't know how to use CSS, and I **didn't** say that using Tailwind was an alternative to learning CSS. What I **did** say was (and I'll color-code the intended meaning): "So why not just bite the bullet and <span class="red">learn to use CSS **without** the additional tooling (and weird, often lengthy additions to your HTML)</span> that Tailwind and other utility-first styling frameworks require?"\
+\
+If that's not clear enough for anyone, I apologize that I can't further clarify it. *(And, may I note, the "you're ugly and your mother dresses you funny"-ish tone that a few of the HN responders chose to use didn't do them, or Tailwind's cause, any favors.)*
+{.blueBox}
+
 **That said**: if you insist on using Tailwind because you utterly can't bear to deal with vanilla CSS (although [it's not really all that vanilla anymore](https://web.dev/state-of-css-2022/)), Tailwind v3.2 provides quite a bit more to cram into your ditty bag of styling powers. You'll have to decide when it reaches that inflection point where its use consumes more time and brainpower than it saves.
 
 [^Sass]: For this site, I've used Tailwind off-and-on over the years, but kept returning to [Sass/SCSS](https://sass-lang.com) as a [more comfortable, bullet-proof styling method](/posts/2021/04/speaking-up-for-sass/) *vs.* what utility-first frameworks entail. (Then again, I've been working "under CSS's hood" for 20 years, so there's that.)
