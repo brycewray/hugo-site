@@ -303,6 +303,12 @@ article {
 			color: var.$bold-dark-mode;
 		}
 	}
+	.red strong, red b {
+		color: var.$red;
+		@media screen and (prefers-color-scheme: dark) {
+			color: var.$red-dark-mode;
+		}
+	}
 	blockquote strong, blockquote b {
 		color: var.$bold-blockquote;
 		@media screen and (prefers-color-scheme: dark) {
