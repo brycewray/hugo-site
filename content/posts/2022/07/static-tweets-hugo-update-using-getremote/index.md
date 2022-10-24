@@ -13,7 +13,7 @@ date: 2022-07-25T16:05:00-05:00
 **However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
 \
 Please use the [site search page](/search/) to find related posts.
-{.yellowBox}
+{.box}
 
 As I noted in a footnote to a [recent post](/posts/2022/07/staying-hugo-post-three-years-later/), I **really** like using [Hugo](https://gohugo.io)'s [`getJSON` function](https://gohugo.io/templates/data-templates/#get-remote-data) for grabbing data from a remote API, especially as compared to alternatives for most of Hugo's JavaScript-based competitors in the world of [static site generators](https://jamstack.org/generators) (SSGs):
 
@@ -51,6 +51,6 @@ Now that I've done so, here's an ultra-simplified depiction of the main differen
 ```
 
 **Update, 2022-07-26**: Contrary to what I wrote in the original version of this post, you **can** use `.RenderString` here, just as long as you establish a context it can "see" within the `with` loop --- in this case, with `$currentPage`. I am grateful to [Daniel F. Dickinson and @gaetawoo for setting me straight on that](https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687)![^whyVar]
-{.yellowBox}
+{.box}
 
 [^whyVar]: But could you use simply `.Page`, rather than having to create `$currentPage` as an equivalent of `.Page`? Usually, yes. However, the latter is safer. As Dickinson explained in the linked Discourse thread, "I tend to use the [`$currentPage`] method because I am frequently in a partial from a shortcode and other contexts where `$.` doesn't work as expected, and it is easier for me to . . . use something that works consistently . . ."

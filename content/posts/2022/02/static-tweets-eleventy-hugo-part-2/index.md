@@ -11,7 +11,7 @@ date: 2022-02-11T14:43:00-06:00
 **However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
 \
 Please use the [site search page](/search/) to find related posts.
-{.yellowBox}
+{.box}
 
 A few days ago, I issued [a post](/posts/2022/02/static-tweets-eleventy-hugo/) explaining how to embed fully static Twitter content in your [Eleventy](https://11ty.dev/)- or [Hugo](https://gohugo.io/)-based website. (If you haven’t yet read that post, please do so before proceeding, so you can better understand what follows below.)
 
@@ -159,7 +159,7 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 ```
 
 **Update, 2022-04-12**: I revised this shortcode slightly after learning that the Twitter v2 API [doesn’t currently support animations](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media).[^formerContent] So, if you know you'll want to embed tweets with videos or animated GIFs, you'll be better off using the `stweet` shortcode from the [previous article](/posts/2022/02/static-tweets-eleventy-hugo/): its older API **does** support them.
-{.yellowBox}
+{.box}
 
 [^formerContent]: The shortcode now simply shows nothing for such an item, as opposed to how it formerly displayed a link to the original tweet --- a link which is already down in the timestamp.
 

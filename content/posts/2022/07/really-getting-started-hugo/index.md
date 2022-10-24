@@ -7,7 +7,7 @@ date: 2022-07-19T10:55:00-05:00
 ---
 
 **Update, 2022-07-20**: It was [suggested to me](https://discourse.gohugo.io/t/proposed-method-for-new-users/39596/2) that I provide only the *steps* in this post, *without* the explanatory lead-in. That way, the intended targets --- new Hugo users --- would get the good stuff right from the start. [So I did, in a follow-up](/posts/2022/07/really-getting-started-hugo-four-steps/).
-{.yellowBox}
+{.box}
 
 We've all tried to assemble something by following a set of written instructions. More than a few of those times, we've realized that the instructions either weren't complete or were just plain wrong (sometimes both). On certain occasions of this type, we've been even more perplexed by also seeing that some of the expected parts were missing.
 
@@ -61,7 +61,7 @@ Imagine someone coming over to Hugo from, say, WordPress. Navigating the chasm b
 So let's move on to what I think would be a much more likely Happy Path where learning Hugo is concerned.
 
 **Note**: The following instructions are for only the two major computer operating systems for consumers, Windows and macOS, because I frankly doubt Linux users *need* help.
-{.blueBox}
+{.box}
 
 ----
 
@@ -156,7 +156,7 @@ Everything from here on takes place in that `my-site` folder. Windows users, ple
 ## Step 3 • Add minimal files to the site
 
 **Note**: This is **the** missing step, the absence of which makes new users nuts. I've already noted [one opinion from 2015](https://discourse.gohugo.io/t/hugos-default-theme/2169) as to why a default Hugo installation doesn't simply come with files like these. But I think what I'm about to describe will help Hugo novices more quickly understand how the sausage gets made. When they do, they'll "get" Hugo, **not** get lost while *trying* to "get" Hugo.
-{.yellowBox}
+{.box}
 
 Each of the files you'll create below is a plain-text file. In macOS, the default text editor is TextEdit. In Windows, it's Notepad. Either is fine for these. Each editor may complain about your adding *.html* or *.md* extensions to these, but you can ignore such messages.[^VSCode]
 

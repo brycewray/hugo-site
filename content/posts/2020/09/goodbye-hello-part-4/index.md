@@ -36,6 +36,6 @@ That said: at least as of this writing, I am optimistic. Unlike the other moves,
 It may not win every single race but, boy, does it have great days ahead of it, and I think I want to be around as it gets to them.
 
 **Note**: Unfortunately, it turned out I hadn't done my due diligence, and so there's a --- wait for it --- [Part 5](/posts/2020/09/goodbye-hello-part-5/). (Arrgh.)
-{.yellowBox}
+{.box}
 
 [^1]:	Because of how hobbled Netlify's free tier is when compared to the free tiers of Render and Vercel, the Netlify microsite never really was in the ballgame. It served more as a point of comparison than anything else. The same was true for another identical microsite that I briefly had on [Firebase](https://firebase.google.com) at the beginning of the testing. I pulled it from the test after it became clear it almost never would exceed last place, and definitely never eclipse third place out of the (then) four competing microsites. Whether that's because of Firebase's [previously noted](/posts/2020/07/goodbye-hello/) lack of [Brotli compression](https://opensource.googleblog.com/2015/09/introducing-brotli-new-compression.html), I can't say.

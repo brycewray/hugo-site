@@ -7,7 +7,7 @@ date: 2022-06-12T16:10:00-05:00
 ---
 
 **Acknowledgment**: I express tremendous thanks to [Daniel F. Dickinson](https://github.com/danielfdickinson/), without whose [help on the Hugo Discourse forum](https://discourse.gohugo.io/t/different-results-for-if-in-params-tags-test/38990/4) I wouldn't have been able to implement the code described in this post. *Thank you again, kind sir!*
-{.yellowBox}
+{.box}
 
 It's been years since the [rise of HTML5/CSS3 got front-end developers thinking about ways to have *scoped styling*](https://css-tricks.com/saving-the-day-with-scoped-css/) --- at least, before [browsers stopped supporting it](https://twitter.com/ebidel/status/476026012610748416) and web devs had to depend on their build tools for scoping.
 
@@ -95,7 +95,7 @@ So how would all the SCSS files work in practice? Well, let's take that `post-co
 
 **Important**: The `@use` statements require [Dart Sass](https://sass-lang.com/dart-sass). A Hugo site still using the older, [deprecated LibSass](https://sass-lang.com/blog/libsass-is-deprecated) would use `@import` instead; also, in the example above, you'd have to `@import` the `../partials/variables` partial, since individual LibSass files can't `@use` that partial. For information on the differences between `@use` and `@import`, see [this explanation](https://sass-lang.com/documentation/at-rules/import) on the [Sass website](https://sass-lang.com).\
 Also, if you want to run Dart Sass with Hugo --- which I strongly recommend, if your setup allows --- please refer to my recent post, "[Using Dart Sass with Hugo: the nitty-gritty](/posts/2022/05/using-dart-sass-hugo-nitty-gritty/)" (you may first want to see its predecessor, "[Using Dart Sass with Hugo: the GitHub Actions edition](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/)").
-{.yellowBox}
+{.box}
 
 Once I'd spent some time getting all those "sectional" combos done, all that was left --- and you realize I'm being facetious by saying "all" --- was to get Hugo to use it all as intended.
 
@@ -344,4 +344,4 @@ Of course, this is very much a work in progress. While the current setup has alr
 Still, if I do say so myself, I think this is a good start. It's probably a lot more manual than many of you would want to try --- and I'm sure someone can point out ways to clean up the process of creating all the nested slices for `$bigSlice` --- but, if you're interested in getting the closest to truly scoped styling that Hugo-without-help can provide, this at least may give you some ideas as to how you can proceed.
 
 **Update, 2022-06-28**: Consider this now an abandoned experiment. I went with it for a couple of weeks, but, in the end, decided to revert to my previous definitely-**not**-scoped configuration after seeing that *this* method hampered attempts to make certain styling changes --- that is, *without* invoking chaos which wasn't worth my time to resolve. Perhaps you'll have better luck with it.
-{.yellowBox}
+{.box}

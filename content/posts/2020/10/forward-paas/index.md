@@ -20,7 +20,7 @@ A Cloudflare Worker is free; but, when I originally published this post, using K
 That said, I was initially concerned that the free tier might come up short compared to the Workers Bundled Plan because the former still lacked a key performance capability --- specifically, lower first-hit latency --- that's included with the latter. However, I've since tested the free tier, and the results suggest the difference is negligible for a static site like this one, so I now *think* that shouldn't be a problem. In addition: just for messing around with a Workers site so you can see how it all works before you go all-in, the free plan is a great new option.
 
 **Important**: Still, be sure that you test this fairly extensively with lots of changes before you commit your site to it, because this can result in more "requests" in a given amount of time than the free tier allows.
-{.yellowBox}
+{.box}
 
 With the three hosts I described in "[A normal person's guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting/)," deploying content is as simple and quick as pushing a commit to your chosen online repository. With Cloudflare Workers, you have to use Cloudflare's `wrangler` command-line interface (CLI) tools (which I'd compare favorably to [Firebase](https://firebase.google.com)'s CLI tools). I'm currently mitigating this through a [GitHub Action](https://github.com/features/actions),  an approach similar to what I described in "[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd/)" and "[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)"; but none of this is for normal, non-nerdy folks.
 

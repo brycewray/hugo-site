@@ -11,12 +11,12 @@ In the process of my experimentation with various static site generators (SSGs),
 Of course, be sure to enable each of these in your Eleventy config file through the [usual procedure](https://www.11ty.dev/docs/shortcodes/). Feel free to rename them if you wish; their respective names are just what I call them.
 
 **Note**: For the most current repo-based form of the SCSS I used to style both tweets and toots displayed through these shortcodes, see [this partial](https://github.com/brycewray/eleventy_site/blob/main/src/assets/scss/_twitter.scss).
-{.yellowBox}
+{.box}
 
 And, yes, this may finally be the end of my posts on this subject, half a year after [I started down this path](/posts/2022/02/static-tweets-eleventy-hugo/). Feel free to rejoice. I'll be right there with ya.
 
 **Update, 2022-08-30**: Actually, I decided I should do [at least one more such post](/posts/2022/08/static-tweets-astro-two-sources-edition/).
-{.yellowBox}
+{.box}
 
 ## Static tweets
 

@@ -30,7 +30,7 @@ Also: when you set the `data-mapping` parameter, I **strongly** suggest choosing
 [^pn]: For example, `posts/2022/05/tips-using-giscus/` is both this page's pathname and the title of its related GitHub Discussion --- or, at least, the latter *will* be true when/if this page receives at least one giscus comment or reaction.
 
 **Update, 2022-07-24**: That problem was [solved on <span class="nobrk">2022-07-23</span>](https://github.com/giscus/giscus/issues/508#issuecomment-1193106139) with a [fix that uses *hashing*](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#data-strict) as a workaround.
-{.yellowBox}
+{.box}
 
 ## It's remote scripting all the way down
 
@@ -41,14 +41,14 @@ Sadly, the answer is: "No."
 **All** the optional giscus components (including those for various web frameworks and libraries, such as React or Svelte) are, in the end, just wrappers for the same JavaScript that any website can add without that extra overhead. So, in the end, go with the easiest installation available: simply add the recommended script to a web page, layout, partial layout, *etc.*, and access it as documented.
 
 **Note**: If you have a strict [Content Security Policy](https://content-security-policy.com), you'll have to edit it to mention [https://giscus.app](https://giscus.app) within the `frame-src`, `style-src`, `font-src`, and `script-src` sections. In `style-src`, you must also add `'unsafe-inline'` (and, yeah, I hate that, too; if I stop using giscus, that'll likely be one of the key reasons why).
-{.yellowBox}
+{.box}
 
 ## Get lazy
 
 Be sure giscus is set to *lazy-load*, through a `data-loading="lazy"` line in your site's giscus script. That way, it won't bring in the vast majority of its code, styling, and image assets *until* the visitor has scrolled down to near where the giscus instance appears on the page --- which, more often than not, probably will be near the bottom. This can give your visitors a smoother experience.
 
 **Note**: Unfortunately, giscus's lazy-loading doesn't seem to work in either Firefox or Safari.
-{.yellowBox}
+{.box}
 
 ## Styling hocus-pocus
 

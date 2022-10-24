@@ -15,7 +15,7 @@ Years ago, the availability of Hugo image processing was more restrictive concer
 [^versionGlobal]: Despite searching through Hugo [release notes](https://github.com/gohugoio/hugo/releases) and various Hugo documentation updates, I was unable to determine exactly which version first supported this. All I could do was see that the related documentation itself changed sometime in the second half of 2020 to mention the acceptability of global resources for Hugo's image processing.
 
 **Update from the future**: [A few weeks later](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/), I changed to the page-resources approach after receiving some particularly savvy advice.
-{.yellowBox}
+{.box}
 
 For truly responsive images, you must define the *breakpoints*. These are viewport sizes, usually defined in pixels, for the browser to use in deciding *which* image to serve. Some articles you'll find out there --- as in the [references](#references) I'll list at the end --- take a more hard-coded approach to the breakpoints than I feel is necessary or appropriate. This probably is because of the sample code from older articles of this type, in which it's common to assign a variable to each of several breakpoints (*e.g.*, `$tiny` for a 500-pixel breakpoint, `$medium` for an 800-pixel one, *etc.*). Yes, you can do that and it'll work, but I suggest another method which I'll describe in a bit.
 
@@ -247,7 +247,7 @@ Total in 69905 ms
 In just under seventy seconds, Hugo rebuilt nearly 1,500 image files from scratch --- *and* the 200+-page site itself. Pretty slick.
 
 **Note**: If you're similarly starting from scratch with many images, and/or you want to minimize issues on your site's host the first time you switch to this, [set your Hugo config file's `timeout` value](https://gohugo.io/getting-started/configuration/#timeout) to longer than the default of thirty seconds. After you get to the point where your builds are more incremental where the images are concerned, thirty seconds will be *’waaay* more than enough time, both locally and on the host.
-{.yellowBox}
+{.box}
 
 When I first used Hugo in 2018--2019, I knew little or nothing about its ability to do image processing and, even if I had known enough, I was much more reluctant back then to get under the hood with Go-type templating. Moreover, since then, Hugo has added two features, the absence of which I'd have considered show-stoppers:
 
@@ -257,7 +257,7 @@ When I first used Hugo in 2018--2019, I knew little or nothing about its ability
 I also like the fact that, unlike my Cloudinary-using `imgc` shortcode, `imgh` doesn't require manual entry of `width` and `height`, because Hugo gets them automatically from each image `$src` as `$src.Width` and `$src.Height`, respectively. (As you probably know, modern browsers use `width` and `height` to set the correct aspect ratio for images where styling doesn't otherwise handle it.)
 
 **Update, 2022-07-26**: In the original version of this post, I used Hugo's [`imageConfig` function](https://gohugo.io/functions/images/#imageconfig) to get this information, only to learn later that it wasn't necessary (and, in fact, caused an issue or two when I made some other revisions in my own code not related to or included in the sample here) so I decided to drop it in favor of the already-there `.Width` and `.Height`. Simpler is better.
-{.yellowBox}
+{.box}
 
 ## Closing observations and suggestions
 
@@ -299,4 +299,4 @@ Even if you don't use `imgh` or anything like it, I hope this article has at lea
 - Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (<span class="nobrk">2022-06-19</span>).
 
 **Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images. (The exceptions, all assuming the site is on Hugo at the time, are: the one on this page, so you can see the `imgh` shortcode actually working; and the one on "[A new way to generate LQIPs in Hugo 0.104.0](/posts/2022/09/new-way-lqips-hugo-0-104-0/)," to illustrate the subject of that post.) This was mainly because: I no longer wanted to keep all those Hugo-generated image resources in my site repo and, in comparative testing, I could see *slightly* better quality in some of the images as rendered via Cloudinary as opposed to their Hugo-generated counterparts. A peripherally connected additional consideration was that I'd already begun using Cloudinary to [auto-generate my site's social media images](/posts/2022/10/automated-social-media-images-cloudinary-hugo/).
-{.yellowBox}
+{.box}

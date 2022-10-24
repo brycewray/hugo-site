@@ -6,7 +6,7 @@ date: 2022-03-09T17:41:00-06:00
 ---
 
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my [previous post](/posts/2022/03/using-dart-sass-hugo/). This is a brief follow-up which will assume you've already read that one.
-{.yellowBox}
+{.box}
 
 Just when I thought the method about which I wrote yesterday would be the only way Hugo users would get to use [Dart Sass](https://sass-lang.com/dart-sass) any time soon --- well, as I said therein, albeit in a totally different context, "Ya Nevah Know."
 
@@ -199,4 +199,4 @@ And all of that gives you what, you ask? Very simply, it gives you the full spee
 *Finally: as always, thanks to Pedersen ([@bep](https://github.com/bep)) for his continuing efforts, above and beyond his already substantial day-to-day development work, for the Hugo community!*
 
 **Update, 2022-05-18**: I've since come up with what I consider to be a [better, or at least safer, way](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/).
-{.yellowBox}
+{.box}

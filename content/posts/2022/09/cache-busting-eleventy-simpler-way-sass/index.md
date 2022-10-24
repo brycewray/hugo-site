@@ -8,7 +8,7 @@ initTextEditor: iA Writer # default --- change if needed
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/cache-busting-in-eleventy-a-simpler-way-with-sass-10h3).
-{.yellowBox}
+{.box}
 
 If you use the [Eleventy](https://11ty.dev) static site generator (SSG) and [Sass](https://sass-lang.com) to build your website, read on for some cool stuff.
 

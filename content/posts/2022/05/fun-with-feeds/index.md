@@ -13,7 +13,7 @@ date: 2022-05-30T13:10:00-05:00
 <strong class="red">Nota para los visitantes de Europa</strong>: si ingresó "diversión con comida" *("fun with food" en inglés)* en Google y lo envió aquí, lo siento, pero esta página <strong class="red">no es</strong> sobre comida. Se trata de cómo usar [las fuentes web](https://es.wikipedia.org/wiki/Fuente_web).\
 \
 <strong class="red">Poznámka pro návštěvníky z Evropy</strong>: Pokud jste do Googlu zadali „zábava s jídlem“ *(„fun with food“ v angličtině)* a poslalo vás to sem, omlouvám se, ale tato stránka <strong class="red">není</strong> o jídle. Jde o to, jak používat [webové zdroje](https://cs.wikipedia.org/wiki/RSS).
-{.yellowBox}
+{.box}
 
 If you're not already using a [feed reader app](https://en.wikipedia.org/wiki/RSS), you should start.
 

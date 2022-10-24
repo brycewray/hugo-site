@@ -40,4 +40,4 @@ Whether there are any lessons in all this for others, I'm unsure. I guess they w
 - But, if you *do* use MailMate (or any other IMAP-only email client), stick with whatever you're using now.
 
 **Update, 2022-09-15**: Ahh, well, my future self [begs to differ](/posts/2022/09/using-icloud-mail-custom-domain-return/).
-{.yellowBox}
+{.box}

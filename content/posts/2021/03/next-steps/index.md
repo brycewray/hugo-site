@@ -6,7 +6,7 @@ date: 2021-03-11T16:30:00-06:00
 ---
 
 **Update, 2021-04-15**: After an initial miscommunication gave me the wrong impression about the thinking higher up, I learned that I won't be doing this work, after all. However, I'm leaving this post in place for archival purposes and [for the sake of transparency](/posts/2019/10/otoh/).
-{.yellowBox}
+{.box}
 
 As I [mentioned a few days back](/posts/2021/03/gems-in-rough-03/), Day Job-related concerns have led me to spend time dabbling in the [Next.js](https://nextjs.org) [React](https://reactjs.org) framework. This is because I'm researching possible future options for my employers’ web presence, and Next.js seems to fit their needs pretty well.
 
@@ -103,7 +103,7 @@ import '@scss/global.scss'
 One of the ideas behind this project is to plan for how future teams can manage the involved sites. Where styling is concerned, I'm gambling that [Sass/SCSS](https://sass-lang.com) will still be around in the long term, rather than going with the currently hot [Tailwind CSS](https://tailwindcss.com). Besides, Tailwind's fixed units aren't quite precise enough for some of what I'm trying to do.[^extendTWCSS]
 
 **Note**: Out of curiosity, I *did* try Tailwind with Next.js 10.0.7, and soon ran into a [memory glitch](https://github.com/vercel/next.js/discussions/21319) that tends to crash the Next dev server. Anyway, I went back to SCSS in a hurry, and am perfectly happy with that choice.
-{.yellowBox}
+{.box}
 
 [^extendTWCSS]: Yes, I know you can extend Tailwind's built-in styles, use `@apply`, mix it in with some custom styles of your own, and so on. I've done all of those in the past. I still decided otherwise.
 

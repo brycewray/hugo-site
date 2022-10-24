@@ -220,4 +220,4 @@ Now, on to the code.
 ```
 
 **Note**: Of course, if you're already a subscriber to either of my feeds (and, if so, thank you!), you won't see the resulting "Reply via email" link in content that had been pulled into your chosen newsreader app before I implemented these code changes. The only way to see it in older content would be to flush the old posts and then reload them.
-{.yellowBox}
+{.box}

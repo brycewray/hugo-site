@@ -47,7 +47,7 @@ My regular readers know that each of my posts has usually sported a big ol' hero
 One more thing: because CTCAJW Mode means I may be more frequently publishing posts, even if they're often shorter, I'll have to decide whether to continue my long-established practice of giving a heads-up on social media every time I issue a new post. I don't want to be (more) annoying. There's already ’way too much of that on social media, and it ain't gonna be gettin' any better. So, as always, I invite you to follow my feed --- [RSS](/index.xml) or [JSON](/index.json), as you may prefer --- to make sure you won't miss anything, regardless of my future choices about social media.
 
 **Update, 2022-05-25**: Concerning that last paragraph, I've now pinned the following tweet/[toot](https://docs.joinmastodon.org/user/posting/) to my profiles on Twitter and the two [Mastodon](https://joinmastodon.org) instances where I’m currently active:
-{.yellowBox}
+{.box}
 
 {{< stweet user="BryceWrayTX" id="1529514823658110977" >}}
 

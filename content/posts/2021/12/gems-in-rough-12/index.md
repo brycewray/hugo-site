@@ -7,7 +7,7 @@ date: 2021-12-26T10:07:00-06:00
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).
-{.blueBox}
+{.box}
 
 This one will be a quickie, a fact which I doubt will ruffle anyone's feathers. I've been uncharacteristically web-quiet during the middle of this month due to several personal matters which have absorbed my attention. However, with the coast slightly clearer today, I'm passing along these items for your consideration.
 

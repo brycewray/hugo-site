@@ -93,4 +93,4 @@ Do I ever look at other apps any more? Oh, sure. It's what I sometimes call "the
 Are the Apple Mail clients perfect? Absolutely not. Are they more feature-rich than the competition? No, definitely not. But they *work well enough* for my purposes, and they've relieved me of that search for the Holy Grail --- the Holy Mail? --- for a good while now. That's all I wanted. So, if you're also searching for that same chalice, perhaps you'll find this little tale of use.
 
 **Update from the future**: [A few weeks after I initially published this post](https://fastmail.blog/company/fastmail-new-logo/), the provider changed its name from *FastMail* to *Fastmail*.
-{.yellowBox}
+{.box}

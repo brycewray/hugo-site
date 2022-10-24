@@ -147,16 +147,17 @@ abbr, .allSmallCaps, .ascaps {
 	display: none;
 }
 
-.yellowBox, .blueBox {
+.box {
 	font-family: var.$sans-serif;
+	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
-	border: 1px solid hsl(0, 0%, 20%);
+	border: 1px solid var.$black;
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-1;
+		border: 1px solid var.$white;
 	}
 	p {
 		padding: 0;
@@ -164,24 +165,8 @@ abbr, .allSmallCaps, .ascaps {
 	}
 }
 
-.yellowBox + hr, .blueBox + hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+.box + hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
 	margin-top: 1.75em;
-}
-
-.yellowBox {
-	background: hsl(52, 100%, 85%);
-	@media (prefers-color-scheme: dark) {
-		background: hsl(40, 100%, 10%);
-	}
-	font-size: 85%;
-}
-
-.blueBox {
-	background: hsl(200, 100%, 95%);
-	@media (prefers-color-scheme: dark) {
-		background: hsl(200, 100%, 20%);
-	}
-	font-size: 85%;
 }
 
 img.containedImage {

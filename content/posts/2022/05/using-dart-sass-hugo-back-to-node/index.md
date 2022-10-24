@@ -9,7 +9,7 @@ date: 2022-05-24T15:23:00-05:00
 {{% disclaimer %}}
 
 **Update, a few hours later**: I re-thought this and went back to the GitHub Actions-enabled deployment method; I decided that, at least for now, it simply offers too many conveniences to blow it off, especially in favor of the slower development process required by using the Node.js Sass package mentioned below. Will keep you advised.
-{.yellowBox}
+{.box}
 
 "The best-laid plans of mice and men," and all that.
 

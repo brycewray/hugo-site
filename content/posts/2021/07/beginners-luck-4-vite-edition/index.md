@@ -12,7 +12,7 @@ Given the interest the community showed in my previous post, "[Eleventy + Vite =
 The new starter's repo is [`eleventy_vite_starter`](https://github.com/brycewray/eleventy_vite_starter). There's also an [online demo](https://eleventy-vite-starter.vercel.app/) which, if you're familiar with any of my other starters, may not float your boat --- but the thing is, I was able to convert its predecessor to this config in well under an hour. That augurs well for your efforts, I would hope.
 
 **Update, 2021-08-22**: Today, I switched my site repo **back** to my own bespoke setup, away from the Eleventy/Vite configuration described herein. The latter proved to be problematic during local development, particularly when I needed to test changes on devices on my local network. The mixing of the Eleventy and Vite processes just didn't go well with that. However, I retain my great admiration for Vite, and will hope for a better Eleventy/Vite solution down the line. Perhaps it'll come from [one particular plugin that requires the yet-to-come Eleventy 1.x](https://snugug.com/musings/eleventy-plus-vite/). As always, I'll retain this post and [the previous one](/posts/2021/07/eleventy-vite-elite/) for [archival purposes](/posts/2019/10/otoh/); and, for those who might yet be interested, I'll also keep alive the starter repo described in this post.
-{.yellowBox}
+{.box}
 
 ## The conversion process
 
@@ -241,7 +241,7 @@ I tossed out the existing `scripts` object in `package.json` in favor of the fol
 ```
 
 **Note**: I'll explain later what these do.
-{.yellowBox}
+{.box}
 
 #### Templating
 

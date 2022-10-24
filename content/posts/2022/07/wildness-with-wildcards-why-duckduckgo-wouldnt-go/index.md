@@ -36,4 +36,4 @@ By the way, it turns out I'd have gotten my answer earlier if I'd only checked a
 - World Wide Web Consortium (W3C), *Content Security Policy Level 3, W3C Working Draft, 4 July 2022*, "[Source lists](https://w3c.github.io/webappsec-csp/#framework-directive-source-list)."
 
 **Update, 2022-07-16**: I realized after publishing this that someone could very easily wonder why I didn't simply set the CSP to [`Report-Only`](https://content-security-policy.com/report-only/), so everything would work **but** I'd get some data indicating why the form wasn't going through. Well, I **did** try that first --- but, for reasons unknown to me, the reporting didn't even flag the error. This left me with only the alternative of taking the CSP live. Of course, that's definitely ***not*** an advisable practice for debugging the CSP on a site with a lot of traffic.
-{.yellowBox}
+{.box}

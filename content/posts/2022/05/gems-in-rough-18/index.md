@@ -9,7 +9,7 @@ date: 2022-05-14T10:50:00-05:00
 {{% disclaimer %}}
 
 Each entry in the “Gems in the rough” series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators](https://jamstack.org/generators) (SSGs).
-{.blueBox}
+{.box}
 
 ## Code for copying code
 
@@ -45,7 +45,7 @@ My research found four sources on which I chose to rely (and the latter three al
 - Justin James, "[Hugo --- Dynamically Add Copy Code Snippet](https://digitaldrummerj.me/hugo-add-copy-code-snippet-button/)," March 7, 2022.
 
 **Note**: It's not a typo; two of the articles **do** have identical titles.
-{.yellowBox}
+{.box}
 
 Incidentally, I purposely chose not to add visible indications of each code block's language. Those are nice, but I sometimes have to fudge that setting a bit[^fudge] to get decent highlighting on certain code; so, say, it wouldn't help you to see a balloon calling that code `jinja` if it isn't *really* from the [Jinja2 template engine](https://palletsprojects.com/p/jinja/).
 

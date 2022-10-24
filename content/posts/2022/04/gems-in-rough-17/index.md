@@ -9,7 +9,7 @@ date: 2022-04-28T15:26:00-05:00
 {{% disclaimer %}}
 
 Each entry in the “Gems in the rough” series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators](https://jamstack.org/generators) (SSGs).
-{.blueBox}
+{.box}
 
 ## Getting giscus going again
 
@@ -32,7 +32,7 @@ I then posted word of this to a few Discords where I thought it might be useful;
 **However**, I'd missed the most sensible solution of all: give the GitHub Discussions their **own separate repo** and point giscus to it from, well, whichever repo may be hosting this site at whatever time. (Thanks to the Astro team's [Sarah Rainsberger](https://twitter.com/sarah11918) for the idea!) So, now, the comments live in [a `comments` repo](https://github.com/brycewray/comments), where they should be eternally safe from my fickleness.
 
 **Later update**: Turned out that, while the previous comments and reactions were indeed back on the site, it wasn't possible for anyone to enter **new** ones --- **until** (and, again, I have Sarah Rainsberger to thank for giving me the word that things were amiss) I went back into the giscus website and obtained a new set of variables for the `comments` repo. **Now** it all works again. So that's one more thing you have to do in such a case.
-{.yellowBox}
+{.box}
 
 ## Netlify Edge Functions
 

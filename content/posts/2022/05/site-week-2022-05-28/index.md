@@ -52,5 +52,5 @@ Now, let's see what spewed forth from here in the last week.
 *A few choice paragraphs from a blog post I saw today.*
 
 **Plug**: Want to know whenever I issue a post? **Follow the feed** (choose [RSS](/index.xml) or [JSON](/index.json)).
-{.yellowBox}
+{.box}
 

@@ -27,14 +27,14 @@ setup: |
 
 I created the `Box` component for, say, an item[^attrs] like this:
 
-**Note**: This colorful box calls your attention to this item.
-{.yellowBox}
+**Note**: This box calls your attention to this item.
+{.box}
 
 . . . called as follows:
 
 ```md
-<Box cssClass="yellowBox">
-**Note**: This colorful box calls your attention to this item.
+<Box>
+**Note**: This box calls your attention to this item.
 </Box>
 ```
 
@@ -78,4 +78,4 @@ I reluctantly made this choice after running into a few particular Astro glitche
 This setback notwithstanding, I remain optimistic about the Astro platform, and will keep experimenting with Astro, being active in its unbelievably nice community (if those folks can tolerate me and my fickleness, that is), and hoping for a chance to re-implement it here in the not-too-distant future.
 
 **Note**: Although it's unrelated to the subject of this piece, you may be interested to know that I wrote this, at least in part, using the [v.5 beta version](https://multimarkdown.zendesk.com/hc/en-us/community/posts/4606313740051-Where-to-download-the-beta-) of the venerable [MultiMarkdown Composer](https://multimarkdown.com/). Also, it appears that the equally venerable [iA Writer](https://ia.net/writer), my most frequent daily driver for these posts, [soon will have a v.6 release](https://twitter.com/iAWriter/status/1522306304492118018). Each new major version will have been a long while coming; it was back in 2017 that MMDC reached v.4.0 and iA Writer reached v.5.0 (for iOS, at least, while the Mac version arrived in 2018).
-{.yellowBox}
+{.box}

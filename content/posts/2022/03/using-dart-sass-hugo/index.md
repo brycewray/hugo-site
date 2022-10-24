@@ -7,7 +7,7 @@ date: 2022-03-08T11:09:00-06:00
 ---
 
 **Update, 2022-03-09**: Things changed dramatically the day after I originally wrote this, so there's a [sequel](/posts/2022/03/using-dart-sass-hugo-sequel/) you'll definitely want to read after this one.
-{.yellowBox}
+{.box}
 
 {{% disclaimer %}}
 
@@ -120,7 +120,7 @@ Then, the version for **internal** CSS:
 ```
 
 **Note**: In case it would help, I've also put up a minimal [demo repo](https://github.com/brycewray/hugo-npm-sass) and [site](https://hugo-npm-sass.vercel.app/) based on this code.
-{.yellowBox}
+{.box}
 
 ## The fight for mindshare
 

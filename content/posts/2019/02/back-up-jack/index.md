@@ -6,7 +6,7 @@ date: 2019-02-23T12:45:00-06:00
 ---
 
 **Update, 2020-01-11**:  While I'll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I'm now "just" on 3-2-1 rather than 4-2-2). If you're on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta *can* imagine just doesn't seem to care about QC where its Mac version of OneDrive is concerned.
-{.yellowBox}
+{.box}
 
 No one will ever mistake me for a high-tech version of [Henry David Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) (which is a pretty bizarre concept, if you go there), but I've been trying to simplify my computing setup --- not so much where hardware is concerned but, instead, the services to which I have subscribed.
 
@@ -72,7 +72,7 @@ As for the cost savings, they're small *but* I'm getting more for my money. Befo
 In the first week under the new setup, I have been continually amazed to watch how smoothly macOS works with iCloud, now that I've finally given it the full "You da Sync Man" treatment --- especially with the Mac set to [optimize local storage](https://support.apple.com/en-us/HT206996). I know, it should've been obvious, and it was, but *knowing* it was much different than *seeing* it has been. And, as a side benefit, I get a little thrill every time I check the Files app in iOS and see *all* my freakin’ Mac stuff in there, too. That was sometimes problematic with the other services, notably OneDrive.
 
 **Note**: In the wake of my [later issues with my Mac's iCloud Sync that briefly caused me to drop using Ulysses](/posts/2019/05/boxed-in/), I learned that [it can be unwise to use the *Optimize Mac Storage* option](https://www.macworld.com/article/3306257/how-to-disable-optimized-icloud-drive-storage-with-a-single-click.html), after all. It can inadvertently delete files on which [some](https://support.screencast-o-matic.com/hc/en-us/articles/360007256154--Sorry-this-recording-has-missing-files-since-iCloud-Drive-Optimize-Mac-Storage-is-enabled) [apps](https://support.native-instruments.com/hc/en-us/articles/360000816565-TRAKTOR-Warning-Message-Optimize-Mac-Storage-is-turned-on-in-iCloud-Drive-Mac-), particularly ["shoebox" apps](/posts/2019/05/boxed-in/), depend. The more you know&nbsp;.&nbsp;.&nbsp;.
-{.yellowBox}
+{.box}
 
 Oh, yeah, OneDrive. Left that OneDrive-as-backup-from-Arq thread hanging, didn't I? Well, about that&nbsp;.&nbsp;.&nbsp;.
 

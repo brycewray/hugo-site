@@ -6,7 +6,7 @@ date: 2019-04-07T14:00:00-05:00
 ---
 
 **Note from the future**: You're probably better off with the approach I mention in 2022's "[Really getting started with Hugo: four simple steps](/posts/2022/07/really-getting-started-hugo-four-steps)," but I'm leaving this here for archival purposes and the sake of [transparency](/posts/2019/10/otoh/).
-{.yellowBox}
+{.box}
 
 Want to share your thoughts on the web? [Good for you](https://ia.net/topics/take-the-power-back).
 

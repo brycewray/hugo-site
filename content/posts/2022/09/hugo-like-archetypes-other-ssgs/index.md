@@ -67,7 +67,7 @@ Text begins here.
 - As for `date`, use a placeholder that works for your date and time zone.
 
 **Note to Windows users**: From here on, you're probably best advised to use [WSL](https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10).
-{.yellowBox}
+{.box}
 
 Then, in your project's top level, create a shell script, which I'll call `newfile.sh`:
 

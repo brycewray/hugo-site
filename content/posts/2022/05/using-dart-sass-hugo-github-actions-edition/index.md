@@ -6,10 +6,10 @@ date: 2022-05-17T14:49:00-05:00
 ---
 
 <span class="red">**Update, 2022-07-05**</span>: If you're running a Hugo site on [Vercel](https://vercel.com), be aware that the method described herein may have an adverse affect on the speed of your deployments. For more details, see "[Using Dart Sass with Hugo: some data on using Github Actions](/posts/2022/07/using-dart-sass-hugo-some-data-using-github-actions/)."
-{.yellowBox}
+{.box}
 
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my two [previous](/posts/2022/03/using-dart-sass-hugo/) [posts](/posts/2022/03/using-dart-sass-hugo-sequel/) on this subject. This follow-up assumes you've already read them.
-{.yellowBox}
+{.box}
 
 Thought we were done with workarounds to make the Hugo [static site generator](https://jamstack.org/generators) (SSG) and [Dart Sass](https://sass-lang.com/dart-sass) play nicely together, did you? Ah, well, so did I. But, as I reconsidered the two end runs about which I wrote previously, I had concerns.
 
@@ -71,7 +71,7 @@ Finally, because you don't want to have to scroll-scroll-scroll through instruct
 <details><summary>Click/tap here to toggle open/close.</summary>
 
 **Note**: You can [set certain parameters with a `netlify.toml` file](https://docs.netlify.com/configure-builds/file-based-configuration/), but herein we'll be making all Netlify changes through its GUI.
-{.yellowBox}
+{.box}
 
 ### Disabling automatic builds on Netlify
 
@@ -89,7 +89,7 @@ Make sure you have disabled automatic builds from the GitHub repository. To do t
 10. Select **Disable asset optimization** (if it's not already selected) and, if this is a change from the current setting, click **Save** within the **Asset optimization** block.
 
 **Note**: While steps 8--10 aren't utterly necessary, I recommend them to avoid any potential glitches in the process.
-{.yellowBox}
+{.box}
 
 ### Credentials for Netlify
 

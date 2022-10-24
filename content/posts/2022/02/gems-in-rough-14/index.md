@@ -7,7 +7,7 @@ date: 2022-02-18T12:36:00-06:00
 ---
 
 Each entry in the “Gems in the rough” series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators](https://jamstack.org/generators) (SSGs).
-{.blueBox}
+{.box}
 
 ## Eleventy goes full-time
 
@@ -75,7 +75,7 @@ I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appe
 **Update from the future in general (!)**: I continue to improve upon the shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between [Hugo](https://gohugo.io)'s [standard `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) and my shortcode.\
 \
 Please use the [site search page](/search/) to find related posts.
-{.yellowBox}
+{.box}
 
 This showed up in my Twitter feed a few days ago, referring to those aforementioned [recent](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about embedding static versions of tweets:
 

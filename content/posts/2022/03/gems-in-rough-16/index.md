@@ -7,7 +7,7 @@ date: 2022-03-11T09:55:00-06:00
 ---
 
 Each entry in the “Gems in the rough” series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators](https://jamstack.org/generators) (SSGs).
-{.blueBox}
+{.box}
 
 I think this is probably the earliest in any month that I’ve ever gotten to five posts. Not that quantity equals quality, to be sure, but just sayin’. So, while I’ve been spending most of the month so far in [Hugo](https://gohugo.io/)-related posts, what else has been going on in SSG-land?
 
@@ -34,7 +34,7 @@ It was [Patrick Kollitsch](https://github.com/davidsneighbour) — often better 
 To be sure, I’m *not* taking away the reply-by-email button/link, which will stick around regardless of what I decide long-term about continuing with giscus. In the meantime, you have *two* ways to react to each post. Your faithful correspondent always welcomes your thoughts.
 
 **Note**: Because of giscus’s reliance on the existing GitHub Discussions feature set, there currently is only one level of nesting; so, if a thread gets “heavy,” it may not be readily obvious who’s replying to whom.
-{.yellowBox}
+{.box}
 
 ## Another shameless plug
 

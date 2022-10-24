@@ -22,7 +22,7 @@ While experimenting with various static site generators (SSGs), I've created an 
 Note that `SToot.astro` assumes you have the [`date-fns`](https://github.com/date-fns/date-fns) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project. (By the way: in my original version of the component, I used [this styling](https://github.com/brycewray/astro-site/blob/main/src/styles/Twitter.scss).)
 
 **Suggestion**: You may want to read my [earlier post about the Hugo static-toots-embedding code](/posts/2022/06/static-mastodon-toots-hugo/), particularly regarding certain limitations which result from how Mastodon itself works.
-{.yellowBox}
+{.box}
 
 ```js
 ---

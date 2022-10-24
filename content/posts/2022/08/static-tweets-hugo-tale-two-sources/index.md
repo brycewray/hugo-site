@@ -11,7 +11,7 @@ date: 2022-08-02T15:35:00-05:00
 **However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
 \
 Please use the [site search page](/search/) to find related posts.
-{.yellowBox}
+{.box}
 
 Although I am by no means mechanically adept, I am tremendously curious about how things work. It's a major reason why, over the decades, I managed to eke out a decent living through various computer-enabled endeavors for which my 1970s college education obviously couldn't have prepared me. I was highly interested in these kinds of job functions, so I taught myself to do them.
 

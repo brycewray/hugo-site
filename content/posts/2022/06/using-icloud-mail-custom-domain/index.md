@@ -7,7 +7,7 @@ date: 2022-06-13T13:26:00-05:00
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/using-icloud-mail-with-a-custom-domain-24pc).
-{.yellowBox}
+{.box}
 
 I was excited a year ago when, at its 2021 Worldwide Developers Conference (WWDC), Apple [announced](https://9to5mac.com/2021/06/07/custom-domain-names-are-coming-to-icloud-mail-with-icloud/) that one feature of its [new extra-cost iCloud+ package](https://www.macrumors.com/2021/06/07/apple-announces-icloud-with-private-relay-more/) was support for *custom domains* in iCloud Mail.
 
@@ -34,7 +34,7 @@ Before you think, "Holy crap, he's spending $100 a year for personal email," ple
 [^oneMB]: See "One Mailbox" under "The SPAM and the Ugly" in [Mike Lapidakis](https://mike.lapidak.is/)'s article from last November, "[Thoughts on Custom Domains in Apple's iCloud Mail](https://empty.coffee/thoughts-on-custom-domains-in-apple-icloud-mail/)."
 
 <strong class="red">Important note</strong>: if you're doing the same --- bringing a Fastmail alias over to iCloud Mail --- you'll want to kill **both** the alias **and** the alias's domain entry on Fastmail. I found out the hard way that doing only the former but not also the latter, even if only to play it safe, can cause SNAFUs during the switchover process. If that sounds like too much of a jump off the bridge for you, remember that you can always reverse the process if necessary. It's tedious, but you can do it.
-{.yellowBox}
+{.box}
 
 ## Progress report
 

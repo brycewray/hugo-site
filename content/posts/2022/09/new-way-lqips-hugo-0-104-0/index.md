@@ -53,4 +53,4 @@ After specifying that `$LQIP_colors` is the return from `$src.Colors`, we have t
 Finally, be sure to check the `$.Colors` [example page](https://staticbattery.com/), and its [source code](https://github.com/bep/gallerydeluxe), mentioned in the 0.104.0 release notes.
 
 **Later note**: I subsequently found a [2018 article](https://calendar.perfplanet.com/2018/gradient-image-placeholders/) which suggested the result of this approach should be considered as not an LQIP but, rather, a **GIP** (gradient image placeholder). Fair enough --- and please, folks, let's avoid any *.gif*-style arguments about how to pronounce the *G* of *GIP*.
-{.yellowBox}
+{.box}

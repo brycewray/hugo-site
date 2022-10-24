@@ -48,7 +48,7 @@ By contrast: whenever I'd tinker with the [Astro](https://astro.build) and [Elev
 This made more sense when using Astro or Eleventy, because they already are using a ton of [Node.js](https://nodejs.org) packages, so what's one more? But, for my Node.js-free Hugo setup, I didn't want to go the `node_modules` route for **just** `get-share-image`.
 
 **Update**: For that matter, see also my 2022-10-20 update near the bottom of this post for a different approach, at least for use with Eleventy.
-{.yellowBox}
+{.box}
 
 Thus, the only way to do this to my satisfaction in Hugo was to recreate, entirely in Hugo templating, what `get-share-image` does.
 
@@ -65,7 +65,7 @@ https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto
 ![OG image from URL shown above](https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1036,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669)
 
 **Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)
-{.yellowBox}
+{.box}
 
 I found the Cloudinary documentation considerably less easy to follow than Lengstorf's; but, in the end, I managed to get to what I wanted. One key aspect about which I felt those Cloudinary docs weren't sufficiently explanatory was the need to **double-escape** [certain characters](https://cloudinary.com/documentation/layers#special_characters) in whatever text I wanted to overlay. Before I explain what *double-escaping* turned out to mean, let me first deal with the *escape* part.
 
@@ -88,7 +88,7 @@ Once I grasped that, I was home free. Well, almost. I also had to dope out Cloud
 By the way: remember how I mentioned earlier that I didn't like the lame formatting in Hugo's `Text` filter, which otherwise could accomplish the same thing as this procedure for locally hosted and processed images? Well, this is one major reason I prefer the Cloudinary URL method. It not only lets me control the text alignment, it also respects my use of *non-breaking spaces* to make sure none of my titles' line breaks result in one-word last lines, no matter how small a screen one may use.
 
 **Note**: For a fuller understanding of some of the parameters, I suggest reading Lengstorf's ["Options" documentation](https://github.com/jlengstorf/get-share-image#options) --- because, in the end, he's simply explaining the Cloudinary URL options. I particularly recommend reading his explanations **before** you try dealing with **Cloudinary's**. The latter's product is amazing, but a lot of its documentation clearly isn't for the faint-hearted (or, in my case, faint-headed).
-{.yellowBox}
+{.box}
 
 ## The code
 

@@ -8,7 +8,7 @@ date: 2022-10-22T08:43:00-05:00
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/tailwind-css-v32-revisiting-my-feature-creep-warning-3ohm) and was the subject of a [Hacker News thread](https://news.ycombinator.com/item?id=33298806).
-{.yellowBox}
+{.box}
 
 Earlier this week, a [blog post](https://tailwindcss.com/blog/tailwindcss-v3-2) introduced [version 3.2](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.2.0) of the popular [Tailwind CSS](https://tailwindcss.com) styling framework.
 
@@ -41,7 +41,7 @@ The more features that get added to Tailwind, the more you have to **know** abou
 <strong class="red">Update, 2022-10-24</strong>: The Tailwind fans who responded to this article in the aforementioned [Hacker News thread](https://news.ycombinator.com/item?id=33298806) were especially annoyed by one phrase in that previous paragraph --- because they took it out of context. I **didn't** say Tailwind users don't know how to use CSS, and I **didn't** say that using Tailwind was an alternative to learning CSS. What I **did** say was (and I'll color-code the intended meaning): "So why not just bite the bullet and <span class="red">learn to use CSS **without** the additional tooling (and weird, often lengthy additions to your HTML)</span> that Tailwind and other utility-first styling frameworks require?"\
 \
 If that's not clear enough for anyone, I apologize that I can't further clarify it. *(And, may I note, the "you're ugly and your mother dresses you funny"-ish tone that a few of the HN responders chose to use didn't do them, or Tailwind's cause, any favors.)*
-{.blueBox}
+{.box}
 
 **That said**: if you insist on using Tailwind because you utterly can't bear to deal with vanilla CSS (although [it's not really all that vanilla anymore](https://web.dev/state-of-css-2022/)), Tailwind v3.2 provides quite a bit more to cram into your ditty bag of styling powers. You'll have to decide when it reaches that inflection point where its use consumes more time and brainpower than it saves.
 

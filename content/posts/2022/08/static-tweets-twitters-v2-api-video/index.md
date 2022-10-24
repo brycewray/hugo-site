@@ -14,4 +14,4 @@ Since then, I've periodically checked that documentation to see whether this sit
 
 **Update, 2022-08-21**: Turns out that effort wouldn't be worth it; you still end up [having to use other APIs](https://twittercommunity.com/t/how-to-get-url-preview-of-link-shared-in-tweet/158649) to pull in what Twitter calls the "[Summary Card with Large Image](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)" which one typically sees in a tweet that includes a URL to a suitably managed web page.\
 In short . . . never mind. I'll stick with what I've got now. The v2 API may be what Twitter wants everyone to use, but it's both a major pain in the ass *and* not sufficient for proper embeds. To be fair, I know that's not what Twitter wants us to do with the v2 API. (On the other hand: after spending hour after hour staring at the v2 API's dev-unfriendly output and trying to find stuff in it, I'm fairly sure what I'd like Twitter to do with the v2 API.)
-{.yellowBox}
+{.box}

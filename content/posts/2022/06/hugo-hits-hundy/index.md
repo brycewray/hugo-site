@@ -19,12 +19,12 @@ The whole purpose of shortcodes is making it easy to add small, reusable snippet
 Let's say you occasionally want to drop in a standard disclaimer, and so you've made a shortcode for it rather than having to repeat the thing every time (the link is bogus):
 
 **Disclaimer**: This data is provided only for comparison and does **not** necessarily reflect the opinion of [this company](#).
-{.blueBox}
+{.box}
 
 Up to now, that would've had to be an HTML file:
 
 ```html
-<div class="blueBox">
+<div class="box">
 	<p><strong>Disclaimer</strong>: This data is provided only for comparison and does <strong>not</strong> necessarily reflect the opinion of <a href="{{ .Site.BaseUrl }}/about/" rel="nofollow">this company</a>.</p>
 </div>
 ```
@@ -33,10 +33,10 @@ Now, with Markdown as a shortcode format, the typing[^typing] is easier:
 
 ```md
 **Disclaimer**: This data is provided only for comparison and does **not** necessarily reflect the opinion of [this company]({{ .Site.BaseUrl }}about/).
-{.blueBox}
+{.box}
 ```
 
-[^typing]: Note that the link-handling here will be the same as in the HTML version **if** you've used a [`render-link` template](https://gohugo.io/templates/render-hooks/#render-hooks-for-headings-links-and-images) accordingly. As for that `{.blueBox}` item, that's an *attribute*; combined with my site's styling, it accomplishes the same thing as `<div class="blueBox"><p>[content]</p></div>` in the HTML shortcode. This is made possible by the appropriate [goldmark](https://github.com/yuin/goldmark) [setting](https://gohugo.io/getting-started/configuration-markup#goldmark) in your Hugo project's config file, as I explained in last year's "[New in Hugo: easier writing](/posts/2021/02/new-hugo-easier-writing/)."
+[^typing]: Note that the link-handling here will be the same as in the HTML version **if** you've used a [`render-link` template](https://gohugo.io/templates/render-hooks/#render-hooks-for-headings-links-and-images) accordingly. As for that `{.box}` item, that's an *attribute*; combined with my site's styling, it accomplishes the same thing as `<div class="box"><p>[content]</p></div>` in the HTML shortcode. This is made possible by the appropriate [goldmark](https://github.com/yuin/goldmark) [setting](https://gohugo.io/getting-started/configuration-markup#goldmark) in your Hugo project's config file, as I explained in last year's "[New in Hugo: easier writing](/posts/2021/02/new-hugo-easier-writing/)."
 
 ## Respect the indents
 
@@ -86,7 +86,7 @@ But, starting with Hugo 0.100.0, you get the desired indenting:
 - [What our customers say](#)
 
 **Note**: I purposely altered the example from the release notes, which showed a shortcode that was in Markdown --- although, as pointed out earlier, that wasn't possible before v.0.100.0 in the first place. Um, oops?
-{.yellowBox}
+{.box}
 
 ## More goodies
 

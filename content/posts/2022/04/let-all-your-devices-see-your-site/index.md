@@ -9,7 +9,7 @@ date: 2022-04-02T11:00:00-05:00
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/let-all-your-devices-see-your-site-27fd) and was the subject of a [Hacker News thread](https://news.ycombinator.com/item?id=30889663).
-{.yellowBox}
+{.box}
 
 Today's subject may seem a niche-ish use case, but I have reason to believe otherwise.
 

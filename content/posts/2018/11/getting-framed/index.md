@@ -12,7 +12,7 @@ Breaking news: we don't live in an ideal world.
 Each client wants its site or site modifications finished yesterday, to perfection, and for free---not necessarily in that order, but you get the point. Site-load time, including the [infamous Time to First Byte (TTFB)](https://en.wikipedia.org/wiki/Time_to_first_byte), is critical. And, while browsers have advanced a lot in the last three or four years, [not everybody is using the latest and greatest](http://gs.statcounter.com/browser-version-market-share) and, besides, [there are still some CSS shortcomings among even recent browser versions](https://www.w3schools.com/cssref/css3_browsersupport.asp).
 
 **Note**: I, uh, kinda [re-thought this](/posts/2018/11/grid-locked-no-more/) a few days later, but go ahead and read this one first so you'll have some perspective on that post.
-{.yellowBox}
+{.box}
 
 ## Frickin’ frameworks?
 
@@ -46,4 +46,4 @@ In the meantime, in our non-ideal world: when the decision is totally up to me, 
 <br />
 
 **Note**: Many thanks to Carol Skelly for "[Bootstrap (Flexbox) is still better than CSS Grid for creating layouts](https://medium.com/wdstack/bootstrap-is-still-better-than-css-grid-for-creating-layouts-522b7baf0411)," and Maria Antonietta Perna for "[The CSS Grid layout vs. CSS frameworks debate](https://www.sitepoint.com/css-grid-layout-vs-css-frameworks-debate/)."
-{.yellowBox}
+{.box}

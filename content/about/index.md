@@ -40,4 +40,4 @@ Thank you for stopping by. I hope you find this site a source of various little 
 Again, welcome.
 
 **Note**: For those familiar with the site, you'll see that this text now encompasses both the long-time "About me" text and the site's original home page "welcome" text.
-{.yellowBox}
+{.box}

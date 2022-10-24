@@ -48,4 +48,4 @@ And then it won't matter how smart the email client is.
 <br />
 
 **Note**: The icons shown in the first graphic were originally designed by [Sergey Ershov](https://www.iconfinder.com/Fishmoby) and are under the [Creative Commons license (Attribution 3.0 Unported)](https://creativecommons.org/licenses/by/3.0/). That licensing requires me to indicate any changes I made, which were edits of the SVG originals for size and stroke color.
-{.yellowBox}
+{.box}

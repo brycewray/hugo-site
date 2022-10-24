@@ -12,7 +12,7 @@ Introductory note for the uninitiated: each entry in the "Gems in the rough" ser
 Some SSGs, such as [Hugo](https://gohugo.io) and [Jekyll](https://jekyllrb.com), allow you to build your site without including posts to which you've assigned future dates. This can come in handy for any number of reasons, such as when you want to use multiple devices to work on a post and sync it through pushes to the site's online repository.[^WorkingCopy] Although [Eleventy](https://11ty.dev) doesn't have an "ignore-the-future" capability out of the box, [Saneef H. Ansari](https://saneef.com)'s article, "[Hiding posts with future dates in Eleventy](https://saneef.com/tutorials/hiding-posts-with-future-dates-in-eleventy/)," describes an elegant way to add it. I even used it to "hide" this post until I was ready for you to see it.[^repo] **But**&nbsp;.&nbsp;.&nbsp;. just be sure that, if your site's config file includes the [Eleventy documentation's `html-minifier` example code](https://www.11ty.dev/docs/config/#transforms-example-minify-html-output) (as is the case for this site), you adjust it [as suggested by David Soards](https://github.com/11ty/eleventy/issues/653#issuecomment-716272434) or your builds will break with an error that includes the lyrical phrase, `outputPath.endsWith is not a function (TypeError)`. Fun stuff.
 
 **Acknowledgement**: Thanks to [Raymond Camden](https://twitter.com/raymondcamden/status/1406277604504748035) for the link to Mr. Ansari's article!
-{.yellowBox}
+{.box}
 
 [^WorkingCopy]: This is essentially the workflow I described a couple of years ago in "[Roger, Copy](/posts/2019/07/roger-copy)," involving the use of the superb [Working Copy](https://workingcopyapp.com/) source-control app for iOS.
 
@@ -41,7 +41,7 @@ Mainly due to the first two, I have temporarily ceased updating my [two Hugo sta
 As for the third issue, I have **no** expectation that it will be resolved; I don't think the goldmark dev is interested in fixing it. The only alternative seems to be [reverting to the Blackfriday parser](https://gohugo.io/getting-started/configuration-markup/#blackfriday), which [goldmark replaced in Hugo 0.60.0](https://gohugo.io/news/0.60.0-relnotes/), but I can tell you that it's not a foolproof fix **even if** we could assume Hugo will continue to support Blackfriday indefinitely --- which we can't, because it won't. For one thing, my recent tests show that using Blackfriday with the current version of Hugo can result in occasional weirdness (*e.g.*, a footnote numbered *0* which wasn't even the first footnote in the document). Would using it with, say, a version *prior to* 0.60.0 allow Blackfriday to work properly? Perhaps. But Hugo's added many enhancements since the pre-0.60.0 days. I'm not going to tell the starter sets’ potential users to give up those goodies just for the proper punctuation that goldmark is incapable of providing.
 
 **Update, 2021-08-05**: The [release of Hugo 0.87.0](https://gohugo.io/news/0.87.0-relnotes/) included the [deprecation of Blackfriday](https://github.com/gohugoio/hugo/commit/c7252224c4fecfe8321f31b901e2510d98b657c4).
-{.yellowBox}
+{.box}
 
 **Update, 2022-03-02**: The third issue **was resolved** on February 28, 2022, with the release of [Hugo 0.93.0](https://github.com/gohugoio/hugo/releases/tag/v0.93.0). It included the first goldmark version, 1.4.7, with the code from a [pull request](https://github.com/yuin/goldmark/pull/280) that fixed all the cases I'd reported.
-{.yellowBox}
+{.box}

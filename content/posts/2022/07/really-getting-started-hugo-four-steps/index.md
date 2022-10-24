@@ -7,7 +7,7 @@ date: 2022-07-20T08:56:00-05:00
 ---
 
 **Note**: It was [suggested to me](https://discourse.gohugo.io/t/proposed-method-for-new-users/39596/2) that I provide only the *steps* in [yesterday's post](/posts/2022/07/really-getting-started-hugo/), *without* the explanatory lead-in. That way, the intended targets --- new Hugo users --- would get the good stuff right from the start. So, here goes.
-{.yellowBox}
+{.box}
 
 If you've been interested in trying the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG), here's a four-step procedure which I believe you'll find easier to follow than the official ["Quick Start" documentation](https://gohugo.io/getting-started/quick-start/):
 
@@ -19,7 +19,7 @@ If you've been interested in trying the [Hugo](https://gohugo.io) [static site g
 Now, the details . . .
 
 **Note**: The following instructions are for only the two major computer operating systems for consumers, Windows and macOS. I doubt Linux users, given their likely inclination toward more geeky pursuits, would *need* this kind of help.
-{.blueBox}
+{.box}
 
 ----
 
@@ -112,7 +112,7 @@ my-site   <-- The Hugo project folder
 Everything from here on takes place in that `my-site` folder.
 
 **Note**: Windows users, we'll refer to `content/` and `layouts/` --- *i.e.*, using **forward** slashes (the web's norm) rather than **back**slashes.
-{.yellowBox}
+{.box}
 
 ## Step 3 • Add minimal files to the site
 

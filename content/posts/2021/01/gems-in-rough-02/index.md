@@ -50,7 +50,7 @@ So, if you're a Hugo user right now, you have two options where it comes to good
 - Use your Hugo project's config file to opt instead for Blackfriday, which Hugo does still support. It's unknown how long that support will continue; so, if you go this route, you may want to start periodically checking the [Hugo community forum](https://discourse.gohugo.io) and [relevant Hugo docs](https://gohugo.io/getting-started/configuration-markup), just so a deprecation doesn't catch you by surprise.
 
 **Update, 2022-03-02**: This issue **was resolved** on February 28, 2022, with the release of [Hugo 0.93.0](https://github.com/gohugoio/hugo/releases/tag/v0.93.0). It included the first goldmark version, 1.4.7, with the code from a [pull request](https://github.com/yuin/goldmark/pull/280) that fixed all the cases I'd reported.
-{.yellowBox}
+{.box}
 
 ## Check your brackets
 

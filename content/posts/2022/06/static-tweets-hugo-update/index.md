@@ -7,19 +7,19 @@ date: 2022-06-07T15:46:00-05:00
 ---
 
 **Further info, 2022-06-08**: I discovered one additional requirement to make this work, so please see my "**Important**" note at the end.
-{.yellowBox}
+{.box}
 
 **Update from the future in general (!)**: I continue to improve upon the shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between [Hugo](https://gohugo.io)'s [standard `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) and my shortcode.\
 \
 **However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
 \
 Please use the [site search page](/search/) to find related posts.
-{.yellowBox}
+{.box}
 
 <br />
 
 **Note**: You may find it useful to see my [three](/posts/2022/02/static-tweets-eleventy-hugo/) [earlier](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) [posts](/posts/2022/04/static-tweets-astro/) about how to perform fully static embeds of tweets, but that's not necessary.
-{.yellowBox}
+{.box}
 
 I've updated my [Hugo](https://gohugo.io) shortcode, `stweet.html`, that embeds tweets in a static site without any of [Twitter](https://twitter.com)'s JavaScript or trackers.[^privacy] The [earlier](/posts/2022/02/static-tweets-eleventy-hugo) version handled text and media well enough, but fell short on pulling in those "cards" that Twitter generates when you add a link in a tweet, so I decided to fix that.[^PubSync]
 

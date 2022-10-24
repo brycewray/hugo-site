@@ -11,7 +11,7 @@ date: 2022-02-07T12:00:00-06:00
 **However**, in this or any other related post as the actual code changes, I will **not** change the post's code sample (for archival purposes) **unless** there's an overriding reason to change; *e.g.*, to correct a mistake that slipped past me during the editing process.\
 \
 Please use the [site search page](/search/) to find related posts.
-{.yellowBox}
+{.box}
 
 You know it’s important to respect, and protect, the privacy of your website’s visitors. However, serving them embedded social media content can complicate your good intentions. The good news is that my two favorite [static site generators](https://jamstack.org/generators/) (SSGs), [Eleventy](https://11ty.dev/) and [Hugo](https://gohugo.io/), will help you fix that.
 
@@ -40,7 +40,7 @@ When installed, the plugin will pull data from Twitter’s private Developer API
 That’s fine for when you’re developing locally, but you obviously don’t want to [commit](https://git-scm.com/docs/git-commit) that file to a public repo. As a result, you’ll have to supply these variables to your site host, so it can access them during each build (*e.g.*, here are instructions for [Netlify](https://docs.netlify.com/configure-builds/environment-variables/), [Vercel](https://vercel.com/docs/concepts/projects/environment-variables), and [Cloudflare Pages](https://developers.cloudflare.com/pages/platform/build-configuration#environment-variables)). The README warns that, if the environment variables *aren’t* available at build time, the plugin will fall back to that JavaScript glop from Twitter’s standard tweet-embedding process.
 
 **Note**: Please refer to the README for more details about the plugin, including its available options.
-{.yellowBox}
+{.box}
 
 With all that out of the way, let’s install the plugin:
 
@@ -141,7 +141,7 @@ And, just as we did with the Eleventy shortcode, we invoke this Hugo `stweet` sh
 ```
 
 **Note**: You can name the shortcode whatever you want, but naming it `tweet.html` will override the built-in `tweet` shortcode. On the other hand, you may be perfectly happy with that; I just want you to be aware of it.
-{.yellowBox}
+{.box}
 
 ## Them’s the breaks?
 

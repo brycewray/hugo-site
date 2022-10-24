@@ -6,7 +6,7 @@ date: 2020-12-11T16:55:00-06:00
 ---
 
 **Update, 2022-09-19**: Go ahead and read this post's [predecessor](/posts/2020/11/using-postcss-cache-busting-eleventy/), followed by this post and its [follow-up](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/), for perspective --- **but** then go to [this one](/posts/2022/09/cache-busting-eleventy-simpler-way-sass/) for a **much** simpler, **much** cleaner alternative.
-{.yellowBox}
+{.box}
 
 *Before reading this article, please review "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy/)" (despite how flawed its proposed solution turned out to be) for details on the importance of cache-busting your CSS and why Eleventy --- at least, as of this writing --- needs some external help with performing that function. In any event, I think you'll get a lot more out of **this** article if you've first read **that** one; and, so that I can omit some explainers and thus keep this already long article from being even longer, I will assume you've already done so.*
 
@@ -92,7 +92,7 @@ To my delight, it worked! And, by "it worked," I mean that the hash at the end o
 - Was the same after each host completed its build process. This was important because --- as I'd seen during my use of that interim query string solution --- build configurations and processes vary among hosts and so, under certain conditions, can produce results that might not necessarily work for you.
 
 **Caution**: Chastened as I am by my recent whiff, I do **not** pretend that these tests, either locally or on actual hosting environments, can necessarily be accurate for **every** conceivable computing situation. That's why I put the "(?)" in the subtitle. All I can say for sure is that this solution works for me locally and on multiple hosts using various configurations where the previous, PostCSS Hash-based solution failed to be reliable. But, as always, YMMV. Also, **please note** that the process completes itself **only** during actual site **builds**, and **not** in dev mode (or the `testbuild` script I use, either, so be aware of that if you're looking at my code) --- which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur.
-{.yellowBox}
+{.box}
 
 ## To fork or not&nbsp;to&nbsp;fork&nbsp;.&nbsp;.&nbsp;.
 
@@ -120,4 +120,4 @@ I hope that this solution, and this description of how I got to it, will at leas
 Happy cache-busting --- for real this time, I hope.
 
 **Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos’ code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts’ settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).
-{.yellowBox}
+{.box}

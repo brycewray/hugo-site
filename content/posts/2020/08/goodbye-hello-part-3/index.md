@@ -26,4 +26,4 @@ Why?
 So we'll see if I stick around this time. I hope this is not going to be the site-hosting equivalent of [last year's SSG "dance."](/posts/2019/12/sorta-strange-ssg-trip/) And, if you're one of my few but highly appreciated regular visitors, I'm sure you share that hope.
 
 **Note**: [To be continued](/posts/2020/09/goodbye-hello-part-4/) (sigh).
-{.yellowBox}
+{.box}

@@ -70,7 +70,7 @@ insert_final_newline = false
 ```
 
 **Update, 2022-07-04**: This .editorconfig file is a revised version of what I originally posted. This takes into account certain troublesome[^beCareful] file types.
-{.yellowBox}
+{.box}
 
 As for making sure my existing code samples then still looked as I desired (for me, that's two spaces per indent, as you saw in that `indent_size` setting above), I adjusted the site's styling to add a `tab-size` setting for the **display** of code samples:
 

@@ -7,7 +7,7 @@ date: 2022-06-20T08:32:00-05:00
 ---
 
 **Update, 2022-10-11**: I later returned to Fathom Analytics, but am leaving this post here for the sake of [transparency](/posts/2019/10/otoh). (Turned out my [referrals](https://usefathom.com/affiliates/terms) were paying enough to justify it; besides, I like using products made by good people for good purposes, and the folks at Fathom surely fit that description.)
-{.yellowBox}
+{.box}
 
 The site now is nearly a month into [CTCAJW Mode](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/), and is a few days away from the two-year anniversary of when I [started using](/posts/2020/06/fathom-analytics-count-on-it/) [Fathom Analytics](https://usefathom.com).
 

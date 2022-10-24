@@ -8,7 +8,7 @@ date: 2022-09-05T10:01:00-05:00
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/get-good-git-info-from-eleventy-too-30in).
-{.yellowBox}
+{.box}
 
 In "[Get good Git info from Hugo](/posts/2022/06/get-good-git-info-hugo/)," I explained how to use the [Hugo](https://gohugo.io) static site generator (SSG)’s built-in [Git info variables](https://gohugo.io/variables/git) to display page-by-page [Git commit](https://git-scm.com/docs/git-commit) data for one's static website. Well, lo and behold, you can get that kind of information in the [Eleventy](https://11ty.dev) SSG, too. You just need to add a little code, in the form of a [shortcode](https://www.11ty.dev/docs/shortcodes/) that takes advantage of [Eleventy-supplied data](https://www.11ty.dev/docs/data-eleventy-supplied/).
 

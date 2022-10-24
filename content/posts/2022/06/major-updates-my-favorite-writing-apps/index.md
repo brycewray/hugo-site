@@ -7,7 +7,7 @@ date: 2022-06-21T08:14:00-05:00
 ---
 
 **Important note, 2022-06-22**: I made some errors herein that I have now fixed, as noted in a [subsequent post](/posts/2022/06/ulysses-27-correction/).
-{.yellowBox}
+{.box}
 
 June, 2022, has turned out to be a big month for the writing apps to which I most frequently turn, [iA Writer](https://ia.net/writer) and [Ulysses](https://ulysses.app). Both reached new major versions and added some long-awaited features.
 

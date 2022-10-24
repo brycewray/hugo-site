@@ -171,7 +171,7 @@ jobs:
 ```
 
 **Note**: If you use this approach, you need to make sure you **don't** have your repo linked in Netlify for continuous deployment (in your site settings, that's **Build &amp; deploy** &gt; **Continuous deployment**). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.
-{.yellowBox}
+{.box}
 
 Here's how it works.
 

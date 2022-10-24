@@ -7,7 +7,7 @@ date: 2022-06-01T06:47:00-05:00
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/get-good-git-info-from-hugo-45f8).
-{.yellowBox}
+{.box}
 
 While reading blog posts from other static site generator (SSG) users, I sometimes see that a post includes a link to the specific [Git commit](https://git-scm.com/docs/git-commit) for that post's most recent update. As you may have noticed, I've incorporated that here, too. In this post, I'll show you how to do it in a [Hugo](https://gohugo.io) site, in case you're interested in doing the same. As an additional benefit, it'll automate something you might have been doing manually up to now.
 
@@ -86,4 +86,4 @@ Well, the `.GitInfo` object also provides two variables for each commit's [hash]
 So, now, you've automated both (a.) displaying that `Lastmod` stuff and (b.) linking to the commit from which each page's latest version originates. Yet, you needed no additional tools, and very little extra code, to do it. Not bad for a few minutes' worth of work in Hugo, eh?
 
 **Update, 2022-10-07**: If you're interested in displaying **both** per-page Git info **and** whole-site Git info in your Hugo site, check the [solution](https://github.com/gohugoio/hugo/issues/9738#issuecomment-1086669372) suggested by Hugo expert/contributor [Joe Mooring](https://github.com/jmooring). Thanks to [Rodrigo Alcaraz de la Osa](https://twitter.com/fqmente) for the [Q&amp;A session](https://github.com/brycewray/comments/discussions/25) that led me toward this additional information!
-{.yellowBox}
+{.box}

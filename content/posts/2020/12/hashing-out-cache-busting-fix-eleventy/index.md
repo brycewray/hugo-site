@@ -6,7 +6,7 @@ date: 2020-12-15T17:00:00-06:00
 ---
 
 **Update, 2022-09-19**: Go ahead and read this post’s [two](/posts/2020/11/using-postcss-cache-busting-eleventy/) [predecessors](/posts/2020/12/cache-busting-eleventy-take-two/), followed by this post, for perspective --- **but** then go to [this one](/posts/2022/09/cache-busting-eleventy-simpler-way-sass/) for a **much** simpler, **much** cleaner alternative.
-{.yellowBox}
+{.box}
 
 *Up-front disclaimer: No proverbial horses were beaten to death (at least, not by me) during the writing of the following --- although I could see how you might get a different impression.*
 
@@ -125,7 +125,7 @@ To be specific:
 	- Write the resulting CSS to the `_site/css/` output folder (`_site` is the default folder where an Eleventy site exists when built) and name the file whatever is the content of that `csshash` text file that `cssdate.js` wrote to the project's top level.
 
 **Important**: Note that the process completes itself **only** during actual site **builds**, and **not** in the `dev` or `testbuild` scripts --- which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur. Thus, you may want to `gitignore` the top-level file `csshash` (but **not** `csshash.js`) and the files `/_data/csshash.json` and `/_data/year.json`.
-{.yellowBox}
+{.box}
 
 ## The head template
 
@@ -141,4 +141,4 @@ That leaves only setting the Eleventy `head.js` template to call the CSS file by
 So many times I've seen things --- often new products that struck me as being odd --- and dismissed them as "a solution in search of a problem." I hope this article doesn't fit that description where many of you are concerned; and, of greater importance, I hope it helps you in managing your own Eleventy-based site.
 
 **Note, 2020-12-17**: If you use [Netlify](https://netlify.com), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos’ code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts’ settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/), [Firebase](https://firebase.google.com), Netlify, [Render](https://render.com), and [Vercel](https://vercel.com).
-{.yellowBox}
+{.box}

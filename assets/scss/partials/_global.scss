@@ -292,49 +292,42 @@ li p {
 article {
 	padding-top: 1em; // definitely em, not rem
 	p, li {
-		// font-size: clamp(1rem, 1vw + 0.75em, var.$text-lg);
 		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
 		line-height: 1.65em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
-	.yellowBox strong, .yellowBox b, .blueBox strong, .blueBox b {
-		color: var.$black;
-		@media screen and (prefers-color-scheme: dark) {
-			color: var.$bold-dark-mode;
+		.red strong, red b {
+			color: var.$red;
+			@media screen and (prefers-color-scheme: dark) {
+				color: var.$red-dark-mode;
+			}
 		}
-	}
-	.red strong, red b {
-		color: var.$red;
-		@media screen and (prefers-color-scheme: dark) {
-			color: var.$red-dark-mode;
+		blockquote strong, blockquote b {
+			color: var.$bold-blockquote;
+			@media screen and (prefers-color-scheme: dark) {
+				color: var.$bold-blockquote-dark-mode;
+			}
 		}
-	}
-	blockquote strong, blockquote b {
-		color: var.$bold-blockquote;
-		@media screen and (prefers-color-scheme: dark) {
-			color: var.$bold-blockquote-dark-mode;
-		}
-	}
-	a strong, a b {
-		color: var.$blue;
-		@media screen and (prefers-color-scheme: dark) {
-			color: var.$blueLight;
-		}
-	}
-	strong, b {
-		color: var.$black;
-		@media screen and (prefers-color-scheme: dark) {
-			color: var.$bold-dark-mode;
-		}
-		a {
+		a strong, a b {
 			color: var.$blue;
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$blueLight;
 			}
 		}
+		strong, b {
+			color: var.$black;
+			@media screen and (prefers-color-scheme: dark) {
+				color: var.$bold-dark-mode;
+			}
+			a {
+				color: var.$blue;
+				@media screen and (prefers-color-scheme: dark) {
+					color: var.$blueLight;
+				}
+			}
+		}
 	}
-}
-li li, li p {
+	li li, li p {
 		font-size: inherit;
 		margin-top: 0.25em; // definitely em, not rem
 	}

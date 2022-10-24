@@ -7,7 +7,7 @@ date: 2022-06-25T09:39:00-05:00
 ---
 
 **Note**: To avoid spamming social media *every* time I issue a post, I use each entry in this series to list what I've published since the previous "The site this week" post. (Then, I promote **this**.)
-{.blueBox}
+{.box}
 
 Here are my posts from this past week . . .
 
@@ -24,4 +24,4 @@ Here are my posts from this past week . . .
 *Haste makes waste, and it also makes for a bad summary, so here are some corrections to what I wrote yesterday about Ulysses 27.*
 
 **Plug**: Want to know whenever I issue a post? **Follow the feed** (choose [RSS](/index.xml) or [JSON](/index.json)).
-{.yellowBox}
+{.box}

@@ -8,7 +8,7 @@ date: 2022-01-25T14:45:00-06:00
 ---
 
 **Update, 2022-01-26**: Please see the end of this post for additional info straight from the horse’s mouth, so to speak.
-{.yellowBox}
+{.box}
 
 A few weeks ago, I [described](/posts/2021/12/fetching-remote-stuff-hugo-0-90-plus/) how a [recent change](https://github.com/gohugoio/hugo/releases/tag/v0.90.0) to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) gives it the ability to fetch remote content for processing during the site-building process. In my case, I used it in the Hugo-based version of this site’s repository to grab tiny, low-resolution images from my free [Cloudinary](https://cloudinary.com) account and turn them into [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs).
 
@@ -58,7 +58,7 @@ background: url(data:image/jpeg;base64,${LQIP_b64});
 And there you have it. Using your browser’s Inspector tool on nearly[^1] any image shown within the site will reveal the resulting HTML and CSS, letting you see What The Shortcode Hath Wrought — which, now, will be true regardless of whether the site is on Eleventy or Hugo at the time.
 
 **Acknowledgment**: I am especially grateful to two specific sources for making this post possible: an extraordinarily helpful [conversation](https://discord.com/channels/741017160297611315/934524410591838249/) I had a few days ago with “Aankhen” in the Eleventy Discord community; and, to a lesser extent, a Stack Overflow-based [answer](https://stackoverflow.com/questions/41846669/download-an-image-using-axios-and-convert-it-to-base64) from several years ago. As I told “Aankhen”: “Async and all that are pretty much Greek to me, no matter how much I read others’ articles about that stuff.”
-{.yellowBox}
+{.box}
 
 [^1]:	The lone exception — *i.e.*, the only image on the site which doesn’t use this shortcode when the site is running on Eleventy — is the “My pet cat” image sample near the bottom of my post, “[Using Eleventy’s official image plugin](/posts/2021/04/using-eleventys-official-image-plugin/).” As that post’s title implies, in such cases this particular image uses a different shortcode that’s based on the [Eleventy Image](https://www.11ty.dev/docs/plugins/image/) plugin.
 

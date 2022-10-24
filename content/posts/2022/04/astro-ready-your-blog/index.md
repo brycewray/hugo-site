@@ -7,7 +7,7 @@ date: 2022-04-24T10:50:00-05:00
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/is-astro-ready-for-your-blog-63m).
-{.yellowBox}
+{.box}
 
 {{% disclaimer %}}
 
@@ -71,7 +71,7 @@ SSG-based blogs almost always have you add content mainly through use of [Markdo
 ```
 
 **Update, 2022-07-26**: Astro has since moved to using [MDX](https://mdxjs.com/), rather than Markdown, for including components in one's markup. Be sure to check the [most current Astro documentation](https://docs.astro.build) for full details.
-{.yellowBox}
+{.box}
 
 **Comparison**: By default, Eleventy uses [Markdown-it](https://github.com/markdown-it/markdown-it); like Astro, Gatsby and Next.js use Remark; and Hugo uses [goldmark](https://github.com/yuin/goldmark). As for Astro's ability to mix components and Markdown on a page, probably the closest analogy to this is the use of [MDX](https://mdxjs.com/) files in Gatsby and Next.js; Eleventy and Hugo can't do this (however, see also “[Components](#components),” below, for some words on how Eleventy and Hugo use *shortcodes* which can provide some degree of code-in-Markdown functionality). Note that migrating an existing site to Astro from any of these other platforms probably will involve far more editing to your existing Markdown content than if you were migrating between two of the non-Astro platforms in this mix.
 
@@ -109,7 +109,7 @@ Astro has no built-in support for [Sass](https://sass-lang.com)[^SassAstro] or [
 **Comparison**: The same is true for Eleventy, Gatsby, and Next.js. Hugo has built-in support for an older, [deprecated](https://sass-lang.com/blog/libsass-is-deprecated) form of Sass, and needs [some](/posts/2022/03/using-dart-sass-hugo-sequel/) [help](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/) to work with the current versions of Sass and Tailwind.
 
 **Correction**: [Ben Holmes](https://twitter.com/BHolmesDev) of the Astro team (see the "Components" section further down) reminded me on Discord that Astro does offer an official [integration](https://docs.astro.build/en/guides/integrations-guide/) for [Tailwind CSS](https://github.com/withastro/astro/tree/main/packages/integrations/tailwind). Thanks for the catch, sir!
-{.yellowBox}
+{.box}
 
 ## Hydration
 

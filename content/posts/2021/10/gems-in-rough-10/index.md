@@ -6,7 +6,7 @@ date: 2021-10-01T09:23:00-05:00
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).
-{.blueBox}
+{.box}
 
 ## Native lazy-loading: a surprise
 
@@ -21,7 +21,7 @@ The [Eleventy](https://11ty.dev) SSG is [nearing the release of version 1.0.x](h
 ## Cloudflare Pages: the glitches continue
 
 **Update, 2021-10-03**: I learned today that the problem I note below was due to an [incompatibility between the recently released version 9.x of the `postcss-cli` package and any Node.js version prior to 12.20](https://github.com/postcss/postcss-cli/issues/404). The usual way you get around that when building to your hosting vendor of choice, assuming it's using a Node.js version that fits this qualification, is to add a `NODE_VERSION` environment variable set to at least `12.20.0`. (Consult your respective vendor's documentation for details.)  In my site's case, I am currently spec’g `14.16.0` since that conforms to the Node version I run locally. Finally: despite my having learned this, I'll leave the remainder of this part of the article as it was for the sake of [transparency](/posts/2019/10/otoh/).
-{.yellowBox}
+{.box}
 
 Until yesterday, I had used [Cloudflare Pages](https://pages.cloudflare.com) (and, with it, the Cloudflare CDN) to host this site, off-and-on, for a while. I've written in the past about the technical challenges of this still-new platform, particularly where build times are concerned; but, yesterday, the problems reached a new, show-stopping level.
 
@@ -55,7 +55,7 @@ This behavior began after [yesterday's worldwide incident with Let's Encrypt SSL
 Whether any of this is applicable to you, I have no idea; I'm just tossing it out there for your consideration before you rely on CFP, a platform which remains both highly interesting and aggravatingly glitchy.
 
 **Note**: Ironically enough, when I first tried to issue **this** post, Vercel (to which I'd reverted yesterday after the aforementioned CFP issues) was having a system-wide outage of its API and dashboard which, you guessed it, prevented the site build. Ya can't win.
-{.yellowBox}
+{.box}
 
 **Update, 2021-10-02**: Today I tested Cloudflare Pages again and found that, by **deleting** my previous setups there and **restoring** them, the errors stopped. I have no idea what happened, but scripts that failed as noted above are now working fine. Weird. Anyway, I moved the site back to Cloudflare to take advantage once again of this vendor's superior CDN.
-{.yellowBox}
+{.box}

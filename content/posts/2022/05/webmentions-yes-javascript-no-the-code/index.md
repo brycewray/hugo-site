@@ -10,7 +10,7 @@ date: 2022-05-25T06:18:00-05:00
 <br />
 
 **Note**: This follow-up to "[Webmentions yes, JavaScript no](/posts/2022/05/webmentions-yes-javascript-no)" assumes you've already read that post.
-{.yellowBox}
+{.box}
 
 While the code that now makes this site show its [webmentions](https://indieweb.org/Webmention) is a bit more presentable than when I wrote the other post, it remains not nearly as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) or elegant as it should be. Nonetheless, some have asked to get the full code plus an explainer, so that's why we are gathered here today, brothers and sisters.
 
@@ -215,7 +215,7 @@ We "begin at the beginning," by initializing a whole passel of variables. To rep
 This will allow us to ask [webmention.io](https://webmention.io) for data on a per-page basis where it's applicable.
 
 **Important**: Pay special attention to `$DomainToPoll`. That's got to be the user name you've established with webmention.io, so be sure you get it exactly right (which, in my case, includes the `www.`).
-{.yellowBox}
+{.box}
 
 ### Calling the API
 

@@ -7,7 +7,7 @@ date: 2022-07-02T08:11:00-05:00
 ---
 
 **Note**: To avoid spamming social media *every* time I issue a post, I use each entry in this series to list what I've published since the previous "The site this week" post. (Then, I promote **this**.)
-{.blueBox}
+{.box}
 
 Here are my posts from this past week . . .
 
@@ -21,4 +21,4 @@ Here are my posts from this past week . . .
 *I changed my position on a developers’ Holy War — because it was the right thing to do.*
 
 **Plug**: Want to know whenever I issue a post? **Follow the feed** (choose [RSS](/index.xml) or [JSON](/index.json)).
-{.yellowBox}
+{.box}

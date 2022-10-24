@@ -102,7 +102,7 @@ As I wrap up this tell-all: no, I won’t even *suggest*, much less promise, tha
 Besides: it’s clear that my mind, especially the part where that nerdy curiosity is always lurking, has no concept of what *the foreseeable future* means. So, why pretend? I’ll stick with Astro until I change my mind again. And who knows when that’ll be? It might be next week. It might be next month. It might be next year. Or —  Well, you get the idea. Whatever happens (and whenever it does), I hope to keep you informed and, perhaps, entertained. Thanks as always for your patient readership.
 
 **Update, 2022-05-07**: And, sure enough, I brought it back to Hugo today (at least for now), as explained in “[Mulling over migration](/posts/2022/05/mulling-over-migration/#a-sheepish-u-turn)?”
-{.yellowBox}
+{.box}
 
 [^1]:	For those not familiar with my “dance” among different SSGs during 2019, just follow that link for the whole, sordid story.
 

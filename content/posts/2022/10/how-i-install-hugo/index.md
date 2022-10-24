@@ -45,7 +45,7 @@ Throughout these instructions, we will pretend that your user name is `JohnDoe`.
 • If `$HOME` is mounted with the [`noexec` option](https://linux.die.net/man/1/noexec), you must put the Hugo binary in a supported system location, and that will require root (or equivalent) access.\
 \
 • The suggested procedure can also run into trouble if (a.) protection mechanisms like [SELinux](https://github.com/SELinuxProject/selinux) are in use, (b.) one is using an [OSTree](https://ostreedev.github.io/ostree/introduction/)-based distribution, which may not allow the procedure, and/or (c.) one is within an **enterprise**-based Linux setup, which may have even more lockdown options and their associated complications.
-{.yellowBox}
+{.box}
 
 ### Add a folder to your `PATH`
 
@@ -85,7 +85,7 @@ hugo_extended_0.104.3_Linux-64bit
 ### Move the Hugo binary to `bin`
 
 **Note**: If you've done this before and *already* have a Hugo binary within `bin`, you **do** want to delete the existing one in favor of what you'll be moving below.
-{.yellowBox}
+{.box}
 
 Enter the following in your terminal app:
 
@@ -163,7 +163,7 @@ hugo_extended_0.104.3_darwin-universal
 Use the macOS Finder to move the `hugo` file to the `bin` folder.
 
 **Note**: If you've done this before and *already* have a Hugo binary within `bin`, you **do** want to delete the existing one in favor of the latest version.
-{.yellowBox}
+{.box}
 
 ### Get macOS to “bless” the Hugo binary
 
@@ -180,7 +180,7 @@ hugo version
 You'll get a macOS warning about the file; click **Cancel**. Then, back in the **Security and Privacy** settings window, approve the use of the Hugo binary by clicking **Allow Anyway**. *‌(If desired, you can now close the Mac **System Preferences** app.)*
 
 **Note**: If you get no such warning, it means the Hugo binary **isn't** in the `PATH`, after all, so you'll have to go back through the procedure and figure out what you missed.
-{.yellowBox}
+{.box}
 
 Go back to the terminal app and, once again, enter:
 
@@ -212,7 +212,7 @@ Throughout these instructions, we will pretend that your user name is `JohnDoe`.
    `echo %PATH% > C:\path-backup.txt`\
 If you need to restore the `PATH` later, enter:\
    `set %PATH%=>C:\path-backup.txt`
-{.yellowBox}
+{.box}
 
 1. Create `C:\Users\JohnDoe\bin\` if it doesn't already exist. This `bin` folder will be the **target folder** where you'll store the Hugo binary you'll be getting shortly.
 2. In the Windows Taskbar search box, search for `cmd`.
@@ -246,7 +246,7 @@ hugo_extended_0.104.3_windows-amd64
 Use Windows Explorer to move the `hugo.exe` file to the `bin` folder.
 
 **Note**: If you've done this before and *already* have a Hugo binary within `bin`, you **do** want to delete the existing one in favor of the latest version.
-{.yellowBox}
+{.box}
 
 ### Confirm the Hugo binary is in the `PATH`
 

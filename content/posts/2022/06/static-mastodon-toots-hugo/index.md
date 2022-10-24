@@ -7,7 +7,7 @@ date: 2022-06-03T09:47:00-05:00
 ---
 
 **Note**: This is a follow-up to my [three](/posts/2022/02/static-tweets-eleventy-hugo/) [earlier](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) [posts](/posts/2022/04/static-tweets-astro/) about how to perform fully static embeds of tweets in a variety of [static site generators](https://jamstack/org/generators) (SSGs).
-{.yellowBox}
+{.box}
 
 You may have heard, especially recently, about a social media platform called [Mastodon](https://joinmastodon.org).[^Guide] It's very much like [Twitter](https://twitter.com) in how it looks and how one uses it, but very much *unlike* Twitter where **centralization** is concerned. All of Twitter exists under the aegis of one large corporate entity, while Mastodon has [thousands](https://mastodon.help/instances) of separate, community-owned *instances*.
 
@@ -42,7 +42,7 @@ Hence, today's post.
 You'll note that this post concerns only code for [Hugo](https://gohugo.io), although my earlier posts about embedding static tweets covered [Astro](https://astro.build) and [Eleventy](https://11ty.dev), too. What I gave you for Eleventy was based on use of [Kyle Mitofsky](https://twitter.com/KyleMitBTV)'s [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) plugin, rather than my own code; and I'm unaware of there being a similar, Mastodon-related plugin for Eleventy. Besides, I simply don't have the skills to code appropriately for Eleventy, which depends on the user to assemble some of the "plumbing" for such data-gathering. As for Astro, I've been having trouble developing in it lately, so I had to give a wave-off to that attempt.
 
 **Update, 2022-08-29**: To paraphrase the old [*Monty Python and the Holy Grail* scene](https://www.imdb.com/title/tt0071853/quotes/qt0470614), "I got better," so you may want to check on my later efforts, "[Static Mastodon toots in Astro](/posts/2022/08/static-mastodon-toots-astro/)" and "[Static embeds in Eleventy](/posts/2022/08/static-embeds-eleventy/)."
-{.yellowBox}
+{.box}
 
 All that said, you Astro and Eleventy users who are savvier than I (*i.e.*, the vast majority of you) likely can dope it out from the Mastodon API. It's fully open[^depends] for `GET`ting content.
 
@@ -335,7 +335,7 @@ Also: if you see the appearance of a *regular* toot embed, I think you'll prefer
 For those of you who are already Mastodon-savvy, you may have noticed that I didn't delve into Mastodon's "[Content Warning](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#what-does-cw-mean)" and "[Sensitive Content](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#i-just-attached-a-picture-to-my-toot-whats-with-the-new-eye-icon)" tags --- mainly because I have no intention of embedding any toots here which would need such things. (If *your* site Goes There, well, just study the API return from toots of this nature and figure out how to add the appropriate loops and variables to the code. That's how I did it, and I'm sure you can, too.) It seems to me that the "Content Warning" tag, in particular, is used excessively --- sometimes, simply because (*e.g.*) a toot mentions the hated Twitter by name instead of calling it "Birdsite" (!), rather than because the toot contains material that truly may offend the sensitive. **Still**: if I'm missing something on this aspect, feel free to [set me straight](/contact/).
 
 **Update, 2022-06-04**: Well, actually, someone **did** set me straight, [albeit via Mastodon itself](https://jawns.club/@skyfaller/108415541575257273), and I found the argument sufficiently convincing that I made some changes to the shortcode. Again, **I** have no plan to embed toots with potentially troublesome content here; but, in case you **might** do so and you've decided to use this shortcode, I've now updated it for that use case. Now, any image, animated GIF, or video which is tagged as `sensitive` in the API --- presumably because the original toot's author gave it that designation --- will appear initially with a blurring effect overlaid with a message, "Sensitive content flagged at origin." If one then clicks/taps the obscured visual content, it pops into full view and covers the message. This behavior is consistent with what I've observed on Mastodon.
-{.yellowBox}
+{.box}
 
 ## Here be dragons, maybe
 

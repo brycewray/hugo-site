@@ -107,7 +107,7 @@ Hugo has theming, and Eleventy doesn't. By selecting one of the many available [
 **One caveat I must offer** (as I always do for people who are new to Hugo) is that, **before** you get started with Hugo, you should look through those themes and pick one that seems more or less like how you think you'd like your site to look and "feel." Once you do that, you can get under the hood and see how the theme author got Hugo to do this thing or that. That also protects you, at least in the beginning, from one of Hugo's weak points, Go-based templating (again, I'll explain later).
 
 **Update, 2022-07-19**: About a year-and-a-half after writing the above, I had [second thoughts](/posts/2022/07/really-getting-started-hugo/) about it.
-{.yellowBox}
+{.box}
 
 ### Time zone handling
 
@@ -138,7 +138,7 @@ Here's just one example. With this adaptability, you can enjoy a wider choice of
 Curious? Check some of the many [Eleventy starter projects](https://www.11ty.dev/docs/starter/) and see the many, varied ways they use the mind-boggling number of available packages to make some magic.
 
 **Note**: It's believed that Eleventy soon will reach version 1.0.x, which is likely to involve some breaking changes; and, as you can suspect, such "breaking" is going to include how Eleventy works with those other packages. If you have an existing Eleventy site when this new version goes live, before upgrading your main site to that new version you should first test it thoroughly, ideally within at least one *test* site on your chosen host.
-{.yellowBox}
+{.box}
 
 ## A no-lose coin-flip?
 

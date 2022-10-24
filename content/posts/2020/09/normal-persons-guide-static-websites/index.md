@@ -25,7 +25,7 @@ Then came something you may remember hearing about years ago: "Web 2.0." This wa
 While we're on the subject of WordPress sites: each is a significant cyberattack target, because something like one third of the *entire web* runs on WordPress. Let's say a third of the cars in a parking lot are gleaming white, so they really stand out in the sunlight. If that causes them to attract the attention of a flock of excretion-minded birds flying overhead, those cars could get nasty in a hurry.
 
 **Note**: If your website needs are relatively simple, you won't have any trouble letting them be served by a static site on its own. On the other hand, if you need more advanced, more interactive capabilities, you might want to check into the [Jamstack](https://jamstack.wtf). The short explanation is that the Jamstack gives you the best of both worlds: the advantages of static sites combined with lots of whiz-bang stuff "living" elsewhere, safely, in The Cloud.
-{.yellowBox}
+{.box}
 
 So your choices now come down to having your site's content be generated either: (a.) on each visit (dynamic); or (b.) ahead of each visit (static). If you can handle another analogy --- and I promise to keep nasty birds out of this one --- imagine two Baskin-Robbins ice cream parlors across the street from each other. You know you can go to either one and get an identical bowl of Baskin-Robbins chocolate ice cream. The only difference is that, on the north side of the street, they fill the bowls *in advance* (and keep them in the freezer) for quickest possible delivery when a customer orders them while, on the south side, they scoop it out only when you come in and order it. Again, the ice cream is exactly the same; the only difference is the process and the wait.
 
@@ -85,7 +85,7 @@ This is because Go's *templating* --- that's how you make a single layout handle
 With that one qualification, I highly recommend Hugo as the easiest SSG for a normal person to learn and use.[^2]
 
 **Update, 2022-07-19**: More than a year-and-a-half after writing the above, I had [second thoughts](/posts/2022/07/really-getting-started-hugo/) about it.
-{.yellowBox}
+{.box}
 
 That said, I have another one to recommend if you're feeling just slightly more ambitious and, especially, if you'd prefer to use something where the templating isn't quite as strange-looking as that example, above.
 

@@ -6,7 +6,7 @@ date: 2019-12-14T11:05:00-06:00
 ---
 
 **Note, 2020-09-09**: Although the site long since is no longer using the stack mentioned here, at least some parts of the repo [remain online for viewing by the curious](https://github.com/brycewray/eleventy_bundler).
-{.yellowBox}
+{.box}
 
 *Following up on my [recent post](/posts/2019/12/packing-up/) about how I got this site back to my favorite [static site generator](https://staticgen.com) (SSG), [Eleventy](https://11ty.dev), and also provided some enhancements with the [webpack](https://webpack.js.org) bundler&nbsp;app&nbsp;.&nbsp;.&nbsp;.*
 

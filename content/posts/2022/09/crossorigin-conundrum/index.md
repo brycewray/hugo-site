@@ -8,7 +8,7 @@ initTextEditor: iA Writer
 ---
 
 **Note**: Please see the **Updates** at the end.
-{.yellowBox}
+{.box}
 
 One thing you'll often see explained on the web is that, if you [preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload) a web font to enhance your site's performance, [the `preload` statement must include `crossorigin`](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#cors-enabled_fetches) or the font will be double-downloaded.
 

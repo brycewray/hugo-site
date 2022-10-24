@@ -59,7 +59,7 @@ eleventyConfig.addCollection("everything", (collectionApi) => {
 ## Create the macros file
 
 **Important**: The following step assumes the presence in your project of a suitable JavaScript file from the [`lite-youtube-embed` repo](https://github.com/paulirish/lite-youtube-embed). In the code below, it's in the Eleventy project's `src/assets/js/` location (hence referred to as `/assets/js` since, in this project, the top-level `src` is the [input directory](https://www.11ty.dev/docs/config/#input-directory)) and called *lite-yt-embed_0-2-0.js*.
-{.yellowBox}
+{.box}
 
 Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/docs/config/#directory-for-includes), add a `macros` folder and, within it, an `index.njk` file for holding all your macros. Here's such a file that contains a macro version of the YouTube-embedding code:
 
@@ -79,7 +79,7 @@ Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/doc
 ```
 
 **Note**: The specific indenting for the `lite-youtube` element, above, is on purpose. I found that, with normal indents applied to this element, the result within the Eleventy HTML after accessing the macro *from within Markdown* could include unexpected `p` elements wrapped around the output, causing less-than-desirable appearances. On the other hand, I didn't encounter this problem if accessing the macro from within another Nunjucks file (more about that kind of macro call further down). I'm guessing the Markdown-related SNAFU is related to how that `lite-youtube` element comes out of its parent JavaScript file.
-{.yellowBox}
+{.box}
 
 ## Call the macro
 
@@ -119,7 +119,7 @@ This is because, to quote that [comment from which I borrowed the code](https://
 > Collections don’t include layouts or includes, which still require importing macros manually[.]
 
 **Note**: On the other hand, if you're using any `.njk` files for *content* --- although I can't imagine *why* when Markdown is so much easier to write, but, hey . . . --- this config would allow you to do one-line calls in *those* Nunjucks files, as in the Markdown example.
-{.yellowBox}
+{.box}
 
 ## Acknowledgements and related material
 

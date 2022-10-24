@@ -69,7 +69,7 @@ So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I ini
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 
 **Note from the future**: In time, I decided to get my chosen web font at any moment directly from its online repo. "Watching" each such repo for releases tells me when to update the file(s).
-{.yellowBox}
+{.box}
 
 ## A little more cleaning-up
 
@@ -97,6 +97,6 @@ It was somewhat tedious making all these fixes I've described herein, but it was
 Even if you're not and never will be an EU citizen, your privacy deserves protection, too. I appreciate your visits, and want you to feel completely safe when you spend time here on, as I once described [my original website in the 1990s](https://web.archive.org/web/20000413205935/http://home1.gte.net/bwray/index.html), my "little spot on that lone prairie that is the great World Wide Web."
 
 **Totally unrelated additional note**: Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses/), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?
-{.yellowBox}
+{.box}
 
 [^1]:	Of course, that doesn't necessarily identify you, especially if --- as is true for most users --- your device receives its IP address via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Nonetheless, it would at least narrow it down. And, equally of course, it absolutely *does* identify a device which has a *[static](https://whatismyipaddress.com/dynamic-static)* IP address.

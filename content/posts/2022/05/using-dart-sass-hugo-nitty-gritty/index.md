@@ -75,7 +75,7 @@ Even though it lacks an extension, `sass_embedded/dart-sass-embedded` is a shell
 ### Move the `sass_embedded` folder to `bin`
 
 **Note**: If you've done this before and *already* have a `sass_embedded` folder within `bin`, you **do** want to delete the existing one in favor of what you'll be moving below.
-{.yellowBox}
+{.box}
 
 Enter the following in your terminal app:
 
@@ -105,14 +105,14 @@ This will run the `dart-sass-embedded` shell script included in the `sass_embedd
 If you get any other kind of response, it means the `sass_embedded` folder **isn't** in the `PATH`, after all, so you'll have to go back through the procedure and figure out what you missed.
 
 **Note**: If you get a response that shows a wrong version number in `compilerVersion` and/or `implementationVersion`, you apparently haven't moved over the *entire* `sass_embedded` folder that you got from unpacking the `.tar.gz` archive file.
-{.yellowBox}
+{.box}
 
 ---
 
 And that's it. I hope this has spared you some searching. If you encounter errors in any of the above information, please [let me know](/contact/) so I can fix it ASAP!
 
 **Reminder**: In a worst-case scenario in which you can't get this to work no matter what you do, there's always the option of using the Node.js Sass package, instead, as I described in the [original article in this series](/posts/2022/03/using-dart-sass-hugo/). It's not quite as elegant for Hugo's purposes, and it definitely is slower than using the Embedded Dart Sass binary, but it works.
-{.yellowBox}
+{.box}
 
 </details>
 
@@ -165,7 +165,7 @@ Even though it lacks an extension, `sass_embedded/dart-sass-embedded` is a shell
 ### Move the `sass_embedded` folder to `bin`
 
 **Note**: If you've done this before and *already* have a `sass_embedded` folder within `bin`, you **do** want to delete the existing one in favor of what you'll be moving below.
-{.yellowBox}
+{.box}
 
 Enter the following in your terminal app:
 
@@ -199,7 +199,7 @@ If you get any other kind of response, it means the `sass_embedded` folder **isn
 And that's it. I hope this has spared you some searching. If you encounter errors in any of the above information, please [let me know](/contact/) so I can fix it ASAP!
 
 **Reminder**: In a worst-case scenario in which you can't get this to work no matter what you do, there's always the option of using the Node.js Sass package, instead, as I described in the [original article in this series](/posts/2022/03/using-dart-sass-hugo/). It's not quite as elegant for Hugo's purposes, and it definitely is slower than using the Embedded Dart Sass binary, but it works.
-{.yellowBox}
+{.box}
 
 </details>
 
@@ -215,7 +215,7 @@ Throughout these instructions, we will pretend that your user name is `JohnDoe`.
    `echo %PATH% > C:\path-backup.txt`\
 If you need to restore the `PATH` later, enter:\
    `set %PATH%=>C:\path-backup.txt`
-{.yellowBox}
+{.box}
 
 1. Create `C:\Users\JohnDoe\bin\` if it doesn't already exist. This `bin` folder will be the **target folder** where you'll store the contents of the Embedded Dart Sass archive file you'll be getting shortly.
 2. In the Windows Taskbar search box, search for `cmd`.
@@ -259,7 +259,7 @@ The `sass_embedded\dart-sass-embedded.bat` batch file works with the actual bina
 ### Move the `sass_embedded` folder to `bin`
 
 **Note**: If you've done this before and *already* have a `sass_embedded` folder within `bin`, you **do** want to delete the existing one in favor of what you'll be moving below.
-{.yellowBox}
+{.box}
 
 Enter the following in Command Prompt:
 
@@ -291,7 +291,7 @@ If you get any other kind of response, it means the `sass_embedded` folder **isn
 And that's it. I hope this has spared you some searching. If you encounter errors in any of the above information, please [let me know](/contact/) so I can fix it ASAP!
 
 **Reminder**: In a worst-case scenario in which you can't get this to work no matter what you do, there's always the option of using the Node.js Sass package, instead, as I described in the [original article in this series](/posts/2022/03/using-dart-sass-hugo/). It's not quite as elegant for Hugo's purposes, and it definitely is slower than using the Embedded Dart Sass binary, but it works.
-{.yellowBox}
+{.box}
 
 </details>
 &nbsp;

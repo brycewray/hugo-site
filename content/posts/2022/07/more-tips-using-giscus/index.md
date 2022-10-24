@@ -7,7 +7,7 @@ date: 2022-07-07T22:14:00-05:00
 ---
 
 **N.B.**: This follow-up to "[Tips for using giscus](/posts/2022/05/tips-using-giscus/)" assumes you already read the original and are acquainted with both posts' shared subject: the [giscus](https://giscus.app) commenting system, which uses the [GitHub Discussions](https://docs.github.com/en/discussions) Search API. If you **haven't** read that first one, please do so before proceeding.
-{.yellowBox}
+{.box}
 
 Two of the biggest performance hits you'll encounter in using giscus are due to its being (a.) a JavaScript-heavy [Next.js](https://nextjs.org) app and (b.) remotely hosted --- well, it does have a [*self*-hosted option](https://github.com/giscus/giscus/blob/main/SELF-HOSTING.md), but that looks like a bear to install and maintain. While you can't (otherwise) eliminate either of those, there are a couple of things you can do to lessen their impact.
 

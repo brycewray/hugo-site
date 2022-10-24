@@ -7,7 +7,7 @@ date: 2022-07-30T21:42:00-05:00
 ---
 
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/astro-and-the-move-to-mdx-4bd0).
-{.yellowBox}
+{.box}
 
 Grizzled old guy that I am, I saw [the original "Hail Mary" play](https://en.wikipedia.org/wiki/Hail_Mary_pass) when it happened[^Vikings] back in 1975, so I like to think I know a good "Hail Mary" when I see one. In fact, I may have done just that.
 
