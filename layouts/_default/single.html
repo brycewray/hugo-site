@@ -3,9 +3,6 @@
 	<div class="container-narrower">
 		<article class="article">
 			{{ .Content | safeHTML }}
-			<p class="ctr legal" data-pagefind-ignore>
-				{{- if (ne .Title "Want to reach me?") -}}{{- if $.GitInfo -}}&nbsp;<br />
-				Latest commit for this&nbsp;page:  <span class="nobrk"><a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>, {{ .Lastmod.Format "2006-01-02" }}</span>{{- else -}}&nbsp;{{- end -}}{{- end -}}
 		</article>
 	</div>
 {{ end }}

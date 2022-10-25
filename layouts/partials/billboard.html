@@ -19,10 +19,10 @@
 		{{- end }}
 		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}
 		<p class="billboard-p-text" data-pagefind-ignore>
-			{{- if (and (ne (substr .Title 0 22) "The site this week: 20") ) -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
+			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 		</p>
 		<p class="ctr legal" data-pagefind-ignore>
-			{{- if (and (ne .Title "Want to reach me?") (ne .Title "Privacy policy") ) -}}{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}{{- end -}}
+			{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") -}},&nbsp;{{ .Lastmod.Format "2006-01-02" }}{{- end -}}{{- else -}}&nbsp;{{- end -}}{{- if (and (ne .Title "Want to reach me?") (ne .Title "Privacy policy") ) -}}<br />{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}{{- end -}}
 		</p>
 		{{- end -}}
 	</div>
