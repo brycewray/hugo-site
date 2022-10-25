@@ -36,6 +36,9 @@ To be sure, I’m *not* taking away the reply-by-email button/link, which will s
 **Note**: Because of giscus’s reliance on the existing GitHub Discussions feature set, there currently is only one level of nesting; so, if a thread gets “heavy,” it may not be readily obvious who’s replying to whom.
 {.box}
 
+**Update, 2022-10-25**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)."
+{.box}
+
 ## Another shameless plug
 
 A follow-up to something I [mentioned](/posts/2022/02/shameless-plug-time/) a few weeks ago: the nice folks at CloudCannon kindly asked me to write another piece for them, and the latest such effort is now live on their blog: “[The Ultimate Guide to Hugo Sections](https://cloudcannon.com/blog/the-ultimate-guide-to-hugo-sections/).” As I subsequently noted in a reply to my retweet of the article’s original announcement:

@@ -6,6 +6,9 @@ date: 2022-05-10T15:10:00-05:00
 #initTextEditor: VS Code
 ---
 
+**Update, 2022-10-25**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)."
+{.box}
+
 As I noted [not long ago](/posts/2022/03/gems-in-rough-16/#trying-giscus):
 
 > . . . I’m trying a commenting system called [giscus](https://giscus.app). It’s based on [Utterances](https://utteranc.es). Both rely on GitHub APIs. While Utterances uses the Search API for GitHub Issues, giscus uses the Search API for the newer, more feature-rich, and seemingly more polished [GitHub Discussions](https://docs.github.com/en/discussions).

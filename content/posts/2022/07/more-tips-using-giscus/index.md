@@ -6,6 +6,9 @@ date: 2022-07-07T22:14:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Update, 2022-10-25**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)."
+{.box}
+
 **N.B.**: This follow-up to "[Tips for using giscus](/posts/2022/05/tips-using-giscus/)" assumes you already read the original and are acquainted with both posts' shared subject: the [giscus](https://giscus.app) commenting system, which uses the [GitHub Discussions](https://docs.github.com/en/discussions) Search API. If you **haven't** read that first one, please do so before proceeding.
 {.box}
 

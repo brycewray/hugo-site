@@ -34,6 +34,9 @@ I then posted word of this to a few Discords where I thought it might be useful;
 **Later update**: Turned out that, while the previous comments and reactions were indeed back on the site, it wasn't possible for anyone to enter **new** ones --- **until** (and, again, I have Sarah Rainsberger to thank for giving me the word that things were amiss) I went back into the giscus website and obtained a new set of variables for the `comments` repo. **Now** it all works again. So that's one more thing you have to do in such a case.
 {.box}
 
+**Update, 2022-10-25**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)."
+{.box}
+
 ## Netlify Edge Functions
 
 On April 19, [Netlify](https://netlify.com) [announced](https://www.netlify.com/blog/announcing-serverless-compute-with-edge-functions/) it had become the latest of the Jamstack-savvy hosts to provide edge-computing functions in the form of [Netlify Edge Functions](https://www.netlify.com/products/#netlify-edge-functions), which currently are in beta. Unlike how Netlify's competitors have done it, this entry in the Edge Race [uses Deno](https://deno.com/blog/netlify-edge-functions-on-deno-deploy) --- at least theoretically providing better performance and more successful interactivity with various web development frameworks, although that obviously will remain to be seen.
