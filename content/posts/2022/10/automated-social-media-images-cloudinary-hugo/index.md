@@ -100,6 +100,9 @@ At the beginning of the code block, I mention a fallback image (`$fallbackImg`),
 
 {{< imgc src="typewriter-monochrome_2242164_6260x4374.jpg" alt="Monochrome view of hands typing on an old typewriter" width=6260 height=4374 >}}
 
+Image: [rawpixel](https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164); [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=224216).
+{.imgcCaption}
+
 I could also use the fallback image for other pages if I so chose. **Anyway**: if you have no such concerns about having a fallback image for your home page (or any other), feel free to ignore that part.
 
 You'll notice that there's a *lot* of other metadata in this, and I recommend using it all.[^CCSEO] Still, for the specific purposes of this post, we're mainly concerned with building `$socImg` --- which will contain the final Cloudinary image transformation URL --- and supplying it at the end within your `twitter:image` and `og:image` metadata. **That** will then tell those SMPs to build a sharing card with your auto-generated title image whenever you share a link.
