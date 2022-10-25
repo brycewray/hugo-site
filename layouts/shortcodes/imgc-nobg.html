@@ -34,7 +34,7 @@
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $imgClass := "w-full h-auto" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-<div class="relative">
+<div class="relative" data-pagefind-ignore>
 	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 	{{- with $respSizes -}}
 		{{- range $i, $e := . -}}
@@ -42,5 +42,5 @@
 				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 			{{- end -}}
 		{{- end -}}
-	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
 </div>

@@ -57,12 +57,12 @@
 
 {{- if eq $simple "false" -}}
 {{- if eq .Site.Params.Host "CFP" -}}
-	<style>
+	<style data-pagefind-ignore>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
 	</style>
-	<div class="relative imgB-{{ $imgBd5 }} bg-center">
+	<div class="relative imgB-{{ $imgBd5 }} bg-center" data-pagefind-ignore>
 {{- else -}}
-	<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;">
+	<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_b64 | safeCSS }}); background-size: cover; background-repeat: no-repeat;" data-pagefind-ignore>
 {{- end -}}
 {{- end -}}
 	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
@@ -72,7 +72,7 @@
 				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 			{{- end -}}
 		{{- end -}}
-	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" />
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
 {{- if eq $simple "false" -}}
 </div>
 {{- end -}}

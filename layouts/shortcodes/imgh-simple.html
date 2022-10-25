@@ -8,7 +8,7 @@
 {{- $filter := false -}}{{/* Hugo default */}}
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
 
-<img src="{{- ($src.Resize (print $size " " $qual " " $filter) ).RelPermalink }}" width="{{ $src.Width }}" height="auto" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
+<img src="{{- ($src.Resize (print $size " " $qual " " $filter) ).RelPermalink }}" width="{{ $src.Width }}" height="auto" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 
 {{/*
 	In your Markdown, you could call this as follows,
