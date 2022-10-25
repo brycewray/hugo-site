@@ -16,6 +16,7 @@
 	.hero,
 	[class^="imgB-"],
 	.contactBtn,
+	.searchBtnDiv,
 	.giscus-comments,
 	.featured-image-caption * {
 		display: none !important;
@@ -27,7 +28,7 @@
 	body,
 	[class^="background-hero"] {
 		font-family: sans-serif;
-		background-color: none !important;
+		background-color: transparent !important;
 		color: #000 !important;
 	}
 	pre, code {
