@@ -9,6 +9,9 @@ date: 2022-06-01T06:47:00-05:00
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/get-good-git-info-from-hugo-45f8).
 {.box}
 
+**Update from the future**: Although the data and formatting in each page's header differ from what's described in this post, the code blocks contained herein are still accurate and usable.
+{.box}
+
 While reading blog posts from other static site generator (SSG) users, I sometimes see that a post includes a link to the specific [Git commit](https://git-scm.com/docs/git-commit) for that post's most recent update. As you may have noticed, I've incorporated that here, too. In this post, I'll show you how to do it in a [Hugo](https://gohugo.io) site, in case you're interested in doing the same. As an additional benefit, it'll automate something you might have been doing manually up to now.
 
 I got the idea yesterday, when I saw a [post](https://www.aleksandrhovhannisyan.com/blog/eleventy-build-info/) from [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/). In it, he gave a fine tutorial about displaying this data in pages built with the [Eleventy](https://11ty.dev/) SSG. Hovhannisyan's method employed JavaScript to fetch the necessary Git data for use by his Eleventy templates.
