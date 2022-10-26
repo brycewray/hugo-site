@@ -57,7 +57,7 @@ Here are two charts showing both the *pre*- and *post*-`imgh` "publish" performa
 
 So, what can you do if your site is on Vercel and you (a.) want Hugo with Dart Sass[^deprecation] **but** (b.) also want to regain those swift Vercel deploys that you get without a GHA's involvement?
 
-[^deprecation]: And, yes, you [definitely want Dart Sass, not Libsass](https://sass-lang.com/blog/libsass-is-deprecated).
+[^deprecation]: And, yes, you [definitely want Dart Sass, not LibSass](https://sass-lang.com/blog/libsass-is-deprecated).
 
 I suggest you revert to the [standard, **non**-GHA Vercel process](https://vercel.com/docs/concepts/deployments/build-step) **and** do one of the following to get Dart Sass:
 

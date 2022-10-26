@@ -56,7 +56,7 @@ Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-gi
 // variables it enables below --- such as
 // `var.$blue` --- require the use of
 // **Dart Sass**. If you're still using the
-// Hugo default of Libsass, remove the
+// Hugo default of LibSass, remove the
 // `var.` before each `$` (**and**,
 // of course, declare the vars someplace).
 
