@@ -152,12 +152,14 @@ abbr, .allSmallCaps, .ascaps {
 	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
+	background-color: var.$white;
 	border: 1px solid var.$black;
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid var.$white;
+		background-color: var.$box-bkgd-dark-mode;
+		border: 1px solid var.$gray-1-5;
 	}
 	p {
 		padding: 0;

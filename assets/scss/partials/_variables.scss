@@ -6,7 +6,8 @@ $default-tint: hsla(0, 0%, 67%, 0.72);
 $gray-0-5: hsl(219, 100%, 20%);
 $gray-1: hsl(0, 0%, 35%);
 $gray-1-blue: hsl(218, 90%, 20%);
-$gray-2: rgb(199, 199, 199);
+$gray-1-5: hsl(0, 0%, 50%);
+$gray-2: hsl(0, 0%, 78%);
 $gray-2-blue: hsl(218, 70%, 40%);
 $gray-2-dark-mode: hsl(0, 0%, 66%);
 $gray-2-5: hsl(0, 0%, 93%);
@@ -16,6 +17,9 @@ $gray-4-blue: hsl(218, 70%, 85%);
 $gray-5-blue: hsl(218, 85%, 95%);
 $gray-GitHub: hsl(204, 33%, 97%);
 $gray-GitHub-blue: hsl(222, 50%, 97%);
+$gray-GitHub-blue-0-5: hsl(222, 60%, 95%);
+$gray-GitHub-blue-0-5-dark-mode: hsl(222, 75%, 15%);
+$box-bkgd-dark-mode: hsl(0, 0, 12%);
 $grayArrow: rgb(156, 163, 176); // rgb(156, 163, 175) -- same as TWCSS `text-gray-400`
 $chroma-bkgd: hsl(0, 0%, 93%); // was ededed
 $chroma-bkgd-dark-mode: hsl(0, 0%, 33%);

@@ -7,14 +7,14 @@
 }
 
 .footnotes {
-	// padding-top: 0.5em;
+	padding-top: 0.5em;
 	// padding-bottom: 1em;
 	hr {
 		border: none;
-		height: 1px;
-		background-color: var.$black;
+		height: 2px;
+		background-color: var.$gray-1-5;
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$white;
+			background-color: var.$gray-2-dark-mode;
 		}
 	}
 	ol {
