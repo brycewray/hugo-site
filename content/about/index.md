@@ -39,5 +39,15 @@ Thank you for stopping by. I hope you find this site a source of various little 
 
 Again, welcome.
 
-**Note**: For those familiar with the site, you'll see that this text now encompasses both the long-time "About me" text and the site's original home page "welcome" text.
-{.box}
+----
+
+**Site-wide disclaimers/credits**
+{.pokey .ctr}
+
+<p class="legal justify" data-pagefind-ignore>
+	Newer <a href="/posts/2022/06/get-good-git-info-hugo/">Git commits and their applicable dates</a> don&rsquo;t necessarily reflect changes in previously published content. Displayed content statistics (word count and reading time) don&rsquo;t include any code blocks or <code>details</code> elements where applicable. Site powered by <a href="https://gohugo.io" rel="noopener">Hugo</a>, styled by <a href="https://sass-lang.com" rel="noopener">Sass/SCSS</a>, and hosted by <a href="https://pages.cloudflare.com" rel="noopener">Cloudflare Pages</a>. Privacy-respecting analytics by <a href="https://usefathom.com/ref/ZKHYWX" rel="noopener">Fathom Analytics</a>.* Nearly all site images hosted and processed by&nbsp;<a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" target="_blank" rel="noopener">Cloudinary</a>.*
+</p>
+
+\* *Affiliate/invite links.*
+{.ctr .legal}
+

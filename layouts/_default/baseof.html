@@ -7,7 +7,7 @@
 		{{- block "main" . -}}{{- end }}
 		</div>
 		{{- if ne .Title .Site.Params.SearchTitle -}}{{- partialCached "search-pagefind.html" . -}}{{- end -}}
-		{{- partialCached "footer.html" . -}}
+		{{- partial "footer.html" . -}}
 		{{- if hugo.IsProduction -}}
 			{{- if eq .Site.Params.Host "CFP" -}}
 				<!-- Cloudflare Web Analytics -->

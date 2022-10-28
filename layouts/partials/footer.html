@@ -18,18 +18,12 @@
 						{{- partialCached "svgJSONfeedIcon.html" . -}}
 					</a>
 				</div>
-				<p>
-					<span class="text-nowrap"><a href="/sitemap/">HTML sitemap</a> &bull; <a href="/sitemap.xml">XML sitemap</a></span><br />
-					&nbsp;<br />
-					Newer <a href="/posts/2022/06/get-good-git-info-hugo/">Git commits and their applicable dates</a> don&rsquo;t&nbsp;necessarily reflect changes <span class="text-nowrap">in previously published content.</span><br />
-					Reading time and word count don&rsquo;t include <span class="text-nowrap">any code blocks</span> <span class="text-nowrap">or <code>details</code> elements</span> <span class="text-nowrap">where applicable.</span><br />
-					&nbsp;<br />
-					<span class="text-nowrap">Site textual content &copy; 2018&ndash;{{ now.Year }} <a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce Wray</a></span> <span class="text-nowrap">except where otherwise noted</span> <span class="text-nowrap">and/or quoting external sources.</span><br />
-					&nbsp;<br />
-					<span class="text-nowrap">Site powered by <a href="https://gohugo.io" rel="noopener">Hugo</a></span>, <span class="text-nowrap">styled by <a href="https://sass-lang.com" rel="noopener">Sass/SCSS</a></span>, and <span class="text-nowrap">hosted by <a href="{{ .Site.Params.HostURL }}" rel="noopener">{{ .Site.Params.HostName }}</a></span>.<br />
-					<span class="text-nowrap">Privacy-respecting analytics</span> by <span class="text-nowrap"><a href="https://usefathom.com/ref/ZKHYWX" rel="noopener">Fathom Analytics</a>.*</span> <span class="text-nowrap">Nearly all site images</span> <span class="text-nowrap">hosted and processed</span> by&nbsp;<a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" target="_blank" rel="noopener">Cloudinary</a>.*<br />
-					&nbsp;<br />
-					<em>* Affiliate/invite links.</em>
+				<p class="ctr">
+					<span class="text-nowrap"><a href="/sitemap/">HTML sitemap</a> &bull; <a href="/sitemap.xml">XML sitemap</a></span>
+				</p>
+				<p class="ctr">
+					Site textual content &copy; 2018&ndash;{{ now.Year }} <a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce Wray</a> except where otherwise noted and/or quoting external sources.{{- if (ne .Title "About me") }}<br />
+					See&nbsp;the <a href="/about/">&ldquo;About me&rdquo; page</a> for other site-wide <span class="text-nowrap">disclaimers/credits</span>.{{- end -}}
 				</p>
 			</div>
 		</footer>
