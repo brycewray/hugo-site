@@ -23,3 +23,6 @@ We're in the eleventh month of this year, so welcome to the fourth annual editio
 ---
 
 That's enough spleen-venting for this year's "Curmudgeonish thoughts," I think. Otherwise, someone will threaten to go "*mano y mano*" with me, force-show me bad on-screen typography, and spout endless out-of-the-blue pronouncements that each begin with "So." Maybe you could call such an individual a so-and-so. Or maybe not.
+
+**Note from the future**: I later decided that this fourth annual edition would also be the last of the series.
+{.box}
