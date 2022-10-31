@@ -79,7 +79,7 @@ Please use the [site search page](/search/) to find related posts.
 
 This showed up in my Twitter feed a few days ago, referring to those aforementioned [recent](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about embedding static versions of tweets:
 
-{{< stweetv2 "1493660193653207040" >}}
+{{< stweetv2simul user="podcasterJay" id="1493660193653207040" >}}
 
 .&nbsp;.&nbsp;. and these folks are very welcome! Helping others with their website development work is part of why this site is here in the first place. And, in fact, these folks helped *me*.
 
