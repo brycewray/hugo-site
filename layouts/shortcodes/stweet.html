@@ -127,6 +127,7 @@
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/YQWONLs0hm">pic.twitter.com/YQWONLs0hm</a>` `` -}}
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/mxX4kogDMI">https://t.co/mxX4kogDMI</a>` `` -}}
 	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="https://t.co/3yYtqWFukr">https://t.co/3yYtqWFukr</a>` `` -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>` `` -}}{{- /* Dept. of Interior 2014 tweet */ -}}
 
 	{{- $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id -}}
 
