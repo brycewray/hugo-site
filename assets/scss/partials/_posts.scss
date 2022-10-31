@@ -178,7 +178,7 @@ hr.paginatorBottom {
 		}
 		@media (prefers-color-scheme: dark) {
 			color: var.$black;
-			background-color: var.$code-color-blueLight-dark-mode;
+			background-color: var.$blueLight;
 			&:focus, &:active, &:hover {
 				background-color: var.$blueLightBtn;
 			}

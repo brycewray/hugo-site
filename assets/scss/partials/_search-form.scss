@@ -19,8 +19,8 @@
 		border: 1px solid var.$blue;
 		border-radius: var.$btn_radius;
 		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid var.$code-color-blueLight-dark-mode;
-			background-color: var.$code-color-blueLight-dark-mode;
+			border: 1px solid var.$blueLight;
+			background-color: var.$blueLight;
 			color: var.$black;
 		}
 		&:hover {
