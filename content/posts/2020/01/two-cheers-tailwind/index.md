@@ -9,7 +9,8 @@ date: 2020-01-12T11:00:00-06:00
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-{{< stweet user="BryceWrayTX" id="1210975092999704578" >}}
+> Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal Web site with one maintainer (HTML and CSS)? Worth it then?\
+> <span class="legal">5:25 PM • December 28, 2019 (UTC)</span>
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
@@ -19,7 +20,8 @@ Tens of thousands of "[impressions](https://help.twitter.com/en/managing-your-ac
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-{{< stweet user="BryceWrayTX" id="1212496201385418753" >}}
+> Another holiday, another site spruce-up. Decided to go the @tailwindcss route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄 brycewray.com\
+> <span class="legal">10:09 PM • January 1, 2020 (UTC)</span>
 
 ## Not a purist
 

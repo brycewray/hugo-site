@@ -257,9 +257,10 @@ It wasn't worth it.
 
 Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
-[^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
+> Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest\
+> <span class="legal">6:05 PM • July 13, 2019 (UTC)</span>
 
-{{< stweet user="BryceWrayTX" id="1150104013871955971" >}}
+[^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
 ## "Interesting," indeed
 

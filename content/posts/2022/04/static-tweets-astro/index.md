@@ -203,14 +203,14 @@ import STweetV2 from '@components/STweetV2.astro'
 .&nbsp;.&nbsp;. and call it within the file as follows, supplying the [tweet's ID](https://developer.twitter.com/en/docs/twitter-ids) as the value of `TweetID`:
 
 ```js
-<STweetV2 TweetID="1487140202141425673" />
+<STweetV2 TweetID="463440424141459456" />
 ```
 
 .&nbsp; .&nbsp;. which gives you (with appropriate CSS[^Inspector]):
 
 [^Inspector]: Use your browser's Inspector tool on the displayed tweet to see how I styled it. Of course, you should feel free to handle styling as you see fit.
 
-{{< stweet user="BryceWrayTX" id="1487140202141425673" >}}
+{{< stweet user="Interior" id="463440424141459456" >}}
 
 As was true for my Hugo `stweetv2` shortcode, I wrote this component to add "(UTC)" after the date because, once you use this in production, the remote web server will return the tweet's `created_at` information in whatever time zone the server uses --- which almost certainly is [UTC](https://www.timeanddate.com/time/aboututc.html).
 
@@ -229,7 +229,7 @@ setup: |
 Finally, down in the Markdown itself, call the imported component the same way as we described above for its use in the `.astro` file:
 
 ```md
-<STweetV2 TweetID="1487140202141425673" />
+<STweetV2 TweetID="463440424141459456" />
 ```
 **Update, 2022-07-26**: Astro has since moved to using [MDX](https://mdxjs.com/), rather than Markdown, for including components in one's markup. Be sure to check the [most current Astro documentation](https://docs.astro.build) for full details.
 {.box}

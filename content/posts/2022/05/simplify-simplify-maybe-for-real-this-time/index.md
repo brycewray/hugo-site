@@ -49,7 +49,10 @@ One more thing: because CTCAJW Mode means I may be more frequently publishing po
 **Update, 2022-05-25**: Concerning that last paragraph, I've now pinned the following tweet/[toot](https://docs.joinmastodon.org/user/posting/) to my profiles on Twitter and the two [Mastodon](https://joinmastodon.org) instances where I’m currently active:
 {.box}
 
-{{< stweet user="BryceWrayTX" id="1529514823658110977" >}}
+> Thanks in advance for following my site’s RSS and JSON feeds (your choice). That way, I don’t feel obligated to spam social media every time I post something. 🤐\
+> \
+> The feeds are auto-discoverable on most readers at brycewray.com — or just check the links in the footer.\
+> <span class="legal">5:28 PM • May 25, 2022 (UTC)</span>
 
 ## It's not about SSG FOMO
 

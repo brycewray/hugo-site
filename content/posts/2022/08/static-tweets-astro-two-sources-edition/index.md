@@ -6,15 +6,15 @@ date: 2022-08-26T16:14:00-05:00
 #initTextEditor: iA Writer
 ---
 
-Thought I'd update that [Astro](https://astro.build) component I provided [a few months back](/posts/2022/04/static-tweets-astro/), given my [recent realization](/posts/2022/08/static-tweets-hugo-tale-two-sources/) that one must access **two** Twitter APIs to get a proper result. So, below, is an edited version of `STweet.astro`'s latest incarnation (the [most current form thereof](https://github.com/brycewray/astro-site/blob/main/src/components/STweet.astro) also includes certain `replace()` operations related to specific tweets I've embedded). As was the case with the [Hugo](https://gohugo.io) `stweet` two-API shortcode I [previously described](/posts/2022/08/static-tweets-hugo-tale-two-sources/), it's necessary to specify both the tweet's `user`  (*e.g.*, `BryceWrayTX` for me) and `id` number, as follows:
+Thought I'd update that [Astro](https://astro.build) component I provided [a few months back](/posts/2022/04/static-tweets-astro/), given my [recent realization](/posts/2022/08/static-tweets-hugo-tale-two-sources/) that one must access **two** Twitter APIs to get a proper result. So, below, is an edited version of `STweet.astro`'s latest incarnation (the [most current form thereof](https://github.com/brycewray/astro-site/blob/main/src/components/STweet.astro) also includes certain `replace()` operations related to specific tweets I've embedded). As was the case with the [Hugo](https://gohugo.io) `stweet` two-API shortcode I [previously described](/posts/2022/08/static-tweets-hugo-tale-two-sources/), it's necessary to specify both the tweet's `user`  (*e.g.*, `Interior` for the U.S. Department of the Interior) and `id` number, as follows:
 
 ```md
-<STweet user="BryceWrayTX" id="1487140202141425673" />
+<STweet user="Interior" id="463440424141459456" />
 ```
 
 . . . to get:
 
-{{< stweet user="BryceWrayTX" id="1487140202141425673" >}}
+{{< stweet user="Interior" id="463440424141459456" >}}
 
 Note also:
 

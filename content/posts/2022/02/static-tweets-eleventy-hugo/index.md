@@ -23,11 +23,11 @@ If you embed a tweet using the [standard Twitter-endorsed method](https://help.t
 
 The solution is to present each tweet as *purely static* textual and image content.
 
-For example, here is a tweet I issued recently when I received[^2] some swag after having submitted some code to a Cloudflare contest:
+For example, here is a 2014 tweet from the U.S. Department of the Interior that Twitter's documentation uses as an example of how to include image content in a tweet:
 
-{{< stweet user="BryceWrayTX" id="1487140202141425673" >}}
+{{< stweet user="Interior" id="463440424141459456" >}}
 
-.&nbsp;.&nbsp;. so you get to see the tweet — complete with my Twitter avatar and, in this case, the “attached” photo of the Cloudflare swag — **but** you’re spared all the other stuff that usually would come with it.[^3]
+.&nbsp;.&nbsp;. so you get to see the tweet — complete with the Department's avatar and, in this case, the “attached” photo.[^cookieNote]
 
 This works because, in each of the methods I’ll discuss below, you’re pulling the tweet’s text and image(s) directly from a Twitter API and then putting them together as you wish. Of course, that means you’re also eschewing the Twitter CSS which normally would accompany a tweet’s embed, so you’ll have to apply some bespoke CSS to make things look as you want. Such styling concerns are beyond the scope of this post, but you can get some ideas by using your browser’s Inspector tool to see how I styled that tweet above.
 
@@ -56,10 +56,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginEmbedTweet)
 ```
 
-This creates a [shortcode](https://11ty.dev/docs/shortcodes/) called `tweet` that you can put anywhere within your site’s [Markdown](https://daringfireball.net/projects/markdown/) content. Twitter knows each tweet by its **ID number**, and that’s how `tweet` will embed it.[^4] The ID number for that tweet I embedded above is **1487140202141425673**, so the following use of `tweet` would show it:
+This creates a [shortcode](https://11ty.dev/docs/shortcodes/) called `tweet` that you can put anywhere within your site’s [Markdown](https://daringfireball.net/projects/markdown/) content. Twitter knows each tweet by its **ID number**, and that’s how `tweet` will embed it.[^4] The ID number for that tweet I embedded above is **463440424141459456**, so the following use of `tweet` would show it:
 
 ```twig
-{% tweet "1487140202141425673" %}
+{% tweet "463440424141459456" %}
 ```
 
 ### In Hugo
@@ -68,7 +68,7 @@ To get a safe-but-nice-looking tweet embed in Hugo, we’ll add a [shortcode](ht
 
 Actually, Hugo has a [*built-in* `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) but, by default, it brings in *all* the content (good and bad) from Twitter’s regular embedding method. You can edit the site config file to [turn off](https://gohugo.io/about/hugo-and-gdpr/#twitter) the privacy-violating junk fetched by `tweet`, but that leaves you with a pretty plain result. For example, here’s how `tweet` reproduces that earlier tweet (albeit with little or no CSS help) when you’ve engaged Hugo’s maximum privacy setting for `tweet`-grabbed content:
 
-{{< stweet-simple user="BryceWrayTX" id="1487140202141425673" >}}
+{{< stweet-simple user="Interior" id="463440424141459456" >}}
 
 Now, that’s certainly not terrible, and it does give you the essence of the message, but it still isn’t as cool as what you’ll get by adding the following shortcode[^5], which we’ll call `stweet.html` (with `stweet` standing for *static tweet*):
 
@@ -137,7 +137,7 @@ Now, that’s certainly not terrible, and it does give you the essence of the me
 And, just as we did with the Eleventy shortcode, we invoke this Hugo `stweet` shortcode in Markdown to reproduce the example tweet from earlier, again calling it by its ID number:
 
 ```md
-{{</* stweet "1487140202141425673" */>}}
+{{</* stweet "463440424141459456" */>}}
 ```
 
 **Note**: You can name the shortcode whatever you want, but naming it `tweet.html` will override the built-in `tweet` shortcode. On the other hand, you may be perfectly happy with that; I just want you to be aware of it.
@@ -156,9 +156,7 @@ SSG-built websites like this one amount to [only a very tiny fraction](https://w
 
 [^1]:	As noted in that article, I borrowed heavily on [Sia Karamalegos](https://sia.codes/)’s article, “[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/),” which explained how to use the [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) package for better YouTube embeds.
 
-[^2]:	For all I know, *everybody* who entered got something. I can assure you there was nothing special about my code entry. But, hey, all I wanted was some Cloudflare swag, and the amount I received was a pleasant surprise.
-
-[^3]:	In the interest of full disclosure, I’ll note that any Twitter-based image — including the avatar — that’s included with a static tweet does include a Twitter cookie, but **no** trackers, according to the StartPage Privacy Protection extension I run on both the Chrome and Firefox browsers. Whether that’s suitable is up to you. If it’s not, but you’d still like to use one of the shortcodes explained in this post, you could hide each image by using `display:none` in your CSS. This would keep the browser from downloading either the image or its cookie.
+[^cookieNote]:	In the interest of full disclosure, I’ll note that any Twitter-based image — including the avatar — that’s included with a static tweet does include a Twitter cookie, but **no** trackers (according to the StartPage Privacy Protection extension I was running on both the Chrome and Firefox browsers as of this post's original publication date. Whether that’s suitable is up to you). If it’s not, but you’d still like to use one of the shortcodes explained in this post, you could hide each image by using `display:none` in your CSS. This would keep the browser from downloading either the image or its cookie.
 
 [^4]:	To find any tweet’s ID number, just look at its URL. It’s the last part of the URL, after `/status/`.
 

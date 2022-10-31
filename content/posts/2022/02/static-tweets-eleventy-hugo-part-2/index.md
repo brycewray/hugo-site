@@ -48,12 +48,12 @@ env BEARER_TOKEN=123456789a hugo server
 Here’s an example of `stweetv2` in action, using the same tweet I featured in the previous post. In your Markdown, you include:
 
 ```md
-{{</* stweetv2 "1487140202141425673" */>}}
+{{</* stweetv2 "463440424141459456" */>}}
 ```
 
 .&nbsp; .&nbsp;. which gives you:
 
-{{< stweetv2 "1487140202141425673" >}}
+{{< stweetv2 "463440424141459456" >}}
 
 And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet` shortcode, the CSS therein is left to you, but you can use your browser’s Inspector tool on the tweet example above to see how I handled it.
 
@@ -168,7 +168,7 @@ And here’s the `stweetv2.html` shortcode itself. As in the case of the `stweet
 By the way, there are times when Twitter’s APIs don’t respond because of some outage. If that happens during your development process, as it indeed did when I was finishing up work on `stweetv2`, you can confirm that it’s Twitter’s fault, not yours, by using the [`cURL` command](https://developer.ibm.com/articles/what-is-curl-command/) to submit your request to the API. For example, the `cURL` version of what we did above to get that tweet — again substituting `123456789a` for a real `BEARER_TOKEN` — is:
 
 ```bash
-curl "https://api.twitter.com/2/tweets?ids=1487140202141425673&expansions=author_id,attachments.media_keys&tweet.fields=created_at,text,attachments,entities,source&user.fields=name,username,profile_image_url&media.fields=preview_image_url,type,url,alt_text" -H "Authorization: Bearer 123456789a"
+curl "https://api.twitter.com/2/tweets?ids=463440424141459456&expansions=author_id,attachments.media_keys&tweet.fields=created_at,text,attachments,entities,source&user.fields=name,username,profile_image_url&media.fields=preview_image_url,type,url,alt_text" -H "Authorization: Bearer 123456789a"
 ```
 
 In fact, the [Twitter Developer portal](https://developer.twitter.com/) has tools that let you auto-build such `cURL` commands to see what the API gives you based on the options you select. I found these tools invaluable while building `stweetv2`; and, if you choose to tinker with it for your own purposes, I suspect they’ll aid you, too.

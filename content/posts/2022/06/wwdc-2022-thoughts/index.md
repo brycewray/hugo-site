@@ -8,7 +8,8 @@ date: 2022-06-06T14:49:00-05:00
 
 As I joked (sort of) earlier today on Twitter and Mastodon:
 
-{{< stweet user="BryceWrayTX" id="1533830520030765057" >}}
+> Today starts the first #WWDC since I retired, so it’s also the first time that I don’t have to keep working conscientiously while my attention is really on the Keynote. 😉\
+> <span class="legal">3:17 PM • June 6, 2022 (UTC)</span>
 
 So, now, here are this Apple fanboy's initial takes on what that event revealed.
 

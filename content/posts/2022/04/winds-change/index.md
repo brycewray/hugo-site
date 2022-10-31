@@ -34,7 +34,8 @@ Then, the very next morning, a Twitter feed I regularly follow (I even have it c
 
 Fast-forward to this past Saturday afternoon — a month later to the day — when I tweeted:
 
-{{< stweet user="BryceWrayTX" id="1517957419447508992" >}}
+> After several days of experimentation behind the scenes, my site now runs on @astrodotbuild — details to come in a future post. brycewray.com #StaticSiteGenerator #WebDevelopment\
+> <span class="legal">8:03 PM • April 23, 2022 (UTC)</span>
 
 . . . and shortly thereafter, added *another* update to “Simplify, simplify (again)”:
 
