@@ -27,13 +27,13 @@ I've updated my [Hugo](https://gohugo.io) shortcode, `stweet.html`, that embeds 
 
 [^PubSync]: As the filename makes clear, this is an enhancement of the *original* `stweet.html` shortcode, **not** the `stweetv2.html` version I provided subsequently, because I [later learned](/posts/2022/02/gems-in-rough-14/#learning-from-a-friendly-hat-tip) that [Twitter's Version 2 API](https://developer.twitter.com/en/docs/twitter-api) doesn't yet support handling videos and animated GIFs. Unless/until I hear that Twitter definitely will kill the much older Public Syndication API on which `stweet` depends, I'll just stick with that one --- especially since the PubSync API is **far** easier to use than the V2 API.
 
-What's the difference? Before these latest changes, here's how `stweet` rendered this [particular tweet](https://twitter.com/CloudCannon/status/1534248828559400960) from [CloudCannon](https://cloudcannon.com) (and I've linked to the original tweet so you can view it for comparison's sake):
+What's the difference? Before these latest changes, here's how `stweet` rendered this [particular tweet](https://twitter.com/CloudCannon/status/1529507589129572353) from [CloudCannon](https://cloudcannon.com) (and I've linked to the original tweet so you can view it for comparison's sake):
 
-{{< stweetv2 "1534248828559400960" >}}
+{{< stweetv2simul user="CloudCannon" id="1529507589129572353" >}}
 
 And that works, to be sure. But now, `stweet` can do it this way:
 
-{{< stweet user="CloudCannon" id="1534248828559400960" >}}
+{{< stweet user="CloudCannon" id="1529507589129572353" >}}
 
 So, with that, friends and neighbors, here's the code.
 
