@@ -320,19 +320,9 @@ As you can see, the syntax is:\
 
 ## So what can it do?
 
-In my opinion, the Mastodon API makes it easier to `GET` certain things, as compared to the Twitter API, so it didn't take a ton of effort to get the shortcode to work with images, videos, animations, and even polls. Here are some examples:
+In my opinion, the Mastodon API makes it easier to `GET` certain things, as compared to the Twitter API, so it didn't take a ton of effort to get the shortcode to work with images, videos, animations, and even polls. And if you see the appearance of a *regular* toot embed, I think you'll prefer these.
 
-{{< stoot "mastodon.social" "108411108941335064" >}}
-
-{{< stoot "mastodon.art" "108411211694935454" >}}
-
-{{< stoot "mastodon.social" "100540497858007977" >}}
-
-{{< stoot "fosstodon.org" "108404043194717948" >}}
-
-Also: if you see the appearance of a *regular* toot embed, I think you'll prefer these.
-
-For those of you who are already Mastodon-savvy, you may have noticed that I didn't delve into Mastodon's "[Content Warning](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#what-does-cw-mean)" and "[Sensitive Content](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#i-just-attached-a-picture-to-my-toot-whats-with-the-new-eye-icon)" tags --- mainly because I have no intention of embedding any toots here which would need such things. (If *your* site Goes There, well, just study the API return from toots of this nature and figure out how to add the appropriate loops and variables to the code. That's how I did it, and I'm sure you can, too.) It seems to me that the "Content Warning" tag, in particular, is used excessively --- sometimes, simply because (*e.g.*) a toot mentions the hated Twitter by name instead of calling it "Birdsite" (!), rather than because the toot contains material that truly may offend the sensitive. **Still**: if I'm missing something on this aspect, feel free to [set me straight](/contact/).
+For those of you who are already Mastodon-savvy, you may have noticed that I didn't delve into Mastodon's "[Content Warning](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#what-does-cw-mean)" and "[Sensitive Content](https://github.com/joyeusenoelle/GuideToMastodon/blob/main/README.md#i-just-attached-a-picture-to-my-toot-whats-with-the-new-eye-icon)" tags --- mainly because I have no intention of embedding within this site any toots which would need such things. (If *your* site Goes There, well, just study the API return from toots of this nature and figure out how to add the appropriate loops and variables to the code. That's how I did it, and I'm sure you can, too.) It seems to me that the "Content Warning" tag, in particular, is used excessively --- sometimes, simply because (*e.g.*) a toot mentions the hated Twitter by name instead of calling it "Birdsite" (!), rather than because the toot contains material that truly may offend the sensitive. **Still**: if I'm missing something on this aspect, feel free to [set me straight](/contact/).
 
 **Update, 2022-06-04**: Well, actually, someone **did** set me straight, [albeit via Mastodon itself](https://jawns.club/@skyfaller/108415541575257273), and I found the argument sufficiently convincing that I made some changes to the shortcode. Again, **I** have no plan to embed toots with potentially troublesome content here; but, in case you **might** do so and you've decided to use this shortcode, I've now updated it for that use case. Now, any image, animated GIF, or video which is tagged as `sensitive` in the API --- presumably because the original toot's author gave it that designation --- will appear initially with a blurring effect overlaid with a message, "Sensitive content flagged at origin." If one then clicks/taps the obscured visual content, it pops into full view and covers the message. This behavior is consistent with what I've observed on Mastodon.
 {.box}
