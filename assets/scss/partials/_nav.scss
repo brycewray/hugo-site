@@ -72,9 +72,9 @@ header {
 		a {
 			text-decoration: none;
 			border: 0;
-			color: var.$white;
+			color: var.$blueLightCode;
 			&:focus, &:active, &:hover {
-				color: var.$blueLightCode;
+				color: var.$white;
 			}
 		}
 

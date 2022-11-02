@@ -3,17 +3,17 @@
 // === for billboard partial
 .billboard {
 	&-div {
-		background-image: linear-gradient(
-			var.$gray-3-blue,
-			var.$gray-5-blue 20%,
-			var.$gray-GitHub-blue
-		);
-		@media screen and (prefers-color-scheme: dark) {
-			background-image: linear-gradient(
-				var.$gray-0-5,
-				var.$black
-			);
-		}
+		// background-image: linear-gradient(
+		// 	var.$gray-3-blue,
+		// 	var.$gray-5-blue 20%,
+		// 	var.$gray-GitHub-blue
+		// );
+		// @media screen and (prefers-color-scheme: dark) {
+		// 	background-image: linear-gradient(
+		// 		var.$gray-0-5,
+		// 		var.$black
+		// 	);
+		// }
 		// font-family: var.$sans-serif;
 		text-align: center;
 		position: relative;
