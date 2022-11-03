@@ -108,20 +108,11 @@
 	div, p {
 		color: hsl(0, 0%, 100%);
 	}
-	h3, p {
-		margin: 0;
-		padding: 0.15rem 0;
-		// font-style: normal;
-	}
-	h3.prevnextH3 {
-		font-size: 1.875rem;
-		font-style: normal;
-	}
 	p.prevnextP {
+		margin: 0 auto;
+		padding: 0.15rem 0;
 		width: 90%;
-		margin-right: auto;
-		margin-left: auto;
-		font-size: 1.375rem;
+		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
 	}
 	a {
 		color: hsl(204, 100%, 83%);
