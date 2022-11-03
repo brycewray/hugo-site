@@ -96,7 +96,7 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply mt-6 mb-6 leading-relaxed md:text-lg lg:text-xl 2xl:text-2xl;
+  @apply mt-6 mb-6 leading-relaxed text-artp;
 }
 
 article img.containedImage, article picture img {

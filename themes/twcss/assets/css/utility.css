@@ -1,5 +1,5 @@
 .box {
-  @apply font-sans border border-black dark:border-white border-solid mx-auto my-8 w-full p-[1.5em] bg-white dark:bg-zinc-800;
+  @apply font-sans text-sm border border-black dark:border-gray-400 border-solid mx-auto my-8 w-full p-[1.5em] bg-white dark:bg-zinc-800;
 }
 
 .lazypicturecaption, .imgcCaption {
@@ -101,4 +101,68 @@ a .twitter-tweet {
 
 .animate-fade {
   animation: fadeIn 750ms ease-in-out;
+}
+
+
+circle.GitHub,
+circle.RSS {
+	@apply fill-white dark:fill-black;
+}
+
+circle.Twitter,
+circle.JSON {
+	@apply fill-black dark:fill-blue-500;
+}
+
+path.GitHub,
+path.NextPrev,
+circle.MastodonCircle,
+path.MastodonM,
+circle.Twitter,
+circle.RSS,
+circle.JSON {
+	@apply fill-blue-500 dark:fill-blue-100;
+}
+
+a:hover path.GitHub,
+a:hover path.NextPrev,
+a:hover circle.MastodonCircle,
+a:hover path.MastodonM,
+a:hover circle.Twitter,
+a:hover circle.RSS,
+a:hover circle.JSON {
+	@apply fill-blue-700 dark:fill-blue-300;
+}
+
+path.FirstLast {
+	@apply fill-gray-100;
+}
+
+path.MastodonBody,
+path.MastodonM {
+	fill-rule:nonzero;
+}
+
+path.MastodonBody,
+path.Twitter,
+path.JSON,
+path.RSS {
+	@apply fill-white dark:fill-black;
+}
+
+a:hover circle.GitHub,
+a:hover path.Twitter,
+a:hover path.RSS,
+a:hover path.JSON,
+a:hover path.MastodonBody {
+	@apply dark:fill-white;
+}
+
+details.comments > summary {
+	@apply list-none text-white rounded-md my-0 mx-auto border border-blue-500 bg-blue-500 py-2 px-1 w-[15em] dark:border-blue-300 dark:bg-blue-300 hover:cursor-pointer hover:bg-blue-700 hover:dark:border-blue-200 hover:dark:bg-blue-200;
+}
+
+details.comments > summary::marker,
+details.comments > summary::-webkit-details-marker {
+	@apply hidden;
 }

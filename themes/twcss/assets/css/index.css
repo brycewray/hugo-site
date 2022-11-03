@@ -15,8 +15,11 @@
 @import '/themes/twcss/assets/css/nav.css';
 /* @import '/themes/twcss/assets/css/lazyload.css'; */
 @import '/themes/twcss/assets/css/lite-yt-embed.css';
+@import '/themes/twcss/assets/css/print.css';
 /* @import '/themes/twcss/assets/css/intervf.css'; */
+@import '/themes/twcss/assets/css/vweights.css'; /* for variable fonts, sys or uploaded */
 /* @import '/themes/twcss/assets/css/ffoxobliq.css'; */
 /* above file for system fonts stack */
+@import '/themes/twcss/assets/css/print.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';

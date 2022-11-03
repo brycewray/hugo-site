@@ -8,10 +8,11 @@ module.exports = {
   ],
   darkMode: 'media',
   theme: {
-    fill: theme => ({
-      current: 'currentColor',
-      white: theme('colors.white'),
-    }),
+    // fill: theme => ({
+    //   current: 'currentColor',
+    //   white: theme('colors.white'),
+		// 	black: theme('colors.black'),
+    // }),
     fontWeight: {
       normal: 400,
       bold: 625, // not default of 700
@@ -30,6 +31,13 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
+			'bbh1': 'clamp(2.25em, 0.75rem + 4vw, 4em)',
+			'bbds': 'clamp(1.25rem, 0.75rem + 1.5vw, 2rem)',
+			'bbpt': 'clamp(1rem, 0.25rem + 1.25vw, 1.5rem)',
+			'artp': 'clamp(1rem, 1vw + 0.625em, 1.25rem)',
+			'hmtl': 'clamp(1.75rem, 1.25rem + 1vw, 2.25rem)',
+			'hmds': 'clamp(1.125rem, 1rem + 1vw, 1.375rem)',
+			'hmdt': 'clamp(0.875rem, 0.75rem + 1vw, 1.125rem)'
     },
     listStyleType: {
       none: 'none',
