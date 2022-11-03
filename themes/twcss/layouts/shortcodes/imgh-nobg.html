@@ -1,0 +1,60 @@
+{{/*
+	This one is just for use with images where we **DON'T**
+	want a background image and blur-up effect, such as the
+	example image in the post about the Eleventy Image plugin.
+*/}}
+
+{{/* init vars */}}
+{{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+{{- $src := .Page.Resources.GetMatch (.Get "src") -}}
+{{- $alt := .Get "alt" -}}
+{{- $phn := false -}}
+{{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
+{{- $hint := "photo" -}}
+{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
+{{- /*
+	hint is applicable only to webp:
+	https://gohugo.io/content-management/image-processing/#hint
+*/ -}}
+{{- $filter := false -}}
+{{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
+{{- $simple := "false" -}}
+{{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
+
+{{- $divClass := "" -}}
+{{- $imgBd5 := md5 $src -}}
+{{- if eq .Site.Params.Host "CFP" -}}
+	{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
+{{- else -}}
+	{{- $divClass = "relative" -}}
+{{- end -}}
+{{- $imgClass := "w-full h-auto" -}}
+{{- if $phn -}}
+	{{- $imgClass = "img-phn h-auto ctrImg" -}}
+{{- end -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+
+{{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
+
+<div class="relative" data-pagefind-ignore>
+	<picture data-pagefind-ignore>
+		<source type="image/webp" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s%s" . " webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<source type="image/jpeg" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s" . " jpg " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+	</picture>
+</div>
+

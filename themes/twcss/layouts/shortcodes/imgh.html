@@ -1,0 +1,70 @@
+{{/* init vars */}}
+{{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
+{{- $src := .Page.Resources.GetMatch (.Get "src") -}}
+{{- $alt := .Get "alt" -}}
+{{- $phn := false -}}
+{{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
+{{- $hint := "photo" -}}
+{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
+{{- /*
+	hint is applicable only to webp:
+	https://gohugo.io/content-management/image-processing/#hint
+*/ -}}
+{{- $filter := false -}}
+{{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
+{{- $simple := "false" -}}
+{{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
+
+{{- $divClass := "" -}}
+{{- $imgBd5 := md5 $src -}}
+{{- if eq .Site.Params.Host "CFP" -}}
+	{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
+{{- else -}}
+	{{- $divClass = "relative" -}}
+{{- end -}}
+{{- $imgClass := "w-full h-auto animate-fade" -}}
+{{- if $phn -}}
+	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
+{{- end -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+{{- $LQIP_img := $src.Resize "20x jpg" -}}
+{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
+{{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
+{{- if $phn -}}
+	{{- $CFPstyle = "background: none;" -}}
+{{- end -}}
+
+{{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
+
+{{- if eq $simple "false" -}}
+{{- if eq .Site.Params.Host "CFP" -}}
+	<style data-pagefind-ignore>
+		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
+	</style>
+	<div class="relative imgB-{{ $imgBd5 }} bg-center" data-pagefind-ignore>
+{{- else -}}
+	<div class="relative bg-center" style="{{ $CFPstyle | safeCSS }}" data-pagefind-ignore>
+{{- end -}}
+{{- end -}}
+	<picture data-pagefind-ignore>
+		<source type="image/webp" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s%s" . " webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<source type="image/jpeg" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s" . " jpg " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+	</picture>
+{{- if eq $simple "false" -}}
+</div>
+{{- end -}}
