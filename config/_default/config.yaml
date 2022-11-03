@@ -1,7 +1,7 @@
 baseURL: https://www.brycewray.com/
 languageCode: en-us
 title: BryceWray.com
-theme: twcss # choices are sass and twcss - as of 2022-11-03
+# theme:
 timeZone: America/Chicago
 
 # ignoreErrors:
