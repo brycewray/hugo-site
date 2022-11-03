@@ -1,0 +1,35 @@
+
+    <footer class="font-sans text-center pb-6" data-pagefind-ignore>
+      <div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
+        <div class="flex flex-row justify-center gap-4">
+          <a class="border-0" href="https://github.com/brycewray" rel="noopener" aria-label="GitHub">
+            {{- partialCached "svgGitHubIcon.html" . -}}
+          </a>
+          <a class="border-0" href="https://twitter.com/BryceWrayTX" rel="noopener" aria-label="Twitter">
+            {{- partialCached "svgTwitterIcon.html" . -}}
+          </a>
+					<a class="border-0" rel="me" href="https://fosstodon.org/@BryceWrayTX" rel="noopener" aria-label="Mastodon">
+						{{- partialCached "svgMastodonIcon.html" . -}}
+					</a>
+          <a class="border-0" href="/index.xml" rel="noopener" aria-label="RSS">
+            {{- partialCached "svgRSSIcon.html" . -}}
+          </a>
+          <a class="border-0" href="/index.json" rel="noopener" aria-label="JSON newsfeed">
+            {{- partialCached "svgJSONfeedIcon.html" . -}}
+          </a>
+        </div>
+				<p>
+					<span class="text-nowrap"><a href="/sitemap/">HTML sitemap</a> &bull; <a href="/sitemap.xml">XML sitemap</a></span>
+				</p>
+        <p class="text-xs leading-relaxed mt-4">
+					Site textual content &copy; 2018&ndash;{{ now.Year }} <a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce Wray</a> except&nbsp;where otherwise noted and/or quoting external&nbsp;sources.<br />
+					{{- if (ne .Title "About me") -}}
+					For&nbsp;other site-wide disclaimers/credits, see the footer of the <span class="text-nowrap"><a href="/about/">&ldquo;About me&rdquo; page</a></span>.
+					{{- else -}}
+					Newer <a href="/posts/2022/06/get-good-git-info-hugo/">Git commits and their applicable dates</a> don&rsquo;t necessarily reflect changes in previously published&nbsp;content. Displayed&nbsp;content statistics (word&nbsp;count and reading&nbsp;time) don&rsquo;t&nbsp;include any code&nbsp;blocks or <code>details</code>&nbsp;elements where&nbsp;applicable. Site&nbsp;powered by <a href="https://gohugo.io" rel="noopener">Hugo</a>, styled&nbsp;by <a href="https://sass-lang.com" rel="noopener">Sass/SCSS</a>, and hosted&nbsp;by <a href="https://pages.cloudflare.com" rel="noopener">Cloudflare&nbsp;Pages</a>. <span class="text-nowrap">Privacy-respecting</span> analytics by <a href="https://usefathom.com/ref/ZKHYWX" rel="noopener">Fathom&nbsp;Analytics</a>.* Nearly&nbsp;all site&nbsp;images hosted&nbsp;and processed by&nbsp;<a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" rel="noopener">Cloudinary</a>.*<br />
+					&nbsp;<br />
+					* <em>Affiliate/invite links.</em>
+					{{- end -}}
+        </p>
+      </div>
+    </footer>

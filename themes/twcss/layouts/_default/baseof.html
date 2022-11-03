@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="bg-white dark:bg-black" lang="en" charset="utf-8">
+	{{ partial "head.html" . }}
+	<body class="bg-white dark:bg-black dark:text-gray-100">
+		{{ partialCached "header.html" . }}
+		<div id="content-main-hugo">
+		{{- block "main" . -}}{{- end }}
+		</div>
+		{{- if ne .Title .Site.Params.SearchTitle -}}{{- partialCached "search-pagefind.html" . -}}{{- end -}}
+		{{- partial "footer.html" . -}}
+		{{- if hugo.IsProduction -}}
+			{{- if eq .Site.Params.Host "CFP" -}}
+				<!-- Cloudflare Web Analytics -->
+				<script src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "36afbbd88c1b4b608a61683f9555fd48"}' defer>
+				</script>
+				<!-- End Cloudflare Web Analytics -->
+			{{- end -}}
+		{{- end -}}
+		{{- if (findRE "<pre" .Content 1) -}}
+			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint "md5" -}}
+			<script nonce="DhcnhD3khTMePgXw" src="{{ $jsCopy.RelPermalink }}" defer></script>
+		{{- end }}
+	</body>
+</html>
