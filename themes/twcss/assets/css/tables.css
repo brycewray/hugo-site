@@ -67,13 +67,7 @@ table.ulysses {
 	table-layout: fixed; /* so don't have to spec each `td`'s width */
 	border-collapse: collapse;
 	& td {
-		text-align: center;
-		border: 1px solid var.$black;
-		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid white;
-			color: white;
-		}
-		padding: 0;
+		@apply text-center border border-black dark:border-white dark:text-white p-0;
 	}
 	& tr:nth-child(odd) {
 		@apply bg-gray-300 dark:bg-gray-500;
@@ -82,6 +76,6 @@ table.ulysses {
 		@apply bg-blue-100 dark:bg-gray-400;
 	}
 	& thead th {
-		@apply bg-blue-400 dark:bg-slate-500 border-1 border-black dark:border-white text-white;
+		@apply bg-blue-400 dark:bg-slate-500 border border-black dark:border-white text-white;
 	}
 }
