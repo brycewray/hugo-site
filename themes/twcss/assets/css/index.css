@@ -1,0 +1,22 @@
+@import '/themes/twcss/assets/css/reset.css';
+/* @import '/themes/twcss/assets/css/fonts_Inter.css'; */
+/* @import '/themes/twcss/assets/css/fonts_PublicSans.css'; */
+@import '/themes/twcss/assets/css/fonts_LibreFranklin.css';
+@import '/themes/twcss/assets/css/twitter.css';
+/* @import '/themes/twcss/assets/css/chroma_native_tweaked.css'; */
+/* @import '/themes/twcss/assets/css/chroma_rrt.css'; */
+/* @import '/themes/twcss/assets/css/chroma_monokai_tweaked.css'; */
+/* @import '/themes/twcss/assets/css/chroma_fix-all.css'; */
+@import 'tailwindcss/base';
+/* @import '/themes/twcss/assets/css/global.css'; */
+/* @import '/themes/twcss/assets/css/utility.css'; */
+/* @import '/themes/twcss/assets/css/tables.css'; */
+/* @import '/themes/twcss/assets/css/footnotes.css'; */
+/* @import '/themes/twcss/assets/css/nav.css'; */
+/* @import '/themes/twcss/assets/css/lazyload.css'; */
+/* @import '/themes/twcss/assets/css/lite-yt-embed.css'; */
+/* @import '/themes/twcss/assets/css/intervf.css'; */
+/* @import '/themes/twcss/assets/css/ffoxobliq.css'; */
+/* above file for system fonts stack */
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
