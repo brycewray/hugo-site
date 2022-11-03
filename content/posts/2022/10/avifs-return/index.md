@@ -1,5 +1,5 @@
 ---
-title: "Added support for AVIFs"
+title: "Added support for AVIFs"
 description: "Thanks to recent updates to several Apple operating systems, the AVIF format is once again a reasonable choice for providing images on your website."
 author: Bryce Wray
 date: 2022-10-28T12:40:00-05:00
