@@ -1,0 +1,10 @@
+#nav-Checkbox:checked ~ ul.nav-Menu li,
+#nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
+  @apply block;
+}
+#nav-Checkbox:checked ~ label#nav-Toggle #svg-menu {
+  @apply hidden;
+}
+#nav-Checkbox:checked ~ ul.nav-Menu {
+  @apply pb-4;
+}

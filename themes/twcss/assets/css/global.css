@@ -1,0 +1,128 @@
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  @apply font-sans;
+  @media screen and (prefers-color-scheme: dark) {
+    font-weight: 375;
+  }
+}
+
+strong, b {
+  @media screen and (prefers-color-scheme: dark) {
+    font-weight: 725;
+  }
+}
+
+#content-main-hugo, main {
+  @apply pt-[40px];
+}
+
+p, li {
+  /* for handling Markdown-created <p> and <li> */
+  @apply mb-3 text-lg;
+}
+
+ul li, ul li li {
+  @apply list-disc;
+}
+
+ul li li li {
+  @apply list-square;
+}
+
+ul, ol {
+  @apply pl-8;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+a {
+  @apply no-underline border-b text-blue-500 border-blue-500 dark:text-blue-100 dark:border-blue-100;
+  &:focus, &:hover, &:active {
+    @apply text-blue-600 border-blue-600 dark:text-zinc-300 dark:border-blue-100;
+  }
+}
+
+sup a, a.previous, a.next, .footnote-return {
+  @apply border-b-0;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  @apply leading-tight tracking-tight;
+}
+
+h1, .h1 {
+  @apply text-4xl 2xl:text-5xl mb-4;
+  font-weight: 825;
+  @media screen and (prefers-color-scheme: dark) {
+    font-weight: 775;
+  }
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
+  @media screen and (prefers-color-scheme: dark) {
+    font-weight: 575;
+  }
+}
+
+h2, .h2 {
+  @apply text-3xl 2xl:text-4xl;
+}
+
+h3, .h3 {
+  @apply text-2xl 2xl:text-3xl;
+}
+
+h3, .h3, h5, .h5 {
+  @apply italic;
+}
+
+h4, .h4, h5, .h5 {
+  @apply text-xl 2xl:text-2xl;
+}
+
+h5, .h5, h6, .h6 {
+  @apply text-lg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply outline-none active:outline-none focus:outline-none hover:outline-none;
+}
+
+.header-anchor {
+  @apply border-0 hover:border-b-2 hover:border-blue-500 dark:hover:border-blue-100 text-black hover:text-blue-500 dark:text-white dark:hover:text-blue-100;
+  &:hover::after {
+    @apply text-base pl-2;
+    content: "#";
+  }
+}
+
+article h1, article h2, article h3, article h4 {
+  @apply tracking-tight mt-8 mb-6;
+}
+
+article p, li {
+  @apply mt-6 mb-6 leading-relaxed md:text-lg lg:text-xl 2xl:text-2xl;
+}
+
+article img.containedImage, article picture img {
+  @apply min-w-full max-w-full w-full h-auto;
+  /* latter two for no-jank in Chrome and Firefox */
+}
+
+article code {
+  @apply bg-blue-50 dark:bg-gray-700;
+}
+
+blockquote {
+  @apply px-6 text-zinc-700 dark:text-zinc-300 border-l-4 border-zinc-300 dark:border-zinc-400;
+}
+
+hr {
+  @apply border-solid border-zinc-900 dark:border-zinc-100;
+}
