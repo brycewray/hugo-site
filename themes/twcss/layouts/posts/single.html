@@ -17,15 +17,14 @@
 
     {{ if or .PrevPage .NextPage }}
       <div class="w-full px-8 md:px-0 bg-black dark:bg-blue-900 align-middle mt-10 mb-10">
-        <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200">Other posts</a></h3>
         <p class="font-sans text-center mt-2 mb-2 text-xl lg:text-2xl text-white leading-tight tracking-tight">
           {{ with .NextInSection }}
-            <strong>Next</strong>: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
+            Next: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
             {{ end }}
         </p>
         <p class="font-sans text-center pb-4 mt-2 mb-0 text-xl lg:text-2xl text-white leading-tight tracking-tight">
           {{ with .PrevInSection }}
-          <strong>Previous</strong>: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
+          Previous: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
           {{ end }}
         </p>
       </div>
