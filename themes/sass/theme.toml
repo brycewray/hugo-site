@@ -1,0 +1,11 @@
+name = "sass"
+license = "MIT"
+description = "Dart Sass; originally based on a Hugo theme called “Tale” but now with little resemblance thereto."
+min_version = "0.105.0"
+
+tags = ["tags"]
+
+[author]
+  name = "Bryce Wray"
+  homepage = "https://www.brycewray.com/"
+
