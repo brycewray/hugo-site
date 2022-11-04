@@ -69,7 +69,7 @@ Getting RSS from a Twitter timeline can be tricky, depending on your feed-readin
 
 ## Mastodon
 
-By contrast, it's a lot easier to get the RSS feed from a Mastodon user's timeline. Here's mine from the [fosstodon.org](https://fosstodon.org) instance, where I use the handle of `@BryceWrayTX` (same as on Twitter):
+By contrast, it's a lot easier to get the RSS feed from a Mastodon user's timeline. Here's mine from the [fosstodon.org](https://fosstodon.org) instance, where I use the handle of `@BryceWrayTX`:
 
 ```plaintext
 https://fosstodon.org/@BryceWrayTX.rss

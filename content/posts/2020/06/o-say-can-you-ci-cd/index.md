@@ -239,7 +239,7 @@ There's no cron job set up here, as in the GitHub Actions file; that's because, 
 
 Perhaps you prefer Bitbucket over either GitHub or GitLab, and are wondering where all this "fun" is for you, too. Well, yes, there's a Bitbucket CI/CD setup, [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines). However, Bitbucket's limit for free users is normally even more austere than Netlify's: *fifty* build minutes per month, as shown in this [pricing page](https://bitbucket.org/product/pricing).
 
-Still&nbsp;.&nbsp;.&nbsp;. if you want me to provide similar information for Bitbucket, too, let me know via [Twitter](https://twitter.com/BryceWrayTX) and I'll either update this post or write a follow-up. I am nothing if not accommodating to you, my few-but-beloved readers.
+Still&nbsp;.&nbsp;.&nbsp;. if you want me to provide similar information for Bitbucket, too, [let me know](/contact/) and I'll either update this post or write a follow-up. I am nothing if not accommodating to you, my few-but-beloved readers.
 
 ## Letting freedom ring
 

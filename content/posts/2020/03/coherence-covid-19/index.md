@@ -45,7 +45,7 @@ My naïveté over the timing of my working from home due to the COVID-19 scare i
 
 When will it end? Some businesses are saying things like April something-or-other. Since I have spent a *great deal* of time reading and listening to the opinions of leading epidemiologists[^ScienceRules] over these last few days, I think such optimism is the product of somebody having smoked something funky.
 
-[^ScienceRules]: I trust science. Period. As I [said on Twitter](https://twitter.com/BryceWrayTX/status/1238448849838059520) about this mess: "Science > myth. Truth > lies. Real smarts > fake smarts. Realism > thinking 'miracles’ will fix a crisis. Whatever happens, these are always true."
+[^ScienceRules]: I trust science. Period. As I said on Twitter about this mess: "Science > myth. Truth > lies. Real smarts > fake smarts. Realism > thinking 'miracles’ will fix a crisis. Whatever happens, these are always true."
 
 I'm no betting man, but right now I would be astounded if we're told it's OK to go back to sort-of-normal before late June or early July.
 

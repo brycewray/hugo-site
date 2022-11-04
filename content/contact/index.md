@@ -17,5 +17,7 @@ bw@brycewray.com<br />
 
 - This site’s news feed ([RSS](/index.xml) or [JSON](/index.json))
 - [brycewray on GitHub](https://github.com/brycewray/)
-- [@BryceWrayTX on Twitter](https://twitter.com/BryceWrayTX/)
 - <a rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener">@BryceWrayTX on Mastodon</a>
+
+<strong class="red">Advisory</strong>: As of 2022-11-02, I use my [@BryceWrayTX](https://twitter.com/BryceWrayTX/) Twitter account essentially in "read-only" mode. You can still reach me there, at least for now, <strong class="red">but</strong> I'd greatly prefer you try using one of the other methods listed above. I don't know for sure whether I will return to a more active Twitter presence in the future but, for now, I'd say it doesn't seem likely.
+{.box}
