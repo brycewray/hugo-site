@@ -33,10 +33,6 @@ This site reproduces [Mastodon](https://join.mastodon.org) toots as purely stati
 
 This site reproduces tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image --- including the avatar --- that's included with a static tweet does include a Twitter cookie, but **no** trackers.
 
-## Volument
-
-This site is participating in a beta test of the [Volument](https://volument.com) analytics platform, which provides [privacy-friendly analytics](https://volument.com/faq/#is-volument-privacy-friendly).
-
 ## YouTube
 
 This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide [YouTube](https://youtube.com) embeds that respect your privacy. For details concerning how this works, see Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)," on which this site's related templating is based.
