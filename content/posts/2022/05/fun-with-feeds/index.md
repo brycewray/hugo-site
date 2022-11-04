@@ -14,7 +14,7 @@ date: 2022-05-30T13:10:00-05:00
 \
 <strong class="red">Nota IMPORTANTE</strong>: si ingresó "diversión con comida" o "diversión con alimentación" en Google y lo envió aquí, lo siento, pero esta página <strong class="red">no es</strong> sobre comida. Se trata de cómo usar [las fuentes web](https://es.wikipedia.org/wiki/Fuente_web).\
 \
-<strong class="red">Nota importante</strong>: se hai inserito "divertimento con il cibo" o "divertimento con il feed" in Google e ti è stato inviato qui, mi dispiace, ma questa pagina <strong class="red">non riguarda</strong> il cibo. Si tratta di come utilizzare i [feed web](https://it.wikipedia.org/wiki/RSS).\
+<strong class="red">Nota importante</strong>: se hai inserito "divertimento con il cibo" o "divertimento con il feed" in Google e ti è stato inviato qui, mi dispiace, ma questa pagina <strong class="red">non</strong> riguarda il cibo. Si tratta di come utilizzare i [feed web](https://it.wikipedia.org/wiki/RSS).\
 \
 <strong class="red">Nota importante</strong>: se você digitou “diversão com comida” ou “diversão com alimentação” no Google e ele te enviou aqui, desculpe, mas esta página <strong class="red">não é</strong> sobre comida. É sobre como usar [feeds da web](https://pt.wikipedia.org/wiki/RSS).\
 \
