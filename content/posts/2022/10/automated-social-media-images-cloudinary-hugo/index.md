@@ -15,9 +15,7 @@ And if you *do* use Hugo to manage your site and you either have, or are willing
 
 ## Going OG with the OG protocol
 
-First, notice this tweet of a few weeks ago from the nice folks at [CloudCannon](https://cloudcannon.com):
-
-{{< stweet user="CloudCannon" id="1569369622998130689" >}}
+First, [look at this tweet](https://twitter.com/CloudCannon/status/1569369622998130689) of a few weeks ago from the nice folks at [CloudCannon](https://cloudcannon.com).
 
 By comparison, the original text of the tweet, before the background processes added that image and its surrounding *social media sharing card*, looked like this:
 

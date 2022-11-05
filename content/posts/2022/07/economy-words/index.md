@@ -27,4 +27,4 @@ For these reasons and some others, I'm trimming back the summaries, and may even
 
 Finally, please keep in mind that the site's **feeds** are *always* standing by to keep interested readers apprised of each new post when it hits the web. Just point your [feed reader app](https://en.wikipedia.org/wiki/RSS) to my [site URL](/) and let it do the rest. As the inestimable [Sara Soueidan](https://twitter.com/SaraSoueidan) expressed it so well today:
 
-{{< stweet user="SaraSoueidan" id="1544373617865129992" >}}
+{{< stweet-simple user="SaraSoueidan" id="1544373617865129992" >}}

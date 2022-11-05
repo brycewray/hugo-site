@@ -55,7 +55,7 @@ Incidentally, I purposely chose not to add visible indications of each code bloc
 
 In recent months, the folks at [CloudCannon](https://cloudcannon.com) have been making significant gains to their support for Hugo. Up to now, that support has taken the form of software development and online content (some of the latter of which I've had the pleasure of helping to create). It now also includes an online event, [HugoConf](https://hugoconf.io), coming in July:
 
-{{< stweet user="hugoconf" id="1524419059714039809" >}}
+{{< stweet-simple user="hugoconf" id="1524419059714039809" >}}
 
 I'd urge Hugo aficionados, as well as those simply curious about Hugo, to give this a look-see.
 

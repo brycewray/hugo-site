@@ -68,4 +68,4 @@ And there you have it. Using your browser’s Inspector tool on nearly[^1] any i
 
 The official Eleventy Twitter account graciously retweeted my announcement of this post and added the following, which I pass along for your further edification:
 
-{{< stweet user="eleven_ty" id="1486347755404640257" >}}
+{{< stweet-simple user="eleven_ty" id="1486347755404640257" >}}

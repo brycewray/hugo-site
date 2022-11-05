@@ -15,7 +15,7 @@ The [release earlier this week of version 0.90.0](https://github.com/gohugoio/hu
 
 My initial reaction was: well, that’s surely cool, but I doubt I’ll ever need that functionality in my own relatively limited use[^1] of Hugo. Then, yesterday, a tweet by long-renowned Hugo expert [Régis Philibert](https://github.com/regisphilibert) gave me second thoughts:
 
-{{< stweet user="regisphilibert" id="1469417024518565900" >}}
+{{< stweet-simple user="regisphilibert" id="1469417024518565900" >}}
 
 And, lo and behold, it hit me this morning: this new ability by Hugo to fetch remote stuff meant, now, I could use [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs) in my image-handling shortcode (most recently described in “[Go big or Go home? The sequel](/posts/2021/11/go-big-go-home-sequel/)”).
 
