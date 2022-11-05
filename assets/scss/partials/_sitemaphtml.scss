@@ -3,21 +3,21 @@
 // === for HTML sitemap
 
 .sitemap {
-	// &-Container {
-	// 	background-image: linear-gradient(
-	// 		to bottom,
-	// 		var.$gray-4-blue,
-	// 		var.$gray-5-blue 1%,
-	// 		var.$gray-GitHub-blue
-	// 	);
-	// 	@media screen and (prefers-color-scheme: dark) {
-	// 		background-image: linear-gradient(
-	// 			to bottom,
-	// 			var.$gray-0-5,
-	// 			var.$black 3%
-	// 		);
-	// 	}
-	// }
+	&-Container {
+		background-image: linear-gradient(
+			to bottom,
+			var.$gray-4-blue,
+			var.$gray-5-blue 1%,
+			var.$gray-GitHub-blue
+		);
+		@media screen and (prefers-color-scheme: dark) {
+			background-image: linear-gradient(
+				to bottom,
+				var.$gray-0-5,
+				var.$black 3%
+			);
+		}
+	}
 	&-Div {
 		// font-family: var.$sans-serif;
 		margin: 0 auto;

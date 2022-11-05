@@ -3,21 +3,21 @@
 // === posts and post lists
 
 .posts {
-	// &-Wrapper {
-	// 	background-image: linear-gradient(
-	// 		to bottom,
-	// 		var.$gray-3-blue,
-	// 		var.$gray-5-blue 5%,
-	// 		var.$gray-GitHub-blue
-	// 	);
-	// 	@media screen and (prefers-color-scheme: dark) {
-	// 		background-image: linear-gradient(
-	// 			to bottom,
-	// 			var.$gray-0-5,
-	// 			var.$black 30%
-	// 		);
-	// 	}
-	// }
+	&-Wrapper {
+		background-image: linear-gradient(
+			to bottom,
+			var.$gray-3-blue,
+			var.$gray-5-blue 5%,
+			var.$gray-GitHub-blue
+		);
+		@media screen and (prefers-color-scheme: dark) {
+			background-image: linear-gradient(
+				to bottom,
+				var.$gray-0-5,
+				var.$black 30%
+			);
+		}
+	}
 	&-pagerGray {
 		color: var.$gray-2;
 	}
