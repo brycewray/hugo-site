@@ -6,6 +6,9 @@ date: 2022-08-21T22:43:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Note from the future** (?): Changes in the status of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk, **likely will render moot this and other related posts within**.
+{.box}
+
 Several times this year, and [most recently earlier this month](/posts/2022/08/static-tweets-hugo-tale-two-sources/), I've written about how to embed fully static tweets in one's website, so as to include Twitter content *without* Twitter tracking scripts. I [originally found](/posts/2022/02/gems-in-rough-14/#learning-from-a-friendly-hat-tip) that doing this by accessing Twitter's preferred "v2" API was impaired by one particular shortcoming identified in the [appropriate documentation](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media):
 
 > Note that video URLs are not currently available, only static images.

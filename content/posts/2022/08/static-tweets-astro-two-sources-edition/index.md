@@ -6,6 +6,9 @@ date: 2022-08-26T16:14:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Update from the future** (?): Changes in the status of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk, **likely will render moot this and other related posts within**.
+{.box}
+
 Thought I'd update that [Astro](https://astro.build) component I provided [a few months back](/posts/2022/04/static-tweets-astro/), given my [recent realization](/posts/2022/08/static-tweets-hugo-tale-two-sources/) that one must access **two** Twitter APIs to get a proper result. So, below, is an edited version of `STweet.astro`'s latest incarnation (the [most current form thereof](https://github.com/brycewray/astro-site/blob/main/src/components/STweet.astro) also includes certain `replace()` operations related to specific tweets I've embedded). As was the case with the [Hugo](https://gohugo.io) `stweet` two-API shortcode I [previously described](/posts/2022/08/static-tweets-hugo-tale-two-sources/), it's necessary to specify both the tweet's `user`  (*e.g.*, `Interior` for the U.S. Department of the Interior) and `id` number, as follows:
 
 ```md
