@@ -53,9 +53,12 @@ Incidentally, I purposely chose not to add visible indications of each code bloc
 
 ## HugoConf is coming
 
-In recent months, the folks at [CloudCannon](https://cloudcannon.com) have been making significant gains to their support for Hugo. Up to now, that support has taken the form of software development and online content (some of the latter of which I've had the pleasure of helping to create). It now also includes an online event, [HugoConf](https://hugoconf.io), coming in July:
+In recent months, the folks at [CloudCannon](https://cloudcannon.com) have been making significant gains to their support for Hugo. Up to now, that support has taken the form of software development and online content (some of the latter of which I've had the pleasure of helping to create). It now also includes an online event, [HugoConf](https://hugoconf.io), coming in July, as [noted](https://twitter.com/hugoconf/status/1524419059714039809) on Twitter:
 
-{{< stweet-simple user="hugoconf" id="1524419059714039809" >}}
+> Introducing the inaugural [#HugoConf](https://twitter.com/hashtag/HugoConf?src=hashtag_click), celebrating the world’s fastest static site generator,
+[@GoHugoIO](https://twitter.com/GoHugoIO). (And the legion of developers and contributors who make it possible!) 🤩
+>
+> Register free at [hugoconf.io](https://hugoconf.io) to join us on July 8-9.
 
 I'd urge Hugo aficionados, as well as those simply curious about Hugo, to give this a look-see.
 

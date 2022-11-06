@@ -204,9 +204,15 @@ I am sure that Gatsby and React adherents will hee-haw at the thought that littl
 
 It doesn't build a site as quickly as Hugo --- nothing beats Hugo on that score --- but Eleventy's build times are impressive enough for me, and I expect this aspect will improve in time, [much as it did for Gatsby in going from v1 to v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
-While we're on the subject of speed: while I was working on this post, I saw this Leatherman tweet:
+While we're on the subject of speed: while I was working on this post, I saw this Leatherman [tweet](https://twitter.com/zachleat/status/1169998370041208832):
 
-{{< stweet-simple user="zachleat" id="1169998370041208832" >}}
+> Which has a better First Meaningful Paint time?
+>
+> ① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets
+> ② a client rendered React site with exactly one tweet on it
+>
+> (Spoiler: [@____lighthouse](https://twitter.com/____lighthouse)
+ reports 8.5MB of HTML wins by about 200ms)
 
 React. Hmm. Wonder whom he might be zinging there? Good job, sir. Given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.
 

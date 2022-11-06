@@ -90,9 +90,11 @@ But, starting with Hugo 0.100.0, you get the desired indenting:
 
 ## More goodies
 
-All of this is possible because, as of v.0.100.0, Hugo's [`$page.RenderString` function](https://gohugo.io/functions/renderstring/) supports shortcodes. Hugo expert [Régis Philibert](https://github.com/regisphilibert), as he often does on such occasions, grasped added significance from the details in the release notes:
+All of this is possible because, as of v.0.100.0, Hugo's [`$page.RenderString` function](https://gohugo.io/functions/renderstring/) supports shortcodes. Hugo expert [Régis Philibert](https://github.com/regisphilibert), as he often does on such occasions, [grasped](https://twitter.com/regisphilibert/status/1531705641739460612) added significance from the details in the release notes:
 
-{{< stweet-simple user="regisphilibert" id="1531705641739460612" >}}
+> This means shortcodes in your [@GoHugoIO](https://twitter.com/GoHugoIO) Front Matter!
+>
+> Page Builder blocks etc… 🎉.
 
 Finally, 0.100.0 added a new [`resources.Copy` function](https://gohugo.io/hugo-pipes/introduction/#copy-a-resource) to Hugo's asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/). The documentation says it's "possibly most useful for renaming things" --- as in this example (also from the documentation), in which Hugo's [built-in image-processing capability](https://gohugo.io/content-management/image-processing/) comes into play:
 
