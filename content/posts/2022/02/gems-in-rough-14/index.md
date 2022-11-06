@@ -72,40 +72,9 @@ I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appe
 
 ## Learning from a friendly hat-tip
 
-**Update from the future in general (!)**: Changes in the status and/or availability of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk, **likely will render moot this and other related posts within**.\
-\
-Until then, I continue to improve upon the shortcode described herein. Any displayed tweets in this or other posts obviously will be rendered by the most current code available --- with the only exception being when it serves a purpose to show a less well-rendered tweet, such as for a comparison between [Hugo](https://gohugo.io)'s [standard `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet) and my shortcode.\
-\
-Please use the [site search page](/search/) to find related posts.
-{.box}
+### Deprecation notice, 2022-11-06
 
-This showed up in my Twitter feed a few days ago, referring to those aforementioned [recent](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) about embedding static versions of tweets:
-
-{{< stweetv2simul user="podcasterJay" id="1493660193653207040" >}}
-
-.&nbsp;.&nbsp;. and these folks are very welcome! Helping others with their website development work is part of why this site is here in the first place. And, in fact, these folks helped *me*.
-
-You see, when I tried to embed that tweet by using the shortcode explained in one of those posts, I quickly discovered that the JSON it receives from the Twitter API doesn’t give it enough data to display animated GIFs, such as what the [original tweet](https://twitter.com/podcasterJay/status/1493660193653207040) included. It *does* show a static preview of the GIF, but not the animation. In some cases, that might be just as well, but it definitely wasn’t going to work in the case of this particular tweet, for which the static preview just looked odd.
-
-More annoyingly, I found no way to fix the no-animation-data glitch when I researched and worked with Twitter’s Developer API tools.[^3] It seems there is some back-end black magic on Twitter’s side which doesn’t translate to what comes through the API.
-
-Anyway, I went back to the `stweetv2` Hugo shortcode covered in the [most recent post](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) and added some logic which avoids showing any GIFs. Not fun, but necessary, in my view. (I also updated that post accordingly.)
-
-### Update, 2022-04-10
-
-I have now learned *why* this didn't work with the v2 API. I found the following in the [Twitter documentation for the v2 API's `media` object](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media):
-
-> Note that video URLs are not currently available, only static images.
-
-However, thanks in particular to [Chris Swithinbank](https://twitter.com/swithinbank), I have added the appropriate code to my `stweet` shortcode from the [first](/posts/2022/02/static-tweets-eleventy-hugo/) of those posts, so you can see that particular tweet as [@podcasterJay](https://twitter.com/podcasterJay) originally intended it:
-
-{{< stweet user="podcasterJay" id="1493660193653207040" >}}
-
-(If the continuing animation drives you nuts, just click or tap on the image.)
-
-Of course, this doesn't obviate the issue, expressed in the first post, with using the really old public syndication API on which `stweet` depends. But that API also serves to buttress the Twitter-related part of the  [`astro-embed` package](https://github.com/astro-community/astro-embed) which Swithinbank started.[^embed] He told me he feels it will suffice until such time as Twitter actually kills off this API. Especially in view of this specific, current limitation in the v2 API, I agree.
-
-[^embed]: That package came about after the Astro team saw my [later post](/posts/2022/04/static-tweets-astro/) about doing static tweets in Astro. They liked the idea and quickly improved on it in a big way with the `astro-embed` package, which in time will provide fully static embeds from several different social media platforms, not just Twitter.
+Due to changes in the status and/or availability of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk, I have deprecated several posts, or sections thereof, concerning the fully static embedding of tweets within one's website. **However**, if you still wish to see the final pre-deprecation form of this post, it remains accessible [in the site's GitHub repo](https://github.com/brycewray/hugo_site/blob/main/.deprecated/content/posts/2022/02/gems-in-rough-14/index.md).
 
 ## Making web fonts work with internal CSS
 
