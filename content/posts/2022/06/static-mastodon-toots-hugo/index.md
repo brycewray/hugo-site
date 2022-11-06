@@ -164,6 +164,7 @@ You'll quickly see that I took advantage of the visual similarities between twee
 ```go-html-template
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
+{{ $card := "" }}
 {{ $handleInst := "" }}
 {{ $mediaMD5 := "" }}
 {{ $imageCount := 0 }}
@@ -278,6 +279,20 @@ You'll quickly see that I took advantage of the visual similarities between twee
 					</div>
 				{{ end }}
 			{{ end }}
+		{{ end }}
+		{{ with $json.card }}
+			{{- $cardData := . -}}
+			{{- with $cardData.image -}}
+				<a href="{{ $cardData.url }}" rel="'noopener">
+					<div class="card">
+						<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="tweet-card-img" />
+						<p>
+							<span class="card-title">{{ $cardData.title }}</span><br />
+							{{ $cardData.description }}
+						</p>
+					</div>
+				</a>
+			{{- end -}}
 		{{ end }}
 		{{ with $json.poll }}
 			{{ $poll := . }}
