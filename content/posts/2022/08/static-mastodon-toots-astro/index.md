@@ -6,7 +6,10 @@ date: 2022-08-29T14:36:00-05:00
 #initTextEditor: iA Writer
 ---
 
-While experimenting with various static site generators (SSGs), I've created an [Astro](https://astro.build) component for embedding static "toots" from [Mastodon](https://joinmastodon.org), similar to code I've offered here for [Hugo](https://gohugo.io) and [Eleventy](https://11ty.dev). I offer the `SToot.astro` component here in somewhat edited form, with its original version available in [a repo](https://github.com/brycewray/astro-site/blob/main/src/components/SToot.astro). As was the case with the [earlier](/posts/2022/06/static-mastodon-toots-hugo/) [incarnations](/posts/2022/08/static-embeds-eleventy/), you'll specify the toot's Mastodon instance and numeric ID:
+**Update from the future**: Due to issues [I subsequently encountered](/posts/2022/10/accepting-reality-astro/) during development, this [Astro](https://astro.build) code **doesn't** include certain functionality that I would later add to the [Hugo](https://gohugo.io) code on which, as explained below, this is based.
+{.box}
+
+While experimenting with various static site generators (SSGs), I've created an Astro component for embedding static "toots" from [Mastodon](https://joinmastodon.org), similar to code I've offered here for Hugo and [Eleventy](https://11ty.dev). I offer the `SToot.astro` component here in somewhat edited form, with its original version available in [a repo](https://github.com/brycewray/astro-site/blob/main/src/components/SToot.astro). As was the case with the [earlier](/posts/2022/06/static-mastodon-toots-hugo/) [incarnations](/posts/2022/08/static-embeds-eleventy/), you'll specify the toot's Mastodon instance and numeric ID:
 
 ```js
 <SToot

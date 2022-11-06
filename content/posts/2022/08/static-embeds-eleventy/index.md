@@ -26,6 +26,9 @@ Due to changes in the status and/or availability of one or more Twitter APIs, pe
 
 ## Static toots
 
+**Update from the future**: Due to issues I subsequently encountered during development, this Eleventy code **doesn't** include certain functionality that I would later add to the Hugo code on which this is based.
+{.box}
+
 Using the `stoot.js` shortcode in Markdown brings up the following:
 
 {{< stoot "fosstodon.org" "108896692414393920" >}}
