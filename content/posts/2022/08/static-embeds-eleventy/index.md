@@ -6,7 +6,7 @@ date: 2022-08-27T12:33:00-05:00
 #initTextEditor: **iA Writer**
 ---
 
-**Note from the future** (?): Changes in the status of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk, **likely will render moot the Twitter-specific content this and other related posts within**.
+**Note from the future** (?): Changes in the status and/or availability of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk, **likely will render moot the Twitter-specific content this and other related posts within**.
 {.box}
 
 In the process of my experimentation with various static site generators (SSGs), I've created [Eleventy](https://11ty.dev) versions of my [Hugo](https://gohugo.io) shortcodes for doing fully static embeds of tweets and their Mastodon counterpart, toots. I offer them here in somewhat edited form, with their original repo-based versions as noted.
