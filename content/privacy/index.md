@@ -31,7 +31,10 @@ This site reproduces [Mastodon](https://join.mastodon.org) toots as purely stati
 
 ## Twitter
 
-This site reproduces tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved. Each tweet is linked to its original location. Any Twitter-based image --- including the avatar --- that's included with a static tweet does include a Twitter cookie, but **no** trackers.
+This site *quotes* tweets in the form of purely static text (with, obviously, no tracking involved), rather than embeds of any kind.
+
+**Note**: For most of 2022, the site reproduced tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved; however, in November, 2022, that ceased to be reliably possible following changes in the status and/or availability of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk.
+{.box}
 
 ## YouTube
 
