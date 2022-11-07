@@ -61,7 +61,10 @@
 		{{- $escapedTitle = replace $escapedTitle "‘" "%E2%80%98" -}}{{/* opening curly single quote character */}}
 		{{- $escapedTitle = replace $escapedTitle "’" "%E2%80%99" -}}{{/* curly apostrophe - closing curly single quote character */}}
 		{{- $escapedTitle = replace $escapedTitle "‑" "%E2%80%91" -}}{{/* non-breaking hyphen */}}
-		{{- $titleSize := 72 -}}
+		{{- $titleSize := 96 -}}{{/* pixels */}}
+		{{- if gt (len $.Title) 36 -}}
+			{{- $titleSize = 72 -}}
+		{{- end -}}
 		{{- $fontChoice := "librefranklinsemibold.ttf" -}}
 		{{- /* choices are `librefranklinsemibold.ttf` and `librefranklinmedium.ttf` */ -}}
 		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
