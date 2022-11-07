@@ -113,6 +113,9 @@ And, hey: there's absolutely nothing wrong with using the *system fonts stack* -
 
 It can enhance your site if you embed things like YouTube videos and tweets, but be careful: using the providers' default methods for such embeds will inflict a ton of sneaky tracking code on your visitors. The better way is to embed the content **fully statically**, providing virtually the same content and appearance but *without* the tracking.
 
+**Note**: Due to changes in the status and/or availability of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk, I have deprecated several posts, or sections thereof, concerning the fully static embedding of tweets within one's website. However, all the relevant URLs still work and, for each, provides a link for viewing the now-deprecated content.
+{.box}
+
 - "[Gems in the rough #9](/posts/2021/09/gems-in-rough-09/)" <span class="nobrk">(2021-09-05)</span>.
 - "[Static tweets in Eleventy and Hugo](/posts/2022/02/static-tweets-eleventy-hugo/)" <span class="nobrk">(2022-02-07)</span>.
 - "[Static tweets in Eleventy and Hugo: Part 2](/posts/2022/02/static-tweets-eleventy-hugo-part-2/)" <span class="nobrk">(2022-02-11)</span>.
