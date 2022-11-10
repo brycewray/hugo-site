@@ -29,7 +29,7 @@ As for why I didn't try a different API: the only other Twitter APIs left for em
 \
 • The JSON you get back from Twitter's preferred v2 API is far more difficult to use than either the Public Syndication API or the v1 API, especially if one is trying to pull up those "cards." (The v2 API simply won't provide the data you'd need **unless** you enable that aforementioned privacy-violating JS.)\
 \
-• To access data from either v1 or v2, you have to have a Twitter Developer's account. It’s uncertain, especially given the events of recent days, a free Dev account will either (a.) still be available or (b.) keep working the same way as it has. Besides, such an account is a barrier to entry with which, I suspect, an increasing number of folks would rather not deal, especially as the Twitterverse grows ever more bizarre.
+• To access data from either v1 or v2, you have to have a Twitter Developer's account. It’s uncertain, especially given the events of recent days, that a free Dev account will either (a.) still be available or (b.) keep working the same way as it has. Besides, such an account is a barrier to entry with which, I suspect, an increasing number of folks would rather not deal, especially as the Twitterverse grows ever more bizarre.
 {.box}
 
 I apologize to anyone whom these changes may inconvenience --- I'm not crazy about them myself --- but the Twitter times, they are a-changin', and I've chosen to deprecate what now (for whatever reasons) has become inaccurate and outdated content. It was fun while it lasted.
