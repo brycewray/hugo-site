@@ -29,7 +29,7 @@ If you need to pick an SSG for maintaining your personal blog, my suggestion rem
 - If you **don't** want to deal with plugins and dependencies, go with Hugo. Eleventy is a combination --- albeit an expertly assembled/maintained combination --- of [Node.js](https://nodejs.org) packages, while Hugo is a single binary with "batteries included."
 - If you want to add features of your own choosing, go with Eleventy. This is where the Node.js universe has the advantage **if** you're willing to deal with all those added packages. (Hugo isn't nearly as extensible but, precisely for that reason, also is less brittle.)
 - If your site has, or is going to have, a **lot** of content --- I'm talking thousands of pages or more --- go with Hugo. Although Eleventy *can* be used for mammoth sites, Hugo's sheer power makes them less onerous to manage, especially in dev mode.[^milpages]
-- If your site is going to have multi-language content, go with Hugo, which has that built in.
+- If your site is going to have multi-language content, go with Hugo, which has built-in support for that.
 
 [^milpages]: Hugo's chief maintainer, Bjørn Erik Pedersen, has been hinting in recent months at a future update that will allow managing a site with "millions" of pages. While I doubt that anyone reading this needs that kind of power, it never hurts to have plenty of overhead room, so to speak.
 
