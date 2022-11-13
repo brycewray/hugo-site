@@ -151,7 +151,7 @@ Note that `imgc` assumes you have the [`eleventy-fetch`](https://github.com/11ty
 
 Of course, be sure to enable the `imgc` shortcode in your Eleventy config file through the [usual procedure](https://www.11ty.dev/docs/shortcodes/).
 
-**Note**: For the most current repo-based form of the SCSS which styles images displayed through the `imgc` shortcode, see [this partial](https://github.com/brycewray/eleventy_site/blob/main/src/assets/scss/_global.scss).
+**Note**: For the most current repo-based form of the SCSS which styles images displayed through the `imgc` shortcode, see [this partial](https://github.com/brycewray/eleventy_site/blob/main/src/styles/_global.scss).
 {.box}
 
 ```js
