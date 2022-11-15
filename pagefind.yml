@@ -1,0 +1,4 @@
+# https://pagefind.app/docs/config-sources/
+
+exclude_selectors:
+  - "[id^='fnref']"
