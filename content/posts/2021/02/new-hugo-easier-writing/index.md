@@ -108,4 +108,4 @@ I certainly can write stuff in HTML when needed. I've been doing it for a quarte
 
 So, thanks to this new enhanced attributes capability (and some fairly painless searching/replacing within the appropriate posts), I was able to retire both the `box` and `imgcCapt` shortcodes in favor of the simpler, more quickly typed attributes for the CSS classes they invoked. And, as I have need to call more CSS from Markdown over time, this capability will continue to make that a comparative breeze.
 
-Easier and faster `===` better. I'm grateful to the Hugo dev team for adding this functionality to Hugo in version 0.81.0 --- and will be in the future every time I can add, **HTML-free**, some yellow-boxed text, or an image caption, or any *other* item that needs special handling in CSS.
+Easier and faster `===` better. I'm grateful to the Hugo dev team for adding this functionality to Hugo in version 0.81.0 --- and will be in the future every time I can add, **HTML-free**, some boxed text, or an image caption, or any *other* item that needs special handling in CSS.
