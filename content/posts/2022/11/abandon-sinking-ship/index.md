@@ -19,5 +19,10 @@ That ended eleven years of Twitter use under two different accounts. The origina
 
 [Adjournment *sine die*](https://en.wikipedia.org/wiki/Adjournment_sine_die).
 
-**Note**: This was based on [something I tooted yesterday on Mastodon](https://fosstodon.org/@BryceWrayTX/109326570119949421).
+**Note**: The original version of this post was based on [something I tooted on Mastodon](https://fosstodon.org/@BryceWrayTX/109326570119949421).
+{.box}
+
+<br />
+
+<strong class="red">Update, 2022-11-15</strong>: After further research, I rethought the decision described above and, at least until the situation becomes clearer (if ever), reactivated **but  [locked](https://www.businessinsider.com/guides/tech/how-to-make-twitter-private)** the Twitter account.
 {.box}
