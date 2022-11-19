@@ -9,7 +9,7 @@ Here we are, two years in.
 
 Although the site's officially [first post](/posts/2018/09/hardy-press-wp-ssg-with-twist/) is actually dated as a day earlier, in point of fact it was two years ago today --- Saturday, September 15, 2018[^conflict] --- that I first put brycewray.com on the web.
 
-[^conflict]: Years later, I realized that this was at variance with what I'd noted a few weeks earlier in "[Goodbye and hello](/posts/2020/07/goodbye-hello/)," which identified September 19 rather than September 15 as the launch date. Sorry, fellow sticklers for accuracy; I let you down on this count.
+[^conflict]: Years later, I realized that this was at variance with what I'd noted a few weeks earlier in "[Goodbye and hello](/posts/2020/07/goodbye-hello/)," which identified September 19 --- further corrected in late 2022 to September 23 --- rather than September 15 as the launch date. Sorry, fellow sticklers for accuracy; I let you down on this count.
 
 That was a Day Job ago, a [new grandchild](/posts/2020/03/welcome-sweet-little-early-bird/) ago, a [worldwide pandemic](/posts/2020/03/coherence-covid-19/) ago, a "[dance](/posts/2019/12/sorta-strange-ssg-trip/)" ago, and a "[lurch](/posts/2020/09/goodbye-hello-part-5/)" ago.
 
