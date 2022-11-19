@@ -31,7 +31,7 @@ So, who am I, and what business do I have putting yet another site on this alrea
 
 I love to write. More often than not, the muse is in one of her oh-let's-go-"techy"-instead-of-"fictiony" moods and so she tells me to write more stuff on this site. Sometimes it's even about the app or apps I use to write, which leads me to the next point&nbsp;.&nbsp;.&nbsp;.
 
-Am I anybody special? Nope; just an ordinary working guy who, for decades, has used a multitude of computing devices, operating systems, and apps --- and learned a few things (and formed more than a few opinions) along the way. I've been told I can make complicated things easier to understand, and I try to do the same here.
+Am I anybody special? Nope; just an ordinary retired guy who, for decades, has used a multitude of computing devices, operating systems, and apps --- and learned a few things (and formed more than a few opinions) along the way. I've been told I can make complicated things easier to understand, and I try to do the same here.
 
 Finally: since the Kewl Kids went off and left us non-SSG users in the dust, it behooved me and my geek's curiosity to give this stuff a try, and that was the main reason I started the site in the first place. As one who's long delighted in hand-coding websites whenever possible, I love seeing the comeback of static sites.
 
