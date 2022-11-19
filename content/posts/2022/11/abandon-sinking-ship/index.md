@@ -24,5 +24,5 @@ That ended eleven years of Twitter use under two different accounts. The origina
 
 <br />
 
-<strong class="red">Update, 2022-11-18</strong>: After further research, I briefly reactivated **but  [locked](https://www.businessinsider.com/guides/tech/how-to-make-twitter-private)** the Twitter account; but, a few days later, given my increasing concerns about infosec at Twitter as more key employees leave --- voluntarily or otherwise --- I finally deleted my tweets and once again deactivated the account.
+<strong class="red">Update, 2022-11-18</strong>: After further research, I briefly reactivated **but  [locked](https://www.businessinsider.com/guides/tech/how-to-make-twitter-private)** the Twitter account. Then, a few days later, given my increasing concerns about information security at Twitter in the wake of additional departures --- voluntary or otherwise --- of particularly significant sets of the company's employees, I finally deleted my tweets and once again deactivated my account.
 {.box}
