@@ -1,10 +1,10 @@
 caches:
   getjson:
     dir: :resourceDir/json
-    maxAge: 0 # default = -1 (forever)
+    # maxAge: 0 # default = -1 (forever)
   getresource:
     dir: :resourceDir/_gen
-    maxAge: 0 # default = -1 (forever)
+    # maxAge: 0 # default = -1 (forever)
 
 disableKinds:
   - taxonomy
