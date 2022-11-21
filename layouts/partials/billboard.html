@@ -4,7 +4,7 @@
 */ -}}
 {{- $wordsToCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
 {{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
-{{- $wordsToCount = replaceRE `(?s)<div class="relative imgB.*?</div>` "" $wordsToCount -}}
+{{- $wordsToCount = replaceRE `(?s)<div class="relative imgB.*?"></div>` "" $wordsToCount -}}
 {{- $wordsToCount = replaceRE `(?s)<style.*?</style>` "" $wordsToCount -}}
 {{- $wordCount := $wordsToCount | countwords -}}
 {{- $readingTime := div (float $wordCount) 225 | math.Ceil -}}
