@@ -66,8 +66,10 @@ And there you have it. Using your browser’s Inspector tool on nearly[^1] any i
 
 ### And there’s more (2022-01-26)
 
-The official Eleventy Twitter account graciously retweeted my announcement of this post and [added](https://twitter.com/eleven_ty/status/1486347755404640257) the following, which I pass along for your further edification:
+The official Eleventy Twitter account graciously retweeted my announcement of this post and added the following, which I pass along for your further edification:
 
 > I would also note that the official Image plugin can do this as well!
 >
-> Use dryRun: true to opt-out of file writing and include a \`buffer\` property in your output!
+> Use dryRun: true to opt-out of file writing and include a \`buffer\` property in your output!\
+> <span class="legal">2:38 PM • January 26, 2022 (UTC)</span>
+<!-- https://twitter.com/eleven_ty/status/1486347755404640257 -->

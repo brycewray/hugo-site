@@ -203,7 +203,10 @@ Tailwind adherents say this isn't a problem because, once you recognize that you
 >
 > You should almost never use it 😬
 >
-> Reuse your utility-littered HTML instead.
+> Reuse your utility-littered HTML instead.\
+> <span class="legal">2:22 PM • February 9, 2020 (UTC)</span>
+
+<!-- https://twitter.com/adamwathan/status/1226511611592085504 -->
 
 Once you've extracted a good quantity of components as I suspect happens more often than not, you'll run into the next issue that Tailwind fans say it solves . . .
 

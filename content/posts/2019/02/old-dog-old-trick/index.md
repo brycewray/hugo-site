@@ -102,8 +102,11 @@ Woof.
 
 *In short, stay tuned.*
 
-*And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for [tweeting](https://twitter.com/RosserWrites/status/1095457720709263360)* (below) *about my last post. As he might say: "Thanks, mate!”*
+*And, oh, yes: my continued thanks to [Chris Rosser](https://chrisrosser.net) for tweeting (below) about my last post. As he might say: "Thanks, mate!”*
 
 > If you are a fan of, or contemplating using, iA Writer, I recommend @BryceWrayTX blog post. While our workflows are different, our ends and opinions are the same!
 >
-> [brycewray.com/posts/2019/02 ...](https://www.brycewray.com/posts/2019/02/ia-for-io/)
+> [brycewray.com/posts/2019/02 ...](https://www.brycewray.com/posts/2019/02/ia-for-io/)\
+> <span class="legal">11:00 PM • February 12, 2019 (UTC)</span>
+
+<!-- https://twitter.com/RosserWrites/status/1095457720709263360 -->

@@ -13,13 +13,15 @@ The [release earlier this week of version 0.90.0](https://github.com/gohugoio/hu
 
 > The support for remote `Resources` in `resources.Get` has been a feature in great demand. This means that you can fetch remote files (images, JSON files, RSS feeds, [etc.]) and use them in Hugo Pipes functions as [if] they were local.
 
-My initial reaction was: well, that’s surely cool, but I doubt I’ll ever need that functionality in my own relatively limited use[^1] of Hugo. Then, yesterday, a [tweet](https://twitter.com/regisphilibert/status/1469417024518565900) by long-renowned Hugo expert [Régis Philibert](https://github.com/regisphilibert) gave me second thoughts:
+My initial reaction was: well, that’s surely cool, but I doubt I’ll ever need that functionality in my own relatively limited use[^1] of Hugo. Then, yesterday, a tweet by long-renowned Hugo expert [Régis Philibert](https://github.com/regisphilibert) gave me second thoughts:
 
 > With [@GoHugoIO](https://twitter.com/GoHugoIO) latest and its supercharged \`resource.Get\` there's no more limit to what your favorite SSG can fetch from the cloud!
 >
 > Any kind of files really, but a full fledged fetch like API is really what I was waiting for.
 >
-> And boy am I 🤩.
+> And boy am I 🤩.\
+> <span class="legal">9:21 PM • December 10, 2021 (UTC)</span>
+<!-- https://twitter.com/regisphilibert/status/1469417024518565900 -->
 
 And, lo and behold, it hit me this morning: this new ability by Hugo to fetch remote stuff meant, now, I could use [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs) in my image-handling shortcode (most recently described in “[Go big or Go home? The sequel](/posts/2021/11/go-big-go-home-sequel/)”).
 
