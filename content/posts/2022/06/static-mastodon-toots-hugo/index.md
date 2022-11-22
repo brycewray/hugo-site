@@ -41,7 +41,7 @@ Hence, today's post.
 
 You'll note that this post concerns only code for [Hugo](https://gohugo.io), although my earlier posts about embedding static tweets covered [Astro](https://astro.build) and [Eleventy](https://11ty.dev), too. What I gave you for Eleventy was based on use of [Kyle Mitofsky](https://twitter.com/KyleMitBTV)'s [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) plugin, rather than my own code; and I'm unaware of there being a similar, Mastodon-related plugin for Eleventy. Besides, I simply don't have the skills to code appropriately for Eleventy, which depends on the user to assemble some of the "plumbing" for such data-gathering. As for Astro, I've been having trouble developing in it lately, so I had to give a wave-off to that attempt.
 
-**Update, 2022-08-29**: To paraphrase the old [*Monty Python and the Holy Grail* scene](https://www.imdb.com/title/tt0071853/quotes/qt0470614), "I got better," so you may want to check on my later efforts, "[Static Mastodon toots in Astro](/posts/2022/08/static-mastodon-toots-astro/)" and "[Static embeds in Eleventy](/posts/2022/08/static-embeds-eleventy/)."
+**Update, 2022-08-29**: To quote the old [*Monty Python and the Holy Grail* scene](https://www.imdb.com/title/tt0071853/quotes/qt0470582), "I got better," so you may want to check on my later efforts, "[Static Mastodon toots in Astro](/posts/2022/08/static-mastodon-toots-astro/)" and "[Static embeds in Eleventy](/posts/2022/08/static-embeds-eleventy/)."
 {.box}
 
 All that said, you Astro and Eleventy users who are savvier than I (*i.e.*, the vast majority of you) likely can dope it out from the Mastodon API. It's fully open[^depends] for `GET`ting content.
