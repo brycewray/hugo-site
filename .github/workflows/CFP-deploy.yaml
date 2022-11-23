@@ -67,7 +67,7 @@ jobs:
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
-        run: hugo --gc --minify --verbose
+        run: hugo --gc --verbose
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --source "public"
       - name: Publish to CFP
