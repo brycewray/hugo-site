@@ -6,7 +6,7 @@
 		*/ -}}
 		{{- $css := "" -}}
 		{{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
-		{{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle") -}}
+		{{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
 		{{- if hugo.IsProduction -}}
 			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
 			<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
