@@ -5,7 +5,7 @@
 $tc-corner-radius: 1em;
 $tc-padding: 1em;
 
-.tweet-card {
+.tweet-card, .tweet-twitscrn {
 	line-height: 1.35em; // for non-`p` results from $text
 	font-family: var.$twitter-sans-serif;
 	font-size: var.$stdsize;
@@ -57,6 +57,12 @@ $tc-padding: 1em;
 	@media screen and (prefers-color-scheme: dark) {
 		border: 2px solid var.$gray-2;
 		color: var.$white;
+	}
+}
+
+.tweet-twitscrn {
+	@media screen and (prefers-color-scheme: dark) {
+		background: var.$white;
 	}
 }
 

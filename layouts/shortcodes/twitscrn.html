@@ -1,11 +1,11 @@
 {{- /*
 	This shortcode takes the following form:
-	twitscrn imageUrl, alt, width, height, twitterUrl
+	twitscrn src, alt, width, height, twitterUrl
 */ -}}
 
 {{/* init vars */}}
 {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
-{{- $imageUrl := .Get "imageUrl" -}}
+{{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" -}}
 {{- $width := .Get "width" -}}
 {{- $height := .Get "height" -}}
@@ -17,32 +17,30 @@
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
-{{- $xFmPart1 := "f_auto,q_auto,w_" -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 
-{{- $imgBd5 := md5 $imageUrl -}}
-{{- $divClass := printf "%s%s" "relative tweet-bkgd imgB-" $imgBd5 -}}
-{{- $imgClass := "w-full h-auto lazy twitter-tweet nScrHidden" -}}
+{{- $imgBd5 := md5 $src -}}
+{{- $divClass := "tweet-twitscrn relative bg-center" -}}
+{{- $imgClass := "w-full h-auto" -}}
 {{- $nscClass := "containedImage twitter-tweet" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $imageUrl -}}
+{{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}
+{{- $LQIP_b64 := $LQIP_get.Content | base64Encode -}}
+{{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 
-{{- if eq .Site.Params.Host "CFP" -}}
-<style>.imgB-{{ $imgBd5 }} {background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;}</style>
-	<div class="relative imgB-{{ $imgBd5 }} bg-center" aspect-ratio="{{ $width }} / {{ $height }}">
-	{{- else -}}
-	<div class="relative bg-center" style="background: url(data:image/jpeg;base64,{{ $LQIP_get.Content | base64Encode }}); background-size: cover; background-repeat: no-repeat;" aspect-ratio="{{ $width }} / {{ $height }}">
-	{{- end -}}<a href="{{ $twitterUrl }}" rel="noopener">
-	<img class="{{ $imgClass }}" data-src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $imageUrl }}" data-srcset="
+<div class="{{ $divClass }}" data-pagefind-ignore>
+	<a href="{{ $twitterUrl }}" rel="noopener">
+	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 	{{- with $respSizes -}}
 		{{- range $i, $e := . -}}
 			{{- if ge $width . -}}
-				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $imageUrl }} {{ . }}w
+			{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 			{{- end -}}
 		{{- end -}}
-	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" aspect-ratio="{{ $width }} / {{ $height }}" /></a>
+	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" aspect-ratio="{{ $width }} / {{ $height }}" data-pagefind-ignore /></a>
 	<noscript>
-		<a href="{{ $twitterUrl }}" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $imageUrl }}" alt="{{ $alt }}" /></a>
+		<a href="{{ $twitterUrl }}" rel="noopener"><img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" alt="{{ $alt }}" /></a>
 	</noscript>
 </div>
