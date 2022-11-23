@@ -108,6 +108,7 @@ And, hey: there's absolutely nothing wrong with using the *system fonts stack* -
 - "[Google Fonts and privacy](/posts/2020/08/google-fonts-privacy/)" <span class="nobrk">(2020-08-08)</span>.
 - "[Good stuff without Google](/posts/2020/08/good-stuff-without-google/)" <span class="nobrk">(2020-08-09)</span>.
 - "[Down with flabby fonts](/posts/2021/08/down-with-flabby-fonts/)" <span class="nobrk">(2021-08-08)</span>.
+- "[Adding the Libre Franklin variable web font](/posts/2022/10/adding-variable-version-libre-franklin/)" <span class="nobrk">(2022-10-04)</span>.
 
 ## Static embeds
 
