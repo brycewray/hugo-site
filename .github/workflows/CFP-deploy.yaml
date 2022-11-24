@@ -31,7 +31,7 @@ on:
   workflow_dispatch:
 
 env:
-  HUGO_VERSION: 0.106.0 # will get Extended Version below
+  HUGO_VERSION: 0.107.0 # will get Extended Version below
   DART_SASS_VERSION: 1.56.1
   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
   TOKEN: ${{ secrets.TOKEN }}
