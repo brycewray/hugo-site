@@ -2,3 +2,4 @@
 
 exclude_selectors:
   - "[id^='fnref']"
+  - "[class='highlight']"
