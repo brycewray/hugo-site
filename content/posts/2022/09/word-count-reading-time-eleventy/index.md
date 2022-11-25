@@ -64,6 +64,6 @@ The only other thing this requires is the formatting of the `wordCount` so that 
 {{- $readingTime := div (float $wordCount) 225 | math.Ceil -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 <p>
-	{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}{{- end -}}
+	{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}
 </p>
 ```
