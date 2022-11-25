@@ -29,4 +29,5 @@ Finally, please keep in mind that the site's **feeds** are *always* standing by 
 
 > Will you get sick of me repeating just how much I love RSS? 🥹
 >
-> Every time I paste a URL into my RSS reader and it finds a feed and I subscribe to it, I get the same little dopamine rush that brings me back to Twitter to tweet my appreciation for everyone who has an RSS feed. 🥹
+> Every time I paste a URL into my RSS reader and it finds a feed and I subscribe to it, I get the same little dopamine rush that brings me back to Twitter to tweet my appreciation for everyone who has an RSS feed. 🥹\
+> <span class="legal">5:32 PM • July 5, 2022 (UTC)</span>
