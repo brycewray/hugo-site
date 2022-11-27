@@ -22,7 +22,10 @@ Not long ago, I began using Hugo's [`Text` filter](https://gohugo.io/functions/i
 
 The next day, I got a [response](https://twitter.com/gaetawoo/status/1549779097978642432) from [@gaetawoo](https://twitter.com/gaetawoo) --- not about my post, but about that social/OG image:
 
-> Do you auto generate the twitter card graphic?
+> Do you auto generate the twitter card graphic?\
+> <span class="legal">3:31 PM • July 20, 2022 (UTC)</span>
+
+<!-- https://twitter.com/gaetawoo/status/1549779097978642432 -->
 
 As we spent a few minutes discussing via Twitter how I'd used Hugo to generate the image, I began to think of ways to make it better. After all, I already wasn't enamored with the `Text` filter's inability (at least, as of this writing) to let me control either the text's word-wrapping or its alignment.
 
