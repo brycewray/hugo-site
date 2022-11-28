@@ -30,9 +30,11 @@
     {{ range $pages }}
     {{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
     {{- $titleThis := .Title | .Page.RenderString -}}
-    {{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>`  -}}
+    {{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>` -}}
     {{- $contentMD := .Content -}}
-    {{- $finalHTMLContent := print $contentMD $emailReplyHTML -}}
+		{{- $descriptionMD := .Description | .Page.RenderString -}}
+		{{- $getFullFeed := `<br><hr><p><em>To get posts’ <strong>full</strong> content in your reader, please subscribe to my <a href="https://www.brycewray.com/index.json">JSON&nbsp;feed</a>.</em></p>` -}}
+		{{- $finalHTMLContent := print $descriptionMD $getFullFeed -}}
     <item>
       <title>{{ $titleThis }}</title>
       <link>{{ $PermaWithRSSutm }}</link>
