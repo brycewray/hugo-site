@@ -45,27 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-.header-anchor {
-	border: none;
-	color: var.$black;
-	@media screen and (prefers-color-scheme: dark) {
-		color: var.$white;
-	}
-	&:hover{
-		color: var.$blue;
-		border-bottom: 2px solid var.$blue;
-		@media screen and (prefers-color-scheme: dark) {
-			color: var.$blueLight;
-			border-bottom: 2px solid var.$blueLight;
-		}
-		&::after {
-			font-size: var.$stdsize;
-			padding-left: 0.5em;
-			content: "#";
-		}
-	}
-}
-
 h1, h2, h3, h4, h5, h6 {
 	display: block;
 	margin-block-start: 0.25rem;
@@ -121,6 +100,29 @@ a:focus, a:hover, a:active {
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
 	border-bottom: 0;
 	text-decoration: none;
+}
+
+.header-anchor {
+	text-decoration: none;
+	color: var.$black;
+	@media screen and (prefers-color-scheme: dark) {
+		color: var.$white;
+	}
+	&:hover{
+		color: var.$blue;
+		text-decoration: underline;
+		text-decoration-thickness: var.$textDcThick; // always rem
+		text-underline-offset: var.$textUnOffst; // always em
+		text-decoration-skip-ink: auto;
+		@media screen and (prefers-color-scheme: dark) {
+			color: var.$blueLight;
+		}
+		&::after {
+			font-size: var.$stdsize;
+			padding-left: 0.5em;
+			content: "#";
+		}
+	}
 }
 
 blockquote {
