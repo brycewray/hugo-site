@@ -46,8 +46,8 @@ body {
 	============
 	*/
 	body {
-			background: #000; /* totally black */
-			color: #fff; /* totally white */
+		background: #000; /* totally black */
+		color: #fff; /* totally white */
 	}
 }
 ```
