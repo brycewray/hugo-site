@@ -23,7 +23,7 @@ They happened because I wanted to recapture a cleanness and simplicity the site 
 
 In recent weeks, I've been looking at an old repository which shows how the site looked in its earliest days, back in the late summer of 2018 while it was still in development on my Mac before I actually took it live:
 
-{{< imgc src="orig-site_screen-cap_1518x1356.png" alt="Screen capture of this website’s pre-launch appearance in 2018" width=1518 height=1356 >}}
+{{< imgh src="orig-site_screen-cap_1518x1356.png" alt="Screen capture of this website’s pre-launch appearance in 2018" >}}
 
 Of course, that was over 100 [posts](/posts) ago and a lot has changed in the interim; but, in the end, I decided that the simpler and cleaner I could make the site look, the better.[^BTW]
 
