@@ -6,8 +6,6 @@ date: 2022-06-29T08:17:00-05:00
 #initTextEditor: iA Writer
 ---
 
-{{% disclaimer %}}
-
 If you use any images on your website, you probably know how important it is to make them fully *responsive* and as *optimized* as possible so they provide an optimal user experience, regardless of screen size or connectivity. Fortunately, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) comes with many impressive [image processing capabilities](https://gohugo.io/content-management/image-processing/) which can help you automate this to an amazing degree. Hugo can resize images of all sizes, convert them to multiple different formats, and perform many more image processing feats --- all much more quickly than can any other SSG.
 
 Years ago, the availability of Hugo image processing was more restrictive concerning the images' location within a Hugo project. Specifically, they had to be [*page resources*](https://gohugo.io/content-management/image-processing/#page-resources), and thus in the same folder as the Markdown content calling them. While that's still perfectly fine, they now also can be [*global resources*](https://gohugo.io/content-management/image-processing/#global-resources), existing in either the project's `assets/` folder or any subfolder thereof.[^versionGlobal] I'm old-school and prefer to keep textual content files separate from image files, so I like this flexibility quite a bit.
@@ -297,6 +295,3 @@ Even if you don't use `imgh` or anything like it, I hope this article has at lea
 - Tim van Werkhoven, "[Responsive images &amp; image grids for Hugo](https://www.vanwerkhoven.org/blog/2021/responsive_images_in_hugo_theme/)" (<span class="nobrk">2021-10-22</span>).
 - Utkarsh Verma, "[Using responsive images effortlessly with Hugo](https://bitbanged.com/posts/using-responsive-images-effortlessly-with-hugo/)" (<span class="nobrk">2022-03-06</span>).
 - Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (<span class="nobrk">2022-06-19</span>).
-
-**Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images. (The exceptions, all assuming the site is on Hugo at the time, are: the one on this page, so you can see the `imgh` shortcode actually working; and the one on "[A new way to generate LQIPs in Hugo 0.104.0](/posts/2022/09/new-way-lqips-hugo-0-104-0/)," to illustrate the subject of that post.) This was mainly because: I no longer wanted to keep all those Hugo-generated image resources in my site repo and, in comparative testing, I could see *slightly* better quality in some of the images as rendered via Cloudinary as opposed to their Hugo-generated counterparts. A peripherally connected additional consideration was that I'd already begun using Cloudinary to [auto-generate my site's social media images](/posts/2022/10/automated-social-media-images-cloudinary-hugo/).
-{.box}

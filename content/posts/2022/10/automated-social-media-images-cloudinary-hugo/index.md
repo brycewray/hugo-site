@@ -94,7 +94,7 @@ In this section, I provide an annotated version of the code by which I'm handlin
 
 At the beginning of the code block, I mention a fallback image (`$fallbackImg`), which I host myself[^fallbackLocal] rather than on Cloudinary. This is for use for the home page, for which I'd prefer the OG image to be my long-term site image:
 
-[^fallbackLocal]: This is true when the site is on Hugo, that is. Otherwise, the fallback image is another Cloudinary-hosted asset. In fact, its appearance in this page originates from Cloudinary, regardless of which SSG is in use.
+[^fallbackLocal]: This is true when the site is on Hugo, that is. Otherwise, the fallback image is another Cloudinary-hosted asset.
 
 {{< imgh src="typewriter-monochrome_2242164_6260x4374.jpg" alt="Monochrome view of hands typing on an old typewriter" >}}
 
