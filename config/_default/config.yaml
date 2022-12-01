@@ -62,6 +62,13 @@ markup:
       # only to allow for inline HTML and/or JS
       # ... other desired settings are defaults
 
+imaging: # Hugo defaults shown in comments
+  # anchor: Smart # Smart
+  # bgColor: '#ffffff' # '#ffffff'
+  # hint: photo # photo
+  # quality: 75 # 75
+  resampleFilter: MitchellNetravali # Box
+
 disableKinds:
   - taxonomy
   - term
