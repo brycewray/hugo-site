@@ -54,18 +54,18 @@ To get a return from the API so you can look around and see how stuff works, do 
 
 As an example, here's a recent toot of mine from within the [fosstodon.org](https://fosstodon.org) instance:
 
-{{< stoot "fosstodon.org" "108369375709191968" >}}
+{{< stoot "fosstodon.org" "108370823317349516" >}}
 
 Now, since the URL for that toot was:
 
 ```plaintext
-https://fosstodon.org/@BryceWrayTX/108369375709191968
+https://fosstodon.org/@BryceWrayTX/108370823317349516
 ```
 
-. . . that means its ID was `108369375709191968`. So, the `curl` to `GET` that toot's JSON would be:
+. . . that means its ID was `108370823317349516`. So, the `curl` to `GET` that toot's JSON would be:
 
 ```bash
-curl "https://fosstodon.org/api/v1/statuses/108369375709191968"
+curl "https://fosstodon.org/api/v1/statuses/108370823317349516"
 ```
 
 **The resulting API return looks like this** (it's a toggle for viewing at your convenience, especially if you haven't time to do your own coding to work with this data):
@@ -74,21 +74,21 @@ curl "https://fosstodon.org/api/v1/statuses/108369375709191968"
 
 ```json
 {
-  "id": "108369375709191968",
-  "created_at": "2022-05-26T17:17:24.788Z",
+  "id": "108370823317349516",
+  "created_at": "2022-05-26T23:25:33.536Z",
   "in_reply_to_id": null,
   "in_reply_to_account_id": null,
   "sensitive": false,
   "spoiler_text": "",
   "visibility": "public",
   "language": "en",
-  "uri": "https://fosstodon.org/users/BryceWrayTX/statuses/108369375709191968",
-  "url": "https://fosstodon.org/@BryceWrayTX/108369375709191968",
-  "replies_count": 0,
-  "reblogs_count": 0,
-  "favourites_count": 1,
+  "uri": "https://fosstodon.org/users/BryceWrayTX/statuses/108370823317349516",
+  "url": "https://fosstodon.org/@BryceWrayTX/108370823317349516",
+  "replies_count": 1,
+  "reblogs_count": 5,
+  "favourites_count": 0,
   "edited_at": null,
-  "content": "\\u003cp\\u003eThanks in advance for following my site’s RSS and JSON feeds (your choice). That way, I don’t feel obligated to spam social media every time I post something. 🤐 \\u003c/p\\u003e\\u003cp\\u003eThe feeds are auto-discoverable on most readers at \\u003ca href=\"https://www.brycewray.com\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003ebrycewray.com\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e — or just check the links in the footer.\\u003c/p\\u003e",
+  "content": "\\u003cp\\u003eWill post this poll on three different instances. On how many Mastodon instances do you have at least one account? (And please boost if you’re similarly curious about how others do this. Thanks!)\\u003c/p\\u003e",
   "reblog": null,
   "application": null,
   "account": {
@@ -101,26 +101,27 @@ curl "https://fosstodon.org/api/v1/statuses/108369375709191968"
     "discoverable": true,
     "group": false,
     "created_at": "2021-06-06T00:00:00.000Z",
-    "note": "\\u003cp\\u003eInveterate supporter of the Oxford comma. He/him. Follow me at \\u003ca href=\"https://www.brycewray.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003ebrycewray.com/\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e (RSS and JSON \\u003ca href=\"https://fosstodon.org/tags/feeds\" class=\"mention hashtag\" rel=\"tag\"\\u003e#\\u003cspan\\u003efeeds\\u003c/span\\u003e\\u003c/a\\u003e available).\\u003c/p\\u003e",
+    "note": "\\u003cp\\u003eNerdy advocate for static websites and the tools that build them. Inveterate supporter of the Oxford comma. Follow me at \\u003ca href=\"https://www.brycewray.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003ebrycewray.com/\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e (RSS and JSON \\u003ca href=\"https://fosstodon.org/tags/feeds\" class=\"mention hashtag\" rel=\"tag\"\\u003e#\\u003cspan\\u003efeeds\\u003c/span\\u003e\\u003c/a\\u003e available). I have no intention of ever posting any of my Wordle scores. Admitted Apple fanboy — don’t judge. He/him.\\u003c/p\\u003e",
     "url": "https://fosstodon.org/@BryceWrayTX",
     "avatar": "https://cdn.fosstodon.org/accounts/avatars/106/365/523/785/947/655/original/12db25df1f58da76.png",
     "avatar_static": "https://cdn.fosstodon.org/accounts/avatars/106/365/523/785/947/655/original/12db25df1f58da76.png",
     "header": "https://cdn.fosstodon.org/accounts/headers/106/365/523/785/947/655/original/c30a52e2aeac5d00.jpg",
     "header_static": "https://cdn.fosstodon.org/accounts/headers/106/365/523/785/947/655/original/c30a52e2aeac5d00.jpg",
-    "followers_count": 77,
-    "following_count": 281,
-    "statuses_count": 17,
-    "last_status_at": "2022-10-06",
+    "followers_count": 473,
+    "following_count": 1525,
+    "statuses_count": 763,
+    "last_status_at": "2022-12-02",
+    "noindex": true,
     "emojis": [],
     "fields": [
       {
         "name": "Site",
         "value": "\\u003ca href=\"https://www.brycewray.com\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003ebrycewray.com\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e",
-        "verified_at": null
+        "verified_at": "2022-11-02T19:04:24.881+00:00"
       },
       {
-        "name": "Birdsite",
-        "value": "\\u003cspan class=\"h-card\"\\u003e\\u003ca href=\"https://fosstodon.org/@BryceWrayTX\" class=\"u-url mention\"\\u003e@\\u003cspan\\u003eBryceWrayTX\\u003c/span\\u003e\\u003c/a\\u003e\\u003c/span\\u003e",
+        "name": "GitHub",
+        "value": "\\u003ca href=\"https://github.com/brycewray\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://\\u003c/span\\u003e\\u003cspan class=\"\"\\u003egithub.com/brycewray\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e",
         "verified_at": null
       }
     ]
@@ -129,23 +130,30 @@ curl "https://fosstodon.org/api/v1/statuses/108369375709191968"
   "mentions": [],
   "tags": [],
   "emojis": [],
-  "card": {
-    "url": "https://www.brycewray.com/",
-    "title": "BryceWray.com",
-    "description": "Bryce Wray’s website | Observations, opinions, geekiness",
-    "type": "link",
-    "author_name": "",
-    "author_url": "",
-    "provider_name": "",
-    "provider_url": "",
-    "html": "",
-    "width": 400,
-    "height": 200,
-    "image": null,
-    "embed_url": "",
-    "blurhash": "UfG95Cofxu00ayt7Rjayoft7WBWBt7WBayt7"
-  },
-  "poll": null
+  "card": null,
+  "poll": {
+    "id": "108558",
+    "expires_at": "2022-05-29T23:25:33.532Z",
+    "expired": true,
+    "multiple": false,
+    "votes_count": 34,
+    "voters_count": 34,
+    "options": [
+      {
+        "title": "Just one",
+        "votes_count": 24
+      },
+      {
+        "title": "Two to four",
+        "votes_count": 9
+      },
+      {
+        "title": "Five or more",
+        "votes_count": 1
+      }
+    ],
+    "emojis": []
+  }
 }
 ```
 
@@ -324,7 +332,7 @@ You'll quickly see that I took advantage of the visual similarities between twee
 Once this is in place in your project's location for shortcodes, invoke it from within your Markdown like this:
 
 ```md
-{{</* stoot "fosstodon.org" "108369375709191968" */>}}
+{{</* stoot "fosstodon.org" "108370823317349516" */>}}
 ```
 
 As you can see, the syntax is:\
