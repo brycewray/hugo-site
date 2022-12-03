@@ -39,7 +39,7 @@ So, from time to time, I wondered why it couldn't be possible to reduce this to 
 
 After reading some excellent content (see the "[Acknowledgements and related material](#acknowledgements-and-related-material)" at the bottom), I can give you this quickie solution. While it involves some setup that definitely **isn't** a one-liner, it allows subsequent one-line calls of macros just as if they were components in SSGs like Astro or [Next.js](https://nextjs.org). Please note that the main thrust of what follows came from a <span class="nobrk">2021-12-22</span> [comment](https://github.com/11ty/eleventy/issues/613#issuecomment-999637109) by [Ted Whitehead](https://github.com/tedw) within an Eleventy issue on GitHub, initially filed in 2019, about using Nunjucks macros within Markdown files.
 
-One reason why this solution is so helpful is that, one you set it up as explained below, *every* applicable file can have one-line access to *all* your macros. That's because you can put *all* your macros in just one file --- because you define each macro separately within the file --- so, once you enable the Eleventy site to "see" that file, any content file you "bless" in the procedure below will be able to grab any macro therein.
+One reason why this solution is so helpful is that, once you set it up as explained below, *every* applicable file can have one-line access to *all* your macros. That's because you can put *all* your macros in just one file --- because you define each macro separately within the file --- so, once you enable the Eleventy site to "see" that file, any content file you "bless" in the procedure below will be able to grab any macro therein.
 
 ## Do the config
 
