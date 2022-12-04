@@ -83,13 +83,13 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 */}}
 {{- $CFPstyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 {{/*
-	Then, we create a 600-pixel-wide JPG
+	Then, we create a 640-pixel-wide JPG
 	of the image. This will serve as the
 	"fallback" image for that tiny percentage
 	of browsers that don't understand the
 	HTML `picture` tag.
 */}}
-{{- $actualImg := $src.Resize "600x jpg" -}}
+{{- $actualImg := $src.Resize "640x jpg" -}}
 {{/*
 	Now we'll handle the LQIP background for the
 	div that will contain the image content; the
@@ -183,7 +183,7 @@ In this case, it produces:
 	<picture>
 		<source type="image/webp" srcset="/posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_320x0_resize_q75_h2_mitchellnetravali.webp 320w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_h2_mitchellnetravali.webp 640w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_960x0_resize_q75_h2_mitchellnetravali.webp 960w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1280x0_resize_q75_h2_mitchellnetravali.webp 1280w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1600x0_resize_q75_h2_mitchellnetravali.webp 1600w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1920x0_resize_q75_h2_mitchellnetravali.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw">
 		<source type="image/jpeg" srcset="/posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_320x0_resize_q75_mitchellnetravali.jpg 320w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_mitchellnetravali.jpg 640w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_960x0_resize_q75_mitchellnetravali.jpg 960w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1280x0_resize_q75_mitchellnetravali.jpg 1280w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1600x0_resize_q75_mitchellnetravali.jpg 1600w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1920x0_resize_q75_mitchellnetravali.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw">
-		<img class="w-full h-auto animate-fade" src="/posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_600x0_resize_q75_mitchellnetravali.jpg" width="3264" height="2448" alt="Photo of a cat named Shakespeare sitting on a window sill" title="Photo of a cat named Shakespeare sitting on a window sill" loading="lazy" data-pagefind-ignore="">
+		<img class="w-full h-auto animate-fade" src="/posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_mitchellnetravali.jpg" width="3264" height="2448" alt="Photo of a cat named Shakespeare sitting on a window sill" title="Photo of a cat named Shakespeare sitting on a window sill" loading="lazy">
 	</picture>
 </div>
 ```
