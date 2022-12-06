@@ -35,7 +35,7 @@ There, sitting on a glass display panel between two sales clerks who were joking
 
 ## "For the rest of us"
 
-The first thing that stunned me was the sharpness of its screen (in those days, 512 &times; 384 in a nine-inch screen was pretty high-resolution, friends). Then, its for-that-era small size. Then, the fact that it was an all-in-one device, probably the first I'd seen. Then, the keyboard, so typist-friendly and so *un*-computerlike.
+The first thing that stunned me was the sharpness of its screen (in those days, 512 &times; 342 in a nine-inch screen was pretty high-resolution, friends). Then, its for-that-era small size. Then, the fact that it was an all-in-one device, probably the first I'd seen. Then, the keyboard, so typist-friendly and so *un*-computerlike.
 
 And, of course, the mouse.
 
