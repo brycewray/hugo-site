@@ -39,7 +39,8 @@
     {{ range $index, $element := $pages -}}
     {{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` .Title `”">Reply via email</a></p>` -}}
     {{- $emailReplyHTML := $emailReplyHTML -}}
-    {{- $contentHTML := print .Content $emailReplyHTML -}}
+		{{- $descrWithLine := print `<p>` .Description `</p><hr>` -}}
+    {{- $contentHTML := print $descrWithLine .Content $emailReplyHTML -}}
     {{- $PermaWithJSONutm = print .Permalink $JSONutm -}}
     {
       "title": {{ .Title | jsonify }},
