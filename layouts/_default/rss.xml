@@ -1,14 +1,16 @@
 {{- $pctx := . -}}
-{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- if .IsHome -}}
+	{{ $pctx = .Site }}
+{{- end -}}
 {{- $pages := slice -}}
 {{- if or $.IsHome $.IsSection -}}
-{{- $pages = $pctx.RegularPages -}}
+	{{- $pages = $pctx.RegularPages -}}
 {{- else -}}
-{{- $pages = $pctx.Pages -}}
+	{{- $pages = $pctx.Pages -}}
 {{- end -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
-{{- $pages = $pages | first $limit -}}
+	{{- $pages = $pages | first $limit -}}
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -23,26 +25,24 @@
     <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" -}}
-    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+	    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
     {{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
     {{- $PermaWithRSSutm := "" -}}
     {{ range $pages }}
-    {{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
-    {{- $titleThis := .Title | .Page.RenderString -}}
-    {{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>` -}}
-    {{- $contentMD := .Content -}}
-		{{- $descriptionMD := .Description | .Page.RenderString -}}
-		{{- $getFullFeed := `<br><hr><p><em>To get posts’ <strong>full</strong> content in your reader, please subscribe to my <a href="https://www.brycewray.com/index.json">JSON&nbsp;feed</a>.</em></p>` -}}
-		{{- $finalHTMLContent := print $descriptionMD $getFullFeed -}}
-    <item>
-      <title>{{ $titleThis }}</title>
-      <link>{{ $PermaWithRSSutm }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-      <guid>{{ .Permalink }}</guid>
-      <description>{{ $finalHTMLContent | html }}</description>
-    </item>
+			{{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
+			{{- $titleThis := .Title | .Page.RenderString -}}
+			{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>`  -}}
+			{{- $contentMD := .Content -}}
+			{{- $finalHTMLContent := print $contentMD $emailReplyHTML -}}
+			<item>
+				<title>{{ $titleThis }}</title>
+				<link>{{ $PermaWithRSSutm }}</link>
+				<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+				{{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+				<guid>{{ .Permalink }}</guid>
+				<description>{{ $finalHTMLContent | html }}</description>
+			</item>
     {{ end }}
   </channel>
 </rss>
