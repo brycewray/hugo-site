@@ -22,6 +22,7 @@ Paginate: 5 # so five posts will appear on each page from "/posts"
 params:
   Domain: "brycewray.com"
   Author: "Bryce Wray"
+  AuthorEmail: "bw@brycewray.com"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
   Host: "CFP" # choices for Host are "CFP" and "Vercel"
   HostName: "Cloudflare Pages" # choices for HostName are "Cloudflare Pages" and "Vercel"
