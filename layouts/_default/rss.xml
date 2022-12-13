@@ -13,36 +13,38 @@
 	{{- $pages = $pages | first $limit -}}
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ .Site.Params.Domain }}</title>
-    <link>{{ .Permalink }}</link>
-    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
-    <generator>Hugo {{ hugo.Version }} -- gohugo.io</generator>{{ with .Site.LanguageCode }}
-    <language>{{ . }}</language>{{end}}{{ with .Site.Author.email }}
-    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
-    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
-    <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-    {{- with .OutputFormats.Get "RSS" -}}
-	    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
-    {{- end -}}
-    {{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
-    {{- $PermaWithRSSutm := "" -}}
-    {{ range $pages }}
-			{{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
-			{{- $titleThis := .Title | .Page.RenderString -}}
-			{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>`  -}}
-			{{- $contentMD := .Content -}}
-			{{- $finalHTMLContent := print $contentMD $emailReplyHTML -}}
-			<item>
-				<title>{{ $titleThis }}</title>
-				<link>{{ $PermaWithRSSutm }}</link>
-				<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-				{{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-				<guid>{{ .Permalink }}</guid>
-				<description>{{ $finalHTMLContent | html }}</description>
-			</item>
-    {{ end }}
-  </channel>
-</rss>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.LanguageCode }}">
+	<title>{{ .Site.Params.Domain }}</title>
+	<subtitle>{{ .Site.Params.Description }}</subtitle>
+	<link href="{{ .Site.BaseURL }}index.xml" rel="self" />
+	<link href="{{ .Site.BaseURL }}" />
+	<icon>https://www.brycewray.com/images/icons/favicon-96x96.png</icon>
+	<logo>https://www.brycewray.com/images/icons/favicon-96x96.png</logo>
+	<updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+	<id>{{ .Site.BaseURL }}</id>
+	<author>
+		<name>{{ .Site.Params.Author }}</name>
+		<email>{{ .Site.Params.AuthorEmail }}</email>
+	</author>
+	{{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
+	{{- $PermaWithRSSutm := "" -}}
+	{{ range $pages }}
+		{{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
+		{{- $titleThis := .Title | .Page.RenderString -}}
+		{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>`  -}}
+		{{- $descrForFeed := "[No description]" -}}
+		{{- if .Description -}}
+			{{- $descrForFeed = .Description -}}
+		{{- end -}}
+		{{- $contentMD := .Content -}}
+		{{- $finalHTMLContent := print $contentMD $emailReplyHTML -}}
+		<entry>
+			<title>{{ $titleThis }}</title>
+			<link href="{{ $PermaWithRSSutm }}" />
+			<updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</updated>
+			<id>{{ .Permalink }}</id>
+			<summary>{{ $descrForFeed }}</summary>
+			<content xml:lang="{{ .Site.LanguageCode }}" type="html">{{ $finalHTMLContent | html }}</content>
+		</entry>
+	{{ end }}
+</feed>
