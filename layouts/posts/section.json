@@ -38,16 +38,16 @@
   {{- $PermaWithJSONutm := "" -}}
   "items": [
     {{- range $index, $element := $pages -}}
-			{{- $descriptionMD := "[No description]" -}}
+			{{- $descrForFeed := "[No description]" -}}
 			{{- if .Description -}}
-				{{- $descriptionMD = print `<p><em>` (.Description | .Page.RenderString) `</em></p>` -}}
+				{{- $descrForFeed = print `<p><em>` (.Description | .Page.RenderString) `</em></p>` -}}
 			{{- end -}}
 			{{- $excerpt := "" -}}
 			{{- if .Summary -}}
 				{{- $excerpt = (.Summary | .Page.RenderString) -}}
 			{{- end -}}
 			{{- $getFullFeed := `<hr><p><em>To get posts’ <strong>full</strong> content in your reader, you can subscribe to <a href="https://www.brycewray.com/index.json">this feed</a>.</em></p>` -}}
-			{{- $finalHTMLContent := print $descriptionMD `<hr />` $excerpt $getFullFeed -}}
+			{{- $finalHTMLContent := print $descrForFeed `<hr />` $excerpt $getFullFeed -}}
 			{
 				"title": {{ .Title | jsonify }},
 				"date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
