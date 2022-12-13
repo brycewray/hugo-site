@@ -9,6 +9,8 @@ initTextEditor: iA Writer # default --- change if needed
 
 If you ever use social media to promote your website's content, you'll want to read this post. Although we'll be concentrating on a procedure that involves the [Hugo](https://gohugo.io) static site generator (SSG) and the free tier of the [Cloudinary](https://cloudinary.com) digital asset management provider, anyone who runs a website can benefit from at least some of the information we'll provide below.
 
+<!--more-->
+
 And if you *do* use Hugo to manage your site and you either have, or are willing to get, a subscription to Cloudinary's generous free tier[^affilPlug], this post can make it ’way easier in the future to enhance promotion of your content. You *do* want people to read your content, right?
 
 [^affilPlug]: If you want to try even only Cloudinary's free tier, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). I'll get additional Cloudinary credits for each person who uses the link and subsequently enrolls with Cloudinary, even if only for the free tier. Thanks in advance!

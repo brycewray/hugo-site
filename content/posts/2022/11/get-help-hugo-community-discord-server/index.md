@@ -10,6 +10,7 @@ date: 2022-11-30T10:43:00-06:00
 Those who are trying to figure out the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) can run into trouble when they seek help on the only official source *for* that help, the [Hugo Discourse forum](https://discourse.gohugo.io).
 
 Now, don't get me wrong: if you follow the ["Requesting Help" guidelines](https://discourse.gohugo.io/t/requesting-help/9132), you absolutely can get powerful help on the Hugo Discourse; but there are times when someone simply *can't* adhere to those guidelines for some reason, yet still needs help with Hugo.[^grumpy] And that's probably the best reason for the continued existence of the definitely *non*-official **[Hugo Community Discord server](https://discord.com/invite/JUvtfrHBzG)**.[^invLink]
+<!--more-->
 
 [^grumpy]: When you see the Hugo Discourse described as (*e.g.*) "grumpy" within online discussions in sites like [Hacker News](https://news.ycombinator.com), it's often due to the tone of responses such cases have historically tended to receive, particularly from certain participants --- some of whom, to be fair, are no longer active on this Discourse, although many if not most of their acid-tongued answers are still visible within archived threads.
 

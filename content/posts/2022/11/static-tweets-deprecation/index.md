@@ -9,6 +9,8 @@ date: 2022-11-07T13:59:00-06:00
 
 Things have gotten steadily stranger at Twitter in recent days, with no apparent end in sight to the strangeness. First, new owner Elon Musk  [fired about half of the company](https://www.nbcnews.com/tech/tech-news/twitters-chaotic-short-notice-layoffs-rcna55661) and then, apparently upon discovering that this meat-ax approach was going to complicate things for his plans for the platform, [asked some of the fired workers to return at least for a while](https://www.reuters.com/technology/twitter-asks-some-laid-off-workers-come-back-bloomberg-news-2022-11-06/).
 
+<!--more-->
+
 Perhaps it was collateral damage from all the resulting chaos or perhaps it was just coincidental, but calls to Twitter's public syndication API are no longer working as they were before. Prior to the last few days, entering the following into a terminal:
 
 ```bash

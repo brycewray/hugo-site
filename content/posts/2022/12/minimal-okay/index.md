@@ -15,6 +15,8 @@ In my years of using various technologies and tools, such as [static site genera
 
 **Don't get freaked out by all the capabilities you *could* be using and, instead, focus for now only on what you *need* to use**. To put it another way: *minimal is okay*.
 
+<!--more-->
+
 What do I mean? Well, let me explain it by the examples from when I initially learned the lesson. Indeed, I learned and re-learned it numerous times.
 
 I started using personal computers, [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word), and [QuarkXPress](https://en.wikipedia.org/wiki/QuarkXPress) in the 1980s. Then I went on to HTML in the 1990s, followed by CSS in the 2000s (the "Aughts," as some call them), [content management systems](https://en.wikipedia.org/wiki/Content_management_system) (CMSs) in the early 2010s, and SSGs in the late 2010s. So what's the common thread here? It's that, for each, I taught myself **not** to worry about **all** its capabilities, but, rather, to concentrate on mastering its capabilities **that I needed at the time**. After all, I reasoned, I can always learn about the other goodies later **if** necessary.

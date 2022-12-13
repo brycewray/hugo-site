@@ -9,6 +9,8 @@ date: 2022-11-01T12:09:00-05:00
 
 This should be the last word on the subject of where my custom domains' email will "live" going forward. Really. Pinky-swear. *Et cetera*.
 
+<!--more-->
+
 In my [most recent post about this topic](/posts/2022/09/using-icloud-mail-custom-domain-retreat/), a few weeks ago, I summarized how I'd explored it since Apple had enabled [iCloud+](https://support.apple.com/guide/icloud/icloud-overview-mmfc854d9604/icloud) subscribers such as I to host their custom-domain(s)-based email on iCloud Mail. However, my (seeming) end point had been that I'd be sticking with [Fastmail](https://fastmail.com), instead. Although this would mean I'd be paying both the monthly iCloud+ charge and the $50/year[^inflation] for Fastmail, I found that acceptable because of the apparent technical superiority of Fastmail over iCloud Mail.
 
 [^inflation]: At least, it's $50/year as of this post's initial publication date. When/whether the current inflationary times will change that, I don't know.
