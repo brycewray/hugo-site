@@ -1,4 +1,5 @@
 ---
+layout: contact
 title: "Want to reach me?"
 description: "Here are several ways to get in contact."
 author: Bryce Wray
@@ -15,6 +16,8 @@ bw@brycewray.com<br />
 
 ## Follow me
 
-- This site’s news feed ([RSS](/index.xml) or [JSON](/index.json))
+- This site’s content feeds:
+  - Full-text ([RSS](/index.xml) or [JSON](/index.json))
+  - Excerpt-only ([RSS](/index-excerpts.xml) or [JSON](/index-excerpts.json))
 - [brycewray on GitHub](https://github.com/brycewray/)
 - <a rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener">@BryceWrayTX on Mastodon</a>
