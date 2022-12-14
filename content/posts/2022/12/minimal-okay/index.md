@@ -27,7 +27,7 @@ The answer is: "You may not, and that's fine. Just learn what you *really* need 
 
 I know enough about each technology and tool I use to accomplish what **I want to do** with it. I don't worry about the rest. If I need to grasp more later, I'll **learn it later**.
 
-Case in point: there are *many* capabilities in my two favorite SSGs, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io), that I've either never tried to use or, upon giving them a try, have decided I don't *need* to use them. But I haven't let such experiences keep me from making use of these SSGs for their capabilities that I **do** need. Are there other users out there writing incredible posts about how they **do** use these capabilities? Oh, my, yes. Does that mean **I** have to use them, too? No, not unless or until I see a need for them.
+Case in point: there are *many* capabilities in my two favorite SSGs, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io), that I've either never tried to use or, upon giving them a try, have decided I don't *need* to use them. But I haven't let such experiences keep me from making use of these SSGs for their capabilities that I **do** need. Are there other users out there writing incredible posts about how they **do** use these capabilities? Oh, my, yes. Does that mean **I** have to use them? No, not unless or until I see a need for them.
 
 And the same is true for you, too. Embrace using a tool or technology only to the extent you need it, and be comfortable in deciding that you'll learn more about it if and when **you** decide you need that knowledge.
 
