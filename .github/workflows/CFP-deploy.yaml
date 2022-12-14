@@ -70,8 +70,8 @@ jobs:
         run: hugo --gc --minify --verbose
       - name: Copy feeds
         run: |
-          cp ./posts/index.xml ./index-excerpts.xml
-          cp ./posts/index.json ./index-excerpts.json
+          cp posts/index.xml index-excerpts.xml
+          cp posts/index.json index-excerpts.json
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --source "public"
       - name: Publish to CFP
