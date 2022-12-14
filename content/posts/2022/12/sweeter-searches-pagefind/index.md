@@ -14,7 +14,7 @@ If you lurk in some of the same tech forums that I do, you'll see a lot of gripi
 
 Fortunately, while there are limits to how much you'll be able to improve your experience with online search in general, you *can* optimize your own website's search capabilities. That's assuming, of course, that your website is built with a [static site generator](https://jamstack.org/generators) (SSG), as I've recommended here over the years, and *has* search capabilities in the first place. If it lacks search, you can fix that readily enough with the free [Pagefind](https://pagefind.app) tool about which I [wrote](/posts/2022/07/pagefind-quite-find-site-search/) earlier this year.
 
-<!-- excerpt -->
+<!--more-->
 
 As newer versions of Pagefind appear, its powers grow; and one of those enhancements has enabled me to make [this site's search results](/search/) better --- specifically, by *cutting out* stuff which really didn't belong. I'll give a couple of examples herein, explaining the respective procedures for my two favorite SSGs, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
 
