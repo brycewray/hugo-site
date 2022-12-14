@@ -108,7 +108,7 @@ outputFormats:
   json:
     baseName: "index"
     mediaType: "application/json"
-    isPlainText: true
+    # isPlainText: true
 
 outputs:
   home:
