@@ -1,0 +1,117 @@
+name: Deploy to Cloudflare Pages
+
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci]
+# [ci skip]
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true` or `skip-checks:true`.”
+#
+#
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
+
+on:
+  push:
+    branches:
+      - main
+  # schedule:
+  #   - cron: '0 12 * * *' # every day at 12:00 UTC (0700CDT/0600CST)
+    # The above is to make sure static tweets' images don't run afoul
+    # of Twitter's caching strategy
+  #   - cron: '0 0 * * *'   # every day at 00:00UTC (1900CDT/1800CST)
+  #   - cron: '0 8 * * *'   # every day at 08:00UTC (0300CDT/0200CST)
+  #   - cron: '0 16 * * *'  # every day at 16:00UTC (1100CDT/1000CST)
+  workflow_dispatch:
+
+env:
+  HUGO_VERSION: 0.108.0 # will get Extended Version below
+  DART_SASS_VERSION: 1.56.2
+  BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+  TOKEN: ${{ secrets.TOKEN }}
+  TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
+  CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+  CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+  # WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
+          # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
+      - name: Download Hugo v${{ env.HUGO_VERSION }}
+        run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
+        # 0.103.0 began new naming convention
+      - name: Install Hugo v${{ env.HUGO_VERSION }}
+        run: sudo dpkg -i hugo*.deb
+      - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+        run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+      - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+        run: |
+          tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          sass_embedded/dart-sass-embedded --version
+      - name: Add to the PATH
+        run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
+      - name: Build site with Hugo
+        run: hugo --gc --minify --verbose
+      - name: Copy feeds
+        run: |
+          cp ./posts/index.xml ./index-excerpts.xml
+          cp ./posts/index.json ./index-excerpts.json
+      - name: Run Pagefind
+        run: npm_config_yes=true npx pagefind --source "public"
+      - name: Publish to CFP
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CFP_API_TOKEN }}
+          accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'static-site'
+          directory: 'public'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+  # following, for restarts-on-failures, based on:
+  # https://www.eliostruyf.com/restart-github-actions-workflow-failed/
+  restart_on_failed_push_build:
+    name: Restart failed push build
+    runs-on: ubuntu-latest
+    # restarts push-based run when it fails
+    if: github.event_name == 'push' && failure()
+    needs: [deploy]
+    steps:
+      - name: Retry the workflow
+        run: |
+          curl -i \
+          -X POST \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.GHA_PAT }}" \
+          https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
+          -d '{"ref": "${{ github.ref }}" }'
+  # restart_on_failed_cron_job:
+  #   name: Restart failed cron job build
+  #   runs-on: ubuntu-latest
+  #   # restarts scheduled run when it fails
+  #   if: github.event_name == 'schedule' && failure()
+  #   needs: [deploy]
+  #   steps:
+  #     - name: Retry the workflow
+  #       run: |
+  #         curl -i \
+  #         -X POST \
+  #         -H "Accept: application/vnd.github.v3+json" \
+  #         -H "Authorization: token ${{ secrets.GHA_PAT }}" \
+  #         https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
+  #         -d '{"ref": "${{ github.ref }}" }'
+
