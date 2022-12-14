@@ -9,6 +9,8 @@ initTextEditor: iA Writer # default --- change if needed
 
 This isn't, and likely never will be, a high-traffic website. But it has its moments. Occasionally, it catches eyes as a result of a mention on [Hacker News](https://news.ycombinator.com), or [Dev.to](https://dev.to), or the [Hugo](https://gohugo.io) [Discourse forum](https://discourse.gohugo.io). Or wherever. And, when that occurs, it's nice to be able to watch it happen. It gives me a clearer picture of where my readers are in the world, what browsers and devices they're using, and which sites sent them to me.
 
+<!--more-->
+
 — Or, at least, that *had* been possible, back when I was using [Fathom Analytics](https://usefathom.com/ref/ZKHYWX)[^affil] to monitor my site's traffic. As I [explained in June, 2020](/posts/2020/06/fathom-analytics-count-on-it/), Fathom is essentially the anti-Google-Analytics: it gives you all the traffic data you need, but **without** violating any visitor's privacy. I happily latched onto Fathom and kept a close watch on its data stream every day for the next two years.
 
 [^affil]: That's an affiliate link, with that affiliation explained in the main body of this post: *i.e.*, if you use it to sign up with Fathom, you get a $10 credit toward your first month with Fathom (and, yes, I get a little commission).

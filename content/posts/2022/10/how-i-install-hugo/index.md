@@ -17,6 +17,8 @@ When I [indicated](/posts/2022/07/really-getting-started-hugo) how I thought new
 
 That's why, here, I'm going to explain how to employ that direct-download method.
 
+<!--more-->
+
 *(I base the following on my "[Using Dart Sass with Hugo: the nitty-gritty](/posts/2022/05/using-dart-sass-hugo-nitty-gritty/)," which I note just in case you find any of it oddly familiar.)*
 
 ---

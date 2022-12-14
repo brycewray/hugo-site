@@ -13,6 +13,8 @@ The increasingly popular [Astro](https://astro.build) [static site generator](ht
 
 Unfortunately, it seems I can no longer do so.
 
+<!--more-->
+
 I thought Astro's [recent emergence from beta testing](https://astro.build/blog/astro-1/) would mean an end to how frequently it would be introducing breaking changes (which, of course, are likely with *any* beta). But, in trying to develop this site in Astro since then, I haven't found that to be the case:
 
 - **Brittleness** --- Due mainly to [one particular issue](https://github.com/withastro/astro/issues/4533) that I've come to call the "show-stopper," I haven't been able to manage an Astro version of this site because using [`Astro.glob()`](https://docs.astro.build/en/reference/api-reference/#astroglob) to provide things as simple as "Previous post"/"Next post" links tends to cause call stack errors in development mode.[^Gatsby]
