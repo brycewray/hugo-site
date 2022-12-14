@@ -77,7 +77,7 @@ Let's say you use a `posts` section to "own" your `index-excerpts.xml` and `inde
 hugo && mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json
 ```
 
-**If you use [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)** --- specifically, a [GitHub Action](https://github.com/features/actions/) --- to build your Hugo site, you can add a step **after** the `hugo` site-building command that will *move* those feed files to where they need to be, *e.g.*:
+**If you use [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)** --- specifically, a [GitHub Action](https://github.com/features/actions/) --- to build your Hugo site, you can add a step **after** the `hugo` site-building command that will move those feed files to where they need to be, *e.g.*:
 
 ```yml
       - name: Move feeds
