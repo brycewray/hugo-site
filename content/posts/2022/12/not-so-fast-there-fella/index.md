@@ -48,3 +48,35 @@ As a result, here's what I've done with the site:
 [^credit]: Credit where credit's due: to code for the excerpts and then convert them into Markdown for processing at build time, I relied heavily on "[Customize front matter parsing](https://www.11ty.dev/docs/data-frontmatter-customize/)" in the [Eleventy documentation](https://11ty.dev/docs/) and "[Replicating Jekyll's `markdownify` filter in Nunjucks with Eleventy](https://edjohnsonwilliams.co.uk/blog/2019-05-04-replicating-jekylls-markdownify-filter-in-nunjucks-with-eleventy/)" by [Ed Johnson-Williams](https://edjohnsonwilliams.co.uk/).
 
 I think this is about as close as I can come to making everyone happy on this particular score. Guess I'll find out.
+
+----
+
+## Addendum for Hugo users, 2022-12-14
+
+If you want to have a feeds setup as described above in a Hugo site, you'll have to jump through some hoops. This is because, as nearly as I can tell through researching the subject, Hugo allows only one feed (per format) per *[section](https://gohugo.io/content-management/sections/)*. For example, the home page --- typically the "owner" of a Hugo site's feed(s) --- can have one RSS/Atom feed and one JSON feed, but that's it. To have *multiple* feeds of a given format, set up each additional set of feeds in a separate section.
+
+Let's say you use a `posts` section to "own" your `index-excerpts.xml` and `index-excerpts.json` feed files, by adding appropriate `.json` and `.xml` layouts[^excerptExamples] there, each named according to [Hugo lookup rules](https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-section-pages):
+
+[^excerptExamples]: As of 2022-12-14, the [Hugo version of my site repo](https://github.com/brycewray/hugo_site) has examples of such layouts for both [RSS/Atom](https://github.com/brycewray/hugo_site/blob/main/layouts/posts/section.xml) and [JSON](https://github.com/brycewray/hugo_site/blob/main/layouts/posts/section.json) formats.
+
+```plaintext
+ layouts/
+ └─ posts/
+    ├── section.json
+    ├── section.xml
+```
+
+. . . which would cause Hugo to generate `/posts/index.json` and `/posts/index.xml`, respectively, for your site. But those aren't the top-level links you probably would prefer (well, definitely not the ones I would prefer), and my research also indicates Hugo doesn't offer a way to redirect them. That means you'll have to use your chosen web host's method for redirecting. Here are links to how to do it in the three hosts I usually recommend for static websites:
+
+- [Cloudflare Pages](https://pages.cloudflare.com): "[Redirects](https://developers.cloudflare.com/pages/platform/redirects/)."
+- [Netlify](https://netlify.com): "[Redirects and rewrites](https://docs.netlify.com/routing/redirects/)."
+- [Vercel](https://vercel.com): "[Redirects](https://vercel.com/docs/project-configuration#project-configuration/redirects)" (a topic within "[Project configuration](https://vercel.com/docs/project-configuration)").
+
+. . . so here's how you'd handle redirection in the example from above, if using a Cloudflare Pages `/static/_redirects`[^Static] file:
+
+[^Static]: For some hosts (such as Cloudflare Pages and Netlify), the appropriate file must be in the Hugo repo's top-level `static/` directory so it'll wind up in the actual website content as, say, `example.com/_redirects`; otherwise, the host won't process the redirects when publishing the site.
+
+```plaintext
+/posts/index.xml /index-excerpts.xml
+/posts/index.json /index-excerpts.json
+```
