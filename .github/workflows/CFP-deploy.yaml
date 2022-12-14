@@ -68,10 +68,10 @@ jobs:
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
         run: hugo --gc --minify --verbose
-      - name: Copy feeds
+      - name: Move feeds
         run: |
-          cp public/posts/index.xml public/index-excerpts.xml
-          cp public/posts/index.json public/index-excerpts.json
+          mv public/posts/index.xml public/index-excerpts.xml
+          mv public/posts/index.json public/index-excerpts.json
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --source "public"
       - name: Publish to CFP
