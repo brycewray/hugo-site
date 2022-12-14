@@ -7,6 +7,9 @@ date: 2022-09-06T13:30:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Note from the future**: [A few months later](/posts/2022/12/hugo-like-archetypes-other-ssgs-take-two/), came up with what is perhaps a better way to do this.
+{.box}
+
 Perhaps you've just had some inspiration and want to get started with a new post in your favorite static site generator (SSG). In just about every SSG except [Hugo](https://gohugo.io), you usually end up doing the following:
 
 1. Finding an **earlier** post's Markdown file.
