@@ -69,7 +69,7 @@ jobs:
       - name: Build site with Hugo
         run: hugo --gc --minify --verbose
       - name: Copy redirects
-        run: cp _redirects public/_redirects
+        run: cp static/_redirects public/_redirects
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --source "public"
       - name: Publish to CFP
