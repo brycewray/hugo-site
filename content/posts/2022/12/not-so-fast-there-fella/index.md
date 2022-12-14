@@ -53,6 +53,9 @@ I think this is about as close as I can come to making everyone happy on this pa
 
 ## Addendum for Hugo users, 2022-12-14
 
+**Important**: This corrects some erroneous information I'd added to this post earlier today, in which I confused redirects with moves. I apologize for the goof!
+{.box}
+
 If you want to have a feeds setup as described above in a Hugo site, you'll have to jump through some hoops. This is because, as nearly as I can tell through researching the subject, Hugo allows only one feed (per format) per *[section](https://gohugo.io/content-management/sections/)*. For example, the home page --- typically the "owner" of a Hugo site's feed(s) --- can have one RSS/Atom feed and one JSON feed, but that's it. To have *multiple* feeds of a given format, set up each additional set of feeds in a separate section.
 
 Let's say you use a `posts` section to "own" your `index-excerpts.xml` and `index-excerpts.json` feed files, by adding appropriate `.json` and `.xml` layouts[^excerptExamples] there, each named according to [Hugo lookup rules](https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-section-pages):
@@ -66,17 +69,24 @@ Let's say you use a `posts` section to "own" your `index-excerpts.xml` and `inde
     ├── section.xml
 ```
 
-. . . which would cause Hugo to generate `/posts/index.json` and `/posts/index.xml`, respectively, for your site. But those aren't the top-level links you probably would prefer (well, definitely not the ones I would prefer), and my research also indicates Hugo doesn't offer a way to redirect them. That means you'll have to use your chosen web host's method for redirecting. Here are links to how to do it in the three hosts I usually recommend for static websites:
+. . . which would cause Hugo to generate `/posts/index.json` and `/posts/index.xml`, respectively, for your site. But those aren't the top-level links you probably would prefer (well, definitely not the ones I would prefer), and my research also indicates Hugo doesn't offer a way to move the files. That means you'll need to do so yourself during the build process.
 
-- [Cloudflare Pages](https://pages.cloudflare.com): "[Redirects](https://developers.cloudflare.com/pages/platform/redirects/)."
-- [Netlify](https://netlify.com): "[Redirects and rewrites](https://docs.netlify.com/routing/redirects/)."
-- [Vercel](https://vercel.com): "[Redirects](https://vercel.com/docs/project-configuration#project-configuration/redirects)" (a topic within "[Project configuration](https://vercel.com/docs/project-configuration)").
-
-. . . so here's how you'd handle redirection in the example from above, if using a Cloudflare Pages `/static/_redirects`[^Static] file:
-
-[^Static]: For some hosts (such as Cloudflare Pages and Netlify), the appropriate file must be in the Hugo repo's top-level `static/` directory so it'll wind up in the actual website content as, say, `example.com/_redirects`; otherwise, the host won't process the redirects when publishing the site.
+**If you use a [Jamstack](https://jamstack.org)-savvy host** such as [Cloudflare Pages](https://pages.cloudflare.com), [Netlify](https://netlify.com), or [Vercel](https://vercel.com), you can add file-moving commands to your overall build command. Let's say your usual Hugo build command is `hugo`; the following would build the site and move the files:
 
 ```plaintext
-/posts/index.xml /index-excerpts.xml
-/posts/index.json /index-excerpts.json
+hugo && mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json
 ```
+
+**If you use [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)** --- specifically, a [GitHub Action](https://github.com/features/actions/) --- to build your Hugo site, you can add a step **after** the `hugo` site-building command that will *move* those feed files to where they need to be, *e.g.*:
+
+```yml
+      - name: Move feeds
+        run: |
+          mv public/posts/index.xml public/index-excerpts.xml
+          mv public/posts/index.json public/index-excerpts.json
+```
+
+Finally, **if you build manually** --- *i.e.*, you copy your Hugo-generated `public/` folder to the appropriate place on your host --- just manipulate those files as follows *before* you copy that folder:
+
+- Move `public/posts/index.xml` to `public/` and rename the file `index-excerpts.xml`, so that it will be `public/index-excerpts.xml`.
+- Move `public/posts/index.json` to `public/` and rename the file `index-excerpts.json`, so that it will be `public/index-excerpts.json`.
