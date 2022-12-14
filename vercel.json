@@ -2,6 +2,10 @@
   "github": {
     "silent": true
   },
+	"redirects": [
+		{ "source": "/posts/index.xml", "destination": "/index-excerpts.xml" },
+		{ "source": "posts/index.json", "destination": "/index-excerpts.json"}
+	],
   "headers": [
     {
       "source": "(.*)",
