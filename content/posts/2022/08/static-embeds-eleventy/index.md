@@ -26,9 +26,6 @@ Due to changes in the status and/or availability of one or more Twitter APIs, pe
 
 ## Static toots
 
-**Update from the future**: Due to issues I subsequently encountered during development, this Eleventy code **doesn't** include certain functionality that I would later add to the Hugo code on which this is based.
-{.box}
-
 Using the `stoot.js` shortcode in Markdown brings up the following:
 
 {{< stoot "fosstodon.org" "108896692414393920" >}}
@@ -48,7 +45,8 @@ const { DateTime } = require("luxon")
 
 module.exports = async (instance, id) => {
 
-	let tootLink, handleInst, mediaMD5, urlToGet, mediaStuff, videoStuff, gifvStuff, pollStuff = ''
+	let stringToRet = ``
+	let tootLink, handleInst, mediaMD5, urlToGet, mediaStuff, videoStuff, gifvStuff, cardStuff, pollStuff = ''
 	let imageCount, votesCount = 0
 
 	urlToGet = `https://` + instance + `/api/v1/statuses/` + id
@@ -60,6 +58,7 @@ module.exports = async (instance, id) => {
 		});
 		return response
 	}
+
 	// Regarding the settings above,
 	// consult the eleventy-fetch documentation
 	// at https://www.11ty.dev/docs/plugins/fetch/
@@ -75,78 +74,93 @@ module.exports = async (instance, id) => {
 		mediaMD5 = md5(Json.media_attachments[0].url)
 		Json.media_attachments.forEach((type) => {
 			if (Json.media_attachments[0].type == "image") {
-				imageCount = ++imageCount
+				imageCount = ++imageCount;
 			}
 		})
 		Json.media_attachments.forEach((type, meta) => {
 			if (Json.media_attachments[0].type == "image") {
-				mediaStuff = ``
-				mediaStuff = mediaStuff + `<div class="tweet-img-grid-${imageCount}"><style>.img-${mediaMD5} {aspect-ratio: ${Json.media_attachments[0].meta.original.width} / ${Json.media_attachments[0].meta.original.height}}</style>`
-				mediaStuff = mediaStuff + `<img src="${Json.media_attachments[0].url}" alt="Image ${Json.media_attachments[0].id} from toot ${id} on ${instance}" class="tweet-media-img img-${mediaMD5}`
+				mediaStuff = ``;
+				mediaStuff = mediaStuff + `<div class="tweet-img-grid-${imageCount}"><style>.img-${mediaMD5} {aspect-ratio: ${Json.media_attachments[0].meta.original.width} / ${Json.media_attachments[0].meta.original.height}}</style>`;
+				mediaStuff = mediaStuff + `<img src="${Json.media_attachments[0].url}" alt="Image ${Json.media_attachments[0].id} from toot ${id} on ${instance}" class="tweet-media-img img-${mediaMD5}`;
 				if (Json.sensitive) {
-					mediaStuff = mediaStuff + ` tweet-sens-blur`
+					mediaStuff = mediaStuff + ` tweet-sens-blur`;
 				}
-				mediaStuff = mediaStuff + `" loading="lazy"`
+				mediaStuff = mediaStuff + `" loading="lazy"`;
 				if (Json.sensitive) {
-					mediaStuff = mediaStuff + ` onclick="this.classList.toggle('tweet-sens-blur-no')"`
+					mediaStuff = mediaStuff + ` onclick="this.classList.toggle('tweet-sens-blur-no')"`;
 				}
-				mediaStuff = mediaStuff + `/>`
+				mediaStuff = mediaStuff + `/>`;
 				if (Json.sensitive) {
-					mediaStuff = mediaStuff + `<div class="blur-text">Sensitive content<br />(flagged&nbsp;at&nbsp;origin)</div>`
+					mediaStuff = mediaStuff + `<div class="blur-text">Sensitive content<br />(flagged&nbsp;at&nbsp;origin)</div>`;
 				}
-				mediaStuff = mediaStuff + `</div>`
+				mediaStuff = mediaStuff + `</div>`;
 			}
 			if (Json.media_attachments[0].type == "video") {
-				videoStuff = ``
-				videoStuff = videoStuff + `<style>.img-${mediaMD5} {aspect-ratio: ${Json.media_attachments[0].meta.original.width} / ${Json.media_attachments[0].meta.original.height}}</style>`
-				videoStuff = videoStuff + `<div class="ctr tweet-video-wrapper"><video muted playsinline controls class="ctr tweet-media-img img-${mediaMD5}`
+				videoStuff = ``;
+				videoStuff = videoStuff + `<style>.img-${mediaMD5} {aspect-ratio: ${Json.media_attachments[0].meta.original.width} / ${Json.media_attachments[0].meta.original.height}}</style>`;
+				videoStuff = videoStuff + `<div class="ctr tweet-video-wrapper"><video muted playsinline controls class="ctr tweet-media-img img-${mediaMD5}`;
 				if (Json.sensitive) {
-					videoStuff = videoStuff + ` tweet-sens-blur`
+					videoStuff = videoStuff + ` tweet-sens-blur`;
 				}
-				videoStuff = videoStuff + `"`
+				videoStuff = videoStuff + `"`;
 				if (Json.sensitive) {
-					videoStuff = videoStuff + ` onclick="this.classList.toggle('tweet-sens-blur-no')"`
+					videoStuff = videoStuff + ` onclick="this.classList.toggle('tweet-sens-blur-no')"`;
 				}
-				videoStuff = videoStuff + `><source src="${Json.media_attachments[0].url}"><p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p></video>`
+				videoStuff = videoStuff + `><source src="${Json.media_attachments[0].url}"><p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p></video>`;
 				if (Json.sensitive) {
-					videoStuff = videoStuff + `<div class="blur-text">Sensitive content<br />(flagged&nbsp;at&nbsp;origin)</div>`
+					videoStuff = videoStuff + `<div class="blur-text">Sensitive content<br />(flagged&nbsp;at&nbsp;origin)</div>`;
 				}
 				videoStuff = videoStuff + `</div>`
 			}
 			if (Json.media_attachments[0].type == "gifv") {
-				gifvStuff = ``
-				gifvStuff = gifvStuff + `<style>.img-${mediaMD5} {aspect-ratio: ${Json.media_attachments[0].meta.original.width} / ${Json.media_attachments[0].meta.original.height}}</style>`
-				gifvStuff = gifvStuff + `<div class="ctr tweet-video-wrapper"><video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-${mediaMD5}`
+				gifvStuff = ``;
+				gifvStuff = gifvStuff + `<style>.img-${mediaMD5} {aspect-ratio: ${Json.media_attachments[0].meta.original.width} / ${Json.media_attachments[0].meta.original.height}}</style>`;
+				gifvStuff = gifvStuff + `<div class="ctr tweet-video-wrapper"><video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-${mediaMD5}`;
 				if (Json.sensitive) {
-					gifvStuff = gifvStuff + ` tweet-sens-blur`
+					gifvStuff = gifvStuff + ` tweet-sens-blur`;
 				}
-				gifvStuff = gifvStuff + `"`
+				gifvStuff = gifvStuff + `"`;
 				if (Json.sensitive) {
-					gifvStuff = gifvStuff + ` onclick="this.classList.toggle('tweet-sens-blur-no')"`
+					gifvStuff = gifvStuff + ` onclick="this.classList.toggle('tweet-sens-blur-no')"`;
 				}
-				gifvStuff = gifvStuff + `><source src="${Json.media_attachments[0].url}"><p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p></video>`
+				gifvStuff = gifvStuff + `><source src="${Json.media_attachments[0].url}"><p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p></video>`;
 				if (Json.sensitive) {
-					gifvStuff = gifvStuff + `<div class="blur-text">Sensitive content<br />(flagged&nbsp;at&nbsp;origin)</div>`
+					gifvStuff = gifvStuff + `<div class="blur-text">Sensitive content<br />(flagged&nbsp;at&nbsp;origin)</div>`;
 				}
 				gifvStuff = gifvStuff + `</div>`
 			}
 		})
+
+		/*
+			N.B.:
+			The above results in an empty, no-height div
+			when there's no image but there **is**
+			at least one item in `$media_attachments`.
+			Unfortunately, it seems to be the only way
+			to accomplish this. Not a good HTML practice,
+			but gets the job done.
+		*/
+	}
+
+	if(Json.card !== null) {
+		cardStuff = ``;
+		cardStuff = cardStuff + `<a href="${Json.card.url}" rel="noopener"><div class="card"><img src="${Json.card.image}" alt="Card image from ${instance} toot ${id}" loading="lazy" class="tweet-card-img" /><p><span class="card-title">${Json.card.title}</span><br />${Json.card.description}</p></div></a>`;
 	}
 
 	if (Json.poll !== null) {
-		votesCount = Json.poll.votes_count
-		let pollIterator = 0
-		pollStuff = ``
-		pollStuff = pollStuff + `<div class="tweet-poll-wrapper">`
+		votesCount = Json.poll.votes_count;
+		let pollIterator = 0;
+		pollStuff = ``;
+		pollStuff = pollStuff + `<div class="tweet-poll-wrapper">`;
 		Json.poll.options.forEach(( options ) => {
-			pollStuff = pollStuff + `<div class="tweet-poll-count"><strong>${((Json.poll.options[pollIterator].votes_count)/(votesCount)).toLocaleString("en", {style: "percent", minimumFractionDigits: 1, maximumFractionDigits: 1})}</strong></div><div class="tweet-poll-meter"><meter id="vote-count" max="${votesCount}" value=${Json.poll.options[pollIterator].votes_count}></meter></div><div class="tweet-poll-title">${Json.poll.options[pollIterator].title}</div>`
-			pollIterator = ++pollIterator
+			pollStuff = pollStuff + `<div class="tweet-poll-count"><strong>${((Json.poll.options[pollIterator].votes_count)/(votesCount)).toLocaleString("en", {style: "percent", minimumFractionDigits: 1, maximumFractionDigits: 1})}</strong></div><div class="tweet-poll-meter"><meter id="vote-count" max="${votesCount}" value=${Json.poll.options[pollIterator].votes_count}></meter></div><div class="tweet-poll-title">${Json.poll.options[pollIterator].title}</div>`;
+			pollIterator = ++pollIterator;
 		})
-		pollStuff = pollStuff + `</div><p class="legal tweet-poll-total">${votesCount} votes</p>`
+		pollStuff = pollStuff + `</div><p class="legal tweet-poll-total">${votesCount} votes</p>`;
 	}
 
 	if (Json.content) {
-		stringToRet = `<blockquote class="tweet-card" cite="${tootLink}">
+		stringToRet = `<blockquote class="tweet-card" cite="${tootLink}" data-pagefind-ignore>
 			<div class="tweet-header">
 				<a class="tweet-profile twitterExt" href="https://${instance}/@${Json.account.acct}" rel="noopener"><img src="${Json.account.avatar}" alt="Mastodon avatar for ${handleInst}" loading="lazy" /></a>
 				<div class="tweet-author">
@@ -163,6 +177,9 @@ module.exports = async (instance, id) => {
 			}
 			if (gifvStuff) {
 				stringToRet += `<div>${gifvStuff}</div>`
+			}
+			if (cardStuff) {
+				stringToRet += `<div>${cardStuff}</div>`
 			}
 			if (pollStuff) {
 				stringToRet += `<div>${pollStuff}</div>`
