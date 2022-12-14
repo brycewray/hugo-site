@@ -16,7 +16,7 @@
 				<!-- End Cloudflare Web Analytics -->
 			{{- end -}}
 		{{- end -}}
-		{{- if (findRE `<pre class="highlight"` .Content 1) -}}
+		{{- if (findRE `<div class="highlight"` .Content 1) -}}
 			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint "md5" -}}
 			<script nonce="DhcnhD3khTMePgXw" src="{{ $jsCopy.RelPermalink }}" defer></script>
 		{{- end }}
