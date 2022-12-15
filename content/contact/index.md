@@ -17,7 +17,7 @@ bw@brycewray.com<br />
 ## Follow me
 
 - This site’s content feeds:
-  - Full-text ([RSS](/index.xml) or [JSON](/index.json))
-  - Excerpt-only ([RSS](/index-excerpts.xml) or [JSON](/index-excerpts.json))
+  - Full-text ([RSS/Atom](/index.xml) or [JSON](/index.json))
+  - Excerpt-only ([RSS/Atom](/index-excerpts.xml) or [JSON](/index-excerpts.json))
 - [brycewray on GitHub](https://github.com/brycewray/)
 - <a rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener">@BryceWrayTX on Mastodon</a>
