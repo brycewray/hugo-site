@@ -1,4 +1,3 @@
-		{{- /* CSS/SCSS */ -}}
 		{{- /*
 			Dart Sass Embedded stuff herein:
 			- Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
@@ -8,14 +7,14 @@
 		{{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
 		{{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
 		{{- if hugo.IsProduction -}}
-			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
-			<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-			<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-			<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+		{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
+		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+		<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+		<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
 		{{- else -}}
-			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-			{{/*- Fingerprinting in dev due to Safari weirdness -*/}}
-		{{- end -}}
+		{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
+		{{/*- Fingerprinting in dev due to Safari weirdness -*/}}
+		{{- end }}
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{- /* end, CSS/SCSS */}}
 		<noscript><style>.nScrHidden {display: none;}</style></noscript>
