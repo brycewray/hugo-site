@@ -75,8 +75,8 @@ jobs:
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --source "public"
       - name: Publish to CFP
-        uses: cloudflare/pages-action@1.2.0
-        # `@1.2.0` until issue #38 is resolved, then back to `@1`:
+        uses: cloudflare/pages-action@v1.2.0
+        # `@v1.2.0` until issue #38 is resolved, then back to `@1` (no `v`):
         # https://github.com/cloudflare/pages-action/issues/38
         with:
           apiToken: ${{ secrets.CFP_API_TOKEN }}
