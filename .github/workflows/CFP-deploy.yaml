@@ -67,7 +67,7 @@ jobs:
       - name: Add to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       - name: Build site with Hugo
-        run: hugo --gc --minify --verbose
+        run: hugo --gc --verbose
       - name: Move feeds
         run: |
           mv public/posts/index.xml public/index-excerpts.xml
