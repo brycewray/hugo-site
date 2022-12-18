@@ -1,6 +1,8 @@
 baseURL: https://www.brycewray.com/
 languageCode: en-us
 title: BryceWray.com
+author:
+  name: "Bryce Wray"
 # theme:
 timeZone: America/Chicago
 
@@ -99,7 +101,7 @@ caches:
     # maxAge: 144h # default = -1 (forever)
 
 minify:
-  disableJSON: true
+  # disableJSON: true
   tdewolff:
     html:
       keepQuotes: true
