@@ -148,7 +148,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 						{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s" . " jpg") ).RelPermalink }} {{ . }}w
 					{{- end -}}
 				{{- end -}}
-			{{- end -}}"\
+			{{- end -}}"
 			sizes="{{ $dataSzes }}"
 		/>
 		<img class="{{ $imgClass }}"
