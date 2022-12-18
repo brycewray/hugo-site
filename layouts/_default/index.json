@@ -1,13 +1,9 @@
-{{- $pctx := . -}}
-{{- if .IsHome -}}
-	{{ $pctx = .Site }}
-{{- end -}}
-{{- $pages := $pctx.RegularPages -}}
+{{- $posts := where .Site.Pages "Section" "posts" -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
-	{{- $pages = $pages | first $limit -}}
+	{{- $posts = $posts | first $limit -}}
 {{- end -}}
-{{ $length := (len $pages) -}}
+{{ $length := (len $posts) -}}
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "{{ .Site.Title }}",
@@ -38,7 +34,7 @@
   {{- $JSONutm := "?utm_campaign=JSON&utm_source=JSON&utm_medium=JSON"  -}}
   {{- $PermaWithJSONutm := "" -}}
   "items": [
-    {{ range $index, $element := $pages -}}
+    {{ range $index, $element := $posts -}}
 			{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` .Title `”">Reply via email</a></p>` -}}
 			{{- $emailReplyHTML := $emailReplyHTML -}}
 			{{- $contentHTML := print .Content $emailReplyHTML -}}

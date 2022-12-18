@@ -1,16 +1,7 @@
-{{- $pctx := . -}}
-{{- if .IsHome -}}
-	{{ $pctx = .Site }}
-{{- end -}}
-{{- $pages := slice -}}
-{{- if or $.IsHome $.IsSection -}}
-	{{- $pages = $pctx.RegularPages -}}
-{{- else -}}
-	{{- $pages = $pctx.Pages -}}
-{{- end -}}
+{{- $posts := where .Site.Pages "Section" "posts" -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
-	{{- $pages = $pages | first $limit -}}
+	{{- $posts = $posts | first $limit -}}
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.LanguageCode }}">
@@ -26,7 +17,7 @@
 	</author>
 	{{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
 	{{- $PermaWithRSSutm := "" -}}
-	{{ range $pages }}
+	{{ range $posts }}
 		{{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
 		{{- $titleThis := .Title | .Page.RenderString -}}
 		{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>`  -}}
