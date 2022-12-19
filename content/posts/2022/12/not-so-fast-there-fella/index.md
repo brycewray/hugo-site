@@ -53,7 +53,8 @@ I think this is about as close as I can come to making everyone happy on this pa
 
 ## Addendum for Hugo users, 2022-12-14
 
-**Important**: This corrects some erroneous information I'd added to this post earlier today, in which I confused redirects with moves. I apologize for the goof!
+**Important**: This corrects some erroneous information I'd added to this post earlier today, in which I confused redirects with moves. I apologize for the goof!\
+*Also*, I provided some additional details on 2022-12-19.
 {.box}
 
 If you want to have a feeds setup as described above in a Hugo site, you'll have to jump through some hoops. This is because, as nearly as I can tell through researching the subject, Hugo allows only one feed (per format) per *[section](https://gohugo.io/content-management/sections/)*. For example, the home page --- typically the "owner" of a Hugo site's feed(s) --- can have one RSS/Atom feed and one JSON feed, but that's it. To have *multiple* feeds of a given format, set up each additional set of feeds in a separate section.
@@ -77,13 +78,20 @@ Let's say you use a `posts` section to "own" your `index-excerpts.xml` and `inde
 hugo && mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json
 ```
 
-**If you use [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)** --- specifically, a [GitHub Action](https://github.com/features/actions/) --- to build your Hugo site, you can add a step **after** the `hugo` site-building command that will move those feed files to where they need to be, *e.g.*:
+**If you use [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)** to build your Hugo site, you can add a step **after** the `hugo` site-building command that will move those feed files to where they need to be. For a [GitHub Action](https://github.com/features/actions/), that could be:
 
 ```yml
       - name: Move feeds
         run: |
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
+```
+
+. . . while, if using a [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) [pipeline](https://docs.gitlab.com/ee/ci/pipelines/), you could do this within the `script` section:
+
+```yml
+    - mv public/posts/index.xml public/index-excerpts.xml
+    - mv public/posts/index.json public/index-excerpts.json
 ```
 
 Finally, **if you build manually** --- *i.e.*, you copy your Hugo-generated `public/` folder to the appropriate place on your host --- just manipulate those files as follows *before* you copy that folder:
