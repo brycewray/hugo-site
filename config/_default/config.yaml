@@ -1,8 +1,6 @@
 baseURL: https://www.brycewray.com/
 languageCode: en-us
 title: BryceWray.com
-author:
-  name: "Bryce Wray"
 # theme:
 timeZone: America/Chicago
 
@@ -25,6 +23,8 @@ params:
   Domain: "brycewray.com"
   Author: "Bryce Wray"
   AuthorEmail: "bw@brycewray.com"
+  AuthorUrl: "https://www.brycewray.com/about/"
+  AuthorAvatar: "https://www.brycewray.com/images/icons/apple-icon-1024x1024.png"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
   Host: "CFP" # choices for Host are "CFP" and "Vercel"
   HostName: "Cloudflare Pages" # choices for HostName are "Cloudflare Pages" and "Vercel"
