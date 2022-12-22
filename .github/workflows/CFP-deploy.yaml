@@ -80,7 +80,7 @@ jobs:
           name: "pagefind"
           version: ${{env.PAGEFIND_VERSION}}
       - name: Run Pagefind
-        run: npm_config_yes=true npx pagefind --source "public"
+        run: pagefind --source "public"
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
         with:
