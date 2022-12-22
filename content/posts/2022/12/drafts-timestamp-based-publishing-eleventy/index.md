@@ -33,6 +33,9 @@ What advantages do you gain from having these features?
 
 ## The code
 
+**Update, 2022-12-22**: If you experience inconsistent behavior with the code provided below, try developing in Eleventy **without** the [`--incremental` switch](https://www.11ty.dev/docs/usage/#incremental-for-partial-incremental-builds), which as of this writing can cause issues in some versions.
+{.box}
+
 Eleventy's [**computed data** feature](https://www.11ty.dev/docs/data-computed/) lets you (quoting the documentation) "inject Data properties into your data object that are based on other data values."
 
 For our purposes here, we'll use `eleventyComputed` to determine each content file's worthiness for publication based on the file's draft status and timestamp. And, because we want Eleventy to make this happen through the project, we'll put the code in the project's *[global data directory](https://www.11ty.dev/docs/data-global/)*, making its results available to all of the project's templates. Typically, that directory is a top-level `_data` folder, so I'll use that placement in the code example below. [In order to work right](https://www.11ty.dev/docs/data-computed/#advanced-details), the file itself must be named `eleventyComputed.js`.[^noteReName]
@@ -134,7 +137,7 @@ I've ordered these sources by each item's date of initial publication, starting 
 - Giustino Borzacchiello, "[How to create drafts in Eleventy](https://giustino.blog/how-to-drafts-eleventy/)" <span class="nobrk">(2020-01-04)</span>.
 - Kyle Halleman, "[Creating drafts in Eleventy](https://mymanycoloredways.com/posts/2021/02/creating-drafts-in-eleventy/)" <span class="nobrk">(2021-02-09)</span>.
 - John Kemp-Cruz, "[Creating Drafts In Eleventy](https://jkc.codes/blog/creating-drafts-in-eleventy/)" <span class="nobrk">(2021-08-06)</span>.
-- Peter DeHaan, [comment](https://github.com/11ty/eleventy/issues/2060#issuecomment-955777844) in [Eleventy issue #2060](https://github.com/11ty/eleventy/issues/2060) <span class="nobrk">(2021-10-31)</span>.
-- Peter DeHaan, [`11ty-drafts` GitHub repo](https://github.com/pdehaan/11ty-drafts) <span class="nobrk">(2021-10-31)</span>.
+- Peter deHaan, [comment](https://github.com/11ty/eleventy/issues/2060#issuecomment-955777844) in [Eleventy issue #2060](https://github.com/11ty/eleventy/issues/2060) <span class="nobrk">(2021-10-31)</span>.
+- Peter deHaan, [`11ty-drafts` GitHub repo](https://github.com/pdehaan/11ty-drafts) <span class="nobrk">(2021-10-31)</span>.
 - Juneum, "[Draft Posts in Eleventy](https://juneum.com/articles/eleventy-drafts/)" <span class="nobrk">(2022-02-08)</span>.
 - Raymond Camden, "[Support Draft Blog Posts in Eleventy](https://www.raymondcamden.com/2022/08/14/support-draft-blog-posts-in-eleventy)" <span class="nobrk">(2022-08-14)</span>.
