@@ -54,18 +54,18 @@ jobs:
           fetch-depth: 0
           # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
           # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
-      - name: Download Hugo v${{ env.HUGO_VERSION }}
+      - name: Download Hugo
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
         # 0.103.0 began new naming convention
-      - name: Install Hugo v${{ env.HUGO_VERSION }}
+      - name: Install Hugo
         run: sudo dpkg -i hugo*.deb
-      - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+      - name: Download Embedded Dart Sass
         run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+      - name: Unpack Embedded Dart Sass
         run: |
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           sass_embedded/dart-sass-embedded --version
-      - name: Add Embedded Dart Sass v${{ env.DART_SASS_VERSION }} to the PATH
+      - name: Add Embedded Dart Sass to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       # - name: Install Pagefind v${{ env.PAGEFIND_VERSION }}
       #   uses: supplypike/setup-bin@v3
@@ -73,21 +73,17 @@ jobs:
       #     uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
       #     name: "pagefind_extended"
       #     version: ${{env.PAGEFIND_VERSION}}
-      - name: Download Pagefind v${{ env.PAGEFIND_VERSION }}
+      - name: Download Pagefind
         run: curl -LJO https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz
-      - name: Unpack Pagefind v${{ env.PAGEFIND_VERSION }}
+      - name: Unpack Pagefind
         run: tar -xvf pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz
-      - name: Add Pagefind v${{ env.PAGEFIND_VERSION }} to the PATH
-        run: |
-          echo "$GITHUB_WORKSPACE/pagefind_extended" >> $GITHUB_PATH
-          pagefind_extended --version
       - name: Build site with Hugo
         run: hugo --verbose --minify
       - name: Move "excerpts" feeds
         run: |
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
-      - name: Run Pagefind v${{ env.PAGEFIND_VERSION }}
+      - name: Run Pagefind
         run: pagefind_extended --source "public"
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
