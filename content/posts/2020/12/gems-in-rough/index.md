@@ -15,7 +15,7 @@ Thus, in this post, I'm describing some of them for you. Perhaps this will end u
 
 ## Ahead code?
 
-{{< imgh src="index-njk_in_Nova_3202x2022.png" alt="Screen shot of index.njk template in Nova code editor" >}}
+{{< imgc src="index-njk_in_Nova_3202x2022.png" alt="Screen shot of index.njk template in Nova code editor" width=3202 height=2022 >}}
 
 As I write, I'm about a week into the 30-day free trial of the new [Nova](https://nova.app) code editor for macOS (and only macOS), the successor to [Panic](https://panic.com)'s venerable [Coda](https://panic.com/coda/). The Mac-focused Panic first released Nova only a few months ago, but has steadily improved it. As is typical for a Panic app, it's really slick and, as someone who is in the second half of his *fourth decade* as a Mac user and first became acquainted with Panic apps in the mid-"aughts," I admire its many Mac-ish touches. Unlike Microsoft's [Electron](https://www.electronjs.org/)-based [Visual Studio Code](https://code.visualstudio.com), Nova is a *native* app. It's also much easier to configure and extend than VS Code.
 
@@ -74,7 +74,7 @@ My experience has been that using *all three* of these, every time you switch ho
 
 As of the initial publication of this post, this site uses the [Inter font](https://rsms.me/inter), and specifically the [variable](https://web.dev/variable-fonts/) version thereof (which, from here, I'll call "Inter VF”). Inter is a beautiful sans-serif font that looks a lot like San Francisco, the native system font on Apple devices.
 
-{{< imgh src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" >}}
+{{< imgh src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" width=2164 height=698 >}}
 
 The problem is that, due to the vast number of [glyphs](https://en.wikipedia.org/wiki/Glyph) it contains, Inter can be a *really* large download. So you want to make sure you *[subset](https://dev.to/benjaminblack/save-your-users-data-by-subsetting-web-fonts-5eo9)* it, extracting only those parts your site will actually use, and then use your CSS to tell the site to *use* only those parts. This is referring specifically to Inter VF because I think using *just* the variable-font version, which can provide all the styles you want, is more sensible than having to do the following procedure with *multiple* conventional (static) font files:
 
