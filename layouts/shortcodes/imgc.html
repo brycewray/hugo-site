@@ -20,7 +20,7 @@
 {{- $height := .Get "height" -}}
 {{- $phn := false -}}
 {{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
-{{- $simple := "false" -}}
+{{- $simple := false -}}
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
 {{/*
@@ -43,7 +43,7 @@
 {{- if $phn -}}
 	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
 {{- end -}}
-{{- if eq $simple "true" -}}
+{{- if eq $simple true -}}
 	{{- $imgClass = "w-full h-auto ctrImg" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
@@ -55,7 +55,7 @@
 	{{- $CFPstyle = "background: none;" -}}
 {{- end -}}
 
-{{- if eq $simple "false" -}}
+{{- if eq $simple false -}}
 {{- if eq .Site.Params.Host "CFP" -}}
 	<style data-pagefind-ignore>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
@@ -73,6 +73,6 @@
 			{{- end -}}
 		{{- end -}}
 	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-{{- if eq $simple "false" -}}
+{{- if eq $simple false -}}
 </div>
 {{- end -}}
