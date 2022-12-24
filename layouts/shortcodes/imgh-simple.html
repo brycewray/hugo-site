@@ -1,5 +1,7 @@
 {{/* init vars */}}
-{{- $src := .Page.Resources.GetMatch (.Get "src") -}}
+{{- $imgBase := "images/" -}} {{/* This will be from top-level /assets/images */}}
+{{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}
+{{- /* $src := .Page.Resources.GetMatch (.Get "src") */ -}}
 {{- $alt := .Get "alt" -}}
 {{- $size := "1000x" -}}{{/* providing a default */}}
 {{- if .Get "size" -}}{{- $size = .Get "size" -}}{{- end -}}

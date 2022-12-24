@@ -6,6 +6,8 @@ date: 2022-07-23T16:53:00-05:00
 #initTextEditor: iA Writer
 ---
 
+{{% disclaimer %}}
+
 You can think of this as hard-won wisdom.
 
 If you're planning to build a website with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) --- **or** if you already have one but you don't yet have a lot of content files --- save yourself a lot of trouble and use *[page bundles](https://gohugo.io/content-management/page-bundles/)*.
@@ -175,3 +177,6 @@ So, children, the moral of this story is:
 Otherwise, someday, you'll wish you had. Don't wait until you have hundreds of pages, or more, that you have to retro-fit into this method.
 
 Or, to be even shorter: **don't** be like me.
+
+**Note from the future**: A few months later, I reverted to my original, simpler arrangement of content and image files. This was feasible because I'd (a.) switched to a [different and much more automatic method](/posts/2022/10/automated-social-media-images-cloudinary-hugo/) of creating those title images for social media and (b.) gone back to [using Cloudinary](/posts/2020/07/tranaformed/) to host the overwhelming majority of the site's images. ***All that said***, my original advice from this post still stands **if** your Hugo site is even slightly likely to need any of the functionality that page bundles make possible; and, of course, only you can make that determination.
+{.box}
