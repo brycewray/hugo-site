@@ -26,7 +26,3 @@ Cloudinary granted my request later that day; so, on the site's pages which do h
 
 **Note**: Incidentally, this wouldn't have possible if I'd continued to [provide the site's images](/posts/2022/06/responsive-optimized-images-hugo/) through [Hugo](https://gohugo.io)'s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing), which [won't be supporting the AVIF format any time soon](https://github.com/gohugoio/hugo/issues/7837).
 {.box}
-<br />
-
-**Update from the future**: I later returned to using Hugo's image processing for virtually all on-site images, although this didn't apply to the Cloudinary-generated [automated social media images](/posts/2022/10/automated-social-media-images-cloudinary-hugo/).
-{.box}
