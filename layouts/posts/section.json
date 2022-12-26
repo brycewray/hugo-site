@@ -10,7 +10,7 @@
   "description": "{{ .Site.Params.Description }}",
   "home_page_url": "{{ .Site.BaseURL }}",
   {{ with .OutputFormats.Get "JSON" -}}
-		"feed_url": "{{ .Permalink }}",
+		"feed_url": "https://www.brycewray.com/index-excerpts.json",
   {{ end -}}
   {{ with .Site.LanguageCode -}}
 	  "language": "{{ . }}",
