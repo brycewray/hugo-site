@@ -75,10 +75,8 @@ jobs:
           version: ${{env.PAGEFIND_VERSION}}
       - name: Build site with Hugo
         run: hugo --verbose --minify
-      - name: Move "excerpts" feeds
-        run: |
-          mv public/posts/index.xml public/index-excerpts.xml
-          mv public/posts/index.json public/index-excerpts.json
+      - name: Move "excerpts" feed (RSS/Atom only)
+        run: mv public/posts/index.xml public/index-excerpts.xml
       - name: Run Pagefind
         run: pagefind_extended --source "public"
       - name: Publish to CFP

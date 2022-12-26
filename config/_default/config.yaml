@@ -121,7 +121,7 @@ outputs:
   section:
     - html
     - rss
-    - json
+    # - json # unneeded as of 2022-12-26
 
 rssLimit: 10 # default is -1 (unlimited)
 # setting of '10' conforms to Eleventy repo's handling
