@@ -11,7 +11,7 @@ The passage of another year --- this site's fourth full year of existence and my
 
 <!--more-->
 
-It wasn't until well into 2022 that I started hearing about the ["100 Days To Offload" website](https://100daystooffload.com/) and its associated challenge "to publish 100 posts on your personal blog in a year." Still, as I noted a few days ago on Mastodon:
+It wasn't until well into 2022 that I started hearing about the ["100 Days To Offload" website](https://100daystooffload.com/) and its associated challenge "to publish 100 posts on your personal blog in a year." Still, as I noted a few days ago on [Mastodon](https://joinmastodon.org):
 
 {{< stoot "fosstodon.org" "109563943803361522" >}}
 
@@ -29,7 +29,7 @@ As for what my 2022 writings actually *covered* (other than the onset of CTCAJW 
 
 Following my typical pattern, I spent a great deal of electronic ink on my favorite subject, the use of [static site generators](https://jamstack.org/generators) (SSGs) for building websites. Most usually, I was writing about [Eleventy](https://11ty.dev) or [Hugo](https://gohugo.io), but [Astro](https://astro.build) also got my attention.
 
-Quite a few of my 2022 articles explained how to embed within one's static website fully static, non-invasive versions of tweets and [Mastodon](https://joinmastodon.org) content, but the tweets part [ran aground](/posts/2022/11/static-tweets-deprecation/) as things got increasingly crazy in the Twitterverse. The [Mastodon-related part for Hugo](/posts/2022/06/static-mastodon-toots-hugo/) survived, as did [that for Eleventy](/posts/2022/08/static-embeds-eleventy/#static-toots) and [for Astro](/posts/2022/08/static-mastodon-toots-astro/).
+Quite a few of my 2022 articles explained how to embed within one's static website fully static, non-invasive versions of tweets and Mastodon content, but the tweets part [ran aground](/posts/2022/11/static-tweets-deprecation/) as things got increasingly crazy in the Twitterverse. The [Mastodon-related part for Hugo](/posts/2022/06/static-mastodon-toots-hugo/) survived, as did [that for Eleventy](/posts/2022/08/static-embeds-eleventy/#static-toots) and [for Astro](/posts/2022/08/static-mastodon-toots-astro/).
 
 After several years of keeping the site mostly on Eleventy and other JavaScript-based SSGs, I ran the site on Hugo during most of 2022. This drove me to learn more about it and its many features, and Hugo-related posts ensued --- lots of them. In addition to the pieces about static embeds, I wrote about other ways to enhance one's Hugo site:
 
@@ -67,7 +67,7 @@ Multiple times in 2022, I had the opportunity to work with the very nice folks a
 As for some other topics on which I dwelt this year:
 
 - I consumed plenty of time, and endured more than a little angst, regarding the handling of my custom-domains-based email. I'd been with [Fastmail](https://fastmail.com) [since 2017](/posts/2019/05/the-holy-mail/); but, although it took me a while to make my [final choice](/posts/2022/11/using-icloud-mail-custom-domain-its-fifty-bucks), I switched to what Apple had [begun offering during 2021](https://9to5mac.com/2021/06/07/custom-domain-names-are-coming-to-icloud-mail-with-icloud/) as part of its iCloud+ service.
-- I gave a mostly positive endorsement to the [giscus](https://giscus.app) commenting system, which I [used](/posts/2022/03/gems-in-rough-16/#trying-giscus) for several months and about which I gave [some](/posts/2022/05/tips-using-giscus/) [tips](/posts/2022/07/more-tips-using-giscus/) before [deciding not to continue with it](/posts/2022/10/letting-go-giscus/). 
+- I gave a mostly positive endorsement to the [giscus](https://giscus.app) commenting system, which I [used](/posts/2022/03/gems-in-rough-16/#trying-giscus) for several months and about which I gave [some](/posts/2022/05/tips-using-giscus/) [tips](/posts/2022/07/more-tips-using-giscus/) before [deciding not to continue with it](/posts/2022/10/letting-go-giscus/).
 - To improve the accessibility of this site and its [publicly available code](https://github.com/brycewray), I made [two](/posts/2022/06/accessibility-argument-tabs-spaces/) [changes](/posts/2022/07/blankety-blank-blanks/) to some long-standing development habits.
 - As a long-time fan of content feeds, I [recommended](/posts/2022/04/gems-in-rough-17/#feed-readers-and-built-in-browsers) using the [NetNewsWire](https://netnewswire.com) app[^AppleNNW] to read them, [advised](/posts/2022/05/fun-with-feeds/) how they can simplify your content enjoyment, and wrote [two](/posts/2022/12/why-have-both-rss-json-feeds/) [posts](/posts/2022/12/not-so-fast-there-fella/) suggesting how to make your own sites' feeds more helpful.
 
