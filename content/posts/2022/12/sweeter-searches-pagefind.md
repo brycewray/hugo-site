@@ -91,7 +91,7 @@ exclude_selectors:
 In Hugo and its built-in [Chroma syntax highlighting](https://github.com/alecthomas/chroma), a code block begins with:
 
 ```html
-<pre class="highlight">
+<div class="highlight">
 ```
 
 . . . which means our Hugo `pagefind.yml` now needs:
