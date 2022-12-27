@@ -292,25 +292,25 @@ article {
 		line-height: 1.65em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
-		.red strong, red b {
+		.red strong, .red b, .red em, .red i {
 			color: var.$red;
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$red-dark-mode;
 			}
 		}
-		blockquote strong, blockquote b {
+		blockquote strong, blockquote b, blockquote em, blockquote i {
 			color: var.$bold-blockquote;
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$bold-blockquote-dark-mode;
 			}
 		}
-		a strong, a b {
+		a strong, a b, a em, a i {
 			color: var.$blue;
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$blueLight;
 			}
 		}
-		strong, b {
+		strong, b, em, i {
 			color: var.$black;
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$bold-dark-mode;
