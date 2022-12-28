@@ -13,6 +13,7 @@
 	<id>{{ .Site.BaseURL }}</id>
 	<author>
 		<name>{{ .Site.Params.Author }}</name>
+		<uri>{{ .Site.BaseURL }}</uri>
 		<email>{{ .Site.Params.AuthorEmail }}</email>
 	</author>
 	{{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
@@ -35,6 +36,11 @@
 			<title>{{ $titleThis }}</title>
 			<link href="{{ $PermaWithRSSutm }}" />
 			<updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</updated>
+			<author>
+				<name>{{ .Site.Params.Author }}</name>
+				<uri>{{ .Site.BaseURL }}</uri>
+				<email>{{ .Site.Params.AuthorEmail }}</email>
+			</author>
 			<id>{{ .Permalink }}</id>
 			<summary>{{ $descrForFeed }}</summary>
 			<content xml:lang="{{ .Site.LanguageCode }}" type="html">{{ $finalHTMLContent | html }}</content>
