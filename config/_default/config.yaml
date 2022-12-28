@@ -101,7 +101,7 @@ caches:
     # maxAge: 144h # default = -1 (forever)
 
 minify:
-  # disableJSON: true
+  disableJSON: true
   tdewolff:
     html:
       keepQuotes: true
