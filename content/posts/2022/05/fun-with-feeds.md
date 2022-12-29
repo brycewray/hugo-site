@@ -45,10 +45,10 @@ You may already be aware that podcasts notify apps and websites of new content a
 <link rel="alternate" type="application/rss+xml"
 ```
 
-The URL you'll find within that `link` is the one that your feed reader needs. For example, here's the feed `link`  for one of my long-time favorites, [*The Skeptics' Guide to the Universe*](https://www.theskepticsguide.org):
+The URL you'll find within that `link` is the one that your feed reader needs. For example, here's the feed `link`  for [the *ChangeLog* podcast](https://changelog.com/podcast/):
 
 ```html
-<link rel="alternate" type="application/rss+xml" title="The Skeptics Guide to the Universe &raquo; Home Comments Feed" href="https://www.theskepticsguide.org/home/feed" />
+<link href="https://changelog.com/podcast/feed" rel="alternate" title="The Changelog Podcast Feed" type="application/rss+xml">
 ```
 
 ## Reddit
