@@ -126,12 +126,14 @@
 				{{- $cardData := . -}}
 				{{- with $cardData.image -}}
 					<a href="{{ $cardData.url }}" rel="'noopener">
-						<div class="card">
-							<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="tweet-card-img" />
-							<p>
-								<span class="card-title">{{ $cardData.title }}</span><br />
-								{{ $cardData.description }}
-							</p>
+						<div class="toot-card">
+							<div class="toot-card-image">
+								<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="toot-card-image-image" />
+							</div>
+							<div class="toot-card-content">
+								<p class="card-title">{{ $cardData.title }}</p>
+								<p class="card-description">{{ $cardData.description }}</p>
+							</div>
 						</div>
 					</a>
 				{{- end -}}
