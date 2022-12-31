@@ -21,7 +21,7 @@
 	{{ range $posts }}
 		{{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
 		{{- $titleThis := .Title | .Page.RenderString -}}
-		{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>`  -}}
+		{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>` -}}
 		{{- $descrForFeed := "[No description]" -}}
 		{{- if .Description -}}
 			{{- $descrForFeed = .Description -}}
@@ -31,7 +31,7 @@
 			{{- $excerpt = (.Summary | .Page.RenderString) -}}
 		{{- end -}}
 		{{- $getFullFeed := `<hr><p><em>To get posts’ <strong>full</strong> content in your reader, you can subscribe to <a href="https://www.brycewray.com/index.xml">this feed</a>.</em></p>` -}}
-		{{- $finalHTMLContent := print $descrForFeed `<hr />` $excerpt $getFullFeed -}}
+		{{- $finalHTMLContent := print `<em>` $descrForFeed `</em><hr />` $excerpt $getFullFeed -}}
 		<entry>
 			<title>{{ $titleThis }}</title>
 			<link href="{{ $PermaWithRSSutm }}" />

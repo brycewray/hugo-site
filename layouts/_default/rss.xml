@@ -27,7 +27,7 @@
 			{{- $descrForFeed = .Description -}}
 		{{- end -}}
 		{{- $contentMD := .Content -}}
-		{{- $finalHTMLContent := print $contentMD $emailReplyHTML -}}
+		{{- $finalHTMLContent := print `<em>` $descrForFeed `</em><hr />` $contentMD $emailReplyHTML -}}
 		<entry>
 			<title>{{ $titleThis }}</title>
 			<link href="{{ $PermaWithRSSutm }}" />

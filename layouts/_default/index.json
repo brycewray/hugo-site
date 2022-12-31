@@ -36,8 +36,13 @@
   "items": [
     {{ range $index, $element := $posts -}}
 			{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` .Title `”">Reply via email</a></p>` -}}
+			{{- $descrForFeed := "[No description]" -}}
+			{{- if .Description -}}
+				{{- $descrForFeed = .Description -}}
+			{{- end -}}
 			{{- $emailReplyHTML := $emailReplyHTML -}}
-			{{- $contentHTML := print .Content $emailReplyHTML -}}
+			{{- $contentMD := .Content -}}
+			{{- $finalHTMLContent := print `<em>` $descrForFeed `</em><hr />` $contentMD $emailReplyHTML -}}
 			{{- $PermaWithJSONutm = print .Permalink $JSONutm -}}
 			{
 				"title": {{ .Title | jsonify }},
@@ -51,8 +56,8 @@
 					}
 				],
 				{{ end -}}
-				"summary": {{ .Description | jsonify -}},
-				"content_html": {{ $contentHTML | jsonify -}}
+				"summary": {{ $descrForFeed | jsonify -}},
+				"content_html": {{ $finalHTMLContent | jsonify -}}
 			}{{ if ne (add $index 1) $length }},{{ end }}
     {{ end -}}
   ]
