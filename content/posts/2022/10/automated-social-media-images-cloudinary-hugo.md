@@ -196,13 +196,14 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $escapedTitle = replace $escapedTitle "#" "%23" -}}{{/* number sign or hash */}}
 		{{- $escapedTitle = replace $escapedTitle "(" "%28" -}}{{/* opening parenthesis */}}
 		{{- $escapedTitle = replace $escapedTitle ")" "%29" -}}{{/* closing parenthesis */}}
-		{{- $escapedTitle = replace $escapedTitle '"' "%22" -}}{{- /*
-			straight-up **double** quote character
-			--- so the actual character
-			must, therefore, be wrapped in
-			**single** quote characters,
-			unlike the others in this list
-		*/ -}}
+		{{- $escapedTitle = replace $escapedTitle '"' "%22" -}}
+			{{- /*
+				straight-up **double** quote character
+				--- so the actual character
+				must, therefore, be wrapped in
+				**single** quote characters,
+				unlike the others in this list
+			*/ -}}
 		{{- $escapedTitle = replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening curly double quote character */}}
 		{{- $escapedTitle = replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing curly double quote character */}}
 		{{- $escapedTitle = replace $escapedTitle "'" "%27" -}}{{- /* straight-up apostrophe or single quote character */ -}}
@@ -217,16 +218,19 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 				Must supply your own Cloudinary
 				cloud name, of course!
 			*/ -}}
-		{{- $titleSize := 72 -}}{{/* pixels, not points */}}
+		{{- $titleSize := 96 -}}{{/* pixels, not points */}}
+		{{- if gt (len $.Title) 36 -}}
+			{{- $titleSize = 72 -}}
+		{{- end -}}
 		{{- $fontChoice := "arial" -}}
-		{{- /*
-			Arial is the default.
-			It’s beyond this post’s scope
-			to explain how to use any other
-			fonts (much less uploaded ones),
-			but we’ll leave this here
-			in case you want to try it.
-		*/ -}}
+			{{- /*
+				Arial is the default.
+				It’s beyond this post’s scope
+				to explain how to use any other
+				fonts (much less uploaded ones),
+				but we’ll leave this here
+				in case you want to try it.
+			*/ -}}
 		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
 		{{- $myUploadedBkgd := "my-bkgd-3k4dvaxlzd" -}}
 			{{- /*
@@ -286,7 +290,10 @@ While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs
 ```twig
 {% set escapedTitle = title | replace("%", "%2525") | replace(",", "%252C") | replace("/", "%252F") | replace(" ", "%20") | replace(":", "%3A") | replace(";", "%3B") | replace("!", "%21") | replace("?", "%3F") | replace("+", "%2B") | replace("—", "%E2%80%94") | replace("–", "%E2%80%93") | replace(" ", "%C2%A0") | replace("•", "%E2%80%A2") | replace("#", "%23") | replace("(", "%28") | replace(")", "%29") | replace('"', "%22") | replace("“", "%E2%80%9C") | replace("”", "%E2%80%9D") | replace("'", "%27") | replace("‘", "%E2%80%98") | replace("’", "%E2%80%99") | replace("‑", "%E2%80%91") %}
 {% set cloudName = "my-cloud-name" %}
-{% set titleSize = 72 %}
+{%- set titleSize = 96 -%}{# pixels, not points #}
+{%- if (title | length) > 36 -%}
+	{%- set titleSize = 72 -%}
+{%- endif -%}
 {% set fontChoice = "arial" %}
 {% set titleWidth = 1036 %}{# 72 each side from 1280 #}
 {% set myUploadedBkgd = "my-bkgd-3k4dvaxlzd" %}
