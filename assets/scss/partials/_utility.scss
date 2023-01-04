@@ -254,8 +254,10 @@ img.ctrImg {
 
 .indentAfterLI {
 	margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
-	@media screen and (min-width: var.$bkpt_2xl) {
-		margin-left: 2em;
+	&.box {
+		$bIALImarginLeft: 3em;
+		margin-left: $bIALImarginLeft;
+		width: calc(100% - $bIALImarginLeft);
 	}
 }
 
