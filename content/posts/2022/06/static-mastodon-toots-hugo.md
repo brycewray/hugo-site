@@ -52,20 +52,20 @@ To get a return from the API so you can look around and see how stuff works, do 
 
 [^depends]: Well, perhaps I should amend that "fully open" description. I reiterate that each Mastodon instance has its own settings regarding what it will and won't allow outsiders to access via embeds like what we're describing in this post. So you *will* test locally, first, right? Right.
 
-As an example, here's a recent toot of mine from within the [fosstodon.org](https://fosstodon.org) instance:
+As an example, here's a recent toot from Mastodon's creator, Eugen Rochko, from within the [mastodon.social](https://mastodon.social) instance:
 
-{{< stoot "fosstodon.org" "108370823317349516" >}}
+{{< stoot "mastodon.social" "108335994944738270" >}}
 
 Now, since the URL for that toot was:
 
 ```plaintext
-https://fosstodon.org/@BryceWrayTX/108370823317349516
+https://mastodon.social/@Gargron/108335994944738270
 ```
 
-. . . that means its ID was `108370823317349516`. So, the `curl` to `GET` that toot's JSON would be:
+. . . that means its ID was `108335994944738270`. So, the `curl` to `GET` that toot's JSON would be:
 
 ```bash
-curl "https://fosstodon.org/api/v1/statuses/108370823317349516"
+curl "https://mastodon.social/api/v1/statuses/108335994944738270"
 ```
 
 **The resulting API return looks like this** (it's a toggle for viewing at your convenience, especially if you haven't time to do your own coding to work with this data):
@@ -74,86 +74,98 @@ curl "https://fosstodon.org/api/v1/statuses/108370823317349516"
 
 ```json
 {
-  "id": "108370823317349516",
-  "created_at": "2022-05-26T23:25:33.536Z",
+  "id": "108335994944738270",
+  "created_at": "2022-05-20T19:48:14.740Z",
   "in_reply_to_id": null,
   "in_reply_to_account_id": null,
   "sensitive": false,
   "spoiler_text": "",
   "visibility": "public",
   "language": "en",
-  "uri": "https://fosstodon.org/users/BryceWrayTX/statuses/108370823317349516",
-  "url": "https://fosstodon.org/@BryceWrayTX/108370823317349516",
-  "replies_count": 1,
-  "reblogs_count": 5,
-  "favourites_count": 0,
+  "uri": "https://mastodon.social/users/Gargron/statuses/108335994944738270",
+  "url": "https://mastodon.social/@Gargron/108335994944738270",
+  "replies_count": 25,
+  "reblogs_count": 172,
+  "favourites_count": 336,
   "edited_at": null,
-  "content": "\\u003cp\\u003eWill post this poll on three different instances. On how many Mastodon instances do you have at least one account? (And please boost if you’re similarly curious about how others do this. Thanks!)\\u003c/p\\u003e",
+  "content": "\\u003cp\\u003eLanguage selection is now available in the Mastodon web app. Make sure your posts are seen by people who understand them!\\u003c/p\\u003e\\u003cp\\u003eSupports quickly finding the right language with fuzzy search and remembers your most frequently selected languages.\\u003c/p\\u003e\\u003cp\\u003e\\u003ca href=\"https://mastodon.social/tags/mastodev\" class=\"mention hashtag\" rel=\"tag\"\\u003e#\\u003cspan\\u003emastodev\\u003c/span\\u003e\\u003c/a\\u003e\\u003c/p\\u003e",
   "reblog": null,
-  "application": null,
+  "application": {
+    "name": "Web",
+    "website": null
+  },
   "account": {
-    "id": "106365523785947655",
-    "username": "BryceWrayTX",
-    "acct": "BryceWrayTX",
-    "display_name": "Bryce Wray",
+    "id": "1",
+    "username": "Gargron",
+    "acct": "Gargron",
+    "display_name": "Eugen Rochko",
     "locked": false,
     "bot": false,
     "discoverable": true,
     "group": false,
-    "created_at": "2021-06-06T00:00:00.000Z",
-    "note": "\\u003cp\\u003eNerdy advocate for static websites and the tools that build them. Inveterate supporter of the Oxford comma. Follow me at \\u003ca href=\"https://www.brycewray.com/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003ebrycewray.com/\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e (RSS and JSON \\u003ca href=\"https://fosstodon.org/tags/feeds\" class=\"mention hashtag\" rel=\"tag\"\\u003e#\\u003cspan\\u003efeeds\\u003c/span\\u003e\\u003c/a\\u003e available). I have no intention of ever posting any of my Wordle scores. Admitted Apple fanboy — don’t judge. He/him.\\u003c/p\\u003e",
-    "url": "https://fosstodon.org/@BryceWrayTX",
-    "avatar": "https://cdn.fosstodon.org/accounts/avatars/106/365/523/785/947/655/original/12db25df1f58da76.png",
-    "avatar_static": "https://cdn.fosstodon.org/accounts/avatars/106/365/523/785/947/655/original/12db25df1f58da76.png",
-    "header": "https://cdn.fosstodon.org/accounts/headers/106/365/523/785/947/655/original/c30a52e2aeac5d00.jpg",
-    "header_static": "https://cdn.fosstodon.org/accounts/headers/106/365/523/785/947/655/original/c30a52e2aeac5d00.jpg",
-    "followers_count": 473,
-    "following_count": 1525,
-    "statuses_count": 763,
-    "last_status_at": "2022-12-02",
-    "noindex": true,
+    "created_at": "2016-03-16T00:00:00.000Z",
+    "note": "\\u003cp\\u003eFounder, CEO and lead developer \\u003cspan class=\"h-card\"\\u003e\\u003ca href=\"https://mastodon.social/@Mastodon\" class=\"u-url mention\"\\u003e@\\u003cspan\\u003eMastodon\\u003c/span\\u003e\\u003c/a\\u003e\\u003c/span\\u003e, Germany.\\u003c/p\\u003e",
+    "url": "https://mastodon.social/@Gargron",
+    "avatar": "https://files.mastodon.social/accounts/avatars/000/000/001/original/dc4286ceb8fab734.jpg",
+    "avatar_static": "https://files.mastodon.social/accounts/avatars/000/000/001/original/dc4286ceb8fab734.jpg",
+    "header": "https://files.mastodon.social/accounts/headers/000/000/001/original/3b91c9965d00888b.jpeg",
+    "header_static": "https://files.mastodon.social/accounts/headers/000/000/001/original/3b91c9965d00888b.jpeg",
+    "followers_count": 287498,
+    "following_count": 339,
+    "statuses_count": 73000,
+    "last_status_at": "2023-01-07",
+    "noindex": false,
     "emojis": [],
     "fields": [
       {
-        "name": "Site",
-        "value": "\\u003ca href=\"https://www.brycewray.com\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003ebrycewray.com\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e",
-        "verified_at": "2022-11-02T19:04:24.881+00:00"
-      },
-      {
-        "name": "GitHub",
-        "value": "\\u003ca href=\"https://github.com/brycewray\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://\\u003c/span\\u003e\\u003cspan class=\"\"\\u003egithub.com/brycewray\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e",
+        "name": "Patreon",
+        "value": "\\u003ca href=\"https://www.patreon.com/mastodon\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003epatreon.com/mastodon\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e",
         "verified_at": null
       }
     ]
   },
-  "media_attachments": [],
+  "media_attachments": [
+    {
+      "id": "108335981178194136",
+      "type": "gifv",
+      "url": "https://files.mastodon.social/media_attachments/files/108/335/981/178/194/136/original/4a058545df6471f1.mp4",
+      "preview_url": "https://files.mastodon.social/media_attachments/files/108/335/981/178/194/136/small/4a058545df6471f1.png",
+      "remote_url": null,
+      "preview_remote_url": null,
+      "text_url": null,
+      "meta": {
+        "original": {
+          "width": 614,
+          "height": 554,
+          "frame_rate": "593000/21349",
+          "duration": 21.349,
+          "bitrate": 269730
+        },
+        "small": {
+          "width": 400,
+          "height": 361,
+          "size": "400x361",
+          "aspect": 1.10803324099723
+        },
+        "focus": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "description": "A video demo of the language selection dropdown in the Mastodon web app",
+      "blurhash": "UPF6RrM_4oIU~qt79FM|RjkCozjF4nR*?bt6"
+    }
+  ],
   "mentions": [],
-  "tags": [],
+  "tags": [
+    {
+      "name": "mastodev",
+      "url": "https://mastodon.social/tags/mastodev"
+    }
+  ],
   "emojis": [],
   "card": null,
-  "poll": {
-    "id": "108558",
-    "expires_at": "2022-05-29T23:25:33.532Z",
-    "expired": true,
-    "multiple": false,
-    "votes_count": 34,
-    "voters_count": 34,
-    "options": [
-      {
-        "title": "Just one",
-        "votes_count": 24
-      },
-      {
-        "title": "Two to four",
-        "votes_count": 9
-      },
-      {
-        "title": "Five or more",
-        "votes_count": 1
-      }
-    ],
-    "emojis": []
-  }
+  "poll": null
 }
 ```
 
@@ -332,7 +344,7 @@ You'll quickly see that I took advantage of the visual similarities between twee
 Once this is in place in your project's location for shortcodes, invoke it from within your Markdown like this:
 
 ```md
-{{</* stoot "fosstodon.org" "108370823317349516" */>}}
+{{</* stoot "mastodon.social" "108335994944738270" */>}}
 ```
 
 As you can see, the syntax is:\

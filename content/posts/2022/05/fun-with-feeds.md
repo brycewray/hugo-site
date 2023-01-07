@@ -69,10 +69,10 @@ Getting RSS from a Twitter timeline can be tricky, depending on your feed-readin
 
 ## Mastodon
 
-By contrast, it's a lot easier to get the RSS feed from a Mastodon user's timeline. Here's mine from the [fosstodon.org](https://fosstodon.org) instance, where I use the handle of `@BryceWrayTX`:
+By contrast, it's a lot easier to get the RSS feed from a Mastodon user's timeline. Just use the following structure, where `instance.xyz` is the instance and `@UserName` is the user's handle:
 
 ```plaintext
-https://fosstodon.org/@BryceWrayTX.rss
+https://instance.xyz/@UserName.rss
 ```
 
 ## Never turn down free feeds

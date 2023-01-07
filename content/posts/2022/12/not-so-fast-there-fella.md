@@ -16,9 +16,14 @@ But I soon learned it wasn't that simple.
 
 I heard from folks saying that it wasn't a safe assumption that everyone could choose either kind of feed, with the JSON Feed format being less widely supported than the ancient-in-Internet-time RSS. While my own research had shown JSON feeds are available via the vast majority of feed-reader apps and services, "the vast majority" is not the same as "one hundred percent."
 
-Some also told me that, regardless of feed type (a choice of which, a few respondents suggested, required more knowledge than a non-trivial number of feed customers might have), they fervently believed it should be one way or the other, not both. That set of responses, in particular, led me to conduct a poll on Mastodon, and here's how it turned out:
+Some also told me that, regardless of feed type (a choice of which, a few respondents suggested, required more knowledge than a non-trivial number of feed customers might have), they fervently believed it should be one way or the other, not both. Those comments, in particular, led me to conduct a poll on Mastodon, asking whether RSS reader users preferred that a feed item provide the full text of an article or merely an excerpt from it. It got 646 responses, and here's how it turned out:
 
-{{< stoot "fosstodon.org" "109485575488763076" >}}
+| Response       | Result |
+| --------- | --------------------- |
+| Full text | **72.0%**                   |
+| Excerpt   | **20.4%**                 |
+| No preference | **7.6%** |
+{.ulysses}
 
 <!--
 https://fosstodon.org/@BryceWrayTX/109485575488763076
