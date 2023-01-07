@@ -20,4 +20,4 @@ bw@brycewray.com<br />
   - Full-text ([RSS/Atom](/index.xml) or [JSON](/index.json))
   - Excerpt-only ([RSS/Atom](/index-excerpts.xml))
 - [brycewray on GitHub](https://github.com/brycewray/)
-- <a rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener">@BryceWrayTX on Mastodon</a>
+- <a rel="me" title="Mastodon" href="https://mstdn.social/@BryceWrayTX" rel="noopener">@BryceWrayTX on Mastodon</a>
