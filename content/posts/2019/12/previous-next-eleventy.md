@@ -72,3 +72,6 @@ Once you've added that to your site's `.eleventy.js` file, all you have to do is
 And, no, I didn't swat myself, but I did get the joy.
 
 **Thank you, Mr. Widdershoven**, for the eye-opener! This has been an FAQ in the truest sense of that term, and you got us over the goal line. As I gratefully [told you yesterday](https://github.com/11ty/eleventy/issues/529#issuecomment-568258911): "You da man!"
+
+**Note from the future**: This ceased to be necessary as of the [2020 release of Eleventy 0.11.0](https://github.com/11ty/eleventy/releases/tag/v0.11.0), which added [universal filters for "next" and "previous" collection items](https://www.11ty.dev/docs/filters/collection-items/#get-next-or-previous-collection-item-universal-filters).
+{.box}
