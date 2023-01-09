@@ -21,7 +21,9 @@ The next morning, I learned the hard way that I should've done such testing on t
 
 Stranger still was that I hadn't encountered this problematic behavior during my [previous return to Fastmail](/posts/2022/08/back-to-fastmail/) a few months earlier; so what had changed this time? The only thing that comes to mind is that, previously, I'd **manually** set up Fastmail on iOS/iPadOS, while this time I *initially* used Fastmail's recommended, **automatic** procedure for configuring iDevices through download and installation of a pre-cooked *profile*. It was super-easy, but I neglected to notice its fatal flaw for my purposes, spelled out clearly in the [documentation](https://www.fastmail.help/hc/en-us/articles/1500000279941-Set-up-iOS-devices-iOS-12-):
 
-> To [add aliases](https://www.fastmail.help/hc/en-us/articles/360058752894) that you wish to send mail from, you must [set up your Fastmail account on iOS manually](https://www.fastmail.help/hc/en-us/articles/360058752914).
+> To [add aliases](https://www.fastmail.help/hc/en-us/articles/360058752894) that you wish to send mail from, you must [set up your Fastmail account on iOS manually](https://www.fastmail.help/hc/en-us/articles/360058752914).[^year]
+
+[^year]: **Update, 2023-01-09**: I've learned of an additional gotcha in using a Fastmail profile; it lasts for only a year at a time and then must be re-installed, due to its use of an authentication certificate. H/t to [Don](https://mstdn.social/@case2tv@social.tchncs.de/109659289519785253) for tipping me off to this info.
 
 Given that my initial encounter with the sending error had been when I'd tried to reply from an alias, I naïvely thought I'd quickly located the problem. I then deleted the profile, manually added all the necessary Fastmail IMAP and SMTP server settings, and began trying to send from the Fastmail alias to my *@iCloud.com* address.
 
