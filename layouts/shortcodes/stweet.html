@@ -243,7 +243,7 @@
 			{{- end }}
 		{{- end }}
 		<div class="tweet-footer">
-			<a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+			<a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
 		</div>
 	</blockquote>
 {{- end }}
