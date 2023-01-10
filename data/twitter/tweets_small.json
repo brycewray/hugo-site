@@ -1,0 +1,384 @@
+{
+	"data": [
+    {
+      "tweet" : {
+        "edit_info" : {
+          "initial" : {
+            "editTweetIds" : [
+              "1586017229178638338"
+            ],
+            "editableUntil" : "2022-10-28T15:59:08.000Z",
+            "editsRemaining" : "5",
+            "isEditEligible" : false
+          }
+        },
+        "retweeted" : false,
+        "source" : "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+        "entities" : {
+          "hashtags" : [ ],
+          "symbols" : [ ],
+          "user_mentions" : [
+            {
+              "name" : "Patrick Kollitsch - David's Neighbour",
+              "screen_name" : "davidsneighbour",
+              "indices" : [
+                "0",
+                "16"
+              ],
+              "id_str" : "335853",
+              "id" : "335853"
+            }
+          ],
+          "urls" : [
+            {
+              "url" : "https://t.co/jYw2oewUap",
+              "expanded_url" : "http://fosstodon.org",
+              "display_url" : "fosstodon.org",
+              "indices" : [
+                "80",
+                "103"
+              ]
+            }
+          ]
+        },
+        "display_text_range" : [
+          "0",
+          "192"
+        ],
+        "favorite_count" : "0",
+        "in_reply_to_status_id_str" : "1586016771399565312",
+        "id_str" : "1586017229178638338",
+        "in_reply_to_user_id" : "335853",
+        "truncated" : false,
+        "retweet_count" : "0",
+        "id" : "1586017229178638338",
+        "in_reply_to_status_id" : "1586016771399565312",
+        "possibly_sensitive" : false,
+        "created_at" : "Fri Oct 28 15:29:08 +0000 2022",
+        "favorited" : false,
+        "full_text" : "@davidsneighbour Having no luck with a search. Anyway, mine is `BryceWrayTX` on https://t.co/jYw2oewUap, so give me a shout if you find it. I’d have followed you already if I’d seen you there.",
+        "lang" : "en",
+        "in_reply_to_screen_name" : "davidsneighbour",
+        "in_reply_to_user_id_str" : "335853"
+      }
+    },
+    {
+      "tweet" : {
+        "edit_info" : {
+          "initial" : {
+            "editTweetIds" : [
+              "1585721506667061249"
+            ],
+            "editableUntil" : "2022-10-27T20:24:03.000Z",
+            "editsRemaining" : "5",
+            "isEditEligible" : false
+          }
+        },
+        "retweeted" : false,
+        "source" : "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+        "entities" : {
+          "hashtags" : [ ],
+          "symbols" : [ ],
+          "user_mentions" : [
+            {
+              "name" : "Dan Rather",
+              "screen_name" : "DanRather",
+              "indices" : [
+                "0",
+                "10"
+              ],
+              "id_str" : "36711022",
+              "id" : "36711022"
+            }
+          ],
+          "urls" : [ ]
+        },
+        "display_text_range" : [
+          "0",
+          "40"
+        ],
+        "favorite_count" : "1",
+        "in_reply_to_status_id_str" : "1585710617981165568",
+        "id_str" : "1585721506667061249",
+        "in_reply_to_user_id" : "36711022",
+        "truncated" : false,
+        "retweet_count" : "0",
+        "id" : "1585721506667061249",
+        "in_reply_to_status_id" : "1585710617981165568",
+        "created_at" : "Thu Oct 27 19:54:03 +0000 2022",
+        "favorited" : false,
+        "full_text" : "@DanRather Mr. Rather, come to Mastodon.",
+        "lang" : "en",
+        "in_reply_to_screen_name" : "DanRather",
+        "in_reply_to_user_id_str" : "36711022"
+      }
+    },
+    {
+      "tweet" : {
+        "edit_info" : {
+          "initial" : {
+            "editTweetIds" : [
+              "1571981735356780545"
+            ],
+            "editableUntil" : "2022-09-19T22:27:06.000Z",
+            "editsRemaining" : "5",
+            "isEditEligible" : false
+          }
+        },
+        "retweeted" : false,
+        "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "entities" : {
+          "hashtags" : [ ],
+          "symbols" : [ ],
+          "user_mentions" : [
+            {
+              "name" : "Luciarghhhh 🎃 🔪 Node.js Design Patterns",
+              "screen_name" : "loige",
+              "indices" : [
+                "0",
+                "6"
+              ],
+              "id_str" : "35453305",
+              "id" : "35453305"
+            },
+            {
+              "name" : "Eleventy 🎃🎈 v2.0.0-canary.16",
+              "screen_name" : "eleven_ty",
+              "indices" : [
+                "7",
+                "17"
+              ],
+              "id_str" : "949639269433380864",
+              "id" : "949639269433380864"
+            },
+            {
+              "name" : "Sass",
+              "screen_name" : "SassCSS",
+              "indices" : [
+                "18",
+                "26"
+              ],
+              "id_str" : "1269955578",
+              "id" : "1269955578"
+            }
+          ],
+          "urls" : [
+            {
+              "url" : "https://t.co/3161kvGjKQ",
+              "expanded_url" : "https://github.com/kentaroi",
+              "display_url" : "github.com/kentaroi",
+              "indices" : [
+                "97",
+                "120"
+              ]
+            }
+          ]
+        },
+        "display_text_range" : [
+          "0",
+          "122"
+        ],
+        "favorite_count" : "2",
+        "in_reply_to_status_id_str" : "1571981246959321090",
+        "id_str" : "1571981735356780545",
+        "in_reply_to_user_id" : "35453305",
+        "truncated" : false,
+        "retweet_count" : "0",
+        "id" : "1571981735356780545",
+        "in_reply_to_status_id" : "1571981246959321090",
+        "possibly_sensitive" : false,
+        "created_at" : "Mon Sep 19 21:57:06 +0000 2022",
+        "favorited" : false,
+        "full_text" : "@loige @eleven_ty @SassCSS Oh, I only wrote the post — the plugins are the work of Kentaro Imai (https://t.co/3161kvGjKQ).",
+        "lang" : "en",
+        "in_reply_to_screen_name" : "loige",
+        "in_reply_to_user_id_str" : "35453305"
+      }
+    },
+    {
+      "tweet" : {
+        "edit_info" : {
+          "initial" : {
+            "editTweetIds" : [
+              "1571977692890955777"
+            ],
+            "editableUntil" : "2022-09-19T22:11:02.000Z",
+            "editsRemaining" : "5",
+            "isEditEligible" : true
+          }
+        },
+        "retweeted" : false,
+        "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "entities" : {
+          "hashtags" : [
+            {
+              "text" : "SCSS",
+              "indices" : [
+                "103",
+                "108"
+              ]
+            },
+            {
+              "text" : "CacheBusting",
+              "indices" : [
+                "109",
+                "122"
+              ]
+            },
+            {
+              "text" : "WebDevelopment",
+              "indices" : [
+                "123",
+                "138"
+              ]
+            }
+          ],
+          "symbols" : [ ],
+          "user_mentions" : [
+            {
+              "name" : "Eleventy 🎃🎈 v2.0.0-canary.16",
+              "screen_name" : "eleven_ty",
+              "indices" : [
+                "11",
+                "21"
+              ],
+              "id_str" : "949639269433380864",
+              "id" : "949639269433380864"
+            },
+            {
+              "name" : "Sass",
+              "screen_name" : "SassCSS",
+              "indices" : [
+                "27",
+                "35"
+              ],
+              "id_str" : "1269955578",
+              "id" : "1269955578"
+            }
+          ],
+          "urls" : [
+            {
+              "url" : "https://t.co/tuEHeWESEv",
+              "expanded_url" : "https://www.brycewray.com/posts/2022/09/cache-busting-eleventy-simpler-way-sass/",
+              "display_url" : "brycewray.com/posts/2022/09/…",
+              "indices" : [
+                "77",
+                "100"
+              ]
+            }
+          ]
+        },
+        "display_text_range" : [
+          "0",
+          "138"
+        ],
+        "favorite_count" : "15",
+        "id_str" : "1571977692890955777",
+        "truncated" : false,
+        "retweet_count" : "2",
+        "id" : "1571977692890955777",
+        "possibly_sensitive" : false,
+        "created_at" : "Mon Sep 19 21:41:02 +0000 2022",
+        "favorited" : false,
+        "full_text" : "If you use @eleven_ty with @SassCSS, you might want to check out this one: \n\nhttps://t.co/tuEHeWESEv \n\n#SCSS #CacheBusting #WebDevelopment",
+        "lang" : "en"
+      }
+    },
+    {
+      "tweet" : {
+        "edit_info" : {
+          "initial" : {
+            "editTweetIds" : [
+              "1418961803934113797"
+            ],
+            "editableUntil" : "2021-07-24T16:20:31.750Z",
+            "editsRemaining" : "5",
+            "isEditEligible" : true
+          }
+        },
+        "retweeted" : false,
+        "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "entities" : {
+          "hashtags" : [
+            {
+              "text" : "bundler",
+              "indices" : [
+                "220",
+                "228"
+              ]
+            },
+            {
+              "text" : "webdevelopment",
+              "indices" : [
+                "229",
+                "244"
+              ]
+            },
+            {
+              "text" : "SSG",
+              "indices" : [
+                "245",
+                "249"
+              ]
+            },
+            {
+              "text" : "browsercache",
+              "indices" : [
+                "250",
+                "263"
+              ]
+            }
+          ],
+          "symbols" : [ ],
+          "user_mentions" : [
+            {
+              "name" : "Eleventy 🎃🎈 v2.0.0-canary.16",
+              "screen_name" : "eleven_ty",
+              "indices" : [
+                "200",
+                "210"
+              ],
+              "id_str" : "949639269433380864",
+              "id" : "949639269433380864"
+            },
+            {
+              "name" : "Vite ⚡",
+              "screen_name" : "vite_js",
+              "indices" : [
+                "211",
+                "219"
+              ],
+              "id_str" : "1356332745895587841",
+              "id" : "1356332745895587841"
+            }
+          ],
+          "urls" : [
+            {
+              "url" : "https://t.co/diX4nuOjTD",
+              "expanded_url" : "https://www.brycewray.com/posts/2021/07/eleventy-vite-elite/",
+              "display_url" : "brycewray.com/posts/2021/07/…",
+              "indices" : [
+                "174",
+                "197"
+              ]
+            }
+          ]
+        },
+        "display_text_range" : [
+          "0",
+          "263"
+        ],
+        "favorite_count" : "94",
+        "id_str" : "1418961803934113797",
+        "truncated" : false,
+        "retweet_count" : "10",
+        "id" : "1418961803934113797",
+        "possibly_sensitive" : false,
+        "created_at" : "Sat Jul 24 15:50:31 +0000 2021",
+        "favorited" : false,
+        "full_text" : "New post &gt;&gt; Eleventy plus Vite = elite • Re-bundling, but without the pain of webpack • Pairing Eleventy and Vite shows me how far bundlers have come in a short time \n\nhttps://t.co/diX4nuOjTD \n\n@eleven_ty @vite_js #bundler #webdevelopment #SSG #browsercache",
+        "lang" : "en"
+      }
+    }
+  ]
+}
