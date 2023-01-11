@@ -1,0 +1,122 @@
+{{/*
+	=======
+	Based on...
+	- https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
+	- https://hugo.md/post/update-rendering-static-tweets/
+	- https://github.com/KyleMit/eleventy-plugin-embed-tweet
+	- https://www.stackbit.com/blog/advanced-hugo-templates/
+	- https://github.com/astro-community/astro-embed/blob/main/packages/astro-embed-twitter/Tweet.astro
+	... and, as of 2022-07-25...
+	- https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687/4
+	- https://discourse.gohugo.io/t/getremote-cannot-pass-headers-bad-request/36877/6
+	=======
+*/}}
+
+{{/*
+	inits --
+	see https://www.stackbit.com/blog/advanced-hugo-templates/ (end of "Scratch" section)
+*/}}
+{{ $text := "" }}
+{{ $created_at := "" }}
+{{ $profile_image_url := "" }}
+{{ $name := "" }}
+{{ $username := "" }}
+{{ $Bearer_Token := os.Getenv "BEARER_TOKEN" }}
+
+{{ $id := .Get 0 }}
+{{ $authHeaders := dict
+	"headers" (dict
+		"Authorization" (printf "Bearer %s" $Bearer_Token)
+	)
+}}
+{{ $jsonURL1 := "https://api.twitter.com/2/tweets?ids=" }}
+{{ $jsonURL2 := "&expansions=author_id,attachments.media_keys&tweet.fields=created_at,text,attachments,entities,source&user.fields=name,username,profile_image_url&media.fields=preview_image_url,type,url,alt_text" }}
+{{ $urlToGet := printf "%s%s%s" $jsonURL1 $id $jsonURL2 }}
+
+{{ with resources.GetRemote $urlToGet $authHeaders }}
+{{ if (resources.GetRemote $urlToGet $authHeaders).Err }}
+	<blockquote class="tweet-card">
+		<p class="ctr legal">[Source not online<br />
+		at time of site build.]</p>
+	</blockquote>
+{{ else }}
+	{{ $json := unmarshal .Content }}
+
+	{{ with $json }}
+		{{ range $json.data }}
+			{{ $data := . }}
+			{{ $created_at = $data.created_at }}
+			{{ $text = $data.text }}
+			{{ with $data.entities }}
+				{{ $entities := . }}
+				{{ range $entities.mentions }}
+					{{ $mentions := . }}
+					{{ $text = replace $text (printf "@%s" $mentions.username) (printf "<a href='https://twitter.com/%s' rel='noopener' class='twitterExt'>@%s</a>" $mentions.username $mentions.username) }}
+				{{ end }}
+				{{ range $entities.hashtags }}
+					{{ $hashtags := . }}
+					{{ $text = replace $text (printf "#%s" $hashtags.tag) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' rel='noopener' class='twitterExt'>#%s</a>" $hashtags.tag $hashtags.tag) }}
+				{{ end }}
+				{{ range $entities.urls }}
+					{{ $urls := . }}
+					{{ if not $urls.images }}
+						{{ if not $urls.unwound_url }}
+							{{ if in $urls.display_url "buff.ly" }}
+								{{ $text = replace $text $urls.url (printf "<a href='%s' rel='noopener' class='twitterExt'>%s</a>" $urls.url $urls.display_url) }}
+							{{ else }}
+								{{ $text = replace $text $urls.url "" }}
+							{{ end }}
+						{{ else }}
+							{{ $text = replace $text $urls.url (printf "<a href='%s' rel='noopener' class='twitterExt'>%s</a>" $urls.url $urls.display_url) }}
+						{{ end }}
+					{{ else }}
+						{{ $text = replace $text $urls.url (printf "<a href='%s' rel='noopener' class='twitterExt'>%s</a>" $urls.url $urls.display_url) }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+		{{ with $json.includes }}
+			{{ $includes := . }}
+			{{ range $includes.users }}
+				{{ $profile_image_url = .profile_image_url }}
+				{{ $name = .name }}
+				{{ $username = .username }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+
+	<blockquote class="tweet-card">
+		<div class="tweet-header">
+			<a class="tweet-profile twitterExt" href="https://twitter.com/{{ $username }}" rel="noopener">
+				<img src="{{ $profile_image_url }}" alt="Twitter avatar for @{{ $username }}" loading="lazy" />
+			</a>
+			<div class="tweet-author">
+				<a class="tweet-author-name twitterExt" href="https://twitter.com/{{ $username}}" rel="noopener">{{ $name }}</a>
+				<a class="tweet-author-handle twitterExt" href="https://twitter.com/{{ $username }}" rel="noopener">@{{ $username }}</a>
+			</div>
+		</div>
+		<p class="tweet-body">
+			{{ $text | markdownify }}
+		</p>
+		{{ $imageCount := 1}}
+		{{ with $json}}
+			{{ with $json.includes }}
+				{{ $includes := . }}
+				{{ if $includes.media }}
+					{{ $imageCount = len $includes.media }}
+				{{ end }}
+				<div class="tweet-img-grid-{{ $imageCount }}">
+				{{ range $includes.media }}
+					{{ if not (eq .type "animated_gif" ) }}
+						<img src="{{ .url }}" alt="Image {{ .media_key }} from Twitter" class="tweet-media-img" loading="lazy" />
+					{{ end }}
+				{{ end }}
+				</div>
+			{{ end }}
+		{{ end }}
+		<div class="tweet-footer">
+			<a href='https://twitter.com/{{ $username }}/status/{{ $id }}' class='tweet-date twitterExt' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
+		</div>
+	</blockquote>
+{{ end }}
+{{ end }}

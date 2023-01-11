@@ -1,0 +1,118 @@
+@import '/themes/twcss/assets/css/chroma_native_tweaked.css';
+@import '/themes/twcss/assets/css/chroma_fix-all.css';
+@import 'tailwindcss/base';
+@import '/themes/twcss/assets/css/tables.css';
+@import '/themes/twcss/assets/css/lite-yt-embed.css';
+@import '/themes/twcss/assets/css/print.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+	b, strong {
+		@apply font-semibold dark:font-darksemibold;
+	}
+	h1, .h1 {
+		@apply fluid-3xl mb-4;
+	}
+	h2, .h2 {
+		@apply fluid-2xl;
+	}
+	h3, .h3 {
+		@apply fluid-xl;
+	}
+	h4, h5 {
+		@apply fluid-lg;
+	}
+	h3, .h3, h5, .h5 {
+		@apply italic;
+	}
+	h1, h2, h3, h4, h5 {
+		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
+	}
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+		@apply !tracking-tight font-semibold dark:font-darksemibold;
+	}
+	a {
+		@apply no-underline border-b text-blue-700 border-blue-700 dark:text-blue-200 dark:border-blue-200;
+		&:focus, &:hover, &:active {
+			@apply text-blue-900 border-blue-900 dark:text-zinc-300 dark:border-blue-200;
+		}
+	}
+	sup a, a.previous, a.next, .footnote-return {
+		@apply border-b-0;
+	}
+	.header-anchor {
+		@apply border-0 hover:border-b-2 hover:border-blue-700 dark:hover:border-blue-200 text-black hover:text-blue-700 dark:text-white dark:hover:text-blue-200;
+		&:hover::after {
+			@apply text-base pl-2;
+			content: "#";
+		}
+	}
+	p, li {
+		/* for handling Markdown-created <p> and <li> */
+		@apply mb-3 text-lg;
+	}
+	ul li, ul li li {
+		@apply list-disc;
+	}
+	ul li li li {
+		@apply list-square;
+	}
+	ul, ol {
+		@apply pl-8;
+	}
+	ol {
+		@apply list-decimal;
+	}
+	article {
+		h1, h2, h3, h4 {
+			@apply mt-8 mb-6;
+		}
+		p, li {
+			@apply mt-6 mb-6 !leading-relaxed;
+		}
+		img.containedImage, picture img {
+			@apply min-w-full max-w-full w-full h-auto;
+		}
+		code {
+			@apply bg-blue-50 dark:bg-gray-700;
+		}
+		blockquote {
+			@apply px-6 text-zinc-700 dark:text-zinc-300 border-l-4 border-zinc-300 dark:border-zinc-400;
+		}
+		hr {
+			@apply border-solid border-zinc-900 dark:border-zinc-100;
+		}
+	}
+	.footnotes, .footnote-sim, .footnote-ref {
+		@apply font-sans;
+	}
+
+	.footnotes {
+		@apply pt-[0.5em];
+		& hr {
+			@apply border-0 h-[1px] bg-black dark:bg-white;
+		}
+		& ol {
+			padding-inline-start: 1.5rem;
+			@apply pt-2;
+			& li {
+				@apply !text-sm my-0 pt-2 pb-1;
+				& p {
+					@apply leading-[1.5] !text-sm my-0 py-0;
+				}
+			}
+		}
+		& .footnote-backref {
+			@apply text-xs;
+		}
+	}
+
+	.footnote-sim {
+		@apply text-[0.65em] text-blue-500 dark:text-blue-200;
+	}
+
+	a.footnote-return {
+		font-size: 50%;
+	}
+}

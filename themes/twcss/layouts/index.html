@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+  <div class="font-sans pt-0 lg:flex w-full mr-auto ml-auto" data-pagefind-ignore>
+    <div class="lg:w-[40%] px-8 lg:pr-[3em] lg:pl-2 text-center lg:text-right">
+      <h1 class="font-[600] pt-4 lg:pr-0 lb:pb-0 lg:pt-[3.5em] lg:pl-[2em] 2xl:pt-[2.5em] 2xl:pl-[2.5em] text-2xl lg:text-[1.75rem] 2xl:text-4xl leading-[1.75em]">Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
+    </div>
+    <div class="text-center lg:text-left lg:w-7/12 px-6 lg:pl-16 lg:pt-16">
+    <div class="mt-8 border-blue-700 dark:border-white mx-auto mb-8 w-[15rem] border-solid border-b-4 lg:hidden"></div>
+    <h2 class="font-[600] dark:font-[550] h1 mt-4 lg:mt-0 mb-4 lg:mb-10 fluid-3xl !tracking-tighter">Latest <a href="/posts/">posts</a></h2>
+      {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+      <div class="lg:pr-8">
+        <h2 class="font-[550] dark:font-[500] not-italic tracking-tight mb-2 fluid-xl"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+        <p class="font-[300] fluid-lg tracking-tight mt-1 mb-2">
+          {{ .Description | .Page.RenderString }}
+        </p>
+        <p class="fluid-base tracking-tight mt-0 mb-10">
+          {{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
+        </p>
+      </div>
+    {{ end }}
+    <p class="mb-[3em] text-base"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
+  </div>
+</div>
+{{ end }}

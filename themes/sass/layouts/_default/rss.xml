@@ -1,0 +1,45 @@
+{{- $posts := where .Site.Pages "Section" "posts" -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+	{{- $posts = $posts | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.LanguageCode }}">
+	<title>{{ .Site.Params.Domain }}</title>
+	<subtitle>{{ .Site.Params.Description }}</subtitle>
+	<link href="{{ .Site.BaseURL }}index.xml" rel="self" />
+	<link href="{{ .Site.BaseURL }}" />
+	<updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+	<id>{{ .Site.BaseURL }}</id>
+	<author>
+		<name>{{ .Site.Params.Author }}</name>
+		<uri>{{ .Site.BaseURL }}</uri>
+		<email>{{ .Site.Params.AuthorEmail }}</email>
+	</author>
+	{{- $RSSutm := "?utm_campaign=RSS&utm_source=RSS&utm_medium=RSS" -}}
+	{{- $PermaWithRSSutm := "" -}}
+	{{ range $posts }}
+		{{- $PermaWithRSSutm = print .Permalink $RSSutm -}}
+		{{- $titleThis := .Title | .Page.RenderString -}}
+		{{- $emailReplyHTML := print `<p><a href="mailto:bw@brycewray.com?subject=“` $titleThis `”">Reply via email</a></p>`  -}}
+		{{- $descrForFeed := "[No description]" -}}
+		{{- if .Description -}}
+			{{- $descrForFeed = .Description -}}
+		{{- end -}}
+		{{- $contentMD := .Content -}}
+		{{- $finalHTMLContent := print `<em>` $descrForFeed `</em><hr />` $contentMD $emailReplyHTML -}}
+		<entry>
+			<title>{{ $titleThis }}</title>
+			<link href="{{ $PermaWithRSSutm }}" />
+			<updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</updated>
+			<author>
+				<name>{{ .Site.Params.Author }}</name>
+				<uri>{{ .Site.BaseURL }}</uri>
+				<email>{{ .Site.Params.AuthorEmail }}</email>
+			</author>
+			<id>{{ .Permalink }}</id>
+			<summary>{{ $descrForFeed }}</summary>
+			<content xml:lang="{{ .Site.LanguageCode }}" type="html">{{ $finalHTMLContent | html }}</content>
+		</entry>
+	{{ end }}
+</feed>

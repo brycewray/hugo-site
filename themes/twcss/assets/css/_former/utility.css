@@ -1,0 +1,168 @@
+.box {
+  @apply font-sans text-sm border border-black dark:border-gray-400 border-solid mx-auto my-8 w-full p-[1.5em] bg-white dark:bg-zinc-800;
+}
+
+.lazypicturecaption, .imgcCaption {
+  @apply font-sans text-sm p-0 mt-2 leading-snug text-center;
+}
+
+.featured-image-caption a {
+  color: #a8dcff;
+  border-bottom: 1px solid #a8dcff;
+}
+
+.indentAfterLI {
+  @apply ml-8;
+}
+
+.punctuationExample {
+  @apply font-serif text-2xl text-center;
+}
+
+.navWhite, .navWhite:visited {
+  @apply text-white;
+}
+
+.navWhite:focus, .navWhite:active {
+  @apply text-zinc-400;
+}
+
+.text-blue-light {
+  @apply text-blue-500;
+}
+
+.text-blue-dark { /* for dark mode */
+  @apply text-blue-200;
+}
+
+.ctr {
+  @apply text-center;
+}
+
+.legal {
+  @apply text-xs;
+}
+
+span.caption {
+  text-shadow: none; /* keeps link borders from looking "dirty" */
+}
+
+/*
+span.caption a {
+  @apply text-blue-100 border-blue-100;
+  &:focus, &:hover, &:active {
+    @apply text-slate-200 border-blue-100;
+  }
+}
+*/
+
+.imgCover {
+  @apply object-cover object-center h-full w-full;
+}
+
+.background-hero-title-text {
+  text-shadow: 4px 4px 2px #000;
+}
+
+.text-nowrap, .text-nobrk {
+  @apply whitespace-nowrap;
+}
+
+#collapse-button.hamburger:before {
+  font-size: 150%;
+  content: "\2630"; /* same as &#9776; HTML entity */
+}
+
+#collapse-button.close:before {
+  font-size: 170%;
+  content: "\00D7"; /* same as &times; HTML entity */
+}
+
+.twitter-tweet {
+  @apply mt-4 mx-auto mb-4 px-8 py-0 rounded-xl bg-white dark:bg-transparent border-2 border-solid border-zinc-700 dark:border-zinc-300;
+}
+
+a .twitter-tweet {
+  @apply m-0;
+}
+
+.featImgCapt a {
+  @apply text-blue-100 border-blue-100;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 750ms ease-in-out;
+}
+
+
+circle.GitHub,
+circle.RSS {
+	@apply fill-white dark:fill-black;
+}
+
+circle.Twitter,
+circle.JSON {
+	@apply fill-black dark:fill-blue-500;
+}
+
+path.GitHub,
+path.NextPrev,
+circle.MastodonCircle,
+path.MastodonM,
+circle.Twitter,
+circle.RSS,
+circle.JSON {
+	@apply fill-blue-500 dark:fill-blue-100;
+}
+
+a:hover path.GitHub,
+a:hover path.NextPrev,
+a:hover circle.MastodonCircle,
+a:hover path.MastodonM,
+a:hover circle.Twitter,
+a:hover circle.RSS,
+a:hover circle.JSON {
+	@apply fill-blue-700 dark:fill-blue-300;
+}
+
+path.FirstLast {
+	@apply fill-gray-100;
+}
+
+path.MastodonBody,
+path.MastodonM {
+	fill-rule:nonzero;
+}
+
+path.MastodonBody,
+path.Twitter,
+path.JSON,
+path.RSS {
+	@apply fill-white dark:fill-black;
+}
+
+a:hover circle.GitHub,
+a:hover path.Twitter,
+a:hover path.RSS,
+a:hover path.JSON,
+a:hover path.MastodonBody {
+	@apply dark:fill-white;
+}
+
+details.comments > summary {
+	@apply list-none text-white rounded-md my-0 mx-auto border border-blue-500 bg-blue-500 py-2 px-1 w-[15em] dark:border-blue-300 dark:bg-blue-300 hover:cursor-pointer hover:bg-blue-700 hover:dark:border-blue-200 hover:dark:bg-blue-200;
+}
+
+details.comments > summary::marker,
+details.comments > summary::-webkit-details-marker {
+	@apply hidden;
+}

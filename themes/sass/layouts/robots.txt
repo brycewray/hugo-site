@@ -1,0 +1,4 @@
+User-agent: *
+{{ if .Site.Params.SiteLive -}}Allow{{- else -}}Disallow{{- end }}: /
+
+Sitemap: https://www.brycewray.com/sitemap.xml
