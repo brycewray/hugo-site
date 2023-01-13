@@ -1,0 +1,10 @@
+    {{- $cssFontsLibreFranklin := "" -}}
+    {{- $cssFontsLibreFranklin = resources.Get "css/fonts_LibreFranklin.css" | resources.PostCSS -}}
+    {{- if hugo.IsProduction -}}
+      {{- $cssFontsLibreFranklin = $cssFontsLibreFranklin | minify | fingerprint -}}
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsLibreFranklin.RelPermalink }}" crossorigin>
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsLibreFranklin.RelPermalink }}" type="text/css" crossorigin>
+    {{- else if .Site.IsServer -}}
+      <link rel="preload" as="style" href="{{ $cssFontsLibreFranklin.RelPermalink }}" crossorigin>
+      <link rel="stylesheet" href="{{ $cssFontsLibreFranklin.RelPermalink }}" type="text/css" crossorigin>
+		{{- end -}}

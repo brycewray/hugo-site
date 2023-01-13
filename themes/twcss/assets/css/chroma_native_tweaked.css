@@ -1,4 +1,4 @@
-/* Background */ .chroma, .code-inline { color: #d0d0d0; background-color: #202020 }
+/* Background */ .chroma, .code-inline { color: #d0d0d0; background-color: #202020 !important }
 /* Other */ .chroma .x, .code-inline .x { color: #ffffff }
 /* Error */ .chroma .err, .code-inline .err { color: #fd7777; }
 /* LineTableTD */ .chroma .lntd, .code-inline .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }

@@ -1,0 +1,21 @@
+		{{- $cssChromaNativeTweaked := "" -}}
+		{{- $cssChromaNativeTweaked = resources.Get "css/chroma_native_tweaked.css" -}}
+		{{- $cssChromaFixAll := "" -}}
+		{{- $cssChromaFixAll = resources.Get "css/chroma_fix-all.css" -}}
+    {{- if hugo.IsProduction -}}
+			{{- if (findRE `(<pre|<code)` .Content 1) -}}
+				{{- $cssChromaNativeTweaked = $cssChromaNativeTweaked | minify | fingerprint -}}
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}" crossorigin>
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css" crossorigin>
+				{{- $cssChromaFixAll = $cssChromaFixAll | minify | fingerprint -}}
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}" crossorigin>
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css" crossorigin>
+			{{- end }}
+    {{- else if .Site.IsServer -}}
+			{{- if (findRE `(<pre|<code)` .Content 1) -}}
+				<link rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}" crossorigin>
+				<link rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css" crossorigin>
+				<link rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}" crossorigin>
+				<link rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css" crossorigin>
+			{{- end }}
+    {{- end -}}

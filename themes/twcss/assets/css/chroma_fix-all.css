@@ -1,6 +1,7 @@
 pre,
 code {
-  @apply font-mono bg-blue-50 dark:bg-slate-700;
+  font-family: "SF Mono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	background-color: rgb(239 246 255 / var(--tw-bg-opacity));
 	font-kerning: none;
 	font-variant-ligatures: none;
 }
@@ -8,18 +9,24 @@ code {
 code[class*="language-"],
 pre[class*="language-"] {
   color: #ddd; /* was ccc */
-  @apply bg-transparent text-left whitespace-pre leading-[1.5];
+  background: transparent;
+	text-align: left;
+	white-space: pre;
+	line-height: 1.5;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  tab-size: 4;
+  tab-size: 2;
   hyphens: none;
 }
 
  /* Code blocks */
  pre[class*="language-"],
  pre.chroma {
-   @apply p-[1em] my-[0.5em] mx-0 overflow-auto rounded-xl;
+	 padding: 1em;
+	 margin: 0.5em 0;
+	 overflow: auto;
+	 border-radius: 0.75rem; /* 12px */
 }
 
 :not(pre) > code[class*="language-"],
@@ -29,19 +36,22 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  @apply p-[0.1em] rounded-[0.3em] whitespace-normal;
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
 }
 
 .highlight {
   font-size: 0.8em; /* for Roboto Mono as compared to Public Sans */
-  & .chroma {
-    font-size: 1.35em; /* undoing the above when necessary */
-  }
+}
+
+.highlight .chroma {
+	font-size: 1.35em;
 }
 
 article code {
   font-size: 0.9em;
-  @apply bg-gray-700 dark:bg-[#454545];
+	background-color: rgb(55,65,81);
 }
 
 article blockquote code {
@@ -101,4 +111,14 @@ h/t https://simplernerd.com/hugo-add-copy-to-clipboard-button/
 
 article ol li .highlight {
 	line-height: 1.5;
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+	pre, code {
+		background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+	}
+	article code {
+		background-color: #454545;
+	}
 }

@@ -1,47 +1,39 @@
     {{- /* CSS/SCSS */ -}}
     {{- /* - see https://github.com/gohugoio/hugo/issues/8343#issuecomment-1019383325 */ -}}
-    <!--
-    <link rel="preload" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    <link rel="preload" href="/fonts/PublicSans-Regular-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-    <link rel="preload" href="/fonts/PublicSans-Italic-VF-2-000_2021-11-01_subset.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
-		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-		<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-    -->
-    {{- /*
-    {{- $optionsFontsInter := (dict "targetPath" "css/fonts_Inter.css") -}}
-    {{- $optionsFontsInterComp := (dict "targetPath" "css/fonts_Inter.min.css") -}}
-    {{- $optionsInterVF := (dict "targetPath" "css/intervf.css") -}}
-    {{- $optionsInterVFComp := (dict "targetPath" "css/intervf.min.css") -}}
-    {{- $cssFontsInter := "" -}}
-    {{- $cssInterVF := "" -}}
-    {{- $optionsFontsPublicSans := (dict "targetPath" "css/fonts_PublicSans.css") -}}
-    {{- $optionsFontsPublicSansComp := (dict "targetPath" "css/fonts_PublicSans.min.css") -}}
-    {{- $cssFontsPublicSans := "" -}}
-    {{- $cssFontsPublicSans = resources.Get "css/fonts_PublicSans.css" | resources.PostCSS -}}
-    */ -}}
-    {{- $optionsFontsLibreFranklin := (dict "targetPath" "css/fonts_LibreFranklin.css") -}}
-    {{- $optionsFontsLibreFranklinComp := (dict "targetPath" "css/fonts_LibreFranklin.min.css") -}}
     {{- $cssFontsLibreFranklin := "" -}}
     {{- $cssFontsLibreFranklin = resources.Get "css/fonts_LibreFranklin.css" | resources.PostCSS -}}
+		{{- $optionsChromaFixAll := (dict "targetPath" "css/chroma_fix-all.css") -}}
+		{{- $optionsChromaFixAllComp := (dict "targetPath" "css/chroma_fix-all.min.css") -}}
+		{{- $cssChromaNativeTweaked := "" -}}
+		{{- $cssChromaNativeTweaked = resources.Get "css/chroma_native_tweaked.css" -}}
+		{{- $cssChromaFixAll := "" -}}
+		{{- $cssChromaFixAll = resources.Get "css/chroma_fix-all.css" -}}
     {{- if hugo.IsProduction -}}
       {{- $cssFontsLibreFranklin = $cssFontsLibreFranklin | minify | fingerprint -}}
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsLibreFranklin.RelPermalink }}" crossorigin>
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsLibreFranklin.RelPermalink }}" type="text/css" crossorigin>
-      {{- /*
+			{{- if (findRE "<pre" .Content 1) -}}
+				{{- $cssChromaNativeTweaked = $cssChromaNativeTweaked | minify | fingerprint -}}
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}" crossorigin>
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css" crossorigin>
+				{{- $cssChromaFixAll = $cssChromaFixAll | minify | fingerprint -}}
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}" crossorigin>
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css" crossorigin>
+			{{- end }}
+      {{ $styles := resources.Get "css/index.css" | resources.PostCSS }}
       {{ $styles = $styles | minify | fingerprint }}
-      */}}
-      {{- if eq .Site.Params.Host "CFP" -}}
-        {{- with resources.Get "css/index.css" | resources.PostCSS -}}
-          <style nonce="DhcnhD3khTMePgXw">{{- .Content | safeCSS -}}</style>
-        {{- end -}}
-      {{- else -}}
-        {{- with resources.Get "css/index.css" | resources.PostCSS -}}
-          <style>{{- .Content | safeCSS -}}</style>
-        {{- end -}}
-      {{- end -}}
+      {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
+			<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $styles.RelPermalink }}" crossorigin>
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} href="{{ $styles.RelPermalink }}" rel="stylesheet" />
     {{- else if .Site.IsServer -}}
       <link rel="preload" as="style" href="{{ $cssFontsLibreFranklin.RelPermalink }}" crossorigin>
       <link rel="stylesheet" href="{{ $cssFontsLibreFranklin.RelPermalink }}" type="text/css" crossorigin>
+			{{- if (findRE "<pre" .Content 1) -}}
+				<link rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}" crossorigin>
+				<link rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css" crossorigin>
+				<link rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}" crossorigin>
+				<link rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css" crossorigin>
+			{{- end }}
       {{ $styles := resources.Get "css/index.css" | resources.PostCSS }}
       {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
       <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
