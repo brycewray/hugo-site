@@ -78,7 +78,7 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-{{< imgc src="iCloud_sync-save_icon_in_Ulysses_634x265.png" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width=634 height=265 >}}
+{{< imgc src="iCloud_sync-save_icon_in_Ulysses_1268x530.png" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width=1268 height=530 >}}
 
 When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device --- Houston, we have an iCloud&nbsp;sync&nbsp;problem.
 {.imgcCaption}
