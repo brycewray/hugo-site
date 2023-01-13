@@ -9,8 +9,8 @@
 
 {{- with resources.GetRemote $urlToGet  -}}
 {{ if (resources.GetRemote $urlToGet).Err }}
-	<blockquote class="tweet-card">
-		<p class="ctr legal">[Source not online<br />
+	<blockquote class="leading-snug fluid-base mx-6 my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-600 w-full md:w-[80%] 3xl:w-[80ch]">
+		<p class="text-center text-fn">[Source not online<br />
 		at time of site build.]</p>
 	</blockquote>
 {{ else }}
@@ -23,18 +23,19 @@
 	{{ end }}
 
 	{{ if isset $json "content" }}
-		<blockquote class="tweet-card" cite="{{ $tootLink }}">
-			<div class="tweet-header">
-				<a class="tweet-profile twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
+		<blockquote class="leading-snug !tracking-tight fluid-base mx-6 my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-600 w-full md:w-[80%] 3xl:w-[80ch]" cite="{{ $tootLink }}">
+			<div class="flex">
+				<a class="mr-2 flex-shrink-0 no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
 					<img
+						class="w-[48px] h-auto rounded-full"
 						src="{{ $json.account.avatar }}"
 						alt="Mastodon avatar for {{ $handleInst }}"
 						loading="lazy"
 					/>
 				</a>
-				<div class="tweet-author">
-					<a class="tweet-author-name twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
-					<a class="tweet-author-handle twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
+				<div class="flex flex-col flex-grow">
+					<a class="font-bold text-black dark:text-white leading-snug no-underline fluid-sm" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
+					<a class="text-gray-700 dark:text-gray-200 fluid-xs leading-none no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
 				</div>
 			</div>
 			{{ $json.content | safeHTML }}
@@ -44,7 +45,7 @@
 						{{ $imageCount = (add ($imageCount) 1) }}
 					{{ end }}
 				{{ end }}
-				<div class="tweet-img-grid-{{ $imageCount }}">
+				<div class="mt-2 rounded-xl overflow-hidden grid grid-cols-1 gap-[2px]">
 				{{ range $media_attachments := . }}
 					{{ if eq $media_attachments.type "image" }}
 						{{ $mediaMD5 = md5 $media_attachments.url }}
@@ -56,12 +57,13 @@
 						<img
 							src="{{ $media_attachments.url }}"
 							alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
-							class="tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"
+							class="img-{{ $mediaMD5 }}{{ if $json.sensitive }}
+							blur-2xl relative{{ end }}"
 							loading="lazy"
-							{{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}
+							{{- if $json.sensitive }}onclick="this.classList.toggle('!blur-none !z-[9999] relative')"{{- end }}
 						/>
 						{{- if $json.sensitive -}}
-							<div class="blur-text">
+							<div class="absolute font-bold w-full top-[40%] text-white text-center text-2xl leading-tight">
 								Sensitive content<br />
 								(flagged&nbsp;at&nbsp;origin)
 							</div>
@@ -86,13 +88,13 @@
 								aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
 							}
 						</style>
-						<div class="ctr tweet-video-wrapper">
-							<video muted playsinline controls class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
+						<div class="text-center mt-2 rounded-xl overflow-hidden grid grid-cols-1 gap-[2px]">
+							<video muted playsinline controls class="text-center w-full h-auto aspect-square object-cover img-{{ $mediaMD5 }}{{ if $json.sensitive }} blur-2xl relative{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('!blur-none !z-[9999] relative')"{{- end }}>
 								<source src="{{ $media_attachments.url }}">
-								<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+								<p class="fluid-xs text-center">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
 							</video>
 							{{- if $json.sensitive -}}
-								<div class="blur-text">
+								<div class="absolute font-bold w-full top-[40%] text-white text-center text-2xl leading-tight">
 									Sensitive content<br />
 									(flagged&nbsp;at&nbsp;origin)
 								</div>
@@ -106,13 +108,13 @@
 								aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
 							}
 						</style>
-						<div class="ctr tweet-video-wrapper">
-							<video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}" {{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
+						<div class="text-center mt-2 rounded-xl overflow-hidden grid grid-cols-1 gap-[2px]">
+							<video loop autoplay muted playsinline controls controlslist="nofullscreen" class="text-center w-full h-auto aspect-square object-cover img-{{ $mediaMD5 }}{{ if $json.sensitive }} blur-2xl relative{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('!blur-none !z-[9999] relative')"{{- end }}>
 								<source src="{{ $media_attachments.url }}">
-								<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+								<p class="fluid-xs text-center">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
 							</video>
 							{{- if $json.sensitive -}}
-								<div class="blur-text">
+								<div class="absolute font-bold w-full top-[40%] text-white text-center text-2xl leading-tight">
 									Sensitive content<br />
 									(flagged&nbsp;at&nbsp;origin)
 								</div>
@@ -125,24 +127,24 @@
 				{{ $poll := . }}
 				{{ with $poll.options }}
 					{{ range $pollOptions := . }}
-						{{ $votesCount = add $votesCount  $pollOptions.votes_count }}
+						{{ $votesCount = add $votesCount $pollOptions.votes_count }}
 					{{ end }}
-					<div class="tweet-poll-wrapper">
+					<div class="grid grid-cols-[3.5em 0.5fr 1fr] gap-[1em]leading-none">
 						{{ range $pollOptions := . }}
-							<div class="tweet-poll-count">
+							<div class="col-start-1 text-right">
 								<strong>{{ (mul 100 (div $pollOptions.votes_count $votesCount)) | lang.FormatPercent 1 }}</strong>
 							</div>
-							<div class="tweet-poll-meter">
-								<meter id="vote-count" max="{{ $votesCount }}" value="{{ $pollOptions.votes_count }}"></meter>
+							<div class="col-start-2">
+								<meter class="w-full" id="vote-count" max="{{ $votesCount }}" value="{{ $pollOptions.votes_count }}"></meter>
 							</div>
-							<div class="tweet-poll-title">{{ $pollOptions.title }}</div>
+							<div class="col-start-3">{{ $pollOptions.title }}</div>
 						{{ end }}
 					</div>
-					<p class="legal">{{ $votesCount }} votes</p>
+					<p class="fluid-xs pt-4">{{ $votesCount }} votes</p>
 				{{ end }}
 			{{ end }}
-			<div class="tweet-footer">
-				<a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="tweet-date twitterExt" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
+			<div class="mt-4 flex items-center text-gray-500 dark:text-gray-300 fluid-sm !tracking-tight">
+				<a class="text-gray-600 dark:text-gray-300 no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="fluid-xs">(UTC)</span>
 			</div>
 		</blockquote>
 	{{ end }}

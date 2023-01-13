@@ -26,7 +26,7 @@
 {{- end -}}
 {{- $imgClass := "w-full h-auto animate-fade" -}}
 {{- if $phn -}}
-	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
+	{{- $imgClass = "w-[90%] md:w-1/2 h-auto block mx-auto animate-fade" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $LQIP_img := $src.Resize "20x jpg q20" -}}

@@ -12,7 +12,7 @@
 
 			{{ range $paginator.Pages }}
       <div class="font-sans">
-        <h2 class="text-xl lg:text-[2rem] 2xl:text-4xl mb-2 tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <h2 class="text-xl font-semibold dark:font-darksemibold lg:text-[2rem] 2xl:text-4xl mb-2 tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="text-sm lg:text-base 2xl:text-lg mt-2 mb-2">
           {{ .Description }}
         </p>

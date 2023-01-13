@@ -2,7 +2,7 @@
 
 	{{ partial "billboard.html" . }}
 
-    <div class="w-4/5 lg:w-[70%] xl:w-3/5 2xl:w-1/2 mt-10 mr-auto ml-auto">
+    <div class="w-4/5 lg:w-[70%] xl:w-1/2 2xl:w-[45%] mt-10 mr-auto ml-auto">
       <article>
         {{ .Content }}
         <div class="font-sans text-center py-4">
@@ -16,15 +16,15 @@
     </div>
 
     {{ if or .PrevPage .NextPage }}
-      <div class="w-full px-8 py-2 bg-black dark:bg-blue-700 align-middle mt-10 mb-10">
-        <p class="font-sans text-center py-0 my-0 text-xl lg:text-2xl text-white tracking-tight">
+      <div class="w-full px-8 py-2 bg-black dark:bg-blue-800 align-middle mt-10 mb-10">
+        <p class="font-sans text-center py-0 my-0 fluid-lg text-white !tracking-tight">
           {{ with .NextInSection }}
-            Next: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
+            Next: <a class="no-underline hover:underline text-blue-200 dark:text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
             {{ end }}
         </p>
-        <p class="font-sans text-center py-0 my-0 text-xl lg:text-2xl text-white tracking-tight">
+        <p class="font-sans text-center py-0 my-0 fluid-lg text-white !tracking-tight">
           {{ with .PrevInSection }}
-          Previous: <a class="border-transparent text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
+          Previous: <a class="no-underline hover:underline text-blue-200 dark:text-blue-100 hover:text-gray-300 hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
           {{ end }}
         </p>
       </div>
