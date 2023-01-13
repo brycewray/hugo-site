@@ -11,6 +11,10 @@ module.exports = {
   theme: {
 		fluidTypography: {},
 		extend: {
+			screens: {
+				'ml': '960px',
+				'3xl': '1920px',
+			},
 			fontWeight: {
 				'darknormal': 375,
 				'darksemibold': 575,
@@ -22,20 +26,6 @@ module.exports = {
 			fontFamily: {
 				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
 			},
-			// colors: {
-			// 	blue: {
-			// 		'50': '#e0efff',
-			// 		'100': '#a8dcff',
-			// 		'200': '#00aaff',
-			// 		'300': '#0088ff',
-			// 		'400': '#0033ff',
-			// 		'500': '#0000ff',
-			// 		'600': '#0000bb',
-			// 		'700': '#0000aa',
-			// 		'800': '#000088',
-			// 		'900': '#000066',
-			// 	},
-			// },
 		},
     listStyleType: {
       none: 'none',
