@@ -1,9 +1,8 @@
 
 {{ define "main" }}
 
-<div>{{/* conforms to `sitemap-Container` for gradient bkgd */}}
-	<div class="sm:w-5/6 md:w-4/5 lg:w-7/12 mr-auto ml-auto pt-10 px-6 lg:px-16" data-pagefind-ignore>
-	  <h1 class="font-[600] dark:font-[550] text-center fluid-3xl">Sitemap</h1>
+	<div class="sm:w-5/6 md:w-4/5 lg:w-7/12 mr-auto ml-auto px-6 lg:px-16" data-pagefind-ignore>
+	  <h1 class="font-[600] dark:font-[550] text-center pt-16 lg:pt-24 fluid-3xl">Sitemap</h1>
 	  <h2 class="text-2xl my-6">Main pages</h2>
     <ul>
       <li class="text-sm my-4"><a href="{{ .Site.BaseURL }}">Home page</a></li>
@@ -25,6 +24,5 @@
     {{- end -}}
     </ul>
   </div>
-</div>
 
 {{ end }}
