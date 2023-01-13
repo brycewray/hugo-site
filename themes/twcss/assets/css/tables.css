@@ -117,15 +117,15 @@ table.ulysses thead th {
 		color: white;
 	}
 	table.ulysses tr:nth-child(odd) {
-		background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+		background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 	}
 
 	table.ulysses tr:nth-child(even) {
-		background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+		background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 	}
 
 	table.ulysses thead th {
-		background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+		background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 		border-color: rgb(255 255 255 / var(--tw-border-opacity));
 	}
 }
