@@ -1,7 +1,7 @@
 ---
 layout: contact
-title: "Want to reach me?"
-description: "Here are several ways to get in contact."
+title: "Want to reach me?"
+description: "Here are several ways to get in contact."
 author: Bryce Wray
 date: 2020-12-30T09:00:00-06:00
 ---
