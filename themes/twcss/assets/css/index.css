@@ -8,16 +8,27 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
+	html {
+		-moz-tab-size: 2;
+		tab-size: 2;
+	}
+	#nav-Checkbox:checked ~ ul.nav-Menu li,
+	#nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
+		@apply block;
+	}
+	#nav-Checkbox:checked ~ label#nav-Toggle #svg-menu {
+		@apply hidden;
+	}
+	#nav-Checkbox:checked ~ ul.nav-Menu {
+		@apply pb-4;
+	}
 	b, strong {
 		@apply font-semibold dark:font-darksemibold;
 	}
 	h1, .h1 {
 		@apply fluid-3xl mb-4;
 	}
-	h2, .h2 {
-		@apply fluid-2xl;
-	}
-	h3, .h3 {
+	h2, .h2, h3, .h3 {
 		@apply fluid-xl;
 	}
 	h4, h5 {
@@ -50,12 +61,12 @@
 	}
 	p, li {
 		/* for handling Markdown-created <p> and <li> */
-		@apply mb-3 text-lg;
+		@apply mb-3 fluid-base !tracking-normal;
 	}
-	ul li, ul li li {
+	ul li, ul li li li {
 		@apply list-disc;
 	}
-	ul li li li {
+	ul li li {
 		@apply list-square;
 	}
 	ul, ol {
@@ -68,8 +79,25 @@
 		h1, h2, h3, h4 {
 			@apply mt-8 mb-6;
 		}
+		p {
+			@apply mt-6 mb-6;
+		}
 		p, li {
-			@apply mt-6 mb-6 !leading-relaxed;
+			@apply !leading-relaxed;
+		}
+		ul {
+			li li, li li li, li li li li {
+				@apply my-2;
+			}
+		}
+		hr + ul {
+			@apply mt-4;
+		}
+		.red {
+			@apply text-red-700 dark:text-red-300;
+		}
+		.pokey {
+			@apply fluid-sm !tracking-normal;
 		}
 		img.containedImage, picture img {
 			@apply min-w-full max-w-full w-full h-auto;
@@ -94,9 +122,9 @@
 			padding-inline-start: 1.5rem;
 			@apply pt-2;
 			& li {
-				@apply !text-sm my-0 pt-2 pb-1;
+				@apply fluid-sm my-0 pt-2 pb-1;
 				& p {
-					@apply leading-[1.5] !text-sm my-0 py-0;
+					@apply fluid-sm my-0 py-0;
 				}
 			}
 		}
@@ -106,14 +134,14 @@
 	}
 
 	.footnote-sim {
-		@apply text-[0.65em] text-blue-500 dark:text-blue-200;
+		@apply fluid-sm text-blue-500 dark:text-blue-200;
 	}
 
 	a.footnote-return {
 		font-size: 50%;
 	}
 	.box {
-		@apply fluid-sm block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 mx-2 my-auto w-full px-4 py-6 mb-2;
+		@apply fluid-sm !tracking-normal block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 mx-2 my-auto w-full px-4 py-6 mb-2;
 		& p {
 			@apply p-0 m-0;
 		}
@@ -133,7 +161,7 @@
 		animation: fadeIn 750ms ease-in-out;
 	}
 	.imgcCaption, .imgCaption, .lazypicturecaption {
-		@apply p-0 mbs-2 leading-snug fluid-sm text-center;
+		@apply p-0 mbs-2 leading-snug fluid-xs text-center;
 	}
 	.legal {
 		@apply fluid-xs;
