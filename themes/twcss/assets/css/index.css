@@ -118,6 +118,9 @@
 			@apply p-0 m-0;
 		}
 	}
+	.box + hr, hr + .box {
+		@apply mt-7;
+	}
 	@keyframes fadeIn {
 		0% {
 			opacity: 0;
@@ -128,5 +131,18 @@
 	}
 	.animate-fade {
 		animation: fadeIn 750ms ease-in-out;
+	}
+	.imgcCaption, .imgCaption, .lazypicturecaption {
+		@apply p-0 mbs-2 leading-snug fluid-sm text-center;
+	}
+	.legal {
+		@apply fluid-xs;
+	}
+	.indentAfterLI {
+		@apply ml-8;
+		&.box {
+			margin-left: 3em;
+			width: calc(100% - 3em);
+		}
 	}
 }

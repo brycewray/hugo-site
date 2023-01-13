@@ -56,11 +56,7 @@ article code {
 
 article blockquote code {
   color: #494d50;
-  @media (prefers-color-scheme: dark) {
-    color: #dddddd;
-  }
 }
-
 
 /* === for copy-code-to-clipboard */
 
@@ -113,12 +109,14 @@ article ol li .highlight {
 	line-height: 1.5;
 }
 
-
 @media screen and (prefers-color-scheme: dark) {
 	pre, code {
 		background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 	}
 	article code {
 		background-color: #454545;
+	}
+	article blockquote code {
+		color: #dddddd;
 	}
 }
