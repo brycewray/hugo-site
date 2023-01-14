@@ -24,11 +24,11 @@
 	h1, .h1 {
 		@apply fluid-3xl mb-4;
 	}
-	h2, .h2, h3, .h3 {
-		@apply fluid-xl;
+	h2, .h2 {
+		@apply fluid-xl lg:fluid-2xl;
 	}
-	h4, h5 {
-		@apply fluid-lg;
+	h3, .h3, h4, .h4, h5, .h5 {
+		@apply fluid-lg lg:fluid-xl;
 	}
 	h3, .h3, h5, .h5 {
 		@apply italic;
@@ -105,10 +105,6 @@
 			@apply border-solid border-zinc-900 dark:border-zinc-100;
 		}
 	}
-	/* .footnotes, .footnote-sim, .footnote-ref {
-		@apply font-sans;
-	} */
-
 	.footnotes {
 		@apply pt-[0.5em];
 		& hr {
@@ -137,13 +133,13 @@
 		font-size: 50%;
 	}
 	.box {
-		@apply fluid-sm !tracking-normal block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 mx-2 my-auto w-full px-4 py-6 mb-2;
+		@apply fluid-sm !tracking-normal block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-6 mb-2;
 		& p {
 			@apply p-0 m-0;
 		}
 	}
-	.box + hr, hr + .box {
-		@apply mt-7;
+	.box + hr, hr + .box, img + .box, .box + img {
+		@apply mt-6;
 	}
 	@keyframes fadeIn {
 		0% {

@@ -9,7 +9,7 @@
 			<h2 class="font-[600] dark:font-[550] h1 mt-4 lg:mt-0 mb-4 lg:mb-10 fluid-3xl !tracking-tighter">Latest <a href="/posts/">posts</a></h2>
 				{{ range first 3 (where .Site.RegularPages "Section" "posts") }}
 				<div class="lg:pr-8">
-					<h2 class="font-[550] dark:font-[500] not-italic mb-2 fluid-xl lg:fluid-2xl"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+					<h2 class="font-[550] dark:font-[500] not-italic mb-2 fluid-xl lg:fluid-2xl !leading-tight"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
 					<p class="font-[300] fluid-base lg:fluid-lg !tracking-tight mt-1 mb-1 lg:mb-2">
 						{{ .Description | .Page.RenderString }}
 					</p>
