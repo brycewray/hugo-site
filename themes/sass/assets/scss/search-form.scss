@@ -1,40 +1,10 @@
-@use 'variables' as var;
+@use 'partials/variables' as var;
 
 // === for search form
 
-.searchDiv, .searchDivPF, .searchBtnDiv {
+.searchDiv, .searchDivPF {
 	font-family: var.$sans-serif;
 	margin: 2em auto;
-}
-
-.searchBtnDiv{
-	text-align: center;
-	button {
-		// display: block;
-		margin: 0 auto;
-		color: white;
-		width: 15em;
-		padding: 0.5em 0.25em;
-		background-color: var.$twcss-blue-600;
-		border: 1px solid var.$twcss-blue-600;
-		border-radius: var.$btn_radius;
-		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid var.$twcss-blue-300;
-			background-color: var.$twcss-blue-300;
-			color: var.$black;
-		}
-		&:hover {
-			cursor: pointer;
-		}
-		&:focus, &:active, &:hover {
-			border: 1px solid var.$twcss-blue-700;
-			background-color: var.$twcss-blue-700;
-			@media screen and (prefers-color-scheme: dark) {
-				border: 1px solid var.$twcss-blue-50;
-				background-color: var.$twcss-blue-50;
-			}
-		}
-	}
 }
 
 .searchDivPF {
