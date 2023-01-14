@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="text-center px-10 w-full mx-auto">
-    <h1 class="pt-16 fluid-4xl">Posts</h1>
+    <h1 class="pt-16 lg:pt-24 fluid-4xl">Posts</h1>
     <div class="post-line"></div>
     <div class="my-0 mx-auto w-[85%] lg:w-3/4 2xl:w-[62.5%]">
 
@@ -12,17 +12,17 @@
 
 			{{ range $paginator.Pages }}
       <div class="font-sans">
-        <h2 class="text-xl font-semibold dark:font-darksemibold lg:text-[2rem] 2xl:text-4xl mb-2 tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="text-sm lg:text-base 2xl:text-lg mt-2 mb-2">
+        <h2 class="fluid-xl !tracking-tight !leading-normal font-semibold dark:font-darksemibold lg:text-[2rem] 2xl:text-4xl mb-2"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="fluid-lg !tracking-normal !leading-snug mt-2 mb-2">
           {{ .Description }}
         </p>
-        <p class="text-[0.825rem] lg:text-base 2xl:text-[1.15rem] mt-0 mb-8">
+        <p class="fluid-base !tracking-tight mt-0 mb-8">
 					{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
         </p>
       </div>
       {{ end }}
 
-      <hr class="border-1 border-y-black dark:border-y-white mt-6" />
+      <hr class="border-1 border-y-black dark:border-y-white mt-6 mb-2" />
       {{ partial "pagerthing.html" . }}
 		</div>
 	</div>

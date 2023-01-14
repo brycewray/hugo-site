@@ -1,8 +1,4 @@
-/* @import '/themes/twcss/assets/css/chroma_native_tweaked.css';
-@import '/themes/twcss/assets/css/chroma_fix-all.css'; */
 @import 'tailwindcss/base';
-/* @import '/themes/twcss/assets/css/tables.css';
-@import '/themes/twcss/assets/css/lite-yt-embed.css'; */
 @import '/themes/twcss/assets/css/print.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -44,7 +40,7 @@
 		@apply !tracking-tight font-semibold dark:font-darksemibold;
 	}
 	a {
-		@apply underline underline-offset-[0.225em] decoration-[0.075rem] text-blue-700 dark:text-blue-200;
+		@apply underline underline-offset-[0.225em] decoration-[0.05rem] text-blue-700 dark:text-blue-300;
 		&:focus, &:hover, &:active {
 			@apply text-blue-900 dark:text-zinc-300;
 		}
@@ -53,14 +49,14 @@
 		@apply no-underline;
 	}
 	.header-anchor {
-		@apply text-black dark:text-white no-underline hover:underline hover:underline-offset-[0.225em] hover:decoration-[0.075rem] hover:text-blue-700 hover:dark:text-blue-200;
+		@apply text-black dark:text-white no-underline hover:underline hover:underline-offset-[0.225em] hover:decoration-[0.075rem] hover:text-blue-700 hover:dark:text-blue-300;
 		&:hover::after {
 			content: "#";
 			@apply text-base pl-2;
 		}
 	}
 	p, li {
-		/* for handling Markdown-created <p> and <li> */
+		/* for handling Markdown-created <p> and <li>, as in `stoot.html` partial */
 		@apply mb-3 fluid-base !tracking-normal;
 	}
 	ul li, ul li li li {
@@ -83,7 +79,7 @@
 			@apply mt-6 mb-6;
 		}
 		p, li {
-			@apply !leading-relaxed;
+			@apply lg:fluid-lg !leading-relaxed;
 		}
 		ul {
 			li li, li li li, li li li li {
@@ -103,7 +99,7 @@
 			@apply min-w-full max-w-full w-full h-auto;
 		}
 		blockquote {
-			@apply px-6 text-zinc-700 dark:text-zinc-300 border-l-4 border-zinc-300 dark:border-zinc-400;
+			@apply px-6 text-zinc-700 dark:text-zinc-400 border-l-4 border-zinc-400;
 		}
 		hr {
 			@apply border-solid border-zinc-900 dark:border-zinc-100;
@@ -134,7 +130,7 @@
 	}
 
 	.footnote-sim {
-		@apply fluid-sm text-blue-500 dark:text-blue-200;
+		@apply fluid-sm text-blue-500 dark:text-blue-300;
 	}
 
 	a.footnote-return {
