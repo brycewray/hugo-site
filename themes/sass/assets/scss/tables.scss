@@ -1,4 +1,4 @@
-@use 'variables' as var;
+@use 'partials/variables' as var;
 
 table {
 	font-family: var.$sans-serif;
