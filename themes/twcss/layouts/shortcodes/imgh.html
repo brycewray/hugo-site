@@ -36,7 +36,7 @@
 	{{- $CFPstyle = "background: none;" -}}
 {{- end -}}
 
-{{- $actualImg := $src.Resize (printf "%s%s" "600x jpg " $filter) -}}
+{{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
 
 {{- if eq $simple "false" -}}
 {{- if eq .Site.Params.Host "CFP" -}}
