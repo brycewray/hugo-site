@@ -19,7 +19,7 @@ $tc-padding: 1em;
 	}
 	margin: 1.5rem auto;
 	padding: 1rem;
-	border: 2px solid var.$gray-1;
+	border: 2px solid var.$twcss-gray-700;
 	border-radius: 12px;
 	background: var.$white;
 	width: 100%;
@@ -36,7 +36,7 @@ $tc-padding: 1em;
 		max-width: 80ch;
 	}
 	@media screen and (prefers-color-scheme: dark) {
-		background: var.$twitter-bkgd-dark-mode;
+		background: var.$twcss-gray-900;
 		// background: transparent;
 	}
 	a, a:hover {
@@ -52,11 +52,11 @@ $tc-padding: 1em;
 		- https://css-tricks.com/better-line-breaks-for-long-urls/
 		*/
 		@media screen and (prefers-color-scheme: dark) {
-			color: var.$blueLight;
+			color: var.$twcss-blue-300;
 		}
 	}
 	@media screen and (prefers-color-scheme: dark) {
-		border: 2px solid var.$gray-2;
+		border: 2px solid var.$twcss-gray-200;
 		color: var.$white;
 	}
 }
@@ -87,9 +87,9 @@ $tc-padding: 1em;
 }
 
 .tweet-card-img {
-	border-bottom: 1px solid var.$gray-2;
+	border-bottom: 1px solid var.$twcss-gray-700;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-2-dark-mode;
+		border: 1px solid var.$twcss-gray-300;
 	}
 	width: 100%;
 }
@@ -101,9 +101,9 @@ $tc-padding: 1em;
 // ==== END, rounded image "attachment"
 
 a > .card, a > .toot-card {
-	color: var.$gray-1;
+	color: var.$twcss-gray-800;
 	@media screen and (prefers-color-scheme: dark) {
-		color: var.$gray-2-dark-mode;
+		color: var.$twcss-gray-300;
 	}
 }
 
@@ -112,9 +112,9 @@ a > .card, a > .toot-card {
 	// background-color: yellow;
 	margin-top: 1em;
 	border-radius: 12px;
-	border: 1px solid var.$gray-2;
+	border: 1px solid var.$twcss-gray-700;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-2-dark-mode;
+		border: 1px solid var.$twcss-gray-300;
 	}
 	p {
 		padding: 0.5em 1em 1em;
@@ -157,9 +157,9 @@ a > .card, a > .toot-card {
 			line-height: 1.375;
 		}
 		&-handle {
-			color: var.$gray-1;
+			color: var.$twcss-gray-700;
 			@media screen and (prefers-color-scheme: dark) {
-				color: var.$gray-2-dark-mode;
+				color: var.$twcss-gray-300;
 			}
 			font-size: var.$pokey;
 			line-height: 1;
@@ -174,18 +174,18 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: var.$gray-1;
+	color: var.$twcss-gray-800;
 	font-size: var.$pokey;
 	@media screen and (prefers-color-scheme: dark) {
-		color: var.$gray-2-dark-mode;
+		color: var.$twcss-gray-200;
 	}
 	.tweet-like-icon, .tweet-like-count {
 		display: none;
 	}
 	a {
-		color: var.$gray-1;
+		color: var.$twcss-gray-800;
 		@media screen and (prefers-color-scheme: dark) {
-			color: var.$gray-2-dark-mode;
+			color: var.$twcss-gray-200;
 		}
 	}
 	/* === needed in Eleventy but not in Hugo
@@ -294,9 +294,9 @@ a > .card, a > .toot-card {
 }
 
 .tweet-quoted-tweet {
-	border: 1px solid var.$gray-1;
+	border: 1px solid var.$twcss-gray-800;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-2-dark-mode;
+		border: 1px solid var.$twcss-gray-200;
 	}
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
@@ -316,14 +316,14 @@ a > .card, a > .toot-card {
 	p.tweet-quoted-tweet-head {
 		margin-bottom: 0.25em;
 		a {
-			color: var.$gray-1;
+			color: var.$twcss-gray-800;
 			@media screen and (prefers-color-scheme: dark) {
-				color: var.$gray-2-dark-mode;
+				color: var.$twcss-gray-200;
 			}
 			&:hover {
-				color: var.$darkblue;
+				color: var.$twcss-blue-700;
 				@media screen and (prefers-color-scheme: dark) {
-					color: var.$blueLight;
+					color: var.$twcss-blue-300;
 				}
 			}
 		}
@@ -334,10 +334,10 @@ a > .card, a > .toot-card {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: var.$gray-1;
+	color: var.$twcss-gray-800;
 	font-size: var.$pokey;
 	@media screen and (prefers-color-scheme: dark) {
-		color: var.$gray-2-dark-mode;
+		color: var.$twcss-gray-200;
 	}
 	.tweet-like-icon, .tweet-like-count {
 		display: none;
@@ -349,9 +349,9 @@ a > .card, a > .toot-card {
 	@media screen and (min-width: var.$bkpt_md) {
 		display: flex;
 	}
-	border: 1px solid var.$gray-2;
+	border: 1px solid var.$twcss-gray-700;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-2-dark-mode;
+		border: 1px solid var.$twcss-gray-200;
 	}
 	border-radius: 6px;
 	margin-top: 1em;
@@ -386,4 +386,3 @@ a > .card, a > .toot-card {
 		}
 	}
 }
-

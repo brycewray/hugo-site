@@ -3,23 +3,8 @@
 // === posts and post lists
 
 .posts {
-	&-Wrapper {
-		background-image: linear-gradient(
-			to bottom,
-			var.$gray-3-blue,
-			var.$gray-5-blue 5%,
-			var.$gray-GitHub-blue
-		);
-		@media screen and (prefers-color-scheme: dark) {
-			background-image: linear-gradient(
-				to bottom,
-				var.$gray-0-5,
-				var.$black 30%
-			);
-		}
-	}
 	&-pagerGray {
-		color: var.$gray-2;
+		color: var.$twcss-gray-300;
 	}
 	&-pagerThing {
 		// text-align: center;
@@ -88,9 +73,9 @@
 }
 
 .post-line {
-	border-top: 0.2rem solid var.$darkblue;
+	border-top: 0.2rem solid var.$twcss-blue-700;
 	@media screen and (prefers-color-scheme: dark) {
-		border-color: hsl(0, 0%, 100%);
+		border-color: var.$white;
 	}
 	display: block;
 	margin: 0 auto 2rem;
@@ -102,7 +87,7 @@
 	margin-top: 2.5rem;
 	background-color: var.$black;
 	@media (prefers-color-scheme: dark) {
-		background-color: var.$darkblue;
+		background-color: var.$twcss-slate-800;
 	}
 	padding: 0.5rem 0;
 	div, p {
@@ -119,7 +104,7 @@
 		text-decoration: none;
 	}
 	a:hover, a:focus {
-		color: var.$gray-2;
+		color: var.$twcss-gray-300;
 		text-decoration: underline; // normal
 		text-decoration-thickness: var.$textDcThick; // always rem
 		text-underline-offset: var.$textUnOffst; // always em
@@ -159,22 +144,22 @@ hr.paginatorBottom {
 		width: 15rem;
 		margin-top: 0.5em;
 		padding: 0.25rem 0;
-		background-color: var.$blue;
+		background-color: var.$twcss-blue-600;
 		border-radius: var.$btn_radius;
 		border-color: transparent;
 		vertical-align: middle;
 		color: var.$white;
 		&:focus, &:active, &:hover {
-			background-color: var.$darkblue;
+			background-color: var.$twcss-blue-700;
 		}
 		&:hover {
 			cursor: pointer;
 		}
 		@media (prefers-color-scheme: dark) {
 			color: var.$black;
-			background-color: var.$blueLight;
+			background-color: var.$twcss-blue-300;
 			&:focus, &:active, &:hover {
-				background-color: var.$blueLightBtn;
+				background-color: var.$twcss-blue-50;
 			}
 		}
 	}
@@ -192,7 +177,7 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: var.$grayArrow;
+	color: var.$twcss-gray-300;
 }
 
 // === end, posts and post lists

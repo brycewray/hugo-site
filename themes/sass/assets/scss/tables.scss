@@ -13,8 +13,8 @@ table.noborders {
 	border-collapse: collapse;
 	tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$default-color-dark-mode;
-			color: var.$default-color;
+			background-color: var.$twcss-gray-200;
+			color: var.$black;
 		}
 	}
 	td {
@@ -31,16 +31,16 @@ table.noborders {
 		background-color: hsl(210, 100%, 94%);
 	}
 	thead {
-		background-color: var.$darkblue;
+		background-color: var.$twcss-blue-900;
 		color: var.$white;
 	}
 	thead tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$darkblue;
+			background-color: var.$twcss-blue-900;
 		}
 	}
 	thead td {
-		color: hsl(0, 0%, 100%);
+		color: var.$white;
 		font-weight: bold;
 	}
 	td {
@@ -84,23 +84,23 @@ table.ulysses {
 		padding: 0;
 	}
 	tr:nth-child(odd) {
-		background-color: var.$gray-GitHub;
+		background-color: var.$twcss-gray-200;
 		@media screen and (prefers-color-scheme: dark){
-			background-color: var.$gray-1;
+			background-color: var.$twcss-gray-700;
 		}
 	}
 	tr:nth-child(even) {
-		background-color: var.$blueLightCode;
+		background-color: var.$twcss-blue-50;
 		@media screen and (prefers-color-scheme: dark){
-			background-color: var.$gray-2-blue;
+			background-color: var.$twcss-gray-800;
 		}
 	}
 	thead th {
-		background-color: var.$blue;
+		background-color: var.$twcss-blue-700;
 		border: 1px solid var.$black;
 		color: white;
 		@media screen and (prefers-color-scheme: dark) {
-			background-color: var.$gray-1-blue;
+			background-color: var.$twcss-gray-900;
 			border: 1px solid var.$white;
 		}
 	}

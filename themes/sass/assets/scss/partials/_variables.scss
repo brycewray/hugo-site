@@ -1,59 +1,57 @@
 // Colors
 $default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
-$default-color-dark-mode: hsl(0, 0%, 87%); // i.e., #dedede
-$default-shade: hsl(0, 0%, 28%);
-$default-tint: hsla(0, 0%, 67%, 0.72);
-$gray-0-5: hsl(219, 100%, 20%);
-$gray-1: hsl(0, 0%, 35%);
-$gray-1-blue: hsl(218, 90%, 20%);
-$gray-1-5: hsl(0, 0%, 50%);
-$gray-2: hsl(0, 0%, 78%);
-$gray-2-blue: hsl(218, 70%, 40%);
-$gray-2-dark-mode: hsl(0, 0%, 66%);
-$gray-2-5: hsl(0, 0%, 93%);
-$gray-3: hsl(0, 0%, 98%);
-$gray-3-blue: hsl(218, 50%, 70%); // #8ca8d9
-$gray-4-blue: hsl(218, 70%, 85%);
-$gray-5-blue: hsl(218, 85%, 95%);
-$gray-GitHub: hsl(204, 33%, 97%);
-$gray-GitHub-blue: hsl(222, 50%, 97%);
-$gray-GitHub-blue-0-5: hsl(222, 60%, 95%);
-$gray-GitHub-blue-0-5-dark-mode: hsl(222, 75%, 15%);
-$box-bkgd-dark-mode: hsl(0, 0%, 12%);
-$grayArrow: rgb(156, 163, 176); // rgb(156, 163, 175) -- same as TWCSS `text-gray-400`
-$chroma-bkgd: hsl(0, 0%, 93%); // was ededed
-$chroma-bkgd-dark-mode: hsl(0, 0%, 33%);
 $white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
-$background-dark-mode: hsl(0, 0%, 0%); // was #181818
+// $background-dark-mode: hsl(0, 0%, 0%); // was #181818
 $black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-$blue: hsl(228, 100%, 50%); // was 0088ff but that's not sufficient contrast for accessibility
-$blueFirst: hsl(208, 100%, 50%); // Will use as a hover color only
-$blueLight: hsl(204, 100%, 83%); // for use with dark mode where supported
-$blueLightCode: hsl(212, 100%, 94%);
-$blueLightBtn: hsl(204, 100%, 90%);
-$darkerblue: hsl(240, 100%, 25%);
-$darkblue: hsl(240, 100%, 33%);
-$red: hsl(0, 100%, 41%);
-$red-dark-mode: hsl(0, 100%, 75%);
-$gold: hsl(55, 100%, 44%);
-$bold-dark-mode: hsl(0, 0%, 96%);
-$bold-blockquote: hsl(0, 0%, 30%);
-$bold-blockquote-dark-mode: hsl(0, 0%, 72%);
-$paleBlue: hsl(200, 100%, 92%);
-$shadow-color: hsla(0, 0%, 0%, 0.2);
-$code-color: hsl(120, 100%, 20%); // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
-$code-color-dark-mode: hsl(120, 100%, 77%);
-$code-bkgd-light-mode: hsl(0, 0%, 96%); // for reference, GitHub uses f6f8fa
-$code-bkgd-dark-mode: hsl(200, 63%, 15%);
-$code-color-tan: hsl(40, 100%, 30%);
-$code-color-blueLight-dark-mode: hsl(197, 100%, 77%);
-$code-color-orange-dark-mode: hsl(40, 100%, 50%);
-$twitter-bkgd-dark-mode: hsl(210, 50%, 10%);
+// $blue: hsl(228, 100%, 50%); // was 0088ff but that's not sufficient contrast for accessibility
+// $blueFirst: hsl(208, 100%, 50%); // Will use as a hover color only
+// $blueLight: hsl(204, 100%, 83%); // for use with dark mode where supported
+// $blueLightCode: hsl(212, 100%, 94%);
+// $blueLightBtn: hsl(204, 100%, 90%);
+// $darkerblue: hsl(240, 100%, 25%);
+// $darkblue: hsl(240, 100%, 33%);
+// $red: hsl(0, 100%, 41%);
+// $red-dark-mode: hsl(0, 100%, 75%);
+// $gold: hsl(55, 100%, 44%);
+// $bold-dark-mode: hsl(0, 0%, 96%);
+// $bold-blockquote: hsl(0, 0%, 30%);
+// $bold-blockquote-dark-mode: hsl(0, 0%, 72%);
+// $paleBlue: hsl(200, 100%, 92%);
+// $shadow-color: hsla(0, 0%, 0%, 0.2);
+// $code-color: hsl(120, 100%, 20%); // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
+// $code-color-dark-mode: hsl(120, 100%, 77%);
+// $code-bkgd-light-mode: hsl(0, 0%, 96%); // for reference, GitHub uses f6f8fa
+// $code-bkgd-dark-mode: hsl(200, 63%, 15%);
+// $code-color-tan: hsl(40, 100%, 30%);
+// $code-color-blueLight-dark-mode: hsl(197, 100%, 77%);
+// $code-color-orange-dark-mode: hsl(40, 100%, 50%);
+// $twitter-bkgd-dark-mode: hsl(210, 50%, 10%);
+$twcss-blue-50: hsl(214, 100%, 97%);
+$twcss-blue-100: hsl(214, 95%, 93%);
+$twcss-blue-200: hsl(213, 97%, 87%);
+$twcss-blue-300: rgb(145, 195, 253);
+$twcss-blue-500: hsl(217, 91%, 60%);
+$twcss-blue-600: hsl(221, 83%, 53%);
+$twcss-blue-700: hsl(224, 76%, 48%);
+$twcss-blue-900: hsl(224, 64%, 33%);
+$twcss-gray-100: hsl(220, 14%, 96%);
+$twcss-gray-200: hsl(220, 13%, 91%);
+$twcss-gray-300: hsl(216, 12%, 84%);
+$twcss-gray-400: hsl(219, 11%, 65%);
+$twcss-gray-700: hsl(217, 19%, 27%);
+$twcss-gray-800: hsl(215, 28%, 17%);
+$twcss-gray-900: hsl(221, 39%, 11%);
+$twcss-red-300: hsl(0, 94%, 82%);
+$twcss-red-700: hsl(0, 74%, 42%);
+$twcss-slate-300: hsl(213, 27%, 84%);
+$twcss-slate-800: hsl(217, 33%, 17%);
+$twcss-zinc-100: hsl(240, 5%, 96%);
+$twcss-zinc-300: hsl(240, 5%, 84%);
+$twcss-zinc-400: hsl(240, 5%, 65%);
+$twcss-zinc-700: hsl(240, 5%, 26%);
+$twcss-zinc-900: hsl(240, 6%, 10%);
 
 // Typography
-// $sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Roboto, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-// $serif: ui-serif, "New York", "Calisto MT", "Palatino Linotype", Times, "Times New Roman", Georgia, Constantia, Cambria, "Noto Serif", "Liberation Serif", serif;
-// $monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Liberation Mono", "Noto Sans Mono", "Roboto Mono", Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", Consolas, "Ubuntu Mono", monospace;
 /*
 Note from the relevant GitHub SCSS file:
 "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome"
@@ -61,7 +59,7 @@ Note from the relevant GitHub SCSS file:
 $sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $twitter-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-$monospaced: "SF Mono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$monospaced: SFMono-Regular, "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 // rems
 $biggest: 2.5rem;

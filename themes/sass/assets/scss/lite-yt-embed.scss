@@ -1,11 +1,11 @@
 @use 'partials/variables' as var;
 
 lite-youtube {
-	background-color: #000;
+	background-color: var.$black;
 	position: relative;
-	border: 1px solid var.$gray-2;
+	border: 1px solid var.$twcss-gray-700;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-1;
+		border: 1px solid var.$twcss-gray-400;
 	}
 	display: block;
 	contain: content;

@@ -15,23 +15,23 @@
 		color: white;
 		width: 15em;
 		padding: 0.5em 0.25em;
-		background-color: var.$blue;
-		border: 1px solid var.$blue;
+		background-color: var.$twcss-blue-600;
+		border: 1px solid var.$twcss-blue-600;
 		border-radius: var.$btn_radius;
 		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid var.$blueLight;
-			background-color: var.$blueLight;
+			border: 1px solid var.$twcss-blue-300;
+			background-color: var.$twcss-blue-300;
 			color: var.$black;
 		}
 		&:hover {
 			cursor: pointer;
 		}
 		&:focus, &:active, &:hover {
-			border: 1px solid var.$darkblue;
-			background-color: var.$darkblue;
+			border: 1px solid var.$twcss-blue-700;
+			background-color: var.$twcss-blue-700;
 			@media screen and (prefers-color-scheme: dark) {
-				border: 1px solid var.$blueLightBtn;
-				background-color: var.$blueLightBtn;
+				border: 1px solid var.$twcss-blue-50;
+				background-color: var.$twcss-blue-50;
 			}
 		}
 	}
@@ -63,8 +63,8 @@
 	background-color: var.$white;
 	border: 1px solid var.$black;
 	@media screen and (prefers-color-scheme: dark) {
-		background-color: var.$gray-1;
-		border: 1px solid var.$gray-2;
+		background-color: var.$twcss-gray-800;
+		border: 1px solid var.$twcss-gray-300;
 	}
 }
 
@@ -89,24 +89,24 @@
 	right: 0px;
 	margin: 0; // fixes oddity in Safari
 	padding: 3px 12px;
-	border: 1px solid var.$blue;
+	border: 1px solid var.$twcss-blue-600;
 	font-weight: bold;
-	background-color: var.$blue;
+	background-color: var.$twcss-blue-600;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$blueLight;
-		background-color: var.$blueLight;
+		border: 1px solid var.$twcss-blue-300;
+		background-color: var.$twcss-blue-300;
 		color: var.$black;
 	}
 	&:hover {
 		cursor: pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid var.$darkblue;
-		background-color: var.$darkblue;
+		border: 1px solid var.$twcss-blue-700;
+		background-color: var.$twcss-blue-700;
 		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid var.$blueLightBtn;
-			background-color: var.$blueLightBtn;
+			border: 1px solid var.$twcss-blue-50;
+			background-color: var.$twcss-blue-50;
 		}
 	}
 }
@@ -136,8 +136,8 @@
 	// border-radius: 9px;
 	background-color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$gray-2;
-		background-color: var.$gray-1;
+		border: 1px solid var.$twcss-gray-300;
+		background-color: var.$twcss-gray-800;
 		color: var.$white;
 	}
 }
@@ -163,23 +163,24 @@
 	text-align: center;
 	border-radius: 9px;
 	padding: 3px 12px;
-	border: 1px solid var.$blue;
+	border: 1px solid var.$twcss-blue-600;
 	font-weight: bold;
-	background-color: var.$blue;
+	background-color: var.$twcss-blue-600;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
-		background-color: var.$blueLight;
+		background-color: var.$twcss-blue-300;
+		border-color: var.$twcss-blue-300;
 		color: var.$black;
 	}
 	&:hover {
 		cursor: pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid var.$darkblue;
-		background-color: var.$darkblue;
+		border: 1px solid var.$twcss-blue-700;
+		background-color: var.$twcss-blue-700;
 		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid var.$blueLightBtn;
-			background-color: var.$blueLightBtn;
+			border: 1px solid var.$twcss-blue-50;
+			background-color: var.$twcss-blue-50;
 		}
 	}
 }
@@ -204,10 +205,10 @@
 	// font-family: var.$serif;
 	mark {
 		color: var.$black;
-		background-color: var.$paleBlue;
+		background-color: var.$twcss-blue-200;
 		@media screen and (prefers-color-scheme: dark) {
 			color: var.$white;
-			background-color: var.$gray-2-blue;
+			background-color: var.$twcss-blue-900;
 		}
 	}
 }

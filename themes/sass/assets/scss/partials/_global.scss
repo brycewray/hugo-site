@@ -2,11 +2,11 @@
 
 html, body {
 	font-family: var.$sans-serif;
-	background-color: var.$gray-GitHub-blue;
-	color: var.$default-color;
+	background-color: var.$twcss-blue-100;
+	color: var.$black;
 	@media (prefers-color-scheme: dark) {
-		background: var.$background-dark-mode;
-		color: var.$default-color-dark-mode;
+		background: var.$black;
+		color: var.$twcss-gray-100;
 	}
 	width: 100%;
 	margin: 0 auto;
@@ -32,7 +32,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: normal;
 	letter-spacing: -0.025rem;
 	@media (prefers-color-scheme: dark) {
-		color: var.$default-color-dark-mode;
+		color: var.$twcss-gray-100;
 	}
 }
 
@@ -83,17 +83,16 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: var.$blue;
+	color: var.$twcss-blue-600;
 	@media (prefers-color-scheme: dark) {
-		color: var.$blueLight;
-		// border-bottom: 1px solid var.$blueLight;
+		color: var.$twcss-blue-300;
 	}
 }
 
 a:focus, a:hover, a:active {
-	color: var.$darkblue;
+	color: var.$twcss-blue-900;
 	@media (prefers-color-scheme: dark) {
-		color: var.$gray-2;
+		color: var.$twcss-zinc-300;
 	}
 }
 
@@ -109,13 +108,13 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 		color: var.$white;
 	}
 	&:hover{
-		color: var.$blue;
+		color: var.$twcss-blue-700;
 		text-decoration: underline;
 		text-decoration-thickness: var.$textDcThick; // always rem
 		text-underline-offset: var.$textUnOffst; // always em
 		text-decoration-skip-ink: auto;
 		@media screen and (prefers-color-scheme: dark) {
-			color: var.$blueLight;
+			color: var.$twcss-blue-300;
 		}
 		&::after {
 			font-size: var.$stdsize;
@@ -126,14 +125,14 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 }
 
 blockquote {
-	border-left: 4px solid var.$gray-2;
-	color: var.$gray-1;
+	border-left: 4px solid var.$twcss-zinc-400;
+	color: var.$twcss-zinc-700;
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
-		border-left: solid var.$gray-1;
-		color: var.$gray-2-dark-mode;
+		// border-left is same color
+		color: var.$twcss-zinc-400;
 	}
 	p:last-child {
 		margin-bottom: 0;
@@ -293,33 +292,9 @@ article {
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
 		.red strong, .red b, .red em, .red i {
-			color: var.$red;
+			color: var.$twcss-red-700;
 			@media screen and (prefers-color-scheme: dark) {
-				color: var.$red-dark-mode;
-			}
-		}
-		blockquote strong, blockquote b, blockquote em, blockquote i {
-			color: var.$bold-blockquote;
-			@media screen and (prefers-color-scheme: dark) {
-				color: var.$bold-blockquote-dark-mode;
-			}
-		}
-		a strong, a b, a em, a i {
-			color: var.$blue;
-			@media screen and (prefers-color-scheme: dark) {
-				color: var.$blueLight;
-			}
-		}
-		strong, b, em, i {
-			color: var.$black;
-			@media screen and (prefers-color-scheme: dark) {
-				color: var.$bold-dark-mode;
-			}
-			a {
-				color: var.$blue;
-				@media screen and (prefers-color-scheme: dark) {
-					color: var.$blueLight;
-				}
+				color: var.$twcss-red-300;
 			}
 		}
 	}

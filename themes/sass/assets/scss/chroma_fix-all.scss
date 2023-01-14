@@ -5,9 +5,9 @@ code {
 	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
-  background: var.$blueLightCode;
+  background: var.$twcss-blue-100;
   @media screen and (prefers-color-scheme: dark) {
-    background: var.$code-bkgd-dark-mode;
+    background: var.$twcss-slate-800;
   }
 }
 
@@ -57,7 +57,7 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	background-color: var.$blueLightCode;
+	background-color: var.$twcss-blue-100;
 	@media (prefers-color-scheme: dark) {
 		background-color: #454545;
 	}

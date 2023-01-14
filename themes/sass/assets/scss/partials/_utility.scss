@@ -91,23 +91,23 @@ abbr, .allSmallCaps, .ascaps {
 		font-size: inherit;
 	}
 	&-link {
-		color: var.$blue;
+		color: var.$twcss-blue-600;
 	}
 	&-link:active, &-link:focus, &-link:hover {
-		color: var.$darkblue;
+		color: var.$twcss-blue-700;
 	}
 	&-muted {
-		color: var.$gray-1;
+		color: var.$twcss-gray-700;
 		@media (prefers-color-scheme: dark) {
-			color: var.$gray-2-dark-mode;
+			color: var.$twcss-gray-300;
 		}
 	}
 	&-body {
-	color: var.$default-color;
+	color: var.$black;
 	}
 }
 .bg-primary {
-	background-color: var.$blue;
+	background-color: var.$twcss-blue-600;
 }
 
 .bg-center {
@@ -123,16 +123,16 @@ abbr, .allSmallCaps, .ascaps {
 }
 
 .btn-primary {
-	background-color: var.$blue;
-	border-color: var.$blue;
+	background-color: var.$twcss-blue-600;
+	border-color: var.$twcss-blue-600;
 	color: hsl(0, 0%, 100%);
 	border-radius: 6px;
 	padding: 0.25rem 0.5rem;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-	background-color: var.$darkblue;
-	border-color: var.$darkblue;
+	background-color: var.$twcss-blue-700;
+	border-color: var.$twcss-blue-700;
 }
 
 .sansSerif {
@@ -158,8 +158,8 @@ abbr, .allSmallCaps, .ascaps {
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: var.$box-bkgd-dark-mode;
-		border: 1px solid var.$gray-1-5;
+		background-color: var.$twcss-slate-800;
+		border: 1px solid var.$twcss-gray-200;
 	}
 	p {
 		padding: 0;
@@ -180,9 +180,9 @@ img.containedImage {
 }
 
 .red {
-	color: var.$red;
+	color: var.$twcss-red-700;
 	@media (prefers-color-scheme: dark) {
-		color: var.$red-dark-mode;
+		color: var.$twcss-red-300;
 	}
 }
 
@@ -281,7 +281,7 @@ img.ctrImg {
 /* === end, borrowed from TWCSS === */
 
 .grayedOut {
-	color: var.$gray-2-dark-mode;
+	color: var.$twcss-gray-300;
 }
 
 /* start, for imgc.html */
@@ -301,19 +301,6 @@ img.ctrImg {
 .FourOhFour {
 	&-Wrapper {
 		padding-top: 10vh;
-		background-image: linear-gradient(
-			to bottom,
-			var.$gray-3-blue,
-			var.$gray-5-blue 40%,
-			var.$gray-GitHub-blue
-		);
-		@media screen and (prefers-color-scheme: dark) {
-			background-image: linear-gradient(
-				to bottom,
-				var.$gray-0-5,
-				var.$black
-			);
-		}
 	}
 	&-Body {
 		text-align: center;
@@ -437,7 +424,7 @@ circle.Twitter,
 circle.JSON {
 	fill: var.$black;
 	@media screen and (prefers-color-scheme: dark) {
-		fill: var.$blue;
+		fill: var.$twcss-blue-300;
 	}
 }
 
@@ -448,9 +435,9 @@ path.MastodonM,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: var.$blue;
+	fill: var.$twcss-blue-600;
 	@media screen and (prefers-color-scheme: dark) {
-		fill: var.$blueLight;
+		fill: var.$twcss-blue-300;
 	}
 }
 
@@ -461,14 +448,14 @@ a:hover path.MastodonM,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var.$darkblue;
+	fill: var.$twcss-blue-700;
 	@media screen and (prefers-color-scheme: dark) {
-		fill: var.$blueFirst;
+		fill: var.$twcss-blue-200;
 	}
 }
 
 path.FirstLast {
-	fill: var.$grayArrow;
+	fill: var.$twcss-gray-400;
 }
 
 path.MastodonBody,
@@ -486,36 +473,36 @@ path.RSS {
 	}
 }
 
-a:hover circle.GitHub,
-a:hover path.Twitter,
-a:hover path.RSS,
-a:hover path.JSON,
-a:hover path.MastodonBody {
-	@media screen and (prefers-color-scheme: dark) {
-		fill: var.$white;
-	}
-}
+// a:hover circle.GitHub,
+// a:hover path.Twitter,
+// a:hover path.RSS,
+// a:hover path.JSON,
+// a:hover path.MastodonBody {
+// 	@media screen and (prefers-color-scheme: dark) {
+// 		fill: var.$white;
+// 	}
+// }
 
 details.comments > summary {
 	list-style: none;
 	color: var.$white;
 	border-radius: var.$btn_radius;
 	margin: 0 auto;
-	border: 1px solid var.$blue;
-	background-color: var.$blue;
+	border: 1px solid var.$twcss-blue-600;
+	background-color: var.$twcss-blue-600;
 	padding: 0.5em 0.25em;
 	width: 15em;
 	&:hover {
 		cursor: pointer;
-		background-color: var.$darkblue;
+		background-color: var.$twcss-blue-700;
 		@media screen and (prefers-color-scheme: dark) {
-			border: 1px solid var.$blueLightBtn;
-			background-color: var.$blueLightBtn;
+			border: 1px solid var.$twcss-blue-300;
+			background-color: var.$twcss-blue-300;
 		}
 	}
 	@media screen and (prefers-color-scheme: dark) {
-		border: 1px solid var.$code-color-blueLight-dark-mode;
-		background-color: var.$code-color-blueLight-dark-mode;
+		border: 1px solid var.$twcss-blue-100;
+		background-color: var.$twcss-blue-100;
 		color: var.$black;
 	}
 }
