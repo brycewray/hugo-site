@@ -1,39 +1,10 @@
-    {{- /* CSS/SCSS */ -}}
-    {{- /* - see https://github.com/gohugoio/hugo/issues/8343#issuecomment-1019383325 */ -}}
-    {{- $cssFontsLibreFranklin := "" -}}
-    {{- $cssFontsLibreFranklin = resources.Get "css/fonts_LibreFranklin.css" | resources.PostCSS -}}
-		{{- $optionsChromaFixAll := (dict "targetPath" "css/chroma_fix-all.css") -}}
-		{{- $optionsChromaFixAllComp := (dict "targetPath" "css/chroma_fix-all.min.css") -}}
-		{{- $cssChromaNativeTweaked := "" -}}
-		{{- $cssChromaNativeTweaked = resources.Get "css/chroma_native_tweaked.css" -}}
-		{{- $cssChromaFixAll := "" -}}
-		{{- $cssChromaFixAll = resources.Get "css/chroma_fix-all.css" -}}
     {{- if hugo.IsProduction -}}
-      {{- $cssFontsLibreFranklin = $cssFontsLibreFranklin | minify | fingerprint -}}
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFontsLibreFranklin.RelPermalink }}" crossorigin>
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFontsLibreFranklin.RelPermalink }}" type="text/css" crossorigin>
-			{{- if (findRE "<pre" .Content 1) -}}
-				{{- $cssChromaNativeTweaked = $cssChromaNativeTweaked | minify | fingerprint -}}
-				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}" crossorigin>
-				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css" crossorigin>
-				{{- $cssChromaFixAll = $cssChromaFixAll | minify | fingerprint -}}
-				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}" crossorigin>
-				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css" crossorigin>
-			{{- end }}
       {{ $styles := resources.Get "css/index.css" | resources.PostCSS }}
       {{ $styles = $styles | minify | fingerprint }}
-      {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
+      {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.prod.%v.css" now.UnixMilli) .}}
 			<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $styles.RelPermalink }}" crossorigin>
       <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} href="{{ $styles.RelPermalink }}" rel="stylesheet" />
     {{- else if .Site.IsServer -}}
-      <link rel="preload" as="style" href="{{ $cssFontsLibreFranklin.RelPermalink }}" crossorigin>
-      <link rel="stylesheet" href="{{ $cssFontsLibreFranklin.RelPermalink }}" type="text/css" crossorigin>
-			{{- if (findRE "<pre" .Content 1) -}}
-				<link rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}" crossorigin>
-				<link rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css" crossorigin>
-				<link rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}" crossorigin>
-				<link rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css" crossorigin>
-			{{- end }}
       {{ $styles := resources.Get "css/index.css" | resources.PostCSS }}
       {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
       <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
