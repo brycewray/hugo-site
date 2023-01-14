@@ -57,9 +57,9 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	background-color: var.$twcss-blue-100;
+	background-color: var.$twcss-gray-100;
 	@media (prefers-color-scheme: dark) {
-		background-color: #454545;
+		background-color: var.$twcss-gray-700;
 	}
 }
 article .footnotes code {
