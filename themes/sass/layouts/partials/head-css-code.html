@@ -1,0 +1,29 @@
+		{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+		{{- $cssChromaNativeTweaked := "" -}}
+		{{- $optionsChromaNativeTweaked := (dict "transpiler" "dartsass" "targetPath" "css/chroma_native_tweaked.css") -}}
+		{{- $optionsChromaNativeTweakedComp := merge $optionsChromaNativeTweaked $compOutput -}}
+
+		{{- $cssChromaFixAll := "" -}}
+		{{- $optionsChromaFixAll := (dict "transpiler" "dartsass" "targetPath" "css/chroma_fix-all.css") -}}
+		{{- $optionsChromaFixAllComp := merge $optionsChromaFixAll $compOutput -}}
+
+		{{- if hugo.IsProduction -}}
+			{{- if (findRE `(<pre|<code)` .Content 1) -}}
+				{{- $cssChromaNativeTweaked = resources.Get "scss/chroma_native_tweaked.scss" | resources.ToCSS $optionsChromaNativeTweakedComp | fingerprint "md5" -}}
+				{{- $cssChromaFixAll = resources.Get "scss/chroma_fix-all.scss" | resources.ToCSS $optionsChromaFixAllComp | fingerprint "md5" -}}
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}">
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css">
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}">
+				<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css">
+			{{- end }}
+		{{- else if .Site.IsServer -}}
+			{{- if (findRE `(<pre|<code)` .Content 1) -}}
+				{{- $cssChromaNativeTweaked = resources.Get "scss/chroma_native_tweaked.scss" | resources.ToCSS $optionsChromaNativeTweaked | fingerprint "md5" -}}
+				{{- $cssChromaFixAll = resources.Get "scss/chroma_fix-all.scss" | resources.ToCSS $optionsChromaFixAll | fingerprint "md5" -}}
+				<link rel="preload" as="style" href="{{ $cssChromaNativeTweaked.RelPermalink }}">
+				<link rel="stylesheet" href="{{ $cssChromaNativeTweaked.RelPermalink }}" type="text/css">
+				<link rel="preload" as="style" href="{{ $cssChromaFixAll.RelPermalink }}">
+				<link rel="stylesheet" href="{{ $cssChromaFixAll.RelPermalink }}" type="text/css">
+			{{- end }}
+		{{- end }}

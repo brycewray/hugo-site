@@ -12,7 +12,12 @@
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
-		{{ partialCached "head-css.html" . -}}
+		{{/* conditional CSS */}}
+		{{- partial "head-css-code.html" . }}
+		{{- partialCached "head-css-fonts.html" . }}
+		{{- partial "head-css-tables.html" . }}
+		{{- partial "head-css-lite-yt.html" . }}
+		{{- partialCached "head-css.html" . }}
     {{- if hugo.IsProduction }}
 		{{- /* Fathom script */}}
 		<script src="https://guitar-thriving.brycewray.com/script.js" data-site="UJDSNFVF" defer></script>

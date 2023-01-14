@@ -1,0 +1,19 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssLiteYT := "" -}}
+{{- $optionsLiteYT := (dict "transpiler" "dartsass" "targetPath" "css/lite-yt-embed.css") -}}
+{{- $optionsLiteYTComp := merge $optionsLiteYT $compOutput -}}
+
+{{- if hugo.IsProduction -}}
+	{{- if (findRE `<lite-youtube` .Content 1) -}}
+		{{- $cssLiteYT = resources.Get "scss/lite-yt-embed.scss" | resources.ToCSS $optionsLiteYTComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssLiteYT.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssLiteYT.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- else if .Site.IsServer -}}
+	{{- if (findRE `<lite-youtube` .Content 1) -}}
+		{{- $cssLiteYT = resources.Get "scss/lite-yt-embed.scss" | resources.ToCSS $optionsLiteYT | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssLiteYT.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssLiteYT.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}
