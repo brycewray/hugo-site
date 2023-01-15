@@ -56,7 +56,6 @@
 		}
 	}
 	p, li {
-		/* for handling Markdown-created <p> and <li>, as in `stoot.html` partial */
 		@apply mb-3 fluid-base !tracking-normal;
 	}
 	ul li, ul li li li {
