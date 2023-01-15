@@ -34,11 +34,11 @@
 					/>
 				</a>
 				<div class="flex flex-col flex-grow">
-					<a class="font-bold text-black dark:text-white leading-snug no-underline fluid-sm" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
-					<a class="text-gray-700 dark:text-gray-200 fluid-xs leading-none no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
+					<a class="font-bold text-black dark:text-white fluid-sm lg:fluid-base !leading-snug no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
+					<a class="text-gray-700 dark:text-gray-200 fluid-xs lg:fluid-sm !leading-none no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
 				</div>
 			</div>
-			{{ $json.content | safeHTML }}
+			<div class="toot-content">{{ $json.content | safeHTML }}</div>
 			{{ with $json.media_attachments }}
 				{{ range $media_attachments := . }}
 					{{ if eq $media_attachments.type "image" }}
@@ -126,13 +126,15 @@
 			{{ with $json.card }}
 				{{- $cardData := . -}}
 				{{- with $cardData.image -}}
-					<a href="{{ $cardData.url }}" rel="'noopener">
-						<div class="card">
-							<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="tweet-card-img" />
-							<p>
-								<span class="card-title">{{ $cardData.title }}</span><br />
-								{{ $cardData.description }}
-							</p>
+					<a href="{{ $cardData.url }}" rel="'noopener" class="no-underline decoration-transparent text-gray-700 dark:text-gray-300">
+						<div class="relative md:flex border border-gray-700 dark:border-gray-200 rounded-md mt-4 decoration-transparent overflow-hidden">
+							<div class="flex-100 md:flex-200 relative">
+								<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="block m-0 w-full h-full object-cover bg-cover bg-[50%]" />
+							</div>
+							<div class="flex-auto overflow-hidden p-3 leading-normal">
+								<p class="font-bold fluid-sm !tracking-normal !leading-normal">{{ $cardData.title }}</p>
+								<p class="fluid-xs !leading-normal !tracking-normal">{{ $cardData.description }}</p>
+							</div>
 						</div>
 					</a>
 				{{- end -}}
@@ -157,7 +159,7 @@
 					<p class="fluid-xs pt-4">{{ $votesCount }} votes</p>
 				{{ end }}
 			{{ end }}
-			<div class="mt-4 flex items-center text-gray-500 dark:text-gray-300 fluid-sm !tracking-tight">
+			<div class="mt-4 flex items-center text-gray-500 dark:text-gray-300 fluid-sm !tracking-normal">
 				<a class="text-gray-600 dark:text-gray-300 no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="fluid-xs">(UTC)</span>
 			</div>
 		</blockquote>

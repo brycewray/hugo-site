@@ -165,4 +165,13 @@
 			width: calc(100% - 3em);
 		}
 	}
+	.toot-content {
+		@apply mt-6;
+		& p {
+			@apply fluid-base lg:fluid-lg !tracking-normal !leading-snug my-4 text-left text-gray-800 dark:text-gray-200;
+		}
+		& .invisible {
+			@apply hidden;
+		}
+	}
 }
