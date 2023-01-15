@@ -123,6 +123,20 @@
 					{{ end }}
 				{{ end }}
 			{{ end }}
+			{{ with $json.card }}
+				{{- $cardData := . -}}
+				{{- with $cardData.image -}}
+					<a href="{{ $cardData.url }}" rel="'noopener">
+						<div class="card">
+							<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="tweet-card-img" />
+							<p>
+								<span class="card-title">{{ $cardData.title }}</span><br />
+								{{ $cardData.description }}
+							</p>
+						</div>
+					</a>
+				{{- end -}}
+			{{ end }}
 			{{ with $json.poll }}
 				{{ $poll := . }}
 				{{ with $poll.options }}
