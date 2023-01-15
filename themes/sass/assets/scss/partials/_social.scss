@@ -5,9 +5,9 @@
 $tc-corner-radius: 1em;
 $tc-padding: 1em;
 
-.tweet-card, .tweet-twitscrn {
+.toot-blockquote {
 	line-height: 1.35em; // for non-`p` results from $text
-	font-family: var.$twitter-sans-serif;
+	font-family: var.$social-sans-serif;
 	font-size: var.$stdsize;
 	@media screen and (min-width: var.$bkpt_md) {
 		font-size: var.$minimalbig;
@@ -61,32 +61,26 @@ $tc-padding: 1em;
 	}
 }
 
-.tweet-twitscrn {
-	@media screen and (prefers-color-scheme: dark) {
-		background: var.$white;
-	}
-}
-
-.tweet-body {
+.toot-body {
 	text-align: left !important;
 }
 
 // ==== rounded image "attachment"
 // Eleventy version
-.tweet-images {
+.toot-images {
 	img {
 		border-radius: 12px;
 	}
 }
 // Hugo version
-.tweet-media-img {
+.toot-media-img {
 	width: 100%; // overcoming something in Andy Bell's `reset`
 	height: auto;
 	aspect-ratio: 1;
 	object-fit: cover;
 }
 
-.tweet-card-img {
+.toot-blockquote-img {
 	border-bottom: 1px solid var.$twcss-gray-700;
 	@media screen and (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-300;
@@ -94,7 +88,7 @@ $tc-padding: 1em;
 	width: 100%;
 }
 
-.tweet-player {
+.toot-player {
 	display: flex;
 }
 
@@ -131,9 +125,9 @@ a > .card, a > .toot-card {
 }
 
 
-.tweet-header {
+.toot-header {
 	display: flex;
-	.tweet-profile {
+	.toot-profile {
 		margin-right: 0.5em;
 		margin-bottom: 1em;
 		flex-shrink: 0;
@@ -143,7 +137,7 @@ a > .card, a > .toot-card {
 			height: auto;
 		}
 	}
-	.tweet-author {
+	.toot-author {
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
@@ -164,13 +158,13 @@ a > .card, a > .toot-card {
 			font-size: var.$pokey;
 			line-height: 1;
 		}
-		.tweet-bird {
+		.toot-bird {
 			margin-left: 1.25rem;
 		}
 	}
 }
 
-.tweet-footer {
+.toot-footer {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
@@ -179,7 +173,7 @@ a > .card, a > .toot-card {
 	@media screen and (prefers-color-scheme: dark) {
 		color: var.$twcss-gray-200;
 	}
-	.tweet-like-icon, .tweet-like-count {
+	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
 	a {
@@ -189,16 +183,16 @@ a > .card, a > .toot-card {
 		}
 	}
 	/* === needed in Eleventy but not in Hugo
-	.tweet-date:after {
+	.toot-date:after {
 		content: " (UTC)";
 		font-size: var.$legal;
 	}
 	*/
 }
 
-[class^='tweet-img-grid'],
-.tweet-video-wrapper,
-.tweet-media-video {
+[class^='toot-img-grid'],
+.toot-video-wrapper,
+.toot-media-video {
 	margin-top: 0.5em;
 	border-radius: $tc-corner-radius;
 	overflow: hidden;
@@ -207,47 +201,47 @@ a > .card, a > .toot-card {
 	grid-gap: 2px;
 }
 
-.tweet-video-wrapper {
+.toot-video-wrapper {
 	border-radius: $tc-corner-radius;
 	display: block;
 	// overriding previous
 	position: relative;
 }
 
-.tweet-img-grid-3 {
+.toot-img-grid-3 {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.tweet-img-grid-3 .tweet-media-img {
+.toot-img-grid-3 .toot-media-img {
 	aspect-ratio: 1.8;
 }
 
-.tweet-img-grid-3 :nth-child(1) {
+.toot-img-grid-3 :nth-child(1) {
 	grid-row: 1 / span 2;
 	height: 100%;
 }
 
-.tweet-img-grid-3 :nth-child(1) .tweet-media-img {
+.toot-img-grid-3 :nth-child(1) .toot-media-img {
 	aspect-ratio: 0.9;
 }
 
-.tweet-img-grid-2,
-.tweet-img-grid-4 {
+.toot-img-grid-2,
+.toot-img-grid-4 {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.tweet-sens-blur {
+.toot-sens-blur {
 	filter: blur(5rem);
 	position: relative;
 }
 
-.tweet-sens-blur-no {
+.toot-sens-blur-no {
 	filter: none !important;
 	z-index: 9999 !important;
 	position: relative;
 }
 
-[class^='tweet-img-grid'] {
+[class^='toot-img-grid'] {
 	position: relative;
 }
 
@@ -268,7 +262,7 @@ a > .card, a > .toot-card {
 	background-color: black;
 }
 
-.tweet-poll {
+.toot-poll {
 	&-wrapper {
 		display: grid;
 		grid-template-columns: 3.5em 0.5fr 1fr;
@@ -293,7 +287,7 @@ a > .card, a > .toot-card {
 	}
 }
 
-.tweet-quoted-tweet {
+.toot-quoted-tweet {
 	border: 1px solid var.$twcss-gray-800;
 	@media screen and (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-200;
@@ -306,14 +300,14 @@ a > .card, a > .toot-card {
 		font-size: var.$pokey;
 		margin: 0 0 0.5em;
 		line-height: 1.4;
-		.tweet-quoted-tweet-profile-image {
+		.toot-quoted-toot-profile-image {
 			border-radius: 9999px;
 			width: 18px;
 			height: auto;
 			display: inline;
 		}
 	}
-	p.tweet-quoted-tweet-head {
+	p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
 		a {
 			color: var.$twcss-gray-800;
@@ -330,7 +324,7 @@ a > .card, a > .toot-card {
 	}
 }
 
-.tweet-reply-to {
+.toot-reply-to {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
@@ -339,7 +333,7 @@ a > .card, a > .toot-card {
 	@media screen and (prefers-color-scheme: dark) {
 		color: var.$twcss-gray-200;
 	}
-	.tweet-like-icon, .tweet-like-count {
+	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
 }

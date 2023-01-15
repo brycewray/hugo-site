@@ -173,13 +173,14 @@ curl "https://mastodon.social/api/v1/statuses/108335994944738270"
 
 So, now that you know what we're seeking (and its data structure, if you toggled that to the "open" display), let's use Hugo's [`getJSON` function](https://gohugo.io/templates/data-templates/#get-remote-data) to fetch it.
 
+**Update from the future**: The original version of this code used the [`getJSON` function](https://gohugo.io/templates/data-templates/#get-remote-data) but, a few weeks later, I [learned]([comment](https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687/4)) that it was better to use [`resources.GetRemote`](https://gohugo.io/hugo-pipes/introduction/#get-resource-with-resourcesget-and-resourcesgetremote), instead; so that's what the code now shows.
+{.box}
+
 ### The code
 
-I call this Hugo shortcode `stoot.html` because it displays *static toots*, just as I previously named `stweet.html` for *static tweets*. Call your version whatever you want, of course.
+I call this Hugo shortcode `stoot.html` because it displays *static toots*, just as I previously named `stweet.html` for *static tweets*. Call your version whatever you want, of course.[^styling]
 
-You'll quickly see that I took advantage of the visual similarities between tweets and toots by recycling many of the CSS classes I used in styling `stweet.html`; I also created a few more while I was at it.[^styling]
-
-[^styling]: As was the case with `stweet.html`, the best way for you to figure out how the styling works is to use your browser's Inspector tool on the toot example herein as well as the static tweets you'll find scattered throughout the site. (You also can check the [site repo](https://github.com/brycewray/hugo_site), of course.)
+[^styling]: The best way for you to figure out how the styling works is to use your browser's Inspector tool on the toot example herein as well as the static tweets you'll find scattered throughout the site. (You also can check the [site repo](https://github.com/brycewray/hugo_site), of course.)
 
 ```go-html-template
 {{ $masIns := .Get 0 }}
@@ -191,154 +192,164 @@ You'll quickly see that I took advantage of the visual similarities between twee
 {{ $votesCount := 0 }}
 {{ $id := .Get 1 }}
 {{ $urlToGet := print "https://" $masIns "/api/v1/statuses/" $id }}
-{{ $json := getJSON $urlToGet }}
-{{ $jsonHolder := $json }}{{/* Being safe */}}
 
-{{ if isset $json "account" }}
-	{{ $tootLink = print "https://" $masIns "@" $json.account.acct "/status/" $id }}
-	{{ $handleInst = print "@" $json.account.acct "@" $masIns }}
-{{ end }}
+{{- with resources.GetRemote $urlToGet  -}}
+	{{ if (resources.GetRemote $urlToGet).Err }}
+		<blockquote class="toot-blockquote">
+			<p class="ctr legal">[Source not online<br />
+			at time of site build.]</p>
+		</blockquote>
+	{{ else }}
+		{{ $json := unmarshal .Content }}
+		{{ $jsonHolder := $json }}{{/* Being safe */}}
 
-{{ if isset $json "content" }}
-	<blockquote class="tweet-card" cite="{{ $tootLink }}">
-		<div class="tweet-header">
-			<a class="tweet-profile twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
-				<img
-					src="{{ $json.account.avatar }}"
-					alt="Mastodon avatar for {{ $handleInst }}"
-					loading="lazy"
-				/>
-			</a>
-			<div class="tweet-author">
-				<a class="tweet-author-name twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
-				<a class="tweet-author-handle twitterExt" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
-			</div>
-		</div>
-		<p class="tweet-body">
-			{{ $json.content | safeHTML }}
-		</p>
-		{{ with $json.media_attachments }}
-			{{ range $media_attachments := . }}
-				{{ if eq $media_attachments.type "image" }}
-					{{ $imageCount = (add ($imageCount) 1) }}
+		{{ if isset $json "account" }}
+			{{ $tootLink = print "https://" $masIns "@" $json.account.acct "/status/" $id }}
+			{{ $handleInst = print "@" $json.account.acct "@" $masIns }}
+		{{ end }}
+
+		{{ if isset $json "content" }}
+			<blockquote class="toot-blockquote" cite="{{ $tootLink }}">
+				<div class="toot-header">
+					<a class="toot-profile" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
+						<img
+							src="{{ $json.account.avatar }}"
+							alt="Mastodon avatar for {{ $handleInst }}"
+							loading="lazy"
+						/>
+					</a>
+					<div class="toot-author">
+						<a class="toot-author-name" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
+						<a class="toot-author-handle" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
+					</div>
+				</div>
+				{{ $json.content | safeHTML }}
+				{{ with $json.media_attachments }}
+					{{ range $media_attachments := . }}
+						{{ if eq $media_attachments.type "image" }}
+							{{ $imageCount = (add ($imageCount) 1) }}
+						{{ end }}
+					{{ end }}
+					<div class="toot-img-grid-{{ $imageCount }}">
+					{{ range $media_attachments := . }}
+						{{ if eq $media_attachments.type "image" }}
+							{{ $mediaMD5 = md5 $media_attachments.url }}
+							<style>
+								.img-{{ $mediaMD5 }} {
+									aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+								}
+							</style>
+							<img
+								src="{{ $media_attachments.url }}"
+								alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
+								class="toot-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} toot-sens-blur{{ end }}"
+								loading="lazy"
+								{{- if $json.sensitive }}onclick="this.classList.toggle('toot-sens-blur-no')"{{- end }}
+							/>
+							{{- if $json.sensitive -}}
+								<div class="blur-text">
+									Sensitive content<br />
+									(flagged&nbsp;at&nbsp;origin)
+								</div>
+							{{- end -}}
+						{{ end }}
+					{{ end }}
+					</div>
+					{{/*
+						N.B.:
+						The above results in an empty, no-height div
+						when there's no image but there **is**
+						at least one item in `$media_attachments`.
+						Unfortunately, it seems to be the only way
+						to accomplish this. Not a good HTML practice,
+						but gets the job done.
+					*/}}
+					{{ range $media_attachments := . }}
+						{{ if eq $media_attachments.type "video" }}
+							{{ $mediaMD5 = md5 $media_attachments.url }}
+							<style>
+								.img-{{ $mediaMD5 }} {
+									aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+								}
+							</style>
+							<div class="ctr toot-video-wrapper">
+								<video muted playsinline controls class="ctr toot-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} toot-sens-blur{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('toot-sens-blur-no')"{{- end }}>
+									<source src="{{ $media_attachments.url }}">
+									<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+								</video>
+								{{- if $json.sensitive -}}
+									<div class="blur-text">
+										Sensitive content<br />
+										(flagged&nbsp;at&nbsp;origin)
+									</div>
+								{{- end -}}
+							</div>
+						{{ end }}
+						{{ if eq $media_attachments.type "gifv" }}
+							{{ $mediaMD5 = md5 $media_attachments.url }}
+							<style>
+								.img-{{ $mediaMD5 }} {
+									aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
+								}
+							</style>
+							<div class="ctr toot-video-wrapper">
+								<video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr toot-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} toot-sens-blur{{ end }}" {{- if $json.sensitive }}onclick="this.classList.toggle('toot-sens-blur-no')"{{- end }}>
+									<source src="{{ $media_attachments.url }}">
+									<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+								</video>
+								{{- if $json.sensitive -}}
+									<div class="blur-text">
+										Sensitive content<br />
+										(flagged&nbsp;at&nbsp;origin)
+									</div>
+								{{- end -}}
+							</div>
+						{{ end }}
+					{{ end }}
 				{{ end }}
-			{{ end }}
-			<div class="tweet-img-grid-{{ $imageCount }}">
-			{{ range $media_attachments := . }}
-				{{ if eq $media_attachments.type "image" }}
-					{{ $mediaMD5 = md5 $media_attachments.url }}
-					<style>
-						.img-{{ $mediaMD5 }} {
-							aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
-						}
-					</style>
-					<img
-						src="{{ $media_attachments.url }}"
-						alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
-						class="tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"
-						loading="lazy"
-						{{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}
-					/>
-					{{- if $json.sensitive -}}
-						<div class="blur-text">
-							Sensitive content<br />
-							(flagged&nbsp;at&nbsp;origin)
-						</div>
+				{{ with $json.card }}
+					{{- $cardData := . -}}
+					{{- with $cardData.image -}}
+						<a href="{{ $cardData.url }}" rel="'noopener">
+							<div class="toot-card">
+								<div class="toot-card-image">
+									<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="toot-card-image-image" />
+								</div>
+								<div class="toot-card-content">
+									<p class="card-title">{{ $cardData.title }}</p>
+									<p class="card-description">{{ $cardData.description }}</p>
+								</div>
+							</div>
+						</a>
 					{{- end -}}
 				{{ end }}
-			{{ end }}
-			</div>
-			{{/*
-				N.B.:
-				The above results in an empty, no-height div
-				when there's no image but there **is**
-				at least one item in `$media_attachments`.
-				Unfortunately, it seems to be the only way
-				to accomplish this. Not a good HTML practice,
-				but gets the job done.
-			*/}}
-			{{ range $media_attachments := . }}
-				{{ if eq $media_attachments.type "video" }}
-					{{ $mediaMD5 = md5 $media_attachments.url }}
-					<style>
-						.img-{{ $mediaMD5 }} {
-							aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
-						}
-					</style>
-					<div class="ctr tweet-video-wrapper">
-						<video muted playsinline controls class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
-							<source src="{{ $media_attachments.url }}">
-							<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
-						</video>
-						{{- if $json.sensitive -}}
-							<div class="blur-text">
-								Sensitive content<br />
-								(flagged&nbsp;at&nbsp;origin)
-							</div>
-						{{- end -}}
-					</div>
-				{{ end }}
-				{{ if eq $media_attachments.type "gifv" }}
-					{{ $mediaMD5 = md5 $media_attachments.url }}
-					<style>
-						.img-{{ $mediaMD5 }} {
-							aspect-ratio: {{ $media_attachments.meta.original.width }} / {{ $media_attachments.meta.original.height }};
-						}
-					</style>
-					<div class="ctr tweet-video-wrapper">
-						<video loop autoplay muted playsinline controls controlslist="nofullscreen" class="ctr tweet-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} tweet-sens-blur{{ end }}" {{- if $json.sensitive }}onclick="this.classList.toggle('tweet-sens-blur-no')"{{- end }}>
-							<source src="{{ $media_attachments.url }}">
-							<p class="legal ctr">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
-						</video>
-						{{- if $json.sensitive -}}
-							<div class="blur-text">
-								Sensitive content<br />
-								(flagged&nbsp;at&nbsp;origin)
-							</div>
-						{{- end -}}
-					</div>
-				{{ end }}
-			{{ end }}
-		{{ end }}
-		{{ with $json.card }}
-			{{- $cardData := . -}}
-			{{- with $cardData.image -}}
-				<a href="{{ $cardData.url }}" rel="'noopener">
-					<div class="card">
-						<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="tweet-card-img" />
-						<p>
-							<span class="card-title">{{ $cardData.title }}</span><br />
-							{{ $cardData.description }}
-						</p>
-					</div>
-				</a>
-			{{- end -}}
-		{{ end }}
-		{{ with $json.poll }}
-			{{ $poll := . }}
-			{{ with $poll.options }}
-				{{ range $pollOptions := . }}
-					{{ $votesCount = add $votesCount  $pollOptions.votes_count }}
-				{{ end }}
-				<div class="tweet-poll-wrapper">
-					{{ range $pollOptions := . }}
-						<div class="tweet-poll-count">
-							<strong>{{ (mul 100 (div $pollOptions.votes_count $votesCount)) | lang.FormatPercent 1 }}</strong>
+				{{ with $json.poll }}
+					{{ $poll := . }}
+					{{ with $poll.options }}
+						{{ range $pollOptions := . }}
+							{{ $votesCount = add $votesCount  $pollOptions.votes_count }}
+						{{ end }}
+						<div class="toot-poll-wrapper">
+							{{ range $pollOptions := . }}
+								<div class="toot-poll-count">
+									<strong>{{ (mul 100 (div $pollOptions.votes_count $votesCount)) | lang.FormatPercent 1 }}</strong>
+								</div>
+								<div class="toot-poll-meter">
+									<meter id="vote-count" max="{{ $votesCount }}" value="{{ $pollOptions.votes_count }}"></meter>
+								</div>
+								<div class="toot-poll-title">{{ $pollOptions.title }}</div>
+							{{ end }}
 						</div>
-						<div class="tweet-poll-meter">
-							<meter id="vote-count" max="{{ $votesCount }}" value="{{ $pollOptions.votes_count }}"></meter>
-						</div>
-						<div class="tweet-poll-title">{{ $pollOptions.title }}</div>
+						<p class="legal toot-poll-total">{{ $votesCount }} people</p>
 					{{ end }}
+				{{ end }}
+				<div class="toot-footer">
+					<a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="toot-date" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
 				</div>
-				<p class="legal">{{ $votesCount }} votes</p>
-			{{ end }}
+			</blockquote>
 		{{ end }}
-		<div class="tweet-footer">
-			<a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="tweet-date twitterExt" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
-		</div>
-	</blockquote>
-{{ end }}
+	{{ end }}
+{{- end -}}
 ```
 
 Once this is in place in your project's location for shortcodes, invoke it from within your Markdown like this:

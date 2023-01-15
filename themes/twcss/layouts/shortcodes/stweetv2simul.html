@@ -123,12 +123,12 @@
 	<!-- p class="pokey">{{ $textBefore }}</ !-->
 	<blockquote class="tweet-card" cite="{{ $tweetLink }}">
 		<div class="tweet-header">
-			<a class="tweet-profile twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">
+			<a class="tweet-profile" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">
 				<img src="{{ $json.user.profile_image_url_https }}" alt="Twitter avatar for {{ $json.user.screen_name}}" loading="lazy" />
 			</a>
 			<div class="tweet-author">
-				<a class="tweet-author-name twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">{{ $json.user.name }}</a>
-				<a class="tweet-author-handle twitterExt" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">@{{ $json.user.screen_name}}</a>
+				<a class="tweet-author-name" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">{{ $json.user.name }}</a>
+				<a class="tweet-author-handle" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">@{{ $json.user.screen_name}}</a>
 			</div>
 		</div>
 		{{- if ne $RT_text "" -}}
@@ -156,7 +156,7 @@
 				{{- with $json.quoted_tweet -}}
 					{{- $quoted_tweet := . -}}
 					<div class="tweet-quoted-tweet">
-						<p class="pokey tweet-quoted-tweet-head"><img class="tweet-quoted-tweet-profile-image" src="{{ $quoted_tweet.user.profile_image_url_https }}" />&nbsp;<strong>{{ $quoted_tweet.user.name }}</strong> @{{ $quoted_tweet.user.screen_name }} &bull; <a href="https://twitter.com/{{ $quoted_tweet.user.screen_name }}/status/{{ $quoted_tweet.id_str }}" class="tweet-date twitterExt" rel="noopener">{{ dateFormat "January 2, 2006" $quoted_tweet.created_at }}</a> <span class="legal">(UTC)</span></p>
+						<p class="pokey tweet-quoted-tweet-head"><img class="tweet-quoted-tweet-profile-image" src="{{ $quoted_tweet.user.profile_image_url_https }}" />&nbsp;<strong>{{ $quoted_tweet.user.name }}</strong> @{{ $quoted_tweet.user.screen_name }} &bull; <a href="https://twitter.com/{{ $quoted_tweet.user.screen_name }}/status/{{ $quoted_tweet.id_str }}" class="tweet-date" rel="noopener">{{ dateFormat "January 2, 2006" $quoted_tweet.created_at }}</a> <span class="legal">(UTC)</span></p>
 						<p>{{ $currentPage.RenderString $QT_text }}</p>
 					</div>
 				{{- end }}
