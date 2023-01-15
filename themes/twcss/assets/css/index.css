@@ -19,7 +19,7 @@
 		@apply pb-4;
 	}
 	b, strong {
-		@apply font-semibold dark:font-darksemibold;
+		@apply font-semibold;
 	}
 	h1, .h1 {
 		@apply fluid-3xl mb-4;
@@ -37,7 +37,7 @@
 		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
 	}
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-		@apply !tracking-tight font-semibold dark:font-darksemibold;
+		@apply !tracking-tight font-semibold;
 	}
 	a {
 		@apply underline underline-offset-[0.225em] decoration-[0.05rem] text-blue-700 dark:text-blue-300;

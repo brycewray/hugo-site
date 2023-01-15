@@ -12,7 +12,7 @@
 
 			{{ range $paginator.Pages }}
       <div class="font-sans">
-        <h2 class="fluid-xl !tracking-tight !leading-normal font-semibold dark:font-darksemibold lg:text-[2rem] 2xl:text-4xl mb-2"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <h2 class="fluid-xl !tracking-tight !leading-normal font-semibold lg:text-[2rem] 2xl:text-4xl mb-2"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="fluid-lg !tracking-normal !leading-snug mt-2 mb-2">
           {{ .Description }}
         </p>

@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+// const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -19,11 +19,11 @@ module.exports = {
 			// 	'ml': '960px',
 			// 	'3xl': '1920px',
 			// },
-			fontWeight: {
-				'darknormal': 375,
-				'darksemibold': 575,
-				'darkbold': 675,
-			},
+			// fontWeight: {
+			// 	'darknormal': 375,
+			// 	'darksemibold': 575,
+			// 	'darkbold': 675,
+			// },
 			fontSize: {
 				'fn': '.65rem',
 			},
