@@ -9,7 +9,7 @@
 
 {{- with resources.GetRemote $urlToGet  -}}
 {{ if (resources.GetRemote $urlToGet).Err }}
-	<blockquote class="leading-snug fluid-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-600 w-full md:w-[80%] 3xl:w-[80ch]">
+	<blockquote class="leading-snug fluid-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-600 w-full md:w-[80%]">
 		<p class="text-center text-fn">[Source not online<br />
 		at time of site build.]</p>
 	</blockquote>
@@ -23,7 +23,7 @@
 	{{ end }}
 
 	{{ if isset $json "content" }}
-		<blockquote class="leading-snug !tracking-tight fluid-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-900 w-full md:w-[80%] 3xl:w-[80ch]" cite="{{ $tootLink }}">
+		<blockquote class="leading-snug !tracking-tight fluid-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-900 w-full md:w-[80%]" cite="{{ $tootLink }}">
 			<div class="flex">
 				<a class="mr-2 flex-shrink-0 no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
 					<img

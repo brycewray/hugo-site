@@ -15,10 +15,10 @@ module.exports = {
 				'100': '0 0 100px',
 				'200': '0 0 200px',
 			},
-			screens: {
-				'ml': '960px',
-				'3xl': '1920px',
-			},
+			// screens: {
+			// 	'ml': '960px',
+			// 	'3xl': '1920px',
+			// },
 			fontWeight: {
 				'darknormal': 375,
 				'darksemibold': 575,
