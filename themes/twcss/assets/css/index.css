@@ -104,6 +104,12 @@
 			@apply border-solid border-zinc-900 dark:border-zinc-100;
 		}
 	}
+	sub, sup {
+		@apply text-fn;
+	}
+	sup {
+		@apply -top-[0.75em];
+	}
 	.footnotes {
 		@apply pt-[0.5em];
 		& hr {
