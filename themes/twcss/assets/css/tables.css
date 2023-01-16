@@ -1,7 +1,3 @@
-table {
-	font-family: sans-serif;
-}
-
 table.leagues {
 	width: 90%;
 	margin-top: 1em;
@@ -53,7 +49,7 @@ table.noborders td img {
 }
 
 table.noborders tr {
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+  background-color: white;
 }
 
 table.noborders tr:nth-child(even) {
