@@ -3,7 +3,7 @@
       {{ $styles = $styles | minify | fingerprint }}
       {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.prod.%v.css" now.UnixMilli) .}}
 			<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $styles.RelPermalink }}" crossorigin>
-      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+      <link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} href="{{ $styles.RelPermalink }}" rel="stylesheet" crossorigin />
     {{- else if .Site.IsServer -}}
       {{ $styles := resources.Get "css/index.css" | resources.PostCSS }}
       {{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}

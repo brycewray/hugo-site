@@ -13,7 +13,7 @@
 			{{ range $paginator.Pages }}
       <div>
         <h2 class="fluid-xl !leading-tight !tracking-tight lg:text-[2rem] 2xl:text-4xl mb-2"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="fluid-lg !tracking-normal mt-2 mb-2">
+        <p class="fluid-lg !tracking-tight mt-2 mb-2">
           {{ .Description }}
         </p>
         <p class="fluid-base !tracking-normal mt-0 mb-8">

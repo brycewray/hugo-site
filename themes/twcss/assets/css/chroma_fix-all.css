@@ -41,14 +41,6 @@ pre[class*="language-"] {
 	white-space: normal;
 }
 
-.highlight {
-  font-size: 0.8em; /* for Roboto Mono as compared to Public Sans */
-}
-
-.highlight .chroma {
-	font-size: 1.35em;
-}
-
 article code {
   font-size: 0.9em;
 	background-color: #eff6ff;
@@ -57,6 +49,19 @@ article code {
 article blockquote code {
   color: #494d50;
 }
+/*
+.highlight {
+  font-size: 0.8em;
+}
+
+.highlight .chroma {
+	font-size: 1.1rem;
+}
+@media screen and (min-width: 1280px) {
+	.highlight .chroma {
+		font-size: 1.35rem;
+	}
+} */
 
 /* === for copy-code-to-clipboard */
 

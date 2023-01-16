@@ -34,8 +34,8 @@
 					/>
 				</a>
 				<div class="flex flex-col flex-grow">
-					<a class="font-bold text-black dark:text-white fluid-sm lg:fluid-base no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
-					<a class="text-gray-700 dark:text-gray-200 fluid-xs lg:fluid-sm !leading-none no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
+					<a class="font-bold text-black dark:text-white fluid-sm lg:fluid-base !tracking-normal no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
+					<a class="text-gray-700 dark:text-gray-200 fluid-xs lg:fluid-sm !leading-none !tracking-normal no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
 				</div>
 			</div>
 			<div class="toot-content">{{ $json.content | safeHTML }}</div>

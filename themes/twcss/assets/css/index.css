@@ -37,7 +37,7 @@
 		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
 	}
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-		@apply !tracking-tight font-semibold;
+		@apply font-semibold;
 	}
 	a {
 		@apply underline underline-offset-[0.225em] decoration-[0.05rem] text-blue-700 dark:text-blue-300;
@@ -56,7 +56,7 @@
 		}
 	}
 	p, li {
-		@apply mb-3 fluid-base !tracking-normal;
+		@apply mb-3 fluid-base;
 	}
 	ul li, ul li li li {
 		@apply list-disc;
@@ -72,13 +72,13 @@
 	}
 	article {
 		h1, h2, h3, h4 {
-			@apply mt-8 mb-6;
+			@apply mt-8 mb-6 !tracking-tight;
 		}
 		p {
 			@apply mt-6 mb-6;
 		}
 		p, li {
-			@apply lg:fluid-lg !leading-relaxed;
+			@apply lg:fluid-lg !leading-normal !tracking-normal;
 		}
 		ul {
 			li li, li li li, li li li li {
@@ -87,15 +87,6 @@
 		}
 		hr + ul {
 			@apply mt-4;
-		}
-		.red {
-			@apply text-red-700 dark:text-red-300;
-		}
-		.pokey {
-			@apply fluid-sm !tracking-normal;
-		}
-		img.containedImage, picture img {
-			@apply min-w-full max-w-full w-full h-auto;
 		}
 		blockquote {
 			@apply px-6 text-zinc-700 dark:text-zinc-400 border-l-4 border-zinc-400;
@@ -108,7 +99,7 @@
 		@apply text-fn;
 	}
 	sup {
-		@apply -top-[0.75em];
+		@apply -top-[0.45em] lg:-top-[0.8em];
 	}
 	.footnotes {
 		@apply pt-[0.5em];
@@ -137,8 +128,17 @@
 	a.footnote-return {
 		font-size: 50%;
 	}
+}
+
+@layer utilities {
+	img.containedImage, picture img {
+		@apply min-w-full max-w-full w-full h-auto;
+	}
+	.nobrk {
+		@apply whitespace-nowrap;
+	}
 	.box {
-		@apply fluid-sm !tracking-normal block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-6 mb-2;
+		@apply fluid-sm block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-6 mb-2;
 		& p {
 			@apply p-0 m-0;
 		}
@@ -158,7 +158,13 @@
 		animation: fadeIn 750ms ease-in-out;
 	}
 	.imgcCaption, .imgCaption, .lazypicturecaption {
-		@apply p-0 mbs-2 leading-snug fluid-xs text-center;
+		@apply p-0 mbs-2 fluid-xs lg:fluid-sm !leading-snug text-center;
+	}
+	.red {
+		@apply text-red-800 dark:text-red-400;
+	}
+	.pokey {
+		@apply text-xs;
 	}
 	.legal {
 		@apply fluid-xs;
@@ -171,15 +177,12 @@
 		}
 	}
 	.toot-content {
-		@apply mt-6;
-		& p {
-			@apply fluid-base lg:fluid-lg !tracking-normal !leading-snug my-4 text-left text-gray-800 dark:text-gray-200;
+		@apply text-gray-900 dark:text-gray-100;
+		& .invisible{
+			@apply text-[0pt] leading-[0] block w-0 h-0;
 		}
-		& .invisible {
-			@apply hidden;
+		& .ellipsis::after {
+			content: "...";
 		}
-	}
-	.nobrk {
-		@apply whitespace-nowrap;
 	}
 }
