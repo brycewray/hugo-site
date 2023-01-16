@@ -179,4 +179,7 @@
 			@apply hidden;
 		}
 	}
+	.nobrk {
+		@apply whitespace-nowrap;
+	}
 }
