@@ -107,6 +107,6 @@ Woof.
 > If you are a fan of, or contemplating using, iA Writer, I recommend @BryceWrayTX blog post. While our workflows are different, our ends and opinions are the same!
 >
 > [brycewray.com/posts/2019/02 ...](https://www.brycewray.com/posts/2019/02/ia-for-io/)\
-> <span class="legal">11:00 PM • February 12, 2019 (UTC)</span>
+> <span class="pokey">11:00 PM • February 12, 2019 (UTC)</span>
 
 <!-- https://twitter.com/RosserWrites/status/1095457720709263360 -->

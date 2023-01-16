@@ -428,7 +428,7 @@ Lastly, we get to "mentions." *This* is where the `sort` became weird. Try as I 
 												<img class="webmention__author__photo u-photo" src="{{ $children.author.photo }}" alt="{{ $children.author.name }}">
 												<strong class="p-name">{{ $children.author.name }}</strong>
 											</a>&nbsp;
-											<span class="legal">
+											<span class="pokey">
 												<time class="webmention__pubdate dt-published" datetime="{{ $children.published }}">{{ $children.published | dateFormat "Jan 2, 2006 15:04:05" }} (UTC)</time>
 											</span>
 										</div>

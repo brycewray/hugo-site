@@ -213,7 +213,7 @@ While we're on the subject of speed: while I was working on this post, I saw thi
 >
 > (Spoiler: [@____lighthouse](https://twitter.com/____lighthouse)
  reports 8.5MB of HTML wins by about 200ms)\
-> <span class="legal">3:38 PM • September 6, 2019 (UTC)</span>
+> <span class="pokey">3:38 PM • September 6, 2019 (UTC)</span>
 <!-- https://twitter.com/zachleat/status/1169998370041208832-->
 
 React. Hmm. Wonder whom he might be zinging there? Good job, sir. Given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.

@@ -15,7 +15,7 @@ date: 2022-05-22T15:02:00-05:00
 As I tweeted earlier:
 
 > Gave up on the #IndieWeb thing in 2020; trying again. Different code base this time, so we’ll see if I’ve got everything stitched together properly. 🤔\
-> <span class="legal">6:43 PM • May 22, 2022 (UTC)</span>
+> <span class="pokey">6:43 PM • May 22, 2022 (UTC)</span>
 
 I even wrote a five-part **series** on incorporating [webmentions](https://indieweb.org/Webmention) on one's website back in April, 2020 (*e.g.*, [Part I](/posts/2020/04/webmentions-three-ssgs-1/)), but a few months later --- perhaps due to some uncertainty about how well [IndieWeb](https://indieweb.org) stuff was jibing with online privacy concerns --- dropped them from *this* site. So, when I decided earlier today to take another go at it, I had to dig back and find all the code from back then. (Thank Git for source-control history!)
 

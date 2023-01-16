@@ -258,7 +258,7 @@ It wasn't worth it.
 Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 > Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest\
-> <span class="legal">6:05 PM • July 13, 2019 (UTC)</span>
+> <span class="pokey">6:05 PM • July 13, 2019 (UTC)</span>
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 

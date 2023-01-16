@@ -46,7 +46,7 @@ A follow-up to something I [mentioned](/posts/2022/02/shameless-plug-time/) a fe
 > Modesty requires that I tell you: it was the good folks at @CloudCannon who picked that title. 😄\
 > \
 > That said, I share their hope that the article will clear up some of the seeming mystery around these particular aspects of web development with @GoHugoIO.\
-> <span class="legal">11:23 PM • March 10, 2022 (UTC)</span>
+> <span class="pokey">11:23 PM • March 10, 2022 (UTC)</span>
 
 And there’s more to come in the near future.
 

@@ -344,7 +344,7 @@ I call this Hugo shortcode `stoot.html` because it displays *static toots*, just
 					{{ end }}
 				{{ end }}
 				<div class="toot-footer">
-					<a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="toot-date" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
+					<a href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" class="toot-date" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="pokey">(UTC)</span>
 				</div>
 			</blockquote>
 		{{ end }}

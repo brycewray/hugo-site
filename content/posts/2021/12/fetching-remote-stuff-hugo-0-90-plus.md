@@ -20,7 +20,7 @@ My initial reaction was: well, that’s surely cool, but I doubt I’ll ever nee
 > Any kind of files really, but a full fledged fetch like API is really what I was waiting for.
 >
 > And boy am I 🤩.\
-> <span class="legal">9:21 PM • December 10, 2021 (UTC)</span>
+> <span class="pokey">9:21 PM • December 10, 2021 (UTC)</span>
 <!-- https://twitter.com/regisphilibert/status/1469417024518565900 -->
 
 And, lo and behold, it hit me this morning: this new ability by Hugo to fetch remote stuff meant, now, I could use [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs) in my image-handling shortcode (most recently described in “[Go big or Go home? The sequel](/posts/2021/11/go-big-go-home-sequel/)”).

@@ -189,7 +189,7 @@ module.exports = async (instance, id) => {
 			let formattedTime = DateTime.fromISO(timeToFormat, { zone: "utc" }).toFormat("h:mm a • MMM d, yyyy")
 
 			stringToRet += `<div class="tweet-footer">
-				<a href="https://${instance}/@${Json.account.acct}/${Json.id}" class="tweet-date twitterExt" rel="noopener">${formattedTime}</a>&nbsp;<span class="legal">(UTC)</span>
+				<a href="https://${instance}/@${Json.account.acct}/${Json.id}" class="tweet-date twitterExt" rel="noopener">${formattedTime}</a>&nbsp;<span class="pokey">(UTC)</span>
 			</div>
 		</blockquote>`
 	}

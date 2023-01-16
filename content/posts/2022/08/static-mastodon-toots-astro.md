@@ -163,7 +163,7 @@ if (Json.poll !== null) {
 			<div set:html={pollStuff}></div>
 		}
 		<div class="tweet-footer">
-			<a href=`https://${instance}/@${Json.account.acct}/${Json.id}` class="tweet-date twitterExt" rel="noopener">{format(new Date(Json.created_at), "MMMM d, yyyy • h:mm aa")}</a>&nbsp;<span class="legal">(UTC)</span>
+			<a href=`https://${instance}/@${Json.account.acct}/${Json.id}` class="tweet-date twitterExt" rel="noopener">{format(new Date(Json.created_at), "MMMM d, yyyy • h:mm aa")}</a>&nbsp;<span class="pokey">(UTC)</span>
 		</div>
 	</blockquote>
 }

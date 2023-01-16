@@ -10,34 +10,34 @@ date: 2019-08-25T10:45:00-05:00
 "Initially, the defendant made the following assertions:"
 
 > Can’t totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to @DuckDuckGo. #UnGoogle\
-> <span class="legal">10:28 PM • June 15, 2019 (UTC)</span>
+> <span class="pokey">10:28 PM • June 15, 2019 (UTC)</span>
 
 ".&nbsp;.&nbsp;. and .&nbsp;.&nbsp;."
 
 > Deleted my personal Google account today. We still have a couple accounts in the family for necessity (contacts, access to a gifted Google Home Mini, etc.), but the main one is gone. Facebook last fall, Google now. The disengagement continues.\
-> <span class="legal">10:00 PM • June 23, 2019 (UTC)</span>
+> <span class="pokey">10:00 PM • June 23, 2019 (UTC)</span>
 
 ".&nbsp;.&nbsp;. followed a few weeks later by .&nbsp;.&nbsp;."
 
 > Just started using this on my site. Interesting stuff so far, and I love how it requires ZERO tracking code.\
 > \
 > Netlify Analytics | Netlify netlify.com/products/analytics/\
-> <span class="legal">6:23 PM • July 13, 2019 (UTC)</span>
+> <span class="pokey">6:23 PM • July 13, 2019 (UTC)</span>
 
 "Unfortunately, your honor, this seemingly noble and well-intentioned course of action was derailed yesterday, as shown here&nbsp;.&nbsp;.&nbsp;."
 
 > Full disclosure: I dumped my long-standing @Google account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. #PragmaticButNotProud\
-> <span class="legal">6:19 PM • August 24, 2019 (UTC)</span>
+> <span class="pokey">6:19 PM • August 24, 2019 (UTC)</span>
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
 > …one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things—and, while you can use it as a &ldquo;guest,&quot; that&rsquo;s not ideal (by design, of course).\
-> <span class="legal">6:22 PM • August 24, 2019 (UTC)</span>
+> <span class="pokey">6:22 PM • August 24, 2019 (UTC)</span>
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
 > Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics — former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it.\
-> <span class="legal">8:16 PM • August 24, 2019 (UTC)</span>
+> <span class="pokey">8:16 PM • August 24, 2019 (UTC)</span>
 
 “--- and, as the defendant surmised in this most recent exhibit before the court, he did indeed end up stopping the usage of the tracking-free alternative, thus compounding his crime by no longer supporting it at the same time he was returning the Evil G Empire's tracking code to its former access to his site and its visitors.
 

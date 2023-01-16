@@ -71,5 +71,5 @@ The official Eleventy Twitter account graciously retweeted my announcement of th
 > I would also note that the official Image plugin can do this as well!
 >
 > Use dryRun: true to opt-out of file writing and include a \`buffer\` property in your output!\
-> <span class="legal">2:38 PM • January 26, 2022 (UTC)</span>
+> <span class="pokey">2:38 PM • January 26, 2022 (UTC)</span>
 <!-- https://twitter.com/eleven_ty/status/1486347755404640257 -->

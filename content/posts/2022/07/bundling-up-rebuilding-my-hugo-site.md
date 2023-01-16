@@ -25,7 +25,7 @@ Not long ago, I began using Hugo's [`Text` filter](https://gohugo.io/functions/i
 The next day, I got a [response](https://twitter.com/gaetawoo/status/1549779097978642432) from [@gaetawoo](https://twitter.com/gaetawoo) --- not about my post, but about that social/OG image:
 
 > Do you auto generate the twitter card graphic?\
-> <span class="legal">3:31 PM • July 20, 2022 (UTC)</span>
+> <span class="pokey">3:31 PM • July 20, 2022 (UTC)</span>
 
 <!-- https://twitter.com/gaetawoo/status/1549779097978642432 -->
 
