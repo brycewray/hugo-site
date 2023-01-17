@@ -19,7 +19,7 @@ Other than normal Tailwind itself, the code I present below --- which **as of Ta
 
 **Second**, because of a bit of the CSS that Mastodon content includes, you'll need to compensate with a [`@layer` addition](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer) after bringing in[^myImport] Tailwind's own regular styling:
 
-[^myImport]: If you're using `@import` to bring in other CSS files in addition to the Tailwind styling, that'll be necessary for the Tailwind stuff as well. You may want to refer to ["The code" in my 2022 article](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/#the-code) about using Tailwind CSS 3.x with Hugo.
+[^myImport]: If you're using `@import` to bring in other CSS files in addition to the Tailwind styling, [that'll be necessary for the Tailwind stuff as well](https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports). You may want to refer to ["The code" in my 2022 article](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/#the-code) about using Tailwind CSS 3.x with Hugo.
 
 ```css
 /*
