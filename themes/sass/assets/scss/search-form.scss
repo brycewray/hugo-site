@@ -59,9 +59,9 @@
 	right: 0px;
 	margin: 0; // fixes oddity in Safari
 	padding: 3px 12px;
-	border: 1px solid var.$twcss-blue-600;
+	border: 1px solid var.$twcss-blue-700;
 	font-weight: bold;
-	background-color: var.$twcss-blue-600;
+	background-color: var.$twcss-blue-700;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-blue-300;
@@ -133,9 +133,9 @@
 	text-align: center;
 	border-radius: 9px;
 	padding: 3px 12px;
-	border: 1px solid var.$twcss-blue-600;
+	border: 1px solid var.$twcss-blue-700;
 	font-weight: bold;
-	background-color: var.$twcss-blue-600;
+	background-color: var.$twcss-blue-700;
 	color: var.$white;
 	@media screen and (prefers-color-scheme: dark) {
 		background-color: var.$twcss-blue-300;

@@ -91,7 +91,7 @@ abbr, .allSmallCaps, .ascaps {
 		font-size: inherit;
 	}
 	&-link {
-		color: var.$twcss-blue-600;
+		color: var.$twcss-blue-700;
 	}
 	&-link:active, &-link:focus, &-link:hover {
 		color: var.$twcss-blue-700;
@@ -107,7 +107,7 @@ abbr, .allSmallCaps, .ascaps {
 	}
 }
 .bg-primary {
-	background-color: var.$twcss-blue-600;
+	background-color: var.$twcss-blue-700;
 }
 
 .bg-center {
@@ -123,8 +123,8 @@ abbr, .allSmallCaps, .ascaps {
 }
 
 .btn-primary {
-	background-color: var.$twcss-blue-600;
-	border-color: var.$twcss-blue-600;
+	background-color: var.$twcss-blue-700;
+	border-color: var.$twcss-blue-700;
 	color: hsl(0, 0%, 100%);
 	border-radius: 6px;
 	padding: 0.25rem 0.5rem;
@@ -435,7 +435,7 @@ path.MastodonM,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: var.$twcss-blue-600;
+	fill: var.$twcss-blue-700;
 	@media screen and (prefers-color-scheme: dark) {
 		fill: var.$twcss-blue-300;
 	}
@@ -488,8 +488,8 @@ details.comments > summary {
 	color: var.$white;
 	border-radius: var.$btn_radius;
 	margin: 0 auto;
-	border: 1px solid var.$twcss-blue-600;
-	background-color: var.$twcss-blue-600;
+	border: 1px solid var.$twcss-blue-700;
+	background-color: var.$twcss-blue-700;
 	padding: 0.5em 0.25em;
 	width: 15em;
 	&:hover {
