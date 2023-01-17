@@ -288,7 +288,7 @@ article {
 	padding-top: 1em; // definitely em, not rem
 	p, li {
 		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
-		line-height: 1.65em;
+		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
 		.red strong, .red b, .red em, .red i {

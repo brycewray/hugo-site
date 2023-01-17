@@ -7,16 +7,12 @@
 		text-align: center;
 		position: relative;
 		height: auto;
-		padding-right: 2vw;
-		padding-left: 2vw;
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
 		padding-bottom: 1vh; // was 5vh with hero images
-		@media screen and (min-width: var.$bkpt_lg) {
-			padding-right: 4vw;
-			padding-left: 4vw;
-		}
-		@media screen and (min-width: var.$bkpt_2xl) {
-			padding-right: 8vw;
-			padding-left: 8vw;
+		@media screen and (min-width: var.$bkpt_md) {
+			padding-right: 3rem;
+			padding-left: 3rem;
 		}
 	}
 	&-title-block {
