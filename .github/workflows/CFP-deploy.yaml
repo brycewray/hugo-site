@@ -61,18 +61,18 @@ jobs:
         run: sudo dpkg -i hugo*.deb
       - name: Download Embedded Dart Sass
         run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      - name: Unpack Embedded Dart Sass
-        run: |
-          tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          sass_embedded/dart-sass-embedded --version
-      - name: Add Embedded Dart Sass to the PATH
-        run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      # - name: Use Node.js
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: '18'
-      # - name: Install packages
-      #   run: npm install
+      # - name: Unpack Embedded Dart Sass
+      #   run: |
+      #     tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+      #     sass_embedded/dart-sass-embedded --version
+      # - name: Add Embedded Dart Sass to the PATH
+      #   run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install packages
+        run: npm install
       - name: Install Pagefind
         uses: supplypike/setup-bin@v3
         with:
