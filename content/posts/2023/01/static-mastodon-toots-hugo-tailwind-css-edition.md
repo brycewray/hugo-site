@@ -45,7 +45,7 @@ perhaps `assets/css/index.css` or
 }
 ```
 
-With all that understood, here's the Hugo [shortcode](https://gohugo.io/content-management/shortcodes/) I call `stoot.html`:
+With all of that understood, here's the Hugo [shortcode](https://gohugo.io/content-management/shortcodes/) I call `stoot.html`:
 
 ```go-html-template
 {{ $masIns := .Get 0 }}
