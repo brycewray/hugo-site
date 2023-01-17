@@ -180,7 +180,7 @@ img.containedImage {
 }
 
 .red {
-	color: var.$twcss-red-700;
+	color: var.$twcss-red-800;
 	@media (prefers-color-scheme: dark) {
 		color: var.$twcss-red-300;
 	}
@@ -448,7 +448,7 @@ a:hover path.MastodonM,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var.$twcss-blue-700;
+	fill: var.$twcss-blue-800;
 	@media screen and (prefers-color-scheme: dark) {
 		fill: var.$twcss-blue-200;
 	}
