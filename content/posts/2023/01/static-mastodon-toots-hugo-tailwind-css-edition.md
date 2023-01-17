@@ -1,5 +1,5 @@
 ---
-title: "Static Mastodon toots in Hugo: the Tailwind CSS edition"
+title: "Static Mastodon toots in Hugo: the Tailwind CSS edition"
 description: "Mastodon is becoming more popular, and Tailwind CSS already is immensely popular, so let’s make them work together in your SSG-based website."
 author: Bryce Wray
 date: 2023-01-16T16:08:00-06:00
@@ -43,7 +43,7 @@ perhaps `assets/css/index.css` or
 		}
 	}
 }
-``` 
+```
 
 With all that understood, here's the Hugo [shortcode](https://gohugo.io/content-management/shortcodes/) I call `stoot.html`:
 
