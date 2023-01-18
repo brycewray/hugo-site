@@ -6,6 +6,9 @@ date: 2022-08-27T12:33:00-05:00
 #initTextEditor: **iA Writer**
 ---
 
+**Update from the future**: For a [Tailwind CSS](https://tailwindcss.com)-styled version of the Mastodon-related code herein, see [this follow-up post](/posts/2023/01/static-mastodon-toots-eleventy-tailwind-css-edition/).
+{.box}
+
 In the process of my experimentation with various static site generators (SSGs), I've created [Eleventy](https://11ty.dev) versions of my [Hugo](https://gohugo.io) shortcodes for doing fully static embeds of tweets and their Mastodon counterpart, toots. I offer them here in somewhat edited form, with their original repo-based versions as noted.
 
 Of course, be sure to enable each of these in your Eleventy config file through the [usual procedure](https://www.11ty.dev/docs/shortcodes/). Feel free to rename them if you wish; their respective names are just what I call them.
