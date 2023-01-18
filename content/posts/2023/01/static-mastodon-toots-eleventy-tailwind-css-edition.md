@@ -45,7 +45,7 @@ This is your project's main CSS file.
 
 **Finally**, as was true for the Eleventy code from the earlier post, this code assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch), [`luxon`](https://github.com/moment/luxon), and [`md5`](https://github.com/pvorb/node-md5) packages installed in your project.
 
-With all of that understood, here's the Eleventy [shortcode](https://www.11ty.dev/docs/shortcodes/) I call `stoot.njk`, which in the [Nunjucks](https://mozilla.github.io/nunjucks/) templating language (one of [several](https://www.11ty.dev/docs/languages/) available for use in Eleventy):
+With all of that understood, here's the Eleventy [shortcode](https://www.11ty.dev/docs/shortcodes/) I call `stoot.js` (**not** `stoot.njk`, as I erroneously called it in the original version of this post):
 
 ```js
 const EleventyFetch = require("@11ty/eleventy-fetch")
