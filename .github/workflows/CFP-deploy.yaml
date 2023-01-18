@@ -67,12 +67,12 @@ jobs:
           sass_embedded/dart-sass-embedded --version
       - name: Add Embedded Dart Sass to the PATH
         run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - name: Install packages
-        run: npm install
+      # - name: Use Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '18'
+      # - name: Install packages
+      #   run: npm install
       - name: Install Pagefind
         uses: supplypike/setup-bin@v3
         with:
