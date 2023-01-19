@@ -345,3 +345,6 @@ Still, if I do say so myself, I think this is a good start. It's probably a lot 
 
 **Update, 2022-06-28**: Consider this now an abandoned experiment. I went with it for a couple of weeks, but, in the end, decided to revert to my previous definitely-**not**-scoped configuration after seeing that *this* method hampered attempts to make certain styling changes --- that is, *without* invoking chaos which wasn't worth my time to resolve. Perhaps you'll have better luck with it.
 {.box}
+
+**Update, 2023-01-19**: A few months later, I came up with a [better, simpler approach](/posts/2023/01/sorta-scoped-styling-hugo-take-two/).
+{.box}
