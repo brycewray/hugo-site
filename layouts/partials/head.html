@@ -13,10 +13,14 @@
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
 		{{/* conditional CSS */}}
-		{{- partial "head-css-code.html" . }}
 		{{- partialCached "head-css-fonts.html" . }}
+		{{- partial "head-css-social.html" . -}}
+		{{- partial "head-css-code.html" . }}
 		{{- partial "head-css-tables.html" . }}
 		{{- partial "head-css-lite-yt.html" . }}
+		{{- partial "head-css-footnotes.html" . -}}
+		{{- partial "head-css-home.html" . -}}
+		{{- partial "head-css-sitemap.html" . }}
 		{{- partial "head-css-search.html" . }}
 		{{- partialCached "head-css.html" . }}
     {{- if hugo.IsProduction }}

@@ -1,0 +1,17 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssSocial := "" -}}
+{{- $optionsSocial := (dict "transpiler" "dartsass" "targetPath" "css/social.css") -}}
+{{- $optionsSocialComp := merge $optionsSocial $compOutput -}}
+
+{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}
+	{{- if hugo.IsProduction -}}
+		{{- $cssSocial = resources.Get "scss/social.scss" | resources.ToCSS $optionsSocialComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssSocial.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssSocial.RelPermalink }}" type="text/css">
+	{{- else if .Site.IsServer -}}
+		{{- $cssSocial = resources.Get "scss/social.scss" | resources.ToCSS $optionsSocial | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssSocial.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssSocial.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}

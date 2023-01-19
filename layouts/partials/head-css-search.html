@@ -4,14 +4,12 @@
 {{- $optionsSearch := (dict "transpiler" "dartsass" "targetPath" "css/search-form.css") -}}
 {{- $optionsSearchComp := merge $optionsSearch $compOutput -}}
 
-{{- if hugo.IsProduction -}}
-	{{- if eq .Title .Site.Params.SearchTitle }}
+{{- if eq .Title .Site.Params.SearchTitle }}
+	{{- if hugo.IsProduction -}}
 		{{- $cssSearch = resources.Get "scss/search-form.scss" | resources.ToCSS $optionsSearchComp | fingerprint "md5" -}}
 		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssSearch.RelPermalink }}">
 		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssSearch.RelPermalink }}" type="text/css">
-	{{- end }}
-{{- else if .Site.IsServer -}}
-	{{- if eq .Title .Site.Params.SearchTitle }}
+	{{- else if .Site.IsServer -}}
 		{{- $cssSearch = resources.Get "scss/search-form.scss" | resources.ToCSS $optionsSearch | fingerprint "md5" -}}
 		<link rel="preload" as="style" href="{{ $cssSearch.RelPermalink }}">
 		<link rel="stylesheet" href="{{ $cssSearch.RelPermalink }}" type="text/css">

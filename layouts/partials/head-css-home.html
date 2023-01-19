@@ -1,0 +1,17 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssHome := "" -}}
+{{- $optionsHome := (dict "transpiler" "dartsass" "targetPath" "css/home.css") -}}
+{{- $optionsHomeComp := merge $optionsHome $compOutput -}}
+
+{{- if eq .Title "Home page" }}
+	{{- if hugo.IsProduction -}}
+		{{- $cssHome = resources.Get "scss/home.scss" | resources.ToCSS $optionsHomeComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssHome.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssHome.RelPermalink }}" type="text/css">
+	{{- else if .Site.IsServer -}}
+		{{- $cssHome = resources.Get "scss/home.scss" | resources.ToCSS $optionsHome | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssHome.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssHome.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}

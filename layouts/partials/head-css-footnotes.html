@@ -1,0 +1,17 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssFootnotes := "" -}}
+{{- $optionsFootnotes := (dict "transpiler" "dartsass" "targetPath" "css/footnotes.css") -}}
+{{- $optionsFootnotesComp := merge $optionsFootnotes $compOutput -}}
+
+{{- if (findRE `class="footnote-ref"` .Content 1) -}}
+	{{- if hugo.IsProduction -}}
+		{{- $cssFootnotes = resources.Get "scss/footnotes.scss" | resources.ToCSS $optionsFootnotesComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssFootnotes.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssFootnotes.RelPermalink }}" type="text/css">
+	{{- else if .Site.IsServer -}}
+		{{- $cssFootnotes = resources.Get "scss/footnotes.scss" | resources.ToCSS $optionsFootnotes | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssFootnotes.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssFootnotes.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}

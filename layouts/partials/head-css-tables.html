@@ -4,14 +4,12 @@
 {{- $optionsTables := (dict "transpiler" "dartsass" "targetPath" "css/tables.css") -}}
 {{- $optionsTablesComp := merge $optionsTables $compOutput -}}
 
-{{- if hugo.IsProduction -}}
-	{{- if (findRE `<table` .Content 1) -}}
+{{- if (findRE `<table` .Content 1) -}}
+	{{- if hugo.IsProduction -}}
 		{{- $cssTables = resources.Get "scss/tables.scss" | resources.ToCSS $optionsTablesComp | fingerprint "md5" -}}
 		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssTables.RelPermalink }}">
 		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssTables.RelPermalink }}" type="text/css">
-	{{- end }}
-{{- else if .Site.IsServer -}}
-	{{- if (findRE `<table` .Content 1) -}}
+	{{- else if .Site.IsServer -}}
 		{{- $cssTables = resources.Get "scss/tables.scss" | resources.ToCSS $optionsTables | fingerprint "md5" -}}
 		<link rel="preload" as="style" href="{{ $cssTables.RelPermalink }}">
 		<link rel="stylesheet" href="{{ $cssTables.RelPermalink }}" type="text/css">
