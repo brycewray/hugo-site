@@ -11,5 +11,5 @@
 {{- else if .Site.IsServer -}}
 	{{- $cssPrint = resources.Get "scss/print.scss" | resources.ToCSS $optionsPrint | fingerprint "md5" -}}
 	<link rel="preload" as="style" href="{{ $cssPrint.RelPermalink }}">
-	<link rel="stylesheet" href="{{ $cssPrint.RelPermalink }}" type="text/css">
+	<link rel="stylesheet" href="{{ $cssPrint.RelPermalink }}" type="text/css" media="print">
 {{- end }}
