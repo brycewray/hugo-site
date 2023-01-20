@@ -1,0 +1,17 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssDetails := "" -}}
+{{- $optionsDetails := (dict "transpiler" "dartsass" "targetPath" "css/details.css") -}}
+{{- $optionsDetailsComp := merge $optionsDetails $compOutput -}}
+
+{{- if (findRE `<details>` .Content 1) -}}
+	{{- if hugo.IsProduction -}}
+		{{- $cssDetails = resources.Get "scss/details.scss" | resources.ToCSS $optionsDetailsComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssDetails.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssDetails.RelPermalink }}" type="text/css">
+	{{- else if .Site.IsServer -}}
+		{{- $cssDetails = resources.Get "scss/details.scss" | resources.ToCSS $optionsDetails | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssDetails.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssDetails.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}

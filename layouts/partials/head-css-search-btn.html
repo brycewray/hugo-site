@@ -1,0 +1,17 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssSearchBtn := "" -}}
+{{- $optionsSearchBtn := (dict "transpiler" "dartsass" "targetPath" "css/search-btn.css") -}}
+{{- $optionsSearchBtnComp := merge $optionsSearchBtn $compOutput -}}
+
+{{- if ne .Title .Site.Params.SearchTitle }}
+	{{- if hugo.IsProduction -}}
+		{{- $cssSearchBtn = resources.Get "scss/search-btn.scss" | resources.ToCSS $optionsSearchBtnComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssSearchBtn.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssSearchBtn.RelPermalink }}" type="text/css">
+	{{- else if .Site.IsServer -}}
+		{{- $cssSearchBtn = resources.Get "scss/search-btn.scss" | resources.ToCSS $optionsSearchBtn | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssSearchBtn.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssSearchBtn.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}

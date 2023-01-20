@@ -20,15 +20,14 @@ h1,
 .billboard-title-text,
 .posts-Head,
 .homePost-Latest,
-// .homeOpen h1,
 .sitemap-Div h1 {
 	font-weight: 600;
-	letter-spacing: -0.05em; // for Libre Franklin
+	letter-spacing: -0.05em;
 }
 
 .homeOpen h1 {
 	font-weight: 600;
-	letter-spacing: -0.0375em; // for Libre Franklin
+	letter-spacing: -0.0375em;
 }
 
 h2,
@@ -54,11 +53,11 @@ article .h6,
 .homePost-Title,
 .posts-Title {
 	font-weight: 550;
-	letter-spacing: -0.025em; // for Libre Franklin
+	letter-spacing: -0.025em;
 }
 
 .prevnextP {
-	letter-spacing: -0.025em; // for Libre Franklin
+	letter-spacing: -0.025em;
 }
 
 .billboard-description-text,
@@ -69,24 +68,18 @@ article .h6,
 
 .posts-Description,
 .homePost-Description {
-	letter-spacing: -0.025em; // for Libre Franklin
+	letter-spacing: -0.025em;
 }
 
 .billboard-description-text {
-	letter-spacing: -0.0375em; // for Libre Franklin
+	letter-spacing: -0.0375em;
 }
 
 .billboard-p-text,
 .homePost-Dates,
 .posts-Dates {
-	letter-spacing: -0.025em; // for Libre Franklin
+	letter-spacing: -0.025em;
 }
-
-// article p, article li {
-// 	@media screen and (min-width: var.$bkpt_xl) {
-// 		letter-spacing: -0.0175em;
-// 	}
-// }
 
 .footnotes li,
 .footnotes li p,
@@ -97,19 +90,6 @@ article .h6,
 .tweet-card p {
 	letter-spacing: normal;
 }
-
-// article code, article p code {
-// 	font-size: 1em;
-// 	@media screen and (min-width: var.$bkpt_md) {
-// 		font-size: 0.975em;
-// 	}
-// 	@media screen and (min-width: var.$bkpt_xl) {
-// 		font-size: 0.95em;
-// 	}
-// 	@media screen and (min-width: var.$bkpt_2xl) {
-// 		font-size: 0.9em;
-// 	}
-// }
 
 @media screen and (prefers-color-scheme: dark) {
 	.header-anchor::after {
