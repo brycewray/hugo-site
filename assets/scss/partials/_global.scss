@@ -139,10 +139,6 @@ blockquote {
 	}
 }
 
-td {
-	vertical-align: top;
-}
-
 sub, sup {
 	font-size: 65%;
 	line-height: 0;
@@ -220,42 +216,9 @@ footer {
 	}
 }
 
-.imgCover {
-	object-fit: cover;
-	object-position: 50% 50%; // H = middle; V = middle
-	height: 100%;
-	width: 100%;
-}
-
 .container {
 	// width: 90%;
 	margin: 0 auto;
-	&-home {
-		// font-family: var.$sans-serif;
-		text-align: center;
-		padding: 2vh 5vw;
-		margin: 0 auto;
-		// width: 90%;
-		@media screen and (min-width: var.$bkpt_lg) {
-			width: 100%;
-			display: flex;
-			flex-direction: row;
-			padding: 0;
-			margin: 0;
-			.post-line {
-				display: none;
-			}
-		}
-		h1 {
-			font-size: 1.25rem;
-			@media screen and (min-width: var.$bkpt_lg) {
-				font-size: 1.5rem;
-			}
-			@media screen and (min-width: var.$bkpt_2xl) {
-				font-size: 1.75rem;;
-			}
-		}
-	}
 	&-narrower {
 		margin: 1rem auto 0 auto;
 		width: 80%;
@@ -276,7 +239,6 @@ footer {
 		// }
 	}
 }
-
 
 li p {
 	margin-right: 0;

@@ -2,6 +2,30 @@
 
 .container-home {
 	padding-bottom: 1em;
+	// font-family: var.$sans-serif;
+	text-align: center;
+	padding: 2vh 5vw;
+	margin: 0 auto;
+	// width: 90%;
+	@media screen and (min-width: var.$bkpt_lg) {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+		.post-line {
+			display: none;
+		}
+	}
+	h1 {
+		font-size: 1.25rem;
+		@media screen and (min-width: var.$bkpt_lg) {
+			font-size: 1.5rem;
+		}
+		@media screen and (min-width: var.$bkpt_2xl) {
+			font-size: 1.75rem;;
+		}
+	}
 }
 
 // === for home page

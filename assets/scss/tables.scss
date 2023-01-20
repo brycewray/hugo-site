@@ -4,6 +4,10 @@ table {
 	font-family: var.$sans-serif;
 }
 
+td {
+	vertical-align: top;
+}
+
 // === table for web typography article, part II
 table.noborders {
 	width: 100%;
