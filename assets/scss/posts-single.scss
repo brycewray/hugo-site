@@ -1,0 +1,60 @@
+@use 'partials/variables' as var;
+
+.bg-dark {
+	// font-family: var.$sans-serif;
+	margin-top: 2.5rem;
+	background-color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		background-color: var.$twcss-slate-800;
+	}
+	padding: 0.5rem 0;
+	div, p {
+		color: hsl(0, 0%, 100%);
+	}
+	p.prevnextP {
+		margin: 0 auto;
+		padding: 0.15rem 0;
+		width: 90%;
+		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
+	}
+	a {
+		color: hsl(204, 100%, 83%);
+		text-decoration: none;
+	}
+	a:hover, a:focus {
+		color: var.$twcss-gray-300;
+		text-decoration: underline; // normal
+		text-decoration-thickness: var.$textDcThick; // always rem
+		text-underline-offset: var.$textUnOffst; // always em
+		text-decoration-skip-ink: auto;
+	}
+}
+
+.contactBtn {
+	font-family: var.$sans-serif;
+	text-align: center;
+	margin: 1.5em auto 1em;
+	button {
+		width: 15rem;
+		margin-top: 0.5em;
+		padding: 0.25rem 0;
+		background-color: var.$twcss-blue-700;
+		border-radius: var.$btn_radius;
+		border-color: transparent;
+		vertical-align: middle;
+		color: var.$white;
+		&:focus, &:active, &:hover {
+			background-color: var.$twcss-blue-800;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		@media (prefers-color-scheme: dark) {
+			color: var.$black;
+			background-color: var.$twcss-blue-300;
+			&:focus, &:active, &:hover {
+				background-color: var.$twcss-blue-50;
+			}
+		}
+	}
+}

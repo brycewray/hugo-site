@@ -1,0 +1,17 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssPostsList := "" -}}
+{{- $optionsPostsList := (dict "transpiler" "dartsass" "targetPath" "css/posts-list.css") -}}
+{{- $optionsPostsListComp := merge $optionsPostsList $compOutput -}}
+
+{{- if eq .Title "Posts" }}
+	{{- if hugo.IsProduction -}}
+		{{- $cssPostsList = resources.Get "scss/posts-list.scss" | resources.ToCSS $optionsPostsListComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssPostsList.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssPostsList.RelPermalink }}" type="text/css">
+	{{- else if .Site.IsServer -}}
+		{{- $cssPostsList = resources.Get "scss/posts-list.scss" | resources.ToCSS $optionsPostsList | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssPostsList.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssPostsList.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}

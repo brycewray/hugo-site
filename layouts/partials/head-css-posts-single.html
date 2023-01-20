@@ -1,0 +1,17 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $cssPostsSingle := "" -}}
+{{- $optionsPostsSingle := (dict "transpiler" "dartsass" "targetPath" "css/posts-single.css") -}}
+{{- $optionsPostsSingleComp := merge $optionsPostsSingle $compOutput -}}
+
+{{- if (and (eq .Section "posts") (ne .Title "Posts")) -}}
+	{{- if hugo.IsProduction -}}
+		{{- $cssPostsSingle = resources.Get "scss/posts-single.scss" | resources.ToCSS $optionsPostsSingleComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $cssPostsSingle.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $cssPostsSingle.RelPermalink }}" type="text/css">
+	{{- else if .Site.IsServer -}}
+		{{- $cssPostsSingle = resources.Get "scss/posts-single.scss" | resources.ToCSS $optionsPostsSingle | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $cssPostsSingle.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $cssPostsSingle.RelPermalink }}" type="text/css">
+	{{- end }}
+{{- end }}
