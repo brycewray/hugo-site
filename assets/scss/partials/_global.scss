@@ -117,7 +117,7 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 			color: var.$twcss-blue-300;
 		}
 		&::after {
-			font-size: var.$stdsize;
+			font-size: var.$text-base;
 			padding-left: 0.5em;
 			content: "#";
 		}
@@ -189,7 +189,7 @@ footer {
 		background: var.$black;
 	}
 	text-align: center;
-	font-size: var.$legal;
+	font-size: var.$text-xs;
 	margin: 4rem auto 0 auto;
 	width: 100%;
 	padding-top: 0.5rem;

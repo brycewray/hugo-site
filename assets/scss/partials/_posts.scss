@@ -7,10 +7,6 @@
 		color: var.$twcss-gray-300;
 	}
 	&-pagerThing {
-		// text-align: center;
-		// font-size: 1.25em;
-		// margin-top: 0.5rem;
-		// margin-bottom: 0.5rem;
 		display: flex;
 		flex-direction: row;
 		gap: 1em;
@@ -179,5 +175,24 @@ hr.paginatorBottom {
 .arrowStop {
 	color: var.$twcss-gray-300;
 }
+
+path.FirstLast {
+	fill: var.$twcss-gray-400;
+}
+
+path.NextPrev {
+	fill: var.$twcss-blue-700;
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$twcss-blue-300;
+	}
+}
+
+a:hover path.NextPrev {
+	fill: var.$twcss-blue-800;
+	@media screen and (prefers-color-scheme: dark) {
+		fill: var.$twcss-blue-200;
+	}
+}
+
 
 // === end, posts and post lists

@@ -147,7 +147,7 @@ article.wm-article {
 }
 
 .p-name, .webmention__content {
-	font-size: var.$pokey;
+	font-size: var.$text-sm;
 	line-height: 1.5;
 }
 
@@ -162,16 +162,16 @@ article.wm-article {
 }
 
 .commentDisclaimer {
-	font-size: var.$legal;
+	font-size: var.$text-xs;
 	text-align: center;
 }
 
 .commentName {
-	font-size: var.$pokey;
+	font-size: var.$text-sm;
 	margin: 1em 0 0.5em 0;
 }
 .comment {
 	margin: 0 0 0.5em 0;
-	font-size: var.$pokey;
+	font-size: var.$text-sm;
 	line-height: 1.5;
 }

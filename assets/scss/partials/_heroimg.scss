@@ -129,9 +129,9 @@
 	margin-left: auto;
 	text-align: center;
 	font-family: var.$sans-serif;
-	font-size: var.$teeny;
+	font-size: var.$text-xs;
 	@media screen and (min-width: var.$bkpt_md) {
-		font-size: var.$legal;
+		font-size: var.$text-xs;
 	}
 	color: var.$white;
 	a {

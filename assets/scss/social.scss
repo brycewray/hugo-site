@@ -8,9 +8,9 @@ $tc-padding: 1em;
 .toot-blockquote {
 	line-height: 1.35em; // for non-`p` results from $text
 	font-family: var.$social-sans-serif;
-	font-size: var.$stdsize;
+	font-size: var.$text-base;
 	@media screen and (min-width: var.$bkpt_md) {
-		font-size: var.$minimalbig;
+		font-size: var.$text-xl;
 	}
 	p {
 		margin-top: 0; //reset
@@ -114,7 +114,7 @@ a > .card, a > .toot-card {
 		padding: 0.5em 1em 1em;
 		line-height: 1.4;
 		margin-top: 0;
-		font-size: var.$pokey;
+		font-size: var.$text-sm;
 		.card-title {
 			color: var.$black;
 			@media screen and (prefers-color-scheme: dark){
@@ -143,7 +143,7 @@ a > .card, a > .toot-card {
 		flex-grow: 1;
 		&-name {
 			font-weight: bold;
-			font-size: var.$stdsize;
+			font-size: var.$text-base;
 			color: var.$black;
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$white;
@@ -155,7 +155,7 @@ a > .card, a > .toot-card {
 			@media screen and (prefers-color-scheme: dark) {
 				color: var.$twcss-gray-300;
 			}
-			font-size: var.$pokey;
+			font-size: var.$text-sm;
 			line-height: 1;
 		}
 		.toot-bird {
@@ -169,7 +169,7 @@ a > .card, a > .toot-card {
 	display: flex;
 	align-items: center;
 	color: var.$twcss-gray-800;
-	font-size: var.$pokey;
+	font-size: var.$text-sm;
 	@media screen and (prefers-color-scheme: dark) {
 		color: var.$twcss-gray-200;
 	}
@@ -185,7 +185,7 @@ a > .card, a > .toot-card {
 	/* === needed in Eleventy but not in Hugo
 	.toot-date:after {
 		content: " (UTC)";
-		font-size: var.$legal;
+		font-size: var.$text-xs;
 	}
 	*/
 }
@@ -297,7 +297,7 @@ a > .card, a > .toot-card {
 	margin-top: 0.75em;
 	margin-bottom: 0;
 	p {
-		font-size: var.$pokey;
+		font-size: var.$text-sm;
 		margin: 0 0 0.5em;
 		line-height: 1.4;
 		.toot-quoted-toot-profile-image {
@@ -329,7 +329,7 @@ a > .card, a > .toot-card {
 	padding-top: 0;
 	line-height: 1.3em;
 	color: var.$twcss-gray-800;
-	font-size: var.$pokey;
+	font-size: var.$text-sm;
 	@media screen and (prefers-color-scheme: dark) {
 		color: var.$twcss-gray-200;
 	}
@@ -376,7 +376,7 @@ a > .card, a > .toot-card {
 			font-weight: bold;
 		}
 		.card-title, .card-description {
-			font-size: var.$pokey;
+			font-size: var.$text-sm;
 		}
 	}
 }
