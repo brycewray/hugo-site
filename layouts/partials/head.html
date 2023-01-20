@@ -25,7 +25,7 @@
 		{{- partial "head-css-sitemap.html" . }}
 		{{- partial "head-css-search.html" . }}
 		{{- partialCached "head-css.html" . }}
-		{{- partialCached "head-css-print.html" . -}}
+		{{- partial "head-css-print.html" . -}}
     {{- if hugo.IsProduction }}
 		{{- /* Fathom script */}}
 		<script src="https://guitar-thriving.brycewray.com/script.js" data-site="UJDSNFVF" defer></script>
