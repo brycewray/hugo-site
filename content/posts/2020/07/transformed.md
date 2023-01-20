@@ -78,7 +78,7 @@ You can put a [mind-blowing number of transformative actions into a single URL](
 
 The upshot of all this is that I deliver the same images as before --- with better quality, in some isolated cases --- but I *don't* have to build them "myself," I *don't* have to build them on the host's server, and I *don't* have to crowd my site's repository (or any repo that anyone chooses to clone from it) with that massive quantity of images.[^Git]
 
-[^Git]: I considered waxing the repo and starting over, since anybody cloning the repo will get a .git file that has all the old images in compressed form, but decided that was going a bit far --- if for no other reason that I often *need* to go back to those previous commits to check on discarded code of some type, and it may well be that those commits will also have instructive value for anyone doing a repo clone. That said, he/she always can do his/her *own* flushing of said .git file afterward.
+[^Git]: I considered waxing the repo and starting over, since anybody cloning the repo will get a .git file that has all the old images in compressed form, but decided that was going a bit far --- if for no other reason that I often *need* to go back to those previous commits to check on discarded code of some type, and it may well be that those commits will also have instructive value for anyone doing a repo clone. That said, they always can do their *own* flushing of said .git file afterward.
 
 ## Trading points for pics?
 

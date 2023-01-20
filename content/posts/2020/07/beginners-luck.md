@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2020-07-27T16:30:00-05:00
 ---
 
-Rarely does a day go by that I don't read of yet another person deciding to move his or her website to one of the two [static site generators (SSGs)](https://staticgen.com) closest to my heart: [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
+Rarely does a day go by that I don't read of yet another person deciding to move their website to one of the two [static site generators (SSGs)](https://staticgen.com) closest to my heart: [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
 
 Good going, aforementioned "yet another person."
 
@@ -19,7 +19,7 @@ I've also converted my existing Hugo-based version of the Eleventy repo (*i.e.*,
 
 First, let me deal with one even more salient question: what exactly is a starter set where SSGs are concerned?
 
-In my starter sets’ cases, at least, the term refers to a site repo that has been pared down to a sufficiently minimal set of content and configuration so that, while someone new to the SSG can load and run it, he or she then can also customize it without having to delete a ton of unneeded stuff.
+In my starter sets’ cases, at least, the term refers to a site repo that has been pared down to a sufficiently minimal set of content and configuration so that, while someone new to the SSG can load and run it, they then can also customize it without having to delete a ton of unneeded stuff.
 
 [A few months back](/posts/2020/04/different-modes-different-code/), I made public the Hugo and [Gatsby](https://gatsbyjs.org) versions of this site's repo. This was a follow-up to my having made my Eleventy repo public [last December](/posts/2019/12/code-comfort-eleventy-webpack/) (the [webpack](https://webpack.js.org)-based version I had for a while) and [two months ago](/posts/2020/05/going-solo-eleventy/) (the current, non-webpack version). I thus hoped the choice among the three repos I'd used would be as helpful to me as I have found it to see others’ repos.
 

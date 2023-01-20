@@ -105,7 +105,7 @@ Because the original **doesn't** set Preside notifications to have any audio **a
 alertSound="GHSound_ChurchBell.mp3"
 {{< /highlight >}}
 
-For a list of the available sounds you can use instead of that default one, see the [URL File Reference](https://github.com/richwaters/PresideNotify#url-reference). (I personally am partial to `GHSound_Piano1.mp3`, but to each his/her own.)
+For a list of the available sounds you can use instead of that default one, see the [URL File Reference](https://github.com/richwaters/PresideNotify#url-reference). (I personally am partial to `GHSound_Piano1.mp3`, but to each their own.)
 {.indentAfterLI}
 
 13. Go down to line 68, which currently is:

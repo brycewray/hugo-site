@@ -47,7 +47,7 @@ Mind you, these are *extremely smart people* who are doing this, and --- perhaps
 
 ## Face it
 
-Speaking of YouTube: I hope, but don't expect, to see an end to the current trend of making each YouTube video's title "slide" with the video's creator making a goofy face at the camera. It doesn't exactly spur confidence in his or her judgment about whatever the subject of the video might be, especially if it's something that's slightly more serious than, say, making goofy faces at the camera.
+Speaking of YouTube: I hope, but don't expect, to see an end to the current trend of making each YouTube video's title "slide" with the video's creator making a goofy face at the camera. It doesn't exactly spur confidence in their judgment about whatever the subject of the video might be, especially if it's something that's slightly more serious than, say, making goofy faces at the camera.
 
 ----
 

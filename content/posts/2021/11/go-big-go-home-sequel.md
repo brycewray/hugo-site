@@ -27,7 +27,7 @@ Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specifi
 	I'm separating the Cloudinary-related vars
 	for greater flexibility, especially in case
 	somebody else wants to borrow this code for
-	his/her own Cloudinary setup and
+	their own Cloudinary setup and
 	transformation ("xFm") choices.
 	For example, incorporating the first var
 	($cloudName) into the second var ($cloudiBase)

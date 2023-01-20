@@ -55,7 +55,7 @@ Here are some hosted services I've tried, and one more about which I've read goo
 In [FastComments](https://fastcomments.com)&nbsp;.&nbsp;.&nbsp;.
 
 #### Advantages
-- Comments can be anonymous (if you allow that); anyone who wishes to log in can do so by providing his or her email address.
+- Comments can be anonymous (if you allow that); anyone who wishes to log in can do so by providing their email address.
 - Each plan allows unlimited numbers of sites.
 - Doesn't show ads to visitors; doesn't sell their data.
 - Light; adds about 23K of code and files.

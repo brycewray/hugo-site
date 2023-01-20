@@ -33,7 +33,7 @@ If you reply, "I don't anticipate attracting visitors from all that far away," c
 
 [^fathom]: I know this thanks to the privacy-respecting smarts of [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate link).
 
-The best scenario is that, regardless of where a visitor may be, he or she doesn't have to wait long for your content to load --- especially considering that a disproportionate percentage of visitors from certain nations will be coming in on slower mobile devices and less advanced networks. For those scenarios, you want your content on a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
+The best scenario is that, regardless of where a visitor may be, they don't have to wait long for your content to load --- especially considering that a disproportionate percentage of visitors from certain nations will be coming in on slower mobile devices and less advanced networks. For those scenarios, you want your content on a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
 
 The good thing is that, if you're hosting your site on [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com/), or [Firebase](https://firebase.google.com/), a fast CDN is part of the deal. However, if you're operating off a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) or a shared-hosting account (see the next item for more on that), try to put your site behind a free account on [Cloudflare](https://www.cloudflare.com/).
 

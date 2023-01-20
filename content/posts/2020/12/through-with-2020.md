@@ -84,7 +84,7 @@ And, with those cheery thoughts, I segue to offering you a review of this site's
 - **[Goodbye and hello • Part 5](/posts/2020/09/goodbye-hello-part-5/)** --- Ended my *overt* discussion of "the lurch" with a departure from Render after I saw I hadn't quite done my homework.
 - **[Two, but not terrible](/posts/2020/09/two-but-not-terrible/)** --- Commemorated the site's second birthday.
 - **[A normal person's guide to static websites](/posts/2020/09/normal-persons-guide-static-websites/)** --- Reached out to *non*-geeks (*i.e.*, people unlike Yours Truly) in the first of two articles; in this one, I explained static websites and SSGs themselves, after which&nbsp;.&nbsp;.&nbsp;.
-- **[A normal person's guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting/)** --- .&nbsp;.&nbsp;. I offered opinions on the best places for a non-geek to place his/her static website if he/she did, indeed, decide to have one in the first place.
+- **[A normal person's guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting/)** --- .&nbsp;.&nbsp;. I offered opinions on the best places for a non-geek to place their static website if they did, indeed, decide to have one in the first place.
 - **[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)** --- (Back to geekism for geekism's sake.) Provided [GitHub Actions](https://github.com/features/actions) for deploying a site to [Firebase](https://firebase.google.com).
 
 ## October

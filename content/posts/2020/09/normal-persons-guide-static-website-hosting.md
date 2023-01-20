@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2020-09-26T13:55:00-05:00
 ---
 
-In the [last post](/posts/2020/09/normal-persons-guide-static-websites/), I made suggestions about how a normal, non-geeky person --- *i.e.*, someone very unlike Yours Truly --- could have the most painless experience in putting together a static website of his or her own.
+In the [last post](/posts/2020/09/normal-persons-guide-static-websites/), I made suggestions about how a normal, non-geeky person --- *i.e.*, someone very unlike Yours Truly --- could have the most painless experience in putting together a static website of their own.
 
 However, I didn't go quite far enough, because I left out the whole question of *where* on the web that site should "live." In other words, I didn't get into the question of **static website hosting**. But this post will fix that,  I hope. So, [dig we must](https://www.bondbuyer.com/news/dig-we-must-cities-and-states-on-their-own-coping-with-the-new-fiscal-reality)&nbsp;.&nbsp;.&nbsp;.
 

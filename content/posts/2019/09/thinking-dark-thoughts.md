@@ -62,7 +62,7 @@ On the other hand, if your site already *had* a dark appearance but you want to 
 
 Of course, it's not that easy. Cool stuff never is.
 
-The thing is, you probably should adjust  *all* of your site's bright elements within `prefers-color-scheme`. To repeat the analogy of the dark room, anything you miss will be a flashlight from the distance that suddenly jabs the person in his or her widened pupils. Not nice. So, if your CSS already has a lot of stuff, you may have to include quite a few things in that media query.
+The thing is, you probably should adjust  *all* of your site's bright elements within `prefers-color-scheme`. To repeat the analogy of the dark room, anything you miss will be a flashlight from the distance that suddenly jabs the person in their widened pupils. Not nice. So, if your CSS already has a lot of stuff, you may have to include quite a few things in that media query.
 
 Two things can make it particularly complicated.
 

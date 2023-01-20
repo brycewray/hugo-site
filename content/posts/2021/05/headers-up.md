@@ -27,7 +27,7 @@ I gratefully replied:
 
 > Thanks, @NaturallyLexan. That helps a lot.
 
-. . . and so it did. Let's unpack what he/she told me.
+. . . and so it did. Let's unpack what they told me.
 
 In this scenario, your website's DNS is managed in Cloudflare, where your DNS settings screen shows info like this:
 

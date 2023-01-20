@@ -66,7 +66,7 @@ Finally, writing posts in Ulysses gives me an additional opportunity (besides on
 
 This was an interesting experiment, but I likely will stick with iA Writer for this kind of writing. One wants to use the "right tool for the right job," after all, and I can't really argue with the [Markdown Guide site](https://www.markdownguide.org/tools/)'s relative assessments of both Ulysses and iA Writer purely as Markdown tools rather than writing environments. I also agree completely with [Chris Rosser's recent assessment of iA Writer](https://chrisrosser.net/posts/2020/07/17/ia-writer-56-review/) for such purposes.
 
-Still, glitches aside, it was fun to give the newest Ulysses a shot at writing posts again. Perhaps some day Ulysses will have a setting to turn off some of the unwanted behavior I mentioned herein --- call it an "iA Writer mode" or "SSG mode." That would make it pretty hard to beat for someone who would like to stay within Big U for *all* his or her writing tasks.[^6]
+Still, glitches aside, it was fun to give the newest Ulysses a shot at writing posts again. Perhaps some day Ulysses will have a setting to turn off some of the unwanted behavior I mentioned herein --- call it an "iA Writer mode" or "SSG mode." That would make it pretty hard to beat for someone who would like to stay within Big U for *all* their writing tasks.[^6]
 
 [^1]:	First hinted at in "[iA for IO?](/posts/2019/02/ia-for-io/)"
 
