@@ -32,7 +32,7 @@
 	padding: 0;
 	background-color: var.$white;
 	border: 1px solid var.$black;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		background-color: var.$twcss-gray-800;
 		border: 1px solid var.$twcss-gray-300;
 	}
@@ -47,7 +47,7 @@
 	margin: 0;
 	border: 0;
 	background-color: transparent;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		color: var.$white;
 	}
 }
@@ -63,7 +63,7 @@
 	font-weight: bold;
 	background-color: var.$twcss-blue-700;
 	color: var.$white;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-blue-300;
 		background-color: var.$twcss-blue-300;
 		color: var.$black;
@@ -74,7 +74,7 @@
 	&:focus, &:active, &:hover {
 		border: 1px solid var.$twcss-blue-700;
 		background-color: var.$twcss-blue-700;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var.$twcss-blue-50;
 			background-color: var.$twcss-blue-50;
 		}
@@ -105,7 +105,7 @@
 	border: 1px solid var.$black;
 	// border-radius: 9px;
 	background-color: var.$white;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-300;
 		background-color: var.$twcss-gray-800;
 		color: var.$white;
@@ -137,7 +137,7 @@
 	font-weight: bold;
 	background-color: var.$twcss-blue-700;
 	color: var.$white;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		background-color: var.$twcss-blue-300;
 		border-color: var.$twcss-blue-300;
 		color: var.$black;
@@ -148,7 +148,7 @@
 	&:focus, &:active, &:hover {
 		border: 1px solid var.$twcss-blue-700;
 		background-color: var.$twcss-blue-700;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var.$twcss-blue-50;
 			background-color: var.$twcss-blue-50;
 		}
@@ -176,7 +176,7 @@
 	mark {
 		color: var.$black;
 		background-color: var.$twcss-blue-200;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			color: var.$white;
 			background-color: var.$twcss-blue-900;
 		}

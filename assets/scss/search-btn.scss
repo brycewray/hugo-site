@@ -15,7 +15,7 @@
 		background-color: var.$twcss-blue-700;
 		border: 1px solid var.$twcss-blue-700;
 		border-radius: var.$btn_radius;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var.$twcss-blue-300;
 			background-color: var.$twcss-blue-300;
 			color: var.$black;
@@ -26,7 +26,7 @@
 		&:focus, &:active, &:hover {
 			border: 1px solid var.$twcss-blue-800;
 			background-color: var.$twcss-blue-800;
-			@media screen and (prefers-color-scheme: dark) {
+			@media (prefers-color-scheme: dark) {
 				border: 1px solid var.$twcss-blue-50;
 				background-color: var.$twcss-blue-50;
 			}

@@ -35,7 +35,7 @@ $tc-padding: 1em;
 	@media screen and (min-width: var.$bkpt_3xl) {
 		max-width: 80ch;
 	}
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		background: var.$twcss-gray-900;
 		// background: transparent;
 	}
@@ -51,11 +51,11 @@ $tc-padding: 1em;
 		- https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/
 		- https://css-tricks.com/better-line-breaks-for-long-urls/
 		*/
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			color: var.$twcss-blue-300;
 		}
 	}
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 2px solid var.$twcss-gray-200;
 		color: var.$white;
 	}
@@ -82,7 +82,7 @@ $tc-padding: 1em;
 
 .toot-blockquote-img {
 	border-bottom: 1px solid var.$twcss-gray-700;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-300;
 	}
 	width: 100%;
@@ -96,7 +96,7 @@ $tc-padding: 1em;
 
 a > .card, a > .toot-card {
 	color: var.$twcss-gray-800;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		color: var.$twcss-gray-300;
 	}
 }
@@ -107,7 +107,7 @@ a > .card, a > .toot-card {
 	margin-top: 1em;
 	border-radius: 12px;
 	border: 1px solid var.$twcss-gray-700;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-300;
 	}
 	p {
@@ -117,7 +117,7 @@ a > .card, a > .toot-card {
 		font-size: var.$text-sm;
 		.card-title {
 			color: var.$black;
-			@media screen and (prefers-color-scheme: dark){
+			@media (prefers-color-scheme: dark){
 				color: var.$white;
 			}
 		}
@@ -145,14 +145,14 @@ a > .card, a > .toot-card {
 			font-weight: bold;
 			font-size: var.$text-base;
 			color: var.$black;
-			@media screen and (prefers-color-scheme: dark) {
+			@media (prefers-color-scheme: dark) {
 				color: var.$white;
 			}
 			line-height: 1.375;
 		}
 		&-handle {
 			color: var.$twcss-gray-700;
-			@media screen and (prefers-color-scheme: dark) {
+			@media (prefers-color-scheme: dark) {
 				color: var.$twcss-gray-300;
 			}
 			font-size: var.$text-sm;
@@ -170,7 +170,7 @@ a > .card, a > .toot-card {
 	align-items: center;
 	color: var.$twcss-gray-800;
 	font-size: var.$text-sm;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		color: var.$twcss-gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
@@ -178,7 +178,7 @@ a > .card, a > .toot-card {
 	}
 	a {
 		color: var.$twcss-gray-800;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			color: var.$twcss-gray-200;
 		}
 	}
@@ -289,7 +289,7 @@ a > .card, a > .toot-card {
 
 .toot-quoted-tweet {
 	border: 1px solid var.$twcss-gray-800;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-200;
 	}
 	border-radius: 12px;
@@ -311,12 +311,12 @@ a > .card, a > .toot-card {
 		margin-bottom: 0.25em;
 		a {
 			color: var.$twcss-gray-800;
-			@media screen and (prefers-color-scheme: dark) {
+			@media (prefers-color-scheme: dark) {
 				color: var.$twcss-gray-200;
 			}
 			&:hover {
 				color: var.$twcss-blue-700;
-				@media screen and (prefers-color-scheme: dark) {
+				@media (prefers-color-scheme: dark) {
 					color: var.$twcss-blue-300;
 				}
 			}
@@ -330,7 +330,7 @@ a > .card, a > .toot-card {
 	line-height: 1.3em;
 	color: var.$twcss-gray-800;
 	font-size: var.$text-sm;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		color: var.$twcss-gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
@@ -344,7 +344,7 @@ a > .card, a > .toot-card {
 		display: flex;
 	}
 	border: 1px solid var.$twcss-gray-700;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-200;
 	}
 	border-radius: 6px;

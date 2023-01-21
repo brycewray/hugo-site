@@ -81,7 +81,7 @@ table.ulysses {
 	td {
 		text-align: center;
 		border: 1px solid var.$black;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var.$white;
 			color: var.$white;
 		}
@@ -89,13 +89,13 @@ table.ulysses {
 	}
 	tr:nth-child(odd) {
 		background-color: var.$twcss-gray-200;
-		@media screen and (prefers-color-scheme: dark){
+		@media (prefers-color-scheme: dark){
 			background-color: var.$twcss-gray-700;
 		}
 	}
 	tr:nth-child(even) {
 		background-color: var.$twcss-blue-50;
-		@media screen and (prefers-color-scheme: dark){
+		@media (prefers-color-scheme: dark){
 			background-color: var.$twcss-gray-800;
 		}
 	}
@@ -103,7 +103,7 @@ table.ulysses {
 		background-color: var.$twcss-blue-700;
 		border: 1px solid var.$black;
 		color: white;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			background-color: var.$twcss-gray-900;
 			border: 1px solid var.$white;
 		}

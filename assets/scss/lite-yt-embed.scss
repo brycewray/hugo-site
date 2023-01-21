@@ -4,7 +4,7 @@ lite-youtube {
 	background-color: var.$black;
 	position: relative;
 	border: 1px solid var.$twcss-gray-700;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$twcss-gray-400;
 	}
 	display: block;

@@ -68,7 +68,7 @@
 
 .post-line {
 	border-top: 0.2rem solid var.$twcss-blue-700;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border-color: var.$white;
 	}
 	display: block;
@@ -118,14 +118,14 @@ path.FirstLast {
 
 path.NextPrev {
 	fill: var.$twcss-blue-700;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		fill: var.$twcss-blue-300;
 	}
 }
 
 a:hover path.NextPrev {
 	fill: var.$twcss-blue-800;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		fill: var.$twcss-blue-200;
 	}
 }

@@ -6,7 +6,7 @@ code {
   font-kerning: none;
   font-variant-ligatures: none;
   background: var.$twcss-blue-100;
-  @media screen and (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     background: var.$twcss-slate-800;
   }
 }
