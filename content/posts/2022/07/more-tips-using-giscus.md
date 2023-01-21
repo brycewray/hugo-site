@@ -72,12 +72,12 @@ details.comments > summary {
 	&:hover {
 		cursor: pointer;
 		background-color: var.$blue;
-		@media screen and (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var.$blueLightBtn;
 			background-color: var.$blueLightBtn;
 		}
 	}
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var.$code-color-blueLight-dark-mode;
 		background-color: var.$code-color-blueLight-dark-mode;
 		color: var.$black;
