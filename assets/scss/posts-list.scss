@@ -1,6 +1,23 @@
 @use 'partials/variables' as var;
 
 .posts {
+	&-Wrapper {
+		@media screen and (min-width: var.$bkpt_lg) {
+			width: 100%;
+			background-image: linear-gradient(
+				map-get(var.$twcss, slate-400),
+				map-get(var.$twcss, slate-200) 7%,
+				transparent
+			);
+			@media (prefers-color-scheme: dark) {
+				background-image: linear-gradient(
+					map-get(var.$twcss, slate-700),
+					map-get(var.$twcss, slate-800) 7%,
+					transparent
+				);
+			}
+		}
+	}
 	&-pagerGray {
 		color: map-get(var.$twcss, gray-300);
 	}

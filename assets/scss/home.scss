@@ -16,6 +16,18 @@
 		.post-line {
 			display: none;
 		}
+		background-image: linear-gradient(
+			map-get(var.$twcss, slate-400),
+			map-get(var.$twcss, slate-200) 10%,
+			transparent
+		);
+		@media (prefers-color-scheme: dark) {
+			background-image: linear-gradient(
+				map-get(var.$twcss, slate-700),
+				map-get(var.$twcss, slate-800) 10%,
+				transparent
+			);
+		}
 	}
 	h1 {
 		font-size: 1.25rem;

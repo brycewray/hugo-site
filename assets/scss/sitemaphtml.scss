@@ -3,6 +3,23 @@
 // === for HTML sitemap
 
 .sitemap {
+	&-Container {
+		@media screen and (min-width: var.$bkpt_lg) {
+			width: 100%;
+			background-image: linear-gradient(
+				map-get(var.$twcss, slate-400),
+				map-get(var.$twcss, slate-200) 4em,
+				transparent
+			);
+			@media (prefers-color-scheme: dark) {
+				background-image: linear-gradient(
+					map-get(var.$twcss, slate-700),
+					map-get(var.$twcss, slate-800) 4em,
+					transparent
+				);
+			}
+		}
+	}
 	&-Div {
 		// font-family: var.$sans-serif;
 		margin: 0 auto;
