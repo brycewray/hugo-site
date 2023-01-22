@@ -91,7 +91,7 @@ article .h6,
 	letter-spacing: normal;
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	.header-anchor::after {
 		font-weight: 375;
 	}
