@@ -78,6 +78,15 @@ table.ulysses {
 	width: 100%;
 	table-layout: fixed; // so don't have to spec each `td`'s width
 	border-collapse: collapse;
+	thead th {
+		background-color: map-get(var.$twcss, blue-700);
+		border: 1px solid var.$black;
+		color: white;
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, blue-900);
+			border: 1px solid var.$white;
+		}
+	}
 	td {
 		text-align: center;
 		border: 1px solid var.$black;
@@ -88,24 +97,15 @@ table.ulysses {
 		padding: 0;
 	}
 	tr:nth-child(odd) {
-		background-color: map-get(var.$twcss, gray-200);
+		background-color: var.$white;
 		@media (prefers-color-scheme: dark){
-			background-color: map-get(var.$twcss, gray-700);
+			background-color: map-get(var.$twcss, slate-700);
 		}
 	}
 	tr:nth-child(even) {
-		background-color: map-get(var.$twcss, blue-50);
+		background-color: map-get(var.$twcss, emerald-50);
 		@media (prefers-color-scheme: dark){
-			background-color: map-get(var.$twcss, gray-800);
-		}
-	}
-	thead th {
-		background-color: map-get(var.$twcss, blue-700);
-		border: 1px solid var.$black;
-		color: white;
-		@media (prefers-color-scheme: dark) {
-			background-color: map-get(var.$twcss, gray-900);
-			border: 1px solid var.$white;
+			background-color: map-get(var.$twcss, emerald-900);
 		}
 	}
 }

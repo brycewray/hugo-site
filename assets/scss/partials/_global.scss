@@ -1,9 +1,6 @@
 @use 'variables' as var;
 
 html, body {
-	font-family: var.$sans-serif;
-	background-color: map-get(var.$twcss, zinc-100);
-	color: var.$black;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
@@ -12,13 +9,16 @@ html, body {
 	font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
+	font-family: var.$sans-serif;
+	background-color: map-get(var.$twcss, zinc-100);
+	color: var.$black;
 	@media (prefers-color-scheme: dark) {
 		background: var.$black;
 		color: map-get(var.$twcss, gray-100);
 	}
 	@media (min-width: var.$bkpt_lg) {
 		background-image: linear-gradient(
-			map-get(var.$twcss, slate-500),
+			map-get(var.$twcss, slate-600),
 			map-get(var.$twcss, slate-200) 7em,
 			transparent
 		);
@@ -113,6 +113,15 @@ a:focus, a:hover, a:active {
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
 	border-bottom: 0;
 	text-decoration: none;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		background-color: var.$white;
+	}
 }
 
 .header-anchor {

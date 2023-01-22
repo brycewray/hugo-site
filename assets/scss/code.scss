@@ -729,7 +729,7 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	background-color: map-get(var.$twcss, slate-200);
+	background-color: var.$white;
 	@media (prefers-color-scheme: dark) {
 		background-color: map-get(var.$twcss, slate-700);
 	}
@@ -756,9 +756,9 @@ article .footnotes li code {
 }
 
 article blockquote code {
-	color: #494d50;
+	color: map-get(var.$twcss, slate-800);
 	@media (prefers-color-scheme: dark) {
-		color: #dddddd;
+		color: map-get(var.$twcss, slate-300);
 	}
 }
 
