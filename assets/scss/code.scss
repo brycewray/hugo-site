@@ -1,0 +1,830 @@
+@use 'partials/variables' as var;
+
+// ======= START, individual items from Chroma
+
+// Background
+.chroma, .code-inline {
+	color: var.$black;
+	background-color: var.$white;
+	border: 1px solid map-get(var.$twcss, gray-400);
+	@media (prefers-color-scheme: dark) {
+		background-color: map-get(var.$twcss, slate-800);
+	}
+}
+
+// Other
+.chroma .x, .code-inline .x {
+	color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		color: var.$white;
+	}
+}
+
+// Error
+.chroma .err, .code-inline .err {
+	color: map-get(var.$twcss, red-700);
+	@media (prefers-color-scheme: dark) {
+		color: #fd7777;
+	}
+}
+
+// Line text
+.chroma .cl, .code-inline .cl {
+	color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		color: var.$white;
+	}
+} // was missing from original
+
+// LineTableTD
+.chroma .lntd, .code-inline .lntd {
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+// LineTable
+.chroma .lntable, .code-inline .lntable {
+	border-spacing: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: auto;
+	overflow: auto;
+	display: block;
+}
+
+// LineHighlight
+.chroma .hl, .code-inline .hl {
+	display: block;
+	width: 100%;
+	background-color: #ffffcc;
+	@media (prefers-color-scheme: dark) {
+		background-color: #ffffcc;
+	}
+}
+
+// LineNumbersTable
+.chroma .lnt, .code-inline .lnt {
+	margin-right: 0.4em;
+	padding: 0 0.4em 0 0.4em;
+	color: #686868;
+	@media (prefers-color-scheme: dark) {
+		color: #686868;
+	}
+}
+
+// LineNumbers
+.chroma .ln, .code-inline .ln {
+	margin-right: 0.4em;
+	padding: 0 0.4em 0 0.4em;
+	color: #686868;
+	@media (prefers-color-scheme: dark) {
+		color: #686868;
+	}
+}
+
+// Keyword
+.chroma .k, .code-inline .k {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: #80ffff;
+	}
+} // was 6ab825
+
+// KeywordConstant
+.chroma .kc, .code-inline .kc {
+	color: map-get(var.$twcss, sky-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(186, 230, 253);
+	}
+}
+
+// KeywordDeclaration
+.chroma .kd, .code-inline .kd {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(186, 230, 253);
+	}
+}
+
+// KeywordNamespace
+.chroma .kn, .code-inline .kn {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(186, 230, 253);
+	}
+}
+
+// KeywordPseudo
+.chroma .kp, .code-inline .kp {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(186, 230, 253);
+	}
+}
+
+// KeywordReserved
+.chroma .kr, .code-inline .kr {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(186, 230, 253);
+	}
+}
+
+// KeywordType
+.chroma .kt, .code-inline .kt {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(186, 230, 253);
+	}
+}
+
+// Name
+.chroma .n, .code-inline .n {
+	color: map-get(var.$twcss, orange-700);
+	@media (prefers-color-scheme: dark) {
+		color: #ff9970;
+	}
+}
+
+// NameAttribute
+.chroma .na, .code-inline .na {
+	color: map-get(var.$twcss, purple-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(186, 230, 253);
+	}
+}
+
+// NameBuiltin
+.chroma .nb, .code-inline .nb {
+	color: map-get(var.$twcss, sky-800);
+	@media (prefers-color-scheme: dark) {
+		color: lightblue;
+	}
+} // was #24909d
+
+// NameBuiltinPseudo
+.chroma .bp, .code-inline .bp {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameClass
+.chroma .nc, .code-inline .nc {
+	color: map-get(var.$twcss, fuchsia-700);
+	@media (prefers-color-scheme: dark) {
+		color: #de9aef;
+	}
+} // was 447fcf
+
+// NameConstant
+.chroma .no, .code-inline .no {
+	color: map-get(var.$twcss, cyan-600);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, cyan-300);
+	}
+}
+
+// NameDecorator
+.chroma .nd, .code-inline .nd {
+	color: map-get(var.$twcss, orange-800);
+	@media (prefers-color-scheme: dark) {
+		color: #ffa500;
+	}
+}
+
+// NameEntity
+.chroma .ni, .code-inline .ni {
+	color: map-get(var.$twcss, gray-800);
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameException
+.chroma .ne, .code-inline .ne {
+	color: #bbbbbb;
+	@media (prefers-color-scheme: dark) {
+		color: #bbbbbb;
+	}
+}
+
+// NameFunction
+.chroma .nf, .code-inline .nf {
+	color: map-get(var.$twcss, sky-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, sky-200);
+	}
+} // was 447fcf
+
+// NameFunctionMagic
+.chroma .fm, .code-inline .fm {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameLabel
+.chroma .nl, .code-inline .nl {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameNamespace
+.chroma .nn, .code-inline .nn {
+	color: map-get(var.$twcss, sky-700);
+	@media (prefers-color-scheme: dark) {
+		color: #99cfef;
+	}
+} // was 447fcf
+
+// NameOther
+.chroma .nx, .code-inline .nx {
+	color: map-get(var.$twcss, gray-800);
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameProperty
+.chroma .py, .code-inline .py {
+	color: map-get(var.$twcss, gray-800);
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameTag
+.chroma .nt, .code-inline .nt {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, cyan-300);
+	}
+}
+
+// NameVariable
+.chroma .nv, .code-inline .nv {
+	color: map-get(var.$twcss, cyan-800);
+	@media (prefers-color-scheme: dark) {
+		color: #40ffff;
+	}
+}
+
+// NameVariableClass
+.chroma .vc, .code-inline .vc {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameVariableGlobal
+.chroma .vg, .code-inline .vg {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameVariableInstance
+.chroma .vi, .code-inline .vi {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// NameVariableMagic
+.chroma .vm, .code-inline .vm {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// Literal
+.chroma .l, .code-inline .l {
+	color: map-get(var.$twcss, gray-800);
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// LiteralDate
+.chroma .ld, .code-inline .ld {
+	color: map-get(var.$twcss, gray-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, gray-200);
+	}
+}
+
+// LiteralString
+.chroma .s, .code-inline .s {
+	color: map-get(var.$twcss, orange-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, orange-300 );
+	}
+}
+
+// LiteralStringAffix
+.chroma .sa, .code-inline .sa {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringBacktick
+.chroma .sb, .code-inline .sb {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringChar
+.chroma .sc, .code-inline .sc {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringDelimiter
+.chroma .dl, .code-inline .dl {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringDoc
+.chroma .sd, .code-inline .sd {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringDouble
+.chroma .s2, .code-inline .s2 {
+	color: map-get(var.$twcss, orange-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, orange-300);
+	}
+} // was ed9d13
+
+// LiteralStringEscape
+.chroma .se, .code-inline .se {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringHeredoc
+.chroma .sh, .code-inline .sh {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringInterpol
+.chroma .si, .code-inline .si {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringOther
+.chroma .sx, .code-inline .sx {
+	color: #ffa500;
+	@media (prefers-color-scheme: dark) {
+		color: #ffa500;
+	}
+}
+
+// LiteralStringRegex
+.chroma .sr, .code-inline .sr {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringSingle
+.chroma .s1, .code-inline .s1 {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralStringSymbol
+.chroma .ss, .code-inline .ss {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// LiteralNumber
+.chroma .m, .code-inline .m {
+	color: map-get(var.$twcss, cyan-800);
+	@media (prefers-color-scheme: dark) {
+		color: #7fcad7;
+	}
+}
+
+// LiteralNumberBin
+.chroma .mb, .code-inline .mb {
+	color: #7fcad7;
+	@media (prefers-color-scheme: dark) {
+		color: #7fcad7;
+	}
+}
+
+// LiteralNumberFloat
+.chroma .mf, .code-inline .mf {
+	color: map-get(var.$twcss, cyan-700);
+	@media (prefers-color-scheme: dark) {
+		color: #7fcad7;
+	}
+}
+
+// LiteralNumberHex
+.chroma .mh, .code-inline .mh {
+	color: map-get(var.$twcss, cyan-800);
+	@media (prefers-color-scheme: dark) {
+		color: #7fcad7;
+	}
+}
+
+// LiteralNumberInteger
+.chroma .mi, .code-inline .mi {
+	color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		color: #ffffff;
+	}
+}
+
+// LiteralNumberIntegerLong
+.chroma .il, .code-inline .il {
+	color: #7fcad7;
+	@media (prefers-color-scheme: dark) {
+		color: #7fcad7;
+	}
+}
+
+// LiteralNumberOct
+.chroma .mo, .code-inline .mo {
+	color: map-get(var.$twcss, yellow-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, yellow-200);
+	}
+}
+
+// Operator
+.chroma .o, .code-inline .o {
+	color: map-get(var.$twcss, orange-800);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(251, 191, 36);
+	}
+}
+
+// OperatorWord
+.chroma .ow, .code-inline .ow {
+	color: map-get(var.$twcss, sky-800);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, sky-300);
+	}
+}
+
+// Punctuation
+.chroma .p, .code-inline .p {
+	color: map-get(var.$twcss, slate-700);
+	@media (prefers-color-scheme: dark) {
+		color: rgb(192, 192, 192);
+	}
+}
+
+// Comment
+.chroma .c, .code-inline .c {
+	color: map-get(var.$twcss, emerald-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, emerald-200);
+	}
+}
+
+// CommentHashbang
+.chroma .ch, .code-inline .ch {
+	color: map-get(var.$twcss, emerald-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, emerald-200);
+	}
+}
+
+// CommentMultiline
+.chroma .cm, .code-inline .cm {
+	color: map-get(var.$twcss, emerald-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, emerald-200);
+	}
+}
+
+// CommentSingle
+.chroma .c1, .code-inline .c1 {
+	color: map-get(var.$twcss, emerald-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, emerald-200);
+	}
+}
+
+// CommentSpecial
+.chroma .cs, .code-inline .cs {
+	color: #e50808;
+	background-color: #520000;
+	@media (prefers-color-scheme: dark) {
+		color: #e50808;
+		background-color: #520000;
+	}
+}
+
+// CommentPreproc
+.chroma .cp, .code-inline .cp {
+	color: map-get(var.$twcss, red-800);
+	@media (prefers-color-scheme: dark) {
+		color: #ff8585;
+	}
+}
+
+// CommentPreprocFile
+.chroma .cpf, .code-inline .cpf {
+	color: #cd2828;
+	@media (prefers-color-scheme: dark) {
+		color: #cd2828;
+	}
+}
+
+// Generic
+.chroma .g, .code-inline .g {
+	color: #efefef;
+	@media (prefers-color-scheme: dark) {
+		color: #efefef;
+	}
+}
+
+// GenericDeleted
+.chroma .gd, .code-inline .gd {
+	color: #d22323;
+	@media (prefers-color-scheme: dark) {
+		color: #d22323;
+	}
+}
+
+// GenericEmph
+.chroma .ge, .code-inline .ge {
+	font-style: italic;
+}
+
+// GenericError
+.chroma .gr, .code-inline .gr {
+	color: #d22323;
+	@media (prefers-color-scheme: dark) {
+		color: #d22323;
+	}
+}
+
+// GenericHeading
+.chroma .gh, .code-inline .gh {
+	color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		color: #ffffff;
+	}
+}
+
+// GenericInserted
+.chroma .gi, .code-inline .gi {
+	color: #589819;
+	@media (prefers-color-scheme: dark) {
+		color: #589819;
+	}
+}
+
+// GenericOutput
+.chroma .go, .code-inline .go {
+	color: #cccccc;
+	@media (prefers-color-scheme: dark) {
+		color: #cccccc;
+	}
+}
+
+// GenericPrompt
+.chroma .gp, .code-inline .gp {
+	color: #aaaaaa;
+	@media (prefers-color-scheme: dark) {
+		color: #aaaaaa;
+	}
+}
+
+// GenericStrong
+.chroma .gs, .code-inline .gs {
+	font-weight: bold;
+}
+
+// GenericSubheading
+.chroma .gu, .code-inline .gu {
+	color: #ffffff;
+	@media (prefers-color-scheme: dark) {
+		color: #ffffff;
+	}
+}
+
+// GenericTraceback
+.chroma .gt, .code-inline .gt {
+	color: #d22323;
+	@media (prefers-color-scheme: dark) {
+		color: #d22323;
+	}
+}
+
+// GenericUnderline
+.chroma .gl, .code-inline .gl {
+	text-decoration: underline;
+}
+
+// TextWhitespace
+.chroma .w, .code-inline .w {
+	color: #666666;
+	@media (prefers-color-scheme: dark) {
+		color: #666666;
+	}
+}
+
+// ======= END, individual items from Chroma
+
+pre,
+code {
+	font-family: var.$monospaced;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  background: map-get(var.$twcss, blue-100);
+  @media (prefers-color-scheme: dark) {
+    background: map-get(var.$twcss, slate-800);
+  }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #ddd; // was ccc
+	background: none;
+	font-size: clamp(0.9rem, 1vw + 0.625em, var.$text-lg);
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	tab-size: 2;
+	hyphens: none;
+}
+
+// Code blocks
+pre[class*="language-"],
+pre.chroma {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #2d2d2d;
+}
+
+// Inline code
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+article code {
+	font-size: 0.975em;
+	@media screen and (min-width: var.$bkpt_md) {
+		font-size: 0.95em;
+	}
+	@media screen and (min-width: var.$bkpt_xl) {
+		font-size: 0.925em;
+	}
+	@media screen and (min-width: var.$bkpt_2xl) {
+		font-size: 0.9em;
+	}
+	background-color: map-get(var.$twcss, slate-200);
+	@media (prefers-color-scheme: dark) {
+		background-color: map-get(var.$twcss, slate-700);
+	}
+}
+article .footnotes code {
+	font-size: 1em;
+	// overriding the `article code` part above for footnotes
+}
+
+article p code {
+	@media screen and (min-width: var.$bkpt_md) {
+		white-space: nowrap;
+	}
+}
+
+article p code.code-inline {
+	// font-size: var.$text-sm;
+	padding: 0.25em 0.5em;
+	margin: 0 0.25em;
+}
+
+article .footnotes li code {
+	white-space: normal;
+}
+
+article blockquote code {
+	color: #494d50;
+	@media (prefers-color-scheme: dark) {
+		color: #dddddd;
+	}
+}
+
+.yellowBox code, .blueBox code {
+	font-size: 1em; // definitely em
+}
+
+.highlight {
+	position: relative;
+	.chroma {
+		border-radius: 16px;
+		// keeps code blocks from being too small
+		// due to the `article code` rule above
+		font-size: clamp(0.9rem, 1vw + 0.625em, var.$text-lg);
+	}
+}
+
+@media screen and  (min-width: var.$bkpt-lg) {
+	pre.expand:hover {
+		margin-left: -20vw;
+		margin-right: -20vw;
+		max-width: 95vw;
+	}
+}
+
+// === for copy-code-to-clipboard
+
+// h/t https://simplernerd.com/hugo-add-copy-to-clipboard-button/
+
+.clipboard-button {
+	position: absolute;
+	right: 0;
+	padding: 2px 7px 5px 7px;
+	margin: 5px;
+	color: #767676;
+	border-color: #767676;
+	background-color: #ededed;
+	border: 1px solid;
+	border-radius: 6px;
+	font-size: 0.8em;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.1s;
+}
+.clipboard-button > svg {
+	fill: #767676;
+}
+.clipboard-button:hover {
+	cursor: pointer;
+	border-color: #696969;
+	background-color: #e0e0e0;
+}
+.clipboard-button:hover > svg {
+	fill: #696969;
+}
+.clipboard-button:focus {
+	outline: 0;
+}
+// .highlight {
+//   position: relative;
+// }
+.highlight:hover > .clipboard-button {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+article ol li .highlight {
+	line-height: 1.5;
+}

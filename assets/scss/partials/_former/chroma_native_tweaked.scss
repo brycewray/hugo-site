@@ -1,3 +1,5 @@
+@use 'partials/variables' as var;
+
 /* Background */ .chroma, .code-inline { color: #d0d0d0; background-color: #202020 }
 /* Other */ .chroma .x, .code-inline .x { color: #ffffff }
 /* Error */ .chroma .err, .code-inline .err { color: #fd7777; }
