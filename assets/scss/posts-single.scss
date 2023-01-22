@@ -19,22 +19,22 @@
 		padding: 0.15rem 0;
 		width: 90%;
 		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
-	}
-	a {
-		color: map-get(var.$twcss, blue-700); // accessibility per WebAIM
-		text-decoration: none;
-		@media (prefers-color-scheme: dark) {
-			color: map-get(var.$twcss, blue-200);
-		}
-	}
-	a:hover, a:focus {
-		color: map-get(var.$twcss, gray-800);
-		text-decoration: underline; // normal
-		text-decoration-thickness: var.$textDcThick; // always rem
-		text-underline-offset: var.$textUnOffst; // always em
-		text-decoration-skip-ink: auto;
-		@media (prefers-color-scheme) {
-			color: map-get(var.$twcss, gray-200);
+		a {
+			color: map-get(var.$twcss, blue-700); // accessibility per WebAIM
+			text-decoration: none;
+			@media (prefers-color-scheme: dark) {
+				color: map-get(var.$twcss, blue-200);
+			}
+			&:hover, &:focus {
+				color: map-get(var.$twcss, gray-800);
+				text-decoration: underline; // normal
+				text-decoration-thickness: var.$textDcThick; // always rem
+				text-underline-offset: var.$textUnOffst; // always em
+				text-decoration-skip-ink: auto;
+				@media (prefers-color-scheme: dark) {
+					color: map-get(var.$twcss, gray-200);
+				}
+			}
 		}
 	}
 }
