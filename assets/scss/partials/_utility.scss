@@ -4,9 +4,9 @@
 	text-align: center;
 }
 .red {
-	color: var.$twcss-red-800;
+	color: map-get(var.$twcss, red-800);
 	@media (prefers-color-scheme: dark) {
-		color: var.$twcss-red-300;
+		color: map-get(var.$twcss, red-300);
 	}
 }
 
@@ -47,8 +47,8 @@
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: var.$twcss-slate-800;
-		border: 1px solid var.$twcss-gray-200;
+		background-color: map-get(var.$twcss, slate-800);
+		border: 1px solid map-get(var.$twcss, gray-200);
 	}
 	p {
 		padding: 0;
@@ -248,7 +248,7 @@ path.Twitter,
 path.JSON,
 path.RSS {
 	fill: var.$white;
-	@media screen and (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		fill: var.$black;
 	}
 }
@@ -256,8 +256,8 @@ path.RSS {
 circle.Twitter,
 circle.JSON {
 	fill: var.$black;
-	@media screen and (prefers-color-scheme: dark) {
-		fill: var.$twcss-blue-300;
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-300);
 	}
 }
 
@@ -267,9 +267,9 @@ path.MastodonM,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: var.$twcss-blue-700;
-	@media screen and (prefers-color-scheme: dark) {
-		fill: var.$twcss-blue-300;
+	fill: map-get(var.$twcss, blue-700);
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-300);
 	}
 }
 
@@ -279,9 +279,9 @@ a:hover path.MastodonM,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var.$twcss-blue-800;
-	@media screen and (prefers-color-scheme: dark) {
-		fill: var.$twcss-blue-200;
+	fill: map-get(var.$twcss, blue-800);
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-200);
 	}
 }
 
@@ -296,7 +296,7 @@ path.MastodonM {
 // a:hover path.RSS,
 // a:hover path.JSON,
 // a:hover path.MastodonBody {
-// 	@media screen and (prefers-color-scheme: dark) {
+// 	@media (prefers-color-scheme: dark) {
 // 		fill: var.$white;
 // 	}
 // }
