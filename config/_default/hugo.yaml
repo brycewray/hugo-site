@@ -103,7 +103,7 @@ caches:
     # maxAge: 144h # default = -1 (forever)
   getresource:
     dir: :resourceDir/_gen
-    maxAge: 144h # default = -1 (forever)
+    # maxAge: 144h # default = -1 (forever)
 
 minify:
   disableJSON: true

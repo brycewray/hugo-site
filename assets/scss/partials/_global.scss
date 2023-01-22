@@ -2,11 +2,11 @@
 
 html, body {
 	font-family: var.$sans-serif;
-	background-color: map-get(var.$twcss, zinc-100);
+	background-color: var.$twcss-blue-100;
 	color: var.$black;
 	@media (prefers-color-scheme: dark) {
 		background: var.$black;
-		color: map-get(var.$twcss, gray-100);
+		color: var.$twcss-gray-100;
 	}
 	width: 100%;
 	margin: 0 auto;
@@ -32,7 +32,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: normal;
 	letter-spacing: -0.025rem;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, gray-100);
+		color: var.$twcss-gray-100;
 	}
 }
 
@@ -83,16 +83,16 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: map-get(var.$twcss, blue-700);
+	color: var.$twcss-blue-700;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, blue-300);
+		color: var.$twcss-blue-300;
 	}
 }
 
 a:focus, a:hover, a:active {
-	color: map-get(var.$twcss, blue-900);
+	color: var.$twcss-blue-900;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, zinc-300);
+		color: var.$twcss-zinc-300;
 	}
 }
 
@@ -104,17 +104,17 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 .header-anchor {
 	text-decoration: none;
 	color: var.$black;
-	@media (prefers-color-scheme: dark) {
+	@media screen and (prefers-color-scheme: dark) {
 		color: var.$white;
 	}
 	&:hover{
-		color: map-get(var.$twcss, blue-800);
+		color: var.$twcss-blue-800;
 		text-decoration: underline;
 		text-decoration-thickness: var.$textDcThick; // always rem
 		text-underline-offset: var.$textUnOffst; // always em
 		text-decoration-skip-ink: auto;
-		@media (prefers-color-scheme: dark) {
-			color: map-get(var.$twcss, blue-300);
+		@media screen and (prefers-color-scheme: dark) {
+			color: var.$twcss-blue-300;
 		}
 		&::after {
 			font-size: var.$text-base;
@@ -125,14 +125,14 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 }
 
 blockquote {
-	border-left: 4px solid map-get(var.$twcss, zinc-400);
-	color: map-get(var.$twcss, zinc-700);
+	border-left: 4px solid var.$twcss-zinc-400;
+	color: var.$twcss-zinc-700;
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		// border-left is same color
-		color: map-get(var.$twcss, zinc-400);
+		color: var.$twcss-zinc-400;
 	}
 	p:last-child {
 		margin-bottom: 0;
@@ -181,7 +181,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 
 footer {
 	font-family: var.$sans-serif;
-	@media (prefers-color-scheme: dark) {
+	@media screen and (prefers-color-scheme: dark) {
 		background: var.$black;
 	}
 	text-align: center;
@@ -254,9 +254,9 @@ article {
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
 		.red strong, .red b, .red em, .red i {
-			color: map-get(var.$twcss, red-700);
-			@media (prefers-color-scheme: dark) {
-				color: map-get(var.$twcss, red-300);
+			color: var.$twcss-red-700;
+			@media screen and (prefers-color-scheme: dark) {
+				color: var.$twcss-red-300;
 			}
 		}
 	}

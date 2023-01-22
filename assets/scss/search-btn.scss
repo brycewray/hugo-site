@@ -12,23 +12,23 @@
 		color: white;
 		width: 15em;
 		padding: 0.5em 0.25em;
-		background-color: map-get(var.$twcss, blue-700);
-		border: 1px solid map-get(var.$twcss, blue-700);
+		background-color: var.$twcss-blue-700;
+		border: 1px solid var.$twcss-blue-700;
 		border-radius: var.$btn_radius;
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid map-get(var.$twcss, blue-300);
-			background-color: map-get(var.$twcss, blue-300);
+			border: 1px solid var.$twcss-blue-300;
+			background-color: var.$twcss-blue-300;
 			color: var.$black;
 		}
 		&:hover {
 			cursor: pointer;
 		}
 		&:focus, &:active, &:hover {
-			border: 1px solid map-get(var.$twcss, blue-800);
-			background-color: map-get(var.$twcss, blue-800);
+			border: 1px solid var.$twcss-blue-800;
+			background-color: var.$twcss-blue-800;
 			@media (prefers-color-scheme: dark) {
-				border: 1px solid map-get(var.$twcss, blue-50);
-				background-color: map-get(var.$twcss, blue-50);
+				border: 1px solid var.$twcss-blue-50;
+				background-color: var.$twcss-blue-50;
 			}
 		}
 	}

@@ -19,7 +19,7 @@ $tc-padding: 1em;
 	}
 	margin: 1.5rem auto;
 	padding: 1rem;
-	border: 2px solid map-get(var.$twcss, gray-700);
+	border: 2px solid var.$twcss-gray-700;
 	border-radius: 12px;
 	background: var.$white;
 	width: 100%;
@@ -36,7 +36,7 @@ $tc-padding: 1em;
 		max-width: 80ch;
 	}
 	@media (prefers-color-scheme: dark) {
-		background: map-get(var.$twcss, gray-900);
+		background: var.$twcss-gray-900;
 		// background: transparent;
 	}
 	a, a:hover {
@@ -52,11 +52,11 @@ $tc-padding: 1em;
 		- https://css-tricks.com/better-line-breaks-for-long-urls/
 		*/
 		@media (prefers-color-scheme: dark) {
-			color: map-get(var.$twcss, blue-300);
+			color: var.$twcss-blue-300;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
-		border: 2px solid map-get(var.$twcss, gray-200);
+		border: 2px solid var.$twcss-gray-200;
 		color: var.$white;
 	}
 }
@@ -81,9 +81,9 @@ $tc-padding: 1em;
 }
 
 .toot-blockquote-img {
-	border-bottom: 1px solid map-get(var.$twcss, gray-700);
+	border-bottom: 1px solid var.$twcss-gray-700;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-300);
+		border: 1px solid var.$twcss-gray-300;
 	}
 	width: 100%;
 }
@@ -95,9 +95,9 @@ $tc-padding: 1em;
 // ==== END, rounded image "attachment"
 
 a > .card, a > .toot-card {
-	color: map-get(var.$twcss, gray-800);
+	color: var.$twcss-gray-800;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, gray-300);
+		color: var.$twcss-gray-300;
 	}
 }
 
@@ -106,9 +106,9 @@ a > .card, a > .toot-card {
 	// background-color: yellow;
 	margin-top: 1em;
 	border-radius: 12px;
-	border: 1px solid map-get(var.$twcss, gray-700);
+	border: 1px solid var.$twcss-gray-700;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-300);
+		border: 1px solid var.$twcss-gray-300;
 	}
 	p {
 		padding: 0.5em 1em 1em;
@@ -151,9 +151,9 @@ a > .card, a > .toot-card {
 			line-height: 1.375;
 		}
 		&-handle {
-			color: map-get(var.$twcss, gray-700);
+			color: var.$twcss-gray-700;
 			@media (prefers-color-scheme: dark) {
-				color: map-get(var.$twcss, gray-300);
+				color: var.$twcss-gray-300;
 			}
 			font-size: var.$text-sm;
 			line-height: 1;
@@ -168,18 +168,18 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: map-get(var.$twcss, gray-800);
+	color: var.$twcss-gray-800;
 	font-size: var.$text-sm;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, gray-200);
+		color: var.$twcss-gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
 	a {
-		color: map-get(var.$twcss, gray-800);
+		color: var.$twcss-gray-800;
 		@media (prefers-color-scheme: dark) {
-			color: map-get(var.$twcss, gray-200);
+			color: var.$twcss-gray-200;
 		}
 	}
 	/* === needed in Eleventy but not in Hugo
@@ -288,9 +288,9 @@ a > .card, a > .toot-card {
 }
 
 .toot-quoted-tweet {
-	border: 1px solid map-get(var.$twcss, gray-800);
+	border: 1px solid var.$twcss-gray-800;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-200);
+		border: 1px solid var.$twcss-gray-200;
 	}
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
@@ -310,14 +310,14 @@ a > .card, a > .toot-card {
 	p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
 		a {
-			color: map-get(var.$twcss, gray-800);
+			color: var.$twcss-gray-800;
 			@media (prefers-color-scheme: dark) {
-				color: map-get(var.$twcss, gray-200);
+				color: var.$twcss-gray-200;
 			}
 			&:hover {
-				color: map-get(var.$twcss, blue-700);
+				color: var.$twcss-blue-700;
 				@media (prefers-color-scheme: dark) {
-					color: map-get(var.$twcss, blue-300);
+					color: var.$twcss-blue-300;
 				}
 			}
 		}
@@ -328,10 +328,10 @@ a > .card, a > .toot-card {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: map-get(var.$twcss, gray-800);
+	color: var.$twcss-gray-800;
 	font-size: var.$text-sm;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, gray-200);
+		color: var.$twcss-gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
 		display: none;
@@ -343,9 +343,9 @@ a > .card, a > .toot-card {
 	@media screen and (min-width: var.$bkpt_md) {
 		display: flex;
 	}
-	border: 1px solid map-get(var.$twcss, gray-700);
+	border: 1px solid var.$twcss-gray-700;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-200);
+		border: 1px solid var.$twcss-gray-200;
 	}
 	border-radius: 6px;
 	margin-top: 1em;

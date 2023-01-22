@@ -5,21 +5,21 @@ details.comments > summary {
 	color: var.$white;
 	border-radius: var.$btn_radius;
 	margin: 0 auto;
-	border: 1px solid map-get(var.$twcss, blue-700);
-	background-color: map-get(var.$twcss, blue-700);
+	border: 1px solid var.$twcss-blue-700;
+	background-color: var.$twcss-blue-700;
 	padding: 0.5em 0.25em;
 	width: 15em;
 	&:hover {
 		cursor: pointer;
-		background-color: map-get(var.$twcss, blue-700);
+		background-color: var.$twcss-blue-700;
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid map-get(var.$twcss, blue-300);
-			background-color: map-get(var.$twcss, blue-300);
+			border: 1px solid var.$twcss-blue-300;
+			background-color: var.$twcss-blue-300;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, blue-100);
-		background-color: map-get(var.$twcss, blue-100);
+		border: 1px solid var.$twcss-blue-100;
+		background-color: var.$twcss-blue-100;
 		color: var.$black;
 	}
 }

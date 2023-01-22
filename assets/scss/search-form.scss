@@ -33,8 +33,8 @@
 	background-color: var.$white;
 	border: 1px solid var.$black;
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, gray-800);
-		border: 1px solid map-get(var.$twcss, gray-300);
+		background-color: var.$twcss-gray-800;
+		border: 1px solid var.$twcss-gray-300;
 	}
 }
 
@@ -59,24 +59,24 @@
 	right: 0px;
 	margin: 0; // fixes oddity in Safari
 	padding: 3px 12px;
-	border: 1px solid map-get(var.$twcss, blue-700);
+	border: 1px solid var.$twcss-blue-700;
 	font-weight: bold;
-	background-color: map-get(var.$twcss, blue-700);
+	background-color: var.$twcss-blue-700;
 	color: var.$white;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, blue-300);
-		background-color: map-get(var.$twcss, blue-300);
+		border: 1px solid var.$twcss-blue-300;
+		background-color: var.$twcss-blue-300;
 		color: var.$black;
 	}
 	&:hover {
 		cursor: pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid map-get(var.$twcss, blue-700);
-		background-color: map-get(var.$twcss, blue-700);
+		border: 1px solid var.$twcss-blue-700;
+		background-color: var.$twcss-blue-700;
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid map-get(var.$twcss, blue-50);
-			background-color: map-get(var.$twcss, blue-50);
+			border: 1px solid var.$twcss-blue-50;
+			background-color: var.$twcss-blue-50;
 		}
 	}
 }
@@ -106,8 +106,8 @@
 	// border-radius: 9px;
 	background-color: var.$white;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-300);
-		background-color: map-get(var.$twcss, gray-800);
+		border: 1px solid var.$twcss-gray-300;
+		background-color: var.$twcss-gray-800;
 		color: var.$white;
 	}
 }
@@ -133,24 +133,24 @@
 	text-align: center;
 	border-radius: 9px;
 	padding: 3px 12px;
-	border: 1px solid map-get(var.$twcss, blue-700);
+	border: 1px solid var.$twcss-blue-700;
 	font-weight: bold;
-	background-color: map-get(var.$twcss, blue-700);
+	background-color: var.$twcss-blue-700;
 	color: var.$white;
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, blue-300);
-		border-color: map-get(var.$twcss, blue-300);
+		background-color: var.$twcss-blue-300;
+		border-color: var.$twcss-blue-300;
 		color: var.$black;
 	}
 	&:hover {
 		cursor: pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid map-get(var.$twcss, blue-700);
-		background-color: map-get(var.$twcss, blue-700);
+		border: 1px solid var.$twcss-blue-700;
+		background-color: var.$twcss-blue-700;
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid map-get(var.$twcss, blue-50);
-			background-color: map-get(var.$twcss, blue-50);
+			border: 1px solid var.$twcss-blue-50;
+			background-color: var.$twcss-blue-50;
 		}
 	}
 }
@@ -175,10 +175,10 @@
 	// font-family: var.$serif;
 	mark {
 		color: var.$black;
-		background-color: map-get(var.$twcss, blue-200);
+		background-color: var.$twcss-blue-200;
 		@media (prefers-color-scheme: dark) {
 			color: var.$white;
-			background-color: map-get(var.$twcss, blue-900);
+			background-color: var.$twcss-blue-900;
 		}
 	}
 }

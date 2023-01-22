@@ -1,25 +1,15 @@
 @use 'variables' as var;
 
+// === for billboard partial
 .billboard {
 	&-div {
-		background-image: linear-gradient(
-			map-get(var.$twcss, slate-400),
-			map-get(var.$twcss, slate-200) 20%,
-			transparent
-		);
-		@media (prefers-color-scheme: dark) {
-			background-image: linear-gradient(
-				map-get(var.$twcss, slate-700),
-				map-get(var.$twcss, slate-800) 20%,
-				transparent
-			);
-		}
+		// font-family: var.$sans-serif;
 		text-align: center;
 		position: relative;
 		height: auto;
 		padding-right: 1.5rem;
 		padding-left: 1.5rem;
-		padding-bottom: 1vh;
+		padding-bottom: 1vh; // was 5vh with hero images
 		@media screen and (min-width: var.$bkpt_md) {
 			padding-right: 3rem;
 			padding-left: 3rem;
@@ -39,25 +29,36 @@
 		text-align: center;
 		padding-right: 2%;
 		padding-left: 2%;
+		// @media screen and (min-width: var.$bkpt_lg) {
+		//   text-align: left;
+		// }
 	}
 	&-title-text {
 		font-size: clamp(2.25em, 0.75rem + 4vw, 4em);
-		padding-top: 1em;
+		padding-top: 1em; // definitely em, not rem
 		line-height: 1.1;
 		letter-spacing: -0.0375em;
 	}
 	&-description-text {
 		font-size: clamp(1.25rem, 0.75rem + 1.5vw, 2rem);
-		padding-top: 1em;
+		// font-style: italic;
+		// font-family: var.$serif;
+		padding-top: 1em; // definitely em, not rem
 		letter-spacing: -0.025em;
 		line-height: 1.4;
 	}
 	&-p-text {
 		font-size: clamp(1rem, 0.25rem + 1.25vw, 1.5rem);
+		// font-size: 1rem;
 		font-family: var.$sans-serif;
 		line-height: 1.25;
 		margin-top: 1.5em;
 		margin-bottom: 0.25em;
 		text-align: center;
+		// @media screen and (min-width: var.$bkpt_lg) {
+		//   text-align: right;
+		// }
 	}
 }
+
+// === end, for billboard partial
