@@ -1,75 +1,86 @@
 // Colors
 $default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 $white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
-// $background-dark-mode: hsl(0, 0%, 0%); // was #181818
 $black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-// $blue: hsl(228, 100%, 50%); // was 0088ff but that's not sufficient contrast for accessibility
-// $blueFirst: hsl(208, 100%, 50%); // Will use as a hover color only
-// $blueLight: hsl(204, 100%, 83%); // for use with dark mode where supported
-// $blueLightCode: hsl(212, 100%, 94%);
-// $blueLightBtn: hsl(204, 100%, 90%);
-// $darkerblue: hsl(240, 100%, 25%);
-// $darkblue: hsl(240, 100%, 33%);
-// $red: hsl(0, 100%, 41%);
-// $red-dark-mode: hsl(0, 100%, 75%);
-// $gold: hsl(55, 100%, 44%);
-// $bold-dark-mode: hsl(0, 0%, 96%);
-// $bold-blockquote: hsl(0, 0%, 30%);
-// $bold-blockquote-dark-mode: hsl(0, 0%, 72%);
-// $paleBlue: hsl(200, 100%, 92%);
-// $shadow-color: hsla(0, 0%, 0%, 0.2);
-// $code-color: hsl(120, 100%, 20%); // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
-// $code-color-dark-mode: hsl(120, 100%, 77%);
-// $code-bkgd-light-mode: hsl(0, 0%, 96%); // for reference, GitHub uses f6f8fa
-// $code-bkgd-dark-mode: hsl(200, 63%, 15%);
-// $code-color-tan: hsl(40, 100%, 30%);
-// $code-color-blueLight-dark-mode: hsl(197, 100%, 77%);
-// $code-color-orange-dark-mode: hsl(40, 100%, 50%);
-// $twitter-bkgd-dark-mode: hsl(210, 50%, 10%);
-$twcss-blue-50: hsl(214, 100%, 97%);
-$twcss-blue-100: hsl(214, 95%, 93%);
-$twcss-blue-200: hsl(213, 97%, 87%);
-$twcss-blue-300: hsl(212, 96%, 78%);
-$twcss-blue-400: hsl(213, 94%, 68%);
-$twcss-blue-500: hsl(217, 91%, 60%);
-$twcss-blue-600: hsl(221, 83%, 53%);
-$twcss-blue-700: hsl(224, 76%, 48%);
-$twcss-blue-800: hsl(224, 64%, 33%);
-$twcss-blue-900: hsl(224, 64%, 33%);
-$twcss-gray-100: hsl(220, 14%, 96%);
-$twcss-gray-200: hsl(220, 13%, 91%);
-$twcss-gray-300: hsl(216, 12%, 84%);
-$twcss-gray-400: hsl(219, 11%, 65%);
-$twcss-gray-700: hsl(217, 19%, 27%);
-$twcss-gray-800: hsl(215, 28%, 17%);
-$twcss-gray-900: hsl(221, 39%, 11%);
-$twcss-red-300: hsl(0, 94%, 82%);
-$twcss-red-700: hsl(0, 74%, 42%);
-$twcss-red-800: hsl(0, 70%, 35%);
-$twcss-sky-700: hsl(201, 96%, 32%);
-$twcss-sky-800: hsl(201, 90%, 27%);
-$twcss-slate-50: hsl(210, 40%, 98%);
-$twcss-slate-100: hsl(210, 40%, 96%);
-$twcss-slate-200: hsl(214, 32%, 91%);
-$twcss-slate-300: hsl(213, 27%, 84%);
-$twcss-slate-400: hsl(215, 20%, 65%);
-$twcss-slate-500: hsl(215, 16%, 47%);
-$twcss-slate-600: hsl(215, 19%, 35%);
-$twcss-slate-700: hsl(215, 25%, 27%);
-$twcss-slate-800: hsl(217, 33%, 17%);
-$twcss-slate-900: hsl(222, 47%, 11%);
-$twcss-slate-400: hsl(215, 20%, 65%);
-$twcss-zinc-100: hsl(240, 5%, 96%);
-$twcss-zinc-300: hsl(240, 5%, 84%);
-$twcss-zinc-400: hsl(240, 5%, 65%);
-$twcss-zinc-700: hsl(240, 5%, 26%);
-$twcss-zinc-900: hsl(240, 6%, 10%);
+
+// map of selected TWCSS colors
+$twcss: (
+	blue-50: #f0f6ff,
+	blue-100: #dcebfe,
+	blue-200: #bedbfe,
+	blue-300: #91c3fd,
+	blue-400: #61a6fa,
+	blue-500: #3c83f6,
+	blue-600: #2463eb,
+	blue-700: #1d4fd7,
+	blue-800: #1e3b8a,
+	blue-900: #1f3b8a,
+	cyan-200: #a5f3fc,
+	cyan-300: #67e8f9,
+	cyan-600: #0891b2,
+	cyan-700: #0e7490,
+	cyan-800: #155e75,
+	emerald-200: #a7f3d0,
+	emerald-300: #6ee7b7,
+	emerald-600: #059669,
+	emerald-700: #047857,
+	emerald-800: #065f46,
+	fuchsia-200: #f5d0fe,
+	fuchsia-300: #f0abfc,
+	fuchsia-600: #c026d3,
+	fuchsia-700: #a21caf,
+	fuchsia-800: #86198f,
+	gray-100: #f3f4f6,
+	gray-200: #e5e7eb,
+	gray-300: #d1d5db,
+	gray-400: #9ca3b0,
+	gray-700: #384252,
+	gray-800: #1f2937,
+	gray-900: #111827,
+	orange-100: #ffedd5,
+	orange-200: #fed7aa,
+	orange-300: #fdba74,
+	orange-600: #ea580c,
+	orange-700: #c2410c,
+	orange-800: #9a3412,
+	purple-200: #e9d5ff,
+	purple-300: #d8b4fe,
+	purple-700: #7e22ce,
+	purple-800: #6b21a8,
+	red-300: #fca6a6,
+	red-700: #ba1c1c,
+	red-800: #981b1b,
+	sky-200: #bae6fd,
+	sky-300: #7dd3fc,
+	sky-700: #0369a0,
+	sky-800: #075783,
+	slate-50: #f8fafc,
+	slate-100: #f1f5f9,
+	slate-200: #e1e7ef,
+	slate-300: #cbd5e1,
+	slate-400: #94a3b8,
+	slate-500: #65758b,
+	slate-600: #48566a,
+	slate-700: #344256,
+	slate-800: #1d283a,
+	slate-900: #0f1729,
+	stone-50: #fafaf9,
+	stone-100: #f5f5f4,
+	yellow-200: #fef08a,
+	yellow-300: #fde047,
+	yellow-400: #facc15,
+	yellow-600: #ca8a04,
+	yellow-700: #a16207,
+	yellow-800: #854d0e,
+	zinc-100: #f4f4f5,
+	zinc-300: #d4d4d8,
+	zinc-400: #a1a1aa,
+	zinc-700: #3f3f46,
+	zinc-900: #18181b,
+);
 
 // Typography
-/*
-Note from the relevant GitHub SCSS file:
-"SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome"
-*/
+// Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome"
 $sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
