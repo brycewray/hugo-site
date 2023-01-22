@@ -33,6 +33,9 @@
 		text-decoration-thickness: var.$textDcThick; // always rem
 		text-underline-offset: var.$textUnOffst; // always em
 		text-decoration-skip-ink: auto;
+		@media (prefers-color-scheme) {
+			color: map-get(var.$twcss, gray-200);
+		}
 	}
 }
 
