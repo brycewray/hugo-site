@@ -17,7 +17,7 @@ table.noborders {
 	border-collapse: collapse;
 	tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$twcss-gray-200;
+			background-color: map-get(var.$twcss, gray-200);
 			color: var.$black;
 		}
 	}
@@ -35,12 +35,12 @@ table.noborders {
 		background-color: hsl(210, 100%, 94%);
 	}
 	thead {
-		background-color: var.$twcss-blue-900;
+		background-color: map-get(var.$twcss, blue-900);
 		color: var.$white;
 	}
 	thead tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$twcss-blue-900;
+			background-color: map-get(var.$twcss, blue-900);
 		}
 	}
 	thead td {
@@ -88,23 +88,23 @@ table.ulysses {
 		padding: 0;
 	}
 	tr:nth-child(odd) {
-		background-color: var.$twcss-gray-200;
+		background-color: map-get(var.$twcss, gray-200);
 		@media (prefers-color-scheme: dark){
-			background-color: var.$twcss-gray-700;
+			background-color: map-get(var.$twcss, gray-700);
 		}
 	}
 	tr:nth-child(even) {
-		background-color: var.$twcss-blue-50;
+		background-color: map-get(var.$twcss, blue-50);
 		@media (prefers-color-scheme: dark){
-			background-color: var.$twcss-gray-800;
+			background-color: map-get(var.$twcss, gray-800);
 		}
 	}
 	thead th {
-		background-color: var.$twcss-blue-700;
+		background-color: map-get(var.$twcss, blue-700);
 		border: 1px solid var.$black;
 		color: white;
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$twcss-gray-900;
+			background-color: map-get(var.$twcss, gray-900);
 			border: 1px solid var.$white;
 		}
 	}

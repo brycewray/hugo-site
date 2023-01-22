@@ -12,9 +12,9 @@
 	hr {
 		border: none;
 		height: 2px;
-		background-color: var.$twcss-gray-700;
+		background-color: map-get(var.$twcss, gray-700);
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$twcss-gray-300;
+			background-color: map-get(var.$twcss, gray-300);
 		}
 	}
 	ol {
