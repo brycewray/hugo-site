@@ -10,7 +10,7 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var.$sans-serif;
-	background-color: map-get(var.$twcss, zinc-100);
+	background-color: map-get(var.$twcss, slate-100);
 	color: var.$black;
 	@media (prefers-color-scheme: dark) {
 		background: var.$black;
@@ -19,14 +19,14 @@ html, body {
 	@media (min-width: var.$bkpt_lg) {
 		background-image: linear-gradient(
 			map-get(var.$twcss, slate-600),
-			map-get(var.$twcss, slate-200) 7em,
-			transparent
+			map-get(var.$twcss, slate-100) 7em,
+			transparent 10em
 		);
 		@media (prefers-color-scheme: dark) {
 			background-image: linear-gradient(
 				map-get(var.$twcss, slate-500),
 				map-get(var.$twcss, slate-800) 7em,
-				transparent
+				transparent 10em
 			);
 		}
 	}
@@ -106,7 +106,7 @@ a {
 a:focus, a:hover, a:active {
 	color: map-get(var.$twcss, blue-900);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, zinc-300);
+		color: map-get(var.$twcss, slate-300);
 	}
 }
 
@@ -148,14 +148,14 @@ hr {
 }
 
 blockquote {
-	border-left: 4px solid map-get(var.$twcss, zinc-400);
-	color: map-get(var.$twcss, zinc-700);
+	border-left: 4px solid map-get(var.$twcss, slate-400);
+	color: map-get(var.$twcss, slate-700);
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		// border-left is same color
-		color: map-get(var.$twcss, zinc-400);
+		color: map-get(var.$twcss, slate-400);
 	}
 	p:last-child {
 		margin-bottom: 0;

@@ -729,7 +729,7 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	background-color: var.$white;
+	background-color: map-get(var.$twcss, slate-200);
 	@media (prefers-color-scheme: dark) {
 		background-color: map-get(var.$twcss, slate-700);
 	}
