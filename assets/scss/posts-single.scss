@@ -3,7 +3,7 @@
 .bg-dark {
 	// font-family: var.$sans-serif;
 	margin-top: 2.5rem;
-	background-color: map-get(var.$twcss, slate-200);
+	background-color: map-get(var.$twcss, slate-300);
 	@media (prefers-color-scheme: dark) {
 		background-color: map-get(var.$twcss, slate-800);
 	}
@@ -21,7 +21,7 @@
 		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
 	}
 	a {
-		color: map-get(var.$twcss, blue-800);
+		color: map-get(var.$twcss, blue-700); // accessibility per WebAIM
 		text-decoration: none;
 		@media (prefers-color-scheme: dark) {
 			color: map-get(var.$twcss, blue-200);

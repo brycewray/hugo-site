@@ -4,10 +4,6 @@ html, body {
 	font-family: var.$sans-serif;
 	background-color: map-get(var.$twcss, zinc-100);
 	color: var.$black;
-	@media (prefers-color-scheme: dark) {
-		background: var.$black;
-		color: map-get(var.$twcss, gray-100);
-	}
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
@@ -16,6 +12,24 @@ html, body {
 	font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
+	@media (prefers-color-scheme: dark) {
+		background: var.$black;
+		color: map-get(var.$twcss, gray-100);
+	}
+	@media (min-width: var.$bkpt_lg) {
+		background-image: linear-gradient(
+			map-get(var.$twcss, slate-500),
+			map-get(var.$twcss, slate-200) 7em,
+			transparent
+		);
+		@media (prefers-color-scheme: dark) {
+			background-image: linear-gradient(
+				map-get(var.$twcss, slate-500),
+				map-get(var.$twcss, slate-800) 7em,
+				transparent
+			);
+		}
+	}
 }
 
 html {
@@ -181,9 +195,9 @@ audio, canvas, embed, iframe, img, object, svg, video {
 
 footer {
 	font-family: var.$sans-serif;
-	@media (prefers-color-scheme: dark) {
-		background: var.$black;
-	}
+	// @media (prefers-color-scheme: dark) {
+	// 	background: var.$black;
+	// }
 	text-align: center;
 	font-size: var.$text-xs;
 	margin: 4rem auto 0 auto;

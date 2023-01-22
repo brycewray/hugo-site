@@ -2,18 +2,6 @@
 
 .billboard {
 	&-div {
-		background-image: linear-gradient(
-			map-get(var.$twcss, slate-400),
-			map-get(var.$twcss, slate-200) 20%,
-			transparent
-		);
-		@media (prefers-color-scheme: dark) {
-			background-image: linear-gradient(
-				map-get(var.$twcss, slate-700),
-				map-get(var.$twcss, slate-800) 20%,
-				transparent
-			);
-		}
 		text-align: center;
 		position: relative;
 		height: auto;

@@ -1,7 +1,7 @@
 @use 'variables' as var;
 
 header, .nav, .nav-Menu {
-	background-color: map-get(var.$twcss, slate-200);
+	background-color: map-get(var.$twcss, slate-300);
 	@media (prefers-color-scheme: dark) {
 		background-color: map-get(var.$twcss, slate-800);
 	}
