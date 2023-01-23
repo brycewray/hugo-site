@@ -87,19 +87,21 @@ Here's a simplified[^CFP] version of one of the Hugo "sub`head`" partials, the `
 
 (To save some processing power during development, I can use Hugo's [`partialCached`](https://gohugo.io/functions/partialcached/) function with the first and last entries because they apply to every page on the site and, thus, neither have nor need content-seeking conditionals.)
 
-Unlike the ordeal of months ago, putting all this into practice took literally only a few minutes per each separate type of content (the similarities among the various Hugo partials made it even easier to create new ones), thanks in no small part to the always amazing speed and stability of Hugo. While this isn't (yet) a true [critical CSS](https://web.dev/extract-critical-css/) approach, it shows a dependencies-free way to get closer to one.
+Unlike the ordeal of months ago, putting all this into practice took literally only a few minutes per each separate type of content (the similarities among the various Hugo partials made it even easier to create new ones), thanks in no small part to the always amazing speed and stability of Hugo.
+
+~~As for whether the results were worth it: use your browser's Inspector tool as you skim through the site; and notice how the CSS files load, and *which* CSS files load, based on what's on each page.~~ While this isn't (yet) a true [critical CSS](https://web.dev/extract-critical-css/) approach, it shows a dependencies-free way to get closer to one.
 
 ----
 
 ## *Update, 2023-01-23*
 
-Over the ensuing weekend, I did some more thinking about this, and came up with what I think is a even better way.
+Over the ensuing weekend, I did some more thinking about this, and came up with what I think is a even better way (hence the strikethroughs, above).
 
 The main problem with what I'd done above was that it would generate and download more external CSS files, which are always [render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/). The answer to *that* seemed to be obvious --- namely, the use of *internal* CSS, wherein one puts styling in the `head` section rather than using external files; **but** going whole-hog with that method would impair the site's ability to [cache for the second load](https://web.dev/love-your-cache/).
 
 I ended up with a hybrid solution I'd seen mentioned elsewhere: put only the critical CSS in one external file, while loading all the conditional styling as internal CSS.[^critical] Thus, now, my `head.html` template needs only:
 
-[^critical]: Of course, the key to that is making sure to identify what styling truly is critical for every page on the site. I'll likely refine that over time; but some of the clearer choices were the nav bar header, footer, and (as of this writing) web fonts.
+[^critical]: Of course, the key to that is identifying which styling truly is critical for every page on the site. I'll likely refine that over time, but some of the easy choices were the nav bar header, footer, and (as of this writing) web fonts. Beyond that --- which is where the ongoing refinements will come into play --- it got a bit more complicated.
 
 ```go-html-template
 {{- partialCached "head-criticalcss.html" . -}}
