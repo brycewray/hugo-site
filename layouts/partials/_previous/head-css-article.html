@@ -1,0 +1,10 @@
+{{- $compOutput := (dict "outputStyle" "compressed") -}}
+
+{{- $optionsArticle := (dict "transpiler" "dartsass") -}}
+{{- $optionsArticleComp := merge $optionsArticle $compOutput -}}
+
+{{- if (or (and (eq .Section "posts") (ne .Title "Posts")) (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?")) -}}
+	{{- with resources.Get "scss/article.scss" | resources.ToCSS $optionsArticleComp -}}
+		<style{{ if eq $.Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }}>{{ .Content | safeCSS }}</style>
+	{{- end }}
+{{- end }}
