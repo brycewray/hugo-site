@@ -1,13 +1,90 @@
 		{{- $css := "" -}}
-		{{- $optionsCSS := (dict "transpiler" "dartsass" "targetPath" "css/index.css") -}}
-		{{- $optionsCSSComp := merge $optionsCSS (dict "outputStyle" "compressed") -}}
-		{{- if hugo.IsProduction -}}
-			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSSComp | fingerprint "md5" -}}
-			<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
-			<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-		{{- else -}}
-			{{- $css = resources.Get "scss/index.scss" | resources.ToCSS $optionsCSS | fingerprint "md5" -}}
-			<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+		{{- $cssOptions := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
+
+		{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}
+			{{- with resources.Get "scss/social.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
 		{{- end }}
-		<noscript><style>.nScrHidden {display: none;}</style></noscript>
+
+		{{- if (findRE `(<pre|<code)` .Content 1) -}}
+			{{- with resources.Get "scss/code.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if (findRE `<table` .Content 1) -}}
+			{{- with resources.Get "scss/tables.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if (findRE `<lite-youtube` .Content 1) -}}
+			{{- with resources.Get "scss/lite-yt-embed.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if (or (ne .Title "Home page") (ne .Title "Search the site") (ne .Title "Sitemap") (ne .Title "Posts")) -}}
+			{{- with resources.Get "scss/billboard.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if (or (and (eq .Section "posts") (ne .Title "Posts")) (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?")) -}}
+			{{- with resources.Get "scss/article.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if (and (eq .Section "posts") (ne .Title "Posts")) -}}
+			{{- with resources.Get "scss/posts-single.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if eq .Title "Posts" }}
+			{{- with resources.Get "scss/posts-list.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if (findRE `class="footnote-ref"` .Content 1) -}}
+			{{- with resources.Get "scss/footnotes.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if eq .Title "Home page" }}
+			{{- with resources.Get "scss/home.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if eq .Title "Sitemap (HTML form)" }}
+			{{- with resources.Get "scss/sitemaphtml.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if ne .Title .Site.Params.SearchTitle }}
+			{{- with resources.Get "scss/search-btn.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if eq .Title .Site.Params.SearchTitle }}
+			{{- with resources.Get "scss/search-form.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if (findRE `<details>` .Content 1) -}}
+			{{- with resources.Get "scss/details.scss" | resources.ToCSS $cssOptions -}}
+				{{- $css = print $css (.Content | safeCSS) -}}
+			{{- end }}
+		{{- end }}
+
+		{{- if ne $css "" -}}
+			<style{{ if eq $.Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }}>{{ $css | safeCSS }}</style>
+		{{- end }}
