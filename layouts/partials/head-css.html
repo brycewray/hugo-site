@@ -86,5 +86,5 @@
 		{{- end }}
 
 		{{- if ne $css "" -}}
-			<style{{ if eq $.Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }}>{{ $css | safeCSS }}</style>
+			<style{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }}>{{ $css | safeCSS }}</style>
 		{{- end }}
