@@ -1,0 +1,1074 @@
+@charset 'utf-8';
+@use 'partials/variables' as var;
+
+// *** START, reset ***
+//
+// 	h/t to Andy Bell
+// 	https://piccalil.li/blog/a-modern-css-reset/
+// 	. . . as of 2021-07-09
+
+// Box sizing rules
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// Remove default margin
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+// Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+// Set core root defaults
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+// Set core body defaults
+body {
+	min-height: 100vh;
+	// text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+// A elements that don't have a class get default styles
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+// Make images easier to work with
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+// Remove all animations, transitions and smooth scroll for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+	 scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+//
+// ===========================================================================
+// ADDITIONAL, 2022-02-11 . . .
+// per https://css-tricks.com/your-css-reset-needs-text-size-adjust-probably/
+// ===========================================================================
+//
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+// *** END, reset ***
+
+
+// *** START, fonts ***
+// === Libre Franklin, variable ===
+// ===
+// references:
+// https://thetrevorharmon.com/blog/how-to-prepare-and-use-variable-fonts-on-the-web
+// https://rwt.io/typography-tips/getting-bent-current-state-italics-variable-font-support
+// ===
+// public-sans-regular - latin
+@font-face {
+	font-family: 'Libre Franklin';
+	font-weight: 1 999;
+	font-style: normal;
+	font-display: swap;
+	// optional is best for first-run CLS checks; swap looks better on one-hit
+	src: url('/fonts/LibreFranklin-Roman-VariableFont_subset.woff2') format('woff2-variations'), url('/fonts/LibreFranklin-Roman-VariableFont_subset.woff2') format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Libre Franklin';
+	font-weight: 1 999;
+	font-style: italic;
+	font-display: swap;
+	// optional is best for first-run CLS checks; swap looks better on one-hit
+	src: url('/fonts/LibreFranklin-Italic-VariableFont_subset.woff2') format('woff2-variations'), url('/fonts/LibreFranklin-Italic-VariableFont_subset.woff2') format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+// *** END, fonts
+
+
+// *** START, global
+
+html, body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	-moz-osx-font-smoothing: auto; // only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
+	-webkit-font-feature-settings: "liga" 1;
+	font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
+	text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-family: var.$sans-serif;
+	background-color: map-get(var.$twcss, slate-100);
+	color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		background: var.$black;
+		color: map-get(var.$twcss, gray-100);
+	}
+	@media (min-width: var.$bkpt_lg) {
+		background-image: linear-gradient(
+			map-get(var.$twcss, slate-600),
+			map-get(var.$twcss, slate-100) 7em,
+			transparent 10em
+		);
+		@media (prefers-color-scheme: dark) {
+			background-image: linear-gradient(
+				map-get(var.$twcss, slate-500),
+				map-get(var.$twcss, slate-800) 7em,
+				transparent 10em
+			);
+		}
+	}
+}
+
+html {
+	// scroll-behavior: smooth;
+	scroll-padding-top: 80px;
+}
+
+p, li {
+	line-height: 1.4;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	// font-family: var.$sans-serif;
+	font-weight: normal;
+	letter-spacing: -0.025rem;
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, gray-100);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	outline: 2px transparent;
+	outline-offset: 2px;
+	&:active, &:focus, &:hover {
+		outline: 2px transparent;
+		outline-offset: 2px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	margin-block-start: 0.25rem;
+	margin-block-end: 0.25rem;
+}
+
+h3, .h3, h5, .h5 {
+	font-style: italic;
+}
+
+h1, .h1 {
+	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
+	// usually overridden by other styling (e.g., billboard.scss)
+}
+
+h2, .h2 {
+	font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
+}
+
+h3, .h3 {
+	font-size: clamp(1.375rem, 0.5rem + 1.75vw, 1.75rem);
+}
+
+h4, .h4 {
+	font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
+}
+
+h5, .h5, h6, .h6 {
+	font-size: clamp(1.125rem, 1.375vw, 1.25rem);
+}
+
+a, a:focus, a:hover, a:active {
+	text-decoration-thickness: var.$textDcThick; // always rem
+	text-underline-offset: var.$textUnOffst; // always em
+	text-decoration-skip-ink: auto;
+}
+
+a {
+	color: map-get(var.$twcss, blue-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, blue-300);
+	}
+}
+
+a:focus, a:hover, a:active {
+	color: map-get(var.$twcss, blue-900);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, slate-300);
+	}
+}
+
+a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
+	border-bottom: 0;
+	text-decoration: none;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		background-color: var.$white;
+	}
+}
+
+blockquote {
+	border-left: 4px solid map-get(var.$twcss, slate-400);
+	color: map-get(var.$twcss, slate-700);
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 1.5em;
+	@media (prefers-color-scheme: dark) {
+		// border-left is same color
+		color: map-get(var.$twcss, slate-400);
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+sub, sup {
+	font-size: 65%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.45em;
+}
+ul li li, ol li li, ul li li li, ol li li li {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+ul li li {
+	list-style-type: circle;
+}
+
+ol li li {
+	list-style-type: disc;
+}
+
+ul li li li, ol li li li {
+	list-style-type: square;
+}
+
+#content-main-hugo, main {
+	padding-top: 40px;
+}
+
+#content-main-hugo .topOfMain, main .topOfMain {
+	margin-top: 0.5rem;
+	font-size: 2.25rem;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	vertical-align: middle;
+}
+
+footer {
+	font-family: var.$sans-serif;
+	// @media (prefers-color-scheme: dark) {
+	// 	background: var.$black;
+	// }
+	text-align: center;
+	font-size: var.$text-xs;
+	margin: 4rem auto 0 auto;
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	p {
+		line-height: 1.5em; // definitely em, not rem, here
+	}
+	div.footerWrapper {
+		margin: 0 auto;
+		width: 80%;
+		p {
+			margin: 1rem 0;
+		}
+		div.icons-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 1em;
+		}
+	}
+	@media (min-width: var.$bkpt_lg) {
+		margin: 2rem auto 0 auto;
+		// padding-bottom: 1rem;
+		div.footerWrapper {
+			width: 65%;
+			height: 100%;
+		}
+	}
+}
+
+.container {
+	// width: 90%;
+	margin: 0 auto;
+	&-narrower {
+		margin: 1rem auto 0 auto;
+		width: 80%;
+		@media screen and (min-width: var.$bkpt_lg) {
+			width: 50%;
+			// max-width: 65ch;
+		}
+		@media screen and (min-width: var.$bkpt_2xl) {
+			width: 45%;
+			// max-width: 65ch;
+		}
+		@media screen and (min-width: var.$bkpt_3xl) {
+			width: 40%;
+		}
+		// figure img, img {
+		//   width: 100%;
+		//   height: auto;
+		// }
+	}
+}
+
+li p {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}
+
+// *** END, global ***
+
+
+// *** START, utilities ***
+
+
+.ctr {
+	text-align: center;
+}
+.red {
+	color: map-get(var.$twcss, red-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, red-300);
+	}
+}
+
+.legal {
+	font-size: var.$text-xs;
+}
+.pokey {
+	font-size: var.$text-sm;
+}
+.sansSerif {
+	font-family: var.$sans-serif;
+}
+.serif {
+	font-family: var.$serif;
+}
+.tightLead {
+	line-height: 1.25;
+}
+.nobrk, .nowrap {
+	white-space: nowrap;
+}
+.text-nowrap {
+	white-space: nowrap;
+	font-size: inherit;
+}
+.bg-center {
+	background-position: center;
+}
+
+.box {
+	font-family: var.$sans-serif;
+	font-size: 85%;
+	display: block;
+	box-sizing: border-box;
+	background-color: var.$white;
+	border: 1px solid var.$black;
+	margin: 0.5em auto;
+	width: 100%;
+	padding: 1em 1.25em;
+	@media (prefers-color-scheme: dark) {
+		background-color: map-get(var.$twcss, slate-800);
+		border: 1px solid map-get(var.$twcss, gray-200);
+	}
+	p {
+		padding: 0;
+		margin: 0;
+	}
+	+ hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+		margin-top: 1.75em;
+	}
+	code {
+		background-color: map-get(var.$twcss, slate-100);
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, slate-600);
+		}
+	}
+	a code {
+		// background-color: map-get(var.$twcss, slate-100);
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, slate-700);
+		}
+	}
+	.red {
+		color: map-get(var.$twcss, red-600);
+		@media (prefers-color-scheme: dark) {
+			color: map-get(var.$twcss, red-400);
+		}
+	}
+}
+
+img.containedImage {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
+}
+img.ctrImg {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.img-phn {
+	width: 90%;
+	@media screen and (min-width: var.$bkpt_md) {
+		width: 50%;
+	}
+}
+.imgcCaption {
+	font-family: var.$sans-serif;
+	padding: 0;
+	margin-block-start: 0.5em;
+	line-height: 1.375;
+	font-size: 0.75em;
+	text-align: center;
+}
+.relative {
+	position: relative;
+}
+.w-full {
+	width: 100%;
+}
+.h-full {
+	height: 100%;
+}
+.h-auto {
+	height: auto;
+}
+.mx-auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+.w-auto {
+	width: auto;
+}
+.inline {
+	display: inline;
+}
+
+.punctuationExample {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: var.$serif;
+	text-align: center;
+}
+
+.indentAfterLI {
+	margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
+	&.box {
+		$bIALImarginLeft: 3em;
+		margin-left: $bIALImarginLeft;
+		width: calc(100% - $bIALImarginLeft);
+	}
+}
+
+
+/* start, for 404 page */
+
+.FourOhFour {
+	&-Wrapper {
+		padding-top: 10vh;
+	}
+	&-Body {
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		h1 {
+			font-size: var.$text-4xl;
+			margin-bottom: 3rem;
+			@media screen and (min-width: var.$bkpt_lg) {
+				font-size: 3.25rem;
+			}
+			@media screen and (min-width: var.$bkpt_xl) {
+				font-size: 3.5rem;
+			}
+		}
+		p {
+			font-size: var.$text-2xl;
+		}
+		.bottom {
+			margin-bottom: 10em;
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.animate-fade {
+	animation: fadeIn 750ms ease-in-out;
+}
+
+// start, text/LH classes from TWCSS
+// =================================
+
+.text-xs {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.text-sm {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.text-base {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+.text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+
+.text-5xl, .text-6xl, .text-7xl, .text-8xl, .text-9xl {
+	line-height: 1;
+}
+
+.text-5xl {
+	font-size: 3rem;
+}
+
+.text-6xl {
+	font-size: 3.75rem;
+}
+
+.text-7xl {
+	font-size: 4.5rem;
+}
+
+.text-8xl {
+	font-size: 6rem;
+}
+
+.text-9xl {
+	font-size: 8rem;
+}
+
+// ===============================
+// end, text/LH classes from TWCSS
+
+.mono {
+	font-family: var.$monospaced;
+}
+
+circle.GitHub,
+circle.RSS,
+path.MastodonBody,
+path.Twitter,
+path.JSON,
+path.RSS {
+	fill: var.$white;
+	@media (prefers-color-scheme: dark) {
+		fill: var.$black;
+	}
+}
+
+circle.Twitter,
+circle.JSON {
+	fill: var.$black;
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-300);
+	}
+}
+
+path.GitHub,
+circle.MastodonCircle,
+path.MastodonM,
+circle.Twitter,
+circle.RSS,
+circle.JSON {
+	fill: map-get(var.$twcss, blue-700);
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-300);
+	}
+}
+
+a:hover path.GitHub,
+a:hover circle.MastodonCircle,
+a:hover path.MastodonM,
+a:hover circle.Twitter,
+a:hover circle.RSS,
+a:hover circle.JSON {
+	fill: map-get(var.$twcss, blue-800);
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-200);
+	}
+}
+
+path.MastodonBody,
+path.MastodonM {
+	fill-rule:nonzero;
+}
+
+// // needed only if using darker bkgd in dark mode
+// a:hover circle.GitHub,
+// a:hover path.Twitter,
+// a:hover path.RSS,
+// a:hover path.JSON,
+// a:hover path.MastodonBody {
+// 	@media (prefers-color-scheme: dark) {
+// 		fill: var.$white;
+// 	}
+// }
+
+// *** END, utilities ***
+
+
+// *** START, nav ***
+
+header, .nav, .nav-Menu {
+	background-color: map-get(var.$twcss, slate-300);
+	@media (prefers-color-scheme: dark) {
+		background-color: map-get(var.$twcss, slate-800);
+	}
+}
+
+header {
+	font-family: var.$sans-serif;
+	position: fixed;
+	width: 100%;
+	margin-top: 0;
+	z-index: 9999;
+}
+
+.nav {
+	color: var.$white;
+	&-Toggle {
+		position: absolute;
+		cursor: pointer;
+		margin: 0rem 1rem;
+		right: 0;
+		svg {
+			width: 1.5rem;
+			fill: map-get(var.$twcss, slate-800);
+			@media (prefers-color-scheme: dark) {
+				fill: map-get(var.$twcss, slate-50);
+			}
+		}
+		.close {
+			display: none;
+		}
+		.menu {
+			margin-top: 0.2rem;
+		}
+	}
+	&-Checkbox {
+		display: none;
+	}
+	&-Menu {
+		margin-block-start: 0;
+		margin-block-end: 0;
+		padding-inline-start: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		text-align: right;
+		// align-items: right;
+		margin: 0.5rem 0.5rem 0.5rem 0;
+		li {
+			list-style: none;
+			display: none;
+			font-weight: bold;
+			padding-right: 0.75em;
+			&.notMobile {
+				display: none;
+			}
+			&:first-child {
+				padding: 0;
+				margin-right: auto;
+				margin-left: 1.5rem;
+				display: block;
+				svg { // for site logo
+					width: auto;
+				}
+			}
+		}
+		a {
+			text-decoration: none;
+			border: 0;
+			color: var.$black;
+			&:focus, &:active, &:hover {
+				color: map-get(var.$twcss, slate-600);
+			}
+			@media (prefers-color-scheme: dark) {
+				color: var.$white;
+				&:focus, &:active, &:hover {
+					color: map-get(var.$twcss, slate-200);
+				}
+			}
+		}
+		// svg {
+		// 	width: 1.5rem;
+		// 	fill: var.$white;
+		// }
+		// // possibly unused...
+		// // see `.nav > svg` above
+	}
+}
+
+#nav-Checkbox {
+	&:checked ~ ul.nav-Menu li {
+		display: block;
+	}
+	&:checked ~ label.nav-Toggle .close {
+		display: block;
+	}
+	&:checked ~ label.nav-Toggle .menu {
+		display: none;
+	}
+	&:checked ~ ul.nav-Menu {
+		padding-bottom: 1rem;
+	}
+}
+
+@media only screen and (min-width: var.$bkpt_lg) {
+	.nav {
+		&-Toggle {
+			display: none;
+		}
+		&-Menu {
+			flex-direction: row;
+			padding: 0;
+			gap: 0.5rem;
+			margin: 0.5rem 1.5rem 0 0;
+			li {
+				font-size: var.$text-sm;
+				display: block;
+				text-transform: uppercase;
+				margin: 0.5rem 0 0.5rem 0;
+				&.notMobile {
+					display: block;
+				}
+				&:first-child {
+					letter-spacing: normal;
+					line-height: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+// *** END, nav ***
+
+
+// *** START, vweights ***
+
+// ====
+// FOR USE **ONLY** WITH FONTS WITH VARIABLE WEIGHTS
+// --------
+// As of 2022-05-15, this includes system fonts such as San Francisco (macOS/iOS) and Segoe UI (Windows); not worrying about Linux distros because they're all over the map on this as with so many other specs.
+// ====
+
+b,
+strong {
+	font-weight: 600;
+}
+
+.header-anchor::after {
+	font-weight: 425;
+}
+h1,
+.h1,
+.background-hero-title-text,
+.billboard-title-text,
+.posts-Head,
+.homePost-Latest,
+.sitemap-Div h1 {
+	font-weight: 600;
+	letter-spacing: -0.05em;
+}
+
+.homeOpen h1 {
+	font-weight: 600;
+	letter-spacing: -0.0375em;
+}
+
+h2,
+.h2,
+article h2,
+article .h2,
+h3,
+.h3,
+article h3,
+article .h3,
+h4,
+.h4,
+article h4,
+article .h4,
+h5,
+.h5,
+article h5,
+article .h5,
+h6,
+.h6,
+article h6,
+article .h6,
+.homePost-Title,
+.posts-Title {
+	font-weight: 550;
+	letter-spacing: -0.025em;
+}
+
+.prevnextP {
+	letter-spacing: -0.025em;
+}
+
+.billboard-description-text,
+.posts-Description,
+.homePost-Description {
+	font-weight: 300;
+}
+
+.posts-Description,
+.homePost-Description {
+	letter-spacing: -0.025em;
+}
+
+.billboard-description-text {
+	letter-spacing: -0.0375em;
+}
+
+.billboard-p-text,
+.homePost-Dates,
+.posts-Dates {
+	letter-spacing: -0.025em;
+}
+
+.footnotes li,
+.footnotes li p,
+.yellowBox,
+.blueBox,
+.tweet-card div,
+.tweet-card a,
+.tweet-card p {
+	letter-spacing: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+	.header-anchor::after {
+		font-weight: 375;
+	}
+	h1,
+	.h1,
+	.background-hero-title-text,
+	.billboard-title-text,
+	.posts-Head,
+	.homePost-Latest {
+		font-weight: 550;
+	}
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6,
+	.homePost-Title,
+	.posts-Title {
+		font-weight: 500;
+	}
+	.homePost-Title,
+	.posts-Title {
+		font-weight: 500;
+	}
+	b,
+	strong {
+		font-weight: 700;
+	}
+}
+
+// *** END, vweights ***
+
+// *** START, print ***
+
+// based on https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
+
+@media print {
+	#content-main-hugo, main {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	header,
+	footer,
+	.bg-dark,
+	.background-hero-div,
+	.hero,
+	[class^="imgB-"],
+	.contactBtn,
+	.searchBtnDiv,
+	.giscus-comments,
+	.featured-image-caption * {
+		display: none !important;
+	}
+	@page {
+		margin: 1in;
+	}
+	html,
+	body,
+	[class^="background-hero"] {
+		font-family: sans-serif;
+		background-color: transparent !important;
+		color: #000 !important;
+	}
+	pre, code {
+		font-family: monospace !important;
+		white-space: pre-wrap !important;
+		word-wrap: break-word !important;
+		overflow-x: auto !important;
+	}
+	code[class*="language-"], pre[class*="language-"] {
+		color: white;
+	}
+	:not(pre) > code[class*="language-"], pre[class*="language-"] {
+		background: #000;
+	}
+	.chroma * {
+		color: white !important;
+	}
+	article code {
+		background-color: #ddd;
+	}
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+	.yellowBox, .blueBox {
+		background-color: #fff;
+	}
+	[class^="background-hero"] {
+		position: relative !important;
+		background: none !important;
+		text-shadow: none !important;
+		margin-top: 0 !important;
+		padding-top: 0 !important;
+		height: auto !important;
+		max-height: auto !important;
+		min-height: auto !important;
+		color: #000 !important;
+		padding: 1em !important;
+	}
+	.imgCover {
+		object-fit: cover;
+		object-position: 50% 50%; // H = middle; V = middle
+		height: 100%;
+		width: 100%;
+	}
+	.background-hero .imgCover {
+		display: none !important;
+		height: 0 !important;
+	}
+	a {
+		color: #000 !important;
+	}
+	a[target="_blank"]::after {
+		margin: 0;
+		content: "";
+		// "new window" indication obviously unneeded in print
+	}
+	.container-narrower {
+		width: 90% !important;
+	}
+	article:after {
+		content: "Site textual content © 2018–2022 Bryce Wray except where otherwise noted.";
+		color: #000;
+		margin: 2em auto 0 auto;
+		text-align: center;
+		font-size: var.$text-xs;
+		padding-top: 2em;
+	}
+}
+
+// *** END, print ***
