@@ -709,7 +709,12 @@ pre.chroma {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #2d2d2d;
+	color: var.$black;
+	background-color: var.$white;
+	@media (prefers-color-scheme: dark) {
+		color: var.$white;
+		background-color: map-get(var.$twcss, slate-800);
+	}
 }
 
 // Inline code
