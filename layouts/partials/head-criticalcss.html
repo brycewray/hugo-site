@@ -1,14 +1,14 @@
-		{{- $compOutput := (dict "outputStyle" "compressed") -}}
+	{{- $compOutput := (dict "outputStyle" "compressed") -}}
 
-		{{- $css := "" -}}
-		{{- $optionsCSSCritical := (dict "transpiler" "dartsass" "targetPath" "css/critical.css") -}}
-		{{- $optionsCSSCriticalComp := merge $optionsCSSCritical $compOutput -}}
-		{{- if hugo.IsProduction -}}
-			{{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCriticalComp | fingerprint "md5" -}}
-			<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
-			<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-		{{- else -}}
-			{{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCritical | fingerprint "md5" -}}
-			<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-		{{- end }}
+	{{- $css := "" -}}
+	{{- $optionsCSSCritical := (dict "transpiler" "dartsass" "targetPath" "css/critical.css") -}}
+	{{- $optionsCSSCriticalComp := merge $optionsCSSCritical $compOutput -}}
+	{{- if hugo.IsProduction -}}
+		{{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCriticalComp | fingerprint "md5" -}}
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
+		<link{{ if eq .Site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+	{{- else -}}
+		{{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCritical | fingerprint "md5" -}}
+		<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+	{{- end }}
