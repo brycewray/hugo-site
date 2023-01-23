@@ -1,6 +1,6 @@
 ---
 title: "Code, meet mode"
-description: "As part of a site touchup, I bow to popular wishes and make code blocks look friendlier."
+description: "As part of a site touchup, I bow to popular wishes and make code blocks look friendlier."
 author: Bryce Wray
 date: 2023-01-23T12:56:00-06:00
 # draft: true
