@@ -111,111 +111,51 @@ I ended up with a hybrid solution I'd seen mentioned elsewhere: put only the cri
 And, as for `head-css.html`, it puts **all** those conditionals in one file and gradually builds the internal CSS:
 
 ```go-html-template
-{{/* Init vars */}}
 {{- $css := "" -}}
-{{- $cssOptions := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
+{{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
+{{- $condition := "" -}}
+{{- $fileName := "" -}}
+{{/* initialize, then populate, booleans for `findRE` actions */}}
+{{- $conditionSocial := false -}}
+{{- $conditionCode := false -}}
+{{- $conditionTables := false -}}
+{{- $conditionLiteYT := false -}}
+{{- $conditionFootnotes := false -}}
+{{- $conditionDetails := false -}}
+{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
+{{- if (findRE `(<pre|<code)` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
+{{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
+{{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
+{{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
+{{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}
 
-{{/* Embedded Mastodon content */}}
-{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}
-	{{- with resources.Get "scss/social.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
+{{- $cssTypes := slice -}}{{/* init big slice */}}
+{{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
+{{- $cssTypes = append slice (slice (or (ne .Title "Home page") (ne .Title "Search the site") (ne .Title "Sitemap") (ne .Title "Posts")) "billboard") $cssTypes -}}
+{{- $cssTypes = append slice (slice (or (and (eq .Section "posts") (ne .Title "Posts")) (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?")) "article") $cssTypes -}}
+{{- $cssTypes = append slice (slice (and (eq .Section "posts") (ne .Title "Posts")) "posts-single") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title "Posts") "posts-list") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title "Home page") "home") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title "Sitemap (HTML form)") "sitemaphtml") $cssTypes -}}
+{{- $cssTypes = append slice (slice (ne .Title .Site.Params.SearchTitle) "search-btn") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title .Site.Params.SearchTitle) "search-form") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}
 
-{{/* Code blocks and/or inline code */}}
-{{- if (findRE `(<pre|<code)` .Content 1) -}}
-	{{- with resources.Get "scss/code.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
+{{- range $cssTypes -}}
+	{{- $condition = index . 0 -}}
+	{{- $fileName = index . 1 -}}
+	{{- if eq $condition true -}}
+		{{- with resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
+			{{- $css = print $css (.Content | safeCSS) -}}
+		{{- end -}}
+	{{ end -}}
+{{- end -}}
 
-{{/* Tables */}}
-{{- if (findRE `<table` .Content 1) -}}
-	{{- with resources.Get "scss/tables.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Embedded YouTube videos */}}
-{{- if (findRE `<lite-youtube` .Content 1) -}}
-	{{- with resources.Get "scss/lite-yt-embed.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* The "billboard" styling atop most pages */}}
-{{- if (or (ne .Title "Home page") (ne .Title "Search the site") (ne .Title "Sitemap") (ne .Title "Posts")) -}}
-	{{- with resources.Get "scss/billboard.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Posts, privacy, contact, about */}}
-{{- if (or (and (eq .Section "posts") (ne .Title "Posts")) (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?")) -}}
-	{{- with resources.Get "scss/article.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Individual posts */}}
-{{- if (and (eq .Section "posts") (ne .Title "Posts")) -}}
-	{{- with resources.Get "scss/posts-single.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Paginated posts list */}}
-{{- if eq .Title "Posts" }}
-	{{- with resources.Get "scss/posts-list.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Pages with footnotes */}}
-{{- if (findRE `class="footnote-ref"` .Content 1) -}}
-	{{- with resources.Get "scss/footnotes.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Home page */}}
-{{- if eq .Title "Home page" }}
-	{{- with resources.Get "scss/home.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* HTML sitemap  */}}
-{{- if eq .Title "Sitemap (HTML form)" }}
-	{{- with resources.Get "scss/sitemaphtml.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Every page **except** the search page */}}
-{{- if ne .Title .Site.Params.SearchTitle }}
-	{{- with resources.Get "scss/search-btn.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Search page */}}
-{{- if eq .Title .Site.Params.SearchTitle }}
-	{{- with resources.Get "scss/search-form.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* <details><summary> */}}
-{{- if (findRE `<details>` .Content 1) -}}
-	{{- with resources.Get "scss/details.scss" | resources.ToCSS $cssOptions -}}
-		{{- $css = print $css (.Content | safeCSS) -}}
-	{{- end }}
-{{- end }}
-
-{{/* Now, put it all together... */}}
-{{- if ne $css "" -}}
+{{- if ne $css "" }}
 	<style>{{ $css | safeCSS }}</style>
 {{- end }}
-
 ```
