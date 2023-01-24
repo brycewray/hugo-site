@@ -14,7 +14,7 @@
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
 		{{/* conditional CSS */}}
 		{{- partialCached "head-criticalcss.html" . -}}
-		{{- partial "head-css.html" . -}}
+		{{- partial "head-css.html" . }}
 		<noscript><style>.nScrHidden {display: none;}</style></noscript>
     {{- if hugo.IsProduction }}
 		{{- /* Fathom script */}}
