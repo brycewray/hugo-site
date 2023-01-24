@@ -36,6 +36,9 @@ What advantages do you gain from having these features?
 **Update, 2022-12-22**: If you experience inconsistent behavior with the code provided below, try developing in Eleventy **without** the [`--incremental` switch](https://www.11ty.dev/docs/usage/#incremental-for-partial-incremental-builds), which as of this writing can cause issues in some versions.
 {.box}
 
+<strong class="red">Update, 2023-01-24</strong>: The Eleventy site now has [officially documentation and code](https://www.11ty.dev/docs/quicktips/draft-posts/) which you'll likely find preferable to what's contained here. Although the official suggestion is obstensibly about only the draft status aspect and not the timestamping, the documentation notes, "You might imagine how this could be extended to add a publishing date feature too: to exclude content from builds before a specific date set in a post's front matter (or elsewhere in the data cascade)."
+{.box}
+
 Eleventy's [**computed data** feature](https://www.11ty.dev/docs/data-computed/) lets you (quoting the documentation) "inject Data properties into your data object that are based on other data values."
 
 For our purposes here, we'll use `eleventyComputed` to determine each content file's worthiness for publication based on the file's draft status and timestamp. And, because we want Eleventy to make this happen through the project, we'll put the code in the project's *[global data directory](https://www.11ty.dev/docs/data-global/)*, making its results available to all of the project's templates. Typically, that directory is a top-level `_data` folder, so I'll use that placement in the code example below. [In order to work right](https://www.11ty.dev/docs/data-computed/#advanced-details), the file itself must be named `eleventyComputed.js`.[^noteReName]
