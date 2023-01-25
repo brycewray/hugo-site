@@ -17,20 +17,9 @@ So why did I leave it?
 
 Well, at least as of this writing, I haven't *completely* left it; my account there is in "redirect" mode, and all the posts/toots I made there over the last few months remain intact. However, putting it in that mode moved the account's followers to the [mstdn.social account](https://mstdn.social/@BryceWrayTX) which, through the kind help of mstdn.social admin [@stux](https://mstdn.social/@stux), I'd gotten reactivated months after I deleted it.
 
-It wasn't that there was anything wrong with Fosstodon. Rather, I decided, **I** wasn't entirely right for **it**. I reached this conclusion after seeing, and briefly participating in, a thread which began last night with this item by another Fosstodon user:
+It wasn't that there was anything wrong with Fosstodon. Rather, I decided, **I** wasn't entirely right for **it**. I reached this conclusion after seeing, and briefly participating in, a thread which began last night with this from another Fosstodon user:
 
 {{< stoot "fosstodon.org" "109644650964219975" >}}
-
-<!--
-How many of you #Mastodon users have more than one account, addressing different audiences?
-
-I keep finding myself hesitant to post or share political posts on my tech-oriented server.
-
-Michael Airhart (he/him)
-@mairhart@fosstodon.org
-
-10:36 PM • January 6, 2023 (UTC)
--->
 
 . . . but please read [the entire thread](https://fosstodon.org/@mairhart/109644650964219975) so you'll get the full picture.
 
@@ -45,3 +34,19 @@ In the end, I decided it would be better if I were on a less specifically target
 After all, I didn't want to risk being (or continuing to be) one of Those Guys:
 
 {{< lite-youtube videoTitle="Those Guys" videoId="DgGg4TNvhME" >}}
+
+<!--
+
+https://fosstodon.org/@mairhart/109644650964219975
+
+> How many of you [#Mastodon](https://fosstodon.org/tags/Mastodon) users have more than one account, addressing different audiences?
+>
+> I keep finding myself hesitant to post or share political posts on my tech-oriented server.
+> 
+> <span class="legal">10:36 PM • January 6, 2023 (UTC)</span>
+
+Michael Airhart (he/him)
+@mairhart@fosstodon.org
+
+10:36 PM • January 6, 2023 (UTC)
+-->
