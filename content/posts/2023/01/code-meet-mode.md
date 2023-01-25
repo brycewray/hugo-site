@@ -17,9 +17,14 @@ The only thing about doing that, however, is that you first have to select from 
 
 [^Prism]: This situation isn't markedly different when I'm maintaining the site with [Eleventy](https://11ty.dev), during which time I use styling based on one of [numerous themes](https://prismjs.com/download.html#themes=prism) available from the [Prism.js website](https://prismjs.com).
 
-That's why, this past Saturday on Mastodon, I posted a poll about the subject. Although it got only 139 votes over its twenty-four-hour life, it had roughly these percentages from the beginning:
+That's why, this past Saturday on Mastodon, I [posted](https://mstdn.social/@BryceWrayTX/109727880716272847) a poll about the subject. Although it got only 139 votes over its twenty-four-hour life, it had roughly these percentages from the beginning:
 
-{{< stoot "mstdn.social" "109727880716272847" >}}
+| Response                | Result |
+| ----------------------- | ---------- |
+| Match my chosen mode    | **79.9%**  |
+| Have a dark background  | **20.1%**  |
+| Have a light background | **‌[Zero]**     |
+{.ulysses}
 
 These results made it pretty clear to me what I should do.
 
