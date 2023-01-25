@@ -37,7 +37,7 @@
 }
 
 .box {
-	font-family: var.$sans-serif;
+	// font-family: var.$sans-serif;
 	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
@@ -96,7 +96,7 @@ img.ctrImg {
 	}
 }
 .imgcCaption {
-	font-family: var.$sans-serif;
+	// font-family: var.$sans-serif;
 	padding: 0;
 	margin-block-start: 0.5em;
 	line-height: 1.375;
@@ -139,36 +139,6 @@ img.ctrImg {
 		$bIALImarginLeft: 3em;
 		margin-left: $bIALImarginLeft;
 		width: calc(100% - $bIALImarginLeft);
-	}
-}
-
-
-/* start, for 404 page */
-
-.FourOhFour {
-	&-Wrapper {
-		padding-top: 10vh;
-	}
-	&-Body {
-		text-align: center;
-		margin-right: auto;
-		margin-left: auto;
-		h1 {
-			font-size: var.$text-4xl;
-			margin-bottom: 3rem;
-			@media screen and (min-width: var.$bkpt_lg) {
-				font-size: 3.25rem;
-			}
-			@media screen and (min-width: var.$bkpt_xl) {
-				font-size: 3.5rem;
-			}
-		}
-		p {
-			font-size: var.$text-2xl;
-		}
-		.bottom {
-			margin-bottom: 10em;
-		}
 	}
 }
 

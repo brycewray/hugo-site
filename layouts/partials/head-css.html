@@ -30,6 +30,7 @@
 		{{- $cssTypes = append slice (slice (ne .Title .Site.Params.SearchTitle) "search-btn") $cssTypes -}}
 		{{- $cssTypes = append slice (slice (eq .Title .Site.Params.SearchTitle) "search-form") $cssTypes -}}
 		{{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}
+		{{- $cssTypes = append slice (slice (eq .Title "404 Page not found") "fourohfour") $cssTypes -}}
 
 		{{- range $cssTypes -}}
 			{{- $condition = index . 0 -}}

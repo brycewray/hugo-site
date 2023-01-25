@@ -1,0 +1,29 @@
+@charset 'utf-8';
+@use 'partials/variables' as var;
+
+.FourOhFour {
+	&-Wrapper {
+		padding-top: 10vh;
+	}
+	&-Body {
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		h1 {
+			font-size: var.$text-4xl;
+			margin-bottom: 3rem;
+			@media screen and (min-width: var.$bkpt_lg) {
+				font-size: 3.25rem;
+			}
+			@media screen and (min-width: var.$bkpt_xl) {
+				font-size: 3.5rem;
+			}
+		}
+		p {
+			font-size: var.$text-2xl;
+		}
+		.bottom {
+			margin-bottom: 10em;
+		}
+	}
+}
