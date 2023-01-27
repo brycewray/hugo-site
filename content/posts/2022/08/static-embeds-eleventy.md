@@ -31,12 +31,12 @@ Due to changes in the status and/or availability of one or more Twitter APIs, pe
 
 Using the `stoot.js` shortcode in Markdown brings up the following:
 
-{{< stoot "fosstodon.org" "108896692414393920" >}}
+{{< stoot "mastodon.social" "108335994944738270" >}}
 
 You can find this shortcode's most current repo version [here](https://github.com/brycewray/eleventy_site/blob/main/src/assets/utils/stoot.js). Invoke it in Markdown as in this example, where the first parameter represents the toot's Mastodon instance and the second represents the toot's numeric ID:
 
 ```md
-{% stoot "fosstodon.org" "108896692414393920" %}
+{% stoot "mastodon.social", "108335994944738270" %}
 ```
 
 Note that it assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch), [`luxon`](https://github.com/moment/luxon), and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
