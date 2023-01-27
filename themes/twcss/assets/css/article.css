@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+article {
+	h1, h2, h3, h4 {
+		@apply mt-8 mb-6 !tracking-tight;
+	}
+	p {
+		@apply mt-6 mb-6;
+	}
+	p, li {
+		@apply lg:fluid-lg !leading-normal !tracking-normal;
+	}
+	ul {
+		li li, li li li, li li li li {
+			@apply my-2;
+		}
+	}
+	hr + ul {
+		@apply mt-4;
+	}
+	blockquote {
+		@apply px-6 text-zinc-700 dark:text-zinc-400 border-l-4 border-zinc-400;
+	}
+	hr {
+		@apply border-solid border-zinc-900 dark:border-zinc-100;
+	}
+}

@@ -1,0 +1,73 @@
+table.leagues {
+	@apply w-[90%] md:w-[60%] mt-4 mb-0 mx-auto border-0 border-collapse;
+}
+
+table.leagues td.col {
+	@apply w-1/2;
+}
+
+@media (min-width: 900px) {
+  table.noborders {
+    width: 90%;
+  }
+}
+
+table.noborders {
+	@apply w-full md:w-[90%] border-0 border-collapse mt-6 mb-4 mx-auto;
+}
+
+table.noborders td {
+	@apply text-gray-800 text-left align-middle py-1 pr-0 pl-2;
+}
+
+table.noborders td img {
+	@apply inline-block align-middle m-0;
+}
+
+table.noborders tr {
+	@apply bg-white;
+}
+
+table.noborders tr:nth-child(even) {
+	@apply bg-gray-300;
+}
+
+table.noborders thead tr {
+	@apply bg-blue-800;
+}
+
+table.noborders thead td {
+	@apply text-white font-bold;
+}
+
+table.noborders td.td70 {
+	@apply w-[70%];
+}
+
+table.noborders td.td70 img {
+	@apply block w-1/2 max-w-[50%] h-auto;
+}
+
+table.noborders td.td30 {
+	@apply w-[30%];
+}
+
+table.ulysses {
+	@apply w-full table-fixed border-collapse;
+}
+
+table.ulysses td {
+	@apply text-center border border-black dark:border-white dark:text-white;
+}
+
+table.ulysses tr:nth-child(odd) {
+	@apply bg-white dark:bg-slate-500;
+}
+
+table.ulysses tr:nth-child(even) {
+	@apply bg-sky-300 dark:bg-slate-800;
+}
+
+table.ulysses thead th {
+	@apply bg-blue-800 dark:bg-slate-800 border border-black dark:border-white text-white;
+}

@@ -1,0 +1,72 @@
+/*
+based on https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
+*/
+
+@media print {
+	#content-main-hugo, main {
+		@apply w-full m-0 float-none;
+	}
+	header,
+	footer,
+	.bg-dark,
+	.background-hero-div,
+	.imgc-div,
+	.hero,
+	[class^="imgB-"],
+	.contactBtn,
+	.searchBtnDiv,
+	.featured-image-caption * {
+		@apply !hidden;
+	}
+	@page {
+		margin: 1in;
+	}
+	html,
+	body {
+		@apply font-sans bg-transparent !text-black;
+	}
+	pre, code {
+		@apply !font-mono !whitespace-pre-wrap !overflow-x-auto;
+		word-wrap: break-word !important;
+	}
+	code[class*="language-"], pre[class*="language-"] {
+		@apply text-white;
+	}
+	:not(pre) > code[class*="language-"], pre[class*="language-"] {
+		@apply bg-black;
+	}
+	.chroma * {
+		@apply !text-white;
+	}
+	article code {
+		@apply bg-gray-300;
+	}
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+	.box {
+		@apply bg-white;
+	}
+	a {
+		@apply !text-black border !border-black;
+	}
+	a.header-anchor {
+		@apply !border-0;
+	}
+
+	a[target="_blank"]::after {
+		@apply m-0;
+		content: "";
+		/* "new window" indication obviously unneeded in print */
+	}
+
+	.container-narrower {
+		@apply !w-[90%];
+		width: 90% !important;
+	}
+	article:after {
+		content: "Site textual content © 2018–2023 Bryce Wray except where otherwise noted.";
+		@apply text-black mt-8 mb-0 mx-auto text-center text-xs pt-8;
+	}
+}
