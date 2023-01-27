@@ -39,7 +39,7 @@
 		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
 	}
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-		@apply font-semibold;
+		@apply font-medium;
 	}
 	a {
 		@apply underline underline-offset-[0.25em] decoration-[0.05rem] text-blue-700 dark:text-blue-300;
@@ -64,6 +64,9 @@
 		@apply list-disc;
 	}
 	ul li li {
+		@apply list-circle;
+	}
+	ul li li li {
 		@apply list-square;
 	}
 	ul, ol {
@@ -88,7 +91,7 @@
 		@apply whitespace-nowrap;
 	}
 	.box {
-		@apply fluid-sm block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-4 mb-2;
+		@apply fluid-sm lg:fluid-base block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-4 mb-2;
 		& p {
 			@apply p-0 m-0;
 		}
@@ -134,5 +137,8 @@
 		& .ellipsis::after {
 			content: "...";
 		}
+	}
+	.punctuationExample {
+		@apply fluid-lg lg:fluid-xl font-serif font-normal text-center;
 	}
 }

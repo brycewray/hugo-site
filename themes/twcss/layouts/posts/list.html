@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="text-center px-10 w-full mx-auto" data-pagefind-ignore>
-    <h1 class="pt-16 lg:pt-24 fluid-3xl !tracking-tight">Posts</h1>
+    <h1 class="pt-20 lg:pt-24 fluid-2xl lg:fluid-3xl !tracking-tight">Posts</h1>
     <div class="post-line"></div>
     <div class="my-0 mx-auto w-[85%] lg:w-3/4 2xl:w-[62.5%]">
 
@@ -12,11 +12,11 @@
 
 			{{ range $paginator.Pages }}
       <div>
-        <h2 class="fluid-xl font-medium !leading-tight !tracking-tight mb-2"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="fluid-lg font-light !tracking-tight mt-2 mb-2">
+        <h2 class="fluid-lg lg:fluid-xl font-medium lg:!leading-tight !tracking-tight mb-2"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="fluid-base lg:fluid-lg font-light !tracking-tight mt-2 mb-2">
           {{ .Description }}
         </p>
-        <p class="fluid-base !tracking-normal mt-0 mb-8">
+        <p class="fluid-sm lg:fluid-base !tracking-normal mt-0 mb-8">
 					{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
         </p>
       </div>

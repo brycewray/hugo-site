@@ -45,7 +45,7 @@
 }
 
 .pagefind-ui__search-input {
-	@apply w-[17em] text-left outline-none py-1 pr-2 border border-black dark:border-gray-300 bg-white dark:bg-gray-800 dark:text-white;
+	@apply w-[17em] text-left outline-none py-1 px-2 border border-black dark:border-gray-300 bg-white dark:bg-gray-800 dark:text-white;
 	max-width: 300ch;
 }
 
@@ -67,6 +67,9 @@
 .pagefind-ui__result {
 	/* li for list */
 	@apply mt-3;
+	&-title, &-excerpt {
+		@apply tracking-normal;
+	}
 }
 
 .pagefind-ui__results-area {
@@ -81,9 +84,9 @@
 }
 
 .pagefind-ui__result-excerpt mark {
-	@apply text-black dark:text-white bg-blue-200 dark:bg-blue-900;
+	@apply text-black dark:text-white bg-blue-100 dark:bg-blue-900;
 }
 
 .pagefind-ui__result-title {
-	@apply font-bold;
+	@apply font-bold mb-0;
 }

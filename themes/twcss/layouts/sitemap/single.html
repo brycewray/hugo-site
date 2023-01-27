@@ -2,21 +2,21 @@
 {{ define "main" }}
 
 <div class="sm:w-5/6 md:w-4/5 lg:w-7/12 mr-auto ml-auto px-6 lg:px-16" data-pagefind-ignore>
-	<h1 class="font-[600] dark:font-[550] text-center pt-16 lg:pt-24 fluid-3xl">Sitemap</h1>
-	<h2 class="text-2xl my-6">Main pages</h2>
+	<h1 class="font-[600] dark:font-[550] text-center pt-20 lg:pt-24 fluid-3xl !tracking-normal">Sitemap</h1>
+	<h2 class="fluid-2xl !tracking-normal my-6">Main pages</h2>
 	<ul>
-		<li class="text-sm my-4"><a href="{{ .Site.BaseURL }}">Home page</a></li>
-		<li class="text-sm my-4"><a href="{{ .Site.BaseURL }}about/">About me</li>
-		<li class="text-sm my-4"><a href="{{ .Site.BaseURL }}search/">Search page</li>
-		<li class="text-sm my-4"><a href="{{ .Site.BaseURL }}privacy/">Privacy policy</a></li>
-		<li class="text-sm my-4"><a href="{{ .Site.BaseURL }}contact/">How to contact me</a></li>
+		<li class="fluid-sm !tracking-normal my-4"><a href="{{ .Site.BaseURL }}">Home page</a></li>
+		<li class="fluid-sm !tracking-normal my-4"><a href="{{ .Site.BaseURL }}about/">About me</li>
+		<li class="fluid-sm !tracking-normal my-4"><a href="{{ .Site.BaseURL }}search/">Search page</li>
+		<li class="fluid-sm !tracking-normal my-4"><a href="{{ .Site.BaseURL }}privacy/">Privacy policy</a></li>
+		<li class="fluid-sm !tracking-normal my-4"><a href="{{ .Site.BaseURL }}contact/">How to contact me</a></li>
 	</ul>
-	<h2 class="text-2xl my-6">Posts</h2>
+	<h2 class="fluid-2xl !tracking-normal my-6">Posts</h2>
 	<ul>
-		<li class="text-sm my-4"><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
+		<li class="fluid-sm !tracking-normal my-4"><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
 	{{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
 		{{- if (ne .Title "Posts") -}}
-		<li class="text-sm my-4">
+		<li class="fluid-sm !tracking-normal my-4">
 			<strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong>{{- if ne (substr .Title 0 22) "The site this week: 20" -}}&nbsp;&nbsp;<span class="legal nobrk"><strong>{{ .PublishDate.Format "2006-01-02" }}</strong></span>{{- end -}}<br />
 			<span class="description">{{ .Description | .Page.RenderString }}</span>
 		</li>

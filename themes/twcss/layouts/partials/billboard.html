@@ -9,17 +9,17 @@
 {{- $wordCount := $wordsToCount | countwords -}}
 {{- $readingTime := div (float $wordCount) 225 | math.Ceil -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
-<div class="font-sans container h-auto w-full min-w-full relative overflow-hidden pt-6 md:pt-12 px-4 md:px-8 2xl:px-20">
+<div class="container h-auto w-full min-w-full relative overflow-hidden pt-6 md:pt-12 px-4 md:px-12 2xl:px-20">
 	<div class="block w-full pt-10 md:pt-4">
-		<h1 class="font-[550] text-center fluid-3xl lg:fluid-4xl !tracking-tighter !leading-tight mt-2 mb-4 md:mt-6 md:mb-6 2xl:mt-16">{{ .Title | .Page.RenderString }}</h1>
+		<h1 class="font-[550] text-center fluid-3xl lg:fluid-4xl !tracking-tighter !leading-tight mt-6 md:mt-8 lg:mt-12 2xl:mt-16 mb-4 md:mb-6">{{ .Title | .Page.RenderString }}</h1>
 		{{- if and .Params.Description (ne .Title .Site.Params.SearchTitle) }}
-			<p class="text-center md:block fluid-xl !tracking-tight font-[300] mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">{{ .Description }}</p>
+			<p class="text-center md:block fluid-lg lg:fluid-xl !tracking-tight font-[300] mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">{{ .Description }}</p>
 		{{- end }}
 		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}
-		<p class="text-center fluid-lg !tracking-tight px-4 md:px-0 mt-8 mb-0 md:mt-0" data-pagefind-ignore>
+		<p class="text-center fluid-base lg:fluid-lg !tracking-tight px-4 md:px-0 mt-8 mb-0 md:mt-0" data-pagefind-ignore>
 			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 		</p>
-		<p class="text-center fluid-xs" data-pagefind-ignore>
+		<p class="text-center fluid-xs !tracking-normal" data-pagefind-ignore>
 			{{- if $.GitInfo -}}Latest&nbsp;commit:&nbsp;<a class="font-mono" href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>{{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") -}},&nbsp;{{ .Lastmod.Format "2006-01-02" }}{{- end -}}{{- else -}}&nbsp;{{- end -}}{{- if (and (ne .Title "Want to reach me?") (ne .Title "Privacy policy") ) -}}<br />{{ $wordCountFmt }} words &bull; Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}{{- end -}}
 		</p>
 		{{- end -}}

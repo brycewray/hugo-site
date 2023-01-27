@@ -22,7 +22,7 @@ table.noborders {
 	tr {
 		@apply bg-white;
 		&:nth-child(even) {
-			@apply bg-gray-100;
+			@apply bg-sky-100;
 		}
 	}
 	thead {
@@ -38,17 +38,19 @@ table.noborders {
 table.ulysses {
 	@apply w-full table-fixed border-collapse;
 	td {
-		@apply text-center border border-black dark:border-white dark:text-white;
+		@apply text-center border border-black;
+		@apply dark:border-white dark:text-white;
+		/* two `apply` statements because of a glitch in VS Code linting */
 	}
 	tr {
 		&:nth-child(odd) {
-			@apply bg-white dark:bg-slate-600;
+			@apply bg-white dark:bg-slate-700;
 		}
 		&:nth-child(even) {
-			@apply bg-emerald-100 dark:bg-emerald-800;
+			@apply bg-emerald-100 dark:bg-teal-800;
 		}
 	}
 	thead th {
-		@apply bg-blue-800 dark:bg-slate-800 border border-black dark:border-white text-white;
+		@apply bg-blue-800 dark:bg-sky-900 border border-black dark:border-white text-white;
 	}
 }
