@@ -5,6 +5,8 @@ author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
 ---
 
+{{% disclaimer %}}
+
 As I suggested in a [recent post](/posts/2018/09/why-finally-settled-ulysses/), I'm more than a little hung up on on-screen type; so I thought I'd do a little two-part series on website typography and share some appropriate insights and tips. They come from two decades as a web designer and three-and-a-half decades as a writer and formatter --- oh, and nearly six decades of reading. Perhaps you'll find them useful.
 
 ## Readability&nbsp;.&nbsp;.&nbsp;.&nbsp;! Do you _speak_ it?
