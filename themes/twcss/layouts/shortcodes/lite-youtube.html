@@ -1,0 +1,12 @@
+<script src="/assets/js/lite-yt-embed_2022-01-17.js"></script>
+
+{{- $videoId := .Get "videoId"  -}}
+{{- $videoTitle := .Get "videoTitle" -}}
+
+<lite-youtube videoid="{{ $videoId }}" data-bg="url('https://i.ytimg.com/vi/{{ $videoId }}/hqdefault.jpg')"{{ with .Get "params" }}  params="{{ . }}"{{ end }}>
+	<button type="button" class="lty-playbtn">
+		<span class="lyt-visually-hidden">Play video: {{ $videoTitle }}</span>
+	</button>
+</lite-youtube>
+<noscript><p class="fluid-xs text-center"><em>[Video playback capability requires JavaScript to be&nbsp;enabled.]</em></p></noscript>
+<p class="mt-2 fluid-sm text-center"><strong class="text-red-700 dark:text-red-300">Note</strong>: Clicking&nbsp;the&nbsp;video constitutes your consent to view&nbsp;it via&nbsp;YouTube (including&nbsp;cookies). To&nbsp;view&nbsp;it on the YouTube&nbsp;site instead, please&nbsp;use&nbsp;<a href="https://www.youtube.com/watch?v={{ $videoId }}" rel="noopener">this&nbsp;link</a>.</p>

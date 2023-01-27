@@ -1,0 +1,170 @@
+{{/*
+	Simulates results from the v2 Twitter API prior to
+	inclusion of video/GIF items. This is for use if we
+	delete our account completely, including Twitter Dev access.
+	=======
+	Based on...
+	- https://github.com/hugomd/blog/blob/6ad96b24117255c2a9912c566ffd081bd9bbd6f1/layouts/shortcodes/statictweet.html
+	- https://hugo.md/post/update-rendering-static-tweets/
+	- https://github.com/KyleMit/eleventy-plugin-embed-tweet
+	- https://github.com/astro-community/astro-embed/blob/main/packages/astro-embed-twitter/Tweet.astro
+	... and, as of 2022-07-25...
+	- https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687
+	- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/twitter.html
+	- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/twitter_simple.html
+	- https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/get-statuses-oembed
+	=======
+*/}}
+
+{{- $QT_text := "" -}}
+{{- $card := "" -}}
+{{- $RT := "" -}}
+{{- $RT_text := "" -}}
+{{- $user := .Get "user"  -}}
+{{- $id := .Get "id" -}}
+{{- $mp4Counter := 0 -}}
+{{- $urlOembed := printf "https://twitter.com/%v/status/%v" $user $id -}}
+{{- $query := querify "url" $urlOembed "dnt" true "omit_script" true -}}
+{{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
+{{- $urlSynd := printf "https://cdn.syndication.twimg.com/tweet?id=%v" $id -}}
+{{- $currentPage := .Page -}}{{/* h/t to DFD on that one */}}
+
+{{- with resources.GetRemote $urlSynd -}}
+{{- if (resources.GetRemote $urlSynd).Err -}}
+	<blockquote class="tweet-card">
+		<p class="ctr legal">[Source not online<br />
+		at time of site build.]</p>
+	</blockquote>
+{{- else -}}
+  {{ $json := unmarshal .Content -}}
+	{{- $text := $json.text -}}
+	{{- $textBefore := $text -}}{{/* pre-HTML-subs */}}
+
+	{{- $jsonOembed := resources.GetRemote $request -}}
+	{{- $jsonOembed = $jsonOembed | transform.Unmarshal -}}
+	{{- $jsonOHTML := $jsonOembed.html -}}
+
+	{{- if isset $json "in_reply_to_screen_name" -}}
+		{{- $RT_text = "Replying to" -}}
+		{{- $RT_text = print $RT_text " " (print "<a href='https://twitter.com/" $json.in_reply_to_screen_name "' rel='noopener' class='twitterExt'>@" $json.in_reply_to_screen_name "</a>") -}}
+		{{- $RT_text = $RT_text | $currentPage.RenderString -}}
+	{{- end -}}
+
+	{{- if isset $json "entities" -}}
+		{{- if isset $json.entities "user_mentions" -}}
+			{{- range $user := $json.entities.user_mentions -}}
+				{{- $text = replace $text (printf "@%s" $user.screen_name) (printf "<a href='https://twitter.com/%s' rel='noopener' class='twitterExt'>@%s</a>" $user.screen_name $user.screen_name) -}}
+			{{- end -}}
+		{{- end -}}
+		{{- if isset $json.entities "hashtags" -}}
+			{{- range $hashtags := $json.entities.hashtags -}}
+				{{- $text = replace $text (printf "#%s" $hashtags.text) (printf "<a href='https://twitter.com/hashtag/%s?src=hash&ref_src=twsrc' rel='noopener' class='twitterExt'>#%s</a>" $hashtags.text $hashtags.text) -}}
+			{{- end -}}
+		{{- end -}}
+		{{- if isset $json.entities "media" -}}
+			{{- range $media := $json.entities.media -}}
+				{{- $text = replace $text $media.url "" -}}
+			{{- end -}}
+		{{- end -}}
+		{{- if isset $json.entities "urls" -}}
+			{{- range $url := $json.entities.urls -}}
+				{{- $text = replace $text $url.url (printf "<a href='%s' rel='noopener' class='twitterExt'>%s</a>" $url.url $url.display_url) -}}
+			{{- end -}}
+			{{- /* next will delete text from message incl. URLs, so... :-( */ -}}
+			{{- /*
+			{{- if isset $json "card" -}}
+				{{- range $url := $json.entities.urls -}}
+					{{- $text = replace $text $url.display_url "" -}}
+				{{- end -}}
+			{{- end -}}
+			*/ -}}
+		{{- end -}}
+	{{- end -}}
+
+	{{- if isset $json "quoted_tweet" -}}
+		{{- $QT_text = $json.quoted_tweet.text -}}
+		{{- if isset $json.quoted_tweet "entities" -}}
+			{{- if isset $json.quoted_tweet.entities "urls" -}}
+				{{- range $QT_urls := $json.quoted_tweet.entities.urls -}}
+					{{- $QT_text = replace $QT_text $QT_urls.url $QT_urls.display_url -}}
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}
+		{{- if isset $json "entities" -}}
+			{{- if isset $json.entities "urls" -}}
+				{{- range $entUrls := $json.entities.urls -}}
+					{{- $text = replace $text $entUrls.display_url "" -}}
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+
+
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">` `` -}}
+	{{- $jsonOHTML = $jsonOHTML | replaceRE `</p>.*` `` -}}
+
+	{{- $jsonOHTML = replace $jsonOHTML "!<a" "! <a" -}}
+	{{- $jsonOHTML = replace $jsonOHTML ".<a" ". <a" -}}
+	{{- $jsonOHTML = replace $jsonOHTML ":<a" ": <a" -}}
+
+	{{- $tweetLink := print "https://twitter.com/" $json.user.screen_name "/status/" $id -}}
+
+	{{- if eq (substr $text 0 1) " " -}}
+		{{- $text = (substr $text 1) -}}
+		{{- /*
+			Tests for opening spaces in reply-to cases,
+			to avoid inadvertent code blocks' being
+			generated by .RenderString (same would be
+			needed for markdownify, for that matter).
+		*/ -}}
+	{{- end -}}
+	{{- $text = $text | $currentPage.RenderString -}}
+
+	<!-- p class="pokey">{{ $textBefore }}</ !-->
+	<blockquote class="tweet-card" cite="{{ $tweetLink }}">
+		<div class="tweet-header">
+			<a class="tweet-profile" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">
+				<img src="{{ $json.user.profile_image_url_https }}" alt="Twitter avatar for {{ $json.user.screen_name}}" loading="lazy" />
+			</a>
+			<div class="tweet-author">
+				<a class="tweet-author-name" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">{{ $json.user.name }}</a>
+				<a class="tweet-author-handle" href="https://twitter.com/{{ $json.user.screen_name}}" rel="noopener">@{{ $json.user.screen_name}}</a>
+			</div>
+		</div>
+		{{- if ne $RT_text "" -}}
+			<p class="pokey tweet-reply-to">
+				{{- $RT_text -}}
+			</p>
+		{{- end }}
+		{{- /*  {{ $text | $currentPage.RenderString }}  */ -}}
+		{{- /*
+			Doesn't need a `p` tag because it's
+			in the .RenderString, and thus makes
+			for too much space.
+		*/ -}}
+		{{ $jsonOHTML | safeHTML }}
+		{{- if isset $json "photos" -}}
+			{{- $imageCount := len $json.photos -}}
+			<div class="tweet-img-grid-{{ $imageCount }}">
+				{{- range $item := $json.photos -}}
+					<img src="{{ $item.url }}" alt="Image from tweet {{ $id }}" class="tweet-media-img" loading="lazy" />
+				{{- end }}
+			</div>
+		{{- end }}
+		{{- with $json -}}
+			{{- if isset $json "quoted_tweet" -}}
+				{{- with $json.quoted_tweet -}}
+					{{- $quoted_tweet := . -}}
+					<div class="tweet-quoted-tweet">
+						<p class="pokey tweet-quoted-tweet-head"><img class="tweet-quoted-tweet-profile-image" src="{{ $quoted_tweet.user.profile_image_url_https }}" />&nbsp;<strong>{{ $quoted_tweet.user.name }}</strong> @{{ $quoted_tweet.user.screen_name }} &bull; <a href="https://twitter.com/{{ $quoted_tweet.user.screen_name }}/status/{{ $quoted_tweet.id_str }}" class="tweet-date" rel="noopener">{{ dateFormat "January 2, 2006" $quoted_tweet.created_at }}</a> <span class="legal">(UTC)</span></p>
+						<p>{{ $currentPage.RenderString $QT_text }}</p>
+					</div>
+				{{- end }}
+			{{- end }}
+		{{- end }}
+		<div class="tweet-footer">
+			<a href='https://twitter.com/{{ $json.user.screen_name }}/status/{{ $json.id_str }}' rel='noopener'>{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="legal">(UTC)</span></p>
+		</div>
+	</blockquote>
+{{- end }}
+{{- end -}}
