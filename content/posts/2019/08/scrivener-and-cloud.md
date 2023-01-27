@@ -13,7 +13,7 @@ However, there are tech sites where I've usually found the visitors, even when h
 
 [Ars Technica](https://arstechnica.com) is one of those special, all-too-rare places.
 
-Yet, I recently found a commenter there wielding highly erroneous information concerning that rare thing about which I know enough to say, "Uh, no" --- specifically, how the writing app, [Scrivener](https://www.literatureandlatte.com/scrivener/overview), does and doesn't work where cloud sync is concerned. So, on the chance that this unexpected sighting of wrong-Ars[^sorry] statements means there are numerous otherwise-well-informed individuals in the wild spreading the same tainted info, I'm Here To Help.<sup style="font-size: 65%;">&trade;</sup>
+Yet, I recently found a commenter there wielding highly erroneous information concerning that rare thing about which I know enough to say, "Uh, no" --- specifically, how the writing app, [Scrivener](https://www.literatureandlatte.com/scrivener/overview), does and doesn't work where cloud sync is concerned. So, on the chance that this unexpected sighting of wrong-Ars[^sorry] statements means there are numerous otherwise-well-informed individuals in the wild spreading the same tainted info, I'm Here To Help.<sup>&trade;</sup>
 
 [^sorry]: Sorry, it was too easy to pass up. I'm weak.
 
