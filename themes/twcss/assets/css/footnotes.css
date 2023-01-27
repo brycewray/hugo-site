@@ -1,21 +1,36 @@
+/* == footnotes == */
+
+/* .footnotes, .footnote-sim, .footnote-ref { */
+/* 	font-family: var.$sans-serif; */
+/* } */
+
+.footnotes {
+	@apply pt-2;
+	hr {
+		@apply border-0 h-[2px] bg-gray-700 dark:bg-gray-300;
+	}
+	ol {
+		padding-inline-start: 1.5rem;
+	}
+	ol li {
+		@apply fluid-sm;
+		/* As of now, `::marker` has too little support even in good browsers;
+		see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties */
+		p {
+			@apply fluid-sm my-4;
+		}
+	}
+	.footnote-backref {
+		@apply fluid-sm;
+	}
+}
+
 .footnote-sim {
-	@apply text-blue-700 dark:text-blue-300;
+	@apply fluid-xs text-blue-700 dark:text-blue-300;
 }
-.footnotes .footnote-ref {
-	@apply fluid-xs;
+
+a.footnote-return{
+	font-size: 50%;
 }
-.footnotes .footnote-ref a {
-	@apply border-transparent;
-}
-.footnotes .footnotes-sep {
-	@apply mb-3;
-}
-.footnotes .footnotes-list {
-	@apply list-decimal pl-7;
-}
-.footnotes .footnote-item, .footnotes .footnote-item p {
-	@apply fluid-xs lg:fluid-sm !tracking-normal !leading-normal my-4;
-}
-.footnotes .footnote-item pre, .footnotes .footnote-item code {
-	@apply fluid-sm;
-}
+
+/* == end, footnotes == */

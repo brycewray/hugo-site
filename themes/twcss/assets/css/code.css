@@ -5,12 +5,6 @@
 /* Background */
 .chroma, .code-inline {
 	@apply text-black bg-white dark:bg-slate-800 border border-gray-400;
-	/* color: var.$black;
-	background-color: var.$white;
-	border: 1px solid map-get(var.$twcss, gray-400);
-	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-800);
-	} */
 }
 
 /* Other */
@@ -425,18 +419,16 @@
 
 /* ======= END, individual items from Chroma */
 
-pre,
-code {
-	@apply font-mono tracking-normal bg-blue-100 dark:bg-slate-800
+pre, code {
+	@apply font-mono tracking-normal bg-blue-100 dark:bg-slate-800;
   font-variant-ligatures: none;
 }
 
 code[class*="language-"],
 pre[class*="language-"] {
-	@apply text-gray-800 dark:text-gray-300 bg-none fluid-base text-left break-normal whitespace-normal leading-6;
+	@apply text-gray-800 dark:text-gray-300 fluid-base text-left break-normal whitespace-pre leading-6;
+	background: none;
 	word-spacing: normal;
-	/* word-break: normal; */
-	/* word-wrap: normal; */
 	tab-size: 2;
 	hyphens: none;
 }
@@ -458,7 +450,7 @@ pre[class*="language-"] {
 }
 
 article code {
-	@apply fluid-base bg-slate-200 dark:bg-slate-700;
+	@apply fluid-base lg:fluid-lg !tracking-normal bg-slate-200 dark:bg-slate-700;
 }
 article .footnotes code {
 	@apply text-[1em];
@@ -495,7 +487,6 @@ article blockquote code {
 		@apply rounded-2xl fluid-base;
 		/* keeps code blocks from being too small */
 		/* due to the `article code` rule above */
-		font-size: clamp(0.9rem, 1vw + 0.625em, var.$text-lg);
 	}
 }
 

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="scroll-p-[80px]" lang="en" charset="utf-8">
 	{{ partial "head.html" . }}
-	<body class="bg-blue-100 dark:bg-black text-black dark:text-gray-100 font-sans font-normal">
+	<body class="bg-slate-100 dark:bg-black text-black dark:text-gray-100 font-sans font-normal">
 		{{ partialCached "header.html" . }}
+		<div class="absolute -z-[9999] bg-gradient-to-b from-slate-800 via-slate-300 to-transparent dark:from-slate-500 dark:via-slate-800 w-full h-[12em]"></div>
 		<div id="content-main-hugo pt-[40px]">
 		{{- block "main" . -}}{{- end }}
 		</div>

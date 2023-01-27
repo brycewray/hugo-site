@@ -1,0 +1,138 @@
+@import '/themes/twcss/assets/css/reset.css';
+@import '/themes/twcss/assets/css/fonts_LibreFranklin.css';
+@import 'tailwindcss/base';
+@import '/themes/twcss/assets/css/print.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+	html {
+		-moz-tab-size: 2;
+		tab-size: 2;
+	}
+	#nav-Checkbox:checked ~ ul.nav-Menu li,
+	#nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
+		@apply block;
+	}
+	#nav-Checkbox:checked ~ label#nav-Toggle #svg-menu {
+		@apply hidden;
+	}
+	#nav-Checkbox:checked ~ ul.nav-Menu {
+		@apply pb-4;
+	}
+	b, strong {
+		@apply font-semibold;
+	}
+	h1, .h1 {
+		@apply fluid-3xl mb-4;
+	}
+	h2, .h2 {
+		@apply fluid-xl lg:fluid-2xl;
+	}
+	h3, .h3, h4, .h4, h5, .h5 {
+		@apply fluid-lg lg:fluid-xl;
+	}
+	h3, .h3, h5, .h5 {
+		@apply italic;
+	}
+	h1, h2, h3, h4, h5 {
+		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
+	}
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+		@apply font-semibold;
+	}
+	a {
+		@apply underline underline-offset-[0.25em] decoration-[0.05rem] text-blue-700 dark:text-blue-300;
+		&:focus, &:hover, &:active {
+			@apply text-blue-900 dark:text-zinc-300;
+		}
+	}
+	sup a, a.previous, a.next, .footnote-return {
+		@apply no-underline;
+	}
+	.header-anchor {
+		@apply text-black dark:text-white no-underline hover:underline hover:underline-offset-[0.225em] hover:decoration-[0.075rem] hover:text-blue-700 hover:dark:text-blue-300;
+		&:hover::after {
+			content: "#";
+			@apply text-base pl-2;
+		}
+	}
+	p, li {
+		@apply mb-3 fluid-base;
+	}
+	ul li, ul li li li {
+		@apply list-disc;
+	}
+	ul li li {
+		@apply list-square;
+	}
+	ul, ol {
+		@apply pl-8;
+	}
+	ol {
+		@apply list-decimal;
+	}
+	sub, sup {
+		@apply text-fn;
+	}
+	sup {
+		@apply -top-[0.45em] lg:-top-[0.8em];
+	}
+}
+
+@layer utilities {
+	img.containedImage, picture img {
+		@apply min-w-full max-w-full w-full h-auto;
+	}
+	.nobrk {
+		@apply whitespace-nowrap;
+	}
+	.box {
+		@apply fluid-sm block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-4 mb-2;
+		& p {
+			@apply p-0 m-0;
+		}
+	}
+	.box + hr, hr + .box, img + .box, .box + img {
+		@apply mt-6;
+	}
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	.animate-fade {
+		animation: fadeIn 750ms ease-in-out;
+	}
+	.imgcCaption, .imgCaption, .lazypicturecaption {
+		@apply p-0 mbs-2 fluid-xs lg:fluid-sm !leading-snug text-center;
+	}
+	.red {
+		@apply text-red-800 dark:text-red-400;
+	}
+	.pokey {
+		@apply text-xs;
+	}
+	.legal {
+		@apply fluid-xs;
+	}
+	.indentAfterLI {
+		@apply ml-8;
+		&.box {
+			margin-left: 3em;
+			width: calc(100% - 3em);
+		}
+	}
+	.toot-content {
+		@apply text-gray-900 dark:text-gray-100;
+		& .invisible{
+			@apply text-[0pt] leading-[0] block w-0 h-0;
+		}
+		& .ellipsis::after {
+			content: "...";
+		}
+	}
+}
