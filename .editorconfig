@@ -12,5 +12,5 @@ charset = utf-8
 [*.{sh,txt,yml,yaml}]
 indent_style = space
 
-[layouts/_default/_markup/*.*]
+[themes/*/layouts/_default/_markup/*.*]
 insert_final_newline = false
