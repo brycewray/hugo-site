@@ -39,6 +39,7 @@ module.exports = {
       disc: 'disc',
       decimal: 'decimal',
       square: 'square',
+			circle: 'circle'
     },
   },
   variants: {
