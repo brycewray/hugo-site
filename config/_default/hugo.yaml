@@ -7,7 +7,7 @@ theme: sass # choices are sass and twcss - as of 2023-01-11
 timeZone: America/Chicago
 
 params:
-  Themes: false # Boolean --- use **only** if using themes...
+  Themes: true # Boolean --- use **only** if using themes...
   # https://discourse.gohugo.io/t/site-theme/33200
   # PublicSans: true # Boolean --- "true" triggers use of em dash space replacements
   SiteLive: true # Boolean --- used for adapting robots.txt as needed
