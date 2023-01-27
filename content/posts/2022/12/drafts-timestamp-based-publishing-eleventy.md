@@ -25,7 +25,7 @@ Timestamp-based publishing is similar except that, in this case, it's --- you gu
 
 What advantages do you gain from having these features?
 
-- If you accidentally commit a draft post or "future post," you don't have to worry about its going live. \[Bleep\] Happens™ --- so it's nice to have a safety net.
+- If you accidentally commit a draft post or "future post," you don't have to worry about its going live. \[Bleep\] Happens<sup>™</sup> --- so it's nice to have a safety net.
 - You can enjoy the convenience of *multi-device* editing of content on a public repo without its getting published before you're ready (perhaps using a workflow like the one I described in 2019's "[Roger, Copy](/posts/2019/07/roger-copy/)," a review of the superb [Working Copy](https://workingcopy.app/) app for iOS and, now, iPadOS).[^noGitICloud]
 - Similarly, it makes multi-*user* editing easier, in case your site is a collaborative effort.
 
