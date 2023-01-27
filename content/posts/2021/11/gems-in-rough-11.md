@@ -46,6 +46,8 @@ That's easily done by having the full image housed within a `div` whose backgrou
 
 [^typoFix]: Not the full image, as I erroneously stated in the initial publication of this post.
 
-If you want to see the resulting HTML from how `imgc` works, use your browser's **View Source** capability[^notInsp] and see the code for this post's featured image. Refresh the page and you'll see that the `imgB-` rule's nonce value changes each time. That's the whole point, and it thus makes everything fine where the CSP's `style-src` portion is concerned.
+If you want to see the resulting HTML from how `imgc` works, use your browser's **View Source** capability[^notInsp] and see the code for the image below. Refresh the page and you'll see that the `imgB-` rule's nonce value changes each time. That's the whole point, and it thus makes everything fine where the CSP's `style-src` portion is concerned.
 
 [^notInsp]: I say to use **View Source** rather than the Inspector because, on some browsers, using the Inspector won't show you the nonce value.
+
+{{< imgc src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" width=3264 height=2448 >}}
