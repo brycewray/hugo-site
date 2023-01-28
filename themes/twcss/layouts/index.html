@@ -1,24 +1,24 @@
 {{ define "main" }}
 
-  <div class="pt-16 lg:pt-8 lg:flex w-full mr-auto ml-auto" data-pagefind-ignore>
+  <div class="pt-20 lg:pt-8 lg:flex w-full mr-auto ml-auto" data-pagefind-ignore>
     <div class="lg:w-[40%] px-8 lg:pr-[3em] lg:pl-2 text-center lg:text-right">
-      <h1 class="font-[600] pt-4 lg:pr-0 lb:pb-0 lg:pt-[3.5em] lg:pl-[2em] 2xl:pt-[2.5em] fluid-lg lg:fluid-2xl !tracking-tight !leading-normal">Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
+      <h1 class="pt-4 lg:pr-0 lb:pb-0 lg:pt-[3.5em] lg:pl-[2em] 2xl:pt-[2.5em] text-xl">Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
     </div>
     <div class="text-center lg:text-left lg:w-7/12 px-6 lg:pl-16 lg:pt-[3.5em]">
 			<div class="mt-8 border-blue-700 dark:border-white mx-auto mb-8 w-[15rem] border-solid border-b-2 lg:hidden"></div>
-			<h2 class="font-[600] dark:font-[550] h1 mt-4 lg:mt-0 mb-4 lg:mb-8 fluid-3xl !tracking-tighter !leading-normal">Latest <a href="/posts/">posts</a></h2>
+			<h2 class="h1 mt-4 lg:mt-0 mb-4 lg:mb-8 text-3xl">Latest <a href="/posts/">posts</a></h2>
 				{{ range first 3 (where .Site.RegularPages "Section" "posts") }}
 				<div class="lg:pr-8">
-					<h2 class="font-[550] dark:font-[500] not-italic mb-2 fluid-xl lg:fluid-2xl !tracking-tight !leading-tight"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
-					<p class="font-[300] fluid-base lg:fluid-lg !tracking-tight !leading-normal mt-1 mb-1 lg:mb-2">
+					<h2 class="not-italic mb-2 text-xl"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+					<p class="font-light text-base tracking-tight mt-1 mb-1 lg:mb-2">
 						{{ .Description | .Page.RenderString }}
 					</p>
-					<p class="fluid-sm lg:fluid-base !tracking-tight !leading-normal mt-0 mb-8">
+					<p class="text-sm tracking-tight mt-0 mb-8">
 						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
 					</p>
 				</div>
 			{{ end }}
-			<p class="mb-[3em] fluid-base !tracking-normal"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
+			<p class="mb-[3em] text-sm tracking-tight"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
 		</div>
 	</div>
 {{ end }}

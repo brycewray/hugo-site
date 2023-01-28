@@ -17,12 +17,12 @@
 
     {{ if or .PrevPage .NextPage }}
 		<div class="w-full px-8 py-2 mt-10 bg-slate-300 dark:bg-slate-800 align-middle" data-pagefind-ignore>
-        <p class="font-sans text-center py-0 my-1 fluid-lg !tracking-tight text-black dark:text-white">
+        <p class="text-center py-0 my-1 text-black tracking-tight dark:text-white">
           {{ with .NextInSection }}
 					<strong>Next</strong>: <a class="no-underline hover:underline text-blue-700 dark:text-blue-200 hover:text-gray-800 dark:hover:text-slate-300 focus:text-gray-800 dark:focus:text-gray-200 dark:hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
 					{{ end }}
         </p>
-        <p class="font-sans text-center py-0 my-1 fluid-lg !tracking-tight text-black dark:text-white">
+        <p class="text-center py-0 my-1 text-black tracking-tight dark:text-white">
           {{ with .PrevInSection }}
           <strong>Previous</strong>: <a class="no-underline hover:underline text-blue-700 dark:text-blue-200 hover:text-gray-800 dark:hover:text-slate-300 focus:text-gray-800 dark:focus:text-gray-200 dark:hover:border-blue-200" href="{{.RelPermalink}}">{{.Title}}</a>
           {{ end }}

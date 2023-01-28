@@ -9,8 +9,8 @@
 
 {{- with resources.GetRemote $urlToGet  -}}
 	{{ if (resources.GetRemote $urlToGet).Err }}
-		<blockquote class="fluid-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-600 w-full md:w-[80%]">
-			<p class="text-center text-fn">[Source not online<br />
+		<blockquote class="text-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-600 w-full md:w-[80%]">
+			<p class="text-center textSize-fn">[Source not online<br />
 			at time of site build.]</p>
 		</blockquote>
 	{{ else }}
@@ -23,7 +23,7 @@
 		{{ end }}
 
 		{{ if isset $json "content" }}
-			<blockquote class="fluid-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-900 w-full md:w-[80%]" cite="{{ $tootLink }}">
+			<blockquote class="text-base mx-auto my-auto p-4 border-2 border-gray-700 dark:border-gray-200 rounded-xl bg-white dark:bg-gray-900 w-full md:w-[80%]" cite="{{ $tootLink }}">
 				<div class="flex">
 					<a class="mr-2 flex-shrink-0 no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
 						<img
@@ -34,8 +34,8 @@
 						/>
 					</a>
 					<div class="flex flex-col flex-grow">
-						<a class="font-bold text-black dark:text-white fluid-sm lg:fluid-base !tracking-normal no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
-						<a class="text-gray-700 dark:text-gray-200 fluid-xs lg:fluid-sm !leading-none !tracking-normal no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
+						<a class="font-bold text-black dark:text-white text-sm no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $json.account.display_name }}</a>
+						<a class="text-gray-700 dark:text-gray-200 text-xs leading-none no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
 					</div>
 				</div>
 				<div class="toot-content">{{ $json.content | safeHTML }}</div>
@@ -91,7 +91,7 @@
 							<div class="text-center mt-2 rounded-xl overflow-hidden grid grid-cols-1 gap-[2px]">
 								<video muted playsinline controls class="text-center w-full h-auto aspect-square object-cover img-{{ $mediaMD5 }}{{ if $json.sensitive }} blur-2xl relative{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('!blur-none !z-[9999] relative')"{{- end }}>
 									<source src="{{ $media_attachments.url }}">
-									<p class="fluid-xs text-center">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+									<p class="text-xs text-center">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
 								</video>
 								{{- if $json.sensitive -}}
 									<div class="absolute font-bold w-full top-[40%] text-white text-center text-2xl leading-tight">
@@ -111,7 +111,7 @@
 							<div class="text-center mt-2 rounded-xl overflow-hidden grid grid-cols-1 gap-[2px]">
 								<video loop autoplay muted playsinline controls controlslist="nofullscreen" class="text-center w-full h-auto aspect-square object-cover img-{{ $mediaMD5 }}{{ if $json.sensitive }} blur-2xl relative{{ end }}"{{- if $json.sensitive }}onclick="this.classList.toggle('!blur-none !z-[9999] relative')"{{- end }}>
 									<source src="{{ $media_attachments.url }}">
-									<p class="fluid-xs text-center">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
+									<p class="text-xs text-center">(Your browser doesn&rsquo;t support the <code>video</code> tag.)</p>
 								</video>
 								{{- if $json.sensitive -}}
 									<div class="absolute font-bold w-full top-[40%] text-white text-center text-2xl leading-tight">
@@ -132,8 +132,8 @@
 									<img src="{{ $cardData.image }}" alt="Card image from {{ $masIns }} toot {{ $id }}" loading="lazy" class="block m-0 w-full h-full object-cover bg-cover bg-[50%]" />
 								</div>
 								<div class="flex-auto overflow-hidden p-3 leading-normal">
-									<p class="font-bold fluid-sm !tracking-normal !leading-normal">{{ $cardData.title }}</p>
-									<p class="fluid-xs !leading-normal !tracking-normal">{{ $cardData.description }}</p>
+									<p class="font-bold text-sm">{{ $cardData.title }}</p>
+									<p class="text-xs">{{ $cardData.description }}</p>
 								</div>
 							</div>
 						</a>
@@ -156,11 +156,11 @@
 								<div class="col-start-3">{{ $pollOptions.title }}</div>
 							{{ end }}
 						</div>
-						<p class="fluid-xs pt-4">{{ $votesCount }} votes</p>
+						<p class="text-xs pt-4">{{ $votesCount }} votes</p>
 					{{ end }}
 				{{ end }}
-				<div class="mt-4 flex items-center text-gray-500 dark:text-gray-300 fluid-sm !tracking-normal">
-					<a class="text-gray-600 dark:text-gray-300 no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="fluid-xs">(UTC)</span>
+				<div class="mt-4 flex items-center text-gray-500 dark:text-gray-300 text-sm">
+					<a class="text-gray-600 dark:text-gray-300 no-underline" href="https://{{ $masIns }}/@{{ $json.account.acct }}/{{ $json.id }}" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.created_at }}</a>&nbsp;<span class="text-xs">(UTC)</span>
 				</div>
 			</blockquote>
 		{{ end }}
