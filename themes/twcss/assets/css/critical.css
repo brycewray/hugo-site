@@ -23,6 +23,9 @@
 	b, strong {
 		@apply font-semibold;
 	}
+	b, strong, i, em {
+		@apply text-black dark:text-white;
+	}
 	h1, .h1 {
 		@apply fluid-3xl mb-4;
 	}

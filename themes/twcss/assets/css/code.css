@@ -535,3 +535,7 @@ article blockquote code {
 article ol li .highlight {
 	@apply leading-6;
 }
+
+.highlight + hr {
+	@apply mt-6;
+}
