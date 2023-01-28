@@ -11,7 +11,7 @@ I gave up on my [earlier](/posts/2022/06/sorta-scoped-styling-hugo/), [Rube Gold
 
 <!--more-->
 
-<strong class="red">Important</strong>: If you had read this before 2023-01-23, be sure to check the **Update** at the bottom.
+<strong class="red">Important</strong>: Be sure to check the **Updates** at the bottom.
 {.box}
 
 ## Anal-ysis
@@ -150,6 +150,48 @@ And, as for `head-css.html`, it puts **all** those conditionals in one file and 
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
 		{{- with resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
+			{{- $css = print $css (.Content | safeCSS) -}}
+		{{- end -}}
+	{{ end -}}
+{{- end -}}
+
+{{- if ne $css "" }}
+	<style>{{ $css | safeCSS }}</style>
+{{- end }}
+```
+
+----
+
+## *Update, 2023-01-27*
+
+. . . and, if you're into Tailwind rather than Sass, here's the TWCSS version of `head-css.html`. It uses fewer standalone files than does the Sass method because, with a utility-first framework like Tailwind, much of the special styling is **in** the specific templates.
+
+```go-html-template
+{{- $css := "" -}}
+{{- $condition := "" -}}
+{{- $fileName := "" -}}
+{{- $conditionCode := false -}}
+{{- $conditionTables := false -}}
+{{- $conditionLiteYT := false -}}
+{{- $conditionFootnotes := false -}}
+{{- if (findRE `(<pre|<code)` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
+{{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
+{{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
+{{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
+
+{{- $cssTypes := slice -}}{{/* init big slice */}}
+{{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
+{{- $cssTypes = append slice (slice (or (and (eq .Section "posts") (ne .Title "Posts")) (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?")) "article") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title .Site.Params.SearchTitle) "search-form") $cssTypes -}}
+
+{{- range $cssTypes -}}
+	{{- $condition = index . 0 -}}
+	{{- $fileName = index . 1 -}}
+	{{- if eq $condition true -}}
+		{{- with resources.Get (print "css/" $fileName ".css") | resources.PostCSS -}}
 			{{- $css = print $css (.Content | safeCSS) -}}
 		{{- end -}}
 	{{ end -}}
