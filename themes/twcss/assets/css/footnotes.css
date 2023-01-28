@@ -13,20 +13,20 @@
 		padding-inline-start: 1.5rem;
 	}
 	ol li {
-		@apply fluid-sm;
+		@apply text-sm;
 		/* As of now, `::marker` has too little support even in good browsers;
 		see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties */
 		p {
-			@apply fluid-sm my-4;
+			@apply text-sm my-4;
 		}
 	}
 	.footnote-backref {
-		@apply fluid-sm;
+		@apply text-sm;
 	}
 }
 
 .footnote-sim {
-	@apply fluid-xs text-blue-700 dark:text-blue-300;
+	@apply text-xs text-blue-700 dark:text-blue-300;
 }
 
 a.footnote-return{

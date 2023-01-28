@@ -23,27 +23,32 @@
 	b, strong {
 		@apply font-semibold;
 	}
-	b, strong :not(button,svg), i, em :not(:hover) {
+	b, strong :not(button,svg,a), i, em :not(:hover) {
 		@apply text-black dark:text-white;
+		/* strong :not(button,svg) handles button hovers */
 		/* em :not(:hover) handles .header-anchor hovers */
 	}
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+		@apply font-medium tracking-tight;
+		/* leading controlled by fluid-text settings in TWCSS config */
+	}
 	h1, .h1 {
-		@apply fluid-3xl mb-4;
+		@apply text-4xl tracking-tight;
 	}
 	h2, .h2 {
-		@apply fluid-xl lg:fluid-2xl;
+		@apply text-2xl;
 	}
-	h3, .h3, h4, .h4, h5, .h5 {
-		@apply fluid-lg lg:fluid-xl;
+	h3, .h3 {
+		@apply text-xl;
+	}
+	h4, .h4, h5, .h5 {
+		@apply text-lg;
 	}
 	h3, .h3, h5, .h5 {
 		@apply italic;
 	}
 	h1, h2, h3, h4, h5 {
 		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
-	}
-	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-		@apply font-medium;
 	}
 	a {
 		@apply underline underline-offset-[0.25em] decoration-[0.05rem] text-blue-700 dark:text-blue-300;
@@ -62,7 +67,7 @@
 		}
 	}
 	p, li {
-		@apply mb-3 fluid-base;
+		@apply mb-3 text-base;
 	}
 	ul li, ul li li li {
 		@apply list-disc;
@@ -80,10 +85,13 @@
 		@apply list-decimal;
 	}
 	sub, sup {
-		@apply text-fn;
+		font-size: 0.65rem; /* was added `text-fn` */
 	}
 	sup {
 		@apply -top-[0.45em] lg:-top-[0.8em];
+	}
+	.textSize-fn {
+		font-size: 0.65em;
 	}
 }
 
@@ -95,7 +103,7 @@
 		@apply whitespace-nowrap;
 	}
 	.box {
-		@apply fluid-sm lg:fluid-base block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-4 mb-2;
+		@apply text-sm block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 my-auto w-full px-4 py-4 mb-2;
 		& p {
 			@apply p-0 m-0;
 		}
@@ -115,7 +123,7 @@
 		animation: fadeIn 750ms ease-in-out;
 	}
 	.imgcCaption, .imgCaption, .lazypicturecaption {
-		@apply p-0 mbs-2 fluid-xs lg:fluid-sm !leading-snug text-center;
+		@apply p-0 mbs-2 text-xs lg:text-sm text-center;
 	}
 	.red {
 		@apply text-red-800 dark:text-red-400;
@@ -124,7 +132,7 @@
 		@apply text-xs;
 	}
 	.legal {
-		@apply fluid-xs;
+		@apply text-xs;
 	}
 	.indentAfterLI {
 		@apply ml-8;
@@ -143,6 +151,6 @@
 		}
 	}
 	.punctuationExample {
-		@apply fluid-lg lg:fluid-xl font-serif font-normal text-center;
+		@apply text-lg lg:text-xl font-serif font-normal text-center;
 	}
 }

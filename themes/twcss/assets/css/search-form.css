@@ -56,7 +56,7 @@
 
 .pagefind-ui__message {
 	/* count of results */
-	@apply mt-2 text-center;
+	@apply mt-2 text-sm text-center;
 }
 
 .pagefind-ui__button {
@@ -66,9 +66,9 @@
 
 .pagefind-ui__result {
 	/* li for list */
-	@apply mt-3;
+	@apply mt-3 text-sm;
 	&-title, &-excerpt {
-		@apply tracking-normal;
+		@apply text-sm;
 	}
 }
 

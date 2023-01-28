@@ -1,14 +1,17 @@
 @charset 'utf-8';
 
 article {
-	h1, h2, h3, h4 {
-		@apply mt-8 mb-6 !tracking-tight;
+	h1 {
+		@apply my-8;
+	}
+	h2 {
+		@apply mt-8 mb-6;
+	}
+	h3, h4, h5 {
+		@apply mt-6 mb-4;
 	}
 	p {
-		@apply mt-6 mb-6;
-	}
-	p, li {
-		@apply lg:fluid-lg !leading-normal !tracking-normal;
+		@apply my-4;
 	}
 	ul {
 		li li, li li li, li li li li {
