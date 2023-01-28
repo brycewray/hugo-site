@@ -426,7 +426,7 @@ pre, code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	@apply text-gray-800 dark:text-gray-300 text-sm text-left break-normal whitespace-pre;
+	@apply text-gray-800 dark:text-gray-300 text-left break-normal whitespace-pre;
 	background: none;
 	word-spacing: normal;
 	tab-size: 2;
@@ -451,10 +451,11 @@ pre[class*="language-"] {
 
 article code {
 	@apply bg-slate-200 dark:bg-slate-700;
+	/* font-size: 0.95em; */
 }
-/* article .footnotes code {
-	@apply text-[0.9em];
-} */
+article .footnotes code {
+	font-size: 0.95em;
+}
 /* overriding the `article code` part above for footnotes */
 
 article p code {
@@ -484,9 +485,7 @@ article blockquote code {
 .highlight {
 	@apply relative;
 	.chroma {
-		@apply rounded-2xl text-sm;
-		/* keeps code blocks from being too small */
-		/* due to the `article code` rule above */
+		@apply rounded-2xl;
 	}
 }
 
