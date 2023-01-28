@@ -27,11 +27,11 @@ John's dog is named Sam. The Smiths' dog is named Rover.
 
 .&nbsp;.&nbsp;. to appear as:
 
-<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named&nbsp;Rover.</p>
 
 .&nbsp;.&nbsp;. rather than this correct version (note the single curly quotation mark after *Smiths*):
 
-<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named&nbsp;Rover.</p>
 
 There were a few other cases like this, but all shared the same problem: an inability to close a set of curly quotation marks (double or single) under certain circumstances.
 

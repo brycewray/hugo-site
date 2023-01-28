@@ -37,11 +37,11 @@ John's dog is named Sam. The Smiths' dog is named Rover.
 
 .&nbsp;.&nbsp;. you'd expect to get:
 
-<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named&nbsp;Rover.</p>
 
 But what you actually get right now is:
 
-<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named&nbsp;Rover.</p>
 
 So, if you're a Hugo user right now, you have two options where it comes to good typography and plural possessives:
 
