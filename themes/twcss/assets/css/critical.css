@@ -28,23 +28,23 @@
 		/* strong :not(button,svg) handles button hovers */
 		/* em :not(:hover) handles .header-anchor hovers */
 	}
-	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	h1, h2, h3, h4, h5 {
 		@apply font-medium tracking-tight;
 		/* leading controlled by fluid-text settings in TWCSS config */
 	}
-	h1, .h1 {
+	h1 {
 		@apply text-4xl tracking-tight;
 	}
-	h2, .h2 {
+	h2 {
 		@apply text-2xl;
 	}
-	h3, .h3 {
+	h3 {
 		@apply text-xl;
 	}
-	h4, .h4, h5, .h5 {
+	h4, h5 {
 		@apply text-lg;
 	}
-	h3, .h3, h5, .h5 {
+	h3, h5 {
 		@apply italic;
 	}
 	h1, h2, h3, h4, h5 {

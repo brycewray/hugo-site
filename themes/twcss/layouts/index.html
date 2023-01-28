@@ -6,10 +6,10 @@
     </div>
     <div class="text-center lg:text-left lg:w-7/12 px-6 lg:pl-16 lg:pt-[3.5em]">
 			<div class="mt-8 border-blue-700 dark:border-white mx-auto mb-8 w-[15rem] border-solid border-b-2 lg:hidden"></div>
-			<h2 class="h1 mt-4 lg:mt-0 mb-4 lg:mb-8 text-3xl">Latest <a href="/posts/">posts</a></h2>
+			<h2 class="mt-4 lg:mt-0 mb-4 lg:mb-8 text-3xl">Latest <a href="/posts/">posts</a></h2>
 				{{ range first 3 (where .Site.RegularPages "Section" "posts") }}
 				<div class="lg:pr-8">
-					<h2 class="not-italic mb-2 text-xl"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+					<h2 class="not-italic mb-2"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
 					<p class="font-light tracking-tight mt-1 mb-1 lg:mb-2">
 						{{ .Description | .Page.RenderString }}
 					</p>
