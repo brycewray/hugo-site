@@ -23,7 +23,7 @@
 	b, strong {
 		@apply font-semibold;
 	}
-	b, strong, i, em :not(:hover) {
+	b, strong :not(button,svg), i, em :not(:hover) {
 		@apply text-black dark:text-white;
 		/* em :not(:hover) handles .header-anchor hovers */
 	}
