@@ -13,7 +13,7 @@
 	<div class="block w-full pt-10 md:pt-4">
 		<h1 class="text-center mt-6 md:mt-8 lg:mt-12 2xl:mt-16 mb-4 md:mb-6">{{ .Title | .Page.RenderString }}</h1>
 		{{- if and .Params.Description (ne .Title .Site.Params.SearchTitle) }}
-			<p class="text-center md:block text-lg tracking-tight font-light mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">{{ .Description }}</p>
+			<p class="text-center md:block text-xl tracking-tight font-light mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">{{ .Description }}</p>
 		{{- end }}
 		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}
 		<p class="text-center text-base px-4 md:px-0 mt-8 mb-0 md:mt-0" data-pagefind-ignore>

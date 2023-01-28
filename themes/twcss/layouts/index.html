@@ -10,7 +10,7 @@
 				{{ range first 3 (where .Site.RegularPages "Section" "posts") }}
 				<div class="lg:pr-8">
 					<h2 class="not-italic mb-2 text-xl"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
-					<p class="font-light text-base tracking-tight mt-1 mb-1 lg:mb-2">
+					<p class="font-light tracking-tight mt-1 mb-1 lg:mb-2">
 						{{ .Description | .Page.RenderString }}
 					</p>
 					<p class="text-sm tracking-tight mt-0 mb-8">
@@ -18,7 +18,7 @@
 					</p>
 				</div>
 			{{ end }}
-			<p class="mb-[3em] text-sm tracking-tight"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
+			<p class="mb-[3em] text-sm"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
 		</div>
 	</div>
 {{ end }}

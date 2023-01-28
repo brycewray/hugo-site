@@ -1,3 +1,7 @@
+tr th, td {
+	@apply text-base;
+}
+
 table.leagues {
 	@apply w-[90%] md:w-[60%] mt-4 mb-0 mx-auto border-0 border-collapse;
 	td.col {

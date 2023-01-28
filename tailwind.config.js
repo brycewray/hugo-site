@@ -56,9 +56,9 @@ module.exports = {
 		// require('tailwind-fluid-typography')
 		require('tailwindcss-fluid-type')({
 			settings: {
-				fontSizeMin: 0.85, // default = 1.125rem (18px)
+				fontSizeMin: 0.9, // default = 1.125rem (18px)
 				// fontSizeMax: 1.35, // default = 1.25rem (20px)
-				ratioMin: 1.125,
+				ratioMin: 1.15,
 				ratioMax: 1.25,
 			},
 			values: {
