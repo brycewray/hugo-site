@@ -23,8 +23,9 @@
 	b, strong {
 		@apply font-semibold;
 	}
-	b, strong, i, em {
+	b, strong, i, em :not(:hover) {
 		@apply text-black dark:text-white;
+		/* em :not(:hover) handles .header-anchor hovers */
 	}
 	h1, .h1 {
 		@apply fluid-3xl mb-4;
