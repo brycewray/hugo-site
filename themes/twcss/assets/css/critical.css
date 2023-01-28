@@ -118,7 +118,7 @@
 		animation: fadeIn 750ms ease-in-out;
 	}
 	.imgcCaption, .imgCaption, .lazypicturecaption {
-		@apply p-0 mbs-2 text-xs lg:text-sm text-center;
+		@apply p-0 mbs-2 text-sm text-center;
 	}
 	.red {
 		@apply text-red-800 dark:text-red-400;
