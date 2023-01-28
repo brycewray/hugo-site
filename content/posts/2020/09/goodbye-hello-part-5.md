@@ -1,5 +1,5 @@
 ---
-title: "Goodbye and hello • Part 5"
+title: "Goodbye and hello • Part 5"
 description: "Two embarrassments: another site move and the reason behind it."
 author: Bryce Wray
 date: 2020-09-09T14:30:00-05:00

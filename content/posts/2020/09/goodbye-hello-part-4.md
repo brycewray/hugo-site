@@ -1,5 +1,5 @@
 ---
-title: "Goodbye and hello • Part 4"
+title: "Goodbye and hello • Part 4"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
 date: 2020-09-05T09:00:00-05:00

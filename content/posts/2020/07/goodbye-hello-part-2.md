@@ -1,5 +1,5 @@
 ---
-title: "Goodbye and hello • Part 2"
+title: "Goodbye and hello • Part 2"
 description: "Why I decided to come back to Netlify."
 author: Bryce Wray
 date: 2020-07-31T17:35:00-05:00
