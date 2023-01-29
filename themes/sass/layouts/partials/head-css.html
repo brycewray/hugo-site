@@ -27,8 +27,8 @@
 		{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
 		{{- $cssTypes = append slice (slice (eq .Title "Home page") "home") $cssTypes -}}
 		{{- $cssTypes = append slice (slice (eq .Title "Sitemap (HTML form)") "sitemaphtml") $cssTypes -}}
-		{{- $cssTypes = append slice (slice (ne .Title .Site.Params.SearchTitle) "search-btn") $cssTypes -}}
-		{{- $cssTypes = append slice (slice (eq .Title .Site.Params.SearchTitle) "search-form") $cssTypes -}}
+		{{- $cssTypes = append slice (slice (ne .Title site.Params.SearchTitle) "search-btn") $cssTypes -}}
+		{{- $cssTypes = append slice (slice (eq .Title site.Params.SearchTitle) "search-form") $cssTypes -}}
 		{{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}
 		{{- $cssTypes = append slice (slice (eq .Title "404 Page not found") "fourohfour") $cssTypes -}}
 
@@ -36,12 +36,27 @@
 			{{- $condition = index . 0 -}}
 			{{- $fileName = index . 1 -}}
 			{{- if eq $condition true -}}
-				{{- with resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
-					{{- $css = print $css (.Content | safeCSS) -}}
-				{{- end -}}
+				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
+				{{- if hugo.IsProduction -}}
+					{{- $css = $css | fingerprint "md5" -}}
+					<link{{ if eq site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
+					<link{{ if eq site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+				{{- else -}}
+					<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+					<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+				{{- end }}
 			{{ end -}}
 		{{- end -}}
+		<noscript>{{- range $cssTypes -}}
+			{{- $condition = index . 0 -}}
+			{{- $fileName = index . 1 -}}
+			{{- if eq $condition true -}}
+				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
+				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+			{{- end -}}
+		{{- end -}}</noscript>
 
-	{{- if ne $css "" }}
-		<style>{{ $css | safeCSS }}</style>
-	{{- end }}
+		{{/*
+			<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
+		*/}}
