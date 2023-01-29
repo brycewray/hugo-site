@@ -41,6 +41,7 @@
 					{{- $css = $css | fingerprint "md5" -}}
 				{{- end }}
 					<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+					<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 				{{- else -}}
 			{{ end -}}
 		{{- end -}}
