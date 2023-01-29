@@ -11,7 +11,7 @@ html, body {
 	font-kerning: normal;
 	font-family: var.$sans-serif;
 	background-color: map-get(var.$twcss, slate-100);
-	color: var.$black;
+	color: map-get(var.$twcss, gray-900);
 	@media (prefers-color-scheme: dark) {
 		background: var.$black;
 		color: map-get(var.$twcss, gray-100);
@@ -45,9 +45,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	// font-family: var.$sans-serif;
 	font-weight: normal;
 	letter-spacing: -0.025rem;
-	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, gray-100);
-	}
+	// @media (prefers-color-scheme: dark) {
+	// 	color: map-get(var.$twcss, gray-100);
+	// }
 }
 
 h1, h2, h3, h4 {

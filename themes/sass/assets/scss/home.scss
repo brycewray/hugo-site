@@ -3,11 +3,9 @@
 
 .container-home {
 	padding-bottom: 1em;
-	// font-family: var.$sans-serif;
 	text-align: center;
 	padding: 2vh 5vw;
 	margin: 0 auto;
-	// width: 90%;
 	@media screen and (min-width: var.$bkpt_lg) {
 		width: 100%;
 		display: flex;
@@ -16,15 +14,6 @@
 		margin: 0;
 		.post-line {
 			display: none;
-		}
-	}
-	h1 {
-		font-size: 1.25rem;
-		@media screen and (min-width: var.$bkpt_lg) {
-			font-size: 1.5rem;
-		}
-		@media screen and (min-width: var.$bkpt_2xl) {
-			font-size: 1.75rem;;
 		}
 	}
 }
@@ -45,7 +34,6 @@
 		text-align: right;
 		padding: 0 3em 0 0;
 		width: 40%;
-		// min-height: 80vh;
 		h1 {
 			padding: 3.5em 0 0 2em;
 		}

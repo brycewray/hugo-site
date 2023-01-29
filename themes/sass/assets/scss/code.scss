@@ -250,7 +250,7 @@
 .chroma .nx, .code-inline .nx {
 	color: map-get(var.$twcss, orange-800);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, orange-300);
+		color: map-get(var.$twcss, orange-200);
 	}
 }
 

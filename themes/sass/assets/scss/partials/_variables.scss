@@ -1,8 +1,8 @@
-// Colors
+// ===== start, COLORS =====
+// =========================
 $default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 $white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 $black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-
 // map of selected TWCSS colors
 $twcss: (
 	slate-50: #f8fafc,
@@ -224,8 +224,12 @@ $twcss: (
 	rose-800: #9f1239,
 	rose-900: #881337
 );
+// =========================
+// ===== end, COLORS =====
 
-// Typography
+
+// === start, TYPOGRAPHY ===
+// =========================
 // Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome"
 $sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -248,6 +252,11 @@ $text-6xl: 3.75rem; // LH 1 (also)
 $text-7xl: 4.5rem; // LH 1 (also)
 $text-8xl: 6rem; // LH 1 (also)
 $text-9xl: 8rem; // LH 1 (also)
+// =========================
+// ==== end, TYPOGRAPHY ====
+
+// === start, MISCELLANY ===
+// =========================
 
 // alignment
 $bodyalign: left;
@@ -268,3 +277,6 @@ $btn_radius: 6px;
 // underlines for hrefs
 $textDcThick: 0.075rem;
 $textUnOffst: 0.225em;
+
+// =========================
+// ==== end, MISCELLANY ====

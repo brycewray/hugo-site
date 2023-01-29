@@ -57,7 +57,6 @@
 	}
 	&-Dates {
 		font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
-		// font-size: 0.825rem;
 		// font-family: var.$sans-serif;
 		line-height: 1.33;
 		margin-bottom: 0.5em;
@@ -65,16 +64,6 @@
 			display: inline;
 		}
 	}
-}
-
-.post-line {
-	border-top: 0.2rem solid map-get(var.$twcss, blue-700);
-	@media (prefers-color-scheme: dark) {
-		border-color: var.$white;
-	}
-	display: block;
-	margin: 0 auto 2rem;
-	width: 15rem;
 }
 
 hr.paginatorTop, hr.paginatorBottom {
