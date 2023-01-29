@@ -25,7 +25,7 @@
 .chroma .err, .code-inline .err {
 	color: map-get(var.$twcss, red-700);
 	@media (prefers-color-scheme: dark) {
-		color: #fd7777;
+		color: map-get(var.$twcss, red-300);
 	}
 }
 
@@ -60,9 +60,9 @@
 .chroma .hl, .code-inline .hl {
 	display: block;
 	width: 100%;
-	background-color: #ffffcc;
+	background-color: map-get(var.$twcss, yellow-200);
 	@media (prefers-color-scheme: dark) {
-		background-color: #ffffcc;
+		background-color: map-get(var.$twcss, yellow-800);
 	}
 }
 
@@ -70,9 +70,9 @@
 .chroma .lnt, .code-inline .lnt {
 	margin-right: 0.4em;
 	padding: 0 0.4em 0 0.4em;
-	color: #686868;
+	color: map-get(var.$twcss, gray-700);
 	@media (prefers-color-scheme: dark) {
-		color: #686868;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
@@ -80,25 +80,25 @@
 .chroma .ln, .code-inline .ln {
 	margin-right: 0.4em;
 	padding: 0 0.4em 0 0.4em;
-	color: #686868;
+	color: map-get(var.$twcss, gray-700);
 	@media (prefers-color-scheme: dark) {
-		color: #686868;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
 // Keyword
 .chroma .k, .code-inline .k {
-	color: map-get(var.$twcss, cyan-700);
+	color: map-get(var.$twcss, sky-700);
 	@media (prefers-color-scheme: dark) {
-		color: #80ffff;
+		color: map-get(var.$twcss, sky-300);
 	}
-} // was 6ab825
+}
 
 // KeywordConstant
 .chroma .kc, .code-inline .kc {
 	color: map-get(var.$twcss, sky-700);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(186, 230, 253);
+		color: map-get(var.$twcss, sky-300);
 	}
 }
 
@@ -106,7 +106,7 @@
 .chroma .kd, .code-inline .kd {
 	color: map-get(var.$twcss, cyan-700);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(186, 230, 253);
+		color: map-get(var.$twcss, cyan-300);
 	}
 }
 
@@ -114,7 +114,7 @@
 .chroma .kn, .code-inline .kn {
 	color: map-get(var.$twcss, cyan-700);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(186, 230, 253);
+		color: map-get(var.$twcss, cyan-300);
 	}
 }
 
@@ -122,7 +122,7 @@
 .chroma .kp, .code-inline .kp {
 	color: map-get(var.$twcss, cyan-700);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(186, 230, 253);
+		color: map-get(var.$twcss, cyan-300);
 	}
 }
 
@@ -130,7 +130,7 @@
 .chroma .kr, .code-inline .kr {
 	color: map-get(var.$twcss, cyan-700);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(186, 230, 253);
+		color: map-get(var.$twcss, cyan-300);
 	}
 }
 
@@ -138,7 +138,7 @@
 .chroma .kt, .code-inline .kt {
 	color: map-get(var.$twcss, cyan-700);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(186, 230, 253);
+		color: map-get(var.$twcss, cyan-300);
 	}
 }
 
@@ -146,15 +146,15 @@
 .chroma .n, .code-inline .n {
 	color: map-get(var.$twcss, orange-700);
 	@media (prefers-color-scheme: dark) {
-		color: #ff9970;
+		color: map-get(var.$twcss, orange-300);
 	}
 }
 
 // NameAttribute
 .chroma .na, .code-inline .na {
-	color: map-get(var.$twcss, purple-700);
+	color: map-get(var.$twcss, sky-800);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(186, 230, 253);
+		color: map-get(var.$twcss, sky-200);
 	}
 }
 
@@ -162,15 +162,15 @@
 .chroma .nb, .code-inline .nb {
 	color: map-get(var.$twcss, sky-800);
 	@media (prefers-color-scheme: dark) {
-		color: lightblue;
+		color: map-get(var.$twcss, sky-300);
 	}
-} // was #24909d
+}
 
 // NameBuiltinPseudo
 .chroma .bp, .code-inline .bp {
-	color: #efefef;
+	color: map-get(var.$twcss, stone-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, stone-300);
 	}
 }
 
@@ -178,9 +178,9 @@
 .chroma .nc, .code-inline .nc {
 	color: map-get(var.$twcss, fuchsia-700);
 	@media (prefers-color-scheme: dark) {
-		color: #de9aef;
+		color: map-get(var.$twcss, fuchsia-300);
 	}
-} // was 447fcf
+}
 
 // NameConstant
 .chroma .no, .code-inline .no {
@@ -194,23 +194,23 @@
 .chroma .nd, .code-inline .nd {
 	color: map-get(var.$twcss, orange-800);
 	@media (prefers-color-scheme: dark) {
-		color: #ffa500;
+		color: map-get(var.$twcss, orange-300);
 	}
 }
 
 // NameEntity
 .chroma .ni, .code-inline .ni {
-	color: map-get(var.$twcss, gray-800);
+	color: map-get(var.$twcss, cyan-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, cyan-300);
 	}
 }
 
 // NameException
 .chroma .ne, .code-inline .ne {
-	color: #bbbbbb;
+	color: map-get(var.$twcss, stone-800);
 	@media (prefers-color-scheme: dark) {
-		color: #bbbbbb;
+		color: map-get(var.$twcss, stone-300);
 	}
 }
 
@@ -220,21 +220,21 @@
 	@media (prefers-color-scheme: dark) {
 		color: map-get(var.$twcss, sky-200);
 	}
-} // was 447fcf
+}
 
 // NameFunctionMagic
 .chroma .fm, .code-inline .fm {
-	color: #efefef;
+	color: map-get(var.$twcss, stone-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, stone-300);
 	}
 }
 
 // NameLabel
 .chroma .nl, .code-inline .nl {
-	color: #efefef;
+	color: map-get(var.$twcss, stone-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, stone-300);
 	}
 }
 
@@ -242,15 +242,15 @@
 .chroma .nn, .code-inline .nn {
 	color: map-get(var.$twcss, sky-700);
 	@media (prefers-color-scheme: dark) {
-		color: #99cfef;
+		color: map-get(var.$twcss, sky-300);
 	}
-} // was 447fcf
+}
 
 // NameOther
 .chroma .nx, .code-inline .nx {
-	color: map-get(var.$twcss, gray-800);
+	color: map-get(var.$twcss, orange-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, orange-300);
 	}
 }
 
@@ -258,7 +258,7 @@
 .chroma .py, .code-inline .py {
 	color: map-get(var.$twcss, gray-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
@@ -274,39 +274,39 @@
 .chroma .nv, .code-inline .nv {
 	color: map-get(var.$twcss, cyan-800);
 	@media (prefers-color-scheme: dark) {
-		color: #40ffff;
+		color: map-get(var.$twcss, cyan-200);
 	}
 }
 
 // NameVariableClass
 .chroma .vc, .code-inline .vc {
-	color: #efefef;
+	color: map-get(var.$twcss, gray-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
 // NameVariableGlobal
 .chroma .vg, .code-inline .vg {
-	color: #efefef;
+	color: map-get(var.$twcss, gray-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
 // NameVariableInstance
 .chroma .vi, .code-inline .vi {
-	color: #efefef;
+	color: map-get(var.$twcss, gray-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
 // NameVariableMagic
 .chroma .vm, .code-inline .vm {
-	color: #efefef;
+	color: map-get(var.$twcss, gray-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
@@ -314,7 +314,7 @@
 .chroma .l, .code-inline .l {
 	color: map-get(var.$twcss, gray-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, gray-300);
 	}
 }
 
@@ -330,7 +330,7 @@
 .chroma .s, .code-inline .s {
 	color: map-get(var.$twcss, orange-700);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, orange-300 );
+		color: map-get(var.$twcss, orange-400 );
 	}
 }
 
@@ -344,9 +344,9 @@
 
 // LiteralStringBacktick
 .chroma .sb, .code-inline .sb {
-	color: map-get(var.$twcss, yellow-700);
+	color: map-get(var.$twcss, yellow-800);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, yellow-200);
+		color: map-get(var.$twcss, yellow-100);
 	}
 }
 
@@ -380,7 +380,7 @@
 	@media (prefers-color-scheme: dark) {
 		color: map-get(var.$twcss, orange-300);
 	}
-} // was ed9d13
+}
 
 // LiteralStringEscape
 .chroma .se, .code-inline .se {
@@ -408,9 +408,9 @@
 
 // LiteralStringOther
 .chroma .sx, .code-inline .sx {
-	color: #ffa500;
+	color: map-get(var.$twcss, orange-700);
 	@media (prefers-color-scheme: dark) {
-		color: #ffa500;
+		color: map-get(var.$twcss, orange-300);
 	}
 }
 
@@ -442,23 +442,23 @@
 .chroma .m, .code-inline .m {
 	color: map-get(var.$twcss, cyan-800);
 	@media (prefers-color-scheme: dark) {
-		color: #7fcad7;
+		color: map-get(var.$twcss, cyan-200);
 	}
 }
 
 // LiteralNumberBin
 .chroma .mb, .code-inline .mb {
-	color: #7fcad7;
+	color: map-get(var.$twcss, sky-800);
 	@media (prefers-color-scheme: dark) {
-		color: #7fcad7;
+		color: map-get(var.$twcss, sky-200);
 	}
 }
 
 // LiteralNumberFloat
 .chroma .mf, .code-inline .mf {
-	color: map-get(var.$twcss, cyan-700);
+	color: map-get(var.$twcss, sky-700);
 	@media (prefers-color-scheme: dark) {
-		color: #7fcad7;
+		color: map-get(var.$twcss, sky-300);
 	}
 }
 
@@ -466,23 +466,23 @@
 .chroma .mh, .code-inline .mh {
 	color: map-get(var.$twcss, cyan-800);
 	@media (prefers-color-scheme: dark) {
-		color: #7fcad7;
+		color: map-get(var.$twcss, cyan-200);
 	}
 }
 
 // LiteralNumberInteger
 .chroma .mi, .code-inline .mi {
-	color: var.$black;
+	color: map-get(var.$twcss, sky-700);
 	@media (prefers-color-scheme: dark) {
-		color: #ffffff;
+		color: map-get(var.$twcss, sky-300);
 	}
 }
 
 // LiteralNumberIntegerLong
 .chroma .il, .code-inline .il {
-	color: #7fcad7;
+	color: map-get(var.$twcss, sky-800);
 	@media (prefers-color-scheme: dark) {
-		color: #7fcad7;
+		color: map-get(var.$twcss, sky-300);
 	}
 }
 
@@ -496,9 +496,9 @@
 
 // Operator
 .chroma .o, .code-inline .o {
-	color: map-get(var.$twcss, orange-800);
+	color: map-get(var.$twcss, yellow-800);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(251, 191, 36);
+		color: map-get(var.$twcss, yellow-200);
 	}
 }
 
@@ -506,7 +506,7 @@
 .chroma .ow, .code-inline .ow {
 	color: map-get(var.$twcss, sky-800);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, sky-300);
+		color: map-get(var.$twcss, sky-200);
 	}
 }
 
@@ -514,7 +514,7 @@
 .chroma .p, .code-inline .p {
 	color: map-get(var.$twcss, slate-700);
 	@media (prefers-color-scheme: dark) {
-		color: rgb(192, 192, 192);
+		color: map-get(var.$twcss, slate-300);
 	}
 }
 
@@ -528,67 +528,67 @@
 
 // CommentHashbang
 .chroma .ch, .code-inline .ch {
-	color: map-get(var.$twcss, emerald-700);
+	color: map-get(var.$twcss, green-700);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, emerald-200);
+		color: map-get(var.$twcss, green-200);
 	}
 }
 
 // CommentMultiline
 .chroma .cm, .code-inline .cm {
-	color: map-get(var.$twcss, emerald-700);
+	color: map-get(var.$twcss, green-700);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, emerald-200);
+		color: map-get(var.$twcss, green-200);
 	}
 }
 
 // CommentSingle
 .chroma .c1, .code-inline .c1 {
-	color: map-get(var.$twcss, emerald-700);
+	color: map-get(var.$twcss, green-700);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, emerald-200);
+		color: map-get(var.$twcss, green-200);
 	}
 }
 
 // CommentSpecial
 .chroma .cs, .code-inline .cs {
-	color: #e50808;
-	background-color: #520000;
-	@media (prefers-color-scheme: dark) {
-		color: #e50808;
-		background-color: #520000;
-	}
+	color: map-get(var.$twcss, red-300);
+	background-color: map-get(var.$twcss, red-900);
+	// @media (prefers-color-scheme: dark) {
+	// 	color: map-get(var.$twcss, red-300);
+	// 	background-color: map-get(var.$twcss, red-900);
+	// }
 }
 
 // CommentPreproc
 .chroma .cp, .code-inline .cp {
-	color: map-get(var.$twcss, red-800);
+	color: map-get(var.$twcss, stone-800);
 	@media (prefers-color-scheme: dark) {
-		color: #ff8585;
+		color: map-get(var.$twcss, stone-300);
 	}
 }
 
 // CommentPreprocFile
 .chroma .cpf, .code-inline .cpf {
-	color: #cd2828;
+	color: map-get(var.$twcss, red-800);
 	@media (prefers-color-scheme: dark) {
-		color: #cd2828;
+		color: map-get(var.$twcss, red-300);
 	}
 }
 
 // Generic
 .chroma .g, .code-inline .g {
-	color: #efefef;
+	color: map-get(var.$twcss, stone-800);
 	@media (prefers-color-scheme: dark) {
-		color: #efefef;
+		color: map-get(var.$twcss, stone-300);
 	}
 }
 
 // GenericDeleted
 .chroma .gd, .code-inline .gd {
-	color: #d22323;
+	color: map-get(var.$twcss, red-800);
 	@media (prefers-color-scheme: dark) {
-		color: #d22323;
+		color: map-get(var.$twcss, red-300);
 	}
 }
 
@@ -599,9 +599,9 @@
 
 // GenericError
 .chroma .gr, .code-inline .gr {
-	color: #d22323;
+	color: map-get(var.$twcss, red-800);
 	@media (prefers-color-scheme: dark) {
-		color: #d22323;
+		color: map-get(var.$twcss, red-300);
 	}
 }
 
@@ -609,31 +609,31 @@
 .chroma .gh, .code-inline .gh {
 	color: var.$black;
 	@media (prefers-color-scheme: dark) {
-		color: #ffffff;
+		color: var.$white;
 	}
 }
 
 // GenericInserted
 .chroma .gi, .code-inline .gi {
-	color: #589819;
+	color: map-get(var.$twcss, green-800);
 	@media (prefers-color-scheme: dark) {
-		color: #589819;
+		color: map-get(var.$twcss, green-200);
 	}
 }
 
 // GenericOutput
 .chroma .go, .code-inline .go {
-	color: #cccccc;
+	color: map-get(var.$twcss, zinc-800);
 	@media (prefers-color-scheme: dark) {
-		color: #cccccc;
+		color: map-get(var.$twcss, zinc-300);
 	}
 }
 
 // GenericPrompt
 .chroma .gp, .code-inline .gp {
-	color: #aaaaaa;
+	color: map-get(var.$twcss, zinc-800);
 	@media (prefers-color-scheme: dark) {
-		color: #aaaaaa;
+		color: map-get(var.$twcss, zinc-300);
 	}
 }
 
@@ -644,17 +644,17 @@
 
 // GenericSubheading
 .chroma .gu, .code-inline .gu {
-	color: #ffffff;
+	color: var.$black;
 	@media (prefers-color-scheme: dark) {
-		color: #ffffff;
+		color: var.$white;
 	}
 }
 
 // GenericTraceback
 .chroma .gt, .code-inline .gt {
-	color: #d22323;
+	color: map-get(var.$twcss, red-800);
 	@media (prefers-color-scheme: dark) {
-		color: #d22323;
+		color: map-get(var.$twcss, red-300);
 	}
 }
 
@@ -665,9 +665,9 @@
 
 // TextWhitespace
 .chroma .w, .code-inline .w {
-	color: #666666;
+	color: map-get(var.$twcss, zinc-800);
 	@media (prefers-color-scheme: dark) {
-		color: #666666;
+		color: map-get(var.$twcss, zinc-300);
 	}
 }
 
@@ -686,7 +686,7 @@ code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #ddd; // was ccc
+	color: map-get(var.$twcss, gray-200);
 	background: none;
 	font-size: clamp(0.9rem, 1vw + 0.625em, var.$text-lg);
 	text-align: left;
@@ -799,9 +799,9 @@ article blockquote code {
 	right: 0;
 	padding: 2px 7px 5px 7px;
 	margin: 5px;
-	color: #767676;
-	border-color: #767676;
-	background-color: #ededed;
+	color: map-get(var.$twcss, gray-500);
+	border-color: map-get(var.$twcss, gray-500);
+	background-color: map-get(var.$twcss, gray-100);
 	border: 1px solid;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -810,15 +810,15 @@ article blockquote code {
 	transition: 0.1s;
 }
 .clipboard-button > svg {
-	fill: #767676;
+	fill: map-get(var.$twcss, gray-500);
 }
 .clipboard-button:hover {
 	cursor: pointer;
-	border-color: #696969;
-	background-color: #e0e0e0;
+	border-color: map-get(var.$twcss, green-600);
+	background-color: map-get(var.$twcss, green-100);
 }
 .clipboard-button:hover > svg {
-	fill: #696969;
+	fill: map-get(var.$twcss, green-600);
 }
 .clipboard-button:focus {
 	outline: 0;
