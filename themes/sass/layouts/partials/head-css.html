@@ -40,18 +40,10 @@
 				{{- if hugo.IsProduction -}}
 					{{- $css = $css | fingerprint "md5" -}}
 				{{- end }}
-					<link rel="preload" href="{{ $css.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+					<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 				{{- else -}}
 			{{ end -}}
 		{{- end -}}
-		<noscript>{{- range $cssTypes -}}
-			{{- $condition = index . 0 -}}
-			{{- $fileName = index . 1 -}}
-			{{- if eq $condition true -}}
-				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
-				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-			{{- end -}}
-		{{- end -}}</noscript>
 
 		{{/*
 			<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
