@@ -39,12 +39,9 @@
 				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
 				{{- if hugo.IsProduction -}}
 					{{- $css = $css | fingerprint "md5" -}}
-					<link{{ if eq site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="preload" as="style" href="{{ $css.RelPermalink }}">
-					<link{{ if eq site.Params.Host "CFP" }} nonce="DhcnhD3khTMePgXw"{{ end }} rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-				{{- else -}}
-					<link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-					<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 				{{- end }}
+					<link rel="preload" href="{{ $css.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+				{{- else -}}
 			{{ end -}}
 		{{- end -}}
 		<noscript>{{- range $cssTypes -}}
