@@ -1,6 +1,14 @@
 	<head>
 
 		{{ hugo.Generator }}
+{{- /* Required meta tags */}}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{{/* conditional CSS */}}
+		{{- partialCached "head-criticalcss.html" . -}}
+		{{- partial "head-css.html" . }}
+		<noscript><style>.nScrHidden {display: none;}</style></noscript>
 		{{ partial "head-meta_cloud-socimg.html" . -}}
 		{{- /*
 			choices are:
@@ -12,14 +20,10 @@
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
-		{{/* conditional CSS */}}
-		{{- partialCached "head-criticalcss.html" . -}}
-		{{- partial "head-css.html" . }}
-		<noscript><style>.nScrHidden {display: none;}</style></noscript>
     {{- if hugo.IsProduction }}
-		{{- /* Fathom script */}}
+{{- /* Fathom script */}}
 		<script src="https://guitar-thriving.brycewray.com/script.js" data-site="UJDSNFVF" defer></script>
-    {{- /* / end, Fathom script */}}
+{{- /* / end, Fathom script */}}
     {{- end }}
 
 	</head>
