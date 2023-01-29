@@ -23,7 +23,7 @@
 	b, strong {
 		@apply font-semibold;
 	}
-	h1, h2, h3, h4, h5 {
+	h1, h2, h3, h4 {
 		@apply font-medium tracking-tight;
 		/* leading controlled by fluid-text settings in TWCSS config */
 	}
@@ -36,13 +36,13 @@
 	h3 {
 		@apply text-xl;
 	}
-	h4, h5 {
+	h4 {
 		@apply text-lg;
 	}
-	h3, h5 {
+	h3 {
 		@apply italic;
 	}
-	h1, h2, h3, h4, h5 {
+	h1, h2, h3, h4 {
 		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
 	}
 	a {

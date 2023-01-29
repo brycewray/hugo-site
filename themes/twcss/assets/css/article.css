@@ -7,7 +7,7 @@ article {
 	h2 {
 		@apply mt-8 mb-6;
 	}
-	h3, h4, h5 {
+	h3, h4 {
 		@apply mt-6 mb-4;
 	}
 	p {
