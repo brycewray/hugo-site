@@ -60,17 +60,7 @@ echo $PATH
 	- x64 (`linux-x64`)
 	- IA-32 (`linux-ia32`)
 
-3. To unpack the `.tar.gz` archive file to retrieve its contents, enter `tar -xf ` followed by the name of the `.tar.gz` file. (As an alternative, depending on your particular Linux distribution and windows manager, you **may** also be able to use a GUI to perform this operation.)\
-The resulting contents should be as shown in your downloads folder:
-{{< highlight plaintext "linenos=false" >}}
-sass_embedded
-└─ dart-sass-embedded
-└─ src
-		└─ dart
-		└─ dart-sass-embedded.snapshot
-		└─ LICENSE
-{{< /highlight >}}
-Even though it lacks an extension, `sass_embedded/dart-sass-embedded` is a shell script that works with the actual binary, `sass_embedded/src/dart`.
+3. To unpack the `.tar.gz` archive file to retrieve its contents, enter `tar -xf ` followed by the name of the `.tar.gz` file. (As an alternative, depending on your particular Linux distribution and windows manager, you **may** also be able to use a GUI to perform this operation.) The resulting contents will depend on which `tar.gz` archive file you chose.
 
 ### Move the `sass_embedded` folder to `bin`
 
