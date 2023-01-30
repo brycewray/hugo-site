@@ -118,53 +118,53 @@ The first of those, `head-criticalcss.html`, looks like this:
 And, as for `head-css.html`, it puts **all** those earlier conditionals in one file and gradually builds the external CSS files:
 
 ```go-html-template
-	{{- $css := "" -}}
-	{{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
-	{{- $condition := "" -}}
-	{{- $fileName := "" -}}
-	{{- $conditionSocial := false -}}
-	{{- $conditionCode := false -}}
-	{{- $conditionTables := false -}}
-	{{- $conditionLiteYT := false -}}
-	{{- $conditionFootnotes := false -}}
-	{{- $conditionDetails := false -}}
-	{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
-	{{- if (findRE `(<pre|<code)` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
-	{{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
-	{{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
-	{{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
-	{{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}
+{{- $css := "" -}}
+{{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
+{{- $condition := "" -}}
+{{- $fileName := "" -}}
+{{- $conditionSocial := false -}}
+{{- $conditionCode := false -}}
+{{- $conditionTables := false -}}
+{{- $conditionLiteYT := false -}}
+{{- $conditionFootnotes := false -}}
+{{- $conditionDetails := false -}}
+{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
+{{- if (findRE `(<pre|<code)` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
+{{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
+{{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
+{{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
+{{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}
 
-	{{- $cssTypes := slice -}}{{/* init big slice */}}
-	{{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
-	{{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
-	{{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
-	{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (or (ne .Title "Home page") (ne .Title "Search the site") (ne .Title "Sitemap (HTML form)") (ne .Title "Posts")) "billboard") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (or (and (eq .Section "posts") (ne .Title "Posts")) (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?")) "article") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (and (eq .Section "posts") (ne .Title "Posts")) "posts-single") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (eq .Title "Posts") "posts-list") $cssTypes -}}
-	{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (eq .Title "Home page") "home") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (eq .Title "Sitemap (HTML form)") "sitemaphtml") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (ne .Title site.Params.SearchTitle) "search-btn") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (eq .Title site.Params.SearchTitle) "search-form") $cssTypes -}}
-	{{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (eq .Title "404 Page not found") "fourohfour") $cssTypes -}}
+{{- $cssTypes := slice -}}{{/* init big slice */}}
+{{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
+{{- $cssTypes = append slice (slice (and (ne .Title "Home page") (ne .Title "Sitemap (HTML form)") (ne .Title "Posts")) "billboard") $cssTypes -}}
+{{- $cssTypes = append slice (slice (and (and (ne .Title "Search the site") (ne .Title "Posts")) (or (eq .Section "posts") (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?"))) "article") $cssTypes -}}
+{{- $cssTypes = append slice (slice (and (eq .Section "posts") (ne .Title "Posts")) "posts-single") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title "Posts") "posts-list") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title "Home page") "home") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title "Sitemap (HTML form)") "sitemaphtml") $cssTypes -}}
+{{- $cssTypes = append slice (slice (ne .Title site.Params.SearchTitle) "search-btn") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title site.Params.SearchTitle) "search-form") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}
+{{- $cssTypes = append slice (slice (eq .Title "404 Page not found") "fourohfour") $cssTypes -}}
 
-	{{- range $cssTypes -}}
-		{{- $condition = index . 0 -}}
-		{{- $fileName = index . 1 -}}
-		{{- if eq $condition true -}}
-			{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
-			{{- if hugo.IsProduction -}}
-				{{- $css = $css | fingerprint "md5" -}}
-			{{- end }}
-				<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-			{{- else -}}
-		{{ end -}}
-	{{- end -}}
+{{- range $cssTypes -}}
+	{{- $condition = index . 0 -}}
+	{{- $fileName = index . 1 -}}
+	{{- if eq $condition true -}}
+		{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
+		{{- if hugo.IsProduction -}}
+			{{- $css = $css | fingerprint "md5" -}}
+		{{- end }}
+			<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+		{{- else -}}
+	{{ end -}}
+{{- end -}}
 ```
 
 **Note**: I've updated this post several times in recent days and, rather than leave inaccurate info in it from my previous efforts, I've chosen to keep only the update you see above. Of course, the post's history is [on the site repo](https://github.com/brycewray/hugo_site/commits/main/content/posts/2023/01/sorta-scoped-styling-hugo-take-two.md).
