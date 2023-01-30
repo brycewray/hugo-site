@@ -140,7 +140,7 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 	{{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
 	{{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
 	{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
-	{{- $cssTypes = append slice (slice (or (ne .Title "Home page") (ne .Title "Search the site") (ne .Title "Sitemap") (ne .Title "Posts")) "billboard") $cssTypes -}}
+	{{- $cssTypes = append slice (slice (or (ne .Title "Home page") (ne .Title "Search the site") (ne .Title "Sitemap (HTML form)") (ne .Title "Posts")) "billboard") $cssTypes -}}
 	{{- $cssTypes = append slice (slice (or (and (eq .Section "posts") (ne .Title "Posts")) (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?")) "article") $cssTypes -}}
 	{{- $cssTypes = append slice (slice (and (eq .Section "posts") (ne .Title "Posts")) "posts-single") $cssTypes -}}
 	{{- $cssTypes = append slice (slice (eq .Title "Posts") "posts-list") $cssTypes -}}
