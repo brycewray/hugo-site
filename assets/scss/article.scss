@@ -31,12 +31,6 @@ article {
 		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
-		.red strong, .red b, .red em, .red i {
-			color: map-get(var.$twcss, red-700);
-			@media (prefers-color-scheme: dark) {
-				color: map-get(var.$twcss, red-300);
-			}
-		}
 	}
 	li li, li p {
 		font-size: inherit;
