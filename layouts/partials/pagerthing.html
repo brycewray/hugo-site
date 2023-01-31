@@ -24,9 +24,15 @@
 			{{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
 
 			<div class="posts-pagerThing">
-				{{/* First page. */}}
+				{{- /*
+					First page --- test for both page 1 and page 2
+					to avoid redundant links:
+					https://webaim.org/discussion/mail_thread?thread=9881
+					https://www.boia.org/blog/how-redundant-links-impact-accessibility
+					https://stackoverflow.com/questions/38754694/accessibility-wcag-2-0-redundant-links-and-responsive-website-navigation
+				*/ -}}
 				<div>
-					{{ if ne $paginator.PageNumber 1 }}
+					{{ if and (ne $paginator.PageNumber 1) (ne $paginator.PageNumber 2) }}
 						<a class="icon" aria-label="First page" title="First page" href="{{ $paginator.First.URL }}">
 							{{ partial "svgPrevPageIcon.html" . }}{{ partial "svgPrevPageIcon.html" . }}
 						</a>
@@ -35,7 +41,7 @@
 					{{ end }}
 				</div>
 				<div class="pagerSpacer"></div>
-				{{/* Previous page. */}}
+				{{- /* Previous page. */ -}}
 				<div>
 					{{ if $paginator.HasPrev }}
 						<a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page" title="Previous page">
@@ -47,7 +53,7 @@
 				</div>
 				<div class="pagerSpacer"></div>
 				<div class="pagerSpacer"></div>
-				{{/* Next page. */}}
+				{{- /* Next page. */ -}}
 				<div>
 					{{ if $paginator.HasNext }}
 						<a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page" title="Next page">
@@ -58,9 +64,15 @@
 					{{ end }}
 				</div>
 				<div class="pagerSpacer"></div>
-				{{/* Last page. */}}
+				{{- /*
+					Last page --- test for both last page and next-to-last page
+					to avoid redundant links:
+					https://webaim.org/discussion/mail_thread?thread=9881
+					https://www.boia.org/blog/how-redundant-links-impact-accessibility
+					https://stackoverflow.com/questions/38754694/accessibility-wcag-2-0-redundant-links-and-responsive-website-navigation
+				*/ -}}
 				<div>
-					{{ if ne $paginator.PageNumber $paginator.TotalPages }}
+					{{ if (and ( (ne $paginator.PageNumber $paginator.TotalPages) ) (ne $paginator.PageNumber (sub $paginator.TotalPages 1))) }}
 						<a class="icon" aria-label="Last page" title="Last page" href="{{ $paginator.Last.URL }}">
 							{{ partial "svgNextPageIcon.html" . }}{{ partial "svgNextPageIcon.html" . }}
 						</a>
