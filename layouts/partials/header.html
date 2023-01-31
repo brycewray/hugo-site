@@ -17,7 +17,7 @@
 			<li><a href="/" title="Home" aria-label="Home page">{{ partial "svgNavIcon.html"}}</a></li>
 			<li><a href="/about/" title="About me" aria-label="About me">About</a></li>
 			{{- range first 1 (where .Site.RegularPages "Section" "posts") -}}
-				<li><a href="{{ .RelPermalink }}" title="Newest post" aria-label="Newest post">Newest post</a></li>
+				<li><a href="{{ .RelPermalink }}" title="Newest post" aria-label="The most recently added post on the site">Newest post</a></li>
 			{{- end -}}
 			<li><a href="/posts/" title="Posts" aria-label="Posts">All posts</a></li>
 			<li><a href="/search/" title="Site search" aria-label="Site search">Search</a></li>
