@@ -21,7 +21,7 @@
 		width: 90%;
 		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
 		a {
-			color: map-get(var.$twcss, blue-700); // accessibility per WebAIM
+			color: map-get(var.$twcss, blue-800); // accessibility per WebAIM
 			text-decoration: none;
 			@media (prefers-color-scheme: dark) {
 				color: map-get(var.$twcss, blue-200);
