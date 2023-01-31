@@ -13,7 +13,7 @@ When I [transitioned this site into Cut the Crap and Just Write (CTCAJW) Mode](/
 
 ----
 
-[Astro](https://astro.build) 1.0 [debuted](https://astro.build/blog/astro-1/) on schedule earlier this week.[^birthday] As I [already explained](/posts/2022/07/astro-move-to-mdx), it's gained a lot from a late decision to use [MDX](https://mdxjs.com), rather than a custom flavor of Markdown, for component-based content. While it still lacks some capabilities[^capabilities] on which I've come to depend from [Hugo](https://gohugo.io), Astro has come a long way and is definitely worth a look.
+[Astro](https://astro.build) 1.0 [debuted](https://astro.build/blog/astro-1/) on schedule earlier this week.[^birthday] As I [already explained](/posts/2022/07/astro-move-to-mdx/), it's gained a lot from a late decision to use [MDX](https://mdxjs.com), rather than a custom flavor of Markdown, for component-based content. While it still lacks some capabilities[^capabilities] on which I've come to depend from [Hugo](https://gohugo.io), Astro has come a long way and is definitely worth a look.
 
 [^birthday]: Ironically, Astro 1.0 was "born" one year to the day after [the Astro community reacted so kindly to the birth of our grandson](/posts/2021/08/boy-oh-grandboy/).
 

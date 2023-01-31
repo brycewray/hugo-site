@@ -37,6 +37,6 @@ For now, I still have only two Hugo starters. This is for two reasons: there's o
 
 As usual, I've learned a few things while working on these, including the need to fix some embarrassing oversights in the older ones. Regardless of your proficiency with Eleventy and/or Hugo, perhaps you'll find them similarly educational. Have fun with them.
 
-If you use one of the repos, you'll probably want to "watch" that repo for changes (which have been frequent of late). Also, please [let me know](/contact) --- including with [GitHub issues](https://guides.github.com/features/issues/), if you prefer --- if you encounter difficulties with any of them.
+If you use one of the repos, you'll probably want to "watch" that repo for changes (which have been frequent of late). Also, please [let me know](/contact/) --- including with [GitHub issues](https://guides.github.com/features/issues/), if you prefer --- if you encounter difficulties with any of them.
 
 Happy SSG-ing!

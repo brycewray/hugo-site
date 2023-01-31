@@ -19,7 +19,7 @@ Unfortunately, only half of that continued to be true during the last week. Alth
 
 The CFP error messages implied the problem was on Cloudflare's end, during the process when the built site is being sent out to the various nodes of the Cloudflare CDN, so I couldn't very well do anything about that.
 
-I put up with it for a few days; but, today, I'd finally had enough. I reverted to not only the normal push-to-deploy method but also the Dart-Sass-with-Hugo-method about which I first [wrote](/posts/2022/03/using-dart-sass-hugo) in March, which was installing the [Node.js Sass package](https://github.com/sass/sass) and working with that.
+I put up with it for a few days; but, today, I'd finally had enough. I reverted to not only the normal push-to-deploy method but also the Dart-Sass-with-Hugo-method about which I first [wrote](/posts/2022/03/using-dart-sass-hugo/) in March, which was installing the [Node.js Sass package](https://github.com/sass/sass) and working with that.
 
 Yep, back came the `node_modules`, but at least this involved only two outright Node dependencies (as long as I can avoid worrying about everything else that comes over with `npm init`): `sass` and the `rimraf` cross-platform tool I use to keep stuff clean.
 

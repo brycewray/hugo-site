@@ -60,7 +60,7 @@ Ulysses also allows slightly easier manipulation of type styles --- *e.g.*, lett
 
 Then there's a matter of choice. Ulysses lets you change the view font to pretty much any typeface on your device. That's something which iA Writer by design, famously or infamously as the case may be, won't allow. Some days, you simply want to look at something other than one of the three ’faces iA Writer permits (and, hey, [it was once just *one* typeface](https://ia.net/topics/in-search-of-the-perfect-writing-font), so the folks at [iA Inc.](https://ia.net) are being a lot more accommodating in that regard these days). In the comparison screen capture above, I purposely have set Ulysses to use the same iA-created Monospace Duo typeface as I typically use in iA Writer; but it just as easily could've been any of the oodles of other typefaces my iMac boasts.
 
-Finally, writing posts in Ulysses gives me an additional opportunity (besides only on the [work in progress](/posts/2020/06/why-kept-ulysses)) to use the app's latest version, [which added several cool features](https://blog.ulysses.app/ulysses-20/) I'm enjoying quite a bit.
+Finally, writing posts in Ulysses gives me an additional opportunity (besides only on the [work in progress](/posts/2020/06/why-kept-ulysses/)) to use the app's latest version, [which added several cool features](https://blog.ulysses.app/ulysses-20/) I'm enjoying quite a bit.
 
 ## Fun while it lasted
 

@@ -32,11 +32,11 @@ The upshot: to CFP aficionados --- and also any who may be curious about giving 
 
 ## Remember the sitemap
 
-Got this in the [ol’ emailbox](/contact) the other day amid some otherwise very nice comments from this person:
+Got this in the [ol’ emailbox](/contact/) the other day amid some otherwise very nice comments from this person:
 
 > I've been browsing your blog and displaying 5 post/page makes it a pain!
 
-Of course, he was referring to my [paginated list of posts](/posts). Fortunately, I had a quick fix for him:
+Of course, he was referring to my [paginated list of posts](/posts/). Fortunately, I had a quick fix for him:
 
 > Have you tried the HTML sitemap that's linked from the bottom of each page on the site? That way, you don't have to suffer through the paginated result. :-)
 

@@ -424,7 +424,7 @@ jobs:
 
 ## Safer, but not bulletproof
 
-So, you may be wondering, does all this *truly* solve the problems I imagined for the [shell-scripting method](/posts/2022/03/dart-sass-hugo-sequel)?
+So, you may be wondering, does all this *truly* solve the problems I imagined for the [shell-scripting method](/posts/2022/03/dart-sass-hugo-sequel/)?
 
 The simple answer is: I *think* so, but even the method I'm proposing today could run afoul of ever-biting Reality. Let me spin some possibilities from within my occasionally paranoid skull.
 

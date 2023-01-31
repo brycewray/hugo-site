@@ -11,7 +11,7 @@ You know how it is. You go in a certain direction for a while, perhaps through a
 
 (Well, if you *don't* know how that is: trust me, kids, you'll reach that point if you live long enough.)
 
-Back in [December](/posts/2019/12/packing-up), I began running this site on a combination of [Eleventy](https://11ty.dev) and the [webpack](https://webpack.js.org) [software bundler](https://www.freecodecamp.org/news/lets-learn-how-module-bundlers-work-and-then-write-one-ourselves-b2e3fe6c88ae/). This came after I'd spent a few weeks with the webpack-powered [Gatsby](https://gatsbyjs.org) and reached the conclusion that I could get eighty to ninety percent of the same performance and flexibility out of an Eleventy/webpack combo while enjoying it --- especially Eleventy --- *’way* more than the sometimes maddening Gatsby.
+Back in [December](/posts/2019/12/packing-up/), I began running this site on a combination of [Eleventy](https://11ty.dev) and the [webpack](https://webpack.js.org) [software bundler](https://www.freecodecamp.org/news/lets-learn-how-module-bundlers-work-and-then-write-one-ourselves-b2e3fe6c88ae/). This came after I'd spent a few weeks with the webpack-powered [Gatsby](https://gatsbyjs.org) and reached the conclusion that I could get eighty to ninety percent of the same performance and flexibility out of an Eleventy/webpack combo while enjoying it --- especially Eleventy --- *’way* more than the sometimes maddening Gatsby.
 
 But, then, some funny things happened on my way to [SSG](https://staticgen.com) bliss.
 

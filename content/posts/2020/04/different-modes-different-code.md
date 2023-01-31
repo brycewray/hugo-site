@@ -111,7 +111,7 @@ Fortunately, the Eleventy repo's CSS proved *mostly* compatible across the board
 
 ### Flashbacks
 
-The last major thing I had to do was make each site's version of the [posts list pages](/posts) look and work the same. I won't belabor the point, but suffice it to say that it was in this particular operation that I remembered many of the things about Gatsby that [made](/posts/2019/07/why-staying-with-hugo/) [me](/posts/2019/07/lessons-learned/) [crazy](/posts/2019/09/why-left-hugo-eleventy/) when I was trying to learn it last year.
+The last major thing I had to do was make each site's version of the [posts list pages](/posts/) look and work the same. I won't belabor the point, but suffice it to say that it was in this particular operation that I remembered many of the things about Gatsby that [made](/posts/2019/07/why-staying-with-hugo/) [me](/posts/2019/07/lessons-learned/) [crazy](/posts/2019/09/why-left-hugo-eleventy/) when I was trying to learn it last year.
 
 In the end, I managed to wrestle it successfully to the mat, my blood pressure only slightly the worse for the wear after a two-and-a-half-hour struggle.
 

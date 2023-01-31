@@ -25,7 +25,7 @@ Do you even have to write all that well? It surely helps, but even a casual chec
 
 ### Performance
 
-I already addressed this subject in last year's "[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website)”; and, where the Google-critical Core Web Vitals are concerned, you should rely on the proverbial horse's mouth (*e.g.*, "[More time, tools, and details on the page experience update](https://developers.google.com/search/blog/2021/04/more-details-page-experience)”; "[Core Web Vitals &amp; Page Experience FAQs](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021)”; and, most especially, "[Web Vitals](https://web.dev/vitals/)”).
+I already addressed this subject in last year's "[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website/)”; and, where the Google-critical Core Web Vitals are concerned, you should rely on the proverbial horse's mouth (*e.g.*, "[More time, tools, and details on the page experience update](https://developers.google.com/search/blog/2021/04/more-details-page-experience)”; "[Core Web Vitals &amp; Page Experience FAQs](https://support.google.com/webmasters/thread/104436075/core-web-vitals-page-experience-faqs-updated-march-2021)”; and, most especially, "[Web Vitals](https://web.dev/vitals/)”).
 
 ### Feeds and sitemaps
 

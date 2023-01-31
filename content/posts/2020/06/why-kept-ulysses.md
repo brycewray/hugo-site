@@ -9,7 +9,7 @@ Numbers don't lie. Well, at least *these* numbers don't.
 
 They're coming from two disparate sources which, originating from two completely different methods of gathering data, have no reason to agree. Yet, they do.
 
-Data from both [Google Search Console](https://search.google.com/search-console/about) and [Netlify Analytics](https://www.netlify.com/products/analytics/) make it clear that, while web traffic spikes come and go, the main reason why people visit this site has been its posts about one particular subject. And that subject is **not** related to [static site generators](https://staticgen.com) (SSGs) or anything else similarly nerdy, despite the overall slant of most of the [posts you'll find here](/posts).
+Data from both [Google Search Console](https://search.google.com/search-console/about) and [Netlify Analytics](https://www.netlify.com/products/analytics/) make it clear that, while web traffic spikes come and go, the main reason why people visit this site has been its posts about one particular subject. And that subject is **not** related to [static site generators](https://staticgen.com) (SSGs) or anything else similarly nerdy, despite the overall slant of most of the [posts you'll find here](/posts/).
 
 It's [Ulysses](https://ulysses.app). Yep, to my surprise, this site consistently gets the most views, over time, for my articles that discuss that macOS/iOS creative writing app.
 

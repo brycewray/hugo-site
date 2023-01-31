@@ -64,7 +64,7 @@ That left only:
 
 - Creating [`/layouts/partials/footer-wm.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/partials/footer-wm.html), which was another footer partial like the original [`/layouts/partials/footer.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/partials/footer.html) **except** that it included the necessary [microformats](https://indieweb.org/microformats) info for the site.
 
-- Editing [`/layouts/default/baseof.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/_default/baseof.html), the site's simplest but most important template, so that it would call to that webmentions-savvy footer partial on every page *except* for any pages within the paginated [posts list](/posts).
+- Editing [`/layouts/default/baseof.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/_default/baseof.html), the site's simplest but most important template, so that it would call to that webmentions-savvy footer partial on every page *except* for any pages within the paginated [posts list](/posts/).
 
 - As with the Eleventy repo, making appropriate edits to the webmentions.css file --- in this case, [`/assets/css/webmentions.css`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/assets/css/webmentions.css). In fact, the CSS was the same, so that was just a matter of copying the file from one repo's appropriate location to the other's.
 

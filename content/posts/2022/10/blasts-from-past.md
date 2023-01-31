@@ -50,7 +50,7 @@ As for [Gatsby](https://gatsbyjs.com), the only other SSG I've ever used to mana
 - "[Sorta StranGe (SSG) trip](/posts/2019/12/sorta-strange-ssg-trip/)" <span class="nobrk">(2019-12-27)</span>.
 - "[A normal person's guide to static websites](/posts/2020/09/normal-persons-guide-static-websites/)" <span class="nobrk">(2020-09-12)</span>.
 - "[Eleventy and Hugo: comparing and contrasting](/posts/2020/12/eleventy-hugo-comparing-contrasting/)" <span class="nobrk">(2020-12-28)</span>.
-- "[Simplify, simplify](/posts/2021/02/simplify-simplify)" <span class="nobrk">(2021-02-06)</span>.
+- "[Simplify, simplify](/posts/2021/02/simplify-simplify/)" <span class="nobrk">(2021-02-06)</span>.
 - "[Is Astro ready for your blog?](/posts/2022/04/astro-ready-your-blog/)" <span class="nobrk">(2022-04-24)</span>.
 - "[The winds of change](/posts/2022/04/winds-change/)" <span class="nobrk">(2022-04-26)</span>.
 - "[Mulling over migration?](/posts/2022/05/mulling-over-migration/)" <span class="nobrk">(2022-05-07)</span>.

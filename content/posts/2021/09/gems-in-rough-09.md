@@ -10,7 +10,7 @@ Each entry in the "Gems in the rough" series is a collection of tips, explanatio
 
 ## Privacy-respecting YouTube embeds
 
-Since it's highly unlikely you spend time perusing *any* website's privacy policy, much less *this* site's, I wanted to note here a little change I made to the [latter](/privacy) a few days ago. When I first posted the policy last year, it was pretty bare-bones because, frankly, I didn't yet understand how invasive certain items could be. Fortunately, that particular ignorance didn't last long; less than a week later, I added a "Notes about external services" section, which included the following:
+Since it's highly unlikely you spend time perusing *any* website's privacy policy, much less *this* site's, I wanted to note here a little change I made to the [latter](/privacy/) a few days ago. When I first posted the policy last year, it was pretty bare-bones because, frankly, I didn't yet understand how invasive certain items could be. Fortunately, that particular ignorance didn't last long; less than a week later, I added a "Notes about external services" section, which included the following:
 
 > <span class="h3">Embedded videos</span>
 >

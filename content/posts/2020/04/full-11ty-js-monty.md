@@ -7,7 +7,7 @@ date: 2020-04-15T17:30:00-05:00
 
 {{% disclaimer %}}
 
-Well, wouldn't you know it? My [recent post](/posts/2020/03/back-nunjucks-eleventy-site) notwithstanding, this [Eleventy](https://11ty.dev)-/[webpack](https://webpack.js.org)-based site is now using nothing but [JavaScript-*only*](https://11ty.dev/docs/languages/javascript) [templating](https://11ty.dev/docs/templates). That means .11ty.js template files rather than [.njk](https://11ty.dev/docs/languages/nunjucks) ([Nunjucks](https://mozilla.github.io/nunjucks/)) files.
+Well, wouldn't you know it? My [recent post](/posts/2020/03/back-nunjucks-eleventy-site/) notwithstanding, this [Eleventy](https://11ty.dev)-/[webpack](https://webpack.js.org)-based site is now using nothing but [JavaScript-*only*](https://11ty.dev/docs/languages/javascript) [templating](https://11ty.dev/docs/templates). That means .11ty.js template files rather than [.njk](https://11ty.dev/docs/languages/nunjucks) ([Nunjucks](https://mozilla.github.io/nunjucks/)) files.
 
 Curious about the code itself? Check out this site's [public repository](https://github.com/brycewray/eleventy_bundler) for the .11ty.js templating. If you want to see the previous Nunjucks stuff, feel free to nose around inside some of the repo's [public branches](https://github.com/brycewray/eleventy_bundler/branches). And, if you're of a mildly sadistic bent, the `nunjucks-to-11ty-js`, `another-to-11ty-js`, and `wm-11ty-js` branches in particular might amuse you as you watch me huff and puff my way through the conversion process.
 
@@ -25,7 +25,7 @@ That first time through the mill last month, I got the vast majority of the site
 
 ### The paginated posts list
 
-With this site now in the fifty-plus range where number of posts is concerned, I can't just put up one page that lists them *all*, even if I made it tiny type or something like that. That just wouldn't do. The [posts list](/posts) has to be a *paginated* list, auto-generating pages and auto-ordering listings as I add new posts.
+With this site now in the fifty-plus range where number of posts is concerned, I can't just put up one page that lists them *all*, even if I made it tiny type or something like that. That just wouldn't do. The [posts list](/posts/) has to be a *paginated* list, auto-generating pages and auto-ordering listings as I add new posts.
 
 I had carefully followed the [Eleventy site](https://11ty.dev)'s [great explanation](https://11ty.dev/docs/pagination) on making such a paginated list. Only problem: it's based on doing so in Nunjucks. And, since it's still unusual for an Eleventy site to be all-.11ty.js (and even those which are tend not to have paginated lists in their public repos), I couldn't find any good ways of doing it. I would have to figure it out.
 
@@ -77,7 +77,7 @@ I must once again extend my highest thanks and commendations to various folks fo
 
 ### Reuben Lillie
 
-I [already noted](/posts/2020/03/back-nunjucks-eleventy-site) Mr. Lillie's great example in steering us Eleventy advocates toward the path of all-.11ty.js with [his own site](https://reubenlillie.com)'s [fantastically well-documented repo](https://gitlab.com/reubenlillie/reubenlillie.com/). Then, in the days after that post, he exceeded even the already optimistic expectations I'd formed after combing that repo for code guidance and exchanging some email and tweets with him.
+I [already noted](/posts/2020/03/back-nunjucks-eleventy-site/) Mr. Lillie's great example in steering us Eleventy advocates toward the path of all-.11ty.js with [his own site](https://reubenlillie.com)'s [fantastically well-documented repo](https://gitlab.com/reubenlillie/reubenlillie.com/). Then, in the days after that post, he exceeded even the already optimistic expectations I'd formed after combing that repo for code guidance and exchanging some email and tweets with him.
 
 Not only has he since put up an *additional* repo, [eleventy-dot-js-blog](https://gitlab.com/reubenlillie/eleventy-dot-js-blog), an all-.11ty.js Eleventy *starter* site ready for your cloning/forking pleasure; but he also gave me far more help than I deserve last weekend --- a holiday weekend --- as I tried to incorporate some of that new repo's code in a branch of this site.
 

@@ -22,7 +22,7 @@ How all this came about is our tale for today, friends and neighbors.
 
 ## Curiosity killed the cache
 
-A few days ago, a reader named Chad Henry contacted me about my 2020 article, "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy)." In that post and two [follow-up](/posts/2020/12/cache-busting-eleventy-take-two) [pieces](/posts/2020/12/hashing-out-cache-busting-fix-eleventy), I discussed the need, and explained methods, for a website to keep its visitors’ [browser caches](https://www.bigcommerce.com/ecommerce-answers/what-browser-cache-and-why-it-important/) from storing older versions of the site's CSS whenever that code changes.
+A few days ago, a reader named Chad Henry contacted me about my 2020 article, "[Using PostCSS for cache-busting in Eleventy](/posts/2020/11/using-postcss-cache-busting-eleventy/)." In that post and two [follow-up](/posts/2020/12/cache-busting-eleventy-take-two/) [pieces](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/), I discussed the need, and explained methods, for a website to keep its visitors’ [browser caches](https://www.bigcommerce.com/ecommerce-answers/what-browser-cache-and-why-it-important/) from storing older versions of the site's CSS whenever that code changes.
 
 In short: if the browser sees a file called *index.css*, it's going to assume it's the same *index.css* it already saw, and cached, on a previous visit. As a result, the browser won't use the site's **current** *index.css* if the file has changed since that visit. The way to do the desired "cache-busting" typically involves changing the CSS file name, usually by appending a [hash](https://www.sentinelone.com/cybersecurity-101/hashing/) of its content, every time there are any changes in the CSS. Ideally, the site automatically generates such name changes at build time *and* injects them within the site's HTML in such a way that everything just works. (That is: you don't want the HTML still to be referring to *index-2eXy57Qa.css* if the CSS file's **newly** generated name is *index-34Dk83Af.css*.)
 
@@ -72,7 +72,7 @@ As a result, instead of having this in your HTML:
 
 Anyway, I told Chad:
 
-> Yeah, I used webpack for a while ([https://www.brycewray.com/posts/2019/12/packing-up](https://www.brycewray.com/posts/2019/12/packing-up)), but later decided ([https://www.brycewray.com/posts/2020/05/going-solo-eleventy](https://www.brycewray.com/posts/2020/05/going-solo-eleventy)) to leave the bundler route. Hoping I don’t end up needing that again — although I must admit geeky interest in Vite. Trying to restrain myself.
+> Yeah, I used webpack for a while ([https://www.brycewray.com/posts/2019/12/packing-up/](https://www.brycewray.com/posts/2019/12/packing-up/)), but later decided ([https://www.brycewray.com/posts/2020/05/going-solo-eleventy/](https://www.brycewray.com/posts/2020/05/going-solo-eleventy/)) to leave the bundler route. Hoping I don’t end up needing that again — although I must admit geeky interest in Vite. Trying to restrain myself.
 
 Given the title and opening of this article, you can readily guess that I was unsuccessful in such restraint. (But I'll get to that.)
 

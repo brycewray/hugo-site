@@ -42,7 +42,7 @@ As 2020 neared a merciful end, two things happened that made me re-think that ju
 
 ## Thing One: a wacko repo
 
-One Saturday morning, spurred by curiosity about cache-busting static assets in Eleventy (more on that in Thing Two down below), I began to work once again with the [webpack](https://webpack.js.org)-based Eleventy [repo](https://github.com/brycewray/eleventy_bundler) I'd [abandoned earlier in the year](/posts/2020/05/going-solo-eleventy). Since it had been months since I'd updated all the dependencies, I ran the [usual sequence](https://www.carlrippon.com/upgrading-npm-dependencies/) of `npm` commands to accomplish that, and then ran `npm run start` so the repo would create a dev-mode version of the site.
+One Saturday morning, spurred by curiosity about cache-busting static assets in Eleventy (more on that in Thing Two down below), I began to work once again with the [webpack](https://webpack.js.org)-based Eleventy [repo](https://github.com/brycewray/eleventy_bundler) I'd [abandoned earlier in the year](/posts/2020/05/going-solo-eleventy/). Since it had been months since I'd updated all the dependencies, I ran the [usual sequence](https://www.carlrippon.com/upgrading-npm-dependencies/) of `npm` commands to accomplish that, and then ran `npm run start` so the repo would create a dev-mode version of the site.
 
 Or, at least, I'd *hoped* it would create that. Can you say, "lots of breaking changes"?
 

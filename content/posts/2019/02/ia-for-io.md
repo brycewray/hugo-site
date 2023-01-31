@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
 ---
 
-My comments at the end of my [previous post](/posts/2019/01/blox-sux) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.
+My comments at the end of my [previous post](/posts/2019/01/blox-sux/) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.
 
 Once again, I'm **not** considering dropping [Ulysses](https://ulysses.app) from my small collection of much-loved apps that I utterly must have when the muse is with me and I feel like writing. It's just that I grow weary of the export-to-Markdown process inherent in writing something in Ulysses for this site, especially since I like to see my edits on my local version of the site as I save them to the target file.
 
@@ -21,7 +21,7 @@ Perhaps more to the point, I believe I was more concerned about how the [YAML](h
 
 {{< imgc src="iA-Writer-inline-footnotes_1548x582.png" alt="Screen capture from iA Writer software showing how footnotes look in it" width=1548 height=582 >}}
 
-That said, iA Writer's inline footnotes, while fine for export from iA Writer, don't fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs "think" when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.[^inlineNotes] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses --- that is to say, all the ones I've included on [my other posts](/posts) before this one --- work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
+That said, iA Writer's inline footnotes, while fine for export from iA Writer, don't fit [Pandoc](https://pandoc.org) standards, which are baked into how some SSGs "think" when converting Markdown to HTML for a site. So, while Pandoc-standard inline footnotes look bad in iA Writer, they work fine in an SSG.[^inlineNotes] However, that is something where Ulysses easily beats iA Writer for this stuff, since the inline footnotes in Ulysses --- that is to say, all the ones I've included on [my other posts](/posts/) before this one --- work perfectly with an SSG. Same is true for [Typora](https://typora.io), as well.
 
 [^inlineNotes]: "Inline notes are easier to write, since you don't have to pick an identifier and move down to type the note." See [here](https://github.com/Witiko/markdown/issues/3) --- the source of that quote --- for an example of what I mean.
 

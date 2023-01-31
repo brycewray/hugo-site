@@ -22,7 +22,7 @@ In two separate posts earlier this year, I gave you details about that aforement
 
 - "[Headers up](/posts/2021/05/headers-up/)" explained that I was using the Worker to provide proper browser-side caching of the site's assets.
 
-- Last month's "[My website and Cloudflare, a year later](/posts/2021/10/my-website-cloudflare-year-later)" mentioned that the Worker now also allows implementation of a tighter [Content Security Policy](https://content-security-policy.com) (CSP) through dynamic insertion of [nonces](https://content-security-policy.com/nonce/).
+- Last month's "[My website and Cloudflare, a year later](/posts/2021/10/my-website-cloudflare-year-later/)" mentioned that the Worker now also allows implementation of a tighter [Content Security Policy](https://content-security-policy.com) (CSP) through dynamic insertion of [nonces](https://content-security-policy.com/nonce/).
 
 The tightness of that CSP prohibits something which can be useful: inline CSS styles. Earlier this week, I realized I had a particular need for dynamic styles (more on that shortly), so I added some code to the Worker for another nonce-related use. The following part of the Worker[^YTstuff] now [makes it CSP-OK](https://content-security-policy.com/examples/allow-inline-style/) to add a `style` dynamically **if** the style has a nonce:
 

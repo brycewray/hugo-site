@@ -210,7 +210,7 @@ Finally, those hyphens connected to many of the curly brackets (`{{-` and `-}}`)
 
 ## Twisted, mister
 
-During an [email exchange](/contact) with one of my readers not long after I [announced](/posts/2021/02/simplify-simplify/) the site's return to Hugo, he --- a recent convert to Eleventy from other, more "opinionated" JS-based SSGs --- remarked how much he was enjoying the relative ease of templating in Eleventy. Only minutes after finishing the Go shortcode we've covered herein, I replied:
+During an [email exchange](/contact/) with one of my readers not long after I [announced](/posts/2021/02/simplify-simplify/) the site's return to Hugo, he --- a recent convert to Eleventy from other, more "opinionated" JS-based SSGs --- remarked how much he was enjoying the relative ease of templating in Eleventy. Only minutes after finishing the Go shortcode we've covered herein, I replied:
 
 > As for templating: I just spent three hours whipping a Hugo shortcode into order so, yes, I do miss the simplicity of [templating] in Eleventy. &nbsp;.&nbsp;.&nbsp;. Anyway, there is kind of a twisted logic in how Go works, and maybe I’m just twisted enough to get it eventually.
 
@@ -220,4 +220,4 @@ However, I do like how this shortcode came out.[^twitscrn] I'll never be an expe
 
 Perhaps I'll get lucky and, twisted or not, won't find myself regretting that "not sufficiently embarrassed" part.
 
-[^twitscrn]: Based on what I'd learned in this process, I also fixed/DRY-ed a very similar shortcode, `twitscrn.html`, that I formerly used for bringing in Twitter tweets’ screen captures as per the site's [privacy policy](/privacy), prior to later reverting to bringing them only as static text.
+[^twitscrn]: Based on what I'd learned in this process, I also fixed/DRY-ed a very similar shortcode, `twitscrn.html`, that I formerly used for bringing in Twitter tweets’ screen captures as per the site's [privacy policy](/privacy/), prior to later reverting to bringing them only as static text.

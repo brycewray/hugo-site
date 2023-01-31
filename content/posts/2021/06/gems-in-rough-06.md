@@ -14,7 +14,7 @@ Some SSGs, such as [Hugo](https://gohugo.io) and [Jekyll](https://jekyllrb.com),
 **Acknowledgement**: Thanks to [Raymond Camden](https://twitter.com/raymondcamden/status/1406277604504748035) for the link to Mr. Ansari's article!
 {.box}
 
-[^WorkingCopy]: This is essentially the workflow I described a couple of years ago in "[Roger, Copy](/posts/2019/07/roger-copy)," involving the use of the superb [Working Copy](https://workingcopyapp.com/) source-control app for iOS.
+[^WorkingCopy]: This is essentially the workflow I described a couple of years ago in "[Roger, Copy](/posts/2019/07/roger-copy/)," involving the use of the superb [Working Copy](https://workingcopyapp.com/) source-control app for iOS.
 
 [^repo]: Of course, that *won't* obscure the presence of a "future" post on a site repo that's public, as is this site's repo: if people are so inclined, they can find it. In other words, don't act as if a "future" post pushed to a public repo is truly hidden. It's not. If you must push a "future" post to the repo but keep the post out of view until it's not "future" any more, you'll have to make the repo private.
 

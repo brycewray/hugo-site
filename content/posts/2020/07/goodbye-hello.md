@@ -52,7 +52,7 @@ Despite the obvious advantages of Google's wealth backing it and its popularity 
 
 First, it lacks Brotli and, if you do a search for "firebase brotli," you'll find several comments from Firebase personnel indicating it's not in the current roadmap, although Google's Addy Osmani [hopes that'll change](https://twitter.com/addyosmani/status/1109949485965180928).
 
-Second, CLI-based deployment is Firebase's *only* method. While that's fine from the desktop Mac (and, I admit, good and geeky fun at times), I sometimes want to [push a change from my iPhone or iPad](/posts/2019/07/roger-copy) with [Working Copy](https://workingcopyapp.com/).
+Second, CLI-based deployment is Firebase's *only* method. While that's fine from the desktop Mac (and, I admit, good and geeky fun at times), I sometimes want to [push a change from my iPhone or iPad](/posts/2019/07/roger-copy/) with [Working Copy](https://workingcopyapp.com/).
 
 The only thing that kept Firebase in the evaluation process till nearly the end is that it's got the wicked-quick and ultra-consistent [Fastly](https://fastly.com) CDN in front of it. It half-tempted me to go back to my days of running sites off a $2.50/month [VPS](https://techterms.com/definition/vps) which I'd then put behind Fastly, but that's more trouble than I want to handle on a regular basis. Been there, done that.
 

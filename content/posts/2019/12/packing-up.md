@@ -117,7 +117,7 @@ My priority was to deliver images that were optimized and "[lazy-loaded](https:/
 
 ### SCSS/Sass
 
-You may recall my [mentioning](/posts/2019/09/why-left-hugo-eleventy) that, on my first run with Eleventy, I used the [Gulp](https://gulpjs.com) task runner app to add the SCSS-to-CSS conversion features I'd formerly had out of the box with my first SSG, [Hugo](https://gohugo.io). While some people do use webpack together with task runners, I wanted to avoid that. Fortunately, webpack [can handle](https://developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/) it all just fine.
+You may recall my [mentioning](/posts/2019/09/why-left-hugo-eleventy/) that, on my first run with Eleventy, I used the [Gulp](https://gulpjs.com) task runner app to add the SCSS-to-CSS conversion features I'd formerly had out of the box with my first SSG, [Hugo](https://gohugo.io). While some people do use webpack together with task runners, I wanted to avoid that. Fortunately, webpack [can handle](https://developerhandbook.com/webpack/how-to-configure-scss-modules-for-webpack/) it all just fine.
 
 ### Miscellaneous benefits
 

@@ -19,7 +19,7 @@ In a few days, I'll be providing what they call on Twitter "some personal news."
 
 *My inability to watch my home team's ballgames on a regular basis due to what I [called the "RSNs flap"](/posts/2020/02/youtube-tv-rsns-flap/) has had about the effect I'd figured it would: I have spent virtually no time this year watching **any** MLB games. While I doubt that the MLB moguls care about the viewing habit of this old fart, they **should** worry that an entire younger generation of potential baseball fans also is being shut out. In a decade or two, the owners and players might just find almost no one left (in the U.S., at least) still caring about, much less willing to pay to see, the sport that's made them all rich.*
 
-**Finally, from the [virtual mailbag](/contact)&nbsp;.&nbsp;.&nbsp;.**\
+**Finally, from the [virtual mailbag](/contact/)&nbsp;.&nbsp;.&nbsp;.**\
 A reader told me that he shares my oft-noted affinity for Trying Whatever Is Currently Cool and therefore, implored me jokingly:
 
 > . . . please[,] no more shiny object recommendations for 6 months maybe.

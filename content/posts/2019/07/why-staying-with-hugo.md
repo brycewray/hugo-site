@@ -27,7 +27,7 @@ oldComments: |
 
 {{% disclaimer %}}
 
-If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear --- and I've even said as much --- that I tend to have a problem avoiding New Shiny Things where tech is concerned.
+If you've been sufficiently masochistic to read through most of my other [posts](/posts/) up to this point, it's probably become pretty clear --- and I've even said as much --- that I tend to have a problem avoiding New Shiny Things where tech is concerned.
 
 I put this site online last September, after several weeks of examining the [static site generator](https://www.staticgen.com) (SSG) scene and picking [Hugo](https://gohugo.io) as the best-suited among them for my purposes. But, almost from the get-go, I kept hearing quite a bit about some other up-and-coming SSGs, and remained curious.
 
@@ -169,7 +169,7 @@ In addition, the [*gatsby-remark-smartypants* plugin](https://www.gatsbyjs.org/p
 
 Finally, my not-often-used-but-still-wanted [Talkyard](https://www.talkyard.io)-powered comments area on each post worked, because the [developer](https://twitter.com/kajmagnus3) wisely provided a [Gatsby way](https://gatsby-demo.talkyard.io/demo-and-installation/) of doing it just as he had a [Hugo way](https://hugo-demo.talkyard.io/posts/demo-and-instructions/) (not to mention a [Jekyll way](https://jekyll-demo.talkyard.io/2018/01/09/installation-instructions.html) and a [Hexo way](https://hexo-demo.talkyard.io/2018/01/04/demo-and-instructions/)). So that, too, was good to go.
 
-Still, although I was pleased by the look-and-feel progress I'd made, I continued to find it difficult to make certain things work even when, and pardon me if this is sounding like the proverbial stuck record, I followed instructions to the Nth degree. I spent a good two nights just trying to get the posts list page to have the same setup as the [Hugo version](/posts) had at that time (two recent posts and their images at the top, followed by a text-only list of the others, as opposed to the paginated version I've since adopted). And even when it would work, it quite often would unaccountably throw Gatsby into a tailspin.
+Still, although I was pleased by the look-and-feel progress I'd made, I continued to find it difficult to make certain things work even when, and pardon me if this is sounding like the proverbial stuck record, I followed instructions to the Nth degree. I spent a good two nights just trying to get the posts list page to have the same setup as the [Hugo version](/posts/) had at that time (two recent posts and their images at the top, followed by a text-only list of the others, as opposed to the paginated version I've since adopted). And even when it would work, it quite often would unaccountably throw Gatsby into a tailspin.
 
 Late in the third week of this effort, even as I got those last few items working and seemed within another weekend (or two?) of being ready to pull the trigger on switching, the continuing instability of the setup worried me. I knew that Gatsby doesn't show the same errors in actual use as it does in development mode (as I believe is true for Hugo in server mode, locally), but nonetheless was increasingly uncertain the Gatsby version would be sufficiently solid. I didn't want people getting "white-screened" when they tried to go to my site. Hugo has been solid as a rock, and I could stomach no less from Gatsby.
 

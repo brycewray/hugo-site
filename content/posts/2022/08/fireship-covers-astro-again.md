@@ -6,7 +6,7 @@ date: 2022-08-19T09:47:00-05:00
 #initTextEditor: iA Writer
 ---
 
-A week ago, I [mentioned](/posts/2022/08/fireship-100-seconds-hugo-video) that [Jeff Delaney](https://twitter.com/JeffDelaney23)'s [Fireship channel on YouTube](https://www.youtube.com/c/Fireship) had issued an "[x] in 100 Seconds" video about the [Hugo](https://gohugo.io) static site generator. So, to be fair, I'm also noting that, yesterday[^away], Delaney added a "Code Report" video regarding [Astro](https://astro.build)'s recent achievement of v.1.0 status.
+A week ago, I [mentioned](/posts/2022/08/fireship-100-seconds-hugo-video/) that [Jeff Delaney](https://twitter.com/JeffDelaney23)'s [Fireship channel on YouTube](https://www.youtube.com/c/Fireship) had issued an "[x] in 100 Seconds" video about the [Hugo](https://gohugo.io) static site generator. So, to be fair, I'm also noting that, yesterday[^away], Delaney added a "Code Report" video regarding [Astro](https://astro.build)'s recent achievement of v.1.0 status.
 
 In this latest video, Delaney posited Astro as having the potential to be the "ultimate web framework." As he explained, this is the second Fireship video to cover Astro, but the first was quite some time back in Astro time --- *July, 2021* ---and a **lot** has changed in the project since then. Here, for your comparison, are both videos. First, this is the one that dropped yesterday:
 

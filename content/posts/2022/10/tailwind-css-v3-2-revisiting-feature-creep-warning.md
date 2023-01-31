@@ -26,7 +26,7 @@ The "absolutely *massive* amount of new stuff" the post trumpeted includes:
 > - Nested `group` and multiple `peer` support using variant modifiers
 > - Container queries
 
-. . . the details of which all sound impressive, to be sure. However, as I read about them, I was reminded of something I wrote near the end of the "[Should you adopt Tailwind 3?](/posts/2022/01/should-you-adopt-tailwind-3)" piece I did back in January for the [Stackbit blog](https://www.stackbit.com/blog/):
+. . . the details of which all sound impressive, to be sure. However, as I read about them, I was reminded of something I wrote near the end of the "[Should you adopt Tailwind 3?](/posts/2022/01/should-you-adopt-tailwind-3/)" piece I did back in January for the [Stackbit blog](https://www.stackbit.com/blog/):
 
 > Because of Tailwind's need to stay not simply relevant but also popular, the project is particularly vulnerable to the dangers of *feature creep*.  . . . [R]emember that the idea behind Tailwind, like every other utility-first CSS framework, is to *make styling easier*, especially for front-end developers who dislike getting under CSS's hood. The more capabilities that get added to Tailwind, the more complex Tailwind becomes. It may not yet be near a tipping point, but that's a danger for which the Tailwind team will have to be on the lookout.[^style]
 

@@ -53,7 +53,7 @@ Where's the Gatsby version of all this?
 
 Well, um, there isn't one.
 
-I did *try* to create one but, as has been my usual experience with Gatsby (as recounted [here](/posts/2019/12/sorta-strange-ssg-trip)), it didn't go all that well. Let's just say Gatsby in dev mode was its usually finicky and glitchy self.[^GatsbyUsers]  Fortunately, with [many Gatsby starters out there already](https://www.gatsbyjs.org/showcase/), the lack of one more isn't going to hurt anybody.
+I did *try* to create one but, as has been my usual experience with Gatsby (as recounted [here](/posts/2019/12/sorta-strange-ssg-trip/)), it didn't go all that well. Let's just say Gatsby in dev mode was its usually finicky and glitchy self.[^GatsbyUsers]  Fortunately, with [many Gatsby starters out there already](https://www.gatsbyjs.org/showcase/), the lack of one more isn't going to hurt anybody.
 
 [^GatsbyUsers]: As I've said before, I'm fully aware that there are uncounted Gatsby users out there, especially the [React](https://reactjs.org)-savviest among them, who have zero trouble using Gatsby. And they can have it.
 

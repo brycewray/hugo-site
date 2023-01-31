@@ -67,7 +67,7 @@ Indeed, this zeal for following standards extends even to how MailMate handles h
 
 ## I got your formatting right&nbsp;here,&nbsp;pal
 
-Finally, given my [previously expressed](/posts/2019/03/mark-it-down) support of [Markdown](https://daringfireball.net/projects/markdown/), how could I *not* admire an email app that not only respects the plain-text foundations of email but even requires the use of Markdown to do *any* formatting in the composing process?
+Finally, given my [previously expressed](/posts/2019/03/mark-it-down/) support of [Markdown](https://daringfireball.net/projects/markdown/), how could I *not* admire an email app that not only respects the plain-text foundations of email but even requires the use of Markdown to do *any* formatting in the composing process?
 
 And the results are impressive. You can do boldfacing, italics, tables, blockquotes, code blocks --- pretty much all the stuff Markdown makes possible --- and it comes out on the other end in perfect HTML so it looks just as you'd intended.
 
@@ -97,7 +97,7 @@ Well, MailMate makes it much easier to set up those provider rules because it tr
 
 [^creepy]: The exceptions to this are multi-platform apps like Airmail and Spark, and you pay for that convenience through (a.) their keeping your credentials on [their](https://helpspot.readdle.com/en/index.php?pg=kb.page&id=1285) [servers](https://www.iubenda.com/privacy-policy/558233/full-legal) and (b.) their less-than-optimal [privacy](https://sparkmailapp.com/privacy#privacy_3) [policies](https://www.iubenda.com/privacy-policy/558233/full-legal).
 
-If you've got time and you're feeling a little adventurous, MailMate's [hidden preferences](https://manual.mailmate-app.com/hidden_preferences) allow numerous options for customization to an amazing degree. In this, one relatively pedestrian capability that appeals to my [typography-obsessed](/posts/2018/10/web-typography-part-1) [brain](/posts/2018/10/web-typography-part-2/) is the ability to set the default CSS which controls the appearance of unformatted emails, especially since that describes a lot of the old emails I recently imported from an ancient PC.
+If you've got time and you're feeling a little adventurous, MailMate's [hidden preferences](https://manual.mailmate-app.com/hidden_preferences) allow numerous options for customization to an amazing degree. In this, one relatively pedestrian capability that appeals to my [typography-obsessed](/posts/2018/10/web-typography-part-1/) [brain](/posts/2018/10/web-typography-part-2/) is the ability to set the default CSS which controls the appearance of unformatted emails, especially since that describes a lot of the old emails I recently imported from an ancient PC.
 
 You can customize various aspects of the display, such as the font size and leading of a column listing emails --- although you can't add any text preview to the columnar view, as is commonly available in most other mail clients. It's something Dr. Nielsen [mentioned](https://blog.freron.com/2017/personalized_subscriber_emails/) as a "I'd-like-to-do-this-but" item over two years ago, and there it sits, still undone; but it's a minor nit.
 

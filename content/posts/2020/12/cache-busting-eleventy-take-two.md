@@ -75,7 +75,7 @@ So convinced, I went back to "Our Cache Busting Setup on Eleventy" for some more
 
 1. Concatenate all the CSS files I'm importing.
 2. Create an [MD5](https://en.wikipedia.org/wiki/MD5) hash of the concatenated content. This hash will be appended to the name of the site's final CSS file at build time.
-3. Write two files out to the project: (a.) a JSON file in the `_data` directory which, like the `manifest.json` file in PostCSS Hash (as explained in that [previous article](/posts/2020/11/using-postcss-cache-busting-eleventy)) will "tell" the [Eleventy data cascade](https://www.11ty.dev/docs/data-cascade/) the name of the final CSS file; and (b.) a text file in the root directory which feeds the CSS file name to the PostCSS file-output command in the `package.json` scripts.
+3. Write two files out to the project: (a.) a JSON file in the `_data` directory which, like the `manifest.json` file in PostCSS Hash (as explained in that [previous article](/posts/2020/11/using-postcss-cache-busting-eleventy/)) will "tell" the [Eleventy data cascade](https://www.11ty.dev/docs/data-cascade/) the name of the final CSS file; and (b.) a text file in the root directory which feeds the CSS file name to the PostCSS file-output command in the `package.json` scripts.
 4. Use that PostCSS command to write the appropriately named CSS file to the `_site` folder which the host uses to build the site.
 5. Use the site's `head.js` partial template to tell each page on the site to refer to the CSS file by that special file name.
 

@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-02-13T13:15:00-06:00
 ---
 
-A reader who [made contact with me](/contact) recently told me my writing style seems very stream-of-consciousness[^compliment] --- to which I mused inwardly, "Well, if you think that about my *regular* stuff, wait ’til you read one of my 'Mixed nuts’ posts.”
+A reader who [made contact with me](/contact/) recently told me my writing style seems very stream-of-consciousness[^compliment] --- to which I mused inwardly, "Well, if you think that about my *regular* stuff, wait ’til you read one of my 'Mixed nuts’ posts.”
 
 [^compliment]: To be fair, he followed it up with a wonderful compliment (that I didn't deserve), but I felt the excerpt I used here was more appropriate to this series of posts.
 

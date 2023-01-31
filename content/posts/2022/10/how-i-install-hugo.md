@@ -7,7 +7,7 @@ date: 2022-10-12T12:15:00-05:00
 initTextEditor: iA Writer
 ---
 
-When I [indicated](/posts/2022/07/really-getting-started-hugo) how I thought newcomers to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) should proceed --- *i.e.*, as opposed to the [official path](https://gohugo.io/getting-started/quick-start/) --- I said this about the process of actually installing Hugo on one's system:
+When I [indicated](/posts/2022/07/really-getting-started-hugo/) how I thought newcomers to the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) should proceed --- *i.e.*, as opposed to the [official path](https://gohugo.io/getting-started/quick-start/) --- I said this about the process of actually installing Hugo on one's system:
 
 > Hugo is an app that you install on your computer. You can do that by either (a.) relying on a *package manager* app or (b.) directly downloading from the Hugo GitHub repository. Although I personally prefer the second method, most new users likely will find the first easier; so let’s go with package managers.
 

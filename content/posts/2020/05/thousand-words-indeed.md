@@ -23,7 +23,7 @@ So, yes, I did leave myself some "outs" there.
 
 While not a single visitor complained about the featured images’ departure, in time I did miss them. But I'm a big (old) boy, and I figured I'd get over it, especially since the site presumably would work better without them.
 
-Recently, though, I decided that, especially in these [troubled times](/posts/2020/03/coherence-covid-19), I not only *wanted* but also flat-out *needed* to see big, (usually) pretty pictures atop my posts once again. By coincidence, I simultaneously [realized](/posts/2020/05/mixed-nuts-2020-05) that this site in even its sparest form was never going to [rank among *the* fastest](https://www.11ty.dev/leaderboard/perf/) in the stable of [Eleventy](https://11ty.dev)-using sites.
+Recently, though, I decided that, especially in these [troubled times](/posts/2020/03/coherence-covid-19/), I not only *wanted* but also flat-out *needed* to see big, (usually) pretty pictures atop my posts once again. By coincidence, I simultaneously [realized](/posts/2020/05/mixed-nuts-2020-05/) that this site in even its sparest form was never going to [rank among *the* fastest](https://www.11ty.dev/leaderboard/perf/) in the stable of [Eleventy](https://11ty.dev)-using sites.
 
 That gave me some leeway.
 

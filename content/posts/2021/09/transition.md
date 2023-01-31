@@ -35,7 +35,7 @@ My workday is done. While I do and will miss many of those folks with whom I for
 
 [^2]:	The retirement itself is effective in a couple of days, to honor the pay period.
 
-[^3]:	I still remain available for consulting and other forms of geeky help, which I generally do whenever asked. If you could use my services, [give me a shout](/contact).
+[^3]:	I still remain available for consulting and other forms of geeky help, which I generally do whenever asked. If you could use my services, [give me a shout](/contact/).
 
 [^4]:	This was in the pre-COVID-19 days, of course. Working from home in the last year and a half freed me from both of those aspects, at least.
 

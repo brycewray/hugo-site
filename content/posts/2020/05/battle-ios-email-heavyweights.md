@@ -11,7 +11,7 @@ Largely since I'm *not* a heavy email user and [purposely don't use my go-to pho
 
 Fair warning to the uninitiated: MailMate isn't "pretty." Its interface is busy and dated-looking (although, like just about everything else in the app, highly customizable). **But** MailMate **is** solid, powerful, ultra-compliant with email standards, and loaded with more features than any user could ever possibly exhaust. And that's exactly how its creator and lone developer --- Benny Kjær Nielsen, Ph.D in computer science --- wants it. The same goes for the true power users[^OtherMMReviews] whom his work targets.
 
-[^OtherMMReviews]: Since [my article](/posts/2019/06/ahoy-mate) last year wasn't deep enough to give MailMate its due, please also check out the more recent "[MailMate](https://tyler.io/mailmate/)" and "[Additional MailMate Tips](https://tyler.io/additional-mailmate-tips/)" by Tyler Hall, and "[MailMate Review](https://canion.me/mailmate-review)" by Andrew Canion.
+[^OtherMMReviews]: Since [my article](/posts/2019/06/ahoy-mate/) last year wasn't deep enough to give MailMate its due, please also check out the more recent "[MailMate](https://tyler.io/mailmate/)" and "[Additional MailMate Tips](https://tyler.io/additional-mailmate-tips/)" by Tyler Hall, and "[MailMate Review](https://canion.me/mailmate-review)" by Andrew Canion.
 
 But what about when those power users are away from their Macs and depending on iPhones or iPads?
 

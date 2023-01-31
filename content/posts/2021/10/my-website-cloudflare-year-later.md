@@ -7,7 +7,7 @@ date: 2021-10-22T14:00:00-05:00
 
 It's been a year now since the first time I used [Cloudflare](https://cloudflare.com) assets to host this [SSG](https://jamstack.org/generators)-based website, and I'm still trying to decide what I think about that.
 
-In the beginning of my involvement with Cloudflare, I [deployed the site](/posts/2020/10/forward-paas) using [Cloudflare Workers](https://workers.cloudflare.com). Not long after, [Cloudflare introduced](https://blog.cloudflare.com/cloudflare-pages/) its [Cloudflare Pages](https://pages.cloudflare.com) platform, clearly aimed at taking away market share from SSG-friendly hosting vendors such as [Netlify](https://netlify.com) and [Vercel](https://vercel.com). Cloudflare Pages [came out of beta status](https://blog.cloudflare.com/cloudflare-pages-ga/) a few months later and, since then, I've shifted the site back and forth between Vercel and CFP fairly regularly.
+In the beginning of my involvement with Cloudflare, I [deployed the site](/posts/2020/10/forward-paas/) using [Cloudflare Workers](https://workers.cloudflare.com). Not long after, [Cloudflare introduced](https://blog.cloudflare.com/cloudflare-pages/) its [Cloudflare Pages](https://pages.cloudflare.com) platform, clearly aimed at taking away market share from SSG-friendly hosting vendors such as [Netlify](https://netlify.com) and [Vercel](https://vercel.com). Cloudflare Pages [came out of beta status](https://blog.cloudflare.com/cloudflare-pages-ga/) a few months later and, since then, I've shifted the site back and forth between Vercel and CFP fairly regularly.
 
 Here are some of my current feelings about Cloudflare Pages --- what keeps me coming back to it, and what sometimes drives me away.
 

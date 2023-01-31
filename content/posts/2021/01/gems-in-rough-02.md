@@ -90,4 +90,4 @@ I bring this up only to note that, so far, [Cloudinary](https://cloudinary.com) 
 
 ----
 
-And that'll do it for this descent into the geeky, SSG-loving recesses of my cranium. [Let me know](/contact) if you have questions or thoughts about any of this stuff.
+And that'll do it for this descent into the geeky, SSG-loving recesses of my cranium. [Let me know](/contact/) if you have questions or thoughts about any of this stuff.
