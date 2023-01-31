@@ -3,6 +3,7 @@
 
 .billboard {
 	&-div {
+		// font-family: var.$sans-serif;
 		text-align: center;
 		position: relative;
 		height: auto;
@@ -36,6 +37,8 @@
 		letter-spacing: -0.0375em;
 	}
 	&-description-text {
+		// font-family: var.$serif;
+		// font-style: italic;
 		font-size: clamp(1.25rem, 0.75rem + 1.5vw, 2rem);
 		padding-top: 1em;
 		letter-spacing: -0.025em;
@@ -43,7 +46,6 @@
 	}
 	&-p-text {
 		font-size: clamp(1rem, 0.25rem + 1.25vw, 1.5rem);
-		// font-family: var.$sans-serif;
 		line-height: 1.25;
 		margin-top: 1.5em;
 		margin-bottom: 0.25em;

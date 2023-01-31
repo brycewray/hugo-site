@@ -2,6 +2,9 @@
 @use 'partials/variables' as var;
 
 .posts {
+	// &-Wrapper {
+	// 	font-family: var.$sans-serif;
+	// }
 	&-pagerGray {
 		color: map-get(var.$twcss, gray-300);
 	}
@@ -57,7 +60,6 @@
 	}
 	&-Dates {
 		font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
-		// font-family: var.$sans-serif;
 		line-height: 1.33;
 		margin-bottom: 0.5em;
 		time {

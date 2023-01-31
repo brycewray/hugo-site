@@ -41,8 +41,11 @@ p, li {
 	line-height: 1.4;
 }
 
+// h1, .h1, h2, .h2, h3, .h3, h4, .h4, footer {
+// 	font-family: var.$sans-serif;
+// }
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	// font-family: var.$sans-serif;
 	font-weight: normal;
 	letter-spacing: -0.025rem;
 	// @media (prefers-color-scheme: dark) {
@@ -176,7 +179,6 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 footer {
-	// font-family: var.$sans-serif;
 	// @media (prefers-color-scheme: dark) {
 	// 	background: var.$black;
 	// }
