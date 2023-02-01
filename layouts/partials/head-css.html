@@ -36,6 +36,7 @@
 			{{- $condition = index . 0 -}}
 			{{- $fileName = index . 1 -}}
 			{{- if eq $condition true -}}
+				{{- $cssOptions := merge $cssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
 				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
 				{{- if hugo.IsProduction -}}
 					{{- $css = $css | fingerprint "md5" -}}
