@@ -22,3 +22,6 @@ One thing that would help iCloud Mail greatly would be the adoption of the impre
 In any event: my annual Fastmail subscription has only a month to go as I write this, so the likelihood of my doing a double-/triple-/quadruple-reverse flip back to that provider is fading fast. Besides, I just spent four days once again laboriously copying thousands of old emails from Fastmail to iCloud Mail, and I didn't do so lightly, having *already* done it enough this year that I knew what a pain it would be. And it was.
 
 Yep, Artemus, you were right: it's the money.
+
+**Update from the future**: And [yet](/posts/2023/01/back-to-fastmail-redux/) . . .
+{.box}
