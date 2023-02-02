@@ -24,8 +24,8 @@ params:
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
   Site_domain: "{{< site.params.domain >}}"
 
-# ignoreErrors:
-#   - "error-remote-getjson"
+ignoreErrors:
+   - "error-remote-getjson"
 
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
