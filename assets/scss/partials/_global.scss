@@ -41,16 +41,8 @@ p, li {
 	line-height: 1.4;
 }
 
-// h1, .h1, h2, .h2, h3, .h3, h4, .h4, footer {
-// 	font-family: var.$sans-serif;
-// }
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	font-weight: normal;
 	letter-spacing: -0.025rem;
-	// @media (prefers-color-scheme: dark) {
-	// 	color: map-get(var.$twcss, gray-100);
-	// }
 }
 
 h1, h2, h3, h4 {
@@ -125,13 +117,13 @@ hr {
 
 blockquote {
 	border-left: 4px solid map-get(var.$twcss, slate-400);
-	color: map-get(var.$twcss, slate-700);
+	color: map-get(var.$twcss, gray-700);
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		// border-left is same color
-		color: map-get(var.$twcss, slate-400);
+		color: map-get(var.$twcss, gray-300);
 	}
 	p:last-child {
 		margin-bottom: 0;
