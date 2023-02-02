@@ -23,14 +23,14 @@ A tweet thread issued overnight (U.S. time) from the [@TwitterDev account](https
 <!-- https://twitter.com/TwitterDev/status/1621026986784337922 -->
 
 > Over the years, hundreds of millions of people have sent over a trillion Tweets, with billions more every week.
-> 
+>
 > <span class="legal">6:06 AM • February 2, 2023 (UTC)</span>
 <!-- https://twitter.com/TwitterDev/status/1621027280935092225 -->
 
-> Twitter data are among the world’s most powerful data sets. We’re committed to enabling fast &amp; comprehensive access so you can continue to build with us. 
-> 
+> Twitter data are among the world’s most powerful data sets. We’re committed to enabling fast &amp; comprehensive access so you can continue to build with us.
+>
 > We’ll be back with more details on what you can expect next week.
-> 
+>
 > <span class="legal">6:07 AM • February 2, 2023 (UTC)</span>
 <!-- https://twitter.com/TwitterDev/status/1621027418680229888 -->
 
@@ -46,7 +46,7 @@ For my part, this all means that, if I hadn't already [deprecated](/posts/2022/1
 
 By the way: if you're a [Hugo](https://gohugo.io) user who employs its [built-in `tweet` shortcode](https://gohugo.io/content-management/shortcodes/#tweet), this doesn't appear --- **so far** --- to affect [Twitter's oEmbed API](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/guides/oembed-api), on which that shortcode depends. The same API also enables many of the embedded tweets you see on the web, so making a similar change to that API could cause a massive amount of content to go away almost instantaneously. It would be a "nuclear option" kind of event.
 
-If you still use `tweet`, just be sure you [make the appropriate privacy settings](https://gohugo.io/about/hugo-and-gdpr/#twitter). For example, here's how Hugo with those settings renders that initial tweet about the change in the affected APIs' availability:
+If you still use `tweet`, just be sure you [make the appropriate privacy settings](https://gohugo.io/about/hugo-and-gdpr/#twitter). For example, here's how Hugo, with those settings, renders that initial tweet about the change in the affected APIs' availability:
 
 {{< tweet "TwitterDev" "1621026986784337922" >}}
 
