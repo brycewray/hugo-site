@@ -156,6 +156,7 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
+		{{- $cssOptions := merge $cssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
 		{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | fingerprint "md5" -}}
