@@ -52,11 +52,13 @@ article .h4,
 	letter-spacing: -0.025em;
 }
 
-.billboard-description-text,
-.posts-Description,
-.homePost-Description {
+.billboard-description-text {
 	font-weight: 300;
 }
+// `.posts-Description` and `.homePost-Description`
+// at font-weight 300
+// are problematic in Windows as seen in Parallels Desktop,
+// while font-weight 350 is same as 400 with San Francisco
 
 .posts-Description,
 .homePost-Description {
