@@ -30,3 +30,6 @@ That ended eleven years of Twitter use under two different accounts. The origina
 \
 I will further update this post as appropriate.
 {.box}
+
+<strong class="red">Update, 2023-02-02</strong>: Have once again deactivated the account, this time **in accordance with** the "further research and consultation with others whose judgments I trust." I intend to let **this** change's thirty-day grace period expire without intervention.
+{.box}
