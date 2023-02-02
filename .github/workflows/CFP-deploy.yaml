@@ -32,7 +32,7 @@ on:
 
 env:
   HUGO_VERSION: 0.110.0 # will get Extended Version below
-  DART_SASS_VERSION: 1.57.1
+  DART_SASS_VERSION: 1.58.0
   PAGEFIND_VERSION: 0.10.6
   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
   TOKEN: ${{ secrets.TOKEN }}
