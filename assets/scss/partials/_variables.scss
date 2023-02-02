@@ -231,7 +231,7 @@ $twcss: (
 // === start, TYPOGRAPHY ===
 // =========================
 // Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome"
-$sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$sans-serif: ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 $monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
@@ -252,6 +252,13 @@ $text-6xl: 3.75rem; // LH 1 (also)
 $text-7xl: 4.5rem; // LH 1 (also)
 $text-8xl: 6rem; // LH 1 (also)
 $text-9xl: 8rem; // LH 1 (also)
+
+// underlines for hrefs
+$textDcThick: 0.075rem;
+$textUnOffst: 0.25em;
+// ^^^ 0.225em is OK with Libre Franklin,
+//     but Segoe UI needs at least 0.25em
+
 // =========================
 // ==== end, TYPOGRAPHY ====
 
@@ -273,10 +280,6 @@ $bkpt_3xl: 1920px; // additional
 
 // button
 $btn_radius: 6px;
-
-// underlines for hrefs
-$textDcThick: 0.075rem;
-$textUnOffst: 0.225em;
 
 // =========================
 // ==== end, MISCELLANY ====
