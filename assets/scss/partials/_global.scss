@@ -16,19 +16,17 @@ html, body {
 		background: var.$black;
 		color: map-get(var.$twcss, gray-100);
 	}
-	@media (min-width: var.$bkpt_lg) {
+	background-image: linear-gradient(
+		map-get(var.$twcss, slate-600),
+		map-get(var.$twcss, slate-300) 6em,
+		transparent 10em
+	);
+	@media (prefers-color-scheme: dark) {
 		background-image: linear-gradient(
-			map-get(var.$twcss, slate-600),
-			map-get(var.$twcss, slate-300) 6em,
+			map-get(var.$twcss, slate-500),
+			map-get(var.$twcss, slate-800) 6em,
 			transparent 10em
 		);
-		@media (prefers-color-scheme: dark) {
-			background-image: linear-gradient(
-				map-get(var.$twcss, slate-500),
-				map-get(var.$twcss, slate-800) 6em,
-				transparent 10em
-			);
-		}
 	}
 }
 
