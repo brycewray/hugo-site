@@ -1,5 +1,5 @@
 ---
-title: "Twitter kills free access to its APIs"
+title: "Twitter kills free access to its APIs"
 description: "Make others pay for giving you free advertising. Yeah, that’s the ticket."
 author: Bryce Wray
 date: 2023-02-02T13:09:00-06:00
