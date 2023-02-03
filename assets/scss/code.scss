@@ -330,7 +330,7 @@
 .chroma .s, .code-inline .s {
 	color: map-get(var.$twcss, orange-700);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, orange-400 );
+		color: map-get(var.$twcss, orange-400);
 	}
 }
 
@@ -768,8 +768,12 @@ article blockquote code {
 	}
 }
 
-.yellowBox code, .blueBox code {
+.box code {
 	font-size: 1em; // definitely em
+	background-color: map-get(var.$twcss, slate-100);
+	@media (prefers-color-scheme: dark) {
+		background-color: map-get(var.$twcss, slate-600);
+	}
 }
 
 .highlight {
