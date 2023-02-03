@@ -161,9 +161,8 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | fingerprint "md5" -}}
 		{{- end }}
-			<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-		{{- else -}}
+		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{ end -}}
 {{- end -}}
 ```
