@@ -51,7 +51,7 @@ div.highlight {
 }
 ```
 
-Finally, make sure the code **for** your chosen "copy-code" button is set to be "triggered" by `<div class="highlight">`, rather than the `<pre><code>` construct; how you do this will vary according to that code, for which --- as I [noted originally](/posts/2022/05/gems-in-rough-18/#code-for-copying-code) --- there are numerous proposed solutions out there.[^repoExample]
+Finally, make sure the code **for** your chosen "copy-code" button's HTML is set to appear between the opening `<div>` and the `<pre></code>` construct, rather than between the `<pre>` and `<code>` parts; how you do this will vary according to that code, for which --- as I [noted originally](/posts/2022/05/gems-in-rough-18/#code-for-copying-code) --- there are numerous proposed solutions out there.[^repoExample]
 
 [^repoExample]: As of this writing, the Eleventy version of my "copy-code" button code is viewable [here](https://github.com/brycewray/eleventy_site/blob/main/src/assets/js/copy-code-button.js), while its Hugo version is viewable [here](https://github.com/brycewray/hugo_site/blob/main/assets/js/copy-code-button.js).
 
