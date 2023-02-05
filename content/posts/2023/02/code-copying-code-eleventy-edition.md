@@ -20,7 +20,7 @@ For each, a code block is wrapped inside a `pre`/`code` construct, **but** the [
 <p class="YA-class-name">This is a shorter line.</p>
 ```
 
-On the other hand, since Prism.js **doesn't** wrap the `pre`/`code` within a `div`, the button moves with any horizontal scrolling of a Prism.js-highlighted code block.
+On the other hand, since Prism.js **doesn't** wrap the `pre`/`code` construct within a `div`, the button moves with any horizontal scrolling of a Prism.js-highlighted code block.
 
 I have [requested](https://github.com/11ty/eleventy-plugin-syntaxhighlight/issues/77) that the [standard Eleventy plugin for syntax highlighting](https://github.com/11ty/eleventy-plugin-syntaxhighlight), which uses Prism.js, be changed to allow adding a wrapping `div`. However, unless/until that happens, here is a workaround for Eleventy users.
 
