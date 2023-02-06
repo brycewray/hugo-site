@@ -64,7 +64,7 @@ Again, you'll get the warning about moving the content out of iCloud Drive; so, 
 10. Click **Options**.
 11. Uncheck the checkbox next to **Desktop &amp; Documents Folders**, so that the window looks like this (your list of apps will vary, of course, but the top one is all that concerns us here):\
 \
-{{< imgh src="iCloud-Drive-Desktop-Documents_1336x990.png" alt="The iCloud Drive settings for macOS Catalina as of August, 2020" width=1336 height=990 >}}
+{{< imgh src="iCloud-Drive-Desktop-Documents_1336x990.png" alt="The iCloud Drive settings for macOS Catalina as of August, 2020" >}}
 
 All done!
 

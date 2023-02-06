@@ -76,7 +76,7 @@ And, mind you, it doesn't hurt if it's also easy on the eyes. So, with that, lad
 
 ## Fathom Analytics: checking the boxes
 
-{{< imgh src="fathom-analytics_1420x1025.png" alt="Screen capture from the Fathom Analytics “dashboard” on its live demo" width=1420 height=1025 >}}
+{{< imgh src="fathom-analytics_1420x1025.png" alt="Screen capture from the Fathom Analytics “dashboard” on its live demo" >}}
 
 Fathom Analytics does, indeed, present a nice picture, as this screen capture shows; you can also view a [live demo](https://app.usefathom.com/demo). But what about the [features](https://usefathom.com/features) behind that pretty face?
 

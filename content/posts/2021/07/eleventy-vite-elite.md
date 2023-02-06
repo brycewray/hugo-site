@@ -112,7 +112,7 @@ A year earlier, I might've opted instead for the supposedly easier and smarter P
 
 No, this time, I was going to give Vite a try.
 
-{{< imgh src="ViteJS-home-page-2021-07-23_2522x1428.png" alt="Vite website home page as of 2021-07-23" width=2522 height=1428 >}}
+{{< imgh src="ViteJS-home-page-2021-07-23_2522x1428.png" alt="Vite website home page as of 2021-07-23" >}}
 
 Vite, the brainchild of [Vue.js](https://vuejs.org) creator [Evan You](https://evanyou.me/), is a bundler built atop another bundler, the blazing fast [esbuild](https://esbuild.github.io/). However, Vite, whose first version was based to some extent on the [Rollup](https://rollupjs.org) bundler, can bundle many more types of files out of the box (although, as I'll later note, it currently has problems in that regard). That makes it considerably more practical for web developers, especially since its configuration is far less complicated than that of esbuild. And, thanks to its [Go](https://go.dev)-based esbuild underpinnings, Vite also is an order of magnitude faster than not only webpack but also Parcel and pretty much all other JavaScript-based bundlers.
 

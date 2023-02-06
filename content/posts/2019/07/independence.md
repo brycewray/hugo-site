@@ -59,7 +59,7 @@ I knew I had to have a Mac.
 
 In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local [ComputerLand](https://en.wikipedia.org/wiki/ComputerLand) and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
 
-{{< imgh src="1984-07-11_01_retouched_1280x720.jpg" alt="Bryce Wray, in 1984, unwrapping his new Macintosh computer" width=1280 height=720 >}}
+{{< imgh src="1984-07-11_01_retouched_1280x720.jpg" alt="Bryce Wray, in 1984, unwrapping his new Macintosh computer" >}}
 
 July 11, 1984: A much younger and skinnier me eagerly unwraps my new "Skinny Mac." (Photo by my overly tolerant spouse.)
 {.imgcCaption}

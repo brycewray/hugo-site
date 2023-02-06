@@ -62,7 +62,7 @@ From there, both iCloud Mail and Fastmail worked fully normally on my iPhone and
 
 [^otherApps]: Of course, this setting had no effect on those third-party iOS/iPadOS email apps I'd tried, which explains why they'd soldiered on with sending from Fastmail even while the setting was "Off."
 
-{{< imgh src="Screen-shot_2023-01-06_SMTP-setting-iOS_1125x2436.png" alt="iOS setting for iCloud SMTP backup server" phn=true width=1125 height=2436 >}}
+{{< imgh src="Screen-shot_2023-01-06_SMTP-setting-iOS_1125x2436.png" alt="iOS setting for iCloud SMTP backup server" phn=true >}}
 
 Note that, under "Other SMTP Servers," *smtp.fastmail.com* is shown as being "On"; but, while I was having my problem with sending email from Fastmail on my iDevices, the setting was "Off."
 {.imgcCaption}
