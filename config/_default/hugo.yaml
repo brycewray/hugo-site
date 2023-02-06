@@ -79,7 +79,7 @@ imaging: # Hugo defaults shown in comments
   # bgColor: '#ffffff' # '#ffffff'
   # hint: photo # photo
   # quality: 75 # 75
-  # resampleFilter: MitchellNetravali # Box
+  resampleFilter: MitchellNetravali # Box
 
 disableKinds:
   - taxonomy
