@@ -3,8 +3,7 @@
     "silent": true
   },
 	"redirects": [
-		{ "source": "/posts/index.xml", "destination": "/index-excerpts.xml" },
-		{ "source": "posts/index.json", "destination": "/index-excerpts.json"}
+		{ "source": "/posts/index.xml", "destination": "/index-excerpts.xml" }
 	],
   "headers": [
     {
@@ -29,10 +28,6 @@
         {
           "key": "Referrer-Policy",
           "value": "no-referrer, strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Content-Security-Policy",
-          "value": "base-uri 'self' https://*.brycewray.com; connect-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.cloudflareinsights.com https://cloudflareinsights.com https://*.ytimg.com https://*.ggpht.com https://*.youtube-nocookie.com https://*.fosstodon.org https://*.mastodon.social https://*.mstdn.social; default-src 'self'; frame-ancestors 'self' https://*.brycewray.com https://*.youtube-nocookie.com; font-src 'self' https://*.brycewray.com https://*.gstatic.com data:; form-action 'self'; frame-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com; img-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.ggpht.com https://*.youtube-nocookie.com https://*.gstatic.com https://*.twimg.com https://*.amazonaws.com https://*.fosstodon.org https://*.mastodon.social https://*.mstdn.social https://*.google.com https://translate.googleapis.com data:; media-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.ggpht.com https://*.youtube-nocookie.com https://*.gstatic.com https://*.twimg.com https://*.fosstodon.org https://*.mastodon.social https://*.mstdn.social data:; object-src 'none'; script-src 'self' 'unsafe-eval'; script-src-elem 'self'; style-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com data: https://*.google.com https://translate.googleapis.com; report-uri https://brycewray.report-uri.com/r/d/csp/reportOnly;"
         }
       ]
     },
@@ -41,11 +36,11 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=2678400, immutable"
+          "value": "public, max-age=31536000, immutable"
         },
         {
           "key": "CDN-Cache-Control",
-          "value": "public, max-age=2678400, immutable"
+          "value": "public, max-age=31536000, immutable"
         },
         {
           "key": "X-Content-Type-Options",
