@@ -33,7 +33,7 @@ In the end, I decided it would be better if I were on a less specifically target
 
 After all, I didn't want to risk being (or continuing to be) one of Those Guys:
 
-{{< lite-youtube videoTitle="Those Guys" videoId="DgGg4TNvhME" >}}
+{{< lite-youtube videoTitle="Those Guys" videoId="wvlHTNPROYE" >}}
 
 <!--
 
@@ -42,7 +42,7 @@ https://fosstodon.org/@mairhart/109644650964219975
 > How many of you [#Mastodon](https://fosstodon.org/tags/Mastodon) users have more than one account, addressing different audiences?
 >
 > I keep finding myself hesitant to post or share political posts on my tech-oriented server.
-> 
+>
 > <span class="legal">10:36 PM • January 6, 2023 (UTC)</span>
 
 Michael Airhart (he/him)
