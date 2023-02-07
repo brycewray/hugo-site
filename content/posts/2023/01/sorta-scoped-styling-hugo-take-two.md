@@ -126,31 +126,49 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 {{- $conditionCode := false -}}
 {{- $conditionTables := false -}}
 {{- $conditionLiteYT := false -}}
+{{- $conditionBillboard := false -}}
+{{- $conditionArticle := false -}}
+{{- $conditionPostsSingle := false -}}
+{{- $conditionPostsList := false -}}
 {{- $conditionFootnotes := false -}}
+{{- $conditionHome := false -}}
+{{- $conditionSitemap := false -}}
+{{- $conditionSearchBtn := false -}}
+{{- $conditionSearchForm := false -}}
 {{- $conditionDetails := false -}}
+{{- $condition404 := false -}}
 {{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
 {{- if (findRE `(<pre|<code)` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
 {{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
+{{- if (and (ne .Title "Home page") (ne .Title "Sitemap (HTML form)") (ne .Title "Posts")) -}}{{- $conditionBillboard = true -}}{{- end -}}
+{{- if (and (and (ne .Title "Search the site") (ne .Title "Posts")) (or (eq .Section "posts") (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?"))) -}}{{- $conditionArticle = true -}}{{- end -}}
+{{- if (and (eq .Section "posts") (ne .Title "Posts")) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
+{{- if (eq .Title "Posts") -}}{{- $conditionPostsList = true -}}{{- end -}}
 {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
+{{- if (eq .Title "Home page") -}}{{- $conditionHome = true -}}{{- end -}}
+{{- if (eq .Title "Sitemap (HTML form)") -}}{{- $conditionSitemap = true -}}{{- end -}}
+{{- if (ne .Title site.Params.SearchTitle) -}}{{- $conditionSearchBtn = true -}}{{- end -}}
+{{- if (eq .Title site.Params.SearchTitle) -}}{{- $conditionSearchForm = true -}}{{- end -}}
 {{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}
+{{- if (eq .Title "404 Page not found") -}}{{- $condition404 = true -}}{{- end -}}
 
 {{- $cssTypes := slice -}}{{/* init big slice */}}
 {{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
-{{- $cssTypes = append slice (slice (and (ne .Title "Home page") (ne .Title "Sitemap (HTML form)") (ne .Title "Posts")) "billboard") $cssTypes -}}
-{{- $cssTypes = append slice (slice (and (and (ne .Title "Search the site") (ne .Title "Posts")) (or (eq .Section "posts") (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?"))) "article") $cssTypes -}}
-{{- $cssTypes = append slice (slice (and (eq .Section "posts") (ne .Title "Posts")) "posts-single") $cssTypes -}}
-{{- $cssTypes = append slice (slice (eq .Title "Posts") "posts-list") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionBillboard "billboard") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionArticle "article") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionPostsSingle "posts-single") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionPostsList "posts-list") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
-{{- $cssTypes = append slice (slice (eq .Title "Home page") "home") $cssTypes -}}
-{{- $cssTypes = append slice (slice (eq .Title "Sitemap (HTML form)") "sitemaphtml") $cssTypes -}}
-{{- $cssTypes = append slice (slice (ne .Title site.Params.SearchTitle) "search-btn") $cssTypes -}}
-{{- $cssTypes = append slice (slice (eq .Title site.Params.SearchTitle) "search-form") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionHome "home") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionSitemap "sitemaphtml") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionSearchBtn "search-btn") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionSearchForm "search-form") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}
-{{- $cssTypes = append slice (slice (eq .Title "404 Page not found") "fourohfour") $cssTypes -}}
+{{- $cssTypes = append slice (slice $condition404 "fourohfour") $cssTypes -}}
 
 {{- range $cssTypes -}}
 	{{- $condition = index . 0 -}}
@@ -161,8 +179,8 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | fingerprint "md5" -}}
 		{{- end }}
-		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+			<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{ end -}}
 {{- end -}}
 ```
