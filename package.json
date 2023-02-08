@@ -16,7 +16,8 @@
     "testbuild:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --environment=production",
     "start": "NODE_ENV=development npm-run-all clean devsass --parallel dev:*",
     "build": "NODE_ENV=production npm-run-all clean prodsass prod:hugo",
-    "testbuild": "NODE_ENV=production npm-run-all clean prodsass --parallel testbuild:*"
+    "testbuild": "NODE_ENV=production npm-run-all clean prodsass --parallel testbuild:*",
+		"testbuildpf": "NODE_ENV=production npm-run-all clean prodsass build pagefind testbuild:hugo"
   },
   "keywords": [],
   "author": "",
