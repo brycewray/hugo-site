@@ -18,7 +18,11 @@
 		{{- end -}}
 		{{- if (findRE `<div class="highlight"` .Content 1) -}}
 			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint "md5" -}}
+			{{- if eq .Site.Params.Host "CFP" -}}
 			<script nonce="DhcnhD3khTMePgXw" src="{{ $jsCopy.RelPermalink }}" defer></script>
+			{{- else -}}
+			<script src="{{ $jsCopy.RelPermalink }}" defer></script>
+			{{- end -}}
 		{{- end }}
 	</body>
 </html>
