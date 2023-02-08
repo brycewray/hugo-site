@@ -32,14 +32,12 @@ on:
 
 env:
   HUGO_VERSION: 0.110.0 # will get Extended Version below
-  # DART_SASS_VERSION: 1.58.0
   PAGEFIND_VERSION: 0.10.7
   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
   TOKEN: ${{ secrets.TOKEN }}
   TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
   CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
   CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
-  # WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
 
 jobs:
   deploy:
@@ -59,40 +57,16 @@ jobs:
         # 0.103.0 began new naming convention
       - name: Install Hugo
         run: sudo dpkg -i hugo*.deb
-      #
-      # # ====== START, for using Embedded Dart Sass =====
-      # - name: Download Embedded Dart Sass
-      #   run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      # - name: Unpack Embedded Dart Sass
-      #   run: |
-      #     tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      #     sass_embedded/dart-sass-embedded --version
-      # - name: Add Embedded Dart Sass to the PATH
-      #   run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      # # ====== END, for using Embedded Dart Sass =====
-      #
-      # # ====== START, for using npm (`sass` or Tailwind)
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
       - name: Install packages
         run: npm install
-      # # ====== END, for using npm (`sass` or Tailwind) =====
-      #
-      # - name: Install Pagefind # if not using npm
-      #   uses: supplypike/setup-bin@v3
-      #   with:
-      #     uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
-      #     name: "pagefind_extended"
-      #     version: ${{env.PAGEFIND_VERSION}}
       - name: Build site with Hugo
-        # run: hugo --verbose --minify # if using Embedded Dart Sass
         run: npm run build # if using npm Sass
       - name: Move "excerpts" feed (RSS/Atom only)
         run: mv public/posts/index.xml public/index-excerpts.xml
-      # - name: Run Pagefind # if not using npm
-      #   run: pagefind_extended --source "public"
       - name: Run Pagefind # if using npm
         run: npm run pagefind
       - name: Publish to CFP
@@ -103,36 +77,3 @@ jobs:
           projectName: 'static-site'
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-  # following, for restarts-on-failures, based on:
-  # https://www.eliostruyf.com/restart-github-actions-workflow-failed/
-  # restart_on_failed_push_build:
-  #   name: Restart failed push build
-  #   runs-on: ubuntu-latest
-  #   # restarts push-based run when it fails
-  #   if: github.event_name == 'push' && failure()
-  #   needs: [deploy]
-  #   steps:
-  #     - name: Retry the workflow
-  #       run: |
-  #         curl -i \
-  #         -X POST \
-  #         -H "Accept: application/vnd.github.v3+json" \
-  #         -H "Authorization: token ${{ secrets.GHA_PAT }}" \
-  #         https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
-  #         -d '{"ref": "${{ github.ref }}" }'
-  # restart_on_failed_cron_job:
-  #   name: Restart failed cron job build
-  #   runs-on: ubuntu-latest
-  #   # restarts scheduled run when it fails
-  #   if: github.event_name == 'schedule' && failure()
-  #   needs: [deploy]
-  #   steps:
-  #     - name: Retry the workflow
-  #       run: |
-  #         curl -i \
-  #         -X POST \
-  #         -H "Accept: application/vnd.github.v3+json" \
-  #         -H "Authorization: token ${{ secrets.GHA_PAT }}" \
-  #         https://api.github.com/repos/brycewray/hugo_site/actions/workflows/26219143/dispatches \
-  #         -d '{"ref": "${{ github.ref }}" }'
-
