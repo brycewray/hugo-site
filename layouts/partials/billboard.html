@@ -18,12 +18,12 @@
 				{{ .Description }}
 			</p>
 		{{- end }}
-		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}
+		{{- if (and (ne .Title .Site.Params.SearchTitle) (ne .Title "Want to reach me?") ) -}}
 		<p class="billboard-p-text" data-pagefind-ignore>
 			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 		</p>
-		<p class="ctr legal" data-pagefind-ignore>{{- if ne .Title "Want to reach me?" -}}{{ $wordCountFmt }} words, {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}&nbsp;&bull;&nbsp;{{- end -}}
-			<a href="https://github.com/brycewray/hugo_site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>
+		<p class="ctr legal" data-pagefind-ignore>
+			{{ $wordCountFmt }} words, {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}&nbsp;&bull;&nbsp;<a href="https://github.com/brycewray/hugo_site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>
 		</p>
 		{{- end -}}
 	</div>
