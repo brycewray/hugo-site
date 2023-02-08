@@ -32,7 +32,7 @@ themes/twjit-thoreau/assets/css/index.css
 start*.sh
 logstart.sh
 build*.sh
-testbuild.sh
+testbuild*.sh
 push.sh
 wm*.sh
 git*.sh
