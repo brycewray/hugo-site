@@ -10,12 +10,6 @@
 		{{- partial "head-css.html" . }}
 		<noscript><style>.nScrHidden {display: none;}</style></noscript>
 		{{ partial "head-meta_cloud-socimg.html" . -}}
-		{{- /*
-			choices are:
-			- head-meta_auto-socimg.html (for text filter)
-			- head_meta_cloud-socimg.html (for Cloudinary)
-			- head_meta_manual-socimg.html (for manually typed text overlays)
-		*/ -}}
 		{{ partialCached "head-favicons.html" . }}
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
