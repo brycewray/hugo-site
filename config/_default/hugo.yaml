@@ -14,6 +14,7 @@ params:
   # PublicSans: true # Boolean --- "true" triggers use of em dash space replacements
   SiteLive: true # Boolean --- used for adapting robots.txt as needed
   SearchTitle: "Search the site"
+  # ===========================
   Host: "CFP" # choices for Host are "CFP" and "Vercel"
   HostName: "Cloudflare Pages" # choices for HostName are "Cloudflare Pages" and "Vercel"
   HostURL: "https://pages.cloudflare.com" # choices for HostURL are "https://pages.cloudflare.com" and "https://vercel.com"
