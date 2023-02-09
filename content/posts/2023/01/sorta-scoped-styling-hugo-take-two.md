@@ -179,11 +179,11 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | fingerprint "md5" -}}
 		{{- end }}
-			<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{ end -}}
 {{- end -}}
 ```
 
-**Note**: I've updated this post several times in recent days and, rather than leave inaccurate info in it from my previous efforts, I've chosen to keep only the update you see above. Of course, the post's history is [on the site repo](https://github.com/brycewray/hugo_site/commits/main/content/posts/2023/01/sorta-scoped-styling-hugo-take-two.md).
+**Note**: I've updated this post several times in recent days and, rather than leave inaccurate info in it from my previous efforts, I've chosen to keep only the update you see above.
 {.box}
