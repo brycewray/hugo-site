@@ -23,12 +23,12 @@ on:
       - main
   # schedule:
   #   - cron: '0 12 * * *' # every day at 12:00 UTC (0700CDT/0600CST)
-    # The above is to make sure static tweets' images don't run afoul
-    # of Twitter's caching strategy
+    # The above is to make sure static embeds' images don't run afoul of caching
   #   - cron: '0 0 * * *'   # every day at 00:00UTC (1900CDT/1800CST)
   #   - cron: '0 8 * * *'   # every day at 08:00UTC (0300CDT/0200CST)
   #   - cron: '0 16 * * *'  # every day at 16:00UTC (1100CDT/1000CST)
-  workflow_dispatch:
+  # workflow_dispatch:
+    # `workflow dispatch` is only if we restore the fallback-on-failure job
 
 env:
   HUGO_VERSION: 0.110.0 # will get Extended Version below
@@ -64,10 +64,10 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Build site with Hugo
-        run: npm run build # if using npm Sass
+        run: npm run build
       - name: Move "excerpts" feed (RSS/Atom only)
         run: mv public/posts/index.xml public/index-excerpts.xml
-      - name: Run Pagefind # if using npm
+      - name: Run Pagefind
         run: npm run pagefind
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
