@@ -23,7 +23,7 @@
 			{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 		</p>
 		<p class="ctr legal" data-pagefind-ignore>
-			{{ $wordCountFmt }} words, {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end -}}&nbsp;&bull;&nbsp;<a href="https://github.com/brycewray/hugo_site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>
+			{{- if $.GitInfo -}}<a href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> ({{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}{{ .Lastmod.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; <a href="https://github.com/brycewray/hugo_site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>{{- else -}}&nbsp;{{- end -}}{{- if (and (ne .Title "Want to reach me?") (ne .Title "Privacy policy") ) -}}<br />Reading time: {{ $readingTime }} minute{{- if (gt $readingTime 1) -}}s{{- end }} &bull; {{ $wordCountFmt }} words{{- end -}}
 		</p>
 		{{- end -}}
 	</div>
