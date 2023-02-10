@@ -30,7 +30,7 @@ I'll get to the part about displaying commit info shortly but, first, let's note
 
 [^manualDates]: [By default](https://gohugo.io/getting-started/configuration/#configure-dates), Hugo will give higher priority to the Git info variable `.Lastmod` *vs.* other possibilities --- including any manual `Lastmod` entries you may have already provided in your content's front matter.
 
-**However**, there's a catch **if** you're using a [GitHub Action](https://github.com/features/actions/) to deploy your site to your chosen host, as [I've been doing lately](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The problem is that, although these automated `.Lastmod` indications will be correct when you're developing *locally* with `hugo server`, they'll *all* take on the *current* date when you deploy. Fortunately, there's an explanation and solution, from a [thread](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)[^years] on the Hugo Discourse forum:
+**However**, there's a catch at the hosting level, although you can fix it **if** you're using a [GitHub Action](https://github.com/features/actions/) to deploy your site to your chosen host, as [I've been doing lately](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The problem is that, although these automated `.Lastmod` indications will be correct when you're developing *locally* with `hugo server`, they'll *all* take on the *current* date when you deploy. Fortunately, there's an explanation and solution, from a [thread](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)[^years] on the Hugo Discourse forum:
 
 [^years]: The original question dates from December 25, 2019, but it took another 21 months before an answer, much less *the* answer, appeared. Jeeeez.
 
@@ -49,7 +49,9 @@ After finding this answer, I simply added a `with` section to my GitHub Action's
        fetch-depth: 0
 ```
 
-. . . and, indeed, that fixed the glitch.
+. . . and, indeed, that fixed the glitch.[^multiHosts]
+
+[^multiHosts]: **Update from the future**: I originally thought this issue was limited to deployments using GitHub Actions (or other CI/CD). Then, a few months later, I discovered that (a.) hosts' Git configurations for builds typically are set to so-called *shallow-clone* behavior; and, apparently, (b.) no host allows altering this in either its built-in UI or any optional config files (*e.g.*, `netlify.toml` with Netlify or `vercel.json` with Vercel). Shallow-clone behavior causes problems with using `.GitInfo` data as described in this post, so keep this in mind if you typically deploy via your host's built-in user interface rather than with CI/CD.
 
 Incidentally: I test for whether a post's day of original publication and its "last-modified" day are the same --- *e.g.*, when I fix a typo or otherwise edit something while it's still the same day as when I first issued the post --- and, if so, I show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so this is in each applicable template:
 
