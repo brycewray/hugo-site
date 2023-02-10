@@ -49,9 +49,10 @@ After finding this answer, I simply added a `with` section to my GitHub Action's
        fetch-depth: 0
 ```
 
-. . . and, indeed, that fixed the glitch.[^multiHosts]
+. . . and, indeed, that fixed the glitch.
 
-[^multiHosts]: **Update from the future**: I originally thought this issue was limited to deployments using GitHub Actions (or other CI/CD). Then, a few months later, I discovered that (a.) hosts' Git configurations for builds typically are set to so-called *shallow-clone* behavior; and, apparently, (b.) no host allows altering this in either its built-in UI or any optional config files (*e.g.*, `netlify.toml` with Netlify or `vercel.json` with Vercel). Shallow-clone behavior causes problems with using `.GitInfo` data as described in this post, so keep this in mind if you typically deploy via your host's built-in user interface rather than with CI/CD.
+**Update from the future**: I originally thought this issue was limited to deployments using GitHub Actions (or other CI/CD). Then, a few months later, I discovered that (a.) hosts' Git configurations for builds typically are set to so-called *shallow-clone* behavior; and, apparently, (b.) no host allows altering this in either its built-in UI or any optional config files (*e.g.*, `netlify.toml` with Netlify or `vercel.json` with Vercel). Shallow-clone behavior causes problems with using `.GitInfo` data as described in this post, so keep this in mind if you typically deploy via your host's built-in user interface rather than with CI/CD.
+{.box}
 
 Incidentally: I test for whether a post's day of original publication and its "last-modified" day are the same --- *e.g.*, when I fix a typo or otherwise edit something while it's still the same day as when I first issued the post --- and, if so, I show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so this is in each applicable template:
 
