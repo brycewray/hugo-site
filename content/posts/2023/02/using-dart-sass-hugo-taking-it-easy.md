@@ -72,7 +72,7 @@ sass --no-source-map assets/scss:assets/css
 
 (For more on these partials, see "[Sorta scoped styling in Hugo, take two](/posts/2023/01/sorta-scoped-styling-hugo-take-two/).")
 
-Finally, here's a look at the key scripts in the project's `package.json` file[^pkgs]:
+Finally, here are the scripts in the project's `package.json` file[^pkgs]:
 
 ```json
 "clean": "rimraf public",
@@ -83,7 +83,12 @@ Finally, here's a look at the key scripts in the project's `package.json` file[^
 "dev:sass": "npm run devsass -- --watch",
 "prod:hugo": "hugo --minify",
 "prod:sass": "npm run prodsass",
-"build": "NODE_ENV=production npm-run-all clean prodsass prod:hugo"
+"testbuild:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --environment=production",
+"testbuild:sass": "npm run prodsass -- --watch",
+"start": "NODE_ENV=development npm-run-all clean devsass --parallel dev:*",
+"build": "NODE_ENV=production npm-run-all clean prodsass prod:hugo",
+"testbuild": "NODE_ENV=production npm-run-all clean prodsass --parallel testbuild:*",
+"testbuildpf": "NODE_ENV=production npm-run-all build pagefind --parallel testbuild:*"
 ```
 
 [^pkgs]: Note that I have installed not only `sass` but also the [cross-platform `rimraf` file-deletion tool](https://github.com/isaacs/rimraf), [`npm-run-all`](https://github.com/mysticatea/npm-run-all) for running multiple scripts in one command, and [`pagefind` for search](https://github.com/cloudcannon/pagefind). The latter is especially nice because that's **another** thing with which I don't have to futz in getting it to run on the remote build process: I just use `npm run pagefind` and all is good. Even if I decide to quit using CI/CD down the line, I could simply spec the host's build command as `npm run build && npm run pagefind` and call it a day.)
@@ -106,4 +111,4 @@ Here are all my previous posts on this subject.
 - "[Using Dart Sass with Hugo: the nitty-gritty](/posts/2022/05/using-dart-sass-hugo-nitty-gritty/)" <span class="nobrk">(2022-05-22)</span>.
 - "[Using Dart Sass with Hugo: back to Node](/posts/2022/05/using-dart-sass-hugo-back-to-node/)" <span class="nobrk">(2022-05-24)</span>.
 - "[Using Dart Sass with Hugo: some data on using GitHub Actions](/posts/2022/07/using-dart-sass-hugo-some-data-using-github-actions/)" <span class="nobrk">(2022-07-05)</span>.
-- "[Using Dart Sass with Hugo: the GitLab edition](/posts/2022/08/using-dart-sass-hugo-gitlab-edition/)" <span class="nobrk">(2022-08-05)</span>. 
+- "[Using Dart Sass with Hugo: the GitLab edition](/posts/2022/08/using-dart-sass-hugo-gitlab-edition/)" <span class="nobrk">(2022-08-05)</span>.
