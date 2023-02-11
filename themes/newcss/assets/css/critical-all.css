@@ -1,0 +1,1271 @@
+@charset "utf-8";
+
+/* reset */
+/* 	h/t to Andy Bell
+  	https://piccalil.li/blog/a-modern-css-reset/
+  	. . . as of 2021-07-09
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	/* text-rendering: optimizeSpeed; */
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+	 scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/*
+  ===========================================================================
+	ADDITIONAL, 2022-02-11 . . .
+  per https://css-tricks.com/your-css-reset-needs-text-size-adjust-probably/
+  ===========================================================================
+*/
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* variables */
+:root {
+	/* === COLORS === */
+	--default-color: hsl(0, 0%, 20%);
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--twcss-slate-50: #f8fafc;
+	--twcss-slate-100: #f1f5f9;
+	--twcss-slate-200: #e1e7ef;
+	--twcss-slate-300: #cbd5e1;
+	--twcss-slate-400: #94a3b8;
+	--twcss-slate-500: #65758b;
+	--twcss-slate-600: #48566a;
+	--twcss-slate-700: #344256;
+	--twcss-slate-800: #1d283a;
+	--twcss-slate-900: #0f1729;
+	--twcss-gray-50: #f9fafb;
+	--twcss-gray-100: #f3f4f6;
+	--twcss-gray-200: #e5e7eb;
+	--twcss-gray-300: #d1d5db;
+	--twcss-gray-400: #9ca3af;
+	--twcss-gray-500: #6b7280;
+	--twcss-gray-600: #4b5563;
+	--twcss-gray-700: #384252;
+	--twcss-gray-800: #1f2937;
+	--twcss-gray-900: #111827;
+	--twcss-zinc-50: #fafafa;
+	--twcss-zinc-100: #f4f4f5;
+	--twcss-zinc-200: #e4e4e7;
+	--twcss-zinc-300: #d4d4d8;
+	--twcss-zinc-400: #a1a1aa;
+	--twcss-zinc-500: #71717a;
+	--twcss-zinc-600: #52525b;
+	--twcss-zinc-700: #3f3f46;
+	--twcss-zinc-800: #27272a;
+	--twcss-zinc-900: #18181b;
+	--twcss-neutral-50: #fafafa;
+	--twcss-neutral-100: #f5f5f5;
+	--twcss-neutral-200: #e5e5e5;
+	--twcss-neutral-300: #d4d4d4;
+	--twcss-neutral-400: #a3a3a3;
+	--twcss-neutral-500: #737373;
+	--twcss-neutral-600: #525252;
+	--twcss-neutral-700: #404040;
+	--twcss-neutral-800: #262626;
+	--twcss-neutral-900: #171717;
+	--twcss-stone-50: #fafaf9;
+	--twcss-stone-100: #f5f5f4;
+	--twcss-stone-200: #e7e5e4;
+	--twcss-stone-300: #d6d3d1;
+	--twcss-stone-400: #a8a29e;
+	--twcss-stone-500: #78716c;
+	--twcss-stone-600: #57534e;
+	--twcss-stone-700: #44403c;
+	--twcss-stone-800: #292524;
+	--twcss-stone-900: #1c1917;
+	--twcss-red-50: #fef2f2;
+	--twcss-red-100: #fee2e2;
+	--twcss-red-200: #fecaca;
+	--twcss-red-300: #fca6a6;
+	--twcss-red-400: #f87171;
+	--twcss-red-500: #ef4444;
+	--twcss-red-600: #dc2626;
+	--twcss-red-700: #ba1c1c;
+	--twcss-red-800: #981b1b;
+	--twcss-red-900: #7f1d1d;
+	--twcss-orange-50: #fff7ed;
+	--twcss-orange-100: #ffedd5;
+	--twcss-orange-200: #fed7aa;
+	--twcss-orange-300: #fdba74;
+	--twcss-orange-400: #fb923c;
+	--twcss-orange-500: #f97316;
+	--twcss-orange-600: #ea580c;
+	--twcss-orange-700: #c2410c;
+	--twcss-orange-800: #9a3412;
+	--twcss-orange-900: #7c2d12;
+	--twcss-amber-50: #fffbeb;
+	--twcss-amber-100: #fef3c7;
+	--twcss-amber-200: #fde68a;
+	--twcss-amber-300: #fcd34d;
+	--twcss-amber-400: #fbbf24;
+	--twcss-amber-500: #f59e0b;
+	--twcss-amber-600: #d97706;
+	--twcss-amber-700: #b45309;
+	--twcss-amber-800: #92400e;
+	--twcss-amber-900: #78350f;
+	--twcss-yellow-50: #fefce8;
+	--twcss-yellow-100: #fef9c3;
+	--twcss-yellow-200: #fef08a;
+	--twcss-yellow-300: #fde047;
+	--twcss-yellow-400: #facc15;
+	--twcss-yellow-500: #eab308;
+	--twcss-yellow-600: #ca8a04;
+	--twcss-yellow-700: #a16207;
+	--twcss-yellow-800: #854d0e;
+	--twcss-yellow-900: #713f12;
+	--twcss-lime-50: #f7fee7;
+	--twcss-lime-100: #ecfccb;
+	--twcss-lime-200: #d9f99d;
+	--twcss-lime-300: #bef264;
+	--twcss-lime-400: #a3e635;
+	--twcss-lime-500: #84cc16;
+	--twcss-lime-600: #65a30d;
+	--twcss-lime-700: #4d7c0f;
+	--twcss-lime-800: #3f6212;
+	--twcss-lime-900: #365314;
+	--twcss-green-50: #f0fdf4;
+	--twcss-green-100: #dcfce7;
+	--twcss-green-200: #bbf7d0;
+	--twcss-green-300: #86efac;
+	--twcss-green-400: #4ade80;
+	--twcss-green-500: #22c55e;
+	--twcss-green-600: #16a34a;
+	--twcss-green-700: #15803d;
+	--twcss-green-800: #166534;
+	--twcss-green-900: #14532d;
+	--twcss-emerald-50: #ecfdf5;
+	--twcss-emerald-100: #d1fae5;
+	--twcss-emerald-200: #a7f3d0;
+	--twcss-emerald-300: #6ee7b7;
+	--twcss-emerald-600: #059669;
+	--twcss-emerald-700: #047857;
+	--twcss-emerald-800: #065f46;
+	--twcss-emerald-900: #064e3b;
+	--twcss-teal-50: #f0fdfa;
+	--twcss-teal-100: #ccfbf1;
+	--twcss-teal-200: #99f6e4;
+	--twcss-teal-300: #5eead4;
+	--twcss-teal-400: #2dd4bf;
+	--twcss-teal-500: #14b8a6;
+	--twcss-teal-600: #0d9488;
+	--twcss-teal-700: #0f766e;
+	--twcss-teal-800: #115e59;
+	--twcss-teal-900: #134e4a;
+	--twcss-cyan-50: #ecfeff;
+	--twcss-cyan-100: #cffafe;
+	--twcss-cyan-200: #a5f3fc;
+	--twcss-cyan-300: #67e8f9;
+	--twcss-cyan-400: #22d3ee;
+	--twcss-cyan-500: #06b6d4;
+	--twcss-cyan-600: #0891b2;
+	--twcss-cyan-700: #0e7490;
+	--twcss-cyan-800: #155e75;
+	--twcss-cyan-900: #164e63;
+	--twcss-50: #f0f9ff;
+	--twcss-100: #e0f2fe;
+	--twcss-200: #bae6fd;
+	--twcss-300: #7dd3fc;
+	--twcss-400: #38bdf8;
+	--twcss-500: #0ea5e9;
+	--twcss-600: #0284c7;
+	--twcss-700: #0369a0;
+	--twcss-800: #075783;
+	--twcss-900: #0c4a6e;
+	--twcss-blue-50: #f0f6ff;
+	--twcss-blue-100: #dcebfe;
+	--twcss-blue-200: #bedbfe;
+	--twcss-blue-300: #91c3fd;
+	--twcss-blue-400: #61a6fa;
+	--twcss-blue-500: #3c83f6;
+	--twcss-blue-600: #2463eb;
+	--twcss-blue-700: #1d4fd7;
+	--twcss-blue-800: #1e3b8a;
+	--twcss-blue-900: #1f3b8a;
+	--twcss-indigo-50: #eef2ff;
+	--twcss-indigo-100: #e0e7ff;
+	--twcss-indigo-200: #c7d2fe;
+	--twcss-indigo-300: #a5b4fc;
+	--twcss-indigo-400: #818cf8;
+	--twcss-indigo-500: #6366f1;
+	--twcss-indigo-600: #4f46e5;
+	--twcss-indigo-700: #4338ca;
+	--twcss-indigo-800: #3730a3;
+	--twcss-indigo-900: #312e81;
+	--twcss-violet-50: #f5f3ff;
+	--twcss-violet-100: #ede9fe;
+	--twcss-violet-200: #ddd6fe;
+	--twcss-violet-300: #c4b5fd;
+	--twcss-violet-400: #a78bfa;
+	--twcss-violet-500: #8b5cf6;
+	--twcss-violet-600: #7c3aed;
+	--twcss-violet-700: #6d28d9;
+	--twcss-violet-800: #5b21b6;
+	--twcss-violet-900: #4c1d95;
+	--twcss-purple-50: #faf5ff;
+	--twcss-purple-100: #f3e8ff;
+	--twcss-purple-200: #e9d5ff;
+	--twcss-purple-300: #d8b4fe;
+	--twcss-purple-400: #c084fc;
+	--twcss-purple-500: #a855f7;
+	--twcss-purple-600: #9333ea;
+	--twcss-purple-700: #7e22ce;
+	--twcss-purple-800: #6b21a8;
+	--twcss-purple-900: #581c87;
+	--twcss-fuchsia-50: #fdf4ff;
+	--twcss-fuchsia-100: #fae8ff;
+	--twcss-fuchsia-200: #f5d0fe;
+	--twcss-fuchsia-300: #f0abfc;
+	--twcss-fuchsia-400: #e879f9;
+	--twcss-fuchsia-500: #d946ef;
+	--twcss-fuchsia-600: #c026d3;
+	--twcss-fuchsia-700: #a21caf;
+	--twcss-fuchsia-800: #86198f;
+	--twcss-fuchsia-900: #701a75;
+	--twcss-pink-50: #fdf2f8;
+	--twcss-pink-100: #fce7f3;
+	--twcss-pink-200: #fbcfe8;
+	--twcss-pink-300: #f9a8d4;
+	--twcss-pink-400: #f472b6;
+	--twcss-pink-500: #ec4899;
+	--twcss-pink-600: #db2777;
+	--twcss-pink-700: #be185d;
+	--twcss-pink-800: #9d174d;
+	--twcss-pink-900: #831843;
+	--twcss-rose-50: #fff1f2;
+	--twcss-rose-100: #ffe4e6;
+	--twcss-rose-200: #fecdd3;
+	--twcss-rose-300: #fda4af;
+	--twcss-rose-400: #fb7185;
+	--twcss-rose-500: #f43f5e;
+	--twcss-rose-600: #e11d48;
+	--twcss-rose-700: #be123c;
+	--twcss-rose-800: #9f1239;
+	--twcss-rose-900: #881337;
+	/* === TYPOGRAPHY === */
+	/* font families */
+	--sans-serif: ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+	/* text sizes */
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 3rem;
+	--text-6xl: 3.75rem;
+	--text-7xl: 4.5rem;
+	--text-8xl: 6rem;
+	--text-9xl: 8rem;
+	/* underlines for hrefs */
+	--textDcThick: 0.075rem;
+	--textUnOffst: 0.25em;
+	/* ^^^ 0.225em is OK with Libre Franklin,
+	       but Segoe UI needs at least 0.25em
+	*/
+	/* === MISCELLANY === */
+	/* alignment */
+	--body-align: left;
+	--nav-height: 50px;
+	/* breakpoints (mostly based on TWCSS) */
+	--bkpt_sm: 640px;
+	--bkpt_md: 768px;
+	--bkpt_ml: 960px;
+	--bkpt_lg: 1024px;
+	--bkpt_xl: 1280px;
+	--bkpt_2xl: 1536px;
+	--bkpt_3xl: 1920px;
+	/* button */
+	--btn-radius: 6px;
+}
+
+/* webfont, if any */
+
+
+/* global */
+
+html, body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	-moz-osx-font-smoothing: auto; /* only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
+	-webkit-font-feature-settings: "liga" 1;
+	font-feature-settings: "liga" 1; /* if using any ligature-savvy fonts, ligatures won't work without this */
+	text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-family: var(--sans-serif);
+	background-color: var(--twcss-slate-100);
+	color: var(--twcss-gray-900);
+	& @media (prefers-color-scheme: dark) {
+		background: var(--black);
+		color: var(--twcss-gray-100);
+	}
+	& background-image: linear-gradient(
+		var(--twcss-slate-600),
+		var(--twcss-slate-300) 6em,
+		transparent 10em
+	);
+	& @media (prefers-color-scheme: dark) {
+		background-image: linear-gradient(
+			var(--twcss-slate-500),
+			var(--twcss-slate-800) 6em,
+			transparent 10em
+		);
+	}
+}
+
+html {
+	/* scroll-behavior: smooth; */
+	scroll-padding-top: 80px;
+}
+
+p, li {
+	line-height: 1.4;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	letter-spacing: -0.025rem;
+}
+
+h1, h2, h3, h4 {
+	outline: 2px transparent;
+	outline-offset: 2px;
+	&:active, &:focus, &:hover {
+		outline: 2px transparent;
+		outline-offset: 2px;
+	}
+}
+
+h1, h2, h3, h4 {
+	display: block;
+	margin-block-start: 0.25rem;
+	margin-block-end: 0.25rem;
+}
+
+h3, .h3 {
+	font-style: italic;
+}
+
+h1, .h1 {
+	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
+	/* usually overridden by other styling (e.g., billboard.scss) */
+}
+
+h2, .h2 {
+	font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
+}
+
+h3, .h3 {
+	font-size: clamp(1.375rem, 0.5rem + 1.75vw, 1.75rem);
+}
+
+h4, .h4 {
+	font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
+}
+
+a, a:focus, a:hover, a:active {
+	text-decoration-thickness: var(--textDcThick); /* always rem */
+	text-underline-offset: var(--textUnOffst); /* always em */
+	text-decoration-skip-ink: auto;
+}
+
+a {
+	color: var(--twcss-blue-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-blue-300);
+	}
+}
+
+a:focus, a:hover, a:active {
+	color: var(--twcss-blue-900);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-slate-300);
+	}
+}
+
+a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
+	border-bottom: 0;
+	text-decoration: none;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: var(--black);
+	& @media (prefers-color-scheme: dark) {
+		background-color: var(--white);
+	}
+}
+
+blockquote {
+	border-left: 4px solid var(--twcss-slate-400);
+	color: var(--twcss-gray-700);
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 1.5em;
+	& @media (prefers-color-scheme: dark) {
+		/* border-left is same color */
+		color: var(--twcss-gray-300);
+	}
+	& p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+sub, sup {
+	font-size: 65%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.45em;
+}
+ul li li, ol li li, ul li li li, ol li li li {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+ul li li {
+	list-style-type: circle;
+}
+
+ol li li {
+	list-style-type: disc;
+}
+
+ul li li li, ol li li li {
+	list-style-type: square;
+}
+
+#content-main-hugo, main {
+	padding-top: 40px;
+}
+
+#content-main-hugo .topOfMain, main .topOfMain {
+	margin-top: 0.5rem;
+	font-size: 2.25rem;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	vertical-align: middle;
+}
+
+footer {
+	/* @media (prefers-color-scheme: dark) {
+		background: var(--black);
+	} */
+	text-align: center;
+	font-size: var(--text-xs);
+	margin: 4rem auto 0 auto;
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	& p {
+		line-height: 1.5em; /* definitely em, not rem, here */
+	}
+	& div.footerWrapper {
+		margin: 0 auto;
+		width: 80%;
+		& p {
+			margin: 1rem 0;
+		}
+		& div.icons-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 1em;
+		}
+	}
+	& @media (min-width: var(--bkpt_lg) ){
+		margin: 2rem auto 0 auto;
+		/* padding-bottom: 1rem; */
+		& div.footerWrapper {
+			width: 65%;
+			height: 100%;
+		}
+	}
+}
+
+.container {
+	// width: 90%;
+	margin: 0 auto;
+	&-narrower {
+		margin: 1rem auto 0 auto;
+		width: 80%;
+		& @media screen and (min-width: var(--bkpt_lg) ){
+			width: 50%;
+			/* max-width: 65ch; */
+		}
+		& @media screen and (min-width: var(--bkpt_2xl) ){
+			width: 45%;
+			/* max-width: 65ch; */
+		}
+		& @media screen and (min-width: var(--bkpt_3xl) ){
+			width: 40%;
+		}
+		/* & figure img, img {
+		  width: 100%;
+		  height: auto;
+		} */
+	}
+}
+
+li p {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}
+
+/* utility */
+/*
+.box, .imgcCaption {
+ 	font-family: var(--sans-serif);
+}
+*/
+
+.ctr {
+	text-align: center;
+}
+.red {
+	color: var(--twcss-red-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-red-300);
+	}
+}
+
+.legal {
+	font-size: var(--text-xs);
+}
+.pokey {
+	font-size: var(--text-sm);
+}
+.sansSerif {
+	font-family: var(--sans-serif);
+}
+.serif {
+	font-family: var(--serif);
+}
+.tightLead {
+	line-height: 1.25;
+}
+.nobrk, .nowrap {
+	white-space: nowrap;
+}
+.text-nowrap {
+	white-space: nowrap;
+	font-size: inherit;
+}
+.bg-center {
+	background-position: center;
+}
+
+.box {
+	font-size: 85%;
+	display: block;
+	box-sizing: border-box;
+	background-color: var(--white);
+	border: 1px (--lid var(--black));
+	margin: 0.5em auto;
+	width: 100%;
+	padding: 1em 1.25em;
+	& @media (prefers-color-scheme: dark) {
+		background-color: var(--twcss-slate-800);
+		border: 1px solid var(--twcss-gray-200);
+	}
+	& p {
+		padding: 0;
+		margin: 0;
+	}
+	+ hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+		margin-top: 1.75em;
+	}
+	& code {
+		background-color: var(--twcss-slate-100);
+		& @media (prefers-color-scheme: dark) {
+			background-color: var(--twcss-slate-600);
+		}
+	}
+	& a code {
+		// background-color: var(--twcss-slate-100);
+		& @media (prefers-color-scheme: dark) {
+			background-color: var(--twcss-slate-700);
+		}
+	}
+	& .red {
+		color: var(--twcss-red-600);
+		& @media (prefers-color-scheme: dark) {
+			color: var(--twcss-red-400);
+		}
+	}
+}
+
+img.containedImage {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
+}
+img.ctrImg {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.img-phn {
+	width: 90%;
+	& @media screen and (--in-width: var(--bkpt_md)) ){
+		width: 50%;
+	}
+}
+.imgcCaption {
+	padding: 0;
+	margin-block-start: 0.5em;
+	line-height: 1.375;
+	font-size: 0.75em;
+	text-align: center;
+}
+.relative {
+	position: relative;
+}
+.w-full {
+	width: 100%;
+}
+.h-full {
+	height: 100%;
+}
+.h-auto {
+	height: auto;
+}
+.mx-auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+.w-auto {
+	width: auto;
+}
+.inline {
+	display: inline;
+}
+
+.punctuationExample {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: var(--serif);
+	text-align: center;
+}
+
+.indentAfterLI {
+	margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
+	& .box {
+		--bIALImarginLeft: 3em;
+		margin-left: var(--bIALImarginLeft);
+		width: calc(100% - var(--bIALImarginLeft));
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.animate-fade {
+	animation: fadeIn 750ms ease-in-out;
+}
+
+/*
+	start, text/LH classes from TWCSS
+	=================================
+*/
+
+.text-xs {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.text-sm {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.text-base {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+.text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+
+.text-5xl, .text-6xl, .text-7xl, .text-8xl, .text-9xl {
+	line-height: 1;
+}
+
+.text-5xl {
+	font-size: 3rem;
+}
+
+.text-6xl {
+	font-size: 3.75rem;
+}
+
+.text-7xl {
+	font-size: 4.5rem;
+}
+
+.text-8xl {
+	font-size: 6rem;
+}
+
+.text-9xl {
+	font-size: 8rem;
+}
+
+/* ===============================
+	 end, text/LH classes from TWCSS
+*/
+
+.mono {
+	font-family: var(--monospaced);
+}
+
+circle.GitHub,
+circle.RSS,
+path.MastodonBody,
+path.Twitter,
+path.JSON,
+path.RSS {
+	fill: var.(--white);
+	& @media (prefers-color-scheme: dark) {
+		fill: var.(--black);
+	}
+}
+
+circle.Twitter,
+circle.JSON {
+	fill: var.(--black);
+	& @media (prefers-color-scheme: dark) {
+		fill: var(--twcss-blue-300);
+	}
+}
+
+path.GitHub,
+circle.MastodonCircle,
+path.MastodonM,
+circle.Twitter,
+circle.RSS,
+circle.JSON {
+	fill: var(--twcss-blue-700);
+	& @media (prefers-color-scheme: dark) {
+		fill: var(--twcss-blue-300);
+	}
+}
+
+a:hover path.GitHub,
+a:hover circle.MastodonCircle,
+a:hover path.MastodonM,
+a:hover circle.Twitter,
+a:hover circle.RSS,
+a:hover circle.JSON {
+	fill: var(--twcss-blue-800);
+	& @media (prefers-color-scheme: dark) {
+		fill: var(--twcss-blue-200);
+	}
+}
+
+path.MastodonBody,
+path.MastodonM {
+	fill-rule:nonzero;
+}
+
+/* needed only if using darker bkgd in dark mode
+a:hover circle.GitHub,
+a:hover path.Twitter,
+a:hover path.RSS,
+a:hover path.JSON,
+a:hover path.MastodonBody {
+	& @media (prefers-color-scheme: dark) {
+		fill: var(--white);
+	}
+}
+*/
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/* nav */
+header, .nav, .nav-Menu {
+	background-color: var(--twcss-slate-300);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--twcss-slate-800);
+	}
+}
+
+header {
+	/* font-family: var(--sans-serif); */
+	position: fixed;
+	width: 100%;
+	margin-top: 0;
+	z-index: 9999;
+}
+
+.nav {
+	&-Toggle {
+		position: absolute;
+		cursor: pointer;
+		margin: 0rem 1rem;
+		right: 0;
+		& svg {
+			width: 1.5rem;
+			fill: var(--twcss-slate-800);
+			@media (prefers-color-scheme: dark) {
+				fill: var(--twcss-slate-50);
+			}
+		}
+		& .close {
+			display: none;
+		}
+		& .menu {
+			margin-top: 0.2rem;
+		}
+	}
+	&-Checkbox {
+		display: none;
+	}
+	&-Menu {
+		margin-block-start: 0;
+		margin-block-end: 0;
+		padding-inline-start: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		text-align: right;
+		/* align-items: right; */
+		margin: 0.5rem 0.5rem 0.5rem 0;
+		& li {
+			list-style: none;
+			display: none;
+			font-weight: bold;
+			padding-right: 0.75em;
+			&.notMobile {
+				display: none;
+			}
+			&:first-child {
+				padding: 0;
+				margin-right: auto;
+				margin-left: 1.5rem;
+				display: block;
+				& svg { /* for site logo */
+					width: auto;
+				}
+			}
+		}
+		& a {
+			text-decoration: none;
+			border: 0;
+			color: var(--black);
+			&:focus, &:active, &:hover {
+				color: var(--twcss-slate-600);
+			}
+			& @media (prefers-color-scheme: dark) {
+				color: var(--white);
+				&:focus, &:active, &:hover {
+					color: var(--twcss-slate-200);
+				}
+			}
+		}
+		/* // svg {
+		// 	width: 1.5rem;
+		// 	fill: var(--white);
+		// }
+		// // possibly unused...
+		// // see `.nav > svg` above */
+	}
+}
+
+#nav-Checkbox {
+	&:checked ~ ul.nav-Menu li {
+		display: block;
+	}
+	&:checked ~ label.nav-Toggle .close {
+		display: block;
+	}
+	&:checked ~ label.nav-Toggle .menu {
+		display: none;
+	}
+	&:checked ~ ul.nav-Menu {
+		padding-bottom: 1rem;
+	}
+}
+
+@media only screen and (min-width: var(--bkpt_lg)){
+	.nav {
+		&-Toggle {
+			display: none;
+		}
+		&-Menu {
+			flex-direction: row;
+			padding: 0;
+			gap: 0.5rem;
+			margin: 0.5rem 1.5rem 0 0;
+			& li {
+				font-size: var(--text-sm);
+				display: block;
+				text-transform: uppercase;
+				margin: 0.5rem 0 0.5rem 0;
+				&.notMobile {
+					display: block;
+				}
+				&:first-child {
+					letter-spacing: normal;
+					line-height: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+/* vweights for variable fonts, sys or uploaded (test on Linux VM?) */
+/*
+====
+	FOR USE **ONLY** WITH FONTS WITH VARIABLE WEIGHTS
+	--------
+	As of 2022-05-15, this includes system fonts such as San Francisco (macOS/iOS) and Segoe UI (Windows); not worrying about Linux distros because they're all over the map on this as with so many other specs.
+	====
+*/
+
+b,
+strong {
+	font-weight: 600;
+}
+
+.header-anchor::after {
+	font-weight: 425;
+}
+h1,
+.h1,
+.background-hero-title-text,
+.billboard-title-text,
+.posts-Head,
+.homePost-Latest,
+.sitemap-Div h1 {
+	font-weight: 600;
+	letter-spacing: -0.05em;
+}
+
+.homeOpen h1 {
+	font-weight: 600;
+	letter-spacing: -0.0375em;
+}
+
+h2,
+.h2,
+article h2,
+article .h2,
+h3,
+.h3,
+article h3,
+article .h3,
+h4,
+.h4,
+article h4,
+article .h4,
+.homePost-Title,
+.posts-Title {
+	font-weight: 550;
+	letter-spacing: -0.025em;
+}
+
+.prevnextP {
+	letter-spacing: -0.025em;
+}
+
+.billboard-description-text {
+	font-weight: 300;
+}
+/*
+	`.posts-Description` and `.homePost-Description`
+	at font-weight 300
+	are problematic in Windows as seen in Parallels Desktop,
+	while font-weight 350 is same as 400 with San Francisco
+*/
+
+.posts-Description,
+.homePost-Description {
+	letter-spacing: -0.025em;
+}
+
+.billboard-description-text {
+	letter-spacing: -0.0375em;
+}
+
+.billboard-p-text,
+.homePost-Dates,
+.posts-Dates {
+	letter-spacing: -0.025em;
+}
+
+.footnotes li,
+.footnotes li p,
+.yellowBox,
+.blueBox,
+.tweet-card div,
+.tweet-card a,
+.tweet-card p {
+	letter-spacing: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+	.header-anchor::after {
+		font-weight: 375;
+	}
+	h1,
+	.h1,
+	.background-hero-title-text,
+	.billboard-title-text,
+	.posts-Head,
+	.homePost-Latest {
+		font-weight: 550;
+	}
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	.homePost-Title,
+	.posts-Title {
+		font-weight: 500;
+	}
+	.homePost-Title,
+	.posts-Title {
+		font-weight: 500;
+	}
+	b,
+	strong {
+		font-weight: 700;
+	}
+}
+
+/* ffoxobliq for system font stack **with SF first** for "sans-serif" var */
+/* === handling obliquing issues in Firefox */
+
+@supports (-moz-appearance: none) {
+	.italic, i, cite, em, var, address, dfn, h3, .h3 {
+		font-style: oblique 8deg;
+	}
+}
+
+/* based on https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/ */
+
+@media print {
+	#content-main-hugo, main {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	header,
+	footer,
+	.bg-dark,
+	.background-hero-div,
+	.hero,
+	[class^="imgB-"],
+	.contactBtn,
+	.searchBtnDiv,
+	.giscus-comments,
+	.featured-image-caption * {
+		display: none !important;
+	}
+	@page {
+		margin: 1in;
+	}
+	html,
+	body,
+	[class^="background-hero"] {
+		font-family: sans-serif;
+		background-color: transparent !important;
+		color: #000 !important;
+	}
+	pre, code {
+		font-family: monospace !important;
+		white-space: pre-wrap !important;
+		word-wrap: break-word !important;
+		overflow-x: auto !important;
+	}
+	code[class*="language-"], pre[class*="language-"] {
+		color: white;
+	}
+	:not(pre) > code[class*="language-"], pre[class*="language-"] {
+		background: #000;
+	}
+	.chroma * {
+		color: white !important;
+	}
+	article code {
+		background-color: #ddd;
+	}
+	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+	.yellowBox, .blueBox {
+		background-color: #fff;
+	}
+	[class^="background-hero"] {
+		position: relative !important;
+		background: none !important;
+		text-shadow: none !important;
+		margin-top: 0 !important;
+		padding-top: 0 !important;
+		height: auto !important;
+		max-height: auto !important;
+		min-height: auto !important;
+		color: #000 !important;
+		padding: 1em !important;
+	}
+	.imgCover {
+		object-fit: cover;
+		object-position: 50% 50%; /* H = middle; V = middle */
+		height: 100%;
+		width: 100%;
+	}
+	.background-hero .imgCover {
+		display: none !important;
+		height: 0 !important;
+	}
+	a {
+		color: #000 !important;
+	}
+	a[target="_blank"]::after {
+		margin: 0;
+		content: "";
+		/* "new window" indication obviously unneeded in print */
+	}
+	.container-narrower {
+		width: 90% !important;
+	}
+	article:after {
+		content: "Site textual content © 2018–2022 Bryce Wray except where otherwise noted.";
+		color: #000;
+		margin: 2em auto 0 auto;
+		text-align: center;
+		font-size: var(--text-xs);
+		padding-top: 2em;
+	}
+}
