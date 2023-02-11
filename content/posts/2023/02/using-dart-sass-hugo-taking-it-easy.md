@@ -43,7 +43,7 @@ I'd previously only skimmed the documentation for the Sass CLI, so I was pleasan
 sass --no-source-map assets/scss:assets/css
 ```
 
-. . . and that resulting placement (`/assets/css/` in the Hugo project) meant Hugo Pipes would have no problem handling all those CSS files in its usual lightning-fast manner. For example, here's how my [`head-criticalcss.html` partial](https://github.com/brycewray/hugo_site/blob/main/layouts/partials/head-criticalcss.html) now looks:
+. . . and that resulting placement (`/assets/css/` in the Hugo project) meant Hugo Pipes would have no problem handling all those CSS files in its usual lightning-fast manner. For example, here's how my `head-criticalcss.html` partial now looks:
 
 ```go-html-template
 {{- $css := "" -}}
@@ -53,7 +53,7 @@ sass --no-source-map assets/scss:assets/css
 {{- end }}
 ```
 
-. . . while the relevant part of the [`head-css.html` partial](https://github.com/brycewray/hugo_site/blob/main/layouts/partials/head-css.html) looks like this:
+. . . while the relevant part of the `head-css.html` partial looks like this:
 
 ```go-html-template
 {{- range $cssTypes -}}
