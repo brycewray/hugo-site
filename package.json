@@ -4,8 +4,8 @@
   "scripts": {
     "clean": "rimraf public",
     "pagefind": "pagefind --source public",
-    "devsass": "sass --no-source-map assets/scss:assets/css",
-    "prodsass": "sass --no-source-map assets/scss:assets/css --style=compressed",
+    "devsass": "sass --no-source-map themes/sass/assets/scss:assets/css",
+    "prodsass": "sass --no-source-map themes/sass/assets/scss:assets/css --style=compressed",
     "dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
     "dev:sass": "npm run devsass -- --watch",
     "prod:hugo": "hugo --minify",
