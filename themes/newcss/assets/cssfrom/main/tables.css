@@ -16,7 +16,7 @@ table.noborders {
 	border: 0;
 	border-collapse: collapse;
 	& tr {
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			background-color: var(--twcss-gray-200);
 			color: var(--black);
 		}
@@ -39,7 +39,7 @@ table.noborders {
 		color: var(--white);
 	}
 	& thead tr {
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			background-color: var(--twcss-blue-900);
 		}
 	}
@@ -51,7 +51,7 @@ table.noborders {
 		& img {
 			display: block;
 			max-width: 60%;
-			& @media screen and (min-width: var.$bkpt_md) {
+			@media screen and (min-width: var.$bkpt_md) {
 				max-width: 40%;
 			}
 			height: auto;
@@ -67,7 +67,7 @@ table.leagues {
 	margin: 1rem auto 0 auto;
 	border: 0;
 	border-collapse: collapse;
-	& @media (min-width: 900px) {
+	@media (min-width: 900px) {
 		width: 60%;
 	}
 }
@@ -82,7 +82,7 @@ table.ulysses {
 		background-color: var(--twcss-blue-700);
 		border: 1px solid var(--black);
 		color: white;
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			background-color: var(--twcss-blue-900);
 			border: 1px solid var(--white);
 		}
@@ -90,7 +90,7 @@ table.ulysses {
 	& td {
 		text-align: center;
 		border: 1px solid var(--black);
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var(--white);
 			color: var(--white);
 		}
@@ -98,13 +98,13 @@ table.ulysses {
 	}
 	& tr:nth-child(odd) {
 		background-color: var(--white);
-		& @media (prefers-color-scheme: dark){
+		@media (prefers-color-scheme: dark){
 			background-color: var(--twcss-slate-700);
 		}
 	}
 	& tr:nth-child(even) {
 		background-color: var(--twcss-emerald-50);
-		& @media (prefers-color-scheme: dark){
+		@media (prefers-color-scheme: dark){
 			background-color: var(--twcss-emerald-900);
 		}
 	}

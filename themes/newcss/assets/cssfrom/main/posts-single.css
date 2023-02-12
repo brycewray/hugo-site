@@ -4,13 +4,13 @@
 	/* font-family: var(--sans-serif); */
 	margin-top: 2.5rem;
 	background-color: var(--twcss-slate-300);
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		background-color: var(--twcss-slate-800);
 	}
 	padding: 0.5rem 0;
 	& div, p {
 		color: var(--black);
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			color: var(--white);
 		}
 	}
@@ -22,7 +22,7 @@
 		& a {
 			color: var(--twcss-blue-800);
 			text-decoration: none;
-			& @media (prefers-color-scheme: dark) {
+			@media (prefers-color-scheme: dark) {
 				color: var(--twcss-blue-200);
 			}
 			&:hover, &:focus {
@@ -31,7 +31,7 @@
 				text-decoration-thickness: var(--textDcThick); /* always rem */
 				text-underline-offset: var(--textUnOffst); /* always em */
 				text-decoration-skip-ink: auto;
-				& @media (prefers-color-scheme: dark) {
+				@media (prefers-color-scheme: dark) {
 					color: var(--twcss-gray-200);
 				}
 			}
@@ -58,7 +58,7 @@
 		&:hover {
 			cursor: pointer;
 		}
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			color: var(--black);
 			background-color: var(--twcss-blue-300);
 			&:focus, &:active, &:hover {

@@ -8,13 +8,13 @@
 .searchDivPF {
 	/* margin: 0 auto; */
 	width: 80%;
-	& @media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		width: 70%;
 	}
-	& @media screen and (min-width: 1024px) {
+	@media screen and (min-width: 1024px) {
 		width: 65%;
 	}
-	& @media screen and (min-width: 1536px) {
+	@media screen and (min-width: 1536px) {
 		width: 50%;
 	}
 }
@@ -30,14 +30,14 @@
 	padding: 0;
 	background-color: var(--white);
 	border: 1px solid var(--black);
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		background-color: var(--twcss-gray-800);
 		border: 1px solid var(--twcss-gray-300);
 	}
 }
 
 .searchInput {
-	& @media (min-width: 768px) {
+	@media (min-width: 768px) {
 		max-width: 300ch;
 	}
 	outline: none;
@@ -45,7 +45,7 @@
 	margin: 0;
 	border: 0;
 	background-color: transparent;
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		color: var(--white);
 	}
 }
@@ -61,7 +61,7 @@
 	font-weight: bold;
 	background-color: var(--twcss-blue-700);
 	color: var(--white);
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var(--twcss-blue-300);
 		background-color: var(--twcss-blue-300);
 		color: var(--black);
@@ -72,7 +72,7 @@
 	&:focus, &:active, &:hover {
 		border: 1px solid var(--twcss-blue-700);
 		background-color: var(--twcss-blue-700);
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var(--twcss-blue-50);
 			background-color: var(--twcss-blue-50);
 		}
@@ -103,7 +103,7 @@
 	border: 1px solid var(--black);
 	/* border-radius: 9px; */
 	background-color: var(--white);
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var(--twcss-gray-300);
 		background-color: var(--twcss-gray-800);
 		color: var(--white);
@@ -135,7 +135,7 @@
 	font-weight: bold;
 	background-color: var(--twcss-blue-700);
 	color: var(--white);
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		background-color: var(--twcss-blue-300);
 		border-color: var(--twcss-blue-300);
 		color: var(--black);
@@ -146,7 +146,7 @@
 	&:focus, &:active, &:hover {
 		border: 1px solid var(--twcss-blue-700);
 		background-color: var(--twcss-blue-700);
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var(--twcss-blue-50);
 			background-color: var(--twcss-blue-50);
 		}
@@ -174,7 +174,7 @@
 	& mark {
 		color: var(--black);
 		background-color: var(--twcss-blue-100);
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			color: var(--white);
 			background-color: var(--twcss-blue-900);
 		}

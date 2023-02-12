@@ -34,7 +34,7 @@
 .footnote-sim {
 	font-size: 0.65em;
 	color: hsl(240, 100%, 50%);
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		color: hsl(200, 100%, 50%);
 	}
 }

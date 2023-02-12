@@ -12,12 +12,12 @@ details.comments > summary {
 	&:hover {
 		cursor: pointer;
 		background-color: var(--twcss-blue-700);
-		& @media (prefers-color-scheme: dark) {
+		@media (prefers-color-scheme: dark) {
 			border: 1px solid var(--twcss-blue-300);
 			background-color: var(--twcss-blue-300);
 		}
 	}
-	& @media (prefers-color-scheme: dark) {
+	@media (prefers-color-scheme: dark) {
 		border: 1px solid var(--twcss-blue-100);
 		background-color: var(--twcss-blue-100);
 		color: var(--black);
