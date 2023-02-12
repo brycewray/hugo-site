@@ -1,0 +1,839 @@
+@charset 'utf-8';
+
+/* Background */
+.chroma, .code-inline {
+	color: var(--black);
+	background-color: var(--white);
+	border: 1px solid var(--twcss-gray-400);
+	& @media (prefers-color-scheme: dark) {
+		background-color: var(--twcss-slate-800);
+	}
+}
+
+/* Other */
+.chroma .x, .code-inline .x {
+	color: var(--black);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--white);
+	}
+}
+
+/* Error */
+.chroma .err, .code-inline .err {
+	color: var(--twcss-red-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-red-300);
+	}
+}
+
+/* Line text */
+.chroma .cl, .code-inline .cl {
+	color: var(--black);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--white);
+	}
+} /* was missing from original */
+
+/* LineTableTD */
+.chroma .lntd, .code-inline .lntd {
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* LineTable */
+.chroma .lntable, .code-inline .lntable {
+	border-spacing: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: auto;
+	overflow: auto;
+	display: block;
+}
+
+/* LineHighlight */
+.chroma .hl, .code-inline .hl {
+	display: block;
+	width: 100%;
+	background-color: var(--twcss-yellow-200);
+	& @media (prefers-color-scheme: dark) {
+		background-color: var(--twcss-yellow-800);
+	}
+}
+
+/* LineNumbersTable */
+.chroma .lnt, .code-inline .lnt {
+	margin-right: 0.4em;
+	padding: 0 0.4em 0 0.4em;
+	color: var(--twcss-gray-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* LineNumbers */
+.chroma .ln, .code-inline .ln {
+	margin-right: 0.4em;
+	padding: 0 0.4em 0 0.4em;
+	color: var(--twcss-gray-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* Keyword */
+.chroma .k, .code-inline .k {
+	color: var(--twcss-sky-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-300);
+	}
+}
+
+/* KeywordConstant */
+.chroma .kc, .code-inline .kc {
+	color: var(--twcss-sky-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-300);
+	}
+}
+
+/* KeywordDeclaration */
+.chroma .kd, .code-inline .kd {
+	color: var(--twcss-cyan-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* KeywordNamespace */
+.chroma .kn, .code-inline .kn {
+	color: var(--twcss-cyan-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* KeywordPseudo */
+.chroma .kp, .code-inline .kp {
+	color: var(--twcss-cyan-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* KeywordReserved */
+.chroma .kr, .code-inline .kr {
+	color: var(--twcss-cyan-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* KeywordType */
+.chroma .kt, .code-inline .kt {
+	color: var(--twcss-cyan-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* Name */
+.chroma .n, .code-inline .n {
+	color: var(--twcss-orange-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-orange-300);
+	}
+}
+
+/* NameAttribute */
+.chroma .na, .code-inline .na {
+	color: var(--twcss-sky-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-200);
+	}
+}
+
+/* NameBuiltin */
+.chroma .nb, .code-inline .nb {
+	color: var(--twcss-sky-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-300);
+	}
+}
+
+/* NameBuiltinPseudo */
+.chroma .bp, .code-inline .bp {
+	color: var(--twcss-stone-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-stone-300);
+	}
+}
+
+/* NameClass */
+.chroma .nc, .code-inline .nc {
+	color: var(--twcss-fuchsia-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-fuchsia-300);
+	}
+}
+
+/* NameConstant */
+.chroma .no, .code-inline .no {
+	color: var(--twcss-cyan-600);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* NameDecorator */
+.chroma .nd, .code-inline .nd {
+	color: var(--twcss-orange-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-orange-300);
+	}
+}
+
+/* NameEntity */
+.chroma .ni, .code-inline .ni {
+	color: var(--twcss-cyan-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* NameException */
+.chroma .ne, .code-inline .ne {
+	color: var(--twcss-stone-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-stone-300);
+	}
+}
+
+/* NameFunction */
+.chroma .nf, .code-inline .nf {
+	color: var(--twcss-sky-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-200);
+	}
+}
+
+/* NameFunctionMagic */
+.chroma .fm, .code-inline .fm {
+	color: var(--twcss-stone-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-stone-300);
+	}
+}
+
+/* NameLabel */
+.chroma .nl, .code-inline .nl {
+	color: var(--twcss-stone-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-stone-300);
+	}
+}
+
+/* NameNamespace */
+.chroma .nn, .code-inline .nn {
+	color: var(--twcss-sky-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-300);
+	}
+}
+
+/* NameOther */
+.chroma .nx, .code-inline .nx {
+	color: var(--twcss-orange-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-orange-200);
+	}
+}
+
+/* NameProperty */
+.chroma .py, .code-inline .py {
+	color: var(--twcss-gray-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* NameTag */
+.chroma .nt, .code-inline .nt {
+	color: var(--twcss-cyan-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-300);
+	}
+}
+
+/* NameVariable */
+.chroma .nv, .code-inline .nv {
+	color: var(--twcss-cyan-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-200);
+	}
+}
+
+/* NameVariableClass */
+.chroma .vc, .code-inline .vc {
+	color: var(--twcss-gray-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* NameVariableGlobal */
+.chroma .vg, .code-inline .vg {
+	color: var(--twcss-gray-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* NameVariableInstance */
+.chroma .vi, .code-inline .vi {
+	color: var(--twcss-gray-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* NameVariableMagic */
+.chroma .vm, .code-inline .vm {
+	color: var(--twcss-gray-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* Literal */
+.chroma .l, .code-inline .l {
+	color: var(--twcss-gray-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-300);
+	}
+}
+
+/* LiteralDate */
+.chroma .ld, .code-inline .ld {
+	color: var(--twcss-gray-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-gray-200);
+	}
+}
+
+/* LiteralString */
+.chroma .s, .code-inline .s {
+	color: var(--twcss-orange-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-orange-400);
+	}
+}
+
+/* LiteralStringAffix */
+.chroma .sa, .code-inline .sa {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringBacktick */
+.chroma .sb, .code-inline .sb {
+	color: var(--twcss-yellow-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-100);
+	}
+}
+
+/* LiteralStringChar */
+.chroma .sc, .code-inline .sc {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringDelimiter */
+.chroma .dl, .code-inline .dl {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringDoc */
+.chroma .sd, .code-inline .sd {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringDouble */
+.chroma .s2, .code-inline .s2 {
+	color: var(--twcss-orange-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-orange-300);
+	}
+}
+
+/* LiteralStringEscape */
+.chroma .se, .code-inline .se {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringHeredoc */
+.chroma .sh, .code-inline .sh {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringInterpol */
+.chroma .si, .code-inline .si {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringOther */
+.chroma .sx, .code-inline .sx {
+	color: var(--twcss-orange-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-orange-300);
+	}
+}
+
+/* LiteralStringRegex */
+.chroma .sr, .code-inline .sr {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringSingle */
+.chroma .s1, .code-inline .s1 {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralStringSymbol */
+.chroma .ss, .code-inline .ss {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* LiteralNumber */
+.chroma .m, .code-inline .m {
+	color: var(--twcss-cyan-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-200);
+	}
+}
+
+/* LiteralNumberBin */
+.chroma .mb, .code-inline .mb {
+	color: var(--twcss-sky-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-200);
+	}
+}
+
+/* LiteralNumberFloat */
+.chroma .mf, .code-inline .mf {
+	color: var(--twcss-sky-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-300);
+	}
+}
+
+/* LiteralNumberHex */
+.chroma .mh, .code-inline .mh {
+	color: var(--twcss-cyan-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-cyan-200);
+	}
+}
+
+/* LiteralNumberInteger */
+.chroma .mi, .code-inline .mi {
+	color: var(--twcss-sky-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-300);
+	}
+}
+
+/* LiteralNumberIntegerLong */
+.chroma .il, .code-inline .il {
+	color: var(--twcss-sky-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-300);
+	}
+}
+
+/* LiteralNumberOct */
+.chroma .mo, .code-inline .mo {
+	color: var(--twcss-yellow-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* Operator */
+.chroma .o, .code-inline .o {
+	color: var(--twcss-yellow-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-yellow-200);
+	}
+}
+
+/* OperatorWord */
+.chroma .ow, .code-inline .ow {
+	color: var(--twcss-sky-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-sky-200);
+	}
+}
+
+/* Punctuation */
+.chroma .p, .code-inline .p {
+	color: var(--twcss-slate-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-slate-300);
+	}
+}
+
+/* Comment */
+.chroma .c, .code-inline .c {
+	color: var(--twcss-emerald-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-emerald-200);
+	}
+}
+
+/* CommentHashbang */
+.chroma .ch, .code-inline .ch {
+	color: var(--twcss-green-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-green-200);
+	}
+}
+
+/* CommentMultiline */
+.chroma .cm, .code-inline .cm {
+	color: var(--twcss-green-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-green-200);
+	}
+}
+
+/* CommentSingle */
+.chroma .c1, .code-inline .c1 {
+	color: var(--twcss-green-700);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-green-200);
+	}
+}
+
+/* CommentSpecial */
+.chroma .cs, .code-inline .cs {
+	color: var(--twcss-red-300);
+	background-color: var(--twcss-red-900);
+	/* @media (prefers-color-scheme: dark) {
+		color: var(--twcss-red-300);
+		background-color: var(--twcss-red-900);
+	} */
+}
+
+/* CommentPreproc */
+.chroma .cp, .code-inline .cp {
+	color: var(--twcss-stone-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-stone-300);
+	}
+}
+
+/* CommentPreprocFile */
+.chroma .cpf, .code-inline .cpf {
+	color: var(--twcss-red-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-red-300);
+	}
+}
+
+/* Generic */
+.chroma .g, .code-inline .g {
+	color: var(--twcss-stone-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-stone-300);
+	}
+}
+
+/* GenericDeleted */
+.chroma .gd, .code-inline .gd {
+	color: var(--twcss-red-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-red-300);
+	}
+}
+
+/* GenericEmph */
+.chroma .ge, .code-inline .ge {
+	font-style: italic;
+}
+
+/* GenericError */
+.chroma .gr, .code-inline .gr {
+	color: var(--twcss-red-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-red-300);
+	}
+}
+
+/* GenericHeading */
+.chroma .gh, .code-inline .gh {
+	color: var(--black);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--white);
+	}
+}
+
+/* GenericInserted */
+.chroma .gi, .code-inline .gi {
+	color: var(--twcss-green-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-green-200);
+	}
+}
+
+/* GenericOutput */
+.chroma .go, .code-inline .go {
+	color: var(--twcss-zinc-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-zinc-300);
+	}
+}
+
+/* GenericPrompt */
+.chroma .gp, .code-inline .gp {
+	color: var(--twcss-zinc-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-zinc-300);
+	}
+}
+
+/* GenericStrong */
+.chroma .gs, .code-inline .gs {
+	font-weight: bold;
+}
+
+/* GenericSubheading */
+.chroma .gu, .code-inline .gu {
+	color: var(--black);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--white);
+	}
+}
+
+/* GenericTraceback */
+.chroma .gt, .code-inline .gt {
+	color: var(--twcss-red-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-red-300);
+	}
+}
+
+/* GenericUnderline */
+.chroma .gl, .code-inline .gl {
+	text-decoration: underline;
+}
+
+/* TextWhitespace */
+.chroma .w, .code-inline .w {
+	color: var(--twcss-zinc-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-zinc-300);
+	}
+}
+
+/* ======= END, individual items from Chroma */
+
+pre,
+code {
+	font-family: var(--monospaced);
+  font-kerning: none;
+  font-variant-ligatures: none;
+  background: var(--twcss-blue-100);
+  & @media (prefers-color-scheme: dark) {
+    background: var(--twcss-slate-800);
+  }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: var(--twcss-gray-200);
+	background: none;
+	font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	tab-size: 2;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"],
+pre.chroma {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	color: var(--black);
+	background-color: var(--white);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--white);
+		background-color: var(--twcss-slate-800);
+	}
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+article code {
+	font-size: 0.975em;
+	& @media screen and (min-width: 768px) {
+		font-size: 0.95em;
+	}
+	& @media screen and (min-width: 1280px) {
+		font-size: 0.925em;
+	}
+	& @media screen and (min-width: 1536px) {
+		font-size: 0.9em;
+	}
+	background-color: var(--twcss-slate-200);
+	& @media (prefers-color-scheme: dark) {
+		background-color: var(--twcss-slate-700);
+	}
+}
+article .footnotes code {
+	font-size: 1em;
+	/* overriding the `article code` part above for footnotes */
+}
+
+article p code {
+	& @media screen and (min-width: 768px) {
+		white-space: nowrap;
+	}
+}
+
+article p code.code-inline {
+	/* font-size: var(--text-sm); */
+	padding: 0.25em 0.5em;
+	margin: 0 0.25em;
+}
+
+article .footnotes li code {
+	white-space: normal;
+}
+
+article blockquote code {
+	color: var(--twcss-slate-800);
+	& @media (prefers-color-scheme: dark) {
+		color: var(--twcss-slate-300);
+	}
+}
+
+.box code {
+	font-size: 1em; /* definitely em */
+	background-color: var(--twcss-slate-100);
+	& @media (prefers-color-scheme: dark) {
+		background-color: var(--twcss-slate-600);
+	}
+}
+
+.highlight {
+	position: relative;
+	& .chroma {
+		border-radius: 16px;
+		/* keeps code blocks from being too small
+		   due to the `article code` rule above */
+		font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
+	}
+}
+
+@media screen and  (min-width: var(--bkpt-l)g) {
+	pre.expand:hover {
+		margin-left: -20vw;
+		margin-right: -20vw;
+		max-width: 95vw;
+	}
+}
+
+/* === for copy-code-to-clipboard */
+
+/* h/t https://simplernerd.com/hugo-add-copy-to-clipboard-button/ */
+
+.clipboard-button {
+	position: absolute;
+	right: 0;
+	padding: 2px 7px 5px 7px;
+	margin: 5px;
+	color: var(--twcss-gray-500);
+	border-color: var(--twcss-gray-500);
+	background-color: var(--twcss-gray-100);
+	border: 1px solid;
+	border-radius: 6px;
+	font-size: 0.8em;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.1s;
+}
+.clipboard-button > svg {
+	fill: var(--twcss-gray-500);
+}
+.clipboard-button:hover {
+	cursor: pointer;
+	border-color: var(--twcss-green-600);
+	background-color: var(--twcss-green-100);
+}
+.clipboard-button:hover > svg {
+	fill: var(--twcss-green-600);
+}
+.clipboard-button:focus {
+	outline: 0;
+}
+
+/* .highlight {
+   position: relative;
+} */
+
+.highlight:hover > .clipboard-button {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+article ol li .highlight {
+	line-height: 1.5;
+}
