@@ -64,7 +64,9 @@ jobs:
       - name: Install packages
         run: npm install
       - name: Build site with Hugo
-        run: npm run build
+        # run: npm run build
+        run: npm run buildnew
+        # run: npm run buildsass
       - name: Move "excerpts" feed (RSS/Atom only)
         run: mv public/posts/index.xml public/index-excerpts.xml
       - name: Run Pagefind

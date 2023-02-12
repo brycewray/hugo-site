@@ -1,13 +1,11 @@
 baseURL: https://www.brycewray.com/
 languageCode: en-us
 title: BryceWray.com
-theme: sass # choices are sass and newcss - as of 2023-02-11
-# NOTE ALSO `Themes` (a Boolean) in params for conditionals...
+theme: newcss # choices are sass and newcss - as of 2023-02-11
 # https://discourse.gohugo.io/t/site-theme/33200
 timeZone: America/Chicago
 
 params:
-  # Themes: true # Boolean --- use **only** if using themes...
   # https://discourse.gohugo.io/t/site-theme/33200
   # -- for /content/posts/2022/05/webmentions-yes-javascript-no-the-code.md
   # ===========================
