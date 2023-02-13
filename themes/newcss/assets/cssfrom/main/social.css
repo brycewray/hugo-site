@@ -2,10 +2,10 @@
 
 /* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
 
---tc-corner-radius: 1em;
---tc-padding: 1em;
 
 .toot-blockquote {
+	--tc-corner-radius: 1em;
+	--tc-padding: 1em;
 	line-height: 1.35em; /* for non-`p` results from $text */
 	font-family: var(--social-sans-serif);
 	font-size: var(--text-base);
@@ -141,7 +141,7 @@ a > .card, a > .toot-card {
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
-		&-name {
+		& .toot-author-name {
 			font-weight: bold;
 			font-size: var(--text-base);
 			color: var(--black);
@@ -150,7 +150,7 @@ a > .card, a > .toot-card {
 			}
 			line-height: 1.375;
 		}
-		&-handle {
+		& .toot-author-handle {
 			color: var(--twcss-gray-700);
 			@media (prefers-color-scheme: dark) {
 				color: var(--twcss-gray-300);
@@ -262,29 +262,27 @@ a > .card, a > .toot-card {
 	background-color: black;
 }
 
-.toot-poll {
-	&-wrapper {
-		display: grid;
-		grid-template-columns: 3.5em 0.5fr 1fr;
-		grid-gap: 1em;
-		line-height: 1;
+.toot-poll-wrapper {
+	display: grid;
+	grid-template-columns: 3.5em 0.5fr 1fr;
+	grid-gap: 1em;
+	line-height: 1;
+}
+.toot-poll-count {
+	grid-column: 1;
+	text-align: right;
+}
+.toot-poll-meter {
+	grid-column: 2;
+	& meter {
+		width: 100%;
 	}
-	&-count {
-		grid-column: 1;
-		text-align: right;
-	}
-	&-meter {
-		grid-column: 2;
-		& meter {
-			width: 100%;
-		}
-	}
-	&-title {
-		grid-column: 3;
-	}
-	&-total {
-		padding-top: 1em;
-	}
+}
+.toot-poll-title {
+	grid-column: 3;
+}
+.toot-poll-total {
+	padding-top: 1em;
 }
 
 .toot-quoted-tweet {
@@ -351,32 +349,32 @@ a > .card, a > .toot-card {
 	margin-top: 1em;
 	text-decoration: none;
 	overflow: hidden;
-	&-image {
-		flex: 0 0 100px;
-		@media screen and (min-width: 768px){
-			flex: 0 0 200px;
-		}
-		position: relative;
-		&-image {
-			display: block;
-			margin: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			background-size: cover;
-			background-position: 50%;
-		}
+}
+.toot-card-image {
+	flex: 0 0 100px;
+	@media screen and (min-width: 768px){
+		flex: 0 0 200px;
 	}
-	&-content {
-		flex: 1 1 auto;
-		overflow: hidden;
-		padding: 0.75em;
-		line-height: 1.5;
-		& .card-title {
-			font-weight: bold;
-		}
-		& .card-title, & .card-description {
-			font-size: var(--text-sm);
-		}
+	position: relative;
+	& .toot-card-image-image {
+		display: block;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-size: cover;
+		background-position: 50%;
+	}
+}
+.toot-card-content {
+	flex: 1 1 auto;
+	overflow: hidden;
+	padding: 0.75em;
+	line-height: 1.5;
+	& .card-title {
+		font-weight: bold;
+	}
+	& .card-title, & .card-description {
+		font-size: var(--text-sm);
 	}
 }
