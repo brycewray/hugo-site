@@ -9,7 +9,7 @@ date: 2023-02-13T09:04:00-06:00
 
 As usual, my timing was less than stellar.
 
-No sooner had I [finished revamping this site's styling setup](/posts/2023/02/using-dart-sass-hugo-taking-it-easy/) with the [`sass` package](https://github.com/sass/sass) than I learned that truly native *CSS Nesting* --- one of the reasons I'd long favored [Sass](https://sass-lang.com) in the first place --- might be arriving sooner than I'd thought likely. In essence: "the future is now" may not be accurate where CSS Nesting is concerned; but "some of the future is now" likely either is, or will be, before too long.
+No sooner had I [finished revamping this site's styling setup](/posts/2023/02/using-dart-sass-hugo-taking-it-easy/) with the [`sass` package](https://github.com/sass/sass) than I learned that [truly native *CSS Nesting*](https://www.w3.org/TR/css-nesting-1/) --- as opposed to the non-native version which had long compelled my use of [Sass](https://sass-lang.com) in the first place --- might be arriving sooner than I'd thought likely. In essence: "the future is now" may not be accurate where CSS Nesting is concerned; but "some of the future is now" likely either is, or will be, before too long.
 
 Thus, I spent a good part of this past weekend getting comfortable with how native CSS Nesting will work. In the process, I also learned a few interesting (and occasionally annoying) facts about fully native CSS, both as it exists now and as it may soon exist.
 
