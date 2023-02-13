@@ -69,7 +69,7 @@ And right now, to coin a phrase: reality bites.
 
 ## "Let's be careful out there"
 
-(N. B.: [That subtitle harkens back to the 1980s and *Hill Street Blues*](https://www.shmoop.com/quotes/lets-be-careful-out-there.html).)
+(N. B.: [That harkens back to the 1980s and *Hill Street Blues*](https://www.shmoop.com/quotes/lets-be-careful-out-there.html).)
 
 So, until reality *ceases* to bite in at least this specific way it's biting right now&nbsp;.&nbsp;.&nbsp;.
 
