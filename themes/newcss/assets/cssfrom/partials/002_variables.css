@@ -1,6 +1,8 @@
 :root {
 	/* === COLORS === */
+	/*
 	--default-color: hsl(0, 0%, 20%);
+	*/
 	--white: hsl(0, 0%, 100%);
 	--black: hsl(0, 0%, 0%);
 	--twcss-slate-50: #f8fafc;
@@ -33,6 +35,7 @@
 	--twcss-zinc-700: #3f3f46;
 	--twcss-zinc-800: #27272a;
 	--twcss-zinc-900: #18181b;
+	/*
 	--twcss-neutral-50: #fafafa;
 	--twcss-neutral-100: #f5f5f5;
 	--twcss-neutral-200: #e5e5e5;
@@ -43,6 +46,7 @@
 	--twcss-neutral-700: #404040;
 	--twcss-neutral-800: #262626;
 	--twcss-neutral-900: #171717;
+	*/
 	--twcss-stone-50: #fafaf9;
 	--twcss-stone-100: #f5f5f4;
 	--twcss-stone-200: #e7e5e4;
@@ -93,6 +97,7 @@
 	--twcss-yellow-700: #a16207;
 	--twcss-yellow-800: #854d0e;
 	--twcss-yellow-900: #713f12;
+	/*
 	--twcss-lime-50: #f7fee7;
 	--twcss-lime-100: #ecfccb;
 	--twcss-lime-200: #d9f99d;
@@ -103,6 +108,7 @@
 	--twcss-lime-700: #4d7c0f;
 	--twcss-lime-800: #3f6212;
 	--twcss-lime-900: #365314;
+	*/
 	--twcss-green-50: #f0fdf4;
 	--twcss-green-100: #dcfce7;
 	--twcss-green-200: #bbf7d0;
@@ -121,6 +127,7 @@
 	--twcss-emerald-700: #047857;
 	--twcss-emerald-800: #065f46;
 	--twcss-emerald-900: #064e3b;
+	/*
 	--twcss-teal-50: #f0fdfa;
 	--twcss-teal-100: #ccfbf1;
 	--twcss-teal-200: #99f6e4;
@@ -131,6 +138,7 @@
 	--twcss-teal-700: #0f766e;
 	--twcss-teal-800: #115e59;
 	--twcss-teal-900: #134e4a;
+	*/
 	--twcss-cyan-50: #ecfeff;
 	--twcss-cyan-100: #cffafe;
 	--twcss-cyan-200: #a5f3fc;
@@ -161,6 +169,7 @@
 	--twcss-blue-700: #1d4fd7;
 	--twcss-blue-800: #1e3b8a;
 	--twcss-blue-900: #1f3b8a;
+	/*
 	--twcss-indigo-50: #eef2ff;
 	--twcss-indigo-100: #e0e7ff;
 	--twcss-indigo-200: #c7d2fe;
@@ -191,6 +200,7 @@
 	--twcss-purple-700: #7e22ce;
 	--twcss-purple-800: #6b21a8;
 	--twcss-purple-900: #581c87;
+	*/
 	--twcss-fuchsia-50: #fdf4ff;
 	--twcss-fuchsia-100: #fae8ff;
 	--twcss-fuchsia-200: #f5d0fe;
@@ -201,6 +211,7 @@
 	--twcss-fuchsia-700: #a21caf;
 	--twcss-fuchsia-800: #86198f;
 	--twcss-fuchsia-900: #701a75;
+	/*
 	--twcss-pink-50: #fdf2f8;
 	--twcss-pink-100: #fce7f3;
 	--twcss-pink-200: #fbcfe8;
@@ -221,6 +232,7 @@
 	--twcss-rose-700: #be123c;
 	--twcss-rose-800: #9f1239;
 	--twcss-rose-900: #881337;
+	*/
 
 	/* === TYPOGRAPHY === */
 	/* font families */
@@ -237,11 +249,13 @@
 	--text-2xl: 1.5rem;
 	--text-3xl: 1.875rem;
 	--text-4xl: 2.25rem;
+	/*
 	--text-5xl: 3rem;
 	--text-6xl: 3.75rem;
 	--text-7xl: 4.5rem;
 	--text-8xl: 6rem;
 	--text-9xl: 8rem;
+	*/
 	/* underlines for hrefs */
 	--textDcThick: 0.075rem;
 	--textUnOffst: 0.25em;
@@ -250,13 +264,16 @@
 	*/
 	/* === MISCELLANY === */
 	/* alignment */
+	/*
 	--body-align: left;
 	--nav-height: 50px;
+	/*
 	/* breakpoints (mostly based on TWCSS) */
 	/*
 		**BUT** these won't work for media queries:
 		https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
 	*/
+	/*
 	--bkpt_sm: 640px;
 	--bkpt_md: 768px;
 	--bkpt_ml: 960px;
@@ -264,6 +281,7 @@
 	--bkpt_xl: 1280px;
 	--bkpt_2xl: 1536px;
 	--bkpt_3xl: 1920px;
+	*/
 	/* button */
 	--btn_radius: 6px;
 }
