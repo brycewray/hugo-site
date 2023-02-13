@@ -94,7 +94,7 @@ img.ctrImg {
 }
 .img-phn {
 	width: 90%;
-	@media screen and (--in-width: 768px) ){
+	@media screen and (min-width: 768px){
 		width: 50%;
 	}
 }
