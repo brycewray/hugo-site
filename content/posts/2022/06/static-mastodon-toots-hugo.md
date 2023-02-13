@@ -57,18 +57,20 @@ To get a return from the API so you can look around and see how stuff works, do 
 
 As an example, here's a recent toot from Mastodon's creator, Eugen Rochko, from within the [mastodon.social](https://mastodon.social) instance:
 
-{{< stoot "mastodon.social" "108335994944738270" >}}
+{{< stoot "mastodon.social" "108241788606585248" >}}
+
+<!-- was: 108335994944738270  -->
 
 Now, since the URL for that toot was:
 
 ```plaintext
-https://mastodon.social/@Gargron/108335994944738270
+https://mastodon.social/@Gargron/108241788606585248
 ```
 
-. . . that means its ID was `108335994944738270`. So, the `curl` to `GET` that toot's JSON would be:
+. . . that means its ID was `108241788606585248`. So, the `curl` to `GET` that toot's JSON would be:
 
 ```bash
-curl "https://mastodon.social/api/v1/statuses/108335994944738270"
+curl "https://mastodon.social/api/v1/statuses/108241788606585248"
 ```
 
 **The resulting API return looks like this** (it's a toggle for viewing at your convenience, especially if you haven't time to do your own coding to work with this data):
@@ -77,21 +79,21 @@ curl "https://mastodon.social/api/v1/statuses/108335994944738270"
 
 ```json
 {
-  "id": "108335994944738270",
-  "created_at": "2022-05-20T19:48:14.740Z",
+  "id": "108241788606585248",
+  "created_at": "2022-05-04T04:30:20.096Z",
   "in_reply_to_id": null,
   "in_reply_to_account_id": null,
   "sensitive": false,
   "spoiler_text": "",
   "visibility": "public",
   "language": "en",
-  "uri": "https://mastodon.social/users/Gargron/statuses/108335994944738270",
-  "url": "https://mastodon.social/@Gargron/108335994944738270",
-  "replies_count": 25,
-  "reblogs_count": 172,
-  "favourites_count": 336,
+  "uri": "https://mastodon.social/users/Gargron/statuses/108241788606585248",
+  "url": "https://mastodon.social/@Gargron/108241788606585248",
+  "replies_count": 17,
+  "reblogs_count": 11,
+  "favourites_count": 185,
   "edited_at": null,
-  "content": "\\u003cp\\u003eLanguage selection is now available in the Mastodon web app. Make sure your posts are seen by people who understand them!\\u003c/p\\u003e\\u003cp\\u003eSupports quickly finding the right language with fuzzy search and remembers your most frequently selected languages.\\u003c/p\\u003e\\u003cp\\u003e\\u003ca href=\"https://mastodon.social/tags/mastodev\" class=\"mention hashtag\" rel=\"tag\"\\u003e#\\u003cspan\\u003emastodev\\u003c/span\\u003e\\u003c/a\\u003e\\u003c/p\\u003e",
+  "content": "\\u003cp\\u003eI was asked to do a video interview, but in the end they couldn\\u0026#39;t send a crew to where I live. I know the interview would be good for Mastodon, but I am so relieved I don\\u0026#39;t have to do it 😅\\u003c/p\\u003e",
   "reblog": null,
   "application": {
     "name": "Web",
@@ -113,59 +115,29 @@ curl "https://mastodon.social/api/v1/statuses/108335994944738270"
     "avatar_static": "https://files.mastodon.social/accounts/avatars/000/000/001/original/dc4286ceb8fab734.jpg",
     "header": "https://files.mastodon.social/accounts/headers/000/000/001/original/3b91c9965d00888b.jpeg",
     "header_static": "https://files.mastodon.social/accounts/headers/000/000/001/original/3b91c9965d00888b.jpeg",
-    "followers_count": 287498,
-    "following_count": 339,
-    "statuses_count": 73000,
-    "last_status_at": "2023-01-07",
+    "followers_count": 295418,
+    "following_count": 369,
+    "statuses_count": 73218,
+    "last_status_at": "2023-02-13",
     "noindex": false,
     "emojis": [],
+    "roles": [],
     "fields": [
       {
         "name": "Patreon",
         "value": "\\u003ca href=\"https://www.patreon.com/mastodon\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://www.\\u003c/span\\u003e\\u003cspan class=\"\"\\u003epatreon.com/mastodon\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e",
         "verified_at": null
+      },
+      {
+        "name": "GitHub",
+        "value": "\\u003ca href=\"https://github.com/Gargron\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\"\\u003e\\u003cspan class=\"invisible\"\\u003ehttps://\\u003c/span\\u003e\\u003cspan class=\"\"\\u003egithub.com/Gargron\\u003c/span\\u003e\\u003cspan class=\"invisible\"\\u003e\\u003c/span\\u003e\\u003c/a\\u003e",
+        "verified_at": "2023-02-07T23:24:40.347+00:00"
       }
     ]
   },
-  "media_attachments": [
-    {
-      "id": "108335981178194136",
-      "type": "gifv",
-      "url": "https://files.mastodon.social/media_attachments/files/108/335/981/178/194/136/original/4a058545df6471f1.mp4",
-      "preview_url": "https://files.mastodon.social/media_attachments/files/108/335/981/178/194/136/small/4a058545df6471f1.png",
-      "remote_url": null,
-      "preview_remote_url": null,
-      "text_url": null,
-      "meta": {
-        "original": {
-          "width": 614,
-          "height": 554,
-          "frame_rate": "593000/21349",
-          "duration": 21.349,
-          "bitrate": 269730
-        },
-        "small": {
-          "width": 400,
-          "height": 361,
-          "size": "400x361",
-          "aspect": 1.10803324099723
-        },
-        "focus": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "description": "A video demo of the language selection dropdown in the Mastodon web app",
-      "blurhash": "UPF6RrM_4oIU~qt79FM|RjkCozjF4nR*?bt6"
-    }
-  ],
+  "media_attachments": [],
   "mentions": [],
-  "tags": [
-    {
-      "name": "mastodev",
-      "url": "https://mastodon.social/tags/mastodev"
-    }
-  ],
+  "tags": [],
   "emojis": [],
   "card": null,
   "poll": null
