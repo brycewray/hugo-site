@@ -7,13 +7,13 @@
 		color: var(--white);
 	}
 	&:hover{
-		color: var(--twcss--blue-800);
+		color: var(--twcss-blue-800);
 		text-decoration: underline;
 		text-decoration-thickness: var(--textDcThick); /* always rem */
 		text-underline-offset: var(--textUnOffst); /* always em */
 		text-decoration-skip-ink: auto;
 		@media (prefers-color-scheme: dark) {
-			color: var(--twcss--blue-300);
+			color: var(--twcss-blue-300);
 		}
 		&::after {
 			font-size: var(--text-base);
