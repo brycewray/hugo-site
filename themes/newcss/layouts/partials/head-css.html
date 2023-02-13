@@ -53,9 +53,10 @@
 			{{- $condition = index . 0 -}}
 			{{- $fileName = index . 1 -}}
 			{{- if eq $condition true -}}
-				{{- $css = resources.Get (print "css/" $fileName ".css") -}}
+				{{- $css = resources.Get (print "css/" $fileName ".css") | fingerprint "md5" -}}
+				{{- /* fingerprint even in dev mode because Safari caching gets weird */ -}}
 				{{- if hugo.IsProduction -}}
-					{{- $css = $css | minify | fingerprint "md5" -}}
+					{{- $css = $css | minify -}}
 				{{- end }}
 				<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
