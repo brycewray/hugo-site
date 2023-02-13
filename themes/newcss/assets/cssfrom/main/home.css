@@ -21,20 +21,23 @@
 .homeOpen {
 	text-align: center;
 	& h1 {
-		line-height: 1.75em;
+		line-height: 1.5em;
 		font-size: clamp(1.5rem, 0.5rem + 1.5vw, 2.25rem);
 		letter-spacing: -0.025em;
-		padding-top: 2vh;
+		padding-top: 5vh;
 	}
 	@media screen and (min-width: 768px) {
-		padding-top: 3vh;
+		& h1 {
+			padding-top: 4vh;
+		}
 	}
 	@media screen and (min-width: 1024px) {
 		text-align: right;
 		padding: 0 3em 0 0;
 		width: 40%;
 		& h1 {
-			padding: 3.5em 0 0 2em;
+			line-height: 1.75em;
+			padding: 3em 0 0 2em;
 		}
 	}
 	@media screen and (min-width: 1536px) {
