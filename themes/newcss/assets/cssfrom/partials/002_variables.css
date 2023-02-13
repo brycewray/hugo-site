@@ -141,16 +141,16 @@
 	--twcss-cyan-700: #0e7490;
 	--twcss-cyan-800: #155e75;
 	--twcss-cyan-900: #164e63;
-	--twcss-50: #f0f9ff;
-	--twcss-100: #e0f2fe;
-	--twcss-200: #bae6fd;
-	--twcss-300: #7dd3fc;
-	--twcss-400: #38bdf8;
-	--twcss-500: #0ea5e9;
-	--twcss-600: #0284c7;
-	--twcss-700: #0369a0;
-	--twcss-800: #075783;
-	--twcss-900: #0c4a6e;
+	--twcss-sky-50: #f0f9ff;
+	--twcss-sky-100: #e0f2fe;
+	--twcss-sky-200: #bae6fd;
+	--twcss-sky-300: #7dd3fc;
+	--twcss-sky-400: #38bdf8;
+	--twcss-sky-500: #0ea5e9;
+	--twcss-sky-600: #0284c7;
+	--twcss-sky-700: #0369a0;
+	--twcss-sky-800: #075783;
+	--twcss-sky-900: #0c4a6e;
 	--twcss-blue-50: #f0f6ff;
 	--twcss-blue-100: #dcebfe;
 	--twcss-blue-200: #bedbfe;
@@ -221,6 +221,7 @@
 	--twcss-rose-700: #be123c;
 	--twcss-rose-800: #9f1239;
 	--twcss-rose-900: #881337;
+
 	/* === TYPOGRAPHY === */
 	/* font families */
 	--sans-serif: ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
