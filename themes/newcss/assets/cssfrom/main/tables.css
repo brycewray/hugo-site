@@ -51,7 +51,7 @@ table.noborders {
 		& img {
 			display: block;
 			max-width: 60%;
-			@media screen and (min-width: var.$bkpt_md) {
+			@media screen and (min-width: 768px) {
 				max-width: 40%;
 			}
 			height: auto;

@@ -783,7 +783,7 @@ article blockquote code {
 	}
 }
 
-@media screen and  (min-width: var(--bkpt-l)g) {
+@media screen and  (min-width: 1024px) {
 	pre.expand:hover {
 		margin-left: -20vw;
 		margin-right: -20vw;
