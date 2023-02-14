@@ -204,6 +204,9 @@ Why `cssfrom` as that subfolder name in `themes/newcss/assets/`, by the way? Bec
 {{- end -}}
 ```
 
+**Note**: If those lines from `package.json` have you wondering why I did it this way rather than relying solely on Hugo Pipes' [built-in PostCSS capabilities](https://gohugo.io/hugo-pipes/postcss/), it's because this approach works ten to fifteen times faster in dev mode *and* seems to be a lot easier on my old box's CPU.
+{.box}
+
 ## Sharing arrangement
 
 So, now, I have two themes for the site: (1.) one with Sass, and (2.) one with CSS variables *and* PostCSS-enabled CSS Nesting. One nice thing about this setup is that, unlike the times when I've had a Sass theme and a [Tailwind CSS](https://tailwindcss.com) theme, I don't need two completely different sets of layouts and Hugo partials to work with each theme. Rather, the two themes can share the same layouts and nearly[^twoPartials] all the same partials, because these template files' final CSS classes and rules are the same. Indeed, the only drawback to the setup is that the `scripts` part of `package.json` has grown quite a bit, since I have to provide for both Sass and PostCSS.
