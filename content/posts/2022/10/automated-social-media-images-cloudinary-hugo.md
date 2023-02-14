@@ -119,6 +119,10 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{{/*
+			Use that "X-UA-Compatible" line
+			**only** if you still support IE 11.
+		*/}}
 		{{ $twitterHandle := "@YourTwitterHandle" }}
 		{{/* Provide that, of course. */}}
 		<meta name="twitter:site" content="{{ $twitterHandle }}">
