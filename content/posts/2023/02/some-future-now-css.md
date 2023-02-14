@@ -80,7 +80,9 @@ h1 {
 . . . but you can't do this with CSS variables:
 
 ```css
---breakpoint-large: 1024px;
+:root {
+	--breakpoint-large: 1024px;
+}
 
 /* This media query **won't** work: */
 h1 {
