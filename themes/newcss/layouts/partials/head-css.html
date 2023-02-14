@@ -53,6 +53,7 @@
 			{{- $condition = index . 0 -}}
 			{{- $fileName = index . 1 -}}
 			{{- if eq $condition true -}}
+				{{/* Go get and fingerprint what `postcss-cli` has built */}}
 				{{- $css = resources.Get (print "css/" $fileName ".css") | fingerprint "md5" -}}
 				{{- /* fingerprint even in dev mode because Safari caching gets weird */ -}}
 				{{- if hugo.IsProduction -}}

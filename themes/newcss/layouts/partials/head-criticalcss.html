@@ -1,5 +1,6 @@
-	{{- $css := "" -}}
-	{{- $css = (resources.Match "css/0*.css") | resources.Concat "critical.css" -}}
-	{{- with $css }}
-		<style>{{ .Content | safeCSS }}</style>
-	{{- end }}
+		{{- $css := "" -}}
+		{{/* Go get and concatenate what `postcss-cli` has built from the partials */}}
+		{{- $css = (resources.Match "css/0*.css") | resources.Concat "critical.css" -}}
+		{{- with $css }}
+			<style>{{ .Content | safeCSS }}</style>
+		{{- end }}
