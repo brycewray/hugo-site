@@ -215,5 +215,5 @@ So, now, I have two themes for the site: (1.) one with Sass, and (2.) one with
 
 Of course, I assume the CSS Nesting specification --- whatever its sort-of-final form will take --- will get largely universal browser support someday, at which point things could get a lot simpler. Until then, though, this setup will suffice.
 
-**Update**: After [receiving some additional information from Jen Simmons via Mastodon](https://front-end.social/@jensimmons/109860757024965588), I updated/corrected links and examples in this posts. Thanks, Jen!
+**Update**: After [receiving some additional information from Jen Simmons via Mastodon](https://front-end.social/@jensimmons/109860757024965588), I revised/corrected links and examples in this posts. Thanks, Jen!
 {.box}
