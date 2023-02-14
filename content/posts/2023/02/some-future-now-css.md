@@ -9,7 +9,7 @@ date: 2023-02-13T09:04:00-06:00
 
 As usual, my timing was less than stellar.
 
-No sooner had I [finished revamping this site's styling setup](/posts/2023/02/using-dart-sass-hugo-taking-it-easy/) with the [`sass` package](https://github.com/sass/sass) than I learned that [truly native *CSS Nesting*](https://www.w3.org/TR/css-nesting-1/) --- as opposed to the non-native version which had long compelled my use of [Sass](https://sass-lang.com) in the first place --- might be arriving sooner than I'd thought likely. In essence: "the future is now" may not be accurate where CSS Nesting is concerned; but "some of the future is now" likely either is, or will be, before too long.
+No sooner had I [finished revamping this site's styling setup](/posts/2023/02/using-dart-sass-hugo-taking-it-easy/) with the [`sass` package](https://github.com/sass/sass) than I learned that [truly native *CSS Nesting*](https://drafts.csswg.org/css-nesting/) --- as opposed to the non-native version which had long compelled my use of [Sass](https://sass-lang.com) in the first place --- might be arriving sooner than I'd thought likely. In essence: "the future is now" may not be accurate where CSS Nesting is concerned; but "some of the future is now" likely either is, or will be, before too long.
 
 Thus, I spent a good part of this past weekend getting comfortable with how native CSS Nesting will work. In the process, I also learned a few interesting (and occasionally annoying) facts about fully native CSS, both as it exists now and as it may soon exist.
 
@@ -103,12 +103,12 @@ h1 {
 }
 ```
 
-Another thing that brought me up short was the fact that the CSS Nesting spec [doesn't allow concatenating selectors](https://www.w3.org/TR/css-nesting-1/#direct), although Sass and some other nesting-savvy add-ons do. Here's a Sass example of what I mean:
+Another thing that brought me up short was the fact that the CSS Nesting spec [doesn't allow concatenating selectors](https://drafts.csswg.org/css-nesting/#syntax), although Sass and some other nesting-savvy add-ons do. Here's a Sass example of what I mean:
 
 ```scss
 .homepage {
 	font-family: sans-serif;
-	&-leftside {
+	&Leftside {
 		text-align: right;
 		font-size: 2rem;
 	}
@@ -122,7 +122,7 @@ Another thing that brought me up short was the fact that the CSS Nesting spec [d
 .homepage {
 	font-family: sans-serif;
 }
-.homepage-leftside {
+.homepageLeftside {
 	text-align: right;
 	font-size: 2rem;
 }
@@ -139,7 +139,7 @@ But if you try this with the CSS Nesting spec, you get:
 .homepage: {
 	font-family: sans-serif;
 }
--leftside.homepage {
+Leftside.homepage {
 	text-align: right;
 	font-size: 2rem;
 }
@@ -214,3 +214,5 @@ So, now, I have two themes for the site: (1.) one with Sass, and (2.) one with
 [^twoPartials]: Actually, there are three Hugo partials unique to each theme. Two, excerpted above, are for the slightly different code that pulls in the styling; and one is for the footer so I can specify, on the ["About" page](/about/), whether the site is using Sass or PostCSS.
 
 Of course, I assume the CSS Nesting specification --- whatever its sort-of-final form will take --- will get largely universal browser support someday, at which point things could get a lot simpler. Until then, though, this setup will suffice.
+
+**Update**: After [receiving some additional information from Jen Simmons via Mastodon](https://front-end.social/@jensimmons/109860757024965588), I updated/corrected links and examples in this posts. Thanks, Jen!
