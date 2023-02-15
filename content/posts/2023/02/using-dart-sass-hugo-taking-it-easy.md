@@ -1,6 +1,6 @@
 ---
 title: "Using Dart Sass with Hugo: taking it easy"
-description: "Thanks to the speed and power of Hugo Pipes, I lose little or nothing in opting for the Node.js version of Sass."
+description: "Thanks to the speed and power of Hugo, I lose little or nothing in opting for the Node.js version of Sass."
 author: Bryce Wray
 date: 2023-02-10T08:51:00-06:00
 # draft: true
