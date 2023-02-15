@@ -199,7 +199,7 @@ Why `cssfrom` as that subfolder name in `themes/newcss/assets/`, by the way? Bec
 		{{- $css = resources.Get (print "css/" $fileName ".css") -}}
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | minify | fingerprint "md5" -}}
-		{{- end }}
+		{{- end -}}
 		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{- end -}}

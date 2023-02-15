@@ -63,7 +63,7 @@ sass --no-source-map assets/scss:assets/css
 		{{- $css = resources.Get (print "css/" $fileName ".css") -}}
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | fingerprint "md5" -}}
-		{{- end }}
+		{{- end -}}
 		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{- end -}}
