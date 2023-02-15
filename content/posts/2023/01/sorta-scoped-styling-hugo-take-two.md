@@ -158,6 +158,7 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 {{- $cssTypes := slice -}}{{/* init big slice */}}
 {{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionArtCode "artcode") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionBillboard "billboard") $cssTypes -}}
