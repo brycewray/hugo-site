@@ -202,8 +202,8 @@ Why `cssfrom` as that subfolder name in `themes/newcss/assets/`, by the way? Bec
 		{{- end }}
 		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-	{{ end -}}
-{{- end -}}
+	{{- end -}}
+{{- end }}
 ```
 
 **Note**: If those lines from `package.json` have you wondering why I did it this way rather than relying solely on Hugo Pipes' [built-in PostCSS capabilities](https://gohugo.io/hugo-pipes/postcss/), it's because this approach works ten to fifteen times faster in dev mode *and* seems to be a lot easier on my old box's CPU.

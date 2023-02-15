@@ -66,8 +66,8 @@ sass --no-source-map assets/scss:assets/css
 		{{- end }}
 		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
-	{{ end -}}
-{{- end -}}
+	{{- end -}}
+{{- end }}
 ```
 
 (For more on these partials, see "[Sorta scoped styling in Hugo, take two](/posts/2023/01/sorta-scoped-styling-hugo-take-two/).")
