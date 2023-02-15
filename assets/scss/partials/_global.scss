@@ -180,6 +180,12 @@ footer {
 	padding-bottom: 0.5rem;
 	p {
 		line-height: 1.5em; // definitely em, not rem, here
+		code {
+			background-color: map-get(var.$twcss, slate-200);
+			@media (prefers-color-scheme: dark) {
+				background-color: map-get(var.$twcss, slate-700);
+			}
+		}
 	}
 	div.footerWrapper {
 		margin: 0 auto;
