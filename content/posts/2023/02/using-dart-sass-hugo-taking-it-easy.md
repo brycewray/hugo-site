@@ -23,7 +23,7 @@ I used the scripting method for two months, then the GitHub Actions method for n
 
 Lo and behold, it wasn't.
 
-Now, yes, it's still a *little* slower at dev start-up than with Embedded Dart Sass, but truthfully not that much (two or three additional seconds, *maybe*) --- **and** the automatic updating of my site whenever I make a change to any of my SCSS files seems just as snappy. For that, I tip my metaphorical hat to Hugo Pipes for what seems to be the umpteenth time.
+Now, yes, it's still a *little* slower at dev start-up than with Embedded Dart Sass, but truthfully not that much (two or three additional seconds, *maybe*) --- **and** the automatic updating of my site whenever I make a change to any of my SCSS files seems just as snappy. For that, I tip my metaphorical hat to Hugo for what seems to be the umpteenth time.
 
 Of course, in production, there's zero difference in the final styling files that go on the site, so my visitors suffer not a bit for the change. Better still, I no longer have to bother with getting that Embedded Dart Sass binary in the right place on the build system, whether for the CI/CD host or the actual site host. That enables deploying a Hugo-with-`sass` site through the **native UIs** of most [Jamstack](https://jamstack.org)-savvy hosts, especially the three I usually recommend[^envVar]: [Cloudflare Pages](https://pages.cloudflare.com), [Netlify](https://netlify.com), and [Vercel](https://vercel.com).
 
