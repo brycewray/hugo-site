@@ -4,13 +4,29 @@
 }
 */
 
+:root {
+	/* --twcss-slate-100: #f1f5f9; */
+	/* --twcss-slate-600: #48566a; */
+	--twcss-slate-700: #344256;
+	--twcss-slate-800: #1d283a;
+	--twcss-gray-200: #e5e7eb;
+	--twcss-red-300: #fca6a6;
+	--twcss-red-600: #dc2626;
+	--twcss-red-400: #f87171;
+	--twcss-red-700: #ba1c1c;
+	--twcss-blue-200: #bedbfe;
+	/* --twcss-blue-300: #91c3fd; */
+	/* --twcss-blue-700: #1d4fd7; */
+	--twcss-blue-800: #1e3b8a;
+}
+
 .ctr {
 	text-align: center;
 }
 .red {
-	color: #ba1c1c; /* red-700 */
+	color: var(--twcss-red-700); /* red-700 */
 	@media (prefers-color-scheme: dark) {
-		color: #fca6a6; /* red-300 */
+		color: var(--twcss-red-300); /* red-300 */
 	}
 }
 
@@ -50,8 +66,8 @@
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: #1d283a; /* slate-800 */
-		border: 1px solid #e5e7eb; /* gray-200 */
+		background-color: var(--twcss-slate-800); /* slate-800 */
+		border: 1px solid var(--twcss-gray-200); /* gray-200 */
 	}
 	& p {
 		padding: 0;
@@ -61,20 +77,20 @@
 		margin-top: 1.75em;
 	}
 	& code {
-		background-color: #f1f5f9; /* slate-100 */
+		background-color: var(--twcss-slate-100); /* slate-100 */
 		@media (prefers-color-scheme: dark) {
-			background-color: #48566a; /* slate-600 */
+			background-color: var(--twcss-slate-600); /* slate-600 */
 		}
 	}
 	& a code {
 		@media (prefers-color-scheme: dark) {
-			background-color: #344256; /* slate-700 */
+			background-color: var(--twcss-slate-700); /* slate-700 */
 		}
 	}
 	& .red {
-		color: #dc2626; /* red-600 */
+		color: var(--twcss-red-600); /* red-600 */
 		@media (prefers-color-scheme: dark) {
-			color: #f87171; /* red-400 */
+			color: var(--twcss-red-400); /* red-400 */
 		}
 	}
 }
@@ -249,7 +265,7 @@ circle.Twitter,
 circle.JSON {
 	fill: black;
 	@media (prefers-color-scheme: dark) {
-		fill: #91c3fd; /* blue-300 */
+		fill: var(--twcss-blue-300); /* blue-300 */
 	}
 }
 
@@ -259,9 +275,9 @@ path.MastodonM,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: #1d4fd7; /* blue-700 */
+	fill: var(--twcss-blue-700); /* blue-700 */
 	@media (prefers-color-scheme: dark) {
-		fill: #91c3fd; /* blue-300 */
+		fill: var(--twcss-blue-300); /* blue-300 */
 	}
 }
 
@@ -271,9 +287,9 @@ a:hover path.MastodonM,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: #1e3b8a; /* blue-800 */
+	fill: var(--twcss-blue-800); /* blue-800 */
 	@media (prefers-color-scheme: dark) {
-		fill: #bedbfe; /* blue-200 */
+		fill: var(--twcss-blue-200); /* blue-200 */
 	}
 }
 

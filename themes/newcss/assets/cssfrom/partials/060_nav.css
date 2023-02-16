@@ -1,7 +1,15 @@
+:root {
+	--twcss-slate-50: #f8fafc;
+	--twcss-slate-200: #e1e7ef;
+	/* --twcss-slate-300: #cbd5e1; */
+	/* --twcss-slate-600: #48566a; */
+	/* --twcss-slate-800: #1d283a; */
+}
+
 header, .nav, .nav-Menu {
-	background-color: #cbd5e1; /* slate-300 */
+	background-color: var(--twcss-slate-300); /* slate-300 */
 	@media (prefers-color-scheme: dark) {
-		background-color: #1d283a; /* slate-800 */
+		background-color: var(--twcss-slate-800); /* slate-800 */
 	}
 }
 
@@ -21,9 +29,9 @@ header {
 	right: 0;
 	& svg {
 		width: 1.5rem;
-		fill: #1d283a; /* slate-800 */
+		fill: var(--twcss-slate-800); /* slate-800 */
 		@media (prefers-color-scheme: dark) {
-			fill: #f8fafc; /* slate-50 */
+			fill: var(--twcss-slate-50); /* slate-50 */
 		}
 	}
 	& .close {
@@ -69,12 +77,12 @@ header {
 		border: 0;
 		color: black;
 		&:focus, &:active, &:hover {
-			color: #48566a; /* slate-600 */
+			color: var(--twcss-slate-600); /* slate-600 */
 		}
 		@media (prefers-color-scheme: dark) {
 			color: white;
 			&:focus, &:active, &:hover {
-				color: #e1e7ef; /* slate-200 */
+				color: var(--twcss-slate-200); /* slate-200 */
 			}
 		}
 	}
@@ -82,8 +90,10 @@ header {
 		width: 1.5rem;
 		fill: white;
 	}
+	// (old SCSS comments follow)
 	// possibly unused...
-	// see `.nav > svg` above */
+	// see `.nav > svg` above
+	*/
 }
 
 

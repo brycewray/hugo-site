@@ -1,5 +1,12 @@
 @charset 'utf-8';
 
+:root {
+	--twcss-blue-50: #f0f6ff;
+	/* --twcss-blue-300: #91c3fd; */
+	/* --twcss-blue-700: #1d4fd7; */
+	--twcss-blue-800: #1e3b8a;
+}
+
 .searchBtnDiv {
 	/* font-family: var(--sans-serif); */
 	margin: 2em auto;
@@ -10,23 +17,23 @@
 		color: white;
 		width: 15em;
 		padding: 0.5em 0.25em;
-		background-color: #1d4fd7; /* blue-700 */
-		border: 1px solid #1d4fd7; /* blue-700 */
+		background-color: var(--twcss-blue-700); /* blue-700 */
+		border: 1px solid var(--twcss-blue-700); /* blue-700 */
 		border-radius: var(--btn_radius);
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid #91c3fd; /* blue-300 */
-			background-color: #91c3fd; /* blue-300 */
+			border: 1px solid var(--twcss-blue-300); /* blue-300 */
+			background-color: var(--twcss-blue-300); /* blue-300 */
 			color: black;
 		}
 		&:hover {
 			cursor: pointer;
 		}
 		&:focus, &:active, &:hover {
-			border: 1px solid #1e3b8a; /* blue-800 */
-			background-color: #1e3b8a; /* blue-800 */
+			border: 1px solid var(--twcss-blue-800); /* blue-800 */
+			background-color: var(--twcss-blue-800); /* blue-800 */
 			@media (prefers-color-scheme: dark) {
-				border: 1px solid #f0f6ff; /* blue-50 */
-				background-color: #f0f6ff; /* blue-50 */
+				border: 1px solid var(--twcss-blue-50); /* blue-50 */
+				background-color: var(--twcss-blue-50); /* blue-50 */
 			}
 		}
 	}

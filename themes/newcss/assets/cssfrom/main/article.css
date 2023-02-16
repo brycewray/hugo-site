@@ -1,5 +1,10 @@
 @charset 'utf-8';
 
+:root {
+	/* --twcss-blue-300: #91c3fd; */
+	--twcss-blue-800: #1e3b8a;
+}
+
 .header-anchor {
 	text-decoration: none;
 	color: black;

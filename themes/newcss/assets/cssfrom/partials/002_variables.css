@@ -2,10 +2,8 @@
 	/* === COLORS === */
 	/*
 	--default-color: hsl(0, 0%, 20%);
-	*/
 	--white: hsl(0, 0%, 100%);
 	--black: hsl(0, 0%, 0%);
-	/*
 	--twcss-slate-50: #f8fafc;
 	--twcss-slate-100: #f1f5f9;
 	--twcss-slate-200: #e1e7ef;
@@ -229,7 +227,7 @@
 	/* === TYPOGRAPHY === */
 	/* font families */
 	--sans-serif: ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	--serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
 	/* text sizes */

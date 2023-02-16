@@ -2,6 +2,16 @@
 
 /* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
 
+:root {
+	--twcss-gray-200: #e5e7eb;
+	/* --twcss-gray-300: #d1d5db; */
+	/* --twcss-gray-700: #384252; */
+	--twcss-gray-800: #1f2937;
+	/* --twcss-gray-900: #111827; */
+	/* --twcss-blue-300: #91c3fd; */
+	/* --twcss-blue-700: #1d4fd7; */
+	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 .toot-blockquote {
 	--tc-corner-radius: 1em;
@@ -19,7 +29,7 @@
 	}
 	margin: 1.5rem auto;
 	padding: 1rem;
-	border: 2px solid #384252; /* gray-700 */
+	border: 2px solid var(--twcss-gray-700); /* gray-700 */
 	border-radius: 12px;
 	background: white;
 	width: 100%;
@@ -36,7 +46,7 @@
 		max-width: 80ch;
 	}
 	@media (prefers-color-scheme: dark) {
-		background: #111827; /* gray-900 */
+		background: var(--twcss-gray-900); /* gray-900 */
 		/* background: transparent; */
 	}
 	& a, & a:hover {
@@ -52,11 +62,11 @@
 		- https://css-tricks.com/better-line-breaks-for-long-urls/
 		*/
 		@media (prefers-color-scheme: dark) {
-			color: #91c3fd; /* blue-300 */
+			color: var(--twcss-blue-300); /* blue-300 */
 		}
 	}
 	@media (prefers-color-scheme: dark) {
-		border: 2px solid #e5e7eb; /* gray-200 */
+		border: 2px solid var(--twcss-gray-200); /* gray-200 */
 		color: white;
 	}
 }
@@ -81,9 +91,9 @@
 }
 
 .toot-blockquote-img {
-	border-bottom: 1px solid #384252; /* gray-700 */
+	border-bottom: 1px solid var(--twcss-gray-700); /* gray-700 */
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid #d1d5db; /* gray-300 */
+		border: 1px solid var(--twcss-gray-300); /* gray-300 */
 	}
 	width: 100%;
 }
@@ -95,9 +105,9 @@
 /* ==== END, rounded image "attachment" */
 
 a > .card, a > .toot-card {
-	color: #1f2937; /* gray-800 */
+	color: var(--twcss-gray-800); /* gray-800 */
 	@media (prefers-color-scheme: dark) {
-		color: #d1d5db; /* gray-300 */
+		color: var(--twcss-gray-300); /* gray-300 */
 	}
 }
 
@@ -106,9 +116,9 @@ a > .card, a > .toot-card {
 	/* background-color: yellow; */
 	margin-top: 1em;
 	border-radius: 12px;
-	border: 1px solid #384252; /* gray-700 */
+	border: 1px solid var(--twcss-gray-700); /* gray-700 */
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid #d1d5db; /* gray-300 */
+		border: 1px solid var(--twcss-gray-300); /* gray-300 */
 	}
 	& p {
 		padding: 0.5em 1em 1em;
@@ -151,9 +161,9 @@ a > .card, a > .toot-card {
 			line-height: 1.375;
 		}
 		& .toot-author-handle {
-			color: #384252; /* gray-700 */
+			color: var(--twcss-gray-700); /* gray-700 */
 			@media (prefers-color-scheme: dark) {
-				color: #d1d5db; /* gray-300 */
+				color: var(--twcss-gray-300); /* gray-300 */
 			}
 			font-size: var(--text-sm);
 			line-height: 1;
@@ -168,18 +178,18 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: #1f2937; /* gray-800 */
+	color: var(--twcss-gray-800); /* gray-800 */
 	font-size: var(--text-sm);
 	@media (prefers-color-scheme: dark) {
-		color: #e5e7eb; /* gray-200 */
+		color: var(--twcss-gray-200); /* gray-200 */
 	}
 	& .toot-like-icon, & .toot-like-count {
 		display: none;
 	}
 	& a {
-		color: #1f2937; /* gray-800 */
+		color: var(--twcss-gray-800); /* gray-800 */
 		@media (prefers-color-scheme: dark) {
-			color: #e5e7eb; /* gray-200 */
+			color: var(--twcss-gray-200); /* gray-200 */
 		}
 	}
 	/* === needed in Eleventy but not in Hugo
@@ -286,9 +296,9 @@ a > .card, a > .toot-card {
 }
 
 .toot-quoted-tweet {
-	border: 1px solid #1f2937; /* gray-800 */
+	border: 1px solid var(--twcss-gray-800); /* gray-800 */
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid #e5e7eb; /* gray-200 */
+		border: 1px solid var(--twcss-gray-200); /* gray-200 */
 	}
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
@@ -308,14 +318,14 @@ a > .card, a > .toot-card {
 	& p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
 		& a {
-			color: #1f2937; /* gray-800 */
+			color: var(--twcss-gray-800); /* gray-800 */
 			@media (prefers-color-scheme: dark) {
-				color: #e5e7eb; /* gray-200 */
+				color: var(--twcss-gray-200); /* gray-200 */
 			}
 			&:hover {
-				color: #1d4fd7; /* blue-700 */
+				color: var(--twcss-blue-700); /* blue-700 */
 				@media (prefers-color-scheme: dark) {
-					color: #91c3fd; /* blue-300 */
+					color: var(--twcss-blue-300); /* blue-300 */
 				}
 			}
 		}
@@ -326,10 +336,10 @@ a > .card, a > .toot-card {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: #1f2937; /* gray-800 */
+	color: var(--twcss-gray-800); /* gray-800 */
 	font-size: var(--text-sm);
 	@media (prefers-color-scheme: dark) {
-		color: #e5e7eb; /* gray-200 */
+		color: var(--twcss-gray-200); /* gray-200 */
 	}
 	& .toot-like-icon, & .toot-like-count {
 		display: none;
@@ -341,9 +351,9 @@ a > .card, a > .toot-card {
 	@media screen and (min-width: 768px){
 		display: flex;
 	}
-	border: 1px solid #384252; /* gray-700 */
+	border: 1px solid var(--twcss-gray-700); /* gray-700 */
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid #e5e7eb; /* gray-200 */
+		border: 1px solid var(--twcss-gray-200); /* gray-200 */
 	}
 	border-radius: 6px;
 	margin-top: 1em;

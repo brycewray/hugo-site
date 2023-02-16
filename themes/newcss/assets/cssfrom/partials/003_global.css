@@ -1,3 +1,19 @@
+:root {
+	--twcss-slate-100: #f1f5f9;
+	--twcss-slate-300: #cbd5e1;
+	--twcss-slate-400: #94a3b8;
+	--twcss-slate-500: #65758b;
+	--twcss-slate-600: #48566a;
+	--twcss-slate-800: #1d283a;
+	--twcss-gray-100: #f3f4f6;
+	--twcss-gray-300: #d1d5db;
+	--twcss-gray-700: #384252;
+	--twcss-gray-900: #111827;
+	--twcss-blue-300: #91c3fd;
+	--twcss-blue-700: #1d4fd7;
+	--twcss-blue-900: #1f3b8a;
+}
+
 html, body {
 	width: 100%;
 	margin: 0 auto;
@@ -8,18 +24,22 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var(--sans-serif);
-	background-color: #f1f5f9; /* slate-100 */
-	color: #111827; /* gray-900 */
+	background-color: var(--twcss-slate-100); /* slate-100 */
+	color: var(--twcss-gray-900); /* gray-900 */
 	@media (prefers-color-scheme: dark) {
 		background: black;
-		color: #f3f4f6; /* gray-100 */
+		color: var(--twcss-gray-100); /* gray-100 */
 	}
 	background-image: linear-gradient(
-		#48566a, #cbd5e1 6em, transparent 10em
+		var(--twcss-slate-600),
+		var(--twcss-slate-300) 6em,
+		transparent 10em
 	); /* slate-600 -> slate-300 -> transparent */
 	@media (prefers-color-scheme: dark) {
 		background-image: linear-gradient(
-			#65758b, #1d283a 6em, transparent 10em
+			var(--twcss-slate-500),
+			var(--twcss-slate-800) 6em,
+			transparent 10em
 		); /* slate-500 -> slate-800 -> transparent */
 	}
 }
@@ -58,7 +78,7 @@ h3, .h3 {
 
 h1, .h1 {
 	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
-	/* usually overridden by other styling (e.g., billboard.scss) */
+	/* usually overridden by other styling (e.g., billboard partial) */
 }
 
 h2, .h2 {
@@ -80,16 +100,16 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: #1d4fd7; /* blue-700 */
+	color: var(--twcss-blue-700); /* blue-700 */
 	@media (prefers-color-scheme: dark) {
-		color: #91c3fd; /* blue-300 */
+		color: var(--twcss-blue-300); /* blue-300 */
 	}
 }
 
 a:focus, a:hover, a:active {
-	color: #1f3b8a; /* blue-900 */
+	color: var(--twcss-blue-900); /* blue-900 */
 	@media (prefers-color-scheme: dark) {
-		color: #cbd5e1; /* slate-300 */
+		color: var(--twcss-slate-300); /* slate-300 */
 	}
 }
 
@@ -108,14 +128,14 @@ hr {
 }
 
 blockquote {
-	border-left: 4px solid #94a3b8; /* slate-400 */
-	color: #384252; /* gray-700 */
+	border-left: 4px solid var(--twcss-slate-400); /* slate-400 */
+	color: var(--twcss-gray-700); /* gray-700 */
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		/* border-left is same color */
-		color: #d1d5db; /* gray-300 */
+		color: var(--twcss-gray-300); /* gray-300 */
 	}
 	& p:last-child {
 		margin-bottom: 0;

@@ -1,5 +1,12 @@
 @charset 'utf-8';
 
+/*
+:root {
+	--twcss-gray-300: #d1d5db;
+	--twcss-gray-700: #384252;
+}
+*/
+
 /* .footnotes, .footnote-sim, .footnote-ref {
 	font-family: var(--sans-serif);
 } */
@@ -10,9 +17,9 @@
 	& hr {
 		border: none;
 		height: 2px;
-		background-color: #384252; /* gray-700 */
+		background-color: var(--twcss-gray-700); /* gray-700 */
 		@media (prefers-color-scheme: dark) {
-			background-color: #384252; /* gray-300 */
+			background-color: var(--twcss-gray-300); /* gray-300 */
 		}
 	}
 	& ol {
