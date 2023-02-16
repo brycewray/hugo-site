@@ -717,65 +717,6 @@ pre[class*="language-"] {
 	}
 }
 
-// Inline code
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-article code {
-	font-size: 0.975em;
-	@media screen and (min-width: var.$bkpt_md) {
-		font-size: 0.95em;
-	}
-	@media screen and (min-width: var.$bkpt_xl) {
-		font-size: 0.925em;
-	}
-	@media screen and (min-width: var.$bkpt_2xl) {
-		font-size: 0.9em;
-	}
-	background-color: map-get(var.$twcss, slate-200);
-	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-700);
-	}
-}
-article .footnotes code {
-	font-size: 1em;
-	// overriding the `article code` part above for footnotes
-}
-
-article p code {
-	@media screen and (min-width: var.$bkpt_md) {
-		white-space: nowrap;
-	}
-}
-
-article p code.code-inline {
-	// font-size: var.$text-sm;
-	padding: 0.25em 0.5em;
-	margin: 0 0.25em;
-}
-
-article .footnotes li code {
-	white-space: normal;
-}
-
-article blockquote code {
-	color: map-get(var.$twcss, slate-800);
-	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, slate-300);
-	}
-}
-
-.box code {
-	font-size: 1em; // definitely em
-	background-color: map-get(var.$twcss, slate-100);
-	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-600);
-	}
-}
-
 .highlight {
 	position: relative;
 	.chroma {
@@ -833,8 +774,4 @@ article blockquote code {
 .highlight:hover > .clipboard-button {
 	opacity: 1;
 	transition: 0.2s;
-}
-
-article ol li .highlight {
-	line-height: 1.5;
 }

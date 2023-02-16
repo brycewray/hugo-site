@@ -1,0 +1,11 @@
+name = "newcss"
+license = "MIT"
+description = "CSS with nesting (initially PostCSS, or perhaps CSS Nesting Standard when more browsers support it); originally based on a Hugo theme called “Tale” but now with little resemblance thereto."
+min_version = "0.100.0"
+
+tags = ["tags"]
+
+[author]
+  name = "Bryce Wray"
+  homepage = "https://www.brycewray.com/"
+
