@@ -3,7 +3,7 @@
 /* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
 
 :root {
-	--twcss-gray-200: #e5e7eb;
+	/* --twcss-gray-200: #e5e7eb; */
 	/* --twcss-gray-300: #d1d5db; */
 	/* --twcss-gray-700: #384252; */
 	--twcss-gray-800: #1f2937;

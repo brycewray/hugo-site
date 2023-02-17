@@ -2,10 +2,10 @@
 
 :root {
 	/* --twcss-slate-100: #f1f5f9; */
-	--twcss-slate-200: #e1e7ef;
+	/* --twcss-slate-200: #e1e7ef; */
 	/* --twcss-slate-300: #cbd5e1; */
 	/* --twcss-slate-600: #48566a; */
-	--twcss-slate-700: #344256;
+	/* --twcss-slate-700: #344256; */
 	/* --twcss-slate-800: #1d283a; */
 	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
 }
