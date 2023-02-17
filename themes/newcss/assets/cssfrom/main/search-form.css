@@ -135,7 +135,7 @@
 	text-align: center;
 }
 
-.pagefind-ui__button {
+.pagefind-ui__button, .pagefind-ui__search-clear {
 	/* "Load more results" */
 	margin: 1em auto;
 	text-align: center;
