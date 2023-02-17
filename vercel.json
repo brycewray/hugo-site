@@ -2,9 +2,6 @@
   "github": {
     "silent": true
   },
-	"redirects": [
-		{ "source": "/posts/index.xml", "destination": "/index-excerpts.xml" }
-	],
   "headers": [
     {
       "source": "(.*)",
