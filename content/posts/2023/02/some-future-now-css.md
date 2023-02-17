@@ -219,7 +219,3 @@ Of course, I assume the CSS Nesting specification --- whatever its sort-of-final
 
 **Update later in the day**: After [receiving some additional information from Jen Simmons via Mastodon](https://front-end.social/@jensimmons/109860757024965588), I revised/corrected links and examples in this posts. Thanks, Jen!
 {.box}
-<br />
-
-**Update, 2022-02-15**: [Things didn't turn out quite as I'd anticipated](/posts/2023/02/some-future-now-css-postscript/).
-{.box}
