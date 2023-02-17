@@ -7,6 +7,7 @@
     "pagefind": "pagefind --source public",
     "dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
 		"prod:hugo": "hugo --minify",
+		"prod:host": "npm run buildnew && mv public/posts/index.xml public/index-excerpts.xml && npm run pagefind",
     "testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
 		"divider09": "                                          ",
     "divider10": "===============    SASS    ===============",
