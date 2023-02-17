@@ -8,10 +8,6 @@ date: 2020-08-02T09:00:00-05:00
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
-## Cloudflare
-
-This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
-
 ## Cloudinary
 
 [Cloudinary](https://cloudinary.com) hosts some of the images on this site. A [Cloudinary Support article](https://support.cloudinary.com/hc/en-us/articles/360020207811-Does-Cloudinary-Store-Any-Cookies-) says that your viewing of any such images involves no storage or use of your personal data.
@@ -29,13 +25,6 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 ## Mastodon
 
 This site reproduces [Mastodon](https://join.mastodon.org) toots as purely static text and downloaded images with no tracking involved. Each toot is linked to its original location on the applicable Mastodon instance.
-
-## Twitter
-
-This site *quotes* tweets in the form of purely static text (with, obviously, no tracking involved), rather than embeds of any kind.
-
-**Note**: For most of 2022, the site reproduced tweets as purely static text and downloaded images with no [Twitter](https://twitter.com) (or other) tracking involved; however, in [November, 2022](/posts/2022/11/static-tweets-deprecation/), that ceased to be reliably possible following changes in the status and/or availability of one or more Twitter APIs, perhaps due to the many corporate changes at Twitter itself following its purchase by Elon Musk.
-{.box}
 
 ## YouTube
 
