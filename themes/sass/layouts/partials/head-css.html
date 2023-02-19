@@ -16,7 +16,7 @@
 		{{- $conditionSitemap := false -}}
 		{{- $conditionSearchBtn := false -}}
 		{{- $conditionSearchForm := false -}}
-		{{- $conditionDetails := false -}}
+		{{/*  {{- $conditionDetails := false -}}  */}}
 		{{- $condition404 := false -}}
 		{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
 		{{- if (findRE `<div class="highlight"` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
@@ -32,7 +32,7 @@
 		{{- if (eq .Title "Sitemap (HTML form)") -}}{{- $conditionSitemap = true -}}{{- end -}}
 		{{- if (ne .Title site.Params.SearchTitle) -}}{{- $conditionSearchBtn = true -}}{{- end -}}
 		{{- if (eq .Title site.Params.SearchTitle) -}}{{- $conditionSearchForm = true -}}{{- end -}}
-		{{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}
+		{{/*  {{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}  */}}
 		{{- if (eq .Title "404 Page not found") -}}{{- $condition404 = true -}}{{- end -}}
 
 		{{- $cssTypes := slice -}}{{/* init big slice */}}
@@ -50,7 +50,7 @@
 		{{- $cssTypes = append slice (slice $conditionSitemap "sitemaphtml") $cssTypes -}}
 		{{- $cssTypes = append slice (slice $conditionSearchBtn "search-btn") $cssTypes -}}
 		{{- $cssTypes = append slice (slice $conditionSearchForm "search-form") $cssTypes -}}
-		{{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}
+		{{/*  {{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}  */}}
 		{{- $cssTypes = append slice (slice $condition404 "fourohfour") $cssTypes -}}
 
 		{{- range $cssTypes -}}
