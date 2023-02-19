@@ -1,17 +1,10 @@
 @charset 'utf-8';
 
-:root {
-	/* --twcss-slate-700: #344256; */
-	/* --twcss-gray-200: #e5e7eb; */
+table {
 	--twcss-emerald-50: #ecfdf5;
 	--twcss-emerald-900: #064e3b;
-	/* --twcss-blue-700: #1d4fd7; */
-	/* --twcss-blue-900: #1f3b8a; */
+	/* font-family: var(--sans-serif); */
 }
-
-/* table {
-	font-family: var(--sans-serif);
-} */
 
 td {
 	vertical-align: top;

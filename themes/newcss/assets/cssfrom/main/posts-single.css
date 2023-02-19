@@ -3,10 +3,6 @@
 :root {
 	/* --twcss-slate-300: #cbd5e1; */
 	/* --twcss-slate-800: #1d283a; */
-	--twcss-gray-200: #e5e7eb;
-	--twcss-gray-800: #1f2937;
-	--twcss-blue-50: #f0f6ff;
-	--twcss-blue-200: #bedbfe;
 	/* --twcss-blue-300: #91c3fd; */
 	/* --twcss-blue-700: #1d4fd7; */
 	--twcss-blue-800: #1e3b8a;
@@ -31,6 +27,7 @@
 		padding: 0.15rem 0;
 		width: 90%;
 		font-size: clamp(1rem, 1vw + 0.625em, var(--text-xl));
+		--twcss-blue-200: #bedbfe;
 		& a {
 			color: var(--twcss-blue-800); /* blue-800 */
 			text-decoration: none;
@@ -38,6 +35,8 @@
 				color: var(--twcss-blue-200); /* blue-200 */
 			}
 			&:hover, &:focus {
+				--twcss-gray-800: #1f2937;
+				--twcss-gray-200: #e5e7eb;
 				color: var(--twcss-gray-800); /* gray-800 */
 				text-decoration: underline; /* normal */
 				text-decoration-thickness: var(--textDcThick); /* always rem */
@@ -54,6 +53,7 @@
 .contactBtn {
 	/* font-family: var(--sans-serif); */
 	text-align: center;
+	--twcss-blue-50: #f0f6ff;
 	margin: 1.5em auto 1em;
 	& button {
 		width: 15rem;

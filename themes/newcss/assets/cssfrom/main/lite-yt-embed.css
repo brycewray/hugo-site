@@ -1,11 +1,7 @@
 @charset 'utf-8';
 
-:root {
-	--twcss-gray-400: #9ca3af;
-	/* --twcss-gray-700: #384252; */
-}
-
 lite-youtube {
+	--twcss-gray-400: #9ca3af;
 	background-color: black;
 	position: relative;
 	border: 1px solid var(--twcss-gray-700); /* gray-700 */

@@ -1,13 +1,10 @@
 @charset 'utf-8';
 
-:root {
+.searchBtnDiv {
 	--twcss-blue-50: #f0f6ff;
 	/* --twcss-blue-300: #91c3fd; */
 	/* --twcss-blue-700: #1d4fd7; */
 	--twcss-blue-800: #1e3b8a;
-}
-
-.searchBtnDiv {
 	/* font-family: var(--sans-serif); */
 	margin: 2em auto;
 	text-align: center;

@@ -1,14 +1,5 @@
 @charset 'utf-8';
 
-:root {
-	/* --twcss-gray-300: #d1d5db; */
-	--twcss-gray-400: #9ca3af;
-	/* --twcss-blue-200: #bedbfe; */
-	/* --twcss-blue-300: #91c3fd; */
-	/* --twcss-blue-700: #1d4fd7; */
-	/* --twcss-blue-800: #1e3b8a; */
-}
-
 /* .posts-Wrapper {
 	font-family: var(--serif);
 } */
@@ -111,6 +102,7 @@ hr.paginatorBottom {
 }
 
 path.FirstLast {
+	--twcss-gray-400: #9ca3af;
 	fill: var(--twcss-gray-400); /* gray-400 */
 }
 

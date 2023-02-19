@@ -1,17 +1,9 @@
 @charset 'utf-8';
 
-:root {
-	/* --twcss-gray-300: #d1d5db; */
-	--twcss-gray-800: #1f2937;
-	--twcss-blue-50: #f0f6ff;
-	/* --twcss-blue-100: #dcebfe; */
-	/* --twcss-blue-300: #91c3fd; */
-	/* --twcss-blue-700: #1d4fd7; */
-	/* --twcss-blue-900: #1f3b8a; */
-}
-
 .searchDiv, .searchDivPF {
 	/* font-family: var(--sans-serif); */
+	--twcss-gray-800: #1f2937;
+	--twcss-blue-50: #f0f6ff;
 	margin: 2em auto;
 }
 
