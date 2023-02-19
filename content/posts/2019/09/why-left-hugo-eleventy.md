@@ -9,7 +9,7 @@ oldComments: |
         <em>(Older comments imported from previous comments host, <a href="https://www.talkyard.io" rel="noopener">Talkyard</a>.)</em>
       </p>
       <p class="commentName"><strong>Chris Rosser</strong> <span class="commentName"><em>2019-09-08</em></span></p>
-      <p class="comment">Great post and very interesting. I hadn't heard of Eleventy before. That's one thing I love about using a static-site generator is how easy it is to change should you need to. I used several before I settled on Pelican. I briefly thought about changing to Hugo, but decided it against it once I read the docs.</p>
+      <p class="comment">Great post and very interesting. I hadn't heard of Eleventy before. That's one thing I love about using a static site generator is how easy it is to change should you need to. I used several before I settled on Pelican. I briefly thought about changing to Hugo, but decided it against it once I read the docs.</p>
 
       <p class="commentName"><strong>Bryce Wray</strong> <span class="commentName"><em>2019-09-09</em></span></p>
       <p class="comment">Thank you. Yes, until Gatsby Experiment I, I&rsquo;d never heard of it, either, and at first I erroneously lumped it in with the others as not quite sufficient for my needs. Once I read its docs more thoroughly and got a better grasp of its extensibility, I realized I&rsquo;d missed the point entirely &mdash; as at least one triumphant Eleventy supporter reminded me yesterday after I released this post. :-)</p>
