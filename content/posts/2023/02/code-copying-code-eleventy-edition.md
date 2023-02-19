@@ -31,7 +31,7 @@ In every template you use to create pages with code blocks, add something like t
 {% set Content = content %}
 {% set withoutDivStart = '<pre class="language-' %}
 {% set withDivStart = '<div class="highlight"><pre class="language-' %}
-{% set withoutDivEnd = '</code></pre>'  %}
+{% set withoutDivEnd = '</code></pre>' %}
 {% set withDivEnd = '</code></pre></div>' %}
 {% if withoutDivStart in content %}
 	{% set Content = content | replace (withoutDivStart, withDivStart) %}
