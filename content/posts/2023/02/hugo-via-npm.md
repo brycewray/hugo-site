@@ -48,7 +48,7 @@ When run from a `package.json` script, Hugo Installer checks for the presence of
 
 You'll note my use of a `config` object, in which I provide the desired Hugo version. This allows me a clear, easily identified place to change that spec at a moment's notice whenever I wish. Down in the `install:hugo` script, I call back to that specification by using `$npm_package_config_hugo`.[^pkgVars]
 
-[^pkgVars]: I encourage you to read [Brian Childress](https://brianchildress.co/)'s great 2018 article, "[Variables in package.json](https://brianchildress.co/variables-in-package-json/)," which was a great help in this aspect of the changeover.
+[^pkgVars]: I encourage you to read [Brian Childress](https://brianchildress.co/)'s 2018 article, "[Variables in package.json](https://brianchildress.co/variables-in-package-json/)," which was a great help in this aspect of the changeover.
 
 ## Any sour points?
 
