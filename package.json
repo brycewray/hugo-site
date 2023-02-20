@@ -1,9 +1,6 @@
 {
   "name": "hugo_site",
   "description": "This is the repository from which the [Hugo](https://gohugo.io)-generated version of [www.brycewray.com](https://www.brycewray.com/) is built.",
-	"engines": {
-		"node": ">=18.0"
-	},
   "scripts": {
     "divider00": "===============   GLOBAL   ===============",
     "clean": "rimraf public",
