@@ -72,7 +72,7 @@ Once you have that, the previous example would become:
 npm run hugonew posts/2023/02/my-next-post.md
 ```
 
-. . . which is hardly worth mentioning where one's muscle memory is concerned. However, if you typically use a *lot* of [`hugo` commands](https://gohugo.io/commands/) and thus would have to make `package.json` scripts for each, you'll probably have a much different opinion about the whole thing.[^Uninstall]
+. . . which is hardly worth mentioning where one's muscle memory is concerned. However, if you typically use a *lot* of [`hugo` commands](https://gohugo.io/commands/) and thus would have to make a `package.json` script for each, you'll probably have a much different opinion about the whole thing.[^Uninstall]
 
 [^Uninstall]: One other thing to keep in mind is that, if you already have a more conventional Hugo installation on your machine, especially a global installation, you'll probably want to uninstall it **before** trying this method. Otherwise, you might not know whether Hugo Installer is working properly, because your machine may --- and likely will --- be using its previously installed Hugo version rather than the one you're trying to install and use. <strong class="red">But</strong>, if you have multiple Hugo projects on the machine, you'll then have to use Hugo Installer with **all** of them, and only you can decide is it's worth it.
 
