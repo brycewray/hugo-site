@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 /* .posts-Wrapper {
-	font-family: var(--serif);
+	font-family: var(--sans-serif);
 } */
 .posts-pagerGray {
 	color: var(--twcss-gray-300); /* gray-300 */
