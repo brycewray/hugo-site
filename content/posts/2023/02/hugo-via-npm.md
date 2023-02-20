@@ -78,4 +78,4 @@ npm run hugonew posts/2023/02/my-next-post.md
 
 Anyway, there you have it: a totally different way of installing and using Hugo.
 
-This month, I took the site squarely into npm-ville when I [brought in the npm version of Sass](/posts/2023/02/using-dart-sass-hugo-taking-it-easy/) and [added PostCSS to produce "future" CSS for current browsers](/posts/2023/02/some-future-now-css/). As it turns out, those changes made my site an unexpectedly appropriate target for the use case that Hugo Installer presents. I'm sure I'll find nits to pick over time but, for now, I'm impressed by what I've seen.
+This month, I took the site squarely into npm-ville when I [brought in the npm version of Sass](/posts/2023/02/using-dart-sass-hugo-taking-it-easy/) and [added PostCSS to make "future" CSS work with current browsers](/posts/2023/02/some-future-now-css/). As it turns out, those changes made my site an unexpectedly appropriate target for the use case that Hugo Installer presents. I'm sure I'll find nits to pick over time but, for now, I'm impressed by what I've seen.
