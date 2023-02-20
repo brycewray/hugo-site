@@ -34,7 +34,7 @@
     "testbuild:postcss": "npm run postcsscli -- --watch",
     "divider25": "- - - - - - - - - - - - - - - - - - - - - ",
     "startnew": "NODE_ENV=development npm-run-all installhugo clean cleannew postcsscli --parallel dev:hugo dev:postcss",
-    "buildnew": "NODE_ENV=production npm-run-all clean cleannew postcsscli prod:hugo",
+    "buildnew": "NODE_ENV=production npm-run-all installhugo clean cleannew postcsscli prod:hugo",
     "testbuildnew": "NODE_ENV=production npm-run-all installhugo clean cleannew --parallel testbuild:hugo testbuild:postcss",
     "testbuildpfnew": "NODE_ENV=production npm-run-all installhugo buildnew pagefind --parallel testbuild:hugo testbuild:postcss",
     "divider98": "                                          ",
