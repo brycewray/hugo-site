@@ -7,6 +7,9 @@ date: 2023-02-20T12:24:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/hugo-via-npm-5c4b).
+{.box}
+
 During my years of using the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG), I've occasionally seen mentions about how you could install, and even *run*, Hugo's [Go](https://go.dev)-based binary by using one or more JavaScript packages sourced via [npm](https://npmjs.com). Having long ago understood the [usual](https://gohugo.io/installation/), very **un**-npm-ish Hugo methods for installation --- much less the un-npm-ish nature of Hugo use in general --- I never bothered looking into these JS-based alternatives. Besides, I figured, how could they even work? And, if they did, in what use cases did they make more sense than  *normal* Hugo use?
 
 But, yesterday, I began to grasp a bigger picture.
