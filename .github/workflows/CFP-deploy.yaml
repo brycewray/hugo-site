@@ -70,7 +70,7 @@ jobs:
       - name: Move "excerpts" feed (RSS/Atom only)
         run: mv public/posts/index.xml public/index-excerpts.xml
       - name: Run Pagefind
-        run: npm run pagefind
+        run: npm run search
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
         with:
