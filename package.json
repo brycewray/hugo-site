@@ -1,43 +1,39 @@
 {
   "name": "hugo_site",
   "description": "This is the repository from which the [Hugo](https://gohugo.io)-generated version of [www.brycewray.com](https://www.brycewray.com/) is built.",
-	"config": {
-		"hugo": "0.110.0",
-		"theme": "newcss"
-	},
+  "config": {
+    "hugo": "0.110.0",
+    "theme": "newcss"
+  },
   "scripts": {
-    "divider00": "===============   GLOBAL   ===============",
     "clean": "rimraf public",
     "pagefind": "pagefind --source public",
     "install:hugo": "hugo-installer --version $npm_package_config_hugo --extended",
     "dev:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
     "prod:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo --minify",
-		"hugonew": "exec-bin bin/hugo/hugo new",
+    "hugonew": "exec-bin bin/hugo/hugo new",
     "prod:host": "npm run build && mv public/posts/index.xml public/index-excerpts.xml && npm run pagefind",
     "testbuild:hugo": "npm run install:hugo && npm run dev:hugo -- --minify --environment=production",
-    "divider10": "===============    SASS    ===============",
     "clean:sass": "rimraf themes/sass/assets/css",
     "style-exe:sass": "sass --no-source-map themes/sass/assets/scss:themes/sass/assets/css",
     "style-dev:sass": "npm run style-exe:sass -- --watch",
     "style-prod:sass": "npm run style-exe:sass -- --style=compressed",
     "style-testbuild:sass": "npm run style-exe:sass -- --style=compressed --watch",
-    "divider20": "===============   NEW CSS   ==============",
-    "clean:newcss": "rimraf themes/newcss/assets/css && mkdir themes/newcss/assets/css",
+    "clean:newcss": "rimraf themes/newcss/assets/css && mkdirp themes/newcss/assets/css",
     "style-exe:newcss": "postcss themes/newcss/assets/cssfrom --dir themes/newcss/assets/css",
     "style-dev:newcss": "npm run style-exe:newcss -- --watch",
     "style-prod:newcss": "npm run style-exe:newcss",
     "style-testbuild:newcss": "npm run style-exe:newcss -- --watch",
-    "divider30": "===============   FINALS   ===============",
-		"start": "NODE_ENV=development npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel dev:hugo style-dev:$npm_package_config_theme",
+    "start": "NODE_ENV=development npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel dev:hugo style-dev:$npm_package_config_theme",
     "build": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme style-prod:$npm_package_config_theme prod:hugo",
-    "testbuild": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel testbuild:hugo style-testbuild:$npm_package_config_theme",
-    "divider99": "===============   FINISH   ==============="
+    "testbuild": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel testbuild:hugo style-testbuild:$npm_package_config_theme"
   },
   "author": "Bryce Wray",
   "license": "MIT",
   "devDependencies": {
     "exec-bin": "^1.0.0",
     "hugo-installer": "^4.0.1",
+    "mkdirp": "^2.1.3",
     "npm-run-all": "^4.1.5",
     "pagefind": "^0.11.0",
     "postcss": "^8.4.21",
