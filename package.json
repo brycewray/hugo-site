@@ -7,12 +7,13 @@
   },
   "scripts": {
     "clean": "rimraf public",
-    "pagefind": "pagefind --source public",
+    "search": "pagefind --source public",
+		"dev:search": "pagefind --source public --bundle-dir ../static/_pagefind",
     "install:hugo": "hugo-installer --version $npm_package_config_hugo --extended",
     "dev:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
     "prod:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo --minify",
     "hugonew": "exec-bin bin/hugo/hugo new",
-    "prod:host": "npm run build && mv public/posts/index.xml public/index-excerpts.xml && npm run pagefind",
+    "prod:host": "npm run build && mv public/posts/index.xml public/index-excerpts.xml && npm run search",
     "testbuild:hugo": "npm run install:hugo && npm run dev:hugo -- --minify --environment=production",
     "clean:sass": "rimraf themes/sass/assets/css",
     "style-exe:sass": "sass --no-source-map themes/sass/assets/scss:themes/sass/assets/css",
@@ -26,7 +27,8 @@
     "style-testbuild:newcss": "npm run style-exe:newcss -- --watch",
     "start": "NODE_ENV=development npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel dev:hugo style-dev:$npm_package_config_theme",
     "build": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme style-prod:$npm_package_config_theme prod:hugo",
-    "testbuild": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel testbuild:hugo style-testbuild:$npm_package_config_theme"
+    "testbuild": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel testbuild:hugo style-testbuild:$npm_package_config_theme",
+		"testbuildpf": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme build dev:search --parallel testbuild:hugo style-testbuild:$npm_package_config_theme"
   },
   "author": "Bryce Wray",
   "license": "MIT",
