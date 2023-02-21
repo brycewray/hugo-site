@@ -103,7 +103,7 @@
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
 	border: 1px solid black;
-	/* border-radius: 9px; */
+	border-radius: 9px;
 	background-color: white;
 	@media (prefers-color-scheme: dark) {
 		border: 1px solid var(--twcss-gray-300); /* gray-300 */
