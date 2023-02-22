@@ -30,14 +30,14 @@ on:
   # workflow_dispatch:
     # `workflow dispatch` is only if we restore the fallback-on-failure job
 
-env:
-  # HUGO_VERSION: 0.110.0 # will get Extended Version below
-  # PAGEFIND_VERSION: 0.10.7
-  BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
-  TOKEN: ${{ secrets.TOKEN }}
-  TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }}
-  CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
-  CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+# env:
+#   # HUGO_VERSION: 0.110.0 # will get Extended Version below
+#   # PAGEFIND_VERSION: 0.10.7
+#   BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }} # old Twitter Dev stuff
+#   TOKEN: ${{ secrets.TOKEN }} # old Twitter Dev stuff
+#   TOKEN_SECRET: ${{ secrets.TOKEN_SECRET }} # old Twitter Dev stuff
+#   CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }} # old Twitter Dev stuff
+#   CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }} # old Twitter Dev stuff
 
 jobs:
   deploy:
