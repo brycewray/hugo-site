@@ -709,7 +709,7 @@ article code {
 	@media screen and (min-width: 1536px) {
 		font-size: 0.9em;
 	}
-	--bg-lt: var(--twcss-slate-200); /* slate-200 */
+	--bg-lt: white; /* slate-200 */
 	--bg-dk: var(--twcss-slate-700); /* slate-700 */
 }
 
