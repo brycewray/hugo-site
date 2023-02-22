@@ -26,7 +26,7 @@ On many if not most other [static site generators](https://jamstack.org/generato
 
 ## A stab in the dark
 
-While running through the Tailwind-fix part of the previous article, I got to thinking: why not just use that standard Sass package with Hugo? I'd seen no other articles or forum comments about doing it that way. In either case, Tailwind or standard Sass, you're using an [`npm`](https://www.npmjs.com/) package so, if it's good enough for the proverbial goose&nbsp;.&nbsp;.&nbsp;.
+While running through the Tailwind-fix part of the previous article, I got to thinking: why not just use that standard Sass package with Hugo? I'd seen no other articles or forum comments about doing it that way. In either case, Tailwind or standard Sass, you're using an [npm](https://www.npmjs.com/) package so, if it's good enough for the proverbial goose&nbsp;.&nbsp;.&nbsp;.
 
 I gave it a shot, and am delighted to tell you that it works!
 
