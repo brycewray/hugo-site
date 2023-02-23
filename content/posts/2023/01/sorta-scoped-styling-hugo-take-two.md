@@ -11,7 +11,7 @@ I gave up on my [earlier](/posts/2022/06/sorta-scoped-styling-hugo/), [Rube Gold
 
 <!--more-->
 
-<strong class="red">Important</strong>: Be sure to check the **Update** at the bottom.
+<strong class="red">Important</strong>: Be sure to check the [**Update** at the bottom](/posts/2023/01/sorta-scoped-styling-hugo-take-two/#update-2023-01-29).
 {.box}
 
 ## Anal-ysis
