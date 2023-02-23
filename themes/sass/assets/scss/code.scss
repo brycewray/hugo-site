@@ -152,9 +152,9 @@
 
 // NameAttribute
 .chroma .na, .code-inline .na {
-	color: map-get(var.$twcss, sky-800);
+	color: map-get(var.$twcss, rose-800);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, sky-200);
+		color: map-get(var.$twcss, rose-200);
 	}
 }
 
@@ -272,9 +272,9 @@
 
 // NameVariable
 .chroma .nv, .code-inline .nv {
-	color: map-get(var.$twcss, cyan-800);
+	color: map-get(var.$twcss, purple-800);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, cyan-200);
+		color: map-get(var.$twcss, purple-200);
 	}
 }
 

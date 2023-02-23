@@ -47,8 +47,12 @@
 	--twcss-sky-300: #7dd3fc;
 	--twcss-sky-700: #0369a0;
 	--twcss-sky-800: #075783;
+	--twcss-purple-200: #e9d5ff;
+	--twcss-purple-800: #6b21a8;
 	--twcss-fuchsia-300: #f0abfc;
 	--twcss-fuchsia-700: #a21caf;
+	--twcss-rose-200: #fecdd3;
+	--twcss-rose-800: #9f1239;
 	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
 	color: black;
 	background-color: white;
@@ -178,8 +182,8 @@
 
 /* NameAttribute */
 .chroma .na, .code-inline .na {
-	--clr-lt: var(--twcss-sky-800); /* sky-800 */
-	--clr-dk: var(--twcss-sky-200); /* sky-200 */
+	--clr-lt: var(--twcss-rose-800); /* sky-800 */
+	--clr-dk: var(--twcss-rose-200); /* sky-200 */
 }
 
 /* NameBuiltin */
@@ -268,8 +272,8 @@
 
 /* NameVariable */
 .chroma .nv, .code-inline .nv {
-	--clr-lt: var(--twcss-cyan-800); /* cyan-800 */
-	--clr-dk: var(--twcss-cyan-200); /* cyan-200 */
+	--clr-lt: var(--twcss-purple-800); /* cyan-800 */
+	--clr-dk: var(--twcss-purple-200); /* cyan-200 */
 }
 
 /* NameVariableClass */
