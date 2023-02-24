@@ -219,10 +219,10 @@ For Vercel, you must supply:
 4. In the left side of the resulting screen, click **Tokens**.
 5. Click **Create**.
 6. In the resulting pop-up window:
-	- Under **TOKEN NAME**, enter `VERCEL_TOKEN_HUGO_SITE`.
+	- Under **TOKEN NAME**, enter `VERCEL_TOKEN_hugo-site`.
 	- Under **SCOPE**, select **Full Account**.
 	- Click **CREATE TOKEN**.
-	- Copy the value from the resulting **Token Created** pop-up and **immediately** paste it into the `.env` file (which you should save immediately thereafter) as `VERCEL_TOKEN_HUGO_SITE=` followed by the value. As the pop-up notes, Vercel **won't** show you this value again.
+	- Copy the value from the resulting **Token Created** pop-up and **immediately** paste it into the `.env` file (which you should save immediately thereafter) as `VERCEL_TOKEN_hugo-site=` followed by the value. As the pop-up notes, Vercel **won't** show you this value again.
 	- Click **DONE** to close the **Token Created** pop-up.
 7. Keep the `.env` file open for the time being.
 8. In the left-side menu, click **General**.
@@ -239,7 +239,7 @@ If you wish, you now can log off from Vercel.
 18. Near the top of the screen, click **Settings**.
 19. In the resulting **Settings** screen, click **Secrets**, then **Actions**.
 20. In the resulting **Actions secrets** screen, click **New repository secret**.
-21. Name this secret `VERCEL_TOKEN_HUGO_SITE` and, using the `.env` file, copy/paste in the value from the `VERCEL_TOKEN_HUGO_SITE` you generated earlier.
+21. Name this secret `VERCEL_TOKEN_hugo-site` and, using the `.env` file, copy/paste in the value from the `VERCEL_TOKEN_hugo-site` you generated earlier.
 22. Click **Add secret**. This will save the new secret and return you to the **Actions secrets** screen.
 23. Once again, click **New repository secret**.
 24. Name this secret `VERCEL_ORG_ID` and copy/paste in the `VERCEL_ORG_ID` value from the `.env` file.
@@ -292,7 +292,7 @@ jobs:
       - name: Publish to Vercel
         uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_HUGO_SITE }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_hugo-site }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}

@@ -144,7 +144,7 @@ The advantage of this modular approach is that I can apply, say, a `headlineRow`
 
 Incidentally, I took advantage of this exploration to try the [`@use`](https://sass-lang.com/documentation/at-rules/use) and [`@forward`](https://sass-lang.com/documentation/at-rules/forward) rules, which were [added to Sass/SCSS in 2019](https://sass-lang.com/blog/the-module-system-is-launched). It's important to get used to them **and get away from** the longtime `@import` rule, [which is being deprecated](https://sass-lang.com/documentation/at-rules/import).[^hugoSass]
 
-[^hugoSass]: I still use `@import` in [this site's SCSS](https://github.com/brycewray/hugo_site) for now, but only until the [Dart Sass implementation](https://sass-lang.com/dart-sass) is fully integrated into [Hugo](https://gohugo.io), which [should happen soon](https://gohugo.io/news/0.80.0-relnotes/). The [now-deprecated LibSass implementation](https://sass-lang.com/blog/libsass-is-deprecated) currently included in Hugo doesn't support `@use` or `@forward`.
+[^hugoSass]: I still use `@import` in [this site's SCSS](https://github.com/brycewray/hugo-site) for now, but only until the [Dart Sass implementation](https://sass-lang.com/dart-sass) is fully integrated into [Hugo](https://gohugo.io), which [should happen soon](https://gohugo.io/news/0.80.0-relnotes/). The [now-deprecated LibSass implementation](https://sass-lang.com/blog/libsass-is-deprecated) currently included in Hugo doesn't support `@use` or `@forward`.
 
 ## Easy to use with FontAwesome
 

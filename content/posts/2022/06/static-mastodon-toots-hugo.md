@@ -155,7 +155,7 @@ So, now that you know what we're seeking (and its data structure, if you toggled
 
 I call this Hugo shortcode `stoot.html` because it displays *static toots*, just as I previously named `stweet.html` for *static tweets*. Call your version whatever you want, of course.[^styling]
 
-[^styling]: The best way for you to figure out how the styling works is to use your browser's Inspector tool on the toot example herein as well as the static tweets you'll find scattered throughout the site. (You also can check the [site repo](https://github.com/brycewray/hugo_site), of course.) **Update from the future**: For a [Tailwind CSS](https://tailwindcss.com)-styled version of the code herein, see [this follow-up post](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/).
+[^styling]: The best way for you to figure out how the styling works is to use your browser's Inspector tool on the toot example herein as well as the static tweets you'll find scattered throughout the site. (You also can check the [site repo](https://github.com/brycewray/hugo-site), of course.) **Update from the future**: For a [Tailwind CSS](https://tailwindcss.com)-styled version of the code herein, see [this follow-up post](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/).
 
 ```go-html-template
 {{ $masIns := .Get 0 }}

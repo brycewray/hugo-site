@@ -31,7 +31,7 @@ So, for your geeky pleasure, here goes nothing.
 
 ## Repository in use
 
-2019-07-05: `hugo_site_css-grid`.[^renamed]
+2019-07-05: `hugo-site_css-grid`.[^renamed]
 
 [^renamed]: I've since renamed this repo `hugo_twcss` and [repurposed it](/posts/2020/07/beginners-luck/) as a Hugo starter set.
 

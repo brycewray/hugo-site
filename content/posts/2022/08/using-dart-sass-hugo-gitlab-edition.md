@@ -169,7 +169,7 @@ For Vercel, you must supply:
 	- Under **TOKEN NAME**, enter `VERCEL_TOKEN`.
 	- Under **SCOPE**, select **Full Account**.
 	- Click **CREATE TOKEN**.
-	- Copy the value from the resulting **Token Created** pop-up and **immediately** paste it into the `.env` file (which you should save immediately thereafter) as `VERCEL_TOKEN_HUGO_SITE=` followed by the value. As the pop-up notes, Vercel **won't** show you this value again.
+	- Copy the value from the resulting **Token Created** pop-up and **immediately** paste it into the `.env` file (which you should save immediately thereafter) as `VERCEL_TOKEN_hugo-site=` followed by the value. As the pop-up notes, Vercel **won't** show you this value again.
 	- Click **DONE** to close the **Token Created** pop-up.
 7. Keep the `.env` file open for the time being.
 8. In the left-side menu, click **General**.

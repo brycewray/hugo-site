@@ -26,7 +26,7 @@ And, today, I am pleased to tell you that *all three* of my site repos are now p
 
 - The [Gatsby version](https://github.com/brycewray/gatsby_site_css-grid).
 
-- The [Hugo version](https://github.com/brycewray/hugo_site_css-grid).
+- The [Hugo version](https://github.com/brycewray/hugo-site_css-grid).
 
 Please be advised that I haven't yet decided whether to update *all* of them every time I update *this* one. Some changes I made during this restoration project may make that easier than it otherwise would've been, but I'm not promising an all-three-at-once approach.
 

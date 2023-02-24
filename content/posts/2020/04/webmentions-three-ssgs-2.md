@@ -39,6 +39,6 @@ And, yeah, that pretty much was it where the Eleventy repo and webmentions were 
 
 After Eleventy, things got a bit (?) more challenging, to put it mildly.
 
-See you in [Part 3](/posts/2020/04/webmentions-three-ssgs-3/), where I explain the webmention-izing of my [Hugo repo](https://github.com/brycewray/hugo_site_css-grid) (and then [Part 4](/posts/2020/04/webmentions-three-ssgs-4/), where I cover the angst-y process of doing the same for my [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid)). Don't be late; last one there is a rotten SSG.[^DoubleEntendre]
+See you in [Part 3](/posts/2020/04/webmentions-three-ssgs-3/), where I explain the webmention-izing of my [Hugo repo](https://github.com/brycewray/hugo-site_css-grid) (and then [Part 4](/posts/2020/04/webmentions-three-ssgs-4/), where I cover the angst-y process of doing the same for my [Gatsby repo](https://github.com/brycewray/gatsby_site_css-grid)). Don't be late; last one there is a rotten SSG.[^DoubleEntendre]
 
 [^DoubleEntendre]: And that's just a playful little *double entendre*. If you saw through it: sorry, I couldn't resist.

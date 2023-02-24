@@ -66,7 +66,7 @@ If you want to have a feeds setup as described above in a [Hugo](https://gohugo.
 
 Let's say you use a `posts` section to "own" your `index-excerpts.xml` and `index-excerpts.json` feed files, by adding appropriate `.json` and `.xml` layouts[^excerptExamples] there, each named according to [Hugo lookup rules](https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-section-pages):
 
-[^excerptExamples]: As of 2022-12-14, the [Hugo version of my site repo](https://github.com/brycewray/hugo_site) has examples of such layouts for both [RSS/Atom](https://github.com/brycewray/hugo_site/blob/main/layouts/posts/section.xml) and [JSON](https://github.com/brycewray/hugo_site/blob/main/layouts/posts/section.json) formats.
+[^excerptExamples]: As of 2022-12-14, the [Hugo version of my site repo](https://github.com/brycewray/hugo-site) has examples of such layouts for both [RSS/Atom](https://github.com/brycewray/hugo-site/blob/main/layouts/posts/section.xml) and [JSON](https://github.com/brycewray/hugo-site/blob/main/layouts/posts/section.json) formats.
 
 ```plaintext
  layouts/

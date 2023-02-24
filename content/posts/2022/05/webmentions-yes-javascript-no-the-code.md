@@ -35,7 +35,7 @@ The code itself will generate some questions that are easy to anticipate, so her
 
 ### Styling
 
-If you want to see the CSS classes I use to style the webmentions, they're on the site repo as (at this writing) an SCSS partial called [`_webmentions.scss`](https://github.com/brycewray/hugo_site/blob/main/assets/scss/partials/_webmentions.scss). Of course, that styling is in coordination with variables and other items from within the site's overall SCSS, so you might need to do some digging (or, better yet, using your browser's Inspector tool on some of my existing webmentions); but this will give you at least some idea of how to style your webmentions.
+If you want to see the CSS classes I use to style the webmentions, they're on the site repo as (at this writing) an SCSS partial called [`_webmentions.scss`](https://github.com/brycewray/hugo-site/blob/main/assets/scss/partials/_webmentions.scss). Of course, that styling is in coordination with variables and other items from within the site's overall SCSS, so you might need to do some digging (or, better yet, using your browser's Inspector tool on some of my existing webmentions); but this will give you at least some idea of how to style your webmentions.
 
 ## And now, the code
 
@@ -456,6 +456,6 @@ Now we can bring this baby in for a smooth landing, `end`-ing the overall `with`
 
 ## The whole enchilada?
 
-If you prefer to see the code in one fell swoop rather than the staggered method I've provided above, it's [available at the repo](https://github.com/brycewray/hugo_site/blob/main/layouts/partials/webmentions-rx.html), complete with some comments that will offer some of the same explanations I've provided herein. Of course, it may differ somewhat from what you see in this post, especially as time passes, but the logic should be pretty much the same.
+If you prefer to see the code in one fell swoop rather than the staggered method I've provided above, it's [available at the repo](https://github.com/brycewray/hugo-site/blob/main/layouts/partials/webmentions-rx.html), complete with some comments that will offer some of the same explanations I've provided herein. Of course, it may differ somewhat from what you see in this post, especially as time passes, but the logic should be pretty much the same.
 
 Please [let me know](/contact/) if you need more explanation than I've provided above.

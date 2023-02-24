@@ -76,7 +76,7 @@ Well, the `.GitInfo` object also provides two variables for each commit's [hash]
 ```go-html-template
 <p>
 	{{- if $.GitInfo -}}
-		<strong>Latest commit</strong>: <a href="https://github.com/brycewray/hugo_site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
+		<strong>Latest commit</strong>: <a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
 	{{- else -}}
 		&nbsp;
 	{{- end -}}

@@ -15,7 +15,7 @@ As a result of [this GitHub issue](https://github.com/gohugoio/hugo/issues/10073
 
 > To avoid breakage when running on Netlify and similar, we create aliases for the most commonly downloaded [Linux archives] on the old format and will continue to do so in the foreseeable future.
 
-So, if you build your Hugo site via [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) that downloads and installs a Linux binary of Hugo --- as is true for the [script that builds this site](https://github.com/brycewray/hugo_site/blob/main/.github/workflows/CFP-deploy.yaml) when it's Hugo-based --- you might want to consider changing your scripts to reflect this new reality. Yes, those "foreseeable future" aliases will make sure existing build scripts don't break, **but** it also never hurts to stay current.
+So, if you build your Hugo site via [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) that downloads and installs a Linux binary of Hugo --- as is true for the [script that builds this site](https://github.com/brycewray/hugo-site/blob/main/.github/workflows/CFP-deploy.yaml) when it's Hugo-based --- you might want to consider changing your scripts to reflect this new reality. Yes, those "foreseeable future" aliases will make sure existing build scripts don't break, **but** it also never hurts to stay current.
 
 One more thing about this: the name changes also apply to **non**-Linux binaries you might normally [install](https://gohugo.io/getting-started/installing/#quick-install) locally, so this could affect your *local* development process regardless of whether you use CI/CD for site deployment.
 

@@ -92,7 +92,7 @@ By the way: remember how I mentioned earlier that I didn't like the lame formatt
 
 ## The code
 
-In this section, I provide an annotated version of the code by which I'm handling this stuff in [my Hugo setup's appropriate partial](https://github.com/brycewray/hugo_site/blob/main/layouts/partials/head-meta_cloud-socimg.html), which supplies only the metadata for the `head` element on each page. In addition to the comments, I've added some *variables* to make it more applicable to other users; *e.g.*, I don't need to provide a variable for my own Cloudinary *cloud name* (because I "hard-code" it in my own URL), but you'll need to supply yours.
+In this section, I provide an annotated version of the code by which I'm handling this stuff in [my Hugo setup's appropriate partial](https://github.com/brycewray/hugo-site/blob/main/layouts/partials/head-meta_cloud-socimg.html), which supplies only the metadata for the `head` element on each page. In addition to the comments, I've added some *variables* to make it more applicable to other users; *e.g.*, I don't need to provide a variable for my own Cloudinary *cloud name* (because I "hard-code" it in my own URL), but you'll need to supply yours.
 
 At the beginning of the code block, I mention a fallback image (`$fallbackImg`), which I host myself[^fallbackLocal] rather than on Cloudinary. This is for use for the home page, for which I'd prefer the OG image to be my long-term site image:
 

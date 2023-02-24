@@ -11,9 +11,9 @@ Good going, aforementioned "yet another person."
 
 To do my part in helping to lure more folks to one of these two happy places, I'm pleased to announce that I've created two new **starter sets**, [one for Eleventy](https://github.com/brycewray/eleventy_solo_starter) and [one for Hugo](https://github.com/brycewray/hugo_solo), based on my site.
 
-I've also converted my existing Hugo-based version of the Eleventy repo (*i.e.*, the one from which [Vercel](https://vercel.com) builds this site) to being [another starter set](https://github.com/brycewray/hugo_site_css-grid).[^exLoc] (Why two Hugo starter sets? I'll explain that shortly.)
+I've also converted my existing Hugo-based version of the Eleventy repo (*i.e.*, the one from which [Vercel](https://vercel.com) builds this site) to being [another starter set](https://github.com/brycewray/hugo-site_css-grid).[^exLoc] (Why two Hugo starter sets? I'll explain that shortly.)
 
-[^exLoc]: **Update, 2021-02-20**: Today, I moved it from its [former location](https://github.com/brycewray/hugo_site_css-grid).
+[^exLoc]: **Update, 2021-02-20**: Today, I moved it from its [former location](https://github.com/brycewray/hugo-site_css-grid).
 
 ## Starter *vs.* non-starter
 

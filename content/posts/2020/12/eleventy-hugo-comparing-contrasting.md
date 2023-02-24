@@ -92,7 +92,7 @@ To me, this is Hugo's biggest advantage, even more so than its vaunted build spe
 
 [^libSass]: **Updated 2020-12-31**: Hugo's Sass/SCSS support **prior to v.0.80.0, released today**, was based on the [recently deprecated](https://sass-lang.com/blog/libsass-is-deprecated) LibSass library, which is incompatible with some newer Sass/SCSS features like the `@use` command and, given the deprecation, will become increasingly outdated over time. Fortunately, the v.0.80.0 release is the first which also works with the Sass/SCSS library which has a future, [Dart Sass](https://sass-lang.com/dart-sass) --- although, for now, this requires a somewhat involved installation process which the Hugo team hopes to improve sometime in early 2021. Even if you're using Sass/SCSS with a Hugo version earlier than v.0.80.0, be assured that this situation may not "bite" you for some time to come, if ever; but this is at least a useful data point for that decision process.
 
-[^renamed]: This repo was formerly known as *hugo_site_css-grid*.
+[^renamed]: This repo was formerly known as *hugo-site_css-grid*.
 
 ### Staggering build speed
 
