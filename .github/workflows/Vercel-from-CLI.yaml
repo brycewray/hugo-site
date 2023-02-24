@@ -13,9 +13,26 @@ jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout default branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
+          # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install packages
+        run: npm install
+      - name: Build site with Hugo
+        run: npm run build
+      - name: Move "excerpts" feed (RSS/Atom only)
+        run: mv public/posts/index.xml public/index-excerpts.xml
+      - name: Run Pagefind
+        run: npm run search
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
       - name: Build Project Artifacts
