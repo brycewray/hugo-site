@@ -21,7 +21,7 @@ But, even so, even in parts: why so *many* details?
 
 Because I'd been there.
 
-As a result of my own struggles in finding answers, much less *explicable* ones, during this effort of putting webmentions into not only my [Eleventy-based site repository](https://github.com/brycewray/eleventy_bundler) but also my [Hugo-based](https://github.com/brycewray/hugo-site_css-grid) and [Gatsby-based](https://github.com/brycewray/gatsby_site_css-grid) public repos, I considered it more valuable to get everything in, rather than be brief for brevity's sake. (As if I ever do that, anyway, y'know.)
+As a result of my own struggles in finding answers, much less *explicable* ones, during this effort of putting webmentions into not only my [Eleventy-based site repository](https://github.com/brycewray/eleventy_bundler) but also my [Hugo-based](https://github.com/brycewray/hugo_site_css-grid) and [Gatsby-based](https://github.com/brycewray/gatsby_site_css-grid) public repos, I considered it more valuable to get everything in, rather than be brief for brevity's sake. (As if I ever do that, anyway, y'know.)
 
 So, maybe, only a very small percentage of my already small complement of readers will ever see, much less use, the content. But, for those who *really, really need it*: there you go. I hope it helps.
 
