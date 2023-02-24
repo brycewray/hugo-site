@@ -22,7 +22,7 @@ While I was [helping someone](/posts/2022/11/get-help-hugo-community-discord-ser
 
 My usual reaction, bordering on disdain, soon gave way to my oft-cited nerdy curiosity, although I still had the same primary questions from those earlier encounters with references to an npm-style way to handle Hugo. Then, as I read up on Hugo Installer and how it was used in a variety of sites and themes, I started to get the point.
 
-Like the more venerable, [more popular](https://npmtrends.com/hugo-bin-vs-hugo-installer), but (in my opinion) less suitable [hugo-bin](https://github.com/fenneclab/hugo-bin), Hugo Installer makes it easier to manage Hugo use in projects already making thorough use of [Node.js](https://nodejs.org) packages --- which seems to describe a huge majority of the projects you'll find on places like [GitHub](https://github.com) and [GitLab](https://gitlab.com):
+Like the more venerable, [more popular](https://npmtrends.com/hugo-bin-vs-hugo-installer), but (in my opinion) less suitable [hugo-bin](https://github.com/fenneclab/hugo-bin), Hugo Installer makes it easier to manage Hugo use in projects already making thorough use of [Node.js](https://nodejs.org) packages --- which seems to describe a huge majority of the website projects you'll find on places like [GitHub](https://github.com) and [GitLab](https://gitlab.com):
 
 - If cloning/forking a project, one usually does a simple `npm install` to get all the goodies needed to make the project run either locally or on a remote host.
 - In a multi-developer project, it's important to keep everyone's tools on the same versions through use of `package.json`.
