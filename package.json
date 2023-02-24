@@ -1,5 +1,5 @@
 {
-  "name": "hugo_site",
+  "name": "hugo-site",
   "description": "This is the repository from which the [Hugo](https://gohugo.io)-generated version of [www.brycewray.com](https://www.brycewray.com/) is built.",
   "config": {
     "hugo": "0.110.0",
