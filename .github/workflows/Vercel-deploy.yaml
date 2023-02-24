@@ -1,0 +1,61 @@
+name: Deploy to Vercel
+
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci]
+# [ci skip]
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true` or `skip-checks:true`.”
+#
+#
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
+
+on:
+  push:
+    branches:
+      - main
+
+# env:
+#   # HUGO_VERSION: 0.110.0 # will get Extended Version below
+#   # PAGEFIND_VERSION: 0.10.7
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
+          # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install packages
+        run: npm install
+      - name: Build site with Hugo
+        run: npm run build
+      - name: Move "excerpts" feed (RSS/Atom only)
+        run: mv public/posts/index.xml public/index-excerpts.xml
+      - name: Run Pagefind
+        run: npm run search
+      - name: Publish to Vercel
+        uses: BetaHuhn/deploy-to-vercel-action@v1
+        with:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+          WORKING_DIRECTORY: 'public'
