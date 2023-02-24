@@ -140,7 +140,7 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 {{- $condition404 := false -}}
 {{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
 {{- if (findRE `<div class="highlight"` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
-{{- if and (findRE `(<code)` .Content 1) (not (findRE `(<pre)` .Content 1)) -}}{{- $conditionArtCode = true -}}{{- end -}}
+{{- if and (findRE `(<code)` .Content 1) (not (findRE `<div class="highlight"` .Content 1)) -}}{{- $conditionArtCode = true -}}{{- end -}}
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
 {{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
 {{- if (and (ne .Title "Home page") (ne .Title "Sitemap (HTML form)") (ne .Title "Posts")) -}}{{- $conditionBillboard = true -}}{{- end -}}
