@@ -2,6 +2,12 @@
   "github": {
     "silent": true
   },
+	"builds": [
+		{
+			"src": "{{Source for distribution}}",
+			"use": "@vercel/static"
+		}
+	],
   "headers": [
     {
       "source": "(.*)",
