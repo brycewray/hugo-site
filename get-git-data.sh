@@ -1,5 +1,5 @@
 #!/bin/bash
-# **MUST** be run **before** Hugo builds
+# **MUST** be run **before** Hugo builds if possible
 rm -rf data/gitoutput.yml # avoid appending to existing
 printf "gitinfo:\n" >> data/gitoutput.yml
 cd content
