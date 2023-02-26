@@ -12,7 +12,7 @@ date: 2022-06-01T06:47:00-05:00
 **Update from the future**: Although the data and formatting in each page's header differ from what's described in this post, the code blocks contained herein are still accurate and usable.
 {.box}
 
-While reading blog posts from other static site generator (SSG) users, I sometimes see that a post includes a link to the specific [Git commit](https://git-scm.com/docs/git-commit) for that post's most recent update. As you may have noticed, I've incorporated that here, too. In this post, I'll show you how to do it in a [Hugo](https://gohugo.io) site, in case you're interested in doing the same. As an additional benefit, it'll automate something you might have been doing manually up to now.
+While reading blog posts from other static site generator (SSG) users, I sometimes see that a post includes a link to the specific [Git commit](https://git-scm.com/docs/git-commit) for that post's most recent update. In this post, I'll show you how to do it in a [Hugo](https://gohugo.io) site, in case you're interested in doing the same. As an additional benefit, it'll automate something you might have been doing manually up to now.
 
 I got the idea yesterday, when I saw a [post](https://www.aleksandrhovhannisyan.com/blog/eleventy-build-info/) from [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/). In it, he gave a fine tutorial about displaying this data in pages built with the [Eleventy](https://11ty.dev/) SSG. Hovhannisyan's method employed JavaScript to fetch the necessary Git data for use by his Eleventy templates.
 
@@ -30,7 +30,7 @@ I'll get to the part about displaying commit info shortly but, first, let's note
 
 [^manualDates]: [By default](https://gohugo.io/getting-started/configuration/#configure-dates), Hugo will give higher priority to the Git info variable `.Lastmod` *vs.* other possibilities --- including any manual `Lastmod` entries you may have already provided in your content's front matter.
 
-**However**, there's a catch at the hosting level, although you can fix it **if** you're using a [GitHub Action](https://github.com/features/actions/) to deploy your site to your chosen host, as [I've been doing lately](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The problem is that, although these automated `.Lastmod` indications will be correct when you're developing *locally* with `hugo server`, they'll *all* take on the *current* date when you deploy. Fortunately, there's an explanation and solution, from a [thread](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)[^years] on the Hugo Discourse forum:
+**However**. in production, you will need to deploy your site using a [GitHub Action](https://github.com/features/actions/) (or other CI/CD), as [I've been doing lately](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The problem is that, although these automated `.Lastmod` indications will be correct when you're developing *locally* with `hugo server`, they'll *all* take on the *current* date when you deploy. Fortunately, there's an explanation and solution, from a [thread](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)[^years] on the Hugo Discourse forum:
 
 [^years]: The original question dates from December 25, 2019, but it took another 21 months before an answer, much less *the* answer, appeared. Jeeeez.
 
@@ -39,6 +39,8 @@ I'll get to the part about displaying commit info shortly but, first, let's note
 > If you modify the checkout action to fetch the entire history (by specifying `fetch-depth: 0`), then `.GitInfo` and `.Lastmod` [work] as expected[.]
 
 *[Stylistic edits and one link applied.]*
+
+This is because (a.) hosts' Git configurations for builds typically are set to so-called *shallow-clone* behavior; and, apparently, (b.) no host allows altering this in either its built-in UI or any optional config files (*e.g.*, `netlify.toml` with Netlify or `vercel.json` with Vercel). Shallow-clone behavior causes problems with using `.GitInfo` data as described in this post, so keep this in mind if you typically deploy via your host's built-in user interface rather than with CI/CD.
 
 After finding this answer, I simply added a `with` section to my GitHub Action's `Checkout default branch` step:
 
@@ -50,9 +52,6 @@ After finding this answer, I simply added a `with` section to my GitHub Action's
 ```
 
 . . . and, indeed, that fixed the glitch.
-
-**Update from the future**: I originally thought this issue was limited to deployments using GitHub Actions (or other CI/CD). Then, a few months later, I discovered that (a.) hosts' Git configurations for builds typically are set to so-called *shallow-clone* behavior; and, apparently, (b.) no host allows altering this in either its built-in UI or any optional config files (*e.g.*, `netlify.toml` with Netlify or `vercel.json` with Vercel). Shallow-clone behavior causes problems with using `.GitInfo` data as described in this post, so keep this in mind if you typically deploy via your host's built-in user interface rather than with CI/CD.
-{.box}
 
 Incidentally: I test for whether a post's day of original publication and its "last-modified" day are the same --- *e.g.*, when I fix a typo or otherwise edit something while it's still the same day as when I first issued the post --- and, if so, I show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so this is in each applicable template:
 
@@ -86,6 +85,8 @@ Well, the `.GitInfo` object also provides two variables for each commit's [hash]
 (The `if $.GitInfo` conditional prevents `hugo server` errors during local development while you're working on content you haven't yet committed.[^dateLastmod] You can thank [another Hugo Discourse forum answer](https://discourse.gohugo.io/t/adding-last-modified-git-status-to-pages/25402/5) for that one.)
 
 [^dateLastmod]: The reason you don't have to do this with the dates-display mentioned earlier is because, in that case, we're simply using `Lastmod` (a variable [Hugo already knows](https://gohugo.io/variables/page/)) rather than, specifically, `.GitInfo.Lastmod`, the absence of which for a given page gives Hugo fits.
+
+And, yes, the previous advisory still applies: *i.e.*, you have to deploy to your host via CI/CD in order to see the correct Git commit data for each post.
 
 <br />
 
