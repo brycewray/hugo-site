@@ -39,6 +39,7 @@ push.sh
 wm*.sh
 git*.sh
 gitoutput.txt
+data/git*.yml
 
 hugo_site-log.txt
 
