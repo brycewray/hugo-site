@@ -14,7 +14,7 @@
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml",
 		"git:host": "./get-git-data.sh",
     "prod:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo --minify",
-    "prod:hugo-git": "npm run install:hugo && git:host && exec-bin bin/hugo/hugo --minify",
+    "prod:hugo-git": "npm-run-all install:hugo git:host && exec-bin bin/hugo/hugo --minify",
     "hugonew": "exec-bin bin/hugo/hugo new",
     "prod:host": "npm-run-all build move-excerpts search",
     "prod:host-git": "npm-run-all build-git move-excerpts search",
