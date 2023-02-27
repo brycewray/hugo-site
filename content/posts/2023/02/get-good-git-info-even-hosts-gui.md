@@ -53,6 +53,7 @@ Put the following shell script --- which I call `git-get-data.sh` --- at the top
 ```bash
 #!/bin/bash
 rm -rf data/gitoutput.yml # avoid appending to existing file
+echo "Getting git data . . ."
 printf "gitinfo:\n" >> data/gitoutput.yml
 cd content
 git ls-tree -r --name-only HEAD | while read filename; do
