@@ -7,7 +7,7 @@ date: 2023-02-27T07:26:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-I've issued [two](/posts/2022/06/get-good-git-info-hugo/) [posts](/posts/2022/09/get-good-git-info-eleventy-too/) about how you can automatically include [Git commit data](https://git-scm.com/docs/git-commit) in your static website. The problem is that, if you deploy your site to a [Jamstack](https://jamstack.org)-type hosting service through its usual UI, you won't get the desired results. So let's fix that, whattaya say?
+I've issued [two](/posts/2022/06/get-good-git-info-hugo/) [posts](/posts/2022/09/get-good-git-info-eleventy-too/) about how you can automatically include [Git commit data](https://git-scm.com/docs/git-commit) in your static website. The problem is that, if you deploy your site to a [Jamstack](https://jamstack.org)-type hosting service through its usual UI, you may not get the desired results. So let's fix that, whattaya say?
 
 <!--more-->
 
@@ -28,13 +28,13 @@ In one of those earlier posts, I explained the problem:
 
 > . . . in order for this to work best, you'll have to use a [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) method of deploying your site. For anybody likely to find this article, you'll typically be using either [GitHub Actions](https://github.com/features/actions) or [GitLab CI/CD](https://docs.gitlab.com/ee/ci/). The reason this is necessary is because . . . there's no way to use any of the Jamstack-savvy web hosts' UIs to specify `fetch-depth: 0`, [which is necessary for this to work](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480).
 
-When copying your repository for deployment, these hosts do a so-called *shallow clone*. That means they fetch only a few of the most recent Git commits for the **entire project**, rather than performing a deeper clone that allows you to get the latest Git commit for **each page** on your site.[^VercelShallowClone]
+When copying your repository for deployment, some of these hosts do a so-called *shallow clone*. That means they fetch only a few of the most recent Git commits for the **entire project**, rather than performing a deeper clone that allows you to get the latest Git commit for **each page** on your site.
 
-[^VercelShallowClone]: For example, see [this Vercel documentation](https://vercel.com/guides/how-do-i-use-the-ignored-build-step-field-on-vercel), which specifies that Vercel fetches only ten levels of commit history when cloning a repo.
+For example, see [this documentation](https://vercel.com/guides/how-do-i-use-the-ignored-build-step-field-on-vercel), which specifies that [Vercel](https://vercel.com) fetches only ten levels of commit history when cloning a repo. On the other hand, [Netlify](https://netlify.com) [apparently](https://github.com/netlify/build-image/issues/317) does a very deep clone which is quite satisfactory for obtaining per-page commit data.
 
-Fortunately, on your local repo, you can do your *own* gathering of the Git data and then have your chosen SSG grab and use that data.
+In any event, the good thing is that, on your local repo, you can do your *own* gathering of the Git data and then have your chosen SSG grab and use that data. This means you won't have to worry one way or the other about your host's repo-cloning practices, which can simplify things if you want to change hosts for some reason.
 
-Here, I'm writing about how to go about that process in Hugo, but a lot of this should be equally applicable to Eleventy or, for that matter, quite a few other SSGs. I tested this successfully with the native UIs of both [Netlify](https://netlify.com) and [Vercel](https://vercel.com), but had no luck with [Cloudflare Pages](https://pages.cloudflare.com) --- probably due to ongoing issues with that host's extremely outdated build image.[^overdueFix] So, if you're deploying to CFP, I highly recommend using **only** CI/CD until further notice, perhaps even if you have no interest in showing accurate Git data but definitely if you do.
+Here, I'm writing about how to go about that process in Hugo, but a lot of this should be equally applicable to Eleventy or, for that matter, quite a few other SSGs. I tested this successfully with the native UIs of both Netlify and Vercel, but had no luck with [Cloudflare Pages](https://pages.cloudflare.com) --- probably due to ongoing issues with that host's extremely outdated build image.[^overdueFix] So, if you're deploying to CFP, I highly recommend using **only** CI/CD until further notice, perhaps even if you have no interest in showing accurate Git data but definitely if you do.
 
 [^overdueFix]: The CFP build image was supposed to have received a significant update sometime in late 2022. That apparently [has been delayed indefinitely](https://github.com/cloudflare/pages-build-image/discussions/1#discussioncomment-4597138).
 
@@ -63,7 +63,8 @@ git ls-tree -r --name-only HEAD | while read filename; do
 done
 ```
 
-**Note**: This will work fine in macOS or Linux; but, if you're using Windows, you'll need to run it in [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+**Note**: This will work fine in macOS or Linux; but, if you're using Windows, you'll need to run it in [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).\
+Also, be aware that using `git log`, as this script does, is slow and tends to be pretty rough on your CPU, getting only more so as the size of the examined repo grows.
 {.box}
 
 Then, after you've [given it the necessary file permissions](https://kb.iu.edu/d/abdb), run it:
@@ -132,3 +133,6 @@ Now, build the templating to access and display this data. Here are the relevant
 This obviously is a bit less convenient than the more automatic methods I explained in those earlier posts. Perhaps the most onerous part is that, after **each** new commit of *any* content page where you want to display the Git data, you'll have to (a.) re-run the shell script and (b.) commit the newly changed YML data file. That'll get old in a hurry if you make frequent changes to your project.
 
 Still, it works. So, if you prefer to deploy to your host's native UI yet still want that Git goodness that normally comes only from using CI/CD, now you know how to get there. And, no, that's not a pun. I think.
+
+**Update**: Thanks to [Joe Mooring](https://github.com/jmooring) and [Rodrigo Alcaraz de la Osa](https://fisiquimicamente.com/); their [helpful comments](https://discourse.gohugo.io/t/gitinfo-and-fetch-depth-when-using-host-gui/43156) contributed greatly toward post-publication revisions to improve this article's accuracy!
+{.box}
