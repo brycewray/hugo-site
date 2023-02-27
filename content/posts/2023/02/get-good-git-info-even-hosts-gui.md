@@ -30,11 +30,11 @@ In one of those earlier posts, I explained the problem:
 
 When copying your repository for deployment, some of these hosts do a so-called *shallow clone*. That means they fetch only a few of the most recent Git commits for the **entire project**, rather than performing a deeper clone that allows you to get the latest Git commit for **each page** on your site.
 
-For example, see [this documentation](https://vercel.com/guides/how-do-i-use-the-ignored-build-step-field-on-vercel), which specifies that [Vercel](https://vercel.com) fetches only ten levels of commit history when cloning a repo. Based on my testing, [Cloudflare Pages](https://pages.cloudflare.com) and [Render](https://render.com), similarly, do shallow clones. On the other hand, [Netlify](https://netlify.com) [apparently](https://github.com/netlify/build-image/issues/317) does a very deep clone which is quite satisfactory for obtaining per-page commit data.
+For example, see [this documentation](https://vercel.com/guides/how-do-i-use-the-ignored-build-step-field-on-vercel), which specifies that [Vercel](https://vercel.com) fetches only ten levels of commit history when cloning a repo. Based on my testing, [Cloudflare Pages](https://pages.cloudflare.com) and [Render](https://render.com), similarly, do shallow clones. On the other hand, [Netlify](https://netlify.com) [apparently](https://github.com/netlify/build-image/issues/317) does a very deep clone which is quite satisfactory for obtaining per-page commit data, and my testing confirmed that. I also found the same to be true for [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform).
 
 In any event, the good thing is that, on your local repo, you can do your *own* gathering of the Git data and then have your chosen SSG grab and use that data. This means you won't have to worry one way or the other about your host's repo-cloning practices, which can simplify things if you want to change hosts for some reason.
 
-Here, I'm writing about how to go about that process in Hugo, but a lot of this should be equally applicable to Eleventy or, for that matter, quite a few other SSGs. I tested this successfully with the native UIs of Cloudflare Pages, Netlify, Render, and Vercel.
+Here, I'm writing about how to go about that process in Hugo, but a lot of this should be equally applicable to Eleventy or, for that matter, quite a few other SSGs. I tested this successfully with the native UIs of Cloudflare Pages, DigitalOcean App Platform, Netlify, Render, and Vercel.
 
 Let's break down what this involves:
 
