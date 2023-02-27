@@ -2,7 +2,7 @@
 title: "Get good Git info even with a host’s GUI"
 description: "Got those “shallow clone blues”? If you have the time, we may have the fix."
 author: Bryce Wray
-date: 2023-02-27T07:23:00-06:00
+date: 2023-02-27T07:26:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
 ---
