@@ -1112,9 +1112,9 @@ gitinfo:
   AbbreviatedHash: 5bf14fba
   LastmodDate: 2023-02-24T15:09:13-06:00
 - FilePath: posts/2023/02/get-good-git-info-even-hosts-gui.md
-  Hash: 0d8192d64364678aa68a54484fe1a209e9a6a5f3
-  AbbreviatedHash: 0d8192d6
-  LastmodDate: 2023-02-27T10:23:54-06:00
+  Hash: 415c23f11a7142314d928cf566fbf5c315cf1b5d
+  AbbreviatedHash: 415c23f1
+  LastmodDate: 2023-02-27T10:56:03-06:00
 - FilePath: posts/2023/02/hugo-via-npm.md
   Hash: 638f8736f23874f6c0386b15548b62d0615af3d0
   AbbreviatedHash: 638f8736
