@@ -28,7 +28,9 @@ In one of those earlier posts, I explained the problem:
 
 > . . . in order for this to work best, you'll have to use a [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) method of deploying your site. For anybody likely to find this article, you'll typically be using either [GitHub Actions](https://github.com/features/actions) or [GitLab CI/CD](https://docs.gitlab.com/ee/ci/). The reason this is necessary is because . . . there's no way to use any of the Jamstack-savvy web hosts' UIs to specify `fetch-depth: 0`, [which is necessary for this to work](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480).
 
-When copying your repository for deployment, these hosts do a so-called *shallow clone*. That means they fetch only the most recent Git commit for the **entire project**, rather than performing a deeper clone that allows you to get the latest Git commit for **each page** on your site.
+When copying your repository for deployment, these hosts do a so-called *shallow clone*. That means they fetch only a few of the most recent Git commits for the **entire project**, rather than performing a deeper clone that allows you to get the latest Git commit for **each page** on your site.[^VercelShallowClone]
+
+[^VercelShallowClone]: For example, see [this Vercel documentation](https://vercel.com/guides/how-do-i-use-the-ignored-build-step-field-on-vercel), which specifies that Vercel fetches only ten levels of commit history when cloning a repo.
 
 Fortunately, on your local repo, you can do your *own* gathering of the Git data and then have your chosen SSG grab and use that data.
 
