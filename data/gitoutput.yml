@@ -1111,6 +1111,10 @@ gitinfo:
   Hash: 5bf14fba898a91b7cb13f99d44fdce4d59aa042e
   AbbreviatedHash: 5bf14fba
   LastmodDate: 2023-02-24T15:09:13-06:00
+- FilePath: posts/2023/02/get-good-git-info-even-hosts-gui.md
+  Hash: 5fea5c50960e0fcde2e5f48e8d7f43a6a7759421
+  AbbreviatedHash: 5fea5c50
+  LastmodDate: 2023-02-27T07:23:49-06:00
 - FilePath: posts/2023/02/hugo-via-npm.md
   Hash: 638f8736f23874f6c0386b15548b62d0615af3d0
   AbbreviatedHash: 638f8736
