@@ -9,6 +9,7 @@
 {{- $wordCount := $wordsToCount | countwords -}}
 {{- $readingMinsInt := div (float $wordCount) 225 | math.Floor -}}
 {{- $readingTime := div (float $wordCount) 225 -}}
+{{- $readingTimeMins := $readingTime | math.Ceil -}}
 {{- $readingSecsInt := printf "%02v" (mul 60 (sub $readingTime $readingMinsInt) | math.Ceil) -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 {{- $contactTitle := "Want to reach me?" -}}
@@ -26,7 +27,7 @@
 			</p>
 			{{- if eq .Site.Params.CICD true -}}{{/* use built-in .GitInfo */}}
 				<p class="ctr legal" data-pagefind-ignore>
-					{{- if $.GitInfo -}}<a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener">Latest commit</a> ({{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}{{ .Lastmod.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; {{ end }}<a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>{{- if (and (ne .Title "Want to reach me?") (ne .Title "Privacy policy") ) -}}<br />Reading time: {{ $readingMinsInt }}:{{ $readingSecsInt }} &bull; {{ $wordCountFmt }} words{{- end -}}
+					{{- if $.GitInfo -}}<a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener">Latest commit</a> ({{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}{{ .Lastmod.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; {{ end }}<a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>{{- if (and (ne .Title "Want to reach me?") (ne .Title "Privacy policy") ) -}}<br />Reading time: {{ $readingTimeMins }} minute{{- if (gt $readingTimeMins 1) -}}s{{- end }} &bull; {{ $wordCountFmt }} words{{- end -}}
 				</p>
 			{{- else -}}{{/* use data file */}}
 				{{/* start, variables for context in `range` */}}
@@ -37,7 +38,7 @@
 				{{- range $.Site.Data.gitoutput.gitinfo -}}
 					{{- if eq $FilePath .FilePath -}}
 						<p class="ctr legal" data-pagefind-ignore>
-							<a href="https://github.com/brycewray/hugo-site/commit/{{ .Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> ({{- if ne $PubDate (.LastmodDate | time.Format "2006-01-02") }}{{ .LastmodDate | time.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; <a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ $FilePath }}" title="This page’s commit history">History</a>{{- if (and (ne $Title "Want to reach me?") (ne $Title "Privacy policy") ) -}}<br />Reading time: {{ $readingMinsInt }}:{{ $readingSecsInt }} &bull; {{ $wordCountFmt }} words{{- end -}}
+							<a href="https://github.com/brycewray/hugo-site/commit/{{ .Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> ({{- if ne $PubDate (.LastmodDate | time.Format "2006-01-02") }}{{ .LastmodDate | time.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; <a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ $FilePath }}" title="This page’s commit history">History</a>{{- if (and (ne $Title "Want to reach me?") (ne $Title "Privacy policy") ) -}}<br />Reading time: {{ $readingTimeMins }} minute{{- if (gt $readingTimeMins 1) -}}s{{- end }} &bull; {{ $wordCountFmt }} words{{- end -}}
 						</p>
 					{{- end }}
 				{{- end }}
