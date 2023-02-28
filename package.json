@@ -14,7 +14,6 @@
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml",
     "prod:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo --minify",
     "hugonew": "exec-bin bin/hugo/hugo new",
-    "prod:host": "npm-run-all build move-excerpts search",
     "testbuild:hugo": "npm run install:hugo && npm run dev:hugo -- --minify --environment=production",
     "clean:sass": "rimraf themes/sass/assets/css",
     "style-exe:sass": "sass --no-source-map themes/sass/assets/scss:themes/sass/assets/css",
@@ -27,10 +26,10 @@
     "style-prod:newcss": "npm run style-exe:newcss",
     "style-testbuild:newcss": "npm run style-exe:newcss -- --watch",
     "start": "NODE_ENV=development npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel dev:hugo style-dev:$npm_package_config_theme",
-    "build": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme style-prod:$npm_package_config_theme prod:hugo",
-    "vercel-build": "npm run prod:host",
+    "build:prelim": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme style-prod:$npm_package_config_theme prod:hugo",
+    "build": "npm-run-all build:prelim move-excerpts search",
     "testbuild": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme --parallel testbuild:hugo style-testbuild:$npm_package_config_theme",
-    "testbuildpf": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme build dev:search --parallel testbuild:hugo style-testbuild:$npm_package_config_theme"
+    "testbuildpf": "NODE_ENV=production npm-run-all clean clean:$npm_package_config_theme style-exe:$npm_package_config_theme build:prelim dev:search --parallel testbuild:hugo style-testbuild:$npm_package_config_theme"
   },
   "author": "Bryce Wray",
   "license": "MIT",
