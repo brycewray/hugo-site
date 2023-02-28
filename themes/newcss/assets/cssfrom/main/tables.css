@@ -78,8 +78,13 @@ table.leagues {
 
 table.ulysses {
 	width: 100%;
-	table-layout: fixed; /* so don't have to spec each `td`'s width */
+	table-layout: auto;
 	border-collapse: collapse;
+	font-size: var(--text-xs);
+	@media screen and (min-width: 768px) {
+		font-size: inherit;
+		table-layout: fixed; /* so don't have to spec each `td`'s width */
+	}
 	& thead th {
 		background-color: #1d4fd7; /* blue-700 */
 		border: 1px solid black;
@@ -96,7 +101,12 @@ table.ulysses {
 			border: 1px solid white;
 			color: white;
 		}
-		padding: 0;
+	}
+	& thead th, & td {
+		padding: 0.125em 0.375em;
+	}
+	& thead th:nth-child(1), & td:nth-child(1) {
+		text-align: left;
 	}
 	& tr:nth-child(odd) {
 		background-color: white;
