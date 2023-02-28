@@ -10,6 +10,9 @@ date: 2022-09-05T10:01:00-05:00
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/get-good-git-info-from-eleventy-too-30in).
 {.box}
 
+**Update from the future**: Although the data and formatting in each page's header differ from what's described in this post, the code blocks contained herein are still accurate and usable.
+{.box}
+
 In "[Get good Git info from Hugo](/posts/2022/06/get-good-git-info-hugo/)," I explained how to use the [Hugo](https://gohugo.io) static site generator (SSG)’s built-in [Git info variables](https://gohugo.io/variables/git) to display page-by-page [Git commit](https://git-scm.com/docs/git-commit) data for one's static website. Well, lo and behold, you can get that kind of information in the [Eleventy](https://11ty.dev) SSG, too. You just need to add a little code, in the form of a [shortcode](https://www.11ty.dev/docs/shortcodes/) that takes advantage of [Eleventy-supplied data](https://www.11ty.dev/docs/data-eleventy-supplied/).
 
 ## It requires CI/CD
@@ -101,6 +104,10 @@ As for the final message conveyed in your site by `stringToRet`, you're obviousl
 If you typically show each page's initial publication date and last-modified date, you *can* choose to avoid worrying about that latter part from here on by just using `gitinfo`'s output, instead. (Some prefer to provide the last-modified info manually, to indicate only true content changes; by contrast, `gitinfo` can report only the last time the file was changed/committed at all, even if just to eliminate a totally invisible empty line someplace.)
 
 So, while it's indeed cool that Hugo wields Git info-handling prowess out of the box, this shortcode gives Eleventy the same powers. (I'll avoid the "great responsibility" trope.) Perhaps you can make good use of them.
+
+**Update, 2023-02-28**: As for this site, however, I have decided to skirt the issue entirely by showing only a "History" link back to the online repo. That's an easy **and** completely host-agnostic and (mostly) SSG-agnostic way to provide full information about each affected page's progression to its current state; and, thus, it likely will be of more interest to a wider audience, anyway.\
+I will, of course, leave this post and its [related](/posts/2022/06/get-good-git-info-hugo/) [posts](/posts/2023/02/get-good-git-info-even-hosts-gui/) in place for the sake of [transparency](/posts/2019/10/otoh/) and also because there are some readers who may still find the information useful.
+{.box}
 
 ## Acknowledgements and related material
 
