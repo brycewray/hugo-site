@@ -66,7 +66,7 @@ Limits:
 
 Other considerations:
 - Netlify supports repositories from [GitHub](https://github.com), [GitLab](https://gitlab.com), and [Bitbucket](https://bitbucket.org).
-- Assigning a custom domain to a Netlify-hosted site is easy and fast. Although Netlify documentation once suggested that it was necessary to use Netlify's own DNS setup to make the process go smoothly, that's not necessary.
+- Assigning a custom domain to a Netlify-hosted site is easy and fast. Although Netlify documentation once suggested that it was necessary to use Netlify's own DNS setup to make the process go smoothly, that's not the case.
 - If desired, you can switch a deployed site between two different repos.
 
 ### Vercel
