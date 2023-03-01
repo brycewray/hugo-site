@@ -1,4 +1,4 @@
-# borrowing from Zach Leatherman
+# borrowing some of this from Zach Leatherman's .editorconfig
 root = true
 
 [*]
