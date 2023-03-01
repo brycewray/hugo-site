@@ -145,7 +145,7 @@ The effort to update the build image, formerly slated for completion by now, is 
 
 ## Final thoughts
 
-In summary, I'd rank the hosts as follows for a typical new SSG user regarding the native UI of each host:
+In summary, I'd rank the hosts as follows for a typical new SSG user regarding deploying via the native UI of each host:
 
 1. Vercel tops the list, **unless** you're going to do any business whatsoever with your site (which bars you from the free tier). While its CDN is pedestrian compared to Cloudflare's, Vercel's stunning build speed and the solidity of its platform put it at the top. However, keep in mind that it's the only one of these without an official place (other than [Vercel's GitHub repo](https://github.com/vercel/vercel), perhaps) where you can ask for help.
 2. Render comes in a strong second. It fails to finish at the top mainly because its builds aren't as quick as Vercel's and its limits are considerably tighter, although 500 build minutes a month may be enough for the vast majority of cases. *(I didn't downrate Render for its custom-domain-assignment issues, which likely would bite you only once, if at all.)*
