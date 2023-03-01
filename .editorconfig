@@ -1,4 +1,4 @@
-# borrowing some of this from Zach Leatherman's .editorconfig in Eleventy repo
+# borrowing some of this from .editorconfig in Eleventy repo
 root = true
 
 [*]
