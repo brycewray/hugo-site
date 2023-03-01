@@ -151,7 +151,7 @@ In summary, I'd rank the hosts as follows for a typical new SSG user who plans t
 2. Render comes in a strong second. It fails to finish at the top mainly because its builds aren't as quick as Vercel's and its limits are considerably tighter, although 500 build minutes a month may be enough for the vast majority of cases. *(I didn't downrate Render for its custom-domain-assignment issues, which likely would bite you only once, if at all.)*
 3. Netlify is in the middle of this pack only because it's not as bad as the other two below. Its free-tier CDN is the worst of the bunch and Netlify's limits, while not horrible, tend to restrict active development.
 4. Cloudflare Pages would've been at or near the top of this list but for the hassles resulting from its ancient build image. Until that's resolved, CFP manages to be next-to-last by simply being not as bad as DOAP.
-5. DigitalOcean App platform ranks as high as fifth only because I can't rank it lower in a five-item list! The only thing DOAP has going for it is the Cloudflare CDN, and you can get that with Render or (if you must) CFP. Otherwise, DOAP's limits are far too tight and the startup process with its native UI is manipulative, to say the least.
+5. DigitalOcean App Platform ranks as high as fifth only because I can't rank it lower in a five-item list! The only thing DOAP has going for it is the Cloudflare CDN, and you can get that with Render or (if you must) CFP. Otherwise, DOAP's limits are far too tight and the startup process with its native UI is manipulative, to say the least.
 
 Or, if you prefer a chart:
 
