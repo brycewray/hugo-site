@@ -105,10 +105,6 @@ If you typically show each page's initial publication date and last-modified dat
 
 So, while it's indeed cool that Hugo wields Git info-handling prowess out of the box, this shortcode gives Eleventy the same powers. (I'll avoid the "great responsibility" trope.) Perhaps you can make good use of them.
 
-**Update, 2023-02-28**: As for this site, however, I have decided to skirt the issue entirely by showing only a "History" link back to the online repo. That's an easy **and** completely host-agnostic and (mostly) SSG-agnostic way to provide full information about each affected page's progression to its current state; and, thus, it likely will be of more interest to a wider audience, anyway.\
-I will, of course, leave this post and its [related](/posts/2022/06/get-good-git-info-hugo/) [posts](/posts/2023/02/get-good-git-info-even-hosts-gui/) in place for the sake of [transparency](/posts/2019/10/otoh/) and also because there are some readers who may still find the information useful.
-{.box}
-
 ## Acknowledgements and related material
 
 - Zachary Betz, "[Create React App: Show Current Git Branch and Commit Hash From Any OS](https://zwbetz.com/create-react-app-show-current-git-branch-and-commit-hash-from-any-os/)" (<span class="nobrk">2021-06-22</span>).

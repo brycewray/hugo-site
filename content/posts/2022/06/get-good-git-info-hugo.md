@@ -94,9 +94,3 @@ So, now, you've automated both (a.) displaying that `Lastmod` stuff and (b.) lin
 
 **Update, 2022-10-07**: If you're interested in displaying **both** per-page Git info **and** whole-site Git info in your Hugo site, check the [solution](https://github.com/gohugoio/hugo/issues/9738#issuecomment-1086669372) suggested by Hugo expert/contributor [Joe Mooring](https://github.com/jmooring). Thanks to [Rodrigo Alcaraz de la Osa](https://github.com/rodrigoalcarazdelaosa) for the [Q&amp;A session](https://github.com/brycewray/comments/discussions/25) that led me toward this additional information!
 {.box}
-
-<br />
-
-**Update, 2023-02-28**: As for this site, however, I have decided to skirt the issue entirely by showing only a "History" link back to the online repo. That's an easy **and** completely host-agnostic and (mostly) SSG-agnostic way to provide full information about each affected page's progression to its current state; and, thus, it likely will be of more interest to a wider audience, anyway.\
-I will, of course, leave this post and its [two](/posts/2022/09/get-good-git-info-eleventy-too/) [successors](/posts/2023/02/get-good-git-info-even-hosts-gui/) in place for the sake of [transparency](/posts/2019/10/otoh/) and also because there are some readers who may still find the information useful.
-{.box}

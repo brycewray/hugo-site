@@ -7,9 +7,6 @@ date: 2023-02-27T07:26:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-**Note**: Please see "Update, 2023-02-28" at the end.
-{.box}
-
 I've issued [two](/posts/2022/06/get-good-git-info-hugo/) [posts](/posts/2022/09/get-good-git-info-eleventy-too/) about how you can automatically include [Git commit data](https://git-scm.com/docs/git-commit) in your static website. The problem is that, if you deploy your site to a [Jamstack](https://jamstack.org)-type hosting service through its usual UI, you may not get the desired results. So let's fix that, whattaya say?
 
 <!--more-->
@@ -136,10 +133,4 @@ This obviously is a bit less convenient than the more automatic methods I explai
 Still, it works. So, if you prefer to deploy to your host's native UI yet still want that Git goodness that normally comes only from using CI/CD, now you know how to get there. And, no, that's not a pun. I think.
 
 **Update, same day**: Thanks to [Joe Mooring](https://github.com/jmooring) and [Rodrigo Alcaraz de la Osa](https://fisiquimicamente.com/); their [helpful comments](https://discourse.gohugo.io/t/gitinfo-and-fetch-depth-when-using-host-gui/43156) contributed greatly toward post-publication revisions to improve this article's accuracy!
-{.box}
-
-<br />
-
-**Update, 2023-02-28**: As for this site, however, I have reconsidered the need for all this, regardless of the host and the shallowness or depth of its repo cloning, and decided to skirt the issue entirely by showing only a "History" link back to the online repo. That's an easy **and** completely host-agnostic and (mostly) SSG-agnostic way to provide full information about each affected page's progression to its current state; and, thus, it likely will be of more interest to a wider audience, anyway.\
-I will, of course, leave this post and its aforementioned predecessors in place for the sake of [transparency](/posts/2019/10/otoh/) and also because there are some readers who may still find the information useful.
 {.box}
