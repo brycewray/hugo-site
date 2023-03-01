@@ -95,7 +95,7 @@ Render's CDN uses [Cloudflare](https://www.cloudflare.com/cdn/) and its [hundred
 
 The Render UI ranks about the same as Vercel's: not bad, but not as easy as Netlify's.
 
-Builds are reasonably fast, especially after the first. 
+Builds are reasonably fast, especially after the first.
 
 Limits:
 - 500 build minutes per month.
