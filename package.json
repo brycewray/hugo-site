@@ -5,7 +5,7 @@
 		"node": "18.x"
 	},
   "config": {
-    "hugo": "0.110.0",
+    "hugo": "0.111.0",
     "theme": "newcss"
   },
   "scripts": {
