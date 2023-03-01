@@ -23,6 +23,9 @@ There are four tasks to perform, the first of which you should need to do only o
 
 With that established, let's break this up into three sections that you can toggle to expand or compress so you'll be looking at only what applies to you and your OS/device combo. I have successfully tested these procedures in all three OSs mentioned, using macOS natively and running Linux and Windows in virtual machines.
 
+**Note from the future**: The reason we'll be adding **both** `bin` and `bin/sass_embedded` to the `PATH` is so that, if you also like to download and install the Hugo binary rather than depending on a package manager (*e.g.*, as explained in my later post, "[How I install Hugo](/posts/2022/10/how-i-install-hugo/)"), you can use `bin` for that purpose. It seems to me that the two installations --- the Hugo binary and the Embedded Dart Sass binary --- are sufficiently akin as to suggest such a method.
+{.box}
+
 ---
 
 ## Linux
