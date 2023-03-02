@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rimraf public",
     "search": "pagefind --source public",
-    "dev:search": "pagefind --source public --bundle-dir ../static/_pagefind",
+    "testbuild:search": "pagefind --source public --bundle-dir ../static/_pagefind",
     "install:hugo": "hugo-installer --version $npm_package_config_hugo --extended",
     "dev:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
     "move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml",
@@ -26,7 +26,7 @@
     "build:prelim": "NODE_ENV=production npm-run-all clean clean:css style-exe:css style-prod:css prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
     "testbuild": "NODE_ENV=production npm-run-all clean clean:css style-exe:css --parallel testbuild:hugo style-testbuild:css",
-    "testbuildpf": "NODE_ENV=production npm-run-all clean clean:css style-exe:css build:prelim dev:search --parallel testbuild:hugo style-testbuild:css"
+    "testbuildpf": "NODE_ENV=production npm-run-all clean clean:css style-exe:css build:prelim testbuild:search --parallel testbuild:hugo style-testbuild:css"
   },
   "author": "Bryce Wray",
   "license": "MIT",
