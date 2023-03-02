@@ -118,6 +118,8 @@ This is because, to quote that [comment from which I borrowed the code](https://
 
 > Collections don’t include layouts or includes, which still require importing macros manually[.]
 
+<br />
+
 **Note**: On the other hand, if you're using any `.njk` files for *content* --- although I can't imagine *why* when Markdown is so much easier to write, but, hey . . . --- this config would allow you to do one-line calls in *those* Nunjucks files, as in the Markdown example.
 {.box}
 
