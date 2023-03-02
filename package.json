@@ -21,12 +21,11 @@
     "style-exe:css": "postcss assets/cssfrom --dir assets/css",
     "style-dev:css": "npm run style-exe:css -- --watch",
     "style-prod:css": "npm run style-exe:css",
-    "style-testbuild:css": "npm run style-exe:css -- --watch",
     "start": "NODE_ENV=development npm-run-all clean clean:css style-exe:css --parallel dev:hugo style-dev:css",
     "build:prelim": "NODE_ENV=production npm-run-all clean clean:css style-exe:css style-prod:css prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
-    "testbuild": "NODE_ENV=production npm-run-all clean clean:css style-exe:css --parallel testbuild:hugo style-testbuild:css",
-    "testbuildpf": "NODE_ENV=production npm-run-all clean clean:css style-exe:css build:prelim testbuild:search --parallel testbuild:hugo style-testbuild:css"
+    "testbuild": "NODE_ENV=production npm-run-all clean clean:css style-exe:css --parallel testbuild:hugo style-dev:css",
+    "testbuildpf": "NODE_ENV=production npm-run-all clean clean:css style-exe:css build:prelim testbuild:search --parallel testbuild:hugo style-dev:css"
   },
   "author": "Bryce Wray",
   "license": "MIT",
