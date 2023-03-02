@@ -4,22 +4,22 @@
 	--default-color: hsl(0, 0%, 20%);
 	--white: hsl(0, 0%, 100%);
 	--black: hsl(0, 0%, 0%);
-	--twcss-slate-50: #f8fafc;
 	*/
+	--twcss-slate-50: #f8fafc;
 	--twcss-slate-100: #f1f5f9;
-	/* --twcss-slate-200: #e1e7ef; */
+	--twcss-slate-200: #e1e7ef;
 	--twcss-slate-300: #cbd5e1;
 	--twcss-slate-400: #94a3b8;
 	--twcss-slate-500: #65758b;
 	--twcss-slate-600: #48566a;
-	/*
 	--twcss-slate-700: #344256;
 	--twcss-slate-800: #1d283a;
+	/*
 	--twcss-slate-900: #0f1729;
 	--twcss-gray-50: #f9fafb;
 	*/
 	--twcss-gray-100: #f3f4f6;
-	/* --twcss-gray-200: #e5e7eb; */
+	--twcss-gray-200: #e5e7eb;
 	--twcss-gray-300: #d1d5db;
 	/*
 	--twcss-gray-400: #9ca3af;
@@ -63,11 +63,13 @@
 	--twcss-red-50: #fef2f2;
 	--twcss-red-100: #fee2e2;
 	--twcss-red-200: #fecaca;
+	*/
 	--twcss-red-300: #fca6a6;
 	--twcss-red-400: #f87171;
-	--twcss-red-500: #ef4444;
+	/* --twcss-red-500: #ef4444; */
 	--twcss-red-600: #dc2626;
 	--twcss-red-700: #ba1c1c;
+	/*
 	--twcss-red-800: #981b1b;
 	--twcss-red-900: #7f1d1d;
 	--twcss-orange-50: #fff7ed;
@@ -160,14 +162,14 @@
 	--twcss-sky-900: #0c4a6e;
 	--twcss-blue-50: #f0f6ff;
 	--twcss-blue-100: #dcebfe;
-	--twcss-blue-200: #bedbfe;
 	*/
+	--twcss-blue-200: #bedbfe;
 	--twcss-blue-300: #91c3fd;
 	/* --twcss-blue-400: #61a6fa; */
 	/* --twcss-blue-500: #3c83f6; */
 	/* --twcss-blue-600: #2463eb; */
 	--twcss-blue-700: #1d4fd7;
-	/* --twcss-blue-800: #1e3b8a; */
+	--twcss-blue-800: #1e3b8a;
 	--twcss-blue-900: #1f3b8a;
 	/*
 	--twcss-indigo-50: #eef2ff;
@@ -236,7 +238,7 @@
 	/* font families */
 	--sans-serif: ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-	--serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--serif: ui-serif, "New York", Georgia, Cambria, "Times New Roman", Times, serif;
 	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
 	/* text sizes */
 	--text-xs: 0.75rem;
