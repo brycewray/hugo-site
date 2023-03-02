@@ -233,7 +233,7 @@ $twcss: (
 // Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome"
 $sans-serif: ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+$serif: ui-serif, "New York", Georgia, Cambria, "Times New Roman", Times, serif;
 $monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
 
 // like Tailwind **SIZES**
