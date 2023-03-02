@@ -1,9 +1,10 @@
 @charset 'utf-8';
 
-FourOhFour-Wrapper {
+.FourOhFour-Wrapper {
 	padding-top: 10vh;
+	/* font-family: var(--sans-serif); */
 }
-FourOhFour-Body {
+.FourOhFour-Body {
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
