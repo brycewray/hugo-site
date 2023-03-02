@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 code {
-	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+	font-family: var(--monospaced);
 }
 
 code, article code, .box code {

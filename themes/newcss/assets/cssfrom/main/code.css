@@ -3,23 +3,13 @@
 /* Background */
 
 .chroma, .code-inline {
-	/* --twcss-slate-200: #e1e7ef; */
-	/* --twcss-slate-300: #cbd5e1; */
-	/* --twcss-slate-700: #344256; */
-	/* --twcss-slate-800: #1d283a; */
-	/* --twcss-gray-100: #f3f4f6; */
-	/* --twcss-gray-200: #e5e7eb; */
-	/* --twcss-gray-300: #d1d5db; */
 	--twcss-gray-400: #9ca3af;
 	--twcss-gray-500: #6b7280;
-	/* --twcss-gray-700: #384252; */
 	--twcss-gray-800: #1f2937;
 	--twcss-zinc-300: #d4d4d8;
 	--twcss-zinc-800: #27272a;
 	--twcss-stone-300: #d6d3d1;
 	--twcss-stone-800: #292524;
-	/* --twcss-red-300: #fca6a6; */
-	/* --twcss-red-700: #ba1c1c; */
 	--twcss-red-800: #981b1b;
 	--twcss-red-900: #7f1d1d;
 	--twcss-orange-200: #fed7aa;
@@ -53,7 +43,6 @@
 	--twcss-fuchsia-700: #a21caf;
 	--twcss-rose-200: #fecdd3;
 	--twcss-rose-800: #9f1239;
-	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
 	color: black;
 	background-color: white;
 	border: 1px solid var(--twcss-gray-400); /* gray-400 */
