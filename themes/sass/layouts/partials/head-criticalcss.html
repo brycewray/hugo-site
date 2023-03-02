@@ -1,5 +1,0 @@
-	{{- $css := "" -}}
-	{{- $css = resources.Get "css/critical.css" -}}
-	{{- with $css }}
-		<style>{{ .Content | safeCSS }}</style>
-	{{- end }}
