@@ -25,7 +25,7 @@ Stranger still was that I hadn't encountered this problematic behavior during my
 
 [^year]: **Update, 2023-01-09**: I've learned of an additional gotcha in using a Fastmail profile; it lasts for only a year at a time and then must be re-installed, due to its use of an authentication certificate. H/t to [Don](https://mstdn.social/@case2tv@social.tchncs.de/109659289519785253) for tipping me off to this info.
 
-Given that my initial encounter with the sending error had been when I'd tried to reply from an alias, I naïvely thought I'd quickly located the problem. I then deleted the profile, manually added all the necessary Fastmail IMAP and SMTP server settings, and began trying to send from the Fastmail alias to my *@iCloud.com* address.
+Given that my initial encounter with the sending error had been when I'd tried to reply from an alias, I naïvely thought I'd quickly located the problem. I then deleted the profile, manually added all the necessary Fastmail IMAP and SMTP server settings, and began trying to send from the Fastmail alias to my *@icloud.com* address.
 
 Failure after failure ensued.
 
