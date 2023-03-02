@@ -75,17 +75,17 @@
 .homePost-Description {
 	margin-top: 0.5em;
 	/* font-family: var(--serif); */
-	/* font-style: italic; */
+	font-style: italic;
 	letter-spacing: -0.0125em;
 	font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
 }
 .homePost-Dates {
 	margin-top: 0.5em;
 	margin-bottom: 1em;
-	/* font-family: var(--sans-serif); */
+	font-family: var(--sans-serif);
 	font-size: clamp(0.875rem, 0.75rem + 1vw, 1.125rem);
 }
 .homePost-Finish {
-	/* font-family: var(--sans-serif); */
+	font-family: var(--sans-serif);
 	margin-top: 3em;
 }

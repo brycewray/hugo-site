@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 .searchDiv, .searchDivPF {
-	/* font-family: var(--sans-serif); */
+	font-family: var(--sans-serif);
 	--twcss-gray-800: #1f2937;
 	--twcss-blue-50: #f0f6ff;
 	margin: 2em auto;

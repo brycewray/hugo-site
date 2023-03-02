@@ -1,8 +1,6 @@
-/*
-.box, .imgcCaption {
+.box, .imgcCaption, .legal, .pokey {
  	font-family: var(--sans-serif);
 }
-*/
 
 .ctr {
 	text-align: center;

@@ -2,9 +2,9 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: black;
+	color: var(--twcss-gray-900);
 	@media (prefers-color-scheme: dark) {
-		color: white;
+		color: var(--twcss-gray-300);
 	}
 	&:hover{
 		color: var(--twcss-blue-800);

@@ -3,7 +3,7 @@
 table {
 	--twcss-emerald-50: #ecfdf5;
 	--twcss-emerald-900: #064e3b;
-	/* font-family: var(--sans-serif); */
+	font-family: var(--sans-serif);
 }
 
 td {

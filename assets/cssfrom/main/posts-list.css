@@ -3,6 +3,7 @@
 /* .posts-Wrapper {
 	font-family: var(--sans-serif);
 } */
+
 .posts-pagerGray {
 	color: var(--twcss-gray-300); /* gray-300 */
 }
@@ -51,12 +52,13 @@
 .posts-Description {
 	font-size: clamp(0.95rem, 0.625rem + 1vw, 1.375rem);
 	/* font-family: var(--serif); */
-	/* font-style: italic; */
+	font-style: italic;
 	letter-spacing: -0.0125em;
 	margin-top: 0.5em;
 	margin-bottom: 0.25em;
 }
 .posts-Dates {
+	font-family: var(--sans-serif);
 	font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
 	line-height: 1.33;
 	margin-bottom: 0.5em;
