@@ -7,12 +7,12 @@ html, body {
 	font-feature-settings: "liga" 1; /* if using any ligature-savvy fonts, ligatures won't work without this */
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
-	font-family: var(--sans-serif);
+	font-family: var(--serif);
 	background-color: var(--twcss-slate-100); /* slate-100 */
 	color: var(--twcss-gray-900); /* gray-900 */
 	@media (prefers-color-scheme: dark) {
 		background: black;
-		color: var(--twcss-gray-100); /* gray-100 */
+		color: var(--twcss-gray-300); /* gray-100 */
 	}
 	background-image: linear-gradient(
 		var(--twcss-slate-600),
@@ -26,6 +26,10 @@ html, body {
 			transparent 10em
 		); /* slate-500 -> slate-800 -> transparent */
 	}
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, footer {
+	font-family: var(--sans-serif);
 }
 
 html {
@@ -119,7 +123,7 @@ blockquote {
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		/* border-left is same color */
-		color: var(--twcss-gray-300); /* gray-300 */
+		color: var(--twcss-gray-400); /* gray-300 */
 	}
 	& p:last-child {
 		margin-bottom: 0;
