@@ -49,9 +49,13 @@ When run from a `package.json` script, Hugo Installer checks for the presence of
 		"prod:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo --minify",
 ```
 
-You'll note my use of a `config` object, in which I provide the desired Hugo version. This allows me a clear, easily identified place to change that spec at a moment's notice whenever I wish. Down in the `install:hugo` script, I call back to that specification by using `$npm_package_config_hugo`.[^pkgVars]
+You'll note my use of a `config` object, in which I provide the desired Hugo version. This allows me a clear, easily identified place to change that spec at a moment's notice whenever I wish. Down in the `install:hugo` script, I call back to that specification by using `$npm_package_config_hugo`.[^pkgVars] **By the way**: while that works fine (and I have other purposes for using `$npm_package_`, anyway), [Hugo Installer also lets you do this](https://github.com/dominique-mueller/hugo-installer#configure-hugo-version-required), given what's shown above for that `config` object:
 
 [^pkgVars]: I encourage you to read [Brian Childress](https://brianchildress.co/)'s 2018 article, "[Variables in package.json](https://brianchildress.co/variables-in-package-json/)," which was a great help in this aspect of the changeover.
+
+```json
+"install:hugo": "hugo-installer --version config.hugo --extended",
+```
 
 ## Any sour points?
 
