@@ -233,6 +233,8 @@
 	--twcss-rose-800: #9f1239;
 	--twcss-rose-900: #881337;
 	*/
+	--default-light: var(--twcss-gray-900);
+	--default-dark: var(--twcss-gray-300);
 
 	/* === TYPOGRAPHY === */
 	/* font families */

@@ -2,12 +2,12 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: var(--twcss-gray-900);
+	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
-		color: var(--twcss-gray-300);
+		color: var(--default-dark);
 	}
-	&:hover{
-		color: var(--twcss-blue-800);
+	&:focus, &:hover, &:active {
+		color: var(--twcss-blue-700);
 		text-decoration: underline;
 		text-decoration-thickness: var(--textDcThick); /* always rem */
 		text-underline-offset: var(--textUnOffst); /* always em */

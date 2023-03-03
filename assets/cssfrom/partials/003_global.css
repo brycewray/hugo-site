@@ -9,10 +9,10 @@ html, body {
 	font-kerning: normal;
 	font-family: var(--sans-serif);
 	background-color: var(--twcss-slate-100); /* slate-100 */
-	color: var(--twcss-gray-900); /* gray-900 */
+	color: var(--default-light); /* gray-900 */
 	@media (prefers-color-scheme: dark) {
 		background: black;
-		color: var(--twcss-gray-300); /* gray-100 */
+		color: var(--default-dark); /* gray-100 */
 	}
 	background-image: linear-gradient(
 		var(--twcss-slate-600),
