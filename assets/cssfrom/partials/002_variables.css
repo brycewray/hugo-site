@@ -236,10 +236,10 @@
 
 	/* === TYPOGRAPHY === */
 	/* font families */
-	--sans-serif: ui-sans-serif, system-ui, -apple-system,BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--serif: ui-serif, "New York", Georgia, Cambria, "Times New Roman", Times, serif;
 	--monospaced: SFMono-Regular, "SF Mono", ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	/* text sizes */
 	--text-xs: 0.75rem;
 	--text-sm: 0.875rem;
