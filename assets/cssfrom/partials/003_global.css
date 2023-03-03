@@ -85,6 +85,10 @@ a, a:focus, a:hover, a:active {
 	text-decoration-thickness: var(--textDcThick); /* always rem */
 	text-underline-offset: var(--textUnOffst); /* always em */
 	text-decoration-skip-ink: auto;
+	@media screen and (min-width: 768px) {
+		--textDcThick: 0.05rem;
+		--textUnOffst: 0.275em;
+	}
 }
 
 a {

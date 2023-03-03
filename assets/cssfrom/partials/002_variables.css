@@ -257,8 +257,8 @@
 	--text-9xl: 8rem;
 	*/
 	/* underlines for hrefs */
-	--textDcThick: 0.075rem;
-	--textUnOffst: 0.25em;
+	--textDcThick: 0.0275rem; /* always rem */
+	--textUnOffst: 0.325em; /* always em */
 	/* ^^^ 0.225em is OK with Libre Franklin,
 	       but Segoe UI needs at least 0.25em
 	*/
