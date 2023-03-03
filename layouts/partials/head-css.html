@@ -63,10 +63,12 @@
 					{{- $css = $css | minify -}}
 				{{- end }}
 				<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen">
 			{{ end -}}
 		{{- end -}}
 
+		{{- $printCSS := resources.Get "css/print.css" | fingerprint "md5" -}}
+		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print">
 		{{/*
 			<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="styles.css"></noscript>

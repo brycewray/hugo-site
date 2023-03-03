@@ -2,5 +2,5 @@
 			{{/* Go get and concatenate what `postcss-cli` has built from the partials */}}
 			{{- $css = (resources.Match "css/0*.css") | resources.Concat "critical.css" -}}
 			{{- with $css }}
-				<style>{{ .Content | safeCSS }}</style>
+				<style media="screen">{{ .Content | safeCSS }}</style>
 			{{- end }}

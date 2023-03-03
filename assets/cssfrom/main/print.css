@@ -87,11 +87,11 @@
 		width: 90% !important;
 	}
 	article:after {
-		content: "Site textual content © 2018–2022 Bryce Wray except where otherwise noted.";
+		content: "Site textual content © 2018–2023 Bryce Wray except where otherwise noted.";
 		color: #000;
 		margin: 2em auto 0 auto;
 		text-align: center;
-		font-size: var(--text-xs);
+		font-size: 0.75rem;
 		padding-top: 2em;
 	}
 }
