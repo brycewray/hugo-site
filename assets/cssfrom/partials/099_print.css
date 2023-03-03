@@ -50,7 +50,7 @@
 		break-after: avoid-page;
 		break-inside: avoid-page;
 	}
-	.yellowBox, .blueBox {
+	.box {
 		background-color: #fff;
 	}
 	[class^="background-hero"] {
