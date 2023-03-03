@@ -9,21 +9,21 @@
 	header,
 	footer,
 	.bg-dark,
-	.background-hero-div,
-	.hero,
 	[class^="imgB-"],
 	.contactBtn,
 	.searchBtnDiv,
-	.giscus-comments,
-	.featured-image-caption * {
+	lite-youtube,
+	button,
+	.lyt-disclaimer,
+	.toot-header img,
+	.billboard-title-block p.legal {
 		display: none !important;
 	}
 	@page {
 		margin: 1in;
 	}
 	html,
-	body,
-	[class^="background-hero"] {
+	body {
 		font-family: sans-serif;
 		background-color: transparent !important;
 		color: #000 !important;
@@ -53,27 +53,11 @@
 	.box {
 		background-color: #fff;
 	}
-	[class^="background-hero"] {
-		position: relative !important;
-		background: none !important;
-		text-shadow: none !important;
-		margin-top: 0 !important;
-		padding-top: 0 !important;
-		height: auto !important;
-		max-height: auto !important;
-		min-height: auto !important;
-		color: #000 !important;
-		padding: 1em !important;
-	}
 	.imgCover {
 		object-fit: cover;
 		object-position: 50% 50%; /* H = middle; V = middle */
 		height: 100%;
 		width: 100%;
-	}
-	.background-hero .imgCover {
-		display: none !important;
-		height: 0 !important;
 	}
 	a {
 		color: #000 !important;
@@ -87,11 +71,11 @@
 		width: 90% !important;
 	}
 	article:after {
-		content: "Site textual content © 2018–2023 Bryce Wray except where otherwise noted.";
+		content: "Site textual content © 2018–2023 Bryce Wray except where otherwise noted. Some items, such as embedded videos, not printed.";
 		color: #000;
 		margin: 2em auto 0 auto;
 		text-align: center;
-		font-size: 0.75rem;
+		font-size: 0.75rem !important;
 		padding-top: 2em;
 	}
 }
