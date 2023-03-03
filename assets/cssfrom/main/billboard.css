@@ -36,7 +36,7 @@
 }
 .billboard-description-text {
 	/* font-family: var(--serif); */
-	font-style: italic;
+	/* font-style: italic; */
 	font-size: clamp(1.25rem, 0.75rem + 1.5vw, 2rem);
 	padding-top: 1em;
 	letter-spacing: -0.025em;

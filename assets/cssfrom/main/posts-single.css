@@ -42,7 +42,7 @@
 }
 
 .contactBtn {
-	font-family: var(--sans-serif);
+	/* font-family: var(--sans-serif); */
 	text-align: center;
 	--twcss-blue-50: #f0f6ff;
 	margin: 1.5em auto 1em;
