@@ -13,7 +13,7 @@ Using information from [David Papendrew](https://twitter.com/mentalpivot)'s arti
 It didn't take long to figure that this had something to do with the [`form-action` directive](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/form-action) of my site's [Content Security Policy](https://content-security-policy.com) (CSP), so I added DDG's domain to the directive:
 
 ```bash
-form-action: 'self' https://*.duckduckgo.com;
+form-action 'self' https://*.duckduckgo.com;
 ```
 
 . . . and figured that would do the job.
@@ -23,7 +23,7 @@ However, no such luck. The browser still reported via its console that it wouldn
 I then wondered whether this was happening because of the `*` wildcard character that I'd used in specifying that URL in `form-action`. As an experiment, I changed the `form-action` directive to:
 
 ```bash
-form-action: 'self' https://*.duckduckgo.com https://duckduckgo.com;
+form-action 'self' https://*.duckduckgo.com https://duckduckgo.com;
 ```
 
 . . . and **then** it worked. `</ForeheadSlap>`
