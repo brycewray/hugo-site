@@ -81,7 +81,7 @@
 	}
 }
 
-#search {
+#search, #search-ddg {
 	/* in case we need it */
 	margin: 0.5em auto 1em;
 }

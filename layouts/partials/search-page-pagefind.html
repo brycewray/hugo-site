@@ -20,4 +20,19 @@
 			});
 		});
 	</script>
+	<noscript data-pagefind-ignore>
+		<p class="ctr pokey">Since you have JavaScript disabled, you can use the following form to search this site with <a href="https://duckduckgo.com" rel="noopener">DuckDuckGo</a>,&nbsp;instead.<br />
+		<em class="legal">(Thanks to <a href="https://kevq.uk/search/" rel="noopener">Kev Quirk</a> for the&nbsp;idea.)</em></p>
+		{{- /*
+			h/t https://mentalpivot.com/using-duckduckgo-for-site-search-on-your-blog/
+		*/ -}}
+		<div class="searchDiv" data-pagefind-ignore>
+			<form method="get" id="search-ddg" class="pagefind-ui__form" action="https://duckduckgo.com/" title="DuckDuckGo search for www.brycewray.com">
+				<input type="hidden" name="sites" value="brycewray.com" />
+				<input class="searchInput pagefind-ui__search-input" type="text" name="q" maxlength="300" placeholder="Search this site" />
+			</form>
+			<p class="ctr legal">Results open in the same tab/window.</p>
+		</div>
+		<p class="ctr legal"><strong>Privacy notice</strong>: This search form sends site-specific queries to <a href="https://duckduckgo.com" rel="noopener">DuckDuckGo</a>, a privacy-focused search engine. See&nbsp;also the <a href="https://duckduckgo.com/privacy" rel="noopener">DuckDuckGo privacy&nbsp;policy</a>.</p>
+	</noscript>
 </div>
