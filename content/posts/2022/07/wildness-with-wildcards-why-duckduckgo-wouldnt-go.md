@@ -18,12 +18,12 @@ form-action: 'self' https://*.duckduckgo.com;
 
 . . . and figured that would do the job.
 
-However, no such luck. The browser still reported via its console that it wouldn't send form data to `https://duckduckduck.go` because that was a violation of the CSP's `form-action` directive.
+However, no such luck. The browser still reported via its console that it wouldn't send form data to `https://duckduckgo.com` because that was a violation of the CSP's `form-action` directive.
 
 I then wondered whether this was happening because of the `*` wildcard character that I'd used in specifying that URL in `form-action`. As an experiment, I changed the `form-action` directive to:
 
 ```bash
-form-action: 'self' https://*.duckduckduck.go https://duckduckgo.com;
+form-action: 'self' https://*.duckduckgo.com https://duckduckgo.com;
 ```
 
 . . . and **then** it worked. `</ForeheadSlap>`
