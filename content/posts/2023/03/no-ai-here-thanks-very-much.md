@@ -1,6 +1,6 @@
 ---
 title: "No AI here, thanks very much"
-description: "The web may keep adding artificially generated content, but this site won't be part of it."
+description: "The web may keep adding artificially generated content, but this site won’t be part of it."
 author: Bryce Wray
 date: 2023-03-04T10:34:00-06:00
 # draft: true
