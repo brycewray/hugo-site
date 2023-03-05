@@ -1,4 +1,4 @@
-name: Deploy to Render
+name: Deploy to Cloudflare Pages
 
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
@@ -81,11 +81,14 @@ jobs:
           mv public/posts/index.json public/index-excerpts.json
       - name: Run Pagefind
         run: pagefind_extended --source "public"
-      - name: Publish to Render
-        uses: johnbeynon/render-deploy-action@v0.0.8
+      - name: Publish to CFP
+        uses: cloudflare/pages-action@v1
         with:
-          service-id: ${{ secrets.RENDER_SERVICE_ID }} # required
-          api-key: ${{ secrets.RENDER_API_KEY }} # required
+          apiToken: ${{ secrets.CFP_API_TOKEN }}
+          accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'static-site'
+          directory: 'public'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
   # following, for restarts-on-failures, based on:
   # https://www.eliostruyf.com/restart-github-actions-workflow-failed/
   # restart_on_failed_push_build:
