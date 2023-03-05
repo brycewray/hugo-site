@@ -13,7 +13,7 @@
     "testbuild:search": "pagefind --source public --bundle-dir ../static/_pagefind",
     "install:hugo": "hugo-installer --version config.hugo --extended",
     "dev:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
-    "move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml",
+    "move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
     "prod:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo --minify",
     "hugonew": "exec-bin bin/hugo/hugo new",
     "testbuild:hugo": "npm run install:hugo && npm run dev:hugo -- --minify --environment=production",
