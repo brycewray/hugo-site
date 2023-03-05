@@ -2,12 +2,5 @@
 			{{/* Go get and concatenate what `postcss-cli` has built from the partials */}}
 			{{- $css = (resources.Match "css/0*.css") | resources.Concat "critical.css" -}}
 			{{- with $css }}
-				<!--
-				<link rel="preload" as="font" href="/fonts/Inter-3-19_subset_2021-06-18.woff2" type="font/woff2" crossorigin />
-				<link rel="preload" as="font" href="/fonts/PublicSans-Regular-VF-2-001_2022-05-11_subset.woff2" type="font/woff2" crossorigin>
-				<link rel="preload" as="font" href="/fonts/PublicSans-Italic-VF-2-001_2022-05-11_subset.woff2" type="font/woff2" crossorigin>
-				-->
-				<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-				<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 				<style media="screen">{{ .Content | safeCSS }}</style>
 			{{- end }}
