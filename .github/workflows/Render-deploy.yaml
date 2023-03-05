@@ -84,8 +84,8 @@ jobs:
       - name: Publish to Render
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
-          service_id: ${{ secrets.RENDER_SERVICE_ID }} # required
-          api_key: ${{ secrets.RENDER_API_KEY }} # required
+          service-id: ${{ secrets.RENDER_SERVICE_ID }} # required
+          api-key: ${{ secrets.RENDER_API_KEY }} # required
   # following, for restarts-on-failures, based on:
   # https://www.eliostruyf.com/restart-github-actions-workflow-failed/
   # restart_on_failed_push_build:
