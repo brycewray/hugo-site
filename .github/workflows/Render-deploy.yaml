@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Render
 
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
@@ -81,14 +81,13 @@ jobs:
           mv public/posts/index.json public/index-excerpts.json
       - name: Run Pagefind
         run: pagefind_extended --source "public"
-      - name: Publish to CFP
-        uses: cloudflare/pages-action@v1
+      - name: Publish to Render
+        uses: JorgeLNJunior/render-deploy@v1.3.2
         with:
-          apiToken: ${{ secrets.CFP_API_TOKEN }}
-          accountID: ${{ secrets.CF_ACCOUNT_ID }}
-          projectName: 'static-site'
-          directory: 'public'
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          service_id: ${{ secrets.RENDER_SERVICE_ID }} # required
+          api_key: ${{ secrets.RENDER_API_KEY }} # required
+          clear_cache: false # Clear build cache. Optional
+          wait_deploy: false # Wait until the deploy status is successful. Warning! Free Render services can take +5 minutes to be fully deployed. Optional
   # following, for restarts-on-failures, based on:
   # https://www.eliostruyf.com/restart-github-actions-workflow-failed/
   # restart_on_failed_push_build:
