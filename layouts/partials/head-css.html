@@ -65,5 +65,4 @@
 		{{- end -}}
 
 		{{- $printCSS := resources.Get "scss/print.scss" | resources.ToCSS $cssOptions | fingerprint "md5" -}}
-		<link rel="preload" href="{{ $printCSS.RelPermalink }}" as="style">
 		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print">
