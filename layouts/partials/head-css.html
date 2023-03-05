@@ -60,10 +60,10 @@
 				{{- $cssOptions := merge $cssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
 				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions | fingerprint "md5" -}}
 				<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
-				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen">
 			{{ end -}}
 		{{- end -}}
 
 		{{- $printCSS := resources.Get "scss/print.scss" | resources.ToCSS $cssOptions | fingerprint "md5" -}}
 		<link rel="preload" href="{{ $printCSS.RelPermalink }}" as="style">
-		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css">
+		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print">
