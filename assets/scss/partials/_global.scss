@@ -14,7 +14,7 @@ html, body {
 	color: map-get(var.$twcss, gray-900);
 	@media (prefers-color-scheme: dark) {
 		background: var.$black;
-		color: map-get(var.$twcss, gray-100);
+		color: map-get(var.$twcss, gray-300);
 	}
 	background-image: linear-gradient(
 		map-get(var.$twcss, slate-600),
@@ -121,7 +121,7 @@ blockquote {
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		// border-left is same color
-		color: map-get(var.$twcss, gray-300);
+		color: map-get(var.$twcss, gray-400);
 	}
 	p:last-child {
 		margin-bottom: 0;

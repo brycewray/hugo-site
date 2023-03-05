@@ -3,9 +3,9 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: var.$black;
+	color: map-get(var.$twcss, gray-900);
 	@media (prefers-color-scheme: dark) {
-		color: var.$white;
+		color: map-get(var.$twcss, gray-300);
 	}
 	&:hover, &:active, &:focus {
 		color: map-get(var.$twcss, blue-700);
