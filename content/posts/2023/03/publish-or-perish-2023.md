@@ -104,7 +104,7 @@ Limits:
 Other considerations:
 - Render supports repositories from GitHub and GitLab.
 - In the past, there have been issues with how quickly Render handles assignment of a custom domain; I've seen it take hours, although that's not the norm.
-- You cannot switch a deployed site between two different repos. Instead, you'll have to create a new project off the second repo and then, if applicable, point your custom domain to the new project. **However**, [I learned yesterday that this will change soon](https://feedback.render.com/features/p/interchangeable-repos-per-project); so, if this repo-switching feature is important to you, be advised that Render will have it in the near future.
+- **Update, 2023-03-05**: [Starting today](https://feedback.render.com/features/p/interchangeable-repos-per-project), Render allows you to switch a deployed site between two different repos.
 
 ### DigitalOcean App Platform
 
