@@ -76,7 +76,9 @@ jobs:
       - name: Build site with Hugo
         run: hugo --verbose --minify
       - name: Move "excerpts" feeds (RSS/Atom and JSON)
-        run: mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json
+        run: |
+          mv public/posts/index.xml public/index-excerpts.xml
+          mv public/posts/index.json public/index-excerpts.json
       - name: Run Pagefind
         run: pagefind_extended --source "public"
       - name: Publish to CFP
