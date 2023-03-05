@@ -18,6 +18,6 @@ bw@brycewray.com<br />
 
 - This site’s content feeds:
   - Full-text ([RSS/Atom](/index.xml) or [JSON](/index.json))
-  - Excerpt-only ([RSS/Atom](/index-excerpts.xml))
+  - Excerpt-only ([RSS/Atom](/index-excerpts.xml) or [JSON](/index-excerpts.json))
 - <a rel="me" title="GitHub" href="https://github.com/brycewray" rel="noopener">brycewray on GitHub</a>
 - <a rel="me" title="Mastodon" href="https://mastodon.social/@BryceWray" rel="noopener">@BryceWray on Mastodon</a>

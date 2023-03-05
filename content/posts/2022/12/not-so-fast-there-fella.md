@@ -103,6 +103,3 @@ Finally, **if you build manually** --- *i.e.*, you copy your Hugo-generated `pub
 
 - Move `public/posts/index.xml` to `public/` and rename the file `index-excerpts.xml`, so that it will be `public/index-excerpts.xml`.
 - Move `public/posts/index.json` to `public/` and rename the file `index-excerpts.json`, so that it will be `public/index-excerpts.json`.
-
-**Update, 2022-12-26**: After encountering some minor but apparently intractable issues with the JSON version of the excerpts-only feed (the issues appeared in testing with both [Eleventy](https://11ty.dev) and Hugo, and thus appeared to be SSG-agnostic), I have now killed that feed and no longer link to it from the [contacts page](/contacts). The RSS/Atom excerpts-only feed *does* remain intact --- as do both the full-text RSS/Atom and JSON feeds, of course.
-{.box}
