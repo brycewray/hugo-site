@@ -1,0 +1,39 @@
+@charset 'utf-8';
+@use 'partials/variables' as var;
+
+// === for HTML sitemap
+
+.sitemap {
+	&-Div {
+		// font-family: var.$sans-serif;
+		margin: 0 auto;
+		width: 90%;
+		@media screen and (min-width: var.$bkpt_lg) {
+			width: 40%;
+		}
+		h1 {
+			padding-top: clamp(1.75rem, 5vh, 3rem);
+			font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
+			letter-spacing: -0.025em;
+			margin-bottom: 0.25em;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			// font-weight: bold;
+		}
+
+		ul li {
+			font-size: var.$text-sm;
+			// font-family: var.$sans-serif;
+			margin-bottom: 0.75em;
+			line-height: 1.375;
+		}
+		// .description {
+			// font-family: var.$sans-serif;
+			// font-style: italic;
+		// }
+	}
+}
+
+// === end, for HTML sitemap
