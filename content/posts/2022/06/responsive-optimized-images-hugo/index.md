@@ -6,8 +6,6 @@ date: 2022-06-29T08:17:00-05:00
 #initTextEditor: iA Writer
 ---
 
-{{% disclaimer %}}
-
 If you use any images on your website, you probably know how important it is to make them fully *responsive* and as *optimized* as possible so they provide an optimal user experience, regardless of screen size or connectivity. Fortunately, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) comes with many impressive [image processing capabilities](https://gohugo.io/content-management/image-processing/) which can help you automate this to an amazing degree. Hugo can resize images of all sizes, convert them to multiple different formats, and perform many more image processing feats --- all much more quickly than can any other SSG.
 
 Years ago, the availability of Hugo image processing was more restrictive concerning the images' location within a Hugo project. Specifically, they had to be [*page resources*](https://gohugo.io/content-management/image-processing/#page-resources), and thus in the same folder as the Markdown content calling them. While that's still perfectly fine, they now also can be [*global resources*](https://gohugo.io/content-management/image-processing/#global-resources), existing in either the project's `assets/` folder or any subfolder thereof.[^versionGlobal] I'm old-school and prefer to keep textual content files separate from image files, so I like this flexibility quite a bit.
