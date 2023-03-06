@@ -82,7 +82,7 @@ h4, .h4 {
 a, a:focus, a:hover, a:active {
 	text-decoration-thickness: var.$textDcThick;
 	text-underline-offset: var.$textUnOffst;
-	@media screen and (min-width: $bkpt_md) {
+	@media screen and (min-width: var.$bkpt_md) {
 		text-decoration-thickness: var.$textDcThickMd;
 		text-underline-offset: var.$textUnOffstMd;
 	}
