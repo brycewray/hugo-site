@@ -6,9 +6,9 @@
 
 {{/* init vars */}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
-{{- $imgBase := "images/" -}} {{/* This will be from top-level /assets/images */}}
-{{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}
-{{- /* $src := .Page.Resources.GetMatch (.Get "src") */ -}}
+{{- /* $imgBase := "images/" */ -}} {{/* This will be from top-level /assets/images */}}
+{{/*  {{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}  */}}
+{{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
 {{- $phn := false -}}
 {{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
