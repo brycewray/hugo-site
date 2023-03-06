@@ -27,9 +27,9 @@ The data from [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate li
 
 In large part, this experience with Ulysses is because, as novelist [Chris Rosser](https://chrisrosser.net) [observed](https://chrisrosser.net/posts/2020/07/17/another-look-at-ia-writer/) about these apps: "Where iA [Writer] tries to create a zen-like focused drafting experience, Ulysses nails it with its aesthetics and the graceful way in which it handles ugly markup." So exactly how *does* each app handle "ugly markup"? Look at these screen captures of how the two handle the same paragraph --- in this case, the one, above, that starts with "Another thing about Ulysses." Ulysses goes first.[^5]
 
-{{< imgh src="Ulysses_paragraph_sample_1366x562.png" alt="Screen capture of Ulysses for a given paragraph" >}}
+{{< imgc src="Ulysses_paragraph_sample_1366x562.png" alt="Screen capture of Ulysses for a given paragraph" width=1366 height=562 >}}
 <br />
-{{< imgh src="iA_Writer_paragraph_sample_1334x682.png" alt="Screen capture of iA Writer for a given paragraph" >}}
+{{< imgc src="iA_Writer_paragraph_sample_1334x682.png" alt="Screen capture of iA Writer for a given paragraph" width=1334 height=682 >}}
 
 *Although the [Next.js](https://nextjs.org) and [Nuxt.js](https://nuxtjs.org) JavaScript frameworks have [significantly](https://nextjs.org/blog/next-9-3) [improved](https://nuxtjs.org/blog/nuxt-static-improvements) their abilities to generate [static websites](https://dev.to/gtanyware/what-is-a-static-website-4k3o), **dedicated** [static site generators (SSGs)](https://staticgen.com) like [Eleventy](https://11ty.dev) (which powers this site) are ’waaaay easier to use and far less finicky. Want to build a web **app**? Either Next.js or Nuxt.js is great for that. Want to build and maintain a web**site**? Use a dedicated SSG.*
 

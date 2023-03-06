@@ -58,7 +58,7 @@ Those who have inflicted upon themselves the curse of reading any significant nu
 
 Here's an example, using a screen capture of a paragraph from last year's "[YouTube TV and the RSNs flap](/posts/2020/02/youtube-tv-rsns-flap/)":
 
-{{< imgh src="Eleventy-bracketed-footnotes_2520x844.png" alt="Paragraph ending in a footnote whose number is bracketed" >}}
+{{< imgc src="Eleventy-bracketed-footnotes_2520x844.png" alt="Paragraph ending in a footnote whose number is bracketed" width=2520 height=844 >}}
 
 But it turns out there's been an answer out there for months, in the form of [Mark Llobrera](https://www.markllobrera.com)'s "[Eleventy: Markdown and Footnotes](https://www.markllobrera.com/posts/eleventy-markdown-and-footnotes/)," in which he prescribed adding the following code within the part of the `.eleventy.js` config file that specifies how markdown-it and its various plugins will work with Eleventy:
 
@@ -78,7 +78,7 @@ After a brief and successful test on a repo branch, I gleefully incorporated his
 
 [^semiColons]: Well, all but the semicolons at lines’ ends. I'm one of those who [choose to avoid them in their JS](https://flaviocopes.com/javascript-automatic-semicolon-insertion/). Sorry, [pro-semicolon partisans](https://medium.com/better-programming/you-might-need-those-semicolons-in-your-javascript-after-all-b28154f93ea8).
 
-{{< imgh src="Eleventy-non-bracketed-footnotes_2510x840.png" alt="Paragraph ending in a footnote whose number is not bracketed" >}}
+{{< imgc src="Eleventy-non-bracketed-footnotes_2510x840.png" alt="Paragraph ending in a footnote whose number is not bracketed" width=2510 height=840 >}}
 
 Yay. Thanks and nice going, Mark. *(By the way, Eleventy fans: he's got a lot of other neat Eleventy-related posts on [his site](https://www.markllobrera.com) --- and they're considerably more concise than my bloated blatherings --- so I highly recommend checking them out.)*
 

@@ -8,7 +8,7 @@ date: 2022-06-30T12:02:00-05:00
 
 When I was starting this site in September, 2018, its ["About" page](/about/) looked like this:
 
-{{< imgh src="orig-site_screen-cap_1518x1356.png" alt="Screen capture of this website’s pre-launch appearance in 2018" >}}
+{{< imgc src="orig-site_screen-cap_1518x1356.png" alt="Screen capture of this website’s pre-launch appearance in 2018" width=1518 height=1356 >}}
 
 What I didn't know at the time was that its links were unfriendly from an [accessibility](https://webaim.org/intro/) standpoint --- for two reasons, both of them affecting people with certain visual impairments:
 
