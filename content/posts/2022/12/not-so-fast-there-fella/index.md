@@ -42,7 +42,7 @@ Not exactly too close to call, eh?
 
 Even though "Article excerpt" came in a very poor second, a number of its adherents told me that only that approach worked with certain device setups, bandwidth constraints, and so forth --- not to mention people's tight schedules. So, while it was clear that I needed to give the "Full article text" side its due in configuring my feeds, I also saw that I couldn't simply ignore the minority and go back to having *only* full-text feeds. I had to do better.
 
-As a result, here's what I've done with the site *(**but** see also the **Update** at the very bottom of this post)*:
+As a result, here's what I've done with the site:
 
 - There are now *four* feeds, two in RSS (actually [Atom](https://en.wikipedia.org/wiki/Atom_(web_standard))) format[^Atom] and two in JSON format. Each format has one *primary* feed and one *secondary* feed. All four are linked from the ["Contact" page](/contact/).
 - The two primary feeds are still (a.) at their previous locations (`index.xml` and `index.json`, respectively) and (b.) linked from distinctive icons in the footer. Each primary feed once again includes the *full content* of each post, as was these feeds' setup prior to my turned-out-to-be-temporary shakeup of the last couple of days.
@@ -59,7 +59,7 @@ I think this is about as close as I can come to making everyone happy on this pa
 ## Addendum for Hugo users, 2022-12-14
 
 **Important**: This corrects some erroneous information I'd added to this post earlier today, in which I confused redirects with moves. I apologize for the goof!\
-*Also*, I provided some additional details on 2022-12-19, followed by a further update on 2022-12-26.
+*Also*, I provided some additional details on 2022-12-19 and 2022-12-26.
 {.box}
 
 If you want to have a feeds setup as described above in a [Hugo](https://gohugo.io) site, you'll have to jump through some hoops. This is because, as nearly as I can tell through researching the subject, Hugo allows only one feed (per format) per *[section](https://gohugo.io/content-management/sections/)*. For example, the home page --- typically the "owner" of a Hugo site's feed(s) --- can have one RSS/Atom feed and one JSON feed, but that's it. To have *multiple* feeds of a given format, set up each additional set of feeds in a separate section.
