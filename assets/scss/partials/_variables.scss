@@ -254,8 +254,10 @@ $text-8xl: 6rem; // LH 1 (also)
 $text-9xl: 8rem; // LH 1 (also)
 
 // underlines for hrefs
-$textDcThick: 0.075rem;
-$textUnOffst: 0.25em;
+$textDcThick: 0.0275rem; // always rem
+$textDcThickMd: 0.05rem; // always rem
+$textUnOffst: 0.325em; // always em -- min-width: 768px
+$textUnOffstMd: 0.275em; // always em -- min-width: 768px
 // ^^^ 0.225em is OK with Libre Franklin,
 //     but Segoe UI needs at least 0.25em
 
