@@ -17,10 +17,10 @@
 				<p>
 					<span class="text-nowrap"><a href="/sitemap/">HTML sitemap</a> &bull; <a href="/sitemap.xml">XML sitemap</a></span>
 				</p>
-				<p>
+				<p id="footer-info">
 					Site textual content &copy; 2018&ndash;{{ now.Year }} <a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce&nbsp;Wray</a> except&nbsp;where otherwise noted and/or quoting external&nbsp;sources.<br />
 					{{- if (ne .Title "About me") -}}
-					For&nbsp;other site-wide disclaimers/credits, see the footer of the <span class="text-nowrap"><a href="/about/">&ldquo;About me&rdquo; page</a></span>.
+					For&nbsp;other site-wide disclaimers/credits, see the <a href="/about/#footer-info">footer</a> of the <span class="text-nowrap"><a href="/about/">&ldquo;About me&rdquo; page</a></span>.
 					{{- else -}}
 					Newer <a href="/posts/2022/06/get-good-git-info-hugo/">Git commits and their applicable dates</a> don&rsquo;t necessarily reflect changes in previously published&nbsp;content. Displayed&nbsp;content statistics (word&nbsp;count and reading&nbsp;time) can&nbsp;vary based&nbsp;on the site-generation process, and don&rsquo;t&nbsp;include any code&nbsp;blocks or <code>details</code>&nbsp;elements where&nbsp;applicable. Site&nbsp;powered by <a href="https://gohugo.io" rel="noopener">Hugo</a>, styled&nbsp;with <a href="https://sass-lang.com" rel="noopener">Sass</a>, and hosted&nbsp;by&nbsp;<a href="{{ .Site.Params.HostURL }}" rel="noopener">{{ .Site.Params.HostName }}</a>. <span class="text-nowrap">Privacy-respecting</span> analytics by <a href="https://usefathom.com/ref/ZKHYWX" rel="noopener">Fathom&nbsp;Analytics</a>.* Some&nbsp;site&nbsp;images hosted&nbsp;and processed by&nbsp;<a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" rel="noopener">Cloudinary</a>.*<br />
 					&nbsp;<br />
