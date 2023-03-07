@@ -1,6 +1,6 @@
-{{- $css := "" -}}
-{{- $optionsCSSCritical := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
-{{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCritical -}}
-{{- with $css }}
-	<style media="screen">{{ .Content | safeCSS }}</style>
-{{- end }}
+			{{- $css := "" -}}
+			{{/* Go get and concatenate what `postcss-cli` has built from the partials */}}
+			{{- $css = (resources.Match "css/0*.css") | resources.Concat "critical.css" -}}
+			{{- with $css }}
+				<style media="screen">{{ .Content | safeCSS }}</style>
+			{{- end }}

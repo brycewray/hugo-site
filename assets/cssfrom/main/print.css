@@ -1,7 +1,4 @@
-@charset 'utf-8';
-@use 'partials/variables' as var;
-
-// based on https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/
+/* based on https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/ */
 
 @media print {
 	#content-main-hugo, main {
@@ -15,7 +12,7 @@
 	[class^="imgB-"],
 	.contactBtn,
 	.searchBtnDiv,
-	.lite-youtube,
+	lite-youtube,
 	button,
 	.lyt-disclaimer,
 	.toot-header img,
@@ -58,7 +55,7 @@
 	}
 	.imgCover {
 		object-fit: cover;
-		object-position: 50% 50%; // H = middle; V = middle
+		object-position: 50% 50%; /* H = middle; V = middle */
 		height: 100%;
 		width: 100%;
 	}
@@ -68,7 +65,7 @@
 	a[target="_blank"]::after {
 		margin: 0;
 		content: "";
-		// "new window" indication obviously unneeded in print
+		/* "new window" indication obviously unneeded in print */
 	}
 	.container-narrower {
 		width: 90% !important;
@@ -78,7 +75,7 @@
 		color: #000;
 		margin: 2em auto 0 auto;
 		text-align: center;
-		font-size: var.$text-xs !important;
+		font-size: 0.75rem !important;
 		padding-top: 2em;
 	}
 }

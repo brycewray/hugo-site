@@ -1,37 +1,39 @@
-@use 'variables' as var;
-
 html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	-moz-osx-font-smoothing: auto; // only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
+	-moz-osx-font-smoothing: auto; /* only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
 	-webkit-font-feature-settings: "liga" 1;
-	font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
+	font-feature-settings: "liga" 1; /* if using any ligature-savvy fonts, ligatures won't work without this */
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
-	font-family: var.$sans-serif;
-	background-color: map-get(var.$twcss, slate-100);
-	color: map-get(var.$twcss, gray-900);
+	font-family: var(--sans-serif);
+	background-color: var(--twcss-slate-100); /* slate-100 */
+	color: var(--default-light); /* gray-900 */
 	@media (prefers-color-scheme: dark) {
-		background: var.$black;
-		color: map-get(var.$twcss, gray-300);
+		background: black;
+		color: var(--default-dark); /* gray-100 */
 	}
 	background-image: linear-gradient(
-		map-get(var.$twcss, slate-600),
-		map-get(var.$twcss, slate-300) 6em,
+		var(--twcss-slate-600),
+		var(--twcss-slate-300) 6em,
 		transparent 10em
-	);
+	); /* slate-600 -> slate-300 -> transparent */
 	@media (prefers-color-scheme: dark) {
 		background-image: linear-gradient(
-			map-get(var.$twcss, slate-500),
-			map-get(var.$twcss, slate-800) 6em,
+			var(--twcss-slate-500),
+			var(--twcss-slate-800) 6em,
 			transparent 10em
-		);
+		); /* slate-500 -> slate-800 -> transparent */
 	}
 }
 
+/* h1, .h1, h2, .h2, h3, .h3, h4, .h4, footer {
+	font-family: var(--sans-serif);
+} */
+
 html {
-	// scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 	scroll-padding-top: 80px;
 }
 
@@ -64,7 +66,7 @@ h3, .h3 {
 
 h1, .h1 {
 	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
-	// usually overridden by other styling (e.g., billboard.scss)
+	/* usually overridden by other styling (e.g., billboard partial) */
 }
 
 h2, .h2 {
@@ -80,26 +82,26 @@ h4, .h4 {
 }
 
 a, a:focus, a:hover, a:active {
-	text-decoration-thickness: var.$textDcThick;
-	text-underline-offset: var.$textUnOffst;
-	@media screen and (min-width: var.$bkpt_md) {
-		text-decoration-thickness: var.$textDcThickMd;
-		text-underline-offset: var.$textUnOffstMd;
-	}
+	text-decoration-thickness: var(--textDcThick); /* always rem */
+	text-underline-offset: var(--textUnOffst); /* always em */
 	text-decoration-skip-ink: auto;
+	@media screen and (min-width: 768px) {
+		--textDcThick: 0.05rem;
+		--textUnOffst: 0.275em;
+	}
 }
 
 a {
-	color: map-get(var.$twcss, blue-700);
+	color: var(--twcss-blue-700); /* blue-700 */
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, blue-300);
+		color: var(--twcss-blue-300); /* blue-300 */
 	}
 }
 
 a:focus, a:hover, a:active {
-	color: map-get(var.$twcss, blue-900);
+	color: var(--twcss-blue-900); /* blue-900 */
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, slate-300);
+		color: var(--twcss-slate-300); /* slate-300 */
 	}
 }
 
@@ -111,23 +113,23 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 hr {
 	border: none;
 	height: 1px;
-	background-color: var.$black;
+	background-color: black;
 	@media (prefers-color-scheme: dark) {
-		background-color: var.$white;
+		background-color: white;
 	}
 }
 
 blockquote {
-	border-left: 4px solid map-get(var.$twcss, slate-400);
-	color: map-get(var.$twcss, gray-700);
+	border-left: 4px solid var(--twcss-slate-400); /* slate-400 */
+	color: var(--twcss-gray-700); /* gray-700 */
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
-		// border-left is same color
-		color: map-get(var.$twcss, gray-400);
+		/* border-left is same color */
+		color: var(--twcss-gray-400); /* gray-300 */
 	}
-	p:last-child {
+	& p:last-child {
 		margin-bottom: 0;
 	}
 }
@@ -173,41 +175,35 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 footer {
-	// @media (prefers-color-scheme: dark) {
-	// 	background: var.$black;
-	// }
+	/* @media (prefers-color-scheme: dark) {
+		background: black;
+	} */
 	text-align: center;
-	font-size: var.$text-xs;
+	font-size: var(--text-xs);
 	margin: 4rem auto 0 auto;
 	width: 100%;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	p {
-		line-height: 1.5em; // definitely em, not rem, here
-		code {
-			background-color: map-get(var.$twcss, slate-200);
-			@media (prefers-color-scheme: dark) {
-				background-color: map-get(var.$twcss, slate-700);
-			}
-		}
+	& p {
+		line-height: 1.5em; /* definitely em, not rem, here */
 	}
-	div.footerWrapper {
+	& div.footerWrapper {
 		margin: 0 auto;
 		width: 80%;
-		p {
+		& p {
 			margin: 1rem 0;
 		}
-		div.icons-box {
+		& div.icons-box {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			gap: 1em;
 		}
 	}
-	@media (min-width: var.$bkpt_lg) {
+	@media (min-width: 1024px ){
 		margin: 2rem auto 0 auto;
-		// padding-bottom: 1rem;
-		div.footerWrapper {
+		/* padding-bottom: 1rem; */
+		& div.footerWrapper {
 			width: 65%;
 			height: 100%;
 		}
@@ -215,27 +211,28 @@ footer {
 }
 
 .container {
-	// width: 90%;
+	/* width: 90%; */
 	margin: 0 auto;
-	&-narrower {
-		margin: 1rem auto 0 auto;
-		width: 80%;
-		@media screen and (min-width: var.$bkpt_lg) {
-			width: 50%;
-			// max-width: 65ch;
-		}
-		@media screen and (min-width: var.$bkpt_2xl) {
-			width: 45%;
-			// max-width: 65ch;
-		}
-		@media screen and (min-width: var.$bkpt_3xl) {
-			width: 40%;
-		}
-		// figure img, img {
-		//   width: 100%;
-		//   height: auto;
-		// }
+}
+
+.container-narrower {
+	margin: 1rem auto 0 auto;
+	width: 80%;
+	@media screen and (min-width: 1024px ){
+		width: 50%;
+		/* max-width: 65ch; */
 	}
+	@media screen and (min-width: 1536px ){
+		width: 45%;
+		/* max-width: 65ch; */
+	}
+	@media screen and (min-width: 1920px ){
+		width: 40%;
+	}
+	/* & figure img, img {
+		width: 100%;
+		height: auto;
+	} */
 }
 
 li p {

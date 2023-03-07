@@ -1,30 +1,28 @@
-@use 'variables' as var;
-
-// .box, .imgcCaption {
-// 	font-family: var.$sans-serif;
-// }
+.box, .imgcCaption, .legal, .pokey {
+ 	font-family: var(--sans-serif);
+}
 
 .ctr {
 	text-align: center;
 }
 .red {
-	color: map-get(var.$twcss, red-700);
+	color: var(--twcss-red-700); /* red-700 */
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, red-300);
+		color: var(--twcss-red-300); /* red-300 */
 	}
 }
 
 .legal {
-	font-size: var.$text-xs;
+	font-size: var(--text-xs);
 }
 .pokey {
-	font-size: var.$text-sm;
+	font-size: var(--text-sm);
 }
 .sansSerif {
-	font-family: var.$sans-serif;
+	font-family: var(--sans-serif);
 }
 .serif {
-	font-family: var.$serif;
+	font-family: var(--serif);
 }
 .tightLead {
 	line-height: 1.25;
@@ -44,38 +42,37 @@
 	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
-	background-color: var.$white;
-	border: 1px solid var.$black;
+	background-color: white;
+	border: 1px solid black;
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-800);
-		border: 1px solid map-get(var.$twcss, gray-200);
+		background-color: var(--twcss-slate-800); /* slate-800 */
+		border: 1px solid var(--twcss-gray-200); /* gray-200 */
 	}
-	p {
+	& p {
 		padding: 0;
 		margin: 0;
 	}
-	+ hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
 		margin-top: 1.75em;
 	}
-	code {
-		background-color: map-get(var.$twcss, slate-100);
+	& code {
+		background-color: var(--twcss-slate-100); /* slate-100 */
 		@media (prefers-color-scheme: dark) {
-			background-color: map-get(var.$twcss, slate-600);
+			background-color: var(--twcss-slate-600); /* slate-600 */
 		}
 	}
-	a code {
-		// background-color: map-get(var.$twcss, slate-100);
+	& a code {
 		@media (prefers-color-scheme: dark) {
-			background-color: map-get(var.$twcss, slate-700);
+			background-color: var(--twcss-slate-700); /* slate-700 */
 		}
 	}
-	.red {
-		color: map-get(var.$twcss, red-600);
+	& .red {
+		color: var(--twcss-red-600); /* red-600 */
 		@media (prefers-color-scheme: dark) {
-			color: map-get(var.$twcss, red-400);
+			color: var(--twcss-red-400); /* red-400 */
 		}
 	}
 }
@@ -94,7 +91,7 @@ img.ctrImg {
 }
 .img-phn {
 	width: 90%;
-	@media screen and (min-width: var.$bkpt_md) {
+	@media screen and (min-width: 768px){
 		width: 50%;
 	}
 }
@@ -131,16 +128,16 @@ img.ctrImg {
 .punctuationExample {
 	font-size: 1.5em;
 	font-weight: normal;
-	font-family: var.$serif;
+	font-family: var(--serif);
 	text-align: center;
 }
 
 .indentAfterLI {
-	margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
-	&.box {
-		$bIALImarginLeft: 3em;
-		margin-left: $bIALImarginLeft;
-		width: calc(100% - $bIALImarginLeft);
+	margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
+	& .box {
+		--bIALImarginLeft: 3em;
+		margin-left: var(--bIALImarginLeft);
+		width: calc(100% - var(--bIALImarginLeft));
 	}
 }
 
@@ -157,8 +154,10 @@ img.ctrImg {
 	animation: fadeIn 750ms ease-in-out;
 }
 
-// start, text/LH classes from TWCSS
-// =================================
+/*
+	start, text/LH classes from TWCSS
+	=================================
+*/
 
 .text-xs {
 	font-size: 0.75rem;
@@ -224,11 +223,12 @@ img.ctrImg {
 	font-size: 8rem;
 }
 
-// ===============================
-// end, text/LH classes from TWCSS
+/* ===============================
+	 end, text/LH classes from TWCSS
+*/
 
 .mono {
-	font-family: var.$monospaced;
+	font-family: var(--monospaced);
 }
 
 circle.GitHub,
@@ -237,17 +237,17 @@ path.MastodonBody,
 path.Twitter,
 path.JSON,
 path.RSS {
-	fill: var.$white;
+	fill: white;
 	@media (prefers-color-scheme: dark) {
-		fill: var.$black;
+		fill: black;
 	}
 }
 
 circle.Twitter,
 circle.JSON {
-	fill: var.$black;
+	fill: black;
 	@media (prefers-color-scheme: dark) {
-		fill: map-get(var.$twcss, blue-300);
+		fill: var(--twcss-blue-300); /* blue-300 */
 	}
 }
 
@@ -257,9 +257,9 @@ path.MastodonM,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: map-get(var.$twcss, blue-700);
+	fill: var(--twcss-blue-700); /* blue-700 */
 	@media (prefers-color-scheme: dark) {
-		fill: map-get(var.$twcss, blue-300);
+		fill: var(--twcss-blue-300); /* blue-300 */
 	}
 }
 
@@ -269,9 +269,9 @@ a:hover path.MastodonM,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: map-get(var.$twcss, blue-800);
+	fill: var(--twcss-blue-800); /* blue-800 */
 	@media (prefers-color-scheme: dark) {
-		fill: map-get(var.$twcss, blue-200);
+		fill: var(--twcss-blue-200); /* blue-200 */
 	}
 }
 
@@ -280,16 +280,17 @@ path.MastodonM {
 	fill-rule:nonzero;
 }
 
-// // needed only if using darker bkgd in dark mode
-// a:hover circle.GitHub,
-// a:hover path.Twitter,
-// a:hover path.RSS,
-// a:hover path.JSON,
-// a:hover path.MastodonBody {
-// 	@media (prefers-color-scheme: dark) {
-// 		fill: var.$white;
-// 	}
-// }
+/* needed only if using darker bkgd in dark mode
+a:hover circle.GitHub,
+a:hover path.Twitter,
+a:hover path.RSS,
+a:hover path.JSON,
+a:hover path.MastodonBody {
+	@media (prefers-color-scheme: dark) {
+		fill: white;
+	}
+}
+*/
 
 .sr-only {
 	position: absolute;

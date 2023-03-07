@@ -1,10 +1,10 @@
-@use 'variables' as var;
-
-// ====
-// FOR USE **ONLY** WITH FONTS WITH VARIABLE WEIGHTS
-// --------
-// As of 2022-05-15, this includes system fonts such as San Francisco (macOS/iOS) and Segoe UI (Windows); not worrying about Linux distros because they're all over the map on this as with so many other specs.
-// ====
+/*
+====
+	FOR USE **ONLY** WITH FONTS WITH VARIABLE WEIGHTS
+	--------
+	As of 2022-05-15, this includes system fonts such as San Francisco (macOS/iOS) and Segoe UI (Windows); not worrying about Linux distros because they're all over the map on this as with so many other specs.
+	====
+*/
 
 b,
 strong {
@@ -55,10 +55,12 @@ article .h4,
 .billboard-description-text {
 	font-weight: 300;
 }
-// `.posts-Description` and `.homePost-Description`
-// at font-weight 300
-// are problematic in Windows as seen in Parallels Desktop,
-// while font-weight 350 is same as 400 with San Francisco
+/*
+	`.posts-Description` and `.homePost-Description`
+	at font-weight 300
+	are problematic in Windows as seen in Parallels Desktop,
+	while font-weight 350 is same as 400 with San Francisco
+*/
 
 .posts-Description,
 .homePost-Description {

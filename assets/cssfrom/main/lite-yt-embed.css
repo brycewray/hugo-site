@@ -1,12 +1,12 @@
 @charset 'utf-8';
-@use 'partials/variables' as var;
 
 lite-youtube {
-	background-color: var.$black;
+	--twcss-gray-400: #9ca3af;
+	background-color: black;
 	position: relative;
-	border: 1px solid map-get(var.$twcss, gray-700);
+	border: 1px solid var(--twcss-gray-700); /* gray-700 */
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-400);
+		border: 1px solid var(--twcss-gray-400); /* gray-400 */
 	}
 	display: block;
 	contain: content;
@@ -23,7 +23,8 @@ lite-youtube::before {
 	display: block;
 	position: absolute;
 	top: 0;
-	// background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==); // avoid "YT gradient"
+	/* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==); */
+	/* ^^ avoid "YT gradient" */
 	background-position: top;
 	background-repeat: repeat-x;
 	height: 60px;
