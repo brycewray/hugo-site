@@ -64,7 +64,7 @@ Earlier, I cited this method's advantages vs. "normal" Hugo. But are there compa
 In my use so far, I've noticed only one: for anything you'd have normally done through a `hugo` command from the terminal, you'll have to change it to a script within the given project's `package.json`. Let's say you want to recreate the `hugo new` command for starting a new post, *e.g.*:
 
 ```plaintext
-hugo new posts/2023/02/my-next-post.md
+hugo new posts/2023/02/my-next-post/index.md
 ```
 
 In a project using Hugo Installer, you'd need a `package.json` script like this:
@@ -76,7 +76,7 @@ In a project using Hugo Installer, you'd need a `package.json` script like this:
 Once you have that, the previous example would become:
 
 ```plaintext
-npm run hugonew posts/2023/02/my-next-post.md
+npm run hugonew posts/2023/02/my-next-post/index.md
 ```
 
 . . . which is hardly worth mentioning where one's muscle memory is concerned. However, if you typically use a *lot* of [`hugo` commands](https://gohugo.io/commands/) and thus would have to make a `package.json` script for each, you'll probably have a much different opinion about the whole thing.[^Uninstall]
