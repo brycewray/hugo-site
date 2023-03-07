@@ -211,7 +211,7 @@ Why `cssfrom` as that subfolder name in `themes/newcss/assets/`, by the way? Bec
 
 ## Sharing arrangement
 
-So, now, I have two themes for the site: (1.) one with Sass, and (2.) one with CSS variables *and* PostCSS-enabled CSS Nesting. One nice thing about this setup is that, unlike the times when I've had a Sass theme and a [Tailwind CSS](https://tailwindcss.com) theme, I don't need two completely different sets of layouts and Hugo partials to work with each theme. Rather, the two themes can share the same layouts and nearly[^twoPartials] all the same partials, because these template files' final CSS classes and rules are the same. Indeed, the only drawback to the setup is that the `scripts` part of `package.json` has grown quite a bit, since I have to provide for both Sass and PostCSS.
+So, now, I have two themes for the site: (1.) one with Sass, and (2.) one with CSS variables *and* PostCSS-enabled CSS Nesting. One nice thing about this setup is that, unlike the times when I've had a Sass theme and a [Tailwind CSS](https://tailwindcss.com) theme, I don't need two completely different sets of layouts and Hugo partials to work with each theme. Rather, the two themes can share the same layouts and nearly[^twoPartials] all the same partials, because these template files' final classes and rules are the same. Indeed, the only drawback to the setup is that the `scripts` part of `package.json` has grown quite a bit, since I have to provide for both Sass and PostCSS.
 
 [^twoPartials]: Actually, there are three Hugo partials unique to each theme. Two, excerpted above, are for the slightly different code that pulls in the styling; and one is for the footer so I can specify, on the ["About" page](/about/), whether the site is using Sass or PostCSS.
 

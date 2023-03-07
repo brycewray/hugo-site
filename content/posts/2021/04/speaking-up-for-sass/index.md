@@ -212,7 +212,7 @@ Once you've extracted a good quantity of components as I suspect happens more of
 
 ### "Naming is hard" --- or is it?
 
-There are numerous pieces on the web saying that one of the biggest hassles in dealing with code is naming things (*e.g.*, variables, functions, and CSS classes), and that this is a pain which Tailwind can remedy by keeping you from *having* to name more than a handful of CSS classes.
+There are numerous pieces on the web saying that one of the biggest hassles in dealing with code is naming things (*e.g.*, variables, functions, and classes), and that this is a pain which Tailwind can remedy by keeping you from *having* to name more than a handful of classes.
 
 To that I say: well, maybe sometimes, and for some people, but not universally.
 

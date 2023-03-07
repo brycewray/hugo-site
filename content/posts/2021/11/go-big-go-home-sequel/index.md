@@ -59,7 +59,7 @@ Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specifi
 	images" with their own specific requirements)
 	and, thus, have good reason to select these
 	items programmatically.
-	Of course, CSS classes vary from site to site,
+	Of course, classes vary from site to site,
 	but the ones shown here work for my site as of
 	this writing.
 */}}

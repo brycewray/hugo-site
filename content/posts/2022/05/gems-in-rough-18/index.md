@@ -37,7 +37,7 @@ addEventListener("fetch", (event) => {
 
 My research found four sources on which I chose to rely (and the latter three all relied on the first for guidance). As of this writing, I'm using a slight variation on the code suggested by the [Simpler Nerd](https://simplernerd.com) site, but I recommend all the below-listed articles for your own consideration. While they're aimed at [Hugo](https://gohugo.io) users and some of their instructions are Hugo-specific as a result, their JavaScript should be readily adaptable for use with other SSGs.[^other]
 
-[^other]: The JavaScript is looking for a specific CSS class, so just look at the HTML/CSS your SSG generates to separate a code block from regular text. Here's a fictional example: if you see that the SSG assigns `<div class="codeBlock">` to each code block, edit the JavaScript so that it seeks `div`s with the `codeBlock` CSS class. (As-is, the JavaScript looks for `highlight`, which Hugo uses to designate a code block.)
+[^other]: The JavaScript is looking for a specific class, so just look at the HTML/CSS your SSG generates to separate a code block from regular text. Here's a fictional example: if you see that the SSG assigns `<div class="codeBlock">` to each code block, edit the JavaScript so that it seeks `div`s with the `codeBlock` class. (As-is, the JavaScript looks for `highlight`, which Hugo uses to designate a code block.)
 
 - Danny Guo, "[How to Add Copy to Clipboard Buttons to Code Blocks in Hugo](https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/)," March 22, 2019.
 - Aaron Luna, "[Hugo: Add Copy-to-Clipboard Button to Code Blocks with Vanilla JS](https://aaronluna.dev/blog/add-copy-button-to-code-blocks-hugo-chroma/)," November 11, 2019.

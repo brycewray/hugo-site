@@ -169,7 +169,7 @@ title: "Sitemap (HTML form)"
 (The text for the page is all in the appropriate template.)
 {{< /highlight >}}
 
-6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/), and you'll obviously want to customize those "Main pages" items at the top):
+6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/), and you'll obviously want to customize those "Main pages" items at the top):
 {{< highlight jinja "linenos=false" >}}
 ---
 #layout: 'base.njk'
@@ -283,7 +283,7 @@ date: 2021-05-12T08:00:00-05:00
 ---
 {{< /highlight >}}
 
-6. Then, back in the appropriate `layouts` folder, add a `sitemap` folder containing a `sitemap.html` file with the following (edit the CSS classes and the "Main pages" stuff as makes sense for your site):
+6. Then, back in the appropriate `layouts` folder, add a `sitemap` folder containing a `sitemap.html` file with the following (edit the classes and the "Main pages" stuff as makes sense for your site):
 {{< highlight go-html-template "linenos=false" >}}
 {{ define "main" }}
 	<div class="container-narrower sitemapDiv">

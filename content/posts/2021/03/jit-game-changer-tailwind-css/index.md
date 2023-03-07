@@ -24,7 +24,7 @@ So why does the introduction of a JIT compiler for the already constantly hyped 
 
 First, let's understand Tailwind, at least as we've known it before this week.
 
-Tailwind CSS "ships" as a massive supply of pre-written CSS classes that, collectively, [arrives in uncompressed form at just under four *megabytes*](https://tailwindcss.com/docs/optimizing-for-production). You get the whole enchilada, even though you probably won't use more than a tiny fraction of all those classes.
+Tailwind CSS "ships" as a massive supply of pre-written classes that, collectively, [arrives in uncompressed form at just under four *megabytes*](https://tailwindcss.com/docs/optimizing-for-production). You get the whole enchilada, even though you probably won't use more than a tiny fraction of all those classes.
 
 Until this week, Tailwind users typically have dealt with this by using the [PurgeCSS](https://purgecss.com/) tool. In fact, starting with Tailwind v. 2.x, PurgeCSS is included with the Tailwind package. PurgeCSS "watches" your files and deletes from your final CSS all the classes (Tailwind's and your own) that they don't use.
 

@@ -99,7 +99,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 	it checks whether the host, as specified in the
 	site config file, is Cloudflare Pages (where I
 	use a Cloudflare Worker for that tight CSP).
-	If so, it creates a new CSS/SCSS class, named
+	If so, it creates a new class, named
 	with an md5 hash for the value of $src, that
 	the div can use to provide the LQIP background.
 	Otherwise, it inserts inline styling.
