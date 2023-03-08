@@ -160,7 +160,7 @@ In it, we'll enable the actual notification setting for each account. In MailMat
 
 .&nbsp;.&nbsp;.&nbsp;and with that, my friend, you have the best of both worlds: the most fully featured iOS email app on the planet **and** quick notifications like you'd get from far more pedestrian (and privacy-violating) apps:
 
-{{< imgc src="screen-shot-Preside-notification_crop_2250x636.jpg" alt="Screen shot of Preside email app notification on an iOS device" width=2250 height=636 >}}
+{{< imgh src="screen-shot-Preside-notification_crop_2250x636.jpg" alt="Screen shot of Preside email app notification on an iOS device" width=2250 height=636 >}}
 
 ## Caveats and conquering temptation
 

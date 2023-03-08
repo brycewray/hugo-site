@@ -16,7 +16,7 @@ I thought I'd pass along some things I've learned along the way, especially sinc
 
 And, to be sure, so is Next.js itself.
 
-{{< imgc src="2021-03-11-nextjs-org-home-pg_2518x1330.png" alt="Screen capture of nextjs.org home page as of 2021-03-11" width=2518 height=1330 >}}
+{{< imgh src="2021-03-11-nextjs-org-home-pg_2518x1330.png" alt="Screen capture of nextjs.org home page as of 2021-03-11" width=2518 height=1330 >}}
 
 Considering how much I've [lately tried to limit my dealings with dependency-heavy stuff](/posts/2021/02/simplify-simplify/), it's amazing how much I've come to like developing within Next.js. I find it much more straightforward than the React-based [Gatsby](https://www.gatsbyjs.com) SSG with which I futzed [back in 2019](/posts/2019/07/why-staying-with-hugo/). Indeed, Next.js boasts many capabilities out-of-the-proverbial-box that require a disturbing number of plugins and often-glitchy configuration hassles in Gatsby.
 

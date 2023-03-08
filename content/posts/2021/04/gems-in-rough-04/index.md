@@ -16,7 +16,7 @@ Yes, friends, [once again](/posts/2021/03/gems-in-rough-03/) we're going to go t
 
 No sooner did I write [my most recent post](/posts/2021/04/speaking-up-for-sass/), which was about the continuing appeal of the [Sass CSS preprocessor](https://sass-lang.com) even in this time when the [utility-first CSS approach](https://blog.usejournal.com/utility-first-css-ridiculously-fast-front-end-development-for-almost-every-design-503130d8fefc) seems to be exploding in popularity, than I discovered to my surprise that there's about to be a marriage of the two&nbsp;.&nbsp;.&nbsp;.
 
-{{< imgc src="screen-cap-Uniform-CSS-2021-04-08_2498x1618.png" alt="Screen capture of the Uniform CSS website as of 2021-04-08" width=2498 height=1618 >}}
+{{< imgh src="screen-cap-Uniform-CSS-2021-04-08_2498x1618.png" alt="Screen capture of the Uniform CSS website as of 2021-04-08" width=2498 height=1618 >}}
 
 [Uniform CSS](https://uniformcss.com) looks very similar to the highly touted [Tailwind CSS](https://tailwindcss.com), but the interesting part is that Uniform CSS is **built entirely in Sass**. It's [promoted as producing smaller final CSS](https://uniformcss.com/docs/managing-file-size/#how-uniform-compares) than most other competing frameworks. Note that the Uniform CSS website, [GitHub repo](https://github.com/ThinkUniform/UniformCSS), and [documentation](https://uniformcss.com/docs/overview/) are all in pre-release form at this writing (*e.g.*,  the [npm package](https://www.npmjs.com/package/uniformcss) isn't up to date with what's in the repo). In the meantime, Uniform CSS has a [Codepen playground](https://codepen.io/UniformCSS/pen/poNNqaE) where you can give it a try.
 

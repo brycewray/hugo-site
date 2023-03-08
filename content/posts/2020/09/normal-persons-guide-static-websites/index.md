@@ -33,11 +33,11 @@ So your choices now come down to having your site's content be generated either:
 
 Analogies aside, here are two diagrams that may also help you grasp the difference. First, the dynamic site, with its content that is generated every time somebody visits:
 
-{{< imgc src="diagram--dynamic-site_Inter_1600x900.png" alt="Diagram of a dynamic website" width=1600 height=900 >}}
+{{< imgh src="diagram--dynamic-site_Inter_1600x900.png" alt="Diagram of a dynamic website" width=1600 height=900 >}}
 
 Then, the static site, with content already in place for you to see:
 
-{{< imgc src="diagram--static-site_Inter_1600x900.png" alt="Diagram of a static website" width=1600 height=900 >}}
+{{< imgh src="diagram--static-site_Inter_1600x900.png" alt="Diagram of a static website" width=1600 height=900 >}}
 
 Images used to build these diagrams (all&nbsp;sourced from&nbsp;[Pixabay](https://pixabay.com)): [FiveFlowersForFamilyFirst](https://pixabay.com/users/FiveFlowersForFamilyFirst-552028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2243898); [Clker-Free-Vector-Images](https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=41259); [200&nbsp;Degrees](https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1745473); and [Mateusz&nbsp;Zdrzałek](https://pixabay.com/users/MTZD-1593970/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2488093).
 {.imgcCaption}
