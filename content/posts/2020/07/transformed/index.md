@@ -66,7 +66,8 @@ You see, each new transformation creates a *new file* that Cloudinary stores out
 
 For example: if you have a file with a Cloudinary URL that ends with `f_auto,q_60,w_450/my_image.jpg`, that takes the original "my_image.jpg" file and creates a new file with these characteristics:
 
-- `f_auto` --- The most efficient file format for each browser. WebP-savvy browsers get that format, JPEG 2000-savvy browsers get that one, Internet Explorer[^IEcomp] and pre-Chromium Microsoft Edge get JPEG-XR, and the rest get the original format. Incidentally, this happens despite any extension you might put on the URL; so, just because the URL says it's `something.jpg` doesn't mean your browser really *handles* it as a JPEG file; only a view in the browser's Inspector will tell you for sure.
+- `f_auto` --- The most efficient file format for each browser. WebP-savvy browsers get that format, JPEG 2000-savvy browsers get that one, Internet Explorer[^IEcomp] and pre-Chromium Microsoft Edge get JPEG-XR, and the rest get the original format.\
+Incidentally, this happens despite any extension you might put on the URL; so, just because the URL says it's `something.jpg` doesn't mean your browser really *handles* it as a JPEG file; only a view in the browser's Inspector will tell you for sure.
 - `q_60` --- Quality (*i.e.*, compression level) of 60%.
 - `w_450` --- Width of 450 pixels. This capability makes it ultra-convenient to have my `lazy-picture.js` shortcode alter this part of an image's URL programmatically, simplifying the responsive image `srcset`.
 

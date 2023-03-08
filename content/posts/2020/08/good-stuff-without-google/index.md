@@ -156,16 +156,17 @@ You probably don't need the `latin-extended` character sets (you already know if
 6. For each variation of the `latin`:
 	- Copy the URL from the `src: url`. This is a direct link to the variable font. Don't worry about the bizarre name; we'll handle that in a moment.
 	- Paste the URL into *another* browser window/tab and press **Enter**.
-	- Download the file to *a folder of its own* on your development machine; and I also strongly suggest putting each of the folders in an overarching folder with a name that tells you the date you did this (I'll explain why shortly). For example, here's my `Public_Sans` folder with the files I downloaded to set them up on this site, and note that the inner folder is named `VF-2020-08-09` --- *i.e.*, variable fonts downloaded 2020-08-09 --- and each font type has its own separate subfolder (I *did* get the `latin-extended` versions, just in case):\
+	- Download the file to *a folder of its own* on your development machine; and I also strongly suggest putting each of the folders in an overarching folder with a name that tells you the date you did this (I'll explain why shortly).\
+	For example, here's my `Public_Sans` folder with the files I downloaded to set them up on this site, and note that the inner folder is named `VF-2020-08-09` --- *i.e.*, variable fonts downloaded 2020-08-09 --- and each font type has its own separate subfolder (I *did* get the `latin-extended` versions, just in case):\
   &nbsp;
 {{< imgc src="Public_Sans_folder_1502x672.png" alt="Screen capture of OS folder with Public Sans typeface files" width=1502 height=672 >}}
 
-7. **Back in the browser window/tab with the CSS you got from the Google Fonts-provided URL, copy the CSS into a text file so you can refer to it later.**
+7. ***Back in the browser window/tab with the CSS you got from the Google Fonts-provided URL, copy the CSS into a text file so you can refer to it later.***
 8. Now, close the browser windows/tabs; you're done with them.
 9. In each one-font subfolder, **duplicate** its .woff2 file; keep the original just in case something goes wrong with the following step.
-10.  Rename the duplicate .woff2 to something that makes sense to you. My `latin` duplicates have these names (and note that, in each, the name includes the date as an identifier; again, I'll shortly explain why):
-	- public-sans-20200809-vf-italic-latin.woff2
-	- public-sans-20200809-vf-roman-latin.woff2 --- I'm old-school and tend to call regular typefaces "Roman," even though that's actually correct only for serif faces.
+10.  Rename the duplicate .woff2 to something that makes sense to you. My `latin` duplicates have these names (and note that, in each, the name includes the date as an identifier; again, I'll shortly explain why):\
+	•  *public-sans-20200809-vf-italic-latin.woff2*\
+	•  *public-sans-20200809-vf-roman-latin.woff2* --- I'm old-school and tend to call regular typefaces "Roman," even though that's actually correct only for serif faces.
 11. Now, put the renamed .woff2 files in whatever location is appropriate for your website's setup, and do the normal setup you'd do to make "local" fonts work.
 	For the CSS part of it, you can refer to that CSS you copied earlier, but **be sure** to change the URL to **yours** or you'll be serving from Google! For example, on my site when it was using Public Sans, you'd see the following for the Public Sans italic regular-weight file:
 {{< highlight css "linenos=false" >}}

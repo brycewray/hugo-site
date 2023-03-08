@@ -12,7 +12,8 @@ Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) i
 As long as your site's monthly in/out bandwidth stays under 100&nbsp;GB, Netlify gives you all these advantages even on the free tier:
 
 - **Easy and quick deployment from your online repository** --- You can connect your Netlify-based site to a repo on [Bitbucket](https://bitbucket.org), [GitHub](https://github.com), or [GitLab](https://gitlab.com); then, every time you push to its default branch, *bang*, Netlify auto-deploys. So, if you keep your site project synchronized among your devices ([as I do](/posts/2019/07/roger-copy/)), you can easily make changes and push them from just about anywhere.
-- **CDN-powered speed and efficiency** --- Netlify puts your site's generated files on a [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) through its partnership with multiple CDN providers, mainly [Amazon CloudFront](https://aws.amazon.com/cloudfront/). This allows your visitors, wherever they are, to access your site much more quickly than if its content lived on just one location that could be halfway around the world from them. This is a huge benefit under any circumstances, but particularly if you use images. And, speaking of assets like images&nbsp;.&nbsp;.&nbsp;.
+- **CDN-powered speed and efficiency** --- Netlify puts your site's generated files on a [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) through its partnership with multiple CDN providers, mainly [Amazon CloudFront](https://aws.amazon.com/cloudfront/). This allows your visitors, wherever they are, to access your site much more quickly than if its content lived on just one location that could be halfway around the world from them. This is a huge benefit under any circumstances, but particularly if you use images.\
+And, speaking of assets like images&nbsp;.&nbsp;.&nbsp;.
 - **Post-processing of assets** --- Check the right boxes in your site's deploy settings, and each deploy will include automatic processing of items like images, CSS files, and JavaScript files to make them smaller and, thus, further improve your site's performance.
 
 Lots of goodies for free, right? You betcha. So what's the problem?
@@ -86,28 +87,30 @@ To use this to deploy a Netlify site from a GitHub repo --- and don't worry, Git
 5. Go to **Personal access tokens**.
 6. Click **New access token**. Give it an identifying name for your benefit. If you wish, name it `NETLIFY_AUTH_TOKEN` (just to follow along in the sample GitHub Action I'll show you shortly).
 7. Click **Generate token** to generate the authorization variable **BUT** ***DON'T*** **CLOSE THE GENERATED TOKEN BEFORE YOU PERFORM THE NEXT THREE STEPS!**
-6. **Copy** the token and then **paste** it into that text file you opened in the first step. This is **critical** because you **won't** be able to access the token again. (You can create a **new** one, of course, but you can't edit or even view an **existing** personal access token after it's generated. That's for your own protection.)
-7. Save the text file **but** keep it open for the time being.
-8. **Now** you can click **Done** to save the newly created token.
-7. Click the Netlify icon in the upper left to return to your main settings.
-8. Click **Sites**.
-9. Click the site you want to set up for deploy through GitHub Actions (you may have only one).
-10. Click **Site settings**.
-11. Under **Site information**, copy the value shown for **API ID** and paste it into the same text file, noting that it's your `NETLIFY_SITE_ID` value. (While you *can* see **this** one whenever you want, it's more convenient to do it this way since you'll be adding them to GitHub shortly.)
-12. As before: save the text file, but keep it open for now.
-13. If you don't use webmentions in your site, you now can log off from the Netlify account. (If you *do* use them, stay logged into the Netlify account for instructions coming further down.)
-12. Log into your GitHub account (perhaps in a separate browser tab or window, if you do indeed use webmentions).
-13. Access your site's repo.
-14. Near the top of the screen, click **Settings** to access the repo's settings.
-15. In the resulting **Settings** screen, click **Secrets**.
-16. In the resulting **Secrets** screen, click **New secret**.
-17. Name the secret `NETLIFY_AUTH_TOKEN` and, using the text editor file, copy/paste in the value from the `NETLIFY_AUTH_TOKEN` you generated earlier.
-18. Click **Add secret**.
-19. Once again, click **New secret**.
-20. Name this secret `NETLIFY_SITE_ID` and copy/paste in the `NETLIFY_SITE_ID` value from the text editor file. (**You** can see this in your Netlify account, but GitHub Actions can't, which is why you have to "tell" GitHub what this is. In the more usual repo-to-deploy Netlify process, Netlify "tells" GitHub this during the build/deploy, but we're going to be doing something different.)
-21. Click **Add secret**.
-21. **Optional**: If you use webmentions, create another secret, `WEBMENTION_IO_TOKEN`, and paste in your webmention.io token (you can get that either by logging into [webmention.io](https://webmention.io) or using your Netlify account to copy the appropriate variable you've already stored there).
-21. If you wish, you can now close the text editor **and** log out of your GitHub account (and, if appropriate, Netlify account).
+8. **Copy** the token and then **paste** it into that text file you opened in the first step. This is **critical** because you **won't** be able to access the token again.\
+(You can create a **new** one, of course, but you can't edit or even view an **existing** personal access token after it's generated. That's for your own protection.)
+9. Save the text file **but** keep it open for the time being.
+10. **Now** you can click **Done** to save the newly created token.
+11. Click the Netlify icon in the upper left to return to your main settings.
+12. Click **Sites**.
+13. Click the site you want to set up for deploy through GitHub Actions (you may have only one).
+14. Click **Site settings**.
+15. Under **Site information**, copy the value shown for **API ID** and paste it into the same text file, noting that it's your `NETLIFY_SITE_ID` value. (While you *can* see **this** one whenever you want, it's more convenient to do it this way since you'll be adding them to GitHub shortly.)
+16. As before: save the text file, but keep it open for now.
+17. If you don't use webmentions in your site, you now can log off from the Netlify account. (If you *do* use them, stay logged into the Netlify account for instructions coming further down.)
+18. Log into your GitHub account (perhaps in a separate browser tab or window, if you do indeed use webmentions).
+19. Access your site's repo.
+20. Near the top of the screen, click **Settings** to access the repo's settings.
+21. In the resulting **Settings** screen, click **Secrets**.
+22. In the resulting **Secrets** screen, click **New secret**.
+23. Name the secret `NETLIFY_AUTH_TOKEN` and, using the text editor file, copy/paste in the value from the `NETLIFY_AUTH_TOKEN` you generated earlier.
+24. Click **Add secret**.
+25. Once again, click **New secret**.
+26. Name this secret `NETLIFY_SITE_ID` and copy/paste in the `NETLIFY_SITE_ID` value from the text editor file.\
+(**You** can see this in your Netlify account, but GitHub Actions can't, which is why you have to "tell" GitHub what this is. In the more usual repo-to-deploy Netlify process, Netlify "tells" GitHub this during the build/deploy, but we're going to be doing something different.)
+27. Click **Add secret**.
+28. **Optional**: If you use webmentions, create another secret, `WEBMENTION_IO_TOKEN`, and paste in your webmention.io token (you can get that either by logging into [webmention.io](https://webmention.io) or using your Netlify account to copy the appropriate variable you've already stored there).
+29. If you wish, you can now close the text editor **and** log out of your GitHub account (and, if appropriate, Netlify account).
 
 Yes, I know: *whew*. But it's all necessary. Quoting Mr. Pukaj once more:
 

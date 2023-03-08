@@ -152,6 +152,8 @@ Hugo "knows" that the *content* subdirectory within *mysite* is, in essence, the
 {.indentAfterLI}
 
 You can edit this and any other Markdown file with a plain-text editor, which every OS includes free of charge, or any of the many great Markdown apps out there (some of which also are free of charge, or very nearly so). When you want to add content, just create a new Markdown file in the *content* subdirectory.
+{.indentAfterLI}
+
 Until you're comfortable with setting up the Hugo front matter, you can simply create each file with Hugo itself as described in this step[^draft] and then edit it separately with your chosen text editor.
 {.indentAfterLI}
 

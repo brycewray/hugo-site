@@ -39,7 +39,13 @@ You see, one thing you have to "present" to webmention.io to "prove" that your s
 
 Fine, I wondered, but how to do this in Hugo? Yes, I already had the repo using JavaScript because of PostCSS, but this was another matter. I was trying to get a non-Node-JS app to accept an environment variable from Node.js.
 
-For a while, it looked as if the only working method would require including the token in plain sight in a `GET`-style query string: *e.g.*, something like `https://webmention.io/api/mentions.jf2?domain=brycewray.com&token=1234567890123`. Not a good idea, as you can imagine.
+For a while, it looked as if the only working method would require including the token in plain sight in a `GET`-style query string: *e.g.*, something like:
+
+```
+https://webmention.io/api/mentions.jf2?domain=brycewray.com&token=1234567890123
+```
+
+Not a good idea, as you can imagine.
 
 Finally, after hours of sifting through similar issues reports from Hugo users, I found the answer: setting up the appropriate [`/package.json`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/package.json)-based scripts to run `/assets/js/webmention.js` **after** a command that would first run `dotenv` and, thus, "force-feed" it the environment variable! For example, the `/package.json` line[^NPMRun] for fetching webmentions in development mode was:
 

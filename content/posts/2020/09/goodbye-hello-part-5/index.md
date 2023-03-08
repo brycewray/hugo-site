@@ -30,3 +30,6 @@ So that was all she wrote for the site on Render, just a few days into my second
 Please learn from my bad example and, when you're evaluating website hosts, make sure you've run through *all* the possible needs you'll have. If you're new to having a site, of course, you may not know what those are. But I'm definitely *not* new to this, so I should've known better. Don't be me.
 
 Oh, and one more thing: if you're wondering whence the site *now* originates, I'd say simply: use your browser's inspector tool and check the headers. Otherwise, this unintentional saga about the "lurch" may stretch to an even more ridiculous number of parts, and I think we all could do without that. I certainly could.
+
+**Update, 2023-03-05**: [Starting today](https://feedback.render.com/features/p/interchangeable-repos-per-project), Render allows you to switch a deployed site between two different repos.
+{.box}
