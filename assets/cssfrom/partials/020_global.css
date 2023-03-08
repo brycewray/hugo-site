@@ -3,8 +3,7 @@ html, body {
 	margin: 0 auto;
 	padding: 0;
 	-moz-osx-font-smoothing: auto; /* only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
-	-webkit-font-feature-settings: "liga" 1;
-	font-feature-settings: "liga" 1; /* if using any ligature-savvy fonts, ligatures won't work without this */
+	font-variant-ligatures: normal; /* if using any ligature-savvy fonts, ligatures won't work without this */
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var(--sans-serif);
