@@ -18,7 +18,7 @@ const nonce = generateNonce()
 export default function middleware() {
 	return next({
 		headers: {
-			'x-test-header-from-middleware': '${nonce}'
+			"x-test-header-from-middleware": '"' + nonce + '"'
 		},
 	})
 }
