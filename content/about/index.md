@@ -3,7 +3,6 @@ title: "About me"
 description: "Not a bio (you’d fall asleep), but just some explanatory observations."
 author: Bryce Wray
 date: 2018-09-14T15:00:00-05:00
-# lastmod: TBD
 ---
 
 Welcome.
