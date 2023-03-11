@@ -40,7 +40,10 @@ I'll get to the part about displaying commit info shortly but, first, let's note
 
 *[Stylistic edits and one link applied.]*
 
-This is because (a.) hosts' Git configurations for builds typically are set to so-called *shallow-clone* behavior; and, apparently, (b.) no host allows altering this in either its built-in UI or any optional config files (*e.g.*, `netlify.toml` with Netlify or `vercel.json` with Vercel). Shallow-clone behavior causes problems with using `.GitInfo` data as described in this post, so keep this in mind if you typically deploy via your host's built-in user interface rather than with CI/CD.
+This is because (a.) hosts' Git configurations for builds typically are set to so-called *shallow-clone* behavior; and, apparently, (b.) no host allows altering this in either its built-in UI or any optional config files (*e.g.*, `netlify.toml` with [Netlify](https://netlify.com) or `vercel.json` with [Vercel](https://vercel.com)). Shallow-clone behavior causes problems with using `.GitInfo` data as described in this post, so keep this in mind if you typically deploy via your host's built-in user interface rather than with CI/CD.
+
+**Note from the future**: In testing for a [later article](/posts/2023/02/get-good-git-info-even-hosts-gui/), I found that, in fact, Netlify and [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform) exhibit *deep-clone* behavior where Git is concerned, so you likely can use the information herein with their native UIs rather than having to deploy to them via CI/CD.
+{.box}
 
 After finding this answer, I simply added a `with` section to my GitHub Action's `Checkout default branch` step:
 

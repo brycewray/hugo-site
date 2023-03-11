@@ -19,6 +19,9 @@ In "[Get good Git info from Hugo](/posts/2022/06/get-good-git-info-hugo/)," I ex
 
 The one potential kink to this for you is that, in order for this to work best, you'll have to use a [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html) method of deploying your site. For anybody likely to find this article, you'll typically be using either [GitHub Actions](https://github.com/features/actions) or [GitLab CI/CD](https://docs.gitlab.com/ee/ci/). The reason this is necessary is because this method uses [`git log`](https://git-scm.com/docs/git-log), and --- at least as far as I know --- there's no way to use any of the Jamstack-savvy web hosts' UIs to specify `fetch-depth: 0`, [which is necessary for this to work](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480).
 
+**Note from the future**: In testing for a [later article](/posts/2023/02/get-good-git-info-even-hosts-gui/), I found that, in fact, [Netlify](https://netlify.com) and [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform) exhibit *deep-clone* behavior where Git is concerned, so you likely can use the information herein with their native UIs rather than having to deploy to them via CI/CD.
+{.box}
+
 It's outside the scope of this article to explain the CI/CD part, but I've written other posts about it (see my [search page](/search/), especially regarding GitHub Actions) which you may find useful in pressing ahead with it.
 
 ## The shortcode: go easy
