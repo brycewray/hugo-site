@@ -40,13 +40,13 @@ export default async function handleRequest(request) {
 			let newHeaders = new Headers(imageResponse.headers)
 			newHeaders.set("Cache-Control", "public, max-age=2678400, immutable")
 			newHeaders.set("CDN-Cache-Control", "public, max-age=2678400, immutable")
-			newHeaders.set("x-BW-test", "Non-text item - headers edited!")
+			// newHeaders.set("x-BW-test", "Non-text item - headers edited!")
 			// newHeaders.set("Permissions-Policy", "interest-cohort=()")
 			newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
 			newHeaders.set("X-Frame-Options", "SAMEORIGIN")
 			newHeaders.set("X-Content-Type-Options", "nosniff")
 			newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
-			newHeaders.set("cf-nonce-generator", "HIT")
+			newHeaders.set("x-nonce-generator", "HIT")
 			return new Response(imageResponse.body, {
 				status: imageResponse.status,
 				statusText: imageResponse.statusText,
