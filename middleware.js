@@ -30,61 +30,62 @@ function generateNonce() {
 
 export default async function handleRequest(request) {
 	const nonce = generateNonce()
-	let response = await fetch(request)
+	try { // try-catch to make sure a function crash doesn't crash the site
+		let response = await fetch(request)
 
-  let imageResponse = await fetch(request)
-  let type = imageResponse.headers.get("Content-Type") || ""
-  if (!type.startsWith("text/")) {
-    // Not text. Don't modify.
-    let newHeaders = new Headers(imageResponse.headers)
-    newHeaders.set("Cache-Control", "public, max-age=2678400, immutable")
-    newHeaders.set("CDN-Cache-Control", "public, max-age=2678400, immutable")
-    newHeaders.set("x-BW-test", "Non-text item - headers edited!")
-    // newHeaders.set("Permissions-Policy", "interest-cohort=()")
-    newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
-    newHeaders.set("X-Frame-Options", "SAMEORIGIN")
-    newHeaders.set("X-Content-Type-Options", "nosniff")
-    newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
-    newHeaders.set("cf-nonce-generator", "HIT")
-    return new Response(imageResponse.body, {
-      status: imageResponse.status,
-      statusText: imageResponse.statusText,
-      headers: newHeaders
-    })
-  }
+		let imageResponse = await fetch(request)
+		let type = imageResponse.headers.get("Content-Type") || ""
+		if (!type.startsWith("text/")) {
+			// Not text. Don't modify.
+			let newHeaders = new Headers(imageResponse.headers)
+			newHeaders.set("Cache-Control", "public, max-age=2678400, immutable")
+			newHeaders.set("CDN-Cache-Control", "public, max-age=2678400, immutable")
+			newHeaders.set("x-BW-test", "Non-text item - headers edited!")
+			// newHeaders.set("Permissions-Policy", "interest-cohort=()")
+			newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
+			newHeaders.set("X-Frame-Options", "SAMEORIGIN")
+			newHeaders.set("X-Content-Type-Options", "nosniff")
+			newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
+			newHeaders.set("cf-nonce-generator", "HIT")
+			return new Response(imageResponse.body, {
+				status: imageResponse.status,
+				statusText: imageResponse.statusText,
+				headers: newHeaders
+			})
+		}
 
-  const html = (await response.text())
-    .replace(/DhcnhD3khTMePgXw/gi, nonce)
-    .replace(
-      'src="https://ajax.cloudflare.com',
-      `nonce="${nonce}" src="https://ajax.cloudflare.com`
-    )
-    .replace(
-      `src='https://static.cloudflareinsights.com`,
-      `nonce="${nonce}" src='https://static.cloudflareinsights.com`
-    )
-    .replace(
-      `src="https://static.cloudflareinsights.com`,
-      `nonce="${nonce}" src="https://static.cloudflareinsights.com`
-    )
-    .replace(
-      'cloudflare-static/email-decode.min.js"',
-      `cloudflare-static/email-decode.min.js" nonce="${nonce}"`
-    )
-    .replace(
-      'rel="stylesheet"',
-      `rel="stylesheet" nonce="${nonce}"`
-    )
-    .replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
-    .replace(
-      'guitar-thriving.brycewray.com/script.js"',
-      `guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
-    )
-    .replace(
-      'src="/assets/js/lite-yt-embed_',
-      `nonce="${nonce}" src="/assets/js/lite-yt-embed_`
-    )
-    .replace(/<style/g, `<style nonce="${nonce}"`)
+		const html = (await response.text())
+			.replace(/DhcnhD3khTMePgXw/gi, nonce)
+			.replace(
+				'src="https://ajax.cloudflare.com',
+				`nonce="${nonce}" src="https://ajax.cloudflare.com`
+			)
+			.replace(
+				`src='https://static.cloudflareinsights.com`,
+				`nonce="${nonce}" src='https://static.cloudflareinsights.com`
+			)
+			.replace(
+				`src="https://static.cloudflareinsights.com`,
+				`nonce="${nonce}" src="https://static.cloudflareinsights.com`
+			)
+			.replace(
+				'cloudflare-static/email-decode.min.js"',
+				`cloudflare-static/email-decode.min.js" nonce="${nonce}"`
+			)
+			.replace(
+				'rel="stylesheet"',
+				`rel="stylesheet" nonce="${nonce}"`
+			)
+			.replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
+			.replace(
+				'guitar-thriving.brycewray.com/script.js"',
+				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
+			)
+			.replace(
+				'src="/assets/js/lite-yt-embed_',
+				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
+			)
+			.replace(/<style/g, `<style nonce="${nonce}"`)
 
 		let ttl = undefined
 		// let cache = caches.default
@@ -136,4 +137,7 @@ export default async function handleRequest(request) {
 			statusText: response.statusText,
 			headers: newHeaders
 		})
+	} catch (error) {
+		console.log(error)
 	}
+}
