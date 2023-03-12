@@ -1,0 +1,13 @@
+{{- /* https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945/2 */ -}}
+{{- $email := .Get "email" -}}
+{{- if .Site.Params.Nonces -}}
+<script nonce="DhcnhD3khTMePgXw">
+{{- else -}}
+<script>
+{{- end }}
+  var email64 ='{{ $email | base64Encode }}';
+  document.write('<p>' + atob(email64) + '<br /><em class="pokey">(Spammers, you and your bots will never get past my <strong>Junk</strong> folder, so don’t bother.)</em></p>')
+</script>
+<noscript>
+	<p class="pokey"><em>(Email address obfuscated in an attempt to limit spambots’ access. Please activate JavaScript to see the address.)</em></p>
+</noscript>
