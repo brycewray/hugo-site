@@ -88,7 +88,7 @@ export default async function handleRequest(request) {
 			.replace(/<style/g, `<style nonce="${nonce}"`)
 
 		let ttl = undefined
-		let cache = caches.default
+		// let cache = caches.default
 		let url = new URL(request.url)
 		let shouldCache = false
 		let jsStuff = false
