@@ -14,11 +14,15 @@ function generateNonce() {
   ].join("/")
 }
 
-export default function middleware() {
+export default async function middleware() {
 	const nonce = generateNonce()
+	let response = await fetch(request)
+	const html = (await response.text())
+		.replace(
+			'rel="stylesheet"',
+			'rel="stylesheet nonce="' + nonce + '"'
+		)
 	return next({
-		headers: {
-			"x-test-header-from-middleware": '"' + nonce + '"'
-		},
+		body: html
 	})
 }
