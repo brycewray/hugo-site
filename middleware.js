@@ -14,10 +14,9 @@ function generateNonce() {
   ].join("/")
 }
 
-export default async function middleware() {
+export default function middleware(request) {
 	const nonce = generateNonce()
-	let response = await fetch(request)
-	const html = (await response.text())
+	const html = request.body
 		.replace(
 			'rel="stylesheet"',
 			'rel="stylesheet nonce="' + nonce + '"'
