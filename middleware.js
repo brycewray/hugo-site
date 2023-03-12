@@ -22,6 +22,7 @@ export default async function handleRequest(request) {
 		)
 	return new Response(html, {
 		status: response.status,
-		statusText: response.statusText
+		statusText: response.statusText,
+		headers: response.headers
 	})
 }
