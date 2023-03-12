@@ -1,3 +1,19 @@
+/* ====================================
+
+headers handling . . .
+based on https://stackoverflow.com/questions/11560101/caching-json-with-cloudflare/56069077#56069077
+as of 2021-05-01
+
+nonce for CSP . . .
+based on https://github.com/moveyourdigital/cloudflare-worker-csp-nonce
+as of 2021-08-25
+
+Also useful . . .
+https://gist.github.com/RiFi2k/c3c65d59ca7f225e1d7d56929e0275ad
+as of 2021-10-17
+
+==================================== */
+
 function dec2hex(dec) {
   return ("0" + dec.toString(16)).substr(-2)
 }
