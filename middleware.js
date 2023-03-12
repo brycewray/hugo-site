@@ -69,6 +69,7 @@ export default async function handleRequest(request) {
       `nonce="${nonce}" src="/assets/js/lite-yt-embed_`
     )
     .replace(/<style/g, `<style nonce="${nonce}"`)
+
 	let url = new URL(request.url)
 	let jsStuff = false
 	let svgStuff = false
