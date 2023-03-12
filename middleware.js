@@ -18,7 +18,7 @@ export default async function handleRequest(request) {
 	const html = (await response.text())
 		.replace(
 			'rel="stylesheet"',
-			'rel="stylesheet nonce="' + nonce + '"'
+			'rel="stylesheet" nonce="' + nonce + '"'
 		)
 	return new Response(html, {
 		status: response.status,
