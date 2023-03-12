@@ -30,7 +30,7 @@ function generateNonce() {
 
 export default async function handleRequest(request) {
 	const nonce = generateNonce()
-	try { // try-catch to make sure a function crash doesn't crash the site
+	try { // try-catch so a function crash doesn't crash the site
 		let response = await fetch(request)
 
 		let imageResponse = await fetch(request)
