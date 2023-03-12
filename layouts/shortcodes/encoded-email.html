@@ -6,7 +6,8 @@
 <script>
 {{- end }}
   var email64 ='{{ $email | base64Encode }}';
-  document.write('<p>' + atob(email64) + '<br /><em class="pokey">(Spammers, you and your bots will never get past my <strong>Junk</strong> folder, so don’t bother.)</em></p>')
+	var email64Link ='{{ (print "href=\"mailto:" $email "\"") | base64Encode }}';
+  document.write('<p><a ' + atob(email64Link) + '>' + atob(email64) + '</a><br /><em>(Spammers, you and your bots will never get past my <strong>Junk</strong> folder, so don’t bother.)</em></p>');
 </script>
 <noscript>
 	<p class="pokey"><em>(Email address obfuscated in an attempt to limit spambots’ access. Please activate JavaScript to see the address.)</em></p>
