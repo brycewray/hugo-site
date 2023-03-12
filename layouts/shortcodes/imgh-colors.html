@@ -19,7 +19,7 @@
 
 {{- $divClass := "" -}}
 {{- $imgBd5 := md5 $src -}}
-{{- if eq .Site.Params.Host "CFP" -}}
+{{- if .Site.Params.Nonces -}}
 	{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
 {{- else -}}
 	{{- $divClass = "relative" -}}
@@ -42,7 +42,7 @@
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
 
 {{- if eq $simple false -}}
-{{- if eq .Site.Params.Host "CFP" -}}
+{{- if .Site.Params.Nonces -}}
 	<style data-pagefind-ignore>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
 	</style>

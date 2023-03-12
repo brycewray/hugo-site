@@ -25,7 +25,7 @@
 
 {{- $divClass := "" -}}
 {{- $imgBd5 := md5 $src -}}
-{{- if eq .Site.Params.Host "CFP" -}}
+{{- if .Site.Params.Nonces -}}
 	{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
 {{- else -}}
 	{{- $divClass = "relative" -}}

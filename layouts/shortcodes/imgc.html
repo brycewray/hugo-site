@@ -34,7 +34,7 @@
 
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $imgBd5 := md5 $src -}}
-{{- if eq .Site.Params.Host "CFP" -}}
+{{- if .Site.Params.Nonces -}}
 	{{- $divClass := printf "%s%s" "relative imgB-" $imgBd5 -}}
 {{- else -}}
 	{{- $divClass := "relative" -}}
@@ -56,7 +56,7 @@
 {{- end -}}
 
 {{- if eq $simple false -}}
-{{- if eq .Site.Params.Host "CFP" -}}
+{{- if .Site.Params.Nonces -}}
 	<style data-pagefind-ignore>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
 	</style>
