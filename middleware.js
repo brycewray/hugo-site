@@ -70,12 +70,17 @@ export default async function handleRequest(request) {
     )
     .replace(/<style/g, `<style nonce="${nonce}"`)
 
+	let ttl = undefined
+	let cache = caches.default
 	let url = new URL(request.url)
+	let shouldCache = false
 	let jsStuff = false
 	let svgStuff = false
-  const jsRegex = /(.*\.(js))$/
+
+	const jsRegex = /(.*\.(js))$/
   const svgRegex = /(.*\.(svg))$/
-  if (url.pathname.match(jsRegex)) {
+
+	if (url.pathname.match(jsRegex)) {
     jsStuff = true
   }
   if (url.pathname.match(svgRegex)) {
