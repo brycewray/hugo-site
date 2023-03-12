@@ -124,7 +124,7 @@ export default async function handleRequest(request) {
 			newHeaders.set("Report-To", "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://brycewray.report-uri.com/a/d/g'}],'include_subdomains':true}")
 			newHeaders.set("X-XSS-Protection", "1")
 		}
-		newHeaders.set("cf-nonce-generator", "HIT")
+		newHeaders.set("x-nonce-generator", "HIT")
 		if (jsStuff) {
 			newHeaders.set("Content-Type", "application/javascript; charset=utf-8")
 		}
