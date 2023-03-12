@@ -1,5 +1,3 @@
-import { next } from '@vercel/edge'
-
 function dec2hex(dec) {
   return ("0" + dec.toString(16)).substr(-2)
 }
@@ -14,14 +12,16 @@ function generateNonce() {
   ].join("/")
 }
 
-export default function middleware(request) {
+export default async function handleRequest(request) {
 	const nonce = generateNonce()
-	const html = request.body
+	let response = await fetch(request)
+	const html = (await response.text())
 		.replace(
 			'rel="stylesheet"',
 			'rel="stylesheet nonce="' + nonce + '"'
 		)
-	return next({
-		body: html
+	return new Response(html, {
+		status: response.status,
+		statusText: response.statusText
 	})
 }
