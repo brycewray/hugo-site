@@ -70,11 +70,21 @@ export default async function handleRequest(request) {
     )
     .replace(/<style/g, `<style nonce="${nonce}"`)
 
+	let ttl = undefined
+	let cache = caches.default
 	let url = new URL(request.url)
+	let shouldCache = false
 	let jsStuff = false
 	let svgStuff = false
-  const jsRegex = /(.*\.(js))$/
+
+  const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/
+	const jsRegex = /(.*\.(js))$/
   const svgRegex = /(.*\.(svg))$/
+
+  if (url.pathname.match(filesRegex)) {
+    shouldCache = true
+    ttl = 31536000
+  }
   if (url.pathname.match(jsRegex)) {
     jsStuff = true
   }
