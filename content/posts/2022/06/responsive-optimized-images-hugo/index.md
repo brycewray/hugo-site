@@ -96,9 +96,8 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 	conditional at the top controls whether we're
 	doing inline styling --- which is a no-no for
 	a tight Content Security Policy (CSP). Here,
-	it checks whether the host, as specified in the
-	site config file, is Cloudflare Pages (where I
-	use a Cloudflare Worker for that tight CSP).
+	it checks whether we're using nonces (and thus
+	a tight CSP), as spec'd in the site config file.
 	If so, it creates a new class, named
 	with an md5 hash for the value of $src, that
 	the div can use to provide the LQIP background.
@@ -109,7 +108,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 	avoid the conditional altogether.
 */}}
 {{- $imgBd5 := md5 $src -}}
-{{- if eq .Site.Params.Host "CFP" -}}
+{{- if .Site.Params.Nonces -}}
 	<style>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
 	</style>
