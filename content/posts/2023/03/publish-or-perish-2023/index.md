@@ -110,7 +110,7 @@ Other considerations:
 
 DOAP's CDN uses Cloudflare and its hundreds of PoPs.
 
-The DOAP UI is the worst among these hosts. It makes it somewhat difficult (by design?) to get started with a new site without inadvertently picking a paid plan. Indeed, it reminded me a little of the bad old days of trying to deal with old-school hosts like GoDaddy, which never tires of trying to sell you one or two or eighty-five things you didn't come there to buy. If you insist on trying DOAP, refer to [Frank Corso](https://frankcorso.dev)'s "[Deploying a Static Site to Digital Ocean's App Platform](https://frankcorso.dev/deploy-static-site-digital-ocean-app-platform.html)."
+The DOAP UI is the worst among these hosts. It makes it somewhat difficult (by design?) to get started with a new site without inadvertently picking a paid plan. Indeed, it reminded me a little of the bad old days of trying to deal with an old-school host like GoDaddy, which never tires of trying to sell you one or two or eighty-five things you didn't come there to buy. If you insist on trying DOAP, refer to [Frank Corso](https://frankcorso.dev)'s "[Deploying a Static Site to Digital Ocean's App Platform](https://frankcorso.dev/deploy-static-site-digital-ocean-app-platform.html)."
 
 DOAP builds are somewhat sluggish compared to others' speeds in this category, although they improve a bit after the first time.
 
