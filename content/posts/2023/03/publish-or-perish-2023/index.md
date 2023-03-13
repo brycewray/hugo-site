@@ -140,7 +140,7 @@ Other considerations:
 - Assigning a custom domain to a CFP site is easy and usually quite fast, especially (of course) if you're using Cloudflare DNS.
 - You cannot switch a deployed site between two different repos. Instead, you'll have to create a new project off the second repo and then, if applicable, point your custom domain to the new project.
 - One major gotcha in using CFP via its UI (rather than CI/CD) is that CFP's build image is badly outdated.\
-For example, if yours is a Hugo project, you have to specify your Hugo version through an environment variable or CFP will install only a several-years-old version that's probably incompatible with how most Hugo sites work. Also, the build image doesn't support current [Node.js](https://nodejs.org/) versions. Moreover, because the image's initialization process installs things you may not even want (*e.g.*, it adds that old Hugo version to **every** build, regardless of whether Hugo is even in the project), CFP's build speeds are slow.\
+For example, if yours is a Hugo project, you have to specify your Hugo version through an environment variable or CFP will install only a several-years-old version that's probably incompatible with how most Hugo sites work. Also, the build image doesn't support current [Node.js](https://nodejs.org/) versions. Moreover, because the image's initialization process installs things you may not even want (*e.g.*, it adds that old Hugo version to **every** build, regardless of whether Hugo is even in the project --- at least, unless you *have* specified a Hugo version), CFP's build speeds are slow.\
 The effort to update the build image, formerly slated for completion by now, is indefinitely delayed. Until that situation changes, **I don't recommend** using CFP through its native UI (*but* would add that doing so through *CI/CD* is fine and, in fact, is probably the best solution among any of these if one were going to use CI/CD rather than any host's native UI).
 
 ## Final thoughts
@@ -150,7 +150,7 @@ In summary, I'd rank the hosts as follows for a typical new SSG user who plans t
 1. Vercel tops the list, **unless** you're going to do any business whatsoever with your site (which bars you from the free tier). While its CDN is pedestrian compared to Cloudflare's, Vercel's stunning build speed and the solidity of its platform put it at the top. However, keep in mind that it's the only one of these without an official place (other than [Vercel's GitHub repo](https://github.com/vercel/vercel), perhaps) where you can ask for help.
 2. Render comes in a strong second. It fails to finish at the top mainly because its builds aren't as quick as Vercel's and its limits are considerably tighter, although 500 build minutes a month may be enough for the vast majority of cases. *(I didn't downrate Render for its custom-domain-assignment issues, which likely would bite you only once, if at all.)*
 3. Netlify is in the middle of this pack only because it's not as bad as the other two below. Its free-tier CDN is the worst of the bunch and Netlify's limits, while not horrible, tend to restrict active development.
-4. Cloudflare Pages would've been at or near the top of this list but for the hassles resulting from its ancient build image. Until that's resolved, CFP manages to be next-to-last by simply being not as bad as DOAP.
+4. Cloudflare Pages would've been at or near the top of this list but for the hassles resulting from its ancient build image. Until that situation is resolved, CFP manages to be next-to-last by simply being not as bad as DOAP.
 5. DigitalOcean App Platform ranks as high as fifth only because I can't rank it lower in a five-item list! The only thing DOAP has going for it is the Cloudflare CDN, and you can get that with Render or (if you must) CFP. Otherwise, DOAP's limits are far too tight and the startup process with its native UI is manipulative, to say the least.
 
 Or, if you prefer a chart:
@@ -160,7 +160,7 @@ Or, if you prefer a chart:
 | **Vercel** | 1 | 😕 | ☑️ | ✅ | ✅ | ☑️ |
 | **Render** | 2 | ✅ | ☑️ | ☑️ | ☑️ | ☑️ |
 | **Netlify** | 3 |  😡 | ✅ | ☑️ | 😕 | 😕 |
-| **CFP** | 4 | ✅ | 😕 | 😕 | ✅ | 😡 |
+| **CFP** | 4 | ✅ | 😕 | 😡 | ✅ | 😡 |
 | **DOAP** | 5 | ✅ | 😡 | ☑️ | 😡 | 😕 |
 {.ulysses}
 
