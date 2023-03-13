@@ -8,10 +8,6 @@ date: 2020-08-02T09:00:00-05:00
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
-## Beam Analytics
-
-This site currently is testing [Beam Analytics](https://beamanalytics.io), which [uses no cookies and is fully compliant with GDPR, CCPA, and PECR](https://beamanalytics.io/#features).
-
 ## Cloudinary
 
 [Cloudinary](https://cloudinary.com) hosts and serves some of the images on this site. A [Cloudinary Support article](https://support.cloudinary.com/hc/en-us/articles/360020207811-Does-Cloudinary-Store-Any-Cookies-) says that your viewing of any such images involves no storage or use of your personal data.
