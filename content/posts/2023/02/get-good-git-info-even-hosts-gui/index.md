@@ -128,7 +128,7 @@ Now, build the templating to access and display this data. Here are the relevant
 
 ## It works, but . . .
 
-This obviously is a bit less convenient than the more automatic methods I explained in those earlier posts. Perhaps the most onerous part is that, after **each** new commit of *any* content page where you want to display the Git data, you'll have to (a.) re-run the shell script and (b.) commit the newly changed YML data file. That'll get old in a hurry if you make frequent changes to your project.
+This obviously is a bit less convenient than the more automatic methods I explained in those earlier posts. Perhaps the most onerous part is that, after **each** new commit of *any* content page where you want to display the Git data, you'll have to (a.) re-run the shell script and (b.) commit the newly changed YAML data file. That'll get old in a hurry if you make frequent changes to your project.
 
 Still, it works. So, if you prefer to deploy to your host's native UI yet still want that Git goodness that normally comes only from using CI/CD, now you know how to get there. And, no, that's not a pun. I think.
 
