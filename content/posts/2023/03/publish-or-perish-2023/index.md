@@ -140,8 +140,10 @@ Other considerations:
 - Assigning a custom domain to a CFP site is easy and usually quite fast, especially (of course) if you're using Cloudflare DNS.
 - You cannot switch a deployed site between two different repos. Instead, you'll have to create a new project off the second repo and then, if applicable, point your custom domain to the new project.
 - One major gotcha in using CFP via its UI (rather than CI/CD) is that CFP's build image is badly outdated.\
-For example, if yours is a Hugo project, you have to specify your Hugo version through an environment variable or CFP will install only a several-years-old version that's probably incompatible with how most Hugo sites work. Also, the build image doesn't support current [Node.js](https://nodejs.org/) versions. Moreover, because the image's initialization process installs things you may not even want (*e.g.*, it adds that old Hugo version to **every** build, regardless of whether Hugo is even in the project --- at least, unless you *have* specified a Hugo version), CFP's build speeds are slow.\
+For example, if yours is a Hugo project, you have to specify your Hugo version through an environment variable or CFP will install only a several-years-old version that's probably incompatible with how most Hugo sites work. Also, the build image doesn't support current [Node.js](https://nodejs.org/) versions. Moreover, because the image's initialization process installs things you may not even want[^OldHugo], CFP's build speeds are slow.\
 The effort to update the build image, formerly slated for completion by now, is indefinitely delayed. Until that situation changes, **I don't recommend** using CFP through its native UI (*but* would add that doing so through *CI/CD* is fine and, in fact, is probably the best solution among any of these if one were going to use CI/CD rather than any host's native UI).
+
+[^OldHugo]: For example, it adds that old Hugo version to **every** build, regardless of whether Hugo is even in the project --- at least, it does unless you *have* specified a Hugo version.
 
 ## Final thoughts
 
