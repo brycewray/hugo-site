@@ -38,8 +38,8 @@ export default async function handleRequest(request) {
 		if (!type.startsWith("text/")) {
 			// Not text. Don't modify.
 			let newHeaders = new Headers(imageResponse.headers)
-			newHeaders.set("Cache-Control", "public, max-age=2678400, immutable")
-			newHeaders.set("CDN-Cache-Control", "public, max-age=2678400, immutable")
+			// newHeaders.set("Cache-Control", "public, max-age=2678400, immutable")
+			// newHeaders.set("CDN-Cache-Control", "public, max-age=2678400, immutable")
 			// newHeaders.set("x-BW-test", "Non-text item - headers edited!")
 			// newHeaders.set("Permissions-Policy", "interest-cohort=()")
 			newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
