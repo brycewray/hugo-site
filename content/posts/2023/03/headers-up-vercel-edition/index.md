@@ -3,7 +3,7 @@ title: "Headers up: the Vercel edition"
 description: "After a wait of nearly eighteen months, I finally have a Vercel Edge Function running on my non‑Next.js project."
 author: Bryce Wray
 date: 2023-03-14T04:31:00-05:00
-draft: true
+# draft: true
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
