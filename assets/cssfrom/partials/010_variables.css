@@ -238,9 +238,9 @@
 
 	/* === TYPOGRAPHY === */
 	/* font families */
-	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", "Noto Sans", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--serif: ui-serif, "New York", Georgia, Cambria, Times, "Times New Roman", serif;
-	--monospaced: ui-monospace, SFMono-Regular, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+	--sans-serif: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--serif: ui-serif, "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+	--monospaced: ui-monospace, SFMono-Regular, "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", "Source Code Pro", Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Droid Sans Mono", "Courier New", monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	/* text sizes */
 	--text-xs: 0.75rem;
