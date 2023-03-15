@@ -25,7 +25,7 @@ By mid-2022, a small number of non-Next.js examples had trickled into Vercel's G
 
 In multiple sessions over a period of months, I struggled in vain to duplicate the Worker's functionality in Vercel [Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware). What drove me especially crazy was that, despite *knowing* [this was simply "white-labeled" Cloudflare Workers technology](https://news.ycombinator.com/item?id=29003514), I couldn't manage to use my Worker's code without crashing the resulting Edge Function, thus taking down whatever project I was attempting to run on Vercel.[^WorkerVsEF]
 
-[^WorkerVsEF]: This is at least one way that the implementation of Cloudflare Workers is better than that of Vercel Edge Functions since, if my Worker crashes for some reason, it *won't* crash my project but, rather, will only cease providing its add-ons to the project.
+[^WorkerVsEF]: This is at least one way that the implementation of Cloudflare Workers is better than that of Vercel Edge Functions since, if my Worker crashes for some reason, it usually won't clobber my project but, rather, will only cease providing add-ons.
 
 I knew, of course, that the code couldn't be *exactly* the same. For example, while my Worker began with:
 
