@@ -79,7 +79,7 @@ I reverted `middleware.js` to the point where its Edge Function had worked, and 
   let cache = caches.default
 ```
 
-. . . which understandably flummoxed Vercel, since [`caches.default` refers to a Cloudflare Workers API](https://developers.cloudflare.com/workers/runtime-apis/cache/). And, anyway, I saw this line didn't even serve a purpose in my Worker, much less in `middleware.js`! Thus, I simply deleted the problematic line and, *whammo*, my Vercel project had an Edge Function that performed the same tasks as had the Worker for my real site.
+. . . which understandably flummoxed Vercel, since [`caches.default` refers to a Cloudflare Workers API](https://developers.cloudflare.com/workers/runtime-apis/cache/). And, anyway, I saw this line didn't even serve a purpose in my Worker, much less in `middleware.js`! Thus, I simply commented-out the problematic line and, *whammo*, my Vercel project had an Edge Function that performed the same tasks as had the Worker for my real site.
 
 **Note**: To be safe, I later wrapped most of the code inside a [`try`...`catch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) so, if I later committed a typo or otherwise introduced a glitch, the Edge Function wouldn't crash.
 {.box}
