@@ -342,10 +342,7 @@ a > .card, a > .toot-card {
 	@media screen and (min-width: 768px){
 		display: flex;
 	}
-	border: 1px solid var(--twcss-gray-700); /* gray-700 */
-	@media (prefers-color-scheme: dark) {
-		border: 1px solid var(--twcss-gray-200); /* gray-200 */
-	}
+	border: 2px solid var(--twcss-gray-400); /* gray-700 */
 	border-radius: 6px;
 	margin-top: 1em;
 	text-decoration: none;
@@ -356,10 +353,7 @@ a > .card, a > .toot-card {
 	@media screen and (min-width: 768px){
 		flex: 0 0 200px;
 	}
-	border-right: 1px solid var(--twcss-gray-700); /* gray-700 */
-	@media (prefers-color-scheme: dark) {
-		border-right: 1px solid var(--twcss-gray-200); /* gray-200 */
-	}
+	border-right: 2px solid var(--twcss-gray-400); /* gray-700 */
 	position: relative;
 	& .toot-card-image-image {
 		display: block;
