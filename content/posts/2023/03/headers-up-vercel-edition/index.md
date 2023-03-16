@@ -63,7 +63,7 @@ Then, a few nights ago, I decided to give the whole thing yet another go. The re
 
 I began cautiously, adapting one of the non-Next.js [examples](https://github.com/vercel/examples/tree/main/edge-middleware) to [inject simple headers](https://github.com/vercel/examples/tree/main/edge-middleware/add-header) such as:
 
-```bash
+```http
 x-test-from-middleware: true
 ```
 
