@@ -16,6 +16,9 @@ oldComments: |
   </div>
 ---
 
+**Note from the future**: [I revisited this subject in 2023](/posts/2023/03/publish-or-perish-2023/).
+{.box}
+
 This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static website](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.
 
 ## Keepin’ it easy: Go GUI
