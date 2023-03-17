@@ -36,7 +36,7 @@
 			{{- $Title := .Title -}}
 			{{/* end, variables for context in non-CI/CD `range` */}}
 			<p class="ctr legal" data-pagefind-ignore>
-				{{- if (and (eq .Site.Params.Deploy true) $.GitInfo) -}}
+				{{- if (and (eq .Site.Params.Deploy "CI") $.GitInfo) -}}
 					<a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener">Latest commit</a> ({{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}{{ .Lastmod.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; <a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>
 				{{- else -}}
 					{{- range $.Site.Data.gitoutput.gitinfo -}}
