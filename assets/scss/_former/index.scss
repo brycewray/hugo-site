@@ -1,0 +1,33 @@
+@charset 'utf-8';
+@use 'partials/reset';
+// @use 'partials/fonts_Inter';
+// @use 'partials/fonts_Inter64';
+// @use 'partials/fonts_PublicSans';
+// @use 'partials/fonts_LibreFranklin';
+// @use 'partials/variables'; // calling it where needed within files
+// @use 'partials/social';
+// @use 'partials/chroma_native_tweaked';
+// @use 'partials/chroma_rrt';
+// @use 'partials/chroma_monokai_tweaked';
+// @use 'partials/chroma_fix-all';
+@use 'partials/global';
+@use 'partials/utility';
+// @use 'partials/tables';
+@use 'partials/billboard';
+// @use 'partials/posts';
+// @use 'partials/footnotes';
+// @use 'partials/home';
+@use 'partials/nav';
+// @use 'partials/lazyload';
+// @use 'partials/lazypic';
+// @use 'partials/sitemaphtml';
+// @use 'partials/search-btn';
+// @use 'partials/search-form';
+// @use 'partials/intervf'; // for Inter VF's weird obliquing stuff
+@use 'partials/vweights'; // for variable fonts, sys or uploaded (test on Linux VM?)
+// @use 'partials/ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
+// @use 'partials/heroimg';
+// @use 'partials/iefixes';
+// @use 'partials/lite-yt-embed';
+// @use 'partials/webmentions';
+// @use 'partials/print';

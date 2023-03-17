@@ -1,0 +1,48 @@
+@charset 'utf-8';
+@use 'partials/variables' as var;
+
+.header-anchor {
+	text-decoration: none;
+	color: var.$default-light;
+	@media (prefers-color-scheme: dark) {
+		color: var.$default-dark;
+	}
+	&:hover, &:active, &:focus {
+		color: map-get(var.$twcss, blue-700);
+		text-decoration: underline;
+		text-decoration-thickness: var.$textDcThick; // always rem
+		text-underline-offset: var.$textUnOffst; // always em
+		text-decoration-skip-ink: auto;
+		@media (prefers-color-scheme: dark) {
+			color: map-get(var.$twcss, blue-300);
+		}
+		&::after {
+			font-size: var.$text-base;
+			padding-left: 0.5em;
+			content: "#";
+		}
+	}
+}
+
+article {
+	padding-top: 1em; // definitely em, not rem
+	p, li {
+		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
+		line-height: 1.5em;
+		margin-top: 1.15em;
+		margin-bottom: 1.15em;
+	}
+	li li, li p {
+		font-size: inherit;
+		margin-top: 0.25em; // definitely em, not rem
+	}
+	h1, h2, h3, h4 {
+		margin-top: 1.5em;
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.02em;
+		line-height: normal;
+	}
+	picture img {
+		height: auto;
+	}
+}

@@ -1,4 +1,6 @@
 		{{- $css := "" -}}
+		{{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
+		{{- $cssOptionsPrint := merge $cssOptions (dict "targetPath" "css/print.css") -}}
 		{{- $condition := "" -}}
 		{{- $fileName := "" -}}
 		{{- $conditionSocial := false -}}
@@ -56,19 +58,18 @@
 			{{- $condition = index . 0 -}}
 			{{- $fileName = index . 1 -}}
 			{{- if eq $condition true -}}
-				{{/* Go get and fingerprint what `postcss-cli` has built */}}
-				{{- $css = resources.Get (print "css/" $fileName ".css") | fingerprint "md5" -}}
-				{{- /* fingerprint even in dev mode because Safari caching gets weird */ -}}
+				{{- $cssOptions := merge $cssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
+				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
 				{{- if hugo.IsProduction -}}
-					{{- $css = $css | minify -}}
+					{{- $css = $css | fingerprint "md5" -}}
 				{{- end }}
 				<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 				<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen">
 			{{ end -}}
 		{{- end -}}
 
-		{{- $printCSS := resources.Get "css/print.css" | fingerprint "md5" -}}
+		{{- $printCSS := resources.Get "scss/print.scss" | resources.ToCSS $cssOptionsPrint -}}
 		{{- if hugo.IsProduction -}}
-			{{- $printCSS = $printCSS | minify -}}
+			{{- $printCSS = $printCSS | fingerprint "md5" -}}
 		{{- end }}
 		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print">
