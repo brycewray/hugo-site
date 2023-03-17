@@ -1,5 +1,6 @@
-{{- $css := "" -}}
-{{- $css = resources.Get "css/critical.css" -}}
-{{- with $css }}
-	<style media="screen">{{ .Content | safeCSS }}</style>
-{{- end }}
+		{{- $css := "" -}}
+		{{- $optionsCSSCritical := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
+		{{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCritical -}}
+		{{- with $css }}
+			<style media="screen">{{ .Content | safeCSS }}</style>
+		{{- end }}
