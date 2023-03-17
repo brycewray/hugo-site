@@ -47,8 +47,10 @@ jobs:
         run: npm install
       - name: Build site with Hugo
         run: npm run build
-      - name: Move Vercel-specific file to `/public`
-        run: mv middleware.js public/middleware.js
+      - name: Move Vercel-specific files to `/public`
+        run: |
+          mv middleware.js public/middleware.js
+          mv vercel.json public/vercel.json
       - name: Run Pagefind
         run: npm run search
       - name: Publish to Vercel (Betahuhn)
@@ -68,5 +70,7 @@ jobs:
       #     vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
       #     vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
       #     working-directory: 'public'
-      - name: Remove Vercel-specific file from build
-        run: rm -rf public/middleware.js
+      - name: Remove Vercel-specific files from build
+        run: |
+          rm -rf public/middleware.js
+          rm -rf public/vercel.json
