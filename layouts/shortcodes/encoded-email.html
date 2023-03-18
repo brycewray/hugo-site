@@ -1,5 +1,5 @@
 {{- /* https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945/2 */ -}}
-{{- if ne .Site.Params.Host "CFP" -}}
+{{- if eq .Site.Params.EmailObfuscation "local" -}}
 	{{- $email := .Get "email" -}}
 	<script{{- if .Site.Params.Nonces }} nonce="DhcnhD3khTMePgXw"{{- end }}>
 		var email64 ='{{ $email | base64Encode }}';
