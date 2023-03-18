@@ -84,14 +84,13 @@ I reverted `middleware.js` to the point where its Edge Function had worked, and 
 **Note**: To be safe, I later wrapped most of the code inside a [`try`...`catch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) so, if any future edit included a typo or otherwise introduced a glitch, the Edge Function wouldn't crash.
 {.box}
 
-And that's how, the next day, after indulging in a social-media victory lap:
+And that's how, the next day, I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/.deprecated/middleware.js).[^CFPReturn]
 
-> Managed at long last to get non-Next.js Edge Middleware working on Vercel. Had been frustrated in trying to convert a Cloudflare Worker for use with Vercel, mainly to create nonces for a Content Security Policy. Gave it yet another try yesterday and got the sucker to work. 🥳
->
-> [https://github.com/brycewray/hugo-site/blob/main/middleware.js](https://github.com/brycewray/hugo-site/blob/main/middleware.js)
->
-> [#WebDev](https://mastodon.social/tags/WebDev) [#Edge](https://mastodon.social/tags/Edge) [#Vercel](https://mastodon.social/tags/Vercel) [#ContentSecurityPolicy](https://mastodon.social/tags/ContentSecurityPolicy)\
-> <span class="pokey">5:57 PM • March 12, 2023 (UTC)</span>
+[^obfus]: Over and above what the Edge Function allowed, I also wanted to duplicate on Vercel the [email address obfuscation](https://developers.cloudflare.com/support/more-dashboard-apps/cloudflare-scrape-shield/what-is-email-address-obfuscation/) Cloudflare had provided in every instance on the site where I gave my address --- namely, on the [contact page](/contact/) and in the "Reply via email" button at the bottom of each post. After finding a [related discussion](https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945) on the [Hugo Discourse forum](https://discourse.gohugo.io) and reviewing a reader's emailed comment on the same topic, I implemented the suggested solution. As of this writing, you can see it in my [posts template](https://github.com/brycewray/hugo-site/blob/main/layouts/posts/single.html) and a single-use [shortcode](https://github.com/brycewray/hugo-site/blob/main/layouts/shortcodes/encoded-email.html).
+
+[^CFPReturn]: After a few days chasing a JavaScript oddity [which I reported in vain to Vercel](https://github.com/vercel/edge-runtime/issues/286) (as I [previously noted](/posts/2023/03/publish-or-perish-2023/#vercel), a free-tier Vercel user has to accept that there may not be much online help, at least not of a timely nature), I returned the site to Cloudflare Pages.
+
+So, if you've considered using Vercel Edge Functions with your non-Next.js project, go ahead and give it your best shot. It may require some hassles before you can make it work, but take heart: it *can* be done.
 
 <!--
 Managed at long last to get non-Next.js Edge Middleware working on Vercel. Had been frustrated in trying to convert a Cloudflare Worker for use with Vercel, mainly to create nonces for a Content Security Policy. Gave it yet another try yesterday and got the sucker to work. 🥳
@@ -104,11 +103,3 @@ https://github.com/brycewray/hugo-site/blob/main/middleware.js
 
 https://mastodon.social/@BryceWray/110011486928150249
 -->
-
-. . . I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/.deprecated/middleware.js).[^CFPReturn]
-
-[^obfus]: Over and above what the Edge Function allowed, I also wanted to duplicate on Vercel the [email address obfuscation](https://developers.cloudflare.com/support/more-dashboard-apps/cloudflare-scrape-shield/what-is-email-address-obfuscation/) Cloudflare had provided in every instance on the site where I gave my address --- namely, on the [contact page](/contact/) and in the "Reply via email" button at the bottom of each post. After finding a [related discussion](https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945) on the [Hugo Discourse forum](https://discourse.gohugo.io) and reviewing a reader's emailed comment on the same topic, I implemented the suggested solution. As of this writing, you can see it in my [posts template](https://github.com/brycewray/hugo-site/blob/main/layouts/posts/single.html) and a single-use [shortcode](https://github.com/brycewray/hugo-site/blob/main/layouts/shortcodes/encoded-email.html).
-
-[^CFPReturn]: After a few days chasing a JavaScript oddity [which I reported in vain to Vercel](https://github.com/vercel/edge-runtime/issues/286) (as I [previously noted](/posts/2023/03/publish-or-perish-2023/#vercel), a free-tier Vercel user has to accept that there may not be much online help, at least not of a timely nature), I returned the site to Cloudflare Pages.
-
-So, if you've considered using Vercel Edge Functions with your non-Next.js project, go ahead and give it your best shot. It may require some hassles before you can make it work, but take heart: it *can* be done.
