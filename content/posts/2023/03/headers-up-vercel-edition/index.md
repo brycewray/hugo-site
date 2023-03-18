@@ -57,7 +57,7 @@ export default async function handleRequest(request) {
 
 ## Try, try, try, try again
 
-Then, a few nights ago, I decided to give the whole thing yet another go. The reason? I wanted to move my site to Vercel[^why] ***without*** weakening (or abandoning) the site's CSP, and the only way to accomplish that would be via an Edge Function.
+Then, a few nights ago, I decided to give the whole thing yet another go. The reason? I wanted to move my site to Vercel[^why], at least for a while, ***without*** weakening (or abandoning) the site's CSP, and the only way to accomplish that would be via an Edge Function.
 
 [^why]: As for why, that's a story for another time, although my recent "[‘Publish or perish’ in 2023](/posts/2023/03/publish-or-perish-2023/)" may give you some clues.
 
@@ -100,8 +100,10 @@ https://github.com/brycewray/hugo-site/blob/main/middleware.js
 https://mastodon.social/@BryceWray/110011486928150249
 -->
 
-. . . I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/middleware.js).
+. . . I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/middleware.js).[^CFPReturn]
 
 [^obfus]: Over and above what the Edge Function allowed, I also wanted to duplicate on Vercel the [email address obfuscation](https://developers.cloudflare.com/support/more-dashboard-apps/cloudflare-scrape-shield/what-is-email-address-obfuscation/) Cloudflare had provided in every instance on the site where I gave my address --- namely, on the [contact page](/contact/) and in the "Reply via email" button at the bottom of each post. After finding a [related discussion](https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945) on the [Hugo Discourse forum](https://discourse.gohugo.io) and reviewing a reader's emailed comment on the same topic, I implemented the suggested solution. As of this writing, you can see it in my [posts template](https://github.com/brycewray/hugo-site/blob/main/layouts/posts/single.html) and a single-use [shortcode](https://github.com/brycewray/hugo-site/blob/main/layouts/shortcodes/encoded-email.html).
+
+[^CFPReturn]: After a few days chasing a JavaScript oddity [which I reported in vain to Vercel](https://github.com/vercel/edge-runtime/issues/286) (as I [previously noted](/posts/2023/03/publish-or-perish-2023/#vercel), a free-tier Vercel user has to accept that there may not be much online help, at least not of a timely nature), I returned the site to Cloudflare Pages.
 
 So, if you've considered using Vercel Edge Functions with your non-Next.js project, go ahead and give it your best shot. It may require some hassles before you can make it work, but take heart: it *can* be done.
