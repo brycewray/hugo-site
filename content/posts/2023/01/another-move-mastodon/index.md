@@ -19,21 +19,11 @@ Well, at least as of this writing, I haven't *completely* left it; my account th
 
 It wasn't that there was anything wrong with Fosstodon. Rather, I decided, **I** wasn't entirely right for **it**. I reached this conclusion after seeing, and briefly participating in, a thread which began last night with this from another Fosstodon user:
 
-{{< stoot "fosstodon.org" "109644650964219975" >}}
-
-. . . but please read [the entire thread](https://fosstodon.org/@mairhart/109644650964219975) so you'll get the full picture.
-
-----
-
-Does any of this reflect an official Fosstodon position about what appears on its local timeline? No, at least not as far as I know --- but the thread made me think **very** hard about the content to which I was subjecting other Fosstodon users. I mean, many if not most of them likely have little or no interest in seeing the *non*-tech content in certain posts/toots I either write or boost.
-
-For example, I've seen a number of Fosstodon users pointedly expressing zero interest in sports, so it's likely they're annoyed by those sports-related items that other users, such as I was until today, write or boost; and that's absolutely fair. The same probably goes for posts/toots relating to U.S. current events, particularly since many Fosstodon users live far from the United States.
-
-In the end, I decided it would be better if I were on a less specifically targeted instance --- so off to mstdn.social I went.
-
-After all, I didn't want to risk being (or continuing to be) one of Those Guys:
-
-{{< lite-youtube videoTitle="Those Guys" videoId="wvlHTNPROYE" >}}
+> How many of you [#Mastodon](https://fosstodon.org/tags/Mastodon) users have more than one account, addressing different audiences?
+>
+> I keep finding myself hesitant to post or share political posts on my tech-oriented server.
+>
+> <span class="legal">10:36 PM • January 6, 2023 (UTC)</span>
 
 <!--
 
@@ -50,3 +40,17 @@ Michael Airhart (he/him)
 
 10:36 PM • January 6, 2023 (UTC)
 -->
+
+. . . but please read [the entire thread](https://fosstodon.org/@mairhart/109644650964219975) so you'll get the full picture.
+
+----
+
+Does any of this reflect an official Fosstodon position about what appears on its local timeline? No, at least not as far as I know --- but the thread made me think **very** hard about the content to which I was subjecting other Fosstodon users. I mean, many if not most of them likely have little or no interest in seeing the *non*-tech content in certain posts/toots I either write or boost.
+
+For example, I've seen a number of Fosstodon users pointedly expressing zero interest in sports, so it's likely they're annoyed by those sports-related items that other users, such as I was until today, write or boost; and that's absolutely fair. The same probably goes for posts/toots relating to U.S. current events, particularly since many Fosstodon users live far from the United States.
+
+In the end, I decided it would be better if I were on a less specifically targeted instance --- so off to mstdn.social I went.
+
+After all, I didn't want to risk being (or continuing to be) one of Those Guys:
+
+{{< lite-youtube videoTitle="Those Guys" videoId="wvlHTNPROYE" >}}

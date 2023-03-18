@@ -86,7 +86,12 @@ I reverted `middleware.js` to the point where its Edge Function had worked, and 
 
 And that's how, the next day, after indulging in a social-media victory lap:
 
-{{< stoot "mastodon.social" "110011486928150249" >}}
+> Managed at long last to get non-Next.js Edge Middleware working on Vercel. Had been frustrated in trying to convert a Cloudflare Worker for use with Vercel, mainly to create nonces for a Content Security Policy. Gave it yet another try yesterday and got the sucker to work. 🥳
+>
+> [https://github.com/brycewray/hugo-site/blob/main/middleware.js](https://github.com/brycewray/hugo-site/blob/main/middleware.js)
+>
+> [#WebDev](https://mastodon.social/tags/WebDev) [#Edge](https://mastodon.social/tags/Edge) [#Vercel](https://mastodon.social/tags/Vercel) [#ContentSecurityPolicy](https://mastodon.social/tags/ContentSecurityPolicy)\
+> <span class="pokey">5:57 PM • March 12, 2023 (UTC)</span>
 
 <!--
 Managed at long last to get non-Next.js Edge Middleware working on Vercel. Had been frustrated in trying to convert a Cloudflare Worker for use with Vercel, mainly to create nonces for a Content Security Policy. Gave it yet another try yesterday and got the sucker to work. 🥳
