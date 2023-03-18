@@ -100,7 +100,7 @@ https://github.com/brycewray/hugo-site/blob/main/middleware.js
 https://mastodon.social/@BryceWray/110011486928150249
 -->
 
-. . . I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/middleware.js).[^CFPReturn]
+. . . I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/.deprecated/middleware.js).[^CFPReturn]
 
 [^obfus]: Over and above what the Edge Function allowed, I also wanted to duplicate on Vercel the [email address obfuscation](https://developers.cloudflare.com/support/more-dashboard-apps/cloudflare-scrape-shield/what-is-email-address-obfuscation/) Cloudflare had provided in every instance on the site where I gave my address --- namely, on the [contact page](/contact/) and in the "Reply via email" button at the bottom of each post. After finding a [related discussion](https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945) on the [Hugo Discourse forum](https://discourse.gohugo.io) and reviewing a reader's emailed comment on the same topic, I implemented the suggested solution. As of this writing, you can see it in my [posts template](https://github.com/brycewray/hugo-site/blob/main/layouts/posts/single.html) and a single-use [shortcode](https://github.com/brycewray/hugo-site/blob/main/layouts/shortcodes/encoded-email.html).
 
