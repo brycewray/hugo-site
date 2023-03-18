@@ -29,8 +29,8 @@
 			&:hover, &:focus {
 				color: map-get(var.$twcss, gray-800);
 				text-decoration: underline; // normal
-				text-decoration-thickness: var.$textDcThick; // always rem
-				text-underline-offset: var.$textUnOffst; // always em
+				text-decoration-thickness: var.$textDcThickMd;
+				text-underline-offset: var.$textUnOffst;
 				text-decoration-skip-ink: auto;
 				@media (prefers-color-scheme: dark) {
 					color: map-get(var.$twcss, gray-200);
