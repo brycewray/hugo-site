@@ -56,7 +56,7 @@ $default-light: map-get($twcss, gray-700);
 $default-dark: map-get($twcss, gray-300);
 ```
 
-With those variables set, here we go. Because of how this site renders code blocks, you'll need to scroll to see the full rules --- or you may just want to copy the code into a text editor for more comfortable viewing.
+With those variables set, here we go. (You may want to copy the code into a text editor for more comfortable, scroll-free viewing.)
 
 ```scss
 // These are relevant excerpts from
@@ -66,7 +66,7 @@ With those variables set, here we go. Because of how this site renders code bloc
 
 article {
 
-	// First, we assign colors to 
+	// First, we assign colors to
 	// boldfaced and italicized text
 	// that is **not** in the class
 	// `red`, **not** inside a link,
@@ -76,12 +76,19 @@ article {
 	// Note that we cover not only
 	// <strong> but also <b>, and
 	// not only <em> but also <i>;
-	// in addition, we take care of 
+	// in addition, we take care of
 	// groupings --- <strong><em>,
 	// <em><strong>, <b><i>,
 	// and <i><b>.
 
-	strong:not(.red *):not(a *):not(blockquote *), b:not(.red *):not(a *):not(blockquote *), em:not(.red *):not(a *):not(blockquote *), i:not(.red *):not(a *):not(blockquote *), em strong:not(.red *):not(a *):not(blockquote *), strong em:not(.red *):not(a *):not(blockquote *), i b:not(.red *):not(a *):not(blockquote *), b i:not(.red *):not(a *):not(blockquote *) {
+	strong:not(.red *):not(a *):not(blockquote *),
+	b:not(.red *):not(a *):not(blockquote *),
+	em:not(.red *):not(a *):not(blockquote *),
+	i:not(.red *):not(a *):not(blockquote *),
+	em strong:not(.red *):not(a *):not(blockquote *),
+	strong em:not(.red *):not(a *):not(blockquote *),
+	i b:not(.red *):not(a *):not(blockquote *),
+	b i:not(.red *):not(a *):not(blockquote *) {
 		color: map-get(var.$twcss, gray-800); // (vs. gray-700)
 		@media (prefers-color-scheme: dark) {
 			color: map-get(var.$twcss, gray-200); // (vs. gray-300)
@@ -93,7 +100,7 @@ article {
 	// we assign colors to boldfaced and
 	// italicized text that **is** within
 	// a blockquote but is **not** inside
-	// a link. (We cover the same tags 
+	// a link. (We cover the same tags
 	// and groupings as before.)
 	//
 	// In essence, we're giving this
@@ -102,7 +109,14 @@ article {
 	// regular text, thus contrasting
 	// with the blockquote styling.
 
-	strong:is(blockquote *):not(a *), b:is(blockquote *):not(a *), em:is(blockquote *):not(a *), i:is(blockquote *):not(a *), em strong:is(blockquote *):not(a *), strong em:is(blockquote *):not(a *), i b:is(blockquote *):not(a *), b i:is(blockquote *):not(a *) {
+	strong:is(blockquote *):not(a *),
+	b:is(blockquote *):not(a *),
+	em:is(blockquote *):not(a *),
+	i:is(blockquote *):not(a *),
+	em strong:is(blockquote *):not(a *),
+	strong em:is(blockquote *):not(a *),
+	i b:is(blockquote *):not(a *),
+	b i:is(blockquote *):not(a *) {
 		color: var.$default-light; // gray-700 (vs. gray-600)
 		@media (prefers-color-scheme: dark) {
 			color: var.$default-dark; // gray-300 (vs. gray-400)
