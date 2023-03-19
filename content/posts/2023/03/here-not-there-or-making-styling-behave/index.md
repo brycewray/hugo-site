@@ -7,6 +7,9 @@ date: 2023-03-19T15:25:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/here-not-there-or-making-styling-behave-43ia).
+{.box}
+
 All I wanted to do was make my bold and slanted text instances a little easier to see, as I'd seen done on others' sites. But, man, did that ever end up involving some convoluted-looking styling. On the chance that you might need to do something similar, here are the details.
 
 <!--more-->
