@@ -67,6 +67,9 @@ With those variables set, here we go. (You may want to copy the code into a text
 // comes into play only when a
 // page has the `article` element.
 
+@charset 'utf-8';
+@use 'partials/variables' as var;
+
 article {
 
 	// First, we assign colors to
