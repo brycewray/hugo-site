@@ -48,9 +48,9 @@ article {
 	// following from...
 	// https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
 	strong:not(.red *):not(a *):not(blockquote *), b:not(.red *):not(a *):not(blockquote *), em:not(.red *):not(a *):not(blockquote *), i:not(.red *):not(a *):not(blockquote *), em strong:not(.red *):not(a *):not(blockquote *), strong em:not(.red *):not(a *):not(blockquote *) {
-		color: map-get(var.$twcss, gray-800); // vs. gray-700
+		color: map-get(var.$twcss, gray-800); // (vs. gray-700)
 		@media (prefers-color-scheme: dark) {
-			color: map-get(var.$twcss, gray-200); // vs. gray-300
+			color: map-get(var.$twcss, gray-200); // (vs. gray-300)
 		}
 	}
 	strong:is(blockquote *):not(a *), b:is(blockquote *):not(a *), em:is(blockquote *):not(a *), i:is(blockquote *):not(a *), em strong:is(blockquote *):not(a *), strong em:is(blockquote *):not(a *) {
