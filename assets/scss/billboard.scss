@@ -4,6 +4,10 @@
 .billboard {
 	&-div {
 		// font-family: var.$sans-serif;
+		color: black;
+		@media (prefers-color-scheme: dark) {
+			color: white;
+		}
 		text-align: center;
 		position: relative;
 		height: auto;
