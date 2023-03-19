@@ -14,7 +14,7 @@
 */ -}}
 {{- $filter := false -}}
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
-{{- $simple := "false" -}}
+{{- $simple := false -}}
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
 {{- $divClass := "" -}}
@@ -38,7 +38,7 @@
 
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
 
-{{- if eq $simple "false" -}}
+{{- if eq $simple false -}}
 {{- if .Site.Params.Nonces -}}
 	<style data-pagefind-ignore>
 		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
@@ -65,8 +65,8 @@
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<img{{ if eq $simple "false" }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+		<img{{ if eq $simple false }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 	</picture>
-{{- if eq $simple "false" -}}
+{{- if eq $simple false -}}
 </div>
 {{- end -}}
