@@ -21,7 +21,7 @@ It may well be that, in time, WebC will become Eleventy's most familiar templati
 
 Earlier this month, during an interview on [Episode #266](https://changelog.com/jsparty/266) of the [*JS Party* podcast](https://changelog.com/jsparty/), Leatherman compared Nunjucks' condition to that of the somewhat similar [Liquid](https://liquidjs.com/) templating engine:
 
-> I think that WebC will be seen as a successor to some of these template syntaxes that aren't maintained very well anymore, as the maintainers sort of move on. . . . Liquid is very well[-]maintained. Nunjucks, not so much.
+> I think that WebC will be seen as a successor to some of these template syntaxes that aren't maintained very well anymore, as the maintainers sort of move on. . . . Liquid is very well-maintained. Nunjucks, not so much.
 
 Mozilla's [Nunjucks repo](https://github.com/mozilla/nunjucks) had its [latest release (v3.2.3)](https://github.com/mozilla/nunjucks/releases/tag/v3.2.3) on June 2, 2022 (although its [`package.json`](https://github.com/mozilla/nunjucks/blob/master/package.json) was last updated in early 2021), but a look through the [`docs`](https://github.com/mozilla/nunjucks/tree/master/docs) portion of the repo shows many files and directories that are ancient by web dev standards. Some date back to February, 2015.
 
