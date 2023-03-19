@@ -13,7 +13,7 @@ But the times, they may be a-changin’.
 
 <!--more-->
 
-Eleventy has always led the SSG pack in templating flexibility, with support for [numerous languages](https://11ty.dev/docs/languages/). Then, a few months ago, Eleventy creator [Zach Leatherman](https://zachleat.com) upped the ante with his own creation, **WebC**. [Its GitHub repo](https://github.com/11ty/webc) describes WebC as a "framework-independent standalone HTML serializer for generating markup for [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)" *[link added]*. As W. Evan Sheehan explained in "[Introduction to WebC](https://11ty.rocks/posts/introduction-webc/)":
+Eleventy has always led the SSG pack in templating flexibility, with support for [numerous languages](https://11ty.dev/docs/languages/). Then, a few months ago, Eleventy creator [Zach Leatherman](https://zachleat.com) upped the ante with **WebC**. [Its GitHub repo](https://github.com/11ty/webc) describes WebC as a "framework-independent standalone HTML serializer for generating markup for [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)" *[link added]*. As [W. Evan Sheehan](https://darthmall.net/) explained in "[Introduction to WebC](https://11ty.rocks/posts/introduction-webc/)":
 
 > It aggregates component-level CSS and JavaScript, allowing developers to keep their styles and scripts together with the markup as single[-]file components, the way you may be used to if you work with JavaScript frameworks such as [Svelte](https://svelte.dev/) or [Vue](https://vuejs.org/).
 
