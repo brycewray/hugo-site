@@ -224,7 +224,7 @@ $twcss: (
 	rose-800: #9f1239,
 	rose-900: #881337
 );
-$default-light: map-get($twcss, gray-900);
+$default-light: map-get($twcss, gray-700);
 $default-dark: map-get($twcss, gray-300);
 // =========================
 // ===== end, COLORS =====
