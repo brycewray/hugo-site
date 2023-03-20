@@ -1,6 +1,6 @@
 ---
 title: "Here, not there — or, making styling behave"
-description: "While making boldfaced and slanted text a little easier to detect, I end up with (S)CSS that looks nasty but behaves itself."
+description: "While making boldfaced and slanted text a little easier to detect, I end up with (S)CSS that looks nasty but gets the job done."
 author: Bryce Wray
 date: 2023-03-19T15:25:00-05:00
 # draft: true
