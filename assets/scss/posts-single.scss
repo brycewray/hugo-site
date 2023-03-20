@@ -42,12 +42,11 @@
 
 contact-button {
 	// font-family: var.$sans-serif;
-	display: block;
-	text-align: center;
-	margin: 1.5em auto 1em;
+	display: grid;
+	place-items: center;
+	margin-top: 0.5em;
 	button {
 		width: 15rem;
-		margin-top: 0.5em;
 		padding: 0.25rem 0;
 		background-color: map-get(var.$twcss, blue-700);
 		border-radius: var.$btn_radius;
