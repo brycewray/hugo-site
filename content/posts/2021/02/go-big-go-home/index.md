@@ -38,7 +38,7 @@ The shortcode we're discussing here, initially created in the Eleventy site as *
 
 For example, I can insert all the code required for a responsive display of the following image&nbsp;.&nbsp;.&nbsp;.
 
-{{< imgh src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width=1984 height=1118 >}}
+{{< imgh-colors src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width=1984 height=1118 >}}
 
 Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/)
 {.imgcCaption}

@@ -47,11 +47,11 @@ In case you're wondering: no, I have no idea whether this has something to do wi
 
 Here are two charts showing both the *pre*- and *post*-`imgh` "publish" performances for Vercel and Cloudflare Pages. While there are a few spikes here and there, you can see the overall trend of CFP's substantially outperforming Vercel on both sets of GHA-based "publish" events.
 
-{{< imgh src="Pre-imgh_pubs_CFP-Vercel-GHAs-comparison_1800x1200.png"  alt="Chart comparing publish-to-CDN times from this site for Cloudflare Pages and Vercel prior to use of the “imgh” shortcode" width=1800 height=1200 >}}
+{{< imgh-colors src="Pre-imgh_pubs_CFP-Vercel-GHAs-comparison_1800x1200.png"  alt="Chart comparing publish-to-CDN times from this site for Cloudflare Pages and Vercel prior to use of the “imgh” shortcode" width=1800 height=1200 >}}
 
 <br />
 
-{{< imgh src="Post-imgh_pubs_CFP-Vercel-GHAs-comparison_1800x1200.png"  alt="Chart comparing publish-to-CDN times from this site for Cloudflare Pages and Vercel with use of the “imgh” shortcode" width=1800 height=1200 >}}
+{{< imgh-colors src="Post-imgh_pubs_CFP-Vercel-GHAs-comparison_1800x1200.png"  alt="Chart comparing publish-to-CDN times from this site for Cloudflare Pages and Vercel with use of the “imgh” shortcode" width=1800 height=1200 >}}
 
 ## Workarounds for Hugo on Vercel
 

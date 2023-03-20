@@ -54,7 +54,7 @@ Moreover, the reason I originally used Ulysses for this kind of writing --- the 
 
 That said, I think the writing experience looks a bit *cleaner* in Ulysses, especially if --- as is true for me --- you don't like the particular background treatment in iA Writer. My [aged](/posts/2019/09/now-im-sixty-four/) eyes prefer text to be a bit sharper and have a little more contrast *vs.* the background. The image below shows the difference (albeit not as clearly as I'd like), with the Ulysses text appearance first and then that of iA Writer:
 
-{{< imgh src="Ulysses-vs-iA_Writer_text-treatments_1539x846.png" alt="The same paragraph as it appears in both Ulysses and iA Writer as of August, 2020" width=1539 height=846 >}}
+{{< imgh-colors src="Ulysses-vs-iA_Writer_text-treatments_1539x846.png" alt="The same paragraph as it appears in both Ulysses and iA Writer as of August, 2020" width=1539 height=846 >}}
 
 Ulysses also allows slightly easier manipulation of type styles --- *e.g.*, letting **&#8984;**-**I** be a true toggle for italics and **&#8984;**-**B** be a true toggle for boldface. With iA Writer, those  keystrokes *start* the styles but also, if you use either again while still in the text you're styling, *un*-style the text. It's true that, in iA Writer (as in Ulysses), you can manually space past the `*` or `**` at the end of the text; but eons of Mac-user muscle memory have taught me to **&#8984;**-**I** or **&#8984;**-**B** at the start *and* the stop of what I'm styling; so, hang it all, I like this better.[^5]
 

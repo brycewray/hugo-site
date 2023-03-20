@@ -166,7 +166,7 @@ Now, just build your site, and Eleventy Image will do its magic everywhere withi
 
 .&nbsp;.&nbsp;.&nbsp;and the result thereof:
 
-{{< imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" simple=true width=3264 height=2448 >}}
+{{< imgh-colors src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" simple=true width=3264 height=2448 >}}
 
 **Disclaimer**: Image is sourced here without using Eleventy&nbsp;Image **but** this does show the result of the generated&nbsp;code.
 {.imgcCaption}

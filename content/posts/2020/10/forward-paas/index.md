@@ -9,7 +9,7 @@ It will come as no surprise to my regular readers that I like New Shiny, especia
 
 ## Workers sites and Workers KV
 
-{{< imgh src="Cloudflare_Workers_scrshot_2020-10-20_2526x1440.png" alt="Screen capture of Cloudflare Workers web page" width=2526 height=1440 >}}
+{{< imgh-colors src="Cloudflare_Workers_scrshot_2020-10-20_2526x1440.png" alt="Screen capture of Cloudflare Workers web page" width=2526 height=1440 >}}
 
 [Cloudflare Workers](https://workers.cloudflare.com/) have been around [since 2017](https://blog.cloudflare.com/introducing-cloudflare-workers/). They allow developers to put code at the "edge" of Cloudflare's worldwide [reverse-proxy](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/) [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), letting users worldwide see faster results since it puts the content "closer" to those users.
 
