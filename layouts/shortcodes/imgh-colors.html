@@ -34,9 +34,9 @@
 	{{- $LQIP_colors = $LQIP_colors | append "#000000" -}}
 {{- end -}}
 {{- $LQIP_bkgd := delimit ($LQIP_colors) ", " -}}
-{{- $CFPstyle := print "background: linear-gradient(" $LQIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
+{{- $BkgdStyle := print "background: linear-gradient(" $LQIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
 {{- if $phn -}}
-	{{- $CFPstyle = "background: none;" -}}
+	{{- $BkgdStyle = "background: none;" -}}
 {{- end -}}
 
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
@@ -44,11 +44,11 @@
 {{- if eq $simple false -}}
 {{- if .Site.Params.Nonces -}}
 	<style data-pagefind-ignore>
-		.imgB-{{ $imgBd5 }} { {{ $CFPstyle | safeCSS }} }
+		.imgB-{{ $imgBd5 }} { {{ $BkgdStyle | safeCSS }} }
 	</style>
 	<div class="relative imgB-{{ $imgBd5 }} bg-center" data-pagefind-ignore>
 {{- else -}}
-	<div class="relative bg-center" style="{{ $CFPstyle | safeCSS }}" data-pagefind-ignore>
+	<div class="relative bg-center" style="{{ $BkgdStyle | safeCSS }}" data-pagefind-ignore>
 {{- end -}}
 {{- end -}}
 	<picture data-pagefind-ignore>
@@ -70,4 +70,6 @@
 		{{- end -}}" sizes="{{ $dataSzes }}" />
 		<img{{ if eq $simple false }} class="{{ $imgClass }}"{{ end }} src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 	</picture>
+{{- if eq $simple false -}}
 </div>
+{{- end -}}
