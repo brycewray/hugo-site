@@ -51,7 +51,7 @@ That's an oddity I've been experiencing, and I hope somebody reading this will h
 
 . . . I don't understand why I get this result (this is a "waterfall" from [GTmetrix](https://gtmetrix.com)):
 
-{{< imgh-colors src="GTmetrix-waterfall-2022-09-17-0725CDT_1314x428.png" alt="Screen capture of “waterfall” data from a GTmetrix test of this website’s home page" width=1314 height=428 >}}
+{{< imgh src="GTmetrix-waterfall-2022-09-17-0725CDT_1314x428.png" alt="Screen capture of “waterfall” data from a GTmetrix test of this website’s home page" width=1314 height=428 >}}
 
 . . . which shows that the `woff2` font file is loaded twice.
 

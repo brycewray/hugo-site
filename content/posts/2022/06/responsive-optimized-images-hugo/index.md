@@ -173,7 +173,7 @@ To invoke `imgh` in Markdown, use it like so[^commentsGo]:
 
 In this case, it produces:
 
-{{< imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" filter="box" >}}
+{{< imgh-lqip src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" filter="box" >}}
 
 . . . from the resulting HTML, which shows the automatically created hashed names for the Hugo-generated resized images:
 

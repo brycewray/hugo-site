@@ -49,7 +49,7 @@ At the beginning, I wished only to make blogging a little less tedious.
 
 I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-io/) [time](/posts/2019/02/old-dog-old-trick/) over the  last few months that I was experimenting with other [Markdown](https://daringfireball.net/projects/markdown/) editors. While I still enjoyed writing this site's posts in Ulysses, I'd wearied of the write-export-write-export dance it required because the native Ulysses file format is proprietary, not the standalone Markdown (.md) needed by my [static site generator](https://www.staticgen.com) of choice, [Hugo](https://gohugo.io). Thus, I was trying writing apps that saved *natively* to Markdown without needing to export.[^preview]
 
-{{< imgh-colors src="Ulysses_export_to_Markdown_750x528.png" alt="Screen capture of Quick Export feature of Ulysses app" width=750 height=528 >}}
+{{< imgh src="Ulysses_export_to_Markdown_750x528.png" alt="Screen capture of Quick Export feature of Ulysses app" width=750 height=528 >}}
 
 Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.
 {.imgcCaption}
@@ -78,7 +78,7 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-{{< imgh-colors src="iCloud_sync-save_icon_in_Ulysses_1268x530.png" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width=1268 height=530 >}}
+{{< imgh src="iCloud_sync-save_icon_in_Ulysses_1268x530.png" alt="Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" width=1268 height=530 >}}
 
 When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device --- Houston, we have an iCloud&nbsp;sync&nbsp;problem.
 {.imgcCaption}
@@ -176,7 +176,7 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-{{< imgh-colors src="iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png" alt="Screen capture from iA Writer app" width=2544 height=1241 >}}
+{{< imgh src="iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png" alt="Screen capture from iA Writer app" width=2544 height=1241 >}}
 
 Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.
 {.imgcCaption}

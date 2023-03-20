@@ -36,15 +36,15 @@ As for Ulysses 27 --- released June 20 for macOS, iOS, and iPadOS --- its main a
 
 [^MDXL]: The export is from Ulysses's proprietary Markdown XL in the default Ulysses use of iCloud-based "sheets," as its docs are called. However, Ulysses also lets you create *standard* Markdown files in separate, "external" folders, and any tables you create in such Ulysses files also will work as described in this post.
 
-{{< imgh-colors src="Ulysses-27-tables-01_1718x436.png" alt="Screen capture from Ulysses 27" width=1718 height=436 >}}
+{{< imgh src="Ulysses-27-tables-01_1718x436.png" alt="Screen capture from Ulysses 27" width=1718 height=436 >}}
 
 Click/tap this to get an overlay that lets you control how many rows and columns it’ll have, as well as any caption you want to give it:
 
-{{< imgh-colors src="Ulysses-27-tables-02_1716x334.png" alt="Screen capture from Ulysses 27, #2" width=1716 height=334 >}}
+{{< imgh src="Ulysses-27-tables-02_1716x334.png" alt="Screen capture from Ulysses 27, #2" width=1716 height=334 >}}
 
 After I refine it down to a two-column, three-row table, here’s how it looks in the Ulysses editor with my chosen edits:
 
-{{< imgh-colors src="Ulysses-27-tables-03_1708x310.png" alt="Screen capture from Ulysses 27, #3" width=1708 height=310 >}}
+{{< imgh src="Ulysses-27-tables-03_1708x310.png" alt="Screen capture from Ulysses 27, #3" width=1708 height=310 >}}
 
 And this is the Markdown it exports (I changed my mind and cleared the *Caption* entry, which otherwise would’ve appeared within the table):
 

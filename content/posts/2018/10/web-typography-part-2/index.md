@@ -27,7 +27,7 @@ Anyway, with that understood, let's get on with it.
 
 The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of "safe" system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can't read graphics as text; but it wasn't such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](https://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here's an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
-{{< imgh-colors src="Early-Web-font-grfx-1-2018-10-16_1218x1296.png" alt="Image from Apple website in 1999 showing graphic elements as text" width=1218 height=1296 >}}
+{{< imgh src="Early-Web-font-grfx-1-2018-10-16_1218x1296.png" alt="Image from Apple website in 1999 showing graphic elements as text" width=1218 height=1296 >}}
 
 The only "real" text in this view was the timestamp, on the right side under the image of the [iMac of that era in all its Bondi Blue glory](https://everymac.com/systems/apple/imac/specs/imac_ab.html). All other textual elements shown were graphics. (The image-missing icon above the [iBook](https://everymac.com/systems/apple/ibook/index-ibook.html) image apparently indicates a missing image that the Internet Archive didn't capture at the time or, otherwise, was unable to recover at the time I made this screen capture.)
 
@@ -75,17 +75,17 @@ In case you aren't familiar with all of these, here you go (all except the gener
 
 <table class="noborders">
 <thead><tr><td class="td30">Typeface name</td><td class="td70">Sample image</td></tr></thead>
-<tr><td class="td30">San Francisco</td><td class="td70">{{< imgh-colors src="Sys_font_stack_San_Francisco_684x104.png" alt="San Francisco typeface" simple=true width=684 height=104 >}}</td></tr>
-<tr><td class="td30">Segoe UI</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Segoe_UI_684x104.png" alt="Segoe UI typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Tahoma</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Tahoma_684x104.png" alt="Tahoma typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Roboto</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Roboto_from_GF_684x104.png" alt="Roboto typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Ubuntu</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Ubuntu_from_GF_684x104.png" alt="Ubuntu typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Oxygen</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Oxygen_from_GF_684x104.png" alt="Oxygen typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Cantarell</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Cantarell_from_GF_684x104.png" alt="Cantarell typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Fira Sans</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Fira_Sans_from_GF_684x104.png" alt="Fira Sans typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Droid Sans</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Droid_Sans_from_GF_684x104.png" alt="Droid Sans typeface" simple=true width=684 height=104 >}}
-<tr><td class="td30">Helvetica Neue</td><td class="td70">{{< imgh-colors src="Sys_font_stack_Helvetica_Neue_680x104.png" alt="Helvetica Neue typeface" simple=true width=680 height=104 >}}
-<tr><td class="td30">Lucida Grande</td><td class="ctr td70">{{< imgh-colors src="Sys_font_stack_Lucida_Grande_680x104.png" alt="Lucida Grande typeface" simple=true width=680 height=104 >}}
+<tr><td class="td30">San Francisco</td><td class="td70">{{< imgh src="Sys_font_stack_San_Francisco_684x104.png" alt="San Francisco typeface" simple=true width=684 height=104 >}}</td></tr>
+<tr><td class="td30">Segoe UI</td><td class="td70">{{< imgh src="Sys_font_stack_Segoe_UI_684x104.png" alt="Segoe UI typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Tahoma</td><td class="td70">{{< imgh src="Sys_font_stack_Tahoma_684x104.png" alt="Tahoma typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Roboto</td><td class="td70">{{< imgh src="Sys_font_stack_Roboto_from_GF_684x104.png" alt="Roboto typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Ubuntu</td><td class="td70">{{< imgh src="Sys_font_stack_Ubuntu_from_GF_684x104.png" alt="Ubuntu typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Oxygen</td><td class="td70">{{< imgh src="Sys_font_stack_Oxygen_from_GF_684x104.png" alt="Oxygen typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Cantarell</td><td class="td70">{{< imgh src="Sys_font_stack_Cantarell_from_GF_684x104.png" alt="Cantarell typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Fira Sans</td><td class="td70">{{< imgh src="Sys_font_stack_Fira_Sans_from_GF_684x104.png" alt="Fira Sans typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Droid Sans</td><td class="td70">{{< imgh src="Sys_font_stack_Droid_Sans_from_GF_684x104.png" alt="Droid Sans typeface" simple=true width=684 height=104 >}}
+<tr><td class="td30">Helvetica Neue</td><td class="td70">{{< imgh src="Sys_font_stack_Helvetica_Neue_680x104.png" alt="Helvetica Neue typeface" simple=true width=680 height=104 >}}
+<tr><td class="td30">Lucida Grande</td><td class="ctr td70">{{< imgh src="Sys_font_stack_Lucida_Grande_680x104.png" alt="Lucida Grande typeface" simple=true width=680 height=104 >}}
 </table>
 
 The easiest way[^2] to implement this "system fonts stack" throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):

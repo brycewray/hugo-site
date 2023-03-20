@@ -57,7 +57,7 @@ When I came back to Hugo, I figured I'd lost this convenience because Hugo's bui
 
 .&nbsp;.&nbsp;. to produce the following result (borrowed from last year's ["Welcome, sweet little early bird"](/posts/2020/03/welcome-sweet-little-early-bird/) post about the slightly premature birth of our granddaughter, who's nearing her first birthday):
 
-{{< imgh-colors src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width=1008 height=712 >}}
+{{< imgh src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width=1008 height=712 >}}
 
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough “firsts” for you there?
 {.imgcCaption}

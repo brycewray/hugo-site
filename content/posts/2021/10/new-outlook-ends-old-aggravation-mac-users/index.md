@@ -11,21 +11,21 @@ Last year, [I wrote](/posts/2020/09/mixed-nuts-2020-09/):
 
 To illustrate the difference, here's how the Windows version of Outlook shows an email thread which includes me:
 
-{{< imgh-colors src="2021-10-11_screenshot_Outlook-on-Windows_segment_1610x512.png" alt="Outlook on Windows - view of email thread" width=1610 height=512 >}}
+{{< imgh src="2021-10-11_screenshot_Outlook-on-Windows_segment_1610x512.png" alt="Outlook on Windows - view of email thread" width=1610 height=512 >}}
 
 I can see both my own emails and others’ listed in this view. Nice and convenient, right?
 
 Now, here's how, for some years now, the Mac version of Outlook would show the same thread:
 
-{{< imgh-colors src="2021-10-10_screenshot_old-Outlook-on-Mac_01_segment_1292x432.png" alt="Old Outlook on Mac - view of email thread" width=1292 height=432 >}}
+{{< imgh src="2021-10-10_screenshot_old-Outlook-on-Mac_01_segment_1292x432.png" alt="Old Outlook on Mac - view of email thread" width=1292 height=432 >}}
 
 It's as if mine weren't there. Oh, but they are. What you'd have to do is click on the thread entry, whereupon in the Preview Pane on the right you'd see a "talk balloons" display of what I wanted to see in the *regular* display in the first place:
 
-{{< imgh-colors src="2021-10-10_screenshot_old-Outlook-on-Mac_02_segment_1505x512.png" alt="Old Outlook on Mac - a view of “talk balloons” portrayal of email thread" width=1505 height=512 >}}
+{{< imgh src="2021-10-10_screenshot_old-Outlook-on-Mac_02_segment_1505x512.png" alt="Old Outlook on Mac - a view of “talk balloons” portrayal of email thread" width=1505 height=512 >}}
 
 That aggravation, which had persisted for years, is nearing an end because of [Microsoft's introduction](https://www.windowscentral.com/project-monarch-outlook-web-universal-email-client-microsoft) of what it calls "New Outlook," an [Electron](https://www.electronjs.org/)-based version intended for cross-platform adoption. Here's how **it** shows that thread:
 
-{{< imgh-colors src="2021-10-10_screenshot_new-Outlook-on-Mac_segment_1696x752.png" alt="New Outlook on Mac - a view of email thread" width=1696 height=752 >}}
+{{< imgh src="2021-10-10_screenshot_new-Outlook-on-Mac_segment_1696x752.png" alt="New Outlook on Mac - a view of email thread" width=1696 height=752 >}}
 
 Bingo. Now, really, Microsoft, was that so frickin’ difficult?
 
