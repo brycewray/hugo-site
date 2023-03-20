@@ -29,12 +29,9 @@
 	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $LQIP_colors := $src.Colors -}}
-{{- if (lt ($LQIP_colors | len) 2) -}}
-	{{- $LQIP_colors = $LQIP_colors | append "#000000" -}}
-{{- end -}}
-{{- $LQIP_bkgd := delimit ($LQIP_colors) ", " -}}
-{{- $BkgdStyle := print "background: linear-gradient(" $LQIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
+{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
+{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
+{{- $BkgdStyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
 {{- if $phn -}}
 	{{- $BkgdStyle = "background: none;" -}}
 {{- end -}}
