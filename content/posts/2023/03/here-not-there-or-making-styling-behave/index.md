@@ -45,11 +45,16 @@ Before we get into the actual SCSS involved, note that the color variables to wh
 // a partial called `_variables.scss`.
 
 $twcss: {
+	gray-50: #f9fafb,
+	gray-100: #f3f4f6,
+	gray-200: #e5e7eb,
 	gray-300: #d1d5db,
 	gray-400: #9ca3af,
+	gray-500: #6b7280,
 	gray-600: #4b5563,
-	gray-700: #384252,
-	gray-800: #1f2937
+	gray-700: #374151,
+	gray-800: #1f2937,
+	gray-900: #111827
 };
 
 // Now we assign our default colors for,
