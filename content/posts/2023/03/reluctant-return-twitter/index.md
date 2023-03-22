@@ -34,6 +34,7 @@ I surely understand any negative reactions and unfollows that admission may caus
 
 Mar. 22, 2023 • 9:38 AM CDT (2:38 PM UTC)
 [This was the final form after three subsequent edits, the last of which was at 12:00 PM CDT • 5:00 PM UTC.]
+[Had 795 followers before posting this.]
 
 https://mastodon.social/@BryceWray/110067443851612192
 -->
