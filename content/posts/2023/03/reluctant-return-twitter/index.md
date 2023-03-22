@@ -13,7 +13,7 @@ I'm not crazy about what I did today. That said, in view of what I posted here a
 
 Starting a few days ago, this site's footer no longer had the Mastodon logo and its link to my account on the mastodon.social instance. That wasn't an accident; I'd put the account on "hiatus" status while considering a return to Twitter. I knew such a decision would be personally distasteful (and **extremely** unpopular among the followers I'd accumulated on Mastodon since becoming active there a few months back) and, yet, it was growing more likely, for reasons I'll cover later.
 
-Since I'd killed my previous Twitter account a few weeks ago, I started a new one --- initially with the handle of *@TheLurkerHS*, where *HS* stood for *hellsite* --- and started following a few hundred accounts in the fields of news, sports, science/space, and web development. This would let me sample the waters while I considered whether I really, truly would go through with this return.
+Since I'd killed my previous Twitter account a few weeks ago, I started a new one --- initially with the handle of *@TheLurkerHS*, where *HS* stood for *hellsite* --- and began following what, over the next few days, would amount to several hundred accounts in the fields of news, sports, science/space, and web development. This would let me sample the waters while I considered whether I really, truly would go through with this return.
 
 Today, I made up my mind to proceed.
 
