@@ -33,3 +33,6 @@ I will further update this post as appropriate.
 
 <strong class="red">Update, 2023-02-02</strong>: Have once again deactivated the account, this time **in accordance with** the "further research and consultation with others whose judgments I trust." I intend to let **this** change's thirty-day grace period expire without intervention.
 {.box}
+
+**Update, 2023-03-22**: [And yet](/posts/2023/03/reluctant-return-twitter/) 😞 🤢 . . .
+{.box}
