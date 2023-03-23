@@ -33,7 +33,7 @@ export default async function handleRequest(request) {
 	try { // try-catch so a function crash doesn't crash the site
 		let response = await fetch(request)
 
-		/*
+/*
 		let imageResponse = await fetch(request)
 		let type = imageResponse.headers.get("Content-Type") || ""
 		if (!type.startsWith("text/")) {
@@ -54,7 +54,6 @@ export default async function handleRequest(request) {
 				headers: newHeaders
 			})
 		}
-		*/
 
 		const html = (await response.text())
 			.replace(/DhcnhD3khTMePgXw/gi, nonce)
@@ -98,6 +97,7 @@ export default async function handleRequest(request) {
 		if (url.pathname.match(svgRegex)) {
 			svgStuff = true
 		}
+*/
 
 		let newHeaders = new Headers(response.headers)
 		newHeaders.set("Cache-Control", "public, max-age=0")
@@ -106,6 +106,7 @@ export default async function handleRequest(request) {
 		newHeaders.set("X-Frame-Options", "SAMEORIGIN")
 		newHeaders.set("X-Content-Type-Options", "nosniff")
 		newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
+	/*
 		if (ttl) {
 			newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
 			// newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
@@ -121,6 +122,7 @@ export default async function handleRequest(request) {
 		if (svgStuff) {
 			newHeaders.set("Content-Type", "image/svg+xml; charset=utf-8")
 		}
+*/
 
 		return new Response(html, {
 			status: response.status,
