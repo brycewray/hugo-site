@@ -5,18 +5,18 @@
 			<h1 class="ctr">Sitemap</h1>
 			<h2>Main pages</h2>
 			<ul>
-				<li><a href="{{ .Site.BaseURL }}">Home page</a></li>
-				<li><a href="{{ .Site.BaseURL }}about/">About me</li>
-				<li><a href="{{ .Site.BaseURL }}search/">Search page</a></li>
-				<li><a href="{{ .Site.BaseURL }}privacy/">Privacy policy</a></li>
-				<li><a href="{{ .Site.BaseURL }}contact/">How to contact me</a></li>
+				<li><a href="/">Home page</a></li>
+				<li><a href="/about/">About me</li>
+				<li><a href="/search/">Search page</a></li>
+				<li><a href="/privacy/">Privacy policy</a></li>
+				<li><a href="/contact/">How to contact me</a></li>
 			</ul>
 			<h2>Posts</h2>
 			<ul>
-				<li><a href="/posts"><strong>Complete list</strong></a> (first page of paginated list; five posts per page)</li>
+				<li><a href="/posts/"><strong>Complete list</strong></a> (first page of paginated list; five posts per page)</li>
 			{{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
 				{{- if (ne .Title "Posts") -}}
-				<li><strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong>{{- if ne (substr .Title 0 22) "The site this week: 20" -}}&nbsp;&nbsp;<span class="legal nobrk"><strong>{{ .PublishDate.Format "2006-01-02" }}</strong></span>{{- end -}}<br />
+				<li><strong><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></strong>{{- if ne (substr .Title 0 22) "The site this week: 20" -}}&nbsp;&nbsp;<span class="legal nobrk"><strong>{{ .PublishDate.Format "2006-01-02" }}</strong></span>{{- end -}}<br />
 				<span class="description">{{ .Description | .Page.RenderString }}</span></li>
 				{{- end -}}
 			{{- end -}}
