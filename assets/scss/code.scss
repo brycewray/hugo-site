@@ -360,9 +360,9 @@
 
 // LiteralStringDelimiter
 .chroma .dl, .code-inline .dl {
-	color: map-get(var.$twcss, yellow-700);
+	color: map-get(var.$twcss, yellow-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, yellow-200);
+		color: map-get(var.$twcss, yellow-250);
 	}
 }
 
@@ -392,9 +392,9 @@
 
 // LiteralStringHeredoc
 .chroma .sh, .code-inline .sh {
-	color: map-get(var.$twcss, yellow-700);
+	color: map-get(var.$twcss, yellow-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, yellow-200);
+		color: map-get(var.$twcss, yellow-250);
 	}
 }
 
@@ -408,9 +408,9 @@
 
 // LiteralStringOther
 .chroma .sx, .code-inline .sx {
-	color: map-get(var.$twcss, orange-700);
+	color: map-get(var.$twcss, orange-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, orange-300);
+		color: map-get(var.$twcss, orange-250);
 	}
 }
 
@@ -424,9 +424,9 @@
 
 // LiteralStringSingle
 .chroma .s1, .code-inline .s1 {
-	color: map-get(var.$twcss, yellow-700);
+	color: map-get(var.$twcss, yellow-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, yellow-200);
+		color: map-get(var.$twcss, yellow-250);
 	}
 }
 
@@ -440,9 +440,9 @@
 
 // LiteralNumber
 .chroma .m, .code-inline .m {
-	color: map-get(var.$twcss, cyan-800);
+	color: map-get(var.$twcss, cyan-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, cyan-200);
+		color: map-get(var.$twcss, cyan-250);
 	}
 }
 
@@ -472,9 +472,9 @@
 
 // LiteralNumberInteger
 .chroma .mi, .code-inline .mi {
-	color: map-get(var.$twcss, sky-700);
+	color: map-get(var.$twcss, sky-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, sky-300);
+		color: map-get(var.$twcss, sky-250);
 	}
 }
 
@@ -496,9 +496,9 @@
 
 // Operator
 .chroma .o, .code-inline .o {
-	color: map-get(var.$twcss, yellow-800);
+	color: map-get(var.$twcss, yellow-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, yellow-200);
+		color: map-get(var.$twcss, yellow-250);
 	}
 }
 
@@ -512,17 +512,17 @@
 
 // Punctuation
 .chroma .p, .code-inline .p {
-	color: map-get(var.$twcss, slate-700);
+	color: map-get(var.$twcss, slate-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, slate-300);
+		color: map-get(var.$twcss, slate-250);
 	}
 }
 
 // Comment
 .chroma .c, .code-inline .c {
-	color: map-get(var.$twcss, emerald-700);
+	color: map-get(var.$twcss, emerald-650);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, emerald-200);
+		color: map-get(var.$twcss, emerald-350);
 	}
 }
 
@@ -544,16 +544,16 @@
 
 // CommentSingle
 .chroma .c1, .code-inline .c1 {
-	color: map-get(var.$twcss, green-700);
+	color: map-get(var.$twcss, green-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, green-200);
+		color: map-get(var.$twcss, green-250);
 	}
 }
 
 // CommentSpecial
 .chroma .cs, .code-inline .cs {
-	color: map-get(var.$twcss, red-300);
-	background-color: map-get(var.$twcss, red-900);
+	color: map-get(var.$twcss, red-350);
+	background-color: map-get(var.$twcss, red-850);
 	// @media (prefers-color-scheme: dark) {
 	// 	color: map-get(var.$twcss, red-300);
 	// 	background-color: map-get(var.$twcss, red-900);
@@ -578,9 +578,9 @@
 
 // Generic
 .chroma .g, .code-inline .g {
-	color: map-get(var.$twcss, stone-800);
+	color: map-get(var.$twcss, stone-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, stone-300);
+		color: map-get(var.$twcss, stone-250);
 	}
 }
 
@@ -615,9 +615,9 @@
 
 // GenericInserted
 .chroma .gi, .code-inline .gi {
-	color: map-get(var.$twcss, green-800);
+	color: map-get(var.$twcss, green-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, green-200);
+		color: map-get(var.$twcss, green-250);
 	}
 }
 
@@ -631,9 +631,9 @@
 
 // GenericPrompt
 .chroma .gp, .code-inline .gp {
-	color: map-get(var.$twcss, zinc-800);
+	color: map-get(var.$twcss, zinc-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, zinc-300);
+		color: map-get(var.$twcss, zinc-250);
 	}
 }
 
@@ -652,9 +652,9 @@
 
 // GenericTraceback
 .chroma .gt, .code-inline .gt {
-	color: map-get(var.$twcss, red-800);
+	color: map-get(var.$twcss, red-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, red-300);
+		color: map-get(var.$twcss, red-250);
 	}
 }
 
@@ -665,9 +665,9 @@
 
 // TextWhitespace
 .chroma .w, .code-inline .w {
-	color: map-get(var.$twcss, zinc-800);
+	color: map-get(var.$twcss, zinc-750);
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, zinc-300);
+		color: map-get(var.$twcss, zinc-250);
 	}
 }
 
@@ -806,7 +806,7 @@ article code {
 	}
 	background-color: white; // was slate-200
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-700);
+		background-color: map-get(var.$twcss, slate-750);
 	}
 }
 article .footnotes code {
@@ -839,9 +839,9 @@ article blockquote code {
 
 .box code {
 	font-size: 1em; // definitely em
-	background-color: map-get(var.$twcss, slate-100);
+	background-color: map-get(var.$twcss, slate-150);
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-600);
+		background-color: map-get(var.$twcss, slate-650);
 	}
 }
 

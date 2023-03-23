@@ -31,7 +31,7 @@ article code {
 	}
 	background-color: white; // was slate-200
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-700);
+		background-color: map-get(var.$twcss, slate-750);
 	}
 }
 article .footnotes code {
@@ -64,9 +64,9 @@ article blockquote code {
 
 .box code {
 	font-size: 1em; // definitely em
-	background-color: map-get(var.$twcss, slate-100);
+	background-color: map-get(var.$twcss, slate-150);
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-600);
+		background-color: map-get(var.$twcss, slate-650);
 	}
 }
 
