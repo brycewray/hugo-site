@@ -33,7 +33,6 @@ export default async function handleRequest(request) {
 	try { // try-catch so a function crash doesn't crash the site
 		let response = await fetch(request)
 
-/*
 		let imageResponse = await fetch(request)
 		let type = imageResponse.headers.get("Content-Type") || ""
 		if (!type.startsWith("text/")) {
@@ -47,7 +46,7 @@ export default async function handleRequest(request) {
 			newHeaders.set("X-Frame-Options", "SAMEORIGIN")
 			newHeaders.set("X-Content-Type-Options", "nosniff")
 			newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
-			// newHeaders.set("x-nonce-generator", "HIT")
+			newHeaders.set("x-nonce-generator", "HIT")
 			return new Response(imageResponse.body, {
 				status: imageResponse.status,
 				statusText: imageResponse.statusText,
@@ -97,7 +96,6 @@ export default async function handleRequest(request) {
 		if (url.pathname.match(svgRegex)) {
 			svgStuff = true
 		}
-*/
 
 		let newHeaders = new Headers(response.headers)
 		newHeaders.set("Cache-Control", "public, max-age=0")
@@ -115,7 +113,7 @@ export default async function handleRequest(request) {
 			newHeaders.set("Report-To", "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://brycewray.report-uri.com/a/d/g'}],'include_subdomains':true}")
 			newHeaders.set("X-XSS-Protection", "1")
 		}
-		// newHeaders.set("x-nonce-generator", "HIT")
+		newHeaders.set("x-nonce-generator", "HIT")
 		if (jsStuff) {
 			newHeaders.set("Content-Type", "application/javascript; charset=utf-8")
 		}
