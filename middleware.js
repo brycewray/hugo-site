@@ -65,10 +65,10 @@ export default async function handleRequest(request) {
 				'guitar-thriving.brycewray.com/script.js"',
 				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
 			)
-			.replace(
-				'beamanalytics.b-cdn.net/beam.min.js"',
-				`beamanalytics.b-cdn.net/beam.min.js" nonce="${nonce}"`
-			)
+			// .replace(
+			// 	'beamanalytics.b-cdn.net/beam.min.js"',
+			// 	`beamanalytics.b-cdn.net/beam.min.js" nonce="${nonce}"`
+			// )
 			.replace(
 				'src="/assets/js/lite-yt-embed_',
 				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
