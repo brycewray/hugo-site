@@ -55,7 +55,7 @@ export default async function handleRequest(request) {
 		}
 
 		const html = (await response.text())
-			.replace(/DhcnhD3khTMePgXw/gi, nonce)
+			// .replace(/DhcnhD3khTMePgXw/gi, nonce)
 			.replace(
 				'rel="stylesheet"',
 				`rel="stylesheet" nonce="${nonce}"`
@@ -69,7 +69,7 @@ export default async function handleRequest(request) {
 				'src="/assets/js/lite-yt-embed_',
 				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
 			)
-			// .replace(/<style/g, `<style nonce="${nonce}"`)
+			.replace(/<style/g, `<style nonce="${nonce}"`)
 
 		let ttl = undefined
 		// let cache = caches.default
