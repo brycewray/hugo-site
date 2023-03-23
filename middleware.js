@@ -60,19 +60,19 @@ export default async function handleRequest(request) {
 				'rel="stylesheet"',
 				`rel="stylesheet" nonce="${nonce}"`
 			)
-			// .replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
-			// .replace(
-			// 	'guitar-thriving.brycewray.com/script.js"',
-			// 	`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
-			// )
-			// .replace(
-			// 	'beamanalytics.b-cdn.net/beam.min.js"',
-			// 	`beamanalytics.b-cdn.net/beam.min.js" nonce="${nonce}"`
-			// )
+			.replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
 			.replace(
-				'src="/assets/js/lite-yt-embed_',
-				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
+				'guitar-thriving.brycewray.com/script.js"',
+				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
 			)
+			.replace(
+				'beamanalytics.b-cdn.net/beam.min.js"',
+				`beamanalytics.b-cdn.net/beam.min.js" nonce="${nonce}"`
+			)
+			// .replace(
+			// 	'src="/assets/js/lite-yt-embed_',
+			// 	`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
+			// )
 			.replace(/<style/g, `<style nonce="${nonce}"`)
 
 		let ttl = undefined
