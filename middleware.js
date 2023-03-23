@@ -54,12 +54,12 @@ export default async function handleRequest(request) {
 			})
 		}
 
-		// const html = (await response.text())
+		const html = (await response.text())
 		// 	.replace(/DhcnhD3khTMePgXw/gi, nonce)
-		// 	.replace(
-		// 		'rel="stylesheet"',
-		// 		`rel="stylesheet" nonce="${nonce}"`
-		// 	)
+			.replace(
+				'rel="stylesheet"',
+				`rel="stylesheet" nonce="${nonce}"`
+			)
 		// 	.replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
 		// 	.replace(
 		// 		'guitar-thriving.brycewray.com/script.js"',
