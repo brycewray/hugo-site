@@ -54,6 +54,7 @@ export default async function handleRequest(request) {
 			})
 		}
 
+/*
 		const html = (await response.text())
 			.replace(/DhcnhD3khTMePgXw/gi, nonce)
 			.replace(
@@ -74,6 +75,7 @@ export default async function handleRequest(request) {
 				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
 			)
 			.replace(/<style/g, `<style nonce="${nonce}"`)
+*/
 
 		let ttl = undefined
 		// let cache = caches.default
@@ -105,7 +107,6 @@ export default async function handleRequest(request) {
 		newHeaders.set("X-Content-Type-Options", "nosniff")
 		newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
 
-/*
 		if (ttl) {
 			newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
 			// newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
@@ -121,7 +122,6 @@ export default async function handleRequest(request) {
 		if (svgStuff) {
 			newHeaders.set("Content-Type", "image/svg+xml; charset=utf-8")
 		}
-*/
 
 		return new Response(html, {
 			status: response.status,
