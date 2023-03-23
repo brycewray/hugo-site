@@ -55,25 +55,25 @@ export default async function handleRequest(request) {
 		}
 
 		const html = (await response.text())
-			// .replace(/DhcnhD3khTMePgXw/gi, nonce)
-			// .replace(
-			// 	'rel="stylesheet"',
-			// 	`rel="stylesheet" nonce="${nonce}"`
-			// )
-			// .replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
-			// .replace(
-			// 	'guitar-thriving.brycewray.com/script.js"',
-			// 	`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
-			// )
-			// .replace(
-			// 	'beamanalytics.b-cdn.net/beam.min.js"',
-			// 	`beamanalytics.b-cdn.net/beam.min.js" nonce="${nonce}"`
-			// )
-			// .replace(
-			// 	'src="/assets/js/lite-yt-embed_',
-			// 	`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
-			// )
-			// .replace(/<style/g, `<style nonce="${nonce}"`)
+			.replace(/DhcnhD3khTMePgXw/gi, nonce)
+			.replace(
+				'rel="stylesheet"',
+				`rel="stylesheet" nonce="${nonce}"`
+			)
+			.replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
+			.replace(
+				'guitar-thriving.brycewray.com/script.js"',
+				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
+			)
+			.replace(
+				'beamanalytics.b-cdn.net/beam.min.js"',
+				`beamanalytics.b-cdn.net/beam.min.js" nonce="${nonce}"`
+			)
+			.replace(
+				'src="/assets/js/lite-yt-embed_',
+				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
+			)
+			.replace(/<style/g, `<style nonce="${nonce}"`)
 
 		let ttl = undefined
 		// let cache = caches.default
@@ -104,7 +104,6 @@ export default async function handleRequest(request) {
 		newHeaders.set("X-Frame-Options", "SAMEORIGIN")
 		newHeaders.set("X-Content-Type-Options", "nosniff")
 		newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
-
 		if (ttl) {
 			newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
 			// newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
