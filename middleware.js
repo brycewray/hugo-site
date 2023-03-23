@@ -60,7 +60,7 @@ export default async function handleRequest(request) {
 				'rel="stylesheet"',
 				`rel="stylesheet" nonce="${nonce}"`
 			)
-			// .replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
+			.replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
 			.replace(
 				'guitar-thriving.brycewray.com/script.js"',
 				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
