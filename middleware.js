@@ -55,7 +55,7 @@ export default async function handleRequest(request) {
 		}
 
 		const html = (await response.text())
-			.replace(/DhcnhD3khTMePgXw/gi, nonce)
+			// .replace(/DhcnhD3khTMePgXw/gi, nonce)
 			// .replace(
 			// 	'rel="stylesheet"',
 			// 	`rel="stylesheet" nonce="${nonce}"`
