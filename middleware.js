@@ -104,7 +104,8 @@ export default async function handleRequest(request) {
 		newHeaders.set("X-Frame-Options", "SAMEORIGIN")
 		newHeaders.set("X-Content-Type-Options", "nosniff")
 		newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
-	/*
+
+/*
 		if (ttl) {
 			newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
 			// newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
