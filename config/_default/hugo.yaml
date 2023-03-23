@@ -16,9 +16,9 @@ params:
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
   Deploy: CI # choices are "CI" and "UI"
   EmailObfuscation: "local" # choices are "local" ahd "host"
-  Host: "Vercel" # choices for Host are "CFP" and "Vercel"
-  HostName: "Vercel" # choices for HostName are "Cloudflare Pages" and "Vercel"
-  HostURL: "https://vercel.com" # choices for HostURL are "https://pages.cloudflare.com" and "https://vercel.com"
+  Host: "CFP" # choices for Host are "CFP" and "Vercel"
+  HostName: "Cloudflare Pages" # choices for HostName are "Cloudflare Pages" and "Vercel"
+  HostURL: "https://pages.cloudflare.com" # choices for HostURL are "https://pages.cloudflare.com" and "https://vercel.com"
   # ===========================
   Domain: "brycewray.com"
   Author: "Bryce Wray"
