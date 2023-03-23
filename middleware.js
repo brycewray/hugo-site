@@ -66,14 +66,10 @@ export default async function handleRequest(request) {
 				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
 			)
 			.replace(
-				'beamanalytics.b-cdn.net/beam.min.js"',
-				`beamanalytics.b-cdn.net/beam.min.js" nonce="${nonce}"`
+				'src="/assets/js/lite-yt-embed_',
+				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
 			)
-			// .replace(
-			// 	'src="/assets/js/lite-yt-embed_',
-			// 	`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
-			// )
-			.replace(/<style/g, `<style nonce="${nonce}"`)
+			// .replace(/<style/g, `<style nonce="${nonce}"`)
 
 		let ttl = undefined
 		// let cache = caches.default
