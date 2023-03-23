@@ -74,10 +74,6 @@ export default async function handleRequest(request) {
 				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
 			)
 			.replace(/<style/g, `<style nonce="${nonce}"`)
-			.replace(
-				'<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>',
-				''
-			)
 
 		let ttl = undefined
 		// let cache = caches.default
