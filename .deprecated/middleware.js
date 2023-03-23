@@ -39,7 +39,7 @@ export default async function handleRequest(request) {
 			// Not text. Don't modify.
 			let newHeaders = new Headers(imageResponse.headers)
 			newHeaders.set("Cache-Control", "public, max-age=2678400, immutable")
-			newHeaders.set("CDN-Cache-Control", "public, max-age=2678400, immutable")
+			// newHeaders.set("CDN-Cache-Control", "public, max-age=2678400, immutable")
 			// newHeaders.set("x-BW-test", "Non-text item - headers edited!")
 			// newHeaders.set("Permissions-Policy", "interest-cohort=()")
 			newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
@@ -106,7 +106,7 @@ export default async function handleRequest(request) {
 		newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
 		if (ttl) {
 			newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
-			newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
+			// newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
 		} else {
 			newHeaders.set("Content-Security-Policy", `base-uri 'self' https://*.brycewray.com; connect-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.ggpht.com https://*.youtube-nocookie.com https://*.fosstodon.org https://*.mastodon.social https://*.mstdn.social https://*.beamanalytics.io; default-src 'self'; frame-ancestors 'self' https://*.brycewray.com https://*.youtube-nocookie.com; font-src 'self' https://*.brycewray.com data:; form-action 'self' https://*.duckduckgo.com https://duckduckgo.com; frame-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com; img-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.ggpht.com https://*.youtube-nocookie.com https://*.amazonaws.com https://*.fosstodon.org https://*.mastodon.social https://*.mstdn.social https://*.google.com https://translate.googleapis.com data:; media-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.ggpht.com https://*.youtube-nocookie.com https://*.fosstodon.org https://*.mastodon.social https://*.mstdn.social data:; object-src 'none'; script-src 'self' 'nonce-${nonce}' 'unsafe-eval'; script-src-elem 'self' 'nonce-${nonce}'; style-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com data: https://*.google.com https://translate.googleapis.com 'nonce-${nonce}'; report-uri https://brycewray.report-uri.com/r/d/csp/reportOnly;`)
 			newHeaders.set("Report-To", "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://brycewray.report-uri.com/a/d/g'}],'include_subdomains':true}")
