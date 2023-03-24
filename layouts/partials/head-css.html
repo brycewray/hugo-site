@@ -59,7 +59,7 @@
 			{{- $fileName = index . 1 -}}
 			{{- if eq $condition true -}}
 				{{- $cssOptions := merge $cssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
-				{{- $css = resources.Get (print "scss/" $fileName ".scss") | resources.ToCSS $cssOptions -}}
+				{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $cssOptions -}}
 				{{- if hugo.IsProduction -}}
 					{{- $css = $css | fingerprint "md5" -}}
 				{{- end }}
@@ -68,7 +68,7 @@
 			{{ end -}}
 		{{- end -}}
 
-		{{- $printCSS := resources.Get "scss/print.scss" | resources.ToCSS $cssOptionsPrint -}}
+		{{- $printCSS := resources.Get "scss/print.scss" | toCSS $cssOptionsPrint -}}
 		{{- if hugo.IsProduction -}}
 			{{- $printCSS = $printCSS | fingerprint "md5" -}}
 		{{- end }}
