@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Vercel
 
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
@@ -64,13 +64,30 @@ jobs:
         run: |
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
+      - name: Move Vercel-specific files to `/public`
+        run: |
+          mv middleware.js public/middleware.js
+          mv vercel.json public/vercel.json
       - name: Run Pagefind
         run: pagefind_extended --source "public"
-      - name: Publish to CFP
-        uses: cloudflare/pages-action@v1
+      - name: Publish to Vercel (Betahuhn)
+        uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
-          apiToken: ${{ secrets.CFP_API_TOKEN }}
-          accountID: ${{ secrets.CF_ACCOUNT_ID }}
-          projectName: 'static-site'
-          directory: 'public'
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+          WORKING_DIRECTORY: 'public'
+      # - name: Publish to Vercel (amondnet)
+      #   uses: amondnet/vercel-action@v20 #deploy
+      #   with:
+      #     vercel-token: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     # vercel-args: '--prod' # optional
+      #     vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+      #     vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+      #     working-directory: 'public'
+      - name: Remove Vercel-specific files from build
+        run: |
+          rm -rf public/middleware.js
+          rm -rf public/vercel.json
