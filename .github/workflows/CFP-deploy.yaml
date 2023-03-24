@@ -24,7 +24,7 @@ on:
 
 env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below
-  DART_SASS_VERSION: 1.59.3
+  DART_SASS_VERSION: 1.60.0
   PAGEFIND_VERSION: 0.12.0
 
 jobs:
