@@ -23,7 +23,7 @@ cache-and-headers.js
 nonce-worker.js
 cache-nonce*.js
 
-assets/css
+# assets/css
 themes/sass/assets/css
 themes/newcss/assets/css
 themes/twjit/assets/css/index.css
