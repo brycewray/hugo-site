@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+.sitemap-Div {
+	font-family: var(--sans-serif);
+	margin: 0 auto;
+	width: 90%;
+}
+.sitemap-Div h1 {
+	padding-top: clamp(1.75rem, 5vh, 3rem);
+	font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
+	letter-spacing: -0.025em;
+	margin-bottom: 0.25em;
+}
+.sitemap-Div h2 {
+	font-size: 1.5rem;
+	/* font-weight: bold; */
+}
+.sitemap-Div ul li {
+	font-size: var(--text-sm);
+	margin-bottom: 0.75em;
+	line-height: 1.375;
+}
+
+@media screen and (min-width: 1024px) {
+	.sitemap-Div {
+		width: 40%;
+	}
+}

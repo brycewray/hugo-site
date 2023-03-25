@@ -1,0 +1,63 @@
+@charset 'utf-8';
+
+.header-anchor {
+	text-decoration: none;
+	color: var(--default-light);
+}
+
+.header-anchor:focus, .header-anchor:hover, .header-anchor:active {
+	color: var(--twcss-blue-700);
+	text-decoration: underline;
+	text-decoration-thickness: var(--textDcThick); /* always rem */
+	text-underline-offset: var(--textUnOffst); /* always em */
+	text-decoration-skip-ink: auto;
+}
+.header-anchor:focus::after, .header-anchor:hover::after, .header-anchor:active::after {
+	font-size: var(--text-base);
+	padding-left: 0.5em;
+	content: "#";
+}
+
+article {
+	padding-top: 1em; /* definitely em, not rem */
+}
+article p, article li {
+	font-size: clamp(1rem, 1vw + 0.625em, var(--text-xl));
+	line-height: 1.5em;
+	margin-top: 1.15em;
+	margin-bottom: 1.15em;
+}
+article li li, article li p {
+	font-size: inherit;
+	margin-top: 0.25em; /* definitely em, not rem */
+}
+article h1, article h2, article h3, article h4 {
+	margin-top: 1.5em;
+	margin-bottom: 1.5rem;
+	letter-spacing: -0.02em;
+	line-height: normal;
+}
+article picture img {
+	height: auto;
+}
+article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *), article i:not(.red *):not(a *):not(blockquote *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
+	color: var(--twcss-gray-800); /* (vs. gray-700) */
+}
+article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+	color: var(--default-light); /* gray-700 (vs. gray-600) */
+}
+
+@media (prefers-color-scheme: dark) {
+	.header-anchor {
+		color: var(--default-dark);
+	}
+	.header-anchor:active {
+		color: var(--twcss-blue-300);
+	}
+	article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *), article i:not(.red *):not(a *):not(blockquote *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
+		color: var(--twcss-gray-200); /* gray-300 (vs. gray-400) */
+	}
+	article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+		color: var(--default-dark); /* gray-300 (vs. gray-400) */
+	}
+}

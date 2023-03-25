@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+/* .footnotes, .footnote-sim, .footnote-ref {
+	font-family: var(--sans-serif);
+} */
+
+.footnotes {
+	padding-top: 0.5em;
+	/* padding-bottom: 1em; */
+}
+.footnotes hr {
+	border: none;
+	height: 2px;
+	background-color: var(--twcss-gray-700); /* gray-700 */
+}
+.footnotes ol {
+	padding-inline-start: 1.5rem;
+}
+.footnotes ol li {
+	font-size: 0.9rem;
+	/* As of now, `::marker` has too little support even in good browsers;
+	see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties */
+}
+.footnotes ol li p {
+	line-height: 1.5;
+}
+.footnotes .footnote-backref {
+	font-size: 75%;
+}
+
+.footnote-sim {
+	font-size: 0.65em;
+	color: hsl(240, 100%, 50%);
+}
+
+a.footnote-return{
+	font-size: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+	.footnotes hr {
+		background-color: var(--twcss-gray-300); /* gray-300 */
+	}
+	.footnote-sim {
+		color: hsl(200, 100%, 50%);
+	}
+}

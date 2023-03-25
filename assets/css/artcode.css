@@ -1,0 +1,82 @@
+@charset 'utf-8';
+
+code, article code, .box code {
+	background-color: var(--bg-lt);
+}
+@media (prefers-color-scheme: dark) {
+	code, article code, .box code {
+		background-color: var(--bg-dk);
+	}
+} /* Keep this media query up here, rather than with other media queries at end */
+
+code {
+	font-family: var(--monospaced);
+  font-kerning: none;
+  font-variant-ligatures: none;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+article code {
+	font-size: 0.975em;
+	--bg-lt: white; /* slate-200 */
+	--bg-dk: var(--twcss-slate-700); /* slate-700 */
+}
+
+article .footnotes code {
+	font-size: 1em;
+	/* overriding the `article code` part above for footnotes */
+}
+
+article p code.code-inline {
+	/* font-size: var(--text-sm); */
+	padding: 0.25em 0.5em;
+	margin: 0 0.25em;
+}
+
+article .footnotes li code {
+	white-space: normal;
+}
+
+article blockquote code {
+	color: var(--twcss-slate-800); /* slate-800 */
+}
+
+.box code {
+	font-size: 1em; /* definitely em */
+	--bg-lt: var(--twcss-slate-100); /* slate-100 */
+	--bg-dk: var(--twcss-slate-600); /* slate-600 */
+}
+
+article ol li .highlight {
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+	article code {
+		font-size: 0.95em;
+	}
+	article p code {
+		white-space: nowrap;
+	}
+}
+@media screen and (min-width: 1280px) {
+	article code {
+		font-size: 0.925em;
+	}
+}
+@media screen and (min-width: 1536px) {
+	article code {
+		font-size: 0.9em;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	article blockquote code {
+		color: var(--twcss-slate-300); /* slate-300 */
+	}
+}

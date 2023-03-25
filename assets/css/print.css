@@ -1,0 +1,81 @@
+/* based on https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/ */
+
+@media print {
+	#content-main-hugo, main {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	header,
+	footer,
+	.bg-dark,
+	[class^="imgB-"],
+	.contactBtn,
+	.searchBtnDiv,
+	lite-youtube,
+	button,
+	.lyt-disclaimer,
+	.toot-header img,
+	.billboard-title-block p.legal {
+		display: none !important;
+	}
+	@page {
+		margin: 1in;
+	}
+	html,
+	body {
+		font-family: sans-serif;
+		background-color: transparent !important;
+		color: #000 !important;
+	}
+	pre, code {
+		font-family: monospace !important;
+		white-space: pre-wrap !important;
+		word-wrap: break-word !important;
+		overflow-x: auto !important;
+	}
+	code[class*="language-"], pre[class*="language-"] {
+		color: white;
+	}
+	:not(pre) > code[class*="language-"], pre[class*="language-"] {
+		background: #000;
+	}
+	.chroma * {
+		color: white !important;
+	}
+	article code {
+		background-color: #ddd;
+	}
+	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+	.box {
+		background-color: #fff;
+	}
+	.imgCover {
+		object-fit: cover;
+		object-position: 50% 50%; /* H = middle; V = middle */
+		height: 100%;
+		width: 100%;
+	}
+	a {
+		color: #000 !important;
+	}
+	a[target="_blank"]::after {
+		margin: 0;
+		content: "";
+		/* "new window" indication obviously unneeded in print */
+	}
+	.container-narrower {
+		width: 90% !important;
+	}
+	article:after {
+		content: "Site textual content © 2018–2023 Bryce Wray except where otherwise noted. Some items, such as embedded videos, not printed.";
+		color: #000;
+		margin: 2em auto 0 auto;
+		text-align: center;
+		font-size: 0.75rem !important;
+		padding-top: 2em;
+	}
+}
