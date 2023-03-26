@@ -58,7 +58,7 @@
 	{{- if eq $condition true -}}
 		{{- $css = resources.Get (print "css/" $fileName ".css") | minify | fingerprint -}}
 		{{- /*  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">  */ -}}
-		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen" integrity="{{ $css.Data.Integrity }}">
 	{{ end -}}
 {{- end -}}
 
