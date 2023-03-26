@@ -19,11 +19,7 @@ Well, at least as of this writing, I haven't *completely* left it; my account th
 
 It wasn't that there was anything wrong with Fosstodon. Rather, I decided, **I** wasn't entirely right for **it**. I reached this conclusion after seeing, and briefly participating in, a thread which began last night with this from another Fosstodon user:
 
-> How many of you [#Mastodon](https://fosstodon.org/tags/Mastodon) users have more than one account, addressing different audiences?
->
-> I keep finding myself hesitant to post or share political posts on my tech-oriented server.
->
-> <span class="legal">10:36 PM • January 6, 2023 (UTC)</span>
+{{< stoot "fosstodon.org" "109644650964219975" >}}
 
 <!--
 
