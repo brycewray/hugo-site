@@ -1,4 +1,4 @@
-{{- $jsLYT := resources.Get "js/lite-yt-embed_2022-01-17.js" | resources.Minify | fingerprint -}}
+{{- $jsLYT := resources.Get "js/lite-yt-embed_2022-01-17.js" | minify | fingerprint -}}
 <script src="{{ $jsLYT.RelPermalink }}" integrity="{{ $jsLYT.Data.Integrity }}"></script>
 {{/*  <script src="/assets/js/lite-yt-embed_2022-01-17.js"></script>  */}}
 
