@@ -20,10 +20,10 @@ header {
 	width: 1.5rem;
 	fill: var(--twcss-slate-800); /* slate-800 */
 }
-.navToggle .close {
+.nav-Toggle .close {
 	display: none;
 }
-.navToggle .menu {
+.nav-Toggle .menu {
 	margin-top: 0.2rem;
 }
 
@@ -48,7 +48,7 @@ header {
 	font-weight: bold;
 	padding-right: 0.75em;
 }
-.nav-Menu li .notMobile {
+.nav-Menu li.notMobile {
 	display: none;
 }
 .nav-Menu li:first-child {
@@ -77,7 +77,7 @@ header {
 // see `.nav > svg` above
 */
 
-#nav-Checkbox :checked ~ ul.nav-Menu li {
+#nav-Checkbox:checked ~ ul.nav-Menu li {
 	display: block;
 }
 #nav-Checkbox:checked ~ label.nav-Toggle .close {
