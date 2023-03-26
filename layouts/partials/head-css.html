@@ -65,7 +65,7 @@
 			{{- $css = $css | minify -}}
 		{{- end }}
 		{{- /*  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">  */ -}}
-		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen" integrity="{{ $css.Data.Integrity }}">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen">
 	{{ end -}}
 {{- end -}}
 
@@ -73,4 +73,4 @@
 {{- if hugo.IsProduction -}}
 	{{- $printCSS = $printCSS | minify -}}
 {{- end }}
-<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print" integrity="{{ $printCSS.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print">
