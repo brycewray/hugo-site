@@ -93,3 +93,13 @@ lite-youtube.lyt-activated > .lty-playbtn {
 	white-space: nowrap;
 	width: 1px;
 }
+
+.lyt-disclaimer .red {
+	color: var(--twcss-red-600); /* red-600 */
+}
+
+@media (prefers-color-scheme: dark) {
+	.lyt-disclaimer .red {
+		color: var(--twcss-red-400); /* red-400 */
+	}
+}
