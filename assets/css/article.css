@@ -44,7 +44,7 @@ article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not
 	color: var(--twcss-gray-800); /* (vs. gray-700) */
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-	color: var(--default-light); /* gray-700 (vs. gray-600) */
+	color: var(--twcss-gray-650); /* gray-650 (vs. gray-600) */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +58,6 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 		color: var(--twcss-gray-200); /* gray-300 (vs. gray-400) */
 	}
 	article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-		color: var(--default-dark); /* gray-300 (vs. gray-400) */
+		color: var(--twcss-gray-350); /* gray-350 (vs. gray-400) */
 	}
 }

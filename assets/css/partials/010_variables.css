@@ -4,6 +4,7 @@
 	--default-color: hsl(0, 0%, 20%);
 	--white: hsl(0, 0%, 100%);
 	--black: hsl(0, 0%, 0%);
+	>> midpoints after 50 from https://meyerweb.com/eric/tools/color-blend
 	*/
 	--twcss-slate-50: #f8fafc;
 	--twcss-slate-100: #f1f5f9;
@@ -21,11 +22,13 @@
 	--twcss-gray-100: #f3f4f6;
 	--twcss-gray-200: #e5e7eb;
 	--twcss-gray-300: #d1d5db;
+	--twcss-gray-350: #b7bcc5;
 	--twcss-gray-400: #9ca3af;
 	/*
 	--twcss-gray-500: #6b7280;
 	--twcss-gray-600: #4b5563;
 	*/
+	--twcss-gray-650: #414b5a;
 	--twcss-gray-700: #374151;
 	/* --twcss-gray-800: #1f2937; */
 	--twcss-gray-900: #111827;
