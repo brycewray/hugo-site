@@ -38,7 +38,7 @@ And, finally, there was the matter of making sure the specified color difference
 
 But if you were to suspect this would require a mountain of gnarly CSS --- or, as of now, [Sass/SCSS](https://sass-lang.com) --- you'd be only half-correct. Gnarly? Oh, yeah. But a mountain? Nope.
 
-Before we get into the actual SCSS involved, note that the color variables to which it refers come from this (and, yes, I'm shamelessly cribbing those `$twcss` colors from the [Tailwind CSS](https://tailwindcss.com) [color palette](https://tailwindcss.com/docs/customizing-colors)):
+Before we get into the actual SCSS involved, note that the color variables to which it refers come from this (and, yes, I'm shamelessly cribbing those `$twcss` colors from the [Tailwind CSS](https://tailwindcss.com) [color palette](https://tailwindcss.com/docs/customizing-colors) and then adding a couple more courtesy of [Eric Meyer's Color Blender tool](https://meyerweb.com/eric/tools/color-blend)):
 
 ```scss
 // These are relevant excerpts from
@@ -49,19 +49,15 @@ $twcss: {
 	gray-100: #f3f4f6,
 	gray-200: #e5e7eb,
 	gray-300: #d1d5db,
+	gray-350: #b7bcc5,
 	gray-400: #9ca3af,
 	gray-500: #6b7280,
 	gray-600: #4b5563,
+	gray-650: #414b5a,
 	gray-700: #374151,
 	gray-800: #1f2937,
 	gray-900: #111827
 };
-
-// Now we assign our default colors for,
-// respectively, light and dark modes.
-
-$default-light: map-get($twcss, gray-700);
-$default-dark: map-get($twcss, gray-300);
 ```
 
 With those variables set, here we go. (You may want to copy the code into a text editor for more comfortable, scroll-free viewing.)
@@ -128,9 +124,9 @@ article {
 	strong em:is(blockquote *):not(a *),
 	i b:is(blockquote *):not(a *),
 	b i:is(blockquote *):not(a *) {
-		color: var.$default-light; // gray-700 (vs. gray-600)
+		color: map-get(var.$twcss, gray-650); // (vs. gray-600)
 		@media (prefers-color-scheme: dark) {
-			color: var.$default-dark; // gray-300 (vs. gray-400)
+			color: map-get(var.$twcss, gray-350); // (vs. gray-400)
 		}
 	}
 }
