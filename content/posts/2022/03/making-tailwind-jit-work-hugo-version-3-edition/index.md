@@ -106,17 +106,17 @@ module.exports = {
 }
 ```
 
-And, for me, one of the biggest benefits of doing Tailwind-on-Hugo this way is the freedom to ditch the uglified CSS conflagration I described in my earlier post in favor of something similar to this  simplified[^importPath] example:
+And, for me, one of the biggest benefits of doing Tailwind-on-Hugo this way is the freedom to ditch the uglified CSS conflagration I described in my earlier post in favor of something similar to this simplified[^importPath] example:
 
 [^importPath]: I still have to include the full project path to each bespoke CSS file for the sake of `postcss-import` (at least it "knows" where the `tailwindcss` files are). I don't know if that would be different if I didn't have `postcss.config.js` in the project root.
 
 ```css
 /* the contents of index.css */
-@import '/themes/twcss/assets/css/codeblocks.css';
+@import '/assets/css/codeblocks.css';
 @import 'tailwindcss/base';
-@import '/themes/twcss/assets/css/global.css';
-@import '/themes/twcss/assets/css/myutils.css';
-@import '/themes/twcss/assets/css/nav.css';
+@import '/assets/css/global.css';
+@import '/assets/css/myutils.css';
+@import '/assets/css/nav.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 ```

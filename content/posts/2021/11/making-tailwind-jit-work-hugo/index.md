@@ -85,9 +85,9 @@ When I (finally) figured out this part, I moved the vast majority of my bespoke 
 
 ```css
 /* tw.css */
-@import '/themes/twjit/assets/css/reset.css';
-@import '/themes/twjit/assets/css/chroma_native_tweaked.css';
-@import '/themes/twjit/assets/css/chroma_fix-all.css';
+@import '/assets/css/reset.css';
+@import '/assets/css/chroma_native_tweaked.css';
+@import '/assets/css/chroma_fix-all.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -134,13 +134,13 @@ Here's the `package.json` scripting that finally did work.[^rimraf]
 [^rimraf]: I substituted the [`rimraf` package](https://github.com/isaacs/rimraf) for `rm -rf` to provide greater cross-platform compatibility.
 
 ```json
-"clean": "rimraf public && rimraf ./themes/twjit/assets/css/index/css",
+"clean": "rimraf public && rimraf ./assets/css/index/css",
 "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel dev:*",
 "build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
-"prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit",
-"dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit -w",
+"prelim:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tw.css -o ./assets/css/index.css --jit",
+"dev:twcssw": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tw.css -o ./assets/css/index.css --jit -w",
 "dev:hugo": "hugo server",
-"prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./themes/twjit/assets/css/tw.css -o ./themes/twjit/assets/css/index.css --jit --minify",
+"prod:twcss": "./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tw.css -o ./assets/css/index.css --jit --minify",
 "prod:hugo": "hugo --gc --minify"
 ```
 
