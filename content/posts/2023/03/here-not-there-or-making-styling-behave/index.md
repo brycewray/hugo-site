@@ -111,10 +111,9 @@ article {
 	// and groupings as before.)
 	//
 	// In essence, we're giving this
-	// normally grayed-out text the
-	// same color treatments as for
-	// regular text, thus contrasting
-	// with the blockquote styling.
+	// normally grayed-out text some
+	// color treatments to differ slightly
+	// from usual blockquote styling.
 
 	strong:is(blockquote *):not(a *),
 	b:is(blockquote *):not(a *),
