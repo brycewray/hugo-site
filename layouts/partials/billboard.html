@@ -42,6 +42,7 @@
 					{{- with $.Site.Data.gitoutput.gitinfo -}}
 						{{- range $.Site.Data.gitoutput.gitinfo -}}
 							{{- if eq $FilePath .FilePath -}}
+							{{- /* `.FilePath` comes from `range`'s "manual" Git data */ -}}
 								<a href="https://github.com/brycewray/hugo-site/commit/{{ .Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> ({{- if ne $PubDate (.LastmodDate | time.Format "2006-01-02") }}{{ .LastmodDate | time.Format "2006-01-02" }}{{- else -}}same date{{- end }})&nbsp;&bull;&nbsp;
 							{{- end -}}
 						{{- end -}}
