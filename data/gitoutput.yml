@@ -1592,9 +1592,9 @@ gitinfo:
   AbbreviatedHash: 4c23918b
   LastmodDate: 2023-03-05T22:40:50-06:00
 - FilePath: posts/2023/03/headers-up-vercel-edition/index.md
-  Hash: ac0344c486117dd99a2a2ea958078d8b39601a60
-  AbbreviatedHash: ac0344c4
-  LastmodDate: 2023-03-18T13:30:35-05:00
+  Hash: ff4aade4b7980b18d3213ef2f060324fbe39ce2b
+  AbbreviatedHash: ff4aade4
+  LastmodDate: 2023-03-30T12:04:50-05:00
 - FilePath: posts/2023/03/here-not-there-or-making-styling-behave/index.md
   Hash: 0f68eead23c83c6db6578d60efd41c7156f6b504
   AbbreviatedHash: 0f68eead
@@ -1611,6 +1611,10 @@ gitinfo:
   Hash: fcc3f60aa2029bc21e0b33d7aaff6cbaa7ea12c7
   AbbreviatedHash: fcc3f60a
   LastmodDate: 2023-03-22T13:17:51-05:00
+- FilePath: posts/2023/03/sass-coming-native-css-nesting/index.md
+  Hash: c731eb9885b4680f5d6f851d0b4884193289cf61
+  AbbreviatedHash: c731eb98
+  LastmodDate: 2023-03-30T14:52:42-05:00
 - FilePath: posts/2023/03/styling-hugo-site/index.md
   Hash: afbc7196094314e9cfd14961db8ef242171599e0
   AbbreviatedHash: afbc7196
