@@ -84,9 +84,11 @@ I reverted `middleware.js` to the point where its Edge Function had worked, and 
 **Note**: To be safe, I later wrapped most of the code inside a [`try`...`catch` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) so, if any future edit included a typo or otherwise introduced a glitch, the Edge Function wouldn't crash.
 {.box}
 
-And that's how, the next day, I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/.deprecated/middleware.js).
+And that's how, the next day, I moved the site to Vercel while keeping all the functionality I'd had on Cloudflare Pages, thanks primarily[^obfus] to [my Edge Function](https://github.com/brycewray/hugo-site/blob/main/.deprecated/middleware.js).[^CFPReturn]
 
 [^obfus]: Over and above what the Edge Function allowed, I also wanted to duplicate on Vercel the [email address obfuscation](https://developers.cloudflare.com/support/more-dashboard-apps/cloudflare-scrape-shield/what-is-email-address-obfuscation/) Cloudflare had provided in every instance on the site where I gave my address --- namely, on the [contact page](/contact/) and in the "Reply via email" button at the bottom of each post. After finding a [related discussion](https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945) on the [Hugo Discourse forum](https://discourse.gohugo.io) and reviewing a reader's emailed comment on the same topic, I implemented the suggested solution. As of this writing, you can see it in my [posts template](https://github.com/brycewray/hugo-site/blob/main/layouts/posts/single.html) and a single-use [shortcode](https://github.com/brycewray/hugo-site/blob/main/layouts/shortcodes/encoded-email.html).
+
+[^CFPReturn]: I later returned the site to Cloudflare Pages after encountering a couple of issues with Vercel, [one which got resolved](https://github.com/vercel/edge-runtime/issues/286) and one which seems related to that host's fundamental caching behavior.
 
 So, if you've considered using Vercel Edge Functions with your non-Next.js project, go ahead and give it your best shot. It may require some hassles before you can make it work, but take heart: it *can* be done.
 
