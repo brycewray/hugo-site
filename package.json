@@ -1,0 +1,36 @@
+{
+  "name": "hugo-site",
+  "description": "This is the repository from which the Hugo-generated version of https://www.brycewray.com/ is built.",
+  "engines": {
+    "node": "18.x"
+  },
+  "config": {
+    "hugo": "0.111.3"
+  },
+  "scripts": {
+    "clean": "rimraf public",
+    "search": "pagefind --source public",
+    "testbuild:search": "pagefind --source public --bundle-dir ../static/_pagefind",
+    "install:hugo": "hugo-installer --version config.hugo --extended",
+    "dev:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
+    "move-excerpts": "move-cli public/posts/index.xml public/index-excerpts.xml && move-cli public/posts/index.json public/index-excerpts.json",
+    "prod:hugo": "npm run install:hugo && exec-bin bin/hugo/hugo --minify --gc",
+    "hugonew": "exec-bin bin/hugo/hugo new",
+    "testbuild:hugo": "npm run install:hugo && npm run dev:hugo -- --minify --environment=production",
+    "start": "NODE_ENV=development npm-run-all clean dev:hugo",
+    "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
+    "build": "npm-run-all build:prelim move-excerpts search",
+    "testbuild": "NODE_ENV=production npm-run-all clean testbuild:hugo",
+    "testbuildpf": "NODE_ENV=production npm-run-all clean build:prelim testbuild:search testbuild:hugo"
+  },
+  "author": "Bryce Wray",
+  "license": "MIT",
+  "devDependencies": {
+    "exec-bin": "^1.0.0",
+    "hugo-installer": "^4.0.1",
+    "move-cli": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "pagefind": "^0.12.0",
+    "rimraf": "^4.4.1"
+  }
+}
