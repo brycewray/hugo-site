@@ -12,9 +12,9 @@ date: 2023-02-15T08:56:00-06:00
 
 I'm not sure if what I'm about to describe is a textbook proof why one shouldn't look a gift horse in the mouth. After all, the horse's teeth are actually pretty good. It's more a case of the lower-quality field on which I'd planned to let the horse run.
 
-As you may know, I [modified this site](/posts/2023/02/some-future-now-css/) to make use of not only [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) ("CSS variables") but also, more notably, the [emerging CSS Nesting standard](https://drafts.csswg.org/css-nesting/) --- *i.e.*, as opposed to the site's more traditional use of [Sass](https://sass-lang.com) for both variables and nesting.
+As you may know, I [modified this site](/posts/2023/02/some-future-now-css/) to make use of not only [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) ("CSS variables") but also, more notably, the [emerging CSS nesting standard](https://drafts.csswg.org/css-nesting/) --- *i.e.*, as opposed to the site's more traditional use of [Sass](https://sass-lang.com) for both variables and nesting.
 
-While I was pretty happy with how the CSS Nesting worked, I soon realized that managing CSS variables would be another matter.
+While I was pretty happy with how the CSS nesting worked, I soon realized that managing CSS variables would be another matter.
 
 <!--more-->
 
@@ -72,4 +72,4 @@ My Sass styling uses them, too.
 */
 ```
 
-Don't misunderstand: I still maintain that my site (regardless of its build process) will likely never get the *full* benefits of using CSS custom properties. However, having managed the most onerous part of the transition between Sass variables and CSS variables where my styling files were concerned, I've decided to give CSS custom properties (and, with them, CSS Nesting) another go.
+Don't misunderstand: I still maintain that my site (regardless of its build process) will likely never get the *full* benefits of using CSS custom properties. However, having managed the most onerous part of the transition between Sass variables and CSS variables where my styling files were concerned, I've decided to give CSS custom properties (and, with them, CSS nesting) another go.
