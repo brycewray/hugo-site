@@ -100,7 +100,7 @@ hr {
 
 blockquote {
 	border-left: 4px solid var(--twcss-slate-400); /* slate-400 */
-	color: var(--twcss-gray-600); /* gray-600 */
+	color: var(--twcss-gray-550); /* gray-550 */
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
