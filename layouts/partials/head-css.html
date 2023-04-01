@@ -60,8 +60,8 @@
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | minify | fingerprint -}}
 		{{- end -}}
-		{{- /*  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">  */ -}}
-		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}"{{- end -}}>
+		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	{{ end -}}
 {{- end -}}
 
