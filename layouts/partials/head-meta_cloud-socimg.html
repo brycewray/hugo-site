@@ -1,14 +1,8 @@
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
 {{- $socImg := "" -}}{{- /* init */ -}}
-	{{- /* IndieWeb */ -}}
 	{{- if .IsHome }}
 		<link rel="me" href="https://github.com/brycewray">
-	{{- end }}
-		<link rel="webmention" href="https://webmention.io/www.brycewray.com/webmention">
-		<link rel="pingback" href="https://webmention.io/www.brycewray.com/xmlrpc">
-		<meta name="twitter:card" content="summary_large_image">
-	{{- if .IsHome }}
 		<title>{{ .Site.Title }}</title>
 		<meta name="description" content="{{ .Site.Params.Description }}">
 		<link rel="canonical" href="{{ .Site.BaseURL }}">
@@ -58,7 +52,7 @@
 		{{- end -}}
 		{{- $fontChoice := "librefranklinsemibold.ttf" -}}
 		{{- /* choices are `librefranklinsemibold.ttf` and `librefranklinmedium.ttf` */ -}}
-		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
+		{{- $titleWidth := 1136 -}}{{/* 72 each side from 1280 */}}
 		{{- $socImg = print "https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" -}}
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
@@ -84,3 +78,4 @@
 		<meta property="og:image:width" content="1280">
 		<meta property="og:image:width" content="669">
 		<meta property="twitter:image" content="{{ $socImg }}">
+		<meta name="twitter:card" content="summary_large_image">
