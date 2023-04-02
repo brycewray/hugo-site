@@ -12,7 +12,7 @@
 	font-size: var(--text-base);
 	margin: 1.5rem auto;
 	padding: 1rem;
-	border: 2px solid var(--twcss-gray-700); /* gray-700 */
+	border: 2px solid var(--twcss-gray-700);
 	border-radius: 12px;
 	background: white;
 	width: 100%;
@@ -55,7 +55,7 @@
 }
 
 .toot-blockquote-img {
-	border-bottom: 1px solid var(--twcss-gray-700); /* gray-700 */
+	border-bottom: 1px solid var(--twcss-gray-700);
 	width: 100%;
 }
 
@@ -66,7 +66,7 @@
 /* ==== END, rounded image "attachment" */
 
 a > .card, a > .toot-card {
-	color: var(--twcss-gray-800); /* gray-800 */
+	color: var(--twcss-gray-800);
 }
 
 .card {
@@ -74,7 +74,7 @@ a > .card, a > .toot-card {
 	/* background-color: yellow; */
 	margin-top: 1em;
 	border-radius: 12px;
-	border: 1px solid var(--twcss-gray-700); /* gray-700 */
+	border: 1px solid var(--twcss-gray-700);
 }
 .card p {
 	padding: 0.5em 1em 1em;
@@ -112,7 +112,7 @@ a > .card, a > .toot-card {
 	line-height: 1.375;
 }
 .toot-header .toot-author .toot-author-handle {
-	color: var(--twcss-gray-700); /* gray-700 */
+	color: var(--twcss-gray-700);
 	font-size: var(--text-sm);
 	line-height: 1;
 }
@@ -124,14 +124,14 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: var(--twcss-gray-800); /* gray-800 */
+	color: var(--twcss-gray-800);
 	font-size: var(--text-sm);
 }
 .toot-footer .toot-like-icon, .toot-footer .toot-like-count {
 	display: none;
 }
 .toot-footer a {
-	color: var(--twcss-gray-800); /* gray-800 */
+	color: var(--twcss-gray-800);
 }
 /* === needed in Eleventy but not in Hugo
 .toot-footer .toot-date:after {
@@ -237,7 +237,7 @@ a > .card, a > .toot-card {
 }
 
 .toot-quoted-tweet {
-	border: 1px solid var(--twcss-gray-800); /* gray-800 */
+	border: 1px solid var(--twcss-gray-800);
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
 	margin-top: 0.75em;
@@ -258,17 +258,17 @@ a > .card, a > .toot-card {
 	margin-bottom: 0.25em;
 }
 .toot-quoted-tweet p.toot-quoted-toot-head a {
-	color: var(--twcss-gray-800); /* gray-800 */
+	color: var(--twcss-gray-800);
 }
 .toot-quoted-tweet p.toot-quoted-toot-head a:hover {
-	color: var(--twcss-blue-700); /* blue-700 */
+	color: var(--twcss-blue-700);
 }
 
 .toot-reply-to {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: var(--twcss-gray-800); /* gray-800 */
+	color: var(--twcss-gray-800);
 	font-size: var(--text-sm);
 }
 .toot-reply-to .toot-like-icon, .toot-reply-to .toot-like-count {
@@ -277,7 +277,7 @@ a > .card, a > .toot-card {
 
 .toot-card {
 	position: relative;
-	border: 2px solid var(--twcss-gray-400); /* gray-700 */
+	border: 2px solid var(--twcss-gray-400);
 	border-radius: 6px;
 	margin-top: 1em;
 	text-decoration: none;
@@ -285,7 +285,7 @@ a > .card, a > .toot-card {
 }
 .toot-card-image {
 	flex: 0 0 100px;
-	border-right: 2px solid var(--twcss-gray-400); /* gray-700 */
+	border-right: 2px solid var(--twcss-gray-400);
 	position: relative;
 }
 .toot-card-image .toot-card-image-image {
@@ -345,22 +345,22 @@ a > .card, a > .toot-card {
 }
 @media (prefers-color-scheme: dark) {
 	.toot-blockquote {
-		background: var(--twcss-gray-900); /* gray-900 */
+		background: var(--twcss-gray-900);
 		/* background: transparent; */
-		border: 2px solid var(--twcss-gray-200); /* gray-200 */
+		border: 2px solid var(--twcss-gray-200);
 		color: white;
 	}
 	.toot-blockquote a, .toot-blockquote a:hover {
-		color: var(--twcss-blue-300); /* blue-300 */
+		color: var(--twcss-blue-300);
 	}
 	.toot-blockquote-img {
-		border: 1px solid var(--twcss-gray-300); /* gray-300 */
+		border: 1px solid var(--twcss-gray-300);
 	}
 	a > .card, a > .toot-card {
-		color: var(--twcss-gray-300); /* gray-300 */
+		color: var(--twcss-gray-300);
 	}
 	.card {
-		border: 1px solid var(--twcss-gray-300); /* gray-300 */
+		border: 1px solid var(--twcss-gray-300);
 	}
 	.card p .card-title {
 		color: white;
@@ -369,24 +369,24 @@ a > .card, a > .toot-card {
 		color: white;
 	}
 	.toot-header .toot-author .toot-author-handle {
-		color: var(--twcss-gray-300); /* gray-300 */
+		color: var(--twcss-gray-300);
 	}
 	.toot-footer {
-		color: var(--twcss-gray-200); /* gray-200 */
+		color: var(--twcss-gray-200);
 	}
 	.toot-footer a {
-		color: var(--twcss-gray-200); /* gray-200 */
+		color: var(--twcss-gray-200);
 	}
 	.toot-quoted-tweet {
-		border: 1px solid var(--twcss-gray-200); /* gray-200 */
+		border: 1px solid var(--twcss-gray-200);
 	}
 	.toot-quoted-tweet p.toot-quoted-toot-head a {
-		color: var(--twcss-gray-200); /* gray-200 */
+		color: var(--twcss-gray-200);
 	}
 	.toot-quoted-tweet p.toot-quoted-toot-head a:hover {
-		color: var(--twcss-blue-300); /* blue-300 */
+		color: var(--twcss-blue-300);
 	}
 	.toot-reply-to {
-		color: var(--twcss-gray-200); /* gray-200 */
+		color: var(--twcss-gray-200);
 	}
 }

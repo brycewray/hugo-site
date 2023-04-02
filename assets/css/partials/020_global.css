@@ -80,11 +80,11 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: var(--twcss-blue-700); /* blue-700 */
+	color: var(--twcss-blue-700);
 }
 
 a:focus, a:hover, a:active {
-	color: var(--twcss-blue-900); /* blue-900 */
+	color: var(--twcss-blue-900);
 }
 
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
@@ -99,8 +99,8 @@ hr {
 }
 
 blockquote {
-	border-left: 4px solid var(--twcss-slate-400); /* slate-400 */
-	color: var(--twcss-gray-550); /* gray-550 */
+	border-left: 4px solid var(--twcss-slate-400);
+	color: var(--twcss-gray-550);
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
@@ -234,7 +234,7 @@ li p {
 @media (prefers-color-scheme: dark) {
 	html, body {
 		background: black;
-		color: var(--default-dark); /* gray-100 */
+		color: var(--default-dark);
 		background-image: linear-gradient(
 			var(--twcss-slate-500),
 			var(--twcss-slate-800) 6em,
@@ -242,16 +242,16 @@ li p {
 		); /* slate-500 -> slate-800 -> transparent */
 	}
 	a {
-		color: var(--twcss-blue-300); /* blue-300 */
+		color: var(--twcss-blue-300);
 	}
 	a:focus, a:hover, a:active {
-		color: var(--twcss-slate-300); /* slate-300 */
+		color: var(--twcss-slate-300);
 	}
 	hr {
 		background-color: white;
 	}
 	blockquote {
 		/* border-left is same color */
-		color: var(--twcss-gray-400); /* gray-400 */
+		color: var(--twcss-gray-400);
 	}
 }

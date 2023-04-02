@@ -39,7 +39,7 @@ a.footnote-return{
 
 @media (prefers-color-scheme: dark) {
 	.footnotes hr {
-		background-color: var(--twcss-gray-300); /* gray-300 */
+		background-color: var(--twcss-gray-300);
 	}
 	.footnote-sim {
 		color: hsl(200, 100%, 50%);

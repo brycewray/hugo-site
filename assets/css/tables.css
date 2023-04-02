@@ -32,7 +32,7 @@ table.noborders tr:nth-child(even) {
 	background-color: hsl(210, 100%, 94%);
 }
 table.noborders thead {
-	background-color: #1f3b8a; /* blue-900 */
+	background-color: var(--twcss-blue-900);
 	color: white;
 }
 table.noborders thead td {
@@ -64,7 +64,7 @@ table.ulysses {
 	font-size: var(--text-xs);
 }
 table.ulysses thead th {
-	background-color: #1d4fd7; /* blue-700 */
+	background-color: var(--twcss-blue-700);
 	border: 1px solid black;
 	color: white;
 }
@@ -82,7 +82,7 @@ table.ulysses tr:nth-child(odd) {
 	background-color: white;
 }
 table.ulysses tr:nth-child(even) {
-	background-color: #ecfdf5; /* emerald-50 */
+	background-color: var(--twcss-emerald-50);
 }
 
 @media screen and (min-width: 768px) {
@@ -101,14 +101,14 @@ table.ulysses tr:nth-child(even) {
 }
 @media (prefers-color-scheme: dark) {
 	table.noborders tr {
-		background-color: #e5e7eb; /* gray-200 */
+		background-color: var(--twcss-gray-200);
 		color: black;
 	}
 	table.noborders thead tr {
-		background-color: #1f3b8a; /* blue-900 */
+		background-color: var(--twcss-blue-900);
 	}
 	table.ulysses thead th {
-		background-color: #1f3b8a; /* blue-900 */
+		background-color: var(--twcss-blue-900);
 		border: 1px solid white;
 	}
 	table.ulysses td {
@@ -116,9 +116,9 @@ table.ulysses tr:nth-child(even) {
 		color: white;
 	}
 	table.ulysses tr:nth-child(odd) {
-		background-color: #344256; /* slate-700 */
+		background-color: var(--twcss-slate-700);
 	}
 	table.ulysses tr:nth-child(even) {
-		background-color: #064e3b; /* emerald-900 */
+		background-color: var(--twcss-emerald-900);
 	}
 }

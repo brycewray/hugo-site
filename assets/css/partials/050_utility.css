@@ -6,7 +6,7 @@
  text-align: center;
 }
 .red {
- color: var(--twcss-red-700); /* red-700 */
+ color: var(--twcss-red-700);
 }
 
 .legal {
@@ -56,11 +56,11 @@
 }
 
 .box code {
-	background-color: var(--twcss-slate-100); /* slate-100 */
+	background-color: var(--twcss-slate-100);
 }
 
 .box .red {
-	color: var(--twcss-red-600); /* red-600 */
+	color: var(--twcss-red-600);
 }
 
 img.containedImage {
@@ -128,9 +128,9 @@ img.ctrImg {
 }
 
 .indentAfterLI .box {
-	--bIALImarginLeft: 3em;
-	margin-left: var(--bIALImarginLeft);
-	width: calc(100% - var(--bIALImarginLeft));
+	--boxIALImarginLeft: 3em;
+	margin-left: var(--boxIALImarginLeft);
+	width: calc(100% - var(--boxIALImarginLeft));
 }
 
 @keyframes fadeIn {
@@ -243,7 +243,7 @@ path.MastodonM,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
- fill: var(--twcss-blue-700); /* blue-700 */
+ fill: var(--twcss-blue-700);
 }
 
 a:hover path.GitHub,
@@ -252,7 +252,7 @@ a:hover path.MastodonM,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
- fill: var(--twcss-blue-800); /* blue-800 */
+ fill: var(--twcss-blue-800);
 }
 
 path.MastodonBody,
@@ -286,20 +286,20 @@ a:hover path.MastodonBody {
 
 @media (prefers-color-scheme: dark) {
 	red {
-		color: var(--twcss-red-300); /* red-300 */
+		color: var(--twcss-red-300);
 	}
 	.box {
-		background-color: var(--twcss-slate-800); /* slate-800 */
-		border: 1px solid var(--twcss-gray-200); /* gray-200 */
+		background-color: var(--twcss-slate-800);
+		border: 1px solid var(--twcss-gray-200);
 	}
 	.box code {
-		background-color: var(--twcss-slate-600); /* slate-600 */
+		background-color: var(--twcss-slate-600);
 	}
 	.box a code {
-		background-color: var(--twcss-slate-700); /* slate-700 */
+		background-color: var(--twcss-slate-700);
 	}
 	.box .red {
-		color: var(--twcss-red-400); /* red-400 */
+		color: var(--twcss-red-400);
 	}
 	circle.GitHub,
 	circle.RSS,
@@ -311,7 +311,7 @@ a:hover path.MastodonBody {
 	}
 	circle.Twitter,
 	circle.JSON {
-		fill: var(--twcss-blue-300); /* blue-300 */
+		fill: var(--twcss-blue-300);
 	}
 	path.GitHub,
 	circle.MastodonCircle,
@@ -319,7 +319,7 @@ a:hover path.MastodonBody {
 	circle.Twitter,
 	circle.RSS,
 	circle.JSON {
-		fill: var(--twcss-blue-300); /* blue-300 */
+		fill: var(--twcss-blue-300);
 	}
 	a:hover path.GitHub,
 	a:hover circle.MastodonCircle,
@@ -327,7 +327,7 @@ a:hover path.MastodonBody {
 	a:hover circle.Twitter,
 	a:hover circle.RSS,
 	a:hover circle.JSON {
-		fill: var(--twcss-blue-200); /* blue-200 */
+		fill: var(--twcss-blue-200);
 	}
 	/* needed only if using darker bkgd in dark mode
 	a:hover circle.GitHub,
@@ -337,9 +337,7 @@ a:hover path.MastodonBody {
 	a:hover path.MastodonBody {
 		fill: white;
 	}
-}
-*/
-
+	*/
 }
 
  @media screen and (min-width: 768px) {

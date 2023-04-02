@@ -2,7 +2,7 @@
 
 .bg-dark {
 	margin-top: 2.5rem;
-	background-color: var(--twcss-slate-300); /* slate-300 */
+	background-color: var(--twcss-slate-300);
 	padding: 0.5rem 0;
 }
 .bg-dark div, .bg-dark p {
@@ -16,13 +16,13 @@
 	--twcss-blue-200: #bedbfe;
 }
 .bg-dark p.prevnextP a {
-	color: var(--twcss-blue-800); /* blue-800 */
+	color: var(--twcss-blue-800);
 	text-decoration: none;
 }
 .bg-dark p.prevnextP a:hover, .bg-dark p.prevnextP a:focus {
 	--twcss-gray-800: #1f2937;
 	--twcss-gray-200: #e5e7eb;
-	color: var(--twcss-gray-800); /* gray-800 */
+	color: var(--twcss-gray-800);
 	text-decoration: underline; /* normal */
 	text-decoration-thickness: var(--textDcThick); /* always rem */
 	text-underline-offset: var(--textUnOffst); /* always em */
@@ -40,14 +40,14 @@ contact-button button {
 	width: 15rem;
 	margin-top: 0.5em;
 	padding: 0.25rem 0;
-	background-color: var(--twcss-blue-700); /* blue-700 */
+	background-color: var(--twcss-blue-700);
 	border-radius: var(--btn_radius);
 	border-color: transparent;
 	vertical-align: middle;
 	color: white;
 }
 contact-button button:focus, contact-button button:active, contact-button button:hover {
-	background-color: var(--twcss-blue-800); /* blue-800 */
+	background-color: var(--twcss-blue-800);
 }
 contact-button button:hover {
 	cursor: pointer;
@@ -55,22 +55,22 @@ contact-button button:hover {
 
 @media (prefers-color-scheme: dark) {
 	.bg-dark {
-		background-color: var(--twcss-slate-800); /* slate-800 */
+		background-color: var(--twcss-slate-800);
 	}
 	.bg-dark div, .bg-dark p {
 		color: white;
 	}
 	.bg-dark p.prevnextP a {
-		color: var(--twcss-blue-200); /* blue-200 */
+		color: var(--twcss-blue-200);
 	}
 	.bg-dark p.prevnextP a:hover, .bg-dark p.prevnextP a:focus {
-		color: var(--twcss-gray-200); /* gray-200 */
+		color: var(--twcss-gray-200);
 	}
 	contact-button button {
 		color: black;
-		background-color: var(--twcss-blue-300); /* blue-300 */
+		background-color: var(--twcss-blue-300);
 	}
 	contact-button button:focus, contact-button button:active, contact-button button:hover {
-		background-color: var(--twcss-blue-50); /* blue-50 */
+		background-color: var(--twcss-blue-50);
 	}
 }
