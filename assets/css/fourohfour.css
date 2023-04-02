@@ -8,22 +8,27 @@
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	& h1 {
-		font-size: var(--text-4xl);
-		margin-bottom: 3rem;
-		@media screen and (min-width: 1024px) {
-			font-size: 3.25rem;
-		}
-		@media screen and (min-width: 1280px) {
-			font-size: 3.5rem;
-		}
+}
+.FourOhFour-Body h1 {
+	font-size: var(--text-4xl);
+	margin-bottom: 3rem;
+}
+.FourOhFour-Body p {
+	font-size: var(--text-2xl);
+	letter-spacing: -0.025em;
+}
+.FourOhFour-Body .bottom {
+	margin-bottom: 10em;
+}
+
+@media screen and (min-width: 1024px) {
+	.FourOhFour-Body h1 {
+		font-size: 3.25rem;
 	}
-	& p {
-		font-size: var(--text-2xl);
-		letter-spacing: -0.025em;
-	}
-	& .bottom {
-		margin-bottom: 10em;
+}
+@media screen and (min-width: 1280px) {
+	.FourOhFour-Body h1 {
+		font-size: 3.5rem;
 	}
 }
 
