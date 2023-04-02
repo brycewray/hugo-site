@@ -36,9 +36,11 @@ It turned out to be less trouble (albeit somewhat tedious) than I'd anticipated 
 
 ```css
 .chroma *, .code-inline * {
-	color: var(--clr-lt, yellow);
+	color: yellow;
+	color: var(--clr-lt);
 	@media (prefers-color-scheme: dark) {
-		color: var(--clr-dk, midnightblue);
+		color: midnightblue;
+		color: var(--clr-dk);
 	}
 } /* fallback colors to catch var issues) */
 
