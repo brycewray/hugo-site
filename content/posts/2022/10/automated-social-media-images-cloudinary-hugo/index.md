@@ -57,12 +57,12 @@ Thus, the only way to do this to my satisfaction in Hugo was to recreate, entire
 Fortunately, Lengstorf's [`get-share-image` documentation](https://github.com/jlengstorf/get-share-image) makes it pretty clear how to get there. In the end, all you're doing is creating a [Cloudinary image transformation URL](https://cloudinary.com/documentation/image_transformations#transformation_url_syntax) that uses Cloudinary's [text layers feature](https://cloudinary.com/documentation/layers#text_layer_options), and `get-share-image` does that for the user. For example, here's the Cloudinary URL that makes **this** page's OG image:
 
 ```html
-https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1036,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669
+https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1136,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669
 ```
 
 . . . which results in:
 
-![OG image from URL shown above](https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1036,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669)
+![OG image from URL shown above](https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1136,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669)
 
 **Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)
 {.box}
@@ -235,7 +235,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 				but we’ll leave this here
 				in case you want to try it.
 			*/ -}}
-		{{- $titleWidth := 1036 -}}{{/* 72 each side from 1280 */}}
+		{{- $titleWidth := 1136 -}}{{/* 72 each side from 1280 */}}
 		{{- $myUploadedBkgd := "my-bkgd-3k4dvaxlzd" -}}
 			{{- /*
 				Fill in the Cloudinary-assigned
@@ -299,7 +299,7 @@ While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs
 	{%- set titleSize = 72 -%}
 {%- endif -%}
 {% set fontChoice = "arial" %}
-{% set titleWidth = 1036 %}{# 72 each side from 1280 #}
+{% set titleWidth = 1136 %}{# 72 each side from 1280 #}
 {% set myUploadedBkgd = "my-bkgd-3k4dvaxlzd" %}
 	{# your preferred image's Cloudinary `public ID`, as explained earlier #}
 {% set socImg = ["https://res.cloudinary.com/", cloudName, "/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_", titleWidth, ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:", fontChoice, "_", titleSize, "_center:", escapedTitle, "/", myUploadedBkgd] | join %}
