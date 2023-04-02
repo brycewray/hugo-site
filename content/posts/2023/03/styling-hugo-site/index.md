@@ -29,7 +29,7 @@ Where an option makes it possible, we'll make use of Hugo's built-in asset pipel
 index.b670b5804d52b40049bb0f2705118be41cc4fa27322079ee9f328ad85591d529.css
 ```
 
-. . . which gives you the benefits of [cache-busting](https://tomanistor.com/blog/cache-bust-that-asset) in addition to those of SRI. 
+. . . which gives you the benefits of [cache-busting](https://tomanistor.com/blog/cache-bust-that-asset) in addition to those of SRI.
 
 All of what follows is based on the assumption that you're doing this on your own rather than as part of a team effort. If it's the latter scenario, none of this may matter. (For example: if your team is already committed to a particular styling framework, that's pretty much your only pathway.)
 
@@ -104,7 +104,7 @@ Here, we use Hugo Pipes to convert the SCSS into CSS (already `compressed` --- *
 
 ## The Tailwind CSS framework
 
-For those who *aren't* thrilled with the idea of writing their own styling from scratch, *CSS frameworks* can provide an escape. CSS frameworks contain a mixture of pre-existing CSS files --- and, often, JavaScript files --- that one can manipulate to produce a desired look-and-feel without having to re-invent the proverbial wheel.
+For those who *aren't* thrilled with the idea of writing their own styling from scratch, *CSS frameworks* can provide an escape. A CSS framework contains a mixture of pre-existing CSS files --- and, often, JavaScript files --- that one can manipulate to produce a desired look-and-feel without having to re-invent the proverbial wheel.
 
 The framework I'll mention is the one of which you've probably heard the most, [Tailwind CSS](https://tailwindcss.com). It's very well-documented and widely used, and has been around quite a while, so you have a good-to-excellent chance of finding help when you need it.
 
