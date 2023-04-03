@@ -56,19 +56,11 @@
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
-		{{- $css = resources.Get (print "css/" $fileName ".css") | fingerprint -}}
-		{{/* fingerprint even in dev mode for Safari caching weirdness */}}
-		{{- if hugo.IsProduction -}}
-			{{- $css = $css | minify -}}
-		{{- end -}}
+		{{- $css = resources.Get (print "css/" $fileName ".css") | minify | fingerprint -}}
 		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	{{ end -}}
 {{- end -}}
 
-{{- $printCSS := resources.Get "css/print.css" | fingerprint -}}
-{{/* fingerprint even in dev mode for Safari caching weirdness */}}
-{{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | minify -}}
-{{- end -}}
+{{- $printCSS := resources.Get "css/print.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
