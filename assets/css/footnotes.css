@@ -11,7 +11,7 @@
 .footnotes hr {
 	border: none;
 	height: 2px;
-	background-color: var(--twcss-gray-700); /* gray-700 */
+	background-color: var(--twcss-gray-700);
 }
 .footnotes ol {
 	padding-inline-start: 1.5rem;
@@ -30,7 +30,7 @@
 
 .footnote-sim {
 	font-size: 0.65em;
-	color: hsl(240, 100%, 50%);
+	color: var(--default-light-link);
 }
 
 a.footnote-return{
@@ -42,6 +42,6 @@ a.footnote-return{
 		background-color: var(--twcss-gray-300);
 	}
 	.footnote-sim {
-		color: hsl(200, 100%, 50%);
+		color: var(--default-dark-link);
 	}
 }

@@ -13,27 +13,27 @@ search-button button {
 	color: white;
 	width: 15em;
 	padding: 0.5em 0.25em;
-	background-color: var(--twcss-blue-700);
-	border: 1px solid var(--twcss-blue-700);
+	background-color: var(--default-light-link);
+	border: 1px solid var(--default-light-link);
 	border-radius: var(--btn_radius);
 }
 search-button button:hover {
 	cursor: pointer;
 }
 search-button button:focus, search-button button:active, search-button button:hover {
-	border: 1px solid var(--twcss-blue-800);
-	background-color: var(--twcss-blue-800);
+	border: 1px solid var(--default-light-link-afh);
+	background-color: var(--default-light-link-afh);
 }
 
 
 @media (prefers-color-scheme: dark) {
 	search-button button {
-		border: 1px solid var(--twcss-blue-300);
-		background-color: var(--twcss-blue-300);
+		border: 1px solid var(--default-dark-link);
+		background-color: var(--default-dark-link);
 		color: black;
 	}
 	search-button button:focus, search-button button:active, search-button button:hover {
-		border: 1px solid var(--twcss-blue-50);
-		background-color: var(--twcss-blue-50);
+		border: 1px solid var(--default-dark-link-afh);
+		background-color: var(--default-dark-link-afh);
 	}
 }

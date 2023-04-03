@@ -261,7 +261,7 @@ a > .card, a > .toot-card {
 	color: var(--twcss-gray-800);
 }
 .toot-quoted-tweet p.toot-quoted-toot-head a:hover {
-	color: var(--twcss-blue-700);
+	color: var(--default-light-link);
 }
 
 .toot-reply-to {
@@ -351,7 +351,7 @@ a > .card, a > .toot-card {
 		color: white;
 	}
 	.toot-blockquote a, .toot-blockquote a:hover {
-		color: var(--twcss-blue-300);
+		color: var(--default-dark-link);
 	}
 	.toot-blockquote-img {
 		border: 1px solid var(--twcss-gray-300);
@@ -384,7 +384,7 @@ a > .card, a > .toot-card {
 		color: var(--twcss-gray-200);
 	}
 	.toot-quoted-tweet p.toot-quoted-toot-head a:hover {
-		color: var(--twcss-blue-300);
+		color: var(--default-dark-link);
 	}
 	.toot-reply-to {
 		color: var(--twcss-gray-200);

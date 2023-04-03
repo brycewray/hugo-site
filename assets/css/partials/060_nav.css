@@ -3,7 +3,7 @@ header, .nav, .nav-Menu {
 }
 
 header {
-	font-family: var(--sans-serif);
+	/* font-family: var(--sans-serif); */
 	position: fixed;
 	width: 100%;
 	margin-top: 0;

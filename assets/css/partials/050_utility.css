@@ -1,6 +1,6 @@
-.box, .imgcCaption, .legal, .pokey {
+/* .box, .imgcCaption, .legal, .pokey {
 	font-family: var(--sans-serif);
-}
+} */
 
 .ctr {
  text-align: center;
@@ -243,7 +243,7 @@ path.MastodonM,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
- fill: var(--twcss-blue-700);
+ fill: var(--default-light-link);
 }
 
 a:hover path.GitHub,
@@ -252,7 +252,7 @@ a:hover path.MastodonM,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
- fill: var(--twcss-blue-800);
+ fill: var(--default-light-link-afh);
 }
 
 path.MastodonBody,
@@ -311,7 +311,7 @@ a:hover path.MastodonBody {
 	}
 	circle.Twitter,
 	circle.JSON {
-		fill: var(--twcss-blue-300);
+		fill: var(--default-dark-link);
 	}
 	path.GitHub,
 	circle.MastodonCircle,
@@ -319,7 +319,7 @@ a:hover path.MastodonBody {
 	circle.Twitter,
 	circle.RSS,
 	circle.JSON {
-		fill: var(--twcss-blue-300);
+		fill: var(--default-dark-link);
 	}
 	a:hover path.GitHub,
 	a:hover circle.MastodonCircle,
@@ -327,7 +327,7 @@ a:hover path.MastodonBody {
 	a:hover circle.Twitter,
 	a:hover circle.RSS,
 	a:hover circle.JSON {
-		fill: var(--twcss-blue-200);
+		fill: var(--default-dark-link-afh);
 	}
 	/* needed only if using darker bkgd in dark mode
 	a:hover circle.GitHub,

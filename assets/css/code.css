@@ -53,6 +53,7 @@
 	color: yellow;
 	color: var(--clr-lt);
 }
+
 @media (prefers-color-scheme: dark) {
 	.chroma *, .code-inline * {
 		color: midnightblue;

@@ -7,13 +7,13 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var(--sans-serif);
-	background-color: var(--twcss-slate-100); /* slate-100 */
-	color: var(--default-light); /* gray-900 */
+	background-color: var(--twcss-slate-100);
+	color: var(--default-light);
 	background-image: linear-gradient(
 		var(--twcss-slate-600),
 		var(--twcss-slate-300) 6em,
 		transparent 10em
-	); /* slate-600 -> slate-300 -> transparent */
+	);
 }
 
 /* h1, .h1, h2, .h2, h3, .h3, h4, .h4, footer {
@@ -80,11 +80,11 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: var(--twcss-blue-700);
+	color: var(--default-light-link);
 }
 
 a:focus, a:hover, a:active {
-	color: var(--twcss-blue-900);
+	color: var(--default-light-link-afh);
 }
 
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
@@ -239,13 +239,13 @@ li p {
 			var(--twcss-slate-500),
 			var(--twcss-slate-800) 6em,
 			transparent 10em
-		); /* slate-500 -> slate-800 -> transparent */
+		)
 	}
 	a {
-		color: var(--twcss-blue-300);
+		color: var(--default-dark-link);
 	}
 	a:focus, a:hover, a:active {
-		color: var(--twcss-slate-300);
+		color: var(--default-dark-link-afh);
 	}
 	hr {
 		background-color: white;

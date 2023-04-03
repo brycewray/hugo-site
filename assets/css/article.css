@@ -8,8 +8,8 @@
 .header-anchor:focus, .header-anchor:hover, .header-anchor:active {
 	color: var(--twcss-blue-700);
 	text-decoration: underline;
-	text-decoration-thickness: var(--textDcThick); /* always rem */
-	text-underline-offset: var(--textUnOffst); /* always em */
+	text-decoration-thickness: var(--textDcThick);
+	text-underline-offset: var(--textUnOffst);
 	text-decoration-skip-ink: auto;
 }
 .header-anchor:focus::after, .header-anchor:hover::after, .header-anchor:active::after {

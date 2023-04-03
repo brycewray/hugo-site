@@ -261,6 +261,10 @@
 	*/
 	--default-light: var(--twcss-gray-700);
 	--default-dark: var(--twcss-gray-300);
+	--default-light-link: var(--twcss-blue-700);
+	--default-dark-link: var(--twcss-blue-300);
+	--default-light-link-afh: var(--twcss-blue-900);
+	--default-dark-link-afh: var(--twcss-slate-300);
 
 	/* === TYPOGRAPHY === */
 	/* font families */
