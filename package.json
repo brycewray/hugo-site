@@ -18,12 +18,12 @@
 		"prodexec:hugo": "exec-bin bin/hugo/hugo --minify --gc",
     "prod:hugo": "npm-run-all install:hugo prodexec:hugo",
     "hugonew": "exec-bin bin/hugo/hugo new",
-    "testbuild:hugo": "npm run install:hugo && npm run dev:hugo -- --minify --environment=production",
     "start": "NODE_ENV=development npm-run-all clean dev:hugo",
     "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
-    "testbuild": "NODE_ENV=production npm-run-all clean testbuild:hugo",
-    "testbuildpf": "NODE_ENV=production npm-run-all clean build:prelim testbuild:search testbuild:hugo"
+		"testbuildexec:hugo": "exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --minify",
+    "testbuild": "npm-run-all clean build:prelim move-excerpts testbuildexec:hugo",
+    "testbuildpf": "npm-run-all build:prelim move-excerpts testbuild:search testbuildexec:hugo"
   },
   "author": "Bryce Wray",
   "license": "MIT",
