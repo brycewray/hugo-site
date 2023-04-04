@@ -17,37 +17,29 @@
 {{- $simple := false -}}
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
-{{- $divClass := "" -}}
 {{- $imgBd5 := md5 $src -}}
-{{- if .Site.Params.Nonces -}}
-	{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
-{{- else -}}
-	{{- $divClass = "relative" -}}
+{{- $divClass := "relative bg-center" -}}
+{{- if not $phn -}}
+	{{- $divClass = printf "%s%s%s%s" $divClass " imgB-" $imgBd5 "-GIP" -}}
+	{{/*
+		The `imgB-`[hash]-GIP` class is
+		generated in a `head` partial;
+		here, we need only get the class's name,
+		using the same method as in that partial
+		(md5-ing the image file name).
+	*/}}
 {{- end -}}
 {{- $imgClass := "w-full h-auto animate-fade" -}}
 {{- if $phn -}}
 	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $LQIP_colors := $src.Colors -}}
-{{- if (lt ($LQIP_colors | len) 2) -}}
-	{{- $LQIP_colors = $LQIP_colors | append "#000000" -}}
-{{- end -}}
-{{- $LQIP_bkgd := delimit ($LQIP_colors) ", " -}}
-{{- $BkgdStyle := print "background: linear-gradient(" $LQIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
-{{/*  {{- if $phn -}}
-	{{- $BkgdStyle = "background: none;" -}}
-{{- end -}}  */}}
 
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
 
 {{- if eq $simple false -}}
-{{- if .Site.Params.Nonces -}}
-	<div class="relative {{ if not ($phn) }}imgB-{{ $imgBd5 }}-GIP {{ end }}bg-center" data-pagefind-ignore>
-{{- else -}}
-	<div class="relative bg-center" {{ if not ($phn) }}style="{{ $BkgdStyle | safeCSS }}" {{ end }}data-pagefind-ignore>
-{{- end -}}
-{{- end -}}
+<div class="{{ $divClass }}" data-pagefind-ignore>
+{{- end }}
 	<picture data-pagefind-ignore>
 		<source type="image/webp" srcset="
 		{{- with $respSizes -}}

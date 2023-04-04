@@ -17,34 +17,29 @@
 {{- $simple := false -}}
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
-{{- $divClass := "" -}}
 {{- $imgBd5 := md5 $src -}}
-{{- if .Site.Params.Nonces -}}
-	{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
-{{- else -}}
-	{{- $divClass = "relative" -}}
+{{- $divClass := "relative bg-center" -}}
+{{- if not $phn -}}
+	{{- $divClass = printf "%s%s%s%s" $divClass " imgB-" $imgBd5 "-LQIP" -}}
+	{{/*
+		The `imgB-`[hash]-LQIP` class is
+		generated in a `head` partial;
+		here, we need only get the class's name,
+		using the same method as in that partial
+		(md5-ing the image file name).
+	*/}}
 {{- end -}}
 {{- $imgClass := "w-full h-auto animate-fade" -}}
 {{- if $phn -}}
 	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
-{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-{{- $BkgdStyle := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
-{{- if $phn -}}
-	{{- $BkgdStyle = "background: none;" -}}
-{{- end -}}
 
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
 
 {{- if eq $simple false -}}
-{{- if .Site.Params.Nonces -}}
-	<div class="relative imgB-{{ $imgBd5 }}-LQIP bg-center" data-pagefind-ignore>
-{{- else -}}
-	<div class="relative bg-center" style="{{ $BkgdStyle | safeCSS }}" data-pagefind-ignore>
-{{- end -}}
-{{- end -}}
+<div class="{{ $divClass }}" data-pagefind-ignore>
+{{- end }}
 	<picture data-pagefind-ignore>
 		<source type="image/webp" srcset="
 		{{- with $respSizes -}}
