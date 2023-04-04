@@ -5,16 +5,10 @@
 	https://github.com/danielfdickinson/image-handling-mod-hugo-dfd/pull/72
 */}}
 
-{{- $divClass := "" -}}
 {{- with .Resources.ByType "image" -}}
 	{{- range . -}}
 		{{- $src := . -}}
 		{{- $imgBd5 := md5 .Name -}}
-		{{- if $.Site.Params.Nonces -}}
-			{{- $divClass = printf "%s%s" "relative imgB-" $imgBd5 -}}
-		{{- else -}}
-			{{- $divClass = "relative" -}}
-		{{- end -}}
 		{{- $GIP_colors := $src.Colors -}}
 		{{- if (lt ($GIP_colors | len) 2) -}}
 			{{- $GIP_colors = $GIP_colors | append "#000000" -}}
@@ -23,12 +17,10 @@
 		{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
 		{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
 		{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-		{{- $BkgdStyleLQIP := printf "%s%s%s" "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
-		{{- if $.Site.Params.Nonces -}}
-			<style media="screen">
-				.imgB-{{ $imgBd5 }}-GIP { {{ $BkgdStyleGIP | safeCSS }} }
-				.imgB-{{ $imgBd5 }}-LQIP { {{ $BkgdStyleLQIP | safeCSS }} }
-			</style>
-		{{- end -}}
+		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
+		<style media="screen">
+			.imgB-{{ $imgBd5 }}-GIP { {{ $BkgdStyleGIP | safeCSS }} }
+			.imgB-{{ $imgBd5 }}-LQIP { {{ $BkgdStyleLQIP | safeCSS }} }
+		</style>
 	{{- end -}}
 {{- end -}}
