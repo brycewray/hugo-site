@@ -66,6 +66,10 @@ export default async function handleRequest(request) {
 				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
 			)
 			.replace(
+				'cdn.volument.com/v1/volument-full.js"',
+				`cdn.volument.com/v1/volument-full.js" nonce="${nonce}"`
+			)
+			.replace(
 				'src="/assets/js/lite-yt-embed_',
 				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
 			)
