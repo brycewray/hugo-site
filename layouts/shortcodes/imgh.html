@@ -35,20 +35,17 @@
 {{- end -}}
 {{- $LQIP_bkgd := delimit ($LQIP_colors) ", " -}}
 {{- $BkgdStyle := print "background: linear-gradient(" $LQIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
-{{- if $phn -}}
+{{/*  {{- if $phn -}}
 	{{- $BkgdStyle = "background: none;" -}}
-{{- end -}}
+{{- end -}}  */}}
 
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
 
 {{- if eq $simple false -}}
 {{- if .Site.Params.Nonces -}}
-	<style data-pagefind-ignore>
-		.imgB-{{ $imgBd5 }} { {{ $BkgdStyle | safeCSS }} }
-	</style>
-	<div class="relative imgB-{{ $imgBd5 }} bg-center" data-pagefind-ignore>
+	<div class="relative {{ if not ($phn) }}imgB-{{ $imgBd5 }}-GIP {{ end }}bg-center" data-pagefind-ignore>
 {{- else -}}
-	<div class="relative bg-center" style="{{ $BkgdStyle | safeCSS }}" data-pagefind-ignore>
+	<div class="relative bg-center" {{ if not ($phn) }}style="{{ $BkgdStyle | safeCSS }}" {{ end }}data-pagefind-ignore>
 {{- end -}}
 {{- end -}}
 	<picture data-pagefind-ignore>

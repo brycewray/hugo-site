@@ -40,10 +40,7 @@
 
 {{- if eq $simple false -}}
 {{- if .Site.Params.Nonces -}}
-	<style data-pagefind-ignore>
-		.imgB-{{ $imgBd5 }} { {{ $BkgdStyle | safeCSS }} }
-	</style>
-	<div class="relative imgB-{{ $imgBd5 }} bg-center" data-pagefind-ignore>
+	<div class="relative imgB-{{ $imgBd5 }}-LQIP bg-center" data-pagefind-ignore>
 {{- else -}}
 	<div class="relative bg-center" style="{{ $BkgdStyle | safeCSS }}" data-pagefind-ignore>
 {{- end -}}
