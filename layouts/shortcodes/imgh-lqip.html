@@ -20,7 +20,7 @@
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
-	{{- $divClass = printf "%s%s%s%s" $divClass " imgB-" $imgBd5 "-LQIP" -}}
+	{{- $divClass = print $divClass " imgB-" $imgBd5 "-LQIP" -}}
 	{{/*
 		The `imgB-`[hash]-LQIP` class is
 		generated in a `head` partial;
@@ -35,7 +35,7 @@
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 
-{{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
+{{- $actualImg := $src.Resize (print "640x jpg " $filter) -}}
 
 {{- if eq $simple false -}}
 <div class="{{ $divClass }}" data-pagefind-ignore>
