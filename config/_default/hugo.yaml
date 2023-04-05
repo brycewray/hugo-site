@@ -13,7 +13,7 @@ params:
   SearchTitle: "Search the site"
   # ===========================
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
-  Deploy: CI # choices are "CI" and "UI" --- re .GitInfo
+  Deploy: UI # choices are "CI" and "UI" --- re .GitInfo
   EmailObfuscation: "local" # choices are "local" ahd "host"
   Host: "CFP" # choices for Host are "CFP" and "Vercel"
   SiteLive: live # Boolean --- used for adapting robots.txt as needed

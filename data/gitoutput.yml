@@ -1,8 +1,8 @@
 gitinfo:
 - FilePath: _index.md
-  Hash: 13758a26c236ebfcd671a5ea68b49a44e800a764
-  AbbreviatedHash: 13758a26
-  LastmodDate: 2022-06-28T10:32:00-05:00
+  Hash: 4ca533919aab47e6753290940c9ab10c06681dc9
+  AbbreviatedHash: 4ca53391
+  LastmodDate: 2023-03-31T08:40:45-05:00
 - FilePath: about/gte-net_HTML_1997-04-17_crop_1280x715.jpg
   Hash: 4c23918be7aa740275ee011a21355e089fc1f8fe
   AbbreviatedHash: 4c23918b
@@ -956,9 +956,9 @@ gitinfo:
   AbbreviatedHash: 4c23918b
   LastmodDate: 2023-03-05T22:40:50-06:00
 - FilePath: posts/2021/11/gems-in-rough-11/index.md
-  Hash: 048c534eca0723ce10caa1046a90004ed9a16013
-  AbbreviatedHash: 048c534e
-  LastmodDate: 2023-03-20T17:58:37-05:00
+  Hash: 66f7d60e78fb892c9170e09d153b8fc6b651c7d1
+  AbbreviatedHash: 66f7d60e
+  LastmodDate: 2023-04-05T09:31:04-05:00
 - FilePath: posts/2021/11/gems-in-rough-11/my-pet-cat_3264x2448.jpg
   Hash: 4c23918be7aa740275ee011a21355e089fc1f8fe
   AbbreviatedHash: 4c23918b
@@ -1176,9 +1176,9 @@ gitinfo:
   AbbreviatedHash: 048c534e
   LastmodDate: 2023-03-20T17:58:37-05:00
 - FilePath: posts/2022/06/responsive-optimized-images-hugo/index.md
-  Hash: e89b41a105fdd99d01d336a05dceb10d3dcb604f
-  AbbreviatedHash: e89b41a1
-  LastmodDate: 2023-03-21T14:50:17-05:00
+  Hash: 66f7d60e78fb892c9170e09d153b8fc6b651c7d1
+  AbbreviatedHash: 66f7d60e
+  LastmodDate: 2023-04-05T09:31:04-05:00
 - FilePath: posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448.jpg
   Hash: 4c23918be7aa740275ee011a21355e089fc1f8fe
   AbbreviatedHash: 4c23918b
@@ -1372,9 +1372,9 @@ gitinfo:
   AbbreviatedHash: 4c23918b
   LastmodDate: 2023-03-05T22:40:50-06:00
 - FilePath: posts/2022/09/new-way-lqips-hugo-0-104-0/index.md
-  Hash: 7cde13ff87a7f4c61c81866950b892153035f819
-  AbbreviatedHash: 7cde13ff
-  LastmodDate: 2023-03-27T11:05:15-05:00
+  Hash: 66f7d60e78fb892c9170e09d153b8fc6b651c7d1
+  AbbreviatedHash: 66f7d60e
+  LastmodDate: 2023-04-05T09:31:04-05:00
 - FilePath: posts/2022/09/new-way-lqips-hugo-0-104-0/my-pet-cat_3264x2448.jpg
   Hash: 4c23918be7aa740275ee011a21355e089fc1f8fe
   AbbreviatedHash: 4c23918b
@@ -1420,9 +1420,9 @@ gitinfo:
   AbbreviatedHash: 4c23918b
   LastmodDate: 2023-03-05T22:40:50-06:00
 - FilePath: posts/2022/10/automated-social-media-images-cloudinary-hugo/index.md
-  Hash: 048c534eca0723ce10caa1046a90004ed9a16013
-  AbbreviatedHash: 048c534e
-  LastmodDate: 2023-03-20T17:58:37-05:00
+  Hash: 842547c957cc530ca544fa513bffdb43a4fa2039
+  AbbreviatedHash: 842547c9
+  LastmodDate: 2023-04-02T17:43:52-05:00
 - FilePath: posts/2022/10/automated-social-media-images-cloudinary-hugo/social-OG-w-BW-logo_1024x512.jpg
   Hash: 4c23918be7aa740275ee011a21355e089fc1f8fe
   AbbreviatedHash: 4c23918b
@@ -1568,13 +1568,13 @@ gitinfo:
   AbbreviatedHash: 4c23918b
   LastmodDate: 2023-03-05T22:40:50-06:00
 - FilePath: posts/2023/02/some-future-now-css-postscript/index.md
-  Hash: 4c23918be7aa740275ee011a21355e089fc1f8fe
-  AbbreviatedHash: 4c23918b
-  LastmodDate: 2023-03-05T22:40:50-06:00
+  Hash: 4f2f57b9cb87817a17b29d3eedab8c32c302e188
+  AbbreviatedHash: 4f2f57b9
+  LastmodDate: 2023-04-02T10:14:52-05:00
 - FilePath: posts/2023/02/some-future-now-css/index.md
-  Hash: 8ef61c053465e1203ca0c140534f0fef530c5e35
-  AbbreviatedHash: 8ef61c05
-  LastmodDate: 2023-03-07T09:30:31-06:00
+  Hash: 5fc0a5a1b123b37412b0719ec67bf250b70635ba
+  AbbreviatedHash: 5fc0a5a1
+  LastmodDate: 2023-03-31T08:50:03-05:00
 - FilePath: posts/2023/02/still-another-move-mastodon/index.md
   Hash: 4c23918be7aa740275ee011a21355e089fc1f8fe
   AbbreviatedHash: 4c23918b
@@ -1592,9 +1592,9 @@ gitinfo:
   AbbreviatedHash: 4c23918b
   LastmodDate: 2023-03-05T22:40:50-06:00
 - FilePath: posts/2023/03/headers-up-vercel-edition/index.md
-  Hash: ff4aade4b7980b18d3213ef2f060324fbe39ce2b
-  AbbreviatedHash: ff4aade4
-  LastmodDate: 2023-03-30T12:04:50-05:00
+  Hash: 21a32382d22dc914c4bd07db1790c09bd5302196
+  AbbreviatedHash: 21a32382
+  LastmodDate: 2023-04-04T10:52:56-05:00
 - FilePath: posts/2023/03/here-not-there-or-making-styling-behave/index.md
   Hash: 0f68eead23c83c6db6578d60efd41c7156f6b504
   AbbreviatedHash: 0f68eead
@@ -1612,25 +1612,33 @@ gitinfo:
   AbbreviatedHash: fcc3f60a
   LastmodDate: 2023-03-22T13:17:51-05:00
 - FilePath: posts/2023/03/sass-coming-native-css-nesting/index.md
-  Hash: c731eb9885b4680f5d6f851d0b4884193289cf61
-  AbbreviatedHash: c731eb98
-  LastmodDate: 2023-03-30T14:52:42-05:00
+  Hash: c153ae0c1f7a531f3c1fea39f7d0f641dd8293a5
+  AbbreviatedHash: c153ae0c
+  LastmodDate: 2023-04-04T21:04:52-05:00
 - FilePath: posts/2023/03/styling-hugo-site/index.md
-  Hash: afbc7196094314e9cfd14961db8ef242171599e0
-  AbbreviatedHash: afbc7196
-  LastmodDate: 2023-03-27T11:12:16-05:00
+  Hash: fbdc337c42696c2d6d697f5f9fb90b51070d85f7
+  AbbreviatedHash: fbdc337c
+  LastmodDate: 2023-04-02T10:31:16-05:00
 - FilePath: posts/2023/03/time-move-on-nunjucks/index.md
   Hash: 43655cdaa7cbdfc7b056e0a092bcca1af9b6108c
   AbbreviatedHash: 43655cda
   LastmodDate: 2023-03-19T10:20:10-05:00
+- FilePath: posts/2023/04/better-code-image-processing-hugo/index.md
+  Hash: 4cd128b40c403d825d8064ca18a19c3138dd0041
+  AbbreviatedHash: 4cd128b4
+  LastmodDate: 2023-04-05T09:31:30-05:00
+- FilePath: posts/2023/04/better-code-image-processing-hugo/my-pet-cat_3264x2448.jpg
+  Hash: bf33d7b119e42f44fd6d09a638bac6453a6a32c1
+  AbbreviatedHash: bf33d7b1
+  LastmodDate: 2023-04-05T09:29:58-05:00
 - FilePath: posts/_index.md
   Hash: 13758a26c236ebfcd671a5ea68b49a44e800a764
   AbbreviatedHash: 13758a26
   LastmodDate: 2022-06-28T10:32:00-05:00
 - FilePath: privacy/index.md
-  Hash: fb2322c8f2d0c243672dd1e58bc5d8146ec35ce3
-  AbbreviatedHash: fb2322c8
-  LastmodDate: 2023-03-18T10:13:47-05:00
+  Hash: be89079463ba5894ac44a06b51c8dbfa9481db6b
+  AbbreviatedHash: be890794
+  LastmodDate: 2023-04-04T08:06:59-05:00
 - FilePath: search/index.md
   Hash: 3f77039c60e85317882eb403476cec933fbce52e
   AbbreviatedHash: 3f77039c
