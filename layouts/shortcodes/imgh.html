@@ -4,6 +4,8 @@
 {{/*  {{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}  */}}
 {{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
+{{- $holder := "GIP" -}}{{/* default placeholder */}}
+{{- if .Get "holder" -}}{{- $holder = .Get "holder" -}}{{- end -}}
 {{- $phn := false -}}
 {{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
 {{- $hint := "photo" -}}
@@ -20,7 +22,7 @@
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
-	{{- $divClass = print $divClass " imgB-" $imgBd5 "-GIP" -}}
+	{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
 	{{/*
 		The `imgB-`[hash]-GIP` class is
 		generated in a `head` partial;
