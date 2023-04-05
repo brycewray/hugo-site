@@ -36,7 +36,7 @@ This allowed me to apply image-specific `div` styling through a CSS *class*, rat
 <div style="background: linear-gradient(#363636,#c5bac4);">
 ```
 
-While the approaches I described in these two posts definitely worked, they sinned against HTML/CSS Orthodoxy: for each image generated, they defined the background `div`'s unique CSS class inside the **`body` element**, rather than the `head` element as the Web Gods intended. 
+While the approaches I described in these two posts definitely worked, they sinned against HTML/CSS Orthodoxy: for each image generated, they defined the background `div`'s unique CSS class inside the **`body` element**, rather than the `head` element as the Web Gods intended.
 
 I knew this was a bad idea, even though it worked in every browser and environment in which I tested it. As time passed, I considered a possible fix that would involve JavaScript and `appendChild`, but doubted my limited ability to make such code successfully interchange data with the two decidedly *non*-JavaScript image-processing shortcodes. Thus, I let things sit as they were, hoping one day I might get smart enough to fix them.
 
@@ -111,7 +111,7 @@ Then, the revised image-processing shortcode that now handles both GIPs (the def
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
 
 <div class="{{ $divClass }}">
-	<picture data-pagefind-ignore>
+	<picture>
 		<source type="image/webp" srcset="
 		{{- with $respSizes -}}
 			{{- range $i, $e := . -}}
