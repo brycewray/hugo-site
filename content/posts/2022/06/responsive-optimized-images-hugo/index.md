@@ -6,7 +6,7 @@ date: 2022-06-29T08:17:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Note**: Please see the **Update** at the end.
+**Update from the future**: I later made considerable changes to the methods described in this post. So that you'll have a fuller perspective, I suggest you read everything *except* the code here, and only **then** go to [my post about *why* I made the changes](/posts/2023/04/better-code-image-processing-hugo/), where superior code awaits.
 {.box}
 
 If you use any images on your website, you probably know how important it is to make them fully *responsive* and as *optimized* as possible so they provide an optimal user experience, regardless of screen size or connectivity. Fortunately, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) comes with many impressive [image processing capabilities](https://gohugo.io/content-management/image-processing/) which can help you automate this to an amazing degree. Hugo can resize images of all sizes, convert them to multiple different formats, and perform many more image processing feats --- all much more quickly than can any other SSG.
@@ -176,9 +176,9 @@ To invoke `imgh` in Markdown, use it like so[^commentsGo]:
 
 In this case, it produces:
 
-{{< imgh-lqip src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" filter="box" >}}
+{{< imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="LQIP" filter="box" >}}
 
-. . . from the resulting HTML, which shows the automatically created hashed names for the Hugo-generated resized images:
+. . . from HTML like the following, which shows the automatically created hashed names for the Hugo-generated resized images:
 
 ```html
 <div class="relative imgB-b5bc32dfa3c277a7b3e602ebef8c83ca bg-center">
@@ -297,6 +297,3 @@ Even if you don't use `imgh` or anything like it, I hope this article has at lea
 - Tim van Werkhoven, "[Responsive images &amp; image grids for Hugo](https://www.vanwerkhoven.org/blog/2021/responsive_images_in_hugo_theme/)" (<span class="nobrk">2021-10-22</span>).
 - Utkarsh Verma, "[Using responsive images effortlessly with Hugo](https://bitbanged.com/posts/using-responsive-images-effortlessly-with-hugo/)" (<span class="nobrk">2022-03-06</span>).
 - Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (<span class="nobrk">2022-06-19</span>).
-
-**Update, 2023-03-21**: Although this page still uses this shortcode to show the example photo (so you can view the resulting effect and HTML), the site's other bit-mapped images now appear via a shortcode based on [a Hugo feature introduced a few months after this post's original publication](/posts/2022/09/new-way-lqips-hugo-0-104-0/). This method requires fewer auto-generated files yet still provides similar functionality.
-{.box}
