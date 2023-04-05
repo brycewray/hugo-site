@@ -1,5 +1,5 @@
 ---
-title: "Sass and the coming of native CSS Nesting"
+title: "Sass and the coming of native CSS nesting"
 description: "As usual, the devil is in the details."
 author: Bryce Wray
 date: 2023-03-30T14:52:00-05:00
