@@ -27,7 +27,7 @@ Note that `SToot.astro` assumes you have the [`date-fns`](https://github.com/dat
 **Suggestion**: You may want to read my [earlier post about the Hugo static-toots-embedding code](/posts/2022/06/static-mastodon-toots-hugo/), particularly regarding certain limitations which result from how Mastodon itself works.
 {.box}
 
-```js
+{{< labeled-highlight lang="js" filename="SToot.astro" >}}
 ---
 import { format } from "date-fns";
 import md5 from "md5";
@@ -167,4 +167,4 @@ if (Json.poll !== null) {
 		</div>
 	</blockquote>
 }
-```
+{{</ labeled-highlight >}}

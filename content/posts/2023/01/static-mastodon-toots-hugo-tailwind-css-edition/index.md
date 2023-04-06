@@ -45,9 +45,9 @@ perhaps `assets/css/index.css` or
 }
 ```
 
-With all of that understood, here's the Hugo [shortcode](https://gohugo.io/content-management/shortcodes/) I call `stoot.html`:
+With all of that understood, here's the Hugo [shortcode](https://gohugo.io/content-management/shortcodes/):
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="stoot.html" >}}
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
 {{ $handleInst := "" }}
@@ -216,4 +216,4 @@ With all of that understood, here's the Hugo [shortcode](https://gohugo.io/conte
 		{{ end }}
 	{{ end }}
 {{- end -}}
-```
+{{</ labeled-highlight >}}

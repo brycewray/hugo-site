@@ -35,7 +35,7 @@ Using the `stoot.js` shortcode in Markdown brings up the following:
 
 <!--  -->
 
-You can find this shortcode's most current repo version [here](https://github.com/brycewray/eleventy_site/blob/main/src/assets/utils/stoot.js). Invoke it in Markdown as in this example, where the first parameter represents the toot's Mastodon instance and the second represents the toot's numeric ID:
+Invoke the shortcode in Markdown as in this example, where the first parameter represents the toot's Mastodon instance and the second represents the toot's numeric ID:
 
 ```md
 {% stoot "mastodon.social", "108241788606585248" %}
@@ -43,7 +43,7 @@ You can find this shortcode's most current repo version [here](https://github.co
 
 Note that it assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch), [`luxon`](https://github.com/moment/luxon), and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
 
-```js
+{{< labeled-highlight lang="js" filename="stoot.js" >}}
 const EleventyFetch = require("@11ty/eleventy-fetch")
 const md5 = require('md5')
 const { DateTime } = require("luxon")
@@ -201,4 +201,4 @@ module.exports = async (instance, id) => {
 
 	return stringToRet
 }
-```
+{{</ labeled-highlight >}}

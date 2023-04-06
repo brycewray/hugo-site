@@ -31,7 +31,7 @@ Enough talk; on with the GitHub Actions. Of course, each is based on two assumpt
 
 ## For Hugo
 
-```yaml
+{{< labeled-highlight lang="yaml" filename="CI-Hugo-site-to-Firebase.yml" >}}
 name: CI-Hugo-site-to-Firebase
 
 on:
@@ -64,14 +64,14 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           # Other args should come from .firebaserc and firebase.json
-```
+{{</ labeled-highlight >}}
 
 ## For Eleventy
 
 **Note**: Other than obviously not downloading and installing Hugo, this one for Eleventy also was different because, in the `Deploy to Firebase` section, I had to add `npx firebase use default` to make this work with the project, for some reason I don't understand.
 {.box}
 
-```yaml
+{{< labeled-highlight lang="yaml" filename="CI-Eleventy-site-to-Firebase.yml" >}}
 name: CI-Eleventy-site-to-Firebase
 
 on:
@@ -97,4 +97,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           # Other args should come from .firebaserc and firebase.json
-```
+{{</ labeled-highlight >}}

@@ -62,7 +62,7 @@ I'll give you two versions of the `css.html` partial; they vary according to the
 
 First, the version for *external* CSS in production:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="css.html" >}}
 {{ $styles := resources.Get "css/index.css" }}
 {{ $styles = $styles | resources.PostCSS }}
 {{ if hugo.IsProduction }}
@@ -71,11 +71,11 @@ First, the version for *external* CSS in production:
 	{{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
 {{ end }}
 <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
-```
+{{</ labeled-highlight >}}
 
 And then, the one for *internal* CSS in production:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="css.html" >}}
 {{ $styles := resources.Get "css/index.css" }}
 {{ $styles = $styles | resources.PostCSS }}
 {{ if hugo.IsProduction }}
@@ -86,7 +86,7 @@ And then, the one for *internal* CSS in production:
 	{{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) .}}
 	<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
 {{ end }}
-```
+{{</ labeled-highlight >}}
 
 To wrap up, regardless of which `css.html` partial you're using, you now just put the following in your site's `head` and you're home free:
 
@@ -96,7 +96,7 @@ To wrap up, regardless of which `css.html` partial you're using, you now just pu
 
 As before, the `postcss.config.js` file for the project looks like this (with the [`postcss-import`](https://github.com/postcss/postcss-import) package installed, of course):
 
-```js
+{{< labeled-highlight lang="js" filename="postcss.config.js" >}}
 module.exports = {
 	plugins: {
 		'postcss-import': {},
@@ -104,13 +104,13 @@ module.exports = {
 		tailwindcss: {},
 	}
 }
-```
+{{</ labeled-highlight >}}
 
 And, for me, one of the biggest benefits of doing Tailwind-on-Hugo this way is the freedom to ditch the uglified CSS conflagration I described in my earlier post in favor of something similar to this simplified[^importPath] example:
 
 [^importPath]: I still have to include the full project path to each bespoke CSS file for the sake of `postcss-import` (at least it "knows" where the `tailwindcss` files are). I don't know if that would be different if I didn't have `postcss.config.js` in the project root.
 
-```css
+{{< labeled-highlight lang="css" filename="index.css" >}}
 /* the contents of index.css */
 @import '/assets/css/codeblocks.css';
 @import 'tailwindcss/base';
@@ -119,7 +119,7 @@ And, for me, one of the biggest benefits of doing Tailwind-on-Hugo this way is t
 @import '/assets/css/nav.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-```
+{{</ labeled-highlight >}}
 
 .&nbsp;.&nbsp;. with the various CSS components all in their own separate files as I prefer.
 

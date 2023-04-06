@@ -63,7 +63,7 @@ eleventyConfig.addCollection("everything", (collectionApi) => {
 
 Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/docs/config/#directory-for-includes), add a `macros` folder and, within it, an `index.njk` file for holding all your macros. Here's such a file that contains a macro version of the YouTube-embedding code:
 
-```twig
+{{< labeled-highlight lang="jsx" filename="index.njk" >}}
 {%- macro liteYT(videoTitle, videoId) -%}
 	<script src="/assets/js/lite-yt-embed_0-2-0.js"></script>
 <lite-youtube videoid="{{ videoId }}" data-bg="url('https://i.ytimg.com/vi/{{ videoId }}/hqdefault.jpg')" {% if params %} params="{{ params }}"{% endif %}>
@@ -76,7 +76,7 @@ Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/doc
 	</noscript>
 	<p class="ctr legal tightLead"><strong class="red">Note</strong>: Clicking&nbsp;the&nbsp;video constitutes your consent to view&nbsp;it via&nbsp;YouTube (including&nbsp;cookies). To&nbsp;view&nbsp;it on the YouTube&nbsp;site instead, please&nbsp;use&nbsp;<a href="https://www.youtube.com/watch?v={{ videoId }}"  target="_blank" rel="noopener">this&nbsp;link</a>, which&nbsp;opens in&nbsp;a different browser&nbsp;window/tab.</p>
 {%- endmacro -%}
-```
+{{</ labeled-highlight >}}
 
 **Note**: The specific indenting for the `lite-youtube` element, above, is on purpose. I found that, with normal indents applied to this element, the result within the Eleventy HTML after accessing the macro *from within Markdown* could include unexpected `p` elements wrapped around the output, causing less-than-desirable appearances. On the other hand, I didn't encounter this problem if accessing the macro from within another Nunjucks file (more about that kind of macro call further down). I'm guessing the Markdown-related SNAFU is related to how that `lite-youtube` element comes out of its parent JavaScript file.
 {.box}

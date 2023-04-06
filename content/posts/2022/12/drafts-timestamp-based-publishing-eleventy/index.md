@@ -45,7 +45,7 @@ For our purposes here, we'll use `eleventyComputed` to determine each content fi
 
 [^noteReName]: In case you're already `eleventyComputed`-savvy and wonder why this code doesn't include an `eleventyComputed` statement, the name choice precludes that; see [Eleventy issue #1104](https://github.com/11ty/eleventy/issues/1104).
 
-```js
+{{< labeled-highlight lang="js" filename="eleventyComputed.js" >}}
 // annotated contents of:
 // _data/eleventyComputed.js
 
@@ -130,7 +130,7 @@ if (bothModes) {
 		},
 	}
 }
-```
+{{</ labeled-highlight >}}
 
 ## References
 

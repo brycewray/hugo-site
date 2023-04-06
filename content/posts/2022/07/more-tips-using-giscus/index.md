@@ -26,7 +26,7 @@ However, you can get a little more creative and use CSS/SCSS to style these elem
 
 Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-giscus.html` template as of this writing:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="comments-giscus.html" >}}
 <details class="comments">
 	<summary class="ctr pokey">
 		<strong>View/hide comments</strong>
@@ -44,7 +44,7 @@ Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-gi
 		</p>
 	</div>
 </details>
-```
+{{</ labeled-highlight >}}
 
 . . . and the SCSS for the `details` and `summary`:
 

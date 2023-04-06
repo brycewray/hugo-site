@@ -109,7 +109,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 
 [^CCSEO]: Why? Check out the CloudCannon article, "[Hugo SEO Best Practices](https://cloudcannon.com/community/learn/hugo-seo-best-practices/)," to which I contributed.
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="head-meta_cloud-socimg.html" >}}
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
 	{{/* fallback OG image in case we're on the home page */}}
@@ -283,15 +283,15 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 	*/ -}}
 		<meta name="og:image" content="{{ $socImg }}">
 		<meta name="twitter:image" content="{{ $socImg }}">
-```
+{{</ labeled-highlight >}}
 
 ----
 
 ## Update, 2022-10-20
 
-While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs, it's not utterly necessary. For example, here's some [Nunjucks](https://mozilla.github.io/nunjucks) templating for use in Eleventy --- essentially mashing all the `replace` operations into one long line, which to my knowledge isn't possible in Hugo. (To avoid repetition, I haven't annotated it as in the Hugo example above.) This is adapted from [how I did it](https://github.com/brycewray/eleventy_site/blob/main/src/_includes/layouts/partials/head-meta_cloud-socimg.njk) in the [Eleventy version](https://github.com/brycewray/eleventy_site) of this site's repository.
+While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs, it's not utterly necessary. For example, here's some [Nunjucks](https://mozilla.github.io/nunjucks) templating for use in Eleventy --- essentially mashing all the `replace` operations into one long line, which to my knowledge isn't possible in Hugo. (To avoid repetition, I haven't annotated it as in the Hugo example above.)
 
-```twig
+{{< labeled-highlight lang="twig" filename="head-meta_cloud-socimg.njk" >}}
 {% set escapedTitle = title | replace("%", "%2525") | replace(",", "%252C") | replace("/", "%252F") | replace(" ", "%20") | replace(":", "%3A") | replace(";", "%3B") | replace("!", "%21") | replace("?", "%3F") | replace("+", "%2B") | replace("—", "%E2%80%94") | replace("–", "%E2%80%93") | replace(" ", "%C2%A0") | replace("•", "%E2%80%A2") | replace("#", "%23") | replace("(", "%28") | replace(")", "%29") | replace('"', "%22") | replace("“", "%E2%80%9C") | replace("”", "%E2%80%9D") | replace("'", "%27") | replace("‘", "%E2%80%98") | replace("’", "%E2%80%99") | replace("‑", "%E2%80%91") %}
 {% set cloudName = "my-cloud-name" %}
 {%- set titleSize = 96 -%}{# pixels, not points #}
@@ -303,7 +303,7 @@ While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs
 {% set myUploadedBkgd = "my-bkgd-3k4dvaxlzd" %}
 	{# your preferred image's Cloudinary `public ID`, as explained earlier #}
 {% set socImg = ["https://res.cloudinary.com/", cloudName, "/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_", titleWidth, ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:", fontChoice, "_", titleSize, "_center:", escapedTitle, "/", myUploadedBkgd] | join %}
-```
+{{</ labeled-highlight >}}
 
 ----
 

@@ -37,7 +37,7 @@ hugo new posts/2022/09/hugo-like-archetypes-other-ssgs/index.md
 
 This works because, in this example, I already have an `archetypes/posts.md` file with the following content:
 
-```md
+{{< labeled-highlight lang="md" filename="posts.md" >}}
 ---
 title: "TITLE TO COME"
 description: "DESCRIPTION TO COME."
@@ -47,13 +47,13 @@ draft: true
 ---
 
 Text begins here.
-```
+{{</ labeled-highlight >}}
 
 **However**, for those of you using other SSGs, you can do something very similar to this neat shortcut, and without a lot of trouble.
 
 Let's say your SSG's main files live in a `src` directory at the project's top level. This is a standard convention among SSGs. Create a top-level `archetypes/` folder and put within it a file, `posts.md`, with the following content:
 
-```md
+{{< labeled-highlight lang="md" filename="posts.md" >}}
 ---
 title: "TITLE TO COME"
 description: "DESCRIPTION TO COME."
@@ -63,7 +63,7 @@ date: 2022-05-01T11:00:00-05:00
 ---
 
 Text begins here.
-```
+{{</ labeled-highlight >}}
 
 - For `author`, substitute your name for my `# fill in your name` comment.
 - The `draft` item may not necessarily mean anything to your SSG but, in case you *are* using an SSG which distinguishes between drafts and ready-to-publish files, I included `draft` for safety's sake (as a Hugo archetype typically does) so you don't accidentally post anything before you're ready.
@@ -72,14 +72,14 @@ Text begins here.
 **Note to Windows users**: From here on, you're probably best advised to use [WSL](https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10).
 {.box}
 
-Then, in your project's top level, create a shell script, which I'll call `newfile.sh`:
+Then, in your project's top level, create a shell script:
 
-```bash
+{{< labeled-highlight lang="bash" filename="newfile.sh" >}}
 #!/bin/sh
 echo "Provide path/filename in the format: posts/yyyy/mm/filename.md"
 read filepath
 cp -v "archetypes/posts.md" "src/$filepath"
-```
+{{</ labeled-highlight >}}
 
 Of course, feel free to make the `cp -v` line conform to how your site and SSG arrange content. (For a typical [Eleventy](https://11ty.dev) or [Jekyll](https://jekyllrb.com) site, `src/$filepath` should work fine. However, SSGs like [Astro](https://astro.build) and [Next.js](https://nextjs.org) probably expect `src/pages/$filepath`. If necessary, consult your SSG's documentation to make sure you know the right place to target.)
 

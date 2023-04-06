@@ -13,7 +13,7 @@ Now, on to the code.
 
 ### Eleventy RSS
 
-```jinja
+{{< labeled-highlight lang="jinja" filename="index.xml" >}}
 ---json
 {
   "permalink": "/index.xml",
@@ -60,11 +60,11 @@ Now, on to the code.
 		{%- endif -%}
 	{%- endfor %}
 </feed>
-```
+{{</ labeled-highlight >}}
 
 ### Eleventy JSON
 
-```jinja
+{{< labeled-highlight lang="jinja" filename="index.json" >}}
 ---json
 {
   "permalink": "/index.json",
@@ -105,11 +105,11 @@ Now, on to the code.
     {%- endfor %}
   ]
 }
-```
+{{</ labeled-highlight >}}
 
 ### Hugo RSS
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="rss.xml" >}}
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
@@ -155,11 +155,11 @@ Now, on to the code.
     {{ end }}
   </channel>
 </rss>
-```
+{{</ labeled-highlight >}}
 
 ### Hugo JSON
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="index.json" >}}
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := $pctx.RegularPages -}}
@@ -217,7 +217,7 @@ Now, on to the code.
     {{ end -}}
   ]
 }
-```
+{{</ labeled-highlight >}}
 
 **Note**: Of course, if you're already a subscriber to either of my feeds (and, if so, thank you!), you won't see the resulting "Reply via email" link in content that had been pulled into your chosen newsreader app before I implemented these code changes. The only way to see it in older content would be to flush the old posts and then reload them.
 {.box}

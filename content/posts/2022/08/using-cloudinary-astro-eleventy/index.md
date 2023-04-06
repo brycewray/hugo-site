@@ -18,7 +18,7 @@ Feel free to rename the component and shortcode if you wish; their respective na
 
 ## Astro component
 
-The `Imgc.astro` component is available in its most current form [here](https://github.com/brycewray/astro-site/blob/main/src/components/Imgc.astro). You call the component as follows:
+You call the `Imgc.astro` component as follows:
 
 ```md
 <Imgc
@@ -40,7 +40,7 @@ The `Imgc.astro` component is available in its most current form [here](https://
 
 `Imgc` assumes you have the [`axios`](https://github.com/axios/axios) package installed.
 
-```js
+{{< labeled-highlight lang="js" filename="Imgc.astro" >}}
 ---
 import axios from "axios";
 
@@ -128,11 +128,11 @@ let imgBkgd = `url(data:image/jpeg;base64,${LQIP_b64})`;
   <img class={imgClass} src={cloudiBase + xFmPart1 + "600" + xFmPart2 + url} srcset={Srcset} alt={alt} width={width} height={height} sizes={dataSzes} loading={lazyYorN} data-pagefind-ignore />
 </div>
 
-```
+{{</ labeled-highlight >}}
 
 ## Eleventy shortcode
 
-The `imgc.js` shortcode is available in its most current form [here](https://github.com/brycewray/eleventy_site/blob/main/src/assets/utils/imgc.js). You call the shortcode as follows:
+You call the `imgc.js` shortcode as follows:
 
 ```twig
 {% imgc "imagefilename.jpg", "Alt text for the image", 3200, 1800 %}
@@ -154,8 +154,7 @@ Of course, be sure to enable the `imgc` shortcode in your Eleventy config file t
 **Note**: For the most current repo-based form of the SCSS which styles images displayed through the `imgc` shortcode, see [this partial](https://github.com/brycewray/eleventy_site/blob/main/src/styles/_global.scss).
 {.box}
 
-```js
-
+{{< labeled-highlight lang="js" filename="imgc.js" >}}
 const EleventyFetch = require("@11ty/eleventy-fetch")
 const md5 = require('md5')
 
@@ -213,4 +212,4 @@ module.exports = async (url, alt, width, height, phn) => {
 
   return stringtoRet
 }
-```
+{{</ labeled-highlight >}}

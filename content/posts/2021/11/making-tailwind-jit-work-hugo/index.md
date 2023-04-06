@@ -46,11 +46,11 @@ However, there was still more to do.
 
 You see, Juge's post described, and his repo included, a bare-bones Hugo/Tailwind project. The content didn't explain how to make Tailwind JIT work with existing Hugo projects, such as several I had, which included bespoke CSS rules and files *in addition to* those specific to Tailwind CSS. When I tried to convert those projects to use Juge's workaround, I kept running into certain odd glitches.
 
-Here's one such weird thing I encountered, just so you can get the picture. In my [Eleventy](https://11ty.dev)-based/JIT-using repo, I'd used the following `index.css` file[^noKruft] along with the [`postcss-import` plugin](https://github.com/postcss/postcss-import) to combine Tailwind's CSS with my own:
+Here's one such weird thing I encountered, just so you can get the picture. In my [Eleventy](https://11ty.dev)-based/JIT-using repo, I'd used the following file[^noKruft] along with the [`postcss-import` plugin](https://github.com/postcss/postcss-import) to combine Tailwind's CSS with my own:
 
 [^noKruft]: I've edited it slightly for easier reading, especially to remove things I'd commented out or which actually weren't of use (*e.g.*, `purgecss`-related statements, which Tailwind JIT rendered pointless).
 
-```css
+{{< labeled-highlight lang="css" filename="index.css" >}}
 @import 'reset.css';
 @import 'prismjs.css';
 @import 'tailwindcss/base';
@@ -63,7 +63,7 @@ Here's one such weird thing I encountered, just so you can get the picture. In m
 @import 'lite-yt-embed.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-```
+{{</ labeled-highlight >}}
 
 But that approach, or anything remotely like it, just wouldn't fly in the workaround-equipped Hugo repo. Essentially, either (a.) Hugo couldn't get past the Tailwind-related part of the `package.json` scripts or (b.) Tailwind would ignore anything after the `@import 'tailwindcss/base';` statement. Either way, I was hosed.
 

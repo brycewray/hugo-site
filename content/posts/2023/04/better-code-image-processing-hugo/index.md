@@ -66,7 +66,7 @@ Here are the two distinct code blocks involved in this rescue mission.
 
 First, the partial for the `head` (called from within my main `head.html` partial):
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="head-imgs-css.html" >}}
 {{- with .Resources.ByType "image" -}}
 	{{- range . -}}
 		{{- $src := . -}}
@@ -86,11 +86,11 @@ First, the partial for the `head` (called from within my main `head.html` partia
 		</style>
 	{{- end -}}
 {{- end -}}
-```
+{{</ labeled-highlight >}}
 
 Then, the revised image-processing shortcode that now handles both GIPs (the default here) and LQIPs, through the use of a `$holder` variable which specifies the `div`'s background type:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="imgh.html" >}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
@@ -131,7 +131,7 @@ Then, the revised image-processing shortcode that now handles both GIPs (the def
 		<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
 	</picture>
 </div>
-```
+{{</ labeled-highlight >}}
 
 **Note**: For more information on available [`hint`s](https://gohugo.io/content-management/image-processing/#hint) and [`filter`s](https://gohugo.io/functions/images/), refer to the appropriate Hugo documentation.
 {.box}
@@ -142,7 +142,7 @@ As was the case with each of this shortcode's respective predecessors, you invok
 - `alt` --- Suitable `alt` text.
 - *(Optional)* `holder` --- If you don't want to use the default image placeholder, specify the other choice here. In my case, GIP is the default. If you prefer LQIPs, make that your default.
 
-For example, I named the shortcode `imgh.html`, and so here's how I'd use it to have an LQIP for a file called `my-pet-cat_3264x2448.jpg`[^commentsGo]:
+For example, here's how I'd use `imgh.html` to have an LQIP for a file called `my-pet-cat_3264x2448.jpg`[^commentsGo]:
 
 [^commentsGo]: If you happen upon this site's repo out of curiosity and check out this post's Markdown file, you'll notice that this example's curly-bracketed boundaries also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the image. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). This is similar to how [Eleventy](https://11ty.dev), when using [Nunjucks](https://mozilla.github.io/nunjucks/) templating, requires the use of `{% raw %}` and `{% endraw %}` for proper display of code blocks which contain certain combinations of characters. *(Full disclosure: this footnote is 99% recycled from 2021's "[Go big or Go home?](/posts/2021/02/go-big-go-home/)" post, where the same issue came up.)*
 

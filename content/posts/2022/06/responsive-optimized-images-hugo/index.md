@@ -39,7 +39,7 @@ Here's what I built this shortcode to do, based on how I'd used its [Cloudinary]
 
 Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hugo's native image processing, to distinguish this shortcode from its Cloudinary-using counterpart, `imgc.html`):
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="imgh.html" >}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{/*
 	These are breakpoints, in pixels.
@@ -162,7 +162,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 		/>
 	</picture>
 </div>
-```
+{{</ labeled-highlight >}}
 
 ## Use and results
 

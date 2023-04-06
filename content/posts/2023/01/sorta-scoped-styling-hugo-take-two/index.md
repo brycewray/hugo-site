@@ -50,7 +50,7 @@ Here's a simplified[^CFP] version of one of the Hugo "sub`head`" partials, the `
 
 [^CFP]: The real one has stuff specific to my use of a [Content Security Policy](https://content-security-policy.com), so I deleted it from this example in order to limit the visual clutter.
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="head-css-social.html" >}}
 {{- $compOutput := (dict "outputStyle" "compressed") -}}
 
 {{- $cssSocial := "" -}}
@@ -68,7 +68,7 @@ Here's a simplified[^CFP] version of one of the Hugo "sub`head`" partials, the `
 		<link rel="stylesheet" href="{{ $cssSocial.RelPermalink }}" type="text/css">
 	{{- end }}
 {{- end }}
-```
+{{</ labeled-highlight >}}
 
 . . . and here's how the main `head.html` partial calls them all:
 
@@ -106,18 +106,18 @@ Over the next couple of weekends, I put in some more thinking and research about
 
 The first of those, `head-criticalcss.html`, looks like this:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="head-criticalcss.html" >}}
 {{- $css := "" -}}
 {{- $optionsCSSCritical := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
 {{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCritical -}}
 {{- with $css }}
 	<style>{{ .Content | safeCSS }}</style>
 {{- end }}
-```
+{{</ labeled-highlight >}}
 
 And, as for `head-css.html`, it puts **all** those earlier conditionals in one file and gradually builds the external CSS files:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="head-css.html" >}}
 {{- $css := "" -}}
 {{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
 {{- $condition := "" -}}
@@ -186,7 +186,7 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{ end -}}
 {{- end -}}
-```
+{{</ labeled-highlight >}}
 
 **Note**: I've updated this post several times in recent days and, rather than leave inaccurate info in it from my previous efforts, I've chosen to keep only the update you see above.
 {.box}

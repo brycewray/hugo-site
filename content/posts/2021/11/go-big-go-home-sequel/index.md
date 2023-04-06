@@ -15,7 +15,7 @@ You see, I realized the other day that --- “[D'oh](https://simpsons.fandom.com
 
 Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specific syntax therein, please refer to the [original post](/posts/2021/02/go-big-go-home/) and its explanatory links.
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="imgc.html" >}}
 {{/* init the first set of vars */}}
 {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
 {{- $src := .Get "src" -}}
@@ -81,4 +81,4 @@ Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specifi
 		<img class="{{ $nscClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600 {{ $xFmPart2 }}{{ $src }}" alt="{{ $alt }}" />
 	</noscript>
 </div>
-```
+{{</ labeled-highlight >}}

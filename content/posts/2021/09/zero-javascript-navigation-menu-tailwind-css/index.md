@@ -41,9 +41,9 @@ Yeah, I know: that's enough talk. Let's get to the code, **after** I provide jus
 
 ### HTML/Nunjucks (with the Tailwind CSS)
 
-`./src/_includes/layouts/header.njk`
+This belongs in `./src/_includes/layouts/`.
 
-```jinja
+{{< labeled-highlight lang="jinja" filename="header.njk" >}}
 <header class="fixed w-full mt-0 bg-black dark:bg-blue-800 z-[9999]">
 	<nav class="text-white bg-black dark:bg-blue-800">
 		<input type="checkbox" id="nav-Checkbox" class="hidden">
@@ -71,13 +71,13 @@ Yeah, I know: that's enough talk. Let's get to the code, **after** I provide jus
 		</ul>
 	</nav>
 </header>
-```
+{{</ labeled-highlight >}}
 
 ### The other CSS
 
-`./src/assets/css/nav.css`
+This belongs in `./src/assets/css/`.
 
-```css
+{{< labeled-highlight lang="css" filename="nav.css" >}}
 #nav-Checkbox:checked ~ ul.nav-Menu li,
 #nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
 	@apply block;
@@ -88,13 +88,11 @@ Yeah, I know: that's enough talk. Let's get to the code, **after** I provide jus
 #nav-Checkbox:checked ~ ul.nav-Menu {
 	@apply pb-4;
 }
-```
+{{</ labeled-highlight >}}
 
 ### The Tailwind config file
 
-`./tailwind.config.js`
-
-```js
+{{< labeled-highlight lang="js" filename="tailwind.config.js" >}}
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -180,7 +178,7 @@ module.exports = {
 		require('tailwindcss-logical'),
 	], // if we add forms, do it here
 }
-```
+{{</ labeled-highlight >}}
 
 ## There are better ones
 

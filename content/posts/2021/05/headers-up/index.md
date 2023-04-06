@@ -55,7 +55,7 @@ Anyway, here's the Cloudflare Worker[^thanksWorker] I tested successfully during
 
 [^thanksWorker]: This borrows heavily from a somewhat related [Stack Overflow answer](https://stackoverflow.com/a/56069077/) by [Simon_Weaver](https://stackoverflow.com/users/16940/simon-weaver), whose contribution I appreciate tremendously. It also is slightly derivative of some of the [examples](https://developers.cloudflare.com/workers/examples) in the [Cloudflare Workers developer docs](https://developers.cloudflare.com/workers/) --- although I wish they had some simpler ones for folks like me.
 
-```js
+{{< labeled-highlight lang="js" filename="cache-and-headers.js" >}}
 addEventListener('fetch', event => {
 	event.respondWith(handleRequest(event.request))
 })
@@ -87,7 +87,7 @@ async function handleRequest(request) {
 		headers: newHeaders
 	})
 }
-```
+{{</ labeled-highlight >}}
 
 Once you have a Worker in place on your site, you then [specify the *routes*](https://developers.cloudflare.com/workers/platform/routes) on which it'll run. Within a few moments, it'll take effect and the Worker will be doing its thing.
 
@@ -110,4 +110,4 @@ I hoped things would improve with subsequent hits --- *i.e.*, as the Cloudflare 
 
 Some comments I see from time to time on the aforementioned Cloudflare Discord channel suggest that the performance hits I noticed are simply part of the continuing growing pains for Pages, which is still a very new offering and for which I continue to have high hopes --- especially if we get to the point where, as is the case with its competitors, one can easily manage headers and other settings much more simply. Otherwise, it'll never be a [good place for non-nerds to host their sites](/posts/2020/09/normal-persons-guide-static-website-hosting/).
 
-All that said: for those who want to give Pages a try **and** want to have the control over HTTP headers that still isn't available in the product, the Worker shown above will do the job. [I welcome any improvements you can suggest for it.](/contact/)
+All that said: for those who want to give Pages a try **and** want to have the control over HTTP headers that still isn't available in the product, the Worker shown above will do the job. [I welcome any improvements you can suggest for it.](/contact/)

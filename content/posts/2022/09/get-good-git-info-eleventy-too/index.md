@@ -32,7 +32,7 @@ Of course, be sure to enable `gitinfo.js` (or whatever you choose to call it) in
 
 Note that `gitinfo.js` assumes you have installed the [`luxon`](https://github.com/moment/luxon) package, to be used here for formatting dates from Git commit data. (On the other hand, `child_process` is included in [Node.js](https://nodejs.org).) Notice also that you'll have to supply, in the `repoLink` variable, the URL for your online repo's commits.
 
-```js
+{{< labeled-highlight lang="js" filename="gitinfo.js" >}}
 const { DateTime } = require("luxon")
 const childProcess = require('child_process')
 const environment = process.env.NODE_ENV
@@ -85,7 +85,7 @@ module.exports = (pubdate, filename) => {
 
 	return stringToRet
 }
-```
+{{</ labeled-highlight>}}
 
 You may have noticed that the shortcode took two parameters: `pubdate` and `filename`. Here's where the Eleventy-supplied data comes in. Wherever you want the Git data to occur, use the `gitinfo` shortcode as follows:
 

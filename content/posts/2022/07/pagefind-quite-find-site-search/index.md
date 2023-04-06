@@ -36,14 +36,14 @@ npm_config_yes=true npx pagefind --source "public" --serve
 pagefind --source "public" --serve
 ```
 
-For my site, I've created a `buildpf.sh` shell script for use with [Hugo](https://gohugo.io) and Pagefind:
+For my site, I've created a shell script for use with [Hugo](https://gohugo.io) and Pagefind:
 
-```bash
+{{< labeled-highlight lang="bash" filename="buildpf.sh" >}}
 #!/bin/sh
 rm -rf public
 hugo --gc --minify
 npm_config_yes=true npx pagefind --source "public" --serve
-```
+{{</ labeled-highlight >}}
 
 This way, all I have to do is enter `./buildpf.sh` in my chosen terminal app and, within a few seconds, Pagefind is showing me a local dev view of my site, *with* search working, at `http://localhost:1414`.
 
@@ -91,14 +91,14 @@ The [`--bundle-dir` flag](https://pagefind.app/docs/config-options/#bundle-direc
 
 Of course, you should leave the *production* instructions as previously noted; this is for dev purposes only.
 
-Here's a shell script version, `startpf.sh`:
+Here's a shell script version:
 
-```bash
+{{< labeled-highlight lang="bash" filename="startpf.sh" >}}
 #!/bin/sh
 hugo
 npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/_pagefind
 hugo server
-```
+{{</ labeled-highlight >}}
 
 <br />
 

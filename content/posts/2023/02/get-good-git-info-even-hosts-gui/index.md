@@ -46,11 +46,11 @@ Although I didn't try it myself, I'm pretty sure an Eleventy site can do the sam
 
 ## 1. Populate the Git data
 
-Put the following shell script --- which I call `git-get-data.sh` --- at the top level of your Hugo project (I recommend adding it to your `.gitignore` file[^scope]):
+Put the following shell script at the top level of your Hugo project (I recommend adding it to your `.gitignore` file[^scope]):
 
 [^scope]: And don't be tempted, as I was, to incorporate the shell script into your build process on the host so you can automate the data-population there rather than having to do it manually on your local setup. I mean, sure, you can **try**; but it won't work because, again, the host is doing a shallow clone --- and you can't change that, whether through a shell script or an environment variable or any other possibility. Otherwise, there'd be no need for all this foolishness in the first place, right?
 
-```bash
+{{< labeled-highlight lang="bash" filename="git-get-data.sh" >}}
 #!/bin/bash
 rm -rf data/gitoutput.yml # avoid appending to existing file
 echo "Getting git data . . ."
@@ -59,7 +59,7 @@ cd content
 git ls-tree -r --name-only HEAD | while read filename; do
   printf "\055 FilePath: $filename\n$(git log -1 --all --pretty=format:"  Hash: %H\n  AbbreviatedHash: %h\n  LastmodDate: %cI" -- $filename)\n" >> ../data/gitoutput.yml
 done
-```
+{{</ labeled-highlight >}}
 
 **Note**: This will work fine in macOS or Linux; but, if you're using Windows, you'll need to run it in [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).\
 Also, be aware that using `git log`, as this script does, is slow and tends to be pretty rough on your CPU, getting only more so as the size of the examined repo grows.

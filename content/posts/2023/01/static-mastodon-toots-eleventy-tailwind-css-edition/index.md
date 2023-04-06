@@ -47,7 +47,7 @@ This is your project's main CSS file.
 
 With all of that understood, here's the Eleventy [shortcode](https://www.11ty.dev/docs/shortcodes/) I call `stoot.js` (**not** `stoot.njk`, as I erroneously called it in the original version of this post):
 
-```js
+{{< labeled-highlight lang="js" filename="stoot.js" >}}
 const EleventyFetch = require("@11ty/eleventy-fetch")
 const md5 = require('md5')
 const { DateTime } = require("luxon")
@@ -190,4 +190,4 @@ module.exports = async (instance, id) => {
 
 	return stringToRet
 }
-```
+{{</ labeled-highlight >}}

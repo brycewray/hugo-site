@@ -22,7 +22,7 @@ We’ll be bundling two JavaScript files:
 
 The file from which we’ll be bundling is `/assets/js/index.js` (Hugo Pipes processes only files in the Hugo project’s or [theme](https://www.mikedane.com/static-site-generators/hugo/installing-using-themes/)’s `assets` directory):
 
-```js
+{{< labeled-highlight lang="js" filename="index.js" >}}
 /*
 	First, we import the two JS files that
 	we're bundling. The `vanilla-lazyload`
@@ -41,7 +41,7 @@ import './assets/js/instantpage_5-1-0.js'
 var lazyLoadInstance = new LazyLoad({
 	threshold: 150,
 })
-```
+{{</ labeled-highlight >}}
 
 Then, in the [`baseof.html` template](https://gohugo.io/templates/base/#define-the-base-template) on which Hugo will build the site, we’ll instruct `js.Build` to:
 
@@ -50,9 +50,9 @@ Then, in the [`baseof.html` template](https://gohugo.io/templates/base/#define-t
 - [Minify](https://en.wikipedia.org/wiki/Minification_(programming)) the bundle so it’ll load even more quickly, especially after the hosting vendor applies further compression (preferably [Brotli](https://en.wikipedia.org/wiki/Brotli)).
 - [Fingerprint](https://gohugo.io/hugo-pipes/fingerprint/) the bundle with the [SHA-256 cryptographic hash function](https://en.wikipedia.org/wiki/SHA-2), so that its final name contains a long hash **and** changes at build time whenever there’s been any change in the code. This facilitates [browser-side cache-busting](https://javascript.plainenglish.io/what-is-cache-busting-55366b3ac022) for one’s visitors’ benefit. The reason I used SHA-256, the default for this feature in Hugo Pipes, was to enable [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (SRI) and allow me to add the `integrity` part of the `script` call.
 
-Here’s the resulting `baseof.html`:
+Here’s the result:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="baseof.html" >}}
 {{- $options := dict "targetPath" "js/bundle.js" -}}
 {{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint -}}
 
@@ -68,7 +68,7 @@ Here’s the resulting `baseof.html`:
 		<script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
 	</body>
 </html>
-```
+{{</ labeled-highlight >}}
 
 ## Other uses?
 

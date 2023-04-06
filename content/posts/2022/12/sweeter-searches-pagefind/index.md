@@ -50,10 +50,10 @@ In Eleventy, a footnote's HTML begins like this if one is using the most typical
 
 . . . so you'd put this in an Eleventy repo's `pagefind.yml`:
 
-```yaml
+{{< labeled-highlight lang="yaml" filename="pagefind.yml" >}}
 exclude_selectors:
   - "[class='footnote-ref']"
-```
+{{</ labeled-highlight >}}
 
 As for Hugo with its built-in [goldmark Markdown parser](https://github.com/yuin/goldmark) and included Footnote extension, a footnote's HTML begins like this (here, it's the first footnote in a page):
 
@@ -63,10 +63,10 @@ As for Hugo with its built-in [goldmark Markdown parser](https://github.com/yuin
 
 . . . thus needing the following for a Hugo repo's `pagefind.yml`:
 
-```yaml
+{{< labeled-highlight lang="yaml" filename="pagefind.yml" >}}
 exclude_selectors:
   - "[id^='fnref']"
-```
+{{</ labeled-highlight >}}
 
 ### Code blocks
 
@@ -82,11 +82,11 @@ In Eleventy --- assuming one is using the [official Eleventy syntax highlighting
 
 . . . so now our Eleventy `pagefind.yml` will have:
 
-```yaml
+{{< labeled-highlight lang="yaml" filename="pagefind.yml" >}}
 exclude_selectors:
   - "[class='footnote-ref']"
   - "[class^='language']"
-```
+{{</ labeled-highlight >}}
 
 In Hugo and its built-in [Chroma syntax highlighting](https://github.com/alecthomas/chroma), a code block begins with:
 
@@ -96,11 +96,11 @@ In Hugo and its built-in [Chroma syntax highlighting](https://github.com/alectho
 
 . . . which means our Hugo `pagefind.yml` now needs:
 
-```yaml
+{{< labeled-highlight lang="yaml" filename="pagefind.yml" >}}
 exclude_selectors:
   - "[id^='fnref']"
   - "[class='highlight']"
-```
+{{</ labeled-highlight >}}
 <br />
 
 ----

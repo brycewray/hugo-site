@@ -72,7 +72,7 @@ Here's the JavaScript version, on which the Go version was based[^origCode]:
 
 [^origCode]: This is a revised version because the *original* JS provides for an [LQIP-using preview](https://endler.dev/2017/image-previews/), the need for which ended when I [removed hero images](/posts/2021/01/leaner-cleaner/)).
 
-```js
+{{< labeled-highlight lang="js" filename="imgc.js" >}}
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
 var xFmPart1 = 'f_auto,q_auto:eco,w_'
@@ -104,13 +104,13 @@ module.exports = (url, alt, width, height) => {
 
 	return stringtoRet
 }
-```
+{{</ labeled-highlight >}}
 
 ### Then, the Go
 
 Here's the corresponding Go version for Hugo:
 
-```go-html-template
+{{< labeled-highlight lang="go-html-template" filename="imgc.html" >}}
 {{/* init vars */}}
 {{- $respSizes := slice "300" "450" "600" "750" "900" "1050" "1200" "1350" "1500" -}}
 {{- $src := .Get "src" -}}
@@ -152,7 +152,7 @@ Here's the corresponding Go version for Hugo:
 {{- $stringtoRet := printf "%s%s%s%s%s%s%s%s%s%s%s%s" $stringtoRet "<noscript><img class='" $nscClass "' src='" $cloudiBase $xFmPart1 "300" $xFmPart2 $src "' alt='" $alt "' /></noscript></div>" -}}
 
 {{- $stringtoRet | safeHTML -}}
-```
+{{</ labeled-highlight >}}
 
 And, yes: further down, I **am** going to try to explain all that `.Scratch` stuff --- although I must also point you to what pretty much is `.Scratch` canon, namely [Régis Philibert](https://regisphilibert.com)'s article about the subject, "[Hugo .Scratch explained](https://regisphilibert.com/blog/2017/04/hugo-scratch-explained-variable/)." How canonical is it? When you go to Hugo's own [documentation about `.Scratch`](https://gohugo.io/functions/scratch), it points you to that Philibert article so you can get "a detailed analysis"!
 

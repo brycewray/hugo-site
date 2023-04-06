@@ -131,9 +131,7 @@ If you wish, you now can close the `.env` file **and** log out of your GitHub ac
 
 ### The GitHub Action for Netlify
 
-```yaml
-# .github/workflows/netlify-deploy.yaml
-
+{{< labeled-highlight lang="yaml" filename="netlify-deploy.yaml" >}}
 name: Deploy to Netlify
 
 on:
@@ -180,7 +178,7 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID}}
-```
+{{</ labeled-highlight >}}
 
 </details>
 
@@ -251,8 +249,7 @@ If you wish, you now can close the `.env` file **and** log out of your GitHub ac
 
 ### The GitHub Action for Vercel
 
-```yaml
-# .github/workflows/vercel-deploy.yaml
+{{< labeled-highlight lang="yaml" filename="vercel-deploy.yaml" >}}
 name: Deploy to Vercel
 
 on:
@@ -297,7 +294,7 @@ jobs:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
           WORKING_DIRECTORY: 'public'
-```
+{{</ labeled-highlight >}}
 
 </details>
 
@@ -367,8 +364,7 @@ If you wish, you now can close the `.env` file **and** log out of your GitHub ac
 
 ### The GitHub Action for Cloudflare Pages
 
-```yaml
-# .github/workflows/cfp-deploy.yaml
+{{< labeled-highlight lang="yaml" filename="cfp-deploy.yaml" >}}
 
 name: Deploy to Cloudflare Pages
 
@@ -415,7 +411,7 @@ jobs:
 					# use **your** CFP project's name above
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-```
+{{</ labeled-highlight >}}
 
 </details>
 &nbsp;

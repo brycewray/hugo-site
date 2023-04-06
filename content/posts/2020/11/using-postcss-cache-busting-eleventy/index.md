@@ -89,7 +89,7 @@ First, access your chosen command line interface (such as the macOS Terminal app
 
 Then, add the plugin to your `postcss.config.js` file. If you're happy to go with the defaults, that's as simple as adding `require('postcss-hash')` within your `plugins` object --- **but**, for an Eleventy site, you **must** specify the location of the *[manifest](https://en.wikipedia.org/wiki/Manifest_file)* that it produces. I'll explain why in a moment.[^5] In addition, there are other available options. For example, here's my entire `postcss.config.js` file as of this writing:
 
-```js
+{{< labeled-highlight lang="js" filename="postcss.config.js" >}}
 const path = require('path')
 
 module.exports = {
@@ -106,7 +106,7 @@ module.exports = {
 		require('postcss-clean'),
 	],
 }
-```
+{{</ labeled-highlight >}}
 
 Before I get to the `manifest`  option of the `postcss-hash` part, I'll note that:
 - I didn't set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo's default is [SHA-256](https://en.wikipedia.org/wiki/SHA-2)). The documentation specifies a few other options you can set, but I find MD5 to be just fine.
@@ -141,7 +141,7 @@ And *you* don't have to futz with it.
 
 One more thing: if you're given to running your site through various online performance testing, you'll want to make sure your CSS's *caching headers* are set for maximum effect. You can set them pretty far ahead since, again, this process ensures any changes to the CSS will change the filename so that browsers will reload it. How you do such header-setting will depend on how your site's hosted. As of this writing, I'm using [Vercel](https://vercel.com), so I put the following in my site's `vercel.json` file (documentation about the cache-handling settings of which is available [here](https://vercel.com/docs/edge-network/caching)):
 
-```json
+{{< labeled-highlight lang="json" filename="vercel.json" >}}
 {
 	"build": {},
 	"github": {
@@ -186,7 +186,7 @@ One more thing: if you're given to running your site through various online perf
 		}
 	]
 }
-```
+{{</ labeled-highlight >}}
 
 The `2678400` setting means 2,678,400 seconds, which is thirty-one days --- *i.e.*, 3,600 seconds (one hour) &times; 24 &times; 31. That setting gets you good marks from just about any test and, more important, is kind to your visitors and their browsers! However, you can take it as high as you want, because cache-busting has your back.[^6]
 

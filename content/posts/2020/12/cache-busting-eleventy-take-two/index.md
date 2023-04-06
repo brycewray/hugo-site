@@ -28,7 +28,7 @@ While you certainly *can* do everything for your site with just one original CSS
 
 [^fontsCSS]: The only exception is that, during those times when the site is using the [system fonts stack](/posts/2018/10/web-typography-part-2/) rather than any web fonts, the `@import 'fonts.css'` statement isn't there.
 
-```css
+{{< labeled-highlight lang="css" filename="index.css" >}}
 /*! purgecss start ignore */
 @import 'fonts.css';
 @import 'nav.css';
@@ -38,7 +38,7 @@ While you certainly *can* do everything for your site with just one original CSS
 @import 'tailwindcss/components';
 /*! purgecss end ignore */
 @import 'tailwindcss/utilities';
-```
+{{</ labeled-highlight >}}
 
 So what's the problem? Well, that's where I ran into that SNAFU I mentioned with PostCSS Hash. It was initially reported in July, 2018, as that plugin's [Issue #2](https://github.com/dacodekid/postcss-hash/issues/2).
 
