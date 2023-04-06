@@ -681,6 +681,16 @@ code {
 	white-space: normal;
 }
 
+.labeled-highlight {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	line-height: 0.5em;
+}
+.labeled-highlight + div.highlight {
+	margin-top: 0;
+	padding-top: 0;
+}
+
 article code {
 	font-size: 0.975em;
 	--bg-lt: white;
