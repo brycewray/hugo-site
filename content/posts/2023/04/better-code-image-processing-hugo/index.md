@@ -67,7 +67,8 @@ Here are the two distinct code blocks involved in this rescue mission.
 First, the partial for the `head` (called from within my main `head.html` partial):
 
 {{< labeled-highlight lang="go-html-template" filename="head-imgs-css.html" >}}
-{{- with .Resources.ByType "image" -}}
+{{- with .Resources.ByType "image" }}
+	<style media="screen">
 	{{- range . -}}
 		{{- $src := . -}}
 		{{- $imgBd5 := md5 .Name -}}
@@ -79,13 +80,16 @@ First, the partial for the `head` (called from within my main `head.html` partia
 		{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
 		{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
 		{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" -}}
-		<style media="screen">
-			.imgB-{{ $imgBd5 }}-GIP { {{ $BkgdStyleGIP | safeCSS }} }
-			.imgB-{{ $imgBd5 }}-LQIP { {{ $BkgdStyleLQIP | safeCSS }} }
-		</style>
-	{{- end -}}
-{{- end -}}
+		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" }}
+		.imgB-{{ $imgBd5 }}-GIP {
+			{{ $BkgdStyleGIP | safeCSS }}
+		}
+		.imgB-{{ $imgBd5 }}-LQIP {
+			{{ $BkgdStyleLQIP | safeCSS }}
+		}
+	{{- end }}
+	</style>
+{{ end }}
 {{</ labeled-highlight >}}
 
 Then, the revised image-processing shortcode that now handles both GIPs (the default here) and LQIPs, through the use of a `$holder` variable which specifies the `div`'s background type:
