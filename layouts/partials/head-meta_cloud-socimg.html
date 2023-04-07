@@ -1,7 +1,10 @@
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
 {{- $socImg := "" -}}{{- /* init */ -}}
+		<meta name="twitter:site" content="@BryceWray">
+		<meta name="twitter:creator" content="@BryceWray">
 	{{- if .IsHome }}
+		<link rel="me" href="https://twitter.com/BryceWray">
 		<link rel="me" href="https://github.com/brycewray">
 		<title>{{ .Site.Title }}</title>
 		<meta name="description" content="{{ .Site.Params.Description }}">
