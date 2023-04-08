@@ -148,7 +148,7 @@ curl "https://mastodon.social/api/v1/statuses/108241788606585248"
 
 So, now that you know what we're seeking (and its data structure, if you toggled that to the "open" display), let's use Hugo's [`resources.GetRemote` function](https://gohugo.io/hugo-pipes/introduction/#get-resource-with-resourcesget-and-resourcesgetremote) to fetch it. This function requires [Hugo 0.91.0](https://github.com/gohugoio/hugo/releases/tag/v0.91.0) or better.
 
-**Update from the future**: The original version of this code used the [`getJSON` function](https://gohugo.io/templates/data-templates/#get-remote-data) but, a few weeks later, I [learned]([comment](https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687/4)) that it was better to use [`resources.GetRemote`](https://gohugo.io/hugo-pipes/introduction/#get-resource-with-resourcesget-and-resourcesgetremote), instead.
+**Update from the future**: The original version of this code used the [`getJSON` function](https://gohugo.io/templates/data-templates/#get-remote-data) but, a few weeks later, I [learned](https://discourse.gohugo.io/t/error-for-getjson-when-used-with-resources-getresources/39687/4) that it was better to use [`resources.GetRemote`](https://gohugo.io/hugo-pipes/introduction/#get-resource-with-resourcesget-and-resourcesgetremote), instead.
 {.box}
 
 ### The code
