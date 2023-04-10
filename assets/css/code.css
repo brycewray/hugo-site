@@ -50,14 +50,12 @@
 
 /* fallback colors to catch var issues) */
 .chroma *, .code-inline * {
-	color: yellow;
-	color: var(--clr-lt);
+	color: var(--clr-lt, yellow);
 }
 
 @media (prefers-color-scheme: dark) {
 	.chroma *, .code-inline * {
-		color: midnightblue;
-		color: var(--clr-dk);
+		color: var(--clr-dk, midnightblue);
 	}
 } /* Keep this media query up here, rather than with other media queries at end */
 
