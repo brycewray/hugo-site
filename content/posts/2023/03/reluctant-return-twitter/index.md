@@ -21,7 +21,15 @@ I then changed the handle to *@BryceWray*[^TX] and, my anonymity blown, confesse
 
 [^TX]: My recently axed account had the handle *@BryceWrayTX* because, when I created it in early 2014, someone else already had *@BryceWray*. That wasn't the case today.
 
-{{< stoot "mastodon.social" "110067443851612192" >}}
+> \*[Pausing before saying something the crowd won’t like...]\*
+>
+> Seeing that many entities and personal/business contacts whom I’d long followed are still on Twitter — and that many, if not most, likely won’t come to Mastodon no matter what — I am on the birdsite once again.
+>
+> 😞 🤢
+>
+> I surely understand any negative reactions and unfollows that admission may cause here, and I extend sincere apologies to you all. If it helps, I did this reluctantly.
+>
+> <span class="legal">Mar. 22, 2023 • 9:38 AM CDT (2:38 PM UTC)</span>
 
 <!--
 *[Pausing before saying something the crowd won’t like...]*
