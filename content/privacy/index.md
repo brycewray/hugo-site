@@ -30,10 +30,6 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 This site reproduces [Mastodon](https://join.mastodon.org) toots as purely static text and downloaded images with no tracking involved. Each toot is linked to its original location on the applicable Mastodon instance.
 
-## Volument Analytics
-
-This site currently is testing [Volument Analytics](https://volument.com), which [is fully compliant with GDPR, CCPA, PECR, and the European Union's ePrivacy Directive](https://volument.com/comply-with-data-privacy-laws). In fact, [because of ePrivacy](https://volument.com/every-analytics-needs-a-banner), visitors from the EU will see a consent banner.
-
 ## YouTube
 
 This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide [YouTube](https://youtube.com) embeds that respect your privacy. For details concerning how this works, see Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)," on which this site's related templating is based.
