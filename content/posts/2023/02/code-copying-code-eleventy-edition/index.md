@@ -51,8 +51,6 @@ div.highlight {
 }
 ```
 
-Finally, make sure the code **for** your chosen "copy-code" button's HTML is set to appear between the opening `div` and the `pre`/`code` construct, rather than between the `pre` and `code` parts; how you do this will vary according to that code, for which --- as I [noted originally](/posts/2022/05/gems-in-rough-18/#code-for-copying-code) --- there are numerous proposed solutions out there.[^repoExample]
-
-[^repoExample]: As of this writing, the Eleventy version of my "copy-code" button code is viewable [here](https://github.com/brycewray/eleventy_site/blob/main/src/assets/js/copy-code-button.js), while its Hugo version is viewable [here](https://github.com/brycewray/hugo-site/blob/main/assets/js/copy-code-button.js).
+Finally, make sure the code **for** your chosen "copy-code" button's HTML is set to appear between the opening `div` and the `pre`/`code` construct, rather than between the `pre` and `code` parts; how you do this will vary according to that code, for which --- as I [noted originally](/posts/2022/05/gems-in-rough-18/#code-for-copying-code) --- there are numerous proposed solutions out there.
 
 This method ensures that, regardless of whether I'm running the site on Eleventy or Hugo, each of the site's code blocks has a "copy-code" button that **won't** scroll horizontally when the code itself does. If you're an Eleventy user who likes to include code blocks in your site content, perhaps this approach can also improve *your* site's "copy-code" functionality.

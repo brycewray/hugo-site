@@ -13,9 +13,7 @@ So, how'd you like something simpler? Something you can do *strictly* within a [
 
 Here you go.
 
-First, here's a template file derived from[^original] my [`billboard.njk`](https://github.com/brycewray/eleventy_site/blob/main/src/_includes/layouts/partials/billboard.njk):
-
-[^original]: The original, linked template file has a little more text-filtering due to the specific contents in my repo. You might check it to get some idea about how to handle your own special gotchas.
+First, here's a template file derived from my `billboard.njk`:
 
 ```jinja
 {% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
