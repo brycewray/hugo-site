@@ -10,7 +10,15 @@ params:
   # -- for /content/posts/2022/05/webmentions-yes-javascript-no-the-code.md
   # ===========================
   # PublicSans: true # Boolean --- "true" triggers use of em dash space replacements
-  SearchTitle: "Search the site"
+  Titles:
+    Contact: "Want to reach me?"
+    Privacy: "Privacy policy"
+    Search: "Search the site"
+    Home: "Home page"
+    Sitemap: "Sitemap (HTML form)"
+    Postslist: "Posts"
+    FourOhFour: "404 Page not found"
+    About: "About me"
   # ===========================
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
   Deploy: CI # choices are "CI" and "UI" --- re .GitInfo **if enabled**
