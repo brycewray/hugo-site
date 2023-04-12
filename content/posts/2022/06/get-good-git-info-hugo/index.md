@@ -9,9 +9,6 @@ date: 2022-06-01T06:47:00-05:00
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/get-good-git-info-from-hugo-45f8).
 {.box}
 
-**Update from the future**: Although the data and formatting in each page's header differ from what's described in this post, the code blocks contained herein are still accurate and usable.
-{.box}
-
 While reading blog posts from other static site generator (SSG) users, I sometimes see that a post includes a link to the specific [Git commit](https://git-scm.com/docs/git-commit) for that post's most recent update. In this post, I'll show you how to do it in a [Hugo](https://gohugo.io) site, in case you're interested in doing the same. As an additional benefit, it'll automate something you might have been doing manually up to now.
 
 I got the idea yesterday, when I saw a [post](https://www.aleksandrhovhannisyan.com/blog/eleventy-build-info/) from [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/). In it, he gave a fine tutorial about displaying this data in pages built with the [Eleventy](https://11ty.dev/) SSG. Hovhannisyan's method employed JavaScript to fetch the necessary Git data for use by his Eleventy templates.
@@ -30,7 +27,7 @@ I'll get to the part about displaying commit info shortly but, first, let's note
 
 [^manualDates]: [By default](https://gohugo.io/getting-started/configuration/#configure-dates), Hugo will give higher priority to the Git info variable `.Lastmod` *vs.* other possibilities --- including any manual `Lastmod` entries you may have already provided in your content's front matter.
 
-**However**. in production, you will need to deploy your site using a [GitHub Action](https://github.com/features/actions/) (or other CI/CD), as [I've been doing lately](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The problem is that, although these automated `.Lastmod` indications will be correct when you're developing *locally* with `hugo server`, they'll *all* take on the *current* date when you deploy. Fortunately, there's an explanation and solution, from a [thread](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)[^years] on the Hugo Discourse forum:
+**However**, in production, you will need to deploy your site using a [GitHub Action](https://github.com/features/actions/) (or other CI/CD), as [I've been doing lately](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/). The problem is that, although these automated `.Lastmod` indications will be correct when you're developing *locally* with `hugo server`, they'll *all* take on the *current* date when you deploy. Fortunately, there's an explanation and solution, from a [thread](https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480)[^years] on the Hugo Discourse forum:
 
 [^years]: The original question dates from December 25, 2019, but it took another 21 months before an answer, much less *the* answer, appeared. Jeeeez.
 
@@ -45,7 +42,7 @@ This is because (a.) hosts' Git configurations for builds typically are set to 
 **Note from the future**: In testing for a [later article](/posts/2023/02/get-good-git-info-even-hosts-gui/), I found that, in fact, Netlify and [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform) exhibit *deep-clone* behavior where Git is concerned, so you likely can use the information herein with their native UIs rather than having to deploy to them via CI/CD.
 {.box}
 
-After finding this answer, I simply added a `with` section to my GitHub Action's `Checkout default branch` step:
+To make use of this answer in a GitHub Action, you could just add a `with` section to the GitHub Action's `Checkout default branch` step:
 
 ```yaml
    - name: Checkout default branch
@@ -54,9 +51,9 @@ After finding this answer, I simply added a `with` section to my GitHub Action's
        fetch-depth: 0
 ```
 
-. . . and, indeed, that fixed the glitch.
+. . . and, indeed, that fixes the glitch.
 
-Incidentally: I test for whether a post's day of original publication and its "last-modified" day are the same --- *e.g.*, when I fix a typo or otherwise edit something while it's still the same day as when I first issued the post --- and, if so, I show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so this is in each applicable template:
+You might also want to test for whether a post's day of original publication and its "last-modified" day are the same --- *e.g.*, when you fix a typo or otherwise edit something while it's still the same day as when you first issued the post --- and, if so, show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so here's how you could accomplish this in an applicable template:
 
 ```go-html-template
 <p>
@@ -69,16 +66,16 @@ Incidentally: I test for whether a post's day of original publication and its "l
 </p>
 ```
 
-Within the paragraph, if the two are *not* equal (`ne`), I show the "Last modified" statement; otherwise, I just put in a non-breaking space so the height of the line will be the same.
+Within the paragraph, if the two are *not* equal (`ne`), this shows the "Last modified" statement; otherwise, it just inserts a non-breaking space so the height of the line will be the same.
 
 That takes care of Git info for dates; but what about the original subject of this post, namely how you can link to a page's most recent Git commit?
 
-Well, the `.GitInfo` object also provides two variables for each commit's [hash](https://www.mikestreety.co.uk/blog/the-git-commit-hash/): the *full* hash (`.Hash`) and the more familiar *abbreviated* hash (`.AbbreviatedHash`). Adding this within the proper templates is pretty matter-of-fact. In my case, I *display* `.AbbreviatedHash` while the *link* is my repo link plus `/commit/` plus `.Hash`:
+Well, the `.GitInfo` object also provides two variables for each commit's [hash](https://www.mikestreety.co.uk/blog/the-git-commit-hash/): the *full* hash (`.Hash`) and the more familiar *abbreviated* hash (`.AbbreviatedHash`). Adding this within the proper templates is pretty matter-of-fact. The following example *displays* `.AbbreviatedHash` while the *link* is an `exampleuser` repo link plus `/commit/` plus `.Hash`:
 
 ```go-html-template
 <p>
 	{{- if $.GitInfo -}}
-		<strong>Latest commit</strong>: <a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
+		<strong>Latest commit</strong>: <a href="https://github.com/exampleuser/hugo-site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
 	{{- else -}}
 		&nbsp;
 	{{- end -}}
