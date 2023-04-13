@@ -88,6 +88,9 @@ Subsequent tests confirmed that the site, if moved to Vercel, would retain all t
 
 So, if you've considered using Vercel Edge Functions with your non-Next.js project, go ahead and give it your best shot. It may require some hassles before you can make it work, but take heart: it *can* be done.
 
+**Note from the future**: Still more tests later indicated that otherwise identical sites load a bit more quickly, file-by-file, on Cloudflare Pages than on Vercel. One could guess this is because, in the case of the Vercel version, the `middleware.js` file is (as noted earlier) going "outside" Vercel to use Cloudflare Workers --- *vs.* what, for obvious reasons, is likely a more seamless integration between Cloudflare Pages and Cloudflare Workers. Staying in-platform can pay off, all other things being equal.
+{.box}
+
 <!--
 Managed at long last to get non-Next.js Edge Middleware working on Vercel. Had been frustrated in trying to convert a Cloudflare Worker for use with Vercel, mainly to create nonces for a Content Security Policy. Gave it yet another try yesterday and got the sucker to work. 🥳
 
