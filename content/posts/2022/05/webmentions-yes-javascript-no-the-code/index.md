@@ -456,6 +456,6 @@ Now we can bring this baby in for a smooth landing, `end`-ing the overall `with`
 
 ## The whole enchilada?
 
-If you prefer to see the code in one fell swoop rather than the staggered method I've provided above, it's [available at the repo](https://github.com/brycewray/hugo-site/blob/main/layouts/partials/webmentions-rx.html), complete with some comments that will offer some of the same explanations I've provided herein. Of course, it may differ somewhat from what you see in this post, especially as time passes, but the logic should be pretty much the same.
+If you prefer to see the code in one fell swoop rather than the staggered method I've provided above, it's [available at the repo](https://github.com/brycewray/hugo-site/blob/main/.deprecated/layouts/partials/webmentions-rx.html), complete with some comments that will offer some of the same explanations I've provided herein. Of course, it may differ somewhat from what you see in this post, especially as time passes, but the logic should be pretty much the same.
 
 Please [let me know](/contact/) if you need more explanation than I've provided above.
