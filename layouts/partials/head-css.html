@@ -1,6 +1,16 @@
 {{- $css := "" -}}
 {{- $condition := "" -}}
 {{- $fileName := "" -}}
+
+{{- /*
+	save some repetition below
+*/ -}}
+{{- $titleSitemap := .Site.Params.Titles.Sitemap -}}
+{{- $titleHome := .Site.Params.Titles.Home -}}
+{{- $titlePostslist := .Site.Params.Titles.Postslist -}}
+{{- $titleFourOhFour := .Site.Params.Titles.FourOhFour -}}
+{{- $titleSearch := .Site.Params.Titles.Search -}}
+
 {{- $conditionSocial := false -}}
 {{- $conditionCode := false -}}
 {{- $conditionArtCode := false -}}
@@ -22,17 +32,17 @@
 {{- if and (findRE `(<code)` .Content 1) (not (findRE `<div class="highlight"` .Content 1)) -}}{{- $conditionArtCode = true -}}{{- end -}}
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
 {{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
-{{- if (and (ne .Title .Site.Params.Titles.Home) (ne .Title .Site.Params.Titles.Sitemap) (ne .Title .Site.Params.Titles.Postslist) (ne .Title .Site.Params.Titles.FourOhFour)) -}}{{- $conditionBillboard = true -}}{{- end -}}
-{{- if (and (and (ne .Title .Site.Params.Titles.Search) (ne .Title .Site.Params.Titles.Postslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
-{{- if (and (eq .Section "posts") (ne .Title .Site.Params.Titles.Postslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
-{{- if (eq .Title .Site.Params.Titles.Postslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
+{{- if (and (ne .Title $titleHome) (ne .Title $titleSitemap) (ne .Title $titlePostslist) (ne .Title $titleFourOhFour)) -}}{{- $conditionBillboard = true -}}{{- end -}}
+{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
+{{- if (and (eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
+{{- if (eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
 {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
-{{- if (eq .Title .Site.Params.Titles.Home) -}}{{- $conditionHome = true -}}{{- end -}}
-{{- if (eq .Title .Site.Params.Titles.Sitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
-{{- if (ne .Title .Site.Params.Titles.Search) -}}{{- $conditionSearchBtn = true -}}{{- end -}}
-{{- if (eq .Title .Site.Params.Titles.Search) -}}{{- $conditionSearchForm = true -}}{{- end -}}
+{{- if (eq .Title $titleHome) -}}{{- $conditionHome = true -}}{{- end -}}
+{{- if (eq .Title $titleSitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
+{{- if (ne .Title $titleSearch) -}}{{- $conditionSearchBtn = true -}}{{- end -}}
+{{- if (eq .Title $titleSearch) -}}{{- $conditionSearchForm = true -}}{{- end -}}
 {{/*  {{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}  */}}
-{{- if (eq .Title .Site.Params.Titles.FourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
+{{- if (eq .Title $titleFourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
 
 {{- $cssTypes := slice -}}{{/* init big slice */}}
 {{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}

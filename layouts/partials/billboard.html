@@ -17,15 +17,16 @@
 {{- end -}}
 {{- $readingTimeSecsInt := printf "%02v" $readingTimeSecs -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
+{{- $titleSearch := .Site.Params.Titles.Search -}}{{/* DRY-er */}}
 <div class="billboard-div">
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
-		{{- if and .Params.Description (ne .Title .Site.Params.Titles.Search) }}
+		{{- if and .Params.Description (ne .Title $titleSearch) }}
 			<p class="billboard-description-text">
 				{{ .Description }}
 			</p>
 		{{- end }}
-		{{- if (and (ne .Title .Site.Params.Titles.Search) (ne .Title "Want to reach me?") ) -}}
+		{{- if (and (ne .Title $titleSearch) (ne .Title "Want to reach me?") ) -}}
 			<p class="billboard-p-text" data-pagefind-ignore>
 				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 			</p>
