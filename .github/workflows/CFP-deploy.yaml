@@ -1,0 +1,52 @@
+name: Deploy to Cloudflare Pages
+
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci]
+# [ci skip]
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true` or `skip-checks:true`.”
+#
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
+          # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install packages
+        run: npm install
+      - name: Build site with Hugo
+        run: npm run build
+      - name: Publish to CFP
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CFP_API_TOKEN }}
+          accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'static-site'
+          directory: 'public'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
