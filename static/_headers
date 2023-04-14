@@ -1,2 +1,15 @@
 https://:project.pages.dev/*
-	X-Robots-Tag: noindex
+  X-Robots-Tag: noindex
+
+/*
+	Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+	X-Frame-Options: SAMEORIGIN
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1
+	Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+	Report-To: {'group':'default','max_age':31536000,'endpoints':[{'url':'https://brycewray.report-uri.com/a/d/g'}],'include_subdomains':true}
+
+/(.*).(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip)
+	Cache-Control: public, max-age=31536000, immutable
+	CDN-Cache-Control: public, max-age=31536000, immutable
+	X-Content-Type-Options: nosniff
