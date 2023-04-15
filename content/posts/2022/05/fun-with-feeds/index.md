@@ -6,21 +6,6 @@ date: 2022-05-30T13:10:00-05:00
 #initTextEditor: iA Writer
 ---
 
-<strong class="red">Important note</strong>: If you entered "fun with food" or "fun with feed" into Google and it sent you here, I'm sorry, but this page <strong class="red">is not</strong> about food. It's about how to use [web feeds](https://en.wikipedia.org/wiki/Web_feed).\
-\
-<strong class="red">Wichtiger Hinweis</strong>: Wenn Sie „Spaß am Essen“ oder „Spaß am Futter“ in Google eingegeben haben und Sie hierher weitergeleitet wurden, tut es mir leid, aber auf dieser Seite geht <strong class="red">es nicht</strong> um Essen. Es geht um die Verwendung von [Web-Feeds](https://de.wikipedia.org/wiki/RSS_(Web-Feed)).\
-\
-<strong class="red">Belangrijke notitie</strong>: als je 'fun with food' of 'fun with feed' hebt ingevoerd in Google en je bent hierheen gestuurd, sorry, maar deze pagina gaat <strong class="red">niet</strong> over eten. Het gaat over het gebruik van [webfeeds](https://nl.wikipedia.org/wiki/Webfeed).\
-\
-<strong class="red">Nota IMPORTANTE</strong>: si ingresó "diversión con comida" o "diversión con alimentación" en Google y lo envió aquí, lo siento, pero esta página <strong class="red">no es</strong> sobre comida. Se trata de cómo usar [las fuentes web](https://es.wikipedia.org/wiki/Fuente_web).\
-\
-<strong class="red">Nota importante</strong>: se hai inserito "divertimento con il cibo" o "divertimento con il feed" in Google e ti è stato inviato qui, mi dispiace, ma questa pagina <strong class="red">non</strong> riguarda il cibo. Si tratta di come utilizzare i [feed web](https://it.wikipedia.org/wiki/RSS).\
-\
-<strong class="red">Nota importante</strong>: se você digitou “diversão com comida” ou “diversão com alimentação” no Google e ele te enviou aqui, desculpe, mas esta página <strong class="red">não é</strong> sobre comida. É sobre como usar [feeds da web](https://pt.wikipedia.org/wiki/RSS).\
-\
-<strong class="red">Důležitá poznámka</strong>: Pokud jste do Googlu zadali „zábava s jídlem“ nebo „zábava s krmivem“ a poslalo vás to sem, omlouvám se, ale tato stránka <strong class="red">není</strong> o jídle. Jde o to, jak používat [webové zdroje](https://cs.wikipedia.org/wiki/RSS).
-{.box}
-
 If you're not already using a [feed reader app](https://en.wikipedia.org/wiki/RSS), you should start.
 
 Blow off the people telling you it's old technology. So are doorknobs, radios, and commodes. Somehow, I suspect you still use all three, and many other things that are equally Tried And True.
