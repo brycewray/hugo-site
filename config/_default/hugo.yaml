@@ -22,6 +22,7 @@ params:
   # ===========================
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
   EmailObfuscation: "local" # choices are "local" ahd "host"
+  Deploy: "CI" # Boolean --- for Gitinfo from a GHA
   SiteLive: live # Boolean --- used for adapting robots.txt as needed
   Host: "CFP" # choices for Host are "CFP" and "Vercel"
   HostName: "Cloudflare Pages" # choices for HostName are "Cloudflare Pages" and "Vercel"
