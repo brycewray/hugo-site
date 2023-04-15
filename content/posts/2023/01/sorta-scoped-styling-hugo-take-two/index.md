@@ -11,7 +11,7 @@ I gave up on my [earlier](/posts/2022/06/sorta-scoped-styling-hugo/), [Rube Gold
 
 <!--more-->
 
-<strong class="red">Important</strong>: Be sure to check the [**Update** at the bottom](/posts/2023/01/sorta-scoped-styling-hugo-take-two/#update-2023-01-29).
+<strong class="red">Update from the future</strong>: Rather than leave in place my original post supplemented by its subsequent and confusing oh-never-mind-do-it-*this*-way revision, I've reworked this to keep the good parts but throw out the erroneous parts. My apologies to those who were confused in the interim.
 {.box}
 
 ## Anal-ysis
@@ -28,76 +28,19 @@ While all of this worked, I soon abandoned it, as I described in a subsequent up
 
 ## Blind squirrel, meet acorn
 
-Then, a few days ago, while experimenting with a [Tailwind CSS](https://tailwindcss.com) theme for [another post](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/), I stumbled onto a method that also worked **yet** *didn't* require the tags, or the ridiculously large spider's web of Sass files, or the associated hassle. While I initially did it just to limit the size of the Tailwind file, I soon realized it also was a superior, much more idiot-proof way to get the scoped styling I'd previously tried to achieve in Sass.
+Then, while experimenting with a [Tailwind CSS](https://tailwindcss.com) theme for [another post](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/), I stumbled onto a method that also worked **yet** *didn't* require the tags, or the ridiculously large spider's web of styling files, or the associated hassle. While I initially did it just to limit the size of the Tailwind file, I soon realized it also was a much more idiot-proof way to get the scoped styling I'd previously sought.
 
 It broke down like this.
 
-- Based on the Sass partials I'd already been using, I created Hugo `head` partials (sub`head`s, you might say) for each of the following types of content:
-	- Code, both code blocks and inline code (like `this`)
-	- Web fonts
-	- Footnotes
-	- [Home page](/) content
-	- Embeds of YouTube videos
-	- Embeds of [Mastodon](https://joinmastodon.org) content
-	- The site's [HTML sitemap](/sitemap/)
-	- Tables
-- For each such Hugo partial, I used a conditional to identify the content in question. For example, some partials use Hugo's [`findRE` function](https://gohugo.io/functions/findre/) to locate specific HTML output within the [`.Content`](https://gohugo.io/variables/page/#page-variables), while others (such as the one for the home page) check for a page's [`.Title`](https://gohugo.io/variables/page/#page-variables).
-- I converted some Sass partials to regular, standalone Sass files.
-- Each Hugo partial's conditional, if satisfied, would then call the appropriate standalone Sass file and run it through [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to produce the final CSS for the website.
-- Of course, as before, there would be global styling, supplied by two Sass files --- one for the web fonts and one for the remaining globally needed styles. This modular approach will make it easier later, should I decide either to use a different set of web fonts or opt instead for the [system fonts stack](/posts/2018/10/web-typography-part-2/).
+- Decide which styling is sufficiently site-wide as to be considered [critical CSS](https://web.dev/extract-critical-css/), and let a `head-criticalcss.html` partial put it in the `head` as *internal CSS*, thus loading as quickly as possible.[^concat]
+- Create small, modular styling files --- *e.g.*, Sass partials, although this method can be used in vanilla CSS, too --- with rules that are specific to various types of content.
+- In a `head-css.html` partial, use conditionals to identify the content in question within a given page, automatically determining which styling a page does (and doesn't) need. Each conditional, if satisfied, then calls the appropriate modular styling file and runs it through [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to produce the final CSS.
 
-Here's a simplified[^CFP] version of one of the Hugo "sub`head`" partials, the `head-css-social.html` file which looks for Mastodon embeds. The only difference in the conditional between the production output and the local-development (`if .Site.IsServer`) output is that the former is compressed.
+[^concat]: Although Dart Sass's [`@use` rule](https://sass-lang.com/documentation/at-rules/use) makes it easy to access multiple Sass partials from within a `critical.scss` file, Hugo allows you to accomplish roughly the same thing with vanilla CSS. For example, you could put your modular CSS files in `assets/css/partials/`, name them so that alphanumerical sorting will tell Hugo Pipes in which order to process them (such as `001_reset.css`, `010_vars.css`, `020_global.css`, *etc.*), and use the following to concatenate them:\
+`{{ $css := (resources.Match "css/partials/0*.css") | resources.Concat "critical.css" }}`\
+*(Thanks as always to Joe Mooring of the Hugo team for [helping me with this](https://discourse.gohugo.io/t/css-and-import/42901/4).)*
 
-[^CFP]: The real one has stuff specific to my use of a [Content Security Policy](https://content-security-policy.com), so I deleted it from this example in order to limit the visual clutter.
-
-{{< labeled-highlight lang="go-html-template" filename="head-css-social.html" >}}
-{{- $compOutput := (dict "outputStyle" "compressed") -}}
-
-{{- $cssSocial := "" -}}
-{{- $optionsSocial := (dict "transpiler" "dartsass" "targetPath" "css/social.css") -}}
-{{- $optionsSocialComp := merge $optionsSocial $compOutput -}}
-
-{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}
-	{{- if hugo.IsProduction -}}
-		{{- $cssSocial = resources.Get "scss/social.scss" | resources.ToCSS $optionsSocialComp | fingerprint "md5" -}}
-		<link rel="preload" as="style" href="{{ $cssSocial.RelPermalink }}">
-		<link rel="stylesheet" href="{{ $cssSocial.RelPermalink }}" type="text/css">
-	{{- else if .Site.IsServer -}}
-		{{- $cssSocial = resources.Get "scss/social.scss" | resources.ToCSS $optionsSocial | fingerprint "md5" -}}
-		<link rel="preload" as="style" href="{{ $cssSocial.RelPermalink }}">
-		<link rel="stylesheet" href="{{ $cssSocial.RelPermalink }}" type="text/css">
-	{{- end }}
-{{- end }}
-{{</ labeled-highlight >}}
-
-. . . and here's how the main `head.html` partial calls them all:
-
-```go-html-template
-{{- partialCached "head-css-fonts.html" . }}
-{{- partial "head-css-social.html" . -}}
-{{- partial "head-css-code.html" . }}
-{{- partial "head-css-tables.html" . }}
-{{- partial "head-css-lite-yt.html" . }}
-{{- partial "head-css-footnotes.html" . -}}
-{{- partial "head-css-home.html" . -}}
-{{- partial "head-css-sitemap.html" . }}
-{{- partial "head-css-search.html" . }}
-{{- partialCached "head-css.html" . }}
-```
-
-(To save some processing power during development, I can use Hugo's [`partialCached`](https://gohugo.io/functions/partialcached/) function with the first and last entries because they apply to every page on the site and, thus, neither have nor need content-seeking conditionals.)
-
-Unlike the ordeal of months ago, putting all this into practice took literally only a few minutes per each separate type of content (the similarities among the various Hugo partials made it even easier to create new ones), thanks in no small part to the always amazing speed and stability of Hugo.
-
-As for whether the results were worth it: use your browser's Inspector tool as you skim through the site; and notice how the CSS files load, and *which* CSS files load, based on what's on each page. While this isn't (yet) a true [critical CSS](https://web.dev/extract-critical-css/) approach, it shows a dependencies-free way to get closer to one.
-
-----
-
-## *Update, 2023-01-29*
-
-Over the next couple of weekends, I put in some more thinking and research about this. It turns out the better solution is to put the critical CSS in *internal* CSS (wherein the styling is in a `style` block within the `head` section), while loading all the conditional styling as external CSS files.[^critical] Thus, now, my `head.html` template needs only:
-
-[^critical]: Of course, the key to that is identifying which styling truly is critical for every page on the site. I'll likely refine that over time, but some of the easy choices were the nav bar header, footer, and (as of this writing) web fonts. Beyond that --- which is where the ongoing refinements will come into play --- it got a bit more complicated.
+Thus, I added this to my `head.html` partial:
 
 ```go-html-template
 {{- partialCached "head-criticalcss.html" . -}}
@@ -115,7 +58,7 @@ The first of those, `head-criticalcss.html`, looks like this:
 {{- end }}
 {{</ labeled-highlight >}}
 
-And, as for `head-css.html`, it puts **all** those earlier conditionals in one file and gradually builds the external CSS files:
+And, as for `head-css.html`, it puts **all** those earlier conditionals in one file, selecting the correct styling files for Hugo to use on a page:
 
 {{< labeled-highlight lang="go-html-template" filename="head-css.html" >}}
 {{- $css := "" -}}
@@ -187,6 +130,3 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 	{{ end -}}
 {{- end -}}
 {{</ labeled-highlight >}}
-
-**Note**: I've updated this post several times in recent days and, rather than leave inaccurate info in it from my previous efforts, I've chosen to keep only the update you see above.
-{.box}
