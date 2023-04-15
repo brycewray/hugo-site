@@ -21,12 +21,11 @@ params:
     About: "About me"
   # ===========================
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
-  Deploy: CI # choices are "CI" and "UI" --- re .GitInfo **if enabled**
   EmailObfuscation: "local" # choices are "local" ahd "host"
   SiteLive: live # Boolean --- used for adapting robots.txt as needed
-  Host: "CFP" # choices for Host are "CFP" and "Vercel"
-  HostName: "Cloudflare Pages" # choices for HostName are "Cloudflare Pages" and "Vercel"
-  HostURL: "https://pages.cloudflare.com" # choices for HostURL are "https://pages.cloudflare.com" and "https://vercel.com"
+  Host: "Vercel" # choices for Host are "CFP" and "Vercel"
+  HostName: "Vercel" # choices for HostName are "Cloudflare Pages" and "Vercel"
+  HostURL: "https://vercel.com" # choices for HostURL are "https://pages.cloudflare.com" and "https://vercel.com"
   # ===========================
   Domain: "brycewray.com"
   Author: "Bryce Wray"
@@ -42,7 +41,7 @@ ignoreErrors:
 summaryLength: 30 # words --- if you use summaries
 FootnoteReturnLinkContents: "&#8593;"
 enableRobotsTXT: true
-enableGitInfo: true
+# enableGitInfo: true
 
 timeout: "150s" # for the sake of newly generated images and such; default is `30s`
 
