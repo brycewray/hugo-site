@@ -148,7 +148,7 @@ As was the case with each of this shortcode's respective predecessors, you invok
 
 For example, here's how I'd use `imgh.html` to have an LQIP for a file called `my-pet-cat_3264x2448.jpg`[^commentsGo]:
 
-[^commentsGo]: If you happen upon this site's repo out of curiosity and check out this post's Markdown file, you'll notice that this example's curly-bracketed boundaries also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the image. See "[Highlight Hugo/GO Template Code](https://gohugo.io/content-management/syntax-highlighting/#highlight-hugogo-template-code)" in the Hugo documentation. (This is similar to how [Eleventy](https://11ty.dev), when using [Nunjucks](https://mozilla.github.io/nunjucks/) templating, requires the use of `{% raw %}` and `{% endraw %}` for proper display of code blocks which contain certain combinations of characters.)
+[^commentsGo]: If you happen upon this site's repo out of curiosity and check out this post's Markdown file, you'll notice that this example's curly-bracketed boundaries also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the image. See "[Highlight Hugo/GO Template Code](https://gohugo.io/content-management/syntax-highlighting/#highlight-hugogo-template-code)" in the Hugo documentation.
 
 ```md
 {{</* imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="LQIP" */>}}
