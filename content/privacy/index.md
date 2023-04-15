@@ -10,7 +10,9 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 ## Cloudflare
 
-This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
+This site's traffic goes through [Cloudflare](https://cloudflare.com)[^VMW] and is configured to use its Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
+
+[^VMW]: This is true whether the site is hosted on [Cloudflare Pages](https://pages.cloudflare.com) or [Vercel](https://vercel.com); in the latter case, the site uses [Vercel Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware), which [is a "white-labeled" use of Cloudflare Workers](https://news.ycombinator.com/item?id=29003514).
 
 ## Cloudinary
 
