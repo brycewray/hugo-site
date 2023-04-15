@@ -17,7 +17,9 @@
 {{- end -}}
 {{- $readingTimeSecsInt := printf "%02v" $readingTimeSecs -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
-{{- $titleSearch := .Site.Params.Titles.Search -}}{{/* DRY-er */}}
+{{/* DRY-er... */}}
+	{{- $titleSearch := .Site.Params.Titles.Search -}}
+	{{- $titleContact := .Site.Params.Titles.Contact -}}
 <div class="billboard-div">
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
@@ -26,13 +28,14 @@
 				{{ .Description }}
 			</p>
 		{{- end }}
-		{{- if (and (ne .Title $titleSearch) (ne .Title "Want to reach me?") ) -}}
+		{{- if (and (ne .Title $titleSearch) (ne .Title $titleContact) ) -}}
 			<p class="billboard-p-text" data-pagefind-ignore>
 				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 			</p>
 			<p class="ctr legal" data-pagefind-ignore>
-				<a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">Page history</a>{{- if (and (ne .Title .Site.Params.Titles.Contact) (ne .Title .Site.Params.Titles.Privacy) ) -}}<br />Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words{{- end -}}
+				{{- if and ($.GitInfo) (eq "CI" .Site.Params.Deploy) -}}<a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> ({{- if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}{{ .Lastmod.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; {{ end }}<a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">Page history</a>
+				{{- if (and (ne .Title $titleContact) (ne .Title .Site.Params.Titles.Privacu) ) -}}<br />Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words{{- end -}}
 			</p>
-		{{- end -}}
+		{{- end }}
 	</div>
 </div>
