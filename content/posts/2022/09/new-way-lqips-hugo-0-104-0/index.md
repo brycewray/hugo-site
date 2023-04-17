@@ -14,7 +14,7 @@ With today's [release](https://github.com/gohugoio/hugo/releases/tag/v0.104.0) o
 
 As you probably already know, using an LQIP as an image's background allows those with slower connectivity and devices to get at least a representation of a full image while that image is still downloading.
 
-My go-to approach for LQIP-building has been, for each image, to [Base64](https://en.wikipedia.org/wiki/Base64)-encode a tiny version of that image and then load it as the background. The tiny reproduction would obviously be extremely blurred as it was stretched out to the real image's width and height, producing the familiar "blur-up" effect when the real image appeared (fading in via CSS).
+My go-to approach for LQIP-building has been, for each image, to [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)-encode a tiny version of that image and then load it as the background. The tiny reproduction would obviously be extremely blurred as it was stretched out to the real image's width and height, producing the familiar "blur-up" effect when the real image appeared (fading in via CSS).
 
 Then, today, the release of Hugo 0.104.0 added a [`.Colors` method](https://gohugo.io/content-management/image-processing/#colors) to Hugo's existing image-processing capabilities. As the documentation says (and remember that a [*slice*](https://gohugo.io/functions/slice/) is what Hugo, like the [Go](https://go.dev) language on which it is based, calls what most other SSGs and languages call an *array*):
 

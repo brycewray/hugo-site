@@ -15,7 +15,7 @@ Because I keep seeing the appearance of *non*-downsized fonts in the code of mor
 
 *So return with us now to that thrilling post segment of yesteryear&nbsp;.&nbsp;.&nbsp;.[^LoneRanger]*
 
-[^LoneRanger]: H/t to the [fabled intro for *The Lone Ranger*](https://en.wikipedia.org/wiki/Lone_Ranger#Introductions).
+[^LoneRanger]: H/t to the [fabled intro for *The Lone Ranger*](https://www.latimes.com/archives/la-xpm-1993-06-09-ca-1320-story.html).
 
 ## Very Inter-esting
 
@@ -23,7 +23,7 @@ As of the initial publication of this post, this site uses the [Inter font](http
 
 {{< imgh src="2021-09-01_screen-cap_Inter_2164x698.png" alt="Sample of the Inter web font" width=2164 height=698 >}}
 
-The problem is that, due to the vast number of [glyphs](https://en.wikipedia.org/wiki/Glyph) it contains, Inter can be a *really* large download. So you want to make sure you *[subset](https://dev.to/benjaminblack/save-your-users-data-by-subsetting-web-fonts-5eo9)* it, extracting only those parts your site will actually use, and then use your CSS to tell the site to *use* only those parts. This is referring specifically to Inter VF because I think using *just* the variable-font version, which can provide all the styles you want, is more sensible than having to do the following procedure with *multiple* conventional (static) font files:
+The problem is that, due to the vast number of glyphs it contains, Inter can be a *really* large download. So you want to make sure you *[subset](https://dev.to/benjaminblack/save-your-users-data-by-subsetting-web-fonts-5eo9)* it, extracting only those parts your site will actually use, and then use your CSS to tell the site to *use* only those parts. This is referring specifically to Inter VF because I think using *just* the variable-font version, which can provide all the styles you want, is more sensible than having to do the following procedure with *multiple* conventional (static) font files:
 
 1. Download the full variable-font version of Inter ([its repository's "Releases" page](https://github.com/rsms/inter/releases/) should always have the latest). It's a TrueType font (.ttf), but that's OK. In the next step, you'll fix that.
 

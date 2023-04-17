@@ -186,7 +186,7 @@ You probably don't need the `latin-extended` character sets (you already know if
 Now, as promised, here are the reasons why you want to put the date in the .woff2 files’ names:
 
 - From time to time, Google changes these files to provide certain enhancements, so you'll want to repeat this procedure to get the latest and replace them on your site. (You've already got the code in there; just change the respective .woff2 file names.) The date will help you keep track of that. Perhaps more importantly&nbsp;.&nbsp;.&nbsp;.
-- If your site host uses a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), as is true for most [Jamstack](https://jamstack.wtf)-savvy hosts, it'll probably *cache* your assets, including your fonts, for faster delivery. That cache won't change unless your font file names change; so, if you want to update the files, you'll want to vary the names, and --- again --- the date is a handy way to be sure about that.
+- If your site host uses a content delivery network (CDN), as is true for most [Jamstack](https://jamstack.wtf)-savvy hosts, it'll probably *cache* your assets, including your fonts, for faster delivery. That cache won't change unless your font file names change; so, if you want to update the files, you'll want to vary the names, and --- again --- the date is a handy way to be sure about that.
 	You *could* use the original, incomprehensible names if you wish, but I think giving them more human-friendly names while sticking to a naming convention is a lot less headache-inducing.[^3]
 
 ## Hoops dreams

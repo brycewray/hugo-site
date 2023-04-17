@@ -18,7 +18,7 @@ I'd been spoiled by how the site's former SSG, [Eleventy](https://11ty.dev), fam
 
 Still, there's a difference between *accepting* it and *embracing* it.
 
-While transitioning the site from Eleventy back to Hugo, I'd cobbled together a really spaghetti-ish Go version of one particular bit of code on which the site has been depending for some months now. However, the result's inelegance and un-[DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness embarrassed me.
+While transitioning the site from Eleventy back to Hugo, I'd cobbled together a really spaghetti-ish Go version of one particular bit of code on which the site has been depending for some months now. However, the result's inelegance and un-[DRY](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/)-ness embarrassed me.
 
 To be specific: while the original JavaScript code looped nicely through an array to do its thing, the Go code was repeating each part verbatim --- and only because, frankly, it worked and I didn't want to fool with the looping process in Go.
 

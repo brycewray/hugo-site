@@ -77,7 +77,7 @@ As I was still employing regular Google search in the Day Job, using my Google I
 
 Just in case I haven't riled the privacy advocates sufficiently, let me go ahead and really anger them --- and/or make them pity me --- by saying I am not one of those folks who form blood-like drops of sweat on their foreheads worrying about Google's tracking, or the (admitted) truth of "If you're not paying for it, you're the product," or any of the other related issues that one's use of Big G services tends to raise. It's like worrying about my hairline. That sucker went too far beyond a happy border long ago. I can't go back in time before the mid-2000s and suddenly **not** be Google-tracked within an inch of my life. Over. Done.
 
-Of course, maybe the aforementioned folks are right. Perhaps I *am* like those people eating voraciously while on their way to *becoming* food in the classic *Twilight Zone* episode, "[To Serve Man](https://en.wikipedia.org/wiki/To_Serve_Man_(The_Twilight_Zone))." If so, the "anything-but-Google" crowd will have the last laugh. They won't be the first people who were able to tell me,  "Idiot, I told you so," nor will they be the last.
+Of course, maybe the aforementioned folks are right. Perhaps I *am* like those people eating voraciously while on their way to *becoming* food in the classic *Twilight Zone* episode, "[To Serve Man](https://www.imdb.com/title/tt0734684/)." If so, the "anything-but-Google" crowd will have the last laugh. They won't be the first people who were able to tell me,  "Idiot, I told you so," nor will they be the last.
 
 In the meantime, I will muddle on with Google services[^mail] and hope they don't hurt me too badly.
 

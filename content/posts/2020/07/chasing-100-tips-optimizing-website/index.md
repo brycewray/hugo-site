@@ -33,9 +33,9 @@ If you reply, "I don't anticipate attracting visitors from all that far away," c
 
 [^fathom]: I know this thanks to the privacy-respecting smarts of [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate link).
 
-The best scenario is that, regardless of where a visitor may be, they don't have to wait long for your content to load --- especially considering that a disproportionate percentage of visitors from certain nations will be coming in on slower mobile devices and less advanced networks. For those scenarios, you want your content on a [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network).
+The best scenario is that, regardless of where a visitor may be, they don't have to wait long for your content to load --- especially considering that a disproportionate percentage of visitors from certain nations will be coming in on slower mobile devices and less advanced networks. For those scenarios, you want your content on a [content delivery network (CDN)](https://web.archive.org/web/20150905054800/http://www.cdnetworks.com/blog/how-content-delivery-networks-work/).
 
-The good thing is that, if you're hosting your site on [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com/), or [Firebase](https://firebase.google.com/), a fast CDN is part of the deal. However, if you're operating off a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) or a shared-hosting account (see the next item for more on that), try to put your site behind a free account on [Cloudflare](https://www.cloudflare.com/).
+The good thing is that, if you're hosting your site on [Netlify](https://netlify.com), [Vercel](https://vercel.com), [Render](https://render.com/), or [Firebase](https://firebase.google.com/), a fast CDN is part of the deal. However, if you're operating off a [VPS](https://www.techtarget.com/searchitoperations/definition/virtual-private-server-VPS-or-virtual-dedicated-server-VDS) or a shared-hosting account (see the next item for more on that), try to put your site behind a free account on [Cloudflare](https://www.cloudflare.com/).
 
 ### Sharing is bad
 
@@ -69,7 +69,7 @@ You can't go wrong by following the [Web Content Accessibility Guidelines (WCAG)
 
 **Specify sufficient contrast for text**. A web page is no place to be showing light gray text on a white background, or dark gray text on a black background. When you're choosing your site's text and background colors, run everything through one of the great online contrast-checking sites ([WebAIM's](https://webaim.org/resources/contrastchecker/) is my personal favorite). That goes also --- or should I say, especially --- for your link colors!
 
-**Have underlined links**. Speaking of links, yours should have underlining, making them easier to see. I don't use the `text-decoration` method on my site, because I hate text [descenders](https://en.wikipedia.org/wiki/Descender) punching through the underlines; instead, I use CSS to put borders underneath linked text. Regardless of the method you choose, be sure you *do* provide underlining.
+**Have underlined links**. Speaking of links, yours should have underlining, making them easier to see. I don't use the `text-decoration` method on my site, because I hate text descenders (as in the lower-case letters *g* and *q*) punching through the underlines; instead, I use CSS to put borders underneath linked text. Regardless of the method you choose, be sure you *do* provide underlining.
 
 **Provide keyboard equivalents for navigation**. Not everybody has the dexterity to use a pointer device like a mouse or trackpad for navigating around a web page. Make sure all your links, including your nav links, are accessible through the use of tab keys or other keyboard-specific methods.
 
@@ -83,7 +83,7 @@ You can't go wrong by following the [Web Content Accessibility Guidelines (WCAG)
 
 There's a long list of items Lighthouse checks for conformance with "Best Practices." Try to adhere to them all if you can, but comply with the following out of plain ol' common sense.
 
-**Use [HTTPS](https://en.wikipedia.org/wiki/HTTPS)**. When nearly every host makes having `https://` at the head of your URL a freebie through services like [LetsEncrypt](https://letsencrypt.org/), and browsers flag an HTTP-only site as bad news, *not* having HTTPS is dumb. Increasingly, it marks a site as being in a state of neglect.
+**Use [HTTPS](https://web.dev/enable-https/)**. When nearly every host makes having `https://` at the head of your URL a freebie through services like [LetsEncrypt](https://letsencrypt.org/), and browsers flag an HTTP-only site as bad news, *not* having HTTPS is dumb. Increasingly, it marks a site as being in a state of neglect.
 
 **Use [HTTP/2](https://developers.google.com/web/fundamentals/performance/http2)**. If you're **not** using HTTP/2 to begin with, especially since [HTTP/3](https://quicwg.org/base-drafts/draft-ietf-quic-http.html) is on the horizon, you're already behind the curve. HTTP/2 allows more things to download at the same time, helping your performance. Browser support for HTTP/2 is [almost unanimous](https://caniuse.com/#search=HTTP%2F2) at this point.
 

@@ -15,11 +15,11 @@ For just about all of this site's four-plus-year history, its typographical pres
 
 <!--more-->
 
-I've long admired Public Sans, largely because of its similarity to the historic [Franklin Gothic](https://en.wikipedia.org/wiki/Franklin_Gothic) typeface, of which I've been a fan since at least the 1970s. Also, I like how Public Sans handles italicized/oblique text, which --- given my writing style and tendency toward *emphasizing things willy-nilly* --- makes for easier reading.
+I've long admired Public Sans, largely because of its similarity to the historic Franklin Gothic typeface, of which I've been a fan since at least the 1970s. Also, I like how Public Sans handles italicized/oblique text, which --- given my writing style and tendency toward *emphasizing things willy-nilly* --- makes for easier reading.
 
 However, there's a long-standing (and not-soon-to-be-fixed[^PSdash]) [issue](https://github.com/uswds/public-sans/issues/204) with Public Sans regarding excessive padding around its em dash character. For a few weeks, I compensated for it with some coding, such as the following in [Hugo](https://gohugo.io):
 
-[^PSdash]: The issue is [parked](https://github.com/orgs/uswds/projects/6#card-63095574) on the [U.S. Web Design System](https://designsystem.digital.gov/)'s "Roadmap Backlog" [kanban board](https://en.wikipedia.org/wiki/Kanban_board) under the category of "Future Roadmap Work" along with (at this writing) 110 other items, so I have no realistic expectation it'll get fixed any time soon.
+[^PSdash]: The issue is [parked](https://github.com/orgs/uswds/projects/6#card-63095574) on the [U.S. Web Design System](https://designsystem.digital.gov/)'s "Roadmap Backlog" kanban board under the category of "Future Roadmap Work" along with (at this writing) 110 other items, so I have no realistic expectation it'll get fixed any time soon.
 
 ```go-html-template
 {{- $Content := .Content -}}

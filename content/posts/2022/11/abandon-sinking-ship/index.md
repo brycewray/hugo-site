@@ -19,7 +19,7 @@ Finally, yesterday, amid [this week's rising tide of chaos](https://www.cnn.com/
 
 That ended eleven years of Twitter use under two different accounts. The original lived (under me, anyway) 2011--2014, while my final one began as a mainly-for-business-stuff account in 2014 and evolved gradually in 2015 into a just-for-me account, which it remained until its deactivation yesterday.
 
-[Adjournment *sine die*](https://en.wikipedia.org/wiki/Adjournment_sine_die).
+[Adjournment *sine die*](https://www.yourdictionary.com/sine-die).
 
 <!-- **Note**: The original version of this post was based on something I posted on Mastodon(https://fosstodon.org/@BryceWrayTX/109326570119949421).
 {.box} -->

@@ -80,7 +80,7 @@ What do all those scripts do? While the following explanation doesn't cover the 
 
 [^minify]: As you can see in the `prod:hugo` script, we're already minifying the generated HTML in production. Thus, if you're using **internal** CSS, you can get by with just one `devsass`-like script, rather than separate `devsass` and `prodsass` scripts. However, with **external** CSS, you do need both of those scripts.
 
-[^rimraf]: `clean` uses the [`rimraf` package](https://github.com/isaacs/rimraf), a cross-platform version of the [`rm -rf` deletion command](https://en.wikipedia.org/wiki/Rm_(Unix)) from \*n*x-like OSs such as Linux and macOS. Using `rimraf` rather than `rm -rf` provides the same action for users of all platforms, even Windows.
+[^rimraf]: `clean` uses the [`rimraf` package](https://github.com/isaacs/rimraf), a cross-platform version of the [`rm -rf` deletion command](https://man.cat-v.org/unix_8th/1/rm) from \*n*x-like OSs such as Linux and macOS. Using `rimraf` rather than `rm -rf` provides the same action for users of all platforms, even Windows.
 
 To run this in development, type `npm run start` in your terminal. For the build command at your host, set it to `npm run build`.[^hostBuild] **But**, before you do either, there's one more thing to do, and that's giving Hugo the necessary **templating** for all of this to work.
 

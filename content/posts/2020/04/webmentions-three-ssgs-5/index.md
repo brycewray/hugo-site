@@ -13,7 +13,7 @@ date: 2020-04-28T16:50:00-05:00
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.
 {.box}
 
-[Yes, Virginia](https://en.wikipedia.org/wiki/Yes,_Virginia,_there_is_a_Santa_Claus), there *is* an end to this series.
+Yes, Virginia, there *is* an end to this series.
 
 Especially for those of you who took my [Part 1](/posts/2020/04/webmentions-three-ssgs-1/) recommendation to heart and read, or at least skimmed, through it all and in order: I apologize for the length of this series. Still, it could've been worse. I originally wrote it as *one long post* before deciding to break that up into five parts (intro, Eleventy-specific part, Hugo-specific part, Gatsby-specific part, and this wrap-up). When I realized that most people would want this information as it relates to only *one* of these SSGs, I knew I had to break it up into parts.
 

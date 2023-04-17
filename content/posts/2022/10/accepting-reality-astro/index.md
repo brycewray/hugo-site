@@ -33,7 +33,7 @@ In the end, as I told a reader who'd [written](/contact/) to me about this and o
 Working with Astro has (usually) been fun over the last year or so, but it's time I moved on from assuming Astro will work for sites like mine. It's a superb site-building tool, and the sky's the limit for the [company](https://astro.build/blog/the-astro-technology-company/) behind that tool; but the sad reality is that not every tool is intended for every job.
 
 To the wonderful people in the Astro community:\
-*[ad astra](https://en.wikipedia.org/wiki/Ad_astra_(phrase))*, Astronauts. 👋
+*ad astra*, Astronauts. 👋
 
 **Update, 2022-10-10**: [Bjorn Lu](https://github.com/bluwy), a [Vite](https://vitejs.dev/) core team member and Astro "core resident," determined that the "show-stopper" issue is due to an interaction between Vite and Node.js; [his fix](https://github.com/vitejs/vite/pull/10401) should be reflected in a future version of Astro. I'll keep you advised.
 {.box}

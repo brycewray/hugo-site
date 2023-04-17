@@ -44,7 +44,7 @@ Even though "Article excerpt" came in a very poor second, a number of its adhere
 
 As a result, here's what I've done with the site:
 
-- There are now *four* feeds, two in RSS (actually [Atom](https://en.wikipedia.org/wiki/Atom_(web_standard))) format[^Atom] and two in JSON format. Each format has one *primary* feed and one *secondary* feed. All four are linked from the ["Contact" page](/contact/).
+- There are now *four* feeds, two in RSS (actually [Atom](https://www.rfc-editor.org/rfc/rfc4287) format[^Atom] and two in JSON format. Each format has one *primary* feed and one *secondary* feed. All four are linked from the ["Contact" page](/contact/).
 - The two primary feeds are still (a.) at their previous locations (`index.xml` and `index.json`, respectively) and (b.) linked from distinctive icons in the footer. Each primary feed once again includes the *full content* of each post, as was these feeds' setup prior to my turned-out-to-be-temporary shakeup of the last couple of days.
 - Each of the two secondary feeds (either `index-excerpts.xml` or `index-excerpts.json`) includes *only* each post's title, description, and --- you guessed it --- an excerpt.[^credit]
 

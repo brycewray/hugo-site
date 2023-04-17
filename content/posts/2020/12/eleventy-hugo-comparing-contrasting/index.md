@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2020-12-28T11:45:00-06:00
 ---
 
-To quote Mick Jagger and Keith Richards [from over fifty years ago](https://en.wikipedia.org/wiki/You_Can%27t_Always_Get_What_You_Want):
+To quote Mick Jagger and Keith Richards [from over fifty years ago](https://genius.com/The-rolling-stones-you-cant-always-get-what-you-want-lyrics):
 
 > You can't always get what you want<br />
 > But if you try sometimes, well, you might find<br />
@@ -21,7 +21,7 @@ Well, if you're one of those "normal people" for whom I wrote [two](/posts/2020/
 
 *(By the way: from here on, I'll conceitedly assume you've already read those two articles; so, if you haven't, please check them out first.)*
 
-So, in the spirit of [another, much older song](https://en.wikipedia.org/wiki/Anything_You_Can_Do_(I_Can_Do_Better)): let's see where each SSG can say to the other, "Anything you can do, I can do better.”[^legalLyricsAYCDICDB] And, please understand, I **don't** pretend this constitutes an exhaustive list in any way. Instead, these are just the things that strike me as likely to matter to you, based on over two years of using Hugo and about a year-and-a-half of using Eleventy (off-and-on in both cases).
+So, in the spirit of [another, much older song](https://genius.com/Original-broadway-cast-of-annie-get-your-gun-anything-you-can-do-lyrics): let's see where each SSG can say to the other, "Anything you can do, I can do better.”[^legalLyricsAYCDICDB] And, please understand, I **don't** pretend this constitutes an exhaustive list in any way. Instead, these are just the things that strike me as likely to matter to you, based on over two years of using Hugo and about a year-and-a-half of using Eleventy (off-and-on in both cases).
 
 [^legalLyricsAYCDICDB]: "Anything You Can Do (I Can Do Better),"  written by Irving Berlin. Lyrics &copy; BMG Rights Management, Concord Music Publishing LLC.
 
@@ -112,7 +112,7 @@ Hugo has theming, and Eleventy doesn't. By selecting one of the many available [
 
 ### Time zone handling
 
-This one may seem trivial (even [OCD](https://iocdf.org/about-ocd/)-ish) to you, but Hugo accepts your post dates and times *as you specify them* in your content's front matter. By contrast, Eleventy defaults to [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), so you have to get into its configuration to work around that. Since I often am writing and posting articles late at night here in Texas but in the early morning according to UTC, I appreciate this degree of control. I want something dated December 31, 2020, according to where I was when I posted it, to *appear* with that date --- even if I posted it at a second before midnight Central Standard Time (5:59:59 AM on January 1, 2021, in UTC).
+This one may seem trivial (even [OCD](https://iocdf.org/about-ocd/)-ish) to you, but Hugo accepts your post dates and times *as you specify them* in your content's front matter. By contrast, Eleventy defaults to UTC, so you have to get into its configuration to work around that. Since I often am writing and posting articles late at night here in Texas but in the early morning according to UTC, I appreciate this degree of control. I want something dated December 31, 2020, according to where I was when I posted it, to *appear* with that date --- even if I posted it at a second before midnight Central Standard Time (5:59:59 AM on January 1, 2021, in UTC).
 
 ## Where Eleventy beats Hugo
 

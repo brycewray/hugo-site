@@ -36,7 +36,7 @@ Before I give you the particulars, please be aware that I didn't come up with th
 ### Important notes
 
 -  As with all things computer-file-system-ish, you should **[have an ongoing backup](/posts/2019/02/back-up-jack/) before you do any of this**.
-- This is prior to the release of [macOS Big Sur](https://en.wikipedia.org/wiki/MacOS_Big_Sur) and thus is based on where you find things in its predecessor, [macOS Catalina](https://en.wikipedia.org/wiki/MacOS_Catalina); so please adjust accordingly.
+- This is prior to the release of macOS Big Sur and thus is based on where you find things in its predecessor, macOS Catalina; so please adjust accordingly.
 - This presumes you **do** have your Mac desktop and **Documents** folders set to be stored in iCloud Drive, which has been the macOS default for the last few years; but, if you **don't**, there's no need to follow this procedure. You're already good to go.\
 (If you want to check, just use the Mac Finder to navigate to **iCloud Drive** and see whether it contains **Desktop** and **Documents** folders that **aren't** empty. If so, this procedure is valid for you.)
 - This also presumes you've **already** [deactivated the **Optimize Mac Storage** feature](https://tidbits.com/2016/11/10/how-to-turn-off-sierras-optimized-storage/). If not, **don't** try this procedure. Instead, perform **that** change first and let the necessary resulting downloads occur. (It might take quite a while, which is what we're trying to avoid with this procedure.)

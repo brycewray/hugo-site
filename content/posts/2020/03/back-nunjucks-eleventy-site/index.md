@@ -11,7 +11,7 @@ As even a casual perusal of some recent posts to this site could easily make cle
 
 For those of you who have no clue what that means and/or why you should give a rip, here's an extremely simplified explanation.
 
-Adding content to an SSG-generated[^SSGgen] website like this one usually involves giving the SSG a plain-text file, which the SSG then runs through a template to transform it into a web page. For example, the template may look like the bare bones of the [HTML](https://en.wikipedia.org/wiki/html) for a web page but with one or more special "placeholder" variables for the plain-text file's content. When the SSG does its thing, it turns this combination of the plain-text file and template into web content.
+Adding content to an SSG-generated[^SSGgen] website like this one usually involves giving the SSG a plain-text file, which the SSG then runs through a template to transform it into a web page. For example, the template may look like the bare bones of the HTML for a web page but with one or more special "placeholder" variables for the plain-text file's content. When the SSG does its thing, it turns this combination of the plain-text file and template into web content.
 
 [^SSGgen]: Saying "SSG-generated" is like saying "ATM machine" or "PIN number," but I think it's clearer and more accurate than saying "SSG-based."
 

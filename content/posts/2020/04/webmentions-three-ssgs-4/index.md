@@ -25,7 +25,7 @@ One good thing you can say about Gatsby: because of its great popularity, you ha
 
 I knew that [Chris Biscardi](https://www.christopherbiscardi.com/post/building-gatsby-plugin-webmentions) had created [gatsby-plugin-webmention](https://www.npmjs.com/package/gatsby-plugin-webmention) for the express purpose of fetching webmentions from [webmention.io](https://webmention.io/) and exposing them to Gatsby's [GraphQL data layer](https://www.gatsbyjs.org/docs/graphql-concepts/), from which one should be able to query for the numerous levels of appropriate content.
 
-Still, handling the webmention.io token as an [environment variable](https://en.wikipedia.org/wiki/Environment_variable) in Gatsby was tricky because I had to do two things to make the plugin send the appropriate token:
+Still, handling the webmention.io token as an environment variable in Gatsby was tricky because I had to do two things to make the plugin send the appropriate token:
 
 - Instead of having just one `/.env` file, I had to have separate `/.env.development` and `/.env.production` files, which allowed me to specify in the plugin-specific code in [`/gatsby-config.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/gatsby-config.js) that it should find the token in the [`process.env` global variable](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7) that [Node.js](https://nodejs.org/) uses to determine the current working environment, development or production.[^RegularEnv] As with the standalone `/.env` file I mentioned earlier in the series, you should **not** source-control these files.
 
@@ -59,7 +59,7 @@ For each possible `wm-property` (or `wmProperty`, as GraphQL and Gatsby [have to
 
 And where did this code go? Well, therein lies another tale about how I achieved workable (if ugly) code in the first place.
 
-Like most if not all of the other major SSGs, Gatsby is designed to encourage separating code into parts, specifically *components* in the [React](https://reactjs.org)-based Gatsby's case. The idea is for you to use multiple layout pieces --- "partials," in [Hugo-ese](https://gohugo.io/templates/partials/#readout). This makes it easier to re-use stuff like headers and footers wherever they're needed, thus pleasing the all-hallowed [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) Gods.
+Like most if not all of the other major SSGs, Gatsby is designed to encourage separating code into parts, specifically *components* in the [React](https://reactjs.org)-based Gatsby's case. The idea is for you to use multiple layout pieces --- "partials," in [Hugo-ese](https://gohugo.io/templates/partials/#readout). This makes it easier to re-use stuff like headers and footers wherever they're needed, thus pleasing the all-hallowed [DRY](https://web.archive.org/web/20131204221336/http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself) Gods.
 
 **However**, with Gatsby, as is true for most other React-based platforms, this is taken even further. You might say the Gatsby way involves "partials [all the way down](https://en.wikipedia.org/wiki/Turtles_all_the_way_down)." Even so, that's usually fine; you just call each piece as needed, right?
 

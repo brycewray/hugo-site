@@ -23,7 +23,7 @@ My initial reaction was: well, that’s surely cool, but I doubt I’ll ever nee
 > <span class="pokey">9:21 PM • December 10, 2021 (UTC)</span>
 <!-- https://twitter.com/regisphilibert/status/1469417024518565900 -->
 
-And, lo and behold, it hit me this morning: this new ability by Hugo to fetch remote stuff meant, now, I could use [Base64](https://en.wikipedia.org/wiki/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs) in my image-handling shortcode (most recently described in “[Go big or Go home? The sequel](/posts/2021/11/go-big-go-home-sequel/)”).
+And, lo and behold, it hit me this morning: this new ability by Hugo to fetch remote stuff meant, now, I could use [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)-encoded [low-quality image placeholders](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) (LQIPs) in my image-handling shortcode (most recently described in “[Go big or Go home? The sequel](/posts/2021/11/go-big-go-home-sequel/)”).
 
 So what, you say? Well, this is what: now, the shortcode could ***halve*** its image-related [HTTP requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) to my free [Cloudinary](https://cloudinary.com) account.[^2] [Since HTTP requests are render-blocking, it’s always better to have fewer of them](https://blog.hubspot.com/marketing/reduce-http-requests).
 

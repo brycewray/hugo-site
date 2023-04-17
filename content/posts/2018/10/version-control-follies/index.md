@@ -7,9 +7,9 @@ date: 2018-10-06T08:30:00-05:00
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don't feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving web pages are much better now, and are continuing to improve.
 
-However, one aspect of them probably won't improve any time soon, and that's the dreaded thing known as [*version control*](https://en.wikipedia.org/wiki/Version_control), usually accomplished through [Git](https://git-scm.com) commands. Now, mind you, I would never say a bad thing about version control. It's wonderful to have when a SNAFU occurs in one or more parts of your site and you can just use a simple command to roll back to a more pristine setup.
+However, one aspect of them probably won't improve any time soon, and that's the dreaded thing known as *version control* (or *source control*), usually accomplished through [Git](https://git-scm.com) commands. Now, mind you, I would never say a bad thing about version control. It's wonderful to have when a SNAFU occurs in one or more parts of your site and you can just use a simple command to roll back to a more pristine setup.
 
-No, the problem is that "simple command" part. Just as [the cake is a lie](https://knowyourmeme.com/memes/the-cake-is-a-lie), so, too, is the idea that it's just like falling off a log to use Git commands. Yet, when you read many how-to articles about working with an SSG to do a website, you keep seeing examples that are replete with Git commands entered through a [*command-line interface* (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
+No, the problem is that "simple command" part. Just as [the cake is a lie](https://knowyourmeme.com/memes/the-cake-is-a-lie), so, too, is the idea that it's just like falling off a log to use Git commands. Yet, when you read many how-to articles about working with an SSG to do a website, you keep seeing examples that are replete with Git commands entered through a *command-line interface* (CLI).
 
 ## An obligatory break for pseudo-nostalgia
 

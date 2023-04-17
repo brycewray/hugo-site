@@ -33,7 +33,7 @@ Kinlan's code took a different approach: rather than fetching and then aggregati
 
 Or, at least it would if it *could* fetch the webmentions from webmention.io. And therein lay the biggest problem I faced with the Hugo repo.
 
-You see, one thing you have to "present" to webmention.io to "prove" that your site "deserves" to grab the webmentions is an *authentication token*. In the Eleventy site, you can easily handle this by creating a file, `/.env`, for storing such so-called [*environment variables*](https://en.wikipedia.org/wiki/Environment_variable) out of sight (**don't** source-control such a file; instead, add it to your `.gitignore`) but exposing them to other code through generic names such as `WEBMENTION_IO_TOKEN`. In an SSG like Eleventy or Gatsby that uses [Node.js](https://nodejs.org), that works because of a widely used [npm](https://npmjs.com) package called [`dotenv`](https://www.npmjs.com/package/dotenv).[^EnvVarsGatsby]
+You see, one thing you have to "present" to webmention.io to "prove" that your site "deserves" to grab the webmentions is an *authentication token*. In the Eleventy site, you can easily handle this by creating a file, `/.env`, for storing such so-called *environment variables* out of sight (**don't** source-control such a file; instead, add it to your `.gitignore`) but exposing them to other code through generic names such as `WEBMENTION_IO_TOKEN`. In an SSG like Eleventy or Gatsby that uses [Node.js](https://nodejs.org), that works because of a widely used [npm](https://npmjs.com) package called [`dotenv`](https://www.npmjs.com/package/dotenv).[^EnvVarsGatsby]
 
 [^EnvVarsGatsby]: But Gatsby still made it, um, interesting, as you'll see in [Part 4](/posts/2020/04/webmentions-three-ssgs-4/).
 

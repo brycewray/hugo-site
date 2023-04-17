@@ -20,7 +20,7 @@ Not gonna pull that one on ya.
 
 You *can* do it with just a `webpack.config.js` file --- one to rule them all, so to speak --- but just about all the best-practices-kinda-stuff you'll see says to set things up as follows, so that's what I'm telling you, too:[^configNames]
 
-[^configNames]: You can call them whatever you want as long as each ends with a *.js* extension, but using names like these adheres sufficiently to standards-of-sorts that, when you look at other people's code, you'll probably find the examples more helpful than if you go into "[Silly Walks](https://en.wikipedia.org/wiki/The_Ministry_of_Silly_Walks)" mode and call them *fred.js*, *wilma.js*, and *pebbles.js*, or somesuch.
+[^configNames]: You can call them whatever you want as long as each ends with a *.js* extension, but using names like these adheres sufficiently to standards-of-sorts that, when you look at other people's code, you'll probably find the examples more helpful than if you go into "[Silly Walks](https://www.theguardian.com/culture/2014/jul/01/john-cleese-mick-jagger-monty-python-silly-walks-funny)" mode and call them *fred.js*, *wilma.js*, and *pebbles.js*, or somesuch.
 
 - `webpack.dev.js` --- Contains only config code for *development*. Or, to put it another way: the code in this file is *not* intended for when you actually build your site on, say, [Netlify](https://www.netlify.com). [See my site's `webpack.dev.js` file here](https://github.com/brycewray/eleventy_bundler/blob/master/webpack.dev.js).
 

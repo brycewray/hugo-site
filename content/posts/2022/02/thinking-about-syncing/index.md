@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2022-02-04T10:03:00-06:00
 ---
 
-I’ve spent the last few weeks researching cloud [sync](https://en.wikipedia.org/wiki/File_synchronization) for my own setup, which is macOS-based. Here are some of my conclusions, just in case they may be of use to anyone else.
+I’ve spent the last few weeks researching cloud sync for my own setup, which is macOS-based. Here are some of my conclusions, just in case they may be of use to anyone else.
 
 ---
 

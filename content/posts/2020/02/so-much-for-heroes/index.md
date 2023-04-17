@@ -41,7 +41,7 @@ When I saw that some of the files actually were *larger* in WebP format --- espe
 
 It didn't take long to find out.
 
-I won't get into all the details, but the skinny on why the WebP images *weren't* always skinnier than their counterparts is that, simply put, you can't run an already-[lossy](https://techterms.com/definition/lossy) JPG or PNG file through the conversion to an also-lossy WebP file and *not* get a fatter file. This was especially true for images with a lot of [specular highlights](https://en.wikipedia.org/wiki/Specular_highlight)[^granular]; sometimes they *really* ballooned, because the conversion process went ape on those tiny details, adding many more pixels.
+I won't get into all the details, but the skinny on why the WebP images *weren't* always skinnier than their counterparts is that, simply put, you can't run an already-[lossy](https://techterms.com/definition/lossy) JPG or PNG file through the conversion to an also-lossy WebP file and *not* get a fatter file. This was especially true for images with a lot of [specular highlights](https://www.photokonnexion.com/definition-specular-highlights/)[^granular]; sometimes they *really* ballooned, because the conversion process went ape on those tiny details, adding many more pixels.
 
 [^granular]: Examples of images that were especially problematic for this reason: road surfaces (because little bits of light gravel and other shiny crud appeared); and sunlit beach sand (because you could see individual sand granules, pebbles, and the like).
 
@@ -55,9 +55,9 @@ This was particularly true for nearly all of the stock images. For each, I had--
 
 One. At. A. Time.
 
---- and, often, with different settings for each. (By the way, I had no way of knowing that even the largest image offered by the vendor hadn't already been processed somehow. After all, these were JPG or PNG files, not [raw](https://en.wikipedia.org/wiki/Raw_image_format) files.)
+--- and, often, with different settings for each. (By the way, I had no way of knowing that even the largest image offered by the vendor hadn't already been processed somehow. After all, these were JPG or PNG files, not [raw](https://www.loc.gov/preservation/digital/formats/fdd/fdd000241.shtml) files.)
 
-It got worse. Often, I also had to convert the WebP version of a stock image at only *twenty or thirty percent quality* to achieve a smaller file size. To the credit of the WebP format, that ugly process *didn't* result in the horrible, [artifact](https://en.wikipedia.org/wiki/Compression_artifact)-laden mess you'd get if you reduced other formats’ files to so low a quality. Still, it was visibly not as clear as the JPG or PNG, especially when I compared the two on a high-resolution display.[^workLoRes]
+It got worse. Often, I also had to convert the WebP version of a stock image at only *twenty or thirty percent quality* to achieve a smaller file size. To the credit of the WebP format, that ugly process *didn't* result in the horrible, artifact-laden mess you'd get if you reduced other formats’ files to so low a quality. Still, it was visibly not as clear as the JPG or PNG, especially when I compared the two on a high-resolution display.[^workLoRes]
 
 [^workLoRes]: A WebP converted at such low quality looked passable on the old low-resolution monitor at work, but on the double- or triple-quality displays commonly used by today's smartphones, much less my iMac's 5K display --- not so much.
 
@@ -75,7 +75,7 @@ However, in the early hours of yesterday morning, I revisited something I'd play
 
 I'd thought about it before because, frankly, I had tired of always having to find some stock photo to illustrate each and every post, particularly since I had to stick to free stock photos --- yeah, right, the same free stock photos everyone else uses. And it's not as if I could always find an image that both fit the "hole" I had to give it and had at least some relation to the subject of the post.
 
-Besides, as I kept telling myself: "Dude, what few people you have visiting here from time to time *don't* come here looking for the Picture of the Day. They come here looking for *information*. For *words*. If you want to stick images *inside* certain posts to *illustrate points*, that's a totally different matter.[^postsImgs] But this ain't [*Life Magazine*](https://en.wikipedia.org/wiki/Life_(magazine))."
+Besides, as I kept telling myself: "Dude, what few people you have visiting here from time to time *don't* come here looking for the Picture of the Day. They come here looking for *information*. For *words*. If you want to stick images *inside* certain posts to *illustrate points*, that's a totally different matter.[^postsImgs] But this ain't [*Life Magazine*](https://web.archive.org/web/20110127201828/http://www.time.com/time/magazine/article/0,9171,756798,00.html)."
 
 [^postsImgs]: As of the day this was first posted, those posts with included images are: "[The client is too smart for you](/posts/2018/10/client-too-smart/)”; "[Readable web type, pretty please](/posts/2018/10/web-typography-part-1/)”; "[A stacked deck](/posts/2018/10/web-typography-part-2/)”; "[Blox sux](/posts/2019/01/blox-sux/)”; "[iA for IO?](/posts/2019/02/ia-for-io/)”; "[Why I left Ulysses](/posts/2019/04/why-left-ulysses/)”; "[Ahoy, 'Mate](/posts/2019/06/ahoy-mate/)”; "[Independence](/posts/2019/07/independence/)”; and "[Roger, Copy](/posts/2019/07/roger-copy/).”
 

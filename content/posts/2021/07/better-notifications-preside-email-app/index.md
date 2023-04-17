@@ -25,7 +25,7 @@ Of the five synchronization methods Preside does offer, *private remote sync* is
 
 Private remote sync in Preside, which requires a free [preside.io account](https://preside.io/PremiumFAQ.html#PresideAccounts)[^premium], involves your using the [PresideNotify](https://github.com/richwaters/PresideNotify) tools in one of these three setups:
 
-- A combination of the Mac's native Apple Mail app and [AppleScript](https://en.wikipedia.org/wiki/AppleScript).
+- A combination of the Mac's native Apple Mail app and [AppleScript](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html).
 - A [Python](https://www.python.org/) script running on a remote server.
 - A combination of the MailMate app and a *MailMate bundle* (see the [Mailmate bundle documentation](https://github.com/mailmate/mailmate_manual/wiki/Bundles)).
 
@@ -93,7 +93,7 @@ Although the Finder makes "Preside.mmBundle" appear to be a special sort of file
 cd "Library/Application Support/MailMate/Bundles/Preside.mmBundle/Support/bin/"
 {{< /highlight >}}
 
-10. Execute `ls` and you should see a listing of one item: a [shell script](https://en.wikipedia.org/wiki/Shell_script) file called "preside_notify.sh."
+10. Execute `ls` and you should see a listing of one item: a shell script file called "preside_notify.sh."
 
 11. Use your chosen command-line text editor to open this shell file. [Here is the original on GitHub](https://github.com/richwaters/PresideNotify/blob/master/Preside.mmBundle/Support/bin/preside_notify.sh), to which you may want to refer in the next few steps to keep the line numbering straight.
 

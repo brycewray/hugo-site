@@ -21,7 +21,7 @@ Fast-forward to today, when:
 
 It's been [over 150 years](https://ohiohistorycentral.org/w/Cincinnati_Reds) since professional sports began to captivate the hearts of U. S. fans. Now, all of this may finally have become unsustainable, a possibility I've been pondering for a while. It may well be that the pyramid is, at long last, toppling.
 
-I was further prompted toward this conclusion yesterday, when [YouTube TV](https://tv.youtube.com) --- [our home's streaming provider of choice](/posts/2020/01/streamers-party/) --- [announced](https://www.cordcuttersnews.com/youtube-tv-is-losing-sinclair-owned-fox-sports-networks/) that it, like several other TV services before it, is dropping the [Sinclair](https://en.wikipedia.org/wiki/Sinclair_Broadcast_Group)-owned RSNs on which many sports fans depend to watch their favorite teams. The two sides just couldn't reach an agreement.[^Comcast]
+I was further prompted toward this conclusion yesterday, when [YouTube TV](https://tv.youtube.com) --- [our home's streaming provider of choice](/posts/2020/01/streamers-party/) --- [announced](https://www.cordcuttersnews.com/youtube-tv-is-losing-sinclair-owned-fox-sports-networks/) that it, like several other TV services before it, is dropping the [Sinclair](https://sbgi.net/)-owned RSNs on which many sports fans depend to watch their favorite teams. The two sides just couldn't reach an agreement.[^Comcast]
 
 [^Comcast]: Today, things got still stranger when [it was reported](https://www.cordcuttersnews.com/comcast-may-lose-fox-rsns-later-this-year/) that even a *conventional cable service*, none other than the giant Comcast, was seriously considering telling Sinclair to shove its RSNs.
 

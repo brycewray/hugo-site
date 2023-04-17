@@ -113,7 +113,7 @@ I *highly* encourage anyone considering taking up webpack to spend plenty of tim
 
 I had mentioned I was impressed with Gatsby's image processing power. Indeed, I still am. However, it's worth keeping in mind that you make people download a *ton* of JS to make that happen. I had decided that wasn't worth it, especially for my humble little place on the web.
 
-My priority was to deliver images that were optimized and "[lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading)." And, in this new setup, I achieved all the things I decided were critical to achieve, thanks in particular to [responsive-loader](https://github.com/herrstucki/responsive-loader) and the popular [lazysizes](https://github.com/aFarkas/lazysizes) library. By the way, webpack makes lazysizes much easier to use.
+My priority was to deliver images that were optimized and "[lazy-loaded](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)." And, in this new setup, I achieved all the things I decided were critical to achieve, thanks in particular to [responsive-loader](https://github.com/herrstucki/responsive-loader) and the popular [lazysizes](https://github.com/aFarkas/lazysizes) library. By the way, webpack makes lazysizes much easier to use.
 
 ### SCSS/Sass
 
@@ -145,7 +145,7 @@ Although I have never been adept at dealing with mechanical things, much to my w
 
 [^doorknob]: Like today, for example, when I struggled to replace a doorknob --- although, in my defense, doorknobs aren't really designed for easy replacement. Have *you* tried, lately, putting the mounting screws into a doorknob *around* the doorknob? It's not as if screwdrivers are flexible.
 
-In fact, not long ago, our company owner asked a group of us about our hobbies. The others mentioned normal, human things like dancing, mountain-climbing, and playing or watching various sports.[^sports] Then, he got to me. I had to be the group nerd who admitted that mine is very similar to what I do for pay. So I guess I'm the proverbial "[dull boy](https://en.wikipedia.org/wiki/All_work_and_no_play_makes_Jack_a_dull_boy)," which will shock absolutely no one who knows me.
+In fact, not long ago, our company owner asked a group of us about our hobbies. The others mentioned normal, human things like dancing, mountain-climbing, and playing or watching various sports.[^sports] Then, he got to me. I had to be the group nerd who admitted that mine is very similar to what I do for pay. So I guess I'm the proverbial "[dull boy](https://web.archive.org/web/20101215124957/http://famousquotesandauthors.com/authors/james_howell_quotes.html)," which will shock absolutely no one who knows me.
 
 [^sports]: And, hey, I like watching sports, too. As I type these particular words, I have a browser window open with a stream of [NFL Red Zone](http://www.nfl.com/redzone) --- although, similar to what I [mentioned](/posts/2019/11/mixed-nuts-2019-11/) recently, ballgames lately are more background noise to me than anything else.
 

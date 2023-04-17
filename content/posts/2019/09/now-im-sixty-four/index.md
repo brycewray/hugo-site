@@ -14,7 +14,7 @@ oldComments: |
   </div>
 ---
 
-*(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) &copy; Sony/ATV Music Publishing LLC.*)
+*(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://genius.com/The-beatles-when-im-sixty-four-lyrics) &copy; Sony/ATV Music Publishing LLC.*)
 
 Long before aging,\
 I lost my hair\

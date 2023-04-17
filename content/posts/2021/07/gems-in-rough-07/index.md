@@ -14,7 +14,7 @@ The inaugural **[Eleventy Meetup](https://11tymeetup.dev/)** occurred earlier th
 
 ## Firefox slips further
 
-Things are not great in the world of [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/) right now, and they got even sadder this week with news that, according to [StatCounter](https://gs.statcounter.com/browser-market-share), Firefox's share of the browser market in June dipped below that of [Microsoft Edge](https://www.microsoft.com/en-us/edge) and is nearing that of the [browser that ships with Samsung phones](https://en.wikipedia.org/wiki/Samsung_Internet) (which I'd guess many Samsung users eschew in favor of, yep, [Chrome](https://www.google.com/chrome/)):
+Things are not great in the world of [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/) right now, and they got even sadder this week with news that, according to [StatCounter](https://gs.statcounter.com/browser-market-share), Firefox's share of the browser market in June dipped below that of [Microsoft Edge](https://www.microsoft.com/en-us/edge) and is nearing that of the [browser that ships with Samsung phones](https://www.samsung.com/us/support/owners/app/samsung-internet) (which I'd guess many Samsung users eschew in favor of, yep, [Chrome](https://www.google.com/chrome/)):
 
 {{< imgh src="2021-07-17_StatCounter-browser-mkt-shr_June-2021_1872x576.png" alt="Screen capture of StatCounter’s June 2021 display of worldwide browser market share" width=1872 height=576 >}}
 

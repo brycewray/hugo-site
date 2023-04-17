@@ -111,7 +111,7 @@ Ouch. Oof. "[Down goes Frazier](https://www.ozy.com/performance/down-goes-frazie
 
 Had my trouble been a one-shot deal, an isolated incident, that would've been one thing. But the comments on that page and others told me that this, in fact, was a glitch that numerous Ulysses users had encountered over the years.
 
-Since sync&rsquo;ing is one of those cases where "[failure is not an option](https://en.wikipedia.org/wiki/Failure_Is_Not_an_Option)," I now had to decide whether to continue storing my work within this app which, heretofore, I'd trusted completely.
+Since sync&rsquo;ing is one of those cases where "[failure is not an option](https://web.archive.org/web/20100123160551/http://www.spaceacts.com/notanoption.htm)," I now had to decide whether to continue storing my work within this app which, heretofore, I'd trusted completely.
 
 And, in case you've decided I was being too hasty, that I was letting one odd occurrence and some random complaints on the web sour me on a perfectly fine app: that Sunday afternoon wasn't the end of the trouble. I continued to suffer various types of a Ulysses/iCloud "[failure to communicate](https://www.americanrhetoric.com/MovieSpeeches/moviespeechcoolhandluke2.html)," and even lost some work as a result. Moreover, *none* of my other apps --- most especially iA Writer, with its support for [Open in Place](https://developer.apple.com/document-based-apps/) as well as its fully transparent file storage in the Finder and the iOS Files app, as opposed to the workings of the obscurely located Ulysses Library[^Library] --- had so much as a whisper of trouble dealing with iCloud.
 

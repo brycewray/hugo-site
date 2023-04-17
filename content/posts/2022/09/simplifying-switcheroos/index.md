@@ -66,7 +66,7 @@ This way, I can work with and push commits to each remote repo as much as I want
 
 Thus, I can effortlessly, *instantly* switch my site between [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io), or between Hugo and [Astro](https://astro.build), or between Astro and . . . well, you see.[^feeds]
 
-[^feeds]: One drawback to such switches --- one which will probably keep me from executing them in *too* willy-nilly a fashion --- is that they tend to re-send recent entries in the site's [RSS](https://en.wikipedia.org/wiki/RSS) and [JSON](https://jsonfeed.org/) feeds. I'm sure there's a way to avoid that, perhaps through working to make each SSG's feed output as identical as possible, but I haven't yet found it.
+[^feeds]: One drawback to such switches --- one which will probably keep me from executing them in *too* willy-nilly a fashion --- is that they tend to re-send recent entries in the site's RSS and [JSON](https://jsonfeed.org/) feeds. I'm sure there's a way to avoid that, perhaps through working to make each SSG's feed output as identical as possible, but I haven't yet found it.
 
 ## The proverbial "devil's workshop"
 
@@ -74,7 +74,7 @@ Whether anyone else might ever have a use for such a method, I obviously can't s
 
 And, if not: well, try not to pity me *too* awfully, okay?
 
-Besides, it could've been worse: I had a fleeting thought of trying to come up with a [**monorepo**](https://en.wikipedia.org/wiki/Monorepo) with *multiple* SSGs and their respective configurations, file/folder "lookup orders," *etc.* --- so I could share just one set of content among all the SSGs, making switcheroos that much easier. At least I didn't go *there*.
+Besides, it could've been worse: I had a fleeting thought of trying to come up with a **monorepo** with *multiple* SSGs and their respective configurations, file/folder "lookup orders," *etc.* --- so I could share just one set of content among all the SSGs, making switcheroos that much easier. At least I didn't go *there*.
 
 Well . . . not yet, anyway. *[Evil laugh.]*
 

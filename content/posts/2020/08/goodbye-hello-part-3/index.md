@@ -19,7 +19,7 @@ Why?
 
 - It's not exactly a "need for speed" thing, but I'm impressed by how considerably Vercel has [amped up its Edge Network infrastructure in recent weeks](https://vercel.com/blog/new-edge-dev-infrastructure). And, unlike Netlify's free tier, Vercel's free tier gives cheapos such as Yours Truly the full advantage of top-tier performance. I don't know **why** but, hey, gift horses’ mouths and all that stuff.
 
-- By contrast, the performance of Netlify's free tier seems to be dragging even more lately --- particularly in the [TTFB](https://en.wikipedia.org/wiki/Time_to_first_byte) category. ([Waterfalls, waterfalls, waterfalls](https://web.dev/identify-resources-via-network-panel/).) That said,I can certainly understand if Netlify chooses not to put significant resources toward the freebie level. It's all business, of course. Fair enough.
+- By contrast, the performance of Netlify's free tier seems to be dragging even more lately --- particularly in the [TTFB](https://web.dev/ttfb/) category. ([Waterfalls, waterfalls, waterfalls](https://web.dev/identify-resources-via-network-panel/).) That said,I can certainly understand if Netlify chooses not to put significant resources toward the freebie level. It's all business, of course. Fair enough.
 
 - There's also the simple fact that I admire the opinions of the extremely smart guys who run Fathom Analytics, who are [moving their site to Vercel later this year](https://usefathom.com/blog/tech-stack). Learning that (which was after I'd moved back to Netlify, in my own defense) probably was the first thing that got me to re-thinking my re-think, if you will.
 

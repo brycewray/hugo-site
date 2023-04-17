@@ -15,7 +15,7 @@ Up to that point, only an `@icloud.com` address would work with this service[^me
 
 [^meCom]: Well, of course, that's not counting those [legacy `@me.com` and `@mac.com` addresses](https://support.apple.com/en-us/HT201771) Apple issued many years ago, but I'm referring to *current* stuff.
 
-As I'd mentioned in 2019's "[The Holy Mail](/posts/2019/05/the-holy-mail/)," one advantage I gained in my 2017 move from a generic [Gmail](https://en.wikipedia.org/wiki/Gmail) address to a custom-domain address (hosted by [Fastmail](https://fastmail.com)) was that, if I ever wanted to change providers in the future, this never again would involve telling all my various contacts to use a new address. Instead, I simply would point the appropriate online records for the domain to the new provider, and everything would continue to work just fine.
+As I'd mentioned in 2019's "[The Holy Mail](/posts/2019/05/the-holy-mail/)," one advantage I gained in my 2017 move from a generic Gmail address to a custom-domain address (hosted by [Fastmail](https://fastmail.com)) was that, if I ever wanted to change providers in the future, this never again would involve telling all my various contacts to use a new address. Instead, I simply would point the appropriate online records for the domain to the new provider, and everything would continue to work just fine.
 
 Don't get me wrong; I've been mostly very satisfied with Fastmail --- but it *is* about fifty bucks a year. That price includes many services that I rarely or never use and which, I think, seem more useful for businesses than individuals; so I took this Apple announcement as a way I might get out of that.
 
@@ -38,7 +38,7 @@ Before you think, "Holy crap, he's spending $100 a year for personal email," ple
 
 ## Progress report
 
-It's early, so the proverbial jury is still out; but I've been pleased so far. With a domain like this one, whose various [MX](https://en.wikipedia.org/wiki/MX_record) and other records are hosted by [Cloudflare](https://cloudflare.com), the Apple switchover process seems much less manual than what I encountered last October, so perhaps Apple listened to the community complaints and shored up things in the meantime. And, as for the nitty-gritty of actually *using* the thing: when I send emails to the address from various other-domain addresses to which I have access (long story), everything goes back and forth without any trouble.
+It's early, so the proverbial jury is still out; but I've been pleased so far. With a domain like this one, whose various [MX](https://datatracker.ietf.org/doc/html/rfc5321) and other records are hosted by [Cloudflare](https://cloudflare.com), the Apple switchover process seems much less manual than what I encountered last October, so perhaps Apple listened to the community complaints and shored up things in the meantime. And, as for the nitty-gritty of actually *using* the thing: when I send emails to the address from various other-domain addresses to which I have access (long story), everything goes back and forth without any trouble.
 
 It remains to be seen whether I'll also switch my *other* address, the Big Kahuna that serves me in all aspects of life *other than* interactions with you folks who kindly visit this website. As you can well imagine, it will depend in great measure on how things go with this first one. I have a few months before my Fastmail subscription would auto-renew, so I'll have plenty of time to make a reasoned evaluation and act accordingly.
 

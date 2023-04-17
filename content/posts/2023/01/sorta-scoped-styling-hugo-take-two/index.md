@@ -7,7 +7,7 @@ date: 2023-01-19T15:52:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-I gave up on my [earlier](/posts/2022/06/sorta-scoped-styling-hugo/), [Rube Goldberg](https://en.wikipedia.org/wiki/Rube_Goldberg_machine)-esque attempt to achieve [scoped styling](https://css-tricks.com/saving-the-day-with-scoped-css/) after finding it too convoluted to maintain. Fortunately, I've now stumbled on a much simpler way to get there.
+I gave up on my [earlier](/posts/2022/06/sorta-scoped-styling-hugo/), [Rube Goldberg](https://www.rubegoldberg.org/all-about-rube/a-cultural-icon/)-esque attempt to achieve [scoped styling](https://css-tricks.com/saving-the-day-with-scoped-css/) after finding it too convoluted to maintain. Fortunately, I've now stumbled on a much simpler way to get there.
 
 <!--more-->
 

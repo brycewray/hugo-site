@@ -149,7 +149,7 @@ There is no official Astro solution for working with images, but [Astro ImageToo
 
 Astro's [built-in data-fetching abilities](https://docs.astro.build/en/guides/data-fetching/) make it relatively trivial to pull data from either remote locations or just your own site. In fact, that's how you populate many commonly used variables, such as other pages' URLs and titles. If you've used the Node.js `fetch` command, you likely will find Astro's technique pleasantly familiar.
 
-**Comparison**: There are similar ways to do this with Eleventy, Gatsby, Hugo, and Next.js. While I would argue that it's somewhat easier with Astro than with the others (Next.js's data-fetching methods and related code are the most similar to Astro's), that's really subjective --- with one notable exception. Gatsby's use of [GraphQL](https://graphql.org) makes its data-fetching powers impressive but overly complex to use, and its *dependence* on GraphQL for so many capabilities reminds me of the [old saw](https://en.wikipedia.org/wiki/Law_of_the_instrument) that "if all you have is a hammer, everything looks like a nail."
+**Comparison**: There are similar ways to do this with Eleventy, Gatsby, Hugo, and Next.js. While I would argue that it's somewhat easier with Astro than with the others (Next.js's data-fetching methods and related code are the most similar to Astro's), that's really subjective --- with one notable exception. Gatsby's use of [GraphQL](https://graphql.org) makes its data-fetching powers impressive but overly complex to use, and its *dependence* on GraphQL for so many capabilities reminds me of the old saw that "if all you have is a hammer, everything looks like a nail."
 
 ## Community
 
@@ -159,7 +159,7 @@ Astro's community, as I've found when spending time on its [Discord](https://ast
 
 ## Feeds
 
-At least for now, Astro clearly falls short in this category. Its built-in ability to provide [RSS feeds](https://en.wikipedia.org/wiki/RSS) is rather limited, and it doesn't yet enable [JSON feeds](https://jsonfeed.org) at all.[^XMLJSON] In the meantime, some users, including Yours Truly, have gotten around this by using the third-party [`feed` package](https://github.com/jpmonette/feed), which supports RSS and JSON feeds.[^feedAstro]
+At least for now, Astro clearly falls short in this category. Its built-in ability to provide RSS feeds is rather limited, and it doesn't yet enable [JSON feeds](https://jsonfeed.org) at all.[^XMLJSON] In the meantime, some users, including Yours Truly, have gotten around this by using the third-party [`feed` package](https://github.com/jpmonette/feed), which supports RSS and JSON feeds.[^feedAstro]
 
 [^XMLJSON]: I hope that, in the near future, the Astro team will make it possible for `.astro` files to produce files that end in `.xml` or `.json`, thus allowing for full customization of feed files.
 

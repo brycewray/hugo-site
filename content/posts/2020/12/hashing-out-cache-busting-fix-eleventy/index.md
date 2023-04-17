@@ -23,7 +23,7 @@ Here's a brief bit of catchup, to clarify things for those who have read neither
 Before I give you the actual code, here's what we're doing, as noted in "Cache-busting in Eleventy, take two":
 
 1. Concatenate our CSS files.
-2. Create an [MD5](https://en.wikipedia.org/wiki/MD5) hash of the concatenated content. This hash will be appended to the name of the site's final CSS file at build time.
+2. Create an [MD5](https://datatracker.ietf.org/doc/html/rfc1321) hash of the concatenated content. This hash will be appended to the name of the site's final CSS file at build time.
 3. Write two files out to the project: (a.) a JSON file in the `_data` directory which will "tell" the [Eleventy data cascade](https://www.11ty.dev/docs/data-cascade/) the name of the final CSS file; and (b.) a text file in the root directory which feeds the CSS file name to the PostCSS file-output command in the `package.json` scripts.
 4. Use that PostCSS command to write the appropriately named CSS file to the `_site` folder which the host uses to build the site.
 5. Use the site's `head` partial template (`head.js`) to tell each page on the site to refer to the CSS file by that special file name.

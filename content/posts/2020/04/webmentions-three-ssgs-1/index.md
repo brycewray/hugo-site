@@ -23,7 +23,7 @@ When I [converted](/posts/2019/12/packing-up/) this site to an [Eleventy](https:
 
 ## Sharing time
 
-A few weeks ago, I [decided](/posts/2020/04/different-modes-different-code/) to launch public repositories of this site as it would be executed in its former [static site generators](https://staticgen.com) (SSGs),  [Hugo](https://gohugo.io) and [Gatsby](https://gatsbyjs.org). I hoped these would serve somewhat as a "[Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone)" in that all three would result in the same final site, so people interested in switching from one SSG to another could say, "Ah, yeah, I see: in *this* one you use *this* code to get there, and in the *other* one you use *that* code. That makes sense."
+A few weeks ago, I [decided](/posts/2020/04/different-modes-different-code/) to launch public repositories of this site as it would be executed in its former [static site generators](https://staticgen.com) (SSGs),  [Hugo](https://gohugo.io) and [Gatsby](https://gatsbyjs.org). I hoped these would serve somewhat as a "Rosetta Stone" in that all three would result in the same final site, so people interested in switching from one SSG to another could say, "Ah, yeah, I see: in *this* one you use *this* code to get there, and in the *other* one you use *that* code. That makes sense."
 
 Although I said at the time that I'd be wary about keeping those repos up to date with this one for more than just additional posts as they came along --- *i.e.*, as opposed to making *configuration* changes --- my challenge- and tinkering-loving brain wasn't having any of that.
 
@@ -49,7 +49,7 @@ To facilitate the capture of webmentions for my site, I chose to use a combinati
 
 1. Added the necessary **[microformats](https://indieweb.org/microformats)** information to the site footer. This essentially acts like a "beacon" to other sites, "announcing" pages’ titles, descriptions, and more. The other sites can then "respond."
 
-2. Added to the site's universal `<HEAD>` section the appropriate `link rel="webmention"` and `link rel="pingback"` HTML. This enables webmention.io to collect webmentions and "[pingbacks](https://en.wikipedia.org/wiki/Pingback)" for the site pages.
+2. Added to the site's universal `<HEAD>` section the appropriate `link rel="webmention"` and `link rel="pingback"` HTML. This enables webmention.io to collect webmentions and "[pingbacks](https://web.archive.org/web/20021222230146/http://www.kryogenix.org/days/000138.cas)" for the site pages.
 
 So that's the generic webmention-ization process I followed, *but* keep in mind that all it does is start fetching your webmentions for you out on webmention.io. The nitty-gritty yet to come is when *you* subsequently fetch them *from* webmention.io and make them actually appear on *your* site. How you can do it varies from SSG to SSG, hence this series.
 

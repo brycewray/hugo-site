@@ -47,8 +47,8 @@ Then, in the [`baseof.html` template](https://gohugo.io/templates/base/#define-t
 
 - `Get` that `index.js` file.
 - Bundle it into another file, named `bundle.js`, that’ll be in the final build’s `/js` directory.
-- [Minify](https://en.wikipedia.org/wiki/Minification_(programming)) the bundle so it’ll load even more quickly, especially after the hosting vendor applies further compression (preferably [Brotli](https://en.wikipedia.org/wiki/Brotli)).
-- [Fingerprint](https://gohugo.io/hugo-pipes/fingerprint/) the bundle with the [SHA-256 cryptographic hash function](https://en.wikipedia.org/wiki/SHA-2), so that its final name contains a long hash **and** changes at build time whenever there’s been any change in the code. This facilitates [browser-side cache-busting](https://javascript.plainenglish.io/what-is-cache-busting-55366b3ac022) for one’s visitors’ benefit. The reason I used SHA-256, the default for this feature in Hugo Pipes, was to enable [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (SRI) and allow me to add the `integrity` part of the `script` call.
+- Minify the bundle so it’ll load even more quickly, especially after the hosting vendor applies further compression (preferably [Brotli](https://github.com/google/brotli).
+- [Fingerprint](https://gohugo.io/hugo-pipes/fingerprint/) the bundle with the [SHA-256 cryptographic hash function](https://web.archive.org/web/20130526224224/https://csrc.nist.gov/groups/STM/cavp/documents/shs/sha256-384-512.pdf), so that its final name contains a long hash **and** changes at build time whenever there’s been any change in the code. This facilitates [browser-side cache-busting](https://javascript.plainenglish.io/what-is-cache-busting-55366b3ac022) for one’s visitors’ benefit. The reason I used SHA-256, the default for this feature in Hugo Pipes, was to enable [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (SRI) and allow me to add the `integrity` part of the `script` call.
 
 Here’s the result:
 

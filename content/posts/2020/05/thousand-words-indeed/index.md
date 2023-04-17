@@ -13,7 +13,7 @@ Sometime, it's worth even more than words. And that's why there are big ol’ pi
 
 ## Gone, but not forgotten
 
-[Back in February](/posts/2020/02/so-much-for-heroes/), I explained why, for the first time since this site's birth, each post was no longer including a featured image --- a "[hero image](https://en.wikipedia.org/wiki/Hero_image)" --- at its top. The gist of it was my feeling that having the images no longer justified the site performance hit, and the extensive pre-processing, that their presence required.
+[Back in February](/posts/2020/02/so-much-for-heroes/), I explained why, for the first time since this site's birth, each post was no longer including a featured image --- a "hero image" --- at its top. The gist of it was my feeling that having the images no longer justified the site performance hit, and the extensive pre-processing, that their presence required.
 
 Near that post's end, I said:
 
@@ -35,7 +35,7 @@ The site just had to go on a diet. If we were going to put a big piece of pie on
 
 So here's what happened.
 
-- **Lazy-loading** --- After having used the [LazySizes](https://github.com/aFarkas/lazysizes) library for [lazy-loading](https://en.wikipedia.org/wiki/Lazy_loading) images, I opted instead for [LazyLoad](https://www.andreaverlicchi.eu/lazyload/), sometimes called "[vanilla-lazyload](https://www.npmjs.com/package/vanilla-lazyload)." It does everything I require of this kind of code, but is a smaller download and also seems to be a more efficient steward of browser resources.[^LLDev]
+- **Lazy-loading** --- After having used the [LazySizes](https://github.com/aFarkas/lazysizes) library for [lazy-loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) images, I opted instead for [LazyLoad](https://www.andreaverlicchi.eu/lazyload/), sometimes called "[vanilla-lazyload](https://www.npmjs.com/package/vanilla-lazyload)." It does everything I require of this kind of code, but is a smaller download and also seems to be a more efficient steward of browser resources.[^LLDev]
 
 [^LLDev]: I also greatly admire and appreciate the friendly and positive way that LazyLoad's dev, [Andrea Verlicchi](https://www.andreaverlicchi.eu/), handles issue reports to LazyLoad's [GitHub repo](https://github.com/verlok/lazyload).
 

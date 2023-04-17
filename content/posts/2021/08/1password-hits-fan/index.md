@@ -77,7 +77,7 @@ I've been a 1Password subscriber for a few years but had already decided to let 
 
 ### A closing note about TOTPs
 
-Whichever "way" you go, it's a convenience-vs.-security question whether you store in it any [**time-based one-time passwords**](https://en.wikipedia.org/wiki/Time-based_One-Time_Password) (TOTPs) for multi-factor authentication, even though these apps generally are capable of allowing such storage. It's the whole "don't put all your eggs in one basket" thing. Instead, use a **separate** authentication app.[^masterTOTP] For more information on this subject, see the [Techlore](https://techlore.tech) video, "The Ultimate TOTP/2FA Guide for Max Security Online":
+Whichever "way" you go, it's a convenience-vs.-security question whether you store in it any [**time-based one-time passwords**](https://datatracker.ietf.org/doc/html/rfc6238) (TOTPs) for multi-factor authentication, even though these apps generally are capable of allowing such storage. It's the whole "don't put all your eggs in one basket" thing. Instead, use a **separate** authentication app.[^masterTOTP] For more information on this subject, see the [Techlore](https://techlore.tech) video, "The Ultimate TOTP/2FA Guide for Max Security Online":
 
 {{< lite-youtube videoTitle="The Ultimate TOTP/2FA Guide for Max Security Online" videoId="iXSyxm9jmmo" >}}
 

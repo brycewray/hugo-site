@@ -5,13 +5,13 @@ author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
 ---
 
-It will come as no surprise to my regular readers that I like New Shiny, especially where this little old website is concerned. Well, I've succumbed again, for at least a test drive of an interesting [platform as a service (PaaS)](https://en.wikipedia.org/wiki/Platform_as_a_service) offering from [Cloudflare](https://cloudflare.com).
+It will come as no surprise to my regular readers that I like New Shiny, especially where this little old website is concerned. Well, I've succumbed again, for at least a test drive of an interesting [platform as a service (PaaS)](https://www.networkworld.com/article/2163430/paas-primer--what-is-platform-as-a-service-and-why-does-it-matter-.html) offering from [Cloudflare](https://cloudflare.com).
 
 ## Workers sites and Workers KV
 
 {{< imgh src="Cloudflare_Workers_scrshot_2020-10-20_2526x1440.png" alt="Screen capture of Cloudflare Workers web page" width=2526 height=1440 >}}
 
-[Cloudflare Workers](https://workers.cloudflare.com/) have been around [since 2017](https://blog.cloudflare.com/introducing-cloudflare-workers/). They allow developers to put code at the "edge" of Cloudflare's worldwide [reverse-proxy](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/) [content delivery network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), letting users worldwide see faster results since it puts the content "closer" to those users.
+[Cloudflare Workers](https://workers.cloudflare.com/) have been around [since 2017](https://blog.cloudflare.com/introducing-cloudflare-workers/). They allow developers to put code at the "edge" of Cloudflare's worldwide [reverse-proxy](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/) content delivery network (CDN), letting users worldwide see faster results since it puts the content "closer" to those users.
 
 A year later, Cloudflare [introduced Workers KV](https://blog.cloudflare.com/introducing-workers-kv/) (the *KV* stands for *key-value*), a way of providing *storage*, mainly for databases as well as code, out on the "edge." Then, last year, as explained in a [blog post by Rita Kozlov](https://blog.cloudflare.com/workers-sites/), Cloudflare began pushing this setup as a way to put static websites online, [using the Workers KV "edge" storage to host such sites’ files](https://blog.cloudflare.com/extending-the-workers-platform/).
 

@@ -39,7 +39,7 @@ Although I still haven't quite gotten used to the appearance of this *[utility-f
 
 .&nbsp;.&nbsp;.&nbsp; the truth is that, apparently, I've been writing at least some form of utility-first CSS well before it received that name and *certainly* well before the ongoing industry infighting over whether it's the Greatest Thing Evah, an unforgivable sin against the holy of holies, or something in between.
 
-In 2002, I began using CSS for the first time, but this was before [CSS Zen Garden](https://en.wikipedia.org/wiki/CSS_Zen_Garden) --- of which, to be honest, I never learned until many years later --- and those whom it inspired carved out what was supposed to be a hard line between content (HTML) and that content's appearance (CSS). No, I blithely was occasionally doing nasty things like the following when I just didn't want to go through the rigamarole.
+In 2002, I began using CSS for the first time, but this was before [CSS Zen Garden](https://www.csszengarden.com/) --- of which, to be honest, I never learned until many years later --- and those whom it inspired carved out what was supposed to be a hard line between content (HTML) and that content's appearance (CSS). No, I blithely was occasionally doing nasty things like the following when I just didn't want to go through the rigamarole.
 
 First, the CSS:
 
@@ -109,7 +109,7 @@ Why?
 
 Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in Sass/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers’ support for it, is getting better all the time and that's where the action is.
 
-I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) to browser-friendly CSS. Quite frankly, using Sass/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
+I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can transpile to browser-friendly CSS. Quite frankly, using Sass/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
 
 [^elevwp]: Thank goodness for my [Eleventy/webpack setup](/posts/2019/12/packing-up/), without which the whole process of reversion would've been much more onerous. I shudder to think about, say, if I'd still been on [Gatsby](/posts/2019/10/now-gatsby-geezer/).
 

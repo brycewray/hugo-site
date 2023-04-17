@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
 ---
 
-If you want your website to be discovered by search engines, the sad news is that there's no [Hollywood drugstore](https://en.wikipedia.org/wiki/Schwab%27s_Pharmacy) where it can hang out in the vain hope that such discovery will happen. Just putting a site out there among the billions of others isn't going to get the job done.
+If you want your website to be discovered by search engines, the sad news is that there's no [Hollywood drugstore](http://www.playgroundtothestars.com/2013/06/schwabs-drug-store-where-lana-turner-was-not-discovered/) where it can hang out in the vain hope that such discovery will happen. Just putting a site out there among the billions of others isn't going to get the job done.
 
 Even worse: you need to get your site's content discovered continuously, not just once. Search engines can slowly "lose interest" in your site unless you give them reasons to do otherwise.
 
@@ -13,7 +13,7 @@ With that bad news is some accompanying good news: if you're willing to put in a
 
 ## Three keys to getting discovered
 
-Back in the late 1990s, before Google swallowed up the web search space and there still were *numerous* prominent search engines out there, you actually would have to **submit** your site to each of them for inclusion. But those days are long gone and now, to invoke a "[Russian Reversal](https://en.wikipedia.org/wiki/In_Soviet_Russia)”-ish line, "search engines find *you*." Or, at least, you hope they do.
+Back in the late 1990s, before Google swallowed up the web search space and there still were *numerous* prominent search engines out there, you actually would have to **submit** your site to each of them for inclusion. But those days are long gone and now, to invoke a "[Russian Reversal](https://www.guernicamag.com/russian-reversal-performing-class-and-power-on-victory-day/)”-ish line, "search engines find *you*." Or, at least, you hope they do.
 
 Search engine algorithms come and go, but you can safely assume that  three items are crucial to how well, and how frequently, search engines discover your site: **content**, **performance**, and the combination of **feeds** and **sitemaps**.
 

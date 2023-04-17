@@ -13,7 +13,7 @@ With my recent return to using [Cloudinary](https://cloudinary.com) to host and 
 
 <!--more-->
 
-For a few months in 2021, Cloudinary made it possible for my particular account to provide the [AVIF](https://en.wikipedia.org/wiki/AVIF) format as one of those available via `f_auto`. AVIF files are known for [delivering high quality despite being smaller in size](https://www.smashingmagazine.com/2021/09/modern-image-formats-avif-webp/) than other formats. But, this past January, [I requested that this be stopped](/posts/2022/01/gems-in-rough-13/#a-wave-off-on-avifs) because, particularly on iPhones and iPads at the time, the AVIF-decoding process was rough on CPUs and batteries.
+For a few months in 2021, Cloudinary made it possible for my particular account to provide the [AVIF](https://aomediacodec.github.io/av1-avif/) format as one of those available via `f_auto`. AVIF files are known for [delivering high quality despite being smaller in size](https://www.smashingmagazine.com/2021/09/modern-image-formats-avif-webp/) than other formats. But, this past January, [I requested that this be stopped](/posts/2022/01/gems-in-rough-13/#a-wave-off-on-avifs) because, particularly on iPhones and iPads at the time, the AVIF-decoding process was rough on CPUs and batteries.
 
 Then, yesterday, I asked Cloudinary to re-activate AVIF support for my use of `f_auto`, because of two changes which have occurred since last January:
 

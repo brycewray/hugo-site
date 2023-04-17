@@ -37,7 +37,7 @@ You'll see here that there are two entries[^DNSitems] with the little orange clo
 
 [^DNSitems]: Why two entries? One was for the root domain of `brycewray.com` and a second one was for its `www` subdomain.
 
-If you simply leave such settings as they are and do no more, this enables Cloudflare to cache the site's content for faster delivery, employ protection against [DDoS attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack), and so forth. But, with a Cloudflare Worker also set up to catch the hits, that's where things get even more interesting.
+If you simply leave such settings as they are and do no more, this enables Cloudflare to cache the site's content for faster delivery, employ protection against [DDoS attacks](https://usa.kaspersky.com/resource-center/threats/ddos-attacks), and so forth. But, with a Cloudflare Worker also set up to catch the hits, that's where things get even more interesting.
 
 ## Let's not FLOC together
 

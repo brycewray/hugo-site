@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
 ---
 
-Here are a few odds and ends --- some a tad acerbic, some not so much. And I swear I'm not trying to sound like the late [Andy Rooney](https://en.wikipedia.org/wiki/Andy_Rooney), or even a parody thereof&nbsp;.&nbsp;.&nbsp;.
+Here are a few odds and ends --- some a tad acerbic, some not so much. And I swear I'm not trying to sound like the late Andy Rooney, or even a parody thereof&nbsp;.&nbsp;.&nbsp;.
 
 {{< lite-youtube videoTitle="Andy Rooney (Frank Caliendo) On The iPhone" videoId="u8pCsfT1gDU" >}}
 
@@ -46,7 +46,7 @@ However, I think it's easier not to have to make that call every frickin’ time
 
 ## No, we don't need double spaces after periods _unless_&nbsp;.&nbsp;.&nbsp;.
 
-I really thought this would've gone away back in the late nineties as the [growing adoption of Windows in the workplace](https://mashable.com/2015/08/24/remembering-windows-95-launch/) took most people out of [monospaced-character displays](https://damieng.com/blog/2011/02/20/typography-in-8-bits-system-fonts) and into the ([sometimes](https://en.wikipedia.org/wiki/Ransom_note_effect)) wonderful world of [proportionally spaced on-screen characters](https://99designs.com/blog/design-history-movements/history-of-digital-fonts/). After all, the whole reason my generation and those before it were [taught to put two periods between sentences](https://www.cultofpedagogy.com/two-spaces-after-period/) was because we were typing on, wait for it, _typewriters_. Those typewriters almost invariably were using monospaced characters, back in that era where we couldn't imagine that it would be only a few more years before we could type and [print stuff in that ultra-cool Times Roman and Helvetica](https://www.macworld.com/article/1150845/printers/laserwriter.html). Mmmm boy.
+I really thought this would've gone away back in the late nineties as the [growing adoption of Windows in the workplace](https://mashable.com/2015/08/24/remembering-windows-95-launch/) took most people out of [monospaced-character displays](https://damieng.com/blog/2011/02/20/typography-in-8-bits-system-fonts) and into the (sometimes) wonderful world of [proportionally spaced on-screen characters](https://99designs.com/blog/design-history-movements/history-of-digital-fonts/). After all, the whole reason my generation and those before it were [taught to put two periods between sentences](https://www.cultofpedagogy.com/two-spaces-after-period/) was because we were typing on, wait for it, _typewriters_. Those typewriters almost invariably were using monospaced characters, back in that era where we couldn't imagine that it would be only a few more years before we could type and [print stuff in that ultra-cool Times Roman and Helvetica](https://www.macworld.com/article/1150845/printers/laserwriter.html). Mmmm boy.
 
 But once your output was proportional type, one space was quite enough, [as it has been in conventional typography for decades](https://en.wikipedia.org/wiki/Sentence_spacing#Transition_to_single_spacing). Even [legal documents](https://abovethelaw.com/2011/04/small-firms-big-lawyers-the-perfect-font-to-show-you-don%E2%80%99t-care/) have been overwhelmingly in proportional type for a long time, now.
 

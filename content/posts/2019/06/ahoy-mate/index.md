@@ -30,7 +30,7 @@ My [last post](/posts/2019/05/the-holy-mail/) closed with:
 
 > Do I ever look at other *[email]* apps any more? Oh, sure. It's what I sometimes call "the geek's prerogative."
 
-And that continues, as I have become interested in [MailMate](https://freron.com). This macOS-only, [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)-only app is a creation of Benny Kjær Nielsen, a Danish indie developer and holder of a doctorate in computer science.
+And that continues, as I have become interested in [MailMate](https://freron.com). This macOS-only, [IMAP](https://datatracker.ietf.org/doc/html/rfc9051)-only app is a creation of Benny Kjær Nielsen, a Danish indie developer and holder of a doctorate in computer science.
 
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much --- and that's fine with the good doctor, not to mention the app's many adherents.
 
@@ -59,7 +59,7 @@ Now, mind you: it's got very few screen captures, and none that are current. Ind
 
 Then there's Dr. Nielsen's clear dedication, as you can see between the lines of his [page about how MailMate handles accounts](https://manual.mailmate-app.com/account_setup), to making MailMate ultra-compliant with email standards.
 
-I've been an email user since 1995 --- although I can't claim the "street cred" to swap stories with the Unix geeks who were [reading their email with Pine](https://en.wikipedia.org/wiki/Pine_(email_client)) long before then --- and &lt;rant&gt;I have little patience with how Google, in particular, plays fast and loose with these hard-won standards, notably where IMAP is concerned.[^Gmail] Standards make things work across borders, boundaries, and platforms, so vendors should *adhere* to them. Period. I don't care if a vendor is monstrously big; it's still not the only vendor. I want to be able to read my sent and received emails years from now, regardless of the vendor, device, or software I'm using. Sticking rigidly to standards makes that possible.&lt;/rant&gt;
+I've been an email user since 1995 --- although I can't claim the "street cred" to swap stories with the Unix geeks who were [reading their email with Pine](https://web.archive.org/web/20190328145000/http://www.washington.edu/pine/) long before then --- and &lt;rant&gt;I have little patience with how Google, in particular, plays fast and loose with these hard-won standards, notably where IMAP is concerned.[^Gmail] Standards make things work across borders, boundaries, and platforms, so vendors should *adhere* to them. Period. I don't care if a vendor is monstrously big; it's still not the only vendor. I want to be able to read my sent and received emails years from now, regardless of the vendor, device, or software I'm using. Sticking rigidly to standards makes that possible.&lt;/rant&gt;
 
 [^Gmail]: This is one of several reasons I recently dumped Gmail after thirteen years, having finally got all my *important* correspondents to use my FastMail-based email address, instead. **Update from the future**: [Not long after I initially published this post](https://fastmail.blog/company/fastmail-new-logo/), the provider changed its name from *FastMail* to *Fastmail*.
 

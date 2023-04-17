@@ -23,7 +23,7 @@ Although I was very happy to get back to Eleventy, its lack of that one capabili
 
 First, the problem.
 
-Each time you visit a web page, its server sends your browser *requests* to download various items to your device for displaying the page. In addition to the [HTML](https://en.wikipedia.org/wiki/HTML), which could be different every time for some sites, the list includes so-called *static assets* --- image files and other usually unchanging things --- which are *not* expected to change all that often as long as their filenames remain the same. This is especially relevant in the case of [CSS](https://en.wikipedia.org/wiki/CSS), since it's common for at least some of the same CSS file(s) to be in play on multiple pages on a site.
+Each time you visit a web page, its server sends your browser *requests* to download various items to your device for displaying the page. In addition to the HTML, which could be different every time for some sites, the list includes so-called *static assets* --- image files and other usually unchanging things --- which are *not* expected to change all that often as long as their filenames remain the same. This is especially relevant in the case of CSS, since it's common for at least some of the same CSS file(s) to be in play on multiple pages on a site.
 
 That's why browsers typically are instructed to *cache* static assets, including CSS files. This means that a site's web server tells a browser to store *local* copies of such files so it'll use them as instantaneously as possible, leaving only the truly updated stuff, like the usually uncached HTML, for an actual download. After all, there's no point in making your browser download the same thing as you go from one page to another, or something that hasn't changed since the last time you visited the site. That simply slows down the process and downgrades your experience with the site.[^2]
 
@@ -44,7 +44,7 @@ Now, we begin to edge toward the solution.
 An *asset pipeline* is how some software applications are "aware of" and process static assets for their purposes. The Hugo SSG has an asset pipeline, [Hugo Pipes](https://gohugo.io/categories/asset-management), that enables numerous features. There are two such features that I found extremely useful in my most recent use of Hugo:
 
 - Its built-in support for [PostCSS](https://postcss.org), which allows an astounding set of capabilities, one of which is easy handling of things like the [Tailwind CSS](https://tailwindcss.com) that I've incorporated into this site.
-- [Fingerprinting](https://en.wikipedia.org/wiki/Fingerprint_(computing)) --- Although there are numerous ways you can use fingerprinting, my main need for it was to practice cache-busting on my CSS.
+- [Fingerprinting](https://gohugo.io/hugo-pipes/fingerprint/) --- Although there are numerous ways you can use fingerprinting, my main need for it was to practice cache-busting on my CSS.
 
 After all: if you're using PostCSS, you're almost certainly [using Hugo Pipes to implement it](https://gohugo.io/hugo-pipes/postcss/), so why not simply use it also to fingerprint the CSS file every time you make a change? It was as simple as this in the `<head>` "partial" template in the Hugo version of my site (note that this is the [Go](https://go.dev) language on which Hugo templating depends):
 
@@ -81,7 +81,7 @@ Bingo.
 
 Within minutes, I'd found a PostCSS plugin (one of the [seemingly endless set thereof](https://github.com/postcss/postcss/blob/master/docs/plugins.md)) called **[PostCSS Hash](https://www.npmjs.com/package/postcss-hash)**; and, after an hour of dorking around with its configuration, I had my solution.
 
-First, a word about *[hashing](https://en.wikipedia.org/wiki/Hash_function)*: in this case, it involves taking the contents of a CSS file and creating a series of random alphanumeric characters based on those contents. That series can then be used for any number of purposes --- in this case, to give the file a new name every time the file's contents change.
+First, a word about *hashing*: in this case, it involves taking the contents of a CSS file and creating a series of random alphanumeric characters based on those contents. That series can then be used for any number of purposes --- in this case, to give the file a new name every time the file's contents change.
 
 So, now, let me tell you fellow and sister Eleventy users how easy it is, with this setup, to cache-bust your CSS. (That's if you *are* using PostCSS, of course, which I highly recommend in any event.)
 
@@ -109,7 +109,7 @@ module.exports = {
 {{</ labeled-highlight >}}
 
 Before I get to the `manifest`  option of the `postcss-hash` part, I'll note that:
-- I didn't set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo's default is [SHA-256](https://en.wikipedia.org/wiki/SHA-2)). The documentation specifies a few other options you can set, but I find MD5 to be just fine.
+- I didn't set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo's default is [SHA-256](https://web.archive.org/web/20130526224224/https://csrc.nist.gov/groups/STM/cavp/documents/shs/sha256-384-512.pdf). The documentation specifies a few other options you can set, but I find MD5 to be just fine.
 - I chose to set `trim` at `20` (the default is `10`) so this plugin would give a slightly longer (and, thus, more distinct) hash "tail" to the CSS file's generated name. And, speaking of the name&nbsp;.&nbsp;.&nbsp;.
 - The `name` setting makes sure that the generated CSS file comes out looking like, for example, `index-a1ee6657944e0c6d4080.css`. The default setting separates the original name, such as `index`, from the hash with a dot rather than a dash, and I just prefer the dash to the dot for this.
 

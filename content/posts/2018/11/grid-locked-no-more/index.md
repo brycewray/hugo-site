@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2018-11-28T10:00:00-05:00
 ---
 
-As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: "Never mind."
+As [Emily Litella](https://snl.jt.org/char.php-i=6.html) said it so well: "Never mind."
 
 I said in my [last post](/posts/2018/11/getting-framed/) that I'd use [Bootstrap 4](https://getbootstrap.com) for this site while learning [CSS Grid](https://www.w3schools.com/css/css_grid.asp) over time. Then, only a few days later, I decided there was no time like the present.
 
@@ -49,7 +49,7 @@ To be sure, I'd relied on media queries to make sure everything worked fine on v
 
 ## The two letters that make us cringe: IE
 
-Finally, while I was at it and essentially starting from scratch (again), I figured I also may as well tackle the uncomfortable subject of [making stuff work on Internet Explorer](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility). And I don't mean just IE 11, the version that Microsoft still ships with Windows; I mean as far back as I could go without, um, losing my mind. That turned out to be [IE 8](https://en.wikipedia.org/wiki/Internet_Explorer_8). (Upon reading that last sentence, you probably just muttered, "Oh, God," or words to that effect.)
+Finally, while I was at it and essentially starting from scratch (again), I figured I also may as well tackle the uncomfortable subject of [making stuff work on Internet Explorer](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/tips-and-tricks-to-manage-ie-compatibility). And I don't mean just IE 11, the version that Microsoft still ships with Windows; I mean as far back as I could go without, um, losing my mind. That turned out to be IE 8. (Upon reading that last sentence, you probably just muttered, "Oh, God," or words to that effect.)
 
 In doing this part in particular, I was guided by several HTML/CSS luminaries’ writings and videos --- including, yes, Jen Simmons's, Rachel Andrew's, and Kevin Powell's --- that stressed the most important thing to keep in mind for accommodating such legacy software was to give its users the _best possible user experience_. It's not necessary to give them everything that current browsers and devices can, mainly because you _can't_, but you _can_ give them everything they really need to have a decent experience with whatever you're trying to present. Of course, this site isn't exactly on the cutting edge, so that was less difficult than you might think, although there were a few times I wanted to pull out my mostly absent hair.
 

@@ -12,7 +12,7 @@ date: 2022-05-25T06:18:00-05:00
 **Note**: This follow-up to "[Webmentions yes, JavaScript no](/posts/2022/05/webmentions-yes-javascript-no/)" assumes you've already read that post.
 {.box}
 
-While the code that now makes this site show its [webmentions](https://indieweb.org/Webmention) is a bit more presentable than when I wrote the other post, it remains not nearly as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) or elegant as it should be. Nonetheless, some have asked to get the full code plus an explainer, so that's why we are gathered here today, brothers and sisters.
+While the code that now makes this site show its [webmentions](https://indieweb.org/Webmention) is a bit more presentable than when I wrote the other post, it remains not nearly as [DRY](https://www.earthdatascience.org/courses/earth-analytics/automate-science-workflows/write-efficient-code-for-science-r/) or elegant as it should be. Nonetheless, some have asked to get the full code plus an explainer, so that's why we are gathered here today, brothers and sisters.
 
 ## Introduction
 

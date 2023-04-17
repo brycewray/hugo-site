@@ -15,7 +15,7 @@ Here are some of my current feelings about Cloudflare Pages --- what keeps me co
 
 ### CDN, CDN, CDN
 
-You know the old line about "[standing on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)." There are no truer words when it comes to Cloudflare Pages, which benefits greatly from the platform on which it rides.
+You know the old line about "standing on the shoulders of giants." There are no truer words when it comes to Cloudflare Pages, which benefits greatly from the platform on which it rides.
 
 There's no question that what I like the most about using CFP is Cloudflare's global content delivery network (CDN). A CDN is only as good as how many points of presence (PoPs) it has and how well they work. Cloudflare has [*hundreds* of PoPs worldwide](https://www.cloudflare.com/network/), with more coming online all the time, and continues to [put ever-greater quantities of customers’ content](https://stratechery.com/2021/cloudflare-on-the-edge/) out on the "edge." This translates to faster performance, regardless of where one's visitors may be.
 

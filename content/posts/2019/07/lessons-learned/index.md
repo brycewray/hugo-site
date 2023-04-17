@@ -79,7 +79,7 @@ Then there's the whole issue of how the newer SSGs handle CSS and SCSS/Sass.
 
 First, understand how easy we Hugo users have it where SCSS/Sass compatibility is concerned. Thanks to the out-of-the-box [Hugo Pipes](https://gohugo.io/hugo-pipes) functionality, [all](https://gohugo.io/hugo-pipes/scss-sass) you have to do is put your SCSS/Sass files in your Hugo install's `/assets` directory and then call to them in templates like this (this is from my own templates, with *ofotigrid.scss*[^ofoti] being the name of my primary SCSS file that `@import`s in content from its fellow SCSS files within `/assets/scss`):
 
-[^ofoti]: That weird file name is from when I originally had considered calling this site *ofoti.com* --- a domain which I own --- with *OFOTI* standing whimsically for *Old Fart on the Internet*. However, I thought better of it, especially after I learned that the name *Ofoti* had, in fact, [already been used as the title of a prize-winning play](https://en.wikipedia.org/wiki/John_Wheatcroft).
+[^ofoti]: That weird file name is from when I originally had considered calling this site *ofoti.com* --- a domain which I own --- with *OFOTI* standing whimsically for *Old Fart on the Internet*. However, I thought better of it, especially after I learned that the name *Ofoti* (albeit in an alternate spelling) had, in fact, [already been used as the title of a prize-winning play](https://www.imdb.com/title/tt1009715/).
 
 ```go-html-template
 <!-- CSS/SCSS -->
@@ -128,7 +128,7 @@ So far, fine. Then&nbsp;.&nbsp;.&nbsp;.
 
 Assuming you're not a dev, go ahead and re-read that. I'll wait.
 
-At some point, the SSG folks will have to decide whether they do indeed want to maintain their role as [Merlin](https://en.wikipedia.org/wiki/Merlin)s rather than making SSGs accessible to ordinary users, particularly in corporate life. I mean, WordPress is a God-awful, performance-eating, security-defying thing --- but at least your average Joe or Jane, and most notably your average Joe or Jane in corporate settings that **aren't going to hire dev help for them**, can use it. Try that with **any** SSG.
+At some point, the SSG folks will have to decide whether they do indeed want to maintain their role as Merlins rather than making SSGs accessible to ordinary users, particularly in corporate life. I mean, WordPress is a God-awful, performance-eating, security-defying thing --- but at least your average Joe or Jane, and most notably your average Joe or Jane in corporate settings that **aren't going to hire dev help for them**, can use it. Try that with **any** SSG.
 
 ## A parting shot
 

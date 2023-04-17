@@ -75,7 +75,7 @@ This will create a `gitoutput.yml` file in your Hugo project's `data/` folder. I
 
 - **FilePath**: Its relative path, which Hugo knows for it as [`.File.Path`](https://gohugo.io/variables/files/).
 - **Hash** and **AbbreviatedHash**: Its Git hashes, both full and abbreviated.
-- **LastmodDate**: The timestamp, in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) (the same one you use in the `date` parameter of a Hugo content file's front matter), of its most recent commit.
+- **LastmodDate**: The timestamp, in [ISO 8601 format](https://jkorpela.fi/iso8601.html) (the same one you use in the `date` parameter of a Hugo content file's front matter), of its most recent commit.
 
 For example, here are the first few lines (as of this writing) of such a file in my project, starting at the top:
 

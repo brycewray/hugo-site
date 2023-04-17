@@ -40,7 +40,7 @@ When [lazy-loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Laz
 
 That's easily done by having the full image housed within a `div` whose background is that LQIP. This typically is done with inline styling which changes dynamically on a per-image basis. I had once implemented this via the site's `imgc` **shortcode**, whether in [Eleventy](https://11ty.dev/docs/shortcodes) or [Hugo](https://gohugo.io/content-management/shortcodes/). However, I found that's a no-go with a tight CSP --- and now you understand my interest in that new nonce-handling in the Cloudflare Worker, which allowed me to add the following capabilities to `imgc`:
 
-- Use of [MD5](https://en.wikipedia.org/wiki/MD5) generates a random hash of the image's file name.
+- Use of [MD5](https://datatracker.ietf.org/doc/html/rfc1321) generates a random hash of the image's file name.
 - There's now a dynamically generated class named `imgB-` followed by the hash. The class has only one item, specifying the LQIP[^typoFix] as `background-image` for whatever uses the rule.
 - The wrapping `div` includes this class.
 

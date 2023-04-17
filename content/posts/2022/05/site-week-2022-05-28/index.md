@@ -10,7 +10,7 @@ After this site went to [cut-the-crap-and-just-write (CTCAJW) Mode](/posts/2022/
 
 And, yet, the proliferation of posts posed a potential problem. (P'shaw.)
 
-Now, I worried, I'd quickly annoy people by posting to social media *every time* I issued a new post, as had been my practice since pretty much the earliest days of the site. Back when I'd sometimes gone weeks between posts, that hadn't mattered; but *virtually daily*? Nah. Spamming ["R" not us](https://en.wikipedia.org/wiki/Toys_%22R%22_Us).
+Now, I worried, I'd quickly annoy people by posting to social media *every time* I issued a new post, as had been my practice since pretty much the earliest days of the site. Back when I'd sometimes gone weeks between posts, that hadn't mattered; but *virtually daily*? Nah. Spamming "R" not us.
 
 So, then, I decided to ask people to subscribe to my site's RSS and JSON feeds. This request now takes the form of a pinned tweet on my Twitter profile and pinned toots on my profiles on my most frequently visited [Mastodon](https://joinmastodon.org) instances.
 

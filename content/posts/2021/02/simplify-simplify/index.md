@@ -104,7 +104,7 @@ At least until I decide that last item, I am maintaining two different themes in
 
 Indeed.
 
-The story I've related herein may make it appear that over the last year-and-a-half I have, to paraphrase the [Red Queen from *Alice in Wonderland*](https://en.wikipedia.org/wiki/Red_Queen%27s_race), been running as fast as I could to stay in the same place. That's fair.
+The story I've related herein may make it appear that over the last year-and-a-half I have, to paraphrase the Red Queen from *Alice in Wonderland*, been running as fast as I could to stay in the same place. That's fair.
 
 In my defense, though, I feel the last nineteen months of experience with multiple SSGs and the Node.js universe have been invaluable. I learned a lot and that always was --- and remains --- the idea, much more so than indulging FOMO.
 

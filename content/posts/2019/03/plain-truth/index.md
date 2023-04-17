@@ -17,7 +17,7 @@ Exaggeration? Perhaps. But think about it.
 
 ## Reading your own writing?
 
-Let's say you still have a file from something you wrote in the early 1980s on the original, [MS-DOS](https://www.whoishostingthis.com/resources/ms-dos/) version of [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)[^Scripsit], introduced in 1983 and hailed at the time for how [WYSIWYG](https://whatis.techtarget.com/definition/WYSIWYG-what-you-see-is-what-you-get) it was.[^WYSIWYG]
+Let's say you still have a file from something you wrote in the early 1980s on the original, [MS-DOS](https://www.whoishostingthis.com/resources/ms-dos/) version of Microsoft Word[^Scripsit], introduced in 1983 and hailed at the time for how [WYSIWYG](https://whatis.techtarget.com/definition/WYSIWYG-what-you-see-is-what-you-get) it was.[^WYSIWYG]
 
 First of all, hats off on your diligence over the years, not to mention extraordinary defiance of the odds, in safely moving such files as storage realities evolved: from their original 5.25-inch floppy disks to 3.5-inch microfloppies to multiple hard drives on multiple computers (and perhaps a CD-ROM or DVD-ROM along the way), and finally to the *probable* safety of The Cloud.[^disks] You should be out buying lottery tickets, or playing the slots in Las Vegas, instead of wasting your time reading this.
 
@@ -29,13 +29,13 @@ No, I mean: can you flat-out *open* it to read its contents?[^doc] Well, for sta
 
 That version, and indeed every version going all the way back to Word 2003, can open only those .doc files originating from Word 97 and newer Word versions. At least, that's true unless you do some [geeky stuff with third-party file conversion utilities](https://answers.microsoft.com/en-us/office/forum/office_2010-word/how-to-convert-a-1994-word-file-to-the-2010-word/a1a6064f-8551-4c41-90fb-b2ad6c635121) and, even then, nothing's guaranteed, as some of the comments on that page suggest. Moreover, the continued existence and availability of many of those utilities and services depend on the good will of developers who typically are being paid little or nothing to maintain them (or, so I would gather from looking at one website after another that hasn't been updated in years). Do you feel safe in counting on such capabilities for the long term? On the other hand, the ones in that list that *aren't* free are, well, "additional purchases," and that's putting it gently.[^utils]
 
-The point is: even if you *can* read that file with any version of Word since Word 2003, when Microsoft adopted the [current .docx format](https://en.wikipedia.org/wiki/Microsoft_Office_XML_formats), it ain't gonna be easy.[^Libre] And you may not care for the results.
+The point is: even if you *can* read that file with any version of Word since Word 2003, when Microsoft adopted the current .docx format, it ain't gonna be easy.[^Libre] And you may not care for the results.
 
 ## Hey, .doc, got a pain right here
 
 In the 1980s and a good part of the 1990s, before Windows caught on in the workplace, the business word processing market had little resemblance to the Word-dominated landscape we've known since. Back when all the word processors ran under MS-DOS, it was a completely different ballgame.
 
-Remember [WordPerfect](https://en.wikipedia.org/wiki/WordPerfect#WordPerfect_for_DOS)?[^WordPerfect] Or [WordStar](https://arstechnica.com/information-technology/2017/03/wordstar-a-writers-word-processor/)?[^Martin] Or [PFS:Write](https://www.revolvy.com/page/Pfs%3AWrite)? Or even [DisplayWrite](https://books.google.com/books?id=Pq3POofPsBEC&lpg=PA62&pg=PA248#v=onepage&q&f=true)?
+Remember WordPerfect?[^WordPerfect] Or WordStar?[^Martin] Or PFS:Write? Or even DisplayWrite?
 
 Ah, nostalgia.
 

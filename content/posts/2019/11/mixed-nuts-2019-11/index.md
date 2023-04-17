@@ -47,7 +47,7 @@ If you're thinking about buying your next HDTV, do some Googling about  backligh
 
 *If you have to be up and out at six a.m. on a weekend, the quiet of the neighborhood gas station is infinitely nicer than the usual dog-eat-dog trip during rush hour. Can almost feel your blood pressure drop.*
 
-Our community allows only two options for high-speed home connectivity[^OnlyOne]. I thus soon will have to sign up for at least another year's worth of the only one of those two that provides the *synchronous* broadband connectivity my work (paid and otherwise) requires. Maybe in a few years, 5G will make that [Hobson's choice](https://en.wikipedia.org/wiki/Hobson%27s_choice) a thing of the past.
+Our community allows only two options for high-speed home connectivity[^OnlyOne]. I thus soon will have to sign up for at least another year's worth of the only one of those two that provides the *synchronous* broadband connectivity my work (paid and otherwise) requires. Maybe in a few years, 5G will make that [Hobson's choice](https://www.waywordradio.org/whats-a-hobsons-choice/) a thing of the past.
 
 [^OnlyOne]: Of course, some of you have only one choice or, worse, zero choices. (Observing the utter paucity of such choices in my rural birthplace, on my occasional trips back there, is at once enlightening and appalling.) However, if you --- as do I --- live in one of the ten most populous metro areas in the U.S., that simply shouldn't be the case. [South Korea](https://www.cnet.com/news/south-korea-gets-super-duper-fast-internet/) makes us look ridiculously backward by comparison.
 

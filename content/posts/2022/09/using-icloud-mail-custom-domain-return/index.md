@@ -21,7 +21,7 @@ Before I could test my theory, I had to figure out where those archives were in 
 ~/Library/Mail/V9/96150452-89A7-4317-AB61-99666BAC4F90/
 ```
 
-. . . but, fortunately, they were in [`.mbox` format](https://en.wikipedia.org/wiki/Mbox), which MailMate [imports without complaint](https://manual.mailmate-app.com/account_setup). *(It still took multiple days to complete all the uploads to iCloud Mail but, this time, every single one of those uploads worked.)* I sent the emails from each import to an appropriate, year-based Archive subfolder within my iCloud Mail setup, and all was good to go.
+. . . but, fortunately, they were in [`.mbox` format](https://web.archive.org/web/20201231033049/http://jdebp.eu./FGA/mail-mbox-formats.html), which MailMate [imports without complaint](https://manual.mailmate-app.com/account_setup). *(It still took multiple days to complete all the uploads to iCloud Mail but, this time, every single one of those uploads worked.)* I sent the emails from each import to an appropriate, year-based Archive subfolder within my iCloud Mail setup, and all was good to go.
 
 With everything (including more current emails, of course) moved over from Fastmail, the last step was to repeat what I'd done back in June: making actual DNS settings changes to point each domain back to iCloud Mail. As before, that step went smoothly. In fact, I did *both* domains within a half-hour of each other.
 

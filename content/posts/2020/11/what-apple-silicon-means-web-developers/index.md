@@ -7,7 +7,7 @@ date: 2020-11-20T16:25:00-06:00
 
 It's common to see web developers using laptops and desktops that run [macOS](https://www.apple.com/macos/). The presence of the Apple logo on a web dev's computer, if not covered by seemingly uncounted numbers of stickers the dev has acquired during their travels (hey, remember when people actually *traveled* to developer events?), sometimes seems to be a safe presumption.
 
-And why not? Since the web runs on [\*nix](https://en.wikipedia.org/wiki/Unix-like), there is a significant incentive to build websites while using an operating system that combines enormous user-friendliness with a \*nix-like foundation. (To be specific, macOS is based on [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution), but that's another story.)
+And why not? Since the web runs on \*nix, there is a significant incentive to build websites while using an operating system that combines enormous user-friendliness with a \*nix-like foundation. (To be specific, macOS is based on [BSD](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/BSD/BSD.html), but that's another story.)
 
 This choice of OSs has become considerably more interesting in recent days with the introduction of [Apple's first Mac models](https://support.apple.com/en-us/HT211814) --- Mac Mini, MacBook Air, and the 13-inch version of the MacBook Pro --- whose central processing units (CPUs) are created by Apple itself. And, while what we're seeing now constitute only the beginning of a transition from Intel-created CPUs to Apple Silicon, [it's clear the move is a *big* win](https://www.zdnet.com/article/apple-silicon-m1-is-everything-apple-promised-so-whats-next/).
 
@@ -33,7 +33,7 @@ To be sure, an ASBM certainly can run macOS *versions* of all the major non-obso
 
 Efforts are underway to make virtualization work on ASBMs. We don't know when those will come to fruition. Until then, one can't go ASBM-only while still web-dev'ing for a Windows-dominated world, so the obvious answer in the interim is to have (or have access to) a regular Windows-running PC. Another possibility is to use an online virtual Windows PC, such as with a subscription from [Shadow](https://shadow.tech), but over time that could cost you even more than owning a modest Windows PC.
 
-(By the way, I'm purposely *not* getting into the [x86](https://en.wikipedia.org/wiki/X86)-vs.-[ARM](https://en.wikipedia.org/wiki/ARM_architecture) discussion regarding the whole Windows-on-ASBMs thing. Those who are sufficiently nerdy already know about it, and those who aren't never will care.)
+(By the way, I'm purposely *not* getting into the x86-vs.-ARM discussion regarding the whole Windows-on-ASBMs thing. Those who are sufficiently nerdy already know about it, and those who aren't never will care.)
 
 ## What about mobile devices?
 

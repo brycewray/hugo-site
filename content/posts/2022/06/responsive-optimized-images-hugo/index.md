@@ -29,7 +29,7 @@ Still, that's enough griping on my part. It's time for me to put up or shut up -
 Here's what I built this shortcode to do, based on how I'd used its [Cloudinary](https://cloudinary.com)-using predecessor (more later on this site and Cloudinary):
 
 - Rather than hard-coding breakpoint sizes into variables and then generating resized images based on those, just loop through a "slice" (array) and pull the breakpoints from them. This makes it easier to adjust the breakpoints when desired. It also produces more elegant code, IMHO.
-- To provide the usual "blur-up" effect with a low-quality image placeholder (LQIP) while the full image loads, generate a tiny LQIP, encode it as [Base64](https://en.wikipedia.org/wiki/Base64), and magnify it enough to serve as the image div's background. (As you'll see, just exactly how we do that background styling can depend on other factors --- in the case of this site, which host it's currently using.)
+- To provide the usual "blur-up" effect with a low-quality image placeholder (LQIP) while the full image loads, generate a tiny LQIP, encode it as [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64), and magnify it enough to serve as the image div's background. (As you'll see, just exactly how we do that background styling can depend on other factors --- in the case of this site, which host it's currently using.)
 - Use the `picture` element to offer choices of WebP and JPG image file formats, giving browsers a choice between two storage-efficient versions of each generated image.[^CloudAuto]
 - For other optimization, depend on Hugo's default settings, although it does have [quite a few other options](https://gohugo.io/content-management/image-processing/#imaging-configuration).
 

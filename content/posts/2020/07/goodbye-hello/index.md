@@ -37,8 +37,8 @@ To be sure, Netlify's free tier has a ton to offer, so I was determined that the
 - A reasonably well-performing free tier, but with considerably more leniency where monthly builds are concerned.
 - A top-quality [content delivery network (CDN)](https://techterms.com/definition/cdn) in front of it.
 - Relatively easy --- and, ideally, automatic --- deploys from my choice of online Git [repository](https://techterms.com/definition/repository).
-- The option to deploy *also* (not *only*) via a [command-line interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface)[^CLIstuff] if the circumstances ever demand it.
-- [Brotli](https://opensource.googleblog.com/2015/09/introducing-brotli-new-compression.html) compression, which is even more efficient than the [gzip](https://en.wikipedia.org/wiki/Gzip) (the smaller the delivered content, the faster the web pages load) that pretty much any host offers.
+- The option to deploy *also* (not *only*) via a command-line interface (CLI)[^CLIstuff] if the circumstances ever demand it.
+- [Brotli](https://opensource.googleblog.com/2015/09/introducing-brotli-new-compression.html) compression, which is even more efficient than the [gzip](https://www.gnu.org/software/gzip/) (the smaller the delivered content, the faster the web pages load) that pretty much any host offers.
 
 [^CLIstuff]: While failure to have a CLI isn't a show-stopper by itself, the [advantages I found for that in the getting-around-Netlify post](/posts/2020/06/o-say-can-you-ci-cd/) showed the availability of a CLI to be a worthwhile "want." Ya never know&nbsp;.&nbsp;.&nbsp;.
 

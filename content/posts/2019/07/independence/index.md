@@ -29,7 +29,7 @@ The skies had threatened all afternoon and, indeed, just as we got there it bega
 
 But while we were inside, we happened into one particular department store. (In case you kids don't know, ordinary department stores used to sell high-priced computers. That didn't last long, but back then it was common to buy clothes and computers at many of the same places.) My wife ventured into the women's shoes area and I, bored by that, told her I'd go check out the electronics area.
 
-There, sitting on a glass display panel between two sales clerks who were joking with each other about some silly thing, sat what soon would become known as the "Skinny Mac": the [original Macintosh](https://en.wikipedia.org/wiki/Macintosh_128K).[^skinnyMac]
+There, sitting on a glass display panel between two sales clerks who were joking with each other about some silly thing, sat what soon would become known as the "Skinny Mac": the original Macintosh.[^skinnyMac]
 
 [^skinnyMac]: The term "Skinny Mac" came about when, a few months after I got my Mac, Apple released the first Mac with 512K, which everyone quickly dubbed the "Fat Mac" --- as I recall, partly because Apple didn't want to refer to it even jokingly as the "Big Mac" for reasons which should be fairly obvious, especially where trademark infringement-seeking corporate lawyers are concerned.
 
@@ -57,7 +57,7 @@ I knew I had to have a Mac.
 
 ## Hints of a future
 
-In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local [ComputerLand](https://en.wikipedia.org/wiki/ComputerLand) and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
+In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local ComputerLand store and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
 
 {{< imgh src="1984-07-11_01_retouched_1280x720.jpg" alt="Bryce Wray, in 1984, unwrapping his new Macintosh computer" width=1280 height=720 >}}
 
@@ -66,7 +66,7 @@ July 11, 1984: A much younger and skinnier me eagerly unwraps my new "Skinny Ma
 
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 
-In 1986, the college library got a [Macintosh XL (the rebadged Lisa)](https://en.wikipedia.org/wiki/Apple_Lisa) and [LaserWriter](https://www.macworld.com/article/1150845/laserwriter.html) --- oh, my typographical saliva flowed at that --- and I gleefully used the library's installation of [Ready,Set,Go!](https://winworldpc.com/product/ready-set-go/3) to give my teaching materials even more pizzazz through the magic of a new thing called [desktop publishing](https://en.wikipedia.org/wiki/Desktop_publishing).
+In 1986, the college library got a [Macintosh XL (the rebadged Lisa)](https://lowendmac.com/2005/history-of-apples-lisa/) and [LaserWriter](https://www.macworld.com/article/1150845/laserwriter.html) --- oh, my typographical saliva flowed at that --- and I gleefully used the library's installation of [Ready,Set,Go!](https://winworldpc.com/product/ready-set-go/3) to give my teaching materials even more pizzazz through the magic of a new thing called [desktop publishing](https://www.brighthub.com/multimedia/publishing/articles/62697/).
 
 I also, gradually, learned the rudiments of page layout, and read how opportunities were opening up for people who "got" this sort of work and could write their way out of the proverbial wet paper bag. I soon realized that I might just have a future on the creative side in the marketing of high-tech products --- especially if I could get to a major metropolitan area. That gave me further impetus to pursue a dream I already had for the baby daughter who had come into our lives a little over a year after the Mac did: to move to a place where she, too, would have more opportunities than our sparsely populated home region ever could offer.
 

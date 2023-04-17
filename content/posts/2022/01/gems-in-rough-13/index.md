@@ -32,7 +32,7 @@ The bottom line: I’m once again using internal CSS here and probably will keep
 
 ## A wave-off on AVIFs
 
-A few months ago, I requested and received access to the beta test of [Cloudinary](https://cloudinary.com)’s ability to provide [AVIF](https://en.wikipedia.org/wiki/AVIF) images as one of the choices from its `f_auto` (auto-format) parameter. AVIFs generally are considerably smaller than competing formats’ versions and are supported by a growing number of browsers, at least on the desktop.
+A few months ago, I requested and received access to the beta test of [Cloudinary](https://cloudinary.com)’s ability to provide [AVIF](https://aomediacodec.github.io/av1-avif/) images as one of the choices from its `f_auto` (auto-format) parameter. AVIFs generally are considerably smaller than competing formats’ versions and are supported by a growing number of browsers, at least on the desktop.
 
 However, last week, I opted back out of the beta after reading the following in a Cloudinary blog post, “[The ROI of Adopting AVIF for Websites](https://cloudinary.com/blog/the_roi_of_adopting_avif_for_websites),” which confirmed my own anecdotal observations since being on the beta:
 

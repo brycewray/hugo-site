@@ -29,7 +29,7 @@ First, here's a template file derived from my `billboard.njk`:
 
 Let's break down what's happening here, and keep in mind that everything below (but for, again, one tiny exception) involves stuff built into Nunjucks.
 
-- The `set regExpCode` line creates a [regular expression](https://en.wikipedia.org/wiki/Regular_expression) for the HTML that Eleventy wraps around code blocks (at least, that's true if you're handling syntax highlighting through the most typical methods; but, if you're doing it differently, adjust the regex accordingly).
+- The `set regExpCode` line creates a [regular expression](https://www.regular-expressions.info/) for the HTML that Eleventy wraps around code blocks (at least, that's true if you're handling syntax highlighting through the most typical methods; but, if you're doing it differently, adjust the regex accordingly).
 - The `set fixedContent` line makes a `fixedContent` variable, which soon will be used in deriving the word count, and uses `replace` with the `regExpCode` variable to delete all code-block-related HTML from `fixedContent`. Then, it uses the Nunjucks `striptags` filter to carve the remaining HTML down to just text. (That neatly takes care of any inline images, among other things.)
 - The `set wordCount` line uses the `wordcount` filter to, well, you can guess.
 - The `set readingRate` line assigns *225* as the number of words per minute we'll use in calculating the reading time. If you have a preferred number, substitute it here.
