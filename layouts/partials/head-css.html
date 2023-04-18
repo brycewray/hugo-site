@@ -1,16 +1,8 @@
 {{- $css := "" -}}
+{{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
+{{- $cssOptionsPrint := merge $cssOptions (dict "targetPath" "css/print.css") -}}
 {{- $condition := "" -}}
 {{- $fileName := "" -}}
-
-{{- /*
-	save some repetition below
-*/ -}}
-{{- $titleSitemap := .Site.Params.Titles.Sitemap -}}
-{{- $titleHome := .Site.Params.Titles.Home -}}
-{{- $titlePostslist := .Site.Params.Titles.Postslist -}}
-{{- $titleFourOhFour := .Site.Params.Titles.FourOhFour -}}
-{{- $titleSearch := .Site.Params.Titles.Search -}}
-
 {{- $conditionSocial := false -}}
 {{- $conditionCode := false -}}
 {{- $conditionArtCode := false -}}
@@ -32,17 +24,17 @@
 {{- if and (findRE `(<code)` .Content 1) (not (findRE `<div class="highlight"` .Content 1)) -}}{{- $conditionArtCode = true -}}{{- end -}}
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
 {{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
-{{- if (and (ne .Title $titleHome) (ne .Title $titleSitemap) (ne .Title $titlePostslist) (ne .Title $titleFourOhFour)) -}}{{- $conditionBillboard = true -}}{{- end -}}
-{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
-{{- if (and (eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
-{{- if (eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
+{{- if (and (ne .Title "Home page") (ne .Title "Sitemap (HTML form)") (ne .Title "Posts") (ne .Title "404 Page not found")) -}}{{- $conditionBillboard = true -}}{{- end -}}
+{{- if (and (and (ne .Title "Search the site") (ne .Title "Posts")) (or (eq .Section "posts") (eq .Title "About me") (eq .Title "Privacy policy") (eq .Title "Want to reach me?"))) -}}{{- $conditionArticle = true -}}{{- end -}}
+{{- if (and (eq .Section "posts") (ne .Title "Posts")) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
+{{- if (eq .Title "Posts") -}}{{- $conditionPostsList = true -}}{{- end -}}
 {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
-{{- if (eq .Title $titleHome) -}}{{- $conditionHome = true -}}{{- end -}}
-{{- if (eq .Title $titleSitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
-{{- if (ne .Title $titleSearch) -}}{{- $conditionSearchBtn = true -}}{{- end -}}
-{{- if (eq .Title $titleSearch) -}}{{- $conditionSearchForm = true -}}{{- end -}}
+{{- if (eq .Title "Home page") -}}{{- $conditionHome = true -}}{{- end -}}
+{{- if (eq .Title "Sitemap (HTML form)") -}}{{- $conditionSitemap = true -}}{{- end -}}
+{{- if (ne .Title site.Params.SearchTitle) -}}{{- $conditionSearchBtn = true -}}{{- end -}}
+{{- if (eq .Title site.Params.SearchTitle) -}}{{- $conditionSearchForm = true -}}{{- end -}}
 {{/*  {{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}  */}}
-{{- if (eq .Title $titleFourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
+{{- if (eq .Title "404 Page not found") -}}{{- $condition404 = true -}}{{- end -}}
 
 {{- $cssTypes := slice -}}{{/* init big slice */}}
 {{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
@@ -66,17 +58,18 @@
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
-		{{- $css = resources.Get (print "css/" $fileName ".css") -}}
+		{{- $cssOptions := merge $cssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
+		{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $cssOptions -}}
 		{{- if hugo.IsProduction -}}
-			{{- $css = $css | minify | fingerprint -}}
+			{{- $css = $css | fingerprint -}}
 		{{- end }}
-		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+		<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}"{{- end -}}>
 	{{ end -}}
 {{- end -}}
 
-{{- $printCSS := resources.Get "css/print.css" -}}
+{{- $printCSS := resources.Get "scss/print.scss" | toCSS $cssOptionsPrint -}}
 {{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | minify | fingerprint -}}
+	{{- $printCSS = $printCSS | fingerprint -}}
 {{- end }}
-		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
+<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
