@@ -52,8 +52,8 @@
 	cursor: pointer;
 }
 .searchBtn:focus, .searchBtn:active, .searchBtn:hover {
-	border: 1px solid var(--default-light-link);
-	background-color: var(--default-light-link);
+	border: 1px solid var(--default-light-link-afh);
+	background-color: var(--default-light-link-afh);
 }
 
 #search, #search-ddg {
