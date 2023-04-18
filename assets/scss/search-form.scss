@@ -147,8 +147,8 @@
 		cursor: pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid var.$default-light-link;
-		background-color: var.$default-light-link;
+		border: 1px solid var.$default-light-link-afh;
+		background-color: var.$default-light-link-afh;
 		@media (prefers-color-scheme: dark) {
 			border: 1px solid var.$default-dark-link-afh;
 			background-color: var.$default-dark-link-afh;
