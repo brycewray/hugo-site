@@ -1,0 +1,245 @@
+@use 'variables' as var;
+
+html, body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	-moz-osx-font-smoothing: auto; // only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
+	font-variant-ligatures: normal;
+	text-rendering: optimizeLegibility;
+	// text-justify: inter-character; // someday...
+	font-kerning: normal;
+	font-family: var.$sans-serif;
+	background-color: map-get(var.$twcss, slate-100);
+	color: var.$default-light;
+	@media (prefers-color-scheme: dark) {
+		background: var.$black;
+		color: var.$default-dark;
+	}
+	background-image: linear-gradient(
+		map-get(var.$twcss, slate-600),
+		map-get(var.$twcss, slate-300) 6em,
+		transparent 10em
+	);
+	@media (prefers-color-scheme: dark) {
+		background-image: linear-gradient(
+			map-get(var.$twcss, slate-500),
+			map-get(var.$twcss, slate-800) 6em,
+			transparent 10em
+		);
+	}
+}
+
+html {
+	// scroll-behavior: smooth;
+	scroll-padding-top: 80px;
+}
+
+p, li {
+	line-height: 1.4;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	letter-spacing: -0.025rem;
+}
+
+h1, h2, h3, h4 {
+	outline: 2px transparent;
+	outline-offset: 2px;
+	&:active, &:focus, &:hover {
+		outline: 2px transparent;
+		outline-offset: 2px;
+	}
+}
+
+h1, h2, h3, h4 {
+	display: block;
+	margin-block-start: 0.25rem;
+	margin-block-end: 0.25rem;
+}
+
+h3, .h3 {
+	font-style: italic;
+}
+
+h1, .h1 {
+	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
+	// usually overridden by other styling (e.g., billboard.scss)
+}
+
+h2, .h2 {
+	font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
+}
+
+h3, .h3 {
+	font-size: clamp(1.375rem, 0.5rem + 1.75vw, 1.75rem);
+}
+
+h4, .h4 {
+	font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
+}
+
+a, a:focus, a:hover, a:active {
+	text-decoration-thickness: var.$textDcThick;
+	text-underline-offset: var.$textUnOffst;
+	@media screen and (min-width: var.$bkpt_md) {
+		text-decoration-thickness: var.$textDcThickMd;
+		text-underline-offset: var.$textUnOffstMd;
+	}
+	text-decoration-skip-ink: auto;
+}
+
+a {
+	color: map-get(var.$twcss, blue-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, blue-300);
+	}
+}
+
+a:focus, a:hover, a:active {
+	color: map-get(var.$twcss, blue-900);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, slate-300);
+	}
+}
+
+a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
+	border-bottom: 0;
+	text-decoration: none;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: var.$black;
+	@media (prefers-color-scheme: dark) {
+		background-color: var.$white;
+	}
+}
+
+blockquote {
+	border-left: 4px solid map-get(var.$twcss, slate-400);
+	color: map-get(var.$twcss, gray-600);
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 1.5em;
+	@media (prefers-color-scheme: dark) {
+		// border-left is same color
+		color: map-get(var.$twcss, gray-400);
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+sub, sup {
+	font-size: 65%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.45em;
+}
+ul li li, ol li li, ul li li li, ol li li li {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+ul li li {
+	list-style-type: circle;
+}
+
+ol li li {
+	list-style-type: disc;
+}
+
+ul li li li, ol li li li {
+	list-style-type: square;
+}
+
+#content-main-hugo, main {
+	padding-top: 40px;
+}
+
+#content-main-hugo .topOfMain, main .topOfMain {
+	margin-top: 0.5rem;
+	font-size: 2.25rem;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	vertical-align: middle;
+}
+
+footer {
+	// @media (prefers-color-scheme: dark) {
+	// 	background: var.$black;
+	// }
+	text-align: center;
+	font-size: var.$text-xs;
+	margin: 4rem auto 0 auto;
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	p {
+		line-height: 1.5em; // definitely em, not rem, here
+		code {
+			background-color: map-get(var.$twcss, slate-200);
+			@media (prefers-color-scheme: dark) {
+				background-color: map-get(var.$twcss, slate-700);
+			}
+		}
+	}
+	div.footerWrapper {
+		margin: 0 auto;
+		width: 80%;
+		p {
+			margin: 1rem 0;
+		}
+		div.icons-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 1em;
+		}
+	}
+	@media (min-width: var.$bkpt_lg) {
+		margin: 2rem auto 0 auto;
+		// padding-bottom: 1rem;
+		div.footerWrapper {
+			width: 65%;
+			height: 100%;
+		}
+	}
+}
+
+.container {
+	// width: 90%;
+	margin: 0 auto;
+	&-narrower {
+		margin: 1rem auto 0 auto;
+		width: 80%;
+		@media screen and (min-width: var.$bkpt_lg) {
+			width: 50%;
+			// max-width: 65ch;
+		}
+		@media screen and (min-width: var.$bkpt_2xl) {
+			width: 45%;
+			// max-width: 65ch;
+		}
+		@media screen and (min-width: var.$bkpt_3xl) {
+			width: 40%;
+		}
+		// figure img, img {
+		//   width: 100%;
+		//   height: auto;
+		// }
+	}
+}
+
+li p {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}

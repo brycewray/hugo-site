@@ -1,0 +1,304 @@
+@use 'variables' as var;
+
+// .box, .imgcCaption, .legal, .pokey {
+// 	font-family: var.$sans-serif;
+// }
+
+.ctr {
+	text-align: center;
+}
+.red {
+	color: map-get(var.$twcss, red-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, red-300);
+	}
+}
+
+.legal {
+	font-size: var.$text-xs;
+}
+.pokey {
+	font-size: var.$text-sm;
+}
+.sansSerif {
+	font-family: var.$sans-serif;
+}
+.serif {
+	font-family: var.$serif;
+}
+.tightLead {
+	line-height: 1.25;
+}
+.nobrk, .nowrap {
+	white-space: nowrap;
+}
+.text-nowrap {
+	white-space: nowrap;
+	font-size: inherit;
+}
+.bg-center {
+	background-position: center;
+}
+
+.box {
+	font-size: 85%;
+	display: block;
+	box-sizing: border-box;
+	background-color: var.$white;
+	border: 1px solid var.$black;
+	margin: 0.5em auto;
+	width: 100%;
+	padding: 1em 1.25em;
+	@media (prefers-color-scheme: dark) {
+		background-color: map-get(var.$twcss, slate-800);
+		border: 1px solid map-get(var.$twcss, gray-200);
+	}
+	p {
+		padding: 0;
+		margin: 0;
+	}
+	+ hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+		margin-top: 1.75em;
+	}
+	code {
+		background-color: map-get(var.$twcss, slate-100);
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, slate-600);
+		}
+	}
+	a code {
+		// background-color: map-get(var.$twcss, slate-100);
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, slate-700);
+		}
+	}
+	.red {
+		color: map-get(var.$twcss, red-600);
+		@media (prefers-color-scheme: dark) {
+			color: map-get(var.$twcss, red-400);
+		}
+	}
+}
+
+img.containedImage {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
+}
+img.ctrImg {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.img-phn {
+	width: 90%;
+	@media screen and (min-width: var.$bkpt_md) {
+		width: 50%;
+	}
+}
+.imgcCaption {
+	padding: 0;
+	margin-block-start: 0.5em;
+	line-height: 1.375;
+	font-size: 0.75em;
+	text-align: center;
+}
+.relative {
+	position: relative;
+}
+.w-full {
+	width: 100%;
+}
+.h-full {
+	height: 100%;
+}
+.h-auto {
+	height: auto;
+}
+.mx-auto {
+	margin-right: auto;
+	margin-left: auto;
+}
+.w-auto {
+	width: auto;
+}
+.inline {
+	display: inline;
+}
+
+.punctuationExample {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: var.$serif;
+	text-align: center;
+}
+
+.indentAfterLI {
+	margin-left: 2em; // 2em with Public Sans, 2.25em with Inter
+	&.box {
+		$bIALImarginLeft: 3em;
+		margin-left: $bIALImarginLeft;
+		width: calc(100% - $bIALImarginLeft);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.animate-fade {
+	animation: fadeIn 750ms ease-in-out;
+}
+
+// start, text/LH classes from TWCSS
+// =================================
+
+.text-xs {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.text-sm {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.text-base {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+.text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+
+.text-5xl, .text-6xl, .text-7xl, .text-8xl, .text-9xl {
+	line-height: 1;
+}
+
+.text-5xl {
+	font-size: 3rem;
+}
+
+.text-6xl {
+	font-size: 3.75rem;
+}
+
+.text-7xl {
+	font-size: 4.5rem;
+}
+
+.text-8xl {
+	font-size: 6rem;
+}
+
+.text-9xl {
+	font-size: 8rem;
+}
+
+// ===============================
+// end, text/LH classes from TWCSS
+
+.mono {
+	font-family: var.$monospaced;
+}
+
+circle.GitHub,
+circle.RSS,
+path.MastodonBody,
+path.Twitter,
+path.JSON,
+path.RSS {
+	fill: var.$white;
+	@media (prefers-color-scheme: dark) {
+		fill: var.$black;
+	}
+}
+
+circle.Twitter,
+circle.JSON {
+	fill: var.$black;
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-300);
+	}
+}
+
+path.GitHub,
+circle.MastodonCircle,
+path.MastodonM,
+circle.Twitter,
+circle.RSS,
+circle.JSON {
+	fill: map-get(var.$twcss, blue-700);
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-300);
+	}
+}
+
+a:hover path.GitHub,
+a:hover circle.MastodonCircle,
+a:hover path.MastodonM,
+a:hover circle.Twitter,
+a:hover circle.RSS,
+a:hover circle.JSON {
+	fill: map-get(var.$twcss, blue-800);
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-200);
+	}
+}
+
+path.MastodonBody,
+path.MastodonM {
+	fill-rule:nonzero;
+}
+
+// // needed only if using darker bkgd in dark mode
+// a:hover circle.GitHub,
+// a:hover path.Twitter,
+// a:hover path.RSS,
+// a:hover path.JSON,
+// a:hover path.MastodonBody {
+// 	@media (prefers-color-scheme: dark) {
+// 		fill: var.$white;
+// 	}
+// }
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}

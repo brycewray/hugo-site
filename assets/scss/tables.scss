@@ -1,0 +1,123 @@
+@charset 'utf-8';
+@use 'partials/variables' as var;
+
+// table {
+// 	font-family: var.$sans-serif;
+// }
+
+td {
+	vertical-align: top;
+}
+
+// === table for web typography article, part II
+table.noborders {
+	width: 100%;
+	// table-layout: fixed;
+	margin: 1.5rem auto 1rem auto;
+	border: 0;
+	border-collapse: collapse;
+	tr {
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, gray-200);
+			color: var.$black;
+		}
+	}
+	td {
+		text-align: left;
+		vertical-align: middle;
+		padding: 0.25rem 0 0.25rem 0.5rem;
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+		}
+	}
+	tr:nth-child(even) {
+		background-color: hsl(210, 100%, 94%);
+	}
+	thead {
+		background-color: map-get(var.$twcss, blue-900);
+		color: var.$white;
+	}
+	thead tr {
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, blue-900);
+		}
+	}
+	thead td {
+		color: var.$white;
+		font-weight: bold;
+	}
+	td {
+		img {
+			display: block;
+			max-width: 60%;
+			@media screen and (min-width: var.$bkpt_md) {
+				max-width: 40%;
+			}
+			height: auto;
+		}
+	}
+}
+// === end, table for web typography article, part II
+
+// === table for MLB/NFL article
+table.leagues {
+	table-layout: fixed; // so don't have to spec each `td`'s width
+	width: 90%;
+	margin: 1rem auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+	@media (min-width: 900px) {
+		width: 60%;
+	}
+}
+
+// === end, table for MLB/NFL article
+
+table.ulysses {
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
+	font-size: var.$text-xs;
+	@media screen and (min-width: var.$bkpt_md) {
+		font-size: inherit;
+		table-layout: fixed; // so don't have to spec each `td`'s width
+	}
+	thead th {
+		background-color: map-get(var.$twcss, blue-700);
+		border: 1px solid var.$black;
+		color: white;
+		@media (prefers-color-scheme: dark) {
+			background-color: map-get(var.$twcss, blue-900);
+			border: 1px solid var.$white;
+		}
+	}
+	td {
+		text-align: center;
+		border: 1px solid var.$black;
+		@media (prefers-color-scheme: dark) {
+			border: 1px solid var.$white;
+			color: var.$white;
+		}
+		padding: 0;
+	}
+	thead th, td {
+		padding: 0.125em 0.375em;
+	}
+	thead th:nth-child(1), td:nth-child(1) {
+		text-align: left;
+	}
+	tr:nth-child(odd) {
+		background-color: var.$white;
+		@media (prefers-color-scheme: dark){
+			background-color: map-get(var.$twcss, slate-700);
+		}
+	}
+	tr:nth-child(even) {
+		background-color: map-get(var.$twcss, emerald-50);
+		@media (prefers-color-scheme: dark){
+			background-color: map-get(var.$twcss, emerald-900);
+		}
+	}
+}
