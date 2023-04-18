@@ -19,7 +19,7 @@ All I wanted to do was make my bold and slanted text instances a little easier t
 
 Using sans-serif fonts, like this site is doing as of the initial publication of this post, can make some styling combinations hard to see under certain viewing conditions. While this is true for slanted text, it surprisingly can happen with boldfaced text, too, especially if one is viewing in dark mode.
 
-(Obviously, where slanted text is concerned, what we're talking about with many sans-serif web fonts is *obliquing* rather than the more commonly mentioned *italicization*. However, since I suspect readers will be more familiar with calling slanted text "italics" than calling it "oblique," I'll use the former term from here on. Also: equally obviously, *truly* italicized text, like <em class="serif">this serif example</em>, is a completely separate consideration.)
+(Obviously, where slanted text is concerned, what we're talking about with many sans-serif web fonts is *obliquing* rather than the more commonly mentioned *italicization*. However, since I suspect readers will be more familiar with calling slanted text "italics" than calling it "oblique," I'll use the former term from here on. Also: equally obviously, *truly* italicized text is a completely separate consideration.)
 
 I've noticed some sites, such as [Chris Coyier's](https://chriscoyier.net/), use some subtle styling to make bolds and italics stand out slightly from surrounding plain text, so I decided to try that on this site. I thought at first that it would be fairly simple: just set each variation to be a little darker in light mode and a little lighter in dark mode.
 
