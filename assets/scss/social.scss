@@ -182,6 +182,12 @@ a > .card, a > .toot-card {
 		@media (prefers-color-scheme: dark) {
 			color: map-get(var.$twcss, gray-200);
 		}
+		&:hover {
+			color: var.$default-light-link;
+			@media (prefers-color-scheme: dark) {
+				color: var.$default-dark-link;
+			}
+		}
 	}
 	/* === needed in Eleventy but not in Hugo
 	.toot-date:after {
