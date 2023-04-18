@@ -60,24 +60,24 @@
 	right: 0px;
 	margin: 0; // fixes oddity in Safari
 	padding: 3px 12px;
-	border: 1px solid map-get(var.$twcss, blue-700);
+	border: 1px solid var.$default-light-link;
 	font-weight: bold;
-	background-color: map-get(var.$twcss, blue-700);
+	background-color: var.$default-light-link;
 	color: var.$white;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, blue-300);
-		background-color: map-get(var.$twcss, blue-300);
+		border: 1px solid var.$default-dark-link;
+		background-color: var.$default-dark-link;
 		color: var.$black;
 	}
 	&:hover {
 		cursor: pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid map-get(var.$twcss, blue-700);
-		background-color: map-get(var.$twcss, blue-700);
+		border: 1px solid var.$default-light-link-afh;
+		background-color: var.$default-light-link-afh;
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid map-get(var.$twcss, blue-50);
-			background-color: map-get(var.$twcss, blue-50);
+			border: 1px solid var.$default-dark-link-afh;
+			background-color: var.$default-dark-link-afh;
 		}
 	}
 }
@@ -134,24 +134,24 @@
 	text-align: center;
 	border-radius: 9px;
 	padding: 3px 12px;
-	border: 1px solid map-get(var.$twcss, blue-700);
+	border: 1px solid var.$default-light-link;
 	font-weight: bold;
-	background-color: map-get(var.$twcss, blue-700);
+	background-color: var.$default-light-link;
 	color: var.$white;
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, blue-300);
-		border-color: map-get(var.$twcss, blue-300);
+		background-color: var.$default-dark-link;
+		border-color: var.$default-dark-link;
 		color: var.$black;
 	}
 	&:hover {
 		cursor: pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid map-get(var.$twcss, blue-700);
-		background-color: map-get(var.$twcss, blue-700);
+		border: 1px solid var.$default-light-link;
+		background-color: var.$default-light-link;
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid map-get(var.$twcss, blue-50);
-			background-color: map-get(var.$twcss, blue-50);
+			border: 1px solid var.$default-dark-link-afh;
+			background-color: var.$default-dark-link-afh;
 		}
 	}
 }

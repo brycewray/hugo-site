@@ -54,9 +54,9 @@ article {
 		}
 	}
 	strong:is(blockquote *):not(a *), b:is(blockquote *):not(a *), em:is(blockquote *):not(a *), i:is(blockquote *):not(a *), em strong:is(blockquote *):not(a *), strong em:is(blockquote *):not(a *), i b:is(blockquote *):not(a *), b i:is(blockquote *):not(a *) {
-		color: var.$default-light; // gray-700 (vs. gray-600)
+		color: map-get(var.$twcss, gray-600); // (vs. gray-550)
 		@media (prefers-color-scheme: dark) {
-			color: var.$default-dark; // gray-300 (vs. gray-400)
+			color: map-get(var.$twcss, gray-350); // (vs. gray-400)
 		}
 	}
 }

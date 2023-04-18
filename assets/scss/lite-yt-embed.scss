@@ -92,3 +92,10 @@ lite-youtube.lyt-activated > .lty-playbtn {
 	white-space: nowrap;
 	width: 1px;
 }
+
+.lyt-disclaimer .red {
+	color: map-get(var.$twcss, red-700);
+	@media (prefers-color-scheme: dark) {
+		color: map-get(var.$twcss, red-300);
+	}
+}

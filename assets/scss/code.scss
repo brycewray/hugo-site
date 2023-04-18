@@ -13,6 +13,14 @@
 	}
 }
 
+// Fallback colors to catch var issues
+.chroma *, .code-inline * {
+	color: var.$default-light, yellow;
+	@media (prefers-color-scheme: dark) {
+		color: var.$default-dark, midnightblue;
+	}
+}
+
 // Other
 .chroma .x, .code-inline .x {
 	color: var.$black;
@@ -791,6 +799,16 @@ code {
 	padding: .1em;
 	border-radius: .3em;
 	white-space: normal;
+}
+
+.labeled-highlight {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	line-height: 0.5em;
+}
+.labeled-highlight + div.highlight {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 article code {

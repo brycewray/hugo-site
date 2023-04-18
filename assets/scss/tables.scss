@@ -33,7 +33,7 @@ table.noborders {
 		}
 	}
 	tr:nth-child(even) {
-		background-color: hsl(210, 100%, 94%);
+		background-color: map-get(var.$twcss, sky-100);
 	}
 	thead {
 		background-color: map-get(var.$twcss, blue-900);
@@ -85,11 +85,10 @@ table.ulysses {
 		table-layout: fixed; // so don't have to spec each `td`'s width
 	}
 	thead th {
-		background-color: map-get(var.$twcss, blue-700);
+		background-color: map-get(var.$twcss, blue-800);
 		border: 1px solid var.$black;
 		color: white;
 		@media (prefers-color-scheme: dark) {
-			background-color: map-get(var.$twcss, blue-900);
 			border: 1px solid var.$white;
 		}
 	}

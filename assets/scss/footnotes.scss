@@ -36,9 +36,9 @@
 
 .footnote-sim {
 	font-size: 0.65em;
-	color: map-get(var.$twcss, blue-700);
+	color: var.$default-light-link;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, blue-300);
+		color: var.$default-dark-link;
 	}
 }
 

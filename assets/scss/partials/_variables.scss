@@ -15,6 +15,7 @@ $twcss: (
 	slate-700: #344256,
 	slate-800: #1d283a,
 	slate-900: #0f1729,
+	slate-950: #020617,
 	gray-50: #f9fafb,
 	gray-100: #f3f4f6,
 	gray-200: #e5e7eb,
@@ -28,6 +29,7 @@ $twcss: (
 	gray-700: #374151,
 	gray-800: #1f2937,
 	gray-900: #111827,
+	gray-950: #030712,
 	zinc-50: #fafafa,
 	zinc-100: #f4f4f5,
 	zinc-200: #e4e4e7,
@@ -38,6 +40,7 @@ $twcss: (
 	zinc-700: #3f3f46,
 	zinc-800: #27272a,
 	zinc-900: #18181b,
+	zinc-950: #09090b,
 	neutral-50: #fafafa,
 	neutral-100: #f5f5f5,
 	neutral-200: #e5e5e5,
@@ -48,6 +51,7 @@ $twcss: (
 	neutral-700: #404040,
 	neutral-800: #262626,
 	neutral-900: #171717,
+	neutral-950: #0a0a0a,
 	stone-50: #fafaf9,
 	stone-100: #f5f5f4,
 	stone-200: #e7e5e4,
@@ -58,6 +62,7 @@ $twcss: (
 	stone-700: #44403c,
 	stone-800: #292524,
 	stone-900: #1c1917,
+	stone-950: #0c0a09,
 	red-50: #fef2f2,
 	red-100: #fee2e2,
 	red-200: #fecaca,
@@ -68,6 +73,7 @@ $twcss: (
 	red-700: #ba1c1c,
 	red-800: #981b1b,
 	red-900: #7f1d1d,
+	red-950: #450a0a,
 	orange-50: #fff7ed,
 	orange-100: #ffedd5,
 	orange-200: #fed7aa,
@@ -78,6 +84,7 @@ $twcss: (
 	orange-700: #c2410c,
 	orange-800: #9a3412,
 	orange-900: #7c2d12,
+	orange-950: #431407,
 	amber-50: #fffbeb,
 	amber-100: #fef3c7,
 	amber-200: #fde68a,
@@ -88,6 +95,7 @@ $twcss: (
 	amber-700: #b45309,
 	amber-800: #92400e,
 	amber-900: #78350f,
+	amber-950: #451a03,
 	yellow-50: #fefce8,
 	yellow-100: #fef9c3,
 	yellow-200: #fef08a,
@@ -98,6 +106,7 @@ $twcss: (
 	yellow-700: #a16207,
 	yellow-800: #854d0e,
 	yellow-900: #713f12,
+	yellow-950: #422006,
 	lime-50: #f7fee7,
 	lime-100: #ecfccb,
 	lime-200: #d9f99d,
@@ -108,6 +117,7 @@ $twcss: (
 	lime-700: #4d7c0f,
 	lime-800: #3f6212,
 	lime-900: #365314,
+	lime-950: #1a2e05,
 	green-50: #f0fdf4,
 	green-100: #dcfce7,
 	green-200: #bbf7d0,
@@ -118,6 +128,7 @@ $twcss: (
 	green-700: #15803d,
 	green-800: #166534,
 	green-900: #14532d,
+	green-950: #052e16,
 	emerald-50: #ecfdf5,
 	emerald-100: #d1fae5,
 	emerald-200: #a7f3d0,
@@ -126,6 +137,7 @@ $twcss: (
 	emerald-700: #047857,
 	emerald-800: #065f46,
 	emerald-900: #064e3b,
+	emerald-950: #022c22,
 	teal-50: #f0fdfa,
 	teal-100: #ccfbf1,
 	teal-200: #99f6e4,
@@ -136,6 +148,7 @@ $twcss: (
 	teal-700: #0f766e,
 	teal-800: #115e59,
 	teal-900: #134e4a,
+	teal-950: #042f2e,
 	cyan-50: #ecfeff,
 	cyan-100: #cffafe,
 	cyan-200: #a5f3fc,
@@ -146,6 +159,7 @@ $twcss: (
 	cyan-700: #0e7490,
 	cyan-800: #155e75,
 	cyan-900: #164e63,
+	cyan-950: #083344,
 	sky-50: #f0f9ff,
 	sky-100: #e0f2fe,
 	sky-200: #bae6fd,
@@ -156,6 +170,7 @@ $twcss: (
 	sky-700: #0369a0,
 	sky-800: #075783,
 	sky-900: #0c4a6e,
+	sky-950: #082f49,
 	blue-50: #f0f6ff,
 	blue-100: #dcebfe,
 	blue-200: #bedbfe,
@@ -163,9 +178,10 @@ $twcss: (
 	blue-400: #61a6fa,
 	blue-500: #3c83f6,
 	blue-600: #2463eb,
-	blue-700: #1d4fd7,
-	blue-800: #1e3b8a,
+	blue-700: #1d4fd8,
+	blue-800: #1e40af,
 	blue-900: #1f3b8a,
+	blue-950: #172554,
 	indigo-50: #eef2ff,
 	indigo-100: #e0e7ff,
 	indigo-200: #c7d2fe,
@@ -176,6 +192,7 @@ $twcss: (
 	indigo-700: #4338ca,
 	indigo-800: #3730a3,
 	indigo-900: #312e81,
+	indigo-950: #1e1b4b,
 	violet-50: #f5f3ff,
 	violet-100: #ede9fe,
 	violet-200: #ddd6fe,
@@ -186,6 +203,7 @@ $twcss: (
 	violet-700: #6d28d9,
 	violet-800: #5b21b6,
 	violet-900: #4c1d95,
+	violet-950: #2e1065,
 	purple-50: #faf5ff,
 	purple-100: #f3e8ff,
 	purple-200: #e9d5ff,
@@ -196,6 +214,7 @@ $twcss: (
 	purple-700: #7e22ce,
 	purple-800: #6b21a8,
 	purple-900: #581c87,
+	purple-950: #3b0764,
 	fuchsia-50: #fdf4ff,
 	fuchsia-100: #fae8ff,
 	fuchsia-200: #f5d0fe,
@@ -206,6 +225,7 @@ $twcss: (
 	fuchsia-700: #a21caf,
 	fuchsia-800: #86198f,
 	fuchsia-900: #701a75,
+	fuchsia-950: #4a044e,
 	pink-50: #fdf2f8,
 	pink-100: #fce7f3,
 	pink-200: #fbcfe8,
@@ -216,6 +236,7 @@ $twcss: (
 	pink-700: #be185d,
 	pink-800: #9d174d,
 	pink-900: #831843,
+	pink-950: #500724,
 	rose-50: #fff1f2,
 	rose-100: #ffe4e6,
 	rose-200: #fecdd3,
@@ -225,10 +246,16 @@ $twcss: (
 	rose-600: #e11d48,
 	rose-700: #be123c,
 	rose-800: #9f1239,
-	rose-900: #881337
+	rose-900: #881337,
+	rose-950: #4c0519
 );
 $default-light: map-get($twcss, gray-700);
 $default-dark: map-get($twcss, gray-300);
+$default-light-link: map-get($twcss, blue-700);
+$default-dark-link: map-get($twcss, blue-300);
+// for active-focus-hover...
+$default-light-link-afh: map-get($twcss, blue-900);
+$default-dark-link-afh: map-get($twcss, slate-300);
 // =========================
 // ===== end, COLORS =====
 
@@ -236,9 +263,9 @@ $default-dark: map-get($twcss, gray-300);
 // === start, TYPOGRAPHY ===
 // =========================
 // Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome"
-$sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$serif: ui-serif, "New York", Georgia, Cambria, "Times New Roman", Times, serif;
-$monospaced: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$sans-serif: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$serif: ui-serif, "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+$monospaced: ui-monospace, SFMono-Regular, "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", "Source Code Pro", Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Droid Sans Mono", "Courier New", monospace;
 $social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // like Tailwind **SIZES**
