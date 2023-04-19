@@ -21,7 +21,9 @@ params:
     About: "About me"
   # ===========================
   Styling: "VCSS" # choices for Styling are "SCSS" and "VCSS" (vanilla CSS)
-  # -- REMINDER: for "SCSS" you **must** load Embedded Dart Sass in the GHA!!
+  # -- REMINDER:
+  # -- for "SCSS" you **must** load Embedded Dart Sass in the GHA
+  # -- **or** use Node Sass
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
   EmailObfuscation: "local" # choices are "local" ahd "host"
   Deploy: "CI" # Boolean --- for Gitinfo from a GHA
@@ -36,7 +38,7 @@ params:
   AuthorUrl: "https://www.brycewray.com/about/"
   AuthorAvatar: "https://www.brycewray.com/images/icons/apple-icon-1024x1024.png"
   Description: "Bryce Wray’s website | Observations, opinions, geekiness"
-  Site_domain: "{{< site.params.domain >}}"
+  Site_domain: "{{< Site.Params.Domain >}}"
 
 ignoreErrors:
    - "error-remote-getjson"
