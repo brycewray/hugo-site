@@ -21,10 +21,6 @@ on:
     branches:
       - main
 
-env:
-  HUGO_VERSION: 0.111.3 # will get Extended Version below
-  PAGEFIND_VERSION: 0.12.0
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -38,11 +34,12 @@ jobs:
           fetch-depth: 0
           # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
           # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
-      - name: Download Hugo
-        run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
-        # 0.103.0 began new naming convention
-      - name: Install Hugo
-        run: sudo dpkg -i hugo*.deb
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install packages
+        run: npm install
       # - name: Download Embedded Dart Sass
       #   run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
       # - name: Unpack Embedded Dart Sass
@@ -51,20 +48,8 @@ jobs:
       #     sass_embedded/dart-sass-embedded --version
       # - name: Add Embedded Dart Sass to the PATH
       #   run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      - name: Install Pagefind
-        uses: supplypike/setup-bin@v3
-        with:
-          uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
-          name: "pagefind_extended"
-          version: ${{env.PAGEFIND_VERSION}}
       - name: Build site with Hugo
-        run: hugo --verbose --minify
-      - name: Move "excerpts" feeds (RSS/Atom and JSON)
-        run: |
-          mv public/posts/index.xml public/index-excerpts.xml
-          mv public/posts/index.json public/index-excerpts.json
-      - name: Run Pagefind
-        run: pagefind_extended --source "public"
+        run: npm run build
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
         with:
