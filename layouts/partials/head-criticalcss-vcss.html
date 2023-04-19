@@ -1,0 +1,5 @@
+{{- $css := "" -}}
+{{- $css = (resources.Match "css/partials/0*.css") | resources.Concat "critical.css" -}}
+{{- with $css }}
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}
