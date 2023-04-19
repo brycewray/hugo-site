@@ -21,6 +21,7 @@ params:
     About: "About me"
   # ===========================
   Styling: "VCSS" # choices for Styling are "SCSS" and "VCSS" (vanilla CSS)
+  # -- REMINDER: for "SCSS" you **must** load Embedded Dart Sass in the GHA!!
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
   EmailObfuscation: "local" # choices are "local" ahd "host"
   Deploy: "CI" # Boolean --- for Gitinfo from a GHA
