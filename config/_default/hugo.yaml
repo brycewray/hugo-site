@@ -22,8 +22,8 @@ params:
   # ===========================
   Styling: "VCSS" # choices for Styling are "SCSS" and "VCSS" (vanilla CSS)
   # -- REMINDER:
-  # -- for "SCSS" you **must** load Embedded Dart Sass in the GHA
-  # -- **or** use Node Sass
+  # -- for "SCSS" you **must** (a.) load Embedded Dart Sass in the GHA
+  # -- **or** (b.) use Node Sass and appropriate `package.json` scripting
   Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
   EmailObfuscation: "local" # choices are "local" ahd "host"
   Deploy: "CI" # Boolean --- for Gitinfo from a GHA
