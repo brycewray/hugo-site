@@ -1,0 +1,11 @@
+{{- $css := "" -}}
+{{- if eq .Site.Params.Styling "SCSS" -}}
+	{{- $optionsCSSCritical := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
+	{{- $css = resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
+{{- end -}}
+{{- if eq .Site.Params.Styling "VCSS" -}}
+	{{- $css = (resources.Match "css/partials/0*.css") | resources.Concat "critical.css" -}}
+{{- end -}}
+{{- with $css }}
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}
