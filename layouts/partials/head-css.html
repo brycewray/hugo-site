@@ -71,34 +71,28 @@
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
 		{{- if eq $Styling "SCSS" -}}
-			{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
+			{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".min.css" )) -}}
 			{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $scssOptions -}}
-			{{- if hugo.IsProduction -}}
-				{{- $css = $css | fingerprint -}}
-			{{- end }}
 		{{- end -}}
 		{{- if eq $Styling "VCSS" -}}
-			{{- $css = resources.Get (print "css/" $fileName ".css") -}}
-			{{- if hugo.IsProduction -}}
-				{{- $css = $css | minify | fingerprint -}}
-			{{- end }}
+			{{- $css = resources.Get (print "css/" $fileName ".css") | minify -}}
 		{{- end -}}
+		{{- if hugo.IsProduction -}}
+			{{- $css = $css | fingerprint -}}
+		{{- end }}
 		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	{{ end -}}
 {{- end -}}
 
 {{- if eq $Styling "SCSS" -}}
-	{{- $scssOptionsPrint := merge $scssOptions (dict "targetPath" "css/print.css") -}}
+	{{- $scssOptionsPrint := merge $scssOptions (dict "targetPath" "css/print.min.css") -}}
 	{{- $printCSS = resources.Get "scss/print.scss" | toCSS $scssOptionsPrint -}}
-	{{- if hugo.IsProduction -}}
-		{{- $printCSS = $printCSS | fingerprint -}}
-	{{- end }}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $printCSS = resources.Get "css/print.css" -}}
-	{{- if hugo.IsProduction -}}
-		{{- $printCSS = $printCSS | minify | fingerprint -}}
-	{{- end }}
+	{{- $printCSS = resources.Get "css/print.css" | minify -}}
 {{- end -}}
+{{- if hugo.IsProduction -}}
+	{{- $printCSS = $printCSS | fingerprint -}}
+{{- end }}
 <link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
