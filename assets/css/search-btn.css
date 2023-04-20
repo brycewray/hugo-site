@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 search-button {
-	--twcss-blue-50: #f0f6ff;
+	--blue-50: #f0f6ff;
 	/* font-family: var(--sans-serif); */
 	display: block;
 	margin: 2em auto;

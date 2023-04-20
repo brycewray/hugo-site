@@ -1,5 +1,5 @@
 header, .nav, .nav-Menu {
-	background-color: var(--twcss-slate-300);
+	background-color: var(--slate-300);
 }
 
 header {
@@ -18,7 +18,7 @@ header {
 }
 .nav-Toggle svg {
 	width: 1.5rem;
-	fill: var(--twcss-slate-800);
+	fill: var(--slate-800);
 }
 .nav-Toggle .close {
 	display: none;
@@ -66,7 +66,7 @@ header {
 	color: black;
 }
 .nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-	color: var(--twcss-slate-600);
+	color: var(--slate-600);
 }
 /* .nav-Menu svg {
 	width: 1.5rem;
@@ -118,15 +118,15 @@ header {
 
 @media (prefers-color-scheme: dark) {
 	header, .nav, .nav-Menu {
-		background-color: var(--twcss-slate-800);
+		background-color: var(--slate-800);
 	}
 	.nav-Toggle svg {
-		fill: var(--twcss-slate-50);
+		fill: var(--slate-50);
 	}
 	.nav-Menu a {
 		color: white;
 	}
 	.nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-		color: var(--twcss-slate-200);
+		color: var(--slate-200);
 	}
 }

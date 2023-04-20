@@ -25,7 +25,7 @@ code {
 article code {
 	font-size: 0.975em;
 	--bg-lt: white;
-	--bg-dk: var(--twcss-slate-700);
+	--bg-dk: var(--slate-700);
 }
 
 article .footnotes code {
@@ -44,13 +44,13 @@ article .footnotes li code {
 }
 
 article blockquote code {
-	color: var(--twcss-slate-800);
+	color: var(--slate-800);
 }
 
 .box code {
 	font-size: 1em; /* definitely em */
-	--bg-lt: var(--twcss-slate-100);
-	--bg-dk: var(--twcss-slate-600);
+	--bg-lt: var(--slate-100);
+	--bg-dk: var(--slate-600);
 }
 
 article ol li .highlight {
@@ -77,6 +77,6 @@ article ol li .highlight {
 }
 @media (prefers-color-scheme: dark) {
 	article blockquote code {
-		color: var(--twcss-slate-300); /* slate-300 */
+		color: var(--slate-300); /* slate-300 */
 	}
 }

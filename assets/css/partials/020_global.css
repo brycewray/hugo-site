@@ -7,11 +7,11 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var(--sans-serif);
-	background-color: var(--twcss-slate-100);
+	background-color: var(--slate-100);
 	color: var(--default-light);
 	background-image: linear-gradient(
-		var(--twcss-slate-600),
-		var(--twcss-slate-300) 6em,
+		var(--slate-600),
+		var(--slate-300) 6em,
 		transparent 10em
 	);
 }
@@ -187,8 +187,8 @@ li p {
 		background: black;
 		color: var(--default-dark);
 		background-image: linear-gradient(
-			var(--twcss-slate-500),
-			var(--twcss-slate-800) 6em,
+			var(--slate-500),
+			var(--slate-800) 6em,
 			transparent 10em
 		)
 	}

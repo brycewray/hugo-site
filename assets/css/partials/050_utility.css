@@ -6,7 +6,7 @@
  text-align: center;
 }
 .red {
- color: var(--twcss-red-700);
+ color: var(--red-700);
 }
 
 .legal {
@@ -154,7 +154,7 @@
 
 @media (prefers-color-scheme: dark) {
 	red {
-		color: var(--twcss-red-300);
+		color: var(--red-300);
 	}
 }
 
