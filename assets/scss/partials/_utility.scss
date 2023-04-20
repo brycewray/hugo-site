@@ -135,66 +135,6 @@
 	font-family: var.$monospaced;
 }
 
-circle.GitHub,
-circle.RSS,
-path.MastodonBody,
-path.Twitter,
-path.JSON,
-path.RSS {
-	fill: var.$white;
-	@media (prefers-color-scheme: dark) {
-		fill: var.$black;
-	}
-}
-
-circle.Twitter,
-circle.JSON {
-	fill: var.$black;
-	@media (prefers-color-scheme: dark) {
-		fill: map-get(var.$twcss, blue-300);
-	}
-}
-
-path.GitHub,
-circle.MastodonCircle,
-path.MastodonM,
-circle.Twitter,
-circle.RSS,
-circle.JSON {
-	fill: var.$default-light-link;
-	@media (prefers-color-scheme: dark) {
-		fill: var.$default-dark-link;
-	}
-}
-
-a:hover path.GitHub,
-a:hover circle.MastodonCircle,
-a:hover path.MastodonM,
-a:hover circle.Twitter,
-a:hover circle.RSS,
-a:hover circle.JSON {
-	fill: var.$default-light-link-afh;
-	@media (prefers-color-scheme: dark) {
-		fill: var.$default-dark-link-afh;
-	}
-}
-
-path.MastodonBody,
-path.MastodonM {
-	fill-rule:nonzero;
-}
-
-// // needed only if using darker bkgd in dark mode
-// a:hover circle.GitHub,
-// a:hover path.Twitter,
-// a:hover path.RSS,
-// a:hover path.JSON,
-// a:hover path.MastodonBody {
-// 	@media (prefers-color-scheme: dark) {
-// 		fill: var.$white;
-// 	}
-// }
-
 .sr-only {
 	position: absolute;
 	width: 1px;
