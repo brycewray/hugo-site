@@ -1,10 +1,18 @@
 {{- $css := "" -}}
+{{- $scssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
+
 {{- if eq .Site.Params.Styling "SCSS" -}}
-	{{- $optionsCSSCritical := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
-	{{- $css = resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
+	{{- $scssOptions := merge $scssOptions (dict "targetPath" "critical.css") -}}
+	{{- $css = resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
+	{{- if hugo.IsProduction -}}
+		{{- $css = $css | fingerprint -}}
+	{{- end }}
 {{- end -}}
 {{- if eq .Site.Params.Styling "VCSS" -}}
 	{{- $css = (resources.Match "css/partials/0*.css") | resources.Concat "critical.css" -}}
+	{{- if hugo.IsProduction -}}
+		{{- $css = $css | minify | fingerprint -}}
+	{{- end }}
 {{- end -}}
 {{- with $css }}
 	{{/*  <style media="screen">{{ .Content | safeCSS }}</style>  */}}
