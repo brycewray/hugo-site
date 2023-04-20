@@ -49,13 +49,13 @@ as desired.
 */
 
 .chroma .err, .code-inline .err {
-	--clr-lt: var(--twcss-red-700);
-	--clr-dk: var(--twcss-red-300);
+	--clr-lt: var(--red-700);
+	--clr-dk: var(--red-300);
 }
 
 .chroma .kn, .code-inline .kn {
-	--clr-lt: var(--twcss-cyan-700);
-	--clr-dk: var(--twcss-cyan-300);
+	--clr-lt: var(--cyan-700);
+	--clr-dk: var(--cyan-300);
 }
 
 /*
