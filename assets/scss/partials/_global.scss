@@ -117,21 +117,6 @@ hr {
 	}
 }
 
-blockquote {
-	border-left: 4px solid map-get(var.$twcss, slate-400);
-	color: map-get(var.$twcss, gray-550);
-	margin-right: 0;
-	margin-left: 0;
-	padding-left: 1.5em;
-	@media (prefers-color-scheme: dark) {
-		// border-left is same color
-		color: map-get(var.$twcss, gray-400);
-	}
-	p:last-child {
-		margin-bottom: 0;
-	}
-}
-
 sub, sup {
 	font-size: 65%;
 	line-height: 0;

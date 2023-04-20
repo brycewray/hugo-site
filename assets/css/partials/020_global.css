@@ -98,18 +98,6 @@ hr {
 	background-color: black;
 }
 
-blockquote {
-	border-left: 4px solid var(--twcss-slate-400);
-	color: var(--twcss-gray-550);
-	margin-right: 0;
-	margin-left: 0;
-	padding-left: 1.5em;
-}
-
-blockquote p:last-child {
-	margin-bottom: 0;
-}
-
 sub, sup {
 	font-size: 65%;
 	line-height: 0;
@@ -249,9 +237,5 @@ li p {
 	}
 	hr {
 		background-color: white;
-	}
-	blockquote {
-		/* border-left is same color */
-		color: var(--twcss-gray-400);
 	}
 }

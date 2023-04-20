@@ -104,6 +104,18 @@ img.ctrImg {
  animation: fadeIn 750ms ease-in-out;
 }
 
+blockquote {
+	border-left: 4px solid var(--twcss-slate-400);
+	color: var(--twcss-gray-550);
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 1.5em;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
 article {
 	padding-top: 1em; /* definitely em, not rem */
 }
@@ -139,6 +151,10 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 	}
 	.header-anchor:active {
 		color: var(--twcss-blue-300);
+	}
+	blockquote {
+		/* border-left is same color */
+		color: var(--twcss-gray-400);
 	}
 	.box {
 		background-color: var(--twcss-slate-800);
