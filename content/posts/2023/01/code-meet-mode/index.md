@@ -17,7 +17,7 @@ The only thing about doing that, however, is that you first have to select from 
 
 [^Prism]: This situation isn't markedly different when I'm maintaining the site with [Eleventy](https://11ty.dev), during which time I use styling based on one of [numerous themes](https://prismjs.com/download.html#themes=prism) available from the [Prism.js website](https://prismjs.com).
 
-That's why, this past Saturday on Mastodon, I [posted](https://mstdn.social/@BryceWrayTX/109727880716272847) a poll about the subject, asking:
+That's why, this past Saturday on Mastodon, I posted a poll about the subject, asking:
 
 > When reading a code block in your chosen viewing mode (light or dark), which of these should the code block always do?
 
