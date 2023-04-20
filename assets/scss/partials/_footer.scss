@@ -1,0 +1,103 @@
+@use 'variables' as var;
+
+footer {
+	// @media (prefers-color-scheme: dark) {
+	// 	background: var.$black;
+	// }
+	text-align: center;
+	font-size: var.$text-xs;
+	margin: 4rem auto 0 auto;
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	p {
+		line-height: 1.5em; // definitely em, not rem, here
+		code {
+			background-color: map-get(var.$twcss, slate-200);
+			@media (prefers-color-scheme: dark) {
+				background-color: map-get(var.$twcss, slate-700);
+			}
+		}
+	}
+	div.footerWrapper {
+		margin: 0 auto;
+		width: 80%;
+		p {
+			margin: 1rem 0;
+		}
+		div.icons-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 1em;
+		}
+	}
+	@media (min-width: var.$bkpt_lg) {
+		margin: 2rem auto 0 auto;
+		// padding-bottom: 1rem;
+		div.footerWrapper {
+			width: 65%;
+			height: 100%;
+		}
+	}
+}
+
+circle.GitHub,
+circle.RSS,
+path.MastodonBody,
+path.Twitter,
+path.JSON,
+path.RSS {
+	fill: var.$white;
+	@media (prefers-color-scheme: dark) {
+		fill: var.$black;
+	}
+}
+
+circle.Twitter,
+circle.JSON {
+	fill: var.$black;
+	@media (prefers-color-scheme: dark) {
+		fill: map-get(var.$twcss, blue-300);
+	}
+}
+
+path.GitHub,
+circle.MastodonCircle,
+path.MastodonM,
+circle.Twitter,
+circle.RSS,
+circle.JSON {
+	fill: var.$default-light-link;
+	@media (prefers-color-scheme: dark) {
+		fill: var.$default-dark-link;
+	}
+}
+
+a:hover path.GitHub,
+a:hover circle.MastodonCircle,
+a:hover path.MastodonM,
+a:hover circle.Twitter,
+a:hover circle.RSS,
+a:hover circle.JSON {
+	fill: var.$default-light-link-afh;
+	@media (prefers-color-scheme: dark) {
+		fill: var.$default-dark-link-afh;
+	}
+}
+
+path.MastodonBody,
+path.MastodonM {
+	fill-rule:nonzero;
+}
+
+// // needed only if using darker bkgd in dark mode
+// a:hover circle.GitHub,
+// a:hover path.Twitter,
+// a:hover path.RSS,
+// a:hover path.JSON,
+// a:hover path.MastodonBody {
+// 	@media (prefers-color-scheme: dark) {
+// 		fill: var.$white;
+// 	}
+// }
