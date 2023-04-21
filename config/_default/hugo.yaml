@@ -69,6 +69,11 @@ frontmatter:
     - publishDate
     - date
 
+build:
+  # useResourceCacheWhen: fallback
+  writeStats: true
+  # noJSConfigInAssets: false
+
 markup:
   highlight:
     guessSyntax: true
