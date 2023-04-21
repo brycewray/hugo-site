@@ -1,14 +1,17 @@
 @charset 'utf-8';
 @use 'partials/variables' as var;
 
+code, article code, .box code {
+	background-color: var(--bg-lt);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--bg-dk);
+	}
+}
+
 code {
 	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
-  background: map-get(var.$twcss, blue-100);
-  @media (prefers-color-scheme: dark) {
-    background: map-get(var.$twcss, slate-800);
-  }
 }
 
 // Inline code
@@ -29,10 +32,8 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	background-color: white; // was slate-200
-	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-700);
-	}
+	--bg-lt: #{var.$white};
+	--bg-dk: #{map-get(var.$twcss, slate-700)};
 }
 article .footnotes code {
 	font-size: 1em;
@@ -64,10 +65,8 @@ article blockquote code {
 
 .box code {
 	font-size: 1em; // definitely em
-	background-color: map-get(var.$twcss, slate-100);
-	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, slate-600);
-	}
+	--bg-lt: #{map-get(var.$twcss, slate-100)};
+	--bg-dk: #{map-get(var.$twcss, slate-600)};
 }
 
 article ol li .highlight {
