@@ -18,7 +18,7 @@
     "prodexec:hugo": "exec-bin bin/hugo/hugo --minify --gc",
     "prod:hugo": "npm-run-all install:hugo prodexec:hugo",
     "hugonew": "exec-bin bin/hugo/hugo new",
-		"hugometrics": "exec-bin bin/hugo/hugo --templateMetrics --templateMetricsHints",
+    "hugometrics": "exec-bin bin/hugo/hugo --templateMetrics --templateMetricsHints",
     "start": "NODE_ENV=development npm-run-all clean dev:hugo",
     "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
