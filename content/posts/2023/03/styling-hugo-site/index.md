@@ -75,7 +75,7 @@ Although the combination of Hugo and Embedded Dart Sass produces great results w
 **Sass is best if**:
 
 - You have a reasonably good idea of The Final Design.
-- You have at least some experience --- preferably a lot, unless The Final Design is exceedingly simple --- with writing your own CSS/SCSS.
+- You have at least some experience (preferably a lot, unless The Final Design is exceedingly simple) with writing your own CSS/SCSS.
 - You're willing to write all your CSS/SCSS from scratch.
 - You want to nest your styles now, without having to wait for browsers to support it in vanilla CSS.
 - You want the greatest control over your final CSS/SCSS.
