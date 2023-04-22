@@ -7,6 +7,8 @@ date: 2023-01-19T15:52:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
+{{% disclaimer %}}
+
 I gave up on my [earlier](/posts/2022/06/sorta-scoped-styling-hugo/), [Rube Goldberg](https://www.rubegoldberg.org/all-about-rube/a-cultural-icon/)-esque attempt to achieve [scoped styling](https://css-tricks.com/saving-the-day-with-scoped-css/) after finding it too convoluted to maintain. Fortunately, I've now stumbled on a much simpler way to get there.
 
 <!--more-->
@@ -35,9 +37,6 @@ It broke down like this.
 - Decide which styling is sufficiently site-wide as to be considered [critical CSS](https://web.dev/extract-critical-css/), and let a `head-criticalcss.html` partial put it in the `head` as *internal CSS*, thus loading as quickly as possible.[^concat]
 - Create small, modular styling files --- *e.g.*, Sass partials, although this method can be used in vanilla CSS, too --- with rules that are specific to various types of content.
 - In a `head-css.html` partial, use conditionals to identify the content in question within a given page, automatically determining which styling a page does (and doesn't) need. Each conditional, if satisfied, then calls the appropriate modular styling file and runs it through [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to produce the final CSS.
-
-**Update from the future**: After additional research, I decided to make the critical CSS a separate file, loaded before the other styling files, rather than serving it as internal CSS. Since this site is always served via HTTP/2 at minimum, this should cause little or no performance penalty. More important is that it enables full caching of the critical CSS from page to page, as opposed to the very real performance penalties incurred through use of larger and completely *un*cached HTML.
-{.box}
 
 [^concat]: Although Dart Sass's [`@use` rule](https://sass-lang.com/documentation/at-rules/use) makes it easy to access multiple Sass partials from within a `critical.scss` file, Hugo allows you to accomplish roughly the same thing with vanilla CSS. For example, you could put your modular CSS files in `assets/css/partials/`, name them so that alphanumerical sorting will tell Hugo Pipes in which order to process them (such as `001_reset.css`, `010_vars.css`, `020_global.css`, *etc.*), and use the following to concatenate them:\
 `{{ $css := (resources.Match "css/partials/0*.css") | resources.Concat "critical.css" }}`\
