@@ -1,7 +1,5 @@
 @charset 'utf-8';
 
-/* purgecss start ignore */
-
 .searchDiv, .searchDivPF {
 	/* font-family: var(--sans-serif); */
 	--gray-800: #1f2937;
@@ -190,5 +188,3 @@
 .pagefind-ui__result-title {
 	font-weight: bold;
 }
-
-/*! purgecss end ignore */
