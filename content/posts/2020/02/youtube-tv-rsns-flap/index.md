@@ -77,8 +77,6 @@ They can't make it up by charging higher ticket prices. Actual attendance has ve
 
 I don't know where it all ends. But I don't plan to be standing anywhere near the shadow of the pyramid if and when that once-solid edifice starts making cracking noises.
 
-----
-
 **Update, 2020-02-29**: This morning, I learned from [a story on *CordCutters News*](https://www.cordcuttersnews.com/youtube-tv-sinclair-agree-to-a-short-term-extension-to-keep-fox-regional-sports-networks/) that YouTube TV and Sinclair are continuing to negotiate over the dispute described in this post and have agreed that, while they do so, YouTube TV will keep carrying the RSNs. I'll still keep this post in place because (a.) that's not exactly a final resolution, if indeed such a thing is ever possible in this case and (b.) there are a number of points herein which, in this here point-maker's opinion, remain salient nonetheless.
 {.box}
 
