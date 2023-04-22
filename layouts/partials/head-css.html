@@ -12,7 +12,7 @@
 {{- end -}}
 {{- with $css }}
 	{{- if hugo.IsProduction -}}
-		{{- $css = $css | fingerprint | resources.PostProcess -}}
+		{{- $css = $css | fingerprint -}}
 	{{- end }}
 	{{/*  <style media="screen">{{ .Content | safeCSS }}</style>  */}}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
