@@ -20,7 +20,7 @@ params:
     FourOhFour: "404 Page not found"
     About: "About me"
   # ===========================
-  Styling: "SCSS" # choices for Styling are "SCSS" and "VCSS" (vanilla CSS)
+  Styling: "VCSS" # choices for Styling are "SCSS" and "VCSS" (vanilla CSS)
   # -- REMINDER:
   # -- for "SCSS" you **must** (a.) load Embedded Dart Sass in the GHA
   # -- **or** (b.) use Node Sass and appropriate `package.json` scripting
