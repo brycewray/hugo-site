@@ -1,5 +1,8 @@
 header, .nav, .nav-Menu {
 	background-color: var(--slate-300);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+	}
 }
 
 header {
@@ -15,20 +18,40 @@ header {
 	cursor: pointer;
 	margin: 0rem 1rem;
 	right: 0;
-}
-.nav-Toggle svg {
-	width: 1.5rem;
-	fill: var(--slate-800);
-}
-.nav-Toggle .close {
-	display: none;
-}
-.nav-Toggle .menu {
-	margin-top: 0.2rem;
+	@media screen and (min-width: 1024px) {
+		display: none;
+	}
+	& svg {
+		width: 1.5rem;
+		fill: var(--slate-800);
+		@media (prefers-color-scheme: dark) {
+			fill: var(--slate-50);
+		}
+	}
+	& .close {
+		display: none;
+	}
+	& .menu {
+		margin-top: 0.2rem;
+	}
 }
 
 .nav-Checkbox {
 	display: none;
+	&:checked {
+		~ ul.nav-Menu li {
+			display: block;
+		}
+		~ label.nav-Toggle .close {
+			display: block;
+		}
+		~ label.nav-Toggle .menu {
+			display: none;
+		}
+		~ ul.nav-Menu {
+			padding-bottom: 1rem;
+		}
+	}
 }
 
 .nav-Menu {
@@ -41,92 +64,56 @@ header {
 	text-align: right;
 	/* align-items: right; */
 	margin: 0.5rem 0.5rem 0.5rem 0;
-}
-.nav-Menu li {
-	list-style: none;
-	display: none;
-	font-weight: bold;
-	padding-right: 0.75em;
-}
-.nav-Menu li.notMobile {
-	display: none;
-}
-.nav-Menu li:first-child {
-	padding: 0;
-	margin-right: auto;
-	margin-left: 1.5rem;
-	display: block;
-}
-.nav-Menu li:first-child svg { /* for site logo */
-	width: auto;
-}
-.nav-Menu a {
-	text-decoration: none;
-	border: 0;
-	color: black;
-}
-.nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-	color: var(--slate-600);
-}
-/* .nav-Menu svg {
-	width: 1.5rem;
-	fill: white;
-}
-// (old SCSS comments follow)
-// possibly unused...
-// see `.nav > svg` above
-*/
-
-#nav-Checkbox:checked ~ ul.nav-Menu li {
-	display: block;
-}
-#nav-Checkbox:checked ~ label.nav-Toggle .close {
-	display: block;
-}
-#nav-Checkbox:checked ~ label.nav-Toggle .menu {
-	display: none;
-}
-#nav-Checkbox:checked ~ ul.nav-Menu {
-	padding-bottom: 1rem;
-}
-
-@media screen and (min-width: 1024px) {
-	.nav-Toggle {
-		display: none;
-	}
-	.nav-Menu {
+	@media screen and (min-width: 1024px) {
 		flex-direction: row;
 		padding: 0;
 		gap: 0.5rem;
 		margin: 0.5rem 1.5rem 0 0;
 	}
-	.nav-Menu li {
-		font-size: var(--text-sm);
-		display: block;
-		text-transform: uppercase;
-		margin: 0.5rem 0 0.5rem 0;
+	& li {
+		list-style: none;
+		display: none;
+		font-weight: bold;
+		padding-right: 0.75em;
+		@media screen and (min-width: 1024px) {
+			font-size: var(--text-sm);
+			display: block;
+			text-transform: uppercase;
+			margin: 0.5rem 0 0.5rem 0;
+		}
+		& .notMobile {
+			display: none;
+			@media screen and (min-width: 1024px) {
+				display: block;
+			}
+		}
+		&:first-child {
+			padding: 0;
+			margin-right: auto;
+			margin-left: 1.5rem;
+			display: block;
+			@media screen and (min-width: 1024px) {
+				letter-spacing: normal;
+				line-height: 0;
+				margin-top: 0;
+			}
+			& svg { /* for site logo */
+				width: auto;
+			}
+		}
 	}
-	.nav-Menu li.notMobile {
-		display: block;
-	}
-	.nav-Menu li:first-child {
-		letter-spacing: normal;
-		line-height: 0;
-		margin-top: 0;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	header, .nav, .nav-Menu {
-		background-color: var(--slate-800);
-	}
-	.nav-Toggle svg {
-		fill: var(--slate-50);
-	}
-	.nav-Menu a {
-		color: white;
-	}
-	.nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-		color: var(--slate-200);
+	& a {
+		text-decoration: none;
+		border: 0;
+		color: black;
+		@media (prefers-color-scheme: dark) {
+			color: white;
+		}
+		&:focus, &:active, &:hover {
+			color: var(--slate-600);
+			@media (prefers-color-scheme: dark) {
+				color: var(--slate-200);
+			}
+		}
 	}
 }

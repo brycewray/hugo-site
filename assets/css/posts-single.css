@@ -4,9 +4,15 @@
 	margin-top: 2.5rem;
 	background-color: var(--slate-300);
 	padding: 0.5rem 0;
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+	}
 }
 .bg-dark div, .bg-dark p {
 	color: black;
+	@media (prefers-color-scheme: dark) {
+		color: white;
+	}
 }
 .bg-dark p.prevnextP {
 	margin: 0 auto;
@@ -18,6 +24,9 @@
 .bg-dark p.prevnextP a {
 	color: var(--blue-800);
 	text-decoration: none;
+	@media (prefers-color-scheme: dark) {
+		color: var(--blue-200);
+	}
 }
 .bg-dark p.prevnextP a:hover, .bg-dark p.prevnextP a:focus {
 	--gray-800: #1f2937;
@@ -27,6 +36,9 @@
 	text-decoration-thickness: var(--textDcThick); /* always rem */
 	text-underline-offset: var(--textUnOffst); /* always em */
 	text-decoration-skip-ink: auto;
+	@media (prefers-color-scheme: dark) {
+		color: var(--gray-200);
+	}
 }
 
 contact-button {
@@ -45,32 +57,17 @@ contact-button button {
 	border-color: transparent;
 	vertical-align: middle;
 	color: white;
-}
-contact-button button:focus, contact-button button:active, contact-button button:hover {
-	background-color: var(--blue-800);
-}
-contact-button button:hover {
-	cursor: pointer;
-}
-
-@media (prefers-color-scheme: dark) {
-	.bg-dark {
-		background-color: var(--slate-800);
-	}
-	.bg-dark div, .bg-dark p {
-		color: white;
-	}
-	.bg-dark p.prevnextP a {
-		color: var(--blue-200);
-	}
-	.bg-dark p.prevnextP a:hover, .bg-dark p.prevnextP a:focus {
-		color: var(--gray-200);
-	}
-	contact-button button {
+	@media (prefers-color-scheme: dark) {
 		color: black;
 		background-color: var(--blue-300);
 	}
-	contact-button button:focus, contact-button button:active, contact-button button:hover {
+}
+contact-button button:focus, contact-button button:active, contact-button button:hover {
+	background-color: var(--blue-800);
+	@media (prefers-color-scheme: dark) {
 		background-color: var(--blue-50);
 	}
+}
+contact-button button:hover {
+	cursor: pointer;
 }

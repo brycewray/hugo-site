@@ -9,10 +9,16 @@
 b,
 strong {
 	font-weight: 600;
+	@media (prefers-color-scheme: dark) {
+		font-weight: 550;
+	}
 }
 
 .header-anchor::after {
 	font-weight: 425;
+	@media (prefers-color-scheme: dark) {
+		font-weight: 375;
+	}
 }
 h1,
 .h1,
@@ -23,6 +29,9 @@ h1,
 .sitemap-Div h1 {
 	font-weight: 600;
 	letter-spacing: -0.05em;
+	@media (prefers-color-scheme: dark) {
+		font-weight: 550;
+	}
 }
 
 .homeOpen h1 {
@@ -46,6 +55,9 @@ article .h4,
 .posts-Title {
 	font-weight: 550;
 	letter-spacing: -0.025em;
+	@media (prefers-color-scheme: dark) {
+		font-weight: 500;
+	}
 }
 
 .prevnextP {
@@ -84,36 +96,4 @@ article .h4,
 .tweet-card a,
 .tweet-card p {
 	letter-spacing: normal;
-}
-
-@media (prefers-color-scheme: dark) {
-	.header-anchor::after {
-		font-weight: 375;
-	}
-	h1,
-	.h1,
-	.background-hero-title-text,
-	.billboard-title-text,
-	.posts-Head,
-	.homePost-Latest {
-		font-weight: 550;
-	}
-	h2,
-	.h2,
-	h3,
-	.h3,
-	h4,
-	.h4,
-	.homePost-Title,
-	.posts-Title {
-		font-weight: 500;
-	}
-	.homePost-Title,
-	.posts-Title {
-		font-weight: 500;
-	}
-	b,
-	strong {
-		font-weight: 700;
-	}
 }

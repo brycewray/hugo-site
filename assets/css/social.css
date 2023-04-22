@@ -16,25 +16,48 @@
 	border-radius: 12px;
 	background: white;
 	width: 100%;
-}
-
-.toot-blockquote p {
-	margin-top: 0; /* reset */
-	margin-bottom: 1em;
-	line-height: 1.35em;
-}
-.toot-blockquote a, .toot-blockquote a:hover {
-	border: none !important;
-	text-decoration: none;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
-	/*
-	See:
-	- https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
-	- https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/
-	- https://css-tricks.com/better-line-breaks-for-long-urls/
-	*/
+	@media screen and (min-width: 768px) {
+		font-size: var(--text-xl);
+	}
+	@media screen and (min-width: 960px) {
+		width: 80%;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 85%;
+	}
+	/* @media screen and (min-width: 1536px) {
+		width: 85%;
+	} */
+	@media screen and (min-width: 1920px) {
+		max-width: 80ch;
+	}
+	@media (prefers-color-scheme: dark) {
+		background: var(--gray-900);
+		/* background: transparent; */
+		border: 2px solid var(--gray-200);
+		color: white;
+	}
+	& p {
+		margin-top: 0; /* reset */
+		margin-bottom: 1em;
+		line-height: 1.35em;
+	}
+	& a, & a:hover {
+		border: none !important;
+		text-decoration: none;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: break-word;
+		/*
+		See:
+		- https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+		- https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/
+		- https://css-tricks.com/better-line-breaks-for-long-urls/
+		*/
+		@media (prefers-color-scheme: dark) {
+			color: var(--default-dark-link);
+		}
+	}
 }
 
 .toot-body {
@@ -57,6 +80,9 @@
 .toot-blockquote-img {
 	border-bottom: 1px solid var(--gray-700);
 	width: 100%;
+	@media (prefers-color-scheme: dark) {
+		border: 1px solid var(--gray-300);
+	}
 }
 
 .toot-player {
@@ -67,6 +93,9 @@
 
 a > .card, a > .toot-card {
 	color: var(--gray-800);
+	@media (prefers-color-scheme: dark) {
+		color: var(--gray-300);
+	}
 }
 
 .card {
@@ -75,49 +104,61 @@ a > .card, a > .toot-card {
 	margin-top: 1em;
 	border-radius: 12px;
 	border: 1px solid var(--gray-700);
-}
-.card p {
-	padding: 0.5em 1em 1em;
-	line-height: 1.4;
-	margin-top: 0;
-	font-size: var(--text-sm);
-}
-.card p .card-title {
-	color: black;
+	@media (prefers-color-scheme: dark) {
+		border: 1px solid var(--gray-300);
+	}
+	& p {
+		padding: 0.5em 1em 1em;
+		line-height: 1.4;
+		margin-top: 0;
+		font-size: var(--text-sm);
+		& .card-title {
+			color: black;
+			@media (prefers-color-scheme: dark) {
+				color: white;
+			}
+		}
+	}
 }
 
 
 .toot-header {
 	display: flex;
-}
-.toot-header .toot-profile {
-	margin-right: 0.5em;
-	margin-bottom: 1em;
-	flex-shrink: 0;
-}
-.toot-header .toot-profile img {
-	border-radius: 9999px;
-	width: 48px;
-	height: auto;
-}
-.toot-header .toot-author {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-}
-.toot-header .toot-author .toot-author-name {
-	font-weight: bold;
-	font-size: var(--text-base);
-	color: black;
-	line-height: 1.375;
-}
-.toot-header .toot-author .toot-author-handle {
-	color: var(--gray-700);
-	font-size: var(--text-sm);
-	line-height: 1;
-}
-.toot-header .toot-bird {
-	margin-left: 1.25rem;
+	.toot-profile {
+		margin-right: 0.5em;
+		margin-bottom: 1em;
+		flex-shrink: 0;
+		& img {
+			border-radius: 9999px;
+			width: 48px;
+			height: auto;
+		}
+	}
+	.toot-author {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		.toot-author-name {
+			font-weight: bold;
+			font-size: var(--text-base);
+			color: black;
+			line-height: 1.375;
+			@media (prefers-color-scheme: dark) {
+				color: white;
+			}
+		}
+		.toot-author-handle {
+			color: var(--gray-700);
+			font-size: var(--text-sm);
+			line-height: 1;
+			@media (prefers-color-scheme: dark) {
+				color: var(--gray-300);
+			}
+		}
+	}
+	.toot-bird {
+		margin-left: 1.25rem;
+	}
 }
 
 .toot-footer {
@@ -126,13 +167,20 @@ a > .card, a > .toot-card {
 	align-items: center;
 	color: var(--gray-800);
 	font-size: var(--text-sm);
+	@media (prefers-color-scheme: dark) {
+		color: var(--gray-200);
+	}
+	.toot-like-icon, .toot-like-count {
+		display: none;
+	}
+	& a {
+		color: var(--gray-800);
+		@media (prefers-color-scheme: dark) {
+			color: var(--gray-200);
+		}
+	}
 }
-.toot-footer .toot-like-icon, .toot-footer .toot-like-count {
-	display: none;
-}
-.toot-footer a {
-	color: var(--gray-800);
-}
+
 /* === needed in Eleventy but not in Hugo
 .toot-footer .toot-date:after {
 	content: " (UTC)";
@@ -160,19 +208,16 @@ a > .card, a > .toot-card {
 
 .toot-img-grid-3 {
 	grid-template-columns: repeat(2, 1fr);
-}
-
-.toot-img-grid-3 .toot-media-img {
-	aspect-ratio: 1.8;
-}
-
-.toot-img-grid-3 :nth-child(1) {
-	grid-row: 1 / span 2;
-	height: 100%;
-}
-
-.toot-img-grid-3 :nth-child(1) .toot-media-img {
-	aspect-ratio: 0.9;
+	.toot-media-img {
+		aspect-ratio: 1.8;
+	}
+	:nth-child(1) {
+		grid-row: 1 / span 2;
+		height: 100%;
+	}
+	:nth-child(1) .toot-media-img {
+		aspect-ratio: 0.9;
+	}
 }
 
 .toot-img-grid-2,
@@ -224,9 +269,9 @@ a > .card, a > .toot-card {
 }
 .toot-poll-meter {
 	grid-column: 2;
-}
-.toot-poll-meter meter {
-	width: 100%;
+	& meter {
+		width: 100%;
+	}
 }
 
 .toot-poll-title {
@@ -242,26 +287,35 @@ a > .card, a > .toot-card {
 	padding: 1em 1em 0.5em 1em;
 	margin-top: 0.75em;
 	margin-bottom: 0;
-}
-.toot-quoted-tweet p {
-	font-size: var(--text-sm);
-	margin: 0 0 0.5em;
-	line-height: 1.4;
-}
-.toot-quoted-tweet p .toot-quoted-toot-profile-image {
-	border-radius: 9999px;
-	width: 18px;
-	height: auto;
-	display: inline;
-}
-.toot-quoted-tweet p.toot-quoted-toot-head {
-	margin-bottom: 0.25em;
-}
-.toot-quoted-tweet p.toot-quoted-toot-head a {
-	color: var(--gray-800);
-}
-.toot-quoted-tweet p.toot-quoted-toot-head a:hover {
-	color: var(--default-light-link);
+	@media (prefers-color-scheme: dark) {
+		border: 1px solid var(--gray-200);
+	}
+	& p {
+		font-size: var(--text-sm);
+		margin: 0 0 0.5em;
+		line-height: 1.4;
+		.toot-quoted-toot-profile-image {
+			border-radius: 9999px;
+			width: 18px;
+			height: auto;
+			display: inline;
+		}
+		.toot-quoted-toot-head {
+			margin-bottom: 0.25em;
+			& a {
+				color: var(--gray-800);
+				@media (prefers-color-scheme: dark) {
+					color: var(--gray-200);
+				}
+				&:hover {
+					color: var(--default-light-link);
+					@media (prefers-color-scheme: dark) {
+						color: var(--default-dark-link);
+					}
+				}
+			}
+		}
+	}
 }
 
 .toot-reply-to {
@@ -270,9 +324,12 @@ a > .card, a > .toot-card {
 	line-height: 1.3em;
 	color: var(--gray-800);
 	font-size: var(--text-sm);
-}
-.toot-reply-to .toot-like-icon, .toot-reply-to .toot-like-count {
-	display: none;
+	@media (prefers-color-scheme: dark) {
+		color: var(--gray-200);
+	}
+	.toot-like-icon, .toot-like-count {
+		display: none;
+	}
 }
 
 .toot-card {
@@ -282,111 +339,37 @@ a > .card, a > .toot-card {
 	margin-top: 1em;
 	text-decoration: none;
 	overflow: hidden;
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
 }
 .toot-card-image {
 	flex: 0 0 100px;
 	border-right: 2px solid var(--gray-400);
 	position: relative;
+	@media screen and (min-width: 768px) {
+		flex: 0 0 200px;
+	}
+	.toot-card-image-image {
+		display: block;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-size: cover;
+		background-position: 50%;
+	}
 }
-.toot-card-image .toot-card-image-image {
-	display: block;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	background-size: cover;
-	background-position: 50%;
-}
+
 .toot-card-content {
 	flex: 1 1 auto;
 	overflow: hidden;
 	padding: 0.75em;
 	line-height: 1.5;
-}
-.toot-card-content .card-title {
-	font-weight: bold;
-}
-.toot-card-content .card-title, .toot-card-content .card-description {
-	font-size: var(--text-sm);
-}
-
-@media screen and (min-width: 768px) {
-	.toot-blockquote {
-		font-size: var(--text-xl);
+	.card-title {
+		font-weight: bold;
 	}
-	.toot-card {
-		display: flex;
-	}
-	.toot-card-image {
-		flex: 0 0 200px;
-	}
-}
-@media screen and (min-width: 960px) {
-	.toot-blockquote {
-		width: 80%;
-	}
-}
-@media screen and (min-width: 1024px) {
-	.toot-blockquote {
-		width: 85%;
-	}
-}
-@media screen and (min-width: 1536px) {
-	/*
-	.toot-blockquote {
-		width: 85%;
-	}
-	*/
-}
-@media screen and (min-width: 1920px) {
-	.toot-blockquote {
-		max-width: 80ch;
-	}
-}
-@media (prefers-color-scheme: dark) {
-	.toot-blockquote {
-		background: var(--gray-900);
-		/* background: transparent; */
-		border: 2px solid var(--gray-200);
-		color: white;
-	}
-	.toot-blockquote a, .toot-blockquote a:hover {
-		color: var(--default-dark-link);
-	}
-	.toot-blockquote-img {
-		border: 1px solid var(--gray-300);
-	}
-	a > .card, a > .toot-card {
-		color: var(--gray-300);
-	}
-	.card {
-		border: 1px solid var(--gray-300);
-	}
-	.card p .card-title {
-		color: white;
-	}
-	.toot-header .toot-author .toot-author-name {
-		color: white;
-	}
-	.toot-header .toot-author .toot-author-handle {
-		color: var(--gray-300);
-	}
-	.toot-footer {
-		color: var(--gray-200);
-	}
-	.toot-footer a {
-		color: var(--gray-200);
-	}
-	.toot-quoted-tweet {
-		border: 1px solid var(--gray-200);
-	}
-	.toot-quoted-tweet p.toot-quoted-toot-head a {
-		color: var(--gray-200);
-	}
-	.toot-quoted-tweet p.toot-quoted-toot-head a:hover {
-		color: var(--default-dark-link);
-	}
-	.toot-reply-to {
-		color: var(--gray-200);
+	.card-title, .card-description {
+		font-size: var(--text-sm);
 	}
 }

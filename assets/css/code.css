@@ -46,18 +46,18 @@
 	color: black;
 	background-color: white;
 	border: 1px solid var(--gray-400);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+	}
 }
 
 /* fallback colors to catch var issues) */
 .chroma *, .code-inline * {
 	color: var(--clr-lt, yellow);
-}
-
-@media (prefers-color-scheme: dark) {
-	.chroma *, .code-inline * {
+	@media (prefers-color-scheme: dark) {
 		color: var(--clr-dk, midnightblue);
 	}
-} /* Keep this media query up here, rather than with other media queries at end */
+}
 
 /* Other */
 .chroma .x, .code-inline .x {
@@ -101,6 +101,9 @@
 	display: block;
 	width: 100%;
 	background-color: var(--yellow-200);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--yellow-800);
+	}
 }
 
 /* LineNumbersTable */
@@ -561,13 +564,16 @@
 }
 
 /* ======= END, individual items from Chroma */
-
+/* purgecss start ignore */
 pre,
 code {
 	font-family: var(--monospaced);
   font-kerning: none;
   font-variant-ligatures: none;
   background-color: var(--slate-200);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+	}
 }
 
 code[class*="language-"],
@@ -597,8 +603,12 @@ pre.chroma {
 pre[class*="language-"] {
 	color: black;
 	background-color: white;
+	@media (prefers-color-scheme: dark) {
+		color: white;
+		background-color: var(--slate-800);
+	}
 }
-
+/* purgecss end ignore */
 .highlight {
 	position: relative;
 }
@@ -662,6 +672,9 @@ pre[class*="language-"] {
 
 code, article code, .box code {
 	background-color: var(--bg-lt);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--bg-dk);
+	}
 }
 
 code {
@@ -689,81 +702,51 @@ code {
 	padding-top: 0;
 }
 
-article code {
-	font-size: 0.975em;
-	--bg-lt: white;
-	--bg-dk: var(--slate-700);
-}
-
-article .footnotes code {
-	font-size: 1em;
-	/* overriding the `article code` part above for footnotes */
-}
-
-article p code.code-inline {
-	/* font-size: var(--text-sm); */
-	padding: 0.25em 0.5em;
-	margin: 0 0.25em;
-}
-
-article .footnotes li code {
-	white-space: normal;
-}
-
-article blockquote code {
-	color: var(--slate-800);
+article {
+	& code {
+		font-size: 0.975em;
+		--bg-lt: white;
+		--bg-dk: var(--slate-700);
+		@media screen and (min-width: 768px) {
+			font-size: 0.95em;
+		}
+		@media screen and (min-width: 1280px) {
+			font-size: 0.925em;
+		}
+		@media screen and (min-width: 1536px) {
+			font-size: 0.9em;
+		}
+	}
+	& .footnotes code {
+		font-size: 1em;
+		/* overriding the `article code` part above for footnotes */
+	}
+	& p code {
+		@media screen and (min-width: 768px) {
+			white-space: nowrap;
+		}
+		.code-inline {
+			/* font-size: var(--text-sm); */
+			padding: 0.25em 0.5em;
+			margin: 0 0.25em;
+		}
+	}
+	& .footnotes li code {
+		white-space: normal;
+	}
+	& blockquote code {
+		color: var(--slate-800);
+		@media (prefers-color-scheme: dark) {
+			color: var(--slate-300);
+		}
+	}
+	& ol li .highlight {
+		line-height: 1.5;
+	}
 }
 
 .box code {
 	font-size: 1em; /* definitely em */
 	--bg-lt: var(--slate-100);
 	--bg-dk: var(--slate-600);
-}
-
-article ol li .highlight {
-	line-height: 1.5;
-}
-
-@media (prefers-color-scheme: dark) {
-	.chroma, .code-inline {
-		background-color: var(--slate-800);
-	}
-	/* LineHighlight */
-	.chroma .hl, .code-inline .hl {
-		background-color: var(--yellow-800);
-	}
-	pre,
-	code {
-		background-color: var(--slate-800);
-	}
-	:not(pre) > code[class*="language-"],
-	pre[class*="language-"] {
-	color: white;
-		background-color: var(--slate-800);
-	}
-	code, article code, .box code {
-		background-color: var(--bg-dk);
-	}
-	article blockquote code {
-		color: var(--slate-300);
-	}
-}
-
-@media screen and (min-width: 768px) {
-	article code {
-		font-size: 0.95em;
-	}
-	article p code {
-		white-space: nowrap;
-	}
-}
-@media screen and (min-width: 1280px) {
-	article code {
-		font-size: 0.925em;
-	}
-}
-@media screen and (min-width: 1536px) {
-	article code {
-		font-size: 0.9em;
-	}
 }

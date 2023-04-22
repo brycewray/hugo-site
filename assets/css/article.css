@@ -7,82 +7,108 @@
 .header-anchor {
 	text-decoration: none;
 	color: var(--default-light);
-}
-
-.header-anchor:focus, .header-anchor:hover, .header-anchor:active {
-	color: var(--blue-700);
-	text-decoration: underline;
-	text-decoration-thickness: var(--textDcThick);
-	text-underline-offset: var(--textUnOffst);
-	text-decoration-skip-ink: auto;
-}
-.header-anchor:focus::after, .header-anchor:hover::after, .header-anchor:active::after {
-	font-size: var(--text-base);
-	padding-left: 0.5em;
-	content: "#";
+	@media (prefers-color-scheme: dark) {
+		color: var(--default-dark);
+	}
+	&:focus, &:hover, &:active {
+		color: var(--blue-700);
+		text-decoration: underline;
+		text-decoration-thickness: var(--textDcThick);
+		text-underline-offset: var(--textUnOffst);
+		text-decoration-skip-ink: auto;
+		&:after {
+			font-size: var(--text-base);
+			padding-left: 0.5em;
+			content: "#";
+		}
+	}
+	&:active {
+		@media (prefers-color-scheme: dark) {
+			color: var(--blue-300);
+		}
+	}
 }
 
 .box {
- font-size: 85%;
- display: block;
- box-sizing: border-box;
- background-color: white;
- border: 1px solid black;
- margin: 0.5em auto;
- width: 100%;
- padding: 1em 1.25em;
+	font-size: 85%;
+	display: block;
+	box-sizing: border-box;
+	background-color: white;
+	border: 1px solid black;
+	margin: 0.5em auto;
+	width: 100%;
+	padding: 1em 1.25em;
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+		border: 1px solid var(--gray-200);
+	}
+	& p {
+		padding: 0;
+		margin: 0;
+	}
+	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
+		margin-top: 1.75em;
+	}
+	& code {
+		background-color: var(--slate-100);
+		@media (prefers-color-scheme: dark) {
+			background-color: var(--slate-600);
+		}
+	}
+	& a code {
+		@media (prefers-color-scheme: dark) {
+			background-color: var(--slate-700);
+		}
+	}
+	& .red {
+		color: var(--red-600);
+		@media (prefers-color-scheme: dark) {
+			color: var(--red-400);
+		}
+	}
 }
 
-.box p {
-	padding: 0;
-	margin: 0;
+
+img {
+	.containedImage {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin: 0 auto;
+	 }
+	 .ctrImg {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	 }
 }
 
-.box + hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
-	margin-top: 1.75em;
-}
-
-.box code {
-	background-color: var(--slate-100);
-}
-
-.box .red {
-	color: var(--red-600);
-}
-
-img.containedImage {
- display: block;
- width: 100%;
- height: auto;
- padding: 0;
- margin: 0 auto;
-}
-img.ctrImg {
- display: block;
- margin-right: auto;
- margin-left: auto;
-}
 .img-phn {
- width: 90%;
+	width: 90%;
+	@media screen and (min-width: 768px) {
+		width: 50%;
+		margin: 0 auto;
+	}
 }
 
 .imgcCaption {
- padding: 0;
- margin-block-start: 0.5em;
- line-height: 1.375;
- font-size: 0.75em;
- text-align: center;
+	padding: 0;
+	margin-block-start: 0.5em;
+	line-height: 1.375;
+	font-size: 0.75em;
+	text-align: center;
 }
 
 .punctuationExample {
- font-size: 1.5em;
- font-weight: normal;
- font-family: var(--serif);
- text-align: center;
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: var(--serif);
+	text-align: center;
 }
 
 .indentAfterLI {
- margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
+	margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
 }
 
 .indentAfterLI .box {
@@ -101,7 +127,7 @@ img.ctrImg {
 }
 
 .animate-fade {
- animation: fadeIn 750ms ease-in-out;
+	animation: fadeIn 750ms ease-in-out;
 }
 
 blockquote {
@@ -110,69 +136,47 @@ blockquote {
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
-}
-
-blockquote p:last-child {
-	margin-bottom: 0;
+	& p:last-child {
+		margin-bottom: 0;
+	}
+	@media (prefers-color-scheme: dark) {
+		/* border-left is same color */
+		color: var(--gray-400);
+	}
 }
 
 article {
 	padding-top: 1em; /* definitely em, not rem */
+	& p, & li {
+		font-size: clamp(1rem, 1vw + 0.625em, var(--text-xl));
+		line-height: 1.5em;
+		margin-top: 1.15em;
+		margin-bottom: 1.15em;
+	}
+	& li li, & li p {
+		font-size: inherit;
+		margin-top: 0.25em; /* definitely em, not rem */
+	}
+	& h1, & h2, & h3, & h4 {
+		margin-top: 1.5em;
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.02em;
+		line-height: normal;
+	}
+	& picture img {
+		height: auto;
+	}
 }
-article p, article li {
-	font-size: clamp(1rem, 1vw + 0.625em, var(--text-xl));
-	line-height: 1.5em;
-	margin-top: 1.15em;
-	margin-bottom: 1.15em;
-}
-article li li, article li p {
-	font-size: inherit;
-	margin-top: 0.25em; /* definitely em, not rem */
-}
-article h1, article h2, article h3, article h4 {
-	margin-top: 1.5em;
-	margin-bottom: 1.5rem;
-	letter-spacing: -0.02em;
-	line-height: normal;
-}
-article picture img {
-	height: auto;
-}
+
 article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *), article i:not(.red *):not(a *):not(blockquote *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
 	color: var(--gray-800); /* (vs. gray-700) */
+	@media (prefers-color-scheme: dark) {
+		color: var(--gray-200); /* (vs. gray-400) */
+	}
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
 	color: var(--gray-600); /* (vs. gray-550) */
-}
-
-@media (prefers-color-scheme: dark) {
-	.header-anchor {
-		color: var(--default-dark);
-	}
-	.header-anchor:active {
-		color: var(--blue-300);
-	}
-	blockquote {
-		/* border-left is same color */
-		color: var(--gray-400);
-	}
-	.box {
-		background-color: var(--slate-800);
-		border: 1px solid var(--gray-200);
-	}
-	.box code {
-		background-color: var(--slate-600);
-	}
-	.box a code {
-		background-color: var(--slate-700);
-	}
-	.box .red {
-		color: var(--red-400);
-	}
-	article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *), article i:not(.red *):not(a *):not(blockquote *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-		color: var(--gray-200); /* (vs. gray-400) */
-	}
-	article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+	@media (prefers-color-scheme: dark) {
 		color: var(--gray-350); /* (vs. gray-400) */
 	}
 }

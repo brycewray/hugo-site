@@ -10,6 +10,15 @@
 .searchDivPF {
 	/* margin: 0 auto; */
 	width: 80%;
+	@media screen and (min-width: 768px) {
+		width: 70%;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 65%;
+	}
+	@media screen and (min-width: 1536px) {
+		width: 50%;
+	}
 }
 
 .searchDiv {
@@ -23,17 +32,24 @@
 	padding: 0;
 	background-color: white;
 	border: 1px solid black;
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--gray-800);
+		border: 1px solid var(--gray-300);
+	}
 }
 
 .searchInput {
-	@media (min-width: 768px) {
-		max-width: 300ch;
-	}
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
 	margin: 0;
 	border: 0;
 	background-color: transparent;
+	@media (min-width: 768px) {
+		max-width: 300ch;
+	}
+	@media (prefers-color-scheme: dark) {
+		color: white;
+	}
 }
 
 .searchBtn {
@@ -47,19 +63,31 @@
 	font-weight: bold;
 	background-color: var(--default-light-link);
 	color: white;
-}
-.searchBtn:hover {
-	cursor: pointer;
-}
-.searchBtn:focus, .searchBtn:active, .searchBtn:hover {
-	border: 1px solid var(--default-light-link-afh);
-	background-color: var(--default-light-link-afh);
+	&:hover {
+		cursor: pointer;
+	}
+	@media (prefers-color-scheme: dark) {
+		border: 1px solid var(--default-dark-link);
+		background-color: var(--default-dark-link);
+		color: black;
+	}
+	&:focus, &:active, &:hover {
+		border: 1px solid var(--default-light-link-afh);
+		background-color: var(--default-light-link-afh);
+		@media (prefers-color-scheme: dark) {
+			border: 1px solid var(--default-dark-link-afh);
+			background-color: var(--default-dark-link-afh);
+		}
+	}
 }
 
 #search, #search-ddg {
 	/* in case we need it */
 	margin: 0.5em auto 1em;
 }
+
+/* ===================== */
+/* purgecss start ignore */
 
 .pagefind-ui {
 	/* overall area */
@@ -112,6 +140,11 @@
 	font-weight: bold;
 	background-color: var(--default-light-link);
 	color: white;
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--default-dark-link);
+		border-color: var(--default-dark-link);
+		color: black;
+	}
 }
 .pagefind-ui__button:hover, .pagefind-ui__search-clear:hover {
 	cursor: pointer;
@@ -121,6 +154,10 @@
 .pagefind-ui__button:hover, .pagefind-ui__search-clear:hover {
 	border: 1px solid var(--default-light-link-afh);
 	background-color: var(--default-light-link-afh);
+	@media (prefers-color-scheme: dark) {
+		border: 1px solid var(--default-dark-link-afh);
+		background-color: var(--default-dark-link-afh);
+	}
 }
 
 .pagefind-ui__result {
@@ -145,62 +182,16 @@
 .pagefind-ui__result-excerpt mark {
 	color: black;
 	background-color: var(--blue-100);
+	@media (prefers-color-scheme: dark) {
+		color: white;
+		background-color: var(--blue-900);
+	}
 }
 
 .pagefind-ui__result-title {
 	font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-	.searchDivPF {
-		width: 70%;
-	}
-}
-@media screen and (min-width: 1024px) {
-	.searchDivPF {
-		width: 65%;
-	}
-}
-@media screen and (min-width: 1536px) {
-	.searchDivPF {
-		width: 50%;
-	}
-}
-@media (prefers-color-scheme: dark) {
-	.searchBox {
-		background-color: var(--gray-800);
-		border: 1px solid var(--gray-300);
-	}
-	.searchInput {
-		color: white;
-	}
-	.searchBtn {
-		border: 1px solid var(--default-dark-link);
-		background-color: var(--default-dark-link);
-		color: black;
-	}
-	.searchBtn:focus, .searchBtn:active, .searchBtn:hover {
-		border: 1px solid var(--default-dark-link-afh);
-		background-color: var(--default-dark-link-afh);
-	}
-	.pagefind-ui__search-input {
-		border: 1px solid var(--gray-300);
-		background-color: var(--gray-800);
-		color: white;
-	}
-	.pagefind-ui__button, .pagefind-ui__search-clear {
-		background-color: var(--default-dark-link);
-		border-color: var(--default-dark-link);
-		color: black;
-	}
-	.pagefind-ui__button:focus, .pagefind-ui__search-clear:focus,
-	.pagefind-ui__button:active, .pagefind-ui__search-clear:active,
-	.pagefind-ui__button:hover, .pagefind-ui__search-clear:hover {
-		border: 1px solid var(--default-dark-link-afh);
-		background-color: var(--default-dark-link-afh);
-	}
-	.pagefind-ui__result-excerpt mark {
-		color: white;
-		background-color: var(--blue-900);
-	}
-}
+/* purgecss end ignore */
+/* =================== */
+

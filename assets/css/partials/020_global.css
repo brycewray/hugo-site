@@ -14,6 +14,15 @@ html, body {
 		var(--slate-300) 6em,
 		transparent 10em
 	);
+	@media (prefers-color-scheme: dark) {
+		background: black;
+		color: var(--default-dark);
+		background-image: linear-gradient(
+			var(--slate-500),
+			var(--slate-800) 6em,
+			transparent 10em
+		)
+	}
 }
 
 /* h1, .h1, h2, .h2, h3, .h3, h4, .h4, footer {
@@ -77,14 +86,24 @@ a, a:focus, a:hover, a:active {
 	text-decoration-thickness: var(--textDcThick); /* always rem */
 	text-underline-offset: var(--textUnOffst); /* always em */
 	text-decoration-skip-ink: auto;
+	@media screen and (min-width: 768px) {
+		--textDcThick: 0.05rem;
+		--textUnOffst: 0.275em;
+	}
 }
 
 a {
 	color: var(--default-light-link);
+	@media (prefers-color-scheme: dark) {
+		color: var(--default-dark-link);
+	}
 }
 
 a:focus, a:hover, a:active {
 	color: var(--default-light-link-afh);
+	@media (prefers-color-scheme: dark) {
+		color: var(--default-dark-link-afh);
+	}
 }
 
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
@@ -96,6 +115,9 @@ hr {
 	border: none;
 	height: 1px;
 	background-color: black;
+	@media (prefers-color-scheme: dark) {
+		background-color: white;
+	}
 }
 
 sub, sup {
@@ -147,31 +169,15 @@ audio, canvas, embed, iframe, img, object, svg, video {
 .container-narrower {
 	margin: 1rem auto 0 auto;
 	width: 80%;
-}
-
-@media screen and (min-width: 768px) {
-	a, a:focus, a:hover, a:active {
-		--textDcThick: 0.05rem;
-		--textUnOffst: 0.275em;
-	}
-}
-
-@media screen and (min-width: 1024px){
-	.container-narrower {
+	@media screen and (min-width: 1024px) {
 		width: 50%;
 		/* max-width: 65ch; */
 	}
-}
-
-@media screen and (min-width: 1536px){
-	.container-narrower {
+	@media screen and (min-width: 1536px){
 		width: 45%;
 		/* max-width: 65ch; */
 	}
-}
-
-@media screen and (min-width: 1920px){
-	.container-narrower {
+	@media screen and (min-width: 1920px){
 		width: 40%;
 	}
 }
@@ -180,25 +186,4 @@ li p {
 	margin-right: 0;
 	margin-left: 0;
 	width: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-	html, body {
-		background: black;
-		color: var(--default-dark);
-		background-image: linear-gradient(
-			var(--slate-500),
-			var(--slate-800) 6em,
-			transparent 10em
-		)
-	}
-	a {
-		color: var(--default-dark-link);
-	}
-	a:focus, a:hover, a:active {
-		color: var(--default-dark-link-afh);
-	}
-	hr {
-		background-color: white;
-	}
 }

@@ -2,12 +2,10 @@
 
 code, article code, .box code {
 	background-color: var(--bg-lt);
-}
-@media (prefers-color-scheme: dark) {
-	code, article code, .box code {
+	@media (prefers-color-scheme: dark) {
 		background-color: var(--bg-dk);
 	}
-} /* Keep this media query up here, rather than with other media queries at end */
+}
 
 code {
 	font-family: var(--monospaced);
@@ -22,15 +20,32 @@ code {
 	white-space: normal;
 }
 
-article code {
-	font-size: 0.975em;
-	--bg-lt: white;
-	--bg-dk: var(--slate-700);
+article {
+	& code {
+		font-size: 0.975em;
+		--bg-lt: white;
+		--bg-dk: var(--slate-700);
+		@media screen and (min-width: 768px) {
+			font-size: 0.95em;
+		}
+		@media screen and (min-width: 1280px) {
+			font-size: 0.925em;
+		}
+		@media screen and (min-width: 1536px) {
+			font-size: 0.9em;
+		}
+	}
 }
 
 article .footnotes code {
 	font-size: 1em;
 	/* overriding the `article code` part above for footnotes */
+}
+
+article p code {
+	@media screen and (min-width: 768px) {
+		white-space: nowrap;
+	}
 }
 
 article p code.code-inline {
@@ -45,6 +60,9 @@ article .footnotes li code {
 
 article blockquote code {
 	color: var(--slate-800);
+	@media (prefers-color-scheme: dark) {
+		color: var(--slate-300); /* slate-300 */
+	}
 }
 
 .box code {
@@ -55,28 +73,4 @@ article blockquote code {
 
 article ol li .highlight {
 	line-height: 1.5;
-}
-
-@media screen and (min-width: 768px) {
-	article code {
-		font-size: 0.95em;
-	}
-	article p code {
-		white-space: nowrap;
-	}
-}
-@media screen and (min-width: 1280px) {
-	article code {
-		font-size: 0.925em;
-	}
-}
-@media screen and (min-width: 1536px) {
-	article code {
-		font-size: 0.9em;
-	}
-}
-@media (prefers-color-scheme: dark) {
-	article blockquote code {
-		color: var(--slate-300); /* slate-300 */
-	}
 }

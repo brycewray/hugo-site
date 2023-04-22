@@ -6,34 +6,30 @@ search-button {
 	display: block;
 	margin: 2em auto;
 	text-align: center;
-}
-search-button button {
-	/* display: block; */
-	margin: 0 auto;
-	color: white;
-	width: 15em;
-	padding: 0.5em 0.25em;
-	background-color: var(--default-light-link);
-	border: 1px solid var(--default-light-link);
-	border-radius: var(--btn_radius);
-}
-search-button button:hover {
-	cursor: pointer;
-}
-search-button button:focus, search-button button:active, search-button button:hover {
-	border: 1px solid var(--default-light-link-afh);
-	background-color: var(--default-light-link-afh);
-}
-
-
-@media (prefers-color-scheme: dark) {
-	search-button button {
-		border: 1px solid var(--default-dark-link);
-		background-color: var(--default-dark-link);
-		color: black;
-	}
-	search-button button:focus, search-button button:active, search-button button:hover {
-		border: 1px solid var(--default-dark-link-afh);
-		background-color: var(--default-dark-link-afh);
+	& button {
+		/* display: block; */
+		margin: 0 auto;
+		color: white;
+		width: 15em;
+		padding: 0.5em 0.25em;
+		background-color: var(--default-light-link);
+		border: 1px solid var(--default-light-link);
+		border-radius: var(--btn_radius);
+		@media (prefers-color-scheme: dark) {
+			border: 1px solid var(--default-dark-link);
+			background-color: var(--default-dark-link);
+			color: black;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		&:focus, &:active, &:hover {
+			border: 1px solid var(--default-light-link-afh);
+			background-color: var(--default-light-link-afh);
+			@media (prefers-color-scheme: dark) {
+				border: 1px solid var(--default-dark-link-afh);
+				background-color: var(--default-dark-link-afh);
+			}
+		}
 	}
 }

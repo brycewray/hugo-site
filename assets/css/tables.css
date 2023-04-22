@@ -18,35 +18,49 @@ table.noborders {
 	margin: 1.5rem auto 1rem auto;
 	border: 0;
 	border-collapse: collapse;
+	& td {
+		text-align: left;
+		vertical-align: middle;
+		padding: 0.25rem 0 0.25rem 0.5rem;
+		& img {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+			@media screen and (min-width: 768px) {
+				max-width: 40%;
+			}
+		}
+	}
+	& tr {
+		@media (prefers-color-scheme: dark) {
+			background-color: var(--gray-200);
+			color: black;
+		}
+		&:nth-child(even) {
+			background-color: var(--sky-100);
+		}
+	}
+	& thead {
+		background-color: var(--blue-900);
+		color: white;
+		& tr {
+			@media (prefers-color-scheme: dark) {
+				background-color: var(--blue-900);
+			}
+		}
+		& td {
+			color: white;
+			font-weight: bold;
+			& img {
+				display: block;
+				max-width: 60%;
+				height: auto;
+			}
+		}
+	}
 }
-table.noborders td {
-	text-align: left;
-	vertical-align: middle;
-	padding: 0.25rem 0 0.25rem 0.5rem;
-}
-table.noborders td img {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0;
-}
-table.noborders tr:nth-child(even) {
-	background-color: var(--sky-100);
-}
-table.noborders thead {
-	background-color: var(--blue-900);
-	color: white;
-}
-table.noborders thead td {
-	color: white;
-	font-weight: bold;
-}
-table.noborders td img {
-	display: block;
-	max-width: 60%;
-	height: auto;
-}
-
 /* === end, table for web typography article, part II */
+
 
 /* === table for MLB/NFL article */
 table.leagues {
@@ -55,70 +69,58 @@ table.leagues {
 	margin: 1rem auto 0 auto;
 	border: 0;
 	border-collapse: collapse;
+	@media screen and (min-width: 900px) {
+		width: 60%;
+	}
 }
 /* === end, table for MLB/NFL article */
 
+
+/* === table for writing apps article */
 table.ulysses {
 	width: 100%;
 	table-layout: auto;
 	border-collapse: collapse;
 	font-size: var(--text-xs);
-}
-table.ulysses thead th {
-	background-color: var(--blue-800);
-	border: 1px solid black;
-	color: white;
-}
-table.ulysses td {
-	text-align: center;
-	border: 1px solid black;
-}
-table.ulysses thead th, table.ulysses td {
-	padding: 0.125em 0.375em;
-}
-table.ulysses thead th:nth-child(1), table.ulysses td:nth-child(1) {
-	text-align: left;
-}
-table.ulysses tr:nth-child(odd) {
-	background-color: white;
-}
-table.ulysses tr:nth-child(even) {
-	background-color: var(--emerald-50);
-}
-
-@media screen and (min-width: 768px) {
-	table.noborders td img {
-		max-width: 40%;
-	}
-	table.ulysses {
+	@media screen and (min-width: 768px) {
 		font-size: inherit;
 		table-layout: fixed; /* so don't have to spec each `td`'s width */
 	}
-}
-@media screen and (min-width: 900px) {
-	.table.leagues {
-		width: 60%;
-	}
-}
-@media (prefers-color-scheme: dark) {
-	table.noborders tr {
-		background-color: var(--gray-200);
-		color: black;
-	}
-	table.noborders thead tr {
-		background-color: var(--blue-900);
-	}
-	table.ulysses thead th {
-		border: 1px solid white;
-	}
-	table.ulysses td {
-		border: 1px solid white;
+	& thead th {
+		background-color: var(--blue-800);
+		border: 1px solid black;
 		color: white;
+		@media (prefers-color-scheme: dark) {
+			border: 1px solid white;
+		}
 	}
-	table.ulysses tr:nth-child(odd) {
-		background-color: var(--slate-700);
+	& td {
+		text-align: center;
+		border: 1px solid black;
+		@media (prefers-color-scheme: dark) {
+			border: 1px solid white;
+			color: white;
+		}
 	}
-	table.ulysses tr:nth-child(even) {
-		background-color: var(--emerald-900);
+	& thead th, & td {
+		padding: 0.125em 0.375em;
+	}
+	& thead th:nth-child(1), & td:nth-child(1) {
+		text-align: left;
+	}
+	& tr {
+		&:nth-child(odd) {
+			background-color: white;
+			@media (prefers-color-scheme: dark) {
+				background-color: var(--slate-700);
+			}
+		}
+		&:nth-child(even) {
+			background-color: var(--emerald-50);
+			@media (prefers-color-scheme: dark) {
+				background-color: var(--emerald-900);
+			}
+		}
 	}
 }
+/* === end, table for writing apps article */
