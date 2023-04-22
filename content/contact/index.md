@@ -17,3 +17,7 @@ date: 2020-12-30T09:00:00-06:00
 
 - Full-text ([RSS/Atom](/index.xml) or [JSON](/index.json))
 - Excerpt-only ([RSS/Atom](/index-excerpts.xml) or [JSON](/index-excerpts.json))
+
+### Social media
+
+- <a rel="me" title="Mastodon" href="https://mastodon.social/@BryceWray" rel="noopener">@BryceWray on Mastodon</a>
