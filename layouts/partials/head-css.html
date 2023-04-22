@@ -4,8 +4,8 @@
 {{- $Styling := .Site.Params.Styling -}}
 
 {{- if eq $Styling "SCSS" -}}
-	{{- $scssOptions := merge $scssOptions (dict "targetPath" "critical.min.css") -}}
-	{{- $css = resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
+	{{- $scssOptions := merge $scssOptions (dict "targetPath" "index.min.css") -}}
+	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
 	{{- $css = resources.Get "css/index.css" | postCSS | minify -}}

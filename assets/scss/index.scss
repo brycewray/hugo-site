@@ -1,0 +1,25 @@
+@charset 'utf-8';
+@use 'partials/reset';
+// vars pulled within each
+// @use 'partials/fonts_LibreFranklin';
+@use 'partials/global';
+@use 'partials/footer';
+@use 'partials/utility';
+@use 'partials/nav';
+@use 'partials/vweights'; // for variable fonts, sys or uploaded (test on Linux VM?)
+@use 'partials/ffoxobliq'; // for system font stack **with SF first** for "sans-serif" var
+@use 'partials/article';
+@use 'partials/billboard';
+@use 'partials/code';
+@use 'partials/footnotes';
+@use 'partials/fourohfour';
+@use 'partials/home';
+@use 'partials/lite-yt-embed';
+@use 'partials/posts-list';
+@use 'partials/posts-single';
+@use 'partials/search-btn';
+@use 'partials/search-form';
+@use 'partials/sitemaphtml';
+@use 'partials/social';
+@use 'partials/tables';
+// `print` handled separately
