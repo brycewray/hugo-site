@@ -86,9 +86,6 @@
 	margin: 0.5em auto 1em;
 }
 
-/* ===================== */
-/* purgecss start ignore */
-
 .pagefind-ui {
 	/* overall area */
 }
@@ -191,7 +188,3 @@
 .pagefind-ui__result-title {
 	font-weight: bold;
 }
-
-/* purgecss end ignore */
-/* =================== */
-

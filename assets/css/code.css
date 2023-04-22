@@ -564,7 +564,6 @@
 }
 
 /* ======= END, individual items from Chroma */
-/* purgecss start ignore */
 pre,
 code {
 	font-family: var(--monospaced);
@@ -608,7 +607,7 @@ pre[class*="language-"] {
 		background-color: var(--slate-800);
 	}
 }
-/* purgecss end ignore */
+
 .highlight {
 	position: relative;
 }
