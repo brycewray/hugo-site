@@ -29,11 +29,16 @@
   "author": "Bryce Wray",
   "license": "MIT",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "exec-bin": "^1.0.0",
     "hugo-installer": "^4.0.1",
     "move-cli": "^2.0.0",
     "npm-run-all": "^4.1.5",
     "pagefind": "^0.12.0",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^11.2.2",
     "rimraf": "^5.0.0",
     "wrangler": "^2.16.0"
   }
