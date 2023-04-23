@@ -21,4 +21,4 @@ date: 2020-12-30T09:00:00-06:00
 ### Fediverse
 
 - <a rel="me" title="Mastodon" href="https://mastodon.social/@BryceWray" rel="noopener">@BryceWray on Mastodon</a>
-- <a rel="me" title="CalcKey" href="https://calckey.social/@BryceWray" rel="noopener">@BryceWray on CalcKey</a>
+- <a rel="me" title="Calckey" href="https://calckey.social/@BryceWray" rel="noopener">@BryceWray on Calckey</a>
