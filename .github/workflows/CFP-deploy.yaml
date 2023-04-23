@@ -45,6 +45,12 @@ jobs:
           node-version: '18'
       - name: Install packages
         run: npm install
+      - name: Cache Hugo resources
+        id: cache-resources
+        uses: actions/cache@v3
+        with:
+          path: resources
+          key: ${{ runner.os }}-resources
       # - name: Install Embedded Dart Sass
       #   run: |
       #     curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
