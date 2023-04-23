@@ -45,6 +45,7 @@ jobs:
           node-version: '18'
       - name: Install packages
         run: npm install
+      # caching suggested by Rodri in https://discord.com/channels/909600839717511208/986399846044958741/1099628644814557185
       - name: Cache Hugo resources
         id: cache-resources
         uses: actions/cache@v3
