@@ -72,15 +72,16 @@ First, the partial for the `head` (called from within my main `head.html` partia
 	{{- range . -}}
 		{{- $src := . -}}
 		{{- $imgBd5 := md5 .Name -}}
+		{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $src.Width " / " $src.Height ";" -}}
 		{{- $GIP_colors := $src.Colors -}}
 		{{- if (lt ($GIP_colors | len) 2) -}}
 			{{- $GIP_colors = $GIP_colors | append "#000000" -}}
 		{{- end -}}
 		{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
-		{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd "); background-size: cover; background-repeat: no-repeat;" -}}
+		{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
 		{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
 		{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 "); background-size: cover; background-repeat: no-repeat;" }}
+		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
 		.imgB-{{ $imgBd5 }}-GIP {
 			{{ $BkgdStyleGIP | safeCSS }}
 		}
