@@ -22,7 +22,7 @@
 		</article>
 	</div>
 	{{ if or .PrevPage .NextPage }}
-		<div class="bg-dark sansSerif" data-pagefind-ignore>
+		<div class="bg-dark" data-pagefind-ignore>
 			{{ with .NextInSection -}}
 			<p class="ctr prevnextP">
 				<strong>Next</strong>: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
