@@ -42,11 +42,11 @@ jobs:
           # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
           # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
       - name: Download Hugo (non-Node)
-        if: ${{ env.$NODE != 'true' }}
+        if: ${{ env.NODE != 'true' }}
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
         # 0.103.0 began new naming convention
       - name: Install Hugo (non-Node)
-        if: ${{ env.$NODE != 'true' }}
+        if: ${{ env.NODE != 'true' }}
         run: sudo dpkg -i hugo*.deb
       - name: Use Node.js
         if: ${{ env.NODE == 'true' }}
@@ -64,7 +64,7 @@ jobs:
           path: resources
           key: ${{ runner.os }}-resources
       - name: Install Embedded Dart Sass (non-Node)
-        if: ${{ env.$STYLING == 'SCSS' && env.$NODE != 'true' }}
+        if: ${{ env.STYLING == 'SCSS' && env.NODE != 'true' }}
         run: |
           curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
@@ -74,22 +74,22 @@ jobs:
         if: ${{ env.NODE == 'true' }}
         run: npm run build
       - name: Install Pagefind (non-Node)
-        if: ${{ env.$NODE != 'true' }}
+        if: ${{ env.NODE != 'true' }}
         uses: supplypike/setup-bin@v3
         with:
           uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
           name: "pagefind_extended"
           version: ${{env.PAGEFIND_VERSION}}
       - name: Build site with Hugo (non-Node)
-        if: ${{ env.$NODE != 'true' }}
+        if: ${{ env.NODE != 'true' }}
         run: hugo --verbose --minify
-      - name: Move "excerpts" feeds (RSS/Atom and JSON) (non-Node)
-        if: ${{ env.$NODE != 'true' }}
+      - name: Move "excerpts" feeds (non-Node)
+        if: ${{ env.NODE != 'true' }}
         run: |
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
       - name: Run Pagefind (non-Node)
-        if: ${{ env.$NODE != 'true' }}
+        if: ${{ env.NODE != 'true' }}
         run: pagefind_extended --source "public"
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
