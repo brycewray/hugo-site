@@ -25,8 +25,8 @@ env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below (non-Node)
   DART_SASS_VERSION: 1.62.0 # (non-Node)
   PAGEFIND_VERSION: 0.12.0 # (non-Node)
-  NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
-  STYLING: SCSS # choices: 'VCSS' and 'SCSS'
+  NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  STYLING: VCSS # choices: 'VCSS' and 'SCSS'
 
 jobs:
   deploy:
