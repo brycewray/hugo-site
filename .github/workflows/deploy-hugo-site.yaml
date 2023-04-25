@@ -1,4 +1,4 @@
-name: Deploy to web (host-selectable)
+name: Deploy to web
 
 on:
   push:
