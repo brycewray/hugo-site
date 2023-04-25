@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to web (host-selectable)
 
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
@@ -27,6 +27,7 @@ env:
   PAGEFIND_VERSION: 0.12.0 # (non-Node)
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   STYLING: VCSS # choices: 'VCSS' and 'SCSS'
+  HOST: CFP # choices: 'CFP' and 'Vercel'
 
 jobs:
   deploy:
@@ -54,20 +55,20 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
-      - name: Install Embedded Dart Sass (cond. - non-Node)
-        if: ${{ env.STYLING == 'SCSS' && env.NODE != 'true' }}
+      - name: Install Embedded Dart Sass (cond. - SCSS)
+        if: ${{ env.STYLING == 'SCSS' }}
         run: |
           curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           sass_embedded/dart-sass-embedded --version
           echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      # caching suggested by Rodri in https://discord.com/channels/909600839717511208/986399846044958741/1099628644814557185
-      - name: Cache Hugo resources
-        id: cache-resources
-        uses: actions/cache@v3
-        with:
-          path: resources
-          key: ${{ runner.os }}-resources
+      # # caching suggested by Rodri in https://discord.com/channels/909600839717511208/986399846044958741/1099628644814557185
+      # - name: Cache Hugo resources
+      #   id: cache-resources
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: resources
+      #     key: ${{ runner.os }}-resources
       - name: Install Pagefind (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         uses: supplypike/setup-bin@v3
@@ -85,7 +86,13 @@ jobs:
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           pagefind_extended --source "public"
-      - name: Publish to CFP
+      - name: Move Vercel-specific files to `/public` (cond. - host)
+        if: ${{ env.HOST == 'Vercel' }}
+        run: |
+          mv middleware.js public/middleware.js
+          mv vercel.json public/vercel.json
+      - name: Publish to CFP (cond. - host)
+        if: ${{ env.HOST == 'CFP' }}
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CFP_API_TOKEN }}
@@ -93,3 +100,17 @@ jobs:
           projectName: 'static-site'
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to Vercel (Betahuhn) (cond. - host)
+        if: ${{ env.HOST == 'Vercel' }}
+        uses: BetaHuhn/deploy-to-vercel-action@v1
+        with:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+          WORKING_DIRECTORY: 'public'
+      - name: Remove Vercel-specific files from build (cond. - host)
+        if: ${{ env.HOST == 'Vercel' }}
+        run: |
+          rm -rf public/middleware.js
+          rm -rf public/vercel.json
