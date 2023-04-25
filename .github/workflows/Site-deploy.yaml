@@ -1,21 +1,5 @@
 name: Deploy to web (host-selectable)
 
-# To do a push without triggering this GHA, include one of
-# the following in the **commit message**
-# (INCLUDING the brackets AND case-sensitivity):
-#
-# [skip ci]
-# [ci skip]
-# [no ci]
-# [skip actions]
-# [actions skip]
-#
-# “Alternatively, you can end the commit message
-# with two empty lines followed by either
-# `skip-checks: true` or `skip-checks:true`.”
-#
-# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
-
 on:
   push:
     branches:
@@ -23,7 +7,7 @@ on:
 
 env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below (non-Node)
-  DART_SASS_VERSION: 1.62.0 # (non-Node)
+  DART_SASS_VERSION: 1.62.0 # (depends on STYLING env var)
   PAGEFIND_VERSION: 0.12.0 # (non-Node)
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   STYLING: VCSS # choices: 'SCSS' and 'VCSS' (VCSS, albeit perhaps with PostCSS for nesting, etc.)
@@ -114,3 +98,18 @@ jobs:
         run: |
           rm -rf public/middleware.js
           rm -rf public/vercel.json
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci]
+# [ci skip]
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true` or `skip-checks:true`.”
+#
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
