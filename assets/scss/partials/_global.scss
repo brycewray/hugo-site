@@ -29,7 +29,17 @@ html, body {
 		);
 	}
 }
-
+/*
+h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+header, footer, table, blockquote, summary, contact-button, search-button,
+.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+.sitemap-Div, .searchDiv, .searchDivPF,
+.footnotes, .footnote-sim, .footnote-ref,
+.box, .labeled-highlight, .imgcCaption, .bg-dark,
+.legal, .pokey {
+	font-family: var.$sans-serif;
+}
+ */
 html {
 	// scroll-behavior: smooth;
 	scroll-padding-top: 80px;

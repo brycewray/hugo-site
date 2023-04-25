@@ -2,9 +2,6 @@
 @use 'partials/variables' as var;
 
 .posts {
-	// &-Wrapper {
-	// 	font-family: var.$sans-serif;
-	// }
 	&-pagerGray {
 		color: map-get(var.$twcss, gray-300);
 	}

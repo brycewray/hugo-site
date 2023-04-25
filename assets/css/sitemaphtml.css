@@ -1,7 +1,6 @@
 @charset 'utf-8';
 
 .sitemap-Div {
-	/* font-family: var(--sans-serif); */
 	margin: 0 auto;
 	width: 90%;
 	@media screen and (min-width: 1024px) {

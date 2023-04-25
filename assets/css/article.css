@@ -1,9 +1,5 @@
 @charset 'utf-8';
 
-/* .box, .imgcCaption {
-	font-family: var(--sans-serif);
-} */
-
 .header-anchor {
 	text-decoration: none;
 	color: var(--default-light);

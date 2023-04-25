@@ -2,7 +2,6 @@
 @use 'partials/variables' as var;
 
 .container-home {
-	// font-family: var.$sans-serif;
 	padding-bottom: 1em;
 	text-align: center;
 	padding: 2vh 5vw;
@@ -82,11 +81,9 @@
 	&-Dates {
 		margin-top: 0.5em;
 		margin-bottom: 1em;
-		// font-family: var.$sans-serif;
 		font-size: clamp(0.875rem, 0.75rem + 1vw, 1.125rem);
 	}
 	&-Finish {
-		// font-family: var.$sans-serif;
 		margin-top: 3em;
 	}
 }

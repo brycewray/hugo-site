@@ -2,7 +2,6 @@
 @use 'partials/variables' as var;
 
 .bg-dark {
-	// font-family: var.$sans-serif;
 	margin-top: 2.5rem;
 	background-color: map-get(var.$twcss, slate-300);
 	@media (prefers-color-scheme: dark) {
@@ -41,7 +40,6 @@
 }
 
 contact-button {
-	// font-family: var.$sans-serif;
 	display: grid;
 	place-items: center;
 	margin-top: 0.5em;

@@ -1,9 +1,5 @@
 @charset 'utf-8';
 
-/* .footnotes, .footnote-sim, .footnote-ref {
-	font-family: var(--sans-serif);
-} */
-
 .footnotes {
 	padding-top: 0.5em;
 	/* padding-bottom: 1em; */
