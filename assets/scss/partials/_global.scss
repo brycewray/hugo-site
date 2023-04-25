@@ -9,7 +9,7 @@ html, body {
 	text-rendering: optimizeLegibility;
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
-	font-family: var.$sans-serif;
+	font-family: var.$serif;
 	background-color: map-get(var.$twcss, slate-100);
 	color: var.$default-light;
 	@media (prefers-color-scheme: dark) {
@@ -29,7 +29,7 @@ html, body {
 		);
 	}
 }
-/*
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
@@ -39,7 +39,7 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .legal, .pokey {
 	font-family: var.$sans-serif;
 }
- */
+
 html {
 	// scroll-behavior: smooth;
 	scroll-padding-top: 80px;
