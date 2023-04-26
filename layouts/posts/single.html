@@ -25,12 +25,12 @@
 		<div class="bg-dark" data-pagefind-ignore>
 			{{ with .NextInSection -}}
 			<p class="ctr prevnextP">
-				<strong>Next</strong>: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
+				<strong class="legal">NEXT</strong>&nbsp;&nbsp;&nbsp;<a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
 			</p>
 			{{- end }}
 			{{ with .PrevInSection -}}
 			<p class="ctr prevnextP">
-				<strong>Previous</strong>: <a class="previous" href="{{.RelPermalink}}">{{.Title}}</a>
+				<strong class="legal">PREVIOUS</strong>&nbsp;&nbsp;&nbsp;<a class="previous" href="{{.RelPermalink}}">{{.Title}}</a>
 			</p>
 			{{- end }}
 		</div>
