@@ -10,21 +10,21 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$serif;
-	background-color: map-get(var.$twcss, slate-100);
+	background-color: var.$slate-100;
 	color: var.$default-light;
 	@media (prefers-color-scheme: dark) {
 		background: var.$black;
 		color: var.$default-dark;
 	}
 	background-image: linear-gradient(
-		map-get(var.$twcss, slate-600),
-		map-get(var.$twcss, slate-300) 6em,
+		var.$slate-600,
+		var.$slate-300 6em,
 		transparent 10em
 	);
 	@media (prefers-color-scheme: dark) {
 		background-image: linear-gradient(
-			map-get(var.$twcss, slate-500),
-			map-get(var.$twcss, slate-800) 6em,
+			var.$slate-500,
+			var.$slate-800 6em,
 			transparent 10em
 		);
 	}

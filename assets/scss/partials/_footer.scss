@@ -1,4 +1,4 @@
-@use 'variables' as var;
+@use 'variables' as var;;
 
 footer {
 	// @media (prefers-color-scheme: dark) {
@@ -13,9 +13,9 @@ footer {
 	p {
 		line-height: 1.5em; // definitely em, not rem, here
 		code {
-			background-color: map-get(var.$twcss, slate-200);
+			background-color: var.$slate-200;
 			@media (prefers-color-scheme: dark) {
-				background-color: map-get(var.$twcss, slate-700);
+				background-color: var.$slate-700;
 			}
 		}
 	}
@@ -59,7 +59,7 @@ circle.Twitter,
 circle.JSON {
 	fill: var.$black;
 	@media (prefers-color-scheme: dark) {
-		fill: map-get(var.$twcss, blue-300);
+		fill: var.$blue-300;
 	}
 }
 

@@ -14,7 +14,7 @@ table.noborders {
 	border-collapse: collapse;
 	tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: map-get(var.$twcss, gray-200);
+			background-color: var.$gray-200;
 			color: var.$black;
 		}
 	}
@@ -29,15 +29,15 @@ table.noborders {
 		}
 	}
 	tr:nth-child(even) {
-		background-color: map-get(var.$twcss, sky-100);
+		background-color: var.$sky-100;
 	}
 	thead {
-		background-color: map-get(var.$twcss, blue-900);
+		background-color: var.$blue-900;
 		color: var.$white;
 	}
 	thead tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: map-get(var.$twcss, blue-900);
+			background-color: var.$blue-900;
 		}
 	}
 	thead td {
@@ -81,7 +81,7 @@ table.ulysses {
 		table-layout: fixed; // so don't have to spec each `td`'s width
 	}
 	thead th {
-		background-color: map-get(var.$twcss, blue-800);
+		background-color: var.$blue-800;
 		border: 1px solid var.$black;
 		color: white;
 		@media (prefers-color-scheme: dark) {
@@ -106,13 +106,13 @@ table.ulysses {
 	tr:nth-child(odd) {
 		background-color: var.$white;
 		@media (prefers-color-scheme: dark){
-			background-color: map-get(var.$twcss, slate-700);
+			background-color: var.$slate-700;
 		}
 	}
 	tr:nth-child(even) {
-		background-color: map-get(var.$twcss, emerald-50);
+		background-color: var.$emerald-50;
 		@media (prefers-color-scheme: dark){
-			background-color: map-get(var.$twcss, emerald-900);
+			background-color: var.$emerald-900;
 		}
 	}
 }

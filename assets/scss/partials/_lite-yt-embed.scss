@@ -4,9 +4,9 @@
 lite-youtube {
 	background-color: var.$black;
 	position: relative;
-	border: 1px solid map-get(var.$twcss, gray-700);
+	border: 1px solid var.$gray-700;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-400);
+		border: 1px solid var.$gray-400;
 	}
 	display: block;
 	contain: content;
@@ -94,8 +94,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
 }
 
 .lyt-disclaimer .red {
-	color: map-get(var.$twcss, red-700);
+	color: var.$red-700;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, red-300);
+		color: var.$red-300;
 	}
 }

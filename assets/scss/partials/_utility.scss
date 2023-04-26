@@ -4,9 +4,9 @@
 	text-align: center;
 }
 .red {
-	color: map-get(var.$twcss, red-700);
+	color: var.$red-700;
 	@media (prefers-color-scheme: dark) {
-		color: map-get(var.$twcss, red-300);
+		color: var.$red-300;
 	}
 }
 

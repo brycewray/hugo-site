@@ -33,8 +33,8 @@
 	background-color: var.$white;
 	border: 1px solid var.$black;
 	@media (prefers-color-scheme: dark) {
-		background-color: map-get(var.$twcss, gray-800);
-		border: 1px solid map-get(var.$twcss, gray-300);
+		background-color: var.$gray-800;
+		border: 1px solid var.$gray-300;
 	}
 }
 
@@ -106,8 +106,8 @@
 	border-radius: 9px;
 	background-color: var.$white;
 	@media (prefers-color-scheme: dark) {
-		border: 1px solid map-get(var.$twcss, gray-300);
-		background-color: map-get(var.$twcss, gray-800);
+		border: 1px solid var.$gray-300;
+		background-color: var.$gray-800;
 		color: var.$white;
 	}
 }
@@ -175,10 +175,10 @@
 	// font-family: var.$serif;
 	mark {
 		color: var.$black;
-		background-color: map-get(var.$twcss, blue-100);
+		background-color: var.$blue-100;
 		@media (prefers-color-scheme: dark) {
 			color: var.$white;
-			background-color: map-get(var.$twcss, blue-900);
+			background-color: var.$blue-900;
 		}
 	}
 }

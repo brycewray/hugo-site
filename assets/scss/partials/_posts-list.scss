@@ -3,7 +3,7 @@
 
 .posts {
 	&-pagerGray {
-		color: map-get(var.$twcss, gray-300);
+		color: var.$gray-300;
 	}
 	&-pagerThing {
 		display: flex;
@@ -98,23 +98,23 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: map-get(var.$twcss, gray-300);
+	color: var.$gray-300;
 }
 
 path.FirstLast {
-	fill: map-get(var.$twcss, gray-400);
+	fill: var.$gray-400;
 }
 
 path.NextPrev {
-	fill: map-get(var.$twcss, blue-700);
+	fill: var.$blue-700;
 	@media (prefers-color-scheme: dark) {
-		fill: map-get(var.$twcss, blue-300);
+		fill: var.$blue-300;
 	}
 }
 
 a:hover path.NextPrev {
-	fill: map-get(var.$twcss, blue-800);
+	fill: var.$blue-800;
 	@media (prefers-color-scheme: dark) {
-		fill: map-get(var.$twcss, blue-200);
+		fill: var.$blue-200;
 	}
 }
