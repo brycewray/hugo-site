@@ -7,7 +7,7 @@ on:
 
 env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below (non-Node)
-  DART_SASS_VERSION: 1.62.0 # (depends on STYLING env var)
+  DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
   PAGEFIND_VERSION: 0.12.0 # (non-Node)
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   STYLING: VCSS # choices: 'SCSS' and 'VCSS' (VCSS, albeit perhaps with PostCSS for nesting, etc.)
