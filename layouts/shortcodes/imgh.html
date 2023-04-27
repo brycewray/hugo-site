@@ -14,7 +14,7 @@
 	hint is applicable only to webp:
 	https://gohugo.io/content-management/image-processing/#hint
 */ -}}
-{{- $filter := false -}}
+{{- $filter := "MitchellNetravali" -}}{{/* default filter */}}
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
 {{- $simple := false -}}
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
