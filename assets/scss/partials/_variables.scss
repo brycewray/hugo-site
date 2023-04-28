@@ -3,7 +3,8 @@
 $default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 $white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 $black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-// map of selected TWCSS colors
+// TWCSS colors
+// -- **not** in a map to avoid numerous `map-get`s in other files
 $slate-50: #f8fafc;
 $slate-100: #f1f5f9;
 $slate-200: #e1e7ef;
