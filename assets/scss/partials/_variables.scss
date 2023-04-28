@@ -4,7 +4,9 @@ $default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" 
 $white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 $black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
 // TWCSS colors
-// -- **not** in a map to avoid numerous `map-get`s in other files
+// -- **not** in a map, to avoid numerous `map-get`s in other files
+// midpoints after 50 and before 950
+// from https://meyerweb.com/eric/tools/color-blend
 $slate-50: #f8fafc;
 $slate-100: #f1f5f9;
 $slate-200: #e1e7ef;
@@ -133,6 +135,8 @@ $emerald-50: #ecfdf5;
 $emerald-100: #d1fae5;
 $emerald-200: #a7f3d0;
 $emerald-300: #6ee7b7;
+$emerald-400: #34d399;
+$emerald-500: #10b981;
 $emerald-600: #059669;
 $emerald-700: #047857;
 $emerald-800: #065f46;
