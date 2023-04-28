@@ -1,0 +1,195 @@
+html, body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	-moz-osx-font-smoothing: auto; /* only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
+	font-variant-ligatures: normal; /* if using any ligature-savvy fonts, ligatures won't work without this */
+	text-rendering: optimizeLegibility;
+	font-kerning: normal;
+	font-family: var(--serif);
+	background-color: var(--slate-100);
+	color: var(--default-light);
+	background-image: linear-gradient(
+		var(--slate-600),
+		var(--slate-300) 6em,
+		transparent 10em
+	);
+	@media (prefers-color-scheme: dark) {
+		background: black;
+		color: var(--default-dark);
+		background-image: linear-gradient(
+			var(--slate-500),
+			var(--slate-800) 6em,
+			transparent 10em
+		)
+	}
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+header, footer, table, blockquote, summary, contact-button, search-button,
+.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+.sitemap-Div, .searchDiv, .searchDivPF,
+.footnotes, .footnote-sim, .footnote-ref,
+.box, .labeled-highlight, .imgcCaption, .bg-dark,
+.legal, .pokey {
+	font-family: var(--sans-serif);
+}
+
+html {
+	/* scroll-behavior: smooth; */
+	scroll-padding-top: 80px;
+}
+
+p, li {
+	line-height: 1.4;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	letter-spacing: -0.025rem;
+}
+
+h1, h2, h3, h4 {
+	outline: 2px transparent;
+	outline-offset: 2px;
+}
+
+h1:active, h1:focus, h1:hover,
+h2:active, h2:focus, h2:hover,
+h3:active, h3:focus, h3:hover,
+h4:active, h4:focus, h4:hover {
+	outline: 2px transparent;
+	outline-offset: 2px;
+}
+
+h1, h2, h3, h4 {
+	display: block;
+	margin-block-start: 0.25rem;
+	margin-block-end: 0.25rem;
+}
+
+h3, .h3 {
+	font-style: italic;
+}
+
+h1, .h1 {
+	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
+	/* usually overridden by other styling (e.g., billboard partial) */
+}
+
+h2, .h2 {
+	font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
+}
+
+h3, .h3 {
+	font-size: clamp(1.375rem, 0.5rem + 1.75vw, 1.75rem);
+}
+
+h4, .h4 {
+	font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
+}
+
+a, a:focus, a:hover, a:active {
+	text-decoration-thickness: var(--textDcThick); /* always rem */
+	text-underline-offset: var(--textUnOffst); /* always em */
+	text-decoration-skip-ink: auto;
+	@media screen and (min-width: 768px) {
+		--textDcThick: 0.05rem;
+		--textUnOffst: 0.275em;
+	}
+}
+
+a {
+	color: var(--default-light-link);
+	@media (prefers-color-scheme: dark) {
+		color: var(--default-dark-link);
+	}
+}
+
+a:focus, a:hover, a:active {
+	color: var(--default-light-link-afh);
+	@media (prefers-color-scheme: dark) {
+		color: var(--default-dark-link-afh);
+	}
+}
+
+a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
+	border-bottom: 0;
+	text-decoration: none;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: black;
+	@media (prefers-color-scheme: dark) {
+		background-color: white;
+	}
+}
+
+sub, sup {
+	font-size: 65%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.45em;
+}
+
+ul li li, ol li li, ul li li li, ol li li li {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+ul li li {
+	list-style-type: circle;
+}
+
+ol li li {
+	list-style-type: disc;
+}
+
+ul li li li, ol li li li {
+	list-style-type: square;
+}
+
+#content-main-hugo, main {
+	padding-top: 40px;
+}
+
+#content-main-hugo .topOfMain, main .topOfMain {
+	margin-top: 0.5rem;
+	font-size: 2.25rem;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	vertical-align: middle;
+}
+
+.container {
+	/* width: 90%; */
+	margin: 0 auto;
+}
+
+.container-narrower {
+	margin: 1rem auto 0 auto;
+	width: 80%;
+	@media screen and (min-width: 1024px) {
+		width: 50%;
+		/* max-width: 65ch; */
+	}
+	@media screen and (min-width: 1536px){
+		width: 45%;
+		/* max-width: 65ch; */
+	}
+	@media screen and (min-width: 1920px){
+		width: 40%;
+	}
+}
+
+li p {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}
