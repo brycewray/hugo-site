@@ -77,7 +77,7 @@ jobs:
       - name: Build site with Hugo, move feed files, run Pagefind (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         run: |
-          hugo --verbose --minify
+          hugo --verbose --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           pagefind_extended --source "public"
