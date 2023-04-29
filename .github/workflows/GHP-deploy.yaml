@@ -87,7 +87,7 @@ jobs:
           hugo --verbose --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
-          pagefind_extended --source "public"
+          pagefind --source "public"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
