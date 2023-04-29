@@ -5,6 +5,8 @@ name: Deploy to GitHub Pages
 ## - https://gohugo.io/hosting-and-deployment/hosting-on-github/
 ## - https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml
 ## ... all as of 2023-04-29
+##
+## Without custom domain, will deploy to https://brycewray.github.io/hugo-site/
 
 # When the action should run. Here we specify it should run on push to main branch.
 # We also allow for manually running the action with the empty "workflow_dispatch".
