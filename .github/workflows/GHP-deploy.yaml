@@ -81,12 +81,6 @@ jobs:
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           pagefind_extended --source "public"
-      - name: Build site with Hugo, move feed files, run Pagefind (non-Node)
-        run: |
-          hugo --verbose --minify
-          mv public/posts/index.xml public/index-excerpts.xml
-          mv public/posts/index.json public/index-excerpts.json
-          pagefind_extended --source "public"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
