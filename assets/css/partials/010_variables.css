@@ -271,7 +271,7 @@
 	/* === TYPOGRAPHY === */
 	/* font families */
 	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--serif: ui-serif, "New York", Georgia, Cambria, "Times New Roman", Times, serif;
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", "Source Code Pro", Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Droid Sans Mono", "Courier New", monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	/* text sizes */
