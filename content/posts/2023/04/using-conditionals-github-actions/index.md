@@ -138,8 +138,8 @@ As your own GitHub Actions workflow requirements grow in complexity, using condi
 ## References and additional reading
 
 - GitHub documentation
-	- "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions)" (retrieved <span class="nobrk">2023-04-28</span>).
-	- "[Using conditions to control job execution](https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution)" (retrieved <span class="nobrk">2023-04-28</span>).
+	- "[Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions)" (last updated <span class="nobrk">2023-04-20</span>).
+	- "[Using conditions to control job execution](https://docs.github.com/en/actions/using-jobs/using-conditions-to-control-job-execution)" (last updated <span class="nobrk">2023-03-30</span>).
 - Stack Overflow
 	- "[github-action: does the IF have an ELSE?](https://stackoverflow.com/questions/60916931/github-action-does-the-if-have-an-else)" (initially posted <span class="nobrk">2020-03-29).
 - Sander Knape, "[Go crazy with GitHub Actions](https://sanderknape.com/2021/01/go-crazy-github-actions/)" (<span class="nobrk">2021-01-13</span>).
