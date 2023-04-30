@@ -121,7 +121,7 @@ Then, the revised image-processing shortcode that now handles both GIPs (the def
 		{{- with $respSizes -}}
 			{{- range $i, $e := . -}}
 				{{- if ge $src.Width . -}}
-					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s%s%s" . " webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
@@ -129,7 +129,7 @@ Then, the revised image-processing shortcode that now handles both GIPs (the def
 		{{- with $respSizes -}}
 			{{- range $i, $e := . -}}
 				{{- if ge $src.Width . -}}
-					{{- if $i }}, {{ end -}}{{- ($src.Resize (printf "%sx%s%s" . " jpg " $filter) ).RelPermalink }} {{ . }}w
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
