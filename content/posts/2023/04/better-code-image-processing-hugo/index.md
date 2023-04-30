@@ -11,7 +11,7 @@ With a big enough hammer, you definitely can cram a square peg into a round hole
 
 Some pegs, holes, and hammers were harmed during my contortions within the [Hugo](https://gohugo.io) static site generator (SSG) to create CSS that (a.) *would* provide good backgrounds for my site's responsive images but (b.) would *not* violate the site's [Content Security Policy](https://content-security-policy.com) (CSP). I wasn't happy about the collateral damage, but thought I had no choice.
 
-. . . at least, until two other Hugo users pointed me toward a better way.
+. . . that is, until two other Hugo users pointed me toward a better way.
 
 <!--more-->
 
