@@ -132,6 +132,9 @@ jobs:
 
 As your own GitHub Actions workflow requirements grow in complexity, using conditionals can be a welcome way to minimize, or even eliminate, having to manage multiple workflow files.
 
+**Update, 2023-04-30**: Perhaps you typically install Hugo without using the npm-related method mentioned herein, yet also employ various npm packages --- *e.g.*, [Tailwind CSS](https://tailwindcss.com) --- with your site. If so, you're wondering about the all-or-none choices, npm-wise, presented in the example above. The workflow shown here assumes, in the case of npm use, a `package.json` with scripts that do *everything* (including the Hugo installation); but, in a more "hybrid" Hugo project, I assume you'll adjust the workflow and its conditionals to fit your specific setup.
+{.box}
+
 ## References and additional reading
 
 - GitHub documentation
