@@ -275,11 +275,11 @@ And that's it. If you encounter errors in any of the above information, please [
 
 ## References
 
-- Zachary Betz, "[How to Add a Binary (or Executable, or Program) to Your PATH on macOS, Linux, or Windows](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/)."
-- Talha Saif Malik, "[How do I know if I have bash or zsh?](https://linuxhint.com/know-bash-or-zsh/)"
-- "Srini," "[Move files and directories to another location](https://www.windows-commandline.com/move-files-directories/)."
-- [Apple Support website](https://support.apple.com), "[Use zsh as the default shell on your Mac](https://support.apple.com/en-us/HT208050)," January 28, 2020.
-- [JavaTpoint website](https://www.javatpoint.com), "[Linux Home Directory](https://www.javatpoint.com/linux-home-directory)."
-- [ShellHacks website](https://www.shellhacks.com/), "[Windows CMD: PATH Variable — Add To PATH — Echo PATH](https://www.shellhacks.com/windows-cmd-path-variable-add-to-path-echo-path/)."
-- [tar(1) Linux manual page](https://man7.org/linux/man-pages/man1/tar.1.html).
-- [TheWindowsClub website](https://www.thewindowsclub.com/), "[How to Run Command Prompt as an Administrator in Windows 11/10](https://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator)."
+- Zachary Betz, "[How to Add a Binary (or Executable, or Program) to Your PATH on macOS, Linux, or Windows](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/)" (<span class="nobrk">2021-06-23</span>).
+- Talha Saif Malik, "[How do I know if I have bash or zsh?](https://linuxhint.com/know-bash-or-zsh/)" (<span class="nobrk">2021-06-06</span>).
+- "Srini," "[Move files and directories to another location](https://www.windows-commandline.com/move-files-directories/)" (<span class="nobrk">2014-01-05</span>).
+- [Apple Support website](https://support.apple.com), "[Use zsh as the default shell on your Mac](https://support.apple.com/en-us/HT208050)" (<span class="nobrk">2020-01-28</span>).
+- [JavaTpoint website](https://www.javatpoint.com), "[Linux Home Directory](https://www.javatpoint.com/linux-home-directory)" (retrieved <span class="nobrk">2022-05-22</span>).
+- [ShellHacks website](https://www.shellhacks.com/), "[Windows CMD: PATH Variable — Add To PATH — Echo PATH](https://www.shellhacks.com/windows-cmd-path-variable-add-to-path-echo-path/)" (<span class="nobrk">2019-04-19</span>).
+- [tar(1) Linux manual page](https://man7.org/linux/man-pages/man1/tar.1.html) (retrieved <span class="nobrk">2022-05-22</span>).
+- [TheWindowsClub website](https://www.thewindowsclub.com/), "[How to Run Command Prompt as an Administrator in Windows 11/10](https://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator)" (<span class="nobrk">2019-04-18</span>).
