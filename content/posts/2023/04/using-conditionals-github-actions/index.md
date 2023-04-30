@@ -84,22 +84,22 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Install Hugo, Pagefind, etc. with npm/Node
+      - name: Install Hugo, Pagefind, etc. with npm/Node.js
         if: ${{ env.NODE == 'true' }}
         run: npm install
-      - name: Hugo download/install without npm/Node
+      - name: Hugo download/install without npm/Node.js
         if: ${{ env.NODE != 'true' }}
         run: |
           # multiple lines of commands
           # not reproduced here;
           # this uses `HUGO_VERSION`
-      - name: Install Embedded Dart Sass (for SCSS)
+      - name: Install Embedded Dart Sass
         if: ${{ env.STYLING == 'SCSS' }}
         run: |
           # multiple lines of commands
           # not reproduced here;
           # this uses `DART_SASS_VERSION`
-      - name: Install Pagefind (without npm/Node.js)
+      - name: Install Pagefind without npm/Node.js
         if: ${{ env.NODE != 'true' }}
         uses: supplypike/setup-bin@v3
         with:
@@ -132,7 +132,7 @@ jobs:
 
 As your own GitHub Actions workflow requirements grow in complexity, using conditionals can be a welcome way to minimize, or even eliminate, having to manage multiple workflow files.
 
-**Update, 2023-04-30**: Perhaps you typically install Hugo without using the npm-related method mentioned herein, yet also employ various npm packages --- *e.g.*, [Tailwind CSS](https://tailwindcss.com) --- with your site. If so, you're wondering about the all-or-none choices, npm-wise, presented in the example above. The workflow shown here assumes, in the case of npm use, a `package.json` with scripts that do *everything* (including the Hugo installation); but, in a more "hybrid" Hugo project, I assume you'll adjust the workflow and its conditionals to fit your specific setup.
+**Update, 2023-04-30**: Perhaps you typically install Hugo without using the npm-related method mentioned herein, yet also employ various npm packages --- *e.g.*, [Tailwind CSS](https://tailwindcss.com) --- with your site. If so, you may wonder about some of the all-or-none choices, npm-wise, presented in the example above. Specifically, the Hugo/vanilla CSS workflow shown here assumes a `package.json` with scripts that install *everything* (including Hugo). In a more "hybrid" Hugo project, you'll obviously need to adjust the workflow and its conditionals to fit your specific setup.
 {.box}
 
 ## References and additional reading
