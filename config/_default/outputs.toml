@@ -1,0 +1,10 @@
+home = [
+	'html',
+	'rss',
+	'json'
+]
+section = [
+	'html',
+	'rss',
+	'json'
+]

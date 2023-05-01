@@ -1,0 +1,13 @@
+[exec]
+	allow = [
+		'^dart-sass-embedded$',
+		'^go$',
+		'^npx$',
+		'^postcss$',
+		'^subl$',
+		'^open$'
+	]
+[funcs]
+	getenv = [
+		'^*'
+	]

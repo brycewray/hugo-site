@@ -1,0 +1,7 @@
+# overridden in production
+[getjson]
+	dir = ':resourceDir/json'
+	# maxAge = '144h' # default = -1 (forever)
+[getresource]
+	dir = ':resourceDir/_gen'
+	maxAge = '144h' # default = -1 (forever)

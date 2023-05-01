@@ -1,0 +1,5 @@
+disableJSON = true
+[tdewolff]
+	[tdewolff.html]
+		keepQuotes = true
+		keepWhitespace = false # per https://discourse.gohugo.io/t/is-html-minification-broken/34174
