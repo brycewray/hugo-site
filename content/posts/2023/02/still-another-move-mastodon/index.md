@@ -19,4 +19,4 @@ This makes my fourth primary Mastodon location in the last few months:
 
 Incidentally: although I'd used the `BryceWrayTX` handle on the other instances, mainly because that had long been my Twitter handle, I'm using just `BryceWray` on mastodon.social because, in fact, I'd *had* a mastodon.social account with that handle some time back before deleting it; and, as I learned today, [that locked it up permanently](https://github.com/mastodon/mastodon/issues/4614), so I went `TX`-less in this new account. (I assure my fellow Texans I meant no offense in doing so.)
 
-My exploration of the FediVerse continues.
+My exploration of the Fediverse continues.
