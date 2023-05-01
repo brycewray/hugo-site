@@ -1,0 +1,168 @@
+baseURL = 'https://www.brycewray.com/'
+languageCode = 'en-us'
+title = 'BryceWray.com'
+# theme = 'newcss' # choices are sass and newcss - as of 2023-02-11
+# https://discourse.gohugo.io/t/site-theme/33200
+timeZone = 'America/Chicago'
+summaryLength = 30 # words --- if you use summaries
+enableRobotsTXT = true
+enableGitInfo = true
+timeout = '150s' # for the sake of newly generated images and such; default is `30s`
+paginate = 5 # so five posts will appear on each page from '/posts'
+rssLimit = 10 # default is -1 (unlimited); setting of '10' conforms to Eleventy repo's handling
+disableKinds = [
+	'taxonomy',
+	'term'
+] # keep it this way unless/until I config elsewhere appropriately
+ignoreErrors = [
+	'error-remote-getjson'
+]
+# newContentEditor = 'open -b pro.writer.mac'
+# # h/t:
+# # - https://www.lkhrs.com/blog/2022/10/hugo-ia-writer/
+# # - https://discourse.gohugo.io/t/newcontenteditor-trouble-with-spaces/40930
+
+[params]
+  Styling = 'VCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albeit nested via PostCSS)
+  # -- REMINDER:
+  # -- for 'SCSS' you **must** (a.) load Embedded Dart Sass in the GHA
+  # -- **or** (b.) use Node Sass and appropriate `package.json` scripting
+  Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge Functions to handle for CSP
+  EmailObfuscation = 'local' # choices are 'local' ahd 'host'
+  Deploy = 'CI' # Boolean --- for Gitinfo from a GHA
+  SiteLive = 'live' # Boolean --- used for adapting robots.txt as needed
+  Host = 'CFP' # choices for Host are 'CFP' and 'Vercel'
+  HostName = 'Cloudflare Pages' # choices for HostName are 'Cloudflare Pages' and 'Vercel'
+  HostURL = 'https://pages.cloudflare.com' # choices for HostURL are 'https://pages.cloudflare.com' and 'https://vercel.com'
+  # ===========================
+  Domain = 'brycewray.com'
+  Author = 'Bryce Wray'
+  AuthorEmail = 'bw@brycewray.com'
+  AuthorUrl = 'https://www.brycewray.com/about/'
+  AuthorAvatar = 'https://www.brycewray.com/images/icons/apple-icon-1024x1024.png'
+  Description = 'Bryce Wray’s website | Observations, opinions, geekiness'
+  Site_domain = '{{< Site.Params.Domain >}}'
+  # https://discourse.gohugo.io/t/site-theme/33200
+  # -- for /content/posts/2022/05/webmentions-yes-javascript-no-the-code.md
+  # ===========================
+  # PublicSans = true # Boolean --- 'true' triggers use of em dash space replacements
+  [params.Titles]
+    Contact = 'Want to reach me?'
+    Privacy = 'Privacy policy'
+    Search = 'Search the site'
+    Home = 'Home page'
+    Sitemap = 'Sitemap (HTML form)'
+    Postslist = 'Posts'
+    FourOhFour = '404 Page not found'
+    About = 'About me'
+  # ===========================
+
+[frontmatter]
+  date = [
+		'date',
+		'publishDate',
+		'lastmod'
+	]
+  lastmod = [
+		':git',
+		'lastmod',
+		'date',
+		'publishDate'
+	]
+  publishDate = [
+		'publishDate',
+		'date'
+	]
+
+[build]
+  # useResourceCacheWhen = 'fallback'
+  writeStats = true
+  # noJSConfigInAssets = false
+
+[markup]
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = false
+    tabWidth = 2
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = false
+    [markup.goldmark.parser]
+      autoHeadingID = true # otherwise, can't use (e.g.) 'Content' as a heading
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+      unsafe = true
+      # only to allow for inline HTML and/or JS
+      # ... other desired settings are defaults
+
+# [imaging] # Hugo defaults shown in comments
+  # anchor = 'Smart' # Smart
+  # bgColor = '#ffffff' # '#ffffff'
+  # hint = 'photo' # photo
+  # quality = 75 # 75
+  # resampleFilter = 'MitchellNetravali' # Box
+
+# [taxonomies]
+#   category = 'categories'
+#   series = 'series'
+#   tag = 'tags'
+
+[privacy]
+  [privacy.twitter]
+    simple = true
+
+[services]
+  [services.twitter]
+    disableInlineCSS = true
+
+# following is overridden in production by other config file
+[caches]
+  [caches.getjson]
+    dir = ':resourceDir/json'
+    # maxAge = '144h' # default = -1 (forever)
+  [caches.getresource]
+    dir = ':resourceDir/_gen'
+    maxAge = '144h' # default = -1 (forever)
+
+[minify]
+  disableJSON = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepQuotes = true
+      keepWhitespace = false # per https://discourse.gohugo.io/t/is-html-minification-broken/34174
+
+[outputFormats]
+  [outputFormats.json]
+    baseName = 'index'
+    mediaType = 'application/json'
+    isPlainText = true
+
+[outputs]
+  home = [
+		'html',
+		'rss',
+		'json'
+	]
+  section = [
+		'html',
+		'rss',
+		'json'
+	]
+
+[security]
+  [security.exec]
+    allow = [
+			'^dart-sass-embedded$',
+			'^go$',
+			'^npx$',
+			'^postcss$',
+			'^subl$',
+			'^open$'
+		]
+  [security.funcs]
+    getenv = [
+			'^*'
+		]
