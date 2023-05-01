@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rimraf public",
     "search": "pagefind --source public",
-    "testbuild:search": "pagefind --source public --bundle-dir ../static/_pagefind",
+    "testbuild:search": "npm run search -- --bundle-dir ../static/_pagefind",
     "install:hugo": "hugo-installer --version config.hugo --extended",
     "devexec:hugo": "exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
     "dev:hugo": "npm-run-all install:hugo devexec:hugo",
@@ -23,7 +23,7 @@
     "start": "NODE_ENV=development npm-run-all clean dev:hugo",
     "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
-    "testbuildexec:hugo": "exec-bin bin/hugo/hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --minify --environment production",
+    "testbuildexec:hugo": "npm run devexec:hugo -- --minify --environment production",
     "testbuild": "npm-run-all clean build:prelim move-excerpts testbuildexec:hugo",
     "testbuildpf": "npm-run-all build:prelim move-excerpts testbuild:search testbuildexec:hugo"
   },
