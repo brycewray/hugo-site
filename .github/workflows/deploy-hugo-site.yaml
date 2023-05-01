@@ -9,7 +9,7 @@ env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below (non-Node)
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
   PAGEFIND_VERSION: 0.12.0 # (non-Node)
-  NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  NODE_PKGS: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   STYLING: VCSS # choices: 'SCSS' and 'VCSS' (VCSS, albeit perhaps with PostCSS for nesting, etc.)
   HOST: CFP # choices: 'CFP' and 'Vercel'
 
@@ -27,15 +27,15 @@ jobs:
           # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
           # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
       - name: Set up Node.js (cond. - Node)
-        if: ${{ env.NODE == 'true' }}
+        if: ${{ env.NODE_PKGS == 'true' }}
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Install Hugo, Pagefind, etc. (cond. - Node)
-        if: ${{ env.NODE == 'true' }}
+      - name: Install any npm packages (cond. - Node)
+        if: ${{ env.NODE_PKGS == 'true' }}
         run: npm install
-      - name: Hugo download/install (cond. - non-Node)
-        if: ${{ env.NODE != 'true' }}
+      - name: Hugo download/install # (cond. - non-Node)
+        # if: ${{ env.NODE_PKGS != 'true' }}
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
@@ -53,18 +53,18 @@ jobs:
       #   with:
       #     path: resources
       #     key: ${{ runner.os }}-resources
-      - name: Install Pagefind (cond. - non-Node)
-        if: ${{ env.NODE != 'true' }}
+      - name: Install Pagefind # (cond. - non-Node)
+        # if: ${{ env.NODE_PKGS != 'true' }}
         uses: supplypike/setup-bin@v3
         with:
           uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
           name: "pagefind_extended"
           version: ${{env.PAGEFIND_VERSION}}
-      - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
-        if: ${{ env.NODE == 'true' }}
-        run: npm run build
-      - name: Build site with Hugo, move feed files, run Pagefind (cond. - non-Node)
-        if: ${{ env.NODE != 'true' }}
+      # - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
+      #   if: ${{ env.NODE_PKGS == 'true' }}
+      #   run: npm run build
+      - name: Build site with Hugo, move feed files, run Pagefind # (cond. - non-Node)
+        # if: ${{ env.NODE_PKGS != 'true' }}
         run: |
           hugo --verbose --minify
           mv public/posts/index.xml public/index-excerpts.xml
