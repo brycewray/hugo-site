@@ -27,7 +27,7 @@ As one who remembers a dark time not that many years ago when we truly thought t
 
 Are Apple products perfect? Oh, my, no. There ain't no such animal. And I write in the fall of 2019, when Apple is getting justifiably slammed for the bugginess of iOS 13 and macOS Catalina; so complaints ring truer now than at other times.
 
-But those who whine and moan about Apple operating systems, Apple devices, and Apple **in general** --- and I'm talking about users, not those who simply hate it from afar[^dontcare] --- simply lack the perspective for how far things have come.
+But those who whine and moan about Apple operating systems, Apple devices, and Apple **in general** --- and I'm talking about users, not those who only hate it from afar[^dontcare] --- simply lack the perspective for how far things have come.
 
 [^dontcare]: As for those who just hate Apple without even bothering to try its products: oh, just hush. Think about it as if we were talking about cuisine rather than tech: it would be both silly and childish to complain about a food that *you'd never tasted*, right? Same, exact thing. I have *owned* competing products --- for multiple decades, in the case of Windows computers --- and therefore know whereof I speak.
 
