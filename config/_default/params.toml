@@ -5,8 +5,8 @@ Styling = 'VCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albei
 Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge Functions to handle for CSP
 SiteLive = 'live' # Boolean --- used for adapting robots.txt as needed
 EmailObfuscation = 'local' # choices are 'local' ahd 'host'
-Host = 'Vercel' # choices are 'CFP' and 'Vercel'
-DeepClone = false # Boolean --- for Gitinfo from a GHA
+Host = 'CFP' # choices are 'CFP' and 'Vercel'
+DeepClone = true # Boolean --- for Gitinfo from a GHA
 # ===========================
 Domain = 'brycewray.com'
 Author = 'Bryce Wray'
