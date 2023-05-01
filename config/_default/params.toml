@@ -5,7 +5,7 @@ Styling = 'VCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albei
 Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge Functions to handle for CSP
 SiteLive = 'live' # Boolean --- used for adapting robots.txt as needed
 EmailObfuscation = 'local' # choices are 'local' ahd 'host'
-Host = 'Vercel' # choices for Host are 'CFP' and 'Vercel'
+Host = 'Vercel' # choices are 'CFP' and 'Vercel'
 DeepClone = false # Boolean --- for Gitinfo from a GHA
 # ===========================
 Domain = 'brycewray.com'
@@ -18,7 +18,6 @@ Site_domain = '{{< Site.Params.Domain >}}'
 # https://discourse.gohugo.io/t/site-theme/33200
 # -- for /content/posts/2022/05/webmentions-yes-javascript-no-the-code.md
 # ===========================
-# PublicSans = true # Boolean --- 'true' triggers use of em dash space replacements
 [Titles]
 	Contact = 'Want to reach me?'
 	Privacy = 'Privacy policy'
