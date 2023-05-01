@@ -4,7 +4,7 @@ Styling = 'VCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albei
 # -- **or** (b.) use Node Sass and appropriate `package.json` scripting
 Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge Functions to handle for CSP
 EmailObfuscation = 'local' # choices are 'local' ahd 'host'
-Deploy = 'CI' # Boolean --- for Gitinfo from a GHA
+# Deploy = 'CI' # Boolean --- for Gitinfo from a GHA
 SiteLive = 'live' # Boolean --- used for adapting robots.txt as needed
 Host = 'Vercel' # choices for Host are 'CFP' and 'Vercel'
 # ===========================
