@@ -14,10 +14,6 @@ This site's traffic goes through [Cloudflare](https://cloudflare.com).[^VMW] Whe
 
 [^VMW]: This is true whether the site is hosted on Cloudflare Pages or [Vercel](https://vercel.com); in the latter case, the site uses [Vercel Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware), which [is a "white-labeled" use of Cloudflare Workers](https://news.ycombinator.com/item?id=29003514).
 
-## Cloudinary
-
-[Cloudinary](https://cloudinary.com) hosts and serves some of the images on this site. A [Cloudinary Support article](https://support.cloudinary.com/hc/en-us/articles/360020207811-Does-Cloudinary-Store-Any-Cookies-) says that your viewing of any such images involves no storage or use of your personal data.
-
 ## Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, "[Fathom Analytics: count on it](/posts/2020/06/fathom-analytics-count-on-it/)."
