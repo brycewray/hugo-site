@@ -46,13 +46,15 @@ jobs:
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           sass_embedded/dart-sass-embedded --version
           echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      # # caching suggested by Rodri in https://discord.com/channels/909600839717511208/986399846044958741/1099628644814557185
-      # - name: Cache Hugo resources
-      #   id: cache-resources
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: resources
-      #     key: ${{ runner.os }}-resources
+      # caching suggested by Rodri in https://discord.com/channels/909600839717511208/986399846044958741/1099628644814557185
+      # and https://github.com/rodrigoalcarazdelaosa/fisiquimicamente/blob/ec928e1a5ceeb8741cea168a5f0c04588b5642f9/.github/workflows/publish-CFP.yml#L57
+      # as of 2023-05-02
+      - name: Cache Hugo resources
+        id: cache-resources
+        uses: actions/cache@v3
+        with:
+          path: resources
+          key: ${{ runner.os }}-resources
       - name: Install Pagefind (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         uses: supplypike/setup-bin@v3
