@@ -5,6 +5,8 @@ author: Bryce Wray
 date: 2020-09-03T07:05:00-05:00
 ---
 
+{{% disclaimer %}}
+
 Time for another "Mixed nuts" post, another selection of various and sundry emissions from my brain. And, no: I mean, even *more* various and sundry than usual.[^1]
 
 ----

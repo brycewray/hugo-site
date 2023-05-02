@@ -5,6 +5,8 @@ author: Bryce Wray
 date: 2020-08-08T14:35:00-05:00
 ---
 
+{{% disclaimer %}}
+
 This began as a very different post. Then I did some research that changed my mind.
 
 It all started innocently enough last Sunday, when I decided to post this site's first-ever [privacy policy](/privacy/). It started out as a very short statement of how this site **doesn't track you**. I felt that to be a safe position, particularly since I recently [adopted Fathom Analytics](/posts/2020/06/fathom-analytics-count-on-it/) in no small part because of its privacy-protecting, cookie-less orientation.

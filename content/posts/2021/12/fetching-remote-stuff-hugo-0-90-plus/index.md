@@ -6,6 +6,8 @@ date: 2021-12-11T12:41:00-06:00
 #initTextEditor: Ulysses
 ---
 
+{{% disclaimer %}}
+
 **Important update**: I have updated this article due to the [release of Hugo 0.91.0](https://github.com/gohugoio/hugo/releases/tag/v0.91.0), which made a breaking change in the feature around which my original text was centered. **In short**: Hugo 0.90.x used `resources.Get` to fetch remote items but Hugo 0.91.0+ uses `resources.GetRemote` instead, so I've altered this article accordingly. You may wish to check [Hugo Issue #9285](https://github.com/gohugoio/hugo/issues/9285) to see why the change occurred.
 {.box}
 

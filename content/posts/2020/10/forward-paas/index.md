@@ -5,6 +5,8 @@ author: Bryce Wray
 date: 2020-10-11T13:20:00-05:00
 ---
 
+{{% disclaimer %}}
+
 It will come as no surprise to my regular readers that I like New Shiny, especially where this little old website is concerned. Well, I've succumbed again, for at least a test drive of an interesting [platform as a service (PaaS)](https://www.networkworld.com/article/2163430/paas-primer--what-is-platform-as-a-service-and-why-does-it-matter-.html) offering from [Cloudflare](https://cloudflare.com).
 
 ## Workers sites and Workers KV
