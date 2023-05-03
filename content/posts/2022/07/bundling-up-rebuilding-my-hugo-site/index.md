@@ -159,7 +159,7 @@ The key is that, now, *every* post on the site contains a file called `title.png
 
 For this post in particular, that generates a social/OG image like this:
 
-{{< imgh src="2022-07-23-sample-title-with-gradient_1024x512.jpg" alt="Sample title graphic for this post, with text o and the site’s “BW” logo" width=1024 height=512 >}}
+![Sample title graphic for this post, with text overlay and the site’s “BW” logo](2022-07-23-sample-title-with-gradient_1024x512.jpg)
 
 That's the result of overlaying this post's `title.png` file over the site-wide gradient/logo graphic.
 

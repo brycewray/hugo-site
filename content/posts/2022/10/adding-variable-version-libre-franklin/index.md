@@ -37,10 +37,7 @@ However, there's a long-standing (and not-soon-to-be-fixed[^PSdash]) [issue](htt
 
 The most logical choice for a Public Sans replacement was the font from which it was forked in the first place: **Libre Franklin**. Here's a graphic  which shows some of the subtle differences between the two:
 
-{{< imgh src="public-overlay-libre-franklin_1890x1090.png" alt="USWDS graphic comparing Public Sans and Libre Franklin web fonts" width=1890 height=1090 >}}
-
-Image: the [Public Sans repo](https://github.com/uswds/public-sans).
-{.imgcCaption}
+![USWDS graphic comparing Public Sans and Libre Franklin web fonts](public-overlay-libre-franklin_1890x1090.png "Image: the [Public Sans repo](https://github.com/uswds/public-sans).")
 
 The problem came whenever I'd try to use the variable fonts from the [Libre Franklin repo](https://github.com/impallari/Libre-Franklin). For reasons of which I'm presently unaware, they'd always come in looking extra-bold, regardless of what CSS I applied.
 

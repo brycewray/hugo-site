@@ -31,7 +31,7 @@ Here are some hosted services I've tried, and one more about which I've read goo
 
 ### Commento
 
-{{< imgh src="Commento_scr_cap_2702x1530.png" alt="Screen capture of Commento web page" width=2702 height=1530 >}}
+![Screen capture of Commento web page](Commento_scr_cap_2702x1530.png)
 
 [Commento](https://commento.io) is the one of the group I haven't yet tried, because its hosted version doesn't allow testing with `localhost` or even a local IP address, and I didn't want to try it "live" without doing local testing.
 
@@ -50,7 +50,7 @@ Here are some hosted services I've tried, and one more about which I've read goo
 
 ### FastComments
 
-{{< imgh src="FastComments_scr_cap_2696x1530.png" alt="Screen capture of FastComments web page" width=2696 height=1530 >}}
+![Screen capture of FastComments web page](FastComments_scr_cap_2696x1530.png)
 
 In [FastComments](https://fastcomments.com)&nbsp;.&nbsp;.&nbsp;.
 
@@ -73,7 +73,7 @@ In [FastComments](https://fastcomments.com)&nbsp;.&nbsp;.&nbsp;.
 
 ### Hyvor Talk
 
-{{< imgh src="Hyvor_Talk_scr_cap_2696x1528.png" alt="Screen capture of FastComments web page" width=2696 height=1528 >}}
+![Screen capture of Hyvor Talk web page](Hyvor_Talk_scr_cap_2696x1528.png)
 
 Now, a look at [Hyvor Talk](https://talk.hyvor.com)&nbsp;.&nbsp;.&nbsp;.
 
@@ -96,7 +96,7 @@ Now, a look at [Hyvor Talk](https://talk.hyvor.com)&nbsp;.&nbsp;.&nbsp;.
 
 ### Talkyard
 
-{{< imgh src="Talkyard_scr_cap_2696x1524.png" alt="Screen capture of Talkyard web page" width=2696 height=1524 >}}
+![Screen capture of Talkyard web page](Talkyard_scr_cap_2696x1524.png)
 
 As for [Talkyard](https://www.talkyard.io)&nbsp;.&nbsp;.&nbsp;.
 
@@ -116,7 +116,7 @@ As for [Talkyard](https://www.talkyard.io)&nbsp;.&nbsp;.&nbsp;.
 
 ### Utterances
 
-{{< imgh src="Utterances_scr_cap_2698x1530.png" alt="Screen capture of FastComments web page" width=2698 height=1530 >}}
+![Screen capture of Utterances web page](Utterances_scr_cap_2698x1530.png)
 
 Finally, there's [Utterances](https://utteranc.es)&nbsp;.&nbsp;.&nbsp;.
 

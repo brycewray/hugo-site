@@ -21,17 +21,8 @@ About nine hours after we received that "breaking" news (sorry), Kennedy Lane Be
 
 As I close this little update about this new little one, please allow "Pawpaw” --- as I apparently will be called --- to share a small smattering of photos about this momentous event in our little family. Think of it as the online equivalent of what I'd have done if this were decades ago and we met on the street, in which case I'd be whipping out a wallet containing photographs of the new arrival.
 
-{{< imgh src="Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg" alt="Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival" width=1008 height=756 >}}
+![Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival](Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg "Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after&nbsp;she&nbsp;arrived.")
 
-Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after&nbsp;she&nbsp;arrived.
-{.imgcCaption}
+![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg "Your faithful correspondent holds his first grandchild for the first time, on the first night of her&nbsp;life. Enough&nbsp;“firsts” for&nbsp;you&nbsp;there?")
 
-{{< imgh src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width=1008 height=712 >}}
-
-Your faithful correspondent holds his first grandchild for the first time, on the first night of her&nbsp;life. Enough&nbsp;“firsts” for&nbsp;you&nbsp;there?
-{.imgcCaption}
-
-{{< imgh src="Kennedy-goes-home__crop_1008x1021.jpg" alt="Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time" width=1008 height=1021 >}}
-
-Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class='nobrk'>forty-three hours old.</span>
-{.imgcCaption}
+![Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time](Kennedy-goes-home__crop_1008x1021.jpg "Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class='nobrk'>forty-three hours old.</span>")

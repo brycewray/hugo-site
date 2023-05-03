@@ -34,7 +34,7 @@ However, VS Code's infamous red squiggly line[^ext] marked the setting as non-ko
 
 [^ext]: I assume the error indication came from the [YAML Language Support extension](https://github.com/redhat-developer/vscode-yaml) I'd long ago installed in VS Code.
 
-{{< imgh src="2023-05-02_screenshot_hugo-yaml-vsc_non-error_edit_2514x176.png" alt="Screenshot of VS Code erroneously marking a Hugo configuration setting as a YAML violation" width=2514 height=176 >}}
+![Screenshot of VS Code erroneously marking a Hugo configuration setting as a YAML violation](2023-05-02_screenshot_hugo-yaml-vsc_non-error_edit_2514x176.png)
 
 . . . with this not-so-informative error message:
 

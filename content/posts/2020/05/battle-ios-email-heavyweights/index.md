@@ -191,7 +191,7 @@ Despite my disagreement with how Preside handles (or *doesn't* handle) notificat
 
 [^confusing]: In fairness, I should note that one otherwise "extremely happy" Preside user said, "I&nbsp;.&nbsp;.&nbsp;. find the iPad version more confusing and less satisfying than the iPhone version. There are annoying differences between the two and no way to sync settings that I've found." By contrast, AltaMail *does* do a good job with inter-device sync; so, if that's highly important to you, it may be a better choice.
 
-{{< imgh src="Preside-iPad-light--Inboxes-20200514-0932_edit_2048x1536.png" alt="Preside, as it appears in “light mode” on the iPad" width=2048 height=1536 >}}
+![Preside, as it appears in “light mode” on the iPad](Preside-iPad-light--Inboxes-20200514-0932_edit_2048x1536.png)
 
 Another thing that made Preside a superior choice for me is the sheer number of email views it gives you out of the box. For example, on the phone, I keep Preside set to show me *all* the emails I've received, regardless of accounts or folders (like the **All Messages** view in MailMate), over the last twenty-four hours. You can "hold your mouth right" and get that view from AltaMail, too, but I think Preside makes it much easier to achieve.
 
