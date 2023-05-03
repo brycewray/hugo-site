@@ -15,6 +15,7 @@
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Page.Resources.GetMatch (.Destination) -}}
 {{- $alt := .Text -}}
+{{- $caption := .Title -}}
 {{- $holder := "GIP" -}}
 {{- $hint := "photo" -}}
 {{- $filter := "MitchellNetravali" -}}
@@ -44,3 +45,4 @@
 		<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 	</picture>
 </div>
+{{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
