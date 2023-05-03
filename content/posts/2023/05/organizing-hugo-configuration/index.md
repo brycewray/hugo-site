@@ -36,7 +36,7 @@ However, VS Code's infamous red squiggly line[^ext] marked the setting as non-ko
 
 {{< imgh src="2023-05-02_screenshot_hugo-yaml-vsc_non-error_edit_2514x176.png" alt="Screenshot of VS Code erroneously marking a Hugo configuration setting as a YAML violation" width=2514 height=176 >}}
 
-. . . with this not-so-informative error message: 
+. . . with this not-so-informative error message:
 
 > Property wrapStandAloneImageWithinParagraph is not allowed. yaml-schema: parser options
 
@@ -74,8 +74,8 @@ timeZone = 'America/Chicago'
 [params]
 	AuthorEmail = 'johndoe@johndoe.com'
 	Description = 'John Doe’s website'
-	
-enableRobotsTXT = true	
+
+enableRobotsTXT = true
 ```
 
 . . . the `enableRobotsTXT` setting would be ignored, because it came *after* the hierarchical setting, `params`. A *correct* version for TOML would be:
@@ -84,7 +84,7 @@ enableRobotsTXT = true
 baseURL = 'https://www.example.com'
 title = 'example.com'
 timeZone = 'America/Chicago'
-enableRobotsTXT = true	
+enableRobotsTXT = true
 
 [params]
 	AuthorEmail = 'johndoe@johndoe.com'
@@ -189,7 +189,7 @@ If your own Hugo project's configuration has become messy over time, a similar a
 - [TOML repo](https://github.com/toml-lang/toml).
 - [TOML website](https://toml.io).
 - Igor Baiborodine, "[Manage Environment-Specific Settings for Hugo-Based Website](https://www.kiroule.com/article/manage-environment-specific-settings-for-hugo-based-website/)" (<span class="nobrk">2020-07-27</span>).
-- Colm O'Connor, "[What is wrong with TOML?](https://hitchdev.com/strictyaml/why-not/toml/)" (date unknown).
 - J. P. Droege, "[The complete guide to Hugo file structure and code organization](https://jpdroege.com/blog/hugo-file-organization/)" (2019).
+- Colm O'Connor, "[What is wrong with TOML?](https://hitchdev.com/strictyaml/why-not/toml/)" (date unknown).
 - Siddharth Shyniben, "[Why not TOML?](https://dev.to/siddharthshyniben/why-not-toml-1fj9)" (<span class="nobrk">2021-09-22</span>).
 - Martin Ueding, "[JSON vs. YAML vs. TOML](https://martin-ueding.de/posts/json-vs-yaml-vs-toml/)" (<span class="nobrk">2022-08-31</span>).
