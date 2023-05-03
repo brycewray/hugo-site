@@ -1,0 +1,46 @@
+{{- /*
+	This gives **normal** Markdown images
+	--- i.e., using the `![Alt](imageURL)`
+	syntax (which VS Code auto-completes)
+	--- nearly all functionality of
+	the `imgh` shortcode, except that this:
+	(a.) hard-codes the `holder`, `hint`, and
+	`filter` parameters; and, (b.) assumes no use
+	of either `phn` or `simple`.
+	None of these additional items can be supplied
+	via a render hook but, instead, would require
+	use of the full `imgh` shortcode.
+	Ref: https://gohugo.io/templates/render-hooks/
+*/ -}}
+{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
+{{- $src := .Page.Resources.GetMatch (.Destination) -}}
+{{- $alt := .Text -}}
+{{- $holder := "GIP" -}}
+{{- $hint := "photo" -}}
+{{- $filter := "MitchellNetravali" -}}
+{{- $imgBd5 := md5 $src -}}
+{{- $divClass := print "relative bg-center imgB-" $imgBd5 "-" $holder -}}
+{{- $imgClass := "w-full h-auto animate-fade" -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+{{- $actualImg := $src.Resize (print "640x jpg " $filter) -}}
+<div class="{{ $divClass }}" data-pagefind-ignore>
+	<picture data-pagefind-ignore>
+		<source type="image/webp" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<source type="image/jpeg" srcset="
+		{{- with $respSizes -}}
+			{{- range $i, $e := . -}}
+				{{- if ge $src.Width . -}}
+					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}" sizes="{{ $dataSzes }}" />
+		<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+	</picture>
+</div>
