@@ -29,92 +29,92 @@ jobs:
           fetch-depth: 0
           # Fetch **all** history (not just deploy commit) for Hugo's .GitInfo and .Lastmod
           # See https://discourse.gohugo.io/t/problems-with-gitinfo-in-ci/22480
-      # - name: Set up Node.js (cond. - Node)
-      #   if: ${{ env.NODE == 'true' }}
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: '18'
-      # - name: Install Hugo, Pagefind, etc. (cond. - Node)
-      #   if: ${{ env.NODE == 'true' }}
-      #   run: npm install
-      # - name: Hugo download/install (cond. - non-Node)
-      #   if: ${{ env.NODE != 'true' }}
-      #   run: |
-      #     wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
-      #     sudo dpkg -i hugo*.deb
-      # - name: Install Embedded Dart Sass (cond. - SCSS)
-      #   if: ${{ env.STYLING == 'SCSS' }}
-      #   run: |
-      #     curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      #     tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      #     sass_embedded/dart-sass-embedded --version
-      #     echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
+      - name: Set up Node.js (cond. - Node)
+        if: ${{ env.NODE == 'true' }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install Hugo, Pagefind, etc. (cond. - Node)
+        if: ${{ env.NODE == 'true' }}
+        run: npm install
+      - name: Hugo download/install (cond. - non-Node)
+        if: ${{ env.NODE != 'true' }}
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
+          sudo dpkg -i hugo*.deb
+      - name: Install Embedded Dart Sass (cond. - SCSS)
+        if: ${{ env.STYLING == 'SCSS' }}
+        run: |
+          curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          sass_embedded/dart-sass-embedded --version
+          echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
       # caching suggested by Rodri in https://discord.com/channels/909600839717511208/986399846044958741/1099628644814557185
       # and https://github.com/rodrigoalcarazdelaosa/fisiquimicamente/blob/ec928e1a5ceeb8741cea168a5f0c04588b5642f9/.github/workflows/publish-CFP.yml#L57
       # as of 2023-05-02
-      # - name: Cache Hugo resources
-      #   id: cache-resources
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: resources
-      #     key: ${{ runner.os }}-resources
-      # - name: Install Pagefind (cond. - non-Node)
-      #   if: ${{ env.NODE != 'true' }}
-      #   uses: supplypike/setup-bin@v3
-      #   with:
-      #     uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
-      #     name: "pagefind_extended"
-      #     version: ${{env.PAGEFIND_VERSION}}
-      # - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
-      #   if: ${{ env.NODE == 'true' }}
-      #   run: npm run build
-      # - name: Build site with Hugo, move feed files, run Pagefind (cond. - non-Node)
-      #   if: ${{ env.NODE != 'true' }}
-      #   run: |
-      #     hugo --verbose --minify
-      #     mv public/posts/index.xml public/index-excerpts.xml
-      #     mv public/posts/index.json public/index-excerpts.json
-      #     pagefind_extended --source "public"
-      # - name: Move Vercel-specific files to `/public` (cond. - host)
+      - name: Cache Hugo resources
+        id: cache-resources
+        uses: actions/cache@v3
+        with:
+          path: resources
+          key: ${{ runner.os }}-resources
+      - name: Install Pagefind (cond. - non-Node)
+        if: ${{ env.NODE != 'true' }}
+        uses: supplypike/setup-bin@v3
+        with:
+          uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
+          name: "pagefind_extended"
+          version: ${{env.PAGEFIND_VERSION}}
+      - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
+        if: ${{ env.NODE == 'true' }}
+        run: npm run build
+      - name: Build site with Hugo, move feed files, run Pagefind (cond. - non-Node)
+        if: ${{ env.NODE != 'true' }}
+        run: |
+          hugo --verbose --minify
+          mv public/posts/index.xml public/index-excerpts.xml
+          mv public/posts/index.json public/index-excerpts.json
+          pagefind_extended --source "public"
+      - name: Move Vercel-specific files to `/public` (cond. - host)
+        if: ${{ env.HOST == 'Vercel' }}
+        run: |
+          mv middleware.js public/middleware.js
+          mv vercel.json public/vercel.json
+      - name: Publish to CFP (cond. - host)
+        if: ${{ env.HOST == 'CFP' }}
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CFP_API_TOKEN }}
+          accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'static-site'
+          directory: 'public'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to Vercel (Betahuhn) (cond. - host)
+        if: ${{ env.HOST == 'Vercel' }}
+        uses: BetaHuhn/deploy-to-vercel-action@v1
+        with:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+          WORKING_DIRECTORY: 'public'
+      - name: Remove Vercel-specific files from build (cond. - host)
+        if: ${{ env.HOST == 'Vercel' }}
+        run: |
+          rm -rf public/middleware.js
+          rm -rf public/vercel.json
+      # - name: Install Vercel CLI
       #   if: ${{ env.HOST == 'Vercel' }}
-      #   run: |
-      #     mv middleware.js public/middleware.js
-      #     mv vercel.json public/vercel.json
-      # - name: Publish to CFP (cond. - host)
-      #   if: ${{ env.HOST == 'CFP' }}
-      #   uses: cloudflare/pages-action@v1
-      #   with:
-      #     apiToken: ${{ secrets.CFP_API_TOKEN }}
-      #     accountID: ${{ secrets.CF_ACCOUNT_ID }}
-      #     projectName: 'static-site'
-      #     directory: 'public'
-      #     gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      # - name: Publish to Vercel (Betahuhn) (cond. - host)
+      #   run: npm install --global vercel@latest
+      # - name: Pull Vercel Environment Information
       #   if: ${{ env.HOST == 'Vercel' }}
-      #   uses: BetaHuhn/deploy-to-vercel-action@v1
-      #   with:
-      #     VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
-      #     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
-      #     WORKING_DIRECTORY: 'public'
-      # - name: Remove Vercel-specific files from build (cond. - host)
+      #   run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+      # - name: Build Project Artifacts
       #   if: ${{ env.HOST == 'Vercel' }}
-      #   run: |
-      #     rm -rf public/middleware.js
-      #     rm -rf public/vercel.json
-      - name: Install Vercel CLI
-        if: ${{ env.HOST == 'Vercel' }}
-        run: npm install --global vercel@latest
-      - name: Pull Vercel Environment Information
-        if: ${{ env.HOST == 'Vercel' }}
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
-      - name: Build Project Artifacts
-        if: ${{ env.HOST == 'Vercel' }}
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
-      - name: Deploy Project Artifacts to Vercel
-        if: ${{ env.HOST == 'Vercel' }}
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+      #   run: vercel build --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+      # - name: Deploy Project Artifacts to Vercel
+      #   if: ${{ env.HOST == 'Vercel' }}
+      #   run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
 # (INCLUDING the brackets AND case-sensitivity):
