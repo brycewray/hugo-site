@@ -88,7 +88,7 @@ img {
 	}
 }
 
-.imgcCaption {
+.imgcCaption, .imghCaption {
 	padding: 0;
 	margin-block-start: 0.5em;
 	line-height: 1.375;
