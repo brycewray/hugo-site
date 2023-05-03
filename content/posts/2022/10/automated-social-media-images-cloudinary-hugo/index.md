@@ -64,7 +64,7 @@ https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto
 
 . . . which results in:
 
-{{< imgh src="2022-10-15_example-cloudinary-soc-img_1280x669.jpg" alt="OG image from URL shown above" width=1280 h=669 simple=true >}}
+![OG image from URL shown above](2022-10-15_example-cloudinary-soc-img_1280x669.jpg)
 
 **Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)
 {.box}
