@@ -12,6 +12,9 @@ env:
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   STYLING: VCSS # choices: 'SCSS' and 'VCSS' (VCSS, albeit perhaps with PostCSS for nesting, etc.)
   HOST: Vercel # choices: 'CFP' and 'Vercel'
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+
 
 jobs:
   deploy:
