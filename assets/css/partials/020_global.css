@@ -6,7 +6,7 @@ html, body {
 	font-variant-ligatures: normal; /* if using any ligature-savvy fonts, ligatures won't work without this */
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
-	font-family: var(--serif);
+	font-family: var(--sans-serif);
 	background-color: var(--slate-100);
 	color: var(--default-light);
 	background-image: linear-gradient(
@@ -24,7 +24,7 @@ html, body {
 		)
 	}
 }
-
+/*
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
@@ -34,7 +34,7 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .legal, .pokey {
 	font-family: var(--sans-serif);
 }
-
+*/
 html {
 	/* scroll-behavior: smooth; */
 	scroll-padding-top: 80px;

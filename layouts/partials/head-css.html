@@ -14,6 +14,8 @@
 	{{- if hugo.IsProduction -}}
 		{{- $css = $css | fingerprint -}}
 	{{- end }}
+	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 	{{/*  <style media="screen">{{ .Content | safeCSS }}</style>  */}}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>

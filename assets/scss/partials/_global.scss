@@ -9,7 +9,7 @@ html, body {
 	text-rendering: optimizeLegibility;
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
-	font-family: var.$serif;
+	font-family: var.$sans-serif;
 	background-color: var.$slate-100;
 	color: var.$default-light;
 	@media (prefers-color-scheme: dark) {
@@ -30,15 +30,15 @@ html, body {
 	}
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4,
-header, footer, table, blockquote, summary, contact-button, search-button,
-.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
-.sitemap-Div, .searchDiv, .searchDivPF,
-.footnotes, .footnote-sim, .footnote-ref,
-.box, .labeled-highlight, .imgcCaption, .bg-dark,
-.legal, .pokey {
-	font-family: var.$sans-serif;
-}
+// h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+// header, footer, table, blockquote, summary, contact-button, search-button,
+// .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+// .sitemap-Div, .searchDiv, .searchDivPF,
+// .footnotes, .footnote-sim, .footnote-ref,
+// .box, .labeled-highlight, .imgcCaption, .bg-dark,
+// .legal, .pokey {
+// 	font-family: var.$sans-serif;
+// }
 
 html {
 	// scroll-behavior: smooth;
