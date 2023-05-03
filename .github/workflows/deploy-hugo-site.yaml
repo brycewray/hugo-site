@@ -105,13 +105,13 @@ jobs:
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
         if: ${{ env.HOST == 'Vercel' }}
-        run: vercel pull --yes --environment=prodictopm --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --environment=prodictopm --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
       - name: Build Project Artifacts
         if: ${{ env.HOST == 'Vercel' }}
-        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
       - name: Deploy Project Artifacts to Vercel
         if: ${{ env.HOST == 'Vercel' }}
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
 # (INCLUDING the brackets AND case-sensitivity):
