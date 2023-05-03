@@ -105,7 +105,7 @@ jobs:
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
         if: ${{ env.HOST == 'Vercel' }}
-        run: vercel pull --yes --environment=prodictopm --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
       - name: Build Project Artifacts
         if: ${{ env.HOST == 'Vercel' }}
         run: vercel build --token=${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
