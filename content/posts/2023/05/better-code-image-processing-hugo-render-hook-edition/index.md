@@ -36,8 +36,8 @@ So here's a practical example. Let's say your Hugo project has a post, "My Cat,"
 Is that a *lot* more typing? Not really. But:
 
 - What if you have a lot of existing Markdown files where you've already used the much simpler syntax, and you don't want to change them out with shortcodes just to achieve image processing?
-- For that matter, what if you've used the simpler syntax for years and *prefer* it, if only for the sake of muscle memory?
-- Also, your editor app may well "understand" the simple syntax and be able to display its results in a preview window (as is the case with [iA Writer](https://ia.net/writer), for example) --- a handy capability that obviously won't work with a Hugo shortcode, which such an editor will regard as just gibberish.
+- For that matter, what if you've used the Markdown syntax for years and *prefer* it, if only for the sake of muscle memory?
+- Also, your editor app may well "understand" the Markdown syntax and be able to display its results in a preview window (as is the case with [iA Writer](https://ia.net/writer), for example) --- a handy capability that obviously won't work with a Hugo shortcode, which such an editor will regard as just gibberish.
 - At the very least, when you're coding, your editor app may helpfully auto-complete the Markdown syntax for you; it obviously can't do that for a Hugo shortcode.
 
 The fix for all of this is a render hook --- specifically, a `render-image` template --- that's built to do *nearly* everything the shortcode can do. I say "nearly" because the `render-image` template can accept only a limited number of parameters from the Markdown source. That means that, in building the template, we must pass up the shortcode's ability to accept a few additional parameters and, instead, hard-code some defaults that likely will suffice for nearly all images.
