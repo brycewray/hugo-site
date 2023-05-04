@@ -38,16 +38,19 @@
 			{{- $Title := .Title -}}
 			{{/* end, variables for context in non-CI/CD `range` */}}
 			<p class="ctr legal" data-pagefind-ignore>
-				{{- if and ($.GitInfo) (eq true .Site.Params.DeepClone) -}}
-					<a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> {{ if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}({{ .Lastmod.Format "2006-01-02" }}){{- end }}
-				{{- else -}}
-					{{- range $.Site.Data.gitoutput.gitinfo -}}
-						{{- if eq $FilePath .FilePath -}}
-							<a href="https://github.com/brycewray/hugo-site/commit/{{ .Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> {{- if ne $PubDate (.LastmodDate | time.Format "2006-01-02") }} ({{ .LastmodDate | time.Format "2006-01-02" }}){{- end }}
+				{{- if (eq true .Site.Params.ShowGitInfo) -}}
+					{{- if and ($.GitInfo) (eq true .Site.Params.DeepClone) -}}
+						<a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> {{ if ne (.PublishDate.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}({{ .Lastmod.Format "2006-01-02" }}){{- end }}
+					{{- else -}}
+						{{- range $.Site.Data.gitoutput.gitinfo -}}
+							{{- if eq $FilePath .FilePath -}}
+								<a href="https://github.com/brycewray/hugo-site/commit/{{ .Hash }}" title="Latest commit for this page" rel="noopener">Latest&nbsp;commit</a> {{- if ne $PubDate (.LastmodDate | time.Format "2006-01-02") }} ({{ .LastmodDate | time.Format "2006-01-02" }}){{- end }}
+							{{- end }}
 						{{- end }}
 					{{- end }}
+					&nbsp;&bull;&nbsp;
 				{{- end }}
-				&bull; <a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">Page history</a>
+				<a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">Page history</a>
 				{{- if (and (ne .Title $titleContact) (ne .Title .Site.Params.Titles.Privacy) ) -}}<br />Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words{{- end -}}
 			</p>
 		{{- end }}
