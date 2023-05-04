@@ -6,7 +6,7 @@ Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge 
 SiteLive = 'live' # Boolean --- used for adapting robots.txt as needed
 EmailObfuscation = 'local' # choices are 'local' ahd 'host'
 Host = 'CFP' # choices are 'CFP' and 'Vercel'
-DeepClone = true # Boolean --- for Gitinfo from a GHA
+DeepClone = false # Boolean --- Gitinfo from a GHA
 # ===========================
 Domain = 'brycewray.com'
 Author = 'Bryce Wray'
