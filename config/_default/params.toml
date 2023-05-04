@@ -1,6 +1,6 @@
 Styling = 'VCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albeit nested via PostCSS)
 # -- REMINDER:
-# -- for 'SCSS' you **must** (a.) load Embedded Dart Sass in the GHA
+# -- for 'SCSS' you **must** (a.) load Embedded Dart Sass in a GHA
 # -- **or** (b.) use Node Sass and appropriate `package.json` scripting
 Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge Functions to handle for CSP
 SiteLive = 'live' # Boolean --- used for adapting robots.txt as needed
