@@ -135,7 +135,7 @@ If you want the styling mentioned in the code (including for the optional captio
 }
 ```
 
-I like this alternative so much that I've switched to it, away from the shortcode, for nearly all of the site's images --- essentially, all but the very few which need any of the extra settings allowed by the shortcode. Thus, I'll close by inserting a photo of *our* family's cat, via the following Markdown:
+I like this alternative so much that I've switched to it, away from the shortcode, for nearly all of the site's images --- essentially, all but the very few which need any of the extra settings allowed by the shortcode. Thus, I'll close by inserting a captioned photo of *our* family's cat, via the following Markdown:
 
 ```md
 ![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here’s our cat, Shakespeare, sitting on a window sill.")
