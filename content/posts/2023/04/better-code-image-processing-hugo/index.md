@@ -141,6 +141,34 @@ Then, the revised image-processing shortcode that now handles both GIPs (the def
 **Note**: For more information on available [`hint`s](https://gohugo.io/content-management/image-processing/#hint) and [`filter`s](https://gohugo.io/functions/images/), refer to the appropriate Hugo documentation.
 {.box}
 
+If you want the styling mentioned in the shortcode, here's CSS you can drop into your own CSS or Sass files:
+
+```css
+.relative {
+	position: relative;
+}
+.bg-center {
+	background-position: center;
+}
+.w-full {
+	width: 100%;
+}
+.h-auto {
+	height: auto;
+}
+@keyframes fadeIn {
+ 0% {
+	 opacity: 0;
+ }
+ to {
+	 opacity: 1;
+ }
+}
+.animate-fade {
+	animation: fadeIn 750ms ease-in-out;
+}
+```
+
 As was the case with each of this shortcode's respective predecessors, you invoke it with its name (minus the `.html` extension) followed by at least these parameters, separated by a space:
 
 - `src` --- The name of an image file within the Markdown file's page bundle folder.
