@@ -1628,9 +1628,9 @@ gitinfo:
   AbbreviatedHash: 43655cda
   LastmodDate: 2023-03-19T10:20:10-05:00
 - FilePath: posts/2023/04/better-code-image-processing-hugo/index.md
-  Hash: f9485764bf571c16b6528f6f4e8f71d5d179dc53
-  AbbreviatedHash: f9485764
-  LastmodDate: 2023-04-30T10:48:59-05:00
+  Hash: 96058dac1672b6dde53d6ef0a17b27e9cb3f2166
+  AbbreviatedHash: 96058dac
+  LastmodDate: 2023-05-04T11:46:24-05:00
 - FilePath: posts/2023/04/better-code-image-processing-hugo/my-pet-cat_3264x2448.jpg
   Hash: bf33d7b119e42f44fd6d09a638bac6453a6a32c1
   AbbreviatedHash: bf33d7b1
@@ -1647,6 +1647,14 @@ gitinfo:
   Hash: 755a9eb1bb809ee3d983d62939d7f86ea7d42da3
   AbbreviatedHash: 755a9eb1
   LastmodDate: 2023-04-30T11:34:18-05:00
+- FilePath: posts/2023/05/better-code-image-processing-hugo-render-hook-edition/index.md
+  Hash: 843783d260d6101b45c375cf42d7dc18185eaaf3
+  AbbreviatedHash: 843783d2
+  LastmodDate: 2023-05-04T12:52:08-05:00
+- FilePath: posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448.jpg
+  Hash: 9af28e709b943c38012944f3ae17d6dee8dcbc9e
+  AbbreviatedHash: 9af28e70
+  LastmodDate: 2023-05-04T12:08:27-05:00
 - FilePath: posts/2023/05/organizing-hugo-configuration/2023-05-02_screenshot_hugo-yaml-vsc_non-error_edit_2514x176.png
   Hash: 3668ca97e085b4539b44724fd94dfeaaecf572d2
   AbbreviatedHash: 3668ca97
