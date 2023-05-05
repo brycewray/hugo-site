@@ -10,7 +10,7 @@ ignoreErrors = [
 ]
 languageCode = 'en-us'
 # theme = 'newcss' # choices are sass and newcss - as of 2023-02-11
-# https://discourse.gohugo.io/t/site-theme/33200
+# # https://discourse.gohugo.io/t/site-theme/33200
 # newContentEditor = 'open -b pro.writer.mac'
 # # h/t:
 # # - https://www.lkhrs.com/blog/2022/10/hugo-ia-writer/
