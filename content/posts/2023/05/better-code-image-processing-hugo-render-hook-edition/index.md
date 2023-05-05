@@ -40,7 +40,7 @@ Is that a *lot* more typing? Not really. But:
 - Also, your editor app may well "understand" the Markdown syntax and be able to display its results in a preview window (as is the case with [iA Writer](https://ia.net/writer), for example) --- a handy capability that obviously won't work with a Hugo shortcode, which such an editor will regard as just gibberish.
 - At the very least, when you're coding, your editor app may helpfully auto-complete the Markdown syntax for you; it obviously can't do that for a Hugo shortcode.
 
-The fix for all of this is a render hook --- specifically, a `render-image` template --- that's built to do *nearly* everything the shortcode can do. I say "nearly" because the `render-image` template can accept only a limited number of parameters from the Markdown source. That means that, in building the template, we must pass up the shortcode's ability to accept a few additional parameters and, instead, hard-code some defaults that likely will suffice for nearly all images.
+The fix for all of this is a render hook --- specifically, a `render-image` template --- that's built to do *nearly* everything the shortcode can do. I say "nearly" because the `render-image` template can receive only a limited number of contextual items from the Markdown source. That means that, in building the template, we must pass up the shortcode's ability to accept a few additional parameters and, instead, hard-code some defaults that likely will suffice for nearly all images.
 
 Below is a `render-image` template which provides all the truly important advantages of the shortcode, plus one more of its own:
 
