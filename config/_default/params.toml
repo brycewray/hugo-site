@@ -1,4 +1,4 @@
-Styling = 'VCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albeit nested via PostCSS)
+Styling = 'SCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albeit nested via PostCSS)
 # -- REMINDER:
 # -- for 'SCSS' you **must** (a.) load Embedded Dart Sass in a GHA
 # -- **or** (b.) use Node Sass and appropriate `package.json` scripting
