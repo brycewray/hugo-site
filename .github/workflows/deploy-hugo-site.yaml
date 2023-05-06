@@ -105,8 +105,8 @@ jobs:
 # the following in the **commit message**
 # (INCLUDING the brackets AND case-sensitivity):
 #
-# [skip ci]
-# [ci skip]
+# [skip ci] (works in CFP GUI, too)
+# [ci skip] (works in CFP GUI, too)
 # [no ci]
 # [skip actions]
 # [actions skip]
@@ -116,3 +116,14 @@ jobs:
 # `skip-checks: true` or `skip-checks:true`.”
 #
 # ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
+#
+# --------
+# For CFP GUI only, it's (case-**in**sensitive):
+# [CI Skip]
+# [CI-Skip]
+# [Skip CI]
+# [Skip-CI]
+# [CF-Pages-Skip]
+# --------
+#
+# ref: https://developers.cloudflare.com/pages/platform/branch-build-controls/
