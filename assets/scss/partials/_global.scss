@@ -142,16 +142,24 @@ ul li li, ol li li, ul li li li, ol li li li {
 	margin-bottom: 0.25rem;
 }
 
-ul li li {
-	list-style-type: circle;
-}
-
-ol li li {
+ul li li, ol li li {
 	list-style-type: disc;
+	&::marker {
+		color: var.$slate-400;
+		@media (prefers-color-scheme: dark) {
+			color: var.$slate-500;
+		}
+	}
 }
 
 ul li li li, ol li li li {
 	list-style-type: square;
+	&::marker {
+		color: var.$slate-400;
+		@media (prefers-color-scheme: dark) {
+			color: var.$slate-500;
+		}
+	}
 }
 
 #content-main-hugo, main {
