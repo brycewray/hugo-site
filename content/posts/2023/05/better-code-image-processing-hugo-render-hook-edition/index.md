@@ -138,12 +138,14 @@ If you want the styling mentioned in the code (including for the optional captio
 I like this alternative so much that I've switched to it, away from the shortcode, for nearly all of the site's images --- essentially, all but the very few which need any of the extra settings allowed by the shortcode. Thus, I'll close by inserting a captioned photo of *our* family's cat, via the following Markdown:
 
 ```md
-![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here’s our cat, Shakespeare, sitting on a window sill.")
+![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here's our cat, Shakespeare, sitting on a window sill.\
+This photo appears in multiple images-related posts here on [this website](/).")
 ```
 
 . . . which produces:
 
-![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here’s our cat, Shakespeare, sitting on a window sill.")
+![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here's our cat, Shakespeare, sitting on a window sill.\
+This photo appears in multiple images-related posts here on [this website](/).")
 
 **Note**: In case you use your browser Inspector tool on the HTML from that image, be advised that I coded this site's `render-image.html` template to use Hugo's `MitchellNetravali` filter rather than the Hugo default of `box`.
 {.box}
