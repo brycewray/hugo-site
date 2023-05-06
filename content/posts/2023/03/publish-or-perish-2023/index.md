@@ -137,6 +137,9 @@ Builds tend to be slow, one of several bad results from CFP's badly outdated bui
 
 [^OldHugo]: For example, it adds that old Hugo version to **every** build, regardless of whether Hugo is even in the project --- at least, it does unless you *have* specified a Hugo version.
 
+<strong class="red">Update, 2023-05-06</strong>: The CFP build image update is now back on track, and currently is in a private beta test. I'm one of those testing it, and can tell you it's going to be a **big** improvement (**especially for Hugo users**) which, when implemented, will considerably improve CFP's overall ratings herein.
+{.box}
+
 Limits:
 - 500 deployments per month.
 - Unlimited bandwidth.
