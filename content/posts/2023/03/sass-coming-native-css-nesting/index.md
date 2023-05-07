@@ -21,8 +21,10 @@ So what will happen whenever Sass encounters native CSS nesting in websites' sty
 
 - **Near-term**: Sass won't support native CSS nesting in an SCSS file, but *will* support it in a CSS file. In the latter case, "Sass will just emit it as-is."
 - **Long-term**:
-	- The Sass team is waiting to see when [CSS's `:is()` pseudo-class function](https://developer.mozilla.org/en-US/docs/Web/CSS/:is), on which native CSS nesting relies *vs.* how Sass does nesting, "[is supported by 98% of the global browser market share](https://caniuse.com/css-matches-pseudo)." *(As of this writing, that support is at 97.4%.)* When that happens, Weizenbaum said, "we'll start transitioning Sass to emit `:is()` when resolving Sass nesting." Because that will constitute a breaking change, the Sass organization will issue a major version release and ease transitions through the [Sass Migrator tool](https://sass-lang.com/documentation/cli/migrator).
+	- The Sass team is waiting to see when [CSS's `:is()` pseudo-class function](https://developer.mozilla.org/en-US/docs/Web/CSS/:is), on which native CSS nesting relies *vs.* how Sass does nesting, "[is supported by 98% of the global browser market share](https://caniuse.com/css-matches-pseudo)."[^prefixed] When that happens, Weizenbaum said, "we'll start transitioning Sass to emit `:is()` when resolving Sass nesting." Because that will constitute a breaking change, the Sass organization will issue a major version release and ease transitions through the [Sass Migrator tool](https://sass-lang.com/documentation/cli/migrator).
 	- Sass nesting's long-time `&-suffix` feature for concatenating selectors --- which is [**not** supported by native CSS nesting](https://drafts.csswg.org/css-nesting/#syntax) --- *won't* go away because it's "too important to existing Sass users, and the benefit of [native CSS nesting] . . . is not strong enough to override that."
+
+[^prefixed]: **Update**: a few hours after I first issued this post, Weizenbaum [said](https://github.com/sass/sass/issues/3030#issuecomment-1491082178) that the "98%" figure refers to "full, **unprefixed** `:is` support" *[emphasis added]*.
 
 ----
 
