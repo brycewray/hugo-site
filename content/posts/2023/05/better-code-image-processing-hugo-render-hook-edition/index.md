@@ -46,7 +46,7 @@ Below is a `render-image` template which provides all the truly important advant
 
 - Responsive images.
 - Gradient image placeholders, **if** used with the `head-imgs-css.html` partial template (or similar templating of your own) I [described previously](/posts/2023/04/better-code-image-processing-hugo/).
-- Specific to this shortcode, an optional **caption**, using the optional `title` attribute.
+- Specific to this template, an optional **caption**, using the optional `title` attribute.
 
 <strong class="red">Important</strong>: Keep in mind that this template assumes the image file is always in the same folder as the Markdown file that's referring to it, allowing the image file to be used as a **page resource**. As for why I encourage that approach, see "[Bundling up: rebuilding my Hugo site](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/)."
 {.box}
