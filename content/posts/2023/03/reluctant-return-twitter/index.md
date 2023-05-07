@@ -13,13 +13,11 @@ I'm not crazy about what I did today. That said, in view of what I posted here a
 
 Starting a few days ago, this site's footer no longer had the Mastodon logo and its link to my account on the mastodon.social instance. That wasn't an accident; I'd put the account on "hiatus" status while considering a return to Twitter. I knew such a decision would be personally distasteful (and **extremely** unpopular among the followers I'd accumulated on Mastodon since becoming active there a few months back) and, yet, it was growing more likely, for reasons I'll cover later.
 
-Since I'd killed my previous Twitter account a few weeks ago, I started a new one --- initially with the handle of *@TheLurkerHS*, where *HS* stood for *hellsite* --- and began following what, over the next few days, would amount to several hundred accounts in the fields of news, sports, science/space, and web development. This would let me sample the waters while I considered whether I really, truly would go through with this return.
+Since I'd killed my previous Twitter account a few weeks ago, I started a new one and began following what, over the next few days, would amount to several hundred accounts in the fields of news, sports, science/space, and web development. This would let me sample the waters while I considered whether I really, truly would go through with this return.
 
 Today, I made up my mind to proceed.
 
-I then changed the handle to *@BryceWray*[^TX] and, my anonymity blown, confessed on Mastodon behind the [Content Warning](https://fedi.tips/how-to-use-content-warnings-cws-on-mastodon-and-the-fediverse/) "Birdsite / apology 😞 🤢":
-
-[^TX]: My recently axed account had the handle *@BryceWrayTX* because, when I created it in early 2014, someone else already had *@BryceWray*. That wasn't the case today.
+I then confessed on Mastodon behind the [Content Warning](https://fedi.tips/how-to-use-content-warnings-cws-on-mastodon-and-the-fediverse/) "Birdsite / apology 😞 🤢":
 
 > \*[Pausing before saying something the crowd won’t like...]\*
 >
@@ -61,3 +59,6 @@ Finally, just so you won't think I've changed my mind completely . . .
 Be advised I still consider Elon Musk's stewardship of Twitter so far to have been a *[bleep]*-show from the start that's only getting worse, and I won't be surprised if the whole platform collapses sooner rather than later. (In view of the potential security issues Twitter's continuing glitchiness presents, I took some extra precautions when starting this new account. I hope they'll protect me in case of a meltdown, or mass data breach, or any other such messes.) But, if so many whose data and opinions I want to see are determined to stay there, *c'est la guerre*.
 
 Besides: unless I'm prepared to live off the grid, I have to accept that rich, evil SOBs control *many* services and products I use and need. Twitter is only one example thereof. That is reality. I didn't build it; I just inhabit it. Reluctantly.
+
+**Update from the future**: Not long after this post, I decided I would use the Twitter account only to *view* content, specifically the types I mentioned above, rather than *tweeting* any of my own.
+{.box}

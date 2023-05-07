@@ -17,6 +17,11 @@ Calckey apparently is new enough that it doesn't have a real mobile app yet, *bu
 
 ![Screen capture of Calckey platform as shown in a desktop web browser](Calckey-desktop-2023-04-23-1040CDT-crop_3519x2101.png)
 
+<!--
 Although I remain on mastodon.social, I've also signed up with Calckey, at its [calckey.social](https://calckey.social) instance, as [@BryceWray](https://calckey.social/@BryceWray).
+-->
 
 Whether you have yet to sample the Fediverse, or are already on Mastodon but curious about other Fediverse platforms, you might want to give Calckey a try.
+
+**Note from the future**: I am no longer active on the Fediverse under any account.
+{.box}

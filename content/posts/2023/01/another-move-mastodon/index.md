@@ -54,3 +54,6 @@ In the end, I decided it would be better if I were on a less specifically target
 After all, I didn't want to risk being (or continuing to be) one of Those Guys:
 
 {{< lite-youtube videoTitle="Those Guys" videoId="wvlHTNPROYE" >}}
+
+**Note from the future**: I am no longer active on the Fediverse under any account.
+{.box}

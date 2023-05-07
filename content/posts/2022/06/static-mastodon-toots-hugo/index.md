@@ -363,3 +363,6 @@ To wrap this up, I'll note some aspects worth eyeing warily:
 
 One wonders whether a more centralized platform might allow a better chance to solve these problems, but that obviously would be completely counter to the entire idea behind Mastodon. To paraphrase my earlier statement: these are (considered to be) features, not bugs; so, before you embed Mastodon content on your site, you'll need to think about these items.
 
+**Note from the future**: I am no longer active on the Fediverse under any account.
+{.box}
+
