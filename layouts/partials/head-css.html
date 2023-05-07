@@ -4,7 +4,7 @@
 {{- $Styling := .Site.Params.Styling -}}
 
 {{- if eq $Styling "SCSS" -}}
-	{{- $scssOptions := merge $scssOptions (dict "targetPath" "index.min.css") -}}
+	{{- $scssOptions = merge $scssOptions (dict "targetPath" "index.min.css") -}}
 	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
