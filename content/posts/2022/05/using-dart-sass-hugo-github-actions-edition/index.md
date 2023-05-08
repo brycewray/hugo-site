@@ -23,7 +23,7 @@ This had been working fine for me ever since Hugo's Bjørn Erik Pedersen [first 
 
 In the end, I figured, assuming they'd continue to let that slip by was too big a gamble; so I started trying to think of something with a better chance of surviving until there's a more permanent solution.[^permanent]
 
-[^permanent]: To be precise, that permanent solution would be for each vendor to allow adding the Embedded Dart Sass binary to the build image (perhaps via an environment variable), much as you now can specify the desired version of Hugo. There have been occasional rumblings that one or more of the vendors might do this, but at this writing ETA = TBD in each case. I doubt it's high on their collective radar.
+[^permanent]: To be precise, that permanent solution would be for each vendor to allow adding the Embedded Dart Sass binary to the build image (perhaps via an environment variable), much as you now can specify the desired version of Hugo. There have been occasional rumblings that one or more of the vendors might do this, but at this writing ETA = TBD in each case. I doubt it's high on their collective radar. **Update, 2023-05-08**: I have learned this *will* be possible with Cloudflare Pages in the near future. I'll post more details about it when appropriate.
 
 One morning this week, I awoke from an impromptu nap[^defense] and came up with the answer I'm going to describe below: a [**GitHub Action**](https://github.com/features/actions) (GHA). It wouldn't be new ground, since I've written before about using GHAs to deploy static websites:
 

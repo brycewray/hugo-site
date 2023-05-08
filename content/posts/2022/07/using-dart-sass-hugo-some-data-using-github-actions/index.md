@@ -77,3 +77,6 @@ While I was finishing this post, I saw a [GitHub Discussions thread indicating t
 > This is NOT a definite commitment to what we will deliver.
 
 Still, if that *did* happen, it would completely eliminate the need for *any* end runs if you use Cloudflare Pages: you'd use the *normal* CFP deploy process, and everything would just work.
+
+**Update, 2023-05-08**: I have learned that the new Cloudflare Pages build image --- now in a private beta test, after a few months of delay (due to other Cloudflare projects which took development precedence) --- **will** include the capability to specify Embedded Dart Sass through an env var. I'll post more details about it when appropriate.
+{.box}
