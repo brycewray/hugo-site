@@ -1,0 +1,119 @@
+header, .nav, .nav-Menu {
+	background-color: var(--slate-300);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+	}
+}
+
+header {
+	/* font-family: var(--sans-serif); */
+	position: fixed;
+	width: 100%;
+	margin-top: 0;
+	z-index: 9999;
+}
+
+.nav-Toggle {
+	position: absolute;
+	cursor: pointer;
+	margin: 0rem 1rem;
+	right: 0;
+	@media screen and (min-width: 1024px) {
+		display: none;
+	}
+	& svg {
+		width: 1.5rem;
+		fill: var(--slate-800);
+		@media (prefers-color-scheme: dark) {
+			fill: var(--slate-50);
+		}
+	}
+	& .close {
+		display: none;
+	}
+	& .menu {
+		margin-top: 0.2rem;
+	}
+}
+
+.nav-Checkbox {
+	display: none;
+	&:checked {
+		~ ul.nav-Menu li {
+			display: block;
+		}
+		~ label.nav-Toggle .close {
+			display: block;
+		}
+		~ label.nav-Toggle .menu {
+			display: none;
+		}
+		~ ul.nav-Menu {
+			padding-bottom: 1rem;
+		}
+	}
+}
+
+.nav-Menu {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: right;
+	/* align-items: right; */
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+		padding: 0;
+		gap: 0.5rem;
+		margin: 0.5rem 1.5rem 0 0;
+	}
+	& li {
+		list-style: none;
+		display: none;
+		font-weight: bold;
+		padding-right: 0.75em;
+		@media screen and (min-width: 1024px) {
+			font-size: var(--text-sm);
+			display: block;
+			text-transform: uppercase;
+			margin: 0.5rem 0 0.5rem 0;
+		}
+		& .notMobile {
+			display: none;
+			@media screen and (min-width: 1024px) {
+				display: block;
+			}
+		}
+		&:first-child {
+			padding: 0;
+			margin-right: auto;
+			margin-left: 1.5rem;
+			display: block;
+			@media screen and (min-width: 1024px) {
+				letter-spacing: normal;
+				line-height: 0;
+				margin-top: 0;
+			}
+			& svg { /* for site logo */
+				width: auto;
+			}
+		}
+	}
+	& a {
+		text-decoration: none;
+		border: 0;
+		color: black;
+		@media (prefers-color-scheme: dark) {
+			color: white;
+		}
+		&:focus, &:active, &:hover {
+			color: var(--slate-600);
+			@media (prefers-color-scheme: dark) {
+				color: var(--slate-200);
+			}
+		}
+	}
+}
