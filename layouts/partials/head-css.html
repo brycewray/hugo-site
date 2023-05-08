@@ -28,7 +28,9 @@
 {{- if eq $Styling "VCSS" -}}
 	{{- $printCSS = resources.Get "css/print.css" | postCSS | minify -}}
 {{- end -}}
-{{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | fingerprint -}}
+{{- with $printCSS -}}
+	{{- if hugo.IsProduction -}}
+		{{- $printCSS = $printCSS | fingerprint -}}
+	{{- end }}
+	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}
-<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
