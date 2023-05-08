@@ -1,6 +1,7 @@
 Styling = 'SCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albeit nested via PostCSS)
 # -- REMINDER:
-# -- for 'SCSS' you **must** (a.) load Embedded Dart Sass in a GHA
+# -- for 'SCSS' you **must**:
+# --        (a.) load Embedded Dart Sass in a GHA
 # -- **or** (b.) use Node Sass and appropriate `package.json` scripting
 # -- **or** (c.) in the CFP v2 build image, set `EMBEDDED_DART_SASS_VERSION`
 Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge Functions to handle for CSP
@@ -16,9 +17,6 @@ AuthorEmail = 'bw@brycewray.com'
 AuthorUrl = 'https://www.brycewray.com/about/'
 AuthorAvatar = 'https://www.brycewray.com/images/icons/apple-icon-1024x1024.png'
 Description = 'Bryce Wray’s website | Observations, opinions, geekiness'
-Site_domain = '{{< Site.Params.Domain >}}'
-# https://discourse.gohugo.io/t/site-theme/33200
-# -- for /content/posts/2022/05/webmentions-yes-javascript-no-the-code.md
 # ===========================
 [Titles]
 	Contact = 'Want to reach me?'
