@@ -17,6 +17,7 @@ node_modules
 .netlify
 .firebase
 .nova
+.unlighthouse
 
 csp.txt
 cache-and-headers.js
