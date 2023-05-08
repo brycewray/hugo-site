@@ -134,3 +134,34 @@ Still, it works. So, if you prefer to deploy to your host's native UI yet still 
 
 **Update, same day**: Thanks to [Joe Mooring](https://github.com/jmooring) and [Rodrigo Alcaraz de la Osa](https://fisiquimicamente.com/); their [helpful comments](https://discourse.gohugo.io/t/gitinfo-and-fetch-depth-when-using-host-gui/43156) contributed greatly toward post-publication revisions to improve this article's accuracy!
 {.box}
+
+____
+
+## *Update, 2022-05-08*
+
+If you want to use this method **but** are wary about what I mentioned above --- about having to futz with re-running the shell script and committing the updated data file every time you commit any new or changed content --- here's an **alternative** shell script that will automate the entire process for you. (As with the earlier one, you'll need to [give it the necessary file permissions](https://kb.iu.edu/d/abdb).) We'll call it *pushgit.sh*, so you'd invoke it with:
+
+```bash
+./pushgit.sh
+```
+
+Its last line, below, assumes your online repo is called *origin* in Git, because that's a common default for a remote source. If you've fiddled with [`git remote`](https://git-scm.com/docs/git-remote) to use a different name, adjust this accordingly. (Similarly: if, as is true for my site, you typically push changes to *multiple* remote repos at the same time, that's another reason to edit the last line.)
+
+{{< labeled-highlight lang="bash" filename="pushgit.sh" >}}
+#!/bin/sh
+## == USE WHEN READY TO PUSH CONTENT CHGS. TO HOST
+## == First, get Git data
+rm -rf data/gitoutput.yml # avoid appending to existing
+echo "Getting git data . . ."
+printf "gitinfo:\n" >> data/gitoutput.yml
+cd content
+git ls-tree -r --name-only HEAD | while read filename; do
+  printf "\055 FilePath: $filename\n$(git log -1 --all --pretty=format:"  Hash: %H\n  AbbreviatedHash: %h\n  LastmodDate: %cI" -- $filename)\n" >> ../data/gitoutput.yml
+done
+## == Next, add and commit the resulting YAML file
+cd ..
+# ^^^ Otherwise, it'll look in `content/` for `data/`
+git add data/gitoutput.yml && git commit -m "Update manual Git data"
+## == Finally, push to the remote repo
+git push -u origin
+{{</ labeled-highlight >}}
