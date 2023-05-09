@@ -44,18 +44,18 @@ Before we get into the actual SCSS involved, note that the color variables to wh
 // These are relevant excerpts from
 // a partial called `_variables.scss`.
 
-gray-50: #f9fafb;
-gray-100: #f3f4f6;
-gray-200: #e5e7eb;
-gray-300: #d1d5db;
-gray-350: #b7bcc5;
-gray-400: #9ca3af;
-gray-500: #6b7280;
-gray-600: #4b5563;
-gray-650: #414b5a;
-gray-700: #374151;
-gray-800: #1f2937;
-gray-900: #111827;
+$gray-50: #f9fafb;
+$gray-100: #f3f4f6;
+$gray-200: #e5e7eb;
+$gray-300: #d1d5db;
+$gray-350: #b7bcc5;
+$gray-400: #9ca3af;
+$gray-500: #6b7280;
+$gray-600: #4b5563;
+$gray-650: #414b5a;
+$gray-700: #374151;
+$gray-800: #1f2937;
+$gray-900: #111827;
 ```
 
 With those variables set, here we go. (You may want to copy the code into a text editor for more comfortable, scroll-free viewing.)
@@ -69,62 +69,53 @@ With those variables set, here we go. (You may want to copy the code into a text
 @charset 'utf-8';
 @use 'partials/variables' as var;
 
-article {
+// First, we assign colors to
+// boldfaced and italicized text
+// that is **not** in the class
+// `red`, **not** inside a link,
+// **not** in a table head,
+// and **not** within a blockquote
+// (we'll get to blockquotes below).
+//
+// Note that we cover not only
+// <strong> but also <b>, and
+// not only <em> but also <i>;
+// in addition, we take care of
+// groupings --- <strong><em>,
+// <em><strong>, <b><i>,
+// and <i><b>.
 
-	// First, we assign colors to
-	// boldfaced and italicized text
-	// that is **not** in the class
-	// `red`, **not** inside a link,
-	// and **not** within a blockquote
-	// (we'll get to blockquotes below).
-	//
-	// Note that we cover not only
-	// <strong> but also <b>, and
-	// not only <em> but also <i>;
-	// in addition, we take care of
-	// groupings --- <strong><em>,
-	// <em><strong>, <b><i>,
-	// and <i><b>.
-
-	strong:not(.red *):not(a *):not(blockquote *),
-	b:not(.red *):not(a *):not(blockquote *),
-	em:not(.red *):not(a *):not(blockquote *),
-	i:not(.red *):not(a *):not(blockquote *),
-	em strong:not(.red *):not(a *):not(blockquote *),
-	strong em:not(.red *):not(a *):not(blockquote *),
-	i b:not(.red *):not(a *):not(blockquote *),
-	b i:not(.red *):not(a *):not(blockquote *) {
-		color: var.$gray-800; // (vs. $gray-700)
-		@media (prefers-color-scheme: dark) {
-			color: var.$gray-200; // (vs. $gray-300)
-		}
+article strong:not(.red *):not(a *):not(blockquote *),
+article b:not(.red *):not(a *):not(blockquote *),
+article em:not(.red *):not(a *):not(blockquote *):not(th *),
+article i:not(.red *):not(a *):not(blockquote *):not(th *),
+article em strong:not(.red *):not(a *):not(blockquote *),
+article strong em:not(.red *):not(a *):not(blockquote *),
+article i b:not(.red *):not(a *):not(blockquote *),
+article b i:not(.red *):not(a *):not(blockquote *) {
+	color: var.$gray-800; // (vs. gray-700)
+	@media (prefers-color-scheme: dark) {
+		color: var.$gray-200; // (vs. gray-300)
 	}
+}
 
-	// Now we deal with the blockquotes,
-	// including links within them. Here,
-	// we assign colors to boldfaced and
-	// italicized text that **is** within
-	// a blockquote but is **not** inside
-	// a link. (We cover the same tags
-	// and groupings as before.)
-	//
-	// In essence, we're giving this
-	// normally grayed-out text some
-	// color treatments to differ slightly
-	// from usual blockquote styling.
+// Now we deal with the blockquotes,
+// including links within them. Here,
+// we assign colors to boldfaced and
+// italicized text that **is** within
+// a blockquote but is **not** inside
+// a link. (We cover nearly the same tags
+// and groupings as before.)
+//
+// In essence, we're giving this
+// normally grayed-out text some
+// color treatments to differ slightly
+// from usual blockquote styling.
 
-	strong:is(blockquote *):not(a *),
-	b:is(blockquote *):not(a *),
-	em:is(blockquote *):not(a *),
-	i:is(blockquote *):not(a *),
-	em strong:is(blockquote *):not(a *),
-	strong em:is(blockquote *):not(a *),
-	i b:is(blockquote *):not(a *),
-	b i:is(blockquote *):not(a *) {
-		color: var.$gray-650; // (vs. $gray-600)
-		@media (prefers-color-scheme: dark) {
-			color: var.$gray-350; // (vs. $gray-400)
-		}
+article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+	color: var.$gray-600; // (vs. gray-550)
+	@media (prefers-color-scheme: dark) {
+		color: var.$gray-350; // (vs. gray-400)
 	}
 }
 ```
