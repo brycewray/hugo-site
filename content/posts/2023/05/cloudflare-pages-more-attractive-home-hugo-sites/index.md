@@ -38,7 +38,7 @@ So, as I mentioned earlier: when I learned last summer about what ended up being
 
 Hugo's [`.GitInfo` object](https://gohugo.io/variables/git/) enables you to [access and display Git revision information in your site](/posts/2022/06/get-good-git-info-hugo/), **but** all of that works properly online **only** if your site host, when accessing your Hugo project's repository, does a *deep* clone of the repo. Some hosts do, but the native CFP UI didn't make that possible --- or so I thought, until I participated in the v2 beta test.
 
-While asking in the Discord about some other features, I explained this problem to two members of the Cloudflare team and added that it would surely be nice for Hugo users if there were a way to control the depth of CFP's repo-cloning process. A few minutes later, one of the Cloudflare guys said he thought it *was* possible, and suggested I try concatenating `[git fetch](https://git-scm.com/docs/git-fetch) --unshallow` onto a Hugo build command. Thus, for most Hugo sites, that would probably result in something like:
+While asking in the Discord about some other features, I explained this problem to two members of the Cloudflare team and added that it would surely be nice for Hugo users if there were a way to control the depth of CFP's repo-cloning process. A few minutes later, one of the Cloudflare guys said he thought it *was* possible, and suggested I try concatenating `git fetch --unshallow` onto a Hugo build command. Thus, for most Hugo sites, that would probably result in something like:
 
 ```bash
 git fetch --unshallow && hugo --minify
