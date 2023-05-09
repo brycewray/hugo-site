@@ -112,7 +112,14 @@ article b i:not(.red *):not(a *):not(blockquote *) {
 // color treatments to differ slightly
 // from usual blockquote styling.
 
-article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+article strong:is(blockquote *):not(a *),
+article b:is(blockquote *):not(a *),
+article em:is(blockquote *):not(a *),
+article i:is(blockquote *):not(a *),
+article em strong:is(blockquote *):not(a *),
+article strong em:is(blockquote *):not(a *),
+article i b:is(blockquote *):not(a *),
+article b i:is(blockquote *):not(a *) {
 	color: var.$gray-600; // (vs. gray-550)
 	@media (prefers-color-scheme: dark) {
 		color: var.$gray-350; // (vs. gray-400)
