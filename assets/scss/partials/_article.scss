@@ -156,18 +156,19 @@ article {
 	picture img {
 		height: auto;
 	}
-	// following from...
-	// https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
-	strong:not(.red *):not(a *):not(blockquote *), b:not(.red *):not(a *):not(blockquote *), em:not(.red *):not(a *):not(blockquote *), i:not(.red *):not(a *):not(blockquote *), em strong:not(.red *):not(a *):not(blockquote *), strong em:not(.red *):not(a *):not(blockquote *), i b:not(.red *):not(a *):not(blockquote *), b i:not(.red *):not(a *):not(blockquote *) {
-		color: var.$gray-800; // (vs. gray-700)
-		@media (prefers-color-scheme: dark) {
-			color: var.$gray-200; // (vs. gray-300)
-		}
+}
+
+// following from...
+// https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
+article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
+	color: var.$gray-800; // (vs. gray-700)
+	@media (prefers-color-scheme: dark) {
+		color: var.$gray-200; // (vs. gray-300)
 	}
-	strong:is(blockquote *):not(a *), b:is(blockquote *):not(a *), em:is(blockquote *):not(a *), i:is(blockquote *):not(a *), em strong:is(blockquote *):not(a *), strong em:is(blockquote *):not(a *), i b:is(blockquote *):not(a *), b i:is(blockquote *):not(a *) {
-		color: var.$gray-600; // (vs. gray-550)
-		@media (prefers-color-scheme: dark) {
-			color: var.$gray-350; // (vs. gray-400)
-		}
+}
+article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+	color: var.$gray-600; // (vs. gray-550)
+	@media (prefers-color-scheme: dark) {
+		color: var.$gray-350; // (vs. gray-400)
 	}
 }
