@@ -66,6 +66,10 @@ export default async function handleRequest(request) {
 				`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
 			)
 			.replace(
+				'cdn.usefathom.com/script.js"',
+				`cdn.usefathom.com/script.js" nonce="${nonce}"`
+			)
+			.replace(
 				'src="/assets/js/lite-yt-embed_',
 				`nonce="${nonce}" src="/assets/js/lite-yt-embed_`
 			)
