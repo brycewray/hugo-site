@@ -18,9 +18,9 @@
 	{{- else }}
 	{{- $socImg = resources.Get "/images/social-OG-bkgd-for-left-align-text_1280x669.jpg" -}}
 	{{- $titleSize := 108 -}}{{/* pixels */}}
-	{{/*  {{- if gt (len $.Title) 36 -}}
-		{{- $titleSize = 72 -}}
-	{{- end -}}  */}}
+	{{- if gt (len $.Title) 48 -}}
+		{{- $titleSize = 96 -}}
+	{{- end -}}
 	{{- $titleSI := .Title -}}
 	{{/*  {{- $titleSI = .Title | htmlUnescape -}}  */}}
 	{{- $socImg = $socImg.Filter (images.Text $titleSI (dict
