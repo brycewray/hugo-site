@@ -9,8 +9,8 @@ env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below (non-Node)
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
   PAGEFIND_VERSION: 0.12.0 # (non-Node)
-  NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
-  STYLING: SCSS # choices: 'SCSS' and 'VCSS' (VCSS, albeit perhaps with PostCSS for nesting, etc.)
+  NODE: false # Boolean
+  STYLING: SCSS # choices: 'SCSS' and 'VCSS' (vanilla CSS, albeit perhaps with PostCSS for nesting, etc.)
   HOST: CFP # choices: 'CFP' and 'Vercel'
 
 
@@ -73,7 +73,7 @@ jobs:
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           pagefind_extended --source "public"
-      - name: Install Wrangler (cond. - non-Node and host)
+      - name: Install Wrangler for CFP (cond. - non-Node and host)
         if: ${{ env.NODE !='true' && env.HOST == 'CFP' }}
         run: npm i -g wrangler --unsafe-perm=true --commit-dirty=true
       - name: Move Vercel-specific files to `/public` (cond. - host)
