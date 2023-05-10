@@ -108,8 +108,8 @@ jobs:
 # the following in the **commit message**
 # (INCLUDING the brackets AND case-sensitivity):
 #
-# [skip ci] (works in CFP GUI, too)
-# [ci skip] (works in CFP GUI, too)
+# [skip ci] (works also in CFP GUI and, as per **Ignore Build Step**, Vercel GUI)
+# [ci skip] (works also in CFP GUI)
 # [no ci]
 # [skip actions]
 # [actions skip]
@@ -124,9 +124,11 @@ jobs:
 # For CFP GUI only, it's (case-**in**sensitive):
 # [CI Skip]
 # [CI-Skip]
-# [Skip CI]
+# [Skip CI] <-- This is the one we can use on all, albeit as `[skip-ci]`
 # [Skip-CI]
 # [CF-Pages-Skip]
-# --------
-#
 # ref: https://developers.cloudflare.com/pages/platform/branch-build-controls/
+# --------
+# For Vercel GUI only, it's (case-sensitivity unknown):
+# [skip ci]
+# --------
