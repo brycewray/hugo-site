@@ -26,13 +26,13 @@ Finally, as I explained in the original post, I hadn't done a lot of *any* codin
 
 ## Moving on up
 
-When I compare the Hugo of mid-July, 2019, to [what's available today](https://github.com/gohugoio/hugo/releases), it's amazing how far the SSG has come. Back then, I'd have been using, at best, [Hugo 0.55.6](https://github.com/gohugoio/hugo/releases/tag/v0.55.6), released 2019-05-18. Since then, Hugo has added:
-- [Hugo Modules](https://gohugo.io/hugo-modules/)[^HugoModules] in [0.56.0](https://github.com/gohugoio/hugo/releases/tag/v0.56.0), 2019-07-25.
-- Better and faster Markdown parsing through the [goldmark](https://github.com/yuin/goldmark) library in [0.60.0](https://github.com/gohugoio/hugo/releases/tag/v0.60.0), 2019-11-27.
-- Support for [Dart Sass](https://sass-lang.com/dart-sass) in [0.80.0](https://github.com/gohugoio/hugo/releases/tag/v0.80.0), 2020-12-31.
-- Support for processing [WebP](https://developers.google.com/speed/webp) images in [0.83.0](https://github.com/gohugoio/hugo/releases/tag/v0.83.0), 2021-05-01. (More about Hugo's [image processing](/posts/2022/06/responsive-optimized-images-hugo/) below.)
-- The ability to [fetch remote resources](/posts/2021/12/fetching-remote-stuff-hugo-0-90-plus/) in [0.90.0](https://github.com/gohugoio/hugo/releases/tag/v0.90.0), 2021-12-08 (with some enhancements thereto in [0.91.0](https://github.com/gohugoio/hugo/releases/tag/v0.91.0), 2021-12-17).
-- Even more build speed and more efficient memory usage --- as if Hugo didn't already pack both in sufficient quantity --- in [0.94.0](https://github.com/gohugoio/hugo/releases/tag/v0.94.0), 2022-03-10.
+When I compare the Hugo of mid-July, 2019, to [what's available today](https://github.com/gohugoio/hugo/releases), it's amazing how far the SSG has come. Back then, I'd have been using, at best, [Hugo 0.55.6](https://github.com/gohugoio/hugo/releases/tag/v0.55.6), released <span class="nobrk">2019-05-18</span>. Since then, Hugo has added:
+- [Hugo Modules](https://gohugo.io/hugo-modules/)[^HugoModules] in [0.56.0](https://github.com/gohugoio/hugo/releases/tag/v0.56.0), <span class="nobrk">2019-07-25</span>.
+- Better and faster Markdown parsing through the [goldmark](https://github.com/yuin/goldmark) library in [0.60.0](https://github.com/gohugoio/hugo/releases/tag/v0.60.0), <span class="nobrk">2019-11-27</span>.
+- Support for [Dart Sass](https://sass-lang.com/dart-sass) in [0.80.0](https://github.com/gohugoio/hugo/releases/tag/v0.80.0), <span class="nobrk">2020-12-31</span>.
+- Support for processing [WebP](https://developers.google.com/speed/webp) images in [0.83.0](https://github.com/gohugoio/hugo/releases/tag/v0.83.0), <span class="nobrk">2021-05-01</span>.
+- The ability to [fetch remote resources](/posts/2021/12/fetching-remote-stuff-hugo-0-90-plus/) in [0.90.0](https://github.com/gohugoio/hugo/releases/tag/v0.90.0), <span class="nobrk">2021-12-08</span> (with some enhancements thereto in [0.91.0](https://github.com/gohugoio/hugo/releases/tag/v0.91.0), <span class="nobrk">2021-12-17</span>).
+- Even more build speed and more efficient memory usage --- as if Hugo didn't already pack both in sufficient quantity --- in [0.94.0](https://github.com/gohugoio/hugo/releases/tag/v0.94.0), <span class="nobrk">2022-03-10</span>.
 - Many improvements over time, in multiple versions, to Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes/). It now features code-bundling, further enhancements to its image-processing powers, and a lot more. For those unfamiliar with Hugo Pipes, let's just say its performance/speed combination blows away webpack and [Parcel](https://parceljs.org), and even (IMHO) rivals the awesome [Vite](https://vitejs.dev).
 
 [^HugoModules]: Full disclosure: my only use of Hugo Modules so far was in a test I did earlier this year while writing [a post](https://cloudcannon.com/blog/stay-in-the-race-with-hugo-bookshop-and-cloudcannons-git-powered-cms/) for the [CloudCannon blog](https://cloudcannon.com/blog/) about CloudCannon's open-source [Bookshop project](https://github.com/CloudCannon/bookshop), which works with a Hugo site via Hugo Modules. However, I know there are many Hugo users who consider Hugo Modules the proverbial "greatest thing since sliced bread" --- and, for some use cases, that appears to be an apt description. It's just that this site doesn't need them, so I haven't really bothered.
@@ -45,10 +45,10 @@ However, it's begun to grow on me somewhat. The difference between Then and Now 
 
 Compared to how much tinkering I've done over the years with various other SSGs --- including what I described in "Why I'm staying with Hugo" --- I didn't really get under the hood much with Hugo, and what its templating allows, until just the last seven or eight months. Having now invested that effort, I've gained an even greater understanding, and appreciation, of Hugo's capabilities, as noted in a few posts I've written in that period:
 
-- "[Bundling JavaScript with Hugo and esbuild](/posts/2021/12/bundling-javascript-hugo-esbuild/)," 2021-12-01.
-- "[Fetching remote stuff with Hugo 0.90+](/posts/2021/12/fetching-remote-stuff-hugo-0-90-plus/)," 2021-12-11.
-- Several posts about doing fully static embeds of social media posts --- which Hugo's built-in `getJSON` function makes easier than in JS-based SSGs[^fetchAxios] --- the most recent of which was "[Static tweets in Hugo: an update](/posts/2022/06/static-tweets-hugo-update/)," 2022-06-07.
-- "[Responsive and optimized images with Hugo](/posts/2022/06/responsive-optimized-images-hugo/)," 2022-06-29.
+- "[Bundling JavaScript with Hugo and esbuild](/posts/2021/12/bundling-javascript-hugo-esbuild/)," <span class="nobrk">2021-12-01</span>.
+- "[Fetching remote stuff with Hugo 0.90+](/posts/2021/12/fetching-remote-stuff-hugo-0-90-plus/)," <span class="nobrk">2021-12-11</span>.
+- Several posts about doing fully static embeds of social media posts --- which Hugo's built-in `getJSON` function makes easier than in JS-based SSGs[^fetchAxios] --- the most recent of which was "[Static tweets in Hugo: an update](/posts/2022/06/static-tweets-hugo-update/)," <span class="nobrk">2022-06-07</span>.
+- "[Responsive and optimized images with Hugo](/posts/2022/06/responsive-optimized-images-hugo/)," <span class="nobrk">2022-06-29</span>.
 
 [^fetchAxios]: That is, unless you just *like* futzing around with packages like [node-fetch](https://github.com/node-fetch/node-fetch) and [axios](https://axios-http.com/). I've used both in both Eleventy and Astro, and sometimes they've worked okay for me but other times they've constituted a major pain. (Async and I aren't exactly the best of friends.) I have yet to run into similar agonies with `getJSON`, which I've found far more forgiving than either node-fetch or axios.
 
