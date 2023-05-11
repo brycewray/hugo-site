@@ -9,7 +9,7 @@ env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below (non-Node)
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
   PAGEFIND_VERSION: 0.12.0 # (non-Node)
-  NODE: false # Boolean
+  NODE: true # Boolean
   STYLING: SCSS # choices: 'SCSS' and 'VCSS' (vanilla CSS, albeit perhaps with PostCSS for nesting, etc.)
   HOST: CFP # choices: 'CFP' and 'Vercel'
 
