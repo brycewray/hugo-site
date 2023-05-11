@@ -93,6 +93,7 @@ export async function onRequest(context) {
 	.replace(/<style/g, `<style nonce="${nonce}"`)
 
   let ttl = undefined
+	let filesRegexMatch = false
   let cache = caches.default
   let url = new URL(context.request.url)
   let shouldCache = false
@@ -106,6 +107,7 @@ export async function onRequest(context) {
   if (url.pathname.match(filesRegex)) {
     shouldCache = true
     ttl = 31536000
+		filesRegexMatch = true
   }
   if (url.pathname.match(jsRegex)) {
     jsStuff = true
@@ -122,6 +124,7 @@ export async function onRequest(context) {
   newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
 	newHeaders.set("X-TTL-Check", ttl)
 	newHeaders.set("X-Pathname-Check", url.pathname)
+	newHeaders.set("X-Files-Regex-Match", filesRegexMatch)
   if (ttl) {
     newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
     newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
