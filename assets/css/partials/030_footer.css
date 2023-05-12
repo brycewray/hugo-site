@@ -5,82 +5,124 @@ footer {
 	width: 100%;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	@media screen and (min-width: 1024px){
-		margin: 2rem auto 0 auto;
-		/* padding-bottom: 1rem; */
-	}
-	& p {
-		line-height: 1.5em; /* definitely em, not rem, here */
-	}
-	& div.footerWrapper {
-		margin: 0 auto;
-		width: 80%;
-		@media screen and (min-width: 1024px){
-			width: 65%;
-			height: 100%;
-		}
-		& p {
-			margin: 1rem 0;
-		}
-		& div.icons-box {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			gap: 1em;
-		}
-	}
+}
+
+footer p {
+	line-height: 1.5em; /* definitely em, not rem, here */
+}
+
+footer div.footerWrapper {
+	margin: 0 auto;
+	width: 80%;
+}
+
+footer div.footerWrapper p {
+	margin: 1rem 0;
+}
+
+footer div.footerWrapper div.icons-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1em;
 }
 
 circle.GitHub,
 circle.RSS,
-path.Calckey,
 path.MastodonBody,
 path.Twitter,
 path.JSON,
 path.RSS {
-	fill: white;
-	@media (prefers-color-scheme: dark) {
-		fill: black;
-	}
+ fill: white;
 }
 
 circle.Twitter,
 circle.JSON {
-	fill: black;
-	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link);
-	}
+ fill: black;
 }
 
 path.GitHub,
 circle.MastodonCircle,
 path.MastodonM,
-circle.Calckey,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: var(--default-light-link);
-	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link);
-	}
+ fill: var(--default-light-link);
 }
 
 a:hover path.GitHub,
 a:hover circle.MastodonCircle,
 a:hover path.MastodonM,
-a:hover circle.Calckey,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var(--default-light-link-afh);
-	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link-afh);
-		/* needed only if using darker bkgd in dark mode */
-		/* fill: white; */
-	}
+ fill: var(--default-light-link-afh);
 }
 
 path.MastodonBody,
 path.MastodonM {
  fill-rule:nonzero;
+}
+
+/* needed only if using darker bkgd in dark mode
+a:hover circle.GitHub,
+a:hover path.Twitter,
+a:hover path.RSS,
+a:hover path.JSON,
+a:hover path.MastodonBody {
+ @media (prefers-color-scheme: dark) {
+	 fill: white;
+ }
+}
+*/
+
+@media screen and (min-width: 1024px){
+	footer {
+		margin: 2rem auto 0 auto;
+		/* padding-bottom: 1rem; */
+	}
+	footer div.footerWrapper {
+		width: 65%;
+		height: 100%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	circle.GitHub,
+	circle.RSS,
+	path.MastodonBody,
+	path.Twitter,
+	path.JSON,
+	path.RSS {
+		fill: black;
+	}
+	circle.Twitter,
+	circle.JSON {
+		fill: var(--default-dark-link);
+	}
+	path.GitHub,
+	circle.MastodonCircle,
+	path.MastodonM,
+	circle.Twitter,
+	circle.RSS,
+	circle.JSON {
+		fill: var(--default-dark-link);
+	}
+	a:hover path.GitHub,
+	a:hover circle.MastodonCircle,
+	a:hover path.MastodonM,
+	a:hover circle.Twitter,
+	a:hover circle.RSS,
+	a:hover circle.JSON {
+		fill: var(--default-dark-link-afh);
+	}
+	/* needed only if using darker bkgd in dark mode
+	a:hover circle.GitHub,
+	a:hover path.Twitter,
+	a:hover path.RSS,
+	a:hover path.JSON,
+	a:hover path.MastodonBody {
+		fill: white;
+	}
+	*/
 }

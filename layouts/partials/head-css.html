@@ -1,4 +1,6 @@
 {{- $css := "" -}}
+{{- $cssP := "" -}}
+{{- $cssM := "" -}}
 {{- $printCSS := "" -}}
 {{- $scssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
 {{- $Styling := .Site.Params.Styling -}}
@@ -8,7 +10,9 @@
 	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $css = resources.Get "css/index.css" | postCSS | minify -}}
+	{{- $cssP = resources.Match "css/partials/*.css" | resources.Concat "css/partials.css" -}}
+	{{- $cssM = resources.Match "css/*.css" | resources.Concat "css/main.css" -}}
+	{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" | minify -}}
 {{- end -}}
 {{- with $css }}
 	{{- if hugo.IsProduction -}}
@@ -23,12 +27,13 @@
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 {{- end }}
 
+{{- /* for those who've requested CSS for printing */ -}}
 {{- if eq $Styling "SCSS" -}}
-	{{- $scssOptionsPrint := merge $scssOptions (dict "targetPath" "css/print.min.css") -}}
-	{{- $printCSS = resources.Get "scss/print.scss" | toCSS $scssOptionsPrint -}}
+	{{- $scssOptionsPrint := merge $scssOptions (dict "targetPath" "css/print/print.min.css") -}}
+	{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $printCSS = resources.Get "css/print.css" | postCSS | minify -}}
+	{{- $printCSS = resources.Get "css/print/print.css" | postCSS | minify -}}
 {{- end -}}
 {{- with $printCSS -}}
 	{{- if hugo.IsProduction -}}
