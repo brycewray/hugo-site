@@ -4,7 +4,8 @@ html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	-moz-osx-font-smoothing: auto; // only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
+	-moz-osx-font-smoothing: auto;
+	// ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
 	font-variant-ligatures: normal;
 	text-rendering: optimizeLegibility;
 	// text-justify: inter-character; // someday...
