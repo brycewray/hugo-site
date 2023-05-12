@@ -94,9 +94,9 @@ export async function onRequest(context) {
 
   let ttl = undefined
 	let filesRegexMatch = false
-  let cache = caches.default
+  // let cache = caches.default
   let url = new URL(context.request.url)
-  let shouldCache = false
+  // let shouldCache = false
   let jsStuff = false
   let svgStuff = false
 
@@ -105,7 +105,7 @@ export async function onRequest(context) {
   const svgRegex = /(.*\.(svg))$/
 
   if (url.pathname.match(filesRegex)) {
-    shouldCache = true
+    // shouldCache = true
     ttl = 31536000
 		filesRegexMatch = true
   }
