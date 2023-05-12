@@ -39,13 +39,12 @@ export async function onRequest(context) {
     let newHeaders = new Headers(imageResponse.headers)
     newHeaders.set("Cache-Control", "public, max-age=15768000, immutable")
     newHeaders.set("CDN-Cache-Control", "public, max-age=15768000, immutable")
-    newHeaders.set("x-Non-Text-Item", "Non-text item - headers edited!")
+    newHeaders.set("x-Non-Text-Item", "Non-text item - headers successfully edited")
     // newHeaders.set("Permissions-Policy", "interest-cohort=()")
     newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
     newHeaders.set("X-Frame-Options", "SAMEORIGIN")
     newHeaders.set("X-Content-Type-Options", "nosniff")
     newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
-    newHeaders.set("cf-nonce-generator", "HIT")
     return new Response(imageResponse.body, {
       status: imageResponse.status,
       statusText: imageResponse.statusText,
