@@ -6,6 +6,9 @@
 	padding-left: 1.5rem;
 	padding-bottom: 1vh;
 }
+.billboard-div code {
+	background-color: transparent;
+}
 .billboard-title-block {
 	display: block;
 	width: 100%;
