@@ -6,7 +6,7 @@ html, body {
 	font-variant-ligatures: normal; /* if using any ligature-savvy fonts, ligatures won't work without this */
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
-	font-family: var(--sans-serif);
+	font-family: var(--serif);
 	background-color: var(--slate-100);
 	color: var(--default-light);
 	background-image: linear-gradient(
@@ -16,9 +16,15 @@ html, body {
 	);
 }
 
-/* h1, .h1, h2, .h2, h3, .h3, h4, .h4, footer {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+header, footer, table, blockquote, summary, contact-button, search-button,
+.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+.sitemap-Div, .searchDiv, .searchDivPF,
+.footnotes, .footnote-sim, .footnote-ref,
+.box, .labeled-highlight, .imgcCaption, .imghCaption, .bg-dark,
+.legal, .pokey {
 	font-family: var(--sans-serif);
-} */
+}
 
 html {
 	/* scroll-behavior: smooth; */
@@ -114,12 +120,13 @@ ul li li, ol li li, ul li li li, ol li li li {
 	margin-bottom: 0.25rem;
 }
 
-ul li li {
-	list-style-type: circle;
+ul li li, ol li li {
+	list-style-type: disc;
 }
 
-ol li li {
-	list-style-type: disc;
+ul li li::marker, ol li li::marker,
+ul li li li:marker, ol li li li:marker {
+	color: var(--slate-400);
 }
 
 ul li li li, ol li li li {
@@ -200,5 +207,9 @@ li p {
 	}
 	hr {
 		background-color: white;
+	}
+	ul li li::marker, ol li li::marker,
+	ul li li li:marker, ol li li li:marker {
+		color: var(--slate-500);
 	}
 }

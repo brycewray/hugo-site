@@ -1,5 +1,4 @@
 .billboard-div {
-	/* font-family: var(--sans-serif); */
 	text-align: center;
 	position: relative;
 	height: auto;
@@ -37,7 +36,6 @@
 	line-height: 1.4;
 }
 .billboard-p-text {
-	font-family: var(--sans-serif);
 	font-size: clamp(1rem, 0.25rem + 1.25vw, 1.5rem);
 	line-height: 1.25;
 	margin-top: 1.5em;

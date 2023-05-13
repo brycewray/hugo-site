@@ -33,7 +33,7 @@
 	{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $printCSS = resources.Get "css/print/print.css" | postCSS | minify -}}
+	{{- $printCSS = resources.Get "css/print/print.css" | minify -}}
 {{- end -}}
 {{- with $printCSS -}}
 	{{- if hugo.IsProduction -}}

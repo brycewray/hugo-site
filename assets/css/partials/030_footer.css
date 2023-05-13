@@ -29,6 +29,7 @@ footer div.footerWrapper div.icons-box {
 
 circle.GitHub,
 circle.RSS,
+path.Calckey,
 path.MastodonBody,
 path.Twitter,
 path.JSON,
@@ -44,6 +45,7 @@ circle.JSON {
 path.GitHub,
 circle.MastodonCircle,
 path.MastodonM,
+circle.Calckey,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
@@ -53,6 +55,7 @@ circle.JSON {
 a:hover path.GitHub,
 a:hover circle.MastodonCircle,
 a:hover path.MastodonM,
+a:hover circle.Calckey,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
@@ -90,6 +93,7 @@ a:hover path.MastodonBody {
 @media (prefers-color-scheme: dark) {
 	circle.GitHub,
 	circle.RSS,
+	path.Calckey,
 	path.MastodonBody,
 	path.Twitter,
 	path.JSON,
@@ -103,6 +107,7 @@ a:hover path.MastodonBody {
 	path.GitHub,
 	circle.MastodonCircle,
 	path.MastodonM,
+	circle.Calckey,
 	circle.Twitter,
 	circle.RSS,
 	circle.JSON {
@@ -111,6 +116,7 @@ a:hover path.MastodonBody {
 	a:hover path.GitHub,
 	a:hover circle.MastodonCircle,
 	a:hover path.MastodonM,
+	a:hover circle.Calckey,
 	a:hover circle.Twitter,
 	a:hover circle.RSS,
 	a:hover circle.JSON {

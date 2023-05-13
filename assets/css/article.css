@@ -1,7 +1,3 @@
-/* .box, .imgcCaption {
-	font-family: var(--sans-serif);
-} */
-
 .header-anchor {
 	text-decoration: none;
 	color: var(--default-light);
@@ -21,14 +17,14 @@
 }
 
 .box {
- font-size: 85%;
- display: block;
- box-sizing: border-box;
- background-color: white;
- border: 1px solid black;
- margin: 0.5em auto;
- width: 100%;
- padding: 1em 1.25em;
+	font-size: 85%;
+	display: block;
+	box-sizing: border-box;
+	background-color: white;
+	border: 1px solid black;
+	margin: 0.5em auto;
+	width: 100%;
+	padding: 1em 1.25em;
 }
 
 .box p {
@@ -49,38 +45,38 @@
 }
 
 img.containedImage {
- display: block;
- width: 100%;
- height: auto;
- padding: 0;
- margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
 }
 img.ctrImg {
- display: block;
- margin-right: auto;
- margin-left: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 .img-phn {
- width: 90%;
+	width: 90%;
 }
 
-.imgcCaption {
- padding: 0;
- margin-block-start: 0.5em;
- line-height: 1.375;
- font-size: 0.75em;
- text-align: center;
+.imgcCaption, .imghCaption {
+	padding: 0;
+	margin-block-start: 0.5em;
+	line-height: 1.375;
+	font-size: 0.75em;
+	text-align: center;
 }
 
 .punctuationExample {
- font-size: 1.5em;
- font-weight: normal;
- font-family: var(--serif);
- text-align: center;
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: var(--serif);
+	text-align: center;
 }
 
 .indentAfterLI {
- margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
+	margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
 }
 
 .indentAfterLI .box {
@@ -99,7 +95,7 @@ img.ctrImg {
 }
 
 .animate-fade {
- animation: fadeIn 750ms ease-in-out;
+	animation: fadeIn 750ms ease-in-out;
 }
 
 blockquote {
@@ -136,7 +132,7 @@ article h1, article h2, article h3, article h4 {
 article picture img {
 	height: auto;
 }
-article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *), article i:not(.red *):not(a *):not(blockquote *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
+article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
 	color: var(--gray-800); /* (vs. gray-700) */
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
