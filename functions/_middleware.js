@@ -32,7 +32,7 @@ export async function onRequest(context) {
 
 	const nonce = generateNonce()
 
-	try { // try-catch so a function doesn't crash the site
+	try { // try-catch so an error doesn't crash the site
 
 		let imageResponse = await context.next()
 		let type = imageResponse.headers.get("Content-Type") || ""
