@@ -6,7 +6,7 @@ author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
 ---
 
-This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
+This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **external services**, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Cloudflare
 
@@ -15,12 +15,6 @@ This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com) and is c
 ## Fathom Analytics
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, "[Fathom Analytics: count on it](/posts/2020/06/fathom-analytics-count-on-it/)."
-
-## Google Fonts
-
-When I learned that the use of [Google Fonts](https://fonts.google.com) *served from* Google will transmit a visitor's apparently **not** anonymized IP address[^Issue1495] to Google, I quit using this product (and suggesting to others that they use it) and, instead, served from my own site any typefaces that aren't part of the so-called "[system fonts stack](/posts/2018/10/web-typography-part-2/)."
-
-[^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, "[GDPR compliance](https://github.com/google/fonts/issues/1495)."
 
 ## Mastodon
 
