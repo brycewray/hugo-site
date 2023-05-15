@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 .header-anchor {
 	text-decoration: none;
 	color: var(--default-light);

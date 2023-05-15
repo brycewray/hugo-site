@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 code, article code, .box code {
 	background-color: var(--bg-lt);
 }

@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 .bg-dark {
 	margin-top: 2.5rem;
 	background-color: var(--slate-300);
