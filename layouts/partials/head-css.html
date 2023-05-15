@@ -2,22 +2,31 @@
 {{- $cssP := "" -}}
 {{- $cssM := "" -}}
 {{- $printCSS := "" -}}
-{{- $scssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
+{{- $scssOptions := dict "transpiler" "dartsass" -}}
+{{- $scssComp := dict "outputStyle" "compressed" -}}
+{{- $scssOptionsComp := merge $scssComp (dict "targetPath" "index.min.css") -}}
+{{- $scssOptionsPrint := $scssOptions -}}
+{{- $scssOptionsPrintComp := merge $scssComp (dict "targetPath" "print.min.css") -}}
 {{- $Styling := .Site.Params.Styling -}}
 
 {{- if eq $Styling "SCSS" -}}
-	{{- $scssOptions = merge $scssOptions (dict "targetPath" "index.min.css") -}}
-	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions -}}
+	{{- if hugo.IsProduction -}}
+		{{- $scssOptions = merge $scssOptions $scssOptionsComp -}}
+		{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions | fingerprint -}}
+	{{- else -}}
+		{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions -}}
+	{{- end -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
 	{{- $cssP = resources.Match "css/partials/*.css" | resources.Concat "css/partials.css" -}}
 	{{- $cssM = resources.Match "css/*.css" | resources.Concat "css/main.css" -}}
-	{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" | minify -}}
-{{- end -}}
-{{- with $css }}
 	{{- if hugo.IsProduction -}}
-		{{- $css = $css | fingerprint -}}
-	{{- end }}
+		{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" | minify | fingerprint -}}
+	{{- else -}}
+		{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" -}}
+	{{- end -}}
+{{- end -}}
+{{- if ne $css "" }}
 	{{- /*
 	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 	<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
@@ -29,15 +38,20 @@
 
 {{- /* for those who've requested CSS for printing */ -}}
 {{- if eq $Styling "SCSS" -}}
-	{{- $scssOptionsPrint := merge $scssOptions (dict "targetPath" "css/print/print.min.css") -}}
-	{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint -}}
+	{{- if hugo.IsProduction -}}
+		{{- $scssOptionsPrint := merge $scssOptionsPrint $scssOptionsPrintComp -}}
+		{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
+	{{- else -}}
+		{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint -}}
+	{{- end -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $printCSS = resources.Get "css/print/print.css" | minify -}}
-{{- end -}}
-{{- with $printCSS -}}
 	{{- if hugo.IsProduction -}}
-		{{- $printCSS = $printCSS | fingerprint -}}
-	{{- end }}
+		{{- $printCSS = resources.Get "css/print/print.css" | minify | fingerprint -}}
+	{{- else -}}
+		{{- $printCSS = resources.Get "css/print/print.css" -}}
+	{{- end -}}
+{{- end -}}
+{{- if ne $printCSS "" -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}
