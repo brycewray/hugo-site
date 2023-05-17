@@ -40,7 +40,7 @@ export async function onRequest(context) {
 			// Not text. Don't modify.
 			let newHeaders = new Headers(imageResponse.headers)
 			newHeaders.set("Cache-Control", "public, max-age=15768000, immutable")
-			newHeaders.set("CDN-Cache-Control", "public, max-age=15768000, immutable")
+			// newHeaders.set("CDN-Cache-Control", "public, max-age=15768000, immutable")
 			newHeaders.set("x-Non-Text-Item", "Non-text item - headers successfully edited")
 			// newHeaders.set("Permissions-Policy", "interest-cohort=()")
 			newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
@@ -125,7 +125,7 @@ export async function onRequest(context) {
 		newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
 		if (ttl) {
 			newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
-			newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
+			// newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
 			newHeaders.set("X-TTL-Setting", ttl)
 		} else {
 			newHeaders.set("Cache-Control", "public, max-age=0, must-revalidate")
