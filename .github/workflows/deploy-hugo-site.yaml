@@ -8,7 +8,8 @@ on:
 env:
   HUGO_VERSION: 0.111.3 # will get Extended Version below
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
-  PAGEFIND_VERSION: 0.12.0 #
+  PAGEFIND_VERSION: 0.12.0
+  # NODE_VERSION: 18.16.0 # (CFP v2 build image default as of 2023-05-17)
   STYLING: SCSS # choices: 'SCSS' and 'VCSS' (vanilla CSS)
 
 
