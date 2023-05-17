@@ -83,3 +83,6 @@ Finally, concerning the not-so-hot review I [recently](/posts/2023/03/publish-or
 > Cloudflare Pages would've been at or near the top of this list but for its ancient, problematic build image.
 
 So, with v2 about to fix that problem before long, you can correctly assume CFP's part of that review will get a significant revamp, and its ranking therein a significant boost, in the not-too-distant future.
+
+**Update, 2023-05-17**: [Cloudflare announced](https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/) today that v2's beta test is now public.
+{.box}

@@ -140,6 +140,9 @@ Builds tend to be slow, one of several bad results from CFP's badly outdated bui
 <strong class="red">Update, 2023-05-10</strong>: The CFP build image update is now back on track, and currently is in a private beta test. I'm one of those testing it, and [can tell you](/posts/2023/05/cloudflare-pages-more-attractive-home-hugo-sites/) it's going to be a **big** improvement (**especially for Hugo users**) which, when implemented, will considerably improve CFP's overall ratings herein.
 {.box}
 
+**Update, 2023-05-17**: [Cloudflare announced](https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/) today that the updated build image's beta test is now public.
+{.box}
+
 Limits:
 - 500 deployments per month.
 - Unlimited bandwidth.

@@ -80,3 +80,6 @@ Still, if that *did* happen, it would completely eliminate the need for *any* en
 
 **Update, 2023-05-09**: I [have learned](/posts/2023/05/cloudflare-pages-more-attractive-home-hugo-sites/) that the new Cloudflare Pages build image --- now in a private beta test, after a few months of delay (due to other Cloudflare projects which took development precedence) --- **will** include the capability to specify Embedded Dart Sass through an env var.
 {.box}
+
+**Update, 2023-05-17**: [Cloudflare announced](https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/) today that the "v2" build image's beta test is now public.
+{.box}
