@@ -26,7 +26,7 @@ mv public/posts/index.json public/index-excerpts.json
 
 echo "Running search..."
 
-npm_config_yes=true npx pagefind@latest --source public --bundle-dir ../static/_pagefind
+npm_config_yes=true npx pagefind@latest --source public
 
 echo "-----------------------"
 
