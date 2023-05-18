@@ -22,21 +22,12 @@
     "hugoenv": "exec-bin bin/hugo/hugo env",
     "hugonew": "exec-bin bin/hugo/hugo new",
     "hugometrics": "exec-bin bin/hugo/hugo --templateMetrics --templateMetricsHints",
-		"hugoversion": "exec-bin bin/hugo/hugo version",
+    "hugoversion": "exec-bin bin/hugo/hugo version",
     "start": "NODE_ENV=development npm-run-all clean dev:hugo",
     "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
     "testbuildexec:hugo": "npm run devexec:hugo -- --minify --environment production",
     "testbuild": "npm-run-all clean build:prelim move-excerpts testbuildexec:hugo",
     "testbuildpf": "npm-run-all build:prelim move-excerpts testbuild:search testbuildexec:hugo"
-  },
-  "devDependencies": {
-    "exec-bin": "^1.0.0",
-    "hugo-installer": "^4.0.1",
-    "move-cli": "^2.0.0",
-    "npm-run-all": "^4.1.5",
-    "pagefind": "^0.12.0",
-    "rimraf": "^5.0.1",
-    "wrangler": "^3.0.0"
   }
 }
