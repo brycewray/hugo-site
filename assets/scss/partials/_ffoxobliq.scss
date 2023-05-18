@@ -1,6 +1,6 @@
 /* === handling obliquing issues in Firefox */
 
-@supports (-moz-appearance: none) {
+@-moz-document url-prefix() {
 	.italic, i, cite, em, var, address, dfn, h3, .h3 {
 		font-style: oblique 8deg;
 	}
