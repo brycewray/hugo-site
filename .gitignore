@@ -62,3 +62,12 @@ static/_pagefind
 bin/hugo
 
 _z
+
+# Re possible config files
+# per Discord discussions
+# in 2023-05
+cfpages.json
+cfpages.jsonc
+cfpages.yaml
+cfpages.toml
+cfpages.yml
