@@ -1,6 +1,7 @@
 #!/bin/bash
 # # Always run with `bash cfp-build.sh` on CFP!
 
+echo "                       "
 echo "***********************"
 echo "Beginning shell script."
 echo "***********************"
