@@ -40,9 +40,7 @@ export async function onRequest(context) {
 			// Not text. Don't modify.
 			let newHeaders = new Headers(imageResponse.headers)
 			newHeaders.set("Cache-Control", "public, max-age=15768000, immutable")
-			// newHeaders.set("CDN-Cache-Control", "public, max-age=15768000, immutable")
 			newHeaders.set("x-Non-Text-Item", "Non-text item - headers successfully edited")
-			// newHeaders.set("Permissions-Policy", "interest-cohort=()")
 			newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
 			newHeaders.set("X-Frame-Options", "SAMEORIGIN")
 			newHeaders.set("X-Content-Type-Options", "nosniff")
@@ -94,10 +92,7 @@ export async function onRequest(context) {
 		.replace(/<style/g, `<style nonce="${nonce}"`)
 
 		let ttl = undefined
-		let filesRegexMatch = false
-		// let cache = caches.default
 		let url = new URL(context.request.url)
-		// let shouldCache = false
 		let jsStuff = false
 		let svgStuff = false
 
@@ -106,9 +101,7 @@ export async function onRequest(context) {
 		const svgRegex = /(.*\.(svg))$/
 
 		if (url.pathname.match(filesRegex)) {
-			// shouldCache = true
 			ttl = 31536000
-			filesRegexMatch = true
 		}
 		if (url.pathname.match(jsRegex)) {
 			jsStuff = true
@@ -118,15 +111,12 @@ export async function onRequest(context) {
 		}
 
 		let newHeaders = new Headers(response.headers)
-		// newHeaders.set("Permissions-Policy", "interest-cohort=()")
 		newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
 		newHeaders.set("X-Frame-Options", "SAMEORIGIN")
 		newHeaders.set("X-Content-Type-Options", "nosniff")
 		newHeaders.set("Referrer-Policy", "no-referrer, strict-origin-when-cross-origin")
 		if (ttl) {
 			newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable")
-			// newHeaders.set("CDN-Cache-Control", "public, max-age=" + ttl + ", immutable")
-			// newHeaders.set("X-TTL-Setting", ttl)
 		} else {
 			newHeaders.set("Cache-Control", "public, max-age=0, must-revalidate")
 			newHeaders.set("Content-Security-Policy", `base-uri 'self' https://*.brycewray.com; connect-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.cloudflareinsights.com https://cloudflareinsights.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.mastodon.social https://*.usefathom.com; default-src 'self'; frame-ancestors 'self' https://*.brycewray.com https://*.youtube-nocookie.com; font-src 'self' https://*.brycewray.com data:; form-action 'self'; frame-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com; img-src 'self' https://*.brycewray.com https://*.usefathom.com https://*.cloudinary.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.twimg.com https://*.mastodon.social https://*.google.com https://translate.googleapis.com data:; media-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.twimg.com https://*.mastodon.social data:; object-src 'none'; script-src 'self' 'nonce-${nonce}' 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' 'nonce-${nonce}'; style-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com data: https://*.google.com https://translate.googleapis.com 'nonce-${nonce}'; report-uri https://brycewray.report-uri.com/r/d/csp/reportOnly;`)
