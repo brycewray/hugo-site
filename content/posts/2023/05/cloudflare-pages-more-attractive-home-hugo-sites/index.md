@@ -11,7 +11,7 @@ This site has lived on [Cloudflare Pages](https://pages.cloudflare.com) for most
 
 <!--more-->
 
-**Note**: If you've already read my uncomplimentary assessment of CFP in "['Publish or perish' in 2023](/posts/2023/03/publish-or-perish-2023/)" and wonder how that can possibly square with what I said above . . . well, I'll get to that at the end.
+**Update, 2023-05-18**: If, prior to today, you'd already read my uncomplimentary assessment of CFP in "['Publish or perish' in 2023](/posts/2023/03/publish-or-perish-2023/)" and wondered how it can possibly square with what I said above, please be advised that I've now considerably revised that post due to what I explain herein.
 {.box}
 
 Last July, I closed a [totally unrelated post](/posts/2022/07/using-dart-sass-hugo-some-data-using-github-actions/) with something I'd read about the CFP platform:
@@ -71,18 +71,6 @@ Well, let me quote something else I said to the Cloudflare folks on the Discord 
 Those two features combine to constitute a **very** big deal for Hugo users who host on CFP.
 
 While I could obtain no ETA for v2's release to general availability --- it's still in that private beta --- I was told GA will come "sooner than you think." Rest assured I will watch this situation very closely, and let you know when that release occurs.
-
-----
-
-Finally, concerning the not-so-hot review I [recently](/posts/2023/03/publish-or-perish-2023/) gave Cloudflare Pages as compared to other hosts, keep in mind that (a.) the review was about using these hosts strictly through their native UIs[^CI] and (b.) I **did** make these specific points about CFP:
-
-[^CI]: By contrast: for nearly a year now, I've maintained this site's CFP presence almost exclusively through a GitHub Action rather than the native UI, gaining the benefits of both Embedded Dart Sass (when applicable) and deep-cloning of the site repo for full `.GitInfo` data.
-
-> The effort to update the [CFP] build image, formerly slated for completion by now, is indefinitely delayed. Until that situation changes, **I don't recommend** using CFP through its native UI (*but* would add that doing so through *CI/CD* is fine and, in fact, is probably the best solution among any of these if one were going to use CI/CD rather than any host's native UI).
-
-> Cloudflare Pages would've been at or near the top of this list but for its ancient, problematic build image.
-
-So, with v2 about to fix that problem before long, you can correctly assume CFP's part of that review will get a significant revamp, and its ranking therein a significant boost, in the not-too-distant future.
 
 **Update, 2023-05-17**: [Cloudflare announced](https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/) today that v2's beta test is now public.
 {.box}
