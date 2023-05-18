@@ -30,4 +30,4 @@ With today's [release of macOS 13.4](https://www.macrumors.com/2023/05/18/apple-
 
 [^market]: True, Chrome's share of the browser market is ridiculously massive, but don't discount the importance of Safari's Webkit. It's the only browser engine Apple currently allows on any iDevices, and they constitute a massive quantity of the world's phones, especially in North America and Europe.
 
-This means it's now up to Mozilla to bring native CSS nesting compatibility to the Gecko engine which enables Firefox; [this](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037) is the bug report to watch, as Mozilla engineers try to catch up with their competitors.
+So, now, it's up to Mozilla to bring native CSS nesting compatibility to the Gecko engine which enables Firefox; [this](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037) is the bug report to watch, as Mozilla engineers try to catch up with their competitors.
