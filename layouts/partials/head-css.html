@@ -1,4 +1,5 @@
 {{- $css := "" -}}
+{{- $printCSS := "" -}}
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
 {{- $scssOptionsPrint := $scssOptions -}}
 {{- $scssComp := dict "outputStyle" "compressed" -}}
@@ -71,22 +72,17 @@
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
+		{{- /*
+			minify/fingerprint everything even in dev,
+			due to Safari caching weirdness
+		*/ -}}
 		{{- if eq $Styling "SCSS" -}}
-			{{/*  {{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".min.css" )) -}}  */}}
-			{{- if hugo.IsProduction -}}
-				{{- $scssOptions = merge $scssOptions $scssComp -}}
-				{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".min.css" )) -}}
-				{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $scssOptions | fingerprint -}}
-			{{- else -}}
-				{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
-				{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $scssOptions -}}
-			{{- end -}}
+			{{- $scssOptions = merge $scssOptions $scssComp -}}
+			{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".min.css" )) -}}
+			{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $scssOptions | fingerprint -}}
 		{{- end -}}
 		{{- if eq $Styling "VCSS" -}}
-			{{- $css = resources.Get (print "css/" $fileName ".css") -}}
-			{{- if hugo.IsProduction -}}
-				{{- $css = $css | minify | fingerprint -}}
-			{{- end }}
+			{{- $css = resources.Get (print "css/" $fileName ".css") | minify | fingerprint -}}
 		{{- end -}}
 		{{- if ne $css "" -}}
 			<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -97,20 +93,12 @@
 
 {{- /* for those who've requested CSS for printing */ -}}
 {{- if eq $Styling "SCSS" -}}
-	{{- if hugo.IsProduction -}}
-		{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp -}}
-		{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.min.css") -}}
-		{{- $printCSS = resources.Get "scss/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
-	{{- else -}}
-		{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.css") -}}
-		{{- $printCSS = resources.Get "scss/print.scss" | toCSS $scssOptionsPrint -}}
-	{{- end -}}
+	{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp -}}
+	{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.min.css") -}}
+	{{- $printCSS = resources.Get "scss/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $printCSS = resources.Get "css/print.css" -}}
-	{{- if hugo.IsProduction -}}
-		{{- $printCSS = $printCSS | minify | fingerprint -}}
-	{{- end -}}
+	{{- $printCSS = resources.Get "css/print.css" | minify | fingerprint -}}
 {{- end -}}
 {{- if ne $printCSS "" -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
