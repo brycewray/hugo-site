@@ -78,10 +78,6 @@ export async function onRequest(context) {
 		)
 		.replace(/<link rel="preload"/g, `<link nonce="${nonce}" rel="preload"`)
 		.replace(
-			'guitar-thriving.brycewray.com/script.js"',
-			`guitar-thriving.brycewray.com/script.js" nonce="${nonce}"`
-		)
-		.replace(
 			'cdn.usefathom.com/script.js"',
 			`cdn.usefathom.com/script.js" nonce="${nonce}"`
 		)
@@ -93,22 +89,12 @@ export async function onRequest(context) {
 
 		let ttl = undefined
 		let url = new URL(context.request.url)
-		let jsStuff = false
-		let svgStuff = false
 
 		const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/
-		// const jsRegex = /(.*\.(js))$/
-		// const svgRegex = /(.*\.(svg))$/
 
 		if (url.pathname.match(filesRegex)) {
 			ttl = 31536000
 		}
-		// if (url.pathname.match(jsRegex)) {
-		// 	jsStuff = true
-		// }
-		// if (url.pathname.match(svgRegex)) {
-		// 	svgStuff = true
-		// }
 
 		let newHeaders = new Headers(response.headers)
 		newHeaders.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload")
@@ -124,12 +110,6 @@ export async function onRequest(context) {
 			newHeaders.set("X-XSS-Protection", "1")
 		}
 		newHeaders.set("CF-nonce-generator", "HIT")
-		// if (jsStuff) {
-		// 	newHeaders.set("Content-Type", "application/javascript; charset=utf-8")
-		// }
-		// if (svgStuff) {
-		// 	newHeaders.set("Content-Type", "image/svg+xml; charset=utf-8")
-		// }
 
 		return new Response(html, {
 			status: response.status,
