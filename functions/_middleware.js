@@ -60,15 +60,15 @@ export async function onRequest(context) {
 			'src="https://ajax.cloudflare.com',
 			`nonce="${nonce}" src="https://ajax.cloudflare.com`
 		)
-		.replace(
+		.replace( // single opening quotation mark
 			`src='https://static.cloudflareinsights.com`,
 			`nonce="${nonce}" src='https://static.cloudflareinsights.com`
 		)
-		.replace(
+		.replace( // double opening quotation mark
 			`src="https://static.cloudflareinsights.com`,
 			`nonce="${nonce}" src="https://static.cloudflareinsights.com`
 		)
-		.replace(
+		.replace( // if using CF's addy obfuscation
 			'cloudflare-static/email-decode.min.js"',
 			`cloudflare-static/email-decode.min.js" nonce="${nonce}"`
 		)
@@ -87,7 +87,7 @@ export async function onRequest(context) {
 		)
 		.replace(/<style/g, `<style nonce="${nonce}"`)
 
-		let ttl = undefined
+		let ttl
 		let url = new URL(context.request.url)
 
 		const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/
