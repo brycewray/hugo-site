@@ -13,8 +13,10 @@ footer {
 	p {
 		line-height: 1.5em; // definitely em, not rem, here
 		code {
+			background-color: #d3d3d3;
 			background-color: var.$slate-200;
 			@media (prefers-color-scheme: dark) {
+				background-color: gray;
 				background-color: var.$slate-700;
 			}
 		}
@@ -55,14 +57,6 @@ path.RSS {
 	}
 }
 
-circle.Twitter,
-circle.JSON {
-	fill: var.$black;
-	@media (prefers-color-scheme: dark) {
-		fill: var.$blue-300;
-	}
-}
-
 path.GitHub,
 circle.MastodonCircle,
 path.MastodonM,
@@ -70,9 +64,9 @@ circle.Calckey,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: var.$default-light-link;
+	fill: var(--default-light-link);
 	@media (prefers-color-scheme: dark) {
-		fill: var.$default-dark-link;
+		fill: var(--default-dark-link);
 	}
 }
 
@@ -83,9 +77,9 @@ a:hover circle.Calckey,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var.$default-light-link-afh;
+	fill: var(--default-light-link-afh);
 	@media (prefers-color-scheme: dark) {
-		fill: var.$default-dark-link-afh;
+		fill: var(--default-dark-link-afh);
 	}
 }
 
@@ -93,14 +87,3 @@ path.MastodonBody,
 path.MastodonM {
 	fill-rule:nonzero;
 }
-
-// // needed only if using darker bkgd in dark mode
-// a:hover circle.GitHub,
-// a:hover path.Twitter,
-// a:hover path.RSS,
-// a:hover path.JSON,
-// a:hover path.MastodonBody {
-// 	@media (prefers-color-scheme: dark) {
-// 		fill: var.$white;
-// 	}
-// }

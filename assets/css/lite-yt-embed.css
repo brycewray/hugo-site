@@ -1,10 +1,11 @@
 @charset 'utf-8';
 
 lite-youtube {
-	--gray-400: #9ca3af;
+	--gray-400: oklch(71.5% 0.019 264);
 	background-color: black;
 	position: relative;
-	border: 1px solid var(--gray-700);
+	border: 1px solid;
+	border-color: var(--gray-700, gray);
 	display: block;
 	contain: content;
 	background-position: center center;
@@ -92,14 +93,14 @@ lite-youtube.lyt-activated > .lty-playbtn {
 }
 
 .lyt-disclaimer .red {
-	color: var(--red-700);
+	color: var(--red-700, red);
 }
 
 @media (prefers-color-scheme: dark) {
 	lite-youtube {
-		border: 1px solid var(--gray-400);
+		border-color: var(--gray-400, #d3d3d3);
 	}
 	.lyt-disclaimer .red {
-		color: var(--red-300);
+		color: var(--red-300, #fa8072);
 	}
 }

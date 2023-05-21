@@ -11,6 +11,10 @@ footer p {
 	line-height: 1.5em; /* definitely em, not rem, here */
 }
 
+footer p code {
+	background-color: var(--slate-200, #d3d3d3);
+}
+
 footer div.footerWrapper {
 	margin: 0 auto;
 	width: 80%;
@@ -91,6 +95,9 @@ a:hover path.MastodonBody {
 }
 
 @media (prefers-color-scheme: dark) {
+	footer p code P{
+		background-color: var(--slate-700, gray);
+	}
 	circle.GitHub,
 	circle.RSS,
 	path.Calckey,
@@ -122,13 +129,4 @@ a:hover path.MastodonBody {
 	a:hover circle.JSON {
 		fill: var(--default-dark-link-afh);
 	}
-	/* needed only if using darker bkgd in dark mode
-	a:hover circle.GitHub,
-	a:hover path.Twitter,
-	a:hover path.RSS,
-	a:hover path.JSON,
-	a:hover path.MastodonBody {
-		fill: white;
-	}
-	*/
 }

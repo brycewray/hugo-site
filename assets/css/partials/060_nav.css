@@ -1,5 +1,5 @@
 header, .nav, .nav-Menu {
-	background-color: var(--slate-300);
+	background-color: var(--slate-300, #d3d3d3);
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 }
 .nav-Toggle svg {
 	width: 1.5rem;
-	fill: var(--slate-800);
+	fill: var(--slate-800, #a9a9a9);
 }
 .nav-Toggle .close {
 	display: none;
@@ -65,7 +65,7 @@ header {
 	color: black;
 }
 .nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-	color: var(--slate-600);
+	color: var(--slate-600, gray);
 }
 /* .nav-Menu svg {
 	width: 1.5rem;
@@ -87,6 +87,16 @@ header {
 }
 #nav-Checkbox:checked ~ ul.nav-Menu {
 	padding-bottom: 1rem;
+}
+
+circle.NavIcon {
+	fill: var(--blue-500, blue);
+}
+a:hover circle.NavIcon {
+	fill: var(--gray-500, gray);
+}
+path.NavIcon {
+	fill: white;
 }
 
 @media screen and (min-width: 1024px) {
@@ -117,15 +127,15 @@ header {
 
 @media (prefers-color-scheme: dark) {
 	header, .nav, .nav-Menu {
-		background-color: var(--slate-800);
+		background-color: var(--slate-800, #a9a9a9);
 	}
 	.nav-Toggle svg {
-		fill: var(--slate-50);
+		fill: var(--slate-050, #d3d3d3);
 	}
 	.nav-Menu a {
 		color: white;
 	}
 	.nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-		color: var(--slate-200);
+		color: var(--slate-200, #c0c0c0);
 	}
 }

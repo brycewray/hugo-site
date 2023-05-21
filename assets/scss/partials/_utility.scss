@@ -4,8 +4,10 @@
 	text-align: center;
 }
 .red {
+	color: red;
 	color: var.$red-700;
 	@media (prefers-color-scheme: dark) {
+		color: #fa8072;
 		color: var.$red-300;
 	}
 }

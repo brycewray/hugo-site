@@ -2,9 +2,9 @@
 @use 'partials/variables' as var;
 
 code, article code, .box code {
-	background-color: var(--bg-lt);
+	background-color: var(--bg-lt, #708090);
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--bg-dk);
+		background-color: var(--bg-dk, #d3d3d3);
 	}
 }
 
@@ -57,8 +57,10 @@ article .footnotes li code {
 }
 
 article blockquote code {
+	color: #2f4f4f;
 	color: var.$slate-800;
 	@media (prefers-color-scheme: dark) {
+		color: #d3d3d3;
 		color: var.$slate-300;
 	}
 }

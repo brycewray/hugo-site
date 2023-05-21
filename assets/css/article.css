@@ -6,7 +6,7 @@
 }
 
 .header-anchor:focus, .header-anchor:hover, .header-anchor:active {
-	color: var(--blue-700);
+	color: var(--default-light-link);
 	text-decoration: underline;
 	text-decoration-thickness: var(--textDcThick);
 	text-underline-offset: var(--textUnOffst);
@@ -39,11 +39,13 @@
 }
 
 .box code {
-	background-color: var(--slate-100);
+	background-color: var(--slate-100, #d3d3d3);
 }
 
+/* box a code -- needed only for dark mode */
+
 .box .red {
-	color: var(--red-600);
+	color: var(--red-600, red);
 }
 
 img.containedImage {
@@ -101,8 +103,8 @@ img.ctrImg {
 }
 
 blockquote {
-	border-left: 4px solid var(--slate-400);
-	color: var(--gray-550);
+	border-left: 4px solid var(--slate-400, gray);
+	color: var(--gray-550, gray);
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
@@ -135,40 +137,40 @@ article picture img {
 	height: auto;
 }
 article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	color: var(--gray-800); /* (vs. gray-700) */
+	color: var(--gray-800, #a9a9a9); /* (vs. gray-700) */
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-	color: var(--gray-600); /* (vs. gray-550) */
+	color: var(--gray-600, gray); /* (vs. gray-550) */
 }
 
 @media (prefers-color-scheme: dark) {
 	.header-anchor {
 		color: var(--default-dark);
 	}
-	.header-anchor:active {
-		color: var(--blue-300);
+	.header-anchor:active, .header-anchor:focus, .header-anchor:hover {
+		color: var(--default-dark-link);
 	}
 	blockquote {
 		/* border-left is same color */
-		color: var(--gray-400);
+		color: var(--gray-400, #d3d3d3);
 	}
 	.box {
-		background-color: var(--slate-800);
-		border: 1px solid var(--gray-200);
+		background-color: var(--slate-800, #2f4f4f);
+		border: 1px solid var(--gray-200, #d3d3d3);
 	}
 	.box code {
-		background-color: var(--slate-600);
+		background-color: var(--slate-600, #708090);
 	}
 	.box a code {
-		background-color: var(--slate-700);
+		background-color: var(--slate-700, #708090);
 	}
 	.box .red {
-		color: var(--red-400);
+		color: var(--red-400, #fa8072);
 	}
-	article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *), article i:not(.red *):not(a *):not(blockquote *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-		color: var(--gray-200); /* (vs. gray-400) */
+	article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
+		color: var(--gray-200, #d3d3d3); /* (vs. gray-400) */
 	}
 	article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-		color: var(--gray-350); /* (vs. gray-400) */
+		color: var(--gray-200, #d3d3d3); /* (vs. gray-400) */
 	}
 }

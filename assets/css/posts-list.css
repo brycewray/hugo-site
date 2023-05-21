@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 .posts-pagerGray {
-	color: var(--gray-300);
+	color: var(--gray-300, #d3d3d3);
 }
 .posts-pagerThing {
 	display: flex;
@@ -81,20 +81,20 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: var(--gray-300);
+	color: var(--gray-300, #d3d3d3);
 }
 
 path.FirstLast {
-	--gray-400: #9ca3af;
-	fill: var(--gray-400);
+	--gray-400: oklch(71.5% 0.019 264);
+	fill: var(--gray-400, #d3d3d3);
 }
 
 path.NextPrev {
-	fill: var(--blue-700);
+	fill: var(--default-light-link);
 }
 
 a:hover path.NextPrev {
-	fill: var(--blue-800);
+	fill: var(--default-light-link-afh);
 }
 
 @media screen and (min-width: 768px) {
@@ -121,9 +121,9 @@ a:hover path.NextPrev {
 		background-color: white;
 	}
 	path.NextPrev {
-		fill: var(--blue-300);
+		fill: var(--default-dark-link);
 	}
 	a:hover path.NextPrev {
-		fill: var(--blue-200);
+		fill: var(--default-dark-link-afh);
 	}
 }

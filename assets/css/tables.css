@@ -1,9 +1,9 @@
 @charset 'utf-8';
 
 table {
-	--sky-100: #e0f2fe;
-	--emerald-50: #ecfdf5;
-	--emerald-900: #064e3b;
+	--sky-100: oklch(95% 0.025 237);
+	--emerald-050: oklch(98% 0.021 162);
+	--emerald-900: oklch(38% 0.073 162);
 }
 
 td {
@@ -29,10 +29,10 @@ table.noborders td img {
 	margin: 0;
 }
 table.noborders tr:nth-child(even) {
-	background-color: var(--sky-100);
+	background-color: var(--sky-100, #f0f8ff);
 }
 table.noborders thead {
-	background-color: var(--blue-900);
+	background-color: var(--blue-900, #00008b);
 	color: white;
 }
 table.noborders thead td {
@@ -64,7 +64,7 @@ table.ulysses {
 	font-size: var(--text-xs);
 }
 table.ulysses thead th {
-	background-color: var(--blue-800);
+	background-color: var(--blue-800, #00008b);
 	border: 1px solid black;
 	color: white;
 }
@@ -82,7 +82,7 @@ table.ulysses tr:nth-child(odd) {
 	background-color: white;
 }
 table.ulysses tr:nth-child(even) {
-	background-color: var(--emerald-50);
+	background-color: var(--emerald-050, #f0fff0);
 }
 
 @media screen and (min-width: 768px) {
@@ -101,11 +101,11 @@ table.ulysses tr:nth-child(even) {
 }
 @media (prefers-color-scheme: dark) {
 	table.noborders tr {
-		background-color: var(--gray-200);
+		background-color: var(--gray-200, #f5f5f5);
 		color: black;
 	}
 	table.noborders thead tr {
-		background-color: var(--blue-900);
+		background-color: var(--blue-900, #00008b);
 	}
 	table.ulysses thead th {
 		border: 1px solid white;
@@ -115,9 +115,9 @@ table.ulysses tr:nth-child(even) {
 		color: white;
 	}
 	table.ulysses tr:nth-child(odd) {
-		background-color: var(--slate-700);
+		background-color: var(--slate-700, gray);
 	}
 	table.ulysses tr:nth-child(even) {
-		background-color: var(--emerald-900);
+		background-color: var(--emerald-900, #006400);
 	}
 }

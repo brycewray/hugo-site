@@ -7,11 +7,11 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var(--serif);
-	background-color: var(--slate-100);
+	background-color: var(--slate-100, #d3d3d3);
 	color: var(--default-light);
 	background-image: linear-gradient(
-		var(--slate-600),
-		var(--slate-300) 6em,
+		var(--slate-600, #b0c4de),
+		var(--slate-300, #d3d3d3) 6em,
 		transparent 10em
 	);
 }
@@ -126,7 +126,7 @@ ul li li, ol li li {
 
 ul li li::marker, ol li li::marker,
 ul li li li:marker, ol li li li:marker {
-	color: var(--slate-400);
+	color: var(--slate-400, gray);
 }
 
 ul li li li, ol li li li {
@@ -194,8 +194,8 @@ li p {
 		background: black;
 		color: var(--default-dark);
 		background-image: linear-gradient(
-			var(--slate-500),
-			var(--slate-800) 6em,
+			var(--slate-500, #d3d3d3),
+			var(--slate-800, gray) 6em,
 			transparent 10em
 		)
 	}
@@ -210,6 +210,6 @@ li p {
 	}
 	ul li li::marker, ol li li::marker,
 	ul li li li:marker, ol li li li:marker {
-		color: var(--slate-500);
+		color: var(--slate-500, #778899);
 	}
 }
