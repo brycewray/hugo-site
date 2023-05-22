@@ -11,7 +11,7 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$serif;
-	background-color: #d3d3d3;
+	background-color: #d5d5e5;
 	background-color: var.$slate-100;
 	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
@@ -21,7 +21,7 @@ html, body {
 	}
 	background-image: linear-gradient(
 		#b0c4de,
-		#d3d3d3 6em,
+		#d5d5e5 6em,
 		transparent 10em
 	);
 	background-image: linear-gradient(
