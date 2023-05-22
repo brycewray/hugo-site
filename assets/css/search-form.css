@@ -1,7 +1,13 @@
 @charset 'utf-8';
 
 .searchDiv, .searchDivPF {
+	--blue-100: #dcebfe;
 	margin: 2em auto;
+}
+@supports (color: oklch(73% 0.17 192)) {
+	.searchDiv, .searchDivPF {
+		--blue-100: oklch(93.5% 0.03 252);
+	}
 }
 
 .searchDivPF {

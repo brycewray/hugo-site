@@ -44,6 +44,10 @@ contact-button {
 	display: grid;
 	place-items: center;
 	margin-top: 0.5em;
+	--blue-050: #eff6fe;
+	@supports (color: oklch(73% 0.17 192)) {
+		--blue-050: oklch(97% 0.013 252);
+	}
 	button {
 		width: 15rem;
 		padding: 0.25rem 0;

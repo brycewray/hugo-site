@@ -4,6 +4,10 @@
 // === for search form
 
 .searchDiv, .searchDivPF {
+	--blue-100: #dcebfe;
+	@supports (color: oklch(73% 0.17 192)) {
+		--blue-100: oklch(93.5% 0.03 252);
+	}
 	margin: 2em auto;
 }
 

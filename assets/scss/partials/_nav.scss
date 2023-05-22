@@ -126,6 +126,12 @@ header {
 }
 
 circle.NavIcon {
+	--blue-500: #0088f3;
+	--gray-500: #6b727f;
+	@supports (color: oklch(73% 0.17 192)) {
+		--blue-500: oklch(62.5% 0.187 252); // --blue-500: oklch(62.5% 0.187 252);
+		--gray-500: oklch(55% 0.023 264);
+	}
 	fill: var(--blue-500);
 }
 a:hover circle.NavIcon {

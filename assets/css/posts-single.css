@@ -28,13 +28,18 @@
 }
 
 contact-button {
-	display: block;
-	text-align: center;
-	margin: 1.5em auto 1em;
+	display: grid;
+	place-items: center;
+	margin-top: 0.5em;
+	--blue-050: #eff6fe;
+}
+@supports (color: oklch(73% 0.17 192)) {
+	contact-button {
+		--blue-050: oklch(97% 0.013 252);
+	}
 }
 contact-button button {
 	width: 15rem;
-	margin-top: 0.5em;
 	padding: 0.25rem 0;
 	background-color: var(--blue-700);
 	border-radius: var(--btn_radius);

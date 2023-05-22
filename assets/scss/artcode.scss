@@ -2,9 +2,9 @@
 @use 'partials/variables' as var;
 
 code, article code, .box code {
-	background-color: var(--bg-lt, #708090);
+	background-color: var(--bg-lt);
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--bg-dk, #d3d3d3);
+		background-color: var(--bg-dk);
 	}
 }
 

@@ -1,6 +1,17 @@
 @charset 'utf-8';
 @use 'partials/variables' as var;
 
+table {
+	--sky-100: #e0f2fe;
+	--emerald-050: #edfdf4;
+	--emerald-900: #134e36;
+	@supports (color: oklch(73% 0.17 192)) {
+		--sky-100: oklch(95% 0.025 237);
+		--emerald-050: oklch(98% 0.021 162);
+		--emerald-900: oklch(38% 0.073 162);
+	}
+}
+
 td {
 	vertical-align: top;
 }

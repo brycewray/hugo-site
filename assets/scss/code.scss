@@ -4,7 +4,88 @@
 // ======= START, individual items from Chroma
 
 // Background
+
 .chroma, .code-inline {
+	--gray-500: #6b727f;
+	--gray-800: #212938;
+	--zinc-300: #d4d4d7;
+	--zinc-800: #27272a;
+	--stone-300: #d6d3d2;
+	--stone-800: #292624;
+	--red-800: #971a20;
+	--red-900: #7f1d1e;
+	--orange-200: #ffd3bf;
+	--orange-300: #ffb591;
+	--orange-400: #ff8f54;
+	--orange-700: #b84f00;
+	--orange-800: #933e00;
+	--yellow-100: #fbf9c3;
+	--yellow-200: #f9f28c;
+	--yellow-700: #7e7600;
+	--yellow-800: #655f00;
+	--green-100: #defbe3;
+	--green-200: #c0f6ca;
+	--green-600: #09a34b;
+	--green-700: #147f3c;
+	--green-800: #1b6533;
+	--emerald-200: #a9f3ce;
+	--emerald-700: #157853;
+	--cyan-200: #b0efff;
+	--cyan-300: #75e5ff;
+	--cyan-600: #0093ab;
+	--cyan-700: #00768a;
+	--cyan-800: #096070;
+	--sky-200: #bde4fe;
+	--sky-300: #88d1ff;
+	--sky-700: #006b99;
+	--sky-800: #00587e;
+	--purple-200: #e6d5ff;
+	--purple-800: #6c22a8;
+	--fuchsia-300: #f1abfc;
+	--fuchsia-700: #a01fb3;
+	--rose-200: #fdccd1;
+	--rose-800: #9f133d;
+	@supports (color: oklch(73% 0.17 192)) {
+		--gray-500: oklch(55% 0.023 264);
+		--gray-800: oklch(28% 0.03 264);
+		--zinc-300: oklch(87% 0.005 286);
+		--zinc-800: oklch(27.5% 0.005 286);
+		--stone-300: oklch(87% 0.004 58);
+		--stone-800: oklch(27% 0.006 58);
+		--red-800: oklch(44% 0.16 25);
+		--red-900: oklch(39.5% 0.133 25);
+		--orange-200: oklch(90% 0.07 47);
+		--orange-300: oklch(83.5% 0.117 47);
+		--orange-400: oklch(76% 0.159 47);
+		--orange-700: oklch(55.5% 0.174 47);
+		--orange-800: oklch(47% 0.143 47);
+		--yellow-100: oklch(97% 0.069 105);
+		--yellow-200: oklch(94.5% 0.124 105);
+		--yellow-700: oklch(55.5% 0.121 105);
+		--yellow-800: oklch(47.5% 0.103 105);
+		--green-100: oklch(96% 0.043 150);
+		--green-200: oklch(92.5% 0.081 150);
+		--green-600: oklch(62.5% 0.17 150);
+		--green-700: oklch(52.5% 0.137 150);
+		--green-800: oklch(45% 0.108 150);
+		--emerald-200: oklch(90.5% 0.089 162);
+		--emerald-700: oklch(51% 0.105 162);
+		--cyan-200: oklch(91.5% 0.072 215);
+		--cyan-300: oklch(86.5% 0.115 215);
+		--cyan-600: oklch(61% 0.111 215);
+		--cyan-700: oklch(52% 0.094 215);
+		--cyan-800: oklch(45% 0.077 215);
+		--sky-200: oklch(90% 0.055 237);
+		--sky-300: oklch(83% 0.101 237);
+		--sky-700: oklch(50% 0.118 237);
+		--sky-800: oklch(43.5% 0.099 237);
+		--purple-200: oklch(90% 0.06 304);
+		--purple-800: oklch(44% 0.198 304);
+		--fuchsia-300: oklch(83.5% 0.132 322);
+		--fuchsia-700: oklch(52% 0.226 322);
+		--rose-200: oklch(89% 0.056 12);
+		--rose-800: oklch(45.5% 0.171 12);
+	}
 	color: var(--black);
 	background-color: var(--white);
 	border: 1px solid;

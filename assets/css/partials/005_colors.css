@@ -17,21 +17,26 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--slate-600: #48566a;
 	--slate-700: #334256;
 	--slate-800: #1b283a;
+	/*
 	--slate-900: #0b1828;
 	--slate-950: #000717;
 	--gray-050: #f9fafb;
+	*/
 	--gray-100: #f2f3f5;
 	--gray-200: #e6e8ec;
 	--gray-300: #d1d4da;
 	--gray-350: #b8bcc5;
 	--gray-400: #9da3af;
+	/*
 	--gray-500: #6b727f;
+	*/
 	--gray-550: #5c6372;
 	--gray-600: #4d5463;
 	--gray-650: #434a5a;
 	--gray-700: #394152;
 	--gray-800: #212938;
 	--gray-900: #111827;
+	/*
 	--gray-950: #030712;
 	--zinc-050: #fafafa;
 	--zinc-100: #f3f3f4;
@@ -69,11 +74,15 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--red-050: #fef2f1;
 	--red-100: #fee2df;
 	--red-200: #fecbc6;
+	*/
 	--red-300: #fca7a0;
 	--red-400: #f8726b;
+	/*
 	--red-500: #ee4344;
+	*/
 	--red-600: #db232f;
 	--red-700: #b91a25;
+	/*
 	--red-800: #971a20;
 	--red-900: #7f1d1e;
 	--red-950: #460a0c;
@@ -178,14 +187,18 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--sky-950: #023148;
 	--blue-050: #eff6fe;
 	--blue-100: #dcebfe;
+	*/
 	--blue-200: #bcdbfd;
 	--blue-300: #91c4fd;
+	/*
 	--blue-400: #5ba7f9;
 	--blue-500: #0088f3;
 	--blue-600: #0071cb;
+	*/
 	--blue-700: #0061b0;
 	--blue-800: #004f91;
 	--blue-900: #00437c;
+	/*
 	--blue-950: #002950;
 	--indigo-050: #eef1fe;
 	--indigo-100: #e2e6ff;
@@ -253,6 +266,7 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--rose-800: #9f133d;
 	--rose-900: #881334;
 	--rose-950: #4c0519;
+	*/
 	--default-light: var(--gray-700);
 	--default-dark: var(--gray-300);
 	--default-light-link: var(--blue-700);
@@ -272,21 +286,26 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 		--slate-600: oklch(45% 0.037 256);
 		--slate-700: oklch(37.5% 0.039 256);
 		--slate-800: oklch(27.5% 0.037 256);
+		/*
 		--slate-900: oklch(20.5% 0.038 256);
 		--slate-950: oklch(13% 0.041 256);
 		--gray-050: oklch(98.5% 0.002 264);
+		*/
 		--gray-100: oklch(96.5% 0.003 264);
 		--gray-200: oklch(93% 0.006 264);
 		--gray-300: oklch(87% 0.009 264);
 		--gray-350: oklch(79.5% 0.014 264);
 		--gray-400: oklch(71.5% 0.019 264);
+		/*
 		--gray-500: oklch(55% 0.023 264);
+		*/
 		--gray-550: oklch(50% 0.025 264);
 		--gray-600: oklch(44.5% 0.026 264);
 		--gray-650: oklch(41% 0.028 264);
 		--gray-700: oklch(37.5% 0.031 264);
 		--gray-800: oklch(28% 0.03 264);
 		--gray-900: oklch(21% 0.032 264);
+		/*
 		--gray-950: oklch(13% 0.027 264);
 		--zinc-050: oklch(98.5% 0 286);
 		--zinc-100: oklch(96.5% 0.001 286);
@@ -324,11 +343,15 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 		--red-050: oklch(97% 0.013 25);
 		--red-100: oklch(93.5% 0.031 25);
 		--red-200: oklch(88.5% 0.059 25);
+		*/
 		--red-300: oklch(81% 0.102 25);
 		--red-400: oklch(71% 0.166 25);
+		/*
 		--red-500: oklch(63.5% 0.208 25);
+		*/
 		--red-600: oklch(57.5% 0.215 25);
 		--red-700: oklch(50.5% 0.191 25);
+		/*
 		--red-800: oklch(44% 0.16 25);
 		--red-900: oklch(39.5% 0.133 25);
 		--red-950: oklch(26% 0.089 25);
@@ -433,14 +456,18 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 		--sky-950: oklch(29.5% 0.063 237);
 		--blue-050: oklch(97% 0.013 252);
 		--blue-100: oklch(93.5% 0.03 252);
+		*/
 		--blue-200: oklch(88% 0.058 252);
 		--blue-300: oklch(80.5% 0.098 252);
+		/*
 		--blue-400: oklch(71.5% 0.142 252);
 		--blue-500: oklch(62.5% 0.187 252);
 		--blue-600: oklch(54.5% 0.209 252);
+		*/
 		--blue-700: oklch(49% 0.1886 252);
 		--blue-800: oklch(42.5% 0.163 252);
 		--blue-900: oklch(38% 0.136 252);
+		/*
 		--blue-950: oklch(28% 0.087 252);
 		--indigo-050: oklch(96% 0.0179 277);
 		--indigo-100: oklch(93% 0.033 277);
@@ -508,5 +535,6 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 		--rose-800: oklch(45.5% 0.171 12);
 		--rose-900: oklch(41% 0.15 12);
 		--rose-950: oklch(27% 0.101 12);
+		*/
 	}
 }
