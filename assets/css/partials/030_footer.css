@@ -12,7 +12,7 @@ footer p {
 }
 
 footer p code {
-	background-color: var(--slate-200, #d3d3d3);
+	background-color: var(--slate-200);
 }
 
 footer div.footerWrapper {
@@ -38,12 +38,12 @@ path.MastodonBody,
 path.Twitter,
 path.JSON,
 path.RSS {
- fill: white;
+ fill: var(--white);
 }
 
 circle.Twitter,
 circle.JSON {
- fill: black;
+ fill: var(--black);
 }
 
 path.GitHub,
@@ -78,7 +78,7 @@ a:hover path.RSS,
 a:hover path.JSON,
 a:hover path.MastodonBody {
  @media (prefers-color-scheme: dark) {
-	 fill: white;
+	 fill: var(--white);
  }
 }
 */
@@ -96,7 +96,7 @@ a:hover path.MastodonBody {
 
 @media (prefers-color-scheme: dark) {
 	footer p code P{
-		background-color: var(--slate-700, gray);
+		background-color: var(--slate-700);
 	}
 	circle.GitHub,
 	circle.RSS,
@@ -105,7 +105,7 @@ a:hover path.MastodonBody {
 	path.Twitter,
 	path.JSON,
 	path.RSS {
-		fill: black;
+		fill: var(--black);
 	}
 	circle.Twitter,
 	circle.JSON {

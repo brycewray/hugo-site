@@ -28,7 +28,7 @@ search-button button:focus, search-button button:active, search-button button:ho
 	search-button button {
 		border: 1px solid var(--default-dark-link);
 		background-color: var(--default-dark-link);
-		color: black;
+		color: var(--black);
 	}
 	search-button button:focus, search-button button:active, search-button button:hover {
 		border: 1px solid var(--default-dark-link-afh);

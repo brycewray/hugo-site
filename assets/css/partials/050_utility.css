@@ -1,142 +1,142 @@
 .ctr {
 	text-align: center;
- }
- .red {
-	color: var(--red-700, red);
+}
+.red {
+	color: var(--red-700);
  }
 
- .legal {
+.legal {
 	font-size: var(--text-xs);
- }
- .pokey {
+}
+.pokey {
 	font-size: var(--text-sm);
- }
- .sansSerif {
+}
+.sansSerif {
 	font-family: var(--sans-serif);
- }
- .serif {
+}
+.serif {
 	font-family: var(--serif);
- }
- .tightLead {
+}
+.tightLead {
 	line-height: 1.25;
- }
- .nobrk, .nowrap {
+}
+.nobrk, .nowrap {
 	white-space: nowrap;
- }
- .text-nowrap {
+}
+.text-nowrap {
 	white-space: nowrap;
 	font-size: inherit;
- }
- .bg-center {
+}
+.bg-center {
 	background-position: center;
- }
- .relative {
+}
+.relative {
 	position: relative;
- }
+}
 
- .w-full {
+.w-full {
 	width: 100%;
- }
+}
 
- .h-full {
+.h-full {
 	height: 100%;
- }
+}
 
- .h-auto {
+.h-auto {
 	height: auto;
- }
+}
 
- .mx-auto {
+.mx-auto {
 	margin-right: auto;
 	margin-left: auto;
- }
+}
 
- .w-auto {
+.w-auto {
 	width: auto;
- }
+}
 
- .inline {
+.inline {
 	display: inline;
- }
+}
 
- /*
-	start, text/LH classes from TWCSS
-	=================================
- */
+/*
+start, text/LH classes from TWCSS
+=================================
+*/
 
- .text-xs {
+.text-xs {
 	font-size: 0.75rem;
 	line-height: 1rem;
- }
+}
 
- .text-sm {
+.text-sm {
 	font-size: 0.875rem;
 	line-height: 1.25rem;
- }
+}
 
- .text-base {
+.text-base {
 	font-size: 1rem;
 	line-height: 1.5rem;
- }
+}
 
- .text-lg {
+.text-lg {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
- }
+}
 
- .text-xl {
+.text-xl {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
- }
+}
 
- .text-2xl {
+.text-2xl {
 	font-size: 1.5rem;
 	line-height: 2rem;
- }
+}
 
- .text-3xl {
+.text-3xl {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
- }
+}
 
- .text-4xl {
+.text-4xl {
 	font-size: 2.25rem;
 	line-height: 2.5rem;
- }
+}
 
- .text-5xl, .text-6xl, .text-7xl, .text-8xl, .text-9xl {
+.text-5xl, .text-6xl, .text-7xl, .text-8xl, .text-9xl {
 	line-height: 1;
- }
+}
 
- .text-5xl {
+.text-5xl {
 	font-size: 3rem;
- }
+}
 
- .text-6xl {
+.text-6xl {
 	font-size: 3.75rem;
- }
+}
 
- .text-7xl {
+.text-7xl {
 	font-size: 4.5rem;
- }
+}
 
- .text-8xl {
+.text-8xl {
 	font-size: 6rem;
- }
+}
 
- .text-9xl {
+.text-9xl {
 	font-size: 8rem;
- }
+}
 
- /* ===============================
-	 end, text/LH classes from TWCSS
- */
+/* ===============================
+	end, text/LH classes from TWCSS
+*/
 
- .mono {
+.mono {
 	font-family: var(--monospaced);
- }
+}
 
- .sr-only {
+.sr-only {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -146,16 +146,16 @@
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border-width: 0;
- }
+}
 
- @media (prefers-color-scheme: dark) {
-	 red {
-		 color: var(--red-300, #fa8072);
-	 }
- }
-
-	@media screen and (min-width: 768px) {
-	 .img-phn {
-		 width: 50%;
-	 }
+@media (prefers-color-scheme: dark) {
+	red {
+		color: var(--red-300);
 	}
+}
+
+@media screen and (min-width: 768px) {
+	.img-phn {
+		width: 50%;
+	}
+}

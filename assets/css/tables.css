@@ -1,11 +1,5 @@
 @charset 'utf-8';
 
-table {
-	--sky-100: oklch(95% 0.025 237);
-	--emerald-050: oklch(98% 0.021 162);
-	--emerald-900: oklch(38% 0.073 162);
-}
-
 td {
 	vertical-align: top;
 }
@@ -29,14 +23,14 @@ table.noborders td img {
 	margin: 0;
 }
 table.noborders tr:nth-child(even) {
-	background-color: var(--sky-100, #f0f8ff);
+	background-color: var(--sky-100);
 }
 table.noborders thead {
-	background-color: var(--blue-900, #00008b);
-	color: white;
+	background-color: var(--blue-900);
+	color: var(--white);
 }
 table.noborders thead td {
-	color: white;
+	color: var(--white);
 	font-weight: bold;
 }
 table.noborders td img {
@@ -64,13 +58,13 @@ table.ulysses {
 	font-size: var(--text-xs);
 }
 table.ulysses thead th {
-	background-color: var(--blue-800, #00008b);
-	border: 1px solid black;
-	color: white;
+	background-color: var(--blue-800);
+	border: 1px solid var(--black);
+	color: var(--white);
 }
 table.ulysses td {
 	text-align: center;
-	border: 1px solid black;
+	border: 1px solid var(--black);
 }
 table.ulysses thead th, table.ulysses td {
 	padding: 0.125em 0.375em;
@@ -79,7 +73,7 @@ table.ulysses thead th:nth-child(1), table.ulysses td:nth-child(1) {
 	text-align: left;
 }
 table.ulysses tr:nth-child(odd) {
-	background-color: white;
+	background-color: var(--white);
 }
 table.ulysses tr:nth-child(even) {
 	background-color: var(--emerald-050, #f0fff0);
@@ -101,23 +95,23 @@ table.ulysses tr:nth-child(even) {
 }
 @media (prefers-color-scheme: dark) {
 	table.noborders tr {
-		background-color: var(--gray-200, #f5f5f5);
-		color: black;
+		background-color: var(--gray-200);
+		color: var(--black);
 	}
 	table.noborders thead tr {
-		background-color: var(--blue-900, #00008b);
+		background-color: var(--blue-900);
 	}
 	table.ulysses thead th {
-		border: 1px solid white;
+		border: 1px solid var(--white);
 	}
 	table.ulysses td {
-		border: 1px solid white;
-		color: white;
+		border: 1px solid var(--white);
+		color: var(--white);
 	}
 	table.ulysses tr:nth-child(odd) {
-		background-color: var(--slate-700, gray);
+		background-color: var(--slate-700);
 	}
 	table.ulysses tr:nth-child(even) {
-		background-color: var(--emerald-900, #006400);
+		background-color: var(--emerald-900);
 	}
 }

@@ -7,11 +7,11 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var(--serif);
-	background-color: var(--slate-100, #d5d5e5);
+	background-color: var(--slate-100);
 	color: var(--default-light);
 	background-image: linear-gradient(
-		var(--slate-600, #b0c4de),
-		var(--slate-300, #d5d5e5) 6em,
+		var(--slate-600),
+		var(--slate-300) 6em,
 		transparent 10em
 	);
 }
@@ -101,7 +101,7 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 hr {
 	border: none;
 	height: 1px;
-	background-color: black;
+	background-color: var(--black);
 }
 
 sub, sup {
@@ -126,7 +126,7 @@ ul li li, ol li li {
 
 ul li li::marker, ol li li::marker,
 ul li li li:marker, ol li li li:marker {
-	color: var(--slate-400, gray);
+	color: var(--slate-400);
 }
 
 ul li li li, ol li li li {
@@ -191,11 +191,11 @@ li p {
 
 @media (prefers-color-scheme: dark) {
 	html, body {
-		background: black;
+		background: var(--black);
 		color: var(--default-dark);
 		background-image: linear-gradient(
-			var(--slate-500, #d5d5e5),
-			var(--slate-800, gray) 6em,
+			var(--slate-500),
+			var(--slate-800) 6em,
 			transparent 10em
 		)
 	}
@@ -206,10 +206,10 @@ li p {
 		color: var(--default-dark-link-afh);
 	}
 	hr {
-		background-color: white;
+		background-color: var(--white);
 	}
 	ul li li::marker, ol li li::marker,
 	ul li li li:marker, ol li li li:marker {
-		color: var(--slate-500, #778899);
+		color: var(--slate-500);
 	}
 }

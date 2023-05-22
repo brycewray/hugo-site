@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 .posts-pagerGray {
-	color: var(--gray-300, #d3d3d3);
+	color: var(--gray-300);
 }
 .posts-pagerThing {
 	display: flex;
@@ -55,7 +55,7 @@
 hr.paginatorTop, hr.paginatorBottom {
 	border: none;
 	height: 1px;
-	background-color: black;
+	background-color: var(--black);
 	width: clamp(65%, 75vw, 90%);
 }
 
@@ -81,12 +81,11 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: var(--gray-300, #d3d3d3);
+	color: var(--gray-300);
 }
 
 path.FirstLast {
-	--gray-400: oklch(71.5% 0.019 264);
-	fill: var(--gray-400, #d3d3d3);
+	fill: var(--gray-400);
 }
 
 path.NextPrev {
@@ -118,7 +117,7 @@ a:hover path.NextPrev {
 
 @media (prefers-color-scheme: dark) {
 	hr.paginatorTop, hr.paginatorBottom {
-		background-color: white;
+		background-color: var(--white);
 	}
 	path.NextPrev {
 		fill: var(--default-dark-link);

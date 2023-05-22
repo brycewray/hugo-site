@@ -7,7 +7,7 @@
 .footnotes hr {
 	border: none;
 	height: 2px;
-	background-color: var(--gray-700, gray);
+	background-color: var(--gray-700);
 }
 .footnotes ol {
 	padding-inline-start: 1.5rem;
@@ -35,7 +35,7 @@ a.footnote-return{
 
 @media (prefers-color-scheme: dark) {
 	.footnotes hr {
-		background-color: var(--gray-300, #d3d3d3);
+		background-color: var(--gray-300);
 	}
 	.footnote-sim {
 		color: var(--default-dark-link);

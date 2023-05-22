@@ -2,10 +2,10 @@
 
 lite-youtube {
 	--gray-400: oklch(71.5% 0.019 264);
-	background-color: black;
+	background-color: var(--black);
 	position: relative;
 	border: 1px solid;
-	border-color: var(--gray-700, gray);
+	border-color: var(--gray-700);
 	display: block;
 	contain: content;
 	background-position: center center;
@@ -93,14 +93,14 @@ lite-youtube.lyt-activated > .lty-playbtn {
 }
 
 .lyt-disclaimer .red {
-	color: var(--red-700, red);
+	color: var(--red-700);
 }
 
 @media (prefers-color-scheme: dark) {
 	lite-youtube {
-		border-color: var(--gray-400, #d3d3d3);
+		border-color: var(--gray-400);
 	}
 	.lyt-disclaimer .red {
-		color: var(--red-300, #fa8072);
+		color: var(--red-300);
 	}
 }

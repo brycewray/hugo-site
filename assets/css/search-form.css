@@ -1,8 +1,6 @@
 @charset 'utf-8';
 
 .searchDiv, .searchDivPF {
-	--gray-800: oklch(28% 0.03 264);
-	--blue-100: oklch(93.5% 0.03 252);
 	margin: 2em auto;
 }
 
@@ -20,8 +18,8 @@
 	margin: 0 auto;
 	width: 17em;
 	padding: 0;
-	background-color: white;
-	border: 1px solid black;
+	background-color: var(--white);
+	border: 1px solid var(--black);
 }
 
 .searchInput {
@@ -43,7 +41,7 @@
 	border: 1px solid;
 	border-color: var(--default-light-link);
 	background-color: var(--default-light-link);
-	color: white;
+	color: var(--white);
 }
 .searchBtn:hover {
 	cursor: pointer;
@@ -74,9 +72,9 @@
 	text-align: left;
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
-	border: 1px solid black;
+	border: 1px solid var(--black);
 	border-radius: 9px;
-	background-color: white;
+	background-color: var(--white);
 }
 
 .pagefind-ui__drawer {
@@ -104,7 +102,7 @@
 	border: 1px solid;
 	border-color: var(--default-light-link);
 	background-color: var(--default-light-link);
-	color: white;
+	color: var(--white);
 }
 .pagefind-ui__button:hover, .pagefind-ui__search-clear:hover {
 	cursor: pointer;
@@ -131,8 +129,8 @@
 }
 
 .pagefind-ui__result-excerpt mark {
-	color: black;
-	background-color: var(--blue-100, #e0ffff);
+	color: var(--black);
+	background-color: var(--blue-100);
 }
 
 .pagefind-ui__result-title {
@@ -159,8 +157,8 @@
 }
 @media (prefers-color-scheme: dark) {
 	.searchBox {
-		background-color: var(--gray-800, #a9a9a9);
-		border: 1px solid var(--gray-300, #d3d3d3);
+		background-color: var(--gray-800);
+		border: 1px solid var(--gray-300);
 	}
 	.searchInput {
 		color: white;
@@ -175,14 +173,14 @@
 		background-color: var(--default-dark-link-afh);
 	}
 	.pagefind-ui__search-input {
-		border: 1px solid var(--gray-300, #d3d3d3);
-		background-color: var(--gray-800, #a9a9a9);
-		color: white;
+		border: 1px solid var(--gray-300);
+		background-color: var(--gray-800);
+		color: var(--white);
 	}
 	.pagefind-ui__button, .pagefind-ui__search-clear {
 		border-color: var(--default-dark-link);
 		background-color: var(--default-dark-link);
-		color: black;
+		color: var(--black);
 	}
 	.pagefind-ui__button:focus, .pagefind-ui__search-clear:focus,
 	.pagefind-ui__button:active, .pagefind-ui__search-clear:active,
@@ -192,6 +190,6 @@
 	}
 	.pagefind-ui__result-excerpt mark {
 		color: white;
-		background-color: var(--blue-900, #00008b);
+		background-color: var(--blue-900);
 	}
 }

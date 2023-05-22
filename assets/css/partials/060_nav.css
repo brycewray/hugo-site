@@ -1,5 +1,5 @@
 header, .nav, .nav-Menu {
-	background-color: var(--slate-300, #d3d3d3);
+	background-color: var(--slate-300);
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 }
 .nav-Toggle svg {
 	width: 1.5rem;
-	fill: var(--slate-800, #a9a9a9);
+	fill: var(--slate-800);
 }
 .nav-Toggle .close {
 	display: none;
@@ -62,10 +62,10 @@ header {
 .nav-Menu a {
 	text-decoration: none;
 	border: 0;
-	color: black;
+	color: var(--black);
 }
 .nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-	color: var(--slate-600, gray);
+	color: var(--slate-600);
 }
 /* .nav-Menu svg {
 	width: 1.5rem;
@@ -90,13 +90,13 @@ header {
 }
 
 circle.NavIcon {
-	fill: var(--blue-500, blue);
+	fill: var(--blue-500);
 }
 a:hover circle.NavIcon {
-	fill: var(--gray-500, gray);
+	fill: var(--gray-500);
 }
 path.NavIcon {
-	fill: white;
+	fill: var(--white);
 }
 
 @media screen and (min-width: 1024px) {
@@ -127,15 +127,15 @@ path.NavIcon {
 
 @media (prefers-color-scheme: dark) {
 	header, .nav, .nav-Menu {
-		background-color: var(--slate-800, #a9a9a9);
+		background-color: var(--slate-800);
 	}
 	.nav-Toggle svg {
-		fill: var(--slate-050, #d3d3d3);
+		fill: var(--slate-050);
 	}
 	.nav-Menu a {
-		color: white;
+		color: var(--white);
 	}
 	.nav-Menu a:focus, .nav-Menu a:active, .nav-Menu a:hover {
-		color: var(--slate-200, #c0c0c0);
+		color: var(--slate-200);
 	}
 }
