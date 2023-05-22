@@ -3,7 +3,7 @@
 
 .posts {
 	&-pagerGray {
-		color: var.$gray-300;
+		color: var(--gray-300);
 	}
 	&-pagerThing {
 		display: flex;
@@ -68,9 +68,9 @@
 hr.paginatorTop, hr.paginatorBottom {
 	border: none;
 	height: 1px;
-	background-color: var.$black;
+	background-color: var(--black);
 	@media (prefers-color-scheme: dark) {
-		background-color: var.$white;
+		background-color: var(--white);
 	}
 	width: clamp(65%, 75vw, 90%);
 }
@@ -98,23 +98,23 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: var.$gray-300;
+	color: var(--gray-300);
 }
 
 path.FirstLast {
-	fill: var.$gray-400;
+	fill: var(--gray-400);
 }
 
 path.NextPrev {
-	fill: var.$blue-700;
+	fill: var(--default-light-link);
 	@media (prefers-color-scheme: dark) {
-		fill: var.$blue-300;
+		fill: var(--default-dark-link);
 	}
 }
 
 a:hover path.NextPrev {
-	fill: var.$blue-800;
+	fill: var(--default-light-link-afh);
 	@media (prefers-color-scheme: dark) {
-		fill: var.$blue-200;
+		fill: var(--default-dark-link-afh)
 	}
 }

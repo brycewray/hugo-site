@@ -14,8 +14,8 @@ table.noborders {
 	border-collapse: collapse;
 	tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$gray-200;
-			color: var.$black;
+			background-color: var(--gray-200);
+			color: var(--black);
 		}
 	}
 	td {
@@ -29,19 +29,19 @@ table.noborders {
 		}
 	}
 	tr:nth-child(even) {
-		background-color: var.$sky-100;
+		background-color: var(--sky-100);
 	}
 	thead {
-		background-color: var.$blue-900;
-		color: var.$white;
+		background-color: var(--blue-900);
+		color: var(--white);
 	}
 	thead tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$blue-900;
+			background-color: var(--blue-900);
 		}
 	}
 	thead td {
-		color: var.$white;
+		color: var(--white);
 		font-weight: bold;
 	}
 	td {
@@ -81,19 +81,21 @@ table.ulysses {
 		table-layout: fixed; // so don't have to spec each `td`'s width
 	}
 	thead th {
-		background-color: var.$blue-800;
-		border: 1px solid var.$black;
+		background-color: var(--blue-800);
+		border: 1px solid;
+		border-color: var(--black);
 		color: white;
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid var.$white;
+			border-color: var(--white);
 		}
 	}
 	td {
 		text-align: center;
-		border: 1px solid var.$black;
+		border: 1px solid;
+		border-color: var(--black);
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid var.$white;
-			color: var.$white;
+			border-color: var(--white);
+			color: var(--white);
 		}
 		padding: 0;
 	}
@@ -104,15 +106,15 @@ table.ulysses {
 		text-align: left;
 	}
 	tr:nth-child(odd) {
-		background-color: var.$white;
+		background-color: var(--white);
 		@media (prefers-color-scheme: dark){
-			background-color: var.$slate-700;
+			background-color: var(--slate-700);
 		}
 	}
 	tr:nth-child(even) {
-		background-color: var.$emerald-50;
+		background-color: var(--emerald-050);
 		@media (prefers-color-scheme: dark){
-			background-color: var.$emerald-900;
+			background-color: var(--emerald-900);
 		}
 	}
 }

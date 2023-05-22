@@ -2,9 +2,9 @@
 @use 'partials/variables' as var;
 
 code, article code, .box code {
-	background-color: var(--bg-lt);
+	background-color: var(--bg-lt, #708090);
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--bg-dk);
+		background-color: var(--bg-dk, #d3d3d3);
 	}
 }
 
@@ -32,8 +32,8 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	--bg-lt: #{var.$white};
-	--bg-dk: #{var.$slate-700};
+	--bg-lt: var(--white);
+	--bg-dk: var(--slate-700);
 }
 article .footnotes code {
 	font-size: 1em;
@@ -57,16 +57,16 @@ article .footnotes li code {
 }
 
 article blockquote code {
-	color: var.$slate-800;
+	color: var(--slate-800);
 	@media (prefers-color-scheme: dark) {
-		color: var.$slate-300;
+		color: var(--slate-300);
 	}
 }
 
 .box code {
 	font-size: 1em; // definitely em
-	--bg-lt: #{var.$slate-100};
-	--bg-dk: #{var.$slate-600};
+	--bg-lt: var(--slate-100);
+	--bg-dk: var(--slate-600);
 }
 
 article ol li .highlight {

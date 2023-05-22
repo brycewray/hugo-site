@@ -3,18 +3,18 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: var.$default-light;
+	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
-		color: var.$default-dark;
+		color: var(--default-dark);
 	}
 	&:hover, &:active, &:focus {
-		color: var.$blue-700;
+		color: var(--default-light-link);
 		text-decoration: underline;
 		text-decoration-thickness: var.$textDcThick; // always rem
 		text-underline-offset: var.$textUnOffst; // always em
 		text-decoration-skip-ink: auto;
 		@media (prefers-color-scheme: dark) {
-			color: var.$blue-300;
+			color: var(--default-dark-link);
 		}
 		&::after {
 			font-size: var.$text-base;
@@ -28,14 +28,15 @@
 	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
-	background-color: var.$white;
-	border: 1px solid var.$black;
+	background-color: var(--white);
+	border: 1px solid;
+	border-color: var(--black);
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: var.$slate-800;
-		border: 1px solid var.$gray-200;
+		background-color: var(--slate-800);
+		border-color: var(--gray-200);
 	}
 	p {
 		padding: 0;
@@ -45,21 +46,21 @@
 		margin-top: 1.75em;
 	}
 	code {
-		background-color: var.$slate-100;
+		background-color: var(--slate-100);
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$slate-600;
+			background-color: var(--slate-600);
 		}
 	}
 	a code {
-		// background-color: var.$slate-100);
+		// needed only for dark mode
 		@media (prefers-color-scheme: dark) {
-			background-color: var.$slate-700;
+			background-color: var(--slate-700);
 		}
 	}
 	.red {
-		color: var.$red-600;
+		color: var(--red-600);
 		@media (prefers-color-scheme: dark) {
-			color: var.$red-400;
+			color: var(--red-400);
 		}
 	}
 }
@@ -121,14 +122,15 @@ img.ctrImg {
 }
 
 blockquote {
-	border-left: 4px solid var.$slate-400;
-	color: var.$gray-550;
+	border-left: 4px solid;
+	border-left-color: var(--slate-400);
+	color: var(--gray-550);
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		// border-left is same color
-		color: var.$gray-400;
+		color: var(--gray-400);
 	}
 	p:last-child {
 		margin-bottom: 0;
@@ -161,14 +163,14 @@ article {
 // following from...
 // https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
 article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	color: var.$gray-800; // (vs. gray-700)
+	color: var(--gray-800);
 	@media (prefers-color-scheme: dark) {
-		color: var.$gray-200; // (vs. gray-300)
+		color: var(--gray-200);
 	}
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-	color: var.$gray-600; // (vs. gray-550)
+	color: var(--gray-600);
 	@media (prefers-color-scheme: dark) {
-		color: var.$gray-350; // (vs. gray-400)
+		color: var(--gray-350);
 	}
 }
