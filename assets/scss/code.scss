@@ -45,7 +45,7 @@
 	--fuchsia-700: #a01fb3;
 	--rose-200: #fdccd1;
 	--rose-800: #9f133d;
-	@supports (color: oklch(73% 0.17 192)) {
+	@supports (color: oklch(49% 0.1 252)) {
 		--gray-500: oklch(55% 0.023 264);
 		--gray-800: oklch(28% 0.03 264);
 		--zinc-300: oklch(87% 0.005 286);
@@ -685,7 +685,7 @@ pre[class*="language-"] {
 	--green-600: #09a34b;
 	--emerald-200: #a9f3ce;
 	--emerald-700: #157853;
-	@supports (color: oklch(73% 0.17 192)) {
+	@supports (color: oklch(49% 0.1 252)) {
 		--gray-500: oklch(55% 0.023 264);
 		--green-100: oklch(96% 0.043 150);
 		--green-600: oklch(62.5% 0.17 150);

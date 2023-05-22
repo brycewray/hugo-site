@@ -33,7 +33,7 @@ contact-button {
 	margin-top: 0.5em;
 	--blue-050: #eff6fe;
 }
-@supports (color: oklch(73% 0.17 192)) {
+@supports (color: oklch(49% 0.1 252)) {
 	contact-button {
 		--blue-050: oklch(97% 0.013 252);
 	}

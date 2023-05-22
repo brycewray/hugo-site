@@ -48,7 +48,7 @@
 	border: 1px solid var(--gray-400);
 }
 
-@supports (color: oklch(73% 0.17 192)) {
+@supports (color: oklch(49% 0.1 252)) {
 	.chroma, .code-inline {
 		--gray-400: oklch(71.5% 0.019 264);
 		--gray-500: oklch(55% 0.023 264);
@@ -685,7 +685,7 @@ pre[class*="language-"] {
 	opacity: 0;
 	transition: 0.1s;
 }
-@supports (color: oklch(73% 0.17 192)) {
+@supports (color: oklch(49% 0.1 252)) {
 	.clipboard-button {
 		--gray-500: oklch(55% 0.023 264);
 		--green-100: oklch(96% 0.043 150);

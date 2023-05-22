@@ -275,7 +275,7 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--default-dark-link-afh: var(--slate-300);
 }
 
-@supports (color: oklch(73% 0.17 192)) {
+@supports (color: oklch(49% 0.1 252)) {
 	:root {
 		--slate-050: oklch(98% 0.003 256);
 		--slate-100: oklch(97% 0.007 256);
