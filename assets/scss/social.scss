@@ -20,9 +20,7 @@ $tc-padding: 1em;
 	}
 	margin: 1.5rem auto;
 	padding: 1rem;
-	border: 2px solid;
-	border-color: gray;
-	border-color: var.$gray-700;
+	border: 2px solid var.$gray-700;
 	border-radius: 12px;
 	background: var.$white;
 	width: 100%;
@@ -39,7 +37,6 @@ $tc-padding: 1em;
 		max-width: 80ch;
 	}
 	@media (prefers-color-scheme: dark) {
-		background: gray;
 		background: var.$gray-900;
 		// background: transparent;
 	}
@@ -56,13 +53,11 @@ $tc-padding: 1em;
 		- https://css-tricks.com/better-line-breaks-for-long-urls/
 		*/
 		@media (prefers-color-scheme: dark) {
-			color: var(--default-dark-link);
+			color: var.$default-dark-link;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
-		border: 2px solid;
-		border-color: #d3d3d3;
-		border-color: var.$gray-200;
+		border: 2px solid var.$gray-200;
 		color: var.$white;
 	}
 }
@@ -87,12 +82,9 @@ $tc-padding: 1em;
 }
 
 .toot-blockquote-img {
-	border-bottom: 1px solid;
-	border-bottom-color: gray;
-	border-bottom-color: var.$gray-700;
+	border-bottom: 1px solid var.$gray-700;
 	@media (prefers-color-scheme: dark) {
-		border-bottom-color: #d3d3d3;
-		border-bottom-color: var.$gray-300;
+		border: 1px solid var.$gray-300;
 	}
 	width: 100%;
 }
@@ -104,10 +96,8 @@ $tc-padding: 1em;
 // ==== END, rounded image "attachment"
 
 a > .card, a > .toot-card {
-	color: gray;
 	color: var.$gray-800;
 	@media (prefers-color-scheme: dark) {
-		color: #d3d3d3;
 		color: var.$gray-300;
 	}
 }
@@ -117,12 +107,9 @@ a > .card, a > .toot-card {
 	// background-color: yellow;
 	margin-top: 1em;
 	border-radius: 12px;
-	border: 1px solid;
-	border-color: gray;
-	border-color: var.$gray-700;
+	border: 1px solid var.$gray-700;
 	@media (prefers-color-scheme: dark) {
-		border-color: #d3d3d3;
-		border-color: var.$gray-300;
+		border: 1px solid var.$gray-300;
 	}
 	p {
 		padding: 0.5em 1em 1em;
@@ -165,10 +152,8 @@ a > .card, a > .toot-card {
 			line-height: 1.375;
 		}
 		&-handle {
-			color: gray;
 			color: var.$gray-700;
 			@media (prefers-color-scheme: dark) {
-				color: #d3d3d3;
 				color: var.$gray-300;
 			}
 			font-size: var.$text-sm;
@@ -184,11 +169,9 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: gray;
 	color: var.$gray-800;
 	font-size: var.$text-sm;
 	@media (prefers-color-scheme: dark) {
-		color: #d3d3d3;
 		color: var.$gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
@@ -200,9 +183,9 @@ a > .card, a > .toot-card {
 			color: var.$gray-200;
 		}
 		&:hover {
-			color: var(--default-light-link);
+			color: var.$default-light-link;
 			@media (prefers-color-scheme: dark) {
-				color: var(--default-dark-link);
+				color: var.$default-dark-link;
 			}
 		}
 	}
@@ -312,12 +295,9 @@ a > .card, a > .toot-card {
 }
 
 .toot-quoted-tweet {
-	border: 1px solid;
-	border-color: gray;
-	border-color: var.$gray-800;
+	border: 1px solid var.$gray-800;
 	@media (prefers-color-scheme: dark) {
-		border-color: #d3d3d3;
-		border-color: var.$gray-200;
+		border: 1px solid var.$gray-200;
 	}
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
@@ -337,16 +317,14 @@ a > .card, a > .toot-card {
 	p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
 		a {
-			color: gray;
 			color: var.$gray-800;
 			@media (prefers-color-scheme: dark) {
-				color: #d3d3d3;
 				color: var.$gray-200;
 			}
 			&:hover {
-				color: var(--default-light-link);
+				color: var.$default-light-link;
 				@media (prefers-color-scheme: dark) {
-					color: var(--default-dark-link);
+					color: var.$default-dark-link;
 				}
 			}
 		}
@@ -357,11 +335,9 @@ a > .card, a > .toot-card {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: gray;
 	color: var.$gray-800;
 	font-size: var.$text-sm;
 	@media (prefers-color-scheme: dark) {
-		color: #d3d3d3;
 		color: var.$gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
@@ -374,9 +350,7 @@ a > .card, a > .toot-card {
 	@media screen and (min-width: var.$bkpt_md) {
 		display: flex;
 	}
-	border: 2px solid;
-	border: #d3d3d3;
-	border-color: var.$gray-400;
+	border: 2px solid var.$gray-400;
 	border-radius: 6px;
 	margin-top: 1em;
 	text-decoration: none;
@@ -386,9 +360,7 @@ a > .card, a > .toot-card {
 		@media screen and (min-width: var.$bkpt_md) {
 			flex: 0 0 200px;
 		}
-		border-right: 2px solid;
-		border-right-color: #d3d3d3;
-		border-right-color: var.$gray-400;
+		border-right: 2px solid var.$gray-400;
 		position: relative;
 		&-image {
 			display: block;

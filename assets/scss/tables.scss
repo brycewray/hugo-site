@@ -14,7 +14,6 @@ table.noborders {
 	border-collapse: collapse;
 	tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: #f5f5f5;
 			background-color: var.$gray-200;
 			color: var.$black;
 		}
@@ -30,17 +29,14 @@ table.noborders {
 		}
 	}
 	tr:nth-child(even) {
-		background-color: #f0f8ff;
 		background-color: var.$sky-100;
 	}
 	thead {
-		background-color: #00008b;
 		background-color: var.$blue-900;
 		color: var.$white;
 	}
 	thead tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: #00008b;
 			background-color: var.$blue-900;
 		}
 	}
@@ -85,21 +81,18 @@ table.ulysses {
 		table-layout: fixed; // so don't have to spec each `td`'s width
 	}
 	thead th {
-		background-color: #00008b;
 		background-color: var.$blue-800;
-		border: 1px solid;
-		border-color: var.$black;
+		border: 1px solid var.$black;
 		color: white;
 		@media (prefers-color-scheme: dark) {
-			border-color: var.$white;
+			border: 1px solid var.$white;
 		}
 	}
 	td {
 		text-align: center;
-		border: 1px solid;
-		border-color: var.$black;
+		border: 1px solid var.$black;
 		@media (prefers-color-scheme: dark) {
-			border-color: var.$white;
+			border: 1px solid var.$white;
 			color: var.$white;
 		}
 		padding: 0;
@@ -113,15 +106,12 @@ table.ulysses {
 	tr:nth-child(odd) {
 		background-color: var.$white;
 		@media (prefers-color-scheme: dark){
-			background-color: gray;
 			background-color: var.$slate-700;
 		}
 	}
 	tr:nth-child(even) {
-		background-color: #f0fff0;
-		background-color: var.$emerald-050;
+		background-color: var.$emerald-50;
 		@media (prefers-color-scheme: dark){
-			background-color: #006400;
 			background-color: var.$emerald-900;
 		}
 	}

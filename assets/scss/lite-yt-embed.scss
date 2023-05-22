@@ -4,12 +4,9 @@
 lite-youtube {
 	background-color: var.$black;
 	position: relative;
-	border: 1px solid;
-	border-color: gray;
-	border-color: var.$gray-700;
+	border: 1px solid var.$gray-700;
 	@media (prefers-color-scheme: dark) {
-		border-color: #d3d3d3;
-		border-color: var.$gray-400;
+		border: 1px solid var.$gray-400;
 	}
 	display: block;
 	contain: content;
@@ -97,10 +94,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
 }
 
 .lyt-disclaimer .red {
-	color: red;
 	color: var.$red-700;
 	@media (prefers-color-scheme: dark) {
-		color: #fa8072;
 		color: var.$red-300;
 	}
 }

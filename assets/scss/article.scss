@@ -3,18 +3,18 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: var(--default-light);
+	color: var.$default-light;
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark);
+		color: var.$default-dark;
 	}
 	&:hover, &:active, &:focus {
-		color: var(--default-light-link);
+		color: var.$blue-700;
 		text-decoration: underline;
 		text-decoration-thickness: var.$textDcThick; // always rem
 		text-underline-offset: var.$textUnOffst; // always em
 		text-decoration-skip-ink: auto;
 		@media (prefers-color-scheme: dark) {
-			color: var(--default-dark-link);
+			color: var.$blue-300;
 		}
 		&::after {
 			font-size: var.$text-base;
@@ -29,16 +29,13 @@
 	display: block;
 	box-sizing: border-box;
 	background-color: var.$white;
-	border: 1px solid;
-	border-color: var.$black;
+	border: 1px solid var.$black;
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: #2f4f4f;
 		background-color: var.$slate-800;
-		border-color: #d3d3d3;
-		border-color: var.$gray-200;
+		border: 1px solid var.$gray-200;
 	}
 	p {
 		padding: 0;
@@ -48,25 +45,20 @@
 		margin-top: 1.75em;
 	}
 	code {
-		background-color: #d3d3d3;
 		background-color: var.$slate-100;
 		@media (prefers-color-scheme: dark) {
-			background-color: #708090;
 			background-color: var.$slate-600;
 		}
 	}
 	a code {
-		// needed only for dark mode
+		// background-color: var.$slate-100);
 		@media (prefers-color-scheme: dark) {
-			background-color: #708090;
 			background-color: var.$slate-700;
 		}
 	}
 	.red {
-		color: red;
 		color: var.$red-600;
 		@media (prefers-color-scheme: dark) {
-			color: #fa8072;
 			color: var.$red-400;
 		}
 	}
@@ -129,17 +121,13 @@ img.ctrImg {
 }
 
 blockquote {
-	border-left: 4px solid;
-	border-left-color: gray;
-	border-left-color: var.$slate-400;
-	color: gray;
+	border-left: 4px solid var.$slate-400;
 	color: var.$gray-550;
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
 	@media (prefers-color-scheme: dark) {
 		// border-left is same color
-		color: #d3d3d3;
 		color: var.$gray-400;
 	}
 	p:last-child {
@@ -173,18 +161,14 @@ article {
 // following from...
 // https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
 article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	color: #a9a9a9;
-	color: var.$gray-800;
+	color: var.$gray-800; // (vs. gray-700)
 	@media (prefers-color-scheme: dark) {
-		color: #d3d3d3;
-		color: var.$gray-200;
+		color: var.$gray-200; // (vs. gray-300)
 	}
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-	color: gray;
-	color: var.$gray-600;
+	color: var.$gray-600; // (vs. gray-550)
 	@media (prefers-color-scheme: dark) {
-		color: #d3d3d3;
-		color: var.$gray-350;
+		color: var.$gray-350; // (vs. gray-400)
 	}
 }

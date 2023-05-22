@@ -3,10 +3,8 @@
 
 .bg-dark {
 	margin-top: 2.5rem;
-	background-color: #d3d3d3;
 	background-color: var.$slate-300;
 	@media (prefers-color-scheme: dark) {
-		background-color: #2f4f4f;
 		background-color: var.$slate-800;
 	}
 	padding: 0.5rem 0;
@@ -22,22 +20,18 @@
 		width: 90%;
 		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
 		a {
-			color: #00008b;
-			color: var.$blue-800;
+			color: var.$blue-800; // accessibility per WebAIM
 			text-decoration: none;
 			@media (prefers-color-scheme: dark) {
-				color: #e0ffff;
 				color: var.$blue-200;
 			}
 			&:hover, &:focus {
-				color: gray;
 				color: var.$gray-800;
 				text-decoration: underline; // normal
 				text-decoration-thickness: var.$textDcThickMd;
 				text-underline-offset: var.$textUnOffst;
 				text-decoration-skip-ink: auto;
 				@media (prefers-color-scheme: dark) {
-					color: #d3d3d3;
 					color: var.$gray-200;
 				}
 			}
@@ -52,22 +46,22 @@ contact-button {
 	button {
 		width: 15rem;
 		padding: 0.25rem 0;
-		background-color: var(--default-light-link);
+		background-color: var.$blue-700;
 		border-radius: var.$btn_radius;
 		border-color: transparent;
 		vertical-align: middle;
 		color: var.$white;
 		&:focus, &:active, &:hover {
-			background-color: var(--default-light-link-afh);
+			background-color: var.$blue-800;
 		}
 		&:hover {
 			cursor: pointer;
 		}
 		@media (prefers-color-scheme: dark) {
 			color: var.$black;
-			background-color: var(--default-dark-link);
+			background-color: var.$blue-300;
 			&:focus, &:active, &:hover {
-				background-color: var(--default-dark-link-afh);
+				background-color: var.$blue-50;
 			}
 		}
 	}

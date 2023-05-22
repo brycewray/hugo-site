@@ -1,10 +1,8 @@
 @use 'variables' as var;
 
 header, .nav, .nav-Menu {
-	background-color: #d3d3d3;
 	background-color: var.$slate-300;
 	@media (prefers-color-scheme: dark) {
-		background-color: #a9a9a9;
 		background-color: var.$slate-800;
 	}
 }
@@ -24,11 +22,9 @@ header {
 		right: 0;
 		svg {
 			width: 1.5rem;
-			fill: #a9a9a9;
 			fill: var.$slate-800;
 			@media (prefers-color-scheme: dark) {
-				fill: #d3d3d3;
-				fill: var.$slate-050;
+				fill: var.$slate-50;
 			}
 		}
 		.close {
@@ -74,17 +70,21 @@ header {
 			border: 0;
 			color: var.$black;
 			&:focus, &:active, &:hover {
-				color: gray;
 				color: var.$slate-600;
 			}
 			@media (prefers-color-scheme: dark) {
 				color: var.$white;
 				&:focus, &:active, &:hover {
-					color: #c0c0c0;
 					color: var.$slate-200;
 				}
 			}
 		}
+		// svg {
+		// 	width: 1.5rem;
+		// 	fill: var.$white;
+		// }
+		// // possibly unused...
+		// // see `.nav > svg` above
 	}
 }
 
@@ -132,14 +132,11 @@ header {
 }
 
 circle.NavIcon {
-	fill: #3b82f6;
 	fill: var.$blue-500;
 }
 a:hover circle.NavIcon {
-	fill: gray;
 	fill: var.$gray-500;
 }
-
 path.NavIcon {
 	fill: var.$white;
 }

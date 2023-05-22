@@ -10,30 +10,19 @@ html, body {
 	text-rendering: optimizeLegibility;
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
-	font-family: var.$serif;
-	background-color: #f1f5f9;
+	font-family: var.$sans-serif;
 	background-color: var.$slate-100;
-	color: var(--default-light);
+	color: var.$default-light;
 	@media (prefers-color-scheme: dark) {
 		background: var.$black;
-		color: var(--default-dark);
+		color: var.$default-dark;
 	}
-	background-image: linear-gradient(
-		#475569,
-		#cbd5e1 6em,
-		transparent 10em
-	);
 	background-image: linear-gradient(
 		var.$slate-600,
 		var.$slate-300 6em,
 		transparent 10em
 	);
 	@media (prefers-color-scheme: dark) {
-		background-image: linear-gradient(
-			#64748b,
-			#1e293b 6em,
-			transparent 10em
-		);
 		background-image: linear-gradient(
 			var.$slate-500,
 			var.$slate-800 6em,
@@ -42,15 +31,15 @@ html, body {
 	}
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4,
-header, footer, table, blockquote, summary, contact-button, search-button,
-.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
-.sitemap-Div, .searchDiv, .searchDivPF,
-.footnotes, .footnote-sim, .footnote-ref,
-.box, .labeled-highlight, .imgcCaption, .imghCaption, .bg-dark,
-.legal, .pokey {
-	font-family: var.$sans-serif;
-}
+// h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+// header, footer, table, blockquote, summary, contact-button, search-button,
+// .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+// .sitemap-Div, .searchDiv, .searchDivPF,
+// .footnotes, .footnote-sim, .footnote-ref,
+// .box, .labeled-highlight, .imgcCaption, .imghCaption, .bg-dark,
+// .legal, .pokey {
+// 	font-family: var.$sans-serif;
+// }
 
 html {
 	// scroll-behavior: smooth;
@@ -112,16 +101,16 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: var(--default-light-link);
+	color: var.$default-light-link;
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark-link);
+		color: var.$default-dark-link;
 	}
 }
 
 a:focus, a:hover, a:active {
-	color: var(--default-light-link-afh);
+	color: var.$default-light-link-afh;
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark-link-afh);
+		color: var.$default-dark-link-afh;
 	}
 }
 
@@ -157,10 +146,8 @@ ul li li, ol li li, ul li li li, ol li li li {
 ul li li, ol li li {
 	list-style-type: disc;
 	&::marker {
-		color: gray;
 		color: var.$slate-400;
 		@media (prefers-color-scheme: dark) {
-			color: #778899;
 			color: var.$slate-500;
 		}
 	}
@@ -169,10 +156,8 @@ ul li li, ol li li {
 ul li li li, ol li li li {
 	list-style-type: square;
 	&::marker {
-		color: gray;
 		color: var.$slate-400;
 		@media (prefers-color-scheme: dark) {
-			color: #778899;
 			color: var.$slate-500;
 		}
 	}
