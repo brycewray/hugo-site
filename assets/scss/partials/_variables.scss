@@ -254,12 +254,22 @@ $rose-900: oklch(41% 0.15 12);
 $rose-950: oklch(27% 0.101 12);
 
 :root {
-	--default-light: #{$gray-700};
-	--default-dark: #{$gray-300};
-	--default-light-link: #{$blue-700};
-	--default-dark-link: #{$blue-300};
-	--default-light-link-afh: #{$blue-900};
-	--default-dark-link-afh: #{$slate-300};
+	--default-light: #374151;
+	--default-dark: #d1d5db;
+	--default-light-link: #1d4ed8;
+	--default-dark-link: #93c5fd;
+	--default-light-link-afh: #1e3a8a;
+	--default-dark-link-afh: #cbd5e1;
+}
+@supports (color: oklch(73% 0.17 192)) {
+	:root {
+		--default-light: #{$gray-700};
+		--default-dark: #{$gray-300};
+		--default-light-link: #{$blue-700};
+		--default-dark-link: #{$blue-300};
+		--default-light-link-afh: #{$blue-900};
+		--default-dark-link-afh: #{$slate-300};
+	}
 }
 // =========================
 // ===== end, COLORS =====
