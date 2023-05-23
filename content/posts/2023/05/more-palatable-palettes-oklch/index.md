@@ -1,5 +1,5 @@
 ---
-title: "More palatable palettes with OKLCH"
+title: "More palatable palettes with OKLCH"
 description: "Although support is still limited, it’s not too early to begin using The Next Big Thing in CSS color."
 author: Bryce Wray
 date: 2023-05-23T12:56:00-05:00
