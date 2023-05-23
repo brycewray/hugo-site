@@ -6,7 +6,7 @@ date: 2022-08-05T20:49:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Important note, 2023-05-22**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
+**Important note, 2023-05-23**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
 {.box}
 
 [Some months back](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/), I explained how to use a [GitHub Action](https://github.com/features/actions) to deploy a [Hugo](https://gohugo.io) site complete with [Dart Sass](https://sass-lang.com/dart-sass). The thing is, some people *really* dislike GitHub, so this post mirrors the purpose of that earlier one **except** that the procedure described herein uses [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), instead.

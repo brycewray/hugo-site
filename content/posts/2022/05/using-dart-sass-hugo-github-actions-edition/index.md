@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2022-05-17T14:49:00-05:00
 ---
 
-**Important note, 2023-05-22**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
+**Important note, 2023-05-23**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
 {.box}
 
 <span class="red">**Update, 2022-07-05**</span>: If you're running a Hugo site on [Vercel](https://vercel.com), be aware that the method described herein may have an adverse effect on the speed of your deployments. For more details, see "[Using Dart Sass with Hugo: some data on using Github Actions](/posts/2022/07/using-dart-sass-hugo-some-data-using-github-actions/)."

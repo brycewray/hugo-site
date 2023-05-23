@@ -6,7 +6,7 @@ date: 2022-05-22T10:06:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Important note, 2023-05-22**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
+**Important note, 2023-05-23**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
 {.box}
 
 Some of the responses I got to my recent post, "[Using Dart Sass with Hugo: GitHub Actions edition](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/)," made it clear that there needs to be a one-stop guide that tells how to set up [the Dart Sass binary](https://github.com/sass/dart-sass) in the `PATH` on one's *local* machine for use with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG).
