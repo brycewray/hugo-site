@@ -1,9 +1,12 @@
 ---
 title: "Using Dart Sass with Hugo: the GitHub Actions edition"
-description: "Still more ways to make Hugo and Embedded Dart Sass work together."
+description: "Still more ways to make Hugo and Dart Sass work together."
 author: Bryce Wray
 date: 2022-05-17T14:49:00-05:00
 ---
+
+**Important note, 2023-05-22**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
+{.box}
 
 <span class="red">**Update, 2022-07-05**</span>: If you're running a Hugo site on [Vercel](https://vercel.com), be aware that the method described herein may have an adverse effect on the speed of your deployments. For more details, see "[Using Dart Sass with Hugo: some data on using Github Actions](/posts/2022/07/using-dart-sass-hugo-some-data-using-github-actions/)."
 {.box}
@@ -17,13 +20,14 @@ Regarding the [first approach](/posts/2022/03/using-dart-sass-hugo/): some peopl
 
 But that one didn't trouble me a whole lot.
 
-It was a different story when I kept mulling over the [second, somewhat trickier approach](/posts/2022/03/using-dart-sass-hugo-sequel/). It enables Hugo to use the [Embedded Dart Sass binary](https://github.com/sass/dart-sass-embedded/), through shell scripting that tells one of three hosting vendors --- [Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Cloudflare Pages](https://pages.cloudflare.com) --- to install the binary within the proper build-image `$PATH`. As a result, the binary is "visible" to Hugo during the build, and all goes on smoothly from there.
+It was a different story when I kept mulling over the [second, somewhat trickier approach](/posts/2022/03/using-dart-sass-hugo-sequel/). It enables Hugo to use the [Dart Sass binary](https://github.com/sass/dart-sass/), through shell scripting that tells one of three hosting vendors --- [Netlify](https://netlify.com), [Vercel](https://vercel.com), or [Cloudflare Pages](https://pages.cloudflare.com) --- to install the binary within the proper build-image `$PATH`. As a result, the binary is "visible" to Hugo during the build, and all goes on smoothly from there.
 
 This had been working fine for me ever since Hugo's Bjørn Erik Pedersen [first proposed the idea](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7), so what was my more recent problem with it? Just this: whether it can **keep** working depends upon those three hosting vendors' **not** shutting down that particular workaround, perhaps for understandably security-related reasons, by simply (further) limiting one's ability to adjust the respective build environment.
 
 In the end, I figured, assuming they'd continue to let that slip by was too big a gamble; so I started trying to think of something with a better chance of surviving until there's a more permanent solution.[^permanent]
 
-[^permanent]: To be precise, that permanent solution would be for each vendor to allow adding the Embedded Dart Sass binary to the build image (perhaps via an environment variable), much as you now can specify the desired version of Hugo. There have been occasional rumblings that one or more of the vendors might do this, but at this writing ETA = TBD in each case. I doubt it's high on their collective radar. **Update, 2023-05-09**: I [have learned](/posts/2023/05/cloudflare-pages-more-attractive-home-hugo-sites/) this *will* be possible with Cloudflare Pages in the near future.
+[^permanent]: To be precise, that permanent solution would be for each vendor to allow adding the Dart Sass binary to the build image (perhaps via an environment variable), much as you now can specify the desired version of Hugo. There have been occasional rumblings that one or more of the vendors might do this, but at this writing ETA = TBD in each case. I doubt it's high on their collective radar. **Update, 2023-05-09**: I [have learned](/posts/2023/05/cloudflare-pages-more-attractive-home-hugo-sites/) this *will* be possible with Cloudflare Pages in the near future. **Update, 2023-05-23**: I don't yet know how CFP will address the [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
+{.box}
 
 One morning this week, I awoke from an impromptu nap[^defense] and came up with the answer I'm going to describe below: a [**GitHub Action**](https://github.com/features/actions) (GHA). It wouldn't be new ground, since I've written before about using GHAs to deploy static websites:
 
@@ -33,12 +37,12 @@ One morning this week, I awoke from an impromptu nap[^defense] and came up with 
 - "[Ignition sequence start](/posts/2020/09/ignition-sequence-start/)" (September, 2020) --- Deploying to [Firebase](https://firebase.google.com).
 - "[Forward PaaS](/posts/2020/10/forward-paas/)" (October, 2020) --- Deploying to a [Cloudflare Workers](https://workers.cloudflare.com) site, the precursor to Cloudflare Pages.
 
-However, this GHA wouldn't be quite as straightforward as the ones in those posts. It would have to install not only the SSG (the Hugo binary, in this case) but also the Embedded Dart Sass binary. Furthermore, it would have to make sure the latter binary was in the build process's `$PATH`.
+However, this GHA wouldn't be quite as straightforward as the ones in those posts. It would have to install not only the SSG (the Hugo binary, in this case) but also the Dart Sass binary. Furthermore, it would have to make sure the latter binary was in the build process's `$PATH`.
 
 You may be wondering why this would be any better than the shell-scripting approach. I had to convince myself, too; but I came up with two advantages, one major and the other a nice-to-have:
 
 - The primary gain was that **the build process would happen entirely on GitHub**. This would allow using GitHub-approved code and variables to identify and adjust the build `$PATH` *on GitHub*. With the shell-scripting method, we were adjusting the `$PATH` *on the vendor's platform* in ways that, reiterating my earlier comments, *might* be okay a week from now but, then again, might *not*. It's kinda like the difference between (A.) getting into a ballpark by buying a ticket and (B.) getting in by sneaking past an overly busy, preoccupied ticket-seller. Either way, you're inside; but Option A is *always* suitable, while Option B works only until you get caught. (Okay, maybe that analogy is pushing it somewhat, but you understand what I'm saying.)
-- The minor happy point, at least for me, was that this would eliminate having to go into each vendor's GUI and change the `HUGO_VERSION` environment variable every time there's a new Hugo release.[^multiVendor] This way, I'd be providing that specification, as well as the `EMBEDDED_DART_SASS_VERSION` spec, with a file that I can easily and conveniently update within my local project.[^VercelJSON]
+- The minor happy point, at least for me, was that this would eliminate having to go into each vendor's GUI and change the `HUGO_VERSION` environment variable every time there's a new Hugo release.[^multiVendor] This way, I'd be providing that specification, as well as the `DART_SASS_VERSION` spec, with a file that I can easily and conveniently update within my local project.[^VercelJSON]
 
 [^multiVendor]: I push the site to multiple vendors for a variety of reasons (*e.g.*, safety in case one vendor and/or its content delivery network happens to have an outage); but, even if you stick with only one vendor, changing environment variable(s) in the GUI-only method can be a nuisance. Besides, this site has a **lot** of environment variables, so multiply that nuisance by about 8x per vendor and you'll see my point, here.
 
@@ -61,7 +65,7 @@ Before I get to the vendor-specific instructions and GHAs, here are some general
 - You'll need to add each such environment variable to the GitHub repo's GHA-accessible **secrets**. You'll **also** have to add vendor-specific **credentials** to these secrets. The instructions for each vendor will tell you how.
 - You'll notice, in each GHA below, that we're referring to something called `secrets.GITHUB_TOKEN`. That secret already exists within the repo, and the GHA will automatically access it; it's not something you have to create or store.
 - We'll also refer to your local Hugo project's **`.env` file**, a plain-text file where you'll be storing the aforementioned environment variables and credentials for your own future reference (including *during* this process, as you'll see). If your project doesn't already have a `.env` file, create it now at the project's top level --- and **be sure** it's an entry in your project's `.gitignore` file, because this will contain sensitive information you **never** want to commit in Git even locally, much less allow it to appear on GitHub. And please don't presume just making the GitHub repo private is sufficient protection for an inadvertently committed `.env` file, because it's definitely not.
-- The versions shown for Hugo and Embedded Dart Sass in each GHA are the current ones (0.99.0 and 1.51.0, respectively) as of the initial publication of this post. You can always see which releases are up-to-date by checking the release pages for [Hugo](https://github.com/gohugoio/hugo/releases) and [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases).
+- The versions shown for Hugo and Dart Sass in each GHA are the current ones (0.112.0 and 1.62.1, respectively) as of the 2023-05-23 update of this post. You can always see which releases are up-to-date by checking the release pages for [Hugo](https://github.com/gohugoio/hugo/releases) and [Dart Sass](https://github.com/sass/dart-sass/releases).
 
 Finally, because you don't want to have to scroll-scroll-scroll through instructions for vendors you don't even use, I'm using the [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`<summary>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) HTML elements to keep things nice and compact. Just click/tap on a section to toggle it as either open or closed.
 
@@ -140,8 +144,8 @@ on:
       - main # or whatever you call your production branch
 
 env:
-  HUGO_VERSION: 0.99.0 # will get Extended Version below
-  DART_SASS_VERSION: 1.51.0
+  HUGO_VERSION: 0.112.0 # will get Extended Version below
+  DART_SASS_VERSION: 1.62.1
   # if you have other environment variables,
   # enter them here in similar fashion
 
@@ -158,14 +162,12 @@ jobs:
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb
       - name: Install Hugo v${{ env.HUGO_VERSION }}
         run: sudo dpkg -i hugo*.deb
-      - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
-        run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+      - name: Install Dart Sass v${{ env.DART_SASS_VERSION }}
         run: |
-          tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          sass_embedded/dart-sass-embedded --version
-      - name: Add to the PATH
-        run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          sass --version
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to Netlify
@@ -258,8 +260,8 @@ on:
       - main # or whatever you call your production branch
 
 env:
-  HUGO_VERSION: 0.99.0 # will get Extended Version below
-  DART_SASS_VERSION: 1.51.0
+  HUGO_VERSION: 0.112.0 # will get Extended Version below
+  DART_SASS_VERSION: 1.62.1
   # if you have other environment variables,
   # enter them here in similar fashion
 
@@ -276,14 +278,12 @@ jobs:
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb
       - name: Install Hugo v${{ env.HUGO_VERSION }}
         run: sudo dpkg -i hugo*.deb
-      - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
-        run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+      - name: Install Dart Sass v${{ env.DART_SASS_VERSION }}
         run: |
-          tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          sass_embedded/dart-sass-embedded --version
-      - name: Add to the PATH
-        run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          sass --version
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to Vercel
@@ -374,8 +374,8 @@ on:
       - main # or whatever you call your production branch
 
 env:
-  HUGO_VERSION: 0.99.0 # will get Extended Version below
-  DART_SASS_VERSION: 1.51.0
+  HUGO_VERSION: 0.112.0 # will get Extended Version below
+  DART_SASS_VERSION: 1.62.1
   # if you have other environment variables,
   # enter them here in similar fashion
 
@@ -392,14 +392,12 @@ jobs:
         run: wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb
       - name: Install Hugo v${{ env.HUGO_VERSION }}
         run: sudo dpkg -i hugo*.deb
-      - name: Download Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
-        run: curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      - name: Unpack Embedded Dart Sass v${{ env.DART_SASS_VERSION }}
+      - name: Install Dart Sass v${{ env.DART_SASS_VERSION }}
         run: |
-          tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          sass_embedded/dart-sass-embedded --version
-      - name: Add to the PATH
-        run: echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          sass --version
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Build site with Hugo
         run: hugo --gc --minify
       - name: Publish to CFP

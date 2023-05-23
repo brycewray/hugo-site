@@ -5,6 +5,9 @@ author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
 ---
 
+**Important note, 2023-05-23**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
+{.box}
+
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my [previous post](/posts/2022/03/using-dart-sass-hugo/). This is a brief follow-up which will assume you've already read that one.
 {.box}
 
@@ -12,13 +15,13 @@ Just when I thought the method about which I wrote yesterday would be the only w
 
 Lo and behold, I woke up this morning and saw that [Hugo's chief developer, Bjørn Erik Pedersen](https://github.com/bep), had come up with a much better way. It was never that I thought he **couldn't**, of course, but I just figured he was too busy --- and he probably *is*, but he still nailed it with [this](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7) on the Hugo Discourse forum.
 
-Pedersen's solution works by building a Hugo site through a *shell script* which installs [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/) into the hosting vendor's `PATH`, where it must be for Hugo to recognize it during the build. He tested the script successfully on [Netlify](https://netlify.com); and, later, I created versions for [Vercel](https://vercel.com) and [Cloudflare Pages](https://pages.cloudflare.com). I'll provide all three below, so you can choose the one that works with your chosen hosting vendor. And, in case you use a different vendor, I'll offer a hint from Pedersen that helped me figure out how to adapt his Netlify-specific script for Vercel and CFP.
+Pedersen's solution works by building a Hugo site through a *shell script* which installs [Dart Sass](https://github.com/sass/dart-sass/) into the hosting vendor's `PATH`, where it must be for Hugo to recognize it during the build. He tested the script successfully on [Netlify](https://netlify.com); and, later, I created versions for [Vercel](https://vercel.com) and [Cloudflare Pages](https://pages.cloudflare.com). I'll provide all three below, so you can choose the one that works with your chosen hosting vendor. And, in case you use a different vendor, I'll offer a hint from Pedersen that helped me figure out how to adapt his Netlify-specific script for Vercel and CFP.
 
 ## What to do locally
 
-By the way, all of the scripts below are just for the production side; in local work --- assuming you have [Embedded Dart Sass installed](https://github.com/sass/dart-sass-embedded/releases) in the system `PATH` on your local development machine[^DSElocal] --- you need only run your normal `hugo server` command.
+By the way, all of the scripts below are just for the production side; in local work --- assuming you have [Dart Sass installed](https://github.com/sass/dart-sass/releases) in the system `PATH` on your local development machine[^DSElocal] --- you need only run your normal `hugo server` command.
 
-[^DSElocal]: Each release of Embedded Dart Sass has versions for Linux, macOS (just x64 Macs as yet, so Apple Silicon Macs must run it in [Rosetta 2](https://www.computerworld.com/article/3597949/everything-you-need-to-know-about-rosetta-2-on-apple-silicon-macs.html), and Windows. Just download the appropriate version and extract it. That will result in a `sass_embedded` folder. Then move *the folder's contents* (but **not** the folder itself) to a location within your machine's system `PATH`. If you need help with that, long-time Hugo user [Zachary Betz](https://github.com/zwbetz-gh) has a great explainer, "[How to Add a Binary (or Executable, or Program) to Your PATH on macOS, Linux, or Windows](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/)."
+[^DSElocal]: Each release of Dart Sass has versions for Linux, macOS, and Windows. Just download the appropriate version and extract it. That will result in a `dart-sass` folder. Then move *the folder's contents* (but **not** the folder itself) to a location within your machine's system `PATH`. If you need help with that, long-time Hugo user [Zachary Betz](https://github.com/zwbetz-gh) has a great explainer, "[How to Add a Binary (or Executable, or Program) to Your PATH on macOS, Linux, or Windows](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/)."
 
 **However**, you **do** need to make sure that your templating is addressing the correct SCSS-to-CSS [transpiler](https://devopedia.org/transpiler), since Hugo's default assumption is that it'll be the [deprecated LibSass](https://sass-lang.com/blog/libsass-is-deprecated), not Dart Sass.[^transpiler] For example, here's how Pedersen's repo did it in the demo site's `head`:
 
@@ -35,7 +38,7 @@ Also, those of you who've never used Dart Sass up to now should be aware that it
 
 ## The scripts
 
-Once you have the appropriate one of these set up as your on-host build script[^shellSyntax] (remember to make that setting in the appropriate place!), the only thing you'll have to change from time to time is the `DARTSASS_VERSION` variable, based on the [latest available release of Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases). Before using one of the scripts, you also should make sure it has sufficient *write permissions*, using the [following tip](https://community.cloudflare.com/t/permission-denied-on-build-script/295840/6) I found in a Cloudflare forum discussion on the subject:
+Once you have the appropriate one of these set up as your on-host build script[^shellSyntax] (remember to make that setting in the appropriate place!), the only thing you'll have to change from time to time is the `DARTSASS_VERSION` variable, based on the [latest available release of Dart Sass](https://github.com/sass/dart-sass/releases). Before using one of the scripts, you also should make sure it has sufficient *write permissions*, using the [following tip](https://community.cloudflare.com/t/permission-denied-on-build-script/295840/6) I found in a Cloudflare forum discussion on the subject:
 
 [^shellSyntax]: Since it's a shell script, you'll need to use the right syntax. Let's say your normal build command is `hugo --minify`, and you've named your chosen shell script `build-to-host.sh`. That means you'll go into the right place in your host's settings and change the build command **from** `hugo --minify` **to** `./build-to-host.sh`. (That `./` at the beginning is utterly necessary.)
 
@@ -50,27 +53,26 @@ This one is entirely Pedersen's, from that demo he did for testing on Netlify, e
 ```bash
 #!/bin/bash
 
-echo "Install Dart Sass Embedded..."
+echo "Install Dart Sass..."
 
 # This is in Netlify's PATH.
 BIN_DIR=/opt/build/repo/node_modules/.bin
-DARTSASS_VERSION=1.49.9
+
+DARTSASS_VERSION=1.62.1
 
 mkdir -p $BIN_DIR
 
-curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DARTSASS_VERSION}/sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz;
+curl -LJO https://github.com/sass/dart-sass/releases/download/${DARTSASS_VERSION}/dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-tar -xvf sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz;
+tar -xvf dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-mv sass_embedded/dart-sass-embedded $BIN_DIR
-
-rm -rf sass_embedded*;
+mv dart-sass $BIN_DIR
 
 echo "List Bin Dir..."
 
 ls $BIN_DIR;
 
-dart-sass-embedded --version
+sass --version
 
 echo "Building..."
 
@@ -92,19 +94,21 @@ echo "Install Dart Sass Embedded..."
 # This is in Vercel's PATH.
 BIN_DIR=${pwd}/bin
 
-DARTSASS_VERSION=1.49.9
+DARTSASS_VERSION=1.62.1
 
 mkdir -p $BIN_DIR
 
-curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DARTSASS_VERSION}/sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz;
+curl -LJO https://github.com/sass/dart-sass/releases/download/${DARTSASS_VERSION}/dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-tar -xvf sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz;
+tar -xvf dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-mv sass_embedded/dart-sass-embedded $BIN_DIR
+mv dart-sass $BIN_DIR
 
-rm -rf sass_embedded*;
+echo "List Bin Dir..."
 
-dart-sass-embedded --version
+ls $BIN_DIR;
+
+sass --version
 
 echo "Building..."
 
@@ -124,19 +128,21 @@ echo "Install Dart Sass Embedded..."
 # This should be in the PATH.
 BIN_DIR=/opt/buildhome/.binrc/bin
 
-DARTSASS_VERSION=1.49.9
+DARTSASS_VERSION=1.62.1
 
 mkdir -p $BIN_DIR
 
-curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DARTSASS_VERSION}/sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz;
+curl -LJO https://github.com/sass/dart-sass/releases/download/${DARTSASS_VERSION}/dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-tar -xvf sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz;
+tar -xvf dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-mv sass_embedded/dart-sass-embedded $BIN_DIR
+mv dart-sass $BIN_DIR
 
-rm -rf sass_embedded*;
+echo "List Bin Dir..."
 
-dart-sass-embedded --version
+ls $BIN_DIR;
+
+sass --version
 
 echo "Building..."
 
