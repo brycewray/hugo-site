@@ -6,6 +6,10 @@ $serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 $monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", "Source Code Pro", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+:root {
+	--sans-serif: #{$sans-serif};
+}
+
 // like Tailwind **SIZES**
 // but not the concomitant `line-height,
 // which is in comments
