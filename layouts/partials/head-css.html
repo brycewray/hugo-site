@@ -1,191 +1,43 @@
 {{- $css := "" -}}
+{{- $cssP := "" -}}
+{{- $cssM := "" -}}
 {{- $printCSS := "" -}}
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
-{{- $scssOptionsPrint := $scssOptions -}}
 {{- $scssComp := dict "outputStyle" "compressed" -}}
-{{- $printCSS := "" -}}
+{{- $scssOptionsComp := merge $scssComp (dict "targetPath" "index.min.css") -}}
+{{- $scssOptionsPrint := $scssOptions -}}
+{{- $scssOptionsPrintComp := merge $scssComp (dict "targetPath" "print.min.css") -}}
 {{- $Styling := .Site.Params.Styling -}}
-{{- $condition := "" -}}
-{{- $fileName := "" -}}
 
 {{- /*
-	save some repetition below
+	minify/fingerprint everything even in dev,
+	due to Safari caching weirdness
 */ -}}
-{{- $titleSitemap := .Site.Params.Titles.Sitemap -}}
-{{- $titleHome := .Site.Params.Titles.Home -}}
-{{- $titlePostslist := .Site.Params.Titles.Postslist -}}
-{{- $titleFourOhFour := .Site.Params.Titles.FourOhFour -}}
-{{- $titleSearch := .Site.Params.Titles.Search -}}
-
-{{- $conditionSocial := false -}}
-{{- $conditionCode := false -}}
-{{- $conditionArtCode := false -}}
-{{- $conditionTables := false -}}
-{{- $conditionLiteYT := false -}}
-{{- $conditionBillboard := false -}}
-{{- $conditionArticle := false -}}
-{{- $conditionPostsSingle := false -}}
-{{- $conditionPostsList := false -}}
-{{- $conditionFootnotes := false -}}
-{{- $conditionHome := false -}}
-{{- $conditionSitemap := false -}}
-{{- $conditionSearchBtn := false -}}
-{{- $conditionSearchForm := false -}}
-{{/*  {{- $conditionDetails := false -}}  */}}
-{{- $condition404 := false -}}
-{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
-{{- if (findRE `<div class="highlight"` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
-{{- if and (findRE `(<code)` .Content 1) (not (findRE `<div class="highlight"` .Content 1)) -}}{{- $conditionArtCode = true -}}{{- end -}}
-{{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
-{{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
-{{- if (and (ne .Title $titleHome) (ne .Title $titleSitemap) (ne .Title $titlePostslist) (ne .Title $titleFourOhFour)) -}}{{- $conditionBillboard = true -}}{{- end -}}
-{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
-{{- if (and (eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
-{{- if (eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
-{{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
-{{- if (eq .Title $titleHome) -}}{{- $conditionHome = true -}}{{- end -}}
-{{- if (eq .Title $titleSitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
-{{- if (ne .Title $titleSearch) -}}{{- $conditionSearchBtn = true -}}{{- end -}}
-{{- if (eq .Title $titleSearch) -}}{{- $conditionSearchForm = true -}}{{- end -}}
-{{/*  {{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}  */}}
-{{- if (eq .Title $titleFourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
-
-{{- $cssTypes := slice -}}{{/* init big slice */}}
-{{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionArtCode "artcode") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionBillboard "billboard") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionArticle "article") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionPostsSingle "posts-single") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionPostsList "posts-list") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionHome "home") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionSitemap "sitemaphtml") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionSearchBtn "search-btn") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionSearchForm "search-form") $cssTypes -}}
-{{/*  {{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}  */}}
-{{- $cssTypes = append slice (slice $condition404 "fourohfour") $cssTypes -}}
-
-{{- range $cssTypes -}}
-	{{- $condition = index . 0 -}}
-	{{- $fileName = index . 1 -}}
-	{{- if eq $condition true -}}
-		{{- /*
-			minify/fingerprint everything even in dev,
-			due to Safari caching weirdness
-		*/ -}}
-		{{- if eq $Styling "SCSS" -}}
-			{{- $scssOptions = merge $scssOptions $scssComp -}}
-			{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".min.css" )) -}}
-			{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $scssOptions | fingerprint -}}
-		{{- end -}}
-		{{- if eq $Styling "VCSS" -}}
-			{{- $css = resources.Get (print "css/" $fileName ".css") | minify | fingerprint -}}
-		{{- end -}}
-		{{- if ne $css "" -}}
-			<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-		{{- end -}}
-	{{ end -}}
-{{- end }}
-
-{{- if eq .Title "More palatable palettes with OKLCH" -}}
-	<style media="screen">
-		:root {
-			--green-050: #f0fcf2;
-			--green-100: #defbe3;
-			--green-200: #c0f6ca;
-			--green-300: #8feda4;
-			--green-400: #52dd7c;
-			--green-500: #1bc45e;
-			--green-600: #09a34b;
-			--green-700: #147f3c;
-			--green-800: #1b6533;
-			--green-900: #18522a;
-			--green-950: #082d14;
-		}
-		@supports (color: oklch(49% 0.1 252)) {
-			:root {
-				--green-050: oklch(98% 0.018 150);
-				--green-100: oklch(96% 0.043 150);
-				--green-200: oklch(92.5% 0.081 150);
-				--green-300: oklch(87% 0.136 150);
-				--green-400: oklch(80% 0.182 150);
-				--green-500: oklch(72% 0.192 150);
-				--green-600: oklch(62.5% 0.17 150);
-				--green-700: oklch(52.5% 0.137 150);
-				--green-800: oklch(45% 0.108 150);
-				--green-900: oklch(39% 0.09 150);
-				--green-950: oklch(26.5% 0.063 150);
-			}
-		}
-		.twgreen-50 {background-color: #f0fdf4; color: var(--black)}
-		.twgreen-100 {background-color: #dcfce7; color: var(--black)}
-		.twgreen-200 {background-color: #bbf7d0; color: var(--black)}
-		.twgreen-300 {background-color: #86efac; color: var(--black)}
-		.twgreen-400 {background-color: #4ade80; color: var(--black)}
-		.twgreen-500 {background-color: #22c55e; color: var(--black);}
-		.twgreen-600 {background-color: #16a34a; color: var(--white);}
-		.twgreen-700 {background-color: #15803d; color: var(--white);}
-		.twgreen-800 {background-color: #166534; color: var(--white);}
-		.twgreen-900 {background-color: #14532d; color: var(--white);}
-		.twgreen-950 {background-color: #052e16; color: var(--white);}
-		.okgreen-50 {background-color: var(--green-050); color: var(--black)}
-		.okgreen-100 {background-color: var(--green-100); color: var(--black)}
-		.okgreen-200 {background-color: var(--green-200); color: var(--black)}
-		.okgreen-300 {background-color: var(--green-300); color: var(--black)}
-		.okgreen-400 {background-color: var(--green-400); color: var(--black)}
-		.okgreen-500 {background-color: var(--green-500); color: var(--black);}
-		.okgreen-600 {background-color: var(--green-600); color: var(--white);}
-		.okgreen-700 {background-color: var(--green-700); color: var(--white);}
-		.okgreen-800 {background-color: var(--green-800); color: var(--white);}
-		.okgreen-900 {background-color: var(--green-900); color: var(--white);}
-		.okgreen-950 {background-color: var(--green-950); color: var(--white);}
-		.colorBoxContainer {
-			background-color: var(--black);
-			padding: 0.25rem 0 1.5rem;
-		}
-		.colorBoxContainer p, .colorBoxContainer p strong {
-			color: var(--white);
-		}
-		@media (prefers-color-scheme: dark) {
-			.colorBoxContainer {
-				background-color: transparent;
-			}
-		}
-		p.noY {
-			margin-bottom: 0;
-		}
-		table.pals {
-			font-size: 0.65em;
-			margin: 0 auto;
-		}
-		table.pals td {
-			padding: 0.15em;
-			min-width: 2em;
-		}
-		@media (min-width: 1024px) {
-			table.pals {
-				font-size: 1.25em;
-			}
-			table.pals td {
-				padding: 0.25em;
-				font-weight: bold;
-			}
-		}
-	</style>
+{{- if eq $Styling "SCSS" -}}
+	{{- $scssOptions = merge $scssOptions $scssOptionsComp -}}
+	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions -}}
 {{- end -}}
+{{- if eq $Styling "VCSS" -}}
+	{{- $cssP = resources.Match "css/partials/*.css" | resources.Concat "css/partials.css" -}}
+	{{- $cssM = resources.Match "css/*.css" | resources.Concat "css/main.css" -}}
+	{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" | minify | fingerprint -}}
+{{- end -}}
+{{- if ne $css "" }}
+	{{- /*
+	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+	*/ -}}
+	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+{{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
 {{- if eq $Styling "SCSS" -}}
-	{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp -}}
-	{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.min.css") -}}
-	{{- $printCSS = resources.Get "scss/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
+	{{- $scssOptionsPrint := merge $scssOptionsPrint $scssOptionsPrintComp -}}
+	{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $printCSS = resources.Get "css/print.css" | minify | fingerprint -}}
+	{{- $printCSS = resources.Get "css/print/print.css" | minify | fingerprint -}}
 {{- end -}}
 {{- if ne $printCSS "" -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>

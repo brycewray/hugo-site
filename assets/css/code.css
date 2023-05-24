@@ -1,5 +1,3 @@
-@charset 'utf-8';
-
 /* Background */
 
 .chroma, .code-inline {
@@ -639,8 +637,8 @@ pre.chroma {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	color: var(--black);
-	background-color: var(--white);
+	color: black;
+	background-color: white;
 }
 
 .highlight {
@@ -749,7 +747,7 @@ code {
 
 article code {
 	font-size: 0.975em;
-	--bg-lt: var(--white);
+	--bg-lt: white;
 	--bg-dk: var(--slate-700);
 }
 
@@ -796,7 +794,7 @@ article ol li .highlight {
 	}
 	:not(pre) > code[class*="language-"],
 	pre[class*="language-"] {
-	color: var(--white);
+	color: white;
 		background-color: var(--slate-800);
 	}
 	code, article code, .box code {

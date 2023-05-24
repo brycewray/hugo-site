@@ -1,7 +1,4 @@
-@charset 'utf-8';
-
 lite-youtube {
-	--gray-400: oklch(71.5% 0.019 264);
 	background-color: var(--black);
 	position: relative;
 	border: 1px solid;

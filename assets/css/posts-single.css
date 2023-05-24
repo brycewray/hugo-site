@@ -1,5 +1,3 @@
-@charset 'utf-8';
-
 .bg-dark {
 	margin-top: 2.5rem;
 	background-color: var(--slate-300);
@@ -13,7 +11,6 @@
 	padding: 0.15rem 0;
 	width: 90%;
 	font-size: clamp(1rem, 1vw + 0.625em, var(--text-xl));
-	--blue-200: oklch(88% 0.058 252);
 }
 .bg-dark p.prevnextP a {
 	color: var(--blue-800);
