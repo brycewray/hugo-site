@@ -4,6 +4,7 @@ description: "For those who prefer GitLab to GitHub where CI/CD is concerned,
 author: Bryce Wray
 date: 2022-08-05T20:49:00-05:00
 #initTextEditor: iA Writer
+---
 
 <strong class="red">Important note, 2023-05-24</strong>: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2). However, you should **keep using the current/archived Embedded Dart Sass binary** ([v.1.62.1](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1)) until there's an update to the Dart Sass binary that truly does provide the full capability of Embedded Dart Sass. I learned the hard way that the **current** Dart Sass binary (also v.1.62.1) **doesn't yet** support Embedded Dart Sass fully --- *e.g.*, it doesn't "watch" files properly for when you make edits to your `.scss` files. (This is despite the fact that the Sass team has already changed the Dart Sass README to say that commands such as `sass --embedded` and `sass --embedded --version` will work; they **don't** with the current Dart Sass binary --- which makes sense, given that v.1.62.1 was released weeks before the Sass team made this change.)
 {.box}
