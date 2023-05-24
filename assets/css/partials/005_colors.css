@@ -458,13 +458,13 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 		--blue-100: oklch(93.5% 0.03 252);
 		*/
 		--blue-200: oklch(88% 0.058 252);
-		--blue-300: oklch(80.5% 0.098 252);
+		--blue-300: oklch(81% 0.107 252); /* oklch(80.5% 0.098 252) */
 		/*
 		--blue-400: oklch(71.5% 0.142 252);
 		--blue-500: oklch(62.5% 0.187 252);
 		--blue-600: oklch(54.5% 0.209 252);
 		*/
-		--blue-700: oklch(49% 0.1886 252);
+		--blue-700: oklch(53% 0.204 252); /* oklch(49% 0.1886 252) */
 		--blue-800: oklch(42.5% 0.163 252);
 		--blue-900: oklch(38% 0.136 252);
 		/*
