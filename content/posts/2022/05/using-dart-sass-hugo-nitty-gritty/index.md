@@ -6,7 +6,7 @@ date: 2022-05-22T10:06:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Important note, 2023-05-23**: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2).
+<strong class="red">Important note, 2023-05-24</strong>: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2). However, you should **keep using the current/archived Embedded Dart Sass binary** ([v.1.62.1](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1)) until there's an update to the Dart Sass binary that truly does provide the full capability of Embedded Dart Sass. I learned the hard way that the **current** Dart Sass binary (also v.1.62.1) **doesn't yet** support Embedded Dart Sass fully --- *e.g.*, it doesn't "watch" files properly for when you make edits to your `.scss` files. (This is despite the fact that the Sass team has already changed the Dart Sass README to say that commands such as `sass --embedded` and `sass --embedded --version` will work; they **don't** with the current Dart Sass binary --- which makes sense, given that v.1.62.1 was released weeks before the Sass team made this change.)
 {.box}
 
 Some of the responses I got to my recent post, "[Using Dart Sass with Hugo: GitHub Actions edition](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/)," made it clear that there needs to be a one-stop guide that tells how to set up [the Dart Sass binary](https://github.com/sass/dart-sass) in the `PATH` on one's *local* machine for use with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG).
