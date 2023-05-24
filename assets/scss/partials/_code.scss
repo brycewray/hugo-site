@@ -86,7 +86,7 @@
 		--rose-800: oklch(45.5% 0.171 12);
 	}
 	color: var(--black);
-	background-color: var(--white);
+	background-color: var(--gray-050);
 	border: 1px solid;
 	border-color: var(--gray-400);
 	@media (prefers-color-scheme: dark) {
@@ -770,7 +770,7 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	--bg-lt: var(--white);
+	--bg-lt: var(--slate-150);
 	--bg-dk: var(--slate-700);
 }
 article .footnotes code {
@@ -803,7 +803,7 @@ article blockquote code {
 
 .box code {
 	font-size: 1em; // definitely em
-	--bg-lt: var(--slate-100);
+	--bg-lt: var(--slate-200);
 	--bg-dk: var(--slate-600);
 }
 

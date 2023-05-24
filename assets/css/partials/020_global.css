@@ -7,13 +7,8 @@ html, body {
 	text-rendering: optimizeLegibility;
 	font-kerning: normal;
 	font-family: var(--serif);
-	background-color: var(--slate-100);
+	background-color: var(--white);
 	color: var(--default-light);
-	background-image: linear-gradient(
-		var(--slate-600),
-		var(--slate-300) 6em,
-		transparent 10em
-	);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
@@ -36,6 +31,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	color: var(--default-light-head);
 	letter-spacing: -0.025rem;
 }
 
@@ -125,7 +121,7 @@ ul li li, ol li li {
 }
 
 ul li li::marker, ol li li::marker,
-ul li li li:marker, ol li li li:marker {
+ul li li li::marker, ol li li li::marker {
 	color: var(--slate-400);
 }
 
@@ -193,11 +189,9 @@ li p {
 	html, body {
 		background: var(--black);
 		color: var(--default-dark);
-		background-image: linear-gradient(
-			var(--slate-500),
-			var(--slate-800) 6em,
-			transparent 10em
-		)
+	}
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+		color: var(--default-dark-head);
 	}
 	a {
 		color: var(--default-dark-link);
@@ -209,7 +203,7 @@ li p {
 		background-color: var(--white);
 	}
 	ul li li::marker, ol li li::marker,
-	ul li li li:marker, ol li li li:marker {
+	ul li li li::marker, ol li li li::marker {
 		color: var(--slate-500);
 	}
 }

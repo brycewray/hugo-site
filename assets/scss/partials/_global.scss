@@ -11,23 +11,11 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$serif;
-	background-color: var(--slate-100);
+	background-color: var(--white);
 	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
 		background: var(--black);
 		color: var(--default-dark);
-	}
-	background-image: linear-gradient(
-		var(--slate-600),
-		var(--slate-300) 6em,
-		transparent 10em
-	);
-	@media (prefers-color-scheme: dark) {
-		background-image: linear-gradient(
-			var(--slate-500),
-			var(--slate-800) 6em,
-			transparent 10em
-		);
 	}
 }
 
@@ -51,7 +39,11 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	color: var(--default-light-head);
 	letter-spacing: -0.025rem;
+	@media (prefers-color-scheme: dark) {
+		color: var(--default-dark-head);
+	}
 }
 
 h1, h2, h3, h4 {

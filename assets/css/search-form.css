@@ -23,7 +23,8 @@
 	width: 17em;
 	padding: 0;
 	background-color: var(--white);
-	border: 1px solid var(--black);
+	border: 1px solid;
+	border-color: var(--black);
 }
 
 .searchInput {
@@ -51,7 +52,8 @@
 	cursor: pointer;
 }
 .searchBtn:focus, .searchBtn:active, .searchBtn:hover {
-	border: 1px solid var(--default-light-link-afh);
+	border: 1px solid;
+	border-color: var(--default-light-link-afh);
 	background-color: var(--default-light-link-afh);
 }
 
@@ -76,9 +78,10 @@
 	text-align: left;
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
-	border: 1px solid var(--black);
+	border: 1px solid;
+	border-color: var(--black);
 	border-radius: 9px;
-	background-color: var(--white);
+	background-color: var(--blue-050);
 }
 
 .pagefind-ui__drawer {
@@ -162,7 +165,7 @@
 @media (prefers-color-scheme: dark) {
 	.searchBox {
 		background-color: var(--gray-800);
-		border: 1px solid var(--gray-300);
+		border-color: var(--gray-300);
 	}
 	.searchInput {
 		color: white;
@@ -173,11 +176,11 @@
 		color: black;
 	}
 	.searchBtn:focus, .searchBtn:active, .searchBtn:hover {
-		border: 1px solid var(--default-dark-link-afh);
+		border-color: var(--default-dark-link-afh);
 		background-color: var(--default-dark-link-afh);
 	}
 	.pagefind-ui__search-input {
-		border: 1px solid var(--gray-300);
+		border-color: var(--gray-300);
 		background-color: var(--gray-800);
 		color: var(--white);
 	}

@@ -1,5 +1,5 @@
 header, .nav, .nav-Menu {
-	background-color: var(--slate-300);
+	background-color: var(--blue-200);
 }
 
 header {
@@ -136,7 +136,7 @@ path.NavIcon {
 
 @media (prefers-color-scheme: dark) {
 	header, .nav, .nav-Menu {
-		background-color: var(--slate-800);
+		background-color: var(--blue-950);
 	}
 	.nav-Toggle svg {
 		fill: var(--slate-050);

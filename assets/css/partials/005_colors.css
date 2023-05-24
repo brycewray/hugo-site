@@ -10,6 +10,7 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--black: hsl(0, 0%, 0%); /* could also be #333 at some point, hence this var */
 	--slate-050: #f7f8fa;
 	--slate-100: #f2f5fa;
+	--slate-150: #eaeef5;
 	--slate-200: #e1e7ef;
 	--slate-300: #ccd5e2;
 	--slate-400: #94a3b8;
@@ -17,11 +18,11 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--slate-600: #48566a;
 	--slate-700: #334256;
 	--slate-800: #1b283a;
-	/*
 	--slate-900: #0b1828;
+	/*
 	--slate-950: #000717;
-	--gray-050: #f9fafb;
 	*/
+	--gray-050: #f9fafb;
 	--gray-100: #f2f3f5;
 	--gray-200: #e6e8ec;
 	--gray-300: #d1d4da;
@@ -108,8 +109,10 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--amber-800: #805000;
 	--amber-900: #6a4100;
 	--amber-950: #3b2300;
+	*/
 	--yellow-050: #fcfbec;
 	--yellow-100: #fbf9c3;
+	/*
 	--yellow-200: #f9f28c;
 	--yellow-300: #f0e54e;
 	--yellow-400: #e3d62b;
@@ -117,8 +120,10 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--yellow-600: #a69c0c;
 	--yellow-700: #7e7600;
 	--yellow-800: #655f00;
+	*/
 	--yellow-900: #554f00;
 	--yellow-950: #2f2b00;
+	/*
 	--lime-050: #f3ffe9;
 	--lime-100: #e4fdcf;
 	--lime-200: #cffca5;
@@ -143,12 +148,16 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--green-950: #082d14;
 	--emerald-050: #edfdf4;
 	--emerald-100: #d1fae4;
+	*/
 	--emerald-200: #a9f3ce;
+	/*
 	--emerald-300: #74e7b2;
 	--emerald-400: #39d296;
 	--emerald-500: #14b980;
 	--emerald-600: #109567;
+	*/
 	--emerald-700: #157853;
+	/*
 	--emerald-800: #135e41;
 	--emerald-900: #134e36;
 	--emerald-950: #082b1d;
@@ -185,9 +194,9 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--sky-800: #00587e;
 	--sky-900: #004b6c;
 	--sky-950: #023148;
+	*/
 	--blue-050: #eff6fe;
 	--blue-100: #dcebfe;
-	*/
 	--blue-200: #bcdbfd;
 	--blue-300: #91c4fd;
 	/*
@@ -198,8 +207,8 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--blue-700: #0061b0;
 	--blue-800: #004f91;
 	--blue-900: #00437c;
-	/*
 	--blue-950: #002950;
+	/*
 	--indigo-050: #eef1fe;
 	--indigo-100: #e2e6ff;
 	--indigo-200: #c9d1fe;
@@ -267,18 +276,23 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--rose-900: #881334;
 	--rose-950: #4c0519;
 	*/
-	--default-light: var(--gray-700);
+	--default-light: var(--gray-800);
 	--default-dark: var(--gray-300);
 	--default-light-link: var(--blue-700);
 	--default-dark-link: var(--blue-300);
 	--default-light-link-afh: var(--blue-900);
 	--default-dark-link-afh: var(--slate-300);
+	--default-light-head: var(--blue-900);
+	--default-dark-head: var(--blue-200);
+	--default-light-box-bkgd: var(--slate-050);
+	--default-dark-box-bkgd: var(--slate-900);
 }
 
 @supports (color: oklch(49% 0.1 252)) {
 	:root {
 		--slate-050: oklch(98% 0.003 256);
 		--slate-100: oklch(97% 0.007 256);
+		--slate-150: oklch(95% 0.01 256);
 		--slate-200: oklch(92.5% 0.013 256);
 		--slate-300: oklch(87% 0.02 256);
 		--slate-400: oklch(71% 0.035 256);
@@ -377,8 +391,10 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 		--amber-800: oklch(47.5% 0.118 70);
 		--amber-900: oklch(41.5% 0.103 70);
 		--amber-950: oklch(28% 0.0695 70);
+		*/
 		--yellow-050: oklch(98.5% 0.02 105);
 		--yellow-100: oklch(97% 0.069 105);
+		/*
 		--yellow-200: oklch(94.5% 0.124 105);
 		--yellow-300: oklch(90.5% 0.166 105);
 		--yellow-400: oklch(86% 0.173 105);
@@ -386,8 +402,10 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 		--yellow-600: oklch(68% 0.142 105);
 		--yellow-700: oklch(55.5% 0.121 105);
 		--yellow-800: oklch(47.5% 0.103 105);
+		*/
 		--yellow-900: oklch(42% 0.09 105);
 		--yellow-950: oklch(28.5% 0.064 105);
+		/*
 		--lime-050: oklch(98.5% 0.031 131);
 		--lime-100: oklch(96.5% 0.066 131);
 		--lime-200: oklch(94% 0.122 131);

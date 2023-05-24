@@ -1,9 +1,9 @@
 @use 'variables' as var;
 
 header, .nav, .nav-Menu {
-	background-color: var(--slate-300);
+	background-color: var(--blue-200);
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--slate-800);
+		background-color: var(--blue-950);
 	}
 }
 

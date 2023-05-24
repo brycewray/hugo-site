@@ -1,8 +1,9 @@
 .bg-dark {
+	background-color: var(--blue-200);
 	margin-top: 2.5rem;
-	background-color: var(--slate-300);
 	padding: 0.5rem 0;
 }
+
 .bg-dark div, .bg-dark p {
 	color: black;
 }
@@ -57,7 +58,7 @@ contact-button button:hover {
 
 @media (prefers-color-scheme: dark) {
 	.bg-dark {
-		background-color: var(--slate-800);
+		background-color: var(--blue-950);
 	}
 	.bg-dark div, .bg-dark p {
 		color: var(--white);

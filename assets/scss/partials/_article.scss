@@ -2,9 +2,9 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: var(--default-light);
+	color: var(--default-light-head);
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark);
+		color: var(--default-dark-head);
 	}
 	&:hover, &:active, &:focus {
 		color: var(--default-light-link);
@@ -27,14 +27,14 @@
 	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
-	background-color: var(--white);
+	background-color: var(--default-light-box-bkgd);
 	border: 1px solid;
 	border-color: var(--black);
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--slate-800);
+		background-color: var(--default-dark-box-bkgd);
 		border-color: var(--gray-200);
 	}
 	p {
@@ -162,7 +162,7 @@ article {
 // following from...
 // https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
 article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	color: var(--gray-800);
+	color: var(--gray-900);
 	@media (prefers-color-scheme: dark) {
 		color: var(--gray-200);
 	}

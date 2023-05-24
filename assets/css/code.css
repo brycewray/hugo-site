@@ -42,7 +42,7 @@
 	--rose-200: #fdccd1;
 	--rose-800: #9f133d;
 	color: var(--black);
-	background-color: var(--white);
+	background-color: var(--gray-050);
 	border: 1px solid var(--gray-400);
 }
 
@@ -747,7 +747,7 @@ code {
 
 article code {
 	font-size: 0.975em;
-	--bg-lt: white;
+	--bg-lt: var(--slate-150);
 	--bg-dk: var(--slate-700);
 }
 
@@ -772,7 +772,7 @@ article blockquote code {
 
 .box code {
 	font-size: 1em; /* definitely em */
-	--bg-lt: var(--slate-100);
+	--bg-lt: var(--slate-200);
 	--bg-dk: var(--slate-600);
 }
 

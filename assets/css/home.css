@@ -9,6 +9,7 @@
 	text-align: center;
 }
 .homeOpen h1 {
+	color: var(--default-light);
 	line-height: 1.5em;
 	font-size: clamp(1.5rem, 0.5rem + 1.5vw, 2.25rem);
 	letter-spacing: -0.025em;
@@ -19,6 +20,7 @@
 	padding-top: 1.5em;
 }
 .homePost-Latest {
+	color: var(--default-light);
 	margin-top: 0.5em;
 	margin-bottom: 0.25em;
 	font-size: clamp(2rem, 2rem + 1vw, 3.5rem);
@@ -85,5 +87,10 @@
 @media screen and (min-width: 1536px) {
 	.homeOpen h1 {
 		padding: 2.5em 0 0 2.5em;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.homeOpen h1, .homePost-Latest {
+		color: var(--default-dark);
 	}
 }

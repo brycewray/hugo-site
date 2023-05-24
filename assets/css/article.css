@@ -1,6 +1,6 @@
 .header-anchor {
 	text-decoration: none;
-	color: var(--default-light);
+	color: var(--default-light-head);
 }
 
 .header-anchor:focus, .header-anchor:hover, .header-anchor:active {
@@ -20,7 +20,7 @@
 	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
-	background-color: var(--white);
+	background-color: var(--default-light-box-bkgd);
 	border: 1px solid var(--black);
 	margin: 0.5em auto;
 	width: 100%;
@@ -32,18 +32,12 @@
 	margin: 0;
 }
 
-.box + hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
-	margin-top: 1.75em;
-}
-
-.box code {
-	background-color: var(--slate-100);
-}
-
-/* box a code -- needed only for dark mode */
-
 .box .red {
 	color: var(--red-600);
+}
+
+.box + hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
+	margin-top: 1.75em;
 }
 
 img.containedImage {
@@ -135,7 +129,7 @@ article picture img {
 	height: auto;
 }
 article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	color: var(--gray-800); /* (vs. gray-700) */
+	color: var(--gray-900);
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
 	color: var(--gray-600); /* (vs. gray-550) */
@@ -143,7 +137,7 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 
 @media (prefers-color-scheme: dark) {
 	.header-anchor {
-		color: var(--default-dark);
+		color: var(--default-dark-head);
 	}
 	.header-anchor:active, .header-anchor:focus, .header-anchor:hover {
 		color: var(--default-dark-link);
@@ -153,7 +147,7 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 		color: var(--gray-400);
 	}
 	.box {
-		background-color: var(--slate-800);
+		background-color: var(--default-dark-box-bkgd);
 		border: 1px solid var(--gray-200);
 	}
 	.box code {
