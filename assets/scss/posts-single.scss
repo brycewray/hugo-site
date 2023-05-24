@@ -71,3 +71,7 @@ contact-button {
 		}
 	}
 }
+
+.box + contact-button {
+	margin-top: 1.5em;
+}

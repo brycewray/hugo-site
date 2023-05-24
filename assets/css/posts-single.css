@@ -54,6 +54,10 @@ contact-button button:hover {
 	cursor: pointer;
 }
 
+.box + contact-button {
+	margin-top: 1.5em;
+}
+
 @media (prefers-color-scheme: dark) {
 	.bg-dark {
 		background-color: var(--slate-800);
