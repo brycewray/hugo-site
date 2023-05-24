@@ -21,10 +21,10 @@ Well, I definitely am a "big enough nerd," so I went ahead and read the post. An
 - As a result, the [Embedded Dart Sass repository](https://github.com/sass/dart-sass-embedded) is now archived. The final binary --- at v.1.62.1, as currently is true for Dart Sass (and the [Node.js version](https://github.com/sass/sass)) --- still works but presumably will receive no further updates.
 - It's unclear at this writing what this will mean for the [Cloudflare Pages platform](https://pages.cloudflare.com)'s [recently announced improvements for Hugo users](/posts/2023/05/cloudflare-pages-more-attractive-home-hugo-sites/). The CFP team is aware of the Sass blog post.
 - I have made appropriate updates to all my own posts regarding how Hugo users can install Embedded Dart Sass:
-	- "[Using Dart Sass with Hugo: the sequel](https://www.brycewray.com/posts/2022/03/using-dart-sass-hugo-sequel/)."
-	- "[Using Dart Sass with Hugo: the GitHub Actions edition](https://www.brycewray.com/posts/2022/05/using-dart-sass-hugo-github-actions-edition/)."
-	- "[Using Dart Sass with Hugo: the nitty-gritty](https://www.brycewray.com/posts/2022/05/using-dart-sass-hugo-nitty-gritty/)."
-	- "[Using Dart Sass with Hugo: the GitLab edition](https://www.brycewray.com/posts/2022/08/using-dart-sass-hugo-gitlab-edition/)."
+	- "[Using Dart Sass with Hugo: the sequel](/posts/2022/03/using-dart-sass-hugo-sequel/)."
+	- "[Using Dart Sass with Hugo: the GitHub Actions edition](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/)."
+	- "[Using Dart Sass with Hugo: the nitty-gritty](/posts/2022/05/using-dart-sass-hugo-nitty-gritty/)."
+	- "[Using Dart Sass with Hugo: the GitLab edition](/posts/2022/08/using-dart-sass-hugo-gitlab-edition/)."
 
 I'll provide further updates on these subjects as events warrant.
 
