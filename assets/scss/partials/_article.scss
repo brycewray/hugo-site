@@ -176,4 +176,7 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 
 .gitinfo {
 	margin: 2em 0;
+	code {
+		background-color: transparent;
+	}
 }
