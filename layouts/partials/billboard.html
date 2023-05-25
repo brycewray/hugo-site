@@ -32,15 +32,11 @@
 			<p class="billboard-p-text" data-pagefind-ignore>
 				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
 			</p>
+			{{- if ne .Title $titleContact -}}
 			<p class="ctr legal" data-pagefind-ignore>
-				{{- if .GitInfo -}}
-					{{ if ne (.PublishDate.Format "2006-01-02") ((.GitInfo.AuthorDate).Format "2006-01-02") }}Page file last modified: {{ (.GitInfo.AuthorDate).Format "2006-01-02" }}<br />{{- end }}
-					Latest commit: <a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener"><code class="billboard-code">{{ .GitInfo.AbbreviatedHash }}</code></a>&nbsp;&bull;&nbsp;<a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>
-				{{- else -}}
-					<em>[No commits yet for this page.]</em>
-				{{- end }}
-				{{- if ne .Title $titleContact -}}<br />Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words{{- end -}}
+				Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words
 			</p>
+			{{- end -}}
 		{{- end }}
 	</div>
 </div>

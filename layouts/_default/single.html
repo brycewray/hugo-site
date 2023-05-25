@@ -3,6 +3,9 @@
 	<div class="container-narrower">
 		<article class="article">
 			{{ .Content | safeHTML }}
+			{{- if ne .Title .Site.Params.Titles.Contact -}}
+				{{- partial "git.html" . -}}
+			{{- end -}}
 		</article>
 	</div>
 {{ end }}

@@ -173,3 +173,7 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 		color: var(--gray-350);
 	}
 }
+
+.gitinfo {
+	margin: 2em 0;
+}

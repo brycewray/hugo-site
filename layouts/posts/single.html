@@ -19,6 +19,7 @@
 					</button>
 				</a>{{- if eq .Site.Params.EmailObfuscation "local" -}}<noscript><p class="ctr legal">(“Reply via email” button hidden in an attempt to limit spambots’ access. Please activate JavaScript to see the button.)</p></noscript>{{- end -}}
 			</contact-button>
+			{{- partial "git.html" . -}}
 		</article>
 	</div>
 	{{ if or .PrevPage .NextPage }}
