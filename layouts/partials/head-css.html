@@ -15,7 +15,7 @@
 */ -}}
 {{- if eq $Styling "SCSS" -}}
 	{{- $scssOptions = merge $scssOptions $scssOptionsComp -}}
-	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions -}}
+	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions | fingerprint -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
 	{{- $cssP = resources.Match "css/partials/*.css" | resources.Concat "css/partials.css" -}}
