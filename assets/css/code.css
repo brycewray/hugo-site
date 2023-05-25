@@ -803,6 +803,9 @@ article ol li .highlight {
 	article blockquote code {
 		color: var(--slate-300);
 	}
+	.box a code {
+		background-color: var(--slate-700);
+	}
 }
 
 @media screen and (min-width: 768px) {

@@ -162,12 +162,6 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 		background-color: var(--default-dark-box-bkgd);
 		border: 1px solid var(--gray-200);
 	}
-	.box code {
-		background-color: var(--slate-600);
-	}
-	.box a code {
-		background-color: var(--slate-700);
-	}
 	.box .red {
 		color: var(--red-400);
 	}

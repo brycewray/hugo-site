@@ -801,10 +801,18 @@ article blockquote code {
 	}
 }
 
-.box code {
-	font-size: 1em; // definitely em
-	--bg-lt: var(--slate-200);
-	--bg-dk: var(--slate-600);
+.box {
+	code {
+		font-size: 1em; // definitely em
+		--bg-lt: var(--slate-200);
+		--bg-dk: var(--slate-600);
+	}
+	a code {
+		// needed only for dark mode
+		@media (prefers-color-scheme: dark) {
+			background-color: var(--slate-700);
+		}
+	}
 }
 
 article ol li .highlight {
