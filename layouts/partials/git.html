@@ -1,6 +1,7 @@
 <p class="legal ctr gitinfo" data-pagefind-ignore>
 	{{- if .GitInfo -}}
-		Page file last modified {{ (.GitInfo.AuthorDate).Format "2006-01-02" }} {{ .GitInfo.AuthorDate | time.Format ":time_long" | upper }}<br />
+		Page file last modified:<br />
+		{{ (.GitInfo.AuthorDate).Format "2006-01-02" }}, {{ (time .GitInfo.AuthorDate "America/Chicago") | time.Format ":time_long" | upper }}<br />
 		Latest commit: <a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener"><code class="billboard-code">{{ .GitInfo.AbbreviatedHash }}</code></a>&nbsp;&bull;&nbsp;<a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">History</a>
 	{{- else -}}
 		<em>[No commits yet for this page.]</em>
