@@ -38,13 +38,13 @@
 		overflow-x: auto !important;
 	}
 	code[class*="language-"], pre[class*="language-"] {
-		color: white;
+		color: #fff;
 	}
 	:not(pre) > code[class*="language-"], pre[class*="language-"] {
 		background: #000;
 	}
 	.chroma * {
-		color: white !important;
+		color: #fff !important;
 	}
 	article code {
 		background-color: #ddd;
