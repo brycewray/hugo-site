@@ -62,13 +62,20 @@ Your current display may not allow you to see much difference, especially given 
 **Note**: This sort of thing shows why you may want to use [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) even in [Sass](https://sass-lang.com), since you can assign new values to existing CSS variables but **not** to existing Sass variables.
 {.box}
 
+<br />
+
+<strong class="red">Update, 2023-05-26</strong>: Since I initially issued this post, [Chris Coyier](https://chriscoyier.net) has weighed in [anew](https://chriscoyier.net/2023/05/25/two-things-that-are-not-great-about-oklch/) regarding OKLCH, and not nearly as favorably as he did in his earlier post on the subject, "[OK, OKLCH 👑](https://chriscoyier.net/2023/01/22/ok-oklch-%F0%9F%91%91/)." Thus, I have added his newer effort to the following list.
+{.box}
+
 ## References and related reading
 
 - CSS Working Group, "[CSS Color Module Level 4](https://drafts.csswg.org/css-color/)" (Editor's Draft, <span class="nobrk">2023-05-10</span>).
 - MDN Web Docs, ["oklch()"](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch) (as modified <span class="nobrk">2023-05-08</span>).
 - *Shop Talk Show* podcast, Episode 556, "[Andrey Sitnik and Using OKLCH for Color](https://shoptalkshow.com/556/)" (posted <span class="nobrk">2023-03-13</span>).
 - Adam Argyle, "[Open Props okLCH beta](https://nerdy.dev/open-props-oklch-palettes-beta)" (<span class="nobrk">2023-03-31</span>).
-- Chris Coyier, "[OK, OKLCH 👑](https://chriscoyier.net/2023/01/22/ok-oklch-%F0%9F%91%91/)" (<span class="nobrk">2023-01-22</span>).
+- Chris Coyier:
+  - "[OK, OKLCH 👑](https://chriscoyier.net/2023/01/22/ok-oklch-%F0%9F%91%91/)" (<span class="nobrk">2023-01-22</span>).
+  - "[Two Things That are Not Great About OKLCH](https://chriscoyier.net/2023/05/25/two-things-that-are-not-great-about-oklch/)"[^cap] (<span class="nobrk">2023-05-25</span>).
 - Keith J. Grant, "[It's Time to Learn oklch Color](https://keithjgrant.com/posts/2023/04/its-time-to-learn-oklch-color/)" (<span class="nobrk">2023-04-07</span>).
 - Manuel Matuzović, "[Day 98: oklab() and oklch()](https://www.matuzo.at/blog/2023/100daysof-day98/)" (<span class="nobrk">2023-02-08</span>).
 - Jim Nielsen, "[OK LCH, I'm Convinced](https://blog.jim-nielsen.com/2023/ok-lch-im-convinced/)" (<span class="nobrk">2023-01-08</span>).
@@ -80,3 +87,5 @@ Your current display may not allow you to see much difference, especially given 
 - Vojtěch Vidra and Ondřej Pešička:
 	- "[LCH is the best color space!](https://atmos.style/blog/lch-color-space)" (<span class="nobrk">2022-04-14</span>).
 	- "[LCH vs. OKLCH: what is the difference?](https://atmos.style/blog/lch-vs-oklch)" (<span class="nobrk">2023-05-06</span>).
+
+[^cap]: That's how he capitalized the title.
