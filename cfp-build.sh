@@ -1,5 +1,7 @@
 #!/bin/bash
 # # Always run with `bash cfp-build.sh` on CFP!
+# # Non-Node build command:
+# #   git fetch --unshallow && bash cfp-build.sh
 
 echo "                       "
 echo "***********************"
