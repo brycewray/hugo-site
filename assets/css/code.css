@@ -691,7 +691,7 @@ code {
 }
 
 article {
-	code {
+	& code {
 		font-size: 0.975em;
 		--bg-lt: var(--slate-150);
 		--bg-dk: var(--slate-700);
