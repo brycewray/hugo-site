@@ -5,7 +5,7 @@
 }
 
 .bg-dark div, .bg-dark p {
-	color: black;
+	color: var(--black);
 }
 .bg-dark p.prevnextP {
 	margin: 0 auto;
@@ -30,11 +30,6 @@ contact-button {
 	place-items: center;
 	margin-top: 0.5em;
 	--blue-050: #eff6fe;
-}
-@supports (color: oklch(49% 0.1 252)) {
-	contact-button {
-		--blue-050: oklch(97% 0.013 252);
-	}
 }
 contact-button button {
 	width: 15rem;

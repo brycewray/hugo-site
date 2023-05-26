@@ -25,7 +25,6 @@
 				color: var(--blue-200);
 			}
 			&:hover, &:focus {
-				color: gray;
 				color: var(--gray-800);
 				text-decoration: underline; // normal
 				text-decoration-thickness: var.$textDcThickMd;
@@ -43,10 +42,6 @@ contact-button {
 	display: grid;
 	place-items: center;
 	margin-top: 0.5em;
-	--blue-050: #eff6fe;
-	@supports (color: oklch(49% 0.1 252)) {
-		--blue-050: oklch(97% 0.013 252);
-	}
 	button {
 		width: 15rem;
 		padding: 0.25rem 0;

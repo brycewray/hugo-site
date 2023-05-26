@@ -1,11 +1,6 @@
 .searchDiv, .searchDivPF {
-	--blue-100: #dcebfe;
+	--blue-100: hsl(210, 100%, 93%);
 	margin: 2em auto;
-}
-@supports (color: oklch(49% 0.1 252)) {
-	.searchDiv, .searchDivPF {
-		--blue-100: oklch(93.5% 0.03 252);
-	}
 }
 
 .searchDivPF {
@@ -168,12 +163,12 @@
 		border-color: var(--gray-300);
 	}
 	.searchInput {
-		color: white;
+		color: var(--white);
 	}
 	.searchBtn {
 		border-color: var(--default-dark-link);
 		background-color: var(--default-dark-link);
-		color: black;
+		color: var(--black);
 	}
 	.searchBtn:focus, .searchBtn:active, .searchBtn:hover {
 		border-color: var(--default-dark-link-afh);
@@ -196,7 +191,7 @@
 		background-color: var(--default-dark-link-afh);
 	}
 	.pagefind-ui__result-excerpt mark {
-		color: white;
+		color: var(--white);
 		background-color: var(--blue-900);
 	}
 }

@@ -1,14 +1,7 @@
 table {
-	--sky-100: #e0f2fe;
-	--emerald-050: #edfdf4;
-	--emerald-900: #134e36;
-}
-@supports (color: oklch(49% 0.1 252)) {
-	table {
-		--sky-100: #e0f2fe;
-		--emerald-050: #edfdf4;
-		--emerald-900: #134e36;
-	}
+	--emerald-050: hsl(155, 80%, 96%);
+	--emerald-900: hsl(155, 61%, 19%);
+	--sky-100: hsl(200, 94%, 94%);
 }
 
 td {

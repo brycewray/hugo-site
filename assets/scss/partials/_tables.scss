@@ -1,14 +1,9 @@
 @use 'partials/variables' as var;
 
 table {
-	--sky-100: #e0f2fe;
-	--emerald-050: #edfdf4;
-	--emerald-900: #134e36;
-	@supports (color: oklch(49% 0.1 252)) {
-		--sky-100: oklch(95% 0.025 237);
-		--emerald-050: oklch(98% 0.021 162);
-		--emerald-900: oklch(38% 0.073 162);
-	}
+	--emerald-050: hsl(155, 80%, 96%);
+	--emerald-900: hsl(155, 61%, 19%);
+	--sky-100: hsl(200, 94%, 94%);
 }
 
 td {
@@ -94,7 +89,7 @@ table.ulysses {
 		background-color: var(--blue-800);
 		border: 1px solid;
 		border-color: var(--black);
-		color: white;
+		color: var(--white);
 		@media (prefers-color-scheme: dark) {
 			border-color: var(--white);
 		}

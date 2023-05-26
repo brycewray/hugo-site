@@ -6,7 +6,7 @@ search-button {
 search-button button {
 	/* display: block; */
 	margin: 0 auto;
-	color: white;
+	color: var(--white);
 	width: 15em;
 	padding: 0.5em 0.25em;
 	background-color: var(--default-light-link);
