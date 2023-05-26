@@ -1,6 +1,4 @@
 {{- $css := "" -}}
-{{- $cssP := "" -}}
-{{- $cssM := "" -}}
 {{- $printCSS := "" -}}
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
 {{- $scssComp := dict "outputStyle" "compressed" -}}
@@ -18,9 +16,7 @@
 	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions | fingerprint -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $cssP = resources.Match "css/partials/*.css" | resources.Concat "css/partials.css" -}}
-	{{- $cssM = resources.Match "css/*.css" | resources.Concat "css/main.css" -}}
-	{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" | minify | fingerprint -}}
+	{{- $css = resources.Get "css/index.css" | postCSS | minify | fingerprint -}}
 {{- end -}}
 {{- if ne $css "" }}
 	{{- /*
