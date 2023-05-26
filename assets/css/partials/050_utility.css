@@ -3,6 +3,9 @@
 }
 .red {
 	color: var(--red-700);
+	@media (prefers-color-scheme: dark) {
+		color: var(--red-300);
+	}
  }
 
 .legal {
@@ -146,12 +149,6 @@ start, text/LH classes from TWCSS
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border-width: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-	red {
-		color: var(--red-300);
-	}
 }
 
 @media screen and (min-width: 768px) {

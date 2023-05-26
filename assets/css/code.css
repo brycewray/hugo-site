@@ -41,18 +41,18 @@
 	color: var(--black);
 	background-color: var(--gray-050);
 	border: 1px solid var(--gray-400);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+	}
 }
 
 /* fallback colors to catch var issues) */
 .chroma *, .code-inline * {
 	color: var(--clr-lt, #ffff00);
-}
-
-@media (prefers-color-scheme: dark) {
-	.chroma *, .code-inline * {
+	@media (prefers-color-scheme: dark) {
 		color: var(--clr-dk, #3a9aca);
 	}
-} /* Keep this media query up here, rather than with other media queries at end */
+}
 
 /* Other */
 .chroma .x, .code-inline .x {
@@ -96,6 +96,9 @@
 	display: block;
 	width: 100%;
 	background-color: var(--yellow-200);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--yellow-800);
+	}
 }
 
 /* #faf0e6umbersTable */
@@ -563,6 +566,9 @@ code {
   font-kerning: none;
   font-variant-ligatures: none;
   background-color: var(--slate-200);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--slate-800);
+	}
 }
 
 code[class*="language-"],
@@ -592,23 +598,19 @@ pre.chroma {
 pre[class*="language-"] {
 	color: var(--black);
 	background-color: var(--white);
+	@media (prefers-color-scheme: dark) {
+		color: var(--white);
+			background-color: var(--slate-800);
+		}
 }
 
 .highlight {
 	position: relative;
-}
-.highlight .chroma {
-	border-radius: 16px;
-	/* keeps code blocks from being too small
-			due to the `article code` rule above */
-	font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
-}
-
-@media screen and  (min-width: 1024px) {
-	pre.expand:hover {
-		margin-left: -20vw;
-		margin-right: -20vw;
-		max-width: 95vw;
+	.chroma {
+		border-radius: 16px;
+		/* keeps code blocks from being too small
+				due to the `article code` rule above */
+		font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
 	}
 }
 
@@ -635,25 +637,21 @@ pre[class*="language-"] {
 	z-index: 1;
 	opacity: 0;
 	transition: 0.1s;
+	> svg {
+		fill:  var(--gray-500);
+	}
+	&:hover {
+		cursor: pointer;
+		border-color: var(--green-600);
+		background-color: var(--green-100);
+		> svg {
+			fill: var(--green-600);
+		}
+	}
+	&:focus {
+		outline: 0;
+	}
 }
-.clipboard-button > svg {
-	fill:  var(--gray-500);
-}
-.clipboard-button:hover {
-	cursor: pointer;
-	border-color: var(--green-600);
-	background-color: var(--green-100);
-}
-.clipboard-button:hover > svg {
-	fill: var(--green-600);
-}
-.clipboard-button:focus {
-	outline: 0;
-}
-
-/* .highlight {
-   position: relative;
-} */
 
 .highlight:hover > .clipboard-button {
 	opacity: 1;
@@ -662,6 +660,9 @@ pre[class*="language-"] {
 
 code, article code, .box code {
 	background-color: var(--bg-lt);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--bg-dk);
+	}
 }
 
 code {
@@ -683,35 +684,53 @@ code {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	line-height: 0.5em;
-}
-.labeled-highlight + div.highlight {
-	margin-top: 0;
-	padding-top: 0;
-}
-
-article code {
-	font-size: 0.975em;
-	--bg-lt: var(--slate-150);
-	--bg-dk: var(--slate-700);
+	+ div.highlight {
+		margin-top: 0;
+		padding-top: 0;
+	}
 }
 
-article .footnotes code {
-	font-size: 1em;
-	/* overriding the `article code` part above for footnotes */
-}
-
-article p code.code-inline {
-	/* font-size: var(--text-sm); */
-	padding: 0.25em 0.5em;
-	margin: 0 0.25em;
-}
-
-article .footnotes li code {
-	white-space: normal;
-}
-
-article blockquote code {
-	color: var(--slate-800);
+article {
+	code {
+		font-size: 0.975em;
+		--bg-lt: var(--slate-150);
+		--bg-dk: var(--slate-700);
+		@media screen and (min-width: 768px) {
+			font-size: 0.95em;
+		}
+		@media screen and (min-width: 1280px) {
+			font-size: 0.925em;
+		}
+		@media screen and (min-width: 1536px) {
+			font-size: 0.9em;
+		}
+	}
+	.footnotes {
+		& code {
+			font-size: 1em;
+			/* overriding the `article code` part above for footnotes */
+		}
+		& li code {
+			white-space: normal;
+		}
+	}
+	& p code {
+		white-space: nowrap;
+		.code-inline {
+			/* font-size: var(--text-sm); */
+			padding: 0.25em 0.5em;
+			margin: 0 0.25em;
+		}
+	}
+	& blockquote code {
+		color: var(--slate-800);
+		@media (prefers-color-scheme: dark) {
+			color: var(--slate-300);
+		}
+	}
+	& ol li .highlight {
+		line-height: 1.5;
+	}
 }
 
 .box code {
@@ -720,53 +739,8 @@ article blockquote code {
 	--bg-dk: var(--slate-600);
 }
 
-article ol li .highlight {
-	line-height: 1.5;
-}
-
 @media (prefers-color-scheme: dark) {
-	.chroma, .code-inline {
-		background-color: var(--slate-800);
-	}
-	/* LineHighlight */
-	.chroma .hl, .code-inline .hl {
-		background-color: var(--yellow-800);
-	}
-	pre,
-	code {
-		background-color: var(--slate-800);
-	}
-	:not(pre) > code[class*="language-"],
-	pre[class*="language-"] {
-	color: var(--white);
-		background-color: var(--slate-800);
-	}
-	code, article code, .box code {
-		background-color: var(--bg-dk);
-	}
-	article blockquote code {
-		color: var(--slate-300);
-	}
 	.box a code {
 		background-color: var(--slate-700);
-	}
-}
-
-@media screen and (min-width: 768px) {
-	article code {
-		font-size: 0.95em;
-	}
-	article p code {
-		white-space: nowrap;
-	}
-}
-@media screen and (min-width: 1280px) {
-	article code {
-		font-size: 0.925em;
-	}
-}
-@media screen and (min-width: 1536px) {
-	article code {
-		font-size: 0.9em;
-	}
+	} /* no light-mode equiv.? */
 }
