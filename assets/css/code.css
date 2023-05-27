@@ -101,7 +101,7 @@
 	}
 }
 
-/* #faf0e6umbersTable */
+/* LineNumbersTable */
 .chroma .lnt, .code-inline .lnt {
 	margin-right: 0.4em;
 	padding: 0 0.4em 0 0.4em;
@@ -109,7 +109,7 @@
 	--clr-dk: var(--gray-300);
 }
 
-/* #faf0e6umbers */
+/* LineNumbers */
 .chroma .ln, .code-inline .ln {
 	margin-right: 0.4em;
 	padding: 0 0.4em 0 0.4em;
