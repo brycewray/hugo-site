@@ -11,7 +11,7 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$serif;
-	background-color: var(--white);
+	background-color: var(--blue-050);
 	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
 		background: var(--black);

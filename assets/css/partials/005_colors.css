@@ -281,6 +281,6 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--default-dark-link-afh: var(--slate-300);
 	--default-light-head: var(--blue-900);
 	--default-dark-head: var(--blue-200);
-	--default-light-box-bkgd: var(--slate-050);
+	--default-light-box-bkgd: var(--white);
 	--default-dark-box-bkgd: var(--slate-900);
 }

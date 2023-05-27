@@ -43,7 +43,7 @@
 	--rose-200: hsl(345, 92%, 90%);
 	--rose-800: hsl(345, 79%, 35%);
 	color: var(--black);
-	background-color: var(--gray-050);
+	background-color: var(--white);
 	border: 1px solid;
 	border-color: var(--gray-400);
 	@media (prefers-color-scheme: dark) {
@@ -752,16 +752,10 @@ article blockquote code {
 }
 
 .box {
-	code {
+	code, a code {
 		font-size: 1em; // definitely em
-		--bg-lt: var(--slate-200);
+		--bg-lt: var(--slate-100);
 		--bg-dk: var(--slate-600);
-	}
-	a code {
-		// needed only for dark mode
-		@media (prefers-color-scheme: dark) {
-			background-color: var(--slate-700);
-		}
 	}
 }
 
