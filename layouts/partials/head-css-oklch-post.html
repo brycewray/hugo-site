@@ -5,55 +5,66 @@
 	*/}}
 	<style media="screen">
 		:root {
-			--green-050: #f0fcf2;
-			--green-100: #defbe3;
-			--green-200: #c0f6ca;
-			--green-300: #8feda4;
-			--green-400: #52dd7c;
-			--green-500: #1bc45e;
-			--green-600: #09a34b;
-			--green-700: #147f3c;
-			--green-800: #1b6533;
-			--green-900: #18522a;
-			--green-950: #082d14;
+			--twgreen-050: #f0fcf2;
+			--okgreen-050: var(--twgreen-050);
+			--twgreen-100: #defbe3;
+			--okgreen-100: var(--twgreen-100);
+			--twgreen-200: #c0f6ca;
+			--okgreen-200: var(--twgreen-200);
+			--twgreen-300: #8feda4;
+			--okgreen-300: var(--twgreen-300);
+			--twgreen-400: #52dd7c;
+			--okgreen-400: var(--twgreen-400);
+			--twgreen-500: #1bc45e;
+			--okgreen-500: var(--twgreen-500);
+			--twgreen-600: #09a34b;
+			--okgreen-600: var(--twgreen-600);
+			--twgreen-700: #147f3c;
+			--okgreen-700: var(--twgreen-700);
+			--twgreen-800: #1b6533;
+			--okgreen-800: var(--twgreen-800);
+			--twgreen-900: #18522a;
+			--okgreen-900: var(--twgreen-900);
+			--twgreen-950: #082d14;
+			--okgreen-950: var(--twgreen-950);
 		}
 		@supports (color: oklch(49% 0.1 252)) {
 			:root {
-				--green-050: oklch(98% 0.018 150);
-				--green-100: oklch(96% 0.043 150);
-				--green-200: oklch(92.5% 0.081 150);
-				--green-300: oklch(87% 0.136 150);
-				--green-400: oklch(80% 0.182 150);
-				--green-500: oklch(72% 0.192 150);
-				--green-600: oklch(62.5% 0.17 150);
-				--green-700: oklch(52.5% 0.137 150);
-				--green-800: oklch(45% 0.108 150);
-				--green-900: oklch(39% 0.09 150);
-				--green-950: oklch(26.5% 0.063 150);
+				--okgreen-050: oklch(98% 0.018 150);
+				--okgreen-100: oklch(96% 0.043 150);
+				--okgreen-200: oklch(92.5% 0.081 150);
+				--okgreen-300: oklch(87% 0.136 150);
+				--okgreen-400: oklch(80% 0.182 150);
+				--okgreen-500: oklch(72% 0.192 150);
+				--okgreen-600: oklch(62.5% 0.17 150);
+				--okgreen-700: oklch(52.5% 0.137 150);
+				--okgreen-800: oklch(45% 0.108 150);
+				--okgreen-900: oklch(39% 0.09 150);
+				--okgreen-950: oklch(26.5% 0.063 150);
 			}
 		}
-		.twgreen-50 {background-color: #f0fdf4; color: var(--black)}
-		.twgreen-100 {background-color: #dcfce7; color: var(--black)}
-		.twgreen-200 {background-color: #bbf7d0; color: var(--black)}
-		.twgreen-300 {background-color: #86efac; color: var(--black)}
-		.twgreen-400 {background-color: #4ade80; color: var(--black)}
-		.twgreen-500 {background-color: #22c55e; color: var(--black);}
-		.twgreen-600 {background-color: #16a34a; color: var(--white);}
-		.twgreen-700 {background-color: #15803d; color: var(--white);}
-		.twgreen-800 {background-color: #166534; color: var(--white);}
-		.twgreen-900 {background-color: #14532d; color: var(--white);}
-		.twgreen-950 {background-color: #052e16; color: var(--white);}
-		.okgreen-50 {background-color: var(--green-050); color: var(--black)}
-		.okgreen-100 {background-color: var(--green-100); color: var(--black)}
-		.okgreen-200 {background-color: var(--green-200); color: var(--black)}
-		.okgreen-300 {background-color: var(--green-300); color: var(--black)}
-		.okgreen-400 {background-color: var(--green-400); color: var(--black)}
-		.okgreen-500 {background-color: var(--green-500); color: var(--black);}
-		.okgreen-600 {background-color: var(--green-600); color: var(--white);}
-		.okgreen-700 {background-color: var(--green-700); color: var(--white);}
-		.okgreen-800 {background-color: var(--green-800); color: var(--white);}
-		.okgreen-900 {background-color: var(--green-900); color: var(--white);}
-		.okgreen-950 {background-color: var(--green-950); color: var(--white);}
+		.twgreen-50 {background-color: var(--twgreen-050); color: var(--black)}
+		.twgreen-100 {background-color: var(--twgreen-100); color: var(--black)}
+		.twgreen-200 {background-color: var(--twgreen-200); color: var(--black)}
+		.twgreen-300 {background-color: var(--twgreen-300); color: var(--black)}
+		.twgreen-400 {background-color: var(--twgreen-400); color: var(--black)}
+		.twgreen-500 {background-color: var(--twgreen-500); color: var(--black);}
+		.twgreen-600 {background-color: var(--twgreen-600); color: var(--white);}
+		.twgreen-700 {background-color: var(--twgreen-700); color: var(--white);}
+		.twgreen-800 {background-color: var(--twgreen-800); color: var(--white);}
+		.twgreen-900 {background-color: var(--twgreen-900); color: var(--white);}
+		.twgreen-950 {background-color: var(--twgreen-950); color: var(--white);}
+		.okgreen-50 {background-color: var(--okgreen-050); color: var(--black)}
+		.okgreen-100 {background-color: var(--okgreen-100); color: var(--black)}
+		.okgreen-200 {background-color: var(--okgreen-200); color: var(--black)}
+		.okgreen-300 {background-color: var(--okgreen-300); color: var(--black)}
+		.okgreen-400 {background-color: var(--okgreen-400); color: var(--black)}
+		.okgreen-500 {background-color: var(--okgreen-500); color: var(--black);}
+		.okgreen-600 {background-color: var(--okgreen-600); color: var(--white);}
+		.okgreen-700 {background-color: var(--okgreen-700); color: var(--white);}
+		.okgreen-800 {background-color: var(--okgreen-800); color: var(--white);}
+		.okgreen-900 {background-color: var(--okgreen-900); color: var(--white);}
+		.okgreen-950 {background-color: var(--okgreen-950); color: var(--white);}
 		.colorBoxContainer {
 			background-color: var(--black);
 			padding: 0.25rem 0 1.5rem;
