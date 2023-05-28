@@ -7,7 +7,7 @@
     "node": "18.x"
   },
   "config": {
-    "hugo": "0.112.5"
+    "hugo": "0.112.4"
   },
   "scripts": {
     "clean": "rimraf public",
