@@ -1,4 +1,6 @@
 {{- $css := "" -}}
+{{- $cssP := "" -}}
+{{- $cssM := "" -}}
 {{- $printCSS := "" -}}
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
 {{- $scssComp := dict "outputStyle" "compressed" -}}
@@ -14,12 +16,11 @@
 {{- if eq $Styling "SCSS" -}}
 	{{- $scssOptions = merge $scssOptions $scssOptionsComp -}}
 	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions | fingerprint -}}
-	{{- $scssOptionsPrint := merge $scssOptionsPrint $scssOptionsPrintComp -}}
-	{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
 {{- end -}}
 {{- if eq $Styling "VCSS" -}}
-	{{- $css = resources.Get "css/index.css" | postCSS | minify | fingerprint -}}
-	{{- $printCSS = resources.Get "css/print/print.css" | minify | fingerprint -}}
+	{{- $cssP = resources.Match "css/partials/*.css" | resources.Concat "css/partials.css" -}}
+	{{- $cssM = resources.Match "css/*.css" | resources.Concat "css/main.css" -}}
+	{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" | minify | fingerprint -}}
 {{- end -}}
 {{- if ne $css "" }}
 	{{- /*
@@ -29,6 +30,15 @@
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 {{- end }}
+
+{{- /* for those who've requested CSS for printing */ -}}
+{{- if eq $Styling "SCSS" -}}
+	{{- $scssOptionsPrint := merge $scssOptionsPrint $scssOptionsPrintComp -}}
+	{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
+{{- end -}}
+{{- if eq $Styling "VCSS" -}}
+	{{- $printCSS = resources.Get "css/print/print.css" | minify | fingerprint -}}
+{{- end -}}
 {{- if ne $printCSS "" -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}

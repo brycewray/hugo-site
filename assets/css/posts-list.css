@@ -6,26 +6,14 @@
 	flex-direction: row;
 	gap: 1em;
 	justify-content: center;
-	.pagerSpacer {
-		width: 0.625em;
-		@media screen and (min-width: 768px) {
-			width: 1.25em;
-		}
-		@media screen and (min-width: 1024px) {
-			width: 1.5em;
-		}
-	}
+}
+.posts-pagerThing .pagerSpacer {
+	width: 0.625em;
 }
 
 .posts-Container {
 	margin: 0 auto;
 	width: 85%;
-	@media screen and (min-width: 1024px) {
-		width: 75%;
-	}
-	@media screen and (min-width: 1536px) {
-		width: 62.5%;
-	}
 }
 .posts-ItemDiv {
 	margin: 0;
@@ -56,9 +44,10 @@
 	font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
 	line-height: 1.33;
 	margin-bottom: 0.5em;
-	& time {
-		display: inline;
-	}
+}
+
+.posts-Dates time {
+	display: inline;
 }
 
 hr.paginatorTop, hr.paginatorBottom {
@@ -66,9 +55,6 @@ hr.paginatorTop, hr.paginatorBottom {
 	height: 1px;
 	background-color: var(--black);
 	width: clamp(65%, 75vw, 90%);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--white);
-	}
 }
 
 hr.paginatorTop {
@@ -87,9 +73,9 @@ hr.paginatorBottom {
 	margin-inline-start: 0;
 	margin-inline-end: 0;
 	padding-inline-start: 0;
-	& li {
-		display: inline;
-	}
+}
+.pagination li {
+	display: inline;
 }
 
 .arrowStop {
@@ -102,14 +88,39 @@ path.FirstLast {
 
 path.NextPrev {
 	fill: var(--default-light-link);
-	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link);
-	}
 }
 
 a:hover path.NextPrev {
 	fill: var(--default-light-link-afh);
-	@media (prefers-color-scheme: dark) {
+}
+
+@media screen and (min-width: 768px) {
+	.posts-pagerThing .pagerSpacer {
+		width: 1.25em;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.posts-pagerThing .pagerSpacer {
+		width: 1.5em;
+	}
+	.posts-Container {
+		width: 75%;
+	}
+}
+@media screen and (min-width: 1536px) {
+	.posts-Container {
+		width: 62.5%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	hr.paginatorTop, hr.paginatorBottom {
+		background-color: var(--white);
+	}
+	path.NextPrev {
+		fill: var(--default-dark-link);
+	}
+	a:hover path.NextPrev {
 		fill: var(--default-dark-link-afh);
 	}
 }
