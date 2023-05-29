@@ -102,6 +102,7 @@ jobs:
           projectName: 'static-site-v2' # was 'static-site' (now 'static-site-old')
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: '3' # enable Wrangler v3
       - name: Publish to Vercel (Betahuhn) (cond. - host)
         if: ${{ env.HOST == 'Vercel' }}
         uses: BetaHuhn/deploy-to-vercel-action@v1
