@@ -99,7 +99,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CFP_API_TOKEN }}
           accountID: ${{ secrets.CF_ACCOUNT_ID }}
-          projectName: 'static-site-old' # was 'static-site'
+          projectName: 'static-site-v2' # was 'static-site' (now 'static-site-old')
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish to Vercel (Betahuhn) (cond. - host)
