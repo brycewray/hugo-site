@@ -60,5 +60,7 @@ Be advised I still consider Elon Musk's stewardship of Twitter so far to have be
 
 Besides: unless I'm prepared to live off the grid, I have to accept that rich, evil SOBs control *many* services and products I use and need. Twitter is only one example thereof. That is reality. I didn't build it; I just inhabit it. Reluctantly.
 
-**Update from the future**: Not long after this post, I decided I would use the Twitter account only to *view* content, specifically the types I mentioned above, rather than *tweeting* any of my own.
+**Updates from the future**: Not long after this post, I decided I would use the Twitter account only to **view** content, specifically the types I mentioned above, rather than tweeting any of my own.\
+\
+Also, I am no longer active on the Fediverse under any account.
 {.box}
