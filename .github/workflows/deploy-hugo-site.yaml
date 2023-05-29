@@ -28,6 +28,8 @@ jobs:
         uses: szenius/set-timezone@v1.2
         with:
           timezoneLinux: "America/Chicago" # default = "UTC"
+          timezoneMacos: "America/Chicago" # default = "UTC"
+          timezoneWindows: "Central Standard Time" # default = "GMT"
       - name: Checkout default branch
         uses: actions/checkout@v3
         with:
