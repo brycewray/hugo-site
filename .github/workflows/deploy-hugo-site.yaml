@@ -90,7 +90,7 @@ jobs:
         run: |
           mv middleware.js public/middleware.js
           mv vercel.json public/vercel.json
-      - name: Install Wrangler for CFP (cond. - Node)
+      - name: Install Wrangler for CFP (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         run: npm i -g wrangler --unsafe-perm=true --commit-dirty=true
       - name: Publish to CFP (cond. - host)
