@@ -150,9 +150,3 @@ start, text/LH classes from TWCSS
 	white-space: nowrap;
 	border-width: 0;
 }
-
-@media screen and (min-width: 768px) {
-	.img-phn {
-		width: 50%;
-	}
-}
