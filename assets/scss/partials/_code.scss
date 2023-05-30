@@ -5,43 +5,6 @@
 // Background
 
 .chroma, .code-inline {
-	--gray-500: hsl(219, 9%, 46%);
-	--zinc-300: hsl(240, 4%, 84%);
-	--zinc-800: hsl(240, 4%, 16%);
-	--stone-300: hsl(25, 5%, 83%);
-	--stone-800: hsl(25, 6%, 15%);
-	--red-800: hsl(0, 71%, 35%);
-	--red-900: hsl(0, 63%, 31%);
-	--orange-200: hsl(25, 100%, 87%);
-	--orange-300: hsl(25, 100%, 78%);
-	--orange-400: hsl(25, 100%, 66%);
-	--orange-700: hsl(25, 100%, 36%);
-	--orange-800: hsl(25, 100%, 29%);
-	--yellow-200: hsl(55, 90%, 76%);
-	--yellow-700: hsl(55, 100%, 25%);
-	--yellow-800: hsl(55, 100%, 20%);
-	--green-100: hsl(145, 78%, 93%);
-	--green-200: hsl(145, 75%, 86%);
-	--green-600: hsl(145, 90%, 34%);
-	--green-700: hsl(145, 73%, 29%);
-	--green-800: hsl(145, 58%, 25%);
-	--emerald-200: hsl(155, 76%, 81%);
-	--emerald-700: hsl(155, 70%, 28%);
-	--cyan-200: hsl(190, 100%, 85%);
-	--cyan-300: hsl(190, 100%, 73%);
-	--cyan-600: hsl(190, 100%, 34%);
-	--cyan-700: hsl(190, 100%, 27%);
-	--cyan-800: hsl(190, 85%, 24%);
-	--sky-200: hsl(200, 97%, 87%);
-	--sky-300: hsl(200, 100%, 77%);
-	--sky-700: hsl(200, 100%, 30%);
-	--sky-800: hsl(200, 100%, 25%);
-	--purple-200: hsl(270, 100%, 92%);
-	--purple-800: hsl(270, 66%, 40%);
-	--fuchsia-300: hsl(290, 93%, 83%);
-	--fuchsia-700: hsl(290, 70%, 41%);
-	--rose-200: hsl(345, 92%, 90%);
-	--rose-800: hsl(345, 79%, 35%);
 	color: var(--black);
 	background-color: var(--white);
 	border: 1px solid;
@@ -636,11 +599,6 @@ pre[class*="language-"] {
 // h/t https://simplernerd.com/hugo-add-copy-to-clipboard-button/
 
 .clipboard-button {
-	--gray-500: hsl(219, 9%, 46%);
-	--green-100: hsl(145, 78%, 93%);
-	--green-600: hsl(145, 90%, 34%);
-	--emerald-200: hsl(155, 76%, 81%);
-	--emerald-700: hsl(155, 70%, 28%);
 	position: absolute;
 	right: 0;
 	padding: 2px 7px 5px 7px;

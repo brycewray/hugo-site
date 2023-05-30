@@ -126,8 +126,6 @@ header {
 }
 
 circle.NavIcon {
-	--gray-500: hsl(219, 9%, 46%);
-	--blue-500: hsl(210, 100%, 48%);
 	fill: var(--blue-500);
 }
 a:hover circle.NavIcon {
