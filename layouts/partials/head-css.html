@@ -1,28 +1,16 @@
-{{- $css := "" -}}
-{{- $cssP := "" -}}
-{{- $cssM := "" -}}
-{{- $printCSS := "" -}}
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
 {{- $scssComp := dict "outputStyle" "compressed" -}}
 {{- $scssOptionsComp := merge $scssComp (dict "targetPath" "index.min.css") -}}
-{{- $scssOptionsPrint := $scssOptions -}}
+{{- $scssOptionsPrint := $scssOptions -}}{{/* before merging the latter below */}}
 {{- $scssOptionsPrintComp := merge $scssComp (dict "targetPath" "print.min.css") -}}
-{{- $Styling := .Site.Params.Styling -}}
 
 {{- /*
 	minify/fingerprint everything even in dev,
 	due to Safari caching weirdness
 */ -}}
-{{- if eq $Styling "SCSS" -}}
-	{{- $scssOptions = merge $scssOptions $scssOptionsComp -}}
-	{{- $css = resources.Get "scss/index.scss" | toCSS $scssOptions | fingerprint -}}
-{{- end -}}
-{{- if eq $Styling "VCSS" -}}
-	{{- $cssP = resources.Match "css/partials/*.css" | resources.Concat "css/partials.css" -}}
-	{{- $cssM = resources.Match "css/*.css" | resources.Concat "css/main.css" -}}
-	{{- $css = slice $cssP $cssM | resources.Concat "css/index.css" | minify | fingerprint -}}
-{{- end -}}
-{{- if ne $css "" }}
+{{- $scssOptions = merge $scssOptions $scssOptionsComp -}}
+{{- $css := resources.Get "scss/index.scss" | toCSS $scssOptions | fingerprint -}}
+{{- with $css }}
 	{{- /*
 	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 	<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
@@ -32,13 +20,8 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- if eq $Styling "SCSS" -}}
-	{{- $scssOptionsPrint := merge $scssOptionsPrint $scssOptionsPrintComp -}}
-	{{- $printCSS = resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
-{{- end -}}
-{{- if eq $Styling "VCSS" -}}
-	{{- $printCSS = resources.Get "css/print/print.css" | minify | fingerprint -}}
-{{- end -}}
-{{- if ne $printCSS "" -}}
+{{- $scssOptionsPrint = merge $scssOptionsPrint $scssOptionsPrintComp -}}
+{{- $printCSS := resources.Get "scss/print/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
+{{- with $printCSS -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}
