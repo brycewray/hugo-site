@@ -677,7 +677,7 @@ pre[class*="language-"] {
 	transition: 0.2s;
 }
 
-code {
+code, article code, .box code, .box a code {
 	background-color: var(--bg-lt);
 	@media (prefers-color-scheme: dark) {
 		background-color: var(--bg-dk);
@@ -720,8 +720,6 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	--bg-lt: var(--slate-150);
-	--bg-dk: var(--slate-700);
 }
 article .footnotes code {
 	font-size: 1em;
@@ -754,8 +752,8 @@ article blockquote code {
 .box {
 	code, a code {
 		font-size: 1em; // definitely em
-		--bg-lt: var(--slate-100);
-		--bg-dk: var(--slate-600);
+		--bg-lt: var(--slate-150);
+		--bg-dk: var(--slate-700);
 	}
 }
 

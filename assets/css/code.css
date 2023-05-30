@@ -689,12 +689,6 @@ code {
 	padding-top: 0;
 }
 
-article code {
-	font-size: 0.975em;
-	--bg-lt: var(--slate-150);
-	--bg-dk: var(--slate-700);
-}
-
 article .footnotes code {
 	font-size: 1em;
 	/* overriding the `article code` part above for footnotes */
@@ -716,7 +710,7 @@ article blockquote code {
 
 .box code, box a code {
 	font-size: 1em; /* definitely em */
-	--bg-lt: var(--slate-100);
+	--bg-lt: var(--slate-150);
 	--bg-dk: var(--slate-700);
 }
 
@@ -741,14 +735,11 @@ article ol li .highlight {
 	color: var(--white);
 		background-color: var(--slate-800);
 	}
-	code, article code, .box code {
+	code, article code, .box code, .box a code {
 		background-color: var(--bg-dk);
 	}
 	article blockquote code {
 		color: var(--slate-300);
-	}
-	.box a code {
-		background-color: var(--slate-700);
 	}
 }
 
