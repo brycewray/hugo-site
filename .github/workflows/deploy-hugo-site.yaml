@@ -9,6 +9,7 @@ env:
   HUGO_VERSION: 0.112.5 # will get Extended Version below
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
   PAGEFIND_VERSION: 0.12.0
+  PAGEFIND_NPX: true # ('true' for npx command, otherwise for binary install via `setup-bin`)
   EMBEDDED_SASS: true # ('true' for pre-1.62.1)
   STYLING: VCSS # choices: 'SCSS' and 'VCSS' (vanilla CSS, with or without PostCSS)
   NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
@@ -42,7 +43,7 @@ jobs:
       - name: Install npm packages (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm install
-      - name: Download/install Hugo (cond. - non-Node)
+      - name: Install Hugo (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
@@ -70,8 +71,8 @@ jobs:
         with:
           path: resources
           key: ${{ runner.os }}-resources
-      - name: Install Pagefind (cond. - non-Node)
-        if: ${{ env.NODE != 'true' }}
+      - name: Install Pagefind (cond. - non-Node and non-npx)
+        if: ${{ env.NODE != 'true' && env.PAGEFIND_NPX != 'true' }}
         uses: supplypike/setup-bin@v3
         with:
           uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
@@ -80,20 +81,25 @@ jobs:
       - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm run build
-      - name: Build site with Hugo, move feed files, run Pagefind (cond. - non-Node)
+      - name: Build site with Hugo, move feed files (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         run: |
           hugo --verbose --minify --gc
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
-          pagefind_extended --source "public"
+      - name: Run Pagefind (cond. - non-Node and non-npx)
+        if: ${{ env.NODE != 'true' && env.PAGEFIND_NPX != 'true'}}
+        run: pagefind_extended --source "public"
+      - name: Run Pagefind (cond. - non-Node with npx)
+        if: ${{ env.NODE != 'true' && env.PAGEFIND_NPX == 'true' }}
+        run: npm_config_yes=true npx pagefind --source "public"
       - name: Move Vercel-specific files to `/public` (cond. - host = Vercel)
         if: ${{ env.HOST == 'Vercel' }}
         run: |
           mv middleware.js public/middleware.js
           mv vercel.json public/vercel.json
-      - name: Install Wrangler for CFP (cond. - non-Node)
-        if: ${{ env.NODE != 'true' }}
+      - name: Install Wrangler for CFP (cond. - host = CFP and non-Node)
+        if: ${{ env.NODE != 'true' && env.HOST == 'CFP' }}
         run: npm i -g wrangler --unsafe-perm=true --commit-dirty=true
       - name: Publish to CFP (cond. - host = CFP)
         if: ${{ env.HOST == 'CFP' }}
@@ -119,6 +125,7 @@ jobs:
         run: |
           rm -rf public/middleware.js
           rm -rf public/vercel.json
+
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
 # (INCLUDING the brackets AND case-sensitivity):
