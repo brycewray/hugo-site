@@ -71,13 +71,6 @@ jobs:
         with:
           path: resources
           key: ${{ runner.os }}-resources
-      - name: Install Pagefind (cond. - non-Node and non-npx)
-        if: ${{ env.NODE != 'true' && env.PAGEFIND_NPX != 'true' }}
-        uses: supplypike/setup-bin@v3
-        with:
-          uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
-          name: "pagefind_extended"
-          version: ${{env.PAGEFIND_VERSION}}
       - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm run build
@@ -87,6 +80,13 @@ jobs:
           hugo --verbose --minify --gc
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
+      - name: Install Pagefind (cond. - non-Node and non-npx)
+        if: ${{ env.NODE != 'true' && env.PAGEFIND_NPX != 'true' }}
+        uses: supplypike/setup-bin@v3
+        with:
+          uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
+          name: "pagefind_extended"
+          version: ${{env.PAGEFIND_VERSION}}
       - name: Run Pagefind (cond. - non-Node and non-npx)
         if: ${{ env.NODE != 'true' && env.PAGEFIND_NPX != 'true'}}
         run: pagefind_extended --source "public"
