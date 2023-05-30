@@ -12,9 +12,9 @@
 	hr {
 		border: none;
 		height: 2px;
-		background-color: var(--gray-700);
+		background-color: var(--default-light-head);
 		@media (prefers-color-scheme: dark) {
-			background-color: var(--gray-300);
+			background-color: var(--default-dark-head);
 		}
 	}
 	ol {
