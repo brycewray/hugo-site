@@ -1,6 +1,7 @@
 [exec]
 	allow = [
 		'^dart-sass-embedded$',
+		'^dart-sass$',
 		'^go$',
 		'^npx$',
 		'^postcss$',
