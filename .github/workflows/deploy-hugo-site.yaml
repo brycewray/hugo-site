@@ -10,7 +10,7 @@ env:
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
   EMBEDDED_SASS: true # ('true' for pre-1.62.1)
   PAGEFIND_VERSION: 0.12.0
-  PAGEFIND_NPX: true # ('true' for npx command, otherwise for binary install via `setup-bin`)
+  PAGEFIND_NPX: false # ('true' for npx command, otherwise for binary install via `setup-bin`)
 
 
 jobs:
