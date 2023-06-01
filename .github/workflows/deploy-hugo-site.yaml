@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.112.5 # will get Extended Version below
+  HUGO_VERSION: 0.112.6 # will get Extended Version below
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
   EMBEDDED_SASS: true # ('true' for pre-1.62.1)
   PAGEFIND_VERSION: 0.12.0
