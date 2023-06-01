@@ -69,7 +69,7 @@ Nonetheless, I brooded over this for a few weeks until, a couple of weekends ago
 
 I didn't need three weeks this time, as I did the first iteration, to decide it was a bad idea. After all, it had been fewer than two months since that initial attempt, so I still retained a lot of what I'd learned and, thus, avoided repeating some mistakes.
 
-Oh, and remember what I said about struggling to figure out how to get images to appear and, once I was [given a solution on Reddit](https://www.reddit.com/r/gatsbyjs/comments/c9ufg1/graphql_sees_front_matter_item_featured_image/), was certain it wasn't documented in the Gatsby site? Well, I was wrong. It's there. It's just given the bum's rush as an "edge case," an "escape hatch," as one of "a number of less common cases." But  [the docs do say](https://www.gatsbyjs.org/docs/static-folder) that one of those "less common cases" is, indeed, when:
+Oh, and remember what I said about struggling to figure out how to get images to appear and, once I was given a solution on Reddit, was certain it wasn't documented in the Gatsby site? Well, I was wrong. It's there. It's just given the bum's rush as an "edge case," an "escape hatch," as one of "a number of less common cases." But  [the docs do say](https://www.gatsbyjs.org/docs/static-folder) that one of those "less common cases" is, indeed, when:
 
 > You have thousands of images and need to dynamically reference their paths.[^imageCount]
 
