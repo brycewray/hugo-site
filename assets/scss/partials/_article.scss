@@ -29,13 +29,13 @@
 	box-sizing: border-box;
 	background-color: var(--default-light-box-bkgd);
 	border: 1px solid;
-	border-color: var(--black);
+	border-color: var(--default-light-border);
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
 		background-color: var(--default-dark-box-bkgd);
-		border-color: var(--gray-200);
+		border-color: var(--default-dark-border);
 	}
 	p {
 		padding: 0;

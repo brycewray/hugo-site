@@ -184,14 +184,16 @@
 	// end
 	--blue-050: hsl(210, 100%, 97%);
 	--blue-100: hsl(210, 100%, 93%);
-	--blue-150: hsl(211, 100%, 90%);
+	--blue-150: hsl(210, 100%, 90%);
 	--blue-200: hsl(210, 100%, 86%);
 	--blue-300: hsl(210, 96%, 78%);
 	--blue-400: hsl(210, 93%, 67%);
 	--blue-500: hsl(210, 100%, 48%);
 	--blue-600: hsl(210, 100%, 40%);
 	--blue-700: hsl(210, 100%, 45%);
+	--blue-750: hsl(210, 100%, 37%);
 	--blue-800: hsl(210, 100%, 28%);
+	--blue-850: hsl(210, 100%, 26%);
 	--blue-900: hsl(210, 100%, 24%);
 	--blue-950: hsl(210, 100%, 16%);
 	// start
@@ -262,14 +264,27 @@
 	--rose-900: hsl(345, 75%, 30%);
 	--rose-950: hsl(345, 88%, 16%);
 	// end
+	// === defaults ===
+	// primaries
 	--default-light: var(--gray-800);
 	--default-dark: var(--gray-300);
 	--default-light-link: var(--blue-700);
 	--default-dark-link: var(--blue-300);
 	--default-light-link-afh: var(--blue-900);
 	--default-dark-link-afh: var(--slate-300);
-	--default-light-head: var(--blue-900);
+	--default-light-head: var(--blue-850);
 	--default-dark-head: var(--blue-200);
-	--default-light-box-bkgd: var(--white);
+	// backgrounds and borders
+	--default-light-bkgd: var(--white);
+	--default-dark-bkgd: var(--black);
+	--default-light-box-bkgd: var(--slate-050);
 	--default-dark-box-bkgd: var(--slate-900);
+	--default-light-code-bkgd: var(--slate-050);
+	--default-dark-code-bkgd: var(--slate-900);
+	--default-light-article-code-bkgd: var(--slate-150);
+	--default-dark-article-code-bkgd: var(--slate-800);
+	--default-light-box-code-bkgd: var(--slate-200);
+	--default-dark-box-code-bkgd: var(--slate-700);
+	--default-light-border: var(--neutral-400);
+	--default-dark-border: var(--neutral-600);
 }

@@ -11,10 +11,10 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$serif;
-	background-color: var(--blue-050);
+	background-color: var(--default-light-bkgd);
 	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
-		background: var(--black);
+		background: var(--default-dark-bkgd);
 		color: var(--default-dark);
 	}
 }
