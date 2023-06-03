@@ -7,6 +7,9 @@ date: 2023-06-03T12:25:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
+**Note**: This post also appears on [dev.to](https://dev.to/brycewray/hugo-and-tailwind-peace-at-last-maybe-4h25).
+{.box}
+
 In the beginning, there were the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) and the [Tailwind CSS](https://tailwindcss.com) styling framework. Separately, they were great; but, when you tried to put them together, things got complicated. Now, it appears, that's been resolved. \[Pinky-swear.]
 
 <!--more-->
