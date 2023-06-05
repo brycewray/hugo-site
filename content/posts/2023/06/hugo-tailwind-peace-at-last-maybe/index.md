@@ -26,7 +26,7 @@ That changed with the [recent release of Hugo v.0.112.0](https://github.com/gohu
 - Tailwind CSS:
 	- "Watches" the `hugo_stats.json` file, as well as the other usual locations, to trigger JIT-based changes in the CSS output during Hugo's development mode.
 
-**Note**: The example code provided in the Hugo v.0.112.0 release notes assumes the use of [Hugo Modules](https://gohugo.io/hugo-modules/); but, if you're not using them, you don't need the `module` settings to make this work.
+**Update, 2023-06-05**: The example code provided in the Hugo v.0.112.0 release notes seems to assume the use of [Hugo Modules](https://gohugo.io/hugo-modules/). I initially thought that, if not using them, you wouldn't need the `module` settings to make this work. **However**, I've since [learned otherwise](https://discourse.gohugo.io/t/using-the-new-cachebusters-feature-with-a-theme/44700).
 {.box}
 
 And I can tell you that it works quite well. I'm currently working on a freelance project that pairs Tailwind v.3.x with suitably `cachebusters`-ed Hugo v.0.112.x (Hugo/Tailwind is the customer's preferred arrangement), and the interaction between the two is just as it should be between Tailwind and any site-building platform.[^hacks]
