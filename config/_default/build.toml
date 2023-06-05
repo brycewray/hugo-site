@@ -1,3 +1,16 @@
 # useResourceCacheWhen = 'fallback'
 writeStats = true
 # noJSConfigInAssets = false
+
+[[cachebusters]]
+  source = "assets/watching/hugo_stats\\.json"
+  target = "css"
+[[cachebusters]]
+  source = "(postcss|tailwind)\\.config\\.js"
+  target = "css"
+[[cachebusters]]
+  source = "assets/.*\\.(js|ts|jsx|tsx)"
+  target = "js"
+[[cachebusters]]
+  source = "assets/.*\\.(.*)$"
+  target = "$1"
