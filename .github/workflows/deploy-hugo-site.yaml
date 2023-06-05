@@ -44,14 +44,14 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
-      - name: Install Embedded Dart Sass (cond. - SCSS)
+      - name: Install Embedded Dart Sass (cond. - SCSS and EMBEDDED_SASS)
         if: ${{ env.STYLING == 'SCSS' && env.EMBEDDED_SASS == 'true' }}
         run: |
           curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           sass_embedded/dart-sass-embedded --version
           echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      - name: Install Dart Sass (cond. - SCSS)
+      - name: Install Dart Sass (cond. - SCSS but without EMBEDDED_SASS)
         # based on Sass changes announced 2023-05-20:
         # https://sass-lang.com/blog/rfc-embedded-protocol-2
         # (along with "Archived" status of previous Embedded Dart Sass repo on GitHub)
@@ -84,7 +84,7 @@ jobs:
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           pagefind_extended --source "public"
-      - name: Install Wrangler for CFP (cond. - Node)
+      - name: Install Wrangler for CFP (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         run: npm i -g wrangler --unsafe-perm=true --commit-dirty=true
       - name: Publish to CFP
