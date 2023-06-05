@@ -16,7 +16,7 @@ languageCode = 'en-us'
 paginate = 5 # so five posts will appear on each page from '/posts'
 rssLimit = 10 # default is -1 (unlimited); setting of '10' conforms to Eleventy repo's handling
 summaryLength = 30 # words --- if you use summaries **without** the `--more--` workaround
-theme = 'twcss' # choices are sass and twcss - as of 2023-06-03
+theme = 'sass' # choices are sass and twcss - as of 2023-06-03
 # # https://discourse.gohugo.io/t/site-theme/33200
 timeout = '150s' # for the sake of newly generated images and such; default is `30s`
 timeZone = 'America/Chicago'
