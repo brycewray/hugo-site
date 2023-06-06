@@ -1,0 +1,177 @@
+@import '/themes/twcss/assets/css/fonts.css';
+@import '/themes/twcss/assets/css/code.css';
+@import '/themes/twcss/assets/css/lite-yt-embed.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+	html {
+		-moz-tab-size: 2;
+		tab-size: 2;
+	}
+	#nav-Checkbox:checked ~ ul.nav-Menu li,
+	#nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
+		@apply block;
+	}
+	#nav-Checkbox:checked ~ label#nav-Toggle #svg-menu {
+		@apply hidden;
+	}
+	#nav-Checkbox:checked ~ ul.nav-Menu {
+		@apply pb-4;
+	}
+	b, strong {
+		@apply font-semibold;
+	}
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+		@apply text-blue-850 dark:text-blue-200;
+	}
+	h1, .h1 {
+		@apply text-3xl mb-4;
+	}
+	h2, .h2, h3, .h3 {
+		@apply text-xl;
+	}
+	h4, h5 {
+		@apply text-lg;
+	}
+	h3, .h3, h5, .h5 {
+		@apply italic;
+	}
+	h1, h2, h3, h4, h5 {
+		@apply outline-none active:outline-none focus:outline-none hover:outline-none;
+	}
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+		@apply !tracking-tight font-semibold;
+	}
+	a {
+		@apply underline underline-offset-[0.225em] decoration-[0.075rem] text-blue-700 dark:text-blue-300;
+		&:focus, &:hover, &:active {
+			@apply text-blue-900 dark:text-zinc-300;
+		}
+	}
+	sup a, a.previous, a.next, .footnote-return {
+		@apply no-underline;
+	}
+	.header-anchor {
+		@apply text-blue-850 dark:text-blue-200 no-underline hover:underline hover:underline-offset-[0.225em] hover:decoration-[0.075rem] hover:text-blue-700 hover:dark:text-blue-200;
+		&:hover::after {
+			content: "#";
+			@apply text-base pl-2;
+		}
+	}
+	p, li {
+		/* for handling Markdown-created <p> and <li> */
+		@apply mb-3 text-base !tracking-normal;
+	}
+	ul li, ul li li li {
+		@apply list-disc;
+	}
+	ul li li {
+		@apply list-square;
+	}
+	ul, ol {
+		@apply pl-8;
+	}
+	ol {
+		@apply list-decimal;
+	}
+	article {
+		h1, h2, h3, h4 {
+			@apply mt-8 mb-6;
+		}
+		p {
+			@apply mt-6 mb-6;
+		}
+		p, li {
+			@apply !leading-relaxed;
+		}
+		ul {
+			li li, li li li, li li li li {
+				@apply my-2;
+			}
+		}
+		hr + ul {
+			@apply mt-4;
+		}
+		.red {
+			@apply text-red-700 dark:text-red-300;
+		}
+		.pokey {
+			@apply text-sm !tracking-normal;
+		}
+		img.containedImage, picture img {
+			@apply min-w-full max-w-full w-full h-auto;
+		}
+		blockquote {
+			@apply px-6 text-zinc-700 dark:text-zinc-300 border-l-4 border-zinc-300 dark:border-zinc-400;
+		}
+		hr {
+			@apply border-solid border-zinc-900 dark:border-zinc-100;
+		}
+	}
+	/* .footnotes, .footnote-sim, .footnote-ref {
+		@apply font-sans;
+	} */
+
+	.footnotes {
+		@apply pt-[0.5em];
+		& hr {
+			@apply border-0 h-[1px] bg-black dark:bg-white;
+		}
+		& ol {
+			padding-inline-start: 1.5rem;
+			@apply pt-2;
+			& li {
+				@apply text-sm my-0 pt-2 pb-1;
+				& p {
+					@apply text-sm my-0 py-0;
+				}
+			}
+		}
+		& .footnote-backref {
+			@apply text-xs;
+		}
+	}
+
+	.footnote-sim {
+		@apply text-sm text-blue-500 dark:text-blue-200;
+	}
+
+	a.footnote-return {
+		font-size: 50%;
+	}
+	.box {
+		@apply text-sm !tracking-normal block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 mx-2 my-auto w-full px-4 py-6 mb-2;
+		& p {
+			@apply p-0 m-0;
+		}
+	}
+	.box + hr, hr + .box {
+		@apply mt-7;
+	}
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	.animate-fade {
+		animation: fadeIn 750ms ease-in-out;
+	}
+	.imgcCaption, .imgCaption, .lazypicturecaption {
+		@apply p-0 mbs-2 leading-snug text-xs text-center;
+	}
+	.legal {
+		@apply text-xs;
+	}
+	.indentAfterLI {
+		@apply ml-8;
+		&.box {
+			margin-left: 3em;
+			width: calc(100% - 3em);
+		}
+	}
+}
