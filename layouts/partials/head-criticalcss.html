@@ -1,0 +1,6 @@
+{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
+{{- /* leave minification to the HTML process */ -}}
+{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
+{{- with $css }}
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}

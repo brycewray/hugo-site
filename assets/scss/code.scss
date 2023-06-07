@@ -1,3 +1,4 @@
+@charset 'utf-8';
 @use 'partials/variables' as var;
 @use 'partials/colors' as clr;
 
@@ -637,27 +638,12 @@ pre[class*="language-"] {
 	transition: 0.2s;
 }
 
-code, article code, .box code, .box a code {
-	background-color: var(--bg-lt);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bg-dk);
-	}
-}
-
-code {
-	font-family: var.$monospaced;
-  font-kerning: none;
-  font-variant-ligatures: none;
-	--bg-lt: var(--default-light-article-code-bkgd);
-	--bg-dk: var(--default-dark-article-code-bkgd);
-}
-
-// Inline code
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
+// // Inline code
+// :not(pre) > code[class*="language-"] {
+// 	padding: .1em;
+// 	border-radius: .3em;
+// 	white-space: normal;
+// }
 
 .labeled-highlight {
 	margin-bottom: 0;
@@ -667,56 +653,4 @@ code {
 .labeled-highlight + div.highlight {
 	margin-top: 0;
 	padding-top: 0;
-}
-
-article code {
-	font-size: 0.975em;
-	@media screen and (min-width: var.$bkpt_md) {
-		font-size: 0.95em;
-	}
-	@media screen and (min-width: var.$bkpt_xl) {
-		font-size: 0.925em;
-	}
-	@media screen and (min-width: var.$bkpt_2xl) {
-		font-size: 0.9em;
-	}
-}
-article .footnotes code {
-	font-size: 1em;
-	// overriding the `article code` part above for footnotes
-}
-
-article p code {
-	@media screen and (min-width: var.$bkpt_md) {
-		white-space: nowrap;
-	}
-}
-
-article p code.code-inline {
-	// font-size: var.$text-sm;
-	padding: 0.25em 0.5em;
-	margin: 0 0.25em;
-}
-
-article .footnotes li code {
-	white-space: normal;
-}
-
-article blockquote code {
-	color: clr.$slate-800;
-	@media (prefers-color-scheme: dark) {
-		color: clr.$slate-300;
-	}
-}
-
-.box {
-	code, a code {
-		font-size: 1em; // definitely em
-		--bg-lt: var(--default-light-box-code-bkgd);
-		--bg-dk: var(--default-dark-box-code-bkgd);
-	}
-}
-
-article ol li .highlight {
-	line-height: 1.5;
 }
