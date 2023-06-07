@@ -2,6 +2,8 @@
 @use 'partials/colors' as clr;
 
 :root {
+	--sans-serif: #{var.$sans-serif};
+	// = = = COLORS = = =
 	// === defaults ===
 	// primaries
 	--default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
