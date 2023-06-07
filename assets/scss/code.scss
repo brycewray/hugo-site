@@ -692,8 +692,6 @@ article code {
 	@media screen and (min-width: var.$bkpt_2xl) {
 		font-size: 0.9em;
 	}
-	--bg-lt: var(--white);
-	--bg-dk: #{clr.$slate-700};
 }
 article .footnotes code {
 	font-size: 1em;
