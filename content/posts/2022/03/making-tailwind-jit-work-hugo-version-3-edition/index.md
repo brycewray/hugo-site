@@ -5,6 +5,9 @@ author: Bryce Wray
 date: 2022-03-06T16:16:00-06:00
 ---
 
+**Update from the future**: In 2023, the [release of Hugo 0.112.0](https://github.com/gohugoio/hugo/releases/tag/v0.112.0) finally (?) [resolved](/posts/2023/06/hugo-tailwind-peace-at-last-maybe/) this issue.
+{.box}
+
 {{% disclaimer %}}
 
 This is a follow-up to my post from a few months back, "[Making Tailwind JIT work with Hugo](/posts/2021/11/making-tailwind-jit-work-hugo/)." The code I suggested in that post worked fine when [Tailwind CSS](https://tailwindcss.com) was still in Version 2.x, but things got a little more complicated when [Tailwind 3.0 appeared](https://tailwindcss.com/blog/tailwindcss-v3) just a few weeks later.

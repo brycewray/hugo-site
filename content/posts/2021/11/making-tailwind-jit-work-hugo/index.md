@@ -5,6 +5,9 @@ author: Bryce Wray
 date: 2021-11-01T12:08:00-05:00
 ---
 
+**Update from the future**: In 2023, the [release of Hugo 0.112.0](https://github.com/gohugoio/hugo/releases/tag/v0.112.0) finally (?) [resolved](/posts/2023/06/hugo-tailwind-peace-at-last-maybe/) this issue.
+{.box}
+
 {{% disclaimer %}}
 
 Earlier this year, the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) of [Tailwind CSS](https://tailwindcss.com)'s [just-in-time (JIT) mode](https://tailwindcss.com/docs/just-in-time-mode) was followed closely by the subsequent and deflating word that this cool feature wouldn't work with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). The Hugo team immediately started trying to fix that issue but, as of this writing, still hasn't been able to deliver a solution.
