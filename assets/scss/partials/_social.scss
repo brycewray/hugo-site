@@ -1,4 +1,5 @@
 @use 'partials/variables' as var;
+@use 'partials/colors' as clr;
 
 // based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter
 
@@ -20,7 +21,7 @@ $tc-padding: 1em;
 	margin: 1.5rem auto;
 	padding: 1rem;
 	border: 2px solid;
-	border-color: var(--gray-700);
+	border-color: clr.$gray-700;
 	border-radius: 12px;
 	background: var(--white);
 	width: 100%;
@@ -37,7 +38,7 @@ $tc-padding: 1em;
 		max-width: 80ch;
 	}
 	@media (prefers-color-scheme: dark) {
-		background: var(--gray-900);
+		background: clr.$gray-900;
 		// background: transparent;
 	}
 	a, a:hover {
@@ -58,7 +59,7 @@ $tc-padding: 1em;
 	}
 	@media (prefers-color-scheme: dark) {
 		border: 2px solid;
-		border-color: var(--gray-200);
+		border-color: clr.$gray-200;
 		color: var(--white);
 	}
 }
@@ -84,9 +85,9 @@ $tc-padding: 1em;
 
 .toot-blockquote-img {
 	border-bottom: 1px solid;
-	border-bottom-color: var(--gray-700);
+	border-bottom-color: clr.$gray-700;
 	@media (prefers-color-scheme: dark) {
-		border-bottom-color: var(--gray-300);
+		border-bottom-color: clr.$gray-300;
 	}
 	width: 100%;
 }
@@ -98,21 +99,20 @@ $tc-padding: 1em;
 // ==== END, rounded image "attachment"
 
 a > .card, a > .toot-card {
-	color: var(--gray-800);
+	color: clr.$gray-800;
 	@media (prefers-color-scheme: dark) {
-		color: var(--gray-300);
+		color: clr.$gray-300;
 	}
 }
 
 .card {
 	overflow: hidden;
-	// background-color: yellow;
 	margin-top: 1em;
 	border-radius: 12px;
 	border: 1px solid;
-	border-color: var(--gray-700);
+	border-color: clr.$gray-700;
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--gray-300);
+		border-color: clr.$gray-300;
 	}
 	p {
 		padding: 0.5em 1em 1em;
@@ -155,9 +155,9 @@ a > .card, a > .toot-card {
 			line-height: 1.375;
 		}
 		&-handle {
-			color: var(--gray-700);
+			color: clr.$gray-700;
 			@media (prefers-color-scheme: dark) {
-				color: var(--gray-300);
+				color: clr.$gray-300;
 			}
 			font-size: var.$text-sm;
 			line-height: 1;
@@ -172,18 +172,18 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: var(--gray-800);
+	color: clr.$gray-800;
 	font-size: var.$text-sm;
 	@media (prefers-color-scheme: dark) {
-		color: var(--gray-200);
+		color: clr.$gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
 	a {
-		color: var(--gray-800);
+		color: clr.$gray-800;
 		@media (prefers-color-scheme: dark) {
-			color: var(--gray-200);
+			color: clr.$gray-200;
 		}
 		&:hover {
 			color: var(--default-light-link);
@@ -299,9 +299,9 @@ a > .card, a > .toot-card {
 
 .toot-quoted-tweet {
 	border: 1px solid;
-	border-color: var(--gray-800);
+	border-color: clr.$gray-800;
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--gray-200);
+		border-color: clr.$gray-200;
 	}
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
@@ -321,9 +321,9 @@ a > .card, a > .toot-card {
 	p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
 		a {
-			color: var(--gray-800);
+			color: clr.$gray-800;
 			@media (prefers-color-scheme: dark) {
-				color: var(--gray-200);
+				color: clr.$gray-200;
 			}
 			&:hover {
 				color: var(--default-light-link);
@@ -339,10 +339,10 @@ a > .card, a > .toot-card {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: var(--gray-800);
+	color: clr.$gray-800;
 	font-size: var.$text-sm;
 	@media (prefers-color-scheme: dark) {
-		color: var(--gray-200);
+		color: clr.$gray-200;
 	}
 	.toot-like-icon, .toot-like-count {
 		display: none;
@@ -355,7 +355,7 @@ a > .card, a > .toot-card {
 		display: flex;
 	}
 	border: 2px solid;
-	border: var(--gray-400);
+	border-color: clr.$gray-400;
 	border-radius: 6px;
 	margin-top: 1em;
 	text-decoration: none;
@@ -366,7 +366,7 @@ a > .card, a > .toot-card {
 			flex: 0 0 200px;
 		}
 		border-right: 2px solid;
-		border-right-color: var(--gray-400);
+		border-right-color: clr.$gray-400;
 		position: relative;
 		&-image {
 			display: block;

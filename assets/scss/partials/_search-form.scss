@@ -1,4 +1,5 @@
 @use 'partials/variables' as var;
+@use 'partials/colors' as clr;
 
 // === for search form
 
@@ -180,10 +181,10 @@
 	// font-family: var.$serif;
 	mark {
 		color: var(--black);
-		background-color: var(--blue-100);
+		background-color: clr.$blue-100;
 		@media (prefers-color-scheme: dark) {
 			color: var(--white);
-			background-color: var(--blue-900);
+			background-color: clr.$blue-900;
 		}
 	}
 }

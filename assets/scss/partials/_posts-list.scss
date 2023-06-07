@@ -1,8 +1,9 @@
 @use 'partials/variables' as var;
+@use 'partials/colors' as clr;
 
 .posts {
 	&-pagerGray {
-		color: var(--gray-300);
+		color: clr.$gray-300;
 	}
 	&-pagerThing {
 		display: flex;
@@ -97,11 +98,11 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: var(--gray-300);
+	color: clr.$gray-300;
 }
 
 path.FirstLast {
-	fill: var(--gray-400);
+	fill: clr.$gray-400;
 }
 
 path.NextPrev {

@@ -1,10 +1,11 @@
 @use 'partials/variables' as var;
+@use 'partials/colors' as clr;
 
 .bg-dark {
 	margin-top: 2.5rem;
-	background-color: var(--blue-200);
+	background-color: clr.$blue-200;
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--blue-950);
+		background-color: clr.$blue-950;
 	}
 	padding: 0.5rem 0;
 	div, p {
@@ -19,19 +20,19 @@
 		width: 90%;
 		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
 		a {
-			color: var(--blue-800);
+			color: clr.$blue-800;
 			text-decoration: none;
 			@media (prefers-color-scheme: dark) {
-				color: var(--blue-200);
+				color: clr.$blue-200;
 			}
 			&:hover, &:focus {
-				color: var(--gray-800);
+				color: clr.$gray-800;
 				text-decoration: underline; // normal
 				text-decoration-thickness: var.$textDcThickMd;
 				text-underline-offset: var.$textUnOffst;
 				text-decoration-skip-ink: auto;
 				@media (prefers-color-scheme: dark) {
-					color: var(--gray-200);
+					color: clr.$gray-200;
 				}
 			}
 		}

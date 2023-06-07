@@ -1,4 +1,34 @@
-@use 'variables' as var;
+@use 'partials/variables' as var;
+@use 'partials/colors' as clr;
+
+:root {
+	// === defaults ===
+	// primaries
+	--default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
+	--white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
+	--black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
+	--default-light: #{clr.$gray-800};
+	--default-dark: #{clr.$gray-300};
+	--default-light-link: #{clr.$blue-700};
+	--default-dark-link: #{clr.$blue-300};
+	--default-light-link-afh: #{clr.$blue-900};
+	--default-dark-link-afh: #{clr.$slate-300};
+	--default-light-head: #{clr.$blue-850};
+	--default-dark-head: #{clr.$blue-200};
+	// backgrounds and borders
+	--default-light-bkgd: var(--white);
+	--default-dark-bkgd: var(--black);
+	--default-light-box-bkgd: #{clr.$slate-050};
+	--default-dark-box-bkgd: #{clr.$slate-900};
+	--default-light-code-bkgd: #{clr.$slate-050};
+	--default-dark-code-bkgd: #{clr.$slate-900};
+	--default-light-article-code-bkgd: #{clr.$slate-150};
+	--default-dark-article-code-bkgd: #{clr.$slate-800};
+	--default-light-box-code-bkgd: #{clr.$slate-200};
+	--default-dark-box-code-bkgd: #{clr.$slate-700};
+	--default-light-border: #{clr.$neutral-400};
+	--default-dark-border: #{clr.$neutral-600};
+}
 
 html, body {
 	width: 100%;
@@ -138,9 +168,9 @@ ul li li, ol li li, ul li li li, ol li li li {
 ul li li, ol li li {
 	list-style-type: disc;
 	&::marker {
-		color: var(--slate-400);
+		color: clr.$slate-400;
 		@media (prefers-color-scheme: dark) {
-			color: var(--slate-500);
+			color: clr.$slate-500;
 		}
 	}
 }
@@ -148,9 +178,9 @@ ul li li, ol li li {
 ul li li li, ol li li li {
 	list-style-type: square;
 	&::marker {
-		color: var(--slate-400);
+		color: clr.$slate-400;
 		@media (prefers-color-scheme: dark) {
-			color: var(--slate-500);
+			color: clr.$slate-500;
 		}
 	}
 }

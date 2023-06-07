@@ -1,10 +1,5 @@
 @use 'partials/variables' as var;
-
-table {
-	--emerald-050: hsl(155, 80%, 96%);
-	--emerald-900: hsl(155, 61%, 19%);
-	--sky-100: hsl(200, 94%, 94%);
-}
+@use 'partials/colors' as clr;
 
 td {
 	vertical-align: top;
@@ -19,7 +14,7 @@ table.noborders {
 	border-collapse: collapse;
 	tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var(--gray-200);
+			background-color: clr.$gray-200;
 			color: var(--black);
 		}
 	}
@@ -34,15 +29,15 @@ table.noborders {
 		}
 	}
 	tr:nth-child(even) {
-		background-color: var(--sky-100);
+		background-color: clr.$sky-100;
 	}
 	thead {
-		background-color: var(--blue-900);
+		background-color: clr.$blue-900;
 		color: var(--white);
 	}
 	thead tr {
 		@media (prefers-color-scheme: dark) {
-			background-color: var(--blue-900);
+			background-color: clr.$blue-900;
 		}
 	}
 	thead td {
@@ -86,7 +81,7 @@ table.ulysses {
 		table-layout: fixed; // so don't have to spec each `td`'s width
 	}
 	thead th {
-		background-color: var(--blue-800);
+		background-color: clr.$blue-800;
 		border: 1px solid;
 		border-color: var(--black);
 		color: var(--white);
@@ -113,13 +108,13 @@ table.ulysses {
 	tr:nth-child(odd) {
 		background-color: var(--white);
 		@media (prefers-color-scheme: dark){
-			background-color: var(--slate-700);
+			background-color: clr.$slate-700;
 		}
 	}
 	tr:nth-child(even) {
-		background-color: var(--emerald-050);
+		background-color: clr.$emerald-050;
 		@media (prefers-color-scheme: dark){
-			background-color: var(--emerald-900);
+			background-color: clr.$emerald-900;
 		}
 	}
 }

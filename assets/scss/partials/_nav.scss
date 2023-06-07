@@ -1,9 +1,10 @@
-@use 'variables' as var;
+@use 'partials/variables' as var;
+@use 'partials/colors' as clr;
 
 header, .nav, .nav-Menu {
-	background-color: var(--blue-200);
+	background-color: clr.$blue-200;
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--blue-950);
+		background-color: clr.$blue-950;
 	}
 }
 
@@ -22,9 +23,9 @@ header {
 		right: 0;
 		svg {
 			width: 1.5rem;
-			fill: var(--slate-800);
+			fill: clr.$slate-800;
 			@media (prefers-color-scheme: dark) {
-				fill: var(--slate-050);
+				fill: clr.$slate-050;
 			}
 		}
 		.close {
@@ -70,12 +71,12 @@ header {
 			border: 0;
 			color: var(--black);
 			&:focus, &:active, &:hover {
-				color: var(--slate-600);
+				color: clr.$slate-600;
 			}
 			@media (prefers-color-scheme: dark) {
 				color: var(--white);
 				&:focus, &:active, &:hover {
-					color: var(--slate-200);
+					color: clr.$slate-200;
 				}
 			}
 		}
@@ -126,10 +127,10 @@ header {
 }
 
 circle.NavIcon {
-	fill: var(--blue-500);
+	fill: clr.$blue-500;
 }
 a:hover circle.NavIcon {
-	fill: var(--gray-500);
+	fill: clr.$gray-500;
 }
 
 path.NavIcon {

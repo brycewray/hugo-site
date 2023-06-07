@@ -1,8 +1,9 @@
-@use 'variables' as var;
+@use 'partials/variables' as var;
+@use 'partials/colors' as clr;
 
 footer {
 	// @media (prefers-color-scheme: dark) {
-	// 	background: var.$black;
+	// 	background: var(--black);
 	// }
 	text-align: center;
 	font-size: var.$text-xs;
@@ -13,9 +14,9 @@ footer {
 	p {
 		line-height: 1.5em; // definitely em, not rem, here
 		code {
-			background-color: var(--slate-200);
+			background-color: clr.$slate-200;
 			@media (prefers-color-scheme: dark) {
-				background-color: var(--slate-700);
+				background-color: clr.$slate-700;
 			}
 		}
 	}

@@ -1,12 +1,13 @@
 @use 'partials/variables' as var;
+@use 'partials/colors' as clr;
 
 lite-youtube {
 	background-color: var(--black);
 	position: relative;
 	border: 1px solid;
-	border-color: var(--gray-700);
+	border-color: clr.$gray-700;
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--gray-400);
+		border-color: clr.$gray-400;
 	}
 	display: block;
 	contain: content;
@@ -94,8 +95,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
 }
 
 .lyt-disclaimer .red {
-	color: var(--red-700);
+	color: clr.$red-700;
 	@media (prefers-color-scheme: dark) {
-		color: var(--red-300);
+		color: clr.$red-300;
 	}
 }
