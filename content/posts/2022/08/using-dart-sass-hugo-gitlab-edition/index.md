@@ -1,12 +1,12 @@
 ---
 title: "Using Dart Sass with Hugo: the GitLab edition"
-description: "For those who prefer GitLab to GitHub where CI/CD is concerned, here’s a GitLab-friendly way to install Hugo and Dart Sass."
+description: "For those who prefer GitLab to GitHub where CI/CD is concerned, here’s a GitLab-friendly way to install Hugo and Embedded Dart Sass."
 author: Bryce Wray
 date: 2022-08-05T20:49:00-05:00
 #initTextEditor: iA Writer
 ---
 
-<strong class="red">Important note, 2023-05-24</strong>: I am revising this to reflect a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2). However, you should **keep using the current/archived Embedded Dart Sass binary** ([v.1.62.1](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1)) until there's an update to the Dart Sass binary that truly does provide the full capability of Embedded Dart Sass. I learned the hard way that the **current** Dart Sass binary (also v.1.62.1) **doesn't yet** support Embedded Dart Sass fully --- *e.g.*, it doesn't "watch" files properly for when you make edits to your `.scss` files. (This is despite the fact that the Sass team has already changed the Dart Sass README to say that commands such as `sass --embedded` and `sass --embedded --version` will work; they **don't** with the current Dart Sass binary --- which makes sense, given that v.1.62.1 was released weeks before the Sass team made this change.)
+<strong class="red">Important note, 2023-06-08</strong>: There has been a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2). For now, until Hugo is able to work with the new packaging, you should **keep using the current/archived Embedded Dart Sass binary** ([v.1.62.1](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1)) as explained herein. The **new** packaging **doesn't** work fully with Hugo --- *e.g.*, it doesn't "watch" files properly for when you make edits to your `.scss` files.
 {.box}
 
 [Some months back](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/), I explained how to use a [GitHub Action](https://github.com/features/actions) to deploy a [Hugo](https://gohugo.io) site complete with [Dart Sass](https://sass-lang.com/dart-sass). The thing is, some people *really* dislike GitHub, so this post mirrors the purpose of that earlier one **except** that the procedure described herein uses [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), instead.
@@ -25,7 +25,7 @@ Before I get to the vendor-specific instructions and GitLab scripts, here are so
 **Because of that . . .**
 - You'll need to add each such environment variable to the GitLab repo's **CI/CD variables**. You'll **also** have to add vendor-specific **credentials** to these CI/CD variables. The instructions for each vendor will tell you how.
 - We'll also refer to your local Hugo project's **`.env` file**, a plain-text file where you'll be storing the aforementioned environment variables and credentials for your own future reference (including *during* this process, as you'll see). If your project doesn't already have a `.env` file, create it now at the project's top level --- and **be sure** it's an entry in your project's `.gitignore` file, because this will contain sensitive information you **never** want to commit in Git even locally, much less allow it to appear on GitLab. And please don't presume just making the GitLab repo private is sufficient protection for an inadvertently committed `.env` file, because it's definitely not.
-- The versions shown for Hugo and Dart Sass in the `.gitlab-ci.yml` file are the current ones (0.112.0 and 1.62.1, respectively) as of the 2023-05-23 update of this post. You can always see which releases are up-to-date by checking the release pages for [Hugo](https://github.com/gohugoio/hugo/releases) and [Dart Sass](https://github.com/sass/dart-sass/releases).
+- The versions shown for Hugo and Embedded Dart Sass in the `.gitlab-ci.yml` file are the current ones (0.101.0 and 1.54.3, respectively) as of the initial publication of this post. You can always see which releases are up-to-date by checking the release pages for [Hugo](https://github.com/gohugoio/hugo/releases) and [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/releases).
 
 Finally, because you don't want to have to scroll-scroll-scroll through instructions for vendors you don't even use, I'm using the [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) and [`<summary>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary) HTML elements to keep things nice and compact. Just click/tap on a section to toggle it as either open or closed.
 
@@ -108,8 +108,8 @@ image: node:latest
 variables:
   NETLIFY_AUTH_TOKEN: $NETLIFY_AUTH_TOKEN
   NETLIFY_SITE_ID: $NETLIFY_SITE_ID
-  HUGO_VERSION: 0.112.0
-  DART_SASS_VERSION: 1.62.1
+  HUGO_VERSION: 0.101.0
+  DART_SASS_VERSION: 1.54.3
   MY_WEBSITE: https://www.example.com # <-- fill in!!
 
 deploySite:
@@ -122,9 +122,9 @@ deploySite:
   script:
     - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb -O hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
     - dpkg -i hugo*.deb
-    - curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
-    - tar -xvf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
-    - sass --version
+    - curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DART_SASS_VERSION}/sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
+    - tar -xvf sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
+    - sass_embedded/dart-sass-embedded --version
     - hugo --gc --minify
     - npm i -g netlify-cli
     - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
@@ -214,8 +214,8 @@ variables:
 	VERCEL_TOKEN: $VERCEL_TOKEN
   VERCEL_ORG_ID: $VERCEL_ORG_ID
   VERCEL_PROJECT_ID: $VERCEL_PROJECT_ID
-  HUGO VERSION: 0.112.0
-  DART_SASS_VERSION: 1.62.1
+  HUGO VERSION: 0.101.0
+  DART_SASS_VERSION: 1.54.2
   MY_WEBSITE: https://www.example.com # <-- fill in!!
 
 deploySite:
@@ -228,9 +228,9 @@ deploySite:
   script:
     - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb -O hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
     - dpkg -i hugo*.deb
-    - curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
-    - tar -xvf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
-    - sass --version
+    - curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DART_SASS_VERSION}/sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
+    - tar -xvf sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
+    - sass_embedded/dart-sass-embedded --version
     - hugo --gc --minify
     - npm i -g vercel
     - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
@@ -319,8 +319,8 @@ image: node:latest
 variables:
   CLOUDFLARE_API_TOKEN: $CFP_API_TOKEN
   CLOUDFLARE_ACCOUNT_ID: $CF_ACCOUNT_ID
-  HUGO_VERSION: 0.112.0
-  DART_SASS_VERSION: 1.62.1
+  HUGO_VERSION: 0.101.0
+  DART_SASS_VERSION: 1.54.3
   MY_WEBSITE: https://www.example.com # <-- fill in!!
   PROJECT_NAME: my-project # <-- fill in!!
 
@@ -334,9 +334,9 @@ deploySite:
   script:
     - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb -O hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
     - dpkg -i hugo*.deb
-    - curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
-    - tar -xvf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
-    - sass --version
+    - curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${DART_SASS_VERSION}/sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
+    - tar -xvf sass_embedded-${DART_SASS_VERSION}-linux-x64.tar.gz
+    - sass_embedded/dart-sass-embedded --version
     - hugo --gc --minify
     - npm install -g wrangler --unsafe-perm=true
     - wrangler pages publish ./public --project-name=$PROJECT_NAME --branch "main"
