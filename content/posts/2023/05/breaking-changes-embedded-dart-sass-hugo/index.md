@@ -28,5 +28,5 @@ Well, I definitely am a "big enough nerd," so I went ahead and read the post. An
 
 I'll provide further updates on these subjects as events warrant.
 
-<strong class="red">Important note, 2023-06-08</strong>: For now, until Hugo is able to work with the new packaging, you should **keep using the current/archived Embedded Dart Sass binary** ([v.1.62.1](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1)) as explained herein. The **new** packaging **doesn't** work fully with Hugo --- *e.g.*, it doesn't "watch" files properly for when you make edits to your `.scss` files.
+<strong class="red">Important note, 2023-06-08</strong>: For now, until Hugo is able to work with the new packaging, you should **keep using the current/archived Embedded Dart Sass binary** ([v.1.62.1](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1)). The **new** packaging **doesn't** work fully with Hugo --- *e.g.*, it doesn't "watch" files properly for when you make edits to your `.scss` files.
 {.box}
