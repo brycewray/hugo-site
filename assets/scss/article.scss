@@ -69,6 +69,12 @@ img.ctrImg {
 .img-phn {
 	width: 90%;
 	@media screen and (min-width: var.$bkpt_md) {
+		width: 75%;
+	}
+	@media screen and (min-width: var.$bkpt_2xl) {
+		width: 62.5%;
+	}
+	@media screen and (min-width: var.$bkpt_3xl) {
 		width: 50%;
 	}
 }
