@@ -17,7 +17,7 @@ I gave up on my [earlier](/posts/2022/06/sorta-scoped-styling-hugo/), [Rube Gold
 \
 Rather than leave in place my original post supplemented by its subsequent and confusing oh-never-mind-do-it-*this*-way revision, I've reworked this to keep the good parts but throw out the erroneous parts. My apologies to those who were confused in the interim.\
 \
-**Also**, until there's a fix for an [issue](https://github.com/gohugoio/hugo/issues/11004) that [I discovered later](https://discourse.gohugo.io/t/unexpected-result-appending-a-slice-to-a-slice-of-slices/44501), you should <strong class="red">avoid</strong> this method.
+**Also**, until there's a fix for an [issue](https://github.com/gohugoio/hugo/issues/11004) that [I discovered later](https://discourse.gohugo.io/t/unexpected-result-appending-a-slice-to-a-slice-of-slices/44501), you might want to <strong class="red">avoid</strong> this method.
 {.box}
 
 ## Anal-ysis
