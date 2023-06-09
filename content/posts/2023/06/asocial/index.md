@@ -24,3 +24,6 @@ As for Reddit: what caused me to leave it[^Reddit] was its [decision](https://ol
 Don't misunderstand. I'm not claiming purity. I still spend what probably is too much time viewing stuff on [Hacker News](https://news.ycombinator.com) but I've sensed the quality of even its discourse subtly, gradually eroding in recent months, so it may be next.
 
 I was a daily user of Facebook for the better part of a decade, but I did finally cease to care, and killed my account. That was over six years ago, and I've never looked back. We'll see whether I can be equally resolute about these latest goodbyes to platforms which, in my view, have outlived their usefulness --- certainly to me.
+
+**Update, 2023-06-09**: Ironically, a few hours after initially publishing this post, I received an invite --- requested weeks ago, before my social media ennui had set in --- to the still-in-beta [Bluesky](https://bsky.app). I'm giving it a try as [@brycewray.com](https://bsky.app/profile/brycewray.com) (it lets you use your custom domain as a handle), and finding some nice folks that I'd followed elsewhere. Perhaps this experience will be somewhat less *meh*. One can hope.
+{.box}
