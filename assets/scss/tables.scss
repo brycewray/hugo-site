@@ -14,8 +14,8 @@ table.noborders {
 	border: 0;
 	border-collapse: collapse;
 	tr {
+		background-color: var(--white);
 		@media (prefers-color-scheme: dark) {
-			background-color: clr.$gray-200;
 			color: var(--black);
 		}
 	}
@@ -30,16 +30,14 @@ table.noborders {
 		}
 	}
 	tr:nth-child(even) {
-		background-color: clr.$sky-100;
+		background-color: clr.$slate-150;
 	}
 	thead {
 		background-color: clr.$blue-900;
 		color: var(--white);
 	}
 	thead tr {
-		@media (prefers-color-scheme: dark) {
-			background-color: clr.$blue-900;
-		}
+		background-color: clr.$blue-900;
 	}
 	thead td {
 		color: var(--white);
