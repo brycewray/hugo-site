@@ -14,9 +14,9 @@ footer {
 	p {
 		line-height: 1.5em; // definitely em, not rem, here
 		code {
-			background-color: clr.$slate-200;
+			background-color: var(--default-light-article-code-bkgd);
 			@media (prefers-color-scheme: dark) {
-				background-color: clr.$slate-700;
+				background-color: var(--default-dark-article-code-bkgd);
 			}
 		}
 	}
