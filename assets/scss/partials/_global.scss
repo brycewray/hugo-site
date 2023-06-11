@@ -18,15 +18,15 @@
 	--default-light-head: #{clr.$blue-850};
 	--default-dark-head: #{clr.$blue-150};
 	// backgrounds and borders
-	--default-light-bkgd: #{clr.$blue-050};
+	--default-light-bkgd: var(--white);
 	--default-dark-bkgd: var(--black);
-	--default-light-box-bkgd: var(--white);;
+	--default-light-box-bkgd: #{clr.$slate-050};
 	--default-dark-box-bkgd: #{clr.$slate-900};
-	--default-light-code-bkgd: var(--white); //#{clr.$slate-050};
+	--default-light-code-bkgd: #{clr.$slate-100};
 	--default-dark-code-bkgd: #{clr.$slate-900};
-	--default-light-article-code-bkgd: var(--white);
-	--default-dark-article-code-bkgd: #{clr.$slate-750};
-	--default-light-box-code-bkgd: #{clr.$slate-100};
+	--default-light-article-code-bkgd: #{clr.$slate-100};
+	--default-dark-article-code-bkgd: #{clr.$slate-800};
+	--default-light-box-code-bkgd: #{clr.$slate-200};
 	--default-dark-box-code-bkgd: #{clr.$slate-700};
 	--default-light-border: #{clr.$neutral-400};
 	--default-dark-border: #{clr.$neutral-600};
