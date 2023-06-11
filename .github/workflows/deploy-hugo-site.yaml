@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Install Hugo, Pagefind, etc. (cond. - Node)
+      - name: Install npm packages (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm install
       - name: Hugo download/install (cond. - non-Node)
