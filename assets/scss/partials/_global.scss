@@ -14,7 +14,8 @@
 	--font-bold: 700;
 	// --font-extrabold: 800;
 	// --font-black: 900;
-	--font-weight-sm: var(--font-normal); // for .pokey, .legal, footnotes, etc.
+	// --font-weight-sm: var(--font-normal);
+	// ^^^ for .pokey, .legal, footnotes, etc. if using font-light for `html` and `body`
 	// = = = COLORS = = =
 	// === defaults ===
 	// primaries
@@ -55,7 +56,7 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$sans-serif;
-	font-weight: var(--font-light);
+	font-weight: var(--font-normal);
 	background-color: var(--bkgd-light);
 	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
