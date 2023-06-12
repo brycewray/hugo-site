@@ -27,6 +27,7 @@
 
 .box {
 	font-size: 85%;
+	font-weight: var(--font-weight-sm);
 	display: block;
 	box-sizing: border-box;
 	background-color: var(--bkgd-box-light);
@@ -135,7 +136,7 @@ blockquote {
 article {
 	padding-top: 1em; // definitely em, not rem
 	p, li {
-		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
+		font-size: clamp(1rem, 1vw + 0.625em, 1.125em);
 		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;

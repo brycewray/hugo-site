@@ -19,7 +19,9 @@
 		margin: 0 auto;
 		padding: 0.15rem 0;
 		width: 90%;
-		font-size: clamp(1rem, 1vw + 0.625em, var.$text-xl);
+		font-size: clamp(1rem, 1vw + 0.625em, 1.125em);
+		font-weight: var(--font-normal);
+		letter-spacing: -0.025em;
 		a {
 			color: clr.$blue-800;
 			text-decoration: none;

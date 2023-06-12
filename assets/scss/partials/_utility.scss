@@ -11,6 +11,10 @@
 	}
 }
 
+.legal, .pokey {
+	font-weight: var(--font-weight-sm);
+}
+
 .legal {
 	font-size: var.$text-xs;
 }
@@ -58,6 +62,10 @@
 .inline {
 	display: inline;
 }
+.pub-date {
+	font-weight: var(--font-medium);
+}
+
 // start, text/LH classes from TWCSS
 // =================================
 

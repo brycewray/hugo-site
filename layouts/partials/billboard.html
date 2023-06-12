@@ -28,7 +28,7 @@
 		{{- end }}
 		{{- if (and (ne .Title $titleSearch) (ne .Title $titleContact) ) -}}
 			<p class="billboard-p-text" data-pagefind-ignore>
-				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
+				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- else -}}&nbsp;{{- end -}}
 			</p>
 			{{- if ne .Title $titleContact -}}
 			<p class="ctr legal" data-pagefind-ignore>

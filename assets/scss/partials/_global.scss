@@ -5,7 +5,7 @@
 	// = = = TYPOGRAPHY = = =
 	--sans-serif: #{var.$sans-serif};
 	// --font-thin: 100;
-	// --font-extralight: 200;
+	--font-extralight: 200;
 	--font-light: 300;
 	--font-normal: 400;
 	--font-medium: 500;
@@ -13,6 +13,7 @@
 	--font-bold: 700;
 	// --font-extrabold: 800;
 	// --font-black: 900;
+	--font-weight-sm: var(--font-normal); // for .pokey, .legal, footnotes, etc.
 	// = = = COLORS = = =
 	// === defaults ===
 	// primaries
@@ -53,6 +54,7 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$sans-serif;
+	font-weight: var(--font-light);
 	background-color: var(--bkgd-light);
 	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
@@ -80,7 +82,12 @@ p, li {
 	line-height: 1.4;
 }
 
+b, strong {
+	font-weight: var(--font-semibold);
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	font-weight: var(--font-medium);
 	color: var(--head-light);
 	letter-spacing: -0.025rem;
 	@media (prefers-color-scheme: dark) {
