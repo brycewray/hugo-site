@@ -7,6 +7,7 @@
 	// --font-thin: 100;
 	--font-extralight: 200;
 	--font-light: 300;
+	--font-semilight: 350;
 	--font-normal: 400;
 	--font-medium: 500;
 	--font-semibold: 600;
@@ -20,7 +21,7 @@
 	--default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 	--white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 	--black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-	--default-light: #{clr.$gray-800};
+	--default-light: var(--black);
 	--default-dark: #{clr.$gray-300};
 	--link-light: #{clr.$blue-700};
 	--link-dark: #{clr.$blue-300};
