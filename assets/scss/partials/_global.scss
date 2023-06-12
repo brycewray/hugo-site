@@ -30,7 +30,7 @@
 	--bquote-dark: #{clr.$gray-400};
 	--bquote-boost-light: #{clr.$gray-600};
 	--bquote-boost-dark: #{clr.$gray-350};
-	--link-light: #{clr.$blue-700};
+	--link-light: #{clr.$blue-750};
 	--link-dark: #{clr.$blue-300};
 	--link-afh-light: #{clr.$blue-900};
 	--link-afh-dark: #{clr.$slate-300};
@@ -49,6 +49,14 @@
 	--bkgd-box-code-dark: #{clr.$slate-700};
 	--border-light: #{clr.$neutral-400};
 	--border-dark: #{clr.$neutral-600};
+	@supports (color: oklch(49% 0.1 252)) {
+		--link-light: #{clr.$blue-750-oklch};
+		--link-dark: #{clr.$blue-300-oklch};
+		--link-afh-light: #{clr.$blue-900-oklch};
+		--link-afh-dark: #{clr.$slate-300-oklch};
+		--head-light: #{clr.$blue-850-oklch};
+		--head-dark: #{clr.$blue-150-oklch};
+	}
 }
 
 html, body {

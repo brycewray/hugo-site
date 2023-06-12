@@ -3,8 +3,14 @@
 
 header, .nav, .nav-Menu {
 	background-color: clr.$blue-200;
+	@supports (color: oklch(49% 0.1 252)) {
+		background-color: clr.$blue-200-oklch;
+	}
 	@media (prefers-color-scheme: dark) {
 		background-color: clr.$blue-950;
+		@supports (color: oklch(49% 0.1 252)) {
+			background-color: clr.$blue-950-oklch;
+		}
 	}
 }
 
@@ -128,6 +134,9 @@ header {
 
 circle.NavIcon {
 	fill: clr.$blue-500;
+	@supports (color: oklch(49% 0.1 252)) {
+		fill:clr.$blue-500-oklch;
+	}
 }
 a:hover circle.NavIcon {
 	fill: clr.$gray-500;

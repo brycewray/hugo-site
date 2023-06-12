@@ -5,8 +5,14 @@
 .bg-dark {
 	margin-top: 2.5rem;
 	background-color: clr.$blue-200;
+	@supports (color: oklch(49% 0.1 252)) {
+		background-color: clr.$blue-200-oklch;
+	}
 	@media (prefers-color-scheme: dark) {
 		background-color: clr.$blue-950;
+		@supports (color: oklch(49% 0.1 252)) {
+			background-color: clr.$blue-950-oklch;
+		}
 	}
 	padding: 0.5rem 0;
 	div, p {

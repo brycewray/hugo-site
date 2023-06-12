@@ -6,8 +6,14 @@
 }
 .red {
 	color: clr.$red-700;
+	@supports (color: oklch(49% 0.1 252)) {
+		color: clr.$red-700-oklch;
+	}
 	@media (prefers-color-scheme: dark) {
 		color: clr.$red-300;
+		@supports (color: oklch(49% 0.1 252)) {
+			color: clr.$red-300-oklch;
+		}
 	}
 }
 
