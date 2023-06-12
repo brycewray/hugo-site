@@ -22,7 +22,7 @@
 	--default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 	--white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 	--black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-	--default-light: var(--black);
+	--default-light: #{clr.$gray-800};
 	--default-dark: #{clr.$gray-300};
 	--link-light: #{clr.$blue-700};
 	--link-dark: #{clr.$blue-300};
