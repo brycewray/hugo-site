@@ -14,9 +14,9 @@
 	hr {
 		border: none;
 		height: 2px;
-		background-color: var(--default-light-head);
+		background-color: var(--head-light);
 		@media (prefers-color-scheme: dark) {
-			background-color: var(--default-dark-head);
+			background-color: var(--head-dark);
 		}
 	}
 	ol {
@@ -37,9 +37,9 @@
 
 .footnote-sim {
 	font-size: 0.65em;
-	color: var(--default-light-link);
+	color: var(--link-light);
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark-link);
+		color: var(--link-dark);
 	}
 }
 

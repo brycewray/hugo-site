@@ -14,9 +14,9 @@ footer {
 	p {
 		line-height: 1.5em; // definitely em, not rem, here
 		code {
-			background-color: var(--default-light-article-code-bkgd);
+			background-color: var(--bkgd-article-code-light);
 			@media (prefers-color-scheme: dark) {
-				background-color: var(--default-dark-article-code-bkgd);
+				background-color: var(--bkgd-article-code-dark);
 			}
 		}
 	}
@@ -63,9 +63,9 @@ circle.Calckey,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: var(--default-light-link);
+	fill: var(--link-light);
 	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link);
+		fill: var(--link-dark);
 	}
 }
 
@@ -76,9 +76,9 @@ a:hover circle.Calckey,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var(--default-light-link-afh);
+	fill: var(--link-afh-light);
 	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link-afh);
+		fill: var(--link-afh-dark);
 	}
 }
 

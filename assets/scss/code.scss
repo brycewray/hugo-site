@@ -8,12 +8,12 @@
 
 .chroma, .code-inline {
 	color: var(--black);
-	background-color: var(--default-light-code-bkgd);
+	background-color: var(--bkgd-code-light);
 	border: 1px solid;
-	border-color: var(--default-light-border);
+	border-color: var(--border-light);
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--default-dark-code-bkgd);
-		border-color: var(--default-dark-border);
+		background-color: var(--bkgd-code-dark);
+		border-color: var(--border-dark);
 	}
 }
 
@@ -540,9 +540,9 @@ code {
 	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
-	background: var(--default-light-article-code-bkgd);
+	background: var(--bkgd-article-code-light);
   @media (prefers-color-scheme: dark) {
-		background-color: var(--default-dark-article-code-bkgd);
+		background-color: var(--bkgd-article-code-dark);
   }
 }
 
@@ -660,8 +660,8 @@ pre[class*="language-"] {
 
 
 code, article code, .box code {
-	--bg-lt: var(--default-light-article-code-bkgd);
-	--bg-dk: var(--default-dark-article-code-bkgd);
+	--bg-lt: var(--bkgd-article-code-light);
+	--bg-dk: var(--bkgd-article-code-dark);
 	background-color: var(--bg-lt);
 	@media (prefers-color-scheme: dark) {
 		background-color: var(--bg-dk);
@@ -724,8 +724,8 @@ article blockquote code {
 .box {
 	code, a code {
 		font-size: 1em; // definitely em
-		--bg-lt: var(--default-light-box-code-bkgd);
-		--bg-dk: var(--default-dark-box-code-bkgd);
+		--bg-lt: var(--bkgd-box-code-light);
+		--bg-dk: var(--bkgd-box-code-dark);
 	}
 }
 

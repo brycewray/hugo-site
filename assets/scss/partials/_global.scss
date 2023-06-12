@@ -11,25 +11,25 @@
 	--black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
 	--default-light: #{clr.$gray-800};
 	--default-dark: #{clr.$gray-300};
-	--default-light-link: #{clr.$blue-700};
-	--default-dark-link: #{clr.$blue-300};
-	--default-light-link-afh: #{clr.$blue-900};
-	--default-dark-link-afh: #{clr.$slate-300};
-	--default-light-head: #{clr.$blue-850};
-	--default-dark-head: #{clr.$blue-150};
+	--link-light: #{clr.$blue-700};
+	--link-dark: #{clr.$blue-300};
+	--link-afh-light: #{clr.$blue-900};
+	--link-afh-dark: #{clr.$slate-300};
+	--head-light: #{clr.$blue-850};
+	--head-dark: #{clr.$blue-150};
 	// backgrounds and borders
-	--default-light-bkgd: #{clr.$slate-050};
-	--default-dark-bkgd: var(--black);
-	--default-light-box-bkgd: var(--white);
-	--default-dark-box-bkgd: #{clr.$slate-900};
-	--default-light-code-bkgd: var(--white);
-	--default-dark-code-bkgd: #{clr.$slate-900};
-	--default-light-article-code-bkgd: var(--white);
-	--default-dark-article-code-bkgd: #{clr.$slate-750};
-	--default-light-box-code-bkgd: #{clr.$slate-100};
-	--default-dark-box-code-bkgd: #{clr.$slate-700};
-	--default-light-border: #{clr.$neutral-400};
-	--default-dark-border: #{clr.$neutral-600};
+	--bkgd-light: #{clr.$slate-050};
+	--bkgd-dark: var(--black);
+	--bkgd-box-light: var(--white);
+	--bkgd-box-dark: #{clr.$slate-900};
+	--bkgd-code-light: var(--white);
+	--bkgd-code-dark: #{clr.$slate-900};
+	--bkgd-article-code-light: var(--white);
+	--bkgd-article-code-dark: #{clr.$slate-750};
+	--bkgd-box-code-light: #{clr.$slate-100};
+	--bkgd-box-code-dark: #{clr.$slate-700};
+	--border-light: #{clr.$neutral-400};
+	--border-dark: #{clr.$neutral-600};
 }
 
 html, body {
@@ -43,10 +43,10 @@ html, body {
 	// text-justify: inter-character; // someday...
 	font-kerning: normal;
 	font-family: var.$sans-serif;
-	background-color: var(--default-light-bkgd);
+	background-color: var(--bkgd-light);
 	color: var(--default-light);
 	@media (prefers-color-scheme: dark) {
-		background: var(--default-dark-bkgd);
+		background: var(--bkgd-dark);
 		color: var(--default-dark);
 	}
 }
@@ -71,10 +71,10 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	color: var(--default-light-head);
+	color: var(--head-light);
 	letter-spacing: -0.025rem;
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark-head);
+		color: var(--head-dark);
 	}
 }
 
@@ -125,14 +125,14 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: var(--default-light-link);
+	color: var(--link-light);
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark-link);
+		color: var(--link-dark);
 	}
 	&:focus, &:hover, &:active {
-		color: var(--default-light-link-afh);
+		color: var(--link-afh-light);
 		@media (prefers-color-scheme: dark) {
-			color: var(--default-dark-link-afh);
+			color: var(--link-afh-dark);
 		}
 	}
 }

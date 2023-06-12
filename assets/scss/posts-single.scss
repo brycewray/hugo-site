@@ -47,22 +47,22 @@ contact-button {
 	button {
 		width: 15rem;
 		padding: 0.25rem 0;
-		background-color: var(--default-light-link);
+		background-color: var(--link-light);
 		border-radius: var.$btn_radius;
 		border-color: transparent;
 		vertical-align: middle;
 		color: var(--white);
 		&:focus, &:active, &:hover {
-			background-color: var(--default-light-link-afh);
+			background-color: var(--link-afh-light);
 		}
 		&:hover {
 			cursor: pointer;
 		}
 		@media (prefers-color-scheme: dark) {
 			color: var(--black);
-			background-color: var(--default-dark-link);
+			background-color: var(--link-dark);
 			&:focus, &:active, &:hover {
-				background-color: var(--default-dark-link-afh);
+				background-color: var(--link-afh-dark);
 			}
 		}
 	}

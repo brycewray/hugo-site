@@ -31,12 +31,12 @@
 	margin: 0 auto;
 	width: 17em;
 	padding: 0;
-	background-color: var(--default-light-box-bkgd);
+	background-color: var(--bkgd-box-light);
 	border: 1px solid;
-	border-color: var(--default-light-border);
+	border-color: var(--border-light);
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--default-dark-box-bkgd);
-		border-color: var(--default-dark-border);
+		background-color: var(--bkgd-box-dark);
+		border-color: var(--border-dark);
 	}
 }
 
@@ -63,12 +63,12 @@
 	padding: 3px 12px;
 	font-weight: bold;
 	border: 1px solid;
-	border-color: var(--default-light-link);
-	background-color: var(--default-light-link);
+	border-color: var(--link-light);
+	background-color: var(--link-light);
 	color: var(--white);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--default-dark-link);
-		background-color: var(--default-dark-link);
+		border-color: var(--link-dark);
+		background-color: var(--link-dark);
 		color: var(--black);
 	}
 	&:hover {
@@ -76,11 +76,11 @@
 	}
 	&:focus, &:active, &:hover {
 		border: 1px solid;
-		border-color: var(--default-light-link-afh);
-		background-color: var(--default-light-link-afh);
+		border-color: var(--link-afh-light);
+		background-color: var(--link-afh-light);
 		@media (prefers-color-scheme: dark) {
-			border: 1px solid var(--default-dark-link-afh);
-			background-color: var(--default-dark-link-afh);
+			border: 1px solid var(--link-afh-dark);
+			background-color: var(--link-afh-dark);
 		}
 	}
 }
@@ -107,12 +107,12 @@
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
 	border: 1px solid;
-	border-color: var(--default-light-border);
+	border-color: var(--border-light);
 	border-radius: 9px;
-	background-color: var(--default-light-box-bkgd);
+	background-color: var(--bkgd-box-light);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--default-dark-border);
-		background-color: var(--default-dark-box-bkgd);
+		border-color: var(--border-dark);
+		background-color: var(--bkgd-box-dark);
 		color: var(--white);
 	}
 }
@@ -140,12 +140,12 @@
 	padding: 3px 12px;
 	font-weight: bold;
 	border: 1px solid;
-	border-color: var(--default-light-link);
-	background-color: var(--default-light-link);
+	border-color: var(--link-light);
+	background-color: var(--link-light);
 	color: var(--white);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--default-dark-link);
-		background-color: var(--default-dark-link);
+		border-color: var(--link-dark);
+		background-color: var(--link-dark);
 		color: var(--black);
 	}
 	&:hover {
@@ -153,11 +153,11 @@
 	}
 	&:focus, &:active, &:hover {
 		border: 1px solid;
-		border-color: var(--default-light-link-afh);
-		background-color: var(--default-light-link-afh);
+		border-color: var(--link-afh-light);
+		background-color: var(--link-afh-light);
 		@media (prefers-color-scheme: dark) {
-			border-color: var(--default-dark-link-afh);
-			background-color: var(--default-dark-link-afh);
+			border-color: var(--link-afh-dark);
+			background-color: var(--link-afh-dark);
 		}
 	}
 }

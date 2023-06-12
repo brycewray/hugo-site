@@ -55,7 +55,7 @@ $tc-padding: 1em;
 		- https://css-tricks.com/better-line-breaks-for-long-urls/
 		*/
 		@media (prefers-color-scheme: dark) {
-			color: var(--default-dark-link);
+			color: var(--link-dark);
 		}
 	}
 	@media (prefers-color-scheme: dark) {
@@ -187,9 +187,9 @@ a > .card, a > .toot-card {
 			color: clr.$gray-200;
 		}
 		&:hover {
-			color: var(--default-light-link);
+			color: var(--link-light);
 			@media (prefers-color-scheme: dark) {
-				color: var(--default-dark-link);
+				color: var(--link-dark);
 			}
 		}
 	}
@@ -327,9 +327,9 @@ a > .card, a > .toot-card {
 				color: clr.$gray-200;
 			}
 			&:hover {
-				color: var(--default-light-link);
+				color: var(--link-light);
 				@media (prefers-color-scheme: dark) {
-					color: var(--default-dark-link);
+					color: var(--link-dark);
 				}
 			}
 		}

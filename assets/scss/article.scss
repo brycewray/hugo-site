@@ -4,18 +4,18 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: var(--default-light-head);
+	color: var(--head-light);
 	@media (prefers-color-scheme: dark) {
-		color: var(--default-dark-head);
+		color: var(--head-dark);
 	}
 	&:hover, &:active, &:focus {
-		color: var(--default-light-link);
+		color: var(--link-light);
 		text-decoration: underline;
 		text-decoration-thickness: var.$textDcThick; // always rem
 		text-underline-offset: var.$textUnOffst; // always em
 		text-decoration-skip-ink: auto;
 		@media (prefers-color-scheme: dark) {
-			color: var(--default-dark-link);
+			color: var(--link-dark);
 		}
 		&::after {
 			font-size: var.$text-base;
@@ -29,15 +29,15 @@
 	font-size: 85%;
 	display: block;
 	box-sizing: border-box;
-	background-color: var(--default-light-box-bkgd);
+	background-color: var(--bkgd-box-light);
 	border: 1px solid;
-	border-color: var(--default-light-border);
+	border-color: var(--border-light);
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
 	@media (prefers-color-scheme: dark) {
-		background-color: var(--default-dark-box-bkgd);
-		border-color: var(--default-dark-border);
+		background-color: var(--bkgd-box-dark);
+		border-color: var(--border-dark);
 	}
 	p {
 		padding: 0;

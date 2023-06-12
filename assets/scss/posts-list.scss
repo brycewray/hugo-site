@@ -107,15 +107,15 @@ path.FirstLast {
 }
 
 path.NextPrev {
-	fill: var(--default-light-link);
+	fill: var(--link-light);
 	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link);
+		fill: var(--link-dark);
 	}
 }
 
 a:hover path.NextPrev {
-	fill: var(--default-light-link-afh);
+	fill: var(--link-afh-light);
 	@media (prefers-color-scheme: dark) {
-		fill: var(--default-dark-link-afh)
+		fill: var(--link-afh-dark)
 	}
 }
