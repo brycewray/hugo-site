@@ -135,7 +135,7 @@ blockquote {
 article {
 	padding-top: 1em; // definitely em, not rem
 	p, li {
-		font-size: clamp(1rem, 1vw + 0.625em, 1.125em);
+		font-size: clamp(1rem, 1vw + 0.625em, 1.2em);
 		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
