@@ -50,7 +50,7 @@
 	--border-light: #{clr.$neutral-400};
 	--border-dark: #{clr.$neutral-600};
 	@supports (color: oklch(49% 0.1 252)) {
-		--link-light: #{clr.$blue-750-oklch};
+		--link-light: #{clr.$blue-700-oklch};
 		--link-dark: #{clr.$blue-300-oklch};
 		--link-afh-light: #{clr.$blue-900-oklch};
 		--link-afh-dark: #{clr.$slate-300-oklch};
