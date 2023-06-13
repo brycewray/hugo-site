@@ -1,7 +1,6 @@
 [exec]
 	allow = [
-		'^dart-sass-embedded$',
-		'^dart-sass$',
+		'^(dart-)?sass(-embedded)?$',
 		'^go$',
 		'^npx$',
 		'^postcss$',
@@ -12,3 +11,5 @@
 	getenv = [
 		'^*'
 	]
+# Sass-related `allow` item from Hugo commit f210188da3ce901d7bdef095c2021f8365bf11e4
+# (https://github.com/gohugoio/hugo/commit/f210188da3ce901d7bdef095c2021f8365bf11e4)
