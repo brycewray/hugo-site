@@ -16,6 +16,8 @@
 	// --font-black: 900;
 	// --font-weight-sm: var(--font-normal);
 	// ^^^ for .pokey, .legal, footnotes, etc. if using font-light for `html` and `body`
+	--pub-date-weight: var(--font-medium);
+	//
 	// = = = COLORS = = =
 	// === defaults ===
 	// primaries
@@ -73,6 +75,9 @@ html, body {
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd-light);
 	color: var(--default-light);
+	@media screen and (min-width: var.$bkpt_lg) {
+		font-weight: var(--light);
+	}
 	@media (prefers-color-scheme: dark) {
 		background: var(--bkgd-dark);
 		color: var(--default-dark);
