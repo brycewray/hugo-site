@@ -2,6 +2,9 @@
 # # Always run with `bash cfp-build.sh` on CFP!
 # # Non-Node build command:
 # #   git fetch --unshallow && bash cfp-build.sh
+# #
+# #   >>> Node build command (i.e., NOT using this script):
+# #   >>>  git fetch --unshallow && npm run build
 
 echo "                       "
 echo "***********************"
@@ -12,6 +15,17 @@ echo "-----------------------"
 echo "Cleaning 'public' and 'pagefind' dirs, just to be safe..."
 rm -rf public
 rm -rf static/_pagefind
+echo "                       "
+echo "-----------------------"
+echo "Setting environment variables..."
+HUGO_VERSION=0.113.0
+NODE_VERSION=18.16.0
+EMBEDDED_DART_SASS_VERSION=1.62.1
+TZ='America/Chicago'
+export HUGO_VERSION
+export NODE_VERSION
+export EMBEDDED_DART_SASS_VERSION
+export TZ
 echo "                       "
 echo "-----------------------"
 echo "Running Hugo..."
