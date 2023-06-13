@@ -96,8 +96,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
 }
 
 .lyt-disclaimer .red {
-	color: clr.$red-700;
+	color: var(--red-light);
 	@media (prefers-color-scheme: dark) {
-		color: clr.$red-300;
+		color: var(--red-dark);
 	}
 }
