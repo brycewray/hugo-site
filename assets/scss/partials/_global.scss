@@ -223,6 +223,24 @@ ul li li li, ol li li li {
 	list-style-type: square;
 }
 
+ol li ul, ol li li ul, ol li li li ul {
+	padding-inline-start: 1.1em;
+	li {
+		list-style-type: disc;
+		&::marker {
+			color: inherit;
+		}
+		ul {
+			li::marker {
+				color: clr.$slate-400;
+				@media (prefers-color-scheme: dark) {
+					color: clr.$slate-500;
+				}
+			}
+		}
+	}
+}
+
 #content-main-hugo, main {
 	padding-top: 40px;
 }
