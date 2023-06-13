@@ -11,7 +11,7 @@ env:
   EMBEDDED_SASS: true # ('true' for pre-1.62.1)
   PAGEFIND_VERSION: 0.12.0
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
-  # NODE_VERSION: 18.16.0 # (CFP v2 build image default as of 2023-05-17)
+  # NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
   # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
   STYLING: SCSS #  (mainly checking only for [== "SCSS"])
 
