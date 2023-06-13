@@ -79,6 +79,7 @@ html, body {
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd-light);
 	color: var(--default-light);
+	color-scheme: light dark;
 	@media screen and (min-width: var.$bkpt_lg) {
 		font-weight: var(--light);
 	}
