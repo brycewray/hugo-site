@@ -1,10 +1,8 @@
 {{- $optionsCSSCritical := (dict "transpiler" "dartsass" "outputStyle" "compressed" "targetPath" "css/critical.css") -}}
 {{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical | fingerprint -}}
 {{- with $css -}}
-	{{- /*
 	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 	<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-	*/ -}}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 {{- end -}}
