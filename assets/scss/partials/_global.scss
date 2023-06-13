@@ -24,13 +24,13 @@
 	--default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 	--white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 	--black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-	--default-light: #{clr.$gray-600};
+	--default-light: #{clr.$gray-750};
 	--default-dark: #{clr.$gray-300};
-	--boost-light: #{clr.$gray-700};
+	--boost-light: #{clr.$gray-850};
 	--boost-dark: ${clr.$gray-200};
-	--bquote-light: #{clr.$gray-500};
+	--bquote-light: #{clr.$gray-550};
 	--bquote-dark: #{clr.$gray-400};
-	--bquote-boost-light: #{clr.$gray-600};
+	--bquote-boost-light: #{clr.$gray-650};
 	--bquote-boost-dark: #{clr.$gray-350};
 	--link-light: #{clr.$blue-700};
 	--link-dark: #{clr.$blue-300};
