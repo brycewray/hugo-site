@@ -43,14 +43,14 @@
 	}
 	&-Title {
 		padding: 0;
-		font-size: clamp(1.25rem, 0.625rem + 1.75vw, 2.25rem);
+		font-size: clamp(1.25rem, 0.625rem + 1.75vw, 2rem);
 		// font-family: var.$serif;
 		font-weight: var(--font-medium);
 		line-height: 1.25em;
 		letter-spacing: -0.025em;
 	}
 	&-Description {
-		font-size: clamp(0.95rem, 0.625rem + 1vw, 1.375rem);
+		font-size: clamp(0.95rem, 0.625rem + 1vw, 1.25rem);
 		// font-family: var.$serif;
 		// font-style: italic;
 		font-weight: var(--font-light);
@@ -59,7 +59,7 @@
 		margin-bottom: 0.25em;
 	}
 	&-Dates {
-		font-size: clamp(0.825rem, 0.25rem + 1vw, 1.15rem);
+		font-size: clamp(0.825rem, 0.25rem + 1vw, 1rem);
 		line-height: 1.33;
 		margin-bottom: 0.5em;
 		time {
