@@ -84,8 +84,6 @@ jobs:
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           pagefind_extended --source "public"
-      - name: Install Wrangler for CFP (even if Node)
-        run: npm i -g wrangler --unsafe-perm=true --commit-dirty=true
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
         with:
