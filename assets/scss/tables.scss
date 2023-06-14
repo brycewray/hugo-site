@@ -34,10 +34,16 @@ table.noborders {
 	}
 	thead {
 		background-color: clr.$blue-900;
+		@supports (color: oklch(49% 0.1 252)) {
+			background-color: clr.$blue-900-oklch;
+		}
 		color: var(--white);
 	}
 	thead tr {
 		background-color: clr.$blue-900;
+		@supports (color: oklch(49% 0.1 252)) {
+			background-color: clr.$blue-900-oklch;
+		}
 	}
 	thead td {
 		color: var(--white);
@@ -114,6 +120,12 @@ table.ulysses {
 		background-color: clr.$emerald-050;
 		@media (prefers-color-scheme: dark){
 			background-color: clr.$emerald-900;
+		}
+		@supports (color: oklch(49% 0.1 252)) {
+			background-color: clr.$emerald-050-oklch;
+			@media (prefers-color-scheme: dark) {
+				background-color: clr.$emerald-900-oklch;
+			}
 		}
 	}
 }
