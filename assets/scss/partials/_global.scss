@@ -14,8 +14,9 @@
 	--font-bold: 700;
 	// --font-extrabold: 800;
 	// --font-black: 900;
-	// --font-weight-sm: var(--font-normal);
+	--font-weight-sm: var(--font-normal);
 	// ^^^ for .pokey, .legal, footnotes, etc. if using font-light for `html` and `body`
+	--font-article: var(--font-normal);
 	--pub-date-weight: var(--font-medium);
 	//
 	// = = = COLORS = = =
@@ -24,7 +25,7 @@
 	--default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
 	--white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
 	--black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-	--default-light: #{clr.$gray-750};
+	--default-light: #{clr.$gray-650};
 	--default-dark: #{clr.$gray-300};
 	--boost-light: #{clr.$gray-850};
 	--boost-dark: ${clr.$gray-200};
@@ -270,6 +271,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 		}
 		@media screen and (min-width: var.$bkpt_3xl) {
 			width: 40%;
+			// max-width: 65ch;
 		}
 		// figure img, img {
 		//   width: 100%;

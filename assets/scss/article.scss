@@ -11,8 +11,8 @@
 	&:hover, &:active, &:focus {
 		color: var(--link-light);
 		text-decoration: underline;
-		text-decoration-thickness: var.$textDcThick; // always rem
-		text-underline-offset: var.$textUnOffst; // always em
+		text-decoration-thickness: var.$textDcThickHA;
+		text-underline-offset: var.$textUnOffst;
 		text-decoration-skip-ink: auto;
 		@media (prefers-color-scheme: dark) {
 			color: var(--link-dark);
@@ -26,7 +26,8 @@
 }
 
 .box {
-	font-size: 85%;
+	font-size: clamp(0.625rem, 1vw + 0.5em, 0.875em);
+	font-weight: var(--font-weight-sm);
 	display: block;
 	box-sizing: border-box;
 	background-color: var(--bkgd-box-light);
@@ -141,8 +142,9 @@ blockquote {
 article {
 	padding-top: 1em; // definitely em, not rem
 	p, li {
-		font-size: clamp(1rem, 1vw + 0.625em, 1.2em);
-		line-height: 1.5em;
+		font-size: clamp(1rem, 1vw + 0.625em, 1.25em);
+		font-weight: var(--font-article);
+		line-height: clamp(1.4em, 1vw + 0.75em, 1.625em);
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
 	}

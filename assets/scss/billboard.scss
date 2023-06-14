@@ -42,9 +42,9 @@
 	&-description-text {
 		// font-family: var.$serif;
 		// font-style: italic;
-		font-weight: var(--font-extralight);
-		font-size: clamp(1.25rem, 0.75rem + 1.5vw, 2rem);
-		letter-spacing: -0.0375em;
+		font-weight: var(--font-light);
+		font-size: clamp(1.25rem, 0.75rem + 1.5vw, 1.75rem);
+		letter-spacing: -0.025em;
 		line-height: 1.4;
 		padding-top: 1em;
 	}
