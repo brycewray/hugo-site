@@ -54,7 +54,7 @@
 	--red-light: #{clr.$red-700};
 	--red-dark: #{clr.$red-300};
 	@supports (color: oklch(49% 0.1 252)) {
-		--link-light: #{clr.$blue-750-oklch}; // a bit darker in OKLCH only
+		--link-light: #{clr.$blue-700-oklch};
 		--link-dark: #{clr.$blue-300-oklch};
 		--link-afh-light: #{clr.$blue-900-oklch};
 		--link-afh-dark: #{clr.$slate-300-oklch};
