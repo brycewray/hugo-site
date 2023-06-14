@@ -1,6 +1,6 @@
 ---
 title: "Cloudflare Pages becomes a more attractive home for Hugo sites"
-description: "Two newly revealed CFP capabilities, one current and one coming Real Soon Now, may combine to be a game-changer."
+description: "Two newly revealed CFP capabilities, one current and one coming Real Soon Now, may combine to be a game‑changer."
 author: Bryce Wray
 date: 2023-05-09T12:49:00-05:00
 # draft: true
