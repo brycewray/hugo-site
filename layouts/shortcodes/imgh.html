@@ -20,7 +20,7 @@
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
 {{- $imgBd5 := md5 $src -}}
-{{- $divClass := "relative bg-center" -}}
+{{- $divClass := "relative bg-center shadow" -}}
 {{- if not $phn -}}
 	{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
 	{{/*
