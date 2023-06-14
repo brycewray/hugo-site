@@ -25,42 +25,6 @@
 	}
 }
 
-.box {
-	font-size: clamp(0.625rem, 1vw + 0.5em, 0.875em);
-	font-weight: var(--font-weight-sm);
-	display: block;
-	box-sizing: border-box;
-	background-color: var(--bkgd-box-light);
-	border: 1px solid;
-	border-color: var(--border-light);
-	margin: 0.5em auto;
-	width: 100%;
-	padding: 1em 1.25em;
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bkgd-box-dark);
-		border-color: var(--border-dark);
-	}
-	p {
-		padding: 0;
-		margin: 0;
-	}
-	+ hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
-		margin-top: 1.75em;
-	}
-	.red {
-		color: clr.$red-600;
-		@supports (color: oklch(49% 0.1 252)) {
-			color: clr.$red-600-oklch;
-		}
-		@media (prefers-color-scheme: dark) {
-			color: clr.$red-400;
-			@supports (color: oklch(49% 0.1 252)) {
-				color: clr.$red-400-oklch;
-			}
-		}
-	}
-}
-
 img.containedImage {
 	display: block;
 	width: 100%;
@@ -144,7 +108,7 @@ article {
 	p, li {
 		font-size: clamp(1rem, 1vw + 0.625em, 1.25em);
 		font-weight: var(--font-article);
-		line-height: clamp(1.4em, 1vw + 0.75em, 1.625em);
+		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
 	}
@@ -160,6 +124,43 @@ article {
 	}
 	picture img {
 		height: auto;
+	}
+}
+
+.box {
+	font-size: clamp(0.625rem, 1vw + 0.5em, 0.875em);
+	font-weight: var(--font-weight-sm);
+	line-height: clamp(1.4em, 1vw + 0.625em, 1.5em);
+	display: block;
+	box-sizing: border-box;
+	background-color: var(--bkgd-box-light);
+	border: 1px solid;
+	border-color: var(--border-light);
+	margin: 0.5em auto;
+	width: 100%;
+	padding: 1em 1.25em;
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--bkgd-box-dark);
+		border-color: var(--border-dark);
+	}
+	p {
+		padding: 0;
+		margin: 0;
+	}
+	+ hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+		margin-top: 1.75em;
+	}
+	.red {
+		color: clr.$red-600;
+		@supports (color: oklch(49% 0.1 252)) {
+			color: clr.$red-600-oklch;
+		}
+		@media (prefers-color-scheme: dark) {
+			color: clr.$red-400;
+			@supports (color: oklch(49% 0.1 252)) {
+				color: clr.$red-400-oklch;
+			}
+		}
 	}
 }
 
@@ -180,6 +181,7 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 
 .gitinfo {
 	margin: 2em 0;
+	line-height: inherit;
 	code {
 		background-color: transparent;
 	}
