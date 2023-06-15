@@ -1,0 +1,26 @@
+@charset 'utf-8';
+@import 'partials/reset';
+/* vars pulled within each as appropriate, so no need to @import 'partials/variables' */
+@import 'partials/fonts';
+/* @import 'partials/colors'; */
+@import 'partials/global';
+@import 'partials/footer';
+@import 'partials/utility';
+@import 'partials/nav';
+@import 'partials/vweights'; /* for variable fonts, sys or uploaded (test on Linux VM?) */
+@import 'partials/ffoxobliq'; /* for system font stack **with SF first** for "sans-serif" var */
+@import 'partials/article';
+@import 'partials/billboard';
+@import 'partials/code';
+@import 'partials/footnotes';
+@import 'partials/fourohfour';
+@import 'partials/home';
+@import 'partials/lite-yt-embed';
+@import 'partials/posts-list';
+@import 'partials/posts-single';
+@import 'partials/search-btn';
+@import 'partials/search-form';
+@import 'partials/sitemaphtml';
+@import 'partials/social';
+@import 'partials/tables';
+/* `print` handled separately */

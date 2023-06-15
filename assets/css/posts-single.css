@@ -1,0 +1,77 @@
+@charset 'utf-8';
+
+:root {
+	--link-prvnxt-light: var(--blue-800);
+	--link-prvnxt-dark: var(--blue-200);
+}
+
+.bg-dark {
+	margin-top: 2.5rem;
+	background-color: var(--bkgd-nav-light);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--bkgd-nav-dark);
+	}
+	padding: 0.5rem 0;
+	& div, & p {
+		color: var(--black);
+		@media (prefers-color-scheme: dark) {
+			color: var(--white);
+		}
+	}
+	& p.prevnextP {
+		margin: 0 auto;
+		padding: 0.15rem 0;
+		width: 90%;
+		font-size: clamp(1rem, 1vw + 0.625em, 1.125em);
+		letter-spacing: -0.025em;
+		& a {
+			color: var(--link-prvnxt-light);
+			text-decoration: none;
+			@media (prefers-color-scheme: dark) {
+				color: var(--link-prvnxt-dark);
+			}
+			&:hover, &:focus {
+				color: var(--gray-800);
+				text-decoration: underline; /* normal */
+				text-decoration-thickness: var(--textDcThickMd);
+				text-underline-offset: var(--textUnOffst);
+				text-decoration-skip-ink: auto;
+				@media (prefers-color-scheme: dark) {
+					color: var(--gray-200);
+				}
+			}
+		}
+	}
+}
+
+contact-button {
+	display: grid;
+	place-items: center;
+	margin-top: 0.5em;
+	& button {
+		width: 15rem;
+		padding: 0.25rem 0;
+		background-color: var(--link-light);
+		border-radius: var(--btn_radius);
+		border-color: transparent;
+		vertical-align: middle;
+		color: var(--white);
+		&:focus, &:active, &:hover {
+			background-color: var(--link-afh-light);
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		@media (prefers-color-scheme: dark) {
+			color: var(--black);
+			background-color: var(--link-dark);
+			&:focus, &:active, &:hover {
+				background-color: var(--link-afh-dark);
+			}
+		}
+	}
+}
+
+.box + contact-button {
+	margin-top: 1.5em;
+}
