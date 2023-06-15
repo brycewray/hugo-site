@@ -68,7 +68,7 @@ img.ctrImg {
 .punctuationExample {
 	font-size: 1.5em;
 	font-weight: normal;
-	font-family: var.$serif;
+	font-family: var(--serif);
 	text-align: center;
 }
 
