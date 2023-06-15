@@ -54,7 +54,7 @@ html, body {
 	color: var(--default-light);
 	color-scheme: light dark;
 	@media screen and (min-width: 1024px) {
-		font-weight: var(--light);
+		font-weight: var(--font-light);
 	}
 	@media (prefers-color-scheme: dark) {
 		background: var(--bkgd-dark);
