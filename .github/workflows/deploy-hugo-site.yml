@@ -8,12 +8,12 @@ on:
 env:
   HUGO_VERSION: 0.113.0 # will get Extended Version below
   DART_SASS_VERSION: 1.62.1 # (depends on STYLING env var)
-  EMBEDDED_SASS: true # ('true' for pre-1.62.1)
+  EMBEDDED_SASS: false # ('true' for pre-1.62.1)
   PAGEFIND_VERSION: 0.12.0
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
   # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
-  STYLING: SCSS #  (mainly checking only for [== "SCSS"])
+  STYLING: VCSS #  (mainly checking only for [== "SCSS"])
 
 
 jobs:
