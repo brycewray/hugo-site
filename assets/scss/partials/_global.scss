@@ -37,33 +37,41 @@
 	--link-dark: #{clr.$blue-300};
 	--link-afh-light: #{clr.$blue-900};
 	--link-afh-dark: #{clr.$slate-300};
-	--head-light: #{clr.$blue-850};
-	--head-dark: #{clr.$blue-150};
+	--head-light: var(--black);
+	--head-dark: var(--white);
+	--red-light: #{clr.$red-700};
+	--red-dark: #{clr.$red-300};
+	--box-red-light: #{clr.$red-600};
+	--box-red-dark: #{clr.$red-400};
+	--logocircle: #{clr.$blue-500};
 	// backgrounds and borders
-	--bkgd-light: #{clr.$slate-050};
+	--bkgd-light: var(--white);
 	--bkgd-dark: var(--black);
-	--bkgd-box-light: var(--white);
+	--bkgd-nav-light: #{clr.$blue-200};
+	--bkgd-nav-dark: #{clr.$blue-950};
+	--bkgd-box-light: #{clr.$slate-050};
 	--bkgd-box-dark: #{clr.$slate-900};
-	--bkgd-code-light: var(--white);
+	--bkgd-code-light: #{clr.$slate-050};
 	--bkgd-code-dark: #{clr.$slate-900};
-	--bkgd-article-code-light: var(--white);
+	--bkgd-article-code-light: #{clr.$slate-150};
 	--bkgd-article-code-dark: #{clr.$slate-750};
-	--bkgd-box-code-light: #{clr.$slate-100};
+	--bkgd-box-code-light: #{clr.$slate-200};
 	--bkgd-box-code-dark: #{clr.$slate-700};
 	--border-light: #{clr.$neutral-400};
 	--border-dark: #{clr.$neutral-600};
-	--red-light: #{clr.$red-700};
-	--red-dark: #{clr.$red-300};
-	@supports (color: oklch(49% 0.1 252)) {
-		--link-light: #{clr.$blue-700-oklch};
-		--link-dark: #{clr.$blue-300-oklch};
-		--link-afh-light: #{clr.$blue-900-oklch};
-		--link-afh-dark: #{clr.$slate-300-oklch};
-		--head-light: #{clr.$blue-850-oklch};
-		--head-dark: #{clr.$blue-150-oklch};
-		--red-light: #{clr.$red-700-oklch};
-		--red-dark: #{clr.$red-300-oklch};
-	}
+	// @supports (color: oklch(49% 0.1 252)) {
+	// 	--link-light: #{clr.$blue-700-oklch};
+	// 	--link-dark: #{clr.$blue-300-oklch};
+	// 	--link-afh-light: #{clr.$blue-900-oklch};
+	// 	--link-afh-dark: #{clr.$slate-300-oklch};
+	// 	--red-light: #{clr.$red-700-oklch};
+	// 	--red-dark: #{clr.$red-300-oklch};
+	// 	--box-red-light: #{clr.$red-600-oklch};
+	// 	--box-red-dark: #{clr.$red-400-oklch};
+	// 	--logocircle: #{clr.$blue-500-oklch};
+	// 	--bkgd-nav-light: #{clr.$blue-200-oklch};
+	// 	--bkgd-nav-dark: #{clr.$blue-950-oklch};
+	// }
 }
 
 html, body {
