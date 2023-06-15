@@ -11,6 +11,7 @@
   },
   "scripts": {
     "clean": "rimraf public",
+    "cleancss": "rimraf assets/css && mkdir assets/css",
     "search": "pagefind --source public",
     "testbuild:search": "npm run search -- --bundle-dir ../static/_pagefind",
     "install:hugo": "hugo-installer --version config.hugo --extended",
@@ -24,13 +25,15 @@
     "hugoenv": "exec-bin bin/hugo/hugo env",
     "hugonew": "exec-bin bin/hugo/hugo new",
     "hugometrics": "exec-bin bin/hugo/hugo --templateMetrics --templateMetricsHints",
-    "start": "NODE_ENV=development npm-run-all clean dev:hugo",
-    "start:debug": "NODE_ENV=development npm-run-all clean devdebug:hugo",
-    "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
+    "postcsscli": "postcss assets/cssfrom --dir assets/css",
+    "dev:postcss": "npm run postcsscli -- --watch",
+    "start": "NODE_ENV=development npm-run-all clean cleancss postcsscli --parallel dev:hugo dev:postcss",
+    "start:debug": "NODE_ENV=development npm-run-all clean cleancss postcsscli --parallel devdebug:hugo dev:postcss",
+    "build:prelim": "NODE_ENV=production npm-run-all clean cleancss postcsscli prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
     "testbuildexec:hugo": "npm run devexec:hugo -- --minify --environment production",
-    "testbuild": "npm-run-all clean build:prelim move-excerpts testbuildexec:hugo",
-    "testbuildpf": "npm-run-all build:prelim move-excerpts testbuild:search testbuildexec:hugo"
+    "testbuild": "npm-run-all clean cleancss build:prelim move-excerpts --parallel testbuildexec:hugo dev:postcss",
+    "testbuildpf": "npm-run-all build:prelim move-excerpts testbuild:search --parallel testbuildexec:hugo dev:postcss"
   },
   "devDependencies": {
     "exec-bin": "^1.0.0",
@@ -41,7 +44,6 @@
     "pagefind": "^0.12.0",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
-    "postcss-import": "^15.1.0",
     "postcss-nesting": "^11.3.0",
     "rimraf": "^5.0.1"
   }
