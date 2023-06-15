@@ -157,15 +157,9 @@ article {
 		margin-top: 1.75em;
 	}
 	.red {
-		color: clr.$red-600;
-		@supports (color: oklch(49% 0.1 252)) {
-			color: clr.$red-600-oklch;
-		}
+		color: var(--box-red-light);
 		@media (prefers-color-scheme: dark) {
-			color: clr.$red-400;
-			@supports (color: oklch(49% 0.1 252)) {
-				color: clr.$red-400-oklch;
-			}
+			color: var(--box-red-dark);
 		}
 	}
 }

@@ -31,10 +31,10 @@
 	.err {
 		--clr-lt: #{clr.$red-700};
 		--clr-dk: #{clr.$red-300};
-		@supports (color: oklch(49% 0.1 252)) {
-			--clr-lt: #{clr.$red-700-oklch};
-			--clr-dk: #{clr.$red-300-oklch};
-		}
+		// @supports (color: oklch(49% 0.1 252)) {
+		// 	--clr-lt: #{clr.$red-700-oklch};
+		// 	--clr-dk: #{clr.$red-300-oklch};
+		// }
 	}
 	// === Lines (most items need specifics)
 	// Line text (cl - was missing from original), LineTableTD (lntd),
@@ -66,12 +66,12 @@
 		@media (prefers-color-scheme: dark) {
 			background-color: clr.$yellow-800;
 		}
-		@supports (color: oklch(49% 0.1 252)) {
-			background-color: clr.$yellow-200-oklch;
-			@media (prefers-color-scheme: dark) {
-				background-color: clr.$yellow-800-oklch;
-			}
-		}
+		// @supports (color: oklch(49% 0.1 252)) {
+		// 	background-color: clr.$yellow-200-oklch;
+		// 	@media (prefers-color-scheme: dark) {
+		// 		background-color: clr.$yellow-800-oklch;
+		// 	}
+		// }
 	}
 	.lnt, .ln {
 		margin-right: 0.4em;
@@ -87,10 +87,10 @@
 		// font-weight: bold;
 		--clr-lt: #{clr.$sky-700};
 		--clr-dk: #{clr.$sky-300};
-		@supports (color: oklch(49% 0.1 252)) {
-			--clr-lt: #{clr.$sky-700-oklch};
-			--clr-dk: #{clr.$sky-300-oklch};
-		}
+		// @supports (color: oklch(49% 0.1 252)) {
+		// 	--clr-lt: #{clr.$sky-700-oklch};
+		// 	--clr-dk: #{clr.$sky-300-oklch};
+		// }
 	}
 	// === Names
 	// Name (n), NameAttribute (na), NameBuiltin (nb), NameBuiltinPseudo (bp),
@@ -103,10 +103,10 @@
 	.nt, .nv, .vc, .vg, .vi, .vm {
 		--clr-lt: #{clr.$orange-700};
 		--clr-dk: #{clr.$yellow-300};
-		@supports (color: oklch(49% 0.1 252)) {
-			--clr-lt: #{clr.$orange-700-oklch};
-			--clr-dk: #{clr.$yellow-300-oklch};
-		}
+		// @supports (color: oklch(49% 0.1 252)) {
+		// 	--clr-lt: #{clr.$orange-700-oklch};
+		// 	--clr-dk: #{clr.$yellow-300-oklch};
+		// }
 	}
 	// === Literals
 	// Literal (l), LiteralDate (ld), LiteralString (s), LiteralStringAffix (sa),
@@ -127,10 +127,10 @@
 	.o, .ow {
 		--clr-lt: #{clr.$fuchsia-700};
 		--clr-dk: #{clr.$fuchsia-300};
-		@supports (color: oklch(49% 0.1 252)) {
-		--clr-lt: #{clr.$fuchsia-700-oklch};
-		--clr-dk: #{clr.$fuchsia-300-oklch};
-		}
+		// @supports (color: oklch(49% 0.1 252)) {
+		// --clr-lt: #{clr.$fuchsia-700-oklch};
+		// --clr-dk: #{clr.$fuchsia-300-oklch};
+		// }
 	}
 	// === Punctuation (p)
 	.p {
@@ -145,10 +145,10 @@
 		font-style: italic;
 		--clr-lt: #{clr.$emerald-700};
 		--clr-dk: #{clr.$emerald-200};
-		@supports (color: oklch(49% 0.1 252)) {
-			--clr-lt: #{clr.$emerald-700-oklch};
-			--clr-dk: #{clr.$emerald-200-oklch};
-		}
+		// @supports (color: oklch(49% 0.1 252)) {
+		// 	--clr-lt: #{clr.$emerald-700-oklch};
+		// 	--clr-dk: #{clr.$emerald-200-oklch};
+		// }
 	}
 	.cp, .cpf {
 		--clr-lt: #{clr.$gray-800};
@@ -267,16 +267,16 @@ pre[class*="language-"] {
 	cursor: pointer;
 	border-color: clr.$green-600;
 	background-color: clr.$green-100;
-	@supports (color: oklch(49% 0.1 252)) {
-		border-color: clr.$green-600-oklch;
-		background-color: clr.$green-100-oklch;
-	}
+	// @supports (color: oklch(49% 0.1 252)) {
+	// 	border-color: clr.$green-600-oklch;
+	// 	background-color: clr.$green-100-oklch;
+	// }
 }
 .clipboard-button:hover > svg {
 	fill: clr.$green-600;
-	@supports (color: oklch(49% 0.1 252)) {
-		fill: clr.$green-600-oklch;
-	}
+	// @supports (color: oklch(49% 0.1 252)) {
+	// 	fill: clr.$green-600-oklch;
+	// }
 }
 .clipboard-button:focus {
 	outline: 0;

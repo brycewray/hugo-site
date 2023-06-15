@@ -2,17 +2,20 @@
 @use 'partials/variables' as var;
 @use 'partials/colors' as clr;
 
+:root {
+	--link-prvnxt-light: #{clr.$blue-800};
+	--link-prvnxt-dark: #{clr.$blue-200};
+	// @supports (color: oklch(49% 0.1 252)) {
+	// 	--link-prvnxt-light: #{clr.$blue-800-oklch};
+	// 	--link-prvnxt-dark: #{clr.$blue-200-oklch};
+	// }
+}
+
 .bg-dark {
 	margin-top: 2.5rem;
-	background-color: clr.$blue-200;
-	@supports (color: oklch(49% 0.1 252)) {
-		background-color: clr.$blue-200-oklch;
-	}
+	background-color: var(--bkgd-nav-light);
 	@media (prefers-color-scheme: dark) {
-		background-color: clr.$blue-950;
-		@supports (color: oklch(49% 0.1 252)) {
-			background-color: clr.$blue-950-oklch;
-		}
+		background-color: var(--bkgd-nav-dark);
 	}
 	padding: 0.5rem 0;
 	div, p {
@@ -28,10 +31,10 @@
 		font-size: clamp(1rem, 1vw + 0.625em, 1.125em);
 		letter-spacing: -0.025em;
 		a {
-			color: clr.$blue-800;
+			color: var(--link-prvnxt-light);
 			text-decoration: none;
 			@media (prefers-color-scheme: dark) {
-				color: clr.$blue-200;
+				color: var(--link-prvnxt-dark);
 			}
 			&:hover, &:focus {
 				color: clr.$gray-800;
