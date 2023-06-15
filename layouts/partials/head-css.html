@@ -1,8 +1,3 @@
-{{- $css := "" -}}
-{{- $scssOptions := dict "transpiler" "dartsass" -}}
-{{- $scssOptionsPrint := $scssOptions -}}
-{{- $scssComp := dict "outputStyle" "compressed" -}}
-{{- $printCSS := "" -}}
 {{- $condition := "" -}}
 {{- $fileName := "" -}}
 
@@ -74,14 +69,8 @@
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
-		{{- if hugo.IsProduction -}}
-			{{- $scssOptions = merge $scssOptions $scssComp -}}
-			{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".min.css" )) -}}
-		{{- else -}}
-			{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".css" )) -}}
-		{{- end -}}
-		{{- $css = resources.Get (print "scss/" $fileName ".scss") | toCSS $scssOptions | fingerprint -}}
-	{{- if ne $css "" -}}
+		{{- $css := resources.Get (print "css/" $fileName ".css") | minify | fingerprint -}}
+		{{- with $css -}}
 			<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 			<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 		{{- end -}}
@@ -89,13 +78,7 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- if hugo.IsProduction -}}
-	{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp -}}
-	{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.min.css") -}}
-{{- else -}}
-	{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.css") -}}
-{{- end -}}
-{{- $printCSS = resources.Get "scss/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
-{{- if ne $printCSS "" -}}
+{{- $printCSS := resources.Get "css/print.css" | minify | fingerprint -}}
+{{- with $printCSS -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}

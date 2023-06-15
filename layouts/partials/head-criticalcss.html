@@ -1,5 +1,5 @@
-{{- $optionsCSSCritical := (dict "transpiler" "dartsass" "outputStyle" "compressed" "targetPath" "css/critical.css") -}}
-{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical | fingerprint -}}
+{{- $css := "" -}}
+{{- $css = (resources.Match "css/0*.css") | resources.Concat "css/critical.css" | minify | fingerprint -}}
 {{- with $css -}}
 	{{- /*
 	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
