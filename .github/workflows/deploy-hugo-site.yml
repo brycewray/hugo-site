@@ -88,7 +88,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CFP_API_TOKEN }}
-          accountID: ${{ secrets.CF_ACCOUNT_ID }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
           projectName: 'static-site-v2' # was 'static-site'
           directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
