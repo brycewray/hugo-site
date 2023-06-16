@@ -39,7 +39,7 @@ Anyway, back to that aforementioned exit strategy . . .
 
 I'd noticed that, whenever people on [Hacker News](https://news.ycombinator.com) debate the merits and demerits of various domain registrars, one called [Porkbun](https://porkbun.com) seemed to get a lot of love. After doing some research of my own and confirming that Porkbun looked like a good choice, I decided to give it a try.
 
-At the time, I had three different domains on Google Domains but I'd never actually used one of those domains for anything, so transferring it to Porkbun proved a pretty safe way to sample the experience. Porkbun's marketing is perhaps a little too playful for my old-curmudgeon-like tastes, but the company does the real domains-handling stuff quite well. and at very fair pricing that I've found about as transparent as Google's has been. Moreover, the people behind it seem to be genuinely nice, honest folks.
+At the time, I had three different domains on Google Domains but I'd never actually used one of those domains for anything, so transferring it to Porkbun proved a pretty safe way to sample the experience. Porkbun's marketing is perhaps a little too playful for my old-curmudgeon-like tastes, but the company does the real domains-handling stuff quite well, and at very fair pricing that I've found about as transparent as Google's has been. Moreover, the people behind it seem to be genuinely nice, honest folks.
 
 So, after getting wind yesterday of the Google Domains sale, I promptly moved the other two domains --- including the one on which you're reading this --- to Porkbun.
 
