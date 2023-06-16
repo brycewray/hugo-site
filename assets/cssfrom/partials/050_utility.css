@@ -155,3 +155,7 @@ end, text/LH classes from TWCSS
 	white-space: nowrap;
 	border-width: 0;
 }
+
+.emojis {
+	font-family: var(--emojis);
+}
