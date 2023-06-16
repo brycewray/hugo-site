@@ -159,12 +159,12 @@ Or, if you prefer a chart:
 
 | Host | Rank | CDN | UI | Builds | Limits | *Etc.* |
 |----|----|----|----|----|----|----|
-| **CFP** | 1 | ✅ | ☑️ | ✅ | ☑️ | ☑️ |
-| **Vercel** | 2 | 😕 | ☑️ | ✅ | ☑️ | ☑️ |
-| **Render** | 3 | ✅ | ☑️ | ☑️ | 😕 | ☑️ |
-| **Netlify** | 4 |  😡 | ✅ | ☑️ | 😕 | 😕 |
-| **DOAP** | 5 | ✅ | 😡 | ☑️ | 😡 | 😕 |
+| **CFP** | 1 | <span class="emojis">✅</span> | <span class="emojis">☑️</span> | <span class="emojis">✅</span> | <span class="emojis">☑️</span> | <span class="emojis">☑️</span> |
+| **Vercel** | 2 | <span class="emojis">😕</span> | <span class="emojis">☑️</span> | <span class="emojis">✅</span> | <span class="emojis">☑️</span> | <span class="emojis">☑️</span> |
+| **Render** | 3 | <span class="emojis">✅</span> | <span class="emojis">☑️</span> | <span class="emojis">☑️</span> | <span class="emojis">😕</span> | <span class="emojis">☑️</span> |
+| **Netlify** | 4 | <span class="emojis">😡</span> | <span class="emojis">✅</span> | <span class="emojis">☑️</span> | <span class="emojis">😕</span> | <span class="emojis">😕</span> |
+| **DOAP** | 5 | <span class="emojis">✅</span> | <span class="emojis">😡</span> | <span class="emojis">☑️</span> | <span class="emojis">😡</span> | <span class="emojis">😕</span> |
 {.ulysses}
 
-✅ Excellent   ☑️ Good   😕 Fair   😡 Poor
+<span class="emojis">✅</span> Excellent   <span class="emojis">☑️</span> Good   <span class="emojis">😕</span> Fair   <span class="emojis">😡</span> Poor
 {.ctr .pokey}
