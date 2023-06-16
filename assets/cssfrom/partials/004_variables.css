@@ -19,6 +19,9 @@
 	--font-weight-sm: var(--font-normal);
 	/* ^^^ for .pokey, .legal, footnotes, etc. if using font-light for `html` and `body` */
 	--font-article: var(--font-normal);
+	@media screen and (min-width: 768px) {
+		--font-article: var(--font-light);
+	}
 	--pub-date-weight: var(--font-medium);
 
 	/* like Tailwind **SIZES** but not the concomitant `line-height, which is in comments */
