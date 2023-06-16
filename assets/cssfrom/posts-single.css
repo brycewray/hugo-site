@@ -25,6 +25,7 @@
 		font-size: clamp(1rem, 1vw + 0.625em, 1.125em);
 		letter-spacing: -0.025em;
 		& a {
+			font-weight: var(--font-normal);
 			color: var(--link-prvnxt-light);
 			text-decoration: none;
 			@media (prefers-color-scheme: dark) {
