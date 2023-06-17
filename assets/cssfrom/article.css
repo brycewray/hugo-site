@@ -62,6 +62,7 @@ img.ctrImg {
 	margin-block-start: 0.5em;
 	line-height: 1.375;
 	font-size: 0.75em;
+	font-weight: var(--font-weight-sm);
 	text-align: center;
 }
 
