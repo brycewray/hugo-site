@@ -58,7 +58,7 @@ img.ctrImg {
 }
 
 .imgcCaption, .imghCaption {
-	padding: 0;
+	padding: 0.375em 0 1em;
 	margin-block-start: 0.5em;
 	line-height: 1.375;
 	font-size: 0.75em;
