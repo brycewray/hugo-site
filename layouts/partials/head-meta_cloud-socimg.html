@@ -1,10 +1,7 @@
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
 {{- $socImg := "" -}}{{- /* init */ -}}
-		<meta name="twitter:site" content="@BryceWray">
-		<meta name="twitter:creator" content="@BryceWray">
 	{{- if .IsHome }}
-		<link rel="me" href="https://twitter.com/BryceWray">
 		<link rel="me" href="https://github.com/brycewray">
 		<title>{{ .Site.Title }}</title>
 		<meta name="description" content="{{ .Site.Params.Description }}">
@@ -60,11 +57,11 @@
 		{{- $socImg = print "https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" -}}
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
 	 {{- if .Params.Description }}
-		<meta property="description" content="{{ .Params.Description }}">
+		<meta name="description" content="{{ .Params.Description }}">
 		<meta property="og:description" content="{{ .Params.Description }}">
 		<meta property="twitter:description" content="{{ .Params.Description }}">
 	 {{- else }}
-		<meta property="description" content="{{ .Site.Params.Description }}">
+	 	<meta name="description" content="{{ .Site.Params.Description }}">
 		<meta property="og:description" content="{{ .Site.Params.Description }}">
 		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
 	 {{- end }}
