@@ -22,7 +22,7 @@ For truly responsive images, you must define the *breakpoints*. These are viewpo
 
 Still other articles make admittedly effective use of Hugo's [Markdown render hooks](https://gohugo.io/templates/render-hooks/) to change any standard `[Alt text](image.jpg)`-style Markdown to responsive/optimized images; but I prefer to take a *[shortcode](https://gohugo.io/content-management/shortcodes/)* approach, for the added control it offers through optional parameters you can specify.[^hooksredux]
 
-[^hooksredux] **Update from the future**: [Later](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/), I decided there was merit, after all, in using the render hook approach in situations where you *don't* need access to quite so many of those optional parameters.
+[^hooksredux]: **Update from the future**: [Later](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/), I decided there was merit, after all, in using the render hook approach in situations where you *don't* need access to quite so many of those optional parameters.
 
 Still, that's enough griping on my part. It's time for me to put up or shut up --- with this post and the shortcode it suggests for using Hugo to produce responsive, optimized images.
 
