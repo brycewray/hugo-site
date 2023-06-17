@@ -61,12 +61,18 @@ jobs:
           tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           sass --version
           echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
-      - name: Cache Hugo resources
+      - name: Cache Hugo `resources`
         id: cache-resources
         uses: actions/cache@v3
         with:
           path: resources
           key: ${{ runner.os }}-resources
+      - name: Cache Hugo `static` content
+        id: cache-static
+        uses: actions/cache@v3
+        with:
+          path: static
+          key: ${{ runner.os }}-static
       - name: Install Pagefind (cond. - non-Node)
         if: ${{ env.NODE != 'true' }}
         uses: supplypike/setup-bin@v3
