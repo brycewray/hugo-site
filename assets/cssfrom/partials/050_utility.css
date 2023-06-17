@@ -1,6 +1,3 @@
-@use 'variables' as var;
-@use 'colors' as clr;
-
 .ctr {
 	text-align: center;
 }

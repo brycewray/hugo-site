@@ -13,6 +13,20 @@
 	--sky-700: hsl(200, 100%, 30%);
 	--fuchsia-300: hsl(290, 93%, 83%);
 	--fuchsia-700: hsl(290, 70%, 41%);
+	@supports (color: oklch(49% 0.1 252)) {
+		--orange-700: oklch(55.1% 0.155 49);
+		--yellow-200: oklch(94.03% 0.123 104);
+		--yellow-300: oklch(89.76% 0.164 104);
+		--yellow-800: oklch(47.33% 0.09965845980572594 104);
+		--green-100: oklch(96.37% 0.036 151);
+		--green-600: oklch(63.06% 0.174 151);
+		--emerald-200: oklch(90.85% 0.085 158);
+		--emerald-700: oklch(51.24% 0.11 158);
+		--sky-300: oklch(84.54% 0.094 241);
+		--sky-700: oklch(48.74% 0.113 241);
+		--fuchsia-300: oklch(83.21% 0.131 320);
+		--fuchsia-700: oklch(50.88% 0.222 320);
+	}
 }
 
 /* ======= START, individual items from Chroma */
