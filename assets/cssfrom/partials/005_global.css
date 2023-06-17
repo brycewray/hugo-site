@@ -2,13 +2,13 @@
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
-	--default-light: var(--gray-650);
+	--default-light: var(--gray-800);
 	--default-dark: var(--gray-300);
-	--boost-light: var(--gray-850);
+	--boost-light: var(--gray-900);
 	--boost-dark: var(--gray-200);
-	--bquote-light: var(--gray-550);
+	--bquote-light: var(--gray-500);
 	--bquote-dark: var(--gray-400);
-	--bquote-boost-light: var(--gray-650);
+	--bquote-boost-light: var(--gray-600);
 	--bquote-boost-dark: var(--gray-350);
 	--link-light: var(--blue-700);
 	--link-dark: var(--blue-300);
