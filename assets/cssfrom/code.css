@@ -42,8 +42,9 @@
 		background-color: var(--bkgd-code-dark);
 		border-color: var(--border-dark);
 	}
-	/* === Fallback colors to catch var issues */
 	& * {
+		font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
+		/* === Fallback colors to catch var issues */
 		color: var(--clr-lt, #ffff00);
 		@media (prefers-color-scheme: dark) {
 			color: var(--clr-dk, #191970);
