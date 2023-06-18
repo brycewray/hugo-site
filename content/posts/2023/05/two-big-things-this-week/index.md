@@ -31,3 +31,6 @@ With today's [release of macOS 13.4](https://www.macrumors.com/2023/05/18/apple-
 [^market]: True, Chrome's share of the browser market is ridiculously massive, but don't discount the importance of Safari's Webkit. It's the only browser engine Apple currently allows on any iDevices, and they constitute a massive quantity of the world's phones, especially in North America and Europe.
 
 So, now, it's up to Mozilla to bring native CSS nesting compatibility to the Gecko engine which enables Firefox; [this](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037) is the bug report to watch, as Mozilla engineers try to catch up with their competitors.
+
+**Update, 2023-06-18**: Based on subsequent progress on that particular [bug report](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037), it now appears Firefox **will** soon add native CSS nesting. This capability will be available behind a flag in **Firefox 115**, to be released 2023-07-04; and it'll be turned on by default in **Firefox 116**, to be released 2023-08-01 (release dates from the [Firefox Release Calendar](https://wiki.mozilla.org/index.php?title=Release_Management/Calendar&redirect=no)).
+{.box}
