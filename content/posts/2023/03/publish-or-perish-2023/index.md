@@ -166,5 +166,5 @@ Or, if you prefer a chart:
 | **DOAP** | 5 | <span class="emojis">✅</span> | <span class="emojis">😡</span> | <span class="emojis">☑️</span> | <span class="emojis">😡</span> | <span class="emojis">😕</span> |
 {.ulysses}
 
-<span class="emojis">✅</span> Excellent   <span class="emojis">☑️</span> Good   <span class="emojis">😕</span> Fair   <span class="emojis">😡</span> Poor
-{.ctr .pokey}
+<span class="emojis">✅</span> Excellent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="emojis">☑️</span> Good&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="emojis">😕</span> Fair&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="emojis">😡</span> Poor
+{.ctr .legal}
