@@ -1,6 +1,11 @@
+/* Miscellaneous variables */
+
 :root {
-	/* === start, TYPOGRAPHY === */
-	/* ========================= */
+	/*
+
+	==== start, TYPOGRAPHY ====
+
+	*/
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
 	--sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -50,19 +55,17 @@
 	     but Segoe UI needs at least 0.25em */
 
 	/*
-	=========================
+
 	==== end, TYPOGRAPHY ====
+
 	*/
 
-	/*
-	=== start, MISCELLANY ===
-	 =========================
-	 */
 
 	/*
-	breakpoints (mostly based on Tailwind CSS)
-	but useless for now...
-	see https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
+	Vars for breakpoints --- mostly based on TWCSS and my SCSS originals,
+	but useless for now as CSS variables; see:
+	- https://bholmes.dev/blog/alternative-to-css-variable-media-queries/ (last updated 2021-05-12)
+	- https://drafts.csswg.org/css-env-1/ (2021-08-30)
 	*/
 	--bkpt_sm: 640px;
 	--bkpt_md: 768px;
@@ -71,13 +74,10 @@
 	--bkpt_xl: 1280px;
 	--bkpt_2xl: 1536px;
 	--bkpt_3xl: 1920px; /* additional */
+	/* end, vars for breakpoints */
+
 
 	/* button */
 	--btn_radius: 6px;
-
-	/*
-	=========================
-	==== end, MISCELLANY ====
-	*/
 
 }
