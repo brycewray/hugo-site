@@ -1,32 +1,38 @@
 @charset 'utf-8';
 @use 'partials/variables' as var;
-// @use 'partials/colors' as clr;
+@use 'partials/colors' as clr;
 
-// == footnotes == //
+/* == footnotes == */
 
-// .footnotes, .footnote-sim, .footnote-ref {
-// 	font-family: var.$sans-serif;
-// }
+/*
+.footnotes, .footnote-sim, .footnote-ref {
+ 	font-family: var(--sans-serif);
+}
+*/
+
+.footnotes ol li, .footnotes ol li p, .footnote-ref,
+.footnote-backref, .footnote-sim, a.footnote-return {
+	font-weight: var(--font-weight-sm);
+}
 
 .footnotes {
 	padding-top: 0.5em;
-	// padding-bottom: 1em;
-	hr {
+	/* padding-bottom: 1em; */
+	& hr {
 		border: none;
 		height: 2px;
-		background-color: var(--head-light);
-		@media (prefers-color-scheme: dark) {
-			background-color: var(--head-dark);
-		}
+		background-color: var(--head);
 	}
-	ol {
+	& ol {
 		padding-inline-start: 1.5rem;
 	}
-	ol li {
+	& ol li {
 		font-size: clamp(0.625rem, 1vw + 0.5em, 0.9em);
-		// As of now, `::marker` has too little support even in good browsers;
-		// see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
-		p {
+		/*
+		As of now, `::marker` has too little support even in good browsers;
+		see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
+		*/
+		& p {
 			line-height: 1.5em;
 		}
 	}
@@ -37,14 +43,11 @@
 
 .footnote-sim {
 	font-size: 0.65em;
-	color: var(--link-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--link-dark);
-	}
+	color: var(--link);
 }
 
-a.footnote-return{
+a.footnote-return {
 	font-size: 50%;
 }
 
-// == end, footnotes == //
+/* == end, footnotes == */

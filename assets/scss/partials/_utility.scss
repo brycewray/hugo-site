@@ -1,14 +1,8 @@
-@use 'variables' as var;
-@use 'colors' as clr;
-
 .ctr {
 	text-align: center;
 }
 .red {
-	color: var(--red-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--red-dark);
-	}
+	color: var(--red);
 }
 
 .legal, .pokey {
@@ -16,16 +10,16 @@
 }
 
 .legal {
-	font-size: var.$text-xs;
+	font-size: var(--text-xs);
 }
 .pokey {
-	font-size: var.$text-sm;
+	font-size: var(--text-sm);
 }
 .sansSerif {
-	font-family: var.$sans-serif;
+	font-family: var(--sans-serif);
 }
 .serif {
-	font-family: var.$serif;
+	font-family: var(--serif);
 }
 .tightLead {
 	line-height: 1.25;
@@ -66,9 +60,11 @@
 	font-weight: var(--pub-date-weight);
 }
 
-// start, text/LH classes from TWCSS
-// =================================
-
+/*
+start, text/LH classes from TWCSS
+=================================
+*/
+/*
 .text-xs {
 	font-size: 0.75rem;
 	line-height: 1rem;
@@ -132,12 +128,15 @@
 .text-9xl {
 	font-size: 8rem;
 }
+*/
 
-// ===============================
-// end, text/LH classes from TWCSS
+/*
+===============================
+end, text/LH classes from TWCSS
+*/
 
 .mono {
-	font-family: var.$monospaced;
+	font-family: var(--monospaced);
 }
 
 .sr-only {
@@ -150,4 +149,8 @@
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border-width: 0;
+}
+
+.emojis {
+	font-family: var(--emojis);
 }

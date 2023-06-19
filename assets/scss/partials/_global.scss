@@ -1,77 +1,46 @@
-@use 'variables' as var;
-@use 'colors' as clr;
-
 :root {
-	// = = = TYPOGRAPHY = = =
-	--sans-serif: #{var.$sans-serif};
-	// --font-thin: 100;
-	--font-extralight: 200;
-	--font-light: 300;
-	--font-semilight: 350;
-	--font-normal: 400;
-	--font-medium: 500;
-	--font-semibold: 600;
-	--font-bold: 700;
-	// --font-extrabold: 800;
-	// --font-black: 900;
-	--font-weight-sm: var(--font-normal);
-	// ^^^ for .pokey, .legal, footnotes, etc. if using font-light for `html` and `body`
-	--font-article: var(--font-normal);
-	--pub-date-weight: var(--font-medium);
-	//
-	// = = = COLORS = = =
-	// === defaults ===
-	// primaries
-	--default-color: hsl(0, 0%, 20%); // same as #333 --- was #374151 (TWCSS "Prose" black)
-	--white: hsl(0, 0%, 100%); // could also be #eee at some point, hence this var
-	--black: hsl(0, 0%, 0%); // could also be #333 at some point, hence this var
-	--default-light: #{clr.$gray-650};
-	--default-dark: #{clr.$gray-300};
-	--boost-light: #{clr.$gray-850};
-	--boost-dark: ${clr.$gray-200};
-	--bquote-light: #{clr.$gray-550};
-	--bquote-dark: #{clr.$gray-400};
-	--bquote-boost-light: #{clr.$gray-650};
-	--bquote-boost-dark: #{clr.$gray-350};
-	--link-light: #{clr.$blue-700};
-	--link-dark: #{clr.$blue-300};
-	--link-afh-light: #{clr.$blue-900};
-	--link-afh-dark: #{clr.$slate-300};
-	--head-light: var(--black);
-	--head-dark: var(--white);
-	--red-light: #{clr.$red-700};
-	--red-dark: #{clr.$red-300};
-	--box-red-light: #{clr.$red-600};
-	--box-red-dark: #{clr.$red-400};
-	--logocircle: #{clr.$blue-500};
-	// backgrounds and borders
-	--bkgd-light: var(--white);
-	--bkgd-dark: var(--black);
-	--bkgd-nav-light: #{clr.$blue-200};
-	--bkgd-nav-dark: #{clr.$blue-950};
-	--bkgd-box-light: #{clr.$slate-050};
-	--bkgd-box-dark: #{clr.$slate-900};
-	--bkgd-code-light: #{clr.$slate-050};
-	--bkgd-code-dark: #{clr.$slate-900};
-	--bkgd-article-code-light: #{clr.$slate-150};
-	--bkgd-article-code-dark: #{clr.$slate-750};
-	--bkgd-box-code-light: #{clr.$slate-200};
-	--bkgd-box-code-dark: #{clr.$slate-700};
-	--border-light: #{clr.$neutral-400};
-	--border-dark: #{clr.$neutral-600};
-	// @supports (color: oklch(49% 0.1 252)) {
-	// 	--link-light: #{clr.$blue-700-oklch};
-	// 	--link-dark: #{clr.$blue-300-oklch};
-	// 	--link-afh-light: #{clr.$blue-900-oklch};
-	// 	--link-afh-dark: #{clr.$slate-300-oklch};
-	// 	--red-light: #{clr.$red-700-oklch};
-	// 	--red-dark: #{clr.$red-300-oklch};
-	// 	--box-red-light: #{clr.$red-600-oklch};
-	// 	--box-red-dark: #{clr.$red-400-oklch};
-	// 	--logocircle: #{clr.$blue-500-oklch};
-	// 	--bkgd-nav-light: #{clr.$blue-200-oklch};
-	// 	--bkgd-nav-dark: #{clr.$blue-950-oklch};
-	// }
+	/* = = = COLORS = = = */
+	/* === defaults === */
+	/* primaries */
+	--default: var(--gray-800);
+	--boost: var(--gray-900);
+	--bquote: var(--gray-500);
+	--bquote-boost: var(--gray-600);
+	--link: var(--blue-700);
+	--link-afh: var(--blue-900);
+	--head: var(--black);
+	--red: var(--red-700);
+	--box-red: var(--red-600);
+	--logocircle: var(--blue-500);
+	/* backgrounds and borders */
+	--bkgd: var(--white);
+	--bkgd-nav: var(--blue-200);
+	--bkgd-box: var(--slate-050);
+	--bkgd-code: var(--slate-050);
+	--bkgd-article-code: var(--slate-150);
+	--bkgd-box-code: var(--slate-200);
+	--border: var(--neutral-400);
+	--border-bquote: var(--gray-400); /* <-- same for both light and dark modes */
+	@media (prefers-color-scheme: dark) {
+		/* primaries */
+		--default: var(--gray-300);
+		--boost: var(--gray-200);
+		--bquote: var(--gray-400);
+		--bquote-boost: var(--gray-350);
+		--link: var(--blue-300);
+		--link-afh: var(--slate-300);
+		--head: var(--white);
+		--red: var(--red-300);
+		--box-red: var(--red-400);
+		/* backgrounds and borders */
+		--bkgd: var(--black);
+		--bkgd-nav: var(--blue-950);
+		--bkgd-box: var(--slate-900);
+		--bkgd-code: var(--slate-900);
+		--bkgd-article-code: var(--slate-750);
+		--bkgd-box-code: var(--slate-700);
+		--border: var(--neutral-600);
+	}
 }
 
 html, body {
@@ -79,37 +48,34 @@ html, body {
 	margin: 0 auto;
 	padding: 0;
 	-moz-osx-font-smoothing: auto;
-	// ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any)
+	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
 	font-variant-ligatures: normal;
 	text-rendering: optimizeLegibility;
-	// text-justify: inter-character; // someday...
+	/* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
-	font-family: var.$sans-serif;
+	font-family: var(--sans-serif);
 	font-weight: var(--font-normal);
-	background-color: var(--bkgd-light);
-	color: var(--default-light);
+	background-color: var(--bkgd);
+	color: var(--default);
 	color-scheme: light dark;
-	@media screen and (min-width: var.$bkpt_lg) {
-		font-weight: var(--light);
-	}
-	@media (prefers-color-scheme: dark) {
-		background: var(--bkgd-dark);
-		color: var(--default-dark);
+	@media screen and (min-width: 1024px) {
+		font-weight: var(--font-light);
 	}
 }
-
-// h1, .h1, h2, .h2, h3, .h3, h4, .h4,
-// header, footer, table, blockquote, summary, contact-button, search-button,
-// .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
-// .sitemap-Div, .searchDiv, .searchDivPF,
-// .footnotes, .footnote-sim, .footnote-ref,
-// .box, .labeled-highlight, .imgcCaption, .imghCaption, .bg-dark,
-// .legal, .pokey {
-// 	font-family: var.$sans-serif;
-// }
+/*
+h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+header, footer, table, blockquote, summary, contact-button, search-button,
+.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+.sitemap-Div, .searchDiv, .searchDivPF,
+.footnotes, .footnote-sim, .footnote-ref,
+.box, .labeled-highlight, .imgcCaption, .imghCaption, .bg-dark,
+.legal, .pokey {
+	font-family: var(--sans-serif);
+}
+*/
 
 html {
-	// scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 	scroll-padding-top: 80px;
 }
 
@@ -123,11 +89,8 @@ b, strong {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-weight: var(--font-medium);
-	color: var(--head-light);
+	color: var(--head);
 	letter-spacing: -0.025rem;
-	@media (prefers-color-scheme: dark) {
-		color: var(--head-dark);
-	}
 }
 
 h1, h2, h3, h4 {
@@ -151,7 +114,7 @@ h3, .h3 {
 
 h1, .h1 {
 	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
-	// usually overridden by other styling (e.g., billboard.scss)
+	/* usually overridden by other styling (e.g., billboard.scss) */
 }
 
 h2, .h2 {
@@ -167,25 +130,19 @@ h4, .h4 {
 }
 
 a, a:focus, a:hover, a:active {
-	text-decoration-thickness: var.$textDcThick;
-	text-underline-offset: var.$textUnOffst;
-	@media screen and (min-width: var.$bkpt_md) {
-		text-decoration-thickness: var.$textDcThickMd;
-		text-underline-offset: var.$textUnOffstMd;
+	text-decoration-thickness: var(--textDcThick);
+	text-underline-offset: var(--textUnOffst);
+	@media screen and (min-width: 768px) {
+		text-decoration-thickness: var(--textDcThickMd);
+		text-underline-offset: var(--textUnOffstMd);
 	}
 	text-decoration-skip-ink: auto;
 }
 
 a {
-	color: var(--link-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--link-dark);
-	}
+	color: var(--link);
 	&:focus, &:hover, &:active {
-		color: var(--link-afh-light);
-		@media (prefers-color-scheme: dark) {
-			color: var(--link-afh-dark);
-		}
+		color: var(--link-afh);
 	}
 }
 
@@ -217,9 +174,9 @@ ul li li, ol li li, ul li li li, ol li li li {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	&::marker {
-		color: clr.$slate-400;
+		color: var(--slate-400);
 		@media (prefers-color-scheme: dark) {
-			color: clr.$slate-500;
+			color: var(--slate-500);
 		}
 	}
 }
@@ -234,16 +191,16 @@ ul li li li, ol li li li {
 
 ol li ul, ol li li ul, ol li li li ul {
 	padding-inline-start: 1.1em;
-	li {
+	& li {
 		list-style-type: disc;
 		&::marker {
 			color: inherit;
 		}
-		ul {
-			li::marker {
-				color: clr.$slate-400;
+		& ul {
+			& li::marker {
+				color: var(--slate-400);
 				@media (prefers-color-scheme: dark) {
-					color: clr.$slate-500;
+					color: var(--slate-500);
 				}
 			}
 		}
@@ -264,28 +221,29 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 .container {
-	// width: 90%;
+	/* width: 90%; */
 	margin: 0 auto;
-	&-narrower {
-		margin: 1rem auto 0 auto;
-		width: 80%;
-		@media screen and (min-width: var.$bkpt_lg) {
-			width: 50%;
-			// max-width: 65ch;
-		}
-		@media screen and (min-width: var.$bkpt_2xl) {
-			width: 45%;
-			// max-width: 65ch;
-		}
-		@media screen and (min-width: var.$bkpt_3xl) {
-			width: 40%;
-			// max-width: 65ch;
-		}
-		// figure img, img {
-		//   width: 100%;
-		//   height: auto;
-		// }
+}
+
+.container-narrower {
+	margin: 1rem auto 0 auto;
+	width: 80%;
+	@media screen and (min-width: 1024px) {
+		width: 50%;
+		/* max-width: 65ch; */
 	}
+	@media screen and (min-width: 1536px) {
+		width: 45%;
+		/* max-width: 65ch; */
+	}
+	@media screen and (min-width: 1920px) {
+		width: 40%;
+		/* max-width: 65ch; */
+	}
+	/* & figure img, img { */
+	/*   width: 100%; */
+	/*   height: auto; */
+	/* } */
 }
 
 li p {

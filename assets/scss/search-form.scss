@@ -2,22 +2,22 @@
 @use 'partials/variables' as var;
 @use 'partials/colors' as clr;
 
-// === for search form
+/* === for search form */
 
 .searchDiv, .searchDivPF {
 	margin: 2em auto;
 }
 
 .searchDivPF {
-	// margin: 0 auto;
+	/* margin: 0 auto; */
 	width: 80%;
-	@media screen and (min-width: var.$bkpt_md) {
+	@media screen and (min-width: 768px) {
 		width: 70%;
 	}
-	@media screen and (min-width: var.$bkpt_lg) {
+	@media screen and (min-width: 1024px) {
 		width: 65%;
 	}
-	@media screen and (min-width: var.$bkpt_2xl) {
+	@media screen and (min-width: 1536px) {
 		width: 50%;
 	}
 }
@@ -31,17 +31,13 @@
 	margin: 0 auto;
 	width: 17em;
 	padding: 0;
-	background-color: var(--bkgd-box-light);
+	background-color: var(--bkgd-box);
 	border: 1px solid;
-	border-color: var(--border-light);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bkgd-box-dark);
-		border-color: var(--border-dark);
-	}
+	border-color: var(--border);
 }
 
 .searchInput {
-	@media (min-width: var.$bkpt_md) {
+	@media (min-width: 768px) {
 		max-width: 300ch;
 	}
 	outline: none;
@@ -55,20 +51,18 @@
 }
 
 .searchBtn {
-	appearance: none; // otherwise, Safari rounds it
-	border-radius: 0; // " " " " " " " " " " " " " "
+	appearance: none; /* otherwise, Safari rounds it */
+	border-radius: 0; /* " " " " " " " " " " " " " " */
 	position: absolute;
 	right: 0px;
-	margin: 0; // fixes oddity in Safari
+	margin: 0; /* fixes oddity in Safari */
 	padding: 3px 12px;
 	font-weight: bold;
 	border: 1px solid;
-	border-color: var(--link-light);
-	background-color: var(--link-light);
+	border-color: var(--link);
+	background-color: var(--link);
 	color: var(--white);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--link-dark);
-		background-color: var(--link-dark);
 		color: var(--black);
 	}
 	&:hover {
@@ -76,26 +70,24 @@
 	}
 	&:focus, &:active, &:hover {
 		border: 1px solid;
-		border-color: var(--link-afh-light);
-		background-color: var(--link-afh-light);
-		@media (prefers-color-scheme: dark) {
-			border: 1px solid var(--link-afh-dark);
-			background-color: var(--link-afh-dark);
-		}
+		border-color: var(--link-afh);
+		background-color: var(--link-afh);
 	}
 }
 
 #search {
-	// in case we need it
+	/* in case we need it */
 	margin: 0.5em auto 1em;
 }
 
+/*
 .pagefind-ui {
-	// overall area
+	// [overall area]
 }
+*/
 
 .pagefind-ui__form {
-	// holding
+	/* holding */
 	position: relative;
 	text-align: center;
 }
@@ -107,18 +99,16 @@
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
 	border: 1px solid;
-	border-color: var(--border-light);
+	border-color: var(--border);
 	border-radius: 9px;
-	background-color: var(--bkgd-box-light);
+	background-color: var(--bkgd-box);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--border-dark);
-		background-color: var(--bkgd-box-dark);
 		color: var(--white);
 	}
 }
 
 .pagefind-ui__drawer {
-	// results area
+	/* results area */
 	gap: 1em;
 	display: flex;
 	flex-direction: row;
@@ -127,25 +117,23 @@
 }
 
 .pagefind-ui__message {
-	// count of results
+	/* count of results */
 	margin-top: 0.5em;
 	text-align: center;
 }
 
 .pagefind-ui__button, .pagefind-ui__search-clear {
-	// "Load more results"
+	/* "Load more results" */
 	margin: 1em auto;
 	text-align: center;
 	border-radius: 9px;
 	padding: 3px 12px;
 	font-weight: bold;
 	border: 1px solid;
-	border-color: var(--link-light);
-	background-color: var(--link-light);
+	border-color: var(--link);
+	background-color: var(--link);
 	color: var(--white);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--link-dark);
-		background-color: var(--link-dark);
 		color: var(--black);
 	}
 	&:hover {
@@ -153,17 +141,13 @@
 	}
 	&:focus, &:active, &:hover {
 		border: 1px solid;
-		border-color: var(--link-afh-light);
-		background-color: var(--link-afh-light);
-		@media (prefers-color-scheme: dark) {
-			border-color: var(--link-afh-dark);
-			background-color: var(--link-afh-dark);
-		}
+		border-color: var(--link-afh);
+		background-color: var(--link-afh);
 	}
 }
 
 .pagefind-ui__result {
-	// li for list
+	/* li for list */
 	margin-bottom: 0.75em;
 }
 
@@ -173,19 +157,19 @@
 
 .pagefind-ui__button {
 	display: block;
-	// position: absolute;
-	// left: 50%;
-	// bottom: 0;
+	/* position: absolute; */
+	/* left: 50%; */
+	/* bottom: 0; */
 }
 
 .pagefind-ui__result-excerpt {
-	// font-family: var.$serif;
-	mark {
+	/* font-family: var(--serif); */
+	& mark {
 		color: var(--black);
-		background-color: clr.$blue-100;
+		background-color: var(--blue-100);
 		@media (prefers-color-scheme: dark) {
 			color: var(--white);
-			background-color: clr.$blue-900;
+			background-color: var(--blue-900);
 		}
 	}
 }
