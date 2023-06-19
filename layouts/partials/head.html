@@ -1,27 +1,35 @@
 	<head>
-
-		{{ hugo.Generator }}
+		{{- /*
+			Items ordered according to Harry Roberts's "Get ypur 'head' straight" talk, 2022:
+			https://www.youtube.com/watch?v=MHyAOZ45vnU
+		 */ -}}
 {{- /* Required meta tags */}}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		{{/* <meta http-equiv="X-UA-Compatible" content="ie=edge"> */}}
+		{{- /* <meta http-equiv="X-UA-Compatible" content="ie=edge"> */}}
+	{{- if .IsHome }}
+		<title>{{ .Site.Title }}</title>
+	{{- else }}
+		<title>{{ .Title }} | {{ .Site.Title }}</title>
+	{{- end }}
+	{{ hugo.Generator }}
 {{/* CSS */}}
 		{{- partialCached "head-criticalcss.html" . }}
-		{{- partial "head-css.html" . -}}
+		{{- partial "head-css.html" . }}
 		<meta name="color-scheme" content="light dark">
+		{{- partial "head-imgs-css.html" . }}
 		{{- partial "head-css-oklch-post.html" . -}}
-		{{- partial "head-imgs-css.html" . -}}
 		<noscript><style>.nScrHidden {display: none;}</style></noscript>
-		{{ partial "head-meta_cloud-socimg.html" . -}}
-		{{ partialCached "head-favicons.html" . }}
+{{ partial "json-ld.html" . }}
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, excerpt-only - JSON" href="https://www.brycewray.com/index-excerpts.json">
-    {{- if hugo.IsProduction }}
-{{- /* Fathom script */}}
-		<script src="https://cdn.usefathom.com/script.js" data-site="UJDSNFVF" defer></script>
-    {{- end }}
-{{ partial "json-ld.html" . }}
-
+		{{- if hugo.IsProduction }}
+			{{- /* Fathom script */}}
+			<script src="https://cdn.usefathom.com/script.js" data-site="UJDSNFVF" defer></script>
+		{{- end }}
+		{{ partial "head-meta-social.html" . }}
+		{{ partial "head-cloud-socimg.html" . }}
+		{{ partialCached "head-favicons.html" . }}
 	</head>

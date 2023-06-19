@@ -2,17 +2,6 @@
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
 {{- $socImg := "" -}}{{- /* init */ -}}
 	{{- if .IsHome }}
-		<link rel="me" href="https://github.com/brycewray">
-		<title>{{ .Site.Title }}</title>
-		<meta name="description" content="{{ .Site.Params.Description }}">
-		<meta property="description" content="{{ .Site.Params.Description }}">
-		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<meta property="twitter:title" content="{{ .Site.Title }}">
-		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
-		<meta property="og:title" content="{{ .Site.Title }}">
-		<meta property="og:type" content="website">
-		<meta property="og:description" content="{{ .Site.Params.Description }}">
-		<meta property="og:url" content="{{ .Site.BaseURL }}">
 		{{- $socImg = $fallbackImg.Permalink -}}{{/* fallback if not Home */}}
 	{{- else }}
 		{{- $escapedTitle := .Title -}}
@@ -55,25 +44,6 @@
 		{{- /* choices are `librefranklinsemibold.ttf` and `librefranklinmedium.ttf` */ -}}
 		{{- $titleWidth := 1136 -}}{{/* 72 each side from 1280 */}}
 		{{- $socImg = print "https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" -}}
-		<title>{{ .Title }} | {{ .Site.Title }}</title>
-	 {{- if .Params.Description }}
-		<meta name="description" content="{{ .Params.Description }}">
-		<meta property="og:description" content="{{ .Params.Description }}">
-		<meta property="twitter:description" content="{{ .Params.Description }}">
-	 {{- else }}
-	 	<meta name="description" content="{{ .Site.Params.Description }}">
-		<meta property="og:description" content="{{ .Site.Params.Description }}">
-		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
-	 {{- end }}
-	 {{- if .Params.Ext_canonical }}
-		<link rel="canonical" href="{{ .Params.Ext_canonical }}">
-	 {{- else }}
-		<link rel="canonical" href="{{ .Page.Permalink }}">
-	 {{- end }}
-		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
-		<meta property="og:type" content="article">
-		<meta property="og:url" content="{{ .Page.Permalink }}">
-		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
 	{{- end }}
 		<meta property="og:image" content="{{ $socImg }}">
 		<meta property="og:image:width" content="1280">
