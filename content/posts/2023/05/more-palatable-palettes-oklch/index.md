@@ -40,7 +40,7 @@ Your current display may not allow you to see much difference, especially given 
 | **950** | 152.93 | 150 |
 {.ulysses}
 
-[All the major browser engines currently support OKLCH](https://caniuse.com/?search=oklch), but most displays still can't come close to matching some of its more vivid colors. The best that most consumers can use right now are on phones' OLED displays. So, until such time as there's considerably more widespread display support for OKLCH, it's necessary to use [`@supports`](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) to provide both standard and OKLCH versions of color variables (the [OKLCH Color Picker and Converter](https://oklch.com) makes this super-easy):
+[All the major browser engines currently support OKLCH](https://caniuse.com/?search=oklch), but most displays still can't come close to matching some of its more vivid colors. The best that most consumers can use right now are on phones' OLED displays. Of course, quite a few users are still on certain oddball browsers, or older browser versions, that *don't* support OKLCH; so you'll want to use [`@supports`](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) to provide both standard and OKLCH versions of color variables (the [OKLCH Color Picker and Converter](https://oklch.com) makes this super-easy):
 
 ```css
 .myElement {
