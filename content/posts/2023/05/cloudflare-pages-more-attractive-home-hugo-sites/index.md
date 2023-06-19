@@ -32,7 +32,7 @@ The main difficulty was that using the binary with Hugo on a computer required t
 
 So, as I mentioned earlier: when I learned last summer about what ended up being the CFP v2 build image, I [requested](https://github.com/cloudflare/pages-build-image/discussions/1#discussioncomment-3080730) that the Embedded Dart Sass binary be part of that image, with the version specifiable through use of an environment variable. And it's my pleasure to tell you that v2 **will** provide that option, through an `EMBEDDED_DART_SASS_VERSION` env var. It works like a dream, just as does the Hugo/Embedded Dart Sass combo on one's local machine.
 
-<strong class="red">Important note, 2023-06-08</strong>: There has been a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2). For now, until Hugo is able to work with the new packaging, you should **keep using the current/archived Embedded Dart Sass binary** ([v.1.62.1](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1)). The **new** packaging **doesn't** work fully with Hugo --- *e.g.*, it doesn't "watch" files properly for when you make edits to your `.scss` files.
+<strong class="red">Important note, 2023-06-19</strong>: [Hugo 0.114.0](https://github.com/gohugoio/hugo/releases/tag/v0.114.0) is the first version that supports the new packaging, which uses the [Dart Sass package](https://github.com/sass/dart-sass#embedded-dart-sass), which the v2 build will install through use of a `DART_SASS_VERSION` env var. If forced to use an older version of Hugo, you must continue with the [older, archived Embedded Dart Sass packaging](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1) and `EMBEDDED_DART_SASS_VERSION`.
 {.box}
 
 *"But there's more."*
