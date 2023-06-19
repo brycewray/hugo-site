@@ -1,0 +1,73 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"name": "{{ .Site.Title }}",
+	"description": "{{ .Site.Params.Description }}",
+	"url": {{ .Site.BaseURL }},
+	"thumbnailUrl": {{ with .Site.Params.AuthorAvatar -}}{{ . | absURL }}{{- end -}},
+	"license": "{{ .Site.Params.License }}"
+}
+</script>
+{{- else if .IsPage -}}
+	{{- $wordsToCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
+	{{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
+	{{- $wordCount := $wordsToCount | countwords -}}
+	{{- $typeEntry := "WebPage" -}}
+	{{- if eq .Title .Site.Params.Titles.About -}}
+		{{- $typeEntry = "AboutPage" -}}
+	{{- else if eq .Title .Site.Params.Titles.Search -}}
+		{{- $typeEntry = "SearchResultsPage" -}}
+	{{- else if eq .Title .Site.Params.Titles.Contact -}}
+		{{- $typeEntry = "ContactPage" -}}
+	{{- end -}}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "{{ $typeEntry }}",{{- if .Section }}
+	"articleSection": "{{ .Section }}",{{- end }}
+	"name": "{{ .Title | safeJS }}",
+	"headline": "{{ .Title | safeJS }}",
+	"alternativeHeadline": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
+	"description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
+	"inLanguage": "{{ .Site.LanguageCode }}",
+	"isFamilyFriendly": "true",
+	"mainEntityOfPage": {
+		"@type": "{{ $typeEntry }}",
+		"@id": {{ .Permalink }}
+	},
+	"author": {
+		"@type": "Person",
+		"@id": "{{ .Site.Params.Author }}"
+	},
+	"creator": {
+		"@type": "Person",
+		"name": "{{ .Site.Params.Author }}"
+	},
+	"accountablePerson": {
+		"@type": "Person",
+		"name": "{{ .Site.Params.Author }}"
+	},
+	"copyrightHolder": "{{ .Site.Params.Author }}",
+	"copyrightYear": "{{ now.Year }}",
+	"dateCreated": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
+	"datePublished": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
+	"dateModified": "{{- if .GitInfo -}}{{ (.GitInfo.AuthorDate).Format "2006-01-02" | safeHTML }}{{- else -}}{{ .PublishDate.Format "2006-01-02" | safeHTML }}{{- end -}}",
+	"publisher": {
+		"@type": "Person",
+		"name": "{{ .Site.Params.Author }}",
+		"url": {{ .Site.BaseURL }},
+		"logo": {
+			"@type": "ImageObject",
+			"url": {{ with .Site.Params.Logo -}}{{ . | absURL }}{{- end -}},
+			"width": "32",
+			"height": "32"
+		}
+	},
+	"url": {{ .Page.Permalink }},
+	"wordCount": "{{ $wordCount }}"
+}
+</script>
+{{ end }}
+
