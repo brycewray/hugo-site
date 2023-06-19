@@ -18,13 +18,21 @@ rm -rf static/_pagefind
 echo "                       "
 echo "-----------------------"
 echo "Setting environment variables..."
-HUGO_VERSION=0.113.0
-NODE_VERSION=18.16.0
-EMBEDDED_DART_SASS_VERSION=1.62.1
+# * * * * * *
+# Commenting out tool-related vars because, according to
+# @JohnDotAwesome on the CF Discord,
+# "Tool detection happens prior to the build command,
+# so that won't work."
+# Must still specify these in the GUI.
+#
+# HUGO_VERSION=0.113.0
+# NODE_VERSION=18.16.0
+# EMBEDDED_DART_SASS_VERSION=1.62.1
+# * * * * * *
 TZ='America/Chicago'
-export HUGO_VERSION
-export NODE_VERSION
-export EMBEDDED_DART_SASS_VERSION
+# export HUGO_VERSION
+# export NODE_VERSION
+# export EMBEDDED_DART_SASS_VERSION
 export TZ
 echo "                       "
 echo "-----------------------"
