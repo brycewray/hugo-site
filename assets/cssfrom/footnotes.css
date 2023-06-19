@@ -19,10 +19,7 @@
 	& hr {
 		border: none;
 		height: 2px;
-		background-color: var(--head-light);
-		@media (prefers-color-scheme: dark) {
-			background-color: var(--head-dark);
-		}
+		background-color: var(--head);
 	}
 	& ol {
 		padding-inline-start: 1.5rem;
@@ -44,10 +41,7 @@
 
 .footnote-sim {
 	font-size: 0.65em;
-	color: var(--link-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--link-dark);
-	}
+	color: var(--link);
 }
 
 a.footnote-return {

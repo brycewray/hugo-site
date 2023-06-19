@@ -35,13 +35,9 @@
 
 .chroma, .code-inline {
 	color: var(--black);
-	background-color: var(--bkgd-code-light);
+	background-color: var(--bkgd-code);
 	border: 1px solid;
-	border-color: var(--border-light);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bkgd-code-dark);
-		border-color: var(--border-dark);
-	}
+	border-color: var(--border);
 	& * {
 		font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
@@ -52,8 +48,8 @@
 	}
 	/* === Other */
 	.x {
-		--clr-lt: var(--default-light);
-		--clr-dk: var(--default-dark);
+		--clr-lt: var(--default);
+		--clr-dk: var(--default);
 	}
 	/* === Error */
 	.err {
@@ -65,8 +61,8 @@
 	LineTable (lntable), LineHighlight (hl), LineNumbersTable (lnt),
 	LineNumbers (ln) */
 	.cl {
-		--clr-lt: var(--default-light);
-		--clr-dk: var(--default-dark);
+		--clr-lt: var(--default);
+		--clr-dk: var(--default);
 	}
 	.lntd {
 		vertical-align: top;
@@ -186,10 +182,7 @@ code {
 	font-family: var(--monospaced);
   font-kerning: none;
   font-variant-ligatures: none;
-	background: var(--bkgd-article-code-light);
-  @media (prefers-color-scheme: dark) {
-		background-color: var(--bkgd-article-code-dark);
-  }
+	background: var(--bkgd-article-code);
 }
 
 code[class*="language-"],
@@ -305,12 +298,7 @@ pre[class*="language-"] {
 /* needed for articles */
 
 code, article code, .box code {
-	--bg-lt: var(--bkgd-article-code-light);
-	--bg-dk: var(--bkgd-article-code-dark);
-	background-color: var(--bg-lt);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bg-dk);
-	}
+	background-color: var(--bkgd-article-code);
 }
 
 code {
@@ -369,8 +357,7 @@ article blockquote code {
 .box {
 	& code, & a code {
 		font-size: 1em; /* definitely em */
-		--bg-lt: var(--bkgd-box-code-light);
-		--bg-dk: var(--bkgd-box-code-dark);
+		background-color: var(--bkgd-box-code);
 	}
 }
 

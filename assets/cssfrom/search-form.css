@@ -29,13 +29,9 @@
 	margin: 0 auto;
 	width: 17em;
 	padding: 0;
-	background-color: var(--bkgd-box-light);
+	background-color: var(--bkgd-box);
 	border: 1px solid;
-	border-color: var(--border-light);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bkgd-box-dark);
-		border-color: var(--border-dark);
-	}
+	border-color: var(--border);
 }
 
 .searchInput {
@@ -61,12 +57,10 @@
 	padding: 3px 12px;
 	font-weight: bold;
 	border: 1px solid;
-	border-color: var(--link-light);
-	background-color: var(--link-light);
+	border-color: var(--link);
+	background-color: var(--link);
 	color: var(--white);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--link-dark);
-		background-color: var(--link-dark);
 		color: var(--black);
 	}
 	&:hover {
@@ -74,12 +68,8 @@
 	}
 	&:focus, &:active, &:hover {
 		border: 1px solid;
-		border-color: var(--link-afh-light);
-		background-color: var(--link-afh-light);
-		@media (prefers-color-scheme: dark) {
-			border: 1px solid var(--link-afh-dark);
-			background-color: var(--link-afh-dark);
-		}
+		border-color: var(--link-afh);
+		background-color: var(--link-afh);
 	}
 }
 
@@ -107,12 +97,10 @@
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
 	border: 1px solid;
-	border-color: var(--border-light);
+	border-color: var(--border);
 	border-radius: 9px;
-	background-color: var(--bkgd-box-light);
+	background-color: var(--bkgd-box);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--border-dark);
-		background-color: var(--bkgd-box-dark);
 		color: var(--white);
 	}
 }
@@ -140,12 +128,10 @@
 	padding: 3px 12px;
 	font-weight: bold;
 	border: 1px solid;
-	border-color: var(--link-light);
-	background-color: var(--link-light);
+	border-color: var(--link);
+	background-color: var(--link);
 	color: var(--white);
 	@media (prefers-color-scheme: dark) {
-		border-color: var(--link-dark);
-		background-color: var(--link-dark);
 		color: var(--black);
 	}
 	&:hover {
@@ -153,12 +139,8 @@
 	}
 	&:focus, &:active, &:hover {
 		border: 1px solid;
-		border-color: var(--link-afh-light);
-		background-color: var(--link-afh-light);
-		@media (prefers-color-scheme: dark) {
-			border-color: var(--link-afh-dark);
-			background-color: var(--link-afh-dark);
-		}
+		border-color: var(--link-afh);
+		background-color: var(--link-afh);
 	}
 }
 

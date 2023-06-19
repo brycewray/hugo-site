@@ -52,10 +52,7 @@
 }
 
 .billboard-p-text {
-	color: var(--head-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--head-dark);
-	}
+	color: var(--head);
 	font-size: clamp(1rem, 0.25rem + 1.25vw, 1.5rem);
 	line-height: 1.25;
 	margin-top: 1.5em;

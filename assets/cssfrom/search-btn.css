@@ -10,13 +10,11 @@ search-button {
 		color: var(--white);
 		width: 15em;
 		padding: 0.5em 0.25em;
-		background-color: var(--link-light);
+		background-color: var(--link);
 		border: 1px solid;
-		border-color: var(--link-light);
+		border-color: var(--link);
 		border-radius: var(--btn_radius);
 		@media (prefers-color-scheme: dark) {
-			border-color: var(--link-dark);
-			background-color: var(--link-dark);
 			color: var(--black);
 		}
 		&:hover {
@@ -24,12 +22,8 @@ search-button {
 		}
 		&:focus, &:active, &:hover {
 			border: 1px solid;
-			border-color: var(--link-afh-light);
-			background-color: var(--link-afh-light);
-			@media (prefers-color-scheme: dark) {
-				border-color: var(--link-afh-dark);
-				background-color: var(--link-afh-dark);
-			}
+			border-color: var(--link-afh);
+			background-color: var(--link-afh);
 		}
 	}
 }

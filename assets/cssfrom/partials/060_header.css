@@ -1,8 +1,5 @@
 header, .nav, .nav-Menu {
-	background-color: var(--bkgd-nav-light);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bkgd-nav-dark);
-	}
+	background-color: var(--bkgd-nav);
 }
 
 header {

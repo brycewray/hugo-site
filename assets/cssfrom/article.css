@@ -2,19 +2,13 @@
 
 .header-anchor {
 	text-decoration: none;
-	color: var(--head-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--head-dark);
-	}
+	color: var(--head);
 	&:hover, &:active, &:focus {
-		color: var(--link-light);
+		color: var(--link);
 		text-decoration: underline;
 		text-decoration-thickness: var(--textDcThickHA);
 		text-underline-offset: var(--textUnOffst);
 		text-decoration-skip-ink: auto;
-		@media (prefers-color-scheme: dark) {
-			color: var(--link-dark);
-		}
 		&::after {
 			font-size: var(--text-base);
 			padding-left: 0.5em;
@@ -97,15 +91,12 @@ img.ctrImg {
 
 blockquote {
 	border-left: 4px solid;
-	border-left-color: var(--bquote-dark);
-	color: var(--bquote-light);
+	border-left-color: var(--border-bquote);
+	/* ^^^ same for both light and dark modes */
+	color: var(--bquote);
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
-	@media (prefers-color-scheme: dark) {
-		/* border-left is same color */
-		color: var(--bquote-dark);
-	}
 	& p:last-child {
 		margin-bottom: 0;
 	}
@@ -141,16 +132,12 @@ article {
 	line-height: clamp(1.4em, 1vw + 0.625em, 1.5em);
 	display: block;
 	box-sizing: border-box;
-	background-color: var(--bkgd-box-light);
+	background-color: var(--bkgd-box);
 	border: 1px solid;
-	border-color: var(--border-light);
+	border-color: var(--border);
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bkgd-box-dark);
-		border-color: var(--border-dark);
-	}
 	& p {
 		padding: 0;
 		margin: 0;
@@ -159,10 +146,7 @@ article {
 		margin-top: 1.75em;
 	}
 	.red {
-		color: var(--box-red-light);
-		@media (prefers-color-scheme: dark) {
-			color: var(--box-red-dark);
-		}
+		color: var(--box-red);
 	}
 }
 
@@ -171,16 +155,10 @@ following from...
 https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
 */
 article strong:not(.red *):not(a *):not(blockquote *), article b:not(.red *):not(a *):not(blockquote *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	color: var(--boost-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--boost-dark);
-	}
+	color: var(--boost);
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-	color: var(--bquote-boost-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--bquote-boost-dark);
-	}
+	color: var(--bquote-boost);
 }
 
 .gitinfo {

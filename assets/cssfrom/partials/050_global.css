@@ -2,40 +2,45 @@
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
-	--default-light: var(--gray-800);
-	--default-dark: var(--gray-300);
-	--boost-light: var(--gray-900);
-	--boost-dark: var(--gray-200);
-	--bquote-light: var(--gray-500);
-	--bquote-dark: var(--gray-400);
-	--bquote-boost-light: var(--gray-600);
-	--bquote-boost-dark: var(--gray-350);
-	--link-light: var(--blue-700);
-	--link-dark: var(--blue-300);
-	--link-afh-light: var(--blue-900);
-	--link-afh-dark: var(--slate-300);
-	--head-light: var(--black);
-	--head-dark: var(--white);
-	--red-light: var(--red-700);
-	--red-dark: var(--red-300);
-	--box-red-light: var(--red-600);
-	--box-red-dark: var(--red-400);
+	--default: var(--gray-800);
+	--boost: var(--gray-900);
+	--bquote: var(--gray-500);
+	--bquote-boost: var(--gray-600);
+	--link: var(--blue-700);
+	--link-afh: var(--blue-900);
+	--head: var(--black);
+	--red: var(--red-700);
+	--box-red: var(--red-600);
 	--logocircle: var(--blue-500);
 	/* backgrounds and borders */
-	--bkgd-light: var(--white);
-	--bkgd-dark: var(--black);
-	--bkgd-nav-light: var(--blue-200);
-	--bkgd-nav-dark: var(--blue-950);
-	--bkgd-box-light: var(--slate-050);
-	--bkgd-box-dark: var(--slate-900);
-	--bkgd-code-light: var(--slate-050);
-	--bkgd-code-dark: var(--slate-900);
-	--bkgd-article-code-light: var(--slate-150);
-	--bkgd-article-code-dark: var(--slate-750);
-	--bkgd-box-code-light: var(--slate-200);
-	--bkgd-box-code-dark: var(--slate-700);
-	--border-light: var(--neutral-400);
-	--border-dark: var(--neutral-600);
+	--bkgd: var(--white);
+	--bkgd-nav: var(--blue-200);
+	--bkgd-box: var(--slate-050);
+	--bkgd-code: var(--slate-050);
+	--bkgd-article-code: var(--slate-150);
+	--bkgd-box-code: var(--slate-200);
+	--border: var(--neutral-400);
+	--border-bquote: var(--gray-400); /* <-- same for both light and dark modes */
+	@media (prefers-color-scheme: dark) {
+		/* primaries */
+		--default: var(--gray-300);
+		--boost: var(--gray-200);
+		--bquote: var(--gray-400);
+		--bquote-boost: var(--gray-350);
+		--link: var(--blue-300);
+		--link-afh: var(--slate-300);
+		--head: var(--white);
+		--red: var(--red-300);
+		--box-red: var(--red-400);
+		/* backgrounds and borders */
+		--bkgd: var(--black);
+		--bkgd-nav: var(--blue-950);
+		--bkgd-box: var(--slate-900);
+		--bkgd-code: var(--slate-900);
+		--bkgd-article-code: var(--slate-750);
+		--bkgd-box-code: var(--slate-700);
+		--border: var(--neutral-600);
+	}
 }
 
 html, body {
@@ -50,15 +55,11 @@ html, body {
 	font-kerning: normal;
 	font-family: var(--sans-serif);
 	font-weight: var(--font-normal);
-	background-color: var(--bkgd-light);
-	color: var(--default-light);
+	background-color: var(--bkgd);
+	color: var(--default);
 	color-scheme: light dark;
 	@media screen and (min-width: 1024px) {
 		font-weight: var(--font-light);
-	}
-	@media (prefers-color-scheme: dark) {
-		background: var(--bkgd-dark);
-		color: var(--default-dark);
 	}
 }
 /*
@@ -88,11 +89,8 @@ b, strong {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-weight: var(--font-medium);
-	color: var(--head-light);
+	color: var(--head);
 	letter-spacing: -0.025rem;
-	@media (prefers-color-scheme: dark) {
-		color: var(--head-dark);
-	}
 }
 
 h1, h2, h3, h4 {
@@ -142,15 +140,9 @@ a, a:focus, a:hover, a:active {
 }
 
 a {
-	color: var(--link-light);
-	@media (prefers-color-scheme: dark) {
-		color: var(--link-dark);
-	}
+	color: var(--link);
 	&:focus, &:hover, &:active {
-		color: var(--link-afh-light);
-		@media (prefers-color-scheme: dark) {
-			color: var(--link-afh-dark);
-		}
+		color: var(--link-afh);
 	}
 }
 

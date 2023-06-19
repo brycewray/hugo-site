@@ -9,10 +9,7 @@ footer {
 	& p {
 		line-height: 1.5em; /* definitely em, not rem, here */
 		& code {
-			background-color: var(--bkgd-article-code-light);
-			@media (prefers-color-scheme: dark) {
-				background-color: var(--bkgd-article-code-dark);
-			}
+			background-color: var(--bkgd-article-code);
 		}
 	}
 	div.footerWrapper {
@@ -58,10 +55,7 @@ circle.Calckey,
 circle.Twitter,
 circle.RSS,
 circle.JSON {
-	fill: var(--link-light);
-	@media (prefers-color-scheme: dark) {
-		fill: var(--link-dark);
-	}
+	fill: var(--link);
 }
 
 a:hover path.GitHub,
@@ -71,10 +65,7 @@ a:hover circle.Calckey,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var(--link-afh-light);
-	@media (prefers-color-scheme: dark) {
-		fill: var(--link-afh-dark);
-	}
+	fill: var(--link-afh);
 }
 
 path.MastodonBody,

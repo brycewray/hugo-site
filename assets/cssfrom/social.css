@@ -56,7 +56,7 @@
 		- https://css-tricks.com/better-line-breaks-for-long-urls/
 		*/
 		@media (prefers-color-scheme: dark) {
-			color: var(--link-dark);
+			color: var(--link);
 		}
 	}
 	@media (prefers-color-scheme: dark) {
@@ -189,10 +189,7 @@ a > .card, a > .toot-card {
 			color: var(--gray-200);
 		}
 		&:hover {
-			color: var(--link-light);
-			@media (prefers-color-scheme: dark) {
-				color: var(--link-dark);
-			}
+			color: var(--link);
 		}
 	}
 	/* === needed in Eleventy but not in Hugo
@@ -332,10 +329,7 @@ a > .card, a > .toot-card {
 				color: var(--gray-200);
 			}
 			&:hover {
-				color: var(--link-light);
-				@media (prefers-color-scheme: dark) {
-					color: var(--link-dark);
-				}
+				color: var(--link);
 			}
 		}
 	}
