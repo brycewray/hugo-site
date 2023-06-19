@@ -1,5 +1,5 @@
 ---
-title: "Two big things this week"
+title: "Two big things this week"
 description: "I’ve been watching platform news from Cloudflare and browser news from Apple."
 author: Bryce Wray
 date: 2023-05-18T15:46:00-05:00
