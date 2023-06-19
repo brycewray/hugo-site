@@ -59,7 +59,7 @@ jobs:
         run: |
           curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          sass --version
+          sass --embedded --version
           echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Cache Hugo `resources`
         id: cache-resources
