@@ -5,7 +5,15 @@ footer {
 	margin: 4rem auto 0 auto;
 	width: 100%;
 	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.5em;
+	margin: 2rem auto 0 auto;
+	&.with-bg-dark {
+		padding-bottom: 6em;
+	}
+	& div.footerWrapper {
+		width: 65%;
+		height: 100%;
+	}
 	& p {
 		line-height: 1.5em; /* definitely em, not rem, here */
 		& code {
@@ -23,14 +31,6 @@ footer {
 			flex-direction: row;
 			justify-content: center;
 			gap: 1em;
-		}
-	}
-	@media (min-width: 1024px) {
-		margin: 2rem auto 0 auto;
-		/* padding-bottom: 1rem; */
-		& div.footerWrapper {
-			width: 65%;
-			height: 100%;
 		}
 	}
 }
