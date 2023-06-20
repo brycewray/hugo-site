@@ -21,6 +21,9 @@ In a corresponding [Eleventy Blog](https://www.11ty.dev/blog/) [post](https://ww
 
 > .&nbsp;.&nbsp;. I don’t know if you all can tell, but I am so excited. If Eleventy was walking before now[,] we’re going to find out what it really feels like to run.
 
+**Update from the future**: In June, 2023, Leatherman [announced](https://www.zachleat.com/web/eleventy-side-project/) that this arrangement had come to an end.
+{.box}
+
 ## Handling variables in Hugo
 
 While working on my [recent](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/static-tweets-eleventy-hugo-part-2/) concerning how to embed fully static tweets in Eleventy and [Hugo](https://gohugo.io/) (about which a little more in the next item), I learned something worth passing along. It likely isn’t news to *you*, but *I’d* overlooked it up to that point.
