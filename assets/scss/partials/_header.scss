@@ -67,12 +67,11 @@ header {
 	& a {
 		text-decoration: none;
 		border: 0;
-		color: var(--black);
+		color: var(--link-nav);
 		&:focus, &:active, &:hover {
-			color: var(--slate-600);
+			color: var(--slate-200);
 		}
 		@media (prefers-color-scheme: dark) {
-			color: var(--white);
 			&:focus, &:active, &:hover {
 				color: var(--slate-200);
 			}

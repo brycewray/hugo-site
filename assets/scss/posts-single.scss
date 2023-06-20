@@ -3,10 +3,12 @@
 // @use 'partials/colors' as clr;
 
 :root {
-	--link-prvnxt: var(--blue-800);
+	--link-prvnxt: var(--blue-200);
+	/*
 	@media (prefers-color-scheme: dark) {
 		--link-prvnxt: var(--blue-200);
 	}
+	*/
 }
 
 .bg-dark {
@@ -35,7 +37,7 @@
 			color: var(--link-prvnxt);
 			text-decoration: none;
 			&:hover, &:focus {
-				color: var(--gray-800);
+				color: var(--gray-200);
 				text-decoration: underline; /* normal */
 				text-decoration-thickness: var(--textDcThickMd);
 				text-underline-offset: var(--textUnOffst);
@@ -62,7 +64,7 @@
 			color: var(--link-prvnxt);
 			text-decoration: none;
 			&:hover, &:focus {
-				color: var(--gray-800);
+				color: var(--gray-200);
 				text-decoration: underline; /* normal */
 				text-decoration-thickness: var(--textDcThickMd);
 				text-underline-offset: var(--textUnOffst);
@@ -90,7 +92,7 @@
 	path.NextPrev {
 		fill: var(--link-prvnxt);
 		&:hover, &:focus {
-			fill: var(--gray-800);
+			fill: var(--gray-200);
 			@media (prefers-color-scheme: dark) {
 				fill: var(--gray-200);
 			}

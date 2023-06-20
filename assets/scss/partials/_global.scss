@@ -8,13 +8,14 @@
 	--bquote-boost: var(--gray-600);
 	--link: var(--blue-700);
 	--link-afh: var(--blue-900);
+	--link-nav: var(--white);
 	--head: var(--black);
 	--red: var(--red-700);
 	--box-red: var(--red-600);
 	--logocircle: var(--blue-500);
 	/* backgrounds and borders */
 	--bkgd: var(--white);
-	--bkgd-nav: var(--blue-200);
+	--bkgd-nav: var(--black);
 	--bkgd-box: var(--slate-050);
 	--bkgd-code: var(--slate-050);
 	--bkgd-article-code: var(--slate-150);
@@ -29,6 +30,7 @@
 		--bquote-boost: var(--gray-350);
 		--link: var(--blue-300);
 		--link-afh: var(--slate-300);
+		--link-nav: var(--white);
 		--head: var(--white);
 		--red: var(--red-300);
 		--box-red: var(--red-400);
