@@ -152,5 +152,6 @@ end, text/LH classes from TWCSS
 }
 
 .emojis {
+	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-family: var(--emojis);
 }
