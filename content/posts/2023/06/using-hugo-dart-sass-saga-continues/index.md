@@ -27,7 +27,7 @@ Then came the drama.
 	- Future versions of Embedded Dart Sass would, instead, be packaged within the [Dart Sass binary](https://github.com/sass/dart-sass).
 - The first such version of the Dart Sass binary was [v.1.63.0](https://github.com/sass/dart-sass/releases/tag/1.63.0), released <span class="nobrk">2023-06-07</span>. Those who, as I did, tried Hugo with this binary rather than the archived Embedded Dart Sass binary quickly found that it was largely useless in development mode, because it couldn't "watch" a project for changes; it only formatted everything on the initial load and then did no more. Thus, it was necessary to keep using Hugo with the archived/frozen Embedded Dart Sass binary until the Hugo team could come up with a fix.
 
-. . . which they did yesterday, with the release of [v.0.114.0](https://github.com/gohugoio/hugo/releases/tag/v0.114.0). Now, you just get the Dart Sass binary into the `PATH` and everything works as it did before, with Hugo and Embedded Dart Sass in perfect sync. In fact, that sync is even sweeter, with update speeds occurring faster than before.
+. . . which they did yesterday, with the release of [v.0.114.0](https://github.com/gohugoio/hugo/releases/tag/v0.114.0). Now, you just put the Dart Sass binary into the `PATH` and everything works as it did before, with Hugo and Embedded Dart Sass in perfect sync. In fact, that sync is even sweeter, with update speeds occurring faster than before.
 
 Thus, in the space of a few short weeks, the Hugo team has pulled off two impressive fixes where styling one's Hugo site is concerned:
 
