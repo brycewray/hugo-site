@@ -63,7 +63,7 @@ And, of course, there'd once been the infamous [`left-pad` incident](https://www
 
 As I considered these things, a little voice in my head periodically whispered, *Ya know, you wouldn't be worrying about these things if you were still using Hugo.*[^depHugo]
 
-[^depHugo]: In fairness, let me observe that even Hugo [has a few dependencies](https://github.com/gohugoio/hugo#dependencies) in the form of a number of open-source libraries, such as [Goldmark](https://github.com/yuin/goldmark) for parsing a Hugo site's [Markdown](https://daringfireball.net/projects/markdown) content. The critical difference between Hugo and the Node.js-based SSGs on this score is that Hugo's relatively small number of dependencies are **baked into Hugo** rather than being separate things out in the Node.js package universe which one has to hope will behave themselves.
+[^depHugo]: In fairness, let me observe that even Hugo [has a few dependencies](https://github.com/gohugoio/hugo#dependencies) in the form of a number of open-source libraries, such as [goldmark](https://github.com/yuin/goldmark) for parsing a Hugo site's [Markdown](https://daringfireball.net/projects/markdown) content. The critical difference between Hugo and the Node.js-based SSGs on this score is that Hugo's relatively small number of dependencies are **baked into Hugo** rather than being separate things out in the Node.js package universe which one has to hope will behave themselves.
 
 I soon found myself ruefully recalling my own assessment at the end of "[Why I'm staying with Hugo](/posts/2019/07/why-staying-with-hugo/)," the chronicle of my initial foray with SSGs from the world of Node.js:
 
