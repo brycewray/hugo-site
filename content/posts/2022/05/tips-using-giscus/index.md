@@ -6,7 +6,7 @@ date: 2022-05-10T15:10:00-05:00
 #initTextEditor: VS Code
 ---
 
-**Update, 2022-10-25**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)."
+**Update, 2023-06-21**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)." In June, 2023, I [reversed that decision](/posts/2023/06/return-giscus/).
 {.box}
 
 As I noted [not long ago](/posts/2022/03/gems-in-rough-16/#trying-giscus):

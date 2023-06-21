@@ -34,7 +34,7 @@ I then posted word of this to a few Discords where I thought it might be useful;
 **Later update**: Turned out that, while the previous comments and reactions were indeed back on the site, it wasn't possible for anyone to enter **new** ones --- **until** (and, again, I have Sarah Rainsberger to thank for giving me the word that things were amiss) I went back into the giscus website and obtained a new set of variables for the `comments` repo. **Now** it all works again. So that's one more thing you have to do in such a case.
 {.box}
 
-**Update, 2022-10-25**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)."
+**Update, 2023-06-21**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)." In June, 2023, I [reversed that decision](/posts/2023/06/return-giscus/).
 {.box}
 
 ## Netlify Edge Functions

@@ -36,7 +36,7 @@ To be sure, I’m *not* taking away the reply-by-email button/link, which will s
 **Note**: Because of giscus’s reliance on the existing GitHub Discussions feature set, there currently is only one level of nesting; so, if a thread gets “heavy,” it may not be readily obvious who’s replying to whom.
 {.box}
 
-**Update, 2022-10-25**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)."
+**Update, 2023-06-21**: After several months of trying giscus, I decided to remove it, as explained in "[Letting go of giscus](/posts/2022/10/letting-go-giscus/)." In June, 2023, I [reversed that decision](/posts/2023/06/return-giscus/).
 {.box}
 
 ## Another shameless plug
