@@ -13,7 +13,7 @@ For a good portion of 2022, this site used the [giscus](https://giscus.app) comm
 
 There's been no change in any of the technical reasons I gave at that time for taking giscus off the site, but I simply decided it would be good to bring back the capability. Although I still enjoy contacts from those who take time to email about either specific posts or the site in general, I also recognize there are many people --- especially younger folks who consider non-work emailing almost as odd as actually *talking* on a smartphone --- who simply aren't wired to respond that way. The Discord Generation is happier using commenting. Fair enough.
 
-As you may know, giscus works atop [GitHub Discussions](https://docs.github.com/en/discussions), using your chosen repository to store comments. Because I've kept that repo as it was, all the comments and threads from my 2022 use of giscus are still intact.
+As you may know, giscus works atop [GitHub Discussions](https://docs.github.com/en/discussions), using your chosen repository to store comments. I've kept that repo as it was, so all the comments and threads from my 2022 use of giscus are still intact.
 
 *Because* giscus still loads a lot of off-site JavaScript when visible, I am once again putting comments behind `detail` and `summary` elements, as I [explained last July](/posts/2022/07/more-tips-using-giscus/#dont-show-it-by-default). It doesn't *solve* the too-much-JS-for-my-taste issue, but it delays it unless and until the user truly opts to see the giscus comments section.
 
