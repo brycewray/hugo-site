@@ -85,6 +85,39 @@
 	}
 }
 
+.giscus-comments {
+	margin: 1.5em 0 2em;
+}
+
+details.comments {
+	margin-top: 1em;
+	& > summary {
+		list-style: none;
+		color: var(--white);
+		border-radius: var(--btn_radius);
+		margin: 0 auto;
+		border: 1px solid;
+		border-color: var(--link);
+		background-color: var(--link);
+		padding: 0.5em 0.25em;
+		width: 15em;
+		&:hover {
+			cursor: pointer;
+			background-color: var(--link-afh);
+		}
+		@media screen and (prefers-color-scheme: dark) {
+			color: var(--black);
+		}
+	}
+}
+
+
+details.comments > summary::marker,
+details.comments > summary::-webkit-details-marker {
+	display: none;
+}
+
+
 contact-button {
 	display: grid;
 	place-items: center;
