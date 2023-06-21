@@ -1,4 +1,5 @@
 <p class="legal ctr gitinfo" data-pagefind-ignore>
+	Originally published {{ .PublishDate.Format "2006-01-02" }} <span class="nobrk">at {{ (time .PublishDate "America/Chicago").Local | time.Format ":time_long" | upper }}.</span><br />
 	{{- if .GitInfo -}}
 		<span class="nobrk">Latest commit (<a href="https://github.com/brycewray/hugo-site/commit/{{ .GitInfo.Hash }}" title="Latest commit for this page" rel="noopener"><code>{{ .GitInfo.AbbreviatedHash }}</code></a>) for page file:</span> <span class="nobrk">{{ (.GitInfo.AuthorDate).Format "2006-01-02" }} at {{ (time .GitInfo.AuthorDate "America/Chicago").Local | time.Format ":time_long" | upper }}.</span><br /><a href="https://github.com/brycewray/hugo-site/commits/main/content/{{ .File.Path }}" title="This page’s commit history">Page history</a>
 	{{- else -}}
