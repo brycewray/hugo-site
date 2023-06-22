@@ -8,7 +8,6 @@ on:
 env:
   HUGO_VERSION: 0.114.0 # will get Extended Version below
   DART_SASS_VERSION: 1.63.6 # (depends on STYLING env var)
-  EMBEDDED_SASS: false # ('true' for pre-1.62.1)
   PAGEFIND_VERSION: 0.12.0
   NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
@@ -44,18 +43,8 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
-      - name: Install Embedded Dart Sass (cond. - SCSS and EMBEDDED_SASS)
-        if: ${{ env.STYLING == 'SCSS' && env.EMBEDDED_SASS == 'true' }}
-        run: |
-          curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/${{ env.DART_SASS_VERSION }}/sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          tar -xvf sass_embedded-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          sass_embedded/dart-sass-embedded --version
-          echo "$GITHUB_WORKSPACE/sass_embedded" >> $GITHUB_PATH
-      - name: Install Dart Sass (cond. - SCSS but without EMBEDDED_SASS)
-        # based on Sass changes announced 2023-05-20:
-        # https://sass-lang.com/blog/rfc-embedded-protocol-2
-        # (along with "Archived" status of previous Embedded Dart Sass repo on GitHub)
-        if: ${{ env.STYLING == 'SCSS' && env.EMBEDDED_SASS != 'true' }}
+      - name: Install Dart Sass (cond. - SCSS)
+        if: ${{ env.STYLING == 'SCSS' }}
         run: |
           curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
