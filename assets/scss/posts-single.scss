@@ -116,6 +116,7 @@ contact-button {
 
 contact-button button, details.comments > summary {
 	width: var(--btn-width);
+	height: var(--btn-height);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
