@@ -11,7 +11,7 @@ For a good portion of 2022, this site used the [giscus](https://giscus.app) comm
 
 <!--more-->
 
-There's been no change in any of the technical reasons I gave at that time for taking giscus off the site, but I simply decided it would be good to bring back the capability. Although I still enjoy contacts from those who take time to email about either specific posts or the site in general, I also recognize there are many people --- especially younger folks who consider non-work emailing almost as odd as actually *talking* on a smartphone --- who simply aren't wired to respond that way. The Discord Generation is happier using commenting. Fair enough.
+There's been no change in any of the technical reasons I gave at that time for taking giscus off the site, but I simply decided it would be good to bring back the capability. Although I still enjoy contacts from those who take time to email about either specific posts or the site in general, I also recognize that many people --- especially younger folks who consider non-work emailing almost as odd as actually *talking* on a smartphone --- simply aren't wired to respond that way. The Discord Generation is happier using commenting. Fair enough.
 
 As you may know, giscus works atop [GitHub Discussions](https://docs.github.com/en/discussions), using your chosen repository to store comments. I've kept that repo as it was, so all the comments and threads from my 2022 use of giscus are still intact.
 
