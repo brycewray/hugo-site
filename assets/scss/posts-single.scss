@@ -1,6 +1,6 @@
 @charset 'utf-8';
-// @use 'partials/variables' as var;
-// @use 'partials/colors' as clr;
+/* @use 'partials/variables' as var; */
+/* @use 'partials/colors' as clr; */
 
 .bg-dark {
 	position: fixed;
@@ -93,21 +93,7 @@ details.comments {
 	margin-top: 1em;
 	& > summary {
 		list-style: none;
-		color: var(--white);
-		border-radius: var(--btn_radius);
 		margin: 0 auto;
-		border: 1px solid;
-		border-color: var(--link);
-		background-color: var(--link);
-		padding: 0.5em 0.25em;
-		width: 15em;
-		&:hover {
-			cursor: pointer;
-			background-color: var(--link-afh);
-		}
-		@media screen and (prefers-color-scheme: dark) {
-			color: var(--black);
-		}
 	}
 }
 
@@ -122,26 +108,44 @@ contact-button {
 	display: grid;
 	place-items: center;
 	margin-top: 0.5em;
-	& button {
-		width: 15rem;
-		padding: 0.25rem 0;
-		background-color: var(--link);
-		border-radius: var(--btn_radius);
-		border-color: transparent;
-		vertical-align: middle;
-		color: var(--white);
-		&:focus, &:active, &:hover {
-			background-color: var(--link-afh);
-		}
-		&:hover {
-			cursor: pointer;
-		}
-		@media (prefers-color-scheme: dark) {
-			color: var(--black);
-		}
-	}
 }
 
 .box + contact-button {
 	margin-top: 1.5em;
+}
+
+contact-button button, details.comments > summary {
+	width: var(--btn-width);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--link);
+	border-radius: var(--btn-radius);
+	border-color: transparent;
+	color: var(--white);
+	@media screen and (prefers-color-scheme: dark) {
+		color: var(--black);
+	}
+	padding: 0.25rem 0;
+	&:focus, &:active, &:hover {
+		background-color: var(--link-afh);
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	& .svg {
+		padding-left: var(--interactionPadding);
+		& svg {
+			width: var(--btn-svg-width);
+			height: auto;
+		}
+	}
+	& .legend {
+		padding-right: var(--interactionPadding);
+		text-align: right;
+		/* text-transform: uppercase; */
+		font-size: var(--btn-legend-text);
+		font-weight: var(--btn-legend-weight);
+	}
 }

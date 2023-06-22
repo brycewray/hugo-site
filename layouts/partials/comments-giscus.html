@@ -5,9 +5,12 @@
 {{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_PublicSans.css" }}
 */}}
 {{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_LibreFranklin.css" }}
-<details class="comments" data-pagefind-ignore>
-	<summary class="ctr" data-pagefind-ignore>
-		<strong>View/hide comments</strong>
+<details class="comments nScrHidden" data-pagefind-ignore title="View/hide comments" aria-label="Toggle for viewing or hiding comments section">
+	<summary data-pagefind-ignore>
+		<div class="svg">
+			<svg aria-hidden="true" class="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>
+		</div>
+		<div class="legend">View/hide comments</div>
 	</summary>
 	<div class="giscus-comments">
 		<script src="https://giscus.app/client.js"
@@ -30,3 +33,4 @@
 		<p class="ctr pokey">Commenting by <strong><a href="https://giscus.app" rel="nofollow">giscus</a></strong>.</p>
 	</div>
 </details>
+<noscript><p class="ctr legal">Commenting feature requires activation of JavaScript.</p></noscript>

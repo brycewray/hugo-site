@@ -78,6 +78,11 @@
 
 
 	/* button */
-	--btn_radius: 6px;
+	--btn-radius: 6px;
+	--btn-width: 12rem;
+	--interactionPadding: 0.75em;
+	--btn-svg-width: 1.125em; /* height will be auto */
+	--btn-legend-text: var(--text-sm);
+	--btn-legend-weight: var(--font-semibold);
 
 }
