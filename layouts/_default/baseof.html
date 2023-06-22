@@ -7,7 +7,7 @@
 		{{- block "main" . -}}{{- end }}
 		</div>
 		{{- if ne .Title .Site.Params.Titles.Search -}}
-			{{- partialCached "search-pagefind.html" . -}}
+			{{- partialCached "search-btn-pagefind.html" . -}}
 		{{- end }}
 		{{- partial "footer.html" . -}}
 		{{- if hugo.IsProduction -}}
