@@ -107,7 +107,7 @@ jobs:
 # For CFP GUI only, it's (case-**in**sensitive):
 # [CI Skip]
 # [CI-Skip]
-# [Skip CI] <-- This is the one we can use on all, albeit as `[skip-ci]`
+# [Skip CI] <-- This is the one we can use on all, albeit as `[skip ci]`
 # [Skip-CI]
 # [CF-Pages-Skip]
 # ref: https://developers.cloudflare.com/pages/platform/branch-build-controls/
