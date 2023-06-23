@@ -19,7 +19,6 @@ AuthorAvatar = 'https://www.brycewray.com/images/icons/apple-icon-1024x1024.png'
 Logo = 'https://www.brycewray.com/images/icons/favicon-32x32.png'
 Description = 'Bryce Wray’s website | Observations, opinions, geekiness'
 License = 'MIT'
-ImgProc = 'Cloudinary' # 'Hugo' or 'Cloudinary'
 # ===========================
 [Titles]
 	Contact = 'Want to reach me?'
