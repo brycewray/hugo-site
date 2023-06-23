@@ -3,8 +3,8 @@ echo "Checking requested versions..."
 HUGO_VERSION=0.114.1
 DART_SASS_VERSION=1.63.6
 VCHECK=$(hugo env)
-echo " ----- "
-if grep "hugo v${HUGO_VERSION}" <<< ${VCHECK}
+echo "\n-----\n"
+if grep -c "hugo v${HUGO_VERSION}" <<< ${VCHECK}
 then
   echo "Detected Hugo v.${HUGO_VERSION}!"
 else
@@ -18,8 +18,8 @@ else
   rm -rf hugo_extended_${HUGO_VERSION}_darwin-universal.tar.gz
   hugo version
 fi
-echo " ----- "
-if grep "github.com/sass/dart-sass/compiler=\"${DART_SASS_VERSION}" <<< ${VCHECK}
+echo "\n-----\n"
+if grep -c "github.com/sass/dart-sass/compiler=\"${DART_SASS_VERSION}" <<< ${VCHECK}
 then
   echo "Detected Dart Sass v.${DART_SASS_VERSION}!"
 else
@@ -32,11 +32,8 @@ else
   sass --embedded --version
   rm -rf dart-sass-${DART_SASS_VERSION}-macos-x64.tar.gz
 fi
-echo " ----- "
+echo "\n-----\n"
 hugo env
-echo " ----- "
-rm -rf public
-rm -rf static/_pagefind
-hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://192.168.254.10:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc
-# ./git-get-data.sh
-# npm run start
+echo "\n-----\n"
+# now hand off to regular start script
+./start.sh
