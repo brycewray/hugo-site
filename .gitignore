@@ -33,7 +33,11 @@ themes/twjit-hero/assets/css/index.css
 themes/twjit-thoreau/assets/css/index.css
 .hugo_build.lock
 
-start*.sh
+start.sh
+startdebug.sh
+startpf.sh
+# **NOT** ignoring startvers.sh
+startvers_*.sh
 startvers*.txt
 logstart.sh
 build*.sh
