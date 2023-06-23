@@ -34,6 +34,7 @@ themes/twjit-thoreau/assets/css/index.css
 .hugo_build.lock
 
 start*.sh
+startvers.txt
 logstart.sh
 build*.sh
 testbuild*.sh
