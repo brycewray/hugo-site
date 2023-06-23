@@ -12,10 +12,31 @@
 	use of the full `imgh` shortcode.
 	Ref: https://gohugo.io/templates/render-hooks/
 */ -}}
-{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Page.Resources.GetMatch (.Destination) -}}
+{{- $imgProc := .Page.Site.Params.ImgProc -}}
+{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
 {{- $caption := .Title -}}
+{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{- $xFmPart2 := ",x_0,z_01/" -}}
+{{- $imgToGet := "" -}}
+{{- $imgRsc := "" -}}
+{{- $width := "" -}}
+{{- $height := "" -}}
+
+{{- $imgToGet = print $cloudiBase $src -}}
+{{- with $imgToGet -}}
+	{{- with resources.GetRemote . -}}
+		{{ $imgRsc = . }}
+		{{- $width = .Width -}}
+		{{- $height = .Height -}}
+	{{- end -}}
+{{- end -}}
+{{/*
+	https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
+*/}}
+
 {{- $holder := "GIP" -}}
 {{- $hint := "photo" -}}
 {{- $filter := "MitchellNetravali" -}}
@@ -24,25 +45,48 @@
 {{- $imgClass := "w-full h-auto animate-fade" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $actualImg := $src.Resize (print "640x jpg " $filter) -}}
-<div class="{{ $divClass }}" data-pagefind-ignore>
-	<picture data-pagefind-ignore>
-		<source type="image/webp" srcset="
-		{{- with $respSizes -}}
-			{{- range $i, $e := . -}}
-				{{- if ge $src.Width . -}}
-					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+
+{{- if ne $src "" -}}
+	<div class="{{ $divClass }}" data-pagefind-ignore>
+		{{- if eq $imgProc "Hugo" -}}
+			<picture data-pagefind-ignore>
+				<source type="image/webp" srcset="
+				{{- with $respSizes -}}
+					{{- range $i, $e := . -}}
+						{{- if ge $src.Width . -}}
+							{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+						{{- end -}}
+					{{- end -}}
+				{{- end -}}" sizes="{{ $dataSzes }}" />
+				<source type="image/jpeg" srcset="
+				{{- with $respSizes -}}
+					{{- range $i, $e := . -}}
+						{{- if ge $src.Width . -}}
+							{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
+						{{- end -}}
+					{{- end -}}
+				{{- end -}}" sizes="{{ $dataSzes }}" />
+				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+			</picture>
+		{{- else if eq $imgProc "Cloudinary" -}}
+			<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+			{{- with $respSizes -}}
+				{{- range $i, $e := . -}}
+					{{- if ge $width . -}}
+						{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+					{{- end -}}
 				{{- end -}}
-			{{- end -}}
-		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<source type="image/jpeg" srcset="
-		{{- with $respSizes -}}
-			{{- range $i, $e := . -}}
-				{{- if ge $src.Width . -}}
-					{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
-				{{- end -}}
-			{{- end -}}
-		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
-	</picture>
-</div>
-{{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
+			{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+		{{- else -}}
+			<p class="ctr legal">[No image]</p>
+		{{- end -}}
+	</div>
+	{{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
+	{{/*  <p class="ctr legal">
+		destination = {{ .Destination }}<br />
+		$imgToGet = {{ $imgToGet }}<br />
+		$imgRsc = {{ $imgRsc }}<br />
+		width = {{ $width }}<br />
+		height = {{ $height }}
+	</p>  */}}
+{{- end -}}
