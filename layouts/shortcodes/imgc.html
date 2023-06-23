@@ -21,11 +21,20 @@
 
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
-{{- $xFmPart2 := ",x_0,z_1/" -}}
+{{- $xFmPart2 := ",x_0,z_01/" -}}
+{{- $imgToGet := "" -}}
+{{- $imgRsc := "" -}}
+{{- $width := "" -}}
+{{- $height := "" -}}
+
 {{- $imgToGet := print $cloudiBase $src -}}
-{{- $imgRsc := resources.GetRemote $imgToGet -}}
-{{- $width := $imgRsc.Width -}}
-{{- $height := $imgRsc.Height -}}
+{{- with $imgToGet -}}
+	{{- with resources.GetRemote . -}}
+		{{ $imgRsc = . }}
+		{{- $width = .Width -}}
+		{{- $height = .Height -}}
+	{{- end -}}
+{{- end -}}
 
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center shadow" -}}
@@ -58,10 +67,10 @@
 	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
 {{- if eq $simple false -}}
 </div>
-{{- end -}}
-<p class="ctr legal">
+{{- end }}
+{{/*  <p class="ctr legal">
 	$imgToGet = {{ $imgToGet }}<br />
 	$imgRsc = {{ $imgRsc }}<br />
 	width = {{ $imgRsc.Width }}<br />
 	height = {{ $imgRsc.Height }}
-</p>
+</p>  */}}

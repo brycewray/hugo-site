@@ -75,7 +75,7 @@ Here's the JavaScript version, on which the Go version was based[^origCode]:
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
 var xFmPart1 = 'f_auto,q_auto:eco,w_'
-var xFmPart2 = ',x_0,z_1/' // note ending slash
+var xFmPart2 = ',x_0,z_01/' // note ending slash
 
 module.exports = (url, alt, width, height) => {
 	divClass = `relative`
@@ -126,7 +126,7 @@ Here's the corresponding Go version for Hugo:
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
-{{- $xFmPart2 := ",x_0,z_1/" -}}
+{{- $xFmPart2 := ",x_0,z_01/" -}}
 
 {{/* Some of these vars seem pointless, but am keeping in case I ever decide to use other kinds of images again. */}}
 {{- $divClass := "relative" -}}

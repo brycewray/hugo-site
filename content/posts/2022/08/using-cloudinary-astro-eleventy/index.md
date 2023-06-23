@@ -50,7 +50,7 @@ let cloudiBase = 'https://res.cloudinary.com/' + myCloud + '/image/upload/';
 let LQIPholder = 'f_jpg,q_01,w_20/';
 // --- note ending slash and that `q` must have a leading zero
 let xFmPart1 = 'f_auto,q_auto:eco,w_';
-let xFmPart2 = ',x_0,z_1/'; // note ending slash
+let xFmPart2 = ',x_0,z_01/'; // note ending slash
 
 const { url, alt, width, height, phn } = Astro.props;
 
@@ -160,7 +160,7 @@ let myCloud = '' // <- PROVIDE YOUR CLOUDINARY CLOUD NAME!
 let cloudiBase = 'https://res.cloudinary.com/' + myCloud + '/image/upload/'
 let LQIPholder = 'f_jpg,q_1,w_20/' // note ending slash and leading zero in `q`
 let xFmPart1 = 'f_auto,q_auto:eco,w_'
-let xFmPart2 = ',x_0,z_1/' // note ending slash
+let xFmPart2 = ',x_0,z_01/' // note ending slash
 
 module.exports = async (url, alt, width, height, phn) => {
   let imgBmd5 = md5(url)

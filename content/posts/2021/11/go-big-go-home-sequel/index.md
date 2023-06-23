@@ -38,7 +38,7 @@ Anyway, let's get to the real recipe. If you need help with the Hugo-/Go-specifi
 {{- $cloudiBase := printf "%s%s%s" "https://res.cloudinary.com/" {{ $cloudName }} "/image/upload/" -}}
 {{- $LQIPholder := "f_auto,q_1,w_20/" -}}
 {{/* $xFmPart1 := "f_auto,q_auto:eco,w_" */}}
-{{- $xFmPart2 := ",x_0,z_1/" -}}
+{{- $xFmPart2 := ",x_0,z_01/" -}}
 {{/*
 	Due to the colon in the `q_auto:eco` parameter,
 	I type out the value of `$xFmPart1` below to
