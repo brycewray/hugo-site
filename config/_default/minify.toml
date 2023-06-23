@@ -1,4 +1,4 @@
-disableJSON = true
+# disableJSON = true
 [tdewolff]
 	[tdewolff.html]
 		keepQuotes = true
