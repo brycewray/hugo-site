@@ -24,11 +24,6 @@ header {
 	& svg {
 		width: 1.5rem;
 		fill: var(--white);
-		/*
-		@media (prefers-color-scheme: dark) {
-			fill: var(--slate-050);
-		}
-		*/
 	}
 	.close {
 		display: none;

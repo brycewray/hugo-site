@@ -45,9 +45,6 @@
 	margin: 0;
 	border: 0;
 	background-color: transparent;
-	@media (prefers-color-scheme: dark) {
-		color: var(--white);
-	}
 }
 
 .searchBtn {
@@ -98,9 +95,6 @@
 	border-color: var(--border);
 	border-radius: 9px;
 	background-color: var(--bkgd-box);
-	@media (prefers-color-scheme: dark) {
-		color: var(--white);
-	}
 }
 
 .pagefind-ui__drawer {
@@ -165,4 +159,13 @@
 
 .pagefind-ui__result-title {
 	font-weight: bold;
+}
+
+html[data-theme="dark"] {
+	.searchInput {
+		color: var(--white);
+	}
+	.pagefind-ui__search-input {
+		color: var(--white);
+	}
 }

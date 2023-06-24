@@ -24,9 +24,6 @@ table.noborders {
 	border-collapse: collapse;
 	& tr {
 		background-color: var(--white);
-		@media (prefers-color-scheme: dark) {
-			color: var(--black);
-		}
 	}
 	& td {
 		text-align: left;
@@ -93,18 +90,11 @@ table.ulysses {
 		border: 1px solid;
 		border-color: var(--black);
 		color: var(--white);
-		@media (prefers-color-scheme: dark) {
-			border-color: var(--white);
-		}
 	}
 	& td {
 		text-align: center;
 		border: 1px solid;
 		border-color: var(--black);
-		@media (prefers-color-scheme: dark) {
-			border-color: var(--white);
-			color: var(--white);
-		}
 		padding: 0;
 	}
 	& thead th, & td {
@@ -115,15 +105,9 @@ table.ulysses {
 	}
 	& tr:nth-child(odd) {
 		background-color: var(--white);
-		@media (prefers-color-scheme: dark){
-			background-color: var(--slate-700);
-		}
 	}
 	& tr:nth-child(even) {
 		background-color: var(--emerald-050);
-		@media (prefers-color-scheme: dark){
-			background-color: var(--emerald-900);
-		}
 	}
 }
 

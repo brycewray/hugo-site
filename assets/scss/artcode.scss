@@ -7,9 +7,6 @@ code, article code, .box code {
 	--bg-lt: var(--bkgd-article-code);
 	--bg-dk: var(--bkgd-article-code);
 	background-color: var(--bg-lt);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--bg-dk);
-	}
 }
 
 code {
@@ -61,9 +58,6 @@ article .footnotes li code {
 
 article blockquote code {
 	color: var(--slate-800);
-	@media (prefers-color-scheme: dark) {
-		color: var(--slate-300);
-	}
 }
 
 .box {
