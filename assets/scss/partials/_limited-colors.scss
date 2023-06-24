@@ -39,6 +39,7 @@ OKLCH versions from https://oklch.com.
 	--gray-950: hsl(220, 71%, 4%);
 	--neutral-400: hsl(0, 0%, 64%);
 	--neutral-600: hsl(0, 0%, 32%);
+	--yellow-200: hsl(55, 90%, 76%);
 	--red-300: hsl(0, 94%, 81%);
 	--red-400: hsl(0, 91%, 70%);
 	--red-500: hsl(0, 83%, 60%);
@@ -64,6 +65,7 @@ OKLCH versions from https://oklch.com.
 	--black: hsl(0, 0%, 0%);
 	/* ^^^ could also be #333 at some point, hence this var */
 	@supports (color: oklch(49% 0.1 252)) {
+		--yellow-200: oklch(94.03% 0.123 104);
 		--red-300: oklch(80.01% 0.109 25);
 		--red-400: oklch(70.44% 0.171 25);
 		--red-500: oklch(63.5% 0.206 25);

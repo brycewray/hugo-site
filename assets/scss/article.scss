@@ -40,6 +40,10 @@ img.ctrImg {
 	}
 }
 
+html[data-theme="dark"] .shadow {
+	filter: none;
+}
+
 .img-phn {
 	width: 90%;
 	@media screen and (min-width: 768px) {

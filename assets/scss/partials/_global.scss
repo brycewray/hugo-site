@@ -1,4 +1,8 @@
 :root {
+	--border-bquote: var(--gray-400);
+	--link-nav: var(--white);
+	--link-nav-afh: var(--blue-200);
+	--logocircle: var(--blue-500);
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
@@ -8,12 +12,12 @@
 	--bquote-boost: var(--gray-600);
 	--link: var(--blue-700);
 	--link-afh: var(--blue-900);
-	--link-nav: var(--white);
-	--link-nav-afh: var(--blue-200);
 	--head: var(--black);
 	--red: var(--red-700);
 	--box-red: var(--red-600);
-	--logocircle: var(--blue-500);
+	--btn-text-default: var(--white);
+	--icon-inside: var(--white);
+	--pf-result-excerpt: var(--black);
 	/* backgrounds and borders */
 	--bkgd: var(--white);
 	--bkgd-nav: var(--black);
@@ -21,9 +25,12 @@
 	--bkgd-code: var(--slate-050);
 	--bkgd-article-code: var(--slate-150);
 	--bkgd-box-code: var(--slate-200);
+	--bkgd-pf-result-excerpt: var(--blue-100);
 	--border: var(--neutral-400);
-	--border-bquote: var(--gray-400); /* <-- same for both light and dark modes */
+	--posts-list-hr: var(--black);
 	@media (prefers-color-scheme: dark) {
+		/* = = = COLORS = = = */
+		/* === defaults === */
 		/* primaries */
 		--default: var(--gray-300);
 		--boost: var(--gray-200);
@@ -31,11 +38,12 @@
 		--bquote-boost: var(--gray-350);
 		--link: var(--blue-300);
 		--link-afh: var(--slate-300);
-		/* --link-nav: var(--blue-200); */
-		/* --link-nav-afh: var(--white); */
 		--head: var(--white);
 		--red: var(--red-300);
 		--box-red: var(--red-400);
+		--btn-text-default: var(--black);
+		--icon-inside: var(--black);
+		--pf-result-excerpt: var(--white);
 		/* backgrounds and borders */
 		--bkgd: var(--black);
 		--bkgd-nav: var(--blue-950);
@@ -43,8 +51,68 @@
 		--bkgd-code: var(--slate-900);
 		--bkgd-article-code: var(--slate-750);
 		--bkgd-box-code: var(--slate-700);
+		--bkgd-pf-result-excerpt: var(--blue-900);
 		--border: var(--neutral-600);
+		--posts-list-hr: var(--white);
 	}
+}
+
+[data-theme="light"] {
+	color-scheme: light;
+	/* = = = COLORS = = = */
+	/* === defaults === */
+	/* primaries */
+	--default: var(--gray-800);
+	--boost: var(--gray-900);
+	--bquote: var(--gray-500);
+	--bquote-boost: var(--gray-600);
+	--link: var(--blue-700);
+	--link-afh: var(--blue-900);
+	--head: var(--black);
+	--red: var(--red-700);
+	--box-red: var(--red-600);
+	--btn-text-default: var(--white);
+	--icon-inside: var(--white);
+	--pf-result-excerpt: var(--black);
+	/* backgrounds and borders */
+	--bkgd: var(--white);
+	--bkgd-nav: var(--black);
+	--bkgd-box: var(--slate-050);
+	--bkgd-code: var(--slate-050);
+	--bkgd-article-code: var(--slate-150);
+	--bkgd-box-code: var(--slate-200);
+	--bkgd-pf-result-excerpt: var(--blue-100);
+	--border: var(--neutral-400);
+	--posts-list-hr: var(--black);
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
+	/* = = = COLORS = = = */
+	/* === defaults === */
+	/* primaries */
+	--default: var(--gray-300);
+	--boost: var(--gray-200);
+	--bquote: var(--gray-400);
+	--bquote-boost: var(--gray-350);
+	--link: var(--blue-300);
+	--link-afh: var(--slate-300);
+	--head: var(--white);
+	--red: var(--red-300);
+	--box-red: var(--red-400);
+	--btn-text-default: var(--black);
+	--icon-inside: var(--black);
+	--pf-result-excerpt: var(--white);
+	/* backgrounds and borders */
+	--bkgd: var(--black);
+	--bkgd-nav: var(--blue-950);
+	--bkgd-box: var(--slate-900);
+	--bkgd-code: var(--slate-900);
+	--bkgd-article-code: var(--slate-750);
+	--bkgd-box-code: var(--slate-700);
+	--bkgd-pf-result-excerpt: var(--blue-900);
+	--border: var(--neutral-600);
+	--posts-list-hr: var(--white);
 }
 
 html, body {
@@ -61,7 +129,6 @@ html, body {
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd);
 	color: var(--default);
-	color-scheme: light dark;
 	@media screen and (min-width: 1024px) {
 		font-weight: var(--font-light);
 	}

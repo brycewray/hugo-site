@@ -2,6 +2,7 @@
 /* @use 'partials/variables' as var; */
 /* @use 'partials/colors' as clr; */
 
+
 code, article code, .box code {
 	--bg-lt: var(--bkgd-article-code);
 	--bg-dk: var(--bkgd-article-code);
@@ -75,4 +76,13 @@ article blockquote code {
 
 article ol li .highlight {
 	line-height: 1.5;
+}
+
+html[data-theme="dark"] {
+	& code, & article code, & .box code {
+		background-color: var(--bg-dk);
+	}
+	& article blockquote code {
+		color: var(--slate-300);
+	}
 }

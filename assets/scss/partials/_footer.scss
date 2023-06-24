@@ -42,10 +42,7 @@ path.MastodonBody,
 path.Twitter,
 path.JSON,
 path.RSS {
-	fill: var(--white);
-	@media (prefers-color-scheme: dark) {
-		fill: var(--black);
-	}
+	fill: var(--icon-inside);
 }
 
 path.GitHub,

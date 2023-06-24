@@ -19,6 +19,11 @@ lite-youtube {
 	margin: 0 auto;
 }
 
+html[data-theme="dark"] lite-youtube {
+	border-color: var(--gray-400);
+	/* (Although they can't see it without JS anyway :-) */
+}
+
 /* gradient */
 lite-youtube::before {
 	content: '';
