@@ -19,7 +19,17 @@
 		<meta name="color-scheme" content="light dark">
 		{{- partial "head-imgs-css.html" . }}
 		{{- partial "head-css-oklch-post.html" . -}}
-		<noscript><style>.nScrHidden {display: none;}</style></noscript>
+		<noscript>
+			<style>
+				.nScrHidden {
+					display: none;
+				}
+				:root {
+					--navRightMargin: 0.5em;
+					/* ^^ override earlier CSS if JS is off and "light/dark" toggle isn't there */
+				}
+			</style>
+		</noscript>
 {{ partial "json-ld.html" . }}
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
