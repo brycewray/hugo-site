@@ -78,10 +78,8 @@
 		.colorBoxContainer p, .colorBoxContainer p strong {
 			color: var(--white);
 		}
-		@media (prefers-color-scheme: dark) {
-			.colorBoxContainer {
-				background-color: transparent;
-			}
+		html[data-theme="dark"] .colorBoxContainer {
+			background-color: transparent;
 		}
 		p.noY {
 			margin-bottom: 0;
