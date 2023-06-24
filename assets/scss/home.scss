@@ -72,6 +72,12 @@
 	}
 }
 
+html[data-theme="dark"] {
+	& .homePost-Latest {
+		color: var(--default);
+	}
+}
+
 .homePost-Title {
 	font-size: clamp(1.75rem, 1.25rem + 1vw, 2.25rem);
 	/* font-family: var(--serif); */

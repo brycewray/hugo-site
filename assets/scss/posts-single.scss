@@ -13,12 +13,6 @@
 	flex-direction: row;
 	justify-content: stretch;
 	align-items: center;
-	& div, & p {
-		color: var(--black);
-		@media (prefers-color-scheme: dark) {
-			color: var(--white);
-		}
-	}
 	& .prevDiv, & .nextDiv {
 		line-height: clamp(1em, 1vw + 0.75em, 1.25em);
 	}
@@ -87,6 +81,9 @@
 
 .giscus-comments {
 	margin: 1.5em 0 2em;
+	border-radius: var(--btn-radius);
+	padding: 1em;
+	background-color: var(--gray-100);
 }
 
 details.comments {
@@ -124,10 +121,7 @@ contact-button button, details.comments > summary {
 	background-color: var(--link);
 	border-radius: var(--btn-radius);
 	border-color: transparent;
-	color: var(--white);
-	@media screen and (prefers-color-scheme: dark) {
-		color: var(--black);
-	}
+	color: var(--btn-text-default);
 	padding: 0.25rem 0;
 	&:focus, &:active, &:hover {
 		background-color: var(--link-afh);

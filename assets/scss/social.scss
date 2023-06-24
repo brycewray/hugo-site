@@ -42,10 +42,6 @@
 	@media screen and (min-width: 1920px) {
 		max-width: 80ch;
 	}
-	@media (prefers-color-scheme: dark) {
-		background: var(--gray-900);
-		/* background: transparent; */
-	}
 	& a, & a:hover {
 		border: none !important;
 		text-decoration: none;
@@ -61,11 +57,6 @@
 		@media (prefers-color-scheme: dark) {
 			color: var(--link);
 		}
-	}
-	@media (prefers-color-scheme: dark) {
-		border: 2px solid;
-		border-color: var(--gray-200);
-		color: var(--white);
 	}
 }
 
@@ -93,9 +84,6 @@ Eleventy version
 .toot-blockquote-img {
 	border-bottom: 1px solid;
 	border-bottom-color: var(--gray-700);
-	@media (prefers-color-scheme: dark) {
-		border-bottom-color: var(--gray-300);
-	}
 	width: 100%;
 }
 
@@ -107,9 +95,6 @@ Eleventy version
 
 a > .card, a > .toot-card {
 	color: var(--gray-800);
-	@media (prefers-color-scheme: dark) {
-		color: var(--gray-300);
-	}
 }
 
 .card {
@@ -118,9 +103,6 @@ a > .card, a > .toot-card {
 	border-radius: 12px;
 	border: 1px solid;
 	border-color: var(--gray-700);
-	@media (prefers-color-scheme: dark) {
-		border-color: var(--gray-300);
-	}
 	& p {
 		padding: 0.5em 1em 1em;
 		line-height: 1.4;
@@ -128,9 +110,6 @@ a > .card, a > .toot-card {
 		font-size: var(--text-sm);
 		.card-title {
 			color: var(--black);
-			@media (prefers-color-scheme: dark){
-				color: var(--white);
-			}
 		}
 	}
 }
@@ -159,16 +138,10 @@ a > .card, a > .toot-card {
 		font-weight: bold;
 		font-size: var(--text-base);
 		color: var(--black);
-		@media (prefers-color-scheme: dark) {
-			color: var(--white);
-		}
 		line-height: 1.375;
 	}
 	.toot-author-handle {
 		color: var(--gray-700);
-		@media (prefers-color-scheme: dark) {
-			color: var(--gray-300);
-		}
 		font-weight: var(--font-weight-sm);
 		font-size: var(--text-sm);
 		line-height: 1;
@@ -182,17 +155,11 @@ a > .card, a > .toot-card {
 	color: var(--gray-800);
 	font-size: var(--text-sm);
 	font-weight: var(--font-weight-sm);
-	@media (prefers-color-scheme: dark) {
-		color: var(--gray-200);
-	}
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
 	& a {
 		color: var(--gray-800);
-		@media (prefers-color-scheme: dark) {
-			color: var(--gray-200);
-		}
 		&:hover {
 			color: var(--link);
 		}
@@ -308,9 +275,6 @@ a > .card, a > .toot-card {
 .toot-quoted-tweet {
 	border: 1px solid;
 	border-color: var(--gray-800);
-	@media (prefers-color-scheme: dark) {
-		border-color: var(--gray-200);
-	}
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
 	margin-top: 0.75em;
@@ -330,9 +294,6 @@ a > .card, a > .toot-card {
 		margin-bottom: 0.25em;
 		& a {
 			color: var(--gray-800);
-			@media (prefers-color-scheme: dark) {
-				color: var(--gray-200);
-			}
 			&:hover {
 				color: var(--link);
 			}
@@ -346,9 +307,6 @@ a > .card, a > .toot-card {
 	line-height: 1.3em;
 	color: var(--gray-800);
 	font-size: var(--text-sm);
-	@media (prefers-color-scheme: dark) {
-		color: var(--gray-200);
-	}
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
@@ -397,5 +355,54 @@ a > .card, a > .toot-card {
 	}
 	.card-title, .card-description {
 		font-size: var(--text-sm);
+	}
+}
+
+html[data-theme="dark"] {
+	& .toot-blockquote {
+		background: var(--gray-900);
+		/* background: transparent; */
+		border-color: var(--gray-200);
+		color: var(--white);
+		& a, & a:hover {
+			color: var(--link);
+		}
+	}
+	& .toot-blockquote-img {
+		border-bottom-color: var(--gray-300);
+	}
+	& a > .card, & a > .toot-card {
+		color: var(--gray-300);
+	}
+	& .card {
+		border-color: var(--gray-300);
+		& p .card-title {
+			color: var(--white);
+		}
+	}
+	& .toot-header {
+		& .toot-author-name {
+			color: var(--white);
+		}
+		& .toot-author-handle {
+			color: var(--gray-300);
+		}
+	}
+	& .toot-footer {
+		color: var(--gray-200);
+		& a {
+			color: var(--gray-200);
+		}
+	}
+	& .toot-quoted-tweet {
+		border-color: var(--gray-200);
+		& p.toot-quoted-toot-head {
+			& a {
+				color: var(--gray-200);
+			}
+		}
+	}
+	& .toot-reply-to {
+		color: var(--gray-200);
 	}
 }

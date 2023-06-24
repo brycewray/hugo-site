@@ -49,12 +49,12 @@
 		}
 	}
 	/* === Other */
-	.x {
+	& .x {
 		--clr-lt: var(--default);
 		--clr-dk: var(--default);
 	}
 	/* === Error */
-	.err {
+	& .err {
 		--clr-lt: var(--red-700);
 		--clr-dk: var(--red-300);
 	}
@@ -62,17 +62,17 @@
 	Line text (cl - was missing from original), LineTableTD (lntd),
 	LineTable (lntable), LineHighlight (hl), LineNumbersTable (lnt),
 	LineNumbers (ln) */
-	.cl {
+	& .cl {
 		--clr-lt: var(--default);
 		--clr-dk: var(--default);
 	}
-	.lntd {
+	& .lntd {
 		vertical-align: top;
 		padding: 0;
 		margin: 0;
 		border: 0;
 	}
-	.lntable {
+	& .lntable {
 		border-spacing: 0;
 		padding: 0;
 		margin: 0;
@@ -81,7 +81,7 @@
 		overflow: auto;
 		display: block;
 	}
-	.hl {
+	& .hl {
 		display: block;
 		width: 100%;
 		background-color: var(--yellow-200);
@@ -89,7 +89,7 @@
 			background-color: var(--yellow-800);
 		}
 	}
-	.lnt, .ln {
+	& .lnt, & .ln {
 		margin-right: 0.4em;
 		padding: 0 0.4em;
 		--clr-lt: var(--gray-700);
@@ -99,7 +99,7 @@
 	Keyword (k), KeywordConstant (kc), KeywordDeclaration (kd),
 	KeywordNamespace (kn), KeywordPseudo (kp), KeywordReserved (kr),
 	KeywordType (kt) */
-	.k, .kc, .kd, .kn, .kp, .kr, .kt {
+	& .k, & .kc, & .kd, & .kn, & .kp, & .kr, & .kt {
 		/* font-weight: bold; */
 		--clr-lt: var(--sky-700);
 		--clr-dk: var(--sky-300);
@@ -111,8 +111,8 @@
 	NameLabel (nl), NameNamespace (nn), NameOther (nx), NameProperty (np),
 	NameTag (nt), NameVariable (nv), NameVariableClass (vc),
 	NameVariableGlobal (vg), NameVariableInstance (vi), NameVariableMagic (vm) */
-	.n, .na, .nb, .bp, .nc, .no, .nd, .ni, .ne, .nf, .fm, .nl, .nn, .nx, .np,
-	.nt, .nv, .vc, .vg, .vi, .vm {
+	& .n, & .na, & .nb, & .bp, & .nc, & .no, & .nd, & .ni, & .ne, & .nf, & .fm, & .nl, & .nn, & .nx, & .np,
+	& .nt, & .nv, & .vc, & .vg, & .vi, & .vm {
 		--clr-lt: var(--orange-700);
 		--clr-dk: var(--yellow-300);
 	}
@@ -125,19 +125,19 @@
 	LiteralNumber (m), LiteralNumberBin (mb), LiteralNumberFloat (mf),
 	LiteralNumberHex (mh), LiteralNumberInteger (mi), LiteralNumberIntegerLong (il),
 	LiteralNumberOct (mo) */
-	.l, .ld, .s, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si, .sx, .sr,
-	.s1, .ss, .m, .mb, .mf, .mh, .mi, .il, .mo {
+	& .l, & .ld, & .s, & .sa, & .sb, & .sc, & .dl, & .sd, & .s2, & .se, & .sh, & .si, & .sx, & .sr,
+	& .s1, & .ss, & .m, & .mb, & .mf, & .mh, & .mi, & .il, & .mo {
 		--clr-lt: var(--gray-800);
 		--clr-dk: var(--gray-300);
 	}
 	/* === Operators
 	Operator (.o), OperatorWord (.ow) */
-	.o, .ow {
+	& .o, & .ow {
 		--clr-lt: var(--fuchsia-700);
 		--clr-dk: var(--fuchsia-300);
 	}
 	/* === Punctuation (p) */
-	.p {
+	& .p {
 		--clr-lt: var(--gray-800);
 		--clr-dk: var(--gray-300);
 	}
@@ -145,12 +145,12 @@
 	Comment (c), CommentHashbang (ch), CommentMultiline (cm),
 	CommentSingle (c1), CommentSpecial (cs),
 	CommentPreProc (cp), CommentPreProcFile (cpf) */
-	.c, .ch, .cm, .c1, .cs {
+	& .c, & .ch, & .cm, & .c1, & .cs {
 		font-style: italic;
 		--clr-lt: var(--emerald-700);
 		--clr-dk: var(--emerald-200);
 	}
-	.cp, .cpf {
+	& .cp, & .cpf {
 		--clr-lt: var(--gray-800);
 		--clr-dk: var(--gray-300);
 	}
@@ -159,18 +159,18 @@
 	GenericHeading (gh), GenericInserted (gi), GenericOutput (go), GenericPrompt (gp),
 	GenericStrong (gs - bold), GenericSubheading (gu), GenericTraceback (gt),
 	GenericUnderline (gl) */
-	.g, .gd, .gr, .gh, .gi, .go, .gp, .gu, .gt, .gl {
+	& .g, & .gd, & .gr, & .gh, & .gi, & .go, & .gp, & .gu, & .gt, & .gl {
 		--clr-lt: var(--gray-800);
 		--clr-dk: var(--gray-300);
 	}
-	.ge {
+	& .ge {
 		font-style: italic;
 	}
-	.gs {
+	& .gs {
 		font-weight: bold;
 	}
 	/* === TextWhitespace (w) */
-	.w {
+	& .w {
 		--clr-lt: var(--gray-800);
 		--clr-dk: var(--gray-300);
 	}
@@ -365,4 +365,17 @@ article blockquote code {
 
 article ol li .highlight {
 	line-height: 1.5;
+}
+
+html[data-theme="dark"] {
+	& .chroma *, & .code-inline * {
+		color: var(--clr-dk, #191970);
+	}
+	& :not(pre) > code[class*="language-"], & pre[class*="language-"] {
+		color: var(--white);
+		background-color: var(--slate-800);
+	}
+	& article blockquote code {
+		color: var(--slate-300);
+	}
 }

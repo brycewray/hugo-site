@@ -1,4 +1,8 @@
-:root {
+:root, [data-theme="light"] {
+	--border-bquote: var(--gray-400);
+	--link-nav: var(--white);
+	--link-nav-afh: var(--blue-200);
+	--logocircle: var(--blue-500);
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
@@ -8,12 +12,12 @@
 	--bquote-boost: var(--gray-600);
 	--link: var(--blue-700);
 	--link-afh: var(--blue-900);
-	--link-nav: var(--white);
-	--link-nav-afh: var(--blue-200);
 	--head: var(--black);
 	--red: var(--red-700);
 	--box-red: var(--red-600);
-	--logocircle: var(--blue-500);
+	--btn-text-default: var(--white);
+	--icon-inside: var(--white);
+	--pf-result-excerpt: var(--black);
 	/* backgrounds and borders */
 	--bkgd: var(--white);
 	--bkgd-nav: var(--black);
@@ -21,30 +25,44 @@
 	--bkgd-code: var(--slate-050);
 	--bkgd-article-code: var(--slate-150);
 	--bkgd-box-code: var(--slate-200);
+	--bkgd-pf-result-excerpt: var(--blue-100);
+	--bkgd-hr: var(--black);
+	--bkgd-marker-secondary: var(--slate-400);
 	--border: var(--neutral-400);
-	--border-bquote: var(--gray-400); /* <-- same for both light and dark modes */
-	@media (prefers-color-scheme: dark) {
-		/* primaries */
-		--default: var(--gray-300);
-		--boost: var(--gray-200);
-		--bquote: var(--gray-400);
-		--bquote-boost: var(--gray-350);
-		--link: var(--blue-300);
-		--link-afh: var(--slate-300);
-		/* --link-nav: var(--blue-200); */
-		/* --link-nav-afh: var(--white); */
-		--head: var(--white);
-		--red: var(--red-300);
-		--box-red: var(--red-400);
-		/* backgrounds and borders */
-		--bkgd: var(--black);
-		--bkgd-nav: var(--blue-950);
-		--bkgd-box: var(--slate-900);
-		--bkgd-code: var(--slate-900);
-		--bkgd-article-code: var(--slate-750);
-		--bkgd-box-code: var(--slate-700);
-		--border: var(--neutral-600);
-	}
+}
+
+[data-theme="light"] {
+	color-scheme: light;
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
+	/* = = = COLORS = = = */
+	/* === defaults === */
+	/* primaries */
+	--default: var(--gray-300);
+	--boost: var(--gray-200);
+	--bquote: var(--gray-400);
+	--bquote-boost: var(--gray-350);
+	--link: var(--blue-300);
+	--link-afh: var(--slate-300);
+	--head: var(--white);
+	--red: var(--red-300);
+	--box-red: var(--red-400);
+	--btn-text-default: var(--black);
+	--icon-inside: var(--black);
+	--pf-result-excerpt: var(--white);
+	/* backgrounds and borders */
+	--bkgd: var(--black);
+	--bkgd-nav: var(--blue-950);
+	--bkgd-box: var(--slate-900);
+	--bkgd-code: var(--slate-900);
+	--bkgd-article-code: var(--slate-750);
+	--bkgd-box-code: var(--slate-700);
+	--bkgd-pf-result-excerpt: var(--blue-900);
+	--bkgd-hr: var(--white);
+	--bkgd-marker-secondary: var(--slate-500);
+	--border: var(--neutral-600);
 }
 
 html, body {
@@ -61,7 +79,6 @@ html, body {
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd);
 	color: var(--default);
-	color-scheme: light dark;
 	@media screen and (min-width: 1024px) {
 		font-weight: var(--font-light);
 	}
@@ -158,10 +175,7 @@ a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .ico
 hr {
 	border: none;
 	height: 1px;
-	background-color: var(--black);
-	@media (prefers-color-scheme: dark) {
-		background-color: var(--white);
-	}
+	background-color: var(--bkgd-hr);
 }
 
 sub, sup {
@@ -178,10 +192,7 @@ ul li li, ol li li, ul li li li, ol li li li {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	&::marker {
-		color: var(--slate-400);
-		@media (prefers-color-scheme: dark) {
-			color: var(--slate-500);
-		}
+		color: var(--bkgd-marker-secondary);
 	}
 }
 
@@ -202,10 +213,7 @@ ol li ul, ol li li ul, ol li li li ul {
 		}
 		& ul {
 			& li::marker {
-				color: var(--slate-400);
-				@media (prefers-color-scheme: dark) {
-					color: var(--slate-500);
-				}
+				color: var(--bkgd-marker-secondary);
 			}
 		}
 	}
