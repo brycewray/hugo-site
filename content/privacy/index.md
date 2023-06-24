@@ -6,7 +6,11 @@ author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
 ---
 
-This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **external services**, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
+This site and its owner **do NOT** store your personal information **in any way**. It neither deposits nor reads cookies, and leaves only one small setting in [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to retain your light-/dark-mode viewing preferences for any future visits you make to the site.[^Salma]
+
+[^Salma]: See also Salma Alam-Naylor's article, "[The best light/dark mode theme toggle in JavaScript](https://whitep4nth3r.com/blog/best-light-dark-mode-theme-toggle-javascript/)."
+
+In addition, the site uses certain **external services**, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Cloudflare
 
@@ -26,4 +30,6 @@ This site reproduces [Mastodon](https://join.mastodon.org) toots as purely stati
 
 ## YouTube
 
-This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide [YouTube](https://youtube.com) embeds that respect your privacy. For details concerning how this works, see Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)," on which this site's related templating is based.
+This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide [YouTube](https://youtube.com) embeds that respect your privacy.[^Sia]
+
+[^Sia]: I based this on Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)" (although my site is <span class="nobrk">Hugo-based</span>).
