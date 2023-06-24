@@ -37,8 +37,7 @@ start.sh
 startdebug.sh
 startpf.sh
 # **NOT** ignoring startvers.sh
-startvers_*.sh
-startvers*.txt
+start*.sh
 logstart.sh
 build*.sh
 testbuild*.sh
