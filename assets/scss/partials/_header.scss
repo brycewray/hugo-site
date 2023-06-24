@@ -117,7 +117,7 @@ header {
 .nav-ModeToggle {
 	position: absolute;
 	cursor: pointer;
-	transition: all 0.5s ease-in-out;
+	/* transition: all 0.5s ease-in-out; */
 	top: 0.15em;
 	left: 46svw;
 	@media (min-width: 1024px) {
@@ -126,7 +126,7 @@ header {
 	background-color: transparent;
 	border: 0;
 	& svg {
-		// position: absolute;
+		/* position: absolute; */
 		width: 1.25em;
 		height: auto;
 		&.sun path, &.moon {
