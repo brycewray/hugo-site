@@ -110,6 +110,11 @@ https://raw.githubusercontent.com/giscus/giscus/main/styles/themes/preferred_col
 	color-scheme: light;
 }
 
+/*
+No dark mode; main site now uses only `[data-theme=""]` stuff
+as of 2023-06-24
+*/
+
 main .pagination-loader-container {
 	background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
 }
