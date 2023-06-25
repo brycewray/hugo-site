@@ -18,11 +18,6 @@
 				<!-- End Cloudflare Web Analytics -->
 			{{- end -}}
 		{{- end -}}
-		{{- /*
-		{{- $jsToggleTmpl := resources.Get "js/mode-toggle.js"  -}}
-		{{- $jsToggle := $jsToggleTmpl | resources.ExecuteAsTemplate "js/mode-toggle.js" . | minify | fingerprint -}}
-		<script src="{{ $jsToggle.RelPermalink }}" integrity="{{ $jsToggle.Data.Integrity }}" defer></script>
-		*/ -}}
 		{{- if (findRE `<div class="highlight"` .Content 1) -}}
 			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint -}}
 			<script src="{{ $jsCopy.RelPermalink }}" integrity="{{ $jsCopy.Data.Integrity }}" defer></script>
