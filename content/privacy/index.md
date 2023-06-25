@@ -32,4 +32,4 @@ This site reproduces [Mastodon](https://join.mastodon.org) toots as purely stati
 
 This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide [YouTube](https://youtube.com) embeds that respect your privacy.[^Sia]
 
-[^Sia]: I based this on Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)" (although my site is <span class="nobrk">Hugo-based</span>).
+[^Sia]: I based this on Sia Karamalegos's article, "[Faster YouTube embeds in Eleventy](https://sia.codes/posts/lite-youtube-embed-eleventy/)" (although my site <span class="nobrk">uses Hugo</span>).
