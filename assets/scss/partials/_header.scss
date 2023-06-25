@@ -119,9 +119,11 @@ header {
 	cursor: pointer;
 	/* transition: all 0.5s ease-in-out; */
 	top: 0.15em;
-	left: 46svw;
+	@media (max-width: 1023px) {
+		left: 48%;
+	}
 	@media (min-width: 1024px) {
-		left: 96%;
+		right: 1.5em;
 	}
 	background-color: transparent;
 	border: 0;
