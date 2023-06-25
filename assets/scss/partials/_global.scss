@@ -1,8 +1,12 @@
-:root, [data-theme="light"] {
+:root {
+	--logocircle: var(--blue-500);
 	--border-bquote: var(--gray-400);
 	--link-nav: var(--white);
 	--link-nav-afh: var(--blue-200);
-	--logocircle: var(--blue-500);
+}
+
+[data-theme="light"] {
+	color-scheme: light;
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
@@ -29,10 +33,6 @@
 	--bkgd-hr: var(--black);
 	--bkgd-marker-secondary: var(--slate-400);
 	--border: var(--neutral-400);
-}
-
-[data-theme="light"] {
-	color-scheme: light;
 }
 
 [data-theme="dark"] {
