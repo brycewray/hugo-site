@@ -29,10 +29,11 @@
 </header>
 {{- $jsToggle := resources.Get "js/mode-toggle.js" -}}
 {{- with $jsToggle -}}
-{{- if .Site.Params.Nonces -}}
+{{- if $.Site.Params.Nonces -}}
 <script nonce="DhcnhD3khTMePgXw">
 {{- else -}}
 <script>
+{{- end }}
 	{{- .Content | safeJS -}}
 </script>
 {{- end }}
