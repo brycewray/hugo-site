@@ -44,9 +44,6 @@
 		font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
 		color: var(--clr-lt, #ffff00);
-		@media (prefers-color-scheme: dark) {
-			color: var(--clr-dk, #191970);
-		}
 	}
 	/* === Other */
 	& .x {
@@ -85,9 +82,6 @@
 		display: block;
 		width: 100%;
 		background-color: var(--yellow-200);
-		@media (prefers-color-scheme: dark) {
-			background-color: var(--yellow-800);
-		}
 	}
 	& .lnt, & .ln {
 		margin-right: 0.4em;
@@ -214,10 +208,6 @@ pre.chroma {
 pre[class*="language-"] {
 	color: var(--black);
 	background-color: var(--white);
-	@media (prefers-color-scheme: dark) {
-		color: var(--white);
-		background-color: var(--slate-800);
-	}
 }
 
 .highlight {
@@ -351,9 +341,6 @@ article .footnotes li code {
 
 article blockquote code {
 	color: var(--slate-800);
-	@media (prefers-color-scheme: dark) {
-		color: var(--slate-300);
-	}
 }
 
 .box {
@@ -370,6 +357,11 @@ article ol li .highlight {
 html[data-theme="dark"] {
 	& .chroma *, & .code-inline * {
 		color: var(--clr-dk, #191970);
+	}
+	& .chroma, & .code-inline {
+		& .h1 {
+			background-color: var(--yellow-800);
+		}
 	}
 	& :not(pre) > code[class*="language-"], & pre[class*="language-"] {
 		color: var(--white);

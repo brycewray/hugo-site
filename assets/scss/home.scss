@@ -63,9 +63,6 @@
 	margin-bottom: 0.25em;
 	font-size: clamp(2rem, 2rem + 1vw, 3.5rem);
 	letter-spacing: -0.025em;
-	@media (prefers-color-scheme: dark) {
-		color: var(--default);
-	}
 	@media screen and (min-width: 1024px) {
 		margin-top: 0;
 		padding-top: 1em;
