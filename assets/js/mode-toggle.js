@@ -71,9 +71,7 @@ let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, sys
 * 3. Update the theme setting and button text accoridng to current settings
 */
 updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" })
-{{ if eq .Site.Params.ModeToggle true }}
-	updateThemeOnHtmlEl({ theme: currentThemeSetting })
-{{ end }}
+updateThemeOnHtmlEl({ theme: currentThemeSetting })
 
 /**
 * 4. Add an event listener to toggle the theme
