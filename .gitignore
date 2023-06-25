@@ -36,8 +36,8 @@ themes/twjit-thoreau/assets/css/index.css
 start.sh
 startdebug.sh
 startpf.sh
-# **NOT** ignoring startvers.sh
 start*.sh
+install*.sh
 logstart.sh
 build*.sh
 testbuild*.sh
