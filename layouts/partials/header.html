@@ -27,3 +27,9 @@
 		</ul>
 	</nav>
 </header>
+{{- $jsToggle := resources.Get "js/mode-toggle.js" -}}
+{{- with $jsToggle -}}
+<script>
+	{{- .Content | safeJS -}}
+</script>
+{{- end }}
