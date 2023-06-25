@@ -3,6 +3,7 @@
 /* @use 'partials/colors' as clr; */
 
 :root {
+	--orange-300: hsl(25, 100%, 78%);
 	--orange-700: hsl(25, 100%, 36%);
 	--yellow-200: hsl(55, 90%, 76%);
 	--yellow-300: hsl(55, 84%, 62%);
@@ -16,6 +17,7 @@
 	--fuchsia-300: hsl(290, 93%, 83%);
 	--fuchsia-700: hsl(290, 70%, 41%);
 	@supports (color: oklch(49% 0.1 252)) {
+		--orange-300: oklch(84.96% 0.097 49);
 		--orange-700: oklch(55.1% 0.155 49);
 		--yellow-200: oklch(94.03% 0.123 104);
 		--yellow-300: oklch(89.76% 0.164 104);
@@ -31,6 +33,26 @@
 	}
 }
 
+[data-theme="light"] {
+	--gray: var(--gray-700);
+	--orange: var(--orange-700);
+	--yellow: var(--yellow-800);
+	--green: var(--green-600);
+	--emerald: var(--emerald-700);
+	--sky: var(--sky-700);
+	--fuchsia: var(--fuchsia-700);
+}
+
+[data-theme="dark"] {
+	--gray: var(--gray-300);
+	--orange: var(--orange-300);
+	--yellow: var(--yellow-300);
+	--green: var(--green-100);
+	--emerald: var(--emerald-200);
+	--sky: var(--sky-300);
+	--fuchsia: var(--fuchsia-300);
+}
+
 /* ======= START, individual items from Chroma */
 
 /* Background */
@@ -43,25 +65,22 @@
 	& * {
 		font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
-		color: var(--clr-lt, #ffff00);
+		color: var(--clr, #ffff00);
 	}
 	/* === Other */
 	& .x {
-		--clr-lt: var(--default);
-		--clr-dk: var(--default);
+		--clr: var(--default);
 	}
 	/* === Error */
 	& .err {
-		--clr-lt: var(--red-700);
-		--clr-dk: var(--red-300);
+		--clr: var(--red);
 	}
 	/* === Lines (most items need specifics)
 	Line text (cl - was missing from original), LineTableTD (lntd),
 	LineTable (lntable), LineHighlight (hl), LineNumbersTable (lnt),
 	LineNumbers (ln) */
 	& .cl {
-		--clr-lt: var(--default);
-		--clr-dk: var(--default);
+		--clr: var(--default);
 	}
 	& .lntd {
 		vertical-align: top;
@@ -86,8 +105,7 @@
 	& .lnt, & .ln {
 		margin-right: 0.4em;
 		padding: 0 0.4em;
-		--clr-lt: var(--gray-700);
-		--clr-dk: var(--gray-300);
+		--clr: var(--gray);
 	}
 	/* === Keywords
 	Keyword (k), KeywordConstant (kc), KeywordDeclaration (kd),
@@ -95,8 +113,7 @@
 	KeywordType (kt) */
 	& .k, & .kc, & .kd, & .kn, & .kp, & .kr, & .kt {
 		/* font-weight: bold; */
-		--clr-lt: var(--sky-700);
-		--clr-dk: var(--sky-300);
+		--clr: var(--sky);
 	}
 	/* === Names
 	Name (n), NameAttribute (na), NameBuiltin (nb), NameBuiltinPseudo (bp),
@@ -107,8 +124,7 @@
 	NameVariableGlobal (vg), NameVariableInstance (vi), NameVariableMagic (vm) */
 	& .n, & .na, & .nb, & .bp, & .nc, & .no, & .nd, & .ni, & .ne, & .nf, & .fm, & .nl, & .nn, & .nx, & .np,
 	& .nt, & .nv, & .vc, & .vg, & .vi, & .vm {
-		--clr-lt: var(--orange-700);
-		--clr-dk: var(--yellow-300);
+		--clr: var(--orange);
 	}
 	/* === Literals
 	Literal (l), LiteralDate (ld), LiteralString (s), LiteralStringAffix (sa),
@@ -121,19 +137,16 @@
 	LiteralNumberOct (mo) */
 	& .l, & .ld, & .s, & .sa, & .sb, & .sc, & .dl, & .sd, & .s2, & .se, & .sh, & .si, & .sx, & .sr,
 	& .s1, & .ss, & .m, & .mb, & .mf, & .mh, & .mi, & .il, & .mo {
-		--clr-lt: var(--gray-800);
-		--clr-dk: var(--gray-300);
+		--clr: var(--gray);
 	}
 	/* === Operators
 	Operator (.o), OperatorWord (.ow) */
 	& .o, & .ow {
-		--clr-lt: var(--fuchsia-700);
-		--clr-dk: var(--fuchsia-300);
+		--clr: var(--fuchsia);
 	}
 	/* === Punctuation (p) */
 	& .p {
-		--clr-lt: var(--gray-800);
-		--clr-dk: var(--gray-300);
+		--clr: var(--gray);
 	}
 	/* === Comments
 	Comment (c), CommentHashbang (ch), CommentMultiline (cm),
@@ -141,12 +154,10 @@
 	CommentPreProc (cp), CommentPreProcFile (cpf) */
 	& .c, & .ch, & .cm, & .c1, & .cs {
 		font-style: italic;
-		--clr-lt: var(--emerald-700);
-		--clr-dk: var(--emerald-200);
+		--clr: var(--emerald);
 	}
 	& .cp, & .cpf {
-		--clr-lt: var(--gray-800);
-		--clr-dk: var(--gray-300);
+		--clr: var(--gray);
 	}
 	/* === Generics
 	Generic (g), GenericDeleted (gd), GenericEmph (ge - italic), GenericError (gr),
@@ -154,8 +165,7 @@
 	GenericStrong (gs - bold), GenericSubheading (gu), GenericTraceback (gt),
 	GenericUnderline (gl) */
 	& .g, & .gd, & .gr, & .gh, & .gi, & .go, & .gp, & .gu, & .gt, & .gl {
-		--clr-lt: var(--gray-800);
-		--clr-dk: var(--gray-300);
+		--clr: var(--gray);
 	}
 	& .ge {
 		font-style: italic;
@@ -165,8 +175,7 @@
 	}
 	/* === TextWhitespace (w) */
 	& .w {
-		--clr-lt: var(--gray-800);
-		--clr-dk: var(--gray-300);
+		--clr: var(--gray);
 	}
 }
 
@@ -340,7 +349,7 @@ article .footnotes li code {
 }
 
 article blockquote code {
-	color: var(--slate-800);
+	color: var(--bquote-article-code);
 }
 
 .box {
@@ -356,7 +365,7 @@ article ol li .highlight {
 
 html[data-theme="dark"] {
 	& .chroma *, & .code-inline * {
-		color: var(--clr-dk, #191970);
+		color: var(--clr, #191970);
 	}
 	& .chroma, & .code-inline {
 		& .h1 {
@@ -366,8 +375,5 @@ html[data-theme="dark"] {
 	& :not(pre) > code[class*="language-"], & pre[class*="language-"] {
 		color: var(--white);
 		background-color: var(--slate-800);
-	}
-	& article blockquote code {
-		color: var(--slate-300);
 	}
 }

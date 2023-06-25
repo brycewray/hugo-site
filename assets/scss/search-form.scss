@@ -4,6 +4,14 @@
 
 /* === for search form */
 
+[data-theme="light"] {
+	--input: var(--black);
+}
+
+[data-theme="dark"] {
+	--input: var(--white);
+}
+
 .searchDiv, .searchDivPF {
 	margin: 2em auto;
 }
@@ -44,6 +52,7 @@
 	padding: 0.25em 0.5em 0.25em;
 	margin: 0;
 	border: 0;
+	color: var(--input);
 	background-color: transparent;
 }
 
@@ -95,6 +104,7 @@
 	border-color: var(--border);
 	border-radius: 9px;
 	background-color: var(--bkgd-box);
+	color: var(--input);
 }
 
 .pagefind-ui__drawer {
@@ -159,13 +169,4 @@
 
 .pagefind-ui__result-title {
 	font-weight: bold;
-}
-
-html[data-theme="dark"] {
-	.searchInput {
-		color: var(--white);
-	}
-	.pagefind-ui__search-input {
-		color: var(--white);
-	}
 }

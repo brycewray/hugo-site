@@ -4,9 +4,8 @@
 
 
 code, article code, .box code {
-	--bg-lt: var(--bkgd-article-code);
-	--bg-dk: var(--bkgd-article-code);
-	background-color: var(--bg-lt);
+	--bg: var(--bkgd-article-code);
+	background-color: var(--bg);
 }
 
 code {
@@ -57,26 +56,16 @@ article .footnotes li code {
 }
 
 article blockquote code {
-	color: var(--slate-800);
+	color: var(--bquote-article-code);
 }
 
 .box {
 	& code, & a code {
 		font-size: 1em; /* definitely em */
-		--bg-lt: var(--bkgd-box-code);
-		--bg-dk: var(--bkgd-box-code);
+		--bg: var(--bkgd-box-code);
 	}
 }
 
 article ol li .highlight {
 	line-height: 1.5;
-}
-
-html[data-theme="dark"] {
-	& code, & article code, & .box code {
-		background-color: var(--bg-dk);
-	}
-	& article blockquote code {
-		color: var(--slate-300);
-	}
 }

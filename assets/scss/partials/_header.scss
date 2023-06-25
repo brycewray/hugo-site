@@ -70,7 +70,7 @@ header {
 		border: 0;
 		color: var(--link-nav);
 		&:focus, &:active, &:hover {
-			color: var(--slate-200);
+			color: var(--link-nav-afh);
 		}
 	}
 	@media only screen and (min-width: 1024px) {
@@ -130,7 +130,7 @@ header {
 		width: 1.25em;
 		height: auto;
 		&.sun path, &.moon {
-			fill: var(--yellow-200);
+			fill: var(--fill-lightdarktoggle);
 		}
 	}
 }
@@ -139,7 +139,7 @@ circle.NavIcon {
 	fill: var(--logocircle);
 }
 a:hover circle.NavIcon {
-	fill: var(--gray-500);
+	fill: var(--logocircle-afh);
 }
 
 path.NavIcon {

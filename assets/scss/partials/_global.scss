@@ -1,8 +1,11 @@
 :root {
-	--logocircle: var(--blue-500);
-	--border-bquote: var(--gray-400);
 	--link-nav: var(--white);
 	--link-nav-afh: var(--blue-200);
+	--logocircle: var(--blue-500);
+	--logocircle-afh: var(--gray-500);
+	--border-bquote: var(--gray-400);
+	--fill-lightdarktoggle: var(--yellow-200);
+	--filter-shadow: var(--gray-400);
 }
 
 [data-theme="light"] {
@@ -20,8 +23,8 @@
 	--red: var(--red-700);
 	--box-red: var(--red-600);
 	--btn-text-default: var(--white);
-	--icon-inside: var(--white);
 	--pf-result-excerpt: var(--black);
+	--bquote-article-code: var(--slate-800);
 	/* backgrounds and borders */
 	--bkgd: var(--white);
 	--bkgd-nav: var(--black);
@@ -33,6 +36,7 @@
 	--bkgd-hr: var(--black);
 	--bkgd-marker-secondary: var(--slate-400);
 	--border: var(--neutral-400);
+	--icon-inside: var(--white);
 }
 
 [data-theme="dark"] {
@@ -50,8 +54,8 @@
 	--red: var(--red-300);
 	--box-red: var(--red-400);
 	--btn-text-default: var(--black);
-	--icon-inside: var(--black);
 	--pf-result-excerpt: var(--white);
+	--bquote-article-code: var(--slate-300);
 	/* backgrounds and borders */
 	--bkgd: var(--black);
 	--bkgd-nav: var(--blue-950);
@@ -63,6 +67,7 @@
 	--bkgd-hr: var(--white);
 	--bkgd-marker-secondary: var(--slate-500);
 	--border: var(--neutral-600);
+	--icon-inside: var(--black);
 }
 
 html, body {

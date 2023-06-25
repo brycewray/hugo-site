@@ -34,7 +34,7 @@ img.ctrImg {
 }
 
 .shadow {
-	filter: drop-shadow(0 -0.25em 0.75em var(--gray-400));
+	filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
 }
 
 html[data-theme="dark"] .shadow {
