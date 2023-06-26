@@ -7,7 +7,7 @@ date: 2023-06-20T09:11:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-**Update, 2023-06-26**: A few days after publishing this post, I realized I'd used a titler scheme and, more importantly, a URL scheme that didn't square with those of other posts in this series; so I retitled the post accordingly and implemented a redirect that brought you to this URL, instead. My apologies for any confusion this may have caused.
+**Update, 2023-06-26**: A few days after publishing this post, I realized I'd used a title scheme and, more importantly, a URL scheme that didn't square with those of other posts in this series; so I retitled the post accordingly and implemented a redirect that brought you to this URL, instead. My apologies for any confusion this may have caused.
 {.box}
 
 If you're a [Hugo](https://gohugo.io) user who's been on the proverbial desert island for a while, you might have missed a few weeks of unexpected drama over how Hugo works with [Dart Sass](https://sass-lang.com/dart-sass). Yesterday's [release of Hugo 0.114.0](https://github.com/gohugoio/hugo/releases/tag/v0.114.0) brought that drama to a close, as I subsequently explained through updates to numerous posts in this here website, but I thought those of you who *don't* breathlessly scan my site for such updates might want a rehash of the whole shebang.
