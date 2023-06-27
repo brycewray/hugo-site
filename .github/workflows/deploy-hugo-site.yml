@@ -8,7 +8,6 @@ on:
 env:
   HUGO_VERSION: 0.114.1 # will get Extended Version below
   DART_SASS_VERSION: 1.63.6 # (depends on STYLING env var)
-  PAGEFIND_VERSION: 0.12.0
   NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
   # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
@@ -62,13 +61,6 @@ jobs:
         with:
           path: static
           key: ${{ runner.os }}-static
-      # - name: Install Pagefind (cond. - non-Node)
-      #   if: ${{ env.NODE != 'true' }}
-      #   uses: supplypike/setup-bin@v3
-      #   with:
-      #     uri: "https://github.com/CloudCannon/pagefind/releases/download/v${{ env.PAGEFIND_VERSION }}/pagefind_extended-v${{ env.PAGEFIND_VERSION }}-x86_64-unknown-linux-musl.tar.gz"
-      #     name: "pagefind_extended"
-      #     version: ${{env.PAGEFIND_VERSION}}
       - name: Install Hugo via Node, build site, move feed files, run Pagefind (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm run build
