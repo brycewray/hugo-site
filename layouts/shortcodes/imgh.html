@@ -20,7 +20,7 @@
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
 
 {{- $imgBd5 := md5 $src -}}
-{{- $divClass := "relative bg-center shadow" -}}
+{{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
 	{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
 	{{/*
@@ -31,9 +31,9 @@
 		(md5-ing the image file name).
 	*/}}
 {{- end -}}
-{{- $imgClass := "w-full h-auto animate-fade" -}}
+{{- $imgClass := "w-full h-auto animate-fade shadow" -}}
 {{- if $phn -}}
-	{{- $imgClass = "img-phn h-auto ctrImg animate-fade" -}}
+	{{- $imgClass = "img-phn h-auto ctrImg animate-fade shadow" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 

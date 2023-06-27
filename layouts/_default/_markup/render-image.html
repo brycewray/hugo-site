@@ -20,8 +20,8 @@
 {{- $hint := "photo" -}}
 {{- $filter := "MitchellNetravali" -}}
 {{- $imgBd5 := md5 $src -}}
-{{- $divClass := print "relative bg-center shadow imgB-" $imgBd5 "-" $holder -}}
-{{- $imgClass := "w-full h-auto animate-fade" -}}
+{{- $divClass := print "relative bg-center imgB-" $imgBd5 "-" $holder -}}
+{{- $imgClass := "w-full h-auto shadow animate-fade" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $actualImg := $src.Resize (print "640x jpg " $filter) -}}
 <div class="{{ $divClass }}" data-pagefind-ignore>
