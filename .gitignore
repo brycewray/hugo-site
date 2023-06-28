@@ -37,7 +37,7 @@ start.sh
 startdebug.sh
 startpf.sh
 start*.sh
-install*.sh
+# install*.sh
 logstart.sh
 build*.sh
 testbuild*.sh
