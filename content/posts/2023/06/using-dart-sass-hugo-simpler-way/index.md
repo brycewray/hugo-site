@@ -87,8 +87,8 @@ DART_SASS_ARCH='macos-x64'
 # ^^^ choices for "DART_SASS_ARCH":
 # - 'linux-x64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
-# - 'macos-arm64' (Apple Silicon)
-# - 'macos-x64' (Intel)
+# - 'macos-arm64' (macOS on Apple Silicon)
+# - 'macos-x64' (macOS on Intel)
 
 echo "Checking requested versions...\n"
 
