@@ -77,14 +77,14 @@ I call it `install.sh`; so, from a terminal app, I type:
 
 HUGO_VERSION=0.115.0
 HUGO_ARCH='darwin-universal'
-# ^^^ choices for 'HUGO_ARCH' (Extended Version only):
+# ^^^ choices for HUGO_ARCH (Extended Version only):
 # - 'darwin-universal' (macOS Universal Binary, Hugo 0.102.0 and up)
 # - 'linux-amd64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
 
 DART_SASS_VERSION=1.63.6
 DART_SASS_ARCH='macos-x64'
-# ^^^ choices for "DART_SASS_ARCH":
+# ^^^ choices for DART_SASS_ARCH:
 # - 'linux-x64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
 # - 'macos-arm64' (macOS on Apple Silicon)
