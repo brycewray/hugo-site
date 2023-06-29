@@ -22,35 +22,20 @@ table.noborders {
 	margin: 1.5rem auto 1rem auto;
 	border: 0;
 	border-collapse: collapse;
-	& tr {
-		background-color: var(--white);
-	}
+
 	& td {
+		font-weight: var(--font-normal);
 		text-align: left;
 		vertical-align: middle;
 		padding: 0.25rem 0 0.25rem 0.5rem;
-		& img {
-			display: inline-block;
-			vertical-align: middle;
-			margin: 0;
+		&.td30 {
+			width: 30%;
 		}
-	}
-	& tr:nth-child(even) {
-		background-color: var(--slate-150);
-	}
-	& thead {
-		background-color: var(--blue-900);
-		color: var(--white);
-	}
-	& thead tr {
-		background-color: var(--blue-900);
-	}
-	& thead td {
-		color: var(--white);
-		font-weight: bold;
-	}
-	& td {
+		&.td70 {
+			width: 70%;
+		}
 		& img {
+			margin: 0;
 			display: block;
 			max-width: 60%;
 			@media screen and (min-width: 768px) {
@@ -58,6 +43,17 @@ table.noborders {
 			}
 			height: auto;
 		}
+	}
+	& tr:nth-child(odd) {
+		background-color: var(--slate-050);
+	}
+	& tr:nth-child(even) {
+		background-color: var(--slate-150);
+	}
+	& thead td {
+		background-color: var(--blue-900);
+		color: var(--white);
+		font-weight: bold;
 	}
 }
 /* === end, table for web typography article, part II */
