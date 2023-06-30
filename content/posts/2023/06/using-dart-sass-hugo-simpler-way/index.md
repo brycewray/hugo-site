@@ -76,8 +76,8 @@ I call it `install.sh`; so, from a terminal app, I type:
 # --- for use with macOS and Linux/WSL
 
 HUGO_VERSION=0.115.0
-HUGO_ARCH='darwin-universal'
-# ^^^ choices for HUGO_ARCH (Extended Version only):
+HUGO_OS_ARCH='darwin-universal'
+# ^^^ choices for HUGO_OS_ARCH (Extended Version only):
 # - 'darwin-universal' (macOS Universal Binary, Hugo 0.102.0 and up)
 # - 'linux-amd64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
@@ -97,16 +97,16 @@ then
   echo "Detected Hugo v.${HUGO_VERSION}!\n"
 else
   echo "Failed to detect Hugo v.${HUGO_VERSION} --- installing it...\n"
-  wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz -O hugo_extended_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz
-  tar -xvf hugo_extended_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz hugo
+  wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz -O hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz
+  tar -xvf hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz hugo
   rm -rf ../bin/hugo
   mv hugo ../bin
-  if ${HUGO_ARCH} == 'darwin-universal'
+  if ${HUGO_OS_ARCH} == 'darwin-universal'
   then
     xattr -dr com.apple.quarantine ../bin/hugo # "bless" the Hugo binary in macOS
   fi
   hugo version
-  rm -rf hugo_extended_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz
+  rm -rf hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz
 fi
 
 if grep -q "github.com/sass/dart-sass/compiler=\"${DART_SASS_VERSION}" <<< $(hugo env)
@@ -147,7 +147,7 @@ github.com/sass/dart-sass/implementation="1.63.6"
 \
 On the other hand: if `grep` **does** successfully detect both desired binaries within the `hugo env` output, the script simply tells you that and jumps down to step 5.\
 \
-(In the Hugo part in particular: if you've specified macOS by setting your `HUGO_ARCH` to `darwin-universal`, an `if-then` conditional uses `xattr` to take care of the macOS "blessing" of the new Hugo binary, as I explained before.)
+(In the Hugo part in particular: if you've specified macOS by setting your `HUGO_OS_ARCH` to `darwin-universal`, an `if-then` conditional uses `xattr` to take care of the macOS "blessing" of the new Hugo binary, as I explained before.)
 
 4. For each binary, after deleting any existing copy of the binary in the given `PATH` directory, the script extracts the new binary from the newly downloaded `.tar.gz` archive and [moves the binary into a folder designated as being in the system `PATH`](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/).\
 \
