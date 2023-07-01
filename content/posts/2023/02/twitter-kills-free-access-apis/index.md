@@ -51,3 +51,9 @@ If you still use `tweet`, just be sure you [make the appropriate privacy setting
 {{< tweet "TwitterDev" "1621026986784337922" >}}
 
 . . . or, at least, that's how Hugo renders it unless and until Twitter kills free access to **that** API, too. Use it, and Twitter in general, at your own risk.
+
+<!-- content of that tweet, in case Twitter **does** whack the oEmbed API
+> Starting February 9, we will no longer support free access to the Twitter API, both v2 and v1.1. A paid basic tier will be available instead 🧵
+>
+> <span class="pokey">— Twitter Dev (@TwitterDev) [February 2, 2023](https://twitter.com/TwitterDev/status/1621026986784337922?ref_src=twsrc%5Etfw)</span>
+-->
