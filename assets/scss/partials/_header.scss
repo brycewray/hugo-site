@@ -48,7 +48,7 @@ header {
 	& li {
 		list-style: none;
 		display: none;
-		font-weight: bold;
+		font-weight: var(--font-bold);
 		padding-right: 3.5em;
 		&.notMobile {
 			display: none;
