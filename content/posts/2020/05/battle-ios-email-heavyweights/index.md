@@ -55,7 +55,9 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 **Maker**: [EuroSmartz, Ltd](https://mobile.eurosmartz.com/).
 
-**First release**: [2009](https://twitter.com/EuroSmartz/status/3729778954) as a more pedestrian app some App Store reviewers call "AltaMail Classic" to distinguish it from the current incarnation, which dates from [2017](https://twitter.com/EuroSmartz/status/937595802897211392).
+**First release**: [2009](https://twitter.com/EuroSmartz/status/3729778954)[^tweets] as a more pedestrian app some App Store reviewers call "AltaMail Classic" to distinguish it from the current incarnation, which dates from [2017](https://twitter.com/EuroSmartz/status/937595802897211392)[^tweets].
+
+[^tweets]: Depending on Twitter policies as of when you read this, you may need to be logged into an a Twitter account to use the link.
 
 **Platforms**: iOS, Android, macOS.[^Catalyst]
 
@@ -69,7 +71,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 **Maker**: [GoodHumans](https://goodhumans.net/).
 
-**First release**: [2011](https://www.prweb.com/releases/2011/02/prweb5057504.htm) as a similar but less full-featured product called eMailGanizer; Preside itself was introduced in [2016](https://twitter.com/PresideApp/status/816004049313021952).
+**First release**: [2011](https://www.prweb.com/releases/2011/02/prweb5057504.htm) as a similar but less full-featured product called eMailGanizer; Preside itself was introduced in [2016](https://twitter.com/PresideApp/status/816004049313021952)[^tweets].
 
 **Platform**: iOS.
 

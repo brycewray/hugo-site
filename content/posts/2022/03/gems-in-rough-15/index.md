@@ -37,7 +37,7 @@ There were a few other cases like this, but all shared the same problem: an inab
 
 A few weeks earlier, I had filed [an issue](https://github.com/yuin/goldmark/issues/180) about this bug on the goldmark repository. I also put up a [demo page](https://gm-typographer.vercel.app/) to illustrate the problem more clearly, after the goldmark maintainer explained (in a comment within the issue) that English wasn't his primary language and, thus, he would appreciate help from outside.
 
-Well, I'm pleased to report that [Nate Moore](https://twitter.com/n_moore) of the [Astro](https://astro.build/) team came to the rescue with a [pull request](https://github.com/yuin/goldmark/pull/280) that **fixed the problem** as of goldmark v.1.4.7, to which Hugo upgraded in this week's [release of Hugo 0.93.0](https://github.com/gohugoio/hugo/releases/tag/v0.93.0). So, if you share my preference for typing your Markdown for a Hugo site without requiring your text editor and/or OS to provide these typographical niceties, just move up to the latest Hugo version and you're good to go.
+Well, I'm pleased to report that Nate Moore of the [Astro](https://astro.build/) team came to the rescue with a [pull request](https://github.com/yuin/goldmark/pull/280) that **fixed the problem** as of goldmark v.1.4.7, to which Hugo upgraded in this week's [release of Hugo 0.93.0](https://github.com/gohugoio/hugo/releases/tag/v0.93.0). So, if you share my preference for typing your Markdown for a Hugo site without requiring your text editor and/or OS to provide these typographical niceties, just move up to the latest Hugo version and you're good to go.
 
 ## Using Tailwind CSS 3.x with Hugo
 

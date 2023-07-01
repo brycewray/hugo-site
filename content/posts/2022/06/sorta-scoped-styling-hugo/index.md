@@ -9,7 +9,9 @@ date: 2022-06-12T16:10:00-05:00
 **Acknowledgment**: I express tremendous thanks to [Daniel F. Dickinson](https://github.com/danielfdickinson/), without whose [help on the Hugo Discourse forum](https://discourse.gohugo.io/t/different-results-for-if-in-params-tags-test/38990/4) I wouldn't have been able to implement the code described in this post. *Thank you again, kind sir!*
 {.box}
 
-It's been years since the [rise of HTML5/CSS3 got front-end developers thinking about ways to have *scoped styling*](https://css-tricks.com/saving-the-day-with-scoped-css/) --- at least, before [browsers stopped supporting it](https://twitter.com/ebidel/status/476026012610748416) and web devs had to depend on their build tools for scoping.
+It's been years since the [rise of HTML5/CSS3 got front-end developers thinking about ways to have *scoped styling*](https://css-tricks.com/saving-the-day-with-scoped-css/) --- at least, before [browsers stopped supporting it](https://twitter.com/ebidel/status/476026012610748416)[^tweets] and web devs had to depend on their build tools for scoping.
+
+[^tweets]: Depending on Twitter policies as of when you read this, you may need to be logged into an a Twitter account to use the link.
 
 Even now, as scoped CSS [may (again) be approaching standard status](https://css-tricks.com/early-days-for-css-scoping/), many devs remain dependent upon build tools and frameworks to accomplish scoping. These needs seem to account for a good portion of the popularity behind [Next.js](https://nextjs.org), [Vite](https://vitejs.dev), [Astro](https://astro.build), [Svelte](https://svelte.dev), and the more obscure (yet amazing[^iles]) [îles](https://iles-docs.netlify.app/). Scoped styling in these depend heavily on the idea of *component*-based development, with each component having its own specific styling.
 
@@ -41,8 +43,8 @@ I also would decide what styling each page would need, based on its content, and
 - *post* --- Pretty self-evident.
 - *code* --- For not only code blocks but also any code at all, even if only a word or two (like this: `<div>`).[^codeSCSS]
 - *img* --- Images onboard.
-- *social* --- Any embedded [Twitter](https://twitter.com) tweets or [Mastodon](https://joinmastodon.org) toots.
-- *YouTube* --- Embedded [YouTube](https://youtube.com) videos.
+- *social* --- Any embedded Twitter tweets or Mastodon toots.
+- *YouTube* --- Embedded YouTube videos.
 
 [^codeSCSS]: This one can be especially problematic where trimming one's CSS is concerned. The code-specific SCSS gets pretty "thicc," as the kids would say, due to the massive number of styles required for syntax highlighting.
 

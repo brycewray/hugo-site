@@ -81,7 +81,7 @@ And then there are those third-party [iframes](https://developer.mozilla.org/en-
 **Note, 2020-08-08**: The following explanation was from before I stopped embedding third-party content, such as from Twitter, as a result of this site's belatedly adopted [privacy policy](/privacy/).
 {.box}
 
-In my site's case, [Twitter](https://twitter.com) is the chief offender. Dark Mode and the default white Twitter background do not play nicely together. So I followed [Twitter's dev docs](https://developer.twitter.com/en/docs) and, through JavaScript-adjusted `<meta>` tags, told my site's embedded Twitter content to "listen" to the user's Dark Mode/Light Mode setting and change accordingly.[^noscript]
+In my site's case, Twitter is the chief offender. Dark Mode and the default white Twitter background do not play nicely together. So I followed [Twitter's dev docs](https://developer.twitter.com/en/docs) and, through JavaScript-adjusted `<meta>` tags, told my site's embedded Twitter content to "listen" to the user's Dark Mode/Light Mode setting and change accordingly.[^noscript]
 
 [^noscript]: For those odd cases where JavaScript is disabled, I use `<noscript>` code to make Dark Mode the default setting for the Twitter content. I figure it's safer to show Dark Mode stuff to Light Mode users as opposed to the other way around.
 

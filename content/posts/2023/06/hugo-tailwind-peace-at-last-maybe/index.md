@@ -41,7 +41,7 @@ Well, it's because Tailwind **v.4** can't be far off. Consider the cadence of th
 - [v.2.0.0](https://github.com/tailwindlabs/tailwindcss/releases/tag/v2.0.0) --- <span class="nobrk">2020-11-18</span>, eighteen months after v.1.0.0.
 - [v.3.0.0](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.0.0) --- <span class="nobrk">2021-12-09</span>, nearly thirteen months after v.2.0.0.
 
-Thus, as of the initial publication of this post, it's been nearly eighteen months since the release of v.3.0.0. Note also that Tailwind creator Adam Wathan [said](https://twitter.com/adamwathan/status/1594874850178367488) last November:
+Thus, as of the initial publication of this post, it's been nearly eighteen months since the release of v.3.0.0. Note also that Tailwind creator Adam Wathan tweeted the following last November:
 
 > Goals for Tailwind CSS v4.0:
 >

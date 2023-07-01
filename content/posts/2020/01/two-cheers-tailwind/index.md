@@ -12,7 +12,7 @@ A couple of weekends ago, I tweeted a question for the web devs among my few but
 > Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal Web site with one maintainer (HTML and CSS)? Worth it then?\
 > <span class="pokey">5:25 PM • December 28, 2019 (UTC)</span>
 
-Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
+Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) Twitter account and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
 Tens of thousands of "[impressions](https://help.twitter.com/en/managing-your-account/using-the-tweet-activity-dashboard)" and a few dozen mostly enthusiastic answers later, I had a pretty clear, albeit obviously biased, direction&nbsp;.&nbsp;.&nbsp;.
 

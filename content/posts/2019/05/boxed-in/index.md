@@ -96,7 +96,7 @@ And, no, I actually do *not* like the taste of crow, since you ask. But I very m
 
 What did I learn? Well&nbsp;.&nbsp;.&nbsp;.
 
-- As one Ulysses fan recently [told me jokingly on Twitter](https://twitter.com/craigdwarhurst/status/1120633985481285633), "We all pays our money and makes our choice." True. And I agree that I do so with wide-open eyes that neither Ulysses nor any other app is perfect. Nor is iCloud, in which I've [put a great deal of hope and trust --- and my monthly money](/posts/2019/02/back-up-jack/).
+- As one Ulysses fan recently told me jokingly on social media, "We all pays our money and makes our choice." True. And I agree that I do so with wide-open eyes that neither Ulysses nor any other app is perfect. Nor is iCloud, in which I've [put a great deal of hope and trust --- and my monthly money](/posts/2019/02/back-up-jack/).
 - To quote none other than Linus of "Peanuts" fame: "[I'm never quite so stupid as when I'm being smart!](https://www.pinterest.com/pin/4574037096083898)" I thought I knew. And maybe I knew some of it. But I didn't know enough. I was blaming one particular app for something that is an irregularly appearing characteristic of its app type, a type which I already knew and accepted because it makes the all-inclusive Ulysses Library possible.
 - It's still a good idea to "[trust, but verify](https://www.chicagotribune.com/news/ct-xpm-1987-12-09-8704010440-story.html)." So I will continue the practice I started even before all this hubbub began, which is a periodic copy of Ulysses content over to iA Writer and, to be triply sure, Scrivener[^ScrivStill] as well.
 

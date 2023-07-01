@@ -19,9 +19,11 @@ On the other hand, if you *do* want to provide such functionality but are uncert
 
 The first thing is: **don't** use [Disqus](https://disqus.com). Yes, it's hosted so you don't have to worry about installation issues, works well, looks kinda nice, is [supported out of the box](https://gohugo.io/content-management/comments/#add-disqus) by the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com) (indeed, it's very easy to add to just about any SSG), and is widely used; **but** it has some significant disadvantages:
 
-- [It tracks your visitors and shares their data without their consent](https://twitter.com/martingund/status/1207327648093003777) ([it's owned by a marketing company, Zeta Global](https://markosaric.com/remove-disqus/)). If you're serious about honoring the [GDPR](https://gdpr-info.eu/) and other privacy protection legislation, Disqus is a pain.
+- [It tracks your visitors and shares their data without their consent](https://twitter.com/martingund/status/1207327648093003777)[^tweets] ([it's owned by a marketing company, Zeta Global](https://markosaric.com/remove-disqus/)). If you're serious about honoring the [GDPR](https://gdpr-info.eu/) and other privacy protection legislation, Disqus is a pain.
 - The free tier serves ads to your visitors [unless you're eligible to opt out](https://help.disqus.com/en/articles/1717307-subscription-payments-faq).
 - As the above has probably suggested, Disqus adds a ton of code to your site, slowing it down. (There are numerous articles on the web about it; just search for "disqus performance penalty" or something similar.) You can mitigate that in some ways but, in the end, it's still a performance hit.
+
+[^tweets]: Depending on Twitter policies as of when you read this, you may need to be logged into an a Twitter account to use the link.
 
 So, if Disqus is a bad idea, how should you then implement comments on your site?
 

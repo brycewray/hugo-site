@@ -7,7 +7,7 @@ date: 2023-03-14T04:31:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-[Vercel](https://vercel.com) [announced](https://twitter.com/vercel/status/1453034541463916549) in October, 2021, that it would be adding [Edge Functions](https://vercel.com/features/edge-functions) to its stable of products and features. However, at first, Vercel Edge Functions would work only on Vercel's [Next.js](https://nextjs.org) framework, with non-Next.js support --- including code examples to help developers --- slated for sometime in 2022.
+[Vercel](https://vercel.com) announced in October, 2021, that it would be adding [Edge Functions](https://vercel.com/features/edge-functions) to its stable of products and features. However, at first, Vercel Edge Functions would work only on Vercel's [Next.js](https://nextjs.org) framework, with non-Next.js support --- including code examples to help developers --- slated for sometime in 2022.
 
 Well, it's no longer 2022 but, at least for me, the wait has finally ended. So, if you, too, have been waiting impatiently to make use of Vercel Edge Functions on your non-Next.js project, this post may lift your spirits.
 

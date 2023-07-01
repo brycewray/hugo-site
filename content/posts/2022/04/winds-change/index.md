@@ -30,7 +30,7 @@ Anyway, that’s where things stood on March 22, when I initially published that
 
 Then, the very next morning, a Twitter feed I regularly follow (I even have it coming to my RSS reader app) delivered some unexpected news that, I now know in retrospect, changed the ballgame. As I noted later that day in an update to “Simplify, simplify (again)”:
 
-> Slinkity creator/maintainer [Ben Holmes](https://twitter.com/BHolmesDev) [announced today](https://twitter.com/BHolmesDev/status/1506616758806802435) that he’s joining the Astro team, and [indicated](https://twitter.com/BHolmesDev/status/1506621649944260610) that he may hand off Slinkity to someone else after getting Slinkity to v.1.x. How these developments will affect my aforementioned “stay current” plan remains to be seen.
+> Slinkity creator/maintainer Ben Holmes announced today that he’s joining the Astro team, and indicated that he may hand off Slinkity to someone else after getting Slinkity to v.1.x. How these developments will affect my aforementioned “stay current” plan remains to be seen.
 
 Fast-forward to this past Saturday afternoon — a month later to the day — when I tweeted:
 

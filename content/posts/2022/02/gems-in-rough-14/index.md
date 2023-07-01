@@ -13,7 +13,7 @@ Each entry in the “Gems in the rough” series is a collection of tips, explan
 
 The popular [Eleventy](https://11ty.dev/) SSG is no longer “only” a side gig for [Zach Leatherman](https://zachleat.com/), and the web will be a better place for that.
 
-A [blog post](https://www.netlify.com/blog/growing-our-open-source-contributions) and an [Eleventy tweet](https://twitter.com/eleven_ty/status/1493284209925967872) jointly announced on February 14 that [Netlify](https://netlify.com/) is now sponsoring full-time development of the Eleventy project, which Leatherman [created in 2018](https://www.zachleat.com/web/introducing-eleventy/) and has maintained ever since. He [joined Netlify in 2020](https://www.zachleat.com/web/netlify/), and keeping Eleventy excellent will now be his full-time role there. According to the blog post by [Claire Knight](https://twitter.com/krider2010), the company’s Senior Software Engineering Manager:
+A [blog post](https://www.netlify.com/blog/growing-our-open-source-contributions) and an Eleventy tweet jointly announced on February 14 that [Netlify](https://netlify.com/) is now sponsoring full-time development of the Eleventy project, which Leatherman [created in 2018](https://www.zachleat.com/web/introducing-eleventy/) and has maintained ever since. He [joined Netlify in 2020](https://www.zachleat.com/web/netlify/), and keeping Eleventy excellent will now be his full-time role there. According to the blog post by Claire Knight, the company’s Senior Software Engineering Manager:
 
 > .&nbsp;.&nbsp;. we recognize the importance of open source for enabling web developers and advancing what’s possible on the web, and we are working to address this. That’s why I joined in January to help build out an engineering group focused on ecosystem integrations and open source upstream contributions. We have an amazing team of folks, including Matt Kane and Tiffany Le-Nguyen, who have been building integrations and contributing to frameworks like Next.js, Nuxt, Gatsby[,] and Svelte. And now we’re excited to have Zach Leatherman move into engineering to work full-time on [Eleventy.]  🚀 This is just the start of a group that will be focused on contributing upstream and to help and support such projects.
 
@@ -104,6 +104,6 @@ It’s a little messy in the code, especially in making sure neither the externa
 
 [^2]:	See also [this discussion](https://stackoverflow.com/questions/17891226/difference-between-and-operators-in-go) on [Stack Overflow](https://stackoverflow.com/) and the “Scratch” section in [this article](https://www.stackbit.com/blog/advanced-hugo-templates/) on the [Stackbit blog](https://www.stackbit.com/blog/).
 
-[^3]:	I had no luck regardless of whether I used my bespoke Hugo shortcodes or the Eleventy shortcode, the latter of which uses a completely different API and a [smarter dev](https://twitter.com/KyleMitBTV)’s code.
+[^3]:	I had no luck regardless of whether I used my bespoke Hugo shortcodes or the Eleventy shortcode, the latter of which uses a completely different API and Kyle Mitofsky’s code.
 
 [^4]:	Things go a lot more simply with variable fonts that have separate regular and italic/oblique versions, as is true for my second favorite variable web font, [Public Sans](https://public-sans.digital.gov/).

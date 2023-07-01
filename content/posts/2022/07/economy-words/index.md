@@ -25,7 +25,7 @@ For these reasons and some others, I'm trimming back the summaries, and may even
 
 [^CTCAJW]: After all, "when it seems right" is the "frequency," if you want to call it such, which I think CTCAJW Mode indicates for the posts themselves, so it should work for any summaries, too.
 
-Finally, please keep in mind that the site's **feeds** are *always* standing by to keep interested readers apprised of each new post when it hits the web. Just point your feed reader app to my [site URL](/) and let it do the rest. As the inestimable [Sara Soueidan](https://twitter.com/SaraSoueidan) expressed it so well [today on Twitter](https://twitter.com/SaraSoueidan/status/1544373617865129992):
+Finally, please keep in mind that the site's **feeds** are *always* standing by to keep interested readers apprised of each new post when it hits the web. Just point your feed reader app to my [site URL](/) and let it do the rest. As the inestimable Sara Soueidan expressed it so well today on Twitter:
 
 > Will you get sick of me repeating just how much I love RSS? 🥹
 >

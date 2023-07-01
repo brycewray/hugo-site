@@ -8,7 +8,7 @@ date: 2022-07-15T12:24:00-05:00
 
 Just passing this along FYI . . .
 
-Using information from [David Papendrew](https://twitter.com/mentalpivot)'s article, "[Using DuckDuckGo for Site Search on Your Blog](https://mentalpivot.com/using-duckduckgo-for-site-search-on-your-blog/)," I recently added a [DuckDuckGo](https://duckduckgo.com) search form to the bottom of each page of the site. It worked perfectly well in local development, but not when I actually published the site to the web.
+Using information from David Papendrew's article, "[Using DuckDuckGo for Site Search on Your Blog](https://mentalpivot.com/using-duckduckgo-for-site-search-on-your-blog/)," I recently added a [DuckDuckGo](https://duckduckgo.com) search form to the bottom of each page of the site. It worked perfectly well in local development, but not when I actually published the site to the web.
 
 It didn't take long to figure that this had something to do with the [`form-action` directive](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/form-action) of my site's [Content Security Policy](https://content-security-policy.com) (CSP), so I added DDG's domain to the directive:
 

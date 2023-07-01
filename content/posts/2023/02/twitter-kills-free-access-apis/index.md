@@ -15,7 +15,7 @@ Well, boy, howdy: the [loan-burdened](https://www.theverge.com/2022/11/2/2343712
 
 <!--more-->
 
-A tweet thread issued overnight (U.S. time) from the [@TwitterDev account](https://twitter.com/TwitterDev) made the disclosure:
+A tweet thread issued overnight (U.S. time) from the Twitter Developers account made the disclosure:
 
 > Starting February 9, we will no longer support free access to the Twitter API, both v2 and v1.1. A paid basic tier will be available instead 🧵
 >

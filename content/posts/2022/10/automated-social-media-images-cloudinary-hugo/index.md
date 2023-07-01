@@ -19,12 +19,15 @@ And if you *do* use Hugo to manage your site and you either have, or are willing
 
 ## Going OG with the OG protocol
 
-First, [look at this tweet](https://twitter.com/CloudCannon/status/1569369622998130689) of a few weeks ago from the nice folks at [CloudCannon](https://cloudcannon.com).
+First, look at this tweet of a few months ago from the nice folks at [CloudCannon](https://cloudcannon.com) *(reproduced here as only a graphic, in case ongoing changes to the Twitter platform limit your ability to view the original tweet)*:
+
+{{< imgh src="Twitter_CloudCannon_1534248828559400960_1774x1838.png" alt="Screen capture of CloudCannon tweet from 2022-06-07, “Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do. Learn more about this feature.”" width=1774 height=1838 phn=true >}}
 
 By comparison, the original text of the tweet, before the background processes added that image and its surrounding *social media sharing card*, looked like this:
 
-> Let&apos;s dig into the tools we use to create static websites — Static Site Generators (#SSG)\
-> https://cloudcannon.com/blog/what-is-a-static-site-generator/
+> Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do.\
+> Learn more about this feature.\
+> https://cloudcannon.com/tutorials/hugo-and-remote-data-files/
 
 . . . so how did the link get turned into that card with its nice image?
 

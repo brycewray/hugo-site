@@ -49,7 +49,7 @@ Earlier in the summer, I experimented with switching this site to  [Gatsby](http
 
 That little episode had a couple of unexpected results.
 
-First, I got a big spike in readership for that first post about it, courtesy of a retweet from the [Hugo account](https://twitter.com/gohugoio). I remain tremendously grateful for both of those --- although what I'm explaining herein likely will obviate the goodwill I received as a result, and I totally understand that.
+First, I got a big spike in readership for that first post about it, courtesy of a retweet from the Hugo account. I remain tremendously grateful for both of those --- although what I'm explaining herein likely will obviate the goodwill I received as a result, and I totally understand that.
 
 Second, not long after I dragged my bleeding carcass away from attempting to use Gatsby without sufficient familiarity with its [React](https://reactjs.org) framework, my initial sense of relief gave way to a distinct and annoying whisper in my ear:
 
@@ -211,8 +211,7 @@ While we're on the subject of speed: while I was working on this post, I saw thi
 > ① a raw 8.5MB HTML file with the full text of every single one of my 27,506 tweets
 > ② a client rendered React site with exactly one tweet on it
 >
-> (Spoiler: [@____lighthouse](https://twitter.com/____lighthouse)
- reports 8.5MB of HTML wins by about 200ms)\
+> (Spoiler: @____lighthouse reports 8.5MB of HTML wins by about 200ms)\
 > <span class="pokey">3:38 PM • September 6, 2019 (UTC)</span>
 <!-- https://twitter.com/zachleat/status/1169998370041208832-->
 

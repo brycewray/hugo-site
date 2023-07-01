@@ -167,7 +167,7 @@ But, by the end of the "long weekend" starting with the Fourth of July holiday, 
 
 In addition, the [*gatsby-remark-smartypants* plugin](https://www.gatsbyjs.org/packages/gatsby-remark-smartypants/) produced the typographical effects to which I'd become accustomed here on the Hugo site such as "smart" quotes and em- and en-dashes from `---` and `--` respectively. Wouldn't have considered doing it any other way.
 
-Finally, my not-often-used-but-still-wanted [Talkyard](https://www.talkyard.io)-powered comments area on each post worked, because the [developer](https://twitter.com/kajmagnus3) wisely provided a [Gatsby way](https://gatsby-demo.talkyard.io/demo-and-installation/) of doing it just as he had a [Hugo way](https://hugo-demo.talkyard.io/posts/demo-and-instructions/) (not to mention a [Jekyll way](https://jekyll-demo.talkyard.io/2018/01/09/installation-instructions.html) and a [Hexo way](https://hexo-demo.talkyard.io/2018/01/04/demo-and-instructions/)). So that, too, was good to go.
+Finally, my not-often-used-but-still-wanted [Talkyard](https://www.talkyard.io)-powered comments area on each post worked, because the developer wisely provided a [Gatsby way](https://gatsby-demo.talkyard.io/demo-and-installation/) of doing it just as he had a [Hugo way](https://hugo-demo.talkyard.io/posts/demo-and-instructions/) (not to mention a [Jekyll way](https://jekyll-demo.talkyard.io/2018/01/09/installation-instructions.html) and a [Hexo way](https://hexo-demo.talkyard.io/2018/01/04/demo-and-instructions/)). So that, too, was good to go.
 
 Still, although I was pleased by the look-and-feel progress I'd made, I continued to find it difficult to make certain things work even when, and pardon me if this is sounding like the proverbial stuck record, I followed instructions to the Nth degree. I spent a good two nights just trying to get the posts list page to have the same setup as the [Hugo version](/posts/) had at that time (two recent posts and their images at the top, followed by a text-only list of the others, as opposed to the paginated version I've since adopted). And even when it would work, it quite often would unaccountably throw Gatsby into a tailspin.
 
@@ -260,7 +260,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 > Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest\
 > <span class="pokey">6:05 PM • July 13, 2019 (UTC)</span>
 
-[^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
+[^BEP]: I confess to being extremely pleased that, later that afternoon, none other than Bjørn Erik Pedersen, the lead developer of Hugo, "liked" that tweet.
 
 ## "Interesting," indeed
 

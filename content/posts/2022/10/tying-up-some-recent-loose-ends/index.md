@@ -30,7 +30,7 @@ The first of two posts about using the [giscus](https://giscus.app) commenting t
 
 In "[Get good Git info from Hugo](/posts/2022/06/get-good-git-info-hugo/)" <span class="nobrk">(2022-06-01)</span>, I described how to use Hugo's built-in handling of [Git commit](https://git-scm.com/docs/git-commit) data to automate the process of providing Git-related information in one's Hugo posts.
 
-**Update, 2022-10-07**: If you're interested in displaying **both** per-page Git info **and** whole-site Git info in your Hugo site, check the [solution](https://github.com/gohugoio/hugo/issues/9738#issuecomment-1086669372) suggested by Hugo expert/contributor [Joe Mooring](https://github.com/jmooring). Thanks to [Rodrigo Alcaraz de la Osa](https://twitter.com/fqmente) for the [Q&amp;A session](https://github.com/brycewray/comments/discussions/25) that led me toward this additional information!
+**Update, 2022-10-07**: If you're interested in displaying **both** per-page Git info **and** whole-site Git info in your Hugo site, check the [solution](https://github.com/gohugoio/hugo/issues/9738#issuecomment-1086669372) suggested by Hugo expert/contributor [Joe Mooring](https://github.com/jmooring). Thanks to Rodrigo Alcaraz de la Osa for the [Q&amp;A session](https://github.com/brycewray/comments/discussions/25) that led me toward this additional information!
 {.box}
 
 ## Scoped styling in Hugo

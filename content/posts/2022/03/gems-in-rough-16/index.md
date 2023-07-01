@@ -25,7 +25,7 @@ Leatherman announced these upcoming changes and demo’d the new dev server in h
 
 As of the initial publication of this post, I’m trying a commenting system called [giscus](https://giscus.app). It’s based on [Utterances](https://utteranc.es). Both rely on GitHub APIs. While Utterances uses the Search API for GitHub Issues, giscus uses the Search API for the newer, more feature-rich, and seemingly more polished [GitHub Discussions](https://docs.github.com/en/discussions).[^1] (Of course, these projects’ dependence on GitHub also means that, as of now, each use thereof requires a GitHub login. Indeed, I couldn’t even find the **word** *guest* anywhere within the GitHub Discussions documentation.)
 
-It was [Patrick Kollitsch](https://github.com/davidsneighbour) — often better known online as [davidsneighbour](https://twitter.com/davidsneighbour) — who advised me via email to give giscus a shot. As I replied to him:
+It was [Patrick Kollitsch](https://github.com/davidsneighbour) — often better known online as "davidsneighbour" — who advised me via email to give giscus a shot. As I replied to him:
 
 > Back in 2020, I did a [post about commenting options for static sites](/posts/2020/10/conversation-piece/) (and one of those mentioned was Utterances, which inspired giscus). I chose not too long after that to go to my current reply-via-email setup, because I read on another fellow’s site that he did it that way because[^2] he found such interactions with readers were more meaningful. Since, I’ve found this to be true on my site, too. That said: if you’ve read enough of my stuff, you know that I’m always attracted by Shiny New (or sorta New) Things, so I may just give giscus a look-see.
 

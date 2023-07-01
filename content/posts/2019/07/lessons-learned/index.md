@@ -37,7 +37,7 @@ oldComments: |
 
 {{% disclaimer %}}
 
-Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo/), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the [Hugo Twitter account](https://twitter.com/gohugoio) retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics] --- and quite a few retweets and friendly tweets from Hugo aficionados.
+Before I delve into today's clambake, I must extend my hearty thanks to the [Hugo](https://gohugo.io) community for its friendly reaction to my [last post](/posts/2019/07/why-staying-with-hugo/), which concerned my abortive and, ultimately, wrong-headed attempt to migrate this site from Hugo to [Gatsby](https://www.gatsbyjs.org). The day after I published the post, the Hugo Twitter account retweeted my announcement of the post, provoking a big spike in readership[^NetlifyAnalytics] --- and quite a few retweets and friendly tweets from Hugo aficionados.
 
 [^NetlifyAnalytics]: I'd just dumped both Google Analytics and a much lesser-known competitor for the brand-new [Netlify Analytics](https://netlify.com/products/analytics), and it was really cool to watch the data come in on this new, tracking code-free platform.
 
@@ -134,6 +134,8 @@ At some point, the SSG folks will have to decide whether they do indeed want to 
 
 So, yes, I learned a lot of things I hadn't expected to learn, or in some cases wanted to learn. But I thought they were worth bringing to your attention, so there you are. I hope you find them useful.
 
-I have no particular place for this one last note, so I'll just toss it in here at the end: you'll find either insight, or humor, or perhaps both in [this Twitter thread](https://twitter.com/stowball/status/1151314822400577536) about the drawbacks of the many JavaScript "framework"-based SSGs that are Kewl today.
+I have no particular place for this one last note, so I'll just toss it in here at the end: you'll find either insight, or humor, or perhaps both in [this Twitter thread](https://twitter.com/stowball/status/1151314822400577536)[^tweets] about the drawbacks of the many JavaScript "framework"-based SSGs that are Kewl today.
+
+[^tweets]: Depending on Twitter policies as of when you read this, you may need to be logged into an a Twitter account to use the link.
 
 Discuss.

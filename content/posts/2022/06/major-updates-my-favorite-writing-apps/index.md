@@ -13,7 +13,7 @@ June, 2022, has turned out to be a big month for the writing apps to which I mos
 
 ## iA Writer 6
 
-iA Writer 6 was released June 14 for macOS, iOS, and iPadOS.[^OSIA6] This version added *wikilinks* functionality, as [Lorenzo Gravina](https://twitter.com/loregrav)’s video demonstrates:
+iA Writer 6 was released June 14 for macOS, iOS, and iPadOS.[^OSIA6] This version added *wikilinks* functionality, as Lorenzo Gravina’s video demonstrates:
 
 [^OSIA6]: I assume other supported OSs will get similarly major updates down the line.
 

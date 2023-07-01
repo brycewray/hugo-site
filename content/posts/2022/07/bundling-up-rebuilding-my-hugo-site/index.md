@@ -20,7 +20,7 @@ Not long ago, I began using Hugo's [`Text` filter](https://gohugo.io/functions/i
 
 {{< imgh src="tweet-1549447287625207809-from-2022-07-19-1233CDT_1190x1494.png" alt="Screen capture of tweet ID 1549447287625207809" phn=true width=1190 height=1494 >}}
 
-The next day, I got a [response](https://twitter.com/gaetawoo/status/1549779097978642432) from [@gaetawoo](https://twitter.com/gaetawoo) --- not about my post, but about that social/OG image:
+The next day, I got a response from Twitter user @gaetawoo --- not about my post, but about that social/OG image:
 
 > Do you auto generate the twitter card graphic?\
 > <span class="pokey">3:31 PM • July 20, 2022 (UTC)</span>

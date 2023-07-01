@@ -77,8 +77,8 @@ Anyway: because Google updates Google Fonts typefaces frequently, I will have to
 
 While I was in this process, I realized there were two other needed actions to achieve full (or at least fuller) compliance with the GDPR and other privacy-protection laws, both now and in the future; so I:
 
-- Removed [YouTube](https://youtube.com) embeds from two pages in favor of simply linking to the videos themselves.
-- Changed all [Twitter](https://twitter.com) content from embedded tweets to text-only versions with links back to the original content.
+- Removed YouTube embeds from two pages in favor of simply linking to the videos themselves.
+- Changed all Twitter content from embedded tweets to text-only versions with links back to the original content.
 
 These were easy decisions, since there's little doubt about the fact that embedded YouTube videos and tweets "phone home" with visitors’ information.
 

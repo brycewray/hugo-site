@@ -17,7 +17,9 @@ Perhaps it was collateral damage from all the resulting chaos or perhaps it was 
 curl "https://cdn.syndication.twimg.com/tweet?id=463440424141459456"
 ```
 
-. . . would return JSON that one could use, as I've explained in several posts this year (about which, more below), to produce a fully static, tracking-free embed of a still-live [2014 tweet by the U.S. Department of the Interior](https://twitter.com/Interior/status/463440424141459456). But, as of this writing, you get an **HTML** failure response, including the text "Looks like this page doesn’t exist"; and trying any other live tweet produces the same result.
+. . . would return JSON that one could use, as I've explained in several posts this year (about which, more below), to produce a fully static, tracking-free embed of a still-live [2014 tweet by the U.S. Department of the Interior](https://twitter.com/Interior/status/463440424141459456)[^tweets]. But, as of this writing, you get an **HTML** failure response, including the text "Looks like this page doesn’t exist"; and trying any other live tweet produces the same result.
+
+[^tweets]: Depending on Twitter policies as of when you read this, you may need to be logged into an a Twitter account to use the link.
 
 Thus, for whatever reason, it appears this API is no longer live --- at least, not reliably so that I can continue to suggest its use for the purposes about which I've written. Maybe it'll come back to full functionality, and maybe it won't. Especially given the unsettled situation at Twitter, I no longer care.
 

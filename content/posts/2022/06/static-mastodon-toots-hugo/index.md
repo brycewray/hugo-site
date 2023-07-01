@@ -12,7 +12,7 @@ date: 2022-06-03T09:47:00-05:00
 **Update from the future**: For a [Tailwind CSS](https://tailwindcss.com)-styled version of the code herein, see [this follow-up post](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/).
 {.box}
 
-You may have heard, especially recently, about a social media platform called [Mastodon](https://joinmastodon.org).[^Guide] It's very much like [Twitter](https://twitter.com) in how it looks and how one uses it, but very much *unlike* Twitter where **centralization** is concerned. All of Twitter exists under the aegis of one large corporate entity, while Mastodon has [thousands](https://mastodon.help/instances) of separate, community-owned *instances*.
+You may have heard, especially recently, about a social media platform called [Mastodon](https://joinmastodon.org).[^Guide] It's very much like Twitter in how it looks and how one uses it, but very much *unlike* Twitter where **centralization** is concerned. All of Twitter exists under the aegis of one large corporate entity, while Mastodon has [thousands](https://mastodon.help/instances) of separate, community-owned *instances*.
 
 [^Guide]: In addition to the standard [Mastodon site](https://join.mastodon.org)'s [documentation](https://docs.joinmastodon.org/), you may also wish to review [Noëlle Anthony](https://chat.noelle.codes/@noelle)'s "[An Increasingly Less-Brief Guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon)."
 
@@ -42,7 +42,7 @@ Hence, today's post.
 
 ### But first . . .
 
-You'll note that this post concerns only code for [Hugo](https://gohugo.io), although my earlier posts about embedding static tweets covered [Astro](https://astro.build) and [Eleventy](https://11ty.dev), too. What I gave you for Eleventy was based on use of [Kyle Mitofsky](https://twitter.com/KyleMitBTV)'s [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) plugin, rather than my own code; and I'm unaware of there being a similar, Mastodon-related plugin for Eleventy. Besides, I simply don't have the skills to code appropriately for Eleventy, which depends on the user to assemble some of the "plumbing" for such data-gathering. As for Astro, I've been having trouble developing in it lately, so I had to give a wave-off to that attempt.
+You'll note that this post concerns only code for [Hugo](https://gohugo.io), although my earlier posts about embedding static tweets covered [Astro](https://astro.build) and [Eleventy](https://11ty.dev), too. What I gave you for Eleventy was based on use of Kyle Mitofsky's [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) plugin, rather than my own code; and I'm unaware of there being a similar, Mastodon-related plugin for Eleventy. Besides, I simply don't have the skills to code appropriately for Eleventy, which depends on the user to assemble some of the "plumbing" for such data-gathering. As for Astro, I've been having trouble developing in it lately, so I had to give a wave-off to that attempt.
 
 **Update, 2022-08-29**: To quote the old [*Monty Python and the Holy Grail* scene](https://www.imdb.com/title/tt0071853/quotes/qt0470582), "I got better," so you may want to check on my later efforts, "[Static Mastodon toots in Astro](/posts/2022/08/static-mastodon-toots-astro/)" and "[Static embeds in Eleventy](/posts/2022/08/static-embeds-eleventy/)."
 {.box}

@@ -50,7 +50,9 @@ Armed with these "must-haves," I spent several days checking out other vendors k
 
 Despite the obvious advantages of Google's wealth backing it and its popularity in the dev community (albeit mainly among database guys, it seems), Firebase --- whose free "Spark" tier [allows](https://firebase.google.com/pricing) far more use in a month than I'd ever accumulate --- fell short for two reasons.
 
-First, it lacks Brotli and, if you do a search for "firebase brotli," you'll find several comments from Firebase personnel indicating it's not in the current roadmap, although Google's Addy Osmani [hopes that'll change](https://twitter.com/addyosmani/status/1109949485965180928).
+First, it lacks Brotli and, if you do a search for "firebase brotli," you'll find several comments from Firebase personnel indicating it's not in the current roadmap, although Google's Addy Osmani [hopes that'll change](https://twitter.com/addyosmani/status/1109949485965180928).[^tweets]
+
+[^tweets]: Depending on Twitter policies as of when you read this, you may need to be logged into an a Twitter account to use the link.
 
 Second, CLI-based deployment is Firebase's *only* method. While that's fine from the desktop Mac (and, I admit, good and geeky fun at times), I sometimes want to [push a change from my iPhone or iPad](/posts/2019/07/roger-copy/) with [Working Copy](https://workingcopyapp.com/).
 
@@ -89,7 +91,7 @@ When compared to not only Netlify but also other vendors I tested by actually se
 
 [^fbBuild]: There's no way to compare this to how Firebase works, by the way, because you do its builds on a separate system --- whether that's your own computer or, say, GitHub or GitLab.
 
-[^hiRes]: Indeed, I took advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097). That said, the [move to Cloudinary](/posts/2020/07/transformed/) rendered that consideration moot, as the 2020-07-31 addendum to this post explains.
+[^hiRes]: Indeed, I took advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097) *(viewing may require logging into a Twitter account)*. That said, the [move to Cloudinary](/posts/2020/07/transformed/) rendered that consideration moot, as the 2020-07-31 addendum to this post explains.
 
 Finally, I simply preferred the Vercel DX, especially the developer UI, over that of either the increasingly cluttered Netlify or the getting-there-but-not-there-yet Render --- not to mention the you-better-have-time-to-read-a-lot-of-docs Firebase.
 

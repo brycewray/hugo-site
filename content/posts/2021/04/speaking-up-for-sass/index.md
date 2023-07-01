@@ -197,7 +197,9 @@ Here's my reasoning, and I grant you upfront that it's opinionated.
 
 Although I have previously acknowledged Tailwind's strengths and am all too aware how much it's been embraced by CSS-averse web devs, I remain skeptical about how well it scales as one's web project grows, much less as one's inventory of projects grows.
 
-Tailwind adherents say this isn't a problem because, once you recognize that you're re-using certain Tailwind classes too frequently, you then simply extract them to reusable components and then `@apply` them, [as the Tailwind documentation suggests](https://tailwindcss.com/docs/extracting-components).  I agree that this is a workable strategy, but my own experience suggests it can get out of hand quickly, even in a small project. YMMV, of course. By the way: please note what Tailwind creator Adam Wathan famously [tweeted](https://twitter.com/adamwathan/status/1226511611592085504) about `@apply` . . .
+Tailwind adherents say this isn't a problem because, once you recognize that you're re-using certain Tailwind classes too frequently, you then simply extract them to reusable components and then `@apply` them, [as the Tailwind documentation suggests](https://tailwindcss.com/docs/extracting-components).  I agree that this is a workable strategy, but my own experience suggests it can get out of hand quickly, even in a small project. YMMV, of course. By the way: please note what Tailwind creator Adam Wathan famously [tweeted](https://twitter.com/adamwathan/status/1226511611592085504)[^tweets] about `@apply` . . .
+
+[^tweets]: Depending on Twitter policies as of when you read this, you may need to be logged into an a Twitter account to use the link.
 
 > Confession: The \`apply\` feature in Tailwind basically only exists to trick people who are put off by long lists of classes into trying the framework.
 >

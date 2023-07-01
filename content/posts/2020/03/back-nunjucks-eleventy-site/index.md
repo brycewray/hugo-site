@@ -27,7 +27,7 @@ Most of the [Eleventy documentation](https://11ty.dev/docs) seems to assume the 
 
 One of the other templating choices is pure JavaScript itself, handled through .11ty.js files (presumably to avoid confusion with just plain .js files, such as those used for [configuration](https://11ty.dev/docs/config) purposes). In the beginning, I viewed that option with some curiosity but, since the Eleventy documentation doesn't give as many concrete examples for it as for Nunjucks and I couldn't find code from any other Eleventy users that followed that method, I let it be.
 
-Then, about a month ago, I saw word on the Eleventy [Twitter feed](https://twitter.com/Eleven_ty) of a fellow named [Reuben Lillie](https://reubenlillie.com), who had created his site almost entirely with .11ty.js templating. Even cooler: his [code](https://gitlab.com/reubenlillie/reubenlillie.com) is stupendously well-documented. If you're often disappointed by the documentation in other public repositories’ code, Mr. Lillie's will make you cry for joy.
+Then, about a month ago, I saw word on the Eleventy Twitter feed of a fellow named [Reuben Lillie](https://reubenlillie.com), who had created his site almost entirely with .11ty.js templating. Even cooler: his [code](https://gitlab.com/reubenlillie/reubenlillie.com) is stupendously well-documented. If you're often disappointed by the documentation in other public repositories’ code, Mr. Lillie's will make you cry for joy.
 
 I was intrigued, and --- with help from not only Mr. Lillie but also fellow Eleventy *aficionado* [Peter deHaan](https://about.me/peterdehaan) --- spent a few weeks working to change my templating from .njk files to .11ty.js files. I finally went live with this templating last Sunday.
 

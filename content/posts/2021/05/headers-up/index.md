@@ -96,7 +96,7 @@ This accomplished the following on my site during that test:
 - Set the caching to 2,678,400 seconds (thirty-one days) for any file with a name ending with one of the numerous extensions in the `filesRegex` constant.[^earlierExample] Those extensions cover any conceivable type of static file I could imagine wanting a browser to cache.
 - Adds a `Permissions-Control` header with the setting `interest-cohort=()`. As the [aforementioned blog post](https://paramdeo.com//blog/opting-your-website-out-of-googles-floc-network) explained, this tells Google your site won't participate in FLOC.
 
-[^earlierExample]: The `filesRegex` part is based on the help I [received last year](https://stackoverflow.com/questions/64254291/cache-control-headers-in-a-cloudflare-workers-site) from Cloudflare's [Kenton Varda](https://twitter.com/kentonvarda) with what then was my Cloudflare Workers site.
+[^earlierExample]: The `filesRegex` part is based on the help I [received last year](https://stackoverflow.com/questions/64254291/cache-control-headers-in-a-cloudflare-workers-site) from Cloudflare's Kenton Varda with what then was my Cloudflare Workers site.
 
 ## Results, yes, but&nbsp;.&nbsp;.&nbsp;.
 
