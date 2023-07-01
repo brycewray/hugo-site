@@ -35,7 +35,7 @@ Along the way, I saw that the launch of Astro 1.0, originally planned for early 
 
 As for why the Astro team made such a decision, especially so close to the desired date for "shipping" v.1.0, one recent comment on the Astro Discord by Astro co-creator Fred K. Schott may be especially telling. When a user wondered about problems with using components in Astro-flavored Markdown, Schott replied:
 
-> Yeah, you've kind of hit [on] the thing it's taken us a year to learn: it's really hard to build your own MD [plus] components system and syntax[.] 😅 We're experimenting now with MDX as a better solution for components in [Markdown;] instead of us having to develop our own system we could leverage MDX instead. We already have experimental support . . . but if all goes well this would become standard in time for v1.0 with us deprioritizing our own[.]
+> Yeah, you've kind of hit [on] the thing it's taken us a year to learn: it's really hard to build your own MD [plus] components system and syntax[.] 😅 We're experimenting now with MDX as a better solution for components in [Markdown] instead of us having to develop our own system we could leverage MDX instead. We already have experimental support . . . but if all goes well this would become standard in time for v1.0 with us deprioritizing our own[.]
 
 This is somewhat reminiscent of the Astro devs' decision late last year to transition Astro from their own [Snowpack](https://snowpack.dev) platform to Vite. It wasn't easy, but the performance win was significant.
 
