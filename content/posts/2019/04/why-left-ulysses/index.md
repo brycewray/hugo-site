@@ -75,7 +75,7 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-![Screen capture from Ulysses showing iCloud icon, indicating ongoing sync](iCloud_sync-save_icon_in_Ulysses_1268x530.png "When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device --- Houston, we have an iCloud sync problem.")
+![Screen capture from Ulysses showing iCloud icon, indicating ongoing sync](iCloud_sync-save_icon_in_Ulysses_1902x795.png "When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device --- Houston, we have an iCloud sync problem.")
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
 
