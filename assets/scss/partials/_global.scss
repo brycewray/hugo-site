@@ -244,23 +244,25 @@ audio, canvas, embed, iframe, img, object, svg, video {
 
 .container-narrower {
 	margin: 1rem auto 0 auto;
-	width: 80%;
+	--containerNarrowerWidth: 80%;
+	width: var(--containerNarrowerWidth);
+	max-width: var(--containerNarrowerWidth);
 	@media screen and (min-width: 1024px) {
-		width: 50%;
-		/* max-width: 65ch; */
+		--containerNarrowerWidth: 50vw;
+		--bigImgDivExpansionWidth: 20vw;
+		--bigImgDivWidth: calc(var(--containerNarrowerWidth) + var(--bigImgDivExpansionWidth));
+		.bigImgDiv {
+			width: var(--bigImgDivWidth);
+			left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
+		}
 	}
 	@media screen and (min-width: 1536px) {
-		width: 45%;
-		/* max-width: 65ch; */
+		--containerNarrowerWidth: 40vw;
 	}
 	@media screen and (min-width: 1920px) {
-		width: 40%;
-		/* max-width: 65ch; */
+		--containerNarrowerWidth: 65ch;
+		--bigImgDivExpansionWidth: 15ch;
 	}
-	/* & figure img, img { */
-	/*   width: 100%; */
-	/*   height: auto; */
-	/* } */
 }
 
 li p {
