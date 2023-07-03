@@ -8,6 +8,7 @@
 	width: 100%;
 	margin-top: 2.5rem;
 	background-color: var(--bkgd-nav);
+	background-image: linear-gradient(var(--bkgd-nav-bottom) 40%, var(--bkgd-nav-top));
 	padding: 0.5rem 0rem;
 	display: flex;
 	flex-direction: row;

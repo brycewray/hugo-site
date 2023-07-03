@@ -2,8 +2,9 @@
 	--navRightMargin: 6em; /* unless JS is off */
 }
 
-header, .nav, .nav-Menu {
+header {
 	background-color: var(--bkgd-nav);
+	background-image: linear-gradient(var(--bkgd-nav-top) 20%, var(--bkgd-nav-bottom));
 }
 
 header {
