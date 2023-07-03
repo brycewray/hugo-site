@@ -28,6 +28,8 @@
 	/* backgrounds and borders */
 	--bkgd: var(--white);
 	--bkgd-nav: var(--black);
+	--bkgd-nav-bottom: var(--black);
+	--bkgd-nav-top: var(--gray-500);
 	--bkgd-box: var(--slate-050);
 	--bkgd-code: var(--slate-050);
 	--bkgd-article-code: var(--slate-150);
@@ -59,6 +61,8 @@
 	/* backgrounds and borders */
 	--bkgd: var(--black);
 	--bkgd-nav: var(--blue-950);
+	--bkgd-nav-bottom: var(--blue-950);
+	--bkgd-nav-top: var(--blue-750);
 	--bkgd-box: var(--slate-900);
 	--bkgd-code: var(--slate-900);
 	--bkgd-article-code: var(--slate-750);
