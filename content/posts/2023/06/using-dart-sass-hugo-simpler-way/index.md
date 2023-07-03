@@ -85,8 +85,8 @@ HUGO_OS_ARCH='darwin-universal'
 DART_SASS_VERSION=1.63.6
 DART_SASS_ARCH='macos-x64'
 # ^^^ choices for DART_SASS_ARCH:
-# - 'linux-x64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
+# - 'linux-x64' (Linux/WSL on x86-64)
 # - 'macos-arm64' (macOS on Apple Silicon)
 # - 'macos-x64' (macOS on Intel)
 
