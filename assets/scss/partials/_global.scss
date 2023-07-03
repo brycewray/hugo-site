@@ -264,8 +264,8 @@ audio, canvas, embed, iframe, img, object, svg, video {
 		--containerNarrowerWidth: 40vw;
 	}
 	@media screen and (min-width: 1920px) {
-		--containerNarrowerWidth: 65ch;
-		--bigImgDivExpansionWidth: 15ch;
+		--containerNarrowerWidth: 45rem;
+		--bigImgDivExpansionWidth: 15rem;
 	}
 }
 
