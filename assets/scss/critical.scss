@@ -1,8 +1,9 @@
 @charset 'utf-8';
-@use 'partials/reset';
-@use 'partials/limited-colors';
-@use 'partials/variables';
-@use 'partials/utility';
-@use 'partials/global';
-@use 'partials/header';
-@use 'partials/footer';
+@use 'partials/001-reset' as reset;
+@use 'partials/005-limited-colors' as clr;
+@use 'partials/010-variables' as var;
+@use 'partials/030-utility' as util;
+@use 'partials/050-global' as glob;
+@use 'partials/070-header' as head;
+@use 'partials/090-footer' as foot;
+/* https://github.com/sass/dart-sass/issues/1099 */
