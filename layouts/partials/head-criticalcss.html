@@ -6,8 +6,12 @@
 			{{ .Content | safeCSS }}
 		</style>
 	{{- end }}
-	{{- $css := (resources.Match "css/0*.css") | resources.Concat "css/critical.css" | minify | fingerprint }}
+	{{/* {{- $css := (resources.Match "css/0*.css") | resources.Concat "css/critical.css" | minify | fingerprint }} */}}
+	{{- $css := (resources.Match "css/0*.css") | resources.Concat "css/critical.css" }}
 	{{- with $css }}
-		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+		<style media="screen">
+			{{ .Content | safeCSS }}
+		</style>
+		{{/* <link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}> */}}
 	{{- end }}
