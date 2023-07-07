@@ -157,6 +157,9 @@ Once this occurs, the script deletes the downloaded archive, so as not to leave 
 
 5. At the end, the script runs `hugo env` again --- displaying the results this time --- to confirm that you now have not only a running Hugo binary but also your requested versions of both Hugo and Dart Sass.
 
+**Note for macOS users**: If you migrate your project and `PATH`-known folder (such as my `bin` folder) to a different system architecture --- *e.g.*, from an Intel Mac to an Apple Silicon Mac --- you'll need to delete the installed Dart Sass binary and run the script again. This is because `hugo env` shows the architecture and OS for only an installed Hugo binary rather than for both the Hugo and Dart Sass binaries, so the script can't detect whether a migrated Dart Sass binary is the right one for the new architecture.
+{.box}
+
 ## Install whenever you develop?
 
 If so inclined, you could daisy-chain this script with your Hugo dev command of choice. Indeed, if your dev command is a bit involved (as if mine), you might put *it* in its own shell script --- *e.g.*, `start.sh` --- and then run the two scripts in tandem:
