@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.115.1 # will get Extended Version below
+  HUGO_VERSION: 0.115.2 # will get Extended Version below
   DART_SASS_VERSION: 1.63.6 # (depends on STYLING env var)
   NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
