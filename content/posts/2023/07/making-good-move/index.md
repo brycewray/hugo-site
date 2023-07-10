@@ -33,7 +33,7 @@ Still, it lent a seeming finality to what I've been seeing over the last couple 
 
 ## Hot under the collar
 
-Besides: in the last year or two in particular, I've increasingly experienced exactly the problem that Apple cited as at least partial justification for the architecture switch: the inability of Intel Macs to handle big processing loads without encountering *[thermal throttling](https://www.makeuseof.com/what-is-cpu-thermal-throttling/)*. As third-party software gradually asks more of the chips on which they run, the Intel CPU in my Mac hasn't been able to keep up.
+Besides: in the last year or two in particular, I've increasingly experienced exactly the problem that Apple cited as at least partial justification for the architecture switch: the inability of Intel Macs to handle big processing loads without encountering *[thermal throttling](https://www.makeuseof.com/what-is-cpu-thermal-throttling/)*. As third-party apps gradually ask more of the chips on which they run, the Intel CPU in my Mac hasn't been able to keep up.
 
 This has affected my ability to do cross-platform web development. That's because running even a minimal instance of Windows and (*e.g.*) Chrome in a virtual machine within [Parallels Desktop](https://www.parallels.com/products/desktop/) would jack up the Intel CPU's temperatures[^Fahrenheit] to around 200°, causing the thermal throttling and, not incidentally, making the Mac's fans run at full blast for a while. In recent months, even starting up Apple's *own* Safari browser to check my cross-platform results[^iOS] would cause a huge, initial jump in the Intel CPU's temperature, and it didn't fully settle down after the app's initial load.
 
