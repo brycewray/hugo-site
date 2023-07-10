@@ -100,7 +100,7 @@ Where moving data was concerned, I was happy to count on [Apple's Migration Assi
 
 Finally, as for [Hugo](https://gohugo.io) and [Dart Sass](https://github.com/sass/dart-sass) for this here website, I simply used [my own `install.sh` shell script](/posts/2023/06/using-dart-sass-hugo-simpler-way/) --- with the `DARTSASS_OS_ARCH` parameter changed to account for the script's new presence on an Apple Silicon device --- to install both binaries in under five seconds.
 
-All the work paid off: barely five hours after returning home from the Apple Store with the new Mac, it had pretty much the same, familiar computing environment I'd known on the old Mac.
+All the work paid off: barely five hours after I'd gotten home from the Apple Store with the new Mac, it had pretty much the same, familiar computing environment I'd known on the old Mac.
 
 ## The results
 
