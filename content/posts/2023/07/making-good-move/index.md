@@ -68,7 +68,7 @@ And before you ask: yes, I **had** done that with the 2017 setup I was replacing
 
 ### Backups
 
-I also upped my game regarding my two local [backup](/posts/2019/03/back-up-jack/) drives. That was in terms of not only storage capacity --- from 4 TB to 8 TB per drive, since they'd now be backing up an internal SSD with twice the capacity of the old Mac's --- but also write speed. Their predecessors had decent read speeds but were incredibly slow at writes, which obviously had a detrimental effect on how long backup operations took.
+I also upped my game regarding my two local [backup](/posts/2019/02/back-up-jack/) drives. That was in terms of not only storage capacity --- from 4 TB to 8 TB per drive, since they'd now be backing up an internal SSD with twice the capacity of the old Mac's --- but also write speed. Their predecessors had decent read speeds but were incredibly slow at writes, which obviously had a detrimental effect on how long backup operations took.
 
 One thing that made it a lot easier regarding those local backups, done with Apple's [Time Machine](https://support.apple.com/en-us/HT201250) and Bombich Software's [Carbon Copy Cloner](https://bombich.com/), was what turned out to be the answer regarding how to transition the old local backups to the new Mac. I'd reached out to Bombich Tech Support for advice on what I should do[^techdocs], also mentioning a [suggestion I'd read](https://discussions.apple.com/thread/253674779) about how to move one's TM backups. The reply made it clear that there would be no point in attempting such a transition with either TM or CCC:
 
