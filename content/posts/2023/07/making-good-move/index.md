@@ -62,7 +62,17 @@ Once I'd made that choice, the next step was to decide how to proceed. You know 
 
 ### Hardware
 
-As always when possible while buying new ’puter stuff, I over-spec'd. That means picking hardware and internal storage that's considerably heftier than what I really need, so the resulting setup will be as obsolescence-proof as possible.
+As always when possible while buying new ’puter stuff, I over-spec'd. That means picking hardware and internal storage that's considerably heftier than what I really need, so the resulting setup will be as obsolescence-proof as possible.[^overSpec]
+
+[^overSpec]: After I posted this, I got multiple requests for details on exactly what I *did* get, so here you go . . .\
+\
+The Mac is a [mid-2023 Mac Studio](https://support.apple.com/kb/SP894) with M2 Max (12‑core CPU, 38‑core GPU, 16‑core Neural Engine), 64 GB unified RAM, and a 2 TB SSD.\
+\
+As for input devices . . .\
+\
+For clicking/pointing, I went with a [Logitech MX Master 3S for Mac](https://www.logitech.com/en-us/products/mice/mx-master-3s-mac-bluetooth-mouse.910-006570.html) mouse --- replacing the old Mac's Apple trackpad, which wasn't as good for my wrist and hand as I'd originally hoped.\
+\
+For basic typing, I learned to my surprise that there was a keyboard, the [Matias Tactile Pro](https://matias.ca/tactilepro4/), which was an amazing reproduction of the fabled [Apple Extended Keyboard](https://deskthority.net/wiki/Apple_Extended_Keyboard), a wonderful "clacky" mechanical ’board that I'd happily used at work throughout much of the 1990s. It turned out that the Tactile Pro even was available in a store not far from me, so I got to try out the real article, loved it from the start, and enjoyed a good forty-eight hours of using it with, first, the old Mac and then the new Mac after the latter's arrival. Unfortunately, the Tactile Pro developed a sticking space bar on Day Two, whereupon I read of other owners' similar issues with the Tactile Pro, so I ended up swapping it out for [the newer version](https://www.apple.com/shop/product/MMMR3LL/A/magic-keyboard-with-touch-id-and-numeric-keypad-for-mac-models-with-apple-silicon-us-english-black-keys) of the Apple keyboard which I'd bought with the old Mac. (That last link takes you to the slightly more expensive, black-keys version with black keys; but I stuck with the white-keys layout of the older keyboard, saving $20 in the progress. It also looks nicer next to the light gray Logitech mouse, as well as the silver Mac Studio.)
 
 And before you ask: yes, I **had** done that with the 2017 setup I was replacing, too; *but* I hadn't counted on 2020's announcement of The Architecture Change Decision. Given the success Apple has had with Apple Silicon since then, I should be pretty safe in assuming that I won't have to deal with yet another such end run quite so soon.
 
@@ -118,8 +128,8 @@ The whole system runs much faster while using considerably less power. It backs 
 | **Three or more browsers running simultaneously** | 130°--160° | 100°--110° |
 | **"Heavy" web dev task**[^webdevTask] | 145°--170°+ | 105°--115° |
 | **YouTube in one browser window** | 130°--160° | 100°--105° |
-| **YouTubeTV in one browser window** | 135°--150° | 100°--105° |
-| **YouTubeTV in two browser windows** | 145°--180° | 100°--105° |
+| **YouTube TV in one browser window** | 135°--150° | 100°--105° |
+| **YouTube TV in two browser windows** | 145°--180° | 100°--105° |
 | **Windows**[^winVer] **and a browser in Parallels Desktop** | 165°--190°+ | 105°--110° |
 | **Windows and an [AAA game](https://www.g2a.com/news/features/best-aaa-games/)**[^gamesW11] **in Parallels Desktop** | n/a | 120°--135° |
 {.ulysses}
