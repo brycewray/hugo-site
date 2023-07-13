@@ -1,11 +1,5 @@
-# Styling = 'VCSS' # choices for Styling are 'SCSS' and 'VCSS' (vanilla CSS, albeit nested via PostCSS)
-# -- REMINDER:
-# -- for 'SCSS' you **must**:
-# --        (a.) load Embedded Dart Sass in a GHA
-# -- **or** (b.) use Node Sass and appropriate `package.json` scripting
-# -- **or** (c.) in the CFP v2 build image, set `EMBEDDED_DART_SASS_VERSION`
 Nonces = true # Boolean --- 'true' triggers appropriate nonces for Workers/Edge Functions to handle for CSP
-SiteLive = 'live' # Boolean --- used for adapting robots.txt as needed
+SiteLive = true # Boolean --- used for adapting robots.txt as needed
 EmailObfuscation = 'local' # choices are 'local' ahd 'host'
 Host = 'CFP' # choices are 'CFP' and 'Vercel'
 DeepClone = true # Boolean --- Gitinfo from a GHA (or CFP `git fetch --unshallow`)
