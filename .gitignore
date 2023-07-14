@@ -43,6 +43,7 @@ logstart.sh
 build*.sh
 testbuild*.sh
 push*.sh
+myip.txt
 wm*.sh
 git*.sh
 gitoutput.txt
