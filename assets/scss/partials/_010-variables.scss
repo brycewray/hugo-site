@@ -13,6 +13,9 @@
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	/* --emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 	/* --font-thin: 100; */
+	/*
+	Remember: Apple's San Francisco is not variable, so it won't show "half-weights" (e.g., 350) as desired. Instead, it has nine distinct weights.
+	*/
 	--font-extralight: 200;
 	--font-light: 300;
 	--font-semilight: 350;
