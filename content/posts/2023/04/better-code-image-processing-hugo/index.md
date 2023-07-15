@@ -9,6 +9,8 @@ imgs:
 - my-pet-cat_3264x2448.jpg
 ---
 
+{{% disclaimer %}}
+
 With a big enough hammer, you definitely can cram a square peg into a round hole. At least, you can **if** you don't care too much about the resulting damage to the peg and the hole --- maybe even the hammer --- but that doesn't make it a good idea.
 
 Some pegs, holes, and hammers were harmed during my contortions within the [Hugo](https://gohugo.io) static site generator (SSG) to create CSS that (a.) *would* provide good backgrounds for my site's responsive images but (b.) would *not* violate the site's [Content Security Policy](https://content-security-policy.com) (CSP). I wasn't happy about the collateral damage, but thought I had no choice.
