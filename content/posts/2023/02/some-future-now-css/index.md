@@ -21,7 +21,7 @@ A few days ago, a [post](https://webkit.org/blog/13813/try-css-nesting-today-in-
 
 (By the way: at this writing, the folks at Firefox would seem, based on this [bug report](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037), to be nowhere near ready to add CSS nesting; indeed, the feature doesn't even appear on Mozilla's [Specification Positions page](https://mozilla.github.io/standards-positions/).)
 
-**Update, 2023-06-18**: Based on subsequent progress described in that [bug report](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037), it now appears Firefox **will** soon add native CSS nesting. This capability will be available behind a flag in **Firefox 115**, to be released <span class="nobrk">2023-07-04</span>; and it'll be turned on by default in **Firefox 116**, to be released <span class="nobrk">2023-08-01</span> (release dates from the [Firefox Release Calendar](https://wiki.mozilla.org/index.php?title=Release_Management/Calendar&redirect=no)).
+**Update, 2023-07-15**: It now [appears](https://caniuse.com/css-nesting) Firefox **will** soon add native CSS nesting. This capability will be available behind a flag in **Firefox 115** and **Firefox 116**, and available by default in **Firefox 117**, [to be released <span class="nobrk">2023-08-29</span>](https://wiki.mozilla.org/index.php?title=Release_Management/Calendar&redirect=no).
 {.box}
 
 To provide some perspective, here's a brief example of how nesting in Sass makes things easier. Instead of this in vanilla CSS:

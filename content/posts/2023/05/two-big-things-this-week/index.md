@@ -32,5 +32,5 @@ With today's [release of macOS 13.4](https://www.macrumors.com/2023/05/18/apple-
 
 So, now, it's up to Mozilla to bring native CSS nesting compatibility to the Gecko engine which enables Firefox; [this](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037) is the bug report to watch, as Mozilla engineers try to catch up with their competitors.
 
-**Update, 2023-06-18**: Based on subsequent progress described in that [bug report](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037), it now appears Firefox **will** soon add native CSS nesting. This capability will be available behind a flag in **Firefox 115**, to be released <span class="nobrk">2023-07-04</span>; and it'll be turned on by default in **Firefox 116**, to be released <span class="nobrk">2023-08-01</span> (release dates from the [Firefox Release Calendar](https://wiki.mozilla.org/index.php?title=Release_Management/Calendar&redirect=no)).
+**Update, 2023-07-15**: It now [appears](https://caniuse.com/css-nesting) Firefox **will** soon add native CSS nesting. This capability will be available behind a flag in **Firefox 115** and **Firefox 116**, and available by default in **Firefox 117**, [to be released <span class="nobrk">2023-08-29</span>](https://wiki.mozilla.org/index.php?title=Release_Management/Calendar&redirect=no).
 {.box}
