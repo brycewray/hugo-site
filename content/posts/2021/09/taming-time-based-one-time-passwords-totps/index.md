@@ -65,7 +65,7 @@ Incidentally, here’s a little more about Microsoft Authenticator in particular
 
 I’ll offer one final caution regarding Microsoft Authenticator. This comes into play if you do have to use it *and* for some reason end up deleting it and restoring from your previous backup. If so, you must do that at **one specific spot** in the app reinstallation process or else you’ll have to re-enter all your TOTPs:
 
-{{< imgc src="MS_Authenticator_recovery_prompt_annotated_1125x2436.png" alt="Annotated screen capture from Microsoft Authenticator application setup process" phn=true width=1125 height=2436 >}}
+{{< imgc src="MS_Authenticator_recovery_prompt_annotated_1125x2436.png" alt="Annotated screen capture from Microsoft Authenticator application setup process" phn=true >}}
 
 This is the only screen in the Microsoft Authenticator setup process where you have a chance to recover previously backed-up TOTPs (annotation added, of course).
 {.imgcCaption}
@@ -85,14 +85,14 @@ Aegis Authenticator (TOTPs simulated and some self-identifying text hidden).
 
 For iOS devices, I can strongly recommend [Raivo OTP](https://github.com/raivo-otp/ios-application). Its main app is on iOS, while its recently added macOS app is a “receiver” which lets you copy a TOTP from your phone straight to the Mac clipboard.[^4] It backs up to iCloud and thus makes your TOTPs available on all your iOS devices. Both apps are free, but the dev obviously appreciates — and, in my opinion, deserves — donations to help keep his work going.
 
-{{< imgc src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" phn=true width=1125 height=2436 >}}
+{{< imgc src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" phn=true >}}
 
 Raivo OTP, iOS version (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
 
 If Raivo OTP doesn’t float your boat for some reason, you can also try [OTP Auth](https://cooperrs.de/otpauth.html). It comes in both iOS and macOS/Catalyst flavors. As with Raivo OTP, it provides backups on iCloud. I prefer Raivo OTP’s UI over that of OTP Auth, but otherwise find each to be equally capable. The iOS app is freemium[^5] while the macOS app must be purchased for, at this writing, $5.99. If you don’t want or need the macOS app, you certainly can use only the iOS app and just manually enter into your Mac the TOTPs the app shows you.
 
-{{< imgc src="OTP_Auth_screenshot_edited_1125x2436.png" alt="Edited screen capture of OTP Auth application" phn=true width=1125 height=2436 >}}
+{{< imgc src="OTP_Auth_screenshot_edited_1125x2436.png" alt="Edited screen capture of OTP Auth application" phn=true >}}
 
 OTP Auth, iOS version (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
@@ -101,7 +101,7 @@ Please note that, although Raivo OTP has its code publicly viewable on GitHub, i
 
 [^TofuBackup]: See the "FAQ" section on the [Tofu Authenticator website](https://www.tofuauth.com/).
 
-{{< imgc src="Tofu_Authenticator_screen_cap_edited_1125x2436.png" alt="Edited screen capture of Tofu Authenticator application" phn=true width=1125 height=2436 >}}
+{{< imgc src="Tofu_Authenticator_screen_cap_edited_1125x2436.png" alt="Edited screen capture of Tofu Authenticator application" phn=true >}}
 
 Tofu Authenticator (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}

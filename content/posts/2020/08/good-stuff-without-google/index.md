@@ -69,18 +69,18 @@ Well, get your hoops-jumping outfit on, because I'm about to tell you how to do 
 For each variable font you want from Google Fonts:
 
 1. Pick all the widths and styles you want and see what appears under **Review** on the right side of the Google Fonts interface. For example, when I was using Public Sans for this site, I picked regular, italic, bold regular, and bold italic (*400* is the default regular weight and *700* is usually the default weight for boldfacing):
-{{< imgc src="Public_Sans_selected_family_1024x1248.png" alt="Screen capture from Google Fonts showing typeface selections" phn=true width=1024 height=1248 >}}
+{{< imgc src="Public_Sans_selected_family_1024x1248.png" alt="Screen capture from Google Fonts showing typeface selections" phn=true >}}
 
 2. Then check the result in the **Embed** view. This gives you the code you'd use *if* you were going to serve the fonts off Google Fonts which, again, you *shouldn't* do:
-{{< imgc src="Public_Sans_Embed_1060x1798.png" alt="Screen capture from Google Fonts showing code for embedding" phn=true width=1060 height=1798 >}}
+{{< imgc src="Public_Sans_Embed_1060x1798.png" alt="Screen capture from Google Fonts showing code for embedding" phn=true >}}
 
-3. Instead, copy the URL from the code, like this:
-{{< imgc src="Public_Sans_URL_to_copy_1066x630.png" alt="Screen capture from Google Fonts showing the URL to select" phn=true width=1066 height=630 >}}
+1. Instead, copy the URL from the code, like this:
+{{< imgc src="Public_Sans_URL_to_copy_1066x630.png" alt="Screen capture from Google Fonts showing the URL to select" phn=true >}}
 
-4. Paste the copied URL into a browser window/tab.
+1. Paste the copied URL into a browser window/tab.
 ![Screen capture from browser showing URL pasted into URL bar"](Public_Sans_URL_pasted_into_browser_1588x74.png)
 
-5. Go to that URL.\
+1. Go to that URL.\
 	The resulting page will give you CSS that looks something like the following (the actual content will depend on what is current on Google Fonts at the time):
 {{< highlight css "linenos=false" >}}
 /* latin-ext */
