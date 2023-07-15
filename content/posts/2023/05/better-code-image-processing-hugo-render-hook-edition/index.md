@@ -9,6 +9,8 @@ imgs:
 - my-pet-cat_3264x2448.jpg
 ---
 
+{{% disclaimer %}}
+
 It's understandable that a reader of my various posts about image processing in [Hugo](https://gohugo.io), including the [most recent](/posts/2023/04/better-code-image-processing-hugo), might get the idea that the only way to bring processed images into a Hugo content file is to use a [shortcode](https://gohugo.io/templates/shortcode-templates/). Fortunately, that definitely is *not* the case, thanks to Hugo's *[Markdown render hooks](https://gohugo.io/templates/render-hooks/)*.
 
 <!--more-->
@@ -161,5 +163,5 @@ This photo appears in multiple images-related posts here on [this website](/).
 - John Gruber, "[Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)" (date unknown).
 - Joe Mooring, "[Link and image render hooks](https://www.veriphor.com/articles/link-and-image-render-hooks/)" (<span class="nobrk">2022-12-26</span>).
 
-**Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images. (The exceptions are in a few posts, like this one, which cover Hugo-only image processing.)
+**Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images.
 {.box}
