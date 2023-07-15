@@ -18,7 +18,7 @@ This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com) and is c
 
 ## Cloudinary
 
-[Cloudinary](https://cloudinary.com) hosts and serves certain images on this site. A [Cloudinary Support article](https://support.cloudinary.com/hc/en-us/articles/360020207811-Does-Cloudinary-Store-Any-Cookies-) says that your viewing of any such images involves no storage or use of your personal data.
+[Cloudinary](https://cloudinary.com) hosts and serves most images on this site. A [Cloudinary Support article](https://support.cloudinary.com/hc/en-us/articles/360020207811-Does-Cloudinary-Store-Any-Cookies-) says that your viewing of any such images involves no storage or use of your personal data.
 
 ## Fathom Analytics
 
