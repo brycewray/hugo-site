@@ -1,31 +1,47 @@
 {{/*
 	Detect imgs and generate CSS classes for them.
-	Requires using page bundles.
+	If $imgProc = "Hugo", requires using page bundles.
 	Based on comments in:
 	https://github.com/danielfdickinson/image-handling-mod-hugo-dfd/pull/72
 */}}
 
-{{- with .Resources.ByType "image" }}
+{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{- $xFmPart2 := ",x_0,z_1/" -}}
+{{- $imgToGet := "" -}}
+{{- $imgRsc := "" -}}
+{{- $width := "" -}}
+{{- $height := "" -}}
+
+{{- with .Params.imgs }}
 	<style media="screen">
-		{{- range . -}}
-			{{- $src := . -}}
-			{{- $imgBd5 := md5 .Name -}}
-			{{- $BkgdStyleEnd := print "; background-size: cover; aspect-ratio: " $src.Width " / " $src.Height ";" -}}
-			{{- $GIP_colors := $src.Colors -}}
-			{{- if (lt ($GIP_colors | len) 2) -}}
-				{{- $GIP_colors = $GIP_colors | append "#000000" -}}
-			{{- end -}}
-			{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
-			{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
-			{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
-			{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-			{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
-			.imgB-{{ $imgBd5 }}-LQIP {
-				{{ $BkgdStyleLQIP | safeCSS }}
-			}
-			.imgB-{{ $imgBd5 }}-GIP {
-				{{ $BkgdStyleGIP | safeCSS }}
-			}
+	{{- range . -}}
+		{{- $src := . -}}
+		{{- $imgToGet = print $cloudiBase $src -}}
+		{{- with $imgToGet -}}
+			{{- with resources.GetRemote . -}}
+				{{- $imgRsc = . -}}
+				{{- $width = .Width -}}
+				{{- $height = .Height -}}
+				{{- $GIP_colors := .Colors -}}
+				{{- $imgBd5 := md5 $src -}}
+				{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $width " / " $height ";" -}}
+				{{- if (lt ($GIP_colors | len) 2) -}}
+					{{- $GIP_colors = $GIP_colors | append "#000000" -}}
+				{{- end -}}
+				{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
+				{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
+				{{- $LQIP_img := $imgRsc.Resize "20x jpg q20" -}}
+				{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
+				{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
+				.imgB-{{ $imgBd5 }}-LQIP {
+					{{ $BkgdStyleLQIP | safeCSS }}
+				}
+				.imgB-{{ $imgBd5 }}-GIP {
+					{{ $BkgdStyleGIP | safeCSS }}
+				}
+			{{- end }}
 		{{- end }}
+	{{- end }}
 	</style>
-{{ end }}
+{{- end }}
