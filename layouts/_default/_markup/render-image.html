@@ -27,7 +27,7 @@
 {{- $width := "" -}}
 {{- $height := "" -}}
 
-{{- $src := .Page.Resources.GetMatch (.Destination) -}}
+{{- $src := .Destination -}}
 {{- $imgBd5 := md5 $src -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
