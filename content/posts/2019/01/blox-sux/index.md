@@ -3,6 +3,8 @@ title: "Blox sux"
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
+imgs:
+- screen-cap-from-Pippin-Williamson-s-page-builders-review_986x482.png
 ---
 
 There's an old saying to the effect that "a poor craftsman blames his tools."

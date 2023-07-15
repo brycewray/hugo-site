@@ -3,6 +3,10 @@ title: "Readable web text, pretty please"
 description: "Part 1 of a two-part series on web typography."
 author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
+imgs:
+- Typography-scr-cap-2-2018-10-16_1344x200.png
+- Typography-scr-cap-3-2018-10-16_1398x252.png
+- Typography-scr-cap-4-2018-10-16_1398x164.png
 ---
 
 {{% disclaimer %}}

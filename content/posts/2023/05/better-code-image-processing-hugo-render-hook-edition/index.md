@@ -5,6 +5,8 @@ author: Bryce Wray
 date: 2023-05-04T12:07:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
+imgs:
+- my-pet-cat_3264x2448.jpg
 ---
 
 It's understandable that a reader of my various posts about image processing in [Hugo](https://gohugo.io), including the [most recent](/posts/2023/04/better-code-image-processing-hugo), might get the idea that the only way to bring processed images into a Hugo content file is to use a [shortcode](https://gohugo.io/templates/shortcode-templates/). Fortunately, that definitely is *not* the case, thanks to Hugo's *[Markdown render hooks](https://gohugo.io/templates/render-hooks/)*.

@@ -4,6 +4,10 @@ description: "iA Writer 6 and Ulysses 27 arrive, bearing features their adh
 author: Bryce Wray
 date: 2022-06-21T08:14:00-05:00
 #initTextEditor: Ulysses
+imgs:
+- Ulysses-27-tables-01_1718x436.png
+- Ulysses-27-tables-02_1716x334.png
+- Ulysses-27-tables-03_1708x310.png
 ---
 
 **Important note, 2022-06-22**: I made some errors herein that I have now fixed, as noted in a [subsequent post](/posts/2022/06/ulysses-27-correction/).

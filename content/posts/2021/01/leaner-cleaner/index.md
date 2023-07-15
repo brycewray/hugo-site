@@ -3,6 +3,8 @@ title: "Leaner and cleaner"
 description: "After I remind myself of this site’s original, spartan appearance, changes result."
 author: Bryce Wray
 date: 2021-01-31T10:10:00-06:00
+imgs:
+- orig-site_screen-cap_1518x1356.png
 ---
 
 {{% disclaimer %}}

@@ -3,6 +3,9 @@ title: "Gems in the rough #2"
 description: "More geeky hints for SSG fans."
 author: Bryce Wray
 date: 2021-01-16T13:45:00-06:00
+imgs:
+- Eleventy-bracketed-footnotes_2520x844.png
+- Eleventy-non-bracketed-footnotes_2510x840.png
 ---
 
 {{% disclaimer %}}

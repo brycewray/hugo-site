@@ -3,6 +3,8 @@ title: "Eleventy plus Vite = elite"
 description: "Re-bundling, but without the pain of webpack."
 author: Bryce Wray
 date: 2021-07-24T10:46:00-05:00
+imgs:
+- ViteJS-home-page-2021-07-23_2522x1428.png
 ---
 
 {{% disclaimer %}}

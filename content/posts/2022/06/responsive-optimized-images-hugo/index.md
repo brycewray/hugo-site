@@ -4,6 +4,8 @@ description: "How to take advantage of the amazingly capable image processing
 author: Bryce Wray
 date: 2022-06-29T08:17:00-05:00
 #initTextEditor: iA Writer
+imgs:
+- my-pet-cat_3264x2448.jpg
 ---
 
 **Update from the future**: I later made considerable changes to the methods described in this post. So that you'll have a fuller perspective, I suggest you read everything *except* the code here, and only **then** go to [my post about *why* I made the changes](/posts/2023/04/better-code-image-processing-hugo/), where superior code awaits.

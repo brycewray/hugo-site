@@ -3,6 +3,8 @@ title: "iA for IO?"
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
+imgs:
+- iA-Writer-inline-footnotes_1548x582.png
 ---
 
 My comments at the end of my [previous post](/posts/2019/01/blox-sux/) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.

@@ -4,7 +4,9 @@ description: "For once, Google Fonts is the place to get the needed files �
 author: Bryce Wray
 date: 2022-10-04T09:53:00-05:00
 #draft: true
-initTextEditor: iA Writer
+#initTextEditor: iA Writer
+imgs:
+- public-overlay-libre-franklin_1890x1090.png
 ---
 
 For just about all of this site's four-plus-year history, its typographical presentation has taken one of three forms:

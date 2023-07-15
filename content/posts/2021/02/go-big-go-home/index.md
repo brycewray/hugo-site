@@ -3,6 +3,8 @@ title: "Go big or Go home?"
 description: "How some image-handling code moved from Eleventy to Hugo."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
+imgs:
+- Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg
 ---
 
 {{% disclaimer %}}

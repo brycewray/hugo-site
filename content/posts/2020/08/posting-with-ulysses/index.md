@@ -3,6 +3,8 @@ title: "Posting with Ulysses"
 description: "Still a nicer editor, but not truly SSG-friendly."
 author: Bryce Wray
 date: 2020-08-04T19:15:00-05:00
+imgs:
+- Ulysses-vs-iA_Writer_text-treatments_1539x846.png
 ---
 
 There's something about this post that hasn't been true of any post on this site since early last year.

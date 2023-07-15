@@ -3,6 +3,10 @@ title: "Battle of the iOS email heavyweights"
 description: "AltaMail vs. Preside: there’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray
 date: 2020-05-14T17:45:00-05:00
+imgs:
+- AltaMail-iPhone-dark--FavsInBox_edit_1125x2436.png
+- Preside-iPhone-dark--All-Inboxes-20200504-0951-1_edit_1125x2436.png
+- Preside-iPad-light--Inboxes-20200514-0932_edit_2048x1536.png
 ---
 
 Nearly a year since my [first encounter](/posts/2019/06/ahoy-mate/) with [MailMate](https://freron.com), a stupendously powerful macOS email client app for power users, I remain utterly amazed by all its capabilities.

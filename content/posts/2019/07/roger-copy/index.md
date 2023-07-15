@@ -3,6 +3,12 @@ title: "Roger, Copy"
 description: "How I now keep my site files “synced” across my devices — via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
+imgs:
+- Working_Copy_scr_cap_01_2048x1536.png
+- Working_Copy_scr_cap_02_2048x1536.png
+- Working_Copy_scr_cap_04_2048x1536.png
+- Working_Copy_scr_cap_07_2048x1536.png
+- Working_Copy_scr_cap_11_2048x1536.png
 ---
 
 If this site had a horde of regular readers, there probably would be enough of you out there that, probability suggests, a tiny percentage could be expected to watch every change with eagle eyes.

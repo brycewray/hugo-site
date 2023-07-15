@@ -3,6 +3,12 @@ title: "Conversation piece"
 description: "Commenting options for your static website."
 author: Bryce Wray
 date: 2020-10-13T16:30:00-05:00
+imgs:
+- Commento_scr_cap_2702x1530.png
+- FastComments_scr_cap_2696x1530.png
+- Hyvor_Talk_scr_cap_2696x1528.png
+- Talkyard_scr_cap_2696x1524.png
+- Utterances_scr_cap_2698x1530.png
 ---
 
 {{% disclaimer %}}

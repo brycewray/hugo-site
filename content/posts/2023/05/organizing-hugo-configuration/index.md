@@ -5,6 +5,8 @@ author: Bryce Wray
 date: 2023-05-02T11:46:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
+imgs:
+- 2023-05-02_screenshot_hugo-yaml-vsc_non-error_edit_2514x176.png
 ---
 
 The strangest little things can set one off to changing a project's settings. In my case, it was a red squiggly line in [Visual Studio Code](https://code.visualstudio.com/) that I absolutely hated to see, especially because I was pretty sure I hadn't earned it.
