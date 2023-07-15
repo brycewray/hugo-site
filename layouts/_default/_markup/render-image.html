@@ -55,10 +55,3 @@
 	{{- end -}}
 </div>
 {{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
-<p class="ctr legal">
-	destination = {{ .Destination }}<br />
-	$imgToGet = {{ $imgToGet }}<br />
-	$imgRsc = {{ $imgRsc }}<br />
-	width = {{ $width }}<br />
-	height = {{ $height }}
-</p>
