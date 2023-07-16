@@ -26,3 +26,6 @@ Cloudinary granted my request later that day; so, on the site's pages which do h
 
 **Note**: [Hugo](https://gohugo.io)'s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing), about which I've [written previously](/posts/2022/06/responsive-optimized-images-hugo/), [won't be supporting the AVIF format any time soon](https://github.com/gohugoio/hugo/issues/7837).
 {.box}
+
+**Update from the future**: I have since once again had AVIF support disabled from my use of `f_auto` due to some issues with the slow processing of these images during the development process.
+{.box}
