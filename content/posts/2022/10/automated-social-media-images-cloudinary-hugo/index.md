@@ -26,7 +26,7 @@ And if you *do* use Hugo to manage your site and you either have, or are willing
 
 First, look at this tweet of a few months ago from the nice folks at [CloudCannon](https://cloudcannon.com) *(reproduced here as only a graphic, in case ongoing changes to the Twitter platform limit your ability to view the original tweet)*:
 
-{{< imgc src="Twitter_CloudCannon_1534248828559400960_1774x1838.png" alt="Screen capture of CloudCannon tweet from 2022-06-07, “Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do. Learn more about this feature.”" phn=true >}}
+{{< img src="Twitter_CloudCannon_1534248828559400960_1774x1838.png" alt="Screen capture of CloudCannon tweet from 2022-06-07, “Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do. Learn more about this feature.”" phn=true >}}
 
 By comparison, the original text of the tweet, before the background processes added that image and its surrounding *social media sharing card*, looked like this:
 
@@ -72,7 +72,7 @@ https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto
 
 . . . which results in:
 
-{{< imgc src="2022-10-15_example-cloudinary-soc-img_1280x669.jpg" alt="OG image from URL shown above" >}}
+{{< img src="2022-10-15_example-cloudinary-soc-img_1280x669.jpg" alt="OG image from URL shown above" >}}
 
 **Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)
 {.box}

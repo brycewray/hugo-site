@@ -32,7 +32,7 @@ For example, given this[^inHugo] image:
 
 [^inHugo]: If the site is currently on Hugo, the image is rendered using a shortcode that makes use of `.Colors` for demonstrative purposes.
 
-{{< imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" filter="box" >}}<!-- keep as `imgh` because it's the subject of the post -->
+{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" imgproc="local" filter="box" >}}<!-- keep as `local` because it's the subject of the post -->
 
 . . . here's the slice you get from `.Colors`:
 

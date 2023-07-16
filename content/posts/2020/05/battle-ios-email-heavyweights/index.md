@@ -55,7 +55,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## AltaMail
 
-{{< imgc src="AltaMail-iPhone-dark--FavsInBox_edit_1125x2436.png" alt="AltaMail “Favorites” inbox view" phn=true >}}
+{{< img src="AltaMail-iPhone-dark--FavsInBox_edit_1125x2436.png" alt="AltaMail “Favorites” inbox view" phn=true >}}
 
 **Maker**: [EuroSmartz, Ltd](https://mobile.eurosmartz.com/).
 
@@ -71,7 +71,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## Preside
 
-{{< imgc src="Preside-iPhone-dark--All-Inboxes-20200504-0951-1_edit_1125x2436.png" alt="Preside “All Inboxes” view" phn=true >}}
+{{< img src="Preside-iPhone-dark--All-Inboxes-20200504-0951-1_edit_1125x2436.png" alt="Preside “All Inboxes” view" phn=true >}}
 
 **Maker**: [GoodHumans](https://goodhumans.net/).
 
