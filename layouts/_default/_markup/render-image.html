@@ -7,7 +7,6 @@
 	- https://gohugo.io/templates/render-hooks/
 	- https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
 */ -}}
-{{- $imgProc := "remote" -}}{{/* Choices are "remote" for Cloudinary and "local" for Hugo */}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
 {{- $caption := .Title -}}
@@ -20,28 +19,7 @@
 {{- $holder := "GIP" -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
 
-{{- if eq $imgProc "remote" -}}
-	{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
-	<div class="{{ $divClass }}" data-pagefind-ignore>
-	{{- with .Page.Params.imgs }}
-		{{- $imgToGet := print $cloudiBase $src -}}
-		{{- with $imgToGet -}}
-			{{- with resources.GetRemote . -}}
-				{{- $width := .Width -}}
-				{{- $height := .Height -}}
-				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-				{{- with $respSizes -}}
-					{{- range $i, $e := . -}}
-						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-						{{- end -}}
-					{{- end -}}
-				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-			{{- end -}}
-		{{- end -}}
-	{{- end -}}
-	</div>
-{{- else if eq $imgProc "local" -}}
+{{- if .Page.Resources.GetMatch $src -}}
 	{{ with .Page.Resources.GetMatch $src }}
 		{{- $hint := "photo" -}}
 		{{- $filter := "MitchellNetravali" -}}
@@ -69,10 +47,29 @@
 				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
 		</div>
-	{{- else -}}
-		<p class="ctr legal">No local image with name of:<br />{{ .Destination }}</p>
 	{{- end -}}
+{{- else if (resources.GetRemote (print $cloudiBase $src)) -}}
+	{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
+	<div class="{{ $divClass }}" data-pagefind-ignore>
+	{{- with .Page.Params.imgs }}
+		{{- $imgToGet := print $cloudiBase $src -}}
+		{{- with $imgToGet -}}
+			{{- with resources.GetRemote . -}}
+				{{- $width := .Width -}}
+				{{- $height := .Height -}}
+				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+				{{- with $respSizes -}}
+					{{- range $i, $e := . -}}
+						{{- if ge $width . -}}
+							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+						{{- end -}}
+					{{- end -}}
+				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+	</div>
 {{- else -}}
-	<p class="ctr legal"><em>[No image processing selected.]</em></p>
+	<p class="ctr legal"><em>Image unavailable, local or remote.</em></p>
 {{- end -}}
 {{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
