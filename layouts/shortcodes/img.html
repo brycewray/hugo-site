@@ -45,9 +45,9 @@
 		(md5-ing the image file name).
 	*/}}
 {{- end -}}
-{{- $imgClass := "w-full h-auto animate-fade shadow" -}}
+{{- $imgClass := "w-full animate-fade shadow" -}}
 {{- if $phn -}}
-	{{- $imgClass = "img-phn h-auto ctrImg animate-fade shadow" -}}
+	{{- $imgClass = "img-phn ctrImg animate-fade shadow" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 
@@ -75,7 +75,7 @@
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
-				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
 		{{- if eq $simple false -}}
 		</div>
@@ -91,7 +91,7 @@
 			{{- with resources.GetRemote . -}}
 				{{- $width := .Width -}}
 				{{- $height := .Height -}}
-				<img{{ if eq $simple false }} class="{{ $imgClass }}"{{ end }} src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
