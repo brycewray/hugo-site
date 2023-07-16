@@ -1,18 +1,10 @@
 {{- /*
-	If `$imgProc` = "local": **every** imgr-called image on the site **must** be a Hugo page resource; i.e., it must be in the same folder as the content file that's calling it.
-
 	See also:
 	- https://gohugo.io/templates/render-hooks/
 	- https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
 */ -}}
-{{- $imgProc := "remote" -}}{{/* site default */}}
-{{- if .Get "imgproc" -}}{{- $imgProc = .Get "imgproc" -}}{{- end -}}
-{{/* Choices are "remote" for Cloudinary and "local" for Hugo */}}
-
 {{/* init vars */}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
-{{- /* $imgBase := "images/" */ -}} {{/* This will be from top-level /assets/images */}}
-{{/*  {{- $src := resources.Get (printf "%s%s" $imgBase (.Get "src")) -}}  */}}
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" -}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
