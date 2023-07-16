@@ -1,56 +1,45 @@
 {{- /*
-	This gives **normal** Markdown images
-	--- i.e., using the `![Alt](imageURL)`
-	syntax (which VS Code auto-completes)
-	--- nearly all functionality of
-	the `imgh` shortcode, except that this:
-	(a.) hard-codes the `holder`, `hint`, and
-	`filter` parameters; and, (b.) assumes no use
-	of either `phn` or `simple`.
-	None of these additional items can be supplied
-	via a render hook but, instead, would require
-	use of the full `imgh` shortcode.
-	Ref: https://gohugo.io/templates/render-hooks/
+	FOR USE WITH CLOUDINARY-HOSTED IMAGES.
+
+	This gives **normal** Markdown images --- i.e., using the `![Alt](imageURL)`
+	syntax (which VS Code auto-completes) --- nearly all functionality of
+	the `imgh` shortcode, except that this: (a.) hard-codes the `holder`, `hint`, and `filter` parameters; and, (b.) assumes no use of either `phn` or `simple`.
+	None of these additional items can be supplied via a render hook but, instead, would require use of the full `imgh` shortcode.
+
+	See also:
+	- https://gohugo.io/templates/render-hooks/
+	- https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
 */ -}}
-					{{/*
-						https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
-					*/}}
-{{/*  {{- $imgProc := .Page.Site.Params.ImgProc -}}  */}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
 {{- $caption := .Title -}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
-{{- $imgToGet := "" -}}
-{{- $imgRsc := "" -}}
-{{- $width := "" -}}
-{{- $height := "" -}}
-
 {{- $src := .Destination -}}
 {{- $imgBd5 := md5 $src -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
-{{- $hint := "photo" -}}
-{{- $filter := "MitchellNetravali" -}}
 {{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
 
 <div class="{{ $divClass }}" data-pagefind-ignore>
-	{{- $imgToGet = print $cloudiBase $src -}}
-	{{- with $imgToGet -}}
-		{{- with resources.GetRemote . -}}
-			{{- $imgRsc = . -}}
-			{{- $width = .Width -}}
-			{{- $height = .Height -}}
-			<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-			{{- with $respSizes -}}
-				{{- range $i, $e := . -}}
-					{{- if ge $width . -}}
-						{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+	{{- with .Page.Params.imgs }}
+		{{- $imgToGet := print $cloudiBase $src -}}
+		{{- with $imgToGet -}}
+			{{- with resources.GetRemote . -}}
+				{{- $imgRsc := . -}}
+				{{- $width := .Width -}}
+				{{- $height := .Height -}}
+				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+				{{- with $respSizes -}}
+					{{- range $i, $e := . -}}
+						{{- if ge $width . -}}
+							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+						{{- end -}}
 					{{- end -}}
-				{{- end -}}
-			{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+			{{- end -}}
 		{{- end -}}
 	{{- end -}}
 </div>
