@@ -184,7 +184,7 @@ To invoke `imgh` in Markdown, use it like so[^commentsGo]:
 
 In this case, it produces:
 
-{{< imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="LQIP" filter="box" >}}<!-- Keep this as 'imgh` since it's the subject of the post. -->
+{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" imgproc="local" holder="LQIP" filter="box" >}}<!-- Keep this as `local` since Hugo local-image processing is the subject of the post. -->
 
 . . . from HTML like the following, which shows the automatically created hashed names for the Hugo-generated resized images:
 
