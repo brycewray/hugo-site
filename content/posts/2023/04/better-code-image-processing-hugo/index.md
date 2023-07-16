@@ -189,7 +189,7 @@ For example, here's how I'd use `imgh.html` to have an LQIP for a file called `m
 
 In this case, it produces:
 
-{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" imgproc="local" holder="LQIP" filter="box" >}}<!-- keep as `local` since post is about that -->
+{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="LQIP" filter="box" >}}<!-- keep as `local` since post is about that -->
 
 . . . but, **this** time, the CSS for its background is generated right where it should be: up in the HTML `head`, **not** down in the `body`.
 
