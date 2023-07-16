@@ -57,14 +57,14 @@
 {{- if eq $simple false -}}
 <div class="{{ $divClass }}" data-pagefind-ignore>
 {{- end }}
-	<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+	<img{{ if eq $simple false }} class="{{ $imgClass }}"{{ end }} src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 	{{- with $respSizes -}}
 		{{- range $i, $e := . -}}
 			{{- if ge $width . -}}
 				{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 			{{- end -}}
 		{{- end -}}
-	{{- end -}}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+	{{- end -}}" sizes="{{ $dataSzes }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 {{- if eq $simple false -}}
 </div>
 {{- end }}
