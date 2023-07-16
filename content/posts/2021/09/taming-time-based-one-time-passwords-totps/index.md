@@ -78,7 +78,7 @@ So if those are the TOTP apps to avoid, assuming your workplace or school doesnâ
 
 For Android devices, youâ€™d be hard-pressed to find something better than [Aegis Authenticator](https://getaegis.app/), a free/open-source software (FOSS) app. Although it mostly lacks cloud backup functionality[^3], it lets you export encrypted vaults to your cloud of choice and access them from there.
 
-{{< img src="Aegis_screenshot_edited_1080x1920.png" alt="Edited screen capture of Aegis Authenticator application" phn=true width=1080 height=1920 >}}
+{{< img src="Aegis_screenshot_edited_1080x1920.png" alt="Edited screen capture of Aegis Authenticator application" phn=true >}}
 
 Aegis Authenticator (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
