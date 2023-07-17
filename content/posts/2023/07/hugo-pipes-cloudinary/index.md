@@ -9,7 +9,8 @@ imgs:
 - my-pet-cat_3264x2448.jpg
 ---
 
-**Note**: While what I describe in this post **does** work, it apparently increases the build time for a Hugo project, especially on the sometimes underpowered servers employed in some hosting vendors' free tiers. Therefore, if you adopt it for your own project, you may want to limit your fetching of remote images, thus keeping build times from becoming excessive.
+**Update, 2023-07-17**: While what I describe in this post **does** work, it apparently increases the build time for a Hugo project, especially on the sometimes underpowered servers employed in some hosting vendors' free tiers. Therefore, if you adopt it for your own project, you may want to limit your fetching of remote images, thus keeping build times from becoming excessive.\
+I have also corrected the content of the final code block so that it corresponds to the local-first premise explained within; unfortunately, it didn't in the initial versions of this post.
 {.box}
 
 My [most](/posts/2023/04/better-code-image-processing-hugo/) [recent](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/) posts about using the [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) asset pipeline for [image processing](https://gohugo.io/content-management/image-processing/) rested on one assumption: you're willing to keep all your images locally in your Hugo project repository so they could serve as [page resources](https://gohugo.io/content-management/page-resources/). But what if you prefer to use third-party image processing, either instead of or as a supplement to Hugo's? Does that eliminate the coolness of Hugo Pipes?
