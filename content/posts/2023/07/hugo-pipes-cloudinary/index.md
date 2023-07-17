@@ -47,7 +47,7 @@ I'd then have to implement this in three separate places:
 
 That last one would be a particularly tricky fix, because it now would have to work with both local and remote images. But working on it gave me another idea that would let me take this even further: if I *could* make that template work with both types of images, what if I could do the same with the render hook and the shortcode, as well?
 
-After all, you can have only one `render-image.html` template at a time, so any approach short of that would force me to swap out render hooks based on the images' sources, a prospect that my testing proved to be as untenable as it sounds. Besides, I knew there would be a few cases where I'd want to keep using local images, too --- *e.g.*, the original posts that were *about* processing local images! And, while I'd been using two separate shortcodes for the two types of image sources, a single, smarter shortcode would make that unnecessary.
+After all, you can have only one `render-image.html` template at a time, so any approach short of that would force me to swap out render hooks based on the images' sources, a prospect that my testing proved to be as untenable as it sounds. Besides, I knew there would be a few cases where I'd want to keep using local images, too --- *e.g.*, the original posts that were *about* processing local images! And, while I'd maintained two separate shortcodes for the two types of image sources, a single, smarter shortcode would make that unnecessary.
 
 In the end, here's how I made it work:
 
