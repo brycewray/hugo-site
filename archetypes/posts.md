@@ -5,6 +5,8 @@ author: Bryce Wray
 date: {{ .Date }}
 draft: true
 # initTextEditor: iA Writer # default --- change if needed
+# imgs:
+# -
 ---
 
 Text begins here.
