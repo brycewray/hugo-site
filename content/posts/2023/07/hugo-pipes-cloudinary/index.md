@@ -9,6 +9,9 @@ imgs:
 - my-pet-cat_3264x2448.jpg
 ---
 
+**Note**: While what I describe in this post **does** work, it apparently increases the build time for a Hugo project, especially on the sometimes underpowered servers employed in some hosting vendors' free tiers. Therefore, if you adopt it for your own project, you may want to limit your fetching of remote images, thus keeping build times from becoming excessive.
+{.box}
+
 My [most](/posts/2023/04/better-code-image-processing-hugo/) [recent](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/) posts about using the [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) asset pipeline for [image processing](https://gohugo.io/content-management/image-processing/) rested on one assumption: you're willing to keep all your images locally in your Hugo project repository so they could serve as [page resources](https://gohugo.io/content-management/page-resources/). But what if you prefer to use third-party image processing, either instead of or as a supplement to Hugo's? Does that eliminate the coolness of Hugo Pipes?
 
 Oh, my, no. Quite the contrary.
@@ -60,7 +63,7 @@ imgs:
 - 2021-10-10_screenshot_old-Outlook-on-Mac_02_segment_1505x512.png
 - 2021-10-10_screenshot_new-Outlook-on-Mac_segment_1696x752.png
 {{< /highlight >}}
-2. Whenever a Markdown file calls an image (through either the render hook or the shortcode), Hugo determines whether the image is a page resource.
+1. Whenever a Markdown file calls an image (through either the render hook or the shortcode), Hugo determines whether the image is a page resource.
 	- If it is, the image goes through Hugo's native image processing. (Thus, a local image is the default, taking precedence over a remote version.)
 	- If the image is not a page resource, Hugo polls Cloudinary for the image and, if it finds it, fetches it from there *but* also still converts it to a resource from which it then creates both an LQIP and a GIP as well as those placeholders' associated styling.
 	- If the image is in *neither* location (*i.e.*, I've screwed up and failed to make the image file either a page resource or an upload to Cloudinary), Hugo provides a little message noting the image's unavailability.\
