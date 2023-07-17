@@ -49,18 +49,18 @@ jobs:
           tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           dart-sass/sass --embedded --version
           echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
-      - name: Cache Hugo `resources`
-        id: cache-resources
-        uses: actions/cache@v3
-        with:
-          path: resources
-          key: ${{ runner.os }}-resources
-      - name: Cache Hugo `static` content
-        id: cache-static
-        uses: actions/cache@v3
-        with:
-          path: static
-          key: ${{ runner.os }}-static
+      # - name: Cache Hugo `resources`
+      #   id: cache-resources
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: resources
+      #     key: ${{ runner.os }}-resources
+      # - name: Cache Hugo `static` content
+      #   id: cache-static
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: static
+      #     key: ${{ runner.os }}-static
       - name: Install Hugo via Node, build site, move feed files, run Pagefind (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm run build
