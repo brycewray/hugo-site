@@ -292,6 +292,9 @@ Anyway: without further ado, here's the relevant code.[^styling] Of course, you 
 		{{- with $imgToGet -}}
 			{{- with resources.GetRemote . -}}
 				{{- $imgRsc = . -}}
+				{{- $imgRscDir := print "images/remote/" $src  -}}
+				{{- $imgRsc = $imgRsc.Content | resources.FromString $imgRscDir -}}
+				{{- /* ^^^ https://discourse.gohugo.io/t/using-getremote-on-image-puts-the-resource-in-root/36397 */ -}}
 				{{- $width = .Width -}}
 				{{- $height = .Height -}}
 				{{- $GIP_colors := .Colors -}}
