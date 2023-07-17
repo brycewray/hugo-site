@@ -2,7 +2,7 @@
 title: "Using Hugo Pipes with Cloudinary"
 description: "Or, how I now can have my image-handling cake and eat it, too."
 author: Bryce Wray
-date: 2023-07-15T17:19:00-05:00
+date: 2023-07-16T17:19:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
 imgs:
@@ -269,7 +269,7 @@ Anyway: without further ado, here's the relevant code.[^styling] Of course, you 
   For some additional background on this file, see:
   https://www.brycewray.com/posts/2023/04/better-code-image-processing-hugo/
 
-	Called from within the site's `head.html` partial template, 
+	Called from within the site's `head.html` partial template,
 	this detects imgs and generates CSS classes for them.
 	Based on comments in:
 	https://github.com/danielfdickinson/image-handling-mod-hugo-dfd/pull/72
