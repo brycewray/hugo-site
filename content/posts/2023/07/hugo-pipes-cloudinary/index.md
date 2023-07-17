@@ -269,13 +269,6 @@ Anyway: without further ado, here's the relevant code.[^styling] Of course, you 
 {{</ labeled-highlight >}}
 
 {{< labeled-highlight lang="go-html-template" filename="head-imgs-css.html" >}}
-{{/*
-	Detect imgs and generate CSS classes for them.
-	If $imgProc = "Hugo", requires using page bundles.
-	Based on comments in:
-	https://github.com/danielfdickinson/image-handling-mod-hugo-dfd/pull/72
-*/}}
-
 {{- $myCloud := "brycewray-com" -}}
 {{/* ^^^ Fill in your own Cloudinary cloud name! */}}
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
