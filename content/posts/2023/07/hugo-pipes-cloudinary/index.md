@@ -269,14 +269,12 @@ Anyway: without further ado, here's the relevant code.[^styling] Of course, you 
 
 {{< labeled-highlight lang="go-html-template" filename="head-imgs-css.html" >}}
 {{/*
-  For some additional background on this file, see:
-  https://www.brycewray.com/posts/2023/04/better-code-image-processing-hugo/
-
-	Called from within the site's `head.html` partial template,
-	this detects imgs and generates CSS classes for them.
+	Detect imgs and generate CSS classes for them.
+	If $imgProc = "Hugo", requires using page bundles.
 	Based on comments in:
 	https://github.com/danielfdickinson/image-handling-mod-hugo-dfd/pull/72
 */}}
+
 {{- $myCloud := "brycewray-com" -}}
 {{/* ^^^ Fill in your own Cloudinary cloud name! */}}
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
@@ -286,50 +284,17 @@ Anyway: without further ado, here's the relevant code.[^styling] Of course, you 
 {{- $imgRsc := "" -}}
 {{- $width := "" -}}
 {{- $height := "" -}}
+{{- $currentPage := .Page -}}
 
-{{- with .Params.imgs }}{{/* for Cloudinary-hosted images */}}
+{{- with .Params.imgs }}
 	<style media="screen">
 	{{- range . -}}
 		{{- $src := . -}}
-		{{- $imgToGet = print $cloudiBase $src -}}
-		{{- with $imgToGet -}}
-			{{- with resources.GetRemote . -}}
-				{{- $imgRsc = . -}}
-				{{- $imgRscDir := print "images/remote/" $src  -}}
-				{{- $imgRsc = $imgRsc.Content | resources.FromString $imgRscDir -}}
-				{{- /* ^^^ https://discourse.gohugo.io/t/using-getremote-on-image-puts-the-resource-in-root/36397 */ -}}
-				{{- $width = .Width -}}
-				{{- $height = .Height -}}
-				{{- $GIP_colors := .Colors -}}
-				{{- $imgBd5 := md5 $src -}}
-				{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $width " / " $height ";" -}}
-				{{- if (lt ($GIP_colors | len) 2) -}}
-					{{- $GIP_colors = $GIP_colors | append "#000000" -}}
-				{{- end -}}
-				{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
-				{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
-				{{- $LQIP_img := $imgRsc.Resize "20x jpg q20" -}}
-				{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-				{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
-				.imgB-{{ $imgBd5 }}-LQIP {
-					{{ $BkgdStyleLQIP | safeCSS }}
-				}
-				.imgB-{{ $imgBd5 }}-GIP {
-					{{ $BkgdStyleGIP | safeCSS }}
-				}
-			{{- end }}
-		{{- end }}
-	{{- end }}
-	</style>
-{{- end }}
-
-{{- with .Resources.ByType "image" }}{{/* for local images */}}
-	<style media="screen">
-		{{- range . -}}
-			{{- $src := . -}}
-			{{- $imgBd5 := md5 .Name -}}
-			{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $src.Width " / " $src.Height ";" -}}
-			{{- $GIP_colors := $src.Colors -}}
+		{{- $imgBd5 := md5 . -}}
+		{{- if $currentPage.Resources.GetMatch $src -}}
+			{{- $imgRsc := $currentPage.Resources.GetMatch $src -}}
+			{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $imgRsc.Width " / " $imgRsc.Height ";" -}}
+			{{- $GIP_colors := $imgRsc.Colors -}}
 			{{- if (lt ($GIP_colors | len) 2) -}}
 				{{- $GIP_colors = $GIP_colors | append "#000000" -}}
 			{{- end -}}
@@ -338,13 +303,43 @@ Anyway: without further ado, here's the relevant code.[^styling] Of course, you 
 			.imgB-{{ $imgBd5 }}-GIP {
 				{{ $BkgdStyleGIP | safeCSS }}
 			}
-			{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
+			{{- $LQIP_img := $imgRsc.Resize "20x jpg q20" -}}
 			{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
 			{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
 			.imgB-{{ $imgBd5 }}-LQIP {
 				{{ $BkgdStyleLQIP | safeCSS }}
 			}
+		{{- else if (resources.GetRemote (print $cloudiBase $src)) -}}
+			{{- $imgToGet = print $cloudiBase $src -}}
+			{{- with $imgToGet -}}
+				{{- with resources.GetRemote . -}}
+					{{- $imgRsc = . -}}
+					{{- $imgRscDir := print "images/remote/" $src  -}}
+					{{- $imgRsc = $imgRsc.Content | resources.FromString $imgRscDir -}}
+					{{- /* ^^^ https://discourse.gohugo.io/t/using-getremote-on-image-puts-the-resource-in-root/36397 */ -}}
+					{{- $width = .Width -}}
+					{{- $height = .Height -}}
+					{{- $GIP_colors := .Colors -}}
+					{{- $imgBd5 := md5 $src -}}
+					{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $width " / " $height ";" -}}
+					{{- if (lt ($GIP_colors | len) 2) -}}
+						{{- $GIP_colors = $GIP_colors | append "#000000" -}}
+					{{- end -}}
+					{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
+					{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
+					{{- $LQIP_img := $imgRsc.Resize "20x jpg q20" -}}
+					{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
+					{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
+					.imgB-{{ $imgBd5 }}-LQIP {
+						{{ $BkgdStyleLQIP | safeCSS }}
+					}
+					.imgB-{{ $imgBd5 }}-GIP {
+						{{ $BkgdStyleGIP | safeCSS }}
+					}
+				{{- end }}
+			{{- end }}
 		{{- end }}
+	{{- end }}
 	</style>
-{{ end }}
+{{- end }}
 {{</ labeled-highlight >}}
