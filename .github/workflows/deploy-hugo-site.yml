@@ -56,7 +56,6 @@ jobs:
           path: |
             resources
             static
-            images/remote
           key: ${{ runner.os }}-hugosite
       - name: Install Hugo via Node, build site, move feed files, run Pagefind (cond. - Node)
         if: ${{ env.NODE == 'true' }}
