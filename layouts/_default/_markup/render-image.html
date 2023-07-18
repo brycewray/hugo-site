@@ -18,9 +18,10 @@
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
+{{- $rscToMatch := print "images/" $src -}}
 
-{{- if .Page.Resources.GetMatch $src -}}
-	{{ with .Page.Resources.GetMatch $src }}
+{{- if resources.GetMatch $rscToMatch -}}
+	{{ with resources.GetMatch $rscToMatch }}
 		{{- $hint := "photo" -}}
 		{{- $filter := "MitchellNetravali" -}}
 		{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}

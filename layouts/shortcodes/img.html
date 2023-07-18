@@ -42,9 +42,10 @@
 	{{- $imgClass = "img-phn ctrImg animate-fade shadow" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+{{- $rscToMatch := print "images/" $src -}}
 
-{{- if .Page.Resources.GetMatch $src -}}
-	{{ with .Page.Resources.GetMatch $src }}
+{{- if resources.GetMatch $rscToMatch -}}
+	{{ with resources.GetMatch $rscToMatch }}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
 		{{- if eq $simple false -}}
