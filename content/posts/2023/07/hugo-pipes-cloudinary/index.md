@@ -278,15 +278,14 @@ Anyway: without further ado, here's the relevant code.[^styling] Of course, you 
 {{- $imgRsc := "" -}}
 {{- $width := "" -}}
 {{- $height := "" -}}
-{{- $currentPage := .Page -}}
 
 {{- with .Params.imgs }}
 	<style media="screen">
 	{{- range . -}}
 		{{- $src := . -}}
 		{{- $imgBd5 := md5 . -}}
-		{{- if $currentPage.Resources.GetMatch $src -}}
-			{{- $imgRsc := $currentPage.Resources.GetMatch $src -}}
+		{{- if $.Page.Resources.GetMatch $src -}}
+			{{- $imgRsc := $.Page.Resources.GetMatch $src -}}
 			{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $imgRsc.Width " / " $imgRsc.Height ";" -}}
 			{{- $GIP_colors := $imgRsc.Colors -}}
 			{{- if (lt ($GIP_colors | len) 2) -}}
