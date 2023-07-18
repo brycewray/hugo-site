@@ -9,6 +9,8 @@ imgs:
 - 2022-07-23-sample-title-with-gradient_1024x512.jpg
 ---
 
+{{% disclaimer %}}
+
 You can think of this as hard-won wisdom.
 
 If you're planning to build a website with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) --- **or** if you already have one but you don't yet have a lot of content files --- save yourself a lot of trouble and use *[page bundles](https://gohugo.io/content-management/page-bundles/)*.
@@ -178,3 +180,6 @@ So, children, the moral of this story is:
 Otherwise, someday, you'll wish you had. Don't wait until you have hundreds of pages, or more, that you have to retro-fit into this method.
 
 Or, to be even shorter: **don't** be like me.
+
+**Update from the future**: I later [abandoned](/posts/2023/07/big-unbundle/) this approach, **although** while conceding that it may still be the wiser course for many other Hugo users.
+{.box}
