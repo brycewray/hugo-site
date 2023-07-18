@@ -35,7 +35,7 @@ So, when using a shortcode for Cloudinary's image processing rather than Hugo's,
 
 It was troublesome, but tolerable. Yet, it would be a show-stopper for using a render hook --- which is how I've been handling most of my images since writing the [related post](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/) a few weeks ago --- because Hugo allows sending [only a small number of parameters to the hook](https://gohugo.io/templates/render-hooks/#render-hooks-for-headings-links-and-images), and I'd already run through that quantity.
 
-So, if I were to re-re-reconsider using Cloudinary for the vast majority of the site's image processing, I'd have to do one of two things: (a.) quit using that all-too-convenient render hook method (*i.e.*, revert to using a shortcode for every one of the site's images); or (b.) figure out a way to make Hugo detect the width and height of even remote images, not just local ones.
+So, if I were to re-re-reconsider using Cloudinary for some of the site's image processing, I'd have to do one of two things: (a.) forego that all-too-convenient render hook method (*i.e.*, revert to using a shortcode) for each remote image; or (b.) figure out a way to make Hugo detect the width and height of even remote images, not just local ones.
 
 Implementing either option would require some degree of tedium, although a lot of it would be eased by good ol' search-and-replace. But only Option (b.) also included a nerdy puzzle to solve --- and, hey, I couldn't resist *that*, now, could I? So I didn't.
 
