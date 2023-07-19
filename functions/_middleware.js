@@ -111,7 +111,6 @@ export async function onRequest(context) {
 			newHeaders.set("Permissions-Policy", "fullscreen=*, picture-in-picture=*, xr-spatial-tracking=*")
 		}
 		newHeaders.set("CF-nonce-generator", "HIT")
-		newHeaders.set("Save-Data", "on")
 
 		return new Response(html, {
 			status: response.status,
