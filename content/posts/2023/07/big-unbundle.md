@@ -39,7 +39,7 @@ As a result, this post now comes to you from:
                     └─ index.md
 ```
 
-This also required me to move my image files from within individual posts' folders (where they were *page resources*) to the project's `assets/images/` folder (where they became *[global resources](https://gohugo.io/hugo-pipes/introduction/)*), so I also had to change that images-handling code about which [I wrote earlier this week](/posts/2023/07/hugo-pipes-cloudinary/).[^codeExamples]
+This also required me to move my image files from within individual posts' folders (where they were *page resources*) to the project's `assets/images/` folder (where they became *[global resources](https://gohugo.io/hugo-pipes/introduction/)*), so I had to change that images-handling code about which [I wrote earlier this week](/posts/2023/07/hugo-pipes-cloudinary/).[^codeExamples]
 
 [^codeExamples]: Incidentally, for any curious soul who may wonder about how badly this reversion may have mangled the previous post's code examples, all of which depended on the bundled arrangement: fear not. All I had to do was change a couple of lines in each example. Any reference to `.Page.Resources.GetMatch` (or `$.Page.Resources.GetMatch`) changed to `resources.GetMatch`. That's all!
 
@@ -59,6 +59,6 @@ Now, to be sure, I could also see them listed in this more helpful and informati
 
 . . . but that was possible only after I'd actually opened the editor, as opposed to just clicking the dock icon.
 
-Is that a petty reason even to *think* about doing such an about-face, much less actually to go through with it? Perhaps. But little things like that, repeated day after day for months at a time, annoy me; so there's that.
+Is that a petty reason even to *think* about doing such an about-face, much less actually to go through with it? Perhaps. But minor irritations of this nature, repeated day after day for months at a time, annoy me mightily; so there's that.
 
 Besides, I also find it more intuitive and, yes, more comfortable to manage an unbundled site's overall file-storage arrangement, regardless of any other factors that may merit consideration. It's the way I managed the site project for the overwhelming majority of its history before now. Despite my age, I typically am *not* someone who resists change, at least if I can understand a good reason for the change --- but I *do* frequently object to change-for-the-**sake**-of-change, and this seemed to have become one of those cases.
