@@ -104,7 +104,7 @@ Now, without further ado, here's the relevant code.[^styling] Of course, you mus
 {{- $myCloud := "brycewray-com" -}}
 {{/* ^^^ Fill in your own Cloudinary cloud name! */}}
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
-{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{- $xFmPart1 := "f_auto,q_auto,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 {{- $src := .Destination -}}
 {{- $imgBd5 := md5 $src -}}
@@ -150,11 +150,11 @@ Now, without further ado, here's the relevant code.[^styling] Of course, you mus
 			{{- with resources.GetRemote . -}}
 				{{- $width := .Width -}}
 				{{- $height := .Height -}}
-				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
@@ -175,7 +175,7 @@ Now, without further ado, here's the relevant code.[^styling] Of course, you mus
 {{- $myCloud := "brycewray-com" -}}
 {{/* ^^^ Fill in your own Cloudinary cloud name! */}}
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
-{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{- $xFmPart1 := "f_auto,q_auto,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
 {{- $holder := "GIP" -}}{{/* default placeholder */}}
 {{- if .Get "holder" -}}{{- $holder = .Get "holder" -}}{{- end -}}
@@ -250,11 +250,11 @@ Now, without further ado, here's the relevant code.[^styling] Of course, you mus
 			{{- with resources.GetRemote . -}}
 				{{- $width := .Width -}}
 				{{- $height := .Height -}}
-				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
@@ -273,8 +273,6 @@ Now, without further ado, here's the relevant code.[^styling] Of course, you mus
 {{- $myCloud := "brycewray-com" -}}
 {{/* ^^^ Fill in your own Cloudinary cloud name! */}}
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
-{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
-{{- $xFmPart2 := ",x_0,z_1/" -}}
 {{- $imgToGet := "" -}}
 {{- $imgRsc := "" -}}
 {{- $width := "" -}}
