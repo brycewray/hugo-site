@@ -55,7 +55,7 @@ Not very helpful, right?
 
 Now, to be sure, I could also see them listed in this more helpful and informative way:
 
-{{< img src="iA-Writer_recents-menu-all-index_2962x1240.png" alt="A dropdown menu showing 10 recent-file entries, each with the same name but different paths." >}}
+![A dropdown menu showing 10 recent-file entries, each with the same name but different paths.](iA-Writer_recents-menu-all-index_2962x1240.png)
 
 . . . but that was possible only after I'd actually opened the editor, as opposed to just clicking the dock icon.
 
