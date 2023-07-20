@@ -108,7 +108,10 @@ At the beginning of the code block, I mention a fallback image (`$fallbackImg`),
 
 [^fallbackLocal]: This is true when the site is on Hugo, that is. Otherwise, the fallback image is another Cloudinary-hosted asset.
 
-![Monochrome view of hands typing on an old typewriter](typewriter-monochrome_2242164_6260x4374.jpg "Image: [rawpixel](https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164); [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=224216).")
+![Monochrome view of hands typing on an old typewriter](typewriter-monochrome_2242164_6260x4374.jpg)
+
+Image: [rawpixel](https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164); [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=224216).
+{.imghCaption}
 
 I could also use the fallback image for other pages if I so chose. **Anyway**: if you have no such concerns about having a fallback image for your home page (or any other), feel free to ignore that part.
 

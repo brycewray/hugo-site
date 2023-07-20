@@ -63,7 +63,7 @@ Those who have inflicted upon themselves the curse of reading any significant nu
 
 Here's an example, using a screen capture of a paragraph from last year's "[YouTube TV and the RSNs flap](/posts/2020/02/youtube-tv-rsns-flap/)":
 
-![Paragraph ending in a footnote whose number is bracketed"](Eleventy-bracketed-footnotes_2520x844.png)
+![Paragraph ending in a footnote whose number is bracketed](Eleventy-bracketed-footnotes_2520x844.png)
 
 But it turns out there's been an answer out there for months, in the form of [Mark Llobrera](https://www.markllobrera.com)'s "[Eleventy: Markdown and Footnotes](https://www.markllobrera.com/posts/eleventy-markdown-and-footnotes/)," in which he prescribed adding the following code within the part of the `.eleventy.js` config file that specifies how markdown-it and its various plugins will work with Eleventy:
 
