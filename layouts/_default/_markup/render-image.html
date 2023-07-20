@@ -9,7 +9,7 @@
 */ -}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
-{{- $caption := .Title -}}
+{{- $source := .Title -}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto,w_" -}}
 {{- $xFmPart2 := ",x_0,z_01/" -}}
@@ -20,7 +20,7 @@
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
 {{- $rscToMatch := print "images/" $src -}}
 
-{{- if resources.GetMatch $rscToMatch -}}
+{{- if (and (resources.GetMatch $rscToMatch) (ne $source "Cloudinary") ) -}}
 	{{ with resources.GetMatch $rscToMatch }}
 		{{- $hint := "photo" -}}
 		{{- $filter := "MitchellNetravali" -}}
@@ -49,7 +49,7 @@
 			</picture>
 		</div>
 	{{- end -}}
-{{- else if (resources.GetRemote (print $cloudiBase $src)) -}}
+{{- else if (and (resources.GetRemote (print $cloudiBase $src)) (eq $source "Cloudinary") ) -}}
 	{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 	<div class="{{ $divClass }}" data-pagefind-ignore>
 	{{- with .Page.Params.imgs }}
@@ -73,4 +73,3 @@
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable, local or remote.</em></p>
 {{- end -}}
-{{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
