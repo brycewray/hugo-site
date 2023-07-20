@@ -72,8 +72,7 @@
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
-		{{- $scssOptions = merge $scssOptions $scssComp -}}
-		{{- $scssOptions = merge $scssOptions (dict "targetPath" (print "css/" $fileName ".min.css")) -}}
+		{{- $scssOptions = merge $scssOptions $scssComp (dict "targetPath" (print "css/" $fileName ".min.css")) -}}
 		{{- $css := resources.Get (print "scss/" $fileName ".scss") | toCSS $scssOptions | fingerprint -}}
 		{{- with $css -}}
 			<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -83,8 +82,7 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp -}}
-{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.min.css") -}}
+{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp (dict "targetPath" "css/print.min.css") -}}
 {{- $printCSS := resources.Get "scss/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
 {{- with $printCSS -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
