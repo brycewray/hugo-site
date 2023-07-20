@@ -33,7 +33,7 @@ As a result, this post now comes to you from:
 .   <-- The Hugo project folder
 └─ content
     └─ posts
-        └─ 2022
+        └─ 2023
             └─ 07
                 └─ big-unbundle
                     └─ index.md
