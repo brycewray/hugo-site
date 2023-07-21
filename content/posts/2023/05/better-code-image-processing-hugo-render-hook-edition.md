@@ -31,7 +31,7 @@ So here's a practical example. Let's say your Hugo project has a post, "My Cat,"
 
 . . . as opposed to how you'd do it with [my image-processing shortcode](/posts/2023/04/better-code-image-processing-hugo/)[^commentsGo]:
 
-[^commentsGo]: If you happen upon this site's repo out of curiosity and check out this post's Markdown file, you'll notice that this example's curly-bracketed boundaries also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the image. See "[Highlight Hugo/GO Template Code](https://gohugo.io/content-management/syntax-highlighting/#highlight-hugogo-template-code)" in the Hugo documentation.
+[^commentsGo]: {{% mdcode-fn %}}
 
 ```go-html-template
 {{</* imgh src="my-pet-cat.jpg" alt="This is a picture of my cat" */>}}

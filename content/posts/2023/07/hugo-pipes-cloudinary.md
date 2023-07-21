@@ -79,7 +79,7 @@ In addition to making the render hook work with either local or remote images, t
 
 For example, here's `img.html` in use with my usual go-to image for this kind of post[^commentsGo]:
 
-[^commentsGo]: If you happen upon this site's repo out of curiosity and check out this post's Markdown file, you'll notice that this example's curly-bracketed boundaries also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the image. See "[Highlight Hugo/GO Template Code](https://gohugo.io/content-management/syntax-highlighting/#highlight-hugogo-template-code)" in the Hugo documentation.
+[^commentsGo]: {{% mdcode-fn %}}
 
 ```md
 {{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" */>}}
