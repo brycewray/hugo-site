@@ -50,7 +50,7 @@ Armed with these "must-haves," I spent several days checking out other vendors k
 
 ### Firebase
 
-![Screen capture of firebase.google.com home page as of 2020-07-01](Firebase_screen_cap_2516x1438.png)
+![Screen capture of firebase.google.com home page as of 2020-07-01](Firebase_screen_cap_2516x1438.png "Cloudinary")
 
 Despite the obvious advantages of Google's wealth backing it and its popularity in the dev community (albeit mainly among database guys, it seems), Firebase --- whose free "Spark" tier [allows](https://firebase.google.com/pricing) far more use in a month than I'd ever accumulate --- fell short for two reasons.
 

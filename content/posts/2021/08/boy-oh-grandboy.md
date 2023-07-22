@@ -12,7 +12,7 @@ We found out last Christmas Day that [our granddaughter, Kennedy Beck](/posts/20
 
 At 2:55 PM this past Monday, that boy --- all six pounds, 10 ounces of Dylan Everett Beck --- came into the world. He went home the next afternoon and, at last report, the members of the newly expanded family all were doing very well.
 
-![Bryce Wray holds his grandson, Dylan Everett Beck, shortly after the child’s birth](2021-08-09_BW-holding-Dylan_2978x1675.jpg)
+![Bryce Wray holds his grandson, Dylan Everett Beck, shortly after the child’s birth](2021-08-09_BW-holding-Dylan_2978x1675.jpg "Cloudinary")
 
 I get to hold grandchild #2 about an hour after he was born.\
 Image: Sarah Beck (a/k/a Kennedy’s and Dylan's mom).

@@ -23,7 +23,7 @@ Not long ago, I began using Hugo's [`Text` filter](https://gohugo.io/functions/i
 
 [^imgNotStatic]: I'm using a screen capture, rather than doing my usual [static embed of the actual tweet](/posts/2022/06/static-tweets-hugo-update/), because that post's social/OG image has probably changed since then (I say, "probably," because it depends on Twitter's sometimes-slow-to-update image cache) and I want you to see how it originally looked.
 
-{{< img src="tweet-1549447287625207809-from-2022-07-19-1233CDT_1190x1494.png" alt="Screen capture of tweet ID 1549447287625207809" phn=true >}}
+{{< img src="tweet-1549447287625207809-from-2022-07-19-1233CDT_1190x1494.png" alt="Screen capture of tweet ID 1549447287625207809" phn=true source="Cloudinary" >}}
 
 The next day, I got a response from Twitter user @gaetawoo --- not about my post, but about that social/OG image:
 
@@ -164,7 +164,7 @@ The key is that, now, *every* post on the site contains a file called `title.png
 
 For this post in particular, that generates a social/OG image like this:
 
-![Sample title graphic for this post, with text overlay and the site’s “BW” logo](2022-07-23-sample-title-with-gradient_1024x512.jpg)
+![Sample title graphic for this post, with text overlay and the site’s “BW” logo](2022-07-23-sample-title-with-gradient_1024x512.jpg "Cloudinary")
 
 That's the result of overlaying this post's `title.png` file over the site-wide gradient/logo graphic.
 

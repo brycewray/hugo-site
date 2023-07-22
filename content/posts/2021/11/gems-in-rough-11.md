@@ -52,7 +52,7 @@ If you want to see the resulting HTML from how `imgc` works, use your browser's 
 
 [^notInsp]: I say to use **View Source** rather than the Inspector because, on some browsers, using the Inspector won't show you the nonce value.
 
-{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="LQIP" >}}
+{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="LQIP" source="Cloudinary" >}}
 
 <br />
 

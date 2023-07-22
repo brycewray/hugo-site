@@ -16,7 +16,7 @@ Last year, [I wrote](/posts/2020/09/mixed-nuts-2020-09/):
 
 To illustrate the difference, here's how the Windows version of Outlook shows an email thread which includes me:
 
-![Outlook on Windows - view of email thread](2021-10-11_screenshot_Outlook-on-Windows_segment_1610x512.png)
+![Outlook on Windows - view of email thread](2021-10-11_screenshot_Outlook-on-Windows_segment_1610x512.png "Cloudinary")
 
 I can see both my own emails and others’ listed in this view. Nice and convenient, right?
 

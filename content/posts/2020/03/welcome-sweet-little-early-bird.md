@@ -30,12 +30,12 @@ As I close this little update about this new little one, please allow "Pawpaw”
 Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after she arrived.
 {.imghCaption}
 
-![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg)
+![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg "Cloudinary")
 
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
 {.imghCaption}
 
-![Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time](Kennedy-goes-home__crop_1008x1021.jpg)
+![Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time](Kennedy-goes-home__crop_1008x1021.jpg "Cloudinary")
 
 Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class="nobrk">forty-three hours old.</span>
 {.imghCaption}

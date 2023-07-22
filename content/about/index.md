@@ -15,7 +15,7 @@ Eons ago, when the web[^web] [was a new thing](http://info.cern.ch/hypertext/WWW
 
 And, yes, I had one, back on what then was called [GTE.net](https://www.britannica.com/topic/GTE-Corporation). In fact, I was a "Charter Subscriber" to that ISP.
 
-![HTML code from a 1997 website](gte-net_HTML_1997-04-17_crop_1280x715.jpg)
+![HTML code from a 1997 website](gte-net_HTML_1997-04-17_crop_1280x715.jpg "Cloudinary")
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites --- mine among them.
 

@@ -32,7 +32,7 @@ The data from [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate li
 
 In large part, this experience with Ulysses is because, as novelist [Chris Rosser](https://chrisrosser.net) [observed](https://members.chrisrosser.net/posts/2020/07/17/another-look-at-ia-writer/) about these apps: "Where iA [Writer] tries to create a zen-like focused drafting experience, Ulysses nails it with its aesthetics and the graceful way in which it handles ugly markup." So exactly how *does* each app handle "ugly markup"? Look at these screen captures of how the two handle the same paragraph --- in this case, the one, above, that starts with "Another thing about Ulysses." Ulysses goes first.[^5]
 
-![Screen capture of Ulysses for a given paragraph](Ulysses_paragraph_sample_1366x562.png)
+![Screen capture of Ulysses for a given paragraph](Ulysses_paragraph_sample_1366x562.png "Cloudinary")
 <br />
 ![Screen capture of iA Writer for a given paragraph](iA_Writer_paragraph_sample_1334x682.png)
 

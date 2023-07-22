@@ -49,7 +49,7 @@ First, I no longer *needed* to use page bundles. That post from last year arose 
 
 Second --- and this is what got me to thinking about making the switch in the first place --- it became inconvenient to keep each post as an `index.md` file in its own folder. For example, when clicking on my content editor's dock icon, this was the "recent files" list I might see:
 
-{{< img src="iA-Writer_dock-menu-all-index_1288x2624.png" alt="A popup menu showing 10 recent-file entries, each with the same name of “index.md.”" phn=true >}}
+{{< img src="iA-Writer_dock-menu-all-index_1288x2624.png" alt="A popup menu showing 10 recent-file entries, each with the same name of “index.md.”" phn=true source="Cloudinary" >}}
 
 Not very helpful, right?
 

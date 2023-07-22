@@ -56,7 +56,7 @@ What, then, to do?
 
 If all your desired Google Fonts typefaces are *static* fonts, there's a great answer: use the excellent **[google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts)**.
 
-![Screen capture of google-webfonts-helper as of 2020-08-09](google-webfonts-helper_2516x1134.png)
+![Screen capture of google-webfonts-helper as of 2020-08-09](google-webfonts-helper_2516x1134.png "Cloudinary")
 
 This wonderful, totally free site not only provides the correct font files --- just use the search to find the typefaces you want --- but even helps customize the CSS for you to drop into your site.[^2] However, at least as of this writing, it doesn't yet provide the *variable* fonts in the Google Fonts library. What if you want those?
 
