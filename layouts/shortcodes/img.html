@@ -53,7 +53,9 @@
 		{{- $width := $imgRsc.Width -}}
 		{{- $height := $imgRsc.Height -}}
 		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
+		{{- if eq $simple false -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
+		{{- end }}
 		{{- if ne $source "Cloudinary" -}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
@@ -91,7 +93,9 @@
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}
+		{{- if eq $simple false -}}
 		</div>
+		{{- end }}
 	{{- end -}}
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable.</em></p>
