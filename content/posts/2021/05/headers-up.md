@@ -19,7 +19,7 @@ Here's what I said on that Discord channel:
 
 > Many comments here and elsewhere suggest putting a CF Worker in front of a Pages site to handle things like headers. I have yet to find any documentation that explains exactly how the "in front of" part works --- it's as if that's assumed knowledge. Is there a dead-simple example to which somebody could point me?
 
-Within a few moments, I received this response[^styleEdit] from "NaturallyLexan," who appears to be not a Cloudflare employee but, rather, an extremely helpful developer:
+Within a few moments, I received this response[^styleEdit] from "@NaturallyLexan," who appears to be not a Cloudflare employee but, rather, an extremely helpful developer:
 
 [^styleEdit]: Edited for style.
 
@@ -29,7 +29,7 @@ I gratefully replied:
 
 > Thanks, @NaturallyLexan. That helps a lot.
 
-. . . and so it did. Let's unpack what they told me.
+. . . and so it did. Let's unpack what @NaturallyLexan told me.
 
 In this scenario, your website's DNS is managed in Cloudflare, where your DNS settings screen shows info like this:
 

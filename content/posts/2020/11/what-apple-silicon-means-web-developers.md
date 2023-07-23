@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2020-11-20T16:25:00-06:00
 ---
 
-It's common to see web developers using laptops and desktops that run [macOS](https://www.apple.com/macos/). The presence of the Apple logo on a web dev's computer, if not covered by seemingly uncounted numbers of stickers the dev has acquired during their travels (hey, remember when people actually *traveled* to developer events?), sometimes seems to be a safe presumption.
+It's common to see web developers using laptops and desktops that run [macOS](https://www.apple.com/macos/). The presence of the Apple logo on a web dev's computer, if not covered by seemingly uncounted numbers of stickers the dev has acquired during his/her travels (hey, remember when people actually *traveled* to developer events?), sometimes seems to be a safe presumption.
 
 And why not? Since the web runs on \*nix, there is a significant incentive to build websites while using an operating system that combines enormous user-friendliness with a \*nix-like foundation. (To be specific, macOS is based on [BSD](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/BSD/BSD.html), but that's another story.)
 

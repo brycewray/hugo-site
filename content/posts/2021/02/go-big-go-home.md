@@ -126,7 +126,7 @@ Here's the corresponding Go version for Hugo:
 	separating the Cloudinary-related vars for
 	greater flexibility, especially in case
 	somebody else wants to borrow this code
-	for their own Cloudinary setup and
+	for his/her own Cloudinary setup and
 	transformation ("xFm") choices
 */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
