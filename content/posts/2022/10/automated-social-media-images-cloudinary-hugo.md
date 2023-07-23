@@ -26,7 +26,7 @@ And if you *do* use Hugo to manage your site and you either have, or are willing
 
 First, look at this tweet of a few months ago from the nice folks at [CloudCannon](https://cloudcannon.com) *(reproduced here as only a graphic, in case ongoing changes to the Twitter platform limit your ability to view the original tweet)*:
 
-{{< img src="Twitter_CloudCannon_1534248828559400960_1774x1838.png" alt="Screen capture of CloudCannon tweet from 2022-06-07, “Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do. Learn more about this feature.”" phn=true >}}
+{{< img src="Twitter_CloudCannon_1534248828559400960_1774x1838.png" alt="Screen capture of CloudCannon tweet from 2022-06-07, “Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do. Learn more about this feature.”" phn=true source="Cloudinary" >}}
 
 By comparison, the original text of the tweet, before the background processes added that image and its surrounding *social media sharing card*, looked like this:
 

@@ -34,7 +34,7 @@ In large part, this experience with Ulysses is because, as novelist [Chris Rosse
 
 {{< img src="Ulysses_paragraph_sample_1366x562.png" alt="Screen capture of Ulysses for a given paragraph" source="Cloudinary" simple=true >}}
 
-{{< img src="iA_Writer_paragraph_sample_1334x682.png" alt="Screen capture of iA Writer for a given paragraph" simple=true >}}
+{{< img src="iA_Writer_paragraph_sample_1334x682.png" alt="Screen capture of iA Writer for a given paragraph" source="Cloudinary" simple=true >}}
 
 *Although the [Next.js](https://nextjs.org) and [Nuxt.js](https://nuxtjs.org) JavaScript frameworks have [significantly](https://nextjs.org/blog/next-9-3) [improved](https://nuxtjs.org/blog/nuxt-static-improvements) their abilities to generate [static websites](https://dev.to/gtanyware/what-is-a-static-website-4k3o), **dedicated** [static site generators (SSGs)](https://staticgen.com) like [Eleventy](https://11ty.dev) (which powers this site) are ’waaaay easier to use and far less finicky. Want to build a web **app**? Either Next.js or Nuxt.js is great for that. Want to build and maintain a web**site**? Use a dedicated SSG.*
 

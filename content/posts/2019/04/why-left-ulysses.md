@@ -180,7 +180,7 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-![Screen capture from iA Writer app](iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png)
+![Screen capture from iA Writer app](iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png "Cloudinary")
 
 Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.
 {.imghCaption}

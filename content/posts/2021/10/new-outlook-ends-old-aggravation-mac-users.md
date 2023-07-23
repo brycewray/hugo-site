@@ -26,7 +26,7 @@ Now, here's how, for some years now, the Mac version of Outlook would show the s
 
 It's as if mine weren't there. Oh, but they are. What you'd have to do is click on the thread entry, whereupon in the Preview Pane on the right you'd see a "talk balloons" display of what I wanted to see in the *regular* display in the first place:
 
-![Old Outlook on Mac - a view of “talk balloons” portrayal of email thread](2021-10-10_screenshot_old-Outlook-on-Mac_02_segment_1505x512.png)
+![Old Outlook on Mac - a view of “talk balloons” portrayal of email thread](2021-10-10_screenshot_old-Outlook-on-Mac_02_segment_1505x512.png "Cloudinary")
 
 That aggravation, which had persisted for years, is nearing an end because of [Microsoft's introduction](https://www.windowscentral.com/project-monarch-outlook-web-universal-email-client-microsoft) of what it calls "New Outlook," an [Electron](https://www.electronjs.org/)-based version intended for cross-platform adoption. Here's how **it** shows that thread:
 

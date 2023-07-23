@@ -67,7 +67,7 @@ The only thing that kept Firebase in the evaluation process till nearly the end 
 
 ### Render
 
-![Screen capture of render.com home page as of 2020-07-01](Render_screen_cap_2524x1408.png)
+![Screen capture of render.com home page as of 2020-07-01](Render_screen_cap_2524x1408.png "Cloudinary")
 
 Render was hard to turn down. There is a lot of smart thinking behind it, it's young and eager, and my tests showed its results to be pretty impressive in not just speed but also consistency. It's going to be one to watch in this "space" in the next two or three years. I gave Render a lot of thought, especially given that its free tier for static sites allows 100 GB of up/down bandwidth per month with no other deploy limits *at all*. (I'm sure Render would gently rein you in if you got crazy with the quantity of deployments, but I'd never be in danger of that.)
 
@@ -77,7 +77,7 @@ Unfortunately, some of Render's DX (developer experience) --- notably the docume
 
 ### Vercel
 
-![Screen capture of vercel.com home page as of 2020-07-01](Vercel_screen_cap_2524x1432.png)
+![Screen capture of vercel.com home page as of 2020-07-01](Vercel_screen_cap_2524x1432.png "Cloudinary")
 
 Best known as the preeminent host for [Next.js](https://next.js.org)-based websites and apps but now branching out with better support for SSGs[^nextSSG], Vercel ticked all my boxes. Since I've also experimented a little with Next.js and admire the thinking and team behind that platform, I already had a good feeling about Vercel.
 
