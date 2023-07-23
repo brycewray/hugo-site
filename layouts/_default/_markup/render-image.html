@@ -17,22 +17,25 @@
 {{- $imgBd5 := md5 $src -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
+{{- $hint := "photo" -}}
+{{- $filter := "MitchellNetravali" -}}
+{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
 {{- $rscToMatch := print "images/" $src -}}
 
-{{- if (and (resources.GetMatch $rscToMatch) (ne $source "Cloudinary") ) -}}
+{{- if resources.GetMatch $rscToMatch -}}
 	{{ with resources.GetMatch $rscToMatch }}
-		{{- $hint := "photo" -}}
-		{{- $filter := "MitchellNetravali" -}}
-		{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 		{{- $imgRsc := . -}}
+		{{- $width := $imgRsc.Width -}}
+		{{- $height := $imgRsc.Height -}}
 		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
+		{{- if ne $source "Cloudinary" -}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if ge $imgRsc.Width . -}}
+						{{- if ge $width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
@@ -40,36 +43,32 @@
 				<source type="image/jpeg" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if ge $imgRsc.Width . -}}
+						{{- if ge $width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
-				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		</div>
-	{{- end -}}
-{{- else if (and (resources.GetRemote (print $cloudiBase $src)) (eq $source "Cloudinary") ) -}}
-	{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
-	<div class="{{ $divClass }}" data-pagefind-ignore>
-	{{- with .Page.Params.imgs }}
-		{{- $imgToGet := print $cloudiBase $src -}}
-		{{- with $imgToGet -}}
-			{{- with resources.GetRemote . -}}
-				{{- $width := .Width -}}
-				{{- $height := .Height -}}
-				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-				{{- with $respSizes -}}
-					{{- range $i, $e := . -}}
-						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-						{{- end -}}
+		{{- else if (and (resources.GetRemote (print $cloudiBase $src)) (eq $source "Cloudinary") ) -}}
+			{{- with $.Page.Params.imgs }}
+				{{- $imgToGet := print $cloudiBase $src -}}
+				{{- with $imgToGet -}}
+					{{- with resources.GetRemote . -}}
+						<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+						{{- with $respSizes -}}
+							{{- range $i, $e := . -}}
+								{{- if ge $width . -}}
+									{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+								{{- end -}}
+							{{- end -}}
+						{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
 					{{- end -}}
-				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+				{{- end -}}
 			{{- end -}}
 		{{- end -}}
+		</div>
 	{{- end -}}
-	</div>
 {{- else -}}
-	<p class="ctr legal"><em>Image unavailable, local or remote.</em></p>
+	<p class="ctr legal"><em>Image unavailable.</em></p>
 {{- end -}}
