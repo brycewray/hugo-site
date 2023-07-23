@@ -11,7 +11,7 @@ imgs:
 
 **Update, 2023-07-18**: As I will explain in a [subsequent post](/posts/2023/07/big-unbundle/), I've reverted to using [*global* resources rather than page resources](https://gohugo.io/hugo-pipes/introduction/) --- *i.e.*, all local images are now stored in the site project's `assets/images/` directory --- so a look at the [site repository](https://github.com/brycewray/hugo-site) won't show a setup that conforms to the approach I describe in this post.\
 \
-Also, while that approach **does** work, it apparently increases the build time for a Hugo project, especially given the sometimes underpowered servers used by some hosting vendors' free tiers. Therefore, if you adopt it for your own project, you may want to limit your fetching of remote images, thus keeping build times from becoming excessive.\
+Also, while that approach **does** work, it apparently increases the build time for a Hugo project, especially given the sometimes underpowered servers used by some hosting vendors' free tiers. Therefore, if you adopt it for your own project, you may want to limit your fetching of remote images, thus keeping build times from becoming excessive **or** try the alternative I describe in a [follow-up](/posts/2023/07/hugo-pipes-cloudinary-follow-up/) to this post.\
 \
 Finally, I have corrected the content of the final code block so that it corresponds to the local-first premise explained within; unfortunately, it didn't in the initial versions of this post.
 {.box}
