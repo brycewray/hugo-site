@@ -20,16 +20,16 @@ Don't worry: I'm *not* going to rehash that whole post. Let's just leave it at t
 It worked just fine, especially in development mode on my local machine. The problem came whenever I'd push the site repository to GitHub, whereupon a [GitHub Action (GHA) "worker" would build the site](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) and shoot it to my site's host, [Cloudflare Pages](https://pages.cloudflare.com). Builds which had formerly taken well under ten seconds in the GHA "worker" --- and under three seconds locally --- suddenly grew much longer:
 
 ```bash
-                   |  EN   
+                   |  EN
 -------------------+-------
-  Pages            |  323  
-  Paginator pages  |   61  
-  Non-page files   |    4  
-  Static files     |   60  
-  Processed images |  162  
-  Aliases          |    1  
-  Sitemaps         |    1  
-  Cleaned          | 1395  
+  Pages            |  323
+  Paginator pages  |   61
+  Non-page files   |    4
+  Static files     |   60
+  Processed images |  162
+  Aliases          |    1
+  Sitemaps         |    1
+  Cleaned          | 1395
 
 Total in 26948 ms
 ```
@@ -37,16 +37,16 @@ Total in 26948 ms
 . . . as compared to when I'd let Hugo handle *all* the images:
 
 ```bash
-                   |  EN   
+                   |  EN
 -------------------+-------
-  Pages            |  322  
-  Paginator pages  |   61  
-  Non-page files   |  118  
-  Static files     |   60  
-  Processed images | 1185  
-  Aliases          |    1  
-  Sitemaps         |    1  
-  Cleaned          |  420  
+  Pages            |  322
+  Paginator pages  |   61
+  Non-page files   |  118
+  Static files     |   60
+  Processed images | 1185
+  Aliases          |    1
+  Sitemaps         |    1
+  Cleaned          |  420
 
 Total in 6878 ms
 ```
@@ -62,16 +62,16 @@ INFO  build: running step "assemble" duration "402.24438ms"
 INFO  build: running step "render" duration "15.084852494s"
 INFO  build: running step "postProcess" duration "3.466052ms"
 
-                   | EN   
+                   | EN
 -------------------+------
-  Pages            | 323  
-  Paginator pages  |  61  
-  Non-page files   |   4  
-  Static files     |  60  
-  Processed images | 162  
-  Aliases          |   1  
-  Sitemaps         |   1  
-  Cleaned          |  58  
+  Pages            | 323
+  Paginator pages  |  61
+  Non-page files   |   4
+  Static files     |  60
+  Processed images | 162
+  Aliases          |   1
+  Sitemaps         |   1
+  Cleaned          |  58
 
 Total in 15549 ms
 ```
@@ -108,16 +108,16 @@ INFO  build: running step "assemble" duration "300.725411ms"
 INFO  build: running step "render" duration "7.378575067s"
 INFO  build: running step "postProcess" duration "2.958912ms"
 
-                   |  EN   
+                   |  EN
 -------------------+-------
-  Pages            |  325  
-  Paginator pages  |   62  
-  Non-page files   |    0  
-  Static files     |   60  
-  Processed images |  732  
-  Aliases          |    1  
-  Sitemaps         |    1  
-  Cleaned          | 1184  
+  Pages            |  325
+  Paginator pages  |   62
+  Non-page files   |    0
+  Static files     |   60
+  Processed images |  732
+  Aliases          |    1
+  Sitemaps         |    1
+  Cleaned          | 1184
 
 Total in 7753 ms
 ```
@@ -139,6 +139,9 @@ Invoking the render hook now can look like this (omitting the source specificati
 ```
 
 So, once again, boys and girls, it's code time. I'll present the three files in the same order as before: the render-image hook; the `img` shortcode; and the partial template which injects image-specific CSS into the `head` of any page that contains any images.
+
+**Important**: The earlier post's code was based on storing the images in a [*bundled*](https://gohugo.io/content-management/page-bundles/) project --- *i.e.*, wherein each image is stored in the same folder as the `index.md` file for the post which calls the image --- but I've [since](/posts/2023/07/big-unbundle/) reverted to the *unbundled* arrangement I'd used for most of the site's history until [last year](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/). As a result, the code below works with images which are [*global resources*](https://gohugo.io/hugo-pipes/introduction/) stored in the Hugo project's top-level `assets/` folder (specifically, `assets/images/`).
+{.box}
 
 {{< labeled-highlight lang="go-html-template" filename="render-image.html" >}}
 {{/*
