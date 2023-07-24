@@ -130,7 +130,7 @@ Invoking the render hook now can look like this (omitting the source specificati
 [Photo of a cat named Shakespeare sitting on a window sill]("my-pet-cat_3264x2448.jpg" "Cloudinary")
 ```
 
-. . . while using the `img` shortcode can look like this (similarly, omitting the `source` statement reverts to Hugo's image processing):[^commentsGo]:
+. . . while using the `img` shortcode can look like this (similarly, omitting the `source` statement reverts to Hugo's image processing)[^commentsGo]:
 
 [^commentsGo]: {{% mdcode-fn %}}
 
