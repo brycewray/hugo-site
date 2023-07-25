@@ -10,6 +10,18 @@
 	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.twitter-tweet {
+	font-size: var(--text-sm);
+	& a {
+		margin-left: 0.5em;
+	}
+	@media screen and (min-width: 1024px) {
+		& p {
+			font-size: var(--text-xl);
+		}
+	}
+}
+
 .toot-blockquote {
 	line-height: 1.35em; /* for non-`p` results from `text` var */
 	font-family: var(--social-sans-serif);

@@ -26,7 +26,7 @@
 {{- $conditionSearchForm := false -}}
 {{/*  {{- $conditionDetails := false -}}  */}}
 {{- $condition404 := false -}}
-{{- if (findRE `<blockquote class="toot-blockquote"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
+{{- if or (findRE `<blockquote class="toot-blockquote"` .Content 1) (findRE `<blockquote class="twitter-tweet"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
 {{- if (findRE `<div class="highlight"` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
 {{- if and (findRE `(<code)` .Content 1) (not (findRE `<div class="highlight"` .Content 1)) -}}{{- $conditionArtCode = true -}}{{- end -}}
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
