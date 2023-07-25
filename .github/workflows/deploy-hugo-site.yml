@@ -7,6 +7,8 @@ on:
 
 env:
   HUGO_VERSION: 0.115.4 # will get Extended Version below
+  HUGO_NPM: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  # ^^ refers to whether we're using the npm pkg `hugo-installer`
   DART_SASS_VERSION: 1.64.1 # (depends on STYLING env var)
   NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
@@ -37,8 +39,8 @@ jobs:
       - name: Install npm packages (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm install
-      - name: Hugo download/install (cond. - non-Node)
-        if: ${{ env.NODE != 'true' }}
+      - name: Hugo download/install (cond. - non-Hugo-via-hugo-installer)
+        if: ${{ env.HUGO_NPM != 'true' }}
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
@@ -57,7 +59,7 @@ jobs:
             resources
             static
           key: ${{ runner.os }}-hugosite
-      - name: Install Hugo via Node, build site, move feed files, run Pagefind (cond. - Node)
+      - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
         if: ${{ env.NODE == 'true' }}
         run: npm run build
       - name: Build site with Hugo, move feed files, run Pagefind (cond. - non-Node)
