@@ -193,20 +193,18 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if (and (resources.GetRemote (print $cloudiBase $src)) (eq $source "Cloudinary") ) -}}
+		{{- else if eq $source "Cloudinary" -}}
 			{{- with $.Page.Params.imgs }}
 				{{- $imgToGet := print $cloudiBase $src -}}
 				{{- with $imgToGet -}}
-					{{- with resources.GetRemote . -}}
-						<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-						{{- with $respSizes -}}
-							{{- range $i, $e := . -}}
-								{{- if ge $width . -}}
-									{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-								{{- end -}}
+					<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+					{{- with $respSizes -}}
+						{{- range $i, $e := . -}}
+							{{- if ge $width . -}}
+								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 							{{- end -}}
-						{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-					{{- end -}}
+						{{- end -}}
+					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}
@@ -292,20 +290,18 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if (and (resources.GetRemote (print $cloudiBase $src)) (eq $source "Cloudinary") ) -}}
+		{{- else if eq $source "Cloudinary" -}}
 			{{- with $.Page.Params.imgs }}
 				{{- $imgToGet := print $cloudiBase $src -}}
 				{{- with $imgToGet -}}
-					{{- with resources.GetRemote . -}}
-						<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-						{{- with $respSizes -}}
-							{{- range $i, $e := . -}}
-								{{- if ge $width . -}}
-									{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-								{{- end -}}
+					<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+					{{- with $respSizes -}}
+						{{- range $i, $e := . -}}
+							{{- if ge $width . -}}
+								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 							{{- end -}}
-						{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-					{{- end -}}
+						{{- end -}}
+					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}
