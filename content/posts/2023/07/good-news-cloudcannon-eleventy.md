@@ -1,5 +1,5 @@
 ---
-title: "Good news about CloudCannon and Eleventy"
+title: "Good news about CloudCannon and Eleventy"
 description: "Not long after receiving a short-sighted shafting, my favorite JavaScript-based SSG and its creator wind up in good and friendly hands."
 author: Bryce Wray
 date: 2023-07-25T15:09:00-05:00
