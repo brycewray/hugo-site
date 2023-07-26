@@ -21,7 +21,7 @@ Also last month, Leatherman [disclosed](https://www.zachleat.com/web/eleventy-si
 
 In short: things didn't look good for the Eleventy world and, by extension, for Leatherman.
 
-But, today, blog posts from [CloudCannon](https://cloudcannon.com/blog/cloudcannon-the-official-cms-partner-of-eleventy/), [Leatherman](https://www.zachleat.com/web/cloudcannon/), and the [Eleventy website](https://www.11ty.dev/blog/cloudcannon/) revealed a brighter outlook for both Leatherman and Eleventy: he's soon joining CloudCannon as a developer advocate **and** CloudCannon will now sponsor his continued work on Eleventy. As CloudCannon CEO Mike Neumegen correctly characterized this news, "It's an ideal outcome for everyone involved," adding that "we're delighted that we can help Eleventy continue as an independent open-source SSG."
+But, today, blog posts from [CloudCannon](https://cloudcannon.com/blog/cloudcannon-the-official-cms-partner-of-eleventy/), [Leatherman](https://www.zachleat.com/web/cloudcannon/), and the [Eleventy website](https://www.11ty.dev/blog/cloudcannon/) revealed a brighter outlook for both Leatherman and Eleventy: he's soon joining CloudCannon as a developer advocate **and** CloudCannon will now sponsor his continued work on Eleventy. CloudCannon CEO Mike Neumegen correctly characterized this news as "an ideal outcome for everyone involved," adding that "we're delighted that we can help Eleventy continue as an independent open-source SSG."
 
 Finally, here is the related video Leatherman posted:
 
