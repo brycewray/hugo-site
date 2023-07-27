@@ -124,13 +124,13 @@ Total in 7753 ms
 
 Before I give you the changed code, let me make an important note about the render-image hook. Unlike what I described in "[Better code for image processing in Hugo: the render hook edition](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/)," this now uses the `.Title` attribute **not** as an option for post-image captioning but, rather, to specify the image **processor** (`$proc`) --- either Hugo or Cloudinary. (For captioning, I've gone back to just adding captions manually in Markdown; it's not really that big a deal, since I don't use them that often.)
 
-Invoking the render hook now can look like this (omitting the source specification in the last part will revert to the default image processing, which is Hugo's):
+Invoking the render hook now can look like this (omitting the processor specification in the last part will revert to the default image processing, which is Hugo's):
 
 ```md
 [Photo of a cat named Shakespeare sitting on a window sill]("my-pet-cat_3264x2448.jpg" "Cloudinary")
 ```
 
-. . . while using the `img` shortcode can look like this (similarly, omitting the `source` statement reverts to Hugo's image processing)[^commentsGo]:
+. . . while using the `img` shortcode can look like this (similarly, omitting the `proc` statement reverts to Hugo's image processing)[^commentsGo]:
 
 [^commentsGo]: {{% mdcode-fn %}}
 
