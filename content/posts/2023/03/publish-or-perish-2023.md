@@ -134,7 +134,7 @@ The CFP UI is just a little less intuitive than Vercel's, but still not bad.
 
 Until a major change [announced](https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/) several weeks after I initially published this post, CFP suffered greatly from an incredibly outdated build image and, as a result, I severely downrated the platform in the post's original version. But, with the new "v2" build image --- now in public beta, but performing quite well so far --- CFP builds are snappy, albeit not as quick as Vercel's.[^buildCaching] More to the point: the new build image, unlike its predecessor, supports current [Node.js](https://nodejs.org/) versions and usually **doesn't** install things you don't want, so its initialization process is much quicker. Also, Hugo users will benefit especially from the new build image's ability to load the [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded) binary, as I [have described elsewhere](/posts/2023/05/cloudflare-pages-more-attractive-home-hugo-sites/). Currently, CFP is the only host with that capability.
 
-[^buildCaching]: Cloudflare says build caching, one of the things that *makes* Vercel builds fast, is on the CFP roadmap ("if your framework supports it") and probably will emerge later this year.
+[^buildCaching]: Cloudflare says build caching, one of the things that *make* Vercel builds fast, is on the CFP roadmap ("if your framework supports it") and probably will emerge later this year.
 
 Limits:
 - 500 deployments per month.
