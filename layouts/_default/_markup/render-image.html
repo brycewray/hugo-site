@@ -9,7 +9,7 @@
 */ -}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
-{{- $source := .Title -}}
+{{- $proc := .Title -}}{{/* image processor - default is Hugo, option is "Cloudinary"  */}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_01/" -}}
@@ -30,7 +30,7 @@
 		{{- $height := $imgRsc.Height -}}
 		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
-		{{- if ne $source "Cloudinary" -}}
+		{{- if ne $proc "Cloudinary" -}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
@@ -50,7 +50,7 @@
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if eq $source "Cloudinary" -}}
+		{{- else if eq $proc "Cloudinary" -}}
 			{{- with $.Page.Params.imgs }}
 				{{- $imgToGet := print $cloudiBase $src -}}
 				{{- with $imgToGet -}}

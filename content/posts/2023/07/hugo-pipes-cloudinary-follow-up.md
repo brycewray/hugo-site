@@ -122,7 +122,7 @@ INFO  build: running step "postProcess" duration "2.958912ms"
 Total in 7753 ms
 ```
 
-Before I give you the changed code, let me make an important note about the render-image hook. Unlike what I described in "[Better code for image processing in Hugo: the render hook edition](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/)," this now uses the `.Title` attribute **not** as an option for post-image captioning but, rather, to specify the image **source** --- either Hugo or Cloudinary. (For captioning, I've gone back to just adding captions manually in Markdown; it's not really that big a deal, since I don't use them that often.)
+Before I give you the changed code, let me make an important note about the render-image hook. Unlike what I described in "[Better code for image processing in Hugo: the render hook edition](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/)," this now uses the `.Title` attribute **not** as an option for post-image captioning but, rather, to specify the image **processor** (`$proc`) --- either Hugo or Cloudinary. (For captioning, I've gone back to just adding captions manually in Markdown; it's not really that big a deal, since I don't use them that often.)
 
 Invoking the render hook now can look like this (omitting the source specification in the last part will revert to the default image processing, which is Hugo's):
 
@@ -135,7 +135,7 @@ Invoking the render hook now can look like this (omitting the source specificati
 [^commentsGo]: {{% mdcode-fn %}}
 
 ```md
-{{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" source="Cloudinary" */>}}
+{{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" proc="Cloudinary" */>}}
 ```
 
 So, once again, boys and girls, it's code time. I'll present the three files in the same order as before: the render-image hook; the `img` shortcode; and the partial template which injects image-specific CSS into the `head` of any page that contains any images.
@@ -150,7 +150,7 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 */}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
-{{- $caption := .Title -}}
+{{- $proc := .Title -}}
 {{- $myCloud := "brycewray-com" -}}
 {{/* ^^^ Fill in your own Cloudinary cloud name! */}}
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
@@ -173,7 +173,7 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 		{{- $height := $imgRsc.Height -}}
 		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
-		{{- if ne $source "Cloudinary" -}}
+		{{- if ne $proc "Cloudinary" -}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
@@ -193,7 +193,7 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if eq $source "Cloudinary" -}}
+		{{- else if eq $proc "Cloudinary" -}}
 			{{- with $.Page.Params.imgs }}
 				{{- $imgToGet := print $cloudiBase $src -}}
 				{{- with $imgToGet -}}
@@ -238,9 +238,9 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
 {{- $simple := false -}}
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
-{{- $source := "default" -}}
-{{- if .Get "source" -}}{{- $source = .Get "source" -}}{{- end -}}
-{{- /* ^^ Matters only if $source ISN'T spec'd as "Cloudinary" */ -}}
+{{- $proc := "default" -}}
+{{- if .Get "proc" -}}{{- $proc = .Get "proc" -}}{{- end -}}
+{{- /* ^^ Matters only if $proc ISN'T spec'd as "Cloudinary" */ -}}
 
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}
@@ -270,7 +270,7 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 		{{- if eq $simple false -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
 		{{- end }}
-		{{- if ne $source "Cloudinary" -}}
+		{{- if ne $proc "Cloudinary" -}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
@@ -290,7 +290,7 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if eq $source "Cloudinary" -}}
+		{{- else if eq $proc "Cloudinary" -}}
 			{{- with $.Page.Params.imgs }}
 				{{- $imgToGet := print $cloudiBase $src -}}
 				{{- with $imgToGet -}}
