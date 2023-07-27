@@ -195,5 +195,5 @@ In this case, it produces:
 
 And that's *without* my having abused any square pegs, round holes, or even hammers.
 
-**Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images. (The exceptions are in a few posts, like this one, which cover Hugo-only image processing.)
+**Update from the future**: I later went back to using Cloudinary to handle some of the site's images.
 {.box}

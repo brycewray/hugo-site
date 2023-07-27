@@ -306,5 +306,5 @@ Even if you don't use `imgh` or anything like it, I hope this article has at lea
 - Utkarsh Verma, "[Using responsive images effortlessly with Hugo](https://bitbanged.com/posts/using-responsive-images-effortlessly-with-hugo/)" (<span class="nobrk">2022-03-06</span>).
 - Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (<span class="nobrk">2022-06-19</span>).
 
-**Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images. (The exceptions are in a few posts, like this one, which cover Hugo-only image processing.)
+**Update from the future**: I later went back to using Cloudinary to handle some of the site's images.
 {.box}

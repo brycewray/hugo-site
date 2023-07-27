@@ -64,5 +64,5 @@ Finally, be sure to check the `$.Colors` [example page](https://staticbattery.co
 **Later note**: I subsequently found a [2018 article](https://calendar.perfplanet.com/2018/gradient-image-placeholders/) which suggested the result of this approach should be considered as not an LQIP but, rather, a **GIP** (gradient image placeholder). Fair enough --- and please, folks, let's avoid any *.gif*-style arguments about how to pronounce the *G* of *GIP*.
 {.box}
 
-**Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images. (The exceptions are in a few posts, like this one, which cover Hugo-only image processing.)
+**Update from the future**: I later went back to using Cloudinary to handle some of the site's images.
 {.box}

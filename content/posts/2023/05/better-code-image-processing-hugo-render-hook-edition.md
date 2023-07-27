@@ -166,5 +166,5 @@ This photo appears in multiple images-related posts here on [this website](/).
 - John Gruber, "[Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)" (date unknown).
 - Joe Mooring, "[Link and image render hooks](https://www.veriphor.com/articles/link-and-image-render-hooks/)" (<span class="nobrk">2022-12-26</span>).
 
-**Update from the future**: I later went back to using Cloudinary to handle nearly all of the site's images.
+**Update from the future**: I later went back to using Cloudinary to handle some of the site's images.
 {.box}
