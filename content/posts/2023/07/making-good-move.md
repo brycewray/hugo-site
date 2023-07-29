@@ -136,6 +136,8 @@ The whole system runs much faster while using considerably less power. It backs 
 | **Windows and an [AAA game](https://www.g2a.com/news/features/best-aaa-games/)**[^gamesW11] **in Parallels Desktop** | n/a | 120°--135° |
 {.ulysses}
 
+To reiterate something I've said from time to time in these posts: I love living in the future.
+
 [^idleSpikes]: The higher numbers for "idle environment" usually came when the old Mac was running multiple, simultaneous backup tasks, especially via [Arq](https://arqbackup.com) to online storage.
 
 [^webdevTask]: By "'heavy' web dev task," I mean something like having Hugo regenerate *all* its images, do much more complicated [scoped styling](/posts/2023/01/sorta-scoped-styling-hugo-take-two/) than it already does, or otherwise jump through many more hoops than usual. You'll have to come up with your own web dev environment's equivalent.
@@ -143,8 +145,9 @@ The whole system runs much faster while using considerably less power. It backs 
 [^winVer]: That's Windows 10 on the old Mac and Windows 11 on the new Mac. The old Mac [wasn't eligible](https://appleinsider.com/articles/21/06/25/intel-macs-cant-run-windows-11-without-this-workaround) to run Windows 11.
 
 [^gamesW11]: Yes, it can even run AAA games in Windows 11! That's no small feat, since this is the *ARM* version of Windows 11, meaning that the games are using Windows/ARM's x86 emulator. Thus, you've got an AAA game on top of an x86 emulator on top of Windows/ARM on top of Parallel Desktop on top of macOS. Jeeeeeez. As you see in the table, it doesn't drive my new Mac higher than about 135°. Compare that to how the old Mac would jump up to the 165°--190°+ range just to run Windows *at all*.\
+\
 Please note also that:\
+\
 (a.) This enhanced gaming capability, added recently in Parallels Desktop 18, was something I wouldn't have dared to try on the old Intel Mac, so I can offer no backward-looking comparisons, hence the "n/a" in the table.\
+\
 (b.) Especially given the newness of this capability, compatibility varies from game to game --- and sometimes within segments of the same game --- often depending on what adjustments you make to a game's performance-related settings.
-
-To reiterate something I've said from time to time in these posts: I love living in the future.
