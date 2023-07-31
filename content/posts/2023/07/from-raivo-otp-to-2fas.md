@@ -39,6 +39,6 @@ The good thing is that, in the nearly two years since the first post, I've encou
 2FAS, iOS version (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
 
-As of now, 2FAS has no macOS version, but it does have a [browser extension](https://2fas.com/browser-extension/); and, of course, [Apple's Universal Clipboard feature](https://support.apple.com/en-us/HT209460) lets you copy a TOTP straight from 2FAS on your iDevice to a nearby Mac.
+As of now, 2FAS has no macOS version, but it does have a [browser extension](https://2fas.com/browser-extension/); and, of course, [Apple's Universal Clipboard feature](https://support.apple.com/en-us/HT209460) lets you copy a TOTP straight to a nearby Mac from 2FAS on your iDevice.
 
 While the circumstances surrounding the Raivo OTP ownership change are less than desirable, at least there are other TOTP apps, like 2FAS, on which an iDevice user still can rely.
