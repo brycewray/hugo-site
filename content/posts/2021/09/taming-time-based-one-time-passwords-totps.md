@@ -85,7 +85,7 @@ Aegis Authenticator (TOTPs simulated and some self-identifying text hidden).
 
 For iOS devices, I can strongly recommend [Raivo OTP](https://github.com/raivo-otp/ios-application). Its main app is on iOS, while its recently added macOS app is a “receiver” which lets you copy a TOTP from your phone straight to the Mac clipboard.[^4] It backs up to iCloud and thus makes your TOTPs available on all your iOS devices. Both apps are free, but the dev obviously appreciates — and, in my opinion, deserves — donations to help keep his work going.
 
-**Update, 2023-07-31**: I can no longer make this recommendation. Please see "[From Raivo to 2FAS](/posts/2023/07/from-raivo-otp-to-2fas/)" for an explanation --- and an alternative recommendation for a TOTP app about which I didn't learn until well after writing the post you're reading now.
+**Update, 2023-07-31**: I can no longer recommend Raivo OTP. Please see "[From Raivo OTP to 2FAS](/posts/2023/07/from-raivo-otp-to-2fas/)" for an explanation --- and an **alternative** recommendation for a TOTP app about which I didn't learn until well after initially issuing the post you're reading now.
 {.box}
 
 {{< img src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" phn=true proc="Cloudinary" >}}
