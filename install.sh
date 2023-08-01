@@ -1,7 +1,7 @@
 #!/bin/sh
 # --- for use with macOS and Linux/WSL
 
-HUGO_VERSION=0.116.0
+HUGO_VERSION=0.116.1
 HUGO_OS_ARCH='darwin-universal'
 # ^^^ choices for 'HUGO_OS_ARCH' (Extended Version only):
 # - 'darwin-universal' (macOS Universal Binary, Hugo 0.102.0 and up)
@@ -27,7 +27,7 @@ else
   tar -xvf hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz hugo
   rm -rf ../bin/hugo
   mv hugo ../bin
-  if ${HUGO_OS_ARCH} == 'darwin-universal'
+  if [ ${HUGO_OS_ARCH} == 'darwin-universal' ]
   then
     xattr -dr com.apple.quarantine ../bin/hugo # "bless" the Hugo binary in macOS
   fi
