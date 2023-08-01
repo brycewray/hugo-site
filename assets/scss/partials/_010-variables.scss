@@ -7,9 +7,10 @@
 
 	*/
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
+	/* https://modernfontstacks.com/ */
 	--sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "Liberation Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--serif: ui-serif, Georgia, "Noto Serif", "Liberation Serif", Cambria, "Times New Roman", Times, serif;
-	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Liberation Mono", "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
+	--serif: "Hoefler Text", Palatino, ui-serif, Georgia, "Noto Serif", "Liberation Serif", Cambria, "Times New Roman", Times, serif;
+	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Liberation Mono", Consolas, "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	/* --emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 	/* --font-thin: 100; */
