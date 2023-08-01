@@ -101,7 +101,7 @@ else
   tar -xvf hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz hugo
   rm -rf ../bin/hugo
   mv hugo ../bin
-  if ${HUGO_OS_ARCH} == 'darwin-universal'
+  if [ ${HUGO_OS_ARCH} == 'darwin-universal' ]
   then
     xattr -dr com.apple.quarantine ../bin/hugo # "bless" the Hugo binary in macOS
   fi
