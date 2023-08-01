@@ -92,6 +92,9 @@ details.comments > summary::-webkit-details-marker {
 
 This way, the user must **choose** to show the comments area, and the JS load comes into play *only* if that occurs. To see for yourself how it all works, open the **Network** tab in your browser's Inspector tool and then play with the **View/hide comments** pseudo-button down below.
 
+**Update, 2023-08-01**: This works in Chrome and Safari but not in Firefox, which damnedly insists on loading all the giscus JS regardless of whether the `details` element is opened or closed.
+{.box}
+
 ## Give the browser a head-start
 
 To facilitate slightly faster linking to the giscus app's remote host, just insert these [**resource hints**](https://www.w3.org/TR/resource-hints/) in each page's `head` (such as through a `head.html` [partial template](https://gohugo.io/templates/partials/), as I've done in this site):
