@@ -54,7 +54,7 @@ In a footnote to my [previous post](/posts/2023/06/using-dart-sass-hugo-simpler-
 
 > I'm definitely getting another Mac; in fact, I ordered it while working on this post. I've been a Mac user for [most of the last thirty-nine years](/posts/2019/07/independence/), and the alternatives, however intriguing (and, yes, less costly) some might be, still don't ring my chimes.[^linux]
 
-[^linux]: A few weeks later, once I had the new Mac, I did try Linux on the old Mac through several "Live Drive" test runs. Turns out that several Linux distros don't play nicely with the old Mac's sound system --- *i.e.*, to the point of producing no audio output whatsoever ---and my resulting research indicated a solution might be pretty messy *and* not at all stable.
+[^linux]: A few weeks later, once I had the new Mac, I did try Linux on the old Mac through several "Live Drive" test runs. Turns out that several Linux distros don't play nicely with the old Mac's sound system --- *i.e.*, to the point of producing no audio output whatsoever --- and my resulting research indicated a solution might be pretty messy *and* not at all stable.
 
 So there.
 
