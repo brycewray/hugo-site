@@ -21,7 +21,7 @@ It all began with last month's 2023 edition of Apple's annual Worldwide Develope
 
 Each June, the WWDC keynote presentation tells, among other things, what's coming in the next major updates in the various Apple operating systems. Then, within an hour or two, Apple releases a list of the Apple models that the new updates will support --- which relegates all other models to *no*-support status.
 
-Since it had been been three years since Apple's [WWDC 2020 announcement](https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/) of the transition of its Macintosh platform's architecture from Intel CPUs to Apple Silicon CPUs, I'd suspected this would be the year when my mid-2017 Intel Mac would wind up on the "[No soup for you](https://knowyourmeme.com/memes/no-soup-for-you-soup-nazi)" list --- and, sure enough, [it was](https://www.macrumors.com/2023/06/05/macos-sonoma-compatible-macs/).
+Since it had been been three years since Apple's [WWDC 2020 announcement](https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/) of the transition of its Macintosh platform's architecture from Intel CPUs to Apple Silicon CPUs, I'd suspected this would be the year when my mid-2017 Intel Mac would wind up on the "[No soup for you](https://knowyourmeme.com/memes/no-soup-for-you-soup-nazi)" list --- and, sure enough, [it did](https://www.macrumors.com/2023/06/05/macos-sonoma-compatible-macs/).
 
 Did this mean my Mac would suddenly stop working when macOS 14, a/k/a "macOS Sonoma," is released later this year? No, of course not. And Apple will continue to issue critical security updates on an as-needed basis for this and other newly unsupported Macs, for some time to come.[^undefined]
 
@@ -52,7 +52,9 @@ After days of research and headache-inducing wrestling with various possibilitie
 
 In a footnote to my [previous post](/posts/2023/06/using-dart-sass-hugo-simpler-way/), I revealed how that thought experiment ended up:
 
-> I'm definitely getting another Mac; in fact, I ordered it while working on this post. I've been a Mac user for [most of the last thirty-nine years](/posts/2019/07/independence/), and the alternatives, however intriguing (and, yes, less costly) some might be, still don't ring my chimes.
+> I'm definitely getting another Mac; in fact, I ordered it while working on this post. I've been a Mac user for [most of the last thirty-nine years](/posts/2019/07/independence/), and the alternatives, however intriguing (and, yes, less costly) some might be, still don't ring my chimes.[^linux]
+
+[^linux]: A few weeks later, once I had the new Mac, I did try Linux on the old Mac through several "Live Drive" test runs. Turns out that several Linux distros don't play nicely with the old Mac's sound system --- *i.e.*, to the point of producing no audio output whatsoever ---and my resulting research indicated a solution might be pretty messy *and* not at all stable.
 
 So there.
 
