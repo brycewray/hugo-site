@@ -66,7 +66,7 @@ Once I'd made that choice, the next step was to decide how to proceed. You know 
 
 As always when possible while buying new ’puter stuff, I over-spec'd. That means picking hardware and internal storage that's considerably heftier than what I really need, so the resulting setup will be as obsolescence-proof as possible.[^overSpec]
 
-[^overSpec]: After I posted this, I got multiple requests for details on exactly what I *did* get, so here you go . . .\
+[^overSpec]: After I posted this, I got multiple requests for details on exactly what I *did* get, so here you go . . .\
 \
 The Mac is a [mid-2023 Mac Studio](https://support.apple.com/kb/SP894) with M2 Max (12‑core CPU, 38‑core GPU, 16‑core Neural Engine), 64 GB unified RAM, and a 2 TB SSD. Since this wasn't an all-in-one like the old iMac it was replacing, that meant getting a display, so I went for the [Apple Studio Display](https://support.apple.com/kb/SP864). I wanted the same 27-inch/5K "Retina" screen *and* great audio quality that I'd had with the iMac; the ASD provides exactly those things (in fact, the ASD's sound system is even better than the iMac's, which really is saying something), plus even more ports into which to plug peripherals --- to be specific, three non-Thunderbolt USB-C ports.\
 \
