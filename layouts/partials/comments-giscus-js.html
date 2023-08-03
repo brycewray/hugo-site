@@ -6,7 +6,6 @@
 
     // Create and load the comments script
     let script = document.createElement('div');
-		script.classList.add("giscus-comments");
     script.innerHTML =
 			`<script src="https://giscus.app/client.js"
 					data-repo="brycewray/comments"
@@ -31,7 +30,7 @@
     document.removeEventListener('toggle', loadComments);
 	});
 </script>
-<details class="comments nScrHidden" data-pagefind-ignore data-comments>
+<details class="comments nScrHidden" data-pagefind-ignore>
 	<summary data-pagefind-ignore aria-label="Toggle for viewing or hiding comments">
 		<div class="svg">
 			<svg aria-hidden="true" class="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>
