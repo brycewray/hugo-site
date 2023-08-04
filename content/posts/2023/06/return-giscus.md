@@ -26,5 +26,5 @@ So, if indeed [a blog without comments is not a blog](https://blog.codinghorror.
 
 **Update, 2023-08-04**: . . . or not. 🤔\
 \
-After about six weeks of seeing essentially zero comments while watching giscus make many users' experience worse (again, it's because of Next.js, not giscus or [its fine developer](https://github.com/laymonage)), I have reverted to **not** having comments. This site's low traffic and the increasingly specificity of its audience don't seem suited to the inclusion of a commenting feature, after all.
+After about six weeks of seeing essentially zero comments while watching giscus make many users' experience worse (again, it's because of Next.js, not giscus or [its fine developer](https://github.com/laymonage)), I have reverted to **not** having comments. This site's low traffic and the increasing specificity of its audience don't seem suited to the inclusion of a commenting feature, after all.
 {.box}
