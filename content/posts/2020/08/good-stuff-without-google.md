@@ -74,13 +74,14 @@ For each variable font you want from Google Fonts:
 2. Then check the result in the **Embed** view. This gives you the code you'd use *if* you were going to serve the fonts off Google Fonts which, again, you *shouldn't* do:
 {{< img src="Public_Sans_Embed_1060x1798.png" alt="Screen capture from Google Fonts showing code for embedding" phn=true >}}
 
-1. Instead, copy the URL from the code, like this:
+3. Instead, copy the URL from the code, like this:
 {{< img src="Public_Sans_URL_to_copy_1066x630.png" alt="Screen capture from Google Fonts showing the URL to select" phn=true proc="Cloudinary" >}}
 
-1. Paste the copied URL into a browser window/tab.
+4. Paste the copied URL into a browser window/tab.
 ![Screen capture from browser showing URL pasted into URL bar"](Public_Sans_URL_pasted_into_browser_1588x74.png)
 
-1. Go to that URL.\
+5. Go to that URL.\
+\
 	The resulting page will give you CSS that looks something like the following (the actual content will depend on what is current on Google Fonts at the time):
 {{< highlight css "linenos=false" >}}
 /* latin-ext */
@@ -164,6 +165,7 @@ You probably don't need the `latin-extended` character sets (you already know if
 	- Copy the URL from the `src: url`. This is a direct link to the variable font. Don't worry about the bizarre name; we'll handle that in a moment.
 	- Paste the URL into *another* browser window/tab and press **Enter**.
 	- Download the file to *a folder of its own* on your development machine; and I also strongly suggest putting each of the folders in an overarching folder with a name that tells you the date you did this (I'll explain why shortly).\
+	\
 	For example, here's my `Public_Sans` folder with the files I downloaded to set them up on this site, and note that the inner folder is named `VF-2020-08-09` --- *i.e.*, variable fonts downloaded 2020-08-09 --- and each font type has its own separate subfolder (I *did* get the `latin-extended` versions, just in case):\
   &nbsp;
 ![Screen capture of OS folder with Public Sans typeface files](Public_Sans_folder_1502x672.png "Cloudinary")
@@ -172,10 +174,13 @@ You probably don't need the `latin-extended` character sets (you already know if
 8. Now, close the browser windows/tabs; you're done with them.
 9. In each one-font subfolder, **duplicate** its .woff2 file; keep the original just in case something goes wrong with the following step.
 10.  Rename the duplicate .woff2 to something that makes sense to you. My `latin` duplicates have these names (and note that, in each, the name includes the date as an identifier; again, I'll shortly explain why):\
+\
 	•  *public-sans-20200809-vf-italic-latin.woff2*\
+\
 	•  *public-sans-20200809-vf-roman-latin.woff2* --- I'm old-school and tend to call regular typefaces "Roman," even though that's actually correct only for serif faces.
-11. Now, put the renamed .woff2 files in whatever location is appropriate for your website's setup, and do the normal setup you'd do to make "local" fonts work.
-	For the CSS part of it, you can refer to that CSS you copied earlier, but **be sure** to change the URL to **yours** or you'll be serving from Google! For example, on my site when it was using Public Sans, you'd see the following for the Public Sans italic regular-weight file:
+11. Now, put the renamed .woff2 files in whatever location is appropriate for your website's setup, and do the normal setup you'd do to make "local" fonts work.\
+\
+For the CSS part of it, you can refer to that CSS you copied earlier, but **be sure** to change the URL to **yours** or you'll be serving from Google! For example, on my site when it was using Public Sans, you'd see the following for the Public Sans italic regular-weight file:
 {{< highlight css "linenos=false" >}}
 /* latin */
 @font-face {
@@ -193,8 +198,9 @@ You probably don't need the `latin-extended` character sets (you already know if
 Now, as promised, here are the reasons why you want to put the date in the .woff2 files’ names:
 
 - From time to time, Google changes these files to provide certain enhancements, so you'll want to repeat this procedure to get the latest and replace them on your site. (You've already got the code in there; just change the respective .woff2 file names.) The date will help you keep track of that. Perhaps more importantly&nbsp;.&nbsp;.&nbsp;.
-- If your site host uses a content delivery network (CDN), as is true for most [Jamstack](https://jamstack.wtf)-savvy hosts, it'll probably *cache* your assets, including your fonts, for faster delivery. That cache won't change unless your font file names change; so, if you want to update the files, you'll want to vary the names, and --- again --- the date is a handy way to be sure about that.
-	You *could* use the original, incomprehensible names if you wish, but I think giving them more human-friendly names while sticking to a naming convention is a lot less headache-inducing.[^3]
+- If your site host uses a content delivery network (CDN), as is true for most [Jamstack](https://jamstack.wtf)-savvy hosts, it'll probably *cache* your assets, including your fonts, for faster delivery. That cache won't change unless your font file names change; so, if you want to update the files, you'll want to vary the names, and --- again --- the date is a handy way to be sure about that.\
+\
+You *could* use the original, incomprehensible names if you wish, but I think giving them more human-friendly names while sticking to a naming convention is a lot less headache-inducing.[^3]
 
 ## Hoops dreams
 

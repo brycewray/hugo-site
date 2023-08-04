@@ -99,6 +99,7 @@ Okay, fair enough, I decided --- except for three things:
 
 1. My YAML config file had grown to over 160 lines, although some were empty lines to facilitate easy reading.
 2. The file had a *lot* of non-hierarchical settings sprinkled around the hierarchies. Still, that wasn't so bad; I'd simply move them up to the top, before any of the hierarchies.\
+\
 ***But . . .***
 3. I'd then need to deal with how you have to format multi-level hierarchies. *That* was still going to be a major pain.
 

@@ -13,6 +13,7 @@ As long as your site's monthly in/out bandwidth stays under 100&nbsp;GB, Netlify
 
 - **Easy and quick deployment from your online repository** --- You can connect your Netlify-based site to a repo on [Bitbucket](https://bitbucket.org), [GitHub](https://github.com), or [GitLab](https://gitlab.com); then, every time you push to its default branch, *bang*, Netlify auto-deploys. So, if you keep your site project synchronized among your devices ([as I do](/posts/2019/07/roger-copy/)), you can easily make changes and push them from just about anywhere.
 - **CDN-powered speed and efficiency** --- Netlify puts your site's generated files on a [content delivery network](https://web.archive.org/web/20150905054800/http://www.cdnetworks.com/blog/how-content-delivery-networks-work/) (CDN) through its partnership with multiple CDN providers, mainly [Amazon CloudFront](https://aws.amazon.com/cloudfront/). This allows your visitors, wherever they are, to access your site much more quickly than if its content lived on just one location that could be halfway around the world from them. This is a huge benefit under any circumstances, but particularly if you use images.\
+\
 And, speaking of assets like images&nbsp;.&nbsp;.&nbsp;.
 - **Post-processing of assets** --- Check the right boxes in your site's deploy settings, and each deploy will include automatic processing of items like images, CSS files, and JavaScript files to make them smaller and, thus, further improve your site's performance.
 
@@ -88,6 +89,7 @@ To use this to deploy a Netlify site from a GitHub repo --- and don't worry, Git
 6. Click **New access token**. Give it an identifying name for your benefit. If you wish, name it `NETLIFY_AUTH_TOKEN` (just to follow along in the sample GitHub Action I'll show you shortly).
 7. Click **Generate token** to generate the authorization variable **BUT** ***DON'T*** **CLOSE THE GENERATED TOKEN BEFORE YOU PERFORM THE NEXT THREE STEPS!**
 8. **Copy** the token and then **paste** it into that text file you opened in the first step. This is **critical** because you **won't** be able to access the token again.\
+\
 (You can create a **new** one, of course, but you can't edit or even view an **existing** personal access token after it's generated. That's for your own protection.)
 9. Save the text file **but** keep it open for the time being.
 10. **Now** you can click **Done** to save the newly created token.
@@ -107,6 +109,7 @@ To use this to deploy a Netlify site from a GitHub repo --- and don't worry, Git
 24. Click **Add secret**.
 25. Once again, click **New secret**.
 26. Name this secret `NETLIFY_SITE_ID` and copy/paste in the `NETLIFY_SITE_ID` value from the text editor file.\
+\
 (**You** can see this in your Netlify account, but GitHub Actions can't, which is why you have to "tell" GitHub what this is. In the more usual repo-to-deploy Netlify process, Netlify "tells" GitHub this during the build/deploy, but we're going to be doing something different.)
 27. Click **Add secret**.
 28. **Optional**: If you use webmentions, create another secret, `WEBMENTION_IO_TOKEN`, and paste in your webmention.io token (you can get that either by logging into [webmention.io](https://webmention.io) or using your Netlify account to copy the appropriate variable you've already stored there).

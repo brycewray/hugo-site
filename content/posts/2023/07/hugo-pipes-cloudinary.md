@@ -71,7 +71,8 @@ imgs:
 	- If it is, the image goes through Hugo's native image processing. (Thus, a local image is the default, taking precedence over a remote version.)
 	- If the image is not a page resource, Hugo polls Cloudinary for the image and, if it finds it, fetches it from there *but* also still converts it to a resource from which it then creates both an LQIP and a GIP as well as those placeholders' associated styling.
 	- If the image is in *neither* location (*i.e.*, I've screwed up and failed to make the image file either a page resource or an upload to Cloudinary), Hugo provides a little message noting the image's unavailability.\
-Ideally, I'll test ahead of time and see that message before you ever would; but it also could happen if Cloudinary had a hiccup during the site-building process. The main thing is that this measure keeps an AWOL image from crashing Hugo during either development or a production-side build.
+	\
+	Ideally, I'll test ahead of time and see that message before you ever would; but it also could happen if Cloudinary had a hiccup during the site-building process. The main thing is that this measure keeps an AWOL image from crashing Hugo during either development or a production-side build.
 
 In addition to making the render hook work with either local or remote images, this has, indeed, allowed me to cut down to just one image-processing shortcode, `img.html`, rather than having to use `imgh.html` for local images and `imgc.html` for Cloudinary-hosted[^otherVendors] images.
 

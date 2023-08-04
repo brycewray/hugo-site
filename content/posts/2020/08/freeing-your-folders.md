@@ -40,6 +40,7 @@ Before I give you the particulars, please be aware that I didn't come up with th
 -  As with all things computer-file-system-ish, you should **[have an ongoing backup](/posts/2019/02/back-up-jack/) before you do any of this**.
 - This is prior to the release of macOS Big Sur and thus is based on where you find things in its predecessor, macOS Catalina; so please adjust accordingly.
 - This presumes you **do** have your Mac desktop and **Documents** folders set to be stored in iCloud Drive, which has been the macOS default for the last few years; but, if you **don't**, there's no need to follow this procedure. You're already good to go.\
+\
 (If you want to check, just use the Mac Finder to navigate to **iCloud Drive** and see whether it contains **Desktop** and **Documents** folders that **aren't** empty. If so, this procedure is valid for you.)
 - This also presumes you've **already** [deactivated the **Optimize Mac Storage** feature](https://tidbits.com/2016/11/10/how-to-turn-off-sierras-optimized-storage/). If not, **don't** try this procedure. Instead, perform **that** change first and let the necessary resulting downloads occur. (It might take quite a while, which is what we're trying to avoid with this procedure.)
 
@@ -54,7 +55,9 @@ So, with all that understood, here we go.
 	 •  One called **1-Desktop**.\
 	 •  One called **2-Documents**.
 5. Drag (don't copy) to the **1-Desktop** folder all content you may have on the Mac desktop. This, of course, does **not** include any drive icons that are on the desktop — just files and aliases.\
+\
 You'll get a warning message about this content's no longer being available on your other iCloud-linked devices.\
+\
 Click the button that indicates you **do** want to move the content out of iCloud Drive.
 6. Open a separate Finder window and navigate to the **Documents** folder in your **iCloud Drive** folder.
 7. Select **everything** in that **Documents** folder.
@@ -63,6 +66,7 @@ Click the button that indicates you **do** want to move the content out of iClou
 {.box .indentAfterLI}
 
 8. Drag it all to the **2-Documents** folder.\
+\
 Again, you'll get the warning about moving the content out of iCloud Drive; so, as before, confirm that you **do** want to proceed.
 9.  Access the iCloud Drive settings: **System Preferences** \> **Internet Accounts** \> **iCloud** \> **iCloud Drive**.
 10. Click **Options**.

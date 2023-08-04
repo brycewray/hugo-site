@@ -88,6 +88,7 @@ This concludes Step 1 for Windows. You can now toggle this back to "closed."
 Let's say we'll call the new site `my-site`.
 
 1. Go into your user directory on your computer. If your user name on the computer is `JohnDoe`, that would be `/Users/JohnDoe/` in macOS and `C:\Users\JohnDoe\` in Windows.\
+\
 From here on, we'll refer to your *terminal app*. On macOS, the default is Terminal. On Windows, you can use either Command Prompt (*cmd.exe*) or Windows PowerShell; I suggest the latter.
 
 2. In your terminal app, enter:\

@@ -80,10 +80,12 @@ As August came to an end, "the dance" reared its ugly head again and, in the bac
 
 ### September
 
-- **[Now I’m sixty-four](/posts/2019/09/now-im-sixty-four/)** --- Right before that event occurred, I did take the opportunity to put up a little joking rewrite of the Lennon/McCartney *When I’m Sixty Four* since, on September 6, *I* turned sixty-four. I typically don’t mention my birthdays outside the family, but this was special: we’d recently learned our daughter and son-in-law were expecting our first grandchild, so I used this post as a kidding way of announcing it to some friends and relatives.  \
+- **[Now I’m sixty-four](/posts/2019/09/now-im-sixty-four/)** --- Right before that event occurred, I did take the opportunity to put up a little joking rewrite of the Lennon/McCartney *When I’m Sixty Four* since, on September 6, *I* turned sixty-four. I typically don’t mention my birthdays outside the family, but this was special: we’d recently learned our daughter and son-in-law were expecting our first grandchild, so I used this post as a kidding way of announcing it to some friends and relatives.\
+\
 However, that week, I **also** was getting ready for a transition that I thought, again, would end my quest for a more suitable SSG. So, two days later&nbsp;.&nbsp;.&nbsp;.
 
-- **[Why I left Hugo for Eleventy](/posts/2019/09/why-left-hugo-eleventy/)** --- I issued the post that said, essentially, "Hey, you know back in July when I told you I was glued to Hugo for life? Wel-l-l-l, not so fast."  \
+- **[Why I left Hugo for Eleventy](/posts/2019/09/why-left-hugo-eleventy/)** --- I issued the post that said, essentially, "Hey, you know back in July when I told you I was glued to Hugo for life? Wel-l-l-l, not so fast."\
+\
 I still stand by all the good things I said about Eleventy in this post. What I didn’t anticipate was that, only a few days later, the incredible ease of Eleventy --- combined with a brief flurry of "Oh-I-don’t-know-whether-all-this-[node-modules](https://docs.npmjs.com/about-packages-and-modules)-stuff-is-such-a-good-idea" angst, which now seems silly in retrospect --- would lead me to turn yet another corner in what now clearly was "the dance."
 
 - **[Back with Hugo](/posts/2019/09/back-with-hugo/)** --- Twelve days after the last post came this one, which followed a long day of thinking about whether I was really going to get the learning experience I’d wanted to get by using Eleventy rather than Hugo. (Hey, this made sense to me at the time.) It also followed my reading a Flavio Copes article that seemed to be speaking *directly* to me about the folly of "the dance." So, like a whipped dog, back I came to Hugo --- but not for long, as it would turn out.
@@ -96,8 +98,10 @@ So, here we were in October, three and a half months after I’d begun "the danc
 
 But I was, as I said, angry with myself about where things sat. And that led to my first post of what turned out to be an eventful October where "the dance" was concerned.
 
-- **[It’s about the food, not the decor](/posts/2019/10/its-about-food-not-decor/)** --- This was the nadir of "the dance" for me. I decided one hot afternoon while in a traffic jam that, by God, I’ll just *delete* all that stuff about Gatsby and Eleventy! *That’ll* fix it! So I did, indeed, whack all those posts.  \
-You tell ’em, Sparky.  \
+- **[It’s about the food, not the decor](/posts/2019/10/its-about-food-not-decor/)** --- This was the nadir of "the dance" for me. I decided one hot afternoon while in a traffic jam that, by God, I’ll just *delete* all that stuff about Gatsby and Eleventy! *That’ll* fix it! So I did, indeed, whack all those posts.\
+\
+You tell ’em, Sparky.\
+\
 Fortunately, that foul mood didn’t last long --- especially since, obviously unable to restrain myself, I’d now begun Gatsby Experiment III --- and I made things right with the next post.[^backto11ty]
 
 [^backto11ty]: I’d also --- *quietly* --- backtracked to Eleventy during this period, so in fact I was "back with Hugo" for only about two weeks. I then kept the site on Eleventy until [I had it Gatsby-ready in late October](/posts/2019/10/now-gatsby-geezer/).
@@ -118,7 +122,8 @@ Although I soon got to thinking about what I could try next (get your dancing sh
 
 - **[Some curmudgeonish thoughts, 2019 edition](/posts/2019/11/curmudgeonish-2019/)** --- This followed up on a similar "Andy Rooney-ish" [post](/posts/2018/11/some-curmudgeonish-thoughts/) from a year before.
 
-- **[Mixed nuts • November, 2019](/posts/2019/11/mixed-nuts-2019-11/)** --- In this otherwise benign set of quickies, I noted that Eleventy was still my favorite SSG. Just by saying so "aloud," so to speak, I had signaled to my brain that it was time to "dance" yet once more.  \
+- **[Mixed nuts • November, 2019](/posts/2019/11/mixed-nuts-2019-11/)** --- In this otherwise benign set of quickies, I noted that Eleventy was still my favorite SSG. Just by saying so "aloud," so to speak, I had signaled to my brain that it was time to "dance" yet once more.\
+\
 And, with that, I began reading everything I could understand where webpack was concerned, and I soon became convinced that putting Eleventy together with webpack would be the answer.
 
 During the week of Thanksgiving, especially that holiday weekend (just as I’d spent much of my days off during the July Fourth holiday working on Gatsby Experiment I), I worked out most of the kinks of the Eleventy/webpack connection I was trying to forge. I won’t tell you there weren’t fits and starts, but I felt I was on the right track and so I persisted.
@@ -127,7 +132,8 @@ And that led us to the Eleventy-/webpack-heavy set of December posts, of which t
 
 ### December
 
-- **[Packing up](/posts/2019/12/packing-up/)** --- Hey, world, it’s me, Bryce. Yeah, it’s that SSG stuff again. Yeah, I dropped Gatsby. Yeah, I’m back to Eleventy. But, ***man***, you ought to see what I can make it do in league with webpack!  \
+- **[Packing up](/posts/2019/12/packing-up/)** --- Hey, world, it’s me, Bryce. Yeah, it’s that SSG stuff again. Yeah, I dropped Gatsby. Yeah, I’m back to Eleventy. But, ***man***, you ought to see what I can make it do in league with webpack!\
+\
 .&nbsp;.&nbsp;.&nbsp;Or words to that effect.[^reaction11ty]
 
 [^reaction11ty]: While I figured the Eleventy community would blow me off on this due to my earlier fecklessness, I was --- and remain --- gratified by its extremely positive reaction.
