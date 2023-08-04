@@ -92,7 +92,7 @@ details.comments > summary::-webkit-details-marker {
 
 This way, the user must **choose** to show the comments area, and the JS load comes into play *only* if that occurs. To see for yourself how it all works, open the **Network** tab in your browser's Inspector tool and then play with the **View/hide comments** pseudo-button down below.
 
-**Update, 2023-08-01**: This works in Chrome and Safari but not in Firefox, which damnedly insists on loading all the giscus JS regardless of whether the `details` element is opened or closed.
+**Update, 2023-08-04**: I later learned that this works only due to a glitch in certain browsers and *isn't* kosher HTML, so I no longer hide the giscus comments section. (JavaScript-based attempts to resolve this have fallen short, primarily because of how browsers deal with remote scripts imported within `innerHTML`. While there apparently are workarounds for this annoyance, I finally decided they weren't worth the trouble.)
 {.box}
 
 ## Give the browser a head-start

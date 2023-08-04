@@ -17,4 +17,7 @@ As you may know, giscus works atop [GitHub Discussions](https://docs.github.com/
 
 *Because* giscus still loads a lot of off-site JavaScript when visible, I am once again putting comments behind `detail` and `summary` elements, as I [explained last July](/posts/2022/07/more-tips-using-giscus/#dont-show-it-by-default). It doesn't *solve* the too-much-JS-for-my-taste issue, but it delays it unless and until the user truly opts to see the giscus comments section.
 
+**Update, 2023-08-04**: I later learned that this works only due to a glitch in certain browsers and *isn't* kosher HTML, so I no longer hide the giscus comments section. (JavaScript-based attempts to resolve this have fallen short, primarily because of how browsers deal with remote scripts imported within `innerHTML`. While there apparently are workarounds for this annoyance, I finally decided they weren't worth the trouble.)
+{.box}
+
 So, if indeed [a blog without comments is not a blog](https://blog.codinghorror.com/a-blog-without-comments-is-not-a-blog/), I guess this site is back to being a blog. Use it in good health, everybody.
