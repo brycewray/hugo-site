@@ -7,7 +7,6 @@
 			{{ .Content | safeHTML }}
 			{{- partial "git.html" . -}}
 			{{- partial "contact-button.html" . -}}
-			{{- partialCached "comments-giscus.html" . -}}
 		</article>
 	</div>
 	{{ if or .PrevPage .NextPage }}
