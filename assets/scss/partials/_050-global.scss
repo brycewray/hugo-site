@@ -78,6 +78,8 @@ html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
+	-moz-osx-font-smoothing: auto;
+	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
 	font-variant-ligatures: normal;
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */
@@ -86,6 +88,9 @@ html, body {
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd);
 	color: var(--default);
+	@media screen and (min-width: 1024px) {
+		font-weight: var(--font-light);
+	}
 }
 /*
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,

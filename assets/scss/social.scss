@@ -151,6 +151,7 @@ a > .card, a > .toot-card {
 	}
 	.toot-author-handle {
 		color: var(--gray-700);
+		font-weight: var(--font-weight-sm);
 		font-size: var(--text-sm);
 		line-height: 1;
 	}
@@ -162,6 +163,7 @@ a > .card, a > .toot-card {
 	align-items: center;
 	color: var(--gray-800);
 	font-size: var(--text-sm);
+	font-weight: var(--font-weight-sm);
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
