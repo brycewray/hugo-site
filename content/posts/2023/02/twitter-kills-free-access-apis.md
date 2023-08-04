@@ -48,7 +48,9 @@ By the way: if you're a [Hugo](https://gohugo.io) user who employs its [built-in
 
 If you still use `tweet`, just be sure you [make the appropriate privacy settings](https://gohugo.io/about/hugo-and-gdpr/#twitter). For example, here's how Hugo, with those settings, renders that initial tweet about the change in the affected APIs' availability:
 
-{{< tweet "TwitterDev" "1621026986784337922" >}}
+> Starting February 9, we will no longer support free access to the Twitter API, both v2 and v1.1. A paid basic tier will be available instead 🧵
+>
+> <span class="pokey">— Twitter Dev (@TwitterDev) [February 2, 2023](https://twitter.com/TwitterDev/status/1621026986784337922?ref_src=twsrc%5Etfw)</span>
 
 . . . or, at least, that's how Hugo renders it unless and until Twitter kills free access to **that** API, too. Use it, and Twitter in general, at your own risk.
 
@@ -56,4 +58,7 @@ If you still use `tweet`, just be sure you [make the appropriate privacy setting
 > Starting February 9, we will no longer support free access to the Twitter API, both v2 and v1.1. A paid basic tier will be available instead 🧵
 >
 > <span class="pokey">— Twitter Dev (@TwitterDev) [February 2, 2023](https://twitter.com/TwitterDev/status/1621026986784337922?ref_src=twsrc%5Etfw)</span>
+
+
+{{/* < tweet "TwitterDev" "1621026986784337922" > */}}
 -->
