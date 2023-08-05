@@ -23,6 +23,7 @@ search-button {
 		color: var(--btn-text-default);
 		& .svg {
 			padding-left: var(--interactionPadding);
+			padding-bottom: 0.125em;
 			& svg {
 				width: var(--btn-svg-width);
 				height: auto;
