@@ -10,7 +10,7 @@ search-button {
 	place-items: center;
 	& button {
 		width: var(--btn-width);
-		height: calc(var(--btn-height) + 0.625rem);
+		height: var(--btn-height);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
