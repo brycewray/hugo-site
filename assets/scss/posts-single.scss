@@ -83,7 +83,14 @@
 	margin: 1.5em 0 2em;
 	border-radius: var(--btn-radius);
 	padding: 1em;
+}
+
+[data-theme="light"] .giscus-comments {
 	background-color: var(--gray-100);
+}
+
+[data-theme="dark"] .giscus-comments {
+	background-color: var(--gray-900);
 }
 
 details.comments {
@@ -141,7 +148,7 @@ contact-button button, details.comments > summary {
 		padding-right: var(--interactionPadding);
 		text-align: right;
 		/* text-transform: uppercase; */
-		font-size: var(--text-lg);
+		font-size: var(--btn-legend-text);
 		font-weight: var(--btn-legend-weight);
 	}
 }
