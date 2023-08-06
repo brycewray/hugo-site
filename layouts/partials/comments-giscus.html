@@ -1,12 +1,5 @@
 {{/* === `data-theme` choices
 {{- $dataTheme := "preferred_color_scheme" -}}
-{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_Inter.css" }}
-{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_sysFonts.css" }}
-{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_PublicSans.css" }}
-{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_LibreFranklin.css" }}
-{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_sysFonts_data-theme.css" }}
-{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_LibreFranklin_data-theme.css" -}}
-{{- $dataTheme := "https://www.brycewray.com/assets/css/giscus-preferred_LibreFranklin_data-theme.css" -}}
 {{- $dataThemeLight := "https://www.brycewray.com/assets/css/giscus-preferred_light_LibreFranklin.css" -}}
 {{- $dataThemeDark := "https://www.brycewray.com/assets/css/giscus-preferred_dark_LibreFranklin.css" -}}
 */}}
@@ -22,7 +15,13 @@
 	</summary>
 	<div class="giscus-comments" id="giscus-comments">
 		<script nonce="DhcnhD3khTMePgXw">
-			// h/t: https://github.com/giscus/giscus/issues/336
+			/*
+			h/t:
+
+			https://github.com/giscus/giscus/issues/336 (Sage Abdullah, Marcos Ruiz)
+
+			https://discord.com/channels/811491992285741077/1081301799551647895/threads/1136313039067553812 (Chris Ferdinandi)
+			*/
 
 			function getGiscusTheme() {
 				const html = document.querySelector("html")
