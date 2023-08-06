@@ -102,7 +102,7 @@ Next I had to decide about migrating my data and non-Apple apps from the old Mac
 
 The third-party apps were an easy decision. It made zero sense to move any of them over to the new Mac. First, I could just redownload them and apply any necessary licensing. Second, moving them from an Intel box to an Apple Silicon box would be goofy, even given how many of them already were [universal binaries](https://developer.apple.com/documentation/apple-silicon/porting-your-macos-apps-to-apple-silicon).[^settingsUniBins] As with the backups, reinstalling the third-party apps from scratch was both cleaner and more sensible.
 
-[^settingsUniBins]: Yes, you could move over the universal binaries apps themselves, but would all their settings files from the old Mac work the same once moved to the new Mac? I didn't know, and chose not to find out.
+[^settingsUniBins]: Yes, you could move over the universal binaries' apps themselves, but would all their settings files from the old Mac work the same once moved to the new Mac? I didn't know, and chose not to find out.
 
 **However**, since I *wasn't* migrating the old apps to the new Mac, I spent hours meticulously cataloguing not only which apps I'd been using but also their applicable licensing data. Similarly, I listed all my various browsers' extensions and settings, so I could cleanly reinstall the extensions on the Apple Silicon versions of the browsers. And, on a somewhat related topic, I even took screen captures of the old Mac's general menu bar and dock, so I would know what should go where on the new Mac. As for wallpaper, I'd simply re-select the choices I'd made on the old Mac, since they all came from macOS itself anyway.
 
