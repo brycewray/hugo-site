@@ -28,7 +28,7 @@ https://raw.githubusercontent.com/giscus/giscus/main/styles/themes/preferred_col
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
 
- main {
+main {
 	--color-prettylights-syntax-comment: #6e7781;
 	--color-prettylights-syntax-constant: #0550ae;
 	--color-prettylights-syntax-entity: #8250df;

@@ -27,7 +27,7 @@ https://raw.githubusercontent.com/giscus/giscus/main/styles/themes/preferred_col
  * Copyright (c) 2018 GitHub Inc.
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
-[data-theme="light"] main {
+main [data-theme="light"] {
 	--color-prettylights-syntax-comment: #6e7781;
 	--color-prettylights-syntax-constant: #0550ae;
 	--color-prettylights-syntax-entity: #8250df;
@@ -109,17 +109,17 @@ https://raw.githubusercontent.com/giscus/giscus/main/styles/themes/preferred_col
 	color-scheme: light;
 }
 
-[data-theme="light"] main .pagination-loader-container {
+main [data-theme="light"] .pagination-loader-container {
 	background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
 }
 
-[data-theme="light"]main .gsc-loading-image {
+main [data-theme="light"].gsc-loading-image {
 	background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }
 
 
 /*! Dark mode */
-[data-theme="dark"] main {
+main [data-theme="dark"] {
 	--color-prettylights-syntax-comment: #8b949e;
 	--color-prettylights-syntax-constant: #79c0ff;
 	--color-prettylights-syntax-entity: #d2a8ff;
@@ -201,11 +201,11 @@ https://raw.githubusercontent.com/giscus/giscus/main/styles/themes/preferred_col
 	color-scheme: dark;
 }
 
-[data-theme="dark"] main .pagination-loader-container {
+main [data-theme="dark"] .pagination-loader-container {
 	background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
 }
 
-[data-theme="dark"] main .gsc-loading-image {
+main [data-theme="dark"] .gsc-loading-image {
 	background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
 }
 
