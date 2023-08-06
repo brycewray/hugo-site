@@ -17,14 +17,7 @@ As you may know, giscus works atop [GitHub Discussions](https://docs.github.com/
 
 *Because* giscus still loads a lot of off-site JavaScript when visible, I am once again putting comments behind `detail` and `summary` elements, as I [explained last July](/posts/2022/07/more-tips-using-giscus/#dont-show-it-by-default). It doesn't *solve* the too-much-JS-for-my-taste issue, but it delays it unless and until the user truly opts to see the giscus comments section.
 
-**Update, 2023-08-04**: I later learned that this works only due to a glitch in certain browsers and *isn't* kosher HTML. My JavaScript-based attempts to resolve this fell short, partly because of my substandard JS skills but also because of how browsers deal with remote scripts imported within `innerHTML`. While there are some workarounds for this annoyance, I finally decided they weren't worth the trouble.\
-\
-(See also my further update at the bottom.)
+**Update, 2023-08-06**: I later learned that this works only due to a glitch in certain browsers and *isn't* kosher HTML. However, with help from a number of other folks, I've now got a *properly* working solution in place. Related post to come ASAP.
 {.box}
 
 So, if indeed [a blog without comments is not a blog](https://blog.codinghorror.com/a-blog-without-comments-is-not-a-blog/), I guess this site is back to being a blog. Use it in good health, everybody.
-
-**Update, 2023-08-04**: . . . or not. 🤔\
-\
-After about six weeks of seeing essentially zero comments while watching giscus make many users' experience worse (again, it's because of Next.js, not giscus or [its fine developer](https://github.com/laymonage)), I have reverted to **not** having comments. This site's low traffic and the increasing specificity of its audience don't seem suited to the inclusion of a commenting feature, after all.
-{.box}

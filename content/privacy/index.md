@@ -24,6 +24,10 @@ This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com) and is c
 
 This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, "[Fathom Analytics: count on it](/posts/2020/06/fathom-analytics-count-on-it/)."
 
+## giscus
+
+The site's [giscus](https://giscus.app) commenting system, which is based on the [GitHub Discussions search API](https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions#search), performs no tracking.
+
 ## Mastodon
 
 This site reproduces [Mastodon](https://join.mastodon.org) toots as purely static text and downloaded images with no tracking involved. Each toot is linked to its original location on the applicable Mastodon instance.
