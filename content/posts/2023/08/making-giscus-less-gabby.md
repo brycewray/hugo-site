@@ -31,7 +31,7 @@ White, a long-time professional web dev, replied in part:
 
 . . . which meant that it was Firefox, *not* Chrome and Safari, which had been handling this correctly from the start! Or, to put it another way, I had been depending on buggy behavior to make something work; and that's never wise.
 
-Another participant on this question session, Chris ("[Go Make Things](https://gomakethings.com/)") Ferdinandi, generously provided some code for making this work on Firefox, too, through use of JavaScript's [`innerHTML` property](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML). However, despite my subsequent and extended futzing that stretched into this past Friday morning, I was unable to get his suggestion and my site to play nicely together.
+Another participant on this question session, Chris (“[Go Make Things](https://gomakethings.com/)”) Ferdinandi, generously provided some code for making this work on Firefox, too, through use of JavaScript's [`innerHTML` property](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML). However, despite my subsequent and extended futzing that stretched into this past Friday morning, I was unable to get his suggestion and my site to play nicely together.
 
 The first thing I did as a result was to unhide the giscus section --- *i.e.*, I took away the "button" and just let the section load with the page on all browsers. I also added the following update to a couple of giscus-related posts:
 
