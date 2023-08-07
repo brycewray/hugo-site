@@ -85,14 +85,6 @@ So here's the code, the [operational version of which](https://github.com/brycew
 	</summary>
 	<div class="giscus-comments" id="giscus-comments">
 		<script>
-			/*
-			h/t:
-
-			https://github.com/giscus/giscus/issues/336 (Sage Abdullah, Marcos Ruiz)
-
-			https://discord.com/channels/811491992285741077/1081301799551647895/threads/1136313039067553812 (Chris Ferdinandi)
-			*/
-
 			function getGiscusTheme() {
 				const html = document.querySelector("html")
 				const giscusTheme = html.getAttribute("data-theme") === "dark" ? {{ $dataThemeDark }} : {{ $dataThemeLight }};
@@ -115,10 +107,10 @@ So here's the code, the [operational version of which](https://github.com/brycew
 			document.addEventListener('DOMContentLoaded', function () {
 				const giscusAttributes = {
 					"src": "https://giscus.app/client.js",
-					"data-repo": "brycewray/comments",
-					"data-repo-id": "R_kgDOHQK0bQ",
-					"data-category": "Announcements",
-					"data-category-id": "DIC_kwDOHQK0bc4CO1ew",
+					"data-repo": "[ENTER REPO HERE]",
+					"data-repo-id": "[ENTER REPO ID HERE]",
+					"data-category": "[ENTER CATEGORY NAME HERE]",
+					"data-category-id": "[ENTER CATEGORY ID HERE]",
 					"data-mapping": "pathname",
 					"data-strict": "1",
 					"data-reactions-enabled": "1",
