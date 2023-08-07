@@ -84,7 +84,7 @@ So here's the code, the [operational version of which](https://github.com/brycew
 		<div class="legend">View/hide comments</div>
 	</summary>
 	<div class="giscus-comments" id="giscus-comments">
-		<script nonce="DhcnhD3khTMePgXw">
+		<script>
 			/*
 			h/t:
 
