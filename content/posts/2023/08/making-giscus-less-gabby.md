@@ -128,6 +128,7 @@ So here's the code, the [operational version of which](https://github.com/brycew
 				Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
 				let divToAdd = document.querySelector('.giscus-comments');
 
+				// inject script when user clicks the `details` element
 				let detailsGiscus = document.getElementById('data-comments');
 				detailsGiscus.addEventListener("toggle", toggleDetails);
 				function toggleDetails() {
