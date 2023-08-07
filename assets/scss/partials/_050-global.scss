@@ -254,7 +254,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 		--containerNarrowerWidth: 50vw;
 		--bigImgDivExpansionWidth: 20vw;
 		--bigImgDivWidth: calc(var(--containerNarrowerWidth) + var(--bigImgDivExpansionWidth));
-		.bigImgDiv {
+		.bigImgDiv:not(li *) {
 			width: var(--bigImgDivWidth);
 			left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
 		}
