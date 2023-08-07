@@ -221,6 +221,12 @@ pre[class*="language-"] {
 
 .highlight {
 	position: relative;
+	@media screen and (min-width: 1024px) {
+		&:not(li *) {
+			width: var(--bigImgDivWidth);
+			left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
+		}
+	}
 	.chroma {
 		border-radius: 16px;
 		/* keeps code blocks from being too small
@@ -289,7 +295,9 @@ pre[class*="language-"] {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	line-height: 0.5em;
+	text-align: center;
 }
+
 .labeled-highlight + div.highlight {
 	margin-top: 0;
 	padding-top: 0;
