@@ -198,11 +198,9 @@ Now, without further ado, here's the relevant code.[^styling] Of course, you mus
 {{- if not $phn -}}
 	{{- $divClass = print $divClass " bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 	{{/*
-		The `imgB-`[hash]-GIP` class is
-		generated in a `head` partial;
-		here, we need only get the class's name,
-		using the same method as in that partial
-		(md5-ing the image file name).
+		The `imgB-`[hash]-GIP` class is generated in a `head` partial;
+		here, we need only get the class's name, using the same method as in
+		that partial (md5-ing the image file name).
 	*/}}
 {{- end -}}
 {{- $imgClass := "w-full animate-fade shadow" -}}

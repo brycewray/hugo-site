@@ -23,9 +23,7 @@ module.exports = async (user, id) => {
 	let stringToReturn = ``
 	if (environment === "production") {
 		/*
-			get data from the API(s)
-			and put the results in
-			the `stringToReturn` var
+			get data from the API(s) and put the results in the `stringToReturn` var
 		*/
 	} else {
 		stringToReturn = `<blockquote><p>API result will appear here in production.</p></blockquote>`

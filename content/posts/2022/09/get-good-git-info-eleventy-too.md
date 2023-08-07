@@ -44,10 +44,8 @@ module.exports = (pubdate, filename) => {
 	if (environment === "production") {
 		let repoLink = ``
 		/* ================
-			For `repoLink`, fill in the starting URL
-			for commits to your project's online repo!
-			If you use GitHub, it'll usually be
-			in the format of:
+			For `repoLink`, fill in the starting URL for commits to your project's online repo!
+			If you use GitHub, it'll usually be in the format of:
 			https://github.com/your-github-name/your-repo-name/commit/
 		================ */
 		pubdate = DateTime.fromJSDate(pubdate).toFormat("yyyy-MM-dd")

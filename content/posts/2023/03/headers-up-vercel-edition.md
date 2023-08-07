@@ -35,8 +35,7 @@ addEventListener('fetch', event => {
 })
 
 /*
-Functions to generate the nonce
-on each page load
+Functions to generate the nonce on each page load
 */
 
 async function handleRequest(request) {
@@ -48,8 +47,7 @@ async function handleRequest(request) {
 
 ```js
 /*
-Functions to generate the nonce
-on each page load
+Functions to generate the nonce on each page load
 */
 
 export default async function handleRequest(request) {

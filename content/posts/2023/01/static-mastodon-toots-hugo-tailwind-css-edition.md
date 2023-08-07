@@ -23,9 +23,7 @@ Other than normal Tailwind itself, the code I present below --- which **as of Ta
 
 ```css
 /*
-This is your project's main CSS file,
-perhaps `assets/css/index.css` or
-`themes/tailwind/assets/css/index.css`.
+This is your project's main CSS file, perhaps `assets/css/index.css` or `themes/tailwind/assets/css/index.css`.
 */
 
 @tailwind base;
@@ -123,12 +121,9 @@ With all of that understood, here's the Hugo [shortcode](https://gohugo.io/conte
 					</div>
 					{{/*
 						N.B.:
-						The above results in an empty, no-height div
-						when there's no image but there **is**
-						at least one item in `$media_attachments`.
-						Unfortunately, it seems to be the only way
-						to accomplish this. Not a good HTML practice,
-						but gets the job done.
+						The above results in an empty, no-height div when there's no image but there **is** at least one item in `$media_attachments`.
+						Unfortunately, it seems to be the only way to accomplish this.
+						Not a good HTML practice, but gets the job done.
 					*/}}
 					{{ range $media_attachments := . }}
 						{{ if eq $media_attachments.type "video" }}

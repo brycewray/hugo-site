@@ -137,8 +137,7 @@ But if you try this with the CSS nesting spec, you get:
 
 ```css
 /*
-	This is NOT the desired result,
-  but is what you get from CSS nesting.
+	This is NOT the desired result, but is what you get from CSS nesting.
 */
 
 .homepage: {

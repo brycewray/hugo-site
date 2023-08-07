@@ -60,21 +60,12 @@ const authorName = "John Doe"
 // ^ ^ substitute your own name there, of course!
 
 /*
-	To read the argument added to the
-	invocation of the file
-	(e.g., after `node newfile.js`),
-	we use `process.argv`, which returns
-	an array. The element we need is
-	`process.argv[2]`, i.e., the string
-	we need further down for the file path.
+	To read the argument added to the invocation of the file (e.g., after `node newfile.js`), we use `process.argv`, which returns an array.
+	The element we need is `process.argv[2]`, i.e., the string we need further down for the file path.
 	- https://nodejs.org/docs/latest/api/process.html#processargv
 
-	We then pull from it the desired title,
-	and --- for use in handling the final path later ---
-	the `yyyy` and `mm` parts of the path.
-	If you **don't** arrange your posts via
-	a `/yyyy/mm/` scheme, you'll want to make
-	appropriate changes within.
+	We then pull from it the desired title, and --- for use in handling the final path later --- the `yyyy` and `mm` parts of the path.
+	If you **don't** arrange your posts via a `/yyyy/mm/` scheme, you'll want to make appropriate changes within.
 */
 
 let
@@ -84,8 +75,7 @@ let
 	monthSlice = desiredPath.slice(11, 13)
 
 /*
-	Now we'll clean up the desired title
-	for use in the post itself:
+	Now we'll clean up the desired title for use in the post itself:
 	- Remove hyphens and the `.md` extension.
 	- Convert it to sentence case.
 */
@@ -102,8 +92,7 @@ desiredTitle = toSentenceCase(desiredTitle)
 
 /*
 	==========================
-	Now, we start creating the timestamp
-	in the format that most SSGs want to see.
+	Now, we start creating the timestamp in the format that most SSGs want to see.
 	This was adapted slightly from:
 	https://usefulangle.com/post/30/javascript-get-date-time-with-offset-hours-minutes
 */
@@ -160,13 +149,8 @@ current_secs = current_secs < 10
 	: current_secs
 
 /*
-	Current date/time ---
-	a string such as:
-	2022-07-08T09:49:04-05:00
-	(July 8, 2022, at 9:49:04 AM,
-	if one is in U.S. Central Time
-	in an area observing Daylight
-	Saving Time)
+	Current date/time --- a string such as:
+	2022-07-08T09:49:04-05:00 (July 8, 2022, at 9:49:04 AM, if one is in U.S. Central Time in an area observing Daylight Saving Time)
 */
 current_datetime = current_year + '-' + current_month + '-' + current_date + 'T' + current_hrs + ':' + current_mins + ':' + current_secs
 
@@ -178,8 +162,7 @@ let timeStamp = current_datetime + timezone_standard
 */
 
 /*
-	Now we create the string that
-	will go in the actual post.
+	Now we create the string that will go in the actual post.
 */
 
 let fileContents = `---
@@ -195,9 +178,7 @@ Text begins here.
 
 /*
 	Finally, we create the file.
-	It's necessary to check for the
-	existence of each folder level
-	(and, if necessary, create that level).
+	It's necessary to check for the existence of each folder level (and, if necessary, create that level).
 	h/t: https://www.webmound.com/nodejs-create-directory-recursively/
 */
 
@@ -225,8 +206,7 @@ const createFolder = async (path) => {
 }
 
 /*
-	And here's where we use those `yearSlice'
-	and `monthSlice` items.
+	And here's where we use those `yearSlice' and `monthSlice` items.
 */
 
 let createPath = __dirname + '/src/posts/' + yearSlice + '/' + monthSlice

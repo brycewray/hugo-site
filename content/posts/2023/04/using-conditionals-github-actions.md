@@ -61,12 +61,9 @@ env:
   NODE: true
   # ^^ 'true' = using npm/Node.js
   STYLING: VCSS
-  # ^^ choices: 'SCSS' and 'VCSS'
-  #    ('VCSS' for "vanilla" CSS, even if
-  #    enhanced by PostCSS)
+  # ^^ choices: 'SCSS' and 'VCSS' ('VCSS' for "vanilla" CSS, even if enhanced by PostCSS)
   HOST: CFP
-  # ^^ choices: 'CFP' (Cloudflare Pages)
-  #    and 'Vercel'
+  # ^^ choices: 'CFP' (Cloudflare Pages) and 'Vercel'
 
 jobs:
   deploy:
@@ -103,8 +100,7 @@ jobs:
         if: ${{ env.NODE != 'true' }}
         uses: supplypike/setup-bin@v3
         with:
-          # multiple lines of parameters
-          # not reproduced here;
+          # multiple lines of parameters not reproduced here;
           # this uses `PAGEFIND_VERSION`
       - name: Build Hugo site and run Pagefind with npm/Node.js
         if: ${{ env.NODE == 'true' }}
@@ -118,16 +114,12 @@ jobs:
         if: ${{ env.HOST == 'CFP' }}
         uses: cloudflare/pages-action@v1
         with:
-          # multiple lines of
-          # site-specific parameters
-          # not reproduced here
+          # multiple lines of site-specific parameters not reproduced here
       - name: Publish to Vercel
         if: ${{ env.HOST == 'Vercel' }}
         uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
-          # multiple lines of
-          # site-specific parameters
-          # not reproduced here
+          # multiple lines of site-specific parameters not reproduced here
 ```
 
 As your own GitHub Actions workflow requirements grow in complexity, using conditionals can be a welcome way to minimize, or even eliminate, having to manage multiple workflow files.

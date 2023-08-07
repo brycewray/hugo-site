@@ -130,8 +130,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		{{/*
-			Use that "X-UA-Compatible" line
-			**only** if you still support IE 11.
+			Use that "X-UA-Compatible" line **only** if you still support IE 11.
 		*/}}
 		{{ $twitterHandle := "@YourTwitterHandle" }}
 		{{/* Provide that, of course. */}}
@@ -152,25 +151,13 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $socImg = $fallbackImg.Permalink -}}{{/* fallback if not Home */}}
 	{{- else }}
 		{{- /*
-			Now we’ll start building
-			`$escapedTitle`, which is the
-			text we’ll give Cloudinary to
-			use for the title.
-			We begin by creating this
-			variable and assigning it
-			the page's current title.
+			Now we’ll start building `$escapedTitle`, which is the text we’ll give Cloudinary to use for the title.
+			We begin by creating this variable and assigning it the page's current title.
 		*/ -}}
 		{{- $escapedTitle := .Title -}}
 		{{- /*
-			Next, we start using Hugo’s
-			`replace` function to change
-			any troublesome characters to
-			their “escaped” versions.
-			As explained earlier in this post,
-			Cloudinary requires “double-escaping”
-			(meaning, escaping the `%` within
-			as `%25`) the following characters
-			as follows:
+			Next, we start using Hugo’s `replace` function to change any troublesome characters to their “escaped” versions.
+			As explained earlier in this post, Cloudinary requires “double-escaping” (meaning, escaping the `%` within as `%25`) the following characters as follows:
 			- Percent sign %2525 (not just %25)
 			- Comma %252C (not just %2C)
 			- Forward slash %252F (not just %2F)
@@ -180,21 +167,14 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		*/}}
 		{{- $escapedTitle = replace $escapedTitle "%" "%2525" -}}{{/* percent sign */}}
 			{{- /*
-				You **MUST** put that one
-				at the top to avoid
-				fouling up the rest!!
+				You **MUST** put that one at the top to avoid fouling up the rest!!
 			*/ -}}
 		{{- $escapedTitle = replace $escapedTitle "," "%252C" -}}{{/* comma */}}
 		{{- $escapedTitle = replace $escapedTitle "/" "%252F" -}}{{/* forward slash*/}}
 		{{- /*
-			From here on, the escaping
-			goes more simply.
-			These cover all the other
-			special characters my own titles
-			ever use. If yours use others,
-			you may want to use that
-			"URL Encode online" site
-			I mentioned before:
+			From here on, the escaping goes more simply.
+			These cover all the other special characters my own titles ever use.
+			If yours use others, you may want to use that "URL Encode online" site I mentioned before:
 			https://www.urlencoder.io/
 		- */}}
 		{{- $escapedTitle = replace $escapedTitle " " "%20" -}}{{/* regular space */}}
@@ -212,11 +192,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $escapedTitle = replace $escapedTitle ")" "%29" -}}{{/* closing parenthesis */}}
 		{{- $escapedTitle = replace $escapedTitle '"' "%22" -}}
 			{{- /*
-				straight-up **double** quote character
-				--- so the actual character
-				must, therefore, be wrapped in
-				**single** quote characters,
-				unlike the others in this list
+				straight-up **double** quote character --- so the actual character must, therefore, be wrapped in **single** quote characters, unlike the others in this list
 			*/ -}}
 		{{- $escapedTitle = replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening curly double quote character */}}
 		{{- $escapedTitle = replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing curly double quote character */}}
@@ -229,8 +205,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		*/ -}}
 		{{- $cloudName := "my-cloud-name" -}}
 			{{- /*
-				Must supply your own Cloudinary
-				cloud name, of course!
+				Must supply your own Cloudinary cloud name, of course!
 			*/ -}}
 		{{- $titleSize := 96 -}}{{/* pixels, not points */}}
 		{{- if gt (len $.Title) 36 -}}
@@ -239,35 +214,22 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		{{- $fontChoice := "arial" -}}
 			{{- /*
 				Arial is the default.
-				It’s beyond this post’s scope
-				to explain how to use any other
-				fonts (much less uploaded ones),
-				but we’ll leave this here
-				in case you want to try it.
+				It’s beyond this post’s scope to explain how to use any other fonts (much less uploaded ones), but we’ll leave this here in case you want to try it.
 			*/ -}}
 		{{- $titleWidth := 1136 -}}{{/* 72 each side from 1280 */}}
 		{{- $myUploadedBkgd := "my-bkgd-3k4dvaxlzd" -}}
 			{{- /*
-				Fill in the Cloudinary-assigned
-				**public ID** of your chosen,
-				pre-uploaded background image.
-				You can obtain that by going
-				into your Cloudinary account
-				and finding the image within
-				your **Media Library**.
+				Fill in the Cloudinary-assigned **public ID** of your chosen, pre-uploaded background image.
+				You can obtain that by going into your Cloudinary account and finding the image within your **Media Library**.
 			*/ -}}
 
 		{{- /*
-			With everything now set,
-			we assign to `$socImg` the
-			resulting Cloudinary URL.
+			With everything now set, we assign to `$socImg` the resulting Cloudinary URL.
 		*/ -}}
 		{{- $socImg := print "https://res.cloudinary.com/" $cloudName "/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_" $titleWidth ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:" $fontChoice "_" $titleSize "_center:" $escapedTitle "/" $myUploadedBkgd -}}
 
 		{{- /*
-			Now, back to more mundane
-			stuff until we get back
-			to the OG stuff at the end.
+			Now, back to more mundane stuff until we get back to the OG stuff at the end.
 		*/ -}}
 
 		<title>{{ .Title }} | {{ .Site.Title }}</title>
@@ -287,9 +249,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
 	{{- end -}}
 	{{- /*
-		And, finally, the payoff
-		of our earlier endeavors
-		with building `$socImg`...
+		And, finally, the payoff of our earlier endeavors with building `$socImg`...
 	*/ -}}
 		<meta name="og:image" content="{{ $socImg }}">
 		<meta name="twitter:image" content="{{ $socImg }}">

@@ -41,8 +41,7 @@ But if you were to suspect this would require a mountain of gnarly CSS --- or, a
 Before we get into the actual SCSS involved, note that the color variables to which it refers come from this (and, yes, I'm shamelessly cribbing those colors from the [Tailwind CSS](https://tailwindcss.com) [color palette](https://tailwindcss.com/docs/customizing-colors) and then adding a couple more courtesy of [Eric Meyer's Color Blender tool](https://meyerweb.com/eric/tools/color-blend)):
 
 ```scss
-// These are relevant excerpts from
-// a partial called `_variables.scss`.
+// These are relevant excerpts from a partial called `_variables.scss`.
 
 $gray-50: #f9fafb;
 $gray-100: #f3f4f6;
@@ -61,29 +60,20 @@ $gray-900: #111827;
 With those variables set, here we go. (You may want to copy the code into a text editor for more comfortable, scroll-free viewing.)
 
 ```scss
-// These are relevant excerpts from
-// my `articles.scss` file, which
-// comes into play only when a
-// page has the `article` element.
+// These are relevant excerpts from my `articles.scss` file,
+// which comes into play only when a page has the `article` element.
 
 @charset 'utf-8';
 @use 'partials/variables' as var;
 
-// First, we assign colors to
-// boldfaced and italicized text
-// that is **not** in the class
-// `red`, **not** inside a link,
-// **not** in a table head,
-// and **not** within a blockquote
+// First, we assign colors to boldfaced and italicized text
+// that is **not** in the class `red`, **not** inside a link,
+// **not** in a table head, and **not** within a blockquote
 // (we'll get to blockquotes below).
 //
-// Note that we cover not only
-// <strong> but also <b>, and
-// not only <em> but also <i>;
-// in addition, we take care of
-// groupings --- <strong><em>,
-// <em><strong>, <b><i>,
-// and <i><b>.
+// Note that we cover not only <strong> but also <b>, and
+// not only <em> but also <i>; in addition, we take care of
+// groupings --- <strong><em>, <em><strong>, <b><i>, and <i><b>.
 
 article strong:not(.red *):not(a *):not(blockquote *),
 article b:not(.red *):not(a *):not(blockquote *),
@@ -99,18 +89,13 @@ article b i:not(.red *):not(a *):not(blockquote *) {
 	}
 }
 
-// Now we deal with the blockquotes,
-// including links within them. Here,
-// we assign colors to boldfaced and
-// italicized text that **is** within
-// a blockquote but is **not** inside
-// a link. (We cover nearly the same tags
+// Now we deal with the blockquotes, including links within them. Here,
+// we assign colors to boldfaced and italicized text that **is** within
+// a blockquote but is **not** inside a link. (We cover nearly the same tags
 // and groupings as before.)
 //
-// In essence, we're giving this
-// normally grayed-out text some
-// color treatments to differ slightly
-// from usual blockquote styling.
+// In essence, we're giving this normally grayed-out text some
+// color treatments to differ slightly from usual blockquote styling.
 
 article strong:is(blockquote *):not(a *),
 article b:is(blockquote *):not(a *),

@@ -43,9 +43,7 @@ It turned out to be less trouble (albeit somewhat tedious) than I'd anticipated 
 } /* fallback colors to catch var issues) */
 
 /*
-Now, for each subsequent entry,
-we redefine `clr-lt` and `clr-dk`
-as desired.
+Now, for each subsequent entry, we redefine `clr-lt` and `clr-dk` as desired.
 */
 
 .chroma .err, .code-inline .err {
@@ -59,13 +57,10 @@ as desired.
 }
 
 /*
-. . . and so on down the list
-of code possibilities. The end
-result is a shorter, easier-to-read
-CSS file.
+. . . and so on down the list of code possibilities.
+The end result is a shorter, easier-to-read CSS file.
 
-And, yes: those colors are lifted
-from Tailwind CSS's color palette
+And, yes: those colors are lifted from Tailwind CSS's color palette
 (https://tailwindcss.com/docs/customizing-colors),
 as their variables' names suggest.
 My Sass styling uses them, too.

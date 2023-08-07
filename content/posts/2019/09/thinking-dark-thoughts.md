@@ -40,10 +40,9 @@ body {
 
 @media (prefers-color-scheme: dark) {
 	/*
-	============
-	this is what happens if the user
-	selects Dark Mode
-	============
+	==================================================
+	this is what happens if the user selects Dark Mode
+	==================================================
 	*/
 	body {
 		background: #000; /* totally black */

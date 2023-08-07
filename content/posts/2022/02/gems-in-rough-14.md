@@ -41,9 +41,8 @@ For example, the following won’t work:
 
 <p>The value of x is {{ $x }}.</p>
 <!--
-There will be a blank after "is"
-rather than the desired "10"; so
-it will say:
+There will be a blank after "is" rather than
+the desired "10"; so it will say:
 	The value of x is .
 -->
 ```

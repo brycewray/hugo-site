@@ -178,11 +178,7 @@ Late in the third week of this effort, even as I got those last few items workin
 One other thing kept nagging at me, also: footnotes. Here on the Hugo site, as I [explained](/posts/2019/02/ia-for-io/) back in February, I can type stuff like this:
 
 ```md
-This is how you do footnotes[^footnoteInfo] in
-Markdown and Hugo, even as you keep adding them,
-moving them around within the doc, *etc.*, and
-all of them end up perfectly numbered both at
-the original reference and down at the bottom.
+This is how you do footnotes[^footnoteInfo] in Markdown and Hugo, even as you keep adding them, moving them around within the doc, *etc.*, and all of them end up perfectly numbered both at the original reference and down at the bottom.
 
 [^footnoteInfo]: So here we are at the bottom.
 ```
