@@ -138,7 +138,6 @@ contact-button button, details.comments > summary {
 	}
 	& .svg {
 		padding-left: var(--interactionPadding);
-		padding-bottom: 0.25em;
 		& svg {
 			width: var(--btn-svg-width);
 			height: auto;
@@ -150,5 +149,11 @@ contact-button button, details.comments > summary {
 		/* text-transform: uppercase; */
 		font-size: var(--btn-legend-text);
 		font-weight: var(--btn-legend-weight);
+	}
+}
+
+contact-button button {
+	& .svg {
+		padding-bottom: 0.25em;
 	}
 }
