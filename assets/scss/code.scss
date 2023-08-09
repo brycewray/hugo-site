@@ -235,14 +235,6 @@ pre[class*="language-"] {
 		margin-right: -20vw;
 		max-width: 95vw;
 	}
-	.highlight:not(li *) {
-		width: var(--bigImgDivWidth);
-		left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
-	}
-	p.narrowNext + .highlight {
-		width: inherit;
-		left: 0;
-	}
 }
 
 /* === for copy-code-to-clipboard */
