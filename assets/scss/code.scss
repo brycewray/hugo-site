@@ -221,12 +221,6 @@ pre[class*="language-"] {
 
 .highlight {
 	position: relative;
-	@media screen and (min-width: 1024px) {
-		&:not(li *) {
-			width: var(--bigImgDivWidth);
-			left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
-		}
-	}
 	.chroma {
 		border-radius: 16px;
 		/* keeps code blocks from being too small
@@ -240,6 +234,14 @@ pre[class*="language-"] {
 		margin-left: -20vw;
 		margin-right: -20vw;
 		max-width: 95vw;
+	}
+	.highlight:not(li *) {
+		width: var(--bigImgDivWidth);
+		left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
+	}
+	p.narrowNext + .highlight {
+		width: inherit;
+		left: 0;
 	}
 }
 
