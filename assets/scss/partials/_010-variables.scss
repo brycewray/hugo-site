@@ -7,7 +7,7 @@
 
 	*/
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-	--sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "Liberation Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "Liberation Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--serif: ui-serif, Georgia, "Noto Serif", "Liberation Serif", Cambria, "Times New Roman", Times, serif;
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Liberation Mono", Consolas, "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", "Source Code Pro", Menlo, Monaco, "Courier New", monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -27,9 +27,11 @@
 	/* --font-black: 900; */
 	--font-weight-sm: var(--font-normal);
 	/* ^^^ for .pokey, .legal, footnotes, etc. if using font-light for `html` and `body` */
+	/*
 	@media screen and (min-width: 1024px) {
-		--font-article: var(--font-semilight);
+	 	--font-article: var(--font-semilight);
 	}
+	*/
 	--pub-date-weight: var(--font-semibold);
 
 	/* like Tailwind **SIZES** but not the concomitant `line-height, which is in comments */

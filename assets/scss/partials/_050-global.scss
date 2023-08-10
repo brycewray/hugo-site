@@ -84,15 +84,17 @@ html, body {
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
-	font-family: var(--sans-serif);
+	font-family: var(--serif);
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd);
 	color: var(--default);
+	/*
 	@media screen and (min-width: 1024px) {
-		font-weight: var(--font-light);
+	 	font-weight: var(--font-light);
 	}
+	*/
 }
-/*
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
@@ -102,7 +104,11 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .legal, .pokey {
 	font-family: var(--sans-serif);
 }
-*/
+
+// b, strong {
+// 	font-weight: var(--font-semibold);
+// }
+
 html {
 	/* scroll-behavior: smooth; */
 	scroll-padding-top: 80px;
@@ -110,10 +116,6 @@ html {
 
 p, li {
 	line-height: 1.4;
-}
-
-b, strong {
-	font-weight: var(--font-semibold);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
