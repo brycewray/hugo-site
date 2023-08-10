@@ -10,19 +10,16 @@ footer {
 	&.with-bg-dark {
 		padding-bottom: 6em;
 	}
-	& div.footerWrapper {
-		width: 65%;
-		height: 100%;
-	}
 	& p {
 		line-height: 1.5em; /* definitely em, not rem, here */
 		& code {
 			background-color: var(--bkgd-article-code);
 		}
 	}
-	div.footerWrapper {
+	& div.footerWrapper {
 		margin: 0 auto;
 		width: 80%;
+		height: 100%;
 		& p {
 			margin: 1rem 0;
 		}
