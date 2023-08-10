@@ -1,0 +1,161 @@
+@charset 'utf-8';
+/* @use 'partials/005-limited-colors' as clr; */
+/* @use 'partials/010-variables' as var; */
+
+:root {
+	--emerald-050: hsl(155, 80%, 96%);
+	--emerald-900: hsl(155, 61%, 19%);
+}
+
+@supports (color: oklch(49% 0.1 252)) {
+	:root {
+		--emerald-050: oklch(98% 0.019 158);
+		--emerald-900: oklch(37.92% 0.074 158);
+	}
+}
+
+td {
+	vertical-align: top;
+}
+
+/* === table for web typography article, part II */
+table.noborders {
+	width: 100%;
+	/* table-layout: fixed; */
+	margin: 1.5rem auto 1rem auto;
+	border: 0;
+	border-collapse: collapse;
+}
+
+table.noborders td {
+	font-weight: var(--font-normal);
+	text-align: left;
+	vertical-align: middle;
+	padding: 0.25rem 0 0.25rem 0.5rem;
+}
+
+table.noborders td.td30 {
+	width: 30%;
+}
+
+table.noborders td.td70 {
+	width: 70%;
+}
+
+table.noborders td img {
+	margin: 0;
+	display: block;
+	max-width: 60%;
+	height: auto;
+}
+
+table.noborders tr:nth-child(odd) {
+	background-color: var(--slate-050);
+}
+
+table.noborders tr:nth-child(even) {
+	background-color: var(--slate-150);
+}
+
+table.noborders thead td {
+	background-color: var(--blue-900);
+	color: var(--white);
+	font-weight: bold;
+}
+
+/* === end, table for web typography article, part II */
+
+/* === table for MLB/NFL article */
+table.leagues {
+	table-layout: fixed; /* so don't have to spec each `td`'s width */
+	width: 90%;
+	margin: 1rem auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+}
+
+/* === end, table for MLB/NFL article */
+
+table.ulysses {
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
+	font-size: var(--text-xs);
+}
+
+table.ulysses thead th {
+	background-color: var(--blue-800);
+	border: 1px solid;
+	border-color: var(--black) var(--gray-350) var(--black) var(--black);
+	color: var(--white);
+}
+
+table.ulysses thead th:last-child {
+	border-right-color: var(--black);
+}
+
+table.ulysses td {
+	text-align: center;
+	border: 1px solid;
+	border-color: var(--black);
+	padding: 0;
+}
+table.ulysses thead th, table.ulysses td {
+	padding: 0.125em 0.375em;
+}
+table.ulysses thead th:nth-child(1), table.ulysses td:nth-child(1) {
+	text-align: left;
+}
+table.ulysses tr:nth-child(odd) {
+	background-color: var(--white);
+}
+table.ulysses tr:nth-child(even) {
+	background-color: var(--emerald-050);
+}
+
+
+html[data-theme="dark"] {
+	& table.noborders {
+		& tr {
+			color: var(--black);
+		}
+	}
+	& table.ulysses {
+		& thead th {
+			border-color: var(--white);
+		}
+		& td {
+			border-color: var(--white);
+			color: var(--white);
+		}
+		& tr:nth-child(odd) {
+			background-color: var(--slate-700);
+		}
+		& tr:nth-child(even) {
+			background-color: var(--emerald-900);
+		}
+	}
+}
+
+/*
+=====
+*/
+
+@media screen and (min-width: 768px) {
+
+	table.noborders td img {
+		max-width: 40%;
+	}
+
+	table.ulysses {
+		font-size: inherit;
+		table-layout: fixed; /* so don't have to spec each `td`'s width */
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+	table.leagues {
+		width: 60%;
+	}
+}

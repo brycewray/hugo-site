@@ -1,0 +1,201 @@
+@charset 'utf-8';
+/* @use 'partials/005-limited-colors' as clr; */
+/* @use 'partials/010-variables' as var; */
+
+/* === for search form */
+
+[data-theme="light"] {
+	--input: var(--black);
+}
+
+[data-theme="dark"] {
+	--input: var(--white);
+}
+
+.searchDiv, .searchDivPF {
+	margin: 2em auto;
+}
+
+.searchDivPF {
+	/* margin: 0 auto; */
+	width: 80%;
+}
+
+.searchDiv {
+	width: 100%;
+}
+
+.searchBox {
+	position: relative;
+	margin: 0 auto;
+	width: 17em;
+	padding: 0;
+	background-color: var(--bkgd-box);
+	border: 1px solid;
+	border-color: var(--border);
+}
+
+.searchInput {
+	outline: none;
+	padding: 0.25em 0.5em 0.25em;
+	margin: 0;
+	border: 0;
+	color: var(--input);
+	background-color: transparent;
+}
+
+.searchBtn {
+	appearance: none; /* otherwise, Safari rounds it */
+	border-radius: 0; /* " " " " " " " " " " " " " " */
+	position: absolute;
+	right: 0px;
+	margin: 0; /* fixes oddity in Safari */
+	padding: 3px 12px;
+	font-weight: bold;
+	border: 1px solid;
+	border-color: var(--link);
+	background-color: var(--link);
+}
+
+.searchBtn:hover {
+	cursor: pointer;
+}
+
+.searchBtn:focus,
+.searchBtn:active,
+.searchBtn:hover {
+	border: 1px solid;
+	border-color: var(--link-afh);
+	background-color: var(--link-afh);
+}
+
+#search {
+	/* in case we need it */
+	margin: 0.5em auto 1em;
+}
+
+/* [overall area]
+.pagefind-ui {
+
+}
+*/
+
+.pagefind-ui__form {
+	/* holding */
+	position: relative;
+	text-align: center;
+}
+
+.pagefind-ui__search-input {
+	max-width: 300ch;
+	width: 17em;
+	text-align: left;
+	outline: none;
+	padding: 0.25em 0.5em 0.25em;
+	border: 1px solid;
+	border-color: var(--border);
+	border-radius: 9px;
+	background-color: var(--bkgd-box);
+	color: var(--input);
+}
+
+.pagefind-ui__drawer {
+	/* results area */
+	gap: 1em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.pagefind-ui__message {
+	/* count of results */
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+.pagefind-ui__button, .pagefind-ui__search-clear {
+	/* "Load more results" */
+	margin: 1em auto;
+	text-align: center;
+	border-radius: 9px;
+	padding: 3px 12px;
+	font-weight: bold;
+	border: 1px solid;
+	border-color: var(--link);
+	background-color: var(--link);
+	color: var(--btn-text-default);
+}
+
+.pagefind-ui__button:hover,
+.pagefind-ui__search-clear:hover {
+	cursor: pointer;
+}
+
+.pagefind-ui__button:focus,
+.pagefind-ui__search-clear:focus,
+.pagefind-ui__button:active,
+.pagefind-ui__search-clear:active,
+.pagefind-ui__button:hover,
+.pagefind-ui__search-clear:hover {
+	border: 1px solid;
+	border-color: var(--link-afh);
+	background-color: var(--link-afh);
+}
+
+
+.pagefind-ui__result {
+	/* li for list */
+	margin-bottom: 0.75em;
+}
+
+.pagefind-ui__results-area {
+	position: relative;
+}
+
+.pagefind-ui__button {
+	display: block;
+	/* position: absolute; */
+	/* left: 50%; */
+	/* bottom: 0; */
+}
+
+/*
+.pagefind-ui__result-excerpt {
+	font-family: var(--serif);
+}
+*/
+
+.pagefind-ui__result-excerpt mark {
+	color: var(--pf-result-excerpt);
+	background-color: var(--bkgd-pf-result-excerpt);
+}
+
+.pagefind-ui__result-title {
+	font-weight: bold;
+}
+
+/*
+====
+*/
+
+@media screen and (min-width: 768px) {
+	.searchDivPF {
+		width: 70%;
+	}
+	.searchInput {
+		max-width: 300ch;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.searchDivPF {
+		width: 65%;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.searchDivPF {
+		width: 50%;
+	}
+}

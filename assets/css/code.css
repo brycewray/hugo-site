@@ -1,0 +1,412 @@
+@charset 'utf-8';
+/* @use 'partials/005-limited-colors' as clr; */
+/* @use 'partials/010-variables' as var; */
+
+:root {
+	--orange-300: hsl(25, 100%, 78%);
+	--orange-700: hsl(25, 100%, 36%);
+	--yellow-200: hsl(55, 90%, 76%);
+	--yellow-300: hsl(55, 84%, 62%);
+	--yellow-800: hsl(55, 100%, 20%);
+	--green-100: hsl(145, 78%, 93%);
+	--green-600: hsl(145, 90%, 34%);
+	--emerald-200: hsl(155, 76%, 81%);
+	--emerald-700: hsl(155, 70%, 28%);
+	--sky-300: hsl(200, 100%, 77%);
+	--sky-700: hsl(200, 100%, 30%);
+	--fuchsia-300: hsl(290, 93%, 83%);
+	--fuchsia-700: hsl(290, 70%, 41%);
+}
+
+@supports (color: oklch(49% 0.1 252)) {
+	:root {
+		--orange-300: oklch(84.96% 0.097 49);
+		--orange-700: oklch(55.1% 0.155 49);
+		--yellow-200: oklch(94.03% 0.123 104);
+		--yellow-300: oklch(89.76% 0.164 104);
+		--yellow-800: oklch(47.33% 0.09965845980572594 104);
+		--green-100: oklch(96.37% 0.036 151);
+		--green-600: oklch(63.06% 0.174 151);
+		--emerald-200: oklch(90.85% 0.085 158);
+		--emerald-700: oklch(51.24% 0.11 158);
+		--sky-300: oklch(84.54% 0.094 241);
+		--sky-700: oklch(48.74% 0.113 241);
+		--fuchsia-300: oklch(83.21% 0.131 320);
+		--fuchsia-700: oklch(50.88% 0.222 320);
+	}
+}
+
+[data-theme="light"] {
+	--gray: var(--gray-700);
+	--orange: var(--orange-700);
+	--yellow: var(--yellow-800);
+	--green: var(--green-600);
+	--emerald: var(--emerald-700);
+	--sky: var(--sky-700);
+	--fuchsia: var(--fuchsia-700);
+}
+
+[data-theme="dark"] {
+	--gray: var(--gray-300);
+	--orange: var(--orange-300);
+	--yellow: var(--yellow-300);
+	--green: var(--green-100);
+	--emerald: var(--emerald-200);
+	--sky: var(--sky-300);
+	--fuchsia: var(--fuchsia-300);
+}
+
+/* ======= START, individual items from Chroma */
+
+/* Background */
+
+.chroma, .code-inline {
+	color: var(--black);
+	background-color: var(--bkgd-code);
+	border: 1px solid;
+	border-color: var(--border);
+}
+
+.chroma *, .code-inline * {
+	font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
+	/* === Fallback colors to catch var issues */
+	color: var(--clr, #ffff00);
+}
+
+/* === Other */
+.chroma .x, .code-inline .x {
+	--clr: var(--default);
+}
+
+/* === Error */
+.chroma .err, .code-inline .err {
+	--clr: var(--red);
+}
+
+/* === Lines (most items need specifics)
+Line text (cl - was missing from original), LineTableTD (lntd),
+LineTable (lntable), LineHighlight (hl), LineNumbersTable (lnt),
+LineNumbers (ln) */
+.chroma .cl, .code-inline .cl {
+	--clr: var(--default);
+}
+.chroma .lntd, .code-inline .lntd {
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.chroma .lntable, .code-inline .lntable {
+	border-spacing: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: auto;
+	overflow: auto;
+	display: block;
+}
+.chroma .hl, .code-inline .hl {
+	display: block;
+	width: 100%;
+	background-color: var(--yellow-200);
+}
+.chroma .lnt, .code-inline .lnt,  .chroma .ln, .code-inline .lnt {
+	margin-right: 0.4em;
+	padding: 0 0.4em;
+	--clr: var(--gray);
+}
+
+/* === Keywords
+Keyword (k), KeywordConstant (kc), KeywordDeclaration (kd),
+KeywordNamespace (kn), KeywordPseudo (kp), KeywordReserved (kr),
+KeywordType (kt) */
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt,
+.code-inline .k, .code-inline .kc, .code-inline .kd, .code-inline .kn, .code-inline .kp, .code-inline .kr, .code-inline .kt {
+	/* font-weight: bold; */
+	--clr: var(--sky);
+}
+
+/* === Names
+Name (n), NameAttribute (na), NameBuiltin (nb), NameBuiltinPseudo (bp),
+NameClass (nc), NameConstant (no), NameDecorator (nd), NameEntity (ni),
+NameException (ne), NameFunction (nf), NameFunctionMagic (fm),
+NameLabel (nl), NameNamespace (nn), NameOther (nx), NameProperty (np),
+NameTag (nt), NameVariable (nv), NameVariableClass (vc),
+NameVariableGlobal (vg), NameVariableInstance (vi), NameVariableMagic (vm) */
+.chroma .n, .chroma .na, .chroma .nb, .chroma .bp, .chroma .nc, .chroma .no, .chroma .nd, .chroma .ni, .chroma .ne, .chroma .nf, .chroma .fm, .chroma .nl, .chroma .nn, .chroma .nx, .chroma .np, .chroma .nt, .chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi, .chroma .vm,
+.code-inline .n, .code-inline .na, .code-inline .nb, .code-inline .bp, .code-inline .nc, .code-inline .no, .code-inline .nd, .code-inline .ni, .code-inline .ne, .code-inline .nf, .code-inline .fm, .code-inline .nl, .code-inline .nn, .code-inline .nx, .code-inline .np, .code-inline .nt, .code-inline .nv, .code-inline .vc, .code-inline .vg, .code-inline .vi, .code-inline .vm {
+	--clr: var(--orange);
+}
+
+/* === Literals
+Literal (l), LiteralDate (ld), LiteralString (s), LiteralStringAffix (sa),
+LiteralStringBacktick (sb), LiteralStringChar (sc), LiteralStringDelimiter (dl),
+LiteralStringDoc (sd), LiteralStringDouble (s2), LiteralStringEscape (se),
+LiteralStringHereDoc (sh), LiteralStringInterpol (si), LiteralStringOther (sx),
+LiteralStringRegex (sr), LiteralStringSingle (s1), LiteralStringSymbol (ss),
+LiteralNumber (m), LiteralNumberBin (mb), LiteralNumberFloat (mf),
+LiteralNumberHex (mh), LiteralNumberInteger (mi), LiteralNumberIntegerLong (il),
+LiteralNumberOct (mo) */
+.chroma .l, .chroma .ld, .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss, .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo,
+.code-inline .l, .code-inline .ld, .code-inline .s, .code-inline .sa, .code-inline .sb, .code-inline .sc, .code-inline .dl, .code-inline .sd, .code-inline .s2, .code-inline .se, .code-inline .sh, .code-inline .si, .code-inline .sx, .code-inline .sr,
+.code-inline .s1, .code-inline .ss, .code-inline .m, .code-inline .mb, .code-inline .mf, .code-inline .mh, .code-inline .mi, .code-inline .il, .code-inline .mo {
+	--clr: var(--gray);
+}
+
+/* === Operators
+Operator (.o), OperatorWord (.ow) */
+.chroma .o, .chroma .ow, .code-inline .o, .code-inline .ow {
+	--clr: var(--fuchsia);
+}
+
+/* === Punctuation (p) */
+.chroma .p, .code-inline .p {
+	--clr: var(--gray);
+}
+
+/* === Comments
+Comment (c), CommentHashbang (ch), CommentMultiline (cm),
+CommentSingle (c1), CommentSpecial (cs),
+CommentPreProc (cp), CommentPreProcFile (cpf) */
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs,
+.code-inline .c, .code-inline .ch, .code-inline .cm, .code-inline .c1, .code-inline .cs {
+	font-style: italic;
+	--clr: var(--emerald);
+}
+.chroma .cp, .chroma .cpf, .code-inline .cp, .code-inline .cpf {
+	--clr: var(--gray);
+}
+
+/* === Generics
+Generic (g), GenericDeleted (gd), GenericEmph (ge - italic), GenericError (gr),
+GenericHeading (gh), GenericInserted (gi), GenericOutput (go), GenericPrompt (gp),
+GenericStrong (gs - bold), GenericSubheading (gu), GenericTraceback (gt),
+GenericUnderline (gl) */
+.chroma .g, .chroma .gd, .chroma .gr, .chroma .gh, .chroma .gi, .chroma .go, .chroma .gp, .chroma .gu, .chroma .gt, .chroma .gl,
+.code-inline .g, .code-inline .gd, .code-inline .gr, .code-inline .gh, .code-inline .gi, .code-inline .go, .code-inline .gp, .code-inline .gu, .code-inline .gt, .code-inline .gl {
+	--clr: var(--gray);
+}
+.chroma .ge, .code-inline .ge {
+	font-style: italic;
+}
+.chroma .gs, .code-inline .gs {
+	font-weight: bold;
+}
+
+/* === TextWhitespace (w) */
+.chroma .w, .code-inline .w {
+	--clr: var(--gray);
+}
+
+
+/* ======= END, individual items from Chroma */
+
+pre,
+code {
+	font-family: var(--monospaced);
+  font-kerning: none;
+  font-variant-ligatures: none;
+	background: var(--bkgd-article-code);
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: var(--gray-200);
+	background: none;
+	font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	tab-size: 2;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"],
+pre.chroma {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	color: var(--black);
+	background-color: var(--white);
+}
+
+.highlight {
+	position: relative;
+}
+
+.highlight .chroma {
+	border-radius: 16px;
+	/* keeps code blocks from being too small
+	due to the `article code` rule above */
+	font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
+}
+
+@media screen and  (min-width: 1024px) {
+	pre.expand:hover {
+		margin-left: -20vw;
+		margin-right: -20vw;
+		max-width: 95vw;
+	}
+}
+
+/* === for copy-code-to-clipboard */
+
+/* h/t https://simplernerd.com/hugo-add-copy-to-clipboard-button/ */
+
+.clipboard-button {
+	position: absolute;
+	right: 0;
+	padding: 2px 7px 5px 7px;
+	margin: 5px;
+	color: var(--gray-500);
+	border-color: var(--gray-500);
+	background-color: var(--gray-100);
+	border: 1px solid;
+	border-radius: 6px;
+	font-size: 0.8em;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.1s;
+}
+.clipboard-button > svg {
+	fill: var(--gray-500);
+}
+.clipboard-button:hover {
+	cursor: pointer;
+	border-color: var(--green-600);
+	background-color: var(--green-100);
+}
+.clipboard-button:hover > svg {
+	fill: var(--green-600);
+}
+.clipboard-button:focus {
+	outline: 0;
+}
+/* .highlight {
+  position: relative;
+} */
+.highlight:hover > .clipboard-button {
+	opacity: 1;
+	transition: 0.2s;
+}
+
+/* === Inline code
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+} */
+
+.labeled-highlight {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	line-height: 0.5em;
+	text-align: center;
+}
+
+.labeled-highlight + div.highlight {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+
+/* needed for articles */
+
+code, article code, .box code {
+	background-color: var(--bkgd-article-code);
+}
+
+code {
+	font-family: var(--monospaced);
+  font-kerning: none;
+  font-variant-ligatures: none;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+article code {
+	font-size: 0.975em;
+}
+
+article .footnotes code {
+	font-size: 1em;
+	/* overriding the `article code` part above for footnotes */
+}
+
+
+article p code.code-inline {
+	/* font-size: var(--text-sm); */
+	padding: 0.25em 0.5em;
+	margin: 0 0.25em;
+}
+
+article .footnotes li code {
+	white-space: normal;
+}
+
+article blockquote code {
+	color: var(--bquote-article-code);
+}
+
+.box code, box a code {
+	font-size: 1em; /* definitely em */
+	background-color: var(--bkgd-box-code);
+}
+
+article ol li .highlight {
+	line-height: 1.5;
+}
+
+html[data-theme-dark] .chroma *,
+html[data-theme-dark] .code-inline * {
+	color: var(--clr, #191970);
+}
+
+html[data-theme-dark] .chroma .h1,
+html[data-theme-dark] .code-inline .h1 {
+	background-color: var(--yellow-800);
+}
+
+html[data-theme="dark"] :not(pre) > code[class*="language-"],
+html[data-theme="dark"] pre[class*="language-"] {
+	color: var(--white);
+	background-color: var(--slate-800);
+}
+
+/*
+=====
+*/
+
+@media screen and (min-width: 768px) {
+	article code {
+		font-size: -0.95em;
+	}
+	article p code {
+		white-space: nowrap;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	article code {
+		font-size: 0.925em;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	article code {
+		font-size: 0.9em;
+	}
+}
