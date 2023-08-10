@@ -19,6 +19,15 @@
 .searchDivPF {
 	/* margin: 0 auto; */
 	width: 80%;
+	@media screen and (min-width: 768px) {
+		width: 70%;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 65%;
+	}
+	@media screen and (min-width: 1536px) {
+		width: 50%;
+	}
 }
 
 .searchDiv {
@@ -36,6 +45,9 @@
 }
 
 .searchInput {
+	@media (min-width: 768px) {
+		max-width: 300ch;
+	}
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
 	margin: 0;
@@ -55,18 +67,14 @@
 	border: 1px solid;
 	border-color: var(--link);
 	background-color: var(--link);
-}
-
-.searchBtn:hover {
-	cursor: pointer;
-}
-
-.searchBtn:focus,
-.searchBtn:active,
-.searchBtn:hover {
-	border: 1px solid;
-	border-color: var(--link-afh);
-	background-color: var(--link-afh);
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus, &:active, &:hover {
+		border: 1px solid;
+		border-color: var(--link-afh);
+		background-color: var(--link-afh);
+	}
 }
 
 #search {
@@ -125,24 +133,15 @@
 	border-color: var(--link);
 	background-color: var(--link);
 	color: var(--btn-text-default);
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus, &:active, &:hover {
+		border: 1px solid;
+		border-color: var(--link-afh);
+		background-color: var(--link-afh);
+	}
 }
-
-.pagefind-ui__button:hover,
-.pagefind-ui__search-clear:hover {
-	cursor: pointer;
-}
-
-.pagefind-ui__button:focus,
-.pagefind-ui__search-clear:focus,
-.pagefind-ui__button:active,
-.pagefind-ui__search-clear:active,
-.pagefind-ui__button:hover,
-.pagefind-ui__search-clear:hover {
-	border: 1px solid;
-	border-color: var(--link-afh);
-	background-color: var(--link-afh);
-}
-
 
 .pagefind-ui__result {
 	/* li for list */
@@ -160,42 +159,14 @@
 	/* bottom: 0; */
 }
 
-/*
 .pagefind-ui__result-excerpt {
-	font-family: var(--serif);
-}
-*/
-
-.pagefind-ui__result-excerpt mark {
-	color: var(--pf-result-excerpt);
-	background-color: var(--bkgd-pf-result-excerpt);
+	/* font-family: var(--serif); */
+	& mark {
+		color: var(--pf-result-excerpt);
+		background-color: var(--bkgd-pf-result-excerpt);
+	}
 }
 
 .pagefind-ui__result-title {
 	font-weight: bold;
-}
-
-/*
-====
-*/
-
-@media screen and (min-width: 768px) {
-	.searchDivPF {
-		width: 70%;
-	}
-	.searchInput {
-		max-width: 300ch;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.searchDivPF {
-		width: 65%;
-	}
-}
-
-@media screen and (min-width: 1536px) {
-	.searchDivPF {
-		width: 50%;
-	}
 }

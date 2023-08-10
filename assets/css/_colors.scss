@@ -302,10 +302,7 @@ OKLCH versions from https://oklch.com.
 	/* ^^^ could also be #eee at some point, hence this var */
 	--black: hsl(0, 0%, 0%);
 	/* ^^^ could also be #333 at some point, hence this var */
-}
-
-@supports (color: oklch(49% 0.1 252)) {
-	:root {
+	@supports (color: oklch(49% 0.1 252)) {
 		--red-300: oklch(80.01% 0.109 25);
 		--red-400: oklch(70.44% 0.171 25);
 		--red-500: oklch(63.5% 0.206 25);
@@ -324,4 +321,3 @@ OKLCH versions from https://oklch.com.
 		--blue-950: oklch(28.03% 0.086 256);
 	}
 }
-

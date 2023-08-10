@@ -7,35 +7,29 @@ footer {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5em;
 	margin: 2rem auto 0 auto;
-}
-
-footer.with-bg-dark {
-	padding-bottom: 6em;
-}
-
-footer p {
-	line-height: 1.5em; /* definitely em, not rem, here */
-}
-
-footer p code {
-	background-color: var(--bkgd-article-code);
-}
-
-footer div.footerWrapper {
-	margin: 0 auto;
-	width: 80%;
-	height: 100%;
-}
-
-footer div.footerWrapper p {
-	margin: 1rem 0;
-}
-
-footer div.footerWrapper div.icons-box {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 1em;
+	&.with-bg-dark {
+		padding-bottom: 6em;
+	}
+	& p {
+		line-height: 1.5em; /* definitely em, not rem, here */
+		& code {
+			background-color: var(--bkgd-article-code);
+		}
+	}
+	& div.footerWrapper {
+		margin: 0 auto;
+		width: 80%;
+		height: 100%;
+		& p {
+			margin: 1rem 0;
+		}
+		& div.icons-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 1em;
+		}
+	}
 }
 
 circle.GitHub,

@@ -5,20 +5,18 @@
 .header-anchor {
 	text-decoration: none;
 	color: var(--head);
-}
-
-.header-anchor:hover, .header-anchor:active, .header-anchor:focus {
-	color: var(--link);
-	text-decoration: underline;
-	text-decoration-thickness: var(--textDcThickHA);
-	text-underline-offset: var(--textUnOffst);
-	text-decoration-skip-ink: auto;
-}
-
-.header-anchor:hover::after, .header-anchor:active::after, .header-anchor:focus::after {
-	font-size: var(--text-base);
-	padding-left: 0.5em;
-	content: "#";
+	&:hover, &:active, &:focus {
+		color: var(--link);
+		text-decoration: underline;
+		text-decoration-thickness: var(--textDcThickHA);
+		text-underline-offset: var(--textUnOffst);
+		text-decoration-skip-ink: auto;
+		&::after {
+			font-size: var(--text-base);
+			padding-left: 0.5em;
+			content: "#";
+		}
+	}
 }
 
 img.containedImage {
@@ -48,6 +46,15 @@ html[data-theme="dark"] .shadow {
 
 .img-phn {
 	width: 90%;
+	@media screen and (min-width: 768px) {
+		width: 75%;
+	}
+	@media screen and (min-width: 1536px) {
+		width: 62.5%;
+	}
+	@media screen and (min-width: 1920px) {
+		width: 50%;
+	}
 }
 
 .imgcCaption, .imghCaption {
@@ -68,14 +75,12 @@ html[data-theme="dark"] .shadow {
 
 .indentAfterLI {
 	margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
+	&.box {
+		--bIALImarginLeft: 3em;
+		margin-left: var(--bIALImarginLeft);
+		width: calc(100% - var(--bIALImarginLeft));
+	}
 }
-
-.indentAfterLI.box {
-	--bIALImarginLeft: 3em;
-	margin-left: var(--bIALImarginLeft);
-	width: calc(100% - var(--bIALImarginLeft));
-}
-
 
 @keyframes fadeIn {
 	0% {
@@ -98,39 +103,34 @@ blockquote {
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
-}
-
-blockquote p:last-child {
-	margin-bottom: 0;
+	& p:last-child {
+		margin-bottom: 0;
+	}
 }
 
 article {
 	padding-top: 1em; /* definitely em, not rem */
-}
-
-article p, article li {
-	font-size: clamp(1rem, 1vw + 0.625em, 1.25em);
-	font-weight: var(--font-article);
-	line-height: 1.5em;
-	margin-top: 1.15em;
-	margin-bottom: 1.15em;
-	/* letter-spacing: -0.015em; */
-}
-
-article li li, article li p {
-	font-size: inherit;
-	margin-top: 0.25em; /* definitely em, not rem */
-}
-
-article h1, article h2, article h3, article h4 {
-	margin-top: 1.5em;
-	margin-bottom: 1.5rem;
-	letter-spacing: -0.02em;
-	line-height: normal;
-}
-
-article picture img {
-	height: auto;
+	& p, & li {
+		font-size: clamp(1rem, 1vw + 0.625em, 1.25em);
+		font-weight: var(--font-article);
+		line-height: 1.5em;
+		margin-top: 1.15em;
+		margin-bottom: 1.15em;
+		/* letter-spacing: -0.015em; */
+	}
+	& li li, & li p {
+		font-size: inherit;
+		margin-top: 0.25em; /* definitely em, not rem */
+	}
+	& h1, & h2, & h3, & h4 {
+		margin-top: 1.5em;
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.02em;
+		line-height: normal;
+	}
+	& picture img {
+		height: auto;
+	}
 }
 
 .box {
@@ -145,19 +145,16 @@ article picture img {
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
-}
-
-box p {
-	padding: 0;
-	margin: 0;
-}
-
-box + hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
-	margin-top: 1.75em;
-}
-
-box .red {
-	color: var(--box-red);
+	& p {
+		padding: 0;
+		margin: 0;
+	}
+	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
+		margin-top: 1.75em;
+	}
+	.red {
+		color: var(--box-red);
+	}
 }
 
 /*
@@ -174,30 +171,7 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 .gitinfo {
 	margin: 2em 0;
 	line-height: inherit;
-}
-
-.gitinfo code {
-	background-color: transparent;
-}
-
-/*
-========
-*/
-
-@media screen and (min-width: 768px) {
-	.img-phn {
-		width: 75%;
-	}
-}
-
-@media screen and (min-width: 1536px) {
-	.img-phn {
-		width: 62.5%;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.img-phn {
-		width: 50%;
+	& code {
+		background-color: transparent;
 	}
 }

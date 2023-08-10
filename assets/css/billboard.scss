@@ -9,10 +9,13 @@
 	padding-right: 1.5rem;
 	padding-left: 1.5rem;
 	padding-bottom: 1vh;
-}
-
-.billboard-div code {
-	background-color: transparent;
+	@media screen and (min-width: 768px) {
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
+	& code {
+		background-color: transparent;
+	}
 }
 
 .billboard-title-block {
@@ -57,15 +60,4 @@
 	margin-top: 1.5em;
 	margin-bottom: 0.25em;
 	text-align: center;
-}
-
-/*
-======
-*/
-
-@media screen and (min-width: 768px) {
-	.billboard-div {
-		padding-right: 3rem;
-		padding-left: 3rem;
-	}
 }
