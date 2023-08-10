@@ -55,7 +55,7 @@ Third, even if the answer turned out to be something that I couldn't implement f
 
 So, digging through search results and trying a seemingly endless string of attempted code fixes, I worked late into one night and then was back at it not many hours later the next morning.
 
-In the end, I found the solution chiefly from reading the comments, and adapting code left in them, by [Sage Abdullah](https://github.com/laymonage) (giscus's creator/maintainer) and [Marcos Ruiz](https://github.com/marcosruiz) in [Issue #336](https://github.com/giscus/giscus/issues/336) within the giscus repo.[^AdvGuide] The issue concerned dynamic theme changing --- *i.e.*, like my concern about the light/dark toggle --- **but** also gave me enough to see how I could give a visitor the power to control the *conditional* injection of the giscus script.
+In the end, I found the solution chiefly from reading the comments, and adapting code left in them, by [Sage Abdullah](https://github.com/laymonage) (giscus's creator and maintainer) and [Marcos Ruiz](https://github.com/marcosruiz) in [Issue #336](https://github.com/giscus/giscus/issues/336) within the giscus repo.[^AdvGuide] The issue concerned dynamic theme changing --- *i.e.*, like my concern about the light/dark toggle --- **but** also gave me enough to see how I could give a visitor the power to control the *conditional* injection of the giscus script.
 
 [^AdvGuide]: I also found enormous help in the [related content](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#parent-to-giscus-message-events) in giscus's ["Advanced usage" guide](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md), from which Abdullah had derived the code he suggested in this issue's comments.
 
