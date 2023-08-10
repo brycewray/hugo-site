@@ -84,7 +84,7 @@ The newest of the three, [Render](https://render.com), is going through inevitab
 
 #### Strengths
 
-- Interface and documentation are reasonably easy to use and understand, albeit not quite as much so as either Netlify's or Vercel's. (At the outset, be sure you pick "Static site" when you choose from among the options for setting up a "Web service.”)
+- Interface and documentation are reasonably easy to use and understand, albeit not quite as much so as either Netlify's or Vercel's. (At the outset, be sure you pick "Static site" when you choose from among the options for setting up a "web service.”)
 - Real-time support. During business hours and quite often well beyond them, even users of the Render free tier receive unfailingly courteous real-time help from Render employees through the company's Slack community. In fact, this is the only one of the three vendors that provides *any* real-time support to the free tier.
 - Generous free tier. Again quoting my earlier post, Render's "free tier for static sites allows 100 GB of up/down bandwidth per month with no other deploy limits *at all*."
 
