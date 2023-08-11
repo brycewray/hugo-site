@@ -101,5 +101,8 @@ html[data-theme="dark"] {
 
 .homePost-Finish {
 	margin-top: 3em;
+	& strong {
+		font-weight: var(--font-semibold);
+	}
 }
 /* === end, for home page */
