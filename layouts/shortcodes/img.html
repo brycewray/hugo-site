@@ -19,6 +19,8 @@
 {{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
 {{- $simple := false -}}
 {{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
+{{- $nobkgd := false -}}
+{{- if .Get "nobkgd" -}}{{- $nobkgd = .Get "nobkgd" -}}{{- end -}}
 {{- $proc := "default" -}}
 {{- if .Get "proc" -}}{{- $proc = .Get "proc" -}}{{- end -}}
 {{- /* ^^ Matters only if $proc ISN'T spec'd as "Cloudinary" */ -}}
@@ -26,14 +28,17 @@
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
-	{{- $divClass = print $divClass " bigImgDiv imgB-" $imgBd5 "-" $holder -}}
-	{{/*
-		The `imgB-`[hash]-GIP` class is
-		generated in a `head` partial;
-		here, we need only get the class's name,
-		using the same method as in that partial
-		(md5-ing the image file name).
-	*/}}
+	{{- $divClass = print $divClass " bigImgDiv" -}}
+	{{- if not $nobkgd -}}
+		{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
+		{{/*
+			The `imgB-`[hash]-GIP` class is
+			generated in a `head` partial;
+			here, we need only get the class's name,
+			using the same method as in that partial
+			(md5-ing the image file name).
+		*/}}
+	{{- end -}}
 {{- end -}}
 {{- $imgClass := "w-full animate-fade shadow" -}}
 {{- if $phn -}}
