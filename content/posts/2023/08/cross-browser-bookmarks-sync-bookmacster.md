@@ -40,7 +40,7 @@ As you would reasonably expect, BookMacster works as an extension within each br
 
 Although you have the ability to set up some advanced syncing options, the default "Simple" setup on a collection file's **Syncing** tab will work just fine for the vast majority of folks:
 
-![The “Syncing” tab for a collection file within the BookMacster app](2023-08-14-BookMacster-sync-simple_2496x1448_72dpi.png)
+{{< img src="2023-08-14-BookMacster-sync-simple_2496x1448_72dpi.png" alt="The “Syncing” tab for a collection file within the BookMacster app" simple=true >}}
 
 Shortly[^increment] after I make a change to the bookmarks on any of the client browsers, BookMacster makes the change happen on the others, as well. Since I maintain a somewhat complicated and often-updated bookmarks bar on my daily-driver browser, it's really nice to have access to it on the other two of the Big Three.
 
@@ -52,7 +52,7 @@ This even gives me the benefit of having my iDevices' browsers sync with the boo
 
 BookMacster also can provide reports on your bookmarks, including verification of their ongoing reliability as well as checking for duplicates:
 
-![The “Verify” tab of the “Reports” item within a BookMacster collection file.](2023-08-14-BookMacster-reports-verify_2332x1884_72dpi.png "Cloudinary")
+{{< img src="2023-08-14-BookMacster-reports-verify_2332x1884_72dpi.png" alt="The “Verify” tab of the “Reports” item within a BookMacster collection file" simple=true proc="Cloudinary" >}}
 
 And as for the reliability of this product? Well, BookMacster has been around since *2009*, is the key member of a [small line of bookmarks-management software products](https://sheepsystems.com/products/), and remains in active development. Its price as of this writing is a one-time fee of $24.95. If my current experience with BookMacster remains as positive during the remainder of my free trial as it has so far, I'd guess that making this purchase will be a pretty easy choice.
 
