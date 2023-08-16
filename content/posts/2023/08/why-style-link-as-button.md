@@ -38,7 +38,7 @@ First, it's **bad HTML**. The HTML5 specification says the [`a` element](https:/
 
 Second, it's **bad for accessibility**. One can readily imagine how a button inside a link could play havoc with the use of assistive technology. The following excerpt from "[Links VS Buttons: A Perennial Problem](https://www.digitala11y.com/links-vs-buttons-a-perennial-problem/)" really nails it down:
 
-> Use buttons when the [user action] causes a change in either [the] back-end or the front-end of the website[; f]or example, submitting a form, [or] opening a pop-up or a modal or a [panel] on the same page.
+> Use buttons when the [user action] causes a change in either [the back end] or the [front end] of the website[; f]or example, submitting a form, [or] opening a pop-up or a modal or a [panel] on the same page.
 >
 > Use links when the [user action] doesn't affect the website at all. In this, the users are just readers or spectators of the site[; f]or example, to navigate to the next page or an external source after viewing the content of the page.
 >
