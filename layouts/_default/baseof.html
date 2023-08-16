@@ -31,12 +31,14 @@
 			>
 			</script>
 		{{- end }}
-		{{- $jsHtmx := resources.Get "js/htmx.min.js" | fingerprint -}}
-		<script
-			src="{{ $jsHtmx.RelPermalink }}"
-			integrity="{{ $jsHtmx.Data.Integrity }}"
-			defer
-		>
-		</script>
+		{{- if (and (eq .Section "posts") (ne .Title .Site.Params.Titles.Postslist)) -}}
+			{{- $jsHtmx := resources.Get "js/htmx.min.js" | fingerprint -}}
+			<script
+				src="{{ $jsHtmx.RelPermalink }}"
+				integrity="{{ $jsHtmx.Data.Integrity }}"
+				defer
+			>
+			</script>
+		{{- end }}
 	</body>
 </html>
