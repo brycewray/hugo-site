@@ -31,5 +31,12 @@
 			>
 			</script>
 		{{- end }}
+		{{- $jsHtmx := resources.Get "js/htmx.min.js" | fingerprint -}}
+		<script
+			src="{{ $jsHtmx.RelPermalink }}"
+			integrity="{{ $jsHtmx.Data.Integrity }}"
+			defer
+		>
+		</script>
 	</body>
 </html>
