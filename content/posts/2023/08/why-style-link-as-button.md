@@ -1,5 +1,5 @@
 ---
-title: "Why to style a link as a button"
+title: "Why to style a link as a button"
 description: "Fixing a long-standing sin against accessibility — and, as it turns out, against correct HTML."
 author: Bryce Wray
 date: 2023-08-16T16:13:00-05:00
