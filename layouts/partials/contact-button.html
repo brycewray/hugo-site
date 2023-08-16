@@ -1,5 +1,5 @@
 {{- $email := .Site.Params.AuthorEmail -}}
-<div class="nScrHidden">
+<contact-button data-pagefind-ignore aria-label="Button for generating email to reply to this website post" class="nScrHidden">
 {{- if eq .Site.Params.EmailObfuscation "local" -}}
 	<script nonce="DhcnhD3khTMePgXw">
 		var email64Link ='{{ (print "href=\"mailto:" $email) | base64Encode }}';
@@ -13,6 +13,6 @@
 		</div>
 		<div class="legend">Reply via email</div>
 	</a>
-</div>
+</contact-button>
 {{- if eq .Site.Params.EmailObfuscation "local" -}}
 <noscript><p class="ctr legal">“Reply via email” button and its contained email link hidden in an attempt to limit spambots’ access. Please activate JavaScript to see the button.</p></noscript>{{- end -}}
