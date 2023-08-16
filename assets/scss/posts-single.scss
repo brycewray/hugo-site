@@ -108,17 +108,17 @@ details.comments > summary::-webkit-details-marker {
 }
 
 
-contact-button {
-	display: grid;
-	place-items: center;
-	margin-top: 0.5em;
+a.contactButton {
+	font-family: var(--sans-serif);
+	text-decoration: none;
+	margin: 0.5em auto;
 }
 
-.box + contact-button {
+.box + a.contactButton {
 	margin-top: 1.5em;
 }
 
-contact-button button, details.comments > summary {
+a.contactButton, details.comments > summary {
 	width: var(--btn-width);
 	height: var(--btn-height);
 	display: flex;
@@ -152,8 +152,6 @@ contact-button button, details.comments > summary {
 	}
 }
 
-contact-button button {
-	& .svg {
-		padding-bottom: 0.25em;
-	}
+a.contactButton .svg {
+	padding-bottom: 0.25em;
 }
