@@ -54,7 +54,11 @@ BookMacster also can provide reports on your bookmarks, including verification o
 
 {{< img src="2023-08-14-BookMacster-reports-verify_2332x1884_72dpi.png" alt="The “Verify” tab of the “Reports” item within a BookMacster collection file" nobkgd=true proc="Cloudinary" >}}
 
-And as for the reliability of this product? Well, BookMacster has been around since *2009*, is the key member of a [small line of bookmarks-management software products](https://sheepsystems.com/products/), and remains in active development. Its price as of this writing is a one-time fee of $24.95. If my current experience with BookMacster remains as positive during the remainder of my free trial as it has so far, I'd guess that making this purchase will be a pretty easy choice.
+And as for the reliability of this product? Well, BookMacster has been around since *2009*, is the key member of a [small line of bookmarks management software products](https://sheepsystems.com/products/), and remains in active development. Its price as of this writing is a one-time fee of $24.95. If my current experience with BookMacster remains as positive during the remainder of my free trial as it has so far, I'd guess that making this purchase will be a pretty easy choice.
 
-**Update from later the same day**: Soon after I posted this, [a comment](#data-comments) got me curious about giving the web-based [Raindrop.io](https://raindrop.io) aggregator another try --- "another" because I'd already done so while researching my bookmarks management choices. So, if I do decide to use Raindrop.io, that would be the main reason why I'd choose not to go ahead with BookMacster.
+**Update from later the same day**: Soon after I posted this, [a comment](#data-comments) got me curious about giving the web-based [Raindrop.io](https://raindrop.io) aggregator another try --- "another" because I'd already done so while researching my bookmarks management choices. So, if I do decide to use Raindrop.io, that would be the main reason why I'd choose not to go ahead with BookMacster.\
+\
+**Further update, 2023-08-16**: In the end, I indeed went with a Raindrop.io-based workflow for managing my bookmarks, rather than purchasing BookMacster. One thing that clearly helped me decide was that the Raindrop.io free tier [now includes](https://help.raindrop.io/changelog#5523) the formerly paid-only "nested collections" feature, so I can keep using my bookmarks' long-standing arrangement of folders, subfolders, sub-subfolders, *etc.*\
+\
+All that said: for macOS users who want cross-browser syncing of bookmarks, I'd **still** say BookMacster is worth a look.
 {.box}
