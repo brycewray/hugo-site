@@ -9,7 +9,7 @@ env:
   HUGO_VERSION: 0.117.0 # will get Extended Version below
   HUGO_NPM: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using the npm pkg `hugo-installer`
-  DART_SASS_VERSION: 1.65.1 # (depends on STYLING env var)
+  DART_SASS_VERSION: 1.66.0 # (depends on STYLING env var)
   NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
   # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
