@@ -71,7 +71,7 @@ The solution to all this was to style the link to *look like* a button **and** u
 
 So, if your website has any `button` elements wrapped inside any `a` elements, that's the way to resolve such issues. It's nice, (relatively[^CSS]) easy, *and* the right thing to do.
 
-**Update, 2023-08-17**: [HTML 5 allows putting a `div` inside an `a`](https://stackoverflow.com/a/1828032/11308019), but I have changed those inner `div`s to `span`s (each styled with `"display: inline-block;"`), in response to a comment that objected to this post's original "fix" example.
+**Update, 2023-08-17**: [HTML 5 allows putting a `div` inside an `a`](https://stackoverflow.com/a/1828032/11308019), but I have changed those inner `div`s to `span`s (each styled with `"display: inline-block;"`) in response to a comment that objected to this post's original "fix" example.
 {.box}
 
 [^CSS]: The styling is the main thing that keeps it from being more than "relatively" easy; but, at least in my case, it wasn't too hard to adapt the former `button` element's styling to the `contactButton` class I then assigned to the `a` element.
