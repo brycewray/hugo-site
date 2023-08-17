@@ -152,6 +152,11 @@ a.contactButton, details.comments > summary {
 	}
 }
 
-a.contactButton .svg {
-	padding-bottom: 0.25em;
+a.contactButton {
+	& .svg {
+		padding-bottom: 0.25em;
+	}
+	& .svg, & .legend {
+		display: inline-block;
+	}
 }

@@ -21,9 +21,11 @@ The **Reply via email** button at the bottom of every post on the site has, unti
 		href="[link]"
 	>
 		<button>
-			<svg>
-				[Email icon]
-			</svg>
+			<div>
+				<svg>
+					[Email icon]
+				</svg>
+			<div>
 			<div>
 				Reply via email
 			</div>
@@ -55,16 +57,21 @@ The solution to all this was to style the link to *look like* a button **and** u
 		class="contactButton"
 		role="button"
 	>
-		<svg>
-			[Email icon]
-		</svg>
-		<div>
+		<span>
+			<svg>
+				[Email icon]
+			</svg>
+		</span>
+		<span>
 			Reply via email
-		</div>
+		</span>
 	</a>
 </contact-button>
 ```
 
 So, if your website has any `button` elements wrapped inside any `a` elements, that's the way to resolve such issues. It's nice, (relatively[^CSS]) easy, *and* the right thing to do.
+
+**Update, 2023-08-17**: [HTML 5 allows putting a `div` inside an `a`](https://stackoverflow.com/a/1828032/11308019), but I have changed those inner `div`s to `span`s (each styled with `"display: inline-block;"`), in response to a comment that objected to this post's original "fix" example.
+{.box}
 
 [^CSS]: The styling is the main thing that keeps it from being more than "relatively" easy; but, at least in my case, it wasn't too hard to adapt the former `button` element's styling to the `contactButton` class I then assigned to the `a` element.
