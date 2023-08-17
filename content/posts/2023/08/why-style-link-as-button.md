@@ -48,14 +48,15 @@ Second, it's **bad for accessibility**. One can readily imagine how a button ins
 
 *[Edited for style.]*
 
-The solution to all this was to style the link to *look like* a button **and** use its markup to identify the link's `role` as `"button"`:
+The solution to all this was to style the link to *look like* a button ~~**and** use its markup to identify the link's `role` as `"button"`~~[^role]:
+
+[^role]: **Update, 2023-08-17**: An accessibility-savvy reader corrected me on the part I've now stricken out and corrected in the "fix" example, telling me: "Buttons, by default, can be triggered with the spacebar, whereas links cannot. Having a [screen reader] surface the control as a button when it lacks that behavior might confuse [screen reader] users. . . . No ARIA is better than bad ARIA, as they say."
 
 ```html
 <contact-button>
 	<a
 		href="[link]"
 		class="contactButton"
-		role="button"
 	>
 		<span>
 			<svg>
