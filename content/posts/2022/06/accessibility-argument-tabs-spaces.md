@@ -52,7 +52,7 @@ So that's what I did. Fortunately, [Visual Studio Code makes that fairly easy](h
 
 I also changed the site's *[.editorconfig file](https://editorconfig.org/)* to the following, specifically the `indent_style` setting (which had been `space`):
 
-{{< labeled-highlight lang="bash" filename=".editorconfig" >}}
+```bash
 root = true
 
 [*]
@@ -68,7 +68,7 @@ indent_style = space
 
 [layouts/_default/_markup/*.*]
 insert_final_newline = false
-{{</ labeled-highlight >}}
+```
 
 **Update, 2022-07-04**: This .editorconfig file is a revised version of what I originally posted. This takes into account certain troublesome[^beCareful] file types.
 {.box}
