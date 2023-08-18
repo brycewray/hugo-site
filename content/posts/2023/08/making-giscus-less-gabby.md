@@ -63,8 +63,8 @@ In other words, I *could* have everything I'd wanted, after all. Bingo.
 
 Once I finally had it all working properly yesterday afternoon, I restored the comments "button" under each post on this site. Now, on all of the big three browsers, the code performs as I'd originally intended:
 
-- The comments section *and* the JavaScript load don't appear unless the visitor purposely clicks **View/hide comments** to open the `details` element.[^oneWay]
-- Once the comments section appears, it instantly uses the same light/dark setting as the rest of the page.
+- The comments section *and* the JavaScript load don't appear unless the visitor purposely clicks **View comments** to open the `details` element.[^oneWay]
+- Once the comments section appears (simultaneously toggling the "button"'s legend to "**Hide comments**," instead), it instantly uses the same light/dark setting as the rest of the page.
 - If the visitor toggles the light/dark setting for the page, the comments section again follows that setting.
 
 [^oneWay]: Of course, this is a one-way thing: *i.e.*, once you have the JS load, clicking the button again doesn't undo that load. The only way to get rid of it is through a page refresh, which restores the page to its default behavior.
@@ -72,16 +72,22 @@ Once I finally had it all working properly yesterday afternoon, I restored the c
 So here's the code, the [operational version of which](https://github.com/brycewray/hugo-site/blob/main/layouts/partials/comments-giscus.html) exists as a partial template for this [Hugo](https://gohugo.io)-based site:
 
 {{< labeled-highlight lang="go-html-template" filename="comments-giscus.html" >}}
-{{/* === `data-theme` choices === */}}
+{{/*
+	=== `data-theme` choices ===
+	For now, these are just "light" and "dark";
+	but, in case you use separate CSS files
+	for these (such for using additional fonts),
+	having these variables will allow for that.
+*/}}
 {{- $dataThemeLight := "light" -}}
 {{- $dataThemeDark := "dark" -}}
 
-<details class="comments nScrHidden" id="data-comments" data-pagefind-ignore>
-	<summary data-pagefind-ignore aria-label="Toggle for viewing or hiding comments">
+<details class="comments nScrHidden" id="data-comments">
+	<summary aria-label="Toggle for viewing or hiding comments">
 		<div class="svg">
 			<svg aria-hidden="true" class="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>
 		</div>
-		<div class="legend">View/hide comments</div>
+		<div id="legend-comments" class="legend">View comments</div>
 	</summary>
 	<div class="giscus-comments" id="giscus-comments">
 		<script>
@@ -130,9 +136,15 @@ So here's the code, the [operational version of which](https://github.com/brycew
 
 				// Inject script when user clicks the `details` element
 				let detailsGiscus = document.getElementById('data-comments');
+				let commentsLegend = document.getElementById('legend-comments');
 				detailsGiscus.addEventListener("toggle", toggleDetails);
 				function toggleDetails() {
 					divToAdd.appendChild(giscusScript);
+					if (commentsLegend.innerHTML === 'View comments') {
+						commentsLegend.innerHTML = 'Hide comments';
+					} else {
+						commentsLegend.innerHTML = 'View comments';
+					}
 				}
 				// Update giscus theme when theme switcher is clicked
 				const toggle = document.querySelector('.nav-ModeToggle');
