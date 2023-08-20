@@ -39,6 +39,6 @@ While I'd been able to run Trilogy on the *new* Mac in Windows 12 via Parallels 
 
 [^AAA]: It's the game to which I referred in [my post about switching over to the new Mac](/posts/2023/07/making-good-move/).
 
-[^controller]: The resolution to that problem was downloading [another driver](https://github.com/atar-axis/xpadneo) and then updating the controller's firmware (within the *XBox Accessories* app running in Windows via Parallels Desktop on the new Mac).
+[^controller]: The resolution to that problem was downloading [another driver](https://github.com/atar-axis/xpadneo) and then updating the controller's firmware (within the XBox Accessories app running in Windows via Parallels Desktop on the new Mac).
 
 Don't be misled: all the arcane fixes I'm employing to keep Linux running properly on the iMac make me appreciate even more the solidity and, yes, unified environment of macOS running on my new Mac. **But**, finally free to have a full installation of Linux on the old Mac after previously using only a very limited emulation within Parallels Desktop, I am having lots of nerdy fun and enjoying what today's Linux can do, too.
