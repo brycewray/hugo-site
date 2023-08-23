@@ -21,3 +21,13 @@ Long-time readers here will remember Gatsby once briefly [ran this site](/posts/
 Also: [Richard MacManus](https://thenewstack.io/author/richard/)'s [article](https://thenewstack.io/netlify-acquires-gatsby-its-struggling-jamstack-competitor/) about the acquisition characterized Gatsby as "struggling," although this likely was a reference more to the company (and its [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/hosting) hosting product, a direct competitor to Netlify and other such Jamstack hosts) than to the SSG itself. Anyway, it's an interesting take and I urge you to give it a look.
 
 It's been clear for some time that Gatsby as a platform had been surpassed by [Next.js](https://nextjs.org), [Astro](https://astro.build), and [SvelteKit](https://kit.svelte.dev/) among others; but, still, I'll be curious to see which Gatsby code and other offerings will now make their way into those of Netlify.
+
+----
+
+## Update, 2023-08-23
+
+It now appears that Netlify essentially is killing Gatsby in (sorta) slow motion, based on this Mastodon post/toot from [now-former Netlify employee](/posts/2023/07/good-news-cloudcannon-eleventy/) Zach Leatherman:
+
+{{< stoot "fediverse.zachleat.com" "110927844356705881" >}}
+
+The [full thread](https://fediverse.zachleat.com/@zachleat/110927844356705881) makes for interesting, if sad, reading.
