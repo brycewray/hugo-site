@@ -26,9 +26,6 @@
 	line-height: 1.35em; /* for non-`p` results from `text` var */
 	font-family: var(--social-sans-serif);
 	font-size: var(--text-base);
-	@media screen and (min-width: 768px) {
-		font-size: var(--text-xl);
-	}
 	& p {
 		margin-top: 0; /* reset */
 		color: var(--default);
