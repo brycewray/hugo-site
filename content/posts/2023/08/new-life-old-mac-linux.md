@@ -1,6 +1,6 @@
 ---
 title: "New life for the old Mac with Linux"
-description: "A combination of Fedora, Proton, and the inevitable tinkering process produces amazing results."
+description: "A combination of Fedora, Proton, and the inevitable tinkering process produces amazing results."
 author: Bryce Wray
 date: 2023-08-19T16:22:00-05:00
 # draft: true
