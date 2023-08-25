@@ -194,7 +194,7 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: var(--gray-200);
 	background: none;
-	font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
+	font-size: clamp(0.9rem, 1vw + 0.625rem, var(--text-lg));
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -225,7 +225,7 @@ pre[class*="language-"] {
 		border-radius: 16px;
 		/* keeps code blocks from being too small
 		due to the `article code` rule above */
-		font-size: clamp(0.9rem, 1vw + 0.625em, var(--text-lg));
+		font-size: clamp(0.9rem, 1vw + 0.625rem, var(--text-lg));
 	}
 }
 

@@ -111,7 +111,7 @@ blockquote {
 article {
 	padding-top: 1em; /* definitely em, not rem */
 	& p, & li {
-		font-size: clamp(1rem, 1vw + 0.625em, 1.25em);
+		font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
 		font-weight: var(--font-article);
 		line-height: 1.5em;
 		margin-top: 1.15em;
@@ -134,7 +134,7 @@ article {
 }
 
 .box {
-	font-size: clamp(0.625rem, 1vw + 0.5em, 0.875em);
+	font-size: clamp(0.625rem, 1vw + 0.5rem, 0.875rem);
 	font-weight: var(--font-weight-sm);
 	line-height: clamp(1.4em, 1vw + 0.625em, 1.5em);
 	display: block;
