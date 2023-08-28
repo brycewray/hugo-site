@@ -30,4 +30,27 @@ It now appears that Netlify essentially is killing Gatsby in (sorta) slow motion
 
 {{< stoot "fediverse.zachleat.com" "110927844356705881" >}}
 
+<!--
+https://fediverse.zachleat.com/@zachleat/110927844356705881
+
+Looks like the cat is out of the bag now, but still no official word from the company: https://twitter.com/FredKSchott/status/1693007599803752638
+
+The top contributor to Gatsby: https://twitter.com/lekoarts_de/status/1685942410776342528
+
+Another Gatsby employee: https://twitter.com/wardpeet/status/1693014604694061194
+
+Saw also a public Slack post from the founder saying Gatsby was in “maintenance mode.”
+
+[Twitter/X “box” with Fred K. Schott's image, from first link above]:
+
+fks on X
+
+There have been zero commits to the Gatsby repo in the last 24 days.
+
+[Date of Zach's toot:]
+
+1:29 PM • August 21, 2023 (UTC)
+
+-->
+
 The [full thread](https://fediverse.zachleat.com/@zachleat/110927844356705881) makes for interesting, if sad, reading.
