@@ -32,4 +32,4 @@ When 2023 began, I wouldn't have bet that this happy combination would happen ev
 
 Of course, this doesn't mean nesting utopia is here just yet. As I write, the [Can I Use](https://caniuse.com) [page for native CSS nesting](https://caniuse.com/?search=css-nesting) shows global support at just over 75% --- which means that, unless a dev team absolutely knows every visitor to its site *both* (a.) uses one of the Big Three browsers *and* (b.) definitely has a nesting-compatible version of that browser, the need to preprocess nested CSS will persist for a while.
 
-Still, at the rate things are changing, that "while" might be shorter than one might have believed as recently as a few weeks ago.
+Still, at the rate things are changing, that "while" may well be shorter than one might have believed as recently as a few weeks ago.
