@@ -5,24 +5,15 @@
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_01/" -}}
-{{- $holder := "GIP" -}}{{/* default placeholder */}}
-{{- if .Get "holder" -}}{{- $holder = .Get "holder" -}}{{- end -}}
-{{- $phn := false -}}
-{{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
-{{- $hint := "photo" -}}
-{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
-{{- /*
-	hint is applicable only to webp:
-	https://gohugo.io/content-management/image-processing/#hint
-*/ -}}
-{{- $filter := "MitchellNetravali" -}}{{/* default filter */}}
-{{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
-{{- $simple := false -}}
-{{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
-{{- $nobkgd := false -}}
-{{- if .Get "nobkgd" -}}{{- $nobkgd = .Get "nobkgd" -}}{{- end -}}
-{{- $proc := "default" -}}
-{{- if .Get "proc" -}}{{- $proc = .Get "proc" -}}{{- end -}}
+
+{{- $holder := default "GIP" (.Get "holder") -}}
+{{- $phn := default false (.Get "phn") -}}
+{{- $hint := default "photo" (.Get "hint") -}}
+{{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
+{{- $filter := default "MitchellNetravali" (.Get "filter") -}}
+{{- $simple := default false (.Get "simple") -}}
+{{- $nobkgd := default false (.Get "nobkgd") -}}
+{{- $proc := default "default" (.Get "proc") -}}
 {{- /* ^^ Matters only if $proc ISN'T spec'd as "Cloudinary" */ -}}
 
 {{- $imgBd5 := md5 $src -}}

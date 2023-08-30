@@ -97,22 +97,18 @@ First, the partial for the `head` (called from within my main `head.html` partia
 {{ end }}
 {{</ labeled-highlight >}}
 
-Then, the revised image-processing shortcode that now handles both GIPs (the default here) and LQIPs, through the use of a `$holder` variable which specifies the `div`'s background type:
+Then, the revised image-processing shortcode[^defaults] that now handles both GIPs (the default here) and LQIPs, through the use of a `$holder` variable which specifies the `div`'s background type:
+
+[^defaults]: Thanks to [Sujal Gurung](https://github.com/dinesh-58) for the excellent suggestion that I use Hugo's [`default` function](https://gohugo.io/functions/default/) for cleaner code than what I originally had here! Somehow, I'd missed reading about that one all this time.
 
 {{< labeled-highlight lang="go-html-template" filename="imgh.html" >}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
-{{- $holder := "GIP" -}}{{/* default placeholder */}}
-{{- if .Get "holder" -}}{{- $holder = .Get "holder" -}}{{- end -}}
-{{- $hint := "photo" -}}
-{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
-{{- /*
-	hint is applicable only to webp:
-	https://gohugo.io/content-management/image-processing/#hint
-*/ -}}
-{{- $filter := false -}}
-{{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
+{{- $holder := default "GIP" (.Get "holder") -}}
+{{- $hint := default "photo" (.Get "hint") -}}
+{{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
+{{- $filter := default false (.Get "filter") -}}
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := print "relative bg-center " $divClass " imgB-" $imgBd5 "-" $holder -}}
 {{- $imgClass := "w-full h-auto animate-fade" -}}

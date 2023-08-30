@@ -90,7 +90,9 @@ For example, here's `img.html` in use with my usual go-to image for this kind of
 
 {{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" proc="Cloudinary" >}}
 
-Now, without further ado, here's the relevant code.[^styling] Of course, you must insert your own Cloudinary "cloud name" in the `$myCloud` variable to make this work for your Hugo project.
+Now, without further ado, here's the relevant code.[^defaults] [^styling] Of course, you must insert your own Cloudinary "cloud name" in the `$myCloud` variable to make this work for your Hugo project.
+
+[^defaults]: Thanks to [Sujal Gurung](https://github.com/dinesh-58) for the excellent suggestion that I use Hugo's [`default` function](https://gohugo.io/functions/default/) for cleaner code than what I originally had here! Somehow, I'd missed reading about that one all this time.
 
 [^styling]: If you need to figure out the CSS classes involved (other than the auto-generated one that's specific to each image), feel free to check the [site repo](https://github.com/brycewray/hugo-site).
 
@@ -178,20 +180,12 @@ Now, without further ado, here's the relevant code.[^styling] Of course, you mus
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto,w_" -}}
 {{- $xFmPart2 := ",x_0,z_1/" -}}
-{{- $holder := "GIP" -}}{{/* default placeholder */}}
-{{- if .Get "holder" -}}{{- $holder = .Get "holder" -}}{{- end -}}
-{{- $phn := false -}}
-{{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
-{{- $hint := "photo" -}}
-{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
-{{- /*
-	hint is applicable only to webp:
-	https://gohugo.io/content-management/image-processing/#hint
-*/ -}}
-{{- $filter := "box" -}}{{/* default filter */}}
-{{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
-{{- $simple := false -}}
-{{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
+{{- $holder := default "GIP" (.Get "holder") -}}
+{{- $phn := default false (.Get "phn") -}}
+{{- $hint := default "photo" (.Get "hint") -}}
+{{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
+{{- $filter := default false (.Get "filter") -}}
+{{- $simple := default false (.Get "simple") -}}
 
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}

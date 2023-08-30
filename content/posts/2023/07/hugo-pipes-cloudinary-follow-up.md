@@ -138,7 +138,9 @@ Invoking the render hook now can look like this (omitting the processor specific
 {{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" proc="Cloudinary" */>}}
 ```
 
-So, once again, boys and girls, it's code time. I'll present the three files in the same order as before: the render-image hook; the `img` shortcode; and the partial template which injects image-specific CSS into the `head` of any page that contains any images.
+So, once again, boys and girls, it's code time.[^defaults] I'll present the three files in the same order as before: the render-image hook; the `img` shortcode; and the partial template which injects image-specific CSS into the `head` of any page that contains any images.
+
+[^defaults]: Thanks to [Sujal Gurung](https://github.com/dinesh-58) for the excellent suggestion that I use Hugo's [`default` function](https://gohugo.io/functions/default/) for cleaner code than what I originally had here! Somehow, I'd missed reading about that one all this time.
 
 **Important**: The earlier post's code was based on storing the images in a [*bundled*](https://gohugo.io/content-management/page-bundles/) project --- *i.e.*, wherein each image is stored in the same folder as the `index.md` file for the post which calls the image --- but I've [since](/posts/2023/07/big-unbundle/) reverted to the *unbundled* arrangement I'd used for most of the site's history until [last year](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/). As a result, the code below works with images which are [*global resources*](https://gohugo.io/hugo-pipes/introduction/) stored in the Hugo project's top-level `assets/` folder (specifically, `assets/images/`).
 {.box}
@@ -224,22 +226,13 @@ So, once again, boys and girls, it's code time. I'll present the three files in 
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto,w_" -}}
 {{- $xFmPart2 := ",x_0,z_01/" -}}
-{{- $holder := "GIP" -}}{{/* default placeholder */}}
-{{- if .Get "holder" -}}{{- $holder = .Get "holder" -}}{{- end -}}
-{{- $phn := false -}}
-{{- if .Get "phn" -}}{{- $phn = .Get "phn" -}}{{- end -}}
-{{- $hint := "photo" -}}
-{{- if .Get "hint" -}}{{- $hint = .Get "hint" -}}{{- end -}}
-{{- /*
-	hint is applicable only to webp:
-	https://gohugo.io/content-management/image-processing/#hint
-*/ -}}
-{{- $filter := "box" -}}{{/* default filter */}}
-{{- if .Get "filter" -}}{{- $filter = .Get "filter" -}}{{- end -}}
-{{- $simple := false -}}
-{{- if .Get "simple" -}}{{- $simple = .Get "simple" -}}{{- end -}}
-{{- $proc := "default" -}}
-{{- if .Get "proc" -}}{{- $proc = .Get "proc" -}}{{- end -}}
+{{- $holder := default "GIP" (.Get "holder") -}}
+{{- $phn := default false (.Get "phn") -}}
+{{- $hint := default "photo" (.Get "hint") -}}
+{{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
+{{- $filter := default "box" (.Get "filter") -}}
+{{- $simple := default false (.Get "simple") -}}
+{{- $proc := default "default" (.Get "proc") -}}
 {{- /* ^^ Matters only if $proc ISN'T spec'd as "Cloudinary" */ -}}
 
 {{- $imgBd5 := md5 $src -}}
