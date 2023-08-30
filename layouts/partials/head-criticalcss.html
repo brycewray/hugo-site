@@ -8,7 +8,7 @@
 	{{- end }}
 
 	{{/* {{- $css := (resources.Match "css/0*.css") | resources.Concat "css/critical.css" | minify | fingerprint }} */}}
-	{{- $css := (resources.Match "css/0*.css") | resources.Concat "css/critical.css" }}
+	{{- $css := (resources.Match "css/partials/0*.css") | resources.Concat "css/critical.css" }}
 	{{- with $css }}
 		<style media="screen">
 			{{ .Content | safeCSS }}
