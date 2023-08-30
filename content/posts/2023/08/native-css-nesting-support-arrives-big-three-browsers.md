@@ -17,9 +17,9 @@ Until today, writing CSS like this meant you needed to process it through someth
 
 ```css
 .myPurpleClass {
-	p {
+	& p {
 		color: #d1d100;
-		a {
+		& a {
 			color: #0000d1;
 		}
 	}
