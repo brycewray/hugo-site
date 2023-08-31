@@ -110,7 +110,7 @@ Then, the revised image-processing shortcode[^defaults] that now handles both GI
 {{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
 {{- $filter := default false (.Get "filter") -}}
 {{- $imgBd5 := md5 $src -}}
-{{- $divClass := print "relative bg-center " $divClass " imgB-" $imgBd5 "-" $holder -}}
+{{- $divClass := print "relative bg-center imgB-" $imgBd5 "-" $holder -}}
 {{- $imgClass := "w-full h-auto animate-fade" -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $actualImg := $src.Resize (printf "%s%s" "640x jpg " $filter) -}}
