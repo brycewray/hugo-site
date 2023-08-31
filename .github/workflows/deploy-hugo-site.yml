@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.118.1 # will get Extended Version below
+  HUGO_VERSION: 0.118.2 # will get Extended Version below
   HUGO_NPM: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using the npm pkg `hugo-installer`
   DART_SASS_VERSION: 1.66.1 # (depends on STYLING env var)
