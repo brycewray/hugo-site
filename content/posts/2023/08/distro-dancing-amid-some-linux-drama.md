@@ -64,3 +64,15 @@ Confession: I wimped out from Arch's ultra-involved and somewhat infamous [insta
 And that's where things stand with Arch Linux, the old iMac, and me as of when I initially post this. It's early in the process, so I still haven't had much of a chance to see how things will progress as Arch goes through those frequent updates, I try other apps and other settings, and so on. But I am no longer positioned behind that mental wall I'd erected between me and at least trying Arch, much less actually making it a (sort of) daily driver. It's true that I could yet find myself scurrying to safer, if duller, ground after a Series of Unpleasant Incidents.
 
 Until then, to quote the final words spoken by the “[Red](https://shawshank.fandom.com/wiki/Ellis_Boyd_%27Red%27_Redding)” character in [one of my all-time favorite motion pictures](https://shawshank.fandom.com/): *I hope*.
+
+----
+
+## Update, 2023-09-01
+
+After using Arch for about a week, I realized I'd rather not have to futz with it quite so much, however nerdily fun that futzing could be at times.
+
+That choice took me back briefly to Debian, but I again found the experience unsatisfying. So, after still more soul-searching **as well as** additional reading into how Fedora relates to RHEL development --- including fairly detailed explanations from some of Fedora's especially knowledgeable insiders and long-time users --- I decided to move the old iMac back to the distro where I'd most admired the experience: Fedora.
+
+The simple truth is that, for my particular use case and hardware, I find Fedora Workstation the best combination of freshness and stability.  
+
+As for all the RHEL-related turmoil of the last few weeks and how some would insist it frames all Fedora users as being acquiescent to evil (if not downright evil themselves): well, to quote the [famous line from *Huckleberry Finn*](https://www.allgreatquotes.com/huckleberry-finn-quote-172/): "All right, then, I'll go to hell." Them's the breaks.
