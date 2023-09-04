@@ -7,7 +7,7 @@
 
 	*/
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-	--sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "DejaVu Sans", "Liberation Sans", "Nimbus Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--sans-serif: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "DejaVu Sans", "Liberation Sans", "Nimbus Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--serif: ui-serif, Georgia, "Noto Serif", "DejaVu Serif", "Liberation Serif", "Nimbus Roman", Cambria, "Times New Roman", Times, serif;
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", "Noto Sans Mono", "DejaVu Mono", "Liberation Mono", Consolas, "Cascadia Code", "Cascadia Mono", "Segoe UI Mono", Menlo, Monaco, "Courier New", monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -48,8 +48,8 @@
 	--textDcThick: 0.05rem; /* always rem */
 	--textDcThickMd: 0.0625rem; /* always rem */
 	--textDcThickHA: 0.075rem; /* always rem -- for `header-anchor` */
-	--textUnOffst: 0.275em; /* always em -- min-width: 768px */
-	--textUnOffstMd: 0.275em; /* always em -- min-width: 768px */
+	--textUnOffst: 0.225em; /* always em -- min-width: 768px */
+	--textUnOffstMd: 0.225em; /* always em -- min-width: 768px */
 	/* ^^^ 0.225em is OK with Libre Franklin,
 	     but Segoe UI needs at least 0.25em */
 
