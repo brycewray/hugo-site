@@ -27,7 +27,7 @@ jobs:
         with:
           timezoneLinux: "America/Chicago" # default = "UTC"
       - name: Checkout default branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Set up Node.js (cond. - Node)
