@@ -83,13 +83,13 @@ As for all the RHEL-related turmoil of the last few weeks and how some would ins
 
 Okay, I've gotta make just one more update to this one. Sorry.
 
-My curiosity couldn't restrain itself: I decided I *like* futzing with Arch, after all. Moreover, I wanted to see if I could get through the regular installation process, rather than relying on the `archinstall` script. So that's what I did, although it took me numerous tries and, I admit, heavy reliance on not just the [Arch Wiki](https://wiki.archlinux.org)'s [official guide](https://wiki.archlinux.org/title/Installation_guide) but also several "unofficial" guides to the process. (See my list below.)
+My curiosity couldn't restrain itself: I decided I *like* futzing with Arch, after all. Moreover, I wanted to see if I could get through the regular installation process, rather than relying on the `archinstall` script. So that's what I did, although it took me numerous tries and, I admit, heavy reliance on not just the [Arch wiki](https://wiki.archlinux.org)'s [official guide](https://wiki.archlinux.org/title/Installation_guide) but also several "unofficial" guides to the process. (See my list below.)
 
 Indeed, I had to do it *so* many times that I came to understand the process much better than when going more-or-less blindly through `archinstall`. That was exactly the point that [Eric Murphy](https://ericmurphy.xyz) made in the following video, whose point initially rankled me but I now fully grasp:
 
 {{< lite-youtube videoTitle="Why you (probably) shouldn’t use an Arch Linux install script" videoId="J_RWNKlxF3c" >}}
 
-Of course, this doesn't mean that, whenever I go through the Arch installation process (there almost certainly will be more such episodes), I wouldn't still need the crutch of the Wiki and those other sources, especially since they differ somewhat on which steps should go in which order. That said, at least now I have a clearer handle on what I'm doing.
+Of course, this doesn't mean that, whenever I go through the Arch installation process (there almost certainly will be more such episodes), I wouldn't still need the crutch of the Arch wiki and those other sources, especially since they differ somewhat on which steps should go in which order. That said, at least now I have a clearer handle on what I'm doing.
 
 Just as my earlier use of `archinstall` cured me of any trepidation over installing Arch at all, these multiple runs through Arch's regular installation process have taken away my previous worries about whether I could get through it *and* whether my old Mac could survive it.[^MacRecovery] I did, and it did.
 
