@@ -85,7 +85,7 @@ Okay, I've gotta make just one more update to this one. Sorry.
 
 My curiosity couldn't restrain itself: I decided I *like* futzing with Arch, after all. Moreover, I wanted to see if I could get through the regular installation process, rather than relying on the `archinstall` script. So that's what I did, although it took me numerous tries and, I admit, heavy reliance on not just the [Arch wiki](https://wiki.archlinux.org)'s [official guide](https://wiki.archlinux.org/title/Installation_guide) but also several "unofficial" guides to the process. (See my list below.)
 
-Indeed, I had to do it *so* many times that I came to understand the process much better than when going more-or-less blindly through `archinstall`. That was exactly the point that [Eric Murphy](https://ericmurphy.xyz) made in the following video, whose point initially rankled me but I now fully grasp:
+Indeed, I had to do it *so* many times that I came to understand the process much better than when going more-or-less blindly through `archinstall`. That was exactly the point that [Eric Murphy](https://ericmurphy.xyz) made in the following video, a point which initially rankled me but I now fully grasp:
 
 {{< lite-youtube videoTitle="Why you (probably) shouldn’t use an Arch Linux install script" videoId="J_RWNKlxF3c" >}}
 
@@ -93,7 +93,7 @@ Of course, this doesn't mean that, whenever I go through the Arch installation p
 
 Just as my earlier use of `archinstall` cured me of any trepidation over installing Arch at all, these multiple runs through Arch's regular installation process have taken away my previous worries about whether I could get through it *and* whether my old Mac could survive it.[^MacRecovery] I did, and it did.
 
-[^MacRecovery]: It certainly doesn't hurt that, whenever things go south with such endeavors, I need only reboot while holding down **⌘ R** to boot into the Mac's Recovery Mode (ROM-based, so it will survive whatever I do with the system drive). From there, I can erase the drive once more, clearing the way for yet another try at installing Arch or whichever other distro I may choose.
+[^MacRecovery]: It certainly doesn't hurt that, whenever things go south with such endeavors, I need only reboot while holding down **⌘ R** to boot into the Mac's Recovery Mode (ROM-based, so it will survive whatever I do with the system drive). From there, I can erase the drive once more, clearing the way for yet another try at installing Arch or whichever other distro I may choose.
 
 ### "Unofficial" guides to installing Arch Linux
 
