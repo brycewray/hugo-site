@@ -73,7 +73,7 @@ After using Arch for about a week, I realized I'd rather not have to futz with i
 
 That choice took me back briefly to Debian, but I again found the experience unsatisfying. So, after still more soul-searching **as well as** additional reading into how Fedora relates to RHEL development --- including fairly detailed explanations from some of Fedora's especially knowledgeable insiders and long-time users --- I decided to move the old iMac back to the distro where I'd most admired the experience: Fedora.
 
-The simple truth is that, for my particular use case and hardware, I find Fedora Workstation the best combination of freshness and stability.  
+The simple truth is that, for my particular use case and hardware, I find Fedora Workstation the best combination of freshness and stability.
 
 As for all the RHEL-related turmoil of the last few weeks and how some would insist it frames all Fedora users as being acquiescent to evil (if not downright evil themselves): well, to quote the [famous line from *Huckleberry Finn*](https://www.allgreatquotes.com/huckleberry-finn-quote-172/): "All right, then, I'll go to hell." Them's the breaks. And, while I'm at it: whatever further toying around I do with Linux, I'll (try to) keep my distro-dancing to myself, rather than going on about it here.
 
@@ -101,6 +101,6 @@ I list these in order of how helpful I found each while I went through the Arch 
 
 - Bobby Borisov, "[How to Install Arch Linux: Beginner's Step-by-Step Guide](https://linuxiac.com/arch-linux-install/)" (updated <span class="nobrk">2023-08-19</span>).
 - Abhishek Prakash, "[How to Install Arch Linux [Step by Step Guide]](https://itsfoss.com/install-arch-linux/)" (<span class="nobrk">2023-02-11</span>).
-- Nickolas Kraus, "Installing Arch Linux on a MacBook Pro," Parts [1](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-1/), [2](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-2/), and [3](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-2/) (<span class="nobrk">2021-01-01</span>, <span class="nobrk">2021-01-08</span>, and <span class="nobrk">2021-01-15</span>, respectively).
+- Nickolas Kraus, "Installing Arch Linux on a MacBook Pro," Parts [1](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-1/), [2](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-2/), and [3](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-3/) (<span class="nobrk">2021-01-01</span>, <span class="nobrk">2021-01-08</span>, and <span class="nobrk">2021-01-15</span>, respectively).
 - "kyoz" (GitHub user handle), [mac-arch](https://github.com/kyoz/mac-arch) (last updated <span class="nobrk">2022-05-16</span>).
 - Barnet Wagman, "[Installing Arch Linux on a MacBook Air](https://bwagman.org/Arch_Linux_on_MacBook_Air.html)" (<span class="nobrk">2017-02-09</span>).
