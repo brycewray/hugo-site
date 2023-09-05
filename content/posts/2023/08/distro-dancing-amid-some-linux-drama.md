@@ -53,7 +53,7 @@ Bizarrely enough, [Arch Linux](https://archlinux.org) at least so far is a great
 
 Confession: I wimped out from Arch's ultra-involved and somewhat infamous [installation process](https://wiki.archlinux.org/title/Installation_guide), which I liken to buying a car and then having to assemble it yourself, one part at a time.[^twoScreens] Instead, I used [Arch's own `archinstall` installation script](https://github.com/archlinux/archinstall). It took me a few runs to get it right[^Firefox] but, when I did, only a few tweaks were needed to make the setup and its environment exactly what I needed. And, hey, I'd already had to make some of those tweaks in the other distros, so it was no big deal. One good thing about Arch is that halfway decent search-fu will give you the answer to just about any Arch-related question that comes up.[^Hugo]
 
-[^twoScreens]: Actually, the regular installation process has one additional complication: you *have* to be able to view its instructions on a second device's screen while installing Arch on the first device --- and, IMHO, that's very likely a non-starter if the second device is anything smaller than a large tablet, because the Arch Linux wiki isn't exactly a great example of responsive web design. (While the installation instructions do mention opening a second terminal screen and viewing the instructions in one of the two windows, I decided that was a bridge too far.)
+[^twoScreens]: Actually, the regular installation process has one additional complication: you *have* to be able to view its instructions on a second device's screen while installing Arch on the first device --- and, IMHO, that's very likely a non-starter if the second device is anything smaller than a large tablet, because the Arch Linux wiki isn't exactly a great example of responsive web design. (While the installation instructions do mention opening a second terminal screen and viewing the instructions in one of the two windows, I decided that was a bridge too far. **Update from the future**: I later was able to get that going, but finally decided I'd rather swivel my chair between the old Mac and the new Mac, reading instructions on the latter while tinkering with the former. It wasn't easy on my neck, but I found it superior to the two-terminal-screens method.)
 
 [^Firefox]: Let's just say you don't want to tell the script to install both [PipeWire](https://pipewire.org) (for audio/video) **and** Firefox, because installing Firefox during the use of `archinstall` causes some sort of conflict with PipeWire. Just install PipeWire from the script and then, only after you've safely booted into Arch, install Firefox from Flatpak.
 
@@ -76,3 +76,31 @@ That choice took me back briefly to Debian, but I again found the experience uns
 The simple truth is that, for my particular use case and hardware, I find Fedora Workstation the best combination of freshness and stability.  
 
 As for all the RHEL-related turmoil of the last few weeks and how some would insist it frames all Fedora users as being acquiescent to evil (if not downright evil themselves): well, to quote the [famous line from *Huckleberry Finn*](https://www.allgreatquotes.com/huckleberry-finn-quote-172/): "All right, then, I'll go to hell." Them's the breaks. And, while I'm at it: whatever further toying around I do with Linux, I'll (try to) keep my distro-dancing to myself, rather than going on about it here.
+
+----
+
+## Update, 2023-09-05
+
+Okay, I've gotta make just one more update to this one. Sorry.
+
+My curiosity couldn't restrain itself: I decided I *like* futzing with Arch, after all. Moreover, I wanted to see if I could get through the regular installation process, rather than relying on the `archinstall` script. So that's what I did, although it took me numerous tries and, I admit, heavy reliance on not just the [Arch Wiki](https://wiki.archlinux.org)'s [official guide](https://wiki.archlinux.org/title/Installation_guide) but also several "unofficial" guides to the process. (See my list below.)
+
+Indeed, I had to do it *so* many times that I came to understand the process much better than when going more-or-less blindly through `archinstall`. That was exactly the point that [Eric Murphy](https://ericmurphy.xyz) made in the following video, whose point initially rankled me but I now fully grasp:
+
+{{< lite-youtube videoTitle="Why you (probably) shouldn’t use an Arch Linux install script" videoId="J_RWNKlxF3c" >}}
+
+Of course, this doesn't mean that, whenever I go through the Arch installation process (there almost certainly will be more such episodes), I wouldn't still need the crutch of the Wiki and those other sources, especially since they differ somewhat on which steps should go in which order. That said, at least now I have a clearer handle on what I'm doing.
+
+Just as my earlier use of `archinstall` cured me of any trepidation over installing Arch at all, these multiple runs through Arch's regular installation process have taken away my previous worries about whether I could get through it *and* whether my old Mac could survive it.[^MacRecovery] I did, and it did.
+
+[^MacRecovery]: It certainly doesn't hurt that, whenever things go south with such endeavors, I need only reboot while holding down **⌘ R** to boot into the Mac's Recovery Mode (ROM-based, so it will survive whatever I do with the system drive). From there, I can erase the drive once more, clearing the way for yet another try at installing Arch or whichever other distro I may choose.
+
+### "Unofficial" guides to installing Arch Linux
+
+I list these in order of how helpful I found each while I went through the Arch Linux installation process. As you can see, some are particularly applicable to what I did with my Mac.
+
+- Bobby Borisov, "[How to Install Arch Linux: Beginner's Step-by-Step Guide](https://linuxiac.com/arch-linux-install/)" (updated <span class="nobrk">2023-08-19</span>).
+- Abhishek Prakash, "[How to Install Arch Linux [Step by Step Guide]](https://itsfoss.com/install-arch-linux/)" (<span class="nobrk">2023-02-11</span>).
+- Nickolas Kraus, "Installing Arch Linux on a MacBook Pro," Parts [1](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-1/), [2](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-2/), and [3](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-2/) (<span class="nobrk">2021-01-01</span>, <span class="nobrk">2021-01-08</span>, and <span class="nobrk">2021-01-15</span>, respectively).
+- "kyoz" (GitHub user handle), [mac-arch](https://github.com/kyoz/mac-arch) (last updated <span class="nobrk">2022-05-16</span>).
+- Barnet Wagman, "[Installing Arch Linux on a MacBook Air](https://bwagman.org/Arch_Linux_on_MacBook_Air.html)" (<span class="nobrk">2017-02-09</span>).
