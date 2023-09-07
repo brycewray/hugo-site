@@ -7,7 +7,7 @@
 
 	*/
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-	--sans-serif: ui-sans-serif, system-ui, "Segoe UI", "Noto Sans", "DejaVu Sans", Ubuntu, Cantarell, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--sans-serif: "Libre Franklin", ui-sans-serif, system-ui, "Segoe UI", "Noto Sans", "DejaVu Sans", Ubuntu, Cantarell, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--serif: ui-serif, Georgia, "Bitstream Charter", Cambria, serif;
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Source Code Pro", "Cascadia Code", "DejaVu Sans Mono", "Nimbus Mono PS", "Droid Sans Mono", Menlo, Monaco, "Cascadia Mono", "Courier New", monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
