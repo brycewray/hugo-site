@@ -10,10 +10,10 @@ env:
   HUGO_NPM: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using the npm pkg `hugo-installer`
   DART_SASS_VERSION: 1.66.1 # (depends on STYLING env var)
-  NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   NODE_VERSION: 18 # (18.16.0 = CFP v2 build image default as of 2023-05-17)
   # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
-  STYLING: VCSS # 'VCSS' requires PostCSS as of 2023-09-04
+  STYLING: SCSS # 'SCSS' or 'VCSS'; 'VCSS' requires PostCSS as of 2023-09-04
 
 jobs:
   deploy:

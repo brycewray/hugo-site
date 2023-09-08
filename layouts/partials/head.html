@@ -14,8 +14,8 @@
 	{{- end }}
 	{{ hugo.Generator }}
 {{/* CSS */}}
-		{{- partialCached "head-criticalcss.html" . }}
-		{{- partialCached "head-css.html" . }}
+		{{- partialCached "head-criticalscss.html" . }}
+		{{- partialCached "head-scss.html" . }}
 		{{- partial "head-imgs-css.html" . }}
 		{{- partial "head-css-oklch-post.html" . -}}
 		<noscript>
