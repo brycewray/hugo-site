@@ -1,6 +1,6 @@
-@charset 'utf-8';
-/* @use 'partials/005-limited-colors' as clr; */
-/* @use 'partials/010-variables' as var; */
+// @charset 'utf-8';
+@use 'partials/colors' as clr;
+@use 'partials/variables' as var;
 
 .FourOhFour-Wrapper {
 	padding-top: 10vh;
@@ -11,7 +11,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	& h1 {
-		font-size: var(--text-4xl);
+		font-size: var.$text-4xl;
 		margin-bottom: 3rem;
 		@media screen and (min-width: 1024px) {
 			font-size: 3.25rem;
@@ -21,7 +21,7 @@
 		}
 	}
 	& p {
-		font-size: var(--text-2xl);
+		font-size: var.$text-2xl;
 		letter-spacing: -0.025em;
 	}
 	.bottom {

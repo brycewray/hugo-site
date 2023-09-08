@@ -1,31 +1,25 @@
-@charset 'utf-8';
-/* @use 'partials/005-limited-colors' as clr; */
-/* @use 'partials/010-variables' as var; */
+// @charset 'utf-8';
+@use 'partials/colors' as clr;
+@use 'partials/variables' as var;
 
 /* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
 
-:root {
-	--tc-corner-radius: 1em;
-	--tc-padding: 1em;
-	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .twitter-tweet {
-	font-size: var(--text-sm);
+	font-size: var.$text-sm;
 	& a {
 		margin-left: 0.5em;
 	}
 	@media screen and (min-width: 1024px) {
 		& p {
-			font-size: var(--text-xl);
+			font-size: var.$text-xl;
 		}
 	}
 }
 
 .toot-blockquote {
 	line-height: 1.35em; /* for non-`p` results from `text` var */
-	font-family: var(--social-sans-serif);
-	font-size: var(--text-base);
+	font-family: var.$social-sans-serif;
+	font-size: var.$text-base;
 	& p {
 		margin-top: 0; /* reset */
 		color: var(--default);
@@ -35,9 +29,9 @@
 	margin: 1.5rem auto;
 	padding: 1rem;
 	border: 2px solid;
-	border-color: var(--gray-700);
+	border-color: clr.$gray-700;
 	border-radius: 12px;
-	background: var(--white);
+	background: clr.$white;
 	width: 100%;
 	@media screen and (min-width: 900px) {
 		width: 80%;
@@ -90,7 +84,7 @@ Eleventy version
 
 .toot-blockquote-img {
 	border-bottom: 1px solid;
-	border-bottom-color: var(--gray-700);
+	border-bottom-color: clr.$gray-700;
 	width: 100%;
 }
 
@@ -101,7 +95,7 @@ Eleventy version
 /* ==== END, rounded image "attachment" */
 
 a > .card, a > .toot-card {
-	color: var(--gray-800);
+	color: clr.$gray-800;
 }
 
 .card {
@@ -109,14 +103,14 @@ a > .card, a > .toot-card {
 	margin-top: 1em;
 	border-radius: 12px;
 	border: 1px solid;
-	border-color: var(--gray-700);
+	border-color: clr.$gray-700;
 	& p {
 		padding: 0.5em 1em 1em;
 		line-height: 1.4;
 		margin-top: 0;
-		font-size: var(--text-sm);
+		font-size: var.$text-sm;
 		.card-title {
-			color: var(--black);
+			color: clr.$black;
 		}
 	}
 }
@@ -143,14 +137,14 @@ a > .card, a > .toot-card {
 	}
 	.toot-author-name {
 		font-weight: bold;
-		font-size: var(--text-base);
-		color: var(--black);
+		font-size: var.$text-base;
+		color: clr.$black;
 		line-height: 1.375;
 	}
 	.toot-author-handle {
-		color: var(--gray-700);
-		font-weight: var(--font-weight-sm);
-		font-size: var(--text-sm);
+		color: clr.$gray-700;
+		font-weight: var.$font-weight-sm;
+		font-size: var.$text-sm;
 		line-height: 1;
 	}
 }
@@ -159,14 +153,14 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: var(--gray-800);
-	font-size: var(--text-sm);
-	font-weight: var(--font-weight-sm);
+	color: clr.$gray-800;
+	font-size: var.$text-sm;
+	font-weight: var.$font-weight-sm;
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
 	& a {
-		color: var(--gray-800);
+		color: clr.$gray-800;
 		&:hover {
 			color: var(--link);
 		}
@@ -183,7 +177,7 @@ a > .card, a > .toot-card {
 .toot-video-wrapper,
 .toot-media-video {
 	margin-top: 0.5em;
-	border-radius: var(--tc-corner-radius);
+	border-radius: var.$tc-corner-radius;
 	overflow: hidden;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -191,7 +185,7 @@ a > .card, a > .toot-card {
 }
 
 .toot-video-wrapper {
-	border-radius: var(--tc-corner-radius);
+	border-radius: var.$tc-corner-radius;
 	display: block;
 	/* overriding previous */
 	position: relative;
@@ -237,10 +231,10 @@ a > .card, a > .toot-card {
 .blur-text {
 	position: absolute;
 	font-weight: bold;
-	text-shadow: 0.125em 0.125em 0.1em var(--black);
+	text-shadow: 0.125em 0.125em 0.1em clr.$black;
 	width: 100%;
 	top: 40%;
-	color: var(--white);
+	color: clr.$white;
 	text-align: center;
 	font-size: 1.5em;
 	line-height: 1.2;
@@ -248,7 +242,7 @@ a > .card, a > .toot-card {
 
 .blur-text-no {
 	display: none !important;
-	background-color: var(--black);
+	background-color: clr.$black;
 }
 
 .toot-poll-wrapper {
@@ -281,13 +275,13 @@ a > .card, a > .toot-card {
 
 .toot-quoted-tweet {
 	border: 1px solid;
-	border-color: var(--gray-800);
+	border-color: clr.$gray-800;
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
 	margin-top: 0.75em;
 	margin-bottom: 0;
 	& p {
-		font-size: var(--text-sm);
+		font-size: var.$text-sm;
 		margin: 0 0 0.5em;
 		line-height: 1.4;
 		.toot-quoted-toot-profile-image {
@@ -300,7 +294,7 @@ a > .card, a > .toot-card {
 	& p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
 		& a {
-			color: var(--gray-800);
+			color: clr.$gray-800;
 			&:hover {
 				color: var(--link);
 			}
@@ -312,8 +306,8 @@ a > .card, a > .toot-card {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: var(--gray-800);
-	font-size: var(--text-sm);
+	color: clr.$gray-800;
+	font-size: var.$text-sm;
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
@@ -325,7 +319,7 @@ a > .card, a > .toot-card {
 		display: flex;
 	}
 	border: 2px solid;
-	border-color: var(--gray-400);
+	border-color: clr.$gray-400;
 	border-radius: 6px;
 	margin-top: 1em;
 	text-decoration: none;
@@ -338,7 +332,7 @@ a > .card, a > .toot-card {
 		flex: 0 0 200px;
 	}
 	border-right: 2px solid;
-	border-right-color: var(--gray-400);
+	border-right-color: clr.$gray-400;
 	position: relative;
 }
 
@@ -361,55 +355,55 @@ a > .card, a > .toot-card {
 		font-weight: bold;
 	}
 	.card-title, .card-description {
-		font-size: var(--text-sm);
+		font-size: var.$text-sm;
 	}
 }
 
 html[data-theme="dark"] {
 	& .toot-blockquote {
-		background: var(--gray-900);
+		background: clr.$gray-900;
 		/* background: transparent; */
-		border-color: var(--gray-200);
-		color: var(--white);
+		border-color: clr.$gray-200;
+		color: clr.$white;
 		& a, & a:hover {
 			color: var(--link);
 		}
 	}
 	& .toot-blockquote-img {
-		border-bottom-color: var(--gray-300);
+		border-bottom-color: clr.$gray-300;
 	}
 	& a > .card, & a > .toot-card {
-		color: var(--gray-300);
+		color: clr.$gray-300;
 	}
 	& .card {
-		border-color: var(--gray-300);
+		border-color: clr.$gray-300;
 		& p .card-title {
-			color: var(--white);
+			color: clr.$white;
 		}
 	}
 	& .toot-header {
 		& .toot-author-name {
-			color: var(--white);
+			color: clr.$white;
 		}
 		& .toot-author-handle {
-			color: var(--gray-300);
+			color: clr.$gray-300;
 		}
 	}
 	& .toot-footer {
-		color: var(--gray-200);
+		color: clr.$gray-200;
 		& a {
-			color: var(--gray-200);
+			color: clr.$gray-200;
 		}
 	}
 	& .toot-quoted-tweet {
-		border-color: var(--gray-200);
+		border-color: clr.$gray-200;
 		& p.toot-quoted-toot-head {
 			& a {
-				color: var(--gray-200);
+				color: clr.$gray-200;
 			}
 		}
 	}
 	& .toot-reply-to {
-		color: var(--gray-200);
+		color: clr.$gray-200;
 	}
 }

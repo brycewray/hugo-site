@@ -1,6 +1,6 @@
-@charset 'utf-8';
-/* @use 'partials/005-limited-colors' as clr; */
-/* @use 'partials/010-variables' as var; */
+// @charset 'utf-8';
+@use 'partials/colors' as clr;
+@use 'partials/variables' as var;
 
 /* === for HTML sitemap */
 
@@ -21,13 +21,13 @@
 		/* font-weight: bold; */
 	}
 	& ul li {
-		font-size: var(--text-sm);
-		font-family: var(--sans-serif);
+		font-size: var.$text-sm;
+		font-family: var.$sans-serif;
 		margin-bottom: 0.75em;
 		line-height: 1.375;
-		--pub-date-weight: var(--font-semibold);
+		--pub-date-weight: #{var.$font-semibold};
 		& strong {
-			font-weight: var(--font-semibold);
+			font-weight: var.$font-semibold;
 		}
 	}
 }

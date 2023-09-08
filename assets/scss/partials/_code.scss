@@ -1,56 +1,25 @@
-@charset 'utf-8';
-/* @use 'partials/005-limited-colors' as clr; */
-/* @use 'partials/010-variables' as var; */
-
-:root {
-	--orange-300: hsl(25, 100%, 78%);
-	--orange-700: hsl(25, 100%, 36%);
-	--yellow-200: hsl(55, 90%, 76%);
-	--yellow-300: hsl(55, 84%, 62%);
-	--yellow-800: hsl(55, 100%, 20%);
-	--green-100: hsl(145, 78%, 93%);
-	--green-600: hsl(145, 90%, 34%);
-	--emerald-200: hsl(155, 76%, 81%);
-	--emerald-700: hsl(155, 70%, 28%);
-	--sky-300: hsl(200, 100%, 77%);
-	--sky-700: hsl(200, 100%, 30%);
-	--fuchsia-300: hsl(290, 93%, 83%);
-	--fuchsia-700: hsl(290, 70%, 41%);
-	@supports (color: oklch(49% 0.1 252)) {
-		--orange-300: oklch(84.96% 0.097 49);
-		--orange-700: oklch(55.1% 0.155 49);
-		--yellow-200: oklch(94.03% 0.123 104);
-		--yellow-300: oklch(89.76% 0.164 104);
-		--yellow-800: oklch(47.33% 0.09965845980572594 104);
-		--green-100: oklch(96.37% 0.036 151);
-		--green-600: oklch(63.06% 0.174 151);
-		--emerald-200: oklch(90.85% 0.085 158);
-		--emerald-700: oklch(51.24% 0.11 158);
-		--sky-300: oklch(84.54% 0.094 241);
-		--sky-700: oklch(48.74% 0.113 241);
-		--fuchsia-300: oklch(83.21% 0.131 320);
-		--fuchsia-700: oklch(50.88% 0.222 320);
-	}
-}
+// @charset 'utf-8';
+@use 'partials/colors' as clr;
+@use 'partials/variables' as var;
 
 [data-theme="light"] {
-	--gray: var(--gray-700);
-	--orange: var(--orange-700);
-	--yellow: var(--yellow-800);
-	--green: var(--green-600);
-	--emerald: var(--emerald-700);
-	--sky: var(--sky-700);
-	--fuchsia: var(--fuchsia-700);
+	--gray: #{clr.$gray-700};
+	--orange: #{clr.$orange-700};
+	--yellow: #{clr.$yellow-800};
+	--green: #{clr.$green-600};
+	--emerald: #{clr.$emerald-700};
+	--sky: #{clr.$sky-700};
+	--fuchsia: #{clr.$fuchsia-700};
 }
 
 [data-theme="dark"] {
-	--gray: var(--gray-300);
-	--orange: var(--orange-300);
-	--yellow: var(--yellow-300);
-	--green: var(--green-100);
-	--emerald: var(--emerald-200);
-	--sky: var(--sky-300);
-	--fuchsia: var(--fuchsia-300);
+	--gray: #{clr.$gray-300};
+	--orange: #{clr.$orange-300};
+	--yellow: #{clr.$yellow-300};
+	--green: #{clr.$green-100};
+	--emerald: #{clr.$emerald-200};
+	--sky: #{clr.$sky-300};
+	--fuchsia: #{clr.$fuchsia-300};
 }
 
 /* ======= START, individual items from Chroma */
@@ -58,12 +27,12 @@
 /* Background */
 
 .chroma, .code-inline {
-	color: var(--black);
+	color: #{clr.$black};
 	background-color: var(--bkgd-code);
 	border: 1px solid;
 	border-color: var(--border);
 	& * {
-		font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
+		font-weight: var.$font-normal; /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
 		color: var(--clr, #ffff00);
 	}
@@ -100,7 +69,7 @@
 	& .hl {
 		display: block;
 		width: 100%;
-		background-color: var(--yellow-200);
+		background-color: clr.$yellow-200;
 	}
 	& .lnt, & .ln {
 		margin-right: 0.4em;
@@ -184,7 +153,7 @@
 
 pre,
 code {
-	font-family: var(--monospaced);
+	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
 	background: var(--bkgd-article-code);
@@ -192,9 +161,9 @@ code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: var(--gray-200);
+	color: clr.$gray-200;
 	background: none;
-	font-size: clamp(0.9rem, 1vw + 0.625rem, var(--text-lg));
+	font-size: clamp(0.9rem, 1vw + 0.625rem, var.$text-lg);
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -215,8 +184,8 @@ pre.chroma {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	color: var(--black);
-	background-color: var(--white);
+	color: clr.$black;
+	background-color: clr.$white;
 }
 
 .highlight {
@@ -225,7 +194,7 @@ pre[class*="language-"] {
 		border-radius: 16px;
 		/* keeps code blocks from being too small
 		due to the `article code` rule above */
-		font-size: clamp(0.9rem, 1vw + 0.625rem, var(--text-lg));
+		font-size: clamp(0.9rem, 1vw + 0.625rem, var.$text-lg);
 	}
 }
 
@@ -250,9 +219,9 @@ pre[class*="language-"] {
 	right: 0;
 	padding: 2px 7px 5px 7px;
 	margin: 5px;
-	color: var(--gray-500);
-	border-color: var(--gray-500);
-	background-color: var(--gray-100);
+	color: clr.$gray-500;
+	border-color: clr.$gray-500;
+	background-color: clr.$gray-100;
 	border: 1px solid;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -261,15 +230,15 @@ pre[class*="language-"] {
 	transition: 0.1s;
 }
 .clipboard-button > svg {
-	fill: var(--gray-500);
+	fill: clr.$gray-500;
 }
 .clipboard-button:hover {
 	cursor: pointer;
-	border-color: var(--green-600);
-	background-color: var(--green-100);
+	border-color: clr.$green-600;
+	background-color: clr.$green-100;
 }
 .clipboard-button:hover > svg {
-	fill: var(--green-600);
+	fill: clr.$green-600;
 }
 .clipboard-button:focus {
 	outline: 0;
@@ -309,7 +278,7 @@ code, article code, .box code {
 }
 
 code {
-	font-family: var(--monospaced);
+	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
 }
@@ -340,7 +309,7 @@ article p code {
 }
 
 article p code.code-inline {
-	/* font-size: var(--text-sm); */
+	/* font-size: var.$text-sm; */
 	padding: 0.25em 0.5em;
 	margin: 0 0.25em;
 }
@@ -370,11 +339,11 @@ html[data-theme="dark"] {
 	}
 	& .chroma, & .code-inline {
 		& .h1 {
-			background-color: var(--yellow-800);
+			background-color: clr.$yellow-800;
 		}
 	}
 	& :not(pre) > code[class*="language-"], & pre[class*="language-"] {
-		color: var(--white);
-		background-color: var(--slate-800);
+		color: clr.$white;
+		background-color: clr.$slate-800;
 	}
 }
