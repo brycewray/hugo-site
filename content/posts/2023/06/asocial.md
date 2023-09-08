@@ -27,5 +27,7 @@ I was a daily user of Facebook for the better part of a decade, but I did finall
 
 **Update, 2023-06-09**: Ironically, a few hours after initially publishing this post, I received an invite --- requested weeks ago, before my social media ennui had set in --- to the still-in-beta [Bluesky](https://bsky.app). I'm giving it a try as [@brycewray.com](https://bsky.app/profile/brycewray.com) (it lets you use your custom domain as a handle), and finding some nice folks that I'd followed elsewhere. Perhaps this experience will be somewhat less *meh*. One can hope.\
 \
-**Further update, 2023-07-21**: After a few weeks, I realized I'd lost interest in Bluesky, too, so I deleted my account there today.
+**Further update, 2023-07-21**: After a few weeks, I realized I'd lost interest in Bluesky, too, so I deleted my account there today.\
+\
+**Further update, 2023-09-08**: I'm back on the Fediverse, as [@BryceWrayTX@fosstodon.org](https://fosstodon.org/@BryceWrayTX). Although I [once worried](/posts/2023/01/another-move-mastodon/) that my non-FOSS-related observations would make me a bad guy on the Fosstodon instance, I decided the simple fix for that was to limit those observations to a minimum. I am enjoying once again being able to follow a number of developers, and other very smart folks, whose observations and insights I value greatly.
 {.box}
