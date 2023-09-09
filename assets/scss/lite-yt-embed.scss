@@ -1,12 +1,12 @@
-// @charset 'utf-8';
-@use 'partials/colors' as clr;
-@use 'partials/variables' as var;
+@charset 'utf-8';
+/* @use 'partials/005-limited-colors' as clr; */
+/* @use 'partials/010-variables' as var; */
 
 lite-youtube {
-	background-color: clr.$black;
+	background-color: var(--black);
 	position: relative;
 	border: 1px solid;
-	border-color: clr.$gray-700;
+	border-color: var(--gray-700);
 	display: block;
 	contain: content;
 	background-position: center center;
@@ -17,7 +17,7 @@ lite-youtube {
 }
 
 html[data-theme="dark"] lite-youtube {
-	border-color: clr.$gray-400;
+	border-color: var(--gray-400);
 }
 
 /* gradient */

@@ -1,12 +1,12 @@
-// @charset 'utf-8';
-@use 'partials/colors' as clr;
-@use 'partials/variables' as var;
+@charset 'utf-8';
+/* @use 'partials/005-limited-colors' as clr; */
+/* @use 'partials/010-variables' as var; */
 
 /* == footnotes == */
 
 .footnotes ol li, .footnotes ol li p, .footnote-ref,
 .footnote-backref, .footnote-sim, a.footnote-return {
-	font-weight: var.$font-weight-sm;
+	font-weight: var(--font-weight-sm);
 }
 
 .footnotes {

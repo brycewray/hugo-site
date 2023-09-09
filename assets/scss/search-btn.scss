@@ -1,6 +1,6 @@
-// @charset 'utf-8';
-@use 'partials/colors' as clr;
-@use 'partials/variables' as var;
+@charset 'utf-8';
+/* @use 'partials/005-limited-colors' as clr; */
+/* @use 'partials/010-variables' as var; */
 
 /* === for search button on each page */
 
@@ -9,8 +9,8 @@ search-button {
 	margin: 4em auto 2em;
 	place-items: center;
 	& button {
-		width: var.$btn-width;
-		height: var.$btn-height;
+		width: var(--btn-width);
+		height: var(--btn-height);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -18,22 +18,22 @@ search-button {
 		align-items: center;
 		background-color: var(--link);
 		border: 1px solid;
-		border-radius: var.$btn-radius;
+		border-radius: var(--btn-radius);
 		border-color: transparent;
 		color: var(--btn-text-default);
 		& .svg {
-			padding-left: var.$interactionPadding;
+			padding-left: var(--interactionPadding);
 			padding-bottom: 0.125em;
 			& svg {
-				width: var.$btn-svg-width;
+				width: var(--btn-svg-width);
 				height: auto;
 			}
 		}
 		& .legend {
-			padding-right: var.$interactionPadding;
+			padding-right: var(--interactionPadding);
 			text-align: right;
-			font-size: var.$btn-legend-text;
-			font-weight: var.$btn-legend-weight;
+			font-size: var(--btn-legend-text);
+			font-weight: var(--btn-legend-weight);
 		}
 		&:hover {
 			cursor: pointer;

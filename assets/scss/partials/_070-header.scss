@@ -1,7 +1,3 @@
-// @charset 'utf-8';
-@use 'partials/colors' as clr;
-@use 'partials/variables' as var;
-
 :root {
 	--navRightMargin: 6em; /* unless JS is off */
 }
@@ -25,7 +21,7 @@ header {
 	& svg {
 		padding-top: 0.425em;
 		width: 1.5rem;
-		fill: clr.$white;
+		fill: var(--white);
 	}
 	.close {
 		display: none;
@@ -49,7 +45,7 @@ header {
 	& li {
 		list-style: none;
 		display: none;
-		font-weight: var.$font-bold;
+		font-weight: var(--font-bold);
 		padding-right: 3.5em;
 		&.notMobile {
 			display: none;
@@ -78,7 +74,7 @@ header {
 		gap: 0.5rem;
 		margin: 0.5rem var(--navRightMargin) 0 0;
 		& li {
-			font-size: var.$text-sm;
+			font-size: var(--text-sm);
 			display: block;
 			text-transform: uppercase;
 			margin: 0.5rem 0 0.5rem 0;
@@ -143,5 +139,5 @@ a:hover circle.NavIcon {
 }
 
 path.NavIcon {
-	fill: clr.$white;
+	fill: var(--white);
 }
