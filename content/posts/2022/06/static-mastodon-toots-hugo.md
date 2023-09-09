@@ -362,7 +362,3 @@ To wrap this up, I'll note some aspects worth eyeing warily:
 [^saveSpace]: Users can set their toots for automatic deletion after a fixed period of time. Why? Well, it can help the performance of their chosen Mastodon server instances. Also, certain individuals simply don't want to leave their content out on the ’net for that long.
 
 One wonders whether a more centralized platform might allow a better chance to solve these problems, but that obviously would be completely counter to the entire idea behind Mastodon. To paraphrase my earlier statement: these are (considered to be) features, not bugs; so, before you embed Mastodon content on your site, you'll need to think about these items.
-
-**Note from the future**: I am no longer active on the Fediverse under any account.
-{.box}
-

@@ -24,6 +24,3 @@ Although I remain on mastodon.social, I've also signed up with Calckey, at its [
 -->
 
 Whether you have yet to sample the Fediverse, or are already on Mastodon but curious about other Fediverse platforms, you might want to give Calckey a try.
-
-**Note from the future**: I am no longer active on the Fediverse under any account.
-{.box}

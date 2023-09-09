@@ -52,6 +52,3 @@ For example, I've seen a number of Fosstodon users pointedly expressing zero int
 In the end, I decided it would be better if I were on a less specifically targeted instance --- so off to mstdn.social I went.
 
 After all, I didn't want to risk being (or continuing to be) one of Those Guys.
-
-**Note from the future**: I am no longer active on the Fediverse under any account.
-{.box}

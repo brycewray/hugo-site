@@ -62,7 +62,5 @@ Besides: unless I'm prepared to live off the grid, I have to accept that rich, e
 
 **Updates from the future**: Not long after this post, I decided I would use the Twitter account only to **view** content, specifically the types I mentioned above, rather than tweeting any of my own.\
 \
-Also, I am no longer active on the Fediverse under any account.\
-\
 A few weeks later, I [changed my mind](/posts/2023/06/asocial/).
 {.box}
