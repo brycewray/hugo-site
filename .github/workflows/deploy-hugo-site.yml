@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install npm packages (cond. - Node)
-        if: ${{ env.NODE == 'true' }} || ${{ env.STYLING == 'VCSS' }}
+        if: ${{ env.NODE == 'true' || env.STYLING == 'VCSS' }}
         run: npm install
       - name: Hugo download/install (cond. - non-Hugo-via-hugo-installer)
         if: ${{ env.HUGO_NPM != 'true' }}
