@@ -186,6 +186,9 @@ While I initially dreaded trying once again to go from YAML to TOML, I found tha
 
 If your own Hugo project's configuration has become messy over time, a similar approach might help you clean it up.
 
+**Update, 2023-09-13**: I later learned that the erroneous error indication I'd seen in VS Code was due to a widely reported bug, since fixed (as of this writing, anyway), in a particular extension for that app. Having never warmed up to TOML, after all, I converted my config files back to YAML while keeping the multi-file organizational structure described herein.
+{.box}
+
 ## References and related reading
 
 - Hugo documentation, "[Configure Hugo](https://gohugo.io/getting-started/configuration/)" (last updated <span class="nobrk">2023-04-15</span>).
