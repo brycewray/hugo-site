@@ -1,6 +1,0 @@
-[[mounts]]
-	source = "assets"
-	target = "assets"
-[[mounts]]
-	source = "hugo_stats.json"
-	target = "assets/watching/hugo_stats.json"

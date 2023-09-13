@@ -1,0 +1,17 @@
+goldmark:
+  extensions:
+    linkify: false
+  parser:
+    autoHeadingID: true # otherwise, can't use (e.g.) 'Content' as a heading
+    wrapStandAloneImageWithinParagraph: false
+    attribute:
+      block: true
+      title: true
+  renderer:
+    unsafe: true
+    # only to allow for inline HTML and/or JS
+    # ... other desired settings are defaults
+highlight:
+  guessSyntax: true
+  noClasses: false
+  tabWidth: 2

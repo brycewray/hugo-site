@@ -1,0 +1,28 @@
+Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
+SiteLive: live # Boolean --- used for adapting robots.txt as needed
+EmailObfuscation: local # choices are "local" ahd "host"
+Host: "CFP" # choices for Host are "CFP" and "Vercel"
+DeepClone: true # Boolean --- Gitinfo from a GH (or CFP `git fetch --unshallow`)
+ShowGitInfo: true # whether to display Gitinfo at all (regardless of `DeepClone` setting)
+# ===========================
+Domain: brycewray.com
+Author: Bryce Wray
+AuthorEmail: bw@brycewray.com
+AuthorUrl: https://www.brycewray.com/about/
+AuthorAvatar: https://www.brycewray.com/images/icons/apple-icon-1024x1024.png
+Logo: https://www.brycewray.com/images/icons/favicon-32x32.png"
+Description: "Bryce Wray’s website | Observations, opinions, geekiness"
+License: MIT
+ModeToggle: true # works with `js/mode-toggle.js` --- mainly for testing
+Site_domain: "{{< Site.Params.Domain >}}"
+# ===========================
+Titles:
+  Contact: Want to reach me?
+  Privacy: Privacy policy
+  Search: Search the site
+  Home: Home page
+  Sitemap: Sitemap (HTML form)
+  Postslist: Posts
+  FourOhFour: 404 Page not found
+  About: About me
+# ===========================

@@ -1,0 +1,12 @@
+date:
+  - date
+  - publishdate
+  - lastmod
+lastmod:
+  - :git
+  - lastmod
+  - date
+  - publishdate
+publishdate:
+  - publishdate
+  - date

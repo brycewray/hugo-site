@@ -1,0 +1,35 @@
+baseURL: https://www.brycewray.com/
+
+disableKinds:
+  - taxonomy
+  - term
+  # keep it this way unless/until I config elsewhere appropriately
+
+enableRobotsTXT: true
+
+enableGitInfo: true
+
+ignoreErrors:
+  - error-remote-getjson
+
+languageCode: en-us
+
+# newContentEditor: 'open -b pro.writer.mac'
+# # h/t:
+# # - https://www.lkhrs.com/blog/2022/10/hugo-ia-writer/
+# # - https://discourse.gohugo.io/t/newcontenteditor-trouble-with-spaces/40930
+
+paginate: 5 # so five posts will appear on each page from '/posts'
+
+rssLimit: 10 # default is -1 (unlimited); setting of '10' conforms to Eleventy repo's handling
+
+summaryLength: 30 # words --- if you use summaries **without** the `--more--` workaround
+
+# theme: vcss # choices are sass and vcss - as of 2023-06-07
+# # https://discourse.gohugo.io/t/site-theme/33200
+
+timeout: "150s" # for the sake of newly generated images and such; default is "30s"
+
+timeZone: America/Chicago
+
+title: BryceWray.com

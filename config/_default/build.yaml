@@ -1,0 +1,13 @@
+cacheBusters:
+  - source: "assets/watching/hugo_stats\\.json"
+    target: "css"
+  - source: "(postcss|tailwind)\\.config\\.js"
+    target: "css"
+  - source: "assets/.*\\.(js|ts|jsx|tsx)"
+    target: "js"
+  - source: "assets/.*\\.(.*)$"
+    target: "$1"
+
+# noJSConfigInAssets: false
+# useResourceCacheWhen: 'fallback'
+writeStats: true
