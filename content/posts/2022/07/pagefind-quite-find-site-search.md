@@ -78,15 +78,17 @@ hugo && npm_config_yes=true npx pagefind --source "public"
 
 After reading this post, Hugo expert [Régis Philibert](https://github.com/regisphilibert) looked through the [Pagefind documentation](https://pagefind.app/docs/) and came up with a method, described below, that allows you to use Pagefind in *Hugo's* dev mode. This lets you retain the various advantages of the Hugo dev server, such as live updates as you edit material.
 
-**Note**: Before proceeding, add `static/_pagefind` to your Hugo project's `.gitignore` file.
+**Note**: Before proceeding, add `static/pagefind`[^oldPF] to your Hugo project's `.gitignore` file.
 {.box}
+
+[^oldPF]: **Update, 2023-09-13**: Prior to the [release of Pagefind 1.0.0](https://github.com/CloudCannon/pagefind/releases/tag/v1.0.0), any reference within to a location `static/pagefind` would have been `static/_pagefind`, instead. For more information about this, see "[Migrating to Pagefind 1.0](https://pagefind.app/docs/v1-migration/)."
 
 1. Generate a build by entering `hugo` in your terminal app.
 2. From the terminal, run:\
 {{< highlight bash "linenos=false" >}}
-npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/_pagefind
+npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/pagefind
 {{< /highlight >}}
-The [`--bundle-dir` flag](https://pagefind.app/docs/config-options/#bundle-directory) will tell Pagefind to store its "crawl" results in, and source them from, a `static/_pagefind` directory rather than the default.
+The [`--bundle-dir` flag](https://pagefind.app/docs/config-options/#bundle-directory) will tell Pagefind to store its "crawl" results in, and source them from, a `static/pagefind` directory rather than the default.
 3. Run `hugo server` and, lo and behold, you're running the Hugo dev server *and* you have Pagefind search working, just as in production.
 
 Of course, you should leave the *production* instructions as previously noted; this is for dev purposes only.
@@ -96,7 +98,7 @@ Here's a shell script version:
 {{< labeled-highlight lang="bash" filename="startpf.sh" >}}
 #!/bin/sh
 hugo
-npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/_pagefind
+npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/pagefind
 hugo server
 {{</ labeled-highlight >}}
 

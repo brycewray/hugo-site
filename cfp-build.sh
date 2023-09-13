@@ -14,7 +14,7 @@ echo "                       "
 echo "-----------------------"
 echo "Cleaning 'public' and 'pagefind' dirs, just to be safe..."
 rm -rf public
-rm -rf static/_pagefind
+rm -rf static/pagefind
 echo "                       "
 echo "-----------------------"
 echo "Setting environment variables..."

@@ -65,6 +65,7 @@ gha.txt
 gha*.json
 
 static/_pagefind
+static/pagefind
 
 bin/hugo
 
