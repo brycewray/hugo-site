@@ -1,5 +1,5 @@
 ---
-title: "Installing Arch Linux? Use the SSH, Luke"
+title: "Installing Arch Linux? Use the SSH, Luke"
 description: "Spare yourself the swiveling and neck-straining. There’s a much less painful way to work through the Arch installation process."
 author: Bryce Wray
 date: 2023-09-12T10:20:00-05:00
