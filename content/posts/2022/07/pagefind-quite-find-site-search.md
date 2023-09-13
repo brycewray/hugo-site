@@ -6,6 +6,9 @@ date: 2022-07-28T20:32:00-05:00
 #initTextEditor: iA Writer
 ---
 
+**Update, 2023-09-13**: Some content within has been changed due to the release of Pagefind 1.0.0. See "[Migrating to Pagefind 1.0](https://pagefind.app/docs/v1-migration/)."
+{.box}
+
 I noted in my [summary of the recent HugoConf 2022 event](/posts/2022/07/impressions-hugoconf-2022/) that the host, [CloudCannon](https://cloudcannon.com), had used the online gathering to announce [Pagefind](https://github.com/cloudcannon/pagefind). Developed principally by CloudCannon's [Liam Bigelow](https://github.com/bglw), Pagefind is a new free/open-source tool for quickly adding site-wide search to a website which, like this one, originates from a [static site generator](https://jamstack.org/generators) (SSG). Bigelow's video presentation gave HugoConf "attendees" an introduction to, and demo of, Pagefind:
 
 {{< lite-youtube videoTitle="Introducing Pagefind: static low-bandwidth search at scale - Liam Bigelow // HugoConf 2022" videoId="74lsEXqRQys" >}}
@@ -25,15 +28,15 @@ You can run Pagefind either by using the following command[^fix], which automati
 [^fix]: This command, including all its other occurrences herein, is slightly edited from in the original post due to [an issue](https://github.com/CloudCannon/pagefind/issues/73) that cropped up a few weeks later.
 
 ```bash
-npm_config_yes=true npx pagefind --source "public" --serve
+npm_config_yes=true npx pagefind --site "public" --serve
 ```
 
 . . . or by downloading its binary and putting it in your system `PATH`.[^PFbinary] If you do the latter, your command would be simply:
 
-[^PFbinary]:If I preferred to use the binary on my Mac, the script's last line would be just `pagefind --source "public" --serve`. The advantage of `npx pagefind` is that you always get the newest version. Its only real disadvantage *vs.* using the binary is that you *must* be online to use `npx pagefind` --- although, IMHO, there's not much point in doing web dev if one *isn't* online, so that last item may be of little concern.
+[^PFbinary]:If I preferred to use the binary on my Mac, the script's last line would be just `pagefind --site "public" --serve`. The advantage of `npx pagefind` is that you always get the newest version. Its only real disadvantage *vs.* using the binary is that you *must* be online to use `npx pagefind` --- although, IMHO, there's not much point in doing web dev if one *isn't* online, so that last item may be of little concern.
 
 ```bash
-pagefind --source "public" --serve
+pagefind --site "public" --serve
 ```
 
 For my site, I've created a shell script for use with [Hugo](https://gohugo.io) and Pagefind:
@@ -42,7 +45,7 @@ For my site, I've created a shell script for use with [Hugo](https://gohugo.io) 
 #!/bin/sh
 rm -rf public
 hugo --gc --minify
-npm_config_yes=true npx pagefind --source "public" --serve
+npm_config_yes=true npx pagefind --site "public" --serve
 {{</ labeled-highlight >}}
 
 This way, all I have to do is enter `./buildpf.sh` in my chosen terminal app and, within a few seconds, Pagefind is showing me a local dev view of my site, *with* search working, at `http://localhost:1414`.
@@ -53,7 +56,7 @@ Since I'm [using a GitHub Action](/posts/2022/05/using-dart-sass-hugo-github-act
 
 ```yaml
       - name: Run Pagefind
-        run: npm_config_yes=true npx pagefind --source "public"
+        run: npm_config_yes=true npx pagefind --site "public"
 ```
 
 (Obviously, you wouldn't use Pagefind's `--serve` flag here!)
@@ -62,13 +65,13 @@ If you're not using a GHA or other, similar scripting approach, you still should
 
 ```bash
 # With Astro
-npm run build && npm_config_yes=true npx pagefind --source "dist"
+npm run build && npm_config_yes=true npx pagefind --site "dist"
 
 # With Eleventy
-npm run build && npm_config_yes=true npx pagefind --source "_site"
+npm run build && npm_config_yes=true npx pagefind --site "_site"
 
 # With Hugo
-hugo && npm_config_yes=true npx pagefind --source "public"
+hugo && npm_config_yes=true npx pagefind --site "public"
 ```
 <br />
 
@@ -78,17 +81,15 @@ hugo && npm_config_yes=true npx pagefind --source "public"
 
 After reading this post, Hugo expert [Régis Philibert](https://github.com/regisphilibert) looked through the [Pagefind documentation](https://pagefind.app/docs/) and came up with a method, described below, that allows you to use Pagefind in *Hugo's* dev mode. This lets you retain the various advantages of the Hugo dev server, such as live updates as you edit material.
 
-**Note**: Before proceeding, add `static/pagefind`[^oldPF] to your Hugo project's `.gitignore` file.
+**Note**: Before proceeding, add `static/pagefind` to your Hugo project's `.gitignore` file.
 {.box}
-
-[^oldPF]: **Update, 2023-09-13**: Prior to the [release of Pagefind 1.0.0](https://github.com/CloudCannon/pagefind/releases/tag/v1.0.0), any reference within to a location `static/pagefind` would have been `static/_pagefind`, instead. For more information about this, see "[Migrating to Pagefind 1.0](https://pagefind.app/docs/v1-migration/)."
 
 1. Generate a build by entering `hugo` in your terminal app.
 2. From the terminal, run:\
 {{< highlight bash "linenos=false" >}}
-npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/pagefind
+npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind
 {{< /highlight >}}
-The [`--bundle-dir` flag](https://pagefind.app/docs/config-options/#bundle-directory) will tell Pagefind to store its "crawl" results in, and source them from, a `static/pagefind` directory rather than the default.
+The [`--output-subdir` flag](https://pagefind.app/docs/config-options/#output-subdirectory) will tell Pagefind to store its "crawl" results in, and source them from, a `static/pagefind` directory rather than the default.
 3. Run `hugo server` and, lo and behold, you're running the Hugo dev server *and* you have Pagefind search working, just as in production.
 
 Of course, you should leave the *production* instructions as previously noted; this is for dev purposes only.
@@ -98,7 +99,7 @@ Here's a shell script version:
 {{< labeled-highlight lang="bash" filename="startpf.sh" >}}
 #!/bin/sh
 hugo
-npm_config_yes=true npx pagefind --source "public" --bundle-dir ../static/pagefind
+npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind
 hugo server
 {{</ labeled-highlight >}}
 
