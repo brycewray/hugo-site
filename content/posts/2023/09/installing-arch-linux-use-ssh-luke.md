@@ -49,12 +49,12 @@ With that, you should be logged into the target machine and can perform **nearly
 
 Why did I say "**nearly** the entire installation" above? Because, **at the end**, when you're ready to finish and reboot the target machine to bring up your newly completed Arch installation, you must make a clean exit from the daily-driver machine's end of this:
 
-1. Enter `umount -a` to unmount the mount points you'll have set up during the installation. (Don't worry if some or all of them indicate they're not ready.)
+1. Enter `umount -R /mnt` to unmount the mount points you'll have set up during the installation. (Don't worry if some or all of them indicate they're not ready.)
 2. At this point in the installation, you should be in `arch-chroot` mode, so you'll have to exit from that **and then** exit from the SSH session. To do so, enter `exit`, wait for the response from the target machine, and then enter `exit` again to finish the SSH session and disconnect the two machines.
 
 Finally, back on the target machine:
 
-1. Just to be safe, enter `umount -a` again.
+1. Just to be safe, enter `umount -R /mnt` again.
 2. To reboot to your new Arch installation, enter `reboot`.
 
 ----
