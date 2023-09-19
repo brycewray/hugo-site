@@ -9,7 +9,7 @@ date: 2023-09-19T13:35:00-05:00
 # -
 ---
 
-[A month ago](/posts/2023/08/new-life-old-mac-linux/), I first wrote of how I'd managed to get Linux running on the mid-2017 iMac I'd [replaced](/posts/2023/07/making-good-move/) a few weeks earlier. Since then, I've "fooled around and found out" (to use a sanitized version of a common phrase) a few things about the whole Intel-Mac-on-Linux experience, some of which I've [already](/posts/2023/08/distro-dancing-amid-some-linux-drama/) [shared](/posts/2023/09/installing-arch-linux-use-ssh-luke/).
+[A month ago](/posts/2023/08/new-life-old-mac-linux/), I first wrote of how I'd managed to get Linux running on the mid-2017 iMac I'd [replaced](/posts/2023/07/making-good-move/) a few weeks earlier. Since then, I've "fooled around and found out" (to use a sanitized version of a common phrase) a few things about the whole Intel-Mac-running-Linux experience, some of which I've [already](/posts/2023/08/distro-dancing-amid-some-linux-drama/) [shared](/posts/2023/09/installing-arch-linux-use-ssh-luke/).
 
 Still, in addition to those, I've acquired a few other helpful nuggets of information --- some of which either expand on or outright correct what I'd already passed along --- so, especially for any other reader who might be considering installing and using Linux on an outdated Intel Mac's "bare metal," I'm using this post to sum up where things stand at this point.
 
