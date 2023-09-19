@@ -75,7 +75,7 @@ That choice took me back briefly to Debian, but I again found the experience uns
 
 The simple truth is that, for my particular use case and hardware, I find Fedora Workstation the best combination of freshness and stability.
 
-As for all the RHEL-related turmoil of the last few weeks and how some would insist it frames all Fedora users as being acquiescent to evil (if not downright evil themselves): well, to quote the [famous line from *Huckleberry Finn*](https://www.allgreatquotes.com/huckleberry-finn-quote-172/): "All right, then, I'll go to hell." Them's the breaks.~~ And, while I'm at it: whatever further toying around I do with Linux, I'll (try to) keep my distro-dancing to myself, rather than going on about it here.~~
+As for all the RHEL-related turmoil of the last few weeks and how some would insist it frames all Fedora users as being acquiescent to evil (if not downright evil themselves): well, to quote the [famous line from *Huckleberry Finn*](https://www.allgreatquotes.com/huckleberry-finn-quote-172/): "All right, then, I'll go to hell." Them's the breaks. ~~And, while I'm at it: whatever further toying around I do with Linux, I'll (try to) keep my distro-dancing to myself, rather than going on about it here.~~
 
 ----
 
