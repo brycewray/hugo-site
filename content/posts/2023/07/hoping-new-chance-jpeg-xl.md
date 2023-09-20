@@ -44,3 +44,8 @@ This is even better news, and yet another reason I [can encourage use of Cloudin
 [^Hugo]: While I have written a number of pieces here about how to do that with the [Hugo](https://gohugo.io) website generator tool's built-in image processing, Hugo's *efficient* image-output choices are limited --- and likely will remain so for the foreseeable future --- to GIF, the original JPEG, PNG, and WebP. To deliver newer codecs like JPEG XL, a Hugo website will have to use external means (or, more simply, provide .jxl files manually).
 
 Although I hate writing an ending paragraph that includes a vapid nothing-burger like "time will tell," I have no choice in this case: only time will tell whether any other browsers --- and especially the big kahuna, Chrome --- will take up the challenge and support JPEG XL at all, much less as a default. But I surely hope they will. The web would be better for it.
+
+**Update, 2023-09-20**: Cloudinary's `f_auto` transformation now includes JPEG XL but, at least for now, has to be enabled on your account ("cloud") through a support request. According to Jon Sneyers via that same Discord session to which I linked above, "This is because[,] in the current pricing model, creating more variants costs you more transformations and we want to avoid surprise bills."\
+\
+As of the release of 2023-09-18 of iOS/iPadOS 17, iDevices are JPEG XL-compatible; for Macs, that compatibility will come with the 2023-09-26 release of macOS Sonoma (macOS 14).
+{.box}
