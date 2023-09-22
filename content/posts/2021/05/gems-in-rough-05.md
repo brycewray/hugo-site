@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-05-30T13:16:00-05:00
 ---
 
-Once more, let's venture bravely into the miscellaneous info one gathers while tinkering with, and learning about, websites built by [static site generators](https://jamstack.org/generators) (SSGs) such as [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
+Once more, let's venture bravely into the miscellaneous info one gathers while tinkering with, and learning about, websites built by [static site generators](https://github.com/myles/awesome-static-generators) (SSGs) such as [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
 
 ---
 

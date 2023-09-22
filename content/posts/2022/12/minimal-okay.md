@@ -11,7 +11,7 @@ date: 2022-12-06T13:44:00-06:00
 
 ----
 
-In my years of using various technologies and tools, such as [static site generators](https://jamstack.org/generators) (SSGs), to put content on the web, I've learned an important lesson. Or, I should say, I've *remembered* an important lesson I'd learned long ago in my [former](/posts/2021/09/transition/) working life. Here it is:
+In my years of using various technologies and tools, such as [static site generators](https://github.com/myles/awesome-static-generators) (SSGs), to put content on the web, I've learned an important lesson. Or, I should say, I've *remembered* an important lesson I'd learned long ago in my [former](/posts/2021/09/transition/) working life. Here it is:
 
 **Don't get freaked out by all the capabilities you *could* be using and, instead, focus for now only on what you *need* to use**. To put it another way: *minimal is okay*.
 

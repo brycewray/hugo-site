@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-06-21T16:30:00-05:00
 ---
 
-Introductory note for the uninitiated: each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).
+Introductory note for the uninitiated: each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://github.com/myles/awesome-static-generators).
 
 ## Your own Eleventy time machine
 

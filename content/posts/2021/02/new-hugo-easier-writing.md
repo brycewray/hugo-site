@@ -7,7 +7,7 @@ imgs:
 - BW-holding-Kennedy-first-night__crop_1008x712.jpg
 ---
 
-A few days ago, the [Hugo](https://gohugo.io) dev team [issued the latest version](https://gohugo.io/news/0.81.0-relnotes/) of this site's [static site generator](https://jamstack.org/generators/) (SSG). Hugo 0.81.0 added a number of goodies, as you would expect from a "dot-zero" upgrade, but one in particular has simplified my writing for this site.
+A few days ago, the [Hugo](https://gohugo.io) dev team [issued the latest version](https://gohugo.io/news/0.81.0-relnotes/) of this site's [static site generator](https://github.com/myles/awesome-static-generators/) (SSG). Hugo 0.81.0 added a number of goodies, as you would expect from a "dot-zero" upgrade, but one in particular has simplified my writing for this site.
 
 Perhaps it's more accurate to say that the addition restored something I'd thought I couldn't have any more: the use of **attributes** within the site's [Markdown](https://daringfireball.net/projects/markdown) content to simplify the invocation of classes.
 

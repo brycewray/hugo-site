@@ -11,7 +11,7 @@ imgs:
 
 In the last few days, I've had the pleasure of seeing just how well two of today's hottest names in web development work together.
 
-I speak, of course, of the [Eleventy](https://11ty.dev) [static site generator](https://jamstack.org/generators) (SSG) and the [Vite](https://vitejs.dev) front-end development tool.
+I speak, of course, of the [Eleventy](https://11ty.dev) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) and the [Vite](https://vitejs.dev) front-end development tool.
 
 In case you haven't yet had your lesson in pronouncing *Vite*, it's the French word for *fast*, and it rhymes with *neat*. And *sweet*. And *elite*. I find the latter rhyme especially appropriate because uniting the excellence of **El**eventy with the brilliant performance of V**ite** produces what can be a truly elite solution for building [static websites](/posts/2020/09/normal-persons-guide-static-websites/).
 

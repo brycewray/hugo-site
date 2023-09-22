@@ -36,7 +36,7 @@ And, with those cheery thoughts, I segue to offering you a review of this site's
 - **[Welcome, sweet little early bird](/posts/2020/03/welcome-sweet-little-early-bird/)** --- Your faithful correspondent's first grandchild arrived.
 - **[Some Sirius(XM) thoughts](/posts/2020/03/some-siriusxm-thoughts/)** --- After a new vehicle purchase presented my first-ever access to satellite radio, I pondered the pros and cons thereof.
 - **[Coherence and COVID-19](/posts/2020/03/coherence-covid-19/)** --- Offered my early thoughts as the COVID-19 menace took over the world's attention, damaged its economy, and altered my own daily existence.
-- **[Back to Nunjucks for my Eleventy site](/posts/2020/03/back-nunjucks-eleventy-site/)** --- Discussed my first, and abortive, dip in the waters of JavaScript-only (`.11ty.js`) templating in the [Eleventy](https://11ty.dev) [static site generator](https://jamstack.org/generators) (SSG) about which I'd write so frequently in the succeeding months. I'd soon give that templating another shot, with greater success.
+- **[Back to Nunjucks for my Eleventy site](/posts/2020/03/back-nunjucks-eleventy-site/)** --- Discussed my first, and abortive, dip in the waters of JavaScript-only (`.11ty.js`) templating in the [Eleventy](https://11ty.dev) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) about which I'd write so frequently in the succeeding months. I'd soon give that templating another shot, with greater success.
 
 ## April
 

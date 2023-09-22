@@ -14,7 +14,7 @@ date: 2022-05-17T14:49:00-05:00
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my two [previous](/posts/2022/03/using-dart-sass-hugo/) [posts](/posts/2022/03/using-dart-sass-hugo-sequel/) on this subject. This follow-up assumes you've already read them.
 {.box}
 
-Thought we were done with workarounds to make the Hugo [static site generator](https://jamstack.org/generators) (SSG) and [Dart Sass](https://sass-lang.com/dart-sass) play nicely together, did you? Ah, well, so did I. But, as I reconsidered the two end runs about which I wrote previously, I had concerns.
+Thought we were done with workarounds to make the Hugo [static site generator](https://github.com/myles/awesome-static-generators) (SSG) and [Dart Sass](https://sass-lang.com/dart-sass) play nicely together, did you? Ah, well, so did I. But, as I reconsidered the two end runs about which I wrote previously, I had concerns.
 
 Regarding the [first approach](/posts/2022/03/using-dart-sass-hugo/): some people simply don't want to use [Sass's Node.js package](https://github.com/sass/sass), or any **other** Node.js package. In a similar vein, some purists might reject such a way of incorporating Sass because they think it doesn't make properly efficient use of the [Hugo Pipes](https://gohugo.io/hugo-pipes/) asset pipeline. While I don't share such attitudes, I respect that they exist in the Hugo community and may be more prevalent than I'd previously considered.
 

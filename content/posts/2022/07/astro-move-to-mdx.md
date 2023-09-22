@@ -13,7 +13,7 @@ Grizzled old guy that I am, I saw [the original "Hail Mary" play](https://agatet
 
 [^Vikings]: Sorry, Minnesota Vikings fans, but I'm *not* interested in your complaints about offensive pass interference on the play. It was a long, long time ago. Get over it. (Also: in the famous film sequence of Drew Pearson as he crossed the goal line with the winning score, that was an *orange* thrown onto the field by a fan, not a penalty flag thrown by a referee. Truth hurts; I know.)
 
-In April, I wrote "[Is Astro ready for your blog?](/posts/2022/04/astro-ready-your-blog/)" In it, I noted that, although the [Astro](https://astro.build) [static site generator](https://jamstack.org/generators) (SSG) was (as it still is) justly receiving a lot of love for its many cool features and the leanness of Astro-built sites, it did suffer somewhat regarding the developer experience on a site containing a large number of Markdown files:
+In April, I wrote "[Is Astro ready for your blog?](/posts/2022/04/astro-ready-your-blog/)" In it, I noted that, although the [Astro](https://astro.build) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) was (as it still is) justly receiving a lot of love for its many cool features and the leanness of Astro-built sites, it did suffer somewhat regarding the developer experience on a site containing a large number of Markdown files:
 
 > . . . larger sites don't refresh all that quickly when you edit either Markdown or an `.astro` file . . . . where refresh-in-dev-mode speed is concerned, all the other competitors currently have an edge on Astro for this item, with the stunningly fast [Hugo](https://gohugo.io) obviously leading the pack.
 

@@ -14,7 +14,7 @@ As I've chronicled here a few times over the last year-plus&nbsp;.&nbsp;.&nbsp;.
 - "[Beginner's luck #3: adding a Zola starter](/posts/2021/06/beginners-luck-3-adding-zola-starter/)"
 - "[Beginner's luck #4: the Vite edition](/posts/2021/07/beginners-luck-4-vite-edition/)"
 
-.&nbsp;.&nbsp;.&nbsp;I have churned out a few starter sets for the [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Zola](https://www.getzola.org/) [static site generators](https://jamstack.org/generators) (SSGs). However, I've decided to suspend development on each set, as of today. The GitHub repository for each set now has a note to that effect.
+.&nbsp;.&nbsp;.&nbsp;I have churned out a few starter sets for the [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Zola](https://www.getzola.org/) [static site generators](https://github.com/myles/awesome-static-generators) (SSGs). However, I've decided to suspend development on each set, as of today. The GitHub repository for each set now has a note to that effect.
 
 **Update, 2021-11-02**: I decided to go back today and do one more fix on the [hugo_twcss](https://github.com/brycewray/hugo_twcss) Hugo/[Tailwind CSS](https://tailwindcss.com) starter set, based on the configuration I described in "[Making Tailwind JIT work with Hugo](/posts/2021/11/making-tailwind-jit-work-hugo/)."
 {.box}

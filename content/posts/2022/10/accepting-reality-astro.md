@@ -7,7 +7,7 @@ date: 2022-10-05T11:27:00-05:00
 initTextEditor: iA Writer
 ---
 
-The increasingly popular [Astro](https://astro.build) [static site generator](https://jamstack.org/generators) (SSG) has many stellar attributes, a staggeringly nice community[^Dylan], and a rapidly growing user base. It's been the subject of a number of my posts here, and I've even tried using it to build and maintain this site --- more than once, in fact.
+The increasingly popular [Astro](https://astro.build) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) has many stellar attributes, a staggeringly nice community[^Dylan], and a rapidly growing user base. It's been the subject of a number of my posts here, and I've even tried using it to build and maintain this site --- more than once, in fact.
 
 [^Dylan]: I'll always be grateful for that community's response on [one very special day in my life](/posts/2021/08/boy-oh-grandboy/).
 

@@ -7,7 +7,7 @@ date: 2023-02-10T08:51:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-It's been nearly a year since I [first wrote](/posts/2022/03/using-dart-sass-hugo/) about enabling the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) to work comfortably with [Dart Sass](https://github.com/sass/sass/). A couple of months after that, I [adopted](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) what was arguably a technically superior, but somewhat more complicated, method.
+It's been nearly a year since I [first wrote](/posts/2022/03/using-dart-sass-hugo/) about enabling the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) to work comfortably with [Dart Sass](https://github.com/sass/sass/). A couple of months after that, I [adopted](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) what was arguably a technically superior, but somewhat more complicated, method.
 
 Now, for several reasons, I've decided to fall back to the simpler approach I originally espoused --- especially given the freedom I gain from how well Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/), performs with either method.
 

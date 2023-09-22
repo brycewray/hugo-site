@@ -218,7 +218,7 @@ There are numerous pieces on the web saying that one of the biggest hassles in d
 
 To that I say: well, maybe sometimes, and for some people, but not universally.
 
-Surely, if you're trying to corral a web project with dozens of developers and hundreds of pages, I can see the point --- and I'm also guessing you're not my audience in the first place. But when you're dealing with a smaller team and a project with only a few templates that you tweak to build a lot of pages, as is typical if you're a [static site generator](https://jamstack.org/generators) (SSG) user such as Yours Truly, it really shouldn't be that hard to decide what to call things.
+Surely, if you're trying to corral a web project with dozens of developers and hundreds of pages, I can see the point --- and I'm also guessing you're not my audience in the first place. But when you're dealing with a smaller team and a project with only a few templates that you tweak to build a lot of pages, as is typical if you're a [static site generator](https://github.com/myles/awesome-static-generators) (SSG) user such as Yours Truly, it really shouldn't be that hard to decide what to call things.
 
 Besides: don't you still **need** to name them? As [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/) said in an [article](https://www.aleksandrhovhannisyan.com/blog/why-i-dont-like-tailwind-css) that got him [roasted](https://news.ycombinator.com/item?id=26422286) on [Hacker News](https://news.ycombinator.com) by the Tailwind faithful:
 

@@ -48,7 +48,7 @@ I put up with this for a while, especially since I rarely looked at that part of
 
 And, odd as it may seem, that started me thinking about something I'd tried some months back but quickly abandoned: switching my project config from YAML to TOML. Hugo's default config format is TOML, and most articles I see about Hugo configs tend to assume that format's use --- not to mention that the configs of most Hugo project repos I examine online seem to be overwhelmingly in TOML --- so, I guessed, my using TOML rather than YAML could mean somewhat less mental friction during my usual research.
 
-But why *had* I "quickly abandoned" going with TOML rather than YAML? After all, I'd used TOML for the first two years of my work with Hugo (although much of that had been during times when I was using other [static site generators](https://jamstack.org/generators), so it's more accurate to say that I'd used TOML *actively* for about a year).
+But why *had* I "quickly abandoned" going with TOML rather than YAML? After all, I'd used TOML for the first two years of my work with Hugo (although much of that had been during times when I was using other [static site generators](https://github.com/myles/awesome-static-generators), so it's more accurate to say that I'd used TOML *actively* for about a year).
 
 The truth is that I don't recall why I switched from TOML to YAML. However, I *definitely* remember why, early this year, I abandoned a try at returning to TOML: I found YAML easier to maintain. Or, perhaps, a more honest way to say it is that my configuration had become messy over the years, and TOML doesn't play nicely with messes.
 

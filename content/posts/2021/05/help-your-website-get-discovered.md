@@ -36,7 +36,7 @@ By the way, each site should provide two types of feeds and two types of sitemap
 - Feeds should be in both **[RSS](https://www.rssboard.org/rss-specification)** and **[JSON](https://jsonfeed.org)** form. The former has been around since the late 1990s, while the newer (2017) JSON feed format offers a number of advantages --- notably human-readability --- over RSS.
 - Some website generators automatically provide sitemaps in **XML** format but, especially for accessibility purposes, a website should also have an **HTML** sitemap.
 
-Here's how to give your site those feeds and sitemaps **and** do everything you can to get them automatically discovered. These instructions are for the two [static site generators](https://jamstack.org/generators) (SSGs) whose use I most highly recommend, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
+Here's how to give your site those feeds and sitemaps **and** do everything you can to get them automatically discovered. These instructions are for the two [static site generators](https://github.com/myles/awesome-static-generators) (SSGs) whose use I most highly recommend, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
 
 #### Eleventy
 

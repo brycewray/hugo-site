@@ -27,7 +27,7 @@ The answer is to point your other devices to the dev machine's **IP address** on
 http://[IP address]:[port number]
 ```
 
-For example: if your dev machine's IP address is *192.168.254.10* and your chosen dev method uses port 3000, your devices can access the project via `http://192.168.254.10:3000`. As for the port, I'll get into that below for each [static site generator](https://jamstack.org/generators) (SSG) or other project type we'll be discussing.
+For example: if your dev machine's IP address is *192.168.254.10* and your chosen dev method uses port 3000, your devices can access the project via `http://192.168.254.10:3000`. As for the port, I'll get into that below for each [static site generator](https://github.com/myles/awesome-static-generators) (SSG) or other project type we'll be discussing.
 
 Now, let's walk through how you discover that address.
 

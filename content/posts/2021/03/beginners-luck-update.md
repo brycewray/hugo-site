@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-03-25T20:25:00-05:00
 ---
 
-Interested in building a new website with, or converting an existing site to, either of the two best [static site generators](https://jamstack.org/generators) (SSGs)? Please read on, my friend.
+Interested in building a new website with, or converting an existing site to, either of the two best [static site generators](https://github.com/myles/awesome-static-generators) (SSGs)? Please read on, my friend.
 
 Recently, I've been spending spare hours working on [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io) **starter sets** for folks like you. And they're not only updated versions of the ones I [announced last July](/posts/2020/07/beginners-luck/), but also **two new ones** I'm announcing today.
 

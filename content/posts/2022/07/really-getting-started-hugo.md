@@ -11,7 +11,7 @@ date: 2022-07-19T10:55:00-05:00
 
 We've all tried to assemble something by following a set of written instructions. More than a few of those times, we've realized that the instructions either weren't complete or were just plain wrong (sometimes both). On certain occasions of this type, we've been even more perplexed by also seeing that some of the expected parts were missing.
 
-A huge problem in getting new users to try the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) is that you can't simply point them to the documentation about getting started. As I will explain below, it omits one key step of the startup process in favor of another which isn't nearly as helpful.
+A huge problem in getting new users to try the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) is that you can't simply point them to the documentation about getting started. As I will explain below, it omits one key step of the startup process in favor of another which isn't nearly as helpful.
 
 Worse still, a default Hugo site is missing some elements which would help a new user successfully get going even *without* that missing step.
 

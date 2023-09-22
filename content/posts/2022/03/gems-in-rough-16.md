@@ -6,7 +6,7 @@ date: 2022-03-11T09:55:00-06:00
 #initTextEditor: Ulysses
 ---
 
-Each entry in the “Gems in the rough” series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators](https://jamstack.org/generators) (SSGs).
+Each entry in the “Gems in the rough” series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators](https://github.com/myles/awesome-static-generators) (SSGs).
 {.box}
 
 I think this is probably the earliest in any month that I’ve ever gotten to five posts. Not that quantity equals quality, to be sure, but just sayin’. So, while I’ve been spending most of the month so far in [Hugo](https://gohugo.io/)-related posts, what else has been going on in SSG-land?

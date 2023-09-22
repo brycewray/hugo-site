@@ -12,7 +12,7 @@ date: 2022-12-08T08:14:00-06:00
 
 If you lurk in some of the same tech forums that I do, you'll see a lot of griping about the declining quality of online search. Who'd have ever thought that contorting search results, stuffing them with ads, inadequately curating them for quality, and otherwise caring only about their financial upside could have proved so counterproductive? ("Me," you and I can yell in unison.)
 
-Fortunately, while there are limits to how much you'll be able to improve your experience with online search in general, you *can* optimize your own website's search capabilities. That's assuming, of course, that your website is built with a [static site generator](https://jamstack.org/generators) (SSG), as I've recommended here over the years, and *has* search capabilities in the first place. If it lacks search, you can fix that readily enough with the free [Pagefind](https://pagefind.app) tool about which I [wrote](/posts/2022/07/pagefind-quite-find-site-search/) earlier this year.
+Fortunately, while there are limits to how much you'll be able to improve your experience with online search in general, you *can* optimize your own website's search capabilities. That's assuming, of course, that your website is built with a [static site generator](https://github.com/myles/awesome-static-generators) (SSG), as I've recommended here over the years, and *has* search capabilities in the first place. If it lacks search, you can fix that readily enough with the free [Pagefind](https://pagefind.app) tool about which I [wrote](/posts/2022/07/pagefind-quite-find-site-search/) earlier this year.
 
 <!--more-->
 

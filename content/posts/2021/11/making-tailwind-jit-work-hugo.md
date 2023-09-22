@@ -10,7 +10,7 @@ date: 2021-11-01T12:08:00-05:00
 
 {{% disclaimer %}}
 
-Earlier this year, the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) of [Tailwind CSS](https://tailwindcss.com)'s [just-in-time (JIT) mode](https://tailwindcss.com/docs/just-in-time-mode) was followed closely by the subsequent and deflating word that this cool feature wouldn't work with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). The Hugo team immediately started trying to fix that issue but, as of this writing, still hasn't been able to deliver a solution.
+Earlier this year, the [announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) of [Tailwind CSS](https://tailwindcss.com)'s [just-in-time (JIT) mode](https://tailwindcss.com/docs/just-in-time-mode) was followed closely by the subsequent and deflating word that this cool feature wouldn't work with the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG). The Hugo team immediately started trying to fix that issue but, as of this writing, still hasn't been able to deliver a solution.
 
 In the ensuing months, some Tailwind aficionados among Hugo users latched onto a snappy workaround devised by a member of the Hugo user community. While this clever end run proved effective, the description its inventor provided was lacking in some details. As a result, I encountered difficulty in using it with any but the most basic Hugo repos. In other words, adding it to an *existing* repo, especially one with a certain degree of build complexity, was daunting.
 

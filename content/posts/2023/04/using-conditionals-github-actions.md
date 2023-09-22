@@ -13,7 +13,7 @@ If your answer to all three questions is "Yes," then read on to find out how you
 
 <!--more-->
 
-Up to now, you may have had to maintain multiple GitHub Actions workflow files to match what you were trying to do at any given time. In the case of this site --- maintained through the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) --- here are some examples of different setups I've used (during both normal deployments and testing), each of which formerly required its own workflow file:
+Up to now, you may have had to maintain multiple GitHub Actions workflow files to match what you were trying to do at any given time. In the case of this site --- maintained through the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) --- here are some examples of different setups I've used (during both normal deployments and testing), each of which formerly required its own workflow file:
 
 1. Hugo with [Embedded Dart Sass](https://github.com/sass/dart-sass-embedded/) styling and [Pagefind](https://pagefind.app) site search, each downloaded from its respective GitHub repository and put in the system `PATH` (as described [here](https://www.brycewray.com/posts/2022/05/using-dart-sass-hugo-github-actions-edition/), for example); deployed to [Cloudflare Pages](https://pages.cloudflare.com).
 2. Same setup as the first one, but deployed to [Vercel](https://vercel.com).

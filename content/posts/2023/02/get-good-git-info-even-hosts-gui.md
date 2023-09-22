@@ -13,7 +13,7 @@ I've issued [two](/posts/2022/06/get-good-git-info-hugo/) [posts](/posts/2022/09
 
 Before I go on, let me do you a favor and note that --- unless you're just nerdily curious, as am I --- this post will be of interest to you **only** if you satisfy **all** of the following criteria:
 
-- You have a website that you maintain through use of a [static site generator](https://jamstack.org/generators) (SSG), preferably [Hugo](https://gohugo.io) or perhaps [Eleventy](https://11ty.dev).
+- You have a website that you maintain through use of a [static site generator](https://github.com/myles/awesome-static-generators) (SSG), preferably [Hugo](https://gohugo.io) or perhaps [Eleventy](https://11ty.dev).
 - You keep that website's project in a publicly viewable online repository.
 - You want to display up-to-date, *per-page* Git commit data on multiple pages in the site.
 - You want to deploy your site via your host's native UI.

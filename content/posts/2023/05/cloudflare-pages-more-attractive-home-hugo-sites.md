@@ -7,7 +7,7 @@ date: 2023-05-09T12:49:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-This site has lived on [Cloudflare Pages](https://pages.cloudflare.com) for most of the last two years. Typically, the developer experience (DX) on CFP has been great, regardless of the [static site generator](https://jamstack.org/generators) (SSG) on which I was building and maintaining the site at the time. And now, I've learned the CFP DX will soon get a lot better, especially for users of the [Hugo](https://gohugo.io) SSG.
+This site has lived on [Cloudflare Pages](https://pages.cloudflare.com) for most of the last two years. Typically, the developer experience (DX) on CFP has been great, regardless of the [static site generator](https://github.com/myles/awesome-static-generators) (SSG) on which I was building and maintaining the site at the time. And now, I've learned the CFP DX will soon get a lot better, especially for users of the [Hugo](https://gohugo.io) SSG.
 
 <!--more-->
 

@@ -16,7 +16,7 @@ It's been about a year since the first release of [Eleventy](https://www.11ty.de
 
 That's certainly not because I had any doubt about its quality.
 
-After all, Eleventy Image comes directly from Eleventy's creator, [Zach Leatherman](https://zachleat.com). Who better than he would know how to write a superior plugin for his own [static site generator](https://jamstack.org/generators) (SSG)?
+After all, Eleventy Image comes directly from Eleventy's creator, [Zach Leatherman](https://zachleat.com). Who better than he would know how to write a superior plugin for his own [static site generator](https://github.com/myles/awesome-static-generators) (SSG)?
 
 Rather, it was because I found the plugin's documentation, and the few blog posts I found about using the plugin, somewhat less than approachable for those who don't eat, sleep, and breathe things like, say, JavaScript [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 

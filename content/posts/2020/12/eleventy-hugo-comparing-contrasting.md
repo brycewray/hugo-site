@@ -13,7 +13,7 @@ To quote Mick Jagger and Keith Richards [from over fifty years ago](https://geni
 
 [^legalLyricsYCAGWYW]: "You Can't Always Get What You Want," written by Mick Jagger and Keith Richards. Lyrics &copy; Abkco Music, Inc.
 
-In that somewhat philosophical vein, let's take a look at my two favorite [static site generators](https://jamstack.org/generators) (SSGs), [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io). Specifically, let's compare and contrast them.
+In that somewhat philosophical vein, let's take a look at my two favorite [static site generators](https://github.com/myles/awesome-static-generators) (SSGs), [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io). Specifically, let's compare and contrast them.
 
 Why?
 

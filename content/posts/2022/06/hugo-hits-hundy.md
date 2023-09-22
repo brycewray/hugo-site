@@ -6,7 +6,7 @@ date: 2022-06-07T08:59:00-05:00
 #initTextEditor: iA Writer
 ---
 
-Last week, the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators/) (SSG) hit The Big One-Zero-Zero --- namely, **[version 0.100.0](https://github.com/gohugoio/hugo/releases/tag/v0.100.0)**, but I'll call it *0.100.x* given that it's [since been tweaked to 0.100.1](https://github.com/gohugoio/hugo/releases/tag/v0.100.1).
+Last week, the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators/) (SSG) hit The Big One-Zero-Zero --- namely, **[version 0.100.0](https://github.com/gohugoio/hugo/releases/tag/v0.100.0)**, but I'll call it *0.100.x* given that it's [since been tweaked to 0.100.1](https://github.com/gohugoio/hugo/releases/tag/v0.100.1).
 
 *(No, it **didn't** go to v.1.0. More on that at the end.)*
 

@@ -6,7 +6,7 @@ date: 2022-07-11T08:43:00-05:00
 #initTextEditor: iA Writer
 ---
 
-[CloudCannon](https://cloudcannon.com)'s [HugoConf 2022](https://hugoconf.io) event, held this past weekend in the online presence of several hundred registered "attendees" who wanted to learn more about the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG), was fascinating and fun. As I told CloudCannon's David Large:
+[CloudCannon](https://cloudcannon.com)'s [HugoConf 2022](https://hugoconf.io) event, held this past weekend in the online presence of several hundred registered "attendees" who wanted to learn more about the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG), was fascinating and fun. As I told CloudCannon's David Large:
 
 > I’ve seen many online events of this nature, including some put on by **much** larger operations than [CloudCannon], which didn’t go remotely as smoothly, or pack as much good info and interesting presentations into so relatively little time. How amazingly well it all came off clearly reflects the superior preparation and effort of all of you, and it was a winner from start to finish.
 

@@ -7,7 +7,7 @@ date: 2023-03-27T11:11:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-When you enter that `hugo new site` command to create a new website in the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG), part of the response you'll see involves selecting a [theme](https://themes.gohugo.io). That's because it's part of [The Official Advice for starting a Hugo site](https://gohugo.io/getting-started/quick-start/).
+When you enter that `hugo new site` command to create a new website in the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG), part of the response you'll see involves selecting a [theme](https://themes.gohugo.io). That's because it's part of [The Official Advice for starting a Hugo site](https://gohugo.io/getting-started/quick-start/).
 
 However, [I strongly disagree](/posts/2022/07/really-getting-started-hugo/) with that approach. I say it's better if you *don't* use a theme, especially if you're just getting going with Hugo, because that way you'll learn more about it, and more quickly.
 

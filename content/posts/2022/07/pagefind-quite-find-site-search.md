@@ -9,7 +9,7 @@ date: 2022-07-28T20:32:00-05:00
 **Update, 2023-09-13**: Some content within has been changed due to the release of Pagefind 1.0.0. See "[Migrating to Pagefind 1.0](https://pagefind.app/docs/v1-migration/)."
 {.box}
 
-I noted in my [summary of the recent HugoConf 2022 event](/posts/2022/07/impressions-hugoconf-2022/) that the host, [CloudCannon](https://cloudcannon.com), had used the online gathering to announce [Pagefind](https://github.com/cloudcannon/pagefind). Developed principally by CloudCannon's [Liam Bigelow](https://github.com/bglw), Pagefind is a new free/open-source tool for quickly adding site-wide search to a website which, like this one, originates from a [static site generator](https://jamstack.org/generators) (SSG). Bigelow's video presentation gave HugoConf "attendees" an introduction to, and demo of, Pagefind:
+I noted in my [summary of the recent HugoConf 2022 event](/posts/2022/07/impressions-hugoconf-2022/) that the host, [CloudCannon](https://cloudcannon.com), had used the online gathering to announce [Pagefind](https://github.com/cloudcannon/pagefind). Developed principally by CloudCannon's [Liam Bigelow](https://github.com/bglw), Pagefind is a new free/open-source tool for quickly adding site-wide search to a website which, like this one, originates from a [static site generator](https://github.com/myles/awesome-static-generators) (SSG). Bigelow's video presentation gave HugoConf "attendees" an introduction to, and demo of, Pagefind:
 
 {{< lite-youtube videoTitle="Introducing Pagefind: static low-bandwidth search at scale - Liam Bigelow // HugoConf 2022" videoId="74lsEXqRQys" >}}
 

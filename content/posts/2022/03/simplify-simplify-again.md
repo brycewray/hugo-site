@@ -10,7 +10,7 @@ date: 2022-03-22T13:24:00-05:00
 
 A funny thing happened on the way to the website-maintenance simplicity about which [I wrote](/posts/2021/02/simplify-simplify/) early last year. Or, to put it more accurately: several things happened, although none of them was funny, except perhaps in the “whoa, *that* was weird” sense of *funny*.
 
-Now, I’m back to the point I *thought* I’d reached at that time, which is a determination to run this site on just one [SSG](https://jamstack.org/generators), rather than continuing to go back and forth between [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io). A good part of the reason for that is, simply, I no longer consider the duplication worth the effort.
+Now, I’m back to the point I *thought* I’d reached at that time, which is a determination to run this site on just one [SSG](https://github.com/myles/awesome-static-generators), rather than continuing to go back and forth between [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io). A good part of the reason for that is, simply, I no longer consider the duplication worth the effort.
 
 “What duplication?” you may ask. Well&nbsp;.&nbsp;.&nbsp;.
 

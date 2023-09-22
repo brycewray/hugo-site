@@ -13,7 +13,7 @@ imgs:
 
 You can think of this as hard-won wisdom.
 
-If you're planning to build a website with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) --- **or** if you already have one but you don't yet have a lot of content files --- save yourself a lot of trouble and use *[page bundles](https://gohugo.io/content-management/page-bundles/)*.
+If you're planning to build a website with the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) --- **or** if you already have one but you don't yet have a lot of content files --- save yourself a lot of trouble and use *[page bundles](https://gohugo.io/content-management/page-bundles/)*.
 
 Therein lies a tale, so here it is.
 

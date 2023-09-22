@@ -10,7 +10,7 @@ date: 2022-12-12T11:53:00-06:00
 **Note**: In order to avoid more repetition than is utterly necessary, this post assumes at least some familiarity with the content of its [predecessor from earlier this year](/posts/2022/09/hugo-like-archetypes-other-ssgs/).
 {.box}
 
-While the shell script I described some months ago in "Hugo-like archetypes in other SSGs" will surely do the job to a minimal extent --- that job being automatically generating content files for use in JavaScript-based [static site generators](https://jamstack.org/generators) (SSGs), similar to how [Hugo](https://gohugo.io)'s [archetypes](https://gohugo.io/content-management/archetypes/) work --- I decided I could do better.
+While the shell script I described some months ago in "Hugo-like archetypes in other SSGs" will surely do the job to a minimal extent --- that job being automatically generating content files for use in JavaScript-based [static site generators](https://github.com/myles/awesome-static-generators) (SSGs), similar to how [Hugo](https://gohugo.io)'s [archetypes](https://gohugo.io/content-management/archetypes/) work --- I decided I could do better.
 
 <!--more-->
 

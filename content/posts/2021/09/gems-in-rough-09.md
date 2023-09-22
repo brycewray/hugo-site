@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-09-05T14:35:00-05:00
 ---
 
-Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://jamstack.org/generators).
+Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://github.com/myles/awesome-static-generators).
 {.box}
 
 ## Privacy-respecting YouTube embeds

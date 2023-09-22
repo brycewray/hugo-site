@@ -28,7 +28,7 @@ As for what my 2022 writings actually *covered* (other than the onset of CTCAJW 
 
 ----
 
-Following my typical pattern, I spent a great deal of electronic ink on my favorite subject, the use of [static site generators](https://jamstack.org/generators) (SSGs) for building websites. Most usually, I was writing about [Eleventy](https://11ty.dev) or [Hugo](https://gohugo.io), but [Astro](https://astro.build) also got my attention.
+Following my typical pattern, I spent a great deal of electronic ink on my favorite subject, the use of [static site generators](https://github.com/myles/awesome-static-generators) (SSGs) for building websites. Most usually, I was writing about [Eleventy](https://11ty.dev) or [Hugo](https://gohugo.io), but [Astro](https://astro.build) also got my attention.
 
 Quite a few of my 2022 articles explained how to embed within one's static website fully static, non-invasive versions of tweets and Mastodon content, but the tweets part [ran aground](/posts/2022/11/static-tweets-deprecation/) as things got increasingly crazy in the Twitterverse. The [Mastodon-related part for Hugo](/posts/2022/06/static-mastodon-toots-hugo/) survived, as did [that for Eleventy](/posts/2022/08/static-embeds-eleventy/#static-toots) and [for Astro](/posts/2022/08/static-mastodon-toots-astro/).
 

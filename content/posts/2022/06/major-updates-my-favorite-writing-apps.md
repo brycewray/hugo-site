@@ -36,7 +36,7 @@ And, in case you're curious: no, iA Writer 6 *still* limits you to the same th
 
 ## Ulysses 27
 
-As for Ulysses 27 --- released June 20 for macOS, iOS, and iPadOS --- its main addition is *tables*. And, yes, the Markdown it exports[^MDXL] for tables does work perfectly well with [static site generators](https://jamstack.org/generators) (SSGs), as you'll see in a bit. To create a table in Ulysses 27, you either use the main menu or type `(tbl)` in the editor. A default table appears:
+As for Ulysses 27 --- released June 20 for macOS, iOS, and iPadOS --- its main addition is *tables*. And, yes, the Markdown it exports[^MDXL] for tables does work perfectly well with [static site generators](https://github.com/myles/awesome-static-generators) (SSGs), as you'll see in a bit. To create a table in Ulysses 27, you either use the main menu or type `(tbl)` in the editor. A default table appears:
 
 [^MDXL]: The export is from Ulysses's proprietary Markdown XL in the default Ulysses use of iCloud-based "sheets," as its docs are called. However, Ulysses also lets you create *standard* Markdown files in separate, "external" folders, and any tables you create in such Ulysses files also will work as described in this post.
 

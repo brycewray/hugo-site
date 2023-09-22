@@ -7,7 +7,7 @@ date: 2022-12-20T11:43:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-Regardless of how I may be building this site at any given time, I always keep an eye on what's happening with the JavaScript-based [Astro](https://astro.build) and [Eleventy](https://11ty.dev) [static site generators](https://jamstack.org/generators) (SSGs), each of which has, at one time or another, been the tool of choice here. It now appears that the developers for each are working on fixing certain major stuff that badly needs such tender loving care.
+Regardless of how I may be building this site at any given time, I always keep an eye on what's happening with the JavaScript-based [Astro](https://astro.build) and [Eleventy](https://11ty.dev) [static site generators](https://github.com/myles/awesome-static-generators) (SSGs), each of which has, at one time or another, been the tool of choice here. It now appears that the developers for each are working on fixing certain major stuff that badly needs such tender loving care.
 
 <!--more-->
 

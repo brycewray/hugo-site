@@ -8,7 +8,7 @@ imgs:
 - Mark-Text_screen-cap_SC-mode-dark_1568x1210.png
 ---
 
-If you're going to have a website which, like this one, is powered by a [static site generator](https://jamstack.org/generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format --- the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down/).
+If you're going to have a website which, like this one, is powered by a [static site generator](https://github.com/myles/awesome-static-generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format --- the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down/).
 
 The apps I've used for managing this site's content have included all of the following, in descending order of how much I've used them for this purpose:
 

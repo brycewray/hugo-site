@@ -8,7 +8,7 @@ imgs:
 - site-screen-shot-2022-05-17-archive-org_3160x2084.png
 ---
 
-Yes, it's my third post with "Simplify, simplify" in the title; but, please, hear me out. I'm hoping for better luck this time than with its [two](/posts/2021/02/simplify-simplify/) [predecessors](/posts/2022/03/simplify-simplify-again/) --- especially since, as I'll explain at the end, this has *nothing* to do with my gyrations among various [static site generators](https://jamstack.org/generators) (SSGs).
+Yes, it's my third post with "Simplify, simplify" in the title; but, please, hear me out. I'm hoping for better luck this time than with its [two](/posts/2021/02/simplify-simplify/) [predecessors](/posts/2022/03/simplify-simplify-again/) --- especially since, as I'll explain at the end, this has *nothing* to do with my gyrations among various [static site generators](https://github.com/myles/awesome-static-generators) (SSGs).
 
 ---
 

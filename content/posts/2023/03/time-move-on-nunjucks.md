@@ -7,7 +7,7 @@ date: 2023-03-18T21:44:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-When I [first](/posts/2019/09/why-left-hugo-eleventy/) started using the [Eleventy](https://11ty.dev) [static site generator](https://jamstack.org/generators) (SSG) back in 2019, I built my project with the [Nunjucks](https://mozilla.github.io/nunjucks) templating language, mainly because that seemed to appear most frequently in the Eleventy documentation's own examples, as well as others I found on the web.
+When I [first](/posts/2019/09/why-left-hugo-eleventy/) started using the [Eleventy](https://11ty.dev) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) back in 2019, I built my project with the [Nunjucks](https://mozilla.github.io/nunjucks) templating language, mainly because that seemed to appear most frequently in the Eleventy documentation's own examples, as well as others I found on the web.
 
 But the times, they may be a-changin’.
 

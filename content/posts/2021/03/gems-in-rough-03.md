@@ -5,7 +5,7 @@ author: Bryce Wray
 date: 2021-03-06T15:55:00-06:00
 ---
 
-As one gathers navel from one's lint, so also do I gather little bits of  information I hope will be helpful for those of you who, as I do, have found a hobby in fiddling with personal [SSG](https://jamstack.org/generators)-built websites. [Back in December](/posts/2020/12/gems-in-rough/), I began issuing such items as "Gems in the rough." Here be the latest thereof.
+As one gathers navel from one's lint, so also do I gather little bits of  information I hope will be helpful for those of you who, as I do, have found a hobby in fiddling with personal [SSG](https://github.com/myles/awesome-static-generators)-built websites. [Back in December](/posts/2020/12/gems-in-rough/), I began issuing such items as "Gems in the rough." Here be the latest thereof.
 
 ---
 

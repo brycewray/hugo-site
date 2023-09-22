@@ -18,7 +18,7 @@ Story time&nbsp;.&nbsp;.&nbsp;.
 
  ---
 
-It's been about two-and-a-half years since I first launched this site. It's been closer to three years since I began research into how I wanted to maintain it. That process ended with my choosing to go with [static site generators](https://jamstack.org/generators) (SSGs) in general and the [Hugo](https://gohugo.io) SSG in particular.
+It's been about two-and-a-half years since I first launched this site. It's been closer to three years since I began research into how I wanted to maintain it. That process ended with my choosing to go with [static site generators](https://github.com/myles/awesome-static-generators) (SSGs) in general and the [Hugo](https://gohugo.io) SSG in particular.
 
 Not quite a year after that, I [reexamined](/posts/2019/07/why-staying-with-hugo/) the Hugo choice because I had what the Kewl Kids used to call "FOMO" --- Fear of Missing Out. I figured I'd gain more potentially marketable experience by using an SSG based on [JavaScript](https://js.org) rather than the [Go](https://go.dev)-based Hugo, especially given that most of the hotness in the world of SSG development seemed to originate from JavaScript-based SSGs.
 

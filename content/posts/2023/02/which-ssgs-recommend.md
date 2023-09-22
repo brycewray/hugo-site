@@ -11,7 +11,7 @@ Participating in social media (even [Mastodon](https://joinmastodon.org)) can be
 
 <!--more-->
 
-In last October's "[Blasts from the past](/posts/2022/10/blasts-from-past/)," I linked back to many previous posts about some of the subjects I've covered most frequently. One of those topics is the use of [static site generators](https://jamstack.org/generators) (SSGs) to build and maintain websites; and, in the relevant section of "Blasts from the past," I took that opportunity to summarize my recommendations about *which* SSGs one should consider.
+In last October's "[Blasts from the past](/posts/2022/10/blasts-from-past/)," I linked back to many previous posts about some of the subjects I've covered most frequently. One of those topics is the use of [static site generators](https://github.com/myles/awesome-static-generators) (SSGs) to build and maintain websites; and, in the relevant section of "Blasts from the past," I took that opportunity to summarize my recommendations about *which* SSGs one should consider.
 
 Since then, I've seen a number of online requests for such recommendations, so the remainder of this post is a repeat of that section of "Blasts from the past," including its links to my related content.
 

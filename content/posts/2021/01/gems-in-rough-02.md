@@ -10,7 +10,7 @@ imgs:
 
 {{% disclaimer %}}
 
-For those of you who haven't read the [first](/posts/2020/12/gems-in-rough/) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://jamstack.org/generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
+For those of you who haven't read the [first](/posts/2020/12/gems-in-rough/) "Gems in the rough," initially posted just a few weeks ago, it contained a variety of what I hoped were useful hints and tips for those of you who, as do I, love playing around with websites built by [static site generators](https://github.com/myles/awesome-static-generators) (SSGs). In that one, I offered the opinion that "this might end up being a series."
 
 Well, looks like we're there, because I've already accumulated some more of this stuff to pass along. (Fortunately for you, I doubt seriously that future such instances will be quite this closely spaced. No promises, though.) So, without further ado&nbsp;.&nbsp;.&nbsp;.
 

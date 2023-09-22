@@ -11,7 +11,7 @@ date: 2022-05-22T10:06:00-05:00
 <strong class="red">Also</strong>: while these instructions are about installing a **prebuilt Sass binary**, please note that you may find it considerably more convenient to use a **package manager**, instead, as explained in [this comprehensive post](https://discourse.gohugo.io/t/using-the-dart-sass-transpiler/41878) by Joe Mooring on the [Hugo Discourse forum](https://discourse.gohugo.io). *(I personally prefer installing a prebuilt binary, mainly because I'd rather not wait for a package manager to update its repository whenever there's a new release of the binary --- but, if that doesn't concern you, you'll likely prefer using a package manager.)*
 {.box}
 
-Some of the responses I got to my recent post, "[Using Dart Sass with Hugo: the GitHub Actions edition](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/)," made it clear that there needs to be a one-stop guide that tells how to set up [the Dart Sass binary](https://github.com/sass/dart-sass) in the `PATH` on one's *local* machine for use with the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG).
+Some of the responses I got to my recent post, "[Using Dart Sass with Hugo: the GitHub Actions edition](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/)," made it clear that there needs to be a one-stop guide that tells how to set up [the Dart Sass binary](https://github.com/sass/dart-sass) in the `PATH` on one's *local* machine for use with the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG).
 
 So let's take care of that right now, shall we?
 

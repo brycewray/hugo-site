@@ -9,7 +9,7 @@ date: 2023-02-01T12:56:00-06:00
 
 When Tom Brady [announced earlier today](https://www.espn.com/nfl/story/_/id/35568868/tom-brady-says-retiring-football-good) that he once again was retiring from the National Football League, I thought I'd experienced my day's quota of "Well-that-was-unexpected" moments.
 
-Then, hours later, I was surprised anew: this time, it was because [Netlify](https://www.netlify.com) [was acquiring](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/) [Gatsby, Inc.](https://gatsbyjs.com), the company behind the Gatsby [static site generator](https://jamstack.org/generators) (SSG).
+Then, hours later, I was surprised anew: this time, it was because [Netlify](https://www.netlify.com) [was acquiring](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/) [Gatsby, Inc.](https://gatsbyjs.com), the company behind the Gatsby [static site generator](https://github.com/myles/awesome-static-generators) (SSG).
 
 <!--more-->
 

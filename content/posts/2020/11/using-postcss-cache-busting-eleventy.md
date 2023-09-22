@@ -13,7 +13,7 @@ date: 2020-11-10T16:30:00-06:00
 **Important note, 2020-12-11**: After I initially published this, I ran into significant build-time problems with the method described herein, despite its first appearing to work just fine both locally and online. I briefly resorted to the method described in "[Simple 11ty cache busting](https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/)" by Rob Hudson before I found another solution, which I explain in "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two/)." I reluctantly recommend that you **not** follow the specific instructions in the article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of [transparency](/posts/2019/10/otoh/). **My apologies** to anyone who's run into trouble based on these recommendations as they originally appeared!
 {.box}
 
-Just when I thought I'd finished last year's "[dance](/posts/2019/12/sorta-strange-ssg-trip/)" among [static site generators](https://jamstack.org/generators/) (SSGs), it recently rose from the grave like a hockey-mask-wearing killer from a horror flick.
+Just when I thought I'd finished last year's "[dance](/posts/2019/12/sorta-strange-ssg-trip/)" among [static site generators](https://github.com/myles/awesome-static-generators/) (SSGs), it recently rose from the grave like a hockey-mask-wearing killer from a horror flick.
 
 A few weeks ago, I reverted the site for a few weeks to its original SSG, [Hugo](https://gohugo.io).[^1] While the site is now back on my favorite SSG, [Eleventy](https://11ty.dev), those few weeks allowed me to learn of a particular Hugo capability I'd overlooked the first couple of times around.
 

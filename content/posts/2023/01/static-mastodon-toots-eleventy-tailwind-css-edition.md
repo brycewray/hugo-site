@@ -7,7 +7,7 @@ date: 2023-01-17T13:21:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-[Last June](/posts/2022/06/static-mastodon-toots-hugo/), I provided code for statically embedding [Mastodon](https://joinmastodon.org) content in the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG). [A couple of months later](/posts/2022/08/static-embeds-eleventy/), I followed up with similar code for use in the JavaScript-based [Eleventy](https://11ty.dev) SSG. In each case, the styling was [Sass](https://sass-lang.com)-based. Then, [yesterday](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/), I provided Hugo code using styling from [Tailwind CSS](https://tailwindcss.com); so, today, here is a Tailwind-based version for Eleventy, too.
+[Last June](/posts/2022/06/static-mastodon-toots-hugo/), I provided code for statically embedding [Mastodon](https://joinmastodon.org) content in the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG). [A couple of months later](/posts/2022/08/static-embeds-eleventy/), I followed up with similar code for use in the JavaScript-based [Eleventy](https://11ty.dev) SSG. In each case, the styling was [Sass](https://sass-lang.com)-based. Then, [yesterday](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/), I provided Hugo code using styling from [Tailwind CSS](https://tailwindcss.com); so, today, here is a Tailwind-based version for Eleventy, too.
 
 <!--more-->
 

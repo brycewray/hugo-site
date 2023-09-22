@@ -12,7 +12,7 @@ imgs:
 
 It's tips time, my fellow and sister static website aficionados.
 
-I sometimes discover, and then want to share with you good folks,  some shiny, little nuggets of geeky information that present themselves while I'm messing around with [static site generators](https://jamstack.org/generators) (SSGs) and other tools that I use to build not only this site but also some [starter sites](/posts/2020/07/beginners-luck/). However, those shiny nuggets often are *so* little that they don't merit posts of their own.
+I sometimes discover, and then want to share with you good folks,  some shiny, little nuggets of geeky information that present themselves while I'm messing around with [static site generators](https://github.com/myles/awesome-static-generators) (SSGs) and other tools that I use to build not only this site but also some [starter sites](/posts/2020/07/beginners-luck/). However, those shiny nuggets often are *so* little that they don't merit posts of their own.
 
 Thus, in this post, I'm describing some of them for you. Perhaps this will end up being a series of its own, as with my more general "Mixed nuts" series; perhaps not. Verily, time shall tell. But let's not get ahead of ourselves.
 

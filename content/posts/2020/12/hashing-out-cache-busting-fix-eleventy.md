@@ -15,7 +15,7 @@ Since a few days ago, when I initially published "[Cache-busting in Eleventy, ta
 Here's a brief bit of catchup, to clarify things for those who have read neither of those articles and/or have no idea why they should care about the articles’ subject matter:
 
 - It's best to set up caching of your site's static assets, specifically the CSS file or files it uses, to improve the experience for your visitors.
-- As of now, this caching must be set up manually in the [Eleventy](https://11ty.dev) [static site generator](https://jamstack.org/generators/) used by this site.
+- As of now, this caching must be set up manually in the [Eleventy](https://11ty.dev) [static site generator](https://github.com/myles/awesome-static-generators/) used by this site.
 - After I found a particular [PostCSS](https://postcss.org) plugin lacking for this purpose despite my earlier hopes for it, I was able to come up with a different method which I've incorporated into both this site and the starter site.
 
 ## Five steps

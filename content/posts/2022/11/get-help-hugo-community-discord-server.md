@@ -7,7 +7,7 @@ date: 2022-11-30T10:43:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-Those who are trying to figure out the [Hugo](https://gohugo.io) [static site generator](https://jamstack.org/generators) (SSG) can run into trouble when they seek help on the only official source *for* that help, the [Hugo Discourse forum](https://discourse.gohugo.io).
+Those who are trying to figure out the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) can run into trouble when they seek help on the only official source *for* that help, the [Hugo Discourse forum](https://discourse.gohugo.io).
 
 Now, don't get me wrong: if you follow the ["Requesting Help" guidelines](https://discourse.gohugo.io/t/requesting-help/9132), you absolutely can get powerful help on the Hugo Discourse; but there are times when someone simply *can't* adhere to those guidelines for some reason, yet still needs help with Hugo.[^grumpy] And that's probably the best reason for the continued existence of the definitely *non*-official **[Hugo Community Discord server](https://discord.com/invite/JUvtfrHBzG)**.[^invLink]
 <!--more-->
