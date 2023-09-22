@@ -235,7 +235,7 @@ pre[class*="language-"] {
 		margin-right: -20vw;
 		max-width: 95vw;
 	}
-	p.labeled-highlight + .highlight {
+	p.labeled-highlight + .highlight, .highlightWide .highlight {
 		width: var(--bigImgDivWidth);
 		left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
 	}
@@ -333,11 +333,13 @@ article .footnotes code {
 	/* overriding the `article code` part above for footnotes */
 }
 
+/*
 article p code {
 	@media screen and (min-width: 768px) {
 		white-space: nowrap;
 	}
 }
+*/
 
 article p code.code-inline {
 	/* font-size: var(--text-sm); */

@@ -1,0 +1,14 @@
+{{- /* h/t https://discourse.gohugo.io/t/documentation-for-code-block-render-hooks/37610/3 */ -}}
+{{- $lang := .Attributes.lang  | default .Type -}}
+{{- $bigdiv := .Attributes.bigdiv | default false -}}
+{{- $filename := .Attributes.filename | default "" -}}
+{{- if transform.CanHighlight $lang -}}
+	{{- if ne $filename "" -}}<p class="labeled-highlight pokey"><em>{{ $filename }}</em></p>{{- end }}
+	<div{{- if eq $bigdiv true }} class="highlightWide"{{- end -}}>
+		{{ highlight .Inner $lang }}
+	</div>
+{{- else -}}
+<pre>
+	<code>{{.Inner}}</code>
+</pre>
+{{- end }}
