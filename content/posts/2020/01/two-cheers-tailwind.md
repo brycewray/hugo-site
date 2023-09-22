@@ -27,7 +27,7 @@ So I spent my spare time during the next few days doing precisely that on a bran
 
 Although I still haven't quite gotten used to the appearance of this *[utility-first](https://tailwindcss.com/docs/utility-first/)* approach to CSS in my HTML&nbsp;.&nbsp;.&nbsp;.
 
-```html
+```html{bigdiv=true}
 <div class="absolute bottom-0 text-shadow-titles sm:px-20 md:px-30 lg:px-36 pt-6 gradient-titles w-full min-w-full">
 ```
 

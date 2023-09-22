@@ -40,7 +40,7 @@ You call the `Imgc.astro` component as follows:
 
 `Imgc` assumes you have the [`axios`](https://github.com/axios/axios) package installed.
 
-{{< labeled-highlight lang="js" filename="Imgc.astro" >}}
+```js{filename="Imgc.astro" bigdiv=true}
 ---
 import axios from "axios";
 
@@ -127,8 +127,7 @@ let imgBkgd = `url(data:image/jpeg;base64,${LQIP_b64})`;
   </noscript>
   <img class={imgClass} src={cloudiBase + xFmPart1 + "600" + xFmPart2 + url} srcset={Srcset} alt={alt} width={width} height={height} sizes={dataSzes} loading={lazyYorN} data-pagefind-ignore />
 </div>
-
-{{</ labeled-highlight >}}
+```
 
 ## Eleventy shortcode
 
@@ -151,7 +150,7 @@ Note that `imgc` assumes you have the [`eleventy-fetch`](https://github.com/11ty
 
 Of course, be sure to enable the `imgc` shortcode in your Eleventy config file through the [usual procedure](https://www.11ty.dev/docs/shortcodes/).
 
-{{< labeled-highlight lang="js" filename="imgc.js" >}}
+```js{filename="imgc.js" bigdiv=true}
 const EleventyFetch = require("@11ty/eleventy-fetch")
 const md5 = require('md5')
 
@@ -209,4 +208,4 @@ module.exports = async (url, alt, width, height, phn) => {
 
   return stringtoRet
 }
-{{</ labeled-highlight >}}
+```

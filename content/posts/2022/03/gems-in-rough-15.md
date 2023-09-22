@@ -21,7 +21,7 @@ On February 23, Cloudflare opened the beta to all CFP users --- allowing them to
 
 [Over a year ago](/posts/2021/01/gems-in-rough-02/#possessed), I first wrote here about a bug that was affecting the [Hugo](https://gohugo.io/) SSG's ability to convert [Markdown](https://daringfireball.net/projects/markdown) into HTML. The bug was not in Hugo itself, but rather was in the `Typographer` extension to the [goldmark](https://github.com/yuin/goldmark) Markdown parser which Hugo uses. For example, the bug would cause this Markdown&nbsp;.&nbsp;.&nbsp;.
 
-```md
+```md{bigdiv=true}
 John's dog is named Sam. The Smiths' dog is named Rover.
 ```
 

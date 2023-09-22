@@ -45,7 +45,7 @@ If you want to see the classes I use to style the webmentions, they're on the si
 
 It's almost time to get into the code --- but, first, to help you understand exactly what we're trying to obtain and display, here's what the [webmention.io](https://webmention.io) API returns for [one page](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/) on this site:
 
-```json
+```json{bigdiv=true}
 {
 	"children": [
 		{
@@ -182,7 +182,7 @@ And now, it's time to dive in.
 
 We "begin at the beginning," by initializing a whole passel of variables. To repeat one of those obvious questions I mentioned earlier: why don't we do it more cleanly, rather than one frickin' line per variable? Because, it would appear, [we can't](https://discourse.gohugo.io/t/init-and-reassign-multiple-variables-at-once/27039).
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $json := "Init" -}}
 {{- $text := "" -}}
 {{- $children := "" -}}
@@ -243,7 +243,7 @@ So, first, we [`jsonify`](https://gohugo.io/functions/jsonify/) it so it'll *rea
 
 [^unvarnishedJSON]: As of this writing, I haven't yet found a use for that "original" JSON, but Stuff Happens.
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $json = $json | jsonify -}}{{- /* We'll have to unmarshal it at the end */ -}}
 {{- $jsonPreFix := $json -}}{{- /* Save it j/i/c */ -}}
 {{- /*
@@ -319,7 +319,7 @@ Then, we set the rules of engagement, or perhaps I should call them the "rules o
 
 With those ground rules established, we provide for "likes":
 
-```go-html-template
+```go-html-template{bigdiv=true}
 		{{- if $likesYes -}}
 			<details>
 				<summary class="h4">Likes</summary>
@@ -345,7 +345,7 @@ With those ground rules established, we provide for "likes":
 
 . . . and "reposts":
 
-```go-html-template
+```go-html-template{bigdiv=true}
 		{{- if $repostsYes -}}
 			<details>
 				<summary class="h4">Reposts</summary>
@@ -376,7 +376,7 @@ With those ground rules established, we provide for "likes":
 
 [^selfReplies]: By "replies from me," I mean items like what you may have seen in those optional-viewing snippets from the API return: I replied to someone's tweet that was, itself, a reply to my original tweet about the post in question.
 
-```go-html-template
+```go-html-template{bigdiv=true}
 		{{- if $repliesYes -}}
 			<details>
 				<summary class="h4">Replies</summary>
@@ -411,7 +411,7 @@ With those ground rules established, we provide for "likes":
 
 Lastly, we get to "mentions." *This* is where the `sort` became weird. Try as I might, I couldn't get it to use `published` as with "replies," so I resorted to the `wmId` timestamp. While `wmId` won't necessarily allow for sorting in correct chronological order, this is one of those "any port in a storm" things: if we can't use `published`, `wmId` appears to be the best backup choice.
 
-```go-html-template
+```go-html-template{bigdiv=true}
 		{{- if $mentionsYes }}
 			<details>
 				<summary class="h4">Mentions</summary>

@@ -17,7 +17,7 @@ For those of you who haven't used this capability before, let me explain.
 
 Back when this site was on [Eleventy](https://11ty.dev), I could write the following Markdown, invoking the site's `box` class with an curly-bracketed attribute at the end:
 
-```md
+```md{bigdiv=true}
 **Important**: This is a paragraph that goes in a box so it'll attract attention.{.box}
 ```
 
@@ -28,13 +28,13 @@ Back when this site was on [Eleventy](https://11ty.dev), I could write the follo
 
 The alternative would be actually writing HTML within the Markdown, but that wasn't as convenient when it was necessary to add things like links and formatting:
 
-```html
+```html{bigdiv=true}
 <p class="box"><strong>This</strong> is bold and <em>this</em> is italicized/obliqued, and <a href="https://gohugo.io/documentation" rel="noopener">this link</a> goes to the Hugo documentation, while <a href="/posts/2021/02/simplify-simplify">this post link</a> goes to the site&rsquo;s recent <strong>&ldquo;Simplify, simplify&rdquo;</strong> post.</p>
 ```
 
 .&nbsp;.&nbsp;. instead of just writing this in Markdown:
 
-```md
+```md{bigdiv=true}
 **This** is bold and *this* is italicized/obliqued, and [this link](https://gohugo.io/documentation) goes to the Hugo documentation, while [this post link](/posts/2021/02/simplify-simplify/) goes to the site's recent **"Simplify, simplify”** post.{.box}
 ```
 
@@ -51,7 +51,7 @@ When I came back to Hugo, I figured I'd lost this convenience because Hugo's bui
 
 [^oldName]: In Eleventy, I'd called this class `lazypicturecaption` as a reference to the `lazypicture` shortcode I used in concert with lazy-loading-specific JavaScript to produce responsive images. In Hugo, I've dispensed with that JavaScript, using an `imgc` shortcode for responsive images (relying instead on browsers’ native lazy-loading) --- hence, the different name in Hugo for what essentially is the same thing, namely a caption-styling class.
 
-```md
+```md{bigdiv=true}
 {{</* imgc src="BW-holding-Kennedy-first-night__crop_1008x712.jpg" alt="Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" width="1008" height="712" */>}}
 
 {{%/* imgcCapt %}}Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?{{% /imgcCapt */%}}
@@ -72,7 +72,7 @@ But then Hugo 0.81.0 arrived, with [enhanced attribute support](https://gohugo.i
 
 To get that working in Hugo as of v.0.81.0, just make appropriate edits to your config file's [`markup` section](https://gohugo.io/getting-started/configuration-markup#goldmark). For example, here's how I have `markup` set in this site's `config.yaml` file (note that `block` is `true`, which enables what I'm discussing in this article):
 
-```yaml
+```yaml{bigdiv=true}
 markup:
   highlight:
     guessSyntax: true
@@ -95,7 +95,7 @@ markup:
 
 So, now, all I have to do to get that same caption is:
 
-```md
+```md{bigdiv=true}
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
 {.imgcCaption}
 ```

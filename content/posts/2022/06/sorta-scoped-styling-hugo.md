@@ -111,7 +111,7 @@ To keep from (further) bulking up the Hugo partial `head.html`, I moved all the 
 
 And here's what's in `css.html` at this writing (I've edited out certain now-unused items, while adding plenty of comments to help explain things).
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{/*-
 	Dart Sass Embedded stuff herein:
 	- Based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
@@ -324,7 +324,7 @@ It was tagged as `home` and `code`, which gets it the `home.scss` file and, thus
 
 For another example: my post, "[Hugo hits The Hundy](/posts/2022/06/hugo-hits-hundy/)," got this (again, with reformatting just for your reading purposes):
 
-```html
+```html{bigdiv=true}
 <link
 	rel="preload"
 	as="style"

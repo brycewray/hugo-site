@@ -15,7 +15,7 @@ Fortunately, the fix is a breeze. All you have to do is wrap the API-accessing c
 
 Here's a simplified example of how you could do it in the [Eleventy](https://11ty.dev) SSG:
 
-```js
+```js{bigdiv=true}
 const EleventyFetch = require("@11ty/eleventy-fetch")
 const environment = process.env.NODE_ENV
 
@@ -36,7 +36,7 @@ Your immediate response to this may be: "Okay, fine --- but, now, when I *want* 
 
 The answer is that it depends. For example, in [Astro](https://astro.build), you can use its [`preview` command](https://docs.astro.build/en/reference/cli-reference/#astro-preview) (*e.g.*, `astro preview`). However, a less SSG-specific possibility could be to add a little scripting to your project's `package.json`. Here's a bare-bones example, again for Eleventy, which assumes use of the [`npm-run-all` package](https://github.com/mysticatea/npm-run-all) to run multiple scripts in one command. I'm leaving the `styling` scripts to your imagination, since CSS-handling will vary from site to site.
 
-```json
+```json{bigdiv=true}
   "scripts": {
     "start": "NODE_ENV=development npm-run-all --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",

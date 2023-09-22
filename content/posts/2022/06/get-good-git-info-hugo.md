@@ -68,7 +68,7 @@ To make use of this answer in a GitHub Action, you could just add a `with` secti
 
 You might also want to test for whether a post's day of original publication and its "last-modified" day are the same --- *e.g.*, when you fix a typo or otherwise edit something while it's still the same day as when you first issued the post --- and, if so, show only the "original-pub" listing, to avoid duplication. However, this requires comparing the *formatted* dates, since full *timestamps* clearly can *never* be the same [down to the nanosecond](https://pkg.go.dev/time#ANSIC); so here's how you could accomplish this in an applicable template:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 <p>
 	<strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
 	{{- if ne (.PublishDate.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006") }}
@@ -85,7 +85,7 @@ That takes care of Git info for dates; but what about the original subject of th
 
 Well, the `.GitInfo` object also provides two variables for each commit's [hash](https://www.mikestreety.co.uk/blog/the-git-commit-hash/): the *full* hash (`.Hash`) and the more familiar *abbreviated* hash (`.AbbreviatedHash`). Adding this within the proper templates is pretty matter-of-fact. The following example *displays* `.AbbreviatedHash` while the *link* is an `exampleuser` repo link plus `/commit/` plus `.Hash`:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 <p>
 	{{- if $.GitInfo -}}
 		<strong>Latest commit</strong>: <a href="https://github.com/exampleuser/hugo-site/commit/{{ .GitInfo.Hash }}" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>

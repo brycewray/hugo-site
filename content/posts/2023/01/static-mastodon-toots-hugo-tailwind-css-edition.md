@@ -21,7 +21,7 @@ Other than normal Tailwind itself, the code I present below --- which **as of Ta
 
 [^myImport]: If you're using `@import` to bring in other CSS files in addition to the Tailwind styling, [that'll be necessary for the Tailwind stuff as well](https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports). You may want to refer to ["The code" in my 2022 article](/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/#the-code) about using Tailwind CSS 3.x with Hugo.
 
-```css
+```css{bigdiv=true}
 /*
 This is your project's main CSS file, perhaps `assets/css/index.css` or `themes/tailwind/assets/css/index.css`.
 */
@@ -45,7 +45,7 @@ This is your project's main CSS file, perhaps `assets/css/index.css` or `themes/
 
 With all of that understood, here's the Hugo [shortcode](https://gohugo.io/content-management/shortcodes/):
 
-{{< labeled-highlight lang="go-html-template" filename="stoot.html" >}}
+```go-html-template{filename="stoot.html" bigdiv=true}
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
 {{ $handleInst := "" }}
@@ -211,4 +211,4 @@ With all of that understood, here's the Hugo [shortcode](https://gohugo.io/conte
 		{{ end }}
 	{{ end }}
 {{- end -}}
-{{</ labeled-highlight >}}
+```

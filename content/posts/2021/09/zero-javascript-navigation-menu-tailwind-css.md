@@ -43,7 +43,7 @@ Yeah, I know: that's enough talk. Let's get to the code, **after** I provide jus
 
 This belongs in `./src/_includes/layouts/`.
 
-{{< labeled-highlight lang="jinja" filename="header.njk" >}}
+```jinja{filename="header.njk" bigdiv=true}
 <header class="fixed w-full mt-0 bg-black dark:bg-blue-800 z-[9999]">
 	<nav class="text-white bg-black dark:bg-blue-800">
 		<input type="checkbox" id="nav-Checkbox" class="hidden">
@@ -71,13 +71,13 @@ This belongs in `./src/_includes/layouts/`.
 		</ul>
 	</nav>
 </header>
-{{</ labeled-highlight >}}
+```
 
 ### The other CSS
 
 This belongs in `./src/assets/css/`.
 
-{{< labeled-highlight lang="css" filename="nav.css" >}}
+```css{filename="nav.css"}
 #nav-Checkbox:checked ~ ul.nav-Menu li,
 #nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
 	@apply block;
@@ -88,11 +88,11 @@ This belongs in `./src/assets/css/`.
 #nav-Checkbox:checked ~ ul.nav-Menu {
 	@apply pb-4;
 }
-{{</ labeled-highlight >}}
+```
 
 ### The Tailwind config file
 
-{{< labeled-highlight lang="js" filename="tailwind.config.js" >}}
+```js{filename="tailwind.config.js"}
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -178,7 +178,7 @@ module.exports = {
 		require('tailwindcss-logical'),
 	], // if we add forms, do it here
 }
-{{</ labeled-highlight >}}
+```
 
 ## There are better ones
 

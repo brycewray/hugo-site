@@ -47,7 +47,7 @@ Here's what I built this shortcode to do, based on how I'd used its [Cloudinary]
 
 Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hugo's native image processing, to distinguish this shortcode from its Cloudinary-using counterpart, `imgc.html`):
 
-{{< labeled-highlight lang="go-html-template" filename="imgh.html" >}}
+```go-html-template{filename="imgh.html" bigdiv=true}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{/*
 	These are breakpoints, in pixels.
@@ -155,7 +155,7 @@ Here's an annotated version of a shortcode I call `imgh.html` (the *h* is for Hu
 		/>
 	</picture>
 </div>
-{{</ labeled-highlight >}}
+```
 
 ## Use and results
 
@@ -163,7 +163,7 @@ To invoke `imgh` in Markdown, use it like so[^commentsGo]:
 
 [^commentsGo]: If you happen upon this site's repo out of curiosity and check out this post's Markdown file, you'll notice that this example's curly-bracketed boundaries also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the image. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). (**Update from the future**: Later, the workaround [did](https://gohugo.io/content-management/syntax-highlighting/#highlight-hugogo-template-code) become part of the documentation.)
 
-```md
+```md{bigdiv=true}
 {{</* imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" */>}}
 ```
 
@@ -173,7 +173,7 @@ In this case, it produces:
 
 . . . from HTML like the following, which shows the automatically created hashed names for the Hugo-generated resized images:
 
-```html
+```html{bigdiv=true}
 <div class="relative imgB-b5bc32dfa3c277a7b3e602ebef8c83ca bg-center">
 	<picture>
 		<source type="image/webp" srcset="/posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_320x0_resize_q75_h2_box.webp 320w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_h2_box.webp 640w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_960x0_resize_q75_h2_box.webp 960w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1280x0_resize_q75_h2_box.webp 1280w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1600x0_resize_q75_h2_box.webp 1600w, /posts/2022/06/responsive-optimized-images-hugo/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1920x0_resize_q75_h2_box.webp 1920w" sizes="(min-width: 1024px) 100vw, 50vw">

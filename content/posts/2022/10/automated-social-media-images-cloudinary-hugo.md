@@ -66,7 +66,7 @@ Thus, the only way to do this to my satisfaction in Hugo was to recreate, entire
 
 Fortunately, Lengstorf's [`get-share-image` documentation](https://github.com/jlengstorf/get-share-image) makes it pretty clear how to get there. In the end, all you're doing is creating a [Cloudinary image transformation URL](https://cloudinary.com/documentation/image_transformations#transformation_url_syntax) that uses Cloudinary's [text layers feature](https://cloudinary.com/documentation/layers#text_layer_options), and `get-share-image` does that for the user. For example, here's the Cloudinary URL that makes **this** page's OG image:
 
-```html
+```html{bigdiv=true}
 https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1136,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669
 ```
 
@@ -119,7 +119,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 
 [^CCSEO]: Why? Check out the CloudCannon article, "[Hugo SEO Best Practices](https://cloudcannon.com/community/learn/hugo-seo-best-practices/)," to which I contributed.
 
-{{< labeled-highlight lang="go-html-template" filename="head-meta_cloud-socimg.html" >}}
+```go-html-template{filename="head-meta_cloud-socimg.html" bigdiv=true}
 {{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
 {{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
 	{{/* fallback OG image in case we're on the home page */}}
@@ -253,7 +253,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 	*/ -}}
 		<meta name="og:image" content="{{ $socImg }}">
 		<meta name="twitter:image" content="{{ $socImg }}">
-{{</ labeled-highlight >}}
+```
 
 ----
 
@@ -261,7 +261,7 @@ You'll notice that there's a *lot* of other metadata in this, and I recommend us
 
 While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs, it's not utterly necessary. For example, here's some [Nunjucks](https://mozilla.github.io/nunjucks) templating for use in Eleventy --- essentially mashing all the `replace` operations into one long line, which to my knowledge isn't possible in Hugo. (To avoid repetition, I haven't annotated it as in the Hugo example above.)
 
-{{< labeled-highlight lang="twig" filename="head-meta_cloud-socimg.njk" >}}
+```twig{filename="head-meta_cloud-socimg.njk" bigdiv=true}
 {% set escapedTitle = title | replace("%", "%2525") | replace(",", "%252C") | replace("/", "%252F") | replace(" ", "%20") | replace(":", "%3A") | replace(";", "%3B") | replace("!", "%21") | replace("?", "%3F") | replace("+", "%2B") | replace("—", "%E2%80%94") | replace("–", "%E2%80%93") | replace(" ", "%C2%A0") | replace("•", "%E2%80%A2") | replace("#", "%23") | replace("(", "%28") | replace(")", "%29") | replace('"', "%22") | replace("“", "%E2%80%9C") | replace("”", "%E2%80%9D") | replace("'", "%27") | replace("‘", "%E2%80%98") | replace("’", "%E2%80%99") | replace("‑", "%E2%80%91") %}
 {% set cloudName = "my-cloud-name" %}
 {%- set titleSize = 96 -%}{# pixels, not points #}
@@ -273,7 +273,7 @@ While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs
 {% set myUploadedBkgd = "my-bkgd-3k4dvaxlzd" %}
 	{# your preferred image's Cloudinary `public ID`, as explained earlier #}
 {% set socImg = ["https://res.cloudinary.com/", cloudName, "/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_", titleWidth, ",c_fit,co_rgb:ffffff,g_north,y_72,l_text:", fontChoice, "_", titleSize, "_center:", escapedTitle, "/", myUploadedBkgd] | join %}
-{{</ labeled-highlight >}}
+```
 
 ----
 

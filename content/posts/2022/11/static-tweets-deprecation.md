@@ -13,7 +13,7 @@ Things have gotten steadily stranger at Twitter in recent days, with no apparent
 
 Perhaps it was collateral damage from all the resulting chaos or perhaps it was just coincidental, but calls to Twitter's public syndication API are no longer working as they were before. Prior to the last few days, entering the following into a terminal:
 
-```bash
+```bash{bigdiv=true}
 curl "https://cdn.syndication.twimg.com/tweet?id=463440424141459456"
 ```
 

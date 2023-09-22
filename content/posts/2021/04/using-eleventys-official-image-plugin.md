@@ -94,7 +94,7 @@ module.exports = function (eleventyConfig) {
 **Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update/), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
 {.box}
 
-```js
+```js{bigdiv=true}
 	// --- START, eleventy-img
 	function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
 		console.log(`Generating image(s) from:  ${src}`)
@@ -148,7 +148,7 @@ Now, let's get this show on the road.
 
 Let's say you keep your Eleventy project's original image files (the ones the `image` shortcode will process) in an `images` folder that's within a top-level `src` folder --- *i.e.*, `./src/images/`. Let's also say that the image file you want to pop into a post you're writing is called `my-pet-cat.jpg`. So type this in your post's Markdown file:
 
-```md
+```md{bigdiv=true}
 {% image "my-pet-cat.jpg", "Photo of a cat named Shakespeare sitting on a window sill" %}
 ```
 
@@ -158,7 +158,7 @@ Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jp
 
 Now, just build your site, and Eleventy Image will do its magic everywhere within your site that you're using the `image` shortcode. For example, here's the code the shortcode above could generate:
 
-```html
+```html{bigdiv=true}
 <picture>
 	<source type="image/webp" srcset="/images/my-pet-cat-600w.webp 600w, /images/my-pet-cat-900w.webp 900w, /images/my-pet-cat-1500w.webp 1500w" sizes="(min-width: 1024px) 100vw, 50vw">
 	<source type="image/jpeg" srcset="/images/my-pet-cat-600w.jpeg 600w, /images/my-pet-cat-900w.jpeg 900w, /images/my-pet-cat-1500w.jpeg 1500w" sizes="(min-width: 1024px) 100vw, 50vw">

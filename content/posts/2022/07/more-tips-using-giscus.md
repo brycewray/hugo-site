@@ -26,7 +26,7 @@ However, you can get a little more creative and use CSS/SCSS to style these elem
 
 Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-giscus.html` template as of this writing:
 
-{{< labeled-highlight lang="go-html-template" filename="comments-giscus.html" >}}
+```go-html-template{filename="comments-giscus.html" bigdiv=true}
 <details class="comments">
 	<summary class="ctr pokey">
 		<strong>View/hide comments</strong>
@@ -44,20 +44,16 @@ Here's an abbreviated version of my [Hugo](https://gohugo.io)-based `comments-gi
 		</p>
 	</div>
 </details>
-{{</ labeled-highlight >}}
+```
 
 . . . and the SCSS for the `details` and `summary`:
 
-```scss
+```scss{bigdiv=true}
 @use 'variables' as var;
-// This `@use` statement refers to an
-// SCSS partial, `_variables.scss`.
-// The statement and the subsequent
-// variables it enables below --- such as
-// `var.$blue` --- require the use of
-// **Dart Sass**. If you're still using the
-// Hugo default of LibSass, remove the
-// `var.` before each `$` (**and**,
+// This `@use` statement refers to an SCSS partial, `_variables.scss`.
+// The statement and the subsequent variables it enables below --- such as
+// `var.$blue` --- require the use of **Dart Sass**. If you're still using the
+// Hugo default of LibSass, remove the `var.` before each `$` (**and**,
 // of course, declare the vars someplace).
 
 details.comments > summary {

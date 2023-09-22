@@ -40,7 +40,7 @@ Invoke the shortcode in Markdown as in this example, where the first parameter r
 
 Note that it assumes you have the [`eleventy-fetch`](https://github.com/11ty/eleventy-fetch), [`luxon`](https://github.com/moment/luxon), and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
 
-{{< labeled-highlight lang="js" filename="stoot.js" >}}
+```js{filename="stoot.js" bigdiv=true}
 const EleventyFetch = require("@11ty/eleventy-fetch")
 const md5 = require('md5')
 const { DateTime } = require("luxon")
@@ -198,4 +198,4 @@ module.exports = async (instance, id) => {
 
 	return stringToRet
 }
-{{</ labeled-highlight >}}
+```

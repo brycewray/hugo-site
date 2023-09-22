@@ -36,7 +36,7 @@ Now, with Hugo Installer and appropriate scripting onboard, even a Hugo project 
 
 When run from a `package.json` script, Hugo Installer checks for the presence of a Hugo binary --- by default, in the project's `bin/` folder, although you can pick a different location --- and, only if it doesn't find the binary, downloads and installs a version, which you must specify. The check goes **very** quickly and, thus, I suggest you make a `package.json` script that does only the Hugo Installer part, and use it with your other Hugo-related scripts. Here are some examples, some of which use Müller's [exec-bin](https://github.com/dominique-mueller/exec-bin) package so the installed Hugo binary will run as you would expect:
 
-```json
+```json{bigdiv=true}
 {
 	"name": "my-project",
 	"description": "TBD",
@@ -53,7 +53,7 @@ You'll note my use of a `config` object, in which I provide the desired Hugo ver
 
 [^pkgVars]: I encourage you to read [Brian Childress](https://brianchildress.co/)'s 2018 article, "[Variables in package.json](https://brianchildress.co/variables-in-package-json/)," which was a great help in this aspect of the changeover.
 
-```json
+```json{bigdiv=true}
 "install:hugo": "hugo-installer --version config.hugo --extended",
 ```
 

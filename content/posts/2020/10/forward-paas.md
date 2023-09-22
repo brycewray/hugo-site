@@ -46,7 +46,7 @@ As promised above, here are the GitHub Actions for publishing the site, whether 
 
 ### For Hugo
 
-{{< labeled-highlight lang="yaml" filename="CI-Hugo-site-to-Cloudflare-Workers.yml" >}}
+```yaml{filename="CI-Hugo-site-to-Cloudflare-Workers.yml" bigdiv=true}
 name: CI-Hugo-site-to-Cloudflare-Workers
 
 on:
@@ -77,11 +77,11 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           # Other args should come from wrangler.toml and what's in ./workers-site/
-{{</ labeled-highlight >}}
+```
 
 ### For Eleventy
 
-{{< labeled-highlight lang="yaml" filename="CI-Eleventy-site-to-Cloudflare-Workers.yml" >}}
+```yaml{filename="CI-Eleventy-site-to-Cloudflare-Workers.yml" bigdiv=true}
 name: CI-Eleventy-site-to-Cloudflare-Workers
 
 on:
@@ -109,4 +109,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           # Other args should come from wrangler.toml and what's in ./workers-site/
-{{</ labeled-highlight >}}
+```

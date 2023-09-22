@@ -33,7 +33,7 @@ So here's a practical example. Let's say your Hugo project has a post, "My Cat,"
 
 [^commentsGo]: {{% mdcode-fn %}}
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{</* imgh src="my-pet-cat.jpg" alt="This is a picture of my cat" */>}}
 ```
 
@@ -57,7 +57,7 @@ Below is a `render-image` template which provides all the truly important advant
 
 You must save the template, with the *required* name of `render-image.html`, into the appropriate location as explained in the [documentation](https://gohugo.io/templates/render-hooks/). To make it work throughout the site, put it in `layouts/_default/_markup/`.
 
-{{< labeled-highlight lang="go-html-template" filename="render-image.html" >}}
+```go-html-template{filename="render-image.html" bigdiv=true}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Page.Resources.GetMatch (.Destination) -}}
 {{- $alt := .Text -}}
@@ -102,7 +102,7 @@ You must save the template, with the *required* name of `render-image.html`, int
 	</picture>
 </div>
 {{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
-{{</ labeled-highlight >}}
+```
 
 If you want the styling mentioned in the code (including for the optional caption), here's CSS you can drop into your own CSS or Sass files:
 
@@ -141,7 +141,7 @@ If you want the styling mentioned in the code (including for the optional captio
 
 I like this alternative so much that I've switched to it, away from the shortcode, for nearly all of the site's images --- essentially, all but the very few which need any of the extra settings allowed by the shortcode. Thus, I'll close by inserting a captioned photo of *our* family's cat, via the following Markdown:
 
-```md
+```md{bigdiv=true}
 ![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here's our cat, Shakespeare, sitting on a window sill.\
 This photo appears in multiple images-related posts here on [this website](/).")
 ```

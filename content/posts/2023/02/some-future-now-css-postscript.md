@@ -34,7 +34,7 @@ The above points notwithstanding, I decided to do that restructuring after all.
 
 It turned out to be less trouble (albeit somewhat tedious) than I'd anticipated **and** allowed me to get at least one clear benefit out of using CSS variables because they, unlike Sass variables, can be redefined after their initial declaration. Here are some excerpts from my "sorta scoped" `code.css` file for styling code blocks:
 
-```css
+```css{bigdiv=true}
 .chroma *, .code-inline * {
 	color: var(--clr-lt, yellow);
 	@media (prefers-color-scheme: dark) {
@@ -62,8 +62,7 @@ The end result is a shorter, easier-to-read CSS file.
 
 And, yes: those colors are lifted from Tailwind CSS's color palette
 (https://tailwindcss.com/docs/customizing-colors),
-as their variables' names suggest.
-My Sass styling uses them, too.
+as their variables' names suggest. My Sass styling uses them, too.
 */
 ```
 

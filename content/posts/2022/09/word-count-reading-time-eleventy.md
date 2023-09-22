@@ -15,7 +15,7 @@ Here you go.
 
 First, here's a template file derived from my `billboard.njk`:
 
-```jinja
+```jinja{bigdiv=true}
 {% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
 {% set fixedContent = content | replace(regExpCode, "") | striptags %}
 {% set wordCount = fixedContent | wordcount %}
@@ -53,7 +53,7 @@ The only other thing this requires is the formatting of the `wordCount` so that 
 *By the way, this also can be done in the [Hugo](https://gohugo.io) SSG, using various features that come with Hugo out of the box:*
 
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- /*
 	h/t to Joe Mooring's answer in https://discourse.gohugo.io/t/count-word-function-customized-to-exclude-code/34380
 */ -}}

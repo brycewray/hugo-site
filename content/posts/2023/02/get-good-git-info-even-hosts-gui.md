@@ -53,7 +53,7 @@ Put the following shell script at the top level of your Hugo project (I recommen
 
 [^scope]: And don't be tempted, as I was, to incorporate the shell script into your build process on the host so you can automate the data-population there rather than having to do it manually on your local setup. I mean, sure, you can **try**; but it won't work because, again, the host is doing a shallow clone --- and you can't change that, whether through a shell script or an environment variable or any other possibility. Otherwise, there'd be no need for all this foolishness in the first place, right?
 
-{{< labeled-highlight lang="bash" filename="git-get-data.sh" >}}
+```bash{filename="git-get-data.sh" bigdiv=true}
 #!/bin/bash
 rm -rf data/gitoutput.yml # avoid appending to existing file
 echo "Getting git data . . ."
@@ -62,7 +62,7 @@ cd content
 git ls-tree -r --name-only HEAD | while read filename; do
   printf "\055 FilePath: $filename\n$(git log -1 --all --pretty=format:"  Hash: %H\n  AbbreviatedHash: %h\n  LastmodDate: %cI" -- $filename)\n" >> ../data/gitoutput.yml
 done
-{{</ labeled-highlight >}}
+```
 
 **Note**: This will work fine in macOS or Linux; but, if you're using Windows, you'll need to run it in [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).\
 Also, be aware that using `git log`, as this script does, is slow and tends to be pretty rough on your CPU, getting only more so as the size of the examined repo grows.
@@ -113,7 +113,7 @@ Now, build the templating to access and display this data. Here are the relevant
 
 [^repoURL]: The URL structures thereafter are based on how GitHub works so, if your repo is on a different service, you obviously should change this example accordingly to fit the URLs for what you're using.
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{/* start, variables for context in `range` */}}
 {{- $FilePath := .File.Path -}}
 {{- $PubDate := .PublishDate.Format "2006-01-02" -}}
@@ -150,7 +150,7 @@ If you want to use this method **but** are wary about what I mentioned above ---
 
 Its last line, below, assumes your online repo is called *origin* in Git, because that's a common default for a remote source. If you've fiddled with [`git remote`](https://git-scm.com/docs/git-remote) to use a different name, adjust this accordingly. (Similarly: if, as is true for my site, you typically push changes to *multiple* remote repos at the same time, that's another reason to edit the last line.)
 
-{{< labeled-highlight lang="bash" filename="pushgit.sh" >}}
+```bash{filename="pushgit.sh" bigdiv=true}
 #!/bin/sh
 ## == USE WHEN READY TO PUSH CONTENT CHGS. TO HOST
 ## == First, get Git data
@@ -167,4 +167,4 @@ cd ..
 git add data/gitoutput.yml && git commit -m "Update manual Git data"
 ## == Finally, push to the remote repo
 git push -u origin
-{{</ labeled-highlight >}}
+```

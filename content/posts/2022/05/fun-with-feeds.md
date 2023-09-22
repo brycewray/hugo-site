@@ -18,7 +18,7 @@ Are you subscribed to any YouTube channels? Your feed reader can tell you when t
 
 The **Fireship** channel on YouTube has a home page URL of `https://www.youtube.com/c/Fireship`. But, when you copy that into a compatible reader app, it gets translated to what the reader really wants to use:
 
-```plaintext
+```plaintext{bigdiv=true}
 https://www.youtube.com/feeds/videos.xml?channel_id=UCc0YbtMkRdhcqwhu3Oad-lw
 ```
 
@@ -32,7 +32,7 @@ You may already be aware that podcasts notify apps and websites of new content a
 
 The URL you'll find within that `link` is the one that your feed reader needs. For example, here's the feed `link`  for [the *ChangeLog* podcast](https://changelog.com/podcast/):
 
-```html
+```html{bigdiv=true}
 <link href="https://changelog.com/podcast/feed" rel="alternate" title="The Changelog Podcast Feed" type="application/rss+xml">
 ```
 

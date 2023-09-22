@@ -65,7 +65,7 @@ So why am I sharing my shame? Because I saw posts from *other* people still aski
 
 So I was saved the trouble of an "ie.css" sheet; and my resulting addition to the end of the "style.css" sheet I was already using turned out to be something along these lines:
 
-```css
+```css{bigdiv=true}
 /* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.slider-text {

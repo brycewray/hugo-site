@@ -27,7 +27,7 @@ Until yesterday, I had used [Cloudflare Pages](https://pages.cloudflare.com) (an
 
 I have multiple Eleventy repositories (including this one), with differing build scripts, which CFP **had** handled just fine before yesterday morning but which, starting then, errored out on each CFP build attempt with cryptic messages regarding an [ES modules (ESM)](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) loader:
 
-```text
+```text{bigdiv=true}
 12:24:22.053    (node:1650) ExperimentalWarning: The ESM module loader is experimental.
 12:24:22.086    internal/modules/run_main.js:54
 12:24:22.086        internalBinding('errors').triggerUncaughtException(

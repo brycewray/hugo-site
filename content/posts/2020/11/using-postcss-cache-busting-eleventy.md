@@ -48,14 +48,14 @@ An *asset pipeline* is how some software applications are "aware of" and process
 
 After all: if you're using PostCSS, you're almost certainly [using Hugo Pipes to implement it](https://gohugo.io/hugo-pipes/postcss/), so why not simply use it also to fingerprint the CSS file every time you make a change? It was as simple as this in the `<head>` "partial" template in the Hugo version of my site (note that this is the [Go](https://go.dev) language on which Hugo templating depends):
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{ $css := resources.Get "css/index.css" }}
 {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "inlineImports" true "outputStyle" "compressed") | fingerprint }}
 ```
 
 That would produce a CSS file named something like this:
 
-```bash
+```bash{bigdiv=true}
 index.575f0a87ee2e4e24d8a061847ec508e1be27d95d0c16b717a4bd1f03a5c7e49f.css
 ```
 
@@ -89,7 +89,7 @@ First, access your chosen command line interface (such as the macOS Terminal app
 
 Then, add the plugin to your `postcss.config.js` file. If you're happy to go with the defaults, that's as simple as adding `require('postcss-hash')` within your `plugins` object --- **but**, for an Eleventy site, you **must** specify the location of the *[manifest](https://en.wikipedia.org/wiki/Manifest_file)* that it produces. I'll explain why in a moment.[^5] In addition, there are other available options. For example, here's my entire `postcss.config.js` file as of this writing:
 
-{{< labeled-highlight lang="js" filename="postcss.config.js" >}}
+```js{filename="postcss.config.js" bigdiv=true}
 const path = require('path')
 
 module.exports = {
@@ -106,7 +106,7 @@ module.exports = {
 		require('postcss-clean'),
 	],
 }
-{{</ labeled-highlight >}}
+```
 
 Before I get to the `manifest`  option of the `postcss-hash` part, I'll note that:
 - I didn't set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo's default is [SHA-256](https://web.archive.org/web/20130526224224/https://csrc.nist.gov/groups/STM/cavp/documents/shs/sha256-384-512.pdf). The documentation specifies a few other options you can set, but I find MD5 to be just fine.
@@ -121,13 +121,13 @@ That means, for Eleventy purposes, it's critical to put this manifest file where
 
 In my site's case, I use the `head.js` "partial" to give this entire site its `<head>` content, so I can finish this very easily:
 
-```html
+```html{bigdiv=true}
 <link rel="stylesheet" href="/css/${data.manifest['index.css']}" type="text/css">
 ```
 
 The `${data.manifest['index.css']}` part tells Eleventy, "Go to `_data/manifest.json`, find the value of its `index.css`  key, and insert the value here." In the resulting, Eleventy-generated HTML, the line shows up as (this is just an example, since the hash obviously will vary):
 
-```html
+```html{bigdiv=true}
 <link rel="stylesheet" href="/css/index-a1ee6657944e0c6d4080.css" type="text/css">
 ```
 
@@ -141,7 +141,7 @@ And *you* don't have to futz with it.
 
 One more thing: if you're given to running your site through various online performance testing, you'll want to make sure your CSS's *caching headers* are set for maximum effect. You can set them pretty far ahead since, again, this process ensures any changes to the CSS will change the filename so that browsers will reload it. How you do such header-setting will depend on how your site's hosted. As of this writing, I'm using [Vercel](https://vercel.com), so I put the following in my site's `vercel.json` file (documentation about the cache-handling settings of which is available [here](https://vercel.com/docs/edge-network/caching)):
 
-{{< labeled-highlight lang="json" filename="vercel.json" >}}
+```json{filename="vercel.json" bigdiv=true}
 {
 	"build": {},
 	"github": {
@@ -186,7 +186,7 @@ One more thing: if you're given to running your site through various online perf
 		}
 	]
 }
-{{</ labeled-highlight >}}
+```
 
 The `2678400` setting means 2,678,400 seconds, which is thirty-one days --- *i.e.*, 3,600 seconds (one hour) &times; 24 &times; 31. That setting gets you good marks from just about any test and, more important, is kind to your visitors and their browsers! However, you can take it as high as you want, because cache-busting has your back.[^6]
 

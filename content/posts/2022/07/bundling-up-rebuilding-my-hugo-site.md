@@ -98,7 +98,7 @@ And, although I then gave a (weak) rejoinder that this also was "in the category
 
 So, just a few hours after I had my *original* plan working, I created a new branch, `pagebundles`, and proceeded to rebuild my site exactly that way. For example, this post you're reading now is arranged as follows:
 
-```plaintext
+```plaintext{bigdiv=true}
 .   <-- The Hugo project folder
 └─ content
     └─ posts
@@ -120,7 +120,7 @@ In other words:
 
 The key is that, now, *every* post on the site contains a file called `title.png`, which is its title graphic. As a result, as Mooring correctly suggested would occur, it was a piece of cake to code my `head.html` partial to handle this:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 	 {{/*
 	   (Earlier, I'd defined `$socImg` as the site's fallback image,
 	   such as is used by the home page and the HTML sitemap.)

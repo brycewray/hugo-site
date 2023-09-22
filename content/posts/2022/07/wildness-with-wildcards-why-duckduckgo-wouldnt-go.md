@@ -22,7 +22,7 @@ However, no such luck. The browser still reported via its console that it wouldn
 
 I then wondered whether this was happening because of the `*` wildcard character that I'd used in specifying that URL in `form-action`. As an experiment, I changed the `form-action` directive to:
 
-```bash
+```bash{bigdiv=true}
 form-action 'self' https://*.duckduckgo.com https://duckduckgo.com;
 ```
 

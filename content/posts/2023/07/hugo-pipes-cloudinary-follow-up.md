@@ -145,7 +145,7 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 **Important**: The earlier post's code was based on storing the images in a [*bundled*](https://gohugo.io/content-management/page-bundles/) project --- *i.e.*, wherein each image is stored in the same folder as the `index.md` file for the post which calls the image --- but I've [since](/posts/2023/07/big-unbundle/) reverted to the *unbundled* arrangement I'd used for most of the site's history until [last year](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/). As a result, the code below works with images which are [*global resources*](https://gohugo.io/hugo-pipes/introduction/) stored in the Hugo project's top-level `assets/` folder (specifically, `assets/images/`).
 {.box}
 
-{{< labeled-highlight lang="go-html-template" filename="render-image.html" >}}
+```go-html-template{filename="render-image.html" bigdiv=true}
 {{/*
   For some additional background on this file, see:
   https://www.brycewray.com/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/
@@ -215,9 +215,9 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable.</em></p>
 {{- end -}}
-{{</ labeled-highlight >}}
+```
 
-{{< labeled-highlight lang="go-html-template" filename="img.html" >}}
+```go-html-template{filename="img.html" bigdiv=true}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" -}}
@@ -303,9 +303,9 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable.</em></p>
 {{- end -}}
-{{</ labeled-highlight >}}
+```
 
-{{< labeled-highlight lang="go-html-template" filename="head-imgs-css.html" >}}
+```go-html-template{filename="head-imgs-css.html" bigdiv=true}
 {{- with .Params.imgs }}
 	<style media="screen">
 	{{- range . -}}
@@ -334,4 +334,4 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 	{{- end }}
 	</style>
 {{- end }}
-{{</ labeled-highlight >}}
+```

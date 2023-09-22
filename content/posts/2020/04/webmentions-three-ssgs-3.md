@@ -41,7 +41,7 @@ Fine, I wondered, but how to do this in Hugo? Yes, I already had the repo using 
 
 For a while, it looked as if the only working method would require including the token in plain sight in a `GET`-style query string: *e.g.*, something like:
 
-```
+```bash{bigdiv=true}
 https://webmention.io/api/mentions.jf2?domain=brycewray.com&token=1234567890123
 ```
 
@@ -51,7 +51,7 @@ Finally, after hours of sifting through similar issues reports from Hugo users, 
 
 [^NPMRun]: This is invoked by the `npm run start` or `npm run build` script, as appropriate for your use case, in conjunction with the necessary Hugo script.
 
-```json
+```json{bigdiv=true}
 "dev:wmFetch": "node -r dotenv/config assets/js/webmentions.js"
 ```
 

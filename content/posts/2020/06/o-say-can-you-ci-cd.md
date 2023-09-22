@@ -123,7 +123,7 @@ Yes, I know: *whew*. But it's all necessary. Quoting Mr. Pukaj once more:
 
 Store the following in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions.
 
-{{< labeled-highlight lang="yaml" filename="netlify-deploy.yml" >}}
+```yaml{filename="netlify-deploy.yml" bigdiv=true}
 name: CI-Netlify
 
 on:
@@ -174,7 +174,7 @@ jobs:
           netlify-config-path: "./netlify.toml"
           args: deploy --dir=_site --prod
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
-{{</ labeled-highlight >}}
+```
 
 **Note**: If you use this approach, you need to make sure you **don't** have your repo linked in Netlify for continuous deployment (in your site settings, that's **Build &amp; deploy** &gt; **Continuous deployment**). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.
 {.box}
@@ -205,7 +205,7 @@ Compared to GitHub's free-tier build limits (unlimited monthly minutes for a pub
 
 Your `.gitlab-ci.yml` file should be in the top level of your repo:
 
-{{< labeled-highlight lang="yaml" filename=".gitlab-ci.yml" >}}
+```yaml{filename=".gitlab-ci.yml" bigdiv=true}
 stages:
   - deploy
 
@@ -233,7 +233,7 @@ deploySite:
     - npm i -g netlify-cli
     - npm run build
     - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
-{{</ labeled-highlight >}}
+```
 
 That does everything the GitHub Action mentioned above will do, except that it does it on GitLab's servers rather than GitHub's. (As I note above, you should replace *my* `url` with yours!)
 

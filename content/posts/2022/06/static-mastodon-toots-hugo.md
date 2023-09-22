@@ -69,7 +69,7 @@ https://mastodon.social/@Gargron/108241788606585248
 
 . . . that means its ID was `108241788606585248`. So, the `curl` to `GET` that toot's JSON would be:
 
-```bash
+```bash{bigdiv=true}
 curl "https://mastodon.social/api/v1/statuses/108241788606585248"
 ```
 
@@ -77,7 +77,7 @@ curl "https://mastodon.social/api/v1/statuses/108241788606585248"
 
 <details><summary>Click/tap here to toggle open/close.</summary>
 
-```json
+```json{bigdiv=true}
 {
   "id": "108241788606585248",
   "created_at": "2022-05-04T04:30:20.096Z",
@@ -157,7 +157,7 @@ I call this Hugo shortcode `stoot.html` because it displays *static toots*, just
 
 [^styling]: The best way for you to figure out how the styling works is to use your browser's Inspector tool on the toot example herein as well as the static tweets you'll find scattered throughout the site. (You also can check the [site repo](https://github.com/brycewray/hugo-site), of course.) **Update from the future**: For a [Tailwind CSS](https://tailwindcss.com)-styled version of the code herein, see [this follow-up post](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/).
 
-{{< labeled-highlight lang="go-html-template" filename="stoot.html" >}}
+```go-html-template{filename="stoot.html" bigdiv=true}
 {{ $masIns := .Get 0 }}
 {{ $tootLink := "" }}
 {{ $card := "" }}
@@ -325,7 +325,7 @@ I call this Hugo shortcode `stoot.html` because it displays *static toots*, just
 		{{ end }}
 	{{ end }}
 {{- end -}}
-{{</ labeled-highlight >}}
+```
 
 Once this is in place in your project's location for shortcodes, invoke it from within your Markdown like this:
 

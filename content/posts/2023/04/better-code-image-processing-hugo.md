@@ -70,7 +70,7 @@ Here are the two distinct code blocks involved in this rescue mission.
 
 First, the partial for the `head` (called from within my main `head.html` partial):
 
-{{< labeled-highlight lang="go-html-template" filename="head-imgs-css.html" >}}
+```go-html-template{filename="head-imgs-css.html" bigdiv=true}
 {{- with .Resources.ByType "image" }}
 	<style media="screen">
 	{{- range . -}}
@@ -95,13 +95,13 @@ First, the partial for the `head` (called from within my main `head.html` partia
 	{{- end }}
 	</style>
 {{ end }}
-{{</ labeled-highlight >}}
+```
 
 Then, the revised image-processing shortcode[^defaults] that now handles both GIPs (the default here) and LQIPs, through the use of a `$holder` variable which specifies the `div`'s background type:
 
 [^defaults]: Thanks to [Sujal Gurung](https://github.com/dinesh-58) for the excellent suggestion that I use Hugo's [`default` function](https://gohugo.io/functions/default/) for cleaner code than what I originally had here! Somehow, I'd missed reading about that one all this time.
 
-{{< labeled-highlight lang="go-html-template" filename="imgh.html" >}}
+```go-html-template{filename="imgh.html" bigdiv=true}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
@@ -136,7 +136,7 @@ Then, the revised image-processing shortcode[^defaults] that now handles both GI
 		<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" height="{{ $src.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
 	</picture>
 </div>
-{{</ labeled-highlight >}}
+```
 
 **Note**: For more information on available [`hint`s](https://gohugo.io/content-management/image-processing/#hint) and [`filter`s](https://gohugo.io/functions/images/), refer to the appropriate Hugo documentation.
 {.box}
@@ -179,7 +179,7 @@ For example, here's how I'd use `imgh.html` to have an LQIP for a file called `m
 
 [^commentsGo]: {{% mdcode-fn %}}
 
-```md
+```md{bigdiv=true}
 {{</* imgh src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="LQIP" */>}}
 ```
 

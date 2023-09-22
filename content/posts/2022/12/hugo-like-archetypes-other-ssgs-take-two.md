@@ -52,7 +52,7 @@ The point, however, is that doing it this way, as opposed to using the simpler s
 
 Here's the top-level JavaScript file, `newfile.js`, that came from all this noodgering on my part; the comments provide annotation and give credit to those sources from which I gratefully grabbed and/or adapted helpful code:
 
-{{< labeled-highlight lang="js" filename="newfile.js" >}}
+```js{filename="newfile.js" bigdiv=true}
 const fs = require("fs")
 const { mkdir } = require("fs/promises")
 const path = require("path")
@@ -212,4 +212,4 @@ const createFolder = async (path) => {
 let createPath = __dirname + '/src/posts/' + yearSlice + '/' + monthSlice
 
 createFolder(createPath)
-{{</ labeled-highlight >}}
+```

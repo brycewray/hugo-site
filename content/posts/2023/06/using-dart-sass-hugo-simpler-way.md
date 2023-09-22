@@ -71,7 +71,7 @@ I call it `install.sh`; so, from a terminal app, I type:
 
 . . . and let it go to town.
 
-{{< labeled-highlight lang="bash" filename="install.sh" >}}
+```bash{filename="install.sh" bigdiv=true}
 #!/bin/sh
 # --- for use with macOS and Linux/WSL
 
@@ -123,7 +123,7 @@ else
 fi
 
 hugo env
-{{< /labeled-highlight >}}
+```
 
 Here's how this works:
 

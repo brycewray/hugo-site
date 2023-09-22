@@ -82,7 +82,7 @@ For example, here's `img.html` in use with my usual go-to image for this kind of
 
 [^commentsGo]: {{% mdcode-fn %}}
 
-```md
+```md{bigdiv=true}
 {{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" */>}}
 ```
 
@@ -96,7 +96,7 @@ Now, without further ado, here's the relevant code.[^defaults] [^styling] Of cou
 
 [^styling]: If you need to figure out the CSS classes involved (other than the auto-generated one that's specific to each image), feel free to check the [site repo](https://github.com/brycewray/hugo-site).
 
-{{< labeled-highlight lang="go-html-template" filename="render-image.html" >}}
+```go-html-template{filename="render-image.html" bigdiv=true}
 {{/*
   For some additional background on this file, see:
   https://www.brycewray.com/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/
@@ -169,9 +169,9 @@ Now, without further ado, here's the relevant code.[^defaults] [^styling] Of cou
 	<p class="ctr legal"><em>Image unavailable, local or remote.</em></p>
 {{- end -}}
 {{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
-{{</ labeled-highlight >}}
+```
 
-{{< labeled-highlight lang="go-html-template" filename="img.html" >}}
+```go-html-template{filename="img.html" bigdiv=true}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" -}}
@@ -260,9 +260,9 @@ Now, without further ado, here's the relevant code.[^defaults] [^styling] Of cou
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable, local or remote.</em></p>
 {{- end }}
-{{</ labeled-highlight >}}
+```
 
-{{< labeled-highlight lang="go-html-template" filename="head-imgs-css.html" >}}
+```go-html-template{filename="head-imgs-css.html" bigdiv=true}
 {{- $myCloud := "brycewray-com" -}}
 {{/* ^^^ Fill in your own Cloudinary cloud name! */}}
 {{- $cloudiBase := print "https://res.cloudinary.com/" $myCloud "/image/upload/" -}}
@@ -327,4 +327,4 @@ Now, without further ado, here's the relevant code.[^defaults] [^styling] Of cou
 	{{- end }}
 	</style>
 {{- end }}
-{{</ labeled-highlight >}}
+```

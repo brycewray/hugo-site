@@ -25,7 +25,7 @@ From here on, I'll use the term *The Final Design* to refer to the appearance an
 
 Where an option makes it possible, we'll make use of Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/), for [fingerprinting and sub-resource integrity](https://gohugo.io/hugo-pipes/fingerprint/) (SRI), as well as minification where applicable. The fingerprinting results in a file with a long, hashed name, such as:
 
-```bash
+```bash{bigdiv=true}
 index.b670b5804d52b40049bb0f2705118be41cc4fa27322079ee9f328ad85591d529.css
 ```
 
@@ -54,7 +54,7 @@ In other words, you might even call it "plain ol' CSS" (except that [it's not ne
 
 Here, we use Hugo Pipes to minify the CSS, fingerprint it, and apply SRI. This presumes the CSS is one file, `assets/css/index.css`. It will end up in your Hugo site as a CSS file within `css/`.
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $css = resources.Get "css/index.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen" integrity="{{ $css.Data.Integrity }}">
 ```
@@ -87,7 +87,7 @@ If you use the `sass` package, it's handling the SCSS-to-CSS compilation apart f
 
 [^ignore]: In that case, you may want to add `assets/css` to your .gitignore file, since it'll change every time you edit your SCSS. Otherwise, each SCSS change means committing *two* files rather than just the one SCSS file you actually edited.
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $css = resources.Get "css/index.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen" integrity="{{ $css.Data.Integrity }}">
 ```
@@ -96,7 +96,7 @@ If you use the `sass` package, it's handling the SCSS-to-CSS compilation apart f
 
 Here, we use Hugo Pipes to convert the SCSS into CSS (already `compressed` --- *i.e.*, minified --- by the Dart Sass transpiler in coordination with Hugo Pipes), fingerprint it, and apply SRI. This presumes the SCSS is one file, `assets/scss/index.scss`. It will end up in your Hugo site as a CSS file within `css/`.
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" "targetPath" "css/index.css" -}}
 {{- $css := resources.Get "scss/index.scss" | toCSS $cssOptions | fingerprint -}}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen" integrity="{{ $css.Data.Integrity }}">
@@ -151,7 +151,7 @@ h1 {
 
 . . . or, in Tailwind, you can do all this in just one line, albeit a long one, of your HTML:
 
-```html
+```html{bigdiv=true}
 <!-- === html === -->
 
 <h1 class="mt-4 mb-1 md:mt-5 md:mb-2 lg:mt-6 lg:mb-3 xl:mt-7 xl:mb-4 2xl:mt-8 2xl:mb-5">This is my heading</h1>

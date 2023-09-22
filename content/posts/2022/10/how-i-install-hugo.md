@@ -110,7 +110,7 @@ hugo version
 
 The result **should** look something like this:
 
-```bash
+```bash{bigdiv=true}
 hugo v0.104.3-58b824581360148f2d91f5cc83f69bd22c1aa331+extended linux/amd64 BuildDate=2022-10-04T14:25:23Z VendorInfo=gohugoio
 ```
 
@@ -195,7 +195,7 @@ hugo version
 
 This time, you'll get a minor macOS warning but, this time, just click **Open** to bypass it --- and this will tell macOS to stop such warnings in the future about *this* particular Hugo binary file. Now, in the terminal app, you'll see something like this, which confirms not only the version info for the Hugo binary you installed but also that macOS has "blessed" it:
 
-```bash
+```bash{bigdiv=true}
 hugo v0.104.3-58b824581360148f2d91f5cc83f69bd22c1aa331+extended darwin/amd64 BuildDate=2022-10-04T14:25:23Z VendorInfo=gohugoio
 ```
 
@@ -263,7 +263,7 @@ hugo version
 
 The result **should** look something like this:
 
-```bash
+```bash{bigdiv=true}
 hugo v0.104.3-58b824581360148f2d91f5cc83f69bd22c1aa331+extended windows/amd64 BuildDate=2022-10-04T14:25:23Z VendorInfo=gohugoio
 ```
 

@@ -37,7 +37,7 @@ However, starting with Hugo 0.90.x, Hugo Pipes can go right out to Cloudinary, p
 
 Rather than bore you with the entire shortcode, given that I just got through doing that [a few posts ago](/posts/2021/11/go-big-go-home-sequel/), I’ll simply show you the parts that changed.[^simpler]
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{/* These two variables are new */}}
 {{- $LQIPdata := printf "%s%s%s" $cloudiBase $LQIPholder $src -}}
 {{- $LQIP_get := resources.GetRemote $LQIPdata -}}

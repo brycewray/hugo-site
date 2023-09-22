@@ -55,18 +55,18 @@ Thus, I added this to my `head.html` partial:
 
 The first of those, `head-criticalcss.html`, looks like this:
 
-{{< labeled-highlight lang="go-html-template" filename="head-criticalcss.html" >}}
+```go-html-template{filename="head-criticalcss.html" bigdiv=true}
 {{- $css := "" -}}
 {{- $optionsCSSCritical := (dict "outputStyle" "compressed" "transpiler" "dartsass") -}}
 {{- $css = resources.Get "scss/critical.scss" | resources.ToCSS $optionsCSSCritical -}}
 {{- with $css }}
 	<style>{{ .Content | safeCSS }}</style>
 {{- end }}
-{{</ labeled-highlight >}}
+```
 
 And, as for `head-css.html`, it puts **all** those earlier conditionals in one file, selecting the correct styling files for Hugo to use on a page:
 
-{{< labeled-highlight lang="go-html-template" filename="head-css.html" >}}
+```go-html-template{filename="head-css.html" bigdiv=true}
 {{- $css := "" -}}
 {{- $cssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" -}}
 {{- $condition := "" -}}
@@ -135,4 +135,4 @@ And, as for `head-css.html`, it puts **all** those earlier conditionals in one f
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
 	{{ end -}}
 {{- end -}}
-{{</ labeled-highlight >}}
+```

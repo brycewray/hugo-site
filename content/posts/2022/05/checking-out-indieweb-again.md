@@ -27,7 +27,7 @@ const fetch = require('node-fetch');
 
 That's a no-no now, so it had to have [a fix I found](https://bobbyhadz.com/blog/javascript-error-err-require-esm-of-es-module-node-fetch):
 
-```js
+```js{bigdiv=true}
 const fetch = (...args) =>
 	import('node-fetch').then(({ default: fetch }) => fetch(...args));
 ```

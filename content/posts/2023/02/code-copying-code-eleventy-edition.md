@@ -15,7 +15,7 @@ It's convenient to borrow code from posts on a website which has enabled "copy-c
 
 For each, a code block is wrapped inside a `pre`/`code` construct, **but** the [Chroma](https://github.com/alecthomas/chroma) tool used by Hugo **also** surrounds that construct with a `div`. As a result, you can assign *relative* [positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position) to that `div` and, then, the "copy-code" button's *absolute* positioning keeps it in place within the `div`, even when you perform horizontal scrolling on a code block with extra-wide lines; *e.g.*:
 
-```html
+```html{bigdiv=true}
 <p class="fake-class-name another-class-name">This is a purposefully long line of HTML, allowing you to see what happens with a code block that requires horizontal scrolling.</p>
 <p class="YA-class-name">This is a shorter line.</p>
 ```
@@ -26,7 +26,7 @@ I have [requested](https://github.com/11ty/eleventy-plugin-syntaxhighlight/issue
 
 In every template you use to create pages with code blocks, add something like this, which is in [Nunjucks](https://mozilla.github.io/nunjucks/) (one of [numerous templating languages](https://www.11ty.dev/docs/languages/) Eleventy allows):
 
-```twig
+```twig{bigdiv=true}
 {# START, divs around Prism `pre``code` stuff #}
 {% set Content = content %}
 {% set withoutDivStart = '<pre class="language-' %}

@@ -20,7 +20,7 @@ Allow me to explain what I’ve had to do over the last few years to switch back
 
 Here is a greatly simplified depiction of my site’s typical content structure with only this month’s posts (as of this post’s initial appearance), first in the Eleventy repo:
 
-```plaintext
+```plaintext{bigdiv=true}
 .
 └── src
 		└── posts
@@ -36,7 +36,7 @@ this post ->    └── simplify-simplify-again.md
 
 .&nbsp;.&nbsp;. and, then, in the Hugo repo:
 
-```plaintext
+```plaintext{bigdiv=true}
 .
 └── content
 		└── posts

@@ -53,7 +53,7 @@ Here's one such weird thing I encountered, just so you can get the picture. In m
 
 [^noKruft]: I've edited it slightly for easier reading, especially to remove things I'd commented out or which actually weren't of use (*e.g.*, `purgecss`-related statements, which Tailwind JIT rendered pointless).
 
-{{< labeled-highlight lang="css" filename="index.css" >}}
+```css{filename="index.css"}
 @import 'reset.css';
 @import 'prismjs.css';
 @import 'tailwindcss/base';
@@ -66,7 +66,7 @@ Here's one such weird thing I encountered, just so you can get the picture. In m
 @import 'lite-yt-embed.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-{{</ labeled-highlight >}}
+```
 
 But that approach, or anything remotely like it, just wouldn't fly in the workaround-equipped Hugo repo. Essentially, either (a.) Hugo couldn't get past the Tailwind-related part of the `package.json` scripts or (b.) Tailwind would ignore anything after the `@import 'tailwindcss/base';` statement. Either way, I was hosed.
 
@@ -112,7 +112,7 @@ When I (finally) figured out this part, I moved the vast majority of my bespoke 
 
 In pre-JIT times, the project in question used [Hugo Pipes](https://gohugo.io/hugo-pipes/) to process the resulting CSS for [fingerprinting](https://gohugo.io/hugo-pipes/fingerprint/) and [compression](https://gohugo.io/hugo-pipes/minification/) with the following statements in the `head.html` partial:
 
-```html
+```html{bigdiv=true}
 <!-- CSS from PostCSS -->
 {{ $css := resources.Get "css/index.css" }}
 {{ $css := $css | resources.PostCSS (dict "outputStyle" "compressed") | fingerprint }}
@@ -120,7 +120,7 @@ In pre-JIT times, the project in question used [Hugo Pipes](https://gohugo.io/hu
 
 That had worked just fine when the `package.json` scripting looked like this:
 
-```json
+```json{bigdiv=true}
 "clean": "rm -rf public",
 "start": "npm-run-all clean --parallel dev:*",
 "dev:hugo": "hugo server",
@@ -136,7 +136,7 @@ Here's the `package.json` scripting that finally did work.[^rimraf]
 
 [^rimraf]: I substituted the [`rimraf` package](https://github.com/isaacs/rimraf) for `rm -rf` to provide greater cross-platform compatibility.
 
-```json
+```json{bigdiv=true}
 "clean": "rimraf public && rimraf ./assets/css/index/css",
 "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean prelim:twcss --parallel dev:*",
 "build": "NODE_ENV=production npm-run-all clean prelim:twcss prod:*",
@@ -156,7 +156,7 @@ As for what's happening therein:
 
 With Hugo Pipes thus always given an `index.css` file to process, we can easily handle that part in `head.html`:
 
-```html
+```html{bigdiv=true}
 {{ $css := resources.Get "css/index.css" | resources.PostCSS | fingerprint "md5" }}
 <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">

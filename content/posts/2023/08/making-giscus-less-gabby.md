@@ -71,7 +71,7 @@ Once I finally had it all working properly yesterday afternoon, I restored the c
 
 So here's the code, the [operational version of which](https://github.com/brycewray/hugo-site/blob/main/layouts/partials/comments-giscus.html) exists as a partial template for this [Hugo](https://gohugo.io)-based site:
 
-{{< labeled-highlight lang="go-html-template" filename="comments-giscus.html" >}}
+```go-html-template{filename="comments-giscus.html" bigdiv=true}
 {{/*
 	=== `data-theme` choices ===
 	For now, these are just "light" and "dark";
@@ -156,4 +156,4 @@ So here's the code, the [operational version of which](https://github.com/brycew
 	</div>
 </details>
 <noscript><p class="ctr legal">Commenting feature requires activation of JavaScript.</p></noscript>
-{{< /labeled-highlight >}}
+```

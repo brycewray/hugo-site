@@ -79,13 +79,13 @@ Let's say you use a `posts` section to "own" your `index-excerpts.xml` and `inde
 
 **If you use a [Jamstack](https://jamstack.org)-savvy host** such as [Cloudflare Pages](https://pages.cloudflare.com), [Netlify](https://netlify.com), or [Vercel](https://vercel.com), you can add file-moving commands to your overall build command. Let's say your usual Hugo build command is `hugo`; the following would build the site and move the files:
 
-```plaintext
+```plaintext{bigdiv=true}
 hugo && mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json
 ```
 
 **If you use [CI/CD](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)** to build your Hugo site, you can add a step **after** the `hugo` site-building command that will move those feed files to where they need to be. For a [GitHub Action](https://github.com/features/actions/), that could be:
 
-```yml
+```yml{bigdiv=true}
       - name: Move feeds
         run: |
           mv public/posts/index.xml public/index-excerpts.xml
@@ -94,7 +94,7 @@ hugo && mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/i
 
 . . . while, if using a [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) [pipeline](https://docs.gitlab.com/ee/ci/pipelines/), you could do this within the `script` section:
 
-```yml
+```yml{bigdiv=true}
     - mv public/posts/index.xml public/index-excerpts.xml
     - mv public/posts/index.json public/index-excerpts.json
 ```

@@ -22,7 +22,7 @@ We’ll be bundling two JavaScript files:
 
 The file from which we’ll be bundling is `/assets/js/index.js` (Hugo Pipes processes only files in the Hugo project’s or [theme](https://www.mikedane.com/static-site-generators/hugo/installing-using-themes/)’s `assets` directory):
 
-{{< labeled-highlight lang="js" filename="index.js" >}}
+```js{filename="index.js"}
 /*
 	First, we import the two JS files that
 	we're bundling. The `vanilla-lazyload`
@@ -41,7 +41,7 @@ import './assets/js/instantpage_5-1-0.js'
 var lazyLoadInstance = new LazyLoad({
 	threshold: 150,
 })
-{{</ labeled-highlight >}}
+```
 
 Then, in the [`baseof.html` template](https://gohugo.io/templates/base/#define-the-base-template) on which Hugo will build the site, we’ll instruct `js.Build` to:
 
@@ -52,7 +52,7 @@ Then, in the [`baseof.html` template](https://gohugo.io/templates/base/#define-t
 
 Here’s the result:
 
-{{< labeled-highlight lang="go-html-template" filename="baseof.html" >}}
+```go-html-template{filename="baseof.html" bigdiv=true}
 {{- $options := dict "targetPath" "js/bundle.js" -}}
 {{- $jsBundle := resources.Get "js/index.js" | js.Build $options | resources.Minify | fingerprint -}}
 
@@ -68,7 +68,7 @@ Here’s the result:
 		<script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
 	</body>
 </html>
-{{</ labeled-highlight >}}
+```
 
 ## Other uses?
 

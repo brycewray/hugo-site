@@ -23,7 +23,7 @@ Fortunately, the answer turned out to be: "not so difficult" --- at least, that 
 
 First of all, let's cover the `package.json` scripting (I'll save space by not including the `testbuild` scripts I also use for my own nerdy purposes):
 
-```json
+```json{bigdiv=true}
 	"scripts": {
 		"clean": "rimraf _site src/_includes/css",
 		"start": "NODE_ENV=development npm-run-all clean --parallel dev:*",

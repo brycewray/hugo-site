@@ -35,7 +35,7 @@ The two are pretty much equal in the following respects&nbsp;.&nbsp;.&nbsp;.
 
 You write your main content in [Markdown](https://daringfireball.net/projects/markdown) (plain text with special characters added to provide formatting and other niceties, as I explained in [my own little Markdown intro](/posts/2019/03/mark-it-down/) early last year), and each SSG uses templates to convert it into web pages. Each piece of content comes with *front matter* that looks something like this (the following has some pieces for Hugo and some for Eleventy, since I like to repurpose my stuff from time to time):
 
-```md
+```md{bigdiv=true}
 ---
 #layout: layouts/posts/singlepostherofit.njk
 tags:

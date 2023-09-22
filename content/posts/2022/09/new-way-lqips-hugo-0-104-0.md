@@ -44,7 +44,7 @@ Those are the colors, in hex format, that `.Colors` picked out as the main ones 
 
 So, with Hugo 0.104.0 and up, you can try something like the following, in which `$src` represents the real image file:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $LQIP_colors := $src.Colors -}}
 {{- if (lt ($LQIP_colors | len) 2) -}}
 	{{- $LQIP_colors = $LQIP_colors | append "#000000" -}}

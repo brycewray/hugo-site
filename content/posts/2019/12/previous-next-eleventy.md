@@ -13,7 +13,7 @@ In reading not only the Eleventy [docs](https://11ty.dev/docs) but also numerous
 
 You see, the most workable method I'd found so far from among the [starter projects](https://11ty.dev/docs/starter) and [others](https://11ty.dev/docs/sites) listed on the Eleventy site was quite manual: give each post an index number in its front matter (`idx: 41`, for example), and then find it that way. For example **(WARNING: if you're looking through this in a hurry, THIS *ISN'T* THE FINAL ANSWER!)**:
 
-```html
+```html{bigdiv=true}
 {% if collections.post[idx] %}
 	<p class="ctr">
 		<strong>Next</strong>:
@@ -34,7 +34,7 @@ I suspected there was a solution in the Eleventy API that was so ridiculously si
 
 Early yesterday morning, after having asked about an [earlier](https://github.com/11ty/eleventy/issues/529#issuecomment-532393625) proposed answer to the question, I saw a [reply](https://github.com/11ty/eleventy/issues/529#issuecomment-568257426) that quickly proved to be *The* Answer **(THIS one is what you're seeking, folks)** from [Pascal Widdershoven](https://pascalw.me) in the form of a wonderfully simple and elegant addition to one's `.eleventy.js` file:
 
-```js
+```js{bigdiv=true}
 eleventyConfig.addCollection("posts", function(collection) {
 	const coll = collection.getFilteredByTag("posts");
 
@@ -54,7 +54,7 @@ Ah. A thing of beauty.
 
 Once you've added that to your site's `.eleventy.js` file, all you have to do is put something like the following in the appropriate place in your Eleventy template for single posts (this is in [Nunjucks](https://www.11ty.dev/docs/languages/nunjucks/), so please adjust according to the [template language](https://www.11ty.dev/docs/languages/) of your choice):
 
-```html
+```html{bigdiv=true}
 	{% if nextPost.url %}
 		<p class="ctr">
 			<strong>Next</strong>:

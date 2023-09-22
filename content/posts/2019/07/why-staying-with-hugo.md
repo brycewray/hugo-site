@@ -223,7 +223,7 @@ So that's JSX --- and MDX is simply a form of Markdown that can accept JSX withi
 
 I had no immediate need for MDX, but I figured down the line I would want to use it, perhaps even converting some or all of my existing .md files to .mdx files, and I didn't want to make the leap to Gatsby unless I was sure my site would handle MDX as well as it could Markdown. So, last Friday night, I added `gatsby-plugin-mdx` to the setup, fired up `gatsby-develop` for yet another time, and --- it crashed big-time. I tried a few changes here and there that I'd read would help with it, and every time it crashed. Moreover, the crashes always came with the same message:
 
-```js
+```js{bigdiv=true}
 UNHANDLED REJECTION unknown: Identifier '_frontmatter' has already been declared
 ```
 

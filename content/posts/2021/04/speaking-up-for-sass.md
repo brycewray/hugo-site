@@ -132,7 +132,7 @@ body {
 
 Another capability built into Sass (and available in PostCSS through [a plugin if you install it in just the right order](https://github.com/postcss/postcss-mixins)) is the ability to create and use *mixins*. They're reusable statements you can drop elsewhere (through `@include` statements) in your Sass files, saving you typing time and keeping your Sass code nice and [DRY](https://dzone.com/articles/is-your-code-dry-or-wet). You could think of them as super-charged variables.
 
-```scss
+```scss{bigdiv=true}
 @mixin garishGradient {
 	background: rgb(47,250,163);
 	background: linear-gradient(90deg, rgba(47,250,163,1) 0%, rgba(112,103,255,1) 25%, rgba(246,255,26,1) 50%, rgba(242,145,150,1) 75%, rgba(239,52,255,1) 100%);

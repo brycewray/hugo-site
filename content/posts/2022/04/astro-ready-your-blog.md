@@ -23,7 +23,7 @@ Having just moved this site to Astro yesterday (about which I'll say more in a s
 
 Every SSG uses templating to render web pages. Astro templates are `.astro` files, which are an interesting mixture of (a.) "code fences" confined within front matter and (b.) HTML-mixed-with-JavaScript plus [JSX](https://jsx.github.io/), which combines JavaScript with some elements of [XML](https://www.w3.org/XML/). If you're comfortable with JavaScript, you'll find it fairly easy to make `.astro` files, but note that they constitute the *only* choice for templating in Astro. Here's a small example:
 
-```js
+```js{bigdiv=true}
 ---
 import Head from '@components/Head.astro';
 import Header from '@components/Header.astro';

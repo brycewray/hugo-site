@@ -28,7 +28,7 @@ So, yes, I was juggling a lot of different GitHub Actions workflow files as my n
 
 If you maintain your website through use of an SSG, you're probably already familiar with using various conditionals to make your chosen SSG do what you want. For example, in Hugo, you might have something like this:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $css := "" -}}
 {{- $scssOptions := dict "outputStyle" "compressed" "transpiler" "dartsass" "targetPath" "index.min.css" -}}
 {{- if eq .Site.Params.Styling "SCSS" -}}
@@ -46,7 +46,7 @@ Below is a simplified, yet annotated, version of my conditionals-equipped GitHub
 
 [^env]: That's short for *environment*, making these *environment variables*.
 
-```yaml
+```yaml{bigdiv=true}
 name: Deploy to web
 
 on:

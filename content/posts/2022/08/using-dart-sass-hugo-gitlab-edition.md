@@ -97,7 +97,7 @@ If you wish, you now can close the `.env` file **and** log out of your GitLab ac
 
 For the `MY_WEBSITE` variable below, fill in your site's URL, such as `https://www.mysite.com`.
 
-{{< labeled-highlight lang="yaml" filename="gitlab-ci.yml" >}}
+```yaml{filename="gitlab-ci.yml" bigdiv=true}
 # for Netlify
 
 stages:
@@ -128,7 +128,7 @@ deploySite:
     - hugo --gc --minify
     - npm i -g netlify-cli
     - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
-{{</ labeled-highlight >}}
+```
 
 </details>
 
@@ -202,7 +202,7 @@ If you wish, you now can close the `.env` file **and** log out of your GitLab ac
 
 For the `MY_WEBSITE` variable below, fill in your site's URL, such as `https://www.mysite.com`.
 
-{{< labeled-highlight lang="yaml" filename="gitlab-ci.yml" >}}
+```yaml{filename="gitlab-ci.yml" bigdiv=true}
 # for Vercel
 
 stages:
@@ -236,7 +236,7 @@ deploySite:
     - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
     - vercel build --prod --token=$VERCEL_TOKEN
     - vercel deploy --prod --token=$VERCEL_TOKEN
-{{</ labeled-highlight >}}
+```
 
 </details>
 
@@ -308,7 +308,7 @@ If you wish, you now can close the `.env` file **and** log out of your GitLab ac
 
 For the `MY_WEBSITE` variable below, fill in your site's URL, such as `https://www.mysite.com`. For the `PROJECT_NAME` variable, fill in your site's Cloudflare Pages project name (which often is the name of its repository, but not necessarily, so check your setup in CFP to make sure)
 
-{{< labeled-highlight lang="yaml" filename="gitlab-ci.yml" >}}
+```yaml{filename="gitlab-ci.yml" bigdiv=true}
 # for Cloudflare Pages
 
 stages:
@@ -340,7 +340,7 @@ deploySite:
     - hugo --gc --minify
     - npm install -g wrangler --unsafe-perm=true
     - wrangler pages publish ./public --project-name=$PROJECT_NAME --branch "main"
-{{</ labeled-highlight >}}
+```
 
 </details>
 <br />

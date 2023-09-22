@@ -41,12 +41,12 @@ pagefind --site "public" --serve
 
 For my site, I've created a shell script for use with [Hugo](https://gohugo.io) and Pagefind:
 
-{{< labeled-highlight lang="bash" filename="buildpf.sh" >}}
+```bash{filename="buildpf.sh" bigdiv=true}
 #!/bin/sh
 rm -rf public
 hugo --gc --minify
 npm_config_yes=true npx pagefind --site "public" --serve
-{{</ labeled-highlight >}}
+```
 
 This way, all I have to do is enter `./buildpf.sh` in my chosen terminal app and, within a few seconds, Pagefind is showing me a local dev view of my site, *with* search working, at `http://localhost:1414`.
 
@@ -54,7 +54,7 @@ Once you've satisfied yourself that all is well in dev mode and you're ready to 
 
 Since I'm [using a GitHub Action](/posts/2022/05/using-dart-sass-hugo-github-actions-edition/) (GHA) to put my site on [Cloudflare Pages](https://pages.cloudflare.com), all I had to do was add one additional step to that GHA, between the "Build site with Hugo" step and the "Publish to CFP" step:
 
-```yaml
+```yaml{bigdiv=true}
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --site "public"
 ```
@@ -63,7 +63,7 @@ Since I'm [using a GitHub Action](/posts/2022/05/using-dart-sass-hugo-github-act
 
 If you're not using a GHA or other, similar scripting approach, you still should find it easy to add Pagefind to your site-building process. In your chosen host's GUI, just use `&&` to tack a Pagefind command onto your site's usual build command. Here are some examples:
 
-```bash
+```bash{bigdiv=true}
 # With Astro
 npm run build && npm_config_yes=true npx pagefind --site "dist"
 
@@ -96,12 +96,12 @@ Of course, you should leave the *production* instructions as previously noted; t
 
 Here's a shell script version:
 
-{{< labeled-highlight lang="bash" filename="startpf.sh" >}}
+```bash{filename="startpf.sh" bigdiv=true}
 #!/bin/sh
 hugo
 npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind
 hugo server
-{{</ labeled-highlight >}}
+```
 
 <br />
 

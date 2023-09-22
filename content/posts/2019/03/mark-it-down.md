@@ -45,7 +45,7 @@ This got some serious minds to doing some serious thinking. They couldn't simply
 
 Finding a solution to this question became more urgent in the early 2000s as, increasingly, documentation for software apps moved from its traditional print format to online. One obvious answer had been in place since around 1990: HTML. After all, the source code of every single web page is absolutely plain text. It just has a lot of stuff that makes it not *look* plain:
 
-```html
+```html{bigdiv=true}
 <h1>This is a top-level heading (H1).</h1>
 
 <p>This would give you a paragraph with <strong>bold text here</strong> and <em>italicized text here</em>.</p>
@@ -90,7 +90,7 @@ However, his lasting fame may well lie in his creation of Markdown in 2004 as a 
 
 For example, here's Markdown that would create the same result as that HTML I showed you earlier:
 
-```markdown
+```markdown{bigdiv=true}
 # This is a top-level heading (H1).
 
 This would give you a paragraph with **bold text here** and *italicized text here*.

@@ -57,7 +57,7 @@ Anyway, here's the Cloudflare Worker[^thanksWorker] I tested successfully during
 
 [^thanksWorker]: This borrows heavily from a somewhat related [Stack Overflow answer](https://stackoverflow.com/a/56069077/) by [Simon_Weaver](https://stackoverflow.com/users/16940/simon-weaver), whose contribution I appreciate tremendously. It also is slightly derivative of some of the [examples](https://developers.cloudflare.com/workers/examples) in the [Cloudflare Workers developer docs](https://developers.cloudflare.com/workers/) --- although I wish they had some simpler ones for folks like me.
 
-{{< labeled-highlight lang="js" filename="cache-and-headers.js" >}}
+```js{filename="cache-and-headers.js" bigdiv=true}
 addEventListener('fetch', event => {
 	event.respondWith(handleRequest(event.request))
 })
@@ -89,7 +89,7 @@ async function handleRequest(request) {
 		headers: newHeaders
 	})
 }
-{{</ labeled-highlight >}}
+```
 
 Once you have a Worker in place on your site, you then [specify the *routes*](https://developers.cloudflare.com/workers/platform/routes) on which it'll run. Within a few moments, it'll take effect and the Worker will be doing its thing.
 

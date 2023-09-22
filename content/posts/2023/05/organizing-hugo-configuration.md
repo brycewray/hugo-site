@@ -17,7 +17,7 @@ As a result, my [Hugo](https://gohugo.io) project now has a much better-organize
 
 One welcome new wrinkle that came with [last December's release of Hugo 0.108.0](https://github.com/gohugoio/hugo/releases/tag/v0.108.0) was the ability to add an image in Markdown **without** having the image wrapped within a paragraph in the resulting HTML. This required making the following setting[^default] in one's [Hugo configuration](https://gohugo.io/getting-started/configuration/):
 
-```bash
+```bash{bigdiv=true}
 markup.goldmark.parser.wrapStandAloneImageWithinParagraph = false
 ```
 

@@ -50,7 +50,7 @@ In some cases, that may not matter; but it doesn't hurt and it certainly can hel
 
 This one is based on Pedersen's, from that demo he did for testing on Netlify, except that I'm making the final command `hugo --gc --minify` rather than just the original's `hugo` (he was testing only one small page, so it made no difference):
 
-```bash
+```bash{bigdiv=true}
 #!/bin/bash
 
 echo "Install Dart Sass..."
@@ -84,7 +84,7 @@ The other two, below, are obviously **highly** derivative of this one.
 
 ### For Vercel
 
-```bash
+```bash{bigdiv=true}
 #!/bin/bash
 
 # based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
@@ -116,7 +116,7 @@ hugo --gc --minify
 
 ### For Cloudflare Pages
 
-```bash
+```bash{bigdiv=true}
 #!/bin/bash
 
 # based on https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7
@@ -156,7 +156,7 @@ That's likely to produce a very long list, separated by `:` characters, so you'l
 
 For example, here's what I got back from trying `echo "PATH is $PATH"` in an early version of the Cloudflare Pages script (and I have separated them onto separate lines, **without** the `:` separator, for your reading convenience, but that's not how they come back when you do it):
 
-```bash
+```bash{bigdiv=true}
 Path is
 /opt/buildhome/.wasmer/bin
 /opt/buildhome/.gimme/versions/go1.14.4.linux.amd64/bin

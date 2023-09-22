@@ -137,7 +137,8 @@ But if you try this with the CSS nesting spec, you get:
 
 ```css
 /*
-	This is NOT the desired result, but is what you get from CSS nesting.
+	This is NOT the desired result,
+	but is what you get from CSS nesting.
 */
 
 .homepage: {
@@ -176,14 +177,14 @@ Why `cssfrom` as that subfolder name in `themes/newcss/assets/`, by the way? Bec
 
 [^gitIgnore]: I include `themes/newcss/assets/css` in `.gitIgnore`, since this folder and its contents get built every time I run Hugo.
 
-```json
+```json{bigdiv=true}
 "postcsscli": "postcss themes/newcss/assets/cssfrom --dir themes/newcss/assets/css",
 "dev:postcss": "npm run postcsscli -- --watch",
 ```
 
 . . . whereupon Hugo Pipes would be able to snarf it up for the critical CSS to go in the `head`:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- $css := "" -}}
 {{- $css = (resources.Match "css/0*.css") | resources.Concat "critical.css" -}}
 {{- with $css }}
@@ -193,7 +194,7 @@ Why `cssfrom` as that subfolder name in `themes/newcss/assets/`, by the way? Bec
 
 . . . as well as for the ["sorta scoped" styling](/posts/2023/01/sorta-scoped-styling-hugo-take-two/) that Hugo includes conditionally throughout the site:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- range $cssTypes -}}
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}

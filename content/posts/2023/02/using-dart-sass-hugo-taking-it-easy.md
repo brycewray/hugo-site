@@ -55,7 +55,7 @@ sass --no-source-map assets/scss:assets/css
 
 . . . while the relevant part of the `head-css.html` partial looks like this:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{- range $cssTypes -}}
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
@@ -74,7 +74,7 @@ sass --no-source-map assets/scss:assets/css
 
 Finally, here are the scripts in the project's `package.json` file[^pkgs]:
 
-```json
+```json{bigdiv=true}
 "clean": "rimraf public",
 "pagefind": "pagefind --source public",
 "devsass": "sass --no-source-map assets/scss:assets/css",

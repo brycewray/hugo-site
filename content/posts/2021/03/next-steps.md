@@ -154,7 +154,7 @@ As I said earlier, part of the work I'm doing for this learning experience invol
 
 Fortunately, FontAwesome has an "[official React component](https://fontawesome.com/docs/web/use-with/react/)," which makes that a breeze:
 
-```jsx
+```jsx{bigdiv=true}
 import nav from '@scss/Nav.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons'

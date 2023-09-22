@@ -25,13 +25,13 @@ That code generally looked something like this[^params] when used with the [Nunj
 
 But, as I additionally noted at the time, it could be reduced to just one line in the [Hugo](https://gohugo.io) SSG:
 
-```go-html-template
+```go-html-template{bigdiv=true}
 {{</* lite-youtube videoTitle="How to make Eyeballs that Follow You Around" videoId="TGe3pS5LqEw" */>}}
 ```
 
 Then, months later, I created an [Astro](https://astro.build) [component](https://github.com/brycewray/astro-site/blob/main/src/components/Lite-YouTube.astro) that also could be called by, yes, just one line:
 
-```html
+```html{bigdiv=true}
 <LiteYT videoTitle="How to make Eyeballs that Follow You Around" videoId="TGe3pS5LqEw" />
 ```
 
@@ -45,7 +45,7 @@ One reason why this solution is so helpful is that, once you set it up as explai
 
 First, in your Eleventy site's config file (probably a top-level `.eleventy.js` file), add a [collection](https://11ty.dev/docs/collections) that will expose the soon-to-be-written macros file to, in this case, all your Markdown files:
 
-```js
+```js{bigdiv=true}
 eleventyConfig.addCollection("everything", (collectionApi) => {
 	const macroImport = `{%- import "macros/index.njk" as macro with context -%}`
 	let collMacros = collectionApi.getFilteredByGlob('src/**/*.md')
@@ -63,7 +63,7 @@ eleventyConfig.addCollection("everything", (collectionApi) => {
 
 Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/docs/config/#directory-for-includes), add a `macros` folder and, within it, an `index.njk` file for holding all your macros. Here's such a file that contains a macro version of the YouTube-embedding code:
 
-{{< labeled-highlight lang="jsx" filename="index.njk" >}}
+```jsx{filename="index.njk" bigdiv=true}
 {%- macro liteYT(videoTitle, videoId) -%}
 	<script src="/assets/js/lite-yt-embed_0-2-0.js"></script>
 <lite-youtube videoid="{{ videoId }}" data-bg="url('https://i.ytimg.com/vi/{{ videoId }}/hqdefault.jpg')" {% if params %} params="{{ params }}"{% endif %}>
@@ -76,7 +76,7 @@ Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/doc
 	</noscript>
 	<p class="ctr legal tightLead"><strong class="red">Note</strong>: Clicking&nbsp;the&nbsp;video constitutes your consent to view&nbsp;it via&nbsp;YouTube (including&nbsp;cookies). To&nbsp;view&nbsp;it on the YouTube&nbsp;site instead, please&nbsp;use&nbsp;<a href="https://www.youtube.com/watch?v={{ videoId }}"  target="_blank" rel="noopener">this&nbsp;link</a>, which&nbsp;opens in&nbsp;a different browser&nbsp;window/tab.</p>
 {%- endmacro -%}
-{{</ labeled-highlight >}}
+```
 
 **Note**: The specific indenting for the `lite-youtube` element, above, is on purpose. I found that, with normal indents applied to this element, the result within the Eleventy HTML after accessing the macro *from within Markdown* could include unexpected `p` elements wrapped around the output, causing less-than-desirable appearances. On the other hand, I didn't encounter this problem if accessing the macro from within another Nunjucks file (more about that kind of macro call further down). I'm guessing the Markdown-related SNAFU is related to how that `lite-youtube` element comes out of its parent JavaScript file.
 {.box}
@@ -85,7 +85,7 @@ Then, in your Eleventy project's [`includes` directory](https://www.11ty.dev/doc
 
 With all that done, we now can go into a Markdown file and turn that formerly three-line call into just one, as was our original, [alligators-free](https://idioms.thefreedictionary.com/up+to+my+ass+in+alligators) intent when we first endeavored to drain the proverbial swamp:
 
-```twig
+```twig{bigdiv=true}
 {{ macro.liteYT("How to make Eyeballs that Follow You Around", "TGe3pS5LqEw") }}
 ```
 
@@ -93,7 +93,7 @@ If you define other macros in that `index.njk` file, you'll call each similarly,
 
 But what if you want to use the macro in any **Nunjucks** files? Well, even if you include `.njk` files in the global through a config like this:
 
-```js
+```js{bigdiv=true}
 eleventyConfig.addCollection("everything", (collectionApi) => {
 	const macroImport = `{%- import "macros/index.njk" as macro with context -%}`
 	let collMacros = collectionApi.getFilteredByGlob([
@@ -109,7 +109,7 @@ eleventyConfig.addCollection("everything", (collectionApi) => {
 
 . . . you'll still have to `import` it, first:
 
-```twig
+```twig{bigdiv=true}
 {% from 'macros/index.njk' import liteYT %}
 {{ liteYT("How to make Eyeballs that Follow You Around", "TGe3pS5LqEw") }}
 ```

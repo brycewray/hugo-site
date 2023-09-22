@@ -36,7 +36,7 @@ The `Typographer` extension is supposed to make sure text has the proper "smart"
 
 However, as of this writing, the goldmark version "shipping" with Hugo has a problem with plural possessives. As I noted in an [issue I filed concerning the problem](https://github.com/yuin/goldmark/issues/180), if you include the following text in a Markdown file&nbsp;.&nbsp;.&nbsp;.
 
-```md
+```md{bigdiv=true}
 John's dog is named Sam. The Smiths' dog is named Rover.
 ```
 
@@ -67,7 +67,7 @@ Here's an example, using a screen capture of a paragraph from last year's "[YouT
 
 But it turns out there's been an answer out there for months, in the form of [Mark Llobrera](https://www.markllobrera.com)'s "[Eleventy: Markdown and Footnotes](https://www.markllobrera.com/posts/eleventy-markdown-and-footnotes/)," in which he prescribed adding the following code within the part of the `.eleventy.js` config file that specifies how markdown-it and its various plugins will work with Eleventy:
 
-```js
+```js{bigdiv=true}
 markdownLibrary.renderer.rules.footnote_caption = (tokens, idx) => {
 	let n = Number(tokens[idx].meta.id + 1).toString();
 

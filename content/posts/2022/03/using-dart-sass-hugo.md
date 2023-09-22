@@ -54,7 +54,7 @@ npm i -D npm-run-all rimraf sass
 
 Then, open `package.json` and make its `scripts` object look as follows:
 
-```json
+```json{bigdiv=true}
 "scripts": {
 	"clean": "rimraf public",
 	"devsass": "sass --no-source-map assets/scss/index.scss assets/css/index.css",
@@ -98,17 +98,17 @@ Almost done! Now we finish up by offering two different versions of the `scss.ht
 
 First, the version for **external** CSS:
 
-{{< labeled-highlight lang="go-html-template" filename="scss.html" >}}
+```go-html-template{filename="scss.html"}
 {{ $styles := resources.Get "css/index.css" }}
 {{ if hugo.IsProduction }}
 	{{ $styles = $styles | resources.Minify | fingerprint }}
 {{ end }}
 <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
-{{</ labeled-highlight  >}}
+```
 
 Then, the version for **internal** CSS:
 
-{{< labeled-highlight lang="go-html-template" filename="scss.html" >}}
+```go-html-template{filename="scss.html"}
 {{ $styles := resources.Get "css/index.css" }}
 {{ if hugo.IsProduction }}
 	{{ with $styles }}
@@ -117,7 +117,7 @@ Then, the version for **internal** CSS:
 {{ else }}
 	<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
 {{ end }}
-{{</ labeled-highlight >}}
+```
 
 **Note**: In case it would help, I've also put up a minimal [demo repo](https://github.com/brycewray/hugo-npm-sass) and [site](https://hugo-npm-sass.vercel.app/) based on this code.
 {.box}

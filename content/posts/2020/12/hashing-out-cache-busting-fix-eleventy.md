@@ -32,7 +32,7 @@ Before I give you the actual code, here's what we're doing, as noted in "Cache-b
 
 Before I get to the part about accomplishing those five things, I'll first repeat that the project's `/src/assets/css/index.css` file looks like this:
 
-{{< labeled-highlight lang="css" filename="index.css" >}}
+```css{filename="index.css"}
 /*! purgecss start ignore */
 @import 'fonts.css';
 @import 'nav.css';
@@ -42,7 +42,7 @@ Before I get to the part about accomplishing those five things, I'll first repea
 @import 'tailwindcss/components';
 /*! purgecss end ignore */
 @import 'tailwindcss/utilities';
-{{</ labeled-highlight >}}
+```
 
 Here, the `@import` statements (enabled by the [postcss-import](https://npmjs.com/package/postcss-import) package) bring in the contents of separate CSS files, as well as [Tailwind CSS](https://tailwindcss.com) files, into one file that PostCSS will further process later on.
 
@@ -54,7 +54,7 @@ First, at the project top level, comes `cssdate.js`[^whyDate], which accomplishe
 
 [^whyDate]: Incidentally, the reason this file is called `cssdate.js` rather than, say, `csshash.js` is because I initially thought the final hash would be based on the timestamp, as I explained in "Cache-busting in Eleventy, take two." I probably should've changed it but never got around to it. Perhaps I can consider the name an historical artifact.
 
-{{< labeled-highlight lang="js" filename="cssdate.js" >}}
+```js{filename="cssdate.js"}
 // Detect when any CSS files change
 
 const fs = require('fs')
@@ -84,7 +84,7 @@ var txtValue = `index-${cssMd5Total}.css`
 fs.writeFileSync(PCSSFILE, txtValue)
 // ...the latter because, otherwise, you get the following error:
 // The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView.
-{{</ labeled-highlight >}}
+```
 
 This file:
 
@@ -98,7 +98,7 @@ This file:
 
 From there, the focus shifts to the scripts in the project's `package.json` file (I'll include only the scripts, since there obviously is a *lot* more stuff in that file):
 
-```json
+```json{bigdiv=true}
 	"scripts": {
 		"clean": "rm -rf _site",
 		"hasher": "node cssdate.js",
@@ -131,7 +131,7 @@ To be specific:
 
 That leaves only setting the Eleventy `head.js` template to call the CSS file by the hash-enriched name, the *value* of which it reads by addressing the `index.css` *key* in that one object in `_data/csshash.json`.
 
-```js
+```js{bigdiv=true}
 <link rel="preload" as="style" href="/css/${data.csshash['index.css']}" />
 <link rel="stylesheet" href="/css/${data.csshash['index.css']}" type="text/css" />
 ```

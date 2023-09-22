@@ -40,7 +40,7 @@ That's an oddity I've been experiencing, and I hope somebody reading this will h
 
 . . . and the following within the CSS:
 
-```css
+```css{bigdiv=true}
 @font-face {
 	font-family: 'Inter';
 	font-weight: 1 999;

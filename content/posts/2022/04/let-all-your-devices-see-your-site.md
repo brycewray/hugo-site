@@ -160,7 +160,7 @@ For you folks who prefer to hand-code without help from SSGs, here's how you'd m
 
 Finally, on SSGs, I suggest handling these changes via [**shell scripts**](https://www.shellscript.sh/). I can assure you that I do **not** do this stuff without them. For example, here's the `start` shell script I run when developing in Hugo:
 
-```bash
+```bash{bigdiv=true}
 #!/bin/sh
 
 rm -rf public
