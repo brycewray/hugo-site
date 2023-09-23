@@ -57,7 +57,7 @@ At the start, the Mac's disk drive [will have an EFI partition because it's been
 
 On a slightly related note, it seems certain distros' installers will balk at the size of a macOS-created EFI partition for being too small. For example, I found this to be the case with some flavors of [OpenSUSE](https://opensuse.org), which wanted a 512 MB EFI partition instead of the 300 MB partition that Disk Utility had built. If you encounter such an issue, that on its own might be a good reason to stop the install, do a **non**-GUID erasure, and then let the Linux installation handle creating an EFI partition to a size of its liking.
 
-**Of course**, particularly when dealing with your computer's freaking **drive unit**, always be guided first by whatever official documentation you can find, rather than some random guy's blog post (like this one). I really hope I don't have to say that to anyone sufficiently tech-oriented to consider installing Linux on a Mac's "bare metal" in the first place, but there it is, just in case I do.
+<span class="red">**Of course**, particularly when dealing with your computer's freaking **drive unit**, always be guided first by whatever official documentation you can find, rather than some random guy's blog post (like this one).</span> I really hope I don't have to say that to anyone sufficiently tech-oriented to consider installing Linux on a Mac's "bare metal" in the first place, but there it is, just in case I do.
 
 ## Go the bleep to sleep?
 
