@@ -77,7 +77,7 @@ On the other hand, you don't have to search long to find that Linux's ability to
 
 ## Text fiends
 
-This part is not so much about Linux, much less Linux-on-Mac; instead, it's about the Linux community. To be specific: after these last few weeks of tinkering, I feel obliged to note where I stand on the eternal battle usually framed as "Which Text Editor Dost Thou Use In a Linux Terminal Window, Thou Varlet?"
+This part is not so much about Linux, much less Linux-on-Mac; instead, it's about the Linux community. To be specific: after these last few weeks of tinkering, I feel obliged to note where I stand on the eternal battle usually framed as "Which Text Editor Dost Thou Use in a Linux Terminal Window, Thou Varlet?"
 
 The Linux Kewl Kids' answer to that typically is either the venerable [Vim](https://www.vim.org) or its offshoot, [Neovim](https://neovim.io), although there are more than a few adherents for the truly ancient [Emacs](https://www.gnu.org/software/emacs/). What instantly qualifies one as *not* worthy of Linux Kewl Kids status is to have any regard whatsoever for the admittedly more limited [Nano](https://www.nano-editor.org/). So, yeah, I'm not Kewl. (Duh.)
 
