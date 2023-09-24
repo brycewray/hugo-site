@@ -43,7 +43,7 @@
 		{{- $imgRsc := . -}}
 		{{- $width := $imgRsc.Width -}}
 		{{- $height := $imgRsc.Height -}}
-		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
+		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
 		{{- if eq $simple false -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
 		{{- end }}
@@ -53,7 +53,7 @@
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
@@ -61,7 +61,7 @@
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
