@@ -6,6 +6,9 @@
 	--border-bquote: var(--gray-400);
 	--fill-lightdarktoggle: var(--yellow-200);
 	--filter-shadow: var(--gray-400);
+	--bkgd-nav: var(--blue-850);
+	--bkgd-nav-bottom: var(--blue-850);
+	--bkgd-nav-top: var(--blue-850);
 }
 
 [data-theme="light"] {
@@ -19,7 +22,7 @@
 	--bquote-boost: var(--gray-600);
 	--link: var(--blue-700);
 	--link-afh: var(--blue-900);
-	--head: var(--black);
+	--head: var(--default);
 	--red: var(--red-700);
 	--box-red: var(--red-600);
 	--btn-text-default: var(--white);
@@ -27,9 +30,6 @@
 	--bquote-article-code: var(--slate-800);
 	/* backgrounds and borders */
 	--bkgd: var(--white);
-	--bkgd-nav: var(--black);
-	--bkgd-nav-bottom: var(--black);
-	--bkgd-nav-top: var(--gray-500);
 	--bkgd-box: var(--slate-050);
 	--bkgd-code: var(--slate-050);
 	--bkgd-article-code: var(--slate-150);
@@ -52,7 +52,7 @@
 	--bquote-boost: var(--gray-350);
 	--link: var(--blue-300);
 	--link-afh: var(--slate-300);
-	--head: var(--white);
+	--head: var(--default);
 	--red: var(--red-300);
 	--box-red: var(--red-400);
 	--btn-text-default: var(--black);
@@ -60,9 +60,6 @@
 	--bquote-article-code: var(--slate-300);
 	/* backgrounds and borders */
 	--bkgd: var(--black);
-	--bkgd-nav: var(--blue-950);
-	--bkgd-nav-bottom: var(--blue-950);
-	--bkgd-nav-top: var(--blue-800);
 	--bkgd-box: var(--slate-900);
 	--bkgd-code: var(--slate-900);
 	--bkgd-article-code: var(--slate-750);
@@ -78,18 +75,21 @@ html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	-moz-osx-font-smoothing: auto;
+	-moz-osx-font-smoothing: grayscale;
 	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
+	-webkit-font-smoothing: antialiased;
+	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	font-variant-ligatures: normal;
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
-	font-family: var(--serif);
+	font-family: var(--sans-serif);
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd);
 	color: var(--default);
 }
 
+/*
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
@@ -99,6 +99,7 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .legal, .pokey {
 	font-family: var(--sans-serif);
 }
+*/
 
 b, strong {
 	font-weight: var(--font-semibold);
