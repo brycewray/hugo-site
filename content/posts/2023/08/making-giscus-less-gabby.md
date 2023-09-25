@@ -74,9 +74,8 @@ So here's the code, the [operational version of which](https://github.com/brycew
 ```go-html-template{filename="comments-giscus.html" bigdiv=true}
 {{/*
 	=== `data-theme` choices ===
-	For now, these are just "light" and "dark";
-	but, in case you use separate CSS files
-	for these (such as for using additional fonts),
+	For now, these are just "light" and "dark"; but, in case you use
+	separate CSS files for these (such as for using additional fonts),
 	having these variables will allow for that.
 */}}
 {{- $dataThemeLight := "light" -}}
