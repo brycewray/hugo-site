@@ -30,7 +30,7 @@ As I close this little update about this new little one, please allow "Pawpaw”
 Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after she arrived.
 {.imghCaption}
 
-![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg "Cloudinary")
+![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg)
 
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
 {.imghCaption}
