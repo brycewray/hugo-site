@@ -75,10 +75,10 @@ html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
+	-webkit-font-smoothing: subpixel-antialiased;
+	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	-moz-osx-font-smoothing: grayscale;
 	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
-	-webkit-font-smoothing: antialiased;
-	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	font-variant-ligatures: normal;
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */

@@ -115,7 +115,7 @@ article {
 		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
-		/* letter-spacing: -0.015em; */
+		letter-spacing: 0.025em;
 	}
 	& li li, & li p {
 		font-size: inherit;
@@ -129,6 +129,14 @@ article {
 	}
 	& picture img {
 		height: auto;
+	}
+}
+
+@supports (-moz-appearance: none) {
+	article {
+		& p, & li {
+			letter-spacing: -0.025em;
+		}
 	}
 }
 
