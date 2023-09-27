@@ -83,7 +83,7 @@ html, body {
 	padding: 0;
 	-webkit-font-smoothing: subpixel-antialiased;
 	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
-	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: auto;
 	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
 	font-variant-ligatures: normal;
 	text-rendering: optimizeLegibility;

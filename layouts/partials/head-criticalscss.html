@@ -1,6 +1,5 @@
 	{{/*  {{- $optionsCSSCritical := (dict "transpiler" "dartsass" "outputStyle" "compressed" "targetPath" "css/critical.css") -}}  */}}
 	{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
-	{{/*
 
 	{{- $fonts := resources.Get "scss/fonts.scss" -}}
 	{{- with $fonts }}
@@ -11,7 +10,6 @@
 		</style>
 	{{- end }}
 
-	*/}}
 	{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
 	{{- with $css -}}
 		<style media="screen">
