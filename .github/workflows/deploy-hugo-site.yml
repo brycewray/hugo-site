@@ -8,8 +8,8 @@ on:
 env:
   HUGO_VERSION: 0.119.0 # will get Extended Version below
   HUGO_NPM: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
-  # ^^ refers to whether we're using the npm pkg `hugo-installer`,
-  # which we formerly did
+  # ^^ refers to whether we're using the npm pkg `hugo-installer`
+  PAGEFIND_NPM: false # choices: 'true' and 'false'
   DART_SASS_VERSION: 1.68.0 # (depends on STYLING env var)
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   NODE_VERSION: 20 # (https://developers.cloudflare.com/pages/platform/language-support-and-tools/)
@@ -59,16 +59,18 @@ jobs:
             resources
             static
           key: ${{ runner.os }}-hugosite
-      - name: Build site with Hugo, move feed files, run Pagefind (cond. - Node)
+      - name: Build site (cond. - Node)
         if: ${{ env.HUGO_NPM == 'true' }}
         run: npm run build
-      - name: Build site with Hugo, move feed files, run Pagefind (cond. - non-Node)
+      - name: Build site (cond. - non-Node)
         if: ${{ env.HUGO_NPM != 'true' }}
         run: |
           hugo --gc --minify --logLevel info
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
-          npm_config_yes=true npx pagefind@latest --site "public"
+      - name: Run Pagefind (cond. - non-Node when not doing search in Node)
+        if: ${{ env.PAGEFIND_NPM !='true' }}
+        run: npm_config_yes=true npx pagefind@latest --site "public"
       - name: Publish to CFP
         uses: cloudflare/pages-action@v1
         with:
