@@ -7,7 +7,7 @@
 
 	*/
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-	--sans-serif: "Libre Franklin", ui-sans-serif, system-ui, sans-serif;
+	--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, Ubuntu, Roboto, "Noto Sans", Noto, sans-serif;
 	--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -27,7 +27,7 @@
 	/* --font-black: 900; */
 	--font-weight-sm: var(--font-normal);
 	/* ^^^ for .pokey, .legal, footnotes, etc. if using font-light for `html` and `body` */
-	--pub-date-weight: var(--font-medium);
+	--pub-date-weight: var(--font-semibold);
 
 	/* like Tailwind **SIZES** but not the concomitant `line-height, which is in comments */
 	--text-xs: 0.75rem; /* LH 1rem */
@@ -48,8 +48,8 @@
 	--textDcThick: 0.05rem; /* always rem */
 	--textDcThickMd: 0.0625rem; /* always rem */
 	--textDcThickHA: 0.075rem; /* always rem -- for `header-anchor` */
-	--textUnOffst: 0.275em; /* always em -- min-width: 768px */
-	--textUnOffstMd: 0.275em; /* always em -- min-width: 768px */
+	--textUnOffst: 0.26em; /* always em -- min-width: 768px */
+	--textUnOffstMd: 0.26em; /* always em -- min-width: 768px */
 	/* ^^^ 0.225em is OK with Libre Franklin,
 	     but Segoe UI needs at least 0.25em */
 

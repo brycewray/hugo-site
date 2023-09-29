@@ -86,13 +86,12 @@ html, body {
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
-	font-family: var(--sans-serif);
+	font-family: var(--serif);
 	font-weight: var(--font-normal);
 	background-color: var(--bkgd);
 	color: var(--default);
 }
 
-/*
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
@@ -102,7 +101,6 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .legal, .pokey {
 	font-family: var(--sans-serif);
 }
-*/
 
 b, strong {
 	font-weight: var(--font-semibold);
@@ -118,7 +116,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	font-weight: var(--font-medium);
+	font-weight: var(--font-semibold);
 	color: var(--head);
 	letter-spacing: -0.025rem;
 }

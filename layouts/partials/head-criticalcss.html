@@ -1,9 +1,11 @@
+	{{/*
 	{{- $fonts := resources.Get "css/fonts.css" | minify -}}
 	{{- with $fonts }}
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 		<style media="screen">{{ .Content | safeCSS }}</style>
 	{{- end }}
+	*/}}
 	{{- $css := resources.Get "css/critical.css" | postCSS }}
 	{{- with $css }}
 		<style media="screen">{{ .Content | safeCSS }}</style>
