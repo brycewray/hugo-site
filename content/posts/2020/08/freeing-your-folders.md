@@ -7,6 +7,9 @@ imgs:
 - iCloud-Drive-Desktop-Documents_1336x990.png
 ---
 
+**Update, 2023-10-01**: If you make (or have already made) the settings changes described in this post **prior to** upgrading to macOS Sonoma (macOS 14.x), be aware of [a change in how macOS subsequently handles your iCloud Drive files](https://eclecticlight.co/2023/09/29/do-you-use-icloud-drive-are-you-intending-to-upgrade-to-sonoma/).
+{.box}
+
 Are you a Mac user? Ever looked at that [joined-at-the-hip relationship between your **Documents** folder and iCloud Drive](https://support.apple.com/en-us/HT206985) and wondered if you might be better off sync'ing that folder with another provider --- or, if you have no reason to view the folder's contents on other devices, not sync'ing it at all and thus avoiding the expense?
 
 You're not alone.
