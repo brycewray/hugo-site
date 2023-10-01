@@ -28,6 +28,7 @@ Now, yes, there are workarounds, and I've applied them. For one, you can simply 
 - What if you flat-out prefer the Mac's internal speakers and/or don't want to fool with a potentially unwieldy combo of external gear just to *get frickin' sound*? Well, that takes you to [two](https://github.com/davidjo/snd_hda_macbookpro) [patches](https://github.com/egorenar/snd-hda-codec-cs8409). They work for a while, until certain updates break those patches.
 - Besides, the patches are Of A Certain Age and, so various error messages tell me, are increasingly out of kilter with newer versions of the Linux kernel.
 - Also, there's no way to use *any* patch with the "Live Image" tryouts that many Linux distros offer, so any Intel Mac user who runs one of those "Live Images" can't do so with the internal audio working as it should.
+- <span class="legal">[Additional bullet point, added 2023-10-01]</span> *Immutable* distros are becoming more popular, and patching them *at all* can be considerably more challenging than is the case with more traditional distros. (Some immutable distros allow patching through "layering" methods.)
 
 Okay, now, full stop.
 
