@@ -116,7 +116,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	font-weight: var(--font-semibold);
+	font-weight: var(--font-medium);
 	color: var(--head);
 	letter-spacing: -0.025rem;
 }
