@@ -1,0 +1,108 @@
+name: Deploy to web
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  GITHUB: true
+  HUGO_VERSION: 0.119.0 # will get Extended Version below
+  HUGO_NPM: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  # ^^ refers to whether we're using the npm pkg `hugo-installer`
+  PAGEFIND_NPM: true # choices: 'true' and 'false'
+  DART_SASS_VERSION: 1.68.0 # (depends on STYLING env var)
+  NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  NODE_VERSION: 20 # (https://developers.cloudflare.com/pages/platform/language-support-and-tools/)
+  # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
+  STYLING: VCSS # 'SCSS' or 'VCSS'; 'VCSS' requires PostCSS as of 2023-09-04
+
+jobs:
+  deploy:
+    if: ${{ env.GITHUB == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Set GHA runner TZ to U.S. Central time
+        uses: szenius/set-timezone@v1.2
+        with:
+          timezoneLinux: "America/Chicago" # default = "UTC"
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Node.js (cond. - Node)
+        if: ${{ env.NODE == 'true' }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install npm packages (cond. - Node)
+        if: ${{ env.NODE == 'true' || env.STYLING == 'VCSS' }}
+        run: npm install
+      - name: Hugo download/install (cond. - non-Hugo-via-hugo-installer)
+        if: ${{ env.HUGO_NPM != 'true' }}
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
+          sudo dpkg -i hugo*.deb
+      - name: Install Dart Sass (cond. - SCSS)
+        if: ${{ env.STYLING == 'SCSS' }}
+        run: |
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          dart-sass/sass --embedded --version
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
+      - name: Cache appropriate Hugo items
+        id: cache-hugosite
+        uses: actions/cache@v3
+        with:
+          path: |
+            resources
+            static
+          key: ${{ runner.os }}-hugosite
+      - name: Build site (cond. - Node)
+        if: ${{ env.HUGO_NPM == 'true' }}
+        run: npm run build
+      - name: Build site (cond. - non-Node)
+        if: ${{ env.HUGO_NPM != 'true' }}
+        run: |
+          hugo --gc --minify --logLevel info
+          mv public/posts/index.xml public/index-excerpts.xml
+          mv public/posts/index.json public/index-excerpts.json
+      - name: Run Pagefind (cond. - non-Node when not doing search in Node)
+        if: ${{ env.PAGEFIND_NPM !='true' }}
+        run: npm_config_yes=true npx pagefind@latest --site "public"
+      - name: Publish to CFP
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CFP_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'static-site-v2' # was 'static-site'
+          directory: 'public'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci] (works also in CFP GUI)
+# [ci skip] (works also in CFP GUI)
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true` or `skip-checks:true`.”
+#
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
+#
+# --------
+# For CFP GUI only, it's (case-**in**sensitive):
+# [CI Skip]
+# [CI-Skip]
+# [Skip CI] <-- This is the one we can use on all, albeit as `[skip ci]`
+# [Skip-CI]
+# [CF-Pages-Skip]
+# ref: https://developers.cloudflare.com/pages/platform/branch-build-controls/
+# --------
