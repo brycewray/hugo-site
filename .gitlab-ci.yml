@@ -38,6 +38,7 @@ deploySite:
         tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
         dart-sass/sass --embedded --version
       fi
+    - >
       if [ "$NODE" != "true" ]; then
         wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}
         dpkg -i hugo*.deb
