@@ -30,6 +30,7 @@ jobs:
         with:
           timezoneLinux: "America/Chicago" # default = "UTC"
       - name: Checkout default branch
+        if: ${{ env.GITHUB == 'true' }}
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
