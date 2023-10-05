@@ -38,7 +38,12 @@ deploySite:
           tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           dart-sass/sass --embedded --version
         fi
-        hugo --gc --minify
+        hugo --gc --minify --logLevel info
+        mv public/posts/index.xml public/index-excerpts.xml
+        mv public/posts/index.json public/index-excerpts.json
+        if [ "$PAGEFIND_NPM" != "true" ]; then
+          npm_config_yes=true npx pagefind@latest --site "public"
+        fi
       else
         npm install
         npm run build
