@@ -88,14 +88,14 @@ For iOS devices, I can strongly recommend [Raivo OTP](https://github.com/raivo-o
 **Update, 2023-07-31**: I can no longer recommend Raivo OTP. Please see "[From Raivo OTP to 2FAS](/posts/2023/07/from-raivo-otp-to-2fas/)" for an explanation --- and an **alternative** recommendation for a TOTP app about which I didn't learn until well after initially issuing the post you're reading now.
 {.box}
 
-{{< img src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" phn=true proc="Cloudinary" >}}
+{{< img src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" phn=true >}}
 
 Raivo OTP, iOS version (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}
 
 If Raivo OTP doesn’t float your boat for some reason, you can also try [OTP Auth](https://cooperrs.de/otpauth.html). It comes in both iOS and macOS/Catalyst flavors. As with Raivo OTP, it provides backups on iCloud. I prefer Raivo OTP’s UI over that of OTP Auth, but otherwise find each to be equally capable. The iOS app is freemium[^5] while the macOS app must be purchased for, at this writing, $5.99. If you don’t want or need the macOS app, you certainly can use only the iOS app and just manually enter into your Mac the TOTPs the app shows you.
 
-{{< img src="OTP_Auth_screenshot_edited_1125x2436.png" alt="Edited screen capture of OTP Auth application" phn=true proc="Cloudinary" >}}
+{{< img src="OTP_Auth_screenshot_edited_1125x2436.png" alt="Edited screen capture of OTP Auth application" phn=true >}}
 
 OTP Auth, iOS version (TOTPs simulated and some self-identifying text hidden).
 {.imgcCaption}

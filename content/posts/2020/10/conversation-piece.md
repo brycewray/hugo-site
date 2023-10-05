@@ -81,7 +81,7 @@ In [FastComments](https://fastcomments.com)&nbsp;.&nbsp;.&nbsp;.
 
 ### Hyvor Talk
 
-![Screen capture of Hyvor Talk web page](Hyvor_Talk_scr_cap_2696x1528.png "Cloudinary")
+![Screen capture of Hyvor Talk web page](Hyvor_Talk_scr_cap_2696x1528.png)
 
 Now, a look at [Hyvor Talk](https://talk.hyvor.com)&nbsp;.&nbsp;.&nbsp;.
 
@@ -124,7 +124,7 @@ As for [Talkyard](https://www.talkyard.io)&nbsp;.&nbsp;.&nbsp;.
 
 ### Utterances
 
-![Screen capture of Utterances web page](Utterances_scr_cap_2698x1530.png "Cloudinary")
+![Screen capture of Utterances web page](Utterances_scr_cap_2698x1530.png)
 
 Finally, there's [Utterances](https://utteranc.es)&nbsp;.&nbsp;.&nbsp;.
 

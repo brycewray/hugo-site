@@ -31,7 +31,7 @@ A GHP site typically has a name like *MyGitHubName.github.io*, but you can assig
 
 ## Is DOAP dope?
 
-![Screen capture of DigitalOcean App Platform section of DigitalOcean website](DOAP-2020-11-24_2476x1362.png "Cloudinary")
+![Screen capture of DigitalOcean App Platform section of DigitalOcean website](DOAP-2020-11-24_2476x1362.png)
 
 The second choice is a recently introduced PaaS offering that's been getting some attention: [DigitalOcean](https://digitalocean.com)'s [App Platform](https://www.digitalocean.com/products/app-platform/) --- or, as I'll abbreviate it for the remainder of this article, *DOAP*. With DOAP, your original content exists on DO's infrastructure behind Cloudflare, obviously no slouch in the CDN realm.
 
