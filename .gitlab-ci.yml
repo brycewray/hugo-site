@@ -27,8 +27,7 @@ variables:
 deploySite:
   stage: deploy
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-    - if: '$GITLAB == "true"'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $GITLAB == "true"
   environment:
     name: production
     url: $MY_WEBSITE
