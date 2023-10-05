@@ -53,4 +53,4 @@ deploySite:
         npm run build
       fi
     - npm install -g wrangler --unsafe-perm=true
-    - wrangler pages publish ./public --project-name=$PROJECT_NAME --branch "main"
+    - wrangler pages deploy ./public --project-name=$PROJECT_NAME --branch "main"
