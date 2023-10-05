@@ -19,13 +19,13 @@ env:
 
 jobs:
   deploy:
-    if: env.GITHUB == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
     steps:
       - name: Set GHA runner TZ to U.S. Central time
+        if: ${{ env.GITHUB == 'true' }}
         uses: szenius/set-timezone@v1.2
         with:
           timezoneLinux: "America/Chicago" # default = "UTC"
@@ -34,26 +34,27 @@ jobs:
         with:
           fetch-depth: 0
       - name: Set up Node.js (cond. - Node)
-        if: ${{ env.NODE == 'true' }}
+        if: ${{ env.NODE == 'true' && env.GITHUB == 'true' }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install npm packages (cond. - Node)
-        if: ${{ env.NODE == 'true' || env.STYLING == 'VCSS' }}
+        if: ${{ (env.NODE == 'true' || env.STYLING == 'VCSS') && env.GITHUB == 'true' }}
         run: npm install
       - name: Hugo download/install (cond. - non-Hugo-via-hugo-installer)
-        if: ${{ env.HUGO_NPM != 'true' }}
+        if: ${{ env.HUGO_NPM != 'true' && env.GITHUB == 'true' }}
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
       - name: Install Dart Sass (cond. - SCSS)
-        if: ${{ env.STYLING == 'SCSS' }}
+        if: ${{ env.STYLING == 'SCSS' && env.GITHUB == 'true' }}
         run: |
           curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
           dart-sass/sass --embedded --version
           echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Cache appropriate Hugo items
+        if: ${{ env.GITHUB == 'true' }}
         id: cache-hugosite
         uses: actions/cache@v3
         with:
@@ -62,18 +63,19 @@ jobs:
             static
           key: ${{ runner.os }}-hugosite
       - name: Build site (cond. - Node)
-        if: ${{ env.HUGO_NPM == 'true' }}
+        if: ${{ env.HUGO_NPM == 'true' && env.GITHUB == 'true' }}
         run: npm run build
       - name: Build site (cond. - non-Node)
-        if: ${{ env.HUGO_NPM != 'true' }}
+        if: ${{ env.HUGO_NPM != 'true' && env.GITHUB == 'true' }}
         run: |
           hugo --gc --minify --logLevel info
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
       - name: Run Pagefind (cond. - non-Node when not doing search in Node)
-        if: ${{ env.PAGEFIND_NPM !='true' }}
+        if: ${{ env.PAGEFIND_NPM !='true' && env.GITHUB == 'true' }}
         run: npm_config_yes=true npx pagefind@latest --site "public"
       - name: Publish to CFP
+        if: ${{ env.GITHUB == 'true' }}
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CFP_API_TOKEN }}
