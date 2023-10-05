@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  GHUB_YES: false
+  GITHUB: true
   HUGO_VERSION: 0.119.0 # will get Extended Version below
   HUGO_NPM: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using the npm pkg `hugo-installer`
@@ -19,7 +19,7 @@ env:
 
 jobs:
   deploy:
-    if: ${{ env.GHUB_YES == 'true' }}
+    if: env.GITHUB == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
