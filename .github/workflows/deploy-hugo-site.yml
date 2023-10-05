@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  GITHUB: true
+  GITHUB: false
   HUGO_VERSION: 0.119.0 # will get Extended Version below
   HUGO_NPM: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using the npm pkg `hugo-installer`
