@@ -1,0 +1,47 @@
+# for Cloudflare Pages
+
+stages:
+  - deploy
+
+image: node:latest
+
+variables:
+  CLOUDFLARE_API_TOKEN: $CFP_API_TOKEN
+  CLOUDFLARE_ACCOUNT_ID: $CF_ACCOUNT_ID
+  HUGO_VERSION: 0.119.0
+  DART_SASS_VERSION: 1.68.0
+  PAGEFIND_NPM: "true"
+  NODE: "true"
+  NODE_VERSION: 20.x # (https://developers.cloudflare.com/pages/platform/language-support-and-tools/)
+  # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
+  GIT_DEPTH: 0
+  GIT_STRATEGY: clone
+  MY_WEBSITE: https://www.brycewray.com
+  PROJECT_NAME: static-site-v2 # was 'static-site'
+  STYLING: VCSS # 'SCSS' or 'VCSS'; 'VCSS' requires PostCSS as of 2023-09-04
+  TZ: America/Chicago
+
+deploySite:
+  stage: deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  environment:
+    name: production
+    url: $MY_WEBSITE
+  script:
+    - >
+      if [ "$NODE" != "true" ]; then
+        wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}
+        dpkg -i hugo*.deb
+        if [ "$STYLING" == "SCSS" ]; then
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          dart-sass/sass --embedded --version
+        fi
+        hugo --gc --minify
+      else
+        npm install
+        npm run build
+      fi
+    - npm install -g wrangler --unsafe-perm=true
+    - wrangler pages publish ./public --project-name=$PROJECT_NAME --branch "main"
