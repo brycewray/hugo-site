@@ -47,6 +47,7 @@ myip.txt
 wm*.sh
 git*.sh
 gitoutput.txt
+move*.sh
 
 hugo_site-log.txt
 
