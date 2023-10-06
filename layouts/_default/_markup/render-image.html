@@ -19,10 +19,9 @@
 {{- $filter := "MitchellNetravali" -}}
 {{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
-{{- $rscToMatch := print "images/" $src -}}
 
-{{- if resources.GetMatch $rscToMatch -}}
-	{{ with resources.GetMatch $rscToMatch }}
+{{- if .Page.Resources.GetMatch $src -}}
+	{{ with .Page.Resources.GetMatch $src }}
 		{{- $imgRsc := . -}}
 		{{- $width := $imgRsc.Width -}}
 		{{- $height := $imgRsc.Height -}}
