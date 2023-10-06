@@ -33,6 +33,7 @@ footer {
 }
 
 circle.GitHub,
+path.GitLab,
 circle.RSS,
 path.Calckey,
 path.MastodonBody,
@@ -43,6 +44,7 @@ path.RSS {
 }
 
 path.GitHub,
+circle.GitLab,
 circle.MastodonCircle,
 path.MastodonM,
 circle.Calckey,
@@ -53,6 +55,7 @@ circle.JSON {
 }
 
 a:hover path.GitHub,
+a:hover circle.GitLab,
 a:hover circle.MastodonCircle,
 a:hover path.MastodonM,
 a:hover circle.Calckey,
