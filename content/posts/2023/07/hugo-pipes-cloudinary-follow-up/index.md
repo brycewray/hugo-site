@@ -142,9 +142,6 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 
 [^defaults]: Thanks to [Sujal Gurung](https://github.com/dinesh-58) for the excellent suggestion that I use Hugo's [`default` function](https://gohugo.io/functions/default/) for cleaner code than what I originally had here! Somehow, I'd missed reading about that one all this time.
 
-**Important**: The earlier post's code was based on storing the images in a [*bundled*](https://gohugo.io/content-management/page-bundles/) project --- *i.e.*, wherein each image is stored in the same folder as the `index.md` file for the post which calls the image --- but I've [since](/posts/2023/07/big-unbundle/) reverted to the *unbundled* arrangement I'd used for most of the site's history until [last year](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/). As a result, the code below works with images which are [*global resources*](https://gohugo.io/hugo-pipes/introduction/) stored in the Hugo project's top-level `assets/` folder (specifically, `assets/images/`).
-{.box}
-
 ```go-html-template{filename="render-image.html" bigdiv=true}
 {{/*
   For some additional background on this file, see:
@@ -166,10 +163,9 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 {{- $filter := "box" -}}
 {{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
-{{- $rscToMatch := print "images/" $src -}}
 
-{{- if resources.GetMatch $rscToMatch -}}
-	{{ with resources.GetMatch $rscToMatch }}
+{{- if .Page.Resources.GetMatch $src -}}
+	{{ with .Page.Resources.GetMatch $src }}
 		{{- $imgRsc := . -}}
 		{{- $width := $imgRsc.Width -}}
 		{{- $height := $imgRsc.Height -}}
@@ -250,10 +246,9 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 	{{- $imgClass = "img-phn ctrImg animate-fade shadow" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
-{{- $rscToMatch := print "images/" $src -}}
 
-{{- if resources.GetMatch $rscToMatch -}}
-	{{ with resources.GetMatch $rscToMatch }}
+{{- if .Page.Resources.GetMatch $src -}}
+	{{ with .Page.Resources.GetMatch $src }}
 		{{- $imgRsc := . -}}
 		{{- $width := $imgRsc.Width -}}
 		{{- $height := $imgRsc.Height -}}
@@ -312,8 +307,8 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 		{{- $src := . -}}
 		{{- $rscToMatch := print "images/" $src -}}
 		{{- $imgBd5 := md5 . -}}
-		{{- if resources.GetMatch $rscToMatch -}}
-			{{- $imgRsc := resources.GetMatch $rscToMatch -}}
+		{{- if $.Page.Resources.GetMatch $src -}}
+			{{- $imgRsc := $.Page.Resources.GetMatch $src -}}
 			{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $imgRsc.Width " / " $imgRsc.Height ";" -}}
 			{{- $GIP_colors := $imgRsc.Colors -}}
 			{{- if (lt ($GIP_colors | len) 2) -}}

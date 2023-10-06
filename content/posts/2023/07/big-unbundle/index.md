@@ -10,6 +10,8 @@ imgs:
 - iA-Writer_dock-menu-all-index_1288x2624.png
 ---
 
+{{% disclaimer %}}
+
 A year ago, I [urged](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/) fellow Hugo users to organize their websites by using [page bundles](https://gohugo.io/content-management/page-bundles/). While it still may be a good idea for many others, it's ceased to be the best course for me, so this site is now unbundled once again. In the end, it was a battle of comfort-and-convenience *versus* "best practices."
 
 Comfort-and-convenience kicked butt and took names.
@@ -62,3 +64,6 @@ Now, to be sure, I could also see them listed in this more helpful and informati
 Is that a petty reason even to *think* about doing such an about-face, much less actually to go through with it? Perhaps. But minor irritations of this nature, repeated day after day for months at a time, annoy me mightily; so there's that.
 
 Besides, I also find it more intuitive and, yes, more comfortable to manage an unbundled site's overall file-storage arrangement, regardless of any other factors that may merit consideration. It's the way I managed the site project for the overwhelming majority of its history before now. Despite my age, I typically am *not* someone who resists change, at least if I can understand a good reason for the change --- but I *do* frequently object to change-for-the-**sake**-of-change, and this seemed to have become one of those cases.
+
+**Update from the future**: I later [went back to a bundled setup](/posts/2023/10/big-rebundle/).
+{.box}
