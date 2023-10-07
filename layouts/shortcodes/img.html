@@ -46,7 +46,21 @@
 		{{- if eq $simple false -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
 		{{- end }}
-		{{- if ne $proc "Cloudinary" -}}
+		{{- if eq $proc "Cloudinary" -}}
+			{{- with $.Page.Params.imgs }}
+				{{- $imgToGet := print $cloudiBase $src -}}
+				{{- with $imgToGet -}}
+					<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
+					{{- with $respSizes -}}
+						{{- range $i, $e := . -}}
+							{{- if ge $width . -}}
+								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+							{{- end -}}
+						{{- end -}}
+					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+				{{- end -}}
+			{{- end -}}
+		{{- else -}}{{/* fall back to Hugo image processing */}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
@@ -66,20 +80,6 @@
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if eq $proc "Cloudinary" -}}
-			{{- with $.Page.Params.imgs }}
-				{{- $imgToGet := print $cloudiBase $src -}}
-				{{- with $imgToGet -}}
-					<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
-					{{- with $respSizes -}}
-						{{- range $i, $e := . -}}
-							{{- if ge $width . -}}
-								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-							{{- end -}}
-						{{- end -}}
-					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-				{{- end -}}
-			{{- end -}}
 		{{- end -}}
 		{{- if eq $simple false -}}
 		</div>
