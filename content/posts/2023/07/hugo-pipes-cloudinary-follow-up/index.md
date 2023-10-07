@@ -169,15 +169,29 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 		{{- $imgRsc := . -}}
 		{{- $width := $imgRsc.Width -}}
 		{{- $height := $imgRsc.Height -}}
-		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
+		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
-		{{- if ne $proc "Cloudinary" -}}
+		{{- if eq $proc "Cloudinary" -}}
+			{{- with $.Page.Params.imgs }}
+				{{- $imgToGet := print $cloudiBase $src -}}
+				{{- with $imgToGet -}}
+					<img class="{{ $imgClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
+					{{- with $respSizes -}}
+						{{- range $i, $e := . -}}
+							{{- if ge $width . -}}
+								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+							{{- end -}}
+						{{- end -}}
+					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+				{{- end -}}
+			{{- end -}}
+		{{- else -}}{{/* fall back to Hugo image processing */}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
@@ -185,26 +199,12 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if eq $proc "Cloudinary" -}}
-			{{- with $.Page.Params.imgs }}
-				{{- $imgToGet := print $cloudiBase $src -}}
-				{{- with $imgToGet -}}
-					<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-					{{- with $respSizes -}}
-						{{- range $i, $e := . -}}
-							{{- if ge $width . -}}
-								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-							{{- end -}}
-						{{- end -}}
-					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-				{{- end -}}
-			{{- end -}}
 		{{- end -}}
 		</div>
 	{{- end -}}
@@ -252,17 +252,31 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 		{{- $imgRsc := . -}}
 		{{- $width := $imgRsc.Width -}}
 		{{- $height := $imgRsc.Height -}}
-		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
+		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
 		{{- if eq $simple false -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
 		{{- end }}
-		{{- if ne $proc "Cloudinary" -}}
+		{{- if eq $proc "Cloudinary" -}}
+			{{- with $.Page.Params.imgs }}
+				{{- $imgToGet := print $cloudiBase $src -}}
+				{{- with $imgToGet -}}
+					<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
+					{{- with $respSizes -}}
+						{{- range $i, $e := . -}}
+							{{- if ge $width . -}}
+								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+							{{- end -}}
+						{{- end -}}
+					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+				{{- end -}}
+			{{- end -}}
+		{{- else -}}{{/* fall back to Hugo image processing */}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
@@ -270,26 +284,12 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- else if eq $proc "Cloudinary" -}}
-			{{- with $.Page.Params.imgs }}
-				{{- $imgToGet := print $cloudiBase $src -}}
-				{{- with $imgToGet -}}
-					<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-					{{- with $respSizes -}}
-						{{- range $i, $e := . -}}
-							{{- if ge $width . -}}
-								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-							{{- end -}}
-						{{- end -}}
-					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-				{{- end -}}
-			{{- end -}}
 		{{- end -}}
 		{{- if eq $simple false -}}
 		</div>
