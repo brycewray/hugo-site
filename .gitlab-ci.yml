@@ -6,7 +6,7 @@ stages:
 image: node:latest
 
 variables:
-  GITLAB: "true"
+  GITLAB: "false"
   CLOUDFLARE_API_TOKEN: $CFP_API_TOKEN
   CLOUDFLARE_ACCOUNT_ID: $CF_ACCOUNT_ID
   # HUGO_NPM: "true" # choices: 'true' and 'false' (mainly checking only for [== "true"])
