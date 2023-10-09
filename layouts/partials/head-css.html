@@ -86,5 +86,6 @@
 	{{- $printCSS = $printCSS | minify | fingerprint -}}
 {{- end -}}
 {{- with $printCSS -}}
+	<link rel="preload" href="{{ $printCSS.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}" crossorigin{{- end -}}>
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}
