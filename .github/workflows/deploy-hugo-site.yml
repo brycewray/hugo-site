@@ -11,7 +11,7 @@ env:
   HUGO_NPM: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using the npm pkg `hugo-installer`
   PAGEFIND_NPM: true # choices: 'true' and 'false'
-  DART_SASS_VERSION: 1.69.1 # (depends on STYLING env var)
+  DART_SASS_VERSION: 1.69.2 # (depends on STYLING env var)
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   NODE_VERSION: 20 # (https://developers.cloudflare.com/pages/platform/language-support-and-tools/)
   # ^^ https://developers.cloudflare.com/pages/platform/language-support-and-tools/
