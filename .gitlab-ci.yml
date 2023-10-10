@@ -12,7 +12,7 @@ variables:
   # HUGO_NPM: "true" # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # # ^^ refers to whether we're using the npm pkg `hugo-installer`
   HUGO_VERSION: 0.119.0 # will get Extended Version below
-  DART_SASS_VERSION: 1.69.0 # (depends on STYLING var below)
+  DART_SASS_VERSION: 1.69.1 # (depends on STYLING var below)
   PAGEFIND_NPM: "true"
   NODE: "true"
   NODE_VERSION: 20.x # (https://developers.cloudflare.com/pages/platform/language-support-and-tools/)
