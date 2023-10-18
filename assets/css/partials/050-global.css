@@ -97,7 +97,8 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
 .sitemap-Div, .searchDiv, .searchDivPF,
 .footnotes, .footnote-sim, .footnote-ref,
-.box, .labeled-highlight, .imgcCaption, .imghCaption, .bg-dark,
+.box, .labeled-highlight, .imgcCaption, .imghCaption,
+.bg-dark, a.contactButton,
 .legal, .pokey {
 	font-family: var(--sans-serif);
 }
