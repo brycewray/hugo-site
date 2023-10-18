@@ -31,3 +31,6 @@ To be clear: Cloudflare *isn't* setting up a Google Fonts competitor, contrary t
 And, perhaps best of all, it appears this will be a freebie for any website that uses Cloudflare. I base that on the fact that, unlike several other other product- and service-related announcements Cloudflare made during Birthday Week 2023, the Cloudflare Fonts announcement didn't say a word about this new service's being only for paying customers.
 
 As of this writing, Cloudflare hasn't yet specified *when* in this month this new service will be available (even if only as a public beta) nor when its publicly viewable documentation will appear, so I can't tell you any more about Cloudflare Fonts just yet. Still, I'll watch for more details, and *definitely* will be giving the service a try as soon as possible so I can let you know how it worked for me.
+
+**Update, 2023-10-17**: The service is now live in beta form, and [I've given it a quick review](/posts/2023/10/cloudflare-fonts-first-look/).
+{.box}
