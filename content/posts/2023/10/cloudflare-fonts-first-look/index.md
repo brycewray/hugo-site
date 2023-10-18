@@ -25,3 +25,6 @@ CFF injects the necessary CSS for the fonts as a `style` statement within the `h
 I found that I can't use either of the good ways to get around this issue with the Cloudflare Fonts service, because it injects its `style` content **after** my Pages Function does its search/replace work to add nonces to any inline styling already in my code.[^inline] So, in order to test CFF, I had to take a little edge off my CSP. I'm not crazy about that, but I suspect most Cloudflare Pages users aren't so picky regarding CSPs and, thus, will find Cloudflare Fonts an unalloyed boon.
 
 [^inline]: In each such case, the inline styling exists due to third-party stuff over which I lack control. Otherwise, I avoid inline styling specifically to avoid violating the CSP.
+
+**Update, 2023-10-18**: I used Cloudflare Fonts on this site for a few hours but have found the feature to be glitchy --- *i.e.*, sometimes it works and sometimes it doesn't. (Remember, it's still in beta.)
+{.box}
