@@ -6,9 +6,9 @@
 	{{- $optFirstSans := "0," -}}
 	{{- $optSecondSans := "1," -}}
 	{{- $URLSans := print $URLopen $fontSans $weightIntroSans $optFirstSans $lowWeightSans ".." $topWeightSans ";" $optSecondSans $lowWeightSans ".." $topWeightSans "&display=swap" -}}
-{{- $fontSerif := "" -}}
-	{{- $lowWeightSerif := 100 -}}
-	{{- $topWeightSerif := 900 -}}
+{{- $fontSerif := "STIX+Two+Text" -}}
+	{{- $lowWeightSerif := 400 -}}
+	{{- $topWeightSerif := 700 -}}
 	{{- $weightIntroSerif := ":ital,wght@" -}}
 	{{- $optFirstSerif := "0," -}}
 	{{- $optSecondSerif := "1," -}}
@@ -23,14 +23,15 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-{{- with $fontSans -}}
-	<link href="{{ $URLSans }}" rel="stylesheet">
+{{/* https://discourse.gohugo.io/t/how-to-unescape-plus-sign-in-url-re-cloudflare-fonts/46734 */}}
+{{ with $fontSans -}}
+	<link {{ printf "href=%q" $URLSans | safeHTMLAttr }} rel="stylesheet">
 {{- end }}
-{{- with $fontSerif -}}
-	<link href="{{ $URLSerif }}" rel="stylesheet">
+{{ with $fontSerif -}}
+	<link {{ printf "href=%q" $URLSerif | safeHTMLAttr }} rel="stylesheet">
 {{- end }}
 {{- with $fontMono -}}
-	<link href="{{ $URLMono }}" rel="stylesheet">
+	<link {{ printf "href=%q" $URLMono | safeHTMLAttr }} rel="stylesheet">
 {{- end }}
 
 {{- $css := resources.Get "css/critical.css" | postCSS }}
