@@ -76,6 +76,9 @@ Other considerations:
 
 Vercel's CDN uses AWS. It includes [nineteen](https://vercel.com/docs/concepts/edge-network/regions) of AWS's *Regions*; so, given how AWS [describes its Regions](https://aws.amazon.com/about-aws/global-infrastructure/), it's unclear how many PoPs Vercel's CDN actually covers.
 
+**Note from the future**: At some point after I initially issued this post, Vercel edited the documentation linked above, dropping the regions count to eighteen **but** also adding this considerably more informative description: "In front of these 18 compute-capable regions, Vercel has over 100 points of presence (POPs) distributed across the globe."
+{.box}
+
 The Vercel UI is reasonably easy to use, although somewhat more opaque than Netlify's.
 
 Builds are *very* fast, especially after the first --- indeed, Vercel is, and has long been, the fastest in this category.
