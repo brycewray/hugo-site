@@ -17,7 +17,7 @@ My curious mind leads me into some pretty deep rabbit holes on occasion, especia
 
 ## Browser testing
 
-If you do web dev, you likely have a bunch of browsers on your machine so you can test adequately. However, for just your own browsing pleasure, you'll typically want to pick one as your daily driver. Over and above other considerations --- notably, privacy and security --- you'll want to know which has the best performance. However, as I found in my recent testing, making that determination is anything but easy.
+If you do web dev, you likely have a bunch of browsers on your machine so you can test adequately; but, for just your own browsing pleasure, you'll typically want to pick one as your daily driver. Over and above other considerations --- notably, privacy and security --- you'll want to know which has the best performance. However, as I found in my recent testing, making that determination is anything but easy.
 
 I originally intended this section to have lots of hard data in the form of test results, presented both textually and graphically, but decided in the end to avoid that likely overkill. First, I'll describe *how* and on *what* I ran the tests, and then I'll summarize the results.
 
