@@ -6,7 +6,7 @@ date: 2023-10-23T13:34:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
 # imgs:
-# - 
+# -
 ---
 
 My curious mind leads me into some pretty deep rabbit holes on occasion, especially where web development is concerned. The particular web dev warrens I've explored this month have ranged from browser performance to the capabilities of [Cloudflare Fonts](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/).
@@ -39,10 +39,10 @@ Finally, here's an alphabetical listing of the tested browsers:
 |---|---|---|---|
 | Brave | <span class="emojis">✅</span> | <span class="emojis">✅</span> | <span class="emojis">✅</span> |
 | Google Chrome | <span class="emojis">✅</span> | <span class="emojis">✅</span> | <span class="emojis">✅</span> |
-| Safari | <span class="emojis">✅</span> | n/a | n/a |
-| Safari Technology Preview | <span class="emojis">✅</span> | n/a | n/a |
 | Microsoft Edge | <span class="emojis">✅</span> | <span class="emojis">✅</span> | <span class="emojis">✅</span> |
 | Mozilla Firefox | <span class="emojis">✅</span> | <span class="emojis">✅</span> | <span class="emojis">✅</span> |
+| Safari | <span class="emojis">✅</span> | n/a | n/a |
+| Safari Technology Preview | <span class="emojis">✅</span> | n/a | n/a |
 | Thorium | <span class="emojis">✅</span> | <span class="emojis">✅</span> | <span class="emojis">✅</span> |
 | Ungoogled Chromium | <span class="emojis">✅</span> | <span class="emojis">✅</span> | <span class="emojis">✅</span> |
 | Web | n/a | <span class="emojis">✅</span> | n/a |
@@ -70,7 +70,7 @@ And, on Windows 11, Ungoogled Chromium did pretty well --- thrashing Brave, sur
 
 [^ThoriumUnG]: By the way: [Thorium is **not** an un-Googled form of Chromium](https://github.com/Alex313031/Thorium-Win/issues/1).
 
-- What about Mozilla Firefox? Well, at least on macOS, Firefox is in pretty sad shape where performance is concerned --- *i.e.*, it came in dead last *vs.* all the other browsers[^ARM] --- but, in my testing on Linux and Windows 11, it performed well enough to retain the love it usually gets from its sadly dwindling band of supporters, especially Chromium haters on Linux. 
+- What about Mozilla Firefox? Well, at least on macOS, Firefox is in pretty sad shape where performance is concerned --- *i.e.*, it came in dead last *vs.* all the other browsers[^ARM] --- but, in my testing on Linux and Windows 11, it performed well enough to retain the love it usually gets from its sadly dwindling band of supporters, especially Chromium haters on Linux.
 - The Webkit-ish Web browser that comes with GNOME on Linux is an odd duck. It got a good result on some tests, but on others came in not only last but ’waaaay last. Still, I suspect very few Linux users really use Web rather than Firefox or Brave.
 
 [^ARM]: Perhaps the macOS-on-ARM version of Firefox is particularly challenged *vs.* the macOS-on-Intel version of Firefox. Since my 2017 iMac is now exclusively a Linux box, I couldn't make that comparison.
