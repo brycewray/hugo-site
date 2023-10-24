@@ -95,11 +95,6 @@ html, body {
 	color: var(--default);
 }
 
-body {
-	transition: all .25s ease-in-out;
-	/* for light-dark toggle */
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
