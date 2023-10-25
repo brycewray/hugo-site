@@ -53,7 +53,7 @@ Finally, here's an alphabetical listing of the tested browsers:
 Before I give you these thoughts: yes, I *do* know that many folks totally discount tests like these in favor of just going by "how it feels to me" --- but, if you do find interest in results from real tests that were run as fairly as I could manage, read on.
 
 - Which browser provides the best *out-of-the-box* combination of performance and privacy-protecting features? On macOS, it's Safari (followed closely by Brave). On Linux, it's Brave. On Windows 11, it's Ungoogled Chromium.
-- It's no shock that, strictly on performance, the Apple-controlled Safari scores at or the near the top on the Apple-controlled macOS running on an Apple computer! In similar “D'oh!”-type news: on Windows 11, Microsoft Edge outperforms the pack. In-house optimization is a good thing for performance, one assumes.
+- It's no shock that, strictly on performance, the Apple-controlled Safari scores at or near the top on the Apple-controlled macOS running on an Apple computer! In similar “D'oh!”-type news: on Windows 11, Microsoft Edge outperforms the pack. In-house optimization is a good thing for performance, one assumes.
 - One main question that Mac users must ask themselves is which browser look-and-feel they prefer: Webkit's (Safari) or Chromium's. *(There's a reason I'm not mentioning Mozilla Firefox at this point; more on that later.)* If one prefers Chromium-style browsing, Microsoft Edge and Google Chrome --- privacy concerns aside --- generally out-score other Chromium browsers on macOS, at least where *corporation-controlled* Chromium browsers are concerned.\
 \
 As for *independent* Chromium browsers on *all* the tested OSs . . .
