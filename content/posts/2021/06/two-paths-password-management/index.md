@@ -52,7 +52,7 @@ Fortunately, this isn't true of the basic Windows version of KeePass, which cont
 - **[KeePassXC](https://keepassxc.org/)** for Windows, macOS, and Linux.
 - **[Strongbox](https://www.strongboxsafe.com)** for macOS and iOS. (Paid on macOS, freemium on iOS.)
 
-![Screen capture from KeePassXC](keepassxc_unlock_db_2066x1532.png)
+![Screen capture from KeePassXC](keepassxc_unlock_db_2066x1532.png "Cloudinary")
 
 The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.
 {.imghCaption}
@@ -79,7 +79,7 @@ That, then, takes us to Option 2 among password management apps: the ones that *
 
 This is the sector of password management apps about which you see and hear the most, because it's where the serious money is being made. This involves the likes of [1Password](https://1password.com), [Bitwarden](https://www.bitwarden.com), [Keeper](https://www.keepersecurity.com), [LastPass](https://www.lastpass.com), [NordPass](https://www.nordpass.com), and [RoboForm](https://www.roboform.com), among others.
 
-![Screen capture of the Bitwarden website](bitwarden-com_screen-cap_2021-06-09_3164x1420.png)
+![Screen capture of the Bitwarden website](bitwarden-com_screen-cap_2021-06-09_3164x1420.png "Cloudinary")
 
 The home page on the [Bitwarden website](https://www.bitwarden.com).
 {.imghCaption}

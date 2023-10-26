@@ -40,7 +40,7 @@ As you would reasonably expect, BookMacster works as an extension within each br
 
 Although you have the ability to set up some advanced syncing options, the default "Simple" setup on a collection file's **Syncing** tab will work just fine for the vast majority of folks:
 
-{{< img src="2023-08-14-BookMacster-sync-simple_2496x1448_72dpi.png" alt="The “Syncing” tab for a collection file within the BookMacster app" nobkgd=true >}}
+{{< img src="2023-08-14-BookMacster-sync-simple_2496x1448_72dpi.png" alt="The “Syncing” tab for a collection file within the BookMacster app" proc="Cloudinary" nobkgd=true >}}
 
 Shortly[^increment] after I make a change to the bookmarks on any of the client browsers, BookMacster makes the change happen on the others, as well. Since I maintain a somewhat complicated and often-updated bookmarks bar on my daily-driver browser, it's really nice to have access to it on the other two of the Big Three.
 

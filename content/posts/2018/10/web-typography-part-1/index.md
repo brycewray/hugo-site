@@ -33,11 +33,11 @@ By "easily readable," I mean:
 
 But, rather than rant aimlessly, let me show you some examples of sins against either or both of these principles of web typography. They were current as of when I originally posted this.
 
-![Thin and dim text that is hard to read](Typography-scr-cap-2-2018-10-16_1344x200.png)
+![Thin and dim text that is hard to read](Typography-scr-cap-2-2018-10-16_1344x200.png "Cloudinary")
 
-![More dim text that is hard to read](Typography-scr-cap-3-2018-10-16_1398x252.png)
+![More dim text that is hard to read](Typography-scr-cap-3-2018-10-16_1398x252.png "Cloudinary")
 
-![Still more dim text that is hard to read](Typography-scr-cap-4-2018-10-16_1398x164.png)
+![Still more dim text that is hard to read](Typography-scr-cap-4-2018-10-16_1398x164.png "Cloudinary")
 
 We can do better, friends.
 

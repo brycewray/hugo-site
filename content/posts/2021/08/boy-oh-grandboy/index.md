@@ -20,4 +20,4 @@ Image: Sarah Beck (a/k/a Kennedy’s and Dylan's mom).
 
 Incidentally: as I [recently mentioned](/posts/2021/08/gems-in-rough-08/), I've been paying close attention to the new [Astro](https://astro.build) static site generator and running some tests with it, so I've filed a few issues in its GitHub repository. When it became obvious that Dylan's birth was going to happen **soon**, I responded to one issue's proposed solution to say that I "will have to wait a while before I can try it, however --- my daughter is in the process of delivering our second grandchild." To my delight, this got mentioned on the Astro Discord community, whereupon I was greeted with a slew of congratulatory comments (and accompanying emojis) that I shared with Dylan's proud parents:
 
-![Screen capture from a Discord community chat session](Astro-Discord-general_2021-08-09_1794x1462.png)
+![Screen capture from a Discord community chat session](Astro-Discord-general_2021-08-09_1794x1462.png "Cloudinary")

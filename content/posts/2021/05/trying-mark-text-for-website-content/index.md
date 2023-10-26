@@ -73,12 +73,12 @@ Let's say I want to add a link. If I copy a URL from a browser and try to use Ma
 
 Now, I should note: that's how it works in Mark Text's *standard* appearance mode. If you prefer a sparer, iA Writer-like environment which gives you more control over that sort of thing (as I do), you can use Mark Text's "Source Code Mode"; **but**, at least in the Mac version, the **Undo** command *doesn't work* therein so, hey, no mistakes!
 
-![Screen capture of Mark Text in regular editing mode](Mark-Text_screen-cap_reg-mode-dark_1568x1090.png)
+![Screen capture of Mark Text in regular editing mode](Mark-Text_screen-cap_reg-mode-dark_1568x1090.png "Cloudinary")
 
 *Above*: Mark Text's standard appearance.
 {.imghCaption}
 
-![Screen capture of Mark Text in Source Code Mode](Mark-Text_screen-cap_SC-mode-dark_1568x1210.png)
+![Screen capture of Mark Text in Source Code Mode](Mark-Text_screen-cap_SC-mode-dark_1568x1210.png "Cloudinary")
 
 *Above*: Mark Text in Source Code Mode.
 {.imghCaption}

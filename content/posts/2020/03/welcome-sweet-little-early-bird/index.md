@@ -25,12 +25,12 @@ About nine hours after we received that "breaking" news (sorry), Kennedy Lane Be
 
 As I close this little update about this new little one, please allow "Pawpaw” --- as I apparently will be called --- to share a small smattering of photos about this momentous event in our little family. Think of it as the online equivalent of what I'd have done if this were decades ago and we met on the street, in which case I'd be whipping out a wallet containing photographs of the new arrival.
 
-![Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival](Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg)
+![Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival](Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg "Cloudinary")
 
 Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after she arrived.
 {.imghCaption}
 
-![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg)
+![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg "Cloudinary")
 
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
 {.imghCaption}
