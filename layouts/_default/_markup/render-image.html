@@ -1,69 +1,75 @@
 {{- /*
 	This gives **normal** Markdown images --- i.e., using the `![Alt](imageURL)` syntax (which VS Code auto-completes) --- nearly all functionality of the `imgh` shortcode, except that this: (a.) hard-codes the `holder`, `hint`, and `filter` parameters; and, (b.) assumes no use of either `phn` or `simple`. None of these additional items can be supplied via a render hook but, instead, would require use of the full `imgh` or `imgc` shortcode.
 
+	If `$imgProc` = "local": **every** called image on the site **must** be a Hugo page resource; i.e., it must be in the same folder as the content file that's calling it.
+
 	See also:
 	- https://gohugo.io/templates/render-hooks/
 	- https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
 */ -}}
 {{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
-{{- $proc := .Title -}}{{/* image processor - default is Hugo, option is "Cloudinary"  */}}
+{{- $caption := .Title -}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
-{{- $xFmPart2 := ",x_0,z_01/" -}}
+{{- $xFmPart2 := ",x_0,z_1/" -}}
 {{- $src := .Destination -}}
 {{- $imgBd5 := md5 $src -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
-{{- $hint := "photo" -}}
-{{- $filter := "MitchellNetravali" -}}
-{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
 
 {{- if .Page.Resources.GetMatch $src -}}
 	{{ with .Page.Resources.GetMatch $src }}
+		{{- $hint := "photo" -}}
+		{{- $filter := "MitchellNetravali" -}}
+		{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 		{{- $imgRsc := . -}}
-		{{- $width := $imgRsc.Width -}}
-		{{- $height := $imgRsc.Height -}}
-		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
+		{{- $actualImg := $imgRsc.Resize (print "640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
-		{{- if eq $proc "Cloudinary" -}}
-			{{- with $.Page.Params.imgs }}
-				{{- $imgToGet := print $cloudiBase $src -}}
-				{{- with $imgToGet -}}
-					<img class="{{ $imgClass }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
-					{{- with $respSizes -}}
-						{{- range $i, $e := . -}}
-							{{- if ge $width . -}}
-								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-							{{- end -}}
-						{{- end -}}
-					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-				{{- end -}}
-			{{- end -}}
-		{{- else -}}{{/* fall back to Hugo image processing */}}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+						{{- if ge $imgRsc.Width . -}}
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
 				<source type="image/jpeg" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
+						{{- if ge $imgRsc.Width . -}}
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
-				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+				<img class="{{ $imgClass }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- end -}}
 		</div>
 	{{- end -}}
+{{- else if (resources.GetRemote (print $cloudiBase $src)) -}}
+	{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
+	<div class="{{ $divClass }}" data-pagefind-ignore>
+	{{- with .Page.Params.imgs }}
+		{{- $imgToGet := print $cloudiBase $src -}}
+		{{- with $imgToGet -}}
+			{{- with resources.GetRemote . -}}
+				{{- $width := .Width -}}
+				{{- $height := .Height -}}
+				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 | safeURL }}600{{ $xFmPart2 }}{{ $src }}" srcset="
+				{{- with $respSizes -}}
+					{{- range $i, $e := . -}}
+						{{- if ge $width . -}}
+							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+						{{- end -}}
+					{{- end -}}
+				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+	</div>
 {{- else -}}
-	<p class="ctr legal"><em>Image unavailable.</em></p>
+	<p class="ctr legal"><em>Image unavailable, local or remote.</em></p>
 {{- end -}}
+{{- with $caption -}}<p class="imgCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}

@@ -10,7 +10,7 @@ imgs:
 
 When I was starting this site in September, 2018, its ["About" page](/about/) looked like this:
 
-![Screen capture of this website’s pre-launch appearance in 2018](orig-site_screen-cap_1518x1356.png "Cloudinary")
+![Screen capture of this website’s pre-launch appearance in 2018](orig-site_screen-cap_1518x1356.png)
 
 What I didn't know at the time was that its links were unfriendly from an [accessibility](https://webaim.org/intro/) standpoint --- for two reasons, both of them affecting people with certain visual impairments:
 

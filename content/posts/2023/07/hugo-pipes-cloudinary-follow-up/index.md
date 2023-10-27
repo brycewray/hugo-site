@@ -135,7 +135,7 @@ Invoking the render hook now can look like this (omitting the processor specific
 [^commentsGo]: {{% mdcode-fn %}}
 
 ```md
-{{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" proc="Cloudinary" */>}}
+{{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" */>}}
 ```
 
 So, once again, boys and girls, it's code time.[^defaults] I'll present the three files in the same order as before: the render-image hook; the `img` shortcode; and the partial template which injects image-specific CSS into the `head` of any page that contains any images.

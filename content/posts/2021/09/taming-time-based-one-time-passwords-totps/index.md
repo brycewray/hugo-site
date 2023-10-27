@@ -65,10 +65,10 @@ Incidentally, here’s a little more about Microsoft Authenticator in particular
 
 I’ll offer one final caution regarding Microsoft Authenticator. This comes into play if you do have to use it *and* for some reason end up deleting it and restoring from your previous backup. If so, you must do that at **one specific spot** in the app reinstallation process or else you’ll have to re-enter all your TOTPs:
 
-{{< img src="MS_Authenticator_recovery_prompt_annotated_1125x2436.png" alt="Annotated screen capture from Microsoft Authenticator application setup process" phn=true proc="Cloudinary" >}}
+{{< img src="MS_Authenticator_recovery_prompt_annotated_1125x2436.png" alt="Annotated screen capture from Microsoft Authenticator application setup process" phn=true >}}
 
 This is the only screen in the Microsoft Authenticator setup process where you have a chance to recover previously backed-up TOTPs (annotation added, of course).
-{.imgcCaption}
+{.imgCaption}
 
 In short: you can do better than all these.
 
@@ -78,36 +78,36 @@ So if those are the TOTP apps to avoid, assuming your workplace or school doesn�
 
 For Android devices, you’d be hard-pressed to find something better than [Aegis Authenticator](https://getaegis.app/), a free/open-source software (FOSS) app. Although it mostly lacks cloud backup functionality[^3], it lets you export encrypted vaults to your cloud of choice and access them from there.
 
-{{< img src="Aegis_screenshot_edited_1080x1920.png" alt="Edited screen capture of Aegis Authenticator application" phn=true proc="Cloudinary" >}}
+{{< img src="Aegis_screenshot_edited_1080x1920.png" alt="Edited screen capture of Aegis Authenticator application" phn=true >}}
 
 Aegis Authenticator (TOTPs simulated and some self-identifying text hidden).
-{.imgcCaption}
+{.imgCaption}
 
 For iOS devices, I can strongly recommend [Raivo OTP](https://github.com/raivo-otp/ios-application). Its main app is on iOS, while its recently added macOS app is a “receiver” which lets you copy a TOTP from your phone straight to the Mac clipboard.[^4] It backs up to iCloud and thus makes your TOTPs available on all your iOS devices. Both apps are free, but the dev obviously appreciates — and, in my opinion, deserves — donations to help keep his work going.
 
 **Update, 2023-07-31**: I can no longer recommend Raivo OTP. Please see "[From Raivo OTP to 2FAS](/posts/2023/07/from-raivo-otp-to-2fas/)" for an explanation --- and an **alternative** recommendation for a TOTP app about which I didn't learn until well after initially issuing the post you're reading now.
 {.box}
 
-{{< img src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" phn=true proc="Cloudinary" >}}
+{{< img src="Raivo-OTP_screenshot_edited_1125x2436.png" alt="Edited screen capture of Raivo OTP application" phn=true >}}
 
 Raivo OTP, iOS version (TOTPs simulated and some self-identifying text hidden).
-{.imgcCaption}
+{.imgCaption}
 
 If Raivo OTP doesn’t float your boat for some reason, you can also try [OTP Auth](https://cooperrs.de/otpauth.html). It comes in both iOS and macOS/Catalyst flavors. As with Raivo OTP, it provides backups on iCloud. I prefer Raivo OTP’s UI over that of OTP Auth, but otherwise find each to be equally capable. The iOS app is freemium[^5] while the macOS app must be purchased for, at this writing, $5.99. If you don’t want or need the macOS app, you certainly can use only the iOS app and just manually enter into your Mac the TOTPs the app shows you.
 
-{{< img src="OTP_Auth_screenshot_edited_1125x2436.png" alt="Edited screen capture of OTP Auth application" phn=true proc="Cloudinary" >}}
+{{< img src="OTP_Auth_screenshot_edited_1125x2436.png" alt="Edited screen capture of OTP Auth application" phn=true >}}
 
 OTP Auth, iOS version (TOTPs simulated and some self-identifying text hidden).
-{.imgcCaption}
+{.imgCaption}
 
 Please note that, although Raivo OTP has its code publicly viewable on GitHub, it’s not 100% FOSS due to [its licensing](https://github.com/raivo-otp/ios-application/blob/master/LICENSE.md). Moreover, OTP Auth is strictly closed-source, although it does offer some content on GitHub regarding how to decrypt certain files the app generates. Indeed, if you must have a truly FOSS TOTP app on iOS, you should go with [Tofu Authenticator](https://www.tofuauth.com/). This app provides basic TOTP functionality but offers no backup capability when you change phones other than through a full phone backup to/from a Mac. You see, Tofu Authenticator (purposely?) doesn’t back up the TOTPs to iCloud *or* an iCloud-based backup of your phone. The unwieldiness of the iPhone-to-Mac backup process its dev does suggest[^TofuBackup]  makes this limitation a showstopper for me. On the other hand, you may not even *want* to back up your TOTPs to cloud storage. In that case, especially if you prefer using FOSS whenever possible, you'll probably want Tofu Authenticator.
 
 [^TofuBackup]: See the "FAQ" section on the [Tofu Authenticator website](https://www.tofuauth.com/).
 
-{{< img src="Tofu_Authenticator_screen_cap_edited_1125x2436.png" alt="Edited screen capture of Tofu Authenticator application" phn=true proc="Cloudinary" >}}
+{{< img src="Tofu_Authenticator_screen_cap_edited_1125x2436.png" alt="Edited screen capture of Tofu Authenticator application" phn=true >}}
 
 Tofu Authenticator (TOTPs simulated and some self-identifying text hidden).
-{.imgcCaption}
+{.imgCaption}
 
 ## Time to wrap up this TOTP talk
 

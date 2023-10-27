@@ -34,10 +34,10 @@ The good thing is that, in the nearly two years since the first post, I've encou
 
 [^missed]: Although the 2FAS app [was around](https://2fas.com/about-us/) when I originally issued that post, I somehow missed finding it in my research and, thus, failed to include 2FAS in my summary of satisfactory TOTP apps.
 
-{{< img src="2FAS_screen_cap_edited_1290x2796.png" alt="Edited screen capture of 2FAS application" phn=true proc="Cloudinary" >}}
+{{< img src="2FAS_screen_cap_edited_1290x2796.png" alt="Edited screen capture of 2FAS application" phn=true >}}
 
 2FAS, iOS version (TOTPs simulated and some self-identifying text hidden).
-{.imgcCaption}
+{.imgCaption}
 
 As of now, 2FAS has no macOS version, but it does have a [browser extension](https://2fas.com/browser-extension/); and, of course, [Apple's Universal Clipboard feature](https://support.apple.com/en-us/HT209460) lets you copy a TOTP straight to a nearby Mac from 2FAS on your iDevice.
 

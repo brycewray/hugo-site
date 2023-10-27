@@ -59,10 +59,7 @@ When I came back to Hugo, I figured I'd lost this convenience because Hugo's bui
 
 .&nbsp;.&nbsp;. to produce the following result (borrowed from last year's ["Welcome, sweet little early bird"](/posts/2020/03/welcome-sweet-little-early-bird/) post about the slightly premature birth of our granddaughter, who's nearing her first birthday):
 
-![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg "Cloudinary")
-
-Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
-{.imghCaption}
+![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](BW-holding-Kennedy-first-night__crop_1008x712.jpg "Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough “firsts” for you there?")
 
 ## Hugo 0.81.0 as a labor-saving device
 
@@ -97,10 +94,10 @@ So, now, all I have to do to get that same caption is:
 
 ```md{bigdiv=true}
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
-{.imgcCaption}
+{.imgCaption}
 ```
 
-The only difference from how I did it in the Eleventy/plugins combo is that, in Hugo, it requires a line feed between the end of what you're styling and the attribute (in this case, `{.imgcCaption}` to specify use of the `imgcCaption` class). Hardly a biggie. (With the Eleventy setup, you can put a line feed there, too, so that's even better for cross-site/cross-repo purposes, for those of you like me who are so inclined.)
+The only difference from how I did it in the Eleventy/plugins combo is that, in Hugo, it requires a line feed between the end of what you're styling and the attribute (in this case, `{.imgCaption}` to specify use of the `imgcCaption` class). Hardly a biggie. (With the Eleventy setup, you can put a line feed there, too, so that's even better for cross-site/cross-repo purposes, for those of you like me who are so inclined.)
 
 ## A little thing to some, but&nbsp;.&nbsp;.&nbsp;.
 

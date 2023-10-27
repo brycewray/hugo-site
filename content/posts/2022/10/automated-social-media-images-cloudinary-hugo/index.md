@@ -26,7 +26,7 @@ And if you *do* use Hugo to manage your site and you either have, or are willing
 
 First, look at this tweet of a few months ago from the nice folks at [CloudCannon](https://cloudcannon.com) *(reproduced here as only a graphic, in case ongoing changes to the Twitter platform limit your ability to view the original tweet)*:
 
-{{< img src="Twitter_CloudCannon_1534248828559400960_1774x1838.png" alt="Screen capture of CloudCannon tweet from 2022-06-07, “Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do. Learn more about this feature.”" phn=true proc="Cloudinary" >}}
+{{< img src="Twitter_CloudCannon_1534248828559400960_1774x1838.png" alt="Screen capture of CloudCannon tweet from 2022-06-07, “Using remote data files is a @GoHugoIO feature that unlocks entirely new ways of thinking about what a static site generator can do. Learn more about this feature.”" phn=true >}}
 
 By comparison, the original text of the tweet, before the background processes added that image and its surrounding *social media sharing card*, looked like this:
 
@@ -49,7 +49,7 @@ On the other hand, if you're an SSG user, you can automate that second part thro
 
 A *semi*-automated way to make that image could be something like what I'd been doing until the last couple of days. I'd created a generic background image like this:
 
-![Background image for use with social media image creation](social-OG-w-BW-logo_1024x512.jpg "Cloudinary")
+![Background image for use with social media image creation](social-OG-w-BW-logo_1024x512.jpg)
 
 . . . and then written some code (as I [previously explained](/posts/2022/07/bundling-up-rebuilding-my-hugo-site/)) to [overlay](https://gohugo.io/functions/images/#overlay) that generic background with another image file, `title.png`, which I'd create *manually* for each new web page. I'd chosen to do it this way because I didn't like the limited text-formatting choices involved in using Hugo's more automatic [`Text` filter](https://gohugo.io/functions/images/#text).
 
@@ -72,7 +72,7 @@ https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto
 
 . . . which results in:
 
-{{< img src="2022-10-15_example-cloudinary-soc-img_1280x669.jpg" alt="OG image from URL shown above" proc="Cloudinary" >}}
+{{< img src="2022-10-15_example-cloudinary-soc-img_1280x669.jpg" alt="OG image from URL shown above" >}}
 
 **Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)
 {.box}
@@ -108,10 +108,7 @@ At the beginning of the code block, I mention a fallback image (`$fallbackImg`),
 
 [^fallbackLocal]: This is true when the site is on Hugo, that is. Otherwise, the fallback image is another Cloudinary-hosted asset.
 
-![Monochrome view of hands typing on an old typewriter](typewriter-monochrome_2242164_6260x4374.jpg "Cloudinary")
-
-Image: [rawpixel](https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164); [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=224216).
-{.imghCaption}
+![Monochrome view of hands typing on an old typewriter](typewriter-monochrome_2242164_6260x4374.jpg "Image: [rawpixel](https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164); [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=224216).")
 
 I could also use the fallback image for other pages if I so chose. **Anyway**: if you have no such concerns about having a fallback image for your home page (or any other), feel free to ignore that part.
 
