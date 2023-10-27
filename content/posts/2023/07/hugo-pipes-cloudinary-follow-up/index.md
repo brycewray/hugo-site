@@ -330,3 +330,6 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 	</style>
 {{- end }}
 ```
+
+**Update from the future**: By later [shifting the build process to my local system](/posts/2023/10/direct-deployments-quicker-slicker/) rather than relying on CI/CD "runners," I was able to go back to my [original approach](/posts/2023/07/hugo-pipes-cloudinary/) --- and, I might note, go back to **not** having to keep all site images in the repo. (I'm adding this note just in case any curious soul wonders why my in-repo code is so different from what I've explained and shown in this post.)
+{.box}
