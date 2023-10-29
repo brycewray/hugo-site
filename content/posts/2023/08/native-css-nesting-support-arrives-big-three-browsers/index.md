@@ -34,5 +34,5 @@ Of course, this doesn't mean nesting utopia is here just yet. As I write, the [C
 
 Still, at the rate things are changing, that "while" may well be shorter than one might have believed as recently as a few weeks ago.
 
-**Update, 2023-09-06**: This is a niche-in-a-niche-in-a-niche situation, **but** any visitors locked into Firefox's [Extended Support Release (ESR) "channel"](https://www.mozilla.org/en-US/firefox/enterprise/) (notably, users of the [Debian](https://debian.org) Linux distro, the [*newest* version of which](https://packages.debian.org/bookworm/) includes Firefox ESR *102*.x) may not see a nesting-compatible Firefox version until at least [July, 2024](https://whattrainisitnow.com/release/?version=esr).
+**Update from the future**: Any visitors locked into Firefox's [Extended Support Release (ESR) "channel"](https://www.mozilla.org/en-US/firefox/enterprise/) won't see a nesting-compatible Firefox version until at least [July, 2024](https://whattrainisitnow.com/release/?version=esr). Firefox ESR is a popular deployment choice for enterprises and universities, and it's part of the [Debian](https://debian.org/) Linux distribution.
 {.box}
