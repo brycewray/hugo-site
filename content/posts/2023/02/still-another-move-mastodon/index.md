@@ -7,7 +7,7 @@ date: 2023-02-25T13:52:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-Here's a quickie post to advise that I've found my way to another [Mastodon](https://joinmastodon.org) instance. This time, I'm on the Big Kahuna itself, [mastodon.social](https://mastodon.social), as [@BryceWray@mastodon.social](https://mastodon.social/@BryceWray).
+Here's a quickie post to advise that I've found my way to another [Mastodon](https://joinmastodon.org) instance. This time, I'm on the Big Kahuna itself, [mastodon.social](https://mastodon.social), as @BryceWray@mastodon.social.
 
 <!--more-->
 

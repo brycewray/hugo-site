@@ -20,7 +20,7 @@ Then, yesterday, I asked Cloudinary to re-activate AVIF support for my use of `f
 - The site no longer uses "hero images" due to, again, CTCAJW Mode; so, even on a browser/OS combo where AVIF support makes it huff and puff, a page on this site **isn't** going to start off loading a big honkin' photo, much less one that's in AVIF. And, better yet . . .
 - Effective with the recent major updates to macOS, iOS, and iPadOS, the Safari browser [does properly support AVIF](https://caniuse.com/?search=avif). All other truly relevant browsers and platforms have supported AVIF for some time, so this additional support should reduce or eliminate any remaining drawbacks of delivering AVIF files.[^updates]
 
-[^updates]: Always remember that [it's wise to keep your web browser as up-to-date as possible](https://www.cisa.gov/uscert/publications/securing-your-web-browser).
+[^updates]: Always remember that [it's wise to keep your web browser as up-to-date as possible](https://blog.envisionitsolutions.com/4-reasons-why-you-should-update-your-web-browser).
 
 Cloudinary granted my request later that day; so, on the site's pages which do have some images, you now get even more of a break on image download size with my use of `f_auto` than was previously the case.
 

@@ -10,7 +10,7 @@ initTextEditor: iA Writer # default --- change if needed
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/simplifying-switcheroos-4m2f).
 {.box}
 
-It's a web meme that began as [a line from *Jurassic Park*](https://www.imdb.com/title/tt0107290/quotes/qt1464414):
+It's a web meme that began as a line from *Jurassic Park*:
 
 > . . . your scientists were so preoccupied with whether or not they *could* that they didn't stop to think if they *should*.
 

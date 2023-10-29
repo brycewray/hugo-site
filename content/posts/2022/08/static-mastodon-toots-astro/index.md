@@ -9,7 +9,7 @@ date: 2022-08-29T14:36:00-05:00
 **Update from the future**: Due to issues [I subsequently encountered](/posts/2022/10/accepting-reality-astro/) during development, this [Astro](https://astro.build) code **doesn't** include certain functionality that I would later add to the [Hugo](https://gohugo.io) code on which, as explained below, this is based.
 {.box}
 
-While experimenting with various static site generators (SSGs), I've created an Astro component for embedding static "toots" from [Mastodon](https://joinmastodon.org), similar to code I've offered here for Hugo and [Eleventy](https://11ty.dev). I offer the `SToot.astro` component here in somewhat edited form, with its original version available in [a repo](https://github.com/brycewray/astro-site/blob/main/src/components/SToot.astro). As was the case with the [earlier](/posts/2022/06/static-mastodon-toots-hugo/) [incarnations](/posts/2022/08/static-embeds-eleventy/), you'll specify the toot's Mastodon instance and numeric ID:
+While experimenting with various static site generators (SSGs), I've created an Astro component for embedding static "toots" from [Mastodon](https://joinmastodon.org), similar to code I've offered here for Hugo and [Eleventy](https://11ty.dev). I offer the `SToot.astro` component here in somewhat edited form as compared to its original version. As was the case with the [earlier](/posts/2022/06/static-mastodon-toots-hugo/) [incarnations](/posts/2022/08/static-embeds-eleventy/), you'll specify the toot's Mastodon instance and numeric ID:
 
 ```js
 <SToot
@@ -22,7 +22,7 @@ While experimenting with various static site generators (SSGs), I've created an 
 
 {{< stoot "mastodon.social" "108241788606585248" >}}
 
-Note that `SToot.astro` assumes you have the [`date-fns`](https://github.com/date-fns/date-fns) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project. (By the way: in my original version of the component, I used [this styling](https://github.com/brycewray/astro-site/blob/main/src/styles/Twitter.scss).)
+Note that `SToot.astro` assumes you have the [`date-fns`](https://github.com/date-fns/date-fns) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
 
 **Suggestion**: You may want to read my [earlier post about the Hugo static-toots-embedding code](/posts/2022/06/static-mastodon-toots-hugo/), particularly regarding certain limitations which result from how Mastodon itself works.
 {.box}

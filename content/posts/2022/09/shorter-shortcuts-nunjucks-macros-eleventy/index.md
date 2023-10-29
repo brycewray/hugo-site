@@ -29,7 +29,7 @@ But, as I additionally noted at the time, it could be reduced to just one line i
 {{</* lite-youtube videoTitle="How to make Eyeballs that Follow You Around" videoId="TGe3pS5LqEw" */>}}
 ```
 
-Then, months later, I created an [Astro](https://astro.build) [component](https://github.com/brycewray/astro-site/blob/main/src/components/Lite-YouTube.astro) that also could be called by, yes, just one line:
+Then, months later, I created an [Astro](https://astro.build) component that also could be called by, yes, just one line:
 
 ```html{bigdiv=true}
 <LiteYT videoTitle="How to make Eyeballs that Follow You Around" videoId="TGe3pS5LqEw" />

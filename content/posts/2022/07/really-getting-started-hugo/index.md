@@ -42,7 +42,9 @@ But, now, I see there are problems with relying so thoroughly on a themes-orient
 
 [^Ananke]: In all fairness, I will concede that [Ananke](https://themes.gohugo.io/themes/gohugo-theme-ananke/), the specific theme the Hugo documentation recommends for a new user, *is* faithfully maintained by [The New Dynamic](https://www.thenewdynamic.com/), a firm that's well-known for expertise in both web development and design in general. That said, I think Ananke lacks sufficient code documentation for a new user's comfort *and* just flat-out has a [lot more than a new user needs or may even want](https://github.com/theNewDynamic/gohugo-theme-ananke), thus providing unnecessary complexity. One who is just learning how to play the piano probably shouldn't be given sheet music from a Mozart composition; basic scales make a better starting point.
 
-In an admirable attempt to get around such problems while still honoring the documentation's "newbies-should-use-themes" stance, [Andrew Quinn](https://andrew-quinn.me/) has created [`hugo-plain-theme`](https://github.com/hiAndrewQuinn/hugo-plain-theme). It's ultra-simple, includes clear instructions, and delivers the intended result.
+In an admirable attempt to get around such problems while still honoring the documentation's "newbies-should-use-themes" stance, [Andrew Quinn](https://andrew-quinn.me/) has created `hugo-plain-theme`.[^deadlink] It's ultra-simple, includes clear instructions, and delivers the intended result.
+
+[^deadlink]: The repo for `hugo-plain-theme` is no longer publicly available as of <span class="nobrk">2023-10-29</span>.
 
 So, what could be the problem with that?
 

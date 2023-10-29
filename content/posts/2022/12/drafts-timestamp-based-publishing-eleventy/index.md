@@ -114,10 +114,12 @@ if (bothModes) {
 I've ordered these sources by each item's date of initial publication, starting with the oldest.
 
 - Remy Sharp, "[Scheduled and draft 11ty posts](https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts)" <span class="nobrk">(2019-06-26)</span>.
-- Giustino Borzacchiello, "[How to create drafts in Eleventy](https://giustino.blog/how-to-drafts-eleventy/)" <span class="nobrk">(2020-01-04)</span>.
+- Giustino Borzacchiello, "How to create drafts in Eleventy" <span class="nobrk">(2020-01-04)</span>.[^deadlink]
 - Kyle Halleman, "[Creating drafts in Eleventy](https://mymanycoloredways.com/posts/2021/02/creating-drafts-in-eleventy/)" <span class="nobrk">(2021-02-09)</span>.
 - John Kemp-Cruz, "[Creating Drafts In Eleventy](https://jkc.codes/blog/creating-drafts-in-eleventy/)" <span class="nobrk">(2021-08-06)</span>.
 - Peter deHaan, [comment](https://github.com/11ty/eleventy/issues/2060#issuecomment-955777844) in [Eleventy issue #2060](https://github.com/11ty/eleventy/issues/2060) <span class="nobrk">(2021-10-31)</span>.
 - Peter deHaan, [`11ty-drafts` GitHub repo](https://github.com/pdehaan/11ty-drafts) <span class="nobrk">(2021-10-31)</span>.
 - Juneum, "[Draft Posts in Eleventy](https://juneum.com/articles/eleventy-drafts/)" <span class="nobrk">(2022-02-08)</span>.
 - Raymond Camden, "[Support Draft Blog Posts in Eleventy](https://www.raymondcamden.com/2022/08/14/support-draft-blog-posts-in-eleventy)" <span class="nobrk">(2022-08-14)</span>.
+
+[^deadlink]: Article no longer online as of <span class="nobrk">2023-10-29</span>.

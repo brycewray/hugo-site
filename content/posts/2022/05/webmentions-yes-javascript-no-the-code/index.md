@@ -33,10 +33,6 @@ The code itself will generate some questions that are easy to anticipate, so her
 - No, not all the variables are being used; and they may not be for quite a while, if ever.
 - No, the code doesn't yet implement the *sending* of webmentions, a capability I've never yet seen fit to add to this site. Besides, even if I were to add it, I'd probably do it in a separate partial while keeping this one as the receive-webmentions partial (hence the `rx` in its name, `webmentions-rx.html`).
 
-### Styling
-
-If you want to see the classes I use to style the webmentions, they're on the site repo as (at this writing) an SCSS partial called [`_webmentions.scss`](https://github.com/brycewray/hugo-site/blob/main/assets/scss/partials/_webmentions.scss). Of course, that styling is in coordination with variables and other items from within the site's overall SCSS, so you might need to do some digging (or, better yet, using your browser's Inspector tool on some of my existing webmentions); but this will give you at least some idea of how to style your webmentions.
-
 ## And now, the code
 
 ### Sample API return (optional viewing)

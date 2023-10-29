@@ -54,7 +54,7 @@ What Google Fonts lets you download is, rather than *web* fonts in the .woff2 an
 
 What, then, to do?
 
-If all your desired Google Fonts typefaces are *static* fonts, there's a great answer: use the excellent **[google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts)**.
+If all your desired Google Fonts typefaces are *static* fonts, there's a great answer: use the excellent **[google-webfonts-helper](https://gwfh.mranftl.com/fonts)**.
 
 ![Screen capture of google-webfonts-helper as of 2020-08-09](google-webfonts-helper_2516x1134.png)
 

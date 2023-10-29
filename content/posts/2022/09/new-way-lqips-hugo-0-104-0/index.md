@@ -55,9 +55,7 @@ So, with Hugo 0.104.0 and up, you can try something like the following, in which
 
 After specifying that `$LQIP_colors` is the return from `$src.Colors`, we have the conditional for handling a one-color return: "if the length of `$LQIP_colors` is less than *2*, `append` to `$LQIP_colors` the color black (`#000000`)." Right after that, we:
 - Create `$LQIP_bkgd`, which is a string containing the contents of `$LQIP_colors`, with each pair separated by a `delimit`-ing comma and space. That's for . . .
-- . . . `$style`, the CSS we'll provide to the eventual `div` in which the real image will be contained.[^CSP]
-
-[^CSP]: If you have a strict [Content Security Policy](https://content-security-policy.com) and need to work around the issue of inline styling, you might want to examine the admittedly more complicated [original](https://github.com/brycewray/hugo-site/blob/main/layouts/shortcodes/imgh.html) from which I extracted this example.
+- . . . `$style`, the CSS we'll provide to the eventual `div` in which the real image will be contained.
 
 Finally, be sure to check the `$.Colors` [example page](https://staticbattery.com/), and its [source code](https://github.com/bep/gallerydeluxe), mentioned in the 0.104.0 release notes.
 

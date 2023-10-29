@@ -26,7 +26,7 @@ In a corresponding [Eleventy Blog](https://www.11ty.dev/blog/) [post](https://ww
 
 ## Handling variables in Hugo
 
-While working on my [recent](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/static-tweets-eleventy-hugo-part-2/) concerning how to embed fully static tweets in Eleventy and [Hugo](https://gohugo.io/) (about which a little more in the next item), I learned something worth passing along. It likely isn’t news to *you*, but *I’d* overlooked it up to that point.
+While working on my [recent](/posts/2022/02/static-tweets-eleventy-hugo/) [posts](/posts/2022/02/static-tweets-eleventy-hugo-part-2/) concerning how to embed fully static tweets in Eleventy and [Hugo](https://gohugo.io/) (about which a little more in the next item), I learned something worth passing along. It likely isn’t news to *you*, but *I’d* overlooked it up to that point.
 
 I used to think it was necessary to use [`Scratch`](https://gohugo.io/functions/scratch) to get variables’ values out of a loop, due to a [known scoping issue](https://www.regisphilibert.com/blog/2017/04/hugo-scratch-explained-variable/) within the [Go](https://go.dev) language on which Hugo is based.[^1] <span class="text-nowrap">Well-l-l-l,</span> not so. The trick is to initialize such variables with the Go `:=` operator and then assign values to them afterward with the `=` operator. Or, to put it another way: once you’ve initialized the variables with `:=`, you can pretty much handle them, from there on, the same way you would in any other SSG.[^2]
 
@@ -64,7 +64,7 @@ This will say, as we want:
 -->
 ```
 
-This ability to [overwrite template variables](https://github.com/golang/go/issues/10608) wasn’t always possible in either Go or Hugo, so you can find really old web pages, discussions, and tutorials which could steer you wrong on this subject. However, as long as you’re using any version of Hugo since the [release of Hugo 0.48](https://gohugo.io/news/0.48-relnotes/), you’re good to go with the above.
+This ability to [overwrite template variables](https://github.com/golang/go/issues/10608) wasn’t always possible in either Go or Hugo, so you can find really old web pages, discussions, and tutorials which could steer you wrong on this subject. However, as long as you’re using any version of Hugo since the [release of Hugo 0.48](https://github.com/gohugoio/hugo/releases/tag/v0.48), you’re good to go with the above.
 
 I am perturbed to have remained ignorant of this up to now, since Hugo 0.48 appeared in *August, 2018* — precisely around the time that I first started using Hugo! Ah, well. As I told you [three years ago](/posts/2019/02/old-dog-old-trick/#share-the-shame-but-share-the-help-too):
 

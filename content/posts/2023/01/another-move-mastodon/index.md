@@ -15,7 +15,7 @@ Let me make clear above all else that Fosstodon is an **outstanding** instance a
 
 So why did I leave it?
 
-Well, at least as of this writing, I haven't *completely* left it; my account there is in "redirect" mode, and all the posts/toots I made there over the last few months remain intact. However, putting it in that mode moved the account's followers to the [mstdn.social account](https://mstdn.social/@BryceWrayTX) which, through the kind help of mstdn.social admin [@stux](https://mstdn.social/@stux), I'd gotten reactivated months after I deleted it.
+Well, at least as of this writing, I haven't *completely* left it; my account there is in "redirect" mode, and all the posts/toots I made there over the last few months remain intact. However, putting it in that mode moved the account's followers to the mstdn.social account which, through the kind help of mstdn.social admin [@stux](https://mstdn.social/@stux), I'd gotten reactivated months after I deleted it.
 
 It wasn't that there was anything wrong with Fosstodon. Rather, I decided, **I** wasn't entirely right for **it**. I reached this conclusion based on a thread which began last night with this from another Fosstodon user:
 

@@ -23,6 +23,6 @@ The impending demise of mastodon.technology forced me to make the following chan
 	- "[Static embeds in Eleventy](/posts/2022/08/static-embeds-eleventy/)" <span class="nobrk">(2022-08-27)</span>.
 	- "[Static Mastodon toots in Astro](/posts/2022/08/static-mastodon-toots-astro/)" <span class="nobrk">(2022-08-29)</span>.
 
-As I [tooted yesterday](https://fosstodon.org/@BryceWrayTX/109123091442024458) upon my migration (along with a link to the aforementioned blog post by Furrow):
+As I tooted yesterday upon my migration (along with a link to the aforementioned blog post by Furrow):
 
 > Sad to see mastodon.technology go (best wishes to Ash Furrow), but am hoping to be a good citizen (again) here on fosstodon.org.
