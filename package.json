@@ -20,6 +20,8 @@
     "start": "NODE_ENV=development npm-run-all clean dev:hugo",
     "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
     "build": "npm-run-all build:prelim move-excerpts search",
+		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
+		"deploy": "npm-run-all build deploy:wrangler",
     "testbuild:hugo": "npm run dev:hugo -- --minify --environment production",
     "testbuild": "npm-run-all clean build:prelim move-excerpts testbuild:hugo",
     "testbuildpf": "npm-run-all build:prelim move-excerpts testbuild:search testbuild:hugo"
