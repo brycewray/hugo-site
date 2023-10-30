@@ -52,7 +52,10 @@ Fortunately, this isn't true of the basic Windows version of KeePass, which cont
 - **[KeePassXC](https://keepassxc.org/)** for Windows, macOS, and Linux.
 - **[Strongbox](https://www.strongboxsafe.com)** for macOS and iOS. (Paid on macOS, freemium on iOS.)
 
-![Screen capture from KeePassXC](keepassxc_unlock_db_2066x1532.png "The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.")
+![Screen capture from KeePassXC](keepassxc_unlock_db_2066x1532.png)
+
+The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.
+{.imgCaption}
 
 Now, let's consider that "on each device" business concerning the database file.
 
@@ -76,7 +79,10 @@ That, then, takes us to Option 2 among password management apps: the ones that *
 
 This is the sector of password management apps about which you see and hear the most, because it's where the serious money is being made. This involves the likes of [1Password](https://1password.com), [Bitwarden](https://www.bitwarden.com), [Keeper](https://www.keepersecurity.com), [LastPass](https://www.lastpass.com), [NordPass](https://www.nordpass.com), and [RoboForm](https://www.roboform.com), among others.
 
-![Screen capture of the Bitwarden website](bitwarden-com_screen-cap_2021-06-09_3164x1420.png "The home page on the [Bitwarden website](https://www.bitwarden.com).")
+![Screen capture of the Bitwarden website](bitwarden-com_screen-cap_2021-06-09_3164x1420.png)
+
+The home page on the [Bitwarden website](https://www.bitwarden.com).
+{.imgCaption}
 
 Each involves cloud sync from the word "go"[^Enpass] (although Bitwarden [can be self-hosted](https://bitwarden.com/help/article/install-on-premise/) by those who are sufficiently knowledgeable about "hardening" servers --- which points us back toward the "this is for techies only" segment already owned by KeePass fans) and provides options for all the major operating systems and device types, as well as extensions for the vast majority of modern web browsers to further simplify your logging into websites. These providers’ user-friendly apps and web browser extensions[^extsKP] give the non-KeePass way a **huge** usability advantage over the KeePass way.
 

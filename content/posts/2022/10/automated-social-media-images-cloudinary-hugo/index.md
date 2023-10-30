@@ -72,7 +72,9 @@ https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto
 
 . . . which results in:
 
-{{< img src="2022-10-15_example-cloudinary-soc-img_1280x669.jpg" alt="OG image from URL shown above" >}}
+<div class="relative bg-center bigImgDiv" data-pagefind-ignore>
+	<img src="https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1136,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" alt="Social media image for post, “Automated social media images with Cloudinary and Hugo”" />
+</div>
 
 **Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)
 {.box}
@@ -108,7 +110,10 @@ At the beginning of the code block, I mention a fallback image (`$fallbackImg`),
 
 [^fallbackLocal]: This is true when the site is on Hugo, that is. Otherwise, the fallback image is another Cloudinary-hosted asset.
 
-![Monochrome view of hands typing on an old typewriter](typewriter-monochrome_2242164_6260x4374.jpg "Image: [rawpixel](https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164); [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=224216).")
+![Monochrome view of hands typing on an old typewriter](typewriter-monochrome_2242164_6260x4374.jpg)
+
+Image: [rawpixel](https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164); [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=224216).
+{.imgCaption}
 
 I could also use the fallback image for other pages if I so chose. **Anyway**: if you have no such concerns about having a fallback image for your home page (or any other), feel free to ignore that part.
 

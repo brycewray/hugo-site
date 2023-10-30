@@ -86,7 +86,7 @@ For example, here's `img.html` in use with my usual go-to image for this kind of
 
 . . . which gives you:
 
-{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" >}}
+{{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" proc="Cloudinary" >}}
 
 Now, without further ado, here's the relevant code.[^defaults] [^styling] Of course, you must insert your own Cloudinary "cloud name" in the `$myCloud` variable to make this work for your Hugo project.
 
