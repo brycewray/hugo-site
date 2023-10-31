@@ -17,7 +17,7 @@ Thus, I spent a good part of this past weekend getting comfortable with how nati
 
 ## Word from the WebKit team
 
-A few days ago, a [post](https://webkit.org/blog/13813/try-css-nesting-today-in-safari-technology-preview/) on the [WebKit blog](https://webkit.org/blog/) urged web developers to give CSS nesting a try on [Safari Technology Preview 162](https://webkit.org/blog/13703/release-notes-for-safari-technology-preview-162/). The post, written by [long-time CSS guru Jen Simmons](https://front-end.social/@jensimmons) of the Apple/Webkit team, explained that the feature's [availability within both STP162 and Google Chrome 112+](https://caniuse.com/?search=CSS-nesting) provided a perfect opportunity to perform such tests.
+A few days ago, a [post](https://webkit.org/blog/13813/try-css-nesting-today-in-safari-technology-preview/) on the [WebKit blog](https://webkit.org/blog/) urged web developers to give CSS nesting a try on [Safari Technology Preview 162](https://webkit.org/blog/13703/release-notes-for-safari-technology-preview-162/). The post, written by [long-time CSS guru Jen Simmons](https://front-end.social/@jensimmons) of the Apple/WebKit team, explained that the feature's [availability within both STP162 and Google Chrome 112+](https://caniuse.com/?search=CSS-nesting) provided a perfect opportunity to perform such tests.
 
 (By the way: at this writing, the folks at Firefox would seem, based on this [bug report](https://bugzilla.mozilla.org/show_bug.cgi?id=1648037), to be nowhere near ready to add CSS nesting; indeed, the feature doesn't even appear on Mozilla's [Specification Positions page](https://mozilla.github.io/standards-positions/).)
 

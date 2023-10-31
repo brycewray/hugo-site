@@ -54,7 +54,7 @@ Before I give you these thoughts: yes, I *do* know that many folks totally disco
 
 - Which browser provides the best *out-of-the-box* combination of performance and privacy-protecting features? On macOS, it's Safari (followed closely by Brave). On Linux, it's Brave. On Windows 11, it's Ungoogled Chromium.
 - It's no shock that, strictly on performance, the Apple-controlled Safari scores at or near the top on the Apple-controlled macOS running on an Apple computer! In similar “D'oh!”-type news: on Windows 11, Microsoft Edge outperforms the pack. In-house optimization is a good thing for performance, one assumes.
-- One main question that Mac users must ask themselves is which browser look-and-feel they prefer: Webkit's (Safari) or Chromium's. *(There's a reason I'm not mentioning Mozilla Firefox at this point; more on that later.)* If one prefers Chromium-style browsing, Microsoft Edge and Google Chrome --- privacy concerns aside --- generally out-score other Chromium browsers on macOS, at least where *corporation-controlled* Chromium browsers are concerned.\
+- One main question that Mac users must ask themselves is which browser look-and-feel they prefer: WebKit's (Safari) or Chromium's. *(There's a reason I'm not mentioning Mozilla Firefox at this point; more on that later.)* If one prefers Chromium-style browsing, Microsoft Edge and Google Chrome --- privacy concerns aside --- generally out-score other Chromium browsers on macOS, at least where *corporation-controlled* Chromium browsers are concerned.\
 \
 As for *independent* Chromium browsers on *all* the tested OSs . . .
 - The often-mentioned [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) performed fairly poorly on macOS, and thus I would recommend it to only those macOS users who must have the Chromium look-and-feel while completely avoiding Google encroachment.\
@@ -71,7 +71,7 @@ And, on Windows 11, Ungoogled Chromium did pretty well --- thrashing Brave, sur
 [^ThoriumUnG]: By the way: [Thorium is **not** an un-Googled form of Chromium](https://github.com/Alex313031/Thorium-Win/issues/1).
 
 - What about Mozilla Firefox? Well, at least on macOS, Firefox is in pretty sad shape where performance is concerned --- *i.e.*, it came in dead last *vs.* all the other browsers[^ARM] --- but, in my testing on Linux and Windows 11, it performed well enough to retain the love it usually gets from its sadly dwindling band of supporters, especially Chromium haters on Linux.
-- The Webkit-ish Web browser that comes with GNOME on Linux is an odd duck. It got a good result on some tests, but on others came in not only last but ’waaaay last. Still, I suspect very few Linux users really use Web rather than Firefox or Brave.
+- The WebKit-ish Web browser that comes with GNOME on Linux is an odd duck. It got a good result on some tests, but on others came in not only last but ’waaaay last. Still, I suspect very few Linux users really use Web rather than Firefox or Brave.
 
 [^ARM]: Perhaps the macOS-on-ARM version of Firefox is particularly challenged *vs.* the macOS-on-Intel version of Firefox. Since my 2017 iMac is now exclusively a Linux box, I couldn't make that comparison.
 
