@@ -3,9 +3,6 @@
   "description": "This is the repository from which the Hugo-generated version of https://www.brycewray.com/ is built.",
   "author": "Bryce Wray",
   "license": "MIT",
-  "engines": {
-    "node": "20.x"
-  },
   "config": {
     "hugo": "0.119.0",
     "myIP": "192.168.0.70"
