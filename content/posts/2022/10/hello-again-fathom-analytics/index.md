@@ -7,6 +7,8 @@ date: 2022-10-11T13:14:00-05:00
 initTextEditor: iA Writer # default --- change if needed
 ---
 
+{{% disclaimer %}}
+
 This isn't, and likely never will be, a high-traffic website. But it has its moments. Occasionally, it catches eyes as a result of a mention on [Hacker News](https://news.ycombinator.com), or [Dev.to](https://dev.to), or the [Hugo](https://gohugo.io) [Discourse forum](https://discourse.gohugo.io). Or wherever. And, when that occurs, it's nice to be able to watch it happen. It gives me a clearer picture of where my readers are in the world, what browsers and devices they're using, and which sites sent them to me.
 
 <!--more-->
@@ -42,3 +44,6 @@ Some readers with their own websites [told](/contact/) me they agreed with my ea
 Well, that's a perfectly legitimate point of view, and **I share it** --- at least the part about content. After all, if I wrote based on likely traffic rather than my own nerdy predilections, you'd see a totally different set of content around here.
 
 So, yes, the numbers are back; but, no, they won't have one tiny effect on my freedom to pick any subject matter on which I want to share some thoughts. After all, that's part of [CTCAJW Mode](/posts/2022/05/simplify-simplify-maybe-for-real-this-time/), to which I've committed the site for the remainder of its days, whatever *that* particular number may be.
+
+**Update, 2023-11-03**: I stayed with Fathom Analytics for thirteen more months but, once again, dropped it after determining that my miniscule traffic didn't justify the cost, even if the affiliate referral commission *does* still more than pay for it.
+{.box}
