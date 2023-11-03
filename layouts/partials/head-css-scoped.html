@@ -4,11 +4,11 @@
 {{- /*
 	save some repetition below
 */ -}}
-{{- $titleSitemap := .Site.Params.Titles.Sitemap -}}
-{{- $titleHome := .Site.Params.Titles.Home -}}
-{{- $titlePostslist := .Site.Params.Titles.Postslist -}}
-{{- $titleFourOhFour := .Site.Params.Titles.FourOhFour -}}
-{{- $titleSearch := .Site.Params.Titles.Search -}}
+{{- $titleSitemap := site.Params.Titles.Sitemap -}}
+{{- $titleHome := site.Params.Titles.Home -}}
+{{- $titlePostslist := site.Params.Titles.Postslist -}}
+{{- $titleFourOhFour := site.Params.Titles.FourOhFour -}}
+{{- $titleSearch := site.Params.Titles.Search -}}
 
 {{- $conditionSocial := false -}}
 {{- $conditionCode := false -}}
@@ -32,7 +32,7 @@
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
 {{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
 {{- if (and (ne .Title $titleHome) (ne .Title $titleSitemap) (ne .Title $titlePostslist) (ne .Title $titleFourOhFour)) -}}{{- $conditionBillboard = true -}}{{- end -}}
-{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
+{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title site.Params.Titles.About) (eq .Title site.Params.Titles.Privacy) (eq .Title site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
 {{- if (and (eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
 {{- if (eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
 {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}

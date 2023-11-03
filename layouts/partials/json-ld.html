@@ -3,11 +3,11 @@
 {
 	"@context": "https://schema.org",
 	"@type": "WebSite",
-	"name": "{{ .Site.Title }}",
-	"description": "{{ .Site.Params.Description }}",
-	"url": {{ .Site.BaseURL }},
-	"thumbnailUrl": {{ with .Site.Params.AuthorAvatar -}}{{ . | absURL }}{{- end -}},
-	"license": "{{ .Site.Params.License }}"
+	"name": "{{ site.Title }}",
+	"description": "{{ site.Params.Description }}",
+	"url": {{ site.BaseURL }},
+	"thumbnailUrl": {{ with site.Params.AuthorAvatar -}}{{ . | absURL }}{{- end -}},
+	"license": "{{ site.Params.License }}"
 }
 </script>
 {{- else if .IsPage -}}
@@ -15,11 +15,11 @@
 	{{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
 	{{- $wordCount := $wordsToCount | countwords -}}
 	{{- $typeEntry := "WebPage" -}}
-	{{- if eq .Title .Site.Params.Titles.About -}}
+	{{- if eq .Title site.Params.Titles.About -}}
 		{{- $typeEntry = "AboutPage" -}}
-	{{- else if eq .Title .Site.Params.Titles.Search -}}
+	{{- else if eq .Title site.Params.Titles.Search -}}
 		{{- $typeEntry = "SearchResultsPage" -}}
-	{{- else if eq .Title .Site.Params.Titles.Contact -}}
+	{{- else if eq .Title site.Params.Titles.Contact -}}
 		{{- $typeEntry = "ContactPage" -}}
 	{{- end -}}
 <script type="application/ld+json">
@@ -31,7 +31,7 @@
 	"headline": "{{ .Title | safeJS }}",
 	"alternativeHeadline": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
 	"description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
-	"inLanguage": "{{ .Site.LanguageCode }}",
+	"inLanguage": "{{ site.LanguageCode }}",
 	"isFamilyFriendly": "true",
 	"mainEntityOfPage": {
 		"@type": "{{ $typeEntry }}",
@@ -39,28 +39,28 @@
 	},
 	"author": {
 		"@type": "Person",
-		"@id": "{{ .Site.Params.Author }}"
+		"@id": "{{ site.Params.Author }}"
 	},
 	"creator": {
 		"@type": "Person",
-		"name": "{{ .Site.Params.Author }}"
+		"name": "{{ site.Params.Author }}"
 	},
 	"accountablePerson": {
 		"@type": "Person",
-		"name": "{{ .Site.Params.Author }}"
+		"name": "{{ site.Params.Author }}"
 	},
-	"copyrightHolder": "{{ .Site.Params.Author }}",
+	"copyrightHolder": "{{ site.Params.Author }}",
 	"copyrightYear": "{{ now.Year }}",
 	"dateCreated": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
 	"datePublished": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
 	"dateModified": "{{- if .GitInfo -}}{{ (.GitInfo.AuthorDate).Format "2006-01-02" | safeHTML }}{{- else -}}{{ .PublishDate.Format "2006-01-02" | safeHTML }}{{- end -}}",
 	"publisher": {
 		"@type": "Person",
-		"name": "{{ .Site.Params.Author }}",
-		"url": {{ .Site.BaseURL }},
+		"name": "{{ site.Params.Author }}",
+		"url": {{ site.BaseURL }},
 		"logo": {
 			"@type": "ImageObject",
-			"url": {{ with .Site.Params.Logo -}}{{ . | absURL }}{{- end -}},
+			"url": {{ with site.Params.Logo -}}{{ . | absURL }}{{- end -}},
 			"width": "32",
 			"height": "32"
 		}

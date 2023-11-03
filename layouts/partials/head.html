@@ -8,9 +8,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{{- /* <meta http-equiv="X-UA-Compatible" content="ie=edge"> */}}
 	{{- if .IsHome }}
-		<title>{{ .Site.Title }}</title>
+		<title>{{ site.Title }}</title>
 	{{- else }}
-		<title>{{ .Title }} | {{ .Site.Title }}</title>
+		<title>{{ .Title }} | {{ site.Title }}</title>
 	{{- end }}
 	{{ hugo.Generator }}
 {{/* CSS */}}

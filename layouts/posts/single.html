@@ -1,6 +1,6 @@
 {{- /* https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945/2 */ -}}
 {{- define "main" -}}
-{{- $email := .Site.Params.AuthorEmail -}}
+{{- $email := site.Params.AuthorEmail -}}
 {{- partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article" id="postArticle">

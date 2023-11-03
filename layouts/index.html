@@ -7,7 +7,7 @@
 			<div class="homePost-Div">
 				<div class="post-line"></div>
 				<h2 class="homePost-Latest">Latest posts</h2>
-				{{- range first 3 (where .Site.RegularPages "Section" "posts") }}
+				{{- range first 3 (where site.RegularPages "Section" "posts") }}
 				<div>
 					<h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
 					<p class="homePost-Description">
@@ -18,7 +18,7 @@
 					</p>
 				</div>
 				{{- end }}
-				<p class="homePost-Finish"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey">(listed five per page)</span></p>
+				<p class="homePost-Finish"><a href="/posts/"><strong>All {{ len (where site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey">(listed five per page)</span></p>
 			</div>
 		</div>
 		{{- end }}

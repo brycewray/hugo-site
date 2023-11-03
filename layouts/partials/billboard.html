@@ -16,8 +16,8 @@
 {{- $readingTimeSecsInt := printf "%02v" $readingTimeSecs -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 {{/* DRY-er... */}}
-	{{- $titleSearch := .Site.Params.Titles.Search -}}
-	{{- $titleContact := .Site.Params.Titles.Contact -}}
+	{{- $titleSearch := site.Params.Titles.Search -}}
+	{{- $titleContact := site.Params.Titles.Contact -}}
 <div class="billboard-div">
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>

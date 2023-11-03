@@ -1,33 +1,33 @@
 	{{- if .IsHome }}
 		<link rel="me" href="https://github.com/brycewray">
-		{{/*  <title>{{ .Site.Title }}</title>  */}}
-		<meta name="description" content="{{ .Site.Params.Description }}">
-		<meta property="description" content="{{ .Site.Params.Description }}">
-		<link rel="canonical" href="{{ .Site.BaseURL }}">
-		<meta property="twitter:title" content="{{ .Site.Title }}">
-		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
-		<meta property="og:title" content="{{ .Site.Title }}">
+		{{/*  <title>{{ site.Title }}</title>  */}}
+		<meta name="description" content="{{ site.Params.Description }}">
+		<meta property="description" content="{{ site.Params.Description }}">
+		<link rel="canonical" href="{{ site.BaseURL }}">
+		<meta property="twitter:title" content="{{ site.Title }}">
+		<meta property="twitter:description" content="{{ site.Params.Description }}">
+		<meta property="og:title" content="{{ site.Title }}">
 		<meta property="og:type" content="website">
-		<meta property="og:description" content="{{ .Site.Params.Description }}">
-		<meta property="og:url" content="{{ .Site.BaseURL }}">
+		<meta property="og:description" content="{{ site.Params.Description }}">
+		<meta property="og:url" content="{{ site.BaseURL }}">
 	{{- else }}
-	{{/*  <title>{{ .Title }} | {{ .Site.Title }}</title>  */}}
+	{{/*  <title>{{ .Title }} | {{ site.Title }}</title>  */}}
 	 {{- if .Params.Description }}
 		<meta name="description" content="{{ .Params.Description }}">
 		<meta property="og:description" content="{{ .Params.Description }}">
 		<meta property="twitter:description" content="{{ .Params.Description }}">
 	 {{- else }}
-		<meta name="description" content="{{ .Site.Params.Description }}">
-		<meta name="og:description" content="{{ .Site.Params.Description }}">
-		<meta property="twitter:description" content="{{ .Site.Params.Description }}">
+		<meta name="description" content="{{ site.Params.Description }}">
+		<meta name="og:description" content="{{ site.Params.Description }}">
+		<meta property="twitter:description" content="{{ site.Params.Description }}">
 	 {{- end }}
 	 {{- if .Params.Ext_canonical }}
 		<link rel="canonical" href="{{ .Params.Ext_canonical }}">
 	 {{- else }}
 		<link rel="canonical" href="{{ .Page.Permalink }}">
 	 {{- end }}
-		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+		<meta property="og:title" content="{{ .Title }} | {{ site.Title }}">
 		<meta property="og:type" content="article">
 		<meta property="og:url" content="{{ .Page.Permalink }}">
-		<meta property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}">
+		<meta property="twitter:title" content="{{ .Title }} | {{ site.Title }}">
 	{{- end }}

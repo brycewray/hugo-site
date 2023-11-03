@@ -1,4 +1,4 @@
-		<footer{{ if (and (eq .Section "posts") (ne .Title .Site.Params.Titles.Postslist)) }} class="with-bg-dark"{{ end }} data-pagefind-ignore>
+		<footer{{ if (and (eq .Section "posts") (ne .Title site.Params.Titles.Postslist)) }} class="with-bg-dark"{{ end }} data-pagefind-ignore>
 			<div class="footerWrapper">
 				<div class="icons-box">
 					<a class="icon" rel="me" title="GitHub" href="https://github.com/brycewray" rel="noopener" aria-label="GitHub">
@@ -22,11 +22,11 @@
 				</p>
 				{{- $hostURL := "" -}}
 				{{- $hostName := "" -}}
-				{{- if eq .Site.Params.Host "CFP" -}}
+				{{- if eq site.Params.Host "CFP" -}}
 					{{- $hostURL = "https://pages.cloudflare.com" -}}
 					{{- $hostName = "Cloudflare Pages" -}}
 				{{- end -}}
-				{{- if eq .Site.Params.Host "Vercel" -}}
+				{{- if eq site.Params.Host "Vercel" -}}
 					{{- $hostURL = "https://vercel.com" -}}
 					{{- $hostName = "Vercel" -}}
 				{{- end -}}
