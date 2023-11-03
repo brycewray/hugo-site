@@ -58,6 +58,9 @@ This is a Cloudflare-specific gripe and not specifically about CFP. Cloudflare's
 
 ## Choices, choices
 
-Incidentally: you may be thinking that what I should do is just host on Vercel and run the Vercel site through Cloudflare while also putting the Worker in front of it. That way, in theory, I'd have the network and CF Worker advantages of Cloudflare combined with the superior build performance of Vercel. Well, that's technically possible, but [Vercel strongly recommends against it](https://vercel.com/support/articles/using-cloudflare-with-vercel#with-proxy) for reasons with which I completely agree.
+Incidentally: you may be thinking that what I should do is just host on Vercel and run the Vercel site through Cloudflare while also putting the Worker in front of it. That way, in theory, I'd have the network and CF Worker advantages of Cloudflare combined with the superior build performance of Vercel. Well, that's technically possible, but Vercel strongly recommends against it for reasons with which I completely agree.
+
+**Update, 2023-11-03**: Vercel apparently changed its mind about the whole thing later; see Vercel's [current documentation on this subject](https://vercel.com/docs/integrations/cloudflare).
+{.box}
 
 I suppose I should be glad --- and I am --- that SSG users such as I have  multiple hosting choices with all the tremendous technical advantages that we enjoy today. It's not so much FOMO as that I am always wondering whether I can do better. I'd have hoped such a semi-compulsion would go away as I age, but it hasn't so far. All that said: choices are good, even if they're not always easy.
