@@ -15,7 +15,7 @@ It's been nearly a year since the [most recent entry](/posts/2022/08/mixed-nuts-
 
 ----
 
-Lately, I've been forcing myself to use Firefox rather than Chrome, chiefly because of the [ongoing drama](https://news.ycombinator.com/item?id=36876301) over Chromium's Web Environment Integrity (WEI) API.[^Safari] I doubt seriously that all we anti-WEI nerds' protests will change any of the minds that need to be changed, but using Chrome right now messes with my *own* mind.[^Electron] [^OhWell]
+Lately, I've been forcing myself to use Firefox rather than Chrome, chiefly because of the [ongoing drama](https://news.ycombinator.com/item?id=36876301) over Chromium's Web Environment Integrity (WEI) API.[^Safari] I doubt seriously that all we anti-WEI nerds' protests will change any of the minds that need to be changed, but using Chrome right now messes with my *own* mind.[^Electron] [^OhWell] [^WEIchg]
 
 [^Electron]: And, yeah, I do know that, because of [Electron](https://www.electronjs.org/), Chromium is mixed up with many other things I use daily --- notably, VS Code --- but, in just about each such case, I don't have the same choice. Selecting one's daily-driver browser is quite another matter.
 
@@ -23,7 +23,9 @@ Lately, I've been forcing myself to use Firefox rather than Chrome, chiefly beca
 \
 **Update, 2023-08-18**: I have since [resolved](/posts/2023/08/cross-browser-bookmarks-sync-bookmacster/) my cross-browser bookmarks management issues sufficiently that I now can use pretty much whichever browser I want as my daily driver.
 
-[^OhWell]: **Update, 2023-08-13**: After further reading, research, and thinking on the subject of WEI and its potential effects, I decided to return to my more usual browsing habits, at least for the time being.
+[^OhWell]: **Update, 2023-08-13**: After further reading, research, and thinking on the subject of WEI and its potential effects, I decided to return to my more usual browsing habits.
+
+[^WEIchg]: **Update, 2023-11-04**: Google has since [decided](https://android-developers.googleblog.com/2023/11/increasing-trust-for-embedded-media.html) (at least for the time being) not to go ahead with WEI.
 
 *As I [implied (?) recently](/posts/2023/07/good-news-cloudcannon-eleventy/), Netlify is no longer all that friendly to the Jamstack community that it essentially created from scratch a number of years ago; so I encourage you to read "[My Journey Away from the JAMstack](https://www.spicyweb.dev/farewell-jamstack/)," [Jared White](https://www.jaredwhite.com/)'s excellent op-ed on this and other related subjects. Having used the Jamstack since 2018 and intending to keep right on doing so as long as I can, I found myself nodding in agreement --- often sadly so --- with a great many of White's points.*
 

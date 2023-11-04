@@ -18,7 +18,7 @@ Web developers test, or *should* test, their work in at least the three major br
 
 In "[Mixed nuts #12](/posts/2023/08/mixed-nuts-12/)," I mentioned a choice to use Firefox rather than Chrome as my daily-driver browser[^WEI], and I added in a footnote:
 
-[^WEI]: This was based on the [current Web Environment Integrity (WEI) controversy](https://news.ycombinator.com/item?id=36876301). After further reading, research, and thinking on the subject of WEI and its potential effects, I decided to return to my more usual browsing habits --- meaning, Chrome as my daily driver --- at least for the time being.
+[^WEI]: This was based on the [current Web Environment Integrity (WEI) controversy](https://news.ycombinator.com/item?id=36876301). After further reading, research, and thinking on the subject of WEI and its potential effects, I decided to return to my more usual browsing habits --- meaning, Chrome as my daily driver. **Update, 2023-11-04**: Google has since [decided](https://android-developers.googleblog.com/2023/11/increasing-trust-for-embedded-media.html) (at least for the time being) not to go ahead with WEI. 
 
 > Since I've often identified myself as an unapologetic Apple fanboy, you might wonder why I don't go with Safari, instead. The main problem is that Safari isn't, and never will be, compatible with [xBrowserSync](https://www.xbrowsersync.org/), on which I rely heavily with both Chrome and Firefox . . .
 
