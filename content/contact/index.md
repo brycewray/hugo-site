@@ -24,3 +24,5 @@ date: 2020-12-30T09:00:00-06:00
 
 - [**brycewray** on GitHub](https://github.com/brycewray/)
 - <a rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener"><strong>@BryceWrayTX</strong> on Mastodon</a>
+- [**@brycewray.com** on Bluesky](https://bsky.app/profile/brycewray.com)
+- [**@brycewraytx** on Threads](https://www.threads.net/@brycewraytx)
