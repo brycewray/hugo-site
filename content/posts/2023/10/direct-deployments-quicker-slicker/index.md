@@ -37,9 +37,11 @@ CFP isn't the only host that [makes this available](https://developers.cloudflar
 
 Three additional notes . . .
 
-- If your site already exists as a project on one of these hosts, you can't simply update that project to use this method rather than its slower counterpart. Instead, you'll have to deploy to a new project and then change your site's DNS settings to point to that project rather than your current one.
+- If your site already exists as a project on ~~one of these hosts~~ Cloudflare Pages, you can't simply update that project to use this method rather than its slower counterpart. Instead, you'll have to deploy to a new project and then change your site's DNS settings to point to that project rather than your current one.[^updateProj]
 - Another situation where this direct-deploy approach excels is if you've been deploying by using CI/CD from either GitHub or GitLab, since their free tiers are similarly limited (and for similar reasons).
 - Beyond the speed gains, this also lets you push a commit to your site's online repository without causing an online site build.[^skip]
+
+[^updateProj]: I struck through my original text here because I found you *could* make such changes in existing projects on both Netlify and Vercel. The documentation for each says so, and I personally proved it with Vercel.
 
 [^skip]: To be fair, you usually also can have this convenience with a *normal* (non-direct) deploy by just adding something like `[skip ci]` to the associated commit message.
 
