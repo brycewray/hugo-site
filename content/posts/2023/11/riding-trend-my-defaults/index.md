@@ -15,8 +15,8 @@ date: 2023-11-07T19:56:00-06:00
 
 As I've explained before, I'm a Mac user, so all of these are for macOS unless otherwise noted.
 
-- **Mail Client**: Usually the built-in Mail app these days, although I occasionally still use [MailMate](https://freron.com).
-- **Mail Service**: [Fastmail](https://fastmail.com).
+- **Mail client**: Usually the built-in Mail app these days, although I occasionally still use [MailMate](https://freron.com).
+- **Mail service**: [Fastmail](https://fastmail.com).
 - **Notes**: [Standard Notes](https://standardnotes.com).
 - **To-do**: The built-in Calendar app. (Remember, I'm [retired](/posts/2021/09/transition/), so I have much less of that kind of stuff to remember than is the case with most of the other folks on the roll of bloggers.)
 - **Calendar**: Same as the previous item.
