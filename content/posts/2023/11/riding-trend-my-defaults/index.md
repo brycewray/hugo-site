@@ -23,7 +23,7 @@ As I've explained before, I'm a Mac user, so all of these are for macOS unless o
 - **Phone photography**: iOS's built-in Camera app.
 - **Photos management**: The built-in Photos app on both macOS and iOS.
 - **Cloud storage for sync**: iCloud.
-- **Cloud storage for backup**: [Arq Premium](https://www.arqbackup.com/) and[Backblaze B2](https://www.backblaze.com/cloud-storage).
+- **Cloud storage for backup**: [Arq Premium](https://www.arqbackup.com/) and [Backblaze B2](https://www.backblaze.com/cloud-storage).
 - **RSS**: [NetNewsWire](https://netnewswire.com/).
 - **Contacts**: The built-in Contacts app.
 - **Browser**: A Chromium-based one. Depending on my opinion at any given time, I jump around among [Google Chrome](https://www.google.com/chrome/), [Microsoft Edge](https://www.microsoft.com/edge), and [Brave](https://brave.com), although [my recent tests](/posts/2023/10/testing-testing/) have steered me away from Brave for the most part.
