@@ -57,7 +57,7 @@ To get a return from the API so you can look around and see how stuff works, do 
 
 As an example, here's a recent toot from Mastodon's creator, Eugen Rochko, from within the [mastodon.social](https://mastodon.social) instance:
 
-{{< stoot "mastodon.social" "108241788606585248" >}}
+{{< stoot instance="mastodon.social" id="108241788606585248" >}}
 
 <!-- was: 108335994944738270  -->
 
@@ -69,7 +69,7 @@ https://mastodon.social/@Gargron/108241788606585248
 
 . . . that means its ID was `108241788606585248`. So, the `curl` to `GET` that toot's JSON would be:
 
-```bash{bigdiv=true}
+```bash
 curl "https://mastodon.social/api/v1/statuses/108241788606585248"
 ```
 
@@ -158,14 +158,14 @@ I call this Hugo shortcode `stoot.html` because it displays *static toots*, just
 [^styling]: The best way for you to figure out how the styling works is to use your browser's Inspector tool on the toot example herein as well as the static tweets you'll find scattered throughout the site. (You also can check the [site repo](https://github.com/brycewray/hugo-site), of course.) **Update from the future**: For a [Tailwind CSS](https://tailwindcss.com)-styled version of the code herein, see [this follow-up post](/posts/2023/01/static-mastodon-toots-hugo-tailwind-css-edition/).
 
 ```go-html-template{filename="stoot.html" bigdiv=true}
-{{ $masIns := .Get 0 }}
+{{ $masIns := .Get "instance" }}
+{{ $id := .Get "id" }}
 {{ $tootLink := "" }}
 {{ $card := "" }}
 {{ $handleInst := "" }}
 {{ $mediaMD5 := "" }}
 {{ $imageCount := 0 }}
 {{ $votesCount := 0 }}
-{{ $id := .Get 1 }}
 {{ $urlToGet := print "https://" $masIns "/api/v1/statuses/" $id }}
 
 {{- with resources.GetRemote $urlToGet  -}}
@@ -330,11 +330,11 @@ I call this Hugo shortcode `stoot.html` because it displays *static toots*, just
 Once this is in place in your project's location for shortcodes, invoke it from within your Markdown like this:
 
 ```md
-{{</* stoot "mastodon.social" "108335994944738270" */>}}
+{{</* stoot instance="mastodon.social" id="108335994944738270" */>}}
 ```
 
 As you can see, the syntax is:\
-`{{</* stoot "$InstanceTLD" "$Id" */>}}`\
+`{{</* stoot instance="$InstanceTLD" id="$Id" */>}}`\
 (And, yes, those quotation marks **are** required.)[^commentsGo]
 
 [^commentsGo]: If you happen upon this site's repo out of curiosity and check out this post's Markdown file, you'll notice that each of these examples' curly-bracketed boundaries also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly --- in this case, once again displaying the toot. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). (**Update from the future**: Later, the workaround [did](https://gohugo.io/content-management/syntax-highlighting/#highlight-hugogo-template-code) become part of the documentation.)

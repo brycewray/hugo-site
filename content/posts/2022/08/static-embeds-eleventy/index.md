@@ -28,7 +28,7 @@ Due to changes in the status and/or availability of one or more Twitter APIs, pe
 
 Using the `stoot.js` shortcode in Markdown brings up the following:
 
-{{< stoot "mastodon.social" "108241788606585248" >}}
+{{< stoot instance="mastodon.social" id="108241788606585248" >}}
 
 <!--  -->
 

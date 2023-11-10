@@ -28,7 +28,7 @@ It's been clear for some time that Gatsby as a platform had been surpassed by [N
 
 It now appears that Netlify essentially is killing Gatsby in (sorta) slow motion, based on this Mastodon post/toot from [now-former Netlify employee](/posts/2023/07/good-news-cloudcannon-eleventy/) Zach Leatherman:
 
-{{< stoot "fediverse.zachleat.com" "110927844356705881" >}}
+{{< stoot instance="fediverse.zachleat.com" id="110927844356705881" >}}
 
 <!--
 https://fediverse.zachleat.com/@zachleat/110927844356705881

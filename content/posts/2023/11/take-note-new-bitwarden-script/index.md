@@ -15,7 +15,7 @@ This one's a quickie, repeating something I posted on social media a short time 
 
 The post shown below is from Mastodon; and I put appropriately revised versions thereof on Bluesky and Threads, as well.
 
-{{< stoot "fosstodon.org" "111386136804353661" >}}
+{{< stoot instance="fosstodon.org" id="111386136804353661" >}}
 
 <!--
 The @bitwarden browser extension now injects `page-script.js` (437 Kb) into each page. It’s apparently due to Bitwarden’s recently added support for passkeys.

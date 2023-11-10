@@ -20,7 +20,7 @@ While experimenting with various static site generators (SSGs), I've created an 
 
 . . . to get:
 
-{{< stoot "mastodon.social" "108241788606585248" >}}
+{{< stoot instance="mastodon.social" id="108241788606585248" >}}
 
 Note that `SToot.astro` assumes you have the [`date-fns`](https://github.com/date-fns/date-fns) and [`md5`](https://github.com/pvorb/node-md5) packages installed in the project.
 
