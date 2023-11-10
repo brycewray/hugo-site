@@ -1,11 +1,11 @@
-{{ $masIns := .Get 0 }}
+{{ $masIns := .Get "instance" }}
+{{ $id := .Get "id" }}
 {{ $tootLink := "" }}
 {{ $card := "" }}
 {{ $handleInst := "" }}
 {{ $mediaMD5 := "" }}
 {{ $imageCount := 0 }}
 {{ $votesCount := 0 }}
-{{ $id := .Get 1 }}
 {{ $urlToGet := print "https://" $masIns "/api/v1/statuses/" $id }}
 
 {{- with resources.GetRemote $urlToGet  -}}
