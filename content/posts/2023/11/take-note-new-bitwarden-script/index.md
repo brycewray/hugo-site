@@ -9,7 +9,7 @@ date: 2023-11-10T06:20:00-06:00
 # -
 ---
 
-This one's a quickie, repeating something I posted on social media a short time ago. [Bitwarden](https://bitwarden.com) has made a change to its browser extension which affects how you might measure a web page's size. Since that's something that web devs typically do to make sure their sites load as well as possible, I thought this information was worth passing along.
+This one's a quickie, repeating something I posted on social media a short time ago. [Bitwarden](https://bitwarden.com) has changed its browser extension in a way which affects how you might measure a web page's size. Since that's something that web devs typically do to make sure their sites load as well as possible, I thought this information was worth passing along.
 
 <!--more-->
 
