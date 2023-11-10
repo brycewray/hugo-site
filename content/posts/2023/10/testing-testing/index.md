@@ -31,7 +31,9 @@ The tests used four widely known online browser-testing platforms, the first thr
 - **[Speedometer 2.1](https://browserbench.org/Speedometer2.1/)** --- "Speedometer is a browser benchmark that measures the responsiveness of Web applications. It uses demo web applications to simulate user actions such as adding to-do items."
 - **[MotionMark 1.2](https://browserbench.org/MotionMark1.2/)** --- "MotionMark is a graphics benchmark that measures a browser’s capability to animate complex scenes at a target frame rate."
 - **[JetStream 2.1](https://browserbench.org/JetStream/)** --- "JetStream 2.1 is a JavaScript and WebAssembly benchmark suite focused on the most advanced web applications. It rewards browsers that start up quickly, execute code quickly, and run smoothly."
-- **[Basemark Web 3.0](https://web.basemark.com/)** --- "Basemark Web 3.0 is a comprehensive web browser performance benchmark that tests how well your mobile or desktop system can use web based applications. This benchmark includes various system and graphic tests that use the web recommendations and features. . . . Basemark Web 3.0 measures real-world client-side performance to detect browser bottlenecks."
+- **[Basemark Web 3.0](https://web.basemark.com/)** --- "Basemark Web 3.0 is a comprehensive web browser performance benchmark that tests how well your mobile or desktop system can use web based applications. This benchmark includes various system and graphic tests that use the web recommendations and features. . . . Basemark Web 3.0 measures real-world client-side performance to detect browser bottlenecks."[^inconsistency]
+
+[^inconsistency]: **Update, 2023-11-10**: I've since encountered various server-side inconsistencies that have forced me to abandon using Basemark Web in any future testing. Your experience with this benchmark may be better.
 
 Finally, here's an alphabetical listing of the tested browsers:
 
