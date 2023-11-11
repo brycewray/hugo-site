@@ -23,8 +23,8 @@ The off-site backup is the part I'm thinking about changing, largely because of 
 
 Kopia is free [open-source](https://github.com/kopia/kopia/) software that's available in both CLI and GUI forms for macOS, Linux, and Windows. It supports backups to a [variety of sources](https://kopia.io/docs/repositories/), among them Backblaze B2. While its interface is a bit rough around the edges compared to Arq and other for-pay backup apps, it works well enough in my testing as of now.
 
-As a matter of fact, I've taken my Arq-to-B2 pipeline out of the mix and replaced it with Kopia-to-B2, and so far have been very pleased with the results.[^Hugo] Specifically, each Kopia-done backup takes up less space on B2 --- thus lowering my Backblaze bill --- and performs each hourly backup more intelligently and much more swiftly than does Arq. The documentation [explains](https://kopia.io/docs/features/) how.
+As a matter of fact, I've taken my Arq-to-B2 pipeline out of the mix and replaced it with Kopia-to-B2, and so far have been very pleased with the results.[^Hugo] Specifically, each Kopia-done backup takes up less space on B2 --- thus lowering my Backblaze bill --- and performs each hourly backup to B2 more intelligently and much more swiftly than did Arq. The documentation [explains](https://kopia.io/docs/features/) how.
 
-Obviously, the main thing I must evaluate is Kopia's overall safety and reliability in handling and backing up my files. Still, if the Kopia-to-B2 process continues to my liking, it's entirely likely that I'll use it to completely replace Arq *and* Arq Premium when those subs expire.
+Obviously, the main thing I must evaluate is Kopia's overall safety and reliability in handling and backing up my files. Still, if the Kopia-to-B2 process continues to work well, it's entirely likely that I'll use it to replace both Arq *and* Arq Premium when those subs expire.
 
 [^Hugo]: Incidentally, the Kopia website, including all its documentation, is built in [Hugo](https://gohugo.io), so that certainly doesn't hurt its cause in my eyes.
