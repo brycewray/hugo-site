@@ -41,4 +41,4 @@ Back when I was waiting to receive the new Mac and its associated peripherals, I
 \
 By the way: our iPad Pro, also a living room fixture, [has WiFi 6E compatibility](https://support.apple.com/kb/SP882?locale=en_US), so you can correctly assume it's getting a *huge* benefit out of the strong WiFi 6E signal that the AXE300 delivers --- *e.g.*, download speeds consistently above 1 Gbps. (Probably because it *is* WiFi, after all, and there are a number of walls and doors between the AXE300 and the iPad, the upload speeds are "only" around 350--500 Mbps.) *Also* freakin' amazing.
 
-![A TP-Link Archer AXE300 router sitting on a desktop](TP-Link-Archer-300-router-crop-2023-07-29_2403x1905.jpg)
+![A TP-Link Archer AXE300 router sitting on a desktop](TP-Link-Archer-300-router-crop-2023-07-29_2403x1905.jpg "Cloudinary")
