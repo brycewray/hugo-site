@@ -80,3 +80,5 @@ cfpages.jsonc
 cfpages.yaml
 cfpages.toml
 cfpages.yml
+
+.wrangler
