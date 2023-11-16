@@ -22,7 +22,7 @@ However, "with great power comes great responsibility," and that holds true for 
 
 Here are some scenarios. The font file sizes are all accurate as of this post's initial publication date.
 
-As a point of comparison, the [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin) variable font is one of the simpler ones in the Google Fonts arsenal. All it offers are a range of [weights](https://fonts.google.com/knowledge/glossary/weight_axis) from 100 through 900. Even if you specify all of them for both regular and italic typefaces, the resulting downloads are only 28 Kb (regular) and 32 Kb (italic).[^subsets]
+As a point of comparison, the [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin) variable font is one of the simpler ones in the Google Fonts arsenal. All it offers are a range of [weights](https://fonts.google.com/knowledge/glossary/weight_axis) from 100 through 900. Even if you specify all of them for both regular and italic typefaces, the resulting downloads are only 29 Kb (regular) and 32 Kb (italic).[^subsets]
 
 [^subsets]: In my testing, I've found that one nice thing about using Libre Franklin this way rather than through self-hosting is that you get roughly the same file sizes from the full set, thanks to Google's coding (prior to the "de-Googling" by Cloudflare Fonts), as opposed to having to [subset the locally hosted fonts to trim them down](/posts/2021/08/down-with-flabby-fonts/).
 
