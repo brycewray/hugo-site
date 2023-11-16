@@ -1,25 +1,16 @@
 {{- $URLopen := "https://fonts.googleapis.com/css2?family=" -}}
 {{- $fontSans := "Libre+Franklin" -}}
-	{{- $lowWeightSans := 100 -}}
-	{{- $topWeightSans := 900 -}}
-	{{- $weightIntroSans := ":ital,wght@" -}}
-	{{- $optFirstSans := "0," -}}
-	{{- $optSecondSans := "1," -}}
-	{{- $URLSans := print $URLopen $fontSans $weightIntroSans $optFirstSans $lowWeightSans ".." $topWeightSans ";" $optSecondSans $lowWeightSans ".." $topWeightSans "&display=swap" -}}
+	{{- $itemsSans := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+	{{- $varsSans := "100..900" -}}
+	{{- $URLSans := print $URLopen $fontSans ":" $itemsSans "@0," $varsSans ";1," $varsSans "&display=swap" -}}
 {{- $fontSerif := "" -}}
-	{{- $lowWeightSerif := 100 -}}
-	{{- $topWeightSerif := 900 -}}
-	{{- $weightIntroSerif := ":ital,wght@" -}}
-	{{- $optFirstSerif := "0," -}}
-	{{- $optSecondSerif := "1," -}}
-	{{- $URLSerif := print $URLopen $fontSerif $weightIntroSerif $optFirstSerif $lowWeightSerif ".." $topWeightSerif ";" $optSecondSerif $lowWeightSerif ".." $topWeightSerif "&display=swap" -}}
+	{{- $itemsSerif := "" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+	{{- $varsSerif := "" -}}
+	{{- $URLSerif := print $URLopen $fontSerif ":" $itemsSerif "@0," $varsSerif ";1," $varsSerif "&display=swap" -}}
 {{- $fontMono := "" -}}
-	{{- $lowWeightMono := 400 -}}
-	{{- $topWeightMono := 700 -}}
-	{{- $weightIntroMono := ":ital,wght@" -}}
-	{{- $optFirstMono := "0," -}}
-	{{- $optSecondMono := "1," -}}
-	{{- $URLMono := print $URLopen $fontMono $weightIntroMono $optFirstMono $lowWeightMono ".." $topWeightMono ";" $optSecondMono $lowWeightMono ".." $topWeightMono "&display=swap" -}}
+	{{- $itemsMono := "" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+	{{- $varsMono := "" -}}
+	{{- $URLMono := print $URLopen $fontMono ":" $itemsMono "@0," $varsMono ";1," $varsMono "&display=swap" -}}
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
