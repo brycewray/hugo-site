@@ -1,5 +1,5 @@
 ---
-title: "Take note of this new Bitwarden script"
+title: "Take note of this new Bitwarden script"
 description: "A very brief bit of advice for your web dev work."
 author: Bryce Wray
 date: 2023-11-10T06:20:00-06:00
