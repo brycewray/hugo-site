@@ -10,6 +10,9 @@ date: 2023-02-20T12:24:00-06:00
 **Note**: This post also appears on [dev.to](https://dev.to/brycewray/hugo-via-npm-5c4b).
 {.box}
 
+<strong class="red">Important</strong>: Be sure to check the 2023-11-18 update at the end regarding a dependency issue with the Hugo Installer package described herein.
+{.box}
+
 During my years of using the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG), I've occasionally seen mentions about how you could install, and even *run*, Hugo's [Go](https://go.dev)-based binary by using one or more JavaScript packages sourced via [npm](https://npmjs.com). Having long ago understood the [usual](https://gohugo.io/installation/), very **un**-npm-ish Hugo methods for installation --- much less the un-npm-ish nature of Hugo use in general --- I never bothered looking into these JS-based alternatives. Besides, I figured, how could they even work? And, if they did, in what use cases did they make more sense than  *normal* Hugo use?
 
 But, yesterday, I began to grasp a bigger picture.
@@ -86,3 +89,15 @@ npm run hugonew posts/2023/02/my-next-post/index.md
 Anyway, there you have it: a totally different way of installing and using Hugo.
 
 This month, I took the site squarely into npm-ville when I [brought in the npm version of Sass](/posts/2023/02/using-dart-sass-hugo-taking-it-easy/) and [added PostCSS to make "future" CSS work with current browsers](/posts/2023/02/some-future-now-css/). As it turns out, those changes made my site an unexpectedly appropriate target for the use case that Hugo Installer presents. I'm sure I'll find nits to pick over time but, for now, I'm impressed by what I've seen.
+
+----
+
+## Update, 2023-11-18
+
+Due to a [vulnerability](https://github.com/dominique-mueller/hugo-installer/issues/57) in one of the dependencies in the current version of Hugo Installer, be sure to add the following to your `package.json` (and do an `npm install` to install it, of course):
+
+```json
+  "overrides": {
+    "semver": "^7.5.4"
+  }
+```
