@@ -13,7 +13,7 @@ While Cloudflare continues to [beta-test Cloudflare Fonts](https://blog.cloudfla
 
 <!--more-->
 
-First of all: believe me, I'm all for variable fonts, and have been using them on this site ever since I learned of their existence. Given my tendencies to use **bold** and *italic* and ***bold italic*** text all over the place in all kinds of widths and sizes, variable fonts beat static fonts for me in just about every way possible.
+First of all: believe me, I'm all for variable fonts, and have been using them on this site ever since I learned of their existence. Given my tendencies to use **bold** and *italic* and ***bold italic*** text all over the place in all kinds of weights and sizes, variable fonts beat static fonts for me in just about every way possible.
 
 However, "with great power comes great responsibility," and that holds true for the power that variable fonts give you. Or so I have learned while "de-Googling" certain variable Google Fonts within the Cloudflare Fonts beta. Most of the fonts I tested offer only different weights. However, some offer those and quite a bit more. Simply put: the more of these extra capabilities you enable, the bigger the resulting font files; and, even if you *don't* enable them, fonts which have the capabilities are going to produce larger downloads than fonts which don't.
 
