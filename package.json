@@ -1,5 +1,53 @@
 {
+  "name": "hugo-site",
+  "description": "This is the repository from which the Hugo-generated version of https://www.brycewray.com/ is built.",
+  "author": "Bryce Wray",
+  "license": "MIT",
+  "config": {
+    "hugo": "0.120.4",
+    "myIP": "192.168.0.70"
+  },
+  "scripts": {
+    "clean": "rimraf public",
+    "search": "pagefind --site public",
+    "testbuild:search": "npm run search -- --bundle-dir ../static/_pagefind",
+    "install:hugo": "hugo-installer --version config.hugo --extended",
+    "hugo": "exec-bin bin/hugo/hugo",
+    "hugoenv": "npm run hugo -- env",
+    "hugonew": "npm run hugo -- new",
+    "hugometrics": "npm run hugo -- --templateMetrics --templateMetricsHints",
+    "hugoversion": "npm run hugo -- version",
+    "devexec:hugo": "npm run hugo -- server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
+    "devexecdebug:hugo": "npm run devexec:hugo -- --debug",
+    "devdebug:hugo": "npm-run-all install:hugo devexecdebug:hugo",
+    "dev:hugo": "npm-run-all install:hugo devexec:hugo",
+    "move-excerpts": "move-cli public/posts/index.xml public/index-excerpts.xml && move-cli public/posts/index.json public/index-excerpts.json",
+    "prodexec:hugo": "exec-bin bin/hugo/hugo --minify --gc --logLevel info",
+    "prod:hugo": "npm-run-all install:hugo prodexec:hugo",
+    "start": "NODE_ENV=development npm-run-all clean dev:hugo",
+    "start:debug": "NODE_ENV=development npm-run-all clean devdebug:hugo",
+    "build:prelim": "NODE_ENV=production npm-run-all clean prod:hugo",
+    "build": "npm-run-all build:prelim move-excerpts search",
+		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
+		"deploy": "npm-run-all build deploy:wrangler",
+    "testbuildexec:hugo": "npm run devexec:hugo -- --minify --environment production",
+    "testbuild": "npm-run-all clean build:prelim move-excerpts testbuildexec:hugo",
+    "testbuildpf": "npm-run-all build:prelim move-excerpts testbuild:search testbuildexec:hugo"
+  },
   "devDependencies": {
+    "exec-bin": "^1.0.0",
+    "hugo-installer": "^4.0.1",
+    "move-cli": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "pagefind": "^1.0.4",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.1",
+    "rimraf": "^5.0.5",
     "wrangler": "^3.16.0"
+  },
+  "overrides": {
+    "semver": "^7.5.4"
   }
 }
