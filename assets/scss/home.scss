@@ -77,10 +77,10 @@ html[data-theme="dark"] {
 .homePost-Title {
 	font-size: clamp(1.75rem, 1.25rem + 1vw, 2.25rem);
 	/* font-family: var(--serif); */
-	/* font-weight: var(--font-medium); */
+	font-weight: var(--font-medium);
 	letter-spacing: -0.025em;
 	padding-top: 0.5em;
-	line-height: 1.25em;
+	line-height: normal;
 }
 
 .homePost-Description {
