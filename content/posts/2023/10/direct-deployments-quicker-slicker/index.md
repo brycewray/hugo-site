@@ -24,7 +24,10 @@ Well, fortunately, you probably can, because most [Jamstack-savvy hosts](/posts/
 For example, here's how I deployed this post from Hugo directly to Cloudflare Pages via Cloudflare's [wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) tool:
 
 1. I ran `npm run build` to build the site to a `public` folder in the site project. (If you're not using any `package.json`, you perhaps could do this with just `hugo`. The point is, just run whatever builds your site to the appropriate deployment folder.)
-2. I then ran `wrangler pages deploy public`.
+2. I then ran `wrangler pages deploy public`.[^nonNPM]
+
+[^nonNPM]: **Update, 2023-11-22**: The [documentation](https://developers.cloudflare.com/pages/platform/direct-upload/) for this method tells you to install wrangler as an npm package; among other things, this keeps wrangler from asking you for a project name every time you deploy, as it saves such information in a file within `node_modules`. However, if you prefer to have an npm-free, `node_modules`-free Hugo project, you can invoke wrangler through the `npx` CLI command and simply indicate your project name with the [`--project-name` option](https://developers.cloudflare.com/workers/wrangler/commands/#deploy-1). For example, if your Cloudflare Pages project is called "my-hugo-proj," you'd use:\
+`npx wrangler pages deploy public --project-name="my-hugo-proj"`
 
 (In fact, I did it even more simply, using a shell script that combined the two commands.)
 
