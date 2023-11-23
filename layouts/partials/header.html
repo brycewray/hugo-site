@@ -17,12 +17,12 @@
 				<li><a href="/" title="Home page" aria-label="Home page">{{ partialCached "svgNavIcon.html" . }}</a></li>
 				<li><a href="/about/" title="About me" aria-label="About me">About</a></li>
 				{{- range first 1 (where site.RegularPages "Section" "posts") -}}
-					<li><a href="{{ .RelPermalink }}" title="The most recently added post on the site" aria-label="The most recently added post on the site">Newest post</a></li>
+					<li><a href="{{ .RelPermalink }}" title="The most recently added post on the site" aria-label="Newest post">Newest post</a></li>
 				{{- end -}}
-				<li><a href="/posts/" title="Posts" aria-label="Posts">All posts</a></li>
+				<li><a href="/posts/" title="Posts" aria-label="All posts">All posts</a></li>
 				<li><a href="/search/" title="Site search" aria-label="Site search">Search</a></li>
 				<li><a href="/privacy/" title="Privacy policy" aria-label="Privacy policy">Privacy</a></li>
-				<li><a href="/contact/" title="Contact info and feed links" aria-label="Contact me">Contact/RSS</a></li>
+				<li><a href="/contact/" title="Contact info and feed links" aria-label="Contact/RSS">Contact/RSS</a></li>
 			</ul>
 			<button type="button" class="nScrHidden nav-ModeToggle" data-theme-toggle></button>
 		</nav>
