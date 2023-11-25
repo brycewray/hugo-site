@@ -5,8 +5,8 @@
 :root {
 	--orange-300: hsl(25, 100%, 78%);
 	--orange-700: hsl(25, 100%, 36%);
+	--yellow-100: hsl(55, 88%, 87%);
 	--yellow-200: hsl(55, 90%, 76%);
-	--yellow-300: hsl(55, 84%, 62%);
 	--yellow-800: hsl(55, 100%, 20%);
 	--green-100: hsl(145, 78%, 93%);
 	--green-600: hsl(145, 90%, 34%);
@@ -14,23 +14,12 @@
 	--emerald-700: hsl(155, 70%, 28%);
 	--sky-300: hsl(200, 100%, 77%);
 	--sky-700: hsl(200, 100%, 30%);
+	--violet-300: hsl(255, 95%, 85%);
+	--violet-600: hsl(255, 83%, 58%);
 	--fuchsia-300: hsl(290, 93%, 83%);
 	--fuchsia-700: hsl(290, 70%, 41%);
-	@supports (color: oklch(49% 0.1 252)) {
-		--orange-300: oklch(84.96% 0.097 49);
-		--orange-700: oklch(55.1% 0.155 49);
-		--yellow-200: oklch(94.03% 0.123 104);
-		--yellow-300: oklch(89.76% 0.164 104);
-		--yellow-800: oklch(47.33% 0.09965845980572594 104);
-		--green-100: oklch(96.37% 0.036 151);
-		--green-600: oklch(63.06% 0.174 151);
-		--emerald-200: oklch(90.85% 0.085 158);
-		--emerald-700: oklch(51.24% 0.11 158);
-		--sky-300: oklch(84.54% 0.094 241);
-		--sky-700: oklch(48.74% 0.113 241);
-		--fuchsia-300: oklch(83.21% 0.131 320);
-		--fuchsia-700: oklch(50.88% 0.222 320);
-	}
+	--rose-300: hsl(345, 96%, 82%);
+	--rose-700: hsl(345, 83%, 41%);
 }
 
 [data-theme="light"] {
@@ -40,17 +29,21 @@
 	--green: var(--green-600);
 	--emerald: var(--emerald-700);
 	--sky: var(--sky-700);
+	--violet: var(--violet-600);
 	--fuchsia: var(--fuchsia-700);
+	--rose: var(--rose-700);
 }
 
 [data-theme="dark"] {
 	--gray: var(--gray-300);
 	--orange: var(--orange-300);
-	--yellow: var(--yellow-300);
+	--yellow: var(--yellow-100);
 	--green: var(--green-100);
 	--emerald: var(--emerald-200);
 	--sky: var(--sky-300);
+	--violet: var(--violet-300);
 	--fuchsia: var(--fuchsia-300);
+	--rose: var(--rose-300);
 }
 
 /* ======= START, individual items from Chroma */
@@ -113,7 +106,7 @@
 	KeywordType (kt) */
 	& .k, & .kc, & .kd, & .kn, & .kp, & .kr, & .kt {
 		/* font-weight: bold; */
-		--clr: var(--sky);
+		--clr: var(--rose);
 	}
 	/* === Names
 	Name (n), NameAttribute (na), NameBuiltin (nb), NameBuiltinPseudo (bp),
@@ -124,7 +117,7 @@
 	NameVariableGlobal (vg), NameVariableInstance (vi), NameVariableMagic (vm) */
 	& .n, & .na, & .nb, & .bp, & .nc, & .no, & .nd, & .ni, & .ne, & .nf, & .fm, & .nl, & .nn, & .nx, & .np,
 	& .nt, & .nv, & .vc, & .vg, & .vi, & .vm {
-		--clr: var(--orange);
+		--clr: var(--sky);
 	}
 	/* === Literals
 	Literal (l), LiteralDate (ld), LiteralString (s), LiteralStringAffix (sa),
@@ -137,7 +130,7 @@
 	LiteralNumberOct (mo) */
 	& .l, & .ld, & .s, & .sa, & .sb, & .sc, & .dl, & .sd, & .s2, & .se, & .sh, & .si, & .sx, & .sr,
 	& .s1, & .ss, & .m, & .mb, & .mf, & .mh, & .mi, & .il, & .mo {
-		--clr: var(--gray);
+		--clr: var(--yellow);
 	}
 	/* === Operators
 	Operator (.o), OperatorWord (.ow) */
