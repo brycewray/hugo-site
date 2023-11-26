@@ -1,15 +1,16 @@
 @charset 'utf-8';
+@use 'partials/colors' as clr;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
 
 /* === for search form */
 
 [data-theme="light"] {
-	--input: var(--black);
+	--input: #{clr.$black};
 }
 
 [data-theme="dark"] {
-	--input: var(--white);
+	--input: #{clr.$white};
 }
 
 .searchDiv, .searchDivPF {

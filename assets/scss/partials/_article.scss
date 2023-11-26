@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@use 'partials/colors' as clr;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
 
@@ -41,7 +41,7 @@ img.ctrImg {
 html[data-theme="dark"] .shadow {
 	filter: none;
 	border: 1px solid;
-	border-color: var(--gray-750);
+	border-color: #{clr.$gray-750};
 }
 
 .img-phn {

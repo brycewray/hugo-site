@@ -1,3 +1,5 @@
+@use 'partials/colors' as clr;
+
 :root {
 	--navRightMargin: 6em; /* unless JS is off */
 }
@@ -21,7 +23,7 @@ header {
 	& svg {
 		padding-top: 0.425em;
 		width: 1.5rem;
-		fill: var(--white);
+		fill: #{clr.$white};
 	}
 	.close {
 		display: none;
@@ -139,5 +141,5 @@ a:hover circle.NavIcon {
 }
 
 path.NavIcon {
-	fill: var(--white);
+	fill: #{clr.$white};
 }

@@ -1,15 +1,7 @@
 @charset 'utf-8';
+@use 'partials/colors' as clr;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
-
-:root {
-	--emerald-050: hsl(155, 80%, 96%);
-	--emerald-900: hsl(155, 61%, 19%);
-	@supports (color: oklch(49% 0.1 252)) {
-		--emerald-050: oklch(98% 0.019 158);
-		--emerald-900: oklch(37.92% 0.074 158);
-	}
-}
 
 td {
 	vertical-align: top;
@@ -45,14 +37,14 @@ table.noborders {
 		}
 	}
 	& tr:nth-child(odd) {
-		background-color: var(--slate-050);
+		background-color: #{clr.$slate-050};
 	}
 	& tr:nth-child(even) {
-		background-color: var(--slate-150);
+		background-color: #{clr.$slate-150};
 	}
 	& thead td {
-		background-color: var(--blue-900);
-		color: var(--white);
+		background-color: #{clr.$blue-900};
+		color: #{clr.$white};
 		font-weight: bold;
 	}
 }
@@ -82,18 +74,18 @@ table.ulysses {
 		table-layout: fixed; /* so don't have to spec each `td`'s width */
 	}
 	& thead th {
-		background-color: var(--blue-800);
+		background-color: #{clr.$blue-800};
 		border: 1px solid;
-		border-color: var(--black) var(--gray-350) var(--black) var(--black);
-		color: var(--white);
+		border-color: #{clr.$black} #{clr.$gray-350} #{clr.$black} #{clr.$black};
+		color: #{clr.$white};
 		&:last-child {
-			border-right-color: var(--black);
+			border-right-color: #{clr.$black};
 		}
 	}
 	& td {
 		text-align: center;
 		border: 1px solid;
-		border-color: var(--black);
+		border-color: #{clr.$black};
 		padding: 0;
 	}
 	& thead th, & td {
@@ -103,32 +95,32 @@ table.ulysses {
 		text-align: left;
 	}
 	& tr:nth-child(odd) {
-		background-color: var(--white);
+		background-color: #{clr.$white};
 	}
 	& tr:nth-child(even) {
-		background-color: var(--emerald-050);
+		background-color: #{clr.$emerald-050};
 	}
 }
 
 html[data-theme="dark"] {
 	& table.noborders {
 		& tr {
-			color: var(--black);
+			color: #{clr.$black};
 		}
 	}
 	& table.ulysses {
 		& thead th {
-			border-color: var(--white);
+			border-color: #{clr.$white};
 		}
 		& td {
-			border-color: var(--white);
-			color: var(--white);
+			border-color: #{clr.$white};
+			color: #{clr.$white};
 		}
 		& tr:nth-child(odd) {
-			background-color: var(--slate-700);
+			background-color: #{clr.$slate-700};
 		}
 		& tr:nth-child(even) {
-			background-color: var(--emerald-900);
+			background-color: #{clr.$emerald-900};
 		}
 	}
 }

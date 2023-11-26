@@ -1,9 +1,10 @@
 @charset 'utf-8';
+@use 'partials/colors' as clr;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
 
 .posts-pagerGray {
-	color: var(--gray-300);
+	color: #{clr.$gray-300};
 }
 
 .posts-pagerThing {
@@ -102,11 +103,11 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: var(--gray-300);
+	color: #{clr.$gray-300};
 }
 
 path.FirstLast {
-	fill: var(--gray-400);
+	fill: #{clr.$gray-400};
 }
 
 path.NextPrev {
