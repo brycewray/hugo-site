@@ -1,3 +1,5 @@
+@use 'partials/variables-010' as var;
+
 .ctr {
 	text-align: center;
 }
@@ -6,20 +8,20 @@
 }
 
 .legal, .pokey {
-	font-weight: var(--font-weight-sm);
+	font-weight: var.$font-weight-sm;
 }
 
 .legal {
-	font-size: var(--text-xs);
+	font-size: var.$text-xs;
 }
 .pokey {
-	font-size: var(--text-sm);
+	font-size: var.$text-sm;
 }
 .sansSerif {
-	font-family: var(--sans-serif);
+	font-family: var.$sans-serif;
 }
 .serif {
-	font-family: var(--serif);
+	font-family: var.$serif;
 }
 .tightLead {
 	line-height: 1.25;
@@ -57,7 +59,7 @@
 	display: inline;
 }
 .pub-date {
-	font-weight: var(--pub-date-weight);
+	font-weight: var.$pub-date-weight;
 }
 
 /*
@@ -136,7 +138,7 @@ end, text/LH classes from TWCSS
 */
 
 .mono {
-	font-family: var(--monospaced);
+	font-family: var.$monospaced;
 }
 
 .sr-only {
@@ -152,6 +154,5 @@ end, text/LH classes from TWCSS
 }
 
 .emojis {
-	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	font-family: var(--emojis);
+	font-family: var.$emojis;
 }

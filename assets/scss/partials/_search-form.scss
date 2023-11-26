@@ -1,16 +1,17 @@
 @charset 'utf-8';
 @use 'partials/colors' as clr;
+@use 'partials/variables-010' as var;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
 
 /* === for search form */
 
 [data-theme="light"] {
-	--input: #{clr.$black};
+	--input: clr.$black;
 }
 
 [data-theme="dark"] {
-	--input: #{clr.$white};
+	--input: clr.$white;
 }
 
 .searchDiv, .searchDivPF {
@@ -161,7 +162,7 @@
 }
 
 .pagefind-ui__result-excerpt {
-	/* font-family: var(--serif); */
+	/* font-family: var.$serif; */
 	& mark {
 		color: var(--pf-result-excerpt);
 		background-color: var(--bkgd-pf-result-excerpt);

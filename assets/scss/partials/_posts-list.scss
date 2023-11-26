@@ -1,10 +1,11 @@
 @charset 'utf-8';
 @use 'partials/colors' as clr;
+@use 'partials/variables-010' as var;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
 
 .posts-pagerGray {
-	color: #{clr.$gray-300};
+	color: clr.$gray-300;
 }
 
 .posts-pagerThing {
@@ -49,17 +50,17 @@
 .posts-Title {
 	padding: 0;
 	font-size: clamp(1.25rem, 0.625rem + 1.75vw, 2rem);
-	/* font-family: var(--serif); */
-	/* font-weight: var(--font-medium); */
+	/* font-family: var.$serif; */
+	/* font-weight: var.$font-medium; */
 	line-height: 1.25em;
 	letter-spacing: -0.025em;
 }
 
 .posts-Description {
 	font-size: clamp(0.95rem, 0.625rem + 1vw, 1.25rem);
-	/* font-family: var(--serif); */
+	/* font-family: var.$serif; */
 	/* font-style: italic; */
-	/* font-weight: var(--font-light); */
+	/* font-weight: var.$font-light; */
 	letter-spacing: -0.025em;
 	margin-top: 0.5em;
 	margin-bottom: 0.25em;
@@ -103,11 +104,11 @@ hr.paginatorBottom {
 }
 
 .arrowStop {
-	color: #{clr.$gray-300};
+	color: clr.$gray-300;
 }
 
 path.FirstLast {
-	fill: #{clr.$gray-400};
+	fill: clr.$gray-400;
 }
 
 path.NextPrev {

@@ -1,4 +1,5 @@
 @use 'partials/colors' as clr;
+@use 'partials/variables-010' as var;
 /* @use 'partials/variables-010' as var; */
 
 [data-theme="light"] {
@@ -30,12 +31,12 @@
 /* Background */
 
 .chroma, .code-inline {
-	color: #{clr.$black};
+	color: clr.$black;
 	background-color: var(--bkgd-code);
 	border: 1px solid;
 	border-color: var(--border);
 	& * {
-		font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
+		font-weight: var.$font-normal; /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
 		color: var(--clr, #ffff00);
 	}
@@ -72,7 +73,7 @@
 	& .hl {
 		display: block;
 		width: 100%;
-		background-color: #{clr.$yellow-200};
+		background-color: clr.$yellow-200;
 	}
 	& .lnt, & .ln {
 		margin-right: 0.4em;
@@ -156,7 +157,7 @@
 
 pre,
 code {
-	font-family: var(--monospaced);
+	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
 	background: var(--bkgd-article-code);
@@ -164,7 +165,7 @@ code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #{clr.$gray-200};
+	color: clr.$gray-200;
 	background: none;
 	font-size: clamp(0.9rem, 1vw + 0.625rem, var(--text-lg));
 	text-align: left;
@@ -187,8 +188,8 @@ pre.chroma {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	color: #{clr.$black};
-	background-color: #{clr.$white};
+	color: clr.$black;
+	background-color: clr.$white;
 }
 
 .highlight {
@@ -197,7 +198,7 @@ pre[class*="language-"] {
 		border-radius: 16px;
 		/* keeps code blocks from being too small
 		due to the `article code` rule above */
-		font-size: clamp(0.9rem, 1vw + 0.625rem, var(--text-lg));
+		font-size: clamp(0.9rem, 1vw + 0.625rem, var.$text-lg);
 	}
 }
 
@@ -222,9 +223,9 @@ pre[class*="language-"] {
 	right: 0;
 	padding: 2px 7px 5px 7px;
 	margin: 5px;
-	color: #{clr.$gray-500};
-	border-color: #{clr.$gray-500};
-	background-color: #{clr.$gray-100};
+	color: clr.$gray-500;
+	border-color: clr.$gray-500;
+	background-color: clr.$gray-100;
 	border: 1px solid;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -233,15 +234,15 @@ pre[class*="language-"] {
 	transition: 0.1s;
 }
 .clipboard-button > svg {
-	fill: #{clr.$gray-500};
+	fill: clr.$gray-500;
 }
 .clipboard-button:hover {
 	cursor: pointer;
-	border-color: #{clr.$green-600};
-	background-color: #{clr.$green-100};
+	border-color: clr.$green-600;
+	background-color: clr.$green-100;
 }
 .clipboard-button:hover > svg {
-	fill: #{clr.$green-600};
+	fill: clr.$green-600;
 }
 .clipboard-button:focus {
 	outline: 0;
@@ -281,7 +282,7 @@ code, article code, .box code {
 }
 
 code {
-	font-family: var(--monospaced);
+	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
 }
@@ -344,11 +345,11 @@ html[data-theme="dark"] {
 	}
 	& .chroma, & .code-inline {
 		& .h1 {
-			background-color: #{clr.$yellow-800};
+			background-color: clr.$yellow-800;
 		}
 	}
 	& :not(pre) > code[class*="language-"], & pre[class*="language-"] {
-		color: #{clr.$white};
-		background-color: #{clr.$slate-800};
+		color: clr.$white;
+		background-color: clr.$slate-800;
 	}
 }
