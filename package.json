@@ -1,6 +1,6 @@
 {
   "name": "hugo-site",
-  "description": "This is the repository from which the Hugo-generated version of https://www.brycewray.com/ is built. For some reason, pnpm won't work with these scripts if there is a `name` field in this repo’s package.json.",
+  "description": "This is the repository from which the Hugo-generated version of https://www.brycewray.com/ is built.",
   "author": "Bryce Wray",
   "license": "MIT",
   "config": {
