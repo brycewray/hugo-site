@@ -1,0 +1,50 @@
+{
+  "name": "hugo-site",
+  "description": "This is the repository from which the Hugo-generated version of https://www.brycewray.com/ is built. For some reason, pnpm won't work with these scripts if there is a `name` field in this repo’s package.json.",
+  "author": "Bryce Wray",
+  "license": "MIT",
+  "config": {
+    "hugo": "0.120.4",
+    "myIP": "192.168.0.70"
+  },
+  "scripts": {
+    "clean": "rimraf public",
+    "search": "pagefind --site public",
+    "testbuild:search": "pnpm run search --bundle-dir ../static/_pagefind",
+    "install:hugo": "hugo-installer --version config.hugo --extended",
+    "hugo": "exec-bin bin/hugo/hugo",
+    "hugoenv": "pnpm run hugo env",
+    "hugonew": "pnpm run hugo new",
+    "hugometrics": "pnpm run hugo --templateMetrics --templateMetricsHints",
+    "hugoversion": "pnpm run hugo version",
+    "devexec:hugo": "pnpm run hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
+    "devexecdebug:hugo": "pnpm run devexec:hugo --debug",
+    "devdebug:hugo": "pnpm install:hugo && pnpm devexecdebug:hugo",
+    "dev:hugo": "pnpm install:hugo && pnpm devexec:hugo",
+    "move-excerpts": "move-cli public/posts/index.xml public/index-excerpts.xml && move-cli public/posts/index.json public/index-excerpts.json",
+    "prodexec:hugo": "exec-bin bin/hugo/hugo --minify --gc --logLevel info",
+    "prod:hugo": "pnpm install:hugo && pnpm prodexec:hugo",
+    "start": "NODE_ENV=development pnpm clean && pnpm dev:hugo",
+    "start:debug": "NODE_ENV=development pnpm clean && pnpm devdebug:hugo",
+    "build:prelim": "NODE_ENV=production pnpm clean && pnpm prod:hugo",
+    "build": "pnpm build:prelim && pnpm move-excerpts && pnpm search",
+    "deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
+    "deploy": "pnpm build && pnpm deploy:wrangler",
+    "testbuildexec:hugo": "pnpm devexec:hugo --minify --environment production",
+    "testbuild": "pnpm clean && pnpm build:prelim && pnpm move-excerpts && pnpm testbuildexec:hugo",
+    "testbuildpf": "pnpm build:prelim && pnpm move-excerpts && pnpm testbuild:search && pnpm testbuildexec:hugo"
+  },
+  "devDependencies": {
+    "exec-bin": "^1.0.0",
+    "hugo-installer": "^4.0.1",
+    "move-cli": "^2.0.0",
+    "pagefind": "^1.0.4",
+    "rimraf": "^5.0.5",
+    "wrangler": "^3.17.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "semver": "^7.5.4"
+    }
+  }
+}
