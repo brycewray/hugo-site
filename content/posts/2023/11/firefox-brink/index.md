@@ -39,7 +39,7 @@ Chrome *vs.* Firefox *vs.* Safari for January, 2009, through November, 2023.\
 Image: [StatCounter](https://gs.statcounter.com/).
 {.imgCaption}
 
-Firefox peaked at 31.82% in November, 2009 --- and then began its long slide in almost direct proportion to the rise of Chrome. The latter shot from 1.37% use in January, 2009 to its own peak of 66.34% in September, 2020, since falling back to a "measly" 62.85% in the very latest data.[^UserActivity]
+Firefox peaked at 31.82% in November, 2009 --- and then began its long slide in almost direct proportion to the rise of Chrome. The latter shot from 1.37% use in January, 2009, to its own peak of 66.34% in September, 2020, since falling back to a "measly" 62.85% in the very latest data.[^UserActivity]
 
 [^UserActivity]: For that matter, there's also [Mozilla's own "User Activity" chart](https://data.firefox.com/dashboard/user-activity), which shows the count of active Firefox clients dropping from 244.2 million on December 30, 2018, to 187.3 million on November 19, 2023. That's a 23.3% drop over just that five-year period.
 
