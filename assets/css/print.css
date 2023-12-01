@@ -1,5 +1,4 @@
 @charset 'utf-8';
-@use 'partials/colors' as clr;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
 
@@ -40,13 +39,13 @@
 		overflow-x: auto !important;
 	}
 	code[class*="language-"], pre[class*="language-"] {
-		color: #{clr.$white};
+		color: var(--white);
 	}
 	:not(pre) > code[class*="language-"], pre[class*="language-"] {
 		background: #000;
 	}
 	.chroma * {
-		color: #{clr.$white} !important;
+		color: var(--white) !important;
 	}
 	article code {
 		background-color: #ddd;

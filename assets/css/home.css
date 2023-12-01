@@ -1,5 +1,4 @@
 @charset 'utf-8';
-@use 'partials/variables-010' as var;
 /* @use 'partials/005-limited-colors' as clr; */
 /* @use 'partials/010-variables' as var; */
 
@@ -88,9 +87,9 @@ html[data-theme="dark"] {
 	margin-top: 0.5em;
 	letter-spacing: -0.025em;
 	font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
-	/* font-family: var.$serif; */
+	/* font-family: var(--serif); */
 	/* font-style: italic; */
-	/* font-weight: var.$font-light; */
+	/* font-weight: var(--font-light); */
 }
 
 .homePost-Dates {
@@ -102,7 +101,7 @@ html[data-theme="dark"] {
 .homePost-Finish {
 	margin-top: 3em;
 	& strong {
-		font-weight: var.$font-semibold;
+		font-weight: var(--font-semibold);
 	}
 }
 /* === end, for home page */
