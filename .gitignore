@@ -82,3 +82,5 @@ cfpages.toml
 cfpages.yml
 
 .wrangler
+
+pnpm-help*.*
