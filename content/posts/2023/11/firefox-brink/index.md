@@ -9,7 +9,7 @@ imgs:
 - 2023-11-30_screen-cap_StatCounter-browser-2009-01--2023-11_edited_2318x1158.png
 ---
 
-A somewhat obscure guideline for developers of U.S. government websites may be about to accelerate the long, sad decline of Mozilla's Firefox browser. There already are plenty of large entities, both public and private, whose websites lack proper support for Firefox; and that will get only worse in the near future, because the Firefox's auburn paws are perilously close to the lip of the proverbial slippery slope.
+A somewhat obscure guideline for developers of U.S. government websites may be about to accelerate the long, sad decline of Mozilla's Firefox browser. There already are plenty of large entities, both public and private, whose websites lack proper support for Firefox; and that will get only worse in the near future, because the ’fox's auburn paws are perilously close to the lip of the proverbial slippery slope.
 
 <!--more-->
 
@@ -54,7 +54,7 @@ With such a continuing free-fall, Firefox is inevitably nearing the point where 
 Actually, it very well could. Here's how I envision the dominoes falling:
 
 1. Once Firefox slips below the 2% threshold in the government's visitor analytics, USWDS tells government web devs they don't have to support Firefox anymore.
-2. When that word gets out, it spreads quickly to not only the front-end dev community but also the corporate IT departments for whom many web devs work. Many corporations do a lot of business with the government and, thus, whatever the government does from an IT standpoint is going to influence what corporations do.
+2. When that word gets out, it spreads quickly to not only the front-end dev community but also the corporate IT departments for whom some web devs work. Many corporations do a lot of business with the government and, thus, whatever the government does from an IT standpoint is going to influence what corporations do.
 3. Corporations see this change as an opportunity to lower dev costs and delivery times, in that it provides an excuse to remove *some* testing (and, in rare cases, specific coding) from their development workflow.[^companiesFF]
 
 [^companiesFF]: At least, this is in the case of those companies which did still bother to test their websites on Firefox in the first place. More than a few gave up on it some years ago, if my own anecdotal experiences can provide any guidance.
@@ -69,4 +69,4 @@ Nearly five years ago, as the news broke that Microsoft had decided to move its 
 
 > Supporting multiple browser engines --- even if there is a Really Big Dog engine among them that's about to get even bigger --- ain't always fun, but it goes with the territory; and I firmly believe it will continue to do so, especially for sites that are commercial in nature.
 
-That firm belief remains unchanged, but the meaning of that "multiple browser engines" part is in serious danger of significant change. Unless something dramatically reverses Firefox's trends, the ’fox could soon be whimpering its way down that ugly, slippery slope to irrelevance.
+That firm belief remains unchanged, but the meaning of the "multiple browser engines" part is in serious danger of significant change. Unless something dramatically reverses Firefox's trends, the ’fox could soon be whimpering its way down an ugly, slippery slope to irrelevance.
