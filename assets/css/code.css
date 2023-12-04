@@ -12,10 +12,10 @@
 	--green-600: hsl(145, 90%, 34%);
 	--emerald-200: hsl(155, 76%, 81%);
 	--emerald-700: hsl(155, 70%, 28%);
-	--sky-300: hsl(200, 100%, 77%);
-	--sky-700: hsl(200, 100%, 30%);
-	--violet-300: hsl(255, 95%, 85%);
-	--violet-600: hsl(255, 83%, 58%);
+	--cyan-300: hsl(190, 100%, 73%);
+	--cyan-600: hsl(190, 100%, 34%);
+	--blue-300: hsl(210, 96%, 78%);
+	--blue-700: hsl(210, 100%, 45%);
 	--fuchsia-300: hsl(290, 93%, 83%);
 	--fuchsia-700: hsl(290, 70%, 41%);
 	--rose-300: hsl(330, 98%, 83%);
@@ -28,8 +28,8 @@
 	--yellow: var(--yellow-800);
 	--green: var(--green-600);
 	--emerald: var(--emerald-700);
-	--sky: var(--sky-700);
-	--violet: var(--violet-600);
+	--cyan: var(--cyan-600);
+	--blue: var(--blue-700);
 	--fuchsia: var(--fuchsia-700);
 	--rose: var(--rose-700);
 }
@@ -40,8 +40,8 @@
 	--yellow: var(--yellow-300);
 	--green: var(--green-100);
 	--emerald: var(--emerald-200);
-	--sky: var(--sky-300);
-	--violet: var(--violet-300);
+	--cyan: var(--cyan-300);
+	--blue: var(--blue-300);
 	--fuchsia: var(--fuchsia-300);
 	--rose: var(--rose-300);
 }
@@ -115,9 +115,15 @@
 	NameLabel (nl), NameNamespace (nn), NameOther (nx), NameProperty (np),
 	NameTag (nt), NameVariable (nv), NameVariableClass (vc),
 	NameVariableGlobal (vg), NameVariableInstance (vi), NameVariableMagic (vm) */
-	& .n, & .na, & .nb, & .bp, & .nc, & .no, & .nd, & .ni, & .ne, & .nf, & .fm, & .nl, & .nn, & .nx, & .np,
-	& .nt, & .nv, & .vc, & .vg, & .vi, & .vm {
-		--clr: var(--sky);
+	& .n, & .na, & .nb, & .bp, & .nc, & .no, & .nd, & .ni, & .ne, & .fm, & .nl, & .nn, & .np,
+	& .nv, & .vc, & .vg, & .vi, & .vm {
+		--clr: var(--blue);
+	}
+	& .nf, & .nt {
+		--clr: var(--cyan);
+	}
+	& .nx {
+		--clr: var(--orange);
 	}
 	/* === Literals
 	Literal (l), LiteralDate (ld), LiteralString (s), LiteralStringAffix (sa),
