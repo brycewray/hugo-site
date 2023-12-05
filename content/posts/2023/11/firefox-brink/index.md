@@ -9,6 +9,9 @@ imgs:
 - 2023-11-30_screen-cap_StatCounter-browser-2009-01--2023-11_edited_2318x1158.png
 ---
 
+**Note**: This post was the subject of a [Hacker News thread](https://news.ycombinator.com/item?id=38531104).
+{.box}
+
 A somewhat obscure guideline for developers of U.S. government websites may be about to accelerate the long, sad decline of Mozilla's Firefox browser. There already are plenty of large entities, both public and private, whose websites lack proper support for Firefox; and that will get only worse in the near future, because the ’fox's auburn paws are perilously close to the lip of the proverbial slippery slope.
 
 <!--more-->
