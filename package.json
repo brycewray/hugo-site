@@ -4,7 +4,7 @@
   "author": "Bryce Wray",
   "license": "MIT",
   "config": {
-    "hugo": "0.120.4",
+    "hugo": "0.121.0",
     "myIP": "192.168.0.70"
   },
   "scripts": {
