@@ -71,17 +71,17 @@ Two things are far, far better than they were in the olden days: system typeface
 
 As for which typefaces to specify and in which order in your CSS, any number of sites have posted what seems to be the consensus pick for the "system fonts stack":
 
-- **San Francisco** --- iOS 9.x and beyond; macOS 10.11.x (El Capitan) and beyond.
-- **Segoe UI** --- Windows Vista and beyond.
-- **Tahoma** --- Windows XP (you'd be amazed how many millions of people still use it, especially in some parts of the world).
+- **San Francisco** --- iOS 9.x and beyond; macOS 10.11.x (El Capitan) and beyond.
+- **Segoe UI** --- Windows Vista and beyond.
+- **Tahoma** --- Windows XP (you'd be amazed how many millions of people still use it, especially in some parts of the world).
 - **Roboto** --- Android 4.0+ and all versions of ChromeOS.
 - **Oxygen** --- Linux distributions using KDE.
 - **Ubuntu** --- Ubuntu (no, really).
 - **Cantarell** --- Linux distributions using GNOME.
 - **Fira Sans** --- the Firefox OS for smartphones (an OS which is considered discontinued, but this typeface is still in the stack).
 - **Droid Sans** --- Android before version 4.0.
-- **Helvetica Neue** --- iOS prior to iOS 9 and Mac OS X 10.10.x (Yosemite).
-- **Lucida Grande** --- Mac OS X 10.0.x (Cheetah) through Mac OS X 10.9.x (Mavericks).
+- **Helvetica Neue** --- iOS prior to iOS 9 and Mac OS X 10.10.x (Yosemite).
+- **Lucida Grande** --- Mac OS X 10.0.x (Cheetah) through Mac OS X 10.9.x (Mavericks).
 - **sans-serif** (yes, without capitalization) --- This is at the end as a fallback in case, somehow, none of the others will float your device's boat, although that's _extremely_ unlikely.
 
 In case you aren't familiar with all of these, here you go (all except the generic sans-serif fallback, since it _is_ so generic and also, obviously, would vary by system and/or device):

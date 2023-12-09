@@ -306,4 +306,4 @@ And that's it. I hope this has spared you some searching. If you encounter error
 - [JavaTpoint website](https://www.javatpoint.com), "[Linux Home Directory](https://www.javatpoint.com/linux-home-directory) (retrieved <span class="nobrk">2022-05-22</span>).
 - [ShellHacks website](https://www.shellhacks.com/), "[Windows CMD: PATH Variable — Add To PATH — Echo PATH](https://www.shellhacks.com/windows-cmd-path-variable-add-to-path-echo-path/)" (<span class="nobrk">2019-04-19</span>).
 - [tar(1) Linux manual page](https://man7.org/linux/man-pages/man1/tar.1.html) (retrieved <span class="nobrk">2022-05-22</span>).
-- [TheWindowsClub website](https://www.thewindowsclub.com/), "[How to Run Command Prompt as an Administrator in Windows 11/10](https://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator)" (<span class="nobrk">2019-04-18</span>).
+- [TheWindowsClub website](https://www.thewindowsclub.com/), "[How to Run Command Prompt as an Administrator in Windows 11/10](https://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator)" (<span class="nobrk">2019-04-18</span>).

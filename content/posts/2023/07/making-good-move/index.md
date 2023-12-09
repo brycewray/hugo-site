@@ -124,7 +124,7 @@ I still have the same operating system --- with my apps, files, and even menu it
 
 But beyond that, there's nothing *but* change in evidence.
 
-The whole system runs much faster while using considerably less power. It backs up more data, more quickly. The Mac, specifically, can now handle demanding loads --- including no less than running Windows 11 in Parallels Desktop --- with greater speed and *without* gasping for (cool) air. Here are some rough temperatures-related comparisons:
+The whole system runs much faster while using considerably less power. It backs up more data, more quickly. The Mac, specifically, can now handle demanding loads --- including no less than running Windows 11 in Parallels Desktop --- with greater speed and *without* gasping for (cool) air. Here are some rough temperatures-related comparisons:
 
 | Process(es) | Old Mac<br>CPU temps | New Mac<br>CPU temps |
 |----|----|----|
@@ -144,9 +144,9 @@ To reiterate something I've said from time to time in these posts: I love living
 
 [^webdevTask]: By "'heavy' web dev task," I mean something like having Hugo regenerate *all* its images, do much more complicated [scoped styling](/posts/2023/01/sorta-scoped-styling-hugo-take-two/) than it already does, or otherwise jump through many more hoops than usual. You'll have to come up with your own web dev environment's equivalent.
 
-[^winVer]: That's Windows 10 on the old Mac and Windows 11 on the new Mac. The old Mac [wasn't eligible](https://appleinsider.com/articles/21/06/25/intel-macs-cant-run-windows-11-without-this-workaround) to run Windows 11.
+[^winVer]: That's Windows 10 on the old Mac and Windows 11 on the new Mac. The old Mac [wasn't eligible](https://appleinsider.com/articles/21/06/25/intel-macs-cant-run-windows-11-without-this-workaround) to run Windows 11.
 
-[^gamesW11]: Yes, it can even run AAA games in Windows 11! That's no small feat, since this is the *ARM* version of Windows 11, meaning that the games are using Windows/ARM's x86 emulator. Thus, you've got an AAA game on top of an x86 emulator on top of Windows/ARM on top of Parallel Desktop on top of macOS. Jeeeeeez. As you see in the table, it doesn't drive my new Mac higher than about 135°. Compare that to how the old Mac would jump up to the 165°--190°+ range just to run Windows *at all*.\
+[^gamesW11]: Yes, it can even run AAA games in Windows 11! That's no small feat, since this is the *ARM* version of Windows 11, meaning that the games are using Windows/ARM's x86 emulator. Thus, you've got an AAA game on top of an x86 emulator on top of Windows/ARM on top of Parallel Desktop on top of macOS. Jeeeeeez. As you see in the table, it doesn't drive my new Mac higher than about 135°. Compare that to how the old Mac would jump up to the 165°--190°+ range just to run Windows *at all*.\
 \
 Please note also that:\
 \
