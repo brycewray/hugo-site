@@ -20,6 +20,8 @@ The [U.S. Web Design System](https://designsystem.digital.gov) (USWDS) provides 
 
 > . . . we officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/).
 
+<!-- See also https://news.ycombinator.com/item?id=36776603 from 2023-07-18, which brought this to my attention. -->
+
 At this writing, that analytics page shows the following browser traffic for the previous ninety days:
 
 | Browser | Share |
