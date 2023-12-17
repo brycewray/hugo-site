@@ -24,7 +24,7 @@ The [public form](https://github.com/brycewray/browser-tests) of my new `browser
 - Safari (macOS)
 - Ungoogled Chromium (Arch)
 
-. . . a list which can and will change over time, depending on several factors which, themselves, will remain somewhat in flux. 
+. . . a list which can and will change over time, depending on several factors which, themselves, will remain somewhat in flux.
 
 The repo also has a [`pre-git`  area](https://github.com/brycewray/browser-tests/tree/main/pre-git) where you can see what I did before going Full Git with this thing. In short, it was a growing set of text files (including those on which I based the earlier ["Testing, testing"](/posts/2023/10/testing-testing/)) and involved a lot of needless repetition. I realized that, in the end, the best bet is to keep these two Markdown files and update them as I do new tests. That way, there will always be one source of truth with the latest data for each config (*i.e.*, macOS-on-Mac-Studio and Arch-on-iMac), yet with a clear Git trail to earlier versions --- at least, that'll be true once I actually add to it.
 
@@ -46,5 +46,8 @@ First, it got mentioned in the [2023-12-04 edition of the *Changelog News* podca
 The next day, somebody --- perhaps someone who'd found the post through that *Changelog News* podcast? --- [submitted it to Hacker News](https://news.ycombinator.com/item?id=38531104). It ended up on the front page and *stayed* there for hours, long enough to gather hundreds of comments and, not incidentally, generate tens of thousands of hits to the post.[^CW] (As I've learned ruefully in the past, certain topics really trigger the HN crowd. I'd already been aware that Tailwind CSS is one of them; and, it now appears, another is the decline of Firefox.)
 
 [^CW]: Indeed, my post's venture into semi-viral status actually cost me a little money. The resulting "invocations" of the Cloudflare Pages Function in front of my site blew ’way past the free tier's 100K-per-day limit, forcing me to drop a few bucks to go to the next tier and keep the little sucker running.
+
+**Note, 2023-12-17**: I later learned that the article also got picked up in multiple subreddits (*e.g.*, [/r/webdev/](https://www.reddit.com/r/webdev/comments/18c5zue/firefox_on_the_brink/)) and on [Slashdot](https://news.slashdot.org/story/23/12/05/0745251/firefox-on-the-brink).
+{.box}
 
 Thanks to anyone who started following my feed as a result of all the attention that "Firefox on the brink?" amazingly received. I hope you consider sticking around. And, just for the record: I actually like Firefox very much; I just fear for its future due to the reasons I cited, all of which have to do with real-world facts and policies, not anyone's fleeting feelings.

@@ -75,3 +75,21 @@ Nearly five years ago, as the news broke that Microsoft had decided to move its 
 > Supporting multiple browser engines --- even if there is a Really Big Dog engine among them that's about to get even bigger --- ain't always fun, but it goes with the territory; and I firmly believe it will continue to do so, especially for sites that are commercial in nature.
 
 That firm belief remains unchanged, but the meaning of the "multiple browser engines" part is in serious danger of significant change. Unless something dramatically reverses Firefox's trends, the ’fox could soon be whimpering its way down an ugly, slippery slope to irrelevance.
+
+<!--
+List of threads discussing as of 2023-12-17-1110CST:
+
+- Hacker News: https://news.ycombinator.com/item?id=38531104
+- Reddit:
+  - https://www.reddit.com/r/webdev/comments/18c5zue/firefox_on_the_brink/
+  - https://www.reddit.com/r/technology/comments/18bhyl3/firefox_on_the_brink/
+  - https://www.reddit.com/r/linux/comments/18beqyu/firefox_on_the_brink/
+  - https://www.reddit.com/r/browsers/comments/18bhlif/firefox_on_the_brink/
+  - https://www.reddit.com/r/firefox/comments/18bhmdu/firefox_on_the_brink/
+  - https://www.reddit.com/r/hackernews/comments/18bdrab/firefox_on_the_brink/
+  - https://www.reddit.com/r/realtech/comments/18bhyy0/firefox_on_the_brink/
+  - https://www.reddit.com/r/patient_hackernews/comments/18beunk/firefox_on_the_brink/
+  - https://www.reddit.com/r/uBlockOrigin/comments/18ck7wt/interesting_discussion_on_slashdot/
+- Slashdot: https://news.slashdot.org/story/23/12/05/0745251/firefox-on-the-brink
+
+-->
