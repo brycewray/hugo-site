@@ -30,6 +30,9 @@ The repo also has a [`pre-git`  area](https://github.com/brycewray/browser-tests
 
 I made the repo public mainly because I suspected that some of my readers would be similarly interested in such data **but** didn't want to spend their own time running the tests, especially not every time there's a need to re-do them. So, there ya go. Enjoy.
 
+**Update, 2023-12-16**: I later decided to do my Linux testing in Fedora rather than Arch, due to the easier availability of truly official browser versions for that distro. The resulting page will be [here](https://github.com/brycewray/browser-tests/blob/main/fedora-linux-2017-imac.md).
+{.box}
+
 ----
 
 ## A follow-up to "Firefox on the brink?"
