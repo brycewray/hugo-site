@@ -58,5 +58,8 @@ All of these, along with certain references in replies to various issues reports
 
 The history of major Tailwind releases has been that each new one requires some juggling to make it work properly with Hugo. It's been an "arms race" kind of thing. So, while Hugo v.0.112.x (and up) now gets along well with Tailwind v.3.x, we'll have to wait to see what happens with future releases of Tailwind --- and Hugo, for that matter.
 
-**Update, 2022-07-20**: According to Wathan's [2022-07-19 recap of the recent Tailwind Connect 2023 event](https://tailwindcss.com/blog/2023-07-18-tailwind-connect-2023-recap), the next major update to Tailwind CSS will be numbered as **v.3.4** rather than v.4.0, and its release should occur "in the next couple of months."
+**Update, 2023-07-20**: According to Wathan's [2023-07-19 recap of the recent Tailwind Connect 2023 event](https://tailwindcss.com/blog/2023-07-18-tailwind-connect-2023-recap), the next major update to Tailwind CSS will be numbered as **v.3.4** rather than v.4.0, and its release should occur "in the next couple of months."
+{.box}
+
+**Update, 2023-12-19**: When [Tailwind CSS 3.4 was released](https://tailwindcss.com/blog/tailwindcss-v3-4) a few months later, Wathan noted that the major engine change he'd touted for v.3.4 was now being delayed until the next major release.
 {.box}
