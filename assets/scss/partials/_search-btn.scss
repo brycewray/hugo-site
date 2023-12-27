@@ -9,7 +9,7 @@ search-button {
 	display: grid;
 	margin: 4em auto 2em;
 	place-items: center;
-	& button {
+	button {
 		width: var.$btn-width;
 		height: var.$btn-height;
 		display: flex;
@@ -22,15 +22,15 @@ search-button {
 		border-radius: var.$btn-radius;
 		border-color: transparent;
 		color: var(--btn-text-default);
-		& .svg {
+		.svg {
 			padding-left: var.$interactionPadding;
 			padding-bottom: 0.125em;
-			& svg {
+			svg {
 				width: var.$btn-svg-width;
 				height: auto;
 			}
 		}
-		& .legend {
+		.legend {
 			padding-right: var.$interactionPadding;
 			text-align: right;
 			font-size: var.$btn-legend-text;

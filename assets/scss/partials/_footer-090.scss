@@ -12,20 +12,20 @@ footer {
 	&.with-bg-dark {
 		padding-bottom: 6em;
 	}
-	& p {
+	p {
 		line-height: 1.5em; /* definitely em, not rem, here */
-		& code {
+		code {
 			background-color: var(--bkgd-article-code);
 		}
 	}
-	& div.footerWrapper {
+	div.footerWrapper {
 		margin: 0 auto;
 		width: 80%;
 		height: 100%;
-		& p {
+		p {
 			margin: 1rem 0;
 		}
-		& div.icons-box {
+		div.icons-box {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;

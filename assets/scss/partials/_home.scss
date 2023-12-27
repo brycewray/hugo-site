@@ -24,7 +24,7 @@
 
 .homeOpen {
 	text-align: center;
-	& h1 {
+	h1 {
 		line-height: 1.75em;
 		font-size: clamp(1.5rem, 0.5rem + 1.5vw, 2.25rem);
 		letter-spacing: -0.025em;
@@ -37,12 +37,12 @@
 		text-align: right;
 		padding: 0 3em 0 0;
 		width: 40%;
-		& h1 {
+		h1 {
 			padding: 3.5em 0 0 2em;
 		}
 	}
 	@media screen and (min-width: 1536px) {
-		& h1 {
+		h1 {
 			padding: 2.5em 0 0 2.5em;
 		}
 	}
@@ -70,7 +70,7 @@
 }
 
 html[data-theme="dark"] {
-	& .homePost-Latest {
+	.homePost-Latest {
 		color: var(--default);
 	}
 }
@@ -101,7 +101,7 @@ html[data-theme="dark"] {
 
 .homePost-Finish {
 	margin-top: 3em;
-	& strong {
+	strong {
 		font-weight: var.$font-semibold;
 	}
 }

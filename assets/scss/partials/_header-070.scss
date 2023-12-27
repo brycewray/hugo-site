@@ -21,7 +21,7 @@ header {
 	cursor: pointer;
 	margin: 0rem 1rem;
 	right: 2.5em;
-	& svg {
+	svg {
 		padding-top: 0.425em;
 		width: 1.5rem;
 		fill: clr.$white;
@@ -45,7 +45,7 @@ header {
 	text-align: right;
 	/* align-items: right; */
 	margin: 0.5rem 0.5rem 0.5rem 0;
-	& li {
+	li {
 		list-style: none;
 		display: none;
 		font-weight: var.$font-bold;
@@ -63,7 +63,7 @@ header {
 			}
 		}
 	}
-	& a {
+	a {
 		text-decoration: none;
 		border: 0;
 		color: var(--link-nav);
@@ -76,7 +76,7 @@ header {
 		padding: 0;
 		gap: 0.5rem;
 		margin: 0.5rem var(--navRightMargin) 0 0;
-		& li {
+		li {
 			font-size: var.$text-sm;
 			display: block;
 			text-transform: uppercase;
@@ -124,7 +124,7 @@ header {
 	}
 	background-color: transparent;
 	border: 0;
-	& svg {
+	svg {
 		/* position: absolute; */
 		width: 1.375em;
 		height: auto;

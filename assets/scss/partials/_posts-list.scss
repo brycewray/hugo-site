@@ -70,7 +70,7 @@
 	font-size: clamp(0.825rem, 0.25rem + 1vw, 1rem);
 	line-height: 1.33;
 	margin-bottom: 0.5em;
-	& time {
+	time {
 		display: inline;
 	}
 }
@@ -98,7 +98,7 @@ hr.paginatorBottom {
 	margin-inline-start: 0;
 	margin-inline-end: 0;
 	padding-inline-start: 0;
-	& li {
+	li {
 		display: inline;
 	}
 }

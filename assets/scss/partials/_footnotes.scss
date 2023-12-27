@@ -13,21 +13,21 @@
 .footnotes {
 	padding-top: 0.5em;
 	/* padding-bottom: 1em; */
-	& hr {
+	hr {
 		border: none;
 		height: 2px;
 		background-color: var(--head);
 	}
-	& ol {
+	ol {
 		padding-inline-start: 1.5rem;
 	}
-	& ol li {
+	ol li {
 		font-size: clamp(0.625rem, 1vw + 0.5em, 0.9em);
 		/*
 		As of now, `::marker` has too little support even in good browsers;
 		see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
 		*/
-		& p {
+		p {
 			line-height: 1.5em;
 		}
 	}

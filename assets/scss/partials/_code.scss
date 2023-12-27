@@ -35,33 +35,33 @@
 	background-color: var(--bkgd-code);
 	border: 1px solid;
 	border-color: var(--border);
-	& * {
+	* {
 		font-weight: var.$font-normal; /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
 		color: var(--clr, #ffff00);
 	}
 	/* === Other */
-	& .x {
+	.x {
 		--clr: var(--default);
 	}
 	/* === Error */
-	& .err {
+	.err {
 		--clr: var(--red);
 	}
 	/* === Lines (most items need specifics)
 	Line text (cl - was missing from original), LineTableTD (lntd),
 	LineTable (lntable), LineHighlight (hl), LineNumbersTable (lnt),
 	LineNumbers (ln) */
-	& .cl {
+	.cl {
 		--clr: var(--default);
 	}
-	& .lntd {
+	.lntd {
 		vertical-align: top;
 		padding: 0;
 		margin: 0;
 		border: 0;
 	}
-	& .lntable {
+	.lntable {
 		border-spacing: 0;
 		padding: 0;
 		margin: 0;
@@ -70,12 +70,12 @@
 		overflow: auto;
 		display: block;
 	}
-	& .hl {
+	.hl {
 		display: block;
 		width: 100%;
 		background-color: clr.$yellow-200;
 	}
-	& .lnt, & .ln {
+	.lnt, .ln {
 		margin-right: 0.4em;
 		padding: 0 0.4em;
 		--clr: var(--gray);
@@ -84,7 +84,7 @@
 	Keyword (k), KeywordConstant (kc), KeywordDeclaration (kd),
 	KeywordNamespace (kn), KeywordPseudo (kp), KeywordReserved (kr),
 	KeywordType (kt) */
-	& .k, & .kc, & .kd, & .kn, & .kp, & .kr, & .kt {
+	.k, .kc, .kd, .kn, .kp, .kr, .kt {
 		/* font-weight: bold; */
 		--clr: var(--rose);
 	}
@@ -95,14 +95,14 @@
 	NameLabel (nl), NameNamespace (nn), NameOther (nx), NameProperty (np),
 	NameTag (nt), NameVariable (nv), NameVariableClass (vc),
 	NameVariableGlobal (vg), NameVariableInstance (vi), NameVariableMagic (vm) */
-	& .n, & .na, & .nb, & .bp, & .nc, & .no, & .nd, & .ni, & .ne, & .fm, & .nl, & .nn, & .np,
-	& .nv, & .vc, & .vg, & .vi, & .vm {
+	.n, .na, .nb, .bp, .nc, .no, .nd, .ni, .ne, .fm, .nl, .nn, .np,
+	.nv, .vc, .vg, .vi, .vm {
 		--clr: var(--blue);
 	}
-	& .nf, & .nt {
+	.nf, .nt {
 		--clr: var(--cyan);
 	}
-	& .nx {
+	.nx {
 		--clr: var(--orange);
 	}
 	/* === Literals
@@ -114,28 +114,28 @@
 	LiteralNumber (m), LiteralNumberBin (mb), LiteralNumberFloat (mf),
 	LiteralNumberHex (mh), LiteralNumberInteger (mi), LiteralNumberIntegerLong (il),
 	LiteralNumberOct (mo) */
-	& .l, & .ld, & .s, & .sa, & .sb, & .sc, & .dl, & .sd, & .s2, & .se, & .sh, & .si, & .sx, & .sr,
-	& .s1, & .ss, & .m, & .mb, & .mf, & .mh, & .mi, & .il, & .mo {
+	.l, .ld, .s, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si, .sx, .sr,
+	.s1, .ss, .m, .mb, .mf, .mh, .mi, .il, .mo {
 		--clr: var(--yellow);
 	}
 	/* === Operators
 	Operator (.o), OperatorWord (.ow) */
-	& .o, & .ow {
+	.o, .ow {
 		--clr: var(--fuchsia);
 	}
 	/* === Punctuation (p) */
-	& .p {
+	.p {
 		--clr: var(--gray);
 	}
 	/* === Comments
 	Comment (c), CommentHashbang (ch), CommentMultiline (cm),
 	CommentSingle (c1), CommentSpecial (cs),
 	CommentPreProc (cp), CommentPreProcFile (cpf) */
-	& .c, & .ch, & .cm, & .c1, & .cs {
+	.c, .ch, .cm, .c1, .cs {
 		font-style: italic;
 		--clr: var(--emerald);
 	}
-	& .cp, & .cpf {
+	.cp, .cpf {
 		--clr: var(--gray);
 	}
 	/* === Generics
@@ -143,17 +143,17 @@
 	GenericHeading (gh), GenericInserted (gi), GenericOutput (go), GenericPrompt (gp),
 	GenericStrong (gs - bold), GenericSubheading (gu), GenericTraceback (gt),
 	GenericUnderline (gl) */
-	& .g, & .gd, & .gr, & .gh, & .gi, & .go, & .gp, & .gu, & .gt, & .gl {
+	.g, .gd, .gr, .gh, .gi, .go, .gp, .gu, .gt, .gl {
 		--clr: var(--gray);
 	}
-	& .ge {
+	.ge {
 		font-style: italic;
 	}
-	& .gs {
+	.gs {
 		font-weight: bold;
 	}
 	/* === TextWhitespace (w) */
-	& .w {
+	.w {
 		--clr: var(--gray);
 	}
 }
@@ -335,7 +335,7 @@ article blockquote code {
 }
 
 .box {
-	& code, & a code {
+	code, a code {
 		font-size: 1em; /* definitely em */
 		background-color: var(--bkgd-box-code);
 	}
@@ -346,15 +346,15 @@ article ol li .highlight {
 }
 
 html[data-theme="dark"] {
-	& .chroma *, & .code-inline * {
+	.chroma *, .code-inline * {
 		color: var(--clr, #191970);
 	}
-	& .chroma, & .code-inline {
-		& .h1 {
+	.chroma, .code-inline {
+		.h1 {
 			background-color: clr.$yellow-800;
 		}
 	}
-	& :not(pre) > code[class*="language-"], & pre[class*="language-"] {
+	:not(pre) > code[class*="language-"], pre[class*="language-"] {
 		color: clr.$white;
 		background-color: clr.$slate-800;
 	}
