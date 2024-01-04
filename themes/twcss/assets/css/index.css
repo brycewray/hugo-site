@@ -1,14 +1,30 @@
-@import '/themes/twcss/assets/css/fonts.css';
+/* @import '/themes/twcss/assets/css/fonts.css'; */
 @import '/themes/twcss/assets/css/code.css';
 @import '/themes/twcss/assets/css/lite-yt-embed.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+	--navRightMargin: 6em; /* unless JS is off */
+	--arrowPadding: clamp(1.5em, 0.75vw + 0.625em, 2.5em);
+	--nextprevPadding: clamp(0.75em, 1vw + 0.5em, 1.5em);
+	--interactionPadding: 0.75em;
+	--btn-width: 12rem;
+	--btn-height: 2.25rem;
+	--btn-svg-width: 1.25em; /* height will be auto */
+}
+
 @layer base {
 	html {
 		-moz-tab-size: 2;
 		tab-size: 2;
+	}
+	[data-theme="light"] {
+		color-scheme: light;
+	}
+	[data-theme="dark"] {
+		color-scheme: dark;
 	}
 	#nav-Checkbox:checked ~ ul.nav-Menu li,
 	#nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
@@ -22,9 +38,6 @@
 	}
 	b, strong {
 		@apply font-semibold;
-	}
-	h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-		@apply text-blue-850 dark:text-blue-200;
 	}
 	h1, .h1 {
 		@apply text-3xl mb-4;
@@ -54,7 +67,7 @@
 		@apply no-underline;
 	}
 	.header-anchor {
-		@apply text-blue-850 dark:text-blue-200 no-underline hover:underline hover:underline-offset-[0.225em] hover:decoration-[0.075rem] hover:text-blue-700 hover:dark:text-blue-200;
+		@apply text-black dark:text-white no-underline hover:underline hover:underline-offset-[0.225em] hover:decoration-[0.075rem] hover:text-blue-700 hover:dark:text-blue-200;
 		&:hover::after {
 			content: "#";
 			@apply text-base pl-2;
@@ -142,7 +155,7 @@
 		font-size: 50%;
 	}
 	.box {
-		@apply text-sm !tracking-normal block box-border bg-white dark:bg-gray-800 border border-black dark:border-gray-200 mx-2 my-auto w-full px-4 py-6 mb-2;
+		@apply text-sm !tracking-normal block box-border bg-gray-100 dark:bg-gray-800 border border-black dark:border-gray-200 mx-2 my-auto w-full p-4 mb-2;
 		& p {
 			@apply p-0 m-0;
 		}
@@ -172,6 +185,72 @@
 		&.box {
 			margin-left: 3em;
 			width: calc(100% - 3em);
+		}
+	}
+	.nav-ModeToggle {
+		@apply absolute cursor-pointer top-[0.5em] lg:top-[0.625em] right-[1em] lg:right-[1.5em] bg-transparent border-0;
+		svg {
+			width: 1.375em;
+			@apply h-auto;
+			&.sun path, &.moon {
+				@apply fill-yellow-200;
+			}
+		}
+	}
+	.prevArrow, .nextArrow {
+		@apply text-sm leading-[1.375em];
+		a {
+			@apply text-white no-underline hover:underline focus:underline;
+		}
+	}
+	.prevnextText {
+		@apply text-sm lg:text-base leading-[1] lg:leading-6;
+		a {
+			@apply text-white no-underline hover:underline focus:underline;
+		}
+	}
+	.prevArrow {
+		padding-left: var(--arrowPadding);
+	}
+	.nextArrow {
+		padding-right: var(--arrowPadding);
+		@apply text-right;
+	}
+	.nextDiv, .prevDiv {
+		line-height: clamp(1em,1vw + .75em,1.25em);
+		@apply flex-1;
+	}
+	.nextDiv {
+		@apply text-right py-0 px-[--nextprevPadding];
+	}
+	.prevDiv {
+		@apply text-left py-0 pr-0 pl-[--nextprevPadding];
+	}
+	.bg-dark {
+		path.PrevNext {
+			@apply fill-white;
+		}
+	}
+	details.comments {
+		@apply mt-[1em];
+		> summary {
+			@apply list-none my-0 mx-auto;
+		}
+		> summary::marker,
+		> summary::-webkit-details-marker {
+			@apply hidden;
+		}
+	}
+	search-button, a.contactButton, details.comments > summary {
+		@apply w-[--btn-width] h-[--btn-height] flex flex-row justify-between items-center bg-blue-700 dark:bg-blue-200 hover:bg-blue-900 dark:hover:bg-blue-100 rounded-md font-semibold text-black py-1 px-0 hover:cursor-pointer;
+		.svg {
+			@apply pl-[--interactionPadding];
+			svg {
+				@apply fill-white dark:fill-black w-[--btn-svg-width] h-auto;
+			}
+		}
+		.legend {
+			@apply text-white dark:text-black pr-[--interactionPadding] text-right;
 		}
 	}
 }

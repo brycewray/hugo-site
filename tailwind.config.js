@@ -1,7 +1,10 @@
 // const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
+	darkMode: 'class',
+  // darkMode: 'media',
 	corePlugins: {
 		fontSize: false,
 	},
@@ -14,7 +17,6 @@ module.exports = {
 	safelist: [
 		'header-anchor',
 	],
-  darkMode: 'media',
   theme: {
 		fluidTypography: {},
 		extend: {
@@ -41,9 +43,9 @@ module.exports = {
 			fontSize: {
 				'fn': '0.65rem',
 			},
-			fontFamily: {
-				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
-			},
+			// fontFamily: {
+			// 	'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
+			// },
 		},
     listStyleType: {
       none: 'none',

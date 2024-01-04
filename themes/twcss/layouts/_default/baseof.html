@@ -6,7 +6,9 @@
 		<div id="content-main-hugo" class="pt-[40px]">
 		{{- block "main" . -}}{{- end }}
 		</div>
-		{{- if ne .Title .Site.Params.Titles.Search -}}{{- partialCached "search-pagefind.html" . -}}{{- end -}}
+		{{- if ne .Title site.Params.Titles.Search -}}
+			{{- partialCached "search-btn-pagefind.html" . -}}
+		{{- end }}
 		{{- partial "footer.html" . -}}
 		{{- if hugo.IsProduction -}}
 			{{- if eq .Site.Params.Host "CFP" -}}
