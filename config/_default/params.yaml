@@ -15,9 +15,6 @@ Description: "Bryce Wray’s website | Observations, opinions, geekiness"
 License: MIT
 ModeToggle: true # works with `js/mode-toggle.js` --- mainly for testing
 Site_domain: "{{< Site.Params.Domain >}}"
-Theme: twcss # choices are sass and twcss - as of 2024-01-09
-# # For actual use, must be repeated in `hugo` config file:
-# # https://discourse.gohugo.io/t/site-theme/33200
 # ===========================
 Titles:
   Contact: Want to reach me?
