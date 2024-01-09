@@ -22,9 +22,23 @@
 	}
 	[data-theme="light"] {
 		color-scheme: light;
+		--default: theme(colors.gray.800);
+		--boost: theme(colors.gray.900);
+		--bquote-boost: theme(colors.gray.600);
+		--border: theme(colors.neutral.400);
+		--red: theme(colors.red.700);
+		--bquote-article-code: theme(colors.slate.800);
+		--bkgd-box-code: theme(colors.slate.200);
 	}
 	[data-theme="dark"] {
 		color-scheme: dark;
+		--default: theme(colors.gray.300);
+		--boost: theme(colors.gray.200);
+		--bquote-boost: theme(colors.gray.200);
+		--border: theme(colors.neutral.600);
+		--red: theme(colors.red.300);
+		--bquote-article-code: theme(colors.slate.300);
+		--bkgd-box-code: theme(colors.slate.700);
 	}
 	#nav-Checkbox:checked ~ ul.nav-Menu li,
 	#nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
@@ -96,9 +110,9 @@
 		p {
 			@apply mt-6 mb-6;
 		}
-		p, li {
+		/* p, li {
 			@apply !leading-relaxed;
-		}
+		} */
 		ul {
 			li li, li li li, li li li li {
 				@apply my-2;
@@ -154,9 +168,9 @@
 			padding-inline-start: 1.5rem;
 			@apply pt-2;
 			& li {
-				@apply text-sm my-0 pt-2 pb-1;
+				@apply text-sm lg:text-xs my-0 pt-2 pb-1;
 				& p {
-					@apply text-sm my-0 py-0;
+					@apply text-sm lg:text-xs my-0 py-0 leading-snug;
 				}
 			}
 		}
@@ -270,5 +284,15 @@
 		.legend {
 			@apply text-white dark:text-black pr-[--interactionPadding] text-right;
 		}
+	}
+	/*
+	following from...
+	https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
+	*/
+	article strong:not(.red *):not(a *):not(blockquote *):not(details *), article b:not(.red *):not(a *):not(blockquote *):not(details *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
+		color: var(--boost);
+	}
+	article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+		color: var(--bquote-boost);
 	}
 }

@@ -18,11 +18,11 @@
 {{/* DRY-er... */}}
 	{{- $titleSearch := .Site.Params.Titles.Search -}}
 	{{- $titleContact := .Site.Params.Titles.Contact -}}
-<div class="container h-auto w-full min-w-full relative overflow-hidden pt-6 md:pt-12 px-4 md:px-12 2xl:px-20">
+<div class="container h-auto w-full min-w-full relative overflow-hidden pt-6 md:pt-0 px-4 md:px-12 2xl:px-20">
 	<div class="block w-full md:pt-4">
 		<h1 class="text-center text-5xl tracking-tight mt-6 md:mt-8 lg:mt-12 2xl:mt-16 mb-4 md:mb-6">{{ .Title | .Page.RenderString }}</h1>
 		{{- if and .Params.Description (ne .Title $titleSearch) }}
-			<p class="text-center md:block text-xl font-light mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">
+			<p class="text-center md:block text-xl !tracking-tight mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">
 				{{ .Description }}
 			</p>
 		{{- end }}
