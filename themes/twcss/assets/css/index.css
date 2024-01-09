@@ -1,6 +1,7 @@
 @import '/themes/twcss/assets/css/fonts.css';
 @import '/themes/twcss/assets/css/code.css';
 @import '/themes/twcss/assets/css/lite-yt-embed.css';
+@import '/themes/twcss/assets/css/search-form.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -19,26 +20,38 @@
 	html {
 		-moz-tab-size: 2;
 		tab-size: 2;
+		--link-nav: theme(colors.white);
+		--link-nav-afh: theme(colors.blue.200);
 	}
 	[data-theme="light"] {
 		color-scheme: light;
 		--default: theme(colors.gray.800);
 		--boost: theme(colors.gray.900);
+		--link: theme(colors.blue.700);
+		--link-afh: theme(colors.blue.900);
 		--bquote-boost: theme(colors.gray.600);
 		--border: theme(colors.neutral.400);
 		--red: theme(colors.red.700);
+		--btn-text-default: theme(colors.white);
 		--bquote-article-code: theme(colors.slate.800);
+		--bkgd-box: theme(colors.slate.50);
 		--bkgd-box-code: theme(colors.slate.200);
+		--input: theme(colors.black);
 	}
 	[data-theme="dark"] {
 		color-scheme: dark;
 		--default: theme(colors.gray.300);
 		--boost: theme(colors.gray.200);
+		--link: theme(colors.blue.300);
+		--link-afh: theme(colors.slate.300);
 		--bquote-boost: theme(colors.gray.200);
 		--border: theme(colors.neutral.600);
 		--red: theme(colors.red.300);
+		--btn-text-default: theme(colors.black);
 		--bquote-article-code: theme(colors.slate.300);
+		--bkgd-box: theme(colors.slate.900);
 		--bkgd-box-code: theme(colors.slate.700);
+		--input: theme(colors.white);
 	}
 	#nav-Checkbox:checked ~ ul.nav-Menu li,
 	#nav-Checkbox:checked ~ label#nav-Toggle #svg-close {
