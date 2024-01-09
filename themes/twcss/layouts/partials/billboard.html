@@ -1,0 +1,40 @@
+{{- /*
+	h/t to Joe Mooring's answer in
+	https://discourse.gohugo.io/t/count-word-function-customized-to-exclude-code/34380
+*/ -}}
+{{- $wordsToCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
+{{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
+{{- $wordCount := $wordsToCount | countwords -}}
+{{- $readingTimeMinsInt := div (float $wordCount) 225 | math.Floor -}}
+{{- $readingTime := div (float $wordCount) 225 -}}
+{{- $readingTimeMins := $readingTime | math.Ceil -}}
+{{- $readingTimeSecs := mul 60 (sub $readingTime $readingTimeMinsInt) | math.Ceil -}}
+{{- if ge $readingTimeSecs 60 -}}
+	{{- $readingTimeSecs = sub $readingTimeSecs 60 -}}
+	{{- $readingTimeMinsInt = add $readingTimeMinsInt 1 -}}
+{{- end -}}
+{{- $readingTimeSecsInt := printf "%02v" $readingTimeSecs -}}
+{{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
+{{/* DRY-er... */}}
+	{{- $titleSearch := .Site.Params.Titles.Search -}}
+	{{- $titleContact := .Site.Params.Titles.Contact -}}
+<div class="container h-auto w-full min-w-full relative overflow-hidden pt-6 md:pt-12 px-4 md:px-12 2xl:px-20">
+	<div class="block w-full md:pt-4">
+		<h1 class="text-center text-5xl tracking-tight mt-6 md:mt-8 lg:mt-12 2xl:mt-16 mb-4 md:mb-6">{{ .Title | .Page.RenderString }}</h1>
+		{{- if and .Params.Description (ne .Title $titleSearch) }}
+			<p class="text-center md:block text-xl font-light mt-2 md:mt-6 mb-0 md:mb-4 2xl:mb-8">
+				{{ .Description }}
+			</p>
+		{{- end }}
+		{{- if (and (ne .Title $titleSearch) (ne .Title $titleContact) ) -}}
+			<p class="text-center text-base px-4 md:px-0 mt-8 mb-0 md:mt-0" data-pagefind-ignore>
+				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- else -}}&nbsp;{{- end -}}
+			</p>
+			{{- if ne .Title $titleContact -}}
+			<p class="text-center text-xs" data-pagefind-ignore>
+				Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words
+			</p>
+			{{- end -}}
+		{{- end }}
+	</div>
+</div>

@@ -1,0 +1,47 @@
+		<footer class="font-sans text-center pb-{{ if (and (eq .Section "posts") (ne .Title site.Params.Titles.Postslist)) }}[6em]{{ else }}6{{ end }}" data-pagefind-ignore>
+			<div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
+				<div class="flex flex-row justify-center gap-3">
+					<a class="no-underline" rel="me" title="GitHub" href="https://github.com/brycewray" rel="noopener" aria-label="GitHub">
+						{{- partialCached "svgGitHubIcon.html" . -}}
+					</a>
+					<a class="no-underline" rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener" aria-label="Mastodon">
+						{{- partialCached "svgMastodonIcon.html" . -}}
+					</a>
+					<a class="no-underline" rel="me" title="Bluesky" href="https://bsky.app/profile/brycewray.com" rel="noopener" aria-label="Bluesky">
+						{{- partialCached "svgBlueskyIcon.html" . -}}
+					</a>
+					<a class="no-underline" rel="me" title="Threads" href="https://www.threads.net/@brycewraytx" rel="noopener" aria-label="Threads">
+						{{- partialCached "svgThreadsIcon.html" . -}}
+					</a>
+					<a class="no-underline" title="RSS/Atom feed" href="/index.xml" rel="noopener" aria-label="RSS/Atom feed">
+						{{- partialCached "svgRSSIcon.html" . -}}
+					</a>
+					<a class="no-underline" title="JSON feed" href="/index.json" rel="noopener" aria-label="JSON feed">
+						{{- partialCached "svgJSONfeedIcon.html" . -}}
+					</a>
+				</div>
+				<p class="mt-4 whitespace-nowrap text-fn">
+					<a href="/sitemap/">HTML sitemap</a> &bull; <a href="/sitemap.xml">XML sitemap</a>
+				</p>
+				{{- $hostURL := "" -}}
+				{{- $hostName := "" -}}
+				{{- if eq .Site.Params.Host "CFP" -}}
+					{{- $hostURL = "https://pages.cloudflare.com" -}}
+					{{- $hostName = "Cloudflare Pages" -}}
+				{{- end -}}
+				{{- if eq .Site.Params.Host "Vercel" -}}
+					{{- $hostURL = "https://vercel.com" -}}
+					{{- $hostName = "Vercel" -}}
+				{{- end -}}
+				<p class="mt-4 text-fn">
+					Textual content &copy; 2018&ndash;{{ now.Year }} <a class="h-card" rel="me" href="https://www.brycewray.com/">Bryce&nbsp;Wray</a> except&nbsp;where otherwise noted and/or quoting external&nbsp;sources.<br />
+					{{- if (ne .Title "About me") -}}
+					For&nbsp;other site-wide disclaimers/credits, see the <a href="/about/#footer-info">footer</a> of the <span class="text-nowrap"><a href="/about/">&ldquo;About me&rdquo; page</a></span>.
+					{{- else -}}
+					Powered by <a href="https://gohugo.io" rel="noopener">Hugo</a> and hosted&nbsp;by&nbsp;<a href="{{ $hostURL }}" rel="noopener" class="nobrk">{{ $hostName }}</a>. <span class="text-nowrap">Affiliated with <a href="https://usefathom.com/ref/ZKHYWX" rel="noopener">Fathom&nbsp;Analytics</a>.*</span> Some&nbsp;images hosted and processed by&nbsp;<a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu" rel="noopener">Cloudinary</a>.* Newer Git commits don&rsquo;t necessarily reflect changes in previously published&nbsp;content. Modification&nbsp;dates and&nbsp;times use U.S.&nbsp;Central time&nbsp;zone (CDT/CST) unless otherwise&nbsp;noted. Displayed&nbsp;content statistics (word&nbsp;count and reading&nbsp;time) can&nbsp;vary based&nbsp;on the site-generation process, and don&rsquo;t&nbsp;include any code&nbsp;blocks or <code>details</code>&nbsp;elements where&nbsp;applicable. Tested&nbsp;on <a href="https://www.chromium.org/Home/" rel="noopener">Chromium</a>-based, <a href="https://webkit.org" rel="noopener">WebKit</a>-based, and <span class="text-nowrap"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Gecko" rel="noopener">Gecko</a>-based browsers</span>.<br />
+					&nbsp;<br />
+					* <em>Affiliate/invite links.</em>
+					{{- end -}}
+				</p>
+			</div>
+		</footer>
