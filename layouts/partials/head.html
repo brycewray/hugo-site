@@ -14,9 +14,13 @@
 	{{- end }}
 	{{ hugo.Generator }}
 {{/* CSS */}}
-		{{/*  {{- partialCached "head-criticalscss.html" . }}  */}}
-		{{/*  {{- partialCached "head-scss-unscoped.html" . }}  */}}
+	{{- if eq site.Params.Theme "sass" -}}
+		{{- partialCached "head-criticalscss.html" . }}
+		{{- partialCached "head-scss-unscoped.html" . }}
+	{{- end -}}
+	{{- if eq site.Params.Theme "twcss" -}}
 		{{- partialCached "head-css.html" . }}
+	{{- end -}}
 		{{- partial "head-imgs-css.html" . }}
 		{{- partial "head-css-oklch-post.html" . -}}
 		<noscript>
