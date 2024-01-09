@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="text-center px-4 lg:px-10 w-full mx-auto" data-pagefind-ignore>
-    <h1 class="pt-20 lg:pt-24 mb-6">Posts</h1>
+    <h1 class="pt-10 lg:pt-8 mb-4 text-7xl lg:text-4xl">Posts</h1>
     <div class="my-0 mx-auto w-[85%] lg:w-3/4 2xl:w-[62.5%]">
 
 			{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
