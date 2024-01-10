@@ -12,7 +12,7 @@ module.exports = {
   content: [
 		"./hugo_stats.json",
     "./content/**/*.md",
-    "./themes/twcss/layouts/**/*.html"
+    "./themes/twcss-heavy/layouts/**/*.html"
   ],
 	safelist: [
 		'header-anchor',
