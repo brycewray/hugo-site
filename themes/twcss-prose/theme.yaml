@@ -1,4 +1,4 @@
-name: twcss-heavy
+name: twcss-prose
 license: MIT
 description: Tailwind CSS with JIT; originally based on a Hugo theme called “Tale” but now with little resemblance thereto.
 min_version: 0.119.0

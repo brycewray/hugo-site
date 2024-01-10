@@ -1,0 +1,28 @@
+
+{{ define "main" }}
+
+<div class="w-4/5 lg:w-[70%] xl:w-[45%] 2xl:w-[40vw] lg:mt-10 mr-auto ml-auto" data-pagefind-ignore>
+	<h1 class="text-center pt-10 lg:pt-8 text-6xl lg:text-4xl">Sitemap</h1>
+	<h2 class="text-xl mt-4">Main pages</h2>
+	<ul>
+		<li class="text-sm my-2 !leading-snug"><a href="{{ .Site.BaseURL }}">Home page</a></li>
+		<li class="text-sm my-2 !leading-snug"><a href="{{ .Site.BaseURL }}about/">About me</li>
+		<li class="text-sm my-2 !leading-snug"><a href="{{ .Site.BaseURL }}search/">Search page</li>
+		<li class="text-sm my-2 !leading-snug"><a href="{{ .Site.BaseURL }}privacy/">Privacy policy</a></li>
+		<li class="text-sm my-2 !leading-snug"><a href="{{ .Site.BaseURL }}contact/">How to contact me</a></li>
+	</ul>
+	<h2 class="text-xl mt-4">Posts</h2>
+	<ul>
+		<li class="text-sm my-2 !leading-snug"><a href="/posts"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
+	{{- range where .Site.Pages.ByPublishDate.Reverse ".Type" "posts" -}}
+		{{- if (ne .Title "Posts") -}}
+		<li class="text-sm my-2 !leading-snug">
+			<strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong>{{- if ne (substr .Title 0 22) "The site this week: 20" -}}&nbsp;&nbsp;<span class="legal nobrk"><strong>{{ .PublishDate.Format "2006-01-02" }}</strong></span>{{- end -}}<br />
+			<span class="description">{{ .Description | .Page.RenderString }}</span>
+		</li>
+		{{- end -}}
+	{{- end -}}
+	</ul>
+</div>
+
+{{ end }}

@@ -1,0 +1,22 @@
+/* @import '/themes/twcss-prose/assets/css/fonts.css'; */
+/* @import '/themes/twcss-prose/assets/css/code.css'; */
+/* @import '/themes/twcss-prose/assets/css/lite-yt-embed.css'; */
+/* @import '/themes/twcss-prose/assets/css/search-form.css'; */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@config "./tailwind.prose.config.js";
+
+@layer base {
+	html {
+		-moz-tab-size: 2;
+		tab-size: 2;
+	}
+	[data-theme="light"] {
+		color-scheme: light;
+	}
+	[data-theme="dark"] {
+		color-scheme: dark;
+	}
+}
