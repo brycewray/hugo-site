@@ -1,10 +1,12 @@
-@import '/themes/twcss/assets/css/fonts.css';
-@import '/themes/twcss/assets/css/code.css';
-@import '/themes/twcss/assets/css/lite-yt-embed.css';
-@import '/themes/twcss/assets/css/search-form.css';
+@import '/themes/twcss-heavy/assets/css/fonts.css';
+@import '/themes/twcss-heavy/assets/css/code.css';
+@import '/themes/twcss-heavy/assets/css/lite-yt-embed.css';
+@import '/themes/twcss-heavy/assets/css/search-form.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@config "./tailwind.heavy.config.js";
 
 :root {
 	--navRightMargin: 6em; /* unless JS is off */
