@@ -25,7 +25,7 @@ rssLimit: 10 # default is -1 (unlimited); setting of '10' conforms to Eleventy r
 
 summaryLength: 30 # words --- if you use summaries **without** the `--more--` workaround
 
-theme: twcss-heavy # choices are sass and twcss - as of 2024-01-09
+# theme: twcss-prose # choices are sass and twcss - as of 2024-01-09
 # # For detection in vars, must be repeated in `params` config:
 # # https://discourse.gohugo.io/t/site-theme/33200
 
