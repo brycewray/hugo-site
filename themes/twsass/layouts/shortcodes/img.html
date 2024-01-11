@@ -1,0 +1,90 @@
+{{/* init vars */}}
+{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
+{{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
+{{- $xFmPart2 := ",x_0,z_01/" -}}
+
+{{- $holder := default "GIP" (.Get "holder") -}}
+{{- $phn := default false (.Get "phn") -}}
+{{- $hint := default "photo" (.Get "hint") -}}
+{{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
+{{- $filter := default "MitchellNetravali" (.Get "filter") -}}
+{{- $simple := default false (.Get "simple") -}}
+{{- $nobkgd := default false (.Get "nobkgd") -}}
+{{- $proc := default "default" (.Get "proc") -}}
+{{- /* ^^ Matters only if $proc ISN'T spec'd as "Cloudinary" */ -}}
+
+{{- $imgBd5 := md5 $src -}}
+{{- $divClass := "relative bg-center" -}}
+{{- if not $phn -}}
+	{{- $divClass = print $divClass " bigImgDiv" -}}
+	{{- if not $nobkgd -}}
+		{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
+		{{/*
+			The `imgB-`[hash]-GIP` class is
+			generated in a `head` partial;
+			here, we need only get the class's name,
+			using the same method as in that partial
+			(md5-ing the image file name).
+		*/}}
+	{{- end -}}
+{{- end -}}
+{{- $imgClass := "w-full animate-fade shadow" -}}
+{{- if $phn -}}
+	{{- $imgClass = "img-phn ctrImg animate-fade shadow" -}}
+{{- end -}}
+{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+
+{{- if .Page.Resources.GetMatch $src -}}
+	{{ with .Page.Resources.GetMatch $src }}
+		{{- $imgRsc := . -}}
+		{{- $width := $imgRsc.Width -}}
+		{{- $height := $imgRsc.Height -}}
+		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
+		{{- if eq $simple false -}}
+		<div class="{{ $divClass }}" data-pagefind-ignore>
+		{{- end }}
+		{{- if eq $proc "Cloudinary" -}}
+			{{- with $.Page.Params.imgs }}
+				{{- $imgToGet := print $cloudiBase $src -}}
+				{{- with $imgToGet -}}
+					<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
+					{{- with $respSizes -}}
+						{{- range $i, $e := . -}}
+							{{- if ge $width . -}}
+								{{- if $i }}, {{ end -}}{{- $cloudiBase -}}f_auto,q_auto:eco,w_{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
+							{{- end -}}
+						{{- end -}}
+					{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
+				{{- end -}}
+			{{- end -}}
+		{{- else -}}{{/* fall back to Hugo image processing */}}
+			<picture data-pagefind-ignore>
+				<source type="image/webp" srcset="
+				{{- with $respSizes -}}
+					{{- range $i, $e := . -}}
+						{{- if ge $width . -}}
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
+						{{- end -}}
+					{{- end -}}
+				{{- end -}}" sizes="{{ $dataSzes }}" />
+				<source type="image/jpeg" srcset="
+				{{- with $respSizes -}}
+					{{- range $i, $e := . -}}
+						{{- if ge $width . -}}
+							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
+						{{- end -}}
+					{{- end -}}
+				{{- end -}}" sizes="{{ $dataSzes }}" />
+				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $width }}" height="{{ $height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+			</picture>
+		{{- end -}}
+		{{- if eq $simple false -}}
+		</div>
+		{{- end }}
+	{{- end -}}
+{{- else -}}
+	<p class="ctr legal"><em>Image unavailable.</em></p>
+{{- end -}}

@@ -1,0 +1,21 @@
+{{- $scssOptions := dict "transpiler" "dartsass" -}}
+{{- $scssOptionsPrint := $scssOptions -}}
+{{- $scssComp := dict "outputStyle" "compressed" -}}
+
+{{- /*
+	minify/fingerprint everything even in dev,
+	due to Safari caching weirdness
+*/ -}}
+{{- $scssOptions = merge $scssOptions $scssComp (dict "targetPath" "css/index.min.css") -}}
+{{- $css := resources.Get "scss/index.scss" | toCSS $scssOptions | fingerprint -}}
+{{- with $css -}}
+	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+{{- end -}}
+
+{{- /* for those who've requested CSS for printing */ -}}
+{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp (dict "targetPath" "css/print.min.css") -}}
+{{- $printCSS := resources.Get "scss/print.scss" | toCSS $scssOptionsPrint | fingerprint -}}
+{{- with $printCSS -}}
+	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
+{{- end }}

@@ -1,0 +1,40 @@
+{{- /*
+	h/t to Joe Mooring's answer in
+	https://discourse.gohugo.io/t/count-word-function-customized-to-exclude-code/34380
+*/ -}}
+{{- $wordsToCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
+{{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
+{{- $wordCount := $wordsToCount | countwords -}}
+{{- $readingTimeMinsInt := div (float $wordCount) 225 | math.Floor -}}
+{{- $readingTime := div (float $wordCount) 225 -}}
+{{- $readingTimeMins := $readingTime | math.Ceil -}}
+{{- $readingTimeSecs := mul 60 (sub $readingTime $readingTimeMinsInt) | math.Ceil -}}
+{{- if ge $readingTimeSecs 60 -}}
+	{{- $readingTimeSecs = sub $readingTimeSecs 60 -}}
+	{{- $readingTimeMinsInt = add $readingTimeMinsInt 1 -}}
+{{- end -}}
+{{- $readingTimeSecsInt := printf "%02v" $readingTimeSecs -}}
+{{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
+{{/* DRY-er... */}}
+	{{- $titleSearch := site.Params.Titles.Search -}}
+	{{- $titleContact := site.Params.Titles.Contact -}}
+<div class="billboard-div">
+	<div class="billboard-title-block">
+		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
+		{{- if and .Params.Description (ne .Title $titleSearch) }}
+			<p class="billboard-description-text">
+				{{ .Description }}
+			</p>
+		{{- end }}
+		{{- if (and (ne .Title $titleSearch) (ne .Title $titleContact) ) -}}
+			<p class="billboard-p-text" data-pagefind-ignore>
+				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- else -}}&nbsp;{{- end -}}
+			</p>
+			{{- if ne .Title $titleContact -}}
+			<p class="ctr legal" data-pagefind-ignore>
+				Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words
+			</p>
+			{{- end -}}
+		{{- end }}
+	</div>
+</div>

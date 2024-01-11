@@ -1,0 +1,83 @@
+			{{/*
+			The following pagination based heavily on code derived from:
+			https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/
+			*/}}
+
+			{{/*
+			//
+			//  OUTPUT POSTS
+			//––––––––––––––––––––––––––––––––––––––––––––––––––
+			*/}}
+			{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+			{{ $paginator := .Paginator }}
+
+			{{/* Number of links either side of the current page. */}}
+			{{ $adjacent_links := 2 }}
+
+			{{/* $max_links = ($adjacent_links * 2) + 1 */}}
+			{{ $max_links := (add (mul $adjacent_links 2) 1) }}
+
+			{{/* $lower_limit = $adjacent_links + 1 */}}
+			{{ $lower_limit := (add $adjacent_links 1) }}
+
+			{{/* $upper_limit = $paginator.TotalPages - $adjacent_links */}}
+			{{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
+
+			<div class="posts-pagerThing">
+				{{- /*
+					First page --- test for both page 1 and page 2
+					to avoid redundant links:
+					https://webaim.org/discussion/mail_thread?thread=9881
+					https://www.boia.org/blog/how-redundant-links-impact-accessibility
+					https://stackoverflow.com/questions/38754694/accessibility-wcag-2-0-redundant-links-and-responsive-website-navigation
+				*/ -}}
+				<div>
+					{{ if and (ne $paginator.PageNumber 1) (ne $paginator.PageNumber 2) }}
+						<a class="icon" aria-label="First page" title="First page" href="{{ $paginator.First.URL }}">
+							{{ partialCached "svgPrevPageIcon.html" . }}{{ partialCached "svgPrevPageIcon.html" . }}
+						</a>
+					{{ else }}
+						{{ partialCached "svgFirstPageIcon.html" . }}{{ partialCached "svgFirstPageIcon.html" . }}
+					{{ end }}
+				</div>
+				<div class="pagerSpacer"></div>
+				{{- /* Previous page. */ -}}
+				<div>
+					{{ if $paginator.HasPrev }}
+						<a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page" title="Previous page">
+							{{ partialCached "svgPrevPageIcon.html" . }}
+						</a>
+					{{ else }}
+						{{ partialCached "svgFirstPageIcon.html" . }}
+					{{ end }}
+				</div>
+				<div class="pagerSpacer"></div>
+				<div class="pagerSpacer"></div>
+				{{- /* Next page. */ -}}
+				<div>
+					{{ if $paginator.HasNext }}
+						<a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page" title="Next page">
+							{{ partialCached "svgNextPageIcon.html" . }}
+						</a>
+					{{ else }}
+						{{ partialCached "svgLastPageIcon.html" . }}
+					{{ end }}
+				</div>
+				<div class="pagerSpacer"></div>
+				{{- /*
+					Last page --- test for both last page and next-to-last page
+					to avoid redundant links:
+					https://webaim.org/discussion/mail_thread?thread=9881
+					https://www.boia.org/blog/how-redundant-links-impact-accessibility
+					https://stackoverflow.com/questions/38754694/accessibility-wcag-2-0-redundant-links-and-responsive-website-navigation
+				*/ -}}
+				<div>
+					{{ if (and ( (ne $paginator.PageNumber $paginator.TotalPages) ) (ne $paginator.PageNumber (sub $paginator.TotalPages 1))) }}
+						<a class="icon" aria-label="Last page" title="Last page" href="{{ $paginator.Last.URL }}">
+							{{ partialCached "svgNextPageIcon.html" . }}{{ partialCached "svgNextPageIcon.html" . }}
+						</a>
+					{{ else }}
+						{{ partialCached "svgLastPageIcon.html" . }}{{ partialCached "svgLastPageIcon.html" . }}
+					{{ end }}
+				</div>
+			</div>

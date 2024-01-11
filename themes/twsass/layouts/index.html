@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+		<div class="container-home" data-pagefind-ignore>
+			<div class="homeOpen">
+				<h1>Welcome&nbsp;to brycewray.com, offering&nbsp;<a href="/about/">its&nbsp;owner</a>&rsquo;s observations, opinions, and&nbsp;geekiness since&nbsp;2018.</h1>
+			</div>
+			<div class="homePost-Div">
+				<div class="post-line"></div>
+				<h2 class="homePost-Latest">Latest posts</h2>
+				{{- range first 3 (where site.RegularPages "Section" "posts") }}
+				<div>
+					<h2 class="homePost-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+					<p class="homePost-Description">
+						{{ .Description }}
+					</p>
+					<p class="homePost-Dates">
+						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- end -}}
+					</p>
+				</div>
+				{{- end }}
+				<p class="homePost-Finish"><a href="/posts/"><strong>All {{ len (where site.RegularPages "Section" "posts") }} posts</strong></a> <span class="pokey">(listed five per page)</span></p>
+			</div>
+		</div>
+		{{- end }}

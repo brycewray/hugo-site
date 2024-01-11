@@ -1,0 +1,10 @@
+{{/*
+	Based on Zachary Betz's shortcode as described in:
+	https://discourse.gohugo.io/t/filenames-for-code-blocks/32466/3
+*/}}
+{{- $fileName := .Get "filename" -}}
+{{- $lang := .Get "lang" -}}
+{{- $options := .Get "options" -}}
+{{- $input := (trim .Inner "\n\r") -}}
+<p class="labeled-highlight pokey"><em>{{ $fileName }}</em></p>
+{{ highlight $input $lang $options }}
