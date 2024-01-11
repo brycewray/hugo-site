@@ -3,37 +3,38 @@ Based on TWCSS color palette.
 Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-blend.
 OKLCH versions from https://oklch.com.
 */
-$slate-050: hsl(215, 23%, 97%);
-$slate-100: hsl(215, 44%, 96%);
-$slate-150: hsl(215, 35%, 94%);
-$slate-200: hsl(215, 30%, 91%);
-$slate-300: hsl(215, 27%, 84%);
-$slate-400: hsl(215, 20%, 65%);
-$slate-500: hsl(215, 16%, 47%);
-$slate-600: hsl(215, 19%, 35%);
-$slate-700: hsl(215, 26%, 27%);
-$slate-750: hsl(215, 29%, 22%);
-$slate-800: hsl(215, 36%, 17%);
-$slate-850: hsl(215, 43%, 14%);
-$slate-900: hsl(215, 57%, 10%);
-$slate-950: hsl(215, 100%, 5%);
-$gray-050: hsl(220, 20%, 98%);
-$gray-100: hsl(220, 13%, 95%);
-$gray-200: hsl(220, 14%, 91%);
-$gray-300: hsl(220, 11%, 84%);
-$gray-350: hsl(220, 10%, 75%);
-$gray-400: hsl(220, 10%, 65%);
-$gray-450: hsl(220, 9%, 56%);
-$gray-500: hsl(220, 9%, 46%);
-$gray-550: hsl(220, 11%, 40%);
-$gray-600: hsl(220, 13%, 35%);
-$gray-650: hsl(220, 15%, 31%);
-$gray-700: hsl(220, 18%, 27%);
-$gray-750: hsl(220, 21%, 22%);
-$gray-800: hsl(220, 26%, 17%);
-$gray-850: hsl(220, 31%, 14%);
-$gray-900: hsl(220, 39%, 11%);
-$gray-950: hsl(220, 71%, 4%);
+
+$slate-050: #f8fafc;
+$slate-100: #f1f5f9;
+$slate-150: #eaeff5;
+$slate-200: #e2e8f0;
+$slate-300: #cbd5e1;
+$slate-400: #94a3b8;
+$slate-500: #64748b;
+$slate-600: #475569;
+$slate-700: #334155;
+$slate-750: #293548;
+$slate-800: #1e293b;
+$slate-850: #172033;
+$slate-900: #0f172a;
+$slate-950: #020617;
+$gray-050: #f9fafb;
+$gray-100: #f3f4f6;
+$gray-200: #e5e7eb;
+$gray-300: #d1d5db;
+$gray-350: #b7bcc5; //
+$gray-400: #9ca3af;
+$gray-450: #848b98; //
+$gray-500: #6b7280;
+$gray-550: #5b6472; //
+$gray-600: #4b5563;
+$gray-650: #414b5a; //
+$gray-700: #374151;
+$gray-750: #2b3544; //
+$gray-800: #1f2937;
+$gray-850: #18212f; //
+$gray-900: #111827;
+$gray-950: #030712;
 $zinc-050: hsl(240, 0%, 98%);
 $zinc-100: hsl(240, 4%, 95%);
 $zinc-200: hsl(240, 6%, 90%);
@@ -166,7 +167,7 @@ $cyan-700: hsl(190, 100%, 27%);
 $cyan-800: hsl(190, 85%, 24%);
 $cyan-900: hsl(190, 76%, 21%);
 $cyan-950: hsl(190, 100%, 12%);
-$sky-050: hsl(200, 88%, 97%);
+$sky-050: #f1fafe;
 $sky-100: hsl(200, 94%, 94%);
 $sky-200: hsl(200, 97%, 87%);
 $sky-300: hsl(200, 100%, 77%);

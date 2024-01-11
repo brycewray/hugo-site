@@ -2,13 +2,13 @@
 @use 'partials/variables-010' as var;
 
 :root {
-	--link-nav: #{clr.$white};
-	--link-nav-afh: #{clr.$blue-200};
-	--logocircle: #{clr.$blue-500};
-	--logocircle-afh: #{clr.$gray-500};
-	--border-bquote: #{clr.$gray-400};
-	--fill-lightdarktoggle: #{clr.$yellow-200};
-	--filter-shadow: #{clr.$gray-400};
+	--link-nav: theme(colors.white);
+	--link-nav-afh: theme(colors.blue.200);
+	--logocircle: theme(colors.blue.500);
+	--logocircle-afh: theme(colors.gray.500);
+	--border-bquote: theme(colors.gray.400);
+	--fill-lightdarktoggle: theme(colors.yellow.200);
+	--filter-shadow: theme(colors.gray.400);
 }
 
 [data-theme="light"] {
@@ -16,32 +16,32 @@
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
-	--default: #{clr.$gray-800};
-	--boost: #{clr.$gray-900};
-	--bquote: #{clr.$gray-500};
-	--bquote-boost: #{clr.$gray-600};
-	--link: #{clr.$blue-700};
-	--link-afh: #{clr.$blue-900};
+	--default: theme(colors.gray.800);
+	--boost: theme(colors.gray.900);
+	--bquote: theme(colors.gray.500);
+	--bquote-boost: theme(colors.gray.600);
+	--link: theme(colors.blue.700);
+	--link-afh: theme(colors.blue.900);
 	--head: var(--default);
-	--red: #{clr.$red-700};
-	--box-red: #{clr.$red-600};
-	--btn-text-default: #{clr.$white};
-	--pf-result-excerpt: #{clr.$black};
-	--bquote-article-code: #{clr.$slate-800};
+	--red: theme(colors.red.700);
+	--box-red: theme(colors.red.600);
+	--btn-text-default: theme(colors.white);
+	--pf-result-excerpt: theme(colors.black);
+	--bquote-article-code: theme(colors.slate.800);
 	/* backgrounds and borders */
-	--bkgd: #{clr.$white};
-	--bkgd-nav: #{clr.$blue-850};
-	--bkgd-nav-bottom: #{clr.$blue-850};
-	--bkgd-nav-top: #{clr.$blue-850};
-	--bkgd-box: #{clr.$slate-050};
-	--bkgd-code: #{clr.$slate-050};
-	--bkgd-article-code: #{clr.$slate-150};
-	--bkgd-box-code: #{clr.$slate-200};
-	--bkgd-pf-result-excerpt: #{clr.$blue-100};
-	--bkgd-hr: #{clr.$black};
-	--bkgd-marker-secondary: #{clr.$slate-400};
-	--border: #{clr.$neutral-400};
-	--icon-inside: #{clr.$white};
+	--bkgd: theme(colors.white);
+	--bkgd-nav: theme(colors.blue.850);
+	--bkgd-nav-bottom: theme(colors.blue.850);
+	--bkgd-nav-top: theme(colors.blue.850);
+	--bkgd-box: theme(colors.slate.50);
+	--bkgd-code: theme(colors.slate.50);
+	--bkgd-article-code: theme(colors.slate.150);
+	--bkgd-box-code: theme(colors.slate.200);
+	--bkgd-pf-result-excerpt: theme(colors.blue.100);
+	--bkgd-hr: theme(colors.black);
+	--bkgd-marker-secondary: theme(colors.slate.400);
+	--border: theme(colors.neutral.400);
+	--icon-inside: theme(colors.white);
 }
 
 [data-theme="dark"] {
@@ -49,32 +49,32 @@
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
-	--default: #{clr.$gray-300};
-	--boost: #{clr.$gray-200};
-	--bquote: #{clr.$gray-400};
-	--bquote-boost: #{clr.$gray-350};
-	--link: #{clr.$blue-300};
-	--link-afh: #{clr.$slate-300};
+	--default: theme(colors.gray.300);
+	--boost: theme(colors.gray.200);
+	--bquote: theme(colors.gray.400);
+	--bquote-boost: theme(colors.gray.350);
+	--link: theme(colors.blue.300);
+	--link-afh: theme(colors.slate.300);
 	--head: var(--default);
-	--red: #{clr.$red-300};
-	--box-red: #{clr.$red-400};
-	--btn-text-default: #{clr.$black};
-	--pf-result-excerpt: #{clr.$white};
-	--bquote-article-code: #{clr.$slate-300};
+	--red: theme(colors.red.300);
+	--box-red: theme(colors.red.400);
+	--btn-text-default: theme(colors.black);
+	--pf-result-excerpt: theme(colors.white);
+	--bquote-article-code: theme(colors.slate.300);
 	/* backgrounds and borders */
-	--bkgd: #{clr.$black};
-	--bkgd-nav: #{clr.$blue-950};
-	--bkgd-nav-bottom: #{clr.$blue-950};
-	--bkgd-nav-top: #{clr.$blue-950};
-	--bkgd-box: #{clr.$slate-900};
-	--bkgd-code: #{clr.$slate-900};
-	--bkgd-article-code: #{clr.$slate-750};
-	--bkgd-box-code: #{clr.$slate-700};
-	--bkgd-pf-result-excerpt: #{clr.$blue-900};
-	--bkgd-hr: #{clr.$white};
-	--bkgd-marker-secondary: #{clr.$slate-500};
-	--border: #{clr.$neutral-600};
-	--icon-inside: #{clr.$black};
+	--bkgd: theme(colors.black);
+	--bkgd-nav: theme(colors.blue.950);
+	--bkgd-nav-bottom: theme(colors.blue.950);
+	--bkgd-nav-top: theme(colors.blue.950);
+	--bkgd-box: theme(colors.slate.900);
+	--bkgd-code: theme(colors.slate.900);
+	--bkgd-article-code: theme(colors.slate.750);
+	--bkgd-box-code: theme(colors.slate.700);
+	--bkgd-pf-result-excerpt: theme(colors.blue.900);
+	--bkgd-hr: theme(colors.white);
+	--bkgd-marker-secondary: theme(colors.slate.500);
+	--border: theme(colors.neutral.600);
+	--icon-inside: theme(colors.black);
 }
 
 html, body {
