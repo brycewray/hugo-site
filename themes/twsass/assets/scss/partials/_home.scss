@@ -6,19 +6,9 @@
 /* === for home page */
 
 .container-home {
-	padding-bottom: 1em;
-	text-align: center;
-	padding: 2vh 5vw;
-	margin: 0 auto;
-	@media screen and (min-width: 1024px) {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		padding: 0;
-		margin: 0;
-		.post-line {
-			display: none;
-		}
+	@apply pb-[1em] text-center py-[2vh] px-[5vw] my-0 mx-auto lg:w-full lg:flex lg:flex-row lg:p-0 lg:m-0;
+	.post-line {
+		@apply hidden;
 	}
 }
 

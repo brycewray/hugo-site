@@ -9,6 +9,15 @@
 	--border-bquote: theme(colors.gray.400);
 	--fill-lightdarktoggle: theme(colors.yellow.200);
 	--filter-shadow: theme(colors.gray.400);
+	/* underlines for hrefs */
+	--textDcThick: 0.05rem; // always rem
+	--textDcThickMd: 0.0625rem; // always rem
+	--textDcThickHA: 0.075rem; // always rem for `header-anchor`
+	--textUnOffst: 0.25em; // always em -- min-width: 768px
+	--textUnOffstMd: 0.275em; // always em -- min-width: 768px
+	/* ^^^ 0.225em is OK with Libre Franklin,
+				but Segoe UI needs at least 0.25em */
+	/*
 }
 
 [data-theme="light"] {
@@ -78,9 +87,6 @@
 }
 
 html, body {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
 	-webkit-font-smoothing: subpixel-antialiased;
 	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	-moz-osx-font-smoothing: auto;
@@ -88,14 +94,7 @@ html, body {
 	font-variant-ligatures: normal;
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */
-	font-kerning: normal;
-	font-family: var.$sans-serif;
-	font-weight: var.$font-normal;
-	/* @media screen and (min-width: 768px) {
-		font-weight: var.$font-semilight;
-	} */
-	background-color: var(--bkgd);
-	color: var(--default);
+	@apply w-full my-0 mx-auto p-0 font-sans font-normal bg-[var(--bkgd)] text-[var(--default)];
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
@@ -106,16 +105,11 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .box, .labeled-highlight, .imgcCaption, .imghCaption,
 .bg-dark, a.contactButton,
 .legal, .pokey {
-	font-family: var.$sans-serif;
+	@apply font-sans;
 }
 
 b, strong {
-	font-weight: var.$font-semibold;
-}
-
-html {
-	/* scroll-behavior: smooth; */
-	scroll-padding-top: 80px;
+	@apply font-semibold;
 }
 
 p, li {
@@ -123,9 +117,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	font-weight: var.$font-semibold;
-	color: var(--head);
-	letter-spacing: -0.025rem;
+	@apply font-semibold text-[var(--head)] tracking-tight;
 }
 
 h1, h2, h3, h4 {
@@ -138,13 +130,13 @@ h1, h2, h3, h4 {
 }
 
 h1, h2, h3, h4 {
-	display: block;
 	margin-block-start: 0.25rem;
 	margin-block-end: 0.25rem;
+	@apply block;
 }
 
 h3, .h3 {
-	font-style: italic;
+	@apply italic;
 }
 
 h1, .h1 {
@@ -177,92 +169,96 @@ a, a:focus, a:hover, a:active {
 a {
 	color: var(--link);
 	&:focus, &:hover, &:active {
-		color: var(--link-afh);
+		@apply text-[var(--link-afh)];
 	}
+	@apply text-[var(--link)] underline;
 }
 
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
-	border-bottom: 0;
-	text-decoration: none;
+	@apply border-b-0 no-underline;
 }
 
 hr {
-	border: none;
-	height: 1px;
-	background-color: var(--bkgd-hr);
+	@apply border-none h-[1px] bg-[var(--bkgd-hr)];
 }
 
 sub, sup {
 	font-size: 65%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+	@apply leading-[0] relative align-baseline;
 }
 sup {
-	top: -0.45em;
+	@apply -top-[0.45em];
+}
+
+ul li, ol li {
+	@apply ps-2 ml-8;
+}
+
+ul li {
+	@apply list-disc;
+}
+
+ol li {
+	@apply list-decimal;
 }
 
 ul li li, ol li li, ul li li li, ol li li li {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
+	@apply my-1;
 	&::marker {
-		color: var(--bkgd-marker-secondary);
+		@apply text-[var(--bkgd-marker-secondary)];
 	}
 }
 
 ul li li, ol li li {
-	list-style-type: disc;
+	@apply list-disc;
 }
 
 ul li li li, ol li li li {
-	list-style-type: square;
+	@apply list-square;
 }
 
 ol li ul, ol li li ul, ol li li li ul {
 	padding-inline-start: 1.1em;
 	li {
-		list-style-type: disc;
+		@apply list-disc;
 		&::marker {
-			color: inherit;
+			@apply text-inherit;
 		}
 		ul {
 			li::marker {
-				color: var(--bkgd-marker-secondary);
+				@apply text-[var(--bkgd-marker-secondary)];
 			}
 		}
 	}
 }
 
 #content-main-hugo, main {
-	padding-top: 40px;
+	@apply pt-10;
 }
 
 #content-main-hugo .topOfMain, main .topOfMain {
-	margin-top: 0.5rem;
-	font-size: 2.25rem;
+	@apply mt-[0.5rem] text-4xl;
 }
 
 audio, canvas, embed, iframe, img, object, svg, video {
-	vertical-align: middle;
+	@apply align-middle;
 }
 
 .container {
 	/* width: 90%; */
-	margin: 0 auto;
+	@apply my-0 mx-auto;
 }
 
 .container-narrower {
-	margin: 1rem auto 0 auto;
 	--containerNarrowerWidth: 80%;
-	width: var(--containerNarrowerWidth);
-	max-width: var(--containerNarrowerWidth);
+	@apply mt-4 mx-auto mb-0 w-[var(--containerNarrowerWidth)] max-w-[var(--containerNarrowerWidth)];
 	@media screen and (min-width: 1024px) {
 		--containerNarrowerWidth: 50vw;
 		--bigImgDivExpansionWidth: 20vw;
 		--bigImgDivWidth: calc(var(--containerNarrowerWidth) + var(--bigImgDivExpansionWidth));
 		.bigImgDiv:not(li *) {
-			width: var(--bigImgDivWidth);
 			left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
+			@apply w-[var(--bigImgDivWidth)];
 		}
 	}
 	@media screen and (min-width: 1536px) {
@@ -275,7 +271,5 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 li p {
-	margin-right: 0;
-	margin-left: 0;
-	width: 100%;
+	@apply mx-0 w-full;
 }

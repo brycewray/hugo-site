@@ -3,27 +3,27 @@
 /* @use 'partials/variables-010' as var; */
 
 [data-theme="light"] {
-	--gray: #{clr.$gray-700};
-	--orange: #{clr.$orange-700};
-	--yellow: #{clr.$yellow-800};
-	--green: #{clr.$green-600};
-	--emerald: #{clr.$emerald-700};
-	--cyan: #{clr.$cyan-600};
-	--blue: #{clr.$blue-700};
-	--fuchsia: #{clr.$fuchsia-700};
-	--rose: #{clr.$rose-700};
+	--gray: theme(colors.gray.700);
+	--orange: theme(colors.orange.700);
+	--yellow: theme(colors.yellow.800);
+	--green: theme(colors.green.600);
+	--emerald: theme(colors.emerald.700);
+	--cyan: theme(colors.cyan.600);
+	--blue: theme(colors.blue.700);
+	--fuchsia: theme(colors.fuchsia.700);
+	--rose: theme(colors.rose.700);
 }
 
 [data-theme="dark"] {
-	--gray: #{clr.$gray-300};
-	--orange: #{clr.$orange-300};
-	--yellow: #{clr.$yellow-100};
-	--green: #{clr.$green-100};
-	--emerald: #{clr.$emerald-200};
-	--cyan: #{clr.$cyan-300};
-	--blue: #{clr.$blue-300};
-	--fuchsia: #{clr.$fuchsia-300};
-	--rose: #{clr.$rose-300};
+	--gray: theme(colors.gray.300);
+	--orange: theme(colors.orange.300);
+	--yellow: theme(colors.yellow.100);
+	--green: theme(colors.green.100);
+	--emerald: theme(colors.emerald.200);
+	--cyan: theme(colors.cyan.300);
+	--blue: theme(colors.blue.300);
+	--fuchsia: theme(colors.fuchsia.300);
+	--rose: theme(colors.rose.300);
 }
 
 /* ======= START, individual items from Chroma */
@@ -31,14 +31,11 @@
 /* Background */
 
 .chroma, .code-inline {
-	color: clr.$black;
-	background-color: var(--bkgd-code);
-	border: 1px solid;
-	border-color: var(--border);
+	@apply text-black bg-[var(--bkgd-code)] border border-[var(--border)];
 	* {
-		font-weight: var.$font-normal; /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
 		color: var(--clr, #ffff00);
+		@apply font-normal; /* to keep italicized items at same width as non-italicized */
 	}
 	/* === Other */
 	.x {
@@ -56,28 +53,16 @@
 		--clr: var(--default);
 	}
 	.lntd {
-		vertical-align: top;
-		padding: 0;
-		margin: 0;
-		border: 0;
+		@apply align-top p-0 m-0 border-0;
 	}
 	.lntable {
-		border-spacing: 0;
-		padding: 0;
-		margin: 0;
-		border: 0;
-		width: auto;
-		overflow: auto;
-		display: block;
+		@apply border-spacing-0 p-0 m-0 border-0 w-auto overflow-auto block;
 	}
 	.hl {
-		display: block;
-		width: 100%;
-		background-color: clr.$yellow-200;
+		@apply block w-full bg-yellow-200;
 	}
 	.lnt, .ln {
-		margin-right: 0.4em;
-		padding: 0 0.4em;
+		@apply mr-[0.4em] py-0 px-[0.4em];
 		--clr: var(--gray);
 	}
 	/* === Keywords
@@ -132,7 +117,7 @@
 	CommentSingle (c1), CommentSpecial (cs),
 	CommentPreProc (cp), CommentPreProcFile (cpf) */
 	.c, .ch, .cm, .c1, .cs {
-		font-style: italic;
+		@apply italic;
 		--clr: var(--emerald);
 	}
 	.cp, .cpf {
@@ -147,10 +132,10 @@
 		--clr: var(--gray);
 	}
 	.ge {
-		font-style: italic;
+		@apply italic;
 	}
 	.gs {
-		font-weight: bold;
+		@apply font-bold;
 	}
 	/* === TextWhitespace (w) */
 	.w {
@@ -163,56 +148,43 @@
 
 pre,
 code {
-	font-family: var.$monospaced;
-  font-kerning: none;
   font-variant-ligatures: none;
-	background: var(--bkgd-article-code);
+	@apply font-mono tracking-normal bg-[var(--bkgd-article-code)];
 }
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: clr.$gray-200;
-	background: none;
 	font-size: clamp(0.9rem, 1vw + 0.625rem, var(--text-lg));
-	text-align: left;
-	white-space: pre;
 	word-spacing: normal;
-	word-break: normal;
 	word-wrap: normal;
-	line-height: 1.5;
 	tab-size: 2;
-	hyphens: none;
+	@apply text-gray-200 bg-transparent text-left whitespace-pre break-normal leading-6 hyphens-none;
 }
 
 /* Code blocks */
 pre[class*="language-"],
 pre.chroma {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+	@apply p-[1em] my-[0.5em] mx-0 overflow-auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	color: clr.$black;
-	background-color: clr.$white;
+	@apply text-black bg-white;
 }
 
 .highlight {
-	position: relative;
+	@apply relative;
 	.chroma {
-		border-radius: 16px;
+		@apply rounded-2xl;
+		font-size: clamp(0.9rem, 1vw + 0.625rem, var.$text-lg);
 		/* keeps code blocks from being too small
 		due to the `article code` rule above */
-		font-size: clamp(0.9rem, 1vw + 0.625rem, var.$text-lg);
 	}
 }
 
 @media screen and  (min-width: 1024px) {
 	pre.expand:hover {
-		margin-left: -20vw;
-		margin-right: -20vw;
-		max-width: 95vw;
+		@apply -mx-[20vw] max-w-[95vw];
 	}
 	p.labeled-highlight + .highlight, .highlightWide .highlight {
 		width: var(--bigImgDivWidth);
@@ -225,30 +197,17 @@ pre[class*="language-"] {
 /* h/t https://simplernerd.com/hugo-add-copy-to-clipboard-button/ */
 
 .clipboard-button {
-	position: absolute;
-	right: 0;
-	padding: 2px 7px 5px 7px;
-	margin: 5px;
-	color: clr.$gray-500;
-	border-color: clr.$gray-500;
-	background-color: clr.$gray-100;
-	border: 1px solid;
-	border-radius: 6px;
-	font-size: 0.8em;
-	z-index: 1;
-	opacity: 0;
 	transition: 0.1s;
+	@apply absolute right-0 pt-[2px] px-[7px] pb-[5px] m-[5px] text-gray-500 border border-gray-500 bg-gray-100 rounded-md text-sm z-[1] opacity-0;
 }
 .clipboard-button > svg {
-	fill: clr.$gray-500;
+	@apply fill-gray-500;
 }
 .clipboard-button:hover {
-	cursor: pointer;
-	border-color: clr.$green-600;
-	background-color: clr.$green-100;
+	@apply cursor-pointer border-green-600 bg-green-100;
 }
 .clipboard-button:hover > svg {
-	fill: clr.$green-600;
+	@apply fill-green-600;
 }
 .clipboard-button:focus {
 	outline: 0;
@@ -257,8 +216,8 @@ pre[class*="language-"] {
   position: relative;
 } */
 .highlight:hover > .clipboard-button {
-	opacity: 1;
 	transition: 0.2s;
+	@apply opacity-100;
 }
 
 /* === Inline code
@@ -269,35 +228,28 @@ pre[class*="language-"] {
 } */
 
 .labeled-highlight {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	line-height: 0.5em;
-	text-align: center;
+	@apply mb-0 pb-0 leading-[0.5em] text-center;
 }
 
 .labeled-highlight + div.highlight {
-	margin-top: 0;
-	padding-top: 0;
+	@apply mt-0 pt-0;
 }
 
 
 /* needed for articles */
 
 code, article code, .box code {
-	background-color: var(--bkgd-article-code);
+	@apply bg-[var(--bkgd-article-code)];
 }
 
 code {
-	font-family: var.$monospaced;
-  font-kerning: none;
   font-variant-ligatures: none;
+	@apply font-mono tracking-normal;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+	@apply p-[0.1em] rounded-[0.3em] whitespace-normal;
 }
 
 article code {
@@ -352,10 +304,10 @@ html[data-theme="dark"] {
 	.chroma, .code-inline {
 		.h1 {
 			background-color: clr.$yellow-800;
+			@apply bg-yellow-800;
 		}
 	}
 	:not(pre) > code[class*="language-"], pre[class*="language-"] {
-		color: clr.$white;
-		background-color: clr.$slate-800;
+		@apply text-white bg-slate-800;
 	}
 }

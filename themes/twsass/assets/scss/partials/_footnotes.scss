@@ -5,40 +5,42 @@
 
 /* == footnotes == */
 
-.footnotes ol li, .footnotes ol li p, .footnote-ref,
-.footnote-backref, .footnote-sim, a.footnote-return {
-	font-weight: var.$font-weight-sm;
-}
+// .footnotes ol li, .footnotes ol li p, .footnote-ref,
+// .footnote-backref, .footnote-sim, a.footnote-return {
+// 	font-weight: var.$font-weight-sm;
+// }
 
 .footnotes {
 	padding-top: 0.5em;
+	@apply pt-2;
 	/* padding-bottom: 1em; */
 	hr {
-		border: none;
-		height: 2px;
-		background-color: var(--head);
+		@apply border-none h-[2px] bg-[var(--head)];
 	}
-	ol {
-		padding-inline-start: 1.5rem;
-	}
+	// ol {
+	// 	padding-inline-start: 1.5rem;
+	// }
 	ol li {
-		font-size: clamp(0.625rem, 1vw + 0.5em, 0.9em);
+		@apply text-sm;
 		/*
 		As of now, `::marker` has too little support even in good browsers;
 		see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
 		*/
 		p {
-			line-height: 1.5em;
+			// line-height: 1.5em;
+			@apply leading-normal;
 		}
 	}
 	.footnote-backref {
-		font-size: 75%;
+		// font-size: 75%;
+		@apply text-fn;
 	}
 }
 
+
 .footnote-sim {
-	font-size: 0.65em;
-	color: var(--link);
+	font-size: 65%;
+	@apply text-[var(--link)];
 }
 
 a.footnote-return {

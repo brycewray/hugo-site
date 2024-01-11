@@ -3,44 +3,30 @@
 /* @use 'partials/010-variables' as var; */
 
 .billboard-div {
-	text-align: center;
-	position: relative;
-	height: auto;
-	padding-right: 1.5rem;
-	padding-left: 1.5rem;
-	padding-bottom: 1vh;
+	@apply text-center relative h-auto px-6 pb-[1vh];
 	@media screen and (min-width: 768px) {
-		padding-right: 3rem;
-		padding-left: 3rem;
+		@apply px-12;
 	}
 	code {
-		background-color: transparent;
+		@apply bg-transparent;
 	}
 }
 
 .billboard-title-block {
-	display: block;
-	width: 100%;
-	padding-top: 1em;
+	@apply block w-full pt-[1em];
 }
 
 .billboard-title-block-fit {
-	display: block;
-	width: 100%;
+	@apply block w-full;
 }
 
 .billboard-title-text, .billboard-subtitle-text, .billboard-description-text {
-	margin: 0 auto;
-	text-align: center;
-	padding-right: 2%;
-	padding-left: 2%;
+	@apply my-0 mx-auto text-center px-[2%];
 }
 
 .billboard-title-text {
 	font-size: clamp(2.25em, 0.75rem + 4vw, 4em);
-	padding-top: 1em;
-	line-height: 1.1;
-	letter-spacing: -0.0375em;
+	@apply pt-[1em] leading-[1.1] -tracking-[0.0375em];
 }
 
 .billboard-description-text {
@@ -48,16 +34,10 @@
 	/* font-style: italic; */
 	/* font-weight: var.$font-light; */
 	font-size: clamp(1.25rem, 0.75rem + 1.5vw, 1.75rem);
-	letter-spacing: -0.025em;
-	line-height: 1.4;
-	padding-top: 1em;
+	@apply -tracking-[0.025em] leading-[1.4] pt-[1em];
 }
 
 .billboard-p-text {
-	color: var(--head);
 	font-size: clamp(1rem, 0.25rem + 1.25vw, 1.5rem);
-	line-height: 1.25;
-	margin-top: 1.5em;
-	margin-bottom: 0.25em;
-	text-align: center;
+	@apply text-[var(--head)] leading-5 mt-[1.5em] mb-[0.25em] text-center;
 }

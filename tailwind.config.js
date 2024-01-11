@@ -6,14 +6,12 @@ module.exports = {
 	// prefix: 'tw-',
 	darkMode: 'class',
   // darkMode: 'media',
-	corePlugins: {
-		fontSize: false,
-	},
   mode: "jit",
   content: [
 		"./hugo_stats.json",
     "./content/**/*.md",
-    "./themes/layouts/**/*.html"
+    "./themes/layouts/**/*.html",
+		"./assets/js/*.js"
   ],
 	safelist: [
 		'header-anchor',
@@ -78,10 +76,10 @@ module.exports = {
 				'100': '0 0 100px',
 				'200': '0 0 200px',
 			},
-			// screens: {
-			// 	'ml': '960px',
-			// 	'3xl': '1920px',
-			// },
+			screens: {
+				'ml': '960px',
+				'3xl': '1920px',
+			},
 			// fontWeight: {
 			// 	'darknormal': 375,
 			// 	'darksemibold': 575,

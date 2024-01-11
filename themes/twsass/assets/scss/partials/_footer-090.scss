@@ -1,35 +1,23 @@
 @use 'partials/variables-010' as var;
 
 footer {
-	text-align: center;
-	font-size: var.$text-xs;
-	font-weight: var.$font-weight-sm;
-	margin: 4rem auto 0 auto;
-	width: 100%;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5em;
-	margin: 2rem auto 0 auto;
+	@apply text-center text-xs font-normal mt-16 mx-auto my-0 w-full py-2 mt-8 mx-auto mb-0;
 	&.with-bg-dark {
-		padding-bottom: 6em;
+		@apply pb-[6em];
 	}
 	p {
-		line-height: 1.5em; /* definitely em, not rem, here */
+		@apply leading-[1.5em]; /* definitely em, not rem, here */
 		code {
-			background-color: var(--bkgd-article-code);
+			@apply bg-[var(--bkgd-article-code)];
 		}
 	}
 	div.footerWrapper {
-		margin: 0 auto;
-		width: 80%;
-		height: 100%;
+		@apply my-0 mx-auto w-[80%] h-full;
 		p {
-			margin: 1rem 0;
+			@apply my-4 mx-0;
 		}
 		div.icons-box {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			gap: 1em;
+			@apply flex flex-row justify-center gap-[1em];
 		}
 	}
 }
@@ -44,7 +32,7 @@ path.MastodonBody,
 path.Twitter,
 path.JSON,
 path.RSS {
-	fill: var(--icon-inside);
+	@apply fill-[var(--icon-inside)];
 }
 
 path.GitHub,
@@ -57,7 +45,7 @@ circle.Bluesky,
 circle.Threads,
 circle.RSS,
 circle.JSON {
-	fill: var(--link);
+	@apply fill-[var(--link)];
 }
 
 a:hover path.GitHub,
@@ -70,7 +58,7 @@ a:hover circle.Threads,
 a:hover circle.Twitter,
 a:hover circle.RSS,
 a:hover circle.JSON {
-	fill: var(--link-afh);
+	@apply fill-[var(--link-afh)];
 }
 
 path.MastodonBody,

@@ -4,82 +4,56 @@
 /* @use 'partials/010-variables' as var; */
 
 .header-anchor {
-	text-decoration: none;
-	color: var(--head);
 	&:hover, &:active, &:focus {
-		color: var(--link);
-		text-decoration: underline;
-		text-decoration-thickness: var.$textDcThickHA;
-		text-underline-offset: var.$textUnOffst;
+		text-decoration-thickness: var(--textDcThickHA);
+		text-underline-offset: var(--textUnOffst);
 		text-decoration-skip-ink: auto;
+		@apply text-[var(--link)] underline;
 		&::after {
-			font-size: var.$text-base;
-			padding-left: 0.5em;
 			content: "#";
+			@apply text-base pl-[0.5em];
 		}
 	}
+	@apply no-underline text-[var(--head)];
 }
 
 img.containedImage {
-	display: block;
-	width: 100%;
-	height: auto;
-	padding: 0;
-	margin: 0 auto;
+	@apply block w-full h-auto p-0 my-0 mx-auto;
 }
 
 img.ctrImg {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+	@apply block m-auto;
 }
 
 .shadow {
 	filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
-	border: 0;
+	@apply border-0;
 }
 
 html[data-theme="dark"] .shadow {
-	filter: none;
-	border: 1px solid;
-	border-color: clr.$gray-750;
+	@apply filter-none border border-gray-750;
 }
 
 .img-phn {
-	width: 90%;
-	@media screen and (min-width: 768px) {
-		width: 75%;
-	}
-	@media screen and (min-width: 1536px) {
-		width: 62.5%;
-	}
-	@media screen and (min-width: 1920px) {
-		width: 50%;
-	}
+	@apply w-[90%] md:w-3/4 2xl:w-[62.5%] 3xl:w-1/2;
 }
 
 .imgcCaption, .imghCaption, .imgCaption {
-	padding: 0.375em 0 1em;
 	margin-block-start: 0.5em;
-	line-height: 1.375;
-	font-size: 0.75em;
-	font-weight: var.$font-weight-sm;
-	text-align: center;
+	@apply pt-[0.375em] px-0 pb-[1em] leading-[1.375] text-xs text-center;
 }
 
 .punctuationExample {
-	font-size: 1.5em;
-	font-weight: normal;
-	font-family: var.$serif;
-	text-align: center;
+	@apply text-[1.5em] font-normal font-serif text-center;
 }
 
 .indentAfterLI {
 	margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
+	@apply ml-12;
 	&.box {
 		--bIALImarginLeft: 3em;
-		margin-left: var(--bIALImarginLeft);
 		width: calc(100% - var(--bIALImarginLeft));
+		@apply ml-[var(--bIALImarginLeft)];
 	}
 }
 
@@ -97,38 +71,27 @@ html[data-theme="dark"] .shadow {
 }
 
 blockquote {
-	border-left: 4px solid;
-	border-left-color: var(--border-bquote);
-	/* ^^^ same for both light and dark modes */
-	color: var(--bquote);
-	margin-right: 0;
-	margin-left: 0;
-	padding-left: 1.5em;
+	@apply border-l-4 border-l-[var(--border-bquote)] text-[var(--bquote)] mx-0 pl-[1.5em];
 	p:last-child {
-		margin-bottom: 0;
+		@apply mb-0;
 	}
 }
 
 article {
-	padding-top: 1em; /* definitely em, not rem */
+	@apply pt-[1em]; /* definitely em, not rem */
 	p, li {
 		font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
-		line-height: 1.5em;
-		margin-top: 1.15em;
-		margin-bottom: 1.15em;
+		@apply leading-[1.5em] my-[1.15em];
 	}
 	li li, li p {
 		font-size: inherit;
-		margin-top: 0.25em; /* definitely em, not rem */
+		@apply mt-[0.25em]; /* definitely em, not rem */
 	}
 	h1, h2, h3, h4 {
-		margin-top: 1.5em;
-		margin-bottom: 1.5rem;
-		letter-spacing: -0.02em;
-		line-height: normal;
+		@apply mt-[1.5em] mb-6 -tracking-[0.02em] leading-normal;
 	}
 	picture img {
-		height: auto;
+		@apply h-auto;
 	}
 }
 
@@ -136,23 +99,17 @@ article {
 	font-size: clamp(0.625rem, 1vw + 0.5rem, 0.875rem);
 	font-weight: var.$font-weight-sm;
 	line-height: clamp(1.4em, 1vw + 0.625em, 1.5em);
-	display: block;
 	box-sizing: border-box;
-	background-color: var(--bkgd-box);
-	border: 1px solid;
-	border-color: var(--border);
-	margin: 0.5em auto;
-	width: 100%;
-	padding: 1em 1.25em;
+	// background-color: var(--bkgd-box);
+	@apply block bg-[var(--bkgd-box)] border border-[var(--border)] my-[0.5em] mx-auto w-full py-[1em] px-[1.25em];
 	p {
-		padding: 0;
-		margin: 0;
+		@apply p-0 m-0;
 	}
 	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
-		margin-top: 1.75em;
+		@apply mt-[1.75em];
 	}
 	.red {
-		color: var(--box-red);
+		@apply text-[var(--box-red)];
 	}
 }
 
@@ -161,16 +118,16 @@ following from...
 https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
 */
 article strong:not(.red *):not(a *):not(blockquote *):not(details *), article b:not(.red *):not(a *):not(blockquote *):not(details *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	color: var(--boost);
+	@apply text-[var(--boost)];
 }
 article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-	color: var(--bquote-boost);
+	@apply text-[var(--bquote-boost)];
 }
 
 .gitinfo {
-	margin: 2em 0;
 	line-height: inherit;
+	@apply my-[2em] mx-0;
 	code {
-		background-color: transparent;
+		@apply bg-transparent;
 	}
 }

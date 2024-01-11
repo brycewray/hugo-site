@@ -4,28 +4,18 @@
 /* @use 'partials/010-variables' as var; */
 
 .FourOhFour-Wrapper {
-	padding-top: 10vh;
+	@apply pt-[12vh] px-6;
 }
 
 .FourOhFour-Body {
-	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
+	@apply text-center mx-auto;
 	h1 {
-		font-size: var.$text-4xl;
-		margin-bottom: 3rem;
-		@media screen and (min-width: 1024px) {
-			font-size: 3.25rem;
-		}
-		@media screen and (min-width: 1536px) {
-			font-size: 3.5rem;
-		}
+		@apply text-4xl mb-12 lg:text-[3.25rem] 2xl:text-[3.5rem];
 	}
 	p {
-		font-size: var.$text-2xl;
-		letter-spacing: -0.025em;
+		@apply text-2xl -tracking-[0.025em];
 	}
 	.bottom {
-		margin-bottom: 10em;
+		@apply mb-[10em];
 	}
 }
