@@ -2,6 +2,7 @@
 	{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
 
 	{{- $fonts := resources.Get "scss/fonts.scss" -}}
+	{{- $fonts = $fonts | resources.PostCSS -}}
 	{{- with $fonts }}
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
@@ -11,6 +12,7 @@
 	{{- end }}
 
 	{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
+	{{- $css = $css | resources.PostCSS -}}
 	{{- with $css -}}
 		<style media="screen">
 			{{ .Content | safeCSS }}
