@@ -5,39 +5,24 @@
 /* @use 'partials/010-variables' as var; */
 
 .posts-pagerGray {
-	color: clr.$gray-300;
+	@apply text-gray-300;
 }
 
 .posts-pagerThing {
-	display: flex;
-	flex-direction: row;
-	gap: 1em;
-	justify-content: center;
+	@apply flex flex-row gap-[1em] justify-center;
 	.pagerSpacer {
-		width: 0.625em;
-		@media screen and (min-width: 768px) {
-			width: 1.25em;
-		}
-		@media screen and (min-width: 1024px) {
-			width: 1.5em
-		}
+		@apply w-[0.625em] md:w-[1.25em] lg:w-[1.5em];
 	}
 }
 
 .posts-Container {
 	margin: 0 auto;
 	width: 85%;
-	@media screen and (min-width: 1024px) {
-		width: 75%;
-	}
-	@media screen and (min-width: 1536px) {
-		width: 62.5%;
-	}
+	@apply my-0 mx-auto w-[85%] lg:w-3/4 2xl:w-[62.5%];
 }
 
 .posts-ItemDiv {
-	margin: 0;
-	padding: 0;
+	@apply m-0 p-0;
 }
 
 .posts-Head {
