@@ -20,9 +20,9 @@
 	{{- $titleContact := site.Params.Titles.Contact -}}
 <div class="text-center relative h-auto px-6 pb-[1vh] md:px-12">
 	<div class="block w-full pt-[1em]">
-		<h1 class="my-0 mx-auto px-[2%] text-5xl pt-12 tracking-tight">{{ .Title | .Page.RenderString }}</h1>
+		<h1 class="my-0 mx-auto px-[2%] text-6xl pt-8 lg:pt-16 tracking-tighter">{{ .Title | .Page.RenderString }}</h1>
 		{{- if and .Params.Description (ne .Title $titleSearch) }}
-			<p class="text-2xl my-0 mx-auto px-[2%] tracking-tight pt-4">
+			<p class="text-2xl mx-auto px-[2%] tracking-tight pt-8">
 				{{ .Description }}
 			</p>
 		{{- end }}

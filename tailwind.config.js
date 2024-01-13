@@ -19,23 +19,25 @@ module.exports = {
   theme: {
 		// fluidTypography: {},
 		fontSize: {
-			xs: ['clamp(0.625rem, 0.75rem + 1vw, 0.75rem)', '1.1'],
-			sm: ['clamp(0.7rem, 0.8rem + 1vw, 0.875rem)', '1.25'],
-			base: ['clamp(0.8rem, 0.9rem + 1vw, 1rem)', '1.25'],
-			lg: ['clamp(0.9rem, 1rem + 1vw, 1.125rem)', '1.375'],
-			xl: ['clamp(1rem, 1.125rem + 1vw, 1.25rem)', '1.5'],
-			'2xl': ['clamp(1.25rem, 1.375rem + 1.25vw, 1.5rem)', '1.75'],
-			'3xl': ['clamp(1.5rem, 1.625rem + 1.5vw, 1.875rem)', '2'],
-			'4xl': ['clamp(1.875rem, 2rem + 2vw, 2.25rem)', '2.5'],
-			'5xl': ['clamp(2rem, 1rem + 3vw, 4rem)', '1'],
-			'6xl': ['clamp(2.5rem, 1rem + 3.5vw, 4.5rem)', '1'],
-			'7xl': ['clamp(3rem, 1rem + 4vw, 5rem)', '1'],
-			'8xl': ['clamp(3.5rem, 1rem + 4.5vw, 5.5rem)', '1'],
-			'9xl': ['clamp(4rem, 1rem + 5vw, 6rem)', '1'],
+			// https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+			// for each item below, comment shows TWCSS default values for `font-size` and `line-height`
+			xs: ['clamp(0.7rem, 0.65rem + 0.125vw, 0.8rem)', '1rem'], // 0.75rem - 1rem
+			sm: ['clamp(0.8rem, 0.75rem + 0.125vw, 0.9rem)', '1.25rem'], // 0.875rem - 1.25rem
+			base: ['font-size: clamp(0.9rem, 0.8rem + 0.25vw, 1.1rem)', '1.25'], // 1rem - 1.5rem
+			lg: ['clamp(1.125rem, 1.0625rem + 0.1563vw, 1.25rem);', '1.5'], // 1.125rem - 1.75rem
+			xl: ['clamp(1.125rem, 0.9375rem + 0.4688vw, 1.5rem)', '1.75rem'], // 1.25rem - 1.75rem
+			'2xl': ['clamp(1.25rem, 1.0625rem + 0.4688vw, 1.625rem)', '2rem'], // 1.5rem - 2rem
+			'3xl': ['clamp(1.5rem, 1.25rem + 0.625vw, 2rem)', '2.25rem'], // 1.875rem - 2.25rem
+			'4xl': ['clamp(1.875rem, 1.5625rem + 0.7813vw, 2.5rem)', '2.5rem'], // 2.25rem - 2.5rem
+			'5xl': ['clamp(2.5rem, 2.1250rem + 0.9375vw, 3.25rem)', '1'], // 3rem - 1
+			'6xl': ['clamp(2.5rem, 1.5rem + 2.5vw, 4.5rem)', '1'], // 3.75rem - 1
+			'7xl': ['clamp(3rem, 1.5rem + 3.75vw, 6rem)', '1'], // 4.5rem - 1
+			'8xl': ['clamp(4rem, 2.75rem + 3.125vw, 6.5rem)', '1'], // 6rem - 1
+			'9xl': ['clamp(5rem, 4.rem + 2.5vw, 7rem)', '1'], // 8rem - 1
 		},
 		extend: {
 			fontSize: {
-				'fn': ['0.65rem', '1'],
+				'fn': ['clamp(0.65rem, 0.5375rem + 0.2813vw, 0.875rem)', '1rem'],
 			},
 			fontFamily: {
 				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],

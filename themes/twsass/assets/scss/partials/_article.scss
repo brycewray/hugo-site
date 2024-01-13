@@ -78,10 +78,10 @@ blockquote {
 }
 
 article {
-	@apply pt-[1em]; /* definitely em, not rem */
+	@apply pt-4; /* definitely em, not rem */
 	p, li {
 		// font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
-		@apply text-lg leading-[1.5em] my-[1.15em];
+		@apply text-lg my-5;
 	}
 	li li, li p {
 		font-size: inherit;
