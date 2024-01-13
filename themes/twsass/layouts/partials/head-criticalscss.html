@@ -11,10 +11,12 @@
 		</style>
 	{{- end }}
 
+	{{- $optionsCSSCritical = merge $optionsCSSCritical (dict "targetPath" "css/critical.min.css") -}}
+
 	{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
-	{{- $css = $css | resources.PostCSS -}}
+	{{/*  {{- $css = $css | resources.PostCSS -}}  */}}
+	{{- $css = $css | resources.PostCSS | minify | fingerprint -}}
 	{{- with $css -}}
-		<style media="screen">
-			{{ .Content | safeCSS }}
-		</style>
+		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	{{- end }}
