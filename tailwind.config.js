@@ -90,6 +90,7 @@ module.exports = {
 			},
 			fontFamily: {
 				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
+				'social-sans-serif': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 			},
 		},
     listStyleType: {

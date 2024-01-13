@@ -7,81 +7,47 @@
 /* === for search form */
 
 [data-theme="light"] {
-	--input: clr.$black;
+	--input: theme(colors.black);
 }
 
 [data-theme="dark"] {
-	--input: clr.$white;
+	--input: theme(colors.white);
 }
 
 .searchDiv, .searchDivPF {
-	margin: 2em auto;
+	@apply my-[2em] mx-auto;
 }
 
 .searchDivPF {
 	/* margin: 0 auto; */
-	width: 80%;
-	@media screen and (min-width: 768px) {
-		width: 70%;
-	}
-	@media screen and (min-width: 1024px) {
-		width: 65%;
-	}
-	@media screen and (min-width: 1536px) {
-		width: 50%;
-	}
+	@apply w-[80%] md:w-[70%] lg:w-[65%] 2xl:w-1/2;
 }
 
 .searchDiv {
-	width: 100%;
+	@apply w-full;
 }
 
 .searchBox {
-	position: relative;
-	margin: 0 auto;
-	width: 17em;
-	padding: 0;
-	background-color: var(--bkgd-box);
-	border: 1px solid;
-	border-color: var(--border);
+	@apply relative my-0 mx-auto w-[17em] p-0 bg-[var(--bkgd-box)] border border-[var(--border)];
 }
 
 .searchInput {
-	@media (min-width: 768px) {
-		max-width: 300ch;
-	}
-	outline: none;
-	padding: 0.25em 0.5em 0.25em;
-	margin: 0;
-	border: 0;
-	color: var(--input);
-	background-color: transparent;
+	@apply md:max-w-[300ch] outline-none py-[0.25em] px-[0.5em] m-0 border-0 text-[var(--input)] bg-transparent;
 }
 
 .searchBtn {
-	appearance: none; /* otherwise, Safari rounds it */
-	border-radius: 0; /* " " " " " " " " " " " " " " */
-	position: absolute;
-	right: 0px;
-	margin: 0; /* fixes oddity in Safari */
-	padding: 3px 12px;
-	font-weight: bold;
-	border: 1px solid;
-	border-color: var(--link);
-	background-color: var(--link);
+	@apply appearance-none rounded-none absolute right-0 m-0 py-[3px] px-3 font-bold border border-[var(--link)] bg-[var(--link)];
 	&:hover {
-		cursor: pointer;
+		@apply cursor-pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid;
-		border-color: var(--link-afh);
-		background-color: var(--link-afh);
+		@apply border border-[var(--link-afh)] bg-[var(--link-afh)];
 	}
 }
 
 #search {
 	/* in case we need it */
-	margin: 0.5em auto 1em;
+	@apply mt-[0.5em] mx-auto mb-[1em];
 }
 
 /* [overall area]
@@ -92,83 +58,54 @@
 
 .pagefind-ui__form {
 	/* holding */
-	position: relative;
-	text-align: center;
+	@apply relative text-center;
 }
 
 .pagefind-ui__search-input {
-	max-width: 300ch;
-	width: 17em;
-	text-align: left;
-	outline: none;
-	padding: 0.25em 0.5em 0.25em;
-	border: 1px solid;
-	border-color: var(--border);
-	border-radius: 9px;
-	background-color: var(--bkgd-box);
-	color: var(--input);
+	@apply max-w-[300ch] w-[17em] text-left outline-none py-[0.25em] px-[0.5em] border border-[var(--border)] rounded-lg bg-[var(--bkgd-box)] text-[var(--input)];
 }
 
 .pagefind-ui__drawer {
 	/* results area */
-	gap: 1em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	text-align: left;
+	@apply gap-[1em] flex flex-row flex-wrap text-left;
 }
 
 .pagefind-ui__message {
 	/* count of results */
-	margin-top: 0.5em;
-	text-align: center;
+	@apply mt-2 mb-4 text-center;
 }
 
 .pagefind-ui__button, .pagefind-ui__search-clear {
 	/* "Load more results" */
-	margin: 1em auto;
-	text-align: center;
-	border-radius: 9px;
-	padding: 3px 12px;
-	font-weight: bold;
-	border: 1px solid;
-	border-color: var(--link);
-	background-color: var(--link);
-	color: var(--btn-text-default);
+	@apply my-[1em] mx-auto text-center rounded-lg py-[3px] px-3 font-bold border border-[var(--link)] bg-[var(--link)] text-[var(--btn-text-default)];
 	&:hover {
-		cursor: pointer;
+		@apply cursor-pointer;
 	}
 	&:focus, &:active, &:hover {
-		border: 1px solid;
-		border-color: var(--link-afh);
-		background-color: var(--link-afh);
+		@apply border border-[var(--link-afh)] bg-[var(--link-afh)];
 	}
 }
 
 .pagefind-ui__result {
 	/* li for list */
-	margin-bottom: 0.75em;
+	@apply mb-[0.75em];
 }
 
 .pagefind-ui__results-area {
-	position: relative;
+	@apply relative;
 }
 
 .pagefind-ui__button {
-	display: block;
-	/* position: absolute; */
-	/* left: 50%; */
-	/* bottom: 0; */
+	@apply block;
 }
 
 .pagefind-ui__result-excerpt {
 	/* font-family: var.$serif; */
 	& mark {
-		color: var(--pf-result-excerpt);
-		background-color: var(--bkgd-pf-result-excerpt);
+		@apply text-[var(--pf-result-excerpt)] bg-[var(--bkgd-pf-result-excerpt)];
 	}
 }
 
 .pagefind-ui__result-title {
-	font-weight: bold;
+	@apply font-bold;
 }

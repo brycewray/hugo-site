@@ -6,42 +6,23 @@
 /* === for search button on each page */
 
 search-button {
-	display: grid;
-	margin: 4em auto 2em;
-	place-items: center;
+	@apply grid mt-[4em] mx-auto mb-[2em] place-items-center;
 	button {
-		width: var.$btn-width;
-		height: var.$btn-height;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 0.25em 0;
-		align-items: center;
-		background-color: var(--link);
-		border: 1px solid;
-		border-radius: var.$btn-radius;
-		border-color: transparent;
-		color: var(--btn-text-default);
+		@apply w-[var(--btn-width)] h-[var(--btn-height)] flex flex-row justify-between py-[0.25em] px-0 items-center bg-[var(--link)] border rounded-md border-transparent text-[var(--btn-text-default)];
 		.svg {
-			padding-left: var.$interactionPadding;
-			padding-bottom: 0.125em;
+			@apply pl-[var(--interactionPadding)] pb-[0.125em];
 			svg {
-				width: var.$btn-svg-width;
-				height: auto;
+				@apply w-[var(--btn-svg-width)] h-auto;
 			}
 		}
 		.legend {
-			padding-right: var.$interactionPadding;
-			text-align: right;
-			font-size: var.$btn-legend-text;
-			font-weight: var.$btn-legend-weight;
+			@apply pr-[var(--interactionPadding)] text-right text-base font-semibold;
 		}
 		&:hover {
-			cursor: pointer;
+			@apply cursor-pointer;
 		}
 		&:focus, &:active, &:hover {
-			border-color: var(--link-afh);
-			background-color: var(--link-afh);
+			@apply border-[var(--link-afh)] bg-[var(--link-afh)];
 		}
 	}
 }

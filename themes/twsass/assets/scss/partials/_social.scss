@@ -7,14 +7,12 @@
 /* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
 
 .twitter-tweet {
-	font-size: var.$text-sm;
+	@apply text-sm;
 	a {
-		margin-left: 0.5em;
+		@apply ml-[0.5em];
 	}
-	@media screen and (min-width: 1024px) {
-		p {
-			font-size: var.$text-xl;
-		}
+	p {
+		@apply lg:text-xl;
 	}
 }
 
@@ -22,12 +20,6 @@
 	line-height: 1.35em; /* for non-`p` results from `text` var */
 	font-family: var.$social-sans-serif;
 	font-size: var.$text-base;
-	p {
-		margin-top: 0; /* reset */
-		color: var(--default);
-		margin-bottom: 1em;
-		line-height: 1.35em;
-	}
 	margin: 1.5rem auto;
 	padding: 1rem;
 	border: 2px solid;
@@ -35,25 +27,14 @@
 	border-radius: 12px;
 	background: clr.$white;
 	width: 100%;
-	@media screen and (min-width: 900px) {
-		width: 80%;
-	}
-	@media screen and (min-width: 1024px) {
-		width: 85%;
-	}
-	/* @media screen and (min-width: 1536px) {
-	   width: 85%;
-	}
-	*/
-	@media screen and (min-width: 1920px) {
-		max-width: 80ch;
+	@apply leading-snug font-social-sans-serif text-base my-6 mx-auto p-4 border-2 border-gray-700 rounded-xl bg-white w-full ml:w-[80%] lg:w-[85%] 3xl:w-[80ch];
+	p {
+		@apply mt-0 text-[var(--default)] mb-[1em] leading-snug;
 	}
 	a, a:hover {
-		border: none !important;
-		text-decoration: none;
-		overflow-wrap: break-word;
 		word-wrap: break-word;
 		word-break: break-word;
+		@apply #{'!border-0'} no-underline break-words;
 		/*
 		See:
 		- https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
@@ -64,7 +45,7 @@
 }
 
 .toot-body {
-	text-align: left !important;
+	@apply #{'!text-left'};
 }
 
 /*
@@ -73,98 +54,69 @@ Eleventy version
 */
 .toot-images {
 	img {
-		border-radius: 12px;
+		@apply rounded-xl;
 	}
 }
 /* Hugo version */
 .toot-media-img {
-	width: 100%; /* overcoming something in Andy Bell's `reset` */
-	height: auto;
-	aspect-ratio: 1;
-	object-fit: cover;
+	@apply w-full h-auto aspect-square object-cover;
 }
 
 .toot-blockquote-img {
-	border-bottom: 1px solid;
-	border-bottom-color: clr.$gray-700;
-	width: 100%;
+	@apply border border-gray-700 w-full;
 }
 
 .toot-player {
-	display: flex;
+	@apply flex;
 }
 
 /* ==== END, rounded image "attachment" */
 
 a > .card, a > .toot-card {
-	color: clr.$gray-800;
+	@apply text-gray-800;
 }
 
 .card {
-	overflow: hidden;
-	margin-top: 1em;
-	border-radius: 12px;
-	border: 1px solid;
-	border-color: clr.$gray-700;
+	@apply overflow-hidden mt-[1em] rounded-xl border border-gray-700;
 	p {
-		padding: 0.5em 1em 1em;
-		line-height: 1.4;
-		margin-top: 0;
-		font-size: var.$text-sm;
+		@apply pt-[0.5em] px-[1em] pb-[1em] leading-snug mt-0 text-sm;
 		.card-title {
-			color: clr.$black;
+			@apply text-black;
 		}
 	}
 }
 
 .toot-header {
-	display: flex;
+	@apply flex;
 	.toot-profile {
-		margin-right: 0.5em;
-		margin-bottom: 1em;
-		flex-shrink: 0;
+		@apply mr-[0.5em] mb-[1em] flex-shrink-0;
 		img {
-			border-radius: 9999px;
-			width: 48px;
-			height: auto;
+			@apply rounded-full w-[48px] h-auto;
 		}
 	}
 	.toot-author {
-		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
+		@apply flex flex-col flex-grow;
 		.toot-bird {
-			margin-left: 1.25rem;
+			@apply ml-5;
 		}
 	}
 	.toot-author-name {
-		font-weight: bold;
-		font-size: var.$text-base;
-		color: clr.$black;
-		line-height: 1.375;
+		@apply font-bold text-base text-black leading-snug;
 	}
 	.toot-author-handle {
-		color: clr.$gray-700;
-		font-weight: var.$font-weight-sm;
-		font-size: var.$text-sm;
-		line-height: 1;
+		@apply text-gray-700 text-sm leading-none;
 	}
 }
 
 .toot-footer {
-	margin-top: 1rem;
-	display: flex;
-	align-items: center;
-	color: clr.$gray-800;
-	font-size: var.$text-sm;
-	font-weight: var.$font-weight-sm;
+	@apply mt-4 flex items-center text-gray-800 text-sm;
 	.toot-like-icon, .toot-like-count {
-		display: none;
+		@apply hidden;
 	}
 	a {
-		color: clr.$gray-800;
+		@apply text-gray-800;
 		&:hover {
-			color: var(--link);
+			@apply text-[var(--link)];
 		}
 	}
 	/* === needed in Eleventy but not in Hugo
@@ -178,19 +130,13 @@ a > .card, a > .toot-card {
 [class^='toot-img-grid'],
 .toot-video-wrapper,
 .toot-media-video {
-	margin-top: 0.5em;
-	border-radius: var.$tc-corner-radius;
-	overflow: hidden;
-	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 2px;
+	@apply mt-[0.5em] rounded-2xl overflow-hidden grid;
 }
 
 .toot-video-wrapper {
-	border-radius: var.$tc-corner-radius;
-	display: block;
-	/* overriding previous */
-	position: relative;
+	@apply rounded-2xl block relative;
 }
 
 .toot-img-grid-3 {
@@ -203,7 +149,7 @@ a > .card, a > .toot-card {
 
 .toot-img-grid-3 :nth-child(1) {
 	grid-row: 1 / span 2;
-	height: 100%;
+	@apply h-full;
 }
 
 .toot-img-grid-3 :nth-child(1) .toot-media-img {
@@ -217,52 +163,43 @@ a > .card, a > .toot-card {
 
 .toot-sens-blur {
 	filter: blur(5rem);
-	position: relative;
+	@apply relative;
 }
 
 .toot-sens-blur-no {
 	filter: none !important;
 	z-index: 9999 !important;
-	position: relative;
+	@apply relative;
 }
 
 [class^='toot-img-grid'] {
-	position: relative;
+	@apply relative;
 }
 
 .blur-text {
-	position: absolute;
-	font-weight: bold;
 	text-shadow: 0.125em 0.125em 0.1em clr.$black;
-	width: 100%;
-	top: 40%;
-	color: clr.$white;
-	text-align: center;
-	font-size: 1.5em;
-	line-height: 1.2;
+	@apply absolute font-bold w-full top-[40%] text-white text-center text-[1.5em] leading-[1.2];
 }
 
 .blur-text-no {
-	display: none !important;
-	background-color: clr.$black;
+	@apply #{'!hidden'} bg-black;
 }
 
 .toot-poll-wrapper {
-	display: grid;
 	grid-template-columns: 3.5em 0.5fr 1fr;
 	grid-gap: 1em;
-	line-height: 1;
+	@apply grid leading-none;
 }
 
 .toot-poll-count {
 	grid-column: 1;
-	text-align: right;
+	@apply text-right;
 }
 
 .toot-poll-meter {
 	grid-column: 2;
 	meter {
-		width: 100%;
+		@apply w-full;
 	}
 }
 
@@ -271,61 +208,39 @@ a > .card, a > .toot-card {
 }
 
 .toot-poll-total {
-	padding-top: 1em;
+	@apply pt-[1em];
 }
 
 
 .toot-quoted-tweet {
-	border: 1px solid;
-	border-color: clr.$gray-800;
-	border-radius: 12px;
-	padding: 1em 1em 0.5em 1em;
-	margin-top: 0.75em;
-	margin-bottom: 0;
+	@apply border border-gray-800 rounded-xl pt-[1em] px-[1em] pb-[0.5em] mt-[0.75em] mb-0;
 	p {
-		font-size: var.$text-sm;
-		margin: 0 0 0.5em;
-		line-height: 1.4;
+		@apply text-sm mt-0 mx-0 mb-[0.5em] leading-[1.4];
 		.toot-quoted-toot-profile-image {
-			border-radius: 9999px;
-			width: 18px;
-			height: auto;
-			display: inline;
+			@apply rounded-full w-[18px] h-auto inline;
 		}
 	}
 	p.toot-quoted-toot-head {
-		margin-bottom: 0.25em;
+		@apply mb-[0.25em];
 		a {
-			color: clr.$gray-800;
+			@apply text-gray-800;
 			&:hover {
-				color: var(--link);
+				@apply text-[var(--link)];
 			}
 		}
 	}
 }
 
 .toot-reply-to {
-	margin-top: 0;
-	padding-top: 0;
-	line-height: 1.3em;
-	color: clr.$gray-800;
-	font-size: var.$text-sm;
+	@apply mt-0 pt-0 leading-[1.3em] text-gray-800 text-sm;
 	.toot-like-icon, .toot-like-count {
 		display: none;
+		@apply hidden;
 	}
 }
 
 .toot-card {
-	position: relative;
-	@media screen and (min-width: 768px) {
-		display: flex;
-	}
-	border: 2px solid;
-	border-color: clr.$gray-400;
-	border-radius: 6px;
-	margin-top: 1em;
-	text-decoration: none;
-	overflow: hidden;
+	@apply relative border-2 border-gray-400 rounded-md mt-[1em] no-underline overflow-hidden md:flex;
 }
 
 .toot-card-image {
@@ -333,79 +248,67 @@ a > .card, a > .toot-card {
 	@media screen and (min-width: 768px) {
 		flex: 0 0 200px;
 	}
-	border-right: 2px solid;
-	border-right-color: clr.$gray-400;
-	position: relative;
+	@apply border-r-2 border-r-gray-400 relative;
 }
 
 .toot-card-image-image {
-	display: block;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	background-size: cover;
 	background-position: 50%;
+	@apply block m-0 w-full h-full object-cover bg-cover;
 }
 
 .toot-card-content {
 	flex: 1 1 auto;
-	overflow: hidden;
-	padding: 0.75em;
-	line-height: 1.5;
+	@apply overflow-hidden p-[0.75em] leading-normal;
 	.card-title {
-		font-weight: bold;
+		@apply font-bold;
 	}
 	.card-title, .card-description {
-		font-size: var.$text-sm;
+		@apply text-sm;
 	}
 }
 
 html[data-theme="dark"] {
 	.toot-blockquote {
-		background: clr.$gray-900;
-		/* background: transparent; */
-		border-color: clr.$gray-200;
-		color: clr.$white;
+		@apply bg-gray-900 border-gray-200 text-white;
 		a, a:hover {
-			color: var(--link);
+			@apply text-[var(--link)];
 		}
 	}
 	.toot-blockquote-img {
-		border-bottom-color: clr.$gray-300;
+		@apply border-b-gray-300;
 	}
 	a > .card, a > .toot-card {
-		color: clr.$gray-300;
+		@apply text-gray-300;
 	}
 	.card {
-		border-color: clr.$gray-300;
+		@apply border-gray-300;
 		p .card-title {
-			color: clr.$white;
+			@apply text-white;
 		}
 	}
 	.toot-header {
 		.toot-author-name {
-			color: clr.$white;
+			@apply text-white;
 		}
 		.toot-author-handle {
-			color: clr.$gray-300;
+			@apply text-gray-300;
 		}
 	}
 	.toot-footer {
-		color: clr.$gray-200;
+		@apply text-gray-200;
 		a {
-			color: clr.$gray-200;
+			@apply text-gray-200;
 		}
 	}
 	.toot-quoted-tweet {
-		border-color: clr.$gray-200;
+		@apply border-gray-200;
 		p.toot-quoted-toot-head {
 			a {
-				color: clr.$gray-200;
+				@apply text-gray-200;
 			}
 		}
 	}
 	.toot-reply-to {
-		color: clr.$gray-200;
+		@apply text-gray-200;
 	}
 }
