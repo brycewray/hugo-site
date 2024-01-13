@@ -91,6 +91,8 @@ module.exports = {
 			fontFamily: {
 				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
 				'social-sans-serif': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+				'emojis': ['Apple Color Emoji',
+				'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
 			},
 		},
     listStyleType: {

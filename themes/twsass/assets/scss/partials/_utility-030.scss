@@ -1,14 +1,14 @@
 @use 'partials/variables-010' as var;
 
 .ctr {
-	text-align: center;
+	@apply text-center;
 }
 .red {
-	color: var(--red);
+	@apply text-[var(--red)];
 }
 
 .legal, .pokey {
-	font-weight: var.$font-weight-sm;
+	@apply font-normal;
 }
 
 .legal {
@@ -24,7 +24,7 @@
 	@apply font-serif;
 }
 .tightLead {
-	line-height: 1.25;
+	@apply leading-5;
 }
 .nobrk, .nowrap {
 	@apply whitespace-nowrap;
@@ -34,13 +34,11 @@
 	@apply whitespace-normal;
 }
 .pub-date {
-	font-weight: var.$pub-date-weight;
+	@apply font-semibold;
 }
-
 .mono {
 	@apply font-mono;
 }
-
 .emojis {
-	font-family: var.$emojis;
+	@apply font-emojis;
 }

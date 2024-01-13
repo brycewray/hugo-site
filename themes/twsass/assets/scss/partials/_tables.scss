@@ -5,123 +5,69 @@
 /* @use 'partials/010-variables' as var; */
 
 td {
-	vertical-align: top;
+	@apply align-top;
 }
 
 /* === table for web typography article, part II */
 table.noborders {
-	width: 100%;
-	/* table-layout: fixed; */
-	margin: 1.5rem auto 1rem auto;
-	border: 0;
-	border-collapse: collapse;
-
+	@apply w-full mt-6 mx-auto mb-4 border-0 border-collapse;
 	td {
-		font-weight: var.$font-normal;
-		text-align: left;
-		vertical-align: middle;
-		padding: 0.25rem 0 0.25rem 0.5rem;
+		@apply font-normal text-left align-middle py-1 pr-0 pl-2;
 		&.td30 {
-			width: 30%;
+			@apply w-[30%];
 		}
 		&.td70 {
-			width: 70%;
+			@apply w-[70%];
 		}
 		img {
-			margin: 0;
-			display: block;
-			max-width: 60%;
-			@media screen and (min-width: 768px) {
-				max-width: 40%;
-			}
-			height: auto;
+			@apply m-0 block max-w-[60%] md:max-w-[40%] h-auto;
 		}
 	}
+	tr {
+		@apply dark:text-black;
+	}
 	tr:nth-child(odd) {
-		background-color: clr.$slate-050;
+		@apply bg-slate-50;
 	}
 	tr:nth-child(even) {
-		background-color: clr.$slate-150;
+		@apply bg-slate-150;
 	}
 	thead td {
-		background-color: clr.$blue-900;
-		color: clr.$white;
-		font-weight: bold;
+		@apply bg-blue-900 text-white font-bold;
 	}
 }
 /* === end, table for web typography article, part II */
 
 /* === table for MLB/NFL article */
 table.leagues {
-	table-layout: fixed; /* so don't have to spec each `td`'s width */
-	width: 90%;
-	margin: 1rem auto 0 auto;
-	border: 0;
-	border-collapse: collapse;
-	@media (min-width: 900px) {
-		width: 60%;
-	}
+	@apply table-fixed w-[90%] md:w-[60%] mt-4 mx-auto mb-0 border-0 border-collapse;
 }
-
 /* === end, table for MLB/NFL article */
 
 table.ulysses {
-	width: 100%;
-	table-layout: auto;
-	border-collapse: collapse;
-	font-size: var.$text-xs;
+	@apply w-full table-auto border-collapse text-xs md:table-fixed;
 	@media screen and (min-width: 768px) {
 		font-size: inherit;
-		table-layout: fixed; /* so don't have to spec each `td`'s width */
 	}
 	thead th {
-		background-color: clr.$blue-800;
-		border: 1px solid;
-		border-color: clr.$black clr.$gray-350 clr.$black clr.$black;
-		color: clr.$white;
+		@apply bg-blue-800 border border-y-black border-r-gray-350 border-l-black dark:border-white text-white;
 		&:last-child {
-			border-right-color: clr.$black;
+			@apply border-r-black dark:border-r-white;
 		}
 	}
 	td {
-		text-align: center;
-		border: 1px solid;
-		border-color: clr.$black;
-		padding: 0;
+		@apply text-center border border-black dark:border-white dark:text-white;
 	}
 	thead th, td {
-		padding: 0.125em 0.375em;
+		@apply py-1 px-2;
 	}
 	thead th:nth-child(1), td:nth-child(1) {
-		text-align: left;
+		@apply text-left;
 	}
 	tr:nth-child(odd) {
-		background-color: clr.$white;
+		@apply bg-white dark:bg-slate-700;
 	}
 	tr:nth-child(even) {
-		background-color: clr.$emerald-050;
-	}
-}
-
-html[data-theme="dark"] {
-	table.noborders {
-		tr {
-			color: clr.$black;
-		}
-	}
-	table.ulysses {
-		thead th {
-			border-color: clr.$white;
-		}
-		td {
-			border-color: clr.$white;
-			color: clr.$white;
-		}
-		tr:nth-child(odd) {
-			background-color: clr.$slate-700;
-		}
-		tr:nth-child(even) {
-			background-color: clr.$emerald-900;
-		}
+		@apply bg-emerald-50 dark:bg-emerald-900;
 	}
 }
