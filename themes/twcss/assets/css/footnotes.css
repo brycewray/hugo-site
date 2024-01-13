@@ -1,14 +1,9 @@
-@charset 'utf-8';
-@use 'partials/variables-010' as var;
-/* @use 'partials/005-limited-colors' as clr; */
-/* @use 'partials/010-variables' as var; */
-
 /* == footnotes == */
 
-// .footnotes ol li, .footnotes ol li p, .footnote-ref,
-// .footnote-backref, .footnote-sim, a.footnote-return {
-// 	font-weight: var.$font-weight-sm;
-// }
+/* .footnotes ol li, .footnotes ol li p, .footnote-ref,
+.footnote-backref, .footnote-sim, a.footnote-return {
+	font-weight: var.$font-weight-sm;
+} */
 
 .footnotes {
 	padding-top: 0.5em;
@@ -17,9 +12,9 @@
 	hr {
 		@apply border-none h-[2px] bg-[var(--head)];
 	}
-	// ol {
-	// 	padding-inline-start: 1.5rem;
-	// }
+	/* ol {
+	 	padding-inline-start: 1.5rem;
+	} */
 	ol li {
 		@apply text-sm;
 		/*
@@ -27,12 +22,12 @@
 		see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
 		*/
 		p {
-			// line-height: 1.5em;
+			/* line-height: 1.5em; */
 			@apply leading-normal;
 		}
 	}
 	.footnote-backref {
-		// font-size: 75%;
+		/* font-size: 75%; */
 		@apply text-fn;
 	}
 }

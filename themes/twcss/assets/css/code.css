@@ -1,7 +1,3 @@
-@use 'partials/colors' as clr;
-@use 'partials/variables-010' as var;
-/* @use 'partials/variables-010' as var; */
-
 [data-theme="light"] {
 	--gray: theme(colors.gray.700);
 	--orange: theme(colors.orange.700);
@@ -303,7 +299,6 @@ html[data-theme="dark"] {
 	}
 	.chroma, .code-inline {
 		.h1 {
-			background-color: clr.$yellow-800;
 			@apply bg-yellow-800;
 		}
 	}

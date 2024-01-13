@@ -1,5 +1,3 @@
-@use 'partials/variables-010' as var;
-
 .ctr {
 	@apply text-center;
 }
