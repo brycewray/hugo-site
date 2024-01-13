@@ -1,8 +1,3 @@
-@charset 'utf-8';
-@use 'partials/colors' as clr;
-/* @use 'partials/005-limited-colors' as clr; */
-/* @use 'partials/010-variables' as var; */
-
 /* based on https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/ */
 
 @media print {
@@ -40,13 +35,13 @@
 		overflow-x: auto !important;
 	}
 	code[class*="language-"], pre[class*="language-"] {
-		color: #{clr.$white};
+		color: #fff;
 	}
 	:not(pre) > code[class*="language-"], pre[class*="language-"] {
 		background: #000;
 	}
 	.chroma * {
-		color: #{clr.$white} !important;
+		color: #fff !important;
 	}
 	article code {
 		background-color: #ddd;

@@ -19,7 +19,7 @@
 	a, a:hover {
 		word-wrap: break-word;
 		word-break: break-word;
-		@apply #{'!border-0'} no-underline break-words;
+		@apply !border-0 no-underline break-words;
 		/*
 		See:
 		- https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
@@ -30,7 +30,7 @@
 }
 
 .toot-body {
-	@apply #{'!text-left'};
+	@apply !text-left;
 }
 
 /*
@@ -104,12 +104,6 @@ a > .card, a > .toot-card {
 			@apply text-[var(--link)];
 		}
 	}
-	/* === needed in Eleventy but not in Hugo
-	.toot-date:after {
-		content: " (UTC)";
-		font-size: var(--text-xs);
-	}
-	*/
 }
 
 [class^='toot-img-grid'],
@@ -162,12 +156,12 @@ a > .card, a > .toot-card {
 }
 
 .blur-text {
-	text-shadow: 0.125em 0.125em 0.1em clr.$black;
+	text-shadow: 0.125em 0.125em 0.1em #000;
 	@apply absolute font-bold w-full top-[40%] text-white text-center text-[1.5em] leading-[1.2];
 }
 
 .blur-text-no {
-	@apply #{'!hidden'} bg-black;
+	@apply !hidden bg-black;
 }
 
 .toot-poll-wrapper {

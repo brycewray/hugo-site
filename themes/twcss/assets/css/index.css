@@ -1,0 +1,20 @@
+@import '/themes/twcss/assets/css/reset-001.css';
+@import 'tailwindcss/base';
+@import '/themes/twcss/assets/css/print.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '/themes/twcss/assets/css/utility-030.css';
+@import '/themes/twcss/assets/css/global-050.css';
+@import '/themes/twcss/assets/css/header-070.css';
+@import '/themes/twcss/assets/css/footer-090.css';
+@import '/themes/twcss/assets/css/article.css';
+@import '/themes/twcss/assets/css/code.css';
+@import '/themes/twcss/assets/css/footnotes.css';
+@import '/themes/twcss/assets/css/lite-yt-embed.css';
+@import '/themes/twcss/assets/css/posts-list.css';
+@import '/themes/twcss/assets/css/posts-single.css';
+@import '/themes/twcss/assets/css/search-btn.css';
+@import '/themes/twcss/assets/css/search-form.css';
+@import '/themes/twcss/assets/css/social.css';
+@import '/themes/twcss/assets/css/tables.css';
