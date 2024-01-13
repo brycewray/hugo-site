@@ -30,7 +30,7 @@ img.ctrImg {
 	@apply border-0;
 }
 
-html[data-theme="dark"] .shadow {
+html[data-theme="dark"] .shadow, html.dark .shadow {
 	@apply filter-none border border-gray-750;
 }
 
@@ -80,8 +80,8 @@ blockquote {
 article {
 	@apply pt-[1em]; /* definitely em, not rem */
 	p, li {
-		font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
-		@apply leading-[1.5em] my-[1.15em];
+		// font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
+		@apply text-lg leading-[1.5em] my-[1.15em];
 	}
 	li li, li p {
 		font-size: inherit;
@@ -96,12 +96,12 @@ article {
 }
 
 .box {
-	font-size: clamp(0.625rem, 1vw + 0.5rem, 0.875rem);
-	font-weight: var.$font-weight-sm;
-	line-height: clamp(1.4em, 1vw + 0.625em, 1.5em);
+	// font-size: clamp(0.625rem, 1vw + 0.5rem, 0.875rem);
+	// font-weight: var.$font-weight-sm;
+	// line-height: clamp(1.4em, 1vw + 0.625em, 1.5em);
 	box-sizing: border-box;
 	// background-color: var(--bkgd-box);
-	@apply block bg-[var(--bkgd-box)] border border-[var(--border)] my-[0.5em] mx-auto w-full py-[1em] px-[1.25em];
+	@apply text-sm block bg-[var(--bkgd-box)] border border-[var(--border)] my-[0.5em] mx-auto w-full py-[1em] px-[1.25em];
 	p {
 		@apply p-0 m-0;
 	}

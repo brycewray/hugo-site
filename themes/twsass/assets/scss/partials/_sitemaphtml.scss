@@ -6,22 +6,21 @@
 /* === for HTML sitemap */
 
 .sitemap-Div {
-	@apply my-0 mx-auto w-[90%] lg:w-[40%];
-	h1 {
-		padding-top: clamp(1.75rem, 5vh, 3rem);
-		font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
-		@apply tracking-tight mb-[0.25em];
-	}
-	h2 {
-		/* font-weight: bold; */
-		@apply text-2xl py-2;
-	}
-	ul li {
-		@apply text-sm font-sans mb-[0.75em] leading-snug;
-		strong {
-			@apply font-semibold;
-		}
-	}
+	// h1 {
+	// 	padding-top: clamp(1.75rem, 5vh, 3rem);
+	// 	font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
+	// 	@apply tracking-tight mb-[0.25em];
+	// }
+	// h2 {
+	// 	/* font-weight: bold; */
+	// 	@apply text-2xl py-2;
+	// }
+	// ul li {
+	// 	@apply text-sm font-sans mb-[0.75em] leading-snug;
+	// 	strong {
+	// 		@apply font-semibold;
+	// 	}
+	// }
 }
 
 /* === end, for HTML sitemap */

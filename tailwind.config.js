@@ -18,7 +18,31 @@ module.exports = {
 	],
   theme: {
 		// fluidTypography: {},
+		fontSize: {
+			xs: ['clamp(0.625rem, 0.75rem + 1vw, 0.75rem)', '1.1'],
+			sm: ['clamp(0.7rem, 0.8rem + 1vw, 0.875rem)', '1.25'],
+			base: ['clamp(0.8rem, 0.9rem + 1vw, 1rem)', '1.25'],
+			lg: ['clamp(0.9rem, 1rem + 1vw, 1.125rem)', '1.375'],
+			xl: ['clamp(1rem, 1.125rem + 1vw, 1.25rem)', '1.5'],
+			'2xl': ['clamp(1.25rem, 1.375rem + 1.25vw, 1.5rem)', '1.75'],
+			'3xl': ['clamp(1.5rem, 1.625rem + 1.5vw, 1.875rem)', '2'],
+			'4xl': ['clamp(1.875rem, 2rem + 2vw, 2.25rem)', '2.5'],
+			'5xl': ['clamp(2rem, 1rem + 3vw, 4rem)', '1'],
+			'6xl': ['clamp(2.5rem, 1rem + 3.5vw, 4.5rem)', '1'],
+			'7xl': ['clamp(3rem, 1rem + 4vw, 5rem)', '1'],
+			'8xl': ['clamp(3.5rem, 1rem + 4.5vw, 5.5rem)', '1'],
+			'9xl': ['clamp(4rem, 1rem + 5vw, 6rem)', '1'],
+		},
 		extend: {
+			fontSize: {
+				'fn': ['0.65rem', '1'],
+			},
+			fontFamily: {
+				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
+				'social-sans-serif': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+				'emojis': ['Apple Color Emoji',
+				'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+			},
 			colors: {
 				slate: {
 					50: '#f8fafc',
@@ -85,15 +109,6 @@ module.exports = {
 			// 	'darksemibold': 575,
 			// 	'darkbold': 675,
 			// },
-			fontSize: {
-				'fn': '0.65rem',
-			},
-			fontFamily: {
-				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
-				'social-sans-serif': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-				'emojis': ['Apple Color Emoji',
-				'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
-			},
 		},
     listStyleType: {
       none: 'none',
