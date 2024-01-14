@@ -1,105 +1,109 @@
-/* === for search form */
+@layer components {
+	/* === for search form */
 
-[data-theme="light"] {
-	--input: theme(colors.black);
-}
-
-[data-theme="dark"] {
-	--input: theme(colors.white);
-}
-
-.searchDiv, .searchDivPF {
-	@apply my-[2em] mx-auto;
-}
-
-.searchDivPF {
-	/* margin: 0 auto; */
-	@apply w-[80%] md:w-[70%] lg:w-[65%] 2xl:w-1/2;
-}
-
-.searchDiv {
-	@apply w-full;
-}
-
-.searchBox {
-	@apply relative my-0 mx-auto w-[17em] p-0 bg-[var(--bkgd-box)] border border-[var(--border)];
-}
-
-.searchInput {
-	@apply md:max-w-[300ch] outline-none py-[0.25em] px-[0.5em] m-0 border-0 text-[var(--input)] bg-transparent;
-}
-
-.searchBtn {
-	@apply appearance-none rounded-none absolute right-0 m-0 py-[3px] px-3 font-bold border border-[var(--link)] bg-[var(--link)];
-	&:hover {
-		@apply cursor-pointer;
+	[data-theme="light"] {
+		--input: theme(colors.black);
 	}
-	&:focus, &:active, &:hover {
-		@apply border border-[var(--link-afh)] bg-[var(--link-afh)];
+
+	[data-theme="dark"] {
+		--input: theme(colors.white);
 	}
-}
 
-#search {
-	/* in case we need it */
-	@apply mt-[0.5em] mx-auto mb-[1em];
-}
-
-/* [overall area]
-.pagefind-ui {
-
-}
-*/
-
-.pagefind-ui__form {
-	/* holding */
-	@apply relative text-center;
-}
-
-.pagefind-ui__search-input {
-	@apply max-w-[300ch] w-[17em] text-left outline-none py-[0.25em] px-[0.5em] border border-[var(--border)] rounded-lg bg-[var(--bkgd-box)] text-[var(--input)];
-}
-
-.pagefind-ui__drawer {
-	/* results area */
-	@apply gap-[1em] flex flex-row flex-wrap text-left;
-}
-
-.pagefind-ui__message {
-	/* count of results */
-	@apply mt-2 mb-4 text-center;
-}
-
-.pagefind-ui__button, .pagefind-ui__search-clear {
-	/* "Load more results" */
-	@apply my-[1em] mx-auto text-center rounded-lg py-[3px] px-3 font-bold border border-[var(--link)] bg-[var(--link)] text-[var(--btn-text-default)];
-	&:hover {
-		@apply cursor-pointer;
+	.searchDiv, .searchDivPF {
+		@apply my-[2em] mx-auto;
 	}
-	&:focus, &:active, &:hover {
-		@apply border border-[var(--link-afh)] bg-[var(--link-afh)];
+
+	.searchDivPF {
+		/* margin: 0 auto; */
+		@apply w-[80%] md:w-[70%] lg:w-[65%] 2xl:w-1/2;
 	}
-}
 
-.pagefind-ui__result {
-	/* li for list */
-	@apply mb-[0.75em];
-}
-
-.pagefind-ui__results-area {
-	@apply relative;
-}
-
-.pagefind-ui__button {
-	@apply block;
-}
-
-.pagefind-ui__result-excerpt {
-	/* font-family: var.$serif; */
-	& mark {
-		@apply text-[var(--pf-result-excerpt)] bg-[var(--bkgd-pf-result-excerpt)];
+	.searchDiv {
+		@apply w-full;
 	}
+
+	.searchBox {
+		@apply relative my-0 mx-auto w-[17em] p-0 bg-[var(--bkgd-box)] border border-[var(--border)];
+	}
+
+	.searchInput {
+		@apply md:max-w-[300ch] outline-none py-[0.25em] px-[0.5em] m-0 border-0 text-[var(--input)] bg-transparent;
+	}
+
+	.searchBtn {
+		@apply appearance-none rounded-none absolute right-0 m-0 py-[3px] px-3 font-bold border border-[var(--link)] bg-[var(--link)];
+		&:hover {
+			@apply cursor-pointer;
+		}
+		&:focus, &:active, &:hover {
+			@apply border border-[var(--link-afh)] bg-[var(--link-afh)];
+		}
+	}
+
+	#search {
+		/* in case we need it */
+		@apply mt-[0.5em] mx-auto mb-[1em];
+	}
+
+	/* [overall area]
+	.pagefind-ui {
+
+	}
+	*/
+
+	.pagefind-ui__form {
+		/* holding */
+		@apply relative text-center;
+	}
+
+	.pagefind-ui__search-input {
+		@apply max-w-[300ch] w-[17em] text-left outline-none py-[0.25em] px-[0.5em] border border-[var(--border)] rounded-lg bg-[var(--bkgd-box)] text-[var(--input)];
+	}
+
+	.pagefind-ui__drawer {
+		/* results area */
+		@apply gap-[1em] flex flex-row flex-wrap text-left;
+	}
+
+	.pagefind-ui__message {
+		/* count of results */
+		@apply mt-2 mb-4 text-center;
+	}
+
+	.pagefind-ui__button, .pagefind-ui__search-clear {
+		/* "Load more results" */
+		@apply my-[1em] mx-auto text-center rounded-lg py-[3px] px-3 font-bold border border-[var(--link)] bg-[var(--link)] text-[var(--btn-text-default)];
+		&:hover {
+			@apply cursor-pointer;
+		}
+		&:focus, &:active, &:hover {
+			@apply border border-[var(--link-afh)] bg-[var(--link-afh)];
+		}
+	}
+
+	.pagefind-ui__result {
+		/* li for list */
+		@apply mb-[0.75em];
+	}
+
+	.pagefind-ui__results-area {
+		@apply relative;
+	}
+
+	.pagefind-ui__button {
+		@apply block;
+	}
+
+	.pagefind-ui__result-excerpt {
+		/* font-family: var.$serif; */
+		& mark {
+			@apply text-[var(--pf-result-excerpt)] bg-[var(--bkgd-pf-result-excerpt)];
+		}
+	}
+
+	.pagefind-ui__result-title {
+		@apply font-bold;
+	}
+
 }
 
-.pagefind-ui__result-title {
-	@apply font-bold;
-}

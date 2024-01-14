@@ -2,97 +2,98 @@
 	--navRightMargin: 6em; /* unless JS is off */
 }
 
-header {
-	@apply bg-[var(--bkgd-nav)] fixed w-full mt-0 z-[9999];
-}
-
-.nav-Toggle {
-	@apply lg:hidden absolute cursor-pointer my-0 mx-4 right-10;
-	svg {
-		@apply pt-[0.425em] w-6 fill-white;
+@layer components {
+	header {
+		@apply bg-[var(--bkgd-nav)] fixed w-full mt-0 z-[9999];
 	}
-	.close {
-		@apply hidden;
-	}
-}
 
-.nav-Checkbox {
-	@apply hidden;
-}
-
-.nav-Menu {
-	margin-block-start: 0;
-	margin-block-end: 0;
-	@apply ps-0 flex flex-col gap-4 text-right my-2 mr-2 ml-0;
-	li {
-		@apply list-none hidden font-bold pr-[3.5em];
-		&.notMobile {
+	.nav-Toggle {
+		@apply lg:hidden absolute cursor-pointer my-0 mx-4 right-10;
+		svg {
+			@apply pt-[0.425em] w-6 fill-white;
+		}
+		.close {
 			@apply hidden;
 		}
-		&:first-child {
-			@apply p-0 mr-auto ml-6 block;
-			svg { /* for site logo */
-				@apply w-auto;
-			}
-		}
 	}
-	a {
-		@apply no-underline border-0 text-[var(--link-nav)];
-		&:focus, &:active, &:hover {
-			@apply text-[var(--link-nav-afh)];
-		}
-	}
-	@media only screen and (min-width: 1024px) {
-		@apply flex-row p-0 gap-2 mt-2 mr-[var(--navRightMargin)] mb-0 ml-0;
-		li {
-			@apply text-sm block uppercase my-2 mx-0 pr-3;
-			&.notMobile {
-				@apply block;
-			}
-			&:first-child {
-				@apply tracking-normal leading-[0] mt-0;
-			}
-		}
-	}
-}
 
-#nav-Checkbox {
-	&:checked ~ ul.nav-Menu li, &:checked ~ label.nav-Toggle .close {
-		@apply block;
-	}
-	&:checked ~ label.nav-Toggle .menu {
+	.nav-Checkbox {
 		@apply hidden;
 	}
-	&:checked ~ ul.nav-Menu {
-		@apply pb-4;
-	}
-}
 
-.nav {
-	@apply relative;
-}
-
-.nav-ModeToggle {
-	@apply absolute cursor-pointer top-[0.15em] right-2 bg-transparent border-0;
-	@media (min-width: 1024px) {
-		@apply right-[1.5em];
-	}
-	svg {
-		/* position: absolute; */
-		@apply w-[1.375em] h-auto;
-		&.sun path, &.moon {
-			@apply fill-[var(--fill-lightdarktoggle)];
+	.nav-Menu {
+		@apply mbs-0 mbe-0 ps-0 flex flex-col gap-4 text-right my-2 mr-2 ml-0;
+		li {
+			@apply list-none hidden font-bold pr-[3.5em];
+			&.notMobile {
+				@apply hidden;
+			}
+			&:first-child {
+				@apply p-0 mr-auto ml-6 block;
+				svg { /* for site logo */
+					@apply w-auto;
+				}
+			}
+		}
+		a {
+			@apply no-underline border-0 text-[var(--link-nav)];
+			&:focus, &:active, &:hover {
+				@apply text-[var(--link-nav-afh)];
+			}
+		}
+		@media only screen and (min-width: 1024px) {
+			@apply flex-row p-0 gap-2 mt-2 mr-[var(--navRightMargin)] mb-0 ml-0;
+			li {
+				@apply text-sm block uppercase my-2 mx-0 pr-3;
+				&.notMobile {
+					@apply block;
+				}
+				&:first-child {
+					@apply tracking-normal leading-[0] mt-0;
+				}
+			}
 		}
 	}
-}
 
-circle.NavIcon {
-	@apply fill-[var(--logocircle)];
-}
-a:hover circle.NavIcon {
-	@apply fill-[var(--logocircle-afh)];
-}
+	#nav-Checkbox {
+		&:checked ~ ul.nav-Menu li, &:checked ~ label.nav-Toggle .close {
+			@apply block;
+		}
+		&:checked ~ label.nav-Toggle .menu {
+			@apply hidden;
+		}
+		&:checked ~ ul.nav-Menu {
+			@apply pb-4;
+		}
+	}
 
-path.NavIcon {
-	@apply fill-white;
+	.nav {
+		@apply relative;
+	}
+
+	.nav-ModeToggle {
+		@apply absolute cursor-pointer top-[0.15em] right-2 bg-transparent border-0;
+		@media (min-width: 1024px) {
+			@apply right-[1.5em];
+		}
+		svg {
+			/* position: absolute; */
+			@apply w-[1.375em] h-auto;
+			&.sun path, &.moon {
+				@apply fill-[var(--fill-lightdarktoggle)];
+			}
+		}
+	}
+
+	circle.NavIcon {
+		@apply fill-[var(--logocircle)];
+	}
+	a:hover circle.NavIcon {
+		@apply fill-[var(--logocircle-afh)];
+	}
+
+	path.NavIcon {
+		@apply fill-white;
+	}
+
 }

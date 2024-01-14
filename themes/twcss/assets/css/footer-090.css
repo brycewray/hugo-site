@@ -1,65 +1,47 @@
-footer {
-	@apply text-center text-xs font-normal mt-16 lg:mt-8 my-0 w-full py-2 mx-auto mb-0;
-	&.with-bg-dark {
-		@apply pb-[6em];
+@layer components {
+
+	circle.GitHub,
+	path.GitLab,
+	circle.RSS,
+	path.Calckey,
+	path.Bluesky,
+	path.Threads,
+	path.MastodonBody,
+	path.Twitter,
+	path.JSON,
+	path.RSS {
+		@apply fill-[var(--icon-inside)];
 	}
-	p {
-		@apply leading-[1.5em]; /* definitely em, not rem, here */
-		code {
-			@apply bg-[var(--bkgd-article-code)];
-		}
+
+	path.GitHub,
+	circle.GitLab,
+	circle.MastodonCircle,
+	path.MastodonM,
+	circle.Calckey,
+	circle.Twitter,
+	circle.Bluesky,
+	circle.Threads,
+	circle.RSS,
+	circle.JSON {
+		@apply fill-[var(--link)];
 	}
-	div.footerWrapper {
-		@apply my-0 mx-auto w-[80%] h-full;
-		p {
-			@apply my-4 mx-0;
-		}
-		div.icons-box {
-			@apply flex flex-row justify-center gap-[1em];
-		}
+
+	a:hover path.GitHub,
+	a:hover circle.GitLab,
+	a:hover circle.MastodonCircle,
+	a:hover path.MastodonM,
+	a:hover circle.Calckey,
+	a:hover circle.Bluesky,
+	a:hover circle.Threads,
+	a:hover circle.Twitter,
+	a:hover circle.RSS,
+	a:hover circle.JSON {
+		@apply fill-[var(--link-afh)];
 	}
-}
 
-circle.GitHub,
-path.GitLab,
-circle.RSS,
-path.Calckey,
-path.Bluesky,
-path.Threads,
-path.MastodonBody,
-path.Twitter,
-path.JSON,
-path.RSS {
-	@apply fill-[var(--icon-inside)];
-}
+	path.MastodonBody,
+	path.MastodonM {
+		fill-rule: nonzero;
+	}
 
-path.GitHub,
-circle.GitLab,
-circle.MastodonCircle,
-path.MastodonM,
-circle.Calckey,
-circle.Twitter,
-circle.Bluesky,
-circle.Threads,
-circle.RSS,
-circle.JSON {
-	@apply fill-[var(--link)];
-}
-
-a:hover path.GitHub,
-a:hover circle.GitLab,
-a:hover circle.MastodonCircle,
-a:hover path.MastodonM,
-a:hover circle.Calckey,
-a:hover circle.Bluesky,
-a:hover circle.Threads,
-a:hover circle.Twitter,
-a:hover circle.RSS,
-a:hover circle.JSON {
-	@apply fill-[var(--link-afh)];
-}
-
-path.MastodonBody,
-path.MastodonM {
-	fill-rule: nonzero;
 }

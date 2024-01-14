@@ -44,17 +44,20 @@ lite-youtube .lty-playbtn:focus {
 lite-youtube.lyt-activated {
 	cursor: unset;
 }
-lite-youtube.lyt-activated::before,
-lite-youtube.lyt-activated > .lty-playbtn {
-	@apply opacity-0 pointer-events-none;
-}
+@layer components {
+	lite-youtube.lyt-activated::before,
+	lite-youtube.lyt-activated > .lty-playbtn {
+		@apply opacity-0 pointer-events-none;
+	}
 
-.lyt-visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	@apply h-[1px] overflow-hidden absolute whitespace-nowrap w-[1px];
-}
+	.lyt-visually-hidden {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		@apply h-[1px] overflow-hidden absolute whitespace-nowrap w-[1px];
+	}
 
-.lyt-disclaimer .red {
-	@apply text-[var(--red)];
+	.lyt-disclaimer .red {
+		@apply text-[var(--red)];
+	}
+
 }

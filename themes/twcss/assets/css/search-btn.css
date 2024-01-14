@@ -1,23 +1,26 @@
-/* === for search button on each page */
+@layer components {
+	/* === for search button on each page */
 
-search-button {
-	@apply grid mt-[4em] mx-auto mb-[2em] place-items-center;
-	button {
-		@apply w-[var(--btn-width)] h-[var(--btn-height)] flex flex-row justify-between py-[0.25em] px-0 items-center bg-[var(--link)] border rounded-md border-transparent text-[var(--btn-text-default)];
-		.svg {
-			@apply pl-[var(--interactionPadding)] pb-[0.125em];
-			svg {
-				@apply w-[var(--btn-svg-width)] h-auto;
+	search-button {
+		@apply grid mt-[4em] mx-auto mb-[2em] place-items-center;
+		button {
+			@apply w-[var(--btn-width)] h-[var(--btn-height)] flex flex-row justify-between py-[0.25em] px-0 items-center bg-[var(--link)] border rounded-md border-transparent text-[var(--btn-text-default)];
+			.svg {
+				@apply pl-[var(--interactionPadding)] pb-[0.125em];
+				svg {
+					@apply w-[var(--btn-svg-width)] h-auto;
+				}
+			}
+			.legend {
+				@apply pr-[var(--interactionPadding)] text-right text-base font-semibold;
+			}
+			&:hover {
+				@apply cursor-pointer;
+			}
+			&:focus, &:active, &:hover {
+				@apply border-[var(--link-afh)] bg-[var(--link-afh)];
 			}
 		}
-		.legend {
-			@apply pr-[var(--interactionPadding)] text-right text-base font-semibold;
-		}
-		&:hover {
-			@apply cursor-pointer;
-		}
-		&:focus, &:active, &:hover {
-			@apply border-[var(--link-afh)] bg-[var(--link-afh)];
-		}
 	}
+
 }

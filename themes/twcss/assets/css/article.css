@@ -1,128 +1,129 @@
-.header-anchor {
-	&:hover, &:active, &:focus {
-		text-decoration-thickness: var(--textDcThickHA);
-		text-underline-offset: var(--textUnOffst);
-		text-decoration-skip-ink: auto;
-		@apply text-[var(--link)] underline;
-		&::after {
-			content: "#";
-			@apply text-base pl-[0.5em];
+@layer components {
+	.header-anchor {
+		&:hover, &:active, &:focus {
+			/* text-decoration-skip-ink: auto; */
+			@apply text-[var(--link)] underline decoration-1 underline-offset-[0.25em];
+			&::after {
+				content: "#";
+				@apply text-base pl-[0.5em];
+			}
+		}
+		@apply no-underline text-[var(--head)];
+	}
+
+	img.containedImage {
+		@apply block w-full h-auto p-0 my-0 mx-auto;
+	}
+
+	img.ctrImg {
+		@apply block m-auto;
+	}
+
+	.shadow {
+		filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
+		@apply border-0;
+	}
+
+	html[data-theme="dark"] .shadow, html.dark .shadow {
+		@apply filter-none border border-gray-750;
+	}
+
+	.img-phn {
+		@apply w-[90%] md:w-3/4 2xl:w-[62.5%] 3xl:w-1/2;
+	}
+
+	.imgcCaption, .imghCaption, .imgCaption {
+		@apply mbs-[0.5em] pt-[0.375em] px-0 pb-[1em] leading-[1.375] text-xs text-center;
+	}
+
+	.punctuationExample {
+		@apply text-[1.5em] font-normal font-serif text-center;
+	}
+
+	.indentAfterLI {
+		/* margin-left: 2em; */
+		/* 2em with Public Sans, 2.25em with Inter */
+		@apply ml-[2em];
+		&.box {
+			--bIALImarginLeft: 3em;
+			width: calc(100% - var(--bIALImarginLeft));
+			@apply ml-[var(--bIALImarginLeft)];
 		}
 	}
-	@apply no-underline text-[var(--head)];
-}
 
-img.containedImage {
-	@apply block w-full h-auto p-0 my-0 mx-auto;
-}
-
-img.ctrImg {
-	@apply block m-auto;
-}
-
-.shadow {
-	filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
-	@apply border-0;
-}
-
-html[data-theme="dark"] .shadow, html.dark .shadow {
-	@apply filter-none border border-gray-750;
-}
-
-.img-phn {
-	@apply w-[90%] md:w-3/4 2xl:w-[62.5%] 3xl:w-1/2;
-}
-
-.imgcCaption, .imghCaption, .imgCaption {
-	margin-block-start: 0.5em;
-	@apply pt-[0.375em] px-0 pb-[1em] leading-[1.375] text-xs text-center;
-}
-
-.punctuationExample {
-	@apply text-[1.5em] font-normal font-serif text-center;
-}
-
-.indentAfterLI {
-	margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
-	@apply ml-12;
-	&.box {
-		--bIALImarginLeft: 3em;
-		width: calc(100% - var(--bIALImarginLeft));
-		@apply ml-[var(--bIALImarginLeft)];
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
-}
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
+	.animate-fade {
+		animation: fadeIn 750ms ease-in-out;
 	}
-	to {
-		opacity: 1;
-	}
-}
 
-.animate-fade {
-	animation: fadeIn 750ms ease-in-out;
-}
+	blockquote {
+		@apply border-l-4 border-l-[var(--border-bquote)] text-[var(--bquote)] mx-0 pl-[1.5em];
+		p:last-child {
+			@apply mb-0;
+		}
+	}
 
-blockquote {
-	@apply border-l-4 border-l-[var(--border-bquote)] text-[var(--bquote)] mx-0 pl-[1.5em];
-	p:last-child {
-		@apply mb-0;
+	article {
+		@apply pt-4; /* definitely em, not rem */
+		p, li {
+			/* font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem); */
+			@apply text-lg my-5;
+		}
+		li li, li p {
+			font-size: inherit;
+			@apply mt-[0.25em]; /* definitely em, not rem */
+		}
+		h1, h2, h3, h4 {
+			@apply mt-[1.5em] mb-6 -tracking-[0.02em] leading-normal;
+		}
+		picture img {
+			@apply h-auto;
+		}
 	}
-}
 
-article {
-	@apply pt-4; /* definitely em, not rem */
-	p, li {
-		/* font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem); */
-		@apply text-lg my-5;
+	.box {
+		/* font-size: clamp(0.625rem, 1vw + 0.5rem, 0.875rem); */
+		/* font-weight: var.$font-weight-sm; */
+		/* line-height: clamp(1.4em, 1vw + 0.625em, 1.5em); */
+		box-sizing: border-box;
+		/* background-color: var(--bkgd-box); */
+		@apply text-sm block bg-[var(--bkgd-box)] border border-[var(--border)] my-[0.5em] mx-auto w-full py-[1em] px-[1.25em];
+		p {
+			@apply p-0 m-0;
+		}
+		+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
+			@apply mt-[1.75em];
+		}
+		.red {
+			@apply text-[var(--box-red)];
+		}
 	}
-	li li, li p {
-		font-size: inherit;
-		@apply mt-[0.25em]; /* definitely em, not rem */
-	}
-	h1, h2, h3, h4 {
-		@apply mt-[1.5em] mb-6 -tracking-[0.02em] leading-normal;
-	}
-	picture img {
-		@apply h-auto;
-	}
-}
 
-.box {
-	/* font-size: clamp(0.625rem, 1vw + 0.5rem, 0.875rem); */
-	/* font-weight: var.$font-weight-sm; */
-	/* line-height: clamp(1.4em, 1vw + 0.625em, 1.5em); */
-	box-sizing: border-box;
-	/* background-color: var(--bkgd-box); */
-	@apply text-sm block bg-[var(--bkgd-box)] border border-[var(--border)] my-[0.5em] mx-auto w-full py-[1em] px-[1.25em];
-	p {
-		@apply p-0 m-0;
+	/*
+	following from...
+	https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
+	*/
+	article strong:not(.red *):not(a *):not(blockquote *):not(details *), article b:not(.red *):not(a *):not(blockquote *):not(details *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
+		@apply text-[var(--boost)];
 	}
-	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
-		@apply mt-[1.75em];
+	article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
+		@apply text-[var(--bquote-boost)];
 	}
-	.red {
-		@apply text-[var(--box-red)];
-	}
-}
 
-/*
-following from...
-https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
-*/
-article strong:not(.red *):not(a *):not(blockquote *):not(details *), article b:not(.red *):not(a *):not(blockquote *):not(details *), article em:not(.red *):not(a *):not(blockquote *):not(th *), article i:not(.red *):not(a *):not(blockquote *):not(th *), article em strong:not(.red *):not(a *):not(blockquote *), article strong em:not(.red *):not(a *):not(blockquote *), article i b:not(.red *):not(a *):not(blockquote *), article b i:not(.red *):not(a *):not(blockquote *) {
-	@apply text-[var(--boost)];
-}
-article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
-	@apply text-[var(--bquote-boost)];
-}
-
-.gitinfo {
-	line-height: inherit;
-	@apply my-[2em] mx-0;
-	code {
-		@apply bg-transparent;
+	.gitinfo {
+		line-height: inherit;
+		@apply my-[2em] mx-0;
+		code {
+			@apply bg-transparent;
+		}
 	}
+
 }
