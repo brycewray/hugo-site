@@ -3,7 +3,12 @@
 }
 
 @layer components {
+	header {
+		@apply bg-[var(--bkgd-nav)] fixed w-full mt-0 z-[9999] py-2 lg:py-0;
+	}
+
 	.nav-Toggle {
+		@apply lg:hidden absolute cursor-pointer my-0 mx-4 right-10;
 		svg {
 			@apply pt-[0.425em] w-6 fill-white;
 		}
@@ -67,7 +72,7 @@
 	}
 
 	.nav-ModeToggle {
-		@apply absolute cursor-pointer top-[0.15em] right-4 bg-transparent border-0;
+		@apply absolute cursor-pointer top-[0.15em] right-2 bg-transparent border-0;
 		@media (min-width: 1024px) {
 			@apply right-[1.5em];
 		}
