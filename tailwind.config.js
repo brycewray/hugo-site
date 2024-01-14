@@ -127,7 +127,7 @@ module.exports = {
     // ],
   },
   plugins: [
-    // require('tailwindcss-logical'),
+    require('tailwindcss-logical'),
 		// require('tailwind-fluid-typography')
 		// require('tailwindcss-fluid-type')({
 		// 	settings: {
