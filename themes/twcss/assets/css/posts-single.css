@@ -1,21 +1,7 @@
 @layer components {
 	.bg-dark {
-		@apply fixed bottom-0 w-full mt-[2.5em] bg-[var(--bkgd-nav)] py-2 px-0 flex flex-row justify-stretch items-center;
 		.prevDiv, .nextDiv {
 			line-height: clamp(1em, 1vw + 0.75em, 1.25em);
-		}
-		.prevnextText {
-			font-size: clamp(0.625rem, 0.75vw + 0.625em, 1.25em);
-			@apply my-0 mx-auto tracking-tight;
-			a {
-				@apply text-[var(--link-nav)] no-underline;
-				&:hover, &:focus {
-					text-decoration-thickness: var(--textDcThickMd);
-					text-underline-offset: var(--textUnOffst);
-					text-decoration-skip-ink: auto;
-					@apply text-[var(--link-nav-afh)] underline;
-				}
-			}
 		}
 		.prevArrow {
 			@apply pl-[var(--arrowPadding)];
