@@ -15,3 +15,10 @@
 		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	{{- end }}
+
+	{{- /* for those who've requested CSS for printing */ -}}
+	{{- $printCSS := resources.Get "css/print.css" -}}
+	{{- $printCSS = $printCSS | resources.PostCSS | minify | fingerprint -}}
+	{{- with $printCSS -}}
+		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
+	{{- end }}

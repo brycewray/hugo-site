@@ -1,6 +1,5 @@
 @import '/themes/twcss/assets/css/reset-001.css';
 @import 'tailwindcss/base';
-@import '/themes/twcss/assets/css/print.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
