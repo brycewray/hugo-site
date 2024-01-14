@@ -4,7 +4,7 @@
 
 @layer components {
 	header {
-		@apply bg-[var(--bkgd-nav)] fixed w-full mt-0 z-[9999];
+		@apply bg-[var(--bkgd-nav)] fixed w-full mt-0 z-[9999] py-2 lg:py-0;
 	}
 
 	.nav-Toggle {
