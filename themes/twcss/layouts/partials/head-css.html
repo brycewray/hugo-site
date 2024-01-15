@@ -1,3 +1,4 @@
+{{- /*
 	{{- $fonts := resources.Get "css/fonts.css" -}}
 	{{- $fonts = $fonts | resources.PostCSS -}}
 	{{- with $fonts }}
@@ -7,6 +8,7 @@
 			{{ .Content | safeCSS }}
 		</style>
 	{{- end }}
+*/ -}}
 
 	{{- $css := resources.Get "css/index.css" -}}
 	{{/*  {{- $css = $css | resources.PostCSS -}}  */}}

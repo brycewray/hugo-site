@@ -13,16 +13,16 @@
 			<svg class="menu pt-[0.425em] w-6 fill-white" viewBox="0 0 672 768" title="bars"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg>{{/* native viewBox = '0 0 448 512' */}}
 			<svg class="close hidden pt-[0.425em] w-6 fill-white" viewBox="0 0 576 768" title="times"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" /></svg>{{/* native viewBox = '0 0 384 512' */}}
 		</label>
-		<ul class="nav-Menu mbs-0 mbe-0 ps-0 flex flex-col gap-4 text-right my-2 mr-2 ml-0 lg:flex-row lg:p-0 lg:gap-2 lg:mt-2 lg:mr-[var(--navRightMargin)] lg:mb-0 lg:ml-0">
-			<li class="list-none font-bold p-0 mr-auto ml-6 block lg:tracking-normal lg:leading-[0] lg:mt-0"><a href="/" title="Home page" aria-label="Home page">{{ partialCached "svgNavIcon.html" . }}</a></li>
-			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-2 lg:mx-0 lg:pr-3"><a href="/about/" title="About me" aria-label="About me">About</a></li>
+		<ul class="nav-Menu mbs-0 mbe-0 ps-0 flex flex-col gap-4 text-right my-2 mr-2 ml-0 lg:flex-row lg:p-0 lg:gap-2 lg:mt-2 lg:mr-[var(--navRightMargin)] lg:mb-0 lg:ml-0 lg:items-center">
+			<li class="list-none font-bold px-0 py-0 lg:mb-2 mr-auto ml-6 block"><a href="/" title="Home page" aria-label="Home page">{{ partialCached "svgNavIcon.html" . }}</a></li>
+			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-0 lg:mx-0 lg:pr-2"><a href="/about/" title="About me" aria-label="About me">About</a></li>
 			{{- range first 1 (where site.RegularPages "Section" "posts") -}}
-				<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-2 lg:mx-0 lg:pr-3"><a href="{{ .RelPermalink }}" title="The most recently added post on the site" aria-label="Newest post">Newest post</a></li>
+				<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-0 lg:mx-0 lg:pr-2"><a href="{{ .RelPermalink }}" title="The most recently added post on the site" aria-label="Newest post">Newest post</a></li>
 			{{- end -}}
-			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-2 lg:mx-0 lg:pr-3"><a href="/posts/" title="Posts" aria-label="All posts">All posts</a></li>
-			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-2 lg:mx-0 lg:pr-3"><a href="/search/" title="Site search" aria-label="Site search">Search</a></li>
-			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-2 lg:mx-0 lg:pr-3"><a href="/privacy/" title="Privacy policy" aria-label="Privacy policy">Privacy</a></li>
-			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-2 lg:mx-0 lg:pr-3"><a href="/contact/" title="Contact info and feed links" aria-label="Contact/RSS">Contact/RSS</a></li>
+			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-0 lg:mx-0 lg:pr-2"><a href="/posts/" title="Posts" aria-label="All posts">All posts</a></li>
+			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-0 lg:mx-0 lg:pr-2"><a href="/search/" title="Site search" aria-label="Site search">Search</a></li>
+			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-0 lg:mx-0 lg:pr-2"><a href="/privacy/" title="Privacy policy" aria-label="Privacy policy">Privacy</a></li>
+			<li class="list-none hidden font-bold pr-[3.5em] lg:text-sm lg:block lg:uppercase lg:my-0 lg:mx-0 lg:pr-2"><a href="/contact/" title="Contact info and feed links" aria-label="Contact/RSS">Contact/RSS</a></li>
 		</ul>
 		<button type="button" class="nScrHidden nav-ModeToggle absolute cursor-pointer top-[0.15em] right-4 lg:right-6 bg-transparent border-0" data-theme-toggle></button>
 	</nav>

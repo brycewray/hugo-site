@@ -4,6 +4,10 @@
 
 @layer components {
 	.nav-Menu {
+		/* @apply lg:items-center; */
+		/* li:not(:first-child) {
+			@apply lg:mt-[0.375em];
+		} */
 		a {
 			@apply no-underline border-0 text-[var(--link-nav)];
 			&:focus, &:active, &:hover {
