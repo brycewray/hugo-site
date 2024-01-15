@@ -19,19 +19,23 @@
 		line-height: clamp(1em, 1vw + 0.75em, 1.25em);
 	}
 	.prevnextText {
-		margin: 0 auto;
-		font-size: clamp(0.625rem, 0.75vw + 0.625em, 1.25em);
-		letter-spacing: -0.025em;
-		a {
-			font-weight: var.$font-normal;
-			color: var(--link-nav);
-			text-decoration: none;
-			&:hover, &:focus {
-				color: var(--link-nav-afh);
-				text-decoration: underline; /* normal */
-				text-decoration-thickness: var.$textDcThickMd;
-				text-underline-offset: var.$textUnOffst;
-				text-decoration-skip-ink: auto;
+		display: none;
+		@media screen and (min-width: 1024px) {
+			display: block;
+			margin: 0 auto;
+			font-size: clamp(0.625rem, 0.75vw + 0.625em, 1.25em);
+			letter-spacing: -0.025em;
+			a {
+				font-weight: var.$font-normal;
+				color: var(--link-nav);
+				text-decoration: none;
+				&:hover, &:focus {
+					color: var(--link-nav-afh);
+					text-decoration: underline; /* normal */
+					text-decoration-thickness: var.$textDcThickMd;
+					text-underline-offset: var.$textUnOffst;
+					text-decoration-skip-ink: auto;
+				}
 			}
 		}
 	}
