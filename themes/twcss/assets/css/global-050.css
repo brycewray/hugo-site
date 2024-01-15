@@ -103,7 +103,7 @@
 		@apply w-full my-0 mx-auto p-0 font-sans font-normal bg-[var(--bkgd)] text-[var(--default)];
 	}
 
-	h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+	/* h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 	header, footer, table, blockquote, summary, contact-button, search-button,
 	.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
 	.sitemap-Div, .searchDiv, .searchDivPF,
@@ -112,28 +112,28 @@
 	.bg-dark, a.contactButton,
 	.legal, .pokey {
 		@apply font-sans;
-	}
+	} */
 
 	b, strong {
 		@apply font-semibold;
 	}
 
-	p, li {
+	/* p, li {
 		line-height: 1.4;
-	}
+	} */
 
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 		@apply font-semibold text-[var(--head)] tracking-tight;
 	}
 
-	h1, h2, h3, h4 {
+	/* h1, h2, h3, h4 {
 		outline: 2px transparent;
 		outline-offset: 2px;
 		&:active, &:focus, &:hover {
 			outline: 2px transparent;
 			outline-offset: 2px;
 		}
-	}
+	} */
 
 	h1, h2, h3, h4 {
 		@apply mbs-1 mbe-1 block;
@@ -170,11 +170,10 @@
 	}
 
 	a {
-		color: var(--link);
+		@apply text-[var(--link)] underline;
 		&:focus, &:hover, &:active {
 			@apply text-[var(--link-afh)];
 		}
-		@apply text-[var(--link)] underline;
 	}
 
 	a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {

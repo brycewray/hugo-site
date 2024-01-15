@@ -23,7 +23,7 @@
 			{{/* $upper_limit = $paginator.TotalPages - $adjacent_links */}}
 			{{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
 
-			<div class="posts-pagerThing">
+			<div class="posts-pagerThing flex flex-row gap-[1em] justify-center">
 				{{- /*
 					First page --- test for both page 1 and page 2
 					to avoid redundant links:
@@ -40,7 +40,7 @@
 						{{ partialCached "svgFirstPageIcon.html" . }}{{ partialCached "svgFirstPageIcon.html" . }}
 					{{ end }}
 				</div>
-				<div class="pagerSpacer"></div>
+				<div class="w-3 md:w-5 lg:w-6"></div>
 				{{- /* Previous page. */ -}}
 				<div>
 					{{ if $paginator.HasPrev }}
@@ -51,8 +51,8 @@
 						{{ partialCached "svgFirstPageIcon.html" . }}
 					{{ end }}
 				</div>
-				<div class="pagerSpacer"></div>
-				<div class="pagerSpacer"></div>
+				<div class="w-3 md:w-5 lg:w-6"></div>
+				<div class="w-3 md:w-5 lg:w-6"></div>
 				{{- /* Next page. */ -}}
 				<div>
 					{{ if $paginator.HasNext }}
@@ -63,7 +63,7 @@
 						{{ partialCached "svgLastPageIcon.html" . }}
 					{{ end }}
 				</div>
-				<div class="pagerSpacer"></div>
+				<div class="w-3 md:w-5 lg:w-6"></div>
 				{{- /*
 					Last page --- test for both last page and next-to-last page
 					to avoid redundant links:

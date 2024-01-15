@@ -1,0 +1,35 @@
+@layer components {
+	/* .posts-pagerGray {
+		@apply text-gray-300;
+	} */
+	/* .posts-pagerThing {
+		@apply flex flex-row gap-[1em] justify-center;
+		.pagerSpacer {
+			@apply w-[0.625em] md:w-[1.25em] lg:w-[1.5em];
+		}
+	} */
+
+	/* .pagination {
+		@apply mbs-0 mis-0 mie-0 list-none ps-0;
+		li {
+			display: inline;
+		}
+	} */
+
+	/* .arrowStop {
+		@apply text-gray-300;
+	} */
+
+	/* path.FirstLast {
+		@apply fill-gray-400;
+	}
+
+	path.NextPrev {
+		@apply fill-[var(--link)];
+	}
+
+	a:hover path.NextPrev {
+		@apply fill-[var(--link-afh)];
+	} */
+
+}

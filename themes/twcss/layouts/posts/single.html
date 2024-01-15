@@ -11,31 +11,31 @@
 		</article>
 	</div>
 	{{ if or .PrevPage .NextPage }}
-		<div class="bg-dark" data-pagefind-ignore>
+		<div class="bg-dark fixed bottom-0 w-full mt-[2.5em] bg-[var(--bkgd-nav)] py-2 px-0 flex flex-row justify-stretch items-center" data-pagefind-ignore>
 			<div class="prevArrow">
 				{{ with .PrevInSection -}}
-				<a href="{{.RelPermalink}}"><strong>PREV</strong></a><br />
-					<a href="{{.RelPermalink}}">{{ partialCached "svgPrevPageIcon.html" . }}</a>
+				<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline"><strong>PREV</strong></a><br />
+					<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline">{{ partialCached "svgPrevPageIcon.html" . }}</a>
 				{{- end }}
 			</div>
 			<div class="prevDiv">
 				{{ with .PrevInSection -}}
-					<span class="prevnextText">
-						<a href="{{.RelPermalink}}">{{.Title}}</a>
+					<span class="text-sm md:text-lg my-0 mx-auto tracking-tight">
+						<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline">{{.Title}}</a>
 					</span>
 				{{- end }}
 			</div>
 			<div class="nextDiv">
 				{{ with .NextInSection -}}
-					<span class="prevnextText">
-						<a href="{{.RelPermalink}}">{{.Title}}</a>
+					<span class="text-sm md:text-lg my-0 mx-auto tracking-tight">
+						<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline">{{.Title}}</a>
 					</span>
 				{{- end }}
 			</div>
 			<div class="nextArrow">
 				{{ with .NextInSection -}}
-				<a href="{{.RelPermalink}}"><strong>NEXT</strong></a><br />
-					<a href="{{.RelPermalink}}">{{ partialCached "svgNextPageIcon.html" . }}</a>
+				<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline"><strong>NEXT</strong></a><br />
+					<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline">{{ partialCached "svgNextPageIcon.html" . }}</a>
 				{{- end }}
 			</div>
 		</div>
