@@ -1,5 +1,5 @@
 ---
-title: "Testing, testing: ending a fool’s errand"
+title: "Testing, testing: ending a fool’s errand"
 description: "Admitting this is one of those situations wherein You Can’t Get There From Here."
 author: Bryce Wray
 date: 2023-12-27T09:09:00-06:00
