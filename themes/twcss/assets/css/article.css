@@ -75,7 +75,7 @@
 		@apply pt-4; /* definitely em, not rem */
 		p, li {
 			/* font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem); */
-			@apply text-lg my-5;
+			@apply text-art my-5;
 		}
 		li li, li p {
 			font-size: inherit;

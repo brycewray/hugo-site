@@ -38,6 +38,7 @@ module.exports = {
 		extend: {
 			fontSize: {
 				'fn': ['clamp(0.65rem, 0.5375rem + 0.2813vw, 0.875rem)', '1rem'],
+				'art': ['clamp(1rem, 0.925rem + 0.375vw, 1.125rem)', '1.45'],
 			},
 			fontFamily: {
 				'sans': ['Libre Franklin', ...defaultTheme.fontFamily.sans],
