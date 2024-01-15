@@ -20,14 +20,14 @@
 			</div>
 			<div class="prevDiv">
 				{{ with .PrevInSection -}}
-					<span class="text-sm md:text-lg my-0 mx-auto tracking-tight">
+					<span class="hidden lg:block text-lg my-0 mx-auto tracking-tight">
 						<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline">{{.Title}}</a>
 					</span>
 				{{- end }}
 			</div>
 			<div class="nextDiv">
 				{{ with .NextInSection -}}
-					<span class="text-sm md:text-lg my-0 mx-auto tracking-tight">
+					<span class="hidden lg:block text-lg my-0 mx-auto tracking-tight">
 						<a href="{{.RelPermalink}}" class="text-[var(--link-nav)] no-underline hover:decoration-1 focus:decoration-1 hover:underline-offset-[var(--textUnOffst)]focus:underline-offset-[var(--textUnOffst)] hover:text-[var(--link-nav-afh)] focus:text-[var(--link-nav-afh)] focus:underline hover:underline">{{.Title}}</a>
 					</span>
 				{{- end }}
