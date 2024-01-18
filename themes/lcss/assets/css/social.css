@@ -12,11 +12,11 @@
 
 .twitter-tweet {
 	font-size: var(--text-sm);
-	& a {
+	a {
 		margin-left: 0.5em;
 	}
 	@media screen and (min-width: 1024px) {
-		& p {
+		p {
 			font-size: var(--text-xl);
 		}
 	}
@@ -26,7 +26,7 @@
 	line-height: 1.35em; /* for non-`p` results from `text` var */
 	font-family: var(--social-sans-serif);
 	font-size: var(--text-base);
-	& p {
+	p {
 		margin-top: 0; /* reset */
 		color: var(--default);
 		margin-bottom: 1em;
@@ -52,7 +52,7 @@
 	@media screen and (min-width: 1920px) {
 		max-width: 80ch;
 	}
-	& a, & a:hover {
+	a, a:hover {
 		border: none !important;
 		text-decoration: none;
 		overflow-wrap: break-word;
@@ -76,7 +76,7 @@
 Eleventy version
 */
 .toot-images {
-	& img {
+	img {
 		border-radius: 12px;
 	}
 }
@@ -110,7 +110,7 @@ a > .card, a > .toot-card {
 	border-radius: 12px;
 	border: 1px solid;
 	border-color: var(--gray-700);
-	& p {
+	p {
 		padding: 0.5em 1em 1em;
 		line-height: 1.4;
 		margin-top: 0;
@@ -127,7 +127,7 @@ a > .card, a > .toot-card {
 		margin-right: 0.5em;
 		margin-bottom: 1em;
 		flex-shrink: 0;
-		& img {
+		img {
 			border-radius: 9999px;
 			width: 48px;
 			height: auto;
@@ -165,7 +165,7 @@ a > .card, a > .toot-card {
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
-	& a {
+	a {
 		color: var(--gray-800);
 		&:hover {
 			color: var(--link);
@@ -265,7 +265,7 @@ a > .card, a > .toot-card {
 
 .toot-poll-meter {
 	grid-column: 2;
-	& meter {
+	meter {
 		width: 100%;
 	}
 }
@@ -286,7 +286,7 @@ a > .card, a > .toot-card {
 	padding: 1em 1em 0.5em 1em;
 	margin-top: 0.75em;
 	margin-bottom: 0;
-	& p {
+	p {
 		font-size: var(--text-sm);
 		margin: 0 0 0.5em;
 		line-height: 1.4;
@@ -297,9 +297,9 @@ a > .card, a > .toot-card {
 			display: inline;
 		}
 	}
-	& p.toot-quoted-toot-head {
+	p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
-		& a {
+		a {
 			color: var(--gray-800);
 			&:hover {
 				color: var(--link);
@@ -366,50 +366,50 @@ a > .card, a > .toot-card {
 }
 
 html[data-theme="dark"] {
-	& .toot-blockquote {
+	.toot-blockquote {
 		background: var(--gray-900);
 		/* background: transparent; */
 		border-color: var(--gray-200);
 		color: var(--white);
-		& a, & a:hover {
+		a, a:hover {
 			color: var(--link);
 		}
 	}
-	& .toot-blockquote-img {
+	.toot-blockquote-img {
 		border-bottom-color: var(--gray-300);
 	}
-	& a > .card, & a > .toot-card {
+	a > .card, a > .toot-card {
 		color: var(--gray-300);
 	}
-	& .card {
+	.card {
 		border-color: var(--gray-300);
-		& p .card-title {
+		p .card-title {
 			color: var(--white);
 		}
 	}
-	& .toot-header {
-		& .toot-author-name {
+	.toot-header {
+		.toot-author-name {
 			color: var(--white);
 		}
-		& .toot-author-handle {
+		.toot-author-handle {
 			color: var(--gray-300);
 		}
 	}
-	& .toot-footer {
+	.toot-footer {
 		color: var(--gray-200);
-		& a {
+		a {
 			color: var(--gray-200);
 		}
 	}
-	& .toot-quoted-tweet {
+	.toot-quoted-tweet {
 		border-color: var(--gray-200);
-		& p.toot-quoted-toot-head {
-			& a {
+		p.toot-quoted-toot-head {
+			a {
 				color: var(--gray-200);
 			}
 		}
 	}
-	& .toot-reply-to {
+	.toot-reply-to {
 		color: var(--gray-200);
 	}
 }

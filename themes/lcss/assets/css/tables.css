@@ -23,7 +23,7 @@ table.noborders {
 	border: 0;
 	border-collapse: collapse;
 
-	& td {
+	td {
 		font-weight: var(--font-normal);
 		text-align: left;
 		vertical-align: middle;
@@ -34,7 +34,7 @@ table.noborders {
 		&.td70 {
 			width: 70%;
 		}
-		& img {
+		img {
 			margin: 0;
 			display: block;
 			max-width: 60%;
@@ -44,13 +44,13 @@ table.noborders {
 			height: auto;
 		}
 	}
-	& tr:nth-child(odd) {
+	tr:nth-child(odd) {
 		background-color: var(--slate-050);
 	}
-	& tr:nth-child(even) {
+	tr:nth-child(even) {
 		background-color: var(--slate-150);
 	}
-	& thead td {
+	thead td {
 		background-color: var(--blue-900);
 		color: var(--white);
 		font-weight: bold;
@@ -81,7 +81,7 @@ table.ulysses {
 		font-size: inherit;
 		table-layout: fixed; /* so don't have to spec each `td`'s width */
 	}
-	& thead th {
+	thead th {
 		background-color: var(--blue-800);
 		border: 1px solid;
 		border-color: var(--black) var(--gray-350) var(--black) var(--black);
@@ -90,44 +90,44 @@ table.ulysses {
 			border-right-color: var(--black);
 		}
 	}
-	& td {
+	td {
 		text-align: center;
 		border: 1px solid;
 		border-color: var(--black);
 		padding: 0;
 	}
-	& thead th, & td {
+	thead th, td {
 		padding: 0.125em 0.375em;
 	}
-	& thead th:nth-child(1), & td:nth-child(1) {
+	thead th:nth-child(1), td:nth-child(1) {
 		text-align: left;
 	}
-	& tr:nth-child(odd) {
+	tr:nth-child(odd) {
 		background-color: var(--white);
 	}
-	& tr:nth-child(even) {
+	tr:nth-child(even) {
 		background-color: var(--emerald-050);
 	}
 }
 
 html[data-theme="dark"] {
-	& table.noborders {
-		& tr {
+	table.noborders {
+		tr {
 			color: var(--black);
 		}
 	}
-	& table.ulysses {
-		& thead th {
+	table.ulysses {
+		thead th {
 			border-color: var(--white);
 		}
-		& td {
+		td {
 			border-color: var(--white);
 			color: var(--white);
 		}
-		& tr:nth-child(odd) {
+		tr:nth-child(odd) {
 			background-color: var(--slate-700);
 		}
-		& tr:nth-child(even) {
+		tr:nth-child(even) {
 			background-color: var(--emerald-900);
 		}
 	}

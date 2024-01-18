@@ -13,23 +13,27 @@
 	flex-direction: row;
 	justify-content: stretch;
 	align-items: center;
-	& .prevDiv, & .nextDiv {
+	.prevDiv, .nextDiv {
 		line-height: clamp(1em, 1vw + 0.75em, 1.25em);
 	}
-	& .prevnextText {
-		margin: 0 auto;
-		font-size: clamp(0.625rem, 0.75vw + 0.625em, 1.25em);
-		letter-spacing: -0.025em;
-		& a {
-			font-weight: var(--font-normal);
-			color: var(--link-nav);
-			text-decoration: none;
-			&:hover, &:focus {
-				color: var(--link-nav-afh);
-				text-decoration: underline; /* normal */
-				text-decoration-thickness: var(--textDcThickMd);
-				text-underline-offset: var(--textUnOffst);
-				text-decoration-skip-ink: auto;
+	.prevnextText {
+		display: none;
+		@media screen and (min-width: 1024px) {
+			display: block;
+			margin: 0 auto;
+			font-size: clamp(0.625rem, 0.75vw + 0.625em, 1.25em);
+			letter-spacing: -0.025em;
+			a {
+				font-weight: var(--font-normal);
+				color: var(--link-nav);
+				text-decoration: none;
+				&:hover, &:focus {
+					color: var(--link-nav-afh);
+					text-decoration: underline; /* normal */
+					text-decoration-thickness: var(--textDcThickMd);
+					text-underline-offset: var(--textUnOffst);
+					text-decoration-skip-ink: auto;
+				}
 			}
 		}
 	}
@@ -44,7 +48,7 @@
 	.prevArrow, .nextArrow {
 		font-size: clamp(0.375em, 0.75vw + 0.5em, 0.825em);
 		line-height: 1.375em;
-		& a {
+		a {
 			font-weight: var(--font-normal);
 			color: var(--link-nav);
 			text-decoration: none;
@@ -95,7 +99,7 @@
 
 details.comments {
 	margin-top: 1em;
-	& > summary {
+	> summary {
 		list-style: none;
 		margin: 0 auto;
 	}
@@ -135,14 +139,14 @@ a.contactButton, details.comments > summary {
 	&:hover {
 		cursor: pointer;
 	}
-	& .svg {
+	.svg {
 		padding-left: var(--interactionPadding);
-		& svg {
+		svg {
 			width: var(--btn-svg-width);
 			height: auto;
 		}
 	}
-	& .legend {
+	.legend {
 		padding-right: var(--interactionPadding);
 		text-align: right;
 		/* text-transform: uppercase; */
@@ -152,10 +156,10 @@ a.contactButton, details.comments > summary {
 }
 
 a.contactButton {
-	& .svg {
+	.svg {
 		padding-bottom: 0.25em;
 	}
-	& .svg, & .legend {
+	.svg, .legend {
 		display: inline-block;
 	}
 }

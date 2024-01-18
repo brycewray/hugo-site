@@ -103,30 +103,30 @@ blockquote {
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
-	& p:last-child {
+	p:last-child {
 		margin-bottom: 0;
 	}
 }
 
 article {
 	padding-top: 1em; /* definitely em, not rem */
-	& p, & li {
+	p, li {
 		font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
 		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
 	}
-	& li li, & li p {
+	li li, li p {
 		font-size: inherit;
 		margin-top: 0.25em; /* definitely em, not rem */
 	}
-	& h1, & h2, & h3, & h4 {
+	h1, h2, h3, h4 {
 		margin-top: 1.5em;
 		margin-bottom: 1.5rem;
 		letter-spacing: -0.02em;
 		line-height: normal;
 	}
-	& picture img {
+	picture img {
 		height: auto;
 	}
 }
@@ -143,7 +143,7 @@ article {
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
-	& p {
+	p {
 		padding: 0;
 		margin: 0;
 	}
@@ -169,7 +169,7 @@ article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), a
 .gitinfo {
 	margin: 2em 0;
 	line-height: inherit;
-	& code {
+	code {
 		background-color: transparent;
 	}
 }

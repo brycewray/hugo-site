@@ -161,7 +161,7 @@
 
 .pagefind-ui__result-excerpt {
 	/* font-family: var(--serif); */
-	& mark {
+	mark {
 		color: var(--pf-result-excerpt);
 		background-color: var(--bkgd-pf-result-excerpt);
 	}
