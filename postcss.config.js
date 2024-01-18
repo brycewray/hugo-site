@@ -9,6 +9,7 @@ module.exports = {
 		postcssLightningcss({
 			browsers: ">= .25%",
 			lightningcssOptions: {
+				cssModules: false,
 				drafts: {
 					nesting: true,
 				}
