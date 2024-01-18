@@ -1,4 +1,4 @@
-	{{- $fonts := resources.Get "css/fonts.css" | minify -}}
+	{{- $fonts := resources.Get "css/fonts.css" | postCSS -}}
 	{{- with $fonts }}
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
