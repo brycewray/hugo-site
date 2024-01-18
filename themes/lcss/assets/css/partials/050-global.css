@@ -95,7 +95,7 @@ html, body {
 	color: var(--default);
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+/* h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
 .sitemap-Div, .searchDiv, .searchDivPF,
@@ -104,7 +104,7 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .bg-dark, a.contactButton,
 .legal, .pokey {
 	font-family: var(--sans-serif);
-}
+} */
 
 b, strong {
 	font-weight: var(--font-semibold);
