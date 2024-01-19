@@ -1,5 +1,5 @@
-const postcssLightningcss = require("postcss-lightningcss");
 const postcssImport = require('postcss-import');
+const postcssLightningcss = require("postcss-lightningcss");
 
 module.exports = {
 	plugins: [
