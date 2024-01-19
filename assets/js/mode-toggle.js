@@ -46,11 +46,11 @@ function updateButton({ buttonEl, isDark }) {
 function updateThemeOnHtmlEl({ theme }) {
   document.querySelector("html").setAttribute("data-theme", theme)
 	// following part is for Tailwind CSS
-	if (theme === "dark") {
-		document.querySelector("html").classList.add('dark');
-	} else {
-		document.querySelector("html").classList.remove('dark');
-	}
+	// if (theme === "dark") {
+	// 	document.querySelector("html").classList.add('dark');
+	// } else {
+	// 	document.querySelector("html").classList.remove('dark');
+	// }
 	// end, part for Tailwind CSS
 }
 
