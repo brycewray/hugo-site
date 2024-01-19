@@ -7,7 +7,7 @@ module.exports = {
 			path: "./themes/lcss/assets/css/",
 		}),
 		postcssLightningcss({
-			browsers: ">= .25%",
+			browsers: ">= 2%",
 			lightningcssOptions: {
 				cssModules: false,
 				drafts: {

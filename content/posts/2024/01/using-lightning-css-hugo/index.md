@@ -44,7 +44,7 @@ module.exports = {
 			path: "./themes/lcss/assets/css/",
 		}),
 		postcssLightningcss({
-			browsers: ">= .25%",
+			browsers: ">= 2%",
 			lightningcssOptions: {
 				cssModules: false,
 				drafts: {
@@ -55,6 +55,9 @@ module.exports = {
 	]
 }
 ```
+
+**Later update**: I changed the `browsers` line from the value in this post's initial publication --- `">= .25%"` --- after determining that the styling resulting from that value merely inflated the CSS without providing any real benefit to just about any likely visitor.
+{.box}
 
 That's pretty much it. The `lcss` theme just has CSS files --- chiefly a `critical.css` for the above-the-fold stuff and an `index.css` for everything else, with both `@import`-ing the appropriate CSS partials --- and a minimal quantity of Hugo partial templates that call the specific files as follows:
 
