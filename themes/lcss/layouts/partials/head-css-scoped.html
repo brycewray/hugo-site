@@ -4,11 +4,11 @@
 {{- /*
 	save some repetition below
 */ -}}
-{{- $titleSitemap := site.Params.Titles.Sitemap -}}
-{{- $titleHome := site.Params.Titles.Home -}}
-{{- $titlePostslist := site.Params.Titles.Postslist -}}
-{{- $titleFourOhFour := site.Params.Titles.FourOhFour -}}
-{{- $titleSearch := site.Params.Titles.Search -}}
+{{- $titleSitemap := .Site.Params.Titles.Sitemap -}}
+{{- $titleHome := .Site.Params.Titles.Home -}}
+{{- $titlePostslist := .Site.Params.Titles.Postslist -}}
+{{- $titleFourOhFour := .Site.Params.Titles.FourOhFour -}}
+{{- $titleSearch := .Site.Params.Titles.Search -}}
 
 {{- $conditionSocial := false -}}
 {{- $conditionCode := false -}}
@@ -32,7 +32,7 @@
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
 {{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
 {{- if (and (ne .Title $titleHome) (ne .Title $titleSitemap) (ne .Title $titlePostslist) (ne .Title $titleFourOhFour)) -}}{{- $conditionBillboard = true -}}{{- end -}}
-{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title site.Params.Titles.About) (eq .Title site.Params.Titles.Privacy) (eq .Title site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
+{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
 {{- if (and (eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
 {{- if (eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
 {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
@@ -61,17 +61,13 @@
 {{/*  {{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}  */}}
 {{- $cssTypes = append slice (slice $condition404 "fourohfour") $cssTypes -}}
 
-{{- /*
-	minify/fingerprint everything even in dev,
-	due to Safari caching weirdness
-*/ -}}
 {{- range $cssTypes -}}
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
 		{{- $css := resources.Get (print "css/" $fileName ".css") | postCSS -}}
 		{{- if hugo.IsProduction -}}
-			{{- $css = $css | minify | fingerprint -}}
+			{{- $css = $css | fingerprint -}}
 		{{- end -}}
 		{{- with $css -}}
 			<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -83,7 +79,7 @@
 {{- /* for those who've requested CSS for printing */ -}}
 {{- $printCSS := resources.Get "css/print.css" | postCSS -}}
 {{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | minify | fingerprint -}}
+	{{- $printCSS = $printCSS | fingerprint -}}
 {{- end -}}
 {{- with $printCSS -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
