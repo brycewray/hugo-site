@@ -1,4 +1,5 @@
-{{- $css := resources.Get "css/index.css" | postCSS -}}
+{{- $opts := dict "inlineImports" true -}}
+{{- $css := resources.Get "css/index.css" | postCSS $opts -}}
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | fingerprint -}}
 {{- end -}}
