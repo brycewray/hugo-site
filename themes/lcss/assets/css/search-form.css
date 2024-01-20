@@ -4,12 +4,18 @@
 
 /* === for search form */
 
-[data-theme="light"] {
+html, html[data-theme="light"] {
 	--input: var(--black);
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
 	--input: var(--white);
+}
+
+@media screen and (prefers-color-scheme:dark) {
+	html:not([data-theme]) {
+		--input: var(--white);
+	}
 }
 
 .searchDiv, .searchDivPF {

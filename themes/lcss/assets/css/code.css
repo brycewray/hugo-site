@@ -22,7 +22,7 @@
 	--rose-700: hsl(330, 73%, 42%);
 }
 
-[data-theme="light"] {
+html, html[data-theme="light"] {
 	--gray: var(--gray-700);
 	--orange: var(--orange-700);
 	--yellow: var(--yellow-800);
@@ -34,7 +34,7 @@
 	--rose: var(--rose-700);
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
 	--gray: var(--gray-300);
 	--orange: var(--orange-300);
 	--yellow: var(--yellow-300);
@@ -44,6 +44,20 @@
 	--blue: var(--blue-300);
 	--fuchsia: var(--fuchsia-300);
 	--rose: var(--rose-300);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		--gray: var(--gray-300);
+		--orange: var(--orange-300);
+		--yellow: var(--yellow-300);
+		--green: var(--green-100);
+		--emerald: var(--emerald-200);
+		--cyan: var(--cyan-300);
+		--blue: var(--blue-300);
+		--fuchsia: var(--fuchsia-300);
+		--rose: var(--rose-300);
+	}
 }
 
 /* ======= START, individual items from Chroma */

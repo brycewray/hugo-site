@@ -8,7 +8,7 @@
 	--filter-shadow: var(--gray-400);
 }
 
-[data-theme="light"] {
+html, html[data-theme="light"] {
 	color-scheme: light;
 	/* = = = COLORS = = = */
 	/* === defaults === */
@@ -41,7 +41,7 @@
 	--icon-inside: var(--white);
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
 	color-scheme: dark;
 	/* = = = COLORS = = = */
 	/* === defaults === */
@@ -72,6 +72,41 @@
 	--bkgd-marker-secondary: var(--slate-500);
 	--border: var(--neutral-600);
 	--icon-inside: var(--black);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		color-scheme: dark;
+		/* = = = COLORS = = = */
+		/* === defaults === */
+		/* primaries */
+		--default: var(--gray-300);
+		--boost: var(--gray-200);
+		--bquote: var(--gray-400);
+		--bquote-boost: var(--gray-350);
+		--link: var(--blue-300);
+		--link-afh: var(--slate-300);
+		--head: var(--default);
+		--red: var(--red-300);
+		--box-red: var(--red-400);
+		--btn-text-default: var(--black);
+		--pf-result-excerpt: var(--white);
+		--bquote-article-code: var(--slate-300);
+		/* backgrounds and borders */
+		--bkgd: var(--black);
+		--bkgd-nav: var(--blue-950);
+		--bkgd-nav-bottom: var(--blue-950);
+		--bkgd-nav-top: var(--blue-950);
+		--bkgd-box: var(--slate-900);
+		--bkgd-code: var(--slate-900);
+		--bkgd-article-code: var(--slate-750);
+		--bkgd-box-code: var(--slate-700);
+		--bkgd-pf-result-excerpt: var(--blue-900);
+		--bkgd-hr: var(--white);
+		--bkgd-marker-secondary: var(--slate-500);
+		--border: var(--neutral-600);
+		--icon-inside: var(--black);
+	}
 }
 
 html, body {
