@@ -1,11 +1,9 @@
 const postcssLightningcss = require("postcss-lightningcss");
 let minOpt
 
-if (process.env.HUGO_ENVIRONMENT === 'production') {
-	minOpt = true
-} else {
-	minOpt = false
-}
+process.env.HUGO_ENVIRONMENT === 'production'
+	? minOpt = true // <-- default for `minify`
+	: minOpt = false
 
 module.exports = {
 	plugins: [
