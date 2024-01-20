@@ -17,7 +17,10 @@ The only problem with this coolness for [Hugo](https://gohugo.io) users like me 
 
 You may be aware that Hugo has long featured [hooks to PostCSS](https://gohugo.io/hugo-pipes/postcss/) as part of the [Hugo Pipes asset pipeline](https://gohugo.io/hugo-pipes/introduction/). While no such connection exists as yet for the far newer Lightning CSS, that access to PostCSS provides a clever way around the issue. This may be particularly helpful for Hugo-using Tailwind fans once TWCSS makes its aforementioned jump to Lightning, but you can use it right now with good old basic CSS.
 
-You see, there's a PostCSS plugin that lets you use at least *some* of Lightning's capabilities: [postcss-lightningcss](https://github.com/onigoetz/postcss-lightningcss). I say "at least *some*" because, or [so it appears at this point](https://github.com/onigoetz/postcss-lightningcss/issues/116), Lightning's ability to [bundle files together through `@import` statements](https://lightningcss.dev/bundling.html) doesn't work within this plugin. And that's one of Lightning's really cool advantages, in my view. The good news is that using one *more* PostCSS plugin, the venerable [postcss-import](https://github.com/postcss/postcss-import), solves the problem.
+You see, there's a PostCSS plugin that lets you use Lightning's capabilities: [postcss-lightningcss](https://github.com/onigoetz/postcss-lightningcss).
+
+**<span class="red">Important update, 2024-01-19</span>**: I originally wrote above that this Lightning/PostCSS combo couldn't [bundle files together through `@import` statements](https://lightningcss.dev/bundling.html) unless I added yet another PostCSS plugin, postcss-import --- but I was wrong. The problem was that I hadn't noticed a key [Hugo Pipes option, `inlineImports`](https://gohugo.io/hugo-pipes/postcss/#options), which defaults to `false`. Once I fixed that, Lightning/PostCSS could do `@import`s entirely on its own, without postcss-import. **<span class="red">Therefore, I have edited this post accordingly, including correcting the code below.</span>**
+{.box}
 
 Here's how I have it set up within the site. First, there are the add-ons themselves, with the following lines constituting my entire `package.json` at this time:
 
@@ -26,7 +29,6 @@ Here's how I have it set up within the site. First, there are the add-ons themse
 	"devDependencies": {
 		"postcss": "^8.4.33",
 		"postcss-cli": "^11.0.0",
-		"postcss-import": "^16.0.0",
 		"postcss-lightningcss": "^1.0.0"
 	}
 }
@@ -36,13 +38,9 @@ Then, within `postcss.config.js` at the top of the Hugo project:
 
 ```js
 const postcssLightningcss = require("postcss-lightningcss");
-const postcssImport = require('postcss-import');
 
 module.exports = {
 	plugins: [
-    postcssImport({
-			path: "./themes/lcss/assets/css/",
-		}),
 		postcssLightningcss({
 			browsers: ">= 2%",
 			lightningcssOptions: {
@@ -62,20 +60,22 @@ module.exports = {
 That's pretty much it. The `lcss` theme just has CSS files --- chiefly a `critical.css` for the above-the-fold stuff and an `index.css` for everything else, with both `@import`-ing the appropriate CSS partials --- and a minimal quantity of Hugo partial templates that call the specific files as follows:
 
 ```go-html-template{filename="head-criticalcss.html" bigdiv=true}
-	{{- $fonts := resources.Get "css/fonts.css" | postCSS -}}
-	{{- with $fonts }}
-		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-		<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-		<style media="screen">{{ .Content | safeCSS }}</style>
-	{{- end }}
-	{{- $css := resources.Get "css/critical.css" | postCSS }}
-	{{- with $css }}
-		<style media="screen">{{ .Content | safeCSS }}</style>
-	{{- end }}
+{{- $opts := dict "inlineImports" true -}}
+{{- $fonts := resources.Get "css/fonts.css" | postCSS -}}
+{{- with $fonts }}
+	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}
+{{- $css := resources.Get "css/critical.css" | postCSS $opts }}
+{{- with $css }}
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}
 ```
 
 ```go-html-template{filename="head-css-unscoped.html" bigdiv=true}
-{{- $css := resources.Get "css/index.css" | postCSS -}}
+{{- $opts := dict "inlineImports" true -}}
+{{- $css := resources.Get "css/index.css" | postCSS $opts -}}
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | fingerprint -}}
 {{- end -}}
