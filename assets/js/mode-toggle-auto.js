@@ -12,56 +12,51 @@ const buttonDark = document.getElementById("darkMode")
 const htmlDoc = document.querySelector("html")
 const radioStatus = localStorage.getItem("radios")
 
-if (radioStatus == undefined || radioStatus == "auto") {
+goAuto = () => {
 	localStorage.removeItem("theme")
 	localStorage.setItem("radios", "auto")
 	htmlDoc.removeAttribute("data-theme")
 	buttonAuto.checked = true
 	buttonLight.checked = false
 	buttonDark.checked = false
-} else if (radioStatus == "light") {
+}
+
+goLight = () => {
 	localStorage.setItem("theme", "light")
 	localStorage.setItem("radios", "light")
 	htmlDoc.setAttribute("data-theme", "light")
 	buttonAuto.checked = false
 	buttonLight.checked = true
 	buttonDark.checked = false
-} else if (radioStatus == "dark") {
+}
+
+goDark = () => {
 	localStorage.setItem("theme", "dark")
 	localStorage.setItem("radios", "dark")
 	htmlDoc.setAttribute("data-theme", "dark")
 	buttonAuto.checked = false
 	buttonLight.checked = false
 	buttonDark.checked = true
-} else {
-	//
+}
+
+if (radioStatus === undefined || radioStatus === "auto") {
+	goAuto()
+} else if (radioStatus === "light") {
+	goLight()
+} else if (radioStatus === "dark") {
+	goDark()
 }
 
 buttonAuto.addEventListener("click", () => {
-	localStorage.removeItem("theme")
-	localStorage.setItem("radios", "auto")
-	htmlDoc.removeAttribute("data-theme")
-	buttonAuto.checked = true
-	buttonLight.checked = false
-	buttonDark.checked = false
+	goAuto()
 })
 
 buttonLight.addEventListener("click", () => {
-	localStorage.setItem("theme", "light")
-	localStorage.setItem("radios", "light")
-	htmlDoc.setAttribute("data-theme", "light")
-	buttonAuto.checked = false
-	buttonLight.checked = true
-	buttonDark.checked = false
+	goLight()
 })
 
 buttonDark.addEventListener("click", () => {
-	localStorage.setItem("theme", "dark")
-	localStorage.setItem("radios", "dark")
-	htmlDoc.setAttribute("data-theme", "dark")
-	buttonAuto.checked = false
-	buttonLight.checked = false
-	buttonDark.checked = true
+	goDark()
 })
 
 
