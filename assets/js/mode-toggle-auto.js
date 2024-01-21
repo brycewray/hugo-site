@@ -1,32 +1,29 @@
-// https://www.aleksandrhovhannisyan.com/blog/the-perfect-theme-switch/ (2023-11-21)
+/*
+https://whitep4nth3r.com/blog/best-light-dark-mode-theme-toggle-javascript/
+-	https://codepen.io/whitep4nth3r/pen/VwEqrQL
+https://tpiros.dev/blog/three-state-light-dark-theme-switch/
+https://www.aleksandrhovhannisyan.com/blog/the-perfect-theme-switch/
+https://webcodespace.com/how-to-create-a-three-state-toggle-switch-using-html-css-and-javascript/
+*/
 
-(function () {
-  const Theme = { AUTO: 'auto', LIGHT: 'light', DARK: 'dark' };
-  const THEME_STORAGE_KEY = 'theme';
-  const THEME_OWNER = document.documentElement;
+const buttonLight = document.getElementById("lightMode")
+const buttonAuto = document.getElementById("autoMode")
+const buttonDark = document.getElementById("darkMode")
+const htmlDoc = document.querySelector("html");
 
-  const cachedTheme = localStorage.getItem(THEME_STORAGE_KEY);
-  if (cachedTheme) {
-    THEME_OWNER.dataset[THEME_STORAGE_KEY] = cachedTheme;
-  }
+buttonAuto.addEventListener("click", () => {
+	localStorage.removeItem("theme")
+	htmlDoc.removeAttribute("data-theme")
+})
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const themePicker = document.getElementById('theme-picker');
-    if (!themePicker) return;
+buttonLight.addEventListener("click", () => {
+	localStorage.setItem("theme", "light")
+	htmlDoc.setAttribute("data-theme", "light")
+})
 
-    themePicker.addEventListener('change', (e) => {
-      const theme = e.target.value;
-      if (theme === Theme.AUTO) {
-        delete THEME_OWNER.dataset[THEME_STORAGE_KEY];
-        localStorage.removeItem(THEME_STORAGE_KEY);
-      } else {
-        THEME_OWNER.dataset[THEME_STORAGE_KEY] = theme;
-        localStorage.setItem(THEME_STORAGE_KEY, theme);
-      }
-    });
+buttonDark.addEventListener("click", () => {
+	localStorage.setItem("theme", "dark")
+	htmlDoc.setAttribute("data-theme", "dark")
+})
 
-    const initialTheme = cachedTheme ?? Theme.AUTO;
-    themePicker.querySelector('input[checked]').removeAttribute('checked');
-    themePicker.querySelector(`input[value="${initialTheme}"]`).setAttribute('checked', '');
-  });
-})();
+

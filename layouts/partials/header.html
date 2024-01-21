@@ -24,10 +24,15 @@
 				<li><a href="/privacy/" title="Privacy policy" aria-label="Privacy policy">Privacy</a></li>
 				<li><a href="/contact/" title="Contact info and feed links" aria-label="Contact/RSS">Contact/RSS</a></li>
 			</ul>
-			<button type="button" class="nScrHidden nav-ModeToggle" data-theme-toggle></button>
+			{{/*  <button type="button" class="nScrHidden" data-theme-toggle></button>  */}}
+			<div class="nScrHidden themeToggle" data-theme-toggle>
+				<input class="button" type="radio" name="toggleTheme" id="lightMode" />
+				<input class="button" type="radio" name="toggleTheme" id="autoMode" />
+				<input class="button" type="radio" name="toggleTheme" id="darkMode">
+			</div>
 		</nav>
 	</header>
-{{- $jsToggle := resources.Get "js/mode-toggle.js" -}}
+{{- $jsToggle := resources.Get "js/mode-toggle-auto.js" -}}
 {{- with $jsToggle -}}
 	<script{{ if site.Params.Nonces }} nonce="DhcnhD3khTMePgXw"{{ end }}>
 		{{- .Content | safeJS -}}
