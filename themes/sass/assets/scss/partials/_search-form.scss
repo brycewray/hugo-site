@@ -6,12 +6,18 @@
 
 /* === for search form */
 
-[data-theme="light"] {
+html, html[data-theme="light"] {
 	--input: clr.$black;
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
 	--input: clr.$white;
+}
+
+@media screen and (prefers-color-scheme:dark) {
+	html:not([data-theme]) {
+		--input: clr.$white;
+	}
 }
 
 .searchDiv, .searchDivPF {

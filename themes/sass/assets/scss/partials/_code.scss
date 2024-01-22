@@ -2,7 +2,7 @@
 @use 'partials/variables-010' as var;
 /* @use 'partials/variables-010' as var; */
 
-[data-theme="light"] {
+html, html[data-theme="light"] {
 	--gray: #{clr.$gray-700};
 	--orange: #{clr.$orange-700};
 	--yellow: #{clr.$yellow-800};
@@ -14,7 +14,7 @@
 	--rose: #{clr.$rose-700};
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
 	--gray: #{clr.$gray-300};
 	--orange: #{clr.$orange-300};
 	--yellow: #{clr.$yellow-100};
@@ -24,6 +24,20 @@
 	--blue: #{clr.$blue-300};
 	--fuchsia: #{clr.$fuchsia-300};
 	--rose: #{clr.$rose-300};
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		--gray: #{clr.$gray-300};
+		--orange: #{clr.$orange-300};
+		--yellow: #{clr.$yellow-100};
+		--green: #{clr.$green-100};
+		--emerald: #{clr.$emerald-200};
+		--cyan: #{clr.$cyan-300};
+		--blue: #{clr.$blue-300};
+		--fuchsia: #{clr.$fuchsia-300};
+		--rose: #{clr.$rose-300};
+	}
 }
 
 /* ======= START, individual items from Chroma */

@@ -11,7 +11,7 @@
 	--filter-shadow: #{clr.$gray-400};
 }
 
-[data-theme="light"] {
+html, html[data-theme="light"] {
 	color-scheme: light;
 	/* = = = COLORS = = = */
 	/* === defaults === */
@@ -44,7 +44,7 @@
 	--icon-inside: #{clr.$white};
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
 	color-scheme: dark;
 	/* = = = COLORS = = = */
 	/* === defaults === */
@@ -75,6 +75,41 @@
 	--bkgd-marker-secondary: #{clr.$slate-500};
 	--border: #{clr.$neutral-600};
 	--icon-inside: #{clr.$black};
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		color-scheme: dark;
+		/* = = = COLORS = = = */
+		/* === defaults === */
+		/* primaries */
+		--default: #{clr.$gray-300};
+		--boost: #{clr.$gray-200};
+		--bquote: #{clr.$gray-400};
+		--bquote-boost: #{clr.$gray-350};
+		--link: #{clr.$blue-300};
+		--link-afh: #{clr.$slate-300};
+		--head: var(--default);
+		--red: #{clr.$red-300};
+		--box-red: #{clr.$red-400};
+		--btn-text-default: #{clr.$black};
+		--pf-result-excerpt: #{clr.$white};
+		--bquote-article-code: #{clr.$slate-300};
+		/* backgrounds and borders */
+		--bkgd: #{clr.$black};
+		--bkgd-nav: #{clr.$blue-950};
+		--bkgd-nav-bottom: #{clr.$blue-950};
+		--bkgd-nav-top: #{clr.$blue-950};
+		--bkgd-box: #{clr.$slate-900};
+		--bkgd-code: #{clr.$slate-900};
+		--bkgd-article-code: #{clr.$slate-750};
+		--bkgd-box-code: #{clr.$slate-700};
+		--bkgd-pf-result-excerpt: #{clr.$blue-900};
+		--bkgd-hr: #{clr.$white};
+		--bkgd-marker-secondary: #{clr.$slate-500};
+		--border: #{clr.$neutral-600};
+		--icon-inside: #{clr.$black};
+	}
 }
 
 html, body {
