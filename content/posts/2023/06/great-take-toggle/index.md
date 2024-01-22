@@ -7,6 +7,9 @@ date: 2023-06-25T13:35:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
+**Update from the future**: Although I still can highly recommend the code (and coder) mentioned herein, I have since [taken a somewhat different approach](/posts/2024/01/its-tri-state-switch-time/).
+{.box}
+
 It's not uncommon for a day of website work to result from something I find in a session with [my favorite feed reader](https://netnewswire.com). Such was the case this weekend and, as a result, this site now lets you click (or tap) a little icon to switch between light and dark modes.
 
 <!--more-->
