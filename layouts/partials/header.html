@@ -26,9 +26,18 @@
 			</ul>
 			{{/*  <button type="button" class="nScrHidden" data-theme-toggle></button>  */}}
 			<div class="nScrHidden themeToggle" data-theme-toggle>
-				<input class="button" type="radio" name="toggleTheme" id="lightMode" />
-				<input class="button" type="radio" name="toggleTheme" id="autoMode" />
-				<input class="button" type="radio" name="toggleTheme" id="darkMode">
+				<label for="lightMode" class="lightLabel">
+					<input class="button button-light" type="radio" name="toggleTheme" id="lightMode" />
+					&#128526;
+				</label>
+				<label for="autoMode" class="autoLabel">
+					<input class="button button-auto" type="radio" name="toggleTheme" id="autoMode" />
+					&#127763;
+				</label>
+				<label for="darkMode" class="darkLabel">
+					<input class="button button-dark" type="radio" name="toggleTheme" id="darkMode">
+					&#127769;
+				</label>
 			</div>
 		</nav>
 	</header>
