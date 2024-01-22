@@ -58,5 +58,3 @@ buttonLight.addEventListener("click", () => {
 buttonDark.addEventListener("click", () => {
 	goDark()
 })
-
-
