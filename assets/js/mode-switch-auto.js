@@ -35,12 +35,12 @@ if (themeStatus === undefined || themeStatus === "auto") {
 	goDark()
 }
 
-buttonAuto.addEventListener("click", () => {
-	goAuto()
-})
-
 buttonLight.addEventListener("click", () => {
 	goLight()
+})
+
+buttonAuto.addEventListener("click", () => {
+	goAuto()
 })
 
 buttonDark.addEventListener("click", () => {
