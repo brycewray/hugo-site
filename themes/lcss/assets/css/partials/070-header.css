@@ -1,5 +1,7 @@
 :root {
-	--navRightMargin: 6em; /* unless JS is off */
+	--navRightMargin: 8em;
+	--navToggleRightMargin: 7em;
+	/* all these unless JS is off */
 }
 
 header {
@@ -17,7 +19,7 @@ header {
 	position: absolute;
 	cursor: pointer;
 	margin: 0rem 1rem;
-	right: 2.5em;
+	right: var(--navToggleRightMargin);
 	svg {
 		padding-top: 0.425em;
 		width: 1.5rem;
@@ -46,7 +48,7 @@ header {
 		list-style: none;
 		display: none;
 		font-weight: var(--font-bold);
-		padding-right: 3.5em;
+		padding-right: calc(1em + var(--navToggleRightMargin));
 		&.notMobile {
 			display: none;
 		}
@@ -110,10 +112,9 @@ header {
 	position: relative;
 }
 
-.nav-ModeToggle {
+/* .nav-ModeToggle {
 	position: absolute;
 	cursor: pointer;
-	/* transition: all 0.5s ease-in-out; */
 	top: 0.15em;
 	right: 0.5em;
 	@media (min-width: 1024px) {
@@ -122,12 +123,36 @@ header {
 	background-color: transparent;
 	border: 0;
 	svg {
-		/* position: absolute; */
 		width: 1.375em;
 		height: auto;
 		&.sun path, &.moon {
 			fill: var(--fill-lightdarktoggle);
 		}
+	}
+} */
+
+.themeToggle {
+	position: absolute;
+	cursor: pointer;
+	top: 0.45em;
+	right: 1.5em;
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+	@media (min-width: 1024px) {
+		right: 1.5em;
+	}
+	background-color: transparent;
+	border: 0;
+	input[type="radio"] {
+		opacity: 0;
+		padding: 0;
+		margin: 0;
+	}
+	.lightLabel, .autoLabel, .darkLabel {
+		padding: 0;
+		margin: 0;
+		font-size: var(--text-lg);
 	}
 }
 
