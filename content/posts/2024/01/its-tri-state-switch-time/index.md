@@ -1,5 +1,5 @@
 ---
-title: "It’s tri-state switch time"
+title: "It’s tri-state switch time"
 description: "With thanks as always to other, smarter folks, I implement a mode switch that gives you yet another option."
 author: Bryce Wray
 date: 2024-01-22T15:09:00-06:00
