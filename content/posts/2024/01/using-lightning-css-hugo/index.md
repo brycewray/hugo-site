@@ -1,5 +1,5 @@
 ---
-title: "Using Lightning CSS with Hugo"
+title: "Using Lightning CSS with Hugo"
 description: "Does Hugo natively support Lightning CSS? No, but there’s a neat workaround for that."
 author: Bryce Wray
 date: 2024-01-18T13:33:00-06:00
@@ -32,7 +32,7 @@ Here's how I have it set up within the site. First, there are the add-ons themse
 		"postcss-lightningcss": "^1.0.0"
 	}
 }
-``` 
+```
 
 Then, within `postcss.config.js` at the top of the Hugo project:
 
