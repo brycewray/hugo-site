@@ -122,6 +122,7 @@ goAuto = () => {
 
 - Salma Alam-Naylor, "[The best light/dark mode theme toggle in JavaScript](https://whitep4nth3r.com/blog/best-light-dark-mode-theme-toggle-javascript/)" <span class="nobrk">(2023-06-19)</span>.
 - Josh W. Comeau, "[The Quest for the Perfect Dark Mode](https://www.joshwcomeau.com/react/dark-mode/)" <span class="nobrk">(2020-04-22)</span>.
+- Colin Fahrion, "[Theme Multi Switch Web Component](https://colinaut.github.io/theme-multi-switch/)" <span class="nobrk">(2022-11-19)</span>.
 - Aleksandr Hovhannisyan, "[The Perfect Theme Switch Component](https://www.aleksandrhovhannisyan.com/blog/the-perfect-theme-switch/)" <span class="nobrk">2023-11-21</span>.
 - Tamas Piros, "[Three-State Light/Dark Theme Switch](https://tpiros.dev/blog/three-state-light-dark-theme-switch/)" <span class="nobrk">(2021-04-20)</span>.
 - Bramus Van Damme, "[The Quest for the Perfect Dark Mode Toggle, using Vanilla JavaScript](https://www.bram.us/2020/04/26/the-quest-for-the-perfect-dark-mode-using-vanilla-javascript/)" <span class="nobrk">(2020-04-26)</span>.
