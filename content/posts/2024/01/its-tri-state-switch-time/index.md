@@ -39,7 +39,7 @@ This replaces a `button` from the Alam-Naylor method.
 		&#127763;
 	</label>
 	<label for="darkMode" class="darkLabel" aria-label="Select dark mode" title="Dark mode">
-		<input type="radio" name="toggleTheme" id="darkMode">
+		<input type="radio" name="toggleTheme" id="darkMode" />
 		&#127769;
 	</label>
 </div>
