@@ -9,6 +9,9 @@ date: 2024-01-22T15:09:00-06:00
 # -
 ---
 
+**Update, 2024-01-25**: After making the change described herein, I realized I'd also need to revisit the code in [last August's post](/posts/2023/08/making-giscus-less-gabby/) about how the site works with [giscus](https://giscus.app).
+{.box}
+
 [Last June](/posts/2023/06/great-take-toggle), I explained how, based on [code by Salma Alam-Naylor](https://whitep4nth3r.com/blog/best-light-dark-mode-theme-toggle-javascript/), I'd added a light/dark mode toggle to this site. Today, I once again acknowledge other, smarter folks as I turn that toggle into a tri-state switch that allows you to view this site in light mode, dark mode, **or** your default mode.
 
 <!--more-->
