@@ -134,7 +134,7 @@ header {
 	}
 } */
 
-.themeToggle {
+.switchTheme {
 	position: absolute;
 	top: 0.45em;
 	right: 1.5em;
@@ -153,6 +153,8 @@ header {
 		padding: 0;
 		margin: 0;
 		font-size: var.$text-lg;
+		/* keep sep. classes in case we want
+		to customize each, later */
 	}
 }
 
