@@ -29,17 +29,17 @@ First, the HTML[^noJS] for the site's header template (**not** the `head`, of co
 <!--
 This replaces a `button` from the Alam-Naylor method.
 -->
-<div class="nScrHidden themeToggle" data-theme-toggle>
+<div class="nScrHidden switchTheme">
 	<label for="lightMode" class="lightLabel" aria-label="Select light mode" title="Light mode">
-		<input type="radio" name="toggleTheme" id="lightMode" />
+		<input type="radio" name="switchTheme" id="lightMode" />
 		&#128526;
 	</label>
 	<label for="autoMode" class="autoLabel" aria-label="Select auto mode for OS theme choice" title="Auto mode">
-		<input type="radio" name="toggleTheme" id="autoMode" />
+		<input type="radio" name="switchTheme" id="autoMode" />
 		&#127763;
 	</label>
 	<label for="darkMode" class="darkLabel" aria-label="Select dark mode" title="Dark mode">
-		<input type="radio" name="toggleTheme" id="darkMode" />
+		<input type="radio" name="switchTheme" id="darkMode" />
 		&#127769;
 	</label>
 </div>
