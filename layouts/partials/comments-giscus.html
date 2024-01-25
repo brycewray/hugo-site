@@ -5,6 +5,7 @@
 */}}
 {{- $dataThemeLight := "light" -}}
 {{- $dataThemeDark := "dark" -}}
+{{- $dataThemeAuto := "preferred_color_scheme" -}}
 
 <details class="comments nScrHidden" id="data-comments" data-pagefind-ignore>
 	<summary data-pagefind-ignore aria-label="Toggle for viewing or hiding comments">
@@ -24,8 +25,16 @@
 			*/
 
 			function getGiscusTheme() {
-				const html = document.querySelector("html")
-				const giscusTheme = html.getAttribute("data-theme") === "dark" ? {{ $dataThemeDark }} : {{ $dataThemeLight }};
+				const htmlDoc = document.querySelector("html");
+				const themeStatus = localStorage.getItem("theme");
+				let giscusTheme = {{ $dataThemeAuto }};
+				if (themeStatus === undefined || themeStatus === "auto") {
+					giscusTheme = {{ $dataThemeAuto }};
+				} else if (themeStatus === "light") {
+					giscusTheme = {{ $dataThemeLight }};
+				} else if (themeStatus === "dark") {
+					giscusTheme = {{ $dataThemeDark }};
+				}
 				return giscusTheme;
 			}
 
@@ -79,10 +88,12 @@
 					}
 				}
 				// Update giscus theme when theme switcher is clicked
-				const toggle = document.querySelector('.nav-ModeToggle');
-				if (toggle) {
-					toggle.addEventListener('click', setGiscusTheme);
-				}
+				const buttonLight = document.getElementById("lightMode");
+				const buttonAuto = document.getElementById("autoMode");
+				const buttonDark = document.getElementById("darkMode");
+				buttonLight.addEventListener('click', setGiscusTheme);
+				buttonAuto.addEventListener('click', setGiscusTheme);
+				buttonDark.addEventListener('click', setGiscusTheme);
 			});
 		</script>
 	</div>
