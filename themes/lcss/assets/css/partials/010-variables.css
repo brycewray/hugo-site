@@ -7,7 +7,7 @@
 
 	*/
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-	--sans-serif: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, Ubuntu, Roboto, "Noto Sans", Noto, sans-serif;
+	--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, Ubuntu, Roboto, "Noto Sans", Noto, sans-serif;
 	--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, monospace;
 	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
