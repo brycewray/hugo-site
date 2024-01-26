@@ -17,12 +17,12 @@ I feel that's somewhat similar to the scenario that will soon confront any web d
 
 <!--more-->
 
-Apple's announcement has received a lot of negative responses, chiefly because of its [financial effect on those who develop apps for iOS and iPadOS](https://www.macstories.net/news/apple-details-how-it-plans-to-comply-with-the-eus-digital-markets-act/). However, the Apple response likely will have a greater ripple effect on *all* web development. It could, in fact, be seismic.
+Apple's announcement has received a lot of negative feedback, chiefly because of its [financial effect on those who develop apps for iOS and iPadOS](https://www.macstories.net/news/apple-details-how-it-plans-to-comply-with-the-eus-digital-markets-act/). However, the Apple response likely will have a greater ripple effect on *all* web development. It could, in fact, be seismic.
 
 I said the following today in a comment on a [Mac Power Users](https://talk.macpowerusers.com) [thread](https://talk.macpowerusers.com/t/apple-announces-changes-to-ios-safari-and-the-app-store-in-the-european-union) about the Apple announcement:
 
 > As has been noted elsewhere, this will now complicate things for **non**-EU web developers, because they won't be able to test on the non-WebKit iOS browsers. While sticking rigidly to "best practices" is always advisable, there still will always be quirks in certain configurations that one truly must see for oneself.
-> 
+>
 > The obvious solution is for Apple to allow the entire world to have this freedom regarding browser engines on iOS, but I wouldn't bet on that happening any time soon, especially in view of the apparently deliberate narrowness of this response (some have called it "malicious compliance") concerning the EU requirements.
 
 After Apple's actions take effect in a few weeks (due to a DMA-imposed deadline), non-EU web developers will be under pressure to make their websites work properly on any of [multiple browsers from which EU-based users will be able to choose](https://www.macstories.net/news/apple-shares-list-of-alternate-browsers-that-will-be-available-to-eu-users-in-ios-17-4/). The problem with that is: these devs will still be forced to use iOS browsers, or simulations thereof, that are actually just the WebKit-driven Safari under the hood; so how can they realistically account for the various differences that will almost certainly exist among all those different browsers?[^noiOS]
