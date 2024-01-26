@@ -6,9 +6,9 @@ author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
 ---
 
-This site and its owner **do NOT** store your personal information **in any way**. It neither deposits nor reads cookies, and leaves only one small setting in [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to retain your light-/dark-mode viewing preferences for any future visits you make to the site.[^Salma]
+This site and its owner **do NOT** store your personal information **in any way**. It neither deposits nor reads cookies, and leaves only one small setting in [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to retain your light-/dark-mode viewing preferences for any future visits you make to the site.[^switch]
 
-[^Salma]: See also Salma Alam-Naylor's article, "[The best light/dark mode theme toggle in JavaScript](https://whitep4nth3r.com/blog/best-light-dark-mode-theme-toggle-javascript/)."
+[^switch]: See also "[It's tri-state switch time](/posts/2024/01/its-tri-state-switch-time/)."
 
 In addition, the site uses certain **external services**, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
