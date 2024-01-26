@@ -43,7 +43,7 @@
 	</header>
 {{- $jsToggle := resources.Get "js/mode-switch-auto.js" -}}
 {{- with $jsToggle -}}
-	<script{{ if site.Params.Nonces }} nonce="DhcnhD3khTMePgXw"{{ end }}>
+	<script{{ if hugo.IsProduction }} nonce="DhcnhD3khTMePgXw"{{ end }}>
 		{{- .Content | safeJS -}}
 	</script>
 {{- end }}
