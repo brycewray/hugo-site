@@ -17,7 +17,7 @@ html, html[data-theme="light"] {
 html[data-theme="dark"] {
 	--gray: #{clr.$gray-300};
 	--orange: #{clr.$orange-300};
-	--yellow: #{clr.$yellow-100};
+	--yellow: #{clr.$yellow-300};
 	--green: #{clr.$green-100};
 	--emerald: #{clr.$emerald-200};
 	--cyan: #{clr.$cyan-300};
@@ -30,7 +30,7 @@ html[data-theme="dark"] {
 	html:not([data-theme]) {
 		--gray: #{clr.$gray-300};
 		--orange: #{clr.$orange-300};
-		--yellow: #{clr.$yellow-100};
+		--yellow: #{clr.$yellow-300};
 		--green: #{clr.$green-100};
 		--emerald: #{clr.$emerald-200};
 		--cyan: #{clr.$cyan-300};
