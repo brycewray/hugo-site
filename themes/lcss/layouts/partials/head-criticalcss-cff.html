@@ -1,11 +1,13 @@
+{{- $opts := dict "inlineImports" true -}}
+
 {{- $URLopen := "https://fonts.googleapis.com/css2?family=" -}}
 {{- $fontSans := "Libre+Franklin" -}}
 	{{- $itemsSans := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
 	{{- $varsSans := "100..900" -}}
 	{{- $URLSans := print $URLopen $fontSans ":" $itemsSans "@0," $varsSans ";1," $varsSans "&display=swap" -}}
-{{- $fontSerif := "" -}}
-	{{- $itemsSerif := "" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
-	{{- $varsSerif := "" -}}
+{{- $fontSerif := "Noto+Serif" -}}
+	{{- $itemsSerif := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+	{{- $varsSerif := "100..900" -}}
 	{{- $URLSerif := print $URLopen $fontSerif ":" $itemsSerif "@0," $varsSerif ";1," $varsSerif "&display=swap" -}}
 {{- $fontMono := "" -}}
 	{{- $itemsMono := "" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
@@ -25,7 +27,7 @@
 	<link {{ printf "href=%q" $URLMono | safeHTMLAttr }} rel="stylesheet">
 {{- end }}
 
-{{- $css := resources.Get "css/critical.css" | postCSS }}
+{{- $css := resources.Get "css/critical.css" | postCSS $opts }}
 {{- with $css }}
 	<style media="screen">{{ .Content | safeCSS }}</style>
 {{- end }}
