@@ -25,7 +25,7 @@ rssLimit: 10 # default is -1 (unlimited); setting of '10' conforms to Eleventy r
 
 summaryLength: 30 # words --- if you use summaries **without** the `--more--` workaround
 
-theme: sass # choices are sass and lcss (Lightning CSS) - as of 2024-01-18
+theme: lcss # choices are sass and lcss (Lightning CSS) - as of 2024-01-18
 # # For detection in vars, must be repeated in `params` config:
 # # https://discourse.gohugo.io/t/site-theme/33200
 
