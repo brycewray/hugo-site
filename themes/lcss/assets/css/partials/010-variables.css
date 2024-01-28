@@ -9,7 +9,7 @@
 	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
 	--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, Ubuntu, Roboto, "Noto Sans", Noto, sans-serif;
 	--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
-	@media screen and (min-width: 640px) {
+	@media screen and (min-width: 1024px) {
 		/*
 			serve non-system fonts to only larger screens,
 			to make it easier on phones, especially where
