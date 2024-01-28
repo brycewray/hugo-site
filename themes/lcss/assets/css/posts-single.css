@@ -89,12 +89,18 @@
 	padding: 1em;
 }
 
-[data-theme="light"] .giscus-comments {
+html[data-theme="light"] .giscus-comments {
 	background-color: var(--gray-100);
 }
 
-[data-theme="dark"] .giscus-comments {
+html[data-theme="dark"] .giscus-comments {
 	background-color: var(--gray-900);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) .giscus-comments {
+		background-color: var(--gray-900);
+	}
 }
 
 details.comments {

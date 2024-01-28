@@ -413,3 +413,54 @@ html[data-theme="dark"] {
 		color: var(--gray-200);
 	}
 }
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		.toot-blockquote {
+			background: var(--gray-900);
+			/* background: transparent; */
+			border-color: var(--gray-200);
+			color: var(--white);
+			a, a:hover {
+				color: var(--link);
+			}
+		}
+		.toot-blockquote-img {
+			border-bottom-color: var(--gray-300);
+		}
+		a > .card, a > .toot-card {
+			color: var(--gray-300);
+		}
+		.card {
+			border-color: var(--gray-300);
+			p .card-title {
+				color: var(--white);
+			}
+		}
+		.toot-header {
+			.toot-author-name {
+				color: var(--white);
+			}
+			.toot-author-handle {
+				color: var(--gray-300);
+			}
+		}
+		.toot-footer {
+			color: var(--gray-200);
+			a {
+				color: var(--gray-200);
+			}
+		}
+		.toot-quoted-tweet {
+			border-color: var(--gray-200);
+			p.toot-quoted-toot-head {
+				a {
+					color: var(--gray-200);
+				}
+			}
+		}
+		.toot-reply-to {
+			color: var(--gray-200);
+		}
+	}
+}

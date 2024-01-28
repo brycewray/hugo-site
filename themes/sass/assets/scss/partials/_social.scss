@@ -409,3 +409,54 @@ html[data-theme="dark"] {
 		color: clr.$gray-200;
 	}
 }
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		.toot-blockquote {
+			background: clr.$gray-900;
+			/* background: transparent; */
+			border-color: clr.$gray-200;
+			color: clr.$white;
+			a, a:hover {
+				color: var(--link);
+			}
+		}
+		.toot-blockquote-img {
+			border-bottom-color: clr.$gray-300;
+		}
+		a > .card, a > .toot-card {
+			color: clr.$gray-300;
+		}
+		.card {
+			border-color: clr.$gray-300;
+			p .card-title {
+				color: clr.$white;
+			}
+		}
+		.toot-header {
+			.toot-author-name {
+				color: clr.$white;
+			}
+			.toot-author-handle {
+				color: clr.$gray-300;
+			}
+		}
+		.toot-footer {
+			color: clr.$gray-200;
+			a {
+				color: clr.$gray-200;
+			}
+		}
+		.toot-quoted-tweet {
+			border-color: clr.$gray-200;
+			p.toot-quoted-toot-head {
+				a {
+					color: clr.$gray-200;
+				}
+			}
+		}
+		.toot-reply-to {
+			color: clr.$gray-200;
+		}
+	}
+}

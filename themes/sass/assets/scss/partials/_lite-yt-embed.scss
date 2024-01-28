@@ -22,6 +22,12 @@ html[data-theme="dark"] lite-youtube {
 	border-color: clr.$gray-400;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) lite-youtube {
+		border-color: clr.$gray-400;
+	}
+}
+
 /* gradient */
 lite-youtube::before {
 	content: '';

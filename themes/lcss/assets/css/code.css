@@ -393,3 +393,20 @@ html[data-theme="dark"] {
 		background-color: var(--slate-800);
 	}
 }
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		.chroma *, .code-inline * {
+			color: var(--clr, #191970);
+		}
+		.chroma, .code-inline {
+			.h1 {
+				background-color: var(--yellow-800);
+			}
+		}
+		:not(pre) > code[class*="language-"], pre[class*="language-"] {
+			color: var(--white);
+			background-color: var(--slate-800);
+		}
+	}
+}

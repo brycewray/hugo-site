@@ -97,6 +97,12 @@
 	background-color: clr.$gray-900;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) .giscus-comments {
+		background-color: clr.$gray-900;
+	}
+}
+
 details.comments {
 	margin-top: 1em;
 	> summary {

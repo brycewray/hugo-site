@@ -132,3 +132,28 @@ html[data-theme="dark"] {
 		}
 	}
 }
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		table.noborders {
+			tr {
+				color: var(--black);
+			}
+		}
+		table.ulysses {
+			thead th {
+				border-color: var(--white);
+			}
+			td {
+				border-color: var(--white);
+				color: var(--white);
+			}
+			tr:nth-child(odd) {
+				background-color: var(--slate-700);
+			}
+			tr:nth-child(even) {
+				background-color: var(--emerald-900);
+			}
+		}
+	}
+}

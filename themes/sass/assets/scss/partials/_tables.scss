@@ -125,3 +125,28 @@ html[data-theme="dark"] {
 		}
 	}
 }
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		table.noborders {
+			tr {
+				color: clr.$black;
+			}
+		}
+		table.ulysses {
+			thead th {
+				border-color: clr.$white;
+			}
+			td {
+				border-color: clr.$white;
+				color: clr.$white;
+			}
+			tr:nth-child(odd) {
+				background-color: clr.$slate-700;
+			}
+			tr:nth-child(even) {
+				background-color: clr.$emerald-900;
+			}
+		}
+	}
+}
