@@ -45,6 +45,14 @@ html[data-theme="dark"] .shadow {
 	border-color: clr.$gray-750;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) .shadow {
+		filter: none;
+		border: 1px solid;
+		border-color: clr.$gray-750;
+	}
+}
+
 .img-phn {
 	width: 90%;
 	@media screen and (min-width: 768px) {
