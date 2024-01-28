@@ -50,7 +50,10 @@
 .posts-Title {
 	padding: 0;
 	font-size: clamp(1.25rem, 0.625rem + 1.75vw, 2rem);
-	/* font-family: var.$serif; */
+	/* font-family: var.$serif;
+	@media screen and (min-width: 1024px) {
+		font-family: var.$serif-webfonts;
+	} */
 	/* font-weight: var.$font-medium; */
 	line-height: 1.25em;
 	letter-spacing: -0.025em;
@@ -58,7 +61,10 @@
 
 .posts-Description {
 	font-size: clamp(0.95rem, 0.625rem + 1vw, 1.25rem);
-	/* font-family: var.$serif; */
+	/* font-family: var.$serif;
+	@media screen and (min-width: 1024px) {
+		font-family: var.$serif-webfonts;
+	} */
 	/* font-style: italic; */
 	/* font-weight: var.$font-light; */
 	letter-spacing: -0.025em;

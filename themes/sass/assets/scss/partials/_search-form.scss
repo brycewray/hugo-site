@@ -168,7 +168,10 @@ html[data-theme="dark"] {
 }
 
 .pagefind-ui__result-excerpt {
-	/* font-family: var.$serif; */
+	/* font-family: var.$serif;
+	@media screen and (min-width: 1024px) {
+		font-family: var.$serif-webfonts;
+	} */
 	& mark {
 		color: var(--pf-result-excerpt);
 		background-color: var(--bkgd-pf-result-excerpt);

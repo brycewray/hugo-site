@@ -19,9 +19,15 @@
 }
 .sansSerif {
 	font-family: var.$sans-serif;
+	@media screen and (min-width: 1024px) {
+		font-family: var.$sans-serif-webfonts;
+	}
 }
 .serif {
 	font-family: var.$serif;
+	@media screen and (min-width: 1024px) {
+		font-family: var.$serif-webfonts;
+	}
 }
 .tightLead {
 	line-height: 1.25;

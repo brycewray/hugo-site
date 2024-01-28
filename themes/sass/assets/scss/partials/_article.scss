@@ -79,6 +79,9 @@ html[data-theme="dark"] .shadow {
 	font-size: 1.5em;
 	font-weight: normal;
 	font-family: var.$serif;
+	@media screen and (min-width: 1024px) {
+		font-family: var.$serif-webfonts;
+	}
 	text-align: center;
 }
 

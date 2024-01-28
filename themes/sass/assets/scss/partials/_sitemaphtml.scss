@@ -24,6 +24,9 @@
 	ul li {
 		font-size: var.$text-sm;
 		font-family: var.$sans-serif;
+		@media screen and (min-width: 1024px) {
+			font-family: var.$sans-serif-webfonts;
+		}
 		margin-bottom: 0.75em;
 		line-height: 1.375;
 		strong {
