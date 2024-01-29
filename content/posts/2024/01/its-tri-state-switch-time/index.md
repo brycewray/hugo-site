@@ -72,7 +72,7 @@ goDark = () => {
 	htmlDoc.setAttribute("data-theme", "dark")
 }
 
-if (themeStatus === undefined || themeStatus === "auto") {
+if (themeStatus === null || themeStatus === "auto") {
 	goAuto()
 } else if (themeStatus === "light") {
 	goLight()
