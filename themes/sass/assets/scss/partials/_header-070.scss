@@ -147,6 +147,19 @@ header {
 		opacity: 0;
 		padding: 0;
 		margin: 0;
+		span {
+			display: inline-block;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			margin: 0;
+			line-height: 1rem;
+		}
+		&:checked+span {
+			border-radius: 15%;
+			outline: 1px solid var(--link-nav-afh);
+			outline-offset: 2px;
+		}
 	}
 	.lightLabel, .autoLabel, .darkLabel {
 		cursor: pointer;

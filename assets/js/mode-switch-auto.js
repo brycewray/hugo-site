@@ -11,23 +11,38 @@ const buttonAuto = document.getElementById("autoMode")
 const buttonDark = document.getElementById("darkMode")
 const htmlDoc = document.querySelector("html")
 const themeStatus = localStorage.getItem("theme")
+const radioStatus = localStorage.getItem("radios")
 
 goAuto = () => {
 	localStorage.removeItem("theme")
+	localStorage.setItem("radios", "auto")
 	htmlDoc.removeAttribute("data-theme")
+	buttonAuto.checked = true
+	buttonLight.checked = false
+	buttonDark.checked = false
 }
 
 goLight = () => {
 	localStorage.setItem("theme", "light")
+	localStorage.setItem("radios", "light")
 	htmlDoc.setAttribute("data-theme", "light")
+	buttonAuto.checked = false
+	buttonLight.checked = true
+	buttonDark.checked = false
 }
 
 goDark = () => {
 	localStorage.setItem("theme", "dark")
+	localStorage.setItem("radios", "dark")
 	htmlDoc.setAttribute("data-theme", "dark")
+	buttonAuto.checked = false
+	buttonLight.checked = false
+	buttonDark.checked = true
 }
 
-if (themeStatus === undefined || themeStatus === "auto") {
+goAuto() // in case of no `theme` and no `radios`
+
+if (themeStatus === undefined || themeStatus === "auto" || radioStatus === "auto") {
 	goAuto()
 } else if (themeStatus === "light") {
 	goLight()
