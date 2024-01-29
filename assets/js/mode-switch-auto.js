@@ -40,9 +40,12 @@ goDark = () => {
 	buttonDark.checked = true
 }
 
-goAuto() // in case of no `theme` and no `radios`
-
-if (themeStatus === undefined || themeStatus === "auto" || radioStatus === "auto") {
+if (
+	themeStatus === null ||
+	themeStatus === "auto" ||
+	radioStatus === null ||
+	radioStatus === "auto"
+) {
 	goAuto()
 } else if (themeStatus === "light") {
 	goLight()
