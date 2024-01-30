@@ -15,6 +15,11 @@
 	{{ hugo.Generator }}
 {{/* CSS */}}
 		{{- partialCached "head-css.html" . }}{{/* per-theme */}}
+		{{- /* ^^
+			**IMPORTANT**:
+			If using scoped, be sure to call this file
+			as `partial` and NOT as `partialCached`.
+		*/ -}}
 		{{- partial "head-imgs-css.html" . }}
 		{{- partial "head-css-oklch-post.html" . -}}
 		<noscript>
