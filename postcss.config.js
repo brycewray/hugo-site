@@ -1,4 +1,4 @@
-const postcssLightningcss = require("postcss-lightningcss");
+const postcssLightningcss = require("postcss-lightningcss")
 let minOpt
 
 process.env.HUGO_ENVIRONMENT === 'production'
