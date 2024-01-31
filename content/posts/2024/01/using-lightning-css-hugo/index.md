@@ -67,12 +67,6 @@ That's pretty much it. The `lcss` theme just has CSS files --- chiefly a `critic
 
 ```go-html-template{filename="head-criticalcss.html" bigdiv=true}
 {{- $opts := dict "inlineImports" true -}}
-{{- $fonts := resources.Get "css/fonts.css" | postCSS -}}
-{{- with $fonts }}
-	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-	<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
-	<style media="screen">{{ .Content | safeCSS }}</style>
-{{- end }}
 {{- $css := resources.Get "css/critical.css" | postCSS $opts }}
 {{- with $css }}
 	<style media="screen">{{ .Content | safeCSS }}</style>
