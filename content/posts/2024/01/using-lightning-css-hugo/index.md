@@ -37,13 +37,19 @@ Here's how I have it set up within the site. First, there are the add-ons themse
 Then, within `postcss.config.js` at the top of the Hugo project:
 
 ```js
-const postcssLightningcss = require("postcss-lightningcss");
+const postcssLightningcss = require("postcss-lightningcss")
+let minOpt
+
+process.env.HUGO_ENVIRONMENT === 'production'
+	? minOpt = true // <-- default for `minify`
+	: minOpt = false
 
 module.exports = {
 	plugins: [
 		postcssLightningcss({
 			browsers: ">= 2%",
 			lightningcssOptions: {
+				minify: minOpt,
 				cssModules: false,
 				drafts: {
 					nesting: true,
