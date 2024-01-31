@@ -1,16 +1,16 @@
 		<footer{{ if (and (eq .Section "posts") (ne .Title site.Params.Titles.Postslist)) }} class="with-bg-dark"{{ end }} data-pagefind-ignore>
 			<div class="footerWrapper">
 				<div class="icons-box">
-					<a class="icon" rel="me" title="GitHub" href="https://github.com/brycewray" rel="noopener" aria-label="GitHub">
+					<a class="icon" rel="me noopener" title="GitHub" href="https://github.com/brycewray" aria-label="GitHub">
 						{{- partialCached "svgGitHubIcon.html" . -}}
 					</a>
-					<a class="icon" rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener" aria-label="Mastodon">
+					<a class="icon" rel="me noopener" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" aria-label="Mastodon">
 						{{- partialCached "svgMastodonIcon.html" . -}}
 					</a>
-					<a class="icon" rel="me" title="Bluesky" href="https://bsky.app/profile/brycewray.com" rel="noopener" aria-label="Bluesky">
+					<a class="icon" rel="me noopener" title="Bluesky" href="https://bsky.app/profile/brycewray.com" aria-label="Bluesky">
 						{{- partialCached "svgBlueskyIcon.html" . -}}
 					</a>
-					<a class="icon" rel="me" title="Threads" href="https://www.threads.net/@brycewraytx" rel="noopener" aria-label="Threads">
+					<a class="icon" rel="me noopener" title="Threads" href="https://www.threads.net/@brycewraytx" aria-label="Threads">
 						{{- partialCached "svgThreadsIcon.html" . -}}
 					</a>
 					<a class="icon" title="RSS/Atom feed" href="/index.xml" rel="noopener" aria-label="RSS/Atom feed">
