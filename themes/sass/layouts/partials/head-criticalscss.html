@@ -1,14 +1,14 @@
 	{{/*  {{- $optionsCSSCritical := (dict "transpiler" "dartsass" "outputStyle" "compressed" "targetPath" "css/critical.css") -}}  */}}
 	{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
 
-	{{/*  {{- $fonts := resources.Get "scss/fonts.scss" -}}
+	{{- $fonts := resources.Get "scss/fonts.scss" -}}
 	{{- with $fonts }}
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 		<link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>
 		<style media="screen">
 			{{ .Content | safeCSS }}
 		</style>
-	{{- end }}  */}}
+	{{- end }}
 
 	{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
 	{{- with $css -}}
