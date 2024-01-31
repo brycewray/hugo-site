@@ -22,11 +22,16 @@ In that aforementioned post from last year, I noted my acceptance of the argumen
 
 I did find a number of excellent articles about such a switch, especially [this one which Aleksandr Hovhannisyan issued last November](https://www.aleksandrhovhannisyan.com/blog/the-perfect-theme-switch/). Still, in the end, I found many of their code samples a bit much for me to follow, so I ended up making a simpler (albeit not all that [DRY](https://www.baeldung.com/cs/dry-software-design-principle)) version.
 
+**<span class="red">Update, 2024-01-31</span>**: After a few days with the code in this post's [original form](https://github.com/brycewray/hugo-site/blob/d7e69ca7696738f226ce0c072a70fc63ecf1ea70/content/posts/2024/01/its-tri-state-switch-time/index.md), I saw the additional need to show a visitor *which* state was in use (*e.g.*, it might not be readily apparent whether one was viewing auto mode), so I revised the post and code accordingly.
+{.box}
+
 ## (Some of) the code
+
+The code involves multiple files, and each contains plenty of items that have nothing to do with our subject. Instead, what follows are the parts which *are* necessary for the tri-state switch's functionality and appearance.
 
 First, the HTML[^noJS] for the site's header template (**not** the `head`, of course):
 
-[^noJS]: The `div`'s use of the `nScrHidden`  styling class is a [graceful degradation](https://developer.mozilla.org/en-US/docs/Glossary/Graceful_degradation) measure. It hides the switch if JavaScript is disabled, blocked, or otherwise non-functional when a user views the page. I'd followed the same practice with the previous toggle.
+[^noJS]: The `div`'s use of the `nScrHidden`  styling class is a [graceful degradation](https://developer.mozilla.org/en-US/docs/Glossary/Graceful_degradation) measure. It hides the switch if JavaScript is disabled, blocked, or otherwise non-functional when a user views the page. I'd followed the same practice with the previous toggle.Here's the relevant part from the header template:
 
 ```html{bigdiv=true}
 <!--
@@ -35,20 +40,67 @@ This replaces a `button` from the Alam-Naylor method.
 <div class="nScrHidden switchTheme">
 	<label for="lightMode" class="lightLabel" aria-label="Select light mode" title="Light mode">
 		<input type="radio" name="switchTheme" id="lightMode">
-		&#128526;
+		<span>
+			&#128526;
+		</span>
 	</label>
 	<label for="autoMode" class="autoLabel" aria-label="Select auto mode for OS theme choice" title="Auto mode">
 		<input type="radio" name="switchTheme" id="autoMode">
-		&#127763;
+		<span>
+			&#127763;
+		</span>
 	</label>
 	<label for="darkMode" class="darkLabel" aria-label="Select dark mode" title="Dark mode">
 		<input type="radio" name="switchTheme" id="darkMode">
-		&#127769;
+		<span>
+			&#127769;
+		</span>
 	</label>
 </div>
 ```
 
-Then, the JavaScript:
+Then, the relevant styling, much of which I borrowed from the ["CSS: Theme Variables" section](https://www.aleksandrhovhannisyan.com/blog/the-perfect-theme-switch/#css-theme-variables) of Hovhannisyan's article:
+
+```css
+.switchTheme {
+	position: absolute;
+	top: 0.45em;
+	right: 1.5em;
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+	background-color: transparent;
+	border: 0;
+	input[type="radio"] {
+		opacity: 0;
+		padding: 0;
+		margin: 0;
+		span {
+			display: inline-block;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			margin: 0;
+			line-height: 1rem;
+		}
+		&:checked+span {
+			border-radius: 15%;
+			outline: 1px solid hsl(210, 100%, 86%);
+			outline-offset: 2px;
+		}
+	}
+	.lightLabel, .autoLabel, .darkLabel {
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		font-size: 1.125rem;
+		/* keep sep. classes in case we want
+		to customize each, later */
+	}
+}
+```
+
+And, finally, the JavaScript:
 
 ```js{filename="mode-switch-auto.js"}
 const buttonLight = document.getElementById("lightMode")
@@ -56,23 +108,41 @@ const buttonAuto = document.getElementById("autoMode")
 const buttonDark = document.getElementById("darkMode")
 const htmlDoc = document.querySelector("html")
 const themeStatus = localStorage.getItem("theme")
+const radioStatus = localStorage.getItem("radios")
 
 goAuto = () => {
 	localStorage.removeItem("theme")
+	localStorage.setItem("radios", "auto")
 	htmlDoc.removeAttribute("data-theme")
+	buttonAuto.checked = true
+	buttonLight.checked = false
+	buttonDark.checked = false
 }
 
 goLight = () => {
 	localStorage.setItem("theme", "light")
+	localStorage.setItem("radios", "light")
 	htmlDoc.setAttribute("data-theme", "light")
+	buttonAuto.checked = false
+	buttonLight.checked = true
+	buttonDark.checked = false
 }
 
 goDark = () => {
 	localStorage.setItem("theme", "dark")
+	localStorage.setItem("radios", "dark")
 	htmlDoc.setAttribute("data-theme", "dark")
+	buttonAuto.checked = false
+	buttonLight.checked = false
+	buttonDark.checked = true
 }
 
-if (themeStatus === null || themeStatus === "auto") {
+if (
+	themeStatus === null ||
+	themeStatus === "auto" ||
+	radioStatus === null ||
+	radioStatus === "auto"
+) {
 	goAuto()
 } else if (themeStatus === "light") {
 	goLight()
@@ -93,33 +163,15 @@ buttonDark.addEventListener("click", () => {
 })
 ```
 
-As for the styling that makes it work, I borrowed chiefly from the ["CSS: Theme Variables" section](https://www.aleksandrhovhannisyan.com/blog/the-perfect-theme-switch/#css-theme-variables) of Hovhannisyan's article. Since I do a *lot* of light-/dark-mode stuff in my styling, I won't dump all that here.
-
 ## How it works
 
-Like the toggle it replaced, this switch adds either `data-theme="light"` or `data-theme="dark"` to the page's `html` tag, whereupon the site's styling adjusts things accordingly. But, *unlike* the toggle,  the switch **also** lets you select auto mode, which *removes* any such `data-theme` attribute so *your* light/dark setting will take over as usual. In fact, I now have auto mode as the default.
+Like the toggle it replaced, this switch adds either `data-theme="light"` or `data-theme="dark"` to the page's `html` tag, whereupon the site's styling adjusts things accordingly. But, *unlike* the toggle,  the switch **also** lets you select auto mode, which *removes* any such `data-theme` attribute so *your* light/dark setting will take over as usual. In fact, I now have auto mode as the default. By contrast, the earlier toggle defaulted to dark mode for new visitors. While that may have been a safer choice than light mode for many, the new default of "You get your chosen setting" makes even more sense.
 
-Similarly, a [localStorage cookie](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) remembers your setting for when you're nice enough to visit here again; *or*, if you select auto mode, the code **removes** the cookie. A new visitor obviously won't yet have the cookie set, guaranteeing that such a new visitor will see his/her chosen mode; by contrast, the earlier toggle defaulted to dark mode for new visitors. While that may have been a safer choice than light mode for many, the new default of "You get your chosen setting" makes even more sense.
+Similarly, a `theme` [localStorage cookie](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) remembers your setting for when you're nice enough to visit here again; *or*, if you select auto mode, the code **removes** the cookie. At the same time, a `radios` localStorage cookie triggers a visible indicator of the current theme --- or, if the user's OS-wide setting is in charge, the lack thereof.
 
-The UI items that trigger all this are [radio buttons](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio), each with an `opacity: 0` setting, positioned absolutely and topped by a Unicode character to symbolize what it does: &#128526; (HTML entity of `&#128526;`) for light mode, &#127763; (`&#127763;`) for auto mode, and &#127769; (`&#127769;`) for dark mode. (If you're viewing this in light mode, you might want to switch to dark mode at least briefly so you can see those characters more readily; fortunately, my header currently has a dark background in all modes.) I considered this to be simpler than using SVGs, as before, especially after my testing on multiple platforms indicated sufficient support for these Unicode characters to let them do the job.
+Why is the latter cookie called `radios`? Because the UI items that trigger all this are [radio buttons](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio). Each has an `opacity: 0` setting, positioned absolutely and topped by a Unicode character to symbolize what it does: &#128526; (HTML entity of `&#128526;`) for light mode, &#127763; (`&#127763;`) for auto mode, and &#127769; (`&#127769;`) for dark mode.[^seeThem] These characters were easier to style than the SVGs I used before, and my testing on multiple platforms indicated sufficient support for the characters. Of course, if I were to change my mind and go back to SVGs, all I'd have to do is replace the Unicode characters with corresponding SVGs and style each appropriately.
 
-Incidentally: while working on this, I initially adopted Hovhannisyan's use of *visible* radio buttons. In the end, I decided I'd rather not do that; but, if you choose to adapt my code for your own site *yet* with visible radio buttons, be aware that you'll need to manage those buttons' states, too --- *i.e.*, so the appropriate button will be checked when its mode is in play --- and, thus, will probably have to use another localStorage cookie for that purpose. For example:
-
-```js
-// previous `const` declarations above
-const radioStatus = localStorage.getItem("radios")
-
-goAuto = () => {
-	localStorage.removeItem("theme")
-	localStorage.setItem("radios", "auto") // additional
-	htmlDoc.removeAttribute("data-theme")
-	buttonAuto.checked = true // additional
-	buttonLight.checked = false // additional
-	buttonDark.checked = false // additional
-}
-
-// And so forth in the rest of it...
-```
+[^seeThem]: If you're viewing this in light mode, you might want to switch to dark mode at least briefly so you can see those characters more readily. Fortunately, my header currently has a dark background in all modes. 
 
 ## References
 
