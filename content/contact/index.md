@@ -22,7 +22,7 @@ date: 2020-12-30T09:00:00-06:00
 
 ### Social accounts
 
-- [**brycewray** on GitHub](https://github.com/brycewray/)
-- <a rel="me" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX" rel="noopener"><strong>@BryceWrayTX</strong> on Mastodon</a>
-- [**@brycewray.com** on Bluesky](https://bsky.app/profile/brycewray.com)
-- [**@brycewraytx** on Threads](https://www.threads.net/@brycewraytx)
+- <a rel="me noopener" title="GitHub" href="https://github.com/brycewray/"><strong>brycewray</strong> on GitHub</a>
+- <a rel="me noopener" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX"><strong>@BryceWrayTX</strong> on Mastodon</a>
+- <a rel="me noopener" title="Bluesky" href="https://bsky.app/profile/brycewray.com"><strong>@brycewray.com</strong> on Bluesky</a>
+- <a rel="me noopener" title="Bluesky" href="https://www.threads.net/@brycewraytx"><strong>@brycewraytx</strong> on Threads</a>
