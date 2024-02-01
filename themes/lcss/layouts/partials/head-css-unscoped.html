@@ -10,7 +10,7 @@
 	{{- $css = $css | resources.Copy "css/index.min.css" -}}
 	{{/* Lightning CSS is set in PostCSS config to minify only in production */}}
 {{- end -}}
-{{- $css = $css | postCSS $opts | fingerprint -}}
+{{- $css = $css | fingerprint -}}
 {{- with $css }}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -22,7 +22,7 @@
 	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" -}}
 	{{/* Lightning CSS is set in PostCSS config to minify only in production */}}
 {{- end -}}
-{{- $printCSS = $printCSS | postCSS | fingerprint -}}
+{{- $printCSS = $printCSS | fingerprint -}}
 {{- with $printCSS -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}

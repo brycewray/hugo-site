@@ -1,6 +1,6 @@
 {{- partialCached "head-criticalcss.html" . }}
-{{- partialCached "head-css-unscoped.html" . }}
-{{/*  {{- partial "head-css-scoped.html" . -}}  */}}
+{{/*  {{- partialCached "head-css-unscoped.html" . }}  */}}
+{{- partial "head-css-scoped.html" . -}}
 {{- /*
 	**IMPORTANT**:
 	If using scoped, be sure the top-level `layouts/head.html`
