@@ -1,7 +1,7 @@
 {
-  "config": {
-    "myIP": "192.168.0.70"
-  },
+	"config": {
+		"myIP": "192.168.0.70"
+	},
 	"watch": {
 		"buildCSS:all": {
 			"patterns": [
@@ -13,10 +13,6 @@
 		}
 	},
 	"scripts": {
-		"buildCSS:fonts": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss/assets/css-original/fonts.css -o themes/lcss/assets/css/fonts.css",
-		"buildCSS:critical": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss/assets/css-original/critical.css -o themes/lcss/assets/css/critical.css",
-		"buildCSS:index": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss/assets/css-original/index.css -o themes/lcss/assets/css/index.css",
-		"buildCSS:print": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss/assets/css-original/print.css -o themes/lcss/assets/css/print.css",
 		"buildCSS:all": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
 		"clean": "rimraf public",
 		"search": "pagefind --site public",
@@ -29,12 +25,13 @@
 		"start": "NODE_ENV=development npm-run-all clean clean:lcss buildCSS:all --parallel dev:hugo watch",
 		"build:prelim": "NODE_ENV=production npm-run-all clean clean:lcss buildCSS:all prod:hugo",
 		"build": "npm-run-all build:prelim move-excerpts search",
+    "deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
+    "deploy": "pnpm run build && pnpm run deploy:wrangler",
 		"testbuild": "NODE_ENV=production npm-run-all clean clean:lcss buildCSS:all --parallel testbuild:hugo watch",
 		"testbuildpf": "NODE_ENV=production npm-run-all clean clean:lcss buildCSS:all build:prelim dev:search --parallel testbuild:hugo watch",
 		"watch": "npm-watch"
 	},
 	"devDependencies": {
-		"concurrently": "^8.2.2",
 		"lightningcss": "^1.23.0",
 		"lightningcss-cli": "^1.23.0",
 		"mkdirp": "^3.0.1",
@@ -43,6 +40,7 @@
 		"postcss": "^8.4.33",
 		"postcss-cli": "^11.0.0",
 		"postcss-lightningcss": "^1.0.0",
-		"rimraf": "^5.0.5"
+		"rimraf": "^5.0.5",
+		"wrangler": "^3.26.0"
 	}
 }
