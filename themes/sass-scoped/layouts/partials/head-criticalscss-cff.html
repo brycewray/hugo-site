@@ -1,0 +1,36 @@
+	{{/*  {{- $optionsCSSCritical := (dict "transpiler" "dartsass" "outputStyle" "compressed" "targetPath" "css/critical.css") -}}  */}}
+	{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
+
+	{{- $URLopen := "https://fonts.googleapis.com/css2?family=" -}}
+	{{- $fontSans := "Libre+Franklin" -}}
+		{{- $itemsSans := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+		{{- $varsSans := "100..900" -}}
+		{{- $URLSans := print $URLopen $fontSans ":" $itemsSans "@0," $varsSans ";1," $varsSans "&display=swap" -}}
+	{{- $fontSerif := "Noto+Serif" -}}
+		{{- $itemsSerif := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+		{{- $varsSerif := "100..900" -}}
+		{{- $URLSerif := print $URLopen $fontSerif ":" $itemsSerif "@0," $varsSerif ";1," $varsSerif "&display=swap" -}}
+	{{- $fontMono := "" -}}
+		{{- $itemsMono := "" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+		{{- $varsMono := "" -}}
+		{{- $URLMono := print $URLopen $fontMono ":" $itemsMono "@0," $varsMono ";1," $varsMono "&display=swap" -}}
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	{{/* https://discourse.gohugo.io/t/how-to-unescape-plus-sign-in-url-re-cloudflare-fonts/46734 */}}
+	{{ with $fontSans -}}
+		<link {{ printf "href=%q" $URLSans | safeHTMLAttr }} rel="stylesheet">
+	{{- end }}
+	{{ with $fontSerif -}}
+		<link {{ printf "href=%q" $URLSerif | safeHTMLAttr }} rel="stylesheet">
+	{{- end }}
+	{{- with $fontMono -}}
+		<link {{ printf "href=%q" $URLMono | safeHTMLAttr }} rel="stylesheet">
+	{{- end }}
+
+	{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
+	{{- with $css -}}
+		<style media="screen">
+			{{ .Content | safeCSS }}
+		</style>
+	{{- end }}

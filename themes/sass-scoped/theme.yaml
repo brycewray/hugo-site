@@ -1,0 +1,11 @@
+name: sass-scoped
+license: MIT
+description: Dart Sass with “sorta” scoped styling (https://www.brycewray.com/posts/2023/01/sorta-scoped-styling-hugo-take-two/); originally based on a Hugo theme called “Tale” but now with little resemblance thereto.
+min_version: 0.119.0
+
+tags:
+  - tags
+
+author:
+  name: Bryce Wray
+  homepage: https://www.brycewray.com/
