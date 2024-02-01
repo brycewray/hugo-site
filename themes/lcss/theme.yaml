@@ -1,6 +1,6 @@
 name: lcss
 license: MIT
-description: Lightning CSS through PostCSS; originally based on a Hugo theme called “Tale” but now with little resemblance thereto.
+description: Lightning CSS; originally based on a Hugo theme called “Tale” but now with little resemblance thereto.
 min_version: 0.119.0
 
 tags:
