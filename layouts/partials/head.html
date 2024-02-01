@@ -14,10 +14,10 @@
 	{{- end }}
 	{{ hugo.Generator }}
 {{/* CSS */}}
-		{{- partialCached "head-css.html" . }}{{/* per-theme */}}
+		{{- partial "head-css.html" . }}{{/* per-theme */}}
 		{{- /* ^^
 			**IMPORTANT**:
-			If using scoped, be sure to call this file
+			If using scoped, be sure to call "head-css.html"
 			as `partial` and NOT as `partialCached`.
 		*/ -}}
 		{{- partial "head-imgs-css.html" . }}
