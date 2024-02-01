@@ -1,7 +1,52 @@
 {
+  "config": {
+    "myIP": "192.168.0.70"
+  },
+	"watch": {
+		"style-exe:lcss": {
+			"patterns": [
+				"themes/lcss-cli/assets/css-original"
+			],
+			"extensions": "css,scss",
+			"quiet": true,
+			"runOnChangeOnly": false
+		}
+	},
+	"scripts": {
+		"buildCSS:fonts": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss-cli/assets/css-original/fonts.css -o themes/lcss-cli/assets/css/fonts.css",
+		"buildCSS:critical": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss-cli/assets/css-original/critical.css -o themes/lcss-cli/assets/css/critical.css",
+		"buildCSS:index": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss-cli/assets/css-original/index.css -o themes/lcss-cli/assets/css/index.css",
+		"buildCSS:print": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss-cli/assets/css-original/print.css -o themes/lcss-cli/assets/css/print.css",
+		"buildCSS:all": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss-cli/assets/css-original/*.css --output-dir themes/lcss-cli/assets/css",
+		"clean": "rimraf public",
+		"search": "pagefind --site public",
+		"dev:search": "pagefind --site public --bundle-dir ../static/_pagefind",
+		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
+		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml",
+		"prod:hugo": "hugo --minify",
+		"testbuild:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --minify --environment=production",
+		"clean:lcss": "rimraf themes/lcss-cli/assets/css",
+		"style-exe:lcss": "npm-run-all buildCSS:all",
+		"style-dev:lcss": "pnpm run style-exe:lcss",
+		"style-prod:lcss": "pnpm run style-exe:lcss",
+		"style-testbuild:lcss": "pnpm run style-exe:lcss",
+		"start": "NODE_ENV=development npm-run-all clean clean:lcss style-exe:lcss --parallel dev:hugo watch",
+		"build:prelim": "NODE_ENV=production npm-run-all clean clean:lcss style-exe:lcss prod:hugo",
+		"build": "npm-run-all build:prelim move-excerpts search",
+		"testbuild": "NODE_ENV=production npm-run-all clean clean:lcss style-exe:lcss --parallel testbuild:hugo watch",
+		"testbuildpf": "NODE_ENV=production npm-run-all clean clean:lcss style-exe:lcss build:prelim dev:search --parallel testbuild:hugo watch",
+		"watch": "npm-watch"
+	},
 	"devDependencies": {
+		"concurrently": "^8.2.2",
+		"lightningcss": "^1.23.0",
+		"lightningcss-cli": "^1.23.0",
+		"mkdirp": "^3.0.1",
+		"npm-run-all": "^4.1.5",
+		"npm-watch": "^0.11.0",
 		"postcss": "^8.4.33",
 		"postcss-cli": "^11.0.0",
-		"postcss-lightningcss": "^1.0.0"
+		"postcss-lightningcss": "^1.0.0",
+		"rimraf": "^5.0.5"
 	}
 }
