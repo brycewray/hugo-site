@@ -64,8 +64,7 @@ Then we have the scripting and packages:
 		"start": "NODE_ENV=development npm-run-all clean:* dev:lcss --parallel dev:hugo watch",
 		"dev:lcss": "lightningcss --bundle --targets '>= 2%' themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
 		"build:lcss": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
-		"build:prelim": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo",
-		"build": "npm-run-all build:prelim move-excerpts search",
+		"build": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo",
 		"watch": "npm-watch"
 	},
 	"devDependencies": {
