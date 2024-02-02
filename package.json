@@ -18,7 +18,7 @@
 		"search": "pagefind --site public",
 		"dev:search": "pagefind --site public --bundle-dir ../static/_pagefind",
 		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
-		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml",
+		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
 		"prod:hugo": "hugo --minify",
 		"testbuild:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* build:lcss --parallel dev:hugo watch",
