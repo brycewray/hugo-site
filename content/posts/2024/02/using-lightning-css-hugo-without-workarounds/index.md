@@ -54,14 +54,6 @@ Then we have the scripting and packages:
 			"extensions": "css,scss",
 			"quiet": true,
 			"runOnChangeOnly": false
-		},
-		"build:lcss": {
-			"patterns": [
-				"themes/lcss/assets/css-original"
-			],
-			"extensions": "css,scss",
-			"quiet": true,
-			"runOnChangeOnly": false
 		}
 	},
 	"scripts": {
