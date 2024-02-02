@@ -21,7 +21,7 @@
 {{- $conditionArticle := false -}}
 {{- $conditionPostsSingle := false -}}
 {{- $conditionPostsList := false -}}
-{{/*  {{- $conditionFootnotes := false -}}  */}}
+{{- $conditionFootnotes := false -}}
 {{- $conditionHome := false -}}
 {{- $conditionSitemap := false -}}
 {{/*  {{- $conditionSearchBtn := false -}}  */}}
@@ -37,7 +37,7 @@
 {{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
 {{- if (and (eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
 {{- if (eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
-{{/*  {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}  */}}
+{{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
 {{- if (eq .Title $titleHome) -}}{{- $conditionHome = true -}}{{- end -}}
 {{- if (eq .Title $titleSitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
 {{/*  {{- if (ne .Title $titleSearch) -}}{{- $conditionSearchBtn = true -}}{{- end -}}  */}}
@@ -55,7 +55,7 @@
 {{- $cssTypes = append slice (slice $conditionArticle "article") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionPostsSingle "posts-single") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionPostsList "posts-list") $cssTypes -}}
-{{/*  {{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}  */}}
+{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionHome "home") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionSitemap "sitemaphtml") $cssTypes -}}
 {{/*  {{- $cssTypes = append slice (slice $conditionSearchBtn "search-btn") $cssTypes -}}  */}}
