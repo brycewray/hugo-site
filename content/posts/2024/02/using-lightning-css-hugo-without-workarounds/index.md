@@ -3,7 +3,7 @@ title: "Using Lightning CSS with Hugo — without workarounds"
 description: "With a little tinkering, there’s no need for that PostCSS plugin I recently mentioned."
 author: Bryce Wray
 date: 2024-02-02T10:12:00-06:00
-draft: true
+# draft: true
 # initTextEditor: iA Writer # default --- change if needed
 # imgs:
 # -
