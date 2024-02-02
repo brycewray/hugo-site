@@ -3,7 +3,7 @@ title: "Using Lightning CSS with Hugo — without workarounds"
 description: "With a little tinkering, there’s no need for that PostCSS plugin I recently mentioned."
 author: Bryce Wray
 date: 2024-02-02T10:12:00-06:00
-# draft: true
+draft: true
 # initTextEditor: iA Writer # default --- change if needed
 # imgs:
 # -
@@ -19,7 +19,7 @@ There never was any doubt that you could directly add the original [lightningcss
 
 And, truth be told, even the approach I'm going to describe herein doesn't really accomplish that.
 
-Instead, I point [Lightning CSS's CLI package](https://lightningcss.dev/docs.html#from-the-cli) at a directory of CSS files and let it do its thing: [bundling](https://lightningcss.dev/bundling.html), [transpilation](https://lightningcss.dev/transpilation.html), and [intelligent minification](https://lightningcss.dev/minification.html). (I have set the latter to occur only in production.) The resulting files wind up in *another* directory, where Hugo accesses them while building the project website. 
+Instead, I point [Lightning CSS's CLI package](https://lightningcss.dev/docs.html#from-the-cli) at a directory of CSS files and let it do its thing: [bundling](https://lightningcss.dev/bundling.html), [transpilation](https://lightningcss.dev/transpilation.html), and [intelligent minification](https://lightningcss.dev/minification.html). (I have set the latter to occur only in production.) The resulting files wind up in *another* directory, where Hugo accesses them while building the project website.
 
 That works well enough for production, but what about when you're in development mode and making changes to your CSS files? Well, since Lightning CSS has no built-in "watching" capability (although people have been [asking](https://github.com/parcel-bundler/lightningcss/issues/126) for it since 2022), I used [npm-watch](https://github.com/M-Zuber/npm-watch) for that purpose.
 
