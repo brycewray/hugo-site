@@ -27,7 +27,7 @@
 	<link {{ printf "href=%q" $URLMono | safeHTMLAttr }} rel="stylesheet">
 {{- end }}
 
-{{- $css := resources.Get "css/critical.css" | postCSS $opts }}
+{{- $css := resources.Get "css/critical.css" }}
 {{- with $css }}
 	<style media="screen">{{ .Content | safeCSS }}</style>
 {{- end }}
