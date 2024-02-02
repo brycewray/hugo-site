@@ -3,7 +3,7 @@
 		"myIP": "192.168.0.70"
 	},
 	"watch": {
-		"build:lcss": {
+		"dev:lcss": {
 			"patterns": [
 				"themes/lcss/assets/css-original"
 			],
@@ -11,7 +11,7 @@
 			"quiet": true,
 			"runOnChangeOnly": false
 		},
-		"dev:lcss": {
+		"build:lcss": {
 			"patterns": [
 				"themes/lcss/assets/css-original"
 			],

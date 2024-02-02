@@ -47,7 +47,7 @@ Then we have the scripting and packages:
 ```json{filename="package.json" bigdiv=true}
 {
 	"watch": {
-		"build:lcss": {
+		"dev:lcss": {
 			"patterns": [
 				"themes/lcss/assets/css-original"
 			],
@@ -55,7 +55,7 @@ Then we have the scripting and packages:
 			"quiet": true,
 			"runOnChangeOnly": false
 		},
-		"dev:lcss": {
+		"build:lcss": {
 			"patterns": [
 				"themes/lcss/assets/css-original"
 			],
