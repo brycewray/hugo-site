@@ -1,8 +1,17 @@
 {{- partialCached "head-criticalcss.html" . }}
-{{/*  {{- partialCached "head-css-unscoped.html" . }}  */}}
-{{- partial "head-css-scoped.html" . -}}
+{{- partialCached "head-css-unscoped.html" . }}
+{{/*  {{- partial "head-css-scoped.html" . -}}  */}}
 {{- /*
 	**IMPORTANT**:
-	If using scoped, be sure the top-level `layouts/head.html`
-	calls this file as `partial` and NOT as `partialCached`.
+
+	If using UNSCOPED, be sure that `index.css` **is**
+	in this theme’s `assets/css-original/` subdir and
+	**not** in its `assets/css-original/_unused/` subdir.
+
+	If using SCOPED, be sure that:
+	- `index.css` **is** in this theme’s
+	`assets/css-original/_unused` subdir and **not** in
+	its `assets/css-original/` subdir.
+	- The top-level `layouts/head.html` calls this file
+	as `partial` and NOT as `partialCached`.
 */ -}}
