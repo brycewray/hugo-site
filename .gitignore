@@ -85,5 +85,4 @@ cfpages.yml
 .wrangler
 
 pnpm-help*.*
-lcss-help*.*
 lcss-help-*.txt
