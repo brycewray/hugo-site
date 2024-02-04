@@ -1,6 +1,7 @@
 {
 	"config": {
-		"myIP": "192.168.0.70"
+		"myIP": "192.168.0.70",
+		"targets": ">= 0.25%"
 	},
 	"watch": {
 		"dev:lcss": {
@@ -22,7 +23,7 @@
 		"prod:hugo": "hugo --minify",
 		"testbuild:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* --parallel dev:hugo watch",
-		"dev:lcss": "lightningcss --bundle --targets 'defaults' themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
+		"dev:lcss": "lightningcss --bundle --targets \"$npm_package_config_targets\" themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
 		"build:lcss": "lightningcss --minify --bundle --targets 'defaults' themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
 		"build:prelim": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo",
 		"build": "npm-run-all build:prelim move-excerpts search",
