@@ -19,7 +19,7 @@ I remain a firm believer in the so-called [3-2-1 strategy](https://www.backblaze
 
 The off-site backup is the part I'm thinking about changing, largely because of the cost involved. Whether you use Arq as a standalone product or in combination with Arq Premium (the latter is the better deal of the two), it's still a yearly subscription. In 2017, I knew of nothing better. But now, while there are still some months left in the Arq/Premium sub, I'm thinking about going with only B2. Of course, you have to employ some software product to use B2, so I've looked for a cheaper way to do so, and I may have found it in [Kopia](https://kopia.io).
 
-![Screen capture from the kopia.io website as of 2023-11-05](kopia-io-screen-cap_2023-11-05_3016x1620.png "Cloudinary")
+![Screen capture from the kopia.io website as of 2023-11-05](kopia-io-screen-cap_2023-11-05_3016x1620.png)
 
 Kopia is free [open-source](https://github.com/kopia/kopia/) software that's available in both CLI and GUI forms for macOS, Linux, and Windows. It supports backups to a [variety of sources](https://kopia.io/docs/repositories/), among them Backblaze B2. While its interface is a bit rough around the edges compared to Arq and other for-pay backup apps, it works well enough in my testing as of now.
 

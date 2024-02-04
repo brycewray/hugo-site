@@ -38,11 +38,8 @@ At this writing, that analytics page shows the following browser traffic for the
 
 I am personally unaware of any serious reason to believe that Firefox's numbers will improve soon. Indeed, for the web as a whole, they've been declining consistently for years, as this chart shows:
 
-![Chart of browser share for January, 2009, through November, 2023](2023-11-30_screen-cap_StatCounter-browser-2009-01--2023-11_edited_2318x1158.png "Cloudinary")
-
-Chrome *vs.* Firefox *vs.* Safari for January, 2009, through November, 2023.\
-Image: [StatCounter](https://gs.statcounter.com/).
-{.imgCaption}
+![Chart of browser share for January, 2009, through November, 2023](2023-11-30_screen-cap_StatCounter-browser-2009-01--2023-11_edited_2318x1158.png "Chrome *vs.* Firefox *vs.* Safari for January, 2009, through November, 2023.\
+Image: [StatCounter](https://gs.statcounter.com/).")
 
 Firefox peaked at 31.82% in November, 2009 --- and then began its long slide in almost direct proportion to the rise of Chrome. The latter shot from 1.37% use in January, 2009, to its own peak of 66.34% in September, 2020, since falling back to a "measly" 62.85% in the very latest data.[^UserActivity]
 

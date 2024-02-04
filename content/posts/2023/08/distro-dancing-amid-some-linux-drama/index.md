@@ -47,7 +47,7 @@ After days of trying multiple possibilities, and some of those multiple times, i
 
 So, now, if you're sufficiently familiar with Linux distros, you know where this is going. That's right; welcome to “[BTW](https://knowyourmeme.com/memes/btw-i-use-arch)”-land:
 
-![ASCII art output from the “neofetch” app, showing Arch Linux running on a 2017 iMac](2023-08-24-0953CDT_neofetch_Arch_iMac_1528x814.png "Cloudinary")
+![ASCII art output from the “neofetch” app, showing Arch Linux running on a 2017 iMac](2023-08-24-0953CDT_neofetch_Arch_iMac_1528x814.png)
 
 Bizarrely enough, [Arch Linux](https://archlinux.org) at least so far is a great fit for this Apple fanboy's Linux playtime requirements.
 
