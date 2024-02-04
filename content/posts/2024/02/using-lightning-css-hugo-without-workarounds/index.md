@@ -9,7 +9,7 @@ date: 2024-02-02T10:12:00-06:00
 # -
 ---
 
-**Update, 2024-02-04**: This post now contains additional explanatory details along with slightly updated (and, perhaps, improved) code. 
+**Update, 2024-02-04**: This post now contains additional explanatory details along with slightly updated (and, perhaps, improved) code.
 {.box}
 
 A couple of weeks back, I [wrote](/posts/2024/01/using-lightning-css-hugo/) about how you could use a [PostCSS](https://postcss.org) plugin, [postcss-lightningcss](https://github.com/onigoetz/postcss-lightningcss), to get the [Rust](https://www.rust-lang.org/)-based [Lightning CSS](https://lightningcss.dev/) working in [Hugo](https://gohugo.io). However, before long, I wondered how I might connect Hugo and Lightning CSS more directly, so I could bypass the inevitable slowdowns from the JavaScript-laden PostCSS.
@@ -55,7 +55,7 @@ Then we have the scripting and packages:
 {
 	"config": {
 		"targets": ">= 0.25%"
-	},	
+	},
 	"watch": {
 		"dev:lcss": {
 			"patterns": [
@@ -96,7 +96,7 @@ Once you've set a value for `targets`, the `dev:lcss` script (more on that below
 	- `"dev:lcss"` --- The script to run whenever the watched files change (again, more on that script below).
 	- `"patterns"` --- The directory to watch.
 	- `"extensions"` --- The kinds of files to watch.
-	- `"quiet"` and `"runOnChangeOnly"` --- **How** I want it to run. 
+	- `"quiet"` and `"runOnChangeOnly"` --- **How** I want it to run.
 - The `dev:lcss` script gives the Lightning CSS CLI tool its instructions:
 	- `--bundle` --- Read any `@import` statements and bundle the referenced CSS files. For example, given a `themes/lcss/assets/css-original/index.css` file:
 {{< highlight css "linenos=false" >}}
@@ -113,7 +113,7 @@ Once you've set a value for `targets`, the `dev:lcss` script (more on that below
 
 ## Breaking off the shackles
 
-The PostCSS aficionados among you may be wondering, "That seems like a lot of hassle compared to what you showed in the previous post. Is it all worth it?"[^PCSSfan]
+The PostCSS aficionados among you may be wondering something along these lines: "That seems like a lot of hassle compared to what you showed in the first post on this subject. Is it all worth it?"[^PCSSfan]
 
 [^PCSSfan]: After the first post, I heard from one highly skeptical person who clearly felt that PostCSS, if equipped with the [`postcss-preset-env` plugin](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env), was still good enough on its own --- much less without any need to involve Lightning CSS. I can only imagine what that same person might think about what I've explained in *this* post.
 
