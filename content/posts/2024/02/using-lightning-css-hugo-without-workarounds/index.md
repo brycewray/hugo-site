@@ -121,7 +121,7 @@ And, in the end, that surely is the point, isn't it? What kind of performance **
 
 Well, you get a little overhead from npm-watch (and the [nodemon](https://nodemon.io/) package behind it), but this "bare" Lightning CSS configuration still is far faster than the Lightning CSS-via-PostCSS config I previously described.
 
-Here are some comparisons from this site's Hugo project running locally on [my system](/posts/2023/07/making-good-move/). In each case, the *reload time* refers to how quickly the project rebuilds the site after I change the global `font-family` setting for `html` and `body` in a "watched" partial. I gave each test multiple iterations, so each reload time is an average thereof. Just for grins, I also ran this using Embedded [Dart Sass](https://sass-lang.com/dart-sass/), for which [Hugo's built-in asset pipeline is optimized](https://gohugo.io/hugo-pipes/transpile-sass-to-css/).
+Here are some comparisons from this site's Hugo project running locally on [my system](/posts/2023/07/making-good-move/). In each case, the *reload time* refers to how quickly the project rebuilds the site after I change the global `font-family` setting for `html` and `body` in a "watched" partial. (Keep in mind that this site, as of this writing, has a few hundred pages, all of which Hugo rebuilds when items change during development.) I gave each test multiple iterations, so each reload time is an average thereof. Just for grins, I also ran this using Embedded [Dart Sass](https://sass-lang.com/dart-sass/), for which [Hugo's built-in asset pipeline is optimized](https://gohugo.io/hugo-pipes/transpile-sass-to-css/).
 
 | Setup | Reload time |
 |---|---|
