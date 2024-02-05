@@ -1,6 +1,4 @@
 @charset 'utf-8';
-/* @use 'partials/005-limited-colors' as clr; */
-/* @use 'partials/010-variables' as var; */
 
 :root {
 	--emerald-050: hsl(155, 80%, 96%);
@@ -19,7 +17,7 @@ td {
 table.noborders {
 	width: 100%;
 	/* table-layout: fixed; */
-	margin: 1.5rem auto 1rem auto;
+	margin: 1.5rem auto 1rem;
 	border: 0;
 	border-collapse: collapse;
 
@@ -62,7 +60,7 @@ table.noborders {
 table.leagues {
 	table-layout: fixed; /* so don't have to spec each `td`'s width */
 	width: 90%;
-	margin: 1rem auto 0 auto;
+	margin: 1rem auto 0;
 	border: 0;
 	border-collapse: collapse;
 	@media (min-width: 900px) {
