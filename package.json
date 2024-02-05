@@ -1,7 +1,7 @@
 {
 	"config": {
 		"myIP": "192.168.0.70",
-		"targets": ">= 0.25%"
+		"targets": "defaults"
 	},
 	"watch": {
 		"dev:lcss": {
