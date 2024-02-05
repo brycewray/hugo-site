@@ -109,7 +109,7 @@ Once you've set a value for `targets`, the `dev:lcss` script (more on that below
 @import 'code-blocks.css';
 {{< /highlight >}}
 . . . the resulting `themes/lcss/assets/css/index.css` will contain the processed contents of all those `@import`ed files.
-	- `-- targets` --- (As discussed above.)
+	- `--targets` --- (As discussed above.)
 	- Process the indicated files and put the resulting file(s) where we want. Here, we're telling it to (a.) process all the CSS files in `themes/lcss/assets/css-original` and (b.) output the results into `themes/lcss/assets/css`. Note that we're using `--output-dir`, which creates individual files, with names corresponding to their original forms, in that output directory. On the other hand, if we preferred to have just one output file with the combined contents of all the files from (a.), we'd use `-o` (or its equivalent, `--output-file`).
 - Finally, the `watch` script simply runs npm-watch, which follows the instructions of the previously described `watch` object. Then, within the overarching `start` script for development, we run `watch` in parallel with our `dev:hugo` script by using the familiar [npm-run-all](https://github.com/mysticatea/npm-run-all) tool.
 
