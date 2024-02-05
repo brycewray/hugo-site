@@ -24,7 +24,7 @@
 		"testbuild:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* --parallel dev:hugo watch",
 		"dev:lcss": "lightningcss --bundle --targets \"$npm_package_config_targets\" assets/css-original/*.css --output-dir assets/css",
-		"build:lcss": "lightningcss --minify --bundle --targets 'defaults' assets/css-original/*.css --output-dir assets/css",
+		"build:lcss": "lightningcss --minify --bundle --targets \"$npm_package_config_targets\" assets/css-original/*.css --output-dir assets/css",
 		"build:prelim": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo",
 		"build": "npm-run-all build:prelim move-excerpts search",
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",

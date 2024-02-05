@@ -73,7 +73,7 @@ Then we have the scripting and packages:
 		"prod:hugo": "hugo --minify",
 		"start": "NODE_ENV=development npm-run-all clean:* dev:lcss --parallel dev:hugo watch",
 		"dev:lcss": "lightningcss --bundle --targets \"$npm_package_config_targets\" themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
-		"build:lcss": "lightningcss --minify --bundle --targets '>= 2%' themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
+		"build:lcss": "lightningcss --minify --bundle --targets \"$npm_package_config_targets\" themes/lcss/assets/css-original/*.css --output-dir themes/lcss/assets/css",
 		"build": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo",
 		"watch": "npm-watch"
 	},
@@ -90,7 +90,9 @@ Let's unpack what's going on in this file:
 
 - The `config` object lets you specify the *[targeted browsers](https://lightningcss.dev/transpilation.html#browser-targets)* for Lightning CSS's transpilation process. The `targets` item takes any value that works with [Browserslist](https://github.com/browserslist/browserslist) --- with which you're likely already familiar If you've ever used the popular [autoprefixer](https://github.com/postcss/autoprefixer) tool from the PostCSS world. (Incidentally: when choosing your `targets` value, use the incredibly helpful [Browserslist playground page](https://browsersl.ist/).)\
 \
-Once you've set a value for `targets`, the `dev:lcss` script (more on that below) will feed it to the `--targets` flag, using the double-quotes-escaped ` \"$npm_package_config_targets\"` variable. Now, you could just do that more manually through, say, `--targets '>= 0.25%'` and no `config` object --- but I think the use of [`$npm_package_config`](https://frontend.irish/npm-config-variables) makes it a lot easier to manage your `targets` setting, including trying different settings to compare their effects on the generated CSS.
+Once you've set a value for `targets`, the `dev:lcss` script (more on that below) will feed it to the `--targets` flag, using the double-quotes-escaped ` \"$npm_package_config_targets\"` variable. Now, you could just do that more manually through, say, `--targets '>= 0.25%'` and no `config` object --- but I think the use of [`$npm_package_config`](https://frontend.irish/npm-config-variables) makes it a lot easier to manage your `targets` setting, including trying different settings to compare their effects on the generated CSS.[^targetsProd]
+
+[^targetsProd]: I use the same variable in production, with the `build:lcss` script.
 
 - The [`watch` object](https://github.com/M-Zuber/npm-watch?tab=readme-ov-file#synopsis) contains the information that npm-watch's `watch` script will need to do its job:
 	- `"dev:lcss"` --- The script to run whenever the watched files change (again, more on that script below).
