@@ -120,7 +120,7 @@ Once you've set a value for `targets`, the `dev:lcss` script (more on that below
 
 The PostCSS aficionados among you may be wondering something along these lines: "That seems like a lot of hassle compared to what you showed in the first post on this subject. Is it all worth it?"[^PCSSfan]
 
-[^PCSSfan]: After the first post, I heard from one highly skeptical person who clearly felt that PostCSS, if equipped with the [`postcss-preset-env` plugin](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env), was still good enough on its own --- much less without any need to involve Lightning CSS. I can only imagine what that same person might think about what I've explained in *this* post.
+[^PCSSfan]: After the first post, I heard from one highly skeptical person who clearly felt that PostCSS, if equipped with the [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) plugin, was still good enough on its own --- much less without any need to involve Lightning CSS. I can only imagine what that same person might think about what I've explained in *this* post.
 
 And, in the end, that surely is the point, isn't it? What kind of performance **does** all this enable for development mode?
 
