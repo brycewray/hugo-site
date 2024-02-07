@@ -50,7 +50,7 @@ Here's an example. It's likely that a substantial portion of your audience views
 	--serif: ui-serif, serif;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
 	:root {
 		--serif: "Roboto Serif", ui-serif, serif;
 	}
