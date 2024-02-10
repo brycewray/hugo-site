@@ -17,7 +17,8 @@
 		"clean:hugo": "rimraf public",
 		"clean:lcss": "rimraf assets/css",
 		"search": "pagefind --site public",
-		"dev:search": "pagefind --site public --bundle-dir ../static/_pagefind",
+		"clean:search": "rimraf static/pagefind",
+		"dev:search": "pagefind --site public --bundle-dir ../static/pagefind",
 		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
 		"prod:hugo": "hugo --minify",
@@ -30,7 +31,7 @@
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
 		"deploy": "npm-run-all build deploy:wrangler",
 		"testbuild": "NODE_ENV=production npm-run-all clean:* build:lcss --parallel testbuild:hugo watch",
-		"testbuildpf": "NODE_ENV=production npm-run-all clean:* build:lcss build:prelim dev:search --parallel testbuild:hugo watch",
+		"testbuildpf": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo dev:search --parallel testbuild:hugo watch",
 		"watch": "npm-watch"
 	},
 	"devDependencies": {
