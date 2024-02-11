@@ -30,8 +30,8 @@
 		"build": "npm-run-all build:prelim move-excerpts search",
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
 		"deploy": "npm-run-all build deploy:wrangler",
-		"testbuild": "NODE_ENV=production npm-run-all clean:* build:lcss --parallel testbuild:hugo watch",
-		"testbuildpf": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo dev:search --parallel testbuild:hugo watch",
+		"testbuild": "NODE_ENV=production npm-run-all clean:* build:lcss --parallel testbuild:hugo",
+		"testbuildpf": "NODE_ENV=production npm-run-all clean:* build:lcss prod:hugo dev:search --parallel testbuild:hugo",
 		"watch": "npm-watch"
 	},
 	"devDependencies": {
