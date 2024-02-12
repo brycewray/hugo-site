@@ -20,6 +20,8 @@ module.exports = {
 			/code-inline/
 		],
 		variables: [
+			/emerald-050/,
+			/emerald-900/,
 			/blue-800/
 		]
 	},
