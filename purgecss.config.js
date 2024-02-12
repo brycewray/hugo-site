@@ -18,7 +18,5 @@ module.exports = {
 			/pagefind/,
 			/:is\(.chroma,.code-inline\).*/gm
 		]
-	},
-	rejected: true,
-	rejectedCss: true
+	}
 }
