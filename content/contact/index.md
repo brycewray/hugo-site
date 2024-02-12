@@ -25,4 +25,4 @@ date: 2020-12-30T09:00:00-06:00
 - <a rel="me noopener" title="GitHub" href="https://github.com/brycewray/"><strong>brycewray</strong> on GitHub</a>
 - <a rel="me noopener" title="Mastodon" href="https://fosstodon.org/@BryceWrayTX"><strong>@BryceWrayTX</strong> on Mastodon</a>
 - <a rel="me noopener" title="Bluesky" href="https://bsky.app/profile/brycewray.com"><strong>@brycewray.com</strong> on Bluesky</a>
-- <a rel="me noopener" title="Bluesky" href="https://www.threads.net/@brycewraytx"><strong>@brycewraytx</strong> on Threads</a>
+<!-- - <a rel="me noopener" title="Bluesky" href="https://www.threads.net/@brycewraytx"><strong>@brycewraytx</strong> on Threads</a> -->
