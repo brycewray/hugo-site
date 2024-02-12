@@ -9,14 +9,19 @@ module.exports = {
 		standard: [
 			/^\:.*/
 		],
+		deep: [
+			/chroma/,
+			/pagefind/,
+			/contactButton/
+		],
 		greedy: [
 			/input$/,
 			/highlight/,
-			/chroma/,
-			/code-inline/,
-			/contactButton/,
-			/pagefind/,
-			/:is\(.chroma,.code-inline\).*/gm
+			/code-inline/
+		],
+		variables: [
+			/blue-800/
 		]
-	}
+	},
+	variables: true
 }
