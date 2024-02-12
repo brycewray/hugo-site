@@ -67,6 +67,8 @@ html[data-theme="dark"] {
 	background-color: var(--bkgd-code);
 	border: 1px solid;
 	border-color: var(--border);
+}
+.chroma {
 	* {
 		font-weight: var(--font-normal); /* to keep italicized items at same width as non-italicized */
 		/* === Fallback colors to catch var issues */
