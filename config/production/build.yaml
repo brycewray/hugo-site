@@ -1,3 +1,6 @@
+buildStats:
+  enable: true
+
 cacheBusters:
   - source: "assets/watching/hugo_stats\\.json"
     target: "css"
