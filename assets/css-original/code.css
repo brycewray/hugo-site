@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-:root {
+/* :root {
 	--orange-300: hsl(25, 100%, 78%);
 	--orange-700: hsl(25, 100%, 36%);
 	--yellow-200: hsl(55, 90%, 76%);
@@ -18,7 +18,7 @@
 	--fuchsia-700: hsl(290, 70%, 41%);
 	--rose-300: hsl(330, 98%, 83%);
 	--rose-700: hsl(330, 73%, 42%);
-}
+} */
 
 html, html[data-theme="light"] {
 	--gray: var(--gray-700);
