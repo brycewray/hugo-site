@@ -18,8 +18,11 @@ goAuto = () => {
 	localStorage.setItem("radios", "auto")
 	htmlDoc.removeAttribute("data-theme")
 	buttonAuto.checked = true
+	buttonAuto.setAttribute("aria-checked", true)
 	buttonLight.checked = false
+	buttonLight.setAttribute("aria-checked", false)
 	buttonDark.checked = false
+	buttonDark.setAttribute("aria-checked", false)
 }
 
 goLight = () => {
@@ -27,8 +30,11 @@ goLight = () => {
 	localStorage.setItem("radios", "light")
 	htmlDoc.setAttribute("data-theme", "light")
 	buttonAuto.checked = false
+	buttonAuto.setAttribute("aria-checked", false)
 	buttonLight.checked = true
+	buttonLight.setAttribute("aria-checked", true)
 	buttonDark.checked = false
+	buttonDark.setAttribute("aria-checked", false)
 }
 
 goDark = () => {
@@ -36,8 +42,11 @@ goDark = () => {
 	localStorage.setItem("radios", "dark")
 	htmlDoc.setAttribute("data-theme", "dark")
 	buttonAuto.checked = false
+	buttonAuto.setAttribute("aria-checked", false)
 	buttonLight.checked = false
+	buttonLight.setAttribute("aria-checked", false)
 	buttonDark.checked = true
+	buttonDark.setAttribute("aria-checked", true)
 }
 
 if (
