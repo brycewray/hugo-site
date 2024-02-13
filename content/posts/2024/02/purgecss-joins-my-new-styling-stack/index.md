@@ -23,7 +23,7 @@ While that worked wonderfully well, it did, as mentioned before, make my CSS lar
 
 I was reasonably familiar with PurgeCSS --- having used it years ago with [Tailwind CSS](https://tailwindcss.com) before that framework's  conversion to [just-in-time processing](/posts/2021/03/jit-game-changer-tailwind-css/) ended the need to de-bloat its results --- but my previous experience with PurgeCSS had been only within the confines of, yep, PostCSS. This meant that, if I were to incorporate PurgeCSS into my site's current styling plumbing, I had two choices: (a.) implement PurgeCSS as a PostCSS plugin, as before; or (b.) use PurgeCSS [via CLI](https://purgecss.com/CLI.html), just as I'd already done with Lightning CSS.
 
-As you've probably already guessed, the no-brainer selection from those two options was to go with (b.).
+Nearly every Hugo-with-PurgeCSS piece I've read so far tells you to opt for (a.); but as you've probably already guessed, my no-brainer selection from those two options was to go with (b.).
 
 To [re-cap](/posts/2024/02/using-lightning-css-hugo-without-workarounds/#the-code), here's my Lightning CSS-as-CLI workflow **before** I added PurgeCSS:
 
