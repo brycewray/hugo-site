@@ -1,8 +1,7 @@
 @charset 'utf-8';
 
 code, article code, .box code {
-	--bg: var(--bkgd-article-code);
-	background-color: var(--bg);
+	background-color: var(--bkgd-article-code);
 }
 
 code {
@@ -53,7 +52,7 @@ article blockquote code {
 }
 
 .box {
-	& code, & a code {
+	code, a code {
 		font-size: 1em; /* definitely em */
 		--bg: var(--bkgd-box-code);
 	}
