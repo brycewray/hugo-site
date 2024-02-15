@@ -3,7 +3,11 @@
 		*/ -}}
 		{{/* generics */}}
 		<link rel="icon" href="/favicon.ico" sizes="32x32">
-		<link rel="icon" type="image/svg+xml" href="/assets/svg/svgNavIcon_reduced.svg">
+		{{- if hugo.IsProduction -}}
+			<link rel="icon" type="image/svg+xml" href="/assets/svg/svgNavIcon_reduced.svg">
+		{{- else -}}
+			<link rel="icon" type="image/svg+xml" href="/assets/svg/svgNavIcon_reduced_black.svg">
+		{{- end }}
 		{{/* iOS */ -}}
 		<link rel="apple-touch-icon" href="/images/icons/apple-icon-180x180.png">
 		{{/* Android */ -}}
