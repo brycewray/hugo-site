@@ -9,7 +9,7 @@ date: 2023-08-07T08:56:00-05:00
 # -
 ---
 
-**Update, 2024-01-25**: Now that the site has [a switch for auto mode as well as light and dark modes](/posts/2024/01/its-tri-state-switch-time/), I've provided [an update](#update-2024-01-25) to this post's featured code.
+**Update, 2024-02-15**: Now that the site has [a switch for auto mode as well as light and dark modes](/posts/2024/01/its-tri-state-switch-time/), I've provided [an update](#update-2024-01-25) to this post's featured code. I've also separated the JavaScript from the Hugo templating in both the pre-switch and post-switch code, which should make it easier for non-Hugo users who may want to use something like what I'll describe below.
 {.box}
 
 [Restoring](/posts/2023/06/return-giscus/) this site's former, [giscus](https://giscus.app)-powered comments section wasn't something over which I was exactly jumping for joy, given the [problems](/posts/2022/10/letting-go-giscus/) I'd attempted to solve by removing giscus in the first place. And I became even less happy about giscus's return last week, when I learned of a major flaw in my [chosen technique](/posts/2022/07/more-tips-using-giscus/#dont-show-it-by-default) for delaying giscus's large load of [Next.js](https://nextjs.org)-spawned JavaScript until a user actually wants to see the comments section.
@@ -72,193 +72,171 @@ Once I finally had it all working properly yesterday afternoon, I restored the c
 
 [^oneWay]: Of course, this is a one-way thing: *i.e.*, once you have the JS load, clicking the button again doesn't undo that load. The only way to get rid of it is through a page refresh, which restores the page to its default behavior.
 
-So here's the code, the [operational version of which](https://github.com/brycewray/hugo-site/blob/main/layouts/partials/comments-giscus.html) exists as a partial template for this [Hugo](https://gohugo.io)-based site:
+So here's the code. First comes the Hugo partial template:
 
 ```go-html-template{filename="comments-giscus.html" bigdiv=true}
-{{/*
-	=== `data-theme` choices ===
-	For now, these are just "light" and "dark"; but, in case you use
-	separate CSS files for these (such as for using additional fonts),
-	having these variables will allow for that.
-*/}}
-{{- $dataThemeLight := "light" -}}
-{{- $dataThemeDark := "dark" -}}
-
 <details class="comments nScrHidden" id="data-comments">
 	<summary aria-label="Toggle for viewing or hiding comments">
-		<div class="svg">
-			<svg aria-hidden="true" class="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>
-		</div>
-		<div id="legend-comments" class="legend">View comments</div>
-	</summary>
 	<div class="giscus-comments" id="giscus-comments">
-		<script>
-			function getGiscusTheme() {
-				const html = document.querySelector("html")
-				const giscusTheme = html.getAttribute("data-theme") === "dark" ? {{ $dataThemeDark }} : {{ $dataThemeLight }};
-				return giscusTheme;
-			}
-
-			function setGiscusTheme() {
-				function sendMessage(message) {
-					const iframe = document.querySelector('iframe.giscus-frame');
-					if (!iframe) return;
-					iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-				}
-				sendMessage({
-					setConfig: {
-						theme: getGiscusTheme(),
-					},
-				});
-			}
-
-			document.addEventListener('DOMContentLoaded', function () {
-				const giscusAttributes = {
-					"src": "https://giscus.app/client.js",
-					"data-repo": "[ENTER REPO HERE]",
-					"data-repo-id": "[ENTER REPO ID HERE]",
-					"data-category": "[ENTER CATEGORY NAME HERE]",
-					"data-category-id": "[ENTER CATEGORY ID HERE]",
-					"data-mapping": "pathname",
-					"data-strict": "1",
-					"data-reactions-enabled": "1",
-					"data-emit-metadata": "0",
-					"data-input-position": "bottom",
-					"data-theme": getGiscusTheme(),
-					"data-lang": "en",
-					"crossorigin": "anonymous",
-					"data-loading": "lazy",
-					"async": "",
-				};
-
-				// Dynamically create script tag
-				const giscusScript = document.createElement("script");
-				Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-				let divToAdd = document.querySelector('.giscus-comments');
-
-				// Inject script when user clicks the `details` element
-				let detailsGiscus = document.getElementById('data-comments');
-				let commentsLegend = document.getElementById('legend-comments');
-				detailsGiscus.addEventListener("toggle", toggleDetails);
-				function toggleDetails() {
-					divToAdd.appendChild(giscusScript);
-					if (commentsLegend.innerHTML === 'View comments') {
-						commentsLegend.innerHTML = 'Hide comments';
-					} else {
-						commentsLegend.innerHTML = 'View comments';
-					}
-				}
-				// Update giscus theme when theme switcher is clicked
-				const toggle = document.querySelector('.nav-ModeToggle');
-				if (toggle) {
-					toggle.addEventListener('click', setGiscusTheme);
-				}
-			});
+		{{- $jsComments := resources.Get "js/comments-giscus.js" | resources.Minify | fingerprint -}}
+		<script
+			src="{{ $jsComments.RelPermalink }}"
+			integrity="{{ $jsComments.Data.Integrity }}"
+			defer
+		>
 		</script>
 	</div>
 </details>
 <noscript><p class="ctr legal">Commenting feature requires activation of JavaScript.</p></noscript>
 ```
 
+And then we have the actual JS file, stored in `assets/js` for the `resources.Get` statement from above:
+
+```js{filename="comments-giscus.js" bigdiv=true}
+function getGiscusTheme() {
+	const html = document.querySelector("html")
+	const giscusTheme = html.getAttribute("data-theme") === "dark" ? {{ $dataThemeDark }} : {{ $dataThemeLight }};
+	return giscusTheme;
+}
+
+function setGiscusTheme() {
+	function sendMessage(message) {
+		const iframe = document.querySelector('iframe.giscus-frame');
+		if (!iframe) return;
+		iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+	}
+	sendMessage({
+		setConfig: {
+			theme: getGiscusTheme(),
+		},
+	});
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+	const giscusAttributes = {
+		"src": "https://giscus.app/client.js",
+		"data-repo": "[ENTER REPO HERE]",
+		"data-repo-id": "[ENTER REPO ID HERE]",
+		"data-category": "[ENTER CATEGORY NAME HERE]",
+		"data-category-id": "[ENTER CATEGORY ID HERE]",
+		"data-mapping": "pathname",
+		"data-strict": "1",
+		"data-reactions-enabled": "1",
+		"data-emit-metadata": "0",
+		"data-input-position": "bottom",
+		"data-theme": getGiscusTheme(),
+		"data-lang": "en",
+		"crossorigin": "anonymous",
+		"data-loading": "lazy",
+		"async": "",
+	};
+
+	// Dynamically create script tag
+	const giscusScript = document.createElement("script");
+	Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+	let divToAdd = document.querySelector('.giscus-comments');
+
+	// Inject script when user clicks the `details` element
+	let detailsGiscus = document.getElementById('data-comments');
+	let commentsLegend = document.getElementById('legend-comments');
+	detailsGiscus.addEventListener("toggle", toggleDetails);
+	function toggleDetails() {
+		divToAdd.appendChild(giscusScript);
+		if (commentsLegend.innerHTML === 'View comments') {
+			commentsLegend.innerHTML = 'Hide comments';
+		} else {
+			commentsLegend.innerHTML = 'View comments';
+		}
+	}
+	// Update giscus theme when theme switcher is clicked
+	const toggle = document.querySelector('.nav-ModeToggle');
+	if (toggle) {
+		toggle.addEventListener('click', setGiscusTheme);
+	}
+});
+```
+<br>
+
 ----
 
-## Update, 2024-01-25
+## Update, 2024-02-15
 
-After [adapting the site for a switch that enabled auto mode as well as light and dark modes](/posts/2024/01/its-tri-state-switch-time/), I realized I'd need to revisit this post and provide similar fixes to the featured code, so here's a revised version:
+After [adapting the site for a switch that enabled auto mode as well as light and dark modes](/posts/2024/01/its-tri-state-switch-time/), I realized I'd need to revisit this post and provide similar fixes to the featured code, so here's a revised version of the JavaScript file that the Hugo template calls.
 
-```go-html-template{filename="comments-giscus.html" bigdiv=true}
-{{/*
-	=== `data-theme` choices ===
-	For now, these are just "auto," "light," and "dark"; but, in case you use
-	separate CSS files for these (such as for using additional fonts),
-	having these variables will allow for that.
-*/}}
-{{- $dataThemeLight := "light" -}}
-{{- $dataThemeDark := "dark" -}}
-{{- $dataThemeAuto := "preferred_color_scheme" -}}
+```js{filename="comments-giscus.js" bigdiv=true}
+getGiscusTheme = () => {
+	const themeStatus = localStorage.getItem("theme");
+	let
+		dataThemeAuto = "preferred_color_scheme",
+		dataThemeLight = "light",
+		dataThemeDark = "dark",
+		giscusTheme = dataThemeAuto;
+	if (themeStatus === undefined || themeStatus === "auto") {
+		giscusTheme = dataThemeAuto;
+	} else if (themeStatus === "light") {
+		giscusTheme = dataThemeLight;
+	} else if (themeStatus === "dark") {
+		giscusTheme = dataThemeDark;
+	}
+	return giscusTheme;
+}
 
-<details class="comments nScrHidden" id="data-comments" data-pagefind-ignore>
-	<summary data-pagefind-ignore aria-label="Toggle for viewing or hiding comments">
-		<div class="svg">
-			<svg aria-hidden="true" class="inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>
-		</div>
-		<div id="legend-comments" class="legend">View comments</div>
-	</summary>
-	<div class="giscus-comments" id="giscus-comments">
-		<script>
-			function getGiscusTheme() {
-				const htmlDoc = document.querySelector("html");
-				const themeStatus = localStorage.getItem("theme");
-				let giscusTheme = {{ $dataThemeAuto }};
-				if (themeStatus === undefined || themeStatus === "auto") {
-					giscusTheme = {{ $dataThemeAuto }};
-				} else if (themeStatus === "light") {
-					giscusTheme = {{ $dataThemeLight }};
-				} else if (themeStatus === "dark") {
-					giscusTheme = {{ $dataThemeDark }};
-				}
-				return giscusTheme;
-			}
+setGiscusTheme = () => {
+	function sendMessage(message) {
+		const iframe = document.querySelector('iframe.giscus-frame');
+		if (!iframe) return;
+		iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+	}
+	sendMessage({
+		setConfig: {
+			theme: getGiscusTheme(),
+		},
+	});
+}
 
-			function setGiscusTheme() {
-				function sendMessage(message) {
-					const iframe = document.querySelector('iframe.giscus-frame');
-					if (!iframe) return;
-					iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-				}
-				sendMessage({
-					setConfig: {
-						theme: getGiscusTheme(),
-					},
-				});
-			}
+document.addEventListener('DOMContentLoaded', function () {
+	const giscusAttributes = {
+		"src": "https://giscus.app/client.js",
+		"data-repo": "[ENTER REPO HERE]",
+		"data-repo-id": "[ENTER REPO ID HERE]",
+		"data-category": "[ENTER CATEGORY NAME HERE]",
+		"data-category-id": "[ENTER CATEGORY ID HERE]",
+		"data-mapping": "pathname",
+		"data-strict": "1",
+		"data-reactions-enabled": "1",
+		"data-emit-metadata": "0",
+		"data-input-position": "bottom",
+		"data-theme": getGiscusTheme(),
+		"data-lang": "en",
+		"crossorigin": "anonymous",
+		"data-loading": "lazy",
+		"async": "",
+	};
 
-			document.addEventListener('DOMContentLoaded', function () {
-				const giscusAttributes = {
-					"src": "https://giscus.app/client.js",
-					"data-repo": "[ENTER REPO HERE]",
-					"data-repo-id": "[ENTER REPO ID HERE]",
-					"data-category": "[ENTER CATEGORY NAME HERE]",
-					"data-category-id": "[ENTER CATEGORY ID HERE]",
-					"data-mapping": "pathname",
-					"data-strict": "1",
-					"data-reactions-enabled": "1",
-					"data-emit-metadata": "0",
-					"data-input-position": "bottom",
-					"data-theme": getGiscusTheme(),
-					"data-lang": "en",
-					"crossorigin": "anonymous",
-					"data-loading": "lazy",
-					"async": "",
-				};
+	// Dynamically create script tag
+	const giscusScript = document.createElement("script");
+	Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+	let divToAdd = document.querySelector('.giscus-comments');
 
-				// Dynamically create script tag
-				const giscusScript = document.createElement("script");
-				Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-				let divToAdd = document.querySelector('.giscus-comments');
-
-				// Inject script when user clicks the `details` element
-				let detailsGiscus = document.getElementById('data-comments');
-				let commentsLegend = document.getElementById('legend-comments');
-				detailsGiscus.addEventListener("toggle", toggleDetails);
-				function toggleDetails() {
-					divToAdd.appendChild(giscusScript);
-					if (commentsLegend.innerHTML === 'View comments') {
-						commentsLegend.innerHTML = 'Hide comments';
-					} else {
-						commentsLegend.innerHTML = 'View comments';
-					}
-				}
-				// Update giscus theme when theme switcher is clicked
-				const buttonLight = document.getElementById("lightMode");
-				const buttonAuto = document.getElementById("autoMode");
-				const buttonDark = document.getElementById("darkMode");
-				buttonLight.addEventListener('click', setGiscusTheme);
-				buttonAuto.addEventListener('click', setGiscusTheme);
-				buttonDark.addEventListener('click', setGiscusTheme);
-			});
-		</script>
-	</div>
-</details>
-<noscript><p class="ctr legal">Commenting feature requires activation of JavaScript.</p></noscript>
+	// Inject script when user clicks the `details` element
+	let
+		detailsGiscus = document.getElementById('data-comments'),
+		commentsLegend = document.getElementById('legend-comments');
+	detailsGiscus.addEventListener("toggle", toggleDetails);
+	function toggleDetails() {
+		divToAdd.appendChild(giscusScript);
+		if (commentsLegend.innerHTML === 'View comments') {
+			commentsLegend.innerHTML = 'Hide comments';
+		} else {
+			commentsLegend.innerHTML = 'View comments';
+		}
+	}
+	// Update giscus theme when theme switcher is clicked
+	const buttonLight = document.getElementById("lightMode");
+	const buttonAuto = document.getElementById("autoMode");
+	const buttonDark = document.getElementById("darkMode");
+	buttonLight.addEventListener('click', setGiscusTheme);
+	buttonAuto.addEventListener('click', setGiscusTheme);
+	buttonDark.addEventListener('click', setGiscusTheme);
+});
 ```
