@@ -5,12 +5,10 @@
 	allow "unsafe-inline" --- because CFF injects a `style`
 	AFTER the Page Function injects the CSP.
 */ -}}
-
-{{/*  {{- partialCached "head-css-unscoped.html" . }}  */}}
-{{- partial "head-css-scoped.html" . -}}
-
-
+{{- partialCached "head-css-unscoped.html" . }}
+{{/*  {{- partial "head-css-scoped.html" . -}}  */}}
 {{- /*
+
 	**IMPORTANT**:
 
 	If using UNSCOPED, be sure that `index.css` **is**
