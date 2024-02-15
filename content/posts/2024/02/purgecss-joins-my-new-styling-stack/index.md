@@ -57,7 +57,9 @@ Yep, that's right. And considerations of that nature are why I've long included 
 - Sets the Node.js environment to production.
 - Deletes any folders and files left over from previous builds.
 - Runs Lightning CSS and then PurgeCSS.
-- Runs `hugo server`, but in Hugo's production mode.
+- Runs a Hugo build and then uses the [serve](https://github.com/vercel/serve) package to show me how things will look in production mode.[^serve]
+
+[^serve]: In the original version of this post, I said: "Runs `hugo server`, but in Hugo's production mode." However, a comment from a June, 2023, thread on the Hugo Discourse forum dissuaded me from continuing to go that route.
 
 This lets me see the site locally as it would appear on the actual web, giving me the chance to confirm that things look as they should. If they don't because PurgeCSS has deleted some needed styling, that's when I compare the affected item with what's currently on the real website. I use the browser Inspector to see what's missing and edit the PurgeCSS `safelist` object as needed.
 
@@ -96,7 +98,8 @@ First, the general scripting:
 		"build:purge": "purgecss --config ./purgecss.config.js",
 		"build:prelim": "NODE_ENV=production npm-run-all clean:* build:lcss build:purge",
 		"build": "npm-run-all build:prelim prod:hugo",
-		"testbuild": "npm-run-all build:prelim testbuild:hugo",
+		"serve": "npx serve -l tcp://$npm_package_config_myIP",
+		"testbuild": "NODE_ENV=production npm-run-all build serve",
 		"watch": "npm-watch"
 	},
 	"devDependencies": {
@@ -104,6 +107,7 @@ First, the general scripting:
 		"npm-run-all": "^4.1.5",
 		"npm-watch": "^0.11.0",
 		"purgecss": "^5.0.0",
+		"serve": "^14.2.1",
 		"rimraf": "^5.0.5"
 	}
 }
@@ -136,9 +140,35 @@ module.exports = {
 			/code-inline/
 		],
 		variables: [
+			/pf/,
+			/slate-/,
+			/gray-/,
+			/neutral-400/,
+			/neutral-600/,
 			/emerald-050/,
 			/emerald-900/,
-			/blue-800/
+			/red-300/,
+			/red-400/,
+			/red-600/,
+			/red-700/,
+			/orange-300/,
+			/orange-700/,
+			/yellow-200/,
+			/yellow-300/,
+			/yellow-800/,
+			/green-100/,
+			/green-600/,
+			/emerald-050/,
+			/emerald-200/,
+			/emerald-700/,
+			/emerald-900/,
+			/cyan-300/,
+			/cyan-600/,
+			/blue-/,
+			/fuchsia-300/,
+			/fuchsia-700/,
+			/rose-300/,
+			/rose-700/
 		]
 	},
 	variables: true
@@ -154,7 +184,9 @@ In my case, the reductions in CSS load size so far haven't been that great, espe
 - Christian Oliff
 	- "[Using PurgeCSS with Hugo](https://christianoliff.com/blog/using-purgecss-with-hugo/)" (<span class="nobrk">2022-07-05</span>).
 	- ["Using PurgeCSS with Hugo" video](https://www.youtube.com/watch?v=qg1MkT1o_PI) from [HugoConf 2022](https://hugoconf.io/hugoconf-2022/) (presented <span class="nobrk">2022-07-07</span>).
-- Hugo Discourse forum, "[PurgeCSS and highlighting](https://discourse.gohugo.io/t/purgecss-and-highlighting/41021)" (topic initiated <span class="nobrk">2022-10-20</span>).
+- Hugo Discourse forum
+	- "[PurgeCSS and highlighting](https://discourse.gohugo.io/t/purgecss-and-highlighting/41021)" (topic initiated <span class="nobrk">2022-10-20</span>).
+	- "[Trouble with PurgeCSS](https://discourse.gohugo.io/t/trouble-with-purgecss/45501)" (topic initiated <span class="nobrk">2023-07-27)</span>).
 - Hugo documentation, "[Configure Hugo](https://gohugo.io/getting-started/configuration/)"  (last updated <span class="nobrk">2024-01-09</span>).
 - PurgeCSS documentation
 	- [CLI](https://purgecss.com/CLI.html) (last updated <span class="nobrk">2022-02-18</span>).
