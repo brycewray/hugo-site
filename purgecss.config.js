@@ -20,6 +20,7 @@ module.exports = {
 			/code-inline/
 		],
 		variables: [
+			/pf/,
 			/slate-/,
 			/gray-/,
 			/neutral-400/,
