@@ -346,11 +346,7 @@ html[data-theme="dark"] {
 	}
 }
 
-/*
-In scoped mode,
-code needed for articles (below)
-is in `artcode.css` partial.
-*/
+/* needed for articles */
 
 code, article code, .box code {
 	background-color: var(--bkgd-article-code);
