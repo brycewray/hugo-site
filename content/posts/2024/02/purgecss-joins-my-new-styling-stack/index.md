@@ -186,7 +186,7 @@ In my case, the reductions in CSS load size so far haven't been that great, espe
 	- ["Using PurgeCSS with Hugo" video](https://www.youtube.com/watch?v=qg1MkT1o_PI) from [HugoConf 2022](https://hugoconf.io/hugoconf-2022/) (presented <span class="nobrk">2022-07-07</span>).
 - Hugo Discourse forum
 	- "[PurgeCSS and highlighting](https://discourse.gohugo.io/t/purgecss-and-highlighting/41021)" (topic initiated <span class="nobrk">2022-10-20</span>).
-	- "[Trouble with PurgeCSS](https://discourse.gohugo.io/t/trouble-with-purgecss/45501)" (topic initiated <span class="nobrk">2023-07-27)</span>).
+	- "[Trouble with PurgeCSS](https://discourse.gohugo.io/t/trouble-with-purgecss/45501)" (topic initiated <span class="nobrk">2023-07-27</span>).
 - Hugo documentation, "[Configure Hugo](https://gohugo.io/getting-started/configuration/)"  (last updated <span class="nobrk">2024-01-09</span>).
 - PurgeCSS documentation
 	- [CLI](https://purgecss.com/CLI.html) (last updated <span class="nobrk">2022-02-18</span>).
