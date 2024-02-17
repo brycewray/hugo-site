@@ -3,11 +3,11 @@ module.exports = {
 		"./hugo_stats.json",
 		"./assets/**/*.js"
 	],
-	css: ['./assets/css/**/*.css'],
-	output: './assets/css',
+	css: ['./assets/**/*.*css'],
 	safelist: {
 		standard: [
-			/^\:.*/
+			/^\:.*/,
+			/shadow/
 		],
 		deep: [
 			/chroma/,
@@ -21,12 +21,14 @@ module.exports = {
 		],
 		variables: [
 			/pf/,
+			/border/,
+			/bquote/,
+			/bkgd/,
+			/mono/,
 			/slate-/,
 			/gray-/,
 			/neutral-400/,
 			/neutral-600/,
-			/emerald-050/,
-			/emerald-900/,
 			/red-300/,
 			/red-400/,
 			/red-600/,
@@ -48,7 +50,8 @@ module.exports = {
 			/fuchsia-300/,
 			/fuchsia-700/,
 			/rose-300/,
-			/rose-700/
+			/rose-700/,
+			/filter/
 		]
 	},
 	variables: true
