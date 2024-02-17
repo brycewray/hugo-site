@@ -1,12 +1,12 @@
-{{- partialCached "head-criticalscss.html" . }}
-{{/*  {{- partialCached "head-criticalscss-cff.html" . }}  */}}
+{{/*  {{- partialCached "head-criticalscss.html" . }}  */}}
+{{- partialCached "head-criticalscss-cff.html" . }}
 {{- /*
 	With CFF, remember that the CSP's `style-src` must
 	allow "unsafe-inline" --- because CFF injects a `style`
 	AFTER the Page Function injects the CSP.
 */ -}}
-{{- partialCached "head-scss-unscoped.html" . }}
-{{/*  {{- partial "head-scss-scoped.html" . -}}  */}}
+{{/*  {{- partialCached "head-scss-unscoped.html" . }}  */}}
+{{- partial "head-scss-scoped.html" . -}}
 {{- /*
 
 	**IMPORTANT**:
