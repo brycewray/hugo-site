@@ -1,0 +1,17 @@
+	{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
+	{{- $fonts := resources.Get "scss/fonts.scss" | toCSS $optionsCSSCritical -}}
+	{{- if hugo.IsProduction -}}
+		{{- $fonts = $fonts | postCSS -}}
+	{{- end -}}
+	{{- with $fonts }}
+		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" crossorigin>
+		{{/*  <link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" crossorigin>  */}}
+		<style media="screen and (min-width: 1024px)">{{ .Content | safeCSS }}</style>
+	{{- end }}
+	{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
+	{{- if hugo.IsProduction -}}
+		{{- $css = $css | postCSS -}}
+	{{- end -}}
+	{{- with $css -}}
+		<style media="screen">{{ .Content | safeCSS }}</style>
+	{{- end }}
