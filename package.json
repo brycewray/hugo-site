@@ -1,29 +1,21 @@
 {
 	"config": {
-		"myIP": "192.168.0.70",
-		"targets": "defaults"
+		"myIP": "192.168.0.70"
 	},
-	"watch": {
-		"dev:lcss": {
-			"patterns": [
-				"assets/css-original"
-			],
-			"extensions": "css,scss",
-			"quiet": true,
-			"runOnChangeOnly": false
-		}
-	},
+	"browserslist": [
+		"defaults"
+	],
 	"scripts": {
 		"clean:hugo": "rimraf public",
 		"search": "pagefind --site public",
-		"clean:search": "rimraf static/pagefind",
+		"clean:search": "rimraf static/pagefind && rimraf static/_pagefind",
 		"dev:search": "pagefind --site public --bundle-dir ../static/pagefind",
 		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
 		"prod:hugo": "hugo --minify",
 		"testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
-		"start": "NODE_ENV=development npm-run-all clean:hugo dev:hugo",
-		"build:prelim": "NODE_ENV=production npm-run-all clean:hugo prod:hugo",
+		"start": "NODE_ENV=development npm-run-all clean:* dev:hugo",
+		"build:prelim": "NODE_ENV=production npm-run-all clean:* prod:hugo",
 		"build": "npm-run-all build:prelim move-excerpts search",
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
 		"deploy": "npm-run-all build deploy:wrangler",
@@ -33,6 +25,7 @@
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^5.0.0",
 		"autoprefixer": "^10.4.17",
+		"browserslist": "^4.23.0",
 		"cssnano": "^6.0.3",
 		"npm-run-all": "^4.1.5",
 		"pagefind": "^1.0.4",
