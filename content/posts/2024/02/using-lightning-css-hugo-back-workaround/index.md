@@ -32,7 +32,7 @@ All of this meant I'd ended up with `package.json` scripts like this:
 "start": "NODE_ENV=development npm-run-all clean:* dev:lcss --parallel dev:hugo watch"
 ```
 
-As I acknowledged, I'd ended up with a "Franken-config"; and, its complexity aside, it also was much more external to normal Hugo workings than I preferred. It truly was what I'd called it: a workaround. But was there a way to go back to a simpler, more "true Hugo" process while still keeping the advantages of Lightning CSS *and* not incurring the performance slowdowns of PostCSS?
+As I acknowledged, I'd ended up with a "Franken-config"; and, its complexity aside, it also was much more external to normal Hugo workings than I preferred. In fact, in that way, it was even more of a workaround than had been using the PostCSS plugin. But was there a way to go back to a simpler, more "true Hugo" process while still keeping the advantages of Lightning CSS *and* not incurring the performance slowdowns of PostCSS?
 
 The answer began to reveal itself while I researched the addition of PurgeCSS to the mix.
 
