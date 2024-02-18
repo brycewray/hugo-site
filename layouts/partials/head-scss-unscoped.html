@@ -1,9 +1,10 @@
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
 {{- $scssOptionsPrint := $scssOptions -}}
-{{- $scssComp := dict "outputStyle" "compressed" -}}
+{{/*  {{- $scssComp := dict "outputStyle" "compressed" -}}  */}}
+{{/* unneeded because we minify in production with non-Sass processing */}}
 
 {{- if hugo.IsProduction -}}
-	{{- $scssOptions = merge $scssOptions $scssComp (dict "targetPath" "css/index.min.css") -}}
+	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/index.min.css") -}}
 {{- else -}}
 	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/index.css") -}}
 {{- end -}}
@@ -18,7 +19,7 @@
 
 {{- /* for those who've requested CSS for printing */ -}}
 {{- if hugo.IsProduction -}}
-	{{- $scssOptionsPrint = merge $scssOptionsPrint $scssComp (dict "targetPath" "css/print.min.css") -}}
+	{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.min.css") -}}
 {{- else -}}
 	{{- $scssOptionsPrint = merge $scssOptionsPrint (dict "targetPath" "css/print.css") -}}
 {{- end -}}
