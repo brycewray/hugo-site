@@ -9,7 +9,7 @@
 		"dev:search": "pagefind --site public --output-subdir ../static/pagefind",
 		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
-		"prod:hugo": "hugo --minify",
+		"prod:hugo": "hugo --minify --gc",
 		"testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* dev:hugo",
 		"startpf": "NODE_ENV=development npm-run-all clean:* prod:hugo dev:search dev:hugo",
