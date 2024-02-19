@@ -1,22 +1,30 @@
-// all of this is for production only
-
-const purgeCSS = require('@fullhuman/postcss-purgecss')
-const postcssLightningcss = require("postcss-lightningcss")
+const postcssImport = require('postcss-import')({
+	path: "./assets/css/"
+})
+const postcssPresetEnv =
+	require('postcss-preset-env')({
+		stage: 2,
+		features: {
+			'nesting-rules': true
+		}
+	})
+const purgeCSS =
+	require('@fullhuman/postcss-purgecss')({
+		config: "./purgecss.config.js"
+	})
+// const autoPrefixer =
+// 	require('autoprefixer')({})
+const cssNano =
+	require('cssnano')({
+		preset: "default"
+	})
 
 module.exports = {
 	plugins: [
-		purgeCSS({
-			config: "./purgecss.config.js"
-		}),
-		postcssLightningcss({
-			browsers: "defaults", // per `https://browsersl.ist/`
-			lightningcssOptions: {
-				minify: true,
-				cssModules: false,
-				drafts: {
-					nesting: true // for whenever Sass starts "emitting" it
-				}
-			}
-		})
+		// autoPrefixer,
+		postcssImport,
+		...process.env.HUGO_ENVIRONMENT === 'production'
+		? [postcssPresetEnv, purgeCSS, cssNano]
+		: []
 	]
 }
