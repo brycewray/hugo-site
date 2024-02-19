@@ -24,6 +24,7 @@
 		"testbuild": "NODE_ENV=production npm-run-all build serve"
 	},
 	"devDependencies": {
+		"@csstools/postcss-bundler": "^1.0.9",
 		"@fullhuman/postcss-purgecss": "^5.0.0",
 		"autoprefixer": "^10.4.17",
 		"browserslist": "^4.23.0",
@@ -37,8 +38,5 @@
 		"rimraf": "^5.0.5",
 		"serve": "^14.2.1",
 		"wrangler": "^3.28.2"
-	},
-	"dependencies": {
-		"postcss-import": "^16.0.1"
 	}
 }

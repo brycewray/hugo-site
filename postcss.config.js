@@ -1,6 +1,4 @@
-const postcssImport = require('postcss-import')({
-	path: "./assets/css/"
-})
+const postcssBundler = require('@csstools/postcss-bundler')
 const postcssPresetEnv =
 	require('postcss-preset-env')({
 		stage: 2,
@@ -22,7 +20,7 @@ const cssNano =
 module.exports = {
 	plugins: [
 		// autoPrefixer,
-		postcssImport,
+		postcssBundler,
 		...process.env.HUGO_ENVIRONMENT === 'production'
 		? [postcssPresetEnv, purgeCSS, cssNano]
 		: []

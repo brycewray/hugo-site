@@ -1,14 +1,14 @@
-@import 'article.css';
-@import 'billboard.css';
-@import 'code-all.css';
-@import 'footnotes.css';
-@import 'fourohfour.css';
-@import 'home.css';
-@import 'lite-yt-embed.css';
-@import 'posts-list.css';
-@import 'posts-single.css';
-/* @import 'search-btn.css'; */
-@import 'search-form.css';
-@import 'sitemaphtml.css';
-@import 'social.css';
-@import 'tables.css';
+@import url('assets/css/article.css');
+@import url('assets/css/billboard.css');
+@import url('assets/css/code-all.css');
+@import url('assets/css/footnotes.css');
+@import url('assets/css/fourohfour.css');
+@import url('assets/css/home.css');
+@import url('assets/css/lite-yt-embed.css');
+@import url('assets/css/posts-list.css');
+@import url('assets/css/posts-single.css');
+/* @import url('assets/css/search-btn.css'); */
+@import url('assets/css/search-form.css');
+@import url('assets/css/sitemaphtml.css');
+@import url('assets/css/social.css');
+@import url('assets/css/tables.css');
