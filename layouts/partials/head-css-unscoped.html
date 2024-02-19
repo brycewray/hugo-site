@@ -1,8 +1,25 @@
 {{- $opts := dict "inlineImports" true -}}
 
-{{- $css := resources.Get "css/index.css" | postCSS $opts -}}
+{{- $cssFiles := slice -}}
+{{- $cssFiles = append (resources.Get "css/article.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/billboard.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/code-all.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/footnotes.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/fourohfour.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/home.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/lite-yt-embed.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/posts-list.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/posts-single.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/search-form.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/sitemaphtml.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/social.css") $cssFiles -}}
+{{- $cssFiles = append (resources.Get "css/tables.css") $cssFiles -}}
+
+{{- $css := $cssFiles | resources.Concat "css/index.css" -}}
+{{/*  {{- $css := resources.Get "css/index.css" | postCSS $opts -}}  */}}
+
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | resources.Copy "css/index.min.css" | fingerprint -}}
+	{{- $css = $css | resources.Copy "css/index.min.css" | postCSS | fingerprint -}}
 {{- end -}}
 {{- with $css }}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -10,9 +27,9 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- $printCSS := resources.Get "css/print.css" | postCSS $opts -}}
+{{- $printCSS := resources.Get "css/print.css" -}}
 {{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | fingerprint -}}
+	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | postCSS | fingerprint -}}
 {{- end -}}
 {{- with $printCSS -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
