@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+/* == footnotes == */
+
+.footnotes ol li, .footnotes ol li p, .footnote-ref,
+.footnote-backref, .footnote-sim, a.footnote-return {
+	font-weight: var(--font-weight-sm);
+}
+
+.footnotes {
+	padding-top: 0.5em;
+	/* padding-bottom: 1em; */
+	hr {
+		border: none;
+		height: 2px;
+		background-color: var(--head);
+	}
+	ol {
+		padding-inline-start: 1.5rem;
+	}
+	ol li {
+		font-size: clamp(0.625rem, 1vw + 0.5em, 0.9em);
+		/*
+		As of now, `::marker` has too little support even in good browsers;
+		see https://developer.mozilla.org/en-US/docs/Web/CSS/::marker#allowable_properties
+		*/
+		p {
+			line-height: 1.5em;
+		}
+	}
+	.footnote-backref {
+		font-size: 75%;
+	}
+}
+
+.footnote-sim {
+	font-size: 0.65em;
+	color: var(--link);
+}
+
+a.footnote-return {
+	font-size: 50%;
+}
+
+/* == end, footnotes == */

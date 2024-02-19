@@ -1,0 +1,464 @@
+@charset 'utf-8';
+
+/* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
+
+:root {
+	--tc-corner-radius: 1em;
+	--tc-padding: 1em;
+	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.twitter-tweet {
+	font-size: var(--text-sm);
+	a {
+		margin-left: 0.5em;
+	}
+	@media screen and (min-width: 1024px) {
+		p {
+			font-size: var(--text-xl);
+		}
+	}
+}
+
+.toot-blockquote {
+	line-height: 1.35em; /* for non-`p` results from `text` var */
+	font-family: var(--social-sans-serif);
+	font-size: var(--text-base);
+	p {
+		margin-top: 0; /* reset */
+		color: var(--default);
+		margin-bottom: 1em;
+		line-height: 1.35em;
+	}
+	margin: 1.5rem auto;
+	padding: 1rem;
+	border: 2px solid;
+	border-color: var(--gray-700);
+	border-radius: 12px;
+	background: var(--white);
+	width: 100%;
+	@media screen and (min-width: 900px) {
+		width: 80%;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 85%;
+	}
+	/* @media screen and (min-width: 1536px) {
+	   width: 85%;
+	}
+	*/
+	@media screen and (min-width: 1920px) {
+		max-width: 80ch;
+	}
+	a, a:hover {
+		border: none !important;
+		text-decoration: none;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: break-word;
+		/*
+		See:
+		- https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+		- https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/
+		- https://css-tricks.com/better-line-breaks-for-long-urls/
+		*/
+	}
+}
+
+.toot-body {
+	text-align: left !important;
+}
+
+/*
+==== rounded image "attachment"
+Eleventy version
+*/
+.toot-images {
+	img {
+		border-radius: 12px;
+	}
+}
+/* Hugo version */
+.toot-media-img {
+	width: 100%; /* overcoming something in Andy Bell's `reset` */
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+.toot-blockquote-img {
+	border-bottom: 1px solid;
+	border-bottom-color: var(--gray-700);
+	width: 100%;
+}
+
+.toot-player {
+	display: flex;
+}
+
+/* ==== END, rounded image "attachment" */
+
+a > .card, a > .toot-card {
+	color: var(--gray-800);
+}
+
+.card {
+	overflow: hidden;
+	margin-top: 1em;
+	border-radius: 12px;
+	border: 1px solid;
+	border-color: var(--gray-700);
+	p {
+		padding: 0.5em 1em 1em;
+		line-height: 1.4;
+		margin-top: 0;
+		font-size: var(--text-sm);
+		.card-title {
+			color: var(--black);
+		}
+	}
+}
+
+.toot-header {
+	display: flex;
+	.toot-profile {
+		margin-right: 0.5em;
+		margin-bottom: 1em;
+		flex-shrink: 0;
+		img {
+			border-radius: 9999px;
+			width: 48px;
+			height: auto;
+		}
+	}
+	.toot-author {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		.toot-bird {
+			margin-left: 1.25rem;
+		}
+	}
+	.toot-author-name {
+		font-weight: bold;
+		font-size: var(--text-base);
+		color: var(--black);
+		line-height: 1.375;
+	}
+	.toot-author-handle {
+		color: var(--gray-700);
+		font-weight: var(--font-weight-sm);
+		font-size: var(--text-sm);
+		line-height: 1;
+	}
+}
+
+.toot-footer {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	color: var(--gray-800);
+	font-size: var(--text-sm);
+	font-weight: var(--font-weight-sm);
+	.toot-like-icon, .toot-like-count {
+		display: none;
+	}
+	a {
+		color: var(--gray-800);
+		&:hover {
+			color: var(--link);
+		}
+	}
+	/* === needed in Eleventy but not in Hugo
+	.toot-date:after {
+		content: " (UTC)";
+		font-size: var(--text-xs);
+	}
+	*/
+}
+
+[class^='toot-img-grid'],
+.toot-video-wrapper,
+.toot-media-video {
+	margin-top: 0.5em;
+	border-radius: var(--tc-corner-radius);
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 2px;
+}
+
+.toot-video-wrapper {
+	border-radius: var(--tc-corner-radius);
+	display: block;
+	/* overriding previous */
+	position: relative;
+}
+
+.toot-img-grid-3 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.toot-img-grid-3 .toot-media-img {
+	aspect-ratio: 1.8;
+}
+
+.toot-img-grid-3 :nth-child(1) {
+	grid-row: 1 / span 2;
+	height: 100%;
+}
+
+.toot-img-grid-3 :nth-child(1) .toot-media-img {
+	aspect-ratio: 0.9;
+}
+
+.toot-img-grid-2,
+.toot-img-grid-4 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.toot-sens-blur {
+	filter: blur(5rem);
+	position: relative;
+}
+
+.toot-sens-blur-no {
+	filter: none !important;
+	z-index: 9999 !important;
+	position: relative;
+}
+
+[class^='toot-img-grid'] {
+	position: relative;
+}
+
+.blur-text {
+	position: absolute;
+	font-weight: bold;
+	text-shadow: 0.125em 0.125em 0.1em var(--black);
+	width: 100%;
+	top: 40%;
+	color: var(--white);
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.2;
+}
+
+.blur-text-no {
+	display: none !important;
+	background-color: var(--black);
+}
+
+.toot-poll-wrapper {
+	display: grid;
+	grid-template-columns: 3.5em 0.5fr 1fr;
+	grid-gap: 1em;
+	line-height: 1;
+}
+
+.toot-poll-count {
+	grid-column: 1;
+	text-align: right;
+}
+
+.toot-poll-meter {
+	grid-column: 2;
+	meter {
+		width: 100%;
+	}
+}
+
+.toot-poll-title {
+	grid-column: 3;
+}
+
+.toot-poll-total {
+	padding-top: 1em;
+}
+
+
+.toot-quoted-tweet {
+	border: 1px solid;
+	border-color: var(--gray-800);
+	border-radius: 12px;
+	padding: 1em 1em 0.5em 1em;
+	margin-top: 0.75em;
+	margin-bottom: 0;
+	p {
+		font-size: var(--text-sm);
+		margin: 0 0 0.5em;
+		line-height: 1.4;
+		.toot-quoted-toot-profile-image {
+			border-radius: 9999px;
+			width: 18px;
+			height: auto;
+			display: inline;
+		}
+	}
+	p.toot-quoted-toot-head {
+		margin-bottom: 0.25em;
+		a {
+			color: var(--gray-800);
+			&:hover {
+				color: var(--link);
+			}
+		}
+	}
+}
+
+.toot-reply-to {
+	margin-top: 0;
+	padding-top: 0;
+	line-height: 1.3em;
+	color: var(--gray-800);
+	font-size: var(--text-sm);
+	.toot-like-icon, .toot-like-count {
+		display: none;
+	}
+}
+
+.toot-card {
+	position: relative;
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
+	border: 2px solid;
+	border-color: var(--gray-400);
+	border-radius: 6px;
+	margin-top: 1em;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.toot-card-image {
+	flex: 0 0 100px;
+	@media screen and (min-width: 768px) {
+		flex: 0 0 200px;
+	}
+	border-right: 2px solid;
+	border-right-color: var(--gray-400);
+	position: relative;
+}
+
+.toot-card-image-image {
+	display: block;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background-size: cover;
+	background-position: 50%;
+}
+
+.toot-card-content {
+	flex: 1 1 auto;
+	overflow: hidden;
+	padding: 0.75em;
+	line-height: 1.5;
+	.card-title {
+		font-weight: bold;
+	}
+	.card-title, .card-description {
+		font-size: var(--text-sm);
+	}
+}
+
+html[data-theme="dark"] {
+	.toot-blockquote {
+		background: var(--gray-900);
+		/* background: transparent; */
+		border-color: var(--gray-200);
+		color: var(--white);
+		a, a:hover {
+			color: var(--link);
+		}
+	}
+	.toot-blockquote-img {
+		border-bottom-color: var(--gray-300);
+	}
+	a > .card, a > .toot-card {
+		color: var(--gray-300);
+	}
+	.card {
+		border-color: var(--gray-300);
+		p .card-title {
+			color: var(--white);
+		}
+	}
+	.toot-header {
+		.toot-author-name {
+			color: var(--white);
+		}
+		.toot-author-handle {
+			color: var(--gray-300);
+		}
+	}
+	.toot-footer {
+		color: var(--gray-200);
+		a {
+			color: var(--gray-200);
+		}
+	}
+	.toot-quoted-tweet {
+		border-color: var(--gray-200);
+		p.toot-quoted-toot-head {
+			a {
+				color: var(--gray-200);
+			}
+		}
+	}
+	.toot-reply-to {
+		color: var(--gray-200);
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		.toot-blockquote {
+			background: var(--gray-900);
+			/* background: transparent; */
+			border-color: var(--gray-200);
+			color: var(--white);
+			a, a:hover {
+				color: var(--link);
+			}
+		}
+		.toot-blockquote-img {
+			border-bottom-color: var(--gray-300);
+		}
+		a > .card, a > .toot-card {
+			color: var(--gray-300);
+		}
+		.card {
+			border-color: var(--gray-300);
+			p .card-title {
+				color: var(--white);
+			}
+		}
+		.toot-header {
+			.toot-author-name {
+				color: var(--white);
+			}
+			.toot-author-handle {
+				color: var(--gray-300);
+			}
+		}
+		.toot-footer {
+			color: var(--gray-200);
+			a {
+				color: var(--gray-200);
+			}
+		}
+		.toot-quoted-tweet {
+			border-color: var(--gray-200);
+			p.toot-quoted-toot-head {
+				a {
+					color: var(--gray-200);
+				}
+			}
+		}
+		.toot-reply-to {
+			color: var(--gray-200);
+		}
+	}
+}
