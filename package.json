@@ -1,45 +1,37 @@
 {
+	"browserslist": [
+		">0.2%, Firefox ESR, not dead"
+	],
 	"config": {
-		"myIP": "192.168.0.70",
-		"targets": "defaults"
-	},
-	"watch": {
-		"dev:lcss": {
-			"patterns": [
-				"assets/css-original"
-			],
-			"extensions": "css,scss",
-			"quiet": true,
-			"runOnChangeOnly": false
-		}
+		"myIP": "192.168.0.70"
 	},
 	"scripts": {
 		"clean:hugo": "rimraf public",
-		"clean:lcss": "rimraf assets/css",
 		"search": "pagefind --site public",
 		"clean:search": "rimraf static/pagefind && rimraf static/_pagefind",
 		"dev:search": "pagefind --site public --output-subdir ../static/pagefind",
 		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --disableFastRender --forceSyncStatic --gc",
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
 		"prod:hugo": "hugo --minify --gc",
-		"start": "NODE_ENV=development npm-run-all clean:* dev:lcss --parallel dev:hugo watch",
-		"dev:lcss": "lightningcss --bundle --targets \"$npm_package_config_targets\" assets/css-original/*.css --output-dir assets/css",
+		"testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
+		"start": "NODE_ENV=development npm-run-all clean:* dev:hugo",
 		"startpf": "NODE_ENV=development npm-run-all clean:* prod:hugo dev:search dev:hugo",
-		"build:lcss": "npm run dev:lcss -- --minify",
-		"build:purge": "purgecss --config ./purgecss.config.js",
-		"build:prelim": "NODE_ENV=production npm-run-all clean:* build:lcss build:purge prod:hugo",
+		"build:prelim": "NODE_ENV=production npm-run-all clean:* prod:hugo",
 		"build": "npm-run-all build:prelim move-excerpts search",
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
 		"deploy": "npm-run-all build deploy:wrangler",
 		"serve": "npx serve -l tcp://$npm_package_config_myIP",
-		"testbuild": "NODE_ENV=production npm-run-all build serve",
-		"watch": "npm-watch"
+		"testbuild": "NODE_ENV=production npm-run-all build serve"
 	},
 	"devDependencies": {
-		"lightningcss-cli": "^1.23.0",
+		"@fullhuman/postcss-purgecss": "^5.0.0",
+		"browserslist": "^4.23.0",
+		"cssnano": "^6.0.3",
 		"npm-run-all": "^4.1.5",
-		"npm-watch": "^0.11.0",
 		"pagefind": "^1.0.4",
+		"postcss": "^8.4.35",
+		"postcss-cli": "^11.0.0",
+		"postcss-preset-env": "^9.3.0",
 		"purgecss": "^5.0.0",
 		"rimraf": "^5.0.5",
 		"serve": "^14.2.1",

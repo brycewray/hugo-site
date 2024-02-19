@@ -3,8 +3,7 @@ module.exports = {
 		"./hugo_stats.json",
 		"./assets/**/*.js"
 	],
-	css: ['./assets/css/**/*.css'],
-	output: './assets/css',
+	css: ['./assets/**/*.*css'],
 	safelist: {
 		standard: [
 			/^\:.*/,
@@ -25,6 +24,7 @@ module.exports = {
 			/border/,
 			/bquote/,
 			/bkgd/,
+			/box/,
 			/mono/,
 			/slate-/,
 			/gray-/,
