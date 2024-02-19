@@ -10,7 +10,7 @@
 			{{- partialCached "comments-giscus.html" . -}}
 		</article>
 	</div>
-	{{ if or .PrevPage .NextPage }}
+	{{ if or .Prev .Next }}
 		<div class="bg-dark" data-pagefind-ignore>
 			<div class="prevArrow">
 				{{ with .PrevInSection -}}
