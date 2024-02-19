@@ -92,3 +92,6 @@ As for the `package.json` scripting, this change has freed me of the gyrations r
 In fact, if I chose, I now could do without `package.json` scripting altogether and just use ordinary Hugo commands. That said: for the time being, I'll stick with what I have. After all, it's not as if I could lose `package.json` itself, since I'm using packages that reside in `node_modules`.
 
 It's early but, so far, I'm really pleased with how this turned out. It seems to be a true best-of-both-worlds, win-win kind of setup. Not only do I get to continue styling my site with CSS that's been enhanced by intelligent tools; I also once again have a simpler config *and* the fast dev-mode operation for which Hugo is renowned, yet with few or no penalties on Hugo's equally famous build speed.
+
+**Update, 2024-02-19**: Well, I guess it was *too* early. A few hours after I initially issued this post, I ran into some aggravations that led to my returning to the "Franken-config." The Sass/PostCSS config I described in this post definitely works, but I un-did it for reasons whose explanation *may* justify another post somewhere down the line. For now, suffice it to say that I grew unhappy with the apparently lackadaisical pace of updates and releases for the postcss-lightningcss plugin on which the Sass/PostCSS config depended. As usual, YMMV.
+{.box}
