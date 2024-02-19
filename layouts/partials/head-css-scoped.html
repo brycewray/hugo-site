@@ -73,7 +73,7 @@
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
-		{{- $css := resources.Get (print "css/" $fileName ".css") -}}
+		{{- $css := resources.Get (print "css/" $fileName ".css") | postCSS -}}
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | resources.Copy (print "css/" $fileName ".min.css") -}}
 		{{- end -}}
@@ -86,7 +86,7 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- $printCSS := resources.Get "css/print.css" -}}
+{{- $printCSS := resources.Get "css/print.css" | postCSS -}}
 {{- if hugo.IsProduction -}}
 	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" -}}
 	{{/* Lightning CSS is set in package.json to minify only in production */}}
