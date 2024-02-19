@@ -1,0 +1,180 @@
+:root {
+	--navRightMargin: 9.5em;
+	--navToggleRightMargin: 9em;
+	/* all these unless JS is off */
+}
+
+header {
+	background-color: var(--bkgd-nav);
+	position: fixed;
+	width: 100%;
+	margin-top: 0;
+	z-index: 9999;
+}
+
+.nav-Toggle {
+	@media only screen and (min-width: 1024px) {
+		display: none;
+	}
+	position: absolute;
+	cursor: pointer;
+	margin: 0rem 1rem;
+	right: var(--navToggleRightMargin);
+	svg {
+		padding-top: 0.425em;
+		width: 1.5rem;
+		fill: var(--white);
+	}
+	.close {
+		display: none;
+	}
+}
+
+.nav-Checkbox {
+	display: none;
+}
+
+.nav-Menu {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: right;
+	/* align-items: right; */
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	li {
+		list-style: none;
+		display: none;
+		font-weight: var(--font-bold);
+		padding-right: calc(1em + var(--navToggleRightMargin));
+		&.notMobile {
+			display: none;
+		}
+		&:first-child {
+			padding: 0;
+			margin-right: auto;
+			margin-left: 1.5rem;
+			display: block;
+			svg { /* for site logo */
+				width: auto;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		border: 0;
+		color: var(--link-nav);
+		&:focus, &:active, &:hover {
+			color: var(--link-nav-afh);
+		}
+	}
+	@media only screen and (min-width: 1024px) {
+		flex-direction: row;
+		padding: 0;
+		gap: 0.5rem;
+		margin: 0.375rem var(--navRightMargin) 0 0;
+		li {
+			font-size: var(--text-sm);
+			display: block;
+			text-transform: uppercase;
+			margin: 0.5rem 0 0.5rem 0;
+			padding-right: 0.75em;
+			&.notMobile {
+				display: block;
+			}
+			&:first-child {
+				letter-spacing: normal;
+				line-height: 0;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+#nav-Checkbox {
+	&:checked ~ ul.nav-Menu li {
+		display: block;
+	}
+	&:checked ~ label.nav-Toggle .close {
+		display: block;
+	}
+	&:checked ~ label.nav-Toggle .menu {
+		display: none;
+	}
+	&:checked ~ ul.nav-Menu {
+		padding-bottom: 1rem;
+	}
+}
+
+.nav {
+	position: relative;
+}
+
+/* .nav-ModeToggle {
+	position: absolute;
+	cursor: pointer;
+	top: 0.15em;
+	right: 0.5em;
+	@media (min-width: 1024px) {
+		right: 1.5em;
+	}
+	background-color: transparent;
+	border: 0;
+	svg {
+		width: 1.375em;
+		height: auto;
+		&.sun path, &.moon {
+			fill: var(--fill-lightdarktoggle);
+		}
+	}
+} */
+
+.switchTheme {
+	position: absolute;
+	top: 0.45em;
+	right: 1.5em;
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+	background-color: transparent;
+	border: 0;
+	input[type="radio"] {
+		opacity: 0;
+		padding: 0;
+		margin: 0;
+		span {
+			display: inline-block;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			margin: 0;
+			line-height: 1rem;
+		}
+		&:checked+span {
+			border-radius: 15%;
+			outline: 1px solid var(--link-nav-afh);
+			outline-offset: 2px;
+		}
+	}
+	.lightLabel, .autoLabel, .darkLabel {
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		font-size: var(--text-lg);
+		/* keep sep. classes in case we want
+		to customize each, later */
+	}
+}
+
+circle.NavIcon {
+	fill: var(--logocircle);
+}
+a:hover circle.NavIcon {
+	fill: var(--logocircle-afh);
+}
+
+path.NavIcon {
+	fill: var(--white);
+}

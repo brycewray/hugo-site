@@ -3,7 +3,8 @@ module.exports = {
 		"./hugo_stats.json",
 		"./assets/**/*.js"
 	],
-	css: ['./assets/**/*.*css'],
+	css: ['./assets/css/**/*.css'],
+	output: './assets/css',
 	safelist: {
 		standard: [
 			/^\:.*/,

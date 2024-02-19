@@ -1,4 +1,4 @@
-{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
+{{- $opts := dict "inlineImports" true -}}
 
 {{- $URLopen := "https://fonts.googleapis.com/css2?family=" -}}
 {{- $fontSans := "Libre+Franklin" -}}
@@ -27,10 +27,7 @@
 	<link {{ printf "href=%q" $URLMono | safeHTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 {{- end }}
 
-{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
-{{- if hugo.IsProduction -}}
-	{{- $css = $css | postCSS -}}
-{{- end -}}
-{{- with $css -}}
+{{- $css := resources.Get "css/critical.css" }}
+{{- with $css }}
 	<style media="screen">{{ .Content | safeCSS }}</style>
 {{- end }}

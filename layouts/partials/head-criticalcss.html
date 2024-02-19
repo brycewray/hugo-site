@@ -1,11 +1,11 @@
-	{{- $opts := dict "inlineImports" true -}}
-	{{- $fonts := resources.Get "css/fonts.css" | postCSS -}}
-	{{- with $fonts }}
-		<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>
-		{{/*  <link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>  */}}
-		<style media="screen and (min-width: 1024px)">{{ .Content | safeCSS }}</style>
-	{{- end }}
-	{{- $css := resources.Get "css/critical.css" | postCSS -}}
-	{{- with $css }}
-		<style media="screen">{{ .Content | safeCSS }}</style>
-	{{- end }}
+{{- $opts := dict "inlineImports" true -}}
+{{- $fonts := resources.Get "css/fonts.css" -}}
+{{- with $fonts }}
+	<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>
+	{{/*  <link rel="preload" as="font" href="/fonts/LibreFranklin-Italic-VariableFont_subset.woff2" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>  */}}
+	<style media="screen and (min-width: 1024px)">{{ .Content | safeCSS }}</style>
+{{- end }}
+{{- $css := resources.Get "css/critical.css" }}
+{{- with $css }}
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}
