@@ -1,23 +1,4 @@
-{{- /*
-	The following use of a slice to create the concatenated index.css
-	isn't DRY, but it's still MUCH faster than inlineImports because of
-	the latter's reliance on PostCSS.
-*/ -}}
-{{- $cssFiles := slice -}}
-{{- $cssFiles = append (resources.Get "css/article.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/billboard.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/code-all.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/footnotes.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/fourohfour.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/home.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/lite-yt-embed.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/posts-list.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/posts-single.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/search-form.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/sitemaphtml.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/social.css") $cssFiles -}}
-{{- $cssFiles = append (resources.Get "css/tables.css") $cssFiles -}}
-{{- $css := $cssFiles | resources.Concat "css/index.css" -}}
+{{- $css := resources.Match "css/*-u.css" | resources.Concat "css/index.css" -}}
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | resources.Copy "css/index.min.css" | postCSS | fingerprint -}}
 {{- end -}}
