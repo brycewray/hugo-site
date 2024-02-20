@@ -113,6 +113,9 @@ Well, I guess it was **too** early. A few hours after I initially issued this po
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | postCSS -}}
 {{- end -}}
+{{- with $css }}
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}
 
 {{/*
 	This is for a site-wide `index.css` which 
@@ -131,6 +134,10 @@ Well, I guess it was **too** early. A few hours after I initially issued this po
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | resources.Copy "css/index.min.css" | postCSS | fingerprint -}}
 {{- end -}}
+{{- with $css }}
+	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+{{- end }}
 ```
 
 While I could have used Hugo's [`inlineImports` capability](https://gohugo.io/functions/resources/postcss/#options), its requirement for PostCSS would've resulted in much slower dev-mode performance. To be specific: with `inlineImports` and PostCSS, a single-line edit to any of the affected CSS files would cause Hugo to take anywhere from 500 ms to five seconds to do a dev-mode live rebuild; but now, with Hugo's built-in concatenation on its own with no PostCSS involvement, I've seen a live rebuild after the same single-line CSS edit happen in as rapidly as *30 ms*.
