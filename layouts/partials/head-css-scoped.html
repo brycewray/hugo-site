@@ -24,9 +24,7 @@
 {{- $conditionFootnotes := false -}}
 {{- $conditionHome := false -}}
 {{- $conditionSitemap := false -}}
-{{/*  {{- $conditionSearchBtn := false -}}  */}}
 {{- $conditionSearchForm := false -}}
-{{/*  {{- $conditionDetails := false -}}  */}}
 {{- $condition404 := false -}}
 {{- if or (findRE `<blockquote class="toot-blockquote"` .Content 1) (findRE `<blockquote class="twitter-tweet"` .Content 1) -}}{{- $conditionSocial = true -}}{{- end -}}
 {{- if (findRE `<div class="highlight"` .Content 1) -}}{{- $conditionCode = true -}}{{- end -}}
@@ -40,28 +38,24 @@
 {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
 {{- if (eq .Title $titleHome) -}}{{- $conditionHome = true -}}{{- end -}}
 {{- if (eq .Title $titleSitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
-{{/*  {{- if (ne .Title $titleSearch) -}}{{- $conditionSearchBtn = true -}}{{- end -}}  */}}
 {{- if (eq .Title $titleSearch) -}}{{- $conditionSearchForm = true -}}{{- end -}}
-{{/*  {{- if (findRE `<details>` .Content 1) -}}{{- $conditionDetails = true -}}{{- end -}}  */}}
 {{- if (eq .Title $titleFourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
 
 {{- $cssTypes := slice -}}{{/* init big slice */}}
-{{- $cssTypes = append slice (slice $conditionSocial "social") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionSocial "social-u") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionCode "code") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionArtCode "artcode") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionTables "tables") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionBillboard "billboard") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionArticle "article") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionPostsSingle "posts-single") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionPostsList "posts-list") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionHome "home") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionSitemap "sitemaphtml") $cssTypes -}}
-{{/*  {{- $cssTypes = append slice (slice $conditionSearchBtn "search-btn") $cssTypes -}}  */}}
-{{- $cssTypes = append slice (slice $conditionSearchForm "search-form") $cssTypes -}}
-{{/*  {{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}  */}}
-{{- $cssTypes = append slice (slice $condition404 "fourohfour") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionTables "tables-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionLiteYT "lite-yt-embed-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionBillboard "billboard-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionArticle "article-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionPostsSingle "posts-single-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionPostsList "posts-list-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionFootnotes "footnotes-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionHome "home-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionSitemap "sitemaphtml-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $conditionSearchForm "search-form-u") $cssTypes -}}
+{{- $cssTypes = append slice (slice $condition404 "fourohfour-u") $cssTypes -}}
 
 {{- range $cssTypes -}}
 	{{- $condition = index . 0 -}}
