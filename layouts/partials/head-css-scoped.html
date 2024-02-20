@@ -63,19 +63,13 @@
 {{/*  {{- $cssTypes = append slice (slice $conditionDetails "details") $cssTypes -}}  */}}
 {{- $cssTypes = append slice (slice $condition404 "fourohfour") $cssTypes -}}
 
-{{- /*
-	fingerprint everything even in dev,
-	due to Safari caching weirdness, but
-	minify only in production
-*/ -}}
-
 {{- range $cssTypes -}}
 	{{- $condition = index . 0 -}}
 	{{- $fileName = index . 1 -}}
 	{{- if eq $condition true -}}
-		{{- $css := resources.Get (print "css/" $fileName ".css") | postCSS $opts -}}
+		{{- $css := resources.Get (print "css/" $fileName ".css") -}}
 		{{- if hugo.IsProduction -}}
-			{{- $css = $css | resources.Copy (print "css/" $fileName ".min.css") | fingerprint -}}
+			{{- $css = $css | resources.Copy (print "css/" $fileName ".min.css") | postCSS $opts | fingerprint -}}
 		{{- end -}}
 		{{- with $css -}}
 			<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -85,9 +79,9 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- $printCSS := resources.Get "css/print.css" | postCSS $opts -}}
+{{- $printCSS := resources.Get "css/print.css" -}}
 {{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | fingerprint -}}
+	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | postCSS $opts | fingerprint -}}
 	{{/* Lightning CSS is set in package.json to minify only in production */}}
 {{- end -}}
 {{- with $printCSS -}}
