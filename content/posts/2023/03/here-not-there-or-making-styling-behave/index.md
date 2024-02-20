@@ -64,7 +64,6 @@ With those variables set, here we go. (You may want to copy the code into a text
 // These are relevant excerpts from my `articles.scss` file,
 // which comes into play only when a page has the `article` element.
 
-@charset 'utf-8';
 @use 'partials/variables' as var;
 
 // First, we assign colors to boldfaced and italicized text

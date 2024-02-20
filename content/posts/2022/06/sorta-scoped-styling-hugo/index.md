@@ -77,7 +77,6 @@ In `assets/scss/partials/` would live all the partials, as is obvious, while `as
 So how would all the SCSS files work in practice? Well, let's take that `post-code-yt.scss` file (I've removed all but two lines of the real file's commenting, for your convenience):
 
 ```scss
-@charset 'utf-8';
 @use '../partials/reset';
 // @use 'partials/variables';
 //   calling it where needed within files
