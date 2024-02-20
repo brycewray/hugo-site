@@ -93,7 +93,46 @@ In fact, if I chose, I now could do without `package.json` scripting altogether 
 
 It's early but, so far, I'm really pleased with how this turned out. It seems to be a true best-of-both-worlds, win-win kind of setup. Not only do I get to continue styling my site with CSS that's been enhanced by intelligent tools; I also once again have a simpler config *and* the fast dev-mode operation for which Hugo is renowned, yet with few or no penalties on Hugo's equally famous build speed.
 
-**Update, 2024-02-19**: Well, I guess it was **too** early. A few hours after I initially issued this post, I ran into some aggravations that led to my returning to the "Franken-config" for a while, after which I decided on a strictly CSS/PostCSS approach --- *i.e.*, without Lightning CSS. (Because I thus could no longer rely on Lightning CSS's ability to `@import` separate CSS files into one, I resorted to using Hugo's [resources concatenation feature](https://gohugo.io/functions/resources/concat/) to eliminate dev-mode slowness. While I could have used Hugo's [`inlineImports` capability](https://gohugo.io/functions/resources/postcss/#options), its requirement for PostCSS would've resulted in much slower dev-mode performance.)\
-\
+----
+
+## Update, 2024-02-20
+
+Well, I guess it was **too** early. A few hours after I initially issued this post, I ran into some aggravations that led to my returning to the "Franken-config" for a while, after which I decided on a strictly CSS/PostCSS approach --- *i.e.*, without Lightning CSS. Because I thus could no longer rely on Lightning CSS's ability to `@import` separate CSS files into one, I resorted to using Hugo's [resources concatenation feature](https://gohugo.io/functions/resources/concat/) to eliminate dev-mode slowness:
+
+```go-html-template{bigdiv=true}
+{{/*
+	This is for the "critical," "above-the-fold"
+	CSS which is inlined in each page's `head`.
+	The name of each constituent partial file
+	begins with a three-digit number in the scheme
+	of `0xx` (e.g., `001-reset.css` or `005-colors.css`),
+	which makes `resources.Match` load them in
+	the desired order for concatenation.
+*/}}
+{{ $css := (resources.Match "css/partials/0*.css") | resources.Concat "css/critical.css" }}
+{{- if hugo.IsProduction -}}
+	{{- $css = $css | postCSS -}}
+{{- end -}}
+
+{{/*
+	This is for a site-wide `index.css` which 
+	the site uses with **unscoped** CSS.
+	For each CSS file used in unscoped mode,
+	I appended `-u` to the filename (e.g., `home-u.css`)
+	so the `resources.Match` statement would avoid
+	the few files intended only for **scoped** mode.
+	In this case, the alphabetical order of 
+	concatenation is not only irrelevant 
+	but also, as it turns out, the same as 
+	I'd practiced when using `@import` to
+	combine the files together, anyway.
+*/}}
+{{- $css := resources.Match "css/*-u.css" | resources.Concat "css/index.css" -}}
+{{- if hugo.IsProduction -}}
+	{{- $css = $css | resources.Copy "css/index.min.css" | postCSS | fingerprint -}}
+{{- end -}}
+```
+
+While I could have used Hugo's [`inlineImports` capability](https://gohugo.io/functions/resources/postcss/#options), its requirement for PostCSS would've resulted in much slower dev-mode performance. To be specific: with `inlineImports` and PostCSS, a single-line edit to any of the affected CSS files would cause Hugo to take anywhere from 500 ms to five seconds to do a dev-mode live rebuild; but now, with Hugo's built-in concatenation on its own with no PostCSS involvement, I've seen a live rebuild after the same single-line CSS edit happen in as rapidly as *30 ms*.
+
 And, just to be clear: the Sass/PostCSS config I described in this post definitely works, but I un-did it for reasons whose explanation *may* justify another post somewhere down the line. For now, suffice it to say that I grew unhappy with the apparently lackadaisical pace of updates and releases for several items on which the Sass/PostCSS config depended. I opted instead for a styling stack over which I could exercise more selection of, and control over, certain dependencies I'd otherwise have accessed downstream from other packages.
-{.box}
