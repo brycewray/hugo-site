@@ -94,22 +94,25 @@ And then we have the actual JS file, stored in `assets/js` for the `resources.Ge
 
 ```js{filename="comments-giscus.js" bigdiv=true}
 function getGiscusTheme() {
+	let
+		dataThemeLight = "light",
+		dataThemeDark = "dark"
 	const html = document.querySelector("html")
-	const giscusTheme = html.getAttribute("data-theme") === "dark" ? {{ $dataThemeDark }} : {{ $dataThemeLight }};
-	return giscusTheme;
+	const giscusTheme = html.getAttribute("data-theme") === "dark" ? dataThemeDark : dataThemeLight
+	return giscusTheme
 }
 
 function setGiscusTheme() {
 	function sendMessage(message) {
-		const iframe = document.querySelector('iframe.giscus-frame');
-		if (!iframe) return;
-		iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+		const iframe = document.querySelector('iframe.giscus-frame')
+		if (!iframe) return
+		iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
 	}
 	sendMessage({
 		setConfig: {
 			theme: getGiscusTheme(),
 		},
-	});
+	})
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -129,31 +132,32 @@ document.addEventListener('DOMContentLoaded', function () {
 		"crossorigin": "anonymous",
 		"data-loading": "lazy",
 		"async": "",
-	};
+	}
 
 	// Dynamically create script tag
-	const giscusScript = document.createElement("script");
-	Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-	let divToAdd = document.querySelector('.giscus-comments');
+	const giscusScript = document.createElement("script")
+	Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value))
+	let divToAdd = document.querySelector('.giscus-comments')
 
 	// Inject script when user clicks the `details` element
-	let detailsGiscus = document.getElementById('data-comments');
-	let commentsLegend = document.getElementById('legend-comments');
-	detailsGiscus.addEventListener("toggle", toggleDetails);
+	let
+		detailsGiscus = document.getElementById('data-comments'),
+		commentsLegend = document.getElementById('legend-comments')
+	detailsGiscus.addEventListener("toggle", toggleDetails)
 	function toggleDetails() {
-		divToAdd.appendChild(giscusScript);
+		divToAdd.appendChild(giscusScript)
 		if (commentsLegend.innerHTML === 'View comments') {
-			commentsLegend.innerHTML = 'Hide comments';
+			commentsLegend.innerHTML = 'Hide comments'
 		} else {
-			commentsLegend.innerHTML = 'View comments';
+			commentsLegend.innerHTML = 'View comments'
 		}
 	}
 	// Update giscus theme when theme switcher is clicked
-	const toggle = document.querySelector('.nav-ModeToggle');
+	const toggle = document.querySelector('.nav-ModeToggle')
 	if (toggle) {
-		toggle.addEventListener('click', setGiscusTheme);
+		toggle.addEventListener('click', setGiscusTheme)
 	}
-});
+})
 ```
 <br>
 
@@ -165,33 +169,33 @@ After [adapting the site for a switch that enabled auto mode as well as light an
 
 ```js{filename="comments-giscus.js" bigdiv=true}
 getGiscusTheme = () => {
-	const themeStatus = localStorage.getItem("theme");
+	const themeStatus = localStorage.getItem("theme")
 	let
 		dataThemeAuto = "preferred_color_scheme",
 		dataThemeLight = "light",
 		dataThemeDark = "dark",
-		giscusTheme = dataThemeAuto;
+		giscusTheme = dataThemeAuto
 	if (themeStatus === undefined || themeStatus === "auto") {
-		giscusTheme = dataThemeAuto;
+		giscusTheme = dataThemeAuto
 	} else if (themeStatus === "light") {
-		giscusTheme = dataThemeLight;
+		giscusTheme = dataThemeLight
 	} else if (themeStatus === "dark") {
-		giscusTheme = dataThemeDark;
+		giscusTheme = dataThemeDark
 	}
-	return giscusTheme;
+	return giscusTheme
 }
 
 setGiscusTheme = () => {
 	function sendMessage(message) {
-		const iframe = document.querySelector('iframe.giscus-frame');
-		if (!iframe) return;
-		iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+		const iframe = document.querySelector('iframe.giscus-frame')
+		if (!iframe) return
+		iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
 	}
 	sendMessage({
 		setConfig: {
 			theme: getGiscusTheme(),
 		},
-	});
+	})
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -211,32 +215,32 @@ document.addEventListener('DOMContentLoaded', function () {
 		"crossorigin": "anonymous",
 		"data-loading": "lazy",
 		"async": "",
-	};
+	}
 
 	// Dynamically create script tag
-	const giscusScript = document.createElement("script");
-	Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-	let divToAdd = document.querySelector('.giscus-comments');
+	const giscusScript = document.createElement("script")
+	Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value))
+	let divToAdd = document.querySelector('.giscus-comments')
 
 	// Inject script when user clicks the `details` element
 	let
 		detailsGiscus = document.getElementById('data-comments'),
-		commentsLegend = document.getElementById('legend-comments');
-	detailsGiscus.addEventListener("toggle", toggleDetails);
+		commentsLegend = document.getElementById('legend-comments')
+	detailsGiscus.addEventListener("toggle", toggleDetails)
 	function toggleDetails() {
-		divToAdd.appendChild(giscusScript);
+		divToAdd.appendChild(giscusScript)
 		if (commentsLegend.innerHTML === 'View comments') {
-			commentsLegend.innerHTML = 'Hide comments';
+			commentsLegend.innerHTML = 'Hide comments'
 		} else {
-			commentsLegend.innerHTML = 'View comments';
+			commentsLegend.innerHTML = 'View comments'
 		}
 	}
 	// Update giscus theme when theme switcher is clicked
-	const buttonLight = document.getElementById("lightMode");
-	const buttonAuto = document.getElementById("autoMode");
-	const buttonDark = document.getElementById("darkMode");
-	buttonLight.addEventListener('click', setGiscusTheme);
-	buttonAuto.addEventListener('click', setGiscusTheme);
-	buttonDark.addEventListener('click', setGiscusTheme);
-});
+	const buttonLight = document.getElementById("lightMode")
+	const buttonAuto = document.getElementById("autoMode")
+	const buttonDark = document.getElementById("darkMode")
+	buttonLight.addEventListener('click', setGiscusTheme)
+	buttonAuto.addEventListener('click', setGiscusTheme)
+	buttonDark.addEventListener('click', setGiscusTheme)
+})
 ```
