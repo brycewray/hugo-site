@@ -31,7 +31,7 @@ The code involves multiple files, and each contains plenty of items that have no
 
 First, the HTML[^noJS] for the site's header template (**not** the `head`, of course):
 
-[^noJS]: The `div`'s use of the `nScrHidden`  styling class is a [graceful degradation](https://developer.mozilla.org/en-US/docs/Glossary/Graceful_degradation) measure. It hides the switch if JavaScript is disabled, blocked, or otherwise non-functional when a user views the page. I'd followed the same practice with the previous toggle.Here's the relevant part from the header template:
+[^noJS]: The `div`'s use of the `nScrHidden`  styling class is a [graceful degradation](https://developer.mozilla.org/en-US/docs/Glossary/Graceful_degradation) measure. It hides the switch if JavaScript is disabled, blocked, or otherwise non-functional when a user views the page. I'd followed the same practice with the previous toggle.
 
 ```html{bigdiv=true}
 <!--
@@ -171,7 +171,7 @@ Similarly, a `theme` [localStorage cookie](https://developer.mozilla.org/en-US/d
 
 Why is the latter cookie called `radios`? Because the UI items that trigger all this are [radio buttons](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio). Each has an `opacity: 0` setting, positioned absolutely and topped by a Unicode character to symbolize what it does: &#128526; (HTML entity of `&#128526;`) for light mode, &#127763; (`&#127763;`) for auto mode, and &#127769; (`&#127769;`) for dark mode.[^seeThem] These characters were easier to style than the SVGs I used before, and my testing on multiple platforms indicated sufficient support for the characters. Of course, if I were to change my mind and go back to SVGs, all I'd have to do is replace the Unicode characters with corresponding SVGs and style each appropriately.
 
-[^seeThem]: If you're viewing this in light mode, you might want to switch to dark mode at least briefly so you can see those characters more readily. Fortunately, my header currently has a dark background in all modes. 
+[^seeThem]: If you're viewing this in light mode, you might want to switch to dark mode at least briefly so you can see those characters more readily. Fortunately, my header currently has a dark background in all modes.
 
 ## References
 
