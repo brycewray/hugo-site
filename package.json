@@ -20,7 +20,7 @@
 		"build": "npm-run-all build:prelim move-excerpts search",
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
 		"deploy": "npm-run-all build deploy:wrangler",
-		"serve": "npx serve -l tcp://$npm_package_config_myIP",
+		"serve": "pnpm exec serve -l tcp://$npm_package_config_myIP",
 		"testbuild": "NODE_ENV=production npm-run-all build serve"
 	},
 	"devDependencies": {
