@@ -173,7 +173,7 @@ Why is the latter cookie called `radios`? Because the UI items that trigger all 
 
 [^seeThem]: If you're viewing this in light mode, you might want to switch to dark mode at least briefly so you can see those characters more readily. Fortunately, my header currently has a dark background in all modes.
 
-## Update, 2024-02-23**
+## Update, 2024-02-23
 
 I did, in fact, later opt for SVGs rather than the Unicode characters. I gave each SVG an appropriate CSS class (`sun`, `auto`, or `moon`) and came up with the resulting relevant CSS:
 
