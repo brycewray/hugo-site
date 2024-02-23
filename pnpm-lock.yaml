@@ -29,9 +29,6 @@ devDependencies:
   postcss-preset-env:
     specifier: ^9.4.0
     version: 9.4.0(postcss@8.4.35)
-  purgecss:
-    specifier: ^5.0.0
-    version: 5.0.0
   rimraf:
     specifier: ^5.0.5
     version: 5.0.5

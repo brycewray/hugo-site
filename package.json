@@ -13,7 +13,7 @@
 		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --forceSyncStatic --gc",
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
 		"prod:hugo": "hugo --minify --gc",
-		"testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
+		"testbuild:hugo": "pnpm run dev:hugo -- --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* dev:hugo",
 		"startpf": "NODE_ENV=development npm-run-all clean:* prod:hugo dev:search dev:hugo",
 		"build:prelim": "NODE_ENV=production npm-run-all clean:* prod:hugo",
@@ -32,7 +32,6 @@
 		"postcss": "^8.4.35",
 		"postcss-cli": "^11.0.0",
 		"postcss-preset-env": "^9.4.0",
-		"purgecss": "^5.0.0",
 		"rimraf": "^5.0.5",
 		"serve": "^14.2.1",
 		"wrangler": "^3.29.0"
