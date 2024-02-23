@@ -173,6 +173,66 @@ Why is the latter cookie called `radios`? Because the UI items that trigger all 
 
 [^seeThem]: If you're viewing this in light mode, you might want to switch to dark mode at least briefly so you can see those characters more readily. Fortunately, my header currently has a dark background in all modes.
 
+## Update, 2024-02-23**
+
+I did, in fact, later opt for SVGs rather than the Unicode characters. I gave each SVG an appropriate CSS class (`sun`, `auto`, or `moon`) and came up with the resulting relevant CSS:
+
+```css
+.switchTheme {
+	position: absolute;
+	top: 0.45em;
+	right: 1.5em;
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+	background-color: transparent;
+	border: 0;
+	label {
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		svg {
+			width: 1.125em;
+			height: auto;
+			&.sun circle,
+			&.sun path,
+			&.auto path,
+			&.moon path,
+			&.moon stroke {
+				fill: var(--link-nav);
+				&:focus, &:active, &:hover {
+					fill: var(--link-nav-afh);
+				}
+			}
+		}
+	}
+	input[type="radio"] {
+		opacity: 0;
+		padding: 0;
+		margin: 0;
+		span {
+			display: inline-block;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			margin: 0;
+			line-height: 1rem;
+		}
+		&:checked+span {
+			svg {
+				&.sun circle,
+				&.sun path,
+				&.auto path,
+				&.moon path,
+				&.moon stroke {
+					fill: var(--fill-lightdarktoggle)
+				}
+			}
+		}
+	}
+}
+```
+
 ## References
 
 - Salma Alam-Naylor, "[The best light/dark mode theme toggle in JavaScript](https://whitep4nth3r.com/blog/best-light-dark-mode-theme-toggle-javascript/)" <span class="nobrk">(2023-06-19)</span>.

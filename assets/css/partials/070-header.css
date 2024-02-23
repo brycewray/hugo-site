@@ -140,6 +140,25 @@ header {
 	gap: 0;
 	background-color: transparent;
 	border: 0;
+	label {
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		svg {
+			width: 1.125em;
+			height: auto;
+			&.sun circle,
+			&.sun path,
+			&.auto path,
+			&.moon path,
+			&.moon stroke {
+				fill: var(--link-nav);
+				&:focus, &:active, &:hover {
+					fill: var(--link-nav-afh);
+				}
+			}
+		}
+	}
 	input[type="radio"] {
 		opacity: 0;
 		padding: 0;
@@ -153,18 +172,16 @@ header {
 			line-height: 1rem;
 		}
 		&:checked+span {
-			border-radius: 15%;
-			outline: 1px solid var(--link-nav-afh);
-			outline-offset: 2px;
+			svg {
+				&.sun circle,
+				&.sun path,
+				&.auto path,
+				&.moon path,
+				&.moon stroke {
+					fill: var(--fill-lightdarktoggle)
+				}
+			}
 		}
-	}
-	.lightLabel, .autoLabel, .darkLabel {
-		cursor: pointer;
-		padding: 0;
-		margin: 0;
-		font-size: var(--text-lg);
-		/* keep sep. classes in case we want
-		to customize each, later */
 	}
 }
 
