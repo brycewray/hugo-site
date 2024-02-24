@@ -13,27 +13,30 @@
 		<title>{{ .Title }} | {{ site.Title }}</title>
 	{{- end }}
 	{{ hugo.Generator }}
-{{/* CSS */}}
-		{{- partial "head-css.html" . }}{{/* per-theme */}}
-		{{- /* ^^
-			**IMPORTANT**:
-			If using scoped, be sure to call "head-css.html"
-			as `partial` and NOT as `partialCached`.
-		*/ -}}
-		{{- partial "head-imgs-css.html" . }}
-		{{- partial "head-css-oklch-post.html" . -}}
-		<noscript>
-			<style>
-				.nScrHidden {
-					display: none;
-				}
-				:root {
-					--navRightMargin: 0.5em;
-					--navToggleRightMargin: 0.5em;
-					/* ^^ override earlier CSS if JS is off and "light/auto/dark" toggle isn't there */
-				}
-			</style>
-		</noscript>
+{{- /* CSS */ -}}
+	{{- partialCached "head-criticalcss.html" . }}
+	{{- $noncriticalCSS := "scoped" -}}
+	{{- with $noncriticalCSS -}}
+		{{- if eq $noncriticalCSS "scoped" -}}
+			{{- partial "head-css-scoped.html" $.Page }}
+		{{- else -}}
+			{{- partialCached "head-css-unscoped.html" $.Page }}
+		{{- end }}
+	{{- end }}
+	{{- partial "head-imgs-css.html" . }}
+	{{- partial "head-css-oklch-post.html" . -}}
+	<noscript>
+		<style>
+			.nScrHidden {
+				display: none;
+			}
+			:root {
+				--navRightMargin: 0.5em;
+				--navToggleRightMargin: 0.5em;
+				/* ^^ override earlier CSS if JS is off and "light/auto/dark" toggle isn't there */
+			}
+		</style>
+	</noscript>
 {{ partial "json-ld.html" . }}
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">

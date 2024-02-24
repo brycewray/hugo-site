@@ -4,7 +4,7 @@
 {{- end -}}
 {{- with $css }}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
@@ -13,5 +13,5 @@
 	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | postCSS | fingerprint -}}
 {{- end -}}
 {{- with $printCSS -}}
-	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction -}} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
+	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction }} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
 {{- end }}
