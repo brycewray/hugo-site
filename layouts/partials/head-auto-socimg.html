@@ -11,7 +11,7 @@
 		{{- end -}}
 		{{- $titleSI := .Title -}}
 		{{/*  {{- $titleSI = .Title | htmlUnescape -}}  */}}
-		{{ $fontSI := resources.Get "/fonts/Franklin Gothic Medium.ttf" }}
+		{{ $fontSI := resources.Get "/fonts/Franklin-Gothic-Medium.ttf" }}
 		{{- $socImg = $socImg.Filter (images.Text $titleSI (dict
 			"color" "#ffffff"
 			"size" $titleSize
