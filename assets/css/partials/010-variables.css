@@ -10,7 +10,7 @@
 	--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 	@media screen and (min-width: 1024px) {
-		--sans-serif: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		--sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 		--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 	}
 	/*

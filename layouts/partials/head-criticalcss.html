@@ -4,9 +4,9 @@ the CSP's `style-src` must allow "unsafe-inline" because CFF injects a `style`
 AFTER the CFP Page Function injects the CSP. */ -}}
 {{- with $fontsSrc -}}
 	{{- if eq . "local" -}}
-		{{- $fonts := resources.Get "css/fonts.css" -}}
+		{{- $fonts := resources.Get "css/fonts-Inter.css" -}}
 		{{- with $fonts }}
-			<link rel="preload" as="font" href="/fonts/LibreFranklin-Roman-VariableFont_subset.woff2" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>
+			<link rel="preload" as="font" href="/fonts/InterVariable-4-0-Regular_subset.woff2" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>
 			{{/* DO NOT preload italic; it's not always needed (e.g., home page, search page, etc.). */}}
 			<style media="screen and (min-width: 1024px)">{{ .Content | safeCSS }}</style>
 		{{- end -}}
