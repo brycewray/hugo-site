@@ -4,7 +4,7 @@
 	<body>
 		{{ partialCached "header.html" . }}
 		<div id="content-main-hugo">
-		{{- block "main" . -}}{{- end }}
+			{{- block "main" . -}}{{- end }}
 		</div>
 		{{- if ne .Title site.Params.Titles.Search -}}
 			{{- partialCached "search-btn-pagefind.html" . -}}
