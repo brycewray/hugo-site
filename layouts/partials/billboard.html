@@ -4,7 +4,7 @@
 */ -}}
 {{- $wordsToCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
 {{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
-{{- $wordCount := $wordsToCount | countwords -}}
+{{- $wordCount := $wordsToCount | strings.CountWords -}}
 {{- $readingTimeMinsInt := math.Div (float $wordCount) 225 | math.Floor -}}
 {{- $readingTime := math.Div (float $wordCount) 225 -}}
 {{- $readingTimeMins := $readingTime | math.Ceil -}}
