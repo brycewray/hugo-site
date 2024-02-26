@@ -16,7 +16,7 @@
 						{{ .Description | .Page.RenderString }}
 					</p>
 					<p class="posts-Dates">
-						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
+						{{- if compare.Ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
 					</p>
 					<p class="legal">&nbsp;</p>
 				</div>

@@ -6,7 +6,7 @@
 		<div id="content-main-hugo">
 			{{- block "main" . -}}{{- end }}
 		</div>
-		{{- if ne .Title site.Params.Titles.Search -}}
+		{{- if compare.Ne .Title site.Params.Titles.Search -}}
 			{{- partialCached "search-btn-pagefind.html" . -}}
 		{{- end }}
 		{{- partial "footer.html" . -}}

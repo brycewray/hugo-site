@@ -28,9 +28,9 @@
 		{{- end }}
 		{{- if (and (ne .Title $titleSearch) (ne .Title $titleContact) ) -}}
 			<p class="billboard-p-text" data-pagefind-ignore>
-				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- else -}}&nbsp;{{- end -}}
+				{{- if compare.Ne (substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- else -}}&nbsp;{{- end -}}
 			</p>
-			{{- if ne .Title $titleContact -}}
+			{{- if compare.Ne .Title $titleContact -}}
 			<p class="ctr legal" data-pagefind-ignore>
 				Reading time: {{ $readingTimeMinsInt }}:{{ $readingTimeSecsInt }} &bull; {{ $wordCountFmt }} words
 			</p>
