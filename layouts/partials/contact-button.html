@@ -2,7 +2,7 @@
 <contact-button data-pagefind-ignore aria-label="Link for generating email to reply to this website post" class="nScrHidden">
 {{- if compare.Eq site.Params.EmailObfuscation "local" -}}
 	<script{{ if site.Params.Nonces }} nonce="DhcnhD3khTMePgXw"{{ end }}>
-		var email64Link ='{{ (print "href=\"mailto:" $email) | base64Encode }}';
+		var email64Link ='{{ (print "href=\"mailto:" $email) | encoding.Base64Encode }}';
 		document.write('<a ' + atob(email64Link) + '?subject=“{{ .Title }}”" class="contactButton">');
 	</script>
 {{- else -}}
