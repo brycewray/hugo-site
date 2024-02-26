@@ -68,7 +68,7 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 
 {{ $css := (resources.Match "css/partials/0*.css") | resources.Concat "css/critical.css" }}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | postCSS -}}
+	{{- $css = $css | resources.PostCSS -}}
 {{- end -}}
 {{- with $css }}
 	<style media="screen">{{ .Content | safeCSS }}</style>
