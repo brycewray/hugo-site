@@ -187,9 +187,9 @@ In my case, the reductions in CSS load size so far haven't been that great, espe
 - Hugo Discourse forum
 	- "[PurgeCSS and highlighting](https://discourse.gohugo.io/t/purgecss-and-highlighting/41021)" (topic initiated <span class="nobrk">2022-10-20</span>).
 	- "[Trouble with PurgeCSS](https://discourse.gohugo.io/t/trouble-with-purgecss/45501)" (topic initiated <span class="nobrk">2023-07-27</span>).
-- Hugo documentation, "[Configure Hugo](https://gohugo.io/getting-started/configuration/)"  (last updated <span class="nobrk">2024-01-09</span>).
+- Hugo documentation, "[Configure Hugo](https://gohugo.io/getting-started/configuration/)"  (as updated <span class="nobrk">2024-01-09</span>).
 - PurgeCSS documentation
-	- [CLI](https://purgecss.com/CLI.html) (last updated <span class="nobrk">2022-02-18</span>).
-	- [Configuration](https://purgecss.com/configuration.html) (last updated <span class="nobrk">2022-02-22</span>).
+	- [CLI](https://purgecss.com/CLI.html) (as updated <span class="nobrk">2022-02-18</span>).
+	- [Configuration](https://purgecss.com/configuration.html) (as updated <span class="nobrk">2022-02-22</span>).
 	- [Hugo](https://purgecss.com/guides/hugo.html) (adapted from Betz's aforementioned post; last updated <span class="nobrk">2022-12-14</span>).
-	- [Safelisting](https://purgecss.com/safelisting.html) (last updated <span class="nobrk">2022-02-18</span>).
+	- [Safelisting](https://purgecss.com/safelisting.html) (as updated <span class="nobrk">2022-02-18</span>).

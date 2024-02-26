@@ -102,5 +102,5 @@ I list these in order of how helpful I found each while I went through the Arch 
 - Bobby Borisov, "[How to Install Arch Linux: Beginner's Step-by-Step Guide](https://linuxiac.com/arch-linux-install/)" (updated <span class="nobrk">2023-08-19</span>).
 - Abhishek Prakash, "[How to Install Arch Linux [Step by Step Guide]](https://itsfoss.com/install-arch-linux/)" (<span class="nobrk">2023-02-11</span>).
 - Nickolas Kraus, "Installing Arch Linux on a MacBook Pro," Parts [1](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-1/), [2](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-2/), and [3](https://nickolaskraus.io/articles/installing-arch-linux-on-a-macbookpro-part-3/) (<span class="nobrk">2021-01-01</span>, <span class="nobrk">2021-01-08</span>, and <span class="nobrk">2021-01-15</span>, respectively).
-- "kyoz" (GitHub user handle), [mac-arch](https://github.com/kyoz/mac-arch) (last updated <span class="nobrk">2022-05-16</span>).
+- "kyoz" (GitHub user handle), [mac-arch](https://github.com/kyoz/mac-arch) (as updated <span class="nobrk">2022-05-16</span>).
 - Barnet Wagman, "[Installing Arch Linux on a MacBook Air](https://bwagman.org/Arch_Linux_on_MacBook_Air.html)" (<span class="nobrk">2017-02-09</span>).

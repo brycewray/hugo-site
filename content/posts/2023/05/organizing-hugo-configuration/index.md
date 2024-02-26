@@ -191,7 +191,7 @@ If your own Hugo project's configuration has become messy over time, a similar a
 
 ## References and related reading
 
-- Hugo documentation, "[Configure Hugo](https://gohugo.io/getting-started/configuration/)" (last updated <span class="nobrk">2023-04-15</span>).
+- Hugo documentation, "[Configure Hugo](https://gohugo.io/getting-started/configuration/)" (as updated <span class="nobrk">2023-04-15</span>).
 - [TOML repo](https://github.com/toml-lang/toml).
 - [TOML website](https://toml.io).
 - Igor Baiborodine, "[Manage Environment-Specific Settings for Hugo-Based Website](https://www.kiroule.com/article/manage-environment-specific-settings-for-hugo-based-website/)" (<span class="nobrk">2020-07-27</span>).

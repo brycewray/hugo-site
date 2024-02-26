@@ -156,10 +156,10 @@ This photo appears in multiple images-related posts here on [this website](/).
 
 ## References and related reading
 
-- Hugo documentation, "[Markdown Render Hooks](https://gohugo.io/templates/render-hooks/)" (last updated <span class="nobrk">2023-04-01</span>).
-- React documentation (legacy), "[Hooks at a Glance](https://legacy.reactjs.org/docs/hooks-overview.html)" (last updated <span class="nobrk">2023-03-18</span>).
-- "Alligator.io," "[How to Add Images in Markdown](https://www.digitalocean.com/community/tutorials/markdown-markdown-images)" (last updated <span class="nobrk">2020-10-12</span>).
-- Matt Cone, "[Basic Syntax](https://www.markdownguide.org/basic-syntax/)" (last updated <span class="nobrk">2023-04-22</span>).
+- Hugo documentation, "[Markdown Render Hooks](https://gohugo.io/templates/render-hooks/)" (as updated <span class="nobrk">2023-04-01</span>).
+- React documentation (legacy), "[Hooks at a Glance](https://legacy.reactjs.org/docs/hooks-overview.html)" (as updated <span class="nobrk">2023-03-18</span>).
+- "Alligator.io," "[How to Add Images in Markdown](https://www.digitalocean.com/community/tutorials/markdown-markdown-images)" (as updated <span class="nobrk">2020-10-12</span>).
+- Matt Cone, "[Basic Syntax](https://www.markdownguide.org/basic-syntax/)" (as updated <span class="nobrk">2023-04-22</span>).
 - John Gruber, "[Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)" (date unknown).
 - Joe Mooring, "[Link and image render hooks](https://www.veriphor.com/articles/link-and-image-render-hooks/)" (<span class="nobrk">2022-12-26</span>).
 
