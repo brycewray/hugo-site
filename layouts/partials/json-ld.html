@@ -11,8 +11,8 @@
 }
 </script>
 {{- else if .IsPage -}}
-	{{- $wordsToCount := replaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
-	{{- $wordsToCount = replaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
+	{{- $wordsToCount := strings.ReplaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
+	{{- $wordsToCount = strings.ReplaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
 	{{- $wordCount := $wordsToCount | strings.CountWords -}}
 	{{- $typeEntry := "WebPage" -}}
 	{{- if compare.Eq .Title site.Params.Titles.About -}}
