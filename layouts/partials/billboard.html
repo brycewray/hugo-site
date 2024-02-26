@@ -8,9 +8,9 @@
 {{- $readingTimeMinsInt := math.Div (float $wordCount) 225 | math.Floor -}}
 {{- $readingTime := math.Div (float $wordCount) 225 -}}
 {{- $readingTimeMins := $readingTime | math.Ceil -}}
-{{- $readingTimeSecs := math.Mul 60 (sub $readingTime $readingTimeMinsInt) | math.Ceil -}}
+{{- $readingTimeSecs := math.Mul 60 (math.Sub $readingTime $readingTimeMinsInt) | math.Ceil -}}
 {{- if compare.Ge $readingTimeSecs 60 -}}
-	{{- $readingTimeSecs = sub $readingTimeSecs 60 -}}
+	{{- $readingTimeSecs = math.Sub $readingTimeSecs 60 -}}
 	{{- $readingTimeMinsInt = math.Add $readingTimeMinsInt 1 -}}
 {{- end -}}
 {{- $readingTimeSecsInt := fmt.Printf "%02v" $readingTimeSecs -}}
