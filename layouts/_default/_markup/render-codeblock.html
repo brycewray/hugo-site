@@ -4,7 +4,7 @@
 {{- $filename := .Attributes.filename | compare.Default "" -}}
 {{- if transform.CanHighlight $lang -}}
 	{{- if ne $filename "" -}}<p class="labeled-highlight pokey"><em>{{ $filename }}</em></p>{{- end }}
-	<div{{- if eq $bigdiv true }} class="highlightWide"{{- end -}}>
+	<div{{- if compare.Eq $bigdiv true }} class="highlightWide"{{- end -}}>
 		{{ highlight .Inner $lang }}
 	</div>
 {{- else -}}

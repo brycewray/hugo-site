@@ -39,7 +39,7 @@
 	{{ with .Page.Resources.GetMatch $src }}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
-		{{- if eq $simple false -}}
+		{{- if compare.Eq $simple false -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
 		{{- end }}
 			<picture data-pagefind-ignore>
@@ -59,14 +59,14 @@
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
-				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+				<img class="h-auto{{ if compare.Eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- if eq $simple false -}}
+		{{- if compare.Eq $simple false -}}
 		</div>
 		{{- end -}}
 	{{- end -}}
 {{- else if (resources.GetRemote (print $cloudiBase $src)) -}}
-	{{- if eq $simple false -}}
+	{{- if compare.Eq $simple false -}}
 	<div class="{{ $divClass }}" data-pagefind-ignore>
 	{{- end }}
 	{{- with .Page.Params.imgs }}
@@ -75,7 +75,7 @@
 			{{- with resources.GetRemote . -}}
 				{{- $width := .Width -}}
 				{{- $height := .Height -}}
-				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
+				<img class="h-auto{{ if compare.Eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $cloudiBase }}f_auto,q_auto:eco,w_600{{ $xFmPart2 }}{{ $src }}" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
 						{{- if ge $width . -}}
@@ -86,7 +86,7 @@
 			{{- end -}}
 		{{- end -}}
 	{{- end -}}
-	{{- if eq $simple false -}}
+	{{- if compare.Eq $simple false -}}
 	</div>
 	{{- end }}
 {{- else -}}

@@ -1,6 +1,6 @@
 {{- $email := site.Params.AuthorEmail -}}
 <contact-button data-pagefind-ignore aria-label="Link for generating email to reply to this website post" class="nScrHidden">
-{{- if eq site.Params.EmailObfuscation "local" -}}
+{{- if compare.Eq site.Params.EmailObfuscation "local" -}}
 	<script{{ if site.Params.Nonces }} nonce="DhcnhD3khTMePgXw"{{ end }}>
 		var email64Link ='{{ (print "href=\"mailto:" $email) | base64Encode }}';
 		document.write('<a ' + atob(email64Link) + '?subject=“{{ .Title }}”" class="contactButton">');
@@ -14,5 +14,5 @@
 		<span class="legend">Reply via email</span>
 	</a>
 </contact-button>
-{{- if eq site.Params.EmailObfuscation "local" -}}
+{{- if compare.Eq site.Params.EmailObfuscation "local" -}}
 <noscript><p class="ctr legal">“Reply via email” button and its contained email link hidden in an attempt to limit spambots’ access. Please activate JavaScript to see the button.</p></noscript>{{- end -}}

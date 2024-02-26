@@ -6,8 +6,8 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 {{- $fontFileReg := "" -}}
 {{- $fontFileIta := "" -}}
 {{- with $fontsSrc -}}
-	{{- if eq . "local" -}}
-		{{- if eq $fontFamily "Inter" -}}
+	{{- if compare.Eq . "local" -}}
+		{{- if compare.Eq $fontFamily "Inter" -}}
 			{{- $fontFileReg = "InterVariable-4-0-Regular_subset.woff2" -}}
 			{{- $fontFileIta = "InterVariable-4-0-Italic_subset.woff2" -}}
 		{{- else -}}
@@ -36,7 +36,7 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 				}
 			}
 		</style>
-	{{- else if eq . "CFF" -}}
+	{{- else if compare.Eq . "CFF" -}}
 		{{- $URLopen := "https://fonts.googleapis.com/css2?family=" -}}
 		{{- $fontSans := "Libre+Franklin" -}}
 			{{- $itemsSans := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}

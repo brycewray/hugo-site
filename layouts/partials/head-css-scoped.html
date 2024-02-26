@@ -32,14 +32,14 @@
 {{- if (findRE `<table` .Content 1) -}}{{- $conditionTables = true -}}{{- end -}}
 {{- if (findRE `<lite-youtube` .Content 1) -}}{{- $conditionLiteYT = true -}}{{- end -}}
 {{- if (and (ne .Title $titleHome) (ne .Title $titleSitemap) (ne .Title $titlePostslist) (ne .Title $titleFourOhFour)) -}}{{- $conditionBillboard = true -}}{{- end -}}
-{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (eq .Section "posts") (eq .Title .Site.Params.Titles.About) (eq .Title .Site.Params.Titles.Privacy) (eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
-{{- if (and (eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
-{{- if (eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
+{{- if (and (and (ne .Title $titleSearch) (ne .Title $titlePostslist)) (or (compare.Eq .Section "posts") (compare.Eq .Title .Site.Params.Titles.About) (compare.Eq .Title .Site.Params.Titles.Privacy) (compare.Eq .Title .Site.Params.Titles.Contact))) -}}{{- $conditionArticle = true -}}{{- end -}}
+{{- if (and (compare.Eq .Section "posts") (ne .Title $titlePostslist)) -}}{{- $conditionPostsSingle = true -}}{{- end -}}
+{{- if (compare.Eq .Title $titlePostslist) -}}{{- $conditionPostsList = true -}}{{- end -}}
 {{- if (findRE `class="footnote-ref"` .Content 1) -}}{{- $conditionFootnotes = true -}}{{- end -}}
-{{- if (eq .Title $titleHome) -}}{{- $conditionHome = true -}}{{- end -}}
-{{- if (eq .Title $titleSitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
-{{- if (eq .Title $titleSearch) -}}{{- $conditionSearchForm = true -}}{{- end -}}
-{{- if (eq .Title $titleFourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
+{{- if (compare.Eq .Title $titleHome) -}}{{- $conditionHome = true -}}{{- end -}}
+{{- if (compare.Eq .Title $titleSitemap) -}}{{- $conditionSitemap = true -}}{{- end -}}
+{{- if (compare.Eq .Title $titleSearch) -}}{{- $conditionSearchForm = true -}}{{- end -}}
+{{- if (compare.Eq .Title $titleFourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
 
 {{- $cssTypes := collections.Slice -}}{{/* init big collections.Slice */}}
 {{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionSocial "social-u") $cssTypes -}}
@@ -60,7 +60,7 @@
 {{- range $cssTypes -}}
 	{{- $condition = collections.Index . 0 -}}
 	{{- $fileName = collections.Index . 1 -}}
-	{{- if eq $condition true -}}
+	{{- if compare.Eq $condition true -}}
 		{{- $css := resources.Get (print "css/" $fileName ".css") -}}
 		{{- if hugo.IsProduction -}}
 			{{- $css = $css | resources.Copy (print "css/" $fileName ".min.css") | postCSS | fingerprint -}}
