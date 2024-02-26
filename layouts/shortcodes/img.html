@@ -6,13 +6,13 @@
 {{- $xFmPart1 := "f_auto,q_auto:eco,w_" -}}
 {{- $xFmPart2 := ",x_0,z_01/" -}}
 
-{{- $holder := default "GIP" (.Get "holder") -}}
-{{- $phn := default false (.Get "phn") -}}
-{{- $hint := default "photo" (.Get "hint") -}}
+{{- $holder := compare.Default "GIP" (.Get "holder") -}}
+{{- $phn := compare.Default false (.Get "phn") -}}
+{{- $hint := compare.Default "photo" (.Get "hint") -}}
 {{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
-{{- $filter := default "MitchellNetravali" (.Get "filter") -}}
-{{- $simple := default false (.Get "simple") -}}
-{{- $nobkgd := default false (.Get "nobkgd") -}}
+{{- $filter := compare.Default "MitchellNetravali" (.Get "filter") -}}
+{{- $simple := compare.Default false (.Get "simple") -}}
+{{- $nobkgd := compare.Default false (.Get "nobkgd") -}}
 
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}
