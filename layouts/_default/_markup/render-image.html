@@ -7,7 +7,7 @@
 	- https://gohugo.io/templates/render-hooks/
 	- https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
 */ -}}
-{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
+{{- $respSizes := collections.Slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
 {{- $caption := .Title -}}
 {{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}

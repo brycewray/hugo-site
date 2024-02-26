@@ -15,9 +15,9 @@
 			{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $imgRsc.Width " / " $imgRsc.Height ";" -}}
 			{{- $GIP_colors := $imgRsc.Colors -}}
 			{{- if (lt ($GIP_colors | len) 2) -}}
-				{{- $GIP_colors = $GIP_colors | append "#000000" -}}
+				{{- $GIP_colors = $GIP_colors | collections.Append "#000000" -}}
 			{{- end -}}
-			{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
+			{{- $GIP_bkgd := collections.Delimit ($GIP_colors) ", " -}}
 			{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd }}
 			.imgB-{{ $imgBd5 }}-GIP {
 				{{ $BkgdStyleGIP | safeCSS }}
@@ -42,9 +42,9 @@
 					{{- $imgBd5 := md5 $src -}}
 					{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $width " / " $height ";" -}}
 					{{- if (lt ($GIP_colors | len) 2) -}}
-						{{- $GIP_colors = $GIP_colors | append "#000000" -}}
+						{{- $GIP_colors = $GIP_colors | collections.Append "#000000" -}}
 					{{- end -}}
-					{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
+					{{- $GIP_bkgd := collections.Delimit ($GIP_colors) ", " -}}
 					{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
 					{{- $LQIP_img := $imgRsc.Process "resize 20x jpg q20" -}}
 					{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}

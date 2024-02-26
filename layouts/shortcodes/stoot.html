@@ -18,12 +18,12 @@
 		{{ $json := unmarshal .Content }}
 		{{ $jsonHolder := $json }}{{/* Being safe */}}
 
-		{{ if isset $json "account" }}
+		{{ if collections.IsSet $json "account" }}
 			{{ $tootLink = print "https://" $masIns "@" $json.account.acct "/status/" $id }}
 			{{ $handleInst = print "@" $json.account.acct "@" $masIns }}
 		{{ end }}
 
-		{{ if isset $json "content" }}
+		{{ if collections.IsSet $json "content" }}
 			<blockquote class="toot-blockquote" cite="{{ $tootLink }}">
 				<div class="toot-header">
 					<a class="toot-profile" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
