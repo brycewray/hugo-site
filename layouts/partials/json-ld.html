@@ -27,10 +27,10 @@
 	"@context": "https://schema.org",
 	"@type": "{{ $typeEntry }}",{{- if .Section }}
 	"articleSection": "{{ .Section }}",{{- end }}
-	"name": "{{ .Title | safeJS }}",
-	"headline": "{{ .Title | safeJS }}",
-	"alternativeHeadline": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
-	"description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
+	"name": "{{ .Title | safe.JS }}",
+	"headline": "{{ .Title | safe.JS }}",
+	"alternativeHeadline": "{{ if .Description }}{{ .Description | safe.JS }}{{ else }}[n/a]{{ end }}",
+	"description": "{{ if .Description }}{{ .Description | safe.JS }}{{ else }}[n/a]{{ end }}",
 	"inLanguage": "{{ site.LanguageCode }}",
 	"isFamilyFriendly": "true",
 	"mainEntityOfPage": {
