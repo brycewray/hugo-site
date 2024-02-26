@@ -13,7 +13,7 @@
 					{{ .Description }}
 				</p>
 				<p class="homePost-Dates">
-					{{- if compare.Ne (substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- end -}}
+					{{- if compare.Ne (strings.Substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- end -}}
 				</p>
 			</div>
 			{{- end }}
