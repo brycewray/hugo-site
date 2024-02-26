@@ -32,7 +32,7 @@
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if ge $imgRsc.Width . -}}
+						{{- if compare.Ge $imgRsc.Width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
@@ -40,7 +40,7 @@
 				<source type="image/jpeg" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if ge $imgRsc.Width . -}}
+						{{- if compare.Ge $imgRsc.Width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
@@ -61,7 +61,7 @@
 				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if ge $width . -}}
+						{{- if compare.Ge $width . -}}
 							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
 						{{- end -}}
 					{{- end -}}

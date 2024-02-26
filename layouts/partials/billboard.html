@@ -9,7 +9,7 @@
 {{- $readingTime := div (float $wordCount) 225 -}}
 {{- $readingTimeMins := $readingTime | math.Ceil -}}
 {{- $readingTimeSecs := mul 60 (sub $readingTime $readingTimeMinsInt) | math.Ceil -}}
-{{- if ge $readingTimeSecs 60 -}}
+{{- if compare.Ge $readingTimeSecs 60 -}}
 	{{- $readingTimeSecs = sub $readingTimeSecs 60 -}}
 	{{- $readingTimeMinsInt = add $readingTimeMinsInt 1 -}}
 {{- end -}}
