@@ -117,11 +117,11 @@ html, body {
 	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	-moz-osx-font-smoothing: auto;
 	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
-	font-feature-settings: 'dlig' 1, 'liga' 1, 'ss03' 1;
+	font-feature-settings: 'dlig' 0, 'liga' 1, 'ss03' 1;
 	/* ^^ disable `calt` with Inter 4.x (or subset it out) until/unless fixed
 	-- https://github.com/rsms/inter/issues/442 et al.
 	*/
-	font-variant-ligatures: discretionary-ligatures;
+	/* font-variant-ligatures: discretionary-ligatures; */
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
