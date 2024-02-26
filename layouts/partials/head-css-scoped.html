@@ -41,21 +41,21 @@
 {{- if (eq .Title $titleSearch) -}}{{- $conditionSearchForm = true -}}{{- end -}}
 {{- if (eq .Title $titleFourOhFour) -}}{{- $condition404 = true -}}{{- end -}}
 
-{{- $cssTypes := slice -}}{{/* init big slice */}}
-{{- $cssTypes = collections.Append slice (slice $conditionSocial "social-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionCode "code") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionArtCode "artcode") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionTables "tables-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionLiteYT "lite-yt-embed-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionBillboard "billboard-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionArticle "article-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionPostsSingle "posts-single-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionPostsList "posts-list-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionFootnotes "footnotes-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionHome "home-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionSitemap "sitemaphtml-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $conditionSearchForm "search-form-u") $cssTypes -}}
-{{- $cssTypes = collections.Append slice (slice $condition404 "fourohfour-u") $cssTypes -}}
+{{- $cssTypes := collections.Slice -}}{{/* init big collections.Slice */}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionSocial "social-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionCode "code") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionArtCode "artcode") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionTables "tables-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionLiteYT "lite-yt-embed-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionBillboard "billboard-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionArticle "article-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionPostsSingle "posts-single-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionPostsList "posts-list-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionFootnotes "footnotes-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionHome "home-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionSitemap "sitemaphtml-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $conditionSearchForm "search-form-u") $cssTypes -}}
+{{- $cssTypes = collections.Append collections.Slice (collections.Slice $condition404 "fourohfour-u") $cssTypes -}}
 
 {{- range $cssTypes -}}
 	{{- $condition = collections.Index . 0 -}}
