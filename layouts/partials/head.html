@@ -18,13 +18,13 @@
 	{{- $noncriticalCSS := "scoped" -}}
 	{{- with $noncriticalCSS -}}
 		{{- if compare.Eq $noncriticalCSS "scoped" -}}
-			{{- partial "head-css-scoped.html" $.Page }}
+			{{- partials.Include "head-css-scoped.html" $.Page }}
 		{{- else -}}
 			{{- partialCached "head-css-unscoped.html" $.Page }}
 		{{- end }}
 	{{- end }}
-	{{- partial "head-imgs-css.html" . }}
-	{{- partial "head-css-oklch-post.html" . -}}
+	{{- partials.Include "head-imgs-css.html" . }}
+	{{- partials.Include "head-css-oklch-post.html" . -}}
 	<noscript>
 		<style>
 			.nScrHidden {
@@ -37,13 +37,13 @@
 			}
 		</style>
 	</noscript>
-{{ partial "json-ld.html" . }}
+{{ partials.Include "json-ld.html" . }}
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, excerpt-only - JSON" href="https://www.brycewray.com/index-excerpts.json">
-		{{ partial "head-meta-social.html" . }}
-		{{ partial "head-cloud-socimg.html" . }}
+		{{ partials.Include "head-meta-social.html" . }}
+		{{ partials.Include "head-cloud-socimg.html" . }}
 		{{ partialCached "head-favicons.html" . }}
 		<link rel="preconnect" href="https://giscus.app">
 		<link rel="dns-prefetch" href="https://giscus.app">

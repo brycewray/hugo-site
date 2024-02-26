@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	{{ partial "head.html" . }}
+	{{ partials.Include "head.html" . }}
 	<body>
 		{{ partialCached "header.html" . }}
 		<div id="content-main-hugo">
@@ -9,7 +9,7 @@
 		{{- if compare.Ne .Title site.Params.Titles.Search -}}
 			{{- partialCached "search-btn-pagefind.html" . -}}
 		{{- end }}
-		{{- partial "footer.html" . -}}
+		{{- partials.Include "footer.html" . -}}
 		{{- if hugo.IsProduction -}}
 			{{- if compare.Eq site.Params.Host "CFP" -}}
 				<!-- Cloudflare Web Analytics -->
