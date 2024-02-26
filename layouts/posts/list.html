@@ -3,7 +3,7 @@
 		<h1 class="posts-Head">Posts</h1>
 		<div class="posts-Container">
 
-			{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+			{{ $paginator := .Paginate (collections.Where .Data.Pages "Type" "posts") }}
 			{{ $paginator := .Paginator }}
 
 			{{ partial "pagerthing.html" . }}

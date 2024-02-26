@@ -16,7 +16,7 @@
 			<ul class="nav-Menu">
 				<li><a href="/" title="Home page" aria-label="Home page">{{ partialCached "svgNavIcon.html" . }}</a></li>
 				<li><a href="/about/" title="About me" aria-label="About me">About</a></li>
-				{{- range first 1 (where site.RegularPages "Section" "posts") -}}
+				{{- range first 1 (collections.Where site.RegularPages "Section" "posts") -}}
 					<li><a href="{{ .RelPermalink }}" title="The most recently added post on the site" aria-label="Newest post">Newest post</a></li>
 				{{- end -}}
 				<li><a href="/posts/" title="Posts" aria-label="All posts">All posts</a></li>

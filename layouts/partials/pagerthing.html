@@ -8,7 +8,7 @@
 			//  OUTPUT POSTS
 			//––––––––––––––––––––––––––––––––––––––––––––––––––
 			*/}}
-			{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+			{{ $paginator := .Paginate (collections.collections.Where .Data.Pages "Type" "posts") }}
 			{{ $paginator := .Paginator }}
 
 			{{/* Number of links either side of the current page. */}}
