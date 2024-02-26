@@ -6,7 +6,7 @@
 {{ $mediaMD5 := "" }}
 {{ $imageCount := 0 }}
 {{ $votesCount := 0 }}
-{{ $urlToGet := print "https://" $masIns "/api/v1/statuses/" $id }}
+{{ $urlToGet := fmt.Print "https://" $masIns "/api/v1/statuses/" $id }}
 
 {{- with resources.GetRemote $urlToGet  -}}
 	{{ if (resources.GetRemote $urlToGet).Err }}
@@ -19,8 +19,8 @@
 		{{ $jsonHolder := $json }}{{/* Being safe */}}
 
 		{{ if collections.IsSet $json "account" }}
-			{{ $tootLink = print "https://" $masIns "@" $json.account.acct "/status/" $id }}
-			{{ $handleInst = print "@" $json.account.acct "@" $masIns }}
+			{{ $tootLink = fmt.Print "https://" $masIns "@" $json.account.acct "/status/" $id }}
+			{{ $handleInst = fmt.Print "@" $json.account.acct "@" $masIns }}
 		{{ end }}
 
 		{{ if collections.IsSet $json "content" }}

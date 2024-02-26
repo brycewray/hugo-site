@@ -17,9 +17,9 @@
 {{- $imgBd5 := crypto.MD5 $src -}}
 {{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
-	{{- $divClass = print $divClass " bigImgDiv" -}}
+	{{- $divClass = fmt.Print $divClass " bigImgDiv" -}}
 	{{- if not $nobkgd -}}
-		{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
+		{{- $divClass = fmt.Print $divClass " imgB-" $imgBd5 "-" $holder -}}
 		{{/*
 			The `imgB-`[hash]-GIP` class is
 			generated in a `head` partial;
@@ -70,7 +70,7 @@
 	<div class="{{ $divClass }}" data-pagefind-ignore>
 	{{- end }}
 	{{- with .Page.Params.imgs }}
-		{{- $imgToGet := print $cloudiBase $src -}}
+		{{- $imgToGet := fmt.Print $cloudiBase $src -}}
 		{{- with $imgToGet -}}
 			{{- with resources.GetRemote . -}}
 				{{- $width := .Width -}}

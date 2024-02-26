@@ -41,15 +41,15 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 		{{- $fontSans := "Libre+Franklin" -}}
 			{{- $itemsSans := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
 			{{- $varsSans := "100..900" -}}
-			{{- $URLSans := print $URLopen $fontSans ":" $itemsSans "@0," $varsSans ";1," $varsSans "&display=swap" -}}
+			{{- $URLSans := fmt.Print $URLopen $fontSans ":" $itemsSans "@0," $varsSans ";1," $varsSans "&display=swap" -}}
 		{{- $fontSerif := "" -}}
 			{{- $itemsSerif := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
 			{{- $varsSerif := "100..900" -}}
-			{{- $URLSerif := print $URLopen $fontSerif ":" $itemsSerif "@0," $varsSerif ";1," $varsSerif "&display=swap" -}}
+			{{- $URLSerif := fmt.Print $URLopen $fontSerif ":" $itemsSerif "@0," $varsSerif ";1," $varsSerif "&display=swap" -}}
 		{{- $fontMono := "" -}}
 			{{- $itemsMono := "" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
 			{{- $varsMono := "" -}}
-			{{- $URLMono := print $URLopen $fontMono ":" $itemsMono "@0," $varsMono ";1," $varsMono "&display=swap" -}}
+			{{- $URLMono := fmt.Print $URLopen $fontMono ":" $itemsMono "@0," $varsMono ";1," $varsMono "&display=swap" -}}
 		<link rel="preconnect" href="https://fonts.googleapis.com" media="screen and (min-width: 1024px)" crossorigin>
 		<link rel="preconnect" href="https://fonts.gstatic.com" media="screen and (min-width: 1024px)" crossorigin>
 		{{/* https://discourse.gohugo.io/t/how-to-unescape-plus-sign-in-url-re-cloudflare-fonts/46734 */}}

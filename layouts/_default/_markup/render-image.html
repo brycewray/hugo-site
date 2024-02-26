@@ -18,13 +18,13 @@
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
-{{- $rscToMatch := print "images/" $src -}}
+{{- $rscToMatch := fmt.Print "images/" $src -}}
 
 {{- if .Page.Resources.GetMatch $src -}}
 	{{ with .Page.Resources.GetMatch $src }}
 		{{- $hint := "photo" -}}
 		{{- $filter := "MitchellNetravali" -}}
-		{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
+		{{- $divClass := fmt.Print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
@@ -50,10 +50,10 @@
 		</div>
 	{{- end -}}
 {{- else if (resources.GetRemote (print $cloudiBase $src)) -}}
-	{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
+	{{- $divClass := fmt.Print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 	<div class="{{ $divClass }}" data-pagefind-ignore>
 	{{- with .Page.Params.imgs }}
-		{{- $imgToGet := print $cloudiBase $src -}}
+		{{- $imgToGet := fmt.Print $cloudiBase $src -}}
 		{{- with $imgToGet -}}
 			{{- with resources.GetRemote . -}}
 				{{- $width := .Width -}}
