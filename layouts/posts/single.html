@@ -4,7 +4,7 @@
 	{{- partials.Include "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article" id="postArticle">
-			{{ .Content | safeHTML }}
+			{{ .Content | safe.HTML }}
 			{{- partials.Include "git.html" . -}}
 			{{- partials.Include "contact-button.html" . -}}
 			{{- partials.IncludeCached "comments-giscus.html" . -}}

@@ -54,13 +54,13 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 		<link rel="preconnect" href="https://fonts.gstatic.com" media="screen and (min-width: 1024px)" crossorigin>
 		{{/* https://discourse.gohugo.io/t/how-to-unescape-plus-sign-in-url-re-cloudflare-fonts/46734 */}}
 		{{ with $fontSans -}}
-			<link {{ fmt.Printf "href=%q" $URLSans | safeHTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+			<link {{ fmt.Printf "href=%q" $URLSans | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 		{{- end }}
 		{{ with $fontSerif -}}
-			<link {{ fmt.Printf "href=%q" $URLSerif | safeHTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+			<link {{ fmt.Printf "href=%q" $URLSerif | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 		{{- end }}
 		{{- with $fontMono -}}
-			<link {{ fmt.Printf "href=%q" $URLMono | safeHTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+			<link {{ fmt.Printf "href=%q" $URLMono | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 		{{- end }}
 	{{/* otherwise, we fall back to system fonts */}}
 	{{- end }}

@@ -51,9 +51,9 @@
 	},
 	"copyrightHolder": "{{ site.Params.Author }}",
 	"copyrightYear": "{{ now.Year }}",
-	"dateCreated": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
-	"datePublished": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
-	"dateModified": "{{- if .GitInfo -}}{{ (.GitInfo.AuthorDate).Format "2006-01-02" | safeHTML }}{{- else -}}{{ .PublishDate.Format "2006-01-02" | safeHTML }}{{- end -}}",
+	"dateCreated": "{{ .PublishDate.Format "2006-01-02" | safe.HTML }}",
+	"datePublished": "{{ .PublishDate.Format "2006-01-02" | safe.HTML }}",
+	"dateModified": "{{- if .GitInfo -}}{{ (.GitInfo.AuthorDate).Format "2006-01-02" | safe.HTML }}{{- else -}}{{ .PublishDate.Format "2006-01-02" | safe.HTML }}{{- end -}}",
 	"publisher": {
 		"@type": "Person",
 		"name": "{{ site.Params.Author }}",
