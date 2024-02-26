@@ -71,5 +71,5 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 	{{- $css = $css | resources.PostCSS -}}
 {{- end -}}
 {{- with $css }}
-	<style media="screen">{{ .Content | safeCSS }}</style>
+	<style media="screen">{{ .Content | safe.CSS }}</style>
 {{- end }}
