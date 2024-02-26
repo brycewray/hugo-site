@@ -14,13 +14,13 @@
 	{{- end }}
 	{{ hugo.Generator }}
 {{- /* CSS */ -}}
-	{{- partialCached "head-criticalcss.html" . }}
+	{{- partials.IncludeCached "head-criticalcss.html" . }}
 	{{- $noncriticalCSS := "scoped" -}}
 	{{- with $noncriticalCSS -}}
 		{{- if compare.Eq $noncriticalCSS "scoped" -}}
 			{{- partials.Include "head-css-scoped.html" $.Page }}
 		{{- else -}}
-			{{- partialCached "head-css-unscoped.html" $.Page }}
+			{{- partials.IncludeCached "head-css-unscoped.html" $.Page }}
 		{{- end }}
 	{{- end }}
 	{{- partials.Include "head-imgs-css.html" . }}
@@ -44,7 +44,7 @@
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, excerpt-only - JSON" href="https://www.brycewray.com/index-excerpts.json">
 		{{ partials.Include "head-meta-social.html" . }}
 		{{ partials.Include "head-cloud-socimg.html" . }}
-		{{ partialCached "head-favicons.html" . }}
+		{{ partials.IncludeCached "head-favicons.html" . }}
 		<link rel="preconnect" href="https://giscus.app">
 		<link rel="dns-prefetch" href="https://giscus.app">
 	</head>

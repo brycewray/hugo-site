@@ -7,7 +7,7 @@
 			{{ .Content | safeHTML }}
 			{{- partials.Include "git.html" . -}}
 			{{- partials.Include "contact-button.html" . -}}
-			{{- partialCached "comments-giscus.html" . -}}
+			{{- partials.IncludeCached "comments-giscus.html" . -}}
 		</article>
 	</div>
 	{{ if or .Prev .Next }}
@@ -15,7 +15,7 @@
 			<div class="prevArrow">
 				{{ with .PrevInSection -}}
 				<a href="{{.RelPermalink}}"><strong>PREV</strong></a><br />
-					<a href="{{.RelPermalink}}">{{ partialCached "svgPrevPageIcon.html" . }}</a>
+					<a href="{{.RelPermalink}}">{{ partials.IncludeCached "svgPrevPageIcon.html" . }}</a>
 				{{- end }}
 			</div>
 			<div class="prevDiv">
@@ -35,7 +35,7 @@
 			<div class="nextArrow">
 				{{ with .NextInSection -}}
 				<a href="{{.RelPermalink}}"><strong>NEXT</strong></a><br />
-					<a href="{{.RelPermalink}}">{{ partialCached "svgNextPageIcon.html" . }}</a>
+					<a href="{{.RelPermalink}}">{{ partials.IncludeCached "svgNextPageIcon.html" . }}</a>
 				{{- end }}
 			</div>
 		</div>

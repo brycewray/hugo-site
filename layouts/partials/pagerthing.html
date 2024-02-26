@@ -34,10 +34,10 @@
 				<div>
 					{{ if and (ne $paginator.PageNumber 1) (ne $paginator.PageNumber 2) }}
 						<a class="icon" aria-label="First page" title="First page" href="{{ $paginator.First.URL }}">
-							{{ partialCached "svgPrevPageIcon.html" . }}{{ partialCached "svgPrevPageIcon.html" . }}
+							{{ partials.IncludeCached "svgPrevPageIcon.html" . }}{{ partials.IncludeCached "svgPrevPageIcon.html" . }}
 						</a>
 					{{ else }}
-						{{ partialCached "svgFirstPageIcon.html" . }}{{ partialCached "svgFirstPageIcon.html" . }}
+						{{ partials.IncludeCached "svgFirstPageIcon.html" . }}{{ partials.IncludeCached "svgFirstPageIcon.html" . }}
 					{{ end }}
 				</div>
 				<div class="pagerSpacer"></div>
@@ -45,10 +45,10 @@
 				<div>
 					{{ if $paginator.HasPrev }}
 						<a href="{{ $paginator.Prev.URL }}" class="icon" aria-label="Previous page" title="Previous page">
-							{{ partialCached "svgPrevPageIcon.html" . }}
+							{{ partials.IncludeCached "svgPrevPageIcon.html" . }}
 						</a>
 					{{ else }}
-						{{ partialCached "svgFirstPageIcon.html" . }}
+						{{ partials.IncludeCached "svgFirstPageIcon.html" . }}
 					{{ end }}
 				</div>
 				<div class="pagerSpacer"></div>
@@ -57,10 +57,10 @@
 				<div>
 					{{ if $paginator.HasNext }}
 						<a href="{{ $paginator.Next.URL }}" class="icon" aria-label="Next page" title="Next page">
-							{{ partialCached "svgNextPageIcon.html" . }}
+							{{ partials.IncludeCached "svgNextPageIcon.html" . }}
 						</a>
 					{{ else }}
-						{{ partialCached "svgLastPageIcon.html" . }}
+						{{ partials.IncludeCached "svgLastPageIcon.html" . }}
 					{{ end }}
 				</div>
 				<div class="pagerSpacer"></div>
@@ -74,10 +74,10 @@
 				<div>
 					{{ if (and ( (ne $paginator.PageNumber $paginator.TotalPages) ) (ne $paginator.PageNumber (math.Sub $paginator.TotalPages 1))) }}
 						<a class="icon" aria-label="Last page" title="Last page" href="{{ $paginator.Last.URL }}">
-							{{ partialCached "svgNextPageIcon.html" . }}{{ partialCached "svgNextPageIcon.html" . }}
+							{{ partials.IncludeCached "svgNextPageIcon.html" . }}{{ partials.IncludeCached "svgNextPageIcon.html" . }}
 						</a>
 					{{ else }}
-						{{ partialCached "svgLastPageIcon.html" . }}{{ partialCached "svgLastPageIcon.html" . }}
+						{{ partials.IncludeCached "svgLastPageIcon.html" . }}{{ partials.IncludeCached "svgLastPageIcon.html" . }}
 					{{ end }}
 				</div>
 			</div>
