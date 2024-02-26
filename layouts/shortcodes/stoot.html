@@ -42,7 +42,7 @@
 				{{ with $json.media_attachments }}
 					{{ range $media_attachments := . }}
 						{{ if compare.Eq $media_attachments.type "image" }}
-							{{ $imageCount = (add ($imageCount) 1) }}
+							{{ $imageCount = (math.Add ($imageCount) 1) }}
 						{{ end }}
 					{{ end }}
 					<div class="toot-img-grid-{{ $imageCount }}">
@@ -142,7 +142,7 @@
 					{{ $poll := . }}
 					{{ with $poll.options }}
 						{{ range $pollOptions := . }}
-							{{ $votesCount = add $votesCount  $pollOptions.votes_count }}
+							{{ $votesCount = math.Add $votesCount  $pollOptions.votes_count }}
 						{{ end }}
 						<div class="toot-poll-wrapper">
 							{{ range $pollOptions := . }}

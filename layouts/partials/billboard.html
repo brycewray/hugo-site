@@ -11,7 +11,7 @@
 {{- $readingTimeSecs := mul 60 (sub $readingTime $readingTimeMinsInt) | math.Ceil -}}
 {{- if compare.Ge $readingTimeSecs 60 -}}
 	{{- $readingTimeSecs = sub $readingTimeSecs 60 -}}
-	{{- $readingTimeMinsInt = add $readingTimeMinsInt 1 -}}
+	{{- $readingTimeMinsInt = math.Add $readingTimeMinsInt 1 -}}
 {{- end -}}
 {{- $readingTimeSecsInt := fmt.Printf "%02v" $readingTimeSecs -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
