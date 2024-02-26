@@ -23,7 +23,7 @@
 			{{- end -}}
 		{{- end -}}
 		{{- if (findRE `<div class="highlight"` .Content 1) -}}
-			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint -}}
+			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | resources.Fingerprint -}}
 			<script
 				src="{{ $jsCopy.RelPermalink }}"
 				integrity="{{ $jsCopy.Data.Integrity }}"
