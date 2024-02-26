@@ -117,11 +117,14 @@ html, body {
 	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	-moz-osx-font-smoothing: auto;
 	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
-	font-variant-ligatures: common-ligatures;
-	font-feature-settings: 'ss03' 1, 'calt' 0;
-	/* ^^ disable `calt` with Inter 4.x (or subset it out) until/unless fixed
-	-- https://github.com/rsms/inter/issues/442 et al.
-	*/
+	@media screen and (min-width: 1024px) {
+		font-feature-settings: 'ss03' 1, 'calt' 0;
+		/* ^^
+		- Avoid `ss03` oddity in some system fonts.
+		- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
+		-- https://github.com/rsms/inter/issues/442 et al.
+		*/
+	}
 	text-rendering: optimizeLegibility;
 	/* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
