@@ -12,30 +12,30 @@
 			- Forward slash %252F (not just %2F)
 			- Emoji character (not worrying about that one!)
 		*/}}
-		{{- $escapedTitle = replace $escapedTitle "%" "%2525" -}}{{/* percent sign */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "%" "%2525" -}}{{/* percent sign */}}
 			{{/* **MUST** put that one at the top to avoid fouling up the rest!! */}}
-		{{- $escapedTitle = replace $escapedTitle "," "%252C" -}}{{/* comma */}}
-		{{- $escapedTitle = replace $escapedTitle "/" "%252F" -}}{{/* forward slash*/}}
-		{{- $escapedTitle = replace $escapedTitle " " "%20" -}}{{/* regular space */}}
-		{{- $escapedTitle = replace $escapedTitle ":" "%3A" -}}{{/* colon */}}
-		{{- $escapedTitle = replace $escapedTitle ";" "%3B" -}}{{/* semicolon */}}
-		{{- $escapedTitle = replace $escapedTitle "!" "%21" -}}{{/* exclamation point */}}
-		{{- $escapedTitle = replace $escapedTitle "?" "%3F" -}}{{/* question mark */}}
-		{{- $escapedTitle = replace $escapedTitle "+" "%2B" -}}{{/* plus sign */}}
-		{{- $escapedTitle = replace $escapedTitle "—" "%E2%80%94" -}}{{/* em dash */}}
-		{{- $escapedTitle = replace $escapedTitle "–" "%E2%80%93" -}}{{/* en dash */}}
-		{{- $escapedTitle = replace $escapedTitle " " "%C2%A0" -}}{{/* nbsp */}}
-		{{- $escapedTitle = replace $escapedTitle "•" "%E2%80%A2" -}}{{/* bullet */}}
-		{{- $escapedTitle = replace $escapedTitle "#" "%23" -}}{{/* number sign or hash */}}
-		{{- $escapedTitle = replace $escapedTitle "(" "%28" -}}{{/* opening parenthesis */}}
-		{{- $escapedTitle = replace $escapedTitle ")" "%29" -}}{{/* closing parenthesis */}}
-		{{- $escapedTitle = replace $escapedTitle '"' "%22" -}}{{/* straight-up quote character */}}
-		{{- $escapedTitle = replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening curly double quote character */}}
-		{{- $escapedTitle = replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing curly double quote character */}}
-		{{- $escapedTitle = replace $escapedTitle "'" "%27" -}}{{- /* straight-up apostrophe or single quote character */ -}}
-		{{- $escapedTitle = replace $escapedTitle "‘" "%E2%80%98" -}}{{/* opening curly single quote character */}}
-		{{- $escapedTitle = replace $escapedTitle "’" "%E2%80%99" -}}{{/* curly apostrophe - closing curly single quote character */}}
-		{{- $escapedTitle = replace $escapedTitle "‑" "%E2%80%91" -}}{{/* non-breaking hyphen */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "," "%252C" -}}{{/* comma */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "/" "%252F" -}}{{/* forward slash*/}}
+		{{- $escapedTitle = strings.Replace $escapedTitle " " "%20" -}}{{/* regular space */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle ":" "%3A" -}}{{/* colon */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle ";" "%3B" -}}{{/* semicolon */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "!" "%21" -}}{{/* exclamation point */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "?" "%3F" -}}{{/* question mark */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "+" "%2B" -}}{{/* plus sign */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "—" "%E2%80%94" -}}{{/* em dash */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "–" "%E2%80%93" -}}{{/* en dash */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle " " "%C2%A0" -}}{{/* nbsp */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "•" "%E2%80%A2" -}}{{/* bullet */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "#" "%23" -}}{{/* number sign or hash */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "(" "%28" -}}{{/* opening parenthesis */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle ")" "%29" -}}{{/* closing parenthesis */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle '"' "%22" -}}{{/* straight-up quote character */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "“" "%E2%80%9C" -}}{{/* opening curly double quote character */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "”" "%E2%80%9D" -}}{{/* closing curly double quote character */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "'" "%27" -}}{{- /* straight-up apostrophe or single quote character */ -}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "‘" "%E2%80%98" -}}{{/* opening curly single quote character */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "’" "%E2%80%99" -}}{{/* curly apostrophe - closing curly single quote character */}}
+		{{- $escapedTitle = strings.Replace $escapedTitle "‑" "%E2%80%91" -}}{{/* non-breaking hyphen */}}
 		{{- $titleSize := 96 -}}{{/* pixels */}}
 		{{- if compare.Gt (len $.Title) 36 -}}
 			{{- $titleSize = 72 -}}
