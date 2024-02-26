@@ -14,7 +14,7 @@
 {{- $simple := compare.Default false (.Get "simple") -}}
 {{- $nobkgd := compare.Default false (.Get "nobkgd") -}}
 
-{{- $imgBd5 := md5 $src -}}
+{{- $imgBd5 := crypto.MD5 $src -}}
 {{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
 	{{- $divClass = print $divClass " bigImgDiv" -}}
@@ -25,7 +25,7 @@
 			generated in a `head` partial;
 			here, we need only get the class's name,
 			using the same method as in that partial
-			(md5-ing the image file name).
+			(crypto.MD5-ing the image file name).
 		*/}}
 	{{- end -}}
 {{- end -}}

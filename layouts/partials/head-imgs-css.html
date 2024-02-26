@@ -9,7 +9,7 @@
 	{{- range . -}}
 		{{- $src := . -}}
 		{{- $rscToMatch := print "images/" $src -}}
-		{{- $imgBd5 := md5 . -}}
+		{{- $imgBd5 := crypto.MD5 . -}}
 		{{- if resources.GetMatch $rscToMatch -}}
 			{{- $imgRsc := resources.GetMatch $rscToMatch -}}
 			{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $imgRsc.Width " / " $imgRsc.Height ";" -}}
@@ -39,7 +39,7 @@
 					{{- $width = .Width -}}
 					{{- $height = .Height -}}
 					{{- $GIP_colors := .Colors -}}
-					{{- $imgBd5 := md5 $src -}}
+					{{- $imgBd5 := crypto.MD5 $src -}}
 					{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $width " / " $height ";" -}}
 					{{- if (lt ($GIP_colors | len) 2) -}}
 						{{- $GIP_colors = $GIP_colors | collections.Append "#000000" -}}
