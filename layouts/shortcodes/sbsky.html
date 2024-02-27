@@ -4,18 +4,23 @@
 	- https://gist.github.com/pojntfx/72403066a96593c1ba8fd5df2b531f2d
 	- https://medium.com/@stephane.giron/post-and-get-messages-with-bluesky-social-api-and-google-apps-script-1cf76cd9c4cd
 */}}
-{{ $handle := "brycewray.com" }}
+
 {{ $didURL := "https://bsky.social/xrpc/com.atproto.identity.resolveHandle" }}
+{{ $appIdentifier := os.Getenv "BSKY_HANDLE" }}
 {{ $appPassword := os.Getenv "BSKY_API_PW" }}
 {{ $apiKeyURL := "https://bsky.social/xrpc/com.atproto.server.createSession" }}
+{{ $handle := .Get "handle" }}
+{{ $id := .Get "id" }}
+{{ $inst := .Get "inst" }}
 {{ $jsonDID := "" }}
 {{ $jsonOpts := ""}}
 {{ $jsonDIDholder := ""}}
-{{/*  {{ $tokenOpts := "" }}  */}}
-{{ $tokenURL := "" }}
 {{ $token := "" }}
 {{ $postGetURL := "https://bsky.social/xrpc/app.bsky.feed.getPosts" }}
-{{ $postJson := "" }}
+{{ $postJSONBare := "" }}
+{{ $postJSON := "" }}
+
+{{/* ================== */}}
 
 {{/* resolve handle */}}
 {{- $handleURL := fmt.Print $didURL "?handle=" $handle -}}
@@ -30,24 +35,20 @@
 	{{ end }}
 {{- end -}}
 
-{{/* get token */}}
-{{- $dataSlice := collections.Slice -}}
+{{/* get token (API key) */}}
 {{- $tokenOpts := collections.Dictionary
 	"method" "POST"
 	"headers" (collections.Dictionary
 		"Content-Type" "application/json"
 	)
 	"body" (collections.Dictionary
-		"identifier" $jsonDID
+		"identifier" $appIdentifier
 		"password" $appPassword
 	| encoding.Jsonify)
 -}}
-{{/*  {{- $tokenOpts = $tokenOpts | encoding.Jsonify -}}  */}}
-
-
 {{ with resources.GetRemote $apiKeyURL $tokenOpts }}
 	{{ with (resources.GetRemote $apiKeyURL $tokenOpts).Err }}
-		<p>Error from API key attempt is:<br>
+		<p>Error from getting API key is:<br>
 			{{ . }}</p>
 		{{/*  {{ fmt.Errorf "%s" . }}  */}}
 	{{ else }}
@@ -56,6 +57,7 @@
 	{{ end }}
 {{ end }}
 
+{{/* get post */}}
 {{- $postGetOpts := collections.Dictionary
 	"method" "GET"
 	"headers" (collections.Dictionary
@@ -63,17 +65,18 @@
 		"Authorization" (printf "Bearer %s" $token)
 	)
 -}}
-
-{{ $postGetURL = print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/3km7lcwlxxw23" }}
-
+{{ $postGetURL = print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/" $id }}
 {{ with resources.GetRemote $postGetURL $postGetOpts }}
 	{{ with (resources.GetRemote $postGetURL $postGetOpts).Err }}
 		<p>Error from post-get attempt is:<br>
 		{{ . }}</p>
 	{{ else }}
-		{{ $postJson = transform.Unmarshal .Content }}
+		{{ $postJSONBare = .Content  }}
+		{{ $postJSON = transform.Unmarshal .Content }}
 	{{ end }}
 {{ end }}
+
+{{/* ================== */}}
 
 <p>handleURL = <code>{{ $handleURL }}</code></p>
 <p>DID = <code>{{ $jsonDID }}</code></p>
@@ -85,5 +88,8 @@
 	<code>{{ $postGetURL }}{{ $postGetOpts }}</code>
 </p>
 <p>postJSON = <br>
-	<code>{{ $postJson }}</code>
+	<code>{{ $postJSON }}</code>
+</p>
+<p>postJSONBare = <br>
+	<code>{{ $postJSONBare }}</code>
 </p>
