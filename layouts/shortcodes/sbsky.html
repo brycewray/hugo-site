@@ -1,0 +1,89 @@
+{{/*
+	- https://github.com/capjamesg/bsky.link/blob/main/app.js
+	- https://dev.to/shinyakato/easily-use-firehose-api-on-bluesky-social-with-dart-and-flutter-mdk
+	- https://gist.github.com/pojntfx/72403066a96593c1ba8fd5df2b531f2d
+	- https://medium.com/@stephane.giron/post-and-get-messages-with-bluesky-social-api-and-google-apps-script-1cf76cd9c4cd
+*/}}
+{{ $handle := "brycewray.com" }}
+{{ $didURL := "https://bsky.social/xrpc/com.atproto.identity.resolveHandle" }}
+{{ $appPassword := os.Getenv "BSKY_API_PW" }}
+{{ $apiKeyURL := "https://bsky.social/xrpc/com.atproto.server.createSession" }}
+{{ $jsonDID := "" }}
+{{ $jsonOpts := ""}}
+{{ $jsonDIDholder := ""}}
+{{/*  {{ $tokenOpts := "" }}  */}}
+{{ $tokenURL := "" }}
+{{ $token := "" }}
+{{ $postGetURL := "https://bsky.social/xrpc/app.bsky.feed.getPosts" }}
+{{ $postJson := "" }}
+
+{{/* resolve handle */}}
+{{- $handleURL := fmt.Print $didURL "?handle=" $handle -}}
+{{- with resources.GetRemote $handleURL -}}
+	{{ with .Err }}
+		<p>Error from handle resolution is:<br>
+			{{ . }}</p>
+		{{/*  {{ fmt.Errorf "%s" . }}  */}}
+	{{ else }}
+		{{ $json := transform.Unmarshal .Content }}
+		{{ $jsonDID = $json.did }}
+	{{ end }}
+{{- end -}}
+
+{{/* get token */}}
+{{- $dataSlice := collections.Slice -}}
+{{- $tokenOpts := collections.Dictionary
+	"method" "POST"
+	"headers" (collections.Dictionary
+		"Content-Type" "application/json"
+	)
+	"body" (collections.Dictionary
+		"identifier" $jsonDID
+		"password" $appPassword
+	| encoding.Jsonify)
+-}}
+{{/*  {{- $tokenOpts = $tokenOpts | encoding.Jsonify -}}  */}}
+
+
+{{ with resources.GetRemote $apiKeyURL $tokenOpts }}
+	{{ with (resources.GetRemote $apiKeyURL $tokenOpts).Err }}
+		<p>Error from API key attempt is:<br>
+			{{ . }}</p>
+		{{/*  {{ fmt.Errorf "%s" . }}  */}}
+	{{ else }}
+		{{ $token = transform.Unmarshal .Content }}
+		{{ $token = $token.accessJwt }}
+	{{ end }}
+{{ end }}
+
+{{- $postGetOpts := collections.Dictionary
+	"method" "GET"
+	"headers" (collections.Dictionary
+		"Accept" "application/json"
+		"Authorization" (printf "Bearer %s" $token)
+	)
+-}}
+
+{{ $postGetURL = print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/3km7lcwlxxw23" }}
+
+{{ with resources.GetRemote $postGetURL $postGetOpts }}
+	{{ with (resources.GetRemote $postGetURL $postGetOpts).Err }}
+		<p>Error from post-get attempt is:<br>
+		{{ . }}</p>
+	{{ else }}
+		{{ $postJson = transform.Unmarshal .Content }}
+	{{ end }}
+{{ end }}
+
+<p>handleURL = <code>{{ $handleURL }}</code></p>
+<p>DID = <code>{{ $jsonDID }}</code></p>
+<p>tokenOpts = <code>{{ $tokenOpts }}</code></p>
+<p>token = <code>{{ $token }}</code></p>
+<p>Request for token is:<br />
+	<code>{{ $apiKeyURL }}{{ $tokenOpts }}</code></p>
+<p>Post-get attempt is:<br />
+	<code>{{ $postGetURL }}{{ $postGetOpts }}</code>
+</p>
+<p>postJSON = <br>
+	<code>{{ $postJson }}</code>
+</p>
