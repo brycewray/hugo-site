@@ -11,14 +11,16 @@
 {{ $apiKeyURL := "https://bsky.social/xrpc/com.atproto.server.createSession" }}
 {{ $handle := .Get "handle" }}
 {{ $id := .Get "id" }}
-{{ $inst := .Get "inst" }}
+{{ $inst := .Get "instance" }}
 {{ $jsonDID := "" }}
 {{ $jsonOpts := ""}}
 {{ $jsonDIDholder := ""}}
 {{ $token := "" }}
 {{ $postGetURL := "https://bsky.social/xrpc/app.bsky.feed.getPosts" }}
-{{ $postJSONBare := "" }}
-{{ $postJSON := "" }}
+{{ $jsonBare := "" }}
+{{ $json := "" }}
+{{ $postLink := "" }}
+{{ $handleInst := "" }}
 
 {{/* ================== */}}
 
@@ -62,20 +64,61 @@
 	"method" "GET"
 	"headers" (collections.Dictionary
 		"Accept" "application/json"
-		"Authorization" (printf "Bearer %s" $token)
+		"Authorization" (fmt.Printf "Bearer %s" $token)
 	)
 -}}
-{{ $postGetURL = print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/" $id }}
+{{ $postGetURL = fmt.Print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/" $id }}
 {{ with resources.GetRemote $postGetURL $postGetOpts }}
 	{{ with (resources.GetRemote $postGetURL $postGetOpts).Err }}
 		<p>Error from post-get attempt is:<br>
 		{{ . }}</p>
 	{{ else }}
-		{{ $postJSONBare = .Content  }}
-		{{ $postJSON = transform.Unmarshal .Content }}
+		{{ $jsonBare = .Content  }}
+		{{ $json = transform.Unmarshal .Content }}
 	{{ end }}
 {{ end }}
 
+{{/* ================== */}}
+
+{{ with $json }}
+	{{ range $json.posts }}
+		{{ $posts := . }}
+		{{ with $posts.author }}
+			{{ $author := .  }}
+			{{ $displayName := $author.displayName }}
+			<p>displayName = {{ $displayName }}</p>
+		{{ end }}
+	{{ end}}
+{{ end }}
+
+{{/*
+{{ if collections.IsSet $json "author.handle" }}
+	{{ $postLink = fmt.Print "https://" $inst "/profile/" $handle "/post/" $id }}
+	{{ $handleInst = fmt.Print "@" $handle }}
+{{ end }}
+
+{{ if collections.IsSet $json "posts" }}
+	<blockquote class="toot-blockquote" cite="{{ $postLink }}">
+		<div class="toot-header">
+			<a class="toot-profile" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">
+				<img
+					src="{{ $json.posts.author.avatar }}"
+					alt="Bluesky avatar for {{ $handleInst }}"
+					loading="lazy"
+				/>
+			</a>
+			<div class="toot-author">
+				<a class="toot-author-name" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ $json.posts.author.displayName }}</a>
+				<a class="toot-author-handle" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ $handleInst }}</a>
+			</div>
+		</div>
+		{{ $json.posts.record.text | safe.HTML }}
+		<div class="toot-footer">
+			<a href="{{ $postLink }}" class="toot-date" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.posts.record.createdAt }}</a>&nbsp;<span class="legal">(UTC)</span>
+		</div>
+	</blockquote>
+{{- end -}}
+*/}}
 {{/* ================== */}}
 
 <p>handleURL = <code>{{ $handleURL }}</code></p>
@@ -87,9 +130,9 @@
 <p>Post-get attempt is:<br />
 	<code>{{ $postGetURL }}{{ $postGetOpts }}</code>
 </p>
-<p>postJSON = <br>
-	<code>{{ $postJSON }}</code>
+<p>json = <br>
+	<code>{{ $json }}</code>
 </p>
-<p>postJSONBare = <br>
-	<code>{{ $postJSONBare }}</code>
+<p>jsonBare = <br>
+	<code>{{ $jsonBare }}</code>
 </p>
