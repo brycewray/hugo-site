@@ -317,9 +317,9 @@ a > .card, a > .toot-card {
 
 .toot-card {
 	position: relative;
-	@media screen and (min-width: 768px) {
+	/* @media screen and (min-width: 768px) {
 		display: flex;
-	}
+	} */
 	border: 2px solid;
 	border-color: var(--gray-400);
 	border-radius: 6px;
