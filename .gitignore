@@ -87,3 +87,5 @@ cfpages.yml
 pnpm-help*.*
 lcss-help-*.txt
 serve-help*.*
+
+getbsky*.j*
