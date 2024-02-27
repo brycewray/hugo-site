@@ -19,8 +19,19 @@
 {{ $postGetURL := "https://bsky.social/xrpc/app.bsky.feed.getPosts" }}
 {{ $jsonBare := "" }}
 {{ $json := "" }}
-{{ $postLink := "" }}
+{{ $postLink := fmt.Print "https://" $inst "/profile/" $handle "/post/" $id }}
+{{ $created_at := "" }}
 {{ $handleInst := "" }}
+{{ $author := "" }}
+{{ $displayName := "" }}
+{{ $facets := "" }}
+{{ $avatar := "" }}
+{{ $text := "" }}
+{{ $embedURI := "" }}
+{{ $extURI := "" }}
+{{ $extTitle := "" }}
+{{ $extDescr := "" }}
+{{ $extThumb := "" }}
 
 {{/* ================== */}}
 
@@ -83,56 +94,74 @@
 {{ with $json }}
 	{{ range $json.posts }}
 		{{ $posts := . }}
+		{{ $created_at = $posts.record.createdAt }}
+		{{ $text = $posts.record.text }}
+		{{ $text = strings.Replace $text "\n" "<br>"}}
 		{{ with $posts.author }}
-			{{ $author := .  }}
-			{{ $displayName := $author.displayName }}
-			<p>displayName = {{ $displayName }}</p>
+			{{ $author = . }}
+			{{ $displayName = $author.displayName }}
+			{{ $avatar = $author.avatar }}
 		{{ end }}
-	{{ end}}
+		{{ range .record.facets }}
+			{{ range .features }}
+				{{ $embedURI = .uri }}
+			{{ end }}
+		{{ end }}
+		{{/*
+			2024-02-27:
+			https://discourse.gohugo.io/t/trying-to-access-item-in-json-from-bluesky/48534
+		*/}}
+		{{ with $posts.embed }}
+			{{ with $posts.embed.external }}
+				{{ $extURI = $posts.embed.external.uri }}
+				{{ $extTitle = $posts.embed.external.title }}
+				{{ $extDescr = $posts.embed.external.description }}
+				{{ $extThumb = $posts.embed.external.thumb }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
 {{ end }}
 
-{{/*
-{{ if collections.IsSet $json "author.handle" }}
-	{{ $postLink = fmt.Print "https://" $inst "/profile/" $handle "/post/" $id }}
-	{{ $handleInst = fmt.Print "@" $handle }}
-{{ end }}
-
-{{ if collections.IsSet $json "posts" }}
-	<blockquote class="toot-blockquote" cite="{{ $postLink }}">
-		<div class="toot-header">
-			<a class="toot-profile" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">
-				<img
-					src="{{ $json.posts.author.avatar }}"
-					alt="Bluesky avatar for {{ $handleInst }}"
-					loading="lazy"
-				/>
-			</a>
-			<div class="toot-author">
-				<a class="toot-author-name" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ $json.posts.author.displayName }}</a>
-				<a class="toot-author-handle" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ $handleInst }}</a>
+<blockquote class="toot-blockquote" cite="{{ $postLink }}">
+	<div class="toot-header">
+		<a class="toot-profile" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">
+			<img
+				src="{{ $avatar }}"
+				alt="Bluesky avatar for @{{ $handle }}"
+				loading="lazy"
+			/>
+		</a>
+		<div class="toot-author">
+			<a class="toot-author-name" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ $displayName }}</a>
+			<a class="toot-author-handle" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ fmt.Print "@" $handle }}</a>
+		</div>
+	</div>
+	<p>
+		{{ $text | safe.HTML }}
+		{{ with $embedURI }}
+			<br>
+			<span class="pokey">(<a href="{{ $embedURI }}" rel="noopener">{{ $embedURI }}</a>)</span>
+		{{ end }}
+	</p>
+	{{ with $extURI }}
+		<a href="{{ $extURI }}" rel="noopener">
+			<div class="toot-card">
+				<div class="toot-card-image">
+					<img
+						src="{{ $extThumb }}"
+						alt="Card image from {{ $inst }} post {{ $id }}"
+						loading="lazy"
+						class="toot-card-image-image"
+					/>
+				</div>
+				<div class="toot-card-content">
+					<p class="card-title">{{ $extTitle }}</p>
+					<p class="card-description">{{ $extDescr }}</p>
+				</div>
 			</div>
-		</div>
-		{{ $json.posts.record.text | safe.HTML }}
-		<div class="toot-footer">
-			<a href="{{ $postLink }}" class="toot-date" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $json.posts.record.createdAt }}</a>&nbsp;<span class="legal">(UTC)</span>
-		</div>
-	</blockquote>
-{{- end -}}
-*/}}
-{{/* ================== */}}
-
-<p>handleURL = <code>{{ $handleURL }}</code></p>
-<p>DID = <code>{{ $jsonDID }}</code></p>
-<p>tokenOpts = <code>{{ $tokenOpts }}</code></p>
-<p>token = <code>{{ $token }}</code></p>
-<p>Request for token is:<br />
-	<code>{{ $apiKeyURL }}{{ $tokenOpts }}</code></p>
-<p>Post-get attempt is:<br />
-	<code>{{ $postGetURL }}{{ $postGetOpts }}</code>
-</p>
-<p>json = <br>
-	<code>{{ $json }}</code>
-</p>
-<p>jsonBare = <br>
-	<code>{{ $jsonBare }}</code>
-</p>
+		</a>
+	{{ end }}
+	<div class="toot-footer">
+		<a href="{{ $postLink }}" class="toot-date" rel="noopener">{{ dateFormat "3:04 PM • January 2, 2006" $created_at }}</a>&nbsp;<span class="legal">(UTC)</span>
+	</div>
+</blockquote>
