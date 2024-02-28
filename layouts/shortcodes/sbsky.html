@@ -43,7 +43,9 @@
 {{ $embedExtThumb := "" }}
 {{ $embedExtTitle := "" }}
 {{ $embedExtURI := "" }}
-{{ $embedPostLink := fmt.Print "https://" $inst "/profile/" $embedHandle "/post/" $id }}
+{{ $embedId := "" }}
+{{ $embedInst := "" }}
+{{ $embedPostLink := fmt.Print "https://" $embedInst "/profile/" $embedHandle "/post/" $embedId }}
 
 {{/* ================== */}}
 
@@ -175,19 +177,19 @@
 			<span class="pokey">(<a href="{{ $embedURI }}" rel="noopener">{{ $embedURI }}</a>)</span>
 		{{ end }}
 	</p>
-	{{ with $embedExtURI }}
-		<blockquote class="toot-blockquote" cite="{{ $postLink }}">
+	{{ with $embedExtURI }}{{/* reposts */}}
+		<blockquote class="toot-blockquote">
 			<div class="toot-header">
-				<a class="toot-profile" href="https://{{ $inst }}/profile/{{ $embedHandle }}" rel="noopener">
+				<span class="toot-profile">
 					<img
 						src="{{ $embedAvatar }}"
 						alt="Bluesky avatar for @{{ $embedHandle }}"
 						loading="lazy"
 					/>
-				</a>
+				</span>
 				<div class="toot-author">
-					<a class="toot-author-name" href="https://{{ $inst }}/profile/{{ $embedHandle }}" rel="noopener">{{ $embedDisplayName }}</a>
-					<a class="toot-author-handle" href="https://{{ $inst }}/profile/{{ $embedHandle }}" rel="noopener">{{ fmt.Print "@" $embedHandle }}</a>
+					<span class="toot-author-name">{{ $embedDisplayName }}</span>
+					<span class="toot-author-handle">{{ fmt.Print "@" $embedHandle }}</span>
 				</div>
 			</div>
 			<p>
@@ -203,7 +205,7 @@
 						<div class="toot-card-image">
 							<img
 								src="{{ $embedExtThumb }}"
-								alt="Card image from {{ $inst }} post {{ $id }}"
+								alt="Card image from embedded post"
 								loading="lazy"
 								class="toot-card-image-image"
 							/>
