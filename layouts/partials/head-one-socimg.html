@@ -1,0 +1,13 @@
+{{- $fallbackImg := resources.Get "/images/typewriter-monochrome_2242164_6260x4374.jpg" -}}
+{{- $fallbackImg = $fallbackImg.Fit "1280x669" -}}
+{{- $socImg := $fallbackImg -}}
+
+{{- if not .IsHome }}
+	{{- $socImg = resources.Get "images/social-OG-bkgd_1280x669.png" -}}
+	{{- /* otherwise, $socImg remains fallback image */ -}}
+{{- end }}
+<meta property="og:image" content="{{ $socImg.Permalink }}">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:width" content="669">
+<meta property="twitter:image" content="{{ $socImg.Permalink }}">
+<meta property="twitter:card" content="summary_large_image">
