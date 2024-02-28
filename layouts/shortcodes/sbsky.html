@@ -32,6 +32,18 @@
 {{ $extTitle := "" }}
 {{ $extDescr := "" }}
 {{ $extThumb := "" }}
+{{/* reposts */}}
+{{ $embedText := "" }}
+{{ $embedAuthor := "" }}
+{{ $embedHandle := "" }}
+{{ $embedDisplayName := "" }}
+{{ $embedAvatar := "" }}
+{{ $embedCreated_at := "" }}
+{{ $embedExtDescr := "" }}
+{{ $embedExtThumb := "" }}
+{{ $embedExtTitle := "" }}
+{{ $embedExtURI := "" }}
+{{ $embedPostLink := fmt.Print "https://" $inst "/profile/" $embedHandle "/post/" $id }}
 
 {{/* ================== */}}
 
@@ -107,16 +119,36 @@
 				{{ $embedURI = .uri }}
 			{{ end }}
 		{{ end }}
-		{{/*
+		{{/* ^^
 			2024-02-27:
 			https://discourse.gohugo.io/t/trying-to-access-item-in-json-from-bluesky/48534
 		*/}}
 		{{ with $posts.embed }}
-			{{ with $posts.embed.external }}
-				{{ $extURI = $posts.embed.external.uri }}
-				{{ $extTitle = $posts.embed.external.title }}
-				{{ $extDescr = $posts.embed.external.description }}
-				{{ $extThumb = $posts.embed.external.thumb }}
+			{{ with $posts.embed.value }}
+				{{ $extText = .text }}
+				{{ $extURI = .uri }}
+				{{ $extTitle = .title }}
+				{{ $extDescr = .description }}
+				{{ $extThumb = .thumb }}
+			{{ end }}
+			{{ with $posts.embed.record }}{{/* repost */}}
+				{{ range .embeds }}
+					{{ with .external }}
+						{{ $embedExtDescr = .description}}
+						{{ $embedExtTitle = .title }}
+						{{ $embedExtURI = .uri }}
+						{{ $embedExtThumb = .thumb }}
+					{{ end }}
+				{{ end }}
+				{{ with $posts.embed.record.author }}
+					{{ $embedAuthor = . }}
+					{{ $embedHandle = $embedAuthor.handle}}
+					{{ $embedDisplayName = $embedAuthor.displayName }}
+					{{ $embedAvatar = $embedAuthor.avatar }}
+				{{ end }}
+				{{ with .value }}
+					{{ $embedText = .text }}
+				{{ end }}
 			{{ end }}
 		{{ end }}
 	{{ end }}
@@ -143,6 +175,48 @@
 			<span class="pokey">(<a href="{{ $embedURI }}" rel="noopener">{{ $embedURI }}</a>)</span>
 		{{ end }}
 	</p>
+	{{ with $embedExtURI }}
+		<blockquote class="toot-blockquote" cite="{{ $postLink }}">
+			<div class="toot-header">
+				<a class="toot-profile" href="https://{{ $inst }}/profile/{{ $embedHandle }}" rel="noopener">
+					<img
+						src="{{ $embedAvatar }}"
+						alt="Bluesky avatar for @{{ $embedHandle }}"
+						loading="lazy"
+					/>
+				</a>
+				<div class="toot-author">
+					<a class="toot-author-name" href="https://{{ $inst }}/profile/{{ $embedHandle }}" rel="noopener">{{ $embedDisplayName }}</a>
+					<a class="toot-author-handle" href="https://{{ $inst }}/profile/{{ $embedHandle }}" rel="noopener">{{ fmt.Print "@" $embedHandle }}</a>
+				</div>
+			</div>
+			<p>
+				{{ $embedText | safe.HTML }}
+				{{ with $embedExtURI }}
+					<br>
+					<span class="pokey">(<a href="{{ $embedExtURI }}" rel="noopener">{{ $embedExtURI }}</a>)</span>
+				{{ end }}
+			</p>
+			{{ with $embedExtURI }}
+				<a href="{{ $embedExtURI }}" rel="noopener">
+					<div class="toot-card">
+						<div class="toot-card-image">
+							<img
+								src="{{ $embedExtThumb }}"
+								alt="Card image from {{ $inst }} post {{ $id }}"
+								loading="lazy"
+								class="toot-card-image-image"
+							/>
+						</div>
+						<div class="toot-card-content">
+							<p class="card-title">{{ $embedExtTitle }}</p>
+							<p class="card-description">{{ $embedExtDescr }}</p>
+						</div>
+					</div>
+				</a>
+			{{ end }}
+		</blockquote>
+	{{ end }}
 	{{ with $extURI }}
 		<a href="{{ $extURI }}" rel="noopener">
 			<div class="toot-card">
