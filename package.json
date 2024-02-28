@@ -8,9 +8,9 @@
 		"myIP": "192.168.0.70"
 	},
 	"scripts": {
-		"clean:hugo": "rimraf public",
+		"clean:hugo": "rm -rf public",
 		"search": "pagefind --site public",
-		"clean:search": "rimraf static/pagefind && rimraf static/_pagefind",
+		"clean:search": "rm -rf static/pagefind && rm -rf static/_pagefind",
 		"dev:search": "pagefind --site public --output-subdir ../static/pagefind",
 		"dev:hugo": "hugo server --port 3000 --bind=0.0.0.0 --baseURL=http://$npm_package_config_myIP:3000 --panicOnWarning --forceSyncStatic --gc",
 		"move-excerpts": "mv public/posts/index.xml public/index-excerpts.xml && mv public/posts/index.json public/index-excerpts.json",
@@ -34,7 +34,6 @@
 		"postcss": "^8.4.35",
 		"postcss-cli": "^11.0.0",
 		"postcss-preset-env": "^9.4.0",
-		"rimraf": "^5.0.5",
 		"serve": "^14.2.1",
 		"wrangler": "^3.29.0"
 	}
