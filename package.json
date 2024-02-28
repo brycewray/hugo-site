@@ -35,6 +35,6 @@
 		"postcss-cli": "^11.0.0",
 		"postcss-preset-env": "^9.4.0",
 		"serve": "^14.2.1",
-		"wrangler": "^3.29.0"
+		"wrangler": "^3.30.0"
 	}
 }
