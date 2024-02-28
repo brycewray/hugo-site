@@ -69,10 +69,7 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 {{- end }}
 
 {{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
-{{- if hugo.IsProduction -}}
-	{{- $css = $css | postCSS -}}
-	{{/* Hugo will minify, since this is going into the HTML */}}
-{{- end -}}
+{{/* Hugo will minify in production, since this is going into the HTML */}}
 {{- with $css -}}
 	<style media="screen">{{ .Content | safeCSS }}</style>
 {{- end }}
