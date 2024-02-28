@@ -35,9 +35,7 @@ He replied:
 
 [^style]: Edited for style.
 
-This is even better news, and yet another reason I [can encourage use of Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu)[^affil] and other, similar digital asset management services. After all: for serving an image, the best experience a website can offer is one in which a user's browser gets the best[^best] format it can accept. And, while some website-building tools[^Hugo] can do that on their own through either built-in methods or add-ons, it's a capability that likely will continue to be more easily provided through external actors like Cloudinary.
-
-[^affil]: Affiliate link.
+This is even better news, and yet another reason I [can encourage use of Cloudinary](https://cloudinary.com) and other, similar digital asset management services. After all: for serving an image, the best experience a website can offer is one in which a user's browser gets the best[^best] format it can accept. And, while some website-building tools[^Hugo] can do that on their own through either built-in methods or add-ons, it's a capability that likely will continue to be more easily provided through external actors like Cloudinary.
 
 [^best]: By "best," I mean the strongest combination of image quality and file-size efficiency. That way, you get the best of both worlds: the nicest-looking image *and* the quickest possible download time.
 

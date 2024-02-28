@@ -66,7 +66,7 @@ And, with those cheery thoughts, I segue to offering you a review of this site's
 - **[Mixed nuts • July, 2020](/posts/2020/07/mixed-nuts-2020-07/)** --- Another installment of sort-of-short observations on this, that, and the other thing.
 - **[Chasing 100: Tips for optimizing your website](/posts/2020/07/chasing-100-tips-optimizing-website/)** --- Suggested performance-enhancement methods (I'll forego the obvious snarky comment).
 - **[Beginner's luck](/posts/2020/07/beginners-luck/)** --- Continued trying to help SSG newbies (because I'd been one not so long ago), this time with starter sets for both Eleventy and Hugo.
-- **[Transformed](/posts/2020/07/transformed/)** --- Finally reached the end of my patience with *locally* managing/prrocessing site images and, instead, transferred that aggravation to [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu) (that's an "invitation link," as explained in an update to the article).
+- **[Transformed](/posts/2020/07/transformed/)** --- Finally reached the end of my patience with *locally* managing/prrocessing site images and, instead, transferred that aggravation to [Cloudinary](https://cloudinary.com).
 - **[Goodbye and hello • Part 2](/posts/2020/07/goodbye-hello-part-2/)** --- "Lurched" back to Netlify from Vercel. Briefly.
 
 ## August

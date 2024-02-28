@@ -6,9 +6,7 @@ date: 2022-08-27T16:01:00-05:00
 #initTextEditor: iA Writer
 ---
 
-While experimenting with various static site generators (SSGs), I've created [Astro](https://astro.build) components and [Eleventy](https://11ty.dev) shortcodes that may have value for some of you. In this case, we're talking specifically about those of you who use [Cloudinary](https://cloudinary.com)'s generous free tier to store and manipulate your website's images. [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu)[^affilLink] does offer a variety of ways to work with its interface, but the code I provide here makes it easier, in my humble view. I offer the component and shortcode here in somewhat edited form, with their original repo-based versions as noted.
-
-[^affilLink]: That's an affiliate link. If you're not already using Cloudinary, sign up through that link to get a few extra "credits" with the ones already included in the free tier --- and, for that matter, I'll get a few extra, too.
+While experimenting with various static site generators (SSGs), I've created [Astro](https://astro.build) components and [Eleventy](https://11ty.dev) shortcodes that may have value for some of you. In this case, we're talking specifically about those of you who use [Cloudinary](https://cloudinary.com)'s generous free tier to store and manipulate your website's images. Cloudinary does offer a variety of ways to work with its interface, but the code I provide here makes it easier, in my humble view. I offer the component and shortcode here in somewhat edited form, with their original repo-based versions as noted.
 
 Except where one optional parameter is used, as explained below, an image coming from this code will have a fade-in effect with a [low-quality image placeholder](https://cloudinary.com/blog/low_quality_image_placeholders_lqip_explained) (LQIP), much as you commonly see on sites using the [Next.js](https://nextjs.org) or [Gatsby](https://gatsbyjs.com) site-builder tools.
 

@@ -23,10 +23,8 @@ Oh, my, no. Quite the contrary.
 <!--more-->
 
 Allow me a couple of introductory notes about this post:
-- The image-processing third party I'll be discussing is [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu).[^affil] I've used its free tier for nearly three years.
+- The image-processing third party I'll be discussing is [Cloudinary](https://cloudinary.com). I've used its free tier for nearly three years.
 - I'll save time (yours and mine) by assuming you've already read those earlier posts to which I linked above.
-
-[^affil]: Affiliate link.
 
 In correctly handling responsive images, it's important to know and specify the aspect ratio of each image and/or its surrounding `div`, which requires detecting the image's [width and height](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio). That's why both my shortcode and render hook for processing local images depended on [Hugo's ability to detect a "resourced" image's width and height](https://gohugo.io/content-management/image-processing/#image-rendering).
 
