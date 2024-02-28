@@ -32,6 +32,10 @@
 {{ $extTitle := "" }}
 {{ $extDescr := "" }}
 {{ $extThumb := "" }}
+{{/* img-only posts */}}
+{{ $embedThumb := "" }}
+{{ $embedImage := "" }}
+{{ $embedAlt := "" }}
 {{/* reposts */}}
 {{ $embedText := "" }}
 {{ $embedAuthor := "" }}
@@ -126,12 +130,18 @@
 			https://discourse.gohugo.io/t/trying-to-access-item-in-json-from-bluesky/48534
 		*/}}
 		{{ with $posts.embed }}
-			{{ with $posts.embed.value }}
-				{{ $extText = .text }}
+			{{ with $posts.embed.external }}
+				{{ $embedURI = .uri }}
 				{{ $extURI = .uri }}
 				{{ $extTitle = .title }}
 				{{ $extDescr = .description }}
 				{{ $extThumb = .thumb }}
+			{{ end }}
+			{{ with $posts.embed.images }}{{/* img-only */}}
+				{{ range . }}
+					{{ $embedThumb = .thumb }}
+					{{ $embedAlt = .alt }}
+				{{ end }}
 			{{ end }}
 			{{ with $posts.embed.record }}{{/* repost */}}
 				{{ range .embeds }}
@@ -156,6 +166,8 @@
 	{{ end }}
 {{ end }}
 
+{{/*  {{ $jsonBare }}  */}}
+
 <blockquote class="toot-blockquote" cite="{{ $postLink }}">
 	<div class="toot-header">
 		<a class="toot-profile" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">
@@ -172,11 +184,12 @@
 	</div>
 	<p>
 		{{ $text | safe.HTML }}
-		{{ with $embedURI }}
-			<br>
-			<span class="pokey">(<a href="{{ $embedURI }}" rel="noopener">{{ $embedURI }}</a>)</span>
-		{{ end }}
 	</p>
+	{{ if not $extURI }}
+		{{ with $embedURI }}
+			<p class="pokey">(<a href="{{ $embedURI }}" rel="noopener">{{ $embedURI }}</a>)</p>
+		{{ end }}
+	{{ end }}
 	{{ with $embedExtURI }}{{/* reposts */}}
 		<blockquote class="toot-blockquote">
 			<div class="toot-header">
@@ -218,6 +231,18 @@
 				</a>
 			{{ end }}
 		</blockquote>
+	{{ end }}
+	{{ with $embedThumb }}
+		<div class="toot-card">
+			<div class="toot-card-image">
+				<img
+					src="{{ $embedThumb }}"
+					alt="{{ $embedAlt }}"
+					loading="lazy"
+					class="toot-card-image-image"
+				/>
+			</div>
+		</div>
 	{{ end }}
 	{{ with $extURI }}
 		<a href="{{ $extURI }}" rel="noopener">
