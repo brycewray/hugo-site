@@ -70,11 +70,15 @@ https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto
 
 . . . which results in:
 
-<div class="relative bg-center bigImgDiv" data-pagefind-ignore>
-	<img src="https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1136,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" alt="Social media image for post, “Automated social media images with Cloudinary and Hugo”" />
-</div>
+{{< img src="2022-10-15_example-cloudinary-soc-img_1280x669.jpg" alt="Social media image for post, “Automated social media images with Cloudinary and Hugo”" >}}
 
-**Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)
+<!--<div class="relative bg-center bigImgDiv" data-pagefind-ignore>
+	<img src="https://res.cloudinary.com/brycewray-com/image/upload/w_1280,h_669,c_fill,q_auto,f_auto/w_1136,c_fit,co_rgb:ffffff,g_north,y_72,l_text:librefranklinsemibold.ttf_72_center:Automated%20social%20media%20images%20with%C2%A0Cloudinary%20and%C2%A0Hugo/social-OG-bkgd-w-BW-logo-ctrd-for-1280x669" alt="Social media image for post, “Automated social media images with Cloudinary and Hugo”" />
+</div>-->
+
+**Note**: You may have noticed that this OG image has a blue-top/black-bottom gradient, while the background image that I showed earlier has a blue-left/black-right gradient. There's no mystery as to why I made the change: I just decided the blue-top/black-bottom background gradient worked better, given the placements and colors of the text and the logo. (I also made the logo somewhat larger while I was at it, avoiding the possibility of too much empty space when a title is unusually short.)\
+\
+**Update, 2024-02-29**: This is a locally-hosted reproduction of the actual OG image, just in case.
 {.box}
 
 I found the Cloudinary documentation considerably less easy to follow than Lengstorf's; but, in the end, I managed to get to what I wanted. One key aspect about which I felt those Cloudinary docs weren't sufficiently explanatory was the need to **double-escape** [certain characters](https://cloudinary.com/documentation/layers#special_characters) in whatever text I wanted to overlay. Before I explain what *double-escaping* turned out to mean, let me first deal with the *escape* part.
