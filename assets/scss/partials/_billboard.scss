@@ -1,3 +1,6 @@
+// @use 'colors-005' as clr;
+@use 'variables-010' as var;
+
 .billboard-div {
 	text-align: center;
 	position: relative;
@@ -40,9 +43,9 @@
 }
 
 .billboard-description-text {
-	/* font-family: var(--serif); */
-	/* font-style: italic; */
-	/* font-weight: var(--font-light); */
+	// /* font-family: var.$serif; */
+	// /* font-style: italic; */
+	// /* font-weight: var.$font-light; */
 	font-size: clamp(1.25rem, 0.75rem + 1.5vw, 1.75rem);
 	letter-spacing: -0.025em;
 	line-height: 1.4;

@@ -1,4 +1,7 @@
-/* === for home page */
+// @use 'colors-005' as clr;
+@use 'variables-010' as var;
+
+// /* === for home page */
 
 .container-home {
 	padding-bottom: 1em;
@@ -80,8 +83,8 @@ html[data-theme="dark"] {
 
 .homePost-Title {
 	font-size: clamp(1.75rem, 1.25rem + 1vw, 2.25rem);
-	/* font-family: var(--serif); */
-	/* font-weight: var(--font-medium); */
+	// /* font-family: var.$serif; */
+	// /* font-weight: var.$font-medium; */
 	letter-spacing: -0.025em;
 	padding-top: 0.5em;
 	line-height: 1.25em;
@@ -91,9 +94,9 @@ html[data-theme="dark"] {
 	margin-top: 0.5em;
 	letter-spacing: -0.025em;
 	font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
-	/* font-family: var(--serif); */
-	/* font-style: italic; */
-	/* font-weight: var(--font-light); */
+	// /* font-family: var.$serif; */
+	// /* font-style: italic; */
+	// /* font-weight: var.$font-light; */
 }
 
 .homePost-Dates {
@@ -105,7 +108,8 @@ html[data-theme="dark"] {
 .homePost-Finish {
 	margin-top: 3em;
 	strong {
-		font-weight: var(--font-semibold);
+		font-weight: var.$font-semibold;
 	}
 }
-/* === end, for home page */
+
+// /* === end, for home page */

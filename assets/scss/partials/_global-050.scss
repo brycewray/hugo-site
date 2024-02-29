@@ -1,111 +1,155 @@
+@use 'colors-005' as clr;
+@use 'variables-010' as var;
+
 :root {
+	--black: #{clr.$black};
+	--white: #{clr.$white};
 	--link-nav: var(--white);
-	--link-nav-afh: var(--blue-200);
-	--logocircle: var(--blue-500);
-	--logocircle-afh: var(--gray-500);
-	--border-bquote: var(--gray-400);
-	--fill-lightdarktoggle: var(--yellow-200);
-	--filter-shadow: var(--gray-400);
+	--link-nav-afh: #{clr.$blue-200};
+	--logocircle: #{clr.$blue-500};
+	--logocircle-afh: #{clr.$gray-500};
+	--border-bquote: #{clr.$gray-400};
+	--fill-lightdarktoggle: #{clr.$yellow-200};
+	--filter-shadow: #{clr.$gray-400};
+	@supports (color: oklch(49% 0.1 252)) {
+		--link-nav-afh: #{clr.$blue-200-oklch};
+		--logocircle: #{clr.$blue-500-oklch};
+	}
+	--serif: #{var.$serif};
+	--sans-serif: #{var.$sans-serif};
+	--monospaced: #{var.$monospaced};
+	@if var.$webFont {
+		@media screen and (min-width: 1024px) {
+			--sans-serif: #{var.$sans-serif-lg};
+		}
+	}
 }
 
 html, html[data-theme="light"] {
 	color-scheme: light;
-	/* = = = COLORS = = = */
-	/* === defaults === */
-	/* primaries */
-	--default: var(--gray-800);
-	--boost: var(--gray-900);
-	--bquote: var(--gray-500);
-	--bquote-boost: var(--gray-600);
-	--link: var(--blue-700);
-	--link-afh: var(--blue-900);
+	// /* = = = COLORS = = = */
+	// /* === defaults === */
+	// /* primaries */
+	--default: #{clr.$gray-800};
+	--boost: #{clr.$gray-900};
+	--bquote: #{clr.$gray-500};
+	--bquote-boost: #{clr.$gray-600};
+	--link: #{clr.$blue-700};
+	--link-afh: #{clr.$blue-900};
 	--head: var(--default);
-	--red: var(--red-700);
-	--box-red: var(--red-600);
+	--red: #{clr.$red-700};
+	--box-red: #{clr.$red-600};
 	--btn-text-default: var(--white);
 	--pf-result-excerpt: var(--black);
-	--bquote-article-code: var(--slate-800);
-	/* backgrounds and borders */
+	--bquote-article-code: #{clr.$slate-800};
+	// /* backgrounds and borders */
 	--bkgd: var(--white);
-	--bkgd-nav: var(--blue-850);
-	--bkgd-nav-bottom: var(--blue-850);
-	--bkgd-nav-top: var(--blue-850);
-	--bkgd-box: var(--slate-050);
-	--bkgd-code: var(--slate-050);
-	--bkgd-article-code: var(--slate-150);
-	--bkgd-box-code: var(--slate-200);
-	--bkgd-pf-result-excerpt: var(--blue-100);
+	--bkgd-nav: #{clr.$blue-850};
+	--bkgd-nav-bottom: #{clr.$blue-850};
+	--bkgd-nav-top: #{clr.$blue-850};
+	--bkgd-box: #{clr.$slate-050};
+	--bkgd-code: #{clr.$slate-050};
+	--bkgd-article-code: #{clr.$slate-150};
+	--bkgd-box-code: #{clr.$slate-200};
+	--bkgd-pf-result-excerpt: #{clr.$blue-100};
 	--bkgd-hr: var(--black);
-	--bkgd-marker-secondary: var(--slate-400);
-	--border: var(--neutral-400);
+	--bkgd-marker-secondary: #{clr.$slate-400};
+	--border: #{clr.$neutral-400};
 	--icon-inside: var(--white);
+	@supports (color: oklch(49% 0.1 252)) {
+		--link: #{clr.$blue-700-oklch};
+		--link-afh: #{clr.$blue-900-oklch};
+		--red: #{clr.$red-700-oklch};
+		--box-red: #{clr.$red-600-oklch};
+		--bkgd-nav: #{clr.$blue-850-oklch};
+		--bkgd-nav-bottom: #{clr.$blue-850-oklch};
+		--bkgd-pf-result-excerpt: #{clr.$blue-100-oklch};
+	}
 }
 
 html[data-theme="dark"] {
 	color-scheme: dark;
-	/* = = = COLORS = = = */
-	/* === defaults === */
-	/* primaries */
-	--default: var(--gray-300);
-	--boost: var(--gray-200);
-	--bquote: var(--gray-400);
-	--bquote-boost: var(--gray-350);
-	--link: var(--blue-300);
-	--link-afh: var(--slate-300);
+	// /* = = = COLORS = = = */
+	// /* === defaults === */
+	// /* primaries */
+	--default: #{clr.$gray-300};
+	--boost: #{clr.$gray-200};
+	--bquote: #{clr.$gray-400};
+	--bquote-boost: #{clr.$gray-350};
+	--link: #{clr.$blue-300};
+	--link-afh: #{clr.$slate-300};
 	--head: var(--default);
-	--red: var(--red-300);
-	--box-red: var(--red-400);
+	--red: #{clr.$red-300};
+	--box-red: #{clr.$red-400};
 	--btn-text-default: var(--black);
 	--pf-result-excerpt: var(--white);
-	--bquote-article-code: var(--slate-300);
-	/* backgrounds and borders */
+	--bquote-article-code: #{clr.$slate-300};
+	// /* backgrounds and borders */
 	--bkgd: var(--black);
-	--bkgd-nav: var(--blue-950);
-	--bkgd-nav-bottom: var(--blue-950);
-	--bkgd-nav-top: var(--blue-950);
-	--bkgd-box: var(--slate-900);
-	--bkgd-code: var(--slate-900);
-	--bkgd-article-code: var(--slate-750);
-	--bkgd-box-code: var(--slate-700);
-	--bkgd-pf-result-excerpt: var(--blue-900);
+	--bkgd-nav: #{clr.$blue-950};
+	--bkgd-nav-bottom: #{clr.$blue-950};
+	--bkgd-nav-top: #{clr.$blue-950};
+	--bkgd-box: #{clr.$slate-900};
+	--bkgd-code: #{clr.$slate-900};
+	--bkgd-article-code: #{clr.$slate-750};
+	--bkgd-box-code: #{clr.$slate-700};
+	--bkgd-pf-result-excerpt: #{clr.$blue-900};
 	--bkgd-hr: var(--white);
-	--bkgd-marker-secondary: var(--slate-500);
-	--border: var(--neutral-600);
+	--bkgd-marker-secondary: #{clr.$slate-500};
+	--border: #{clr.$neutral-600};
 	--icon-inside: var(--black);
+	@supports (color: oklch(49% 0.1 252)) {
+		--link: #{clr.$blue-300-oklch};
+		--red: #{clr.$red-300-oklch};
+		--box-red: #{clr.$red-400-oklch};
+		--bkgd-nav: #{clr.$blue-950-oklch};
+		--bkgd-nav-bottom: #{clr.$blue-950-oklch};
+		--bkgd-nav-top: #{clr.$blue-950-oklch};
+		--bkgd-pf-result-excerpt: #{clr.$blue-900-oklch};
+	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme]) {
 		color-scheme: dark;
-		/* = = = COLORS = = = */
-		/* === defaults === */
-		/* primaries */
-		--default: var(--gray-300);
-		--boost: var(--gray-200);
-		--bquote: var(--gray-400);
-		--bquote-boost: var(--gray-350);
-		--link: var(--blue-300);
-		--link-afh: var(--slate-300);
+		// /* = = = COLORS = = = */
+		// /* === defaults === */
+		// /* primaries */
+		--default: #{clr.$gray-300};
+		--boost: #{clr.$gray-200};
+		--bquote: #{clr.$gray-400};
+		--bquote-boost: #{clr.$gray-350};
+		--link: #{clr.$blue-300};
+		--link-afh: #{clr.$slate-300};
 		--head: var(--default);
-		--red: var(--red-300);
-		--box-red: var(--red-400);
+		--red: #{clr.$red-300};
+		--box-red: #{clr.$red-400};
 		--btn-text-default: var(--black);
 		--pf-result-excerpt: var(--white);
-		--bquote-article-code: var(--slate-300);
-		/* backgrounds and borders */
+		--bquote-article-code: #{clr.$slate-300};
+		// /* backgrounds and borders */
 		--bkgd: var(--black);
-		--bkgd-nav: var(--blue-950);
-		--bkgd-nav-bottom: var(--blue-950);
-		--bkgd-nav-top: var(--blue-950);
-		--bkgd-box: var(--slate-900);
-		--bkgd-code: var(--slate-900);
-		--bkgd-article-code: var(--slate-750);
-		--bkgd-box-code: var(--slate-700);
-		--bkgd-pf-result-excerpt: var(--blue-900);
+		--bkgd-nav: #{clr.$blue-950};
+		--bkgd-nav-bottom: #{clr.$blue-950};
+		--bkgd-nav-top: #{clr.$blue-950};
+		--bkgd-box: #{clr.$slate-900};
+		--bkgd-code: #{clr.$slate-900};
+		--bkgd-article-code: #{clr.$slate-750};
+		--bkgd-box-code: #{clr.$slate-700};
+		--bkgd-pf-result-excerpt: #{clr.$blue-900};
 		--bkgd-hr: var(--white);
-		--bkgd-marker-secondary: var(--slate-500);
-		--border: var(--neutral-600);
+		--bkgd-marker-secondary: #{clr.$slate-500};
+		--border: #{clr.$neutral-600};
 		--icon-inside: var(--black);
+		@supports (color: oklch(49% 0.1 252)) {
+			--link: #{clr.$blue-300-oklch};
+			--red: #{clr.$red-300-oklch};
+			--box-red: #{clr.$red-400-oklch};
+			--bkgd-nav: #{clr.$blue-950-oklch};
+			--bkgd-nav-bottom: #{clr.$blue-950-oklch};
+			--bkgd-nav-top: #{clr.$blue-950-oklch};
+			--bkgd-pf-result-excerpt: #{clr.$blue-900-oklch};
+		}
 	}
 }
 
@@ -114,46 +158,48 @@ html, body {
 	margin: 0 auto;
 	padding: 0;
 	-webkit-font-smoothing: subpixel-antialiased;
-	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
+	// /* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	-moz-osx-font-smoothing: auto;
-	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
-	@media screen and (min-width: 1024px) {
-		font-feature-settings: 'ss03' 1, 'calt' 0;
-		/* ^^
-		- Avoid `ss03` oddity in some system fonts.
-		- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
-		-- https://github.com/rsms/inter/issues/442 et al.
-		*/
+	// /* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
+	@if var.$webFont == "Inter" {
+		@media screen and (min-width: 1024px) {
+			font-feature-settings: 'ss03' 1, 'calt' 0;
+			// /* ^^
+			// - Avoid `ss03` oddity in some system fonts.
+			// - Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
+			// 	-- https://github.com/rsms/inter/issues/442 et al.
+			// */
+		}
 	}
 	text-rendering: optimizeLegibility;
-	/* text-justify: inter-character; /* someday... */
+	// /* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
 	font-family: var(--sans-serif);
-	font-weight: var(--font-normal);
-	/* @media screen and (min-width: 768px) {
-		font-weight: var(--font-semilight);
-	} */
+	font-weight: var.$font-normal;
+	// /* @media screen and (min-width: 768px) {
+	// 	font-weight: var.$font-semilight;
+	// } */
 	background-color: var(--bkgd);
 	color: var(--default);
 }
-/*
-h1, .h1, h2, .h2, h3, .h3, h4, .h4,
-header, footer, table, blockquote, summary, contact-button, search-button,
-.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
-.sitemap-Div, .searchDiv, .searchDivPF,
-.footnotes, .footnote-sim, .footnote-ref,
-.box, .labeled-highlight, .imgcCaption, .imghCaption,
-.bg-dark, a.contactButton,
-.legal, .pokey {
-	font-family: var(--sans-serif);
-} */
+// /*
+// h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+// header, footer, table, blockquote, summary, contact-button, search-button,
+// .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+// .sitemap-Div, .searchDiv, .searchDivPF,
+// .footnotes, .footnote-sim, .footnote-ref,
+// .box, .labeled-highlight, .imgcCaption, .imghCaption,
+// .bg-dark, a.contactButton,
+// .legal, .pokey {
+// 	font-family: var(--sans-serif);
+// } */
 
 b, strong {
-	font-weight: var(--font-semibold);
+	font-weight: var.$font-semibold;
 }
 
 html {
-	/* scroll-behavior: smooth; */
+	// /* scroll-behavior: smooth; */
 	scroll-padding-top: 80px;
 }
 
@@ -162,7 +208,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	font-weight: var(--font-semibold);
+	font-weight: var.$font-semibold;
 	color: var(--head);
 	letter-spacing: -0.025rem;
 }
@@ -188,7 +234,7 @@ h3, .h3 {
 
 h1, .h1 {
 	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
-	/* usually overridden by other styling (e.g., billboard.scss) */
+	// /* usually overridden by other styling (e.g., billboard.scss) */
 }
 
 h2, .h2 {
@@ -204,11 +250,11 @@ h4, .h4 {
 }
 
 a, a:focus, a:hover, a:active {
-	text-decoration-thickness: var(--textDcThick);
-	text-underline-offset: var(--textUnOffst);
+	text-decoration-thickness: var.$textDcThick;
+	text-underline-offset: var.$textUnOffst;
 	@media screen and (min-width: 768px) {
-		text-decoration-thickness: var(--textDcThickMd);
-		text-underline-offset: var(--textUnOffstMd);
+		text-decoration-thickness: var.$textDcThickMd;
+		text-underline-offset: var.$textUnOffstMd;
 	}
 	text-decoration-skip-ink: auto;
 }
@@ -286,7 +332,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 .container {
-	/* width: 90%; */
+	// /* width: 90%; */
 	margin: 0 auto;
 }
 
@@ -319,15 +365,15 @@ li p {
 	width: 100%;
 }
 
-/* === for search button on each page (except search page itself) */
+// /* === for search button on each page (except search page itself) */
 
 search-button {
 	display: grid;
 	margin: 4em auto 2em;
 	place-items: center;
 	button {
-		width: var(--btn-width);
-		height: var(--btn-height);
+		width: var.$btn-width;
+		height: var.$btn-height;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -335,22 +381,22 @@ search-button {
 		align-items: center;
 		background-color: var(--link);
 		border: 1px solid;
-		border-radius: var(--btn-radius);
+		border-radius: var.$btn-radius;
 		border-color: transparent;
 		color: var(--btn-text-default);
 		.svg {
-			padding-left: var(--interactionPadding);
+			padding-left: var.$interactionPadding;
 			padding-bottom: 0.125em;
 			svg {
-				width: var(--btn-svg-width);
+				width: var.$btn-svg-width;
 				height: auto;
 			}
 		}
 		.legend {
-			padding-right: var(--interactionPadding);
+			padding-right: var.$interactionPadding;
 			text-align: right;
-			font-size: var(--btn-legend-text);
-			font-weight: var(--btn-legend-weight);
+			font-size: var.$btn-legend-text;
+			font-weight: var.$btn-legend-weight;
 		}
 		&:hover {
 			cursor: pointer;
@@ -362,4 +408,4 @@ search-button {
 	}
 }
 
-/* === end, search button === */
+// /* === end, search button === */

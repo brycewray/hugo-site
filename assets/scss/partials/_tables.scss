@@ -1,22 +1,25 @@
-/* :root {
-	--emerald-050: hsl(155, 80%, 96%);
-	--emerald-900: hsl(155, 61%, 19%);
-} */
+@use 'colors-005' as clr;
+@use 'variables-010' as var;
+
+// /* :root {
+// 	--emerald-050: hsl(155, 80%, 96%);
+// 	--emerald-900: hsl(155, 61%, 19%);
+// } */
 
 td {
 	vertical-align: top;
 }
 
-/* === table for web typography article, part II */
+// /* === table for web typography article, part II */
 table.noborders {
 	width: 100%;
-	/* table-layout: fixed; */
+	// /* table-layout: fixed; */
 	margin: 1.5rem auto 1rem;
 	border: 0;
 	border-collapse: collapse;
 
 	td {
-		font-weight: var(--font-normal);
+		font-weight: var.$font-normal;
 		text-align: left;
 		vertical-align: middle;
 		padding: 0.25rem 0 0.25rem 0.5rem;
@@ -37,20 +40,23 @@ table.noborders {
 		}
 	}
 	tr:nth-child(odd) {
-		background-color: var(--slate-050);
+		background-color: clr.$slate-050;
 	}
 	tr:nth-child(even) {
-		background-color: var(--slate-150);
+		background-color: clr.$slate-150;
 	}
 	thead td {
-		background-color: var(--blue-900);
+		background-color: clr.$blue-900;
+		@supports (color: oklch(49% 0.1 252)) {
+			background-color: clr.$blue-900-oklch;
+		}
 		color: var(--white);
 		font-weight: bold;
 	}
 }
-/* === end, table for web typography article, part II */
+// /* === end, table for web typography article, part II */
 
-/* === table for MLB/NFL article */
+// /* === table for MLB/NFL article */
 table.leagues {
 	table-layout: fixed; /* so don't have to spec each `td`'s width */
 	width: 90%;
@@ -62,21 +68,24 @@ table.leagues {
 	}
 }
 
-/* === end, table for MLB/NFL article */
+// /* === end, table for MLB/NFL article */
 
 table.ulysses {
 	width: 100%;
 	table-layout: auto;
 	border-collapse: collapse;
-	font-size: var(--text-xs);
+	font-size: var.$text-xs;
 	@media screen and (min-width: 768px) {
 		font-size: inherit;
 		table-layout: fixed; /* so don't have to spec each `td`'s width */
 	}
 	thead th {
-		background-color: var(--blue-800);
+		background-color: clr.$blue-800;
+		@supports (color: oklch(49% 0.1 252)) {
+			background-color: clr.$blue-800-oklch;
+		}
 		border: 1px solid;
-		border-color: var(--black) var(--gray-350) var(--black) var(--black);
+		border-color: var(--black) clr.$gray-350 var(--black) var(--black);
 		color: var(--white);
 		&:last-child {
 			border-right-color: var(--black);
@@ -98,7 +107,7 @@ table.ulysses {
 		background-color: var(--white);
 	}
 	tr:nth-child(even) {
-		background-color: var(--emerald-050);
+		background-color: clr.$emerald-050;
 	}
 }
 
@@ -117,10 +126,10 @@ html[data-theme="dark"] {
 			color: var(--white);
 		}
 		tr:nth-child(odd) {
-			background-color: var(--slate-700);
+			background-color: clr.$slate-700;
 		}
 		tr:nth-child(even) {
-			background-color: var(--emerald-900);
+			background-color: clr.$emerald-900;
 		}
 	}
 }
@@ -141,10 +150,10 @@ html[data-theme="dark"] {
 				color: var(--white);
 			}
 			tr:nth-child(odd) {
-				background-color: var(--slate-700);
+				background-color: clr.$slate-700;
 			}
 			tr:nth-child(even) {
-				background-color: var(--emerald-900);
+				background-color: clr.$emerald-900;
 			}
 		}
 	}

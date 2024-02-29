@@ -1,4 +1,7 @@
-/* === for search form */
+// @use 'colors-005' as clr;
+// @use 'variables-010' as var;
+
+// /* === for search form */
 
 html, html[data-theme="light"] {
 	--input: var(--black);
@@ -19,7 +22,7 @@ html[data-theme="dark"] {
 }
 
 .searchDivPF {
-	/* margin: 0 auto; */
+	// /* margin: 0 auto; */
 	width: 80%;
 	@media screen and (min-width: 768px) {
 		width: 70%;
@@ -80,18 +83,18 @@ html[data-theme="dark"] {
 }
 
 #search {
-	/* in case we need it */
+	// /* in case we need it */
 	margin: 0.5em auto 1em;
 }
 
-/* [overall area]
-.pagefind-ui {
+// /* [overall area]
+// .pagefind-ui {
 
-}
-*/
+// }
+// */
 
 .pagefind-ui__form {
-	/* holding */
+	// /* holding */
 	position: relative;
 	text-align: center;
 }
@@ -110,7 +113,7 @@ html[data-theme="dark"] {
 }
 
 .pagefind-ui__drawer {
-	/* results area */
+	// /* results area */
 	gap: 1em;
 	display: flex;
 	flex-direction: row;
@@ -119,13 +122,13 @@ html[data-theme="dark"] {
 }
 
 .pagefind-ui__message {
-	/* count of results */
+	// /* count of results */
 	margin-top: 0.5em;
 	text-align: center;
 }
 
 .pagefind-ui__button, .pagefind-ui__search-clear {
-	/* "Load more results" */
+	// /* "Load more results" */
 	margin: 1em auto;
 	text-align: center;
 	border-radius: 9px;
@@ -146,7 +149,7 @@ html[data-theme="dark"] {
 }
 
 .pagefind-ui__result {
-	/* li for list */
+	// /* li for list */
 	margin-bottom: 0.75em;
 }
 
@@ -156,13 +159,13 @@ html[data-theme="dark"] {
 
 .pagefind-ui__button {
 	display: block;
-	/* position: absolute; */
-	/* left: 50%; */
-	/* bottom: 0; */
+	// /* position: absolute; */
+	// /* left: 50%; */
+	// /* bottom: 0; */
 }
 
 .pagefind-ui__result-excerpt {
-	/* font-family: var(--serif); */
+	// /* font-family: var(--serif); */
 	mark {
 		color: var(--pf-result-excerpt);
 		background-color: var(--bkgd-pf-result-excerpt);

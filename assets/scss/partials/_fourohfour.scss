@@ -1,3 +1,6 @@
+// @use 'colors-005' as clr;
+@use 'variables-010' as var;
+
 .FourOhFour-Wrapper {
 	padding-top: 10vh;
 }
@@ -7,7 +10,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	h1 {
-		font-size: var(--text-4xl);
+		font-size: var.$text-4xl;
 		margin-bottom: 3rem;
 		@media screen and (min-width: 1024px) {
 			font-size: 3.25rem;
