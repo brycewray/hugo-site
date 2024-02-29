@@ -1,5 +1,5 @@
 {{- $opts := dict "inlineImports" true -}}
-{{- $css := resources.Get "css/index.css" -}}
+{{- $css := resources.Get "lcss/index.css" | resources.Copy "css/index.css" -}}
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | resources.Copy "css/index.min.css" | resources.Fingerprint -}}
 {{- end -}}
@@ -9,7 +9,7 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- $printCSS := resources.Get "css/print.css" -}}
+{{- $printCSS := resources.Get "lcss/print.css" | resources.Copy "css/print.css" -}}
 {{- if hugo.IsProduction -}}
 	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | resources.Fingerprint -}}
 {{- end -}}

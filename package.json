@@ -6,7 +6,7 @@
 	"watch": {
 		"dev:lcss": {
 			"patterns": [
-				"assets/css-original"
+				"assets/css"
 			],
 			"extensions": "css,scss",
 			"quiet": true,
@@ -15,7 +15,7 @@
 	},
 	"scripts": {
 		"clean:hugo": "rm -rf public",
-		"clean:lcss": "rm -rf assets/css",
+		"clean:lcss": "rm -rf assets/lcss",
 		"search": "pagefind --site public",
 		"clean:search": "rm -rf static/pagefind && rm -rf static/_pagefind",
 		"dev:search": "pagefind --site public --output-subdir ../static/pagefind",
@@ -24,7 +24,7 @@
 		"prod:hugo": "hugo --minify --gc",
 		"testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* dev:lcss --parallel dev:hugo watch",
-		"dev:lcss": "lightningcss --bundle --targets \"$npm_package_config_targets\" assets/css-original/*.css --output-dir assets/css",
+		"dev:lcss": "lightningcss --bundle --targets \"$npm_package_config_targets\" assets/css/*.css --output-dir assets/lcss",
 		"build:lcss": "npm run dev:lcss -- --minify",
 		"build:purge": "purgecss --config ./purgecss.config.js",
 		"build:prelim": "NODE_ENV=production npm-run-all clean:* build:lcss build:purge prod:hugo",

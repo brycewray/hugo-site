@@ -4,7 +4,7 @@ module.exports = {
 		"./assets/**/*.js"
 	],
 	css: ['./assets/**/*.css'],
-	output: './assets/css',
+	output: './assets/lcss',
 	safelist: {
 		standard: [
 			/^\:.*/,
