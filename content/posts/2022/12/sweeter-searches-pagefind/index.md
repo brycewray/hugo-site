@@ -22,7 +22,7 @@ As newer versions of Pagefind appear, its powers grow; and one of those enhancem
 
 Before I go there, however, let's talk about exactly how you can make Pagefind exclude things you want excluded. Pagefind examines your site's actual HTML, so you can use multiple methods to identify items for exclusion.
 
-First, you can add **`data-pagefind-ignore`** to something's opening HTML tag. You'd do this in your chosen SSG's templating. For example, I exclude the site's [HTML sitemap](/sitemap/) with:
+First, you can add **`data-pagefind-ignore`** to something's opening HTML tag. You'd do this in your chosen SSG's templating. For example, I exclude the site's [HTML sitemap](/sitemaphtml/) with:
 
 ```html
 <div class="sitemap-Container" data-pagefind-ignore>

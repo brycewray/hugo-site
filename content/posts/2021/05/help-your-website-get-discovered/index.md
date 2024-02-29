@@ -275,15 +275,16 @@ outputs:
 
 4. Hugo comes with a built-in template for the XML sitemap, so there's no need to create one.
 
-5. For the HTML sitemap, go to the `content` folder (probably top-level) and create a `sitemap` folder containing an `_index.md` file (note that it's `_index.md` and not `index.md`, which [matters in Hugo](https://gohugo.io/content-management/page-bundles/)) with whatever date you prefer:
+5. For the HTML sitemap, go to the `content` folder (probably top-level) and create a `sitemaphtml` folder[^folderName] containing an `_index.md` file (note that it's `_index.md` and not `index.md`, which [matters in Hugo](https://gohugo.io/content-management/page-bundles/)) with whatever date you prefer:
 {{< highlight md "linenos=false" >}}
 ---
 title: "Sitemap (HTML form)"
 date: 2021-05-12T08:00:00-05:00
+type: sitemaphtml
 ---
 {{< /highlight >}}
 
-6. Then, back in the appropriate `layouts` folder, add a `sitemap` folder containing a `sitemap.html` file with the following (edit the classes and the "Main pages" stuff as makes sense for your site):
+6. Then, back in the appropriate `layouts` folder, add a `sitemaphtml` folder[^folderName] containing a `single.html` file with the following (edit the classes and the "Main pages" stuff as makes sense for your site):
 {{< highlight go-html-template "linenos=false" >}}
 {{ define "main" }}
 	<div class="container-narrower sitemapDiv">
@@ -304,6 +305,8 @@ date: 2021-05-12T08:00:00-05:00
 	</div>
 {{ end }}
 {{< /highlight >}}
+
+[^folderName]: I have found that, in some versions of Hugo, calling the HTML sitemap folder `sitemap` can cause a failure to generate the `sitemap.xml` file which you want search engines to detect.
 
 Now, finish up the Hugo-based setup with the "For either SSG" instructions below.
 
