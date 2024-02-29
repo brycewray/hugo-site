@@ -109,7 +109,7 @@ my-site   <-- The Hugo project folder
 └─ layouts
 └─ static
 └─ themes
-{{< /highlight >}}hugo.toml
+{{< /highlight >}}
 
 Everything from here on takes place in that `my-site` folder.
 
