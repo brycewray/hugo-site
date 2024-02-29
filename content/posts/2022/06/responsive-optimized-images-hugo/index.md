@@ -291,7 +291,4 @@ Even if you don't use `imgh` or anything like it, I hope this article has at lea
 - Utkarsh Verma, "Using responsive images effortlessly with Hugo" (<span class="nobrk">2022-03-06</span>).[^deadlink]
 - Joost van der Schee, "[Image compression for the lazy](https://hugocodex.org/blog/image-compression-for-the-lazy/)" (<span class="nobrk">2022-06-19</span>).
 
-**Update from the future**: I later went back to using Cloudinary to handle some of the site's images.
-{.box}
-
 [^deadlink]: Article no longer online as of <span class="nobrk">2023-10-29</span>.

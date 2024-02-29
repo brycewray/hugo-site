@@ -190,6 +190,3 @@ In this case, it produces:
 . . . but, **this** time, the CSS for its background is generated right where it should be: up in the HTML `head`, **not** down in the `body`.
 
 And that's *without* my having abused any square pegs, round holes, or even hammers.
-
-**Update from the future**: I later went back to using Cloudinary to handle some of the site's images.
-{.box}
