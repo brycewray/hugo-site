@@ -145,11 +145,12 @@ As it creates the site, Hugo will automatically display instructions talking abo
 {{< highlight plaintext "linenos=false" >}}
 my-site   <-- The Hugo project folder
 └─ archetypes
-└─ config.toml   <-- The only non-folder
+└─ assets
 └─ content
 └─ data
+└─ hugo.toml   <-- The only non-folder
+└─ i18n
 └─ layouts
-└─ public
 └─ static
 └─ themes
 {{< /highlight >}}
@@ -218,7 +219,7 @@ This line is from `content/_index.md`.
 {{< /highlight >}}
 Incidentally, the reason for that underscore in the name `_index.md` has to do with [how Hugo helps you manage content](https://gohugo.io/content-management/organization/#index-pages-_indexmd), but a more detailed explanation thereof is well outside the scope of these intentionally simplified instructions.
 
-7. In the `config.toml` file at the Hugo project's top level, add the following line:\
+7. In the `hugo.toml` file at the Hugo project's top level, add the following line:\
 {{< highlight toml "linenos=false" >}}
 disableKinds = ['taxonomy', 'term']
 {{< /highlight >}}
