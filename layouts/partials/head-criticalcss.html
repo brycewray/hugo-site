@@ -1,3 +1,4 @@
+{{- $opts := dict "inlineImports" true -}}
 {{- $fontsSrc := "local" -}}
 {{- /* "local" or "CFF"; fallback is system fonts. With CFF, remember that
 the CSP's `style-src` must allow "unsafe-inline" because CFF injects a `style`
@@ -66,10 +67,7 @@ AFTER the CFP Page Function injects the CSP. */ -}}
 	{{- end }}
 {{- end }}
 
-{{ $css := (resources.Match "css/partials/0*.css") | resources.Concat "css/critical.css" }}
-{{- if hugo.IsProduction -}}
-	{{- $css = $css | resources.PostCSS -}}
-{{- end -}}
+{{- $css := resources.Get "css/critical.css" }}
 {{- with $css }}
 	<style media="screen">{{ .Content | safe.CSS }}</style>
 {{- end }}
