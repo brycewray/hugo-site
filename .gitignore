@@ -6,7 +6,7 @@ resources/_gen/assets/scss
 resources/_gen/getresource
 # --- the above line is so tweets/toots won't be "noisy"
 # resources/json
-resources/_gen/images/images/social-OG-w-BW-logo_1024x512*.*
+# resources/_gen/images/images/social-OG-w-BW-logo_1024x512*.*
 hugo_stats.json
 node_modules
 .env
