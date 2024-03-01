@@ -42,6 +42,6 @@
 		"pagefind": "^1.0.4",
 		"purgecss": "^5.0.0",
 		"serve": "^14.2.1",
-		"wrangler": "^3.30.0"
+		"wrangler": "^3.30.1"
 	}
 }
