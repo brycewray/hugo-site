@@ -1,7 +1,7 @@
 {
 	"config": {
 		"myIP": "192.168.0.70",
-		"targets": "defaults"
+		"targets": "since 2023-07-01"
 	},
 	"watch": {
 		"dev:lcss": {
