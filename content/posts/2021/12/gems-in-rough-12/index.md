@@ -44,4 +44,4 @@ He soon replied:
 
 > Thanks for the Sitemap Tip, it fulfills my needs perfectly.
 
-So I repeat that suggestion here, hoping that you, too, find that [HTML sitemap](/sitemaphtml/) helpful. One other suggestion: make sure your own website has something like this. You never know what visitors may need.
+So I repeat that suggestion here, hoping that you, too, find that [HTML sitemap](/sitemap/) helpful. One other suggestion: make sure your own website has something like this. You never know what visitors may need.
