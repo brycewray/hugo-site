@@ -270,6 +270,19 @@ OKLCH versions from https://oklch.com.
 		--red-500: oklch(63.5% 0.206 25);
 		--red-600: oklch(57.43% 0.216 25);
 		--red-700: oklch(50.03% 0.19 25);
+		--orange-300: oklch(71.12% 0.183 49);
+		--orange-700: oklch(55.1% 0.155 49);
+		--yellow-200: oklch(94.03% 0.123 104);
+		--yellow-300: oklch(89.76% 0.164 104);
+		--yellow-800: oklch(47.33% 0.09965845980572594 104);
+		--green-100: oklch(96.37% 0.036 151);
+		--green-600: oklch(63.06% 0.174 151);
+		--emerald-050: oklch(98% 0.019 158);
+		--emerald-200: oklch(90.85% 0.085 158);
+		--emerald-700: oklch(51.24% 0.11 158);
+		--emerald-900: oklch(37.92% 0.074 158);
+		--cyan-300: oklch(87.23% 0.10871625011761053 219);
+		--cyan-600: oklch(60.5% 0.109 219);
 		--blue-100: oklch(93.87% 0.030801877645985572 256);
 		--blue-150: oklch(91.27% 0.044 256);
 		--blue-200: oklch(87.85% 0.062 256);
@@ -281,5 +294,9 @@ OKLCH versions from https://oklch.com.
 		--blue-850: oklch(38.55% 0.126 256);
 		--blue-900: oklch(36.51% 0.118 256);
 		--blue-950: oklch(28.03% 0.086 256);
+		--fuchsia-300: oklch(83.21% 0.131 321);
+		--fuchsia-700: oklch(50.88% 0.222 321);
+		--rose-300: oklch(81.49% 0.107 11);
+		--rose-700: oklch(51.69% 0.199 11);
 	}
 }
