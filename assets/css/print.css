@@ -11,12 +11,15 @@
 	.bg-dark,
 	[class^="imgB-"],
 	.contactBtn,
+	contact-button,
+	.comments,
 	.searchBtnDiv,
 	lite-youtube,
 	button,
 	.lyt-disclaimer,
 	.toot-header img,
-	.billboard-title-block p.legal {
+	.billboard-title-block p.legal,
+	.gitinfo {
 		display: none !important;
 	}
 	@page {
@@ -52,6 +55,11 @@
 	}
 	.box {
 		background-color: #fff;
+	}
+	picture img {
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
 	}
 	.imgCover {
 		object-fit: cover;
