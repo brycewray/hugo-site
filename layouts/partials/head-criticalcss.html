@@ -1,6 +1,6 @@
 {{- $opts := dict "inlineImports" true -}}
 
-{{- $fontsSrc := "system" -}}
+{{- $fontsSrc := "local" -}}
 	{{- /* choices are "local" or "CFF" or "system" (system fonts stack).
 	With CFF, remember that the CSP's `style-src` must allow "unsafe-inline"
 	because CFF injects a `style` AFTER the CFP Page Function injects the CSP. */ -}}
