@@ -59,8 +59,8 @@
 			{{- $itemsSans := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
 			{{- $varsSans := "100..900" -}}
 			{{- $URLSans := fmt.Print $URLopen $fontSans ":" $itemsSans "@0," $varsSans ";1," $varsSans "&display=swap" -}}
-		{{- $fontSerif := "Noto+Serif" -}}{{/* e.g., "Noto+Serif" */}}
-			{{- $fontSerifFamily := "Noto Serif" -}}{{/* e.g., "Noto Serif" */}}
+		{{- $fontSerif := "" -}}{{/* e.g., "Noto+Serif" */}}
+			{{- $fontSerifFamily := "" -}}{{/* e.g., "Noto Serif" */}}
 			{{- $itemsSerif := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
 			{{- $varsSerif := "100..900" -}}
 			{{- $URLSerif := fmt.Print $URLopen $fontSerif ":" $itemsSerif "@0," $varsSerif ";1," $varsSerif "&display=swap" -}}
@@ -92,7 +92,6 @@
 					bandwidth is at a premium
 				*/
 			}
-
 		</style>
 		{{ with $fontSans -}}
 			<link {{ fmt.Printf "href=%q" $URLSans | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
