@@ -88,6 +88,9 @@ For example, here's `img.html` in use with my usual go-to image for this kind of
 
 {{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" >}}
 
+**Update, 2024-03-04**: Because I'd reached the limits of the Cloudinary free plan after some work on certain files, the image above is actually rendered using Hugo's built-in image processing.
+{.box}
+
 Now, without further ado, here's the relevant code.[^defaults] [^styling] Of course, you must insert your own Cloudinary "cloud name" in the `$myCloud` variable to make this work for your Hugo project.
 
 [^defaults]: Thanks to [Sujal Gurung](https://github.com/dinesh-58) for the excellent suggestion that I use Hugo's [`default` function](https://gohugo.io/functions/default/) for cleaner code than what I originally had here! Somehow, I'd missed reading about that one all this time.
