@@ -2,26 +2,8 @@
 
 :root {
 	/*
-
 	==== start, TYPOGRAPHY ====
-
 	*/
-	/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-	--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
-	@media screen and (min-width: 1024px) {
-		--sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
-	}
-	/*
-		^ ^ ^
-		serve non-system fonts to only larger screens,
-		to make it easier on phones, especially where
-		bandwidth is at a premium
-	*/
-	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
-	/* --social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-	/* --emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 	/* --font-thin: 100; */
 	/*
 	Remember: Apple's San Francisco is not variable, so it won't show "half-weights" (e.g., 350) as desired. Instead, it has nine distinct weights.
@@ -64,11 +46,8 @@
 	     but Segoe UI needs at least 0.25em */
 
 	/*
-
 	==== end, TYPOGRAPHY ====
-
 	*/
-
 
 	/*
 	Vars for breakpoints --- mostly based on TWCSS and my SCSS originals,

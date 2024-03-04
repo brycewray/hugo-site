@@ -10,7 +10,7 @@
 @media screen and (min-width: 1024px) {
 	@font-face {
 		font-family: 'Libre Franklin';
-		font-weight: 1 999;
+		font-weight: 100 900;
 		font-style: normal;
 		font-display: swap;
 		src: url('/fonts/LibreFranklin-Roman-VariableFont_subset.woff2') format('woff2-variations'), url('/fonts/LibreFranklin-Roman-VariableFont_subset.woff2') format('woff2');
@@ -18,7 +18,7 @@
 	}
 	@font-face {
 		font-family: 'Libre Franklin';
-		font-weight: 1 999;
+		font-weight: 100 900;
 		font-style: italic;
 		font-display: swap;
 		src: url('/fonts/LibreFranklin-Italic-VariableFont_subset.woff2') format('woff2-variations'), url('/fonts/LibreFranklin-Italic-VariableFont_subset.woff2') format('woff2');
