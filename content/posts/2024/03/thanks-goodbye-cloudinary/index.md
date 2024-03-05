@@ -2,7 +2,7 @@
 title: "Thanks and goodbye, Cloudinary"
 description: "After my code exceeds the limits of an already overly generous Free Plan, I again process all images locally."
 author: Bryce Wray
-date: 2024-03-05T06::00-06:00
+date: 2024-03-05T06:50:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
 # imgs:
