@@ -16,10 +16,6 @@ In addition, the site uses certain **external services**, each of which has its 
 
 This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com) and is configured to use Cloudflare's Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies. Additionally, any non-self-served web fonts on this site are provided by [Cloudflare Fonts](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/), a service which processes Google Fonts not only to enhance performance but also to keep the fonts from violating your privacy --- [as they would if served by Google](/posts/2020/08/google-fonts-privacy/).
 
-## Cloudinary
-
-[Cloudinary](https://cloudinary.com) hosts and serves some images on this site. A [Cloudinary Support article](https://support.cloudinary.com/hc/en-us/articles/360020207811-Does-Cloudinary-Store-Any-Cookies-) says that your viewing of any such images involves no storage or use of your personal data.
-
 ## giscus
 
 The site's [giscus](https://giscus.app) commenting system, which is based on the [GitHub Discussions search API](https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions#search), performs no tracking.
