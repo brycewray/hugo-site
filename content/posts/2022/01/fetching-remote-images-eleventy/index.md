@@ -7,6 +7,11 @@ date: 2022-01-25T14:45:00-06:00
 #initTextEditor: Ulysses
 ---
 
+<strong class="red">Update, 2024-03-05</strong>: See also "[Thanks and goodbye, Cloudinary](/posts/2024/03/thanks-goodbye-cloudinary/)."
+{.box}
+
+<br>
+
 {{% disclaimer %}}
 
 **Update, 2022-01-26**: Please see the end of this post for additional info straight from the horse’s mouth, so to speak.

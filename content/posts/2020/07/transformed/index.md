@@ -5,6 +5,11 @@ author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
 ---
 
+<strong class="red">Update, 2024-03-05</strong>: See also "[Thanks and goodbye, Cloudinary](/posts/2024/03/thanks-goodbye-cloudinary/)."
+{.box}
+
+<br>
+
 {{% disclaimer %}}
 
 This is about what one might call a transformative process.

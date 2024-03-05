@@ -12,6 +12,11 @@ imgs:
 - typewriter-monochrome_2242164_6260x4374.jpg
 ---
 
+<strong class="red">Update, 2024-03-05</strong>: See also "[Thanks and goodbye, Cloudinary](/posts/2024/03/thanks-goodbye-cloudinary/)."
+{.box}
+
+<br>
+
 {{% disclaimer %}}
 
 If you ever use social media to promote your website's content, you'll want to read this post. Although we'll be concentrating on a procedure that involves the [Hugo](https://gohugo.io) static site generator (SSG) and the free tier of the [Cloudinary](https://cloudinary.com) digital asset management provider, anyone who runs a website can benefit from at least some of the information we'll provide below.

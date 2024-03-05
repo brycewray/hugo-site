@@ -9,6 +9,9 @@ date: 2023-07-23T10:14:00-05:00
 # -
 ---
 
+<strong class="red">Update, 2024-03-05</strong>: See also "[Thanks and goodbye, Cloudinary](/posts/2024/03/thanks-goodbye-cloudinary/)."
+{.box}
+
 Soon after I issued "[Using Hugo Pipes with Cloudinary](/posts/2023/07/hugo-pipes-cloudinary/)," I found it necessary to add a warning about using the approach and code I'd covered in that post. In short, it wasn't too kind to the "sometimes underpowered servers used by some hosting vendors' free tiers," so I had to advise using it to only a limited degree.
 
 While that advice remains true about the original method, I've now got an alternative that seems to solve the problem fairly neatly. With it in place, my builds go pretty much as quickly as they once did.

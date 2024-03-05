@@ -13,8 +13,12 @@ imgs:
 \
 Finally, I have corrected the content of the final code block so that it corresponds to the local-first premise explained within; unfortunately, it didn't in the initial versions of this post.\
 \
-**Update, 2024-02-04**: Later, I began [doing my site builds locally rather than using GitHub Actions](/posts/2023/10/direct-deployments-quicker-slicker/), and this allowed me to revert to the method described in this post.
+**Update, 2024-02-04**: Later, I began [doing my site builds locally rather than using GitHub Actions](/posts/2023/10/direct-deployments-quicker-slicker/), and this allowed me to revert to the method described in this post.\
+\
+<strong class="red">Update, 2024-03-05</strong>: See also "[Thanks and goodbye, Cloudinary](/posts/2024/03/thanks-goodbye-cloudinary/)."
 {.box}
+
+<br>
 
 My [most](/posts/2023/04/better-code-image-processing-hugo/) [recent](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/) posts about using the [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) asset pipeline for [image processing](https://gohugo.io/content-management/image-processing/) rested on one assumption: you're willing to keep all your images locally in your Hugo project repository so they could serve as [page resources](https://gohugo.io/content-management/page-resources/). But what if you prefer to use third-party image processing, either instead of or as a supplement to Hugo's? Does that eliminate the coolness of Hugo Pipes?
 
