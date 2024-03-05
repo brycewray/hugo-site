@@ -47,9 +47,3 @@
 			</div>
 		</nav>
 	</header>
-{{- $jsToggle := resources.Get "js/mode-switch-auto.js" -}}
-{{- with $jsToggle -}}
-	<script{{ if hugo.IsProduction }} nonce="DhcnhD3khTMePgXw"{{ end }}>
-		{{- .Content | safe.JS -}}
-	</script>
-{{- end }}

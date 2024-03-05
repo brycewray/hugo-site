@@ -31,5 +31,14 @@
 			>
 			</script>
 		{{- end }}
+		{{- $jsToggle := resources.Get "js/mode-switch-auto.js" | resources.Minify | resources.Fingerprint -}}
+		{{- with $jsToggle -}}
+			<script
+				src="{{ $jsToggle.RelPermalink }}"
+				integrity="{{ $jsToggle.Data.Integrity }}"
+				defer
+			>
+			</script>
+		{{- end }}
 	</body>
 </html>
