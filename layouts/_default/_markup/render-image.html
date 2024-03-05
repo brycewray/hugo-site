@@ -10,9 +10,6 @@
 {{- $respSizes := collections.Slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
 {{- $caption := .Title -}}
-{{- $cloudiBase := "https://res.cloudinary.com/brycewray-com/image/upload/" -}}
-{{- $xFmPart1 := "f_auto,q_auto,w_" -}}
-{{- $xFmPart2 := ",x_0,z_01/" -}}
 {{- $src := .Destination -}}
 {{- $imgBd5 := crypto.MD5 $src -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
@@ -49,28 +46,7 @@
 			</picture>
 		</div>
 	{{- end -}}
-{{- else if (resources.GetRemote (print $cloudiBase $src)) -}}
-	{{- $divClass := fmt.Print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
-	<div class="{{ $divClass }}" data-pagefind-ignore>
-	{{- with .Page.Params.imgs }}
-		{{- $imgToGet := fmt.Print $cloudiBase $src -}}
-		{{- with $imgToGet -}}
-			{{- with resources.GetRemote . -}}
-				{{- $width := .Width -}}
-				{{- $height := .Height -}}
-				<img class="{{ $imgClass }}" src="{{ $cloudiBase }}{{ $xFmPart1 }}600{{ $xFmPart2 }}{{ $src }}" srcset="
-				{{- with $respSizes -}}
-					{{- range $i, $e := . -}}
-						{{- if compare.Ge $width . -}}
-							{{- if $i }}, {{ end -}}{{- $cloudiBase -}}{{ $xFmPart1 }}{{ . }}{{- $xFmPart2 -}}{{- $src }} {{ . }}w
-						{{- end -}}
-					{{- end -}}
-				{{- end -}}" alt="{{ $alt }}" title="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" sizes="{{ $dataSzes }}" data-pagefind-ignore />
-			{{- end -}}
-		{{- end -}}
-	{{- end -}}
-	</div>
 {{- else -}}
-	<p class="ctr legal"><em>Image unavailable, local or remote.</em></p>
+	<p class="ctr legal"><em>Image unavailable.</em></p>
 {{- end -}}
 {{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
