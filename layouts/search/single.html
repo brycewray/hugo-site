@@ -1,4 +1,4 @@
 {{ define "main" }}
 	{{ partials.Include "billboard.html" . }}
-	{{ partials.IncludeCached "search-page-pagefind.html" . }}
+	{{ partialCached "search-page-pagefind.html" . }}
 {{ end }}

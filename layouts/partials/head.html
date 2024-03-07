@@ -14,16 +14,16 @@
 	{{- end }}
 	{{ hugo.Generator }}
 {{- /* CSS */ -}}
-	{{- partials.IncludeCached "head-criticalcss.html" . -}}
-	{{/*  {{- partials.IncludeCached "head-criticalscss.html" . }}  */}}
+	{{- partialCached "head-criticalcss.html" . -}}
+	{{/*  {{- partialCached "head-criticalscss.html" . }}  */}}
 	{{- $noncriticalCSS := "scoped" -}}
 	{{- with $noncriticalCSS -}}
 		{{- if eq $noncriticalCSS "scoped" -}}
 			{{- partials.Include "head-css-scoped.html" $.Page }}
 			{{/*  {{- partials.Include "head-scss-scoped.html" $.Page }}  */}}
 		{{- else -}}
-			{{- partials.IncludeCached "head-css-unscoped.html" $.Page }}
-			{{/*  {{- partials.IncludeCached "head-scss-unscoped.html" $.Page }}  */}}
+			{{- partialCached "head-css-unscoped.html" $.Page }}
+			{{/*  {{- partialCached "head-scss-unscoped.html" $.Page }}  */}}
 		{{- end }}
 	{{- end }}
 	{{- partials.Include "head-imgs-css.html" . }}
@@ -47,7 +47,7 @@
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, excerpt-only - JSON" href="https://www.brycewray.com/index-excerpts.json">
 		{{ partials.Include "head-meta-social.html" . }}
 		{{ partials.Include "head-one-socimg.html" . }}
-		{{ partials.IncludeCached "head-favicons.html" . }}
+		{{ partialCached "head-favicons.html" . }}
 		<link rel="preconnect" href="https://giscus.app">
 		<link rel="dns-prefetch" href="https://giscus.app">
 	</head>

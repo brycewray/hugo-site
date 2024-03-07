@@ -2,12 +2,12 @@
 <html lang="en">
 	{{ partials.Include "head.html" . }}
 	<body>
-		{{ partials.IncludeCached "header.html" . }}
+		{{ partialCached "header.html" . }}
 		<div id="content-main-hugo">
 			{{- block "main" . -}}{{- end }}
 		</div>
 		{{- if ne .Title site.Params.Titles.Search -}}
-			{{- partials.IncludeCached "search-btn-pagefind.html" . -}}
+			{{- partialCached "search-btn-pagefind.html" . -}}
 		{{- end }}
 		{{- partials.Include "footer.html" . -}}
 		{{- if hugo.IsProduction -}}
