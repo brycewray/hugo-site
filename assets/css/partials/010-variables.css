@@ -38,12 +38,11 @@
 
 	/* underlines for hrefs */
 	--textDcThick: 0.05rem; /* always rem */
-	--textDcThickMd: 0.0625rem; /* always rem */
+	/* ^^^ Segoe UI needs at least 0.25em. */
 	--textDcThickHA: 0.075rem; /* always rem -- for `header-anchor` */
-	--textUnOffst: 0.25em; /* always em -- min-width: 768px */
-	--textUnOffstMd: 0.275em; /* always em -- min-width: 768px */
-	/* ^^^ 0.225em is OK with Libre Franklin,
-	     but Segoe UI needs at least 0.25em */
+	@media screen and (min-width: 1024px) {
+		--textDcThick: 0.0625rem; /* always rem */
+	}
 
 	/*
 	==== end, TYPOGRAPHY ====
