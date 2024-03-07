@@ -23,7 +23,7 @@
 			{{- end -}}
 		{{- end -}}
 		{{- if (strings.FindRE `<div class="highlight"` .Content 1) -}}
-			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | resources.Fingerprint -}}
+			{{- $jsCopy := resources.Get "js/copy-code-button.js" | resources.Minify | fingerprint -}}
 			<script
 				src="{{ $jsCopy.RelPermalink }}"
 				integrity="{{ $jsCopy.Data.Integrity }}"
@@ -31,7 +31,7 @@
 			>
 			</script>
 		{{- end }}
-		{{- $jsToggle := resources.Get "js/mode-switch-auto.js" | resources.Minify | resources.Fingerprint -}}
+		{{- $jsToggle := resources.Get "js/mode-switch-auto.js" | resources.Minify | fingerprint -}}
 		{{- with $jsToggle -}}
 			<script
 				src="{{ $jsToggle.RelPermalink }}"

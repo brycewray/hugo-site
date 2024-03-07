@@ -6,7 +6,7 @@
 		<div id="legend-comments" class="legend">View comments</div>
 	</summary>
 	<div class="giscus-comments" id="giscus-comments">
-		{{- $jsComments := resources.Get "js/comments-giscus.js" | resources.Minify | resources.Fingerprint -}}
+		{{- $jsComments := resources.Get "js/comments-giscus.js" | resources.Minify | fingerprint -}}
 		<script
 			src="{{ $jsComments.RelPermalink }}"
 			integrity="{{ $jsComments.Data.Integrity }}"
