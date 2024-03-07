@@ -15,10 +15,10 @@
 			{{ $adjacent_links := 2 }}
 
 			{{/* $max_links = ($adjacent_links * 2) + 1 */}}
-			{{ $max_links := (math.Add (math.Mul $adjacent_links 2) 1) }}
+			{{ $max_links := (add (math.Mul $adjacent_links 2) 1) }}
 
 			{{/* $lower_limit = $adjacent_links + 1 */}}
-			{{ $lower_limit := (math.Add $adjacent_links 1) }}
+			{{ $lower_limit := (add $adjacent_links 1) }}
 
 			{{/* $upper_limit = $paginator.TotalPages - $adjacent_links */}}
 			{{ $upper_limit := (math.Sub $paginator.TotalPages $adjacent_links) }}
