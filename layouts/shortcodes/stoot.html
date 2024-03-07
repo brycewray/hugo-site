@@ -147,7 +147,7 @@
 						<div class="toot-poll-wrapper">
 							{{ range $pollOptions := . }}
 								<div class="toot-poll-count">
-									<strong>{{ (math.Mul 100 (div $pollOptions.votes_count $votesCount)) | lang.FormatPercent 1 }}</strong>
+									<strong>{{ (mul 100 (div $pollOptions.votes_count $votesCount)) | lang.FormatPercent 1 }}</strong>
 								</div>
 								<div class="toot-poll-meter">
 									<meter id="vote-count" max="{{ $votesCount }}" value="{{ $pollOptions.votes_count }}"></meter>
