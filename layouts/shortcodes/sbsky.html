@@ -114,7 +114,7 @@
 		{{ $posts := . }}
 		{{ $created_at = $posts.record.createdAt }}
 		{{ $text = $posts.record.text }}
-		{{ $text = strings.Replace $text "\n" "<br>"}}
+		{{ $text = replace $text "\n" "<br>"}}
 		{{ with $posts.author }}
 			{{ $author = . }}
 			{{ $displayName = $author.displayName }}
