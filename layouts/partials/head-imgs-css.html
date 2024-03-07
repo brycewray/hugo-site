@@ -10,7 +10,7 @@
 		{{- end -}}
 		{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
 		{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
-		{{- $LQIP_img := $src.Resize "20x jpg q20" -}}
+		{{- $LQIP_img := $src.Process "resize 20x jpg q20" -}}
 		{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
 		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
 		.imgB-{{ $imgBd5 }}-GIP {
