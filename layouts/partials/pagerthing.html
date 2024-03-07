@@ -21,7 +21,7 @@
 			{{ $lower_limit := (add $adjacent_links 1) }}
 
 			{{/* $upper_limit = $paginator.TotalPages - $adjacent_links */}}
-			{{ $upper_limit := (math.Sub $paginator.TotalPages $adjacent_links) }}
+			{{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
 
 			<div class="posts-pagerThing">
 				{{- /*
@@ -72,7 +72,7 @@
 					https://stackoverflow.com/questions/38754694/accessibility-wcag-2-0-redundant-links-and-responsive-website-navigation
 				*/ -}}
 				<div>
-					{{ if (and ( (ne $paginator.PageNumber $paginator.TotalPages) ) (ne $paginator.PageNumber (math.Sub $paginator.TotalPages 1))) }}
+					{{ if (and ( (ne $paginator.PageNumber $paginator.TotalPages) ) (ne $paginator.PageNumber (sub $paginator.TotalPages 1))) }}
 						<a class="icon" aria-label="Last page" title="Last page" href="{{ $paginator.Last.URL }}">
 							{{ partials.IncludeCached "svgNextPageIcon.html" . }}{{ partials.IncludeCached "svgNextPageIcon.html" . }}
 						</a>
