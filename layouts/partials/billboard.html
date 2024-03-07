@@ -5,8 +5,8 @@
 {{- $wordsToCount := strings.ReplaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
 {{- $wordsToCount = strings.ReplaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
 {{- $wordCount := $wordsToCount | strings.CountWords -}}
-{{- $readingTimeMinsInt := math.Div (cast.ToFloat $wordCount) 225 | math.Floor -}}
-{{- $readingTime := math.Div (cast.ToFloat $wordCount) 225 -}}
+{{- $readingTimeMinsInt := div (cast.ToFloat $wordCount) 225 | math.Floor -}}
+{{- $readingTime := div (cast.ToFloat $wordCount) 225 -}}
 {{- $readingTimeMins := $readingTime | math.Ceil -}}
 {{- $readingTimeSecs := math.Mul 60 (math.Sub $readingTime $readingTimeMinsInt) | math.Ceil -}}
 {{- if ge $readingTimeSecs 60 -}}
