@@ -81,13 +81,13 @@
 			}
 		</style>
 		{{ with $fontSans -}}
-			<link {{ fmt.Printf "href=%q" $URLSans | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+			<link {{ printf "href=%q" $URLSans | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 		{{- end }}
 		{{ with $fontSerif -}}
-			<link {{ fmt.Printf "href=%q" $URLSerif | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+			<link {{ printf "href=%q" $URLSerif | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 		{{- end }}
 		{{- with $fontMono -}}
-			<link {{ fmt.Printf "href=%q" $URLMono | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+			<link {{ printf "href=%q" $URLMono | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 		{{- end }}
 	{{- else if eq . "system" -}}
 		{{/* otherwise, we fall back to system fonts */}}

@@ -93,7 +93,7 @@
 	"method" "GET"
 	"headers" (collections.Dictionary
 		"Accept" "application/json"
-		"Authorization" (fmt.Printf "Bearer %s" $token)
+		"Authorization" (printf "Bearer %s" $token)
 	)
 -}}
 {{ $postGetURL = fmt.Print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/" $id }}

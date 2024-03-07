@@ -13,7 +13,7 @@
 	{{- $readingTimeSecs = math.Sub $readingTimeSecs 60 -}}
 	{{- $readingTimeMinsInt = math.Add $readingTimeMinsInt 1 -}}
 {{- end -}}
-{{- $readingTimeSecsInt := fmt.Printf "%02v" $readingTimeSecs -}}
+{{- $readingTimeSecsInt := printf "%02v" $readingTimeSecs -}}
 {{- $wordCountFmt := lang.FormatNumberCustom 0 $wordCount -}}
 {{/* DRY-er... */}}
 	{{- $titleSearch := site.Params.Titles.Search -}}
