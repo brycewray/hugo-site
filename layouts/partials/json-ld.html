@@ -13,7 +13,7 @@
 {{- else if .IsPage -}}
 	{{- $wordsToCount := strings.ReplaceRE `(?s)<div class="highlight">.*?</div>` "" .Content -}}
 	{{- $wordsToCount = strings.ReplaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
-	{{- $wordCount := $wordsToCount | strings.CountWords -}}
+	{{- $wordCount := $wordsToCount | countwords -}}
 	{{- $typeEntry := "WebPage" -}}
 	{{- if eq .Title site.Params.Titles.About -}}
 		{{- $typeEntry = "AboutPage" -}}
