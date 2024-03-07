@@ -18,12 +18,12 @@
 		{{ $json := unmarshal .Content }}
 		{{ $jsonHolder := $json }}{{/* Being safe */}}
 
-		{{ if collections.IsSet $json "account" }}
+		{{ if isset $json "account" }}
 			{{ $tootLink = fmt.Print "https://" $masIns "@" $json.account.acct "/status/" $id }}
 			{{ $handleInst = fmt.Print "@" $json.account.acct "@" $masIns }}
 		{{ end }}
 
-		{{ if collections.IsSet $json "content" }}
+		{{ if isset $json "content" }}
 			<blockquote class="toot-blockquote" cite="{{ $tootLink }}">
 				<div class="toot-header">
 					<a class="toot-profile" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
@@ -41,13 +41,13 @@
 				{{ $json.content | safe.HTML }}
 				{{ with $json.media_attachments }}
 					{{ range $media_attachments := . }}
-						{{ if compare.Eq $media_attachments.type "image" }}
+						{{ if eq $media_attachments.type "image" }}
 							{{ $imageCount = (math.Add ($imageCount) 1) }}
 						{{ end }}
 					{{ end }}
 					<div class="toot-img-grid-{{ $imageCount }}">
 					{{ range $media_attachments := . }}
-						{{ if compare.Eq $media_attachments.type "image" }}
+						{{ if eq $media_attachments.type "image" }}
 							{{ $mediaMD5 = crypto.MD5 $media_attachments.url }}
 							<style>
 								.img-{{ $mediaMD5 }} {
@@ -80,7 +80,7 @@
 						but gets the job done.
 					*/}}
 					{{ range $media_attachments := . }}
-						{{ if compare.Eq $media_attachments.type "video" }}
+						{{ if eq $media_attachments.type "video" }}
 							{{ $mediaMD5 = crypto.MD5 $media_attachments.url }}
 							<style>
 								.img-{{ $mediaMD5 }} {
@@ -100,7 +100,7 @@
 								{{- end -}}
 							</div>
 						{{ end }}
-						{{ if compare.Eq $media_attachments.type "gifv" }}
+						{{ if eq $media_attachments.type "gifv" }}
 							{{ $mediaMD5 = crypto.MD5 $media_attachments.url }}
 							<style>
 								.img-{{ $mediaMD5 }} {

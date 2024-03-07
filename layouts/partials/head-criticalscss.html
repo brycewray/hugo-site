@@ -9,8 +9,8 @@
 {{- $fontFileReg := "" -}}
 {{- $fontFileIta := "" -}}
 {{- with $fontsSrc -}}
-	{{- if compare.Eq . "local" -}}
-		{{- if compare.Eq $fontFamily "Inter" -}}
+	{{- if eq . "local" -}}
+		{{- if eq $fontFamily "Inter" -}}
 			{{- $fontFileReg = "InterVariable-4-0-Regular_subset.woff2" -}}
 			{{- $fontFileIta = "InterVariable-4-0-Italic_subset.woff2" -}}
 		{{- else -}}
@@ -39,7 +39,7 @@
 				}
 			}
 		</style>
-	{{- else if compare.Eq . "CFF" -}}
+	{{- else if eq . "CFF" -}}
 		{{- $URLopen := "https://fonts.googleapis.com/css2?family=" -}}
 		{{- $fontSans := "Libre+Franklin" -}}{{/* e.g., "Libre+Franklin" */}}
 			{{- $fontSansFamily := "Libre Franklin" -}}{{/* e.g., "Libre Franklin" */}}
@@ -89,7 +89,7 @@
 		{{- with $fontMono -}}
 			<link {{ fmt.Printf "href=%q" $URLMono | safe.HTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
 		{{- end }}
-	{{- else if compare.Eq . "system" -}}
+	{{- else if eq . "system" -}}
 		{{/* otherwise, we fall back to system fonts */}}
 		<style media="screen">
 			:root {

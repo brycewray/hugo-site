@@ -11,7 +11,7 @@
 		{{- end }}
 		{{- partials.Include "footer.html" . -}}
 		{{- if hugo.IsProduction -}}
-			{{- if compare.Eq site.Params.Host "CFP" -}}
+			{{- if eq site.Params.Host "CFP" -}}
 				<!-- Cloudflare Web Analytics -->
 				<script
 					src='https://static.cloudflareinsights.com/beacon.min.js'

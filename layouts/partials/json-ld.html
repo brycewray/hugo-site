@@ -15,11 +15,11 @@
 	{{- $wordsToCount = strings.ReplaceRE `(?s)<details.*?</details>` "" $wordsToCount -}}
 	{{- $wordCount := $wordsToCount | strings.CountWords -}}
 	{{- $typeEntry := "WebPage" -}}
-	{{- if compare.Eq .Title site.Params.Titles.About -}}
+	{{- if eq .Title site.Params.Titles.About -}}
 		{{- $typeEntry = "AboutPage" -}}
-	{{- else if compare.Eq .Title site.Params.Titles.Search -}}
+	{{- else if eq .Title site.Params.Titles.Search -}}
 		{{- $typeEntry = "SearchResultsPage" -}}
-	{{- else if compare.Eq .Title site.Params.Titles.Contact -}}
+	{{- else if eq .Title site.Params.Titles.Contact -}}
 		{{- $typeEntry = "ContactPage" -}}
 	{{- end -}}
 <script type="application/ld+json">

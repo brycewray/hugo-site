@@ -7,7 +7,7 @@
 	- https://gohugo.io/templates/render-hooks/
 	- https://discourse.gohugo.io/t/get-a-remote-resource-with-its-url-defined-in-page-frontmatter/41690
 */ -}}
-{{- $respSizes := collections.Slice "320" "640" "960" "1280" "1600" "1920" -}}
+{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $alt := .Text -}}
 {{- $caption := .Title -}}
 {{- $src := .Destination -}}
@@ -29,7 +29,7 @@
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if compare.Ge $imgRsc.Width . -}}
+						{{- if ge $imgRsc.Width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
@@ -37,7 +37,7 @@
 				<source type="image/jpeg" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if compare.Ge $imgRsc.Width . -}}
+						{{- if ge $imgRsc.Width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}

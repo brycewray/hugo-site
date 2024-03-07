@@ -18,7 +18,7 @@
 	{{/*  {{- partials.IncludeCached "head-criticalscss.html" . }}  */}}
 	{{- $noncriticalCSS := "scoped" -}}
 	{{- with $noncriticalCSS -}}
-		{{- if compare.Eq $noncriticalCSS "scoped" -}}
+		{{- if eq $noncriticalCSS "scoped" -}}
 			{{- partials.Include "head-css-scoped.html" $.Page }}
 			{{/*  {{- partials.Include "head-scss-scoped.html" $.Page }}  */}}
 		{{- else -}}

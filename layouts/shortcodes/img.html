@@ -1,15 +1,15 @@
 {{/* init vars */}}
-{{- $respSizes := collections.Slice "320" "640" "960" "1280" "1600" "1920" -}}
+{{- $respSizes := slice "320" "640" "960" "1280" "1600" "1920" -}}
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" -}}
 
-{{- $holder := compare.Default "GIP" (.Get "holder") -}}
-{{- $phn := compare.Default false (.Get "phn") -}}
-{{- $hint := compare.Default "photo" (.Get "hint") -}}
+{{- $holder := default "GIP" (.Get "holder") -}}
+{{- $phn := default false (.Get "phn") -}}
+{{- $hint := default "photo" (.Get "hint") -}}
 {{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
-{{- $filter := compare.Default "MitchellNetravali" (.Get "filter") -}}
-{{- $simple := compare.Default false (.Get "simple") -}}
-{{- $nobkgd := compare.Default false (.Get "nobkgd") -}}
+{{- $filter := default "MitchellNetravali" (.Get "filter") -}}
+{{- $simple := default false (.Get "simple") -}}
+{{- $nobkgd := default false (.Get "nobkgd") -}}
 
 {{- $imgBd5 := crypto.MD5 $src -}}
 {{- $divClass := "relative bg-center" -}}
@@ -36,14 +36,14 @@
 	{{ with .Page.Resources.GetMatch $src }}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
-		{{- if compare.Eq $simple false -}}
+		{{- if eq $simple false -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
 		{{- end }}
 			<picture data-pagefind-ignore>
 				<source type="image/webp" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if compare.Ge $imgRsc.Width . -}}
+						{{- if ge $imgRsc.Width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x webp " $hint " " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
@@ -51,14 +51,14 @@
 				<source type="image/jpeg" srcset="
 				{{- with $respSizes -}}
 					{{- range $i, $e := . -}}
-						{{- if compare.Ge $imgRsc.Width . -}}
+						{{- if ge $imgRsc.Width . -}}
 							{{- if $i }}, {{ end -}}{{- ($imgRsc.Process (print "resize " . "x jpg " $filter) ).RelPermalink }} {{ . }}w
 						{{- end -}}
 					{{- end -}}
 				{{- end -}}" sizes="{{ $dataSzes }}" />
-				<img class="h-auto{{ if compare.Eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
+				<img class="h-auto{{ if eq $simple false }} {{ $imgClass }}{{ end }}" src="{{ $actualImg.RelPermalink }}" width="{{ $imgRsc.Width }}" height="{{ $imgRsc.Height }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" data-pagefind-ignore />
 			</picture>
-		{{- if compare.Eq $simple false -}}
+		{{- if eq $simple false -}}
 		</div>
 		{{- end -}}
 	{{- end -}}
