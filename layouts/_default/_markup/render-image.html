@@ -15,13 +15,13 @@
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
-{{- $rscToMatch := fmt.Print "images/" $src -}}
+{{- $rscToMatch := print "images/" $src -}}
 
 {{- if .Page.Resources.GetMatch $src -}}
 	{{ with .Page.Resources.GetMatch $src }}
 		{{- $hint := "photo" -}}
 		{{- $filter := "MitchellNetravali" -}}
-		{{- $divClass := fmt.Print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
+		{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>

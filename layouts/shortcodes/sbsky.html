@@ -19,7 +19,7 @@
 {{ $postGetURL := "https://bsky.social/xrpc/app.bsky.feed.getPosts" }}
 {{ $jsonBare := "" }}
 {{ $json := "" }}
-{{ $postLink := fmt.Print "https://" $inst "/profile/" $handle "/post/" $id }}
+{{ $postLink := print "https://" $inst "/profile/" $handle "/post/" $id }}
 {{ $created_at := "" }}
 {{ $handleInst := "" }}
 {{ $author := "" }}
@@ -49,12 +49,12 @@
 {{ $embedExtURI := "" }}
 {{ $embedId := "" }}
 {{ $embedInst := "" }}
-{{ $embedPostLink := fmt.Print "https://" $embedInst "/profile/" $embedHandle "/post/" $embedId }}
+{{ $embedPostLink := print "https://" $embedInst "/profile/" $embedHandle "/post/" $embedId }}
 
 {{/* ================== */}}
 
 {{/* resolve handle */}}
-{{- $handleURL := fmt.Print $didURL "?handle=" $handle -}}
+{{- $handleURL := print $didURL "?handle=" $handle -}}
 {{- with resources.GetRemote $handleURL -}}
 	{{ with .Err }}
 		<p>Error from handle resolution is:<br>
@@ -96,7 +96,7 @@
 		"Authorization" (printf "Bearer %s" $token)
 	)
 -}}
-{{ $postGetURL = fmt.Print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/" $id }}
+{{ $postGetURL = print $postGetURL "?uris=at://" $jsonDID "/app.bsky.feed.post/" $id }}
 {{ with resources.GetRemote $postGetURL $postGetOpts }}
 	{{ with (resources.GetRemote $postGetURL $postGetOpts).Err }}
 		<p>Error from post-get attempt is:<br>
@@ -179,7 +179,7 @@
 		</a>
 		<div class="toot-author">
 			<a class="toot-author-name" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ $displayName }}</a>
-			<a class="toot-author-handle" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ fmt.Print "@" $handle }}</a>
+			<a class="toot-author-handle" href="https://{{ $inst }}/profile/{{ $handle }}" rel="noopener">{{ print "@" $handle }}</a>
 		</div>
 	</div>
 	<p>
@@ -202,7 +202,7 @@
 				</span>
 				<div class="toot-author">
 					<span class="toot-author-name">{{ $embedDisplayName }}</span>
-					<span class="toot-author-handle">{{ fmt.Print "@" $embedHandle }}</span>
+					<span class="toot-author-handle">{{ print "@" $embedHandle }}</span>
 				</div>
 			</div>
 			<p>

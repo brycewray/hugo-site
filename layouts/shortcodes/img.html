@@ -14,9 +14,9 @@
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
-	{{- $divClass = fmt.Print $divClass " bigImgDiv" -}}
+	{{- $divClass = print $divClass " bigImgDiv" -}}
 	{{- if not $nobkgd -}}
-		{{- $divClass = fmt.Print $divClass " imgB-" $imgBd5 "-" $holder -}}
+		{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
 		{{/*
 			The `imgB-`[hash]-GIP` class is
 			generated in a `head` partial;
