@@ -38,7 +38,7 @@
 						<a class="toot-author-handle" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
 					</div>
 				</div>
-				{{ $json.content | safe.HTML }}
+				{{ $json.content | safeHTML }}
 				{{ with $json.media_attachments }}
 					{{ range $media_attachments := . }}
 						{{ if eq $media_attachments.type "image" }}

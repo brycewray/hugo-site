@@ -2,7 +2,7 @@
 	{{ partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article">
-			{{ .Content | safe.HTML }}
+			{{ .Content | safeHTML }}
 			{{- if ne .Title site.Params.Titles.Contact -}}
 				{{- partial "git.html" . -}}
 			{{- end -}}

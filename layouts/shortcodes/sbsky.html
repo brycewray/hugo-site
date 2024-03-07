@@ -183,7 +183,7 @@
 		</div>
 	</div>
 	<p>
-		{{ $text | safe.HTML }}
+		{{ $text | safeHTML }}
 	</p>
 	{{ if not $extURI }}
 		{{ with $embedURI }}
@@ -206,7 +206,7 @@
 				</div>
 			</div>
 			<p>
-				{{ $embedText | safe.HTML }}
+				{{ $embedText | safeHTML }}
 				{{ with $embedExtURI }}
 					<br>
 					<span class="pokey">(<a href="{{ $embedExtURI }}" rel="noopener">{{ $embedExtURI }}</a>)</span>

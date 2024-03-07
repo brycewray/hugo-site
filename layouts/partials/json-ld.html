@@ -27,10 +27,10 @@
 	"@context": "https://schema.org",
 	"@type": "{{ $typeEntry }}",{{- if .Section }}
 	"articleSection": "{{ .Section }}",{{- end }}
-	"name": "{{ .Title | safe.JS }}",
-	"headline": "{{ .Title | safe.JS }}",
-	"alternativeHeadline": "{{ if .Description }}{{ .Description | safe.JS }}{{ else }}[n/a]{{ end }}",
-	"description": "{{ if .Description }}{{ .Description | safe.JS }}{{ else }}[n/a]{{ end }}",
+	"name": "{{ .Title | safeJS }}",
+	"headline": "{{ .Title | safeJS }}",
+	"alternativeHeadline": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
+	"description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
 	"inLanguage": "{{ site.LanguageCode }}",
 	"isFamilyFriendly": "true",
 	"mainEntityOfPage": {
@@ -51,9 +51,9 @@
 	},
 	"copyrightHolder": "{{ site.Params.Author }}",
 	"copyrightYear": "{{ now.Year }}",
-	"dateCreated": "{{ .PublishDate.Format "2006-01-02" | safe.HTML }}",
-	"datePublished": "{{ .PublishDate.Format "2006-01-02" | safe.HTML }}",
-	"dateModified": "{{- if .GitInfo -}}{{ (.GitInfo.AuthorDate).Format "2006-01-02" | safe.HTML }}{{- else -}}{{ .PublishDate.Format "2006-01-02" | safe.HTML }}{{- end -}}",
+	"dateCreated": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
+	"datePublished": "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
+	"dateModified": "{{- if .GitInfo -}}{{ (.GitInfo.AuthorDate).Format "2006-01-02" | safeHTML }}{{- else -}}{{ .PublishDate.Format "2006-01-02" | safeHTML }}{{- end -}}",
 	"publisher": {
 		"@type": "Person",
 		"name": "{{ site.Params.Author }}",
