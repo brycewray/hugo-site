@@ -6,7 +6,7 @@
 			{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
 			{{ $paginator := .Paginator }}
 
-			{{ partials.Include "pagerthing.html" . }}
+			{{ partial "pagerthing.html" . }}
 			<hr class="paginatorTop" />
 
 			{{ range $paginator.Pages }}
@@ -23,7 +23,7 @@
 			{{ end }}
 
 			<hr class="paginatorBottom" />
-			{{ partials.Include "pagerthing.html" . }}
+			{{ partial "pagerthing.html" . }}
 
 		</div>
 	</div>

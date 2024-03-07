@@ -1,10 +1,10 @@
 {{ define "main" }}
-	{{ partials.Include "billboard.html" . }}
+	{{ partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article">
 			{{ .Content | safe.HTML }}
 			{{- if ne .Title site.Params.Titles.Contact -}}
-				{{- partials.Include "git.html" . -}}
+				{{- partial "git.html" . -}}
 			{{- end -}}
 		</article>
 	</div>

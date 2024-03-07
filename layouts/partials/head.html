@@ -19,15 +19,15 @@
 	{{- $noncriticalCSS := "scoped" -}}
 	{{- with $noncriticalCSS -}}
 		{{- if eq $noncriticalCSS "scoped" -}}
-			{{- partials.Include "head-css-scoped.html" $.Page }}
-			{{/*  {{- partials.Include "head-scss-scoped.html" $.Page }}  */}}
+			{{- partial "head-css-scoped.html" $.Page }}
+			{{/*  {{- partial "head-scss-scoped.html" $.Page }}  */}}
 		{{- else -}}
 			{{- partialCached "head-css-unscoped.html" $.Page }}
 			{{/*  {{- partialCached "head-scss-unscoped.html" $.Page }}  */}}
 		{{- end }}
 	{{- end }}
-	{{- partials.Include "head-imgs-css.html" . }}
-	{{- partials.Include "head-css-oklch-post.html" . -}}
+	{{- partial "head-imgs-css.html" . }}
+	{{- partial "head-css-oklch-post.html" . -}}
 	<noscript>
 		<style>
 			.nScrHidden {
@@ -40,13 +40,13 @@
 			}
 		</style>
 	</noscript>
-{{ partials.Include "json-ld.html" . }}
+{{ partial "json-ld.html" . }}
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, excerpt-only - JSON" href="https://www.brycewray.com/index-excerpts.json">
-		{{ partials.Include "head-meta-social.html" . }}
-		{{ partials.Include "head-one-socimg.html" . }}
+		{{ partial "head-meta-social.html" . }}
+		{{ partial "head-one-socimg.html" . }}
 		{{ partialCached "head-favicons.html" . }}
 		<link rel="preconnect" href="https://giscus.app">
 		<link rel="dns-prefetch" href="https://giscus.app">

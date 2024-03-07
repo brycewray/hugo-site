@@ -1,12 +1,12 @@
 {{- /* https://discourse.gohugo.io/t/email-address-obfuscation-techniques/1945/2 */ -}}
 {{- define "main" -}}
 	{{- $email := site.Params.AuthorEmail -}}
-	{{- partials.Include "billboard.html" . }}
+	{{- partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article" id="postArticle">
 			{{ .Content | safe.HTML }}
-			{{- partials.Include "git.html" . -}}
-			{{- partials.Include "contact-button.html" . -}}
+			{{- partial "git.html" . -}}
+			{{- partial "contact-button.html" . -}}
 			{{- partialCached "comments-giscus.html" . -}}
 		</article>
 	</div>
