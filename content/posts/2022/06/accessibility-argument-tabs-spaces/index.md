@@ -17,6 +17,11 @@ What I didn't know at the time was that its links were unfriendly from an [acces
 - When links aren't underlined, you're leaving their color as the only method which distinguishes them from unlinked text.
 - These links' particular shade of blue lacked sufficient contrast with the white background.
 
+**Update, 2024-03-08**: Later, I changed my position (and, as you can see, altered my links accordingly) after learning that it's acceptable to have non-underlined links [**if** they have a sufficiently high contrast ratio](https://www.w3.org/WAI/WCAG22/Techniques/general/G183.html) compared to their surrounding text.[^contrastTriangle]
+{.box}
+
+[^contrastTriangle]: See also Chip Cullen's article, "[The Contrast Triangle](https://chipcullen.com/the-contrast-triangle/)" (<span class="nobrk">2020-02-11</span>).
+
 Then, a few months later, I took an online accessibility course[^UofTor] for my Day Job of that time and learned I'd been falling far short on this count, especially where the [WCAG specification](https://webaim.org/standards/wcag/) is concerned.
 
 [^UofTor]: It was offered by the [University of Toronto](https://www.utoronto.ca/) through [Canvas Network](https://www.canvas.net). Unfortunately, it doesn't appear to be in the current Canvas Network catalog; otherwise, I'd recommend it without reservation.
