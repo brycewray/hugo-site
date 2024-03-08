@@ -46,7 +46,7 @@
 	font-size: clamp(1.25rem, 0.625rem + 1.75vw, 2rem);
 	/* font-family: var(--serif); */
 	font-weight: var(--font-medium);
-	/* line-height: 1.25em; */
+	line-height: 1.25em;
 	letter-spacing: -0.025em;
 }
 

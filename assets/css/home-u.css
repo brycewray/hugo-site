@@ -84,7 +84,7 @@ html[data-theme="dark"] {
 	/* font-weight: var(--font-medium); */
 	letter-spacing: -0.025em;
 	padding-top: 0.5em;
-	/* line-height: 1.25em; */
+	line-height: 1.25em;
 }
 
 .homePost-Description {
