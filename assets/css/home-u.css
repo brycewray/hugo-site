@@ -84,16 +84,18 @@ html[data-theme="dark"] {
 	/* font-weight: var(--font-medium); */
 	letter-spacing: -0.025em;
 	padding-top: 0.5em;
-	line-height: 1.25em;
+	/* line-height: 1.25em; */
 }
 
 .homePost-Description {
-	margin-top: 0.5em;
+	/* margin-top: 0.5em; */
 	letter-spacing: -0.025em;
 	font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
 	/* font-family: var(--serif); */
-	/* font-style: italic; */
-	/* font-weight: var(--font-light); */
+	font-style: italic;
+	@media screen and (min-width: 1024px) {
+		font-weight: var(--font-semilight);
+	}
 }
 
 .homePost-Dates {

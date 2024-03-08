@@ -19,7 +19,8 @@ html, html[data-theme="light"] {
 	--bquote-boost: var(--gray-600);
 	--link: var(--blue-700);
 	--link-afh: var(--blue-900);
-	--head: var(--default);
+	--link-box: var(--blue-750);
+	--head: var(--black);
 	--red: var(--red-700);
 	--box-red: var(--red-600);
 	--btn-text-default: var(--white);
@@ -50,9 +51,10 @@ html[data-theme="dark"] {
 	--boost: var(--gray-200);
 	--bquote: var(--gray-400);
 	--bquote-boost: var(--gray-350);
-	--link: var(--blue-300);
+	--link: var(--blue-550);
 	--link-afh: var(--slate-300);
-	--head: var(--default);
+	--link-box: var(--blue-550);
+	--head: var(--white);
 	--red: var(--red-300);
 	--box-red: var(--red-400);
 	--btn-text-default: var(--black);
@@ -63,7 +65,7 @@ html[data-theme="dark"] {
 	--bkgd-nav: var(--blue-950);
 	--bkgd-nav-bottom: var(--blue-950);
 	--bkgd-nav-top: var(--blue-950);
-	--bkgd-box: var(--slate-900);
+	--bkgd-box: var(--neutral-850);
 	--bkgd-code: var(--slate-900);
 	--bkgd-article-code: var(--slate-750);
 	--bkgd-box-code: var(--slate-700);
@@ -84,9 +86,10 @@ html[data-theme="dark"] {
 		--boost: var(--gray-200);
 		--bquote: var(--gray-400);
 		--bquote-boost: var(--gray-350);
-		--link: var(--blue-300);
+		--link: var(--blue-550);
 		--link-afh: var(--slate-300);
-		--head: var(--default);
+		--link-box: var(--blue-200);
+		--head: var(--white);
 		--red: var(--red-300);
 		--box-red: var(--red-400);
 		--btn-text-default: var(--black);
@@ -97,7 +100,7 @@ html[data-theme="dark"] {
 		--bkgd-nav: var(--blue-950);
 		--bkgd-nav-bottom: var(--blue-950);
 		--bkgd-nav-top: var(--blue-950);
-		--bkgd-box: var(--slate-900);
+		--bkgd-box: var(--neutral-850);
 		--bkgd-code: var(--slate-900);
 		--bkgd-article-code: var(--slate-750);
 		--bkgd-box-code: var(--slate-700);
@@ -203,17 +206,19 @@ h4, .h4 {
 	font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
 }
 
-a, a:focus, a:hover, a:active {
-	text-decoration-thickness: var(--textDcThick);
-	text-underline-offset: var(--textUnOffst);
-	text-decoration-skip-ink: auto;
-}
-
 a {
+	text-decoration: none;
 	color: var(--link);
 	&:focus, &:hover, &:active {
 		color: var(--link-afh);
 	}
+}
+
+a:focus, a:hover, a:active {
+	text-decoration: underline;
+	text-decoration-thickness: var(--textDcThick);
+	text-underline-offset: var(--textUnOffst);
+	text-decoration-skip-ink: auto;
 }
 
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {

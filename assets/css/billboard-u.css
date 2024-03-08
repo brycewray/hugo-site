@@ -9,9 +9,10 @@
 		padding-right: 3rem;
 		padding-left: 3rem;
 	}
-	code {
+	/* code {
 		background-color: transparent;
-	}
+	} */
+	color: var(--head);
 }
 
 .billboard-title-block {
@@ -41,8 +42,10 @@
 
 .billboard-description-text {
 	/* font-family: var(--serif); */
-	/* font-style: italic; */
-	/* font-weight: var(--font-light); */
+	font-style: italic;
+	@media screen and (min-width: 1024px) {
+		font-weight: var(--font-semilight);
+	}
 	font-size: clamp(1.25rem, 0.75rem + 1.5vw, 1.75rem);
 	letter-spacing: -0.025em;
 	line-height: 1.4;
@@ -50,7 +53,7 @@
 }
 
 .billboard-p-text {
-	color: var(--head);
+	/* color: var(--head); */
 	font-size: clamp(1rem, 0.25rem + 1.25vw, 1.5rem);
 	line-height: 1.25;
 	margin-top: 1.5em;

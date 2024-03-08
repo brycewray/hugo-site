@@ -157,6 +157,12 @@ article {
 	.red {
 		color: var(--box-red);
 	}
+	a {
+		color: var(--link-box);
+		&:focus, &:hover, &:active {
+			color: var(--link-afh);
+		}
+	}
 }
 
 /*

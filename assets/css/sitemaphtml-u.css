@@ -18,12 +18,15 @@
 	}
 	ul li {
 		font-size: var(--text-sm);
-		font-family: var(--sans-serif);
+		/* font-family: var(--sans-serif); */
 		margin-bottom: 0.75em;
 		line-height: 1.375;
 		--pub-date-weight: var(--font-semibold);
 		strong {
-			font-weight: var(--font-semibold);
+			font-weight: var(--font-medium);
+		}
+		.description {
+			font-style: italic;
 		}
 	}
 }

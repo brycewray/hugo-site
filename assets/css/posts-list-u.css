@@ -45,18 +45,20 @@
 	padding: 0;
 	font-size: clamp(1.25rem, 0.625rem + 1.75vw, 2rem);
 	/* font-family: var(--serif); */
-	/* font-weight: var(--font-medium); */
-	line-height: 1.25em;
+	font-weight: var(--font-medium);
+	/* line-height: 1.25em; */
 	letter-spacing: -0.025em;
 }
 
 .posts-Description {
 	font-size: clamp(0.95rem, 0.625rem + 1vw, 1.25rem);
 	/* font-family: var(--serif); */
-	/* font-style: italic; */
-	/* font-weight: var(--font-light); */
+	font-style: italic;
+	@media screen and (min-width: 1024px) {
+		font-weight: var(--font-semilight);
+	}
 	letter-spacing: -0.025em;
-	margin-top: 0.5em;
+	/* margin-top: 0.5em; */
 	margin-bottom: 0.25em;
 }
 

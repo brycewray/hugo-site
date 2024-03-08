@@ -55,6 +55,7 @@ OKLCH versions from https://oklch.com.
 	--neutral-600: hsl(0, 0%, 32%);
 	--neutral-700: hsl(0, 0%, 25%);
 	--neutral-800: hsl(0, 0%, 15%);
+	--neutral-850: hsl(0, 0%, 12%);
 	--neutral-900: hsl(0, 0%, 9%);
 	--neutral-950: hsl(0, 0%, 4%);
 	--stone-050: hsl(25, 20%, 98%);
@@ -185,9 +186,10 @@ OKLCH versions from https://oklch.com.
 	--blue-300: hsl(210, 96%, 78%);
 	--blue-400: hsl(210, 93%, 67%);
 	--blue-500: hsl(210, 91%, 60%);
-	--blue-600: hsl(210, 100%, 49%);
+	--blue-550: hsl(210, 91%, 57%);
+	--blue-600: hsl(210, 100%, 53%);
 	--blue-700: hsl(210, 100%, 45%);
-	--blue-750: hsl(210, 77%, 17%);
+	--blue-750: hsl(210, 100%, 37%);
 	--blue-800: hsl(210, 100%, 28%);
 	--blue-850: hsl(210, 100%, 26%);
 	--blue-900: hsl(210, 100%, 24%);
@@ -288,6 +290,7 @@ OKLCH versions from https://oklch.com.
 		--blue-200: oklch(87.85% 0.062 256);
 		--blue-300: oklch(81.19% 0.095 256);
 		--blue-500: oklch(67.24% 0.163 256);
+		--blue-550: oklch(65.16% 0.174 256);
 		--blue-700: oklch(56.85% 0.194 256);
 		--blue-750: oklch(49.35% 0.166 256);
 		--blue-800: oklch(40.56% 0.13357142043853795 256);

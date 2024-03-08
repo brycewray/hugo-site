@@ -117,10 +117,10 @@ html[data-theme="dark"] {
 			color: var(--white);
 		}
 		tr:nth-child(odd) {
-			background-color: var(--slate-700);
+			background-color: var(--slate-800);
 		}
 		tr:nth-child(even) {
-			background-color: var(--emerald-900);
+			background-color: var(--emerald-950);
 		}
 	}
 }
@@ -141,10 +141,10 @@ html[data-theme="dark"] {
 				color: var(--white);
 			}
 			tr:nth-child(odd) {
-				background-color: var(--slate-700);
+				background-color: var(--slate-800);
 			}
 			tr:nth-child(even) {
-				background-color: var(--emerald-900);
+				background-color: var(--emerald-950);
 			}
 		}
 	}
