@@ -22,10 +22,10 @@
 			a {
 				font-weight: var(--font-normal);
 				color: var(--link-nav);
-				text-decoration: none;
+				/* text-decoration: none; */
 				&:hover, &:focus {
 					color: var(--link-nav-afh);
-					text-decoration: underline; /* normal */
+					text-decoration: none;
 					text-decoration-thickness: var(--textDcThickMd);
 					text-underline-offset: var(--textUnOffst);
 					text-decoration-skip-ink: auto;
@@ -47,10 +47,10 @@
 		a {
 			font-weight: var(--font-normal);
 			color: var(--link-nav);
-			text-decoration: none;
+			/* text-decoration: none; */
 			&:hover, &:focus {
 				color: var(--link-nav-afh);
-				text-decoration: underline; /* normal */
+				text-decoration: none;
 				text-decoration-thickness: var(--textDcThickMd);
 				text-underline-offset: var(--textUnOffst);
 				text-decoration-skip-ink: auto;
