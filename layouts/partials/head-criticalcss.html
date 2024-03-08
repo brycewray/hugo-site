@@ -18,7 +18,7 @@
 			{{- $fontFileIta = "LibreFranklin-Italic-VariableFont_subset.woff2" -}}
 		{{- end -}}
 		<link rel="preload" as="font" href="/fonts/{{ $fontFileReg }}" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>
-		{{/* DO NOT preload italic; it's not always needed (e.g., home page, search page, etc.). */}}
+		<link rel="preload" as="font" href="/fonts/{{ $fontFileIta }}" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>
 		<style media="screen">
 			@media screen and (min-width: 1024px) {
 				@font-face {
