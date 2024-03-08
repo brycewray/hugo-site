@@ -15,7 +15,7 @@ It's been nearly a year since the [most recent entry](/posts/2022/08/mixed-nuts-
 
 ----
 
-Lately, I've been forcing myself to use Firefox rather than Chrome, chiefly because of the [ongoing drama](https://news.ycombinator.com/item?id=36876301) over Chromium's Web Environment Integrity (WEI) API.[^Safari] I doubt seriously that all we anti-WEI nerds' protests will change any of the minds that need to be changed, but using Chrome right now messes with my *own* mind.[^Electron] [^OhWell] [^WEIchg]
+Lately, I've been forcing myself to use Firefox rather than Chrome, chiefly because of the [ongoing drama](https://news.ycombinator.com/item?id=36876301) over Chromium's Web Environment Integrity (WEI) API.[^Safari] I doubt seriously that all we anti-WEI nerds' protests will change any of the minds that need to be changed, but using Chrome right now messes with my *own* mind.[^Electron] [^OhWell] [^WEIchg]
 
 [^Electron]: And, yeah, I do know that, because of [Electron](https://www.electronjs.org/), Chromium is mixed up with many other things I use daily --- notably, VS Code --- but, in just about each such case, I don't have the same choice. Selecting one's daily-driver browser is quite another matter.
 
