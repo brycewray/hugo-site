@@ -51,9 +51,9 @@ html[data-theme="dark"] {
 	--boost: var(--gray-200);
 	--bquote: var(--gray-400);
 	--bquote-boost: var(--gray-350);
-	--link: var(--blue-550);
+	--link: var(--blue-300);
 	--link-afh: var(--slate-300);
-	--link-box: var(--blue-550);
+	--link-box: var(--blue-300);
 	--head: var(--white);
 	--red: var(--red-300);
 	--box-red: var(--red-400);
@@ -86,9 +86,9 @@ html[data-theme="dark"] {
 		--boost: var(--gray-200);
 		--bquote: var(--gray-400);
 		--bquote-boost: var(--gray-350);
-		--link: var(--blue-550);
+		--link: var(--blue-300);
 		--link-afh: var(--slate-300);
-		--link-box: var(--blue-550);
+		--link-box: var(--blue-300);
 		--head: var(--white);
 		--red: var(--red-300);
 		--box-red: var(--red-400);
@@ -206,19 +206,17 @@ h4, .h4 {
 	font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
 }
 
+a, a:focus, a:hover, a:active {
+	text-decoration-thickness: var(--textDcThick);
+	text-underline-offset: var(--textUnOffst);
+	text-decoration-skip-ink: auto;
+}
+
 a {
-	text-decoration: none;
 	color: var(--link);
 	&:focus, &:hover, &:active {
 		color: var(--link-afh);
 	}
-}
-
-a:focus, a:hover, a:active {
-	text-decoration: underline;
-	text-decoration-thickness: var(--textDcThick);
-	text-underline-offset: var(--textUnOffst);
-	text-decoration-skip-ink: auto;
 }
 
 a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {

@@ -22,7 +22,7 @@
 			a {
 				font-weight: var(--font-normal);
 				color: var(--link-nav);
-				/* text-decoration: none; */
+				text-decoration: none;
 				&:hover, &:focus {
 					color: var(--link-nav-afh);
 					text-decoration: none;
@@ -47,7 +47,7 @@
 		a {
 			font-weight: var(--font-normal);
 			color: var(--link-nav);
-			/* text-decoration: none; */
+			text-decoration: none;
 			&:hover, &:focus {
 				color: var(--link-nav-afh);
 				text-decoration: none;
