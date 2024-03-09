@@ -89,5 +89,7 @@ Whichever "way" you go, it's a convenience-vs.-security question whether you sto
 
 [^masterTOTP]: At the very least, keep the TOTP for any "non-KeePass way" provider (*e.g.*, Bitwarden or 1Password) in a separate authenticator app. You **do** have multi-factor authentication set up for that vendor, right?
 
-**Overall update, 2021-09-16**: Based on my testing, I can recommend the KeePassXC/KeePassium route for those who want to use the "KeePass way." However, I didn't like the occasional glitchiness of KeePassXC browser extensions, so I decided to stick with Bitwarden for passwords **only** while adopting --- and really liking --- the [Raivo OTP](https://github.com/raivo-otp/ios-application) authenticator app for my TOTPs, after dropping [Authy](https://authy.com/) due primarily to what I learned from that Techlore video mentioned above.
+**Overall update, 2021-09-16**: Based on my testing, I can recommend the KeePassXC/KeePassium route for those who want to use the "KeePass way." However, I didn't like the occasional glitchiness of KeePassXC browser extensions, so I decided to stick with Bitwarden for passwords **only** while adopting --- and really liking --- the [Raivo OTP](https://github.com/raivo-otp/ios-application) authenticator app for my TOTPs, after dropping [Authy](https://authy.com/) due primarily to what I learned from that Techlore video mentioned above.\
+\
+**Further update, 2024-03-09**: Rather than Raivo OTP (which [later became unsuitable](/posts/2023/07/from-raivo-otp-to-2fas/)), I now suggest either [2FAS](https://2fas.com/) or [Ente Auth](https://github.com/ente-io/ente/tree/main/auth).
 {.box}
