@@ -88,7 +88,7 @@ html[data-theme="dark"] {
 		--bquote-boost: var(--gray-350);
 		--link: var(--blue-550);
 		--link-afh: var(--slate-300);
-		--link-box: var(--blue-200);
+		--link-box: var(--blue-550);
 		--head: var(--white);
 		--red: var(--red-300);
 		--box-red: var(--red-400);
