@@ -73,11 +73,6 @@ You can't go wrong by following the [Web Content Accessibility Guidelines (WCAG)
 
 **Have underlined links**. Speaking of links, yours should have underlining, making them easier to see. I don't use the `text-decoration` method on my site, because I hate text descenders (as in the lower-case letters *g* and *q*) punching through the underlines; instead, I use CSS to put borders underneath linked text. Regardless of the method you choose, be sure you *do* provide underlining.
 
-**Update, 2024-03-08**: As you can see, I later revised my stance on this because, as I learned, it's acceptable to have non-underlined links [**if** they have a sufficiently high contrast ratio](https://www.w3.org/WAI/WCAG22/Techniques/general/G183.html) compared to their surrounding text.[^contrastTriangle]
-{.box}
-
-[^contrastTriangle]: See also Chip Cullen's article, "[The Contrast Triangle](https://chipcullen.com/the-contrast-triangle/)" (<span class="nobrk">2020-02-11</span>).
-
 **Provide keyboard equivalents for navigation**. Not everybody has the dexterity to use a pointer device like a mouse or trackpad for navigating around a web page. Make sure all your links, including your nav links, are accessible through the use of tab keys or other keyboard-specific methods.
 
 **Use `aria-` attributes where necessary**. [ARIA means *Accessible Rich Internet Applications*](https://www.w3.org/WAI/PF/aria/roles), and refers to *roles* you can assign to elements so that screen readers will handle them correctly. In some cases, normal (and correctly used[^correctHTML]) HTML, such as `h1` to designate the page's top-level headline, will be enough for a screen reader; but sometimes the process takes a little more specialization. For example, if you have a button on a page, it needs an `aria role="button"` assignment. [This page](https://developers.google.com/web/fundamentals/accessibility/semantics-aria) on the Google Developers site is a great place to get started on making sure your site is OK ARIA-wise.[^wmAcc]
