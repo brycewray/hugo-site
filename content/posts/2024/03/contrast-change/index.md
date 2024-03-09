@@ -9,6 +9,9 @@ date: 2024-03-08T16:53:00-06:00
 # -
 ---
 
+<strong class="red">Important update, 2024-03-09</strong>: After receiving some important advice, via Mastodon, from accessibility experts [Adrian Roselli](https://adrianroselli.com/) and [Ben Myers](https://benmyers.dev/), I have reverted to underlining the site's links. I found particular help in the details within Roselli's "[On Link Underlines](https://adrianroselli.com/2016/06/on-link-underlines.html)," and am grateful to both of these gentlemen for courteously and informatively setting me straight on the matter --- although, for the sake of archival integrity, I'll leave the post below as it was *before* they set me straight.
+{.box}
+
 If you normally check my blabberings only through your friendly feed reader, this might be one of those times when you click on through to the real site, because that's the only way you'll be able to see what I'll be describing. As of the initial publication of this post, the ol' site's appearance has changed a bit.
 
 <!--more-->
