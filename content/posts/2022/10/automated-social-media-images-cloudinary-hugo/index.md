@@ -286,5 +286,5 @@ While Lengstorf's plugin can ease the process for users of JavaScript-based SSGs
 ## References
 
 - Adam Coti, "[The Essential Meta Tags for Social Media](https://css-tricks.com/essential-meta-tags-social-media/)" (as updated <span class="nobrk">2021-11-12</span>).
-- Jason Lengstorf, [`get-share-image` package and documentation ](https://github.com/jlengstorf/get-share-image) (documentation last updated <span class="nobrk">2022-05-13</span>).
-- Cloudinary documentation, "[Placing layers on images](https://cloudinary.com/documentation/layers)" (last-updated date unknown).
+- Jason Lengstorf, [`get-share-image` package and documentation ](https://github.com/jlengstorf/get-share-image) (documentation as updated <span class="nobrk">2022-05-13</span>).
+- Cloudinary documentation, "[Placing layers on images](https://cloudinary.com/documentation/layers)" (as-updated date unknown).
