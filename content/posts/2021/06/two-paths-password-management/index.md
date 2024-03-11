@@ -104,4 +104,7 @@ For many, it comes down to this: although there is considerable technical justif
 
 Be aware also of this: certain conversions from one "way" to the other can be nearly impossible. This is particularly true if you're trying to go from the non-KeePass way to the KeePass way, given that some apps on both sides do a fairly lousy job of either exporting their own files or importing other apps’ existing files for use across the "ways." **Therefore**, I strongly recommend that, before you act on any of this, you **make up your mind** --- which "way" and which app(s) --- and then stick to that decision as best you can.
 
+**Update, 2024-03-11**: The interchangeability of data between the two "ways" has improved with the [release of KeePassXC v.2.7.7](https://keepassxc.org/blog/2024-03-10-2.7.7-released/), which includes the ability to import data from Bitwarden and 1Password. I have tested it with the latter and it seems to work fine, although there are certain items --- *e.g.*, credit card data --- which aren't quite as easily accessed as others.
+{.box}
+
 Anyway, those are some of my takeaways from a semi-deep dive into the world of password management software. If I find others worth noting in the future, I obviously will bring them to your attention; and, as always, [I welcome your thoughts](/contact/).

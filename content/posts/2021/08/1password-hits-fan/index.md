@@ -67,6 +67,9 @@ As for migrating existing credentials from 1Password: ah, well, that's a pain. (
 
 [^migration]: To be fair, though, cleanup will be necessary even if you migrate between the offerings of two different **non**-KeePass way vendors.
 
+**Update, 2024-03-11**: The interchangeability of data between the two "ways" has improved with the [release of KeePassXC v.2.7.7](https://keepassxc.org/blog/2024-03-10-2.7.7-released/), which includes the ability to import data from Bitwarden and 1Password. I have tested it with the latter and it seems to work fine, although there are certain items --- *e.g.*, credit card data --- which aren't quite as easily accessed as others.
+{.box}
+
 ### The non-KeePass way
 
 I've had good luck with [Bitwarden](https://bitwarden.com). It gives you pretty much everything you need for password management, but probably with the least financial pain, from among the various vendors. Indeed, Bitwarden's basic plan is absolutely free, although I suggest opting for the paid plan simply to support a good company doing good work. Servers and development ain't free, y'know.
