@@ -22,7 +22,8 @@ Perhaps the most widely touted feature of [v.2.7.7](https://keepassxc.org/blog/2
 
 It's always been *sort of* possible to bring in credentials data from these sources, but often only through CSV files --- which tended to result in a messy, lossy, and overly manual importation process. Now, KeePassXC can import from more of 1Password's proprietary export formats (as well as Bitwarden's encrypted JSON exports), making for a much cleaner and more comprehensive result.
 
-![Screen capture of KeePassXC v.2.7.7 Import Wizard](2024-03-10_keepassxc-2-7-7-import-wizard_1404x929.png "KeePassXC v.2.7.7 Import Wizard.<br>Image: [KeePassXC blog](https://keepassxc.org/blog/).")
+![Screen capture of KeePassXC v.2.7.7 Import Wizard](2024-03-10_keepassxc-2-7-7-import-wizard_1404x929.png "KeePassXC v.2.7.7 Import Wizard.\
+Image: [KeePassXC blog](https://keepassxc.org/blog/).")
 
 While the Apple-only [Strongbox](https://strongboxsafe.com) app has also been stepping up its importation game in the last couple of years, the ability of KeePassXC to run on just about any desktop or laptop computer guarantees the significance of the latter app's continued existence, development, and improvement.
 
