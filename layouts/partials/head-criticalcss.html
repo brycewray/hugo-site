@@ -20,7 +20,8 @@
 			{{- $fontFileIta = "LibreFranklin-Italic-VariableFont_subset.woff2" -}}
 			{{- $fontWeights = "100 900" -}}
 		{{- else if eq $fontFamily "SN Pro" -}}
-			{{- $fontFileReg = "SNPro-VF-1-0-0_2024-03-12_subset.woff2" -}}
+			{{- $fontFileReg = "SNPro-VF-Regular-1-0-0_2024-03-12_subset.woff2" -}}
+			{{- $fontFileIta = "SNPro-VF-Italic-1-0-0_2024-03-12_subset.woff2" -}}
 			{{- $fontWeights = "200 900" -}}
 		{{- end -}}
 		<link rel="preload" as="font" href="/fonts/{{ $fontFileReg }}" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>{{ if ne $fontFileIta "" }}
@@ -30,11 +31,11 @@
 				@font-face {
 					font-family: '{{ $fontFamily }}';
 					font-weight: {{ $fontWeights }};
-					font-style: {{ if eq $fontFamily "SN Pro" }}oblique 0deg 14deg{{ else }}normal{{ end }};
+					font-style: normal;
 					font-display: swap;
 					src: url('/fonts/{{ $fontFileReg }}') format('woff2-variations'), url('/fonts/{{ $fontFileReg }}') format('woff2');
 					unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
-				}{{ if ne $fontFileIta "" }}
+				}
 				@font-face {
 					font-family: '{{ $fontFamily }}';
 					font-weight: {{ $fontWeights }};
@@ -42,7 +43,7 @@
 					font-display: swap;
 					src: url('/fonts/{{ $fontFileIta }}') format('woff2-variations'), url('/fonts/{{ $fontFileIta }}') format('woff2');
 					unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
-				}{{ end }}
+				}
 			}
 			:root {
 				/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
