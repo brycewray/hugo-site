@@ -41,4 +41,4 @@ StrongBox Wi-Fi Sync settings (some data simulated).
 
 Here's one particularly cool aspect of Wi-Fi Sync. Let's say that one of the connected Apple devices is taken outside of the network and its user makes changes to the KeePass database during that period. When the device is back on the network, it'll automatically sync back those changes *and* receive any changes that occurred on other network devices during its absence.
 
-I wonder whether this Strongbox-only (and, thus, Apple-only) feature is something which could eventually be ported, forked, and/or reverse-engineered to be more cross-platform. In the meantime, though, folks in all-Apple environments might find Wi-Fi sync a compelling reason to select Strongbox for toeing to the KeePass way.
+I wonder whether this Strongbox-only (and, thus, Apple-only) feature is something which could eventually be ported, forked, and/or reverse-engineered to be more cross-platform. In the meantime, though, folks in all-Apple environments might find Wi-Fi Sync a compelling reason to select Strongbox for toeing to the KeePass way.
