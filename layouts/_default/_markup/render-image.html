@@ -21,7 +21,7 @@
 	{{ with .Page.Resources.GetMatch $src }}
 		{{- $hint := "photo" -}}
 		{{- $filter := "MitchellNetravali" -}}
-		{{- $divClass := print "relative bg-center bigImgDiv imgB-" $imgBd5 "-" $holder -}}
+		{{- $divClass := print "relative bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>

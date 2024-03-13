@@ -12,7 +12,7 @@
 {{- $rounds := default false (.Get "rounds") -}}
 
 {{- $imgBd5 := md5 $src -}}
-{{- $divClass := "relative bg-center" -}}
+{{- $divClass := "relative" -}}
 {{- if not $phn -}}
 	{{- $divClass = print $divClass " bigImgDiv" -}}
 	{{- if $rounds -}}
@@ -27,6 +27,8 @@
 		using the same method as in that partial
 		(md5-ing the image file name).
 	*/}}
+{{- else -}}{{/* if $phn */}}
+	{{- $divClass = print $divClass " bg-center" -}}
 {{- end -}}
 {{- $imgClass := "w-full animate-fade shadow" -}}
 {{- if $phn -}}
