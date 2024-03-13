@@ -168,7 +168,7 @@ You probably don't need the `latin-extended` character sets (you already know if
 	\
 	For example, here's my `Public_Sans` folder with the files I downloaded to set them up on this site, and note that the inner folder is named `VF-2020-08-09` --- *i.e.*, variable fonts downloaded 2020-08-09 --- and each font type has its own separate subfolder (I *did* get the `latin-extended` versions, just in case):\
   &nbsp;
-![Screen capture of OS folder with Public Sans typeface files](Public_Sans_folder_1502x672.png)
+{{< img src="Public_Sans_folder_1502x672.png" alt="Screen capture of OS folder with Public Sans typeface files" rounds=true >}}
 
 1. ***Back in the browser window/tab with the CSS you got from the Google Fonts-provided URL, copy the CSS into a text file so you can refer to it later.***
 2. Now, close the browser windows/tabs; you're done with them.

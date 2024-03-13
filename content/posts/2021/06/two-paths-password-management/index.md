@@ -52,7 +52,10 @@ Fortunately, this isn't true of the basic Windows version of KeePass, which cont
 - **[KeePassXC](https://keepassxc.org/)** for Windows, macOS, and Linux.
 - **[Strongbox](https://www.strongboxsafe.com)** for macOS and iOS. (Paid on macOS, freemium on iOS.)
 
-![Screen capture from KeePassXC](keepassxc_unlock_db_2066x1532.png "The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.")
+{{< img src="keepassxc_unlock_db_2066x1532.png" alt="Screen capture from KeePassXC" rounds=true >}}
+
+The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.
+{.imgCaption}
 
 Now, let's consider that "on each device" business concerning the database file.
 

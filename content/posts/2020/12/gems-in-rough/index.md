@@ -18,7 +18,7 @@ Thus, in this post, I'm describing some of them for you. Perhaps this will end u
 
 ## Ahead code?
 
-![Screen shot of index.njk template in Nova code editor](index-njk_in_Nova_3202x2022.png)
+{{< img src="index-njk_in_Nova_3202x2022.png" alt="Screen shot of index.njk template in Nova code editor" rounds="true" >}}
 
 As I write, I'm about a week into the 30-day free trial of the new [Nova](https://nova.app) code editor for macOS (and only macOS), the successor to [Panic](https://panic.com)'s venerable [Coda](https://panic.com/coda/). The Mac-focused Panic first released Nova only a few months ago, but has steadily improved it. As is typical for a Panic app, it's really slick and, as someone who is in the second half of his *fourth decade* as a Mac user and first became acquainted with Panic apps in the mid-"aughts," I admire its many Mac-ish touches. Unlike Microsoft's [Electron](https://www.electronjs.org/)-based [Visual Studio Code](https://code.visualstudio.com), Nova is a *native* app. It's also much easier to configure and extend than VS Code.
 
