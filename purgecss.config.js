@@ -8,7 +8,8 @@ module.exports = {
 	safelist: {
 		standard: [
 			/^\:.*/,
-			/shadow/
+			/shadow/,
+			/rounded-bkgd/
 		],
 		deep: [
 			/chroma/,
