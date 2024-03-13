@@ -35,7 +35,7 @@ But, for any KeePass way aficionado who wants to sync passwords among Apple devi
 
 [^notFree]: Requires purchase of [Strongbox Pro](https://strongboxsafe.com/pro/).
 
-{{< img src="2024-03-11_Strongbox_WiFi-Sync_1356x1034_edited.png" alt="Edited screen capture of Strongbox Wi-Fi Sync settings" nobkgd=true >}}
+{{< img src="2024-03-11_Strongbox_WiFi-Sync_1356x1034_edited.png" alt="Edited screen capture of Strongbox Wi-Fi Sync settings" rounds=true >}}
 
 StrongBox Wi-Fi Sync settings (some data simulated).
 {.imgCaption}

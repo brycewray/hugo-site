@@ -155,3 +155,8 @@ end, text/LH classes from TWCSS
 	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-family: var(--emojis);
 }
+
+.rounded-bkgd {
+	border-radius: 18px;
+	/* to work with LQIPs behind rounded imgs (e.g., screen caps) */
+}

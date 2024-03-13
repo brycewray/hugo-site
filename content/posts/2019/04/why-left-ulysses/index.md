@@ -174,7 +174,7 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-{{< img src="iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png" alt="Screen capture from iA Writer app" nobkgd=true >}}
+{{< img src="iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png" alt="Screen capture from iA Writer app" rounds=true >}}
 
 Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.
 {.imgCaption}

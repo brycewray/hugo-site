@@ -9,22 +9,24 @@
 {{- /* ^^ applicable only to webp: https://gohugo.io/content-management/image-processing/#hint */ -}}
 {{- $filter := default "MitchellNetravali" (.Get "filter") -}}
 {{- $simple := default false (.Get "simple") -}}
-{{- $nobkgd := default false (.Get "nobkgd") -}}
+{{- $rounds := default false (.Get "rounds") -}}
 
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative bg-center" -}}
 {{- if not $phn -}}
 	{{- $divClass = print $divClass " bigImgDiv" -}}
-	{{- if not $nobkgd -}}
-		{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
-		{{/*
-			The `imgB-`[hash]-GIP` class is
-			generated in a `head` partial;
-			here, we need only get the class's name,
-			using the same method as in that partial
-			(md5-ing the image file name).
-		*/}}
-	{{- end -}}
+	{{- if $rounds -}}
+		{{- $divClass = print $divClass " rounded-bkgd" -}}
+		{{/* For LQIPs behind rounded imgs (e.g., screen caps). */}}
+	{{- end }}
+	{{- $divClass = print $divClass " imgB-" $imgBd5 "-" $holder -}}
+	{{/*
+		The `imgB-`[hash]-GIP` class is
+		generated in a `head` partial;
+		here, we need only get the class's name,
+		using the same method as in that partial
+		(md5-ing the image file name).
+	*/}}
 {{- end -}}
 {{- $imgClass := "w-full animate-fade shadow" -}}
 {{- if $phn -}}

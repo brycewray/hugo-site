@@ -18,7 +18,7 @@ Web developers test, or *should* test, their work in at least the three major br
 
 In "[Mixed nuts #12](/posts/2023/08/mixed-nuts-12/)," I mentioned a choice to use Firefox rather than Chrome as my daily-driver browser[^WEI], and I added in a footnote:
 
-[^WEI]: This was based on the [current Web Environment Integrity (WEI) controversy](https://news.ycombinator.com/item?id=36876301). After further reading, research, and thinking on the subject of WEI and its potential effects, I decided to return to my more usual browsing habits --- meaning, Chrome as my daily driver. **Update, 2023-11-04**: Google has since [decided](https://android-developers.googleblog.com/2023/11/increasing-trust-for-embedded-media.html) (at least for the time being) not to go ahead with WEI. 
+[^WEI]: This was based on the [current Web Environment Integrity (WEI) controversy](https://news.ycombinator.com/item?id=36876301). After further reading, research, and thinking on the subject of WEI and its potential effects, I decided to return to my more usual browsing habits --- meaning, Chrome as my daily driver. **Update, 2023-11-04**: Google has since [decided](https://android-developers.googleblog.com/2023/11/increasing-trust-for-embedded-media.html) (at least for the time being) not to go ahead with WEI.
 
 > Since I've often identified myself as an unapologetic Apple fanboy, you might wonder why I don't go with Safari, instead. The main problem is that Safari isn't, and never will be, compatible with [xBrowserSync](https://www.xbrowsersync.org/), on which I rely heavily with both Chrome and Firefox . . .
 
@@ -40,7 +40,7 @@ As you would reasonably expect, BookMacster works as an extension within each br
 
 Although you have the ability to set up some advanced syncing options, the default "Simple" setup on a collection file's **Syncing** tab will work just fine for the vast majority of folks:
 
-{{< img src="2023-08-14-BookMacster-sync-simple_2496x1448_72dpi.png" alt="The “Syncing” tab for a collection file within the BookMacster app" nobkgd=true >}}
+{{< img src="2023-08-14-BookMacster-sync-simple_2496x1448_72dpi.png" alt="The “Syncing” tab for a collection file within the BookMacster app" rounds=true >}}
 
 Shortly[^increment] after I make a change to the bookmarks on any of the client browsers, BookMacster makes the change happen on the others, as well. Since I maintain a somewhat complicated and often-updated bookmarks bar on my daily-driver browser, it's really nice to have access to it on the other two of the Big Three.
 
@@ -52,7 +52,7 @@ This even gives me the benefit of having my iDevices' browsers sync with the boo
 
 BookMacster also can provide reports on your bookmarks, including verification of their ongoing reliability as well as checking for duplicates:
 
-{{< img src="2023-08-14-BookMacster-reports-verify_2332x1884_72dpi.png" alt="The “Verify” tab of the “Reports” item within a BookMacster collection file" nobkgd=true >}}
+{{< img src="2023-08-14-BookMacster-reports-verify_2332x1884_72dpi.png" alt="The “Verify” tab of the “Reports” item within a BookMacster collection file" rounds=true >}}
 
 And as for the reliability of this product? Well, BookMacster has been around since *2009*, is the key member of a [small line of bookmarks management software products](https://sheepsystems.com/products/), and remains in active development. Its price as of this writing is a one-time fee of $24.95. If my current experience with BookMacster remains as positive during the remainder of my free trial as it has so far, I'd guess that making this purchase will be a pretty easy choice.
 

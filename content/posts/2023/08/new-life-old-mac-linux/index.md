@@ -33,7 +33,7 @@ Now enjoying full functionality, I tried a Linux capability which had long intri
 
 And it worked!
 
-{{< img src="2023-08-19-1531CDT_Spyro-Fedora_1920x1118.png" alt="Screen capture of Steam-hosted “Spyro Reignited Trilogy” game running in Proton compatibility layer on Fedora 38 Linux on a mid-2017 iMac" nobkgd=true >}}
+{{< img src="2023-08-19-1531CDT_Spyro-Fedora_1920x1118.png" alt="Screen capture of Steam-hosted “Spyro Reignited Trilogy” game running in Proton compatibility layer on Fedora 38 Linux on a mid-2017 iMac" rounds=true >}}
 
 While I'd been able to run Trilogy on the *new* Mac in Windows 11 via [Parallels Desktop](https://www.parallels.com/products/desktop/)[^AAA], there are just enough glitches in the ARM version of Windows that Trilogy would crash at odd times, especially in certain sections of the game. Now, running in Fedora via Proton --- not to mention, with the full power of the old iMac's Intel i7 and 64 GB of RAM --- Trilogy works amazingly well and with nary a crash, at least so far. Indeed, I had more trouble with getting my Bluetooth game controller to link reliably with Fedora.[^controller] I did limit a few graphics settings to lower the thermal load on the old Mac so it won't be frequently running its fans at high speed, but everything still looks great and is exceedingly playable.
 
