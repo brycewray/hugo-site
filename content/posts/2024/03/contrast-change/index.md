@@ -22,9 +22,11 @@ The most obvious alteration is that the links are no longer underlined as they h
 
 Still, I had no interest in having to choose between the equally worthy goals of readability and accessibility. Fortunately, I learned there was no reason for such a choice. [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) has [an alternative](https://www.w3.org/WAI/WCAG22/Techniques/general/G183) for sites which prefer not to underline links: you simply make sure a link's color has at least a 3:1 contrast ratio when compared to its surrounding text.[^focus]
 
-Well, I *say*, "simply," but that actually proved to be a bit difficult to accomplish with my dark-mode CSS, where my previous light blue link color definitely failed the 3:1 test with the body text's dark-mode color. Nonetheless, I got it done --- thanks in large part to [Chip Cullen](https://chipcullen.com/)'s [Contrast Triangle tool](https://contrast-triangle.com/) and [accompanying blog post](https://chipcullen.com/the-contrast-triangle/), both of which I strongly recommend for checking the accessibility of your own site's non-underlined links.
-
 [^focus]: Note that the same guidance says you **do** still need to have a link show a different appearance whenever, *e.g.*, a cursor is hovering over it. Each link here does take on an underline at such times and, as was previously the case, it changes color as an additional visual confirmation.
+
+Well, I *say*, "simply," but that actually proved to be a bit difficult to accomplish with my dark-mode CSS, where my previous light blue link color definitely failed the 3:1 test with the body text's dark-mode color.[^evenSo] Nonetheless, I got it done --- thanks in large part to [Chip Cullen](https://chipcullen.com/)'s [Contrast Triangle tool](https://contrast-triangle.com/) and [accompanying blog post](https://chipcullen.com/the-contrast-triangle/), both of which I strongly recommend for checking the accessibility of your own site's non-underlined links.
+
+[^evenSo]: Even after restoring the link underlining as mentioned in my update at the top, I decided to keep the 3:1 contrast ratio for the dark-mode links. (My light-mode links already met the test.)
 
 ## A (somewhat) fresh face
 
