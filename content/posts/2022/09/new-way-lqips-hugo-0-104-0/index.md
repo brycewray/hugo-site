@@ -12,10 +12,6 @@ imgs:
 **Update from the future**: I later made considerable changes to the methods described in this post. So that you'll have a fuller perspective, I suggest you read everything *except* the code here, and only **then** go to [my post about *why* I made the changes](/posts/2023/04/better-code-image-processing-hugo/), where superior code awaits.
 {.box}
 
-<br />
-
-{{% disclaimer %}}
-
 With today's [release](https://github.com/gohugoio/hugo/releases/tag/v0.104.0) of version 0.104.0 of the [Hugo](https://gohugo.io) static site generator (SSG), there's a new and perhaps better way to generate low-quality image placeholders (LQIPs).
 
 As you probably already know, using an LQIP as an image's background allows those with slower connectivity and devices to get at least a representation of a full image while that image is still downloading.
