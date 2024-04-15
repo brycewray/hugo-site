@@ -1,0 +1,133 @@
+{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
+
+{{- $fontsSrc := "local" -}}
+	{{- /* choices are "local" or "CFF" or "system" (system fonts stack).
+	With CFF, remember that the CSP's `style-src` must allow "unsafe-inline"
+	because CFF injects a `style` AFTER the CFP Page Function injects the CSP. */ -}}
+{{- $fontFamily := "Inter" -}}
+	{{- /* e.g., "Inter" or "Libre Franklin" */ -}}
+{{- $fontFileReg := "" -}}
+{{- $fontFileIta := "" -}}
+{{- $fontWeights := "" -}}
+{{- with $fontsSrc -}}
+	{{- if eq . "local" -}}
+		{{- if eq $fontFamily "Inter" -}}
+			{{- $fontFileReg = "InterVariable-4-0-Regular_subset.woff2" -}}
+			{{- $fontFileIta = "InterVariable-4-0-Italic_subset.woff2" -}}
+			{{- $fontWeights = "100 900" -}}
+		{{- else if eq $fontFamily "Libre Franklin" -}}
+			{{- $fontFileReg = "LibreFranklin-Roman-VariableFont_subset.woff2" -}}
+			{{- $fontFileIta = "LibreFranklin-Italic-VariableFont_subset.woff2" -}}
+			{{- $fontWeights = "100 900" -}}
+		{{- else if eq $fontFamily "SN Pro" -}}
+			{{- $fontFileReg = "SNPro-VF-Regular-1-0-0_2024-03-12_subset.woff2" -}}
+			{{- $fontFileIta = "SNPro-VF-Italic-1-0-0_2024-03-12_subset.woff2" -}}
+			{{- $fontWeights = "200 900" -}}
+		{{- end -}}
+		<link rel="preload" as="font" href="/fonts/{{ $fontFileReg }}" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>{{ if ne $fontFileIta "" }}
+		<link rel="preload" as="font" href="/fonts/{{ $fontFileIta }}" type="font/woff2" media="screen and (min-width: 1024px)" crossorigin>{{ end }}
+		<style media="screen">
+			@media screen and (min-width: 1024px) {
+				@font-face {
+					font-family: '{{ $fontFamily }}';
+					font-weight: {{ $fontWeights }};
+					font-style: normal;
+					font-display: swap;
+					src: url('/fonts/{{ $fontFileReg }}') format('woff2-variations'), url('/fonts/{{ $fontFileReg }}') format('woff2');
+					unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
+				}
+				@font-face {
+					font-family: '{{ $fontFamily }}';
+					font-weight: {{ $fontWeights }};
+					font-style: italic;
+					font-display: swap;
+					src: url('/fonts/{{ $fontFileIta }}') format('woff2-variations'), url('/fonts/{{ $fontFileIta }}') format('woff2');
+					unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
+				}
+			}
+			:root {
+				/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
+				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
+				--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
+				--textUnOffst: 0.25em; /* always em -- min-width: 768px */
+				@media screen and (min-width: 1024px) {
+					--sans-serif: "{{ $fontFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+					--textUnOffst: 0.2875em;
+					/*
+						^ ^ ^
+						serve non-system fonts to only larger screens,
+						to make it easier on phones, especially where
+						bandwidth is at a premium
+					*/
+				}
+			}
+		</style>
+	{{- else if eq . "CFF" -}}
+		{{- $URLopen := "https://fonts.googleapis.com/css2?family=" -}}
+		{{- $fontSans := "Libre+Franklin" -}}{{/* e.g., "Libre+Franklin" */}}
+			{{- $fontSansFamily := "Libre Franklin" -}}{{/* e.g., "Libre Franklin" */}}
+			{{- $itemsSans := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+			{{- $varsSans := "100..900" -}}
+			{{- $URLSans := print $URLopen $fontSans ":" $itemsSans "@0," $varsSans ";1," $varsSans "&display=swap" -}}
+		{{- $fontSerif := "" -}}{{/* e.g., "Noto+Serif" */}}
+			{{- $fontSerifFamily := "" -}}{{/* e.g., "Noto Serif" */}}
+			{{- $itemsSerif := "ital,wght" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+			{{- $varsSerif := "100..900" -}}
+			{{- $URLSerif := print $URLopen $fontSerif ":" $itemsSerif "@0," $varsSerif ";1," $varsSerif "&display=swap" -}}
+		{{- $fontMono := "" -}}{{/* e.g., "Something+Mono" */}}
+			{{- $fontMonoFamily := "" -}}{{/* e.g., "Something Mono" */}}
+			{{- $itemsMono := "" -}} {{/* ital,opsz,wdth,wght,GRAD */}}
+			{{- $varsMono := "" -}}
+			{{- $URLMono := print $URLopen $fontMono ":" $itemsMono "@0," $varsMono ";1," $varsMono "&display=swap" -}}
+		<link rel="preconnect" href="https://fonts.googleapis.com" media="screen and (min-width: 1024px)" crossorigin>
+		<link rel="preconnect" href="https://fonts.gstatic.com" media="screen and (min-width: 1024px)" crossorigin>
+		{{/* https://discourse.gohugo.io/t/how-to-unescape-plus-sign-in-url-re-cloudflare-fonts/46734 */}}
+		<style media="screen">
+			:root {
+				/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
+				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
+				--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
+				{{ if or $fontSansFamily $fontSerifFamily $fontMonoFamily }}
+				@media screen and (min-width: 1024px) {
+					{{ if $fontSansFamily }}--sans-serif: "{{ $fontSansFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";{{ end }}
+					{{ if $fontSerifFamily }}--serif: "{{ $fontSerifFamily }}", ui-serif, Georgia, Cambria, "Bitstream Charter", serif;{{ end }}
+					{{ if $fontMonoFamily }}--monospaced: "{{ $fontMonoFamily }}", ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", }monospace;{{ end }}
+				}
+				{{ end }}
+				/*
+					^ ^ ^
+					serve non-system fonts to only larger screens,
+					to make it easier on phones, especially where
+					bandwidth is at a premium
+				*/
+			}
+		</style>
+		{{ with $fontSans -}}
+			<link {{ printf "href=%q" $URLSans | safeHTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+		{{- end }}
+		{{ with $fontSerif -}}
+			<link {{ printf "href=%q" $URLSerif | safeHTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+		{{- end }}
+		{{- with $fontMono -}}
+			<link {{ printf "href=%q" $URLMono | safeHTMLAttr }} rel="stylesheet" media="screen and (min-width: 1024px)">
+		{{- end }}
+	{{- else if eq . "system" -}}
+		{{/* otherwise, we fall back to system fonts */}}
+		<style media="screen">
+			:root {
+				/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
+				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
+				--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
+			}
+		</style>
+	{{- end }}
+{{- end }}
+
+{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
+{{/* Hugo will minify in production, since this is going into the HTML */}}
+{{- with $css -}}
+	<style media="screen">{{ .Content | safeCSS }}</style>
+{{- end }}
