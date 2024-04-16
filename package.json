@@ -12,8 +12,7 @@
 		"prod:hugo": "hugo --minify --gc",
 		"testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* dev:hugo",
-		"build:purge": "purgecss --config ./purgecss.config.js",
-		"build:prelim": "NODE_ENV=production npm-run-all clean:* build:purge prod:hugo",
+		"build:prelim": "NODE_ENV=production npm-run-all clean:* prod:hugo",
 		"build": "npm-run-all build:prelim move-excerpts search",
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
 		"deploy": "npm-run-all build deploy:wrangler",
@@ -23,7 +22,6 @@
 	"devDependencies": {
 		"npm-run-all": "^4.1.5",
 		"pagefind": "^1.1.0",
-		"purgecss": "^6.0.0",
 		"serve": "^14.2.1",
 		"wrangler": "^3.50.0"
 	}
