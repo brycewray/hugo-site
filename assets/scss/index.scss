@@ -1,14 +1,14 @@
-@import 'article-u.css';
-@import 'billboard-u.css';
-@import 'code-all-u.css';
-@import 'footnotes-u.css';
-@import 'fourohfour-u.css';
-@import 'home-u.css';
-@import 'lite-yt-embed-u.css';
-@import 'posts-list-u.css';
-@import 'posts-single-u.css';
-/* @import 'search-btn.css'; */
-@import 'search-form-u.css';
-@import 'sitemaphtml-u.css';
-@import 'social-u.css';
-@import 'tables-u.css';
+@use 'partials/article.scss';
+@use 'partials/billboard.scss';
+@use 'partials/code-all.scss';
+@use 'partials/footnotes.scss';
+@use 'partials/fourohfour.scss';
+@use 'partials/home.scss';
+@use 'partials/lite-yt-embed.scss';
+@use 'partials/posts-list.scss';
+@use 'partials/posts-single.scss';
+/* @use 'partials/search-btn.scss'; */
+@use 'partials/search-form.scss';
+@use 'partials/sitemaphtml.scss';
+@use 'partials/social.scss';
+@use 'partials/tables.scss';
