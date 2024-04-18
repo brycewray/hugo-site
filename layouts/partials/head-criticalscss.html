@@ -1,4 +1,4 @@
-{{- $optionsCSSCritical := (dict "transpiler" "dartsass") -}}
+{{- $scssOptions := dict "transpiler" "dartsass" -}}
 
 {{- $fontsSrc := "local" -}}
 	{{- /* choices are "local" or "CFF" or "system" (system fonts stack).
@@ -93,7 +93,7 @@
 				@media screen and (min-width: 1024px) {
 					{{ if $fontSansFamily }}--sans-serif: "{{ $fontSansFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";{{ end }}
 					{{ if $fontSerifFamily }}--serif: "{{ $fontSerifFamily }}", ui-serif, Georgia, Cambria, "Bitstream Charter", serif;{{ end }}
-					{{ if $fontMonoFamily }}--monospaced: "{{ $fontMonoFamily }}", ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", }monospace;{{ end }}
+					{{ if $fontMonoFamily }}--monospaced: "{{ $fontMonoFamily }}", ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;{{ end }}
 				}
 				{{ end }}
 				/*
@@ -126,8 +126,16 @@
 	{{- end }}
 {{- end }}
 
-{{- $css := resources.Get "scss/critical.scss" | toCSS $optionsCSSCritical -}}
-{{/* Hugo will minify in production, since this is going into the HTML */}}
+{{- if hugo.IsProduction -}}
+	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/critical.min.css" "outputStyle" "compressed") -}}
+{{- else -}}
+	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/critical.css") -}}
+{{- end -}}
+{{- $css := resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
+{{- if hugo.IsProduction -}}
+	{{- $css = $css | fingerprint -}}
+{{- end -}}
 {{- with $css -}}
-	<style media="screen">{{ .Content | safeCSS }}</style>
+	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 {{- end }}
