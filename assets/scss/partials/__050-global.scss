@@ -17,8 +17,8 @@ html, html[data-theme="light"] {
 	--boost: var(--gray-900);
 	--bquote: var(--gray-500);
 	--bquote-boost: var(--gray-600);
-	--link: var(--blue-800);
-	--link-afh: var(--slate-950);
+	--link: var(--blue-700);
+	--link-afh: var(--blue-900);
 	--link-box: var(--blue-750);
 	--head: var(--black);
 	--red: var(--red-700);
@@ -51,9 +51,9 @@ html[data-theme="dark"] {
 	--boost: var(--gray-200);
 	--bquote: var(--gray-400);
 	--bquote-boost: var(--gray-350);
-	--link: var(--blue-400);
+	--link: var(--blue-550);
 	--link-afh: var(--slate-300);
-	--link-box: var(--blue-400);
+	--link-box: var(--blue-550);
 	--head: var(--white);
 	--red: var(--red-300);
 	--box-red: var(--red-400);
@@ -86,9 +86,9 @@ html[data-theme="dark"] {
 		--boost: var(--gray-200);
 		--bquote: var(--gray-400);
 		--bquote-boost: var(--gray-350);
-		--link: var(--blue-400);
+		--link: var(--blue-550);
 		--link-afh: var(--slate-300);
-		--link-box: var(--blue-400);
+		--link-box: var(--blue-550);
 		--head: var(--white);
 		--red: var(--red-300);
 		--box-red: var(--red-400);
