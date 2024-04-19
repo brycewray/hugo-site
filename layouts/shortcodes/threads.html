@@ -1,0 +1,6 @@
+{{- $dvUrl := .Get "dvUrl" -}}
+{{- $hnUrl := .Get "hnUrl" -}}
+
+<p class="box">
+	<strong>Note</strong>: This post also {{- if $dvUrl }} appears on <a href="{{ $dvUrl }}">dev.to</a>{{- end -}}{{- if and $hnUrl $dvUrl }} and{{- end -}}{{- if $hnUrl }} was the subject of a <a href="{{ $hnUrl }}">Hacker News thread</a>{{- end -}}.
+</p>
