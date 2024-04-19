@@ -6,8 +6,7 @@ date: 2022-06-01T06:47:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/get-good-git-info-from-hugo-45f8).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/get-good-git-info-from-hugo-45f8" >}}
 
 While reading blog posts from other static site generator (SSG) users, I sometimes see that a post includes a link to the specific [Git commit](https://git-scm.com/docs/git-commit) for that post's most recent update. In this post, I'll show you how to do it in a [Hugo](https://gohugo.io) site, in case you're interested in doing the same. As an additional benefit, it'll automate something you might have been doing manually up to now.
 

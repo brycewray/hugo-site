@@ -7,8 +7,7 @@ date: 2023-02-20T12:24:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/hugo-via-npm-5c4b).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/hugo-via-npm-5c4b" >}}
 
 <strong class="red">Important</strong>: Be sure to check the 2023-11-18 update at the end regarding a dependency issue with the Hugo Installer package described herein.
 {.box}

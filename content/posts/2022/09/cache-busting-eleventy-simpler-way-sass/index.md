@@ -7,8 +7,7 @@ date: 2022-09-19T16:34:00-05:00
 initTextEditor: iA Writer # default --- change if needed
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/cache-busting-in-eleventy-a-simpler-way-with-sass-10h3).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/cache-busting-in-eleventy-a-simpler-way-with-sass-10h3" >}}
 
 If you use the [Eleventy](https://11ty.dev) static site generator (SSG) and [Sass](https://sass-lang.com) to build your website, read on for some cool stuff.
 

@@ -6,8 +6,7 @@ date: 2022-04-24T10:50:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/is-astro-ready-for-your-blog-63m).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/is-astro-ready-for-your-blog-63m" >}}
 
 {{% disclaimer %}}
 

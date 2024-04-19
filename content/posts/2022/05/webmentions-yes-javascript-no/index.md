@@ -6,11 +6,9 @@ date: 2022-05-23T16:23:00-05:00
 #initTextEditor: VS Code
 ---
 
-{{% disclaimer %}}
-<br />
+{{< threads dvUrl="https://dev.to/brycewray/webmentions-yes-javascript-no-ho6" >}}
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/webmentions-yes-javascript-no-ho6).
-{.box}
+{{% disclaimer %}}
 
 I tried [yesterday](/posts/2022/05/checking-out-indieweb-again/) to get this site back on the [IndieWeb](https://indieweb.org/) with at least some form of [webmentions](https://indieweb.org/Webmention). However, within a few hours, it became clear that the third-party JavaScript code I'd used [in 2020](/posts/2020/04/webmentions-three-ssgs-3/) wasn't going to cut it now, for reasons which remain unclear at this writing. Accordingly, I resigned myself to having to dope out what changes I'd have to make in the borrowed code; and, while I worked on that, I reverted the site to its previous, non-webmentions form.
 

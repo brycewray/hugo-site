@@ -7,8 +7,7 @@ date: 2022-09-05T10:01:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/get-good-git-info-from-eleventy-too-30in).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/get-good-git-info-from-eleventy-too-30in" >}}
 
 **Update from the future**: Although the data and formatting in each page's header differ from what's described in this post, the code blocks contained herein are still accurate and usable.
 {.box}

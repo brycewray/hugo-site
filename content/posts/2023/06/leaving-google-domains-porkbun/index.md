@@ -7,8 +7,7 @@ date: 2023-06-16T10:24:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/leaving-google-domains-for-porkbun-23j1).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/leaving-google-domains-for-porkbun-23j1" >}}
 
 Out of the clear blue yesterday came an [announcement](https://www.prnewswire.com/news-releases/squarespace-enters-definitive-agreement-to-acquire-google-domains-assets-301852507.html?tc=eml_cleartime) that [Squarespace](https://squarespace.com) had agreed to buy [Google Domains](https://domains.google.com) from Google's parent company.
 

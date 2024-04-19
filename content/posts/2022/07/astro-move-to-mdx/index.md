@@ -6,8 +6,7 @@ date: 2022-07-30T21:42:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/astro-and-the-move-to-mdx-4bd0).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/astro-and-the-move-to-mdx-4bd0" >}}
 
 Grizzled old guy that I am, I saw [the original "Hail Mary" play](https://agatetype.typepad.com/agate_type/2010/10/hail-mary.html) when it happened[^Vikings] back in 1975, so I like to think I know a good "Hail Mary" when I see one. In fact, I may have done just that.
 

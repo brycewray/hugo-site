@@ -7,8 +7,7 @@ date: 2022-12-08T08:14:00-06:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/sweeter-searches-with-pagefind-194o).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/sweeter-searches-with-pagefind-194o" >}}
 
 If you lurk in some of the same tech forums that I do, you'll see a lot of griping about the declining quality of online search. Who'd have ever thought that contorting search results, stuffing them with ads, inadequately curating them for quality, and otherwise caring only about their financial upside could have proved so counterproductive? ("Me," you and I can yell in unison.)
 

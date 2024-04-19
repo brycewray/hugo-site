@@ -7,8 +7,7 @@ date: 2022-09-23T09:09:00-05:00
 initTextEditor: iA Writer # default --- change if needed
 ---
 
-**Note**: This post also appears on [dev.to](https://dev.to/brycewray/simplifying-switcheroos-4m2f).
-{.box}
+{{< threads dvUrl="https://dev.to/brycewray/simplifying-switcheroos-4m2f" >}}
 
 It's a web meme that began as a line from *Jurassic Park*:
 
