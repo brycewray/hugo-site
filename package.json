@@ -1,4 +1,9 @@
 {
+	"browserslist": [
+		">0.2%",
+		"Firefox ESR",
+		"not dead"
+	],
 	"config": {
 		"myIP": "192.168.0.70"
 	},
@@ -12,6 +17,7 @@
 		"prod:hugo": "hugo --minify --gc",
 		"testbuild:hugo": "npm run dev:hugo -- --minify --environment=production",
 		"start": "NODE_ENV=development npm-run-all clean:* dev:hugo",
+		"startpf": "NODE_ENV=development npm-run-all clean:* prod:hugo dev:search dev:hugo",
 		"build:prelim": "NODE_ENV=production npm-run-all clean:* prod:hugo",
 		"build": "npm-run-all build:prelim move-excerpts search",
 		"deploy:wrangler": "wrangler pages deploy public --commit-dirty=true",
@@ -20,8 +26,14 @@
 		"testbuild": "NODE_ENV=production npm-run-all build serve"
 	},
 	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^6.0.0",
+		"browserslist": "^4.23.0",
+		"cssnano": "^6.1.2",
 		"npm-run-all": "^4.1.5",
 		"pagefind": "^1.1.0",
+		"postcss": "^8.4.38",
+		"postcss-cli": "^11.0.0",
+		"postcss-preset-env": "^9.5.6",
 		"serve": "^14.2.1",
 		"wrangler": "^3.51.2"
 	}

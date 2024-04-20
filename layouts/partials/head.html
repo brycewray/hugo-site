@@ -14,16 +14,16 @@
 	{{- end }}
 	{{ hugo.Generator }}
 {{- /* CSS */ -}}
-	{{/*  {{- partialCached "head-criticalcss.html" . -}}  */}}
-	{{- partialCached "head-criticalscss.html" . }}
+	{{- partialCached "head-criticalcss.html" . -}}
+	{{/*  {{- partialCached "head-criticalscss.html" . }}  */}}
 	{{- $noncriticalCSS := "scoped" -}}
 	{{- with $noncriticalCSS -}}
 		{{- if eq $noncriticalCSS "scoped" -}}
-			{{/*  {{- partial "head-css-scoped.html" $.Page }}  */}}
-			{{- partial "head-scss-scoped.html" $.Page }}
+			{{- partial "head-css-scoped.html" $.Page }}
+			{{/*  {{- partial "head-scss-scoped.html" $.Page }}  */}}
 		{{- else -}}
-			{{/*  {{- partialCached "head-css-unscoped.html" $.Page }}  */}}
-			{{- partialCached "head-scss-unscoped.html" $.Page }}
+			{{- partialCached "head-css-unscoped.html" $.Page }}
+			{{/*  {{- partialCached "head-scss-unscoped.html" $.Page }}  */}}
 		{{- end }}
 	{{- end }}
 	{{- partial "head-imgs-css.html" . }}

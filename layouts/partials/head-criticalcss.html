@@ -126,7 +126,11 @@
 	{{- end }}
 {{- end }}
 
-{{- $css := resources.Get "lcss/critical.css" }}
-{{- with $css }}
-	<style media="screen">{{ .Content | safeCSS }}</style>
+{{ $css := (resources.Match "css/partials/__0*.css") | resources.Concat "css/critical.css" }}
+{{- if hugo.IsProduction -}}
+	{{- $css = $css | postCSS | fingerprint -}}
+{{- end -}}
+{{- with $css -}}
+	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 {{- end }}
