@@ -133,7 +133,7 @@
 {{- end -}}
 {{- $css := resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | fingerprint -}}
+	{{- $css = $css | postCSS | fingerprint -}}
 {{- end -}}
 {{- with $css -}}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
