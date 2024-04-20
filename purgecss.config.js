@@ -53,7 +53,8 @@ module.exports = {
 			/fuchsia-700/,
 			/rose-300/,
 			/rose-700/,
-			/filter/
+			/filter/,
+			/semilight/
 		]
 	},
 	variables: true
