@@ -15,7 +15,7 @@ Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF
 	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--textUnOffst: 0.25em; /* always em -- min-width: 768px */
 	@media screen and (min-width: 1024px) {
-		--sans-serif: "{{ $fontFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		--sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 		--textUnOffst: 0.2875em;
 		/*
 			^ ^ ^
