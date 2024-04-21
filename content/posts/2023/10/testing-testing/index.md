@@ -84,6 +84,9 @@ And, on Windows 11, Ungoogled Chromium did pretty well --- thrashing Brave, sur
 
 ## Cloudflare Fonts
 
+<strong class="red">Update, 2024-04-21</strong>: Due to a variety of factors, I recommend that you **not** use the Cloudflare Fonts product described herein. (Remember that [you **don't** want to use Google Fonts as served by Google](/posts/2020/08/google-fonts-privacy/). Instead, [host them **locally**](/posts/2020/08/good-stuff-without-google/).)
+{.box}
+
 After running into early troubles with the new Cloudflare Fonts offering, I created a mini-site[^link] for testing purposes and noted the results in an update to my [most recent post](/posts/2023/10/cloudflare-fonts-first-look/):
 
 [^link]: I'm not supplying the link here because I don't know whether I'll keep the mini-site going much longer, since it's served its purpose --- *i.e.*, I've tested all the Google Fonts variations in which I personally have any interest.

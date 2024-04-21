@@ -9,6 +9,9 @@ date: 2023-11-16T10:56:00-06:00
 # -
 ---
 
+<strong class="red">Update, 2024-04-21</strong>: Due to a variety of factors, I recommend that you **not** use the Cloudflare Fonts product described herein.
+{.box}
+
 While Cloudflare continues to [beta-test Cloudflare Fonts](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/), there are some items you'll want to consider regarding whatever way you may be using *remotely* hosted [variable fonts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide) on your website. Some of these variable fonts are *extremely* variable, so you'll want to know how that can affect performance.
 
 <!--more-->

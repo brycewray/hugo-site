@@ -9,6 +9,9 @@ date: 2023-10-02T10:08:00-05:00
 # -
 ---
 
+<strong class="red">Update, 2024-04-21</strong>: Due to a variety of factors, I recommend that you **not** use the Cloudflare Fonts product described herein. (Remember that [you **don't** want to use Google Fonts as served by Google](/posts/2020/08/google-fonts-privacy/). Instead, [host them **locally**](/posts/2020/08/good-stuff-without-google/).)
+{.box}
+
 Before learning about its [privacy-violating aspects](/posts/2020/08/google-fonts-privacy/), I considered the [Google Fonts](https://fonts.google.com) offering to be an effective way for many sites to deliver web fonts, especially in those cases where the site couldn't self-host fonts for whatever reason.
 
 But, due to last week's [announcement that Cloudflare Fonts is coming later this month](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/), it appears there may soon be a *safe* way to use Google Fonts again.
