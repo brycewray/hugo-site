@@ -313,7 +313,9 @@ So, once again, boys and girls, it's code time.[^defaults] I'll present the thre
 		{{- if $.Page.Resources.GetMatch $src -}}
 			{{- $imgRsc := $.Page.Resources.GetMatch $src -}}
 			{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $imgRsc.Width " / " $imgRsc.Height ";" -}}
-			{{- $GIP_colors := $imgRsc.Colors -}}
+		{{- $GIP_img := $src.Process "resize 20x jpg q20" -}}
+		{{- /* ^^ documentation says we get better performance by shrinking first */ -}}
+		{{- $GIP_colors := $GIP_img.Colors -}}
 			{{- if (lt ($GIP_colors | len) 2) -}}
 				{{- $GIP_colors = $GIP_colors | append "#000000" -}}
 			{{- end -}}

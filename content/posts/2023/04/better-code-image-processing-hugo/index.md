@@ -75,7 +75,9 @@ First, the partial for the `head` (called from within my main `head.html` partia
 		{{- $src := . -}}
 		{{- $imgBd5 := md5 .Name -}}
 		{{- $BkgdStyleEnd := print "; background-size: cover; background-repeat: no-repeat; aspect-ratio: " $src.Width " / " $src.Height ";" -}}
-		{{- $GIP_colors := $src.Colors -}}
+		{{- $GIP_img := $src.Process "resize 20x jpg q20" -}}
+		{{- /* ^^ documentation says we get better performance by shrinking first */ -}}
+		{{- $GIP_colors := $GIP_img.Colors -}}
 		{{- if (lt ($GIP_colors | len) 2) -}}
 			{{- $GIP_colors = $GIP_colors | append "#000000" -}}
 		{{- end -}}
