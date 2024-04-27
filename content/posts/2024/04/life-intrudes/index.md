@@ -19,7 +19,7 @@ On Sunday, March 17, 2024, I issued the following post on Mastodon as a way of e
 
 {{< stoot instance="fosstodon.org" id="112112586291878471"  >}}
 
-<!-- 
+<!--
 
 Life has intruded, as it has a tendency to do on short notice. Will be considerably less active online in at least the near future. Will have more to say about it when time and circumstances allow.
 
@@ -28,7 +28,7 @@ Life has intruded, as it has a tendency to do on short notice. Will be considera
 https://fosstodon.org/@BryceWrayTX/112112586291878471
 -->
 
-In this particular case, the intrusion had been an emergency admittance to a local hospital late on Friday, March 15, following weeks of gradually increasing gastrointestinal discomfort. A CT scan revealed that my colon had swollen dramatically --- hence the discomfort --- because it contained a mass roughly five centimeters in size.
+In this particular case, the intrusion had been an emergency admittance to a local hospital late on Friday, March 15, following weeks of gradually increasing gastrointestinal discomfort. A CT scan revealed that my colon had swollen dramatically --- hence the discomfort --- because it contained a mass roughly 5.6 centimeters in size.
 
 The next day, surgery confirmed the suspicions of the multiple colorectal specialists who'd seen the scan: the mass was malignant. I had colon cancer.
 
