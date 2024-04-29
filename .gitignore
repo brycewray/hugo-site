@@ -48,6 +48,7 @@ logstart.sh
 # testbuild*.sh
 # start*.sh
 # push*.sh
+# serve*.sh
 deploy*.sh
 myip.txt
 wm*.sh
