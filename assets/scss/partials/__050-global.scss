@@ -296,7 +296,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 	max-width: var(--containerNarrowerWidth);
 	@media screen and (min-width: 1024px) {
 		--containerNarrowerWidth: 50vw;
-		--bigImgDivExpansionWidth: 20vw;
+		--bigImgDivExpansionWidth: 40vw;
 		--bigImgDivWidth: calc(var(--containerNarrowerWidth) + var(--bigImgDivExpansionWidth));
 		.bigImgDiv:not(li *) {
 			width: var(--bigImgDivWidth);
@@ -305,10 +305,11 @@ audio, canvas, embed, iframe, img, object, svg, video {
 	}
 	@media screen and (min-width: 1536px) {
 		--containerNarrowerWidth: 40vw;
+		--bigImgDivExpansionWidth: 45vw;
 	}
 	@media screen and (min-width: 1920px) {
 		--containerNarrowerWidth: 45rem;
-		--bigImgDivExpansionWidth: 15rem;
+		// --bigImgDivExpansionWidth: 60vw;
 	}
 }
 
