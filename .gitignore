@@ -40,20 +40,21 @@ themes/lcss/assets/css
 
 .hugo_build.lock
 
-start.sh
+# start.sh
 startdebug.sh
 startpf.sh
-start*.sh
-# install*.sh
 logstart.sh
-build*.sh
-testbuild*.sh
-push*.sh
+# build*.sh
+# testbuild*.sh
+# start*.sh
+# push*.sh
+deploy*.sh
 myip.txt
 wm*.sh
 git*.sh
 gitoutput.txt
 move*.sh
+# install*.sh
 
 hugo_site-log.txt
 
