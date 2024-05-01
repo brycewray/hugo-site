@@ -49,7 +49,7 @@ logstart.sh
 # start*.sh
 # push*.sh
 # serve*.sh
-deploy*.sh
+deploy.sh
 myip.txt
 wm*.sh
 git*.sh

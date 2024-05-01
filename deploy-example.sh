@@ -1,0 +1,3 @@
+#!/bin/sh
+# showing how the non-public `deploy.sh` file works...
+npm_config_yes=true npx wrangler pages deploy public --project-name="insert-your-CFP-project-name-here" --commit-dirty=true
