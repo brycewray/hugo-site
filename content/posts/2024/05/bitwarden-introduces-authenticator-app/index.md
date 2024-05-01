@@ -1,6 +1,6 @@
 ---
 title: "Bitwarden introduces its Authenticator app"
-description: "Although Bitwarden Authenticator is extremely limited for now, its pedigree is awfully impressive."
+description: "Although Bitwarden Authenticator is extremely limited for now, its pedigree is awfully impressive."
 author: Bryce Wray
 date: 2024-05-01T14:08:00-05:00
 # draft: true
