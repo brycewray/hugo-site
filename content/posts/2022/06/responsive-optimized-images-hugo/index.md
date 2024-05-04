@@ -105,13 +105,13 @@ Then, the `render-image` template:
 {{- $imgBd5 := md5 $src -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 {{- $holder := "GIP" -}}
+{{- $hint := "photo" -}}
+{{- $filter := "box" -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
 {{- $rscToMatch := print "images/" $src -}}
 
 {{- if .Page.Resources.GetMatch $src -}}
 	{{ with .Page.Resources.GetMatch $src }}
-		{{- $hint := "photo" -}}
-		{{- $filter := "MitchellNetravali" -}}
 		{{- $divClass := print "relative bigImgDiv imgB-" $imgBd5 "-" $holder -}}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
