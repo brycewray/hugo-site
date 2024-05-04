@@ -55,7 +55,7 @@ An image render hook can support only three parameters: the image's file name (`
 \
 As a practical example, I use the shortcode method whenever I want to control whether an image has a shadow, or how large it will appear on a desktop-sized breakpoint (*e.g.*, I don't enlarge phone screenshots, as I do many other images), or various other aspects which simply aren't possible through the three parameters of the render hook method. You can add more of these controls as you wish; what you see in the shortcode are the ones which suit me.
 
-[^originalProb]: This arrangement avoids the problem I created in the original version of this post, wherein this was done in the `body` rather than the `head`. It worked, but wasn't proper HTML.
+[^originalProb]: This arrangement avoids the problem I created in the original version of this post, wherein this was done in the `body` rather than the `head`. It worked, but wasn't proper HTML. I am grateful to two other Hugo users --- [Daniel F. Dickinson](https://www.danielfdickinson.ca/) and someone I know only as [@mesetka on GitHub](https://github.com/mesetka) --- who [pointed me in the right direction](https://github.com/danielfdickinson/image-handling-mod-hugo-dfd/pull/72).
 
 First, the partial for the `head` (as noted above, I call it from within my main `head.html` partial):
 
