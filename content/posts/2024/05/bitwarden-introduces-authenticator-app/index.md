@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-05-01T14:08:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# - 2024-05-01_Bitwarden-Authenticator_screen-cap_1290x2795.png
 ---
 
 Having written [three](/posts/2021/09/taming-time-based-one-time-passwords-totps/) [earlier](/posts/2023/07/from-raivo-otp-to-2fas/) [pieces](/posts/2024/03/ente-auth-for-totps/) about authenticator apps, from which you can obtain the time-based one-time passwords (TOTPs) you'll need to log into various websites and services, I was interested in today's [announcement](https://bitwarden.com/blog/bitwarden-just-launched-a-new-authenticator-app-heres-what-it-means-to-users/) of the new Bitwarden Authenticator app. It's very early in its development cycle and thus currently won't be of much use to many, but it should get a lot better in the near future.

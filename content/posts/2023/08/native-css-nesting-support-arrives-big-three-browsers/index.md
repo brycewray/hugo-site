@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-08-29T15:52:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 This day marks a major milestone in the history of web development. As of today, for the first time ever, all of the Big Three browsers support [native CSS nesting](https://drafts.csswg.org/css-nesting/) right out of the box.

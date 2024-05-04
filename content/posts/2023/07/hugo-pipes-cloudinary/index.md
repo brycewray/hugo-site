@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-07-16T17:19:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- my-pet-cat_3264x2448.jpg
 ---
 
 **Update, 2023-07-18**: While the approach described in this post **does** work, it apparently increases the build time for a Hugo project, especially given the sometimes underpowered servers used by some hosting vendors' free tiers. Therefore, if you adopt it for your own project, you may want to limit your fetching of remote images, thus keeping build times from becoming excessive **or** try the alternative I describe in a [follow-up](/posts/2023/07/hugo-pipes-cloudinary-follow-up/) to this post.\

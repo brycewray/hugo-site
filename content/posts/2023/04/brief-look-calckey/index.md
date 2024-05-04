@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-04-23T11:13:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- Calckey-desktop-2023-04-23-1040CDT-crop_3519x2101.png
 ---
 
 After a self-imposed break from social media (during a recent heavyweight fight with a respiratory bug I caught from a grandkiddo), I've discovered another sector of the [Fediverse](https://joinfediverse.wiki/What_is_the_Fediverse%3F) which may deserve your attention. It's called [Calckey](https://joinfediverse.wiki/What_is_Calckey%3F).

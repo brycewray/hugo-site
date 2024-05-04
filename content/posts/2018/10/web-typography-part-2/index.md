@@ -3,19 +3,6 @@ title: "A stacked deck"
 description: "Part 2 of a two-part series on web typography."
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-imgs:
-- Early-Web-font-grfx-1-2018-10-16_1218x1296.png
-- Sys_font_stack_San_Francisco_684x104.png
-- Sys_font_stack_Segoe_UI_684x104.png
-- Sys_font_stack_Tahoma_684x104.png
-- Sys_font_stack_Roboto_from_GF_684x104.png
-- Sys_font_stack_Ubuntu_from_GF_684x104.png
-- Sys_font_stack_Oxygen_from_GF_684x104.png
-- Sys_font_stack_Cantarell_from_GF_684x104.png
-- Sys_font_stack_Fira_Sans_from_GF_684x104.png
-- Sys_font_stack_Droid_Sans_from_GF_684x104.png
-- Sys_font_stack_Helvetica_Neue_680x104.png
-- Sys_font_stack_Lucida_Grande_680x104.png
 ---
 
 {{% disclaimer %}}

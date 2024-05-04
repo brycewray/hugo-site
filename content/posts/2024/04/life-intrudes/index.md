@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-04-16T04:39:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 My [most recent post](/posts/2024/03/new-advantages-keepass-way/) was over a month ago. I hadn't intended there to be such a gap between that one and this one.

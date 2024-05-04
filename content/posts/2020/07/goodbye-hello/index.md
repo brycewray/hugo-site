@@ -3,10 +3,6 @@ title: "Goodbye and hello"
 description: "Moving from Netlify to Vercel: how this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T17:05:00-05:00
-imgs:
-- Firebase_screen_cap_2516x1438.png
-- Render_screen_cap_2524x1408.png
-- Vercel_screen_cap_2524x1432.png
 ---
 
 {{% disclaimer %}}

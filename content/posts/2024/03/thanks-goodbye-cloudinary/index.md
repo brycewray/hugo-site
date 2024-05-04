@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-03-05T06:50:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 Just for the record, I closed my [Cloudinary](https://cloudinary.com) account today, over three-and-a-half years after [getting started](/posts/2020/07/transformed/) with it. It definitely wasn't because of any shortcomings I'd found in Cloudinary's amazingly generous Free Plan; quite the opposite is true. Instead, my own wonky code had finally pushed that Plan beyond its limits, forcing my hand. The few images I was still serving by Cloudinary are now once again handled entirely locally by [Hugo](https://gohugo.io)'s built-in [image processing](https://gohugo.io/content-management/image-processing/).

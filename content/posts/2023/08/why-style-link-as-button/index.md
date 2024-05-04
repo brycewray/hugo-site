@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-08-16T16:13:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 This is one of those posts where I: (a.) explain that this website had some screwed-up code; (b.) note that I've fixed that code; and (c.) tell you how to make the fix, just in case you have a website with a similar problem. And, in this case, the screwed-up code was not only anti-accessibility but also lousy HTML.

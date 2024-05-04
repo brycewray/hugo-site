@@ -5,9 +5,6 @@ author: Bryce Wray
 date: 2023-08-14T10:25:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- 2023-08-14-BookMacster-reports-verify_2332x1884_72dpi.png
-- 2023-08-14-BookMacster-sync-simple_2496x1448_72dpi.png
 ---
 
 Web developers test, or *should* test, their work in at least the three major browsers: Chrome, Safari, and Firefox. Ideally, each browser will provide sufficiently equal functionality that going from one to the other doesn't feel like a giant drop-off. One major complication to that "ideally" stuff is trying to synchronize bookmarks among all three browsers. By default, that isn't possible. The good thing is that, at least on macOS, there is a way. It's not free but, so far in my free trial of it, it seems *really* good.

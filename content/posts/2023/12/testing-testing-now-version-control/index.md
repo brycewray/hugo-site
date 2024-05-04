@@ -5,11 +5,9 @@ author: Bryce Wray
 date: 2023-12-11T10:43:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
-**Update, 2023-12-27**: The project described herein has now concluded. Please see "[Testing, testing: ending a fool's errand](/posts/2023/12/testing-testing-ending-fools-errand/)," for an explanation. 
+**Update, 2023-12-27**: The project described herein has now concluded. Please see "[Testing, testing: ending a fool's errand](/posts/2023/12/testing-testing-ending-fools-errand/)," for an explanation.
 {.box}
 
 My recent spate of browser-hopping while trying to base each such choice on The Data™ has, of course, required *gathering* data. And, because the world of browsers involves frequent changes, that's become an ongoing task. So I decided to version-control it **and** put the results out there for all to see.

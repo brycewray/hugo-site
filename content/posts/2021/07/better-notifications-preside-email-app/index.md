@@ -3,8 +3,6 @@ title: "Better notifications in the Preside email app"
 description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices."
 author: Bryce Wray
 date: 2021-07-03T16:20:00-05:00
-imgs:
-- screen-shot-Preside-notification_crop_2250x636.jpg
 ---
 
 This is for all you power users who wield both the [MailMate](https://freron.com) Mac email app and [Preside](https://www.preside.io) iOS email app.

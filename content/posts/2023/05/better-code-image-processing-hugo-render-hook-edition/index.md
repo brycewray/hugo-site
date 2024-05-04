@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-05-04T12:07:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- my-pet-cat_3264x2448.jpg
 ---
 
 **Update from the future**: I later made considerable changes to the methods described in this post. I will leave it here for archival purposes, but suggest that you ignore its code blocks and, instead, refer to my [original post](/posts/2022/06/responsive-optimized-images-hugo/) about Hugo's image processing capabilities, a post which I have overhauled based on what I learned later (including beyond this post, as well).

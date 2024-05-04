@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-08-24T17:22:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- 2023-08-24-0953CDT_neofetch_Arch_iMac_1528x814.png
 ---
 
 In "[New life for the old Mac with Linux](/posts/2023/08/new-life-old-mac-linux/)," I told how a Linux installation had enabled me to repurpose my [recently cast-aside](/posts/2023/07/making-good-move/) 2017 iMac for things like playing games on [Steam](https://store.steampowered.com/). The Linux distribution on which I'd settled was [Fedora](https://fedoraproject.org), chiefly because it was the first distro I managed to adapt successfully to handle the iMac's sound system.

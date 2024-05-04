@@ -4,8 +4,6 @@ description: "I changed my position on a developers’ Holy War — because it
 author: Bryce Wray
 date: 2022-06-30T12:02:00-05:00
 #initTextEditor: iA Writer
-imgs:
-- orig-site_screen-cap_1518x1356.png
 ---
 
 When I was starting this site in September, 2018, its ["About" page](/about/) looked like this:

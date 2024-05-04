@@ -3,9 +3,6 @@ title: "A normal person’s guide to static websites"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
 date: 2020-09-22T16:35:00-05:00
-imgs:
-- diagram--dynamic-site_Inter_1600x900.png
-- diagram--static-site_Inter_1600x900.png
 ---
 
 Websites are for everybody, not just geeks such as your faithful correspondent, here. That's why this article is aimed at a **normal** person like you --- a **non**-techie, **non**-geek --- who's interested in getting a website of your own, or in improving one you already have, but just don't know how to proceed.

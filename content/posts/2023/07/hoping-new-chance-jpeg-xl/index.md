@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-07-22T09:30:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 One of the many cool things about using [Cloudinary](https://cloudinary.com) to host and process website images is its [`f_auto` capability](https://cloudinary.com/documentation/image_optimization#automatic_format_selection_f_auto), which auto-selects the most appropriate image format for each browser. And a recent Cloudinary [blog post](https://cloudinary.com/blog/jpeg-xl-how-it-started-how-its-going) has revealed that `f_auto` will soon get even smarter.

@@ -3,10 +3,6 @@ title: "Welcome, sweet little early bird"
 description: "The new grandchild arrives, and on her own timeline."
 author: Bryce Wray
 date: 2020-03-10T09:50:00-05:00
-imgs:
-- Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg
-- BW-holding-Kennedy-first-night__crop_1008x712.jpg
-- Kennedy-goes-home__crop_1008x1021.jpg
 ---
 
 This'll be short. It's just an update on some good news I'd previously mentioned.

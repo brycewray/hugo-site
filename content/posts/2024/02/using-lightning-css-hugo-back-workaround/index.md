@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-02-18T13:14:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 [First](/posts/2024/01/using-lightning-css-hugo/), I added [Lightning CSS](https://lightningcss.dev) to my [Hugo](https://gohugo.io) site through a [plugin](https://github.com/onigoetz/postcss-lightningcss) for [PostCSS](https://postcss.org). [Then](/posts/2024/02/using-lightning-css-hugo-without-workarounds/), I opted for using a strictly CLI-based approach. [Most recently](/posts/2024/02/purgecss-joins-my-new-styling-stack/), I added [PurgeCSS](https://purgecss.com) to the resulting CLI-powered styling stack.
@@ -118,15 +116,15 @@ Well, I guess it was **too** early. A few hours after I initially issued this po
 {{- end }}
 
 {{/*
-	This is for a site-wide `index.css` which 
+	This is for a site-wide `index.css` which
 	the site uses with **unscoped** CSS.
 	For each CSS file used in unscoped mode,
 	I appended `-u` to the filename (e.g., `home-u.css`)
 	so the `resources.Match` statement would avoid
 	the few files intended only for **scoped** mode.
-	In this case, the alphabetical order of 
-	concatenation is not only irrelevant 
-	but also, as it turns out, the same as 
+	In this case, the alphabetical order of
+	concatenation is not only irrelevant
+	but also, as it turns out, the same as
 	I'd practiced when using `@import` to
 	combine the files together, anyway.
 */}}

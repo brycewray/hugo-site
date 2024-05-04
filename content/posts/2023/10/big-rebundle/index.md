@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-10-06T12:08:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 I'll cut to the chase: after an [admittedly rash decision](/posts/2023/07/big-unbundle/) of a few months ago, I've reverted to an [earlier choice](/posts/2022/07/bundling-up-rebuilding-my-hugo-site) in favor of using [page bundles](https://gohugo.io/content-management/page-bundles/) for managing this [Hugo](https://gohugo.io)-based website.
@@ -56,15 +54,15 @@ for file in $(find . -name "*.md"); do
 
 	# Get the directory containing the file
 	dir=$(dirname "$file")
-	
+
 	# Get the filename without the .md extension
 	filename=$(basename "$file" .md)
-	
+
 	# Create a subfolder with the same name as the file, if it doesn't exist yet
 	if [ ! -d "$dir/$filename" ]; then
 		mkdir "$dir/$filename"
 	fi
-	
+
 	# Move the .md file to the subfolder and rename it "index.md"
 	mv "$file" "$dir/$filename/index.md"
 done

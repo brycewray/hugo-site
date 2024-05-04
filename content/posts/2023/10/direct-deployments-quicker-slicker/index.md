@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-10-15T14:14:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 

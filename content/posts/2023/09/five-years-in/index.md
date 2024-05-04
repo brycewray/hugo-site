@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-09-23T09:05:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 Five years ago, things were sufficiently different in the social media world that I could still view, much less use, Twitter without wanting to bleach my brain thereafter. And, thus, five years ago today, I tweeted that I had just created something for the web-browsing public's perusal.

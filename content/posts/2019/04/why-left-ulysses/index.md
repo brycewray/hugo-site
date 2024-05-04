@@ -3,10 +3,6 @@ title: "Why I left Ulysses"
 description: "Just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
-imgs:
-- Ulysses_export_to_Markdown_750x528.png
-- iCloud_sync-save_icon_in_Ulysses_1902x795.png
-- iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png
 oldComments: |
     <div class="container-oldComments">
       <p class="commentDisclaimer">

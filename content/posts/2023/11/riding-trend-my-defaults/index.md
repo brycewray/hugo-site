@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-11-07T19:56:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 [Episode 97 of the *Hemispheric Views* podcast](https://listen.hemisphericviews.com/097), "Duel of the Defaults," has spurred a growing number of bloggers to [write about](https://defaults.rknight.me/) their chosen default apps and services. Having seen entries from several of my own favorite bloggers, I thought I'd join in.

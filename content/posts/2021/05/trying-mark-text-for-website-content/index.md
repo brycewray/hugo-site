@@ -3,9 +3,6 @@ title: "Trying Mark Text for website content"
 description: "A free, cross-platform text editor for (maybe) managing your site’s content."
 author: Bryce Wray
 date: 2021-05-07T16:30:00-05:00
-imgs:
-- Mark-Text_screen-cap_reg-mode-dark_1568x1090.png
-- Mark-Text_screen-cap_SC-mode-dark_1568x1210.png
 ---
 
 If you're going to have a website which, like this one, is powered by a [static site generator](https://github.com/myles/awesome-static-generators), you'll likely be editing its textual content in an editor app that saves files in the [Markdown](https://daringfireball.net/projects/markdown) plain-text format --- the many merits of which I long ago [celebrated](/posts/2019/03/mark-it-down/).

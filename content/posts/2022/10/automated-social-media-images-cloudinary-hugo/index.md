@@ -5,11 +5,6 @@ author: Bryce Wray
 date: 2022-10-15T10:43:00-05:00
 #draft: true
 #initTextEditor: iA Writer # default --- change if needed
-imgs:
-- Twitter_CloudCannon_1534248828559400960_1774x1838.png
-- social-OG-w-BW-logo_1024x512.jpg
-- 2022-10-15_example-cloudinary-soc-img_1280x669.jpg
-- typewriter-monochrome_2242164_6260x4374.jpg
 ---
 
 <strong class="red">Update, 2024-03-05</strong>: See also "[Thanks and goodbye, Cloudinary](/posts/2024/03/thanks-goodbye-cloudinary/)."

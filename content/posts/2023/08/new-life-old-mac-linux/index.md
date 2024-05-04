@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-08-19T16:22:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- 2023-08-19-1531CDT_Spyro-Fedora_1920x1118.png
 ---
 
 Although I thoroughly enjoy [my new Mac setup](/posts/2023/07/making-good-move/), I've continued to wonder about the computer it replaced. Specifically, I've pondered how to get Linux running satisfactorily on my mid-2017 iMac and, perhaps, still wring some good times out of its impressive hardware. The initial attempts didn't go well.

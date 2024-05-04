@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-07-25T15:09:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 It isn't often I can say that either a blog post or a YouTube video made my day. But that's precisely what happened this morning, when I learned to my pleasant surprise that the good folks at [CloudCannon](https://cloudcannon.com) had righted a troubling wrong in the world of static site generators (SSGs).

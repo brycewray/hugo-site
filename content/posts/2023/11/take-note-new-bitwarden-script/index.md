@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-11-10T06:20:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 This one's a quickie, repeating something I posted on social media a short time ago. [Bitwarden](https://bitwarden.com) has changed its browser extension in a way which affects how you might measure a web page's size. Since that's something that web devs typically do to make sure their sites load as well as possible, I thought this information was worth passing along.

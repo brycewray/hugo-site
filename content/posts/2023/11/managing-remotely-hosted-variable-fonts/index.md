@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-11-16T10:56:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 <strong class="red">Update, 2024-04-21</strong>: Due to a variety of factors, I recommend that you **not** use the Cloudflare Fonts product described herein.

@@ -3,8 +3,6 @@ title: "Gems in the rough #7"
 description: "Static site generator fans, here’s another (sorta) brief set of goodies for your edification."
 author: Bryce Wray
 date: 2021-07-17T14:23:00-05:00
-imgs:
-- 2021-07-17_StatCounter-browser-mkt-shr_June-2021_1872x576.png
 ---
 
 Each entry in the "Gems in the rough" series is a collection of tips, explanations, and/or idle observations which I hope will be at least somewhat useful to those of you with websites built by [static site generators (SSGs)](https://github.com/myles/awesome-static-generators).

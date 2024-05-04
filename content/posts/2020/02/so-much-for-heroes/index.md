@@ -3,8 +3,6 @@ title: "So much for heroes"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-imgs:
-- 2020-01-31--curmudgeonishish-2019_2700x1532.png
 ---
 
 {{% disclaimer %}}

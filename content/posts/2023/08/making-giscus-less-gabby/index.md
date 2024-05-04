@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-08-07T08:56:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 **Update, 2024-02-15**: Now that the site has [a switch for auto mode as well as light and dark modes](/posts/2024/01/its-tri-state-switch-time/), I've provided [an update](#update-2024-01-25) to this post's featured code. I've also separated the JavaScript from the Hugo templating in both the pre-switch and post-switch code, which should make it easier for non-Hugo users who may want to use something like what I'll describe below.

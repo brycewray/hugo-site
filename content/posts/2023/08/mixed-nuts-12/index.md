@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-08-05T10:38:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- TP-Link-Archer-300-router-crop-2023-07-29_2403x1905.jpg
 ---
 
 It's been nearly a year since the [most recent entry](/posts/2022/08/mixed-nuts-11/) in this kinda-sorta-series of posts that cover multiple subjects, some nerdy and some not. That's not why I'm issuing this one. Instead, my teeny little kernel of a mind has been tossing around thoughts on a few somewhat divergent topics, and I decided to air some of those thoughts. As one does.

@@ -3,8 +3,6 @@ title: "Freeing your folders"
 description: "How Mac users can remove items from iCloud Drive without seemingly interminable downloads."
 author: Bryce Wray
 date: 2020-08-16T14:35:00-05:00
-imgs:
-- iCloud-Drive-Desktop-Documents_1336x990.png
 ---
 
 **Update, 2023-10-01**: If you make (or have already made) the settings changes described in this post **prior to** upgrading to macOS Sonoma (macOS 14.x), be aware of [a change in how macOS subsequently handles your iCloud Drive files](https://eclecticlight.co/2023/09/29/do-you-use-icloud-drive-are-you-intending-to-upgrade-to-sonoma/).

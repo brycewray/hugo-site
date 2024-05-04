@@ -5,9 +5,6 @@ author: Bryce Wray
 date: 2023-07-18T16:08:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- iA-Writer_recents-menu-all-index_2962x1240.png
-- iA-Writer_dock-menu-all-index_1288x2624.png
 ---
 
 {{% disclaimer %}}

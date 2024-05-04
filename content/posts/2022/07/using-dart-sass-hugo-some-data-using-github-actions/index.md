@@ -4,9 +4,6 @@ description: "After encountering some surprising results with my GHA-based me
 author: Bryce Wray
 date: 2022-07-05T09:33:00-05:00
 #initTextEditor: iA Writer
-imgs:
-- Pre-imgh_pubs_CFP-Vercel-GHAs-comparison_1800x1200.png
-- Post-imgh_pubs_CFP-Vercel-GHAs-comparison_1800x1200.png
 ---
 
 <span class="red">**Cutting to the chase . . .**</span>

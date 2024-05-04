@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-07-31T08:46:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- 2FAS_screen_cap_edited_1290x2796.png
 ---
 
 In 2021, I wrote several posts about how to practice good management of your various passwords. [One of those posts](/posts/2021/09/taming-time-based-one-time-passwords-totps/) dealt specifically with the handling of time-based one-time passwords (TOTPs) and, in it, I recommended the [Raivo OTP](https://github.com/raivo-otp/ios-application) app for iOS users.

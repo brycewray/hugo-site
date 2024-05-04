@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-01-26T11:00:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 Imagine this. Somebody blindfolds you and shoves you up against what feels like a kitchen countertop. Then he jams a pistol against your ribs and growls: "Within your reach are a loaf of bread, some cooked ham, a block of cheese, and a *very* sharp knife.

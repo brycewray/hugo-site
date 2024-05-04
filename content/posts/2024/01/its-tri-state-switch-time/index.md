@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-01-22T15:09:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 **Update, 2024-01-25**: After making the change described herein, I realized I'd also need to revisit the code in [last August's post](/posts/2023/08/making-giscus-less-gabby/) about how the site works with [giscus](https://giscus.app).

@@ -3,8 +3,6 @@ title: "Down with flabby fonts"
 description: "How to subset large web font files to improve your site’s performance."
 author: Bryce Wray
 date: 2021-08-08T14:00:00-05:00
-imgs:
-- 2021-09-01_screen-cap_Inter_2164x698.png
 ---
 
 {{% disclaimer %}}

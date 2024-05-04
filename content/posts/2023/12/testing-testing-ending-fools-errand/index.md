@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-12-27T09:09:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 I rise from my metaphorical sickbed (actually, just the same office chair as usual but with my sick self propped in it) to note the shuttering of the browser-testing process I [publicized](/posts/2023/12/testing-testing-now-version-control/) here recently. In short, I realized it wasn't such a hot idea, after all.

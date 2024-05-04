@@ -3,13 +3,6 @@ title: "Good stuff without Google"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-09T20:05:00-05:00
-imgs:
-- google-webfonts-helper_2516x1134.png
-- Public_Sans_selected_family_1024x1248.png
-- Public_Sans_Embed_1060x1798.png
-- Public_Sans_URL_to_copy_1066x630.png
-- Public_Sans_URL_pasted_into_browser_1588x74.png
-- Public_Sans_folder_1502x672.png
 ---
 
 Early in this site's history, I issued a post in [two](/posts/2018/10/web-typography-part-1/) [parts](/posts/2018/10/web-typography-part-2/) about web typography, a subject near and dear to my geeky heart. In the second part, I gave the reasons for styling your website with the so-called "system fonts stack" --- a set of fonts of which at least one is almost certain to be native on a current device, thus assuring faster rendering of your site's textual content than if you force it to download other fonts.

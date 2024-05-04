@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-09-12T10:20:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 The common wisdom about installing [Arch Linux](https://archlinux.org) is that the best-practices approach is to follow the [Arch wiki](https://wiki.archlinux.org)'s [Installation Guide](https://wiki.archlinux.org/title/Installation_Guide). And, as [previously explained](/posts/2023/08/distro-dancing-amid-some-linux-drama/#update-2023-09-05), I more-or-less agree with that --- **except** that the Guide doesn't include a word, even a related link, about one method that makes the process **far** easier: [SSH](https://www.ssh.com/academy/ssh).

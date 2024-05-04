@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2022-09-17T22:58:00-05:00
 #draft: true
 #initTextEditor: iA Writer
-imgs:
-- GTmetrix-waterfall-2022-09-17-0725CDT_1314x428.png
 ---
 
 **Note**: Please see the **Updates** at the end.

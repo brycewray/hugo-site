@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-10-23T13:34:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 My curious mind leads me into some pretty deep rabbit holes on occasion, especially where web development is concerned. The particular web dev warrens I've explored this month have ranged from browser performance to the capabilities of [Cloudflare Fonts](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/).

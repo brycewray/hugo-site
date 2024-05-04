@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-02-13T11:10:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 I've continued to enjoy the speed and power of [Lightning CSS](https://lightningcss.dev) on this [Hugo](https://gohugo.io)-powered site, but there's one thing Lightning CSS can't do on its own: it can't de-bloat my CSS. In fact, it actually *contributes* to the bloat, [by design](https://lightningcss.dev/transpilation.html), to make the styling work on older, otherwise incompatible browsers.

@@ -3,9 +3,6 @@ title: "Two paths to password management"
 description: "Ways to practice superior cybersecurity."
 author: Bryce Wray
 date: 2021-06-15T16:30:00-05:00
-imgs:
-- keepassxc_unlock_db_2066x1532.png
-- bitwarden-com_screen-cap_2021-06-09_3164x1420.png
 ---
 
 In my [most recent "Mixed nuts" post](/posts/2021/06/mixed-nuts-2021-06/), I touched briefly on the subject of [password management software](https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started/).

@@ -3,8 +3,6 @@ title: "Mixed nuts • July, 2020"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."
 author: Bryce Wray
 date: 2020-07-09T16:40:00-05:00
-imgs:
-- 2020-06-23_Kennedy-Beck_and_John-the-dog_3200x2400.jpg
 ---
 
 It's true that it hasn't been all that long since the [most recent](/posts/2020/05/mixed-nuts-2020-05/) edition of "Mixed Nuts," but you're here reading and I'm here tossing off drivel --- and, well, that's a quorum, right?

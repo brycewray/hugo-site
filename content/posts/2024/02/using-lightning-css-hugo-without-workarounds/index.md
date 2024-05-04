@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-02-02T10:12:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 **Update, 2024-02-04**: This post now contains additional explanatory details along with slightly updated (and, perhaps, improved) code.

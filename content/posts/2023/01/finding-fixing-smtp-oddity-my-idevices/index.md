@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-01-06T10:04:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-imgs:
-- Screen-shot_2023-01-06_SMTP-setting-iOS_1125x2436.png
 ---
 
 The other day, when I [reverted the hosting of my custom-domains email](/posts/2023/01/back-to-fastmail-redux/) from [iCloud+](https://support.apple.com/guide/icloud/icloud-overview-mmfc854d9604/icloud) to [Fastmail](https://fastmail.com), I was pleased by how smoothly the transition had gone on the three Apple devices where I access email: a Mac, an iPhone, and an iPad. However, the next morning, I encountered a particularly maddening problem that I hadn't previously noticed.

@@ -3,8 +3,6 @@ title: "Independence"
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
-imgs:
-- 1984-07-11_01_retouched_1280x720.jpg
 ---
 
 This most recent Fourth of July was the 243rd anniversary of the *signing* of the Declaration of Independence --- not the actual small-d declaration itself, which actually was [two days earlier](https://www.archives.gov/press/press-releases/2005/nr05-83.html), as all we American history nerds know.

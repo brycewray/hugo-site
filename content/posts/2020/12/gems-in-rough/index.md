@@ -3,9 +3,6 @@ title: "Gems in the rough"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
 date: 2020-12-21T12:10:00-06:00
-imgs:
-- index-njk_in_Nova_3202x2022.png
-- 2021-09-01_screen-cap_Inter_2164x698.png
 ---
 
 {{% disclaimer %}}

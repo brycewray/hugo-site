@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-02-24T21:18:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 What follows is a case of, as the web puts it, "TIL" --- **T**oday **I** **L**earned --- concerning [PostCSS Preset Env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) and [Browserslist](https://github.com/browserslist/browserslist). Since I'd searched fruitlessly for the information before finally just putting the question out there for the PostCSS Preset Env folks to answer, it may well be something others have wanted to know, as well.

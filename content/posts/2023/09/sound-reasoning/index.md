@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-09-30T08:31:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 There are memes, and then there are nerdy memes. For example, "Safari seems snappier" typically is one of the early forum responses whenever an Apple OS update occurs. Another, which developers love to swap concerning software bugs (although it probably isn't viewed as kindly by *non*-devs), is "Well, it works on *my* machine."

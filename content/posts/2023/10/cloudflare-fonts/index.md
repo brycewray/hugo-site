@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-10-02T10:08:00-05:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 <strong class="red">Update, 2024-04-21</strong>: Due to a variety of factors, I recommend that you **not** use the Cloudflare Fonts product described herein. (Remember that [you **don't** want to use Google Fonts as served by Google](/posts/2020/08/google-fonts-privacy/). Instead, [host them **locally**](/posts/2020/08/good-stuff-without-google/).)

@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2023-11-26T16:29:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 Ever since [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) became a thing back in the 2010s, users of [Sass](https://sass-lang.com) have wondered how much of a fill-in they could be for [Sass variables](https://sass-lang.com/documentation/variables/). While you certainly can opt to use only one of these styling variable types, your best bet likely is a wise combination of both. That's especially true if you're building your website the smart way, by using a Sass-savvy static site generator (SSG).
@@ -46,7 +44,7 @@ html, body {
 }
 
 // ... the value of which changes
-// conditionally (based on the 
+// conditionally (based on the
 // user-selected `data-theme`)
 // to the appropriate one of
 // the Sass variable values.

@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-01-18T13:33:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 Web developers have been ooh-ing and aah-ing for a while now over [Lightning CSS](https://lightningcss.dev/), and well they should. It promises *and delivers* amazingly fast and comprehensive processing of CSS, making poor old [PostCSS](https://postcss.org) look like a comparative piker. In fact, Lightning's stellar performance is even getting it [baked into an upcoming release of Tailwind CSS](https://tailwindcss.com/blog/2023-07-18-tailwind-connect-2023-recap).

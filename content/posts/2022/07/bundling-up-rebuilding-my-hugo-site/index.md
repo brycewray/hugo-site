@@ -4,9 +4,6 @@ description: "O ye new users, run as fast as you can — away from the way I 
 author: Bryce Wray
 date: 2022-07-23T16:53:00-05:00
 #initTextEditor: iA Writer
-imgs:
-- tweet-1549447287625207809-from-2022-07-19-1233CDT_1190x1494.png
-- 2022-07-23-sample-title-with-gradient_1024x512.jpg
 ---
 
 You can think of this as hard-won wisdom.

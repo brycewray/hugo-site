@@ -5,8 +5,6 @@ author: Bryce Wray
 date: 2024-01-07T10:11:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
-# imgs:
-# -
 ---
 
 Time again for [another](/posts/2023/08/mixed-nuts-12/) "Mixed nuts" post, in which I provide some [scattered](/posts/2019/11/mixed-nuts-2019-11/) ruminations from recent days. I've already shared some of these on social media, while others are making their world premieres here to absolutely no fanfare whatsoever, and deservedly so.
