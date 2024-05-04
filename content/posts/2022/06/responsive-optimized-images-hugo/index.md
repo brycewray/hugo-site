@@ -2,7 +2,8 @@
 title: "Responsive and optimized images with Hugo"
 description: "How to take advantage of the amazingly capable image processing built into this SSG."
 author: Bryce Wray
-date: 2022-06-29T08:17:02-05:00
+date: 2022-06-29T08:17:00-05:00
+## majorupdate: 2024-05-04T09:43:00-05:00
 #initTextEditor: iA Writer
 ---
 
@@ -20,7 +21,7 @@ Years ago, the availability of Hugo image processing was more restrictive concer
 
 For truly responsive images, you must define the *breakpoints*. These are viewport sizes, usually defined in pixels, for the browser to use in deciding *which* image to serve. Some articles you'll find out there --- as in the [references](#references) I'll list at the end --- take a more hard-coded approach to the breakpoints than I feel is necessary or appropriate. This probably is because of the sample code from older articles of this type, in which it's common to assign a variable to each of several breakpoints (*e.g.*, `$tiny` for a 500-pixel breakpoint, `$medium` for an 800-pixel one, *etc.*). Yes, you can do that and it'll work, but I suggest another method which I'll describe in a bit.
 
-Still other articles make admittedly effective use of Hugo's [Markdown render hooks](https://gohugo.io/templates/render-hooks/) to change any standard `![Alt text](image.jpg)`-style Markdown to responsive/optimized images. In some cases, I prefer to take a *[shortcode](https://gohugo.io/content-management/shortcodes/)* approach, for the added control it offers through optional parameters you can specify.[^hooksredux] That said, there definitely also is merit in using the render hook approach in situations where you *don't* need access to quite so many of those optional parameters, so I will be walking you through code for both the shortcode approach and the render hook approach.
+Still other articles make admittedly effective use of Hugo's [Markdown render hooks](https://gohugo.io/templates/render-hooks/) to change any standard `![Alt text](image.jpg)`-style Markdown to responsive/optimized images. In some cases, I prefer to take a *[shortcode](https://gohugo.io/content-management/shortcodes/)* approach, for the added control it offers through optional parameters you can specify. That said, there definitely also is merit in using the render hook approach in situations where you *don't* need access to quite so many of those optional parameters, so I will show you code for both approaches.
 
 So now, let's move on with this post and the code it suggests for using Hugo to produce responsive, optimized images.
 
@@ -30,11 +31,9 @@ Here's what I built the code to do, based on how I'd used a [Cloudinary](https:/
 
 - Let you use *either* the render hook approach *or* the shortcode approach, as is best for each image type and its placement. Later, I'll get into the factors on which you might make that choice.
 - Rather than hard-coding breakpoint sizes into variables and then generating resized images based on those, just loop through a "slice" (array) and pull the breakpoints from them. This makes it easier to adjust the breakpoints when desired. It also produces more elegant code, IMHO.
-- Provide the commonly seen "blur-up" effect while the full image loads. We do this by generating two types of *image placeholders*, each of which will have its place in what we'll do later.\
-
-One type is a tiny *low-quality image placeholder* (LQIP), which we encode as [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64) and magnify sufficiently to serve as the image div's background.\
-\
-The other type is a *gradient image placeholder* (GIP), which --- as the name implies --- is a placeholder that is simply a gradient of a few colors from the original image.[^GIPcolors]
+- Provide the commonly seen "blur-up" effect while the full image loads. We do this by generating two types of *image placeholders*, each of which will have its place in what we'll do later:
+  - One type is a tiny *low-quality image placeholder* (LQIP), which we encode as [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64) and magnify sufficiently to serve as the image div's background.
+  - The other type is a *gradient image placeholder* (GIP), which --- as the name implies --- is a placeholder that is simply a gradient of a few colors from the original image.[^GIPcolors]
 - Use the `picture` element to offer choices of WebP and JPG image file formats, giving browsers a choice between two storage-efficient versions of each generated image.[^CloudAuto]
 - For other optimization, depend on Hugo's default settings, although it does have [quite a few other options](https://gohugo.io/content-management/image-processing/#imaging-configuration).
 
@@ -47,8 +46,14 @@ The other type is a *gradient image placeholder* (GIP), which --- as the name im
 What follows will be three distinct code blocks for accomplishing all of the above:
 
 - The first, `head-imgs-css.html` is a partial template for the `head`. Within my site, I call it from within the main `head.html` template. It looks up images within the page bundle and, for each, creates both an LQIP and a GIP.[^originalProb]
-- The second is the code for the render hook. It **must** be called `render-image.html` and placed in the appropriate location as explained in the [documentation](https://gohugo.io/templates/render-hooks/). To make it work throughout the site, put it in `layouts/_default/_markup/`. An image render hook can support only three parameters: the image's file name (`$src`), the image's alt text (`$alt`), and an (optional) *title* parameter which, in my case, I mix with certain CSS to provide a caption for the image where appropriate. You can adapt the code to use the title parameter as you prefer, but I thought making it a caption was pretty handy. (By the way, because the render hook has no additional parameters, I set it to use the GIP; if you prefer using an LQIP, you can set that instead in the render hook's `$holder` variable.)
-- The third is a shortcode, `img.html`, which (obviously) makes use of the shortcode approach to perform image processing. You would use this in situations where you have to specify more parameters than the render hook can offer. Remember what I said above about Hugo's long list of options for image processing. As a practical example, I use the shortcode method whenever I want to control whether an image has a shadow, or how large it will appear on a desktop-sized breakpoint (*e.g.*, I don't enlarge phone screenshots, as I do many other images), or various other aspects which simply aren't possible through the three parameters of the render hook method. You can add more of these controls as you wish; what you see in the shortcode are the ones which suit me.
+- The second is the code for the render hook. It **must** be called `render-image.html` and placed in the appropriate location as explained in the [documentation](https://gohugo.io/templates/render-hooks/). To make it work throughout the site, put it in `layouts/_default/_markup/`.\
+\
+An image render hook can support only three parameters: the image's file name (`$src`), the image's alt text (`$alt`), and an (optional) *title* parameter which, in my case, I mix with certain CSS to provide a caption for the image where appropriate. You can adapt the code to use the title parameter as you prefer, but I thought making it a caption was pretty handy.\
+\
+(By the way, because the render hook has no additional parameters, I set it to use the GIP; if you prefer using an LQIP, you can set that instead in the render hook's `$holder` variable.)
+- The third is a shortcode, `img.html`, which (obviously) makes use of the shortcode approach to perform image processing. You would use this in situations where you have to specify more parameters than the render hook can offer. Remember what I said above about Hugo's long list of options for image processing.\
+\
+As a practical example, I use the shortcode method whenever I want to control whether an image has a shadow, or how large it will appear on a desktop-sized breakpoint (*e.g.*, I don't enlarge phone screenshots, as I do many other images), or various other aspects which simply aren't possible through the three parameters of the render hook method. You can add more of these controls as you wish; what you see in the shortcode are the ones which suit me.
 
 [^originalProb]: This arrangement avoids the problem I created in the original version of this post, wherein this was done in the `body` rather than the `head`. It worked, but wasn't proper HTML.
 
@@ -135,7 +140,7 @@ Then, the `render-image` template:
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable.</em></p>
 {{- end -}}
-{{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
+{{- with $caption -}}<p class="imgCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
 ```
 
 And finally, the image-processing shortcode[^defaults] that handles both GIPs (the default here) and LQIPs, through the use of a `$holder` variable which specifies the `div`'s background type:
@@ -221,7 +226,7 @@ And finally, the image-processing shortcode[^defaults] that handles both GIPs (t
 To invoke the render hook in Markdown, use it as shown[^commentsGo] (here, I'm using the optional title parameter to provide a caption):
 
 ```md{bigdiv=true}
-![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here's our cat, Shakespeare, sitting on a window sill.\
+![Here's our cat, Shakespeare, sitting on a window sill.\
 This photo appears in multiple images-related posts here on [this website](/).")
 ```
 
@@ -230,10 +235,12 @@ This photo appears in multiple images-related posts here on [this website](/).
 To invoke the `img.html` shortcode in Markdown, use it like so[^commentsGo], although you'll note I haven't used nearly all the available parameters in this case:
 
 ```md{bigdiv=true}
-{{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="GIP" */>}}
+{{</* img src="my-pet-cat_3264x2448.jpg" alt="Here's our cat, Shakespeare, sitting on a window sill." holder="GIP" */>}}
+<p class="photoCaption">Here's our cat, Shakespeare, sitting on a window sill.<br />
+This photo appears in multiple images-related posts here on <a href="/">this website</a>.</p>
 ```
 
-Either produces the same result (render hook version shown, so you can see the caption):
+Either produces the same result (render hook version shown so you can see the caption, for which I had to add a suitably styled paragraph with the shortcode):
 
 ![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here's our cat, Shakespeare, sitting on a window sill.\
 This photo appears in multiple images-related posts here on [this website](/).")
@@ -247,7 +254,7 @@ This photo appears in multiple images-related posts here on [this website](/).
 		<source type="image/jpeg" srcset="/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_320x0_resize_q75_box.jpg 320w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_box.jpg 640w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_960x0_resize_q75_box.jpg 960w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1280x0_resize_q75_box.jpg 1280w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1600x0_resize_q75_box.jpg 1600w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1920x0_resize_q75_box.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw"><img class="w-full h-auto shadow animate-fade" src="/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_box.jpg" width="3264" height="2448" alt="Photo of a cat named Shakespeare sitting on a window sill" title="Photo of a cat named Shakespeare sitting on a window sill" loading="lazy" data-pagefind-ignore="">
 	</picture>
 </div>
-<p class="imghCaption">
+<p class="imgCaption">
 	Here’s our cat, Shakespeare, sitting on a window&nbsp;sill.<br>This&nbsp;photo appears in multiple images-related posts here on <a href="/">this&nbsp;website</a>.
 </p>
 ```
