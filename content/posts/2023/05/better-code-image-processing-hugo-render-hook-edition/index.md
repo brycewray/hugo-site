@@ -9,6 +9,9 @@ imgs:
 - my-pet-cat_3264x2448.jpg
 ---
 
+**Update from the future**: I later made considerable changes to the methods described in this post. I will leave it here for archival purposes, but suggest that you ignore its code blocks and, instead, refer to my [original post](/posts/2022/06/responsive-optimized-images-hugo/) about Hugo's image processing capabilities, a post which I have overhauled based on what I learned later (including beyond this post, as well).
+{.box}
+
 It's understandable that a reader of my various posts about image processing in [Hugo](https://gohugo.io), including the [most recent](/posts/2023/04/better-code-image-processing-hugo), might get the idea that the only way to bring processed images into a Hugo content file is to use a [shortcode](https://gohugo.io/templates/shortcode-templates/). Fortunately, that definitely is *not* the case, thanks to Hugo's *[Markdown render hooks](https://gohugo.io/templates/render-hooks/)*.
 
 <!--more-->

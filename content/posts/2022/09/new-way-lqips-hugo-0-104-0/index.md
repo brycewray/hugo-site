@@ -9,7 +9,7 @@ imgs:
 - my-pet-cat_3264x2448.jpg
 ---
 
-**Update from the future**: I later made considerable changes to the methods described in this post. So that you'll have a fuller perspective, I suggest you read everything *except* the code here, and only **then** go to [my post about *why* I made the changes](/posts/2023/04/better-code-image-processing-hugo/), where superior code awaits.
+**Update from the future**: I later made considerable changes to the methods described in this post. I will leave it here for archival purposes, but suggest that you ignore its code blocks and, instead, refer to my [original post](/posts/2022/06/responsive-optimized-images-hugo/) about Hugo's image processing capabilities, a post which I have overhauled based on what I learned later (including beyond this post, as well).
 {.box}
 
 With today's [release](https://github.com/gohugoio/hugo/releases/tag/v0.104.0) of version 0.104.0 of the [Hugo](https://gohugo.io) static site generator (SSG), there's a new and perhaps better way to generate low-quality image placeholders (LQIPs).
