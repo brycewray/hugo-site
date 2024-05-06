@@ -27,7 +27,7 @@ Hugo [v.0.116.0](https://github.com/gohugoio/hugo/releases/tag/v0.116.0) first a
 
 Subsequent dot-releases: one.
 
-## v.117.0
+## v.0.117.0
 
 Coming only a week later on <span class="nobrk">2023-08-07</span>, [v.0.117.0](https://github.com/gohugoio/hugo/releases/tag/v0.117.0) introduced a new [`.Page.RenderShortcodes` method](https://gohugo.io/methods/page/rendershortcodes/).[^example]
 
