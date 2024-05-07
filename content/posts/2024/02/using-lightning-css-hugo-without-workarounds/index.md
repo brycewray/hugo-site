@@ -18,7 +18,9 @@ The solution at which I finally arrived may look somewhat like a Franken-config;
 
 ## Getting there from here
 
-There never was any doubt that you could directly add the original [lightningcss](https://github.com/parcel-bundler/lightningcss/) package itself to a Hugo project (or any other, for that matter). The problem was in getting Hugo and Lightning CSS to work together, especially in development.
+There never was any doubt that you could directly add the original [lightningcss](https://github.com/parcel-bundler/lightningcss/) package itself to a Hugo project (or any other, for that matter[^Coyier]). The problem was in getting Hugo and Lightning CSS to work together, especially in development.
+
+[^Coyier]: See also Chris Coyier's recent article, "[Fine, I'll Use a Super Basic CSS Processing Setup](https://frontendmasters.com/blog/fine-ill-use-a-super-basic-css-processing-setup/)" (<span class="nobrk">2023-12-06</span>).
 
 And, truth be told, even the approach I'm going to describe herein doesn't really accomplish that.
 
