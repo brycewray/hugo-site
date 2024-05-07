@@ -235,7 +235,7 @@ This photo appears in multiple images-related posts here on [this website](/).
 To invoke the `img.html` shortcode in Markdown, use it like so[^commentsGo], although you'll note I haven't used nearly all the available parameters in this case:
 
 ```md{bigdiv=true}
-{{</* img src="my-pet-cat_3264x2448.jpg" alt="Here's our cat, Shakespeare, sitting on a window sill." holder="GIP" */>}}
+{{</* img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" holder="GIP" */>}}
 <p class="photoCaption">Here's our cat, Shakespeare, sitting on a window sill.<br />
 This photo appears in multiple images-related posts here on <a href="/">this website</a>.</p>
 ```
