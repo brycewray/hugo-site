@@ -226,7 +226,7 @@ And finally, the image-processing shortcode[^defaults] that handles both GIPs (t
 To invoke the render hook in Markdown, use it as shown[^commentsGo] (here, I'm using the optional title parameter to provide a caption):
 
 ```md{bigdiv=true}
-![Here's our cat, Shakespeare, sitting on a window sill.\
+![Photo of a cat named Shakespeare sitting on a window sill](my-pet-cat_3264x2448.jpg "Here's our cat, Shakespeare, sitting on a window sill.\
 This photo appears in multiple images-related posts here on [this website](/).")
 ```
 
