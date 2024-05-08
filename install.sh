@@ -1,7 +1,7 @@
 #!/bin/sh
 # --- for use with macOS and Linux/WSL
 
-HUGO_VERSION=0.125.6
+HUGO_VERSION=0.125.7
 HUGO_OS_ARCH='darwin-universal'
 # ^^^ choices for 'HUGO_OS_ARCH' (Extended Version only):
 # - 'darwin-universal' (macOS Universal Binary, Hugo 0.102.0 and up)
