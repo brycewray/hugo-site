@@ -36,6 +36,9 @@ table.noborders {
 			height: auto;
 		}
 	}
+	tr {
+		color: var(--black);
+	}
 	tr:nth-child(odd) {
 		background-color: var(--slate-050);
 	}
@@ -77,6 +80,7 @@ table.ulysses {
 		background-color: var(--blue-800);
 		border: 1px solid;
 		border-color: var(--black) var(--gray-350) var(--black) var(--black);
+		/* ^^^ apparently no way to do this with `light-dark()` just yet -- 2024-05-13 */
 		color: var(--white);
 		&:last-child {
 			border-right-color: var(--black);
@@ -85,7 +89,7 @@ table.ulysses {
 	td {
 		text-align: center;
 		border: 1px solid;
-		border-color: var(--black);
+		border-color: light-dark(var(--black), var(--white));
 		padding: 0;
 	}
 	thead th, td {
@@ -95,56 +99,26 @@ table.ulysses {
 		text-align: left;
 	}
 	tr:nth-child(odd) {
-		background-color: var(--white);
+		background-color: light-dark(var(--white), var(--slate-800));
 	}
 	tr:nth-child(even) {
-		background-color: var(--emerald-050);
+		background-color: light-dark(var(--emerald-050), var(--emerald-950));
 	}
 }
 
 html[data-theme="dark"] {
-	table.noborders {
-		tr {
-			color: var(--black);
-		}
-	}
 	table.ulysses {
 		thead th {
 			border-color: var(--white);
-		}
-		td {
-			border-color: var(--white);
-			color: var(--white);
-		}
-		tr:nth-child(odd) {
-			background-color: var(--slate-800);
-		}
-		tr:nth-child(even) {
-			background-color: var(--emerald-950);
 		}
 	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme]) {
-		table.noborders {
-			tr {
-				color: var(--black);
-			}
-		}
 		table.ulysses {
 			thead th {
 				border-color: var(--white);
-			}
-			td {
-				border-color: var(--white);
-				color: var(--white);
-			}
-			tr:nth-child(odd) {
-				background-color: var(--slate-800);
-			}
-			tr:nth-child(even) {
-				background-color: var(--emerald-950);
 			}
 		}
 	}

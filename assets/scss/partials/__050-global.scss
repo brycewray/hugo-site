@@ -8,107 +8,52 @@
 	--filter-shadow: var(--gray-400);
 }
 
-html, html[data-theme="light"] {
-	color-scheme: light;
+html {
+	color-scheme: light dark;
 	/* = = = COLORS = = = */
 	/* === defaults === */
 	/* primaries */
-	--default: var(--gray-800);
-	--boost: var(--gray-900);
-	--bquote: var(--gray-500);
-	--bquote-boost: var(--gray-600);
-	--link: var(--blue-700);
-	--link-afh: var(--blue-900);
-	--link-box: var(--blue-750);
-	--head: var(--black);
-	--red: var(--red-700);
-	--box-red: var(--red-600);
-	--btn-text-default: var(--white);
-	--pf-result-excerpt: var(--black);
-	--bquote-article-code: var(--slate-800);
+	--default: light-dark(var(--gray-800), var(--gray-300));
+	--boost: light-dark(var(--gray-900), var(--gray-200));
+	--bquote: light-dark(var(--gray-500), var(--gray-400));
+	--bquote-boost: light-dark(var(--gray-600), var(--gray-350));
+	--link: light-dark(var(--blue-700), var(--blue-550));
+	--link-afh: light-dark(var(--blue-900), var(--slate-300));
+	--link-box: light-dark(var(--blue-750), var(--blue-550));
+	--head: light-dark(var(--black), var(--white));
+	--red: light-dark(var(--red-700), var(--red-300));
+	--box-red: light-dark(var(--red-600), var(--red-400));
+	--btn-text-default: light-dark(var(--white), var(--black));
+	--pf-result-excerpt: light-dark(var(--black), var(--white));
+	--bquote-article-code: light-dark(var(--slate-800), var(--slate-300));
 	/* backgrounds and borders */
-	--bkgd: var(--white);
-	--bkgd-nav: var(--blue-850);
-	--bkgd-nav-bottom: var(--blue-850);
-	--bkgd-nav-top: var(--blue-850);
-	--bkgd-box: var(--slate-050);
-	--bkgd-code: var(--slate-050);
-	--bkgd-article-code: var(--slate-150);
-	--bkgd-box-code: var(--slate-200);
-	--bkgd-pf-result-excerpt: var(--blue-100);
-	--bkgd-hr: var(--black);
-	--bkgd-marker-secondary: var(--slate-400);
-	--border: var(--neutral-400);
-	--icon-inside: var(--white);
+	--bkgd: light-dark(var(--white), var(--black));
+	--bkgd-nav: light-dark(var(--blue-850), var(--blue-950));
+	--bkgd-nav-bottom: light-dark(var(--blue-850), var(--blue-950));
+	--bkgd-nav-top: light-dark(var(--blue-850), var(--blue-950));
+	--bkgd-box: light-dark(var(--slate-050), var(--neutral-850));
+	--bkgd-code: light-dark(var(--slate-050), var(--slate-900));
+	--bkgd-article-code: light-dark(var(--slate-150), var(--slate-750));
+	--bkgd-box-code: light-dark(var(--slate-200), var(--slate-700));
+	--bkgd-pf-result-excerpt: light-dark(var(--blue-100), var(--blue-900));
+	--bkgd-hr: light-dark(var(--black), var(--white));
+	--bkgd-marker-secondary: light-dark(var(--slate-400), var(--slate-500));
+	--border: light-dark(var(--neutral-400), var(--neutral-600));
+	--icon-inside: light-dark(var(--white), var(--black));
+	--drop-shadow-border: light-dark(transparent, var(--gray-750));
+}
+
+html, html[data-theme="light"] {
+	color-scheme: light;
 }
 
 html[data-theme="dark"] {
 	color-scheme: dark;
-	/* = = = COLORS = = = */
-	/* === defaults === */
-	/* primaries */
-	--default: var(--gray-300);
-	--boost: var(--gray-200);
-	--bquote: var(--gray-400);
-	--bquote-boost: var(--gray-350);
-	--link: var(--blue-550);
-	--link-afh: var(--slate-300);
-	--link-box: var(--blue-550);
-	--head: var(--white);
-	--red: var(--red-300);
-	--box-red: var(--red-400);
-	--btn-text-default: var(--black);
-	--pf-result-excerpt: var(--white);
-	--bquote-article-code: var(--slate-300);
-	/* backgrounds and borders */
-	--bkgd: var(--black);
-	--bkgd-nav: var(--blue-950);
-	--bkgd-nav-bottom: var(--blue-950);
-	--bkgd-nav-top: var(--blue-950);
-	--bkgd-box: var(--neutral-850);
-	--bkgd-code: var(--slate-900);
-	--bkgd-article-code: var(--slate-750);
-	--bkgd-box-code: var(--slate-700);
-	--bkgd-pf-result-excerpt: var(--blue-900);
-	--bkgd-hr: var(--white);
-	--bkgd-marker-secondary: var(--slate-500);
-	--border: var(--neutral-600);
-	--icon-inside: var(--black);
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme]) {
 		color-scheme: dark;
-		/* = = = COLORS = = = */
-		/* === defaults === */
-		/* primaries */
-		--default: var(--gray-300);
-		--boost: var(--gray-200);
-		--bquote: var(--gray-400);
-		--bquote-boost: var(--gray-350);
-		--link: var(--blue-550);
-		--link-afh: var(--slate-300);
-		--link-box: var(--blue-550);
-		--head: var(--white);
-		--red: var(--red-300);
-		--box-red: var(--red-400);
-		--btn-text-default: var(--black);
-		--pf-result-excerpt: var(--white);
-		--bquote-article-code: var(--slate-300);
-		/* backgrounds and borders */
-		--bkgd: var(--black);
-		--bkgd-nav: var(--blue-950);
-		--bkgd-nav-bottom: var(--blue-950);
-		--bkgd-nav-top: var(--blue-950);
-		--bkgd-box: var(--neutral-850);
-		--bkgd-code: var(--slate-900);
-		--bkgd-article-code: var(--slate-750);
-		--bkgd-box-code: var(--slate-700);
-		--bkgd-pf-result-excerpt: var(--blue-900);
-		--bkgd-hr: var(--white);
-		--bkgd-marker-secondary: var(--slate-500);
-		--border: var(--neutral-600);
-		--icon-inside: var(--black);
 	}
 }
 

@@ -1,17 +1,7 @@
 /* === for search form */
 
-html, html[data-theme="light"] {
-	--input: var(--black);
-}
-
-html[data-theme="dark"] {
-	--input: var(--white);
-}
-
-@media screen and (prefers-color-scheme:dark) {
-	html:not([data-theme]) {
-		--input: var(--white);
-	}
+html {
+	--input: light-dark(var(--black), var(--white));
 }
 
 .searchDiv, .searchDivPF {

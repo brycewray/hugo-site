@@ -31,9 +31,9 @@
 	margin: 1.5rem auto;
 	padding: 1rem;
 	border: 2px solid;
-	border-color: var(--gray-700);
+	border-color: light-dark(var(--gray-700), var(--gray-200));
 	border-radius: 12px;
-	background: var(--white);
+	background: light-dark(var(--white), var(--gray-900));
 	width: 100%;
 	@media screen and (min-width: 900px) {
 		width: 80%;
@@ -54,6 +54,7 @@
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 		word-break: break-word;
+		color: var(--link);
 		/*
 		See:
 		- https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
@@ -90,7 +91,7 @@ Eleventy version
 
 .toot-blockquote-img {
 	border-bottom: 1px solid;
-	border-bottom-color: var(--gray-700);
+	border-bottom-color: light-dark(var(--gray-700), var(--gray-300));
 	width: 100%;
 }
 
@@ -101,7 +102,7 @@ Eleventy version
 /* ==== END, rounded image "attachment" */
 
 a > .card, a > .toot-card {
-	color: var(--gray-800);
+	color: light-dark(var(--gray-800), var(--gray-300));
 }
 
 .card {
@@ -109,14 +110,14 @@ a > .card, a > .toot-card {
 	margin-top: 1em;
 	border-radius: 12px;
 	border: 1px solid;
-	border-color: var(--gray-700);
+	border-color: light-dark(var(--gray-700), var(--gray-300));
 	p {
 		padding: 0.5em 1em 1em;
 		line-height: 1.4;
 		margin-top: 0;
 		font-size: var(--text-sm);
 		.card-title {
-			color: var(--black);
+			color: light-dark(var(--black), var(--white));
 		}
 	}
 }
@@ -144,11 +145,11 @@ a > .card, a > .toot-card {
 	.toot-author-name {
 		font-weight: bold;
 		font-size: var(--text-base);
-		color: var(--black);
+		color: light-dark(var(--black), var(--white));
 		line-height: 1.375;
 	}
 	.toot-author-handle {
-		color: var(--gray-700);
+		color: light-dark(var(--gray-700), var(--gray-300));
 		font-weight: var(--font-weight-sm);
 		font-size: var(--text-sm);
 		line-height: 1;
@@ -159,16 +160,16 @@ a > .card, a > .toot-card {
 	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	color: var(--gray-800);
+	color: light-dark(var(--gray-800), var(--gray-200));
 	font-size: var(--text-sm);
 	font-weight: var(--font-weight-sm);
 	.toot-like-icon, .toot-like-count {
 		display: none;
 	}
 	a {
-		color: var(--gray-800);
+		color: light-dark(var(--gray-800), var(--gray-200));
 		&:hover {
-			color: var(--link);
+			color: light-dark(var(--link), var(--link));
 		}
 	}
 	/* === needed in Eleventy but not in Hugo
@@ -281,7 +282,7 @@ a > .card, a > .toot-card {
 
 .toot-quoted-tweet {
 	border: 1px solid;
-	border-color: var(--gray-800);
+	border-color: light-dark(var(--gray-800), var(--gray-200));
 	border-radius: 12px;
 	padding: 1em 1em 0.5em 1em;
 	margin-top: 0.75em;
@@ -300,7 +301,7 @@ a > .card, a > .toot-card {
 	p.toot-quoted-toot-head {
 		margin-bottom: 0.25em;
 		a {
-			color: var(--gray-800);
+			color: light-dark(var(--gray-800), var(--gray-200));
 			&:hover {
 				color: var(--link);
 			}
@@ -312,7 +313,7 @@ a > .card, a > .toot-card {
 	margin-top: 0;
 	padding-top: 0;
 	line-height: 1.3em;
-	color: var(--gray-800);
+	color: light-dark(var(--gray-800), var(--gray-200));
 	font-size: var(--text-sm);
 	.toot-like-icon, .toot-like-count {
 		display: none;
@@ -362,105 +363,5 @@ a > .card, a > .toot-card {
 	}
 	.card-title, .card-description {
 		font-size: var(--text-sm);
-	}
-}
-
-html[data-theme="dark"] {
-	.toot-blockquote {
-		background: var(--gray-900);
-		/* background: transparent; */
-		border-color: var(--gray-200);
-		color: var(--white);
-		a, a:hover {
-			color: var(--link);
-		}
-	}
-	.toot-blockquote-img {
-		border-bottom-color: var(--gray-300);
-	}
-	a > .card, a > .toot-card {
-		color: var(--gray-300);
-	}
-	.card {
-		border-color: var(--gray-300);
-		p .card-title {
-			color: var(--white);
-		}
-	}
-	.toot-header {
-		.toot-author-name {
-			color: var(--white);
-		}
-		.toot-author-handle {
-			color: var(--gray-300);
-		}
-	}
-	.toot-footer {
-		color: var(--gray-200);
-		a {
-			color: var(--gray-200);
-		}
-	}
-	.toot-quoted-tweet {
-		border-color: var(--gray-200);
-		p.toot-quoted-toot-head {
-			a {
-				color: var(--gray-200);
-			}
-		}
-	}
-	.toot-reply-to {
-		color: var(--gray-200);
-	}
-}
-
-@media screen and (prefers-color-scheme: dark) {
-	html:not([data-theme]) {
-		.toot-blockquote {
-			background: var(--gray-900);
-			/* background: transparent; */
-			border-color: var(--gray-200);
-			color: var(--white);
-			a, a:hover {
-				color: var(--link);
-			}
-		}
-		.toot-blockquote-img {
-			border-bottom-color: var(--gray-300);
-		}
-		a > .card, a > .toot-card {
-			color: var(--gray-300);
-		}
-		.card {
-			border-color: var(--gray-300);
-			p .card-title {
-				color: var(--white);
-			}
-		}
-		.toot-header {
-			.toot-author-name {
-				color: var(--white);
-			}
-			.toot-author-handle {
-				color: var(--gray-300);
-			}
-		}
-		.toot-footer {
-			color: var(--gray-200);
-			a {
-				color: var(--gray-200);
-			}
-		}
-		.toot-quoted-tweet {
-			border-color: var(--gray-200);
-			p.toot-quoted-toot-head {
-				a {
-					color: var(--gray-200);
-				}
-			}
-		}
-		.toot-reply-to {
-			color: var(--gray-200);
-		}
 	}
 }
