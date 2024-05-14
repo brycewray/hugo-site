@@ -1,5 +1,14 @@
 goldmark:
   extensions:
+    extras:
+      insert:
+        enable: true
+      mark:
+        enable: true
+      subscript:
+        enable: true
+      superscript:
+        enable: true
     linkify: false
   parser:
     autoHeadingID: true # otherwise, can't use (e.g.) 'Content' as a heading
