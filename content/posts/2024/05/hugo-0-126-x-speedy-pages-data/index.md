@@ -18,7 +18,7 @@ Back in August, 2018, Hugo guru [Régis Philibert](https://github.com/regisphili
 > Currently Hugo handles internal and external data source with getJSON/getCSV which is great for using data source in a template.
 >
 > But Hugo cannot, using a data set of items, build a page for each of them plus related list pages like it does from the current directory files.
-> 
+>
 > Here is a fresh start on specing this important step in the roadmap.
 
 He went on to suggest how it could be done.
@@ -66,7 +66,7 @@ Microsoft Word's default for "1st" is "1^st^" --- which I find annoying, but at 
 
 Microsoft Word's default for "1st" is "1^st^" --- which I find annoying, but at least it shows a superscript.
 
-*By the way, the CSS I'm using here make the subscript and superscript use the same baselines as their surrounding content, thus avoiding the janky line heights you often see when people use `sub` and `sup` in HTML:*
+*By the way, the CSS I'm using here makes the subscript and superscript use the same baselines as their surrounding content, thus avoiding the janky line heights you often see when people use `sub` and `sup` in HTML:*
 
 ```css
 sub, sup {
