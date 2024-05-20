@@ -266,40 +266,40 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--black: hsl(0, 0%, 0%);
 	/* ^^^ could also be #333 at some point, hence this var */
 	@supports (color: color(display-p3 1 1 1)) {
-		--red-300: color(display-p3 0.988 0.631 0.631); /* rgb(252, 161, 161) */
-		--red-400: color(display-p3 0.973 0.427 0.427); /* rgb(248, 109, 109) */
-		--red-500: color(display-p3 0.933 0.267 0.267); /* rgb(238, 68, 68) */
-		--red-600: color(display-p3 0.859 0.141 0.141); /* rgb(219, 36, 36) */
-		--red-700: color(display-p3 0.718 0.102 0.102); /* rgb(183, 26, 26) */
-		--orange-300: color(display-p3 1 0.745 0.561); /* rgb(255, 190, 143) */
-		--orange-700: color(display-p3 0.722 0.302 0); /* rgb(184, 77, 0) */
-		--yellow-200: color(display-p3 0.976 0.941 0.545); /* rgb(249, 240, 139) */
-		--yellow-300: color(display-p3 0.937 0.886 0.302); /* rgb(239, 226, 77) */
-		--yellow-800: color(display-p3 0.400 0.369 0); /* rgb(102, 94, 0) */
-		--green-100: color(display-p3 0.875 0.984 0.922); /* rgb(223, 251, 235) */
-		--green-600: color(display-p3 0.035 0.647 0.290); /* rgb(9, 165, 74) */
-		--emerald-050: color(display-p3 0.929 0.992 0.965); /* rgb(237, 253, 246) */
-		--emerald-200: color(display-p3 0.667 0.953 0.835); /* rgb(170, 243, 213) */
-		--emerald-700: color(display-p3 0.082 0.475 0.314); /* rgb(21, 121, 80) */
-		--emerald-900: color(display-p3 0.075 0.306 0.208); /* rgb(19, 78, 53) */
-		--cyan-300: color(display-p3 0.459 0.910 1); /* rgb(117, 232, 255) */
-		--cyan-600: color(display-p3 0 0.569 0.678); /* rgb(0, 145, 173) */
-		--blue-100: color(display-p3 0.859 0.929 1); /* rgb(219, 237, 255) */
-		--blue-150: color(display-p3 0.800 0.902 1); /* rgb(204, 230, 255) */
-		--blue-200: color(display-p3 0.722 0.859 1); /* rgb(184, 219, 255) */
-		--blue-300: color(display-p3 0.569 0.780 0.992); /* rgb(145, 199, 253) */
-		--blue-400: color(display-p3 0.365 0.671 0.976); /* rgb(93, 171, 249) */
-		--blue-500: color(display-p3 0.235 0.6 0.965); /* rgb(60, 153, 246) */
-		--blue-550: color(display-p3 0.180 0.569 0.961); /* rgb(46, 145, 245) */
-		--blue-700: color(display-p3 0 0.451 0.902); /* rgb(0, 115, 230) */
-		--blue-750: color(display-p3 0 0.369 0.741); /* rgb(0, 94, 189) */
-		--blue-800: color(display-p3 0 0.278 0.561); /* rgb(0, 71, 143) */
-		--blue-850: color(display-p3 0 0.259 0.522); /* rgb(0, 66, 133) */
-		--blue-900: color(display-p3 0 0.239 0.478); /* rgb(0, 61, 122) */
-		--blue-950: color(display-p3 0 0.161 0.322); /* rgb(0, 41, 82) */
-		--fuchsia-300: color(display-p3 0.937 0.671 0.988); /* rgb(239, 171, 252) */
-		--fuchsia-700: color(display-p3 0.6 0.122 0.698); /* rgb(153, 31, 178) */
-		--rose-300: color(display-p3 0.992 0.647 0.733); /* rgb(253, 165, 187) */
-		--rose-700: color(display-p3 0.749 0.071 0.239); /* rgb(191, 18, 61) */
+		--red-300: color(display-p3 0.988 0.631 0.631); // rgb(252, 161, 161)
+		--red-400: color(display-p3 0.973 0.427 0.427); // rgb(248, 109, 109)
+		--red-500: color(display-p3 0.933 0.267 0.267); // rgb(238, 68, 68)
+		--red-600: color(display-p3 0.859 0.141 0.141); // rgb(219, 36, 36)
+		--red-700: color(display-p3 0.718 0.102 0.102); // rgb(183, 26, 26)
+		--orange-300: color(display-p3 1 0.745 0.561); // rgb(255, 190, 143)
+		--orange-700: color(display-p3 0.722 0.302 0); // rgb(184, 77, 0)
+		--yellow-200: color(display-p3 0.976 0.941 0.545); // rgb(249, 240, 139)
+		--yellow-300: color(display-p3 0.937 0.886 0.302); // rgb(239, 226, 77)
+		--yellow-800: color(display-p3 0.400 0.369 0); // rgb(102, 94, 0)
+		--green-100: color(display-p3 0.875 0.984 0.922); // rgb(223, 251, 235)
+		--green-600: color(display-p3 0.035 0.647 0.290); // rgb(9, 165, 74)
+		--emerald-050: color(display-p3 0.929 0.992 0.965); // rgb(237, 253, 246)
+		--emerald-200: color(display-p3 0.667 0.953 0.835); // rgb(170, 243, 213)
+		--emerald-700: color(display-p3 0.082 0.475 0.314); // rgb(21, 121, 80)
+		--emerald-900: color(display-p3 0.075 0.306 0.208); // rgb(19, 78, 53)
+		--cyan-300: color(display-p3 0.459 0.910 1); // rgb(117, 232, 255)
+		--cyan-600: color(display-p3 0 0.569 0.678); // rgb(0, 145, 173)
+		--blue-100: color(display-p3 0.859 0.929 1); // rgb(219, 237, 255)
+		--blue-150: color(display-p3 0.800 0.902 1); // rgb(204, 230, 255)
+		--blue-200: color(display-p3 0.722 0.859 1); // rgb(184, 219, 255)
+		--blue-300: color(display-p3 0.569 0.780 0.992); // rgb(145, 199, 253)
+		--blue-400: color(display-p3 0.365 0.671 0.976); // rgb(93, 171, 249)
+		--blue-500: color(display-p3 0.235 0.6 0.965); // rgb(60, 153, 246)
+		--blue-550: color(display-p3 0.180 0.569 0.961); // rgb(46, 145, 245)
+		--blue-700: color(display-p3 0 0.451 0.902); // rgb(0, 115, 230)
+		--blue-750: color(display-p3 0 0.369 0.741); // rgb(0, 94, 189)
+		--blue-800: color(display-p3 0 0.278 0.561); // rgb(0, 71, 143)
+		--blue-850: color(display-p3 0 0.259 0.522); // rgb(0, 66, 133)
+		--blue-900: color(display-p3 0 0.239 0.478); // rgb(0, 61, 122)
+		--blue-950: color(display-p3 0 0.161 0.322); // rgb(0, 41, 82)
+		--fuchsia-300: color(display-p3 0.937 0.671 0.988); // rgb(239, 171, 252)
+		--fuchsia-700: color(display-p3 0.6 0.122 0.698); // rgb(153, 31, 178)
+		--rose-300: color(display-p3 0.992 0.647 0.733); // rgb(253, 165, 187)
+		--rose-700: color(display-p3 0.749 0.071 0.239); // rgb(191, 18, 61)
 	}
 }
