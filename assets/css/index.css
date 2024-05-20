@@ -1,0 +1,15 @@
+/* `index.css` is for UNscoped CSS */
+@import 'partials/article.css';
+@import 'partials/billboard.css';
+@import 'partials/code-all.css';
+@import 'partials/footnotes.css';
+@import 'partials/fourohfour.css';
+@import 'partials/home.css';
+@import 'partials/lite-yt-embed.css';
+@import 'partials/posts-list.css';
+@import 'partials/posts-single.css';
+/* @import 'partials/search-btn.css'; */
+@import 'partials/search-form.css';
+@import 'partials/sitemaphtml.css';
+@import 'partials/social.css';
+@import 'partials/tables.css';
