@@ -63,7 +63,7 @@
 	{{- if eq $condition true -}}
 		{{- $css := resources.Get (print "css/" $fileName ".css") | resources.Copy (print "css/" $fileName ".css") -}}
 		{{- if hugo.IsProduction -}}
-			{{- $css = $css | resources.Copy (print "css/" $fileName ".min.css") | fingerprint -}}
+			{{- $css = $css | resources.Copy (print "css/" $fileName ".min.css") | postCSS | fingerprint -}}
 		{{- end -}}
 		{{- with $css -}}
 			<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -75,7 +75,7 @@
 {{- /* for those who've requested CSS for printing */ -}}
 {{- $printCSS := resources.Get "css/print.css" | resources.Copy "css/print.css" -}}
 {{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | fingerprint -}}
+	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | postCSS | fingerprint -}}
 {{- end -}}
 {{- with $printCSS -}}
 	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction }} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
