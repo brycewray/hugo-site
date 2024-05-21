@@ -14,16 +14,26 @@
 	{{- end }}
 	{{ hugo.Generator }}
 {{- /* CSS */ -}}
-	{{- partialCached "head-criticalcss.html" . -}}
-	{{/*  {{- partialCached "head-criticalscss.html" . }}  */}}
-	{{- $noncriticalCSS := "scoped" -}}
+	{{- $styling := "CSS" -}}{{- /* "CSS" or fallback (SCSS) as of 2024-05-21 */ -}}
+	{{- $noncriticalCSS := "scoped" -}} {{- /* "scoped" or fallback (unscoped) */ -}}
+	{{- if eq $styling "CSS" -}}
+		{{- partialCached "head-criticalcss.html" . -}}
+	{{- else -}}
+		{{- partialCached "head-criticalscss.html" . }}
+	{{- end -}}
 	{{- with $noncriticalCSS -}}
 		{{- if eq $noncriticalCSS "scoped" -}}
-			{{- partial "head-css-scoped.html" $.Page }}
-			{{/*  {{- partial "head-scss-scoped.html" $.Page }}  */}}
+			{{- if eq $styling "CSS" -}}
+				{{- partial "head-css-scoped.html" $.Page }}
+			{{- else -}}
+				{{- partial "head-scss-scoped.html" $.Page }}
+			{{- end -}}
 		{{- else -}}
-			{{- partialCached "head-css-unscoped.html" $.Page }}
-			{{/*  {{- partialCached "head-scss-unscoped.html" $.Page }}  */}}
+			{{- if eq $styling "CSS" -}}
+				{{- partialCached "head-css-unscoped.html" $.Page }}
+			{{- else -}}
+				{{- partialCached "head-scss-unscoped.html" $.Page }}
+			{{- end -}}
 		{{- end }}
 	{{- end }}
 	{{- partial "head-imgs-css.html" . }}
