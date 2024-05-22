@@ -25,5 +25,5 @@ Finally, here is the related video Leatherman posted:
 
 {{< lite-youtube videoTitle="Big Announcement: Eleventy and @CloudCannon!" videoId="nypsmn70ipI" >}}
 
-**Update from the future**: On 2024-05-22, Leatherman [announced](https://www.zachleat.com/web/independent-sustainable-11ty/) on his personal website that he would now "**be working** ***independently*** **on [Eleventy] full[-]time**" *(emphases his)*. This particular statement made me wonder about whether he was still with CloudCannon, so I reached out to him on Mastodon, where he confirmed that he was not *but* added that he still had "nothing but love" for the CloudCannon team.
+**Update from the future**: In a blog post dated 2024-05-21, Leatherman [announced](https://www.zachleat.com/web/independent-sustainable-11ty/) on his personal website that he would now "**be working** ***independently*** **on [Eleventy] full[-]time**" *(emphases his)*. This particular statement made me wonder about whether he was still with CloudCannon, so I reached out to him on Mastodon, where he confirmed that he was not *but* added that he still had "nothing but love" for the CloudCannon team.
 {.box}
