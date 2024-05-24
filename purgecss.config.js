@@ -51,6 +51,7 @@ module.exports = {
 			/emerald-200/,
 			/emerald-700/,
 			/emerald-900/,
+			/emerald-950/,
 			/cyan-300/,
 			/cyan-600/,
 			/blue-/,
