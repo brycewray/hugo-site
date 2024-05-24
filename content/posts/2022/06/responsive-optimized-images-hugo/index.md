@@ -108,7 +108,6 @@ Then, the `render-image` template:
 {{- $hint := "photo" -}}
 {{- $filter := "box" -}}
 {{- $imgClass := "w-full h-auto shadow animate-fade" -}}
-{{- $rscToMatch := print "images/" $src -}}
 
 {{- if .Page.Resources.GetMatch $src -}}
 	{{ with .Page.Resources.GetMatch $src }}
