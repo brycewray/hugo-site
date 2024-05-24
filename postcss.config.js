@@ -7,10 +7,10 @@ const postcssPresetEnv =
 			'nesting-rules': true
 		}
 	})
-// const purgeCSS =
-// 	require('@fullhuman/postcss-purgecss')({
-// 		config: "./purgecss.config.js"
-// 	})
+const purgeCSS =
+	require('@fullhuman/postcss-purgecss')({
+		config: "./purgecss.config.js"
+	})
 // const autoPrefixer =
 // 	require('autoprefixer')({})
 const cssNano =
@@ -22,7 +22,7 @@ module.exports = {
 	plugins: [
 		// autoPrefixer,
 		...process.env.HUGO_ENVIRONMENT === 'production'
-		? [postcssPresetEnv, cssNano]
+		? [postcssPresetEnv, purgeCSS, cssNano]
 		: []
 	]
 }
