@@ -42,9 +42,9 @@
 
 .billboard-description-text {
 	/* font-family: var(--serif); */
-	font-style: italic;
 	@media screen and (min-width: 1024px) {
 		font-weight: var(--font-semilight);
+		font-style: italic;
 	}
 	font-size: clamp(1.25rem, 0.75rem + 1.5vw, 1.75rem);
 	letter-spacing: -0.025em;
