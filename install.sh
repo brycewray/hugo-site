@@ -1,14 +1,14 @@
 #!/bin/sh
 # --- for use with macOS and Linux/WSL
 
-HUGO_VERSION=0.126.1
+HUGO_VERSION=0.126.2
 HUGO_OS_ARCH='darwin-universal'
 # ^^^ choices for 'HUGO_OS_ARCH' (Extended Version only):
 # - 'darwin-universal' (macOS Universal Binary, Hugo 0.102.0 and up)
 # - 'linux-amd64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
 
-DARTSASS_VERSION=1.77.3
+DARTSASS_VERSION=1.77.4
 DARTSASS_OS_ARCH='macos-arm64'
 # ^^^ choices for "DARTSASS_OS_ARCH":
 # - 'linux-arm64' (Linux/WSL on ARM-64)
