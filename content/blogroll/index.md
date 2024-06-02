@@ -3,6 +3,7 @@ title: "Blogroll"
 description: "Sites whose feeds I follow."
 author: Bryce Wray
 date: 2024-06-02T11:08:00-05:00
+# draft: true
 ---
 
 Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned in Manuel "Manu" Moreale's "[Slashes](https://manuelmoreale.com/slashes)" (<span class="nobrk">2024-06-01</span>), this page lists those blogs and other personal sites I follow via their RSS/Atom and JSON feeds. It's not guaranteed to be fully up-to-date, but I'll do the best I can. **The order is alphabetical by first name of the site owner**, which is how they're ordered for me in my [NetNewsWire](https://netnewswire.com/) feed reader. Please let me know if you get 404s on any of these, so I can edit accordingly.

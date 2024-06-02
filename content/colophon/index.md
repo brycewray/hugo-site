@@ -3,6 +3,7 @@ title: "Colophon"
 description: "How I build this site."
 author: Bryce Wray
 date: 2024-06-02T11:38:00-05:00
+# draft: true
 ---
 
 Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned in Manuel "Manu" Moreale's "[Slashes](https://manuelmoreale.com/slashes)" (<span class="nobrk">2024-06-01</span>), this page describes how I build this site.
