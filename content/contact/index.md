@@ -1,6 +1,6 @@
 ---
 title: "Want to reach me?"
-description: "Here’s how to get in contact."
+# description: "Here’s how to get in contact."
 author: Bryce Wray
 date: 2020-12-30T09:00:00-06:00
 ---

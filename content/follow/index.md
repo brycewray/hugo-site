@@ -1,6 +1,6 @@
 ---
-title: "Follow"
-description: "The links you need to follow the site."
+title: "How to follow this site"
+# description: "The links you need to follow the site."
 author: Bryce Wray
 date: 2024-06-02T12:55:13-05:00
 # draft: true
