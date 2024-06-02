@@ -1,14 +1,14 @@
-@use 'partials/article.scss';
-@use 'partials/billboard.scss';
-@use 'partials/code-all.scss';
-@use 'partials/footnotes.scss';
-@use 'partials/fourohfour.scss';
-@use 'partials/home.scss';
-@use 'partials/lite-yt-embed.scss';
-@use 'partials/posts-list.scss';
-@use 'partials/posts-single.scss';
-/* @use 'partials/search-btn.scss'; */
-@use 'partials/search-form.scss';
-@use 'partials/sitemaphtml.scss';
-@use 'partials/social.scss';
-@use 'partials/tables.scss';
+@use 'partials/article';
+@use 'partials/billboard';
+@use 'partials/code';
+@use 'partials/footnotes';
+@use 'partials/fourohfour';
+@use 'partials/home';
+@use 'partials/lite-yt-embed';
+@use 'partials/posts-list';
+@use 'partials/posts-single';
+/* @use 'partials/_search-btn'; */
+@use 'partials/search-form';
+@use 'partials/sitemaphtml';
+@use 'partials/social';
+@use 'partials/tables';
