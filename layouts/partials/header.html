@@ -15,15 +15,17 @@
 			</label>
 			<ul class="nav-Menu">
 				<li><a href="/" title="Home page" aria-label="Home page">{{ partialCached "svgNavIcon.html" . }}</a></li>
-				<li><a href="/about/" title="About me" aria-label="About me">About</a></li>
 				{{- range first 1 (where site.RegularPages "Section" "posts") -}}
-					<li><a href="{{ .RelPermalink }}" title="The most recently added post on the site" aria-label="Newest post">Newest post</a></li>
+					<li><a href="{{ .RelPermalink }}" title="The most recently added post on the site" aria-label="Latest post">Latest</a></li>
 				{{- end -}}
-				<li><a href="/posts/" title="Posts" aria-label="All posts">All posts</a></li>
+				<li><a href="/posts/" title="Archive" aria-label="All posts">Archive</a></li>
 				<li><a href="/sitemap/" title="Sitemap" aria-label="Map of entire site">Sitemap</a></li>
 				<li><a href="/search/" title="Site search" aria-label="Site search">Search</a></li>
+				<li><a href="/about/" title="About me" aria-label="About me">About</a></li>
+				<li><a href="/blogroll/" title="Blogroll" aria-label="The personal blogs I follow">Blogroll</a></li>
 				<li><a href="/privacy/" title="Privacy policy" aria-label="Privacy policy">Privacy</a></li>
-				<li><a href="/contact/" title="Contact info" aria-label="Contact">Contact</a></li>
+				<li><a href="/contact/" title="Contact info" aria-label="How to contact me">Contact</a></li>
+				<li><a href="/follow/" title="Follow info" aria-label="How to follow the site - RSS, JSON, social">Follow</a></li>
 			</ul>
 			{{/*  <button type="button" class="nScrHidden" data-theme-toggle></button>  */}}
 			<div class="nScrHidden switchTheme">
