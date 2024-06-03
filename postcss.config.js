@@ -2,7 +2,7 @@
 
 const postcssPresetEnv =
 	require('postcss-preset-env')({
-		stage: 2,
+		stage: 3,
 		features: {
 			'nesting-rules': true
 		}
