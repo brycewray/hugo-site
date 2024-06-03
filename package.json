@@ -1,6 +1,6 @@
 {
 	"browserslist": [
-		"> 0.4%, last 2 versions, Firefox ESR, not dead"
+		"> 0.2%, last 4 versions, Firefox ESR, not dead"
 	],
 	"config": {
 		"myIP": "192.168.0.70"
