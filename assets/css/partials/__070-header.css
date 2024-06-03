@@ -78,7 +78,7 @@ header {
 		li {
 			font-size: var(--text-sm);
 			display: block;
-			text-transform: uppercase;
+			text-transform: lowercase;
 			margin: 0.5rem 0 0.5rem 0;
 			padding-right: 0.75em;
 			&.notMobile {
