@@ -15,7 +15,7 @@
 	{{ hugo.Generator }}
 {{- /* CSS */ -}}
 	{{- $styling := "SCSS" -}}{{- /* "CSS" or fallback (SCSS) as of 2024-05-21 */ -}}
-	{{- $noncriticalCSS := "unscoped" -}} {{- /* "scoped" or fallback (unscoped) */ -}}
+	{{- $noncriticalCSS := "scoped" -}} {{- /* "scoped" or fallback (unscoped) */ -}}
 	{{- if eq $styling "CSS" -}}
 		{{- partialCached "head-criticalcss.html" . -}}
 	{{- else -}}
