@@ -18,6 +18,7 @@ Site_domain: "{{< Site.Params.Domain >}}"
 # ===========================
 Titles:
   Contact: Want to reach me?
+  Follow: How to follow this site
   Privacy: Privacy policy
   Search: Search the site
   Home: Home page
@@ -25,4 +26,6 @@ Titles:
   Postslist: Posts
   FourOhFour: 404 Page not found
   About: About me
+  Colophon: Colophon
+  Blogroll: Blogroll
 # ===========================
