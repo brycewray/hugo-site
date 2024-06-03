@@ -9,10 +9,12 @@
 		padding-right: 3rem;
 		padding-left: 3rem;
 	}
-	/* code {
-		background-color: transparent;
-	} */
 	color: var(--head);
+	/*
+	code {
+		background-color: transparent;
+	}
+	*/
 }
 
 .billboard-title-block {
