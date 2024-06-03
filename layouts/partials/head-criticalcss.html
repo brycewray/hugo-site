@@ -76,9 +76,9 @@
 	{{- end }}
 {{- end }}
 
-{{ $css := resources.Get "lcss/critical.css" | resources.Copy "css/critical.css" }}
+{{ $css := (resources.Match "css/partials/__0*.css") | resources.Concat "css/critical.css" }}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | resources.Copy "css/critical.min.css" | fingerprint -}}
+	{{- $css = $css | resources.Copy "css/critical.min.css" | postCSS | fingerprint -}}
 {{- end -}}
 {{- with $css -}}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
