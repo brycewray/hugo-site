@@ -59,7 +59,9 @@ html[data-theme="dark"] {
 }
 
 .searchBtn {
-	appearance: none; /* otherwise, Safari rounds it */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+	appearance: none;
 	border-radius: 0; /* " " " " " " " " " " " " " " */
 	position: absolute;
 	right: 0px;
