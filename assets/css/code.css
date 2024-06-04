@@ -18,16 +18,42 @@
 	--rose-700: hsl(330, 73%, 42%);
 } */
 
-html {
-	--gray: light-dark(var(--gray-700), var(--gray-300));
-	--orange: light-dark(var(--orange-700), var(--orange-300));
-	--yellow: light-dark(var(--yellow-800), var(--yellow-300));
-	--green: light-dark(var(--green-600), var(--green-100));
-	--emerald: light-dark(var(--emerald-700), var(--emerald-200));
-	--cyan: light-dark(var(--cyan-600), var(--cyan-300));
-	--blue: light-dark(var(--blue-700), var(--blue-300));
-	--fuchsia: light-dark(var(--fuchsia-700), var(--fuchsia-300));
-	--rose: light-dark(var(--rose-700), var(--rose-300));
+html, html[data-theme="light"] {
+	--gray: var(--gray-700);
+	--orange: var(--orange-700);
+	--yellow: var(--yellow-800);
+	--green: var(--green-600);
+	--emerald: var(--emerald-700);
+	--cyan: var(--cyan-600);
+	--blue: var(--blue-700);
+	--fuchsia: var(--fuchsia-700);
+	--rose: var(--rose-700);
+}
+
+html[data-theme="dark"] {
+	--gray: var(--gray-300);
+	--orange: var(--orange-300);
+	--yellow: var(--yellow-300);
+	--green: var(--green-100);
+	--emerald: var(--emerald-200);
+	--cyan: var(--cyan-300);
+	--blue: var(--blue-300);
+	--fuchsia: var(--fuchsia-300);
+	--rose: var(--rose-300);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		--gray: var(--gray-300);
+		--orange: var(--orange-300);
+		--yellow: var(--yellow-300);
+		--green: var(--green-100);
+		--emerald: var(--emerald-200);
+		--cyan: var(--cyan-300);
+		--blue: var(--blue-300);
+		--fuchsia: var(--fuchsia-300);
+		--rose: var(--rose-300);
+	}
 }
 
 /* ======= START, individual items from Chroma */

@@ -37,20 +37,19 @@ img.ctrImg {
 	*/
 	filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
 	border: 0;
-	border-color: var(--drop-shadow-border);
 }
 
 html[data-theme="dark"] .shadow {
 	filter: none;
 	border: 1px solid;
-	border-color: var(--drop-shadow-border);
+	border-color: var(--gray-750);
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme]) .shadow {
 		filter: none;
 		border: 1px solid;
-		border-color: var(--drop-shadow-border);
+		border-color: var(--gray-750);
 	}
 }
 

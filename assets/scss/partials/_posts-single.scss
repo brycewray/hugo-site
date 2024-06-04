@@ -83,7 +83,20 @@
 	margin: 1.5em 0 2em;
 	border-radius: var(--btn-radius);
 	padding: 1em;
-	background-color: light-dark(var(--gray-100), var(--gray-900));
+}
+
+html[data-theme="light"] .giscus-comments {
+	background-color: var(--gray-100);
+}
+
+html[data-theme="dark"] .giscus-comments {
+	background-color: var(--gray-900);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) .giscus-comments {
+		background-color: var(--gray-900);
+	}
 }
 
 details.comments {
