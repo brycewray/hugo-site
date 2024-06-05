@@ -33,6 +33,9 @@ Philibert's original example had been of a realtor office website that would pul
 
 In short: for any site needing to build pages off remote data sources, particularly large ones, the latest incarnation of Hugo would seem to be a perfect fit.
 
+**Update, 2024-06-05**: [Hugo v.0.127.0](https://github.com/gohugoio/hugo/releases/tag/v0.127.0) provides additional enhancements targeting the use of content adapters specifically and remotely accessed resources in general.
+{.box}
+
 ## Some neat stuff for your Markdown-ing pleasure
 
 Also added in Hugo v.126.0 were *extras* for extensions to the [Goldmark parser](https://github.com/yuin/goldmark/) that turns Markdown into HTML. With them, you now can easily produce [inserted text](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins), [mark text](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark), subscripts, and superscripts **without** the need for manually typing HTML into your Markdown.
