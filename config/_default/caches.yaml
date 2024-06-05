@@ -1,4 +1,4 @@
-# overridden in production
+# `getjson` and `getresource` items overridden in production
 getjson:
   dir: :resourceDir/json
   # maxAge: '144h' # default = -1 (forever)
