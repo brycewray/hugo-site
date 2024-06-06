@@ -12,9 +12,7 @@
 }
 
 /* Prevent font size inflation */
-html{
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
+html {
   text-size-adjust: none;
 }
 

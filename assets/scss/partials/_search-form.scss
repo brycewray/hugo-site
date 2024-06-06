@@ -59,10 +59,8 @@ html[data-theme="dark"] {
 }
 
 .searchBtn {
-  -webkit-appearance: none;
-  -moz-appearance: none;
 	appearance: none;
-	border-radius: 0; /* " " " " " " " " " " " " " " */
+	border-radius: 0;
 	position: absolute;
 	right: 0px;
 	margin: 0; /* fixes oddity in Safari */
