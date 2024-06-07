@@ -18,6 +18,9 @@
 {{/* DRY-er... */}}
 	{{- $titleSearch := site.Params.Titles.Search -}}
 	{{- $titleContact := site.Params.Titles.Contact -}}
+	{{- $titleBlogroll := site.Params.Titles.Blogroll -}}
+	{{- $titleColophon := site.Params.Titles.Colophon -}}
+	{{- $titleFollow := site.Params.Titles.Follow -}}
 <div class="billboard-div">
 	<div class="billboard-title-block">
 		<h1 class="billboard-title-text">{{ .Title | .Page.RenderString }}</h1>
@@ -26,7 +29,7 @@
 				{{ .Description }}
 			</p>
 		{{- end }}
-		{{- if (and (ne .Title $titleSearch) (ne .Title $titleContact) ) -}}
+		{{- if (and (ne .Title $titleSearch) (ne .Title $titleContact) (ne .Title $titleBlogroll) (ne .Title $titleColophon) (ne .Title $titleFollow)) -}}
 			<p class="billboard-p-text" data-pagefind-ignore>
 				{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<span class="pub-date">{{ .PublishDate.Format "2006-01-02" }}</span>{{- else -}}&nbsp;{{- end -}}
 			</p>
