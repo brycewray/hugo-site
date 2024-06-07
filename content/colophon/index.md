@@ -26,5 +26,5 @@ Although I formerly used [Fathom Analytics](https://usefathom.com) (and am still
 
 Please note also:
 
-- For those pages displaying Git commit information, newer Git commits don't necessarily reflect changes in previously published content. Modification dates and times use the U.S. Central time zone (CDT/CST) unless otherwise noted
+- For those pages displaying Git commit information, newer Git commits don't necessarily reflect changes in previously published content. Modification dates and times use the U.S. Central time zone (CDT/CST) unless otherwise noted.
 - Displayed content statistics (word count and reading time) can vary based on the site-generation process, and don't include any code blocks or `details` elements where applicable.
