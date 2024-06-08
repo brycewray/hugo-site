@@ -3,7 +3,7 @@
 		"> 0.2%, last 4 versions, Firefox ESR, not dead"
 	],
 	"devDependencies": {
-		"browserslist": "^4.23.0",
+		"browserslist": "^4.23.1",
 		"cssnano": "^7.0.2",
 		"postcss": "^8.4.38",
 		"postcss-cli": "^11.0.0",
