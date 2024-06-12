@@ -1,4 +1,4 @@
-/* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
+// /* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
 
 :root {
 	--tc-corner-radius: 1em;
@@ -19,7 +19,7 @@
 }
 
 .toot-blockquote {
-	line-height: 1.35em; /* for non-`p` results from `text` var */
+	line-height: 1.35em; // /* for non-`p` results from `text` var */
 	font-family: var(--social-sans-serif);
 	font-size: var(--text-base);
 	p {
@@ -41,10 +41,10 @@
 	@media screen and (min-width: 1024px) {
 		width: 85%;
 	}
-	/* @media screen and (min-width: 1536px) {
-	   width: 85%;
-	}
-	*/
+	// /* @media screen and (min-width: 1536px) {
+	//    width: 85%;
+	// }
+	// */
 	@media screen and (min-width: 1920px) {
 		max-width: 80ch;
 	}
@@ -54,15 +54,15 @@
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 		word-break: break-word;
-		/*
-		See:
-		- https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
-		- https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/
-		- https://css-tricks.com/better-line-breaks-for-long-urls/
-		*/
+		// /*
+		// See:
+		// - https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+		// - https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/
+		// - https://css-tricks.com/better-line-breaks-for-long-urls/
+		// */
 	}
 	.toot-blockquote {
-		/* For reposts */
+		// /* For reposts */
 		width: 100% !important;
 	}
 }
@@ -71,18 +71,18 @@
 	text-align: left !important;
 }
 
-/*
-==== rounded image "attachment"
-Eleventy version
-*/
+// /*
+// ==== rounded image "attachment"
+// Eleventy version
+// */
 .toot-images {
 	img {
 		border-radius: 12px;
 	}
 }
-/* Hugo version */
+// /* Hugo version */
 .toot-media-img {
-	width: 100%; /* overcoming something in Andy Bell's `reset` */
+	width: 100%; // /* overcoming something in Andy Bell's `reset` */
 	height: auto;
 	aspect-ratio: 1;
 	object-fit: cover;
@@ -98,7 +98,7 @@ Eleventy version
 	display: flex;
 }
 
-/* ==== END, rounded image "attachment" */
+// /* ==== END, rounded image "attachment" */
 
 a > .card, a > .toot-card {
 	color: var(--gray-800);
@@ -171,12 +171,12 @@ a > .card, a > .toot-card {
 			color: var(--link);
 		}
 	}
-	/* === needed in Eleventy but not in Hugo
-	.toot-date:after {
-		content: " (UTC)";
-		font-size: var(--text-xs);
-	}
-	*/
+	// /* === needed in Eleventy but not in Hugo
+	// .toot-date:after {
+	// 	content: " (UTC)";
+	// 	font-size: var(--text-xs);
+	// }
+	// */
 }
 
 [class^='toot-img-grid'],
@@ -321,9 +321,9 @@ a > .card, a > .toot-card {
 
 .toot-card {
 	position: relative;
-	/* @media screen and (min-width: 768px) {
-		display: flex;
-	} */
+	// /* @media screen and (min-width: 768px) {
+	// 	display: flex;
+	// } */
 	border: 2px solid;
 	border-color: var(--gray-400);
 	border-radius: 6px;
@@ -368,7 +368,7 @@ a > .card, a > .toot-card {
 html[data-theme="dark"] {
 	.toot-blockquote {
 		background: var(--gray-900);
-		/* background: transparent; */
+		// /* background: transparent; */
 		border-color: var(--gray-200);
 		color: var(--white);
 		a, a:hover {
@@ -418,7 +418,7 @@ html[data-theme="dark"] {
 	html:not([data-theme]) {
 		.toot-blockquote {
 			background: var(--gray-900);
-			/* background: transparent; */
+			// /* background: transparent; */
 			border-color: var(--gray-200);
 			color: var(--white);
 			a, a:hover {

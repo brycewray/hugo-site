@@ -10,9 +10,9 @@
 
 html, html[data-theme="light"] {
 	color-scheme: light;
-	/* = = = COLORS = = = */
-	/* === defaults === */
-	/* primaries */
+	// /* = = = COLORS = = = */
+	// /* === defaults === */
+	// /* primaries */
 	--default: var(--gray-800);
 	--boost: var(--gray-900);
 	--bquote: var(--gray-500);
@@ -26,7 +26,7 @@ html, html[data-theme="light"] {
 	--btn-text-default: var(--white);
 	--pf-result-excerpt: var(--black);
 	--bquote-article-code: var(--slate-800);
-	/* backgrounds and borders */
+	// /* backgrounds and borders */
 	--bkgd: var(--white);
 	--bkgd-nav: var(--blue-850);
 	--bkgd-nav-bottom: var(--blue-850);
@@ -44,9 +44,9 @@ html, html[data-theme="light"] {
 
 html[data-theme="dark"] {
 	color-scheme: dark;
-	/* = = = COLORS = = = */
-	/* === defaults === */
-	/* primaries */
+	// /* = = = COLORS = = = */
+	// /* === defaults === */
+	// /* primaries */
 	--default: var(--gray-300);
 	--boost: var(--gray-200);
 	--bquote: var(--gray-400);
@@ -60,7 +60,7 @@ html[data-theme="dark"] {
 	--btn-text-default: var(--black);
 	--pf-result-excerpt: var(--white);
 	--bquote-article-code: var(--slate-300);
-	/* backgrounds and borders */
+	// /* backgrounds and borders */
 	--bkgd: var(--black);
 	--bkgd-nav: var(--blue-950);
 	--bkgd-nav-bottom: var(--blue-950);
@@ -79,9 +79,9 @@ html[data-theme="dark"] {
 @media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme]) {
 		color-scheme: dark;
-		/* = = = COLORS = = = */
-		/* === defaults === */
-		/* primaries */
+		// /* = = = COLORS = = = */
+		// /* === defaults === */
+		// /* primaries */
 		--default: var(--gray-300);
 		--boost: var(--gray-200);
 		--bquote: var(--gray-400);
@@ -95,7 +95,7 @@ html[data-theme="dark"] {
 		--btn-text-default: var(--black);
 		--pf-result-excerpt: var(--white);
 		--bquote-article-code: var(--slate-300);
-		/* backgrounds and borders */
+		// /* backgrounds and borders */
 		--bkgd: var(--black);
 		--bkgd-nav: var(--blue-950);
 		--bkgd-nav-bottom: var(--blue-950);
@@ -117,46 +117,46 @@ html, body {
 	margin: 0 auto;
 	padding: 0;
 	-webkit-font-smoothing: subpixel-antialiased;
-	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
+	// /* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
 	-moz-osx-font-smoothing: auto;
-	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
+	// /* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
 	@media screen and (min-width: 1024px) {
 		font-feature-settings: 'ss03' 1, 'calt' 0;
-		/* ^^
-		- Avoid `ss03` oddity in some system fonts.
-		- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
-		-- https://github.com/rsms/inter/issues/442 et al.
-		*/
+		// /* ^^
+		// - Avoid `ss03` oddity in some system fonts.
+		// - Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
+		// -- https://github.com/rsms/inter/issues/442 et al.
+		// */
 	}
 	text-rendering: optimizeLegibility;
-	/* text-justify: inter-character; /* someday... */
+	// /* text-justify: inter-character; /* someday... */
 	font-kerning: normal;
 	font-family: var(--sans-serif);
 	font-weight: var(--font-normal);
-	/* @media screen and (min-width: 768px) {
-		font-weight: var(--font-semilight);
-	} */
+	// /* @media screen and (min-width: 768px) {
+	// 	font-weight: var(--font-semilight);
+	// } */
 	background-color: var(--bkgd);
 	color: var(--default);
 }
-/*
-h1, .h1, h2, .h2, h3, .h3, h4, .h4,
-header, footer, table, blockquote, summary, contact-button, search-button,
-.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
-.sitemap-Div, .searchDiv, .searchDivPF,
-.footnotes, .footnote-sim, .footnote-ref,
-.box, .labeled-highlight, .imgcCaption, .imghCaption,
-.bg-dark, a.contactButton,
-.legal, .pokey {
-	font-family: var(--sans-serif);
-} */
+// /*
+// h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+// header, footer, table, blockquote, summary, contact-button, search-button,
+// .container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+// .sitemap-Div, .searchDiv, .searchDivPF,
+// .footnotes, .footnote-sim, .footnote-ref,
+// .box, .labeled-highlight, .imgcCaption, .imghCaption,
+// .bg-dark, a.contactButton,
+// .legal, .pokey {
+// 	font-family: var(--sans-serif);
+// } */
 
 b, strong {
 	font-weight: var(--font-semibold);
 }
 
 html {
-	/* scroll-behavior: smooth; */
+	// /* scroll-behavior: smooth; */
 	scroll-padding-top: 80px;
 }
 
@@ -191,7 +191,7 @@ h3, .h3 {
 
 h1, .h1 {
 	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
-	/* usually overridden by other styling (e.g., billboard.scss) */
+	// /* usually overridden by other styling (e.g., billboard.scss) */
 }
 
 h2, .h2 {
@@ -285,7 +285,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 .container {
-	/* width: 90%; */
+	// /* width: 90%; */
 	margin: 0 auto;
 }
 
@@ -319,7 +319,7 @@ li p {
 	width: 100%;
 }
 
-/* === for search button on each page (except search page itself) */
+// /* === for search button on each page (except search page itself) */
 
 search-button {
 	display: grid;
@@ -362,4 +362,4 @@ search-button {
 	}
 }
 
-/* === end, search button === */
+// /* === end, search button === */

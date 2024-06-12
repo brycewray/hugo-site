@@ -1,7 +1,7 @@
 :root {
 	--navRightMargin: 9.5em;
 	--navToggleRightMargin: 9em;
-	/* all these unless JS is off */
+	// /* all these unless JS is off */
 }
 
 header {
@@ -42,7 +42,7 @@ header {
 	flex-direction: column;
 	gap: 1rem;
 	text-align: right;
-	/* align-items: right; */
+	// /* align-items: right; */
 	margin: 0.5rem 0.5rem 0.5rem 0;
 	li {
 		list-style: none;
@@ -57,7 +57,7 @@ header {
 			margin-right: auto;
 			margin-left: 1.5rem;
 			display: block;
-			svg { /* for site logo */
+			svg { // /* for site logo */
 				width: auto;
 			}
 		}
@@ -112,24 +112,24 @@ header {
 	position: relative;
 }
 
-/* .nav-ModeToggle {
-	position: absolute;
-	cursor: pointer;
-	top: 0.15em;
-	right: 0.5em;
-	@media (min-width: 1024px) {
-		right: 1.5em;
-	}
-	background-color: transparent;
-	border: 0;
-	svg {
-		width: 1.375em;
-		height: auto;
-		&.sun path, &.moon {
-			fill: var(--fill-lightdarktoggle);
-		}
-	}
-} */
+// /* .nav-ModeToggle {
+// 	position: absolute;
+// 	cursor: pointer;
+// 	top: 0.15em;
+// 	right: 0.5em;
+// 	@media (min-width: 1024px) {
+// 		right: 1.5em;
+// 	}
+// 	background-color: transparent;
+// 	border: 0;
+// 	svg {
+// 		width: 1.375em;
+// 		height: auto;
+// 		&.sun path, &.moon {
+// 			fill: var(--fill-lightdarktoggle);
+// 		}
+// 	}
+// } */
 
 .switchTheme {
 	position: absolute;

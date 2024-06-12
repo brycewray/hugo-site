@@ -31,10 +31,10 @@ img.ctrImg {
 
 .shadow {
 	-webkit-filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
-	/*
-		Above is needed for Safari, but won't get through Lightning CSS
-		(https://github.com/parcel-bundler/lightningcss/issues/537).
-	*/
+	// /*
+	// 	Above is needed for Safari, but won't get through Lightning CSS
+	// 	(https://github.com/parcel-bundler/lightningcss/issues/537).
+	// */
 	filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
 	border: 0;
 }
@@ -83,7 +83,7 @@ html[data-theme="dark"] .shadow {
 }
 
 .indentAfterLI {
-	margin-left: 2em; /* 2em with Public Sans, 2.25em with Inter */
+	margin-left: 2em; // /* 2em with Public Sans, 2.25em with Inter */
 	&.box {
 		--bIALImarginLeft: 3em;
 		margin-left: var(--bIALImarginLeft);
@@ -107,7 +107,7 @@ html[data-theme="dark"] .shadow {
 blockquote {
 	border-left: 4px solid;
 	border-left-color: var(--border-bquote);
-	/* ^^^ same for both light and dark modes */
+	// /* ^^^ same for both light and dark modes */
 	color: var(--bquote);
 	margin-right: 0;
 	margin-left: 0;
@@ -118,7 +118,7 @@ blockquote {
 }
 
 article {
-	padding-top: 1em; /* definitely em, not rem */
+	padding-top: 1em; // /* definitely em, not rem */
 	p, li {
 		font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
 		line-height: 1.5em;
@@ -127,7 +127,7 @@ article {
 	}
 	li li, li p {
 		font-size: inherit;
-		margin-top: 0.25em; /* definitely em, not rem */
+		margin-top: 0.25em; // /* definitely em, not rem */
 	}
 	h1, h2, h3, h4 {
 		margin-top: 1.5em;
@@ -156,7 +156,7 @@ article {
 		padding: 0;
 		margin: 0;
 	}
-	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
+	+ hr { // /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
 		margin-top: 1.75em;
 	}
 	.red {
@@ -164,10 +164,10 @@ article {
 	}
 }
 
-/*
-following from...
-https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
-*/
+// /*
+// following from...
+// https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
+// */
 article strong:not(.red *):not(a *):not(blockquote *):not(details *),
 article b:not(.red *):not(a *):not(blockquote *):not(details *),
 article em:not(.red *):not(a *):not(blockquote *):not(th *),

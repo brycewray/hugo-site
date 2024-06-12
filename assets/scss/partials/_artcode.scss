@@ -8,7 +8,7 @@ code {
   font-variant-ligatures: none;
 }
 
-/* Inline code */
+// /* Inline code */
 :not(pre) > code[class*="language-"] {
 	padding: 0.1em;
 	border-radius: 0.3em;
@@ -17,26 +17,26 @@ code {
 
 article code {
 	font-size: 0.95em;
-	/* no need for media queries because this
-	is em, so clamp() for surrounding text
-	will handle it */
+	// /* no need for media queries because this
+	// is em, so clamp() for surrounding text
+	// will handle it */
 }
 
 article .footnotes code {
 	font-size: 1em;
-	/* overriding the `article code` part above for footnotes */
+	// /* overriding the `article code` part above for footnotes */
 }
 
-/*
-article p code {
-	@media screen and (min-width: 768px) {
-		white-space: nowrap;
-	}
-}
-*/
+// /*
+// article p code {
+// 	@media screen and (min-width: 768px) {
+// 		white-space: nowrap;
+// 	}
+// }
+// */
 
 article p code.code-inline {
-	/* font-size: var(--text-sm); */
+	// /* font-size: var(--text-sm); */
 	padding: 0.25em 0.5em;
 	margin: 0 0.25em;
 }
@@ -51,7 +51,7 @@ article blockquote code {
 
 .box {
 	code, a code {
-		font-size: 1em; /* definitely em */
+		font-size: 1em; // /* definitely em */
 		--bg: var(--bkgd-box-code);
 	}
 }

@@ -62,12 +62,12 @@
 		flex: 1 1 0%;
 	}
 	.nextDiv {
-		/* background-color: aliceblue; */
+		// /* background-color: aliceblue; */
 		text-align: right;
 		padding: 0 var(--nextprevPadding);
 	}
 	.prevDiv {
-		/* background-color: beige; */
+		// /* background-color: beige; */
 		text-align: left;
 		padding: 0 0 0 var(--nextprevPadding);
 	}
@@ -135,7 +135,7 @@ a.contactButton, details.comments > summary {
 	border-color: transparent;
 	color: var(--btn-text-default);
 	padding: 0.25rem 0;
-	&:hover { /* but neither :active or :focus */
+	&:hover { // /* but neither :active or :focus */
 		background-color: var(--link-afh);
 	}
 	&:hover {
@@ -151,7 +151,7 @@ a.contactButton, details.comments > summary {
 	.legend {
 		padding-right: var(--interactionPadding);
 		text-align: right;
-		/* text-transform: uppercase; */
+		// /* text-transform: uppercase; */
 		font-size: var(--btn-legend-text);
 		font-weight: var(--btn-legend-weight);
 	}

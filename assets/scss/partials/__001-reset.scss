@@ -1,22 +1,22 @@
-/* 	h/t to Andy Bell
-  	https://andy-bell.co.uk/a-more-modern-css-reset/
-  	. . . as of 2023-09-18
+// /* 	h/t to Andy Bell
+//   	https://andy-bell.co.uk/a-more-modern-css-reset/
+//   	. . . as of 2023-09-18
 
-*/
+// */
 
-/* Box sizing rules */
+// /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Prevent font size inflation */
+// /* Prevent font size inflation */
 html {
   text-size-adjust: none;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
+// /* Remove default margin in favour of better control in authored CSS */
 body,
 h1,
 h2,
@@ -30,19 +30,19 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+// /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
 
-/* Set core body defaults */
+// /* Set core body defaults */
 body {
   min-height: 100vh;
   line-height: 1.5;
 }
 
-/* Set shorter line heights on headings and interactive elements */
+// /* Set shorter line heights on headings and interactive elements */
 h1,
 h2,
 h3,
@@ -53,7 +53,7 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
+// /* Balance text wrapping on headings */
 h1,
 h2,
 h3,
@@ -61,20 +61,20 @@ h4 {
   text-wrap: balance;
 }
 
-/* A elements that don't have a class get default styles */
+// /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
   /* color: currentColor; */
 }
 
-/* Make images easier to work with */
+// /* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
+// /* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -82,12 +82,12 @@ select {
   font: inherit;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
+// /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
 }
 
-/* Anything that has been anchored to should have extra scroll margin */
+// /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
 }
