@@ -77,13 +77,13 @@
 {{- end }}
 
 {{- if hugo.IsProduction -}}
-	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/critical.min.css") -}}
+	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/critical.min.css" "outputStyle" "compressed") -}}
 {{- else -}}
 	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/critical.css") -}}
 {{- end -}}
 {{- $css := resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | postCSS | fingerprint -}}
+	{{- $css = $css | fingerprint -}}
 {{- end -}}
 {{- with $css -}}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
