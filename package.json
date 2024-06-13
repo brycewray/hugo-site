@@ -1,6 +1,6 @@
 {
 	"browserslist": [
-		"> 0.2%, last 4 versions, Firefox ESR, not dead"
+		"defaults"
 	],
 	"devDependencies": {
 		"browserslist": "^4.23.1",
