@@ -1,0 +1,365 @@
+:root {
+	--link-nav: var(--white);
+	--link-nav-afh: var(--blue-200);
+	--logocircle: var(--blue-500);
+	--logocircle-afh: var(--gray-500);
+	--border-bquote: var(--gray-400);
+	--fill-lightdarktoggle: var(--yellow-200);
+	--filter-shadow: var(--gray-400);
+}
+
+html, html[data-theme="light"] {
+	color-scheme: light;
+	/* = = = COLORS = = = */
+	/* === defaults === */
+	/* primaries */
+	--default: var(--gray-800);
+	--boost: var(--gray-900);
+	--bquote: var(--gray-500);
+	--bquote-boost: var(--gray-600);
+	--link: var(--blue-700);
+	--link-afh: var(--blue-900);
+	--link-box: var(--blue-750);
+	--head: var(--black);
+	--red: var(--red-700);
+	--box-red: var(--red-600);
+	--btn-text-default: var(--white);
+	--pf-result-excerpt: var(--black);
+	--bquote-article-code: var(--slate-800);
+	/* backgrounds and borders */
+	--bkgd: var(--white);
+	--bkgd-nav: var(--blue-850);
+	--bkgd-nav-bottom: var(--blue-850);
+	--bkgd-nav-top: var(--blue-850);
+	--bkgd-box: var(--slate-050);
+	--bkgd-code: var(--slate-050);
+	--bkgd-article-code: var(--slate-150);
+	--bkgd-box-code: var(--slate-200);
+	--bkgd-pf-result-excerpt: var(--blue-100);
+	--bkgd-hr: var(--black);
+	--bkgd-marker-secondary: var(--slate-400);
+	--border: var(--neutral-400);
+	--icon-inside: var(--white);
+}
+
+html[data-theme="dark"] {
+	color-scheme: dark;
+	/* = = = COLORS = = = */
+	/* === defaults === */
+	/* primaries */
+	--default: var(--gray-300);
+	--boost: var(--gray-200);
+	--bquote: var(--gray-400);
+	--bquote-boost: var(--gray-350);
+	--link: var(--blue-550);
+	--link-afh: var(--slate-300);
+	--link-box: var(--blue-550);
+	--head: var(--white);
+	--red: var(--red-300);
+	--box-red: var(--red-400);
+	--btn-text-default: var(--black);
+	--pf-result-excerpt: var(--white);
+	--bquote-article-code: var(--slate-300);
+	/* backgrounds and borders */
+	--bkgd: var(--black);
+	--bkgd-nav: var(--blue-950);
+	--bkgd-nav-bottom: var(--blue-950);
+	--bkgd-nav-top: var(--blue-950);
+	--bkgd-box: var(--neutral-850);
+	--bkgd-code: var(--slate-900);
+	--bkgd-article-code: var(--slate-750);
+	--bkgd-box-code: var(--slate-700);
+	--bkgd-pf-result-excerpt: var(--blue-900);
+	--bkgd-hr: var(--white);
+	--bkgd-marker-secondary: var(--slate-500);
+	--border: var(--neutral-600);
+	--icon-inside: var(--black);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		color-scheme: dark;
+		/* = = = COLORS = = = */
+		/* === defaults === */
+		/* primaries */
+		--default: var(--gray-300);
+		--boost: var(--gray-200);
+		--bquote: var(--gray-400);
+		--bquote-boost: var(--gray-350);
+		--link: var(--blue-550);
+		--link-afh: var(--slate-300);
+		--link-box: var(--blue-550);
+		--head: var(--white);
+		--red: var(--red-300);
+		--box-red: var(--red-400);
+		--btn-text-default: var(--black);
+		--pf-result-excerpt: var(--white);
+		--bquote-article-code: var(--slate-300);
+		/* backgrounds and borders */
+		--bkgd: var(--black);
+		--bkgd-nav: var(--blue-950);
+		--bkgd-nav-bottom: var(--blue-950);
+		--bkgd-nav-top: var(--blue-950);
+		--bkgd-box: var(--neutral-850);
+		--bkgd-code: var(--slate-900);
+		--bkgd-article-code: var(--slate-750);
+		--bkgd-box-code: var(--slate-700);
+		--bkgd-pf-result-excerpt: var(--blue-900);
+		--bkgd-hr: var(--white);
+		--bkgd-marker-secondary: var(--slate-500);
+		--border: var(--neutral-600);
+		--icon-inside: var(--black);
+	}
+}
+
+html, body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	-webkit-font-smoothing: subpixel-antialiased;
+	/* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
+	-moz-osx-font-smoothing: auto;
+	/* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
+	@media screen and (min-width: 1024px) {
+		font-feature-settings: 'ss03' 1, 'calt' 0;
+		/* ^^
+		- Avoid `ss03` oddity in some system fonts.
+		- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
+		-- https://github.com/rsms/inter/issues/442 et al.
+		*/
+	}
+	text-rendering: optimizeLegibility;
+	/* text-justify: inter-character; /* someday... */
+	font-kerning: normal;
+	font-family: var(--sans-serif);
+	font-weight: var(--font-normal);
+	/* @media screen and (min-width: 768px) {
+		font-weight: var(--font-semilight);
+	} */
+	background-color: var(--bkgd);
+	color: var(--default);
+}
+/*
+h1, .h1, h2, .h2, h3, .h3, h4, .h4,
+header, footer, table, blockquote, summary, contact-button, search-button,
+.container-home, .billboard-div, .posts-Wrapper, .FourOhFour-Wrapper,
+.sitemap-Div, .searchDiv, .searchDivPF,
+.footnotes, .footnote-sim, .footnote-ref,
+.box, .labeled-highlight, .imgcCaption, .imghCaption,
+.bg-dark, a.contactButton,
+.legal, .pokey {
+	font-family: var(--sans-serif);
+} */
+
+b, strong {
+	font-weight: var(--font-semibold);
+}
+
+html {
+	/* scroll-behavior: smooth; */
+	scroll-padding-top: 80px;
+}
+
+p, li {
+	line-height: 1.4;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	font-weight: var(--font-semibold);
+	color: var(--head);
+	letter-spacing: -0.025rem;
+}
+
+h1, h2, h3, h4 {
+	outline: 2px transparent;
+	outline-offset: 2px;
+	&:active, &:focus, &:hover {
+		outline: 2px transparent;
+		outline-offset: 2px;
+	}
+}
+
+h1, h2, h3, h4 {
+	display: block;
+	margin-block-start: 0.25rem;
+	margin-block-end: 0.25rem;
+}
+
+h3, .h3 {
+	font-style: italic;
+}
+
+h1, .h1 {
+	font-size: clamp(2rem, 1rem + 3vw, 2.5rem);
+	/* usually overridden by other styling (e.g., billboard.scss) */
+}
+
+h2, .h2 {
+	font-size: clamp(1.5rem, 0.75rem + 2vw, 2rem);
+}
+
+h3, .h3 {
+	font-size: clamp(1.375rem, 0.5rem + 1.75vw, 1.75rem);
+}
+
+h4, .h4 {
+	font-size: clamp(1.25rem, 0.25rem + 1.5vw, 1.625rem);
+}
+
+a, a:focus, a:hover, a:active {
+	text-decoration-thickness: var(--textDcThick);
+	text-underline-offset: var(--textUnOffst);
+	text-decoration-skip-ink: auto;
+}
+
+a {
+	color: var(--link);
+	&:focus, &:hover, &:active {
+		color: var(--link-afh);
+	}
+}
+
+a.icon, a.icon:focus, a.icon:hover, a.icon:active, sup a, .footnote-return, .icon {
+	border-bottom: 0;
+	text-decoration: none;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: var(--bkgd-hr);
+}
+
+sub, sup {
+	font-size: 65%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.45em;
+}
+
+ul li li, ol li li, ul li li li, ol li li li {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	&::marker {
+		color: var(--bkgd-marker-secondary);
+	}
+}
+
+ul li li, ol li li {
+	list-style-type: disc;
+}
+
+ul li li li, ol li li li {
+	list-style-type: square;
+}
+
+ol li ul, ol li li ul, ol li li li ul {
+	padding-inline-start: 1.1em;
+	& li {
+		list-style-type: disc;
+		&::marker {
+			color: inherit;
+		}
+		& ul {
+			& li::marker {
+				color: var(--bkgd-marker-secondary);
+			}
+		}
+	}
+}
+
+#content-main-hugo, main {
+	padding-top: 40px;
+}
+
+#content-main-hugo .topOfMain, main .topOfMain {
+	margin-top: 0.5rem;
+	font-size: 2.25rem;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	vertical-align: middle;
+}
+
+.container {
+	/* width: 90%; */
+	margin: 0 auto;
+}
+
+.container-narrower {
+	margin: 1rem auto 0 auto;
+	--containerNarrowerWidth: 80%;
+	width: var(--containerNarrowerWidth);
+	max-width: var(--containerNarrowerWidth);
+	@media screen and (min-width: 1024px) {
+		--containerNarrowerWidth: 50vw;
+		--bigImgDivExpansionWidth: 40vw;
+		--bigImgDivWidth: calc(var(--containerNarrowerWidth) + var(--bigImgDivExpansionWidth));
+		.bigImgDiv:not(li *) {
+			width: var(--bigImgDivWidth);
+			left: calc(calc(var(--bigImgDivWidth) * -1)/2 + 50%);
+		}
+	}
+	@media screen and (min-width: 1536px) {
+		--containerNarrowerWidth: 40vw;
+		--bigImgDivExpansionWidth: 45vw;
+	}
+	@media screen and (min-width: 1920px) {
+		--containerNarrowerWidth: 45rem;
+		/* --bigImgDivExpansionWidth: 60vw; */
+	}
+}
+
+li p {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}
+
+/* === for search button on each page (except search page itself) */
+
+search-button {
+	display: grid;
+	margin: 4em auto 2em;
+	place-items: center;
+	button {
+		width: var(--btn-width);
+		height: var(--btn-height);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0.25em 0;
+		align-items: center;
+		background-color: var(--link);
+		border: 1px solid;
+		border-radius: var(--btn-radius);
+		border-color: transparent;
+		color: var(--btn-text-default);
+		.svg {
+			padding-left: var(--interactionPadding);
+			padding-bottom: 0.125em;
+			svg {
+				width: var(--btn-svg-width);
+				height: auto;
+			}
+		}
+		.legend {
+			padding-right: var(--interactionPadding);
+			text-align: right;
+			font-size: var(--btn-legend-text);
+			font-weight: var(--btn-legend-weight);
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		&:focus, &:active, &:hover {
+			border-color: var(--link-afh);
+			background-color: var(--link-afh);
+		}
+	}
+}
+
+/* === end, search button === */
