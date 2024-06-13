@@ -92,6 +92,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 
 .lyt-visually-hidden {
 	clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
 	clip-path: inset(50%);
 	height: 1px;
 	overflow: hidden;
