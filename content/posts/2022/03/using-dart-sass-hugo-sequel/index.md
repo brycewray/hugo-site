@@ -5,7 +5,9 @@ author: Bryce Wray
 date: 2022-03-09T17:41:00-06:00
 ---
 
-<strong class="red">Important note, 2023-06-19</strong>: There has been a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2), and [Hugo 0.114.0](https://github.com/gohugoio/hugo/releases/tag/v0.114.0) is the first version that supports the new packaging, which uses the [Dart Sass package](https://github.com/sass/dart-sass#embedded-dart-sass). I have revised this post's instructions for Hugo 0.114.0 and newer. If forced to use an older version of Hugo, you must continue with the [older, archived Embedded Dart Sass packaging](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1) and the former versions of the instructions, which you can find in [this page's history](https://github.com/brycewray/hugo-site/commits/main/content/posts/2022/03/using-dart-sass-hugo-sequel/index.md).
+<strong class="red">Important note, 2023-06-19</strong>: There has been a [breaking change in how Embedded Dart Sass is packaged](https://sass-lang.com/blog/rfc-embedded-protocol-2), and [Hugo 0.114.0](https://github.com/gohugoio/hugo/releases/tag/v0.114.0) is the first version that supports the new packaging, which uses the [Dart Sass package](https://github.com/sass/dart-sass#embedded-dart-sass). I have revised this post's instructions for Hugo 0.114.0 and newer. If forced to use an older version of Hugo, you must continue with the [older, archived Embedded Dart Sass packaging](https://github.com/sass/dart-sass-embedded/releases/tag/1.62.1) and the former versions of the instructions, which you can find in [this page's history](https://github.com/brycewray/hugo-site/commits/main/content/posts/2022/03/using-dart-sass-hugo-sequel/index.md).\
+\
+<strong class="red">Additional note, 2024-06-16</strong>: A reader pointed out to me that my 2023-06-19 edit left out an important element (the need to copy over the **entire** Dart Sass directory downloaded in each of the code examples below), so I have now corrected that.
 {.box}
 
 **Note**: For a much more thorough discussion of recent [Sass](https://sass-lang.com)-on-[Hugo](https://gohugo.io) issues, please see my [previous post](/posts/2022/03/using-dart-sass-hugo/). This is a brief follow-up which will assume you've already read that one.
@@ -65,7 +67,7 @@ curl -LJO https://github.com/sass/dart-sass/releases/download/${DARTSASS_VERSION
 
 tar -xvf dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-mv dart-sass/sass $BIN_DIR
+mv dart-sass $BIN_DIR
 
 rm -rf dart-sass*;
 
@@ -95,7 +97,7 @@ echo "Install Dart Sass Embedded..."
 # This is in Vercel's PATH.
 BIN_DIR=${pwd}/bin
 
-DARTSASS_VERSION=1.49.9
+DARTSASS_VERSION=1.63.4
 
 mkdir -p $BIN_DIR
 
@@ -103,7 +105,7 @@ curl -LJO https://github.com/sass/dart-sass/releases/download/${DARTSASS_VERSION
 
 tar -xvf dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-mv dart-sass/sass $BIN_DIR
+mv dart-sass $BIN_DIR
 
 rm -rf dart-sass*;
 
@@ -127,7 +129,7 @@ echo "Install Dart Sass Embedded..."
 # This should be in the PATH.
 BIN_DIR=/opt/buildhome/.binrc/bin
 
-DARTSASS_VERSION=1.49.9
+DARTSASS_VERSION=1.63.4
 
 mkdir -p $BIN_DIR
 
@@ -135,7 +137,7 @@ curl -LJO https://github.com/sass/dart-sass/releases/download/${DARTSASS_VERSION
 
 tar -xvf dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz;
 
-mv dart-sass/sass $BIN_DIR
+mv dart-sass $BIN_DIR
 
 rm -rf dart-sass*;
 
