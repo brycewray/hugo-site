@@ -24,6 +24,7 @@
 		*/
 		p {
 			line-height: 1.5em;
+			text-wrap: pretty;
 		}
 	}
 	.footnote-backref {

@@ -38,6 +38,7 @@
 	padding-top: 1em;
 	line-height: 1.1;
 	letter-spacing: -0.0375em;
+	text-wrap: balance;
 }
 
 .billboard-description-text {
@@ -46,6 +47,7 @@
 		font-weight: var(--font-semilight);
 		font-style: italic;
 	}
+	text-wrap: balance;
 	font-size: clamp(1.25rem, 0.75rem + 1.5vw, 1.75rem);
 	letter-spacing: -0.025em;
 	line-height: 1.4;
