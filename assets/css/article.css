@@ -6,6 +6,7 @@
 		text-decoration: underline;
 		text-decoration-thickness: var(--textDcThickHA);
 		text-underline-offset: var(--textUnOffst);
+		-webkit-text-decoration-skip: ink;
 		text-decoration-skip-ink: auto;
 		&::after {
 			font-size: var(--text-base);

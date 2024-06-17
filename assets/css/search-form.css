@@ -59,6 +59,8 @@ html[data-theme="dark"] {
 }
 
 .searchBtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 	appearance: none;
 	border-radius: 0;
 	position: absolute;
