@@ -116,10 +116,6 @@ html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	-webkit-font-smoothing: subpixel-antialiased;
-	// /* ^^ only for Chromium and Safari on macOS; other browsers use defaults (if any) */
-	-moz-osx-font-smoothing: auto;
-	// /* ^^ only for Firefox on macOS (and not for system fonts); other browsers use defaults (if any) */
 	@media screen and (min-width: 1024px) {
 		font-feature-settings: 'ss03' 1, 'calt' 0;
 		// /* ^^
