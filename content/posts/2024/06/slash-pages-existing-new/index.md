@@ -13,7 +13,7 @@ I would go so far as to guess that a typical personal website has "slash" pages 
 
 After reading "[Slash Pages](https://slashpages.net/)," of which I first learned in Manuel "Manu" Moreale's "[Slashes](https://manuelmoreale.com/slashes)" (<span class="nobrk">2024-06-01</span>), I decided to revamp my site a bit. First, I added these new "slash" pages:
 
-- **[Blogroll](/blogroll/)** --- A list, one which I will strive to keep updated, of those sites whose feeds I follow. And, on that subject . . .
+- **[Blogroll](/blogroll/)** --- A list, one which I will strive to keep updated, of those personal sites whose feeds I follow. And, on that subject . . .
 - **[Follow](/follow/)** --- I took my own feed links and social links off my [Contact](/contact/) "slash" page and moved them to this page, in keeping with the arrangement described in the "Slash Pages" post to which I linked above. The Contact page still has my email address, of course.
 - **[Colophon](/colophon/)** --- This explains how I build and maintain the site. Note that I took some info from the [About](/about/) "slash" page's footer and moved it here, thus eliminating the need to cram it all into that specific footer. This page will also need updating from time to time, I would guess.
 
