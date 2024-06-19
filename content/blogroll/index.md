@@ -33,6 +33,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Bruno Rodrigues](https://www.brodrigues.co/blog/)
 
 ## C
+- [Carlana Johnson](https://blog.carlana.net/)
 - [Cassidy Williams](https://cassidoo.co/)
 - [Catskull](https://catskull.net/)
 - [Chip Cullen](https://chipcullen.com/)
