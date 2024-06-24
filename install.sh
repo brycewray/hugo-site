@@ -2,6 +2,7 @@
 # --- for use with macOS and Linux/WSL
 
 HUGO_VERSION=0.127.0
+# https://github.com/gohugoio/hugo/releases/
 HUGO_OS_ARCH='darwin-universal'
 # ^^^ choices for 'HUGO_OS_ARCH' (Extended Version only):
 # - 'darwin-universal' (macOS Universal Binary, Hugo 0.102.0 and up)
@@ -9,6 +10,7 @@ HUGO_OS_ARCH='darwin-universal'
 # - 'linux-arm64' (Linux/WSL on ARM-64)
 
 DARTSASS_VERSION=1.77.5
+# https://github.com/sass/dart-sass/releases/
 DARTSASS_OS_ARCH='macos-arm64'
 # ^^^ choices for "DARTSASS_OS_ARCH":
 # - 'linux-arm64' (Linux/WSL on ARM-64)
