@@ -9,7 +9,12 @@ goldmark:
         enable: true
       superscript:
         enable: true
+      delete:
+        enable: true
+        # https://github.com/gohugoio/hugo/issues/12597
     linkify: false
+    strikethrough: false
+    # https://github.com/gohugoio/hugo/issues/12597
   parser:
     autoHeadingID: true # otherwise, can't use (e.g.) 'Content' as a heading
     wrapStandAloneImageWithinParagraph: false
