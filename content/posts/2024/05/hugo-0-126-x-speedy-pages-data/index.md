@@ -63,6 +63,11 @@ The formula for water is H~2~O (that shows a subscript).
 
 The formula for water is H~2~O (that shows a subscript).
 
+**Update, 2024-06-25**: This behavior is affected in [Hugo v.0.128.0](https://github.com/gohugoio/hugo/releases/tag/v0.128.0) due to a change in the Goldmark parser; see [Hugo Issue #12597](https://github.com/gohugoio/hugo/issues/12597).
+{.box}
+
+<br />
+
 ```md
 Microsoft Word's default for "1st" is "1^st^" --- which I find annoying, but at least it shows a superscript.
 ```
