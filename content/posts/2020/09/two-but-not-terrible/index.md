@@ -19,6 +19,6 @@ By most sites’ likely standards, this one's traffic is anemic --- typically, o
 
 > Am I anybody special? Nope; just an ordinary working guy who, for decades, has used a multitude of computing devices, operating systems, and apps --- and learned a few things (and formed more than a few opinions) along the way. I've been told I can make complicated things easier to understand, and I try to do the same here.
 
-That's an effort I shall continue to make. This site may be two years old, but I'm determined to make sure it won't be a "[terrible two](https://www.mayoclinic.org/healthy-lifestyle/infant-and-toddler-health/expert-answers/terrible-twos/faq-20058314)."
+That's an effort I shall continue to make. This site may be two years old, but I'm determined to make sure it won't be a "[terrible two](https://www.healthline.com/health/parenting/terrible-twos)."
 
 To all of you who've been part of the site's visitors during its first two years, thanks for your time. To those who will come by in the future, I hope to make each visit worth your while. And, to those who've extended compliments about anything within the site, please know that those kind thoughts mean the world to me.
