@@ -3,10 +3,10 @@
 		"defaults"
 	],
 	"devDependencies": {
-		"browserslist": "^4.23.1",
+		"browserslist": "^4.23.2",
 		"cssnano": "^7.0.4",
 		"postcss": "^8.4.39",
 		"postcss-cli": "^11.0.0",
-		"postcss-preset-env": "^9.5.15"
+		"postcss-preset-env": "^9.6.0"
 	}
 }
