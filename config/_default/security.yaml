@@ -6,6 +6,7 @@ exec:
   - ^postcss$
   - ^subl$
   - ^open$
+  - ^git$
 funcs:
   getenv:
   - ^*
