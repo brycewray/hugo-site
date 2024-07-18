@@ -108,3 +108,4 @@ So, now, you've automated both (a.) displaying that `Lastmod` stuff and (b.) lin
 {.box}
 
 **Update, 2024-07-18**: Beginning with Hugo [v. 0.129.0](https://github.com/gohugoio/hugo/releases/tag/v0.129.0), the use of Git info variables requires updating your Hugo configuration if it has a [custom security policy](https://gohugo.io/about/security/#security-policy): specifically, you'll need to add `^git$` to your `exec`/`allow` list. However, if you don't have such a policy in your Hugo config, Hugo's built-in whitelisting should handle things.
+{.box}
