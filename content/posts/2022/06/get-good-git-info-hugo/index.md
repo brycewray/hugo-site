@@ -106,3 +106,5 @@ So, now, you've automated both (a.) displaying that `Lastmod` stuff and (b.) lin
 
 **Update, 2022-10-07**: If you're interested in displaying **both** per-page Git info **and** whole-site Git info in your Hugo site, check the [solution](https://github.com/gohugoio/hugo/issues/9738#issuecomment-1086669372) suggested by Hugo expert/contributor [Joe Mooring](https://github.com/jmooring). Thanks to [Rodrigo Alcaraz de la Osa](https://github.com/rodrigoalcarazdelaosa) for the [Q&amp;A session](https://github.com/brycewray/comments/discussions/25) that led me toward this additional information!
 {.box}
+
+**Update, 2024-07-18**: Beginning with Hugo [v. 0.129.0](https://github.com/gohugoio/hugo/releases/tag/v0.129.0), the use of Git info variables requires updating your Hugo configuration if it has a [custom security policy](https://gohugo.io/about/security/#security-policy): specifically, you'll need to add `^git$` to your `exec`/`allow` list. However, if you don't have such a policy in your Hugo config, Hugo's built-in whitelisting should handle things.
