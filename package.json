@@ -5,7 +5,7 @@
 	"devDependencies": {
 		"browserslist": "^4.23.3",
 		"cssnano": "^7.0.5",
-		"postcss": "^8.4.43",
+		"postcss": "^8.4.44",
 		"postcss-cli": "^11.0.0",
 		"postcss-preset-env": "^10.0.2"
 	}
