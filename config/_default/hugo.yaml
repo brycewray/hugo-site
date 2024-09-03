@@ -19,7 +19,10 @@ languageCode: en-us
 # # - https://www.lkhrs.com/blog/2022/10/hugo-ia-writer/
 # # - https://discourse.gohugo.io/t/newcontenteditor-trouble-with-spaces/40930
 
-paginate: 5 # so five posts will appear on each page from '/posts'
+pagination:
+  # disableAliases: false
+  pagerSize: 5 # so five posts will appear on each page from '/posts' # default = 10
+  # path: page
 
 rssLimit: 10 # default is -1 (unlimited); setting of '10' conforms to Eleventy repo's handling
 
