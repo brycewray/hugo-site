@@ -125,7 +125,6 @@ article {
 		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
-		text-wrap: pretty;
 	}
 	li li, li p {
 		font-size: inherit;
@@ -136,7 +135,6 @@ article {
 		margin-bottom: 1.5rem;
 		letter-spacing: -0.02em;
 		line-height: normal;
-		text-wrap: balance;
 	}
 	picture img {
 		height: auto;
@@ -158,7 +156,6 @@ article {
 	p {
 		padding: 0;
 		margin: 0;
-		text-wrap: pretty;
 	}
 	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
 		margin-top: 1.75em;

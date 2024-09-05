@@ -55,12 +55,21 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
+/* Balance text wrapping as appropriate (browser support varies) */
+/* Some of this based on Kevin Powell video, 2024-09-04 */
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+	text-wrap: pretty;
 }
 
 /* A elements that don't have a class get default styles */
