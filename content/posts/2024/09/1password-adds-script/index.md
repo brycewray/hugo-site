@@ -7,7 +7,7 @@ date: 2024-09-14T12:54:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
-In much the same way as I [previously](/posts/2023/11/take-note-new-bitwarden-script) decided to advise of a [Bitwarden](https://bitwarden.com/) script that could inflate your JavaScript load, here's some word of an apparently recent change to the [1Password](https://1password.com) browser extension.
+In much the same way as I [previously](/posts/2023/11/take-note-new-bitwarden-script) decided to advise of a [Bitwarden](https://bitwarden.com/) script that could inflate your JavaScript load, I'm passing along some word of what I assume is a recent change to the [1Password](https://1password.com) browser extension.
 
 <!--more-->
 
