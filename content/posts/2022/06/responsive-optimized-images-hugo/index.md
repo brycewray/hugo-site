@@ -7,7 +7,7 @@ date: 2022-06-29T08:17:00-05:00
 #initTextEditor: iA Writer
 ---
 
-**Update from the future**: I have considerably updated this 2022 post because I later made significant changes to the methods described in the **original** version of this post. In essence, I have taken [three](/posts/2022/09/new-way-lqips-hugo-0-104-0/) [other](/posts/2023/04/better-code-image-processing-hugo/) [posts](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/) from later, imported their best information while (I hope) improving it, and put it here so it'll all be in one package --- which, so past analytics have told me, consistently gets a major percentage of the site's visits. I've also noted in those three posts that the good stuff is now here.
+**Update from the future**: I have considerably updated this 2022 post because I later made significant changes to the methods described in the **original** version of this post. In essence, I have taken [three](/posts/2022/09/new-way-lqips-hugo-0-104-0/) [other](/posts/2023/04/better-code-image-processing-hugo/) [posts](/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/) from later, imported their best information while (I hope) improving it, and put it here so it'll all be in one package --- which, so past analytics have told me, consistently gets a major percentage of the site's visits. I've also noted in those three posts that the good stuff is now here. Finally, based on a helpful suggestion from a reader, I have slightly changed the code for creating image placeholders (more about that in the appropriate place, below).
 {.box}
 
 If you use any images on your website, you probably know how important it is to make them fully *responsive* and as *optimized* as possible so they provide an optimal user experience, regardless of screen size or connectivity. Fortunately, the [Hugo](https://gohugo.io) [static site generator](https://github.com/myles/awesome-static-generators) (SSG) comes with many impressive [image processing capabilities](https://gohugo.io/content-management/image-processing/) which can help you automate this to an amazing degree. Hugo can resize images of all sizes, convert them to multiple different formats, and perform many more image processing feats --- all much more quickly than can any other SSG.
@@ -66,7 +66,7 @@ First, the partial for the `head` (as noted above, I call it from within my main
 		{{- $src := . -}}
 		{{- $imgBd5 := md5 .Name -}}
 		{{- $BkgdStyleEnd := print " center / cover no-repeat; aspect-ratio: " $src.Width " / " $src.Height ";" -}}
-		{{- $GIP_img := $src.Process "resize 20x jpg q20" -}}
+		{{- $GIP_img := $src.Process "resize 20x webp q20" -}}
 		{{- /* ^^ documentation says we get better performance by shrinking first */ -}}
 		{{- $GIP_colors := $GIP_img.Colors -}}
 		{{- if (lt ($GIP_colors | len) 2) -}}
@@ -74,9 +74,9 @@ First, the partial for the `head` (as noted above, I call it from within my main
 		{{- end -}}
 		{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
 		{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
-		{{- $LQIP_img := $src.Process "resize 20x jpg q20" -}}
+		{{- $LQIP_img := $src.Process "resize 20x webp q20" -}}
 		{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
+		{{- $BkgdStyleLQIP := print "background: url(data:image/webp;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
 		.imgB-{{ $imgBd5 }}-GIP {
 			{{ $BkgdStyleGIP | safeCSS }}
 		}
@@ -87,6 +87,9 @@ First, the partial for the `head` (as noted above, I call it from within my main
 	</style>
 {{ end }}
 ```
+
+**Update from the future**: The preceding code formerly created LQIPs and GIPs from JPGs but, at the suggestion of a reader, I've changed that so it now makes those placeholders from WebP images, which are considerably smaller and work on pretty much any modern, non-dead browser.
+{.box}
 
 Then, the `render-image` template:
 
