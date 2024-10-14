@@ -4,7 +4,7 @@
 		{{- $src := . -}}
 		{{- $imgBd5 := md5 .Name -}}
 		{{- $BkgdStyleEnd := print " center / cover no-repeat; aspect-ratio: " $src.Width " / " $src.Height ";" -}}
-		{{- $GIP_img := $src.Process "resize 20x jpg q20" -}}
+		{{- $GIP_img := $src.Process "resize 20x webp q20" -}}
 		{{- /* ^^ documentation says we get better performance by shrinking first */ -}}
 		{{- $GIP_colors := $GIP_img.Colors -}}
 		{{- if (lt ($GIP_colors | len) 2) -}}
@@ -12,9 +12,9 @@
 		{{- end -}}
 		{{- $GIP_bkgd := delimit ($GIP_colors) ", " -}}
 		{{- $BkgdStyleGIP := print "background: linear-gradient(" $GIP_bkgd ")" $BkgdStyleEnd -}}
-		{{- $LQIP_img := $src.Process "resize 20x jpg q20" -}}
+		{{- $LQIP_img := $src.Process "resize 20x webp q20" -}}
 		{{- $LQIP_b64 := $LQIP_img.Content | base64Encode -}}
-		{{- $BkgdStyleLQIP := print "background: url(data:image/jpeg;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
+		{{- $BkgdStyleLQIP := print "background: url(data:image/webp;base64," $LQIP_b64 ")" $BkgdStyleEnd }}
 		.imgB-{{ $imgBd5 }}-GIP {
 			{{ $BkgdStyleGIP | safeCSS }}
 		}
