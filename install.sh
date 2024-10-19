@@ -9,7 +9,7 @@ HUGO_OS_ARCH='darwin-universal'
 # - 'linux-amd64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
 
-DARTSASS_VERSION=1.80.2
+DARTSASS_VERSION=1.80.3
 # https://github.com/sass/dart-sass/releases/
 DARTSASS_OS_ARCH='macos-arm64'
 # ^^^ choices for "DARTSASS_OS_ARCH":
