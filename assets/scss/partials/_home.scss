@@ -89,11 +89,12 @@ html[data-theme="dark"] {
 
 .homePost-Description {
 	// /* margin-top: 0.5em; */
+	text-wrap: balance;
 	letter-spacing: -0.025em;
 	font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
 	// /* font-family: var(--serif); */
-	font-style: italic;
 	@media screen and (min-width: 1024px) {
+		font-style: italic;
 		font-weight: var(--font-semilight);
 	}
 }
