@@ -1,6 +1,6 @@
 ---
 title: "Sass mixed declarations change"
-description: "If you upgrade to Dart Sass 1.77+, you may need to move around some nested items in your styling."
+description: "If you upgrade to Dart Sass 1.77.7+, you may need to move around some nested items in your styling."
 author: Bryce Wray
 date: 2024-11-18T16:15:00-06:00
 # draft: true
