@@ -12,28 +12,6 @@
 	.prevDiv, .nextDiv {
 		line-height: clamp(1em, 1vw + 0.75em, 1.25em);
 	}
-	.prevnextText {
-		display: none;
-		@media screen and (min-width: 1024px) {
-			display: block;
-			margin: 0 auto;
-			font-size: clamp(0.625rem, 0.75vw + 0.625em, 1.25em);
-			letter-spacing: -0.025em;
-			a {
-				font-weight: var(--font-normal);
-				color: var(--link-nav);
-				text-decoration: none;
-				&:hover, &:focus {
-					color: var(--link-nav-afh);
-					text-decoration: none;
-					text-decoration-thickness: var(--textDcThickMd);
-					text-underline-offset: var(--textUnOffst);
-					-webkit-text-decoration-skip: ink;
-					text-decoration-skip-ink: auto;
-				}
-			}
-		}
-	}
 	--arrowPadding: clamp(1.5em, 0.75vw + 0.625em, 2.5em);
 	.prevArrow {
 		padding-left: var(--arrowPadding);
@@ -76,6 +54,28 @@
 		fill: var(--link-nav);
 		&:hover, &:focus {
 			fill: var(--link-nav-afh);
+		}
+	}
+	.prevnextText {
+		display: none;
+		@media screen and (min-width: 1024px) {
+			display: block;
+			margin: 0 auto;
+			font-size: clamp(0.625rem, 0.75vw + 0.625em, 1.25em);
+			letter-spacing: -0.025em;
+			a {
+				font-weight: var(--font-normal);
+				color: var(--link-nav);
+				text-decoration: none;
+				&:hover, &:focus {
+					color: var(--link-nav-afh);
+					text-decoration: none;
+					text-decoration-thickness: var(--textDcThickMd);
+					text-underline-offset: var(--textUnOffst);
+					-webkit-text-decoration-skip: ink;
+					text-decoration-skip-ink: auto;
+				}
+			}
 		}
 	}
 }

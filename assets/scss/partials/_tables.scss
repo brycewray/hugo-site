@@ -25,10 +25,10 @@ table.noborders {
 			margin: 0;
 			display: block;
 			max-width: 60%;
+			height: auto;
 			@media screen and (min-width: 768px) {
 				max-width: 40%;
 			}
-			height: auto;
 		}
 	}
 	tr:nth-child(odd) {

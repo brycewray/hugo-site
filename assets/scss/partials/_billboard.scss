@@ -5,14 +5,14 @@
 	padding-right: 1.5rem;
 	padding-left: 1.5rem;
 	padding-bottom: 1vh;
-	@media screen and (min-width: 768px) {
-		padding-right: 3rem;
-		padding-left: 3rem;
-	}
 	// /* code {
 	// 	background-color: transparent;
 	// } */
 	color: var(--head);
+	@media screen and (min-width: 768px) {
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
 }
 
 .billboard-title-block {
@@ -43,15 +43,15 @@
 
 .billboard-description-text {
 	// /* font-family: var(--serif); */
-	@media screen and (min-width: 1024px) {
-		font-weight: var(--font-semilight);
-		font-style: italic;
-	}
 	text-wrap: balance;
 	font-size: clamp(1.25rem, 0.75rem + 1.5vw, 1.75rem);
 	letter-spacing: -0.025em;
 	line-height: 1.4;
 	padding-top: 1em;
+	@media screen and (min-width: 1024px) {
+		font-weight: var(--font-semilight);
+		font-style: italic;
+	}
 }
 
 .billboard-p-text {

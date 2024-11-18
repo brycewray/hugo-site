@@ -14,16 +14,6 @@
 	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--textUnOffst: 0.25em; // /* always em -- min-width: 768px */
-	@media screen and (min-width: 1024px) {
-		--sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		--textUnOffst: 0.2875em;
-		// /*
-		// 	^ ^ ^
-		// 	serve non-system fonts to only larger screens,
-		// 	to make it easier on phones, especially where
-		// 	bandwidth is at a premium
-		// */
-	}
 
 // /*
 // Remember: Apple's San Francisco is not variable, so it won't show "half-weights" (e.g., 350) as desired. Instead, it has nine distinct weights.
@@ -61,9 +51,6 @@
 	--textDcThick: 0.05rem; // /* always rem */
 	// /* ^^^ Segoe UI needs at least 0.25em. */
 	--textDcThickHA: 0.075rem; // /* always rem -- for `header-anchor` */
-	@media screen and (min-width: 1024px) {
-		--textDcThick: 0.0625rem; // /* always rem */
-	}
 
 	// /*
 	// ==== end, TYPOGRAPHY ====
@@ -93,4 +80,15 @@
 	--btn-svg-width: 1.25em; // /* height will be auto */
 	--btn-legend-text: var(--text-base);
 	--btn-legend-weight: var(--font-semibold);
+	@media screen and (min-width: 1024px) {
+		--sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		--textUnOffst: 0.2875em;
+		// /*
+		// 	^ ^ ^
+		// 	serve non-system fonts to only larger screens,
+		// 	to make it easier on phones, especially where
+		// 	bandwidth is at a premium
+		// */
+			--textDcThick: 0.0625rem; // /* always rem */
+	}
 }

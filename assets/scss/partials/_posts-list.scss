@@ -54,12 +54,12 @@
 	font-size: clamp(0.95rem, 0.625rem + 1vw, 1.25rem);
 	// /* font-family: var(--serif); */
 	font-style: italic;
-	@media screen and (min-width: 1024px) {
-		font-weight: var(--font-semilight);
-	}
 	letter-spacing: -0.025em;
 	// /* margin-top: 0.5em; */
 	margin-bottom: 0.25em;
+	@media screen and (min-width: 1024px) {
+		font-weight: var(--font-semilight);
+	}
 }
 
 .posts-Dates {
