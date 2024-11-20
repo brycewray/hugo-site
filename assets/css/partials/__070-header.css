@@ -13,9 +13,6 @@ header {
 }
 
 .nav-Toggle {
-	@media only screen and (min-width: 1024px) {
-		display: none;
-	}
 	position: absolute;
 	cursor: pointer;
 	margin: 0rem 1rem;
@@ -26,6 +23,9 @@ header {
 		fill: var(--white);
 	}
 	.close {
+		display: none;
+	}
+	@media only screen and (min-width: 1024px) {
 		display: none;
 	}
 }

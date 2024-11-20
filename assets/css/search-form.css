@@ -47,15 +47,15 @@ html[data-theme="dark"] {
 }
 
 .searchInput {
-	@media (min-width: 768px) {
-		max-width: 300ch;
-	}
 	outline: none;
 	padding: 0.25em 0.5em 0.25em;
 	margin: 0;
 	border: 0;
 	color: var(--input);
 	background-color: transparent;
+	@media (min-width: 768px) {
+		max-width: 300ch;
+	}
 }
 
 .searchBtn {

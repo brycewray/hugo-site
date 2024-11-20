@@ -334,12 +334,12 @@ a > .card, a > .toot-card {
 
 .toot-card-image {
 	flex: 0 0 100px;
-	@media screen and (min-width: 768px) {
-		flex: 0 0 200px;
-	}
 	border-right: 2px solid;
 	border-right-color: var(--gray-400);
 	position: relative;
+	@media screen and (min-width: 768px) {
+		flex: 0 0 200px;
+	}
 }
 
 .toot-card-image-image {
