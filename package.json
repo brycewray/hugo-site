@@ -1,6 +1,8 @@
 {
 	"browserslist": [
-		"defaults"
+		"defaults",
+		"not dead",
+		"not op_mini all"
 	],
 	"devDependencies": {
 		"browserslist": "^4.24.2",
