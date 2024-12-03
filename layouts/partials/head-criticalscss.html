@@ -50,10 +50,10 @@
 				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 				--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 				--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
-				--textUnOffst: 0.25em; /* always em -- min-width: 768px */
+				--text-un-offset: 0.25em; /* always em -- min-width: 768px */
 				@media screen and (min-width: 1024px) {
 					--sans-serif: "{{ $fontFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-					--textUnOffst: 0.2875em;
+					--text-un-offset: 0.2875em;
 					/*
 						^ ^ ^
 						serve non-system fonts to only larger screens,
@@ -76,16 +76,10 @@
 	{{- end }}
 {{- end }}
 
-{{- if hugo.IsProduction -}}
-	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/critical.min.css" "outputStyle" "compressed") -}}
-{{- else -}}
-	{{- $scssOptions = merge $scssOptions (dict "targetPath" "css/critical.css") -}}
-{{- end -}}
 {{- $css := resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | fingerprint -}}
+	{{- $css = $css | postCSS -}}
 {{- end -}}
 {{- with $css -}}
-	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<style>{{ .Content | safeCSS }}</style>
 {{- end }}
