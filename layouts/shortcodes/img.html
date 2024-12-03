@@ -14,7 +14,7 @@
 {{- $imgBd5 := md5 $src -}}
 {{- $divClass := "relative" -}}
 {{- if not $phn -}}
-	{{- $divClass = print $divClass " bigImgDiv" -}}
+	{{- $divClass = print $divClass " big-img-div" -}}
 	{{- if $rounds -}}
 		{{- $divClass = print $divClass " rounded-bkgd" -}}
 		{{/* For LQIPs behind rounded imgs (e.g., screen caps). */}}
@@ -32,7 +32,7 @@
 {{- end -}}
 {{- $imgClass := "w-full animate-fade shadow" -}}
 {{- if $phn -}}
-	{{- $imgClass = "img-phn ctrImg animate-fade shadow" -}}
+	{{- $imgClass = "img-phn ctr-img animate-fade shadow" -}}
 {{- end -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 

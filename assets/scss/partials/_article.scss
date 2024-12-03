@@ -1,13 +1,15 @@
+/* stylelint-disable no-descending-specificity */
 .header-anchor {
 	text-decoration: none;
 	color: var(--head);
+
 	&:hover, &:active, &:focus {
 		color: var(--link);
 		text-decoration: underline;
-		text-decoration-thickness: var(--textDcThickHA);
-		text-underline-offset: var(--textUnOffst);
-		-webkit-text-decoration-skip: ink;
+		text-decoration-thickness: var(--text-dc-thick-ha);
+		text-underline-offset: var(--text-un-offset);
 		text-decoration-skip-ink: auto;
+
 		&::after {
 			font-size: var(--text-base);
 			padding-left: 0.5em;
@@ -16,7 +18,7 @@
 	}
 }
 
-img.containedImage {
+img.contained-image {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -24,14 +26,14 @@ img.containedImage {
 	margin: 0 auto;
 }
 
-img.ctrImg {
+img.ctr-img {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .shadow {
-	-webkit-filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
+	// -webkit-filter: drop-shadow(0 -0.25em 0.75em var(--filter-shadow));
 	// /*
 	// 	Above is needed for Safari, but won't get through Lightning CSS
 	// 	(https://github.com/parcel-bundler/lightningcss/issues/537).
@@ -56,18 +58,21 @@ html[data-theme="dark"] .shadow {
 
 .img-phn {
 	width: 90%;
-	@media screen and (min-width: 768px) {
+
+	@media screen and (width >= 768px) {
 		width: 75%;
 	}
-	@media screen and (min-width: 1536px) {
+
+	@media screen and (width >= 1536px) {
 		width: 62.5%;
 	}
-	@media screen and (min-width: 1920px) {
+
+	@media screen and (width >= 1920px) {
 		width: 50%;
 	}
 }
 
-.imgcCaption, .imghCaption, .imgCaption {
+.imgc-caption, .imgh-caption, .img-caption {
 	padding: 0.375em 0 1em;
 	margin-block-start: 0.5em;
 	line-height: 1.375;
@@ -76,68 +81,90 @@ html[data-theme="dark"] .shadow {
 	text-align: center;
 }
 
-.punctuationExample {
+.punctuation-example {
 	font-size: 1.5em;
 	font-weight: normal;
 	font-family: var(--serif);
 	text-align: center;
 }
 
-.indentAfterLI {
+.indent-after-li {
 	margin-left: 2em; // /* 2em with Public Sans, 2.25em with Inter */
 	&.box {
-		--bIALImarginLeft: 3em;
-		margin-left: var(--bIALImarginLeft);
-		width: calc(100% - var(--bIALImarginLeft));
+		--b-indent-after-li-margin-left: 3em;
+
+		margin-left: var(--b-indent-after-li-margin-left);
+		width: calc(100% - var(--b-indent-after-li-margin-left));
 	}
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
 	0% {
 		opacity: 0;
 	}
-	to {
+
+	100% {
 		opacity: 1;
 	}
 }
 
 .animate-fade {
-	animation: fadeIn 750ms ease-in-out;
+	animation: fade-in 750ms ease-in-out;
 }
 
 blockquote {
 	border-left: 4px solid;
 	border-left-color: var(--border-bquote);
+
 	// /* ^^^ same for both light and dark modes */
 	color: var(--bquote);
 	margin-right: 0;
 	margin-left: 0;
 	padding-left: 1.5em;
+
 	p:last-child {
 		margin-bottom: 0;
 	}
 }
 
 article {
-	padding-top: 1em; // /* definitely em, not rem */
+	padding-top: 1em; /* definitely em, not rem */
 	p, li {
 		font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
 		line-height: 1.5em;
 		margin-top: 1.15em;
 		margin-bottom: 1.15em;
 	}
+
 	li li, li p {
 		font-size: inherit;
-		margin-top: 0.25em; // /* definitely em, not rem */
+		margin-top: 0.25em; /* definitely em, not rem */
 	}
+
 	h1, h2, h3, h4 {
 		margin-top: 1.5em;
 		margin-bottom: 1.5rem;
 		letter-spacing: -0.02em;
 		line-height: normal;
 	}
+
 	picture img {
 		height: auto;
+	}
+}
+
+blockquote {
+	border-left: 4px solid;
+	border-left-color: var(--border-bquote);
+
+	/* ^^^ same for both light and dark modes */
+	color: var(--bquote);
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 1.5em;
+
+	p:last-child {
+		margin-bottom: 0;
 	}
 }
 
@@ -153,22 +180,26 @@ article {
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
+
 	p {
 		padding: 0;
 		margin: 0;
 	}
-	+ hr { // /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
+
+	+ hr { /* for situations like in "Gems in the rough #4" as of 2021-04-15 */
 		margin-top: 1.75em;
 	}
+
 	.red {
 		color: var(--box-red);
 	}
 }
 
-// /*
-// following from...
-// https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
-// */
+/*
+following from...
+https://www.stefanjudis.com/snippets/how-to-select-elements-that-are-not-children-of-other-elements-in-css/
+*/
+/* stylelint-disable-next-line selector-not-notation */
 article strong:not(.red *):not(a *):not(blockquote *):not(details *),
 article b:not(.red *):not(a *):not(blockquote *):not(details *),
 article em:not(.red *):not(a *):not(blockquote *):not(th *),
@@ -179,20 +210,15 @@ article i b:not(.red *):not(a *):not(blockquote *),
 article b i:not(.red *):not(a *):not(blockquote *) {
 	color: var(--boost);
 }
-article strong:is(blockquote *):not(a *),
-article b:is(blockquote *):not(a *),
-article em:is(blockquote *):not(a *),
-article i:is(blockquote *):not(a *),
-article em strong:is(blockquote *):not(a *),
-article strong em:is(blockquote *):not(a *),
-article i b:is(blockquote *):not(a *),
-article b i:is(blockquote *):not(a *) {
+
+article strong:is(blockquote *):not(a *), article b:is(blockquote *):not(a *), article em:is(blockquote *):not(a *), article i:is(blockquote *):not(a *), article em strong:is(blockquote *):not(a *), article strong em:is(blockquote *):not(a *), article i b:is(blockquote *):not(a *), article b i:is(blockquote *):not(a *) {
 	color: var(--bquote-boost);
 }
 
 .gitinfo {
 	margin: 2em 0;
 	line-height: inherit;
+
 	code {
 		background-color: transparent;
 	}

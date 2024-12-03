@@ -1,6 +1,10 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable selector-type-no-unknown */
+
 :root {
-	--navRightMargin: 9.5em;
-	--navToggleRightMargin: 9em;
+	--nav-right-margin: 9.5em;
+	--nav-toggle-right-margin: 9em;
+
 	// /* all these unless JS is off */
 }
 
@@ -12,78 +16,91 @@ header {
 	z-index: 9999;
 }
 
-.nav-Toggle {
+.nav-toggle {
 	position: absolute;
 	cursor: pointer;
 	margin: 0rem 1rem;
-	right: var(--navToggleRightMargin);
+	right: var(--nav-toggle-right-margin);
+
 	svg {
 		padding-top: 0.425em;
 		width: 1.5rem;
 		fill: var(--white);
 	}
+
 	.close {
 		display: none;
 	}
-	@media only screen and (min-width: 1024px) {
+
+	@media only screen and (width >= 1024px) {
 		display: none;
 	}
 }
 
-.nav-Checkbox {
+.nav-checkbox {
 	display: none;
 }
 
-.nav-Menu {
-	margin-block-start: 0;
-	margin-block-end: 0;
+.nav-menu {
+	margin-block: 0;
 	padding-inline-start: 0;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 	text-align: right;
+
 	// /* align-items: right; */
 	margin: 0.5rem 0.5rem 0.5rem 0;
+
 	li {
 		list-style: none;
 		display: none;
 		font-weight: var(--font-bold);
-		padding-right: calc(1em + var(--navToggleRightMargin));
-		&.notMobile {
+		padding-right: calc(1em + var(--nav-toggle-right-margin));
+
+		&.not-mobile {
 			display: none;
 		}
+
 		&:first-child {
 			padding: 0;
 			margin-right: auto;
 			margin-left: 1.5rem;
 			display: block;
+
 			svg { // /* for site logo */
 				width: auto;
 			}
 		}
 	}
+
 	a {
 		text-decoration: none;
 		border: 0;
 		color: var(--link-nav);
+
 		&:focus, &:active, &:hover {
 			color: var(--link-nav-afh);
 		}
 	}
-	@media only screen and (min-width: 1024px) {
+
+	@media only screen and (width >= 1024px) {
 		flex-direction: row;
 		padding: 0;
 		gap: 0.5rem;
-		margin: 0.375rem var(--navRightMargin) 0 0;
+		margin: 0.375rem var(--nav-right-margin) 0 0;
+
 		li {
 			font-size: var(--text-sm);
 			display: block;
 			text-transform: lowercase;
-			margin: 0.5rem 0 0.5rem 0;
+			margin: 0.5rem 0;
 			padding-right: 0.75em;
-			&.notMobile {
+
+			&.not-mobile {
 				display: block;
 			}
+
 			&:first-child {
 				letter-spacing: normal;
 				line-height: 0;
@@ -93,17 +110,20 @@ header {
 	}
 }
 
-#nav-Checkbox {
-	&:checked ~ ul.nav-Menu li {
+#nav-checkbox {
+	&:checked ~ ul.nav-menu li {
 		display: block;
 	}
-	&:checked ~ label.nav-Toggle .close {
+
+	&:checked ~ label.nav-toggle .close {
 		display: block;
 	}
-	&:checked ~ label.nav-Toggle .menu {
+
+	&:checked ~ label.nav-toggle .menu {
 		display: none;
 	}
-	&:checked ~ ul.nav-Menu {
+
+	&:checked ~ ul.nav-menu {
 		padding-bottom: 1rem;
 	}
 }
@@ -117,7 +137,7 @@ header {
 // 	cursor: pointer;
 // 	top: 0.15em;
 // 	right: 0.5em;
-// 	@media (min-width: 1024px) {
+// 	@media (width >= 1024px) {
 // 		right: 1.5em;
 // 	}
 // 	background-color: transparent;
@@ -131,7 +151,7 @@ header {
 // 	}
 // } */
 
-.switchTheme {
+.switch-theme {
 	position: absolute;
 	top: 0.45em;
 	right: 1.5em;
@@ -140,29 +160,35 @@ header {
 	gap: 0;
 	background-color: transparent;
 	border: 0;
+
 	label {
 		cursor: pointer;
 		padding: 0;
 		margin: 0;
+
 		svg {
 			width: 1.125em;
 			height: auto;
+
 			&.sun circle,
 			&.sun path,
 			&.auto path,
 			&.moon path,
 			&.moon stroke {
 				fill: var(--link-nav);
+
 				&:focus, &:active, &:hover {
 					fill: var(--link-nav-afh);
 				}
 			}
 		}
 	}
+
 	input[type="radio"] {
 		opacity: 0;
 		padding: 0;
 		margin: 0;
+
 		span {
 			display: inline-block;
 			width: 1rem;
@@ -171,6 +197,7 @@ header {
 			margin: 0;
 			line-height: 1rem;
 		}
+
 		&:checked+span {
 			svg {
 				&.sun circle,
@@ -185,13 +212,14 @@ header {
 	}
 }
 
-circle.NavIcon {
+circle.nav-icon {
 	fill: var(--logocircle);
 }
-a:hover circle.NavIcon {
+
+a:hover circle.nav-icon {
 	fill: var(--logocircle-afh);
 }
 
-path.NavIcon {
+path.nav-icon {
 	fill: var(--white);
 }

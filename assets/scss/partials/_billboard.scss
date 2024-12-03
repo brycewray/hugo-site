@@ -5,11 +5,13 @@
 	padding-right: 1.5rem;
 	padding-left: 1.5rem;
 	padding-bottom: 1vh;
+
 	// /* code {
 	// 	background-color: transparent;
 	// } */
 	color: var(--head);
-	@media screen and (min-width: 768px) {
+
+	@media screen and (width >= 768px) {
 		padding-right: 3rem;
 		padding-left: 3rem;
 	}
@@ -48,7 +50,8 @@
 	letter-spacing: -0.025em;
 	line-height: 1.4;
 	padding-top: 1em;
-	@media screen and (min-width: 1024px) {
+
+	@media screen and (width >= 1024px) {
 		font-weight: var(--font-semilight);
 		font-style: italic;
 	}

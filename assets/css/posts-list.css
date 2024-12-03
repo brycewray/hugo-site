@@ -1,116 +1,126 @@
-.posts-pagerGray {
+.posts-pager-gray {
 	color: var(--gray-300);
 }
 
-.posts-pagerThing {
+.posts-pager-thing {
 	display: flex;
 	flex-direction: row;
 	gap: 1em;
 	justify-content: center;
-	.pagerSpacer {
+
+	.pager-spacer {
 		width: 0.625em;
-		@media screen and (min-width: 768px) {
+
+		@media screen and (width >= 768px) {
 			width: 1.25em;
 		}
-		@media screen and (min-width: 1024px) {
-			width: 1.5em
+
+		@media screen and (width >= 1024px) {
+			width: 1.5em;
 		}
 	}
 }
 
-.posts-Container {
+.posts-container {
 	margin: 0 auto;
 	width: 85%;
-	@media screen and (min-width: 1024px) {
+
+	@media screen and (width >= 1024px) {
 		width: 75%;
 	}
-	@media screen and (min-width: 1536px) {
+
+	@media screen and (width >= 1536px) {
 		width: 62.5%;
 	}
 }
 
-.posts-ItemDiv {
+.posts-item-div {
 	margin: 0;
 	padding: 0;
 }
 
-.posts-Head {
+.posts-head {
 	padding-top: clamp(1.75rem, 5vh, 3rem);
 	font-size: clamp(2.5rem, 1rem + 3vw, 3.5rem);
 	letter-spacing: -0.0375em;
 	margin-bottom: 0.25em;
 }
 
-.posts-Title {
+.posts-title {
 	padding: 0;
 	font-size: clamp(1.25rem, 0.625rem + 1.75vw, 2rem);
+
 	/* font-family: var(--serif); */
 	font-weight: var(--font-medium);
 	line-height: 1.25em;
 	letter-spacing: -0.025em;
 }
 
-.posts-Description {
+.posts-description {
 	font-size: clamp(0.95rem, 0.625rem + 1vw, 1.25rem);
+
 	/* font-family: var(--serif); */
 	font-style: italic;
 	letter-spacing: -0.025em;
+
 	/* margin-top: 0.5em; */
 	margin-bottom: 0.25em;
-	@media screen and (min-width: 1024px) {
+
+	@media screen and (width >= 1024px) {
 		font-weight: var(--font-semilight);
 	}
 }
 
-.posts-Dates {
+.posts-dates {
 	font-size: clamp(0.825rem, 0.25rem + 1vw, 1rem);
 	line-height: 1.33;
 	margin-bottom: 0.5em;
+
 	time {
 		display: inline;
 	}
 }
 
-hr.paginatorTop, hr.paginatorBottom {
+hr.paginator-top, hr.paginator-bottom {
 	border: none;
 	height: 1px;
 	background-color: var(--bkgd-hr);
 	width: clamp(65%, 75vw, 90%);
 }
 
-hr.paginatorTop {
+hr.paginator-top {
 	margin-top: 0.5em;
 	margin-bottom: 1.5em;
 }
 
-hr.paginatorBottom {
-	margin-top: 0em;
+hr.paginator-bottom {
+	margin-top: 0;
 	padding: 0;
 }
 
 .pagination {
 	list-style-type: none;
 	margin-block-start: 0;
-	margin-inline-start: 0;
-	margin-inline-end: 0;
+	margin-inline: 0;
 	padding-inline-start: 0;
+
 	li {
 		display: inline;
 	}
 }
 
-.arrowStop {
+.arrow-stop {
 	color: var(--gray-300);
 }
 
-path.FirstLast {
+path.first-last {
 	fill: var(--gray-400);
 }
 
-path.NextPrev {
+path.next-prev {
 	fill: var(--link);
 }
 
-a:hover path.NextPrev {
+a:hover path.next-prev {
 	fill: var(--link-afh);
 }

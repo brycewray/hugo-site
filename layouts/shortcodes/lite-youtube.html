@@ -9,5 +9,5 @@
 		<span class="lyt-visually-hidden">Play video: {{ $videoTitle }}</span>
 	</button>
 </lite-youtube>
-<noscript><p class="ctr legal tightLead sansSerif"><em>[Video playback capability requires JavaScript to be&nbsp;enabled.]</em></p></noscript>
-<p class="ctr legal tightLead sansSerif lyt-disclaimer"><strong class="red">Note</strong>: Clicking&nbsp;the&nbsp;video constitutes your consent to view&nbsp;it via&nbsp;YouTube (including&nbsp;cookies). To&nbsp;view&nbsp;it on the YouTube&nbsp;site instead, please&nbsp;use&nbsp;<a href="https://www.youtube.com/embed/{{ $videoId }}{{ with .Get "params" }}?{{ . | safeURL }}{{ end }}" rel="noopener">this&nbsp;link</a>.</p>
+<noscript><p class="ctr legal tight-lead sans-serif"><em>[Video playback capability requires JavaScript to be&nbsp;enabled.]</em></p></noscript>
+<p class="ctr legal tight-lead sans-serif lyt-disclaimer"><strong class="red">Note</strong>: Clicking&nbsp;the&nbsp;video constitutes your consent to view&nbsp;it via&nbsp;YouTube (including&nbsp;cookies). To&nbsp;view&nbsp;it on the YouTube&nbsp;site instead, please&nbsp;use&nbsp;<a href="https://www.youtube.com/embed/{{ $videoId }}{{ with .Get "params" }}?{{ . | safeURL }}{{ end }}" rel="noopener">this&nbsp;link</a>.</p>

@@ -1,6 +1,7 @@
 .ctr {
 	text-align: center;
 }
+
 .red {
 	color: var(--red);
 }
@@ -12,50 +13,65 @@
 .legal {
 	font-size: var(--text-xs);
 }
+
 .pokey {
 	font-size: var(--text-sm);
 }
-.sansSerif {
+
+.sans-serif {
 	font-family: var(--sans-serif);
 }
+
 .serif {
 	font-family: var(--serif);
 }
-.tightLead {
+
+.tight-lead {
 	line-height: 1.25;
 }
+
 .nobrk, .nowrap {
 	white-space: nowrap;
 }
+
 .text-nowrap {
 	white-space: nowrap;
 	font-size: inherit;
 }
+
 .bg-center {
 	background-position: center;
 }
+
 .relative {
 	position: relative;
 }
+
 .w-full {
 	width: 100%;
 }
+
 .h-full {
 	height: 100%;
 }
+
 .h-auto {
 	height: auto;
 }
+
 .mx-auto {
 	margin-right: auto;
 	margin-left: auto;
 }
+
 .w-auto {
 	width: auto;
 }
+
 .inline {
 	display: inline;
 }
+
 .pub-date {
 	font-weight: var(--pub-date-weight);
 }
@@ -105,7 +121,7 @@
 	font-size: 2.25rem;
 	line-height: 2.5rem;
 } // /* for `/posts/2020/08/good-stuff-without-google/` */
-//
+
 // /*
 // ===============================
 // end, text/LH classes from TWCSS
@@ -129,10 +145,12 @@
 
 .emojis {
 	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 	font-family: var(--emojis);
 }
 
 .rounded-bkgd {
 	border-radius: 18px;
+
 	// /* to work with LQIPs behind rounded imgs (e.g., screen caps) */
 }

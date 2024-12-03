@@ -1,11 +1,11 @@
-code, article code, .box code {
-	background-color: var(--bkgd-article-code);
-}
-
 code {
 	font-family: var(--monospaced);
   font-kerning: none;
   font-variant-ligatures: none;
+}
+
+code, article code {
+	background-color: var(--bkgd-article-code);
 }
 
 /* Inline code */
@@ -17,13 +17,31 @@ code {
 
 article code {
 	font-size: 0.95em;
+
 	/* no need for media queries because this
 	is em, so clamp() for surrounding text
 	will handle it */
 }
 
+article blockquote code {
+	color: var(--bquote-article-code);
+}
+
+.box code {
+	background-color: var(--bkgd-article-code);
+}
+
+.box {
+	code, a code {
+		font-size: 1em; /* definitely em */
+
+		--bg: var(--bkgd-box-code);
+	}
+}
+
 article .footnotes code {
 	font-size: 1em;
+
 	/* overriding the `article code` part above for footnotes */
 }
 
@@ -43,17 +61,6 @@ article p code.code-inline {
 
 article .footnotes li code {
 	white-space: normal;
-}
-
-article blockquote code {
-	color: var(--bquote-article-code);
-}
-
-.box {
-	code, a code {
-		font-size: 1em; /* definitely em */
-		--bg: var(--bkgd-box-code);
-	}
 }
 
 article ol li .highlight {

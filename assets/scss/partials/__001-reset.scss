@@ -13,8 +13,6 @@
 
 // /* Prevent font size inflation */
 html {
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
   text-size-adjust: none;
 }
 
@@ -75,7 +73,8 @@ figcaption {
 // /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  /* color: currentColor; */
+
+	/* color: currentColor; */
 }
 
 // /* Make images easier to work with */

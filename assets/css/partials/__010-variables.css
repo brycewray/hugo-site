@@ -1,3 +1,5 @@
+/* stylelint-disable comment-empty-line-before */
+/* stylelint-disable value-keyword-case */
 /* Miscellaneous variables */
 
 :root {
@@ -13,7 +15,7 @@ Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, monospace;
 	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--textUnOffst: 0.25em; /* always em -- min-width: 768px */
+	--text-un-offset: 0.25em; /* always em -- min-width: 768px */
 
 /*
 Remember: Apple's San Francisco is not variable, so it won't show "half-weights" (e.g., 350) as desired. Instead, it has nine distinct weights.
@@ -48,9 +50,9 @@ Remember: Apple's San Francisco is not variable, so it won't show "half-weights"
 	/* --text-9xl: 8rem; */ /* LH 1 (also) */
 
 	/* underlines for hrefs */
-	--textDcThick: 0.05rem; /* always rem */
+	--text-dc-thick: 0.05rem; /* always rem */
 	/* ^^^ Segoe UI needs at least 0.25em. */
-	--textDcThickHA: 0.075rem; /* always rem -- for `header-anchor` */
+	--text-dc-thick-ha: 0.075rem; /* always rem -- for `header-anchor` */
 
 	/*
 	==== end, TYPOGRAPHY ====
@@ -76,21 +78,21 @@ Remember: Apple's San Francisco is not variable, so it won't show "half-weights"
 	--btn-radius: 6px;
 	--btn-width: 12rem;
 	--btn-height: 2.25rem;
-	--interactionPadding: 0.75em;
+	--interaction-padding: 0.75em;
 	--btn-svg-width: 1.25em; /* height will be auto */
 	--btn-legend-text: var(--text-base);
 	--btn-legend-weight: var(--font-semibold);
 
-	@media screen and (min-width: 1024px) {
+	@media screen and (width >= 1024px) {
 		--sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		--textUnOffst: 0.2875em;
+		--text-un-offset: 0.2875em;
 		/*
 			^ ^ ^
 			serve non-system fonts to only larger screens,
 			to make it easier on phones, especially where
 			bandwidth is at a premium
 		*/
-		--textDcThick: 0.0625rem; /* always rem */
+		--text-dc-thick: 0.0625rem; /* always rem */
 	}
 
 }

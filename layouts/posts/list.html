@@ -1,28 +1,28 @@
 {{ define "main" }}
 	<div class="posts-Wrapper ctr" data-pagefind-ignore>
-		<h1 class="posts-Head">Posts</h1>
-		<div class="posts-Container">
+		<h1 class="posts-head">Posts</h1>
+		<div class="posts-container">
 
 			{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
 			{{ $paginator := .Paginator }}
 
 			{{ partial "pagerthing.html" . }}
-			<hr class="paginatorTop" />
+			<hr class="paginator-top" />
 
 			{{ range $paginator.Pages }}
-				<div class="posts-ItemDiv">
-					<h2 class="posts-Title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
-					<p class="posts-Description">
+				<div class="posts-item-div">
+					<h2 class="posts-title"><a href="{{ .RelPermalink }}">{{ .Title | .Page.RenderString }}</a></h2>
+					<p class="posts-description">
 						{{ .Description | .Page.RenderString }}
 					</p>
-					<p class="posts-Dates">
+					<p class="posts-dates">
 						{{- if ne (substr .Title 0 22) "The site this week: 20" -}}<strong>{{ .PublishDate.Format "2006-01-02" }}</strong>{{- end -}}
 					</p>
 					<p class="legal">&nbsp;</p>
 				</div>
 			{{ end }}
 
-			<hr class="paginatorBottom" />
+			<hr class="paginator-bottom" />
 			{{ partial "pagerthing.html" . }}
 
 		</div>

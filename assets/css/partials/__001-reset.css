@@ -55,8 +55,10 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping as appropriate (browser support varies) */
-/* Some of this based on Kevin Powell video, 2024-09-04 */
+/*
+Balance text wrapping as appropriate (browser support varies)
+Some of this based on Kevin Powell video, 2024-09-04
+*/
 h1,
 h2,
 h3,
@@ -75,7 +77,8 @@ figcaption {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  /* color: currentColor; */
+
+	/* color: currentColor; */
 }
 
 /* Make images easier to work with */

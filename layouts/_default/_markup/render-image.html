@@ -20,7 +20,7 @@
 	{{ with .Page.Resources.GetMatch $src }}
 		{{- $hint := "photo" -}}
 		{{- $filter := "MitchellNetravali" -}}
-		{{- $divClass := print "relative bigImgDiv imgB-" $imgBd5 "-" $holder -}}
+		{{- $divClass := print "relative big-img-div imgB-" $imgBd5 "-" $holder -}}
 		{{- $imgRsc := . -}}
 		{{- $actualImg := $imgRsc.Process (print "resize 640x jpg " $filter) -}}
 		<div class="{{ $divClass }}" data-pagefind-ignore>
@@ -48,4 +48,4 @@
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable.</em></p>
 {{- end -}}
-{{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
+{{- with $caption -}}<p class="imgh-caption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
