@@ -43,14 +43,14 @@ Your current display may not allow you to see much difference, especially given 
 [All the major browser engines currently support OKLCH](https://caniuse.com/?search=oklch), but most displays still can't come close to matching some of its more vivid colors. The best that most consumers can use right now are on phones' OLED displays. Of course, quite a few users are still on certain oddball browsers, or older browser versions, that *don't* support OKLCH; so you'll want to use [`@supports`](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) to provide both standard and OKLCH versions of color variables (the [OKLCH Color Picker and Converter](https://oklch.com) makes this super-easy):
 
 ```css
-.myElement {
+.my-element {
 	--very-light-blue: #dcebfe;
 	--medium-red: #db232f;
 	--brick-red: #971a20;
 	--bright-yellow: #f9f28c;
 }
 @supports (color: oklch(49% 0.1 252)) {
-	.myElement {
+	.my-element {
 		--very-light-blue: oklch(93.5% 0.03 252);
 		--medium-red: oklch(57.5% 0.215 25);
 		--brick-red: oklch(44% 0.16 25);
