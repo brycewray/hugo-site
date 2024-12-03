@@ -4,7 +4,10 @@ const postcssPresetEnv =
 	require('postcss-preset-env')({
 		stage: 2,
 		features: {
-			'nesting-rules': true
+			'nesting-rules': true,
+			'oklab-function': {
+				preserve: true
+			}
 		}
 	})
 // const purgeCSS =
@@ -15,8 +18,10 @@ const postcssPresetEnv =
 // 	require('autoprefixer')({})
 const cssNano =
 	require('cssnano')({
-		preset: "default"
-	})
+		preset: ['default', {
+//			colormin: false,
+	}]
+})
 
 module.exports = {
 	plugins: [
