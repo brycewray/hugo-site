@@ -1,3 +1,6 @@
+// @use '_005-colors' as clr;
+@use '_010-variables' as var;
+
 // /* === for HTML sitemap */
 
 .sitemap-div {
@@ -22,16 +25,16 @@
 	}
 
 	ul li {
-		font-size: var(--text-sm);
+		font-size: var.$text-sm;
 
-		// /* font-family: var(--sans-serif); */
+		// /* font-family: var.$sans-serif; */
 		margin-bottom: 0.75em;
 		line-height: 1.375;
 
-		--pub-date-weight: var(--font-semibold);
+		--pub-date-weight: var.$font-semibold;
 
 		strong {
-			font-weight: var(--font-medium);
+			font-weight: var.$font-semibold;
 		}
 
 		.description {

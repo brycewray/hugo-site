@@ -1,3 +1,6 @@
+@use '_005-colors' as clr;
+@use '_010-variables' as var;
+
 .bg-dark {
 	position: fixed;
 	bottom: 0;
@@ -34,16 +37,16 @@
 		line-height: 1.375em;
 
 		a {
-			font-weight: var(--font-normal);
+			font-weight: var.$font-normal;
 			color: var(--link-nav);
 			text-decoration: none;
 
 			&:hover, &:focus {
 				color: var(--link-nav-afh);
-				text-decoration: none;
-				text-decoration-thickness: var(--text-dc-thick-md);
-				text-underline-offset: var(--text-un-offset);
-				text-decoration-skip-ink: auto;
+				text-decoration: none; // following three thus are unneeded...
+				// text-decoration-thickness: var(--text-dc-thick-md);
+				// text-underline-offset: var(--text-un-offset);
+				// text-decoration-skip-ink: auto;
 			}
 		}
 	}
@@ -84,10 +87,10 @@
 
 				&:hover, &:focus {
 					color: var(--link-nav-afh);
-					text-decoration: none;
-					text-decoration-thickness: var(--text-dc-thick-md);
-					text-underline-offset: var(--text-un-offset);
-					text-decoration-skip-ink: auto;
+					text-decoration: none; // following three thus are unneeded...
+					// text-decoration-thickness: var(--text-dc-thick-md);
+					// text-underline-offset: var(--text-un-offset);
+					// text-decoration-skip-ink: auto;
 				}
 			}
 		}
@@ -96,21 +99,21 @@
 
 .giscus-comments {
 	margin: 1.5em 0 2em;
-	border-radius: var(--btn-radius);
+	border-radius: var.$btn-radius;
 	padding: 1em;
 }
 
 html[data-theme="light"] .giscus-comments {
-	background-color: var(--gray-100);
+	background-color: clr.$gray-100;
 }
 
 html[data-theme="dark"] .giscus-comments {
-	background-color: var(--gray-900);
+	background-color: clr.$gray-900;
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme]) .giscus-comments {
-		background-color: var(--gray-900);
+		background-color: clr.$gray-900;
 	}
 }
 
@@ -145,14 +148,14 @@ a.contact-button {
 }
 
 a.contact-button, details.comments > summary {
-	width: var(--btn-width);
-	height: var(--btn-height);
+	width: var.$btn-width;
+	height: var.$btn-height;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--link);
-	border-radius: var(--btn-radius);
+	border-radius: var.$btn-radius;
 	border-color: transparent;
 	color: var(--btn-text-default);
 	padding: 0.25rem 0;
@@ -163,21 +166,21 @@ a.contact-button, details.comments > summary {
 	}
 
 	.svg {
-		padding-left: var(--interaction-padding);
+		padding-left: var.$interaction-padding;
 
 		svg {
-			width: var(--btn-svg-width);
+			width: var.$btn-svg-width;
 			height: auto;
 		}
 	}
 
 	.legend {
-		padding-right: var(--interaction-padding);
+		padding-right: var.$interaction-padding;
 		text-align: right;
 
 		/* text-transform: uppercase; */
-		font-size: var(--btn-legend-text);
-		font-weight: var(--btn-legend-weight);
+		font-size: var.$btn-legend-text;
+		font-weight: var.$btn-legend-weight;
 	}
 }
 

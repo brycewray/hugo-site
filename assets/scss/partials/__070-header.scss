@@ -1,3 +1,6 @@
+// @use '_005-colors' as clr;
+@use '_010-variables' as var;
+
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable selector-type-no-unknown */
 
@@ -55,7 +58,7 @@ header {
 	li {
 		list-style: none;
 		display: none;
-		font-weight: var(--font-bold);
+		font-weight: var.$font-bold;
 		padding-right: calc(1em + var(--nav-toggle-right-margin));
 
 		&.not-mobile {
@@ -91,7 +94,7 @@ header {
 		margin: 0.375rem var(--nav-right-margin) 0 0;
 
 		li {
-			font-size: var(--text-sm);
+			font-size: var.$text-sm;
 			display: block;
 			text-transform: lowercase;
 			margin: 0.5rem 0;

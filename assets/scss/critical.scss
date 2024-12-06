@@ -1,10 +1,10 @@
 /* stylelint-disable scss/load-no-partial-leading-underscore */
-@use 'partials/__001-reset';
-@use 'partials/__005-colors';
+@use 'partials/_001-reset' as *;
+@use 'partials/_005-colors' as *;
 
-// @use 'partials/__006-limited-colors';
-@use 'partials/__010-variables';
-@use 'partials/__030-utility';
-@use 'partials/__050-global';
-@use 'partials/__070-header';
-@use 'partials/__090-footer';
+// @use 'partials/_006-limited-colors' as *;
+@use 'partials/_010-variables' as *;
+@use 'partials/_030-utility' as *;
+@use 'partials/_050-global' as *;
+@use 'partials/_070-header' as *;
+@use 'partials/_090-footer' as *;

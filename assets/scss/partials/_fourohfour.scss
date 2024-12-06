@@ -1,3 +1,6 @@
+// @use '_005-colors' as clr;
+@use '_010-variables' as var;
+
 .four-oh-four-wrapper {
 	padding-top: 10vh;
 }
@@ -8,7 +11,7 @@
 	margin-left: auto;
 
 	h1 {
-		font-size: var(--text-4xl);
+		font-size: var.$text-4xl;
 		margin-bottom: 3rem;
 
 		@media screen and (width >= 1024px) {
@@ -21,7 +24,7 @@
 	}
 
 	p {
-		font-size: var(--text-2xl);
+		font-size: var.$text-2xl;
 		letter-spacing: -0.025em;
 	}
 

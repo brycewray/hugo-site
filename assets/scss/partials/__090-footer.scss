@@ -1,7 +1,10 @@
+// @use '_005-colors' as clr;
+@use '_010-variables' as var;
+
 footer {
 	text-align: center;
-	font-size: var(--text-xs);
-	font-weight: var(--font-weight-sm);
+	font-size: var.$text-xs;
+	font-weight: var.$font-weight-sm;
 	width: 100%;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5em;

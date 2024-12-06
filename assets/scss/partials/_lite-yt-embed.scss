@@ -1,8 +1,11 @@
+@use '_005-colors' as clr;
+// @use '_010-variables' as var;
+
 lite-youtube {
 	background-color: var(--black);
 	position: relative;
 	border: 1px solid;
-	border-color: var(--gray-700);
+	border-color: clr.$gray-700;
 	display: block;
 	contain: content;
 	background-position: center center;
@@ -13,12 +16,12 @@ lite-youtube {
 }
 
 html[data-theme="dark"] lite-youtube {
-	border-color: var(--gray-400);
+	border-color: clr.$gray-400;
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme]) lite-youtube {
-		border-color: var(--gray-400);
+		border-color: clr.$gray-400;
 	}
 }
 

@@ -1,9 +1,7 @@
-/* stylelint-disable no-descending-specificity */
+@use '_005-colors' as clr;
+@use '_010-variables' as var;
 
-/* :root {
-	--emerald-050: hsl(155, 80%, 96%);
-	--emerald-900: hsl(155, 61%, 19%);
-} */
+/* stylelint-disable no-descending-specificity */
 
 td {
 	vertical-align: top;
@@ -19,7 +17,7 @@ table.noborders {
 	border-collapse: collapse;
 
 	td {
-		font-weight: var(--font-normal);
+		font-weight: var.$font-normal;
 		text-align: left;
 		vertical-align: middle;
 		padding: 0.25rem 0 0.25rem 0.5rem;
@@ -45,15 +43,15 @@ table.noborders {
 	}
 
 	tr:nth-child(odd) {
-		background-color: var(--slate-050);
+		background-color: clr.$slate-050;
 	}
 
 	tr:nth-child(even) {
-		background-color: var(--slate-150);
+		background-color: clr.$slate-150;
 	}
 
 	thead td {
-		background-color: var(--blue-900);
+		background-color: clr.$blue-900;
 		color: var(--white);
 		font-weight: bold;
 	}
@@ -80,7 +78,7 @@ table.ulysses {
 	width: 100%;
 	table-layout: auto;
 	border-collapse: collapse;
-	font-size: var(--text-xs);
+	font-size: var.$text-xs;
 
 	@media screen and (width >= 768px) {
 		font-size: inherit;
@@ -88,9 +86,9 @@ table.ulysses {
 	}
 
 	thead th {
-		background-color: var(--blue-800);
+		background-color: clr.$blue-800;
 		border: 1px solid;
-		border-color: var(--black) var(--gray-350) var(--black) var(--black);
+		border-color: var(--black) clr.$gray-350 var(--black) var(--black);
 		color: var(--white);
 
 		&:last-child {
@@ -118,7 +116,7 @@ table.ulysses {
 	}
 
 	tr:nth-child(even) {
-		background-color: var(--emerald-050);
+		background-color: clr.$emerald-050;
 	}
 }
 
@@ -140,11 +138,11 @@ html[data-theme="dark"] {
 		}
 
 		tr:nth-child(odd) {
-			background-color: var(--slate-800);
+			background-color: clr.$slate-800;
 		}
 
 		tr:nth-child(even) {
-			background-color: var(--emerald-950);
+			background-color: clr.$emerald-900;
 		}
 	}
 }
@@ -168,11 +166,11 @@ html[data-theme="dark"] {
 			}
 
 			tr:nth-child(odd) {
-				background-color: var(--slate-800);
+				background-color: clr.$slate-800;
 			}
 
 			tr:nth-child(even) {
-				background-color: var(--emerald-950);
+				background-color: clr.$emerald-900;
 			}
 		}
 	}

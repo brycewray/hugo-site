@@ -1,5 +1,8 @@
+// @use '_005-colors' as clr;
+@use '_010-variables' as var;
+
 code {
-	font-family: var(--monospaced);
+	font-family: var.$monospaced;
   font-kerning: none;
   font-variant-ligatures: none;
 }

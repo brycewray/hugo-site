@@ -1,3 +1,6 @@
+// @use '_005-colors' as clr;
+@use '_010-variables' as var;
+
 .ctr {
 	text-align: center;
 }
@@ -7,23 +10,23 @@
 }
 
 .legal, .pokey {
-	font-weight: var(--font-weight-sm);
+	font-weight: var.$font-weight-sm;
 }
 
 .legal {
-	font-size: var(--text-xs);
+	font-size: var.$text-xs;
 }
 
 .pokey {
-	font-size: var(--text-sm);
+	font-size: var.$text-sm;
 }
 
 .sans-serif {
-	font-family: var(--sans-serif);
+	font-family: var(--sans-serif); // Must be CSS var for responsive handling of any web fonts
 }
 
 .serif {
-	font-family: var(--serif);
+	font-family: var(--serif); // Must be CSS var for responsive handling of any web fonts
 }
 
 .tight-lead {
@@ -73,14 +76,12 @@
 }
 
 .pub-date {
-	font-weight: var(--pub-date-weight);
+	font-weight: var.$pub-date-weight;
 }
 
-// /*
 // start, text/LH classes from TWCSS
 // =================================
-// */
-// /*
+
 // .text-xs {
 // 	font-size: 0.75rem;
 // 	line-height: 1rem;
@@ -115,17 +116,14 @@
 // 	font-size: 1.875rem;
 // 	line-height: 2.25rem;
 // }
-// */
 
 .text-4xl {
 	font-size: 2.25rem;
 	line-height: 2.5rem;
-} // /* for `/posts/2020/08/good-stuff-without-google/` */
+} // for `/posts/2020/08/good-stuff-without-google/`
 
-// /*
 // ===============================
 // end, text/LH classes from TWCSS
-// */
 
 .mono {
 	font-family: var(--monospaced);
@@ -152,5 +150,5 @@
 .rounded-bkgd {
 	border-radius: 18px;
 
-	// /* to work with LQIPs behind rounded imgs (e.g., screen caps) */
+	// $rounded-bkgd - to work with LQIPs behind rounded imgs (e.g., screen caps)
 }
