@@ -297,6 +297,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 	max-width: var(--container-narrower-width);
 
 	@media screen and (width >= 1024px) {
+		--container-narrower-width: 50vw;
 		--big-img-div-expansion-width: 40vw;
 		--big-img-div-width: calc(var(--container-narrower-width) + var(--big-img-div-expansion-width));
 
