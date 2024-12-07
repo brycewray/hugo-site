@@ -305,7 +305,7 @@ audio, canvas, embed, iframe, img, object, svg, video {
 .container-narrower {
 	margin: 1rem auto 0;
 
-	--container-narrower-width: 50vw;
+	--container-narrower-width: 80%;
 
 	width: var(--container-narrower-width);
 	max-width: var(--container-narrower-width);
