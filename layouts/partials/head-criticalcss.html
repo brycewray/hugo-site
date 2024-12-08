@@ -51,17 +51,30 @@
 				--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 				--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
 				--text-un-offset: 0.25em; /* always em -- min-width: 768px */
+				--text-dc-thick: 0.05rem; /* always rem */ /* ^^^ Segoe UI needs at least 0.25em. */
+				--text-dc-thick-ha: 0.075rem; /* always rem -- for `header-anchor` */
 				@media screen and (min-width: 1024px) {
 					--sans-serif: "{{ $fontFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-					--text-un-offset: 0.2875em;
 					/*
 						^ ^ ^
 						serve non-system fonts to only larger screens,
 						to make it easier on phones, especially where
 						bandwidth is at a premium
 					*/
+					--text-un-offset: 0.2875em;
+					--text-dc-thick: 0.0625rem; /* always rem */
 				}
 			}
+			{{ if eq $fontFamily "Inter" -}}
+			html, body {
+				font-feature-settings: 'kern', 'ss03' 1, 'calt' 0;
+			}
+			/* ^^
+			- Avoid `ss03` oddity in some system fonts.
+			- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
+			-- https://github.com/rsms/inter/issues/442 et al.
+			// */
+			{{ end }}
 		</style>
 	{{- else -}}
 		{{/* otherwise, we fall back to system fonts */}}
