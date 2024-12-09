@@ -48,7 +48,7 @@ ___
 
 <!--
 
-[From Chris Fernandi, @cferdinandi.bksy.social]
+[From Chris Ferdinandi, @cferdinandi.bksy.social]
 
 Not that it matters.
 
