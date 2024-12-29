@@ -142,7 +142,7 @@ Then, the `render-image` template:
 {{- else -}}
 	<p class="ctr legal"><em>Image unavailable.</em></p>
 {{- end -}}
-{{- with $caption -}}<p class="imgCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
+{{- with $caption -}}<p class="img-caption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
 ```
 
 And finally, the image-processing shortcode[^defaults] that handles both GIPs (the default here) and LQIPs, through the use of a `$holder` variable which specifies the `div`'s background type:
@@ -256,7 +256,7 @@ This photo appears in multiple images-related posts here on [this website](/).
 		<source type="image/jpeg" srcset="/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_320x0_resize_q75_box.jpg 320w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_box.jpg 640w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_960x0_resize_q75_box.jpg 960w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1280x0_resize_q75_box.jpg 1280w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1600x0_resize_q75_box.jpg 1600w, /posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_1920x0_resize_q75_box.jpg 1920w" sizes="(min-width: 1024px) 100vw, 50vw"><img class="w-full h-auto shadow animate-fade" src="/posts/2023/05/better-code-image-processing-hugo-render-hook-edition/my-pet-cat_3264x2448_hu0a98823da7db56e37a2cf4ddae586f7b_3793639_640x0_resize_q75_box.jpg" width="3264" height="2448" alt="Photo of a cat named Shakespeare sitting on a window sill" title="Photo of a cat named Shakespeare sitting on a window sill" loading="lazy" data-pagefind-ignore="">
 	</picture>
 </div>
-<p class="imgCaption">
+<p class="img-caption">
 	Here’s our cat, Shakespeare, sitting on a window&nbsp;sill.<br>This&nbsp;photo appears in multiple images-related posts here on <a href="/">this&nbsp;website</a>.
 </p>
 ```

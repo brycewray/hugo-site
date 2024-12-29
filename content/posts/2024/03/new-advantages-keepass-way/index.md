@@ -38,7 +38,7 @@ But, for any KeePass way aficionado who wants to sync passwords among Apple devi
 {{< img src="2024-03-11_Strongbox_WiFi-Sync_1356x1034_edited.png" alt="Edited screen capture of Strongbox Wi-Fi Sync settings" rounds=true >}}
 
 StrongBox Wi-Fi Sync settings (some data simulated).
-{.imgCaption}
+{.img-caption}
 
 Here's one particularly cool aspect of Wi-Fi Sync. Let's say that one of the connected Apple devices is taken outside of the network and its user makes changes to the KeePass database during that period. When the device is back on the network, it'll automatically sync back those changes *and* receive any changes that occurred on other network devices during its absence.
 

@@ -16,6 +16,6 @@ The app is free, doesn't require a separate [Bitwarden](https://bitwarden.com) a
 {{< img src="2024-05-01_Bitwarden-Authenticator_screen-cap_1290x2795.png" alt="Screen capture of Bitwarden Authenticator application as of 2024-05-01" phn=true >}}
 
 Since Bitwarden Authenticator *(iOS version shown)* can't yet import TOTP data from other sources --- and I frankly didn't want to go through the rigamarole of generating a few on-screen QR codes from my existing data so this app could scan them --- this is all I can show you for the app as of this post's original appearance.
-{.imgCaption}
+{.img-caption}
 
 That aside, Mrs. Lincoln, I do expect good things from this app. After all, it's from Bitwarden, a company with years of experience demonstrating its superb expertise in the field of password management for the masses. So, when a wobbly-legged puppy shows up in your presence, but you know it comes from a long line of outstanding show dogs, you tend to have high hopes for what the little drooler will be able to do under the bright lights before too long.

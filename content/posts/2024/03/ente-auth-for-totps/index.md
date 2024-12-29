@@ -20,7 +20,7 @@ Ente Auth provides free, end-to-end encrypted cloud storage for your TOTPs, maki
 {{< img src="Ente-Auth-screen-cap_edited_1290x2796.png" alt="Edited screen capture of Ente Auth application" phn=true >}}
 
 Ente Auth, iOS version (TOTPs simulated and some self-identifying text hidden).
-{.imgCaption}
+{.img-caption}
 
 The UI isn't quite as pretty as those of some other apps in this category --- perhaps at least in part because [Ente Auth started as a "do this for ourselves while we're at it" project](https://ente.io/blog/auth/) --- but the app has all the options one would need, the multi-device sync is slick and seamless, and the app's development process is quite active. I also like the way Ente Auth shows you the *next* TOTP it will generate for each account, which is nice when the thirty-second time limit is about to expire while you're trying to enter the TOTP someplace.[^RaivoOTP]
 

@@ -37,7 +37,7 @@ Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2
 {{< img src="MailMate_screen_cap_3454x1536.png" alt="Screen capture of the MailMate app" rounds=true >}}
 
 Image: Screen capture of MailMate, with its Latin-displaying “distortion mode” engaged for privacy's sake.
-{.imgCaption}
+{.img-caption}
 
 ## Power trip
 

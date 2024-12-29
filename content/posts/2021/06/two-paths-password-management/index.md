@@ -52,7 +52,7 @@ Fortunately, this isn't true of the basic Windows version of KeePass, which cont
 {{< img src="keepassxc_unlock_db_2066x1532.png" alt="Screen capture from KeePassXC" rounds=true >}}
 
 The screen you see in the macOS version of [KeePassXC](https://keepassxc.org) when unlocking a database file.
-{.imgCaption}
+{.img-caption}
 
 Now, let's consider that "on each device" business concerning the database file.
 

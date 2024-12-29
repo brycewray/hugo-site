@@ -169,7 +169,7 @@ Now, just build your site, and Eleventy Image will do its magic everywhere withi
 {{< img src="my-pet-cat_3264x2448.jpg" alt="Photo of a cat named Shakespeare sitting on a window sill" simple=true >}}
 
 **Disclaimer**: Image is sourced here without using Eleventy&nbsp;Image **but** this does show the result of the generated&nbsp;code.
-{.imgCaption}
+{.img-caption}
 
 Of course, you'll want to get a sneak peek by running Eleventy in development mode and viewing your site locally, in case you need to adjust your site's CSS so each resulting image appears as you want.[^sizesInfo]
 

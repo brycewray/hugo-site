@@ -92,10 +92,10 @@ So, now, all I have to do to get that same caption is:
 
 ```md{bigdiv=true}
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?
-{.imgCaption}
+{.img-caption}
 ```
 
-The only difference from how I did it in the Eleventy/plugins combo is that, in Hugo, it requires a line feed between the end of what you're styling and the attribute (in this case, `{.imgCaption}` to specify use of the `imgcCaption` class). Hardly a biggie. (With the Eleventy setup, you can put a line feed there, too, so that's even better for cross-site/cross-repo purposes, for those of you like me who are so inclined.)
+The only difference from how I did it in the Eleventy/plugins combo is that, in Hugo, it requires a line feed between the end of what you're styling and the attribute (in this case, `{.img-caption}` to specify use of the `imgcCaption` class). Hardly a biggie. (With the Eleventy setup, you can put a line feed there, too, so that's even better for cross-site/cross-repo purposes, for those of you like me who are so inclined.)
 
 ## A little thing to some, but&nbsp;.&nbsp;.&nbsp;.
 

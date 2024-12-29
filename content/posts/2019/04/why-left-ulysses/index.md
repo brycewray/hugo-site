@@ -173,7 +173,7 @@ However, that was probably just how my wandering mind took them; because, by the
 {{< img src="iA_Writer_on_why-left-ulysses_post_cropped_2544x1241.png" alt="Screen capture from iA Writer app" rounds=true >}}
 
 Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.
-{.imgCaption}
+{.img-caption}
 
 *For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW] --- and that's high praise, because each of those is outstanding in its own way.
 
