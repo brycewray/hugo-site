@@ -8,13 +8,13 @@
 {{ $votesCount := 0 }}
 {{ $urlToGet := print "https://" $masIns "/api/v1/statuses/" $id }}
 
-{{- with resources.GetRemote $urlToGet  -}}
-	{{ if (resources.GetRemote $urlToGet).Err }}
+{{- with try (resources.GetRemote $urlToGet)  -}}
+	{{ with .Err }}
 		<blockquote class="toot-blockquote">
 			<p class="ctr legal">[Source not online<br />
 			at time of site build.]</p>
 		</blockquote>
-	{{ else }}
+	{{ else with .Value }}
 		{{ $json := unmarshal .Content }}
 		{{ $jsonHolder := $json }}{{/* Being safe */}}
 
