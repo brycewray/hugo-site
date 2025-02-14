@@ -9,7 +9,7 @@
 		"cssnano": "^7.0.6",
 		"postcss": "^8.5.2",
 		"postcss-cli": "^11.0.0",
-		"postcss-preset-env": "^10.1.3",
+		"postcss-preset-env": "^10.1.4",
 		"stylelint": "^16.14.1",
 		"stylelint-config-standard-scss": "^14.0.0"
 	}
