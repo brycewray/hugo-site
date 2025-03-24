@@ -47,7 +47,9 @@ Fortunately, this isn't true of the basic Windows version of KeePass, which cont
 - **[KeePass2Android](https://github.com/PhilippC/keepass2android/)** for Android.
 - **[KeePassium](https://keepassium.com/)** for iOS, with a macOS version now in beta. (Freemium.)
 - **[KeePassXC](https://keepassxc.org/)** for Windows, macOS, and Linux.
-- **[Strongbox](https://www.strongboxsafe.com)** for macOS and iOS. (Paid on macOS, freemium on iOS.)
+- **[Strongbox](https://www.strongboxsafe.com)**[^Strongbox_sale] for macOS and iOS. (Paid on macOS, freemium on iOS.)
+
+[^Strongbox_sale]: **Update, 2025-03-24**: See also "[Matters of trust](/posts/2025/03/matters-trust/)."
 
 {{< img src="keepassxc_unlock_db_2066x1532.png" alt="Screen capture from KeePassXC" rounds=true >}}
 

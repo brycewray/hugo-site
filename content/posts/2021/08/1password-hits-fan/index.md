@@ -59,9 +59,11 @@ All that said, where would I recommend "never-again" 1Password users haul their 
 ### The KeePass way
 
 - On Mac, Windows, or Linux: [KeePassXC](https://keepassxc.org).
-- On iOS: [KeePassium](https://keepassium.com) or [Strongbox](https://strongboxsafe.com).
+- On iOS: [KeePassium](https://keepassium.com) or [Strongbox](https://strongboxsafe.com)[^Strongbox_sale].
 - On Android: [KeePass2Android](https://github.com/PhilippC/keepass2android/).
 - Synchronization across your devices: any cloud vendor will do as long as your devices can access individual files on it. This is one particular beauty of the KeePass way: all you're doing is sharing a KeePass-formatted file. You can use whichever vendor suits you.
+
+[^Strongbox_sale]: **Update, 2025-03-24**: See also "[Matters of trust](/posts/2025/03/matters-trust/)."
 
 As for migrating existing credentials from 1Password: ah, well, that's a pain. (Remember what I said at the end of the original: it's best to pick a "way" and stay with it because inter-"way" migration gets ugly.) The best advice I can offer about that is Ryan Nickel's 2019 article, "[Migrating from 1Password to KeePassXC](https://ryannickel.com/html/migrating_from_1password_to_keepassxc.html)." Follow his instructions to the letter and it'll work, but it still won't be easy and you'll find, as he correctly notes, a lot of post-migration cleanup to do.[^migration]
 

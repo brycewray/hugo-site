@@ -25,7 +25,9 @@ It's always been *sort of* possible to bring in credentials data from these sour
 ![Screen capture of KeePassXC v.2.7.7 Import Wizard](2024-03-10_keepassxc-2-7-7-import-wizard_1404x929.png "KeePassXC v.2.7.7 Import Wizard.\
 Image: [KeePassXC blog](https://keepassxc.org/blog/).")
 
-While the Apple-only [Strongbox](https://strongboxsafe.com) app has also been stepping up its importation game in the last couple of years, the ability of KeePassXC to run on just about any desktop or laptop computer gives additional significance to these latest improvements in the latter app.
+While the Apple-only [Strongbox](https://strongboxsafe.com)[^Strongbox_sale] app has also been stepping up its importation game in the last couple of years, the ability of KeePassXC to run on just about any desktop or laptop computer gives additional significance to these latest improvements in the latter app.
+
+[^Strongbox_sale]: **Update, 2025-03-24**: See also "[Matters of trust](/posts/2025/03/matters-trust/)."
 
 ## Singin' the same song
 
