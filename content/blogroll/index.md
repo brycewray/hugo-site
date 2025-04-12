@@ -12,6 +12,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 
 ## A
 - [Aaron Crowder](https://crowdersoup.com/)
+- [Adam Argyle](https://nerdy.dev/)
 - [Ahmad Shaheed](https://ishadeed.com/)
 - [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/)
 - [Alex Russell](https://infrequently.org/)
