@@ -17,7 +17,7 @@ It wasn't until well into 2022 that I started hearing about the ["100 Days To Of
 [https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/](https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/)
 
 <!--
-https://fosstodon.org/@BryceWrayTX/109563943803361522
+https://fosstodon.org/@BryceWrayTX/109563943803361522 (link no longer available as of 2025-04-26)
 Looks like I’ve done my job re #100DaysToOffload — just counted up and I’ve added 116 posts to my site this year, with eight days to go. Had I not spent most of November coughing my head off, maybe I’d have made it to 125. Considering that I came into 2022 with just 150 *total* posts from the preceding 40 months of the site’s existence, it seems I’ve successfully adapted to the “CTCAJW” Mode (Cut The Crap And Just Write) to which I proclaimed allegiance last May:
 https://www.brycewray.com/posts/2022/05/simplify-simplify-maybe-for-real-this-time/
 -->

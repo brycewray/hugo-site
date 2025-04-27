@@ -32,6 +32,7 @@ Final results:
 - Article excerpt:   20.4% (screen: 20%)
 - No preference:      7.6% (screen:  8%)
 Total votes: 646 people
+As of 2025-04-26, that link is no longer available.
 -->
 
 Not exactly too close to call, eh?

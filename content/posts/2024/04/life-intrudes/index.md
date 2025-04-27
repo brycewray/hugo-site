@@ -15,16 +15,9 @@ But then, things got crazy.
 
 On Sunday, March 17, 2024, I issued the following post on Mastodon as a way of explaining that I'd be somewhat off the grid, content-creation-wise, for a while:
 
-{{< stoot instance="fosstodon.org" id="112112586291878471"  >}}
-
-<!--
-
-Life has intruded, as it has a tendency to do on short notice. Will be considerably less active online in at least the near future. Will have more to say about it when time and circumstances allow.
-
-2024-03-17-1405CDT
-
-https://fosstodon.org/@BryceWrayTX/112112586291878471
--->
+> Life has intruded, as it has a tendency to do on short notice. Will be considerably less active online in at least the near future. Will have more to say about it when time and circumstances allow.
+>
+> <span class="pokey">2024-03-17-1405CDT</span>
 
 In this particular case, the intrusion had been an emergency admittance to a local hospital late on Friday, March 15, following weeks of gradually increasing gastrointestinal discomfort. A CT scan revealed that my colon had swollen dramatically --- hence the discomfort --- because it contained a mass roughly 5.6 centimeters in size.
 

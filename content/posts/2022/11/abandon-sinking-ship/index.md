@@ -21,7 +21,7 @@ That ended eleven years of Twitter use under two different accounts. The origina
 
 [Adjournment *sine die*](https://www.yourdictionary.com/sine-die).
 
-<!-- **Note**: The original version of this post was based on something I posted on Mastodon(https://fosstodon.org/@BryceWrayTX/109326570119949421).
+<!-- **Note**: The original version of this post was based on something I posted on Mastodon (https://fosstodon.org/@BryceWrayTX/109326570119949421). That link is no longer usable as of 2025-04-26.
 {.box} -->
 
 <br />
