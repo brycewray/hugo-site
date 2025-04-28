@@ -47,7 +47,7 @@
 			}
 			:root {
 				/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Adwaita Sans", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 				--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 				--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
 				--text-un-offset: 0.25em; /* always em -- min-width: 768px */
@@ -57,7 +57,7 @@
 					font-feature-settings: 'kern';
 				}
 				@media screen and (min-width: 1024px) {
-					--sans-serif: "{{ $fontFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+					--sans-serif: "{{ $fontFamily }}", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Adwaita Sans", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 					/*
 						^ ^ ^
 						serve non-system fonts to only larger screens,
