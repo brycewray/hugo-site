@@ -107,10 +107,11 @@ html[data-theme="dark"] {
 	font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
 
 	// /* font-family: var.$serif; */
-	@media screen and (width >= 1024px) {
-		font-style: italic;
-		font-weight: var.$font-semilight;
-	}
+
+	// @media screen and (width >= 1024px) {
+	// 	font-style: italic;
+	// 	font-weight: var.$font-semilight;
+	// }
 }
 
 .home-post-dates {

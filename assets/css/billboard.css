@@ -53,10 +53,10 @@
 	line-height: 1.4;
 	padding-top: 1em;
 
-	@media screen and (width >= 1024px) {
+	/* @media screen and (width >= 1024px) {
 		font-weight: var(--font-semilight);
 		font-style: italic;
-	}
+	} */
 }
 
 .billboard-p-text {
