@@ -132,6 +132,7 @@ html, body {
 	text-rendering: optimizeLegibility;
 
 	/* text-justify: inter-character; /* someday... */
+
 	/* font-kerning: normal; */
 	font-family: var(--sans-serif);
 	font-weight: var(--font-normal);
