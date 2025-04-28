@@ -1,9 +1,7 @@
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
 
-{{- $fontsSrc := "local" -}}
-	{{- /* choices are "local" or "system" (system fonts stack).
-	With CFF, remember that the CSP's `style-src` must allow "unsafe-inline"
-	because CFF injects a `style` AFTER the CFP Page Function injects the CSP. */ -}}
+{{- $fontsSrc := "system" -}}
+	{{- /* choices are "local" or "system" (system fonts stack). */ -}}
 {{- $fontFamily := "Inter" -}}
 	{{- /* e.g., "Inter" or "Libre Franklin" */ -}}
 {{- $fontFileReg := "" -}}
@@ -69,24 +67,24 @@
 					--text-un-offset: 0.2875em;
 					--text-dc-thick: 0.0625rem; /* always rem */
 					{{ if eq $fontFamily "Inter" -}}
-					html, body {
-						font-feature-settings: 'kern', 'ss03' 1, 'calt' 0;
-					}
-					/* ^^
-					- Avoid `ss03` oddity in some system fonts.
-					- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
-					-- https://github.com/rsms/inter/issues/442 et al.
-					// */
+						html, body {
+							font-feature-settings: 'kern', 'ss03' 1, 'calt' 0;
+						}
+						/* ^^
+						- Avoid `ss03` oddity in some system fonts.
+						- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
+						-- https://github.com/rsms/inter/issues/442 et al.
+						// */
+					{{ end }}
 				}
 			}
-			{{ end }}
 		</style>
 	{{- else -}}
 		{{/* otherwise, we fall back to system fonts */}}
 		<style media="screen">
 			:root {
 				/* Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF Mono to fix an older version of the font in Chrome" */
-				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Adwaita Sans", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 				--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
 				--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", monospace;
 			}
