@@ -30,4 +30,7 @@ The short story is that:
 
 Thus, in order to be on an instance that wasn't (to my knowledge) in the crosshairs of such actions of fedi-banishment, I migrated my account from Fosstodon to another tech-oriented instance, [Hachyderm](https://hachyderm.io). There, I am [@BryceWrayTX@hachyderm.io](https://hachyderm.io/@BryceWrayTX), to which this site's appropriate links have pointed since yesterday.
 
-I recommend [Corey Snipes](https://coreysnipes.com/)'s post, "[Thoughts on Fosstodon](https://coreysnipes.com/thoughts-on-fosstodon.html)," as a good explanation of how it felt to us Fosstodon users who found ourselves unexpectedly involved in a war of angry words and accusations. Note that he, too, moved from Fosstodon to Hachyderm as a result of the goings-on. Also worth reading is "[My Thoughts on the Fosstodon Drama](https://kevquirk.com/blog/my-thoughts-on-the-fosstodon-drama)" by [Kev Quirk](https://kevquirk.com/), one of the founders of Fosstodon.
+I recommend [Corey Snipes](https://coreysnipes.com/)'s post, "[Thoughts on Fosstodon](https://coreysnipes.com/thoughts-on-fosstodon.html)," as a good explanation of how it felt to us Fosstodon users who found ourselves unexpectedly involved in a war of angry words and accusations. Note that he, too, moved from Fosstodon to Hachyderm as a result of the goings-on. Also worth reading are these posts from the founders of Fosstodon:
+
+- "[My Thoughts on the Fosstodon Drama](https://kevquirk.com/blog/my-thoughts-on-the-fosstodon-drama)" by [Kev Quirk](https://kevquirk.com/).
+- "[Do What You Love](https://mikestone.me/2025-04-28-do-what-you-love)" by [Mike Stone](https://mikestone.me/).
