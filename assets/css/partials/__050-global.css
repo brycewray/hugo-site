@@ -142,16 +142,6 @@ html, body {
 	} */
 	background-color: var(--bkgd);
 	color: var(--default);
-
-	@media screen and (width >= 1024px) {
-		font-feature-settings: 'ss03' 1, 'calt' 0;
-
-		/* ^^
-		- Avoid `ss03` oddity in some system fonts.
-		- Disable `calt` with Inter 4.x (or subset it out) until/unless fixed
-		-- https://github.com/rsms/inter/issues/442 et al.
-		*/
-	}
 }
 
 /*
