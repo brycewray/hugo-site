@@ -1,6 +1,6 @@
 {{- $opts := dict "inlineImports" true -}}
 
-{{ $css := (resources.Match "css/partials/__0*.css") | resources.Concat "css/critical.css" }}
+{{- $css := (resources.Match "css/partials/__0*.css") | resources.Concat "css/critical.css" -}}
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | resources.Copy "css/critical.min.css" | postCSS -}}
 {{- end -}}

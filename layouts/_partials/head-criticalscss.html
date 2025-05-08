@@ -2,7 +2,7 @@
 
 {{- $css := resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | postCSS -}}
+	{{- $css = $css | resources.Copy "css/critical.min.css" | postCSS -}}
 {{- end -}}
 {{- with $css -}}
 	<style>{{ .Content | safeCSS }}</style>
