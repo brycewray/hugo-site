@@ -1,9 +1,18 @@
 {{- $scssOptions := dict "transpiler" "dartsass" -}}
+{{- $criticalCSSinline := true -}}
 
-{{- $css := resources.Get "scss/critical.scss" | toCSS $scssOptions -}}
+{{- $css := resources.Get "scss/sitewide.scss" | toCSS $scssOptions -}}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | resources.Copy "css/critical.min.css" | postCSS -}}
+	{{- $css = $css | resources.Copy "css/sitewide.min.css" | postCSS -}}
+	{{- if ne $criticalCSSinline true -}}
+		{{- $css = $css | fingerprint -}}
+	{{- end -}}
 {{- end -}}
 {{- with $css -}}
-	<style>{{ .Content | safeCSS }}</style>
+	{{- if ne $criticalCSSinline true -}}
+		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	{{- else -}}
+		<style>{{ .Content | safeCSS }}</style>
+	{{- end -}}
 {{- end }}
