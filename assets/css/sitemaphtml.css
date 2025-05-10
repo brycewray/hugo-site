@@ -34,9 +34,9 @@
 			font-weight: var(--font-medium);
 		}
 
-		.description {
+		/* .description {
 			font-style: italic;
-		}
+		} */
 	}
 }
 
