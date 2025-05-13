@@ -26,6 +26,7 @@ html, html[data-theme="light"] {
 	--link: #{clr.$blue-700};
 	--link-afh: #{clr.$blue-900};
 	--link-box: #{clr.$blue-750};
+	--link-code: #{clr.$blue-750};
 	--head: var(--black);
 	--red: #{clr.$red-700};
 	--box-red: #{clr.$red-600};
@@ -62,6 +63,7 @@ html[data-theme="dark"] {
 	--link: #{clr.$blue-300};
 	--link-afh: #{clr.$slate-300};
 	--link-box: #{clr.$blue-550};
+	--link-code: #{clr.$blue-300};
 	--head: var(--white);
 	--red: #{clr.$red-300};
 	--box-red: #{clr.$red-400};

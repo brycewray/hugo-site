@@ -26,7 +26,7 @@ html, html[data-theme="light"] {
 	--yellow: var(--yellow-800);
 	--green: var(--green-600);
 	--emerald: var(--emerald-700);
-	--cyan: var(--cyan-600);
+	--cyan: var(--cyan-700);
 	--blue: var(--blue-750);
 	--fuchsia: var(--fuchsia-700);
 	--rose: var(--rose-700);
@@ -395,6 +395,10 @@ code {
   font-kerning: none;
   font-variant-ligatures: none;
 	background-color: var(--bkgd-article-code);
+}
+
+a code {
+	color: var(--link-code);
 }
 
 article code {

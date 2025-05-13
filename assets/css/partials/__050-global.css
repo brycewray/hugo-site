@@ -23,6 +23,7 @@ html, html[data-theme="light"] {
 	--link: var(--blue-700);
 	--link-afh: var(--blue-900);
 	--link-box: var(--blue-750);
+	--link-code: var(--blue-750);
 	--head: var(--black);
 	--red: var(--red-700);
 	--box-red: var(--red-600);
@@ -60,7 +61,8 @@ html[data-theme="dark"] {
 	--bquote-boost: var(--gray-350);
 	--link: var(--blue-550);
 	--link-afh: var(--slate-300);
-	--link-box: var(--blue-550);
+	--link-box: var(--blue-500);
+	--link-code: var(--blue-300);
 	--head: var(--white);
 	--red: var(--red-300);
 	--box-red: var(--red-400);
