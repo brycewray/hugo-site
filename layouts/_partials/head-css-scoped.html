@@ -81,5 +81,36 @@
 	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | postCSS | fingerprint -}}
 {{- end -}}
 {{- with $printCSS -}}
-	<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction }} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
+	{{ $safePrintLink := $printCSS.RelPermalink | safeURL }}
+	<script{{ if site.Params.Nonces }} nonce="DhcnhD3khTMePgXw"{{ end }}>
+		function loadPrintStylesheet() {
+			if (document.getElementById('print-css')) return; // Prevent multiple loads
+
+			const link = document.createElement('link');
+			link.rel = 'stylesheet';
+			link.href = '{{ $safePrintLink }}';
+			link.type = 'text/css';
+			link.media = 'print';
+			link.id = 'print-css';
+			{{- if hugo.IsProduction }}
+				link.integrity='{{ $printCSS.Data.Integrity }}';
+			{{- end -}}
+			document.head.appendChild(link);
+		}
+
+		// Use media query listener
+		const mediaQueryList = window.matchMedia('print');
+
+		mediaQueryList.addEventListener('change', (mql) => {
+			if (mql.matches) {
+				loadPrintStylesheet();
+			}
+		});
+
+		// Fallback for browsers that fire beforeprint/afterprint
+		window.addEventListener('beforeprint', loadPrintStylesheet);
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="{{ $printCSS.RelPermalink }}" type="text/css" media="print"{{- if hugo.IsProduction }} integrity="{{ $printCSS.Data.Integrity }}"{{- end -}}>
+	</noscript>
 {{- end }}
