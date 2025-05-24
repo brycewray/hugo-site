@@ -12,6 +12,10 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 In addition, the site uses certain **external services**, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
+## Bluesky
+
+This site [reproduces](/posts/2024/11/simple-hugo-shortcode-embedding-bluesky-posts/) some [Bluesky](https://bsky.app) posts but, thanks to how Bluesky works as of this writing, this occurs without adding any tracking code or other, similar invasions of your privacy. Each post is linked to its original location. If a post ceases to be available, I recreate its text only in blockquote form.
+
 ## Cloudflare
 
 This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com) and is configured to use Cloudflare's Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.<!-- Additionally, any non-self-served web fonts on this site are provided by [Cloudflare Fonts](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/), a service which processes Google Fonts not only to enhance performance but also to keep the fonts from violating your privacy --- [as they would if served by Google](/posts/2020/08/google-fonts-privacy/).-->
@@ -22,7 +26,7 @@ The site's [giscus](https://giscus.app) commenting system, which is based on the
 
 ## Mastodon
 
-This site reproduces [Mastodon](https://join.mastodon.org) toots as purely static text and downloaded images with no tracking involved. Each toot is linked to its original location on the applicable Mastodon instance.
+This site [reproduces](/posts/2022/06/static-mastodon-toots-hugo/) some [Mastodon](https://join.mastodon.org) posts, but as purely static text and downloaded images with no tracking involved. Each post is linked to its original location on the applicable Mastodon instance. If a post ceases to be available, I recreate its text only in blockquote form.
 
 ## YouTube
 
