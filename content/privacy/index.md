@@ -26,7 +26,7 @@ The site's [giscus](https://giscus.app) commenting system, which is based on the
 
 ## Mastodon
 
-This site [reproduces](/posts/2022/06/static-mastodon-toots-hugo/) some [Mastodon](https://join.mastodon.org) posts, but as purely static text and downloaded images with no tracking involved. Each post is linked to its original location on the applicable Mastodon instance. If a post ceases to be available, I recreate its text only in blockquote form.
+This site [reproduces](/posts/2022/06/static-mastodon-toots-hugo/) some [Mastodon](https://joinmastodon.org/) posts, but as purely static text and downloaded images with no tracking involved. Each post is linked to its original location on the applicable Mastodon instance. If a post ceases to be available, I recreate its text only in blockquote form.
 
 ## YouTube
 
