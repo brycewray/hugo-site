@@ -52,6 +52,7 @@ main() {
 
   # Build the site.
   # hugo --gc --minify
+  echo "Building the site with Hugo..."
   hugo --gc --minify --logLevel info
 
   # RSS feed adjustments
