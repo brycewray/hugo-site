@@ -76,7 +76,7 @@ static/pagefind
 
 bin/hugo
 
-functions/_middleware.js
+functions
 
 _z
 
