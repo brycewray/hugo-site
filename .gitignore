@@ -50,6 +50,7 @@ logstart.sh
 # push*.sh
 # serve*.sh
 deploy.sh
+deploy-workers.sh
 myip.txt
 wm*.sh
 git*.sh
