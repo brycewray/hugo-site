@@ -1,6 +1,7 @@
 {
   "name": "static-site-workers",
   "compatibility_date": "2025-05-27",
+	"main": "./functions-workers/index.js",
 	"build": {
 		"command": "./build-workers.sh"
 	},
