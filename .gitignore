@@ -76,6 +76,8 @@ static/pagefind
 
 bin/hugo
 
+functions/_middleware.js
+
 _z
 
 # Re possible config files
