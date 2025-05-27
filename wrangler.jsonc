@@ -1,6 +1,9 @@
 {
-  "name": "static-site-wdu",
+  "name": "static-site-workers",
   "compatibility_date": "2025-05-27",
+	"build": {
+		"command": "./build-workers.sh"
+	},
   "assets": {
     "directory": "./public/",
     "not_found_handling": "404-page",
