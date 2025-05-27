@@ -8,7 +8,7 @@
   "assets": {
     "directory": "./public/",
 		"run_worker_first": true,
-		"binding": "/",
+		"binding": "ASSETS",
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash"
   },
