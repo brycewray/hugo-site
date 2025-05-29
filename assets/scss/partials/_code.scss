@@ -2,6 +2,10 @@
 @use '_010-variables' as var;
 
 /* stylelint-disable no-descending-specificity */
+/* stylelint-disable hue-degree-notation */
+/* stylelint-disable comment-empty-line-before */
+/* stylelint-disable color-function-notation */
+/* stylelint-disable number-max-precision */
 
 html, html[data-theme="light"] {
 	--gray: #{clr.$gray-700};
