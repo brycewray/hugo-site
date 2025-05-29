@@ -5,13 +5,13 @@
 		"not op_mini all"
 	],
 	"devDependencies": {
-		"browserslist": "^4.24.5",
+		"browserslist": "^4.25.0",
 		"cssnano": "^7.0.7",
-		"postcss": "^8.5.3",
+		"postcss": "^8.5.4",
 		"postcss-cli": "^11.0.1",
-		"postcss-preset-env": "^10.1.6",
+		"postcss-preset-env": "^10.2.0",
 		"stylelint": "^16.19.1",
 		"stylelint-config-standard-scss": "^15.0.1",
-		"wrangler": "^4.17.0"
+		"wrangler": "^4.18.0"
 	}
 }
