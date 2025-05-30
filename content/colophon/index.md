@@ -10,7 +10,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 
 <!--more-->
 
-This site has been online since September, 2018. I build and maintain it using the [Hugo](https://gohugo.io) static site generator. The site host is [Cloudflare Pages](https://pages.cloudflare.com). I do compatibility testing of the site on [Chromium](https://www.chromium.org/Home/)-based, [Webkit](https://webkit.org)-based, and [Gecko](https://developer.mozilla.org/en-US/docs/Glossary/Gecko)-based browsers, testing on screen sizes for both desktop computing and mobile devices.
+This site has been online since September, 2018. I build and maintain it using the [Hugo](https://gohugo.io) static site generator. The site runs on the [Cloudflare Workers](https://workers.cloudflare.com) platform. I do compatibility testing of the site on [Chromium](https://www.chromium.org/Home/)-based, [Webkit](https://webkit.org)-based, and [Gecko](https://developer.mozilla.org/en-US/docs/Glossary/Gecko)-based browsers, testing on screen sizes for both desktop computing and mobile devices.
 
 The site's main typography changes from time to time as the mood (or guilt over making you download web fonts) strikes me, varying between either system fonts or a self-hosted variable web font, typically either Inter or Libre Franklin. On devices with screen sizes under 1024 pixels, I show only system fonts. I do this since those devices may be more likely to experience sub-optimal connectivity and thus would benefit from not having to download web fonts.
 
