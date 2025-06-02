@@ -9,11 +9,11 @@
 	*/
   "routes": [
     {
-      "pattern": "brycewray.com",
+      "pattern": "www.brycewray.com",
       "custom_domain": true
     },
     {
-      "pattern": "www.brycewray.com",
+      "pattern": "brycewray.com",
       "custom_domain": true
     }
   ],
