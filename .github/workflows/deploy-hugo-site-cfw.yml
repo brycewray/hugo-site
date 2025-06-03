@@ -19,7 +19,7 @@ env:
   # ^^ refers to whether we're using Node.js in any way,
   #    including use of (e.g.) PostCSS, even if not doing `npm run build`
   NODE_VERSION: 22 # (Node.js version to use if NODE is true)
-  STYLING: CSS # 'SCSS' or 'CSS'; 'CSS' requires PostCSS and/or Lightning CSS
+  STYLING: SCSS # 'SCSS' or 'CSS'; 'CSS' requires PostCSS and/or Lightning CSS
 
 jobs:
   deploy:
