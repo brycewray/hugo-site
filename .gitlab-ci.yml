@@ -1,4 +1,4 @@
-# for Cloudflare Workers
+# for Cloudflare Workers (as of 2025-05-30)
 
 stages:
   - deploy
