@@ -74,7 +74,7 @@ jobs:
           hugo --gc --minify --logLevel info
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
-      - name: Run Pagefind (when not doing search in Node.js)
+      - name: Run Pagefind (when not doing search with `npm run build`)
         if: ${{ env.PAGEFIND_NPM !='true' }}
         run: npm_config_yes=true npx pagefind@latest --site "public"
       - name: Publish to CFW
