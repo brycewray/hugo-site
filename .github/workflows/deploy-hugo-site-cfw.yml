@@ -1,0 +1,100 @@
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  HUGO_VERSION: 0.147.7 # will get Extended Version below
+  HUGO_NPM: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  # ^^ refers to whether we're using the npm pkg `hugo-installer` or similar,
+  #    as opposed to directly downloading/installing the official Hugo binary
+  PAGEFIND_NPM: false # choices: 'true' and 'false'
+  # ^^ refers to whether we're using an `npm run build` to load Pagefind,
+  #    as opposed to running Pagefind directly via `npx pagefind`
+  #    (the latter is used when not using Node.js for the site build)
+  DART_SASS_VERSION: 1.89.1 # (depends on STYLING env var, below)
+  NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  # ^^ refers to whether we're using Node.js in any way,
+  #    including use of (e.g.) PostCSS, even if not doing `npm run build`
+  NODE_VERSION: 22 # (Node.js version to use if NODE is true)
+  STYLING: CSS # 'SCSS' or 'CSS'; 'CSS' requires PostCSS and/or Lightning CSS
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Set GHA runner TZ to U.S. Central time
+        uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "America/Chicago" # default = "UTC"
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # for proper use of Hugo's Git info variables
+      - name: Set up Node.js (cond. - Node)
+        if: ${{ env.NODE == 'true' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install npm packages (cond. - Node)
+        if: ${{ env.NODE == 'true' }}
+        run: npm ci # not `npm install`
+        # `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json
+      - name: Hugo download/install (cond. - non-Hugo-via-hugo-installer)
+        if: ${{ env.HUGO_NPM != 'true' }}
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
+          sudo dpkg -i hugo*.deb
+      - name: Install Dart Sass (cond. - SCSS)
+        if: ${{ env.STYLING == 'SCSS' }}
+        run: |
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+          dart-sass/sass --embedded --version
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
+      - name: Cache appropriate Hugo items
+        id: cache-hugosite
+        uses: actions/cache@v4
+        with:
+          path: |
+            resources
+            static
+          key: ${{ runner.os }}-hugosite
+      - name: Build site (with `npm run build`)
+        if: ${{ env.HUGO_NPM == 'true' }}
+        run: npm run build
+      - name: Build site (not with `npm run build`)
+        if: ${{ env.HUGO_NPM != 'true' }}
+        run: |
+          hugo --gc --minify --logLevel info
+          mv public/posts/index.xml public/index-excerpts.xml
+          mv public/posts/index.json public/index-excerpts.json
+      - name: Run Pagefind (when not doing search with `npm run build`)
+        if: ${{ env.PAGEFIND_NPM !='true' }}
+        run: npm_config_yes=true npx pagefind@latest --site "public"
+      - name: Publish to CFW
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CFW_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci] (works also in CFP GUI)
+# [ci skip] (works also in CFP GUI)
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true` or `skip-checks:true`.”
+#
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
