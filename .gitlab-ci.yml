@@ -1,0 +1,67 @@
+# for Cloudflare Workers (as of 2025-05-30)
+
+stages:
+  - deploy
+
+image: node:latest
+
+variables:
+  CLOUDFLARE_API_TOKEN: $CFW_API_TOKEN
+  CLOUDFLARE_ACCOUNT_ID: $CF_ACCOUNT_ID
+  HUGO_NPM: "false" # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  # ^^ refers to whether we're using the npm pkg `hugo-installer` or similar,
+  #    as opposed to directly downloading/installing the official Hugo binary
+  HUGO_VERSION: 0.147.7 # will get Extended Version below
+  DART_SASS_VERSION: 1.89.1 # (depends on STYLING var, below)
+  PAGEFIND_NPM: "true" # choices: 'true' and 'false'
+  # ^^ refers to whether we're using an `npm run build` to load Pagefind,
+  #    as opposed to running Pagefind directly via `npx pagefind`
+  #    (the latter is used when not using Node.js for the site build)
+  NODE: "true" # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  # ^^ refers to whether we're using Node.js in any way,
+  #    including use of (e.g.) PostCSS, even if not doing `npm run build`
+  NODE_VERSION: 22.x # (Node.js version to use if NODE is "true")
+  GIT_DEPTH: 0
+  GIT_STRATEGY: clone
+  MY_WEBSITE: https://www.brycewray.com
+  STYLING: CSS # 'SCSS' or 'CSS'
+  TZ: America/Chicago
+
+deploySite:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment:
+    name: production
+    url: $MY_WEBSITE
+  script:
+    - >
+      if [ "$STYLING" == "SCSS" ]; then
+        curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+        tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+        dart-sass/sass --embedded --version
+      fi
+    - >
+      if [ "$NODE" == "true" ]; then
+        npm ci
+      fi
+    - >
+      if [ "$HUGO_NPM" != "true" ]; then
+        wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb -O hugo_extended_${HUGO_VERSION}}_linux-amd64.deb
+        dpkg -i hugo*.deb
+        hugo --gc --minify --logLevel info
+        mv public/posts/index.xml public/index-excerpts.xml
+        mv public/posts/index.json public/index-excerpts.json
+        if [ "$PAGEFIND_NPM" != "true" ]; then
+          npm_config_yes=true npx pagefind@latest --site "public"
+        fi
+      else
+        npm run build
+      fi
+    - npm_config_yes=true npx wrangler deploy
+# To do a push without triggering this pipeline, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci] (works also in CFP GUI)
+# [ci skip] (works also in CFP GUI)
