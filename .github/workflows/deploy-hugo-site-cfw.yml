@@ -7,19 +7,14 @@ on:
 
 env:
   HUGO_VERSION: 0.147.7 # will get Extended Version below
-  HUGO_NPM: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
-  # ^^ refers to whether we're using the npm pkg `hugo-installer` or similar,
-  #    as opposed to directly downloading/installing the official Hugo binary
-  PAGEFIND_NPM: false # choices: 'true' and 'false'
-  # ^^ refers to whether we're using an `npm run build` to load Pagefind,
-  #    as opposed to running Pagefind directly via `npx pagefind`
-  #    (the latter is used when not using Node.js for the site build)
   DART_SASS_VERSION: 1.89.1 # (depends on STYLING env var, below)
+  STYLING: CSS # 'SCSS' or 'CSS'
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using Node.js in any way,
   #    including use of (e.g.) PostCSS, even if not doing `npm run build`
   NODE_VERSION: 22 # (Node.js version to use if NODE is true)
-  STYLING: CSS # 'SCSS' or 'CSS'; 'CSS' requires PostCSS and/or Lightning CSS
+  NPM_RUN_BUILD: false # choices: 'true' and 'false'
+  # ^^ refers to whether we're using `npm run build` to build the site
 
 jobs:
   deploy:
@@ -36,21 +31,20 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # for proper use of Hugo's Git info variables
-      - name: Set up Node.js (cond. - Node)
+      - name: Set up Node.js if using in any way
         if: ${{ env.NODE == 'true' }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Install npm packages (cond. - Node)
+      - name: Install npm packages if using Node.js
         if: ${{ env.NODE == 'true' }}
         run: npm ci # not `npm install`
         # `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json
-      - name: Hugo download/install (cond. - non-Hugo-via-hugo-installer)
-        if: ${{ env.HUGO_NPM != 'true' }}
+      - name: Hugo download/install
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
-      - name: Install Dart Sass (cond. - SCSS)
+      - name: Install Dart Sass if using SCSS styling
         if: ${{ env.STYLING == 'SCSS' }}
         run: |
           curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
@@ -66,17 +60,15 @@ jobs:
             static
           key: ${{ runner.os }}-hugosite
       - name: Build site (with `npm run build`)
-        if: ${{ env.HUGO_NPM == 'true' }}
+        if: ${{ env.NPM_RUN_BUILD == 'true' }}
         run: npm run build
       - name: Build site (not with `npm run build`)
-        if: ${{ env.HUGO_NPM != 'true' }}
+        if: ${{ env.NPM_RUN_BUILD != 'true' }}
         run: |
           hugo --gc --minify --logLevel info
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
-      - name: Run Pagefind (when not doing search with `npm run build`)
-        if: ${{ env.PAGEFIND_NPM !='true' }}
-        run: npm_config_yes=true npx pagefind@latest --site "public"
+          npm_config_yes=true npx pagefind@latest --site "public"
       - name: Publish to CFW
         uses: cloudflare/wrangler-action@v3
         with:
