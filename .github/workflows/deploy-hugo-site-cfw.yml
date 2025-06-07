@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.147.7 # will get Extended Version below
+  HUGO_VERSION: 0.147.8 # will get Extended Version below
   DART_SASS_VERSION: 1.89.1 # (depends on STYLING env var, below)
   STYLING: CSS # 'SCSS' or 'CSS'
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])

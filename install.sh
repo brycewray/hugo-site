@@ -1,7 +1,7 @@
 #!/bin/sh
 # --- for use with macOS and Linux/WSL
 
-HUGO_VERSION=0.147.7
+HUGO_VERSION=0.147.8
 # https://github.com/gohugoio/hugo/releases/
 HUGO_OS_ARCH='darwin-universal'
 # ^^^ choices for 'HUGO_OS_ARCH' (Extended Version only):
