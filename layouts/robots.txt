@@ -66,5 +66,8 @@ Disallow: /
 User-agent: PerplexityBot
 Disallow: /
 
+User-agent: Scrapy
+Disallow: /
+
 User-agent: YouBot
 Disallow: /
