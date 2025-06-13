@@ -16,8 +16,8 @@
 
 main() {
 
-  HUGO_VERSION=0.147.6
-  DART_SASS_VERSION=1.89.0
+  HUGO_VERSION=0.147.8
+  DART_SASS_VERSION=1.89.2
 
   # set TZ --- https://discourse.gohugo.io/t/hugo-support-in-cloudflare-workers/54866/11
   echo "Setting the timezone to U.S. Central (CDT/CST)..."
