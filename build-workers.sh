@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #------------------------------------------------------------------------------
-# From:
+# Based on:
 # https://github.com/jmooring/hosting-cloudflare-worker/blob/main/build.sh
 # ...as of 2025-05-27
 #------------------------------------------------------------------------------
@@ -60,6 +60,7 @@ main() {
   hugo --gc --minify --logLevel info
 
   # RSS feed adjustments
+  echo "Adjusting excerpted RSS feed locations..."
   mv public/posts/index.xml public/index-excerpts.xml
   mv public/posts/index.json public/index-excerpts.json
 
