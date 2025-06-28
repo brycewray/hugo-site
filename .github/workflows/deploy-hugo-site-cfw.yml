@@ -38,8 +38,9 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install npm packages if using Node.js
         if: ${{ env.NODE == 'true' }}
-        run: npm ci # not `npm install`
-        # `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        #   ... not `npm install`
+        #   `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json; above is based on https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml
       - name: Hugo download/install
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
