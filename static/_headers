@@ -1,17 +1,2 @@
 https://*.brycewray.workers.dev/*
   X-Robots-Tag: noindex
-
-*.jpg
-	Cache-Control: public, max-age=31536000, immutable
-	CDN-Cache-Control: public, max-age=31536000, immutable
-	X-Content-Type-Options: nosniff
-
-*.webp
-	Cache-Control: public, max-age=31536000, immutable
-	CDN-Cache-Control: public, max-age=31536000, immutable
-	X-Content-Type-Options: nosniff
-
-*.css
-	Cache-Control: public, max-age=31536000, immutable
-	CDN-Cache-Control: public, max-age=31536000, immutable
-	X-Content-Type-Options: nosniff
