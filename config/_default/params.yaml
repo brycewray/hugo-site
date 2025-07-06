@@ -1,8 +1,8 @@
 Nonces: true # Boolean --- "true" triggers appropriate nonces for Workers/Edge Functions to handle for CSP
 SiteLive: live # Boolean --- used for adapting robots.txt as needed
 EmailObfuscation: local # choices are "local" ahd "host"
-Host: "CFP" # choices for Host are "CFP" and "Vercel"
-DeepClone: true # Boolean --- Gitinfo from a GH (or CFP `git fetch --unshallow`)
+Host: "CFW" # choices for Host are "CFW" and "Vercel"
+DeepClone: true # Boolean --- Gitinfo from a GHA workflow
 ShowGitInfo: true # whether to display Gitinfo at all (regardless of `DeepClone` setting)
 # ===========================
 Domain: brycewray.com
