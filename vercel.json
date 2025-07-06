@@ -1,4 +1,5 @@
 {
+	"$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
   "github": {
     "silent": true
