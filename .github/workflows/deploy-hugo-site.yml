@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Workers
+name: Deploy website
 
 on:
   push:
