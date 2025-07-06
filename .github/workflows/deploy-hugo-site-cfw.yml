@@ -9,6 +9,8 @@ env:
   HUGO_VERSION: 0.147.9 # will get Extended Version below
   DART_SASS_VERSION: 1.89.2 # (depends on STYLING env var, below)
   STYLING: CSS # 'SCSS' or 'CSS'
+  HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Vercel'
+  # ^^ refers to the hosting service used for the site
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using Node.js in any way,
   #    including use of (e.g.) PostCSS, even if not doing `npm run build`
@@ -27,6 +29,8 @@ jobs:
         uses: szenius/set-timezone@v2.0
         with:
           timezoneLinux: "America/Chicago" # default = "UTC"
+          timezoneMacos: "America/Chicago" # default = "GMT"
+          timezoneWindows: "America/Chicago" # default = "UTC"
       - name: Checkout default branch
         uses: actions/checkout@v4
         with:
@@ -45,7 +49,7 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
-      - name: Install Dart Sass if using SCSS styling
+      - name: Install Dart Sass
         if: ${{ env.STYLING == 'SCSS' }}
         run: |
           curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
@@ -71,17 +75,31 @@ jobs:
           mv public/posts/index.json public/index-excerpts.json
           npm_config_yes=true npx pagefind@latest --site "public"
       - name: Publish to CFW
+        if: ${{ env.HOST == 'CFW' }}
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to Vercel
+        if: ${{ env.HOST == 'Vercel' }}
+        uses: BetaHuhn/deploy-to-vercel-action@v1
+        with:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+          WORKING_DIRECTORY: 'public'
+      - name: Remove Vercel-specific config file from build
+        if: ${{ env.HOST == 'Vercel' }}
+        run: |
+          rm -rf public/vercel.json
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
 # (INCLUDING the brackets AND case-sensitivity):
 #
-# [skip ci] (works also in CFP GUI)
-# [ci skip] (works also in CFP GUI)
+# [skip ci] (works also in CFW and Vercel GUIs)
+# [ci skip]
 # [no ci]
 # [skip actions]
 # [actions skip]
