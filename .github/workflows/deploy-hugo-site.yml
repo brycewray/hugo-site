@@ -9,7 +9,7 @@ env:
   HUGO_VERSION: 0.147.9 # will get Extended Version below
   DART_SASS_VERSION: 1.89.2 # (depends on STYLING env var, below)
   STYLING: CSS # 'SCSS' or 'CSS'
-  HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Vercel'
+  HOST: Vercel # choices: 'CFW' (Cloudflare Workers) or 'Vercel'
   # ^^ refers to the hosting service used for the site
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using Node.js in any way,
