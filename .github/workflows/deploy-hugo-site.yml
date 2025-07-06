@@ -81,6 +81,9 @@ jobs:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Vercel CLI
+        if: ${{ env.HOST == 'Vercel' }}
+        run: npm install -g vercel
       - name: Publish to Vercel
         if: ${{ env.HOST == 'Vercel' }}
         uses: BetaHuhn/deploy-to-vercel-action@v1
