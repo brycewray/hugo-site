@@ -8,12 +8,12 @@
 		{
 			"source": "/posts/2023/06/using-hugo-dart-sass-saga-continues/",
 			"destination": "/posts/2023/06/using-dart-sass-hugo-saga-continues/",
-			"status code": 301
+			"statusCode": 301
 		},
 		{
 			"source": "/sitemaphtml/",
 			"destination": "/sitemap/",
-			"status code": 301
+			"statusCode": 301
 		}
 	],
   "headers": [
