@@ -38,10 +38,6 @@
           "value": "no-referrer, strict-origin-when-cross-origin"
         },
 				{
-					"key": "Report-To",
-					"value": "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://brycewray.report-uri.com/a/d/g'}],'include_subdomains':true}"
-				},
-				{
 					"key": "Permissions-Policy",
 					"value": "fullscreen=*, picture-in-picture=*, xr-spatial-tracking=*"
 				}
