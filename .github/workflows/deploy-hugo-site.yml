@@ -81,6 +81,9 @@ jobs:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Netlify CLI
+        if: ${{ env.HOST == 'Netlify' }}
+        run: npm install -g netlify-cli
       - name: Publish to Netlify
         if: ${{ env.HOST == 'Netlify' }}
         uses: jsmrcaga/action-netlify-deploy@v2.0.0
