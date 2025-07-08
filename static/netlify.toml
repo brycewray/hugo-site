@@ -42,7 +42,6 @@
 
 [[headers]]
   for = "*.css"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -50,7 +49,6 @@
 
 [[headers]]
   for = "*.gif"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -58,7 +56,6 @@
 
 [[headers]]
   for = "*.ico"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -66,7 +63,6 @@
 
 [[headers]]
   for = "*.img"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -74,7 +70,6 @@
 
 [[headers]]
   for = "*.jpeg"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -82,7 +77,6 @@
 
 [[headers]]
   for = "*.jpg"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -90,7 +84,6 @@
 
 [[headers]]
   for = "*.js"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -98,7 +91,6 @@
 
 [[headers]]
   for = "*.json"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -106,7 +98,6 @@
 
 [[headers]]
   for = "*.png"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -114,7 +105,6 @@
 
 [[headers]]
   for = "*.svg"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -122,7 +112,6 @@
 
 [[headers]]
   for = "*.webp"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -130,7 +119,6 @@
 
 [[headers]]
   for = "*.woff"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
@@ -138,7 +126,6 @@
 
 [[headers]]
   for = "*.woff2"
-
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 		CDN-Cache-Control = "public, max-age=31536000, immutable"
