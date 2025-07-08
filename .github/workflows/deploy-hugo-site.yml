@@ -88,7 +88,7 @@ jobs:
         if: ${{ env.HOST == 'Netlify' }}
         uses: jsmrcaga/action-netlify-deploy@v2.0.0
         with:
-          build-directory: './public'
+          build_directory: './public'
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_MESSAGE: "Deployed by GitHub Actions"
