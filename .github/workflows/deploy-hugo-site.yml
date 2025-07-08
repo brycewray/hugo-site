@@ -9,7 +9,7 @@ env:
   HUGO_VERSION: 0.148.0 # will get Extended Version below
   DART_SASS_VERSION: 1.89.2 # (depends on STYLING env var, below)
   STYLING: CSS # 'SCSS' or 'CSS'
-  HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Vercel'
+  HOST: Netlify # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   # ^^ refers to the hosting service used for the site
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using Node.js in any way,
@@ -81,6 +81,16 @@ jobs:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to Netlify
+        if: ${{ env.HOST == 'Netlify' }}
+        uses: jsmrcaga/action-netlify-deploy@v2.0.0
+        with:
+          build-directory: './public'
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_MESSAGE: "Deployed by GitHub Actions"
+          NETLIFY_DEPLOY_TO_PROD: true
+          build_command: "echo Publishing to Netlify"
       - name: Install Vercel CLI
         if: ${{ env.HOST == 'Vercel' }}
         run: npm install -g vercel
