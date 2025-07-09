@@ -81,19 +81,29 @@ jobs:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install Netlify CLI
-        if: ${{ env.HOST == 'Netlify' }}
-        run: npm install -g netlify-cli
+      # - name: Install Netlify CLI
+      #   if: ${{ env.HOST == 'Netlify' }}
+      #   run: npm install -g netlify-cli
       - name: Publish to Netlify
         if: ${{ env.HOST == 'Netlify' }}
-        uses: jsmrcaga/action-netlify-deploy@v2.0.0
-        with:
-          build_directory: './public'
+        # uses: jsmrcaga/action-netlify-deploy@v2.0.0
+        # with:
+        #   build_directory: './public'
+        #   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        #   NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        #   NETLIFY_DEPLOY_MESSAGE: "Deployed by GitHub Actions"
+        #   NETLIFY_DEPLOY_TO_PROD: true
+        #   build_command: "echo Publishing to Netlify"
+        uses: netlify/actions/cli@master
+        env:
+          CI: true
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_DEPLOY_MESSAGE: "Deployed by GitHub Actions"
-          NETLIFY_DEPLOY_TO_PROD: true
-          build_command: "echo Publishing to Netlify"
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+        with:
+          netlify-config-path: "./netlify.toml"
+          args: deploy --dir=public --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
       - name: Install Vercel CLI
         if: ${{ env.HOST == 'Vercel' }}
         run: npm install -g vercel
