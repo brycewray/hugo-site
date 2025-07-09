@@ -1,0 +1,132 @@
+[[redirects]]
+	from = "/posts/2023/06/using-hugo-dart-sass-saga-continues/"
+	to = "/posts/2023/06/using-dart-sass-hugo-saga-continues/"
+	status = 301
+
+[[redirects]]
+	from = "/sitemaphtml/"
+	to = "/sitemap/"
+	status = 301
+
+# [build.environment]
+# 	HUGO_VERSION = "0.148.0"
+# 	DART_SASS_VERSION = "1.89.2"
+# 	GO_VERSION = "1.24.2"
+# 	NODE_VERSION = "22"
+# 	TZ = "America/Chicago"
+
+# [build]
+# 	publish = "public"
+# 	command = """\
+# 		curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz && \
+# 		tar -xf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz && \
+# 		rm dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz && \
+# 		export PATH=/opt/build/repo/dart-sass:$PATH && \
+# 		git config core.quotepath false && \
+# 		hugo --gc --minify --logLevel info && \
+# 		mv public/posts/index.xml public/index-excerpts.xml && \
+# 		mv public/posts/index.json public/index-excerpts.json && \
+# 		npm_config_yes=true npx pagefind@latest --site "public" \
+# 		"""
+
+[[headers]]
+	for = "/*"
+
+	[headers.values]
+		Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+		X-Content-Type-Options = "nosniff"
+		X-Frame-Options = "SAMEORIGIN"
+		X-XSS-Protection = "1"
+		Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
+		Permissions-Policy = "fullscreen=*, picture-in-picture=*, xr-spatial-tracking=*"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.gif"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.img"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.jpeg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.woff"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+		CDN-Cache-Control = "public, max-age=31536000, immutable"
+		X-Content-Type-Options = "nosniff"
