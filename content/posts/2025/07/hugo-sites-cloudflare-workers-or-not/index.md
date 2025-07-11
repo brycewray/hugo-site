@@ -50,7 +50,7 @@ On the other hand: the [Cloudflare Workers build image](https://developers.cloud
 
 What about the competition? Here's how the only competing hosts I'll mention[^DOAP] fare in this regard:
 
-[^DOAP]: A quick review of the free tier of Digital Ocean's Apps Platform shows that DOAP remains as unsuitable as I found it in 2023, thus deserving no real mention in any comparisons herein.
+[^DOAP]: A quick review of the free tier of Digital Ocean's Apps Platform shows that DOAP remains as unsuitable as I found it in [2023](/posts/2023/03/publish-or-perish-2023/#digitalocean-app-platform), thus deserving no real mention in any comparisons herein.
 
 - **Hugo** --- The build images for [Netlify](https://www.netlify.com), [Render](https://render.com), and [Vercel](https://vercel.com) provide Hugo and let you specify the version. Netlify and Vercel give you two ways to specify the `HUGO_VERSION` environment variable: through the GUI, or in a config file --- `netlify.toml` or `vercel.json`, respectively. With Render, the only way to set the Hugo version is with a [shell script](https://community.render.com/t/how-to-define-hugo-version/390/7); otherwise, as of this writing, you get a Hugo version from multiple years ago.
 - **Dart Sass** --- With Netlify, you can get the Dart Sass binary and specify its version [through scripting in `netlify.toml`](https://gohugo.io/functions/css/sass/#netlify), but not through the Netlify GUI. As for Render and Vercel, I know a [shell script](https://discourse.gohugo.io/t/using-dart-sass-hugo-and-netlify/37099/7) suggested by Hugo's [Bjørn Erik Pedersen](https://github.com/bep) worked [at one time](/posts/2022/03/using-dart-sass-hugo-sequel/), but I haven't tried it on either host recently.
