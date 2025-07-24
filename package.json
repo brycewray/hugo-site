@@ -12,6 +12,6 @@
 		"postcss-preset-env": "^10.2.4",
 		"stylelint": "^16.22.0",
 		"stylelint-config-standard-scss": "^15.0.1",
-		"wrangler": "^4.25.0"
+		"wrangler": "^4.26.0"
 	}
 }
