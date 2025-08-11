@@ -32,7 +32,7 @@ jobs:
           timezoneMacos: "America/Chicago" # default = "GMT"
           timezoneWindows: "America/Chicago" # default = "UTC"
       - name: Checkout default branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0 # for proper use of Hugo's Git info variables
       - name: Set up Node.js if using in any way
