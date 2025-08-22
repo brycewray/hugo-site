@@ -6,12 +6,12 @@
 	],
 	"devDependencies": {
 		"browserslist": "^4.25.3",
-		"cssnano": "^7.1.0",
+		"cssnano": "^7.1.1",
 		"postcss": "^8.5.6",
 		"postcss-cli": "^11.0.1",
 		"postcss-preset-env": "^10.2.4",
 		"stylelint": "^16.23.1",
 		"stylelint-config-standard-scss": "^15.0.1",
-		"wrangler": "^4.31.0"
+		"wrangler": "^4.32.0"
 	}
 }
