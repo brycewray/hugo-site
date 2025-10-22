@@ -3,7 +3,7 @@
 		"baseline widely available with downstream"
 	],
 	"devDependencies": {
-		"browserslist": "^4.26.3",
+		"browserslist": "^4.27.0",
 		"cssnano": "^7.1.1",
 		"postcss": "^8.5.6",
 		"postcss-cli": "^11.0.1",
