@@ -1,4 +1,4 @@
-{{- $jsLYT := resources.Get "js/lite-yt-embed_2024-08-09_v0-3-3.js" | minify | fingerprint -}}
+{{- $jsLYT := resources.Get "js/lite-yt-embed_2025-11-10_v0-3-4.js" | minify | fingerprint -}}
 <script src="{{ $jsLYT.RelPermalink }}" integrity="{{ $jsLYT.Data.Integrity }}"></script>
 
 {{- $videoId := .Get "videoId"  -}}
