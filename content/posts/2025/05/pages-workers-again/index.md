@@ -7,6 +7,9 @@ date: 2025-05-27T16:59:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
+**Note**: After reading this, please see my [later post on this subject](/posts/2025/11/pages-workers-again-revisited).
+{.box}
+
 This site has lived on [Cloudflare Pages](https://developers.cloudflare.com/pages/) (CFP) for most of the last four years, having been initially on [Cloudflare Workers](https://workers.cloudflare.com) (CFW) as a "Workers site" after stays on several other web hosts. I'd gained the distinct impression that CFP was the path on which Cloudflare intended to stay where hosting static websites was concerned.
 
 This morning, I learned not only that this was no longer the case but also that I'd "missed the memo" about it, and from a good while ago at that. A few hours of docs-reading and tinkering later, I had migrated the site back to running on a Cloudflare Worker. (Cloudflare doesn't call them "Workers sites" anymore.)

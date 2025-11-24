@@ -7,6 +7,9 @@ date: 2025-07-11T13:46:00-05:00
 # initTextEditor: iA Writer # default --- change if needed
 ---
 
+**Note**: After reading this, please see my [later post on this subject](/posts/2025/11/pages-workers-again-revisited).
+{.box}
+
 On further reflection, I've decided Cloudflare's [quiet-ish announcement about the Cloudflare Pages platform](https://blog.cloudflare.com/full-stack-development-on-cloudflare-workers/), about which I first wrote [a few weeks ago](/posts/2025/05/pages-workers-again/), bears some more discussion. That's especially true for sites like this one, built on the [Hugo](https://gohugo.io) static site generator (SSG).
 
 In fact, the whole thing has led me to think about how one might want to make a Hugo site more portable, to minimize the potential impact of such changes on vendors' parts both now and in the future. If you, too, have used Cloudflare Pages as a Hugo site's home and are now pondering what to do, perhaps this post will help you understand your options more clearly.
