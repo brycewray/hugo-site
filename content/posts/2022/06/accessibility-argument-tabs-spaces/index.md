@@ -29,7 +29,7 @@ Yesterday, I became aware that there was one more thing I could do to enhance ac
 
 If you have no idea what I'm talking about or what difference it could possibly make, you probably haven't worked with other developers on a shared code base --- and you probably won't get the humor in this clip from an old *Silicon Valley* episode:
 
-{{< lite-youtube videoTitle="Tabs versus Spaces" videoId="SsoOG6ZeyUI" >}}
+{{< lite-youtube videoTitle="Tabs versus Spaces (From Silicon Valley)" videoId="oRva7UxGQDw" >}}
 
 As for me, my former position on this Holy War was for spaces over tabs when it's solely my choice, as is the case for this site.
 
