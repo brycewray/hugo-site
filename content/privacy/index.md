@@ -18,7 +18,7 @@ This site [reproduces](/posts/2024/11/simple-hugo-shortcode-embedding-bluesky-po
 
 ## Cloudflare
 
-This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com) and is configured to use Cloudflare's Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.<!-- Additionally, any non-self-served web fonts on this site are provided by [Cloudflare Fonts](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/), a service which processes Google Fonts not only to enhance performance but also to keep the fonts from violating your privacy --- [as they would if served by Google](/posts/2020/08/google-fonts-privacy/).-->
+This site is hosted on the [Cloudflare Workers](https://developers.cloudflare.com/workers/) platform and is configured to use Cloudflare's Web Analytics tool, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.<!-- Additionally, any non-self-served web fonts on this site are provided by [Cloudflare Fonts](https://blog.cloudflare.com/cloudflare-fonts-enhancing-website-privacy-speed/), a service which processes Google Fonts not only to enhance performance but also to keep the fonts from violating your privacy --- [as they would if served by Google](/posts/2020/08/google-fonts-privacy/).-->
 
 ## giscus
 
