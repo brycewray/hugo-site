@@ -378,6 +378,14 @@ code {
   font-variant-ligatures: none;
 }
 
+a code {
+	color: var(--link-code);
+}
+
+:is(h1, h2, h3, h4, h5, h6) a code {
+	color: var(--default-color);
+}
+
 // /* Inline code */
 :not(pre) > code[class*="language-"] {
 	padding: .1em;

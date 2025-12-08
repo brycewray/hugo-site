@@ -405,6 +405,10 @@ a code {
 	color: var(--link-code);
 }
 
+:is(h1, h2, h3, h4, h5, h6) a code {
+	color: var(--default-color);
+}
+
 article code {
 	font-size: 0.95em;
 	background-color: var(--bkgd-article-code);
