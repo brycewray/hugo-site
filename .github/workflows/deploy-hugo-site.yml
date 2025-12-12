@@ -14,7 +14,7 @@ env:
   NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using Node.js in any way,
   #    including use of (e.g.) PostCSS, even if not doing `npm run build`
-  NODE_VERSION: 22 # (Node.js version to use if NODE is true)
+  NODE_VERSION: 24 # (Node.js version to use if NODE is true)
   NPM_RUN_BUILD: false # choices: 'true' and 'false'
   # ^^ refers to whether we're using `npm run build` to build the site
 
@@ -58,7 +58,7 @@ jobs:
           echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Cache appropriate Hugo items
         id: cache-hugosite
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             resources
