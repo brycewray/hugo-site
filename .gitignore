@@ -52,6 +52,7 @@ logstart.sh
 deploy.sh
 deploy-workers.sh
 myip.txt
+mypath.txt
 wm*.sh
 git*.sh
 gitoutput.txt
