@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.152.2 # will get Extended Version below
-  DART_SASS_VERSION: 1.97.0 # (depends on STYLING env var, below)
+  HUGO_VERSION: 0.153.2 # will get Extended Version below
+  DART_SASS_VERSION: 1.97.1 # (depends on STYLING env var, below)
   STYLING: CSS # 'SCSS' or 'CSS'
   HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   # ^^ refers to the hosting service used for the site

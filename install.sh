@@ -1,11 +1,12 @@
 #!/bin/sh
 # --- for use with macOS and Linux/WSL
 
-HUGO_VERSION=0.152.2
-# https://github.com/gohugoio/hugo/releases/
-HUGO_OS_ARCH='darwin-universal'
-# ^^^ choices for 'HUGO_OS_ARCH' (Extended Version only):
-# - 'darwin-universal' (macOS Universal Binary, Hugo 0.102.0 and up)
+HVM_VERSION=0.9.0
+# https://github.com/jmooring/hvm/releases/
+HVM_OS_ARCH='darwin-arm64'
+# ^^^ choices for 'HVM_OS_ARCH':
+# - 'darwin-amd64' (macOS on Intel)
+# - 'darwin-arm64' (macOS on Apple Silicon)
 # - 'linux-amd64' (Linux/WSL on x86-64)
 # - 'linux-arm64' (Linux/WSL on ARM-64)
 
@@ -20,24 +21,24 @@ DARTSASS_OS_ARCH='macos-arm64'
 
 echo "Checking requested versions...\n"
 
-if grep -q "hugo v${HUGO_VERSION}" <<< $(hugo env)
+if grep -q "hvm ${HVM_VERSION}" <<< $(hvm version)
 then
-  echo "Detected Hugo v.${HUGO_VERSION}!\n"
+  echo "Detected hvm v.${HVM_VERSION}!\n"
 else
-  echo "Failed to detect Hugo v.${HUGO_VERSION} --- installing it...\n"
-  wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz -O hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz
-  tar -xvf hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz hugo
-  rm -rf ../bin/hugo
-  mv hugo ../bin
-  if [ ${HUGO_OS_ARCH} == 'darwin-universal' ]
+  echo "Failed to detect hvm v.${HVM_VERSION} --- installing it...\n"
+  wget https://github.com/jmooring/hvm/releases/download/v${HVM_VERSION}/hvm-${HVM_OS_ARCH}.tar.gz -O hvm-${HVM_OS_ARCH}.tar.gz
+  tar -xvf hvm-${HVM_OS_ARCH}.tar.gz hvm # get only hvm from the .tar.gz
+  rm -rf ../bin/hvm
+  mv hvm ../bin
+  if [ ${HVM_OS_ARCH} == 'darwin-arm64' ]
   then
-    xattr -dr com.apple.quarantine ../bin/hugo # "bless" the Hugo binary in macOS
+    xattr -dr com.apple.quarantine ../bin/hvm # "bless" the hvm binary in macOS
   fi
-  hugo version
-  rm -rf hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz
+  hvm version
+  rm -rf hvm-${HVM_OS_ARCH}.tar.gz
 fi
 
-if grep -q "github.com/sass/dart-sass/compiler=\"${DARTSASS_VERSION}" <<< $(hugo env)
+if grep -q "compilerVersion\": \"${DARTSASS_VERSION}" <<< $(sass --embedded --version)
 then
   echo "Detected Dart Sass v.${DARTSASS_VERSION}!\n"
 else
