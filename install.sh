@@ -50,5 +50,3 @@ else
   sass --embedded --version
   rm -rf dart-sass-${DARTSASS_VERSION}-${DARTSASS_OS_ARCH}.tar.gz
 fi
-
-hugo env
