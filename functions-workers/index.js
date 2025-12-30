@@ -36,6 +36,7 @@ async function onRequest(context) {
       });
     }
     let response = await context.next();
+		/*
     const html = (await response.text()).replace(/DhcnhD3khTMePgXw/gi, nonce).replace(
       'src="https://ajax.cloudflare.com',
       `nonce="${nonce}" src="https://ajax.cloudflare.com`
@@ -61,6 +62,7 @@ async function onRequest(context) {
       'src="/assets/js/lite-yt-embed_',
       `nonce="${nonce}" src="/assets/js/lite-yt-embed_`
     ).replace(/<style/g, `<style nonce="${nonce}"`);
+		*/
     let ttl;
     let url = new URL(context.request.url);
     const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/;
