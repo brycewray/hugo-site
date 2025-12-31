@@ -29,6 +29,7 @@ jobs:
     steps:
       - name: Set GHA runner TZ to U.S. Central time
         uses: szenius/set-timezone@v2.0
+        # Doesn't affect cron job; see https://github.com/szenius/set-timezone/issues/6
         with:
           timezoneLinux: "America/Chicago" # default = "UTC"
           timezoneMacos: "America/Chicago" # default = "GMT"
