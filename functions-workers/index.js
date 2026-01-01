@@ -80,9 +80,6 @@ async function onRequest(context) {
       newHeaders.set("X-XSS-Protection", "1");
       newHeaders.set("Permissions-Policy", "fullscreen=*, picture-in-picture=*, xr-spatial-tracking=*");
     }
-		if (url.pathname.includes("/search/")) {
-			newHeaders.set("CF-Cache-Status", "DYNAMIC");
-		}
     newHeaders.set("CF-nonce-generator", "HIT");
     return new Response(html, {
       status: response.status,
