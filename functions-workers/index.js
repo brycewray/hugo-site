@@ -37,7 +37,6 @@ async function onRequest(context) {
     }
     let response = await context.next();
 		const html = (await response.text());
-		/*
     const html = (await response.text()).replace(/DhcnhD3khTMePgXw/gi, nonce).replace(
       'src="https://ajax.cloudflare.com',
       `nonce="${nonce}" src="https://ajax.cloudflare.com`
@@ -63,7 +62,6 @@ async function onRequest(context) {
       'src="/assets/js/lite-yt-embed_',
       `nonce="${nonce}" src="/assets/js/lite-yt-embed_`
     ).replace(/<style/g, `<style nonce="${nonce}"`);
-		*/
     let ttl;
     let url = new URL(context.request.url);
     const filesRegex = /(.*\.(ac3|avi|bmp|br|bz2|css|cue|dat|doc|docx|dts|eot|exe|flv|gif|gz|ico|img|iso|jpeg|jpg|js|json|map|mkv|mp3|mp4|mpeg|mpg|ogg|pdf|png|ppt|pptx|qt|rar|rm|svg|swf|tar|tgz|ttf|txt|wav|webp|webm|webmanifest|woff|woff2|xls|xlsx|xml|zip))$/;
@@ -79,7 +77,7 @@ async function onRequest(context) {
       newHeaders.set("Cache-Control", "public, max-age=" + ttl + ", immutable");
     } else {
       newHeaders.set("Cache-Control", "public, max-age=0, must-revalidate");
-      // newHeaders.set("Content-Security-Policy", `base-uri 'self' https://*.brycewray.com; connect-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.cloudflareinsights.com https://cloudflareinsights.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.mastodon.social https://cdn.masto.host https://*.zachleat.com https://*.usefathom.com https://*.bsky.app; default-src 'self'; frame-ancestors 'self' https://*.brycewray.com https://*.youtube-nocookie.com; font-src 'self' https://*.brycewray.com data: https://giscus.app https://fonts.gstatic.com https://*.bsky.app; form-action 'self' mailto: https://*.duckduckgo.com https://duckduckgo.com; frame-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com https://giscus.app https://*.bsky.app; img-src 'self' https://*.brycewray.com https://*.usefathom.com https://*.cloudinary.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.twimg.com https://*.mastodon.social https://*.fosstodon.org https://*.hachyderm.io https://cdn.masto.host https://*.zachleat.com https://*.google.com https://translate.googleapis.com https://*.bsky.app data:; media-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.twimg.com https://*.mastodon.social https://*.fosstodon.org https://*.hachyderm.io https://cdn.masto.host https://*.zachleat.com https://*.bsky.app data:; object-src 'none'; script-src 'self' 'nonce-${nonce}' https://giscus.app https://*.bsky.app 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' 'nonce-${nonce}' https://giscus.app https://*.bsky.app; style-src 'self' 'unsafe-inline' https://*.brycewray.com https://*.youtube-nocookie.com data: https://*.google.com https://translate.googleapis.com https://giscus.app https://*.bsky.app https://fonts.googleapis.com;`);
+      newHeaders.set("Content-Security-Policy", `base-uri 'self' https://*.brycewray.com; connect-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.cloudflareinsights.com https://cloudflareinsights.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.mastodon.social https://cdn.masto.host https://*.zachleat.com https://*.usefathom.com https://*.bsky.app; default-src 'self'; frame-ancestors 'self' https://*.brycewray.com https://*.youtube-nocookie.com; font-src 'self' https://*.brycewray.com data: https://giscus.app https://fonts.gstatic.com https://*.bsky.app; form-action 'self' mailto: https://*.duckduckgo.com https://duckduckgo.com; frame-src 'self' https://*.brycewray.com https://*.youtube-nocookie.com https://giscus.app https://*.bsky.app; img-src 'self' https://*.brycewray.com https://*.usefathom.com https://*.cloudinary.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.twimg.com https://*.mastodon.social https://*.fosstodon.org https://*.hachyderm.io https://cdn.masto.host https://*.zachleat.com https://*.google.com https://translate.googleapis.com https://*.bsky.app data:; media-src 'self' https://*.brycewray.com https://*.cloudinary.com https://*.ytimg.com https://*.youtube-nocookie.com https://*.twimg.com https://*.mastodon.social https://*.fosstodon.org https://*.hachyderm.io https://cdn.masto.host https://*.zachleat.com https://*.bsky.app data:; object-src 'none'; script-src 'self' 'nonce-${nonce}' https://giscus.app https://*.bsky.app 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' 'nonce-${nonce}' https://giscus.app https://*.bsky.app; style-src 'self' 'unsafe-inline' https://*.brycewray.com https://*.youtube-nocookie.com data: https://*.google.com https://translate.googleapis.com https://giscus.app https://*.bsky.app https://fonts.googleapis.com;`);
       newHeaders.set("X-XSS-Protection", "1");
       newHeaders.set("Permissions-Policy", "fullscreen=*, picture-in-picture=*, xr-spatial-tracking=*");
     }
