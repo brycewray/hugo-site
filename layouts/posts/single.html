@@ -5,9 +5,9 @@
 	<div class="container-narrower">
 		<article class="article" id="postArticle">
 			{{- if (findRE `<div class="highlight"` .Content 1) -}}
-				<p class="box"><strong class="red">Important note, 2025-12-26</strong>: If you’re viewing this with the <strong><a href="https://1password.com">1Password</a> extension</strong> activated in your browser, any code blocks contained in this site (<a href="https://www.1password.community/discussions/developers/1password-chrome-extension-is-incorrectly-manipulating--blocks/165639">and others</a>) may look strange to you and may even be unreadable.<br />
+				<p class="box"><strong class="red">Important note, 2026-01-01</strong>: If you’re viewing this with the <strong><a href="https://1password.com">1Password</a> extension</strong> activated in your browser, any code blocks contained in this site (<a href="https://www.1password.community/discussions/developers/1password-chrome-extension-is-incorrectly-manipulating--blocks/165639">and others</a>) may look strange to you and may even be unreadable.<br />
 				&nbsp;<br />
-				Until you’re running a <strong>fixed</strong> version of the extension (not yet available as of <span class="nobrk">2025-12-26</span>), the only solution is to disable the 1Password extension while reading the code blocks. I apologize for whatever inconvenience this may cause in the interim. Let’s hope the folks at 1Password resolve it soon.</p>
+				Until you’re running a <strong>fixed</strong> version of the extension (available for Chrome, but not yet available for Safari or Firefox, as of <span class="nobrk">2026-01-01</span>), the only solution is to disable the 1Password extension while reading the code blocks. I apologize for whatever inconvenience this may cause in the interim. Let’s hope the folks at 1Password resolve it soon.</p>
 				<p>&nbsp;</p>
 			{{- end }}
 			{{ .Content | safeHTML }}
