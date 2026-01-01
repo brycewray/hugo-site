@@ -36,7 +36,6 @@ async function onRequest(context) {
       });
     }
     let response = await context.next();
-		const html = (await response.text());
     const html = (await response.text()).replace(/DhcnhD3khTMePgXw/gi, nonce).replace(
       'src="https://ajax.cloudflare.com',
       `nonce="${nonce}" src="https://ajax.cloudflare.com`
