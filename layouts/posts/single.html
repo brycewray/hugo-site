@@ -4,12 +4,6 @@
 	{{- partial "billboard.html" . }}
 	<div class="container-narrower">
 		<article class="article" id="postArticle">
-			{{- if (findRE `<div class="highlight"` .Content 1) -}}
-				<p class="box"><strong class="red">Important note, 2026-01-10</strong>: If you’re viewing this with the <strong><a href="https://1password.com">1Password</a> extension</strong> activated in your browser, any code blocks contained in this site (<a href="https://www.1password.community/discussions/developers/1password-chrome-extension-is-incorrectly-manipulating--blocks/165639">and others</a>) may look strange to you and may even be unreadable.<br />
-				&nbsp;<br />
-				Until you’re running a <strong>fixed</strong> version of the extension (available as of <span class="nobrk">2026-01-06</span> for Chrome, Safari, and Firefox), the only solution is to disable the 1Password extension while reading the code blocks.</p>
-				<p>&nbsp;</p>
-			{{- end }}
 			{{ .Content | safeHTML }}
 			{{- partial "git.html" . -}}
 			{{- partial "contact-button.html" . -}}
