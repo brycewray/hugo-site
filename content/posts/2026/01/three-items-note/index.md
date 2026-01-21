@@ -2,7 +2,7 @@
 title: "Three items of note"
 description: "The Cloudflare acquihire of Astro, visited links of a not-different color, and a 1Password syntax highlighting bug."
 author: Bryce Wray
-date: 2026-01-12T16:57:00-06:00
+date: 2026-01-21T16:57:00-06:00
 # draft: true
 # initTextEditor: iA Writer # default --- change if needed
 ---
@@ -45,7 +45,7 @@ With the buggy extension version enabled, the code block looked something like t
 ```css
  
  
- 
+
   
 ```
 
