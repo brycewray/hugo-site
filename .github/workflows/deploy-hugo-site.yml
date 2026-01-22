@@ -9,7 +9,7 @@ on:
 
 env:
   HUGO_VERSION: 0.154.5 # will get Extended Version below
-  DART_SASS_VERSION: 1.97.2 # (depends on STYLING env var, below)
+  DART_SASS_VERSION: 1.97.3 # (depends on STYLING env var, below)
   STYLING: CSS # 'SCSS' or 'CSS'
   HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   # ^^ refers to the hosting service used for the site
