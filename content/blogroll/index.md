@@ -52,6 +52,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Darek Kay](https://darekkay.com/)
 - [Dave Rupert](https://daverupert.com/)
 - [David Buchanan](https://www.da.vidbuchanan.co.uk/blog/)
+- [DeepakNess](https://deepakness.com/)
 - [Derek Sivers](https://sive.rs/)
 - [Dmitry Mazin](https://www.cyberdemon.org/)
 - [Drew DeVault](https://drewdevault.com/)
