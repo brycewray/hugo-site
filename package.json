@@ -7,9 +7,9 @@
 		"cssnano": "^7.1.2",
 		"postcss": "^8.5.6",
 		"postcss-cli": "^11.0.1",
-		"postcss-preset-env": "^11.1.1",
+		"postcss-preset-env": "^11.1.2",
 		"stylelint": "^17.0.0",
 		"stylelint-config-standard-scss": "^17.0.0",
-		"wrangler": "^4.60.0"
+		"wrangler": "^4.61.0"
 	}
 }
