@@ -27,7 +27,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 
 ## B
 - [Baldur Bjarnason](https://www.baldurbjarnason.com/)
-- [Bloonface](https://blog.bloonface.com/)
 - [Bob Monsour](https://www.bobmonsour.com/)
 - [Brent Simmons](https://inessential.com/)
 - [Brian Rinaldi](https://remotesynthesis.com/)
