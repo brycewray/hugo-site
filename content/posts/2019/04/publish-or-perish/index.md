@@ -93,7 +93,7 @@ Finally, you'll be asked for your **publish directory**. It should be the same a
 
 At that point, click **Deploy site** and Netlify will take it from there. In a few moments, it'll tell you your site has been published ("deployed”). Of course, it'll have a Netlify URL with a randomly generated name, like "wondrous-weasel-d38a82" or something similar. Since you obviously don't want to have to encourage people to visit your site at *wondrous-weasel-d38a82.netlify.com* (well, I hope not, anyway), there's one more thing you have to do, and that's **connect it to that domain** you set up in **Step 6e**. Netlify documentation [tells you how](https://www.netlify.com/docs/custom-domains/), and this is the gist of it:
 
-1. In your Netlify site (i.e., that *wondrous-weasel-d38a82*-type thing --- probably in *apps.netlify.com/sites/wondrous-weasel-d38a82/overview*, but your mileage may vary), click **Settings** and then **Domain Management**.
+1. In your Netlify site (*i.e.*, that *wondrous-weasel-d38a82*-type thing --- probably in *apps.netlify.com/sites/wondrous-weasel-d38a82/overview*, but your mileage may vary), click **Settings** and then **Domain Management**.
 2. In the **Custom domains** panel, the only thing you should see so far is the Netlify-assigned *wondrous-weasel-d38a82*-type thing.
 3. Click **Add custom domain**.
 4. Enter the domain you obtained in **Step 6e**, then click **Verify**. Netlify will *validate* the domain. Since you've already got it, it will appear as unavailable. (Netlify will, for a fee, get the domain for you at this step if you haven't already obtained it, but I suggest having done so already as described earlier; in my experience, it's best to keep your hosting vendor and your domain vendor separate).\

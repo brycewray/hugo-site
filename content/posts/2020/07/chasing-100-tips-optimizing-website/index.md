@@ -95,7 +95,7 @@ There's a long list of items Lighthouse checks for conformance with "Best Practi
 
 The higher you score on all these things, the better chance your site content has of doing well in search engines’ results. Of course, the SEO segment of what Lighthouse checks has especially high relevance to that. A quick search, coincidentally enough, for "SEO" will reveal mountains of (mostly) marketing-oriented advice on the subject, and you may want to bathe in alcohol after reading some of it. That said, here are just a few SEO-related quickies which surprisingly can escape notice.
 
-**Have a valid [`robots.txt`](https://support.google.com/webmasters/answer/6062608?hl=en) file**. There's no over-arching authority that can *make* Google and the other search engines obey `robots.txt`, but it's better to have it than not to do so. So make sure it's *there*, that it's in your site's root directory (e.g., `https://mysite.com/robots.txt`), and that it allows search engines to "spider" through all the content you want them to "see." If you don't have a problem with their "seeing" everything, it doesn't get simpler than this two-liner:
+**Have a valid [`robots.txt`](https://support.google.com/webmasters/answer/6062608?hl=en) file**. There's no over-arching authority that can *make* Google and the other search engines obey `robots.txt`, but it's better to have it than not to do so. So make sure it's *there*, that it's in your site's root directory (*e.g.*, `https://mysite.com/robots.txt`), and that it allows search engines to "spider" through all the content you want them to "see." If you don't have a problem with their "seeing" everything, it doesn't get simpler than this two-liner:
 
 ```bash
 user-agent: *
