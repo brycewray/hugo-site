@@ -23,14 +23,11 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Anne Sturdivant](https://weblog.anniegreens.lol/)
 - [Ariadne Conill](https://ariadne.space/)
 - [Artem Chernyak](https://hackeryarn.com/)
-- [Artem Kobzar](https://jsmonk.github.io/)
 
 ## B
 - [Baldur Bjarnason](https://www.baldurbjarnason.com/)
 - [Bob Monsour](https://www.bobmonsour.com/)
 - [Brent Simmons](https://inessential.com/)
-- [Brian Rinaldi](https://remotesynthesis.com/)
-- [Bruno Rodrigues](https://www.brodrigues.co/blog/)
 
 ## C
 - [Carlana Johnson](https://blog.carlana.net/)
@@ -70,12 +67,10 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Heydon Pickering](https://heydonworks.com/)
 - [Howard Oakley](https://eclecticlight.co/)
 - [Igor Ljubuncic](https://www.dedoimedo.com/)
-- [Ivan Chromjak](https://ivanchromjak.com/blog/)
 
 ## J
 - [James Kerr](https://www.jameskerr.blog/)
 - [Jason Velazquez](https://fromjason.xyz/p/notebook/)
-- [Jeff Sandberg](https://pdx.su/)
 - [Jeremy Keith](https://adactio.com/journal/)
 - [Jesse Duffield](https://jesseduffield.com/)
 - [Jim Grey](https://dev.jimgrey.net/)
@@ -85,7 +80,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Jose M. Gilgado](https://josem.co/articles/)
 - [Josh Collinsworth](https://joshcollinsworth.com/)
 - [Josh W. Comeau](https://www.joshwcomeau.com/)
-- [Juha-Matti Santala](https://www.syntaxerror.tech/)
 - [Julia Evans](https://jvns.ca/)
 - [Justin Garrison](https://justingarrison.com/)
 - [Justin Pot](https://buttondown.email/justinpot/archive/)
@@ -144,7 +138,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 ## T–Z
 - [Terence Eden](https://shkspr.mobi/blog)
 - [Thomas Michael Semmler](https://helloyes.dev/blog/)
-- [Veronica Explains](https://vkc.sh/)
+- [Veronica Explains](https://veronicaexplains.net/)
 - [Vincent Ritter](https://vincentritter.com/)
 - [Will Martian](https://willmartian.com/)
 - [William Woodruff](https://blog.yossarian.net/)
