@@ -1,6 +1,6 @@
 {
   "name": "static-site-workers",
-  "compatibility_date": "2025-12-20",
+  "compatibility_date": "2026-02-11",
 	"main": "./functions-workers/index.js",
 	/*
 	"build": {
