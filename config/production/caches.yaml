@@ -1,6 +1,9 @@
-getjson:
-  dir: :resourceDir/json
-  # maxAge: 0 # default = -1 (forever)
+# getjson:
+#   dir: :resourceDir/json
+#   # maxAge: 0 # default = -1 (forever)
+# --- NOTE: `data.GetJSON` was deprecated in Hugo 0.123.0,
+# ---       so `getjson` is reported as "not a valid cache name";
+# ---       also, `getjson` in caches was removed from documentation 2026-02-09
 getresource:
   dir: :resourceDir/_gen
   # maxAge: 0 # default = -1 (forever)

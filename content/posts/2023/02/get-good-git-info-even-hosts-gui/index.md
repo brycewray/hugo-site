@@ -120,7 +120,9 @@ Now, build the templating to access and display this data. Here are the relevant
 {{- $Title := .Title -}}
 {{- $MyRepo := "https://github.com/johndoe/hugo-site" -}}
 {{/* end, variables for context in `range` */}}
-{{- range $.Site.Data.gitoutput.gitinfo -}}
+
+{{/* IMPORTANT regarding the next line: see UPDATE from 2026-02-18 below this code block */}}
+{{- range $.hugo.Data.gitoutput.gitinfo -}}
 	{{- if eq $FilePath .FilePath -}}
 		<p class="ctr legal">
 			<a href="{{ $MyRepo }}/commit/{{ .Hash }}" title="Latest commit for this page" rel="noopener">{{ .AbbreviatedHash }}</a> ({{- if ne $PubDate (.LastmodDate | time.Format "2006-01-02") }}{{ .LastmodDate | time.Format "2006-01-02" }}{{- else -}}same date{{- end }}) &bull; <a href="{{ $MyRepo }}/commits/main/content/{{ $FilePath }}" title="This page’s commit history">History</a>
@@ -128,6 +130,9 @@ Now, build the templating to access and display this data. Here are the relevant
 	{{- end }}
 {{- end }}
 ```
+
+<strong class="red">Update, 2026-02-18</strong>: If using a version **older** than Hugo **0.156.0**, use the line `{{- range $.Site.Data.gitoutput.gitinfo -}}` rather than `{{- range $.hugo.Data.gitoutput.gitinfo -}}` (*i.e.*, use `Site.Data` rather than `hugo.Data` with pre-0.156.0 Hugo versions); `Site.Data` was [deprecated in Hugo 0.156.0](https://github.com/gohugoio/hugo/releases/tag/v0.156.0)).
+{.box}
 
 ## It works, but . . .
 
