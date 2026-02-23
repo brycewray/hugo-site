@@ -1,7 +1,7 @@
 #!/bin/sh
 # --- for use with macOS and Linux/WSL
 
-HVM_VERSION=0.11.0
+HVM_VERSION=0.13.0
 # https://github.com/jmooring/hvm/releases/
 HVM_OS_ARCH='darwin-arm64'
 # ^^^ choices for 'HVM_OS_ARCH':
