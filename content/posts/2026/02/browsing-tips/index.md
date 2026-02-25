@@ -18,14 +18,14 @@ If you spend lots of hours per week perusing content on one or more web browsers
 A few months ago, I noticed that I was constantly editing certain sites' CSS in the browser Inspector because, more and more, the sites' default styles were unkind to my aging eyes. Hacker News is a particularly onerous offender in this regard. For example, HN's default shows sharply downrated comments in so light a gray color --- on top of a very light tan background, to boot --- that they're almost illegible to me. (While I often agree that such a comment **deserves** its bad numbers, I still want at least to see what it said.) In addition, given the lighting conditions in my usual spot for viewing HN content, I prefer to see it in dark mode; but HN's default styling doesn't "respect" one's dark- or light-mode settings. To paraphrase [an already often-paraphrased Henry Ford quote](https://www.gardnerweb.com/articles/henry-ford-is-still-right-when-it-comes-to-color), "You can have any mode you want, as long as it's light."
 
 That kind of manual, *page-by-page* editing gets old fast, especially when you're doing it many times a day; and HN isn't the only such trouble spot for me. So, I soon realized, a better solution would do it in a way that works every time I go to a site. That led me to the [open-source Stylus browser extension](https://github.com/openstyles/stylus) for Chrome- and Firefox-compatible browsers. It automatically loads site-specific CSS, rather than my making manual edits every page visit.[^FireFoxUserContent]
- 
+
 [^FireFoxUserContent]: If you use only Firefox-compatible browsers, you can do this by creating and editing a `userContent.css` file. That method certainly has its adherents, but I prefer using an extension like Stylus rather than maintaining a local file, especially since [Mozilla long ago put the use of that file behind a flag](https://bugzilla.mozilla.org/show_bug.cgi?id=1541233) and could kill it at any time.
 
 The interest in doing this sort of thing isn't new, of course. Back in the early days of Firefox's existence, We Of A Certain Age would use an extension called [Greasemonkey](https://github.com/greasemonkey/greasemonkey) which, I was delighted to see when researching for this post, is still around, although it and Firefox certainly aren't nearly as popular as each once was. It allows customization of not only a web page's appearance but also its functionality. [Greasemonkey's wiki](https://wiki.greasespot.net/Main_Page) is probably the best place to go if you need a better explanation.
 
 Where changing only a page's CSS is the intended result, there've been other notable extensions over the years:
 
-- The venerable [Stylish](https://userstyles.org/) began [in 2005](https://web.archive.org/web/20051210042217/http://forums.mozillazine.org/viewtopic.php?t=327735) as an open-source project, but was acquired in 2017 by an advertising analytics company. As can sometimes result unfortunately from that type of acquisition, Stylist since has become infamous for significant privacy violations (*e.g.*, see [this 2018 article](https://robertheaton.com/2018/07/02/stylish-browser-extension-steals-your-internet-history/)). Even to this day, more than a few reviewers flatly call it "spyware" and downrate it severely. You can do better than Stylish.
+- The venerable [Stylish](https://userstyles.org/) began [in 2005](https://web.archive.org/web/20051210042217/http://forums.mozillazine.org/viewtopic.php?t=327735) as an open-source project, but was acquired in 2017 by an advertising analytics company. As can sometimes result unfortunately from that type of acquisition, Stylish since has become infamous for significant privacy violations (*e.g.*, see [this 2018 article](https://robertheaton.com/2018/07/02/stylish-browser-extension-steals-your-internet-history/)). Even to this day, more than a few reviewers flatly call it "spyware" and downrate it severely. You can do better than Stylish.
 - [Stylebot](https://stylebot.dev/) used to be one of the favorites for this sort of thing, but it hasn't had a new release **on its repo** since [v.3.0.1 appeared 2020-07-29](https://github.com/ankit/stylebot/releases). As of this writing, Stylebot's Chrome extension is at v3.1.4 from 2024-05-17 and its Firefox extension is at v.3.1.3 from 2024-07-24; I'm thus presuming anything newer than v.3.0.1 is closed-source.
 
 By contrast, Stylus is still actively developed and open-source, so it's the choice I recommend.
@@ -51,7 +51,7 @@ html {
   /* h/t to https://news.ycombinator.com/item?id=46663782 */
 }
 
-table.fatitem p, 
+table.fatitem p,
 table.fatitem .toptext {
   color: #000;
 }
@@ -101,8 +101,8 @@ div.commtext.c73 a,
 div.commtext.c88 a,
 div.commtext.c9C a,
 div.commtext.cAE a,
-div.commtext.cBE a, 
-div.commtext.cCE a, 
+div.commtext.cBE a,
+div.commtext.cCE a,
 div.commtext.cDD a {
   color: #8b0000;
 }
@@ -112,8 +112,8 @@ div.commtext.c73 a:visited,
 div.commtext.c88 a:visited,
 div.commtext.c9C a:visited,
 div.commtext.cAE a:visited,
-div.commtext.cBE a:visited, 
-div.commtext.cCE a:visited, 
+div.commtext.cBE a:visited,
+div.commtext.cCE a:visited,
 div.commtext.cDD a:visited,
 div.commtext.c00 a:visited {
   color: #8b008b;
