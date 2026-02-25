@@ -16,8 +16,8 @@ html, html[data-theme="light"] {
 	/* === defaults === */
 
 	/* primaries */
-	--default: var(--gray-800);
-	--boost: var(--gray-900);
+	--default: var(--gray-850);
+	--boost: var(--gray-950);
 	--bquote: var(--gray-500);
 	--bquote-boost: var(--gray-600);
 	--link: var(--blue-700);
@@ -132,8 +132,9 @@ html, body {
 	padding: 0;
 	/* stylelint-disable-next-line value-keyword-case */
 	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 
-	/* text-justify: inter-character; /* someday... */
+	/* ^^ h/t https://dbushell.com/2024/11/05/webkit-font-smoothing/ */
 
 	/* font-kerning: normal; */
 	font-family: var(--sans-serif);
@@ -146,7 +147,7 @@ html, body {
 	color: var(--default);
 }
 
-/*
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 header, footer, table, blockquote, summary, contact-button, search-button,
 .container-home, .billboard-div, .posts-Wrapper, .four-oh-four-wrapper,
@@ -156,7 +157,7 @@ header, footer, table, blockquote, summary, contact-button, search-button,
 .bg-dark, a.contact-button,
 .legal, .pokey {
 	font-family: var(--sans-serif);
-} */
+}
 
 b, strong {
 	font-weight: var(--font-semibold);

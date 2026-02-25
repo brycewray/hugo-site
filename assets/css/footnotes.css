@@ -28,6 +28,13 @@
 		*/
 		p {
 			line-height: 1.5em;
+
+			/* @media only screen and (width >= 1024px) {
+				@supports (text-justify: inter-character) {
+					text-align: left;
+					hyphens: none;
+				}
+			} */
 		}
 	}
 

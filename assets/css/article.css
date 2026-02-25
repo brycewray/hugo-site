@@ -131,6 +131,7 @@ blockquote {
 
 article {
 	padding-top: 1em; /* definitely em, not rem */
+
 	p, li {
 		font-size: clamp(1rem, 1vw + 0.625rem, 1.25rem);
 		line-height: 1.5em;
@@ -138,9 +139,33 @@ article {
 		margin-bottom: 1.15em;
 	}
 
+	/* p {
+		@media only screen and (width >= 1024px) {
+			@supports (text-justify: inter-character) {
+				text-align: justify;
+				text-justify: inter-character;
+				hyphens: auto;
+			}
+		}
+	} */
+
+	blockquote p {
+		@media only screen and (width >= 1024px) {
+			@supports (text-justify: inter-character) {
+				text-align: left;
+				hyphens: none;
+			}
+		}
+	}
+
 	li li, li p {
 		font-size: inherit;
 		margin-top: 0.25em; /* definitely em, not rem */
+
+		@media only screen and (width >= 1024px) {
+			text-align: left;
+			hyphens: none;
+		}
 	}
 
 	h1, h2, h3, h4 {
@@ -167,6 +192,11 @@ article {
 	margin: 0.5em auto;
 	width: 100%;
 	padding: 1em 1.25em;
+
+	@media only screen and (width >= 1024px) {
+		text-align: left;
+		hyphens: none;
+	}
 
 	p {
 		padding: 0;

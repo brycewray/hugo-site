@@ -262,7 +262,7 @@ pre[class*="language-"] {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	word-wrap: normal;
+	overflow-wrap: normal;
 	line-height: 1.5;
 	tab-size: 2;
 	hyphens: none;
@@ -399,6 +399,12 @@ code {
   font-kerning: none;
   font-variant-ligatures: none;
 	background-color: var(--bkgd-article-code);
+
+	/* @media only screen and (width >= 1024px) {
+		@supports (text-justify: inter-character) {
+			hyphens: none;
+		}
+	} */
 }
 
 a code {
