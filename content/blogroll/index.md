@@ -129,6 +129,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Salma Alam-Naylor](https://whitep4nth3r.com/)
 - [Sara Soueidan](https://sarasoueidan.com/blog/)
 - [Scott Feeney](https://scott.mn/)
+- [Scott Smitelli](https://www.scottsmitelli.com/)
 - [Scott Willsey](https://scottwillsey.com/)
 - [Shubham Jain](https://shubhamjain.co/)
 - [Sia Karamalegos](https://sia.codes/posts/)
