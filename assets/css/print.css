@@ -44,7 +44,7 @@
 	pre, code {
 		font-family: monospace !important;
 		white-space: pre-wrap !important;
-		word-wrap: break-word !important;
+		overflow-wrap: break-word !important;
 		overflow-x: auto !important;
 	}
 
