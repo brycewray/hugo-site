@@ -10,6 +10,7 @@ on:
 env:
   HUGO_VERSION: 0.157.0 # will get Extended Version below
   DART_SASS_VERSION: 1.98.0 # (depends on STYLING env var, below)
+  WRANGLER_VERSION: 4.73.0
   STYLING: CSS # 'SCSS' or 'CSS'
   HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   # ^^ refers to the hosting service used for the site
@@ -82,6 +83,7 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
+          wranglerVersion: ${{ env.WRANGLER_VERSION }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Netlify CLI
