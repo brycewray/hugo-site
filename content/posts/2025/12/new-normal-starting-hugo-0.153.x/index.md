@@ -43,7 +43,7 @@ That was easy enough to do, but my other Hugo-management scripts were another ma
 /Users/$USERNAME/Library/Caches/hvm/$HUGO_VERSION/hugo
 ```
 
-Here, $HUGO_VERSION is, *e.g.*, `0.153.2`, the latest Hugo version as of this writing.
+Here, `$HUGO_VERSION` is, *e.g.*, `0.153.2`, the latest Hugo version as of this writing.
 
 With this arrangement, I still could manually run `hugo` (flagged or not) from the command line with no problem, but that wasn't true for the scripts. Specifically, I used `start.sh` for purely local development, `testbuild.sh` for local development in a production environment, and `build.sh` when I just wanted to build the site, not serve it locally. For example, `start.sh` had this line[^flags] for running the local Hugo server to my liking:
 
@@ -65,7 +65,7 @@ That's because part of the hvm setup procedure involves source-controlling the `
 
 This simplified my fixes to a one-time process for each of the problematic scripts:
 
-1. Add a `MY_PATH` variable pointing to the contents of a `mypath.txt` file that includes the beginning of the path to the hvm-managed Hugo binary. 
+1. Add a `MY_PATH` variable pointing to the contents of a `mypath.txt` file that includes the beginning of the path to the hvm-managed Hugo binary.
 2. Add a `HUGO_VERSION` variable pointing to the contents of the `.hvm` file.
 3. Change each Hugo command from just `hugo` to `${MY_PATH}/hvm/${HUGO_VERSION}/hugo` --- followed by whatever flags, if any, I want.
 
