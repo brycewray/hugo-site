@@ -48,12 +48,12 @@
 		overflow-x: auto !important;
 	}
 
-	code[class*="language-"], pre[class*="language-"] {
-		color: var(--white);
+	code[class*="language-"] span, pre[class*="language-"] span {
+		color: #000 !important;
 	}
 
 	:not(pre) > code[class*="language-"], pre[class*="language-"] {
-		background: #000;
+		background: none;
 	}
 
 	.chroma * {
@@ -96,11 +96,39 @@
 	}
 
 	article::after {
-		content: "Site textual content © Bryce Wray except where otherwise noted. Some items, such as embedded videos, not printed.";
+		content: "Site textual content © Bryce Wray except where otherwise noted. \A Some items, such as embedded videos, not printed.";
+		white-space: pre; /* Needed for line feed above */
 		color: #000;
 		margin: 2em auto 0;
 		text-align: center;
 		font-size: 0.75rem !important;
 		padding-top: 2em;
 	}
+
+	article h2, article h3, article h4, article p {
+		margin-bottom: 0.5em;
+	}
+
+	article h2 a, article h3 a, article h4 a {
+		text-decoration: none;
+	}
+
+	article p a::after,
+	article li a::after {
+		content: " (" attr(href) ")";
+	}
+
+	article p sup a::after,
+	article .footnotes a.footnote-backref::after {
+		content: "";
+	}
+
+	article .footnotes a.footnote-backref {
+		display: none;
+	}
+
+	article .footnotes {
+		font-size: 0.75em;
+	}
+
 }
