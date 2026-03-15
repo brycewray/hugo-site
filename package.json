@@ -10,8 +10,5 @@
 		"postcss-preset-env": "^11.2.0",
 		"stylelint": "^17.4.0",
 		"stylelint-config-standard-scss": "^17.0.0"
-	},
-	"dependencies": {
-		"wrangler": "^4.73.0"
 	}
 }
