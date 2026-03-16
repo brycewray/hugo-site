@@ -1,7 +1,12 @@
-{{- $opts := dict "inlineImports" true -}}
-{{- $css := resources.Get "lcss/index.css" | resources.Copy "css/index.css" -}}
+{{ $cssOpts := dict
+	"minify" (cond hugo.IsDevelopment false true)
+	"sourceMap" (cond hugo.IsDevelopment "linked" "none")
+	"target" (slice "chrome115" "edge115" "firefox116" "ios16.4" "opera101" "safari16.4")
+}}
+
+{{- $css := resources.Get "css/index.css" | css.Build $cssOpts -}}
 {{- if hugo.IsProduction -}}
-	{{- $css = $css | resources.Copy "css/index.min.css" | postCSS | fingerprint -}}
+	{{- $css = $css | resources.Copy "css/index.min.css" | fingerprint -}}
 {{- end -}}
 {{- with $css }}
 	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
@@ -9,9 +14,9 @@
 {{- end }}
 
 {{- /* for those who've requested CSS for printing */ -}}
-{{- $printCSS := resources.Get "css/print.css" -}}
+{{- $printCSS := resources.Get "css/print.css" | css.Build $cssOpts -}}
 {{- if hugo.IsProduction -}}
-	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | postCSS | fingerprint -}}
+	{{- $printCSS = $printCSS | resources.Copy "css/print.min.css" | fingerprint -}}
 {{- end -}}
 {{- with $printCSS -}}
 	{{ $safePrintLink := $printCSS.RelPermalink | safeURL }}

@@ -1,18 +1,13 @@
-{{- $opts := dict "inlineImports" true -}}
-{{- $criticalCSSinline := true -}}
+{{- $cssOpts := dict
+	"sourceMap" (cond hugo.IsDevelopment "linked" "none")
+	"target" (slice "chrome115" "edge115" "firefox116" "ios16.4" "opera101" "safari16.4")
+-}}
+{{/*
+	No need for "minify" above since this will be inlined with HTML,
+	which itself will be minified.
+*/}}
 
-{{- $css := (resources.Match "css/partials/__0*.css") | resources.Concat "css/sitewide.css" -}}
-{{- if hugo.IsProduction -}}
-	{{- $css = $css | resources.Copy "css/sitewide.min.css" | postCSS -}}
-	{{- if ne $criticalCSSinline true -}}
-		{{- $css = $css | fingerprint -}}
-	{{- end -}}
-{{- end -}}
+{{ $css := resources.Get "css/critical.css" | css.Build $cssOpts -}}
 {{- with $css -}}
-	{{- if ne $criticalCSSinline true -}}
-		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-	{{- else -}}
-		<style>{{ .Content | safeCSS }}</style>
-	{{- end -}}
+	<style>{{ .Content | safeCSS }}</style>
 {{- end }}
