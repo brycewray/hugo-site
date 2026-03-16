@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.157.0 # will get Extended Version below
+  HUGO_VERSION: 0.158.0 # will get Extended Version below
   DART_SASS_VERSION: 1.98.0 # (depends on STYLING env var, below)
   WRANGLER_VERSION: 4.74.0
   STYLING: CSS # 'SCSS' or 'CSS'
