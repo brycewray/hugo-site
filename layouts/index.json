@@ -12,7 +12,7 @@
   {{ with .OutputFormats.Get "JSON" -}}
 	  "feed_url": "{{ .Permalink }}",
   {{ end -}}
-  {{ with .Site.LanguageCode -}}
+  {{ with .Site.Language.Locale -}}
 	  "language": "{{ . }}",
   {{ end -}}
   {{ with $.Param "icon" -}}

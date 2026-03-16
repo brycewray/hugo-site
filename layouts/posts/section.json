@@ -12,7 +12,7 @@
   {{ with .OutputFormats.Get "JSON" -}}
 		"feed_url": "https://www.brycewray.com/index-excerpts.json",
   {{ end -}}
-  {{ with .Site.LanguageCode -}}
+  {{ with .Site.Language.Locale -}}
 	  "language": "{{ . }}",
   {{ end -}}
   {{ with $.Param "icon" -}}

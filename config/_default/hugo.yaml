@@ -12,7 +12,7 @@ enableGitInfo: true
 ignoreErrors:
   - error-remote-getjson
 
-languageCode: en-us
+locale: en-us # formerly `languageCode`; deprecated in Hugo 0.158.0
 
 # newContentEditor: 'open -b pro.writer.mac'
 # # h/t:

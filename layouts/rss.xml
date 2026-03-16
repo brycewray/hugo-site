@@ -4,7 +4,7 @@
 	{{- $posts = $posts | first $limit -}}
 {{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.LanguageCode }}">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.Language.Locale }}">
 	<title>{{ .Site.Params.Domain }}</title>
 	<subtitle>{{ .Site.Params.Description }}</subtitle>
 	<link href="{{ .Site.BaseURL }}index.xml" rel="self" />
@@ -39,7 +39,7 @@
 			</author>
 			<id>{{ .Permalink }}</id>
 			<summary>{{ $descrForFeed }}</summary>
-			<content xml:lang="{{ .Site.LanguageCode }}" type="html">{{ $finalHTMLContent | html }}</content>
+			<content xml:lang="{{ .Site.Language.Locale }}" type="html">{{ $finalHTMLContent | html }}</content>
 		</entry>
 	{{ end }}
 </feed>
