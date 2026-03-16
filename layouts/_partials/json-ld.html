@@ -31,7 +31,7 @@
 	"headline": "{{ .Title | safeJS }}",
 	"alternativeHeadline": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
 	"description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}[n/a]{{ end }}",
-	"inLanguage": "{{ site.LanguageCode }}",
+	"inLanguage": "{{ site.Language.Locale }}",
 	"isFamilyFriendly": "true",
 	"mainEntityOfPage": {
 		"@type": "{{ $typeEntry }}",
