@@ -9,12 +9,12 @@ on:
 
 env:
   HUGO_VERSION: 0.158.0 # will get Extended Version below
-  DART_SASS_VERSION: 1.98.0 # (depends on STYLING env var, below)
-  WRANGLER_VERSION: 4.74.0
-  STYLING: CSS # 'SCSS' or 'CSS'
+  WRANGLER_VERSION: 4.74.0 # for deployment via Cloudflare Workers
   HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
+  # DART_SASS_VERSION: 1.98.0 # (depends on STYLING env var, below)
+  # STYLING: CSS # 'SCSS' or 'CSS'
   # ^^ refers to the hosting service used for the site
-  NODE: true # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   # ^^ refers to whether we're using Node.js in any way,
   #    including use of (e.g.) PostCSS, even if not doing `npm run build`
   NODE_VERSION: 24 # (Node.js version to use if NODE is true)
@@ -53,13 +53,13 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
-      - name: Install Dart Sass
-        if: ${{ env.STYLING == 'SCSS' }}
-        run: |
-          curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-          dart-sass/sass --embedded --version
-          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
+      # - name: Install Dart Sass
+      #   if: ${{ env.STYLING == 'SCSS' }}
+      #   run: |
+      #     curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+      #     tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
+      #     dart-sass/sass --embedded --version
+      #     echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Cache appropriate Hugo items
         id: cache-hugosite
         uses: actions/cache@v5
