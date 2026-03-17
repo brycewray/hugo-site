@@ -3,7 +3,7 @@
 			Items ordered according to Harry Roberts's "Get your 'head' straight" talk, 2022:
 			https://www.youtube.com/watch?v=MHyAOZ45vnU
 		 */ -}}
-{{- /* Required meta tags */}}
+		{{- /* Required meta tags */}}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{{- /* <meta http-equiv="X-UA-Compatible" content="ie=edge"> */}}
@@ -13,27 +13,13 @@
 		<title>{{ .Title }} | {{ site.Title }}</title>
 	{{- end }}
 	{{ hugo.Generator }}
-{{- /* CSS */ -}}
-	{{- $styling := "CSS" -}}{{- /* "CSS" or fallback (SCSS) as of 2024-05-21 */ -}}
 	{{- $noncriticalCSS := "scoped" -}} {{- /* "scoped" or fallback (unscoped) */ -}}
-	{{- if eq $styling "CSS" -}}
-		{{- partialCached "head-criticalcss.html" . -}}
-	{{- else -}}
-		{{- partialCached "head-criticalscss.html" . }}
-	{{- end -}}
+	{{- partialCached "head-criticalcss.html" . -}}
 	{{- with $noncriticalCSS -}}
 		{{- if eq $noncriticalCSS "scoped" -}}
-			{{- if eq $styling "CSS" -}}
-				{{- partial "head-css-scoped.html" $.Page }}
-			{{- else -}}
-				{{- partial "head-scss-scoped.html" $.Page }}
-			{{- end -}}
+			{{- partial "head-css-scoped.html" $.Page }}
 		{{- else -}}
-			{{- if eq $styling "CSS" -}}
-				{{- partialCached "head-css-unscoped.html" $.Page }}
-			{{- else -}}
-				{{- partialCached "head-scss-unscoped.html" $.Page }}
-			{{- end -}}
+			{{- partialCached "head-css-unscoped.html" $.Page }}
 		{{- end }}
 	{{- end }}
 	{{- partial "head-imgs-css.html" . }}
@@ -50,7 +36,7 @@
 			}
 		</style>
 	</noscript>
-{{ partial "json-ld.html" . }}
+	{{ partial "json-ld.html" . }}
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, full-text - RSS" href="https://www.brycewray.com/index.xml">
 		<link rel="alternate" type="application/feed+json" title="BryceWray.com, full-text - JSON" href="https://www.brycewray.com/index.json">
 		<link rel="alternate" type="application/atom+xml" title="BryceWray.com, excerpt-only - RSS" href="https://www.brycewray.com/index-excerpts.xml">
