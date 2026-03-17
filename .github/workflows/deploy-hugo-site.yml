@@ -10,12 +10,11 @@ on:
 env:
   HUGO_VERSION: 0.158.0 # will get Extended Version below
   WRANGLER_VERSION: 4.75.0 # for deployment via Cloudflare Workers
-  HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
+  # HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
+  # ^^ refers to the hosting service used for the site
   # DART_SASS_VERSION: 1.98.0 # (depends on STYLING env var, below)
   # STYLING: CSS # 'SCSS' or 'CSS'
-  # ^^ refers to the hosting service used for the site
-  NODE: false # choices: 'true' and 'false' (mainly checking only for [== "true"])
-  # ^^ refers to whether we're using Node.js in any way,
+  NODE_PKGS:  false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   #    including use of (e.g.) PostCSS, even if not doing `npm run build`
   NODE_VERSION: 24 # (Node.js version to use if NODE is true)
   NPM_RUN_BUILD: false # choices: 'true' and 'false'
@@ -28,6 +27,12 @@ jobs:
       contents: read
       deployments: write
     steps:
+      - name: Set up Node.js
+        # needed for wrangler and set-timezone, at least
+        # if: ${{ env.NODE == 'true' }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
       - name: Set GHA runner TZ to U.S. Central time
         uses: szenius/set-timezone@v2.0
         # Doesn't affect cron job; see https://github.com/szenius/set-timezone/issues/6
@@ -39,13 +44,8 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0 # for proper use of Hugo's Git info variables
-      - name: Set up Node.js if using in any way
-        if: ${{ env.NODE == 'true' }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install npm packages if using Node.js
-        if: ${{ env.NODE == 'true' }}
+      - name: Install npm packages if applicable
+        if: ${{ env.NODE_PKGS == 'true' }}
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
         #   ... not `npm install`
         #   `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json; above is based on https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml
@@ -53,13 +53,6 @@ jobs:
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
-      # - name: Install Dart Sass
-      #   if: ${{ env.STYLING == 'SCSS' }}
-      #   run: |
-      #     curl -LJO https://github.com/sass/dart-sass/releases/download/${{ env.DART_SASS_VERSION }}/dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      #     tar -xvf dart-sass-${{ env.DART_SASS_VERSION }}-linux-x64.tar.gz
-      #     dart-sass/sass --embedded --version
-      #     echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
       - name: Cache appropriate Hugo items
         id: cache-hugosite
         uses: actions/cache@v5
@@ -79,43 +72,45 @@ jobs:
           mv public/posts/index.json public/index-excerpts.json
           npm_config_yes=true npx pagefind@latest --site "public"
       - name: Publish to CFW
-        if: ${{ env.HOST == 'CFW' }}
+        # if: ${{ env.HOST == 'CFW' }}
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           wranglerVersion: "${{ env.WRANGLER_VERSION }}"
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install Netlify CLI
-        if: ${{ env.HOST == 'Netlify' }}
-        run: npm install -g netlify-cli
-      - name: Publish to Netlify
-        if: ${{ env.HOST == 'Netlify' }}
-        run: netlify deploy --prod --dir public --message "Deployed by GitHub Actions" --site "${{ secrets.NETLIFY_SITE_ID }}" --auth "${{ secrets.NETLIFY_AUTH_TOKEN }}"
-        # uses: jsmrcaga/action-netlify-deploy@v2.0.0
-        # with:
-        #   build_directory: './public'
-        #   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        #   NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        #   NETLIFY_DEPLOY_MESSAGE: "Deployed by GitHub Actions"
-        #   NETLIFY_DEPLOY_TO_PROD: true
-        #   build_command: "echo Publishing to Netlify"
-      - name: Install Vercel CLI
-        if: ${{ env.HOST == 'Vercel' }}
-        run: npm install -g vercel
-      - name: Publish to Vercel
-        if: ${{ env.HOST == 'Vercel' }}
-        uses: BetaHuhn/deploy-to-vercel-action@v1
-        with:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
-          WORKING_DIRECTORY: 'public'
-      - name: Remove Vercel-specific config file from build
-        if: ${{ env.HOST == 'Vercel' }}
-        run: |
-          rm -rf public/vercel.json
+      # - name: Install Netlify CLI
+      #   if: ${{ env.HOST == 'Netlify' }}
+      #   run: npm install -g netlify-cli
+      # - name: Publish to Netlify
+      #   if: ${{ env.HOST == 'Netlify' }}
+      #   run: netlify deploy --prod --dir public --message "Deployed by GitHub Actions" --site "${{ secrets.NETLIFY_SITE_ID }}" --auth "${{ secrets.NETLIFY_AUTH_TOKEN }}"
+      #   # uses: jsmrcaga/action-netlify-deploy@v2.0.0
+      #   # with:
+      #   #   build_directory: './public'
+      #   #   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #   #   NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      #   #   NETLIFY_DEPLOY_MESSAGE: "Deployed by GitHub Actions"
+      #   #   NETLIFY_DEPLOY_TO_PROD: true
+      #   #   build_command: "echo Publishing to Netlify"
+      # - name: Install Vercel CLI
+      #   if: ${{ env.HOST == 'Vercel' }}
+      #   run: npm install -g vercel
+      # - name: Publish to Vercel
+      #   if: ${{ env.HOST == 'Vercel' }}
+      #   uses: BetaHuhn/deploy-to-vercel-action@v1
+      #   with:
+      #     VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+      #     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+      #     WORKING_DIRECTORY: 'public'
+      # - name: Remove Vercel-specific config file from build
+      #   if: ${{ env.HOST == 'Vercel' }}
+      #   run: |
+      #     rm -rf public/vercel.json
+
+
 # To do a push without triggering this GHA, include one of
 # the following in the **commit message**
 # (INCLUDING the brackets AND case-sensitivity):
