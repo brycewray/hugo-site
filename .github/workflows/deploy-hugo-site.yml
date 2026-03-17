@@ -19,6 +19,7 @@ env:
   NODE_VERSION: 24 # (Node.js version to use if NODE is true)
   NPM_RUN_BUILD: false # choices: 'true' and 'false'
   # ^^ refers to whether we're using `npm run build` to build the site
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   deploy:
