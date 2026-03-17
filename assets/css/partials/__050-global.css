@@ -130,7 +130,6 @@ html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	/* stylelint-disable-next-line value-keyword-case */
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 

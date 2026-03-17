@@ -1,11 +1,8 @@
-/* stylelint-disable no-descending-specificity */
-
 /* based partly on https://github.com/astro-community/astro-embed/tree/main/packages/astro-embed-twitter */
 
 :root {
 	--tc-corner-radius: 1em;
 	--tc-padding: 1em;
-	/* stylelint-disable-next-line value-keyword-case */
 	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
