@@ -1,11 +1,8 @@
 {{- $cssOpts := dict
+	"minify" (cond hugo.IsDevelopment false true)
 	"sourceMap" (cond hugo.IsDevelopment "linked" "none")
 	"target" (slice "chrome115" "edge115" "firefox116" "ios16.4" "opera101" "safari16.4")
 -}}
-{{/*
-	No need for "minify" above since this will be inlined with HTML,
-	which itself will be minified.
-*/}}
 
 {{ $css := resources.Get "css/critical.css" | css.Build $cssOpts -}}
 {{- with $css -}}
