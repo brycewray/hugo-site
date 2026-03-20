@@ -76,6 +76,10 @@ jobs:
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           npm_config_yes=true npx pagefind@latest --site "public"
+      - name: Pre-install wrangler to squelch CFW warnings in GHA
+        # if: ${{ env.HOST == 'CFW' }} && ${{ env.NODE_PKGS != 'true' }}
+        # -- https://github.com/cloudflare/wrangler-action/issues/286
+        run: npm i -g wrangler@${{ env.WRANGLER_VERSION }}
       - name: Publish to CFW
         # if: ${{ env.HOST == 'CFW' }}
         uses: cloudflare/wrangler-action@v3
