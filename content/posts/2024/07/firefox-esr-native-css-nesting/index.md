@@ -11,7 +11,7 @@ Nearly a year ago, I [wrote](/posts/2023/08/native-css-nesting-support-arrives-b
 
 <!--more-->
 
-Every year or so, Mozilla updates Firefox ESR to have, pretty much all the capabilities that are in the regular release channel for that instant in history. Today is that day in this particular release cycle. It just happened that Firefox ESR's 2023 major release happened concurrently with the release of regular Firefox v.115.0, which was two major versions before Mozilla added support for native CSS nesting. That meant those locked into the ESR channel --- certain Firefox-accepting institutions and enterprises, as well as users of [Debian](https://debian.org/) Linux --- missed out on that support until now.
+Every year or so, Mozilla updates Firefox ESR to have pretty much all the capabilities that are in the regular release channel for that instant in history. Today is that day in this particular release cycle. It just happened that Firefox ESR's 2023 major release happened concurrently with the release of regular Firefox v.115.0, which was two major versions before Mozilla added support for native CSS nesting. That meant those locked into the ESR channel --- certain Firefox-accepting institutions and enterprises, as well as users of [Debian](https://debian.org/) Linux --- missed out on that support until now.
 
 But, now, Firefox ESR v.128.0 has arrived, bearing the feature set of Firefox v.128.0, including the native CSS nesting support that came aboard with v.117.0 last August.
 
