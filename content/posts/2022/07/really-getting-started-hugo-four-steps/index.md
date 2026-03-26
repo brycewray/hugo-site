@@ -120,16 +120,18 @@ Everything from here on takes place in that `my-site` folder.
 
 Each of the files you'll create below is a plain-text file. In macOS, the default text editor is TextEdit. In Windows, it's Notepad. Either is fine for these. Each editor may complain about your adding *.html* or *.md* extensions to these, but you can ignore such messages.
 
-1. In `layouts/`, add a folder called `_default`.
-2. In `layouts/`, create a file called `index.html` with the following content:\
+<strong class="red">Note from the future</strong>: These instructions assume you are using a version of Hugo as least as new as [v.0.146.0](https://github.com/gohugoio/hugo/releases/tag/v0.146.0) (2025-04-10), in which the [templating system changed](https://github.com/gohugoio/hugo/pull/13541).
+{.box}
+
+1. In `layouts/`, create a file called `home.html` with the following content:\
 {{< highlight go-html-template "linenos=false" >}}
 {{ define "main" }}
 	{{ .Content }}
-  <p>This line is from <code>layouts/index.html</code>.</p>
+  <p>This line is from <code>layouts/home.html</code>.</p>
 {{ end }}
 {{< /highlight >}}
-`layouts/index.html` is the layout for the site's home page.
-3. In `layouts/_default/`, create a file called `baseof.html` with the following content (Hugo's default is for English, so that's why I use `lang="en"`):\
+`layouts/home.html` is the layout for the site's home page.
+2. In `layouts/`, create a file called `baseof.html` with the following content (Hugo's default is for English, so that's why I use `lang="en"`):\
 {{< highlight go-html-template "linenos=false" >}}
 <!DOCTYPE html>
 <html lang="en" charset="utf-8">
@@ -141,17 +143,17 @@ Each of the files you'll create below is a plain-text file. In macOS, the defaul
 </body>
 </html>
 {{< /highlight >}}
-`layouts/_default/baseof.html` is, to quote the [Hugo documentation](https://gohugo.io/templates/base/#define-the-base-template), "the shell from which all your pages will be rendered unless you specify another `baseof.html` closer to the beginning of the lookup order."[^lookupOrder]
+`layouts/baseof.html` is, to quote the [Hugo documentation](https://gohugo.io/templates/base/#define-the-base-template), "the shell from which all your pages will be rendered unless you specify another `baseof.html` closer to the beginning of the lookup order."[^lookupOrder]
 [^lookupOrder]: The lookup order is explained in [this vital part](https://gohugo.io/templates/lookup-order/) of the Hugo documentation.
-4. In `layouts/_default/`, create a file called `single.html` with the following content:\
+3. In `layouts/`, create a file called `single.html` with the following content:\
 {{< highlight go-html-template "linenos=false" >}}
 {{ define "main" }}
 	{{ .Content }}
-  <p>This line is from <code>layouts/_default/single.html</code>.</p>
+  <p>This line is from <code>layouts/single.html</code>.</p>
 {{ end }}
 {{< /highlight >}}
-`layouts/_default/single.html` is the default template for a *single page*.[^lookupOrder]
-5. In `content/`, add a file called `firstpost.md`[^Markdown] with the following content:\
+`layouts/single.html` is the default template for a *single page*.[^lookupOrder]
+4. In `content/`, add a file called `firstpost.md` with the following content:\
 {{< highlight md "linenos=false" >}}
 ---
 title: "First post"
@@ -161,7 +163,7 @@ This line is from `content/firstpost.md`.
 
 [Go to home](/)
 {{< /highlight >}}
-6. In `content/` , add a file called `_index.md` with the following content:\
+5. In `content/` , add a file called `_index.md` with the following content:\
 {{< highlight md "linenos=false" >}}
 ---
 title: "Home page"
@@ -173,16 +175,15 @@ This line is from `content/_index.md`.
 {{< /highlight >}}
 Incidentally, the reason for that underscore in the name `_index.md` has to do with [how Hugo helps you manage content](https://gohugo.io/content-management/organization/#index-pages-_indexmd), but a more detailed explanation thereof is well outside the scope of these intentionally simplified instructions.
 
-7. In the `hugo.toml` file at the Hugo project's top level, add the following line[^disableKinds]:\
+6. In the `hugo.toml` file at the Hugo project's top level, add the following line:\
 {{< highlight toml "linenos=false" >}}
 disableKinds = ['taxonomy', 'term']
 {{< /highlight >}}
+(This simply prevents some warning messages that Hugo otherwise will throw when you invoke `hugo server` with this set of files in place.  If you ever do wish to use [these items](https://gohugo.io/content-management/taxonomies/#default-taxonomies), just delete this line from the config file.)
 
-[^Markdown]: If you're unfamiliar with the Markdown (`.md`) format for plain-text files, start with the [original specification](https://daringfireball.net/projects/markdown) and then search for more details.
+Now, the `my-site` project has the absolute minimum requirement of layouts, content files[^index], and configuration changes **so it will work without complaint** when you run the dev server.
 
-[^disableKinds]: This simply prevents some warning messages that Hugo otherwise will throw when you invoke `hugo server` with this set of files in place.  If you ever do wish to use [these items](https://gohugo.io/content-management/taxonomies/#default-taxonomies), just delete this line from the config file.
-
-Now, the `my-site` project has the absolute minimum requirement of layouts, content files[^index], and configuration changes so it will work without complaint when you run Hugo's built-in development server.
+Speaking of which . . .
 
 [^index]: Actually, only `content/_index.md` was utterly necessary where content was concerned, but I thought I'd also throw in the `content/firstpost.md` file just to demonstrate the vital `single.html` template at work.
 
