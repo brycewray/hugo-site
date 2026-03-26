@@ -1,4 +1,3 @@
 tdewolff:
   html:
     keepQuotes: true
-    keepWhiteSpace: false # per https://discourse.gohugo.io/t/is-html-minification-broken/34174
