@@ -3,8 +3,12 @@
 {{ $cssOpts := dict
 	"minify" (cond hugo.IsDevelopment false true)
 	"sourceMap" (cond hugo.IsDevelopment "linked" "none")
-	"target" (slice "chrome115" "edge115" "firefox116" "ios16.4" "opera101" "safari16.4")
+	"target" (slice "chrome117" "edge117" "firefox116" "ios17" "safari17")
 }}
+{{- /*
+	Above `target` is Baseline "widely available" as of 2026-03-28
+	https://web-platform-dx.github.io/web-features/supported-browsers/?target=widelyAvailable
+*/ -}}
 
 {{- /*
 	save some repetition below
