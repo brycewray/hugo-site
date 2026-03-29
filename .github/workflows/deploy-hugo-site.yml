@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.159.1 # will get Extended Version below
+  HUGO_VERSION: 0.159.1
   WRANGLER_VERSION: 4.78.0 # for deployment via Cloudflare Workers
   # HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   # ^^ refers to the hosting service used for the site
@@ -56,7 +56,7 @@ jobs:
         #   `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json; above is based on https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml
       - name: Hugo download/install
         run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_extended_${{ env.HUGO_VERSION }}_linux-amd64.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
       - name: Cache appropriate Hugo items
         id: cache-hugosite
