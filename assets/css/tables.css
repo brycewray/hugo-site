@@ -16,6 +16,10 @@ table.noborders {
 	border: 0;
 	border-collapse: collapse;
 
+	tr {
+		color: light-dark(transparent, var(--black));
+	}
+
 	td {
 		font-weight: var(--font-normal);
 		text-align: left;
@@ -88,7 +92,7 @@ table.ulysses {
 	thead th {
 		background-color: var(--blue-800);
 		border: 1px solid;
-		border-color: var(--black) var(--gray-350) var(--black) var(--black);
+		border-color: light-dark(var(--black) var(--gray-350) var(--black) var(--black), var(--white));
 		color: var(--white);
 
 		&:last-child {
@@ -99,7 +103,8 @@ table.ulysses {
 	td {
 		text-align: center;
 		border: 1px solid;
-		border-color: var(--black);
+		border-color: light-dark(var(--black), var(--white));
+		color: light-dark(currentColor, var(--white));
 		padding: 0;
 	}
 
@@ -112,66 +117,11 @@ table.ulysses {
 	}
 
 	tr:nth-child(odd) {
-		background-color: var(--white);
+		background-color: light-dark(var(--white), var(--slate-800));
 	}
 
 	tr:nth-child(even) {
-		background-color: var(--emerald-050);
+		background-color: light-dark(var(--emerald-050), var(--emerald-950));
 	}
 }
 
-html[data-theme="dark"] {
-	table.noborders {
-		tr {
-			color: var(--black);
-		}
-	}
-
-	table.ulysses {
-		thead th {
-			border-color: var(--white);
-		}
-
-		td {
-			border-color: var(--white);
-			color: var(--white);
-		}
-
-		tr:nth-child(odd) {
-			background-color: var(--slate-800);
-		}
-
-		tr:nth-child(even) {
-			background-color: var(--emerald-950);
-		}
-	}
-}
-
-@media screen and (prefers-color-scheme: dark) {
-	html:not([data-theme]) {
-		table.noborders {
-			tr {
-				color: var(--black);
-			}
-		}
-
-		table.ulysses {
-			thead th {
-				border-color: var(--white);
-			}
-
-			td {
-				border-color: var(--white);
-				color: var(--white);
-			}
-
-			tr:nth-child(odd) {
-				background-color: var(--slate-800);
-			}
-
-			tr:nth-child(even) {
-				background-color: var(--emerald-950);
-			}
-		}
-	}
-}

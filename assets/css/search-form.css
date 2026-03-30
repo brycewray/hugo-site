@@ -1,17 +1,7 @@
 /* === for search form */
 
-html, html[data-theme="light"] {
-	--input: var(--black);
-}
-
-html[data-theme="dark"] {
-	--input: var(--white);
-}
-
-@media screen and (prefers-color-scheme:dark) {
-	html:not([data-theme]) {
-		--input: var(--white);
-	}
+:root {
+	--input: light-dark(var(--black), var(--white));
 }
 
 .search-div, .search-div-pf {
@@ -132,11 +122,8 @@ html[data-theme="dark"] {
 
 .pagefind-ui__button {
 	display: block;
-
 	/* position: absolute; */
-
 	/* left: 50%; */
-
 	/* bottom: 0; */
 }
 

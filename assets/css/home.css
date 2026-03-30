@@ -61,7 +61,7 @@
 }
 
 .home-post-latest {
-	color: var(--head);
+	color: light-dark(var(--head), var(--default));
 	margin-top: 0.5em;
 	margin-bottom: 0.25em;
 	font-size: clamp(2rem, 2rem + 1vw, 3.5rem);
@@ -73,27 +73,10 @@
 	}
 }
 
-html[data-theme="dark"] {
-	.home-post-latest {
-		color: var(--default);
-	}
-}
-
-@media screen and (prefers-color-scheme: dark) {
-	html:not([data-theme]) {
-		.home-post-latest {
-			color: var(--default);
-		}
-	}
-}
-
 .home-post-title {
 	font-size: clamp(1.75rem, 1.25rem + 1vw, 2.25rem);
-
 	/* font-family: var(--serif); */
-
 	/* font-weight: var(--font-medium); */
-
 	letter-spacing: -0.025em;
 	padding-top: 0.5em;
 	line-height: 1.25em;
@@ -104,9 +87,7 @@ html[data-theme="dark"] {
 	text-wrap: balance;
 	letter-spacing: -0.025em;
 	font-size: clamp(1.125rem, 1rem + 1vw, 1.375rem);
-
 	/* font-family: var(--serif); */
-
 	/* @media screen and (width >= 1024px) {
 		font-weight: var(--font-semilight);
 		font-style: italic;
