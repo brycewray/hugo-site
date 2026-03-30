@@ -138,7 +138,8 @@ article {
 		margin-bottom: 1.15em;
 	}
 
-	/* p {
+	/*
+	p {
 		@media only screen and (width >= 1024px) {
 			@supports (text-justify: inter-character) {
 				text-align: justify;
@@ -146,7 +147,7 @@ article {
 				hyphens: auto;
 			}
 		}
-	} */
+	}
 
 	blockquote p {
 		@media only screen and (width >= 1024px) {
@@ -156,15 +157,16 @@ article {
 			}
 		}
 	}
+	*/
 
 	li li, li p {
 		font-size: inherit;
 		margin-top: 0.25em; /* definitely em, not rem */
 
-		@media only screen and (width >= 1024px) {
+		/* @media only screen and (width >= 1024px) {
 			text-align: left;
 			hyphens: none;
-		}
+		} */
 	}
 
 	h1, h2, h3, h4 {
@@ -192,10 +194,10 @@ article {
 	width: 100%;
 	padding: 1em 1.25em;
 
-	@media only screen and (width >= 1024px) {
+	/* @media only screen and (width >= 1024px) {
 		text-align: left;
 		hyphens: none;
-	}
+	} */
 
 	p {
 		padding: 0;
