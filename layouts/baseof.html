@@ -36,8 +36,7 @@
 			<script
 				src="{{ $jsToggle.RelPermalink }}"
 				integrity="{{ $jsToggle.Data.Integrity }}"
-				defer
-			>
+			>{{/* no defer! */}}
 			</script>
 		{{- end }}
 	</body>
