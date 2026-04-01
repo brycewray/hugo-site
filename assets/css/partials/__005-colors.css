@@ -82,11 +82,11 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	/* --orange-050: hsl(25, 100%, 98%); */
 	/* --orange-100: hsl(25, 100%, 95%); */
 	/* --orange-200: hsl(25, 100%, 87%); */
-	--orange-300: hsl(25, 100%, 78%);
+	/* --orange-300: hsl(25, 100%, 78%); */
 	/* --orange-400: hsl(25, 100%, 66%); */
 	/* --orange-500: hsl(25, 95%, 54%); */
 	/* --orange-600: hsl(25, 100%, 44%); */
-	--orange-700: hsl(25, 100%, 36%);
+	/* --orange-700: hsl(25, 100%, 36%); */
 	/* --orange-800: hsl(25, 100%, 29%); */
 	/* --orange-900: hsl(25, 100%, 24%); */
 	/* --orange-950: hsl(25, 100%, 13%); */
@@ -104,7 +104,7 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	/* --yellow-050: hsl(55, 73%, 96%); */
 	/* --yellow-100: hsl(55, 88%, 87%); */
 	--yellow-200: hsl(55, 90%, 76%);
-	--yellow-300: hsl(55, 84%, 62%);
+	/* --yellow-300: hsl(55, 84%, 62%); */
 	/* --yellow-400: hsl(55, 77%, 53%); */
 	/* --yellow-500: hsl(55, 73%, 46%); */
 	/* --yellow-600: hsl(55, 87%, 35%); */
@@ -162,8 +162,8 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	--cyan-300: hsl(190, 100%, 73%);
 	/* --cyan-400: hsl(190, 89%, 55%); */
 	/* --cyan-500: hsl(190, 97%, 42%); */
-	--cyan-600: hsl(190, 100%, 34%);
-	--cyan-700: hsl(190, 100%, 27%);
+	/* --cyan-600: hsl(190, 100%, 34%); */
+	/* --cyan-700: hsl(190, 100%, 27%); */
 	/* --cyan-800: hsl(190, 85%, 24%); */
 	/* --cyan-900: hsl(190, 76%, 21%); */
 	/* --cyan-950: hsl(190, 100%, 12%); */
@@ -229,11 +229,11 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	/* --fuchsia-050: hsl(290, 85%, 97%); */
 	/* --fuchsia-100: hsl(290, 85%, 95%); */
 	/* --fuchsia-200: hsl(290, 85%, 90%); */
-	--fuchsia-300: hsl(290, 93%, 83%);
+	/* --fuchsia-300: hsl(290, 93%, 83%); */
 	/* --fuchsia-400: hsl(290, 93%, 73%); */
 	/* --fuchsia-500: hsl(290, 84%, 61%); */
 	/* --fuchsia-600: hsl(290, 70%, 49%); */
-	--fuchsia-700: hsl(290, 70%, 41%);
+	/* --fuchsia-700: hsl(290, 70%, 41%); */
 	/* --fuchsia-800: hsl(290, 69%, 34%); */
 	/* --fuchsia-900: hsl(290, 62%, 29%); */
 	/* --fuchsia-950: hsl(290, 86%, 17%); */
@@ -251,11 +251,11 @@ Midpoints after 050 and before 950 from https://meyerweb.com/eric/tools/color-bl
 	/* --rose-050: hsl(345, 100%, 97%); */
 	/* --rose-100: hsl(345, 100%, 95%); */
 	/* --rose-200: hsl(345, 92%, 90%); */
-	--rose-300: hsl(345, 96%, 82%);
+	/* --rose-300: hsl(345, 96%, 82%); */
 	/* --rose-400: hsl(345, 95%, 71%); */
 	/* --rose-500: hsl(345, 88%, 60%); */
 	/* --rose-600: hsl(345, 78%, 49%); */
-	--rose-700: hsl(345, 83%, 41%);
+	/* --rose-700: hsl(345, 83%, 41%); */
 	/* --rose-800: hsl(345, 79%, 35%); */
 	/* --rose-900: hsl(345, 75%, 30%); */
 	/* --rose-950: hsl(345, 88%, 16%); */
