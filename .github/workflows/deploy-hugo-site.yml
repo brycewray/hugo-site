@@ -9,7 +9,7 @@ on:
 
 env:
   HUGO_VERSION: 0.159.2
-  WRANGLER_VERSION: 4.79.0 # for deployment via Cloudflare Workers
+  WRANGLER_VERSION: 4.80.0 # for deployment via Cloudflare Workers
   # HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   # ^^ refers to the hosting service used for the site
   # DART_SASS_VERSION: 1.98.0 # (depends on STYLING env var, below)
