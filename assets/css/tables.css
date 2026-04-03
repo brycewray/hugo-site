@@ -92,11 +92,16 @@ table.ulysses {
 	thead th {
 		background-color: var(--blue-800);
 		border: 1px solid;
-		border-color: light-dark(var(--black) var(--gray-350) var(--black) var(--black), var(--white));
+		border-top-color: light-dark(var(--black), var(--white));
+		border-bottom-color: light-dark(var(--black), var(--white));
 		color: var(--white);
 
+		&:first-child {
+			border-left-color: light-dark(var(--black), var(--white));
+		}
+
 		&:last-child {
-			border-right-color: var(--black);
+			border-right-color: light-dark(var(--black), var(--white));
 		}
 	}
 
