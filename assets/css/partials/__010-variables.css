@@ -10,7 +10,7 @@ Note from the relevant GitHub SCSS file: "SFMono-Regular needs to come before SF
 */
 	/* --sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Adwaita Sans", "Noto Sans", Arial, Ubuntu, Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 	--sans-serif: ui-sans-serif, system-ui, sans-serif;
-	--serif: ui-serif, Georgia, Cambria, "Bitstream Charter", serif;
+	--serif: ui-serif, "Noto Serif", Georgia, Cambria, "Bitstream Charter", serif;
 	--monospaced: ui-monospace, SFMono-Regular, "SF Mono", "Source Code Pro", Menlo, Consolas, monospace;
 	--social-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--emojis: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
