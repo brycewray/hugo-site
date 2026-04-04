@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.159.2
+  HUGO_VERSION: 0.160.0
   # WRANGLER_VERSION: 4.80.0 # for deployment via Cloudflare Workers
   # HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   # ^^ refers to the hosting service used for the site
