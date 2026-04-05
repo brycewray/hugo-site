@@ -12,7 +12,7 @@ env:
   # For later ref if decide to read .hvm for this in GHA:
   # - https://github.com/jmooring/hvm/issues/218
   # - https://github.com/jmooring/hosting-github-pages-hvm/blob/main/.github/workflows/hugo.yaml#L54-L74
-  # HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
+  HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
   NODE_PKGS:  false # choices: 'true' and 'false' (mainly checking only for [== "true"])
   #    including use of (e.g.) PostCSS, even if not doing `npm run build`
   NODE_VERSION: 24
