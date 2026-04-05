@@ -8,7 +8,11 @@
 	https://web-platform-dx.github.io/web-features/supported-browsers/
 */ -}}
 
-{{ $css := resources.Get "css/critical.css" | css.Build $cssOpts -}}
+{{ $css := resources.Get "css/critical.css" | css.Build $cssOpts | resources.Copy "css/index.css" -}}
+{{- if hugo.IsProduction -}}
+	{{- $css = $css | resources.Copy "css/index.min.css" | fingerprint -}}
+{{- end -}}
 {{- with $css -}}
-	<style>{{ .Content | safeCSS }}</style>
+	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
 {{- end }}
