@@ -6,5 +6,5 @@ rm -rf static/pagefind && rm -rf static/_pagefind # kill prev PF index, if any
 ${MY_PATH}/hvm/${HUGO_VERSION}/hugo --gc --minify --logLevel info
 mv public/posts/index.xml public/index-excerpts.xml
 mv public/posts/index.json public/index-excerpts.json
-npm_config_yes=true npx pagefind@latest --site public
+npm_config_yes=true npx pagefind@1.4.0 --site public
 # npm run build
