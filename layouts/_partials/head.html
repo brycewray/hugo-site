@@ -31,7 +31,7 @@
 	{{- $searchCSSNoJS := resources.Get "css/search-form.css" | css.Build $cssOpts -}}
 	{{- if hugo.IsProduction -}}
 		{{- $searchCSS = $searchCSS | resources.Copy "css/search-pf.min.css" | fingerprint -}}
-		{{- $searchCSSNoJS := $searchCSSNoJS | resources.Copy "css/search-form.min.css" | fingerprint -}}
+		{{- $searchCSSNoJS = $searchCSSNoJS | resources.Copy "css/search-form.min.css" | fingerprint -}}
 	{{- end -}}
 	{{- if eq .Title .Site.Params.Titles.Search -}}
 		{{- with $searchCSS }}
