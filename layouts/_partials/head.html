@@ -22,6 +22,29 @@
 			{{- partialCached "head-css-unscoped.html" $.Page }}
 		{{- end }}
 	{{- end }}
+	{{ $cssOpts := dict
+		"minify" (cond hugo.IsDevelopment false true)
+		"sourceMap" (cond hugo.IsDevelopment "linked" "none")
+		"target" (slice "chrome130" "edge130" "firefox132" "ios18.2" "safari18.2")
+	-}}
+	{{- $searchCSS := resources.Get "css/search-pf.css" | css.Build $cssOpts -}}
+	{{- $searchCSSNoJS := resources.Get "css/search-form.css" | css.Build $cssOpts -}}
+	{{- if hugo.IsProduction -}}
+		{{- $searchCSS = $searchCSS | resources.Copy "css/search-pf.min.css" | fingerprint -}}
+		{{- $searchCSSNoJS := $searchCSSNoJS | resources.Copy "css/search-form.min.css" | fingerprint -}}
+	{{- end -}}
+	{{- if eq .Title .Site.Params.Titles.Search -}}
+		{{- with $searchCSS }}
+			<link rel="preload" href="{{ $searchCSS.RelPermalink }}" as="style"{{- if hugo.IsProduction }} integrity="{{ $searchCSS.Data.Integrity }}" crossorigin{{- end -}}>
+			<link rel="stylesheet" href="{{ $searchCSS.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $searchCSS.Data.Integrity }}" crossorigin{{- end -}}>
+		{{- end -}}
+		<noscript>
+			{{- with $searchCSSNoJS }}
+				<link rel="preload" href="{{ $searchCSSNoJS.RelPermalink }}" as="style"{{- if hugo.IsProduction }} integrity="{{ $searchCSSNoJS.Data.Integrity }}" crossorigin{{- end -}}>
+				<link rel="stylesheet" href="{{ $searchCSSNoJS.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $searchCSSNoJS.Data.Integrity }}" crossorigin{{- end -}}>
+			{{- end -}}
+		</noscript>
+	{{- end -}}
 	{{- partial "head-imgs-css.html" . }}
 	{{- partial "head-css-oklch-post.html" . -}}
 	<noscript>

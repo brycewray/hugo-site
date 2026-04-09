@@ -17,6 +17,7 @@ goAuto = () => {
 	localStorage.removeItem("theme")
 	localStorage.setItem("radios", "auto")
 	htmlDoc.removeAttribute("data-theme")
+	htmlDoc.removeAttribute("data-pf-theme")
 	buttonAuto.checked = true
 	buttonAuto.setAttribute("aria-checked", true)
 	buttonLight.checked = false
@@ -29,6 +30,7 @@ goLight = () => {
 	localStorage.setItem("theme", "light")
 	localStorage.setItem("radios", "light")
 	htmlDoc.setAttribute("data-theme", "light")
+	htmlDoc.setAttribute("data-pf-theme", "light")
 	buttonAuto.checked = false
 	buttonAuto.setAttribute("aria-checked", false)
 	buttonLight.checked = true
@@ -41,6 +43,7 @@ goDark = () => {
 	localStorage.setItem("theme", "dark")
 	localStorage.setItem("radios", "dark")
 	htmlDoc.setAttribute("data-theme", "dark")
+	htmlDoc.setAttribute("data-pf-theme", "dark")
 	buttonAuto.checked = false
 	buttonAuto.setAttribute("aria-checked", false)
 	buttonLight.checked = false

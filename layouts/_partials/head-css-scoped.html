@@ -65,7 +65,8 @@
 {{- $cssTypes = append slice (slice $conditionFootnotes "footnotes") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionHome "home") $cssTypes -}}
 {{- $cssTypes = append slice (slice $conditionSitemap "sitemaphtml") $cssTypes -}}
-{{- $cssTypes = append slice (slice $conditionSearchForm "search-form") $cssTypes -}}
+{{/*  {{- $cssTypes = append slice (slice $conditionSearchForm "search-form") $cssTypes -}}  */}}
+{{/*  {{- $cssTypes = append slice (slice $conditionSearchForm "search-pf") $cssTypes -}}  */}}
 {{- $cssTypes = append slice (slice $condition404 "fourohfour") $cssTypes -}}
 
 {{- range $cssTypes -}}
