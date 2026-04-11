@@ -124,7 +124,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Rob O'Leary](https://www.roboleary.net/)
 - [Robb Knight](https://rknight.me/blog/)
 - [Robert McGovern](https://tarasis.net/)
-- [Ruben Schade](https://rubenerd.com/)
+- [Ruben Schade](https://www.rubenerd.au/)
 
 ## S
 - [Salma Alam-Naylor](https://whitep4nth3r.com/)
