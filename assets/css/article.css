@@ -138,7 +138,6 @@ article {
 		margin-bottom: 1.15em;
 	}
 
-	/*
 	p {
 		@media only screen and (width >= 1024px) {
 			@supports (text-justify: inter-character) {
@@ -157,7 +156,6 @@ article {
 			}
 		}
 	}
-	*/
 
 	li li, li p {
 		font-size: inherit;

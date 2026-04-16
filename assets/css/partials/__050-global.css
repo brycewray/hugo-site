@@ -66,7 +66,7 @@ html, body {
 	/* ^^ h/t https://dbushell.com/2024/11/05/webkit-font-smoothing/ */
 
 	/* font-kerning: normal; */
-	font-family: var(--sans-serif);
+	font-family: var(--serif);
 	font-weight: var(--font-normal);
 
 	/* @media screen and (width >= 768px) {
