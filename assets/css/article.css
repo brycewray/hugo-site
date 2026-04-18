@@ -79,6 +79,11 @@ html[data-theme="dark"] .shadow {
 	font-size: 0.75em;
 	font-weight: var(--font-weight-sm);
 	text-align: center;
+
+	@media only screen and (width >= 1024px) {
+		font-family: var(--sans-serif);
+		hyphens: none;
+	}
 }
 
 .punctuation-example {
