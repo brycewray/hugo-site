@@ -60,6 +60,10 @@ async function onRequest(context) {
     ).replace(
       'src="/assets/js/lite-yt-embed_',
       `nonce="${nonce}" src="/assets/js/lite-yt-embed_`
+    ).replace(
+      // Tinylytics
+      `src="https://tinylytics.app`,
+      `nonce="${nonce}" src="https://tinylytics.app`
     ).replace(/<style/g, `<style nonce="${nonce}"`);
     let ttl;
     let url = new URL(context.request.url);
