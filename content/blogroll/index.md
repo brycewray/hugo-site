@@ -57,7 +57,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Eric Murphy](https://ericmurphy.xyz/)
 - [Ethan Marcotte](https://ethanmarcotte.com/wrote/)
 - [Evan Sheehan](https://darthmall.net/)
-- [Garrett Dimon](https://generators.dev/journal)
+- [Garrett Dimon](https://garrettdimon.com/)
 
 ## H–I
 - [Hari Rana](https://tesk.page/)
@@ -105,7 +105,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Michael Harley](https://michaelharley.net/posts/)
 - [Michael Rose](https://mademistakes.com/)
 - [Michael Stanclift](https://vmstan.com/)
-- [Michal Sapka](https://michal.sapka.me/)
 
 ## N–P
 - [Navendu Pottekkat](https://navendu.me/)
