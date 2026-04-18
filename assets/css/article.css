@@ -192,10 +192,10 @@ article {
 	width: 100%;
 	padding: 1em 1.25em;
 
-	/* @media only screen and (width >= 1024px) {
+	@media only screen and (width >= 1024px) {
 		text-align: left;
 		hyphens: none;
-	} */
+	}
 
 	p {
 		padding: 0;
