@@ -56,6 +56,37 @@ html[data-theme="dark"] .shadow {
 	}
 }
 
+.container-narrower {
+	margin: 1rem auto 0;
+
+	--container-narrower-width: 80%;
+
+	width: var(--container-narrower-width);
+	max-width: var(--container-narrower-width);
+
+	@media screen and (width >= 1024px) {
+		--container-narrower-width: 50vw;
+		--big-img-div-expansion-width: 40vw;
+		--big-img-div-width: calc(var(--container-narrower-width) + var(--big-img-div-expansion-width));
+
+		.big-img-div:not(li *) {
+			width: var(--big-img-div-width);
+			left: calc(calc(var(--big-img-div-width) * -1) / 2 + 50%);
+		}
+	}
+
+	@media screen and (width >= 1536px) {
+		--container-narrower-width: 40vw;
+		--big-img-div-expansion-width: 45vw;
+	}
+
+	@media screen and (width >= 1920px) {
+		--container-narrower-width: 45rem;
+
+		/* --big-img-div-expansion-width: 60vw; */
+	}
+}
+
 .img-phn {
 	width: 90%;
 
