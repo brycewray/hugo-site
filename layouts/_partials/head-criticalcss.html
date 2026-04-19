@@ -1,18 +1,28 @@
-{{- $cssOpts := dict
-	"minify" (cond hugo.IsDevelopment false true)
-	"sourceMap" (cond hugo.IsDevelopment "linked" "none")
-	"target" (slice "chrome130" "edge130" "firefox132" "ios18.2" "safari18.2")
--}}
+{{- $criticalCSSinline := true -}}
+{{- $cssTarget := slice "chrome130" "edge130" "firefox132" "ios18.2" "safari18.2" -}}
 {{- /*
-	Above `target` is Baseline 2024
+	Above `$cssTarget` is Baseline 2024
 	https://web-platform-dx.github.io/web-features/supported-browsers/
 */ -}}
+{{- $cssOpts := dict
+	"sourceMap" (cond hugo.IsDevelopment "linked" "none")
+	"target" $cssTarget
+-}}
+{{- if ne $criticalCSSinline true}}
+	{{- $cssOpts = merge $cssOpts (dict "minify" (cond hugo.IsDevelopment false true)) -}}
+{{- end -}}
+
 
 {{ $css := resources.Get "css/critical.css" | css.Build $cssOpts | resources.Copy "css/index.css" -}}
 {{- if hugo.IsProduction -}}
 	{{- $css = $css | resources.Copy "css/index.min.css" | fingerprint -}}
 {{- end -}}
+
 {{- with $css -}}
-	<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction -}} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
-	<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	{{- if ne $criticalCSSinline true -}}
+		<link rel="preload" href="{{ $css.RelPermalink }}" as="style"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+		<link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen"{{- if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}" crossorigin{{- end -}}>
+	{{- else -}}
+		<style>{{ .Content | safeCSS }}</style>
+	{{- end -}}
 {{- end }}
