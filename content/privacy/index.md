@@ -28,10 +28,6 @@ The site's [giscus](https://giscus.app) commenting system, which is based on the
 
 This site [reproduces](/posts/2022/06/static-mastodon-toots-hugo/) some [Mastodon](https://joinmastodon.org/) posts, but as purely static text and downloaded images with no tracking involved. Each post is linked to its original location on the applicable Mastodon instance. If a post ceases to be available, I recreate its text only in blockquote form.
 
-## Tinylytics
-
-This site uses [Tinylytics](https://tinylytics.app) to provide analytics. Its ["Privacy Compliance" documentation](https://tinylytics.app/docs/privacy_compliance) details how this tool is "built from the ground up to be compliant with major privacy regulations."
-
 ## YouTube
 
 This site uses [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed) to provide [YouTube](https://youtube.com) embeds that respect your privacy.[^Sia]

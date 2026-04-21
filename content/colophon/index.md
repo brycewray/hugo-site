@@ -20,7 +20,7 @@ I have spent many hours trying to make the site as accessible as possible, often
 
 Similarly, the site functions properly either with or without JavaScript's being enabled in your browser, for those of you who prefer to browse JS-free. You'll be able to read all the content, but certain JS-powered extra features will either be invisible or otherwise unavailable. Note that, on the [search page](/search/), a browser with disabled JavaScript will still be able to search the site using [DuckDuckGo](https://duckduckgo.com) rather than the site's built-in search.
 
-Although I formerly used [Fathom Analytics](https://usefathom.com) (and am still [affiliated](https://usefathom.com/ref/ZKHYWX) with it), I later decided the site's visitor count was too small to justify the expense. However, I do miss Fathom on those extremely rare cases wherein one of my posts goes semi-viral, which I can still detect in much more limited ways via data from Cloudflare's Web Analytics as well as [Tinylytics](https://tinylytics.app) --- speaking of which, please also refer to my [privacy policy](/privacy/) for additional information.
+Although I formerly used [Fathom Analytics](https://usefathom.com) (and am still [affiliated](https://usefathom.com/ref/ZKHYWX) with it), I later decided the site's visitor count was too small to justify the expense. However, I do miss Fathom on those extremely rare cases wherein one of my posts goes semi-viral, which I can still detect in much more limited ways via data from Cloudflare's Web Analytics --- speaking of which, please also refer to my [privacy policy](/privacy/) for additional information.
 
 Please note also:
 
