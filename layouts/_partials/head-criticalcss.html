@@ -6,11 +6,9 @@
 */ -}}
 {{- $cssOpts := dict
 	"sourceMap" (cond hugo.IsDevelopment "linked" "none")
+	"minify" (cond hugo.IsDevelopment false true)
 	"target" $cssTarget
 -}}
-{{- if ne $criticalCSSinline true}}
-	{{- $cssOpts = merge $cssOpts (dict "minify" (cond hugo.IsDevelopment false true)) -}}
-{{- end -}}
 
 
 {{ $css := resources.Get "css/critical.css" | css.Build $cssOpts | resources.Copy "css/index.css" -}}
