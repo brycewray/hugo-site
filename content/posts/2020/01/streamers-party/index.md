@@ -49,7 +49,7 @@ Back when pterodactyls ruled the skies and I was but a wee lad of two, I had my 
 
 It was on an old twenty-one-inch [Philco](https://radiolaguy.com/info/Philco%20Radios%20&%20Televisions.htm) model --- black-and-white, of course! --- that, as best I can remember all these years later, looked pretty much like [this one](https://www.reddit.com/r/vintagetelevision/comments/ddswan/1950s_philco_tv_worked_when_picked_up_but/).
 
-Everything we watched came over the air to a big, goofy-looking antenna, looking kind of like the "stacked conical" design shown on [this page](https://www.earlytelevision.org/antennas_1950.html). My father mounted the antenna on what, to a little boy like me back then, seemed to be a really tall pole next to our home.
+Everything we watched came over the air to a big, goofy-looking antenna, looking kind of like the "stacked conical" design shown on [this page](https://www.earlytelevision.org/postwar_antennas_1950.html). My father mounted the antenna on what, to a little boy like me back then, seemed to be a really tall pole next to our home.
 
 At first, we had three channels to watch: an [ABC](https://www.abc.com) affiliate; a [CBS](https://www.cbs.com) affiliate; and an [NBC](https://www.nbc.com) affiliate. And that was all that was out there at the time, so that was enough.
 
