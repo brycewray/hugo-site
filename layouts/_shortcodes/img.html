@@ -34,7 +34,7 @@
 {{- if $phn -}}
 	{{- $imgClass = "img-phn ctr-img animate-fade shadow" -}}
 {{- end -}}
-{{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
+{{- $dataSzes := "auto, (min-width: 1024px) 100vw, 50vw" -}}
 
 {{- if .Page.Resources.GetMatch $src -}}
 	{{ with .Page.Resources.GetMatch $src }}
