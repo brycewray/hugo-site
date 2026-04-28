@@ -34,7 +34,7 @@ jobs:
       - name: Set up Node.js
         # needed for wrangler and set-timezone, at least
         # if: ${{ env.NODE == 'true' }}
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v6.4.0
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Set GHA runner TZ to U.S. Central time
@@ -45,7 +45,7 @@ jobs:
           timezoneMacos: "America/Chicago" # default = "GMT"
           timezoneWindows: "America/Chicago" # default = "UTC"
       - name: Checkout default branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.2
         with:
           fetch-depth: 0 # for proper use of Hugo's Git info variables
       - name: Install npm packages if applicable
@@ -59,7 +59,7 @@ jobs:
           sudo dpkg -i hugo*.deb
       - name: Cache appropriate Hugo items
         id: cache-hugosite
-        uses: actions/cache@v5
+        uses: actions/cache@v5.0.5
         with:
           path: |
             resources
@@ -75,14 +75,13 @@ jobs:
           mv public/posts/index.xml public/index-excerpts.xml
           mv public/posts/index.json public/index-excerpts.json
           npm_config_yes=true npx pagefind@latest --site "public"
-        # npm_config_yes=true npx pagefind@v1.4.0 --site "public"
       - name: Pre-install wrangler to squelch CFW warnings in GHA
         # https://github.com/cloudflare/wrangler-action/issues/286
         if: ${{ env.HOST == 'CFW' }}
         run: npm i -g wrangler
       - name: Publish to CFW
         if: ${{ env.HOST == 'CFW' }}
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3.15.0
         with:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
@@ -93,7 +92,7 @@ jobs:
       # - name: Publish to Netlify
       #   if: ${{ env.HOST == 'Netlify' }}
       #   run: netlify deploy --prod --dir public --message "Deployed by GitHub Actions" --site "${{ secrets.NETLIFY_SITE_ID }}" --auth "${{ secrets.NETLIFY_AUTH_TOKEN }}"
-      #   # uses: jsmrcaga/action-netlify-deploy@v2.0.0
+      #   # uses: jsmrcaga/action-netlify-deploy@v2.4.0
       #   # with:
       #   #   build_directory: './public'
       #   #   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
@@ -106,7 +105,7 @@ jobs:
       #   run: npm install -g vercel
       # - name: Publish to Vercel
       #   if: ${{ env.HOST == 'Vercel' }}
-      #   uses: BetaHuhn/deploy-to-vercel-action@v1
+      #   uses: BetaHuhn/deploy-to-vercel-action@v1.10.0
       #   with:
       #     VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
