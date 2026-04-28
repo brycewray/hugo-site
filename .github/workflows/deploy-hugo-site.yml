@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.160.1
+  HUGO_VERSION: 0.161.0
   # For later ref if decide to read .hvm for this in GHA:
   # - https://github.com/jmooring/hvm/issues/218
   # - https://github.com/jmooring/hosting-github-pages-hvm/blob/main/.github/workflows/hugo.yaml#L54-L74
