@@ -1,6 +1,6 @@
 {
-  "name": "static-site-workers",
-  "compatibility_date": "2026-04-20",
+	"name": "static-site-workers",
+	"compatibility_date": "2026-04-29",
 	"compatibility_flags": ["nodejs_compat"],
 	"main": "./functions-workers/index.js",
 	/*
@@ -8,26 +8,26 @@
 		"command": "./build-workers.sh"
 	},
 	*/
-  "routes": [
-    {
-      "pattern": "www.brycewray.com",
-      "custom_domain": true
-    },
-    {
-      "pattern": "brycewray.com",
-      "custom_domain": true
-    }
-  ],
-  "assets": {
-    "directory": "./public/",
+	"routes": [
+		{
+			"pattern": "www.brycewray.com",
+			"custom_domain": true,
+		},
+		{
+			"pattern": "brycewray.com",
+			"custom_domain": true,
+		},
+	],
+	"assets": {
+		"directory": "./public/",
 		"run_worker_first": true,
 		"binding": "ASSETS",
-    "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
-  },
+		"not_found_handling": "404-page",
+		"html_handling": "auto-trailing-slash",
+	},
 	"observability": {
 		"logs": {
-			"enabled": true
-		}
-	}
+			"enabled": true,
+		},
+	},
 }
