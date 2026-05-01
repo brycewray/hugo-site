@@ -11,23 +11,23 @@
 	"routes": [
 		{
 			"pattern": "www.brycewray.com",
-			"custom_domain": true,
+			"custom_domain": true
 		},
 		{
 			"pattern": "brycewray.com",
-			"custom_domain": true,
-		},
+			"custom_domain": true
+		}
 	],
 	"assets": {
 		"directory": "./public/",
 		"run_worker_first": true,
 		"binding": "ASSETS",
 		"not_found_handling": "404-page",
-		"html_handling": "auto-trailing-slash",
+		"html_handling": "auto-trailing-slash"
 	},
 	"observability": {
 		"logs": {
-			"enabled": true,
-		},
-	},
+			"enabled": true
+		}
+	}
 }
