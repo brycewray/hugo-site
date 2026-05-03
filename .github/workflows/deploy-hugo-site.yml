@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.161.1
+  # HUGO_VERSION: 0.161.1
   # For later ref if decide to read .hvm for this in GHA:
   # - https://github.com/jmooring/hvm/issues/218
   # - https://github.com/jmooring/hosting-github-pages-hvm/blob/main/.github/workflows/hugo.yaml#L54-L74
@@ -55,6 +55,10 @@ jobs:
         #   `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json; above is based on https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml
       - name: Hugo download/install
         run: |
+          if [ -f .hvm ]; then
+            hvm_raw=$(cat .hvm)
+            HUGO_VERSION=$(echo "${hvm_raw%/*}" | tr -d 'v')
+          fi
           wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_${{ env.HUGO_VERSION }}_linux-amd64.deb
           sudo dpkg -i hugo*.deb
       - name: Cache appropriate Hugo items
