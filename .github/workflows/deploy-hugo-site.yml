@@ -1,0 +1,135 @@
+name: Deploy website
+
+on:
+  schedule:
+    - cron: "0 6 1 1 *" # January 1 at 6 AM UTC
+  push:
+    branches:
+      - main
+
+env:
+  HUGO_VERSION: 0.161.1
+  # For later ref if decide to read .hvm for this in GHA:
+  # - https://github.com/jmooring/hvm/issues/218
+  # - https://github.com/jmooring/hosting-github-pages-hvm/blob/main/.github/workflows/hugo.yaml#L54-L74
+  HOST: CFW # choices: 'CFW' (Cloudflare Workers) or 'Netlify' or 'Vercel'
+  NODE_PKGS:  false # choices: 'true' and 'false' (mainly checking only for [== "true"])
+  #    including use of (e.g.) PostCSS, even if not doing `npm run build`
+  NODE_VERSION: 24
+  # ^^ (Node.js version to use; needed at least for wrangler on CFW)
+  NPM_RUN_BUILD: false # choices: 'true' and 'false'
+  # ^^ refers to whether we're using `npm run build` to build the site
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      # ^^ **This** `env` entry should no longer be necessary
+      ##   after 2026-06-02
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Set up Node.js
+        # needed for wrangler and set-timezone, at least
+        # if: ${{ env.NODE == 'true' }}
+        uses: actions/setup-node@v6.4.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Set GHA runner TZ to U.S. Central time
+        uses: szenius/set-timezone@v2.0
+        # Doesn't affect cron job; see https://github.com/szenius/set-timezone/issues/6
+        with:
+          timezoneLinux: "America/Chicago" # default = "UTC"
+          timezoneMacos: "America/Chicago" # default = "GMT"
+          timezoneWindows: "America/Chicago" # default = "UTC"
+      - name: Checkout default branch
+        uses: actions/checkout@v6.0.2
+        with:
+          fetch-depth: 0 # for proper use of Hugo's Git info variables
+      - name: Install npm packages if applicable
+        if: ${{ env.NODE_PKGS == 'true' }}
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        #   ... not `npm install`
+        #   `npm ci` won't work without an existing package-lock.json or npm-shrinkwrap.json; above is based on https://github.com/actions/starter-workflows/blob/main/pages/hugo.yml
+      - name: Hugo download/install
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_${{ env.HUGO_VERSION }}_linux-amd64.deb -O hugo_${{ env.HUGO_VERSION }}_linux-amd64.deb
+          sudo dpkg -i hugo*.deb
+      - name: Cache appropriate Hugo items
+        id: cache-hugosite
+        uses: actions/cache@v5.0.5
+        with:
+          path: |
+            resources
+            static
+          key: ${{ runner.os }}-hugosite
+      - name: Build site (with `npm run build`)
+        if: ${{ env.NPM_RUN_BUILD == 'true' }}
+        run: npm run build
+      - name: Build site (not with `npm run build`)
+        if: ${{ env.NPM_RUN_BUILD != 'true' }}
+        run: |
+          hugo --gc --minify --logLevel info
+          mv public/posts/index.xml public/index-excerpts.xml
+          mv public/posts/index.json public/index-excerpts.json
+          npm_config_yes=true npx pagefind@latest --site "public"
+      - name: Pre-install wrangler to squelch CFW warnings in GHA
+        # https://github.com/cloudflare/wrangler-action/issues/286
+        if: ${{ env.HOST == 'CFW' }}
+        run: npm i -g wrangler
+      - name: Publish to CFW
+        if: ${{ env.HOST == 'CFW' }}
+        uses: cloudflare/wrangler-action@v3.15.0
+        with:
+          apiToken: ${{ secrets.CFW_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Install Netlify CLI
+      #   if: ${{ env.HOST == 'Netlify' }}
+      #   run: npm install -g netlify-cli
+      # - name: Publish to Netlify
+      #   if: ${{ env.HOST == 'Netlify' }}
+      #   run: netlify deploy --prod --dir public --message "Deployed by GitHub Actions" --site "${{ secrets.NETLIFY_SITE_ID }}" --auth "${{ secrets.NETLIFY_AUTH_TOKEN }}"
+      #   # uses: jsmrcaga/action-netlify-deploy@v2.4.0
+      #   # with:
+      #   #   build_directory: './public'
+      #   #   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #   #   NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      #   #   NETLIFY_DEPLOY_MESSAGE: "Deployed by GitHub Actions"
+      #   #   NETLIFY_DEPLOY_TO_PROD: true
+      #   #   build_command: "echo Publishing to Netlify"
+      # - name: Install Vercel CLI
+      #   if: ${{ env.HOST == 'Vercel' }}
+      #   run: npm install -g vercel
+      # - name: Publish to Vercel
+      #   if: ${{ env.HOST == 'Vercel' }}
+      #   uses: BetaHuhn/deploy-to-vercel-action@v1.10.0
+      #   with:
+      #     VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN_STATIC_SITE }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID}}
+      #     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID}}
+      #     WORKING_DIRECTORY: 'public'
+      # - name: Remove Vercel-specific config file from build
+      #   if: ${{ env.HOST == 'Vercel' }}
+      #   run: |
+      #     rm -rf public/vercel.json
+
+
+# To do a push without triggering this GHA, include one of
+# the following in the **commit message**
+# (INCLUDING the brackets AND case-sensitivity):
+#
+# [skip ci] (works also in CFW and Vercel GUIs)
+# [ci skip]
+# [no ci]
+# [skip actions]
+# [actions skip]
+#
+# “Alternatively, you can end the commit message
+# with two empty lines followed by either
+# `skip-checks: true` or `skip-checks:true`.”
+#
+# ref: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
