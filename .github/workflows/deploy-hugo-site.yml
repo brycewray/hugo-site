@@ -15,6 +15,7 @@ env:
   # ^^ (Node.js version to use; needed at least for wrangler on CFW)
   NPM_RUN_BUILD: false # choices: 'true' and 'false'
   # ^^ refers to whether we're using `npm run build` to build the site
+  TZ: America/Chicago
 
 jobs:
   deploy:
@@ -33,13 +34,13 @@ jobs:
         uses: actions/setup-node@v6.4.0
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Set GHA runner TZ to U.S. Central time
-        uses: szenius/set-timezone@v2.0
-        # Doesn't affect cron job; see https://github.com/szenius/set-timezone/issues/6
-        with:
-          timezoneLinux: "America/Chicago" # default = "UTC"
-          timezoneMacos: "America/Chicago" # default = "GMT"
-          timezoneWindows: "America/Chicago" # default = "UTC"
+      # - name: Set GHA runner TZ to U.S. Central time
+      #   uses: szenius/set-timezone@v2.0
+      #   # Doesn't affect cron job; see https://github.com/szenius/set-timezone/issues/6
+      #   with:
+      #     timezoneLinux: "America/Chicago" # default = "UTC"
+      #     timezoneMacos: "America/Chicago" # default = "GMT"
+      #     timezoneWindows: "America/Chicago" # default = "UTC"
       - name: Checkout default branch
         uses: actions/checkout@v6.0.2
         with:
