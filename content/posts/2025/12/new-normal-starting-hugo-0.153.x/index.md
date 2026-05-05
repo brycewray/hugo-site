@@ -11,6 +11,9 @@ Until a few days ago, those who use the [Hugo](https://gohugo.io) static site ge
 
 <!--more-->
 
+**Update, 2026-05-05**: After reading this, please see also a [follow-up post](/posts/2026/05/new-normal-update/) regarding my use of a later version of the hvm version management app discussed below.
+{.box}
+
 # Dealing with the packaging change
 
 Hugo 0.153.0 changed the macOS deliverable. Where the binary used to reside in a `tar.gz` archive, it now comes in a regular macOS `.pkg` that installs with a double-click. Still, it remains a terminal app and, thus, not as readily updatable as a typical macOS GUI app with a "Check for updates" menu item and associated functionality.[^neverUpdaters]

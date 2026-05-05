@@ -70,3 +70,6 @@ Incidentally, if you prefer a [GitLab CI/CD](https://docs.gitlab.com/ci/) versio
 ```
 
 Of course, given how the various CI/CD platforms [seem increasingly overwhelmed by AI-created traffic](https://daringfireball.net/linked/2026/05/04/commits-on-github-are-up-14x-year-over-year), I may end up reverting to [my previously used direct deployment method](/posts/2023/10/direct-deployments-quicker-slicker/) --- in which case, I wouldn't have to inform *any* remote code runner of the Hugo version I'm using. However, while I'm still using remotely hosted CI/CD, I'm pleased to use these methods to simplify things just a tad.
+
+**Update, 2026-05-05**: On a slightly related note, I learned while researching for this post that, at long last, GitHub Actions now allows you to set your runner's time zone ([including for cron jobs](https://github.com/MathRobin/timezone-action)) by simply [using a `TZ` variable](https://github.com/MathRobin/timezone-action/issues/4#issuecomment-4202168541), as has long been possible in GitLab CI/CD. This eliminates the need to access other, mostly (apparently) unmaintained Actions to perform that one basic function within one's workflow file.
+{.box}
