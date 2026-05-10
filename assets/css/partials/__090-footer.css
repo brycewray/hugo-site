@@ -53,6 +53,7 @@ path.github,
 circle.gitlab,
 circle.mastodon-circle,
 path.mastodon-m,
+path.codeberg-sky,
 circle.bluesky,
 circle.threads,
 circle.calckey,
@@ -64,14 +65,36 @@ circle.json {
 
 
 path.mastodon-body,
-path.mastodon-m {
+path.mastodon-m,
+path.codeberg-berg,
+path.codeberg-sky {
 	fill-rule: nonzero;
+}
+
+path.codeberg-berg {
+	fill:url(#_Linear1);
+}
+
+stop.codeberg-stop-offset-0,
+stop.codeberg-stop-offset-0-5,
+stop.codeberg-stop-offset-1 {
+	stop-color: var(--link);
+}
+
+stop.codeberg-stop-offset-0 {
+	stop-opacity: 0;
+}
+
+stop.codeberg-stop-offset-0-5,
+stop.codeberg-stop-offset-1 {
+	stop-opacity: 0.3;
 }
 
 a:hover path.github,
 a:hover circle.gitlab,
 a:hover circle.mastodon-circle,
 a:hover path.mastodon-m,
+a:hover path.codeberg-sky,
 a:hover circle.bluesky,
 a:hover circle.threads,
 a:hover circle.calckey,

@@ -17,6 +17,7 @@ Here are ways to follow this site.
 
 - <a rel="me noopener" title="GitHub" href="https://github.com/brycewray/"><strong>brycewray</strong> on GitHub</a>
 - <a rel="me noopener" title="GitLab" href="https://gitlab.com/brycewray/"><strong>brycewray</strong> on GitLab</a>
+- <a rel="me noopener" title="Codeberg" href="https://codeberg.org/brycewray/"><strong>brycewray</strong> on Codeberg</a>
 - <a rel="me noopener" title="Mastodon" href="https://hachyderm.io/@BryceWrayTX"><strong>@BryceWrayTX</strong> on Mastodon</a>
 - <a rel="me noopener" title="Bluesky" href="https://bsky.app/profile/brycewray.com"><strong>@brycewray.com</strong> on Bluesky</a>
 <!-- - <a rel="me noopener" title="Threads" href="https://www.threads.net/@brycewraytx"><strong>@brycewraytx</strong> on Threads</a> -->
