@@ -27,4 +27,4 @@ The decision to build the site with an SSG rather than, say, WordPress was based
 
 The specific SSG I chose for building and maintaining the site was [Hugo](https://gohugo.io). As I've chronicled here numerous times, I have also used several other SSGs over the years but, on the whole, I've repeatedly brought the site back to Hugo. Indeed, I've grown pretty comfortable with keeping it on Hugo, where it's now been for quite a few months.
 
-Thanks for stopping by to visit this ongoing labor of love, whether this is your first time here or you're coming back after one or more previous visits. (And I *really* appreciate it if you've [followed](/contact/) the site.) Or, to put it another way: thanks for being one of the many reasons I've kept this going for five years now.
+Thanks for stopping by to visit this ongoing labor of love, whether this is your first time here or you're coming back after one or more previous visits. (And I *really* appreciate it if you've [followed](/follow/) the site.) Or, to put it another way: thanks for being one of the many reasons I've kept this going for five years now.
