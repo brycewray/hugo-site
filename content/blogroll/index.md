@@ -101,6 +101,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Mark Nottingham](https://www.mnot.net/blog/)
 - [Martine Dowden](https://andromedagalactic.com/blog/contributor/martine-dowden)
 - [Mat Duggan](https://matduggan.com/)
+- [Mat Marquis](https://wil.to)
 - [Matt Mullenweg](https://ma.tt/)
 - [Michael Harley](https://michaelharley.net/posts/)
 - [Michael Rose](https://mademistakes.com/)
