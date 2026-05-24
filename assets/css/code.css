@@ -343,12 +343,6 @@ code {
   font-kerning: none;
   font-variant-ligatures: none;
 	background-color: var(--bkgd-article-code);
-
-	/* @media only screen and (width >= 1024px) {
-		@supports (text-justify: inter-character) {
-			hyphens: none;
-		}
-	} */
 }
 
 a code {
