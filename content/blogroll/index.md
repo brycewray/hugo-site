@@ -76,7 +76,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Jim Grey](https://dev.jimgrey.net/)
 - [Jim Nielsen](https://blog.jim-nielsen.com/)
 - [Johan Halse](https://johan.hal.se/)
-- [Jon Luca](https://blog.jonlu.ca/)
 - [Jose M. Gilgado](https://josem.co/articles/)
 - [Josh Collinsworth](https://joshcollinsworth.com/)
 - [Josh W. Comeau](https://www.joshwcomeau.com/)
