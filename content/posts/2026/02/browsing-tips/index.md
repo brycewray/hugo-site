@@ -126,6 +126,9 @@ div div pre {
 
 Where Apple's WebKit-based Safari browser is concerned, the outlook is more grim: there is no Stylus extension  for Safari, for which [third-party extension availability is much more limited](https://www.howtogeek.com/safari-is-missing-your-favorite-extensions/).[^StylusOnSafari] The closed-source, paid [Cascadea](https://apps.apple.com/us/app/cascadea/id1432182561?mt=12) extension for Safari on macOS would *seem* to provide similar capabilities (I haven't tried it), but its last update was apparently 2021-11-02.
 
+**Update, 2026-05-29**: I later learned of a paid Safari extension called [Noir](https://getnoir.app) that provides a less customizable, but helpful, dark-mode experience on sites which otherwise don't respect one's viewing preferences.
+{.box}
+
 [^StylusOnSafari]: Many years ago, even the now-tarnished Stylish had a Safari version!
 
 If you're on macOS and prefer to avoid Chrome- and Firefox-compatible browsers, there *may* be another possibility. The [Orion](https://orionbrowser.com/) browser, also based on WebKit, actually allows the enabling of extensions built for Chrome and Firefox, although many such extensions' actual in-Orion performance remains problematic at this writing. You can *try* using an older version of the Stylus extension for Chrome --- I got it to work on Orion with v.1.5.51 --- since anything newer apparently isn't compatible with Orion. It's possible to *install* the current Stylus version, but its functionality is broken in Orion.
