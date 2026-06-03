@@ -24,5 +24,5 @@ Then, yesterday, I asked Cloudinary to re-activate AVIF support for my use of `f
 
 Cloudinary granted my request later that day; so, on the site's pages which do have some images, you now get even more of a break on image download size with my use of `f_auto` than was previously the case.
 
-**Note**: [Hugo](https://gohugo.io)'s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing), about which I've [written previously](/posts/2022/06/responsive-optimized-images-hugo/), [won't be supporting the AVIF format any time soon](https://github.com/gohugoio/hugo/issues/7837).
+**Update from the future**: [Hugo](https://gohugo.io)'s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing), about which I've [written previously](/posts/2022/06/responsive-optimized-images-hugo/), [finally added AVIF support in v.0.162.0](https://github.com/gohugoio/hugo/releases/tag/v0.162.0).
 {.box}
