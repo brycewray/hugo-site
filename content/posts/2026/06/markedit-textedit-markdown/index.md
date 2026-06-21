@@ -21,7 +21,10 @@ Other than its ability to be "Markdown-savvy TextEdit," another of MarkEdit's ke
 
 > UI controls remain native to macOS in both aesthetics and behavior, including force-touch word lookup, inline predictions, and Writing Tools.
 
-Oh, and for those like me who care about such things: it appears MarkEdit is *not* (yet?) vibe-coded. How long that will continue to be the case, I obviously can't know; but, for now, MarkEdit seems to be a human(s)-built endeavor.
+~~Oh, and for those like me who care about such things: it appears MarkEdit is *not* (yet?) vibe-coded. How long that will continue to be the case, I obviously can't know; but, for now, MarkEdit seems to be a human(s)-built endeavor.~~
+
+**Correction**: I looked again at MarkEdit's GitHub repo and saw that multiple LLMs are in the [list of contributors](https://github.com/MarkEdit-app/MarkEdit/graphs/contributors). *[Sigh.]* My apologies for the mistaken and now stricken-through assumption above.
+{.box}
 
 Incidentally: to date, although the original TextEdit is on iOS/iPadOS as well as macOS, MarkEdit is macOS-only.
 
