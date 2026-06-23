@@ -17,7 +17,7 @@ The vast majority of my Markdown-editing endeavors over the last few years, espe
 
 {{< img src="MarkEdit_screenshot_1920x1270.png" alt="Screen capture of MarkEdit application on macOS" rounds=true >}}
 
-Other than its ability to be "Markdown-savvy TextEdit," another of MarkEdit's key advantages is that it's a native macOS app. To put that another way, it doesn't rely on [Electron](https://www.electronjs.org/) or any other bloated framework. This keeps it small (four MB as installed), light and quick, even on older Macs --- although it's mainly for newer ones, albeit with special, additional versions for macOS iterations from several years ago. MarkEdit also works, looks, and feels like a *real* macOS app. As its GitHub page explains:
+Other than its ability to be "Markdown-savvy TextEdit," another of MarkEdit's key advantages is that it's a native macOS app. To put that another way, it doesn't rely on [Electron](https://www.electronjs.org/) or any other bloated framework. This keeps it small (four MB as installed), light, and quick, even on older Macs --- although it's mainly for newer ones, albeit with special, additional versions for macOS iterations from several years ago. MarkEdit also works, looks, and feels like a *real* macOS app. As its GitHub page explains:
 
 > UI controls remain native to macOS in both aesthetics and behavior, including force-touch word lookup, inline predictions, and Writing Tools.
 
