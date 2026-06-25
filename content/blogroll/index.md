@@ -73,7 +73,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Jason Velazquez](https://fromjason.xyz/p/notebook/)
 - [Jeremy Keith](https://adactio.com/journal/)
 - [Jesse Duffield](https://jesseduffield.com/)
-- [Jim Grey](https://dev.jimgrey.net/)
 - [Jim Nielsen](https://blog.jim-nielsen.com/)
 - [Johan Halse](https://johan.hal.se/)
 - [Jose M. Gilgado](https://josem.co/articles/)
