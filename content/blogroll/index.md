@@ -101,6 +101,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Mat Duggan](https://matduggan.com/)
 - [Mat Marquis](https://wil.to)
 - [Matt Mullenweg](https://ma.tt/)
+- [Michal Sapka](https://michal.sapka.pl/)
 - [Michael Harley](https://michaelharley.net/posts/)
 - [Michael Rose](https://mademistakes.com/)
 - [Michael Stanclift](https://vmstan.com/)
