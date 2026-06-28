@@ -46,6 +46,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Daniel F. Dickinson](https://www.wildtechgarden.ca/)
 - [Daniel Pecos Martinez](https://danielpecos.com/)
 - [Darek Kay](https://darekkay.com/)
+- [Dave Rogers](https://b-banzai.micro.blog/)
 - [Dave Rupert](https://daverupert.com/)
 - [David Buchanan](https://www.da.vidbuchanan.co.uk/blog/)
 - [DeepakNess](https://deepakness.com/)
