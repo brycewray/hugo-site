@@ -67,7 +67,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Herman Martinus](https://herman.bearblog.dev/)
 - [Heydon Pickering](https://heydonworks.com/)
 - [Howard Oakley](https://eclecticlight.co/)
-- [Igor Ljubuncic](https://www.dedoimedo.com/)
 
 ## J
 - [James Kerr](https://www.jameskerr.blog/)
