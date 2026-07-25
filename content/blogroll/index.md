@@ -17,6 +17,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Aleksandr Hovhannisyan](https://www.aleksandrhovhannisyan.com/)
 - [Alex Russell](https://infrequently.org/)
 - [Amit Merchant](https://www.amitmerchant.com/)
+- [Andrew Kelley](https://andrewkelley.me/)
 - [Andrew Ward](https://blog.rubenwardy.com/)
 - [Andy Bell](https://andy-bell.co.uk/)
 - [Anil Dash](https://www.anildash.com/)
