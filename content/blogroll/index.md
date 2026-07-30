@@ -39,6 +39,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Chris McLeod](https://chrismcleod.dev/blog/)
 - [Chris O'Donnell](https://odonnellweb.com/pelican/)
 - [Christian Heilmann](https://christianheilmann.com/)
+- [Christian Selig](https://christianselig.com/)
 - [Clayton Errington](https://claytonerrington.com/blog/)
 - [Cory Dransfeldt](https://coryd.dev/)
 
