@@ -1,6 +1,10 @@
 {
 	"name": "static-site-workers",
 	"compatibility_date": "2026-07-31",
+	/*
+	Don't need to keep changing for each iteration of wrangler...
+	https://discord.com/channels/1163623606652252200/1502089166173896777/threads/1532818190684651652
+	*/
 	"compatibility_flags": ["nodejs_compat"],
 	"main": "./functions-workers/index.js",
 	/*
