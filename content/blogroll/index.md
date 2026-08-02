@@ -19,6 +19,7 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Amit Merchant](https://www.amitmerchant.com/)
 - [Andrew Kelley](https://andrewkelley.me/)
 - [Andrew Ward](https://blog.rubenwardy.com/)
+- [Andros Fenollosa](https://en.andros.dev/)
 - [Andy Bell](https://andy-bell.co.uk/)
 - [Anil Dash](https://www.anildash.com/)
 - [Anne Sturdivant](https://weblog.anniegreens.lol/)
