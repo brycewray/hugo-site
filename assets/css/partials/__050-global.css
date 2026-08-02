@@ -177,8 +177,13 @@ ul li li, ol li li {
 }
 
 ul li li, ol li li, ul li li li, ol li li li {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
+	margin-block: 0.25rem;
+	/*
+	above was
+		margin-top: 0.25rem;
+		margin-bottom: 0.25rem;
+	... changed as a recommendation from cssradar.com
+	*/
 
 	&::marker {
 		color: var(--bkgd-marker-secondary);
@@ -226,8 +231,13 @@ audio, canvas, embed, iframe, img, object, svg, video {
 }
 
 li p {
-	margin-right: 0;
-	margin-left: 0;
+	margin-inline: 0;
+	/*
+	above was
+		margin-right: 0;
+		margin-left: 0;
+	... changed as a recommendation from cssradar.com
+	*/
 	width: 100%;
 }
 
