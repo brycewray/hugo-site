@@ -120,11 +120,9 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 ## R
 - [Rach Smith](https://rachsmith.com/)
 - [Rachel Andrew](https://rachelandrew.co.uk/)
-- [Rachel Kroll](https://rachelbythebay.com/w/)
 - [Redowan Delowar](https://rednafi.com/)
 - [Rob O'Leary](https://www.roboleary.net/)
 - [Robb Knight](https://rknight.me/blog/)
-- [Robert McGovern](https://tarasis.net/)
 - [Ruben Schade](https://www.rubenerd.au/)
 
 ## S
