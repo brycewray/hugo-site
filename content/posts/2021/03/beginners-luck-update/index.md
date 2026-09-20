@@ -11,7 +11,7 @@ Recently, I've been spending spare hours working on [Eleventy](https://11ty.dev)
 
 Rather than expect you to find them on your own in my various scattered references across my humble little site, I thought I'd write this brief post to list them all together. Maybe you'll find them helpful in whatever you choose to do in Eleventy or Hugo. Each is always based on the current appearance and layout of this site, which I hope will make clearer the connection between the code and the result.
 
-I'll list each by the name of its respective repository ("repo”) in [GitHub](https://github.com). I've also linked each to its live demo on [Vercel](https://vercel.com).
+I'll list each by the name of its respective repository ("repo”) in [GitHub](https://github.com).
 
 ## Eleventy starters
 
@@ -21,17 +21,17 @@ The Eleventy starters are distinguished by two things: which of the [numerous El
 
 So, here we go.
 
-- **[eleventy_solo_starter](https://github.com/brycewray/eleventy_solo_starter)** --- JavaScript templating; [Tailwind CSS](https://tailwindcss.com), which as of version 2.1.0 includes the just-in-time (JIT) compiler (for details about the advantages of this experimental addition to Tailwind, refer to the [official announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) as well as [my related post](/posts/2021/03/jit-game-changer-tailwind-css/)). [View the demo](https://eleventy-solo-starter-original.vercel.app/).
-- **[eleventy_solo_starter_njk](https://github.com/brycewray/eleventy_solo_starter_njk)** --- [Nunjucks](https://mozilla.github.io/nunjucks) templating; Tailwind CSS, now with the JIT compiler. [View the demo](https://eleventy-solo-starter-njk.vercel.app/).
-- **[eleventy_solo_starter_scss](https://github.com/brycewray/eleventy_solo_starter_scss)** *(**new**)* --- JavaScript templating; [Sass/SCSS](https://sass-lang.com). [View the demo](https://eleventy-solo-starter-scss.vercel.app).
-- **[eleventy_solo_starter_njk_scss](https://github.com/brycewray/eleventy_solo_starter_njk_scss)** *(**new**)* --- Nunjucks templating; Sass/SCSS. [View the demo](https://eleventy-solo-starter-njk-scss.vercel.app).
+- **[eleventy_solo_starter](https://github.com/brycewray/eleventy_solo_starter)** --- JavaScript templating; [Tailwind CSS](https://tailwindcss.com), which as of version 2.1.0 includes the just-in-time (JIT) compiler (for details about the advantages of this experimental addition to Tailwind, refer to the [official announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) as well as [my related post](/posts/2021/03/jit-game-changer-tailwind-css/)).
+- **[eleventy_solo_starter_njk](https://github.com/brycewray/eleventy_solo_starter_njk)** --- [Nunjucks](https://mozilla.github.io/nunjucks) templating; Tailwind CSS, now with the JIT compiler.
+- **[eleventy_solo_starter_scss](https://github.com/brycewray/eleventy_solo_starter_scss)** *(**new**)* --- JavaScript templating; [Sass/SCSS](https://sass-lang.com).
+- **[eleventy_solo_starter_njk_scss](https://github.com/brycewray/eleventy_solo_starter_njk_scss)** *(**new**)* --- Nunjucks templating; Sass/SCSS.
 
 ## Hugo starters
 
 For now, I still have only two Hugo starters. This is for two reasons: there's only one form of templating in Hugo (Go-based templating); and the Tailwind JIT compiler isn't yet compatible with Hugo. One is based on Tailwind CSS (again, no JIT) and the other on Sass/SCSS. Once the Hugo-*vs.*-JIT issues are resolved, I'll likely add a JIT-equipped Hugo starter, too.
 
-- [hugo_twcss](https://github.com/brycewray/hugo_twcss) --- Tailwind CSS. [View the demo](https://hugo-twcss.vercel.app).
-- [hugo_solo](https://github.com/brycewray/hugo_solo) --- Sass/SCSS. [View the demo](https://hugo-solo.vercel.app).
+- [hugo_twcss](https://github.com/brycewray/hugo_twcss) --- Tailwind CSS.
+- [hugo_solo](https://github.com/brycewray/hugo_solo) --- Sass/SCSS.
 
 ## Enjoy
 

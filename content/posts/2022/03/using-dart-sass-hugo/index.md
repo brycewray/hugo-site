@@ -119,7 +119,7 @@ Then, the version for **internal** CSS:
 {{ end }}
 ```
 
-**Note**: In case it would help, I've also put up a minimal [demo repo](https://github.com/brycewray/hugo-npm-sass) and [site](https://hugo-npm-sass.vercel.app/) based on this code.
+**Note**: In case it would help, I've also put up a minimal [demo repo](https://github.com/brycewray/hugo-npm-sass) based on this code.
 {.box}
 
 ## The fight for mindshare
