@@ -74,7 +74,7 @@ jobs:
         run: npm i -g wrangler
       - name: Publish to CFW
         if: ${{ env.HOST == 'CFW' }}
-        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
+        uses: cloudflare/wrangler-action@07f223c985581cebbce0955478de02d74d81ca47 # v4.1.0
         with:
           apiToken: ${{ secrets.CFW_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
