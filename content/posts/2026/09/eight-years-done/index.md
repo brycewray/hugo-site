@@ -27,6 +27,6 @@ Point Number Three is where things have run aground. Now, don't get me wrong: I 
 
 Any hardy souls who might still find usefulness in my existing posts can rest assured that the site itself will continue online for as long as I have the marbles to keep it there. On that note, please be aware that, some time ago, I quit worrying about trying to fix every little bit of past content, especially when it came to technical details that had changed over the years --- I decided that the posts' dates made it clear enough that, ahem, *this crap is from the past*.
 
-Working on the site certainly has been a source of personal joy throughout these eight years. Like its creator, the site never was great, attractive, nor smart; but I still was proud to stand behind it.
+Working on the site certainly has been a source of personal joy throughout these eight years. Like its creator, the site never was great, attractive, or smart; but I still was proud to stand behind it.
 
 Thank you for whatever time you spent here. *Au revoir*.
