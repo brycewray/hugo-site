@@ -22,7 +22,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Andros Fenollosa](https://en.andros.dev/)
 - [Andy Bell](https://andy-bell.co.uk/)
 - [Anil Dash](https://www.anildash.com/)
-- [Anne Sturdivant](https://weblog.anniegreens.lol/)
 - [Ariadne Conill](https://ariadne.space/)
 - [Artem Chernyak](https://hackeryarn.com/)
 
@@ -140,7 +139,6 @@ Inspired by "[Slash Pages](https://slashpages.net/)," of which I first learned i
 - [Terence Eden](https://shkspr.mobi/blog)
 - [Thomas Michael Semmler](https://helloyes.dev/blog/)
 - [Veronica Explains](https://veronicaexplains.net/)
-- [Vincent Ritter](https://vincentritter.com/)
 - [Will Martian](https://willmartian.com/)
 - [William Woodruff](https://blog.yossarian.net/)
 - [Wouter Groeneveld](https://brainbaking.com/)
